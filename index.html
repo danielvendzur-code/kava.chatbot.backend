@@ -48,9 +48,9 @@
       font-family: var(--font);
       color: var(--ink);
       background:
-        radial-gradient(circle at 82% 12%, rgba(201,151,76,.28), transparent 38%),
-        radial-gradient(circle at 8% 90%, rgba(28,106,85,.35), transparent 42%),
-        linear-gradient(150deg, #0d352c, #0a2c25 55%, #123c31);
+        linear-gradient(90deg, rgba(10,44,37,.94), rgba(10,44,37,.70) 48%, rgba(10,44,37,.42)),
+        url("https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1800&q=82") center / cover fixed,
+        #0a2c25;
     }
     button, input, textarea, select { font: inherit; }
     button { -webkit-tap-highlight-color: transparent; }
@@ -81,16 +81,30 @@
     /* ------- demo hero ------- */
     .demo {
       min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(22px, 4vw, 48px);
+      isolation: isolate;
+    }
+    .demo-shell {
+      width: min(1120px, 100%);
       display: grid;
-      place-items: center;
-      padding: 28px;
+      grid-template-columns: minmax(0, .95fr) minmax(360px, 1.05fr);
+      gap: clamp(22px, 4vw, 46px);
+      align-items: center;
+    }
+    .demo-copy {
+      min-width: 0;
     }
     .demo-card {
-      width: min(640px, 100%);
+      width: 100%;
       border: 1px solid rgba(255,255,255,.14);
-      border-radius: 22px;
-      padding: 34px 34px 30px;
-      background: linear-gradient(160deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+      border-radius: 20px;
+      padding: clamp(28px, 4vw, 44px);
+      background:
+        linear-gradient(160deg, rgba(255,255,255,.12), rgba(255,255,255,.045)),
+        rgba(10,44,37,.38);
       color: #fff;
       backdrop-filter: blur(18px);
       -webkit-backdrop-filter: blur(18px);
@@ -120,10 +134,10 @@
     .demo-card h1 {
       margin: 18px 0 12px;
       font-family: var(--font-display);
-      font-size: clamp(30px, 5.4vw, 46px);
-      line-height: 1.08;
+      font-size: clamp(38px, 6.2vw, 72px);
+      line-height: .98;
       font-weight: 600;
-      letter-spacing: -0.01em;
+      letter-spacing: 0;
     }
     .demo-card h1 em {
       font-style: italic;
@@ -131,10 +145,10 @@
     }
     .demo-card p {
       margin: 0;
-      max-width: 46ch;
-      color: rgba(255,255,255,.72);
-      font-size: 15px;
-      line-height: 1.65;
+      max-width: 54ch;
+      color: rgba(255,255,255,.78);
+      font-size: 16px;
+      line-height: 1.72;
       font-weight: 450;
     }
     .demo-actions {
@@ -182,6 +196,330 @@
     }
     .demo-note span { display: inline-flex; align-items: center; gap: 7px; }
     .demo-note svg { width: 14px; height: 14px; color: var(--gold); flex: 0 0 14px; }
+
+    .demo-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 24px;
+    }
+    .demo-stat {
+      min-height: 92px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 14px;
+      padding: 14px 13px;
+      background: rgba(255,255,255,.075);
+    }
+    .demo-stat strong {
+      display: block;
+      color: #f7e4bd;
+      font-family: var(--font-display);
+      font-size: 28px;
+      line-height: 1;
+      font-weight: 650;
+    }
+    .demo-stat span {
+      display: block;
+      margin-top: 8px;
+      color: rgba(255,255,255,.68);
+      font-size: 11.4px;
+      line-height: 1.45;
+      font-weight: 520;
+    }
+    .demo-visual {
+      position: relative;
+      min-height: 650px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 20px;
+      overflow: hidden;
+      color: #fff;
+      background:
+        linear-gradient(180deg, rgba(10,44,37,.10), rgba(10,44,37,.88)),
+        url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=82") center / cover;
+      box-shadow: var(--shadow);
+    }
+    .demo-visual::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.10) 0 1px, transparent 1px 100%),
+        linear-gradient(180deg, rgba(255,255,255,.08) 0 1px, transparent 1px 100%);
+      background-size: 58px 58px;
+      mask-image: linear-gradient(180deg, transparent, #000 22%, #000 82%, transparent);
+      opacity: .26;
+      pointer-events: none;
+    }
+    .demo-visual::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 56%;
+      background: linear-gradient(180deg, transparent, rgba(10,44,37,.95));
+      pointer-events: none;
+    }
+    .visual-topbar {
+      position: absolute;
+      left: 22px;
+      right: 22px;
+      top: 22px;
+      z-index: 2;
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 14px;
+      padding: 8px 10px 8px 14px;
+      background: rgba(10,44,37,.48);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .visual-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+    .visual-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #0a2c25;
+      background: #f2e3c6;
+      flex: 0 0 34px;
+    }
+    .visual-mark svg {
+      width: 18px;
+      height: 18px;
+    }
+    .visual-brand strong {
+      display: block;
+      overflow: hidden;
+      color: #fffaf1;
+      font-family: var(--font-display);
+      font-size: 16px;
+      line-height: 1.1;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .visual-text {
+      display: block;
+      min-width: 0;
+    }
+    .visual-text span {
+      display: block;
+      margin-top: 2px;
+      color: rgba(255,255,255,.64);
+      font-size: 10.5px;
+      font-weight: 650;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .visual-live {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 30px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 999px;
+      padding: 0 10px;
+      background: rgba(255,255,255,.08);
+      color: #e6f4eb;
+      font-size: 11px;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+    .visual-live i {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #7fe8a8;
+      box-shadow: 0 0 10px rgba(127,232,168,.95);
+    }
+    .visual-content {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 24px;
+      z-index: 2;
+      display: grid;
+      gap: 14px;
+    }
+    .visual-badge {
+      width: max-content;
+      max-width: 100%;
+      border: 1px solid rgba(242,227,198,.34);
+      border-radius: 999px;
+      padding: 7px 11px;
+      background: rgba(10,44,37,.55);
+      color: #f2e3c6;
+      font-size: 10px;
+      font-weight: 760;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .visual-title {
+      margin: 0;
+      max-width: 430px;
+      color: #fffaf1;
+      font-family: var(--font-display);
+      font-size: clamp(30px, 3.8vw, 44px);
+      line-height: 1.04;
+      font-weight: 650;
+      letter-spacing: 0;
+    }
+    .visual-subtitle {
+      margin: -4px 0 0;
+      max-width: 440px;
+      color: rgba(255,255,255,.72);
+      font-size: 13px;
+      line-height: 1.65;
+      font-weight: 480;
+    }
+    .visual-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 2px;
+    }
+    .visual-tile {
+      min-height: 106px;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 14px;
+      padding: 12px;
+      background: rgba(255,255,255,.10);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+    .visual-tile small {
+      display: block;
+      color: rgba(255,255,255,.56);
+      font-size: 10px;
+      font-weight: 750;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .visual-tile strong {
+      display: block;
+      margin-top: 11px;
+      color: #fffaf1;
+      font-family: var(--font-display);
+      font-size: 25px;
+      line-height: 1;
+      font-weight: 650;
+    }
+    .visual-tile span {
+      display: block;
+      margin-top: 8px;
+      color: rgba(255,255,255,.68);
+      font-size: 11px;
+      line-height: 1.35;
+      font-weight: 520;
+    }
+    .visual-mini {
+      position: absolute;
+      top: 110px;
+      right: 22px;
+      z-index: 2;
+      width: min(260px, calc(100% - 44px));
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 16px;
+      padding: 14px;
+      background: rgba(255,255,255,.13);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      box-shadow: 0 18px 44px rgba(0,0,0,.24);
+    }
+    .visual-mini-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .visual-mini-head b {
+      color: #fffaf1;
+      font-size: 12px;
+      line-height: 1.3;
+      font-weight: 720;
+    }
+    .visual-mini-head span {
+      flex: 0 0 auto;
+      border-radius: 999px;
+      padding: 5px 8px;
+      background: #f2e3c6;
+      color: #0a2c25;
+      font-size: 10px;
+      font-weight: 800;
+    }
+    .visual-mini p {
+      margin: 9px 0 0;
+      color: rgba(255,255,255,.68);
+      font-size: 11.5px;
+      line-height: 1.5;
+    }
+    .visual-meter {
+      height: 7px;
+      margin-top: 12px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: rgba(255,255,255,.18);
+    }
+    .visual-meter i {
+      display: block;
+      width: 94%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, #7fe8a8, #f2e3c6);
+    }
+    .visual-product {
+      position: absolute;
+      left: 28px;
+      top: 122px;
+      z-index: 2;
+      width: 118px;
+      min-height: 168px;
+      border: 1px solid rgba(242,227,198,.42);
+      border-radius: 16px;
+      display: grid;
+      align-content: end;
+      padding: 12px;
+      color: #f2e3c6;
+      background:
+        linear-gradient(155deg, rgba(75,47,34,.92), rgba(10,44,37,.94));
+      box-shadow: 0 20px 44px rgba(0,0,0,.32);
+    }
+    .visual-product::before {
+      content: "KB";
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      color: rgba(242,227,198,.88);
+      font-family: var(--font-display);
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .visual-product span {
+      display: block;
+      color: rgba(255,255,255,.72);
+      font-size: 10px;
+      line-height: 1.35;
+      font-weight: 620;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+    .visual-product strong {
+      display: block;
+      margin-top: 4px;
+      color: #fffaf1;
+      font-family: var(--font-display);
+      font-size: 18px;
+      line-height: 1.08;
+      font-weight: 650;
+    }
 
     /* ------- teaser ------- */
     #kb-teaser {
@@ -404,7 +742,24 @@
       min-height: 0;
       overflow: auto;
       padding: 14px;
-      background: linear-gradient(180deg, #fff, var(--cream));
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.95), rgba(247,242,233,.96)),
+        linear-gradient(90deg, rgba(15,61,51,.035) 0 1px, transparent 1px 100%),
+        linear-gradient(180deg, rgba(15,61,51,.03) 0 1px, transparent 1px 100%);
+      background-size: auto, 34px 34px, 34px 34px;
+      scroll-behavior: smooth;
+    }
+    .kb-body::-webkit-scrollbar {
+      width: 9px;
+    }
+    .kb-body::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .kb-body::-webkit-scrollbar-thumb {
+      border: 3px solid transparent;
+      border-radius: 999px;
+      background: rgba(15,61,51,.22);
+      background-clip: padding-box;
     }
     .kb-card {
       border: 1px solid var(--line);
@@ -446,6 +801,224 @@
       font-size: 12.8px;
       line-height: 1.55;
       font-weight: 450;
+    }
+    .kb-card.featured {
+      position: relative;
+      overflow: hidden;
+      border-color: rgba(201,151,76,.34);
+      background:
+        linear-gradient(165deg, #fffdf8, #fbf1de);
+    }
+    .kb-card.featured::after {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 4px;
+      background: linear-gradient(90deg, var(--green-2), var(--gold));
+    }
+    .kb-panel-intro {
+      display: grid;
+      gap: 12px;
+    }
+    .kb-hero-row {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      gap: 12px;
+      align-items: start;
+    }
+    .kb-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      color: #f6ecd8;
+      background:
+        radial-gradient(circle at 35% 20%, rgba(255,255,255,.24), transparent 38%),
+        linear-gradient(145deg, var(--green-2), var(--green-deep));
+      box-shadow: inset 0 0 0 1px rgba(246,236,216,.2), 0 12px 22px rgba(10,44,37,.18);
+    }
+    .kb-avatar svg {
+      width: 26px;
+      height: 26px;
+    }
+    .kb-insight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .kb-insight {
+      min-height: 78px;
+      border: 1px solid rgba(15,61,51,.10);
+      border-radius: 12px;
+      padding: 10px;
+      background: #fff;
+    }
+    .kb-insight b {
+      display: block;
+      color: var(--green);
+      font-family: var(--font-display);
+      font-size: 19px;
+      line-height: 1;
+      font-weight: 700;
+    }
+    .kb-insight span {
+      display: block;
+      margin-top: 7px;
+      color: #73776f;
+      font-size: 10.2px;
+      line-height: 1.35;
+      font-weight: 560;
+    }
+    .kb-flow-map {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 5px;
+      margin-top: 13px;
+    }
+    .kb-flow-node {
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      padding: 6px 4px;
+      background: #fff;
+      color: #8a8d86;
+      font-size: 9px;
+      font-weight: 720;
+      line-height: 1.2;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .kb-flow-node.done {
+      border-color: rgba(28,106,85,.22);
+      background: var(--mint);
+      color: var(--green);
+    }
+    .kb-flow-node.active {
+      border-color: rgba(201,151,76,.55);
+      background: var(--gold-soft);
+      color: #8a6425;
+      box-shadow: 0 7px 15px rgba(201,151,76,.16);
+    }
+    .kb-question-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .kb-question-head .kb-kicker {
+      flex: 0 0 auto;
+    }
+    .kb-mini-note {
+      margin-top: 11px;
+      border: 1px dashed rgba(15,61,51,.18);
+      border-radius: 12px;
+      padding: 10px 11px;
+      background: #f8fbf8;
+      color: #5f665f;
+      font-size: 11px;
+      line-height: 1.45;
+      font-weight: 520;
+    }
+    .kb-mini-note b {
+      color: var(--green);
+      font-weight: 720;
+    }
+    .kb-recommendation {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(201,151,76,.45);
+      border-radius: 16px;
+      padding: 15px;
+      background:
+        linear-gradient(160deg, rgba(255,255,255,.96), rgba(251,244,230,.96)),
+        #fff;
+      box-shadow: 0 16px 34px rgba(12,24,20,.12);
+      animation: kbMsg .24s ease both;
+    }
+    .kb-recommendation::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--green-2));
+    }
+    .kb-result-summary {
+      display: grid;
+      gap: 10px;
+    }
+    .kb-score-card {
+      display: grid;
+      grid-template-columns: 74px 1fr;
+      gap: 12px;
+      align-items: center;
+      border: 1px solid rgba(15,61,51,.12);
+      border-radius: 14px;
+      padding: 12px;
+      background: #fff;
+    }
+    .kb-score-ring {
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--green);
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 750;
+      background:
+        radial-gradient(circle at center, #fff 0 55%, transparent 57%),
+        conic-gradient(var(--green-2) 0 84%, #ece4d4 84% 100%);
+    }
+    .kb-score-card b {
+      display: block;
+      color: var(--ink);
+      font-size: 13px;
+      line-height: 1.35;
+      font-weight: 720;
+    }
+    .kb-score-card span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.45;
+      font-weight: 480;
+    }
+    .kb-value-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 7px;
+      margin-top: 11px;
+    }
+    .kb-value {
+      border: 1px solid rgba(15,61,51,.10);
+      border-radius: 11px;
+      padding: 9px;
+      background: #fff;
+    }
+    .kb-value small {
+      display: block;
+      color: #8a8d86;
+      font-size: 9px;
+      font-weight: 760;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .kb-value strong {
+      display: block;
+      margin-top: 5px;
+      color: var(--green);
+      font-size: 11px;
+      line-height: 1.25;
+      font-weight: 720;
     }
 
     .kb-options {
@@ -645,6 +1218,45 @@
       line-height: 1.5;
       font-weight: 450;
     }
+    .kb-product-topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 9px;
+      margin-bottom: 5px;
+    }
+    .kb-roast {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #8a6425;
+      font-size: 10px;
+      font-weight: 720;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    .kb-roast::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+    }
+    .kb-product-why {
+      margin-top: 9px;
+      border-left: 3px solid rgba(201,151,76,.58);
+      border-radius: 0 9px 9px 0;
+      padding: 8px 9px;
+      background: rgba(243,229,205,.46);
+      color: #6b5b42;
+      font-size: 10.8px;
+      line-height: 1.45;
+      font-weight: 520;
+    }
+    .kb-product-why b {
+      color: #8a6425;
+      font-weight: 760;
+    }
     .kb-tags {
       display: flex;
       flex-wrap: wrap;
@@ -666,6 +1278,87 @@
       background: var(--gold-soft);
       color: #8a6425;
       font-weight: 700;
+    }
+    .kb-product-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+    .kb-mini-btn {
+      min-height: 30px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0 11px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #fff;
+      color: var(--green);
+      cursor: pointer;
+      font-size: 10.5px;
+      font-weight: 700;
+      transition: background .15s ease, transform .15s ease, border-color .15s ease;
+    }
+    .kb-mini-btn:hover {
+      border-color: rgba(28,106,85,.36);
+      background: var(--mint);
+      transform: translateY(-1px);
+    }
+    .kb-mini-btn.primary {
+      border-color: transparent;
+      background: var(--green);
+      color: #fdf9f0;
+    }
+    .kb-mini-btn.primary:hover {
+      background: var(--green-2);
+    }
+    .kb-compare-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .kb-compare {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px;
+      background: #fff;
+    }
+    .kb-compare small {
+      display: block;
+      color: #8a8d86;
+      font-size: 9px;
+      font-weight: 760;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .kb-compare strong {
+      display: block;
+      margin-top: 5px;
+      color: var(--ink);
+      font-size: 11.2px;
+      line-height: 1.25;
+      font-weight: 720;
+    }
+    .kb-compare span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 10px;
+      line-height: 1.35;
+      font-weight: 500;
+    }
+    .kb-empty-state {
+      border: 1px dashed rgba(15,61,51,.20);
+      border-radius: 14px;
+      padding: 14px;
+      background: rgba(255,255,255,.72);
+      color: var(--muted);
+      font-size: 11.5px;
+      line-height: 1.5;
+      font-weight: 520;
+      text-align: center;
     }
 
     /* lead form */
@@ -809,12 +1502,134 @@
       transform: translateX(-50%);
     }
 
+    @media (max-width: 980px) {
+      .demo-shell {
+        grid-template-columns: 1fr;
+      }
+      .demo-visual {
+        min-height: 520px;
+      }
+      .visual-mini {
+        top: 92px;
+      }
+    }
+
+    @media (max-width: 720px) {
+      body {
+        background:
+          linear-gradient(180deg, rgba(10,44,37,.96), rgba(10,44,37,.76)),
+          url("https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=76") center / cover fixed,
+          #0a2c25;
+      }
+      .demo-shell {
+        gap: 16px;
+      }
+      .demo-card h1 {
+        font-size: clamp(34px, 12vw, 52px);
+      }
+      .demo-stats,
+      .visual-grid,
+      .kb-insight-grid,
+      .kb-value-strip,
+      .kb-compare-grid {
+        grid-template-columns: 1fr;
+      }
+      .demo-stat {
+        min-height: auto;
+      }
+      .demo-visual {
+        min-height: 500px;
+      }
+      .visual-topbar {
+        left: 16px;
+        right: 16px;
+        top: 16px;
+      }
+      .visual-live {
+        display: none;
+      }
+      .visual-product {
+        left: 18px;
+        top: 96px;
+        width: 104px;
+        min-height: 148px;
+      }
+      .visual-mini {
+        top: 96px;
+        right: 16px;
+        width: min(220px, calc(100% - 142px));
+      }
+      .visual-content {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+      }
+      .visual-title {
+        font-size: 30px;
+      }
+      .visual-tile {
+        min-height: auto;
+      }
+      .kb-question-head {
+        display: grid;
+      }
+      .kb-score-card {
+        grid-template-columns: 62px 1fr;
+      }
+      .kb-score-ring {
+        width: 62px;
+        height: 62px;
+        font-size: 17px;
+      }
+    }
+
     @media (max-width: 520px) {
       .demo {
         align-items: start;
         padding: 18px;
       }
       .demo-card { padding: 24px 22px; }
+      .demo-actions {
+        align-items: stretch;
+      }
+      .demo-btn {
+        width: 100%;
+        justify-content: center;
+      }
+      .demo-visual {
+        min-height: 460px;
+        border-radius: 18px;
+      }
+      .visual-mini {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: auto;
+        margin: 92px 16px 0 auto;
+      }
+      .visual-product {
+        top: 92px;
+      }
+      .visual-content {
+        position: relative;
+        margin-top: 24px;
+        padding-top: 180px;
+      }
+      .kb-flow-map {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 4px;
+      }
+      .kb-flow-node {
+        min-height: 36px;
+        font-size: 8px;
+      }
+      .kb-product {
+        grid-template-columns: 48px 1fr;
+      }
+      .kb-thumb {
+        width: 48px;
+        height: 64px;
+      }
       #kb-teaser {
         right: 18px;
         bottom: 120px;
@@ -833,23 +1648,88 @@
 </head>
 <body>
   <main class="demo">
-    <section class="demo-card" aria-label="KávaBot demo">
-      <span class="demo-eyebrow">KávaBot &middot; widget pre e-shop</span>
-      <h1>Kávový poradca, ktorý predáva <em>za vás</em>.</h1>
-      <p>Namiesto všeobecného chatu vedie zákazníka piatimi krátkymi otázkami a odporučí konkrétnu kávu z katalógu — aj s dôvodom a možnosťou poslať dopyt.</p>
-      <div class="demo-actions">
-        <button class="demo-btn" type="button" data-open>
-          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Vyskúšať poradcu
-        </button>
-        <button class="demo-btn secondary" type="button" data-demo="office">Firemný odber</button>
-      </div>
-      <div class="demo-note">
-        <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>5 otázok, žiadne písanie</span>
-        <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>odporúčanie z katalógu</span>
-        <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>dopyt priamo z widgetu</span>
-      </div>
-    </section>
+    <div class="demo-shell">
+      <section class="demo-card demo-copy" aria-label="KávaBot demo">
+        <span class="demo-eyebrow">KávaBot &middot; predajný poradca</span>
+        <h1>Poradca, ktorý pôsobí ako <em>senior barista</em>.</h1>
+        <p>Nie je to obyčajný chat. Zákazníka prevedie výberom, vysvetlí rozdiely, ukáže top zhodu a pošle pripravený dopyt tak, aby e-shop nestrácal ľudí pri rozhodovaní.</p>
+        <div class="demo-actions">
+          <button class="demo-btn" type="button" data-open>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Spustiť poradcu
+          </button>
+          <button class="demo-btn secondary" type="button" data-demo="office">Firemný odber</button>
+        </div>
+        <div class="demo-stats" aria-label="Silné stránky riešenia">
+          <div class="demo-stat">
+            <strong>5</strong>
+            <span>krátkych otázok namiesto nekonečného chatu</span>
+          </div>
+          <div class="demo-stat">
+            <strong>99%</strong>
+            <span>zhoda pri najlepšom odporúčaní podľa odpovedí</span>
+          </div>
+          <div class="demo-stat">
+            <strong>1×</strong>
+            <span>klik na pripravený dopyt alebo nový výber</span>
+          </div>
+        </div>
+        <div class="demo-note">
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>rozmer launcheru podľa MôjPlot</span>
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>výsledky z katalógu</span>
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>funkčný lead formulár</span>
+        </div>
+      </section>
+
+      <aside class="demo-visual" aria-label="Prémiový náhľad kávového poradcu">
+        <div class="visual-topbar">
+          <div class="visual-brand">
+            <span class="visual-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <span class="visual-text">
+              <strong>KávaBot Studio</strong>
+              <span>live produktový výber</span>
+            </span>
+          </div>
+          <span class="visual-live"><i></i> online poradca</span>
+        </div>
+        <div class="visual-product" aria-hidden="true">
+          <span>signature blend</span>
+          <strong>Aurora House</strong>
+        </div>
+        <div class="visual-mini">
+          <div class="visual-mini-head">
+            <b>Top zhoda: Aurora House Blend</b>
+            <span>94%</span>
+          </div>
+          <p>Nízka acidita, dobrá crema a chuť, ktorá funguje doma aj vo firme.</p>
+          <div class="visual-meter"><i></i></div>
+        </div>
+        <div class="visual-content">
+          <span class="visual-badge">prémiový predajný tok</span>
+          <h2 class="visual-title">Najprv pochopí zákazníka, potom odporučí produkt.</h2>
+          <p class="visual-subtitle">Vnútri widgetu pribudol jasnejší úvod, mapa krokov, skóre zhody, dôvody odporúčania a rýchle akcie.</p>
+          <div class="visual-grid" aria-label="Príklady výstupov poradcu">
+            <div class="visual-tile">
+              <small>profil</small>
+              <strong>espresso</strong>
+              <span>automat, páka alebo moka podľa odpovede</span>
+            </div>
+            <div class="visual-tile">
+              <small>chuť</small>
+              <strong>sladká</strong>
+              <span>čokoláda, orechy, karamel bez ostrej acidity</span>
+            </div>
+            <div class="visual-tile">
+              <small>akcia</small>
+              <strong>dopyt</strong>
+              <span>predvyplnený formulár s top odporúčaním</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
   </main>
 
   <div id="kb-teaser" role="button" tabindex="0" aria-label="Otvoriť kávového poradcu">
@@ -1114,15 +1994,37 @@
         els.fill.style.width = "0%";
         els.label.textContent = "Vitajte";
         els.body.innerHTML = `
-          <article class="kb-card">
-            <span class="kb-kicker">Osobný výber</span>
-            <h2>Dobrý deň, nájdem vám kávu na mieru.</h2>
-            <p>Odpoviete na päť krátkych otázok a odporučím konkrétnu kávu z našej ponuky — aj s dôvodom, prečo vám sadne.</p>
+          <article class="kb-card featured">
+            <div class="kb-panel-intro">
+              <div class="kb-hero-row">
+                <span class="kb-avatar" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4M7 5.4c.9.8.9 1.7 0 2.6M11 5.4c.9.8.9 1.7 0 2.6M15 5.4c.9.8.9 1.7 0 2.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+                </span>
+                <div>
+                  <span class="kb-kicker">Osobný výber</span>
+                  <h2>Dobrý deň, nájdem vám kávu na mieru.</h2>
+                  <p>Odpoviete na päť krátkych otázok a ja z toho poskladám odporúčanie: príprava, chuť, acidita, balenie a konkrétny produkt.</p>
+                </div>
+              </div>
+              <div class="kb-insight-grid" aria-label="Ako poradca pracuje">
+                <div class="kb-insight"><b>01</b><span>zistí účel nákupu a typ zákazníka</span></div>
+                <div class="kb-insight"><b>02</b><span>porovná odpovede s katalógom kávy</span></div>
+                <div class="kb-insight"><b>03</b><span>vysvetlí prečo sedí top produkt</span></div>
+              </div>
+              <div class="kb-flow-map" aria-label="Mapa výberu">
+                <span class="kb-flow-node active">účel</span>
+                <span class="kb-flow-node">príprava</span>
+                <span class="kb-flow-node">chuť</span>
+                <span class="kb-flow-node">acidita</span>
+                <span class="kb-flow-node">balenie</span>
+              </div>
+            </div>
             <div class="kb-actions">
               <button class="kb-btn" type="button" data-action="start">Začať výber</button>
               <button class="kb-btn alt" type="button" data-action="office">Pre firmu</button>
               <button class="kb-btn alt" type="button" data-action="gift">Darček</button>
             </div>
+            <div class="kb-mini-note"><b>Tip:</b> Môžete aj písať do spodného poľa, napríklad „káva do automatu” alebo „darček”.</div>
           </article>
         `;
         setChips([
@@ -1140,14 +2042,39 @@
         state.results = [];
       }
 
+      function flowHtml(activeIndex = state.step) {
+        const labels = ["účel", "príprava", "chuť", "acidita", "balenie"];
+        return `
+          <div class="kb-flow-map" aria-label="Postup výberu">
+            ${labels.map((label, index) => {
+              const status = index < activeIndex ? " done" : index === activeIndex ? " active" : "";
+              return `<span class="kb-flow-node${status}">${esc(label)}</span>`;
+            }).join("")}
+          </div>
+        `;
+      }
+
+      function selectedBrief() {
+        const selected = Object.entries(state.labels)
+          .filter(([key]) => steps.some(step => step.key === key))
+          .map(([, label]) => label);
+        if (!selected.length) return "Vyberte najbližšiu odpoveď. Poradca ju hneď použije v ďalšom kroku.";
+        return `Doteraz viem: ${selected.join(" · ")}`;
+      }
+
       function renderStep() {
         const step = steps[state.step];
         setProgress();
         els.body.innerHTML = `
           <article class="kb-card">
-            <span class="kb-kicker">Otázka ${state.step + 1}</span>
+            <div class="kb-question-head">
+              <span class="kb-kicker">Otázka ${state.step + 1}</span>
+              <span class="kb-kicker">${Math.round(((state.step + 1) / steps.length) * 100)} % hotovo</span>
+            </div>
             <h3>${esc(step.title)}</h3>
             <p>${esc(step.help)}</p>
+            ${flowHtml(state.step)}
+            <div class="kb-mini-note"><b>Kontext:</b> ${esc(selectedBrief())}</div>
             <div class="kb-options">
               ${step.options.map((option, index) => `
                 <button class="kb-option" type="button" data-answer="${esc(option[0])}" data-label="${esc(option[1])}">
@@ -1226,20 +2153,66 @@
         return parts.join(" · ");
       }
 
+      function productTone(product) {
+        if (product.id === "ethiopia") return "svetlý filter";
+        if (product.id === "office") return "stabilný office";
+        if (product.id === "gift") return "degustačný set";
+        if (product.id === "decaf") return "jemný decaf";
+        return "espresso blend";
+      }
+
+      function resultHighlights(product) {
+        const items = [];
+        if (state.answers.brew && product.brew.includes(state.answers.brew)) {
+          items.push(["príprava", state.labels.brew || state.answers.brew, "sedí na váš spôsob prípravy"]);
+        }
+        if (state.answers.taste && product.taste.includes(state.answers.taste)) {
+          items.push(["chuť", state.labels.taste || state.answers.taste, "má profil, ktorý ste vybrali"]);
+        }
+        if (state.answers.pack && product.pack.includes(state.answers.pack)) {
+          items.push(["balenie", state.labels.pack || state.answers.pack, "dáva zmysel pre spotrebu"]);
+        }
+        if (!items.length) {
+          items.push(["profil", "vyvážený výber", "bezpečná voľba z katalógu"]);
+        }
+        return items.slice(0, 3);
+      }
+
       function productHtml(item, index) {
         const p = item.product;
         const initial = p.name.trim().charAt(0);
         const top = index === 0;
+        const highlights = resultHighlights(p);
         return `
           <article class="kb-product${top ? " top" : ""}" style="animation-delay:${index * 70}ms">
             ${top ? '<span class="kb-best">Najlepšia zhoda</span>' : ""}
             <div class="kb-thumb" aria-hidden="true">${esc(initial)}</div>
             <div>
-              <h4>${esc(p.name)} <span class="kb-match">${item.score} %</span></h4>
-              <p>${esc(p.description)} Odporúčam, pretože ${esc(p.reason)}.</p>
+              <div class="kb-product-topline">
+                <span class="kb-roast">${esc(productTone(p))}</span>
+                <span class="kb-match">${item.score} %</span>
+              </div>
+              <h4>${esc(p.name)}</h4>
+              <p>${esc(p.description)}</p>
+              <div class="kb-product-why"><b>Prečo sedí:</b> ${esc(p.reason)}.</div>
               <div class="kb-tags">
                 ${p.taste.slice(0, 3).map(tag => `<span class="kb-tag">${esc(tag)}</span>`).join("")}
                 <span class="kb-tag price">${esc(p.price)}</span>
+              </div>
+              ${top ? `
+                <div class="kb-compare-grid" aria-label="Dôvody zhody">
+                  ${highlights.map(([label, value, note]) => `
+                    <div class="kb-compare">
+                      <small>${esc(label)}</small>
+                      <strong>${esc(value)}</strong>
+                      <span>${esc(note)}</span>
+                    </div>
+                  `).join("")}
+                </div>
+              ` : ""}
+              <div class="kb-product-actions">
+                <button class="kb-mini-btn primary" type="button" data-action="lead">Chcem ponuku</button>
+                <button class="kb-mini-btn" type="button" data-action="restart">Porovnať znova</button>
               </div>
             </div>
           </article>
@@ -1254,17 +2227,36 @@
         els.body.scrollTop = 0;
         setChips([]);
         setTimeout(() => {
+          const top = state.results[0];
+          const topName = top?.product?.name || "vybranú kávu";
+          const topScore = top?.score || 0;
           els.body.innerHTML = `
-            <article class="kb-card">
-              <span class="kb-kicker">Vaše odporúčanie</span>
-              <h3>Toto sú kávy pre vás.</h3>
-              <p>${esc(summaryText())}</p>
+            <article class="kb-card featured">
+              <div class="kb-result-summary">
+                <span class="kb-kicker">Vaše odporúčanie</span>
+                <h3>Najlepšie sedí ${esc(topName)}.</h3>
+                <p>${esc(summaryText() || "Vybrali sme bezpečný štart podľa najčastejšej preferencie zákazníkov.")}</p>
+                <div class="kb-score-card">
+                  <div class="kb-score-ring" aria-label="Skóre zhody">${topScore}%</div>
+                  <div>
+                    <b>Poradca porovnal účel, prípravu, chuť, aciditu a balenie.</b>
+                    <span>Nižšie vidíte top produkt aj ďalšie dve alternatívy, aby zákazník nemal pocit slepej uličky.</span>
+                  </div>
+                </div>
+                <div class="kb-value-strip" aria-label="Čo odporúčanie rieši">
+                  <div class="kb-value"><small>profil</small><strong>${esc(state.labels.taste || "vyvážená chuť")}</strong></div>
+                  <div class="kb-value"><small>príprava</small><strong>${esc(state.labels.brew || "bežný kávovar")}</strong></div>
+                  <div class="kb-value"><small>balenie</small><strong>${esc(state.labels.pack || "250 g / 1 kg")}</strong></div>
+                </div>
+              </div>
             </article>
             <div style="padding-top:6px">
               ${state.results.map(productHtml).join("")}
             </div>
             <article class="kb-card">
-              <p>Chcete cenovú ponuku alebo poradiť s objednávkou? Pošlite nám nezáväzný dopyt.</p>
+              <span class="kb-kicker">Ďalší krok</span>
+              <h3>Premeniť odporúčanie na dopyt?</h3>
+              <p>Formulár doplní zvolené odpovede aj top produkt. Zákazník nemusí opisovať, čo si vyklikal.</p>
               <div class="kb-actions">
                 <button class="kb-btn" type="button" data-action="lead">Poslať dopyt</button>
                 <button class="kb-btn alt" type="button" data-action="restart">Nový výber</button>
