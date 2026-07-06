@@ -29,14 +29,16 @@ http://127.0.0.1:8788/index.html
 
 ## GitHub Pages
 
-Repo obsahuje `.nojekyll` a workflow `.github/workflows/pages.yml`, takže stránka sa deployuje ako čistý statický web.
+Repo obsahuje `.nojekyll`, takže GitHub Pages nepúšťa Jekyll build a publikuje stránku ako čistý statický web.
 
 V GitHube treba mať v nastaveniach repozitára:
 
 - Settings -> Pages
-- Build and deployment -> Source: GitHub Actions
+- Build and deployment -> Source: Deploy from a branch
+- Branch: `main`
+- Folder: `/ (root)`
 
-Po pushi na `main` sa spustí workflow `Deploy static site to GitHub Pages`.
+Po pushi na `main` sa spustí systémový workflow `pages build and deployment`.
 
 ## Backend napojenie
 
