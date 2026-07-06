@@ -1,0 +1,2296 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+  <title>KávaBot Concierge | prémiový poradca pre pražiareň</title>
+  <meta name="description" content="Prémiový kávový chatbot widget s produktovým poradcom, odporúčaniami a lead formulárom.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fraunces:opsz,wght@9..144,700;9..144,850&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #161719;
+      --muted: #66706c;
+      --paper: #fffdfa;
+      --paper-2: #f6f1e9;
+      --line: #e5ded2;
+      --forest: #123d34;
+      --forest-2: #1f6b57;
+      --coffee: #4b2f25;
+      --amber: #d8a24a;
+      --coral: #dc6b57;
+      --sky: #b9d7e6;
+      --plum: #4a3c5c;
+      --white: #ffffff;
+      --danger: #b9473d;
+      --ok: #2f8a5b;
+      --shadow: 0 28px 80px rgba(17, 23, 22, .22);
+      --shadow-soft: 0 16px 40px rgba(17, 23, 22, .12);
+      --font: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --display: "Fraunces", Georgia, serif;
+      --radius: 8px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100%;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: var(--font);
+      letter-spacing: 0;
+    }
+    button, input, textarea, select { font: inherit; }
+    button { -webkit-tap-highlight-color: transparent; }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+
+    @keyframes kbFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+    @keyframes kbPulse {
+      0%, 100% { box-shadow: 0 16px 34px rgba(18, 61, 52, .32), 0 0 0 0 rgba(31, 107, 87, .22); }
+      50% { box-shadow: 0 16px 34px rgba(18, 61, 52, .32), 0 0 0 18px rgba(31, 107, 87, 0); }
+    }
+    @keyframes kbIn {
+      from { opacity: 0; transform: translateY(16px) scale(.98); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes kbMessageBot {
+      from { opacity: 0; transform: translateX(-8px) translateY(8px); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes kbMessageMe {
+      from { opacity: 0; transform: translateX(8px) translateY(8px); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes kbDot {
+      0%, 80%, 100% { opacity: .4; transform: translateY(0) scale(.7); }
+      40% { opacity: 1; transform: translateY(-4px) scale(1); }
+    }
+    @keyframes kbBeam {
+      from { left: -42%; }
+      to { left: 100%; }
+    }
+    @keyframes kbCard {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    .page {
+      min-height: 100vh;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(246, 241, 233, .8), rgba(255, 253, 250, 1) 55%),
+        var(--paper);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 86vh;
+      padding: 22px clamp(18px, 4vw, 56px) 46px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #fff;
+      isolation: isolate;
+    }
+    .hero:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -4;
+      background: #12211d;
+    }
+    .hero:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(90deg, rgba(8, 15, 13, .94) 0%, rgba(8, 15, 13, .68) 44%, rgba(8, 15, 13, .06) 100%),
+        linear-gradient(180deg, rgba(8, 15, 13, .04), rgba(8, 15, 13, .42));
+    }
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 48%;
+      filter: saturate(1.08) contrast(1.06) brightness(1.08);
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      width: min(1180px, 100%);
+      margin: 0 auto;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      font-weight: 900;
+    }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, .2);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .1);
+      backdrop-filter: blur(12px);
+      flex: 0 0 42px;
+    }
+    .brand-mark svg { width: 24px; height: 24px; }
+    .brand strong { display: block; font-size: 14px; line-height: 1.1; }
+    .brand span { display: block; margin-top: 2px; color: rgba(255,255,255,.68); font-size: 11px; font-weight: 750; }
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .top-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 38px;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 999px;
+      padding: 0 13px;
+      background: rgba(255,255,255,.1);
+      color: rgba(255,255,255,.86);
+      font-size: 12px;
+      font-weight: 850;
+      backdrop-filter: blur(12px);
+      white-space: nowrap;
+    }
+    .top-pill svg { width: 15px; height: 15px; }
+    .hero-inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      padding: min(12vh, 108px) 0 0;
+      display: grid;
+      grid-template-columns: minmax(0, 760px);
+      align-items: end;
+    }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      width: fit-content;
+      min-height: 34px;
+      border: 1px solid rgba(255,255,255,.24);
+      border-radius: 999px;
+      padding: 0 12px;
+      background: rgba(255,255,255,.11);
+      color: rgba(255,255,255,.88);
+      font-size: 12px;
+      font-weight: 900;
+      text-transform: uppercase;
+      backdrop-filter: blur(16px);
+    }
+    .eyebrow i {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #77f0ad;
+      box-shadow: 0 0 12px rgba(119,240,173,.8);
+    }
+    .hero h1 {
+      margin: 18px 0 18px;
+      max-width: 760px;
+      font-family: var(--display);
+      font-size: clamp(44px, 8vw, 104px);
+      line-height: .87;
+      letter-spacing: 0;
+    }
+    .hero h1 span { display: block; }
+    .hero-lead {
+      width: min(690px, 100%);
+      margin: 0;
+      color: rgba(255,255,255,.82);
+      font-size: clamp(16px, 1.7vw, 19px);
+      line-height: 1.65;
+      font-weight: 650;
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+    .btn {
+      min-height: 46px;
+      border: 0;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 0 17px;
+      cursor: pointer;
+      font-weight: 900;
+      line-height: 1;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    }
+    .btn svg { width: 18px; height: 18px; flex: 0 0 18px; }
+    .btn.primary {
+      background: #fff;
+      color: #10231d;
+      box-shadow: 0 18px 38px rgba(0,0,0,.22);
+    }
+    .btn.dark {
+      background: var(--forest);
+      color: #fff;
+      box-shadow: 0 12px 26px rgba(18,61,52,.26);
+    }
+    .btn.ghost {
+      border: 1px solid rgba(255,255,255,.24);
+      background: rgba(255,255,255,.08);
+      color: #fff;
+      backdrop-filter: blur(12px);
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .hero-proof {
+      width: min(1180px, 100%);
+      margin: 42px auto 0;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.16);
+      backdrop-filter: blur(14px);
+    }
+    .proof-item {
+      min-height: 94px;
+      padding: 18px;
+      background: rgba(11, 20, 18, .34);
+    }
+    .proof-item b {
+      display: block;
+      font-size: 24px;
+      line-height: 1;
+      font-weight: 950;
+    }
+    .proof-item span {
+      display: block;
+      margin-top: 7px;
+      color: rgba(255,255,255,.7);
+      font-size: 12px;
+      line-height: 1.35;
+      font-weight: 750;
+    }
+
+    .showcase {
+      padding: clamp(34px, 6vw, 78px) clamp(18px, 4vw, 56px) 148px;
+      background: var(--paper);
+    }
+    .showcase-inner {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: clamp(24px, 4vw, 46px);
+      align-items: start;
+    }
+    .section-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      min-height: 30px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0 11px;
+      color: var(--forest);
+      background: #fff;
+      font-size: 11px;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+    .showcase h2 {
+      margin: 16px 0 14px;
+      font-family: var(--display);
+      font-size: clamp(32px, 5vw, 58px);
+      line-height: .95;
+      letter-spacing: 0;
+      color: var(--forest);
+    }
+    .showcase-copy {
+      margin: 0;
+      color: #52605b;
+      font-size: 16px;
+      line-height: 1.72;
+      font-weight: 650;
+    }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 22px;
+    }
+    .feature {
+      min-height: 126px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 16px;
+      background: #fff;
+      box-shadow: var(--shadow-soft);
+    }
+    .feature svg {
+      width: 25px;
+      height: 25px;
+      color: var(--forest-2);
+    }
+    .feature b {
+      display: block;
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: 950;
+      color: var(--ink);
+    }
+    .feature span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.46;
+      font-weight: 650;
+    }
+    .product-board {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .board-card {
+      min-height: 234px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      background: #15241f;
+      color: #fff;
+      box-shadow: var(--shadow-soft);
+      isolation: isolate;
+    }
+    .board-card.large {
+      grid-column: span 2;
+      min-height: 290px;
+    }
+    .board-card img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    .board-card:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(7,12,11,.02), rgba(7,12,11,.82));
+      z-index: -1;
+    }
+    .board-content {
+      position: absolute;
+      inset: auto 0 0;
+      padding: 18px;
+    }
+    .board-content b {
+      display: block;
+      font-size: 18px;
+      font-weight: 950;
+      line-height: 1.05;
+    }
+    .board-content span {
+      display: block;
+      margin-top: 7px;
+      max-width: 520px;
+      color: rgba(255,255,255,.74);
+      font-size: 12px;
+      line-height: 1.45;
+      font-weight: 700;
+    }
+    .board-label {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      display: inline-flex;
+      min-height: 28px;
+      align-items: center;
+      border-radius: 999px;
+      padding: 0 10px;
+      background: rgba(255,255,255,.88);
+      color: var(--forest);
+      font-size: 11px;
+      font-weight: 950;
+    }
+
+    /* Widget */
+    #kb-bubble {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 10000;
+      width: 76px;
+      height: 76px;
+      border: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: linear-gradient(145deg, var(--forest-2), var(--forest) 64%, var(--plum));
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      animation: kbPulse 3s ease-in-out infinite;
+      transition: transform .2s ease, opacity .2s ease;
+    }
+    #kb-bubble:hover { transform: translateY(-2px) scale(1.04); }
+    #kb-bubble svg { width: 36px; height: 36px; }
+    #kb-bubble.is-open {
+      opacity: 0;
+      transform: scale(.86);
+      pointer-events: none;
+    }
+    #kb-teaser {
+      position: fixed;
+      right: 24px;
+      bottom: 114px;
+      z-index: 9999;
+      width: min(314px, calc(100vw - 40px));
+      border: 1px solid rgba(18, 61, 52, .14);
+      border-radius: var(--radius);
+      padding: 15px 16px 16px;
+      background: rgba(255,255,255,.94);
+      box-shadow: 0 20px 50px rgba(17, 23, 22, .18);
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(12px) scale(.98);
+      transform-origin: bottom right;
+      transition: .28s cubic-bezier(.2,.82,.2,1);
+      backdrop-filter: blur(18px);
+    }
+    #kb-teaser.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: none;
+    }
+    #kb-teaser b {
+      display: block;
+      padding-right: 26px;
+      color: var(--forest);
+      font-size: 14px;
+      font-weight: 950;
+    }
+    #kb-teaser span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      font-weight: 700;
+    }
+    .teaser-close {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 24px;
+      height: 24px;
+      border: 0;
+      border-radius: 50%;
+      background: #eff4f1;
+      color: var(--forest);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    #kb-widget {
+      position: fixed;
+      right: 24px;
+      bottom: 104px;
+      z-index: 10001;
+      width: min(452px, calc(100vw - 40px));
+      height: min(742px, calc(100dvh - 124px));
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid rgba(18, 61, 52, .16);
+      border-radius: 14px;
+      background: #fff;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(18px) scale(.96);
+      transform-origin: bottom right;
+      transition: .26s cubic-bezier(.2,.82,.22,1);
+    }
+    #kb-widget.show {
+      opacity: 1;
+      pointer-events: auto;
+      transform: none;
+      animation: kbIn .28s ease both;
+    }
+    #kb-widget.thinking .kb-beam {
+      opacity: 1;
+      animation: kbBeam 1.4s ease-in-out infinite alternate;
+    }
+    .kb-head {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 13px;
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(216,162,74,.24), transparent 42%),
+        linear-gradient(135deg, var(--forest), #0c2d27 58%, var(--plum));
+      overflow: hidden;
+    }
+    .kb-logo {
+      width: 46px;
+      height: 46px;
+      flex: 0 0 46px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255,255,255,.12);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.16);
+    }
+    .kb-logo svg { width: 27px; height: 27px; }
+    .kb-title { min-width: 0; flex: 1; }
+    .kb-title b {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 15px;
+      line-height: 1.15;
+      font-weight: 950;
+    }
+    .kb-title span {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 4px;
+      color: rgba(255,255,255,.73);
+      font-size: 11px;
+      font-weight: 750;
+    }
+    .kb-online {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #79edaa;
+      box-shadow: 0 0 10px rgba(121,237,170,.9);
+      flex: 0 0 8px;
+    }
+    .kb-head-actions { display: flex; align-items: center; gap: 6px; }
+    .kb-icon-btn {
+      width: 36px;
+      height: 36px;
+      border: 0;
+      border-radius: 50%;
+      color: currentColor;
+      background: rgba(255,255,255,.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background .16s ease, transform .16s ease;
+    }
+    .kb-icon-btn:hover { background: rgba(255,255,255,.2); transform: translateY(-1px); }
+    .kb-icon-btn svg { width: 18px; height: 18px; }
+    .kb-beam {
+      position: absolute;
+      left: -42%;
+      bottom: 0;
+      width: 42%;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--amber), #fff, transparent);
+      opacity: 0;
+      pointer-events: none;
+    }
+    .kb-tabs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+    .kb-tab {
+      min-height: 34px;
+      border: 0;
+      border-radius: 999px;
+      background: #f0f3f1;
+      color: #59625f;
+      cursor: pointer;
+      font-size: 12px;
+      font-weight: 950;
+    }
+    .kb-tab.on {
+      background: var(--forest);
+      color: #fff;
+    }
+    .kb-panel {
+      flex: 1;
+      min-height: 0;
+      display: none;
+      flex-direction: column;
+      background:
+        linear-gradient(180deg, #fff, #fbf8f3 60%, #f7f3ec);
+    }
+    .kb-panel.on { display: flex; }
+    .kb-spotlight {
+      display: grid;
+      grid-template-columns: 66px 1fr auto;
+      gap: 12px;
+      align-items: center;
+      margin: 10px 11px 0;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 10px;
+      background: #fff;
+      cursor: pointer;
+      text-align: left;
+      box-shadow: 0 10px 24px rgba(17,23,22,.07);
+    }
+    .kb-spotlight img {
+      width: 66px;
+      height: 54px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .kb-spotlight b {
+      display: block;
+      color: var(--forest);
+      font-size: 13px;
+      line-height: 1.2;
+      font-weight: 950;
+    }
+    .kb-spotlight span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.35;
+      font-weight: 700;
+    }
+    .kb-spotlight svg {
+      width: 20px;
+      height: 20px;
+      color: var(--forest-2);
+    }
+    .kb-messages {
+      flex: 1;
+      min-height: 0;
+      overflow: auto;
+      overscroll-behavior: contain;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 13px 11px 0;
+    }
+    .kb-row {
+      display: flex;
+      gap: 8px;
+      align-items: flex-end;
+    }
+    .kb-row.bot { animation: kbMessageBot .28s ease both; }
+    .kb-row.me {
+      justify-content: flex-end;
+      animation: kbMessageMe .28s ease both;
+    }
+    .kb-avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 30px;
+      color: #fff;
+      background: linear-gradient(135deg, var(--forest-2), var(--forest));
+      box-shadow: 0 0 0 2px #fff;
+    }
+    .kb-avatar svg { width: 17px; height: 17px; }
+    .kb-row.me .kb-avatar { display: none; }
+    .kb-msg-wrap {
+      max-width: 84%;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .kb-row.me .kb-msg-wrap { align-items: flex-end; }
+    .kb-bubble {
+      border-radius: 14px;
+      padding: 10px 12px;
+      font-size: 13px;
+      line-height: 1.5;
+      font-weight: 650;
+      overflow-wrap: anywhere;
+    }
+    .kb-bubble.bot {
+      border: 1px solid var(--line);
+      border-bottom-left-radius: 5px;
+      background: #fff;
+      box-shadow: 0 8px 18px rgba(17,23,22,.06);
+    }
+    .kb-bubble.me {
+      border-bottom-right-radius: 5px;
+      background: linear-gradient(135deg, var(--forest-2), var(--forest));
+      color: #fff;
+    }
+    .kb-bubble b { color: var(--forest); }
+    .kb-row.me .kb-bubble b { color: #fff; }
+    .kb-time {
+      margin-top: 3px;
+      padding: 0 3px;
+      color: #99a09c;
+      font-size: 9px;
+      font-weight: 850;
+    }
+    .kb-typing {
+      display: inline-flex;
+      gap: 4px;
+      align-items: center;
+      min-width: 44px;
+    }
+    .kb-typing i {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--forest-2);
+      animation: kbDot 1.1s infinite;
+    }
+    .kb-typing i:nth-child(2) { animation-delay: .15s; }
+    .kb-typing i:nth-child(3) { animation-delay: .3s; }
+    .kb-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      padding: 10px 11px 9px;
+      background: linear-gradient(180deg, rgba(247,243,236,.45), #f7f3ec);
+    }
+    .kb-chip {
+      min-height: 34px;
+      border: 1px solid rgba(18,61,52,.16);
+      border-radius: 999px;
+      padding: 0 12px;
+      background: #fff;
+      color: var(--forest);
+      cursor: pointer;
+      font-size: 11.5px;
+      line-height: 1.1;
+      font-weight: 950;
+      box-shadow: 0 7px 14px rgba(17,23,22,.04);
+      transition: transform .15s ease, background .15s ease, color .15s ease, border .15s ease;
+    }
+    .kb-chip:hover {
+      transform: translateY(-1px);
+      background: var(--forest);
+      color: #fff;
+    }
+    .kb-chip.warn {
+      color: var(--danger);
+      border-color: rgba(185,71,61,.22);
+    }
+    .kb-chip.warn:hover {
+      background: var(--danger);
+      color: #fff;
+    }
+    .kb-input {
+      display: flex;
+      gap: 7px;
+      padding: 0 11px 11px;
+      background: #f7f3ec;
+    }
+    .kb-input-inner {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      flex: 1;
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 6px 6px 13px;
+      background: #fff;
+      box-shadow: 0 8px 18px rgba(17,23,22,.05);
+    }
+    .kb-input input {
+      flex: 1;
+      min-width: 0;
+      height: 36px;
+      border: 0;
+      outline: 0;
+      color: var(--ink);
+      background: transparent;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .kb-input button {
+      width: 36px;
+      height: 36px;
+      border: 0;
+      border-radius: 50%;
+      background: var(--forest);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex: 0 0 36px;
+      transition: transform .15s ease;
+    }
+    .kb-input button:hover { transform: scale(1.04); }
+    .kb-input button svg { width: 17px; height: 17px; }
+    .kb-flow-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 12px 8px;
+    }
+    .kb-back {
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: #fff;
+      color: var(--forest);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex: 0 0 34px;
+    }
+    .kb-back:disabled {
+      opacity: .42;
+      cursor: not-allowed;
+    }
+    .kb-flow-title {
+      flex: 1;
+      min-width: 0;
+    }
+    .kb-flow-title b {
+      display: block;
+      color: var(--forest);
+      font-size: 14px;
+      line-height: 1.15;
+      font-weight: 950;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .kb-flow-title span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 10.5px;
+      font-weight: 750;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .kb-progress {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 12px 10px;
+    }
+    .kb-progress-track {
+      flex: 1;
+      height: 6px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #e9e3d9;
+    }
+    .kb-progress-fill {
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--forest), var(--forest-2), var(--amber));
+      transition: width .25s ease;
+    }
+    .kb-progress small {
+      width: 42px;
+      text-align: right;
+      color: var(--muted);
+      font-size: 10px;
+      font-weight: 900;
+    }
+    .kb-flow-body {
+      flex: 1;
+      min-height: 0;
+      overflow: auto;
+      padding: 0 12px 12px;
+    }
+    .kb-question {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      padding: 14px;
+      box-shadow: 0 10px 24px rgba(17,23,22,.06);
+      animation: kbCard .24s ease both;
+    }
+    .kb-question h3 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.2;
+      font-weight: 950;
+    }
+    .kb-question p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.48;
+      font-weight: 650;
+    }
+    .kb-options {
+      display: grid;
+      gap: 8px;
+      margin-top: 13px;
+    }
+    .kb-option {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 10px;
+      align-items: center;
+      padding: 10px;
+      background: #fff;
+      cursor: pointer;
+      text-align: left;
+      transition: border .16s ease, transform .16s ease, background .16s ease;
+    }
+    .kb-option:hover {
+      transform: translateY(-1px);
+      border-color: rgba(31,107,87,.42);
+      background: #f8fbf8;
+    }
+    .kb-option i {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: var(--forest);
+      font-style: normal;
+      font-size: 13px;
+      font-weight: 950;
+    }
+    .kb-option b {
+      display: block;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 950;
+    }
+    .kb-option span {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.35;
+      font-weight: 650;
+    }
+    .kb-results {
+      display: grid;
+      gap: 10px;
+      animation: kbCard .25s ease both;
+    }
+    .kb-summary {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 13px;
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(17,23,22,.06);
+    }
+    .kb-summary b {
+      display: block;
+      color: var(--forest);
+      font-size: 13px;
+      font-weight: 950;
+    }
+    .kb-summary p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+      font-weight: 650;
+    }
+    .kb-product-list {
+      display: grid;
+      gap: 9px;
+    }
+    .kb-product {
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 10px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(17,23,22,.06);
+      animation: kbCard .24s ease both;
+    }
+    .kb-product img {
+      width: 82px;
+      height: 100%;
+      min-height: 120px;
+      object-fit: cover;
+    }
+    .kb-product-main {
+      min-width: 0;
+      padding: 10px 10px 10px 0;
+    }
+    .kb-product-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .kb-product h4 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 13.5px;
+      line-height: 1.17;
+      font-weight: 950;
+    }
+    .kb-match {
+      min-width: 52px;
+      border-radius: 999px;
+      padding: 5px 7px;
+      background: #e8f4ee;
+      color: var(--ok);
+      font-size: 10.5px;
+      font-weight: 950;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .kb-product p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.4;
+      font-weight: 650;
+    }
+    .kb-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 8px;
+    }
+    .kb-tag {
+      border-radius: 999px;
+      padding: 4px 7px;
+      background: #f0f3f1;
+      color: #51615b;
+      font-size: 9.5px;
+      font-weight: 900;
+      line-height: 1;
+    }
+    .kb-product-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 9px;
+    }
+    .kb-price {
+      color: var(--forest);
+      font-size: 13px;
+      font-weight: 950;
+      white-space: nowrap;
+    }
+    .kb-mini-btn {
+      min-height: 30px;
+      border: 0;
+      border-radius: 999px;
+      padding: 0 10px;
+      background: var(--forest);
+      color: #fff;
+      cursor: pointer;
+      font-size: 10.5px;
+      font-weight: 950;
+      white-space: nowrap;
+    }
+    .kb-mini-btn.alt {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--forest);
+    }
+    .kb-table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      font-size: 11px;
+    }
+    .kb-table th,
+    .kb-table td {
+      border-bottom: 1px solid var(--line);
+      padding: 9px;
+      text-align: left;
+      vertical-align: top;
+      line-height: 1.35;
+    }
+    .kb-table th {
+      width: 28%;
+      color: var(--forest);
+      background: #f4f7f5;
+      font-weight: 950;
+    }
+    .kb-table tr:last-child th,
+    .kb-table tr:last-child td {
+      border-bottom: 0;
+    }
+    .kb-lead {
+      flex: 1;
+      min-height: 0;
+      overflow: auto;
+      padding: 12px;
+    }
+    .kb-lead-hero {
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: relative;
+      min-height: 164px;
+      color: #fff;
+      background: var(--forest);
+      isolation: isolate;
+      margin-bottom: 10px;
+    }
+    .kb-lead-hero img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    .kb-lead-hero:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(5,12,10,.08), rgba(5,12,10,.8));
+      z-index: -1;
+    }
+    .kb-lead-hero div {
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+    }
+    .kb-lead-hero b {
+      display: block;
+      font-size: 18px;
+      line-height: 1.1;
+      font-weight: 950;
+    }
+    .kb-lead-hero span {
+      display: block;
+      margin-top: 6px;
+      color: rgba(255,255,255,.76);
+      font-size: 12px;
+      line-height: 1.42;
+      font-weight: 700;
+    }
+    .kb-form {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 13px;
+      background: #fff;
+      box-shadow: 0 10px 24px rgba(17,23,22,.06);
+    }
+    .kb-field {
+      display: grid;
+      gap: 5px;
+      margin-bottom: 9px;
+    }
+    .kb-field label {
+      color: var(--forest);
+      font-size: 11px;
+      font-weight: 950;
+    }
+    .kb-field input,
+    .kb-field select,
+    .kb-field textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      outline: 0;
+      background: #fbfaf7;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 700;
+      transition: border .16s ease, background .16s ease;
+    }
+    .kb-field input,
+    .kb-field select { height: 40px; padding: 0 10px; }
+    .kb-field textarea {
+      min-height: 76px;
+      resize: vertical;
+      padding: 10px;
+      line-height: 1.42;
+    }
+    .kb-field input:focus,
+    .kb-field select:focus,
+    .kb-field textarea:focus {
+      border-color: rgba(31,107,87,.45);
+      background: #fff;
+    }
+    .kb-submit {
+      width: 100%;
+      min-height: 42px;
+      border: 0;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--forest);
+      color: #fff;
+      cursor: pointer;
+      font-weight: 950;
+    }
+    .kb-submit svg { width: 17px; height: 17px; }
+    .kb-toast {
+      position: absolute;
+      left: 50%;
+      bottom: 88px;
+      z-index: 5;
+      transform: translateX(-50%) translateY(12px);
+      opacity: 0;
+      pointer-events: none;
+      max-width: calc(100% - 26px);
+      border-radius: 999px;
+      padding: 9px 13px;
+      background: var(--forest);
+      color: #fff;
+      box-shadow: 0 14px 28px rgba(17,23,22,.22);
+      font-size: 11px;
+      font-weight: 950;
+      white-space: nowrap;
+      transition: .22s ease;
+    }
+    .kb-toast.show {
+      opacity: 1;
+      transform: translateX(-50%);
+    }
+
+    @media (max-width: 900px) {
+      .hero { min-height: 88vh; }
+      .hero-proof { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .showcase-inner { grid-template-columns: 1fr; }
+      .product-board { order: -1; }
+    }
+    @media (max-width: 620px) {
+      .hero { padding: 18px 16px 36px; }
+      .hero,
+      .page { overflow-x: hidden; }
+      .topbar { align-items: flex-start; flex-wrap: wrap; }
+      .topbar,
+      .hero-inner { width: 100%; max-width: 358px; }
+      .hero h1,
+      .hero-lead,
+      .hero-actions,
+      .hero-proof { width: 100%; max-width: 358px; }
+      .topbar,
+      .hero-inner,
+      .hero-proof {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .top-actions { display: none; }
+      .hero-inner { grid-template-columns: minmax(0, 1fr); padding-top: min(12vh, 92px); }
+      .hero h1 {
+        font-size: clamp(36px, 12vw, 48px);
+        line-height: .96;
+        overflow-wrap: normal;
+      }
+      .hero-lead { font-size: 15px; line-height: 1.58; }
+      .hero-actions .btn { width: 100%; }
+      .hero-proof { margin-top: 28px; }
+      .proof-item { min-height: 86px; padding: 14px; }
+      .feature-grid,
+      .product-board { grid-template-columns: 1fr; }
+      .board-card.large { grid-column: auto; }
+      #kb-widget {
+        inset: auto 10px 88px 10px;
+        width: auto;
+        height: min(720px, calc(100dvh - 104px));
+        border-radius: 12px;
+      }
+      #kb-bubble {
+        right: 16px;
+        bottom: 16px;
+        width: 70px;
+        height: 70px;
+      }
+      #kb-teaser {
+        right: 16px;
+        bottom: 100px;
+      }
+      .kb-product {
+        grid-template-columns: 74px 1fr;
+      }
+      .kb-product img {
+        width: 74px;
+      }
+      .kb-msg-wrap { max-width: 88%; }
+      .kb-toast { bottom: 82px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *:before, *:after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-label="KávaBot Concierge">
+      <img class="hero-photo" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1800&q=84" alt="Čerstvá káva ako vizuálne pozadie pre poradcu">
+      <nav class="topbar" aria-label="Hlavná navigácia">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M7 8.3c0-3.2 2.6-5.8 5.8-5.8 1.7 0 3.3.8 4.3 2.1A9.8 9.8 0 0 1 7.4 14.8 5.8 5.8 0 0 1 7 8.3Z" stroke="currentColor" stroke-width="1.8"/><path d="M5.2 18.8c5.7.6 10-1.3 12.9-5.6M8.3 20.8c4.7-.1 8.2-1.9 10.6-5.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </span>
+          <span>
+            <strong>KávaBot Concierge</strong>
+            <span>produktový poradca pre pražiareň</span>
+          </span>
+        </div>
+        <div class="top-actions">
+          <span class="top-pill"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6 9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg> deterministické odporúčania</span>
+          <span class="top-pill"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg> katalóg + lead</span>
+        </div>
+      </nav>
+      <div class="hero-inner">
+        <div>
+          <span class="eyebrow"><i></i> demo pripravené pre klienta</span>
+          <h1><span>Kávový poradca,</span><span>ktorý predáva</span><span>ako senior barista.</span></h1>
+          <p class="hero-lead">Widget prevedie zákazníka výberom podľa chuti, kávovaru, rozpočtu a spotreby. Namiesto všeobecného chatu ukazuje konkrétne kávy, dôvody zhody a ďalší krok k objednávke.</p>
+          <div class="hero-actions">
+            <button class="btn primary" type="button" data-open-widget>
+              <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Otvoriť poradcu
+            </button>
+            <button class="btn ghost" type="button" data-start-flow="office">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 21V7.8c0-.7.4-1.3 1-1.6l6-3c.7-.4 1.5.1 1.5.9V21M13 9h6a1 1 0 0 1 1 1v11M7.5 10h2M7.5 14h2M7.5 18h2M16 13h1.5M16 17h1.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              Firemný výber
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hero-proof" aria-label="Ukazovatele">
+        <div class="proof-item"><b>4</b><span>nákupné scenáre: domov, firma, darček, problém s chuťou</span></div>
+        <div class="proof-item"><b>8</b><span>produktov v katalógu s pravidlami zhody</span></div>
+        <div class="proof-item"><b>0</b><span>vymyslených odpovedí mimo produktových dát</span></div>
+        <div class="proof-item"><b>1</b><span>lead formulár pripravený na napojenie do CRM</span></div>
+      </div>
+    </section>
+
+    <section class="showcase" aria-label="Produktový kontext">
+      <div class="showcase-inner">
+        <div>
+          <span class="section-kicker">nákupná logika</span>
+          <h2>Vyzerá prémiovo, ale správa sa prakticky.</h2>
+          <p class="showcase-copy">Inšpirácia je z e-commerce poradcov typu MôjPlot: zákazník má dostať rýchlu odpoveď, vhodný produkt, dôvod výberu a možnosť poslať dopyt. Preto je widget postavený okolo rozhodnutí, nie okolo prázdnej konverzácie.</p>
+          <div class="feature-grid">
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14l-4-2-4 2-4-2-4 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 8h8M8 12h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <b>Predajné flow</b>
+              <span>Krátke otázky podľa použitia: espresso, filter, automat, kancelária alebo darček.</span>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M7 12h10M10 17h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <b>Zhoda z katalógu</b>
+              <span>Produkty sa bodujú podľa chutí, prípravy, acidity, balenia a zákazníckeho zámeru.</span>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v14H4z" stroke="currentColor" stroke-width="1.8"/><path d="M8 9h8M8 13h5M8 17h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              <b>Porovnanie</b>
+              <span>Pri nerozhodnosti bot porovná dve kávy podľa profilu, acidity a použitia.</span>
+            </div>
+            <div class="feature">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8m18 0-9 6-9-6m18 0H3" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+              <b>Dopyt</b>
+              <span>Formulár zoberie kontakt, scenár a poznámku; dá sa poslať do API alebo CRM.</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-board" aria-label="Fotografie produktov">
+          <article class="board-card large">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1300&q=82" alt="Čerstvo pražené kávové zrná">
+            <span class="board-label">espresso výber</span>
+            <div class="board-content">
+              <b>Odporúčanie s konkrétnym dôvodom</b>
+              <span>Bot povie, prečo je káva vhodná: mlieko, acidita, intenzita, balenie, spôsob prípravy.</span>
+            </div>
+          </article>
+          <article class="board-card">
+            <img src="https://images.unsplash.com/photo-1522992319-0365e5f11656?auto=format&fit=crop&w=900&q=82" alt="Filtrovaná káva v sklenenom dripperi">
+            <span class="board-label">filter</span>
+            <div class="board-content">
+              <b>Chuťový profil</b>
+              <span>Sladká, ovocná, čokoládová alebo jemná.</span>
+            </div>
+          </article>
+          <article class="board-card">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=82" alt="Šálka kávy na stole">
+            <span class="board-label">firma</span>
+            <div class="board-content">
+              <b>Spotreba a dodanie</b>
+              <span>Balíčky pre kancelárie, automaty a pravidelný odber.</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="kb-teaser" role="button" tabindex="0" aria-label="Otvoriť kávového poradcu">
+    <button class="teaser-close" type="button" aria-label="Skryť">×</button>
+    <b>Vyberiem kávu podľa chuti.</b>
+    <span>Stačia 3 otázky a ukážem top odporúčanie z katalógu.</span>
+  </div>
+
+  <section id="kb-widget" aria-label="KávaBot Concierge" aria-live="polite">
+    <header class="kb-head">
+      <div class="kb-logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M7 8.5C7 5.5 9.5 3 12.5 3c1.7 0 3.2.8 4.2 2a9.3 9.3 0 0 1-9 9.5A5.4 5.4 0 0 1 7 8.5Z" stroke="currentColor" stroke-width="1.8"/><path d="M5.3 18.4c5.3.6 9.3-1.1 12.1-5M8.2 20.5c4.4-.1 7.7-1.8 9.9-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </div>
+      <div class="kb-title">
+        <b>KávaBot Concierge</b>
+        <span><i class="kb-online"></i> odporúča iba z katalógu</span>
+      </div>
+      <div class="kb-head-actions">
+        <button class="kb-icon-btn" type="button" id="kb-reset" aria-label="Resetovať chat">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8.7M20 4v4.7h-4.7M20 12a8 8 0 0 1-13.7 5.6L4 15.3M4 20v-4.7h4.7" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="kb-icon-btn" type="button" id="kb-close" aria-label="Zavrieť">
+          <svg viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <span class="kb-beam"></span>
+    </header>
+
+    <nav class="kb-tabs" aria-label="Režimy poradcu">
+      <button class="kb-tab on" type="button" data-tab="chat">Chat</button>
+      <button class="kb-tab" type="button" data-tab="advisor">Poradca</button>
+      <button class="kb-tab" type="button" data-tab="lead">Dopyt</button>
+    </nav>
+
+    <div class="kb-panel on" id="kb-chat-panel">
+      <button class="kb-spotlight" type="button" data-start-flow="taste">
+        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=400&q=80" alt="Espresso s cremou">
+        <span>
+          <b>Rýchly výber kávy</b>
+          <span>Chuť, príprava, mlieko, acidita a rozpočet.</span>
+        </span>
+        <svg viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="kb-messages" id="kb-messages"></div>
+      <div class="kb-chip-row" id="kb-chips"></div>
+      <form class="kb-input" id="kb-input-form">
+        <div class="kb-input-inner">
+          <input id="kb-input" autocomplete="off" placeholder="Napíšte napr. káva do automatu">
+          <button type="submit" aria-label="Odoslať">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 12 20 4l-5 16-3-7-8-1Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="kb-panel" id="kb-advisor-panel">
+      <div class="kb-flow-head">
+        <button class="kb-back" type="button" id="kb-back" aria-label="Späť">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 6 9 12l6 6" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="kb-flow-title">
+          <b id="kb-flow-name">Výber kávy</b>
+          <span id="kb-flow-subtitle">3 až 5 rozhodnutí k odporúčaniu</span>
+        </div>
+      </div>
+      <div class="kb-progress">
+        <div class="kb-progress-track"><div class="kb-progress-fill" id="kb-progress-fill"></div></div>
+        <small id="kb-progress-label">0%</small>
+      </div>
+      <div class="kb-flow-body" id="kb-flow-body"></div>
+    </div>
+
+    <div class="kb-panel" id="kb-lead-panel">
+      <div class="kb-lead">
+        <div class="kb-lead-hero">
+          <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=900&q=82" alt="Kávový bar v pražiarni">
+          <div>
+            <b>Pošlite dopyt pražiarni</b>
+            <span>Bot priloží scenár a posledné odporúčané kávy k správe pre predajcu.</span>
+          </div>
+        </div>
+        <form class="kb-form" id="kb-lead-form">
+          <div class="kb-field">
+            <label for="lead-name">Meno alebo firma</label>
+            <input id="lead-name" name="name" required placeholder="Napr. Kaviareň Sever">
+          </div>
+          <div class="kb-field">
+            <label for="lead-email">E-mail</label>
+            <input id="lead-email" name="email" type="email" required placeholder="kontakt@firma.sk">
+          </div>
+          <div class="kb-field">
+            <label for="lead-phone">Telefón</label>
+            <input id="lead-phone" name="phone" placeholder="+421 ...">
+          </div>
+          <div class="kb-field">
+            <label for="lead-intent">Zámer</label>
+            <select id="lead-intent" name="intent">
+              <option value="Výber kávy domov">Výber kávy domov</option>
+              <option value="Firemný odber">Firemný odber</option>
+              <option value="Darček">Darček</option>
+              <option value="Veľkoobchod">Veľkoobchod</option>
+            </select>
+          </div>
+          <div class="kb-field">
+            <label for="lead-message">Poznámka</label>
+            <textarea id="lead-message" name="message" placeholder="Koľko kávy mesačne, aký kávovar, preferovaná chuť..."></textarea>
+          </div>
+          <button class="kb-submit" type="submit">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M21 8v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8m18 0-9 6-9-6m18 0H3" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            Pripraviť dopyt
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="kb-toast" id="kb-toast"></div>
+  </section>
+
+  <button id="kb-bubble" type="button" aria-label="Otvoriť kávového poradcu">
+    <svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4M7 5.4c.9.8.9 1.7 0 2.6M11 5.4c.9.8.9 1.7 0 2.6M15 5.4c.9.8.9 1.7 0 2.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+  </button>
+
+  <script>
+    (() => {
+      const $ = (selector, root = document) => root.querySelector(selector);
+      const $$ = (selector, root = document) => Array.from(root.querySelectorAll(selector));
+
+      const ICONS = {
+        bean: '<svg viewBox="0 0 24 24" fill="none"><path d="M7 8.5C7 5.5 9.5 3 12.5 3c1.7 0 3.2.8 4.2 2a9.3 9.3 0 0 1-9 9.5A5.4 5.4 0 0 1 7 8.5Z" stroke="currentColor" stroke-width="1.8"/><path d="M5.3 18.4c5.3.6 9.3-1.1 12.1-5M8.2 20.5c4.4-.1 7.7-1.8 9.9-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>'
+      };
+
+      const products = [
+        {
+          id: 'house-blend',
+          name: 'Aurora House Blend',
+          price: 'od 9,90 €',
+          image: 'https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?auto=format&fit=crop&w=480&q=80',
+          type: 'espresso',
+          brew: ['espresso', 'automat', 'moka'],
+          tags: ['čokoláda', 'oriešky', 'nízka acidita', 'mlieko'],
+          roast: 'stredné',
+          acidity: 'nízka',
+          intensity: 'stredná',
+          package: ['250 g', '1 kg'],
+          intent: ['home', 'office'],
+          description: 'Bezpečný sladký blend pre espresso, automat a cappuccino.',
+          reason: 'má nízku aciditu, plné telo a stabilnú cremu'
+        },
+        {
+          id: 'brazil-office',
+          name: 'Brazil Office Crema 1 kg',
+          price: '24,90 €',
+          image: 'https://images.unsplash.com/photo-1525088553748-01d6e210e00b?auto=format&fit=crop&w=480&q=80',
+          type: 'office',
+          brew: ['automat', 'espresso'],
+          tags: ['čokoláda', 'karamel', 'nízka acidita', '1 kg'],
+          roast: 'stredne tmavé',
+          acidity: 'nízka',
+          intensity: 'vyššia',
+          package: ['1 kg'],
+          intent: ['office', 'home'],
+          description: 'Kancelárska istota do automatu s vyššou výťažnosťou.',
+          reason: 'funguje vo firemných automatoch a drží chuť aj pri mlieku'
+        },
+        {
+          id: 'colombia-honey',
+          name: 'Colombia Honey Espresso',
+          price: '12,90 €',
+          image: 'https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=480&q=80',
+          type: 'espresso',
+          brew: ['espresso', 'moka'],
+          tags: ['karamel', 'med', 'červené ovocie', 'sladké'],
+          roast: 'stredné',
+          acidity: 'stredná',
+          intensity: 'stredná',
+          package: ['250 g'],
+          intent: ['home', 'gift'],
+          description: 'Sladké espresso pre zákazníkov, ktorí chcú niečo zaujímavejšie.',
+          reason: 'spája sladkosť s jemným ovocím bez agresívnej acidity'
+        },
+        {
+          id: 'ethiopia-filter',
+          name: 'Ethiopia Filter Bloom',
+          price: '14,50 €',
+          image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=480&q=80',
+          type: 'filter',
+          brew: ['filter', 'v60', 'chemex', 'french press'],
+          tags: ['jazmín', 'citrus', 'ovocné', 'svieže'],
+          roast: 'svetlé',
+          acidity: 'vyššia',
+          intensity: 'jemná',
+          package: ['250 g'],
+          intent: ['home', 'gift'],
+          description: 'Výberová filter káva pre ľudí, ktorí hľadajú svieži profil.',
+          reason: 'má čistý ovocný profil a vynikne vo filtri'
+        },
+        {
+          id: 'decaf-velvet',
+          name: 'Decaf Velvet',
+          price: '11,90 €',
+          image: 'https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=480&q=80',
+          type: 'decaf',
+          brew: ['espresso', 'automat', 'filter'],
+          tags: ['bez kofeínu', 'jemné', 'čokoláda', 'nízka acidita'],
+          roast: 'stredné',
+          acidity: 'nízka',
+          intensity: 'jemná',
+          package: ['250 g'],
+          intent: ['home', 'gift'],
+          description: 'Bez kofeínu, no stále sladká a plná káva.',
+          reason: 'rieši večerné pitie kávy bez ostrej acidity'
+        },
+        {
+          id: 'gift-box',
+          name: 'Tasting Box Signature',
+          price: '29,90 €',
+          image: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=480&q=80',
+          type: 'gift',
+          brew: ['espresso', 'filter', 'automat'],
+          tags: ['darček', 'degustácia', 'bezpečný výber', 'prémiové'],
+          roast: 'mix',
+          acidity: 'mix',
+          intensity: 'mix',
+          package: ['3 x 150 g'],
+          intent: ['gift'],
+          description: 'Darčekový set troch profilov s jednoduchým vysvetlením chutí.',
+          reason: 'nevyžaduje presnú znalosť kávovaru ani obľúbenej acidity'
+        },
+        {
+          id: 'cold-brew',
+          name: 'Cold Brew Citrus Lot',
+          price: '13,90 €',
+          image: 'https://images.unsplash.com/photo-1463797221720-6b07e6426c24?auto=format&fit=crop&w=480&q=80',
+          type: 'filter',
+          brew: ['cold brew', 'filter', 'french press'],
+          tags: ['citrus', 'ľahké', 'letné', 'svieže'],
+          roast: 'svetlé',
+          acidity: 'stredná',
+          intensity: 'jemná',
+          package: ['250 g'],
+          intent: ['home'],
+          description: 'Svieža káva pre cold brew a ľadové filtre.',
+          reason: 'má ľahké telo a citrusovú sladkosť vhodnú za studena'
+        },
+        {
+          id: 'italian-bar',
+          name: 'Italian Bar Roast',
+          price: '10,90 €',
+          image: 'https://images.unsplash.com/photo-1507133750040-4a8f57021571?auto=format&fit=crop&w=480&q=80',
+          type: 'espresso',
+          brew: ['espresso', 'moka', 'automat'],
+          tags: ['silné', 'horká čokoláda', 'nízka acidita', 'tradičné'],
+          roast: 'tmavé',
+          acidity: 'nízka',
+          intensity: 'silná',
+          package: ['250 g', '1 kg'],
+          intent: ['home', 'office'],
+          description: 'Tradičná tmavšia chuť pre silné espresso a moka kanvičku.',
+          reason: 'je intenzívna, má nízku aciditu a klasický taliansky charakter'
+        }
+      ];
+
+      const flows = {
+        taste: {
+          label: 'Rýchly výber kávy',
+          subtitle: 'Chuť, príprava a rozpočet',
+          intent: 'home',
+          steps: [
+            { key: 'brew', q: 'Ako kávu pripravujete?', h: 'Príprava rozhoduje o pražení, mletí a vhodnom profile.', options: [
+              ['espresso', 'Espresso kávovar', 'Pákový alebo domáci espresso stroj.'],
+              ['automat', 'Automatický kávovar', 'Stabilná crema, nízka acidita, často 1 kg balenie.'],
+              ['filter', 'Filter / V60 / Chemex', 'Svetlejšie praženie a čistejšia chuť.'],
+              ['moka', 'Moka kanvička', 'Plnšie telo a výraznejšia chuť.']
+            ] },
+            { key: 'profile', q: 'Akú chuť chcete?', h: 'Vyberte profil, ktorý má káva niesť v šálke.', options: [
+              ['čokoláda', 'Čokoládová a orechová', 'Bezpečná sladká voľba.'],
+              ['karamel', 'Karamelová a sladká', 'Vyvážené espresso bez ostrej kyslosti.'],
+              ['ovocné', 'Ovocná a svieža', 'Výberovejší profil pre filter alebo moderné espresso.'],
+              ['silné', 'Silná a tradičná', 'Tmavšie praženie, nižšia acidita.']
+            ] },
+            { key: 'milk', q: 'Pijete kávu s mliekom?', h: 'Mlieko znesie plnšie telo a sladší profil.', options: [
+              ['yes', 'Áno, často', 'Cappuccino, latte alebo flat white.'],
+              ['sometimes', 'Občas', 'Káva má chutiť dobre aj samostatne.'],
+              ['no', 'Nie', 'Dôležitá je čistota chuti.']
+            ] },
+            { key: 'acidity', q: 'Ako vnímate kyslosť?', h: 'Najčastejšia príčina zlého výberu kávy.', options: [
+              ['low', 'Nechcem kyslú kávu', 'Nižšia acidita a sladký profil.'],
+              ['medium', 'Môže byť jemne svieža', 'Vyvážená ovocnosť bez extrému.'],
+              ['high', 'Mám rád ovocnú aciditu', 'Svetlejšie výberové kávy.']
+            ] },
+            { key: 'budget', q: 'Aký rozpočet je príjemný?', h: 'Bot ukáže vhodné produkty bez tlačenia do najdrahšej voľby.', options: [
+              ['value', 'Rozumná cena', 'Dobrá každodenná káva.'],
+              ['premium', 'Prémiovejšia šálka', 'Viac charakteru a pôvodu.'],
+              ['gift', 'Darčekový efekt', 'Pekný výber alebo set.']
+            ] }
+          ]
+        },
+        office: {
+          label: 'Firemný výber',
+          subtitle: 'Spotreba, automat a pravidelnosť',
+          intent: 'office',
+          steps: [
+            { key: 'people', q: 'Pre koľko ľudí kávu riešite?', h: 'Podľa toho sa odhadne balenie a frekvencia dodania.', options: [
+              ['small', 'Do 10 ľudí', 'Menšia kancelária alebo tím.'],
+              ['medium', '10 až 40 ľudí', 'Pravidelná spotreba, viac balení mesačne.'],
+              ['large', '40+ ľudí', 'Potenciálny veľkoobchodný alebo servisný odber.']
+            ] },
+            { key: 'brew', q: 'Aký kávovar používate?', h: 'Automat potrebuje inú stabilitu ako pákový kávovar.', options: [
+              ['automat', 'Automatický kávovar', 'Najčastejšie 1 kg balenia.'],
+              ['espresso', 'Pákový kávovar', 'Dôležitá crema a receptúra.'],
+              ['filter', 'Batch brew / filter', 'Väčší objem a čistá chuť.']
+            ] },
+            { key: 'profile', q: 'Akú chuť prijme väčšina tímu?', h: 'Firemná káva má byť široko prijateľná.', options: [
+              ['čokoláda', 'Čokoládová, nízka acidita', 'Najbezpečnejšie pre väčšinu.'],
+              ['karamel', 'Sladká, vyvážená', 'Trochu prémiovejší dojem.'],
+              ['silné', 'Silná tradičná', 'Pre tímy, ktoré pijú intenzívne espresso.']
+            ] },
+            { key: 'delivery', q: 'Ako často chcete dodávku?', h: 'Lead formulár vie poslať dopyt na pravidelný odber.', options: [
+              ['monthly', 'Mesačne', 'Jednoduchý pravidelný rytmus.'],
+              ['biweekly', 'Každé 2 týždne', 'Stabilná čerstvosť pri vyššej spotrebe.'],
+              ['trial', 'Najprv testovací balík', 'Bezpečný začiatok spolupráce.']
+            ] }
+          ]
+        },
+        gift: {
+          label: 'Darčekový výber',
+          subtitle: 'Bezpečný darček bez znalosti kávovaru',
+          intent: 'gift',
+          steps: [
+            { key: 'knowledge', q: 'Poznáte obľúbenú prípravu obdarovaného?', h: 'Keď ju nepoznáte, bot uprednostní univerzálne sety.', options: [
+              ['unknown', 'Neviem', 'Bezpečnejší je degustačný set.'],
+              ['espresso', 'Espresso', 'Pákový alebo automatický kávovar.'],
+              ['filter', 'Filter', 'V60, Chemex, AeroPress alebo French press.']
+            ] },
+            { key: 'profile', q: 'Aký dojem má darček vytvoriť?', h: 'Darček môže byť istota alebo zážitková výberovka.', options: [
+              ['čokoláda', 'Bezpečný a sladký', 'Káva, ktorá neurazí.'],
+              ['ovocné', 'Zaujímavý a výberový', 'Pre človeka, ktorý rád skúša.'],
+              ['gift', 'Degustačný set', 'Viac chutí v jednom darčeku.']
+            ] },
+            { key: 'budget', q: 'Rozpočet na darček?', h: 'Pri darčeku je dôležitý aj vizuálny efekt balenia.', options: [
+              ['value', 'Do 15 €', 'Jedna dobrá káva.'],
+              ['premium', '15 až 30 €', 'Prémiová káva alebo dvojbalenie.'],
+              ['gift', '30 €+', 'Degustačný box alebo firemný darček.']
+            ] }
+          ]
+        },
+        problem: {
+          label: 'Diagnostika chuti',
+          subtitle: 'Riešenie kyslosti, horkosti a slabej cremy',
+          intent: 'home',
+          steps: [
+            { key: 'issue', q: 'Čo vám na káve prekáža?', h: 'Bot odporučí produkt aj úpravu výberu.', options: [
+              ['sour', 'Je príliš kyslá', 'Zvyčajne pomôže nižšia acidita alebo tmavšie praženie.'],
+              ['bitter', 'Je horká a ťažká', 'Pomôže svetlejší alebo sladší profil.'],
+              ['weak', 'Je slabá / vodová', 'Potrebujete plnšie telo a vhodnejší pomer.'],
+              ['crema', 'Má slabú cremu', 'Dôležitá je čerstvosť a vhodný blend.']
+            ] },
+            { key: 'brew', q: 'Kde problém vzniká?', h: 'Iné riešenie platí pre filter a iné pre automat.', options: [
+              ['espresso', 'Espresso', 'Pákový kávovar alebo domáci espresso stroj.'],
+              ['automat', 'Automat', 'Nastavenie hrúbky a vhodné zrno sú kľúčové.'],
+              ['filter', 'Filter', 'Chuť je citlivá na praženie a recept.']
+            ] },
+            { key: 'milk', q: 'Pridávate mlieko?', h: 'Mlieko dokáže zakryť kyslosť, ale potrebuje stabilné telo.', options: [
+              ['yes', 'Áno', 'Lepší bude plnší sladký profil.'],
+              ['no', 'Nie', 'Chuť musí sedieť sama o sebe.']
+            ] }
+          ]
+        }
+      };
+
+      const state = {
+        open: false,
+        activeTab: 'chat',
+        flowKey: 'taste',
+        step: 0,
+        answers: {},
+        lastResults: [],
+        compare: [],
+        initialized: false
+      };
+
+      const els = {
+        widget: $('#kb-widget'),
+        bubble: $('#kb-bubble'),
+        teaser: $('#kb-teaser'),
+        messages: $('#kb-messages'),
+        chips: $('#kb-chips'),
+        input: $('#kb-input'),
+        form: $('#kb-input-form'),
+        flowBody: $('#kb-flow-body'),
+        flowName: $('#kb-flow-name'),
+        flowSubtitle: $('#kb-flow-subtitle'),
+        progressFill: $('#kb-progress-fill'),
+        progressLabel: $('#kb-progress-label'),
+        back: $('#kb-back'),
+        toast: $('#kb-toast'),
+        leadForm: $('#kb-lead-form')
+      };
+
+      function esc(value) {
+        return String(value ?? '').replace(/[&<>"']/g, char => ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          '"': '&quot;',
+          "'": '&#039;'
+        })[char]);
+      }
+
+      function timeLabel() {
+        return new Intl.DateTimeFormat('sk-SK', { hour: '2-digit', minute: '2-digit' }).format(new Date());
+      }
+
+      function setOpen(open) {
+        state.open = open;
+        els.widget.classList.toggle('show', open);
+        els.bubble.classList.toggle('is-open', open);
+        els.teaser.classList.remove('show');
+        if (open && !state.initialized) initChat();
+        if (open) setTimeout(() => els.input?.focus(), 120);
+      }
+
+      function switchTab(tab) {
+        state.activeTab = tab;
+        $$('.kb-tab').forEach(btn => btn.classList.toggle('on', btn.dataset.tab === tab));
+        $('#kb-chat-panel').classList.toggle('on', tab === 'chat');
+        $('#kb-advisor-panel').classList.toggle('on', tab === 'advisor');
+        $('#kb-lead-panel').classList.toggle('on', tab === 'lead');
+      }
+
+      function toast(text) {
+        els.toast.textContent = text;
+        els.toast.classList.add('show');
+        clearTimeout(toast.timer);
+        toast.timer = setTimeout(() => els.toast.classList.remove('show'), 2300);
+      }
+
+      function addMessage(html, who = 'bot') {
+        const row = document.createElement('div');
+        row.className = `kb-row ${who === 'me' ? 'me' : 'bot'}`;
+        row.innerHTML = `
+          <div class="kb-avatar">${ICONS.bean}</div>
+          <div class="kb-msg-wrap">
+            <div class="kb-bubble ${who === 'me' ? 'me' : 'bot'}">${html}</div>
+            <span class="kb-time">${timeLabel()}</span>
+          </div>
+        `;
+        els.messages.append(row);
+        els.messages.scrollTop = els.messages.scrollHeight;
+        return row;
+      }
+
+      function bot(html, delay = 420) {
+        els.widget.classList.add('thinking');
+        const typing = addMessage('<span class="kb-typing"><i></i><i></i><i></i></span>', 'bot');
+        return new Promise(resolve => {
+          setTimeout(() => {
+            typing.remove();
+            addMessage(html, 'bot');
+            els.widget.classList.remove('thinking');
+            resolve();
+          }, delay);
+        });
+      }
+
+      function setChips(chips) {
+        els.chips.innerHTML = chips.map(chip => `
+          <button class="kb-chip ${chip.warn ? 'warn' : ''}" type="button" data-cmd="${esc(chip.cmd)}">${esc(chip.label)}</button>
+        `).join('');
+      }
+
+      function defaultChips() {
+        setChips([
+          { label: 'Vybrať kávu', cmd: 'flow:taste' },
+          { label: 'Káva do firmy', cmd: 'flow:office' },
+          { label: 'Darček', cmd: 'flow:gift' },
+          { label: 'Porovnať kávy', cmd: 'compare' },
+          { label: 'Dopyt', cmd: 'lead' }
+        ]);
+      }
+
+      function initChat() {
+        state.initialized = true;
+        bot('Dobrý deň. Som <b>KávaBot Concierge</b>. Vyberiem kávu podľa prípravy, chuti a použitia. Odporúčania sú z katalógu, takže nebudem vymýšľať produkty, ktoré neexistujú.', 260)
+          .then(defaultChips);
+      }
+
+      function startFlow(key) {
+        const flow = flows[key] || flows.taste;
+        state.flowKey = key in flows ? key : 'taste';
+        state.step = 0;
+        state.answers = {};
+        switchTab('advisor');
+        renderStep();
+      }
+
+      function renderStep() {
+        const flow = flows[state.flowKey];
+        const step = flow.steps[state.step];
+        els.flowName.textContent = flow.label;
+        els.flowSubtitle.textContent = flow.subtitle;
+        els.back.disabled = state.step === 0;
+        const pct = Math.round((state.step / flow.steps.length) * 100);
+        els.progressFill.style.width = `${pct}%`;
+        els.progressLabel.textContent = `${pct}%`;
+        els.flowBody.innerHTML = `
+          <div class="kb-question">
+            <h3>${esc(step.q)}</h3>
+            <p>${esc(step.h)}</p>
+            <div class="kb-options">
+              ${step.options.map((opt, index) => `
+                <button class="kb-option" type="button" data-option="${esc(opt[0])}" data-label="${esc(opt[1])}">
+                  <i>${index + 1}</i>
+                  <span><b>${esc(opt[1])}</b><span>${esc(opt[2])}</span></span>
+                </button>
+              `).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      function selectOption(value, label) {
+        const flow = flows[state.flowKey];
+        const step = flow.steps[state.step];
+        state.answers[step.key] = value;
+        state.answers[`${step.key}Label`] = label;
+        if (state.step < flow.steps.length - 1) {
+          state.step += 1;
+          renderStep();
+          return;
+        }
+        renderResults();
+      }
+
+      function wantedProfile(answers) {
+        if (answers.issue === 'sour') return 'čokoláda';
+        if (answers.issue === 'bitter') return 'karamel';
+        if (answers.issue === 'weak' || answers.issue === 'crema') return 'silné';
+        if (answers.knowledge === 'unknown' || answers.profile === 'gift' || answers.budget === 'gift') return 'darček';
+        return answers.profile || 'čokoláda';
+      }
+
+      function scoreProduct(product, answers, intent) {
+        let score = 42;
+        const profile = wantedProfile(answers);
+        const brew = answers.brew || answers.knowledge;
+        const tags = product.tags.join(' ').toLowerCase();
+
+        if (brew && product.brew.includes(brew)) score += 22;
+        if (intent && product.intent.includes(intent)) score += 12;
+        if (profile && tags.includes(profile)) score += 18;
+        if (profile === 'darček' && product.type === 'gift') score += 24;
+        if (answers.milk === 'yes' && tags.includes('mlieko')) score += 10;
+        if (answers.milk === 'no' && product.type === 'filter') score += 6;
+        if (answers.acidity === 'low' && product.acidity === 'nízka') score += 18;
+        if (answers.acidity === 'medium' && ['stredná', 'nízka'].includes(product.acidity)) score += 10;
+        if (answers.acidity === 'high' && product.acidity === 'vyššia') score += 16;
+        if (answers.people === 'medium' || answers.people === 'large') {
+          if (product.package.includes('1 kg')) score += 18;
+          if (product.intent.includes('office')) score += 12;
+        }
+        if (answers.delivery === 'trial' && product.type === 'gift') score += 7;
+        if (answers.budget === 'value' && /9|10|24/.test(product.price)) score += 5;
+        if (answers.budget === 'premium' && ['Colombia Honey Espresso', 'Ethiopia Filter Bloom', 'Cold Brew Citrus Lot'].includes(product.name)) score += 8;
+        if (answers.issue === 'sour' && product.acidity === 'nízka') score += 16;
+        if (answers.issue === 'bitter' && product.roast !== 'tmavé') score += 8;
+        return Math.min(99, score);
+      }
+
+      function recommend(answers, intent) {
+        return products
+          .map(product => ({ product, score: scoreProduct(product, answers, intent) }))
+          .sort((a, b) => b.score - a.score)
+          .slice(0, 3);
+      }
+
+      function answerSummary(answers, intent) {
+        const bits = [];
+        if (intent === 'office') bits.push('firemný odber');
+        if (intent === 'gift') bits.push('darček');
+        if (answers.brewLabel) bits.push(answers.brewLabel.toLowerCase());
+        if (answers.profileLabel) bits.push(answers.profileLabel.toLowerCase());
+        if (answers.acidityLabel) bits.push(answers.acidityLabel.toLowerCase());
+        if (answers.peopleLabel) bits.push(answers.peopleLabel.toLowerCase());
+        if (answers.issueLabel) bits.push(answers.issueLabel.toLowerCase());
+        return bits.length ? bits.join(' · ') : 'rýchly výber podľa chuti';
+      }
+
+      function productCard(item, index = 0) {
+        const p = item.product || item;
+        const score = item.score || 92;
+        return `
+          <article class="kb-product" style="animation-delay:${index * 45}ms">
+            <img src="${esc(p.image)}" alt="${esc(p.name)}">
+            <div class="kb-product-main">
+              <div class="kb-product-top">
+                <h4>${esc(p.name)}</h4>
+                <span class="kb-match">${score}%</span>
+              </div>
+              <p>${esc(p.description)} Odporúčam ju, lebo ${esc(p.reason)}.</p>
+              <div class="kb-tags">${p.tags.slice(0, 4).map(tag => `<span class="kb-tag">${esc(tag)}</span>`).join('')}</div>
+              <div class="kb-product-actions">
+                <span class="kb-price">${esc(p.price)}</span>
+                <button class="kb-mini-btn" type="button" data-add-compare="${esc(p.id)}">Porovnať</button>
+              </div>
+            </div>
+          </article>
+        `;
+      }
+
+      function renderResults() {
+        const flow = flows[state.flowKey];
+        const results = recommend(state.answers, flow.intent);
+        state.lastResults = results;
+        els.progressFill.style.width = '100%';
+        els.progressLabel.textContent = '100%';
+        els.back.disabled = false;
+        els.flowBody.innerHTML = `
+          <div class="kb-results">
+            <div class="kb-summary">
+              <b>Odporúčanie pripravené</b>
+              <p>${esc(answerSummary(state.answers, flow.intent))}</p>
+            </div>
+            <div class="kb-product-list">
+              ${results.map(productCard).join('')}
+            </div>
+            <button class="kb-submit" type="button" data-result-chat>Poslať výsledok do chatu</button>
+            <button class="kb-submit" type="button" data-result-lead style="background:var(--plum)">Pripraviť dopyt</button>
+          </div>
+        `;
+      }
+
+      function sendResultToChat() {
+        const flow = flows[state.flowKey];
+        switchTab('chat');
+        bot(`Mám výsledok pre <b>${esc(flow.label.toLowerCase())}</b>: ${esc(answerSummary(state.answers, flow.intent))}. Najlepšie vyšli tieto kávy:`, 220)
+          .then(() => {
+            addMessage(`<div class="kb-product-list">${state.lastResults.map(productCard).join('')}</div>`, 'bot');
+            setChips([
+              { label: 'Porovnať top 2', cmd: 'compare' },
+              { label: 'Poslať dopyt', cmd: 'lead' },
+              { label: 'Nový výber', cmd: 'flow:taste' },
+              { label: 'Firma', cmd: 'flow:office' }
+            ]);
+          });
+      }
+
+      function renderCompare() {
+        let picks = state.compare
+          .map(id => products.find(product => product.id === id))
+          .filter(Boolean);
+        if (picks.length < 2) picks = (state.lastResults.length ? state.lastResults.map(item => item.product) : products).slice(0, 2);
+        const [a, b] = picks;
+        addMessage(`
+          <table class="kb-table">
+            <tr><th>Káva</th><td><b>${esc(a.name)}</b></td><td><b>${esc(b.name)}</b></td></tr>
+            <tr><th>Chuť</th><td>${esc(a.tags.slice(0, 3).join(', '))}</td><td>${esc(b.tags.slice(0, 3).join(', '))}</td></tr>
+            <tr><th>Príprava</th><td>${esc(a.brew.join(', '))}</td><td>${esc(b.brew.join(', '))}</td></tr>
+            <tr><th>Acidita</th><td>${esc(a.acidity)}</td><td>${esc(b.acidity)}</td></tr>
+            <tr><th>Cena</th><td>${esc(a.price)}</td><td>${esc(b.price)}</td></tr>
+          </table>
+        `, 'bot');
+        setChips([
+          { label: 'Vybrať inú kávu', cmd: 'flow:taste' },
+          { label: 'Dopyt', cmd: 'lead' },
+          { label: 'Firemný odber', cmd: 'flow:office' }
+        ]);
+      }
+
+      function handleCommand(cmd) {
+        if (cmd.startsWith('flow:')) {
+          startFlow(cmd.split(':')[1]);
+          return;
+        }
+        if (cmd === 'compare') {
+          bot('Porovnám najvhodnejšie kávy podľa posledného výberu.', 200).then(renderCompare);
+          return;
+        }
+        if (cmd === 'lead') {
+          switchTab('lead');
+          return;
+        }
+        if (cmd === 'reset') {
+          resetChat();
+        }
+      }
+
+      function handleText(text) {
+        const q = text.toLowerCase();
+        addMessage(esc(text), 'me');
+        els.input.value = '';
+
+        if (q.includes('firma') || q.includes('kancel') || q.includes('office') || q.includes('automat')) {
+          return bot('Pri firemnej káve je rozhodujúca spotreba, kávovar a nízka acidita. Spustím firemný výber.', 260).then(() => startFlow('office'));
+        }
+        if (q.includes('dar') || q.includes('darček')) {
+          return bot('Darček vyriešime bezpečne: ak nepoznáme kávovar, odporučím degustačný set.', 260).then(() => startFlow('gift'));
+        }
+        if (q.includes('kysl') || q.includes('hork') || q.includes('crem') || q.includes('slab')) {
+          return bot('Toto je problém s chuťou. Položím pár otázok a vyberiem vhodnejší profil.', 260).then(() => startFlow('problem'));
+        }
+        if (q.includes('filter') || q.includes('v60') || q.includes('chemex')) {
+          state.answers = { brew: 'filter', brewLabel: 'Filter / V60 / Chemex', profile: q.includes('čokol') ? 'čokoláda' : 'ovocné', acidity: 'high' };
+          state.lastResults = recommend(state.answers, 'home');
+          return bot('Pre filter odporúčam čistejší a svetlejší profil. Tu sú najbližšie zhody:', 260).then(() => addMessage(`<div class="kb-product-list">${state.lastResults.map(productCard).join('')}</div>`, 'bot'));
+        }
+        const matches = products.filter(product => {
+          const haystack = [product.name, product.description, product.type, product.roast, product.acidity, ...product.tags, ...product.brew].join(' ').toLowerCase();
+          return q.split(/\s+/).filter(Boolean).some(token => token.length > 3 && haystack.includes(token));
+        }).slice(0, 3);
+        if (matches.length) {
+          state.lastResults = matches.map(product => ({ product, score: 88 }));
+          return bot('Našiel som položky z katalógu podľa vášho textu.', 230).then(() => addMessage(`<div class="kb-product-list">${state.lastResults.map(productCard).join('')}</div>`, 'bot'));
+        }
+        bot('Aby som neodporúčal naslepo, vyberte jeden scenár. Najrýchlejší je výber podľa chuti.', 260).then(defaultChips);
+      }
+
+      function resetChat() {
+        els.messages.innerHTML = '';
+        state.step = 0;
+        state.answers = {};
+        state.lastResults = [];
+        state.compare = [];
+        state.initialized = false;
+        switchTab('chat');
+        initChat();
+      }
+
+      function fillLeadFromState() {
+        const flow = flows[state.flowKey];
+        const top = state.lastResults[0]?.product?.name;
+        const message = [
+          flow ? `Scenár: ${flow.label}` : '',
+          state.answers ? `Výber: ${answerSummary(state.answers, flow?.intent || 'home')}` : '',
+          top ? `Top odporúčanie: ${top}` : ''
+        ].filter(Boolean).join('\n');
+        $('#lead-message').value = message;
+        if (flow?.intent === 'office') $('#lead-intent').value = 'Firemný odber';
+        if (flow?.intent === 'gift') $('#lead-intent').value = 'Darček';
+      }
+
+      els.bubble.addEventListener('click', () => setOpen(true));
+      els.teaser.addEventListener('click', event => {
+        if (event.target.closest('.teaser-close')) return;
+        setOpen(true);
+      });
+      els.teaser.addEventListener('keydown', event => {
+        if (event.key === 'Enter' || event.key === ' ') setOpen(true);
+      });
+      $('.teaser-close').addEventListener('click', event => {
+        event.stopPropagation();
+        els.teaser.classList.remove('show');
+      });
+      $('#kb-close').addEventListener('click', () => setOpen(false));
+      $('#kb-reset').addEventListener('click', resetChat);
+      $$('[data-open-widget]').forEach(btn => btn.addEventListener('click', () => setOpen(true)));
+      $$('[data-start-flow]').forEach(btn => btn.addEventListener('click', () => {
+        setOpen(true);
+        startFlow(btn.dataset.startFlow);
+      }));
+      $$('.kb-tab').forEach(btn => btn.addEventListener('click', () => switchTab(btn.dataset.tab)));
+
+      els.chips.addEventListener('click', event => {
+        const chip = event.target.closest('[data-cmd]');
+        if (chip) handleCommand(chip.dataset.cmd);
+      });
+
+      els.form.addEventListener('submit', event => {
+        event.preventDefault();
+        const text = els.input.value.trim();
+        if (text) handleText(text);
+      });
+
+      els.flowBody.addEventListener('click', event => {
+        const opt = event.target.closest('[data-option]');
+        if (opt) selectOption(opt.dataset.option, opt.dataset.label);
+        if (event.target.closest('[data-result-chat]')) sendResultToChat();
+        if (event.target.closest('[data-result-lead]')) {
+          fillLeadFromState();
+          switchTab('lead');
+        }
+        const compare = event.target.closest('[data-add-compare]');
+        if (compare) {
+          const id = compare.dataset.addCompare;
+          state.compare = [...new Set([...state.compare, id])].slice(-2);
+          toast(state.compare.length < 2 ? 'Prvá káva pridaná na porovnanie' : 'Môžem porovnať vybrané kávy');
+        }
+      });
+
+      els.messages.addEventListener('click', event => {
+        const compare = event.target.closest('[data-add-compare]');
+        if (!compare) return;
+        const id = compare.dataset.addCompare;
+        state.compare = [...new Set([...state.compare, id])].slice(-2);
+        toast(state.compare.length < 2 ? 'Prvá káva pridaná na porovnanie' : 'Môžem porovnať vybrané kávy');
+      });
+
+      els.back.addEventListener('click', () => {
+        if (state.step > 0) {
+          state.step -= 1;
+          renderStep();
+        }
+      });
+
+      els.leadForm.addEventListener('submit', event => {
+        event.preventDefault();
+        const data = Object.fromEntries(new FormData(els.leadForm).entries());
+        toast('Dopyt je pripravený na odoslanie do API');
+        switchTab('chat');
+        bot(`Dopyt pre <b>${esc(data.name)}</b> je pripravený. Zámer: ${esc(data.intent)}. Po napojení backendu sa odošle do CRM alebo e-mailu.`, 240);
+      });
+
+      setTimeout(() => {
+        if (!state.open) els.teaser.classList.add('show');
+      }, 900);
+    })();
+  </script>
+</body>
+</html>
