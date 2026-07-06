@@ -27,6 +27,17 @@ Potom:
 http://127.0.0.1:8788/index.html
 ```
 
+## GitHub Pages
+
+Repo obsahuje `.nojekyll` a workflow `.github/workflows/pages.yml`, takže stránka sa deployuje ako čistý statický web.
+
+V GitHube treba mať v nastaveniach repozitára:
+
+- Settings -> Pages
+- Build and deployment -> Source: GitHub Actions
+
+Po pushi na `main` sa spustí workflow `Deploy static site to GitHub Pages`.
+
 ## Backend napojenie
 
 Aktuálne sú produkty v poli `products` v `index.html`. Pri produkcii sa dá napojiť:
