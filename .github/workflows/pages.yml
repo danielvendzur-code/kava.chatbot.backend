@@ -25,6 +25,7 @@ jobs:
       - name: Validate static files
         run: |
           test -f index.html
+          test -f 404.html
           test -f .nojekyll
           grep -qi '<!doctype html>' index.html
           grep -q 'id="kb-widget"' index.html
@@ -41,6 +42,8 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
