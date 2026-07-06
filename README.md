@@ -31,14 +31,22 @@ http://127.0.0.1:8788/index.html
 
 Repo obsahuje `.nojekyll`, takže GitHub Pages nepúšťa Jekyll build a publikuje stránku ako čistý statický web.
 
-V GitHube treba mať v nastaveniach repozitára:
+Deploy rieši workflow `.github/workflows/pages.yml`:
+
+- spustí sa pri každom pushi na `main`,
+- nahrá celý statický web ako Pages artifact,
+- nasadí ho cez oficiálnu akciu `actions/deploy-pages`.
+
+V GitHube má byť v nastaveniach repozitára:
 
 - Settings -> Pages
-- Build and deployment -> Source: Deploy from a branch
-- Branch: `main`
-- Folder: `/ (root)`
+- Build and deployment -> Source: GitHub Actions
 
-Po pushi na `main` sa spustí systémový workflow `pages build and deployment`.
+Live URL:
+
+```text
+https://danielvendzur-code.github.io/kava.chatbot.backend/
+```
 
 ## Backend napojenie
 
