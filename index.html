@@ -4,20 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>KávaBot | prémiový kávový poradca</title>
-  <meta name="description" content="Prémiový kávový poradca — widget pripravený na vloženie do webu. Rozmery launcheru podľa MôjPlot.">
+  <meta name="description" content="Prémiový kávový poradca — chatbot s kvízom, ktorý odporučí kávu na mieru.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --launcher-size: 130px;
-      --teaser-width: 248px;
-      --teaser-min-height: 117px;
-      --panel-width: 390px;
-      --panel-height: 640px;
+      --panel-width: 400px;
+      --panel-height: 660px;
       --right-edge: 15px;
-      --teaser-right: 33px;
-      --teaser-bottom: 128px;
 
       --green: #0f3d33;
       --green-deep: #0a2c25;
@@ -32,13 +28,13 @@
       --gold-soft: #f3e5cd;
       --red: #b94a3d;
 
-      --shadow: 0 24px 70px rgba(12, 24, 20, .26);
-      --shadow-soft: 0 12px 32px rgba(12, 24, 20, .10);
-      --radius: 14px;
-      --radius-sm: 10px;
+      --shadow: 0 24px 70px rgba(12, 24, 20, .28);
+      --shadow-soft: 0 10px 26px rgba(12, 24, 20, .09);
+      --radius: 16px;
+      --radius-sm: 11px;
 
       --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-      --font-display: "Fraunces", Georgia, serif;
+      --font-display: "Fraunces", Georgia, "Times New Roman", serif;
     }
 
     * { box-sizing: border-box; }
@@ -55,7 +51,6 @@
     button, input, textarea, select { font: inherit; }
     button { -webkit-tap-highlight-color: transparent; }
     a { color: inherit; }
-
     ::selection { background: rgba(201,151,76,.35); }
 
     @keyframes kbPulse {
@@ -63,7 +58,7 @@
       55% { box-shadow: 0 16px 34px rgba(10,44,37,.35), 0 0 0 16px rgba(231,244,236,0); }
     }
     @keyframes kbIn {
-      from { opacity: 0; transform: translateY(16px) scale(.97); }
+      from { opacity: 0; transform: translateY(18px) scale(.96); }
       to { opacity: 1; transform: none; }
     }
     @keyframes kbMsg {
@@ -74,11 +69,15 @@
       0%, 80%, 100% { opacity: .3; transform: translateY(0); }
       40% { opacity: 1; transform: translateY(-3px); }
     }
+    @keyframes kbShine {
+      from { background-position: -120% 0; }
+      to { background-position: 220% 0; }
+    }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
     }
 
-    /* ------- demo hero ------- */
+    /* ------- demo hero (za widgetom) ------- */
     .demo {
       min-height: 100dvh;
       display: grid;
@@ -86,7 +85,8 @@
       padding: 28px;
     }
     .demo-card {
-      width: min(640px, 100%);
+      width: min(560px, 100%);
+      margin-right: min(430px, 34vw);
       border: 1px solid rgba(255,255,255,.14);
       border-radius: 22px;
       padding: 34px 34px 30px;
@@ -120,18 +120,15 @@
     .demo-card h1 {
       margin: 18px 0 12px;
       font-family: var(--font-display);
-      font-size: clamp(30px, 5.4vw, 46px);
+      font-size: clamp(28px, 4.6vw, 42px);
       line-height: 1.08;
       font-weight: 600;
       letter-spacing: -0.01em;
     }
-    .demo-card h1 em {
-      font-style: italic;
-      color: #ecd9b6;
-    }
+    .demo-card h1 em { font-style: italic; color: #ecd9b6; }
     .demo-card p {
       margin: 0;
-      max-width: 46ch;
+      max-width: 44ch;
       color: rgba(255,255,255,.72);
       font-size: 15px;
       line-height: 1.65;
@@ -161,13 +158,6 @@
       box-shadow: 0 10px 24px rgba(0,0,0,.22);
     }
     .demo-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(0,0,0,.28); }
-    .demo-btn.secondary {
-      border: 1px solid rgba(255,255,255,.25);
-      background: transparent;
-      color: #fff;
-      box-shadow: none;
-    }
-    .demo-btn.secondary:hover { background: rgba(255,255,255,.08); }
     .demo-btn svg { width: 17px; height: 17px; }
     .demo-note {
       margin-top: 22px;
@@ -182,67 +172,6 @@
     }
     .demo-note span { display: inline-flex; align-items: center; gap: 7px; }
     .demo-note svg { width: 14px; height: 14px; color: var(--gold); flex: 0 0 14px; }
-
-    /* ------- teaser ------- */
-    #kb-teaser {
-      position: fixed;
-      right: var(--teaser-right);
-      bottom: var(--teaser-bottom);
-      z-index: 2147483001;
-      width: var(--teaser-width);
-      min-height: var(--teaser-min-height);
-      border: 1px solid rgba(15,61,51,.10);
-      border-radius: 16px;
-      padding: 15px 16px 14px;
-      background: linear-gradient(170deg, #fffdf8, #faf4e9);
-      box-shadow: 0 20px 48px rgba(12,24,20,.22);
-      cursor: pointer;
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(10px) scale(.97);
-      transform-origin: right bottom;
-      transition: .26s cubic-bezier(.2,.8,.3,1);
-    }
-    #kb-teaser.show {
-      opacity: 1;
-      pointer-events: auto;
-      transform: none;
-    }
-    #kb-teaser b {
-      display: block;
-      padding-right: 24px;
-      color: var(--green);
-      font-family: var(--font-display);
-      font-size: 15.5px;
-      line-height: 1.22;
-      font-weight: 600;
-    }
-    #kb-teaser span {
-      display: block;
-      margin-top: 6px;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.5;
-      font-weight: 480;
-    }
-    .teaser-x {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      width: 24px;
-      height: 24px;
-      border: 0;
-      border-radius: 50%;
-      background: rgba(15,61,51,.07);
-      color: var(--green);
-      display: grid;
-      place-items: center;
-      cursor: pointer;
-      font-size: 14px;
-      line-height: 1;
-      transition: background .15s ease;
-    }
-    .teaser-x:hover { background: rgba(15,61,51,.14); }
 
     /* ------- launcher ------- */
     #kb-launcher {
@@ -290,7 +219,7 @@
       width: min(var(--panel-width), calc(100vw - 30px));
       height: min(var(--panel-height), calc(100dvh - 30px));
       border: 1px solid rgba(15,61,51,.10);
-      border-radius: 20px;
+      border-radius: 22px;
       display: none;
       flex-direction: column;
       overflow: hidden;
@@ -299,11 +228,11 @@
     }
     #kb-widget.open {
       display: flex;
-      animation: kbIn .26s cubic-bezier(.2,.8,.3,1) both;
+      animation: kbIn .3s cubic-bezier(.2,.8,.3,1) both;
     }
 
     .kb-head {
-      min-height: 66px;
+      min-height: 68px;
       display: flex;
       align-items: center;
       gap: 11px;
@@ -314,17 +243,29 @@
         linear-gradient(150deg, var(--green), var(--green-deep));
     }
     .kb-logo {
-      width: 42px;
-      height: 42px;
-      flex: 0 0 42px;
+      width: 44px;
+      height: 44px;
+      flex: 0 0 44px;
       border-radius: 50%;
       display: grid;
       place-items: center;
       color: #f2e3c6;
       background: rgba(255,255,255,.10);
       box-shadow: inset 0 0 0 1px rgba(242,227,198,.28);
+      position: relative;
     }
-    .kb-logo svg { width: 23px; height: 23px; }
+    .kb-logo::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 1px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #7fe8a8;
+      border: 2px solid var(--green-deep);
+    }
+    .kb-logo svg { width: 24px; height: 24px; }
     .kb-title { flex: 1; min-width: 0; }
     .kb-title strong {
       display: block;
@@ -332,26 +273,17 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       font-family: var(--font-display);
-      font-size: 16.5px;
+      font-size: 17px;
       line-height: 1.1;
       font-weight: 600;
       letter-spacing: .01em;
     }
     .kb-title span {
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      display: block;
       margin-top: 4px;
       color: rgba(253,249,240,.66);
       font-size: 11px;
       font-weight: 500;
-    }
-    .kb-online {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #7fe8a8;
-      box-shadow: 0 0 8px rgba(127,232,168,.9);
     }
     .kb-close {
       width: 34px;
@@ -373,7 +305,7 @@
       grid-template-columns: 1fr auto;
       gap: 10px;
       align-items: center;
-      padding: 10px 16px;
+      padding: 9px 16px;
       border-bottom: 1px solid var(--line);
       background: #fdfaf4;
     }
@@ -388,7 +320,7 @@
       height: 100%;
       border-radius: inherit;
       background: linear-gradient(90deg, var(--green-2), var(--gold));
-      transition: width .3s ease;
+      transition: width .35s ease;
     }
     .kb-step-label {
       color: var(--green);
@@ -399,125 +331,161 @@
       white-space: nowrap;
     }
 
+    /* ------- chat ------- */
     .kb-body {
       flex: 1;
       min-height: 0;
-      overflow: auto;
-      padding: 14px;
+      overflow-y: auto;
+      padding: 16px 14px 18px;
       background: linear-gradient(180deg, #fff, var(--cream));
+      scroll-behavior: smooth;
     }
-    .kb-card {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 16px;
-      background: #fff;
-      box-shadow: var(--shadow-soft);
-      animation: kbMsg .24s ease both;
-    }
-    .kb-card + .kb-card,
-    .kb-card + div,
-    div + .kb-card { margin-top: 10px; }
-    .kb-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      min-height: 24px;
-      border-radius: 999px;
-      padding: 0 10px;
-      background: var(--mint);
-      color: var(--green);
-      font-size: 10px;
-      font-weight: 650;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-    }
-    .kb-card h2,
-    .kb-card h3 {
-      margin: 11px 0 6px;
-      color: var(--ink);
-      font-family: var(--font-display);
-      font-size: 20px;
-      line-height: 1.18;
-      font-weight: 600;
-    }
-    .kb-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 12.8px;
-      line-height: 1.55;
-      font-weight: 450;
-    }
-
-    .kb-options {
-      display: grid;
+    .kb-msg {
+      display: flex;
+      align-items: flex-end;
       gap: 8px;
-      margin-top: 13px;
+      margin-top: 12px;
+      animation: kbMsg .28s ease both;
     }
-    .kb-option {
-      width: 100%;
-      border: 1px solid var(--line);
-      border-radius: var(--radius-sm);
-      padding: 11px 12px;
-      display: grid;
-      grid-template-columns: 34px 1fr auto;
-      gap: 11px;
-      align-items: center;
-      text-align: left;
-      background: #fff;
-      cursor: pointer;
-      transition: border-color .15s ease, background .15s ease, transform .15s ease, box-shadow .15s ease;
-    }
-    .kb-option:hover {
-      border-color: rgba(28,106,85,.45);
-      background: #f8fbf8;
-      transform: translateY(-1px);
-      box-shadow: 0 8px 18px rgba(12,24,20,.07);
-    }
-    .kb-option i {
-      width: 34px;
-      height: 34px;
+    .kb-msg:first-child { margin-top: 2px; }
+    .kb-msg.user { justify-content: flex-end; }
+    .kb-ava {
+      width: 30px;
+      height: 30px;
+      flex: 0 0 30px;
       border-radius: 50%;
       display: grid;
       place-items: center;
-      color: var(--green);
-      background: var(--mint);
-      font-style: normal;
-      font-family: var(--font-display);
-      font-size: 14px;
-      font-weight: 600;
+      color: #f2e3c6;
+      background: linear-gradient(150deg, var(--green-2), var(--green-deep));
+      box-shadow: inset 0 0 0 1px rgba(242,227,198,.25);
     }
-    .kb-option b {
-      display: block;
-      color: var(--ink);
+    .kb-ava svg { width: 16px; height: 16px; }
+    .kb-bubble {
+      max-width: 86%;
+      border-radius: 16px;
+      padding: 11px 14px;
       font-size: 13.2px;
-      font-weight: 620;
+      line-height: 1.55;
+      font-weight: 470;
     }
-    .kb-option span span {
+    .kb-msg.bot .kb-bubble {
+      border: 1px solid var(--line);
+      border-bottom-left-radius: 6px;
+      background: #fff;
+      color: #3c3f3a;
+      box-shadow: var(--shadow-soft);
+    }
+    .kb-msg.user .kb-bubble {
+      border-bottom-right-radius: 6px;
+      background: linear-gradient(150deg, var(--green-2), var(--green));
+      color: #f5faf5;
+      box-shadow: 0 8px 20px rgba(15,61,51,.22);
+      font-weight: 550;
+    }
+    .kb-bubble b { color: var(--ink); font-weight: 650; }
+    .kb-msg.user .kb-bubble b { color: #fff; }
+    .kb-bubble .kb-q {
+      display: block;
+      margin: 2px 0 1px;
+      font-family: var(--font-display);
+      font-size: 16.5px;
+      line-height: 1.25;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .kb-hint {
       display: block;
       margin-top: 3px;
       color: var(--muted);
-      font-size: 11.4px;
-      line-height: 1.4;
+      font-size: 11.6px;
+    }
+
+    .kb-opts {
+      display: grid;
+      gap: 7px;
+      margin-top: 11px;
+    }
+    .kb-opt {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      display: grid;
+      grid-template-columns: 30px 1fr auto;
+      gap: 10px;
+      align-items: center;
+      text-align: left;
+      background: #fdfbf6;
+      cursor: pointer;
+      transition: border-color .15s ease, background .15s ease, transform .15s ease, box-shadow .15s ease;
+    }
+    .kb-opt:hover {
+      border-color: rgba(28,106,85,.5);
+      background: #f4faf5;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 18px rgba(12,24,20,.08);
+    }
+    .kb-opt[disabled] { opacity: .55; pointer-events: none; }
+    .kb-opt i {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-style: normal;
+      font-size: 15px;
+      background: var(--mint);
+    }
+    .kb-opt b {
+      display: block;
+      color: var(--ink);
+      font-size: 12.8px;
+      font-weight: 630;
+    }
+    .kb-opt small {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.35;
       font-weight: 450;
     }
-    .kb-option::after {
+    .kb-opt::after {
       content: "›";
       grid-column: 3;
       color: #c9c2b3;
-      font-size: 18px;
-      font-weight: 500;
+      font-size: 17px;
       transition: transform .15s ease, color .15s ease;
     }
-    .kb-option:hover::after {
-      color: var(--green-2);
-      transform: translateX(2px);
-    }
+    .kb-opt:hover::after { color: var(--green-2); transform: translateX(2px); }
 
-    .kb-actions {
+    .kb-mini {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 9px;
+    }
+    .kb-mini button {
+      border: 0;
+      border-radius: 999px;
+      padding: 6px 11px;
+      background: transparent;
+      color: var(--green-2);
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: 600;
+      text-decoration: underline;
+      text-decoration-color: rgba(28,106,85,.35);
+      text-underline-offset: 3px;
+    }
+    .kb-mini button:hover { color: var(--green); }
+
+    .kb-cta {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
-      margin-top: 13px;
+      margin-top: 11px;
     }
     .kb-btn {
       min-height: 38px;
@@ -536,25 +504,25 @@
       transition: background .15s ease, transform .15s ease;
     }
     .kb-btn:hover { background: var(--green-2); transform: translateY(-1px); }
+    .kb-btn.gold {
+      background: linear-gradient(120deg, var(--gold) 30%, #e0b76e 50%, var(--gold) 70%);
+      background-size: 220% 100%;
+      color: #fff;
+      animation: kbShine 3.4s linear infinite;
+    }
     .kb-btn.alt {
       border: 1px solid var(--line);
       background: #fff;
       color: var(--green);
     }
     .kb-btn.alt:hover { background: var(--mint); }
-    .kb-btn.warn { background: var(--red); }
+    .kb-btn[disabled] { opacity: .5; pointer-events: none; }
 
-    /* typing indicator */
-    .kb-typing {
+    .kb-typing .kb-bubble {
       display: inline-flex;
       align-items: center;
       gap: 5px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 10px 16px;
-      background: #fff;
-      box-shadow: var(--shadow-soft);
-      animation: kbMsg .2s ease both;
+      padding: 13px 15px;
     }
     .kb-typing i {
       width: 6px;
@@ -566,28 +534,29 @@
     .kb-typing i:nth-child(2) { animation-delay: .15s; }
     .kb-typing i:nth-child(3) { animation-delay: .3s; }
 
-    /* products */
+    /* products in chat */
+    .kb-products { margin-top: 11px; }
     .kb-product {
       position: relative;
       display: grid;
-      grid-template-columns: 56px 1fr;
-      gap: 12px;
+      grid-template-columns: 52px 1fr;
+      gap: 11px;
       border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 12px;
+      border-radius: 13px;
+      padding: 11px;
       background: #fff;
       box-shadow: var(--shadow-soft);
-      animation: kbMsg .24s ease both;
     }
-    .kb-product + .kb-product { margin-top: 8px; }
+    .kb-product + .kb-product { margin-top: 9px; }
     .kb-product.top {
       border-color: rgba(201,151,76,.55);
       background: linear-gradient(165deg, #fffdf7, #fbf4e6);
+      margin-top: 6px;
     }
     .kb-best {
       position: absolute;
       top: -9px;
-      left: 12px;
+      left: 11px;
       border-radius: 999px;
       padding: 3px 9px;
       background: var(--gold);
@@ -599,8 +568,8 @@
       box-shadow: 0 4px 10px rgba(201,151,76,.4);
     }
     .kb-thumb {
-      width: 56px;
-      height: 72px;
+      width: 52px;
+      height: 68px;
       border-radius: 9px;
       display: grid;
       place-items: center;
@@ -609,7 +578,7 @@
         radial-gradient(circle at 30% 20%, rgba(255,255,255,.3), transparent 32%),
         linear-gradient(155deg, #4b2f22, var(--green-deep));
       font-family: var(--font-display);
-      font-size: 21px;
+      font-size: 20px;
       font-weight: 600;
     }
     .kb-product h4 {
@@ -619,7 +588,7 @@
       align-items: baseline;
       gap: 8px;
       color: var(--ink);
-      font-size: 13.5px;
+      font-size: 13px;
       line-height: 1.25;
       font-weight: 650;
     }
@@ -634,14 +603,11 @@
       text-align: center;
       white-space: nowrap;
     }
-    .kb-product.top .kb-match {
-      background: var(--gold-soft);
-      color: #8a6425;
-    }
+    .kb-product.top .kb-match { background: var(--gold-soft); color: #8a6425; }
     .kb-product p {
-      margin: 5px 0 0;
+      margin: 4px 0 0;
       color: var(--muted);
-      font-size: 11.6px;
+      font-size: 11.4px;
       line-height: 1.5;
       font-weight: 450;
     }
@@ -649,7 +615,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
-      margin-top: 8px;
+      margin-top: 7px;
     }
     .kb-tag {
       border: 1px solid var(--line);
@@ -668,13 +634,13 @@
       font-weight: 700;
     }
 
-    /* lead form */
+    /* lead form in chat */
     .kb-form {
       display: grid;
-      gap: 10px;
-      margin-top: 13px;
+      gap: 9px;
+      margin-top: 11px;
     }
-    .kb-field { display: grid; gap: 5px; }
+    .kb-field { display: grid; gap: 4px; }
     .kb-field label {
       color: var(--green);
       font-size: 10.5px;
@@ -683,7 +649,6 @@
       text-transform: uppercase;
     }
     .kb-field input,
-    .kb-field select,
     .kb-field textarea {
       width: 100%;
       border: 1px solid var(--line);
@@ -700,13 +665,9 @@
       border-color: var(--green-2);
       box-shadow: 0 0 0 3px rgba(28,106,85,.12);
     }
-    .kb-field input,
-    .kb-field select {
-      height: 40px;
-      padding: 0 12px;
-    }
+    .kb-field input { height: 40px; padding: 0 12px; }
     .kb-field textarea {
-      min-height: 80px;
+      min-height: 74px;
       padding: 10px 12px;
       resize: vertical;
       line-height: 1.45;
@@ -726,6 +687,7 @@
       scrollbar-width: none;
     }
     .kb-chips::-webkit-scrollbar { display: none; }
+    .kb-chips:empty { display: none; }
     .kb-chip {
       flex: 0 0 auto;
       min-height: 30px;
@@ -783,50 +745,13 @@
     .kb-send:hover { background: var(--green-2); transform: scale(1.06); }
     .kb-send svg { width: 16px; height: 16px; }
 
-    .kb-toast {
-      position: absolute;
-      left: 50%;
-      bottom: 78px;
-      z-index: 4;
-      transform: translateX(-50%) translateY(10px);
-      opacity: 0;
-      pointer-events: none;
-      max-width: calc(100% - 24px);
-      border-radius: 999px;
-      padding: 10px 15px;
-      background: var(--green-deep);
-      color: #fdf9f0;
-      box-shadow: var(--shadow-soft);
-      font-size: 11.5px;
-      font-weight: 600;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      transition: .22s ease;
-    }
-    .kb-toast.show {
-      opacity: 1;
-      transform: translateX(-50%);
-    }
-
-    @media (max-width: 520px) {
-      .demo {
-        align-items: start;
-        padding: 18px;
-      }
-      .demo-card { padding: 24px 22px; }
-      #kb-teaser {
-        right: 18px;
-        bottom: 120px;
-      }
-      #kb-launcher {
-        right: 0;
-        bottom: 0;
-      }
+    @media (max-width: 640px) {
+      .demo-card { margin-right: 0; }
+      #kb-launcher { right: 0; bottom: 0; }
       #kb-widget {
-        inset: auto 10px 10px 10px;
+        inset: auto 8px 8px 8px;
         width: auto;
-        height: min(638px, calc(100dvh - 20px));
+        height: min(660px, calc(100dvh - 16px));
       }
     }
   </style>
@@ -836,27 +761,20 @@
     <section class="demo-card" aria-label="KávaBot demo">
       <span class="demo-eyebrow">KávaBot &middot; widget pre e-shop</span>
       <h1>Kávový poradca, ktorý predáva <em>za vás</em>.</h1>
-      <p>Namiesto všeobecného chatu vedie zákazníka piatimi krátkymi otázkami a odporučí konkrétnu kávu z katalógu — aj s dôvodom a možnosťou poslať dopyt.</p>
+      <p>Bot privíta zákazníka, prevedie ho krátkym kvízom a odporučí konkrétnu kávu z katalógu — aj s dôvodom a možnosťou poslať dopyt.</p>
       <div class="demo-actions">
         <button class="demo-btn" type="button" data-open>
           <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Vyskúšať poradcu
+          Otvoriť poradcu
         </button>
-        <button class="demo-btn secondary" type="button" data-demo="office">Firemný odber</button>
       </div>
       <div class="demo-note">
-        <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>5 otázok, žiadne písanie</span>
+        <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>kvíz na 5 kliknutí</span>
         <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>odporúčanie z katalógu</span>
-        <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>dopyt priamo z widgetu</span>
+        <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>dopyt priamo z chatu</span>
       </div>
     </section>
   </main>
-
-  <div id="kb-teaser" role="button" tabindex="0" aria-label="Otvoriť kávového poradcu">
-    <button class="teaser-x" type="button" aria-label="Skryť pozvánku">×</button>
-    <b>Nájdem vám kávu na mieru</b>
-    <span>Päť krátkych otázok a odporučím kávu podľa chuti, prípravy aj spotreby.</span>
-  </div>
 
   <section id="kb-widget" aria-label="KávaBot poradca">
     <header class="kb-head">
@@ -865,7 +783,7 @@
       </div>
       <div class="kb-title">
         <strong>KávaBot</strong>
-        <span><i class="kb-online"></i> osobný kávový poradca</span>
+        <span>online &middot; odpovie do pár sekúnd</span>
       </div>
       <button class="kb-close" type="button" data-close aria-label="Zavrieť">
         <svg viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -877,22 +795,20 @@
       <span class="kb-step-label" id="kb-step-label">Vitajte</span>
     </div>
 
-    <div class="kb-body" id="kb-body"></div>
+    <div class="kb-body" id="kb-body" aria-live="polite"></div>
 
     <footer class="kb-foot">
       <div class="kb-chips" id="kb-chips"></div>
       <form class="kb-input" id="kb-form">
-        <input id="kb-input" autocomplete="off" placeholder="Napíšte napr. káva do automatu…">
+        <input id="kb-input" autocomplete="off" placeholder="Napíšte správu…">
         <button class="kb-send" type="submit" aria-label="Odoslať">
           <svg viewBox="0 0 24 24" fill="none"><path d="M4 12 20 4l-5 16-3-7-8-1Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
         </button>
       </form>
     </footer>
-
-    <div class="kb-toast" id="kb-toast"></div>
   </section>
 
-  <button id="kb-launcher" type="button" aria-label="Otvoriť KávaBot poradcu">
+  <button id="kb-launcher" type="button" class="hidden" aria-label="Otvoriť KávaBot poradcu">
     <span class="launcher-core">
       <svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4M7 5.4c.9.8.9 1.7 0 2.6M11 5.4c.9.8.9 1.7 0 2.6M15 5.4c.9.8.9 1.7 0 2.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
     </span>
@@ -901,6 +817,8 @@
   <script>
     (() => {
       const $ = (selector, root = document) => root.querySelector(selector);
+
+      const AVA = '<svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4M7 5.4c.9.8.9 1.7 0 2.6M11 5.4c.9.8.9 1.7 0 2.6M15 5.4c.9.8.9 1.7 0 2.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 
       const products = [
         {
@@ -913,7 +831,7 @@
           pack: ["250g", "1kg"],
           intent: ["home", "office"],
           description: "Sladký espresso blend pre automat, pákový kávovar a cappuccino.",
-          reason: "nízka acidita, dobrá crema a bezpečná chuť pre väčšinu zákazníkov"
+          reason: "má nízku aciditu, hustú cremu a chuť, ktorá sadne väčšine zákazníkov"
         },
         {
           id: "office",
@@ -925,7 +843,7 @@
           pack: ["1kg"],
           intent: ["office"],
           description: "Káva do kancelárskeho automatu s vyššou výťažnosťou.",
-          reason: "je stabilná v automate a dobre funguje pri väčšej dennej spotrebe"
+          reason: "je stabilná v automate a zvláda aj väčšiu dennú spotrebu"
         },
         {
           id: "colombia",
@@ -937,7 +855,7 @@
           pack: ["250g"],
           intent: ["home", "gift"],
           description: "Sladšie moderné espresso s jemným ovocným profilom.",
-          reason: "má prémiovejší dojem bez príliš ostrej kyslosti"
+          reason: "pôsobí prémiovo, no bez príliš ostrej kyslosti"
         },
         {
           id: "ethiopia",
@@ -949,7 +867,7 @@
           pack: ["250g"],
           intent: ["home", "gift"],
           description: "Svieža výberová káva pre filter, V60 a Chemex.",
-          reason: "vynikne vo filtri a poteší zákazníkov, ktorí chcú ovocnú chuť"
+          reason: "vo filtri krásne vynikne jej ovocná, kvetinová chuť"
         },
         {
           id: "decaf",
@@ -961,7 +879,7 @@
           pack: ["250g"],
           intent: ["home", "gift"],
           description: "Bez kofeínu, jemná a sladká káva na večerné pitie.",
-          reason: "rieši chuť kávy bez kofeínu a bez agresívnej acidity"
+          reason: "chutí plnohodnotne aj bez kofeínu a nedráždi kyslosťou"
         },
         {
           id: "gift",
@@ -973,7 +891,7 @@
           pack: ["box"],
           intent: ["gift"],
           description: "Darčekový set troch káv pre bezpečný aj zaujímavý výber.",
-          reason: "nevyžaduje presnú znalosť kávovaru obdarovaného"
+          reason: "poteší aj bez znalosti kávovaru obdarovaného"
         }
       ];
 
@@ -981,77 +899,108 @@
         {
           key: "intent",
           title: "Na čo kávu potrebujete?",
-          help: "Stačí kliknúť — podľa odpovede prispôsobím ďalšie otázky.",
+          help: "Stačí kliknúť na odpoveď.",
           options: [
-            ["home", "Domov", "Káva na bežné pitie doma."],
-            ["office", "Firma / kancelária", "Väčšia spotreba, automat alebo pravidelný odber."],
-            ["gift", "Darček", "Bezpečný výber, aj keď nepoznáte kávovar."],
-            ["problem", "Riešim problém s chuťou", "Kyslá, horká, slabá alebo bez cremy."]
+            ["home", "🏠", "Domov", "Káva na bežné pitie doma."],
+            ["office", "🏢", "Firma / kancelária", "Väčšia spotreba alebo automat."],
+            ["gift", "🎁", "Darček", "Bezpečný výber aj bez znalosti kávovaru."],
+            ["problem", "🤔", "Riešim problém s chuťou", "Kyslá, horká, slabá alebo bez cremy."]
           ]
         },
         {
           key: "brew",
-          title: "Ako ju pripravujete?",
-          help: "Príprava je najdôležitejšia pre praženie aj chuť.",
+          title: "Ako kávu pripravujete?",
+          help: "Príprava najviac ovplyvňuje chuť aj praženie.",
           options: [
-            ["espresso", "Espresso kávovar", "Pákový alebo domáci espresso stroj."],
-            ["automat", "Automatický kávovar", "Stabilná crema a nízka acidita."],
-            ["filter", "Filter / V60 / Chemex", "Čistejšia, sviežejšia chuť."],
-            ["moka", "Moka kanvička", "Plnšia a výraznejšia káva."]
+            ["espresso", "☕", "Espresso kávovar", "Pákový alebo domáci espresso stroj."],
+            ["automat", "🤖", "Automatický kávovar", "Stabilná crema, nízka acidita."],
+            ["filter", "🫖", "Filter / V60 / Chemex", "Čistejšia, sviežejšia chuť."],
+            ["moka", "🔥", "Moka kanvička", "Plnšia a výraznejšia káva."]
           ]
         },
         {
           key: "taste",
           title: "Aký chuťový profil máte radi?",
-          help: "Vyberte chuť, ktorú chcete v šálke naozaj cítiť.",
+          help: "Vyberte chuť, ktorú chcete cítiť v šálke.",
           options: [
-            ["čokoláda", "Čokoládová a orechová", "Bezpečný profil bez výraznej kyslosti."],
-            ["karamel", "Sladká a karamelová", "Vyvážené espresso."],
-            ["ovocie", "Ovocná a svieža", "Výberovejšia chuť pre filter alebo moderné espresso."],
-            ["bez kofeínu", "Bez kofeínu", "Večerná káva alebo citlivosť na kofeín."]
+            ["čokoláda", "🍫", "Čokoládová a orechová", "Bezpečný profil bez kyslosti."],
+            ["karamel", "🍮", "Sladká a karamelová", "Vyvážené espresso."],
+            ["ovocie", "🍒", "Ovocná a svieža", "Výberovejšia, modernejšia chuť."],
+            ["bez kofeínu", "🌙", "Bez kofeínu", "Večerná káva bez kofeínu."]
           ]
         },
         {
           key: "acidity",
-          title: "Ako vnímate kyslosť?",
-          help: "Najčastejšia príčina zlého výberu kávy.",
+          title: "Ako vnímate kyslosť kávy?",
+          help: "Najčastejšia príčina zlého výberu.",
           options: [
-            ["nízka", "Nechcem kyslú kávu", "Sladká, čokoládová, stabilná."],
-            ["stredná", "Môže byť jemne svieža", "Vyvážené espresso alebo sladší filter."],
-            ["vyššia", "Mám rád ovocnú aciditu", "Svetlejšie výberové kávy."]
+            ["nízka", "😌", "Nechcem kyslú kávu", "Sladká, čokoládová, stabilná."],
+            ["stredná", "🙂", "Jemná sviežosť nevadí", "Vyvážené espresso alebo sladší filter."],
+            ["vyššia", "🤩", "Mám rád ovocnú aciditu", "Svetlejšie výberové kávy."]
           ]
         },
         {
           key: "pack",
           title: "Aké balenie dáva zmysel?",
-          help: "Podľa balenia odlíšim domáci nákup, firmu a darček.",
+          help: "Posledná otázka!",
           options: [
-            ["250g", "250 g", "Test alebo domáce pitie."],
-            ["1kg", "1 kg", "Automat, firma alebo vyššia spotreba."],
-            ["box", "Darčekový box", "Pekný efekt a viac chutí."]
+            ["250g", "📦", "250 g", "Na vyskúšanie alebo domáce pitie."],
+            ["1kg", "🛒", "1 kg", "Automat, firma alebo vyššia spotreba."],
+            ["box", "🎀", "Darčekový box", "Pekný efekt a viac chutí."]
           ]
         }
       ];
 
+      const reactions = {
+        intent: {
+          home: "Super! Domáca káva má chutiť každé ráno. 🌅",
+          office: "Rozumiem — pre firmu je kľúčová stabilita a výdrž v automate.",
+          gift: "Výborne, káva ako darček nikdy nesklame. 🎁",
+          problem: "Dobre, že to riešite — zlá chuť sa dá takmer vždy napraviť."
+        },
+        brew: {
+          espresso: "Klasika! Espresso ukáže kávu v plnej sile. ☕",
+          automat: "Automat má rád sladšie zrno s hustou cremou — viem, kam mierim.",
+          filter: "Skvelá voľba, filter odhalí aj jemné ovocné tóny.",
+          moka: "Moka kanvička — poctivá talianska škola. 🇮🇹"
+        },
+        taste: {
+          "čokoláda": "Čokoláda a oriešky — najobľúbenejší profil našich zákazníkov. 🍫",
+          karamel: "Sladké espresso bez horkosti, rozumiem.",
+          ovocie: "Ovocné kávy sú moja srdcovka. 🍒",
+          "bez kofeínu": "Jasné — aj bez kofeínu vie káva chutiť naplno."
+        },
+        acidity: {
+          "nízka": "Poznačené: hladká káva bez kyslosti. 😌",
+          "stredná": "Jemná sviežosť dodá káve šťavnatosť, dobrá voľba.",
+          "vyššia": "Paráda, živá acidita robí kávu zaujímavou. ✨"
+        },
+        pack: {
+          "250g": "250 g je ideál na vyskúšanie.",
+          "1kg": "Kilo — výhodnejšia cena na šálku. 👍",
+          box: "Darčekový box vždy zapôsobí. 🎀"
+        }
+      };
+
       const state = {
         open: false,
+        quiz: false,
         step: 0,
         answers: {},
         labels: {},
-        results: []
+        results: [],
+        busy: false
       };
 
       const els = {
         widget: $("#kb-widget"),
         launcher: $("#kb-launcher"),
-        teaser: $("#kb-teaser"),
         body: $("#kb-body"),
         fill: $("#kb-fill"),
         label: $("#kb-step-label"),
         chips: $("#kb-chips"),
         form: $("#kb-form"),
-        input: $("#kb-input"),
-        toast: $("#kb-toast")
+        input: $("#kb-input")
       };
 
       function esc(value) {
@@ -1064,42 +1013,49 @@
         })[char]);
       }
 
-      function openWidget(mode) {
-        state.open = true;
-        els.widget.classList.add("open");
-        els.launcher.classList.add("hidden");
-        els.teaser.classList.remove("show");
-        if (mode === "office") {
-          resetFlow();
-          state.answers.intent = "office";
-          state.labels.intent = "Firma / kancelária";
-          state.step = 1;
-          renderStep();
-        } else if (!els.body.dataset.ready) {
-          resetFlow();
-          renderIntro();
-        }
-        setTimeout(() => els.input.focus(), 80);
+      const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+      function scrollDown() {
+        els.body.scrollTop = els.body.scrollHeight;
       }
 
-      function closeWidget() {
-        state.open = false;
-        els.widget.classList.remove("open");
-        els.launcher.classList.remove("hidden");
+      function addBot(html) {
+        const msg = document.createElement("div");
+        msg.className = "kb-msg bot";
+        msg.innerHTML = `<span class="kb-ava" aria-hidden="true">${AVA}</span><div class="kb-bubble">${html}</div>`;
+        els.body.appendChild(msg);
+        scrollDown();
+        return msg;
       }
 
-      function toast(text) {
-        els.toast.textContent = text;
-        els.toast.classList.add("show");
-        clearTimeout(toast.timer);
-        toast.timer = setTimeout(() => els.toast.classList.remove("show"), 2200);
+      function addUser(text) {
+        const msg = document.createElement("div");
+        msg.className = "kb-msg user";
+        msg.innerHTML = `<div class="kb-bubble">${esc(text)}</div>`;
+        els.body.appendChild(msg);
+        scrollDown();
+      }
+
+      async function typing(ms = 700) {
+        const msg = document.createElement("div");
+        msg.className = "kb-msg bot kb-typing";
+        msg.innerHTML = `<span class="kb-ava" aria-hidden="true">${AVA}</span><div class="kb-bubble" role="status" aria-label="KávaBot píše"><i></i><i></i><i></i></div>`;
+        els.body.appendChild(msg);
+        scrollDown();
+        await wait(ms);
+        msg.remove();
       }
 
       function setProgress() {
         const total = steps.length;
-        const pct = state.step <= 0 ? 0 : Math.round((state.step / total) * 100);
+        if (!state.quiz) {
+          els.fill.style.width = state.step >= total ? "100%" : "0%";
+          els.label.textContent = state.step >= total ? "Hotovo" : "Vitajte";
+          return;
+        }
+        const pct = Math.round((state.step / total) * 100);
         els.fill.style.width = `${Math.min(100, pct)}%`;
-        els.label.textContent = state.step >= total ? "Hotovo" : `Krok ${state.step + 1} z ${total}`;
+        els.label.textContent = `Krok ${state.step + 1} z ${total}`;
       }
 
       function setChips(items) {
@@ -1108,29 +1064,9 @@
         )).join("");
       }
 
-      function renderIntro() {
-        els.body.dataset.ready = "1";
-        state.step = 0;
-        els.fill.style.width = "0%";
-        els.label.textContent = "Vitajte";
-        els.body.innerHTML = `
-          <article class="kb-card">
-            <span class="kb-kicker">Osobný výber</span>
-            <h2>Dobrý deň, nájdem vám kávu na mieru.</h2>
-            <p>Odpoviete na päť krátkych otázok a odporučím konkrétnu kávu z našej ponuky — aj s dôvodom, prečo vám sadne.</p>
-            <div class="kb-actions">
-              <button class="kb-btn" type="button" data-action="start">Začať výber</button>
-              <button class="kb-btn alt" type="button" data-action="office">Pre firmu</button>
-              <button class="kb-btn alt" type="button" data-action="gift">Darček</button>
-            </div>
-          </article>
-        `;
-        setChips([
-          { label: "Vybrať kávu", action: "start" },
-          { label: "Káva do automatu", action: "auto" },
-          { label: "Darček", action: "gift" },
-          { label: "Poslať dopyt", action: "lead" }
-        ]);
+      function lockOptions(container) {
+        container.querySelectorAll(".kb-opt, .kb-btn").forEach(btn => btn.setAttribute("disabled", ""));
+        container.querySelectorAll(".kb-mini").forEach(row => row.remove());
       }
 
       function resetFlow() {
@@ -1140,54 +1076,82 @@
         state.results = [];
       }
 
-      function renderStep() {
-        const step = steps[state.step];
+      /* ---------- intro ---------- */
+      async function intro() {
+        state.quiz = false;
         setProgress();
-        els.body.innerHTML = `
-          <article class="kb-card">
-            <span class="kb-kicker">Otázka ${state.step + 1}</span>
-            <h3>${esc(step.title)}</h3>
-            <p>${esc(step.help)}</p>
-            <div class="kb-options">
-              ${step.options.map((option, index) => `
-                <button class="kb-option" type="button" data-answer="${esc(option[0])}" data-label="${esc(option[1])}">
-                  <i>${index + 1}</i>
-                  <span><b>${esc(option[1])}</b><span>${esc(option[2])}</span></span>
-                </button>
-              `).join("")}
-            </div>
-            <div class="kb-actions">
-              ${state.step > 0 ? '<button class="kb-btn alt" type="button" data-action="back">‹ Späť</button>' : ''}
-              <button class="kb-btn alt" type="button" data-action="restart">Odznova</button>
-            </div>
-          </article>
-        `;
-        els.body.scrollTop = 0;
+        setChips([]);
+        await typing(650);
+        addBot("Dobrý deň! 👋 Som <b>KávaBot</b>, váš osobný kávový poradca.");
+        await typing(750);
+        addBot(`
+          Nájdem vám kávu presne na mieru — stačí odpovedať na <b>5 krátkych otázok</b>. Trvá to menej než minútu. ☕
+          <div class="kb-cta">
+            <button class="kb-btn gold" type="button" data-action="start">✨ Vybrať kávu podľa kvízu</button>
+            <button class="kb-btn alt" type="button" data-action="office">Káva pre firmu</button>
+            <button class="kb-btn alt" type="button" data-action="gift">Hľadám darček</button>
+          </div>
+        `);
+        setChips([
+          { label: "✨ Spustiť kvíz", action: "start" },
+          { label: "Káva do automatu", action: "auto" },
+          { label: "Darček", action: "gift" },
+          { label: "Poslať dopyt", action: "lead" }
+        ]);
       }
 
-      function answer(value, label) {
+      /* ---------- quiz ---------- */
+      async function askStep(skipTyping) {
+        state.quiz = true;
+        setProgress();
+        setChips([]);
+        if (!skipTyping) await typing(600);
+        const step = steps[state.step];
+        addBot(`
+          <span class="kb-q">${esc(step.title)}</span>
+          <span class="kb-hint">${esc(step.help)}</span>
+          <div class="kb-opts">
+            ${step.options.map(option => `
+              <button class="kb-opt" type="button" data-answer="${esc(option[0])}" data-label="${esc(option[2])}">
+                <i>${option[1]}</i>
+                <span><b>${esc(option[2])}</b><small>${esc(option[3])}</small></span>
+              </button>
+            `).join("")}
+          </div>
+          ${state.step > 0 ? '<div class="kb-mini"><button type="button" data-action="back">‹ Späť</button><button type="button" data-action="restart">Začať odznova</button></div>' : ''}
+        `);
+      }
+
+      async function answer(value, label) {
         const step = steps[state.step];
         state.answers[step.key] = value;
         state.labels[step.key] = label;
+        addUser(label);
 
         if (value === "problem" && step.key === "intent") {
           state.answers.acidity = "nízka";
           state.labels.acidity = "Nechcem kyslú kávu";
         }
-
         if (value === "gift" && step.key === "intent") {
           state.answers.pack = "box";
           state.labels.pack = "Darčekový box";
         }
 
+        const reaction = reactions[step.key]?.[value];
+        if (reaction) {
+          await typing(550);
+          addBot(esc(reaction));
+        }
+
         if (state.step < steps.length - 1) {
           state.step += 1;
-          renderStep();
+          await askStep();
           return;
         }
-        renderResults();
+        await showResults();
       }
 
+      /* ---------- results ---------- */
       function score(product) {
         let points = 40;
         const a = state.answers;
@@ -1217,13 +1181,10 @@
       }
 
       function summaryText() {
-        const parts = [];
-        if (state.labels.intent) parts.push(state.labels.intent);
-        if (state.labels.brew) parts.push(state.labels.brew);
-        if (state.labels.taste) parts.push(state.labels.taste);
-        if (state.labels.acidity) parts.push(state.labels.acidity);
-        if (state.labels.pack) parts.push(state.labels.pack);
-        return parts.join(" · ");
+        return ["intent", "brew", "taste", "acidity", "pack"]
+          .map(key => state.labels[key])
+          .filter(Boolean)
+          .join(" · ");
       }
 
       function productHtml(item, index) {
@@ -1231,12 +1192,12 @@
         const initial = p.name.trim().charAt(0);
         const top = index === 0;
         return `
-          <article class="kb-product${top ? " top" : ""}" style="animation-delay:${index * 70}ms">
+          <article class="kb-product${top ? " top" : ""}">
             ${top ? '<span class="kb-best">Najlepšia zhoda</span>' : ""}
             <div class="kb-thumb" aria-hidden="true">${esc(initial)}</div>
             <div>
               <h4>${esc(p.name)} <span class="kb-match">${item.score} %</span></h4>
-              <p>${esc(p.description)} Odporúčam, pretože ${esc(p.reason)}.</p>
+              <p>${esc(p.description)} ${esc(p.reason.charAt(0).toUpperCase() + p.reason.slice(1))}.</p>
               <div class="kb-tags">
                 ${p.taste.slice(0, 3).map(tag => `<span class="kb-tag">${esc(tag)}</span>`).join("")}
                 <span class="kb-tag price">${esc(p.price)}</span>
@@ -1246,178 +1207,225 @@
         `;
       }
 
-      function renderResults() {
+      async function showResults() {
+        state.quiz = false;
         state.step = steps.length;
         setProgress();
         state.results = getResults();
-        els.body.innerHTML = '<div class="kb-typing" role="status" aria-label="Pripravujem odporúčanie"><i></i><i></i><i></i></div>';
-        els.body.scrollTop = 0;
+        await typing(500);
+        addBot("Ďakujem! Prehľadávam katalóg a porovnávam chuťové profily… 🔎");
+        await typing(1100);
+        addBot(`
+          <b>Mám to!</b> Podľa vašich odpovedí <span class="kb-hint">${esc(summaryText())}</span>
+          vám najviac sadnú tieto kávy:
+          <div class="kb-products">
+            ${state.results.map(productHtml).join("")}
+          </div>
+        `);
+        await typing(650);
+        addBot(`
+          Chcete k výberu <b>cenovú ponuku</b> alebo poradiť s objednávkou? Rád pripravím nezáväzný dopyt. 💌
+          <div class="kb-cta">
+            <button class="kb-btn gold" type="button" data-action="lead">Poslať dopyt</button>
+            <button class="kb-btn alt" type="button" data-action="restart">Nový výber</button>
+          </div>
+        `);
+        setChips([
+          { label: "💌 Poslať dopyt", action: "lead" },
+          { label: "Nový výber", action: "restart" },
+          { label: "Káva pre firmu", action: "office" }
+        ]);
+      }
+
+      /* ---------- lead ---------- */
+      async function renderLead() {
         setChips([]);
-        setTimeout(() => {
-          els.body.innerHTML = `
-            <article class="kb-card">
-              <span class="kb-kicker">Vaše odporúčanie</span>
-              <h3>Toto sú kávy pre vás.</h3>
-              <p>${esc(summaryText())}</p>
-            </article>
-            <div style="padding-top:6px">
-              ${state.results.map(productHtml).join("")}
-            </div>
-            <article class="kb-card">
-              <p>Chcete cenovú ponuku alebo poradiť s objednávkou? Pošlite nám nezáväzný dopyt.</p>
-              <div class="kb-actions">
-                <button class="kb-btn" type="button" data-action="lead">Poslať dopyt</button>
-                <button class="kb-btn alt" type="button" data-action="restart">Nový výber</button>
-              </div>
-            </article>
-          `;
-          setChips([
-            { label: "Poslať dopyt", action: "lead" },
-            { label: "Nový výber", action: "restart" },
-            { label: "Pre firmu", action: "office" }
-          ]);
-        }, 650);
-      }
-
-      function renderLead() {
-        setProgress();
         const top = state.results[0]?.product?.name || "";
-        els.body.innerHTML = `
-          <article class="kb-card">
-            <span class="kb-kicker">Nezáväzný dopyt</span>
-            <h3>Pošlite nám správu</h3>
-            <p>Ozveme sa s ponukou na mieru. Predvyplnili sme, čo ste si vybrali.</p>
-            <form class="kb-form" id="lead-form">
-              <div class="kb-field">
-                <label for="lead-name">Meno / firma</label>
-                <input id="lead-name" name="name" required placeholder="Napr. Kaviareň Sever">
-              </div>
-              <div class="kb-field">
-                <label for="lead-email">E-mail</label>
-                <input id="lead-email" name="email" type="email" required placeholder="kontakt@firma.sk">
-              </div>
-              <div class="kb-field">
-                <label for="lead-note">Poznámka</label>
-                <textarea id="lead-note" name="note">${esc(summaryText())}${top ? "\nTop odporúčanie: " + esc(top) : ""}</textarea>
-              </div>
-              <button class="kb-btn" type="submit">Odoslať dopyt</button>
-            </form>
-          </article>
-        `;
-        els.body.scrollTop = 0;
+        const summary = summaryText();
+        await typing(600);
+        addBot(`
+          Výborne! Nechajte mi kontakt a my sa ozveme s ponukou na mieru. ${summary ? "Váš výber som už predvyplnil. ✍️" : ""}
+          <form class="kb-form" data-lead>
+            <div class="kb-field">
+              <label>Meno / firma</label>
+              <input name="name" required placeholder="Napr. Kaviareň Sever">
+            </div>
+            <div class="kb-field">
+              <label>E-mail</label>
+              <input name="email" type="email" required placeholder="kontakt@firma.sk">
+            </div>
+            <div class="kb-field">
+              <label>Poznámka</label>
+              <textarea name="note">${esc(summary)}${top ? "\nTop odporúčanie: " + esc(top) : ""}</textarea>
+            </div>
+            <button class="kb-btn gold" type="submit">Odoslať dopyt</button>
+          </form>
+        `);
       }
 
-      function handleAction(action) {
-        if (action === "start" || action === "restart") {
-          resetFlow();
-          renderStep();
-          return;
-        }
-        if (action === "back") {
-          if (state.step > 0) state.step -= 1;
-          renderStep();
-          return;
-        }
-        if (action === "office") {
-          resetFlow();
-          state.answers.intent = "office";
-          state.labels.intent = "Firma / kancelária";
-          state.step = 1;
-          renderStep();
-          return;
-        }
-        if (action === "gift") {
-          resetFlow();
-          state.answers.intent = "gift";
-          state.labels.intent = "Darček";
-          state.answers.pack = "box";
-          state.labels.pack = "Darčekový box";
-          state.step = 1;
-          renderStep();
-          return;
-        }
-        if (action === "auto") {
-          resetFlow();
-          state.answers.intent = "office";
-          state.labels.intent = "Firma / kancelária";
-          state.answers.brew = "automat";
-          state.labels.brew = "Automatický kávovar";
-          state.step = 2;
-          renderStep();
-          return;
-        }
-        if (action === "lead") {
-          renderLead();
+      /* ---------- actions ---------- */
+      async function handleAction(action, sourceMsg) {
+        if (state.busy) return;
+        state.busy = true;
+        try {
+          if (sourceMsg) lockOptions(sourceMsg);
+          if (action === "start") {
+            resetFlow();
+            addUser("Chcem vybrať kávu podľa kvízu ✨");
+            await askStep();
+          } else if (action === "restart") {
+            resetFlow();
+            addUser("Nový výber");
+            await askStep();
+          } else if (action === "back") {
+            if (state.step > 0) state.step -= 1;
+            await askStep(true);
+          } else if (action === "office") {
+            resetFlow();
+            state.answers.intent = "office";
+            state.labels.intent = "Firma / kancelária";
+            state.step = 1;
+            addUser("Hľadám kávu pre firmu");
+            await typing(550);
+            addBot(esc(reactions.intent.office));
+            await askStep();
+          } else if (action === "gift") {
+            resetFlow();
+            state.answers.intent = "gift";
+            state.labels.intent = "Darček";
+            state.answers.pack = "box";
+            state.labels.pack = "Darčekový box";
+            state.step = 1;
+            addUser("Hľadám darček 🎁");
+            await typing(550);
+            addBot(esc(reactions.intent.gift));
+            await askStep();
+          } else if (action === "auto") {
+            resetFlow();
+            state.answers.intent = "office";
+            state.labels.intent = "Firma / kancelária";
+            state.answers.brew = "automat";
+            state.labels.brew = "Automatický kávovar";
+            state.step = 2;
+            addUser("Potrebujem kávu do automatu");
+            await typing(550);
+            addBot(esc(reactions.brew.automat));
+            await askStep();
+          } else if (action === "lead") {
+            addUser("Chcem poslať dopyt");
+            await renderLead();
+          }
+        } finally {
+          state.busy = false;
         }
       }
 
-      function handleText(text) {
-        const query = text.toLowerCase();
-        if (query.includes("automat") || query.includes("firma") || query.includes("kancel")) {
-          handleAction("auto");
-          toast("Spustil som výber pre automat / firmu.");
-          return;
-        }
-        if (query.includes("dar")) {
-          handleAction("gift");
-          toast("Spustil som darčekový výber.");
-          return;
-        }
-        if (query.includes("filter") || query.includes("v60") || query.includes("chemex")) {
+      async function handleText(text) {
+        if (state.busy) return;
+        addUser(text);
+        state.busy = true;
+        try {
+          const query = text.toLowerCase();
+          await typing(650);
+          if (query.includes("automat") || query.includes("firma") || query.includes("kancel")) {
+            addBot("Jasné — káva do automatu či pre firmu je moja parketa. Doplňme pár detailov:");
+            resetFlow();
+            state.answers.intent = "office";
+            state.labels.intent = "Firma / kancelária";
+            state.answers.brew = "automat";
+            state.labels.brew = "Automatický kávovar";
+            state.step = 2;
+            await askStep();
+            return;
+          }
+          if (query.includes("dar")) {
+            addBot("Darček s vôňou kávy nikdy nesklame. 🎁 Pomôžem vám vybrať:");
+            resetFlow();
+            state.answers.intent = "gift";
+            state.labels.intent = "Darček";
+            state.answers.pack = "box";
+            state.labels.pack = "Darčekový box";
+            state.step = 1;
+            await askStep();
+            return;
+          }
+          if (query.includes("filter") || query.includes("v60") || query.includes("chemex")) {
+            addBot("Filter káva — skvelý vkus! ☕ Poďme doladiť chuť:");
+            resetFlow();
+            state.answers.intent = "home";
+            state.labels.intent = "Domov";
+            state.answers.brew = "filter";
+            state.labels.brew = "Filter / V60 / Chemex";
+            state.step = 2;
+            await askStep();
+            return;
+          }
+          if (query.includes("bez kof") || query.includes("decaf")) {
+            addBot("Rozumiem, hľadáme kávu bez kofeínu. 🌙");
+            resetFlow();
+            state.answers.intent = "home";
+            state.labels.intent = "Domov";
+            state.answers.taste = "bez kofeínu";
+            state.labels.taste = "Bez kofeínu";
+            state.step = 1;
+            await askStep();
+            return;
+          }
+          if (query.includes("dopyt") || query.includes("kontakt") || query.includes("ponuk")) {
+            await renderLead();
+            return;
+          }
+          if (query.includes("ahoj") || query.includes("dobrý") || query.includes("dobry") || query.includes("čau") || query.includes("cau")) {
+            addBot("Dobrý deň! 👋 Najrýchlejšie vám pomôžem krátkym kvízom — 5 otázok a máte kávu na mieru.");
+            await askStep();
+            return;
+          }
+          addBot("Najlepšie vám poradím krátkym kvízom — 5 otázok klikaním a odporučím kávu presne pre vás. 🎯");
           resetFlow();
-          state.answers.intent = "home";
-          state.labels.intent = "Domov";
-          state.answers.brew = "filter";
-          state.labels.brew = "Filter / V60 / Chemex";
-          state.step = 2;
-          renderStep();
-          toast("Spustil som výber pre filter.");
-          return;
+          await askStep();
+        } finally {
+          state.busy = false;
         }
-        if (query.includes("bez kof") || query.includes("decaf")) {
-          resetFlow();
-          state.answers.intent = "home";
-          state.labels.intent = "Domov";
-          state.answers.taste = "bez kofeínu";
-          state.labels.taste = "Bez kofeínu";
-          state.step = 1;
-          renderStep();
-          toast("Hľadám bezkofeínovú kávu.");
-          return;
-        }
-        resetFlow();
-        renderStep();
-        toast("Najrýchlejší bude krátky výber klikaním.");
       }
 
+      /* ---------- open/close ---------- */
+      let started = false;
+      function openWidget() {
+        state.open = true;
+        els.widget.classList.add("open");
+        els.launcher.classList.add("hidden");
+        if (!started) {
+          started = true;
+          intro();
+        }
+      }
+
+      function closeWidget() {
+        state.open = false;
+        els.widget.classList.remove("open");
+        els.launcher.classList.remove("hidden");
+      }
+
+      /* ---------- events ---------- */
       document.addEventListener("click", event => {
         if (event.target.closest("[data-open]")) openWidget();
-        const demo = event.target.closest("[data-demo]");
-        if (demo) openWidget(demo.dataset.demo);
       });
-
-      els.launcher.addEventListener("click", () => openWidget());
-      els.teaser.addEventListener("click", event => {
-        if (event.target.closest(".teaser-x")) {
-          event.stopPropagation();
-          els.teaser.classList.remove("show");
-          return;
-        }
-        openWidget();
-      });
-      els.teaser.addEventListener("keydown", event => {
-        if (event.key === "Enter" || event.key === " ") openWidget();
-      });
+      els.launcher.addEventListener("click", openWidget);
       $("[data-close]").addEventListener("click", closeWidget);
 
       els.body.addEventListener("click", event => {
         const option = event.target.closest("[data-answer]");
         if (option) {
+          if (state.busy) return;
+          const msg = option.closest(".kb-msg");
+          state.busy = true;
+          lockOptions(msg);
+          state.busy = false;
           answer(option.dataset.answer, option.dataset.label);
           return;
         }
         const action = event.target.closest("[data-action]");
-        if (action) handleAction(action.dataset.action);
+        if (action) handleAction(action.dataset.action, action.closest(".kb-msg"));
       });
 
       els.chips.addEventListener("click", event => {
@@ -1433,32 +1441,30 @@
         handleText(text);
       });
 
-      els.body.addEventListener("submit", event => {
-        if (!event.target.matches("#lead-form")) return;
+      els.body.addEventListener("submit", async event => {
+        const form = event.target.closest("[data-lead]");
+        if (!form) return;
         event.preventDefault();
-        const data = Object.fromEntries(new FormData(event.target).entries());
-        toast("Ďakujeme, dopyt je odoslaný.");
-        els.body.innerHTML = `
-          <article class="kb-card">
-            <span class="kb-kicker">Odoslané</span>
-            <h3>Ďakujeme za dopyt</h3>
-            <p>Ozveme sa na ${esc(data.email)} čo najskôr. Kontakt: ${esc(data.name)}.</p>
-            <div class="kb-actions">
-              <button class="kb-btn" type="button" data-action="restart">Nový výber</button>
-              <button class="kb-btn alt" type="button" data-action="start">Späť na poradcu</button>
-            </div>
-          </article>
-        `;
+        const data = Object.fromEntries(new FormData(form).entries());
+        form.querySelectorAll("input, textarea, button").forEach(el => el.setAttribute("disabled", ""));
+        addUser(`Dopyt: ${data.name} · ${data.email}`);
+        await typing(800);
+        addBot(`
+          <b>Ďakujem, dopyt je odoslaný!</b> ✅ Ozveme sa na <b>${esc(data.email)}</b> zvyčajne do 24 hodín.
+          <div class="kb-cta">
+            <button class="kb-btn alt" type="button" data-action="restart">Nový výber</button>
+          </div>
+        `);
+        setChips([{ label: "Nový výber", action: "restart" }]);
       });
 
-      renderIntro();
+      /* ---------- boot: chatbot sa otvorí sám ---------- */
       const params = new URLSearchParams(window.location.search);
-      if (params.get("open") === "1") {
-        openWidget(params.get("mode") || undefined);
+      if (params.get("open") === "0") {
+        els.launcher.classList.remove("hidden");
+      } else {
+        setTimeout(openWidget, 400);
       }
-      setTimeout(() => {
-        if (!state.open) els.teaser.classList.add("show");
-      }, 700);
     })();
   </script>
 </body>

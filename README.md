@@ -1,17 +1,18 @@
 # KávaBot widget demo
 
-Prémiový kávový poradca pripravený ako samostatný `index.html` — vhodný na prezentáciu klientovi aj na vloženie do webu.
+Prémiový kávový chatbot pripravený ako samostatný `index.html` — vhodný na prezentáciu klientovi aj na vloženie do webu.
 
 ## Čo je upravené
 
-- prezentovateľná úvodná stránka s krátkym popisom a benefitmi,
+- chatbot sa **otvorí automaticky** po načítaní stránky (vypnutie: `?open=0`),
+- skutočný chat zážitok: bubliny, avatar, „píše…“ indikátor, konverzačné reakcie bota,
+- v uvítaní je hlavné CTA **„Vybrať kávu podľa kvízu“** + skratky (firma, darček, automat),
+- kvíz beží priamo v konverzácii: 5 otázok s emoji možnosťami, progres „Krok X z 5“, Späť / Odznova,
 - prémiový vizuál: serifová typografia (Fraunces), tmavozelená + zlatá paleta, jemné animácie,
-- launcher nastavený podľa MôjPlot merania: `130 x 130 px`,
-- teaser nastavený podľa MôjPlot merania: približne `248 x 117 px`,
-- jednoduché ovládanie: 5 otázok klikaním, progres „Krok X z 5“, tlačidlo Späť,
-- výsledky z lokálneho katalógu so zvýraznenou najlepšou zhodou a odstupňovaným skóre,
-- funkčný demo dopyt formulár s predvyplneným výberom,
-- textový vstup rozpozná napríklad `automat`, `firma`, `darček`, `filter`, `bez kofeínu`.
+- výsledky v chate so zvýraznenou najlepšou zhodou a odstupňovaným skóre,
+- dopyt formulár priamo v chate s predvyplneným výberom a potvrdením,
+- textový vstup rozpozná napríklad `automat`, `firma`, `darček`, `filter`, `bez kofeínu`, `dopyt`, pozdrav,
+- launcher podľa MôjPlot merania: `130 x 130 px` (zobrazí sa po zavretí chatu).
 
 ## Spustenie
 
