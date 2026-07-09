@@ -331,6 +331,240 @@ body:before{background:radial-gradient(circle at 82% 16%,rgba(232,189,115,.20),t
 @keyframes badgePop{0%{transform:scale(.6)}60%{transform:scale(1.18)}100%{transform:scale(1)}}
 @media(max-height:760px) and (min-width:721px){#kb-widget{height:calc(100dvh - 18px);bottom:9px}.choice{min-height:78px}.buddy-tip{display:grid}.summary{display:none}.meters{display:none}.product-top{grid-template-columns:66px 1fr}.bag{height:86px}.ship{display:none}}
 @media(max-width:720px){#kb-widget{height:100dvh}.body{padding-left:10px;padding-right:10px}.choice{grid-template-columns:66px 1fr 52px;min-height:82px}.buddy-tip{grid-template-columns:38px 1fr}.summary{grid-template-columns:repeat(2,1fr)}}
+
+/* ===== Final Beano proportion pass ===== */
+#kb-bubble{
+  width:84px;
+  height:84px;
+  right:18px;
+  bottom:18px;
+  border-radius:24px;
+  background:
+    radial-gradient(circle at 31% 22%,rgba(255,232,191,.22),transparent 34%),
+    linear-gradient(145deg,#241812,#3a2418 58%,#6e3c19);
+}
+.bubble-bot{
+  width:78px;
+  height:78px;
+  transform-origin:50% 78%;
+}
+.bubble-bot:before,.bubble-bot:after{
+  width:7px;
+  height:22px;
+  top:35px;
+}
+.bubble-bot:before{left:2px}
+.bubble-bot:after{right:2px}
+.bubble-bot .cup{
+  width:54px;
+  height:40px;
+  box-shadow:
+    0 0 0 4px var(--px-line),
+    0 -5px 0 var(--px-hi) inset,
+    0 7px 0 var(--px-cream2) inset,
+    7px 0 0 var(--px-cream2),
+    -7px 0 0 var(--px-cream3),
+    0 9px 0 #b87639,
+    0 13px 0 rgba(0,0,0,.13);
+}
+.bubble-bot .cup:before{
+  left:6px;
+  right:6px;
+  top:5px;
+  height:10px;
+}
+.bubble-bot .cup:after{
+  left:13px;
+  bottom:-13px;
+  width:6px;
+  height:12px;
+  box-shadow:22px 0 0 #8f5528;
+}
+.bubble-bot .cup-handle{
+  right:-18px;
+  top:12px;
+  width:18px;
+  height:21px;
+  border-width:5px;
+}
+.bubble-bot .plate{
+  bottom:1px;
+  width:66px;
+  height:7px;
+}
+.bubble-bot .cup-face{
+  left:14px;
+  right:14px;
+  bottom:10px;
+}
+.bubble-bot .eye{
+  width:6px;
+  height:9px;
+}
+.bubble-bot .smile{
+  top:10px;
+  width:15px;
+  height:4px;
+}
+.bubble-bot .s1{left:25px;top:-17px}
+.bubble-bot .s2{left:39px;top:-22px}
+.brand-logo{
+  width:52px;
+  height:52px;
+  border-radius:16px;
+  overflow:visible;
+}
+.brand-logo .buddy{
+  width:52px;
+  height:52px;
+}
+.brand-logo .buddy:before,.brand-logo .buddy:after{
+  width:5px;
+  height:15px;
+  top:24px;
+}
+.brand-logo .buddy:before{left:2px}
+.brand-logo .buddy:after{right:2px}
+.brand-logo .cup{
+  width:38px;
+  height:29px;
+}
+.brand-logo .cup:after{
+  left:9px;
+  bottom:-10px;
+  width:5px;
+  height:9px;
+  box-shadow:17px 0 0 #8f5528;
+}
+.brand-logo .cup-handle{
+  right:-12px;
+  top:8px;
+  width:12px;
+  height:14px;
+  border-width:4px;
+}
+.brand-logo .plate{
+  width:46px;
+  bottom:1px;
+}
+.brand-logo .cup-face{
+  left:10px;
+  right:10px;
+  bottom:7px;
+}
+.brand-logo .eye{
+  width:5px;
+  height:7px;
+}
+.brand-logo .smile{
+  top:8px;
+  width:11px;
+}
+.brand-logo .s1{left:15px;top:-13px}
+.brand-logo .s2{left:25px;top:-17px}
+.buddy-tip{
+  grid-template-columns:54px 1fr;
+  min-height:60px;
+  align-items:center;
+  border-color:#ead0a8;
+}
+.buddy-tip .mini-bot{
+  width:52px;
+  height:52px;
+}
+.buddy-tip .mini-bot:before,.buddy-tip .mini-bot:after{
+  width:5px;
+  height:15px;
+  top:23px;
+}
+.buddy-tip .mini-bot .cup{
+  width:38px;
+  height:29px;
+}
+.buddy-tip .mini-bot .cup:after{
+  left:9px;
+  bottom:-10px;
+  width:5px;
+  height:9px;
+  box-shadow:17px 0 0 #8f5528;
+}
+.buddy-tip .mini-bot .cup-handle{
+  right:-12px;
+  top:8px;
+  width:12px;
+  height:14px;
+  border-width:4px;
+}
+.buddy-tip .mini-bot .plate{
+  width:46px;
+  bottom:1px;
+}
+.buddy-tip .mini-bot .cup-face{
+  left:10px;
+  right:10px;
+  bottom:7px;
+}
+.buddy-tip .mini-bot .eye{
+  width:5px;
+  height:7px;
+}
+.buddy-tip .mini-bot .smile{
+  top:8px;
+  width:11px;
+}
+.buddy-tip .mini-bot .s1{left:15px;top:-13px}
+.buddy-tip .mini-bot .s2{left:25px;top:-17px}
+.kb-head{
+  min-height:70px;
+  padding:9px 12px;
+}
+.brand{
+  gap:12px;
+}
+.brand b{
+  font-size:17px;
+}
+.mode-tabs button.active{
+  transform:translateY(-1px);
+}
+.choice{
+  grid-template-columns:82px 1fr 60px;
+  min-height:92px;
+  background:linear-gradient(180deg,#fff,#fffdf8);
+}
+.choice.selected{
+  background:linear-gradient(180deg,#ffffff,#eefaf4);
+}
+.pic{
+  border-right:1px solid #eee2d1;
+}
+.pic svg{
+  width:38px;
+  height:38px;
+}
+.choice-mid b{
+  font-size:14.7px;
+}
+.choice-mid span{
+  font-size:11px;
+}
+.product{
+  box-shadow:0 16px 32px rgba(52,31,18,.10);
+}
+.bag{
+  background:
+    linear-gradient(180deg,rgba(255,255,255,.08),transparent 36%),
+    linear-gradient(155deg,#26170f,#5a341f 58%,#c89146);
+}
+.meta{
+  background:linear-gradient(180deg,#fff,#fff9ee);
+}
+@media(max-width:720px){
+  #kb-bubble{right:14px;bottom:14px}
+  .brand-logo{width:50px;height:50px}
+  .choice{grid-template-columns:76px 1fr 54px;min-height:88px}
+  .buddy-tip{grid-template-columns:50px 1fr}
+}
 </style>
 </head>
 <body>
