@@ -1,2457 +1,404 @@
 <!doctype html>
 <html lang="sk">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>KávaBot | prémiový kávový poradca</title>
-  <meta name="description" content="Prémiový kávový poradca — widget pripravený na vloženie do webu. Rozmery launcheru podľa MôjPlot.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --launcher-size: 130px;
-      --teaser-width: 248px;
-      --teaser-min-height: 117px;
-      --panel-width: 390px;
-      --panel-height: 640px;
-      --right-edge: 15px;
-      --teaser-right: 33px;
-      --teaser-bottom: 128px;
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Beano – pixel coffee assistant</title>
+<style>
+:root{
+  --coffee:#5a341f;--coffee2:#7a4a2c;--cream:#fff7ec;--cream2:#f4e4cb;--paper:#fffdf8;
+  --caramel:#c89146;--gold:#e8bd73;--ink:#30241b;--muted:#76685d;--line:#ead8bd;
+  --green:#2f8278;--green2:#1f665f;--orange:#ff8a4b;--danger:#c65642;
+  --shadow:0 26px 70px rgba(52,31,18,.22);--soft:0 12px 28px rgba(52,31,18,.10);
+}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:#fff}button,input,textarea{font:inherit}button{cursor:pointer;-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 84% 17%,rgba(232,189,115,.22),transparent 26%),linear-gradient(90deg,#fff 0,#fff 56%,#fff8ed);pointer-events:none}.page-note{position:fixed;left:64px;top:70px;max-width:560px;color:#372419}.page-note .ey{display:inline-flex;align-items:center;gap:8px;height:34px;border:1px solid #ead0a8;border-radius:999px;padding:0 14px;background:#fff9ee;color:#7a4a2c;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.page-note h1{margin:20px 0 12px;font-size:56px;line-height:.98;letter-spacing:-.055em;font-weight:900}.page-note p{margin:0;color:#79695d;font-size:16px;line-height:1.65;font-weight:550}.page-note .mini{display:flex;gap:10px;margin-top:22px}.page-note .mini span{border:1px solid #ead8bd;border-radius:16px;background:#fff;padding:13px 15px;font-size:12px;font-weight:800;color:#6a4a35}
+@keyframes pulse{0%,100%{box-shadow:0 16px 38px rgba(80,46,25,.28),0 0 0 0 rgba(232,189,115,.35)}55%{box-shadow:0 16px 38px rgba(80,46,25,.28),0 0 0 14px rgba(232,189,115,0)}}@keyframes in{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}@keyframes msg{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}@keyframes beam{to{left:105%}}@keyframes dot{0%,80%,100%{transform:scale(.6);opacity:.35}40%{transform:translateY(-3px) scale(1);opacity:1}}
+#kb-bubble{position:fixed;right:22px;bottom:22px;z-index:99998;width:76px;height:76px;border:0;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#f2c778,#8a5733 62%,#3b2418);color:#fff;animation:pulse 2.6s ease-in-out infinite;transition:.22s}#kb-bubble:hover{transform:translateY(-2px) scale(1.04)}#kb-bubble.hide{opacity:0;pointer-events:none;transform:scale(.84)}#kb-bubble svg{width:39px;filter:drop-shadow(0 5px 9px rgba(0,0,0,.25))}.cart-badge{position:absolute;right:-2px;top:3px;min-width:20px;height:20px;border-radius:999px;background:#22140d;color:#fff;font-size:10px;font-weight:900;display:grid;place-items:center;border:2px solid #fff}
+#kb-teaser{position:fixed;right:25px;bottom:112px;z-index:99997;width:292px;border:1px solid #ead8bd;border-radius:20px;border-bottom-right-radius:7px;background:#fffaf2;padding:15px 40px 15px 16px;box-shadow:0 18px 48px rgba(52,31,18,.18);opacity:0;pointer-events:none;transform:translateY(10px) scale(.95);transform-origin:bottom right;transition:.28s}#kb-teaser.show{opacity:1;pointer-events:auto;transform:none}#kb-teaser b{display:block;font-size:14px;font-weight:900;color:#2b1c13}#kb-teaser span{display:block;margin-top:4px;font-size:12.4px;line-height:1.43;color:#735e4e;font-weight:650}.tx{position:absolute;right:8px;top:8px;width:24px;height:24px;border:0;border-radius:50%;background:#f0e2cc;color:#7b604b;font-weight:900}
+#kb-widget{position:fixed;right:18px;bottom:16px;z-index:99999;width:410px;height:min(730px,calc(100dvh - 32px));border-radius:26px;background:#f7f8f6;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;border:1px solid #eedbc0;opacity:0;pointer-events:none;transform:translateY(18px) scale(.965);transform-origin:bottom right;transition:.26s cubic-bezier(.2,.82,.2,1)}#kb-widget.open{opacity:1;pointer-events:auto;transform:none}.kb-head{height:68px;flex:0 0 68px;position:relative;display:flex;align-items:center;gap:10px;padding:12px 13px;color:#fff;background:linear-gradient(115deg,#5a341f,#a36439 70%,#ff9956);overflow:hidden}.kb-head:after{content:"";position:absolute;left:-45%;bottom:0;width:42%;height:3px;background:linear-gradient(90deg,transparent,#fff0c7,transparent);animation:beam 2.8s ease-in-out infinite alternate}.brand{position:relative;z-index:1;display:flex;align-items:center;gap:10px;min-width:0;flex:1}.brand-logo{width:42px;height:42px;border-radius:15px;background:#fff1d8;color:#5a341f;display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.7)}.brand-logo svg{width:25px}.brand b{display:block;font-size:15px;line-height:1.06;font-weight:900}.brand span{display:flex;align-items:center;gap:6px;margin-top:4px;color:rgba(255,255,255,.86);font-size:11px;font-weight:800}.live{width:7px;height:7px;border-radius:50%;background:#83ffc6;box-shadow:0 0 10px rgba(131,255,198,.8)}.h-actions{z-index:1;display:flex;gap:8px}.hbtn{width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.9);color:#5a341f;font-size:18px;font-weight:900}.hbtn.close{background:rgba(255,255,255,.20);color:#fff}
+.mode-tabs{height:54px;flex:0 0 54px;padding:14px 13px 7px;background:#fff;display:grid;grid-template-columns:1fr 1fr;gap:8px}.mode-tabs button{height:36px;border:0;border-radius:999px;background:#eeeeed;color:#5f5b58;font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center;gap:8px}.mode-tabs button.active{background:linear-gradient(135deg,var(--green),#358d84);color:#fff;box-shadow:0 8px 18px rgba(47,130,120,.22)}.mode-tabs svg{width:15px;height:15px}
+.calc{min-height:0;flex:1;display:flex;flex-direction:column;background:linear-gradient(180deg,#fff,#f7f8f6)}.chat{min-height:0;flex:1;display:none;flex-direction:column;background:linear-gradient(180deg,#fff,#f7f8f6)}#kb-widget.chatmode .calc{display:none}#kb-widget.chatmode .chat{display:flex}.progress-row{height:46px;flex:0 0 46px;display:flex;align-items:center;gap:10px;padding:8px 13px;background:#fff}.back{width:31px;height:31px;border:1px solid #edf0ed;border-radius:50%;background:#fff;color:#7b706a;font-size:17px;font-weight:900}.step-pill{height:21px;min-width:35px;border-radius:999px;background:var(--green);color:#fff;display:grid;place-items:center;font-size:11px;font-weight:900}.bars{flex:1;display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.bar{height:6px;border-radius:999px;background:#dddeda}.bar.on{background:var(--green)}.step-count{font-size:11px;color:#ff6e34;font-weight:900}.body{flex:1;min-height:0;overflow:auto;padding:0 13px 12px}.body.no-scroll{overflow:hidden}.body::-webkit-scrollbar{width:4px}.body::-webkit-scrollbar-thumb{background:#d7c8b7;border-radius:999px}.q h2{margin:0;color:#224a46;font-size:18px;line-height:1.1;font-weight:900;letter-spacing:-.02em}.q p{margin:4px 0 10px;color:#69605a;font-size:12.3px;font-weight:600}.notice{height:auto;min-height:42px;border:1px solid #bfe8da;border-radius:12px;background:#ddf7eb;display:flex;align-items:center;gap:10px;padding:9px 11px;margin:0 0 16px;color:#27645d;font-size:11.2px;font-weight:850}.notice i{width:28px;height:28px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:900;flex:0 0 28px}.card-list{display:grid;gap:10px}.choice{position:relative;min-height:112px;border:1px solid #e4e5df;border-radius:18px;background:#fff;display:grid;grid-template-columns:110px 1fr 58px;overflow:hidden;text-align:left;padding:0;box-shadow:0 6px 16px rgba(30,25,20,.04);transition:.16s}.choice:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(30,25,20,.08)}.choice.selected{border-color:#18b896;box-shadow:0 0 0 2px rgba(24,184,150,.25),0 12px 24px rgba(30,25,20,.08)}.choice.selected:before{content:"✓";position:absolute;left:10px;top:10px;width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:900;z-index:2}.pic{background:linear-gradient(145deg,#edf7f1,#e9eee9);display:grid;place-items:center;color:#6f4c36}.pic svg{width:48px;height:48px;opacity:.86}.choice-mid{align-self:center;padding:12px 12px 12px 15px}.choice-mid b{display:block;color:#3b3938;font-size:16px;line-height:1.12;font-weight:900}.choice-mid span{display:block;margin-top:5px;color:#6f6863;font-size:12px;line-height:1.28;font-weight:600}.price{align-self:center;justify-self:center;color:#287b73;text-align:right;font-size:14px;font-weight:900;padding-right:12px}.price small{display:block;margin-top:2px;color:#ff6e34;font-size:10px;font-weight:900}.footer{height:58px;flex:0 0 58px;padding:8px 13px 12px;background:#fff;border-top:1px solid #e7e8e3}.next{width:100%;height:44px;border:0;border-radius:20px;background:linear-gradient(135deg,var(--green),#76bdb4);color:#fff;font-size:14px;font-weight:900;box-shadow:0 9px 18px rgba(47,130,120,.18)}.next:disabled{opacity:.48;box-shadow:none;cursor:not-allowed}.next.alt{background:linear-gradient(135deg,#5a341f,#c89146)}
+.summary{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:12px}.sum{border:1px solid #ead8bd;border-radius:14px;background:#fff;padding:9px}.sum span{display:block;color:#7b6b5e;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.07em}.sum b{display:block;margin-top:3px;color:#31241a;font-size:12.5px;font-weight:900}.product{border:1px solid #e5d0ad;border-radius:22px;background:linear-gradient(180deg,#fffdf8,#fff5e5);padding:13px;box-shadow:var(--soft)}.product-top{display:grid;grid-template-columns:92px 1fr;gap:12px}.bag{height:124px;border-radius:20px;background:linear-gradient(155deg,#26170f,#5a341f 58%,#c89146);position:relative;color:#fff;box-shadow:0 14px 25px rgba(52,31,18,.18)}.bag:before{content:"KB";position:absolute;left:14px;top:14px;font-size:22px;font-weight:900;color:#f9dfa9}.bag:after{content:attr(data-pack);position:absolute;right:9px;bottom:9px;border-radius:999px;background:rgba(255,255,255,.16);padding:5px 8px;font-size:10px;font-weight:900}.prod-copy small{display:inline-flex;border-radius:999px;background:#f3e2c7;color:#6a452c;padding:5px 8px;font-size:9.5px;font-weight:900;text-transform:uppercase}.prod-copy h3{margin:8px 0 5px;color:#2f241d;font-size:23px;line-height:1;font-weight:900;letter-spacing:-.03em}.prod-copy p{margin:0;color:#6b625d;font-size:12px;line-height:1.38;font-weight:600}.meters{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:11px}.meter{border:1px solid var(--line);border-radius:13px;background:#fff;padding:8px}.meter span{display:block;color:#75685f;font-size:9px;font-weight:900;text-transform:uppercase}.meter i{display:block;height:6px;border-radius:999px;margin-top:6px;background:linear-gradient(90deg,#5a341f var(--w),#ead8bd var(--w))}.buy{margin-top:11px;border:1px solid #e5c99c;border-radius:17px;background:#fff;padding:10px}.buyrow{display:flex;align-items:center;justify-content:space-between;gap:10px}.total span{display:block;color:#75685f;font-size:9px;font-weight:900;text-transform:uppercase}.total b{display:block;color:#2f241d;font-size:23px;font-weight:900}.qty{display:inline-flex;align-items:center;border:1px solid #dec197;border-radius:999px;overflow:hidden;background:#fff}.qty button{width:30px;height:30px;border:0;background:#fff;color:#5a341f;font-weight:900}.qty b{min-width:28px;text-align:center;font-size:13px}.toggle{width:100%;margin-top:8px;height:36px;border:1px solid #e7d2ae;border-radius:13px;background:#fffaf0;color:#61422e;font-size:11.5px;font-weight:850}.toggle.on{border-color:#c89146;background:#fff0d5;color:#3b2418}.ship{margin-top:10px;border:1px solid #e6d1ad;border-radius:14px;background:#fffdf8;padding:9px}.ship div{display:flex;justify-content:space-between;color:#6d625a;font-size:10.7px;font-weight:800}.ship b{color:#2f241d}.ship i{display:block;height:7px;border-radius:999px;margin-top:7px;background:linear-gradient(90deg,#5a341f var(--w),#ead8bd var(--w))}.alts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.altcard{border:1px solid var(--line);border-radius:14px;background:#fff;padding:9px}.altcard span{display:block;color:#76685d;font-size:8.8px;font-weight:900;text-transform:uppercase}.altcard b{display:block;margin-top:3px;color:#30241b;font-size:12px;line-height:1.15}.lead{display:grid;gap:8px}.lead input,.lead textarea{width:100%;border:1px solid #e0ddd4;border-radius:13px;background:#fff;height:40px;padding:0 11px;outline:0;color:#30241b;font-size:13px;font-weight:650}.lead textarea{height:66px;padding:9px 11px;resize:none}.lead input:focus,.lead textarea:focus{border-color:#c89146;box-shadow:0 0 0 3px rgba(200,145,70,.14)}.row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}.cons{display:flex;gap:8px;color:#6d625a;font-size:10.4px;line-height:1.3;font-weight:650}.cons input{width:16px;height:16px;accent-color:var(--green)}.status{display:none;border-radius:12px;padding:8px 10px;font-size:11px;font-weight:850}.status.show{display:block}.status.err{border:1px solid #f0bba9;background:#fff0ea;color:#a94132}.status.ok{border:1px solid #bddfc8;background:#eef9f0;color:#307644}.chat-msgs{flex:1;min-height:0;overflow:auto;padding:12px 13px;display:flex;flex-direction:column;gap:9px}.msg{display:flex;gap:8px;align-items:flex-end;animation:msg .22s ease both}.msg.me{justify-content:flex-end}.av{width:30px;height:30px;border-radius:50%;background:#5a341f;color:#f5d9a3;display:grid;place-items:center;flex:0 0 30px}.mb{max-width:82%;border:1px solid #e7e3d8;border-radius:17px;border-bottom-left-radius:6px;background:#fff;padding:10px 12px;color:#30241b;font-size:12.8px;line-height:1.45;font-weight:600}.msg.me .av{display:none}.msg.me .mb{background:#5a341f;color:#fff;border-color:#5a341f;border-bottom-left-radius:17px;border-bottom-right-radius:6px}.chat-chips{display:flex;flex-wrap:wrap;gap:7px;padding:0 13px 10px}.chip{border:1px solid #e0d5c5;border-radius:999px;background:#fff;padding:8px 11px;color:#4b3526;font-size:11.4px;font-weight:850}.chat-in{display:flex;gap:8px;padding:8px 13px 12px;border-top:1px solid #e7e8e3;background:#fff}.chat-in input{flex:1;height:40px;border:1px solid #dedbd3;border-radius:14px;padding:0 11px;outline:0}.send{width:42px;border:0;border-radius:14px;background:#5a341f;color:#fff;font-size:18px;font-weight:900}.cart-list{display:grid;gap:10px}.cart-item{border:1px solid #e1ded6;border-radius:16px;background:#fff;padding:10px;display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center}.mini-bag{width:44px;height:48px;border-radius:14px;background:linear-gradient(155deg,#26170f,#5a341f 60%,#c89146)}.cart-item b{display:block;color:#30241b;font-size:13px}.cart-item span{display:block;margin-top:3px;color:#73685f;font-size:11px}.cart-item strong{font-size:13px;color:#30241b}.empty{border:1px dashed #d7c7ad;border-radius:18px;background:#fffaf1;padding:18px;text-align:center;color:#6d625a}.empty b{display:block;font-size:19px;color:#30241b;margin-bottom:4px}.hide{display:none!important}
+@media(max-width:720px){.page-note{display:none}#kb-widget{inset:0;width:100%;height:100dvh;border-radius:0;border:0;transform:translateY(100%)}#kb-widget.open{transform:none}#kb-bubble{right:16px;bottom:16px}#kb-teaser{right:16px;bottom:104px}.kb-head{height:68px}.body{padding-left:11px;padding-right:11px}.choice{grid-template-columns:86px 1fr 50px;min-height:104px}.pic svg{width:38px}.prod-copy h3{font-size:20px}.row2{grid-template-columns:1fr}.page-note{position:static}}
+@media(max-height:700px) and (min-width:721px){#kb-widget{height:calc(100dvh - 18px);bottom:9px}.choice{min-height:96px}.notice{margin-bottom:9px}.product-top{grid-template-columns:78px 1fr}.bag{height:104px}.meters,.alts{display:none}.body{padding-bottom:8px}.footer{height:54px;padding-bottom:9px}}
 
-      --green: #0f3d33;
-      --green-deep: #0a2c25;
-      --green-2: #1c6a55;
-      --mint: #e7f4ec;
-      --cream: #f7f2e9;
-      --paper: #ffffff;
-      --line: #ebe3d6;
-      --ink: #1c1b18;
-      --muted: #7a7d76;
-      --gold: #c9974c;
-      --gold-soft: #f3e5cd;
-      --red: #b94a3d;
 
-      --shadow: 0 24px 70px rgba(12, 24, 20, .26);
-      --shadow-soft: 0 12px 32px rgba(12, 24, 20, .10);
-      --radius: 14px;
-      --radius-sm: 10px;
+/* ===== V9 clean Beano bot fix: normal premium coffee avatar ===== */
+#kb-bubble{
+  background:linear-gradient(145deg,#fff5e6 0%,#e8bd73 58%,#7b4a2e 100%);
+  overflow:visible;
+}
+#kb-bubble svg{display:none}
+.brand-logo{
+  background:linear-gradient(145deg,#fff7e9,#eac176);
+  overflow:visible;
+}
+.brand-logo svg{display:none}
 
-      --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-      --font-display: "Fraunces", Georgia, serif;
-    }
+.cart-badge{
+  display:none;
+  right:-4px;
+  top:0;
+  z-index:4;
+  background:#21120b;
+  border-color:#fff7ec;
+}
+.cart-badge.show{display:grid}
+.cart-badge.pop{animation:pop .32s ease}
 
-    * { box-sizing: border-box; }
-    html, body { min-height: 100%; }
-    body {
-      margin: 0;
-      font-family: var(--font);
-      color: var(--ink);
-      background:
-        linear-gradient(90deg, rgba(10,44,37,.94), rgba(10,44,37,.70) 48%, rgba(10,44,37,.42)),
-        url("https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1800&q=82") center / cover fixed,
-        #0a2c25;
-    }
-    button, input, textarea, select { font: inherit; }
-    button { -webkit-tap-highlight-color: transparent; }
-    a { color: inherit; }
+.buddy{
+  position:relative;
+  width:42px;
+  height:42px;
+  display:grid;
+  place-items:center;
+  transform-origin:50% 78%;
+  filter:drop-shadow(0 8px 13px rgba(38,22,12,.18));
+}
+.bubble-bot{width:60px;height:60px}
+.mini-bot{width:38px;height:38px}
 
-    ::selection { background: rgba(201,151,76,.35); }
+.clean-bot .cup{
+  position:relative;
+  width:30px;
+  height:25px;
+  border-radius:8px 8px 12px 12px;
+  background:linear-gradient(145deg,#fffaf2 0%,#f2d8aa 52%,#d59c50 100%);
+  border:2px solid rgba(76,45,27,.24);
+  box-shadow:
+    inset 0 2px 4px rgba(255,255,255,.72),
+    inset 0 -5px 9px rgba(91,54,31,.10),
+    0 7px 14px rgba(45,25,14,.15);
+  z-index:2;
+}
+.bubble-bot .cup{width:40px;height:33px;border-radius:10px 10px 15px 15px}
+.mini-bot .cup{width:28px;height:23px;border-radius:7px 7px 11px 11px}
 
-    @keyframes kbPulse {
-      0%, 100% { box-shadow: 0 16px 34px rgba(10,44,37,.35), 0 0 0 0 rgba(231,244,236,.35); }
-      55% { box-shadow: 0 16px 34px rgba(10,44,37,.35), 0 0 0 16px rgba(231,244,236,0); }
-    }
-    @keyframes kbIn {
-      from { opacity: 0; transform: translateY(16px) scale(.97); }
-      to { opacity: 1; transform: none; }
-    }
-    @keyframes kbMsg {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: none; }
-    }
-    @keyframes kbDot {
-      0%, 80%, 100% { opacity: .3; transform: translateY(0); }
-      40% { opacity: 1; transform: translateY(-3px); }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
-    }
+.clean-bot .cup:before{
+  content:"";
+  position:absolute;
+  left:5px;
+  right:5px;
+  top:4px;
+  height:6px;
+  border-radius:999px;
+  background:linear-gradient(90deg,#6b3f25,#3a2115);
+  opacity:.88;
+}
+.bubble-bot .cup:before{top:5px;height:7px}
 
-    /* ------- demo hero ------- */
-    .demo {
-      min-height: 100dvh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: clamp(22px, 4vw, 48px);
-      isolation: isolate;
-    }
-    .demo-shell {
-      width: min(1120px, 100%);
-      display: grid;
-      grid-template-columns: minmax(0, .95fr) minmax(360px, 1.05fr);
-      gap: clamp(22px, 4vw, 46px);
-      align-items: center;
-    }
-    .demo-copy {
-      min-width: 0;
-    }
-    .demo-card {
-      width: 100%;
-      border: 1px solid rgba(255,255,255,.14);
-      border-radius: 20px;
-      padding: clamp(28px, 4vw, 44px);
-      background:
-        linear-gradient(160deg, rgba(255,255,255,.12), rgba(255,255,255,.045)),
-        rgba(10,44,37,.38);
-      color: #fff;
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      box-shadow: var(--shadow);
-    }
-    .demo-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      min-height: 30px;
-      border: 1px solid rgba(201,151,76,.45);
-      border-radius: 999px;
-      padding: 0 13px;
-      color: #ecd9b6;
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: .14em;
-      text-transform: uppercase;
-    }
-    .demo-eyebrow::before {
-      content: "";
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--gold);
-    }
-    .demo-card h1 {
-      margin: 18px 0 12px;
-      font-family: var(--font-display);
-      font-size: clamp(38px, 6.2vw, 72px);
-      line-height: .98;
-      font-weight: 600;
-      letter-spacing: 0;
-    }
-    .demo-card h1 em {
-      font-style: italic;
-      color: #ecd9b6;
-    }
-    .demo-card p {
-      margin: 0;
-      max-width: 54ch;
-      color: rgba(255,255,255,.78);
-      font-size: 16px;
-      line-height: 1.72;
-      font-weight: 450;
-    }
-    .demo-actions {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 12px;
-      margin-top: 24px;
-    }
-    .demo-btn {
-      min-height: 46px;
-      border: 0;
-      border-radius: 999px;
-      padding: 0 20px;
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      background: linear-gradient(150deg, #fdf8ee, #f0e4cc);
-      color: var(--green-deep);
-      font-weight: 650;
-      font-size: 14px;
-      cursor: pointer;
-      transition: transform .18s ease, box-shadow .18s ease;
-      box-shadow: 0 10px 24px rgba(0,0,0,.22);
-    }
-    .demo-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(0,0,0,.28); }
-    .demo-btn.secondary {
-      border: 1px solid rgba(255,255,255,.25);
-      background: transparent;
-      color: #fff;
-      box-shadow: none;
-    }
-    .demo-btn.secondary:hover { background: rgba(255,255,255,.08); }
-    .demo-btn svg { width: 17px; height: 17px; }
-    .demo-note {
-      margin-top: 22px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(255,255,255,.12);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 22px;
-      color: rgba(255,255,255,.55);
-      font-size: 12px;
-      font-weight: 500;
-    }
-    .demo-note span { display: inline-flex; align-items: center; gap: 7px; }
-    .demo-note svg { width: 14px; height: 14px; color: var(--gold); flex: 0 0 14px; }
+.cup-handle{
+  position:absolute;
+  right:-9px;
+  top:7px;
+  width:13px;
+  height:12px;
+  border:3px solid rgba(114,70,43,.55);
+  border-left:0;
+  border-radius:0 10px 10px 0;
+  background:transparent;
+}
+.bubble-bot .cup-handle{right:-11px;top:9px;width:15px;height:15px}
+.mini-bot .cup-handle{right:-8px;top:6px;width:11px;height:11px;border-width:2px}
 
-    .demo-stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 24px;
-    }
-    .demo-stat {
-      min-height: 92px;
-      border: 1px solid rgba(255,255,255,.14);
-      border-radius: 14px;
-      padding: 14px 13px;
-      background: rgba(255,255,255,.075);
-    }
-    .demo-stat strong {
-      display: block;
-      color: #f7e4bd;
-      font-family: var(--font-display);
-      font-size: 28px;
-      line-height: 1;
-      font-weight: 650;
-    }
-    .demo-stat span {
-      display: block;
-      margin-top: 8px;
-      color: rgba(255,255,255,.68);
-      font-size: 11.4px;
-      line-height: 1.45;
-      font-weight: 520;
-    }
-    .demo-visual {
-      position: relative;
-      min-height: 650px;
-      border: 1px solid rgba(255,255,255,.16);
-      border-radius: 20px;
-      overflow: hidden;
-      color: #fff;
-      background:
-        linear-gradient(180deg, rgba(10,44,37,.10), rgba(10,44,37,.88)),
-        url("https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=82") center / cover;
-      box-shadow: var(--shadow);
-    }
-    .demo-visual::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(90deg, rgba(255,255,255,.10) 0 1px, transparent 1px 100%),
-        linear-gradient(180deg, rgba(255,255,255,.08) 0 1px, transparent 1px 100%);
-      background-size: 58px 58px;
-      mask-image: linear-gradient(180deg, transparent, #000 22%, #000 82%, transparent);
-      opacity: .26;
-      pointer-events: none;
-    }
-    .demo-visual::after {
-      content: "";
-      position: absolute;
-      inset: auto 0 0;
-      height: 56%;
-      background: linear-gradient(180deg, transparent, rgba(10,44,37,.95));
-      pointer-events: none;
-    }
-    .visual-topbar {
-      position: absolute;
-      left: 22px;
-      right: 22px;
-      top: 22px;
-      z-index: 2;
-      min-height: 52px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      border: 1px solid rgba(255,255,255,.16);
-      border-radius: 14px;
-      padding: 8px 10px 8px 14px;
-      background: rgba(10,44,37,.48);
-      backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-    }
-    .visual-brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      min-width: 0;
-    }
-    .visual-mark {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: #0a2c25;
-      background: #f2e3c6;
-      flex: 0 0 34px;
-    }
-    .visual-mark svg {
-      width: 18px;
-      height: 18px;
-    }
-    .visual-brand strong {
-      display: block;
-      overflow: hidden;
-      color: #fffaf1;
-      font-family: var(--font-display);
-      font-size: 16px;
-      line-height: 1.1;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-    .visual-text {
-      display: block;
-      min-width: 0;
-    }
-    .visual-text span {
-      display: block;
-      margin-top: 2px;
-      color: rgba(255,255,255,.64);
-      font-size: 10.5px;
-      font-weight: 650;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-    .visual-live {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      min-height: 30px;
-      border: 1px solid rgba(255,255,255,.14);
-      border-radius: 999px;
-      padding: 0 10px;
-      background: rgba(255,255,255,.08);
-      color: #e6f4eb;
-      font-size: 11px;
-      font-weight: 650;
-      white-space: nowrap;
-    }
-    .visual-live i {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #7fe8a8;
-      box-shadow: 0 0 10px rgba(127,232,168,.95);
-    }
-    .visual-content {
-      position: absolute;
-      left: 24px;
-      right: 24px;
-      bottom: 24px;
-      z-index: 2;
-      display: grid;
-      gap: 14px;
-    }
-    .visual-badge {
-      width: max-content;
-      max-width: 100%;
-      border: 1px solid rgba(242,227,198,.34);
-      border-radius: 999px;
-      padding: 7px 11px;
-      background: rgba(10,44,37,.55);
-      color: #f2e3c6;
-      font-size: 10px;
-      font-weight: 760;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-    }
-    .visual-title {
-      margin: 0;
-      max-width: 430px;
-      color: #fffaf1;
-      font-family: var(--font-display);
-      font-size: clamp(30px, 3.8vw, 44px);
-      line-height: 1.04;
-      font-weight: 650;
-      letter-spacing: 0;
-    }
-    .visual-subtitle {
-      margin: -4px 0 0;
-      max-width: 440px;
-      color: rgba(255,255,255,.72);
-      font-size: 13px;
-      line-height: 1.65;
-      font-weight: 480;
-    }
-    .visual-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 10px;
-      margin-top: 2px;
-    }
-    .visual-tile {
-      min-height: 106px;
-      border: 1px solid rgba(255,255,255,.15);
-      border-radius: 14px;
-      padding: 12px;
-      background: rgba(255,255,255,.10);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-    }
-    .visual-tile small {
-      display: block;
-      color: rgba(255,255,255,.56);
-      font-size: 10px;
-      font-weight: 750;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-    }
-    .visual-tile strong {
-      display: block;
-      margin-top: 11px;
-      color: #fffaf1;
-      font-family: var(--font-display);
-      font-size: 25px;
-      line-height: 1;
-      font-weight: 650;
-    }
-    .visual-tile span {
-      display: block;
-      margin-top: 8px;
-      color: rgba(255,255,255,.68);
-      font-size: 11px;
-      line-height: 1.35;
-      font-weight: 520;
-    }
-    .visual-mini {
-      position: absolute;
-      top: 110px;
-      right: 22px;
-      z-index: 2;
-      width: min(260px, calc(100% - 44px));
-      border: 1px solid rgba(255,255,255,.18);
-      border-radius: 16px;
-      padding: 14px;
-      background: rgba(255,255,255,.13);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      box-shadow: 0 18px 44px rgba(0,0,0,.24);
-    }
-    .visual-mini-head {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-    .visual-mini-head b {
-      color: #fffaf1;
-      font-size: 12px;
-      line-height: 1.3;
-      font-weight: 720;
-    }
-    .visual-mini-head span {
-      flex: 0 0 auto;
-      border-radius: 999px;
-      padding: 5px 8px;
-      background: #f2e3c6;
-      color: #0a2c25;
-      font-size: 10px;
-      font-weight: 800;
-    }
-    .visual-mini p {
-      margin: 9px 0 0;
-      color: rgba(255,255,255,.68);
-      font-size: 11.5px;
-      line-height: 1.5;
-    }
-    .visual-meter {
-      height: 7px;
-      margin-top: 12px;
-      border-radius: 999px;
-      overflow: hidden;
-      background: rgba(255,255,255,.18);
-    }
-    .visual-meter i {
-      display: block;
-      width: 94%;
-      height: 100%;
-      border-radius: inherit;
-      background: linear-gradient(90deg, #7fe8a8, #f2e3c6);
-    }
-    .visual-product {
-      position: absolute;
-      left: 28px;
-      top: 122px;
-      z-index: 2;
-      width: 118px;
-      min-height: 168px;
-      border: 1px solid rgba(242,227,198,.42);
-      border-radius: 16px;
-      display: grid;
-      align-content: end;
-      padding: 12px;
-      color: #f2e3c6;
-      background:
-        linear-gradient(155deg, rgba(75,47,34,.92), rgba(10,44,37,.94));
-      box-shadow: 0 20px 44px rgba(0,0,0,.32);
-    }
-    .visual-product::before {
-      content: "KB";
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      color: rgba(242,227,198,.88);
-      font-family: var(--font-display);
-      font-size: 28px;
-      font-weight: 700;
-    }
-    .visual-product span {
-      display: block;
-      color: rgba(255,255,255,.72);
-      font-size: 10px;
-      line-height: 1.35;
-      font-weight: 620;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-    }
-    .visual-product strong {
-      display: block;
-      margin-top: 4px;
-      color: #fffaf1;
-      font-family: var(--font-display);
-      font-size: 18px;
-      line-height: 1.08;
-      font-weight: 650;
-    }
+.plate{
+  position:absolute;
+  bottom:4px;
+  width:36px;
+  height:8px;
+  border-radius:999px;
+  background:linear-gradient(145deg,#fff7e8,#d6a762);
+  border:1px solid rgba(84,49,31,.16);
+  z-index:1;
+}
+.bubble-bot .plate{bottom:7px;width:48px;height:10px}
+.mini-bot .plate{bottom:4px;width:32px;height:7px}
 
-    /* ------- teaser ------- */
-    #kb-teaser {
-      position: fixed;
-      right: var(--teaser-right);
-      bottom: var(--teaser-bottom);
-      z-index: 2147483001;
-      width: var(--teaser-width);
-      min-height: var(--teaser-min-height);
-      border: 1px solid rgba(15,61,51,.10);
-      border-radius: 16px;
-      padding: 15px 16px 14px;
-      background: linear-gradient(170deg, #fffdf8, #faf4e9);
-      box-shadow: 0 20px 48px rgba(12,24,20,.22);
-      cursor: pointer;
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(10px) scale(.97);
-      transform-origin: right bottom;
-      transition: .26s cubic-bezier(.2,.8,.3,1);
-    }
-    #kb-teaser.show {
-      opacity: 1;
-      pointer-events: auto;
-      transform: none;
-    }
-    #kb-teaser b {
-      display: block;
-      padding-right: 24px;
-      color: var(--green);
-      font-family: var(--font-display);
-      font-size: 15.5px;
-      line-height: 1.22;
-      font-weight: 600;
-    }
-    #kb-teaser span {
-      display: block;
-      margin-top: 6px;
-      color: var(--muted);
-      font-size: 12px;
-      line-height: 1.5;
-      font-weight: 480;
-    }
-    .teaser-x {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      width: 24px;
-      height: 24px;
-      border: 0;
-      border-radius: 50%;
-      background: rgba(15,61,51,.07);
-      color: var(--green);
-      display: grid;
-      place-items: center;
-      cursor: pointer;
-      font-size: 14px;
-      line-height: 1;
-      transition: background .15s ease;
-    }
-    .teaser-x:hover { background: rgba(15,61,51,.14); }
+.cup-face{
+  position:absolute;
+  left:8px;
+  right:7px;
+  bottom:5px;
+  height:10px;
+}
+.bubble-bot .cup-face{left:11px;right:9px;bottom:7px}
+.mini-bot .cup-face{left:7px;right:6px;bottom:4px}
 
-    /* ------- launcher ------- */
-    #kb-launcher {
-      position: fixed;
-      right: var(--right-edge);
-      bottom: 0;
-      z-index: 2147483000;
-      width: var(--launcher-size);
-      height: var(--launcher-size);
-      border: 0;
-      background: transparent;
-      cursor: pointer;
-      display: grid;
-      place-items: center;
-      transition: opacity .18s ease, transform .18s ease;
-    }
-    #kb-launcher.hidden {
-      opacity: 0;
-      pointer-events: none;
-      transform: scale(.9);
-    }
-    .launcher-core {
-      width: 86px;
-      height: 86px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: #f6ecd8;
-      background:
-        radial-gradient(circle at 30% 25%, rgba(255,255,255,.22), transparent 40%),
-        linear-gradient(150deg, var(--green-2), var(--green-deep));
-      border: 1px solid rgba(246,236,216,.22);
-      animation: kbPulse 3.2s ease-in-out infinite;
-      transition: transform .18s ease;
-    }
-    #kb-launcher:hover .launcher-core { transform: scale(1.05); }
-    .launcher-core svg { width: 38px; height: 38px; }
+.eye{
+  position:absolute;
+  top:0;
+  width:3.5px;
+  height:4.5px;
+  border-radius:50%;
+  background:#2b1a11;
+}
+.eye.left{left:1px}
+.eye.right{right:1px}
+.bubble-bot .eye{width:4px;height:5px}
+.smile{
+  position:absolute;
+  left:50%;
+  top:5px;
+  width:10px;
+  height:6px;
+  transform:translateX(-50%);
+  border:2px solid #2b1a11;
+  border-top:0;
+  border-left-color:transparent;
+  border-right-color:transparent;
+  border-radius:0 0 999px 999px;
+}
+.bubble-bot .smile{top:6px;width:12px;height:7px}
 
-    /* ------- widget panel ------- */
-    #kb-widget {
-      position: fixed;
-      right: var(--right-edge);
-      bottom: 15px;
-      z-index: 2147483002;
-      width: min(var(--panel-width), calc(100vw - 30px));
-      height: min(var(--panel-height), calc(100dvh - 30px));
-      border: 1px solid rgba(15,61,51,.10);
-      border-radius: 20px;
-      display: none;
-      flex-direction: column;
-      overflow: hidden;
-      background: var(--paper);
-      box-shadow: var(--shadow);
-    }
-    #kb-widget.open {
-      display: flex;
-      animation: kbIn .26s cubic-bezier(.2,.8,.3,1) both;
-    }
+.steam{
+  position:absolute;
+  top:-4px;
+  width:5px;
+  height:15px;
+  border-radius:999px;
+  background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.88),rgba(255,255,255,0));
+  filter:blur(.2px);
+  opacity:.78;
+  animation:cleanSteam 2.2s ease-in-out infinite;
+}
+.s1{left:13px}
+.s2{left:20px;animation-delay:.35s}
+.s3{left:27px;animation-delay:.7s}
+.bubble-bot .steam{top:-4px;height:20px}
+.bubble-bot .s1{left:20px}
+.bubble-bot .s2{left:29px}
+.bubble-bot .s3{left:38px}
+.mini-bot .steam{height:12px;top:-3px}
+.mini-bot .s1{left:11px}
+.mini-bot .s2{left:18px}
+.mini-bot .s3{left:25px}
 
-    .kb-head {
-      min-height: 66px;
-      display: flex;
-      align-items: center;
-      gap: 11px;
-      padding: 13px 14px;
-      color: #fdf9f0;
-      background:
-        radial-gradient(circle at 88% 0%, rgba(201,151,76,.4), transparent 42%),
-        linear-gradient(150deg, var(--green), var(--green-deep));
-    }
-    .kb-logo {
-      width: 42px;
-      height: 42px;
-      flex: 0 0 42px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: #f2e3c6;
-      background: rgba(255,255,255,.10);
-      box-shadow: inset 0 0 0 1px rgba(242,227,198,.28);
-    }
-    .kb-logo svg { width: 23px; height: 23px; }
-    .kb-title { flex: 1; min-width: 0; }
-    .kb-title strong {
-      display: block;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      font-family: var(--font-display);
-      font-size: 16.5px;
-      line-height: 1.1;
-      font-weight: 600;
-      letter-spacing: .01em;
-    }
-    .kb-title span {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      margin-top: 4px;
-      color: rgba(253,249,240,.66);
-      font-size: 11px;
-      font-weight: 500;
-    }
-    .kb-online {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: #7fe8a8;
-      box-shadow: 0 0 8px rgba(127,232,168,.9);
-    }
-    .kb-close {
-      width: 34px;
-      height: 34px;
-      border: 0;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: #fdf9f0;
-      background: rgba(255,255,255,.10);
-      cursor: pointer;
-      transition: background .15s ease;
-    }
-    .kb-close:hover { background: rgba(255,255,255,.2); }
-    .kb-close svg { width: 17px; height: 17px; }
+@keyframes cleanSteam{
+  0%{opacity:0;transform:translateY(8px) scaleX(.72)}
+  35%{opacity:.78}
+  100%{opacity:0;transform:translateY(-9px) scaleX(1.08)}
+}
+@keyframes botNod{
+  0%{transform:translateY(0) rotate(0)}
+  36%{transform:translateY(-4px) rotate(-4deg)}
+  70%{transform:translateY(1px) rotate(3deg)}
+  100%{transform:translateY(0) rotate(0)}
+}
+@keyframes botCart{
+  0%{transform:scale(1) rotate(0)}
+  42%{transform:scale(1.10) rotate(5deg)}
+  100%{transform:scale(1) rotate(0)}
+}
+.buddy.move{animation:botNod .38s cubic-bezier(.2,.9,.2,1)}
+.buddy[data-mood="cart"].move{animation:botCart .42s ease}
+.buddy[data-mood="cart"] .cup{
+  background:linear-gradient(145deg,#fff9ed 0%,#f0c880 52%,#c89146 100%);
+}
+.buddy[data-mood="pick"] .cup{
+  background:linear-gradient(145deg,#fffaf2 0%,#f4dfb9 52%,#d8a45a 100%);
+}
+.buddy[data-mood="result"] .cup{
+  background:linear-gradient(145deg,#fff7e9 0%,#ecc377 52%,#b8793f 100%);
+}
 
-    .kb-status {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 10px;
-      align-items: center;
-      padding: 10px 16px;
-      border-bottom: 1px solid var(--line);
-      background: #fdfaf4;
-    }
-    .kb-track {
-      height: 5px;
-      border-radius: 999px;
-      overflow: hidden;
-      background: #ece4d4;
-    }
-    .kb-fill {
-      width: 0%;
-      height: 100%;
-      border-radius: inherit;
-      background: linear-gradient(90deg, var(--green-2), var(--gold));
-      transition: width .3s ease;
-    }
-    .kb-step-label {
-      color: var(--green);
-      font-size: 10.5px;
-      font-weight: 650;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
+.buddy-tip{
+  display:grid;
+  grid-template-columns:44px 1fr;
+  gap:10px;
+  align-items:center;
+  margin:0 0 10px;
+  padding:9px 10px;
+  border:1px solid #ead8bd;
+  border-radius:17px;
+  background:linear-gradient(145deg,#fffdf8,#fff1dc);
+  box-shadow:0 7px 16px rgba(52,31,18,.045);
+}
+.buddy-tip .buddy{width:40px;height:40px}
+.buddy-tip b{display:block;color:#463225;font-size:12.8px;font-weight:900}
+.buddy-tip span{display:block;margin-top:2px;color:#76685d;font-size:11px;line-height:1.25;font-weight:700}
 
-    .kb-body {
-      flex: 1;
-      min-height: 0;
-      overflow: auto;
-      padding: 14px;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,.95), rgba(247,242,233,.96)),
-        linear-gradient(90deg, rgba(15,61,51,.035) 0 1px, transparent 1px 100%),
-        linear-gradient(180deg, rgba(15,61,51,.03) 0 1px, transparent 1px 100%);
-      background-size: auto, 34px 34px, 34px 34px;
-      scroll-behavior: smooth;
-    }
-    .kb-body::-webkit-scrollbar {
-      width: 9px;
-    }
-    .kb-body::-webkit-scrollbar-track {
-      background: transparent;
-    }
-    .kb-body::-webkit-scrollbar-thumb {
-      border: 3px solid transparent;
-      border-radius: 999px;
-      background: rgba(15,61,51,.22);
-      background-clip: padding-box;
-    }
-    .kb-card {
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 16px;
-      background: #fff;
-      box-shadow: var(--shadow-soft);
-      animation: kbMsg .24s ease both;
-    }
-    .kb-card + .kb-card,
-    .kb-card + div,
-    div + .kb-card { margin-top: 10px; }
-    .kb-kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      min-height: 24px;
-      border-radius: 999px;
-      padding: 0 10px;
-      background: var(--mint);
-      color: var(--green);
-      font-size: 10px;
-      font-weight: 650;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-    }
-    .kb-card h2,
-    .kb-card h3 {
-      margin: 11px 0 6px;
-      color: var(--ink);
-      font-family: var(--font-display);
-      font-size: 20px;
-      line-height: 1.18;
-      font-weight: 600;
-    }
-    .kb-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 12.8px;
-      line-height: 1.55;
-      font-weight: 450;
-    }
-    .kb-card.featured {
-      position: relative;
-      overflow: hidden;
-      border-color: rgba(201,151,76,.34);
-      background:
-        linear-gradient(165deg, #fffdf8, #fbf1de);
-    }
-    .kb-card.featured::after {
-      content: "";
-      position: absolute;
-      inset: 0 0 auto;
-      height: 4px;
-      background: linear-gradient(90deg, var(--green-2), var(--gold));
-    }
-    .kb-panel-intro {
-      display: grid;
-      gap: 12px;
-    }
-    .kb-hero-row {
-      display: grid;
-      grid-template-columns: 48px 1fr;
-      gap: 12px;
-      align-items: start;
-    }
-    .kb-avatar {
-      width: 48px;
-      height: 48px;
-      border-radius: 15px;
-      display: grid;
-      place-items: center;
-      color: #f6ecd8;
-      background:
-        radial-gradient(circle at 35% 20%, rgba(255,255,255,.24), transparent 38%),
-        linear-gradient(145deg, var(--green-2), var(--green-deep));
-      box-shadow: inset 0 0 0 1px rgba(246,236,216,.2), 0 12px 22px rgba(10,44,37,.18);
-    }
-    .kb-avatar svg {
-      width: 26px;
-      height: 26px;
-    }
-    .kb-insight-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 8px;
-      margin-top: 12px;
-    }
-    .kb-insight {
-      min-height: 78px;
-      border: 1px solid rgba(15,61,51,.10);
-      border-radius: 12px;
-      padding: 10px;
-      background: #fff;
-    }
-    .kb-insight b {
-      display: block;
-      color: var(--green);
-      font-family: var(--font-display);
-      font-size: 19px;
-      line-height: 1;
-      font-weight: 700;
-    }
-    .kb-insight span {
-      display: block;
-      margin-top: 7px;
-      color: #73776f;
-      font-size: 10.2px;
-      line-height: 1.35;
-      font-weight: 560;
-    }
-    .kb-flow-map {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 5px;
-      margin-top: 13px;
-    }
-    .kb-flow-node {
-      min-height: 42px;
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      display: grid;
-      place-items: center;
-      padding: 6px 4px;
-      background: #fff;
-      color: #8a8d86;
-      font-size: 9px;
-      font-weight: 720;
-      line-height: 1.2;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: .04em;
-    }
-    .kb-flow-node.done {
-      border-color: rgba(28,106,85,.22);
-      background: var(--mint);
-      color: var(--green);
-    }
-    .kb-flow-node.active {
-      border-color: rgba(201,151,76,.55);
-      background: var(--gold-soft);
-      color: #8a6425;
-      box-shadow: 0 7px 15px rgba(201,151,76,.16);
-    }
-    .kb-question-head {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 12px;
-    }
-    .kb-question-head .kb-kicker {
-      flex: 0 0 auto;
-    }
-    .kb-mini-note {
-      margin-top: 11px;
-      border: 1px dashed rgba(15,61,51,.18);
-      border-radius: 12px;
-      padding: 10px 11px;
-      background: #f8fbf8;
-      color: #5f665f;
-      font-size: 11px;
-      line-height: 1.45;
-      font-weight: 520;
-    }
-    .kb-mini-note b {
-      color: var(--green);
-      font-weight: 720;
-    }
-    .kb-recommendation {
-      position: relative;
-      overflow: hidden;
-      border: 1px solid rgba(201,151,76,.45);
-      border-radius: 16px;
-      padding: 15px;
-      background:
-        linear-gradient(160deg, rgba(255,255,255,.96), rgba(251,244,230,.96)),
-        #fff;
-      box-shadow: 0 16px 34px rgba(12,24,20,.12);
-      animation: kbMsg .24s ease both;
-    }
-    .kb-recommendation::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--gold), var(--green-2));
-    }
-    .kb-result-summary {
-      display: grid;
-      gap: 10px;
-    }
-    .kb-score-card {
-      display: grid;
-      grid-template-columns: 74px 1fr;
-      gap: 12px;
-      align-items: center;
-      border: 1px solid rgba(15,61,51,.12);
-      border-radius: 14px;
-      padding: 12px;
-      background: #fff;
-    }
-    .kb-score-ring {
-      width: 74px;
-      height: 74px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: var(--green);
-      font-family: var(--font-display);
-      font-size: 20px;
-      font-weight: 750;
-      background:
-        radial-gradient(circle at center, #fff 0 55%, transparent 57%),
-        conic-gradient(var(--green-2) 0 84%, #ece4d4 84% 100%);
-    }
-    .kb-score-card b {
-      display: block;
-      color: var(--ink);
-      font-size: 13px;
-      line-height: 1.35;
-      font-weight: 720;
-    }
-    .kb-score-card span {
-      display: block;
-      margin-top: 4px;
-      color: var(--muted);
-      font-size: 11px;
-      line-height: 1.45;
-      font-weight: 480;
-    }
-    .kb-value-strip {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 7px;
-      margin-top: 11px;
-    }
-    .kb-value {
-      border: 1px solid rgba(15,61,51,.10);
-      border-radius: 11px;
-      padding: 9px;
-      background: #fff;
-    }
-    .kb-value small {
-      display: block;
-      color: #8a8d86;
-      font-size: 9px;
-      font-weight: 760;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-    .kb-value strong {
-      display: block;
-      margin-top: 5px;
-      color: var(--green);
-      font-size: 11px;
-      line-height: 1.25;
-      font-weight: 720;
-    }
+.choice.selected{
+  border-color:#c89146;
+  box-shadow:0 0 0 2px rgba(200,145,70,.24),0 13px 28px rgba(52,31,18,.10);
+}
+.choice.selected:before{background:linear-gradient(145deg,#c89146,#7a4a2c)}
+.choice:active{transform:scale(.992)}
+.choice:hover .pic svg{transform:translateY(-1px) scale(1.05)}
+.pic svg{transition:.18s}
 
-    .kb-options {
-      display: grid;
-      gap: 8px;
-      margin-top: 13px;
-    }
-    .kb-option {
-      width: 100%;
-      border: 1px solid var(--line);
-      border-radius: var(--radius-sm);
-      padding: 11px 12px;
-      display: grid;
-      grid-template-columns: 34px 1fr auto;
-      gap: 11px;
-      align-items: center;
-      text-align: left;
-      background: #fff;
-      cursor: pointer;
-      transition: border-color .15s ease, background .15s ease, transform .15s ease, box-shadow .15s ease;
-    }
-    .kb-option:hover {
-      border-color: rgba(28,106,85,.45);
-      background: #f8fbf8;
-      transform: translateY(-1px);
-      box-shadow: 0 8px 18px rgba(12,24,20,.07);
-    }
-    .kb-option i {
-      width: 34px;
-      height: 34px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      color: var(--green);
-      background: var(--mint);
-      font-style: normal;
-      font-family: var(--font-display);
-      font-size: 14px;
-      font-weight: 600;
-    }
-    .kb-option b {
-      display: block;
-      color: var(--ink);
-      font-size: 13.2px;
-      font-weight: 620;
-    }
-    .kb-option span span {
-      display: block;
-      margin-top: 3px;
-      color: var(--muted);
-      font-size: 11.4px;
-      line-height: 1.4;
-      font-weight: 450;
-    }
-    .kb-option::after {
-      content: "›";
-      grid-column: 3;
-      color: #c9c2b3;
-      font-size: 18px;
-      font-weight: 500;
-      transition: transform .15s ease, color .15s ease;
-    }
-    .kb-option:hover::after {
-      color: var(--green-2);
-      transform: translateX(2px);
-    }
+.mode-tabs button{gap:7px}
+.chat-msgs .av{
+  background:linear-gradient(145deg,#fff0d2,#d69a50);
+  color:#5a341f;
+}
+.empty b:before{
+  content:"";
+  display:block;
+  width:42px;
+  height:42px;
+  margin:0 auto 8px;
+  border-radius:14px;
+  background:linear-gradient(145deg,#fff7e8,#d6a762);
+  border:1px solid rgba(84,49,31,.16);
+}
 
-    .kb-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 13px;
-    }
-    .kb-btn {
-      min-height: 38px;
-      border: 0;
-      border-radius: 999px;
-      padding: 0 16px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 7px;
-      background: var(--green);
-      color: #fdf9f0;
-      cursor: pointer;
-      font-size: 12.5px;
-      font-weight: 620;
-      transition: background .15s ease, transform .15s ease;
-    }
-    .kb-btn:hover { background: var(--green-2); transform: translateY(-1px); }
-    .kb-btn.alt {
-      border: 1px solid var(--line);
-      background: #fff;
-      color: var(--green);
-    }
-    .kb-btn.alt:hover { background: var(--mint); }
-    .kb-btn.warn { background: var(--red); }
+@media(max-height:720px) and (min-width:521px){
+  .buddy-tip{display:none}
+}
 
-    /* typing indicator */
-    .kb-typing {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 10px 16px;
-      background: #fff;
-      box-shadow: var(--shadow-soft);
-      animation: kbMsg .2s ease both;
-    }
-    .kb-typing i {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: var(--green-2);
-      animation: kbDot 1.1s ease-in-out infinite;
-    }
-    .kb-typing i:nth-child(2) { animation-delay: .15s; }
-    .kb-typing i:nth-child(3) { animation-delay: .3s; }
-
-    /* products */
-    .kb-product {
-      position: relative;
-      display: grid;
-      grid-template-columns: 56px 1fr;
-      gap: 12px;
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 12px;
-      background: #fff;
-      box-shadow: var(--shadow-soft);
-      animation: kbMsg .24s ease both;
-    }
-    .kb-product + .kb-product { margin-top: 8px; }
-    .kb-product.top {
-      border-color: rgba(201,151,76,.55);
-      background: linear-gradient(165deg, #fffdf7, #fbf4e6);
-    }
-    .kb-best {
-      position: absolute;
-      top: -9px;
-      left: 12px;
-      border-radius: 999px;
-      padding: 3px 9px;
-      background: var(--gold);
-      color: #fff;
-      font-size: 9px;
-      font-weight: 700;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      box-shadow: 0 4px 10px rgba(201,151,76,.4);
-    }
-    .kb-thumb {
-      width: 56px;
-      height: 72px;
-      border-radius: 9px;
-      display: grid;
-      place-items: center;
-      color: #f2e3c6;
-      background:
-        radial-gradient(circle at 30% 20%, rgba(255,255,255,.3), transparent 32%),
-        linear-gradient(155deg, #4b2f22, var(--green-deep));
-      font-family: var(--font-display);
-      font-size: 21px;
-      font-weight: 600;
-    }
-    .kb-product h4 {
-      margin: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 8px;
-      color: var(--ink);
-      font-size: 13.5px;
-      line-height: 1.25;
-      font-weight: 650;
-    }
-    .kb-match {
-      min-width: 44px;
-      border-radius: 999px;
-      padding: 4px 8px;
-      background: var(--mint);
-      color: var(--green);
-      font-size: 10.5px;
-      font-weight: 700;
-      text-align: center;
-      white-space: nowrap;
-    }
-    .kb-product.top .kb-match {
-      background: var(--gold-soft);
-      color: #8a6425;
-    }
-    .kb-product p {
-      margin: 5px 0 0;
-      color: var(--muted);
-      font-size: 11.6px;
-      line-height: 1.5;
-      font-weight: 450;
-    }
-    .kb-product-topline {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 9px;
-      margin-bottom: 5px;
-    }
-    .kb-roast {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      color: #8a6425;
-      font-size: 10px;
-      font-weight: 720;
-      letter-spacing: .05em;
-      text-transform: uppercase;
-    }
-    .kb-roast::before {
-      content: "";
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--gold);
-    }
-    .kb-product-why {
-      margin-top: 9px;
-      border-left: 3px solid rgba(201,151,76,.58);
-      border-radius: 0 9px 9px 0;
-      padding: 8px 9px;
-      background: rgba(243,229,205,.46);
-      color: #6b5b42;
-      font-size: 10.8px;
-      line-height: 1.45;
-      font-weight: 520;
-    }
-    .kb-product-why b {
-      color: #8a6425;
-      font-weight: 760;
-    }
-    .kb-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      margin-top: 8px;
-    }
-    .kb-tag {
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 4px 8px;
-      background: #faf7f0;
-      color: #6d7169;
-      font-size: 10px;
-      line-height: 1;
-      font-weight: 550;
-    }
-    .kb-tag.price {
-      border-color: rgba(201,151,76,.4);
-      background: var(--gold-soft);
-      color: #8a6425;
-      font-weight: 700;
-    }
-    .kb-product-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 10px;
-    }
-    .kb-mini-btn {
-      min-height: 30px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 0 11px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: #fff;
-      color: var(--green);
-      cursor: pointer;
-      font-size: 10.5px;
-      font-weight: 700;
-      transition: background .15s ease, transform .15s ease, border-color .15s ease;
-    }
-    .kb-mini-btn:hover {
-      border-color: rgba(28,106,85,.36);
-      background: var(--mint);
-      transform: translateY(-1px);
-    }
-    .kb-mini-btn.primary {
-      border-color: transparent;
-      background: var(--green);
-      color: #fdf9f0;
-    }
-    .kb-mini-btn.primary:hover {
-      background: var(--green-2);
-    }
-    .kb-compare-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 8px;
-      margin-top: 10px;
-    }
-    .kb-compare {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 10px;
-      background: #fff;
-    }
-    .kb-compare small {
-      display: block;
-      color: #8a8d86;
-      font-size: 9px;
-      font-weight: 760;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-    .kb-compare strong {
-      display: block;
-      margin-top: 5px;
-      color: var(--ink);
-      font-size: 11.2px;
-      line-height: 1.25;
-      font-weight: 720;
-    }
-    .kb-compare span {
-      display: block;
-      margin-top: 4px;
-      color: var(--muted);
-      font-size: 10px;
-      line-height: 1.35;
-      font-weight: 500;
-    }
-    .kb-empty-state {
-      border: 1px dashed rgba(15,61,51,.20);
-      border-radius: 14px;
-      padding: 14px;
-      background: rgba(255,255,255,.72);
-      color: var(--muted);
-      font-size: 11.5px;
-      line-height: 1.5;
-      font-weight: 520;
-      text-align: center;
-    }
-
-    /* lead form */
-    .kb-form {
-      display: grid;
-      gap: 10px;
-      margin-top: 13px;
-    }
-    .kb-field { display: grid; gap: 5px; }
-    .kb-field label {
-      color: var(--green);
-      font-size: 10.5px;
-      font-weight: 650;
-      letter-spacing: .06em;
-      text-transform: uppercase;
-    }
-    .kb-field input,
-    .kb-field select,
-    .kb-field textarea {
-      width: 100%;
-      border: 1px solid var(--line);
-      border-radius: var(--radius-sm);
-      outline: 0;
-      background: #fdfbf7;
-      color: var(--ink);
-      font-size: 13px;
-      font-weight: 500;
-      transition: border-color .15s ease, box-shadow .15s ease;
-    }
-    .kb-field input:focus,
-    .kb-field textarea:focus {
-      border-color: var(--green-2);
-      box-shadow: 0 0 0 3px rgba(28,106,85,.12);
-    }
-    .kb-field input,
-    .kb-field select {
-      height: 40px;
-      padding: 0 12px;
-    }
-    .kb-field textarea {
-      min-height: 80px;
-      padding: 10px 12px;
-      resize: vertical;
-      line-height: 1.45;
-    }
-
-    /* footer */
-    .kb-foot {
-      border-top: 1px solid var(--line);
-      padding: 10px;
-      background: #fff;
-    }
-    .kb-chips {
-      display: flex;
-      gap: 6px;
-      overflow-x: auto;
-      padding-bottom: 9px;
-      scrollbar-width: none;
-    }
-    .kb-chips::-webkit-scrollbar { display: none; }
-    .kb-chip {
-      flex: 0 0 auto;
-      min-height: 30px;
-      border: 1px solid rgba(15,61,51,.16);
-      border-radius: 999px;
-      padding: 0 12px;
-      background: #fff;
-      color: var(--green);
-      cursor: pointer;
-      font-size: 11px;
-      font-weight: 600;
-      white-space: nowrap;
-      transition: background .15s ease, border-color .15s ease;
-    }
-    .kb-chip:hover { background: var(--mint); border-color: rgba(28,106,85,.4); }
-    .kb-input {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 5px 5px 5px 14px;
-      background: #fdfbf7;
-      transition: border-color .15s ease, box-shadow .15s ease;
-    }
-    .kb-input:focus-within {
-      border-color: var(--green-2);
-      box-shadow: 0 0 0 3px rgba(28,106,85,.10);
-    }
-    .kb-input input {
-      flex: 1;
-      min-width: 0;
-      height: 34px;
-      border: 0;
-      outline: 0;
-      background: transparent;
-      color: var(--ink);
-      font-size: 13px;
-      font-weight: 500;
-    }
-    .kb-input input::placeholder { color: #a8a999; }
-    .kb-send {
-      width: 34px;
-      height: 34px;
-      border: 0;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: var(--green);
-      color: #fdf9f0;
-      cursor: pointer;
-      flex: 0 0 34px;
-      transition: background .15s ease, transform .15s ease;
-    }
-    .kb-send:hover { background: var(--green-2); transform: scale(1.06); }
-    .kb-send svg { width: 16px; height: 16px; }
-
-    .kb-toast {
-      position: absolute;
-      left: 50%;
-      bottom: 78px;
-      z-index: 4;
-      transform: translateX(-50%) translateY(10px);
-      opacity: 0;
-      pointer-events: none;
-      max-width: calc(100% - 24px);
-      border-radius: 999px;
-      padding: 10px 15px;
-      background: var(--green-deep);
-      color: #fdf9f0;
-      box-shadow: var(--shadow-soft);
-      font-size: 11.5px;
-      font-weight: 600;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      transition: .22s ease;
-    }
-    .kb-toast.show {
-      opacity: 1;
-      transform: translateX(-50%);
-    }
-
-    @media (max-width: 980px) {
-      .demo-shell {
-        grid-template-columns: 1fr;
-      }
-      .demo-visual {
-        min-height: 520px;
-      }
-      .visual-mini {
-        top: 92px;
-      }
-    }
-
-    @media (max-width: 720px) {
-      body {
-        background:
-          linear-gradient(180deg, rgba(10,44,37,.96), rgba(10,44,37,.76)),
-          url("https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=1200&q=76") center / cover fixed,
-          #0a2c25;
-      }
-      .demo-shell {
-        gap: 16px;
-      }
-      .demo-card h1 {
-        font-size: clamp(34px, 12vw, 52px);
-      }
-      .demo-stats,
-      .visual-grid,
-      .kb-insight-grid,
-      .kb-value-strip,
-      .kb-compare-grid {
-        grid-template-columns: 1fr;
-      }
-      .demo-stat {
-        min-height: auto;
-      }
-      .demo-visual {
-        min-height: 500px;
-      }
-      .visual-topbar {
-        left: 16px;
-        right: 16px;
-        top: 16px;
-      }
-      .visual-live {
-        display: none;
-      }
-      .visual-product {
-        left: 18px;
-        top: 96px;
-        width: 104px;
-        min-height: 148px;
-      }
-      .visual-mini {
-        top: 96px;
-        right: 16px;
-        width: min(220px, calc(100% - 142px));
-      }
-      .visual-content {
-        left: 16px;
-        right: 16px;
-        bottom: 16px;
-      }
-      .visual-title {
-        font-size: 30px;
-      }
-      .visual-tile {
-        min-height: auto;
-      }
-      .kb-question-head {
-        display: grid;
-      }
-      .kb-score-card {
-        grid-template-columns: 62px 1fr;
-      }
-      .kb-score-ring {
-        width: 62px;
-        height: 62px;
-        font-size: 17px;
-      }
-    }
-
-    @media (max-width: 520px) {
-      .demo {
-        align-items: start;
-        padding: 18px;
-      }
-      .demo-card { padding: 24px 22px; }
-      .demo-actions {
-        align-items: stretch;
-      }
-      .demo-btn {
-        width: 100%;
-        justify-content: center;
-      }
-      .demo-visual {
-        min-height: 460px;
-        border-radius: 18px;
-      }
-      .visual-mini {
-        position: relative;
-        top: auto;
-        right: auto;
-        width: auto;
-        margin: 92px 16px 0 auto;
-      }
-      .visual-product {
-        top: 92px;
-      }
-      .visual-content {
-        position: relative;
-        margin-top: 24px;
-        padding-top: 180px;
-      }
-      .kb-flow-map {
-        grid-template-columns: repeat(5, 1fr);
-        gap: 4px;
-      }
-      .kb-flow-node {
-        min-height: 36px;
-        font-size: 8px;
-      }
-      .kb-product {
-        grid-template-columns: 48px 1fr;
-      }
-      .kb-thumb {
-        width: 48px;
-        height: 64px;
-      }
-      #kb-teaser {
-        right: 18px;
-        bottom: 120px;
-      }
-      #kb-launcher {
-        right: 0;
-        bottom: 0;
-      }
-      #kb-widget {
-        inset: auto 10px 10px 10px;
-        width: auto;
-        height: min(638px, calc(100dvh - 20px));
-      }
-    }
-  </style>
+/* ===== Beano pixel-art assistant polish ===== */
+:root{
+  --px-bg:#1f1712;
+  --px-line:#2a1a10;
+  --px-cream:#ffe8bf;
+  --px-cream2:#f4cf91;
+  --px-cream3:#d99a55;
+  --px-coffee:#6e3c19;
+  --px-hi:#fff6dc;
+  --px-shadow:0 14px 28px rgba(34,20,12,.22);
+}
+body:before{background:radial-gradient(circle at 82% 16%,rgba(232,189,115,.20),transparent 24%),linear-gradient(90deg,#fff 0,#fff 58%,#fff7e9)}
+#kb-widget{width:392px;height:min(674px,calc(100dvh - 28px));border-radius:22px;background:#f8f6f1;border-color:#ead8bd}
+.kb-head{height:64px;flex-basis:64px;background:linear-gradient(130deg,#2b1a11,#5a341f 62%,#9b6337);padding:10px 12px}
+.kb-head:after{height:2px;background:linear-gradient(90deg,transparent,#ffe2a5,transparent)}
+.brand-logo{width:44px;height:44px;border-radius:13px;background:#1f1712;box-shadow:inset 0 0 0 1px rgba(255,232,191,.20),0 10px 20px rgba(0,0,0,.18)}
+.brand b{font-size:16px;letter-spacing:.01em}.brand span{font-size:11px;color:rgba(255,246,220,.78)}
+.hbtn{width:34px;height:34px;border-radius:12px;background:rgba(255,246,220,.92)}.hbtn.close{background:rgba(255,255,255,.14)}
+.mode-tabs{height:50px;flex-basis:50px;padding:10px 12px 7px;background:#fffaf2;border-bottom:1px solid #efe3cf}
+.mode-tabs button{height:33px;border-radius:13px;background:#f0ebe2;color:#6a5849;font-size:12px;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
+.mode-tabs button:hover{transform:translateY(-1px)}.mode-tabs button.active{background:linear-gradient(135deg,#263d39,#2f8278);box-shadow:0 9px 18px rgba(47,130,120,.20)}
+.progress-row{height:42px;flex-basis:42px;padding:7px 12px;background:#fffdf8}.back{width:29px;height:29px;border-radius:11px}.step-pill{height:20px;min-width:32px;background:#2f8278}.bars{gap:6px}.bar{height:5px;background:#e5ded3}.step-count{color:#9b6337;font-size:10px}
+.body{overflow:hidden;padding:0 12px 10px}.q h2{font-size:17px;color:#263d39}.q p{font-size:11.4px;margin-bottom:8px}.card-list{gap:8px}
+.buddy-tip{grid-template-columns:42px 1fr;margin-bottom:8px;padding:8px 9px;border-radius:14px;background:linear-gradient(145deg,#fffdf8,#fff0d6)}
+.buddy-tip b{font-size:12px}.buddy-tip span{font-size:10.3px;line-height:1.22}
+.choice{min-height:88px;grid-template-columns:76px 1fr 58px;border-radius:15px;border-color:#ebe2d5;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease}
+.choice:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(52,31,18,.09)}
+.choice.selected{border-color:#2f8278;background:linear-gradient(180deg,#fff,#f3fbf6);box-shadow:0 0 0 2px rgba(47,130,120,.20),0 12px 24px rgba(52,31,18,.08)}
+.choice.selected:before{content:"";left:9px;top:9px;width:18px;height:18px;border-radius:7px;background:#2f8278;box-shadow:inset 0 0 0 4px #fff}
+.pic{background:linear-gradient(145deg,#f7f0e5,#efe4d3);color:#5a341f}.pic svg{width:34px;height:34px}.choice-mid{padding:10px 9px 10px 11px}.choice-mid b{font-size:14px}.choice-mid span{font-size:10.7px;line-height:1.24}.price{font-size:12px;padding-right:9px}.price small{font-size:9px}
+.footer{height:56px;flex-basis:56px;padding:7px 12px 11px;position:sticky;bottom:0}.next{height:42px;border-radius:15px;background:linear-gradient(135deg,#263d39,#2f8278)}
+.summary{grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:8px}.sum{padding:7px;border-radius:11px}.sum span{font-size:8px}.sum b{font-size:10.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.product{border-radius:18px;padding:11px;background:linear-gradient(180deg,#fffdf8,#fff4df)}.product-top{grid-template-columns:72px 1fr;gap:10px}.bag{height:96px;border-radius:16px}.bag:before{font-size:17px}.prod-copy small{font-size:8.6px;padding:4px 7px}.prod-copy h3{font-size:19px;margin:6px 0 4px}.prod-copy p{font-size:11px;line-height:1.28}
+.product-meta{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}.meta{border:1px solid #ead8bd;border-radius:11px;background:#fff;padding:7px}.meta span{display:block;color:#76685d;font-size:8px;font-weight:900;text-transform:uppercase}.meta b{display:block;margin-top:2px;color:#30241b;font-size:10.5px}
+.meters{gap:6px;margin-top:8px}.meter{padding:7px;border-radius:10px}.meter span{font-size:8px}.buy{margin-top:8px;padding:8px;border-radius:14px}.total b{font-size:19px}.toggle{height:32px;border-radius:11px}.ship{margin-top:8px;padding:8px;border-radius:11px}.alts{gap:6px;margin-top:8px}.altcard{padding:8px;border-radius:11px}
+.chat-msgs{overflow:hidden;padding:11px 12px;gap:8px}.chat-chips{padding:0 12px 9px;gap:7px}.chip{border-radius:12px;background:#fffaf2;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}.chip:hover{transform:translateY(-2px);border-color:#c89146;box-shadow:0 8px 18px rgba(52,31,18,.08)}.chip:active{transform:scale(.98)}
+.chat-in{padding:8px 12px 11px}.chat-in input{height:38px;border-radius:12px}.send{width:40px;border-radius:12px;background:#263d39}
+.cart-list{gap:8px}.cart-item{padding:9px;border-radius:13px}.empty{border-radius:14px;padding:16px}
+.cart-badge{display:none!important;right:-4px;top:-2px;min-width:21px;height:21px;border-radius:8px;background:#2f8278;border:2px solid #fff7ec;color:#fff}
+.cart-badge.show{display:grid!important}.cart-badge:empty{display:none!important}
+.cart-badge.pop{animation:badgePop .36s cubic-bezier(.2,.9,.2,1)}
+#kb-bubble{width:76px;height:76px;background:#1f1712;border:1px solid rgba(255,232,191,.26);box-shadow:0 18px 40px rgba(31,23,18,.26);animation:bubbleIdle 3.4s ease-in-out infinite}
+#kb-bubble:hover{transform:translateY(-3px) scale(1.04)}
+.buddy{image-rendering:pixelated;filter:drop-shadow(0 9px 0 rgba(0,0,0,.10)) drop-shadow(0 14px 18px rgba(31,23,18,.18));animation:beanoIdle 3.2s ease-in-out infinite}
+.bubble-bot{width:60px;height:60px}.mini-bot{width:38px;height:38px}
+.buddy:before,.buddy:after{content:"";position:absolute;width:6px;height:18px;background:#8f5528;top:25px;z-index:1;transform-origin:50% 0;box-shadow:0 6px 0 #6e3c19}
+.buddy:before{left:3px;transform:rotate(24deg)}.buddy:after{right:3px;transform:rotate(-24deg)}
+.brand-logo .buddy:before,.brand-logo .buddy:after,.mini-bot:before,.mini-bot:after{width:4px;height:12px;top:18px}
+.brand-logo .buddy:before,.mini-bot:before{left:1px}.brand-logo .buddy:after,.mini-bot:after{right:1px}
+.clean-bot .cup{width:34px;height:26px;border-radius:0;background:var(--px-cream);border:0;box-shadow:0 0 0 3px var(--px-line),0 -4px 0 var(--px-hi) inset,0 5px 0 var(--px-cream2) inset,5px 0 0 var(--px-cream2),-5px 0 0 var(--px-cream3),0 7px 0 #b87639,0 10px 0 rgba(0,0,0,.12);z-index:3}
+.bubble-bot .cup{width:42px;height:32px}.mini-bot .cup{width:28px;height:22px}
+.clean-bot .cup:before{left:4px;right:4px;top:4px;height:7px;border-radius:0;background:#6e3c19;box-shadow:0 0 0 2px #8f5528 inset;opacity:1}
+.clean-bot .cup:after{content:"";position:absolute;left:8px;bottom:-11px;width:5px;height:10px;background:#8f5528;box-shadow:16px 0 0 #8f5528}
+.mini-bot .cup:after{left:7px;bottom:-8px;width:4px;height:7px;box-shadow:12px 0 0 #8f5528}
+.cup-handle{right:-12px;top:9px;width:12px;height:14px;border:4px solid var(--px-line);border-left:0;border-radius:0;background:#ffe8bf;box-shadow:3px 0 0 #f4cf91 inset}
+.bubble-bot .cup-handle{right:-14px;top:10px;width:14px;height:17px}.mini-bot .cup-handle{right:-9px;top:6px;width:9px;height:11px;border-width:3px}
+.plate{bottom:0;width:42px;height:5px;border-radius:0;background:#1a130f;opacity:.20;border:0}.bubble-bot .plate{bottom:1px;width:52px;height:6px}.mini-bot .plate{bottom:1px;width:32px;height:4px}
+.cup-face{left:8px;right:8px;bottom:7px;height:9px}.bubble-bot .cup-face{left:11px;right:11px;bottom:8px}.mini-bot .cup-face{left:7px;right:7px;bottom:5px}
+.eye{top:0;width:5px;height:7px;border-radius:0;background:#1d1009}.eye.left{left:0}.eye.right{right:0}.bubble-bot .eye{width:5px;height:8px}.mini-bot .eye{width:4px;height:6px}
+.smile{top:7px;width:10px;height:3px;border:0;border-radius:0;background:#1d1009}.bubble-bot .smile{top:8px;width:12px;height:3px}.mini-bot .smile{top:6px;width:8px;height:2px}
+.steam{width:5px;height:5px;border-radius:0;background:#f7f3ed;filter:none;opacity:.85;animation:pixelSteam 2.4s steps(4,end) infinite;box-shadow:5px -5px 0 rgba(247,243,237,.76),0 -10px 0 rgba(247,243,237,.52)}
+.s1{left:14px;top:-15px}.s2{left:23px;top:-20px;animation-delay:.45s}.s3{display:none}.bubble-bot .s1{left:20px}.bubble-bot .s2{left:32px}.mini-bot .s1{left:11px;top:-12px}.mini-bot .s2{left:19px;top:-15px}
+.buddy[data-mood="idle"]{animation:beanoIdle 3.2s ease-in-out infinite}
+.buddy[data-mood="select"].move{animation:beanoSelect .34s cubic-bezier(.2,.9,.2,1)}
+.buddy[data-mood="thinking"]{animation:beanoThink .72s steps(2,end) infinite}.buddy[data-mood="thinking"] .steam{animation-duration:.9s}.buddy[data-mood="thinking"] .smile{width:5px;height:5px;top:6px}
+.buddy[data-mood="result"].move{animation:beanoResult .52s cubic-bezier(.2,.9,.2,1)}.buddy[data-mood="result"] .smile{width:13px;height:5px;top:6px}
+.buddy[data-mood="cart"].move{animation:beanoCart .62s cubic-bezier(.2,.9,.2,1)}.buddy[data-mood="cart"] .smile{width:15px;height:6px;top:5px}.buddy[data-mood="cart"]:before{transform:rotate(55deg) translateY(-4px)}.buddy[data-mood="cart"]:after{transform:rotate(-55deg) translateY(-4px)}
+.buddy[data-mood="select"]:before{transform:rotate(42deg)}.buddy[data-mood="select"]:after{transform:rotate(-14deg)}
+.buddy[data-mood="blink"] .eye,.buddy.blink .eye{height:2px;top:3px}
+.buddy[data-mood="wave"]:after{animation:beanoWave .8s ease-in-out infinite}
+.buddy.move{animation:beanoSelect .34s cubic-bezier(.2,.9,.2,1)}
+.buddy[data-mood="cart"] .cup,.buddy[data-mood="result"] .cup{box-shadow:0 0 0 3px var(--px-line),0 -4px 0 var(--px-hi) inset,0 5px 0 #f0bd73 inset,5px 0 0 #f0bd73,-5px 0 0 #d08b42,0 7px 0 #b87639,0 10px 0 rgba(0,0,0,.12)}
+.av{font-size:0;background:#1f1712;border-radius:10px}.av:before{content:"☕";font-size:15px;filter:saturate(.85)}
+@keyframes bubbleIdle{0%,100%{box-shadow:0 18px 40px rgba(31,23,18,.26),0 0 0 0 rgba(232,189,115,.28)}55%{box-shadow:0 18px 40px rgba(31,23,18,.26),0 0 0 12px rgba(232,189,115,0)}}
+@keyframes pixelSteam{0%{opacity:0;transform:translateY(7px)}35%{opacity:.9}100%{opacity:0;transform:translateY(-8px)}}
+@keyframes beanoIdle{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+@keyframes beanoSelect{0%{transform:translateY(0) scale(1)}42%{transform:translateY(-5px) scale(1.03) rotate(-3deg)}100%{transform:translateY(0) scale(1)}}
+@keyframes beanoThink{0%,100%{transform:translateX(0)}50%{transform:translateX(2px)}}
+@keyframes beanoResult{0%{transform:translateY(0)}38%{transform:translateY(-7px) scale(1.05)}72%{transform:translateY(1px) scale(.99)}100%{transform:translateY(0)}}
+@keyframes beanoCart{0%{transform:translateY(0) scale(1)}30%{transform:translateY(-9px) scale(1.10) rotate(4deg)}58%{transform:translateY(1px) scale(.98) rotate(-3deg)}100%{transform:translateY(0) scale(1)}}
+@keyframes beanoWave{0%,100%{transform:rotate(-24deg)}45%{transform:rotate(-70deg) translateY(-4px)}}
+@keyframes badgePop{0%{transform:scale(.6)}60%{transform:scale(1.18)}100%{transform:scale(1)}}
+@media(max-height:760px) and (min-width:721px){#kb-widget{height:calc(100dvh - 18px);bottom:9px}.choice{min-height:78px}.buddy-tip{display:grid}.summary{display:none}.meters{display:none}.product-top{grid-template-columns:66px 1fr}.bag{height:86px}.ship{display:none}}
+@media(max-width:720px){#kb-widget{height:100dvh}.body{padding-left:10px;padding-right:10px}.choice{grid-template-columns:66px 1fr 52px;min-height:82px}.buddy-tip{grid-template-columns:38px 1fr}.summary{grid-template-columns:repeat(2,1fr)}}
+</style>
 </head>
 <body>
-  <main class="demo">
-    <div class="demo-shell">
-      <section class="demo-card demo-copy" aria-label="KávaBot demo">
-        <span class="demo-eyebrow">KávaBot &middot; predajný poradca</span>
-        <h1>Poradca, ktorý pôsobí ako <em>senior barista</em>.</h1>
-        <p>Nie je to obyčajný chat. Zákazníka prevedie výberom, vysvetlí rozdiely, ukáže top zhodu a pošle pripravený dopyt tak, aby e-shop nestrácal ľudí pri rozhodovaní.</p>
-        <div class="demo-actions">
-          <button class="demo-btn" type="button" data-open>
-            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            Spustiť poradcu
-          </button>
-          <button class="demo-btn secondary" type="button" data-demo="office">Firemný odber</button>
-        </div>
-        <div class="demo-stats" aria-label="Silné stránky riešenia">
-          <div class="demo-stat">
-            <strong>5</strong>
-            <span>krátkych otázok namiesto nekonečného chatu</span>
-          </div>
-          <div class="demo-stat">
-            <strong>99%</strong>
-            <span>zhoda pri najlepšom odporúčaní podľa odpovedí</span>
-          </div>
-          <div class="demo-stat">
-            <strong>1×</strong>
-            <span>klik na pripravený dopyt alebo nový výber</span>
-          </div>
-        </div>
-        <div class="demo-note">
-          <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>rozmer launcheru podľa MôjPlot</span>
-          <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>výsledky z katalógu</span>
-          <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>funkčný lead formulár</span>
-        </div>
-      </section>
-
-      <aside class="demo-visual" aria-label="Prémiový náhľad kávového poradcu">
-        <div class="visual-topbar">
-          <div class="visual-brand">
-            <span class="visual-mark" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            </span>
-            <span class="visual-text">
-              <strong>KávaBot Studio</strong>
-              <span>live produktový výber</span>
-            </span>
-          </div>
-          <span class="visual-live"><i></i> online poradca</span>
-        </div>
-        <div class="visual-product" aria-hidden="true">
-          <span>signature blend</span>
-          <strong>Aurora House</strong>
-        </div>
-        <div class="visual-mini">
-          <div class="visual-mini-head">
-            <b>Top zhoda: Aurora House Blend</b>
-            <span>94%</span>
-          </div>
-          <p>Nízka acidita, dobrá crema a chuť, ktorá funguje doma aj vo firme.</p>
-          <div class="visual-meter"><i></i></div>
-        </div>
-        <div class="visual-content">
-          <span class="visual-badge">prémiový predajný tok</span>
-          <h2 class="visual-title">Najprv pochopí zákazníka, potom odporučí produkt.</h2>
-          <p class="visual-subtitle">Vnútri widgetu pribudol jasnejší úvod, mapa krokov, skóre zhody, dôvody odporúčania a rýchle akcie.</p>
-          <div class="visual-grid" aria-label="Príklady výstupov poradcu">
-            <div class="visual-tile">
-              <small>profil</small>
-              <strong>espresso</strong>
-              <span>automat, páka alebo moka podľa odpovede</span>
-            </div>
-            <div class="visual-tile">
-              <small>chuť</small>
-              <strong>sladká</strong>
-              <span>čokoláda, orechy, karamel bez ostrej acidity</span>
-            </div>
-            <div class="visual-tile">
-              <small>akcia</small>
-              <strong>dopyt</strong>
-              <span>predvyplnený formulár s top odporúčaním</span>
-            </div>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </main>
-
-  <div id="kb-teaser" role="button" tabindex="0" aria-label="Otvoriť kávového poradcu">
-    <button class="teaser-x" type="button" aria-label="Skryť pozvánku">×</button>
-    <b>Nájdem vám kávu na mieru</b>
-    <span>Päť krátkych otázok a odporučím kávu podľa chuti, prípravy aj spotreby.</span>
+<div class="page-note">
+  <div class="ey">Coffee e-shop widget</div>
+  <h1>Beano – hravý kávový poradca.</h1>
+  <p>Hravý maskot pre kávový e-shop. Vyberie prípravu, chuť, mletie, balenie a odporučí konkrétny produkt bez nudného formulára.</p>
+  <div class="mini"><span>6 krokov</span><span>produkt + SKU</span><span>košík + lead</span></div>
+</div>
+<button id="kb-bubble" aria-label="Otvoriť Beano poradcu"><span class="cart-badge" id="bubbleCount" aria-live="polite"></span>
+<div class="buddy clean-bot bubble-bot" data-mood="idle" aria-hidden="true">
+  <i class="steam s1"></i><i class="steam s2"></i><i class="steam s3"></i>
+  <div class="cup">
+    <span class="cup-face"><i class="eye left"></i><i class="eye right"></i><i class="smile"></i></span>
+    <span class="cup-handle"></span>
   </div>
-
-  <section id="kb-widget" aria-label="KávaBot poradca">
-    <header class="kb-head">
-      <div class="kb-logo" aria-hidden="true">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4M7 5.4c.9.8.9 1.7 0 2.6M11 5.4c.9.8.9 1.7 0 2.6M15 5.4c.9.8.9 1.7 0 2.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      </div>
-      <div class="kb-title">
-        <strong>KávaBot</strong>
-        <span><i class="kb-online"></i> osobný kávový poradca</span>
-      </div>
-      <button class="kb-close" type="button" data-close aria-label="Zavrieť">
-        <svg viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      </button>
-    </header>
-
-    <div class="kb-status">
-      <div class="kb-track"><div class="kb-fill" id="kb-fill"></div></div>
-      <span class="kb-step-label" id="kb-step-label">Vitajte</span>
-    </div>
-
-    <div class="kb-body" id="kb-body"></div>
-
-    <footer class="kb-foot">
-      <div class="kb-chips" id="kb-chips"></div>
-      <form class="kb-input" id="kb-form">
-        <input id="kb-input" autocomplete="off" placeholder="Napíšte napr. káva do automatu…">
-        <button class="kb-send" type="submit" aria-label="Odoslať">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12 20 4l-5 16-3-7-8-1Z" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/></svg>
-        </button>
-      </form>
-    </footer>
-
-    <div class="kb-toast" id="kb-toast"></div>
-  </section>
-
-  <button id="kb-launcher" type="button" aria-label="Otvoriť KávaBot poradcu">
-    <span class="launcher-core">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4M7 5.4c.9.8.9 1.7 0 2.6M11 5.4c.9.8.9 1.7 0 2.6M15 5.4c.9.8.9 1.7 0 2.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-    </span>
-  </button>
-
-  <script>
-    (() => {
-      const $ = (selector, root = document) => root.querySelector(selector);
-
-      const products = [
-        {
-          id: "aurora",
-          name: "Aurora House Blend",
-          price: "od 9,90 €",
-          brew: ["espresso", "automat", "moka"],
-          taste: ["čokoláda", "oriešky", "karamel"],
-          acidity: "nízka",
-          pack: ["250g", "1kg"],
-          intent: ["home", "office"],
-          description: "Sladký espresso blend pre automat, pákový kávovar a cappuccino.",
-          reason: "nízka acidita, dobrá crema a bezpečná chuť pre väčšinu zákazníkov"
-        },
-        {
-          id: "office",
-          name: "Brazil Office Crema 1 kg",
-          price: "24,90 €",
-          brew: ["automat", "espresso"],
-          taste: ["čokoláda", "karamel"],
-          acidity: "nízka",
-          pack: ["1kg"],
-          intent: ["office"],
-          description: "Káva do kancelárskeho automatu s vyššou výťažnosťou.",
-          reason: "je stabilná v automate a dobre funguje pri väčšej dennej spotrebe"
-        },
-        {
-          id: "colombia",
-          name: "Colombia Honey Espresso",
-          price: "12,90 €",
-          brew: ["espresso", "moka"],
-          taste: ["karamel", "ovocie", "med"],
-          acidity: "stredná",
-          pack: ["250g"],
-          intent: ["home", "gift"],
-          description: "Sladšie moderné espresso s jemným ovocným profilom.",
-          reason: "má prémiovejší dojem bez príliš ostrej kyslosti"
-        },
-        {
-          id: "ethiopia",
-          name: "Ethiopia Filter Bloom",
-          price: "14,50 €",
-          brew: ["filter", "v60", "chemex", "french"],
-          taste: ["ovocie", "citrus", "kvetiny"],
-          acidity: "vyššia",
-          pack: ["250g"],
-          intent: ["home", "gift"],
-          description: "Svieža výberová káva pre filter, V60 a Chemex.",
-          reason: "vynikne vo filtri a poteší zákazníkov, ktorí chcú ovocnú chuť"
-        },
-        {
-          id: "decaf",
-          name: "Decaf Velvet",
-          price: "11,90 €",
-          brew: ["espresso", "automat", "filter"],
-          taste: ["bez kofeínu", "čokoláda", "jemná"],
-          acidity: "nízka",
-          pack: ["250g"],
-          intent: ["home", "gift"],
-          description: "Bez kofeínu, jemná a sladká káva na večerné pitie.",
-          reason: "rieši chuť kávy bez kofeínu a bez agresívnej acidity"
-        },
-        {
-          id: "gift",
-          name: "Tasting Box Signature",
-          price: "29,90 €",
-          brew: ["espresso", "filter", "automat"],
-          taste: ["darček", "mix", "degustácia"],
-          acidity: "mix",
-          pack: ["box"],
-          intent: ["gift"],
-          description: "Darčekový set troch káv pre bezpečný aj zaujímavý výber.",
-          reason: "nevyžaduje presnú znalosť kávovaru obdarovaného"
-        }
-      ];
-
-      const steps = [
-        {
-          key: "intent",
-          title: "Na čo kávu potrebujete?",
-          help: "Stačí kliknúť — podľa odpovede prispôsobím ďalšie otázky.",
-          options: [
-            ["home", "Domov", "Káva na bežné pitie doma."],
-            ["office", "Firma / kancelária", "Väčšia spotreba, automat alebo pravidelný odber."],
-            ["gift", "Darček", "Bezpečný výber, aj keď nepoznáte kávovar."],
-            ["problem", "Riešim problém s chuťou", "Kyslá, horká, slabá alebo bez cremy."]
-          ]
-        },
-        {
-          key: "brew",
-          title: "Ako ju pripravujete?",
-          help: "Príprava je najdôležitejšia pre praženie aj chuť.",
-          options: [
-            ["espresso", "Espresso kávovar", "Pákový alebo domáci espresso stroj."],
-            ["automat", "Automatický kávovar", "Stabilná crema a nízka acidita."],
-            ["filter", "Filter / V60 / Chemex", "Čistejšia, sviežejšia chuť."],
-            ["moka", "Moka kanvička", "Plnšia a výraznejšia káva."]
-          ]
-        },
-        {
-          key: "taste",
-          title: "Aký chuťový profil máte radi?",
-          help: "Vyberte chuť, ktorú chcete v šálke naozaj cítiť.",
-          options: [
-            ["čokoláda", "Čokoládová a orechová", "Bezpečný profil bez výraznej kyslosti."],
-            ["karamel", "Sladká a karamelová", "Vyvážené espresso."],
-            ["ovocie", "Ovocná a svieža", "Výberovejšia chuť pre filter alebo moderné espresso."],
-            ["bez kofeínu", "Bez kofeínu", "Večerná káva alebo citlivosť na kofeín."]
-          ]
-        },
-        {
-          key: "acidity",
-          title: "Ako vnímate kyslosť?",
-          help: "Najčastejšia príčina zlého výberu kávy.",
-          options: [
-            ["nízka", "Nechcem kyslú kávu", "Sladká, čokoládová, stabilná."],
-            ["stredná", "Môže byť jemne svieža", "Vyvážené espresso alebo sladší filter."],
-            ["vyššia", "Mám rád ovocnú aciditu", "Svetlejšie výberové kávy."]
-          ]
-        },
-        {
-          key: "pack",
-          title: "Aké balenie dáva zmysel?",
-          help: "Podľa balenia odlíšim domáci nákup, firmu a darček.",
-          options: [
-            ["250g", "250 g", "Test alebo domáce pitie."],
-            ["1kg", "1 kg", "Automat, firma alebo vyššia spotreba."],
-            ["box", "Darčekový box", "Pekný efekt a viac chutí."]
-          ]
-        }
-      ];
-
-      const state = {
-        open: false,
-        step: 0,
-        answers: {},
-        labels: {},
-        results: []
-      };
-
-      const els = {
-        widget: $("#kb-widget"),
-        launcher: $("#kb-launcher"),
-        teaser: $("#kb-teaser"),
-        body: $("#kb-body"),
-        fill: $("#kb-fill"),
-        label: $("#kb-step-label"),
-        chips: $("#kb-chips"),
-        form: $("#kb-form"),
-        input: $("#kb-input"),
-        toast: $("#kb-toast")
-      };
-
-      function esc(value) {
-        return String(value ?? "").replace(/[&<>"']/g, char => ({
-          "&": "&amp;",
-          "<": "&lt;",
-          ">": "&gt;",
-          "\"": "&quot;",
-          "'": "&#039;"
-        })[char]);
-      }
-
-      function openWidget(mode) {
-        state.open = true;
-        els.widget.classList.add("open");
-        els.launcher.classList.add("hidden");
-        els.teaser.classList.remove("show");
-        if (mode === "office") {
-          resetFlow();
-          state.answers.intent = "office";
-          state.labels.intent = "Firma / kancelária";
-          state.step = 1;
-          renderStep();
-        } else if (!els.body.dataset.ready) {
-          resetFlow();
-          renderIntro();
-        }
-        setTimeout(() => els.input.focus(), 80);
-      }
-
-      function closeWidget() {
-        state.open = false;
-        els.widget.classList.remove("open");
-        els.launcher.classList.remove("hidden");
-      }
-
-      function toast(text) {
-        els.toast.textContent = text;
-        els.toast.classList.add("show");
-        clearTimeout(toast.timer);
-        toast.timer = setTimeout(() => els.toast.classList.remove("show"), 2200);
-      }
-
-      function setProgress() {
-        const total = steps.length;
-        const pct = state.step <= 0 ? 0 : Math.round((state.step / total) * 100);
-        els.fill.style.width = `${Math.min(100, pct)}%`;
-        els.label.textContent = state.step >= total ? "Hotovo" : `Krok ${state.step + 1} z ${total}`;
-      }
-
-      function setChips(items) {
-        els.chips.innerHTML = items.map(item => (
-          `<button class="kb-chip" type="button" data-action="${esc(item.action)}">${esc(item.label)}</button>`
-        )).join("");
-      }
-
-      function renderIntro() {
-        els.body.dataset.ready = "1";
-        state.step = 0;
-        els.fill.style.width = "0%";
-        els.label.textContent = "Vitajte";
-        els.body.innerHTML = `
-          <article class="kb-card featured">
-            <div class="kb-panel-intro">
-              <div class="kb-hero-row">
-                <span class="kb-avatar" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4M7 5.4c.9.8.9 1.7 0 2.6M11 5.4c.9.8.9 1.7 0 2.6M15 5.4c.9.8.9 1.7 0 2.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-                </span>
-                <div>
-                  <span class="kb-kicker">Osobný výber</span>
-                  <h2>Dobrý deň, nájdem vám kávu na mieru.</h2>
-                  <p>Odpoviete na päť krátkych otázok a ja z toho poskladám odporúčanie: príprava, chuť, acidita, balenie a konkrétny produkt.</p>
-                </div>
-              </div>
-              <div class="kb-insight-grid" aria-label="Ako poradca pracuje">
-                <div class="kb-insight"><b>01</b><span>zistí účel nákupu a typ zákazníka</span></div>
-                <div class="kb-insight"><b>02</b><span>porovná odpovede s katalógom kávy</span></div>
-                <div class="kb-insight"><b>03</b><span>vysvetlí prečo sedí top produkt</span></div>
-              </div>
-              <div class="kb-flow-map" aria-label="Mapa výberu">
-                <span class="kb-flow-node active">účel</span>
-                <span class="kb-flow-node">príprava</span>
-                <span class="kb-flow-node">chuť</span>
-                <span class="kb-flow-node">acidita</span>
-                <span class="kb-flow-node">balenie</span>
-              </div>
-            </div>
-            <div class="kb-actions">
-              <button class="kb-btn" type="button" data-action="start">Začať výber</button>
-              <button class="kb-btn alt" type="button" data-action="office">Pre firmu</button>
-              <button class="kb-btn alt" type="button" data-action="gift">Darček</button>
-            </div>
-            <div class="kb-mini-note"><b>Tip:</b> Môžete aj písať do spodného poľa, napríklad „káva do automatu” alebo „darček”.</div>
-          </article>
-        `;
-        setChips([
-          { label: "Vybrať kávu", action: "start" },
-          { label: "Káva do automatu", action: "auto" },
-          { label: "Darček", action: "gift" },
-          { label: "Poslať dopyt", action: "lead" }
-        ]);
-      }
-
-      function resetFlow() {
-        state.step = 0;
-        state.answers = {};
-        state.labels = {};
-        state.results = [];
-      }
-
-      function flowHtml(activeIndex = state.step) {
-        const labels = ["účel", "príprava", "chuť", "acidita", "balenie"];
-        return `
-          <div class="kb-flow-map" aria-label="Postup výberu">
-            ${labels.map((label, index) => {
-              const status = index < activeIndex ? " done" : index === activeIndex ? " active" : "";
-              return `<span class="kb-flow-node${status}">${esc(label)}</span>`;
-            }).join("")}
-          </div>
-        `;
-      }
-
-      function selectedBrief() {
-        const selected = Object.entries(state.labels)
-          .filter(([key]) => steps.some(step => step.key === key))
-          .map(([, label]) => label);
-        if (!selected.length) return "Vyberte najbližšiu odpoveď. Poradca ju hneď použije v ďalšom kroku.";
-        return `Doteraz viem: ${selected.join(" · ")}`;
-      }
-
-      function renderStep() {
-        const step = steps[state.step];
-        setProgress();
-        els.body.innerHTML = `
-          <article class="kb-card">
-            <div class="kb-question-head">
-              <span class="kb-kicker">Otázka ${state.step + 1}</span>
-              <span class="kb-kicker">${Math.round(((state.step + 1) / steps.length) * 100)} % hotovo</span>
-            </div>
-            <h3>${esc(step.title)}</h3>
-            <p>${esc(step.help)}</p>
-            ${flowHtml(state.step)}
-            <div class="kb-mini-note"><b>Kontext:</b> ${esc(selectedBrief())}</div>
-            <div class="kb-options">
-              ${step.options.map((option, index) => `
-                <button class="kb-option" type="button" data-answer="${esc(option[0])}" data-label="${esc(option[1])}">
-                  <i>${index + 1}</i>
-                  <span><b>${esc(option[1])}</b><span>${esc(option[2])}</span></span>
-                </button>
-              `).join("")}
-            </div>
-            <div class="kb-actions">
-              ${state.step > 0 ? '<button class="kb-btn alt" type="button" data-action="back">‹ Späť</button>' : ''}
-              <button class="kb-btn alt" type="button" data-action="restart">Odznova</button>
-            </div>
-          </article>
-        `;
-        els.body.scrollTop = 0;
-      }
-
-      function answer(value, label) {
-        const step = steps[state.step];
-        state.answers[step.key] = value;
-        state.labels[step.key] = label;
-
-        if (value === "problem" && step.key === "intent") {
-          state.answers.acidity = "nízka";
-          state.labels.acidity = "Nechcem kyslú kávu";
-        }
-
-        if (value === "gift" && step.key === "intent") {
-          state.answers.pack = "box";
-          state.labels.pack = "Darčekový box";
-        }
-
-        if (state.step < steps.length - 1) {
-          state.step += 1;
-          renderStep();
-          return;
-        }
-        renderResults();
-      }
-
-      function score(product) {
-        let points = 40;
-        const a = state.answers;
-        if (a.intent && product.intent.includes(a.intent)) points += 16;
-        if (a.brew && product.brew.includes(a.brew)) points += 22;
-        if (a.taste && product.taste.includes(a.taste)) points += 18;
-        if (a.acidity && (product.acidity === a.acidity || product.acidity === "mix")) points += 14;
-        if (a.pack && product.pack.includes(a.pack)) points += 12;
-        if (a.intent === "office" && product.pack.includes("1kg")) points += 10;
-        if (a.intent === "gift" && product.id === "gift") points += 18;
-        if (a.taste === "bez kofeínu" && product.id === "decaf") points += 28;
-        if (a.brew === "automat" && product.id === "office") points += 12;
-        return Math.min(99, points);
-      }
-
-      function getResults() {
-        const ranked = products
-          .map(product => ({ product, score: score(product) }))
-          .sort((a, b) => b.score - a.score)
-          .slice(0, 3);
-        let prev = 100;
-        for (const item of ranked) {
-          item.score = Math.min(item.score, prev - 4);
-          prev = item.score;
-        }
-        return ranked;
-      }
-
-      function summaryText() {
-        const parts = [];
-        if (state.labels.intent) parts.push(state.labels.intent);
-        if (state.labels.brew) parts.push(state.labels.brew);
-        if (state.labels.taste) parts.push(state.labels.taste);
-        if (state.labels.acidity) parts.push(state.labels.acidity);
-        if (state.labels.pack) parts.push(state.labels.pack);
-        return parts.join(" · ");
-      }
-
-      function productTone(product) {
-        if (product.id === "ethiopia") return "svetlý filter";
-        if (product.id === "office") return "stabilný office";
-        if (product.id === "gift") return "degustačný set";
-        if (product.id === "decaf") return "jemný decaf";
-        return "espresso blend";
-      }
-
-      function resultHighlights(product) {
-        const items = [];
-        if (state.answers.brew && product.brew.includes(state.answers.brew)) {
-          items.push(["príprava", state.labels.brew || state.answers.brew, "sedí na váš spôsob prípravy"]);
-        }
-        if (state.answers.taste && product.taste.includes(state.answers.taste)) {
-          items.push(["chuť", state.labels.taste || state.answers.taste, "má profil, ktorý ste vybrali"]);
-        }
-        if (state.answers.pack && product.pack.includes(state.answers.pack)) {
-          items.push(["balenie", state.labels.pack || state.answers.pack, "dáva zmysel pre spotrebu"]);
-        }
-        if (!items.length) {
-          items.push(["profil", "vyvážený výber", "bezpečná voľba z katalógu"]);
-        }
-        return items.slice(0, 3);
-      }
-
-      function productHtml(item, index) {
-        const p = item.product;
-        const initial = p.name.trim().charAt(0);
-        const top = index === 0;
-        const highlights = resultHighlights(p);
-        return `
-          <article class="kb-product${top ? " top" : ""}" style="animation-delay:${index * 70}ms">
-            ${top ? '<span class="kb-best">Najlepšia zhoda</span>' : ""}
-            <div class="kb-thumb" aria-hidden="true">${esc(initial)}</div>
-            <div>
-              <div class="kb-product-topline">
-                <span class="kb-roast">${esc(productTone(p))}</span>
-                <span class="kb-match">${item.score} %</span>
-              </div>
-              <h4>${esc(p.name)}</h4>
-              <p>${esc(p.description)}</p>
-              <div class="kb-product-why"><b>Prečo sedí:</b> ${esc(p.reason)}.</div>
-              <div class="kb-tags">
-                ${p.taste.slice(0, 3).map(tag => `<span class="kb-tag">${esc(tag)}</span>`).join("")}
-                <span class="kb-tag price">${esc(p.price)}</span>
-              </div>
-              ${top ? `
-                <div class="kb-compare-grid" aria-label="Dôvody zhody">
-                  ${highlights.map(([label, value, note]) => `
-                    <div class="kb-compare">
-                      <small>${esc(label)}</small>
-                      <strong>${esc(value)}</strong>
-                      <span>${esc(note)}</span>
-                    </div>
-                  `).join("")}
-                </div>
-              ` : ""}
-              <div class="kb-product-actions">
-                <button class="kb-mini-btn primary" type="button" data-action="lead">Chcem ponuku</button>
-                <button class="kb-mini-btn" type="button" data-action="restart">Porovnať znova</button>
-              </div>
-            </div>
-          </article>
-        `;
-      }
-
-      function renderResults() {
-        state.step = steps.length;
-        setProgress();
-        state.results = getResults();
-        els.body.innerHTML = '<div class="kb-typing" role="status" aria-label="Pripravujem odporúčanie"><i></i><i></i><i></i></div>';
-        els.body.scrollTop = 0;
-        setChips([]);
-        setTimeout(() => {
-          const top = state.results[0];
-          const topName = top?.product?.name || "vybranú kávu";
-          const topScore = top?.score || 0;
-          els.body.innerHTML = `
-            <article class="kb-card featured">
-              <div class="kb-result-summary">
-                <span class="kb-kicker">Vaše odporúčanie</span>
-                <h3>Najlepšie sedí ${esc(topName)}.</h3>
-                <p>${esc(summaryText() || "Vybrali sme bezpečný štart podľa najčastejšej preferencie zákazníkov.")}</p>
-                <div class="kb-score-card">
-                  <div class="kb-score-ring" aria-label="Skóre zhody">${topScore}%</div>
-                  <div>
-                    <b>Poradca porovnal účel, prípravu, chuť, aciditu a balenie.</b>
-                    <span>Nižšie vidíte top produkt aj ďalšie dve alternatívy, aby zákazník nemal pocit slepej uličky.</span>
-                  </div>
-                </div>
-                <div class="kb-value-strip" aria-label="Čo odporúčanie rieši">
-                  <div class="kb-value"><small>profil</small><strong>${esc(state.labels.taste || "vyvážená chuť")}</strong></div>
-                  <div class="kb-value"><small>príprava</small><strong>${esc(state.labels.brew || "bežný kávovar")}</strong></div>
-                  <div class="kb-value"><small>balenie</small><strong>${esc(state.labels.pack || "250 g / 1 kg")}</strong></div>
-                </div>
-              </div>
-            </article>
-            <div style="padding-top:6px">
-              ${state.results.map(productHtml).join("")}
-            </div>
-            <article class="kb-card">
-              <span class="kb-kicker">Ďalší krok</span>
-              <h3>Premeniť odporúčanie na dopyt?</h3>
-              <p>Formulár doplní zvolené odpovede aj top produkt. Zákazník nemusí opisovať, čo si vyklikal.</p>
-              <div class="kb-actions">
-                <button class="kb-btn" type="button" data-action="lead">Poslať dopyt</button>
-                <button class="kb-btn alt" type="button" data-action="restart">Nový výber</button>
-              </div>
-            </article>
-          `;
-          setChips([
-            { label: "Poslať dopyt", action: "lead" },
-            { label: "Nový výber", action: "restart" },
-            { label: "Pre firmu", action: "office" }
-          ]);
-        }, 650);
-      }
-
-      function renderLead() {
-        setProgress();
-        const top = state.results[0]?.product?.name || "";
-        els.body.innerHTML = `
-          <article class="kb-card">
-            <span class="kb-kicker">Nezáväzný dopyt</span>
-            <h3>Pošlite nám správu</h3>
-            <p>Ozveme sa s ponukou na mieru. Predvyplnili sme, čo ste si vybrali.</p>
-            <form class="kb-form" id="lead-form">
-              <div class="kb-field">
-                <label for="lead-name">Meno / firma</label>
-                <input id="lead-name" name="name" required placeholder="Napr. Kaviareň Sever">
-              </div>
-              <div class="kb-field">
-                <label for="lead-email">E-mail</label>
-                <input id="lead-email" name="email" type="email" required placeholder="kontakt@firma.sk">
-              </div>
-              <div class="kb-field">
-                <label for="lead-note">Poznámka</label>
-                <textarea id="lead-note" name="note">${esc(summaryText())}${top ? "\nTop odporúčanie: " + esc(top) : ""}</textarea>
-              </div>
-              <button class="kb-btn" type="submit">Odoslať dopyt</button>
-            </form>
-          </article>
-        `;
-        els.body.scrollTop = 0;
-      }
-
-      function handleAction(action) {
-        if (action === "start" || action === "restart") {
-          resetFlow();
-          renderStep();
-          return;
-        }
-        if (action === "back") {
-          if (state.step > 0) state.step -= 1;
-          renderStep();
-          return;
-        }
-        if (action === "office") {
-          resetFlow();
-          state.answers.intent = "office";
-          state.labels.intent = "Firma / kancelária";
-          state.step = 1;
-          renderStep();
-          return;
-        }
-        if (action === "gift") {
-          resetFlow();
-          state.answers.intent = "gift";
-          state.labels.intent = "Darček";
-          state.answers.pack = "box";
-          state.labels.pack = "Darčekový box";
-          state.step = 1;
-          renderStep();
-          return;
-        }
-        if (action === "auto") {
-          resetFlow();
-          state.answers.intent = "office";
-          state.labels.intent = "Firma / kancelária";
-          state.answers.brew = "automat";
-          state.labels.brew = "Automatický kávovar";
-          state.step = 2;
-          renderStep();
-          return;
-        }
-        if (action === "lead") {
-          renderLead();
-        }
-      }
-
-      function handleText(text) {
-        const query = text.toLowerCase();
-        if (query.includes("automat") || query.includes("firma") || query.includes("kancel")) {
-          handleAction("auto");
-          toast("Spustil som výber pre automat / firmu.");
-          return;
-        }
-        if (query.includes("dar")) {
-          handleAction("gift");
-          toast("Spustil som darčekový výber.");
-          return;
-        }
-        if (query.includes("filter") || query.includes("v60") || query.includes("chemex")) {
-          resetFlow();
-          state.answers.intent = "home";
-          state.labels.intent = "Domov";
-          state.answers.brew = "filter";
-          state.labels.brew = "Filter / V60 / Chemex";
-          state.step = 2;
-          renderStep();
-          toast("Spustil som výber pre filter.");
-          return;
-        }
-        if (query.includes("bez kof") || query.includes("decaf")) {
-          resetFlow();
-          state.answers.intent = "home";
-          state.labels.intent = "Domov";
-          state.answers.taste = "bez kofeínu";
-          state.labels.taste = "Bez kofeínu";
-          state.step = 1;
-          renderStep();
-          toast("Hľadám bezkofeínovú kávu.");
-          return;
-        }
-        resetFlow();
-        renderStep();
-        toast("Najrýchlejší bude krátky výber klikaním.");
-      }
-
-      document.addEventListener("click", event => {
-        if (event.target.closest("[data-open]")) openWidget();
-        const demo = event.target.closest("[data-demo]");
-        if (demo) openWidget(demo.dataset.demo);
-      });
-
-      els.launcher.addEventListener("click", () => openWidget());
-      els.teaser.addEventListener("click", event => {
-        if (event.target.closest(".teaser-x")) {
-          event.stopPropagation();
-          els.teaser.classList.remove("show");
-          return;
-        }
-        openWidget();
-      });
-      els.teaser.addEventListener("keydown", event => {
-        if (event.key === "Enter" || event.key === " ") openWidget();
-      });
-      $("[data-close]").addEventListener("click", closeWidget);
-
-      els.body.addEventListener("click", event => {
-        const option = event.target.closest("[data-answer]");
-        if (option) {
-          answer(option.dataset.answer, option.dataset.label);
-          return;
-        }
-        const action = event.target.closest("[data-action]");
-        if (action) handleAction(action.dataset.action);
-      });
-
-      els.chips.addEventListener("click", event => {
-        const action = event.target.closest("[data-action]");
-        if (action) handleAction(action.dataset.action);
-      });
-
-      els.form.addEventListener("submit", event => {
-        event.preventDefault();
-        const text = els.input.value.trim();
-        if (!text) return;
-        els.input.value = "";
-        handleText(text);
-      });
-
-      els.body.addEventListener("submit", event => {
-        if (!event.target.matches("#lead-form")) return;
-        event.preventDefault();
-        const data = Object.fromEntries(new FormData(event.target).entries());
-        toast("Ďakujeme, dopyt je odoslaný.");
-        els.body.innerHTML = `
-          <article class="kb-card">
-            <span class="kb-kicker">Odoslané</span>
-            <h3>Ďakujeme za dopyt</h3>
-            <p>Ozveme sa na ${esc(data.email)} čo najskôr. Kontakt: ${esc(data.name)}.</p>
-            <div class="kb-actions">
-              <button class="kb-btn" type="button" data-action="restart">Nový výber</button>
-              <button class="kb-btn alt" type="button" data-action="start">Späť na poradcu</button>
-            </div>
-          </article>
-        `;
-      });
-
-      renderIntro();
-      const params = new URLSearchParams(window.location.search);
-      if (params.get("open") === "1") {
-        openWidget(params.get("mode") || undefined);
-      }
-      setTimeout(() => {
-        if (!state.open) els.teaser.classList.add("show");
-      }, 700);
-    })();
-  </script>
+  <span class="plate"></span>
+</div></button>
+<div id="kb-teaser"><button class="tx" id="teaserClose">×</button><b>Beano poradí s výberom</b><span>Vyberie produkt, mletie, balenie a cenu bez zdĺhavého hľadania.</span></div>
+<section id="kb-widget">
+  <header class="kb-head"><div class="brand"><div class="brand-logo"><div class="buddy clean-bot" data-mood="idle" aria-hidden="true">
+  <i class="steam s1"></i><i class="steam s2"></i><i class="steam s3"></i>
+  <div class="cup">
+    <span class="cup-face"><i class="eye left"></i><i class="eye right"></i><i class="smile"></i></span>
+    <span class="cup-handle"></span>
+  </div>
+  <span class="plate"></span>
+</div></div><div><b>Beano</b><span><i class="live"></i>Coffee assistant</span></div></div><div class="h-actions"><button class="hbtn" id="reset">↺</button><button class="hbtn close" id="close">×</button></div></header>
+  <nav class="mode-tabs"><button id="tabCalc" class="active"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10v20H7V2Zm2 3v3h6V5H9Zm0 5v2h2v-2H9Zm4 0v2h2v-2h-2Zm-4 4v2h2v-2H9Zm4 0v2h2v-2h-2Z"/></svg>Poradca</button><button id="tabChat"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v11H7l-3 4V4Z"/></svg>Beano chat</button></nav>
+  <div class="calc"><div class="progress-row"><button class="back" id="back">‹</button><div class="step-pill" id="stepPill">1</div><div class="bars" id="bars"></div><div class="step-count" id="stepCount">1/6</div></div><main class="body" id="body"></main><footer class="footer"><button class="next" id="next">Pokračovať ›</button></footer></div>
+  <div class="chat"><div class="chat-msgs" id="chatMsgs"></div><div class="chat-chips"><button class="chip" data-q="espresso">Espresso</button><button class="chip" data-q="filter">Filter</button><button class="chip" data-q="darcek">Darček</button></div><form class="chat-in" id="chatForm"><input id="chatInput" placeholder="Napíšte, akú kávu hľadáte"><button class="send">›</button></form></div>
+</section>
+<script>
+const CONFIG={LEAD_ENDPOINT:"",ADD_TO_CART_ENDPOINT:""};
+const icons={espresso:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M5 7h12v5h2a3 3 0 0 1 0 6h-2a5 5 0 0 1-5 4H10a5 5 0 0 1-5-5V7Zm12 7v2h2a1 1 0 0 0 0-2h-2ZM7 2h2v4H7V2Zm5 0h2v4h-2V2Z"/></svg>',filter:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16l-6 8v7l-4 2v-9L4 4Z"/></svg>',moka:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 2h8l1 5-2 3 2 3-1 9H8l-1-9 2-3-2-3 1-5Z"/></svg>',auto:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M5 3h14v18H5V3Zm3 3v5h8V6H8Zm1 9h6v2H9v-2Z"/></svg>',beans:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 3c4 1 6 5 4 9s-6 5-9 3c-1-4 1-9 5-12Zm8 6c4 2 5 7 3 11-4 1-8-1-10-5 4 0 7-2 7-6Z"/></svg>',gift:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 7h-3.2A3 3 0 0 0 12 3.8 3 3 0 0 0 7.2 7H4v5h1v9h14v-9h1V7Zm-8 0h-2a1 1 0 1 1 1-1c0 .35.18.69.45 1Zm2 0c.27-.31.45-.65.45-1a1 1 0 1 1 1 1H14Z"/></svg>'};
+const products=[
+ {id:'espresso',name:'Espresso Blend Classic',sku:'KB-ESP',price:8.9,tag:'najbezpečnejšia voľba',desc:'Čokoládovo-orieškový profil, stabilná crema a nízka kyslosť.',match:{brew:['espresso','auto','moka'],taste:['classic','strong','safe'],roast:['medium','dark'],milk:['yes','sometimes'],grind:['beans','espresso','moka']},body:84,acid:22,intensity:78},
+ {id:'milk',name:'Milk Velvet Espresso',sku:'KB-MILK',price:9.6,tag:'najlepšie do mlieka',desc:'Sladší espresso blend pre cappuccino, latte a flat white.',match:{brew:['espresso','auto','moka'],taste:['classic','strong'],roast:['medium','dark'],milk:['yes'],grind:['beans','espresso','moka']},body:88,acid:18,intensity:74},
+ {id:'filter',name:'Filter Ethiopia Light',sku:'KB-FIL',price:11.9,tag:'svetlý filter',desc:'Ovocnejší a čistejší profil pre V60, batch brew a AeroPress.',match:{brew:['filter','aero'],taste:['fruit','soft'],roast:['light'],milk:['no'],grind:['beans','filter']},body:45,acid:74,intensity:43},
+ {id:'soft',name:'Low Acid Colombia',sku:'KB-LOW',price:10.4,tag:'jemná káva',desc:'Mäkká každodenná káva pre zákazníkov, ktorí nechcú ostrú aciditu.',match:{brew:['espresso','auto','moka','french'],taste:['soft','safe'],roast:['medium'],milk:['no','sometimes'],grind:['beans','espresso','moka','filter','french']},body:62,acid:16,intensity:48},
+ {id:'gift',name:'Degustačný balík 3×250 g',sku:'KB-GIFT',price:24.9,tag:'darčekový výber',desc:'Tri rôzne kávy v bezpečnom darčekovom výbere.',match:{brew:['gift','espresso','filter','moka','auto'],taste:['safe','classic','fruit','soft'],roast:['medium','light','dark'],milk:['yes','no','sometimes'],grind:['beans']},body:60,acid:40,intensity:56}
+];
+const steps=[
+ {key:'brew',title:'Ako pripravujete kávu?',sub:'Vyberte najbližšiu možnosť.',notice:'Beano podľa toho zvolí vhodný produkt.',opts:[['espresso','Espresso','Páka, crema, plnšie telo','8,90 €','espresso'],['auto','Automat','Zrnková káva na každý deň','8,90 €','auto'],['filter','Filter / V60','Čistejší a ľahší profil','11,90 €','filter']]},
+ {key:'taste',title:'Akú chuť chcete?',sub:'Bez odborných slov.',notice:'Stačí pocit v šálke.',opts:[['classic','Čokoláda / orechy','Klasika s nižšou kyslosťou','top','beans'],['fruit','Ovocnejšia','Sviežejšia výberová chuť','filter','filter'],['soft','Jemná','Menej horká a kyslá','jemná','beans']]},
+ {key:'roast',title:'Aké praženie?',sub:'Ak neviete, nechajte stredné.',notice:'Stredné je najuniverzálnejšie.',opts:[['light','Svetlejšie','Viac ovocia, hlavne filter','light','filter'],['medium','Stredné','Najbezpečnejšia voľba','best','beans'],['dark','Tmavšie','Silnejšia chuť','strong','espresso']]},
+ {key:'milk',title:'Pijete ju s mliekom?',sub:'Pomôže to vybrať blend.',notice:'Do mlieka treba čitateľnejšiu kávu.',opts:[['yes','Áno','Cappuccino alebo latte','milk','espresso'],['sometimes','Občas','Univerzálna voľba','mix','beans'],['no','Nie','Hlavne čierna káva','black','filter']]},
+ {key:'grind',title:'Forma kávy?',sub:'Produktový variant.',notice:'Mletie sa uloží do odporúčania.',opts:[['beans','Zrnková','Najlepšia čerstvosť','variant','beans'],['espresso','Mletá espresso','Pre pákový kávovar','variant','espresso'],['filter','Mletá filter','Pre filter alebo V60','variant','filter']]},
+ {key:'pack',title:'Aké balenie?',sub:'Cena sa prepočíta.',notice:'Väčšie balenie zlepší hodnotu košíka.',opts:[['250','250 g','Na skúšku','8,90 €','beans'],['500','500 g','Lepší pomer','16,50 €','beans'],['1000','1 kg','Najvýhodnejšie','30,50 €','beans']]}
+];
+const $=id=>document.getElementById(id);const W=$('kb-widget'),B=$('kb-bubble'),T=$('kb-teaser'),body=$('body'),bars=$('bars'),next=$('next'),back=$('back'),stepPill=$('stepPill'),stepCount=$('stepCount');
+let s={i:0,a:{},qty:1,sub:false,cart:[],rec:null};
+const labels={brew:'Príprava',taste:'Chuť',roast:'Praženie',milk:'Mlieko',grind:'Forma',pack:'Balenie'};
+function esc(x){return String(x??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}function money(n){return n.toFixed(2).replace('.',',')+' €'}function defaultFor(st){if(st.key==='roast'){if(s.a.brew==='filter')return 'light';if(s.a.taste==='classic'||s.a.milk==='yes')return 'medium';return st.opts[0][0]}if(st.key==='grind'){if(s.a.brew==='espresso')return 'espresso';if(s.a.brew==='filter')return 'filter';return st.opts[0][0]}if(st.key==='pack'){return s.a.brew==='auto'?'1000':st.opts[0][0]}return st.opts[0][0]}function label(k,v){let st=steps.find(x=>x.key===k),o=st?.opts.find(x=>x[0]===v);return o?o[1]:'—'}function packMult(){return s.a.pack==='500'?1.85:s.a.pack==='1000'?3.43:1}function score(p){let n=0;for(const k in p.match){if(p.match[k].includes(s.a[k]))n+= k==='brew'?6:k==='taste'?4:2}if(s.a.milk==='yes'&&p.id==='milk')n+=4;if(s.a.brew==='filter'&&p.id==='filter')n+=5;return n}function ranked(){return products.map(p=>({...p,score:score(p),final:p.price*packMult()})).sort((a,b)=>b.score-a.score)}function current(){return s.rec||ranked()[0]}function total(){let p=current().final*s.qty;if(s.sub)p*=.9;return p}function cartTotal(){return s.cart.reduce((a,x)=>a+x.total,0)}function open(){W.classList.add('open');B.classList.add('hide');T.classList.remove('show');setBeanoMood('idle');render()}function close(){W.classList.remove('open');B.classList.remove('hide');setBeanoMood('idle')}function setMode(m){W.classList.toggle('chatmode',m==='chat');$('tabCalc').classList.toggle('active',m==='calc');$('tabChat').classList.toggle('active',m==='chat');if(m==='chat')chatInit();else render()}function updateCount(){let el=$('bubbleCount');if(!el)return;let n=s.cart.length;el.textContent=n>0?String(n):'';el.classList.toggle('show',n>0);if(n>0){el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop')}}
+function buddyHtml(){return '<div class="buddy clean-bot mini-bot" data-mood="idle" aria-hidden="true"><i class="steam s1"></i><i class="steam s2"></i><i class="steam s3"></i><div class="cup"><span class="cup-face"><i class="eye left"></i><i class="eye right"></i><i class="smile"></i></span><span class="cup-handle"></span></div><span class="plate"></span></div>'}
+function setBeanoMood(mood){const m=mood||'idle';document.querySelectorAll('.buddy').forEach(b=>{b.dataset.mood=m;b.classList.remove('move','blink');void b.offsetWidth;if(['select','result','cart','wave'].includes(m))b.classList.add('move')});clearTimeout(setBeanoMood.timer);if(m!=='idle'&&m!=='thinking'){setBeanoMood.timer=setTimeout(()=>document.querySelectorAll('.buddy').forEach(b=>{b.dataset.mood='idle';b.classList.remove('move')}),900)}}function nudgeBuddy(mood){setBeanoMood(mood==='pick'?'select':mood||'idle')}function reset(){s={i:0,a:{},qty:1,sub:false,cart:s.cart,rec:null};setMode('calc');render();setBeanoMood('idle')}
+function renderBars(){bars.innerHTML=steps.map((_,i)=>'<i class="bar '+(i<=s.i?'on':'')+'"></i>').join('');stepPill.textContent=s.i+1;stepCount.textContent=(s.i+1)+'/'+steps.length;back.disabled=s.i===0}
+function render(){s.rec=null;renderBars();let st=steps[s.i];if(!s.a[st.key])s.a[st.key]=defaultFor(st);let sel=s.a[st.key];next.disabled=!sel;next.textContent=s.i===steps.length-1?'Zobraziť odporúčanie':'Pokračovať';body.className='body no-scroll';body.innerHTML='<div class="buddy-tip">'+buddyHtml()+'<div><b>Beano tip</b><span>'+esc(st.notice)+'</span></div></div><section class="q"><h2>'+esc(st.title)+'</h2><p>'+esc(st.sub)+'</p></section><div class="card-list">'+st.opts.map(o=>card(st,o)).join('')+'</div>';body.querySelectorAll('.choice').forEach(btn=>btn.onclick=()=>{s.a[st.key]=btn.dataset.v;setBeanoMood('select');render();setBeanoMood('select')})}
+function card(st,o){let on=s.a[st.key]===o[0],isPrice=String(o[3]).includes('€');let price=isPrice?'<div class="price"><small>od</small><b>'+esc(o[3])+'</b></div>':'<div class="price badge"><b>'+esc(o[3])+'</b><small>voľba</small></div>';return '<button class="choice '+(on?'selected':'')+'" data-v="'+esc(o[0])+'"><div class="pic">'+(icons[o[4]]||icons.beans)+'</div><div class="choice-mid"><b>'+esc(o[1])+'</b><span>'+esc(o[2])+'</span></div>'+price+'</button>'}
+function result(){setBeanoMood('result');s.rec=ranked()[0];let r=s.rec,alts=ranked().slice(1,3),free=Math.max(0,35-total()),prog=Math.min(100,Math.round(total()/35*100)),sku=r.sku+'-'+(s.a.pack||'250'),variant=label('grind',s.a.grind)+' · '+label('pack',s.a.pack);next.disabled=false;next.textContent='Vložiť do košíka';stepPill.textContent='✓';stepCount.textContent='OK';bars.innerHTML=steps.map(()=>'<i class="bar on"></i>').join('');body.className='body no-scroll';body.innerHTML='<div class="summary">'+Object.keys(labels).map(k=>'<div class="sum"><span>'+labels[k]+'</span><b>'+esc(label(k,s.a[k]))+'</b></div>').join('')+'</div><div class="product"><div class="product-top"><div class="bag" data-pack="'+esc(s.a.pack||'250')+'g"></div><div class="prod-copy"><small>'+esc(r.tag)+'</small><h3>'+esc(r.name)+'</h3><p>'+esc(r.desc)+'</p></div></div><div class="product-meta"><div class="meta"><span>Cena</span><b>'+money(total())+'</b></div><div class="meta"><span>SKU</span><b>'+esc(sku)+'</b></div><div class="meta"><span>Mletie</span><b>'+esc(label('grind',s.a.grind))+'</b></div><div class="meta"><span>Balenie</span><b>'+esc(label('pack',s.a.pack))+'</b></div></div><div class="meters"><div class="meter"><span>Telo</span><i style="--w:'+r.body+'%"></i></div><div class="meter"><span>Acidita</span><i style="--w:'+r.acid+'%"></i></div><div class="meter"><span>Intenzita</span><i style="--w:'+r.intensity+'%"></i></div></div><div class="buy"><div class="buyrow"><div class="total"><span>'+esc(variant)+'</span><b>'+money(total())+'</b></div><div class="qty"><button id="minus">−</button><b>'+s.qty+'</b><button id="plus">+</button></div></div><button class="toggle '+(s.sub?'on':'')+'" id="sub">Predplatné −10 %</button></div><div class="ship"><div><span>'+(free>0?'Do dopravy zdarma chýba':'Doprava zdarma')+'</span><b>'+(free>0?money(free):'aktivovaná')+'</b></div><i style="--w:'+prog+'%"></i></div><div class="alts">'+alts.map(a=>'<div class="altcard"><span>alternatíva</span><b>'+esc(a.name)+'</b></div>').join('')+'</div></div>';$('minus').onclick=()=>{s.qty=Math.max(1,s.qty-1);result()};$('plus').onclick=()=>{s.qty=Math.min(9,s.qty+1);result()};$('sub').onclick=()=>{s.sub=!s.sub;result()}}
+function addCart(){setBeanoMood('cart');let r=current(),item={product:r.name,sku:r.sku+'-'+(s.a.pack||'250'),qty:s.qty,subscription:s.sub,total:total(),answers:{...s.a}};s.cart.push(item);updateCount();try{let old=JSON.parse(localStorage.getItem('kavabot_cart')||'[]');old.push(item);localStorage.setItem('kavabot_cart',JSON.stringify(old))}catch(e){}cartView(true)}
+function cartView(added){setMode('calc');stepPill.textContent=s.cart.length?'✓':'•';stepCount.textContent='cart';bars.innerHTML=steps.map(()=>'<i class="bar on"></i>').join('');back.disabled=false;next.disabled=s.cart.length===0;next.textContent=s.cart.length?'Poslať výber ›':'Spustiť poradcu ›';body.className='body no-scroll';if(!s.cart.length){body.innerHTML='<div class="empty"><b>Košík je prázdny</b><span>Najprv vyberte kávu cez poradcu.</span></div>';return}body.innerHTML='<section class="q"><h2>'+(added?'Produkt je v košíku':'Košík')+'</h2><p>Demo položky pripravené na napojenie na cart API.</p></section><div class="cart-list">'+s.cart.map(x=>'<div class="cart-item"><div class="mini-bag"></div><div><b>'+esc(x.product)+'</b><span>'+esc(x.sku)+' · '+x.qty+' ks'+(x.subscription?' · predplatné':'')+'</span></div><strong>'+money(x.total)+'</strong></div>').join('')+'</div><div class="ship"><div><span>Košík spolu</span><b>'+money(cartTotal())+'</b></div><i style="--w:'+Math.min(100,cartTotal()/35*100)+'%"></i></div>'}
+function lead(){let r=current();stepPill.textContent='→';stepCount.textContent='lead';next.textContent='Odoslať výber ›';next.disabled=false;body.className='body no-scroll';body.innerHTML='<section class="q"><h2>Kam poslať odporúčanie?</h2><p>Fallback, keď zákazník nechce hneď objednať alebo potrebuje poradiť.</p></section><form class="lead" id="lead"><div class="row2"><input name="name" placeholder="Meno" required><input name="email" type="email" placeholder="E-mail" required></div><input name="phone" placeholder="Telefón voliteľne"><textarea name="note">Zaujíma ma '+esc(r.name)+' – '+esc(label('grind',s.a.grind))+', '+esc(label('pack',s.a.pack))+'.</textarea><label class="cons"><input name="consent" type="checkbox" required> Súhlasím so spracovaním údajov pre vybavenie výberu.</label><div id="stat" class="status"></div></form>'}
+function submitLead(){let f=$('lead'),stat=$('stat');if(!f){lead();return}if(!f.reportValidity())return;let payload=Object.fromEntries(new FormData(f).entries());payload.cart=s.cart;payload.answers=s.a;payload.recommendation=current().name;try{let old=JSON.parse(localStorage.getItem('kavabot_leads')||'[]');old.push(payload);localStorage.setItem('kavabot_leads',JSON.stringify(old));stat.className='status show ok';stat.textContent='Výber je uložený v demo režime.';next.textContent='Hotovo'}catch(e){stat.className='status show err';stat.textContent='Odoslanie zlyhalo.'}}
+function chatInit(){setBeanoMood('wave');if($('chatMsgs').children.length)return;$('chatMsgs').innerHTML='<div class="msg"><div class="av"></div><div class="mb"><b>Som Beano.</b> Napíš espresso, filter alebo darček.</div></div>'}
+function chatSay(t,me=false){$('chatMsgs').insertAdjacentHTML('beforeend','<div class="msg '+(me?'me':'')+'">'+(me?'':'<div class="av"></div>')+'<div class="mb">'+esc(t)+'</div></div>')}
+function applyPreset(q){setBeanoMood('select');s={...s,i:0,a:{}};if(q.includes('filter'))s.a={brew:'filter',taste:'fruit',roast:'light',milk:'no',grind:'filter'};else if(q.includes('dar'))s.a={brew:'espresso',taste:'classic',roast:'medium',milk:'sometimes',grind:'beans',pack:'250'};else s.a={brew:'espresso',taste:'classic',roast:'medium',milk:'sometimes',grind:'beans'};setMode('calc');render();setBeanoMood('select')}
+B.onclick=open;$('close').onclick=close;$('reset').onclick=reset;$('tabCalc').onclick=()=>{setBeanoMood('idle');setMode('calc')};$('tabChat').onclick=()=>setMode('chat');$('teaserClose').onclick=e=>{e.stopPropagation();T.classList.remove('show')};T.onclick=open;back.onclick=()=>{if(stepCount.textContent==='cart'){reset();return}if(s.i>0){s.i--;setBeanoMood('select');render()}};next.onclick=()=>{if(stepCount.textContent==='lead'){submitLead();return}if(stepCount.textContent==='cart'){lead();return}if(s.rec){addCart();return}if(s.i<steps.length-1){s.i++;setBeanoMood('select');render()}else{setBeanoMood('thinking');next.disabled=true;next.textContent='Beano počíta';setTimeout(result,520)}};$('chatForm').onsubmit=e=>{e.preventDefault();let v=$('chatInput').value.trim();if(!v)return;chatSay(v,true);$('chatInput').value='';setBeanoMood('thinking');setTimeout(()=>{chatSay('Hotovo. Nastavím výber.');applyPreset(v.toLowerCase())},300)};document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{chatSay(c.textContent,true);setBeanoMood('select');applyPreset(c.dataset.q)});setTimeout(()=>T.classList.add('show'),700);render();updateCount();setBeanoMood('idle');
+</script>
 </body>
 </html>
