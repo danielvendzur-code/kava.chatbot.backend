@@ -777,18 +777,204 @@ body:before{
   .step-hero h2{font-size:19px}.footer{padding-left:12px;padding-right:12px}#kb-bubble{right:14px;bottom:14px}
 }
 @media(prefers-reduced-motion:reduce){.beano,.beano-steam,#kb-bubble,.bar{animation:none!important;transition:none!important}}
+
+/* ===== Beano attraction pass: motion, clarity, real chat ===== */
+#kb-widget{
+  width:424px;
+  height:min(724px,calc(100dvh - 24px));
+  border-radius:20px;
+  background:#f5f1ea;
+  border-color:rgba(57,43,34,.18);
+  box-shadow:0 32px 80px rgba(32,25,20,.24),0 8px 24px rgba(32,25,20,.11);
+}
+.kb-head{
+  height:112px;
+  flex-basis:112px;
+  padding:10px 58px 10px 12px;
+  background:
+    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px) 0 0/18px 18px,
+    linear-gradient(180deg,#211a16,#18120f);
+  overflow:hidden;
+}
+.kb-head:before{
+  display:block;
+  inset:auto -45px -70px auto;
+  width:210px;
+  height:140px;
+  border:1px solid rgba(215,166,83,.10);
+  border-radius:50%;
+  background:transparent;
+}
+.brand{height:100%;gap:13px;align-items:center}
+.brand-logo{
+  position:relative;width:92px;height:92px;flex:0 0 92px;border:0;border-radius:16px;
+  background:linear-gradient(145deg,#30261f,#19130f);
+  box-shadow:inset 0 0 0 1px rgba(255,231,186,.14),inset 0 -18px 30px rgba(0,0,0,.15),0 14px 26px rgba(0,0,0,.24);
+}
+.brand-logo:after{
+  content:"";position:absolute;left:14px;right:14px;bottom:9px;height:7px;border-radius:50%;
+  background:rgba(0,0,0,.28);filter:blur(4px);animation:beanoShadow 3s ease-in-out infinite;
+}
+.brand-logo .beano{width:58px;height:58px;scale:1.42;z-index:2}
+.brand-copy{min-width:0;flex:1}
+.brand-name{display:flex;align-items:center;gap:7px}
+.brand-name b{color:#fffaf2;font-size:17px;line-height:1}
+.brand-name span{
+  display:inline-flex;margin:0;padding:4px 6px;border:1px solid rgba(146,202,177,.23);
+  border-radius:5px;background:rgba(77,123,108,.14);color:#a9d4c3;font-size:7.5px;font-weight:950;
+  text-transform:uppercase;letter-spacing:.09em;
+}
+.brand-copy p{margin:8px 0 0;max-width:205px;color:#d2c8bd;font-size:10.5px;line-height:1.35;font-weight:650}
+.h-actions{position:absolute;right:10px;top:10px;display:grid;gap:6px}
+.hbtn{width:32px;height:32px;border-radius:9px;font-size:14px;background:rgba(255,255,255,.055)}
+.mode-tabs{height:52px;flex-basis:52px;padding:8px 10px;background:#e9e3da}
+.mode-tabs button{height:36px;border-radius:8px;font-size:11.5px}
+.mode-tabs button.active{border-color:#d7cdc1;box-shadow:0 4px 12px rgba(37,28,23,.08)}
+.progress-row{height:45px;flex-basis:45px;padding:7px 12px}
+.step-pill{height:22px;min-width:32px}
+.body{padding:13px 13px 10px}
+.step-hero{margin:0 0 11px;padding:0 2px}
+.step-kicker,.step-hero p,.step-insight{display:none!important}
+.step-hero h2{font-size:20px;color:#251d18}
+.card-list{gap:8px}
+.choice{
+  min-height:96px;grid-template-columns:88px minmax(0,1fr) 66px;
+  border-radius:12px;background:#fffdfa;border-color:#ded6cd;
+  box-shadow:0 5px 14px rgba(38,29,23,.045);
+}
+.choice:hover{border-color:#bcae9e;box-shadow:0 12px 24px rgba(38,29,23,.09)}
+.choice.selected{border-color:#2c6659;background:#f8fcfa;box-shadow:0 0 0 2px rgba(44,102,89,.14),0 12px 24px rgba(38,29,23,.08)}
+.choice.selected:before{left:63px;top:10px;width:19px;height:19px;border-radius:6px}
+.pic{border-right:1px solid #e4dcd2;background:#f2ece3;overflow:hidden}
+.pic:before{content:"";position:absolute;inset:13px;border-radius:13px;background:#fff9f0;box-shadow:0 5px 12px rgba(62,40,25,.07)}
+.pic:after{width:48px;height:48px;border-radius:13px;border-color:rgba(82,55,38,.12)}
+.pic svg{width:39px;height:39px;color:#71452c;filter:drop-shadow(0 3px 3px rgba(57,36,23,.10))}
+.pic-espresso{background:#efe0d4}.pic-auto{background:#dfe9e4}.pic-filter{background:#e2e8ed}
+.pic-beans{background:#eee4d6}.pic-gift{background:#eadfe6}.pic-moka{background:#e6e1dc}
+.pic-auto svg{color:#315d54}.pic-filter svg{color:#4b687b}.pic-gift svg{color:#80556e}
+.choice.selected .pic:before{background:#f7fffb}.choice.selected .pic{border-right-color:#cbded7}
+.choice-mid{padding:13px 9px 13px 13px}.choice-mid b{font-size:15px}.choice-mid span{font-size:10.6px}
+.price{font-size:11px}.price.badge b{background:#ede3d0}
+.footer{height:62px;flex-basis:62px;padding:8px 13px 10px}.next{height:44px;border-radius:10px}
+
+/* Softer mitts replace the old stick limbs. */
+.beano-arm{
+  top:29px;width:11px;height:11px;border:3px solid #261912;border-radius:3px;
+  background:#f0c977;box-shadow:inset 0 -3px 0 #c98f48;transform-origin:50% 50%;
+}
+.beano-arm.left{left:0;transform:rotate(-12deg)}
+.beano-arm.right{right:-2px;transform:rotate(12deg)}
+.beano-leg{display:none}
+.launcher-beano .beano-arm{display:none}
+.beano-cup{animation:cupBreath 3s ease-in-out infinite}
+.beano-coffee{overflow:hidden}
+.beano-coffee:after{
+  content:"";position:absolute;left:-8px;top:0;width:8px;height:4px;background:#d49a54;
+  animation:coffeeGlint 2.8s steps(4,end) infinite;
+}
+.beano-eye{transition:height .09s ease,top .09s ease}
+.beano-mouth{transition:width .14s ease,height .14s ease,transform .14s ease}
+.beano-spark{position:absolute;z-index:8;width:4px;height:4px;background:#f4cf7d;opacity:0}
+.beano-spark.a{left:2px;top:12px}.beano-spark.b{right:0;top:7px}.beano-spark.c{right:7px;bottom:4px}
+.beano[data-mood="idle"]{animation:beanoAlive 3s ease-in-out infinite}
+.beano[data-mood="select"].move{animation:beanoChoice .58s cubic-bezier(.18,.9,.22,1)}
+.beano[data-mood="thinking"]{animation:beanoThinking 1s steps(4,end) infinite}
+.beano[data-mood="thinking"] .beano-steam{animation-duration:.72s;background:#9ed1bf}
+.beano[data-mood="thinking"] .beano-cup{animation:thinkingCup .8s steps(2,end) infinite}
+.beano[data-mood="result"].move{animation:beanoReveal .82s cubic-bezier(.18,.9,.22,1)}
+.beano[data-mood="cart"].move{animation:beanoParty .95s cubic-bezier(.18,.9,.22,1)}
+.beano[data-mood="result"] .beano-spark,.beano[data-mood="cart"] .beano-spark{animation:sparkPop .7s steps(3,end) both}
+.beano[data-mood="result"] .beano-spark.b,.beano[data-mood="cart"] .beano-spark.b{animation-delay:.12s}
+.beano[data-mood="cart"] .beano-spark.c{animation-delay:.24s}
+.beano[data-mood="cart"] .beano-arm.left,.beano[data-mood="result"] .beano-arm.left{transform:translate(-4px,-6px) rotate(-28deg)}
+.beano[data-mood="cart"] .beano-arm.right,.beano[data-mood="result"] .beano-arm.right{transform:translate(4px,-6px) rotate(28deg)}
+.beano[data-mood="wave"] .beano-arm.right{animation:mittWave .65s steps(4,end) infinite}
+.launcher-beano{width:64px;height:64px;scale:1.34}
+#kb-bubble{
+  width:92px;height:92px;border-radius:27px;background:linear-gradient(145deg,#241c17,#17110e);
+  box-shadow:0 25px 54px rgba(32,25,20,.31),inset 0 0 0 1px rgba(255,235,196,.13);
+  animation:launcherPulse 3.2s ease-in-out infinite;
+}
+#kb-bubble:before{inset:7px;border-radius:20px;border-color:rgba(244,207,125,.11);animation:launcherFrame 3.2s ease-in-out infinite}
+#kb-bubble:after{content:"";position:absolute;left:19px;right:19px;bottom:11px;height:7px;border-radius:50%;background:rgba(0,0,0,.36);filter:blur(4px);animation:beanoShadow 3s ease-in-out infinite}
+#kb-bubble .beano-cup{animation:launcherCup 2.8s ease-in-out infinite}
+#kb-bubble:hover .launcher-beano{animation:launcherHello .72s cubic-bezier(.2,.9,.2,1)}
+@keyframes cupBreath{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.97) translateY(1px)}}
+@keyframes coffeeGlint{0%,42%{transform:translateX(0);opacity:0}55%{opacity:.9}75%,100%{transform:translateX(34px);opacity:0}}
+@keyframes beanoAlive{0%,100%{transform:translateY(1px) rotate(0)}28%{transform:translateY(-3px) rotate(-1deg)}58%{transform:translateY(-1px) rotate(1deg)}}
+@keyframes beanoChoice{0%{transform:translateY(0) scale(1)}28%{transform:translateY(-9px) scale(1.08) rotate(-6deg)}54%{transform:translateY(2px) scale(.96) rotate(3deg)}74%{transform:translateY(-3px) scale(1.02)}100%{transform:none}}
+@keyframes beanoThinking{0%{transform:translateX(-2px) rotate(-2deg)}50%{transform:translateX(2px) rotate(2deg)}100%{transform:translateX(-2px) rotate(-2deg)}}
+@keyframes thinkingCup{0%,100%{transform:translateY(0)}50%{transform:translateY(2px)}}
+@keyframes beanoReveal{0%{transform:scale(.8) rotate(-7deg);opacity:.4}35%{transform:translateY(-11px) scale(1.12) rotate(5deg);opacity:1}62%{transform:translateY(2px) scale(.96) rotate(-2deg)}82%{transform:translateY(-3px) scale(1.03)}100%{transform:none}}
+@keyframes beanoParty{0%{transform:none}20%{transform:translateY(-12px) scale(1.12) rotate(-8deg)}42%{transform:translateY(1px) scale(.95) rotate(7deg)}62%{transform:translateY(-8px) scale(1.08) rotate(-5deg)}82%{transform:translateY(1px) rotate(3deg)}100%{transform:none}}
+@keyframes mittWave{0%,100%{transform:translate(0,0) rotate(12deg)}50%{transform:translate(3px,-8px) rotate(42deg)}}
+@keyframes sparkPop{0%{opacity:0;transform:scale(.3)}45%{opacity:1;transform:translateY(-5px) scale(1.5) rotate(45deg)}100%{opacity:0;transform:translateY(-10px) scale(.5) rotate(90deg)}}
+@keyframes launcherPulse{0%,100%{transform:translateY(0);box-shadow:0 25px 54px rgba(32,25,20,.31),0 0 0 0 rgba(215,166,83,.20)}50%{transform:translateY(-4px);box-shadow:0 31px 60px rgba(32,25,20,.27),0 0 0 10px rgba(215,166,83,0)}}
+@keyframes launcherFrame{0%,100%{border-color:rgba(244,207,125,.10)}50%{border-color:rgba(244,207,125,.27)}}
+@keyframes launcherCup{0%,100%{transform:translateY(1px) rotate(0)}35%{transform:translateY(-3px) rotate(-2deg)}68%{transform:translateY(-1px) rotate(2deg)}}
+@keyframes launcherHello{0%{transform:none}30%{transform:translateY(-7px) rotate(-7deg) scale(1.08)}60%{transform:translateY(1px) rotate(5deg)}100%{transform:none}}
+@keyframes beanoShadow{0%,100%{transform:scaleX(1);opacity:.3}50%{transform:scaleX(.78);opacity:.18}}
+
+.page-note{max-width:470px}
+.page-note h1{font-size:44px;max-width:440px}
+.page-note p{max-width:420px;font-size:14px}
+.preview-cta{
+  display:inline-flex;align-items:center;gap:10px;margin-top:18px;height:42px;padding:0 15px;
+  border:0;border-radius:10px;background:#23473f;color:#fff;font-size:11px;font-weight:900;
+  box-shadow:0 10px 22px rgba(35,71,63,.18);
+}
+.preview-cta:after{content:"→";font-size:16px}.preview-cta:hover{background:#193a33;transform:translateY(-1px)}
+
+.chat{background:#f5f1ea}.chat-context{display:none!important}
+.chat-msgs{padding:16px 14px;gap:11px;background:linear-gradient(180deg,#f8f5ef,#f3eee7);overflow:auto}
+.msg{animation:chatIn .3s cubic-bezier(.2,.8,.2,1) both}
+.mb{max-width:88%;padding:11px 12px;border-radius:12px 12px 12px 3px;font-size:11.7px;line-height:1.45}
+.mb:before{font-size:7.5px}.msg.me .mb{background:#2a211b;border-color:#2a211b}
+.chat-product{
+  max-width:94%;margin-top:2px;padding:11px;border:1px solid #d7cbbd;border-radius:13px;
+  background:#fffdf9;box-shadow:0 10px 24px rgba(38,29,23,.08);
+}
+.chat-product-top{display:grid;grid-template-columns:54px 1fr;gap:10px;align-items:center}
+.chat-product-art{height:58px;border-radius:10px;background:linear-gradient(145deg,#211914,#5f402c);position:relative}
+.chat-product-art:before{content:"KB";position:absolute;left:9px;top:9px;color:#f2cf88;font-size:13px;font-weight:950}
+.chat-product small{display:block;color:#315d54;font-size:7.5px;font-weight:950;text-transform:uppercase;letter-spacing:.08em}
+.chat-product b{display:block;margin-top:3px;color:#251d18;font-size:13.5px;line-height:1.15}
+.chat-product p{margin:4px 0 0;color:#756b62;font-size:9.7px;line-height:1.35}
+.chat-product-buy{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:10px}
+.chat-product-buy strong{color:#251d18;font-size:16px}
+.chat-add{height:34px;padding:0 11px;border:0;border-radius:8px;background:#315d54;color:#fff;font-size:9.5px;font-weight:900}
+.chat-chips{gap:7px;padding:0 14px 10px}
+.chip{height:38px;border:0;border-radius:9px;color:#fff;font-size:10px;box-shadow:0 6px 14px rgba(38,29,23,.11)}
+.chip:nth-child(1){background:#315d54}.chip:nth-child(2){background:#4b687b}.chip:nth-child(3){background:#8b5b3d}
+.chip:hover{border:0;filter:brightness(1.06);box-shadow:0 9px 18px rgba(38,29,23,.16)}
+.chat-in{padding:10px 14px 13px}.chat-in input{height:44px;background:#fff}.send{width:44px;height:44px}
+@keyframes chatIn{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+
+@media(max-height:700px) and (min-width:721px){
+  .kb-head{height:96px;flex-basis:96px}.brand-logo{width:76px;height:76px;flex-basis:76px}.brand-logo .beano{scale:1.18}
+  .brand-copy p{margin-top:5px}.mode-tabs{height:47px;flex-basis:47px}.progress-row{height:42px;flex-basis:42px}
+  .body{padding-top:9px}.choice{min-height:78px}.step-hero{margin-bottom:7px}.pic:before{inset:9px}
+}
+@media(max-width:720px){
+  #kb-widget{width:100%;height:100dvh;border-radius:0;border:0}
+  .kb-head{height:106px;flex-basis:106px;padding-left:9px}.brand-logo{width:86px;height:86px;flex-basis:86px}.brand-logo .beano{scale:1.3}
+  .brand-copy p{max-width:180px;font-size:10px}.body{padding:11px 11px 9px}.choice{grid-template-columns:80px minmax(0,1fr) 60px;min-height:92px}
+  .choice.selected:before{left:57px}.pic:before{inset:11px}.pic svg{width:36px;height:36px}.step-hero h2{font-size:19px}
+  #kb-bubble{width:90px;height:90px}.launcher-beano{scale:1.3}
+}
 </style>
 </head>
 <body>
 <div class="page-note">
-  <div class="ey">Widget preview</div>
-  <h1>Beano coffee assistant</h1>
-  <p>Prémiový produktový poradca pre výber kávy, mletia a balenia.</p>
-  <div class="mini"><span>6 krokov</span><span>živé odporúčanie</span><span>košík</span></div>
+  <div class="ey">Beano · Coffee assistant</div>
+  <h1>Neviete, ktorú kávu si vybrať?</h1>
+  <p>Beano sa opýta pár jednoduchých otázok alebo poradí priamo v chate. Výsledkom je konkrétna káva pripravená do košíka.</p>
+  <button class="preview-cta" id="previewOpen">Spustiť Beano poradcu</button>
 </div>
 <button id="kb-bubble" aria-label="Otvoriť Beano poradcu"><span class="cart-badge" id="bubbleCount" aria-live="polite"></span>
 <span class="beano launcher-beano" data-mood="idle" aria-hidden="true">
   <i class="beano-steam one"></i><i class="beano-steam two"></i>
+  <i class="beano-spark a"></i><i class="beano-spark b"></i><i class="beano-spark c"></i>
   <i class="beano-arm left"></i><i class="beano-arm right"></i>
   <i class="beano-leg left"></i><i class="beano-leg right"></i>
   <span class="beano-cup"><i class="beano-rim"></i><i class="beano-coffee"></i><span class="beano-face"><i class="beano-eye left"></i><i class="beano-eye right"></i><i class="beano-mouth"></i></span><i class="beano-handle"></i></span>
@@ -797,17 +983,25 @@ body:before{
 <section id="kb-widget">
   <header class="kb-head"><div class="brand"><div class="brand-logo"><div class="beano" data-mood="idle" aria-hidden="true">
   <i class="beano-steam one"></i><i class="beano-steam two"></i>
+  <i class="beano-spark a"></i><i class="beano-spark b"></i><i class="beano-spark c"></i>
   <i class="beano-arm left"></i><i class="beano-arm right"></i>
   <i class="beano-leg left"></i><i class="beano-leg right"></i>
   <span class="beano-cup"><i class="beano-rim"></i><i class="beano-coffee"></i><span class="beano-face"><i class="beano-eye left"></i><i class="beano-eye right"></i><i class="beano-mouth"></i></span><i class="beano-handle"></i></span>
-</div></div><div><b>Beano</b><span><i class="live"></i>Coffee assistant</span></div></div><div class="h-actions"><button class="hbtn" id="reset" aria-label="Začať odznova" title="Začať odznova">↺</button><button class="hbtn close" id="close" aria-label="Zavrieť" title="Zavrieť">×</button></div></header>
+</div></div><div class="brand-copy"><div class="brand-name"><b>Beano</b><span>AI coffee guide</span></div><p id="beanoLine">Začnime tým, ako kávu pripravujete.</p></div></div><div class="h-actions"><button class="hbtn" id="reset" aria-label="Začať odznova" title="Začať odznova">↺</button><button class="hbtn close" id="close" aria-label="Zavrieť" title="Zavrieť">×</button></div></header>
   <nav class="mode-tabs"><button id="tabCalc" class="active"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10v20H7V2Zm2 3v3h6V5H9Zm0 5v2h2v-2H9Zm4 0v2h2v-2h-2Zm-4 4v2h2v-2H9Zm4 0v2h2v-2h-2Z"/></svg>Poradca</button><button id="tabChat"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v11H7l-3 4V4Z"/></svg>Beano chat</button></nav>
   <div class="calc"><div class="progress-row"><button class="back" id="back">‹</button><div class="step-pill" id="stepPill">1</div><div class="bars" id="bars"></div><div class="step-count" id="stepCount">1/6</div></div><main class="body" id="body"></main><footer class="footer"><button class="next" id="next">Pokračovať ›</button></footer></div>
-  <div class="chat"><div class="chat-context"><span class="chat-online">Beano je online</span><b>Čo vám dnes pripravíme?</b><p>Stačí spôsob prípravy, chuť alebo príležitosť.</p></div><div class="chat-msgs" id="chatMsgs"></div><div class="chat-chips"><button class="chip" data-q="espresso">Espresso</button><button class="chip" data-q="filter">Filter</button><button class="chip" data-q="darcek">Darček</button></div><form class="chat-in" id="chatForm"><input id="chatInput" placeholder="Napr. jemná káva do automatu"><button class="send" aria-label="Odoslať">→</button></form></div>
+  <div class="chat"><div class="chat-msgs" id="chatMsgs"></div><div class="chat-chips"><button class="chip" data-q="espresso">☕ Espresso</button><button class="chip" data-q="filter">◇ Filter</button><button class="chip" data-q="darcek">□ Darček</button></div><form class="chat-in" id="chatForm"><input id="chatInput" placeholder="Napr. jemná káva do automatu"><button class="send" aria-label="Odoslať">→</button></form></div>
 </section>
 <script>
 const CONFIG={LEAD_ENDPOINT:"",ADD_TO_CART_ENDPOINT:""};
-const icons={espresso:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M5 7h12v5h2a3 3 0 0 1 0 6h-2a5 5 0 0 1-5 4H10a5 5 0 0 1-5-5V7Zm12 7v2h2a1 1 0 0 0 0-2h-2ZM7 2h2v4H7V2Zm5 0h2v4h-2V2Z"/></svg>',filter:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16l-6 8v7l-4 2v-9L4 4Z"/></svg>',moka:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 2h8l1 5-2 3 2 3-1 9H8l-1-9 2-3-2-3 1-5Z"/></svg>',auto:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M5 3h14v18H5V3Zm3 3v5h8V6H8Zm1 9h6v2H9v-2Z"/></svg>',beans:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M8 3c4 1 6 5 4 9s-6 5-9 3c-1-4 1-9 5-12Zm8 6c4 2 5 7 3 11-4 1-8-1-10-5 4 0 7-2 7-6Z"/></svg>',gift:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M20 7h-3.2A3 3 0 0 0 12 3.8 3 3 0 0 0 7.2 7H4v5h1v9h14v-9h1V7Zm-8 0h-2a1 1 0 1 1 1-1c0 .35.18.69.45 1Zm2 0c.27-.31.45-.65.45-1a1 1 0 1 1 1 1H14Z"/></svg>'};
+const icons={
+ espresso:'<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 20h23v9c0 6-5 10-11 10h-1c-6 0-11-4-11-10v-9Z" fill="#fff4de" stroke="currentColor" stroke-width="3"/><path d="M33 23h3a6 6 0 0 1 0 12h-5" fill="none" stroke="currentColor" stroke-width="3"/><path d="M8 40h29" stroke="currentColor" stroke-width="3"/><path d="M17 16c-3-4 3-5 0-9M25 16c-3-4 3-5 0-9" fill="none" stroke="#c58b4d" stroke-width="3" stroke-linecap="round"/></svg>',
+ auto:'<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="5" width="28" height="38" rx="4" fill="#f8fbf9" stroke="currentColor" stroke-width="3"/><rect x="15" y="10" width="18" height="9" rx="2" fill="#d7ebe4" stroke="currentColor" stroke-width="2"/><circle cx="19" cy="14.5" r="2" fill="#d5a04f"/><path d="M18 25h12M24 25v6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M17 31h14v7H17z" fill="#fff1d9" stroke="currentColor" stroke-width="2"/></svg>',
+ filter:'<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 10h30L29 27H19L9 10Z" fill="#f4f8fa" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M15 15h18M18 20h12" stroke="#86a6b7" stroke-width="2"/><path d="M18 31h13v9H18zM14 41h21" fill="#fff4de" stroke="currentColor" stroke-width="3"/><path d="M24 27v4" stroke="#c58b4d" stroke-width="3" stroke-linecap="round"/></svg>',
+ beans:'<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M17 8c9 2 13 12 8 21S12 42 5 37C3 26 7 14 17 8Z" fill="#d8a66a" stroke="currentColor" stroke-width="3"/><path d="M16 12c2 8-5 13-6 22" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M34 17c8 4 10 13 5 21-8 2-15-2-18-10 7 0 11-4 13-11Z" fill="#bc7d4d" stroke="currentColor" stroke-width="3"/></svg>',
+ moka:'<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M15 5h18l3 10-5 6 4 6-2 16H15l-2-16 4-6-5-6 3-10Z" fill="#f1ede8" stroke="currentColor" stroke-width="3"/><path d="M14 15h22M16 28h18M19 8h10" stroke="currentColor" stroke-width="2.5"/><path d="M36 16h5v12h-6" fill="none" stroke="#9f6542" stroke-width="3"/></svg>',
+ gift:'<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 19h34v24H7V19Z" fill="#fff5ed" stroke="currentColor" stroke-width="3"/><path d="M5 13h38v9H5z" fill="#ead7e4" stroke="currentColor" stroke-width="3"/><path d="M24 13v30" stroke="currentColor" stroke-width="3"/><path d="M24 13c-7 0-11-2-11-6 5-3 10 0 11 6Zm0 0c7 0 11-2 11-6-5-3-10 0-11 6Z" fill="#d69aac" stroke="currentColor" stroke-width="2.5"/></svg>'
+};
 const products=[
  {id:'espresso',name:'Espresso Blend Classic',sku:'KB-ESP',price:8.9,tag:'najbezpečnejšia voľba',desc:'Čokoládovo-orieškový profil, stabilná crema a nízka kyslosť.',match:{brew:['espresso','auto','moka'],taste:['classic','strong','safe'],roast:['medium','dark'],milk:['yes','sometimes'],grind:['beans','espresso','moka']},body:84,acid:22,intensity:78},
  {id:'milk',name:'Milk Velvet Espresso',sku:'KB-MILK',price:9.6,tag:'najlepšie do mlieka',desc:'Sladší espresso blend pre cappuccino, latte a flat white.',match:{brew:['espresso','auto','moka'],taste:['classic','strong'],roast:['medium','dark'],milk:['yes'],grind:['beans','espresso','moka']},body:88,acid:18,intensity:74},
@@ -816,30 +1010,32 @@ const products=[
  {id:'gift',name:'Degustačný balík 3×250 g',sku:'KB-GIFT',price:24.9,tag:'darčekový výber',desc:'Tri rôzne kávy v bezpečnom darčekovom výbere.',match:{brew:['gift','espresso','filter','moka','auto'],taste:['safe','classic','fruit','soft'],roast:['medium','light','dark'],milk:['yes','no','sometimes'],grind:['beans']},body:60,acid:40,intensity:56}
 ];
 const steps=[
- {key:'brew',title:'Ako pripravujete kávu?',sub:'Vyberte najbližšiu možnosť.',notice:'Beano podľa toho zvolí vhodný produkt.',opts:[['espresso','Espresso','Páka, crema, plnšie telo','8,90 €','espresso'],['auto','Automat','Zrnková káva na každý deň','8,90 €','auto'],['filter','Filter / V60','Čistejší a ľahší profil','11,90 €','filter']]},
- {key:'taste',title:'Akú chuť chcete?',sub:'Bez odborných slov.',notice:'Stačí pocit v šálke.',opts:[['classic','Čokoláda / orechy','Klasika s nižšou kyslosťou','top','beans'],['fruit','Ovocnejšia','Sviežejšia výberová chuť','filter','filter'],['soft','Jemná','Menej horká a kyslá','jemná','beans']]},
- {key:'roast',title:'Aké praženie?',sub:'Ak neviete, nechajte stredné.',notice:'Stredné je najuniverzálnejšie.',opts:[['light','Svetlejšie','Viac ovocia, hlavne filter','light','filter'],['medium','Stredné','Najbezpečnejšia voľba','best','beans'],['dark','Tmavšie','Silnejšia chuť','strong','espresso']]},
- {key:'milk',title:'Pijete ju s mliekom?',sub:'Pomôže to vybrať blend.',notice:'Do mlieka treba čitateľnejšiu kávu.',opts:[['yes','Áno','Cappuccino alebo latte','milk','espresso'],['sometimes','Občas','Univerzálna voľba','mix','beans'],['no','Nie','Hlavne čierna káva','black','filter']]},
- {key:'grind',title:'Forma kávy?',sub:'Produktový variant.',notice:'Mletie sa uloží do odporúčania.',opts:[['beans','Zrnková','Najlepšia čerstvosť','variant','beans'],['espresso','Mletá espresso','Pre pákový kávovar','variant','espresso'],['filter','Mletá filter','Pre filter alebo V60','variant','filter']]},
- {key:'pack',title:'Aké balenie?',sub:'Cena sa prepočíta.',notice:'Väčšie balenie zlepší hodnotu košíka.',opts:[['250','250 g','Na skúšku','8,90 €','beans'],['500','500 g','Lepší pomer','16,50 €','beans'],['1000','1 kg','Najvýhodnejšie','30,50 €','beans']]}
+ {key:'brew',title:'Ako pripravujete kávu?',sub:'Vyberte najbližšiu možnosť.',notice:'Najprv si vyberme spôsob prípravy.',opts:[['espresso','Espresso','Páka, crema, plnšie telo','8,90 €','espresso'],['auto','Automat','Zrnková káva na každý deň','8,90 €','auto'],['filter','Filter / V60','Čistejší a ľahší profil','11,90 €','filter']]},
+ {key:'taste',title:'Akú chuť chcete?',sub:'Bez odborných slov.',notice:'Aký profil má byť vo vašej šálke?',opts:[['classic','Čokoláda / orechy','Klasika s nižšou kyslosťou','top','beans'],['fruit','Ovocnejšia','Sviežejšia výberová chuť','filter','filter'],['soft','Jemná','Menej horká a kyslá','jemná','beans']]},
+ {key:'roast',title:'Aké praženie?',sub:'Ak neviete, nechajte stredné.',notice:'Stredné praženie je bezpečná voľba.',opts:[['light','Svetlejšie','Viac ovocia, hlavne filter','light','filter'],['medium','Stredné','Najbezpečnejšia voľba','best','beans'],['dark','Tmavšie','Silnejšia chuť','strong','espresso']]},
+ {key:'milk',title:'Pijete ju s mliekom?',sub:'Pomôže to vybrať blend.',notice:'Mlieko výrazne mení správny výber.',opts:[['yes','Áno','Cappuccino alebo latte','milk','espresso'],['sometimes','Občas','Univerzálna voľba','mix','beans'],['no','Nie','Hlavne čierna káva','black','filter']]},
+ {key:'grind',title:'Forma kávy?',sub:'Produktový variant.',notice:'Zrnková káva si drží najviac arómy.',opts:[['beans','Zrnková','Najlepšia čerstvosť','variant','beans'],['espresso','Mletá espresso','Pre pákový kávovar','variant','espresso'],['filter','Mletá filter','Pre filter alebo V60','variant','filter']]},
+ {key:'pack',title:'Aké balenie?',sub:'Cena sa prepočíta.',notice:'Koľko kávy chcete mať doma?',opts:[['250','250 g','Na skúšku','8,90 €','beans'],['500','500 g','Lepší pomer','16,50 €','beans'],['1000','1 kg','Najvýhodnejšie','30,50 €','beans']]}
 ];
-const $=id=>document.getElementById(id);const W=$('kb-widget'),B=$('kb-bubble'),T=$('kb-teaser'),body=$('body'),bars=$('bars'),next=$('next'),back=$('back'),stepPill=$('stepPill'),stepCount=$('stepCount');
+const $=id=>document.getElementById(id);const W=$('kb-widget'),B=$('kb-bubble'),T=$('kb-teaser'),body=$('body'),bars=$('bars'),next=$('next'),back=$('back'),stepPill=$('stepPill'),stepCount=$('stepCount'),beanoLine=$('beanoLine');
 let s={i:0,a:{},qty:1,sub:false,cart:[],rec:null};
 const labels={brew:'Príprava',taste:'Chuť',roast:'Praženie',milk:'Mlieko',grind:'Forma',pack:'Balenie'};
-function esc(x){return String(x??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}function money(n){return n.toFixed(2).replace('.',',')+' €'}function defaultFor(st){if(st.key==='roast'){if(s.a.brew==='filter')return 'light';if(s.a.taste==='classic'||s.a.milk==='yes')return 'medium';return st.opts[0][0]}if(st.key==='grind'){if(s.a.brew==='espresso')return 'espresso';if(s.a.brew==='filter')return 'filter';return st.opts[0][0]}if(st.key==='pack'){return s.a.brew==='auto'?'1000':st.opts[0][0]}return st.opts[0][0]}function label(k,v){let st=steps.find(x=>x.key===k),o=st?.opts.find(x=>x[0]===v);return o?o[1]:'—'}function packMult(){return s.a.pack==='500'?1.85:s.a.pack==='1000'?3.43:1}function score(p){let n=0;for(const k in p.match){if(p.match[k].includes(s.a[k]))n+= k==='brew'?6:k==='taste'?4:2}if(s.a.milk==='yes'&&p.id==='milk')n+=4;if(s.a.brew==='filter'&&p.id==='filter')n+=5;return n}function ranked(){return products.map(p=>({...p,score:score(p),final:p.price*packMult()})).sort((a,b)=>b.score-a.score)}function current(){return s.rec||ranked()[0]}function total(){let p=current().final*s.qty;if(s.sub)p*=.9;return p}function cartTotal(){return s.cart.reduce((a,x)=>a+x.total,0)}function open(){W.classList.add('open');B.classList.add('hide');T.classList.remove('show');setBeanoMood('idle');render()}function close(){W.classList.remove('open');B.classList.remove('hide');setBeanoMood('idle')}function setMode(m){W.classList.toggle('chatmode',m==='chat');$('tabCalc').classList.toggle('active',m==='calc');$('tabChat').classList.toggle('active',m==='chat');if(m==='chat')chatInit();else render()}function updateCount(){let el=$('bubbleCount');if(!el)return;let n=s.cart.length;el.textContent=n>0?String(n):'';el.classList.toggle('show',n>0);if(n>0){el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop')}}
+function esc(x){return String(x??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}function money(n){return n.toFixed(2).replace('.',',')+' €'}function defaultFor(st){if(st.key==='roast'){if(s.a.brew==='filter')return 'light';if(s.a.taste==='classic'||s.a.milk==='yes')return 'medium';return st.opts[0][0]}if(st.key==='grind'){if(s.a.brew==='espresso')return 'espresso';if(s.a.brew==='filter')return 'filter';return st.opts[0][0]}if(st.key==='pack'){return s.a.brew==='auto'?'1000':st.opts[0][0]}return st.opts[0][0]}function label(k,v){let st=steps.find(x=>x.key===k),o=st?.opts.find(x=>x[0]===v);return o?o[1]:'—'}function packMult(){return s.a.pack==='500'?1.85:s.a.pack==='1000'?3.43:1}function score(p){let n=0;for(const k in p.match){if(p.match[k].includes(s.a[k]))n+= k==='brew'?6:k==='taste'?4:2}if(s.a.milk==='yes'&&p.id==='milk')n+=4;if(s.a.brew==='filter'&&p.id==='filter')n+=5;return n}function ranked(){return products.map(p=>({...p,score:score(p),final:p.price*packMult()})).sort((a,b)=>b.score-a.score)}function current(){return s.rec||ranked()[0]}function total(){let p=current().final*s.qty;if(s.sub)p*=.9;return p}function cartTotal(){return s.cart.reduce((a,x)=>a+x.total,0)}function open(){W.classList.add('open');B.classList.add('hide');T.classList.remove('show');setBeanoMood('wave');render()}function close(){W.classList.remove('open');B.classList.remove('hide');setBeanoMood('idle')}function setMode(m){W.classList.toggle('chatmode',m==='chat');$('tabCalc').classList.toggle('active',m==='calc');$('tabChat').classList.toggle('active',m==='chat');if(m==='chat'){beanoLine.textContent='Napíšte mi, čo máte radi. Odpoviem priamo tu.';chatInit()}else render()}function updateCount(){let el=$('bubbleCount');if(!el)return;let n=s.cart.length;el.textContent=n>0?String(n):'';el.classList.toggle('show',n>0);if(n>0){el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop')}}
 function setBeanoMood(mood){const m=mood||'idle';document.querySelectorAll('.beano').forEach(b=>{b.dataset.mood=m;b.classList.remove('move','blink');void b.offsetWidth;if(['select','result','cart','wave'].includes(m))b.classList.add('move')});clearTimeout(setBeanoMood.timer);if(m!=='idle'&&m!=='thinking'){setBeanoMood.timer=setTimeout(()=>document.querySelectorAll('.beano').forEach(b=>{b.dataset.mood='idle';b.classList.remove('move')}),900)}}function nudgeBuddy(mood){setBeanoMood(mood==='pick'?'select':mood||'idle')}function reset(){s={i:0,a:{},qty:1,sub:false,cart:s.cart,rec:null};setMode('calc');render();setBeanoMood('idle')}
 function renderBars(){bars.innerHTML=steps.map((_,i)=>'<i class="bar '+(i<=s.i?'on':'')+'"></i>').join('');stepPill.textContent=s.i+1;stepCount.textContent=(s.i+1)+'/'+steps.length;back.disabled=s.i===0}
-function render(){s.rec=null;renderBars();let st=steps[s.i];if(!s.a[st.key])s.a[st.key]=defaultFor(st);let sel=s.a[st.key];next.disabled=!sel;next.textContent=s.i===steps.length-1?'Zobraziť odporúčanie':'Pokračovať';body.className='body no-scroll';body.innerHTML='<section class="step-hero"><div class="step-kicker">Krok '+(s.i+1)+' z '+steps.length+'</div><h2>'+esc(st.title)+'</h2><p>'+esc(st.sub)+'</p></section><div class="step-insight">'+esc(st.notice)+'</div><div class="card-list">'+st.opts.map(o=>card(st,o)).join('')+'</div>';body.querySelectorAll('.choice').forEach(btn=>btn.onclick=()=>{s.a[st.key]=btn.dataset.v;setBeanoMood('select');render();setBeanoMood('select')})}
-function card(st,o){let on=s.a[st.key]===o[0],isPrice=String(o[3]).includes('€');let price=isPrice?'<div class="price"><small>od</small><b>'+esc(o[3])+'</b></div>':'<div class="price badge"><b>'+esc(o[3])+'</b><small>voľba</small></div>';return '<button class="choice '+(on?'selected':'')+'" data-v="'+esc(o[0])+'"><div class="pic">'+(icons[o[4]]||icons.beans)+'</div><div class="choice-mid"><b>'+esc(o[1])+'</b><span>'+esc(o[2])+'</span></div>'+price+'</button>'}
-function result(){setBeanoMood('result');s.rec=ranked()[0];let r=s.rec,alts=ranked().slice(1,3),free=Math.max(0,35-total()),prog=Math.min(100,Math.round(total()/35*100)),sku=r.sku+'-'+(s.a.pack||'250'),variant=label('grind',s.a.grind)+' · '+label('pack',s.a.pack);next.disabled=false;next.textContent='Vložiť do košíka';stepPill.textContent='✓';stepCount.textContent='OK';bars.innerHTML=steps.map(()=>'<i class="bar on"></i>').join('');body.className='body no-scroll';body.innerHTML='<div class="summary">'+Object.keys(labels).map(k=>'<div class="sum"><span>'+labels[k]+'</span><b>'+esc(label(k,s.a[k]))+'</b></div>').join('')+'</div><div class="product"><div class="product-top"><div class="bag" data-pack="'+esc(s.a.pack||'250')+'g"></div><div class="prod-copy"><small>'+esc(r.tag)+'</small><h3>'+esc(r.name)+'</h3><p>'+esc(r.desc)+'</p></div></div><div class="product-meta"><div class="meta"><span>Cena</span><b>'+money(total())+'</b></div><div class="meta"><span>SKU</span><b>'+esc(sku)+'</b></div><div class="meta"><span>Mletie</span><b>'+esc(label('grind',s.a.grind))+'</b></div><div class="meta"><span>Balenie</span><b>'+esc(label('pack',s.a.pack))+'</b></div></div><div class="meters"><div class="meter"><span>Telo</span><i style="--w:'+r.body+'%"></i></div><div class="meter"><span>Acidita</span><i style="--w:'+r.acid+'%"></i></div><div class="meter"><span>Intenzita</span><i style="--w:'+r.intensity+'%"></i></div></div><div class="buy"><div class="buyrow"><div class="total"><span>'+esc(variant)+'</span><b>'+money(total())+'</b></div><div class="qty"><button id="minus">−</button><b>'+s.qty+'</b><button id="plus">+</button></div></div><button class="toggle '+(s.sub?'on':'')+'" id="sub">Predplatné −10 %</button></div><div class="ship"><div><span>'+(free>0?'Do dopravy zdarma chýba':'Doprava zdarma')+'</span><b>'+(free>0?money(free):'aktivovaná')+'</b></div><i style="--w:'+prog+'%"></i></div><div class="alts">'+alts.map(a=>'<div class="altcard"><span>alternatíva</span><b>'+esc(a.name)+'</b></div>').join('')+'</div></div>';$('minus').onclick=()=>{s.qty=Math.max(1,s.qty-1);result()};$('plus').onclick=()=>{s.qty=Math.min(9,s.qty+1);result()};$('sub').onclick=()=>{s.sub=!s.sub;result()}}
+function render(){s.rec=null;renderBars();let st=steps[s.i];if(!s.a[st.key])s.a[st.key]=defaultFor(st);let sel=s.a[st.key];beanoLine.textContent=st.notice;next.disabled=!sel;next.textContent=s.i===steps.length-1?'Nájsť moju kávu':'Pokračovať';body.className='body no-scroll';body.innerHTML='<section class="step-hero"><h2>'+esc(st.title)+'</h2></section><div class="card-list">'+st.opts.map(o=>card(st,o)).join('')+'</div>';body.querySelectorAll('.choice').forEach(btn=>btn.onclick=()=>{s.a[st.key]=btn.dataset.v;setBeanoMood('select');render();setBeanoMood('select')})}
+function card(st,o){let on=s.a[st.key]===o[0],isPrice=String(o[3]).includes('€'),iconKey=o[4]||'beans';let price=isPrice?'<div class="price"><small>od</small><b>'+esc(o[3])+'</b></div>':'<div class="price badge"><b>'+esc(o[3])+'</b><small>voľba</small></div>';return '<button class="choice '+(on?'selected':'')+'" data-v="'+esc(o[0])+'"><div class="pic pic-'+esc(iconKey)+'">'+(icons[iconKey]||icons.beans)+'</div><div class="choice-mid"><b>'+esc(o[1])+'</b><span>'+esc(o[2])+'</span></div>'+price+'</button>'}
+function result(){setBeanoMood('result');s.rec=ranked()[0];let r=s.rec,alts=ranked().slice(1,3),free=Math.max(0,35-total()),prog=Math.min(100,Math.round(total()/35*100)),sku=r.sku+'-'+(s.a.pack||'250'),variant=label('grind',s.a.grind)+' · '+label('pack',s.a.pack);beanoLine.textContent='Toto je váš najlepší kávový match.';next.disabled=false;next.textContent='Pridať do košíka · '+money(total());stepPill.textContent='✓';stepCount.textContent='OK';bars.innerHTML=steps.map(()=>'<i class="bar on"></i>').join('');body.className='body no-scroll';body.innerHTML='<div class="summary">'+Object.keys(labels).map(k=>'<div class="sum"><span>'+labels[k]+'</span><b>'+esc(label(k,s.a[k]))+'</b></div>').join('')+'</div><div class="product"><div class="product-top"><div class="bag" data-pack="'+esc(s.a.pack||'250')+'g"></div><div class="prod-copy"><small>'+esc(r.tag)+'</small><h3>'+esc(r.name)+'</h3><p>'+esc(r.desc)+'</p></div></div><div class="product-meta"><div class="meta"><span>Cena</span><b>'+money(total())+'</b></div><div class="meta"><span>SKU</span><b>'+esc(sku)+'</b></div><div class="meta"><span>Mletie</span><b>'+esc(label('grind',s.a.grind))+'</b></div><div class="meta"><span>Balenie</span><b>'+esc(label('pack',s.a.pack))+'</b></div></div><div class="meters"><div class="meter"><span>Telo</span><i style="--w:'+r.body+'%"></i></div><div class="meter"><span>Acidita</span><i style="--w:'+r.acid+'%"></i></div><div class="meter"><span>Intenzita</span><i style="--w:'+r.intensity+'%"></i></div></div><div class="buy"><div class="buyrow"><div class="total"><span>'+esc(variant)+'</span><b>'+money(total())+'</b></div><div class="qty"><button id="minus">−</button><b>'+s.qty+'</b><button id="plus">+</button></div></div><button class="toggle '+(s.sub?'on':'')+'" id="sub">Predplatné −10 %</button></div><div class="ship"><div><span>'+(free>0?'Do dopravy zdarma chýba':'Doprava zdarma')+'</span><b>'+(free>0?money(free):'aktivovaná')+'</b></div><i style="--w:'+prog+'%"></i></div><div class="alts">'+alts.map(a=>'<div class="altcard"><span>alternatíva</span><b>'+esc(a.name)+'</b></div>').join('')+'</div></div>';$('minus').onclick=()=>{s.qty=Math.max(1,s.qty-1);result()};$('plus').onclick=()=>{s.qty=Math.min(9,s.qty+1);result()};$('sub').onclick=()=>{s.sub=!s.sub;result()}}
 function addCart(){setBeanoMood('cart');let r=current(),item={product:r.name,sku:r.sku+'-'+(s.a.pack||'250'),qty:s.qty,subscription:s.sub,total:total(),answers:{...s.a}};s.cart.push(item);updateCount();try{let old=JSON.parse(localStorage.getItem('kavabot_cart')||'[]');old.push(item);localStorage.setItem('kavabot_cart',JSON.stringify(old))}catch(e){}cartView(true)}
-function cartView(added){setMode('calc');stepPill.textContent=s.cart.length?'✓':'•';stepCount.textContent='cart';bars.innerHTML=steps.map(()=>'<i class="bar on"></i>').join('');back.disabled=false;next.disabled=s.cart.length===0;next.textContent=s.cart.length?'Poslať výber ›':'Spustiť poradcu ›';body.className='body no-scroll';if(!s.cart.length){body.innerHTML='<div class="empty"><b>Košík je prázdny</b><span>Najprv vyberte kávu cez poradcu.</span></div>';return}body.innerHTML='<section class="q"><h2>'+(added?'Produkt je v košíku':'Košík')+'</h2><p>Demo položky pripravené na napojenie na cart API.</p></section><div class="cart-list">'+s.cart.map(x=>'<div class="cart-item"><div class="mini-bag"></div><div><b>'+esc(x.product)+'</b><span>'+esc(x.sku)+' · '+x.qty+' ks'+(x.subscription?' · predplatné':'')+'</span></div><strong>'+money(x.total)+'</strong></div>').join('')+'</div><div class="ship"><div><span>Košík spolu</span><b>'+money(cartTotal())+'</b></div><i style="--w:'+Math.min(100,cartTotal()/35*100)+'%"></i></div>'}
+function cartView(added){setMode('calc');beanoLine.textContent=added?'Hotovo. Káva je pripravená v košíku.':'Tu je váš výber.';stepPill.textContent=s.cart.length?'✓':'•';stepCount.textContent='cart';bars.innerHTML=steps.map(()=>'<i class="bar on"></i>').join('');back.disabled=false;next.disabled=s.cart.length===0;next.textContent=s.cart.length?'Pokračovať k objednávke':'Spustiť poradcu';body.className='body no-scroll';if(!s.cart.length){body.innerHTML='<div class="empty"><b>Košík je prázdny</b><span>Najprv vyberte kávu cez poradcu.</span></div>';return}body.innerHTML='<section class="q"><h2>'+(added?'Káva je v košíku':'Košík')+'</h2><p>Skontrolujte produkt a pokračujte k objednávke.</p></section><div class="cart-list">'+s.cart.map(x=>'<div class="cart-item"><div class="mini-bag"></div><div><b>'+esc(x.product)+'</b><span>'+esc(x.sku)+' · '+x.qty+' ks'+(x.subscription?' · predplatné':'')+'</span></div><strong>'+money(x.total)+'</strong></div>').join('')+'</div><div class="ship"><div><span>Košík spolu</span><b>'+money(cartTotal())+'</b></div><i style="--w:'+Math.min(100,cartTotal()/35*100)+'%"></i></div>'}
 function lead(){let r=current();stepPill.textContent='→';stepCount.textContent='lead';next.textContent='Odoslať výber ›';next.disabled=false;body.className='body no-scroll';body.innerHTML='<section class="q"><h2>Kam poslať odporúčanie?</h2><p>Fallback, keď zákazník nechce hneď objednať alebo potrebuje poradiť.</p></section><form class="lead" id="lead"><div class="row2"><input name="name" placeholder="Meno" required><input name="email" type="email" placeholder="E-mail" required></div><input name="phone" placeholder="Telefón voliteľne"><textarea name="note">Zaujíma ma '+esc(r.name)+' – '+esc(label('grind',s.a.grind))+', '+esc(label('pack',s.a.pack))+'.</textarea><label class="cons"><input name="consent" type="checkbox" required> Súhlasím so spracovaním údajov pre vybavenie výberu.</label><div id="stat" class="status"></div></form>'}
 function submitLead(){let f=$('lead'),stat=$('stat');if(!f){lead();return}if(!f.reportValidity())return;let payload=Object.fromEntries(new FormData(f).entries());payload.cart=s.cart;payload.answers=s.a;payload.recommendation=current().name;try{let old=JSON.parse(localStorage.getItem('kavabot_leads')||'[]');old.push(payload);localStorage.setItem('kavabot_leads',JSON.stringify(old));stat.className='status show ok';stat.textContent='Výber je uložený v demo režime.';next.textContent='Hotovo'}catch(e){stat.className='status show err';stat.textContent='Odoslanie zlyhalo.'}}
-function chatInit(){setBeanoMood('wave');if($('chatMsgs').children.length)return;$('chatMsgs').innerHTML='<div class="msg"><div class="av"></div><div class="mb"><b>Som Beano.</b> Napíš espresso, filter alebo darček.</div></div>'}
-function chatSay(t,me=false){$('chatMsgs').insertAdjacentHTML('beforeend','<div class="msg '+(me?'me':'')+'">'+(me?'':'<div class="av"></div>')+'<div class="mb">'+esc(t)+'</div></div>')}
-function applyPreset(q){setBeanoMood('select');s={...s,i:0,a:{}};if(q.includes('filter'))s.a={brew:'filter',taste:'fruit',roast:'light',milk:'no',grind:'filter'};else if(q.includes('dar'))s.a={brew:'espresso',taste:'classic',roast:'medium',milk:'sometimes',grind:'beans',pack:'250'};else s.a={brew:'espresso',taste:'classic',roast:'medium',milk:'sometimes',grind:'beans'};setMode('calc');render();setBeanoMood('select')}
-B.onclick=open;$('close').onclick=close;$('reset').onclick=reset;$('tabCalc').onclick=()=>{setBeanoMood('idle');setMode('calc')};$('tabChat').onclick=()=>setMode('chat');$('teaserClose').onclick=e=>{e.stopPropagation();T.classList.remove('show')};T.onclick=open;back.onclick=()=>{if(stepCount.textContent==='cart'){reset();return}if(s.i>0){s.i--;setBeanoMood('select');render()}};next.onclick=()=>{if(stepCount.textContent==='lead'){submitLead();return}if(stepCount.textContent==='cart'){lead();return}if(s.rec){addCart();return}if(s.i<steps.length-1){s.i++;setBeanoMood('select');render()}else{setBeanoMood('thinking');next.disabled=true;next.textContent='Beano počíta';setTimeout(result,520)}};$('chatForm').onsubmit=e=>{e.preventDefault();let v=$('chatInput').value.trim();if(!v)return;chatSay(v,true);$('chatInput').value='';setBeanoMood('thinking');setTimeout(()=>{chatSay('Hotovo. Nastavím výber.');applyPreset(v.toLowerCase())},300)};document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{chatSay(c.textContent,true);setBeanoMood('select');applyPreset(c.dataset.q)});setTimeout(()=>T.classList.add('show'),700);render();updateCount();setBeanoMood('idle');
+function chatInit(){setBeanoMood('wave');if($('chatMsgs').children.length)return;$('chatMsgs').innerHTML='<div class="msg"><div class="mb"><b>Som Beano.</b> Napíšte, ako kávu pripravujete alebo akú chuť hľadáte. Odporučím konkrétny produkt priamo tu.</div></div>'}
+function chatSay(t,me=false){let box=$('chatMsgs');box.insertAdjacentHTML('beforeend','<div class="msg '+(me?'me':'')+'"><div class="mb">'+esc(t)+'</div></div>');box.scrollTop=box.scrollHeight}
+function chatPreset(q){if(q.includes('filter')||q.includes('v60'))return {a:{brew:'filter',taste:'fruit',roast:'light',milk:'no',grind:'filter',pack:'250'},why:'Čistý a ovocnejší profil pre filter.'};if(q.includes('dar'))return {a:{brew:'gift',taste:'safe',roast:'medium',milk:'sometimes',grind:'beans',pack:'250'},why:'Bezpečný darčekový výber s viacerými chuťami.'};if(q.includes('mlie')||q.includes('latte')||q.includes('capp'))return {a:{brew:'espresso',taste:'classic',roast:'medium',milk:'yes',grind:'beans',pack:'250'},why:'Sladší blend, ktorý zostane výrazný aj v mlieku.'};if(q.includes('jem')||q.includes('acid')||q.includes('kysl'))return {a:{brew:'auto',taste:'soft',roast:'medium',milk:'no',grind:'beans',pack:'250'},why:'Jemnejší profil s nízkou aciditou.'};if(q.includes('automat'))return {a:{brew:'auto',taste:'classic',roast:'medium',milk:'sometimes',grind:'beans',pack:'1000'},why:'Stabilná zrnková káva na každý deň.'};if(q.includes('espresso')||q.includes('pák'))return {a:{brew:'espresso',taste:'classic',roast:'medium',milk:'sometimes',grind:'beans',pack:'250'},why:'Plné espresso s čokoládovo-orieškovým profilom.'};return null}
+function chatProduct(r,why){let box=$('chatMsgs');box.insertAdjacentHTML('beforeend','<div class="msg"><div class="chat-product"><div class="chat-product-top"><div class="chat-product-art"></div><div><small>'+esc(r.tag)+'</small><b>'+esc(r.name)+'</b><p>'+esc(why)+'</p></div></div><div class="chat-product-buy"><strong>'+money(r.final)+'</strong><button class="chat-add">Pridať do košíka</button></div></div></div>');box.querySelectorAll('.chat-add').forEach(btn=>btn.onclick=()=>{setBeanoMood('cart');addCart()});box.scrollTop=box.scrollHeight}
+function askChat(q,shown){chatSay(shown||q,true);let preset=chatPreset(q.toLowerCase());setBeanoMood('thinking');beanoLine.textContent='Premýšľam nad najlepším profilom…';setTimeout(()=>{if(!preset){chatSay('Pomôže mi jedno slovo: espresso, automat, filter, mliečna, jemná alebo darčeková káva.');beanoLine.textContent='Skúste spôsob prípravy alebo chuť.';setBeanoMood('select');return}s={...s,i:0,a:preset.a,qty:1,sub:false,rec:null};s.rec=ranked()[0];beanoLine.textContent='Mám pre vás konkrétny tip.';chatSay('Podľa toho, čo píšete, by som vybral toto:');chatProduct(s.rec,preset.why);setBeanoMood('result')},520)}
+B.onclick=open;B.onmouseenter=()=>setBeanoMood('wave');B.onmouseleave=()=>{if(!W.classList.contains('open'))setBeanoMood('idle')};$('previewOpen').onclick=open;$('close').onclick=close;$('reset').onclick=reset;$('tabCalc').onclick=()=>{setBeanoMood('idle');setMode('calc')};$('tabChat').onclick=()=>setMode('chat');$('teaserClose').onclick=e=>{e.stopPropagation();T.classList.remove('show')};T.onclick=open;back.onclick=()=>{if(stepCount.textContent==='cart'){reset();return}if(s.i>0){s.i--;setBeanoMood('select');render()}};next.onclick=()=>{if(stepCount.textContent==='lead'){submitLead();return}if(stepCount.textContent==='cart'){lead();return}if(s.rec){addCart();return}if(s.i<steps.length-1){s.i++;setBeanoMood('select');render()}else{setBeanoMood('thinking');beanoLine.textContent='Spájam vaše odpovede…';next.disabled=true;next.textContent='Beano vyberá';setTimeout(result,650)}};$('chatForm').onsubmit=e=>{e.preventDefault();let v=$('chatInput').value.trim();if(!v)return;$('chatInput').value='';askChat(v)};document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>askChat(c.dataset.q,c.textContent.trim()));setInterval(()=>{document.querySelectorAll('.beano[data-mood="idle"]').forEach(b=>b.classList.add('blink'));setTimeout(()=>document.querySelectorAll('.beano').forEach(b=>b.classList.remove('blink')),150)},3400);setTimeout(()=>T.classList.add('show'),700);render();updateCount();setBeanoMood('idle');
 </script>
 </body>
 </html>
