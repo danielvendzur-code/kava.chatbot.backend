@@ -1,1210 +1,252 @@
 <!doctype html>
 <html lang="sk">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>Beano – pixel coffee assistant</title>
-<style>
-:root{
-  --coffee:#5a341f;--coffee2:#7a4a2c;--cream:#fff7ec;--cream2:#f4e4cb;--paper:#fffdf8;
-  --caramel:#c89146;--gold:#e8bd73;--ink:#30241b;--muted:#76685d;--line:#ead8bd;
-  --green:#2f8278;--green2:#1f665f;--orange:#ff8a4b;--danger:#c65642;
-  --shadow:0 26px 70px rgba(52,31,18,.22);--soft:0 12px 28px rgba(52,31,18,.10);
-}
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;color:var(--ink);background:#fff}button,input,textarea{font:inherit}button{cursor:pointer;-webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}
-body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 84% 17%,rgba(232,189,115,.22),transparent 26%),linear-gradient(90deg,#fff 0,#fff 56%,#fff8ed);pointer-events:none}.page-note{position:fixed;left:64px;top:70px;max-width:560px;color:#372419}.page-note .ey{display:inline-flex;align-items:center;gap:8px;height:34px;border:1px solid #ead0a8;border-radius:999px;padding:0 14px;background:#fff9ee;color:#7a4a2c;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.page-note h1{margin:20px 0 12px;font-size:56px;line-height:.98;letter-spacing:-.055em;font-weight:900}.page-note p{margin:0;color:#79695d;font-size:16px;line-height:1.65;font-weight:550}.page-note .mini{display:flex;gap:10px;margin-top:22px}.page-note .mini span{border:1px solid #ead8bd;border-radius:16px;background:#fff;padding:13px 15px;font-size:12px;font-weight:800;color:#6a4a35}
-@keyframes pulse{0%,100%{box-shadow:0 16px 38px rgba(80,46,25,.28),0 0 0 0 rgba(232,189,115,.35)}55%{box-shadow:0 16px 38px rgba(80,46,25,.28),0 0 0 14px rgba(232,189,115,0)}}@keyframes in{from{opacity:0;transform:translateY(14px) scale(.97)}to{opacity:1;transform:none}}@keyframes msg{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}@keyframes beam{to{left:105%}}@keyframes dot{0%,80%,100%{transform:scale(.6);opacity:.35}40%{transform:translateY(-3px) scale(1);opacity:1}}
-#kb-bubble{position:fixed;right:22px;bottom:22px;z-index:99998;width:76px;height:76px;border:0;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#f2c778,#8a5733 62%,#3b2418);color:#fff;animation:pulse 2.6s ease-in-out infinite;transition:.22s}#kb-bubble:hover{transform:translateY(-2px) scale(1.04)}#kb-bubble.hide{opacity:0;pointer-events:none;transform:scale(.84)}#kb-bubble svg{width:39px;filter:drop-shadow(0 5px 9px rgba(0,0,0,.25))}.cart-badge{position:absolute;right:-2px;top:3px;min-width:20px;height:20px;border-radius:999px;background:#22140d;color:#fff;font-size:10px;font-weight:900;display:grid;place-items:center;border:2px solid #fff}
-#kb-teaser{position:fixed;right:25px;bottom:112px;z-index:99997;width:292px;border:1px solid #ead8bd;border-radius:20px;border-bottom-right-radius:7px;background:#fffaf2;padding:15px 40px 15px 16px;box-shadow:0 18px 48px rgba(52,31,18,.18);opacity:0;pointer-events:none;transform:translateY(10px) scale(.95);transform-origin:bottom right;transition:.28s}#kb-teaser.show{opacity:1;pointer-events:auto;transform:none}#kb-teaser b{display:block;font-size:14px;font-weight:900;color:#2b1c13}#kb-teaser span{display:block;margin-top:4px;font-size:12.4px;line-height:1.43;color:#735e4e;font-weight:650}.tx{position:absolute;right:8px;top:8px;width:24px;height:24px;border:0;border-radius:50%;background:#f0e2cc;color:#7b604b;font-weight:900}
-#kb-widget{position:fixed;right:18px;bottom:16px;z-index:99999;width:410px;height:min(730px,calc(100dvh - 32px));border-radius:26px;background:#f7f8f6;box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;border:1px solid #eedbc0;opacity:0;pointer-events:none;transform:translateY(18px) scale(.965);transform-origin:bottom right;transition:.26s cubic-bezier(.2,.82,.2,1)}#kb-widget.open{opacity:1;pointer-events:auto;transform:none}.kb-head{height:68px;flex:0 0 68px;position:relative;display:flex;align-items:center;gap:10px;padding:12px 13px;color:#fff;background:linear-gradient(115deg,#5a341f,#a36439 70%,#ff9956);overflow:hidden}.kb-head:after{content:"";position:absolute;left:-45%;bottom:0;width:42%;height:3px;background:linear-gradient(90deg,transparent,#fff0c7,transparent);animation:beam 2.8s ease-in-out infinite alternate}.brand{position:relative;z-index:1;display:flex;align-items:center;gap:10px;min-width:0;flex:1}.brand-logo{width:42px;height:42px;border-radius:15px;background:#fff1d8;color:#5a341f;display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(255,255,255,.7)}.brand-logo svg{width:25px}.brand b{display:block;font-size:15px;line-height:1.06;font-weight:900}.brand span{display:flex;align-items:center;gap:6px;margin-top:4px;color:rgba(255,255,255,.86);font-size:11px;font-weight:800}.live{width:7px;height:7px;border-radius:50%;background:#83ffc6;box-shadow:0 0 10px rgba(131,255,198,.8)}.h-actions{z-index:1;display:flex;gap:8px}.hbtn{width:36px;height:36px;border:0;border-radius:50%;background:rgba(255,255,255,.9);color:#5a341f;font-size:18px;font-weight:900}.hbtn.close{background:rgba(255,255,255,.20);color:#fff}
-.mode-tabs{height:54px;flex:0 0 54px;padding:14px 13px 7px;background:#fff;display:grid;grid-template-columns:1fr 1fr;gap:8px}.mode-tabs button{height:36px;border:0;border-radius:999px;background:#eeeeed;color:#5f5b58;font-size:13px;font-weight:900;display:flex;align-items:center;justify-content:center;gap:8px}.mode-tabs button.active{background:linear-gradient(135deg,var(--green),#358d84);color:#fff;box-shadow:0 8px 18px rgba(47,130,120,.22)}.mode-tabs svg{width:15px;height:15px}
-.calc{min-height:0;flex:1;display:flex;flex-direction:column;background:linear-gradient(180deg,#fff,#f7f8f6)}.chat{min-height:0;flex:1;display:none;flex-direction:column;background:linear-gradient(180deg,#fff,#f7f8f6)}#kb-widget.chatmode .calc{display:none}#kb-widget.chatmode .chat{display:flex}.progress-row{height:46px;flex:0 0 46px;display:flex;align-items:center;gap:10px;padding:8px 13px;background:#fff}.back{width:31px;height:31px;border:1px solid #edf0ed;border-radius:50%;background:#fff;color:#7b706a;font-size:17px;font-weight:900}.step-pill{height:21px;min-width:35px;border-radius:999px;background:var(--green);color:#fff;display:grid;place-items:center;font-size:11px;font-weight:900}.bars{flex:1;display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.bar{height:6px;border-radius:999px;background:#dddeda}.bar.on{background:var(--green)}.step-count{font-size:11px;color:#ff6e34;font-weight:900}.body{flex:1;min-height:0;overflow:auto;padding:0 13px 12px}.body.no-scroll{overflow:hidden}.body::-webkit-scrollbar{width:4px}.body::-webkit-scrollbar-thumb{background:#d7c8b7;border-radius:999px}.q h2{margin:0;color:#224a46;font-size:18px;line-height:1.1;font-weight:900;letter-spacing:-.02em}.q p{margin:4px 0 10px;color:#69605a;font-size:12.3px;font-weight:600}.notice{height:auto;min-height:42px;border:1px solid #bfe8da;border-radius:12px;background:#ddf7eb;display:flex;align-items:center;gap:10px;padding:9px 11px;margin:0 0 16px;color:#27645d;font-size:11.2px;font-weight:850}.notice i{width:28px;height:28px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-style:normal;font-weight:900;flex:0 0 28px}.card-list{display:grid;gap:10px}.choice{position:relative;min-height:112px;border:1px solid #e4e5df;border-radius:18px;background:#fff;display:grid;grid-template-columns:110px 1fr 58px;overflow:hidden;text-align:left;padding:0;box-shadow:0 6px 16px rgba(30,25,20,.04);transition:.16s}.choice:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(30,25,20,.08)}.choice.selected{border-color:#18b896;box-shadow:0 0 0 2px rgba(24,184,150,.25),0 12px 24px rgba(30,25,20,.08)}.choice.selected:before{content:"✓";position:absolute;left:10px;top:10px;width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:900;z-index:2}.pic{background:linear-gradient(145deg,#edf7f1,#e9eee9);display:grid;place-items:center;color:#6f4c36}.pic svg{width:48px;height:48px;opacity:.86}.choice-mid{align-self:center;padding:12px 12px 12px 15px}.choice-mid b{display:block;color:#3b3938;font-size:16px;line-height:1.12;font-weight:900}.choice-mid span{display:block;margin-top:5px;color:#6f6863;font-size:12px;line-height:1.28;font-weight:600}.price{align-self:center;justify-self:center;color:#287b73;text-align:right;font-size:14px;font-weight:900;padding-right:12px}.price small{display:block;margin-top:2px;color:#ff6e34;font-size:10px;font-weight:900}.footer{height:58px;flex:0 0 58px;padding:8px 13px 12px;background:#fff;border-top:1px solid #e7e8e3}.next{width:100%;height:44px;border:0;border-radius:20px;background:linear-gradient(135deg,var(--green),#76bdb4);color:#fff;font-size:14px;font-weight:900;box-shadow:0 9px 18px rgba(47,130,120,.18)}.next:disabled{opacity:.48;box-shadow:none;cursor:not-allowed}.next.alt{background:linear-gradient(135deg,#5a341f,#c89146)}
-.summary{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:12px}.sum{border:1px solid #ead8bd;border-radius:14px;background:#fff;padding:9px}.sum span{display:block;color:#7b6b5e;font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.07em}.sum b{display:block;margin-top:3px;color:#31241a;font-size:12.5px;font-weight:900}.product{border:1px solid #e5d0ad;border-radius:22px;background:linear-gradient(180deg,#fffdf8,#fff5e5);padding:13px;box-shadow:var(--soft)}.product-top{display:grid;grid-template-columns:92px 1fr;gap:12px}.bag{height:124px;border-radius:20px;background:linear-gradient(155deg,#26170f,#5a341f 58%,#c89146);position:relative;color:#fff;box-shadow:0 14px 25px rgba(52,31,18,.18)}.bag:before{content:"KB";position:absolute;left:14px;top:14px;font-size:22px;font-weight:900;color:#f9dfa9}.bag:after{content:attr(data-pack);position:absolute;right:9px;bottom:9px;border-radius:999px;background:rgba(255,255,255,.16);padding:5px 8px;font-size:10px;font-weight:900}.prod-copy small{display:inline-flex;border-radius:999px;background:#f3e2c7;color:#6a452c;padding:5px 8px;font-size:9.5px;font-weight:900;text-transform:uppercase}.prod-copy h3{margin:8px 0 5px;color:#2f241d;font-size:23px;line-height:1;font-weight:900;letter-spacing:-.03em}.prod-copy p{margin:0;color:#6b625d;font-size:12px;line-height:1.38;font-weight:600}.meters{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:11px}.meter{border:1px solid var(--line);border-radius:13px;background:#fff;padding:8px}.meter span{display:block;color:#75685f;font-size:9px;font-weight:900;text-transform:uppercase}.meter i{display:block;height:6px;border-radius:999px;margin-top:6px;background:linear-gradient(90deg,#5a341f var(--w),#ead8bd var(--w))}.buy{margin-top:11px;border:1px solid #e5c99c;border-radius:17px;background:#fff;padding:10px}.buyrow{display:flex;align-items:center;justify-content:space-between;gap:10px}.total span{display:block;color:#75685f;font-size:9px;font-weight:900;text-transform:uppercase}.total b{display:block;color:#2f241d;font-size:23px;font-weight:900}.qty{display:inline-flex;align-items:center;border:1px solid #dec197;border-radius:999px;overflow:hidden;background:#fff}.qty button{width:30px;height:30px;border:0;background:#fff;color:#5a341f;font-weight:900}.qty b{min-width:28px;text-align:center;font-size:13px}.toggle{width:100%;margin-top:8px;height:36px;border:1px solid #e7d2ae;border-radius:13px;background:#fffaf0;color:#61422e;font-size:11.5px;font-weight:850}.toggle.on{border-color:#c89146;background:#fff0d5;color:#3b2418}.ship{margin-top:10px;border:1px solid #e6d1ad;border-radius:14px;background:#fffdf8;padding:9px}.ship div{display:flex;justify-content:space-between;color:#6d625a;font-size:10.7px;font-weight:800}.ship b{color:#2f241d}.ship i{display:block;height:7px;border-radius:999px;margin-top:7px;background:linear-gradient(90deg,#5a341f var(--w),#ead8bd var(--w))}.alts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}.altcard{border:1px solid var(--line);border-radius:14px;background:#fff;padding:9px}.altcard span{display:block;color:#76685d;font-size:8.8px;font-weight:900;text-transform:uppercase}.altcard b{display:block;margin-top:3px;color:#30241b;font-size:12px;line-height:1.15}.lead{display:grid;gap:8px}.lead input,.lead textarea{width:100%;border:1px solid #e0ddd4;border-radius:13px;background:#fff;height:40px;padding:0 11px;outline:0;color:#30241b;font-size:13px;font-weight:650}.lead textarea{height:66px;padding:9px 11px;resize:none}.lead input:focus,.lead textarea:focus{border-color:#c89146;box-shadow:0 0 0 3px rgba(200,145,70,.14)}.row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}.cons{display:flex;gap:8px;color:#6d625a;font-size:10.4px;line-height:1.3;font-weight:650}.cons input{width:16px;height:16px;accent-color:var(--green)}.status{display:none;border-radius:12px;padding:8px 10px;font-size:11px;font-weight:850}.status.show{display:block}.status.err{border:1px solid #f0bba9;background:#fff0ea;color:#a94132}.status.ok{border:1px solid #bddfc8;background:#eef9f0;color:#307644}.chat-msgs{flex:1;min-height:0;overflow:auto;padding:12px 13px;display:flex;flex-direction:column;gap:9px}.msg{display:flex;gap:8px;align-items:flex-end;animation:msg .22s ease both}.msg.me{justify-content:flex-end}.av{width:30px;height:30px;border-radius:50%;background:#5a341f;color:#f5d9a3;display:grid;place-items:center;flex:0 0 30px}.mb{max-width:82%;border:1px solid #e7e3d8;border-radius:17px;border-bottom-left-radius:6px;background:#fff;padding:10px 12px;color:#30241b;font-size:12.8px;line-height:1.45;font-weight:600}.msg.me .av{display:none}.msg.me .mb{background:#5a341f;color:#fff;border-color:#5a341f;border-bottom-left-radius:17px;border-bottom-right-radius:6px}.chat-chips{display:flex;flex-wrap:wrap;gap:7px;padding:0 13px 10px}.chip{border:1px solid #e0d5c5;border-radius:999px;background:#fff;padding:8px 11px;color:#4b3526;font-size:11.4px;font-weight:850}.chat-in{display:flex;gap:8px;padding:8px 13px 12px;border-top:1px solid #e7e8e3;background:#fff}.chat-in input{flex:1;height:40px;border:1px solid #dedbd3;border-radius:14px;padding:0 11px;outline:0}.send{width:42px;border:0;border-radius:14px;background:#5a341f;color:#fff;font-size:18px;font-weight:900}.cart-list{display:grid;gap:10px}.cart-item{border:1px solid #e1ded6;border-radius:16px;background:#fff;padding:10px;display:grid;grid-template-columns:44px 1fr auto;gap:10px;align-items:center}.mini-bag{width:44px;height:48px;border-radius:14px;background:linear-gradient(155deg,#26170f,#5a341f 60%,#c89146)}.cart-item b{display:block;color:#30241b;font-size:13px}.cart-item span{display:block;margin-top:3px;color:#73685f;font-size:11px}.cart-item strong{font-size:13px;color:#30241b}.empty{border:1px dashed #d7c7ad;border-radius:18px;background:#fffaf1;padding:18px;text-align:center;color:#6d625a}.empty b{display:block;font-size:19px;color:#30241b;margin-bottom:4px}.hide{display:none!important}
-@media(max-width:720px){.page-note{display:none}#kb-widget{inset:0;width:100%;height:100dvh;border-radius:0;border:0;transform:translateY(100%)}#kb-widget.open{transform:none}#kb-bubble{right:16px;bottom:16px}#kb-teaser{right:16px;bottom:104px}.kb-head{height:68px}.body{padding-left:11px;padding-right:11px}.choice{grid-template-columns:86px 1fr 50px;min-height:104px}.pic svg{width:38px}.prod-copy h3{font-size:20px}.row2{grid-template-columns:1fr}.page-note{position:static}}
-@media(max-height:700px) and (min-width:721px){#kb-widget{height:calc(100dvh - 18px);bottom:9px}.choice{min-height:96px}.notice{margin-bottom:9px}.product-top{grid-template-columns:78px 1fr}.bag{height:104px}.meters,.alts{display:none}.body{padding-bottom:8px}.footer{height:54px;padding-bottom:9px}}
-
-
-/* ===== V9 clean Beano bot fix: normal premium coffee avatar ===== */
-#kb-bubble{
-  background:linear-gradient(145deg,#fff5e6 0%,#e8bd73 58%,#7b4a2e 100%);
-  overflow:visible;
-}
-#kb-bubble svg{display:none}
-.brand-logo{
-  background:linear-gradient(145deg,#fff7e9,#eac176);
-  overflow:visible;
-}
-.brand-logo svg{display:none}
-
-.cart-badge{
-  display:none;
-  right:-4px;
-  top:0;
-  z-index:4;
-  background:#21120b;
-  border-color:#fff7ec;
-}
-.cart-badge.show{display:grid}
-.cart-badge.pop{animation:pop .32s ease}
-
-.buddy{
-  position:relative;
-  width:42px;
-  height:42px;
-  display:grid;
-  place-items:center;
-  transform-origin:50% 78%;
-  filter:drop-shadow(0 8px 13px rgba(38,22,12,.18));
-}
-.bubble-bot{width:60px;height:60px}
-.mini-bot{width:38px;height:38px}
-
-.clean-bot .cup{
-  position:relative;
-  width:30px;
-  height:25px;
-  border-radius:8px 8px 12px 12px;
-  background:linear-gradient(145deg,#fffaf2 0%,#f2d8aa 52%,#d59c50 100%);
-  border:2px solid rgba(76,45,27,.24);
-  box-shadow:
-    inset 0 2px 4px rgba(255,255,255,.72),
-    inset 0 -5px 9px rgba(91,54,31,.10),
-    0 7px 14px rgba(45,25,14,.15);
-  z-index:2;
-}
-.bubble-bot .cup{width:40px;height:33px;border-radius:10px 10px 15px 15px}
-.mini-bot .cup{width:28px;height:23px;border-radius:7px 7px 11px 11px}
-
-.clean-bot .cup:before{
-  content:"";
-  position:absolute;
-  left:5px;
-  right:5px;
-  top:4px;
-  height:6px;
-  border-radius:999px;
-  background:linear-gradient(90deg,#6b3f25,#3a2115);
-  opacity:.88;
-}
-.bubble-bot .cup:before{top:5px;height:7px}
-
-.cup-handle{
-  position:absolute;
-  right:-9px;
-  top:7px;
-  width:13px;
-  height:12px;
-  border:3px solid rgba(114,70,43,.55);
-  border-left:0;
-  border-radius:0 10px 10px 0;
-  background:transparent;
-}
-.bubble-bot .cup-handle{right:-11px;top:9px;width:15px;height:15px}
-.mini-bot .cup-handle{right:-8px;top:6px;width:11px;height:11px;border-width:2px}
-
-.plate{
-  position:absolute;
-  bottom:4px;
-  width:36px;
-  height:8px;
-  border-radius:999px;
-  background:linear-gradient(145deg,#fff7e8,#d6a762);
-  border:1px solid rgba(84,49,31,.16);
-  z-index:1;
-}
-.bubble-bot .plate{bottom:7px;width:48px;height:10px}
-.mini-bot .plate{bottom:4px;width:32px;height:7px}
-
-.cup-face{
-  position:absolute;
-  left:8px;
-  right:7px;
-  bottom:5px;
-  height:10px;
-}
-.bubble-bot .cup-face{left:11px;right:9px;bottom:7px}
-.mini-bot .cup-face{left:7px;right:6px;bottom:4px}
-
-.eye{
-  position:absolute;
-  top:0;
-  width:3.5px;
-  height:4.5px;
-  border-radius:50%;
-  background:#2b1a11;
-}
-.eye.left{left:1px}
-.eye.right{right:1px}
-.bubble-bot .eye{width:4px;height:5px}
-.smile{
-  position:absolute;
-  left:50%;
-  top:5px;
-  width:10px;
-  height:6px;
-  transform:translateX(-50%);
-  border:2px solid #2b1a11;
-  border-top:0;
-  border-left-color:transparent;
-  border-right-color:transparent;
-  border-radius:0 0 999px 999px;
-}
-.bubble-bot .smile{top:6px;width:12px;height:7px}
-
-.steam{
-  position:absolute;
-  top:-4px;
-  width:5px;
-  height:15px;
-  border-radius:999px;
-  background:linear-gradient(180deg,rgba(255,255,255,0),rgba(255,255,255,.88),rgba(255,255,255,0));
-  filter:blur(.2px);
-  opacity:.78;
-  animation:cleanSteam 2.2s ease-in-out infinite;
-}
-.s1{left:13px}
-.s2{left:20px;animation-delay:.35s}
-.s3{left:27px;animation-delay:.7s}
-.bubble-bot .steam{top:-4px;height:20px}
-.bubble-bot .s1{left:20px}
-.bubble-bot .s2{left:29px}
-.bubble-bot .s3{left:38px}
-.mini-bot .steam{height:12px;top:-3px}
-.mini-bot .s1{left:11px}
-.mini-bot .s2{left:18px}
-.mini-bot .s3{left:25px}
-
-@keyframes cleanSteam{
-  0%{opacity:0;transform:translateY(8px) scaleX(.72)}
-  35%{opacity:.78}
-  100%{opacity:0;transform:translateY(-9px) scaleX(1.08)}
-}
-@keyframes botNod{
-  0%{transform:translateY(0) rotate(0)}
-  36%{transform:translateY(-4px) rotate(-4deg)}
-  70%{transform:translateY(1px) rotate(3deg)}
-  100%{transform:translateY(0) rotate(0)}
-}
-@keyframes botCart{
-  0%{transform:scale(1) rotate(0)}
-  42%{transform:scale(1.10) rotate(5deg)}
-  100%{transform:scale(1) rotate(0)}
-}
-.buddy.move{animation:botNod .38s cubic-bezier(.2,.9,.2,1)}
-.buddy[data-mood="cart"].move{animation:botCart .42s ease}
-.buddy[data-mood="cart"] .cup{
-  background:linear-gradient(145deg,#fff9ed 0%,#f0c880 52%,#c89146 100%);
-}
-.buddy[data-mood="pick"] .cup{
-  background:linear-gradient(145deg,#fffaf2 0%,#f4dfb9 52%,#d8a45a 100%);
-}
-.buddy[data-mood="result"] .cup{
-  background:linear-gradient(145deg,#fff7e9 0%,#ecc377 52%,#b8793f 100%);
-}
-
-.buddy-tip{
-  display:grid;
-  grid-template-columns:44px 1fr;
-  gap:10px;
-  align-items:center;
-  margin:0 0 10px;
-  padding:9px 10px;
-  border:1px solid #ead8bd;
-  border-radius:17px;
-  background:linear-gradient(145deg,#fffdf8,#fff1dc);
-  box-shadow:0 7px 16px rgba(52,31,18,.045);
-}
-.buddy-tip .buddy{width:40px;height:40px}
-.buddy-tip b{display:block;color:#463225;font-size:12.8px;font-weight:900}
-.buddy-tip span{display:block;margin-top:2px;color:#76685d;font-size:11px;line-height:1.25;font-weight:700}
-
-.choice.selected{
-  border-color:#c89146;
-  box-shadow:0 0 0 2px rgba(200,145,70,.24),0 13px 28px rgba(52,31,18,.10);
-}
-.choice.selected:before{background:linear-gradient(145deg,#c89146,#7a4a2c)}
-.choice:active{transform:scale(.992)}
-.choice:hover .pic svg{transform:translateY(-1px) scale(1.05)}
-.pic svg{transition:.18s}
-
-.mode-tabs button{gap:7px}
-.chat-msgs .av{
-  background:linear-gradient(145deg,#fff0d2,#d69a50);
-  color:#5a341f;
-}
-.empty b:before{
-  content:"";
-  display:block;
-  width:42px;
-  height:42px;
-  margin:0 auto 8px;
-  border-radius:14px;
-  background:linear-gradient(145deg,#fff7e8,#d6a762);
-  border:1px solid rgba(84,49,31,.16);
-}
-
-@media(max-height:720px) and (min-width:521px){
-  .buddy-tip{display:none}
-}
-
-/* ===== Beano pixel-art assistant polish ===== */
-:root{
-  --px-bg:#1f1712;
-  --px-line:#2a1a10;
-  --px-cream:#ffe8bf;
-  --px-cream2:#f4cf91;
-  --px-cream3:#d99a55;
-  --px-coffee:#6e3c19;
-  --px-hi:#fff6dc;
-  --px-shadow:0 14px 28px rgba(34,20,12,.22);
-}
-body:before{background:radial-gradient(circle at 82% 16%,rgba(232,189,115,.20),transparent 24%),linear-gradient(90deg,#fff 0,#fff 58%,#fff7e9)}
-#kb-widget{width:392px;height:min(674px,calc(100dvh - 28px));border-radius:22px;background:#f8f6f1;border-color:#ead8bd}
-.kb-head{height:64px;flex-basis:64px;background:linear-gradient(130deg,#2b1a11,#5a341f 62%,#9b6337);padding:10px 12px}
-.kb-head:after{height:2px;background:linear-gradient(90deg,transparent,#ffe2a5,transparent)}
-.brand-logo{width:44px;height:44px;border-radius:13px;background:#1f1712;box-shadow:inset 0 0 0 1px rgba(255,232,191,.20),0 10px 20px rgba(0,0,0,.18)}
-.brand b{font-size:16px;letter-spacing:.01em}.brand span{font-size:11px;color:rgba(255,246,220,.78)}
-.hbtn{width:34px;height:34px;border-radius:12px;background:rgba(255,246,220,.92)}.hbtn.close{background:rgba(255,255,255,.14)}
-.mode-tabs{height:50px;flex-basis:50px;padding:10px 12px 7px;background:#fffaf2;border-bottom:1px solid #efe3cf}
-.mode-tabs button{height:33px;border-radius:13px;background:#f0ebe2;color:#6a5849;font-size:12px;transition:transform .18s ease,box-shadow .18s ease,background .18s ease}
-.mode-tabs button:hover{transform:translateY(-1px)}.mode-tabs button.active{background:linear-gradient(135deg,#263d39,#2f8278);box-shadow:0 9px 18px rgba(47,130,120,.20)}
-.progress-row{height:42px;flex-basis:42px;padding:7px 12px;background:#fffdf8}.back{width:29px;height:29px;border-radius:11px}.step-pill{height:20px;min-width:32px;background:#2f8278}.bars{gap:6px}.bar{height:5px;background:#e5ded3}.step-count{color:#9b6337;font-size:10px}
-.body{overflow:hidden;padding:0 12px 10px}.q h2{font-size:17px;color:#263d39}.q p{font-size:11.4px;margin-bottom:8px}.card-list{gap:8px}
-.buddy-tip{grid-template-columns:42px 1fr;margin-bottom:8px;padding:8px 9px;border-radius:14px;background:linear-gradient(145deg,#fffdf8,#fff0d6)}
-.buddy-tip b{font-size:12px}.buddy-tip span{font-size:10.3px;line-height:1.22}
-.choice{min-height:88px;grid-template-columns:76px 1fr 58px;border-radius:15px;border-color:#ebe2d5;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease,background .18s ease}
-.choice:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(52,31,18,.09)}
-.choice.selected{border-color:#2f8278;background:linear-gradient(180deg,#fff,#f3fbf6);box-shadow:0 0 0 2px rgba(47,130,120,.20),0 12px 24px rgba(52,31,18,.08)}
-.choice.selected:before{content:"";left:9px;top:9px;width:18px;height:18px;border-radius:7px;background:#2f8278;box-shadow:inset 0 0 0 4px #fff}
-.pic{background:linear-gradient(145deg,#f7f0e5,#efe4d3);color:#5a341f}.pic svg{width:34px;height:34px}.choice-mid{padding:10px 9px 10px 11px}.choice-mid b{font-size:14px}.choice-mid span{font-size:10.7px;line-height:1.24}.price{font-size:12px;padding-right:9px}.price small{font-size:9px}
-.footer{height:56px;flex-basis:56px;padding:7px 12px 11px;position:sticky;bottom:0}.next{height:42px;border-radius:15px;background:linear-gradient(135deg,#263d39,#2f8278)}
-.summary{grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:8px}.sum{padding:7px;border-radius:11px}.sum span{font-size:8px}.sum b{font-size:10.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.product{border-radius:18px;padding:11px;background:linear-gradient(180deg,#fffdf8,#fff4df)}.product-top{grid-template-columns:72px 1fr;gap:10px}.bag{height:96px;border-radius:16px}.bag:before{font-size:17px}.prod-copy small{font-size:8.6px;padding:4px 7px}.prod-copy h3{font-size:19px;margin:6px 0 4px}.prod-copy p{font-size:11px;line-height:1.28}
-.product-meta{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}.meta{border:1px solid #ead8bd;border-radius:11px;background:#fff;padding:7px}.meta span{display:block;color:#76685d;font-size:8px;font-weight:900;text-transform:uppercase}.meta b{display:block;margin-top:2px;color:#30241b;font-size:10.5px}
-.meters{gap:6px;margin-top:8px}.meter{padding:7px;border-radius:10px}.meter span{font-size:8px}.buy{margin-top:8px;padding:8px;border-radius:14px}.total b{font-size:19px}.toggle{height:32px;border-radius:11px}.ship{margin-top:8px;padding:8px;border-radius:11px}.alts{gap:6px;margin-top:8px}.altcard{padding:8px;border-radius:11px}
-.chat-msgs{overflow:hidden;padding:11px 12px;gap:8px}.chat-chips{padding:0 12px 9px;gap:7px}.chip{border-radius:12px;background:#fffaf2;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}.chip:hover{transform:translateY(-2px);border-color:#c89146;box-shadow:0 8px 18px rgba(52,31,18,.08)}.chip:active{transform:scale(.98)}
-.chat-in{padding:8px 12px 11px}.chat-in input{height:38px;border-radius:12px}.send{width:40px;border-radius:12px;background:#263d39}
-.cart-list{gap:8px}.cart-item{padding:9px;border-radius:13px}.empty{border-radius:14px;padding:16px}
-.cart-badge{display:none!important;right:-4px;top:-2px;min-width:21px;height:21px;border-radius:8px;background:#2f8278;border:2px solid #fff7ec;color:#fff}
-.cart-badge.show{display:grid!important}.cart-badge:empty{display:none!important}
-.cart-badge.pop{animation:badgePop .36s cubic-bezier(.2,.9,.2,1)}
-#kb-bubble{width:76px;height:76px;background:#1f1712;border:1px solid rgba(255,232,191,.26);box-shadow:0 18px 40px rgba(31,23,18,.26);animation:bubbleIdle 3.4s ease-in-out infinite}
-#kb-bubble:hover{transform:translateY(-3px) scale(1.04)}
-.buddy{image-rendering:pixelated;filter:drop-shadow(0 9px 0 rgba(0,0,0,.10)) drop-shadow(0 14px 18px rgba(31,23,18,.18));animation:beanoIdle 3.2s ease-in-out infinite}
-.bubble-bot{width:60px;height:60px}.mini-bot{width:38px;height:38px}
-.buddy:before,.buddy:after{content:"";position:absolute;width:6px;height:18px;background:#8f5528;top:25px;z-index:1;transform-origin:50% 0;box-shadow:0 6px 0 #6e3c19}
-.buddy:before{left:3px;transform:rotate(24deg)}.buddy:after{right:3px;transform:rotate(-24deg)}
-.brand-logo .buddy:before,.brand-logo .buddy:after,.mini-bot:before,.mini-bot:after{width:4px;height:12px;top:18px}
-.brand-logo .buddy:before,.mini-bot:before{left:1px}.brand-logo .buddy:after,.mini-bot:after{right:1px}
-.clean-bot .cup{width:34px;height:26px;border-radius:0;background:var(--px-cream);border:0;box-shadow:0 0 0 3px var(--px-line),0 -4px 0 var(--px-hi) inset,0 5px 0 var(--px-cream2) inset,5px 0 0 var(--px-cream2),-5px 0 0 var(--px-cream3),0 7px 0 #b87639,0 10px 0 rgba(0,0,0,.12);z-index:3}
-.bubble-bot .cup{width:42px;height:32px}.mini-bot .cup{width:28px;height:22px}
-.clean-bot .cup:before{left:4px;right:4px;top:4px;height:7px;border-radius:0;background:#6e3c19;box-shadow:0 0 0 2px #8f5528 inset;opacity:1}
-.clean-bot .cup:after{content:"";position:absolute;left:8px;bottom:-11px;width:5px;height:10px;background:#8f5528;box-shadow:16px 0 0 #8f5528}
-.mini-bot .cup:after{left:7px;bottom:-8px;width:4px;height:7px;box-shadow:12px 0 0 #8f5528}
-.cup-handle{right:-12px;top:9px;width:12px;height:14px;border:4px solid var(--px-line);border-left:0;border-radius:0;background:#ffe8bf;box-shadow:3px 0 0 #f4cf91 inset}
-.bubble-bot .cup-handle{right:-14px;top:10px;width:14px;height:17px}.mini-bot .cup-handle{right:-9px;top:6px;width:9px;height:11px;border-width:3px}
-.plate{bottom:0;width:42px;height:5px;border-radius:0;background:#1a130f;opacity:.20;border:0}.bubble-bot .plate{bottom:1px;width:52px;height:6px}.mini-bot .plate{bottom:1px;width:32px;height:4px}
-.cup-face{left:8px;right:8px;bottom:7px;height:9px}.bubble-bot .cup-face{left:11px;right:11px;bottom:8px}.mini-bot .cup-face{left:7px;right:7px;bottom:5px}
-.eye{top:0;width:5px;height:7px;border-radius:0;background:#1d1009}.eye.left{left:0}.eye.right{right:0}.bubble-bot .eye{width:5px;height:8px}.mini-bot .eye{width:4px;height:6px}
-.smile{top:7px;width:10px;height:3px;border:0;border-radius:0;background:#1d1009}.bubble-bot .smile{top:8px;width:12px;height:3px}.mini-bot .smile{top:6px;width:8px;height:2px}
-.steam{width:5px;height:5px;border-radius:0;background:#f7f3ed;filter:none;opacity:.85;animation:pixelSteam 2.4s steps(4,end) infinite;box-shadow:5px -5px 0 rgba(247,243,237,.76),0 -10px 0 rgba(247,243,237,.52)}
-.s1{left:14px;top:-15px}.s2{left:23px;top:-20px;animation-delay:.45s}.s3{display:none}.bubble-bot .s1{left:20px}.bubble-bot .s2{left:32px}.mini-bot .s1{left:11px;top:-12px}.mini-bot .s2{left:19px;top:-15px}
-.buddy[data-mood="idle"]{animation:beanoIdle 3.2s ease-in-out infinite}
-.buddy[data-mood="select"].move{animation:beanoSelect .34s cubic-bezier(.2,.9,.2,1)}
-.buddy[data-mood="thinking"]{animation:beanoThink .72s steps(2,end) infinite}.buddy[data-mood="thinking"] .steam{animation-duration:.9s}.buddy[data-mood="thinking"] .smile{width:5px;height:5px;top:6px}
-.buddy[data-mood="result"].move{animation:beanoResult .52s cubic-bezier(.2,.9,.2,1)}.buddy[data-mood="result"] .smile{width:13px;height:5px;top:6px}
-.buddy[data-mood="cart"].move{animation:beanoCart .62s cubic-bezier(.2,.9,.2,1)}.buddy[data-mood="cart"] .smile{width:15px;height:6px;top:5px}.buddy[data-mood="cart"]:before{transform:rotate(55deg) translateY(-4px)}.buddy[data-mood="cart"]:after{transform:rotate(-55deg) translateY(-4px)}
-.buddy[data-mood="select"]:before{transform:rotate(42deg)}.buddy[data-mood="select"]:after{transform:rotate(-14deg)}
-.buddy[data-mood="blink"] .eye,.buddy.blink .eye{height:2px;top:3px}
-.buddy[data-mood="wave"]:after{animation:beanoWave .8s ease-in-out infinite}
-.buddy.move{animation:beanoSelect .34s cubic-bezier(.2,.9,.2,1)}
-.buddy[data-mood="cart"] .cup,.buddy[data-mood="result"] .cup{box-shadow:0 0 0 3px var(--px-line),0 -4px 0 var(--px-hi) inset,0 5px 0 #f0bd73 inset,5px 0 0 #f0bd73,-5px 0 0 #d08b42,0 7px 0 #b87639,0 10px 0 rgba(0,0,0,.12)}
-.av{font-size:0;background:#1f1712;border-radius:10px}.av:before{content:"☕";font-size:15px;filter:saturate(.85)}
-@keyframes bubbleIdle{0%,100%{box-shadow:0 18px 40px rgba(31,23,18,.26),0 0 0 0 rgba(232,189,115,.28)}55%{box-shadow:0 18px 40px rgba(31,23,18,.26),0 0 0 12px rgba(232,189,115,0)}}
-@keyframes pixelSteam{0%{opacity:0;transform:translateY(7px)}35%{opacity:.9}100%{opacity:0;transform:translateY(-8px)}}
-@keyframes beanoIdle{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
-@keyframes beanoSelect{0%{transform:translateY(0) scale(1)}42%{transform:translateY(-5px) scale(1.03) rotate(-3deg)}100%{transform:translateY(0) scale(1)}}
-@keyframes beanoThink{0%,100%{transform:translateX(0)}50%{transform:translateX(2px)}}
-@keyframes beanoResult{0%{transform:translateY(0)}38%{transform:translateY(-7px) scale(1.05)}72%{transform:translateY(1px) scale(.99)}100%{transform:translateY(0)}}
-@keyframes beanoCart{0%{transform:translateY(0) scale(1)}30%{transform:translateY(-9px) scale(1.10) rotate(4deg)}58%{transform:translateY(1px) scale(.98) rotate(-3deg)}100%{transform:translateY(0) scale(1)}}
-@keyframes beanoWave{0%,100%{transform:rotate(-24deg)}45%{transform:rotate(-70deg) translateY(-4px)}}
-@keyframes badgePop{0%{transform:scale(.6)}60%{transform:scale(1.18)}100%{transform:scale(1)}}
-@media(max-height:760px) and (min-width:721px){#kb-widget{height:calc(100dvh - 18px);bottom:9px}.choice{min-height:78px}.buddy-tip{display:grid}.summary{display:none}.meters{display:none}.product-top{grid-template-columns:66px 1fr}.bag{height:86px}.ship{display:none}}
-@media(max-width:720px){#kb-widget{height:100dvh}.body{padding-left:10px;padding-right:10px}.choice{grid-template-columns:66px 1fr 52px;min-height:82px}.buddy-tip{grid-template-columns:38px 1fr}.summary{grid-template-columns:repeat(2,1fr)}}
-
-/* ===== Final Beano proportion pass ===== */
-#kb-bubble{
-  width:84px;
-  height:84px;
-  right:18px;
-  bottom:18px;
-  border-radius:24px;
-  background:
-    radial-gradient(circle at 31% 22%,rgba(255,232,191,.22),transparent 34%),
-    linear-gradient(145deg,#241812,#3a2418 58%,#6e3c19);
-}
-.bubble-bot{
-  width:78px;
-  height:78px;
-  transform-origin:50% 78%;
-}
-.bubble-bot:before,.bubble-bot:after{
-  width:7px;
-  height:22px;
-  top:35px;
-}
-.bubble-bot:before{left:2px}
-.bubble-bot:after{right:2px}
-.bubble-bot .cup{
-  width:54px;
-  height:40px;
-  box-shadow:
-    0 0 0 4px var(--px-line),
-    0 -5px 0 var(--px-hi) inset,
-    0 7px 0 var(--px-cream2) inset,
-    7px 0 0 var(--px-cream2),
-    -7px 0 0 var(--px-cream3),
-    0 9px 0 #b87639,
-    0 13px 0 rgba(0,0,0,.13);
-}
-.bubble-bot .cup:before{
-  left:6px;
-  right:6px;
-  top:5px;
-  height:10px;
-}
-.bubble-bot .cup:after{
-  left:13px;
-  bottom:-13px;
-  width:6px;
-  height:12px;
-  box-shadow:22px 0 0 #8f5528;
-}
-.bubble-bot .cup-handle{
-  right:-18px;
-  top:12px;
-  width:18px;
-  height:21px;
-  border-width:5px;
-}
-.bubble-bot .plate{
-  bottom:1px;
-  width:66px;
-  height:7px;
-}
-.bubble-bot .cup-face{
-  left:14px;
-  right:14px;
-  bottom:10px;
-}
-.bubble-bot .eye{
-  width:6px;
-  height:9px;
-}
-.bubble-bot .smile{
-  top:10px;
-  width:15px;
-  height:4px;
-}
-.bubble-bot .s1{left:25px;top:-17px}
-.bubble-bot .s2{left:39px;top:-22px}
-.brand-logo{
-  width:52px;
-  height:52px;
-  border-radius:16px;
-  overflow:visible;
-}
-.brand-logo .buddy{
-  width:52px;
-  height:52px;
-}
-.brand-logo .buddy:before,.brand-logo .buddy:after{
-  width:5px;
-  height:15px;
-  top:24px;
-}
-.brand-logo .buddy:before{left:2px}
-.brand-logo .buddy:after{right:2px}
-.brand-logo .cup{
-  width:38px;
-  height:29px;
-}
-.brand-logo .cup:after{
-  left:9px;
-  bottom:-10px;
-  width:5px;
-  height:9px;
-  box-shadow:17px 0 0 #8f5528;
-}
-.brand-logo .cup-handle{
-  right:-12px;
-  top:8px;
-  width:12px;
-  height:14px;
-  border-width:4px;
-}
-.brand-logo .plate{
-  width:46px;
-  bottom:1px;
-}
-.brand-logo .cup-face{
-  left:10px;
-  right:10px;
-  bottom:7px;
-}
-.brand-logo .eye{
-  width:5px;
-  height:7px;
-}
-.brand-logo .smile{
-  top:8px;
-  width:11px;
-}
-.brand-logo .s1{left:15px;top:-13px}
-.brand-logo .s2{left:25px;top:-17px}
-.buddy-tip{
-  grid-template-columns:54px 1fr;
-  min-height:60px;
-  align-items:center;
-  border-color:#ead0a8;
-}
-.buddy-tip .mini-bot{
-  width:52px;
-  height:52px;
-}
-.buddy-tip .mini-bot:before,.buddy-tip .mini-bot:after{
-  width:5px;
-  height:15px;
-  top:23px;
-}
-.buddy-tip .mini-bot .cup{
-  width:38px;
-  height:29px;
-}
-.buddy-tip .mini-bot .cup:after{
-  left:9px;
-  bottom:-10px;
-  width:5px;
-  height:9px;
-  box-shadow:17px 0 0 #8f5528;
-}
-.buddy-tip .mini-bot .cup-handle{
-  right:-12px;
-  top:8px;
-  width:12px;
-  height:14px;
-  border-width:4px;
-}
-.buddy-tip .mini-bot .plate{
-  width:46px;
-  bottom:1px;
-}
-.buddy-tip .mini-bot .cup-face{
-  left:10px;
-  right:10px;
-  bottom:7px;
-}
-.buddy-tip .mini-bot .eye{
-  width:5px;
-  height:7px;
-}
-.buddy-tip .mini-bot .smile{
-  top:8px;
-  width:11px;
-}
-.buddy-tip .mini-bot .s1{left:15px;top:-13px}
-.buddy-tip .mini-bot .s2{left:25px;top:-17px}
-.kb-head{
-  min-height:70px;
-  padding:9px 12px;
-}
-.brand{
-  gap:12px;
-}
-.brand b{
-  font-size:17px;
-}
-.mode-tabs button.active{
-  transform:translateY(-1px);
-}
-.choice{
-  grid-template-columns:82px 1fr 60px;
-  min-height:92px;
-  background:linear-gradient(180deg,#fff,#fffdf8);
-}
-.choice.selected{
-  background:linear-gradient(180deg,#ffffff,#eefaf4);
-}
-.pic{
-  border-right:1px solid #eee2d1;
-}
-.pic svg{
-  width:38px;
-  height:38px;
-}
-.choice-mid b{
-  font-size:14.7px;
-}
-.choice-mid span{
-  font-size:11px;
-}
-.product{
-  box-shadow:0 16px 32px rgba(52,31,18,.10);
-}
-.bag{
-  background:
-    linear-gradient(180deg,rgba(255,255,255,.08),transparent 36%),
-    linear-gradient(155deg,#26170f,#5a341f 58%,#c89146);
-}
-.meta{
-  background:linear-gradient(180deg,#fff,#fff9ee);
-}
-@media(max-width:720px){
-  #kb-bubble{right:14px;bottom:14px}
-  .brand-logo{width:50px;height:50px}
-  .choice{grid-template-columns:76px 1fr 54px;min-height:88px}
-  .buddy-tip{grid-template-columns:50px 1fr}
-}
-
-/* ===== Beano premium product pass ===== */
-:root{
-  --ink:#201914;--ink-soft:#332720;--ivory:#f7f3ec;--paper:#fffdf9;
-  --paper-2:#f1ebe2;--line:#e5ddd2;--muted:#756d65;
-  --forest:#315d54;--forest-deep:#23473f;--mint:#dcebe5;
-  --gold:#d7a653;--gold-soft:#f3dfb7;--copper:#9a5b35;
-  --shadow-premium:0 28px 70px rgba(32,25,20,.22),0 6px 20px rgba(32,25,20,.10);
-}
-body:before{
-  background:radial-gradient(circle at 78% 18%,rgba(49,93,84,.08),transparent 29%),linear-gradient(90deg,#fff 0,#fff 58%,#f8f4ed);
-}
-#kb-widget{
-  width:416px;height:min(720px,calc(100dvh - 28px));
-  border:1px solid rgba(73,54,42,.16);border-radius:22px;
-  background:var(--ivory);box-shadow:var(--shadow-premium);
-}
-.kb-head{
-  height:82px;flex-basis:82px;padding:10px 12px;gap:12px;
-  background:var(--ink);border-bottom:1px solid rgba(255,255,255,.08);overflow:visible;
-}
-.kb-head:before{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,transparent,rgba(255,255,255,.025),transparent)}
-.kb-head:after{display:none}
-.brand{gap:13px}
-.brand-logo{
-  width:62px;height:62px;flex:0 0 62px;border-radius:16px;
-  background:#2a211b;border:1px solid rgba(243,223,183,.18);
-  box-shadow:inset 0 0 0 4px rgba(255,255,255,.025),0 12px 24px rgba(0,0,0,.22);overflow:visible;
-}
-.brand b{font-size:17px;line-height:1;color:#fffaf2;letter-spacing:0}
-.brand span{margin-top:7px;color:#cfc5bb;font-size:10.5px;letter-spacing:.02em}
-.live{width:6px;height:6px;background:#8ed1b6;box-shadow:0 0 0 4px rgba(142,209,182,.10)}
-.h-actions{gap:6px}
-.hbtn{
-  width:36px;height:36px;border-radius:11px;background:#332923;color:#e9dfd5;
-  border:1px solid rgba(255,255,255,.08);font-size:16px;
-  transition:background .18s ease,transform .18s ease,color .18s ease;
-}
-.hbtn.close{background:#332923;color:#e9dfd5}
-.hbtn:hover{background:#44362e;color:#fff;transform:translateY(-1px)}
-.mode-tabs{
-  height:54px;flex-basis:54px;padding:9px 12px;gap:5px;
-  background:#eee8df;border-bottom:1px solid #ddd5ca;
-}
-.mode-tabs button{height:36px;border-radius:9px;background:transparent;color:#746b63;font-size:12px;box-shadow:none}
-.mode-tabs button svg{width:15px;height:15px}
-.mode-tabs button.active{
-  color:var(--ink);background:var(--paper);border:1px solid #ddd4c9;
-  box-shadow:0 3px 10px rgba(38,29,23,.07);transform:none;
-}
-.calc,.chat{background:var(--ivory)}
-.progress-row{
-  height:49px;flex-basis:49px;gap:9px;padding:8px 14px;
-  background:var(--paper);border-bottom:1px solid var(--line);
-}
-.back{width:31px;height:31px;border:1px solid var(--line);border-radius:9px;color:var(--ink-soft);background:#fff;font-size:18px}
-.back:disabled{opacity:.32}
-.step-pill{min-width:36px;height:24px;border-radius:7px;background:var(--forest-deep);color:#fff;font-size:10px}
-.bars{gap:5px}.bar{height:4px;border-radius:2px;background:#e5dfd6;transition:background .25s ease,transform .25s ease}
-.bar.on{background:var(--forest);transform:scaleY(1.25)}
-.step-count{min-width:27px;color:#8a7f75;font-size:10px;text-align:right}
-.body{padding:16px 14px 12px;overflow:hidden}
-.step-hero{margin:0 0 13px}
-.step-kicker{
-  display:flex;align-items:center;gap:7px;margin-bottom:6px;color:var(--forest);
-  font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.12em;
-}
-.step-kicker:before{content:"";width:7px;height:7px;border-radius:2px;background:var(--gold);box-shadow:0 0 0 3px var(--gold-soft)}
-.step-hero h2{margin:0;color:var(--ink);font-size:20px;line-height:1.12;font-weight:900;letter-spacing:0}
-.step-hero p{margin:5px 0 0;color:var(--muted);font-size:11.5px;line-height:1.4;font-weight:650}
-.step-insight{
-  display:flex;align-items:center;gap:9px;min-height:39px;margin:0 0 12px;padding:8px 10px;
-  border:1px solid #d2e2dc;border-radius:10px;background:#edf5f1;
-  color:#42665e;font-size:10.5px;line-height:1.3;font-weight:750;
-}
-.step-insight:before{
-  content:"B";width:22px;height:22px;flex:0 0 22px;display:grid;place-items:center;
-  border-radius:6px;background:var(--forest);color:#fff;font-size:10px;font-weight:950;
-}
-.card-list{gap:9px}
-.choice{
-  min-height:92px;grid-template-columns:78px minmax(0,1fr) 64px;
-  border:1px solid var(--line);border-radius:13px;background:var(--paper);
-  box-shadow:0 4px 12px rgba(38,29,23,.035);overflow:hidden;
-  transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease,background .18s ease;
-}
-.choice:hover{border-color:#cfc4b8;box-shadow:0 10px 22px rgba(38,29,23,.08);transform:translateY(-2px)}
-.choice.selected{border-color:var(--forest);background:#fbfefc;box-shadow:0 0 0 2px rgba(49,93,84,.14),0 10px 22px rgba(38,29,23,.07)}
-.choice.selected:before{
-  content:"✓";left:56px;top:9px;width:18px;height:18px;border-radius:5px;
-  background:var(--forest);color:#fff;box-shadow:0 0 0 3px #fff;font-size:10px;
-}
-.pic{position:relative;background:#f0ebe4;color:#6c4935;border-right:1px solid var(--line)}
-.pic:after{content:"";position:absolute;width:40px;height:40px;border-radius:11px;border:1px solid rgba(108,73,53,.13)}
-.pic svg{position:relative;z-index:1;width:25px;height:25px;color:#68442f;opacity:1}
-.choice.selected .pic{background:var(--mint);color:var(--forest-deep);border-right-color:#cfdfd9}
-.choice.selected .pic:after{border-color:rgba(49,93,84,.18)}
-.choice-mid{min-width:0;padding:12px 9px 12px 13px}
-.choice-mid b{font-size:14.5px;line-height:1.15;color:var(--ink);letter-spacing:0}
-.choice-mid span{margin-top:5px;font-size:10.7px;line-height:1.3;color:var(--muted)}
-.price{padding:0 10px 0 4px;color:var(--forest);font-size:11.5px;line-height:1.1}
-.price small{margin:0 0 4px;color:#9b8c7d;font-size:8px;text-transform:uppercase;letter-spacing:.06em}
-.price.badge b{display:inline-flex;padding:5px 7px;border-radius:7px;background:#f2e5ca;color:#80572e;font-size:9px;text-transform:uppercase}
-.price.badge small{display:none}
-.footer{height:64px;flex-basis:64px;padding:9px 14px 11px;background:var(--paper);border-top:1px solid var(--line)}
-.next{
-  height:44px;border-radius:11px;background:var(--forest-deep);box-shadow:0 9px 18px rgba(35,71,63,.18);
-  font-size:12.5px;letter-spacing:.01em;transition:background .18s ease,transform .18s ease,box-shadow .18s ease;
-}
-.next:hover:not(:disabled){background:#193b34;transform:translateY(-1px);box-shadow:0 12px 22px rgba(35,71,63,.24)}
-.next.alt{background:var(--ink)}
-
-/* Beano 2.0: a single expressive mascot in the active advisor view. */
-.beano{
-  position:relative;width:58px;height:58px;display:block;image-rendering:pixelated;
-  transform-origin:50% 82%;animation:beanoFloat 3.4s ease-in-out infinite;
-}
-.beano-cup{
-  position:absolute;left:10px;top:19px;width:38px;height:28px;z-index:3;background:#f4dca9;
-  clip-path:polygon(0 0,100% 0,100% 72%,88% 72%,88% 88%,72% 88%,72% 100%,28% 100%,28% 96%,12% 96%,12% 82%,0 82%);
-  box-shadow:inset 0 -6px 0 #d8a864,inset 5px 0 0 #ffeac1,inset -5px 0 0 #e7c17f;
-}
-.beano-rim{position:absolute;left:-3px;top:-4px;width:44px;height:9px;z-index:5;background:#ffeac1;border:3px solid #261912;box-shadow:inset 0 -3px 0 #c68b49}
-.beano-coffee{position:absolute;left:4px;right:4px;top:2px;height:4px;z-index:6;background:#6c3a22}
-.beano-face{position:absolute;left:8px;right:8px;top:12px;height:11px;z-index:7}
-.beano-eye{position:absolute;top:0;width:5px;height:6px;background:#241812;box-shadow:1px 1px 0 #fff4d6 inset}
-.beano-eye.left{left:1px}.beano-eye.right{right:1px}
-.beano-mouth{position:absolute;left:50%;top:7px;width:10px;height:5px;transform:translateX(-50%);border:3px solid #241812;border-top:0;border-radius:0 0 6px 6px}
-.beano-handle{
-  position:absolute;right:-11px;top:7px;width:12px;height:15px;z-index:2;
-  border:4px solid #261912;border-left:0;background:#e5bd79;box-shadow:inset -3px 0 0 #f6dda9;
-}
-.beano-arm,.beano-leg{position:absolute;z-index:2;background:#6f452d;transform-origin:50% 0}
-.beano-arm{top:29px;width:5px;height:17px;box-shadow:0 12px 0 #d29a54}
-.beano-arm.left{left:5px;transform:rotate(24deg)}.beano-arm.right{right:3px;transform:rotate(-24deg)}
-.beano-leg{top:43px;width:5px;height:10px}.beano-leg.left{left:20px}.beano-leg.right{right:18px}
-.beano-leg:after{content:"";position:absolute;bottom:-3px;width:9px;height:4px;background:#261912}
-.beano-leg.left:after{right:0}.beano-leg.right:after{left:0}
-.beano-steam{position:absolute;z-index:1;width:5px;height:5px;background:#f7dfae;opacity:0;animation:beanoSteam 2.5s steps(4,end) infinite}
-.beano-steam.one{left:23px;top:13px;box-shadow:5px -5px 0 rgba(247,223,174,.72)}
-.beano-steam.two{left:34px;top:10px;animation-delay:.8s;box-shadow:-5px -5px 0 rgba(247,223,174,.62)}
-.beano[data-mood="select"].move{animation:beanoPick .42s cubic-bezier(.2,.9,.2,1)}
-.beano[data-mood="thinking"]{animation:beanoThinkNew .7s steps(2,end) infinite}
-.beano[data-mood="thinking"] .beano-mouth{width:5px;height:5px;border:2px solid #241812;border-radius:0}
-.beano[data-mood="result"].move{animation:beanoWin .58s cubic-bezier(.2,.9,.2,1)}
-.beano[data-mood="cart"].move{animation:beanoCelebrate .68s cubic-bezier(.2,.9,.2,1)}
-.beano[data-mood="cart"] .beano-arm.left,.beano[data-mood="result"] .beano-arm.left{transform:rotate(58deg) translateY(-5px)}
-.beano[data-mood="cart"] .beano-arm.right,.beano[data-mood="result"] .beano-arm.right{transform:rotate(-58deg) translateY(-5px)}
-.beano[data-mood="wave"] .beano-arm.right{animation:beanoArmWave .72s steps(3,end) infinite}
-.beano.blink .beano-eye,.beano[data-mood="blink"] .beano-eye{height:2px;top:3px;box-shadow:none}
-.brand-logo .beano{width:58px;height:58px;scale:1.1}
-.launcher-beano{width:64px;height:64px;scale:1.18}
-@keyframes beanoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
-@keyframes beanoSteam{0%{opacity:0;transform:translateY(7px)}30%{opacity:.85}100%{opacity:0;transform:translateY(-10px)}}
-@keyframes beanoPick{0%{transform:translateY(0) rotate(0)}42%{transform:translateY(-6px) rotate(-4deg) scale(1.04)}100%{transform:translateY(0) rotate(0)}}
-@keyframes beanoThinkNew{0%,100%{transform:translateX(-1px)}50%{transform:translateX(2px)}}
-@keyframes beanoWin{0%{transform:translateY(0)}42%{transform:translateY(-8px) scale(1.07)}72%{transform:translateY(1px) scale(.98)}100%{transform:translateY(0)}}
-@keyframes beanoCelebrate{0%{transform:translateY(0) rotate(0)}32%{transform:translateY(-10px) rotate(5deg) scale(1.1)}62%{transform:translateY(1px) rotate(-4deg)}100%{transform:translateY(0) rotate(0)}}
-@keyframes beanoArmWave{0%,100%{transform:rotate(-24deg)}50%{transform:rotate(-72deg) translateY(-5px)}}
-#kb-bubble{
-  width:88px;height:88px;right:18px;bottom:18px;border-radius:25px;background:var(--ink);
-  border:1px solid rgba(243,223,183,.25);
-  box-shadow:0 22px 48px rgba(32,25,20,.28),inset 0 0 0 5px rgba(255,255,255,.025);overflow:visible;
-}
-#kb-bubble:before{content:"";position:absolute;inset:7px;border:1px solid rgba(243,223,183,.09);border-radius:18px}
-#kb-bubble:hover{transform:translateY(-3px);box-shadow:0 26px 56px rgba(32,25,20,.33),inset 0 0 0 5px rgba(255,255,255,.035)}
-.cart-badge{z-index:9}
-
-.page-note{left:7vw;top:50%;max-width:430px;transform:translateY(-50%)}
-.page-note .ey{height:29px;padding:0 11px;border-radius:8px;font-size:8px;color:var(--forest-deep);border-color:#d8d0c5;background:#fff}
-.page-note h1{margin:15px 0 10px;font-size:40px;line-height:1.03;letter-spacing:0;color:var(--ink)}
-.page-note p{max-width:390px;font-size:13px;line-height:1.55;color:var(--muted)}
-.page-note .mini{gap:7px;margin-top:16px}
-.page-note .mini span{padding:9px 10px;border-radius:9px;border-color:#e1d9cf;font-size:9px;color:#6a5d53;box-shadow:0 3px 10px rgba(38,29,23,.03)}
-
-.summary{gap:6px;margin-bottom:9px}.sum{border-radius:9px;background:var(--paper);border-color:var(--line)}
-.product{border-radius:15px;border-color:#dfcfb5;background:#fffaf0;box-shadow:0 14px 30px rgba(43,31,23,.09)}
-.bag{border-radius:12px;background:linear-gradient(150deg,#211914,#493226 62%,#9b6b3e)}
-.prod-copy h3{color:var(--ink);letter-spacing:0}.prod-copy small{border-radius:6px;background:var(--mint);color:var(--forest-deep)}
-.meta,.meter,.buy,.altcard{border-radius:9px;border-color:var(--line);background:var(--paper)}
-.meter i,.ship i{background:linear-gradient(90deg,var(--forest) var(--w),#e6ddd1 var(--w))}
-.toggle{border-radius:9px}.toggle.on{border-color:var(--forest);background:var(--mint);color:var(--forest-deep)}
-.chat-context{padding:15px 14px 12px;border-bottom:1px solid var(--line);background:var(--paper)}
-.chat-context .chat-online{display:flex;align-items:center;gap:7px;color:var(--forest);font-size:9px;font-weight:900;text-transform:uppercase;letter-spacing:.1em}
-.chat-context .chat-online:before{content:"";width:7px;height:7px;border-radius:50%;background:#67ad90;box-shadow:0 0 0 4px rgba(103,173,144,.12)}
-.chat-context b{display:block;margin-top:8px;color:var(--ink);font-size:17px}
-.chat-context p{margin:4px 0 0;color:var(--muted);font-size:11px;line-height:1.4}
-.chat-msgs{padding:13px 14px;gap:10px;overflow:auto}.msg{display:block}.av{display:none!important}
-.mb{max-width:86%;border-radius:12px 12px 12px 4px;border-color:var(--line);background:var(--paper);font-size:11.8px;box-shadow:0 4px 12px rgba(38,29,23,.04)}
-.mb:before{content:"BEANO";display:block;margin-bottom:5px;color:var(--forest);font-size:8px;font-weight:950;letter-spacing:.12em}
-.msg.me .mb{margin-left:auto;border-radius:12px 12px 4px 12px;background:var(--ink-soft);border-color:var(--ink-soft);color:#fff}
-.msg.me .mb:before{display:none}
-.chat-chips{gap:7px;padding:0 14px 10px;flex-wrap:nowrap}
-.chip{flex:1;height:34px;padding:0 8px;border:1px solid var(--line);border-radius:9px;background:var(--paper);color:var(--ink-soft);font-size:10px}
-.chip:hover{border-color:var(--forest);box-shadow:0 6px 14px rgba(38,29,23,.07)}
-.chat-in{padding:10px 14px 13px;border-top:1px solid var(--line);background:var(--paper)}
-.chat-in input{height:42px;border-radius:10px;border-color:#d8cfc5;background:#fbf9f5;font-size:12px}
-.chat-in input:focus{border-color:var(--forest);box-shadow:0 0 0 3px rgba(49,93,84,.10)}
-.send{width:42px;height:42px;border-radius:10px;background:var(--forest-deep)}
-@media(max-height:700px) and (min-width:721px){
-  #kb-widget{height:calc(100dvh - 16px);bottom:8px}.kb-head{height:72px;flex-basis:72px}
-  .brand-logo{width:52px;height:52px;flex-basis:52px}.brand-logo .beano{transform:scale(.88)}
-  .mode-tabs{height:48px;flex-basis:48px;padding-top:7px}.progress-row{height:44px;flex-basis:44px}
-  .body{padding-top:11px}.step-hero{margin-bottom:8px}.step-insight{margin-bottom:8px}.choice{min-height:78px}.card-list{gap:7px}
-}
-@media(max-width:720px){
-  #kb-widget{width:100%;height:100dvh;border-radius:0}.kb-head{height:78px;flex-basis:78px;padding-left:11px}
-  .brand-logo{width:58px;height:58px;flex-basis:58px}.body{padding:14px 12px 10px}
-  .choice{grid-template-columns:72px minmax(0,1fr) 58px;min-height:90px}.choice.selected:before{left:51px}
-  .step-hero h2{font-size:19px}.footer{padding-left:12px;padding-right:12px}#kb-bubble{right:14px;bottom:14px}
-}
-@media(prefers-reduced-motion:reduce){.beano,.beano-steam,#kb-bubble,.bar{animation:none!important;transition:none!important}}
-
-/* ===== Beano attraction pass: motion, clarity, real chat ===== */
-#kb-widget{
-  width:424px;
-  height:min(724px,calc(100dvh - 24px));
-  border-radius:20px;
-  background:#f5f1ea;
-  border-color:rgba(57,43,34,.18);
-  box-shadow:0 32px 80px rgba(32,25,20,.24),0 8px 24px rgba(32,25,20,.11);
-}
-.kb-head{
-  height:112px;
-  flex-basis:112px;
-  padding:10px 58px 10px 12px;
-  background:
-    linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px) 0 0/18px 18px,
-    linear-gradient(180deg,#211a16,#18120f);
-  overflow:hidden;
-}
-.kb-head:before{
-  display:block;
-  inset:auto -45px -70px auto;
-  width:210px;
-  height:140px;
-  border:1px solid rgba(215,166,83,.10);
-  border-radius:50%;
-  background:transparent;
-}
-.brand{height:100%;gap:13px;align-items:center}
-.brand-logo{
-  position:relative;width:92px;height:92px;flex:0 0 92px;border:0;border-radius:16px;
-  background:linear-gradient(145deg,#30261f,#19130f);
-  box-shadow:inset 0 0 0 1px rgba(255,231,186,.14),inset 0 -18px 30px rgba(0,0,0,.15),0 14px 26px rgba(0,0,0,.24);
-}
-.brand-logo:after{
-  content:"";position:absolute;left:14px;right:14px;bottom:9px;height:7px;border-radius:50%;
-  background:rgba(0,0,0,.28);filter:blur(4px);animation:beanoShadow 3s ease-in-out infinite;
-}
-.brand-logo .beano{width:58px;height:58px;scale:1.42;z-index:2}
-.brand-copy{min-width:0;flex:1}
-.brand-name{display:flex;align-items:center;gap:7px}
-.brand-name b{color:#fffaf2;font-size:17px;line-height:1}
-.brand-name span{
-  display:inline-flex;margin:0;padding:4px 6px;border:1px solid rgba(146,202,177,.23);
-  border-radius:5px;background:rgba(77,123,108,.14);color:#a9d4c3;font-size:7.5px;font-weight:950;
-  text-transform:uppercase;letter-spacing:.09em;
-}
-.brand-copy p{margin:8px 0 0;max-width:205px;color:#d2c8bd;font-size:10.5px;line-height:1.35;font-weight:650}
-.h-actions{position:absolute;right:10px;top:10px;display:grid;gap:6px}
-.hbtn{width:32px;height:32px;border-radius:9px;font-size:14px;background:rgba(255,255,255,.055)}
-.mode-tabs{height:52px;flex-basis:52px;padding:8px 10px;background:#e9e3da}
-.mode-tabs button{height:36px;border-radius:8px;font-size:11.5px}
-.mode-tabs button.active{border-color:#d7cdc1;box-shadow:0 4px 12px rgba(37,28,23,.08)}
-.progress-row{height:45px;flex-basis:45px;padding:7px 12px}
-.step-pill{height:22px;min-width:32px}
-.body{padding:13px 13px 10px}
-.step-hero{margin:0 0 11px;padding:0 2px}
-.step-kicker,.step-hero p,.step-insight{display:none!important}
-.step-hero h2{font-size:20px;color:#251d18}
-.card-list{gap:8px}
-.choice{
-  min-height:96px;grid-template-columns:88px minmax(0,1fr) 66px;
-  border-radius:12px;background:#fffdfa;border-color:#ded6cd;
-  box-shadow:0 5px 14px rgba(38,29,23,.045);
-}
-.choice:hover{border-color:#bcae9e;box-shadow:0 12px 24px rgba(38,29,23,.09)}
-.choice.selected{border-color:#2c6659;background:#f8fcfa;box-shadow:0 0 0 2px rgba(44,102,89,.14),0 12px 24px rgba(38,29,23,.08)}
-.choice.selected:before{left:63px;top:10px;width:19px;height:19px;border-radius:6px}
-.pic{border-right:1px solid #e4dcd2;background:#f2ece3;overflow:hidden}
-.pic:before{content:"";position:absolute;inset:13px;border-radius:13px;background:#fff9f0;box-shadow:0 5px 12px rgba(62,40,25,.07)}
-.pic:after{width:48px;height:48px;border-radius:13px;border-color:rgba(82,55,38,.12)}
-.pic svg{width:39px;height:39px;color:#71452c;filter:drop-shadow(0 3px 3px rgba(57,36,23,.10))}
-.pic-espresso{background:#efe0d4}.pic-auto{background:#dfe9e4}.pic-filter{background:#e2e8ed}
-.pic-beans{background:#eee4d6}.pic-gift{background:#eadfe6}.pic-moka{background:#e6e1dc}
-.pic-auto svg{color:#315d54}.pic-filter svg{color:#4b687b}.pic-gift svg{color:#80556e}
-.choice.selected .pic:before{background:#f7fffb}.choice.selected .pic{border-right-color:#cbded7}
-.choice-mid{padding:13px 9px 13px 13px}.choice-mid b{font-size:15px}.choice-mid span{font-size:10.6px}
-.price{font-size:11px}.price.badge b{background:#ede3d0}
-.footer{height:62px;flex-basis:62px;padding:8px 13px 10px}.next{height:44px;border-radius:10px}
-
-/* Softer mitts replace the old stick limbs. */
-.beano-arm{
-  top:29px;width:11px;height:11px;border:3px solid #261912;border-radius:3px;
-  background:#f0c977;box-shadow:inset 0 -3px 0 #c98f48;transform-origin:50% 50%;
-}
-.beano-arm.left{left:0;transform:rotate(-12deg)}
-.beano-arm.right{right:-2px;transform:rotate(12deg)}
-.beano-leg{display:none}
-.launcher-beano .beano-arm{display:none}
-.beano-cup{animation:cupBreath 3s ease-in-out infinite}
-.beano-coffee{overflow:hidden}
-.beano-coffee:after{
-  content:"";position:absolute;left:-8px;top:0;width:8px;height:4px;background:#d49a54;
-  animation:coffeeGlint 2.8s steps(4,end) infinite;
-}
-.beano-eye{transition:height .09s ease,top .09s ease}
-.beano-mouth{transition:width .14s ease,height .14s ease,transform .14s ease}
-.beano-spark{position:absolute;z-index:8;width:4px;height:4px;background:#f4cf7d;opacity:0}
-.beano-spark.a{left:2px;top:12px}.beano-spark.b{right:0;top:7px}.beano-spark.c{right:7px;bottom:4px}
-.beano[data-mood="idle"]{animation:beanoAlive 3s ease-in-out infinite}
-.beano[data-mood="select"].move{animation:beanoChoice .58s cubic-bezier(.18,.9,.22,1)}
-.beano[data-mood="thinking"]{animation:beanoThinking 1s steps(4,end) infinite}
-.beano[data-mood="thinking"] .beano-steam{animation-duration:.72s;background:#9ed1bf}
-.beano[data-mood="thinking"] .beano-cup{animation:thinkingCup .8s steps(2,end) infinite}
-.beano[data-mood="result"].move{animation:beanoReveal .82s cubic-bezier(.18,.9,.22,1)}
-.beano[data-mood="cart"].move{animation:beanoParty .95s cubic-bezier(.18,.9,.22,1)}
-.beano[data-mood="result"] .beano-spark,.beano[data-mood="cart"] .beano-spark{animation:sparkPop .7s steps(3,end) both}
-.beano[data-mood="result"] .beano-spark.b,.beano[data-mood="cart"] .beano-spark.b{animation-delay:.12s}
-.beano[data-mood="cart"] .beano-spark.c{animation-delay:.24s}
-.beano[data-mood="cart"] .beano-arm.left,.beano[data-mood="result"] .beano-arm.left{transform:translate(-4px,-6px) rotate(-28deg)}
-.beano[data-mood="cart"] .beano-arm.right,.beano[data-mood="result"] .beano-arm.right{transform:translate(4px,-6px) rotate(28deg)}
-.beano[data-mood="wave"] .beano-arm.right{animation:mittWave .65s steps(4,end) infinite}
-.launcher-beano{width:64px;height:64px;scale:1.34}
-#kb-bubble{
-  width:92px;height:92px;border-radius:27px;background:linear-gradient(145deg,#241c17,#17110e);
-  box-shadow:0 25px 54px rgba(32,25,20,.31),inset 0 0 0 1px rgba(255,235,196,.13);
-  animation:launcherPulse 3.2s ease-in-out infinite;
-}
-#kb-bubble:before{inset:7px;border-radius:20px;border-color:rgba(244,207,125,.11);animation:launcherFrame 3.2s ease-in-out infinite}
-#kb-bubble:after{content:"";position:absolute;left:19px;right:19px;bottom:11px;height:7px;border-radius:50%;background:rgba(0,0,0,.36);filter:blur(4px);animation:beanoShadow 3s ease-in-out infinite}
-#kb-bubble .beano-cup{animation:launcherCup 2.8s ease-in-out infinite}
-#kb-bubble:hover .launcher-beano{animation:launcherHello .72s cubic-bezier(.2,.9,.2,1)}
-@keyframes cupBreath{0%,100%{transform:scaleY(1)}50%{transform:scaleY(.97) translateY(1px)}}
-@keyframes coffeeGlint{0%,42%{transform:translateX(0);opacity:0}55%{opacity:.9}75%,100%{transform:translateX(34px);opacity:0}}
-@keyframes beanoAlive{0%,100%{transform:translateY(1px) rotate(0)}28%{transform:translateY(-3px) rotate(-1deg)}58%{transform:translateY(-1px) rotate(1deg)}}
-@keyframes beanoChoice{0%{transform:translateY(0) scale(1)}28%{transform:translateY(-9px) scale(1.08) rotate(-6deg)}54%{transform:translateY(2px) scale(.96) rotate(3deg)}74%{transform:translateY(-3px) scale(1.02)}100%{transform:none}}
-@keyframes beanoThinking{0%{transform:translateX(-2px) rotate(-2deg)}50%{transform:translateX(2px) rotate(2deg)}100%{transform:translateX(-2px) rotate(-2deg)}}
-@keyframes thinkingCup{0%,100%{transform:translateY(0)}50%{transform:translateY(2px)}}
-@keyframes beanoReveal{0%{transform:scale(.8) rotate(-7deg);opacity:.4}35%{transform:translateY(-11px) scale(1.12) rotate(5deg);opacity:1}62%{transform:translateY(2px) scale(.96) rotate(-2deg)}82%{transform:translateY(-3px) scale(1.03)}100%{transform:none}}
-@keyframes beanoParty{0%{transform:none}20%{transform:translateY(-12px) scale(1.12) rotate(-8deg)}42%{transform:translateY(1px) scale(.95) rotate(7deg)}62%{transform:translateY(-8px) scale(1.08) rotate(-5deg)}82%{transform:translateY(1px) rotate(3deg)}100%{transform:none}}
-@keyframes mittWave{0%,100%{transform:translate(0,0) rotate(12deg)}50%{transform:translate(3px,-8px) rotate(42deg)}}
-@keyframes sparkPop{0%{opacity:0;transform:scale(.3)}45%{opacity:1;transform:translateY(-5px) scale(1.5) rotate(45deg)}100%{opacity:0;transform:translateY(-10px) scale(.5) rotate(90deg)}}
-@keyframes launcherPulse{0%,100%{transform:translateY(0);box-shadow:0 25px 54px rgba(32,25,20,.31),0 0 0 0 rgba(215,166,83,.20)}50%{transform:translateY(-4px);box-shadow:0 31px 60px rgba(32,25,20,.27),0 0 0 10px rgba(215,166,83,0)}}
-@keyframes launcherFrame{0%,100%{border-color:rgba(244,207,125,.10)}50%{border-color:rgba(244,207,125,.27)}}
-@keyframes launcherCup{0%,100%{transform:translateY(1px) rotate(0)}35%{transform:translateY(-3px) rotate(-2deg)}68%{transform:translateY(-1px) rotate(2deg)}}
-@keyframes launcherHello{0%{transform:none}30%{transform:translateY(-7px) rotate(-7deg) scale(1.08)}60%{transform:translateY(1px) rotate(5deg)}100%{transform:none}}
-@keyframes beanoShadow{0%,100%{transform:scaleX(1);opacity:.3}50%{transform:scaleX(.78);opacity:.18}}
-
-.page-note{max-width:470px}
-.page-note h1{font-size:44px;max-width:440px}
-.page-note p{max-width:420px;font-size:14px}
-.preview-cta{
-  display:inline-flex;align-items:center;gap:10px;margin-top:18px;height:42px;padding:0 15px;
-  border:0;border-radius:10px;background:#23473f;color:#fff;font-size:11px;font-weight:900;
-  box-shadow:0 10px 22px rgba(35,71,63,.18);
-}
-.preview-cta:after{content:"→";font-size:16px}.preview-cta:hover{background:#193a33;transform:translateY(-1px)}
-
-.chat{background:#f5f1ea}.chat-context{display:none!important}
-.chat-msgs{padding:16px 14px;gap:11px;background:linear-gradient(180deg,#f8f5ef,#f3eee7);overflow:auto}
-.msg{animation:chatIn .3s cubic-bezier(.2,.8,.2,1) both}
-.mb{max-width:88%;padding:11px 12px;border-radius:12px 12px 12px 3px;font-size:11.7px;line-height:1.45}
-.mb:before{font-size:7.5px}.msg.me .mb{background:#2a211b;border-color:#2a211b}
-.chat-product{
-  max-width:94%;margin-top:2px;padding:11px;border:1px solid #d7cbbd;border-radius:13px;
-  background:#fffdf9;box-shadow:0 10px 24px rgba(38,29,23,.08);
-}
-.chat-product-top{display:grid;grid-template-columns:54px 1fr;gap:10px;align-items:center}
-.chat-product-art{height:58px;border-radius:10px;background:linear-gradient(145deg,#211914,#5f402c);position:relative}
-.chat-product-art:before{content:"KB";position:absolute;left:9px;top:9px;color:#f2cf88;font-size:13px;font-weight:950}
-.chat-product small{display:block;color:#315d54;font-size:7.5px;font-weight:950;text-transform:uppercase;letter-spacing:.08em}
-.chat-product b{display:block;margin-top:3px;color:#251d18;font-size:13.5px;line-height:1.15}
-.chat-product p{margin:4px 0 0;color:#756b62;font-size:9.7px;line-height:1.35}
-.chat-product-buy{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:10px}
-.chat-product-buy strong{color:#251d18;font-size:16px}
-.chat-add{height:34px;padding:0 11px;border:0;border-radius:8px;background:#315d54;color:#fff;font-size:9.5px;font-weight:900}
-.chat-chips{gap:7px;padding:0 14px 10px}
-.chip{height:38px;border:0;border-radius:9px;color:#fff;font-size:10px;box-shadow:0 6px 14px rgba(38,29,23,.11)}
-.chip:nth-child(1){background:#315d54}.chip:nth-child(2){background:#4b687b}.chip:nth-child(3){background:#8b5b3d}
-.chip:hover{border:0;filter:brightness(1.06);box-shadow:0 9px 18px rgba(38,29,23,.16)}
-.chat-in{padding:10px 14px 13px}.chat-in input{height:44px;background:#fff}.send{width:44px;height:44px}
-@keyframes chatIn{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
-
-@media(max-height:700px) and (min-width:721px){
-  .kb-head{height:96px;flex-basis:96px}.brand-logo{width:76px;height:76px;flex-basis:76px}.brand-logo .beano{scale:1.18}
-  .brand-copy p{margin-top:5px}.mode-tabs{height:47px;flex-basis:47px}.progress-row{height:42px;flex-basis:42px}
-  .body{padding-top:9px}.choice{min-height:78px}.step-hero{margin-bottom:7px}.pic:before{inset:9px}
-}
-@media(max-width:720px){
-  #kb-widget{width:100%;height:100dvh;border-radius:0;border:0}
-  .kb-head{height:106px;flex-basis:106px;padding-left:9px}.brand-logo{width:86px;height:86px;flex-basis:86px}.brand-logo .beano{scale:1.3}
-  .brand-copy p{max-width:180px;font-size:10px}.body{padding:11px 11px 9px}.choice{grid-template-columns:80px minmax(0,1fr) 60px;min-height:92px}
-  .choice.selected:before{left:57px}.pic:before{inset:11px}.pic svg{width:36px;height:36px}.step-hero h2{font-size:19px}
-  #kb-bubble{width:90px;height:90px}.launcher-beano{scale:1.3}
-}
-
-/* ===== Reference sprite + DERAT-inspired interaction pass ===== */
-:root{
-  --beano-teal:#246c64;
-  --beano-teal-dark:#185149;
-  --beano-mint:#d9eee6;
-  --beano-coral:#e66f3f;
-  --beano-coral-dark:#c8532a;
-  --beano-espresso:#2a201a;
-  --beano-cream:#faf6ef;
-  --beano-card:#fffdf9;
-  --beano-border:#e2d9cf;
-}
-.beano{display:none!important}
-.beano-sprite{
-  display:block;
-  width:88px;
-  aspect-ratio:8/9;
-  background-image:url('assets/beano-sprite.png');
-  background-repeat:no-repeat;
-  background-size:435% 290%;
-  background-position:7% 12%;
-  image-rendering:pixelated;
-  transform-origin:50% 84%;
-  will-change:transform,filter;
-  filter:drop-shadow(0 10px 8px rgba(36,22,13,.18));
-}
-.beano-sprite[data-pose="idle"]{background-position:7% 12%}
-.beano-sprite[data-pose="blink"]{background-position:50% 12%}
-.beano-sprite[data-pose="wave"]{background-position:93% 12%}
-.beano-sprite[data-pose="point"]{background-position:7% 88%}
-.beano-sprite[data-pose="thinking"]{background-position:50% 88%}
-.beano-sprite[data-pose="happy"]{background-position:93% 88%}
-.beano-sprite[data-pose="idle"]{animation:spriteIdle 3.4s ease-in-out infinite}
-.beano-sprite[data-pose="wave"]{animation:spriteWave .72s cubic-bezier(.2,.9,.2,1) both}
-.beano-sprite[data-pose="point"]{animation:spritePoint .58s cubic-bezier(.2,.9,.2,1) both}
-.beano-sprite[data-pose="thinking"]{animation:spriteThink .72s steps(3,end) infinite}
-.beano-sprite[data-pose="happy"]{animation:spriteHappy .86s cubic-bezier(.18,.9,.2,1) both}
-@keyframes spriteIdle{0%,100%{transform:translateY(1px) rotate(0)}36%{transform:translateY(-4px) rotate(-1deg)}68%{transform:translateY(-1px) rotate(1deg)}}
-@keyframes spriteWave{0%{transform:translateY(0) rotate(0) scale(.96)}35%{transform:translateY(-8px) rotate(-5deg) scale(1.07)}65%{transform:translateY(1px) rotate(4deg)}100%{transform:none}}
-@keyframes spritePoint{0%{transform:translateX(0) scale(.98)}38%{transform:translateX(-6px) scale(1.06)}70%{transform:translateX(2px) scale(.99)}100%{transform:none}}
-@keyframes spriteThink{0%,100%{transform:translateX(-2px) rotate(-1deg)}50%{transform:translateX(2px) rotate(1deg)}}
-@keyframes spriteHappy{0%{transform:translateY(3px) scale(.9)}25%{transform:translateY(-12px) scale(1.12) rotate(-4deg)}48%{transform:translateY(1px) scale(.96) rotate(3deg)}68%{transform:translateY(-7px) scale(1.07) rotate(-2deg)}100%{transform:none}}
-
-#kb-bubble{
-  width:106px;
-  height:116px;
-  padding:0;
-  border:0;
-  border-radius:0;
-  background:transparent;
-  box-shadow:none;
-  animation:launcherDrift 3.4s ease-in-out infinite;
-  overflow:visible;
-}
-#kb-bubble:before{
-  content:"";
-  position:absolute;
-  left:10px;right:10px;bottom:7px;height:28px;
-  border:0;border-radius:50%;
-  background:radial-gradient(ellipse,rgba(230,111,63,.26),rgba(36,108,100,.10) 48%,transparent 72%);
-  filter:blur(5px);
-  animation:launcherGlow 3.4s ease-in-out infinite;
-}
-#kb-bubble:after{content:"";position:absolute;left:27px;right:27px;bottom:10px;height:8px;border-radius:50%;background:rgba(42,32,26,.25);filter:blur(4px);animation:spriteShadow 3.4s ease-in-out infinite}
-#kb-bubble:hover{transform:none;box-shadow:none}
-#kb-bubble:hover .launcher-sprite{animation:spriteWave .72s cubic-bezier(.2,.9,.2,1) both}
-.launcher-sprite{position:relative;z-index:2;width:102px;animation:spriteIdle 3.4s ease-in-out infinite}
-@keyframes launcherDrift{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-@keyframes launcherGlow{0%,100%{opacity:.6;transform:scaleX(.9)}50%{opacity:1;transform:scaleX(1.08)}}
-@keyframes spriteShadow{0%,100%{opacity:.3;transform:scaleX(1)}50%{opacity:.18;transform:scaleX(.76)}}
-
-#kb-widget{
-  width:420px;
-  height:min(724px,calc(100dvh - 24px));
-  border-radius:24px;
-  background:var(--beano-cream);
-  border:1px solid rgba(42,32,26,.15);
-  box-shadow:0 34px 84px rgba(42,32,26,.25),0 8px 22px rgba(42,32,26,.10);
-}
-.kb-head{
-  height:68px;
-  flex-basis:68px;
-  padding:10px 96px 10px 12px;
-  background:linear-gradient(120deg,var(--beano-teal-dark),var(--beano-teal));
-  overflow:hidden;
-}
-.kb-head:before{display:block;inset:auto -35px -80px auto;width:190px;height:150px;border:1px solid rgba(255,255,255,.08);border-radius:50%}
-.brand{height:auto;gap:10px}
-.brand-logo{
-  position:relative;width:43px;height:43px;flex:0 0 43px;border:1px solid rgba(255,255,255,.24);
-  border-radius:12px;background:rgba(255,255,255,.12);box-shadow:none;color:#fff;
-  display:grid;place-items:center;
-}
-.brand-logo:before{content:"B";font-size:18px;font-weight:950;color:#fff4e6}
-.brand-logo:after{display:none}
-.brand-copy{display:flex;align-items:center;gap:8px;min-width:0}
-.brand-name{display:block}.brand-name b{display:block;color:#fff;font-size:16px}.brand-name span{display:block;margin-top:4px;padding:0;border:0;background:transparent;color:rgba(255,255,255,.72);font-size:8px;letter-spacing:.11em}
-.brand-copy>p{display:none}
-.h-actions{right:10px;top:16px;display:flex;gap:6px}
-.hbtn{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.94);border:0;color:var(--beano-teal-dark)}
-.hbtn.close{background:rgba(255,255,255,.15);color:#fff}.hbtn:hover{background:#fff;color:var(--beano-coral);transform:translateY(-1px)}
-.mode-tabs{height:50px;flex-basis:50px;padding:7px 10px;background:#fff;border-color:var(--beano-border)}
-.mode-tabs button{height:35px;border-radius:10px;color:#74695f;background:#f1ece5}
-.mode-tabs button.active{color:var(--beano-teal-dark);border-color:#cfddd8;background:#fff;box-shadow:0 4px 12px rgba(36,108,100,.10)}
-.mode-tabs button.active svg{color:var(--beano-coral)}
-.calc,.chat{background:var(--beano-cream)}
-.progress-row{height:42px;flex-basis:42px;padding:6px 12px;background:#fff;border-color:var(--beano-border)}
-.step-pill{background:var(--beano-teal);border-radius:999px}.bar.on{background:var(--beano-coral)}
-.body{padding:11px 12px 3px}.step-hero{margin-bottom:8px}.step-hero h2{font-size:18px}
-.card-list{gap:7px}
-.choice{min-height:82px;grid-template-columns:76px minmax(0,1fr) 62px;border-radius:15px;border-color:var(--beano-border);background:var(--beano-card)}
-.choice:hover{border-color:#bfcfc9;box-shadow:0 11px 22px rgba(36,108,100,.10)}
-.choice.selected{border-color:var(--beano-teal);background:#f7fcfa;box-shadow:0 0 0 3px rgba(217,238,230,.9),0 10px 20px rgba(36,108,100,.10)}
-.choice.selected:before{left:54px;top:8px;background:var(--beano-coral)}
-.pic{background:#f2ece4}.pic:before{inset:9px}.pic:after{width:43px;height:43px}.pic svg{width:34px;height:34px}
-.choice-mid{padding:10px 8px 10px 11px}.choice-mid b{font-size:14px}.choice-mid span{font-size:10px}.price{font-size:10.5px}
-
-.advisor-dock{
-  position:relative;
-  height:92px;
-  flex:0 0 92px;
-  display:grid;
-  grid-template-columns:106px 1fr;
-  align-items:center;
-  gap:7px;
-  padding:4px 14px 4px 8px;
-  background:linear-gradient(105deg,#cfe9df 0%,#edf8f4 62%,#fff9f2 100%);
-  border-top:1px solid #bfd9cf;
-  overflow:visible;
-}
-.advisor-dock:after{content:"";position:absolute;left:22px;bottom:8px;width:68px;height:8px;border-radius:50%;background:rgba(36,108,100,.18);filter:blur(4px);animation:spriteShadow 3.4s ease-in-out infinite}
-.advisor-sprite{position:relative;z-index:2;width:96px;align-self:end;margin-bottom:0;translate:0 -18px}
-.advisor-speech{position:relative;padding:10px 12px;border:1px solid rgba(36,108,100,.18);border-radius:6px 14px 14px 14px;background:rgba(255,255,255,.86);box-shadow:0 7px 18px rgba(36,108,100,.08)}
-.advisor-speech:before{content:"";position:absolute;left:-7px;top:14px;width:12px;height:12px;background:inherit;border-left:1px solid rgba(36,108,100,.18);border-bottom:1px solid rgba(36,108,100,.18);transform:rotate(45deg)}
-.advisor-speech b{display:block;color:var(--beano-coral-dark);font-size:8px;text-transform:uppercase;letter-spacing:.11em}
-.advisor-speech span{display:block;margin-top:4px;color:var(--beano-espresso);font-size:10.5px;line-height:1.35;font-weight:750}
-.footer{height:60px;flex-basis:60px;padding:8px 12px 9px}.next{position:relative;overflow:hidden;height:43px;border-radius:999px;background:var(--beano-coral);box-shadow:0 10px 24px -9px rgba(230,111,63,.55)}
-.next:hover:not(:disabled){background:var(--beano-teal);box-shadow:0 12px 26px -10px rgba(36,108,100,.52)}
-.next:before{content:"";position:absolute;top:0;left:-110%;width:46%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-18deg)}
-.next:hover:before{animation:nextSheen .7s ease}
-@keyframes nextSheen{to{left:130%}}
-
-.chat{background:#fff}
-.chat-msgs{padding:14px 12px 8px;gap:9px;background:linear-gradient(180deg,#fff,#f7f4ef);overscroll-behavior:contain}
-.msg{display:flex;align-items:flex-end;gap:7px;animation:messageIn .3s ease both}.msg.me{justify-content:flex-end}
-.chat-avatar{width:31px;flex:0 0 31px;filter:drop-shadow(0 4px 5px rgba(42,32,26,.12))}
-.message-stack{max-width:81%;display:flex;flex-direction:column;align-items:flex-start}.msg.me .message-stack{align-items:flex-end}
-.mb{max-width:100%;padding:10px 12px;border:1px solid #e6e1da;border-radius:17px 17px 17px 6px;background:#fff;color:var(--beano-espresso);font-size:12.2px;line-height:1.48;box-shadow:0 5px 14px rgba(42,32,26,.055)}
-.mb:before{display:none}.msg.me .mb{margin:0;border:0;border-radius:17px 17px 6px 17px;background:var(--beano-teal);color:#fff;box-shadow:0 7px 17px rgba(36,108,100,.22)}
-.chat-time{margin-top:3px;padding:0 4px;color:#9d9389;font-size:8px;font-weight:750}
-.typing{display:flex;align-items:center;gap:4px;min-width:48px;padding:13px 15px}
-.typing i{width:6px;height:6px;border-radius:50%;background:var(--beano-coral);animation:typingDot 1.05s ease-in-out infinite}.typing i:nth-child(2){animation-delay:.14s}.typing i:nth-child(3){animation-delay:.28s}
-@keyframes typingDot{0%,70%,100%{transform:translateY(0);opacity:.35}35%{transform:translateY(-4px);opacity:1}}
-.type-cursor{display:inline-block;width:2px;height:1em;margin-left:2px;background:var(--beano-coral);vertical-align:-2px;animation:cursorBlink .7s steps(1) infinite}
-@keyframes cursorBlink{50%{opacity:0}}
-@keyframes messageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
-.chat-product{max-width:100%;margin:0;padding:10px;border-radius:16px;border-color:#d8e6e1;background:#fff;box-shadow:0 10px 24px rgba(36,108,100,.09)}
-.chat-add{border-radius:999px;background:var(--beano-coral)}.chat-add:hover{background:var(--beano-teal)}
-.chat-chips{gap:7px;padding:3px 12px 10px;background:#f7f4ef;flex-wrap:wrap}
-.chip{flex:0 0 auto;height:34px;padding:0 13px;border:1px solid var(--beano-border);border-radius:999px;background:#fff!important;color:var(--beano-espresso);box-shadow:0 5px 12px rgba(42,32,26,.06);opacity:0;transform:translateY(6px) scale(.95);pointer-events:none;transition:opacity .38s ease,transform .38s cubic-bezier(.2,.9,.2,1),background .28s,color .28s,border-color .28s}
-.chat-chips.reveal .chip{opacity:1;transform:none;pointer-events:auto}.chat-chips.reveal .chip:nth-child(2){transition-delay:.1s}.chat-chips.reveal .chip:nth-child(3){transition-delay:.2s}
-.chip:hover{background:var(--beano-coral)!important;color:#fff;border-color:var(--beano-coral);filter:none}
-.chat-in{margin:0 12px 11px;padding:6px;border:1px solid var(--beano-border);border-radius:16px;background:#fff;box-shadow:0 8px 18px rgba(42,32,26,.06)}
-.chat-in input{height:39px;border:0;background:#fff}.chat-in input:focus{box-shadow:none;border:0}.send{width:39px;height:39px;border-radius:50%;background:var(--beano-coral)}.send:hover{background:var(--beano-teal)}
-
-@media(max-height:700px) and (min-width:721px){
-  .kb-head{height:62px;flex-basis:62px}.mode-tabs{height:46px;flex-basis:46px}.progress-row{height:38px;flex-basis:38px}
-  .choice{min-height:72px}.advisor-dock{height:78px;flex-basis:78px;grid-template-columns:90px 1fr}.advisor-sprite{width:82px}
-}
-@media(max-width:720px){
-  #kb-widget{width:100%;height:100dvh;border-radius:0;border:0}
-  .kb-head{height:66px;flex-basis:66px;padding:9px 94px 9px 10px}.brand-logo{width:42px;height:42px;flex-basis:42px}.h-actions{top:16px}
-  .body{padding:10px 10px 7px}.choice{grid-template-columns:72px minmax(0,1fr) 58px;min-height:80px}.choice.selected:before{left:51px}
-  .advisor-dock{height:94px;flex-basis:94px;grid-template-columns:104px 1fr;padding-left:5px}.advisor-sprite{width:96px;margin-bottom:0;translate:0 -18px}.advisor-speech{padding:9px 10px}
-  #kb-bubble{width:102px;height:112px;right:10px;bottom:8px}.launcher-sprite{width:98px}
-  .chat-msgs{padding-left:10px;padding-right:10px}.chat-chips{padding-left:10px;padding-right:10px}.chat-in{margin-left:10px;margin-right:10px}
-}
-@media(prefers-reduced-motion:reduce){.beano-sprite,#kb-bubble,#kb-bubble:before,#kb-bubble:after,.typing i,.chip{animation:none!important;transition:none!important}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#171411">
+  <title>Pražiarnička – osobný kávový poradca</title>
+  <meta name="description" content="Konverzný návrh nákupného poradcu pre Pražiarničku v Trenčíne s reálnymi produktmi z e-shopu.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="page-note">
-  <div class="ey">Beano · Coffee assistant</div>
-  <h1>Neviete, ktorú kávu si vybrať?</h1>
-  <p>Beano sa opýta pár jednoduchých otázok alebo poradí priamo v chate. Výsledkom je konkrétna káva pripravená do košíka.</p>
-  <button class="preview-cta" id="previewOpen">Spustiť Beano poradcu</button>
-</div>
-<button id="kb-bubble" aria-label="Otvoriť Beano poradcu"><span class="cart-badge" id="bubbleCount" aria-live="polite"></span>
-<span class="beano-sprite launcher-sprite" data-reactive data-pose="idle" aria-hidden="true"></span></button>
-<div id="kb-teaser"><button class="tx" id="teaserClose">×</button><b>Beano poradí s výberom</b><span>Vyberie produkt, mletie, balenie a cenu bez zdĺhavého hľadania.</span></div>
-<section id="kb-widget">
-  <header class="kb-head"><div class="brand"><div class="brand-logo" aria-hidden="true"></div><div class="brand-copy"><div class="brand-name"><b>Beano</b><span>Coffee assistant</span></div></div></div><div class="h-actions"><button class="hbtn" id="reset" aria-label="Začať odznova" title="Začať odznova">↺</button><button class="hbtn close" id="close" aria-label="Zavrieť" title="Zavrieť">×</button></div></header>
-  <nav class="mode-tabs"><button id="tabCalc" class="active"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10v20H7V2Zm2 3v3h6V5H9Zm0 5v2h2v-2H9Zm4 0v2h2v-2h-2Zm-4 4v2h2v-2H9Zm4 0v2h2v-2h-2Z"/></svg>Poradca</button><button id="tabChat"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v11H7l-3 4V4Z"/></svg>Beano chat</button></nav>
-  <div class="calc"><div class="progress-row"><button class="back" id="back">‹</button><div class="step-pill" id="stepPill">1</div><div class="bars" id="bars"></div><div class="step-count" id="stepCount">1/6</div></div><main class="body" id="body"></main><aside class="advisor-dock"><span class="beano-sprite advisor-sprite" data-reactive data-pose="idle" aria-hidden="true"></span><div class="advisor-speech"><b>Beano tip</b><span id="beanoLine">Začnime tým, ako kávu pripravujete.</span></div></aside><footer class="footer"><button class="next" id="next">Pokračovať ›</button></footer></div>
-  <div class="chat"><div class="chat-msgs" id="chatMsgs"></div><div class="chat-chips"><button class="chip" data-q="espresso">Espresso</button><button class="chip" data-q="filter">Filter / V60</button><button class="chip" data-q="darcek">Darček</button></div><form class="chat-in" id="chatForm"><input id="chatInput" placeholder="Napíšte svoju otázku…"><button class="send" aria-label="Odoslať">→</button></form></div>
-</section>
-<script>
-const CONFIG={LEAD_ENDPOINT:"",ADD_TO_CART_ENDPOINT:""};
-const icons={
- espresso:'<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 20h23v9c0 6-5 10-11 10h-1c-6 0-11-4-11-10v-9Z" fill="#fff4de" stroke="currentColor" stroke-width="3"/><path d="M33 23h3a6 6 0 0 1 0 12h-5" fill="none" stroke="currentColor" stroke-width="3"/><path d="M8 40h29" stroke="currentColor" stroke-width="3"/><path d="M17 16c-3-4 3-5 0-9M25 16c-3-4 3-5 0-9" fill="none" stroke="#c58b4d" stroke-width="3" stroke-linecap="round"/></svg>',
- auto:'<svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="5" width="28" height="38" rx="4" fill="#f8fbf9" stroke="currentColor" stroke-width="3"/><rect x="15" y="10" width="18" height="9" rx="2" fill="#d7ebe4" stroke="currentColor" stroke-width="2"/><circle cx="19" cy="14.5" r="2" fill="#d5a04f"/><path d="M18 25h12M24 25v6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M17 31h14v7H17z" fill="#fff1d9" stroke="currentColor" stroke-width="2"/></svg>',
- filter:'<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M9 10h30L29 27H19L9 10Z" fill="#f4f8fa" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M15 15h18M18 20h12" stroke="#86a6b7" stroke-width="2"/><path d="M18 31h13v9H18zM14 41h21" fill="#fff4de" stroke="currentColor" stroke-width="3"/><path d="M24 27v4" stroke="#c58b4d" stroke-width="3" stroke-linecap="round"/></svg>',
- beans:'<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M17 8c9 2 13 12 8 21S12 42 5 37C3 26 7 14 17 8Z" fill="#d8a66a" stroke="currentColor" stroke-width="3"/><path d="M16 12c2 8-5 13-6 22" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="M34 17c8 4 10 13 5 21-8 2-15-2-18-10 7 0 11-4 13-11Z" fill="#bc7d4d" stroke="currentColor" stroke-width="3"/></svg>',
- moka:'<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M15 5h18l3 10-5 6 4 6-2 16H15l-2-16 4-6-5-6 3-10Z" fill="#f1ede8" stroke="currentColor" stroke-width="3"/><path d="M14 15h22M16 28h18M19 8h10" stroke="currentColor" stroke-width="2.5"/><path d="M36 16h5v12h-6" fill="none" stroke="#9f6542" stroke-width="3"/></svg>',
- gift:'<svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 19h34v24H7V19Z" fill="#fff5ed" stroke="currentColor" stroke-width="3"/><path d="M5 13h38v9H5z" fill="#ead7e4" stroke="currentColor" stroke-width="3"/><path d="M24 13v30" stroke="currentColor" stroke-width="3"/><path d="M24 13c-7 0-11-2-11-6 5-3 10 0 11 6Zm0 0c7 0 11-2 11-6-5-3-10 0-11 6Z" fill="#d69aac" stroke="currentColor" stroke-width="2.5"/></svg>'
-};
-const products=[
- {id:'espresso',name:'Espresso Blend Classic',sku:'KB-ESP',price:8.9,tag:'najbezpečnejšia voľba',desc:'Čokoládovo-orieškový profil, stabilná crema a nízka kyslosť.',match:{brew:['espresso','auto','moka'],taste:['classic','strong','safe'],roast:['medium','dark'],milk:['yes','sometimes'],grind:['beans','espresso','moka']},body:84,acid:22,intensity:78},
- {id:'milk',name:'Milk Velvet Espresso',sku:'KB-MILK',price:9.6,tag:'najlepšie do mlieka',desc:'Sladší espresso blend pre cappuccino, latte a flat white.',match:{brew:['espresso','auto','moka'],taste:['classic','strong'],roast:['medium','dark'],milk:['yes'],grind:['beans','espresso','moka']},body:88,acid:18,intensity:74},
- {id:'filter',name:'Filter Ethiopia Light',sku:'KB-FIL',price:11.9,tag:'svetlý filter',desc:'Ovocnejší a čistejší profil pre V60, batch brew a AeroPress.',match:{brew:['filter','aero'],taste:['fruit','soft'],roast:['light'],milk:['no'],grind:['beans','filter']},body:45,acid:74,intensity:43},
- {id:'soft',name:'Low Acid Colombia',sku:'KB-LOW',price:10.4,tag:'jemná káva',desc:'Mäkká každodenná káva pre zákazníkov, ktorí nechcú ostrú aciditu.',match:{brew:['espresso','auto','moka','french'],taste:['soft','safe'],roast:['medium'],milk:['no','sometimes'],grind:['beans','espresso','moka','filter','french']},body:62,acid:16,intensity:48},
- {id:'gift',name:'Degustačný balík 3×250 g',sku:'KB-GIFT',price:24.9,tag:'darčekový výber',desc:'Tri rôzne kávy v bezpečnom darčekovom výbere.',match:{brew:['gift','espresso','filter','moka','auto'],taste:['safe','classic','fruit','soft'],roast:['medium','light','dark'],milk:['yes','no','sometimes'],grind:['beans']},body:60,acid:40,intensity:56}
-];
-const steps=[
- {key:'brew',title:'Ako pripravujete kávu?',sub:'Vyberte najbližšiu možnosť.',notice:'Najprv si vyberme spôsob prípravy.',opts:[['espresso','Espresso','Páka, crema, plnšie telo','8,90 €','espresso'],['auto','Automat','Zrnková káva na každý deň','8,90 €','auto'],['filter','Filter / V60','Čistejší a ľahší profil','11,90 €','filter']]},
- {key:'taste',title:'Akú chuť chcete?',sub:'Bez odborných slov.',notice:'Aký profil má byť vo vašej šálke?',opts:[['classic','Čokoláda / orechy','Klasika s nižšou kyslosťou','top','beans'],['fruit','Ovocnejšia','Sviežejšia výberová chuť','filter','filter'],['soft','Jemná','Menej horká a kyslá','jemná','beans']]},
- {key:'roast',title:'Aké praženie?',sub:'Ak neviete, nechajte stredné.',notice:'Stredné praženie je bezpečná voľba.',opts:[['light','Svetlejšie','Viac ovocia, hlavne filter','light','filter'],['medium','Stredné','Najbezpečnejšia voľba','best','beans'],['dark','Tmavšie','Silnejšia chuť','strong','espresso']]},
- {key:'milk',title:'Pijete ju s mliekom?',sub:'Pomôže to vybrať blend.',notice:'Mlieko výrazne mení správny výber.',opts:[['yes','Áno','Cappuccino alebo latte','milk','espresso'],['sometimes','Občas','Univerzálna voľba','mix','beans'],['no','Nie','Hlavne čierna káva','black','filter']]},
- {key:'grind',title:'Forma kávy?',sub:'Produktový variant.',notice:'Zrnková káva si drží najviac arómy.',opts:[['beans','Zrnková','Najlepšia čerstvosť','variant','beans'],['espresso','Mletá espresso','Pre pákový kávovar','variant','espresso'],['filter','Mletá filter','Pre filter alebo V60','variant','filter']]},
- {key:'pack',title:'Aké balenie?',sub:'Cena sa prepočíta.',notice:'Koľko kávy chcete mať doma?',opts:[['250','250 g','Na skúšku','8,90 €','beans'],['500','500 g','Lepší pomer','16,50 €','beans'],['1000','1 kg','Najvýhodnejšie','30,50 €','beans']]}
-];
-const $=id=>document.getElementById(id);const W=$('kb-widget'),B=$('kb-bubble'),T=$('kb-teaser'),body=$('body'),bars=$('bars'),next=$('next'),back=$('back'),stepPill=$('stepPill'),stepCount=$('stepCount'),beanoLine=$('beanoLine');
-let s={i:0,a:{},qty:1,sub:false,cart:[],rec:null};
-const labels={brew:'Príprava',taste:'Chuť',roast:'Praženie',milk:'Mlieko',grind:'Forma',pack:'Balenie'};
-function esc(x){return String(x??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}function money(n){return n.toFixed(2).replace('.',',')+' €'}function defaultFor(st){if(st.key==='roast'){if(s.a.brew==='filter')return 'light';if(s.a.taste==='classic'||s.a.milk==='yes')return 'medium';return st.opts[0][0]}if(st.key==='grind'){if(s.a.brew==='espresso')return 'espresso';if(s.a.brew==='filter')return 'filter';return st.opts[0][0]}if(st.key==='pack'){return s.a.brew==='auto'?'1000':st.opts[0][0]}return st.opts[0][0]}function label(k,v){let st=steps.find(x=>x.key===k),o=st?.opts.find(x=>x[0]===v);return o?o[1]:'—'}function packMult(){return s.a.pack==='500'?1.85:s.a.pack==='1000'?3.43:1}function score(p){let n=0;for(const k in p.match){if(p.match[k].includes(s.a[k]))n+= k==='brew'?6:k==='taste'?4:2}if(s.a.milk==='yes'&&p.id==='milk')n+=4;if(s.a.brew==='filter'&&p.id==='filter')n+=5;return n}function ranked(){return products.map(p=>({...p,score:score(p),final:p.price*packMult()})).sort((a,b)=>b.score-a.score)}function current(){return s.rec||ranked()[0]}function total(){let p=current().final*s.qty;if(s.sub)p*=.9;return p}function cartTotal(){return s.cart.reduce((a,x)=>a+x.total,0)}function open(){W.classList.add('open');B.classList.add('hide');T.classList.remove('show');setBeanoMood('wave');render()}function close(){W.classList.remove('open');B.classList.remove('hide');setBeanoMood('idle')}function setMode(m){W.classList.toggle('chatmode',m==='chat');$('tabCalc').classList.toggle('active',m==='calc');$('tabChat').classList.toggle('active',m==='chat');if(m==='chat'){beanoLine.textContent='Napíšte mi, čo máte radi. Odpoviem priamo tu.';chatInit()}else render()}function updateCount(){let el=$('bubbleCount');if(!el)return;let n=s.cart.length;el.textContent=n>0?String(n):'';el.classList.toggle('show',n>0);if(n>0){el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop')}}
-function setBeanoMood(mood){const m=mood||'idle',pose={idle:'idle',select:'point',thinking:'thinking',result:'happy',cart:'happy',wave:'wave',blink:'blink'}[m]||'idle';document.querySelectorAll('.beano-sprite[data-reactive]').forEach(b=>{b.dataset.mood=m;b.dataset.pose=pose;void b.offsetWidth});clearTimeout(setBeanoMood.timer);if(!['idle','thinking','blink'].includes(m)){setBeanoMood.timer=setTimeout(()=>document.querySelectorAll('.beano-sprite[data-reactive]').forEach(b=>{b.dataset.mood='idle';b.dataset.pose='idle'}),1050)}}function nudgeBuddy(mood){setBeanoMood(mood==='pick'?'select':mood||'idle')}function reset(){s={i:0,a:{},qty:1,sub:false,cart:s.cart,rec:null};setMode('calc');render();setBeanoMood('idle')}
-function renderBars(){bars.innerHTML=steps.map((_,i)=>'<i class="bar '+(i<=s.i?'on':'')+'"></i>').join('');stepPill.textContent=s.i+1;stepCount.textContent=(s.i+1)+'/'+steps.length;back.disabled=s.i===0}
-function render(){s.rec=null;renderBars();let st=steps[s.i];if(!s.a[st.key])s.a[st.key]=defaultFor(st);let sel=s.a[st.key];beanoLine.textContent=st.notice;next.disabled=!sel;next.textContent=s.i===steps.length-1?'Nájsť moju kávu':'Pokračovať';body.className='body no-scroll';body.innerHTML='<section class="step-hero"><h2>'+esc(st.title)+'</h2></section><div class="card-list">'+st.opts.map(o=>card(st,o)).join('')+'</div>';body.querySelectorAll('.choice').forEach(btn=>btn.onclick=()=>{s.a[st.key]=btn.dataset.v;setBeanoMood('select');render();setBeanoMood('select')})}
-function card(st,o){let on=s.a[st.key]===o[0],isPrice=String(o[3]).includes('€'),iconKey=o[4]||'beans';let price=isPrice?'<div class="price"><small>od</small><b>'+esc(o[3])+'</b></div>':'<div class="price badge"><b>'+esc(o[3])+'</b><small>voľba</small></div>';return '<button class="choice '+(on?'selected':'')+'" data-v="'+esc(o[0])+'"><div class="pic pic-'+esc(iconKey)+'">'+(icons[iconKey]||icons.beans)+'</div><div class="choice-mid"><b>'+esc(o[1])+'</b><span>'+esc(o[2])+'</span></div>'+price+'</button>'}
-function result(){setBeanoMood('result');s.rec=ranked()[0];let r=s.rec,alts=ranked().slice(1,3),free=Math.max(0,35-total()),prog=Math.min(100,Math.round(total()/35*100)),sku=r.sku+'-'+(s.a.pack||'250'),variant=label('grind',s.a.grind)+' · '+label('pack',s.a.pack);beanoLine.textContent='Toto je váš najlepší kávový match.';next.disabled=false;next.textContent='Pridať do košíka · '+money(total());stepPill.textContent='✓';stepCount.textContent='OK';bars.innerHTML=steps.map(()=>'<i class="bar on"></i>').join('');body.className='body no-scroll';body.innerHTML='<div class="summary">'+Object.keys(labels).map(k=>'<div class="sum"><span>'+labels[k]+'</span><b>'+esc(label(k,s.a[k]))+'</b></div>').join('')+'</div><div class="product"><div class="product-top"><div class="bag" data-pack="'+esc(s.a.pack||'250')+'g"></div><div class="prod-copy"><small>'+esc(r.tag)+'</small><h3>'+esc(r.name)+'</h3><p>'+esc(r.desc)+'</p></div></div><div class="product-meta"><div class="meta"><span>Cena</span><b>'+money(total())+'</b></div><div class="meta"><span>SKU</span><b>'+esc(sku)+'</b></div><div class="meta"><span>Mletie</span><b>'+esc(label('grind',s.a.grind))+'</b></div><div class="meta"><span>Balenie</span><b>'+esc(label('pack',s.a.pack))+'</b></div></div><div class="meters"><div class="meter"><span>Telo</span><i style="--w:'+r.body+'%"></i></div><div class="meter"><span>Acidita</span><i style="--w:'+r.acid+'%"></i></div><div class="meter"><span>Intenzita</span><i style="--w:'+r.intensity+'%"></i></div></div><div class="buy"><div class="buyrow"><div class="total"><span>'+esc(variant)+'</span><b>'+money(total())+'</b></div><div class="qty"><button id="minus">−</button><b>'+s.qty+'</b><button id="plus">+</button></div></div><button class="toggle '+(s.sub?'on':'')+'" id="sub">Predplatné −10 %</button></div><div class="ship"><div><span>'+(free>0?'Do dopravy zdarma chýba':'Doprava zdarma')+'</span><b>'+(free>0?money(free):'aktivovaná')+'</b></div><i style="--w:'+prog+'%"></i></div><div class="alts">'+alts.map(a=>'<div class="altcard"><span>alternatíva</span><b>'+esc(a.name)+'</b></div>').join('')+'</div></div>';$('minus').onclick=()=>{s.qty=Math.max(1,s.qty-1);result()};$('plus').onclick=()=>{s.qty=Math.min(9,s.qty+1);result()};$('sub').onclick=()=>{s.sub=!s.sub;result()}}
-function addCart(){setBeanoMood('cart');let r=current(),item={product:r.name,sku:r.sku+'-'+(s.a.pack||'250'),qty:s.qty,subscription:s.sub,total:total(),answers:{...s.a}};s.cart.push(item);updateCount();try{let old=JSON.parse(localStorage.getItem('kavabot_cart')||'[]');old.push(item);localStorage.setItem('kavabot_cart',JSON.stringify(old))}catch(e){}cartView(true)}
-function cartView(added){setMode('calc');beanoLine.textContent=added?'Hotovo. Káva je pripravená v košíku.':'Tu je váš výber.';stepPill.textContent=s.cart.length?'✓':'•';stepCount.textContent='cart';bars.innerHTML=steps.map(()=>'<i class="bar on"></i>').join('');back.disabled=false;next.disabled=s.cart.length===0;next.textContent=s.cart.length?'Pokračovať k objednávke':'Spustiť poradcu';body.className='body no-scroll';if(!s.cart.length){body.innerHTML='<div class="empty"><b>Košík je prázdny</b><span>Najprv vyberte kávu cez poradcu.</span></div>';return}body.innerHTML='<section class="q"><h2>'+(added?'Káva je v košíku':'Košík')+'</h2><p>Skontrolujte produkt a pokračujte k objednávke.</p></section><div class="cart-list">'+s.cart.map(x=>'<div class="cart-item"><div class="mini-bag"></div><div><b>'+esc(x.product)+'</b><span>'+esc(x.sku)+' · '+x.qty+' ks'+(x.subscription?' · predplatné':'')+'</span></div><strong>'+money(x.total)+'</strong></div>').join('')+'</div><div class="ship"><div><span>Košík spolu</span><b>'+money(cartTotal())+'</b></div><i style="--w:'+Math.min(100,cartTotal()/35*100)+'%"></i></div>'}
-function lead(){let r=current();stepPill.textContent='→';stepCount.textContent='lead';next.textContent='Odoslať výber ›';next.disabled=false;body.className='body no-scroll';body.innerHTML='<section class="q"><h2>Kam poslať odporúčanie?</h2><p>Fallback, keď zákazník nechce hneď objednať alebo potrebuje poradiť.</p></section><form class="lead" id="lead"><div class="row2"><input name="name" placeholder="Meno" required><input name="email" type="email" placeholder="E-mail" required></div><input name="phone" placeholder="Telefón voliteľne"><textarea name="note">Zaujíma ma '+esc(r.name)+' – '+esc(label('grind',s.a.grind))+', '+esc(label('pack',s.a.pack))+'.</textarea><label class="cons"><input name="consent" type="checkbox" required> Súhlasím so spracovaním údajov pre vybavenie výberu.</label><div id="stat" class="status"></div></form>'}
-function submitLead(){let f=$('lead'),stat=$('stat');if(!f){lead();return}if(!f.reportValidity())return;let payload=Object.fromEntries(new FormData(f).entries());payload.cart=s.cart;payload.answers=s.a;payload.recommendation=current().name;try{let old=JSON.parse(localStorage.getItem('kavabot_leads')||'[]');old.push(payload);localStorage.setItem('kavabot_leads',JSON.stringify(old));stat.className='status show ok';stat.textContent='Výber je uložený v demo režime.';next.textContent='Hotovo'}catch(e){stat.className='status show err';stat.textContent='Odoslanie zlyhalo.'}}
-function timeStr(){let d=new Date();return String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0')}
-function chatInit(){setBeanoMood('wave');let chips=document.querySelector('.chat-chips');if($('chatMsgs').children.length){chips.classList.add('reveal');return}chatBot('Som Beano. Napíšte, ako kávu pripravujete alebo akú chuť hľadáte. Odporučím konkrétny produkt priamo tu.',()=>chips.classList.add('reveal'))}
-function chatSay(t,me=false){let box=$('chatMsgs'),ts=timeStr();box.insertAdjacentHTML('beforeend','<div class="msg '+(me?'me':'')+'">'+(me?'':'<span class="beano-sprite chat-avatar" data-pose="idle" aria-hidden="true"></span>')+'<div class="message-stack"><div class="mb">'+esc(t)+'</div><span class="chat-time">'+ts+'</span></div></div>');box.scrollTop=box.scrollHeight}
-function chatBot(t,done){let box=$('chatMsgs'),row=document.createElement('div'),ts=timeStr();row.className='msg';row.innerHTML='<span class="beano-sprite chat-avatar" data-pose="thinking" aria-hidden="true"></span><div class="message-stack"><div class="mb typing"><i></i><i></i><i></i></div><span class="chat-time">'+ts+'</span></div>';box.appendChild(row);box.scrollTop=box.scrollHeight;setBeanoMood('thinking');let bubble=row.querySelector('.mb'),avatar=row.querySelector('.chat-avatar');setTimeout(()=>{let n=0;(function tick(){n+=4;bubble.className='mb';bubble.innerHTML=esc(t.slice(0,n))+(n<t.length?'<span class="type-cursor"></span>':'');box.scrollTop=box.scrollHeight;if(n<t.length)setTimeout(tick,8);else{bubble.textContent=t;avatar.dataset.pose='idle';done&&done()}})()},320)}
-function chatPreset(q){if(q.includes('filter')||q.includes('v60'))return {a:{brew:'filter',taste:'fruit',roast:'light',milk:'no',grind:'filter',pack:'250'},why:'Čistý a ovocnejší profil pre filter.'};if(q.includes('dar'))return {a:{brew:'gift',taste:'safe',roast:'medium',milk:'sometimes',grind:'beans',pack:'250'},why:'Bezpečný darčekový výber s viacerými chuťami.'};if(q.includes('mlie')||q.includes('latte')||q.includes('capp'))return {a:{brew:'espresso',taste:'classic',roast:'medium',milk:'yes',grind:'beans',pack:'250'},why:'Sladší blend, ktorý zostane výrazný aj v mlieku.'};if(q.includes('jem')||q.includes('acid')||q.includes('kysl'))return {a:{brew:'auto',taste:'soft',roast:'medium',milk:'no',grind:'beans',pack:'250'},why:'Jemnejší profil s nízkou aciditou.'};if(q.includes('automat'))return {a:{brew:'auto',taste:'classic',roast:'medium',milk:'sometimes',grind:'beans',pack:'1000'},why:'Stabilná zrnková káva na každý deň.'};if(q.includes('espresso')||q.includes('pák'))return {a:{brew:'espresso',taste:'classic',roast:'medium',milk:'sometimes',grind:'beans',pack:'250'},why:'Plné espresso s čokoládovo-orieškovým profilom.'};return null}
-function chatProduct(r,why){let box=$('chatMsgs'),ts=timeStr();box.insertAdjacentHTML('beforeend','<div class="msg"><span class="beano-sprite chat-avatar" data-pose="happy" aria-hidden="true"></span><div class="message-stack"><div class="chat-product"><div class="chat-product-top"><div class="chat-product-art"></div><div><small>'+esc(r.tag)+'</small><b>'+esc(r.name)+'</b><p>'+esc(why)+'</p></div></div><div class="chat-product-buy"><strong>'+money(r.final)+'</strong><button class="chat-add">Pridať do košíka</button></div></div><span class="chat-time">'+ts+'</span></div></div>');box.querySelectorAll('.chat-add').forEach(btn=>btn.onclick=()=>{setBeanoMood('cart');addCart()});box.scrollTop=box.scrollHeight}
-function askChat(q,shown){chatSay(shown||q,true);let preset=chatPreset(q.toLowerCase()),chips=document.querySelector('.chat-chips');chips.classList.remove('reveal');beanoLine.textContent='Premýšľam nad najlepším profilom…';if(!preset){chatBot('Pomôže mi jedno slovo: espresso, automat, filter, mliečna, jemná alebo darčeková káva.',()=>{beanoLine.textContent='Skúste spôsob prípravy alebo chuť.';setBeanoMood('select');chips.classList.add('reveal')});return}s={...s,i:0,a:preset.a,qty:1,sub:false,rec:null};s.rec=ranked()[0];chatBot('Podľa toho, čo píšete, by som vybral toto:',()=>{beanoLine.textContent='Mám pre vás konkrétny tip.';chatProduct(s.rec,preset.why);setBeanoMood('result');chips.classList.add('reveal')})}
-B.onclick=open;B.onmouseenter=()=>setBeanoMood('wave');B.onmouseleave=()=>{if(!W.classList.contains('open'))setBeanoMood('idle')};$('previewOpen').onclick=open;$('close').onclick=close;$('reset').onclick=reset;$('tabCalc').onclick=()=>{setBeanoMood('idle');setMode('calc')};$('tabChat').onclick=()=>setMode('chat');$('teaserClose').onclick=e=>{e.stopPropagation();T.classList.remove('show')};T.onclick=open;back.onclick=()=>{if(stepCount.textContent==='cart'){reset();return}if(s.i>0){s.i--;setBeanoMood('select');render()}};next.onclick=()=>{if(stepCount.textContent==='lead'){submitLead();return}if(stepCount.textContent==='cart'){lead();return}if(s.rec){addCart();return}if(s.i<steps.length-1){s.i++;setBeanoMood('select');render()}else{setBeanoMood('thinking');beanoLine.textContent='Spájam vaše odpovede…';next.disabled=true;next.textContent='Beano vyberá';setTimeout(result,650)}};$('chatForm').onsubmit=e=>{e.preventDefault();let v=$('chatInput').value.trim();if(!v)return;$('chatInput').value='';askChat(v)};document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>askChat(c.dataset.q,c.textContent.trim()));setInterval(()=>{document.querySelectorAll('.beano-sprite[data-reactive][data-mood="idle"]').forEach(b=>{b.dataset.pose='blink';setTimeout(()=>{if(b.dataset.mood==='idle')b.dataset.pose='idle'},170)})},3400);setTimeout(()=>T.classList.add('show'),700);render();updateCount();setBeanoMood('idle');
-</script>
+  <main class="demo-page" aria-label="Ukážka poradcu Pražiarnička">
+    <nav class="demo-nav">
+      <a class="demo-logo" href="https://praziarnicka.sk/" target="_blank" rel="noreferrer" aria-label="Pražiarnička">
+        <span class="demo-logo-mark">P</span>
+        <span><b>Pražiarnička</b><small>by Caffè Vita · Trenčín</small></span>
+      </a>
+      <span class="demo-label">Interaktívny návrh</span>
+    </nav>
+
+    <section class="demo-hero">
+      <div class="demo-copy">
+        <span class="eyebrow">Osobný výber bez blúdenia v e-shope</span>
+        <h1>Káva, ktorá vám sadne na prvý výber.</h1>
+        <p>Štyri jednoduché odpovede premeníme na konkrétnu kávu z ponuky Pražiarničky. Bez odborných výrazov, bez nekonečného filtrovania.</p>
+        <button class="open-demo" type="button" data-open-widget>
+          Nájsť moju kávu
+          <span aria-hidden="true">→</span>
+        </button>
+        <div class="demo-proof" aria-label="Výhody">
+          <span><b>30 sekúnd</b> k odporúčaniu</span>
+          <span><b>Reálne produkty</b> a aktuálna ponuka</span>
+          <span><b>Bez registrácie</b> a bez záväzku</span>
+        </div>
+      </div>
+
+      <div class="demo-stage" aria-hidden="true">
+        <div class="stage-ring"></div>
+        <div class="stage-card stage-card-one">
+          <span>Najčastejší výsledok</span>
+          <b>Paganini blend</b>
+          <small>vyvážená chuť · hustá kréma</small>
+        </div>
+        <div class="stage-card stage-card-two">
+          <span>Jemná voľba</span>
+          <b>Brazil Santos</b>
+          <small>čokoláda · kakao · nízka acidita</small>
+        </div>
+        <div class="stage-pack pack-paganini">
+          <span class="pack-brand">Pražiarnička</span>
+          <span class="pack-symbol">♫</span>
+          <strong>PAGANINI</strong>
+          <small>75 % Arabica · 25 % Robusta</small>
+          <i>250 g</i>
+        </div>
+        <div class="stage-beans"></div>
+      </div>
+    </section>
+  </main>
+
+  <aside id="coffee-widget" class="coffee-widget" aria-hidden="true" aria-label="Kávový poradca Pražiarnička">
+    <div class="widget-topline">
+      <span><i></i> Pražené v malých dávkach v Trenčíne</span>
+      <span>Doprava zdarma nad 60 €</span>
+    </div>
+
+    <header class="widget-header">
+      <div class="widget-brand">
+        <div class="brand-seal">P</div>
+        <div>
+          <b>Pražiarnička</b>
+          <span>osobný kávový poradca</span>
+        </div>
+      </div>
+      <button class="icon-button" id="widget-close" type="button" aria-label="Zavrieť poradcu">×</button>
+    </header>
+
+    <div class="widget-content">
+      <section id="view-start" class="view active" aria-labelledby="start-title">
+        <div class="start-visual">
+          <div class="beano-wrap">
+            <span class="beano-sprite" data-beano data-pose="wave" aria-hidden="true"></span>
+          </div>
+          <div class="speech-card">
+            <span>Vita poradca</span>
+            <b>Stačia mi 4 odpovede.</b>
+            <p>Vyberiem kávu podľa vášho kávovaru, chuti a toho, či ju pijete s mliekom.</p>
+          </div>
+        </div>
+
+        <div class="start-heading">
+          <span class="micro-label">Jednoduchý výber · približne 30 sekúnd</span>
+          <h2 id="start-title">Čo dnes vyberáme?</h2>
+          <p>Poradca používa konkrétne kávy z e-shopu Pražiarničky.</p>
+        </div>
+
+        <div class="intent-grid">
+          <button class="intent-card" type="button" data-intent="self">
+            <span class="intent-icon">☕</span>
+            <span><b>Kávu pre seba</b><small>podľa prípravy a chuti</small></span>
+            <i>→</i>
+          </button>
+          <button class="intent-card" type="button" data-intent="gift">
+            <span class="intent-icon">◎</span>
+            <span><b>Darček pre kávičkára</b><small>hotový výber bez rizika</small></span>
+            <i>→</i>
+          </button>
+        </div>
+
+        <button class="help-link" type="button" data-open-help>
+          Neviem, čo vybrať. Radšej sa chcem opýtať
+        </button>
+      </section>
+
+      <section id="view-quiz" class="view" aria-live="polite">
+        <div class="progress-head">
+          <button id="quiz-back" class="back-button" type="button" aria-label="Predchádzajúca otázka">←</button>
+          <div class="progress-copy">
+            <span id="progress-label">Otázka 1 zo 4</span>
+            <div class="progress-track"><i id="progress-fill"></i></div>
+          </div>
+          <span id="progress-percent">25 %</span>
+        </div>
+
+        <div class="quiz-beano">
+          <span class="beano-sprite beano-small" data-beano data-pose="point" aria-hidden="true"></span>
+          <p id="beano-line">Začnime tým najdôležitejším.</p>
+        </div>
+
+        <div class="question-copy">
+          <span id="question-kicker">Spôsob prípravy</span>
+          <h2 id="question-title">Ako kávu najčastejšie pripravujete?</h2>
+          <p id="question-help">Nemusíte poznať žiadne odborné parametre.</p>
+        </div>
+
+        <div id="answer-grid" class="answer-grid"></div>
+      </section>
+
+      <section id="view-result" class="view" aria-live="polite">
+        <div class="result-head">
+          <button id="result-back" class="back-button" type="button" aria-label="Upraviť odpovede">←</button>
+          <div>
+            <span>Vaša najlepšia zhoda</span>
+            <b id="match-score">94 % zhoda</b>
+          </div>
+          <button id="result-restart" class="text-button" type="button">Začať znova</button>
+        </div>
+
+        <div class="result-scroll">
+          <div class="result-celebration">
+            <span class="beano-sprite beano-result" data-beano data-pose="happy" aria-hidden="true"></span>
+            <p id="result-intro">Toto bude veľmi bezpečná prvá voľba.</p>
+          </div>
+
+          <article class="product-card" id="product-card">
+            <div class="product-pack" id="product-pack">
+              <span class="pack-brand">Pražiarnička</span>
+              <span class="pack-symbol" id="product-symbol">♫</span>
+              <strong id="product-pack-name">PAGANINI</strong>
+              <small id="product-pack-composition">75 % Arabica · 25 % Robusta</small>
+              <i>250 g</i>
+            </div>
+
+            <div class="product-copy">
+              <span id="product-tag" class="product-tag">Najuniverzálnejšia voľba</span>
+              <h2 id="product-name">Paganini blend</h2>
+              <p id="product-description">Vyvážená zmes s čokoládou, orechmi a hustou krémou.</p>
+              <div class="product-price"><b id="product-price">od 11,90 €</b><span>250 g · na sklade</span></div>
+            </div>
+          </article>
+
+          <div id="reason-list" class="reason-list"></div>
+
+          <div class="taste-card">
+            <div class="taste-title"><b>Chuťový profil</b><span>podľa údajov produktu</span></div>
+            <div id="taste-bars" class="taste-bars"></div>
+          </div>
+
+          <div class="conversion-card">
+            <div>
+              <span>Čerstvo pražená káva</span>
+              <b>Osobný odber v Trenčíne je zdarma</b>
+            </div>
+            <a id="product-cta" class="primary-cta" href="https://praziarnicka.sk/eshop" target="_blank" rel="noreferrer">
+              Pozrieť produkt v e-shope
+              <span>→</span>
+            </a>
+            <p>Otvorí sa originálna produktová stránka Pražiarničky.</p>
+          </div>
+
+          <div class="alternatives-block">
+            <div class="alternatives-title">
+              <div><span>Ďalšie vhodné možnosti</span><b>Pre porovnanie</b></div>
+              <button id="toggle-alternatives" type="button" aria-expanded="false">Zobraziť</button>
+            </div>
+            <div id="alternatives-list" class="alternatives-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-help" class="view" aria-labelledby="help-title">
+        <div class="help-header">
+          <button id="help-back" class="back-button" type="button" aria-label="Späť">←</button>
+          <div>
+            <span>Rýchla pomoc</span>
+            <h2 id="help-title">S čím vám poradíme?</h2>
+          </div>
+        </div>
+
+        <div id="help-thread" class="help-thread" aria-live="polite">
+          <div class="help-message bot">
+            <span class="beano-sprite chat-beano" data-beano data-pose="idle" aria-hidden="true"></span>
+            <p>Vyberte častú otázku alebo ju napíšte vlastnými slovami.</p>
+          </div>
+        </div>
+
+        <div class="help-chips">
+          <button type="button" data-question="mletie">Aké mletie vybrať?</button>
+          <button type="button" data-question="doprava">Doprava a osobný odber</button>
+          <button type="button" data-question="cerstvost">Ako dlho ostane čerstvá?</button>
+          <button type="button" data-question="odoslanie">Kedy objednávku odošlete?</button>
+        </div>
+
+        <form id="help-form" class="help-form">
+          <label class="sr-only" for="help-input">Vaša otázka</label>
+          <input id="help-input" type="text" autocomplete="off" placeholder="Napíšte otázku…" maxlength="180">
+          <button type="submit" aria-label="Odoslať otázku">→</button>
+        </form>
+      </section>
+    </div>
+
+    <footer class="widget-footer">
+      <span><i></i> 98 % spokojnosť zákazníkov</span>
+      <a href="https://praziarnicka.sk/eshop" target="_blank" rel="noreferrer">Celý e-shop</a>
+    </footer>
+  </aside>
+
+  <div id="widget-teaser" class="widget-teaser" role="button" tabindex="0" aria-label="Otvoriť kávového poradcu">
+    <button id="teaser-close" type="button" aria-label="Skryť upozornenie">×</button>
+    <span>Nie ste si istí výberom?</span>
+    <b>Nájdeme vám kávu za 30 sekúnd.</b>
+  </div>
+
+  <button id="widget-launcher" class="widget-launcher" type="button" aria-label="Otvoriť kávového poradcu">
+    <span class="launcher-pulse"></span>
+    <span class="beano-sprite launcher-beano" data-beano data-pose="idle" aria-hidden="true"></span>
+    <span class="launcher-label">Poradca</span>
+  </button>
+
+  <script src="app.js"></script>
 </body>
 </html>
