@@ -1,0 +1,16 @@
+html.widget-open,
+html.widget-open body {
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+@media (max-width: 560px) {
+  .help-form input {
+    font-size: 16px;
+  }
+
+  .coffee-widget {
+    position: fixed;
+    overflow: hidden;
+  }
+}
