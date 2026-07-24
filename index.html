@@ -3,59 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>KávaBot | prémiový kávový poradca</title>
-  <meta name="description" content="Prémiový kávový poradca — chatbot s kvízom, ktorý odporučí kávu na mieru.">
+  <title>Zrnko &amp; Co. — ukážka AI kávového poradcu</title>
+  <meta name="description" content="Ukážka AI chatbota pre kávový e-shop: poradí zákazníkovi, odporučí kávu z katalógu a vloží ju do košíka.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --launcher-size: 130px;
-      --panel-width: 400px;
-      --panel-height: 660px;
-      --right-edge: 15px;
-
-      --green: #0f3d33;
-      --green-deep: #0a2c25;
-      --green-2: #1c6a55;
-      --mint: #e7f4ec;
-      --cream: #f7f2e9;
+      /* ——— značková paleta: rodinná pražiareň ——— */
+      --espresso: #241610;
+      --roast: #3a231a;
+      --roast-2: #55362a;
+      --copper: #c2703c;
+      --copper-2: #dd9057;
+      --gold: #e5bb84;
+      --cream: #fbf6ef;
+      --sand: #f2e7d8;
       --paper: #ffffff;
-      --line: #ebe3d6;
-      --ink: #1c1b18;
-      --muted: #7a7d76;
-      --gold: #c9974c;
-      --gold-soft: #f3e5cd;
-      --red: #b94a3d;
+      --line: #e9dccb;
+      --ink: #241c16;
+      --muted: #857a70;
+      --leaf: #4d7c58;
 
-      --shadow: 0 24px 70px rgba(12, 24, 20, .28);
-      --shadow-soft: 0 10px 26px rgba(12, 24, 20, .09);
+      --shadow: 0 26px 70px rgba(36, 22, 16, .30);
+      --shadow-soft: 0 10px 26px rgba(36, 22, 16, .09);
       --radius: 16px;
       --radius-sm: 11px;
 
       --font: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
       --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+
+      --launcher-size: 130px;
+      --panel-width: 400px;
+      --panel-height: 660px;
     }
 
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     html, body { min-height: 100%; }
     body {
       margin: 0;
       font-family: var(--font);
       color: var(--ink);
-      background:
-        radial-gradient(circle at 82% 12%, rgba(201,151,76,.28), transparent 38%),
-        radial-gradient(circle at 8% 90%, rgba(28,106,85,.35), transparent 42%),
-        linear-gradient(150deg, #0d352c, #0a2c25 55%, #123c31);
+      background: var(--cream);
     }
     button, input, textarea, select { font: inherit; }
     button { -webkit-tap-highlight-color: transparent; }
-    a { color: inherit; }
-    ::selection { background: rgba(201,151,76,.35); }
+    a { color: inherit; text-decoration: none; }
+    ::selection { background: rgba(194,112,60,.28); }
 
     @keyframes kbPulse {
-      0%, 100% { box-shadow: 0 16px 34px rgba(10,44,37,.35), 0 0 0 0 rgba(231,244,236,.35); }
-      55% { box-shadow: 0 16px 34px rgba(10,44,37,.35), 0 0 0 16px rgba(231,244,236,0); }
+      0%, 100% { box-shadow: 0 16px 34px rgba(36,22,16,.38), 0 0 0 0 rgba(229,187,132,.45); }
+      55% { box-shadow: 0 16px 34px rgba(36,22,16,.38), 0 0 0 16px rgba(229,187,132,0); }
     }
     @keyframes kbIn {
       from { opacity: 0; transform: translateY(18px) scale(.96); }
@@ -73,110 +72,530 @@
       from { background-position: -120% 0; }
       to { background-position: 220% 0; }
     }
+    @keyframes kbPop {
+      0% { transform: scale(1); }
+      45% { transform: scale(1.35); }
+      100% { transform: scale(1); }
+    }
     @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto; }
     }
 
-    /* ------- demo hero (za widgetom) ------- */
-    .demo {
-      min-height: 100dvh;
+    /* ——————— demo pásik ——————— */
+    .demo-bar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 6px 10px;
+      padding: 8px 16px;
+      background: var(--espresso);
+      color: rgba(251,246,239,.78);
+      font-size: 11.5px;
+      font-weight: 500;
+      letter-spacing: .01em;
+      text-align: center;
+    }
+    .demo-bar b {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(229,187,132,.5);
+      border-radius: 999px;
+      padding: 2px 9px;
+      color: var(--gold);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    /* ——————— mock e-shop ——————— */
+    .shop-head {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 14px 26px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(251,246,239,.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 0 0 auto;
+    }
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
       display: grid;
       place-items: center;
-      padding: 28px;
+      color: var(--gold);
+      background: linear-gradient(150deg, var(--roast-2), var(--espresso));
+      box-shadow: inset 0 0 0 1px rgba(229,187,132,.35);
     }
-    .demo-card {
-      width: min(560px, 100%);
-      margin-right: min(430px, 34vw);
-      border: 1px solid rgba(255,255,255,.14);
-      border-radius: 22px;
-      padding: 34px 34px 30px;
-      background: linear-gradient(160deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+    .brand-mark svg { width: 21px; height: 21px; }
+    .brand-name {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1;
+      letter-spacing: .01em;
+      color: var(--espresso);
+    }
+    .brand-sub {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-family: var(--font);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .shop-nav {
+      flex: 1;
+      display: flex;
+      gap: 22px;
+      justify-content: center;
+      color: #5d534b;
+      font-size: 13.5px;
+      font-weight: 500;
+    }
+    .shop-nav a:hover { color: var(--copper); }
+    .shop-tools {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .shop-cart {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 14px 8px 12px;
+      background: #fff;
+      color: var(--espresso);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .shop-cart svg { width: 17px; height: 17px; }
+    .cart-count {
+      min-width: 21px;
+      height: 21px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      padding: 0 6px;
+      background: var(--copper);
       color: #fff;
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      box-shadow: var(--shadow);
+      font-size: 11px;
+      font-weight: 700;
     }
-    .demo-eyebrow {
+    .cart-count.bump { animation: kbPop .45s ease; }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 66px 26px 74px;
+      color: var(--cream);
+      background:
+        radial-gradient(circle at 78% 18%, rgba(194,112,60,.42), transparent 42%),
+        radial-gradient(circle at 12% 88%, rgba(229,187,132,.18), transparent 44%),
+        linear-gradient(150deg, var(--roast), var(--espresso) 58%, #1b100b);
+    }
+    .hero-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 420px);
+      gap: 46px;
+      align-items: center;
+    }
+    .hero-eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 8px;
       min-height: 30px;
-      border: 1px solid rgba(201,151,76,.45);
+      border: 1px solid rgba(229,187,132,.45);
       border-radius: 999px;
       padding: 0 13px;
-      color: #ecd9b6;
+      color: var(--gold);
       font-size: 11px;
       font-weight: 600;
       letter-spacing: .14em;
       text-transform: uppercase;
     }
-    .demo-eyebrow::before {
+    .hero-eyebrow::before {
       content: "";
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background: var(--gold);
+      background: var(--copper-2);
     }
-    .demo-card h1 {
-      margin: 18px 0 12px;
+    .hero h1 {
+      margin: 20px 0 14px;
+      max-width: 15ch;
       font-family: var(--font-display);
-      font-size: clamp(28px, 4.6vw, 42px);
-      line-height: 1.08;
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 1.03;
       font-weight: 600;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.015em;
     }
-    .demo-card h1 em { font-style: italic; color: #ecd9b6; }
-    .demo-card p {
+    .hero h1 em { font-style: italic; color: var(--gold); }
+    .hero p {
       margin: 0;
-      max-width: 44ch;
-      color: rgba(255,255,255,.72);
-      font-size: 15px;
-      line-height: 1.65;
+      max-width: 46ch;
+      color: rgba(251,246,239,.72);
+      font-size: 15.5px;
+      line-height: 1.68;
       font-weight: 450;
     }
-    .demo-actions {
+    .hero-actions {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
       gap: 12px;
-      margin-top: 24px;
+      margin-top: 28px;
     }
-    .demo-btn {
-      min-height: 46px;
+    .btn-primary {
+      min-height: 48px;
       border: 0;
       border-radius: 999px;
-      padding: 0 20px;
+      padding: 0 22px;
       display: inline-flex;
       align-items: center;
       gap: 9px;
-      background: linear-gradient(150deg, #fdf8ee, #f0e4cc);
-      color: var(--green-deep);
+      background: linear-gradient(150deg, var(--copper-2), var(--copper));
+      color: #fff;
       font-weight: 650;
-      font-size: 14px;
+      font-size: 14.5px;
       cursor: pointer;
+      box-shadow: 0 12px 26px rgba(194,112,60,.38);
       transition: transform .18s ease, box-shadow .18s ease;
-      box-shadow: 0 10px 24px rgba(0,0,0,.22);
     }
-    .demo-btn:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(0,0,0,.28); }
-    .demo-btn svg { width: 17px; height: 17px; }
-    .demo-note {
-      margin-top: 22px;
-      padding-top: 18px;
-      border-top: 1px solid rgba(255,255,255,.12);
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 32px rgba(194,112,60,.46); }
+    .btn-primary svg { width: 17px; height: 17px; }
+    .btn-ghost {
+      min-height: 48px;
+      border: 1px solid rgba(251,246,239,.28);
+      border-radius: 999px;
+      padding: 0 22px;
+      display: inline-flex;
+      align-items: center;
+      background: transparent;
+      color: var(--cream);
+      font-weight: 600;
+      font-size: 14.5px;
+      cursor: pointer;
+      transition: background .18s ease;
+    }
+    .btn-ghost:hover { background: rgba(251,246,239,.1); }
+    .hero-trust {
+      margin-top: 30px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(251,246,239,.14);
       display: flex;
       flex-wrap: wrap;
-      gap: 8px 22px;
-      color: rgba(255,255,255,.55);
-      font-size: 12px;
+      gap: 10px 26px;
+      color: rgba(251,246,239,.6);
+      font-size: 12.5px;
       font-weight: 500;
     }
-    .demo-note span { display: inline-flex; align-items: center; gap: 7px; }
-    .demo-note svg { width: 14px; height: 14px; color: var(--gold); flex: 0 0 14px; }
+    .hero-trust span { display: inline-flex; align-items: center; gap: 7px; }
+    .hero-trust svg { width: 14px; height: 14px; color: var(--gold); flex: 0 0 14px; }
 
-    /* ------- launcher ------- */
+    /* vrecká kávy nakreslené v CSS */
+    .hero-art {
+      position: relative;
+      height: 300px;
+      display: grid;
+      place-items: center;
+    }
+    .bag {
+      position: absolute;
+      width: 132px;
+      height: 186px;
+      border-radius: 8px 8px 14px 14px;
+      background: linear-gradient(160deg, var(--roast-2), var(--espresso));
+      box-shadow: 0 22px 46px rgba(0,0,0,.42), inset 0 0 0 1px rgba(229,187,132,.18);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      padding-bottom: 18px;
+      transition: transform .3s ease;
+    }
+    .bag::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      left: 14px;
+      right: 14px;
+      height: 16px;
+      border-radius: 4px;
+      background: linear-gradient(180deg, #6b4636, #43291e);
+      box-shadow: 0 3px 8px rgba(0,0,0,.3);
+    }
+    .bag i {
+      width: 74px;
+      height: 74px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--cream);
+      color: var(--espresso);
+      font-family: var(--font-display);
+      font-size: 26px;
+      font-weight: 600;
+      font-style: normal;
+      box-shadow: 0 6px 16px rgba(0,0,0,.28);
+    }
+    .bag b {
+      margin-top: 12px;
+      color: var(--gold);
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .bag.left  { transform: translateX(-104px) rotate(-9deg) scale(.9); z-index: 1; }
+    .bag.right { transform: translateX(104px) rotate(9deg) scale(.9); z-index: 1; }
+    .bag.mid   { z-index: 2; background: linear-gradient(160deg, #6a4130, var(--roast)); }
+
+    /* ——————— katalóg ——————— */
+    .section {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 62px 26px;
+    }
+    .section-head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .section-head h2 {
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: clamp(24px, 3.4vw, 34px);
+      line-height: 1.15;
+      font-weight: 600;
+      color: var(--espresso);
+    }
+    .section-head p {
+      margin: 8px 0 0;
+      max-width: 52ch;
+      color: var(--muted);
+      font-size: 14.5px;
+      line-height: 1.6;
+    }
+    .section-link {
+      color: var(--copper);
+      font-size: 13.5px;
+      font-weight: 650;
+      cursor: pointer;
+      background: none;
+      border: 0;
+      padding: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 18px;
+      background: var(--paper);
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 18px 38px rgba(36,22,16,.12); }
+    .card-art {
+      height: 132px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 14px;
+      background: linear-gradient(160deg, var(--sand), #e6d6c1);
+    }
+    .card-bag {
+      width: 62px;
+      height: 88px;
+      border-radius: 5px 5px 9px 9px;
+      display: grid;
+      place-items: center;
+      color: var(--gold);
+      background: linear-gradient(160deg, var(--roast-2), var(--espresso));
+      box-shadow: 0 10px 20px rgba(36,22,16,.28);
+      font-family: var(--font-display);
+      font-size: 21px;
+      font-weight: 600;
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.3;
+      font-weight: 650;
+      color: var(--ink);
+    }
+    .card-notes {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 12.4px;
+      line-height: 1.5;
+      flex: 1;
+    }
+    .card-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 14px;
+    }
+    .card-price {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--espresso);
+    }
+    .card-btn {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 14px;
+      background: var(--cream);
+      color: var(--espresso);
+      font-size: 12.5px;
+      font-weight: 620;
+      cursor: pointer;
+      transition: background .15s ease, border-color .15s ease;
+    }
+    .card-btn:hover { background: var(--sand); border-color: var(--copper); }
+
+    /* ——————— sekcia pre majiteľa ——————— */
+    .owner {
+      background:
+        radial-gradient(circle at 85% 10%, rgba(194,112,60,.22), transparent 45%),
+        linear-gradient(160deg, #2c1a13, var(--espresso));
+      color: var(--cream);
+    }
+    .owner .section { padding-top: 66px; padding-bottom: 70px; }
+    .owner-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(229,187,132,.4);
+      border-radius: 999px;
+      padding: 5px 13px;
+      color: var(--gold);
+      font-size: 10.5px;
+      font-weight: 650;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .owner h2 {
+      margin: 18px 0 12px;
+      max-width: 22ch;
+      font-family: var(--font-display);
+      font-size: clamp(26px, 3.8vw, 38px);
+      line-height: 1.12;
+      font-weight: 600;
+    }
+    .owner > .section > p {
+      margin: 0;
+      max-width: 62ch;
+      color: rgba(251,246,239,.7);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin-top: 34px;
+    }
+    .stat {
+      border: 1px solid rgba(251,246,239,.14);
+      border-radius: 15px;
+      padding: 20px;
+      background: rgba(251,246,239,.05);
+    }
+    .stat-ico {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 13px;
+      background: rgba(229,187,132,.16);
+      font-size: 18px;
+    }
+    .stat b {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .stat span {
+      display: block;
+      margin-top: 6px;
+      color: rgba(251,246,239,.66);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+    .owner-cta {
+      margin-top: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+    }
+    .owner-code {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px dashed rgba(229,187,132,.5);
+      border-radius: 12px;
+      padding: 11px 15px;
+      background: rgba(0,0,0,.22);
+      color: rgba(251,246,239,.66);
+      font-size: 12.5px;
+    }
+    .owner-code code {
+      color: var(--gold);
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: 12px;
+    }
+
+    .foot {
+      padding: 26px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12.5px;
+      background: var(--cream);
+      border-top: 1px solid var(--line);
+    }
+
+    /* ——————— launcher ——————— */
     #kb-launcher {
       position: fixed;
-      right: var(--right-edge);
+      right: 15px;
       bottom: 0;
       z-index: 2147483000;
       width: var(--launcher-size);
@@ -188,37 +607,33 @@
       place-items: center;
       transition: opacity .18s ease, transform .18s ease;
     }
-    #kb-launcher.hidden {
-      opacity: 0;
-      pointer-events: none;
-      transform: scale(.9);
-    }
+    #kb-launcher.hidden { opacity: 0; pointer-events: none; transform: scale(.9); }
     .launcher-core {
       width: 86px;
       height: 86px;
       border-radius: 50%;
       display: grid;
       place-items: center;
-      color: #f6ecd8;
+      color: var(--gold);
       background:
-        radial-gradient(circle at 30% 25%, rgba(255,255,255,.22), transparent 40%),
-        linear-gradient(150deg, var(--green-2), var(--green-deep));
-      border: 1px solid rgba(246,236,216,.22);
+        radial-gradient(circle at 30% 25%, rgba(255,255,255,.2), transparent 40%),
+        linear-gradient(150deg, var(--copper), var(--espresso));
+      border: 1px solid rgba(229,187,132,.3);
       animation: kbPulse 3.2s ease-in-out infinite;
       transition: transform .18s ease;
     }
     #kb-launcher:hover .launcher-core { transform: scale(1.05); }
     .launcher-core svg { width: 38px; height: 38px; }
 
-    /* ------- widget panel ------- */
+    /* ——————— chat widget ——————— */
     #kb-widget {
       position: fixed;
-      right: var(--right-edge);
+      right: 15px;
       bottom: 15px;
       z-index: 2147483002;
       width: min(var(--panel-width), calc(100vw - 30px));
       height: min(var(--panel-height), calc(100dvh - 30px));
-      border: 1px solid rgba(15,61,51,.10);
+      border: 1px solid rgba(36,22,16,.10);
       border-radius: 22px;
       display: none;
       flex-direction: column;
@@ -226,10 +641,7 @@
       background: var(--paper);
       box-shadow: var(--shadow);
     }
-    #kb-widget.open {
-      display: flex;
-      animation: kbIn .3s cubic-bezier(.2,.8,.3,1) both;
-    }
+    #kb-widget.open { display: flex; animation: kbIn .3s cubic-bezier(.2,.8,.3,1) both; }
 
     .kb-head {
       min-height: 68px;
@@ -237,22 +649,22 @@
       align-items: center;
       gap: 11px;
       padding: 13px 14px;
-      color: #fdf9f0;
+      color: var(--cream);
       background:
-        radial-gradient(circle at 88% 0%, rgba(201,151,76,.4), transparent 42%),
-        linear-gradient(150deg, var(--green), var(--green-deep));
+        radial-gradient(circle at 88% 0%, rgba(194,112,60,.55), transparent 45%),
+        linear-gradient(150deg, var(--roast), var(--espresso));
     }
     .kb-logo {
+      position: relative;
       width: 44px;
       height: 44px;
       flex: 0 0 44px;
       border-radius: 50%;
       display: grid;
       place-items: center;
-      color: #f2e3c6;
+      color: var(--gold);
       background: rgba(255,255,255,.10);
-      box-shadow: inset 0 0 0 1px rgba(242,227,198,.28);
-      position: relative;
+      box-shadow: inset 0 0 0 1px rgba(229,187,132,.3);
     }
     .kb-logo::after {
       content: "";
@@ -262,8 +674,8 @@
       width: 11px;
       height: 11px;
       border-radius: 50%;
-      background: #7fe8a8;
-      border: 2px solid var(--green-deep);
+      background: #6fd894;
+      border: 2px solid var(--espresso);
     }
     .kb-logo svg { width: 24px; height: 24px; }
     .kb-title { flex: 1; min-width: 0; }
@@ -276,12 +688,11 @@
       font-size: 17px;
       line-height: 1.1;
       font-weight: 600;
-      letter-spacing: .01em;
     }
     .kb-title span {
       display: block;
       margin-top: 4px;
-      color: rgba(253,249,240,.66);
+      color: rgba(251,246,239,.66);
       font-size: 11px;
       font-weight: 500;
     }
@@ -292,7 +703,7 @@
       border-radius: 50%;
       display: grid;
       place-items: center;
-      color: #fdf9f0;
+      color: var(--cream);
       background: rgba(255,255,255,.10);
       cursor: pointer;
       transition: background .15s ease;
@@ -307,23 +718,18 @@
       align-items: center;
       padding: 9px 16px;
       border-bottom: 1px solid var(--line);
-      background: #fdfaf4;
+      background: #fdfaf5;
     }
-    .kb-track {
-      height: 5px;
-      border-radius: 999px;
-      overflow: hidden;
-      background: #ece4d4;
-    }
+    .kb-track { height: 5px; border-radius: 999px; overflow: hidden; background: #eee1d0; }
     .kb-fill {
       width: 0%;
       height: 100%;
       border-radius: inherit;
-      background: linear-gradient(90deg, var(--green-2), var(--gold));
+      background: linear-gradient(90deg, var(--copper), var(--gold));
       transition: width .35s ease;
     }
     .kb-step-label {
-      color: var(--green);
+      color: var(--roast);
       font-size: 10.5px;
       font-weight: 650;
       letter-spacing: .06em;
@@ -331,7 +737,6 @@
       white-space: nowrap;
     }
 
-    /* ------- chat ------- */
     .kb-body {
       flex: 1;
       min-height: 0;
@@ -356,31 +761,31 @@
       border-radius: 50%;
       display: grid;
       place-items: center;
-      color: #f2e3c6;
-      background: linear-gradient(150deg, var(--green-2), var(--green-deep));
-      box-shadow: inset 0 0 0 1px rgba(242,227,198,.25);
+      color: var(--gold);
+      background: linear-gradient(150deg, var(--roast-2), var(--espresso));
+      box-shadow: inset 0 0 0 1px rgba(229,187,132,.25);
     }
     .kb-ava svg { width: 16px; height: 16px; }
     .kb-bubble {
       max-width: 86%;
       border-radius: 16px;
       padding: 11px 14px;
-      font-size: 13.2px;
-      line-height: 1.55;
+      font-size: 13.4px;
+      line-height: 1.58;
       font-weight: 470;
     }
     .kb-msg.bot .kb-bubble {
       border: 1px solid var(--line);
       border-bottom-left-radius: 6px;
       background: #fff;
-      color: #3c3f3a;
+      color: #46392f;
       box-shadow: var(--shadow-soft);
     }
     .kb-msg.user .kb-bubble {
       border-bottom-right-radius: 6px;
-      background: linear-gradient(150deg, var(--green-2), var(--green));
-      color: #f5faf5;
-      box-shadow: 0 8px 20px rgba(15,61,51,.22);
+      background: linear-gradient(150deg, var(--copper-2), var(--copper));
+      color: #fff;
+      box-shadow: 0 8px 20px rgba(194,112,60,.3);
       font-weight: 550;
     }
     .kb-bubble b { color: var(--ink); font-weight: 650; }
@@ -398,95 +803,76 @@
       display: block;
       margin-top: 3px;
       color: var(--muted);
-      font-size: 11.6px;
+      font-size: 11.8px;
     }
 
-    .kb-opts {
-      display: grid;
-      gap: 7px;
-      margin-top: 11px;
-    }
+    .kb-opts { display: grid; gap: 7px; margin-top: 11px; }
     .kb-opt {
       width: 100%;
       border: 1px solid var(--line);
       border-radius: var(--radius-sm);
-      padding: 10px 12px;
+      padding: 11px 12px;
       display: grid;
-      grid-template-columns: 30px 1fr auto;
+      grid-template-columns: 32px 1fr auto;
       gap: 10px;
       align-items: center;
       text-align: left;
-      background: #fdfbf6;
+      background: #fdfaf5;
       cursor: pointer;
       transition: border-color .15s ease, background .15s ease, transform .15s ease, box-shadow .15s ease;
     }
     .kb-opt:hover {
-      border-color: rgba(28,106,85,.5);
-      background: #f4faf5;
+      border-color: var(--copper);
+      background: #fff7ee;
       transform: translateY(-1px);
-      box-shadow: 0 8px 18px rgba(12,24,20,.08);
+      box-shadow: 0 8px 18px rgba(36,22,16,.08);
     }
-    .kb-opt[disabled] { opacity: .55; pointer-events: none; }
+    .kb-opt[disabled] { opacity: .5; pointer-events: none; }
     .kb-opt i {
-      width: 30px;
-      height: 30px;
+      width: 32px;
+      height: 32px;
       border-radius: 50%;
       display: grid;
       place-items: center;
       font-style: normal;
-      font-size: 15px;
-      background: var(--mint);
+      font-size: 16px;
+      background: var(--sand);
     }
-    .kb-opt b {
-      display: block;
-      color: var(--ink);
-      font-size: 12.8px;
-      font-weight: 630;
-    }
+    .kb-opt b { display: block; color: var(--ink); font-size: 13px; font-weight: 630; }
     .kb-opt small {
       display: block;
       margin-top: 2px;
       color: var(--muted);
-      font-size: 11px;
-      line-height: 1.35;
+      font-size: 11.2px;
+      line-height: 1.38;
       font-weight: 450;
     }
     .kb-opt::after {
       content: "›";
       grid-column: 3;
-      color: #c9c2b3;
+      color: #cdbfae;
       font-size: 17px;
       transition: transform .15s ease, color .15s ease;
     }
-    .kb-opt:hover::after { color: var(--green-2); transform: translateX(2px); }
+    .kb-opt:hover::after { color: var(--copper); transform: translateX(2px); }
 
-    .kb-mini {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-top: 9px;
-    }
+    .kb-mini { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 9px; }
     .kb-mini button {
       border: 0;
       border-radius: 999px;
-      padding: 6px 11px;
+      padding: 6px 10px;
       background: transparent;
-      color: var(--green-2);
+      color: var(--copper);
       cursor: pointer;
       font-size: 11px;
       font-weight: 600;
       text-decoration: underline;
-      text-decoration-color: rgba(28,106,85,.35);
+      text-decoration-color: rgba(194,112,60,.35);
       text-underline-offset: 3px;
     }
-    .kb-mini button:hover { color: var(--green); }
+    .kb-mini button:hover { color: var(--roast); }
 
-    .kb-cta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 11px;
-    }
+    .kb-cta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
     .kb-btn {
       min-height: 38px;
       border: 0;
@@ -496,89 +882,78 @@
       align-items: center;
       justify-content: center;
       gap: 7px;
-      background: var(--green);
-      color: #fdf9f0;
+      background: var(--espresso);
+      color: var(--cream);
       cursor: pointer;
       font-size: 12.5px;
       font-weight: 620;
       transition: background .15s ease, transform .15s ease;
     }
-    .kb-btn:hover { background: var(--green-2); transform: translateY(-1px); }
+    .kb-btn:hover { background: var(--roast-2); transform: translateY(-1px); }
     .kb-btn.gold {
-      background: linear-gradient(120deg, var(--gold) 30%, #e0b76e 50%, var(--gold) 70%);
+      background: linear-gradient(120deg, var(--copper) 30%, var(--copper-2) 50%, var(--copper) 70%);
       background-size: 220% 100%;
       color: #fff;
       animation: kbShine 3.4s linear infinite;
     }
-    .kb-btn.alt {
-      border: 1px solid var(--line);
-      background: #fff;
-      color: var(--green);
-    }
-    .kb-btn.alt:hover { background: var(--mint); }
+    .kb-btn.alt { border: 1px solid var(--line); background: #fff; color: var(--roast); }
+    .kb-btn.alt:hover { background: var(--sand); }
     .kb-btn[disabled] { opacity: .5; pointer-events: none; }
 
-    .kb-typing .kb-bubble {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      padding: 13px 15px;
-    }
+    .kb-typing .kb-bubble { display: inline-flex; align-items: center; gap: 5px; padding: 13px 15px; }
     .kb-typing i {
       width: 6px;
       height: 6px;
       border-radius: 50%;
-      background: var(--green-2);
+      background: var(--copper);
       animation: kbDot 1.1s ease-in-out infinite;
     }
     .kb-typing i:nth-child(2) { animation-delay: .15s; }
     .kb-typing i:nth-child(3) { animation-delay: .3s; }
 
-    /* products in chat */
-    .kb-products { margin-top: 11px; }
+    /* produkty v chate */
+    .kb-products { margin-top: 12px; }
     .kb-product {
       position: relative;
-      display: grid;
-      grid-template-columns: 52px 1fr;
-      gap: 11px;
       border: 1px solid var(--line);
       border-radius: 13px;
-      padding: 11px;
+      padding: 12px;
       background: #fff;
       box-shadow: var(--shadow-soft);
     }
     .kb-product + .kb-product { margin-top: 9px; }
     .kb-product.top {
-      border-color: rgba(201,151,76,.55);
-      background: linear-gradient(165deg, #fffdf7, #fbf4e6);
-      margin-top: 6px;
+      border-color: rgba(194,112,60,.55);
+      background: linear-gradient(165deg, #fffaf3, #fdf2e4);
+      margin-top: 7px;
     }
     .kb-best {
       position: absolute;
       top: -9px;
-      left: 11px;
+      left: 12px;
       border-radius: 999px;
       padding: 3px 9px;
-      background: var(--gold);
+      background: var(--copper);
       color: #fff;
       font-size: 9px;
       font-weight: 700;
       letter-spacing: .1em;
       text-transform: uppercase;
-      box-shadow: 0 4px 10px rgba(201,151,76,.4);
+      box-shadow: 0 4px 10px rgba(194,112,60,.42);
     }
+    .kb-prod-top { display: grid; grid-template-columns: 50px 1fr; gap: 11px; }
     .kb-thumb {
-      width: 52px;
-      height: 68px;
-      border-radius: 9px;
+      width: 50px;
+      height: 66px;
+      border-radius: 7px;
       display: grid;
       place-items: center;
-      color: #f2e3c6;
+      color: var(--gold);
       background:
-        radial-gradient(circle at 30% 20%, rgba(255,255,255,.3), transparent 32%),
-        linear-gradient(155deg, #4b2f22, var(--green-deep));
+        radial-gradient(circle at 30% 20%, rgba(255,255,255,.22), transparent 34%),
+        linear-gradient(155deg, var(--roast-2), var(--espresso));
       font-family: var(--font-display);
-      font-size: 20px;
+      font-size: 19px;
       font-weight: 600;
     }
     .kb-product h4 {
@@ -588,97 +963,146 @@
       align-items: baseline;
       gap: 8px;
       color: var(--ink);
-      font-size: 13px;
-      line-height: 1.25;
+      font-size: 13.2px;
+      line-height: 1.28;
       font-weight: 650;
     }
     .kb-match {
-      min-width: 44px;
+      flex: 0 0 auto;
       border-radius: 999px;
       padding: 4px 8px;
-      background: var(--mint);
-      color: var(--green);
+      background: var(--sand);
+      color: var(--roast);
       font-size: 10.5px;
       font-weight: 700;
-      text-align: center;
       white-space: nowrap;
     }
-    .kb-product.top .kb-match { background: var(--gold-soft); color: #8a6425; }
-    .kb-product p {
-      margin: 4px 0 0;
+    .kb-product.top .kb-match { background: var(--copper); color: #fff; }
+    .kb-origin {
+      display: block;
+      margin-top: 3px;
       color: var(--muted);
-      font-size: 11.4px;
-      line-height: 1.5;
+      font-size: 10.5px;
+      font-weight: 550;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .kb-product p {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 11.6px;
+      line-height: 1.52;
       font-weight: 450;
     }
-    .kb-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      margin-top: 7px;
-    }
+    .kb-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
     .kb-tag {
       border: 1px solid var(--line);
       border-radius: 999px;
       padding: 4px 8px;
-      background: #faf7f0;
-      color: #6d7169;
+      background: #fdfaf5;
+      color: #7c7168;
       font-size: 10px;
       line-height: 1;
       font-weight: 550;
     }
-    .kb-tag.price {
-      border-color: rgba(201,151,76,.4);
-      background: var(--gold-soft);
-      color: #8a6425;
-      font-weight: 700;
-    }
-
-    /* lead form in chat */
-    .kb-form {
-      display: grid;
-      gap: 9px;
+    .kb-prod-foot {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
       margin-top: 11px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
     }
+    .kb-price {
+      font-family: var(--font-display);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--espresso);
+    }
+    .kb-price small {
+      display: block;
+      margin-top: 1px;
+      color: var(--muted);
+      font-family: var(--font);
+      font-size: 10px;
+      font-weight: 500;
+    }
+    .kb-add {
+      border: 0;
+      border-radius: 999px;
+      padding: 9px 15px;
+      background: var(--espresso);
+      color: var(--cream);
+      font-size: 12px;
+      font-weight: 630;
+      cursor: pointer;
+      transition: background .15s ease, transform .15s ease;
+    }
+    .kb-add:hover { background: var(--copper); transform: translateY(-1px); }
+    .kb-add.done { background: var(--leaf); pointer-events: none; }
+    .kb-product.top .kb-add { background: var(--copper); }
+    .kb-product.top .kb-add:hover { background: var(--roast); }
+
+    /* zľavový kupón */
+    .kb-coupon {
+      margin-top: 11px;
+      border: 1px dashed var(--copper);
+      border-radius: 13px;
+      padding: 14px;
+      text-align: center;
+      background: linear-gradient(160deg, #fff8ef, #fbeeda);
+    }
+    .kb-coupon span {
+      display: block;
+      color: var(--muted);
+      font-size: 11.5px;
+      font-weight: 550;
+    }
+    .kb-coupon code {
+      display: inline-block;
+      margin: 7px 0 5px;
+      border-radius: 8px;
+      padding: 7px 16px;
+      background: var(--espresso);
+      color: var(--gold);
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: .16em;
+    }
+    .kb-coupon small { display: block; color: var(--muted); font-size: 10.5px; }
+
+    /* formulár */
+    .kb-form { display: grid; gap: 9px; margin-top: 11px; }
     .kb-field { display: grid; gap: 4px; }
     .kb-field label {
-      color: var(--green);
+      color: var(--roast);
       font-size: 10.5px;
       font-weight: 650;
       letter-spacing: .06em;
       text-transform: uppercase;
     }
-    .kb-field input,
-    .kb-field textarea {
+    .kb-field input, .kb-field textarea {
       width: 100%;
       border: 1px solid var(--line);
       border-radius: var(--radius-sm);
       outline: 0;
-      background: #fdfbf7;
+      background: #fdfaf5;
       color: var(--ink);
       font-size: 13px;
       font-weight: 500;
       transition: border-color .15s ease, box-shadow .15s ease;
     }
-    .kb-field input:focus,
-    .kb-field textarea:focus {
-      border-color: var(--green-2);
-      box-shadow: 0 0 0 3px rgba(28,106,85,.12);
+    .kb-field input:focus, .kb-field textarea:focus {
+      border-color: var(--copper);
+      box-shadow: 0 0 0 3px rgba(194,112,60,.14);
     }
     .kb-field input { height: 40px; padding: 0 12px; }
-    .kb-field textarea {
-      min-height: 74px;
-      padding: 10px 12px;
-      resize: vertical;
-      line-height: 1.45;
-    }
+    .kb-field textarea { min-height: 74px; padding: 10px 12px; resize: vertical; line-height: 1.45; }
 
-    /* footer */
-    .kb-foot {
-      border-top: 1px solid var(--line);
-      padding: 10px;
-      background: #fff;
-    }
+    /* pätička chatu */
+    .kb-foot { border-top: 1px solid var(--line); padding: 10px; background: #fff; }
     .kb-chips {
       display: flex;
       gap: 6px;
@@ -691,18 +1115,18 @@
     .kb-chip {
       flex: 0 0 auto;
       min-height: 30px;
-      border: 1px solid rgba(15,61,51,.16);
+      border: 1px solid var(--line);
       border-radius: 999px;
       padding: 0 12px;
       background: #fff;
-      color: var(--green);
+      color: var(--roast);
       cursor: pointer;
       font-size: 11px;
       font-weight: 600;
       white-space: nowrap;
       transition: background .15s ease, border-color .15s ease;
     }
-    .kb-chip:hover { background: var(--mint); border-color: rgba(28,106,85,.4); }
+    .kb-chip:hover { background: var(--sand); border-color: var(--copper); }
     .kb-input {
       display: flex;
       align-items: center;
@@ -710,13 +1134,10 @@
       border: 1px solid var(--line);
       border-radius: 999px;
       padding: 5px 5px 5px 14px;
-      background: #fdfbf7;
+      background: #fdfaf5;
       transition: border-color .15s ease, box-shadow .15s ease;
     }
-    .kb-input:focus-within {
-      border-color: var(--green-2);
-      box-shadow: 0 0 0 3px rgba(28,106,85,.10);
-    }
+    .kb-input:focus-within { border-color: var(--copper); box-shadow: 0 0 0 3px rgba(194,112,60,.12); }
     .kb-input input {
       flex: 1;
       min-width: 0;
@@ -728,7 +1149,7 @@
       font-size: 13px;
       font-weight: 500;
     }
-    .kb-input input::placeholder { color: #a8a999; }
+    .kb-input input::placeholder { color: #b2a698; }
     .kb-send {
       width: 34px;
       height: 34px;
@@ -736,17 +1157,46 @@
       border-radius: 50%;
       display: grid;
       place-items: center;
-      background: var(--green);
-      color: #fdf9f0;
+      background: var(--espresso);
+      color: var(--cream);
       cursor: pointer;
       flex: 0 0 34px;
       transition: background .15s ease, transform .15s ease;
     }
-    .kb-send:hover { background: var(--green-2); transform: scale(1.06); }
+    .kb-send:hover { background: var(--copper); transform: scale(1.06); }
     .kb-send svg { width: 16px; height: 16px; }
 
+    /* toast na stránke */
+    .page-toast {
+      position: fixed;
+      left: 50%;
+      bottom: 26px;
+      z-index: 2147483003;
+      transform: translateX(-50%) translateY(14px);
+      opacity: 0;
+      pointer-events: none;
+      border-radius: 999px;
+      padding: 11px 20px;
+      background: var(--espresso);
+      color: var(--cream);
+      font-size: 13px;
+      font-weight: 600;
+      box-shadow: var(--shadow);
+      transition: .24s ease;
+    }
+    .page-toast.show { opacity: 1; transform: translateX(-50%); }
+
+    @media (max-width: 900px) {
+      .hero-inner { grid-template-columns: 1fr; gap: 34px; }
+      .hero-art { height: 250px; order: -1; }
+      .shop-nav { display: none; }
+    }
     @media (max-width: 640px) {
-      .demo-card { margin-right: 0; }
+      .demo-bar { padding: 7px 14px; font-size: 10.5px; }
+      .demo-bar .demo-long { display: none; }
+      .hero { padding: 44px 20px 54px; }
+      .section { padding: 46px 20px; }
+      .shop-head { padding: 12px 16px; }
       #kb-launcher { right: 0; bottom: 0; }
       #kb-widget {
         inset: auto 8px 8px 8px;
@@ -757,35 +1207,125 @@
   </style>
 </head>
 <body>
-  <main class="demo">
-    <section class="demo-card" aria-label="KávaBot demo">
-      <span class="demo-eyebrow">KávaBot &middot; widget pre e-shop</span>
-      <h1>Kávový poradca, ktorý predáva <em>za vás</em>.</h1>
-      <p>Bot privíta zákazníka, prevedie ho krátkym kvízom a odporučí konkrétnu kávu z katalógu — aj s dôvodom a možnosťou poslať dopyt.</p>
-      <div class="demo-actions">
-        <button class="demo-btn" type="button" data-open>
-          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Otvoriť poradcu
-        </button>
-      </div>
-      <div class="demo-note">
-        <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>kvíz na 5 kliknutí</span>
-        <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>odporúčanie z katalógu</span>
-        <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>dopyt priamo z chatu</span>
-      </div>
-    </section>
-  </main>
+  <div class="demo-bar">
+    <b>Ukážka</b>
+    <span>Takto by AI poradca vyzeral priamo vo vašom e-shope.<span class="demo-long"> Vzorová značka aj katalóg sú demonštračné — vymeníme ich za vaše.</span></span>
+  </div>
 
-  <section id="kb-widget" aria-label="KávaBot poradca">
+  <header class="shop-head">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c2.2 1.9 3.3 3.9 3.3 6s-1.1 4.1-3.3 6c-2.2-1.9-3.3-3.9-3.3-6S9.8 4.9 12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 4.6v11.2M5.4 18.6c3.4-1.6 9.8-1.6 13.2 0" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </span>
+      <span>
+        <span class="brand-name">Zrnko &amp; Co.</span>
+        <span class="brand-sub">Rodinná pražiareň</span>
+      </span>
+    </div>
+    <nav class="shop-nav">
+      <a href="#katalog">Káva</a>
+      <a href="#katalog">Pre firmy</a>
+      <a href="#katalog">Darčeky</a>
+      <a href="#pre-majitela">O nás</a>
+    </nav>
+    <div class="shop-tools">
+      <button class="shop-cart" type="button" id="cart-btn">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6 7h13l-1.4 8.4a2 2 0 0 1-2 1.6H9.4a2 2 0 0 1-2-1.6L5.6 4.8A1 1 0 0 0 4.6 4H3" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="20" r="1.3" fill="currentColor"/><circle cx="17" cy="20" r="1.3" fill="currentColor"/></svg>
+        Košík
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-eyebrow">Pražíme každý utorok a piatok</span>
+        <h1>Káva, ktorá vám naozaj <em>sadne</em>.</h1>
+        <p>Vyberáme zrná z malých fariem a pražíme ich v Bratislave. Neviete si vybrať? Náš poradca sa spýta päť otázok a odporučí kávu presne pre vás.</p>
+        <div class="hero-actions">
+          <button class="btn-primary" type="button" data-open>
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3a9 9 0 1 0 4.5 16.8L21 21l-1.2-4.5A9 9 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            Poradiť s výberom kávy
+          </button>
+          <a class="btn-ghost" href="#katalog">Prezrieť ponuku</a>
+        </div>
+        <div class="hero-trust">
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Doprava zdarma nad 39 €</span>
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Pražené do 48 h pred odoslaním</span>
+          <span><svg viewBox="0 0 24 24" fill="none"><path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>4,9 / 5 od 1 240 zákazníkov</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="bag left"><i>E</i><b>Ethiopia</b></div>
+        <div class="bag right"><i>C</i><b>Colombia</b></div>
+        <div class="bag mid"><i>R</i><b>Ranné Zrnko</b></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="katalog">
+    <div class="section-head">
+      <div>
+        <h2>Naša ponuka</h2>
+        <p>Sedem káv, ktoré pražíme pravidelne. Každá má iný charakter — poradca vám z nich vyberie tú vašu.</p>
+      </div>
+      <button class="section-link" type="button" data-open>Neviem si vybrať →</button>
+    </div>
+    <div class="grid" id="shop-grid"></div>
+  </section>
+
+  <section class="owner" id="pre-majitela">
+    <div class="section">
+      <span class="owner-eyebrow">Pre majiteľa e-shopu</span>
+      <h2>Čo tento poradca prinesie vášmu obchodu</h2>
+      <p>Väčšina návštevníkov odíde preto, že si spomedzi kávy nevedia vybrať — a nemajú sa koho spýtať. Poradca prevezme rolu barista-predavača, ktorý je na webe 24 hodín denne a každého dovedie ku konkrétnemu produktu v košíku.</p>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-ico" aria-hidden="true">🕐</div>
+          <b>Poradí aj o polnoci</b>
+          <span>Zákazník nemusí čakať na e-mail ani telefonát. Odpoveď dostane hneď, keď má chuť nakúpiť.</span>
+        </div>
+        <div class="stat">
+          <div class="stat-ico" aria-hidden="true">🛒</div>
+          <b>Vedie rovno do košíka</b>
+          <span>Namiesto „prezrite si 40 produktov“ ponúkne tri konkrétne kávy a pridá ich jedným klikom.</span>
+        </div>
+        <div class="stat">
+          <div class="stat-ico" aria-hidden="true">📩</div>
+          <b>Zbiera kontakty a dopyty</b>
+          <span>Firmy a kaviarne nechajú e-mail priamo v chate. Dopyt vám príde do schránky alebo CRM.</span>
+        </div>
+        <div class="stat">
+          <div class="stat-ico" aria-hidden="true">📈</div>
+          <b>Zvyšuje hodnotu objednávky</b>
+          <span>Odporučí väčšie balenie, degustačný box či kávu k darčeku — presne ako predavač v predajni.</span>
+        </div>
+      </div>
+      <div class="owner-cta">
+        <button class="btn-primary" type="button" data-open>
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Vyskúšať poradcu
+        </button>
+        <span class="owner-code">Nasadenie na web: <code>&lt;script src="…/poradca.js"&gt;&lt;/script&gt;</code></span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    Zrnko &amp; Co. — vzorová značka pre ukážku AI poradcu. Produkty, ceny aj texty sú demonštračné.
+  </footer>
+
+  <section id="kb-widget" aria-label="Kávový poradca Zrnko &amp; Co.">
     <header class="kb-head">
       <div class="kb-logo" aria-hidden="true">
         <svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4M7 5.4c.9.8.9 1.7 0 2.6M11 5.4c.9.8.9 1.7 0 2.6M15 5.4c.9.8.9 1.7 0 2.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
       </div>
       <div class="kb-title">
-        <strong>KávaBot</strong>
-        <span>online &middot; odpovie do pár sekúnd</span>
+        <strong>Barista Emma</strong>
+        <span>poradkyňa Zrnko &amp; Co. · online</span>
       </div>
-      <button class="kb-close" type="button" data-close aria-label="Zavrieť">
+      <button class="kb-close" type="button" data-close aria-label="Zavrieť chat">
         <svg viewBox="0 0 24 24" fill="none"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
     </header>
@@ -808,179 +1348,228 @@
     </footer>
   </section>
 
-  <button id="kb-launcher" type="button" class="hidden" aria-label="Otvoriť KávaBot poradcu">
+  <button id="kb-launcher" type="button" class="hidden" aria-label="Otvoriť kávového poradcu">
     <span class="launcher-core">
       <svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4M7 5.4c.9.8.9 1.7 0 2.6M11 5.4c.9.8.9 1.7 0 2.6M15 5.4c.9.8.9 1.7 0 2.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
     </span>
   </button>
 
+  <div class="page-toast" id="page-toast" role="status"></div>
+
   <script>
     (() => {
       const $ = (selector, root = document) => root.querySelector(selector);
 
-      const AVA = '<svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4M7 5.4c.9.8.9 1.7 0 2.6M11 5.4c.9.8.9 1.7 0 2.6M15 5.4c.9.8.9 1.7 0 2.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
-
+      /* ═══════════ 1. KATALÓG — tu sa menia produkty ═══════════ */
       const products = [
         {
-          id: "aurora",
-          name: "Aurora House Blend",
-          price: "od 9,90 €",
+          id: "ranne-zrnko",
+          name: "Ranné Zrnko",
+          origin: "Brazília + Kolumbia · house blend",
+          price: 9.90,
+          unit: "250 g",
+          roast: "stredné praženie",
           brew: ["espresso", "automat", "moka"],
-          taste: ["čokoláda", "oriešky", "karamel"],
+          taste: ["čokoláda", "karamel"],
+          notes: ["mliečna čokoláda", "lieskový orech", "karamel"],
           acidity: "nízka",
           pack: ["250g", "1kg"],
           intent: ["home", "office"],
-          description: "Sladký espresso blend pre automat, pákový kávovar a cappuccino.",
-          reason: "má nízku aciditu, hustú cremu a chuť, ktorá sadne väčšine zákazníkov"
+          description: "Náš najpredávanejší blend — sladký, orieškový a nikdy nie kyslý.",
+          reason: "je istota do každého kávovaru a chutí aj s mliekom"
         },
         {
-          id: "office",
-          name: "Brazil Office Crema 1 kg",
-          price: "24,90 €",
-          brew: ["automat", "espresso"],
+          id: "brazil-office",
+          name: "Brazil Santos Crema",
+          origin: "Brazília · Mogiana",
+          price: 24.90,
+          unit: "1 kg",
+          roast: "tmavšie praženie",
+          brew: ["espresso", "automat"],
           taste: ["čokoláda", "karamel"],
+          notes: ["horká čokoláda", "mandle", "hustá crema"],
           acidity: "nízka",
           pack: ["1kg"],
           intent: ["office"],
-          description: "Káva do kancelárskeho automatu s vyššou výťažnosťou.",
-          reason: "je stabilná v automate a zvláda aj väčšiu dennú spotrebu"
+          description: "Kilové balenie pre kancelárie a kaviarne s vysokou spotrebou.",
+          reason: "drží stabilnú chuť v automate aj pri 50 šálkach denne"
         },
         {
-          id: "colombia",
-          name: "Colombia Honey Espresso",
-          price: "12,90 €",
-          brew: ["espresso", "moka"],
-          taste: ["karamel", "ovocie", "med"],
+          id: "colombia-huila",
+          name: "Colombia Huila Honey",
+          origin: "Kolumbia · Huila, 1 750 m n. m.",
+          price: 13.90,
+          unit: "250 g",
+          roast: "stredné praženie",
+          brew: ["espresso", "moka", "filter"],
+          taste: ["karamel", "ovocie"],
+          notes: ["karamel", "med", "červený pomaranč"],
           acidity: "stredná",
           pack: ["250g"],
           intent: ["home", "gift"],
-          description: "Sladšie moderné espresso s jemným ovocným profilom.",
-          reason: "pôsobí prémiovo, no bez príliš ostrej kyslosti"
+          description: "Sladké moderné espresso s jemným ovocným koncom.",
+          reason: "pôsobí prémiovo, no zostáva príjemne sladká"
         },
         {
-          id: "ethiopia",
-          name: "Ethiopia Filter Bloom",
-          price: "14,50 €",
+          id: "ethiopia-yirga",
+          name: "Ethiopia Yirgacheffe",
+          origin: "Etiópia · Yirgacheffe",
+          price: 15.90,
+          unit: "250 g",
+          roast: "svetlé praženie",
           brew: ["filter", "v60", "chemex", "french"],
-          taste: ["ovocie", "citrus", "kvetiny"],
+          taste: ["ovocie"],
+          notes: ["jazmín", "citrón", "broskyňa"],
           acidity: "vyššia",
           pack: ["250g"],
           intent: ["home", "gift"],
-          description: "Svieža výberová káva pre filter, V60 a Chemex.",
-          reason: "vo filtri krásne vynikne jej ovocná, kvetinová chuť"
+          description: "Kvetinová výberovka pre filter, V60 a Chemex.",
+          reason: "vo filtri naplno rozvinie svoju ovocnú a kvetinovú vôňu"
         },
         {
-          id: "decaf",
-          name: "Decaf Velvet",
-          price: "11,90 €",
+          id: "guatemala-antigua",
+          name: "Guatemala Antigua",
+          origin: "Guatemala · Antigua Valley",
+          price: 14.50,
+          unit: "250 g",
+          roast: "stredné praženie",
+          brew: ["filter", "espresso", "moka"],
+          taste: ["čokoláda", "ovocie"],
+          notes: ["kakao", "mandle", "slivka"],
+          acidity: "stredná",
+          pack: ["250g"],
+          intent: ["home", "gift"],
+          description: "Vyvážená káva, ktorá zvládne espresso aj filter.",
+          reason: "je univerzálna a poteší aj náročnejšie chute"
+        },
+        {
+          id: "decaf-luna",
+          name: "Decaf Luna",
+          origin: "Kolumbia · bezkofeínová, proces vodou",
+          price: 12.90,
+          unit: "250 g",
+          roast: "stredné praženie",
           brew: ["espresso", "automat", "filter"],
-          taste: ["bez kofeínu", "čokoláda", "jemná"],
+          taste: ["bez kofeínu", "čokoláda"],
+          notes: ["mliečna čokoláda", "vanilka", "sušienka"],
           acidity: "nízka",
           pack: ["250g"],
           intent: ["home", "gift"],
-          description: "Bez kofeínu, jemná a sladká káva na večerné pitie.",
-          reason: "chutí plnohodnotne aj bez kofeínu a nedráždi kyslosťou"
+          description: "Bez kofeínu, no s plnou chuťou — na večer aj pre citlivé žalúdky.",
+          reason: "chutí ako poriadna káva, len bez kofeínu"
         },
         {
-          id: "gift",
-          name: "Tasting Box Signature",
-          price: "29,90 €",
+          id: "box-tri-cesty",
+          name: "Degustačný box „Tri cesty“",
+          origin: "3 × 150 g · Brazília, Kolumbia, Etiópia",
+          price: 29.90,
+          unit: "box",
+          roast: "mix pražení",
           brew: ["espresso", "filter", "automat"],
-          taste: ["darček", "mix", "degustácia"],
+          taste: ["darček", "mix"],
+          notes: ["tri chute", "darčekové balenie", "karta s receptami"],
           acidity: "mix",
           pack: ["box"],
           intent: ["gift"],
-          description: "Darčekový set troch káv pre bezpečný aj zaujímavý výber.",
-          reason: "poteší aj bez znalosti kávovaru obdarovaného"
+          description: "Tri kávy v darčekovej krabici s kartou na prípravu.",
+          reason: "je to bezpečný darček aj bez znalosti kávovaru obdarovaného"
         }
       ];
 
+      const COUPON = "ZRNKO10";
+
+      /* ═══════════ 2. KVÍZ ═══════════ */
       const steps = [
         {
           key: "intent",
-          title: "Na čo kávu potrebujete?",
+          title: "Pre koho kávu hľadáte?",
           help: "Stačí kliknúť na odpoveď.",
           options: [
-            ["home", "🏠", "Domov", "Káva na bežné pitie doma."],
-            ["office", "🏢", "Firma / kancelária", "Väčšia spotreba alebo automat."],
-            ["gift", "🎁", "Darček", "Bezpečný výber aj bez znalosti kávovaru."],
-            ["problem", "🤔", "Riešim problém s chuťou", "Kyslá, horká, slabá alebo bez cremy."]
+            ["home", "🏠", "Pre seba domov", "Bežné pitie doma."],
+            ["office", "🏢", "Do firmy alebo kaviarne", "Väčšia spotreba, automat."],
+            ["gift", "🎁", "Ako darček", "Aj keď neviem, čo pije."],
+            ["problem", "🤔", "Súčasná káva mi nechutí", "Je kyslá, horká alebo slabá."]
           ]
         },
         {
           key: "brew",
           title: "Ako kávu pripravujete?",
-          help: "Príprava najviac ovplyvňuje chuť aj praženie.",
+          help: "Toto ovplyvní praženie aj hrubosť mletia.",
           options: [
-            ["espresso", "☕", "Espresso kávovar", "Pákový alebo domáci espresso stroj."],
-            ["automat", "🤖", "Automatický kávovar", "Stabilná crema, nízka acidita."],
-            ["filter", "🫖", "Filter / V60 / Chemex", "Čistejšia, sviežejšia chuť."],
-            ["moka", "🔥", "Moka kanvička", "Plnšia a výraznejšia káva."]
+            ["espresso", "☕", "Pákový kávovar", "Domáce espresso."],
+            ["automat", "🤖", "Automat na zrnkovú kávu", "Stlačím tlačidlo a ide."],
+            ["filter", "🫖", "Filter, French press, V60", "Prelievaná káva."],
+            ["moka", "🔥", "Moka kanvička", "Klasika na sporák."],
+            ["", "🤷", "Neviem / viac spôsobov", "Poradím univerzálnu kávu."]
           ]
         },
         {
           key: "taste",
-          title: "Aký chuťový profil máte radi?",
-          help: "Vyberte chuť, ktorú chcete cítiť v šálke.",
+          title: "Akú chuť máte najradšej?",
+          help: "Predstavte si dokonalú šálku.",
           options: [
-            ["čokoláda", "🍫", "Čokoládová a orechová", "Bezpečný profil bez kyslosti."],
-            ["karamel", "🍮", "Sladká a karamelová", "Vyvážené espresso."],
-            ["ovocie", "🍒", "Ovocná a svieža", "Výberovejšia, modernejšia chuť."],
-            ["bez kofeínu", "🌙", "Bez kofeínu", "Večerná káva bez kofeínu."]
+            ["čokoláda", "🍫", "Čokoládová, oriešková", "Klasika bez kyslosti."],
+            ["karamel", "🍮", "Sladká, karamelová", "Vyvážená a jemná."],
+            ["ovocie", "🍑", "Ovocná, svieža", "Modernejšia, výraznejšia."],
+            ["bez kofeínu", "🌙", "Chcem bez kofeínu", "Na večer alebo pre citlivosť."]
           ]
         },
         {
           key: "acidity",
-          title: "Ako vnímate kyslosť kávy?",
-          help: "Najčastejšia príčina zlého výberu.",
+          title: "Vadí vám kyslejšia káva?",
+          help: "Toto je najčastejší dôvod, prečo káva nesadne.",
           options: [
-            ["nízka", "😌", "Nechcem kyslú kávu", "Sladká, čokoládová, stabilná."],
-            ["stredná", "🙂", "Jemná sviežosť nevadí", "Vyvážené espresso alebo sladší filter."],
-            ["vyššia", "🤩", "Mám rád ovocnú aciditu", "Svetlejšie výberové kávy."]
+            ["nízka", "🚫", "Áno, kyslú nechcem", "Sladká a hladká."],
+            ["stredná", "🙂", "Trochu sviežosti nevadí", "Vyvážená chuť."],
+            ["vyššia", "😍", "Naopak, mám ju rád/rada", "Živá, ovocná káva."]
           ]
         },
         {
           key: "pack",
-          title: "Aké balenie dáva zmysel?",
-          help: "Posledná otázka!",
+          title: "Koľko kávy zvyknete minúť?",
+          help: "Posledná otázka, potom už len výsledok.",
           options: [
-            ["250g", "📦", "250 g", "Na vyskúšanie alebo domáce pitie."],
-            ["1kg", "🛒", "1 kg", "Automat, firma alebo vyššia spotreba."],
-            ["box", "🎀", "Darčekový box", "Pekný efekt a viac chutí."]
+            ["250g", "📦", "Pár šálok denne", "Balenie 250 g."],
+            ["1kg", "🛒", "Veľa — sme viacerí", "Výhodnejšie kilo."],
+            ["box", "🎀", "Chcem darčekové balenie", "Degustačný box."]
           ]
         }
       ];
 
       const reactions = {
         intent: {
-          home: "Super! Domáca káva má chutiť každé ráno. 🌅",
-          office: "Rozumiem — pre firmu je kľúčová stabilita a výdrž v automate.",
-          gift: "Výborne, káva ako darček nikdy nesklame. 🎁",
-          problem: "Dobre, že to riešite — zlá chuť sa dá takmer vždy napraviť."
+          home: "Super, domáca káva má potešiť každé ráno. 🌅",
+          office: "Rozumiem — pri firme je najdôležitejšia stabilita a výdrž.",
+          gift: "Káva je krásny darček, pomôžem vybrať bezpečne. 🎁",
+          problem: "To vieme takmer vždy napraviť. Poďme zistiť, čo presne vám nesadlo."
         },
         brew: {
-          espresso: "Klasika! Espresso ukáže kávu v plnej sile. ☕",
-          automat: "Automat má rád sladšie zrno s hustou cremou — viem, kam mierim.",
-          filter: "Skvelá voľba, filter odhalí aj jemné ovocné tóny.",
-          moka: "Moka kanvička — poctivá talianska škola. 🇮🇹"
+          espresso: "Pákový kávovar — z toho sa dá vyťažiť naozaj veľa. ☕",
+          automat: "Automat má rád sladšie zrno s hustou cremou, už viem, kam mierim.",
+          filter: "Filter odhalí aj tie najjemnejšie tóny, dobrá voľba.",
+          moka: "Moka kanvička, poctivá talianska klasika. 🇮🇹",
+          "": "Nevadí, vyberiem kávu, ktorá vám vyjde dobre v každom prípade. 👌"
         },
         taste: {
           "čokoláda": "Čokoláda a oriešky — najobľúbenejší profil našich zákazníkov. 🍫",
-          karamel: "Sladké espresso bez horkosti, rozumiem.",
-          ovocie: "Ovocné kávy sú moja srdcovka. 🍒",
-          "bez kofeínu": "Jasné — aj bez kofeínu vie káva chutiť naplno."
+          karamel: "Sladká káva bez horkosti, jasné.",
+          ovocie: "Ovocné kávy sú moja srdcovka. 🍑",
+          "bez kofeínu": "Jasné — a verte mi, aj bez kofeínu vie káva chutiť naplno."
         },
         acidity: {
-          "nízka": "Poznačené: hladká káva bez kyslosti. 😌",
+          "nízka": "Poznačené: žiadna kyslosť. 😌",
           "stredná": "Jemná sviežosť dodá káve šťavnatosť, dobrá voľba.",
-          "vyššia": "Paráda, živá acidita robí kávu zaujímavou. ✨"
+          "vyššia": "Paráda, tam sa dostaneme k tým najzaujímavejším kávam. ✨"
         },
         pack: {
-          "250g": "250 g je ideál na vyskúšanie.",
-          "1kg": "Kilo — výhodnejšia cena na šálku. 👍",
+          "250g": "250 g je ideál — káva zostane čerstvá.",
+          "1kg": "Kilo vyjde výhodnejšie na šálku. 👍",
           box: "Darčekový box vždy zapôsobí. 🎀"
         }
       };
+
+      /* ═══════════ 3. STAV ═══════════ */
+      const AVA = '<svg viewBox="0 0 24 24" fill="none"><path d="M4.5 9.5h12v3.8a5.7 5.7 0 0 1-5.7 5.7H10a5.5 5.5 0 0 1-5.5-5.5v-4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M16.5 10.5h1.2a2.6 2.6 0 1 1 0 5.2h-1.4M7 5.4c.9.8.9 1.7 0 2.6M11 5.4c.9.8.9 1.7 0 2.6M15 5.4c.9.8.9 1.7 0 2.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
 
       const state = {
         open: false,
@@ -989,7 +1578,9 @@
         answers: {},
         labels: {},
         results: [],
-        busy: false
+        cart: 0,
+        busy: false,
+        couponShown: false
       };
 
       const els = {
@@ -1000,24 +1591,52 @@
         label: $("#kb-step-label"),
         chips: $("#kb-chips"),
         form: $("#kb-form"),
-        input: $("#kb-input")
+        input: $("#kb-input"),
+        cartCount: $("#cart-count"),
+        toast: $("#page-toast"),
+        grid: $("#shop-grid")
       };
 
-      function esc(value) {
-        return String(value ?? "").replace(/[&<>"']/g, char => ({
-          "&": "&amp;",
-          "<": "&lt;",
-          ">": "&gt;",
-          "\"": "&quot;",
-          "'": "&#039;"
-        })[char]);
-      }
+      const esc = value => String(value ?? "").replace(/[&<>"']/g, char => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#039;"
+      })[char]);
 
       const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+      const money = value => value.toFixed(2).replace(".", ",") + " €";
 
-      function scrollDown() {
-        els.body.scrollTop = els.body.scrollHeight;
+      /* ═══════════ 4. MOCK E-SHOP ═══════════ */
+      function renderShop() {
+        els.grid.innerHTML = products.slice(0, 4).map(p => `
+          <article class="card">
+            <div class="card-art"><div class="card-bag">${esc(p.name.trim().charAt(0))}</div></div>
+            <h3>${esc(p.name)}</h3>
+            <p class="card-notes">${esc(p.notes.join(" · "))}</p>
+            <div class="card-foot">
+              <span class="card-price">${money(p.price)}</span>
+              <button class="card-btn" type="button" data-buy="${esc(p.id)}">Do košíka</button>
+            </div>
+          </article>
+        `).join("");
       }
+
+      function toast(text) {
+        els.toast.textContent = text;
+        els.toast.classList.add("show");
+        clearTimeout(toast.timer);
+        toast.timer = setTimeout(() => els.toast.classList.remove("show"), 2400);
+      }
+
+      function addToCart(product) {
+        state.cart += 1;
+        els.cartCount.textContent = state.cart;
+        els.cartCount.classList.remove("bump");
+        void els.cartCount.offsetWidth;
+        els.cartCount.classList.add("bump");
+        toast(`${product.name} pridaná do košíka ✓`);
+      }
+
+      /* ═══════════ 5. CHAT ═══════════ */
+      const scrollDown = () => { els.body.scrollTop = els.body.scrollHeight; };
 
       function addBot(html) {
         const msg = document.createElement("div");
@@ -1039,7 +1658,7 @@
       async function typing(ms = 700) {
         const msg = document.createElement("div");
         msg.className = "kb-msg bot kb-typing";
-        msg.innerHTML = `<span class="kb-ava" aria-hidden="true">${AVA}</span><div class="kb-bubble" role="status" aria-label="KávaBot píše"><i></i><i></i><i></i></div>`;
+        msg.innerHTML = `<span class="kb-ava" aria-hidden="true">${AVA}</span><div class="kb-bubble" role="status" aria-label="Emma píše"><i></i><i></i><i></i></div>`;
         els.body.appendChild(msg);
         scrollDown();
         await wait(ms);
@@ -1053,9 +1672,8 @@
           els.label.textContent = state.step >= total ? "Hotovo" : "Vitajte";
           return;
         }
-        const pct = Math.round((state.step / total) * 100);
-        els.fill.style.width = `${Math.min(100, pct)}%`;
-        els.label.textContent = `Krok ${state.step + 1} z ${total}`;
+        els.fill.style.width = `${Math.round((state.step / total) * 100)}%`;
+        els.label.textContent = `Otázka ${state.step + 1} z ${total}`;
       }
 
       function setChips(items) {
@@ -1065,6 +1683,7 @@
       }
 
       function lockOptions(container) {
+        if (!container) return;
         container.querySelectorAll(".kb-opt, .kb-btn").forEach(btn => btn.setAttribute("disabled", ""));
         container.querySelectorAll(".kb-mini").forEach(row => row.remove());
       }
@@ -1076,31 +1695,29 @@
         state.results = [];
       }
 
-      /* ---------- intro ---------- */
       async function intro() {
         state.quiz = false;
         setProgress();
         setChips([]);
         await typing(650);
-        addBot("Dobrý deň! 👋 Som <b>KávaBot</b>, váš osobný kávový poradca.");
-        await typing(750);
+        addBot("Dobrý deň! 👋 Volám sa <b>Emma</b> a som baristka zo Zrnko &amp; Co.");
+        await typing(800);
         addBot(`
-          Nájdem vám kávu presne na mieru — stačí odpovedať na <b>5 krátkych otázok</b>. Trvá to menej než minútu. ☕
+          Pomôžem vám vybrať kávu, ktorá vám naozaj sadne. Spýtam sa <b>päť krátkych otázok</b> — netrvá to ani minútu. ☕
           <div class="kb-cta">
-            <button class="kb-btn gold" type="button" data-action="start">✨ Vybrať kávu podľa kvízu</button>
+            <button class="kb-btn gold" type="button" data-action="start">✨ Poradiť mi kávu</button>
             <button class="kb-btn alt" type="button" data-action="office">Káva pre firmu</button>
             <button class="kb-btn alt" type="button" data-action="gift">Hľadám darček</button>
           </div>
         `);
         setChips([
-          { label: "✨ Spustiť kvíz", action: "start" },
+          { label: "✨ Poradiť kávu", action: "start" },
           { label: "Káva do automatu", action: "auto" },
           { label: "Darček", action: "gift" },
-          { label: "Poslať dopyt", action: "lead" }
+          { label: "Cenová ponuka", action: "lead" }
         ]);
       }
 
-      /* ---------- quiz ---------- */
       async function askStep(skipTyping) {
         state.quiz = true;
         setProgress();
@@ -1124,13 +1741,15 @@
 
       async function answer(value, label) {
         const step = steps[state.step];
-        state.answers[step.key] = value;
-        state.labels[step.key] = label;
+        if (value) {
+          state.answers[step.key] = value;
+          state.labels[step.key] = label;
+        }
         addUser(label);
 
         if (value === "problem" && step.key === "intent") {
           state.answers.acidity = "nízka";
-          state.labels.acidity = "Nechcem kyslú kávu";
+          state.labels.acidity = "Kyslú kávu nechcem";
         }
         if (value === "gift" && step.key === "intent") {
           state.answers.pack = "box";
@@ -1139,7 +1758,7 @@
 
         const reaction = reactions[step.key]?.[value];
         if (reaction) {
-          await typing(550);
+          await typing(560);
           addBot(esc(reaction));
         }
 
@@ -1151,7 +1770,7 @@
         await showResults();
       }
 
-      /* ---------- results ---------- */
+      /* ═══════════ 6. ODPORÚČANIE ═══════════ */
       function score(product) {
         let points = 40;
         const a = state.answers;
@@ -1161,9 +1780,10 @@
         if (a.acidity && (product.acidity === a.acidity || product.acidity === "mix")) points += 14;
         if (a.pack && product.pack.includes(a.pack)) points += 12;
         if (a.intent === "office" && product.pack.includes("1kg")) points += 10;
-        if (a.intent === "gift" && product.id === "gift") points += 18;
-        if (a.taste === "bez kofeínu" && product.id === "decaf") points += 28;
-        if (a.brew === "automat" && product.id === "office") points += 12;
+        if (a.intent === "gift" && product.pack.includes("box")) points += 18;
+        if (a.taste === "bez kofeínu" && product.id === "decaf-luna") points += 28;
+        if (a.brew === "automat" && product.id === "brazil-office") points += 12;
+        if (!a.brew) points += product.brew.length * 2;
         return Math.min(99, points);
       }
 
@@ -1180,28 +1800,32 @@
         return ranked;
       }
 
-      function summaryText() {
-        return ["intent", "brew", "taste", "acidity", "pack"]
-          .map(key => state.labels[key])
-          .filter(Boolean)
-          .join(" · ");
-      }
+      const summaryText = () => ["intent", "brew", "taste", "acidity", "pack"]
+        .map(key => state.labels[key])
+        .filter(Boolean)
+        .join(" · ");
 
       function productHtml(item, index) {
         const p = item.product;
-        const initial = p.name.trim().charAt(0);
         const top = index === 0;
         return `
           <article class="kb-product${top ? " top" : ""}">
             ${top ? '<span class="kb-best">Najlepšia zhoda</span>' : ""}
-            <div class="kb-thumb" aria-hidden="true">${esc(initial)}</div>
-            <div>
-              <h4>${esc(p.name)} <span class="kb-match">${item.score} %</span></h4>
-              <p>${esc(p.description)} ${esc(p.reason.charAt(0).toUpperCase() + p.reason.slice(1))}.</p>
-              <div class="kb-tags">
-                ${p.taste.slice(0, 3).map(tag => `<span class="kb-tag">${esc(tag)}</span>`).join("")}
-                <span class="kb-tag price">${esc(p.price)}</span>
+            <div class="kb-prod-top">
+              <div class="kb-thumb" aria-hidden="true">${esc(p.name.trim().charAt(0))}</div>
+              <div>
+                <h4>${esc(p.name)} <span class="kb-match">${item.score} %</span></h4>
+                <span class="kb-origin">${esc(p.origin)}</span>
               </div>
+            </div>
+            <p>${esc(p.description)} Odporúčam ju, lebo ${esc(p.reason)}.</p>
+            <div class="kb-tags">
+              ${p.notes.slice(0, 3).map(note => `<span class="kb-tag">${esc(note)}</span>`).join("")}
+              <span class="kb-tag">${esc(p.roast)}</span>
+            </div>
+            <div class="kb-prod-foot">
+              <span class="kb-price">${money(p.price)}<small>${esc(p.unit)}</small></span>
+              <button class="kb-add" type="button" data-buy="${esc(p.id)}">Do košíka</button>
             </div>
           </article>
         `;
@@ -1212,70 +1836,81 @@
         state.step = steps.length;
         setProgress();
         state.results = getResults();
-        await typing(500);
-        addBot("Ďakujem! Prehľadávam katalóg a porovnávam chuťové profily… 🔎");
-        await typing(1100);
+        await typing(520);
+        addBot("Ďakujem! Prechádzam našu ponuku a porovnávam chuťové profily… 🔎");
+        await typing(1150);
         addBot(`
           <b>Mám to!</b> Podľa vašich odpovedí <span class="kb-hint">${esc(summaryText())}</span>
-          vám najviac sadnú tieto kávy:
-          <div class="kb-products">
-            ${state.results.map(productHtml).join("")}
-          </div>
+          by vám najviac sadli tieto tri kávy:
+          <div class="kb-products">${state.results.map(productHtml).join("")}</div>
         `);
-        await typing(650);
+        await typing(700);
+
+        const top = state.results[0].product;
+        const extras = [];
+        if (state.answers.intent === "office") {
+          extras.push("Pri pravidelnom odbere vieme pripraviť <b>firemnú cenu</b> a rozvoz každý mesiac.");
+        } else if (state.answers.intent === "gift") {
+          extras.push("K darčeku pribalíme <b>ručne písanú kartičku</b> zadarmo.");
+        } else {
+          extras.push(`K <b>${esc(top.name)}</b> odporúčam objednať rovno dve balenia — druhé máte s dopravou zdarma.`);
+        }
+
         addBot(`
-          Chcete k výberu <b>cenovú ponuku</b> alebo poradiť s objednávkou? Rád pripravím nezáväzný dopyt. 💌
+          ${extras[0]}
+          <div class="kb-coupon">
+            <span>Za vyplnenie poradcu pre vás mám darček:</span>
+            <code>${COUPON}</code>
+            <small>−10 % na prvú objednávku, platí 7 dní.</small>
+          </div>
           <div class="kb-cta">
-            <button class="kb-btn gold" type="button" data-action="lead">Poslať dopyt</button>
-            <button class="kb-btn alt" type="button" data-action="restart">Nový výber</button>
+            <button class="kb-btn gold" type="button" data-action="lead">Chcem cenovú ponuku</button>
+            <button class="kb-btn alt" type="button" data-action="restart">Skúsiť znova</button>
           </div>
         `);
+        state.couponShown = true;
         setChips([
-          { label: "💌 Poslať dopyt", action: "lead" },
+          { label: "💌 Cenová ponuka", action: "lead" },
           { label: "Nový výber", action: "restart" },
           { label: "Káva pre firmu", action: "office" }
         ]);
       }
 
-      /* ---------- lead ---------- */
+      /* ═══════════ 7. DOPYT ═══════════ */
       async function renderLead() {
         setChips([]);
         const top = state.results[0]?.product?.name || "";
         const summary = summaryText();
-        await typing(600);
+        await typing(620);
         addBot(`
-          Výborne! Nechajte mi kontakt a my sa ozveme s ponukou na mieru. ${summary ? "Váš výber som už predvyplnil. ✍️" : ""}
+          Rada vám pripravím ponuku na mieru. Nechajte mi kontakt a ozveme sa. ✍️
           <form class="kb-form" data-lead>
             <div class="kb-field">
-              <label>Meno / firma</label>
+              <label>Meno alebo firma</label>
               <input name="name" required placeholder="Napr. Kaviareň Sever">
             </div>
             <div class="kb-field">
               <label>E-mail</label>
-              <input name="email" type="email" required placeholder="kontakt@firma.sk">
+              <input name="email" type="email" required placeholder="vas@email.sk">
             </div>
             <div class="kb-field">
               <label>Poznámka</label>
-              <textarea name="note">${esc(summary)}${top ? "\nTop odporúčanie: " + esc(top) : ""}</textarea>
+              <textarea name="note">${esc(summary)}${top ? "\nOdporúčaná káva: " + esc(top) : ""}</textarea>
             </div>
             <button class="kb-btn gold" type="submit">Odoslať dopyt</button>
           </form>
         `);
       }
 
-      /* ---------- actions ---------- */
+      /* ═══════════ 8. AKCIE ═══════════ */
       async function handleAction(action, sourceMsg) {
         if (state.busy) return;
         state.busy = true;
         try {
-          if (sourceMsg) lockOptions(sourceMsg);
-          if (action === "start") {
+          lockOptions(sourceMsg);
+          if (action === "start" || action === "restart") {
             resetFlow();
-            addUser("Chcem vybrať kávu podľa kvízu ✨");
-            await askStep();
-          } else if (action === "restart") {
-            resetFlow();
-            addUser("Nový výber");
+            addUser(action === "start" ? "Poraďte mi kávu ✨" : "Skúsme to znova");
             await askStep();
           } else if (action === "back") {
             if (state.step > 0) state.step -= 1;
@@ -1283,36 +1918,36 @@
           } else if (action === "office") {
             resetFlow();
             state.answers.intent = "office";
-            state.labels.intent = "Firma / kancelária";
+            state.labels.intent = "Do firmy alebo kaviarne";
             state.step = 1;
             addUser("Hľadám kávu pre firmu");
-            await typing(550);
+            await typing(560);
             addBot(esc(reactions.intent.office));
             await askStep();
           } else if (action === "gift") {
             resetFlow();
             state.answers.intent = "gift";
-            state.labels.intent = "Darček";
+            state.labels.intent = "Ako darček";
             state.answers.pack = "box";
             state.labels.pack = "Darčekový box";
             state.step = 1;
             addUser("Hľadám darček 🎁");
-            await typing(550);
+            await typing(560);
             addBot(esc(reactions.intent.gift));
             await askStep();
           } else if (action === "auto") {
             resetFlow();
             state.answers.intent = "office";
-            state.labels.intent = "Firma / kancelária";
+            state.labels.intent = "Do firmy alebo kaviarne";
             state.answers.brew = "automat";
-            state.labels.brew = "Automatický kávovar";
+            state.labels.brew = "Automat na zrnkovú kávu";
             state.step = 2;
             addUser("Potrebujem kávu do automatu");
-            await typing(550);
+            await typing(560);
             addBot(esc(reactions.brew.automat));
             await askStep();
           } else if (action === "lead") {
-            addUser("Chcem poslať dopyt");
+            addUser("Chcem cenovú ponuku");
             await renderLead();
           }
         } finally {
@@ -1326,36 +1961,37 @@
         state.busy = true;
         try {
           const query = text.toLowerCase();
-          await typing(650);
-          if (query.includes("automat") || query.includes("firma") || query.includes("kancel")) {
-            addBot("Jasné — káva do automatu či pre firmu je moja parketa. Doplňme pár detailov:");
+          await typing(680);
+
+          if (query.includes("automat") || query.includes("firm") || query.includes("kancel") || query.includes("kaviar")) {
+            addBot("Jasné — káva do automatu a pre firmy je moja parketa. Doplňme pár detailov:");
             resetFlow();
             state.answers.intent = "office";
-            state.labels.intent = "Firma / kancelária";
+            state.labels.intent = "Do firmy alebo kaviarne";
             state.answers.brew = "automat";
-            state.labels.brew = "Automatický kávovar";
+            state.labels.brew = "Automat na zrnkovú kávu";
             state.step = 2;
             await askStep();
             return;
           }
           if (query.includes("dar")) {
-            addBot("Darček s vôňou kávy nikdy nesklame. 🎁 Pomôžem vám vybrať:");
+            addBot("Káva ako darček nikdy nesklame. 🎁 Pomôžem vybrať:");
             resetFlow();
             state.answers.intent = "gift";
-            state.labels.intent = "Darček";
+            state.labels.intent = "Ako darček";
             state.answers.pack = "box";
             state.labels.pack = "Darčekový box";
             state.step = 1;
             await askStep();
             return;
           }
-          if (query.includes("filter") || query.includes("v60") || query.includes("chemex")) {
-            addBot("Filter káva — skvelý vkus! ☕ Poďme doladiť chuť:");
+          if (query.includes("filter") || query.includes("v60") || query.includes("chemex") || query.includes("french")) {
+            addBot("Filter káva — skvelý vkus. ☕ Poďme doladiť chuť:");
             resetFlow();
             state.answers.intent = "home";
-            state.labels.intent = "Domov";
+            state.labels.intent = "Pre seba domov";
             state.answers.brew = "filter";
-            state.labels.brew = "Filter / V60 / Chemex";
+            state.labels.brew = "Filter, French press, V60";
             state.step = 2;
             await askStep();
             return;
@@ -1364,23 +2000,34 @@
             addBot("Rozumiem, hľadáme kávu bez kofeínu. 🌙");
             resetFlow();
             state.answers.intent = "home";
-            state.labels.intent = "Domov";
+            state.labels.intent = "Pre seba domov";
             state.answers.taste = "bez kofeínu";
-            state.labels.taste = "Bez kofeínu";
+            state.labels.taste = "Chcem bez kofeínu";
             state.step = 1;
             await askStep();
             return;
           }
-          if (query.includes("dopyt") || query.includes("kontakt") || query.includes("ponuk")) {
+          if (query.includes("dopyt") || query.includes("ponuk") || query.includes("kontakt") || query.includes("faktur")) {
             await renderLead();
             return;
           }
-          if (query.includes("ahoj") || query.includes("dobrý") || query.includes("dobry") || query.includes("čau") || query.includes("cau")) {
-            addBot("Dobrý deň! 👋 Najrýchlejšie vám pomôžem krátkym kvízom — 5 otázok a máte kávu na mieru.");
+          if (query.includes("doprav") || query.includes("posta") || query.includes("kurier") || query.includes("dodac")) {
+            addBot("Posielame kuriérom do 2 pracovných dní, pri objednávke nad <b>39 €</b> je doprava zdarma. 📦 Chcete, aby som vám medzitým poradila kávu?");
+            return;
+          }
+          if (query.includes("cena") || query.includes("kolko") || query.includes("koľko") || query.includes("stoji")) {
+            addBot(`Naše kávy začínajú na <b>${money(products[0].price)}</b> za 250 g, kilové balenie pre firmy je <b>${money(products[1].price)}</b>. Poviem vám presne, ktorá sa oplatí práve vám:`);
+            resetFlow();
             await askStep();
             return;
           }
-          addBot("Najlepšie vám poradím krátkym kvízom — 5 otázok klikaním a odporučím kávu presne pre vás. 🎯");
+          if (query.includes("ahoj") || query.includes("dobr") || query.includes("zdrav") || query.includes("čau") || query.includes("cau")) {
+            addBot("Dobrý deň! 👋 Najrýchlejšie vám pomôžem krátkym výberom — päť otázok a máte kávu na mieru.");
+            resetFlow();
+            await askStep();
+            return;
+          }
+          addBot("Toto najlepšie vyriešime krátkym výberom — päť otázok klikaním a odporučím kávu presne pre vás. 🎯");
           resetFlow();
           await askStep();
         } finally {
@@ -1388,7 +2035,7 @@
         }
       }
 
-      /* ---------- open/close ---------- */
+      /* ═══════════ 9. OTVORENIE / ZAVRETIE ═══════════ */
       let started = false;
       function openWidget() {
         state.open = true;
@@ -1406,21 +2053,35 @@
         els.launcher.classList.remove("hidden");
       }
 
-      /* ---------- events ---------- */
+      /* ═══════════ 10. UDALOSTI ═══════════ */
       document.addEventListener("click", event => {
-        if (event.target.closest("[data-open]")) openWidget();
+        if (event.target.closest("[data-open]")) {
+          openWidget();
+          return;
+        }
+        const buy = event.target.closest("[data-buy]");
+        if (buy) {
+          const product = products.find(p => p.id === buy.dataset.buy);
+          if (!product) return;
+          addToCart(product);
+          if (buy.classList.contains("kb-add")) {
+            buy.textContent = "Pridané ✓";
+            buy.classList.add("done");
+          }
+        }
       });
+
       els.launcher.addEventListener("click", openWidget);
       $("[data-close]").addEventListener("click", closeWidget);
+      $("#cart-btn").addEventListener("click", () => {
+        toast(state.cart ? `V košíku máte ${state.cart} položky. (ukážka)` : "Košík je zatiaľ prázdny.");
+      });
 
       els.body.addEventListener("click", event => {
         const option = event.target.closest("[data-answer]");
         if (option) {
           if (state.busy) return;
-          const msg = option.closest(".kb-msg");
-          state.busy = true;
-          lockOptions(msg);
-          state.busy = false;
+          lockOptions(option.closest(".kb-msg"));
           answer(option.dataset.answer, option.dataset.label);
           return;
         }
@@ -1447,23 +2108,25 @@
         event.preventDefault();
         const data = Object.fromEntries(new FormData(form).entries());
         form.querySelectorAll("input, textarea, button").forEach(el => el.setAttribute("disabled", ""));
-        addUser(`Dopyt: ${data.name} · ${data.email}`);
-        await typing(800);
+        addUser(`${data.name} · ${data.email}`);
+        await typing(850);
         addBot(`
           <b>Ďakujem, dopyt je odoslaný!</b> ✅ Ozveme sa na <b>${esc(data.email)}</b> zvyčajne do 24 hodín.
+          ${state.couponShown ? `Nezabudnite na kód <b>${COUPON}</b> — platí 7 dní.` : ""}
           <div class="kb-cta">
-            <button class="kb-btn alt" type="button" data-action="restart">Nový výber</button>
+            <button class="kb-btn alt" type="button" data-action="restart">Vybrať ďalšiu kávu</button>
           </div>
         `);
-        setChips([{ label: "Nový výber", action: "restart" }]);
+        setChips([{ label: "Vybrať ďalšiu kávu", action: "restart" }]);
       });
 
-      /* ---------- boot: chatbot sa otvorí sám ---------- */
+      /* ═══════════ 11. ŠTART ═══════════ */
+      renderShop();
       const params = new URLSearchParams(window.location.search);
       if (params.get("open") === "0") {
         els.launcher.classList.remove("hidden");
       } else {
-        setTimeout(openWidget, 400);
+        setTimeout(openWidget, 900);
       }
     })();
   </script>

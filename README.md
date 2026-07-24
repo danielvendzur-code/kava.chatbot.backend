@@ -1,37 +1,71 @@
-# KávaBot widget demo
+# AI kávový poradca — ukážka pre klienta
 
-Prémiový kávový chatbot pripravený ako samostatný `index.html` — vhodný na prezentáciu klientovi aj na vloženie do webu.
+Hotová prezentačná ukážka v jedinom súbore `index.html`. Otvorí sa dvojklikom v prehliadači, nepotrebuje server, internet ani inštaláciu — dá sa poslať e-mailom ako príloha alebo nahrať na hosting.
 
-## Čo je upravené
+Ukážka je pripravená pre vzorovú značku **Zrnko & Co.** (rodinná pražiareň). Značku, farby aj produkty vymeníte za klientove za pár minút — návod nižšie.
 
-- chatbot sa **otvorí automaticky** po načítaní stránky (vypnutie: `?open=0`),
-- skutočný chat zážitok: bubliny, avatar, „píše…“ indikátor, konverzačné reakcie bota,
-- v uvítaní je hlavné CTA **„Vybrať kávu podľa kvízu“** + skratky (firma, darček, automat),
-- kvíz beží priamo v konverzácii: 5 otázok s emoji možnosťami, progres „Krok X z 5“, Späť / Odznova,
-- prémiový vizuál: serifová typografia (Fraunces), tmavozelená + zlatá paleta, jemné animácie,
-- výsledky v chate so zvýraznenou najlepšou zhodou a odstupňovaným skóre,
-- dopyt formulár priamo v chate s predvyplneným výberom a potvrdením,
-- textový vstup rozpozná napríklad `automat`, `firma`, `darček`, `filter`, `bez kofeínu`, `dopyt`, pozdrav,
-- launcher podľa MôjPlot merania: `130 x 130 px` (zobrazí sa po zavretí chatu).
+## Čo klient v ukážke uvidí
 
-## Spustenie
+| Časť stránky | Čo demonštruje |
+|---|---|
+| Mock e-shop v pozadí | Ako poradca vyzerá priamo na webe pražiarne — hlavička, hero, katalóg, košík |
+| Chat „Barista Emma“ | Otvorí sa sám po ~1 s, privíta zákazníka a ponúkne výber |
+| Kvíz v konverzácii | 5 otázok klikaním, reakcie bota, progres, tlačidlo Späť |
+| Odporúčanie | 3 kávy zoradené podľa zhody, najlepšia zvýraznená, tlačidlo **Do košíka** |
+| Košík v hlavičke | Po pridaní z chatu naskočí počítadlo — vidno cestu od otázky k objednávke |
+| Zľavový kód | `ZRNKO10` sa odomkne po dokončení kvízu (konverzný ťahák) |
+| Dopyt | Formulár priamo v chate s predvyplneným výberom + potvrdenie |
+| Sekcia „Pre majiteľa e-shopu“ | Štyri konkrétne prínosy — argumentácia pre rozhodovanie majiteľa |
 
-Otvoriť `index.html` v prehliadači alebo spustiť statický server:
+Chat rozumie aj písanému textu: `automat`, `firma`, `darček`, `filter`, `bez kofeínu`, `doprava`, `cena`, `dopyt` a pozdravy.
 
-```powershell
-python -m http.server 8788
+**URL parametre:** `?open=0` — chat sa neotvorí automaticky, zobrazí sa len bublina (na screenshoty stránky).
+
+## Rebranding na konkrétnu firmu
+
+Všetko podstatné je na začiatku súboru a je označené komentármi.
+
+**1. Farby** — blok `:root` v `<style>` (riadok ~12). Stačí prepísať štyri hodnoty:
+
+```css
+--espresso: #241610;   /* hlavná tmavá farba značky */
+--copper:   #c2703c;   /* akcent — tlačidlá, zvýraznenia */
+--copper-2: #dd9057;   /* svetlejší odtieň akcentu */
+--gold:     #e5bb84;   /* doplnkový akcent na tmavom pozadí */
 ```
 
-Potom:
+**2. Názov a texty značky** — hľadajte `Zrnko & Co.` (hlavička, hero, pätička, meno poradkyne v chate).
 
-```text
-http://127.0.0.1:8788/index.html
+**3. Produkty** — pole `products` v `<script>`, sekcia `1. KATALÓG`. Každá položka:
+
+```js
+{
+  id: "…", name: "…", origin: "…", price: 9.90, unit: "250 g",
+  roast: "stredné praženie",
+  brew: ["espresso","automat"],   // kde sa dá pripraviť
+  taste: ["čokoláda"],            // chuťový profil pre kvíz
+  notes: ["…","…","…"],           // tri chuťové tóny do karty
+  acidity: "nízka",               // nízka | stredná | vyššia | mix
+  pack: ["250g"],                 // 250g | 1kg | box
+  intent: ["home","office"],      // home | office | gift
+  description: "…",
+  reason: "…"                     // prečo ju bot odporúča
+}
 ```
 
-## Backend napojenie
+Prvé štyri produkty sa zobrazujú aj v katalógu na stránke.
 
-Aktuálne sú produkty v poli `products` v `index.html`. Pri produkcii sa dá napojiť:
+**4. Zľavový kód** — konštanta `COUPON` hneď pod katalógom.
 
-- `GET /api/products`
-- `POST /api/recommend`
-- `POST /api/leads`
+**5. Otázky kvízu** — pole `steps`, reakcie bota `reactions`. Kľúče (`brew`, `taste`, `acidity`, `pack`, `intent`) musia sedieť s hodnotami v produktoch.
+
+## Nasadenie na ostrý web
+
+Ukážka je demo — pri reálnom nasadení sa katalóg a dopyty napoja na backend:
+
+- `GET /api/products` — produkty namiesto poľa `products`
+- `POST /api/recommend` — odporúčanie na strane servera (voliteľné)
+- `POST /api/leads` — odoslanie dopytu do e-mailu alebo CRM
+- pridanie do košíka sa napojí na e-shop platformu (Shoptet, WooCommerce, Shopify…)
+
+Widget sa na existujúci web vkladá jedným `<script>` tagom.
