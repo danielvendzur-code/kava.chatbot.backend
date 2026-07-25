@@ -1,42 +1,51 @@
-# AI kávový poradca — ukážka pre klienta
+# Kávový poradca — ukážka pre klienta
 
-Hotová prezentačná ukážka v jedinom súbore `index.html`. Otvorí sa dvojklikom v prehliadači, nepotrebuje server, internet ani inštaláciu — dá sa poslať e-mailom ako príloha alebo nahrať na hosting.
+Hotová prezentačná ukážka v jedinom súbore `index.html`. Otvorí sa dvojklikom v prehliadači, nepotrebuje server ani inštaláciu — dá sa poslať e-mailom ako príloha alebo nahrať na hosting.
 
-Ukážka je pripravená pre vzorovú značku **Zrnko & Co.** (rodinná pražiareň). Značku, farby aj produkty vymeníte za klientove za pár minút — návod nižšie.
+Hlavná vec je **poradca (kvíz) v chate**. Stránka za ním nie je falošný e-shop, ale prezentácia: čo bot robí, ako funguje a čo prinesie majiteľovi.
 
 ## Čo klient v ukážke uvidí
 
-| Časť stránky | Čo demonštruje |
-|---|---|
-| Mock e-shop v pozadí | Ako poradca vyzerá priamo na webe pražiarne — hlavička, hero, katalóg, košík |
-| Chat „Barista Emma“ | Otvorí sa sám po ~1 s, privíta zákazníka a ponúkne výber |
-| Kvíz v konverzácii | 5 otázok klikaním, reakcie bota, progres, tlačidlo Späť |
-| Odporúčanie | 3 kávy zoradené podľa zhody, najlepšia zvýraznená, tlačidlo **Do košíka** |
-| Košík v hlavičke | Po pridaní z chatu naskočí počítadlo — vidno cestu od otázky k objednávke |
-| Zľavový kód | `ZRNKO10` sa odomkne po dokončení kvízu (konverzný ťahák) |
-| Dopyt | Formulár priamo v chate s predvyplneným výberom + potvrdenie |
-| Sekcia „Pre majiteľa e-shopu“ | Štyri konkrétne prínosy — argumentácia pre rozhodovanie majiteľa |
+**Stránka**
+- hero s hlavným posolstvom a otázkami, ktoré poradca kladie
+- „Ako to funguje“ — štyri kroky od návštevníka k objednávke
+- „Čo poradca prinesie vášmu e-shopu“ — štyri konkrétne prínosy
+- „Prispôsobíme ho vašej značke“ — čo všetko sa dá vymeniť
+- animácie: postupné odhaľovanie sekcií pri scrollovaní, hover efekty, pulzujúci launcher
+
+**Poradca (otvorí sa sám po ~1 s)**
+- privítanie od poradkyne Emmy s „píše…“ indikátorom
+- kvíz priamo v konverzácii: 5 otázok, veľké tlačidlá s emoji, možnosti nabiehajú postupne
+- po kliknutí sa možnosť zvýrazní a označí ✓, ostatné zošednú
+- segmentový progres „Otázka X / 5“, tlačidlo Späť a Začať odznova
+- reakcie bota na každú odpoveď (pôsobí ako živý rozhovor)
+- výsledok: 3 kávy zoradené podľa zhody, s animovaným pruhom zhody a zvýraznenou najlepšou
+- rekapitulácia odpovedí ako štítky
+- zľavový kód `PORADCA10` s kopírovaním na klik
+- kontextový upsell podľa typu zákazníka (firma / darček / domov)
+- „Vybrať túto“ → bot potvrdí voľbu a pripraví objednávkový formulár
+- dopyt formulár s predvyplneným výberom a potvrdením
 
 Chat rozumie aj písanému textu: `automat`, `firma`, `darček`, `filter`, `bez kofeínu`, `doprava`, `cena`, `dopyt` a pozdravy.
 
-**URL parametre:** `?open=0` — chat sa neotvorí automaticky, zobrazí sa len bublina (na screenshoty stránky).
+**URL parametre:** `?open=0` — poradca sa neotvorí automaticky, zobrazí sa len bublina.
 
 ## Rebranding na konkrétnu firmu
 
-Všetko podstatné je na začiatku súboru a je označené komentármi.
+Všetko podstatné je označené komentármi v súbore.
 
-**1. Farby** — blok `:root` v `<style>` (riadok ~12). Stačí prepísať štyri hodnoty:
+**1. Farby** — blok `:root` v `<style>`. Stačia štyri hodnoty:
 
 ```css
---espresso: #241610;   /* hlavná tmavá farba značky */
+--espresso: #201310;   /* hlavná tmavá farba značky */
 --copper:   #c2703c;   /* akcent — tlačidlá, zvýraznenia */
---copper-2: #dd9057;   /* svetlejší odtieň akcentu */
---gold:     #e5bb84;   /* doplnkový akcent na tmavom pozadí */
+--copper-2: #e0965c;   /* svetlejší odtieň akcentu */
+--gold:     #e8c290;   /* doplnkový akcent na tmavom pozadí */
 ```
 
-**2. Názov a texty značky** — hľadajte `Zrnko & Co.` (hlavička, hero, pätička, meno poradkyne v chate).
+**2. Názov a logo** — hlavička stránky (`.logo`), meno poradkyne v `.kb-titles`. Logo je inline SVG (kávové zrno), vymení sa za klientovo.
 
-**3. Produkty** — pole `products` v `<script>`, sekcia `1. KATALÓG`. Každá položka:
+**3. Produkty** — pole `products` v `<script>`, sekcia `1. KATALÓG`:
 
 ```js
 {
@@ -53,11 +62,9 @@ Všetko podstatné je na začiatku súboru a je označené komentármi.
 }
 ```
 
-Prvé štyri produkty sa zobrazujú aj v katalógu na stránke.
+**4. Zľavový kód** — konštanta `COUPON` pod katalógom.
 
-**4. Zľavový kód** — konštanta `COUPON` hneď pod katalógom.
-
-**5. Otázky kvízu** — pole `steps`, reakcie bota `reactions`. Kľúče (`brew`, `taste`, `acidity`, `pack`, `intent`) musia sedieť s hodnotami v produktoch.
+**5. Otázky kvízu** — pole `steps`, reakcie bota `reactions`. Kľúče (`intent`, `brew`, `taste`, `acidity`, `pack`) musia sedieť s hodnotami v produktoch. Progres sa počtu otázok prispôsobí sám.
 
 ## Nasadenie na ostrý web
 
@@ -66,6 +73,6 @@ Ukážka je demo — pri reálnom nasadení sa katalóg a dopyty napoja na backe
 - `GET /api/products` — produkty namiesto poľa `products`
 - `POST /api/recommend` — odporúčanie na strane servera (voliteľné)
 - `POST /api/leads` — odoslanie dopytu do e-mailu alebo CRM
-- pridanie do košíka sa napojí na e-shop platformu (Shoptet, WooCommerce, Shopify…)
+- výber kávy sa dá napojiť na košík e-shopu (Shoptet, WooCommerce, Shopify…)
 
 Widget sa na existujúci web vkladá jedným `<script>` tagom.
