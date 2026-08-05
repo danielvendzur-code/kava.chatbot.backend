@@ -1,0 +1,49 @@
+/* Browser-verified corrections for the unified v7 system. */
+.option.is-selected::before {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.option.is-selected {
+  color: var(--ink);
+  border-color: rgba(198, 107, 73, .58);
+  background: #fff7f2;
+  box-shadow:
+    inset 3px 0 var(--copper),
+    0 12px 24px -25px rgba(23, 63, 55, .52);
+}
+
+.option.is-selected .option__copy b {
+  color: var(--pine);
+}
+
+.option.is-selected .option__copy small {
+  color: #665f5a;
+}
+
+@media (max-width: 640px) {
+  html.widget-open,
+  body.widget-open {
+    background: var(--paper);
+  }
+
+  body.widget-open .proposal-page,
+  body.widget-open .demo-ribbon {
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .widget,
+  .widget.is-open,
+  .screen,
+  .advisor,
+  .stage {
+    background: var(--paper);
+  }
+
+  .widget.is-open {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
