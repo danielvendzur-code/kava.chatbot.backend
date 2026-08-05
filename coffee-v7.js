@@ -6,6 +6,11 @@
   const path = (d) => `<path d="${d}" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>`;
   const svg = (body) => `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">${body}</svg>`;
 
+  const verifiedCorrections = document.createElement('link');
+  verifiedCorrections.rel = 'stylesheet';
+  verifiedCorrections.href = 'coffee-v7-qa.css';
+  document.head.appendChild(verifiedCorrections);
+
   const extensionIcons = {
     shop: svg(path('M4 9h16l-1 11H5L4 9ZM7 9V6a5 5 0 0 1 10 0v3')),
     pin: svg(path('M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z') + '<circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.9"/>'),
