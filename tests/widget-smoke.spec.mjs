@@ -43,9 +43,11 @@ test('desktop proposal and complete purchase recommendation flow', async ({ page
   await expect(page.locator('.chips .chip')).toHaveCount(4);
 
   const chip = page.locator('.chip').first();
-  const chipText = (await chip.textContent()).trim();
+  const chipLabel = chip.locator('span');
+  const chipText = (await chipLabel.textContent()).trim();
   await chip.click();
-  await expect(page.getByText(chipText, { exact: true })).toBeVisible();
+  await expect(chipLabel).toBeVisible();
+  await expect(chipLabel).toHaveText(chipText);
   await page.screenshot({ path: 'artifacts/praziarnicka-desktop-chat.png' });
 
   await page.locator('[data-mode="advisor"]').click();
@@ -67,7 +69,7 @@ test('desktop proposal and complete purchase recommendation flow', async ({ page
   expect(errors).toEqual([]);
 });
 
-test('mobile widget is fullscreen, stable and does not summon keyboard', async ({ page }) => {
+test('mobile widget is fullscreen, opaque, stable and does not summon keyboard', async ({ page }) => {
   const errors = watchConsole(page);
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(baseURL, { waitUntil: 'networkidle' });
@@ -78,10 +80,14 @@ test('mobile widget is fullscreen, stable and does not summon keyboard', async (
   expect(panelBox.width).toBeGreaterThanOrEqual(389);
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
   expect(await page.evaluate(() => document.activeElement?.id)).not.toBe('chatInput');
+  await expect(page.locator('.proposal-page')).toHaveCSS('visibility', 'hidden');
+  await expect(page.locator('#widget')).toHaveCSS('background-color', 'rgb(255, 253, 250)');
 
   await expect(page.locator('.option')).toHaveCount(4);
   await page.locator('.option').first().click();
   await expect(page.locator('.option.is-selected .option__copy b')).toBeVisible();
+  await expect(page.locator('.option.is-selected .option__copy small')).toBeVisible();
+  await page.waitForTimeout(80);
   await page.screenshot({ path: 'artifacts/praziarnicka-mobile-advisor.png' });
   expect(errors).toEqual([]);
 });
