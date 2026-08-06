@@ -29,19 +29,36 @@ jobs:
         run: npm install --no-audit --no-fund
 
       - name: Install Chromium
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install chromium
 
-      - name: Validate active v7 architecture
+      - name: Validate shared v8 architecture
         run: |
-          test -f coffee-v7.css
-          test -f coffee-v7.js
-          grep -Fq 'coffee-v7.css' index.html
-          grep -Fq 'coffee-v7.js' index.html
-          grep -Fq 'Neoficiálny návrh pripravený pre Pražiarničku' index.html
-          grep -Fq 'support-row' index.html
-          grep -Fq 'grid-template-columns: repeat(2' coffee-v7.css
-          grep -Fq 'background-image: radial-gradient' coffee-v7.css
-          grep -Fq 'praziarnicka-demo-events' coffee-v7.js
+          test -f coffee-v8.css
+          test -f coffee-v8.js
+          test -f coffee-configs.js
+          test -f api/chat.js
+          test -f vercel.json
+          grep -Fq 'coffee-v8.css' index.html
+          grep -Fq 'coffee-configs.js' index.html
+          grep -Fq 'border-radius: 50%' coffee-v8.css
+          grep -Fq 'background-size 1.05s' coffee-v8.css
+          grep -Fq 'option-reveal' coffee-v8.css
+          grep -Fq "praziarnicka:" coffee-configs.js
+          grep -Fq "diamonds:" coffee-configs.js
+          grep -Fq "kaffa:" coffee-configs.js
+          grep -Fq "vitazov:" coffee-configs.js
+          grep -Fq "concept:" coffee-configs.js
+          grep -Fq "jolka:" coffee-configs.js
+          grep -Fq 'ANTHROPIC_API_KEY' api/chat.js
+          grep -Fq '/ukazka/:slug' vercel.json
+          ! grep -Fq 'Voľba je uložená' coffee-v8.js
+          node --check coffee-bootstrap.js
+          node --check coffee-local-api.js
+          node --check coffee-configs.js
+          node --check coffee-brand-overrides.js
+          node --check coffee-v8.js
+          node --check coffee-v8-patch.js
+          node --check api/chat.js
 
       - name: Run desktop and mobile Chromium tests
         run: |
@@ -55,7 +72,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: praziarnicka-v7-visual-qa
+          name: coffee-v8-visual-qa
           path: artifacts/*.png
           if-no-files-found: error
           retention-days: 7

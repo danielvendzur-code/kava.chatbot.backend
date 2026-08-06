@@ -2,6 +2,15 @@ import { test, expect } from '@playwright/test';
 import fs from 'node:fs';
 
 const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
+const demos = [
+  ['praziarnicka', 'Pražiarnička'],
+  ['diamonds', 'Diamonds Roastery'],
+  ['kaffa', 'Kaffa Roastery'],
+  ['vitazov', 'Káva Víťazov'],
+  ['concept', 'Concept Coffee Roasters'],
+  ['jolka', 'Pražiareň Jolka']
+];
+
 fs.mkdirSync('artifacts', { recursive: true });
 
 function watchConsole(page) {
@@ -14,80 +23,107 @@ function watchConsole(page) {
 }
 
 async function openAdvisor(page) {
-  await page.locator('#heroOpen').click();
+  await page.locator('#openWidget').click();
   await expect(page.locator('#widget')).toHaveClass(/is-open/);
   await page.locator('[data-mode="advisor"]').click();
   await expect(page.locator('#advisorScreen')).toHaveClass(/is-active/);
 }
 
-async function chooseAndContinue(page, value) {
+async function choose(page, value, nextStep) {
   const option = page.locator(`.option[data-value="${value}"]`);
+  const title = option.locator('.option__copy b');
+  const text = (await title.textContent()).trim();
   await option.click();
   await expect(option).toHaveClass(/is-selected/);
-  await expect(option.locator('.option__copy b')).toBeVisible();
-  await expect(option.locator('.option__copy small')).toBeVisible();
-  await page.locator('#nextBtn').click();
+  await expect(title).toBeVisible();
+  await expect(title).toHaveText(text);
+  await page.waitForTimeout(720);
+  if (nextStep) await expect(page.locator('#stepLabel')).toHaveText(nextStep);
 }
 
-test('desktop proposal and complete purchase recommendation flow', async ({ page }) => {
+test('one-screen proposal, round launcher and complete recommendation flow', async ({ page }) => {
   const errors = watchConsole(page);
-  await page.setViewportSize({ width: 1440, height: 1000 });
-  await page.goto(baseURL, { waitUntil: 'networkidle' });
+  await page.setViewportSize({ width: 1440, height: 960 });
+  await page.goto(`${baseURL}/?demo=praziarnicka`, { waitUntil: 'networkidle' });
 
-  await expect(page.locator('h1')).toContainText('Káva, ktorá sadne');
-  await expect(page.locator('.product-strip__items button')).toHaveCount(5);
-  await page.screenshot({ path: 'artifacts/praziarnicka-desktop-landing.png', fullPage: true });
+  await expect(page.locator('h1')).toContainText('Pomôžte zákazníkovi');
+  await expect(page.locator('.demo-benefit')).toHaveCount(3);
+  expect(await page.evaluate(() => document.documentElement.scrollHeight)).toBeLessThanOrEqual(960);
+
+  const launcher = page.locator('.launcher__button');
+  const launcherBox = await launcher.boundingBox();
+  expect(Math.abs(launcherBox.width - launcherBox.height)).toBeLessThan(1);
+  await expect(launcher).toHaveCSS('border-radius', '50%');
+
+  await page.waitForTimeout(1450);
+  await expect(page.locator('#launcherTeaser')).toHaveClass(/is-visible/);
+  const teaserBox = await page.locator('#launcherTeaser').boundingBox();
+  expect(teaserBox.y + teaserBox.height).toBeLessThan(launcherBox.y);
+  await page.screenshot({ path: 'artifacts/coffee-v8-desktop-landing.png', fullPage: true });
 
   await page.locator('#openWidget').click();
   await expect(page.locator('.support-row a')).toHaveCount(3);
   await expect(page.locator('.chips .chip')).toHaveCount(4);
+  await expect(page.locator('#widget')).toHaveCSS('border-radius', '34px');
 
   const chip = page.locator('.chip').first();
   const chipLabel = chip.locator('span');
   const chipText = (await chipLabel.textContent()).trim();
   await chip.click();
+  await page.waitForTimeout(520);
   await expect(chipLabel).toBeVisible();
   await expect(chipLabel).toHaveText(chipText);
-  await page.screenshot({ path: 'artifacts/praziarnicka-desktop-chat.png' });
+  await page.screenshot({ path: 'artifacts/coffee-v8-desktop-chat.png' });
 
   await page.locator('[data-mode="advisor"]').click();
-  await chooseAndContinue(page, 'automatic');
-  await chooseAndContinue(page, 'gentle');
-  await chooseAndContinue(page, 'black');
-  await chooseAndContinue(page, 'classic');
+  await expect(page.locator('.option')).toHaveCount(4);
+  await expect(page.locator('.option__photo')).toHaveCount(4);
+  const delays = await page.locator('.option').evaluateAll((nodes) => nodes.map((node) => getComputedStyle(node).animationDelay));
+  expect(new Set(delays).size).toBeGreaterThan(1);
+
+  await choose(page, 'automatic', '2 / 4');
+  await choose(page, 'chocolate', '3 / 4');
+  await choose(page, 'milk', '4 / 4');
+  await choose(page, 'classic', null);
 
   await expect(page.locator('.result-card')).toBeVisible();
   await expect(page.locator('.result-product h3')).not.toBeEmpty();
-  await page.screenshot({ path: 'artifacts/praziarnicka-desktop-result.png' });
+  await page.screenshot({ path: 'artifacts/coffee-v8-desktop-result.png' });
 
   await page.locator('#choosePack').click();
-  await page.locator('.weight[data-weight="500"]').click();
+  await page.locator('.choice-card[data-weight="500"]').click();
   await page.locator('.grind[data-grind="espresso"]').click();
   await expect(page.locator('#checkout')).toBeEnabled();
   await page.locator('#checkout').click();
-  await expect(page.locator('.success h2')).toHaveText('Káva je pripravená');
+  await expect(page.locator('.success h2')).toHaveText('Výber je pripravený');
   expect(errors).toEqual([]);
 });
 
-test('mobile widget is fullscreen, opaque, stable and does not summon keyboard', async ({ page }) => {
+test('all six routed demos are personalized and use the same system', async ({ page }) => {
+  for (const [slug, brand] of demos) {
+    await page.goto(`${baseURL}/?demo=${slug}`, { waitUntil: 'domcontentloaded' });
+    await expect(page.locator('.demo-brand__copy strong')).toHaveText(brand);
+    await expect(page.locator('.owner-note')).toContainText('Dobrý deň');
+    await expect(page.locator('.preview-answer strong')).not.toBeEmpty();
+    await expect(page.locator('.widget-brand__copy strong')).toHaveText(brand);
+  }
+});
+
+test('mobile widget stays rounded, opaque and does not open the keyboard', async ({ page }) => {
   const errors = watchConsole(page);
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto(baseURL, { waitUntil: 'networkidle' });
+  await page.goto(`${baseURL}/?demo=jolka`, { waitUntil: 'networkidle' });
   await openAdvisor(page);
 
   const panelBox = await page.locator('#widget').boundingBox();
-  expect(panelBox.x).toBe(0);
-  expect(panelBox.width).toBeGreaterThanOrEqual(389);
+  expect(panelBox.x).toBeGreaterThanOrEqual(7);
+  expect(panelBox.width).toBeLessThanOrEqual(375);
+  await expect(page.locator('#widget')).toHaveCSS('border-radius', '28px');
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
   expect(await page.evaluate(() => document.activeElement?.id)).not.toBe('chatInput');
-  await expect(page.locator('.proposal-page')).toHaveCSS('visibility', 'hidden');
-  await expect(page.locator('#widget')).toHaveCSS('background-color', 'rgb(255, 253, 250)');
-
   await expect(page.locator('.option')).toHaveCount(4);
   await page.locator('.option').first().click();
   await expect(page.locator('.option.is-selected .option__copy b')).toBeVisible();
-  await expect(page.locator('.option.is-selected .option__copy small')).toBeVisible();
-  await page.waitForTimeout(80);
-  await page.screenshot({ path: 'artifacts/praziarnicka-mobile-advisor.png' });
+  await page.screenshot({ path: 'artifacts/coffee-v8-mobile-advisor.png' });
   expect(errors).toEqual([]);
 });

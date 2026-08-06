@@ -3,179 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <meta name="theme-color" content="#173f37">
-  <title>Pražiarnička – návrh osobného kávového poradcu</title>
-  <meta name="description" content="Neoficiálna interaktívna ukážka osobného kávového poradcu pre e-shop Pražiarnička.">
+  <meta name="theme-color" content="#123f35">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Kávový poradca – personalizovaná ukážka</title>
+  <meta name="description" content="Neoficiálna interaktívna ukážka moderného kávového poradcu.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="coffee-v7.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/coffee-v8.css">
+  <link rel="stylesheet" href="/coffee-v8-refine.css">
 </head>
 <body>
-  <div class="demo-ribbon" role="note">
-    <span><i></i> Neoficiálny návrh pripravený pre Pražiarničku</span>
-    <b>Interaktívna ukážka</b>
-  </div>
-
-  <main class="proposal-page" aria-label="Návrh kávového poradcu pre Pražiarničku">
-    <header class="site-header">
-      <a class="brand brand--page" href="https://praziarnicka.sk" target="_blank" rel="noreferrer" aria-label="Otvoriť web Pražiarničky">
-        <img src="brand/praziarnicka-mark.svg" alt="" width="50" height="50">
-        <span><strong>Pražiarnička</strong><small>by Caffè Vita</small></span>
-      </a>
-      <nav class="site-nav" aria-label="Rýchle odkazy">
-        <a href="https://praziarnicka.sk/eshop" target="_blank" rel="noreferrer">E-shop</a>
-        <a href="https://praziarnicka.sk/o-nas" target="_blank" rel="noreferrer">O pražiarni</a>
-        <button id="headerOpen" type="button">Vyskúšať poradcu</button>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <div class="hero__copy">
-        <span class="hero__label">Osobný výber kávy</span>
-        <h1>Káva, ktorá sadne hneď na prvý výber.</h1>
-        <p>Štyri jednoduché otázky prepoja spôsob prípravy, chuť a návyky zákazníka s konkrétnou kávou z ponuky Pražiarničky.</p>
-        <div class="hero__actions">
-          <button class="button button--primary" id="heroOpen" type="button"><span>Spustiť výber kávy</span><i aria-hidden="true">→</i></button>
-          <span class="hero__promise"><b>Približne 1 minúta</b><small>od otázky až po balenie a mletie</small></span>
-        </div>
-        <div class="hero__trust" aria-label="Výhody Pražiarničky">
-          <span><b>Čerstvé praženie</b><small>každý týždeň</small></span>
-          <span><b>98 % spokojnosť</b><small>tisíce zákazníkov</small></span>
-          <span><b>Doprava zdarma</b><small>nad 60 €</small></span>
-        </div>
-      </div>
-
-      <div class="hero__visual" aria-label="Ukážka výsledku poradcu">
-        <div class="preview-card">
-          <div class="preview-card__head">
-            <span>Vaše odporúčanie</span>
-            <b><i></i> pripravené za minútu</b>
-          </div>
-          <div class="preview-card__body">
-            <div class="pack pack--brazil pack--hero">
-              <span class="pack__brand">PRAŽIARNIČKA</span>
-              <strong>BRAZIL</strong>
-              <small>100 % ARABICA</small>
-              <i></i>
-            </div>
-            <div class="preview-product">
-              <span class="match-pill">Najlepšia zhoda</span>
-              <h2>Brazil Santos</h2>
-              <p>Jemná, čokoládová a s nízkou aciditou.</p>
-              <div class="preview-tags"><span>automat</span><span>čierna káva</span><span>jemná chuť</span></div>
-            </div>
-          </div>
-          <div class="preview-path" aria-label="Priebeh poradcu">
-            <span class="is-done"><i>1</i>Príprava</span>
-            <span class="is-done"><i>2</i>Chuť</span>
-            <span class="is-done"><i>3</i>Nápoj</span>
-            <span class="is-current"><i>4</i>Výsledok</span>
-          </div>
-        </div>
-        <span class="coffee-orbit coffee-orbit--one"></span>
-        <span class="coffee-orbit coffee-orbit--two"></span>
-      </div>
-    </section>
-
-    <section class="product-strip" aria-label="Produkty zahrnuté v ukážke">
-      <div class="product-strip__intro"><span>Poradca pracuje s reálnou ponukou</span><b>5 káv · balenie · mletie</b></div>
-      <div class="product-strip__items">
-        <button type="button" data-open-advisor><span class="mini-pack mini-pack--paganini">P</span><b>Paganini</b><small>od 11,90 €</small></button>
-        <button type="button" data-open-advisor><span class="mini-pack mini-pack--brazil">B</span><b>Brazil Santos</b><small>od 9,90 €</small></button>
-        <button type="button" data-open-advisor><span class="mini-pack mini-pack--puccini">P</span><b>Puccini</b><small>od 11,50 €</small></button>
-        <button type="button" data-open-advisor><span class="mini-pack mini-pack--cuba">C</span><b>Cuba Serrano</b><small>od 12,90 €</small></button>
-        <button type="button" data-open-advisor><span class="mini-pack mini-pack--decaf">D</span><b>Bezkofeínová</b><small>od 12,90 €</small></button>
-      </div>
-    </section>
-
-    <section class="value-section">
-      <div class="value-section__copy">
-        <span>Ako pomáha e-shopu</span>
-        <h2>Nie ďalší chat. Priama cesta ku konkrétnemu produktu.</h2>
-        <p>Zákazník nemusí rozumieť pôvodu, acidite ani pomeru arabiky a robusty. Poradca preloží odborné parametre do štyroch bežných rozhodnutí.</p>
-      </div>
-      <div class="value-flow">
-        <article><i>01</i><div><b>Zistí spôsob prípravy</b><p>Automat, páka, moka alebo filter.</p></div></article>
-        <article><i>02</i><div><b>Preloží chuť do ľudskej reči</b><p>Jemná, vyvážená alebo výrazná.</p></div></article>
-        <article><i>03</i><div><b>Odporučí produkt a variant</b><p>Káva, balenie aj správne mletie.</p></div></article>
-      </div>
-    </section>
-
-    <footer class="proposal-footer">
-      <p>Táto ukážka je neoficiálny návrh a nie je súčasťou oficiálneho webu spoločnosti Pražiarnička.</p>
-      <button id="footerOpen" type="button">Otvoriť poradcu <span>→</span></button>
-    </footer>
-  </main>
-
-  <div class="launcher" id="launcher">
-    <button class="launcher__teaser" id="launcherLabel" type="button">
-      <b>Nechajte si odporučiť kávu</b>
-      <span>Podľa chuti a spôsobu prípravy.</span>
-      <i aria-hidden="true"></i>
-    </button>
-    <button class="launcher__button" id="openWidget" type="button" aria-label="Otvoriť kávového poradcu" aria-expanded="false">
-      <img src="brand/praziarnicka-mark.svg" alt="" width="54" height="54">
-      <span aria-hidden="true"></span>
-    </button>
-  </div>
-
-  <section class="widget" id="widget" aria-label="Kávový poradca Pražiarnička" aria-hidden="true">
-    <header class="widget__header">
-      <div class="brand brand--widget">
-        <img src="brand/praziarnicka-mark.svg" alt="" width="46" height="46">
-        <span><strong>Pražiarnička</strong><small><i></i> Online</small></span>
-      </div>
-      <div class="widget__actions">
-        <button class="icon-button" id="resetAll" type="button" aria-label="Začať odznova" data-icon="refresh"></button>
-        <button class="icon-button icon-button--close" id="closeWidget" type="button" aria-label="Zavrieť" data-icon="close"></button>
-      </div>
-    </header>
-
-    <nav class="mode" id="modeSwitch" aria-label="Režim poradcu">
-      <span class="mode__indicator" aria-hidden="true"></span>
-      <button class="mode__button is-active" type="button" data-mode="chat"><span data-icon="chat"></span><b>Chat</b></button>
-      <button class="mode__button" type="button" data-mode="advisor"><span data-icon="spark"></span><b>Výber kávy</b><em id="savedProgress"></em></button>
-    </nav>
-
-    <div class="stage">
-      <section class="screen is-active" id="chatScreen">
-        <button class="advisor-entry" id="openAdvisor" type="button">
-          <span class="advisor-entry__visual"><span class="mini-pack mini-pack--brazil">B</span><i></i></span>
-          <span class="advisor-entry__copy"><small>Osobné odporúčanie</small><b>Nájsť kávu na mieru</b><span>4 otázky · produkt, balenie aj mletie</span></span>
-          <span class="advisor-entry__arrow" data-icon="next"></span>
-        </button>
-
-        <div class="chat" id="chatMessages" aria-live="polite"></div>
-        <div class="chips" id="quickChips" aria-label="Rýchle otázky"></div>
-        <form class="composer" id="chatForm">
-          <div class="composer__shell">
-            <input id="chatInput" autocomplete="off" placeholder="Opýtajte sa na kávu…" aria-label="Otázka o káve">
-            <button class="composer__send" type="submit" aria-label="Odoslať" data-icon="send"></button>
-          </div>
-        </form>
-        <div class="support-row" aria-label="Kontaktné možnosti">
-          <a href="https://praziarnicka.sk/eshop" target="_blank" rel="noreferrer"><span data-icon="shop"></span>E-shop</a>
-          <a href="https://praziarnicka.sk/kontakt" target="_blank" rel="noreferrer"><span data-icon="pin"></span>Kaviareň</a>
-          <a href="tel:+421918560693"><span data-icon="phone"></span>Zavolať</a>
-        </div>
-      </section>
-
-      <section class="screen" id="advisorScreen">
-        <div class="advisor-progress">
-          <div class="advisor-progress__copy"><b id="stepLabel">Krok 1 zo 4</b><span id="stepName">Príprava</span></div>
-          <div class="progress" id="progress" aria-label="Priebeh výberu"></div>
-        </div>
-        <div class="advisor" id="advisorBody" aria-live="polite"></div>
-        <footer class="advisor-footer" id="advisorFooter">
-          <button class="footer-button footer-button--back" id="prevBtn" type="button"><span data-icon="back"></span> Späť</button>
-          <span class="advisor-footer__status" id="footerStatus">Vyberte jednu možnosť</span>
-          <button class="footer-button footer-button--next" id="nextBtn" type="button" disabled>Pokračovať <span data-icon="next"></span></button>
-        </footer>
-      </section>
-    </div>
-  </section>
-
-  <script src="coffee-v7.js"></script>
+  <div id="coffee-demo-root"></div>
+  <script src="/coffee-bootstrap.js"></script>
+  <script src="/coffee-local-api.js"></script>
+  <script src="/coffee-configs.js"></script>
+  <script src="/coffee-brand-overrides.js"></script>
+  <script src="/coffee-v8.js"></script>
+  <script src="/coffee-v8-patch.js"></script>
 </body>
 </html>
