@@ -29,7 +29,7 @@ jobs:
         run: npm install --no-audit --no-fund
 
       - name: Install Chromium
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install chromium
 
       - name: Validate shared v8 architecture
         run: |
@@ -55,6 +55,7 @@ jobs:
           node --check coffee-bootstrap.js
           node --check coffee-local-api.js
           node --check coffee-configs.js
+          node --check coffee-brand-overrides.js
           node --check coffee-v8.js
           node --check coffee-v8-patch.js
           node --check api/chat.js
