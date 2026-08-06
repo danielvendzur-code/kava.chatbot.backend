@@ -3,9 +3,7 @@
   const app = window.ConceptSeasonalApp = {};
   const config = window.CONCEPT_SEASONAL_CONFIG;
   const root = document.querySelector('#coffee-demo-root');
-  if (!config || !root) {
-    throw new Error('Concept seasonal configuration is missing.');
-  }
+  if (!config || !root) throw new Error('Concept seasonal configuration is missing.');
 
   const $ = (selector, scope = document) => scope.querySelector(selector);
   const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
@@ -24,9 +22,6 @@
     back: svg(stroke('m15 18-6-6 6-6')),
     check: svg(stroke('m5 12 4 4L19 6', 2)),
     send: svg(stroke('m4 4 16 8-16 8 3-8-3-8Z') + stroke('M7 12h13')),
-    shop: svg(stroke('M4 9h16l-1 11H5L4 9ZM7 9V6a5 5 0 0 1 10 0v3')),
-    phone: svg(stroke('M7.5 4 5 6.2c-.8.8-.3 3.5 2.9 6.8 3.3 3.2 6 3.7 6.8 2.9l2.3-2.5-3-2-1.7 1.7a9.8 9.8 0 0 1-5-5L9 5.5 7.5 4Z')),
-    mail: svg(stroke('M3 5h18v14H3zM3 7l9 7 9-7')),
     bean: svg(stroke('M12 3c4.8 0 8 3.7 8 9s-3.2 9-8 9-8-3.7-8-9 3.2-9 8-9Z') + stroke('M8 18c5-3 3-9 8-12')),
     balance: svg(stroke('M12 3v18M5 7h14M6 7l-3 7h6L6 7Zm12 0-3 7h6l-3-7Z')),
     fruit: svg(stroke('M12 7c4-3 7 0 7 4 0 5-3 9-7 10-4-1-7-5-7-10 0-4 3-7 7-4ZM12 7c0-2 1-4 4-5')),
@@ -46,34 +41,33 @@
     </svg>`;
   }
 
+  function brandSeal() {
+    return `<svg class="concept-seal" viewBox="0 0 72 72" fill="none" aria-hidden="true">
+      <path d="M18 18 54 54M54 18 18 54" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M30 13h10v5h-2v4h-6v-4h-2v-5Zm10 4h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30 51h12l-2.5 8h-7L30 51Zm2-5h8l2 5H30l2-5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      <text x="9" y="39" fill="currentColor" font-size="9" font-weight="700" font-family="Arial, sans-serif">20</text>
+      <text x="51" y="39" fill="currentColor" font-size="9" font-weight="700" font-family="Arial, sans-serif">15</text>
+    </svg>`;
+  }
+
   const productById = (id) => config.products.find((product) => product.id === id);
-  const stateKey = 'concept-seasonal-state-v1';
+  const stateKey = 'concept-seasonal-state-v2';
   const defaultState = () => ({
-    mode: 'chat',
-    step: 0,
-    answers: {},
-    stage: 'questions',
-    selectedProduct: null,
-    packageGrams: null,
-    grind: 'beans',
-    transitioning: false,
-    chatHistory: []
+    mode: 'chat', step: 0, answers: {}, stage: 'questions', selectedProduct: null,
+    packageGrams: null, grind: 'beans', transitioning: false, chatHistory: []
   });
 
   let state = defaultState();
   try {
     const saved = JSON.parse(sessionStorage.getItem(stateKey) || 'null');
-    if (saved && typeof saved === 'object') {
-      state = { ...state, ...saved, transitioning: false, chatHistory: [] };
-    }
+    if (saved && typeof saved === 'object') state = { ...state, ...saved, transitioning: false, chatHistory: [] };
   } catch (_) {}
 
   const questions = [
     {
-      key: 'prep',
-      name: 'Príprava',
-      title: 'Ako kávu pripravuješ?',
-      note: 'Fotografia pomáha rozlíšiť spôsob, nie konkrétny model kávovaru.',
+      key: 'prep', name: 'Príprava', title: 'Ako kávu pripravuješ?',
+      note: 'Vyber najbližší spôsob. Poradca podľa neho upraví praženie aj odporúčanie.',
       options: [
         { value: 'automatic', label: 'Automatický kávovar', description: 'Jedno tlačidlo, espresso aj mliečne nápoje', photo: '/assets/concept/prep-automatic.webp' },
         { value: 'lever', label: 'Pákový kávovar', description: 'Espresso si nastavuješ ručne', photo: '/assets/concept/prep-lever.webp' },
@@ -82,21 +76,17 @@
       ]
     },
     {
-      key: 'taste',
-      name: 'Chuť',
-      title: 'Čo chceš cítiť v šálke?',
-      note: 'Chuťové tóny sú prirodzený opis kávy, nie pridaná aróma.',
+      key: 'taste', name: 'Chuť', title: 'Čo chceš cítiť v šálke?',
+      note: 'Chuťové tóny opisujú prirodzený charakter kávy, nie pridanú arómu.',
       options: [
-        { value: 'chocolate', label: 'Sladké a čokoládové', description: 'Kakao, orechy, nugát a pokojnejšia acidita', icon: 'bean' },
-        { value: 'balanced', label: 'Vyvážené', description: 'Sladkosť, ovocnosť aj telo bez extrému', icon: 'balance' },
-        { value: 'fruity', label: 'Ovocné a svieže', description: 'Bobuľové, citrusové alebo kvetinové tóny', icon: 'fruit' },
-        { value: 'strong', label: 'Výrazné a netradičné', description: 'Intenzívny profil, ktorý je hlavnou témou šálky', icon: 'bold' }
+        { value: 'chocolate', label: 'Sladké a čokoládové', description: 'Kakao, orechy, nugát a pokojnejšia acidita', photo: '/assets/concept/result-espresso.webp', icon: 'bean' },
+        { value: 'balanced', label: 'Vyvážené', description: 'Sladkosť, ovocnosť aj telo bez extrému', photo: '/assets/concept/prep-lever.webp', icon: 'balance' },
+        { value: 'fruity', label: 'Ovocné a svieže', description: 'Bobuľové, citrusové alebo kvetinové tóny', photo: '/assets/concept/result-filter.webp', icon: 'fruit' },
+        { value: 'strong', label: 'Výrazné a netradičné', description: 'Intenzívny profil, ktorý je hlavnou témou šálky', photo: '/assets/concept/prep-moka.webp', icon: 'bold' }
       ]
     },
     {
-      key: 'drink',
-      name: 'Nápoj',
-      title: 'Ako ju piješ najčastejšie?',
+      key: 'drink', name: 'Nápoj', title: 'Ako ju piješ najčastejšie?',
       note: 'Mlieko potrebuje kávu s dostatočnou sladkosťou a telom.',
       options: [
         { value: 'black', label: 'Čiernu', description: 'Espresso, lungo alebo filter', icon: 'black' },
@@ -105,17 +95,16 @@
       ]
     },
     {
-      key: 'caffeine',
-      name: 'Kofeín',
-      title: 'Klasickú alebo bez kofeínu?',
+      key: 'caffeine', name: 'Kofeín', title: 'Klasickú alebo bez kofeínu?',
       note: 'Bezkofeínová voľba môže zostať plná a výberová.',
       options: [
         { value: 'classic', label: 'Klasickú', description: 'Bežná káva s kofeínom', icon: 'bolt' },
-        { value: 'decaf', label: 'Bezkofeínovú', description: 'Na večer alebo pri obmedzení kofeínu', icon: 'moon' },
+        { value: 'decaf', label: 'Bezkofeínovú', description: 'Na večer alebo pri obmedzení kofeínu', photo: '/assets/concept/result-decaf.webp', icon: 'moon' },
         { value: 'either', label: 'Rozhodni podľa chuti', description: 'Kofeín nie je hlavné kritérium', icon: 'either' }
       ]
     }
   ];
-  Object.assign(app, { config, root, $, $$, escapeHTML, icons, mark, productById, stateKey, defaultState, questions });
+
+  Object.assign(app, { config, root, $, $$, escapeHTML, icons, mark, brandSeal, productById, stateKey, defaultState, questions });
   app.state = state;
 })();

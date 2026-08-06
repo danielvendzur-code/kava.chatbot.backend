@@ -1,8 +1,9 @@
 (() => {
   'use strict';
   const app = window.ConceptSeasonalApp;
-  const { config, $, $$, escapeHTML, mark, productById, persist, emit, time, lockBackground, unlockBackground, animateMarks } = app;
+  const { config, $, $$, escapeHTML, mark, persist, emit, time, lockBackground, unlockBackground, animateMarks } = app;
   const { widget, launcher, teaser, modeSwitch, chatScreen, advisorScreen, chat, chips } = app.refs;
+
   function openWidget({ focus = false } = {}) {
     widget.classList.add('is-open');
     widget.setAttribute('aria-hidden', 'false');
@@ -64,7 +65,7 @@
     const products = config.products;
     if (query.includes('bez kof') || query.includes('večer')) {
       const product = products.find((item) => item.caffeine.includes('decaf'));
-      return `Momentálne odpovedám v lokálnom režime. Z overenej ponuky je bez kofeínu <b>${escapeHTML(product.name)}</b>: ${escapeHTML(product.plainTaste)} <a href="${escapeHTML(product.url)}" target="_blank" rel="noreferrer">Pozrieť produkt</a>.`;
+      return `Momentálne odpovedám v lokálnom režime. Z ukážkovej ponuky je bez kofeínu <b>${escapeHTML(product.name)}</b>: ${escapeHTML(product.plainTaste)} <a href="${escapeHTML(product.url)}" target="_blank" rel="noreferrer">Pozrieť produkt</a>.`;
     }
     if (query.includes('mlie') || query.includes('capp') || query.includes('latte')) {
       const product = products.find((item) => item.id === 'holyshot');
@@ -74,10 +75,7 @@
       const product = products.find((item) => item.id === 'weithaga');
       return `Momentálne odpovedám v lokálnom režime. Prístupná ovocná voľba je <b>${escapeHTML(product.name)}</b>. ${escapeHTML(product.plainTaste)}`;
     }
-    if (query.includes('kysl') || query.includes('acid')) {
-      return 'Momentálne odpovedám v lokálnom režime. „Ovocná“ nemusí znamenať nepríjemne kyslá. Pri Weithage cítiš ríbezle a granátové jablko, ale kakaový záver profil vyvažuje.';
-    }
-    return 'Momentálne odpovedám v lokálnom režime. Najpresnejší výsledok dá postupný Výber: zohľadní prípravu, chuť, mlieko aj kofeín a odkáže priamo na aktuálny produkt.';
+    return 'Momentálne odpovedám v lokálnom režime. Najpresnejší výsledok dá Výber kávy: zohľadní prípravu, chuť, mlieko aj kofeín a odkáže priamo na konkrétny produkt.';
   }
 
   async function requestAI(text) {
@@ -106,7 +104,7 @@
       $('#typingRow')?.remove();
       addMessage(reply);
     } catch (error) {
-      await new Promise((resolve) => setTimeout(resolve, 380));
+      await new Promise((resolve) => setTimeout(resolve, 320));
       $('#typingRow')?.remove();
       addMessage(fallbackAnswer(value), false, { allowHTML: true });
       emit('chat_fallback', { reason: error.message });
@@ -126,18 +124,9 @@
       button.addEventListener('click', () => {
         if (button.classList.contains('is-sending')) return;
         button.classList.add('is-sending');
-        setTimeout(() => sendChat(button.textContent.trim(), button), 460);
+        setTimeout(() => sendChat(button.textContent.trim(), button), 360);
       });
     });
-  }
-
-  function renderSupport() {
-    const items = [
-      { label: 'E-shop', href: config.shopUrl, icon: icons.shop },
-      { label: 'E-mail', href: `mailto:${config.email}`, icon: icons.mail },
-      { label: 'Zavolať', href: `tel:${config.phone}`, icon: icons.phone }
-    ];
-    $('#supportRow').innerHTML = items.map((item) => `<a href="${escapeHTML(item.href)}" ${item.href.startsWith('http') ? 'target="_blank" rel="noreferrer"' : ''}>${item.icon}${escapeHTML(item.label)}</a>`).join('');
   }
 
   function seedChat() {
@@ -145,5 +134,6 @@
     app.state.chatHistory = [];
     addMessage(config.welcome);
   }
-  Object.assign(app, { openWidget, closeWidget, setMode, addMessage, showTyping, fallbackAnswer, requestAI, sendChat, renderChips, renderSupport, seedChat });
+
+  Object.assign(app, { openWidget, closeWidget, setMode, addMessage, showTyping, fallbackAnswer, requestAI, sendChat, renderChips, seedChat });
 })();

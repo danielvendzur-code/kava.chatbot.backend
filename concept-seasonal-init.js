@@ -1,8 +1,9 @@
 (() => {
   'use strict';
   const app = window.ConceptSeasonalApp;
-  const { $, $$, defaultState, stateKey, questions, persist, emit, renderSupport, renderChips, seedChat, setMode, renderAdvisor, openWidget, closeWidget, sendChat } = app;
+  const { $, $$, defaultState, stateKey, questions, persist, emit, renderChips, seedChat, setMode, renderAdvisor, openWidget, closeWidget, sendChat } = app;
   const { widget, teaser } = app.refs;
+
   function resetAll() {
     app.state = defaultState();
     try { sessionStorage.removeItem(stateKey); } catch (_) {}
@@ -63,7 +64,6 @@
     if (event.key === 'Escape' && widget.classList.contains('is-open')) closeWidget();
   });
 
-  renderSupport();
   renderChips();
   seedChat();
   renderAdvisor();
