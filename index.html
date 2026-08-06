@@ -9,18 +9,24 @@
   <meta name="description" content="Neoficiálna interaktívna ukážka moderného kávového poradcu.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/coffee-v8.css">
-  <link rel="stylesheet" href="/coffee-v8-refine.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (()=>{const q=new URLSearchParams(location.search).get('demo')||location.hash.slice(1)||location.pathname.split('/').filter(Boolean).at(-1);const k=q==='kaffa';if(k){document.title='Kaffa Roastery – chuťový poradca';document.querySelector('[name="theme-color"]').content='#171a17';document.querySelector('[name="description"]').content='Neoficiálna personalizovaná ukážka chuťového poradcu pre Kaffa Roastery.';document.write('<link rel="stylesheet" href="/kaffa-editorial.css">')}else document.write('<link rel="stylesheet" href="/coffee-v8.css"><link rel="stylesheet" href="/coffee-v8-refine.css">');window.__KAFFA_EDITORIAL__=k})();
+  </script>
 </head>
 <body>
   <div id="coffee-demo-root"></div>
-  <script src="/coffee-bootstrap.js"></script>
-  <script src="/coffee-api-route.js"></script>
-  <script src="/coffee-local-api.js"></script>
-  <script src="/coffee-configs.js"></script>
-  <script src="/coffee-brand-overrides.js"></script>
-  <script src="/coffee-v8.js"></script>
-  <script src="/coffee-v8-patch.js"></script>
+  <script>
+    if(window.__KAFFA_EDITORIAL__){
+      window.KAFFA_PRODUCTS=[
+        {id:'mokka',name:'Mokka Espresso Blend',price:'11,90 € – 32,13 €',url:'https://kaffaroastery.sk/produkt/mokka-espresso-blend/',img:'https://kaffaroastery.sk/wp-content/uploads/2025/11/mokka250g.webp',prep:'Espresso · automat · moka',taste:'kakao, mandle, lieskovce',why:'Krémové čokoládové espresso s jemnou aciditou. V mlieku zostane čitateľné a nepôsobí ostro.',packs:['250 g','1 kg'],grinds:['Zrnková','Espresso','Moka','Automat'],keys:['espresso','milk','classic','chocolate']},
+        {id:'kamundu',name:'Kenya Kamundu Estate AA',price:'13,98 €',url:'https://kaffaroastery.sk/produkt/kenya-kamundu-estate-aa/',img:'https://kaffaroastery.sk/wp-content/uploads/2025/11/kaffa-kamundu.webp',prep:'V60 · Kalita · AeroPress',taste:'ríbezle, malina, slivka, vanilka',why:'Šťavnatá a čistá kenská káva. Ovocnosť pripomína zrelé bobuľové ovocie, nie nepríjemne kyslú kávu.',packs:['250 g'],grinds:['Zrnková','V60 / filter','AeroPress'],keys:['filter','black','classic','fruity']},
+        {id:'decaf',name:'Colombia Finca El Diviso Decaf',price:'16,42 €',url:'https://kaffaroastery.sk/produkt/colombia-finca-el-diviso-decaf/',prep:'Filter · AeroPress',taste:'vanilka, mandarínka, jazmín',why:'Aromatický Sugar Cane Decaf, ktorý nechutí plocho. Zachová sladkosť aj čistotu bez kofeínu.',packs:['200 g'],grinds:['Zrnková','V60 / filter','AeroPress'],keys:['filter','black','decaf','fruity']},
+        {id:'mexico',name:'Mexico Finca La Esperanza',price:'12,79 €',url:'https://kaffaroastery.sk/produkt/mexico-finca-la-esperanza/',prep:'Moderné espresso',taste:'marakuja, mandarínka, čokoláda, toffee',why:'Ovocnú sviežosť spája so sladkou čokoládou a toffee. Moderné espresso bez extrému.',packs:['250 g'],grinds:['Zrnková','Espresso'],keys:['espresso','black','classic','balanced']},
+        {id:'geisha',name:'Geisha Ninety Plus Stellar Origin',price:'21,42 €',url:'https://kaffaroastery.sk/produkt/stellar-origin/',prep:'V60 · Origami · Kalita',taste:'mango, marakuja, med, pomarančový kvet',why:'Výrazná, vrstvená Geisha pre človeka, ktorý chce zážitkový a experimentálny filter.',packs:['150 g'],grinds:['Zrnková','V60 / filter'],keys:['filter','black','classic','wild']}
+      ];
+      document.write('<script src="/coffee-api-route.js"><\/script><script src="/coffee-local-api.js"><\/script><script src="/kaffa-editorial.js"><\/script>')
+    }else document.write('<script src="/coffee-bootstrap.js"><\/script><script src="/coffee-api-route.js"><\/script><script src="/coffee-local-api.js"><\/script><script src="/coffee-configs.js"><\/script><script src="/coffee-brand-overrides.js"><\/script><script src="/coffee-v8.js"><\/script><script src="/coffee-v8-patch.js"><\/script>');
+  </script>
 </body>
 </html>

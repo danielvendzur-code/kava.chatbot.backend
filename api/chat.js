@@ -28,11 +28,11 @@ const DEMOS = {
     brand: 'Kaffa Roastery',
     web: 'https://kaffaroastery.sk/',
     products: [
-      'Mokka Espresso Blend – 80 % arabica a 20 % robusta, espresso a mliečne nápoje',
-      'Colombia Quebraditas Peach – moderný ovocný profil',
-      'Kenya Kabingara Estate – svieža káva na filter',
-      'Costa Rica Hacienda Sonora – sladká a vyvážená',
-      'Colombia Finca El Diviso Decaf – výberová bezkofeínová káva'
+      'Mokka Espresso Blend – 11,90 € až 32,13 €, 80 % Arabica / 20 % Robusta, kakao, mandle a lieskovce',
+      'Kenya Kamundu Estate AA – 13,98 €, 250 g, filter, čierne ríbezle, malina, slivka a vanilka',
+      'Colombia Finca El Diviso Decaf – 16,42 €, 200 g, Sugar Cane Decaf, vanilka, mandarínka a jazmín',
+      'Mexico Finca La Esperanza – 12,79 €, 250 g, moderné espresso, marakuja, mandarínka, čokoláda a toffee',
+      'Geisha Ninety Plus Stellar Origin – 21,42 €, 150 g, V60/Origami/Kalita, mango, marakuja, med a pomarančový kvet'
     ]
   },
   vitazov: {
@@ -114,6 +114,7 @@ export default async function handler(req, res) {
       'Vždy vykajte. Nepoužívajte markdownové odrážky ani vymyslené fakty, ceny, kontakty alebo produkty.',
       'Ak otázku nemožno zodpovedať z údajov nižšie, povedzte to a odporučte chuťový kvíz alebo oficiálny e-shop.',
       'Pri odporúčaní stručne vysvetlite dôvod podľa prípravy, acidity, mlieka alebo kofeínu.',
+      'Pri Kaffa vysvetlite, že príjemná ovocnosť je šťavnatá a vyvážená, kým nepríjemná kyslosť je ostrá a rušivá.',
       `Oficiálny e-shop: ${demo.web}`,
       `Overené produkty:\n- ${demo.products.join('\n- ')}`
     ].join('\n\n');
