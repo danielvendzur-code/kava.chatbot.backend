@@ -1,9 +1,10 @@
 {
   "name": "praziarnicka-custom-advisor-demo",
   "private": true,
-  "version": "7.0.0",
+  "version": "8.0.0",
   "scripts": {
-    "test:browser": "playwright test tests/widget-smoke.spec.mjs --reporter=line --workers=1"
+    "test:browser": "playwright test tests/widget-smoke.spec.mjs --reporter=line --workers=1",
+    "test:vitazov": "playwright test tests/vitazov-conversion.spec.mjs --reporter=line --workers=1"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0"
