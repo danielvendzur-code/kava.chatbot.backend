@@ -3,15 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <meta name="theme-color" content="#123f35">
+  <meta id="themeColor" name="theme-color" content="#123f35">
   <meta name="robots" content="noindex,nofollow">
   <title>Kávový poradca – personalizovaná ukážka</title>
   <meta name="description" content="Neoficiálna interaktívna ukážka moderného kávového poradcu.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/coffee-v8.css">
-  <link rel="stylesheet" href="/coffee-v8-refine.css">
+  <script>
+    (() => {
+      const params = new URLSearchParams(location.search);
+      const fromQuery = params.get('demo') || location.hash.replace(/^#/, '');
+      const parts = location.pathname.split('/').filter(Boolean);
+      const fromPath = parts.at(-1);
+      const slug = /^[a-z0-9-]+$/i.test(fromQuery || '')
+        ? fromQuery
+        : ((fromPath && !['index.html', 'ukazka'].includes(fromPath)) ? fromPath : 'praziarnicka');
+      window.__COFFEE_DEMO_SLUG__ = slug;
+      document.querySelector('#themeColor').content = slug === 'diamonds' ? '#171c20' : '#123f35';
+      document.write(slug === 'diamonds'
+        ? '<link rel="stylesheet" href="/coffee-v8-diamonds-landing.css"><link rel="stylesheet" href="/coffee-v8-diamonds-widget.css">'
+        : '<link rel="stylesheet" href="/coffee-v8.css"><link rel="stylesheet" href="/coffee-v8-refine.css">');
+    })();
+  </script>
 </head>
 <body>
   <div id="coffee-demo-root"></div>
@@ -20,7 +34,20 @@
   <script src="/coffee-local-api.js"></script>
   <script src="/coffee-configs.js"></script>
   <script src="/coffee-brand-overrides.js"></script>
-  <script src="/coffee-v8.js"></script>
-  <script src="/coffee-v8-patch.js"></script>
+  <script>
+    (() => {
+      const diamonds = window.__COFFEE_DEMO_SLUG__ === 'diamonds';
+      const entry = document.createElement('script');
+      entry.src = diamonds ? '/coffee-v8-diamonds-foundation.js' : '/coffee-v8.js';
+      entry.async = false;
+      entry.addEventListener('load', () => {
+        const followUp = document.createElement('script');
+        followUp.src = diamonds ? '/coffee-v8-diamonds-controller.js' : '/coffee-v8-patch.js';
+        followUp.async = false;
+        document.body.append(followUp);
+      }, { once: true });
+      document.body.append(entry);
+    })();
+  </script>
 </body>
 </html>

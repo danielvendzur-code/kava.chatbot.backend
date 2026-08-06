@@ -17,11 +17,11 @@ const DEMOS = {
     brand: 'Diamonds Roastery',
     web: 'https://diroastery.sk/kategoria-produktu/kava/',
     products: [
-      'Brazília Fazenda Pereira – sladký čokoládový profil',
-      'Kongo Kisunga – ovocnejšia výberová káva na filter',
-      'Keňa Mugaya AB – svieža a výrazná filtrovaná káva',
-      'Kolumbia Kumanday Reserve – jemná sladká káva s citrusovou dochuťou',
-      'Kolumbia El Buho Decaf – plná bezkofeínová káva'
+      'Brazília Fazenda Pereira – sladká káva s čokoládovým a orieškovým smerom, vhodná na espresso a automat',
+      'Etiópia Yabitu Tume – čistá a čajová káva s citrusmi, kôstkovým ovocím a medom, vhodná na filter aj espresso',
+      'Keňa Mugaya AB – šťavnatá filtrovaná káva s egrešmi, černicami a jablkom',
+      'Kolumbia Kumanday Reserve – menej ovocná káva s karamelom, kakaom a sladkým citrusom, vhodná na espresso a automat',
+      'Kolumbia El Buho Decaf – bezkofeínová omni káva s javorovým sirupom, karamelom, piškótami a orieškami'
     ]
   },
   kaffa: {
