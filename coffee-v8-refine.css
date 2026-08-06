@@ -1,0 +1,44 @@
+/* Browser-reviewed refinements: preserve text contrast during every transition. */
+.chip {
+  color: var(--brand);
+  background-image: radial-gradient(
+    circle at var(--fill-x, 50%) var(--fill-y, 50%),
+    var(--accent) 0 64%,
+    var(--accent) 78%
+  );
+}
+
+.chip:hover,
+.chip.is-sending {
+  color: var(--brand);
+  border-color: var(--brand);
+}
+
+.option.is-selected,
+.option.is-muted {
+  animation: none;
+  transform: none;
+}
+
+.option.is-selected {
+  opacity: 1;
+}
+
+.option.is-muted {
+  opacity: .42;
+  transform: scale(.985);
+}
+
+.option.is-selected .option__copy b,
+.option.is-selected .option__copy small,
+.option.is-selected .option__state {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 640px) {
+  .option.is-selected {
+    opacity: 1;
+    transform: none;
+  }
+}
