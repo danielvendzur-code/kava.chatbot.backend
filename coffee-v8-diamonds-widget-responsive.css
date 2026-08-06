@@ -1,0 +1,53 @@
+@media (max-width: 700px) {
+  .diamond-launcher { right: 14px; bottom: calc(14px + env(safe-area-inset-bottom)); }
+  .diamond-launcher__button { width: 60px; height: 60px; border-radius: 20px; }
+  .diamond-teaser { display: none; }
+  .diamond-widget {
+    inset: 0;
+    width: 100%;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    border: 0;
+    border-radius: 0;
+    transform: translateY(100%);
+    transform-origin: center bottom;
+  }
+  .diamond-widget.is-open { transform: translateY(0); }
+  .diamond-widget__header { min-height: calc(72px + env(safe-area-inset-top)); padding-top: calc(10px + env(safe-area-inset-top)); }
+  .diamond-mode { margin: 9px 10px 0; min-height: 68px; border-radius: 22px; }
+  .diamond-mode__indicator { border-radius: 18px; }
+  .diamond-mode__button { min-height: 60px; border-radius: 18px; }
+  #chatScreen { padding: 10px 10px calc(10px + env(safe-area-inset-bottom)); }
+  #advisorScreen { padding: 0 10px calc(10px + env(safe-area-inset-bottom)); }
+  .chat-context { min-height: 66px; }
+  .chat-bubble { max-width: 88%; font-size: 12px; }
+  .quick-chips { padding-bottom: 8px; }
+  .chat-composer { min-height: 54px; }
+  .widget-credit { min-height: 34px; }
+  .advisor-topbar { min-height: 52px; }
+  .question-view h2, .result-view h2 { font-size: 24px; }
+  .answer-card { min-height: 70px; }
+  .answer-card--visual { min-height: 84px; }
+  .result-card__visual { height: min(240px, 31dvh); }
+}
+
+@media (max-width: 380px) {
+  .diamond-widget__header { padding-left: 12px; padding-right: 9px; }
+  .widget-brand { gap: 8px; }
+  .widget-brand .official-logo { width: 40px; height: 40px; }
+  .widget-brand strong { font-size: 14px; }
+  .diamond-mode__button { gap: 7px; padding-inline: 7px; }
+  .diamond-mode__button small { font-size: 11px; }
+  .chat-context { padding-inline: 11px; }
+  .chat-context small { font-size: 11px; }
+  .answer-card { padding-right: 42px; grid-template-columns: 42px minmax(0,1fr); gap: 9px; }
+  .answer-card--visual { grid-template-columns: 62px minmax(0,1fr); }
+  .answer-card__image { width: 62px; height: 66px; }
+  .result-card__copy { padding: 15px; }
+  .result-details { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .diamond-widget, .diamond-mode__indicator, .advisor-meter span, .question-view, .result-view { transition: none !important; animation: none !important; }
+}
