@@ -3,24 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <meta name="theme-color" content="#123f35">
+  <meta name="theme-color" content="#143d33">
   <meta name="robots" content="noindex,nofollow">
   <title>Kávový poradca – personalizovaná ukážka</title>
   <meta name="description" content="Neoficiálna interaktívna ukážka moderného kávového poradcu.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/coffee-v8.css">
-  <link rel="stylesheet" href="/coffee-v8-refine.css">
+  <script src="/coffee-bootstrap.js"></script>
+  <script>
+    (() => {
+      const parts = location.pathname.split('/').filter(Boolean);
+      const last = parts.at(-1) || 'praziarnicka';
+      const slug = last === 'index.html' || last === 'ukazka' ? 'praziarnicka' : last;
+      window.COFFEE_DEMO_SLUG = slug;
+
+      const styles = slug === 'praziarnicka'
+        ? ['/praziarnicka-v9.css']
+        : ['/coffee-v8.css', '/coffee-v8-refine.css'];
+
+      styles.forEach((href) => {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = href;
+        document.head.appendChild(link);
+      });
+    })();
+  </script>
 </head>
 <body>
+  <div id="praziarnicka-root"></div>
   <div id="coffee-demo-root"></div>
-  <script src="/coffee-bootstrap.js"></script>
   <script src="/coffee-api-route.js"></script>
   <script src="/coffee-local-api.js"></script>
-  <script src="/coffee-configs.js"></script>
-  <script src="/coffee-brand-overrides.js"></script>
-  <script src="/coffee-v8.js"></script>
-  <script src="/coffee-v8-patch.js"></script>
+  <script>
+    (() => {
+      const slug = window.COFFEE_DEMO_SLUG || 'praziarnicka';
+      const scripts = slug === 'praziarnicka'
+        ? ['/praziarnicka-v9.js']
+        : ['/coffee-configs.js', '/coffee-brand-overrides.js', '/coffee-v8.js', '/coffee-v8-patch.js'];
+
+      const load = (src) => new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.onload = resolve;
+        script.onerror = reject;
+        document.body.appendChild(script);
+      });
+
+      scripts.reduce((chain, src) => chain.then(() => load(src)), Promise.resolve())
+        .catch((error) => {
+          console.error('Coffee demo failed to load', error);
+          document.body.innerHTML = '<p style="padding:24px;font-family:system-ui">Ukážku sa nepodarilo načítať.</p>';
+        });
+    })();
+  </script>
 </body>
 </html>
