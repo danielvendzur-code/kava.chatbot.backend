@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <meta name="theme-color" content="#123f35">
+  <meta name="theme-color" content="#f6f3ec">
   <meta name="robots" content="noindex,nofollow">
   <title>Kávový poradca – personalizovaná ukážka</title>
   <meta name="description" content="Neoficiálna interaktívna ukážka moderného kávového poradcu.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
   <script>
     (() => {
       const requested = new URLSearchParams(location.search).get('demo')
@@ -18,10 +18,10 @@
       const isKaffa = requested === 'kaffa';
 
       if (isKaffa) {
-        document.title = 'Kaffa Roastery – personalizovaný návrh poradcu';
-        document.querySelector('[name="theme-color"]').content = '#111111';
-        document.querySelector('[name="description"]').content = 'Personalizovaná ukážka AI poradcu a výberu kávy pre Kaffa Roastery.';
-        document.write('<link rel="stylesheet" href="/kaffa-editorial.css"><link rel="stylesheet" href="/kaffa-widget.css"><link rel="stylesheet" href="/kaffa-result.css">');
+        document.title = 'Kaffa Roastery – návrh AI poradcu';
+        document.querySelector('[name="theme-color"]').content = '#f6f3ec';
+        document.querySelector('[name="description"]').content = 'Personalizovaná ukážka AI poradcu pre Kaffa Roastery.';
+        document.write('<link rel="stylesheet" href="/kaffa-editorial.css"><link rel="stylesheet" href="/kaffa-widget.css">');
       } else {
         document.write('<link rel="stylesheet" href="/coffee-v8.css"><link rel="stylesheet" href="/coffee-v8-refine.css">');
       }

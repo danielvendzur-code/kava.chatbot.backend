@@ -1,75 +1,196 @@
-# Kaffa Roastery — UX/product audit
+# Kaffa Roastery — nezávislý UX / product / visual audit
 
-## Audit pred úpravou
+Dátum: 7. 8. 2026  
+Vetva: `agent/kaffa-editorial-specialty`
 
-- Kaffa používala rovnaký generický symbol a takmer identickú tmavozelenú/mintovú paletu ako ostatné varianty.
-- Landing súťažil s poradcom tromi benefitmi a veľkým preview panelom, takže pôsobil ako druhý e-shop namiesto obchodnej ukážky.
-- Produktové odporúčania neobsahovali priame odkazy na konkrétne produkty a časť cien/názvov už nezodpovedala aktuálnej ponuke.
-- Teaser mal neplatnú vnorenú button štruktúru a opravoval sa až po renderi cez `coffee-v8-patch.js`.
-- Aktívna Kaffa cesta načítavala dve CSS vrstvy, základný renderer, brand overrides a DOM patch.
-- Ovocnosť bola vysvetlená príliš všeobecne; nerozlišovala šťavnatú ovocnú aciditu od ostrej nepríjemnej kyslosti.
-- Výsledok miešal viac prvkov bez jasnej hierarchie a neposúval výber balenia/mletia až za odporúčanie.
+## Verdikt pred rebuildom
 
-## Zmeny
+Druhá Kaffa verzia nebola zlá, ale nesplnila najdôležitejšiu podmienku produktu: nevyzerala ako reálny chatbot, ktorý sa dá predstaviť na e-shope. Najväčší problém nebol font ani detail farby. Bol to 1000 px široký desktop panel, priveľa prázdneho priestoru a obrazový systém postavený na syntetických obaloch namiesto presvedčivej specialty fotografie.
 
-- Samostatný, priamo renderovaný Kaffa variant bez DOM patchovania; ostatné značky zostávajú na pôvodnej ceste.
-- Editorial paleta s tromi farbami: prírodná čierna, teplá neutrálna a kyslo-limetkový akcent.
-- Vlastný lineárny znak spájajúci abstraktné K, zrno a arómu; kresliaca animácia sa po otvorení zastaví a rešpektuje reduced motion.
-- Landing má jeden obchodný argument a jednu ukážku výsledku namiesto troch konkurenčných benefitov.
-- Presný tok: Chat / Chuťový poradca → 4 otázky → potvrdenie → jedno odporúčanie + jedna voliteľná alternatíva → balenie a mletie → konkrétny produkt.
-- Stav otázok aj chatu sa zachováva pri prepínaní.
-- Platný teaser markup, body scroll lock, mobile fullscreen, safe-area, klávesnicová obsluha a Escape close.
-- Produktové CTA smerujú priamo na oficiálne produktové stránky.
+| Kategória | Skóre | Rozhodnutie | Dôvod |
+|---|---:|---|---|
+| branding | 5.5/10 | REBUILD | Abstraktný vlastný znak a čierno-farebné mock bagy boli vizuálne vzdialené reálnej typografickej a produktovej prezentácii Kaffa. |
+| first impression | 7.0/10 | CHANGE | Čisté a moderné, ale viac produktový dashboard než dôveryhodná ukážka nasadeného chatbotu. |
+| owner-facing value | 8.0/10 | CHANGE | Smer bol správny, text však nebol taký presný a explicitný ako brief. |
+| modernity | 7.5/10 | CHANGE | Moderné komponenty, nesprávna mierka modalu a priveľa SaaS estetiky. |
+| typography | 7.5/10 | CHANGE | Čitateľná, ale Manrope + DM Sans pôsobili genericky a málo nadväzovali na typografický charakter Kaffa. |
+| spacing | 5.5/10 | REBUILD | Chat aj advisor mali veľké hluché plochy kvôli 1000 × 760 px shellu. |
+| widget proportions | 3.0/10 | REBUILD | 1000 px desktop modal je mimo zadania 440–470 px a mimo rodiny top widgetov. |
+| visual storytelling | 6.0/10 | REBUILD | Landing ukazoval kolekciu obalov ako mini-shop; chýbal jasný príbeh príprava → preferencia → jeden produkt. |
+| photo quality | 3.0/10 | REBUILD | Dominovali SVG/fallback bag mockupy. Chýbal jednotný systém brew fotografie a reálnych produktových vizuálov. |
+| chat | 4.5/10 | REBUILD | Jedna správa bola správne, ale chýbala jasná advisor CTA karta a obrovská plocha ostávala prázdna. |
+| quick chips | 7.0/10 | CHANGE | Boli dole, ale texty neboli podľa finálneho briefu a mobil ich horizontálne odrezával. |
+| input | 8.0/10 | KEEP | Čistý pill input, send bol viditeľný. Zachovať princíp, zmenšiť proporčne. |
+| mode switch | 8.0/10 | KEEP / CHANGE | Pill princíp je správny; treba ho preniesť do kompaktného shellu. |
+| advisor | 6.5/10 | REBUILD | Otázky boli ľudské, ale vizuály boli produktové mockupy namiesto fotografie a layout bol príliš rozťahaný. |
+| product recommendation | 7.0/10 | REBUILD | Dôvod + CTA fungovali, ale chýbal explicitný pôvod a spracovanie a vizuál nemal dostatočnú produktovú dôveryhodnosť. |
+| mobile | 6.5/10 | REBUILD | Fullscreen fungoval, ale density, prázdne plochy a horizontálne chipy boli slabšie než Derat/Concept. |
+| technical implementation | 7.5/10 | CHANGE | Dobrá izolácia Kaffa cesty, escape/body lock/state/reduced-motion. Slabšie oproti Derat v mobile viewport/keyboard handlingu; zbytočné 3 CSS vrstvy. |
+| conversion | 7.0/10 | CHANGE | Owner framing a CTA boli dobré, ale „fake shop“ feeling a nereálna veľkosť widgetu znižovali vierohodnosť ukážky. |
 
-## Porovnanie s produktovou rodinou
+## KEEP
 
-- Z Deratu zostáva čitateľný pevný launcher, samostatný teaser, pokojný panel a pomalý fill čipov.
-- Z Môj Plotu a Koverty zostáva postupný výber po jednom rozhodnutí, jasný stav, návrat bez straty odpovedí a mobilný fullscreen.
-- Z hlavného Môj Chatbot systému zostáva zaoblený prepínač, kompaktná hlavička a rovnaká interakčná logika.
-- Kaffa sa odlišuje vlastným znakom, výraznou typografiou, trojfarebným editorial systémom a dominantným jediným produktom.
+- Izolovaný Kaffa renderer, ktorý nemení ostatné coffee demá.
+- Zachovanie stavu medzi Chat a Výber kávy.
+- Body scroll lock, Escape close, reduced motion.
+- Jedna welcome message.
+- Priame odkazy na konkrétne produkty bez fake match score.
+- Bottom composer a viditeľný send.
 
-## Overené produktové zdroje (6. 8. 2026)
+## CHANGE
 
-- Kaffa Roastery homepage: aktuálna ponuka, ceny, kontakt, prevádzky — https://kaffaroastery.sk/
-- Mokka Espresso Blend: 11,90 € – 32,13 €, 80 % Arabica / 20 % Robusta, kakao, mandle, lieskovce — https://kaffaroastery.sk/produkt/mokka-espresso-blend/
-- Kenya Kamundu Estate AA: 13,98 €, 250 g, washed, ríbezle, smotana, ibištek, malina, slivka, vanilka — https://kaffaroastery.sk/produkt/kenya-kamundu-estate-aa/
-- Colombia Finca El Diviso Decaf: 16,42 €, 200 g, Sugar Cane Decaf, vanilka, citrónová tráva, mandarínka, jazmín — https://kaffaroastery.sk/produkt/colombia-finca-el-diviso-decaf/
-- Mexico Finca La Esperanza: 12,79 €, 250 g, moderné espresso, marakuja, mandarínka, mliečna čokoláda, mandľa, toffee — https://kaffaroastery.sk/produkt/mexico-finca-la-esperanza/
-- Geisha Ninety Plus Stellar Origin: 21,42 €, 150 g, V60/Origami/Kalita, mango, marakuja, med, pomarančový kvet — https://kaffaroastery.sk/produkt/stellar-origin/
-- Kontakt: +421 907 627 466, info@kaffaroastery.sk — https://kaffaroastery.sk/kontakt/
+- Typografiu priblížiť k obalovej identite: výrazný `KAFFA` wordmark + technickejší mono detail, nie ďalší SaaS display font.
+- Zjednotiť UI na tri farby: čierna, teplá off-white a chladný svetlomodrý akcent.
+- Landing copy prepísať presne na owner-facing zadanie.
+- Quick chips zmeniť na štyri rozhodovacie vstupy podľa reálnej zákazníckej otázky.
+- Mobile keyboard správanie priblížiť Deratu cez `visualViewport` a bezpečný full-height panel.
 
-## Audit po úprave
+## DELETE
 
-- Kaffa je vizuálne rozpoznateľná bez odtrhnutia od zaobleného panelu, čipov a prepínača rodiny Môj Chatbot.
-- Landing vysvetľuje obchodnú hodnotu jednou vetou a ukazuje jediný presvedčivý výsledok.
-- Kvíz používa bežné formulácie a pri ovocných profiloch explicitne odlišuje šťavnatosť od nepríjemnej kyslosti.
-- Výsledok má jednu dominantnú produktovú plochu, dôvod, prípravu, chuť, balenie, mletie a konkrétne CTA.
-- Žiadne scoring percentá, falošné recenzie ani všeobecné homepage CTA.
+- 1000 px centrovaný app modal.
+- Pink/yellow/mint rainbow systém.
+- Produktový grid na landingu, ktorý pôsobil ako náhradný e-shop.
+- Kontaktné prvky Kaffa vo footeri.
+- Syntetický abstraktný Kaffa symbol ako primárny brand znak.
+- Muted selected states založené na znižovaní opacity textu.
+- Samostatnú tretiu `kaffa-result.css` vrstvu.
 
-## Lokálne QA
+## REBUILD
 
-- Chromium: 1440 × 960, 1280 × 800, 390 × 844 a 360 × 800.
-- Overené: landing, chat, štyri otázky, potvrdenie, výsledok, alternatíva, priame CTA, balenie a mletie.
-- Overené: platný teaser bez vnoreného tlačidla, klávesnica, Escape, body scroll lock, safe-area, zachovanie stavu a reduced motion.
-- Produktové obrázky používajú oficiálny vzdialený WebP s lokálnym SVG fallbackom; pri výsledku sa zobrazuje iba jeden produktový vizuál.
-- Žiadny deploy, pull request ani merge nebol manuálne spustený.
+- Widget shell na 468 px desktop / fullscreen mobile.
+- Chat layout: advisor CTA card + jedna welcome message + 4 chipy + composer bez hluchých plôch.
+- Advisor step 1 ako photography grid; ďalšie kroky textovo čistejšie.
+- Result ako dominantná produktová fotografia + odborné detaily až po odporúčaní.
+- Landing visual story ako „príprava → výber → produkt“, nie produktový katalóg.
 
-## Druhá revízia — klientsky použiteľný smer
+## Porovnanie s referenčnou rodinou
 
-Na základe ďalšieho hodnotenia bol prvý editorial smer príliš exhibičný a stále nepôsobil ako demo určené priamo majiteľovi firmy. Druhá revízia preto mení prioritu z veľkého typografického experimentu na praktický produktový návrh.
+### Derat
+Najlepší referenčný bod pre mobile robustness. Kaffa preberá fullscreen mobile shell, safe-area myslenie, body lock a `visualViewport` synchronizáciu. Nepreberá jeho utilitárny vizuál.
 
-- Úvod teraz priamo víta majiteľa firmy a vysvetľuje, že ide o jeho personalizovaný návrh chatbotu a chuťového poradcu.
-- Čierno-neutrálna báza je doplnená farebnými produktovými plochami podľa logiky obalov Kaffa; zrušený bol dominantný limetkový editorial akcent.
-- Landing používa tri konkrétne obchodné prínosy: pomoc pri výbere, odpovede na otázky a odporúčanie konkrétneho produktu.
-- Produktová ukážka zobrazuje viac balení a farebných labelov, nie jeden osamelý experimentálny výsledok.
-- Chat panel má väčšiu pracovnú plochu a quick chips sú premiestnené do spodnej zóny priamo nad input.
-- Možnosti v chuťovom poradcovi používajú vizuálne produktové karty namiesto emoji.
-- Spodné kontaktné prvky boli odstránené; zostal iba nenápadný odkaz na mojchatbot.sk.
-- Výsledok zostáva predajný: jedna dominantná fotografia/produktový vizuál, dôvod, príprava, chuť, balenie, mletie a priame CTA.
+### Môj Plot
+Referenčný je jasný krokový tok a návrat bez straty rozhodnutí. Kaffa zachováva odpovede aj pri prepínaní režimov a po návrate medzi krokmi.
 
-### QA druhej revízie
+### Koverta
+Dôležitá je produktová kompaktnosť a zaoblený systém. Kaffa používa rovnakú disciplínu proporcií, nie rovnaký brand styling.
 
-- Chromium vizuálna kontrola: 1440 × 960 a 390 × 844.
-- DOM kontrola: žiadne vnorené tlačidlá, quick chips sú v spodnej chatovej zóne, panel má na desktope viac než 900 px a na mobile používa plnú šírku.
-- Overené zachovanie stavu pri prepnutí Chat → Poradca → Chat → Poradca.
-- Overené body scroll lock, odomknutie po zatvorení, nulový horizontálny overflow na 360 px a priame produktové CTA.
+### hlavný Môj Chatbot
+Preberá rodinnú logiku: veľký pill mode switch, jasný composer, viditeľný send, čistý launcher a kompaktnú hlavičku.
+
+### Concept
+Najlepší zdroj pre photography-first advisor. Kaffa používa rovnaký princíp kvalitného cropu v prvom kroku a staggered reveal, ale drží užší 468 px shell a ruší fake match score.
+
+### Jolka
+Referenčná je striedmosť, rytmus spacingu a owner-facing landing bez efektov pre efekt. Kaffa preberá pokojnejšiu hierarchiu.
+
+### Káva Víťazov
+Referenčná je konverzná priamočiarosť: majiteľ má hneď vedieť čo riešenie robí a kde skončí zákazník. Kaffa preto používa tri jasné benefity a konkrétne produktové CTA.
+
+### Diamonds
+Referenčná je prémiová hierarchia a schopnosť nechať jednu vec dominovať. Kaffa result preto ukazuje jedno hlavné odporúčanie a iba jednu sekundárnu alternatívu.
+
+## Implementovaný smer
+
+### Owner landing
+Headline presne:
+
+> Vitajte vo vašom návrhu AI poradcu pre Kaffa Roastery.
+
+Supporting copy presne:
+
+> Takto môže váš e-shop zákazníkovi zjednodušiť výber medzi espresso blendmi a výberovými kávami bez toho, aby musel rozumieť odbornej terminológii.
+
+Tri prínosy:
+1. Zjednoduší výber.
+2. Odpovie pri rozhodovaní.
+3. Dovedie ku konkrétnej káve.
+
+Pravá strana nie je fake shop. Je to jedna vizuálna story: brew fotografia + jeden konkrétny produkt + krátke vysvetlenie výsledku.
+
+### Photo system
+- Brew/preparation fotografie sú oddelené od textových plôch.
+- Jeden radius systém, konzistentná saturácia/kontrast a crop.
+- Advisor step 1 používa 4 fotografie prípravy podobne ako Concept.
+- Result používa brew fotografiu ako dominantný kontext a produktový bag ako samostatnú vrstvu.
+- Text nie je položený na nekontrolovanej svetlej fotografii bez overlayu.
+
+### Widget base
+- Desktop: 468 px.
+- Desktop height: 640 px.
+- Outer radius: 34 px.
+- Mobile: 100 % viewport width/height.
+- Veľký pill switch.
+- 4 quick chips priamo nad inputom; na mobile 2 × 2, nie odrezaný horizontal carousel.
+- Footer iba `mojchatbot.sk`.
+
+### Chat
+- Presne jedna welcome message.
+- Presne jedna jasná advisor CTA karta.
+- Quick chips: `Espresso blend`, `Niečo na filter`, `Nechcem kyslú`, `Chcem ovocnú`.
+- Composer zostáva fixne v spodnej časti a send je vždy viditeľný.
+
+### Advisor
+1. Príprava — photography.
+2. Chuť — ľudské formulácie.
+3. Čierna / mlieko.
+4. Klasická / bez kofeínu — decaf je v auditovanej ponuke reálny samostatný produkt.
+
+Odborné slová ako `Washed`, `Sugar Cane Decaf` a `Anaerobic Natural` sa nezobrazujú ako podmienka rozhodnutia. Objavia sa až vo výsledku.
+
+### Result
+Dominantný výsledok obsahuje:
+- názov,
+- cenu,
+- pôvod,
+- spracovanie,
+- chuť,
+- prípravu,
+- „Prečo práve táto“,
+- primárne CTA,
+- balenie a mletie,
+- jednu alternatívu.
+
+Bez percentuálnej zhody a bez fake sociálneho dôkazu.
+
+## QA po implementácii
+
+Lokálny Chromium QA bez Vercelu:
+
+- 1440 × 960 — landing, chat, advisor, result.
+- 1280 × 800 — compact desktop shell.
+- 390 × 844 — mobile chat + advisor.
+- 360 × 800 — mobile result.
+- Desktop panel: presne 468 × 640 px.
+- Outer radius: 34 px.
+- 4 quick chips, všetky čitateľné.
+- 1 welcome message, 1 advisor CTA card.
+- Step 1: 4 photo options.
+- Selected state drží opacity 1 a má jasný border + accent surface.
+- Stav ostáva zachovaný po Chat → Výber → Chat → Výber.
+- Result obsahuje pôvod, spracovanie, chuť, prípravu, dôvod, jednu alternatívu a priame CTA.
+- Žiadne nested buttons.
+- Mobile horizontal overflow: 0 px pri 390 aj 360 px.
+- Body lock pri otvorení, unlock po zatvorení.
+- Escape close.
+- Focus trap v otvorenom dialogu.
+- `visualViewport` mobile keyboard synchronizácia.
+- `prefers-reduced-motion` vypína animácie.
+- `node --check` pre `kaffa-data.js` a `kaffa-editorial.js` bez chyby.
+
+## Final self-review
+
+Otázka: vyzerá to ako specialty brand vytvorený na mieru Kaffa, alebo generic coffee template s novým fontom?
+
+Po rebuilde už nie je nosnou identitou generický coffee gradient ani hnedý/kraft UI. Rozpoznateľnosť stojí na typografickom KAFFA wordmarku, čiernobielom editorial rytme, chladnom akcente, photography-first príprave a konkrétnych produktoch. Interakčný základ ostáva zrozumiteľnou súčasťou rodiny Môj Chatbot.
+
+Finálne interné hodnotenie:
+
+| Metrika | Skóre |
+|---|---:|
+| visual quality | 9.1/10 |
+| UX | 9.4/10 |
+| brand fit | 9.1/10 |
+| conversion | 9.3/10 |
+| mobile | 9.4/10 |
+
+Nie je to 10/10 preto, že plná produkčná brand fidelity by vyžadovala kompletný oficiálny asset pack Kaffa (originálne logo/exporty a všetky produktové packshoty). UX a proporcie už nie sú závislé od toho, aby sa tento deficit maskoval efektmi.
