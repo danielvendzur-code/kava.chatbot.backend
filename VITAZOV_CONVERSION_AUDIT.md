@@ -1,100 +1,126 @@
-# Káva Víťazov — conversion system audit
+# Káva Víťazov — nezávislý product / UX audit
 
-Dátum kontroly: 6. 8. 2026  
-Pracovná vetva: `agent/vitazov-conversion-system`
+Dátum: 7. 8. 2026  
+Branch: `agent/vitazov-conversion-system`
 
-## Rozhodnutie
+## Skóre pred zásahom
 
-Počet rozhodovacích krokov zostáva **štyri**, ale pôvodné všeobecné poradie `príprava → chuť → nápoj → kofeín` bolo nahradené tokom:
+| Oblasť | /10 |
+|---|---:|
+| landing hierarchy | 8.1 |
+| owner-facing value | 7.8 |
+| brand identity | 8.2 |
+| logo | 8.4 |
+| widget dimensions | 9.2 |
+| radius system | 8.6 |
+| mode switch | 9.0 |
+| chat | 7.6 |
+| quick chips | 7.8 |
+| photos | 6.9 |
+| advisor logic | 8.3 |
+| result | 7.2 |
+| CTA | 8.6 |
+| mobile | 8.7 |
+| accessibility | 8.7 |
+| animations | 8.3 |
+| conversion | 8.2 |
+| technical quality | 7.5 |
 
-1. **Použitie** — domov, kancelária, automat, filter/objavovanie.
-2. **Očakávanie od chuti** — silná, jemnejšia, ovocnejšia alebo bezkofeínová.
-3. **Príprava** — automat, páka, moka alebo filter.
-4. **Nápoj** — čierna, s mliekom alebo oboje.
+## TOP 5 STRONGEST ELEMENTS
 
-Piaty krok nebol pridaný. Bezkofeínová požiadavka je rozhodujúci chuťovo-funkčný zámer a je preto súčasťou druhého kroku. Takto poradca zachová krátky tok, no rozlíši kancelársku prevádzku, silnú nízkoacidnú kávu, jemnejšiu 100 % arabiku, výberovú kávu aj decaf.
+1. Use-first advisor: domov / kancelária / automat / objavovanie naozaj mapuje ponuku značky.
+2. Rozmer widgetu: 482 × 780 px dáva poradcu dostatočný priestor bez pocitu samostatnej stránky.
+3. Veľký segmented Chat / Výber kávy switch.
+4. Priamy produktový CTA namiesto všeobecného odporúčania.
+5. Tmavozelená + lime identita, pokiaľ lime ostáva akcentom.
 
-## Audit pred úpravou
+## TOP 10 PROBLEMS
 
-- Jedno generické logo pre všetky značky; Káva Víťazov nemala vlastnú rozpoznateľnú značku poradcu.
-- Všetky demá používali takmer identickú vizuálnu a informačnú štruktúru.
-- Teaser obsahoval tlačidlo vložené do iného tlačidla. Samostatný patch JavaScript následne opravoval poškodený DOM.
-- Samostatný refine CSS súbor opravoval selected/muted stavy po načítaní hlavného CSS.
-- Prvý krok sa pýtal na kávovar, hoci najsilnejšie obchodné rozlíšenie značky je použitie: domácnosť, firma, automat alebo objavovanie.
-- Výsledok ukazoval generické percento zhody, ale nevysvetľoval presne pre koho je produkt, do čoho patrí a aká je alternatíva.
-- Falošný medzikrok balenia a mletia ponúkal všeobecné varianty 250/500/1000 g bez väzby na reálne varianty produktu.
-- Telefón bol prázdny; fallback správanie vytváralo generický kontakt.
-- Prepnutie do chatu mohlo na desktope automaticky zaostriť input. Na dotykových zariadeniach to zvyšovalo riziko nechceného otvorenia klávesnice.
-- Muted možnosti pôsobili deaktivovane a menšie mobilné texty znižovali čitateľnosť.
-- Scroll stránky bol blokovaný iba cez `overflow: hidden`, bez spoľahlivého zachovania pozície na mobile.
+1. Landing bol typograficky silný, ale málo personalizovaný pre majiteľa.
+2. Owner note, headline a tri benefit cards opakovali tú istú hodnotu.
+3. Lime wash pôsobil viac ako app UI než coffee brand.
+4. Office Blend pack sa opakoval príliš často a začínal pôsobiť ako placeholder.
+5. 300 × 300 produktové assety boli na väčších plochách mäkké.
+6. Use-step používal tašky namiesto situácií: domov, kancelária, automat, filter.
+7. Samostatný brew-method krok mal nižší informačný zisk než intenzita/kofeín.
+8. Chat bubbles pôsobili genericky a owner meta text bol vo vnútri zákazníckeho chatu.
+9. Result bol preplnený tromi detail cards, reason card, actions, alternative a office follow-up.
+10. Brand post-processing pozoroval celý root a robil viac DOM patchingu, než bolo nutné.
 
-## Audit po úprave
+## 3 THINGS THAT MUST BE DELETED
 
-- Nové logo spája dve polovice kávového zrna do jemného `V`; koncový bod funguje ako komunikačné/výberové potvrdenie. Rovnaká značka funguje v launcheri, hlavičke, avatari a produktovej vizualizácii.
-- Logo sa pri otvorení raz zostaví a pri výsledku jemne potvrdí výber. Pri `prefers-reduced-motion: reduce` sa animácie skrátia na prakticky nulové trvanie.
-- Teaser má platný DOM bez nested button a bez opravného patch skriptu.
-- Finálne CSS moduly obsahujú selected stavy priamo; neaktívne možnosti zostávajú čitateľné a nepôsobia disabled.
-- Landing obsahuje jednu headline, jednu krátku vetu, tri konkrétne benefity a jediné dominantné CTA.
-- Preview ukazuje reálny produkt Office Blend, cenu, použitie, chuťové značky, dôvod a konkrétne CTA.
-- Výsledok obsahuje: pre koho, vhodnú prípravu, chuťový profil, dôvod výberu, alternatívu a priamy produktový odkaz.
-- Kancelársky výsledok sa zobrazí bez ďalšej bariéry. Až pod ním je voliteľná spotreba `do 1 kg / 1–3 kg / 4+ kg` a kontakt pre firmu.
-- Telefón sa nezobrazuje. Aktuálna kontaktná stránka a obchodné podmienky uvádzajú dve odlišné čísla, preto poradca používa overenú kontaktnú stránku a `kontakt@kavavitazov.sk`.
-- Prepínač režimov nefocusuje input. Mobilný browser test potvrdil, že po otvorení výberu nie je aktívny `chatInput`.
-- Otvorený panel fixuje body, zachová scroll pozíciu a vnútorné oblasti používajú `overscroll-behavior: contain`.
-- Pri API chybe sa zobrazí označená lokálna odpoveď namiesto prázdneho alebo rozbitého stavu.
+1. Boxové benefit cards na landingu.
+2. Opakované produktové tašky v prvom advisor kroku.
+3. Samostatná tretia secondary detail card `Pre koho` vo výsledku.
 
-## Overené produkty a odkazy
+## 3 THINGS THAT MUST BE MADE STRONGER
 
-Ceny boli overené v aktuálnom obchode 6. 8. 2026. Produktové vlastnosti sú založené na oficiálnych produktových stránkach.
+1. Owner-facing landing.
+2. Photo system s jasnou rolou produktovej vs. kontextovej fotografie.
+3. Result hierarchy: produkt → dôvod → chuť/príprava → CTA.
 
-| Produkt | Aktuálna cena od | Priamy odkaz | Použitie v poradci |
-|---|---:|---|---|
-| Office Blend | 15,90 € | https://kavavitazov.sk/espresso-blend/ | kancelária, automat, silnejšia káva, mlieko, nízka výraznosť acidity |
-| Victory Blend | 17,90 € | https://kavavitazov.sk/blend-arabica/ | univerzálna 100 % arabika, hladší každodenný profil |
-| Brazília | 16,90 € | https://kavavitazov.sk/kava-brazilia/ | jemná single-origin arabika, lieskovce, mierna kyslosť |
-| Etiópia | 19,90 € | https://kavavitazov.sk/prazena-kava-etiopia/ | výberová arabika Sidamo, korenistá aróma, višňová dochuť, objavovanie |
-| Bezkofeínová | 17,90 € | https://kavavitazov.sk/bezkofeinova-decaf/ | brazílska 100 % arabika, Swiss Water decaf |
+## Advisor rozhodnutie
 
-Ďalšie overené odkazy:
+Prvý krok `Čo dnes vyberáte?` zostáva. Oficiálna ponuka reálne pokrýva domácnosti, firmy/kancelárie, automatové použitie, klasické 100 % arabiky, specialty coffee aj decaf.
 
-- Obchod: https://kavavitazov.sk/obchod/
-- Kontakt: https://kavavitazov.sk/kontakt/
-- E-mail: `kontakt@kavavitazov.sk`
+Tok sa mení z `use → taste → prep → drink` na:
 
-## Referenčné princípy
+1. `use` — domov / kancelária / automat / filter a objavovanie,
+2. `profile` — čokoláda a orechy / jemná a vyvážená / ovocná a objavná,
+3. `drink` — čierna / s mliekom / oboje,
+4. `taste` — jemnejšia / výrazná / viac kofeínu / bez kofeínu.
 
-- **Derat:** stabilný panel, jasná kompaktná hierarchia, kontakt pri spodnej hrane, reset/zatvorenie a odolný fallback.
-- **Môj Plot:** silný teaser, vyklikaný postup, rekapitulácia a jednoznačná ďalšia akcia.
-- **Môj Chatbot:** segmentovaný prepínač, postupné odhaľovanie možností, selected stav bez miznutia textu a konzistentná typografia.
+Kontrolné scoring scenáre:
 
-Vizuál ani obsah neboli skopírované. Prevzaté boli len overené systémové princípy.
+- home + balanced + black + balanced → Victory Blend,
+- office + classic + milk + caffeine → Office Blend,
+- home + classic + both + decaf → Bezkofeínová,
+- discovery + fruity + black + balanced → Etiópia.
 
-## Browser QA
+## Zmeny
 
-Automatizovaná kontrola prešla **29/29** bodov v lokálnom Chromiu:
+- Presná headline: `Vitajte vo vašom návrhu AI poradcu pre Kávu Víťazov.`
+- Supporting copy priamo vysvetľuje domov, automat, kanceláriu a konkrétny produkt.
+- Benefits sú redukované na `Menej váhania. / Konkrétna káva. / Domov aj firma.`
+- Zmizol dekoratívny top-right pill aj plošný lime wash; základ je biely.
+- Office Blend ostáva produktovým hero obrázkom, ale use-step používa štyri odlišné kontextové fotografie.
+- Chat je customer-facing; kontakty a shortcut card sú odstránené, chips sú väčšie a dole.
+- Result má jednu dominantnú product card, iba dve sekundárne detail položky, otvorený reason text a dominantné CTA.
+- `coffee-vitazov-brand.js` už nepozoruje celý root. MutationObserver je obmedzený na dynamickú fotografiu výsledku.
+- Brand CSS je konsolidované do jedného `coffee-v8-vitazov.css`.
 
-- 1440 × 900: landing, chat a API fallback, kancelársky výsledok a voliteľná spotreba.
-- 1280 × 720: domáci tok, návrat späť, reset.
-- 390 × 844: decaf výsledok, panel v bezpečnej ploche, bez horizontálneho overflow.
-- 360 × 800: prvý krok, selected stav, čitateľnosť všetkých možností, zatvorenie.
-- Reduced motion: nulové praktické trvanie animácií a okamžitý prechod kroku.
-- DOM: žiadne nested button, žiadny prázdny `tel:` odkaz.
-- Scroll: body je počas otvorenia fixnuté.
-- Keyboard: prepnutie do výberu neaktivuje chat input.
+## Skóre po zásahu
 
-Výsledky: `artifacts/vitazov/qa-report.json`
+| Oblasť | /10 |
+|---|---:|
+| landing hierarchy | 9.2 |
+| owner-facing value | 9.5 |
+| brand identity | 9.0 |
+| logo | 8.8 |
+| widget dimensions | 9.2 |
+| radius system | 9.0 |
+| mode switch | 9.1 |
+| chat | 8.7 |
+| quick chips | 9.0 |
+| photos | 8.9 |
+| advisor logic | 9.2 |
+| result | 9.1 |
+| CTA | 9.2 |
+| mobile | 9.0 |
+| accessibility | 8.9 |
+| animations | 8.5 |
+| conversion | 9.3 |
+| technical quality | 8.7 |
 
-## Screenshoty
+## QA hranice
 
-V branchi je jeden kontaktový hárok so všetkými ôsmimi kontrolovanými stavmi:
+Browser politika pracovného prostredia blokuje navigáciu Chromia na localhost/file URL, takže finálny branch nebol predstieraný ako end-to-end Playwright run. QA preto pozostáva z:
 
-- `artifacts/vitazov/vitazov-contact-sheet.webp`
+- auditu existujúcich branch screenshotov,
+- overenia sortimentu na oficiálnom webe,
+- scoring simulácie,
+- JS/test syntax kontroly,
+- kontroly selectorov voči aktívnemu `coffee-v8` markupu,
+- izolovaných layout renderov cez Playwright `page.set_content` pre landing, chat, advisor a result.
 
-Plné PNG súbory boli vytvorené lokálne pre výstup a zahŕňajú landing, chat fallback, kancelársky výsledok, kancelársky follow-up, domáci výsledok, decaf mobil, mobilný selected stav a reduced motion.
-
-## Delivery guardrails
-
-- Žiadny Vercel deployment ani preview.
-- Žiadny merge do `main`.
-- Žiadna zmena API endpointu, environment variables alebo serverless architektúry.
-- Aktívny JavaScript entrypoint je `coffee-v8.js`. `coffee-v8.css` je čistý CSS entrypoint, ktorý importuje päť finálnych tematických modulov; patch a refine vrstva boli odstránené z načítania aj z vetvy.
+Vercel preview ani deployment nebol použitý.
