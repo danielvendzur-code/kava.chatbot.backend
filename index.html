@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <meta name="theme-color" content="#143d33">
+  <meta name="theme-color" content="#173f35">
   <meta name="robots" content="noindex,nofollow">
   <title>Kávový poradca – personalizovaná ukážka</title>
-  <meta name="description" content="Neoficiálna interaktívna ukážka moderného kávového poradcu.">
+  <meta name="description" content="Neoficiálna personalizovaná ukážka moderného kávového poradcu.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
@@ -17,11 +17,9 @@
       const last = parts.at(-1) || 'praziarnicka';
       const slug = last === 'index.html' || last === 'ukazka' ? 'praziarnicka' : last;
       window.COFFEE_DEMO_SLUG = slug;
-
       const styles = slug === 'praziarnicka'
-        ? ['/praziarnicka-v9.css']
+        ? ['/praziarnicka-v10.css']
         : ['/coffee-v8.css', '/coffee-v8-refine.css'];
-
       styles.forEach((href) => {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
@@ -40,9 +38,8 @@
     (() => {
       const slug = window.COFFEE_DEMO_SLUG || 'praziarnicka';
       const scripts = slug === 'praziarnicka'
-        ? ['/praziarnicka-v9.js']
+        ? ['/praziarnicka-v10.js']
         : ['/coffee-configs.js', '/coffee-brand-overrides.js', '/coffee-v8.js', '/coffee-v8-patch.js'];
-
       const load = (src) => new Promise((resolve, reject) => {
         const script = document.createElement('script');
         script.src = src;
@@ -50,7 +47,6 @@
         script.onerror = reject;
         document.body.appendChild(script);
       });
-
       scripts.reduce((chain, src) => chain.then(() => load(src)), Promise.resolve())
         .catch((error) => {
           console.error('Coffee demo failed to load', error);
