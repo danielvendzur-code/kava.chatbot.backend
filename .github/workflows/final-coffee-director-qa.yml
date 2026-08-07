@@ -1,0 +1,45 @@
+name: Final coffee director QA
+
+on:
+  push:
+    branches:
+      - agent/coffee-final-integration
+
+permissions:
+  contents: read
+
+concurrency:
+  group: final-coffee-director-qa
+  cancel-in-progress: true
+
+jobs:
+  browser-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install chromium
+      - name: Run six-brand browser matrix
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m http.server 4173 >/tmp/coffee-final-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for _ in {1..30}; do
+            if curl -fsS http://127.0.0.1:4173/ >/dev/null; then break; fi
+            sleep 1
+          done
+          npx playwright test tests/final-integration.spec.mjs --reporter=line --workers=1
+      - name: Upload director screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-coffee-director-matrix
+          path: artifacts/final-matrix/*
+          if-no-files-found: warn
+          retention-days: 7
