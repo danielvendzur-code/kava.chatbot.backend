@@ -37,16 +37,28 @@
   <script>
     (() => {
       const diamonds = window.__COFFEE_DEMO_SLUG__ === 'diamonds';
-      const entry = document.createElement('script');
-      entry.src = diamonds ? '/coffee-v8-diamonds-foundation.js' : '/coffee-v8.js';
-      entry.async = false;
-      entry.addEventListener('load', () => {
-        const followUp = document.createElement('script');
-        followUp.src = diamonds ? '/coffee-v8-diamonds-controller.js' : '/coffee-v8-patch.js';
-        followUp.async = false;
-        document.body.append(followUp);
-      }, { once: true });
-      document.body.append(entry);
+      const start = () => {
+        const entry = document.createElement('script');
+        entry.src = diamonds ? '/coffee-v8-diamonds-foundation.js' : '/coffee-v8.js';
+        entry.async = false;
+        entry.addEventListener('load', () => {
+          const followUp = document.createElement('script');
+          followUp.src = diamonds ? '/coffee-v8-diamonds-controller.js' : '/coffee-v8-patch.js';
+          followUp.async = false;
+          document.body.append(followUp);
+        }, { once: true });
+        document.body.append(entry);
+      };
+
+      if (diamonds) {
+        const director = document.createElement('script');
+        director.src = '/diamonds-director.js';
+        director.async = false;
+        director.addEventListener('load', start, { once: true });
+        document.body.append(director);
+      } else {
+        start();
+      }
     })();
   </script>
 </body>
