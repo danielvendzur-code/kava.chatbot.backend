@@ -1,0 +1,123 @@
+body[data-demo="vitazov"]{color:var(--ink);background:#fff}
+body[data-demo="vitazov"] .demo-page{width:min(1240px,calc(100% - 56px))}
+body[data-demo="vitazov"] .demo-header{min-height:84px;border-bottom:1px solid rgba(23,63,53,.08)}
+body[data-demo="vitazov"] .demo-brand{position:relative;min-width:194px;min-height:48px;display:flex;align-items:center}
+body[data-demo="vitazov"] .demo-brand__mark,body[data-demo="vitazov"] .demo-brand__copy,body[data-demo="vitazov"] .demo-tag{display:none}
+body[data-demo="vitazov"] .kv-official-logo{display:block;width:194px;max-height:48px;object-fit:contain;object-position:left center}
+body[data-demo="vitazov"] .demo-brand.kv-logo-fallback:before{content:"KÁVA VÍŤAZOV";color:var(--brand);font-family:var(--display);font-size:20px;font-weight:800;letter-spacing:.08em}
+body[data-demo="vitazov"] .demo-brand.kv-logo-fallback .kv-official-logo{display:none}
+body[data-demo="vitazov"] .demo-hero{grid-template-columns:minmax(0,1.08fr) minmax(420px,.78fr);gap:clamp(58px,7vw,104px);padding:54px 0 48px}
+body[data-demo="vitazov"] .owner-note{display:none}
+body[data-demo="vitazov"] .demo-copy h1{max-width:760px;font-size:clamp(48px,5.15vw,68px);line-height:1.015;letter-spacing:-.06em}
+body[data-demo="vitazov"] .demo-copy>p{max-width:63ch;margin-top:23px;color:color-mix(in srgb,var(--ink) 64%,transparent);font-size:16.5px;line-height:1.62}
+body[data-demo="vitazov"] .demo-benefits{display:flex;grid-template-columns:none;gap:0;max-width:690px;margin-top:32px}
+body[data-demo="vitazov"] .demo-benefit{min-height:0;display:block;padding:1px 28px;border:0;border-radius:0;background:transparent;box-shadow:none}
+body[data-demo="vitazov"] .demo-benefit:first-child{padding-left:0}
+body[data-demo="vitazov"] .demo-benefit+.demo-benefit{border-left:1px solid rgba(23,63,53,.16)}
+body[data-demo="vitazov"] .demo-benefit>span,body[data-demo="vitazov"] .demo-benefit small{display:none}
+body[data-demo="vitazov"] .demo-benefit b{font-family:var(--display);font-size:14px;line-height:1.25}
+body[data-demo="vitazov"] .demo-actions{gap:16px;margin-top:31px}
+body[data-demo="vitazov"] .primary-action{min-height:58px;padding-inline:25px;font-size:14.5px}
+body[data-demo="vitazov"] .demo-actions small,body[data-demo="vitazov"] .demo-actions:after{display:none}
+body[data-demo="vitazov"] .demo-visual{min-height:480px}
+body[data-demo="vitazov"] .demo-visual:before{display:none}
+body[data-demo="vitazov"] .preview-panel{width:min(458px,100%);border-radius:30px;background:#fff;box-shadow:0 42px 88px -52px rgba(23,63,53,.72)}
+body[data-demo="vitazov"] .preview-panel__top{min-height:64px;padding-inline:20px}
+body[data-demo="vitazov"] .preview-panel__top>span{color:color-mix(in srgb,var(--brand) 55%,transparent)}
+body[data-demo="vitazov"] .preview-product{grid-template-columns:168px minmax(0,1fr);gap:20px;padding:22px}
+body[data-demo="vitazov"] .preview-pack.kv-has-photo{width:168px;height:204px;padding:0;border:1px solid rgba(23,63,53,.08);border-radius:22px;color:var(--brand);background:#f3f5ee;box-shadow:none}
+body[data-demo="vitazov"] .kv-preview-photo{display:grid;width:100%;height:100%;place-items:center;overflow:hidden}
+body[data-demo="vitazov"] .kv-preview-photo img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+body[data-demo="vitazov"] .kv-preview-photo.is-broken:after{content:"Office Blend";font-family:var(--display);font-size:13px;font-weight:800}
+body[data-demo="vitazov"] .kv-preview-photo.is-broken img{display:none}
+body[data-demo="vitazov"] .preview-product__copy>span{padding:6px 9px;font-size:9.5px}
+body[data-demo="vitazov"] .preview-product__copy h2{margin:12px 0 13px;font-size:17px;line-height:1.32}
+body[data-demo="vitazov"] .preview-product__copy b{font-size:8px}
+body[data-demo="vitazov"] .preview-reason{margin:0 22px;padding:15px 0;border-radius:0;border-top:1px solid rgba(23,63,53,.1);background:transparent}
+body[data-demo="vitazov"] .preview-reason b{font-size:8.5px}
+body[data-demo="vitazov"] .preview-reason p{font-size:10.5px;line-height:1.5}
+body[data-demo="vitazov"] .preview-cta{min-height:54px;margin-top:0;padding-inline:22px}
+body[data-demo="vitazov"] .demo-footer{justify-content:flex-end}
+body[data-demo="vitazov"] .demo-footer>span{display:none}
+body[data-demo="vitazov"] .demo-footer a{font-size:10.5px;font-weight:800}
+body[data-demo="vitazov"] .launcher{width:78px;height:78px}
+body[data-demo="vitazov"] .launcher__button{border-width:2px;box-shadow:0 24px 56px -23px rgba(23,63,53,.86)}
+body[data-demo="vitazov"] .launcher__button .advisor-logo{width:54px;height:54px}
+body[data-demo="vitazov"] .launcher__teaser{bottom:96px;width:282px;min-height:86px;padding:15px 44px 15px 18px;border-radius:24px 24px 8px 24px}
+body[data-demo="vitazov"] .widget{width:min(482px,calc(100vw - 24px));height:min(780px,calc(100dvh - 24px));border-radius:38px;background:#fff;box-shadow:0 52px 110px -40px rgba(23,63,53,.82)}
+body[data-demo="vitazov"] .widget__header{min-height:78px;flex-basis:78px;padding:11px 14px 11px 18px;background:#fff}
+body[data-demo="vitazov"] .widget-brand__mark{width:48px;height:48px;padding:6px;border-radius:17px;background:#fff}
+body[data-demo="vitazov"] .widget-brand__copy strong{font-size:18px}
+body[data-demo="vitazov"] .widget-brand__copy small{font-size:10px}
+body[data-demo="vitazov"] .icon-button{width:42px;height:42px}
+body[data-demo="vitazov"] .mode{width:calc(100% - 28px);min-height:64px;flex-basis:64px;margin:12px 14px 10px;padding:5px;background:var(--brand);box-shadow:none}
+body[data-demo="vitazov"] .mode__indicator{left:5px;top:5px;bottom:5px;width:calc(50% - 5px);background:var(--accent)}
+body[data-demo="vitazov"] .mode__button{gap:8px;font-size:12.5px;color:rgba(255,255,255,.72)}
+body[data-demo="vitazov"] .mode__button.is-active{color:var(--brand)}
+body[data-demo="vitazov"] .mode__button svg{width:19px;height:19px}
+body[data-demo="vitazov"] .screen{background:#fff}
+body[data-demo="vitazov"] .chat{gap:12px;padding:14px 14px 16px;background:#fff}
+body[data-demo="vitazov"] .message{gap:9px}
+body[data-demo="vitazov"] .message__avatar{width:34px;height:34px;flex-basis:34px;border:0;border-radius:12px;background:color-mix(in srgb,var(--accent) 18%,white)}
+body[data-demo="vitazov"] .bubble{padding:12px 14px;border:0;border-radius:20px 20px 20px 7px;background:color-mix(in srgb,var(--brand) 5%,white);box-shadow:none;font-size:13px;line-height:1.52}
+body[data-demo="vitazov"] .message--user .bubble{border:0;color:#fff;background:var(--brand)}
+body[data-demo="vitazov"] .message>div>small{font-size:7.5px}
+body[data-demo="vitazov"] .chips{gap:8px;padding:0 14px 10px}
+body[data-demo="vitazov"] .chip{min-height:52px;justify-content:space-between;padding:10px 14px;border-color:rgba(23,63,53,.13);border-radius:18px;background:#fff;font-size:11.5px}
+body[data-demo="vitazov"] .chip:hover,body[data-demo="vitazov"] .chip.is-sending{border-color:rgba(23,63,53,.34);background:color-mix(in srgb,var(--accent) 18%,white);transform:translateY(-1px)}
+body[data-demo="vitazov"] .composer{min-height:58px;margin:0 14px 9px;padding:5px 5px 5px 17px;grid-template-columns:minmax(0,1fr) 46px;border-radius:22px;box-shadow:none}
+body[data-demo="vitazov"] .composer button{width:46px;height:46px}
+body[data-demo="vitazov"] .widget-credit{min-height:30px;flex:0 0 30px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 16px 9px;color:var(--muted);font-size:8.5px}
+body[data-demo="vitazov"] .widget-credit a{font-weight:800;text-decoration:none}
+body[data-demo="vitazov"] .advisor-progress{min-height:56px;flex-basis:56px;padding-inline:16px;background:#fff}
+body[data-demo="vitazov"] .progress-back{width:38px;height:38px}
+body[data-demo="vitazov"] .progress i{height:7px}
+body[data-demo="vitazov"] .advisor{padding:20px 15px 22px;background:#fff}
+body[data-demo="vitazov"] .question h2,body[data-demo="vitazov"] .result-head h2{font-size:27px}
+body[data-demo="vitazov"] .question p{font-size:10.5px}
+body[data-demo="vitazov"] .options{gap:10px}
+body[data-demo="vitazov"] .option{min-height:112px;grid-template-columns:52px minmax(0,1fr);padding:11px 13px;border-radius:24px;background:#fff}
+body[data-demo="vitazov"] .option__icon{width:52px;height:52px;border-radius:16px;background:color-mix(in srgb,var(--accent) 22%,white)}
+body[data-demo="vitazov"] .option__copy b{font-size:13px}
+body[data-demo="vitazov"] .option__copy small{font-size:9.5px}
+body[data-demo="vitazov"] .option__state{width:22px;height:22px}
+body[data-demo="vitazov"] .option[data-value="home"],body[data-demo="vitazov"] .option[data-value="office"],body[data-demo="vitazov"] .option[data-value="automatic"],body[data-demo="vitazov"] .option[data-value="discovery"]{min-height:126px;grid-template-columns:78px minmax(0,1fr)}
+body[data-demo="vitazov"] .option[data-value="home"] .option__icon,body[data-demo="vitazov"] .option[data-value="office"] .option__icon,body[data-demo="vitazov"] .option[data-value="automatic"] .option__icon,body[data-demo="vitazov"] .option[data-value="discovery"] .option__icon{width:78px;height:80px;border:0;border-radius:18px;background-position:center;background-size:cover;box-shadow:inset 0 0 0 1px rgba(23,63,53,.07)}
+body[data-demo="vitazov"] .option[data-value="home"] .option__icon{background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=360&q=82')}
+body[data-demo="vitazov"] .option[data-value="office"] .option__icon{background-image:url('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=360&q=82')}
+body[data-demo="vitazov"] .option[data-value="automatic"] .option__icon{background-image:url('https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=360&q=82')}
+body[data-demo="vitazov"] .option[data-value="discovery"] .option__icon{background-image:url('https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=360&q=82')}
+body[data-demo="vitazov"] .option[data-value="home"] .option__icon svg,body[data-demo="vitazov"] .option[data-value="office"] .option__icon svg,body[data-demo="vitazov"] .option[data-value="automatic"] .option__icon svg,body[data-demo="vitazov"] .option[data-value="discovery"] .option__icon svg{display:none}
+body[data-demo="vitazov"] .option.is-selected{background:color-mix(in srgb,var(--accent) 18%,white)}
+body[data-demo="vitazov"] .result-head{margin-bottom:12px}
+body[data-demo="vitazov"] .result-head p{font-size:9.5px}
+body[data-demo="vitazov"] .result-card{overflow:visible;border:0;border-radius:0;background:transparent}
+body[data-demo="vitazov"] .result-main{grid-template-columns:136px minmax(0,1fr);gap:18px;padding:18px;border:1px solid var(--line);border-radius:26px;background:#fff}
+body[data-demo="vitazov"] .product-visual.kv-has-photo{width:136px;height:158px;aspect-ratio:auto;padding:0;border:1px solid rgba(23,63,53,.08);border-radius:22px;color:var(--brand);background:#f3f5ee;box-shadow:none}
+body[data-demo="vitazov"] .kv-result-photo{display:grid;width:100%;height:100%;place-items:center;overflow:hidden}
+body[data-demo="vitazov"] .kv-result-photo img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+body[data-demo="vitazov"] .kv-result-photo.is-broken img{display:none}
+body[data-demo="vitazov"] .kv-result-photo.is-broken:after{content:"Káva Víťazov";font-family:var(--display);font-size:12px;font-weight:800}
+body[data-demo="vitazov"] .result-main__copy h3{margin:10px 0 12px;font-size:17px}
+body[data-demo="vitazov"] .taste-tags b{font-size:8px}
+body[data-demo="vitazov"] .result-details{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:12px;padding:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+body[data-demo="vitazov"] .result-detail:first-child{display:none}
+body[data-demo="vitazov"] .result-detail{grid-template-columns:32px minmax(0,1fr);gap:8px;padding:12px 10px;border-radius:0;background:transparent}
+body[data-demo="vitazov"] .result-detail+ .result-detail{border-left:1px solid var(--line)}
+body[data-demo="vitazov"] .result-detail>span{width:32px;height:32px;border-radius:11px;background:color-mix(in srgb,var(--accent) 24%,white)}
+body[data-demo="vitazov"] .result-detail b{font-size:9.5px;line-height:1.35}
+body[data-demo="vitazov"] .reason{display:block;margin:0;padding:15px 2px;border-radius:0;background:transparent}
+body[data-demo="vitazov"] .reason>span{display:none}
+body[data-demo="vitazov"] .reason b{font-size:8.5px}
+body[data-demo="vitazov"] .reason p{margin-top:5px;font-size:10.5px;line-height:1.48}
+body[data-demo="vitazov"] .result-actions{grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:0 0 13px}
+body[data-demo="vitazov"] .result-button{min-height:50px}
+body[data-demo="vitazov"] .result-button--secondary{padding-inline:15px;border-color:transparent;background:transparent}
+body[data-demo="vitazov"] .alternative{padding:12px 2px;border-top:1px solid var(--line);background:transparent}
+body[data-demo="vitazov"] .alternative button{border:0;background:color-mix(in srgb,var(--accent) 17%,white)}
+body[data-demo="vitazov"] .office-followup{margin-top:2px;padding:13px 2px;border-top:1px solid var(--line);background:transparent}
+body[data-demo="vitazov"] .usage-options{gap:7px}
+body[data-demo="vitazov"] .usage-options button{min-height:40px}
+@media(max-width:960px){body[data-demo="vitazov"] .demo-page{width:min(100% - 36px,780px)}body[data-demo="vitazov"] .demo-hero{grid-template-columns:1fr;gap:34px;padding-top:32px}body[data-demo="vitazov"] .demo-visual{min-height:410px}}
+@media(max-width:640px){body[data-demo="vitazov"] .demo-page{width:calc(100% - 28px)}body[data-demo="vitazov"] .demo-header{min-height:70px}body[data-demo="vitazov"] .kv-official-logo{width:158px;max-height:39px}body[data-demo="vitazov"] .demo-brand{min-width:158px;min-height:39px}body[data-demo="vitazov"] .demo-brand.kv-logo-fallback:before{font-size:16px}body[data-demo="vitazov"] .demo-hero{padding:28px 0 28px}body[data-demo="vitazov"] .demo-copy h1{font-size:clamp(36px,10.8vw,48px)}body[data-demo="vitazov"] .demo-copy>p{margin-top:17px;font-size:13px}body[data-demo="vitazov"] .demo-benefits{margin-top:22px}body[data-demo="vitazov"] .demo-benefit{padding-inline:13px}body[data-demo="vitazov"] .demo-benefit:first-child{padding-left:0}body[data-demo="vitazov"] .demo-benefit b{font-size:11px}body[data-demo="vitazov"] .demo-visual,body[data-demo="vitazov"] .demo-footer{display:none}body[data-demo="vitazov"] .primary-action{width:100%;min-height:54px}body[data-demo="vitazov"] .launcher{width:70px;height:70px}body[data-demo="vitazov"] .launcher__teaser{bottom:84px;width:238px;min-height:76px;padding:12px 40px 12px 15px}body[data-demo="vitazov"] .widget{inset:8px;width:auto;height:auto;max-width:none;max-height:none;border-radius:30px}body[data-demo="vitazov"] .widget__header{min-height:calc(68px + env(safe-area-inset-top));flex-basis:calc(68px + env(safe-area-inset-top));padding-top:max(7px,env(safe-area-inset-top));padding-inline:12px}body[data-demo="vitazov"] .mode{width:calc(100% - 20px);min-height:60px;flex-basis:60px;margin:8px 10px}body[data-demo="vitazov"] .chat,body[data-demo="vitazov"] .chips{padding-inline:10px}body[data-demo="vitazov"] .chip{min-height:50px;font-size:10.5px}body[data-demo="vitazov"] .composer{margin-inline:10px}body[data-demo="vitazov"] .widget-credit{padding-inline:12px;padding-bottom:max(9px,env(safe-area-inset-bottom))}body[data-demo="vitazov"] .advisor{padding:15px 11px 17px}body[data-demo="vitazov"] .question h2,body[data-demo="vitazov"] .result-head h2{font-size:23px}body[data-demo="vitazov"] .option{min-height:104px}body[data-demo="vitazov"] .option[data-value="home"],body[data-demo="vitazov"] .option[data-value="office"],body[data-demo="vitazov"] .option[data-value="automatic"],body[data-demo="vitazov"] .option[data-value="discovery"]{min-height:112px;grid-template-columns:70px minmax(0,1fr)}body[data-demo="vitazov"] .option[data-value="home"] .option__icon,body[data-demo="vitazov"] .option[data-value="office"] .option__icon,body[data-demo="vitazov"] .option[data-value="automatic"] .option__icon,body[data-demo="vitazov"] .option[data-value="discovery"] .option__icon{width:70px;height:72px}}
+@media(max-width:390px){body[data-demo="vitazov"] .demo-benefits{justify-content:space-between}body[data-demo="vitazov"] .demo-benefit{padding-inline:9px}body[data-demo="vitazov"] .options{grid-template-columns:1fr}body[data-demo="vitazov"] .option{min-height:78px;grid-template-columns:50px minmax(0,1fr)}body[data-demo="vitazov"] .option[data-value="home"],body[data-demo="vitazov"] .option[data-value="office"],body[data-demo="vitazov"] .option[data-value="automatic"],body[data-demo="vitazov"] .option[data-value="discovery"]{min-height:86px;grid-template-columns:66px minmax(0,1fr)}body[data-demo="vitazov"] .option[data-value="home"] .option__icon,body[data-demo="vitazov"] .option[data-value="office"] .option__icon,body[data-demo="vitazov"] .option[data-value="automatic"] .option__icon,body[data-demo="vitazov"] .option[data-value="discovery"] .option__icon{width:66px;height:62px}body[data-demo="vitazov"] .result-main{grid-template-columns:108px minmax(0,1fr);gap:12px;padding:14px}body[data-demo="vitazov"] .product-visual.kv-has-photo{width:108px;height:128px}body[data-demo="vitazov"] .result-details{grid-template-columns:1fr}body[data-demo="vitazov"] .result-detail+ .result-detail{border-left:0;border-top:1px solid var(--line)}body[data-demo="vitazov"] .result-actions{grid-template-columns:1fr}body[data-demo="vitazov"] .result-button--secondary{min-height:42px}}

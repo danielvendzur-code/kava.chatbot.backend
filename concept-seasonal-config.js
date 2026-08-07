@@ -1,0 +1,93 @@
+window.CONCEPT_SEASONAL_CONFIG = Object.freeze({
+  id: 'concept',
+  brand: 'Concept Coffee Roasters',
+  subbrand: 'Piešťany · Bratislava · since 2015',
+  verifiedAt: '7. 8. 2026',
+  shopUrl: 'https://www.conceptcoffee.sk/kava/',
+  contactUrl: 'https://www.conceptcoffee.sk/kontakty/',
+  email: 'shop@conceptcoffee.sk',
+  phone: '+421949205711',
+  welcome: 'Ahoj. Pomôžem ti zorientovať sa v sezónnej ponuke Concept Coffee Roasters a vybrať konkrétnu kávu podľa prípravy a chutí.',
+  quick: ['Svieži filter', 'Espresso do mlieka', 'Ovocné, nie ostré', 'Bez kofeínu'],
+  products: [
+    {
+      id: 'weithaga', name: 'Weithaga AA', country: 'Keňa', region: 'Nyeri', process: 'washed',
+      altitude: '1 400 – 1 700 m', score: '87 bodov',
+      prep: ['filter'], taste: ['fruity', 'balanced'], drink: ['black'], caffeine: ['classic', 'either'],
+      tags: ['granátové jablko', 'čierne ríbezle', 'ibištek', 'kakao'],
+      plainTaste: 'Šťavnatá a čistá káva. Pripomína ríbezle a granátové jablko, no kakaový záver ju drží vyváženú.',
+      reason: 'Sedí k filtru a k voľbe ovocného profilu bez ťažkej fermentovanej chuti.',
+      suitable: 'V60, Kalita, AeroPress alebo batch brew',
+      photo: '/assets/concept/result-filter.webp',
+      packages: [{ grams: 250, price: 15 }, { grams: 1000, price: 54 }],
+      availability: 'Dostupnosť sa overí na produktovej stránke',
+      url: 'https://www.conceptcoffee.sk/weithaga-aa---kenya/'
+    },
+    {
+      id: 'gedicho', name: 'Gedicho', country: 'Etiópia', region: 'Yirgacheffe', process: 'natural',
+      altitude: '2 150 m', score: '87 bodov',
+      prep: ['filter'], taste: ['fruity'], drink: ['black'], caffeine: ['classic', 'either'],
+      tags: ['malina', 'broskyňa', 'bergamot', 'limetka'],
+      plainTaste: 'Ľahká, voňavá a čajová. Ovocnosť pripomína malinu a broskyňu, nie pridanú arómu.',
+      reason: 'Je vhodná, keď chceš aromatický filter s ľahkým telom a jasnou vôňou.',
+      suitable: 'V60, Chemex alebo jemnejší AeroPress',
+      photo: '/assets/concept/result-filter.webp',
+      packages: [{ grams: 250, price: 14 }, { grams: 1000, price: 53 }],
+      availability: 'Dostupnosť sa overí na produktovej stránke',
+      url: 'https://www.conceptcoffee.sk/gedicho-ethiopia/'
+    },
+    {
+      id: 'berry-blast', name: 'Berry Blast', country: 'Kolumbia', region: 'sezónny lot',
+      process: 'výrazné spracovanie', altitude: 'podľa aktuálneho lotu', score: 'výberová káva',
+      prep: ['filter', 'lever'], taste: ['fruity', 'strong'], drink: ['black'], caffeine: ['classic', 'either'],
+      tags: ['černica', 'čučoriedka', 'malina', 'pomaranč'],
+      plainTaste: 'Výrazná bobuľová káva. Chutí ako tmavé lesné ovocie s citrusovým zdvihom, nie ako ochutený sirup.',
+      reason: 'Je najvýraznejšou voľbou pre človeka, ktorý chce objavovať sezónne spracovanie.',
+      suitable: 'Filter alebo experimentálnejšie espresso bez mlieka',
+      photo: '/assets/concept/result-filter.webp',
+      packages: [{ grams: 250, price: 18.5 }, { grams: 1000, price: 66 }],
+      availability: 'Dostupnosť sa overí na produktovej stránke',
+      url: 'https://www.conceptcoffee.sk/berry-blast-colombia/'
+    },
+    {
+      id: 'summerjam', name: 'Summerjam', country: 'Kolumbia', region: 'sezónny lot',
+      process: 'výrazné spracovanie', altitude: 'podľa aktuálneho lotu', score: 'výberová káva',
+      prep: ['filter'], taste: ['fruity', 'balanced'], drink: ['black'], caffeine: ['classic', 'either'],
+      tags: ['ananás', 'žlté ovocie', 'jogurt', 'kakao'],
+      plainTaste: 'Sladká a šťavnatá káva s tónom ananásu a jemne krémovým dojmom. Citrus ju udrží sviežu.',
+      reason: 'Je prístupnejšou ovocnou voľbou než Berry Blast a funguje aj ako studený filter.',
+      suitable: 'V60, batch brew alebo cold brew',
+      photo: '/assets/concept/result-filter.webp',
+      packages: [{ grams: 250, price: 18.5 }, { grams: 1000, price: 66 }],
+      availability: 'Dostupnosť sa overí na produktovej stránke',
+      url: 'https://www.conceptcoffee.sk/summerjam-colombia/'
+    },
+    {
+      id: 'holyshot', name: 'Holysh*t! espresso', country: 'espresso blend', region: 'signature Concept',
+      process: 'blend', altitude: 'kombinovaný pôvod', score: 'signature espresso',
+      prep: ['automatic', 'lever', 'moka'], taste: ['chocolate', 'balanced', 'strong'],
+      drink: ['black', 'milk', 'both'], caffeine: ['classic', 'either'],
+      tags: ['čokoláda', 'jahody', 'marcipán'],
+      plainTaste: 'Plnšie sladké espresso. Čokoládový základ dopĺňa jahodová sladkosť a marcipánový záver.',
+      reason: 'V mlieku ostane čitateľná a zároveň nepôsobí ako tmavá horká káva.',
+      suitable: 'Pákový a automatický kávovar, moka kanvička',
+      photo: '/assets/concept/result-espresso.webp',
+      packages: [{ grams: 500, price: 17.5 }, { grams: 1000, price: 34 }],
+      availability: 'Dostupnosť sa overí na produktovej stránke',
+      url: 'https://www.conceptcoffee.sk/holysht-espresso/'
+    },
+    {
+      id: 'yellow-sunset', name: 'Yellow Sunset (decaf)', country: 'Kolumbia', region: 'Tolima',
+      process: 'natural · EA decaf', altitude: '1 450 m', score: '85 bodov',
+      prep: ['automatic', 'lever', 'moka'], taste: ['chocolate', 'balanced'], drink: ['black', 'milk', 'both'], caffeine: ['decaf'],
+      tags: ['sušené slivky', 'kakao', 'nugát', 'orechy'],
+      plainTaste: 'Sladká a plná bezkofeínová káva so sušenou slivkou, kakaom, nugátom a orechovým záverom.',
+      reason: 'Je aktuálnou bezkofeínovou voľbou pre espresso a mliečne nápoje bez toho, aby pôsobila ako náhrada.',
+      suitable: 'Espresso, automatický kávovar alebo moka kanvička',
+      photo: '/assets/concept/result-decaf.webp',
+      packages: [{ grams: 250, price: 12.5 }, { grams: 500, price: 24.5 }, { grams: 1000, price: 48 }],
+      availability: 'Dostupnosť sa overí na produktovej stránke',
+      url: 'https://www.conceptcoffee.sk/yellow-sunset/'
+    }
+  ]
+});
