@@ -1,0 +1,4 @@
+/* Final control balance: four quick questions read as one deliberate 2×2 control group. */
+.chips{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}
+.chips button{width:100%;min-height:44px;justify-content:center;text-align:center;white-space:normal;line-height:1.2}
+@media(max-width:560px){.chips{grid-template-columns:repeat(2,minmax(0,1fr))!important}.chips button{min-height:42px;font-size:10px}}

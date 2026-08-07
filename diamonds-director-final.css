@@ -1,0 +1,8 @@
+/* Final visual correction: the text fallback is visible only when the official logo image fails. */
+.brand-lockup__fallback{display:none}
+.brand-lockup img[src=""],.brand-lockup img:not([src]){display:none}
+.brand-lockup img[src=""]+.brand-lockup__fallback,.brand-lockup img:not([src])+.brand-lockup__fallback{display:block}
+/* Keep the lockup readable and free of overlap even when the source image has unusual intrinsic whitespace. */
+.brand-lockup{display:flex;align-items:center;min-width:176px;height:42px;overflow:visible}
+.brand-lockup img{position:relative;inset:auto;max-width:176px;width:auto;height:36px;object-position:left center}
+@media(max-width:680px){.brand-lockup{min-width:136px;height:34px}.brand-lockup img{height:30px;max-width:136px}}

@@ -1,0 +1,3 @@
+/* Remove internal QA language from the customer-facing recommendation card. */
+.result-card__meta--simple small{display:none!important}
+.result-card__meta--simple span{display:flex;align-items:center;min-height:22px}

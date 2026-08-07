@@ -1,0 +1,13 @@
+/* Director correction: the main product action must be visible before secondary configuration. */
+@media(min-width:561px){
+  .kf-result{gap:8px}
+  .kf-result-hero{min-height:196px;order:1}
+  .kf-result-cta{order:2;min-height:50px;box-shadow:0 14px 28px -22px rgba(17,17,17,.7)}
+  .kf-result-meta{order:3}
+  .kf-result-why{order:4}
+  .kf-result-choice{order:5}
+  .kf-alternative{order:6}
+  .kf-result-detail{padding:7px 10px}
+  .kf-result-why{padding:8px 11px}
+  body:has(.kf-widget.is-open) .kf-story{opacity:.16;filter:blur(2px);transition:opacity .2s ease,filter .2s ease}
+}
