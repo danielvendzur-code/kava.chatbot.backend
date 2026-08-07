@@ -1,13 +1,12 @@
 (() => {
   'use strict';
   const app = window.ConceptSeasonalApp;
-  const { config, root, $, escapeHTML, mark, brandSeal, icons } = app;
+  const { config, root, $, escapeHTML, mark, icons } = app;
 
   root.innerHTML = `
     <main class="concept-page" aria-label="Neoficiálny personalizovaný návrh pre ${escapeHTML(config.brand)}">
       <header class="site-head">
-        <div class="site-brand">
-          <span class="site-brand__seal">${brandSeal()}</span>
+        <div class="site-brand" aria-label="Concept Coffee Roasters">
           <span class="site-brand__copy"><strong>CONCEPT</strong><span>COFFEE ROASTERS</span></span>
         </div>
         <span class="unofficial-label">Personalizovaný návrh · neoficiálne</span>
@@ -15,16 +14,16 @@
 
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Vitajte vo vašom návrhu chatbotu</p>
-          <h1>AI poradca pre <em>Concept Coffee Roasters.</em></h1>
-          <p class="hero-intro">Takto môže vyzerať AI poradca pre váš e-shop. Pomôže zákazníkom pochopiť sezónnu ponuku, odpovie na otázky a nasmeruje ich ku konkrétnym produktom.</p>
+          <p class="eyebrow">Personalizovaný návrh pre váš e-shop</p>
+          <h1>Vitajte vo vašom návrhu AI poradcu pre Concept Coffee Roasters.</h1>
+          <p class="hero-intro">Ukážka, ako môže zákazníkovi zjednodušiť orientáciu v sezónnej ponuke a premeniť chuťové preferencie na konkrétny produkt.</p>
           <ul class="hero-benefits" aria-label="Hodnota poradcu pre firmu">
-            <li><b>Pomôže s výberom</b><span>zjednoduší sezónnu ponuku</span></li>
-            <li><b>Odpovie okamžite</b><span>na časté otázky o chuti a príprave</span></li>
-            <li><b>Vedie k produktu</b><span>nie iba na všeobecnú kategóriu</span></li>
+            <li><b>Pomôže s výberom</b><span>zúži sezónnu ponuku podľa reálnej potreby</span></li>
+            <li><b>Odpovie okamžite</b><span>na otázky o chuti, príprave a rozdieloch</span></li>
+            <li><b>Vedie k produktu</b><span>od preferencie až ku konkrétnej káve</span></li>
           </ul>
           <div class="hero-action-row">
-            <button class="primary-action" id="heroOpen" type="button">Otvoriť personalizovanú ukážku ${icons.arrow}</button>
+            <button class="primary-action" id="heroOpen" type="button">Otvoriť ukážku poradcu ${icons.arrow}</button>
             <small>Funkčný koncept pripravený pre majiteľa Concept Coffee Roasters. Nie je súčasťou oficiálneho webu.</small>
           </div>
         </div>
@@ -32,13 +31,13 @@
         <aside class="editorial-card" aria-label="Ukážka výsledku, ktorý uvidí zákazník">
           <div class="editorial-card__image">
             <img src="/assets/concept/result-filter.webp" width="1280" height="900" alt="Príprava filtrovanej kávy">
-            <span class="season-stamp"><b>SEASON</b><span>selection</span></span>
+            <span class="season-stamp">SEASONAL</span>
           </div>
           <div class="editorial-card__body">
             <small>Čo uvidí zákazník</small>
             <h2>Konkrétne odporúčanie, nie zoznam.</h2>
-            <p><b>Weithaga AA</b> — šťavnatá Keňa pre filter, vysvetlená zrozumiteľne a s priamym pokračovaním na produkt.</p>
-            <div class="editorial-card__meta"><span>pôvod · profil · príprava · dôvod</span><b>od 15 €</b></div>
+            <p><b>Weithaga AA</b> — Keňa pre filter, vysvetlená jednoducho a s priamym pokračovaním na produkt.</p>
+            <div class="editorial-card__meta"><span>pôvod · chuť · príprava · dôvod</span><b>od 15 €</b></div>
           </div>
         </aside>
       </section>
@@ -65,8 +64,8 @@
     <section class="widget" id="widget" role="dialog" aria-modal="true" aria-label="Kávový poradca ${escapeHTML(config.brand)}" aria-hidden="true">
       <header class="widget__header">
         <div class="widget-brand">
-          <span class="widget-brand__seal">${brandSeal()}</span>
-          <span class="widget-brand__copy"><strong>Concept Coffee Roasters</strong><small><i class="online-dot"></i> AI poradca je pripravený</small></span>
+          <span class="widget-brand__wordmark"><strong>CONCEPT</strong><small>COFFEE ROASTERS</small></span>
+          <span class="widget-brand__status"><i class="online-dot"></i> AI poradca je pripravený</span>
         </div>
         <div class="widget-actions">
           <button class="icon-button" id="resetAll" type="button" aria-label="Začať odznova">${icons.reset}</button>

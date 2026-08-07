@@ -2,7 +2,7 @@ window.CONCEPT_SEASONAL_CONFIG = Object.freeze({
   id: 'concept',
   brand: 'Concept Coffee Roasters',
   subbrand: 'Piešťany · Bratislava · since 2015',
-  verifiedAt: '6. 8. 2026',
+  verifiedAt: '7. 8. 2026',
   shopUrl: 'https://www.conceptcoffee.sk/kava/',
   contactUrl: 'https://www.conceptcoffee.sk/kontakty/',
   email: 'shop@conceptcoffee.sk',
@@ -77,17 +77,16 @@ window.CONCEPT_SEASONAL_CONFIG = Object.freeze({
       url: 'https://www.conceptcoffee.sk/holysht-espresso/'
     },
     {
-      id: 'yellow-sunset', name: 'Yellow Sunset decaf', country: 'bezkofeínová káva', region: 'seasonal decaf',
-      process: 'decaf', altitude: 'podľa aktuálneho lotu', score: 'výberová bez kofeínu',
-      prep: ['automatic', 'lever', 'moka', 'filter'], taste: ['chocolate', 'balanced'],
-      drink: ['black', 'milk', 'both'], caffeine: ['decaf'],
+      id: 'yellow-sunset', name: 'Yellow Sunset (decaf)', country: 'Kolumbia', region: 'Tolima',
+      process: 'natural · EA decaf', altitude: '1 450 m', score: '85 bodov',
+      prep: ['automatic', 'lever', 'moka'], taste: ['chocolate', 'balanced'], drink: ['black', 'milk', 'both'], caffeine: ['decaf'],
       tags: ['sušené slivky', 'kakao', 'nugát', 'orechy'],
-      plainTaste: 'Sladká bezkofeínová káva s kakaom, nugátom a sušenou slivkou. Nepôsobí ako náhrada.',
-      reason: 'Je správnou voľbou na večer alebo pri obmedzení kofeínu bez straty plnej chuti.',
-      suitable: 'Espresso, automat, moka aj filter',
+      plainTaste: 'Sladká a plná bezkofeínová káva so sušenou slivkou, kakaom, nugátom a orechovým záverom.',
+      reason: 'Je aktuálnou bezkofeínovou voľbou pre espresso a mliečne nápoje bez toho, aby pôsobila ako náhrada.',
+      suitable: 'Espresso, automatický kávovar alebo moka kanvička',
       photo: '/assets/concept/result-decaf.webp',
       packages: [{ grams: 250, price: 12.5 }, { grams: 500, price: 24.5 }, { grams: 1000, price: 48 }],
-      availability: 'Sezónny produkt; dostupnosť sa overí v e-shope',
+      availability: 'Dostupnosť sa overí na produktovej stránke',
       url: 'https://www.conceptcoffee.sk/yellow-sunset/'
     }
   ]

@@ -6,11 +6,10 @@
   function updateProgress() {
     const inResult = app.state.stage !== 'questions';
     $('#stepLabel').textContent = inResult ? 'Výsledok' : `${app.state.step + 1} / ${questions.length}`;
-    $('#stepName').textContent = inResult ? 'Sezónna zhoda' : questions[app.state.step].name;
+    $('#stepName').textContent = inResult ? 'Odporúčanie' : questions[app.state.step].name;
     $('#prevBtn').disabled = app.state.stage === 'questions' && app.state.step === 0;
     $('#progress').innerHTML = questions.map((_, index) => `<i class="${index < app.state.step || inResult ? 'is-done ' : ''}${index === app.state.step && !inResult ? 'is-active' : ''}"></i>`).join('');
   }
-
   function renderQuestion() {
     const question = questions[app.state.step];
     const selected = app.state.answers[question.key];
@@ -25,10 +24,9 @@
           return `<button class="option ${classNames}" type="button" data-value="${escapeHTML(option.value)}" style="animation-delay:${index * 65}ms" aria-pressed="${selected === option.value}">${visual}<span class="option__copy"><b>${escapeHTML(option.label)}</b><small>${escapeHTML(option.description)}</small></span><span class="option__state">${selected === option.value ? icons.check : icons.arrow}</span></button>`;
         }).join('')}
       </div>
-      ${selected ? `<div class="fun-fact">Vybrané: <b>${escapeHTML(question.options.find((option) => option.value === selected)?.label || selected)}</b>. Možnosť zostáva čitateľná pred prechodom.</div>` : ''}`;
+      ${selected ? `<div class="fun-fact">Vybrané: <b>${escapeHTML(question.options.find((option) => option.value === selected)?.label || selected)}</b>.</div>` : ''}`;
     $$('.option', advisor).forEach((button) => button.addEventListener('click', () => selectAnswer(button.dataset.value)));
   }
-
   function selectAnswer(value) {
     if (app.state.transitioning || app.state.stage !== 'questions') return;
     const question = questions[app.state.step];
@@ -45,8 +43,7 @@
       app.persist();
       app.renderAdvisor();
       if (app.state.stage === 'result') app.animateMarks('is-mark-result');
-    }, 560);
+    }, 520);
   }
-
   Object.assign(app, { updateProgress, renderQuestion, selectAnswer });
 })();

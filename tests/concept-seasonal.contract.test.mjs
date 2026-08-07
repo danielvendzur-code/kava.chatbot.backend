@@ -2,130 +2,95 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 
-const read = (path) => readFile(new URL(`../${path}`, import.meta.url), 'utf8');
-const moduleNames = [
-  'concept-seasonal-core.js',
-  'concept-seasonal-shell.js',
-  'concept-seasonal-shared.js',
-  'concept-seasonal-score.js',
-  'concept-seasonal-advisor-flow.js',
-  'concept-seasonal-advisor-result.js',
-  'concept-seasonal-advisor-completion.js',
-  'concept-seasonal-chat.js',
-  'concept-seasonal-init.js'
-];
-
-const [index, entry, appParts, cssParts, config, audit] = await Promise.all([
-  read('index.html'),
-  read('coffee-entry.js'),
-  Promise.all(moduleNames.map(read)),
-  Promise.all([
-    read('concept-seasonal-foundation.css'),
-    read('concept-seasonal-widget.css'),
-    read('concept-seasonal-advisor.css'),
-    read('concept-seasonal-responsive.css')
-  ]),
-  read('concept-seasonal-config.js'),
-  read('CONCEPT_SEASONAL_AUDIT.md')
+const root = new URL('../', import.meta.url);
+const read = (name) => readFile(new URL(name, root), 'utf8');
+const [shell, core, score, result, config, foundation, widget, advisor, responsive, chat] = await Promise.all([
+  read('concept-seasonal-shell.js'), read('concept-seasonal-core.js'), read('concept-seasonal-score.js'),
+  read('concept-seasonal-advisor-result.js'), read('concept-seasonal-config.js'), read('concept-seasonal-foundation.css'),
+  read('concept-seasonal-widget.css'), read('concept-seasonal-advisor.css'), read('concept-seasonal-responsive.css'),
+  read('concept-seasonal-chat.js')
 ]);
-const app = appParts.join('\n');
-const css = cssParts.join('\n');
-const shell = appParts[moduleNames.indexOf('concept-seasonal-shell.js')];
-const chat = appParts[moduleNames.indexOf('concept-seasonal-chat.js')];
-const core = appParts[moduleNames.indexOf('concept-seasonal-core.js')];
 
-test('Concept keeps its dedicated ordered runtime without active legacy patches', () => {
-  assert.match(index, /coffee-entry\.js/);
-  assert.doesNotMatch(index, /coffee-v8-patch|coffee-brand-overrides|coffee-v8-refine/);
-  assert.match(entry, /slug === 'concept'/);
-  for (const name of moduleNames) assert.match(entry, new RegExp(name.replaceAll('.', '\\.')));
+test('owner landing uses the approved concise proposition', () => {
+  assert.match(shell, /Vitajte vo vašom návrhu AI poradcu pre Concept Coffee Roasters\./);
+  assert.match(shell, /Ukážka, ako môže zákazníkovi zjednodušiť orientáciu v sezónnej ponuke a premeniť chuťové preferencie na konkrétny produkt\./);
+  assert.match(shell, /Konkrétne odporúčanie, nie zoznam\./);
 });
 
-test('landing is explicitly owner-facing and demonstrates business value', () => {
-  assert.match(shell, /Vitajte vo vašom návrhu chatbotu/);
-  assert.match(shell, /Takto môže vyzerať AI poradca pre váš e-shop/);
-  assert.match(shell, /Pomôže s výberom/);
-  assert.match(shell, /Odpovie okamžite/);
-  assert.match(shell, /Vedie k produktu/);
-  assert.match(shell, /Funkčný koncept pripravený pre majiteľa/);
+test('unverified company seal is removed and assistant mark stays secondary', () => {
+  assert.doesNotMatch(core, /function brandSeal|concept-seal|>20<|>15</);
+  assert.doesNotMatch(shell, /brandSeal|widget-brand__seal|site-brand__seal/);
+  assert.match(core, /function mark/);
+  assert.equal((core.match(/class="assistant-mark__/g) || []).length >= 2, true);
 });
 
-test('Concept company identity and assistant identity remain distinct', () => {
-  assert.match(core, /function brandSeal/);
-  assert.match(core, /concept-seal/);
-  assert.match(shell, /site-brand__seal/);
-  assert.match(shell, /widget-brand__seal/);
-  const markBody = core.match(/function mark[\s\S]*?return `([\s\S]*?)`;\n  }/)?.[1] || '';
-  assert.equal((markBody.match(/<path/g) || []).length, 2);
-  assert.match(markBody, /assistant-mark__c/);
-  assert.match(markBody, /assistant-mark__bean/);
-});
-
-test('widget is a large premium panel with the approved segmented control', () => {
-  assert.match(css, /width:min\(548px,calc\(100vw - 44px\)\)/);
-  assert.match(css, /height:min\(780px,calc\(100dvh - 44px\)\)/);
-  assert.match(css, /--radius-panel:30px/);
-  assert.match(shell, /<b>Chat<\/b>/);
-  assert.match(shell, /<b>Výber kávy<\/b>/);
-});
-
-test('chat has one opening message, four prompts by the composer and no contact row', () => {
-  const seed = chat.match(/function seedChat\(\)[\s\S]*?\n  }/)?.[0] || '';
-  assert.equal((seed.match(/addMessage\(/g) || []).length, 1);
-  assert.match(config, /quick: \['Svieži filter', 'Espresso do mlieka', 'Ovocné, nie ostré', 'Bez kofeínu'\]/);
-  assert.match(shell, /<div class="chat-bottom">[\s\S]*id="quickChips"[\s\S]*class="composer"/);
-  assert.doesNotMatch(shell, /support-row/);
-  assert.doesNotMatch(chat, /renderSupport/);
-  assert.match(shell, /https:\/\/mojchatbot\.sk/);
-});
-
-test('teaser remains valid and contains no nested button', () => {
-  const teaser = shell.match(/<aside class="launcher-teaser"[\s\S]*?<\/aside>/)?.[0] || '';
-  assert.match(teaser, /launcher-teaser__close/);
-  assert.match(teaser, /launcher-teaser__open/);
-  assert.doesNotMatch(teaser, /<button[^>]*>(?:(?!<\/button>)[\s\S])*<button/);
-});
-
-test('photography is integrated into entry, preparation, flavour and result', () => {
-  assert.match(shell, /advisor-entry__visual/);
-  assert.match(core, /prep-automatic\.webp/);
-  assert.match(core, /prep-filter\.webp/);
-  assert.match(core, /photo: '\/assets\/concept\/result-filter\.webp'/);
-  assert.match(core, /photo: '\/assets\/concept\/result-espresso\.webp'/);
-  assert.match(app, /class="result-photo"/);
-});
-
-test('recommendation prioritises its reason and packaging CTA before details', () => {
-  const result = appParts[moduleNames.indexOf('concept-seasonal-advisor-result.js')];
-  assert.ok(result.indexOf('class="reason"') < result.indexOf('class="result-actions"'));
-  assert.ok(result.indexOf('class="result-actions"') < result.indexOf('class="result-story"'));
+test('visible recommendation never exposes a fabricated percentage metric', () => {
+  assert.doesNotMatch(score, /percentFor/);
+  assert.doesNotMatch(result, /percentFor|match-score|%\s*zhoda|\$\{percent\}/);
   assert.match(result, /const alternative = list\.find/);
-  assert.doesNotMatch(result, /slice\(0, 2\)/);
-  assert.match(app, /app\.state\.stage = 'package'/);
-  assert.match(app, /product\.packages\.map/);
 });
 
-test('seasonal product data uses exact URLs and a non-permanent stock boundary', () => {
-  assert.match(config, /verifiedAt: '6\. 8\. 2026'/);
-  assert.match(config, /conceptcoffee\.sk\/weithaga-aa---kenya\//);
-  assert.match(config, /conceptcoffee\.sk\/yellow-sunset\//);
-  assert.match(config, /Dostupnosť sa overí na produktovej stránke/);
-  assert.doesNotMatch(config, /Skladom viac ako 5 ks/);
+test('widget geometry is harmonized with the shared product family', () => {
+  assert.match(foundation, /--radius-panel:24px/);
+  assert.match(widget, /width:min\(448px,calc\(100vw - 40px\)\)/);
+  assert.match(widget, /height:min\(720px,calc\(100dvh - 40px\)\)/);
+  assert.match(widget, /\.chip\{min-height:44px/);
+  assert.match(widget, /\.mode\{min-height:58px/);
+  assert.match(widget, /\.composer__shell\{min-height:56px/);
 });
 
-test('mobile, focus and reduced-motion contracts stay explicit', () => {
-  assert.match(css, /min-height:\s*44px/);
-  assert.match(css, /100dvh/);
-  assert.match(css, /env\(safe-area-inset-bottom\)/);
-  assert.match(css, /prefers-reduced-motion/);
-  assert.match(css, /:focus-visible/);
-  assert.match(app, /window\.scrollTo\(0, app\.lockedScrollY\)/);
-  assert.match(app, /focus\(\{ preventScroll: true \}\)/);
+test('chat remains minimal and the credit is readable', () => {
+  assert.doesNotMatch(shell, /support-row|mailto:|tel:/);
+  assert.match(shell, /Personalizovaná ukážka od/);
+  assert.match(widget, /\.widget-credit,.advisor-credit\{min-height:44px/);
+  assert.match(widget, /font-size:10\.5px/);
+  assert.match(config, /quick: \['Svieži filter', 'Espresso do mlieka', 'Ovocné, nie ostré', 'Bez kofeínu'\]/);
+  const seed = chat.match(/function seedChat\(\)[\s\S]*?\}/)?.[0] || '';
+  assert.equal((seed.match(/addMessage\(/g) || []).length, 1);
 });
 
-test('audit records the reference refinement and complete QA boundary', () => {
-  assert.match(audit, /## Before/);
-  assert.match(audit, /## After/);
-  assert.match(audit, /35 browser assertions pass/);
-  assert.match(audit, /No PR, merge, Vercel deploy or preview deploy/);
+test('photos are strong on preparation but not decoratively reused for taste', () => {
+  const prep = core.match(/key: 'prep'[\s\S]*?\n    \},\n    \{\n      key: 'taste'/)?.[0] || '';
+  const taste = core.match(/key: 'taste'[\s\S]*?\n    \},\n    \{\n      key: 'drink'/)?.[0] || '';
+  assert.equal((prep.match(/photo:/g) || []).length, 4);
+  assert.equal((taste.match(/photo:/g) || []).length, 0);
+  assert.equal((taste.match(/icon:/g) || []).length, 4);
+});
+
+test('advisor uses human-language prompts and compact result hierarchy', () => {
+  assert.match(core, /Ako si doma pripravuješ kávu\?/);
+  assert.match(core, /Ktorý chuťový smer ti sedí\?/);
+  assert.match(core, /Piješ ju skôr čistú alebo s mliekom\?/);
+  assert.match(result, /Ako chutí/);
+  assert.match(result, /Príprava/);
+  assert.match(result, /Prečo práve táto/);
+  assert.match(result, /Vybrať balenie/);
+  assert.match(advisor, /\.result-photo\{height:158px/);
+});
+
+test('current decaf product data is grounded in the official catalog', () => {
+  assert.match(config, /id: 'yellow-sunset'/);
+  assert.match(config, /name: 'Yellow Sunset \(decaf\)'/);
+  assert.match(config, /packages: \[\{ grams: 250, price: 12\.5 \}, \{ grams: 500, price: 24\.5 \}, \{ grams: 1000, price: 48 \}\]/);
+  assert.match(config, /https:\/\/www\.conceptcoffee\.sk\/yellow-sunset\//);
+  assert.match(config, /verifiedAt: '7\. 8\. 2026'/);
+});
+
+test('accent is supportive rather than the primary CTA treatment', () => {
+  assert.match(foundation, /--accent:#c85b47/);
+  assert.match(foundation, /\.primary-action,.product-link,.checkout-button[\s\S]*background:var\(--ink\)/);
+  assert.doesNotMatch(foundation, /\.hero h1 em\{color:var\(--accent\)/);
+});
+
+test('mobile and motion accessibility contracts remain explicit', () => {
+  assert.match(responsive, /height:100dvh/);
+  assert.match(responsive, /env\(safe-area-inset-top\)/);
+  assert.match(responsive, /prefers-reduced-motion:reduce/);
+  assert.match(foundation, /:focus-visible/);
+});
+
+test('result has exactly one alternative template and no long availability block', () => {
+  assert.equal((result.match(/class="alternative"/g) || []).length, 1);
+  assert.doesNotMatch(result, /slice\(0,\s*2\)/);
+  assert.doesNotMatch(result, /matchScore[^\n]*%/);
 });

@@ -2,6 +2,7 @@
   'use strict';
   const app = window.ConceptSeasonalApp;
   const { config } = app;
+
   function rankings() {
     return config.products
       .map((product) => {
@@ -16,11 +17,5 @@
       .sort((a, b) => b.matchScore - a.matchScore || a.name.localeCompare(b.name, 'sk'));
   }
 
-  function percentFor(product) {
-    const best = rankings()[0];
-    const delta = product.matchScore - best.matchScore;
-    return Math.max(76, Math.min(97, product.id === best.id ? 96 : 88 + delta * 3));
-  }
-
-  Object.assign(app, { rankings, percentFor });
+  Object.assign(app, { rankings });
 })();
