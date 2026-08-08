@@ -213,8 +213,12 @@
 
         <section class="screen" id="chatScreen" aria-label="Chat">
           <button class="entry" id="entry" type="button">
-            <span class="entry__mark">${icons.bean}</span>
-            <span class="entry__copy"><b>Vyberte kávu na mieru</b><span>4 otázky · odporúčanie do minúty</span></span>
+            <span class="entry__thumb"><img src="/assets/jolka/tile/zmes-jolka.webp" alt="" width="120" height="96"></span>
+            <span class="entry__copy">
+              <small>Kávový výber</small>
+              <b>Vyberte kávu na mieru</b>
+              <span>4 otázky · odporúčanie do minúty</span>
+            </span>
             <span class="entry__arrow">${icons.arrow}</span>
           </button>
           <div class="chat" id="chat" role="log" aria-live="polite"></div>
@@ -328,13 +332,13 @@
 
   /** Taste and acidity steps show a real coffee; method steps show the brew itself. */
   function optionVisual(option) {
-    const src = option.photo || byId[option.product].photo;
+    const src = option.photo || byId[option.product].tile;
     const badge = option.glyph
       ? `<span class="option__badge">${glyph(option.glyph)}</span>`
       : typeof option.dots === 'number'
         ? `<span class="option__badge option__badge--dots">${dots(option.dots - 1)}</span>`
         : '';
-    return `<span class="option__visual"><img src="${src}" alt="" loading="lazy" width="120" height="96">${badge}</span>`;
+    return `<span class="option__visual"><img src="${src}" alt="" loading="lazy" width="240" height="192">${badge}</span>`;
   }
 
   function renderQuestion() {
@@ -468,12 +472,22 @@
     }
   }
 
+  /** Shows a fade at the pane edge only while there is more to scroll to. */
+  function updateScrollHint() {
+    const more = advisor.scrollHeight - advisor.clientHeight - advisor.scrollTop > 4;
+    advisorScreen.classList.toggle('has-more', more);
+  }
+
   function renderAdvisor() {
     updateProgress();
     if (state.stage === 'questions') renderQuestion();
     else renderResult();
     advisor.scrollTop = 0;
+    requestAnimationFrame(updateScrollHint);
   }
+
+  advisor.addEventListener('scroll', updateScrollHint, { passive: true });
+  addEventListener('resize', updateScrollHint);
 
   function resetAdvisor() {
     state.step = 0;

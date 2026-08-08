@@ -86,6 +86,7 @@ jobs:
           test -f assets/jolka/hero-bags.webp
           test "$(ls assets/jolka/*.webp | wc -l)" -ge 15
           test "$(ls assets/jolka/method/*.webp | wc -l)" -eq 7
+          test "$(ls assets/jolka/tile/*.webp | wc -l)" -eq 14
           test -f assets/jolka/method/SOURCES.md
           node --check jolka/jolka-data.js
           node --check jolka/jolka-app.js
