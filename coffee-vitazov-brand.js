@@ -39,6 +39,45 @@
     'Bezkofeínová': 'decaf'
   };
 
+  const productUpsells = {
+    victory: {
+      eyebrow: 'Ak chcete skúsiť ešte jednu 100 % arabiku',
+      title: 'Londýnsky Blend',
+      copy: 'Korenie, vanilka a sušené slivky v plnom espressovom profile.',
+      cta: 'Pozrieť Londýnsky Blend',
+      href: 'https://kavavitazov.sk/espresso-arabica/'
+    },
+    brazil: {
+      eyebrow: 'Ak chcete skúsiť ešte jednu 100 % arabiku',
+      title: 'Londýnsky Blend',
+      copy: 'Podobne plné espresso, tentoraz s tónmi korenia, vanilky a sliviek.',
+      cta: 'Pozrieť Londýnsky Blend',
+      href: 'https://kavavitazov.sk/espresso-arabica/'
+    },
+    ethiopia: {
+      eyebrow: 'Ak chcete ochutnávať ďalej',
+      title: 'Darčekové balenie',
+      copy: 'Výber káv z celého sveta v jednom reálnom degustačnom balení.',
+      cta: 'Pozrieť degustáciu',
+      href: 'https://kavavitazov.sk/kava-darcekove-balenie/'
+    }
+  };
+
+  const answers = {};
+
+  function currentUse() {
+    const qa = new URLSearchParams(location.search).get('qa');
+    if (qa === 'office') return 'office';
+    if (qa === 'discovery') return 'discovery';
+    if (qa === 'decaf') return 'home';
+    return answers.use || '';
+  }
+
+  function chosenUpsell(productKey) {
+    if (currentUse() === 'office') return null;
+    return productUpsells[productKey] || null;
+  }
+
   function createProductImage(asset, alt, className, eager = false) {
     const wrapper = document.createElement('span');
     wrapper.className = className;
@@ -99,6 +138,13 @@
       if (text) text.textContent = 'Štyri krátke voľby a konkrétne odporúčanie.';
     }
 
+    const previewKicker = document.querySelector('.preview-product__copy > span');
+    if (previewKicker) previewKicker.textContent = 'Konkrétny príklad';
+    const previewReason = document.querySelector('.preview-reason b');
+    if (previewReason) previewReason.textContent = 'Prečo to funguje';
+    const previewCta = document.querySelector('.preview-cta');
+    if (previewCta) previewCta.childNodes[0].textContent = 'Zobraziť odporúčanie ';
+
     const chatScreen = document.querySelector('#chatScreen');
     if (chatScreen && !chatScreen.querySelector('.widget-credit')) {
       const credit = document.createElement('div');
@@ -106,6 +152,55 @@
       credit.innerHTML = '<span>Ukážka zákazníckeho poradcu</span><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a>';
       chatScreen.appendChild(credit);
     }
+
+    const widget = document.querySelector('#widget');
+    if (widget) {
+      widget.setAttribute('role', 'dialog');
+      widget.setAttribute('aria-modal', 'true');
+      document.querySelector('#openWidget')?.setAttribute('aria-controls', 'widget');
+      document.querySelector('#heroOpen')?.setAttribute('aria-controls', 'widget');
+    }
+    document.querySelector('#chatInput')?.setAttribute('aria-label', 'Napíšte otázku');
+    document.querySelector('#chatForm button[type="submit"]')?.setAttribute('aria-label', 'Odoslať otázku');
+  }
+
+  function setupAccessibility() {
+    const widget = document.querySelector('#widget');
+    const openButtons = [...document.querySelectorAll('#heroOpen, #openWidget')];
+    const closeButton = document.querySelector('#closeWidget');
+    if (!widget || !closeButton) return;
+    let returnFocus = null;
+    const focusable = () => [...widget.querySelectorAll('button:not([disabled]), a[href], input:not([disabled])')].filter((node) => !node.hidden && node.getClientRects().length);
+    const keepFocusInside = (event) => {
+      if (!widget.classList.contains('is-open') || event.key !== 'Tab') return;
+      const nodes = focusable();
+      if (!nodes.length) return;
+      const first = nodes[0];
+      const last = nodes[nodes.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+    openButtons.forEach((button) => button.addEventListener('click', () => {
+      returnFocus = button;
+      requestAnimationFrame(() => focusable()[0]?.focus());
+    }, true));
+    closeButton.addEventListener('click', () => {
+      requestAnimationFrame(() => returnFocus?.focus());
+    });
+    document.addEventListener('keydown', keepFocusInside, true);
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Escape' || !widget.classList.contains('is-open')) return;
+      closeButton.click();
+    }, true);
+    document.querySelectorAll('.mode__button').forEach((button) => button.addEventListener('click', () => {
+      document.querySelectorAll('.mode__button').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+    }));
+    document.querySelectorAll('.mode__button').forEach((button) => button.setAttribute('aria-pressed', String(button.classList.contains('is-active'))));
   }
 
   function orderResult() {
@@ -116,11 +211,12 @@
     card.style.flexDirection = 'column';
     const order = [
       ['.result-main', 1],
-      ['.reason', 2],
-      ['.result-details', 3],
+      ['.result-details', 2],
+      ['.reason', 3],
       ['.result-actions', 4],
       ['.alternative', 5],
-      ['.office-followup', 6]
+      ['.kv-next-best-action', 6],
+      ['.office-followup', 7]
     ];
     order.forEach(([selector, value]) => {
       const element = card.querySelector(selector);
@@ -128,19 +224,59 @@
     });
   }
 
+  function normalizeResultDetails(card) {
+    const details = [...card.querySelectorAll('.result-detail')];
+    const labels = ['Komu sedí', 'Príprava', 'Chuť'];
+    details.forEach((detail, index) => {
+      const label = detail.querySelector('small');
+      if (label && labels[index]) label.textContent = labels[index];
+      detail.hidden = false;
+    });
+  }
+
+  function ensureResultProductName(card, title) {
+    const copy = card.querySelector('.result-main__copy');
+    if (!copy || copy.querySelector('.kv-product-name')) return;
+    const name = document.createElement('span');
+    name.className = 'kv-product-name';
+    name.textContent = title.textContent.trim();
+    copy.prepend(name);
+  }
+
+  function renderNextBestAction(card, productKey) {
+    const existing = card.querySelector('.kv-next-best-action');
+    const offer = chosenUpsell(productKey);
+    if (!offer) {
+      existing?.remove();
+      return;
+    }
+    if (existing) return;
+    const next = document.createElement('aside');
+    next.className = 'kv-next-best-action';
+    next.setAttribute('aria-label', 'Ďalší tip od poradcu');
+    next.innerHTML = `<div class="kv-next-best-action__copy"><small>${offer.eyebrow}</small><b>${offer.title}</b><span>${offer.copy}</span></div><a href="${offer.href}" target="_blank" rel="noreferrer">${offer.cta}<span aria-hidden="true">↗</span></a>`;
+    card.append(next);
+  }
+
   function enhanceResult() {
-    orderResult();
     const title = document.querySelector('.result-head h2');
-    const visual = document.querySelector('.product-visual');
-    if (!title || !visual || visual.classList.contains('kv-has-photo')) return;
+    const card = document.querySelector('.result-card');
+    const visual = card?.querySelector('.product-visual');
+    if (!title || !card || !visual) return;
     const key = productByName[title.textContent.trim()];
     const asset = media[key];
-    if (!asset) return;
-    visual.classList.add('kv-has-photo');
-    visual.replaceChildren(createProductImage(asset, title.textContent.trim(), 'kv-result-photo'));
+    if (asset && !visual.classList.contains('kv-has-photo')) {
+      visual.classList.add('kv-has-photo');
+      visual.replaceChildren(createProductImage(asset, title.textContent.trim(), 'kv-result-photo'));
+    }
+    normalizeResultDetails(card);
+    ensureResultProductName(card, title);
+    renderNextBestAction(card, key);
+    orderResult();
   }
 
   setupStaticBrand();
+  setupAccessibility();
   enhanceResult();
 
   const advisorBody = document.querySelector('#advisorBody');
@@ -148,4 +284,17 @@
     const observer = new MutationObserver(() => enhanceResult());
     observer.observe(advisorBody, { childList: true, subtree: true });
   }
+
+  document.addEventListener('click', (event) => {
+    const option = event.target.closest('.option');
+    if (!option) return;
+    const stepName = document.querySelector('#stepName')?.textContent?.trim();
+    const stepKey = { Použitie: 'use', Chuť: 'profile', Nápoj: 'drink', Sila: 'taste' }[stepName];
+    if (stepKey) answers[stepKey] = option.dataset.value;
+    queueMicrotask(enhanceResult);
+  }, true);
+
+  document.querySelector('#resetAll')?.addEventListener('click', () => {
+    Object.keys(answers).forEach((key) => delete answers[key]);
+  });
 })();

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
-const demo = (query = '') => `${baseURL}/?demo=vitazov${query}`;
+const demo = (query = '') => `${baseURL}/ukazka/vitazov${query}`;
 
 async function expectOpen(page) {
   await expect(page.locator('#widget')).toHaveClass(/is-open/);
@@ -84,15 +84,28 @@ test('office and decaf paths map the verified range', async ({ page }) => {
   await expect(page.locator('.result-button--primary')).toHaveAttribute('href', 'https://kavavitazov.sk/bezkofeinova-decaf/');
 });
 
-test('result is visually reduced to two secondary detail rows', async ({ page }) => {
+test('result shows three decisive detail rows and one optional next action', async ({ page }) => {
   await page.goto(demo('&qa=office'), { waitUntil: 'domcontentloaded' });
   await expectOpen(page);
   await expect(page.locator('.product-visual .kv-result-photo img')).toHaveCount(1);
-  await expect(page.locator('.result-detail').first()).toBeHidden();
+  await expect(page.locator('.result-detail').first()).toBeVisible();
   await expect(page.locator('.result-detail').nth(1)).toBeVisible();
   await expect(page.locator('.result-detail').nth(2)).toBeVisible();
+  await expect(page.locator('.result-detail').nth(0).locator('small')).toHaveText('Komu sedí');
+  await expect(page.locator('.result-detail').nth(1).locator('small')).toHaveText('Príprava');
+  await expect(page.locator('.result-detail').nth(2).locator('small')).toHaveText('Chuť');
   await expect(page.locator('.reason')).toBeVisible();
   await expect(page.locator('.result-button--primary')).toBeVisible();
+  await expect(page.locator('.kv-next-best-action')).toHaveCount(0);
+});
+
+test('next-best action stays relevant and state-driven', async ({ page }) => {
+  await page.goto(demo('&qa=discovery'), { waitUntil: 'domcontentloaded' });
+  await expectOpen(page);
+  await expect(page.locator('.result-head h2')).toHaveText('Etiópia');
+  await expect(page.locator('.kv-next-best-action')).toContainText('Darčekové balenie');
+  await expect(page.locator('.kv-next-best-action a')).toHaveAttribute('href', 'https://kavavitazov.sk/kava-darcekove-balenie/');
+  await expect(page.locator('.kv-next-best-action')).toHaveCount(1);
 });
 
 test('mobile, fallback and reduced motion remain robust', async ({ browser }) => {
