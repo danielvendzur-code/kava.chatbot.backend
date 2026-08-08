@@ -157,8 +157,13 @@
       </section>
 
       <footer class="page__footer">
-        <span>Neoficiálna ukážka pripravená pre Pražiareň Jolka. Nie je súčasťou oficiálneho webu firmy.</span>
-        <a href="${brand.shopUrl}" target="_blank" rel="noreferrer">praziarenjolka.sk</a>
+        <ul class="perks">
+          <li><b>Poradí 24/7</b><span>Aj v nedeľu o polnoci, keď nemá kto odpísať.</span></li>
+          <li><b>Odbúra otázky</b><span>Acidita, praženie a mletie vysvetlené hneď v chate.</span></li>
+          <li><b>Zvyšuje hodnotu košíka</b><span>Ukáže väčšie balenie aj druhú vhodnú kávu.</span></li>
+          <li><b>Vedie k nákupu</b><span>Z odporúčania jedným klikom na produkt.</span></li>
+        </ul>
+        <p class="page__by">Návrh pripravil <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a> · ukážka pre Pražiareň Jolka</p>
       </footer>
     </main>
 
@@ -196,8 +201,10 @@
       <div class="stage">
         <section class="screen is-active" id="advisorScreen" aria-label="Výber kávy">
           <div class="advisor-top">
-            <button class="back" id="back" type="button" aria-label="Späť na predchádzajúci krok">${icons.back}</button>
-            <div class="advisor-top__copy"><b id="stepTitle">Krok 1 zo 4</b><span id="stepName">Chuť</span></div>
+            <div class="advisor-top__row">
+              <button class="back" id="back" type="button" aria-label="Späť na predchádzajúci krok">${icons.back}</button>
+              <div class="advisor-top__copy"><b id="stepTitle">Krok 1 zo 4</b><span id="stepName">Chuť</span></div>
+            </div>
             <div class="progress" id="progress" aria-hidden="true"></div>
           </div>
           <div class="advisor" id="advisor" aria-live="polite"></div>
@@ -205,6 +212,11 @@
         </section>
 
         <section class="screen" id="chatScreen" aria-label="Chat">
+          <button class="entry" id="entry" type="button">
+            <span class="entry__mark">${icons.bean}</span>
+            <span class="entry__copy"><b>Vyberte kávu na mieru</b><span>4 otázky · odporúčanie do minúty</span></span>
+            <span class="entry__arrow">${icons.arrow}</span>
+          </button>
           <div class="chat" id="chat" role="log" aria-live="polite"></div>
           <div class="composer-area">
             <div class="chips" id="chips"></div>
@@ -218,7 +230,7 @@
         </section>
       </div>
 
-      <p class="widget__note">${esc(brand.author)}</p>
+      <p class="widget__note">Chatbot dodáva <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">${esc(brand.author)}</a></p>
     </section>`;
 
   const widget = $('#widget');
@@ -307,60 +319,84 @@
     $('#stepName').textContent = done ? 'Osobné odporúčanie' : steps[state.step].name;
     $('#back').disabled = state.stage === 'questions' && state.step === 0;
     $('#progress').innerHTML = steps
-      .map((_, index) => {
-        if (done || index < state.step) return '<i class="is-done"></i>';
-        return `<i class="${index === state.step ? 'is-active' : ''}"></i>`;
+      .map((step, index) => {
+        const cls = done || index < state.step ? 'is-done' : index === state.step ? 'is-active' : '';
+        return `<i class="${cls}"><b>${esc(step.name)}</b></i>`;
       })
       .join('');
   }
 
+  /** Every option is illustrated with a real Jolka photo; methods also get a badge. */
   function optionVisual(option) {
-    if (option.product) {
-      const product = byId[option.product];
-      return `<span class="option__visual"><img src="${product.photo}" alt="" loading="lazy" width="60" height="60"></span>`;
-    }
-    if (option.dots === -1) return `<span class="option__visual option__visual--explore">${icons.explore}</span>`;
-    if (typeof option.dots === 'number') return `<span class="option__visual">${dots(option.dots - 1)}</span>`;
-    return `<span class="option__visual">${glyph(option.glyph)}</span>`;
+    const product = byId[option.product];
+    const badge = option.glyph
+      ? `<span class="option__badge">${glyph(option.glyph)}</span>`
+      : typeof option.dots === 'number'
+        ? `<span class="option__badge option__badge--dots">${dots(option.dots - 1)}</span>`
+        : '';
+    return `<span class="option__visual"><img src="${product.photo}" alt="" loading="lazy" width="120" height="96">${badge}</span>`;
   }
 
   function renderQuestion() {
-    advisorFoot.hidden = true;
-    advisorFoot.innerHTML = '';
     const step = steps[state.step];
     const selected = state.answers[step.key];
+    const last = state.step === steps.length - 1;
+
     advisor.innerHTML = `
       <div class="question"><h2>${esc(step.title)}</h2></div>
       <div class="options" role="group" aria-label="${esc(step.title)}">
         ${step.options
           .map((option, index) => {
             const isSelected = selected === option.value;
-            const cls = isSelected ? ' is-selected' : selected ? ' is-dimmed' : '';
-            return `<button class="option${cls}" type="button" data-value="${option.value}" aria-pressed="${isSelected}" style="animation-delay:${index * 60}ms">
+            return `<button class="option${isSelected ? ' is-selected' : ''}" type="button" data-value="${option.value}" aria-pressed="${isSelected}" style="--reveal:${index * 70}ms">
               ${optionVisual(option)}
               <span class="option__copy"><b>${esc(option.title)}</b><small>${esc(option.detail)}</small></span>
               <span class="option__mark">${icons.check}</span>
             </button>`;
           })
           .join('')}
-      </div>
-      <p class="advisor-note">Vyberáme z ${products.length} káv, ktoré má Pražiareň Jolka práve v ponuke.</p>`;
+      </div>`;
+
+    advisorFoot.hidden = false;
+    advisorFoot.innerHTML = `
+      <button class="cta" type="button" id="next" ${selected ? '' : 'disabled'}>
+        ${last ? 'Zobraziť moju kávu' : 'Pokračovať'} ${icons.arrow}
+      </button>
+      <span class="advisor-foot__hint">${
+        selected ? esc(byId[step.options.find((o) => o.value === selected).product].name) : `Vyberáme z ${products.length} káv v ponuke Jolky`
+      }</span>`;
+
     $$('.option', advisor).forEach((button) =>
-      button.addEventListener('click', () => answer(button.dataset.value))
+      button.addEventListener('click', () => select(button.dataset.value))
     );
+    $('#next').addEventListener('click', advance);
   }
 
-  function answer(value) {
+  function select(value) {
     if (state.busy || state.stage !== 'questions') return;
-    state.busy = true;
     state.answers[steps[state.step].key] = value;
-    renderQuestion();
+    const step = steps[state.step];
+    $$('.option', advisor).forEach((button) => {
+      const on = button.dataset.value === value;
+      button.classList.toggle('is-selected', on);
+      button.setAttribute('aria-pressed', String(on));
+    });
+    const next = $('#next');
+    next.disabled = false;
+    $('.advisor-foot__hint').textContent = byId[step.options.find((o) => o.value === value).product].name;
+  }
+
+  function advance() {
+    if (state.busy || !state.answers[steps[state.step].key]) return;
+    state.busy = true;
+    advisor.classList.add('is-leaving');
     setTimeout(() => {
       if (state.step < steps.length - 1) state.step += 1;
       else state.stage = 'result';
       state.busy = false;
+      advisor.classList.remove('is-leaving');
       renderAdvisor();
-    }, 420);
+    }, 180);
   }
 
   function renderResult() {
@@ -402,6 +438,12 @@
             </div>
           </div>
           <p class="acidity-note">${esc(product.acidityNote)}</p>
+
+          ${
+            product.bulk
+              ? `<div class="bulk"><b>${esc(product.bulk.label)}</b><span>${esc(product.bulk.saving)}</span></div>`
+              : ''
+          }
 
           ${
             alternative
@@ -459,16 +501,6 @@
     chatLog.appendChild(row);
     requestAnimationFrame(() => { chatLog.scrollTop = chatLog.scrollHeight; });
     return row;
-  }
-
-  function addAdvisorCta() {
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'chat-cta';
-    button.innerHTML = `${esc(chatCopy.cta)} ${icons.arrow}`;
-    button.addEventListener('click', () => setMode('advisor'));
-    chatLog.appendChild(button);
-    requestAnimationFrame(() => { chatLog.scrollTop = chatLog.scrollHeight; });
   }
 
   function showTyping() {
@@ -542,7 +574,6 @@
     chatLog.innerHTML = '';
     state.history = [];
     addMessage(esc(chatCopy.welcome));
-    addAdvisorCta();
   }
 
   /* ------------------------------------------------------------- wiring */
@@ -551,6 +582,7 @@
   openButton.addEventListener('click', openWidget);
   teaser.addEventListener('click', openWidget);
   $('#close').addEventListener('click', closeWidget);
+  $('#entry').addEventListener('click', () => setMode('advisor'));
   $('#reset').addEventListener('click', () => {
     resetAdvisor();
     seedChat();

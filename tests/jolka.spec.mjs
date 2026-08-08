@@ -27,7 +27,9 @@ async function answer(page, value) {
   await option.click();
   await expect(option).toHaveClass(/is-selected/);
   await expect(option.locator('.option__copy b')).toBeVisible();
-  await page.waitForTimeout(480);
+  await expect(page.locator('#next')).toBeEnabled();
+  await page.locator('#next').click();
+  await page.waitForTimeout(320);
 }
 
 async function runAdvisor(page, values) {
@@ -55,6 +57,10 @@ test('owner landing carries the real Jolka identity and photography', async ({ p
   expect(photos.length).toBeGreaterThanOrEqual(2);
   photos.forEach((p) => expect(p.w, `${p.src} failed to decode`).toBeGreaterThan(0));
 
+  // owner-facing benefits, and the third-party attribution stays visible
+  await expect(page.locator('.perks li')).toHaveCount(4);
+  await expect(page.locator('.page__by')).toContainText('mojchatbot.sk');
+
   expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(1440);
   await page.screenshot({ path: 'artifacts/jolka-desktop-landing.png' });
   expect(errors).toEqual([]);
@@ -72,11 +78,16 @@ test('advisor is four weighted steps and lands on a real product page', async ({
   await expect(page.locator('#stepTitle')).toHaveText('Krok 1 zo 4');
   await expect(page.locator('.option')).toHaveCount(4);
   await expect(page.locator('.option__visual img')).toHaveCount(4);
+  // nothing advances until the customer confirms
+  await expect(page.locator('#next')).toBeDisabled();
 
   await answer(page, 'fruity');
   await expect(page.locator('#stepTitle')).toHaveText('Krok 2 zo 4');
+  await expect(page.locator('.option__visual img')).toHaveCount(4);
   await answer(page, 'filter');
+  await expect(page.locator('.option__visual img')).toHaveCount(3);
   await answer(page, 'black');
+  await expect(page.locator('.option__visual img')).toHaveCount(4);
   await answer(page, 'bright');
 
   await expect(page.locator('.result__headline h2')).toHaveText('Ethiopia SIDAMO GR.2');
@@ -128,9 +139,11 @@ test('back keeps the answer, alternative swaps the product, reset clears everyth
   await expect(page.locator('#stepTitle')).toHaveText('Krok 1 zo 4');
   await expect(page.locator('.option.is-selected')).toHaveCount(1);
   await expect(page.locator('.option.is-selected')).toHaveAttribute('data-value', 'chocolate');
+  // a remembered answer keeps the continue button live
+  await expect(page.locator('#next')).toBeEnabled();
 
-  await page.locator('.option[data-value="chocolate"]').click();
-  await page.waitForTimeout(480);
+  await page.locator('#next').click();
+  await page.waitForTimeout(320);
   await answer(page, 'automat');
   await answer(page, 'milk');
   await answer(page, 'none');
@@ -166,16 +179,16 @@ test('chat has four large chips, no contact block, and answers from the catalogu
   // no phone / e-mail / contact row anywhere
   const body = await page.locator('body').innerHTML();
   expect(body).not.toMatch(/tel:|mailto:/);
-  await expect(page.locator('.widget__note')).toHaveText('mojchatbot.sk');
+  await expect(page.locator('.widget__note')).toContainText('mojchatbot.sk');
 
   await expect(page.locator('.msg .bubble')).toHaveCount(1);
-  await expect(page.locator('.chat-cta')).toBeVisible();
+  await expect(page.locator('#entry')).toBeVisible();
 
   await page.locator('.chip').nth(3).click();
   await expect(page.locator('.msg--user .bubble')).toHaveText('Niečo netradičné');
   await expect(page.locator('.msg:not(.msg--user) .bubble').last()).toContainText('Vietnam Lang Biang', { timeout: 5000 });
 
-  await page.locator('.chat-cta').click();
+  await page.locator('#entry').click();
   await expect(page.locator('#advisorScreen')).toHaveClass(/is-active/);
   expect(errors).toEqual([]);
 });
@@ -230,6 +243,20 @@ for (const [width, height] of [[390, 844], [360, 800]]) {
     expect(errors).toEqual([]);
   });
 }
+
+test('every advisor step fits its pane without scrolling', async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto(JOLKA, { waitUntil: 'networkidle' });
+  await page.locator('#heroOpen').click();
+  for (const value of ['chocolate', 'automat', 'milk', 'none']) {
+    const spill = await page.evaluate(() => {
+      const a = document.querySelector('#advisor');
+      return a.scrollHeight - a.clientHeight;
+    });
+    expect(spill, `step ${value} overflows its pane`).toBeLessThanOrEqual(0);
+    await answer(page, value);
+  }
+});
 
 test('no nested interactive elements and no text below 11px', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });

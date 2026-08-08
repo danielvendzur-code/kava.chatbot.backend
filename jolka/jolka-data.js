@@ -46,6 +46,7 @@ window.JOLKA = (() => {
       priceUnit: '250 g',
       priceFrom: '5,90 €',
       weights: '75 g – 1 kg',
+      bulk: { label: '1 kg za 44,00 €', saving: 'o 10 € menej než štyri 250 g balenia' },
       notes: ['čokoláda', 'orechy', 'škorica a karamel'],
       acidity: 0,
       acidityNote: 'Pražiareň ju popisuje ako kávu s minimálnou až žiadnou aciditou.',
@@ -66,6 +67,7 @@ window.JOLKA = (() => {
       priceUnit: '250 g',
       priceFrom: '5,90 €',
       weights: '75 g – 1 kg',
+      bulk: { label: '1 kg za 44,00 €', saving: 'o 10 € menej než štyri 250 g balenia' },
       notes: ['čokoláda', 'orechy', 'hustá kréma'],
       acidity: 0,
       acidityNote: 'Podľa pražiarne má takmer žiadnu aciditu.',
@@ -86,6 +88,7 @@ window.JOLKA = (() => {
       priceUnit: '500 g',
       priceFrom: '17,00 €',
       weights: '500 g a 1 kg',
+      bulk: { label: '1 kg za 30,00 €', saving: 'o 4 € menej než dve 500 g balenia' },
       notes: ['čokoláda a oriešky', 'krémová textúra', 'plné telo'],
       acidity: 0,
       acidityNote: 'Pražiareň uvádza minimálnu až žiadnu aciditu.',
@@ -106,6 +109,7 @@ window.JOLKA = (() => {
       priceUnit: '250 g',
       priceFrom: '14,00 €',
       weights: '250 g – 1 kg',
+      bulk: { label: '1 kg za 46,00 €', saving: 'o 10 € menej než štyri 250 g balenia' },
       notes: ['horkosladká', 'bohatá pena', 'bez ovocnej kyslosti'],
       acidity: 0,
       acidityNote: 'Pražiareň ju popisuje ako plnú horkosladkú chuť bez ovocnej kyslosti.',
@@ -126,6 +130,7 @@ window.JOLKA = (() => {
       priceUnit: '250 g',
       priceFrom: '5,90 €',
       weights: '75 g – 1 kg',
+      bulk: { label: '1 kg za 46,00 €', saving: 'o 10 € menej než štyri 250 g balenia' },
       notes: ['plná chuť', 'jemná acidita', 'vyšší kofeín'],
       acidity: 1,
       acidityNote: 'Pražiareň uvádza plnú chuť a jemnú aciditu vďaka vybraným arabikám.',
@@ -146,6 +151,7 @@ window.JOLKA = (() => {
       priceUnit: '250 g',
       priceFrom: '5,90 €',
       weights: '75 g – 1 kg',
+      bulk: { label: '1 kg za 44,00 €', saving: 'o 10 € menej než štyri 250 g balenia' },
       notes: ['čokoláda a karamel', 'lieskové oriešky', 'zamatové telo'],
       acidity: 0,
       acidityNote: 'Pražiareň ju popisuje ako kávu s veľmi nízkou aciditou.',
@@ -166,6 +172,7 @@ window.JOLKA = (() => {
       priceUnit: '250 g',
       priceFrom: '5,90 €',
       weights: '75 g – 1 kg',
+      bulk: { label: '1 kg za 44,00 €', saving: 'o 10 € menej než štyri 250 g balenia' },
       notes: ['sladká až čokoládová', 'plné telo', 'vyšší kofeín'],
       acidity: 0,
       acidityNote: 'Pražiareň uvádza minimálnu, jemnú aciditu.',
@@ -186,6 +193,7 @@ window.JOLKA = (() => {
       priceUnit: '250 g',
       priceFrom: '5,90 €',
       weights: '75 g – 1 kg',
+      bulk: { label: '1 kg za 44,00 €', saving: 'o 10 € menej než štyri 250 g balenia' },
       notes: ['kakao', 'karamel a vanilka', 'jemné korenie'],
       acidity: 1,
       acidityNote: 'Pražiareň uvádza nízku, príjemnú aciditu.',
@@ -206,6 +214,7 @@ window.JOLKA = (() => {
       priceUnit: '250 g',
       priceFrom: '5,90 €',
       weights: '75 g – 1 kg',
+      bulk: { label: '1 kg za 46,00 €', saving: 'o 10 € menej než štyri 250 g balenia' },
       notes: ['slaný karamel', 'škorica', 'orechy'],
       acidity: 1,
       acidityNote: 'Pražiareň uvádza plné telo a príjemnú aciditu.',
@@ -226,6 +235,7 @@ window.JOLKA = (() => {
       priceUnit: '250 g',
       priceFrom: '5,90 €',
       weights: '75 g – 1 kg',
+      bulk: { label: '1 kg za 46,00 €', saving: 'o 10 € menej než štyri 250 g balenia' },
       notes: ['ovocie', 'čokoláda', 'čistá šálka'],
       acidity: 3,
       acidityNote: 'Pražiareň ju popisuje ako kávu s vysokou aciditou a chuťou ovocia a čokolády.',
@@ -246,6 +256,7 @@ window.JOLKA = (() => {
       priceUnit: '250 g',
       priceFrom: '5,90 €',
       weights: '75 g – 1 kg',
+      bulk: { label: '1 kg za 46,00 €', saving: 'o 10 € menej než štyri 250 g balenia' },
       notes: ['citrusy', 'jazmín', 'bergamot'],
       acidity: 3,
       acidityNote: 'Pražiareň uvádza vysokú, citrónovú aciditu a dlhotrvajúcu dochuť.',
@@ -308,6 +319,7 @@ window.JOLKA = (() => {
       priceUnit: '250 g',
       priceFrom: '5,90 €',
       weights: '75 g – 1 kg',
+      bulk: { label: '1 kg za 46,00 €', saving: 'o 10 € menej než štyri 250 g balenia' },
       notes: ['jahody a čučoriedky', 'citrusy', 'mliečna čokoláda'],
       acidity: 1,
       acidityNote: 'Pražiareň uvádza nízku aciditu a ovocnú chuť.',
@@ -321,53 +333,56 @@ window.JOLKA = (() => {
     }
   ];
 
-  /** Advisor — four steps, weighted scoring, no dead ends. */
+  /**
+   * Advisor — four steps, weighted scoring, no dead ends.
+   *
+   * Every option carries `product`: a real coffee from the catalogue that embodies
+   * that answer, so each step is illustrated with genuine Jolka photography rather
+   * than stock imagery. `glyph` puts a meaning badge over the photo where the
+   * answer is about a method rather than a taste.
+   */
   const steps = [
     {
       key: 'taste',
-      kicker: 'Krok 1',
       name: 'Chuť',
       title: 'Aká chuť vám v šálke sadne?',
       options: [
-        { value: 'chocolate', title: 'Čokoláda a orechy', detail: 'Klasická sladká káva bez ovocnosti', product: 'zmes-cokolada' },
-        { value: 'balanced', title: 'Vyvážená a sladká', detail: 'Plné telo, karamel, jemná acidita', product: 'honduras-san-andres' },
-        { value: 'fruity', title: 'Ovocná a svieža', detail: 'Citrusy, kvety, tropické ovocie', product: 'ethiopia-sidamo' },
-        { value: 'bold', title: 'Výrazná a horkosladká', detail: 'Sila, hustá kréma, tmavšia chuť', product: 'horke-zlato' }
+        { value: 'chocolate', title: 'Čokoláda a orechy', detail: 'Klasika bez ovocnosti', product: 'zmes-cokolada' },
+        { value: 'balanced', title: 'Vyvážená a sladká', detail: 'Plné telo, karamel', product: 'honduras-san-andres' },
+        { value: 'fruity', title: 'Ovocná a svieža', detail: 'Citrusy a kvety', product: 'ethiopia-sidamo' },
+        { value: 'bold', title: 'Výrazná a horká', detail: 'Sila a hustá kréma', product: 'horke-zlato' }
       ]
     },
     {
       key: 'prep',
-      kicker: 'Krok 2',
       name: 'Príprava',
       title: 'Ako kávu pripravujete?',
       options: [
-        { value: 'automat', title: 'Automatický kávovar', detail: 'Jedno tlačidlo, každodenná káva', glyph: 'automat' },
-        { value: 'lever', title: 'Pákový kávovar', detail: 'Espresso pripravujete ručne', glyph: 'lever' },
-        { value: 'moka', title: 'Moka kanvička alebo džezva', detail: 'Výrazná príprava na sporáku', glyph: 'moka' },
-        { value: 'filter', title: 'Filter, V60 alebo French press', detail: 'Prekvapkávanie a zalievanie', glyph: 'filter' }
+        { value: 'automat', title: 'Automatický kávovar', detail: 'Jedno tlačidlo', product: '9-to-fine', glyph: 'automat' },
+        { value: 'lever', title: 'Pákový kávovar', detail: 'Espresso ručne', product: 'guatemala-shb', glyph: 'lever' },
+        { value: 'moka', title: 'Moka alebo džezva', detail: 'Príprava na sporáku', product: 'brazil-cerrado', glyph: 'moka' },
+        { value: 'filter', title: 'Filter alebo V60', detail: 'Prekvapkávanie', product: 'vietnam-lang-biang', glyph: 'filter' }
       ]
     },
     {
       key: 'drink',
-      kicker: 'Krok 3',
       name: 'Nápoj',
       title: 'Pijete ju čiernu alebo s mliekom?',
       options: [
-        { value: 'black', title: 'Čiernu', detail: 'Espresso, lungo alebo filter', glyph: 'black' },
-        { value: 'milk', title: 'S mliekom', detail: 'Cappuccino, flat white, latte', glyph: 'milk' },
-        { value: 'both', title: 'Striedam oboje', detail: 'Káva musí zvládnuť aj mlieko', glyph: 'both' }
+        { value: 'black', title: 'Čiernu', detail: 'Espresso alebo filter', product: 'colombia-sofia', glyph: 'black' },
+        { value: 'milk', title: 'S mliekom', detail: 'Cappuccino a latte', product: 'zmes-jolka', glyph: 'milk' },
+        { value: 'both', title: 'Striedam oboje', detail: 'Musí zvládnuť aj mlieko', product: 'sviatocna-zmes', glyph: 'both' }
       ]
     },
     {
       key: 'acidity',
-      kicker: 'Krok 4',
       name: 'Acidita',
       title: 'Koľko sviežej kyslosti znesiete?',
       options: [
-        { value: 'none', title: 'Čo najmenej', detail: 'Kyslá káva mi nesedí', dots: 0 },
-        { value: 'mild', title: 'Jemnú', detail: 'Nevadí, ak je decentná', dots: 1 },
-        { value: 'bright', title: 'Rád svieže kávy', detail: 'Citrusy a ovocie vítam', dots: 3 },
-        { value: 'explore', title: 'Prekvapte ma', detail: 'Chcem skúsiť niečo netradičné', dots: -1 }
+        { value: 'none', title: 'Čo najmenej', detail: 'Kyslá káva mi nesedí', product: 'brazil-cerrado', dots: 0 },
+        { value: 'mild', title: 'Jemnú', detail: 'Ak je decentná, nevadí', product: 'india-plantation', dots: 1 },
+        { value: 'bright', title: 'Mám rád svieže', detail: 'Citrusy a ovocie vítam', product: 'ethiopia-sidamo', dots: 3 },
+        { value: 'explore', title: 'Prekvapte ma', detail: 'Chcem niečo netradičné', product: 'jamaica-blue-mountain', glyph: 'explore' }
       ]
     }
   ];
