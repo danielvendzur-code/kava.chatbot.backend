@@ -83,3 +83,48 @@
 .advisor-entry{min-height:76px;border-radius:16px}
 .chip{font-size:10.5px}
 .composer input{font-size:13px}
+
+/* Product-like widget shell */
+.launcher__button{background:var(--cobalt-dark);box-shadow:0 18px 42px -14px rgba(23,59,136,.64)}
+.launcher__button:hover{background:var(--cobalt)}
+.launcher__status,.online-dot{background:var(--teal)}
+.widget{width:min(480px,calc(100vw - 32px));height:min(790px,calc(100dvh - 32px));right:max(16px,env(safe-area-inset-right));bottom:max(16px,env(safe-area-inset-bottom));border-color:rgba(31,48,86,.17);border-radius:30px;background:var(--paper-strong);box-shadow:var(--shadow-panel);transform:translateY(30px) scale(.92);transition:opacity .28s ease,transform .46s cubic-bezier(.16,1,.3,1)}
+.widget__header{min-height:82px;padding:12px 14px 12px 19px;border-bottom-color:var(--ink-10);background:rgba(255,254,250,.97)}
+.widget-brand__logo{width:132px;height:34px}
+.widget-brand__status{margin-left:8px;color:var(--ink);font-size:12px;font-weight:720}
+.online-dot{width:10px;height:10px;box-shadow:0 0 0 4px rgba(19,123,127,.11)}
+.icon-button{width:48px;height:48px;border-radius:50%;background:var(--ink-06)}
+.mode{min-height:70px;margin:12px 18px 0;padding:5px;border-radius:999px;background:var(--ink-06)}
+.mode__indicator{left:5px;top:5px;bottom:5px;width:calc(50% - 5px);border-radius:999px;background:var(--ink);box-shadow:0 12px 24px -14px rgba(21,21,21,.7);transition:transform .42s cubic-bezier(.16,1,.3,1)}
+.mode__button{min-height:60px;gap:10px;border-radius:999px;font-size:14px;font-weight:760}
+.mode__button svg{width:21px;height:21px}
+.chat-screen{padding:14px 18px 14px;gap:12px}
+.advisor-entry{min-height:112px;border:0;border-radius:28px;padding:16px 18px;background:linear-gradient(135deg,var(--cobalt),var(--cobalt-dark));color:#fff;grid-template-columns:58px 1fr 48px;gap:15px;box-shadow:0 18px 34px -23px rgba(33,74,164,.75)}
+.advisor-entry:hover{border-color:transparent;background:linear-gradient(135deg,#2957bc,var(--cobalt-dark));box-shadow:0 22px 42px -23px rgba(33,74,164,.9)}
+.advisor-entry__mark{width:58px;height:58px;display:grid;place-items:center;padding:11px;border:2px solid rgba(255,255,255,.72);border-radius:50%;color:#fff}
+.advisor-entry__copy{gap:5px}
+.advisor-entry__copy b{font-size:18px;letter-spacing:-.025em}
+.advisor-entry__copy span{color:rgba(255,255,255,.78);font-size:12px}
+.advisor-entry__arrow{width:48px;height:48px;display:grid;place-items:center;border-radius:50%;color:var(--cobalt-dark);background:#fff}
+.advisor-entry__arrow svg{width:20px;height:20px}
+.chat{justify-content:flex-start;padding:12px 0 4px;gap:12px}
+.message{align-items:flex-start}
+.message__avatar{width:38px;height:38px;padding:8px;border-radius:50%;background:var(--teal)}
+.message__stack{max-width:82%}
+.bubble{padding:14px 16px;border:1px solid var(--ink-10);border-radius:22px 22px 22px 8px;background:#fff;font-size:13.5px;line-height:1.48;box-shadow:0 12px 28px -22px rgba(21,21,21,.5)}
+.message--user .bubble{border-color:var(--cobalt);background:var(--cobalt);color:#fff}
+.timestamp{display:none}
+.chat-bottom{gap:10px;background:var(--paper-strong)}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.chip{min-width:0;min-height:58px;padding:8px 13px;border-radius:19px;background:#fff;font-size:11px;line-height:1.25;text-align:center;opacity:0;animation:option-in .42s cubic-bezier(.22,1,.36,1) forwards}
+.chip:nth-child(1){animation-delay:.08s}.chip:nth-child(2){animation-delay:.13s}.chip:nth-child(3){animation-delay:.18s}.chip:nth-child(4){animation-delay:.23s}
+.chip:hover{border-color:var(--cobalt);background:var(--cobalt-10)}
+.chip::before{background:var(--cobalt)}
+.composer__shell{min-height:64px;padding:6px 7px 6px 18px;border-radius:999px;background:#fff}
+.composer__shell:focus-within{border-color:var(--cobalt);box-shadow:0 0 0 4px var(--cobalt-10)}
+.composer input{height:50px;font-size:14px}
+.composer__send{width:50px;height:50px;border-radius:50%;background:var(--cobalt)}
+.composer__send:hover{background:var(--cobalt-dark)}
+.composer__send svg{width:20px;height:20px}
+.widget-credit,.advisor-credit{min-height:34px;color:var(--ink-48);font-size:9.5px}
+.widget-credit a,.advisor-credit a{min-height:34px;color:var(--ink);text-decoration:none}

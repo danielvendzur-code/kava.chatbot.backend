@@ -58,6 +58,75 @@
   .assistant-mark__c{stroke-dashoffset:0!important}
 }
 
+/* Final responsive behavior for the cobalt editorial pass. */
+@media (max-height:800px) and (min-width:641px){
+  .widget{height:calc(100dvh - 24px);bottom:12px}
+  .widget__header{min-height:72px}
+  .mode{min-height:64px;margin-top:9px}
+  .mode__button{min-height:54px}
+  .advisor-entry{min-height:96px}
+  .chip{min-height:50px}
+}
+@media (max-width:980px){
+  .hero{grid-template-columns:minmax(0,1fr) minmax(390px,.9fr);gap:26px}
+  .hero h1{font-size:clamp(48px,5.4vw,64px)}
+  .hero-visual{min-height:590px}
+  .hero-visual::before{width:520px;height:540px}
+  .hero-visual>img{height:470px}
+}
+@media (max-width:760px){
+  .site-head{min-height:74px}
+  .site-head__link{display:none}
+  .hero{grid-template-columns:1fr;gap:18px;padding:28px 0 88px}
+  .hero h1{font-size:clamp(44px,12vw,62px)}
+  .hero-benefits{max-width:none}
+  .hero-benefits li{grid-template-columns:52px 1fr}
+  .hero-visual{min-height:480px}
+  .hero-visual::before{width:520px;height:480px;right:-160px}
+  .hero-visual::after{width:320px;height:380px}
+  .hero-visual>img{left:20px;width:calc(100% - 20px);height:420px}
+}
+@media (max-width:640px){
+  .widget{inset:0;width:100%;height:100dvh;max-height:none;border:0;border-radius:0;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
+  .widget__header{min-height:76px;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(11px,env(safe-area-inset-right))}
+  .widget-brand__logo{width:120px;max-width:120px;height:32px}
+  .widget-brand__status{display:flex;margin-left:3px;font-size:11px}
+  .icon-button{width:46px;height:46px}
+  .mode{min-height:68px;margin:10px 12px 0}
+  .mode__button{min-height:58px;font-size:13px}
+  .chat-screen,.advisor-screen{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}
+  .advisor-entry{min-height:98px;padding:13px 15px;grid-template-columns:52px 1fr 44px;border-radius:24px}
+  .advisor-entry__mark{width:52px;height:52px}
+  .advisor-entry__copy b{font-size:17px}
+  .chat{padding-top:12px}
+  .chips{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .chip{min-height:54px;padding-inline:8px;font-size:10.5px}
+  .advisor-progress{min-height:64px;grid-template-columns:42px 92px 1fr;gap:9px}
+  .progress-back{width:42px;height:42px}
+  .question h2{font-size:27px}
+  .options{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .option{min-height:132px;grid-template-columns:1fr;grid-template-rows:70px auto}
+  .option__photo{width:100%;height:70px;min-height:0}
+  .option__copy b{font-size:11.2px}
+  .option__copy small{display:none}
+  .options--3 .option:last-child{grid-column:1/-1;min-height:104px;grid-template-columns:108px 1fr;grid-template-rows:1fr}
+  .options--3 .option:last-child .option__photo{width:108px;height:84px}
+  .question-continue{min-height:56px}
+  .advisor-credit{min-height:28px}
+}
+@media (max-width:370px){
+  .widget-brand__status{font-size:10px}
+  .widget-brand__logo{width:106px;max-width:106px}
+  .mode__button b{font-size:11.5px}
+  .advisor-progress{grid-template-columns:38px 80px 1fr}
+  .progress{gap:5px}
+  .question h2{font-size:24px}
+  .option{min-height:122px;grid-template-rows:64px auto;padding:7px}
+  .option__photo{height:64px}
+  .option__copy b{font-size:10.6px}
+  .option__state{right:10px;top:10px;width:27px;height:27px}
+}
+
 @media (max-width:760px){
   .site-head{min-height:66px}
   .site-brand__logo{width:138px;height:34px}
@@ -104,4 +173,19 @@
   .screen,.advisor{min-width:0;max-width:100%}
   .result-actions{grid-template-columns:minmax(0,1fr) minmax(0,.66fr);min-width:0}
   .result-button{min-width:0;padding-left:8px;padding-right:8px;overflow-wrap:anywhere}
+}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;gap:18px;padding:28px 0 88px}
+  .hero h1{font-size:clamp(44px,12vw,58px);letter-spacing:-.06em}
+  .hero-benefits li{grid-template-columns:52px 1fr;grid-template-rows:auto;gap:14px;padding:12px 0}
+  .hero-benefits li>span:last-child{font-size:inherit}
+  .hero .primary-action{width:100%;margin-top:24px}
+  .hero-visual{min-height:480px}
+}
+@media (max-width:390px){
+  .hero h1{font-size:44px}
+  .hero-benefits li{grid-template-columns:48px 1fr;gap:12px}
+  .hero-benefits small{font-size:11px}
+  .mode__button b{font-size:12px}
 }

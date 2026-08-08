@@ -33,10 +33,10 @@
   }
   function fallbackAnswer(text) {
     const query = text.toLowerCase(); const products = config.products;
-    if (query.includes('bez kof') || query.includes('večer')) { const product = products.find((item) => item.caffeine.includes('decaf')); return `Momentálne odpovedám v lokálnom režime. Z aktuálnej ukážkovej ponuky je bez kofeínu <b>${escapeHTML(product.name)}</b>. <a href="${escapeHTML(product.url)}" target="_blank" rel="noreferrer">Pozrieť produkt</a>.`; }
-    if (query.includes('mlie') || query.includes('capp') || query.includes('latte')) { const product = products.find((item) => item.id === 'holyshot'); return `Momentálne odpovedám v lokálnom režime. Do mlieka by som začal s <b>${escapeHTML(product.name)}</b>. ${escapeHTML(product.reason)}`; }
-    if (query.includes('ovoc') || query.includes('filter') || query.includes('svie')) { const product = products.find((item) => item.id === 'weithaga'); return `Momentálne odpovedám v lokálnom režime. Prístupná ovocná voľba je <b>${escapeHTML(product.name)}</b>. ${escapeHTML(product.plainTaste)}`; }
-    return 'Momentálne odpovedám v lokálnom režime. Najpresnejší výsledok dá Výber kávy: zohľadní prípravu, chuť, mlieko aj kofeín a odkáže priamo na konkrétny produkt.';
+    if (query.includes('bez kof') || query.includes('večer')) { const product = products.find((item) => item.caffeine.includes('decaf')); return `Bezkofeínová voľba je <b>${escapeHTML(product.name)}</b>. <a href="${escapeHTML(product.url)}" target="_blank" rel="noreferrer">Pozrieť produkt</a>.`; }
+    if (query.includes('mlie') || query.includes('capp') || query.includes('latte')) { const product = products.find((item) => item.id === 'holyshot'); return `Do mlieka by som začal s <b>${escapeHTML(product.name)}</b>. ${escapeHTML(product.reason)}`; }
+    if (query.includes('ovoc') || query.includes('filter') || query.includes('svie')) { const product = products.find((item) => item.id === 'weithaga'); return `Prístupná ovocná voľba je <b>${escapeHTML(product.name)}</b>. ${escapeHTML(product.plainTaste)}`; }
+    return 'Najpresnejší výsledok dá Výber kávy: zohľadní prípravu, chuť, mlieko aj kofeín a odkáže priamo na konkrétny produkt.';
   }
   async function requestAI(text) {
     app.state.chatHistory.push({ role: 'user', content: text });

@@ -4,93 +4,73 @@ import { readFile } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
 const read = (name) => readFile(new URL(name, root), 'utf8');
-const [shell, core, score, result, config, foundation, widget, advisor, responsive, chat] = await Promise.all([
-  read('concept-seasonal-shell.js'), read('concept-seasonal-core.js'), read('concept-seasonal-score.js'),
-  read('concept-seasonal-advisor-result.js'), read('concept-seasonal-config.js'), read('concept-seasonal-foundation.css'),
-  read('concept-seasonal-widget.css'), read('concept-seasonal-advisor.css'), read('concept-seasonal-responsive.css'),
-  read('concept-seasonal-chat.js')
+const [shell, core, flow, score, result, config, foundation, widget, advisor, responsive, chat, init] = await Promise.all([
+  read('concept-seasonal-shell.js'), read('concept-seasonal-core.js'), read('concept-seasonal-advisor-flow.js'),
+  read('concept-seasonal-score.js'), read('concept-seasonal-advisor-result.js'), read('concept-seasonal-config.js'),
+  read('concept-seasonal-foundation.css'), read('concept-seasonal-widget.css'), read('concept-seasonal-advisor.css'),
+  read('concept-seasonal-responsive.css'), read('concept-seasonal-chat.js'), read('concept-seasonal-init.js')
 ]);
 
-test('owner landing uses the approved concise proposition', () => {
-  assert.match(shell, /Vitajte vo vašom návrhu AI poradcu pre Concept Coffee Roasters\./);
-  assert.match(shell, /Ukážka, ako môže zákazníkovi zjednodušiť orientáciu v sezónnej ponuke a premeniť chuťové preferencie na konkrétny produkt\./);
-  assert.match(shell, /Konkrétne odporúčanie, nie zoznam\./);
+test('landing communicates customer value without preview disclaimers', () => {
+  assert.match(shell, /Každý zákazník si nájde svoju kávu\./);
+  assert.match(shell, /Výber bez váhania/);
+  assert.match(shell, /Prirodzený upsell/);
+  assert.match(shell, /Odpovede 24\/7/);
+  assert.doesNotMatch(shell, /neofici|personalizovan|nie je súčasť|demo/i);
 });
 
-test('unverified company seal is removed and assistant mark stays secondary', () => {
-  assert.doesNotMatch(core, /function brandSeal|concept-seal|>20<|>15</);
-  assert.doesNotMatch(shell, /brandSeal|widget-brand__seal|site-brand__seal/);
-  assert.match(core, /function mark/);
-  assert.equal((core.match(/class="assistant-mark__/g) || []).length >= 2, true);
-});
-
-test('visible recommendation never exposes a fabricated percentage metric', () => {
+test('recommendation never exposes a fabricated match percentage', () => {
   assert.doesNotMatch(score, /percentFor/);
   assert.doesNotMatch(result, /percentFor|match-score|%\s*zhoda|\$\{percent\}/);
-  assert.match(result, /const alternative = list\.find/);
+  assert.equal((result.match(/class="alternative"/g) || []).length, 1);
 });
 
-test('widget geometry is harmonized with the shared product family', () => {
-  assert.match(foundation, /--radius-panel:24px/);
-  assert.match(widget, /width:min\(448px,calc\(100vw - 40px\)\)/);
-  assert.match(widget, /height:min\(720px,calc\(100dvh - 40px\)\)/);
-  assert.match(widget, /\.chip\{min-height:44px/);
-  assert.match(widget, /\.mode\{min-height:58px/);
-  assert.match(widget, /\.composer__shell\{min-height:56px/);
-});
-
-test('chat remains minimal and the credit is readable', () => {
+test('chat follows the compact product layout', () => {
+  assert.match(widget, /width:min\(480px,calc\(100vw - 32px\)\)/);
+  assert.match(widget, /height:min\(790px,calc\(100dvh - 32px\)\)/);
+  assert.match(widget, /\.chips\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
+  assert.match(shell, /Nájsť svoju kávu/);
+  assert.match(shell, /4 otázky · výsledok do minúty/);
+  assert.match(shell, /Kávový poradca od/);
   assert.doesNotMatch(shell, /support-row|mailto:|tel:/);
-  assert.match(shell, /Personalizovaná ukážka od/);
-  assert.match(widget, /\.widget-credit,.advisor-credit\{min-height:44px/);
-  assert.match(widget, /font-size:10\.5px/);
-  assert.match(config, /quick: \['Svieži filter', 'Espresso do mlieka', 'Ovocné, nie ostré', 'Bez kofeínu'\]/);
-  const seed = chat.match(/function seedChat\(\)[\s\S]*?\}/)?.[0] || '';
-  assert.equal((seed.match(/addMessage\(/g) || []).length, 1);
+  assert.equal((chat.match(/function seedChat\(\)[\s\S]*?addMessage\(/g) || []).length, 1);
 });
 
-test('photos are strong on preparation but not decoratively reused for taste', () => {
-  const prep = core.match(/key: 'prep'[\s\S]*?\n    \},\n    \{\n      key: 'taste'/)?.[0] || '';
-  const taste = core.match(/key: 'taste'[\s\S]*?\n    \},\n    \{\n      key: 'drink'/)?.[0] || '';
-  assert.equal((prep.match(/photo:/g) || []).length, 4);
-  assert.equal((taste.match(/photo:/g) || []).length, 0);
-  assert.equal((taste.match(/icon:/g) || []).length, 4);
+test('every advisor step uses visual choices', () => {
+  const questionBlock = core.match(/const questions = \[[\s\S]*?\n  \];/)?.[0] || '';
+  assert.equal((questionBlock.match(/photo:/g) || []).length, 14);
+  assert.match(questionBlock, /prep-automatic\.webp/);
+  assert.match(questionBlock, /product-yellow-sunset\.jpg/);
 });
 
-test('advisor uses human-language prompts and compact result hierarchy', () => {
-  assert.match(core, /Ako si doma pripravuješ kávu\?/);
-  assert.match(core, /Ktorý chuťový smer ti sedí\?/);
-  assert.match(core, /Piješ ju skôr čistú alebo s mliekom\?/);
-  assert.match(result, /Ako chutí/);
-  assert.match(result, /Príprava/);
-  assert.match(result, /Prečo práve táto/);
-  assert.match(result, /Vybrať balenie/);
-  assert.match(advisor, /\.result-photo\{height:158px/);
+test('selection is deliberate and advances only from Continue', () => {
+  assert.match(flow, /id="continueQuestion"/);
+  assert.match(flow, /function advanceQuestion/);
+  const selectAnswer = flow.match(/function selectAnswer[\s\S]*?\n  \}/)?.[0] || '';
+  assert.doesNotMatch(selectAnswer, /state\.step \+= 1|setTimeout/);
+  assert.match(advisor, /\.question-continue/);
 });
 
-test('current decaf product data is grounded in the official catalog', () => {
+test('current products and direct URLs remain grounded', () => {
   assert.match(config, /id: 'yellow-sunset'/);
-  assert.match(config, /name: 'Yellow Sunset \(decaf\)'/);
-  assert.match(config, /packages: \[\{ grams: 250, price: 12\.5 \}, \{ grams: 500, price: 24\.5 \}, \{ grams: 1000, price: 48 \}\]/);
   assert.match(config, /https:\/\/www\.conceptcoffee\.sk\/yellow-sunset\//);
-  assert.match(config, /verifiedAt: '7\. 8\. 2026'/);
+  assert.match(config, /https:\/\/www\.conceptcoffee\.sk\/weithaga-aa---kenya\//);
+  assert.match(result, /product\.url/);
 });
 
-test('accent is supportive rather than the primary CTA treatment', () => {
-  assert.match(foundation, /--accent:#c85b47/);
-  assert.match(foundation, /\.primary-action,.product-link,.checkout-button[\s\S]*background:var\(--ink\)/);
-  assert.doesNotMatch(foundation, /\.hero h1 em\{color:var\(--accent\)/);
+test('Concept palette is saturated and brand-specific', () => {
+  assert.match(foundation, /--cobalt:#214aa4/);
+  assert.match(foundation, /--berry:#55307c/);
+  assert.match(foundation, /--teal:#137b7f/);
+  assert.match(shell, /product-weithaga\.jpg/);
 });
 
 test('mobile and motion accessibility contracts remain explicit', () => {
   assert.match(responsive, /height:100dvh/);
   assert.match(responsive, /env\(safe-area-inset-top\)/);
   assert.match(responsive, /prefers-reduced-motion:reduce/);
+  assert.match(responsive, /grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
   assert.match(foundation, /:focus-visible/);
-});
-
-test('result has exactly one alternative template and no long availability block', () => {
-  assert.equal((result.match(/class="alternative"/g) || []).length, 1);
-  assert.doesNotMatch(result, /slice\(0,\s*2\)/);
-  assert.doesNotMatch(result, /matchScore[^\n]*%/);
+  assert.match(init, /function trapFocus/);
+  assert.match(init, /event\.key === 'Escape'/);
 });

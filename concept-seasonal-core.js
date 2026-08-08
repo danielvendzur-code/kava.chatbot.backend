@@ -32,6 +32,8 @@
     bolt: svg(stroke('m13 2-7 11h6l-1 9 7-12h-6l1-8Z')),
     moon: svg(stroke('M20 15.5A8 8 0 1 1 8.5 4 7 7 0 0 0 20 15.5Z')),
     either: svg(stroke('M5 8h14M5 16h14M16 5l3 3-3 3M8 13l-3 3 3 3'))
+    ,clock: svg(stroke('M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18Z') + stroke('M12 7v5l3 2'))
+    ,upsell: svg(stroke('M5 9h14v11H5z') + stroke('M8 9V6h8v3M12 17v-5M9.5 14.5 12 12l2.5 2.5'))
   };
 
   function mark(extraClass = '') {
@@ -56,41 +58,41 @@
 
   const questions = [
     {
-      key: 'prep', name: 'Príprava', title: 'Ako si doma pripravuješ kávu?',
+      key: 'prep', name: 'Príprava', title: 'Ako si doma pripravujete kávu?',
       note: 'Stačí vybrať najbližší spôsob. Podľa neho zúžime vhodné kávy.',
       options: [
         { value: 'automatic', label: 'Automatický kávovar', description: 'Jedno tlačidlo, espresso aj mliečne nápoje', photo: '/assets/concept/prep-automatic.webp' },
         { value: 'lever', label: 'Pákový kávovar', description: 'Espresso si nastavuješ ručne', photo: '/assets/concept/prep-lever.webp' },
         { value: 'moka', label: 'Moka kanvička', description: 'Výrazná domáca šálka', photo: '/assets/concept/prep-moka.webp' },
-        { value: 'filter', label: 'Filter alebo zalievanie', description: 'V60, AeroPress, batch brew či French press', photo: '/assets/concept/prep-filter.webp' }
+        { value: 'filter', label: 'Filter', description: 'V60, AeroPress, batch brew či French press', photo: '/assets/concept/prep-filter.webp' }
       ]
     },
     {
       key: 'taste', name: 'Chuť', title: 'Ktorý chuťový smer ti sedí?',
       note: 'Bez odborných výrazov — vyber podľa toho, čo ti znie príjemne.',
       options: [
-        { value: 'chocolate', label: 'Sladké a čokoládové', description: 'Kakao, orechy, nugát a pokojnejšia sviežosť', icon: 'bean' },
-        { value: 'balanced', label: 'Vyvážené', description: 'Sladkosť, jemné ovocie aj telo bez extrému', icon: 'balance' },
-        { value: 'fruity', label: 'Ovocné a svieže', description: 'Bobuľové, citrusové alebo kvetinové tóny', icon: 'fruit' },
-        { value: 'strong', label: 'Výrazné a netradičné', description: 'Intenzívny profil, ktorý je hlavnou témou šálky', icon: 'bold' }
+        { value: 'chocolate', label: 'Sladké a čokoládové', description: 'Kakao, orechy a nugát', photo: '/assets/concept/product-holyshot.jpg' },
+        { value: 'balanced', label: 'Vyvážené', description: 'Sladkosť aj jemné ovocie', photo: '/assets/concept/product-weithaga.jpg' },
+        { value: 'fruity', label: 'Ovocné a svieže', description: 'Bobuľové a citrusové tóny', photo: '/assets/concept/product-berry-blast.jpg' },
+        { value: 'strong', label: 'Výrazné a netradičné', description: 'Intenzívny sezónny profil', photo: '/assets/concept/result-filter.webp' }
       ]
     },
     {
       key: 'drink', name: 'Nápoj', title: 'Piješ ju skôr čistú alebo s mliekom?',
       note: 'Mlieko zvýrazní inú časť profilu než čisté espresso alebo filter.',
       options: [
-        { value: 'black', label: 'Najčastejšie čistú', description: 'Espresso, lungo alebo filter', icon: 'black' },
-        { value: 'milk', label: 'Najčastejšie s mliekom', description: 'Cappuccino, flat white alebo latte', icon: 'milk' },
-        { value: 'both', label: 'Striedam oboje', description: 'Chcem univerzálnejšiu voľbu', icon: 'both' }
+        { value: 'black', label: 'Najčastejšie čistú', description: 'Espresso, lungo alebo filter', photo: '/assets/concept/result-filter.webp' },
+        { value: 'milk', label: 'Najčastejšie s mliekom', description: 'Cappuccino alebo flat white', photo: '/assets/concept/result-espresso.webp' },
+        { value: 'both', label: 'Striedam oboje', description: 'Univerzálnejšia voľba', photo: '/assets/concept/product-holyshot.jpg' }
       ]
     },
     {
       key: 'caffeine', name: 'Kofeín', title: 'Chceš klasickú alebo bez kofeínu?',
       note: 'Ak na tom nezáleží, necháme rozhodnúť hlavne chuť.',
       options: [
-        { value: 'classic', label: 'Klasickú', description: 'Bežná káva s kofeínom', icon: 'bolt' },
-        { value: 'decaf', label: 'Bezkofeínovú', description: 'Na večer alebo pri obmedzení kofeínu', icon: 'moon' },
-        { value: 'either', label: 'Je mi to jedno', description: 'Rozhodni podľa chuti', icon: 'either' }
+        { value: 'classic', label: 'Klasickú', description: 'Káva s kofeínom', photo: '/assets/concept/product-weithaga.jpg' },
+        { value: 'decaf', label: 'Bezkofeínovú', description: 'Na večer alebo pri obmedzení kofeínu', photo: '/assets/concept/product-yellow-sunset.jpg' },
+        { value: 'either', label: 'Je mi to jedno', description: 'Rozhodnúť podľa chuti', photo: '/assets/concept/result-espresso.webp' }
       ]
     }
   ];

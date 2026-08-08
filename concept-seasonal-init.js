@@ -60,8 +60,24 @@
     persist();
     renderAdvisor();
   });
+  function trapFocus(event) {
+    if (event.key !== 'Tab' || !widget.classList.contains('is-open')) return;
+    const focusable = $$('button:not([disabled]),a[href],input:not([disabled]),select:not([disabled]),[tabindex]:not([tabindex="-1"])', widget)
+      .filter((element) => element.offsetParent !== null);
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable.at(-1);
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && widget.classList.contains('is-open')) closeWidget();
+    trapFocus(event);
   });
 
   renderChips();

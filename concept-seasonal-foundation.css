@@ -113,3 +113,57 @@ body{background:var(--paper)}
 .site-foot{min-height:54px}
 .site-foot span,.site-foot a{font-size:10px}
 .primary-action{min-height:54px;padding:0 23px}
+
+/* Cobalt editorial system — derived from Concept's seasonal product photography. */
+:root{
+  --paper:#f8f6f0;
+  --paper-strong:#fffefa;
+  --ink:#151515;
+  --accent:#de6046;
+  --cobalt:#214aa4;
+  --cobalt-dark:#173b88;
+  --berry:#55307c;
+  --teal:#137b7f;
+  --ink-88:rgba(21,21,21,.88);
+  --ink-68:rgba(21,21,21,.66);
+  --ink-48:rgba(21,21,21,.48);
+  --ink-18:rgba(21,21,21,.16);
+  --ink-10:rgba(21,21,21,.09);
+  --ink-06:rgba(21,21,21,.055);
+  --accent-10:rgba(222,96,70,.10);
+  --accent-16:rgba(222,96,70,.17);
+  --cobalt-10:rgba(33,74,164,.10);
+  --radius-panel:30px;
+  --shadow-panel:0 42px 100px -30px rgba(24,35,73,.46);
+}
+body{background:var(--paper)}
+.concept-page::before{opacity:.36;background-image:radial-gradient(rgba(20,78,90,.13) .62px,transparent .72px);background-size:11px 11px;mask-image:linear-gradient(90deg,#000,rgba(0,0,0,.44) 62%,transparent)}
+.site-head{min-height:86px;border-bottom:0}
+.site-brand__logo{width:188px;height:46px}
+.site-head__link{min-height:44px;display:inline-flex;align-items:center;gap:8px;color:var(--ink-68);font-size:11px;font-weight:800;text-decoration:none}
+.site-head__link svg{width:15px;height:15px;transition:transform .2s ease}
+.site-head__link:hover svg{transform:translateX(3px)}
+.hero{grid-template-columns:minmax(0,1.03fr) minmax(460px,.97fr);gap:clamp(28px,3vw,54px);padding:18px 0 42px}
+.hero-copy{max-width:670px}
+.hero h1{max-width:680px;font-size:clamp(54px,5.3vw,76px);line-height:.98;letter-spacing:-.065em;text-wrap:balance}
+.hero-intro{max-width:625px;margin-top:24px;font-size:clamp(17px,1.4vw,20px);line-height:1.5;color:var(--ink-68)}
+.hero-benefits{max-width:520px;margin-top:28px;display:grid;grid-template-columns:1fr;gap:0}
+.hero-benefits li{min-height:84px;display:grid;grid-template-columns:56px 1fr;grid-template-rows:auto;align-items:center;gap:16px;padding:13px 0;border-top:1px solid var(--ink-18);opacity:0;animation:rise-in .52s cubic-bezier(.22,1,.36,1) forwards}
+.hero-benefits li:nth-child(1){animation-delay:.12s}.hero-benefits li:nth-child(2){animation-delay:.2s}.hero-benefits li:nth-child(3){animation-delay:.28s}
+.hero-benefits .benefit-icon{width:46px;height:46px;display:grid;place-items:center;color:var(--accent)}
+.hero-benefits .benefit-icon svg{width:34px;height:34px;stroke-width:1.6}
+.hero-benefits li>span:last-child{display:grid;gap:4px}
+.hero-benefits b{font-size:16px;letter-spacing:-.02em}
+.hero-benefits b{color:var(--ink)}
+.hero-benefits small{color:var(--ink-68);font-size:12px;line-height:1.35}
+.hero .primary-action{min-width:302px;min-height:62px;margin-top:30px;padding:0 27px;font-size:15px;justify-content:space-between;background:var(--ink);box-shadow:0 16px 36px -22px rgba(21,21,21,.65)}
+.hero .primary-action svg{color:var(--accent)}
+.hero-visual{min-height:650px;position:relative;isolation:isolate;animation:panel-in .72s .08s cubic-bezier(.22,1,.36,1) both}
+.hero-visual::before{content:"";position:absolute;z-index:-2;width:600px;height:600px;right:-105px;top:18px;border-radius:52% 48% 46% 54%;background:var(--cobalt);transform:rotate(-10deg)}
+.hero-visual::after{content:"";position:absolute;z-index:-1;width:375px;height:500px;right:-70px;bottom:0;border-radius:56% 44% 18% 72%;background:var(--berry);transform:rotate(18deg);opacity:.96}
+.hero-visual__shape{position:absolute;z-index:-1;left:35px;bottom:34px;width:360px;height:220px;border-radius:54% 46% 50% 32%;background:#7896d6;transform:rotate(-12deg)}
+.hero-visual>img{position:absolute;left:42px;right:0;bottom:25px;width:min(520px,92%);height:520px;object-fit:cover;object-position:center 55%;border-radius:56% 44% 24px 48%;box-shadow:0 38px 70px -32px rgba(16,24,58,.56)}
+.hero-visual__caption{position:absolute;z-index:2;left:58px;bottom:44px;display:grid;gap:4px;padding:13px 16px;border-radius:15px;background:rgba(255,254,250,.92);box-shadow:0 12px 28px rgba(15,18,35,.16);backdrop-filter:blur(10px)}
+.hero-visual__caption span{color:var(--accent);font-size:8px;font-weight:900;letter-spacing:.11em;text-transform:uppercase}
+.hero-visual__caption b{font-size:12px}
+.site-foot{border-top:1px solid var(--ink-10)}

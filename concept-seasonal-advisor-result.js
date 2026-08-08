@@ -25,7 +25,7 @@
     const image = product.productPhoto || product.photo;
     const alternativeImage = alternative?.productPhoto || alternative?.photo;
     advisor.innerHTML = `
-      <div class="result-head"><span class="result-kicker">Odporúčanie podľa odpovedí</span><h2>Toto by som ti odporučil.</h2></div>
+      <div class="result-head"><span class="result-kicker">Odporúčanie podľa odpovedí</span><h2>Toto by som vám odporučil.</h2></div>
       <section class="result-card" aria-label="Odporúčaná káva ${escapeHTML(product.name)}">
         <div class="result-photo">
           <img src="${escapeHTML(image)}" width="1024" height="1024" alt="Oficiálna produktová fotografia ${escapeHTML(product.name)}">
@@ -39,8 +39,8 @@
           </div>
           <div class="reason"><b>Prečo práve táto</b><p>${escapeHTML(product.reason)}</p></div>
           <div class="result-actions"><a class="result-button result-button--primary" id="choosePack" href="${escapeHTML(product.url)}" target="_blank" rel="noreferrer">Vybrať balenie na e-shope ${icons.arrow}</a><button class="result-button" id="restartResult" type="button">Zmeniť odpovede</button></div>
-          ${alternative ? `<button class="alternative" type="button" data-product="${escapeHTML(alternative.id)}"><span>Ak chceš iný smer</span><span class="alternative__main"><img src="${escapeHTML(alternativeImage)}" alt=""><b>${escapeHTML(alternative.name)}</b><i>${icons.arrow}</i></span><small>${escapeHTML(alternative.tags.slice(0, 3).join(' · '))}</small></button>` : ''}
-          ${upsell ? `<a class="upsell-note" href="${escapeHTML(product.url)}" target="_blank" rel="noreferrer"><span><b>Piješ ju každý deň?</b> ${formatUpsell(upsell)} <u>pozrieť varianty</u></span>${icons.arrow}</a>` : ''}
+          ${alternative ? `<button class="alternative" type="button" data-product="${escapeHTML(alternative.id)}"><span>Ak chcete iný smer</span><span class="alternative__main"><img src="${escapeHTML(alternativeImage)}" alt=""><b>${escapeHTML(alternative.name)}</b><i>${icons.arrow}</i></span><small>${escapeHTML(alternative.tags.slice(0, 3).join(' · '))}</small></button>` : ''}
+          ${upsell ? `<a class="upsell-note" href="${escapeHTML(product.url)}" target="_blank" rel="noreferrer"><span><b>Pijete ju každý deň?</b> ${formatUpsell(upsell)} <u>pozrieť varianty</u></span>${icons.arrow}</a>` : ''}
         </div>
       </section>`;
     $('#restartResult').addEventListener('click', app.resetAdvisor);

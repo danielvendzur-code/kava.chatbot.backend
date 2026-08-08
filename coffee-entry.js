@@ -3,8 +3,8 @@
 
   const root = document.querySelector('#coffee-demo-root');
   const pathParts = location.pathname.split('/').filter(Boolean);
-  const lastPath = pathParts.at(-1) || 'praziarnicka';
-  const slug = lastPath === 'index.html' || lastPath === 'ukazka' ? 'praziarnicka' : lastPath;
+  const lastPath = pathParts.at(-1) || 'concept';
+  const slug = lastPath === 'index.html' || lastPath === 'ukazka' ? 'concept' : lastPath;
 
   const addStyle = (href) => new Promise((resolve, reject) => {
     const link = document.createElement('link');
