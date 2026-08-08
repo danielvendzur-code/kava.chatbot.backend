@@ -2,13 +2,14 @@ import { test, expect } from '@playwright/test';
 import fs from 'node:fs';
 
 const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
+// Jolka is not here on purpose: it runs on its own entry point (jolka.html) and is
+// covered by tests/jolka.spec.mjs. Everything below exercises the shared v8 engine.
 const demos = [
   ['praziarnicka', 'Pražiarnička'],
   ['diamonds', 'Diamonds Roastery'],
   ['kaffa', 'Kaffa Roastery'],
   ['vitazov', 'Káva Víťazov'],
-  ['concept', 'Concept Coffee Roasters'],
-  ['jolka', 'Pražiareň Jolka']
+  ['concept', 'Concept Coffee Roasters']
 ];
 
 fs.mkdirSync('artifacts', { recursive: true });
@@ -99,7 +100,7 @@ test('one-screen proposal, round launcher and complete recommendation flow', asy
   expect(errors).toEqual([]);
 });
 
-test('all six routed demos are personalized and use the same system', async ({ page }) => {
+test('all routed v8 demos are personalized and use the same system', async ({ page }) => {
   for (const [slug, brand] of demos) {
     await page.goto(`${baseURL}/?demo=${slug}`, { waitUntil: 'domcontentloaded' });
     await expect(page.locator('.demo-brand__copy strong')).toHaveText(brand);
@@ -112,7 +113,7 @@ test('all six routed demos are personalized and use the same system', async ({ p
 test('mobile widget stays rounded, opaque and does not open the keyboard', async ({ page }) => {
   const errors = watchConsole(page);
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto(`${baseURL}/?demo=jolka`, { waitUntil: 'networkidle' });
+  await page.goto(`${baseURL}/?demo=concept`, { waitUntil: 'networkidle' });
   await openAdvisor(page);
 
   const panelBox = await page.locator('#widget').boundingBox();

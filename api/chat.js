@@ -57,15 +57,32 @@ const DEMOS = {
       'Summerjam – Colombia – sladká sezónna káva'
     ]
   },
+  // Verified against the roastery's own WooCommerce store on 2026-08-08.
   jolka: {
     brand: 'Pražiareň Jolka',
-    web: 'https://www.praziarenjolka.sk/shop/',
+    web: 'https://www.praziarenjolka.sk/eshop-kava/',
     products: [
-      'Zmes Jolka – čokoládová, orechová, nízka acidita, vhodná do mlieka',
-      'Zmes Čokoláda – sladký klasický profil',
-      'Ethiopia SIDAMO GR.2 – citrus, jazmín a bergamot, light roast',
-      'Vietnam Lang Biang Anaerobic Natural – intenzívna ovocná káva',
-      'El Salvador SHG EP – vyvážená stredoamerická káva'
+      'Zmes Jolka – house blend s 20 % robusty, čokoláda a orechy, minimálna acidita, skvelá do mlieka aj ako espresso, 250 g za 13,50 €',
+      'Zmes Čokoláda – house blend s 30 % robusty, čokoláda, orechy a hustá kréma, takmer žiadna acidita, 250 g za 13,50 €',
+      '9-to-Fine – signature office blend s vyšším podielom robusty, krémová čokoládovo-oriešková chuť, minimálna acidita, ideálny do automatu, 500 g za 17 €',
+      'Horké zlato – zmes pre milovníkov horkej chuti, plná horkosladká chuť a bohatá pena bez ovocnej kyslosti, 250 g za 14 €',
+      'Sviatočná zmes – Brazil a Guatemala s 30 % vietnamskej robusty, vyšší kofeín, plná chuť a jemná acidita, 250 g za 14 €',
+      'Brazil Cerrado Doce Diamantina – 100 % arabica, veľmi nízka acidita, plné zamatové telo, čokoláda, karamel a lieskové oriešky, 250 g za 13,50 €',
+      'Honduras SHG EP San Andres – 100 % arabica, vyšší kofeín, minimálna jemná acidita, sladká až čokoládová chuť, 250 g za 13,50 €',
+      'Colombia Supremo Scr.19 Sofía – 100 % arabica, nízka acidita, kakao, karamelová sladkosť a korenisté podtóny, 250 g za 13,50 €',
+      'India Plantation AA – 100 % arabica, sladká a jemná, slaný karamel, škorica a orechy, plné telo a príjemná acidita, 250 g za 14 €',
+      'Guatemala SHB EP – 100 % arabica, vysoká acidita, chuť ovocia a čokolády, skvelá na espresso, 250 g za 14 €',
+      'Ethiopia SIDAMO GR.2 – 100 % arabica, vysoká citrusová acidita, jazmín a bergamot, na filter, svetlé alebo stredné praženie, 250 g za 14 €',
+      'Vietnam Lang Biang Anaerobic Natural – výberová káva priamo od farmára, tropické ovocie a vínna dochuť, odporúčaná na V60 a Chemex, 250 g za 17 €',
+      'DECAF Etiópia – bezkofeínová 100 % arabica z regiónu Guji, nízka acidita, jahody, čučoriedky a mliečna čokoláda, 250 g za 14 €',
+      'Jamaica Blue Mountain – exkluzívny mikrolot, sladká a hladká chuť bez horkosti s jemnou aciditou, 250 g za 80 €',
+      'Cascara Costa Rica – sušená dužina kávovej čerešne na prípravu čaju, sladký ovocný profil, 30 g za 3,50 €',
+      'Cesta okolo sveta za kávou – darčekové degustačné balenia MINI, MIDI a MAXI s kávami z viacerých krajín a cascarou'
+    ],
+    notes: [
+      'Káva sa predáva v baleniach 75 g, 150 g, 250 g, 500 g a 1 kg, okrem výnimiek uvedených vyššie.',
+      'Pri každej káve si zákazník volí mletie: zrnká, espresso, moka konvička, filter, French press, Aeropress alebo džezva.',
+      'El Salvador SHG EP je momentálne vypredaný, neodporúčajte ho.'
     ]
   }
 };
@@ -115,7 +132,8 @@ export default async function handler(req, res) {
       'Ak otázku nemožno zodpovedať z údajov nižšie, povedzte to a odporučte chuťový kvíz alebo oficiálny e-shop.',
       'Pri odporúčaní stručne vysvetlite dôvod podľa prípravy, acidity, mlieka alebo kofeínu.',
       `Oficiálny e-shop: ${demo.web}`,
-      `Overené produkty:\n- ${demo.products.join('\n- ')}`
+      `Overené produkty:\n- ${demo.products.join('\n- ')}`,
+      ...(demo.notes?.length ? [`Ďalšie overené informácie:\n- ${demo.notes.join('\n- ')}`] : [])
     ].join('\n\n');
 
     const apiResponse = await fetch('https://api.anthropic.com/v1/messages', {

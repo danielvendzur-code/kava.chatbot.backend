@@ -60,6 +60,34 @@ jobs:
           node --check coffee-v8-patch.js
           node --check api/chat.js
 
+      - name: Validate Jolka entry point
+        run: |
+          test -f jolka.html
+          test -f jolka/jolka.css
+          test -f jolka/jolka-data.js
+          test -f jolka/jolka-app.js
+          grep -Fq '/jolka/jolka.css' jolka.html
+          grep -Fq '/jolka/jolka-data.js' jolka.html
+          grep -Fq '/jolka/jolka-app.js' jolka.html
+          grep -Fq '"/ukazka/jolka"' vercel.json
+          grep -Fq "location.replace('/jolka.html')" coffee-bootstrap.js
+          grep -Fq 'praziarenjolka.sk/eshop-kava/' api/chat.js
+          # the shop path that used to 404 must not come back
+          ! grep -Fq 'praziarenjolka.sk/shop/' api/chat.js
+          ! grep -Fq 'praziarenjolka.sk/shop/' jolka/jolka-data.js
+          # the sold-out single origin must not be recommended (it is still fine as a
+          # named component of the house blends) and no customer contact block anywhere
+          ! grep -Fq 'produkt/el-salvador-shg-ep' jolka/jolka-data.js
+          ! grep -Eq 'tel:|mailto:' jolka.html jolka/jolka-app.js jolka/jolka-data.js
+          # single stylesheet, no refine/override/patch layers for Jolka
+          test "$(ls jolka/*.css | wc -l)" -eq 1
+          test -f assets/jolka/logo-ink.webp
+          test -f assets/jolka/logo-badge.webp
+          test -f assets/jolka/hero-bags.webp
+          test "$(ls assets/jolka/*.webp | wc -l)" -ge 15
+          node --check jolka/jolka-data.js
+          node --check jolka/jolka-app.js
+
       - name: Run desktop and mobile Chromium tests
         run: |
           python3 -m http.server 4173 >/tmp/kava-server.log 2>&1 &
