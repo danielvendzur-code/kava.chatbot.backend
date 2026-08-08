@@ -536,9 +536,10 @@ button { font: inherit; color: inherit; cursor: pointer; }
   min-height: 0;
   overflow-y: auto;
   overscroll-behavior: contain;
-  padding: 4px 16px 6px;
+  padding: 10px 16px 4px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 14px;
   scrollbar-width: thin;
 }
@@ -547,38 +548,73 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* Advisor entry card, pinned above the conversation. */
 .entry {
   flex: none;
+  position: relative;
   display: flex;
   align-items: center;
-  gap: 13px;
-  margin: 14px 16px 4px;
-  padding: 13px 15px;
-  border-radius: var(--r-md);
+  gap: 14px;
+  margin: 14px 16px 2px;
+  padding: 10px 16px 10px 10px;
+  border-radius: var(--r-lg);
   border: 1.5px solid var(--line);
-  background: linear-gradient(115deg, var(--surface-2), var(--kraft-tint));
+  background: linear-gradient(112deg, var(--surface) 40%, var(--kraft-tint));
+  box-shadow: 0 1px 2px rgba(35, 24, 14, .04);
   text-align: left;
-  transition: border-color .22s var(--ease), transform .22s var(--ease);
+  overflow: hidden;
+  transition: border-color .24s var(--ease), transform .24s var(--ease),
+              box-shadow .24s var(--ease);
 }
-.entry:hover { border-color: var(--ink); transform: translateY(-1px); }
-.entry__mark {
-  width: 42px;
-  height: 42px;
+.entry:hover {
+  border-color: var(--ink);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-card);
+}
+.entry__thumb {
+  width: 62px;
+  height: 62px;
+  flex: none;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--kraft-tint);
+}
+.entry__thumb img { width: 100%; height: 100%; object-fit: cover; object-position: center 46%; }
+.entry__copy { flex: 1; min-width: 0; }
+.entry__copy small {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--kraft-deep);
+  margin-bottom: 3px;
+}
+.entry__copy b {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -.01em;
+  margin-bottom: 2px;
+}
+.entry__copy span { display: block; font-size: 12.5px; color: var(--text-3); }
+.entry__arrow {
+  width: 30px;
+  height: 30px;
   flex: none;
   border-radius: 50%;
   background: var(--ink);
   color: var(--on-ink);
   display: grid;
   place-items: center;
+  transition: transform .24s var(--ease);
 }
-.entry__mark svg { width: 22px; height: 22px; }
-.entry__copy { flex: 1; min-width: 0; }
-.entry__copy b { display: block; font-size: 15.5px; font-weight: 600; line-height: 1.25; }
-.entry__copy span { display: block; font-size: 13px; color: var(--text-3); }
-.entry__arrow { flex: none; color: var(--text-3); }
-.entry__arrow svg { width: 18px; height: 18px; }
+.entry:hover .entry__arrow { transform: translateX(2px); }
+.entry__arrow svg { width: 16px; height: 16px; }
 
 .msg { display: flex; gap: 10px; align-items: flex-end; max-width: 100%; }
 .msg__avatar {
-  width: 32px; height: 32px;
+  width: 30px; height: 30px;
   border-radius: 50%;
   flex: none;
   background: var(--ink);
@@ -589,15 +625,18 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .msg__avatar img { width: 26px; height: 26px; }
 
 .bubble {
-  max-width: 82%;
-  padding: 13px 17px;
-  border-radius: 20px 20px 20px 6px;
+  max-width: 80%;
+  padding: 13px 18px 14px;
+  border-radius: 22px 22px 22px 8px;
   background: var(--surface-2);
   border: 1px solid var(--line);
+  box-shadow: 0 1px 2px rgba(35, 24, 14, .035);
   font-size: 15.5px;
-  line-height: 1.52;
+  line-height: 1.5;
+  letter-spacing: -.003em;
   color: var(--text);
-  animation: bubble-in .3s var(--ease);
+  text-wrap: pretty;
+  animation: bubble-in .34s var(--ease);
 }
 .bubble b { font-weight: 600; }
 
@@ -606,7 +645,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
   background: var(--ink);
   border-color: var(--ink);
   color: var(--on-ink);
-  border-radius: 20px 20px 6px 20px;
+  border-radius: 22px 22px 8px 22px;
+  box-shadow: 0 2px 6px -2px rgba(35, 24, 14, .3);
 }
 
 @keyframes bubble-in {
@@ -630,29 +670,36 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .composer-area {
   flex: none;
-  padding: 10px 16px 16px;
-  background: linear-gradient(to top, var(--surface) 72%, rgba(255, 253, 250, 0));
+  padding: 8px 16px 10px;
+  background: linear-gradient(to top, var(--surface) 74%, rgba(255, 253, 250, 0));
 }
 
+/* Two even columns filling the full width — no ragged pill edges. */
 .chips {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 .chip {
-  min-height: 44px;
-  padding: 11px 17px;
+  min-height: 46px;
+  padding: 12px 14px;
   border-radius: var(--r-pill);
   border: 1px solid var(--line-strong);
   background: var(--surface);
   font-size: 14.5px;
   font-weight: 500;
   color: var(--text);
-  transition: background .2s var(--ease), border-color .2s var(--ease), color .2s var(--ease);
+  transition: background .2s var(--ease), border-color .2s var(--ease),
+              color .2s var(--ease), transform .2s var(--ease);
 }
-.chip:hover { background: var(--kraft-tint); border-color: var(--kraft); }
-.chip[disabled] { opacity: .45; cursor: default; }
+.chip:hover {
+  background: var(--kraft-tint);
+  border-color: var(--kraft);
+  transform: translateY(-1px);
+}
+.chip:active { transform: none; }
+.chip[disabled] { opacity: .45; cursor: default; transform: none; }
 
 .composer { display: flex; gap: 10px; align-items: center; }
 .composer__field {
@@ -698,7 +745,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .widget__note {
   flex: none;
   text-align: center;
-  padding: 8px 16px 12px;
+  padding: 0 16px 10px;
   margin: 0;
   font-size: 11.5px;
   letter-spacing: .03em;
@@ -837,21 +884,34 @@ button { font: inherit; color: inherit; cursor: pointer; }
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: none; }
 }
+.option {
+  box-shadow: 0 1px 2px rgba(35, 24, 14, .035);
+}
 .option:hover {
   border-color: var(--line-strong);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-card);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px -4px rgba(35, 24, 14, .18), 0 18px 30px -18px rgba(35, 24, 14, .34);
 }
 .option:active { transform: translateY(0); }
 
+/* Height follows the viewport, so a step never has to scroll on a short screen. */
 .option__visual {
   position: relative;
   display: block;
   width: 100%;
-  height: 128px;
-  background: radial-gradient(130% 110% at 50% 0%, #fffaf1, #f0e2cc);
+  height: clamp(78px, 14vh, 138px);
+  background: linear-gradient(to bottom, #fffaf1, #eee0ca);
   border-bottom: 1px solid var(--line);
   overflow: hidden;
+}
+/* keeps the caption edge crisp against a busy photo */
+.option__visual::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 34%;
+  background: linear-gradient(to top, rgba(255, 253, 250, .55), transparent);
+  pointer-events: none;
 }
 /* Cover crop on the label band of the bag: the kraft texture and the wordmark
    fill the tile instead of a small bag floating in empty space. */
@@ -859,8 +919,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 45%;
-  transition: transform .4s var(--ease);
+  object-position: center 48%;
+  transition: transform .45s var(--ease);
 }
 .option:hover .option__visual img { transform: scale(1.04); }
 
@@ -885,12 +945,13 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .option__badge--dots { padding: 0 10px; }
 .option__badge .dots i { width: 8px; height: 8px; border-width: 1.5px; }
 
-.option__copy { padding: 10px 12px 12px; }
+.option__copy { padding: 11px 13px 13px; }
 .option__copy b {
   display: block;
   font-size: 14.5px;
   font-weight: 600;
   line-height: 1.25;
+  letter-spacing: -.005em;
   margin-bottom: 2px;
 }
 .option__copy small {
@@ -902,13 +963,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 .option__mark {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 9px;
+  right: 9px;
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  border: 1.5px solid var(--line-strong);
-  background: rgba(255, 253, 250, .9);
+  border: 1.5px solid rgba(35, 24, 14, .22);
+  background: rgba(255, 253, 250, .82);
+  box-shadow: 0 1px 3px rgba(35, 24, 14, .12);
+  backdrop-filter: blur(6px);
   display: grid;
   place-items: center;
   color: transparent;
@@ -920,6 +983,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .option.is-selected {
   border-color: var(--ink);
   background: var(--kraft-tint);
+  box-shadow: 0 0 0 1px var(--ink), 0 6px 16px -8px rgba(35, 24, 14, .4);
   animation: pick .34s var(--ease);
 }
 @keyframes pick {
@@ -1118,6 +1182,22 @@ button { font: inherit; color: inherit; cursor: pointer; }
   animation: screen-in .3s var(--ease);
 }
 .advisor-foot[hidden] { display: none; }
+
+/* Only visible when the pane actually has more below the fold. */
+#advisorScreen { position: relative; }
+#advisorScreen::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 44px;
+  background: linear-gradient(to top, var(--surface) 15%, rgba(255, 253, 250, 0));
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s var(--ease);
+}
+#advisorScreen.has-more::after { opacity: 1; }
 /* Soft edge above the action bar so a cut-off card reads as scrollable, not broken. */
 .advisor-foot::before {
   content: '';
@@ -1189,7 +1269,6 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 /* A 1366x768 notebook clamps the widget; trim the tiles so a step still fits. */
 @media (min-width: 641px) and (max-height: 850px) {
-  .option__visual { height: 104px; }
   .question h2 { font-size: 22px; }
   .question { margin-bottom: 12px; }
 }
@@ -1245,7 +1324,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .advisor { padding: 2px 14px 14px; }
   .advisor-top { padding: 12px 14px; }
   .options { gap: 9px; }
-  .option__visual { height: 132px; }
+  .option__visual { height: clamp(96px, 17vh, 150px); }
   .bubble { max-width: 86%; }
   .chips { flex-wrap: wrap; }
   .chip { flex: 1 1 calc(50% - 4px); text-align: center; }
