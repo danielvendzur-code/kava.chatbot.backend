@@ -95,12 +95,12 @@
   .mode{min-height:68px;margin:10px 12px 0}
   .mode__button{min-height:58px;font-size:13px}
   .chat-screen,.advisor-screen{padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}
-  .advisor-entry{min-height:82px;padding:10px 12px;grid-template-columns:44px 1fr 34px;border-radius:21px}
-  .advisor-entry__mark{width:44px;height:44px}
-  .advisor-entry__copy b{font-size:15px}
+  .advisor-entry{min-height:60px;padding:7px 10px;grid-template-columns:34px 1fr 28px;border-radius:999px}
+  .advisor-entry__mark{width:34px;height:34px}
+  .advisor-entry__copy b{font-size:13px}
   .chat{padding-top:12px}
   .chips{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .chip{min-height:44px;padding-inline:8px;font-size:9.7px}
+  .chip{min-height:41px;padding-inline:8px;font-size:9.7px}
   .advisor-progress{min-height:64px;grid-template-columns:42px 92px 1fr;gap:9px}
   .progress-back{width:42px;height:42px}
   .question h2{font-size:27px}

@@ -82,7 +82,6 @@
                 <button class="composer__send" type="submit" aria-label="Odoslať otázku">${icons.send}</button>
               </div>
             </form>
-            <div class="widget-credit"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">Môj Chatbot</a></div>
           </div>
         </section>
 
@@ -93,7 +92,6 @@
             <div class="progress" id="progress" aria-label="Priebeh výberu"></div>
           </div>
           <div class="advisor" id="advisorBody" aria-live="polite"></div>
-          <div class="advisor-credit"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">Môj Chatbot</a></div>
         </section>
       </div>
     </section>`;

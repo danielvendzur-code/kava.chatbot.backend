@@ -32,7 +32,7 @@ test('chat follows the compact product layout', () => {
   assert.match(widget, /\.chips\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
   assert.match(shell, /Nájsť svoju kávu/);
   assert.match(shell, /4 otázky · výsledok do minúty/);
-  assert.match(shell, />Môj Chatbot</);
+  assert.doesNotMatch(shell, /Môj Chatbot|mojchatbot\.sk/i);
   assert.doesNotMatch(shell, /support-row|mailto:|tel:/);
   assert.equal((chat.match(/function seedChat\(\)[\s\S]*?addMessage\(/g) || []).length, 1);
 });
