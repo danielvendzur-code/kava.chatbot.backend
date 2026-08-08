@@ -77,3 +77,39 @@ img{display:block;max-width:100%}
 .site-foot{width:min(1240px,calc(100% - 56px));margin:0 auto;min-height:56px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid var(--ink-10);position:relative;z-index:1}
 .site-foot span,.site-foot a{color:var(--ink-48);font-size:10px;font-weight:700}
 .site-foot a{min-height:44px;display:inline-flex;align-items:center;text-decoration-thickness:1px;text-underline-offset:4px}
+
+/* Concept seasonal editorial pass: owner value first, editorial detail second. */
+:root{--paper:#f4f1e9;--paper-strong:#fbfaf6;--ink:#191a18;--accent:#c85b47;--ink-68:rgba(25,26,24,.68);--ink-48:rgba(25,26,24,.48);--ink-18:rgba(25,26,24,.18);--ink-10:rgba(25,26,24,.10);--ink-06:rgba(25,26,24,.06);--accent-10:rgba(200,91,71,.10);--accent-16:rgba(200,91,71,.16);--radius-panel:24px}
+body{background:var(--paper)}
+.concept-page{min-height:100svh;grid-template-rows:auto 1fr auto}
+.site-head{width:min(1240px,calc(100% - 56px));min-height:72px;border-bottom:1px solid var(--ink-10)}
+.site-brand__logo{width:168px;height:40px;object-fit:contain;object-position:left center}
+.site-head__note{display:inline-flex;align-items:center;gap:8px;color:var(--ink-48);font-size:9px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.site-head__dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.unofficial-label{display:none}
+.hero{width:min(1240px,calc(100% - 56px));margin:0 auto;grid-template-columns:minmax(0,1.06fr) minmax(380px,.74fr);gap:clamp(48px,6vw,90px);padding:44px 0 46px;align-items:center}
+.hero-copy{max-width:650px}
+.eyebrow{display:none}
+.hero h1{max-width:650px;font-size:clamp(44px,4.35vw,62px);line-height:1.01;letter-spacing:-.055em}
+.hero-intro{max-width:585px;margin-top:22px;color:var(--ink-68);font-size:clamp(16px,1.42vw,18px);line-height:1.53}
+.hero-benefits{margin-top:28px;gap:14px}
+.hero-benefits li{min-height:98px;grid-template-columns:31px 1fr;grid-template-rows:auto 1fr;gap:3px 9px;padding:12px 8px 0 0}
+.hero-benefits .benefit-index{grid-row:1 / span 2;color:var(--accent);font-size:11px;font-weight:850;letter-spacing:.06em}
+.hero-benefits b{font-size:13px}
+.hero-benefits li>span:last-child{font-size:11px;line-height:1.35}
+.hero-action-row{margin-top:24px;align-items:flex-start}
+.hero-note{display:grid;gap:2px;max-width:235px;padding-top:3px}
+.hero-note span{font-size:10px;font-weight:800}
+.hero-note small{color:var(--ink-48);font-size:9.5px;line-height:1.4;font-weight:650}
+.editorial-card{min-height:498px;padding:15px;border-radius:24px;background:rgba(251,250,246,.86);box-shadow:0 22px 56px rgba(26,27,25,.12)}
+.editorial-card__image{height:270px;border-radius:18px}
+.editorial-card__image img{object-position:center 58%}
+.season-stamp{left:12px;top:12px;min-height:28px;padding:0 10px;font-size:7.5px;letter-spacing:.09em}
+.editorial-card__body{padding:18px 4px 2px}
+.editorial-card__body small{font-size:9px}
+.editorial-card__body h2{max-width:360px;font-size:clamp(26px,2.4vw,34px)}
+.editorial-card__body p{font-size:13px}
+.editorial-card__meta{margin-top:16px}
+.site-foot{min-height:54px}
+.site-foot span,.site-foot a{font-size:10px}
+.primary-action{min-height:54px;padding:0 23px}

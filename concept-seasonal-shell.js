@@ -7,37 +7,36 @@
     <main class="concept-page" aria-label="Neoficiálny personalizovaný návrh pre ${escapeHTML(config.brand)}">
       <header class="site-head">
         <div class="site-brand" aria-label="Concept Coffee Roasters">
-          <span class="site-brand__copy"><strong>CONCEPT</strong><span>COFFEE ROASTERS</span></span>
+          <img class="site-brand__logo" src="/brand/concept-official-logo.png" width="180" height="42" alt="Concept Coffee Roasters">
         </div>
-        <span class="unofficial-label">Personalizovaný návrh · neoficiálne</span>
+        <div class="site-head__note"><span class="site-head__dot"></span><span>Personalizovaný návrh · neoficiálne</span></div>
       </header>
 
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Personalizovaný návrh pre váš e-shop</p>
           <h1>Vitajte vo vašom návrhu AI poradcu pre Concept Coffee Roasters.</h1>
-          <p class="hero-intro">Ukážka, ako môže zákazníkovi zjednodušiť orientáciu v sezónnej ponuke a premeniť chuťové preferencie na konkrétny produkt.</p>
+          <p class="hero-intro">Zákazník nájde svoju kávu rýchlejšie. Poradca vysvetlí rozdiely v sezónnej ponuke, zohľadní prípravu aj chuť a dovedie ho ku konkrétnemu produktu.</p>
           <ul class="hero-benefits" aria-label="Hodnota poradcu pre firmu">
-            <li><b>Pomôže s výberom</b><span>zúži sezónnu ponuku podľa reálnej potreby</span></li>
-            <li><b>Odpovie okamžite</b><span>na otázky o chuti, príprave a rozdieloch</span></li>
-            <li><b>Vedie k produktu</b><span>od preferencie až ku konkrétnej káve</span></li>
+            <li><span class="benefit-index">01</span><b>Jednoduchší výber</b><span>menej váhania medzi sezónnymi lotmi</span></li>
+            <li><span class="benefit-index">02</span><b>Viac istoty</b><span>chuť a príprava vysvetlené ľudsky</span></li>
+            <li><span class="benefit-index">03</span><b>Priamy nákup</b><span>od preferencie až ku konkrétnej káve</span></li>
           </ul>
           <div class="hero-action-row">
             <button class="primary-action" id="heroOpen" type="button">Otvoriť ukážku poradcu ${icons.arrow}</button>
-            <small>Funkčný koncept pripravený pre majiteľa Concept Coffee Roasters. Nie je súčasťou oficiálneho webu.</small>
+            <div class="hero-note"><span>Funkčný sales demo</span><small>Nie je súčasťou oficiálneho webu.</small></div>
           </div>
         </div>
 
         <aside class="editorial-card" aria-label="Ukážka výsledku, ktorý uvidí zákazník">
           <div class="editorial-card__image">
-            <img src="/assets/concept/result-filter.webp" width="1280" height="900" alt="Príprava filtrovanej kávy">
-            <span class="season-stamp">SEASONAL</span>
+            <img src="/assets/concept/product-weithaga.jpg" width="1024" height="1024" alt="Oficiálna produktová fotografia Weithaga AA – Kenya">
+            <span class="season-stamp">WEITHAGA AA · KENYA</span>
           </div>
           <div class="editorial-card__body">
-            <small>Čo uvidí zákazník</small>
+            <small>Customer experience v praxi</small>
             <h2>Konkrétne odporúčanie, nie zoznam.</h2>
-            <p><b>Weithaga AA</b> — Keňa pre filter, vysvetlená jednoducho a s priamym pokračovaním na produkt.</p>
-            <div class="editorial-card__meta"><span>pôvod · chuť · príprava · dôvod</span><b>od 15 €</b></div>
+            <p><b>Weithaga AA</b> — Keňa pre filter, vysvetlená jednoducho a s priamym pokračovaním na oficiálny produkt.</p>
+            <div class="editorial-card__meta"><span>4 otázky · reálna ponuka · 1 CTA</span><b>od 15 €</b></div>
           </div>
         </aside>
       </section>
@@ -64,7 +63,7 @@
     <section class="widget" id="widget" role="dialog" aria-modal="true" aria-label="Kávový poradca ${escapeHTML(config.brand)}" aria-hidden="true">
       <header class="widget__header">
         <div class="widget-brand">
-          <span class="widget-brand__wordmark"><strong>CONCEPT</strong><small>COFFEE ROASTERS</small></span>
+          <img class="widget-brand__logo" src="/brand/concept-official-logo.png" width="126" height="30" alt="Concept Coffee Roasters">
           <span class="widget-brand__status"><i class="online-dot"></i> AI poradca je pripravený</span>
         </div>
         <div class="widget-actions">

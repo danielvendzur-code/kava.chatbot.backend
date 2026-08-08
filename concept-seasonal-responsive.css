@@ -57,3 +57,51 @@
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
   .assistant-mark__c{stroke-dashoffset:0!important}
 }
+
+@media (max-width:760px){
+  .site-head{min-height:66px}
+  .site-brand__logo{width:138px;height:34px}
+  .site-head__note{max-width:132px;font-size:8px;line-height:1.2;text-align:right}
+  .site-head__dot{display:none}
+  .hero{gap:26px;padding:28px 0 78px}
+  .hero h1{font-size:clamp(38px,10.8vw,52px);letter-spacing:-.05em}
+  .hero-intro{margin-top:17px;font-size:15px;line-height:1.5}
+  .hero-benefits{margin-top:22px;gap:0}
+  .hero-benefits li{min-height:0;grid-template-columns:29px 145px 1fr;grid-template-rows:auto;padding:10px 0}
+  .hero-benefits .benefit-index{grid-row:auto}
+  .hero-benefits li>span:last-child{font-size:10px}
+  .hero-action-row{margin-top:20px;display:grid;grid-template-columns:1fr;gap:9px}
+  .primary-action{width:100%}
+  .hero-note{max-width:none;display:flex;gap:6px;align-items:center;padding:0}
+  .hero-note small{font-size:9px}
+  .editorial-card{min-height:0;padding:12px;border-radius:21px}
+  .editorial-card__image{height:205px;border-radius:15px}
+  .editorial-card__body{padding:15px 3px 3px}
+  .editorial-card__body h2{font-size:28px}
+  .editorial-card__body p{font-size:12.5px}
+  .launcher-teaser{display:none}
+}
+
+@media (max-width:390px){
+  .site-head__note{font-size:7.4px;max-width:120px}
+  .hero{padding-top:24px}
+  .hero h1{font-size:38px}
+  .hero-benefits li{grid-template-columns:26px 132px 1fr;gap:3px 6px}
+  .hero-benefits li>span:last-child{font-size:9.4px}
+  .result-actions{grid-template-columns:1fr}
+  .result-button--primary{min-height:50px}
+}
+
+@media (max-width:640px){
+  .widget{inset:0;width:100%!important;max-width:100%!important;right:auto;bottom:auto;overflow:hidden}
+  .widget__header{min-width:0;overflow:hidden}
+  .widget-brand{min-width:0;overflow:hidden}
+  .widget-brand__logo{width:116px;max-width:116px;flex:0 1 auto}
+  .widget-actions{flex:0 0 auto}
+  .mode{width:calc(100% - 24px)!important;max-width:none;min-width:0;margin-left:12px;margin-right:12px;overflow:hidden}
+  .mode__button{min-width:0;padding:0 7px;white-space:nowrap}
+  .mode__button b{font-size:11px}
+  .screen,.advisor{min-width:0;max-width:100%}
+  .result-actions{grid-template-columns:minmax(0,1fr) minmax(0,.66fr);min-width:0}
+  .result-button{min-width:0;padding-left:8px;padding-right:8px;overflow-wrap:anywhere}
+}

@@ -71,3 +71,15 @@
 .widget-credit,.advisor-credit{min-height:44px;display:flex;align-items:center;justify-content:center;color:var(--ink-48);font-size:10.5px;font-weight:650}
 .widget-credit a,.advisor-credit a{min-height:44px;display:inline-flex;align-items:center;margin-left:4px;font-weight:800;text-underline-offset:3px}
 .widget-credit a:hover,.advisor-credit a:hover{color:var(--ink)}
+
+.launcher{right:max(24px,env(safe-area-inset-right));bottom:max(24px,env(safe-area-inset-bottom))}
+.launcher-teaser{margin-bottom:78px;border-radius:18px 18px 6px 18px}
+.launcher-teaser__open{min-height:84px;padding:14px 43px 13px 16px}
+.launcher__button{width:64px;height:64px;padding:15px}
+.widget{width:min(448px,calc(100vw - 40px));height:min(720px,calc(100dvh - 32px));box-shadow:0 24px 72px rgba(26,27,25,.22)}
+.widget-brand__logo{width:126px;height:30px;object-fit:contain;object-position:left center}
+.widget-brand__status{font-size:9px}
+.chat-screen{gap:8px}
+.advisor-entry{min-height:76px;border-radius:16px}
+.chip{font-size:10.5px}
+.composer input{font-size:13px}

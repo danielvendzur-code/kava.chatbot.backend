@@ -14,11 +14,12 @@ window.CONCEPT_SEASONAL_CONFIG = Object.freeze({
       id: 'weithaga', name: 'Weithaga AA', country: 'Keňa', region: 'Nyeri', process: 'washed',
       altitude: '1 400 – 1 700 m', score: '87 bodov',
       prep: ['filter'], taste: ['fruity', 'balanced'], drink: ['black'], caffeine: ['classic', 'either'],
-      tags: ['granátové jablko', 'čierne ríbezle', 'ibištek', 'kakao'],
-      plainTaste: 'Šťavnatá a čistá káva. Pripomína ríbezle a granátové jablko, no kakaový záver ju drží vyváženú.',
-      reason: 'Sedí k filtru a k voľbe ovocného profilu bez ťažkej fermentovanej chuti.',
+      tags: ['červené ríbezle', 'grep', 'vanilka', 'čierny čaj'],
+      plainTaste: 'Jasná a iskrivá s červenými ríbezľami a grepom. Sladká vanilka a čistý čierny čaj ju držia elegantne vyváženú.',
+      reason: 'Je to dobrá voľba, ak chceš ovocný filter s čistým, čajovým záverom a bez ťažkej fermentovanosti.',
       suitable: 'V60, Kalita, AeroPress alebo batch brew',
       photo: '/assets/concept/result-filter.webp',
+      productPhoto: '/assets/concept/product-weithaga.jpg',
       packages: [{ grams: 250, price: 15 }, { grams: 1000, price: 54 }],
       availability: 'Dostupnosť sa overí na produktovej stránke',
       url: 'https://www.conceptcoffee.sk/weithaga-aa---kenya/'
@@ -45,6 +46,7 @@ window.CONCEPT_SEASONAL_CONFIG = Object.freeze({
       reason: 'Je najvýraznejšou voľbou pre človeka, ktorý chce objavovať sezónne spracovanie.',
       suitable: 'Filter alebo experimentálnejšie espresso bez mlieka',
       photo: '/assets/concept/result-filter.webp',
+      productPhoto: '/assets/concept/product-berry-blast.jpg',
       packages: [{ grams: 250, price: 18.5 }, { grams: 1000, price: 66 }],
       availability: 'Dostupnosť sa overí na produktovej stránke',
       url: 'https://www.conceptcoffee.sk/berry-blast-colombia/'
@@ -72,6 +74,7 @@ window.CONCEPT_SEASONAL_CONFIG = Object.freeze({
       reason: 'V mlieku ostane čitateľná a zároveň nepôsobí ako tmavá horká káva.',
       suitable: 'Pákový a automatický kávovar, moka kanvička',
       photo: '/assets/concept/result-espresso.webp',
+      productPhoto: '/assets/concept/product-holyshot.jpg',
       packages: [{ grams: 500, price: 17.5 }, { grams: 1000, price: 34 }],
       availability: 'Dostupnosť sa overí na produktovej stránke',
       url: 'https://www.conceptcoffee.sk/holysht-espresso/'
@@ -85,6 +88,7 @@ window.CONCEPT_SEASONAL_CONFIG = Object.freeze({
       reason: 'Je aktuálnou bezkofeínovou voľbou pre espresso a mliečne nápoje bez toho, aby pôsobila ako náhrada.',
       suitable: 'Espresso, automatický kávovar alebo moka kanvička',
       photo: '/assets/concept/result-decaf.webp',
+      productPhoto: '/assets/concept/product-yellow-sunset.jpg',
       packages: [{ grams: 250, price: 12.5 }, { grams: 500, price: 24.5 }, { grams: 1000, price: 48 }],
       availability: 'Dostupnosť sa overí na produktovej stránke',
       url: 'https://www.conceptcoffee.sk/yellow-sunset/'
