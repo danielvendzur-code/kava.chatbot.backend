@@ -720,18 +720,23 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 .advisor-top__row { display: flex; align-items: center; gap: 12px; }
 .back {
-  width: 38px; height: 38px;
   flex: none;
-  border-radius: 50%;
-  border: 1px solid var(--line-strong);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 40px;
+  padding: 0 16px 0 12px;
+  border-radius: var(--r-pill);
+  border: 1.5px solid var(--line-strong);
   background: var(--surface);
-  color: var(--text-2);
-  display: grid;
-  place-items: center;
-  transition: background .2s var(--ease), border-color .2s var(--ease);
+  color: var(--text);
+  font-size: 14.5px;
+  font-weight: 600;
+  transition: background .2s var(--ease), border-color .2s var(--ease),
+              color .2s var(--ease), opacity .2s var(--ease);
 }
-.back:hover:not([disabled]) { background: var(--surface-2); border-color: var(--ink); color: var(--ink); }
-.back[disabled] { opacity: .35; cursor: default; }
+.back:hover:not([disabled]) { background: var(--ink); border-color: var(--ink); color: var(--on-ink); }
+.back[disabled] { opacity: .32; cursor: default; }
 .back svg { width: 17px; height: 17px; }
 
 .advisor-top__copy { flex: 1; min-width: 0; }
@@ -785,9 +790,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
   scrollbar-width: thin;
   display: flex;
   flex-direction: column;
-  transition: opacity .18s var(--ease), transform .18s var(--ease);
+  transition: opacity .2s var(--ease), transform .2s var(--ease);
 }
-.advisor.is-leaving { opacity: 0; transform: translateX(-10px); }
+.advisor.is-leaving { opacity: 0; transform: translateX(-14px); }
 
 .question { margin-bottom: 14px; }
 .question h2 {
@@ -843,7 +848,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   position: relative;
   display: block;
   width: 100%;
-  height: 96px;
+  height: 128px;
   background: radial-gradient(130% 110% at 50% 0%, #fffaf1, #f0e2cc);
   border-bottom: 1px solid var(--line);
   overflow: hidden;
@@ -854,8 +859,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 42%;
-  transition: transform .35s var(--ease);
+  object-position: center 45%;
+  transition: transform .4s var(--ease);
 }
 .option:hover .option__visual img { transform: scale(1.04); }
 
@@ -915,7 +920,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .option.is-selected {
   border-color: var(--ink);
   background: var(--kraft-tint);
+  animation: pick .34s var(--ease);
 }
+@keyframes pick {
+  0% { transform: none; }
+  45% { transform: scale(1.025); }
+  100% { transform: none; }
+}
+.option.is-dimmed { opacity: .45; transform: scale(.985); }
 .option.is-selected .option__mark {
   background: var(--ink);
   border-color: var(--ink);
@@ -1177,7 +1189,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 
 /* A 1366x768 notebook clamps the widget; trim the tiles so a step still fits. */
 @media (min-width: 641px) and (max-height: 850px) {
-  .option__visual { height: 82px; }
+  .option__visual { height: 104px; }
   .question h2 { font-size: 22px; }
   .question { margin-bottom: 12px; }
 }
@@ -1233,7 +1245,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   .advisor { padding: 2px 14px 14px; }
   .advisor-top { padding: 12px 14px; }
   .options { gap: 9px; }
-  .option__visual { height: 104px; }
+  .option__visual { height: 132px; }
   .bubble { max-width: 86%; }
   .chips { flex-wrap: wrap; }
   .chip { flex: 1 1 calc(50% - 4px); text-align: center; }

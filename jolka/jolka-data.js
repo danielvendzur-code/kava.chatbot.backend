@@ -336,10 +336,11 @@ window.JOLKA = (() => {
   /**
    * Advisor — four steps, weighted scoring, no dead ends.
    *
-   * Every option carries `product`: a real coffee from the catalogue that embodies
-   * that answer, so each step is illustrated with genuine Jolka photography rather
-   * than stock imagery. `glyph` puts a meaning badge over the photo where the
-   * answer is about a method rather than a taste.
+   * Every option is illustrated. Taste and acidity steps use a real coffee from the
+   * catalogue (`product`), so the customer sees genuine Jolka photography. The method
+   * steps use `photo`: placeholder brewing and drink shots under assets/jolka/method,
+   * documented in that folder's SOURCES.md and meant to be swapped for the roastery's
+   * own once it has them.
    */
   const steps = [
     {
@@ -358,10 +359,10 @@ window.JOLKA = (() => {
       name: 'Príprava',
       title: 'Ako kávu pripravujete?',
       options: [
-        { value: 'automat', title: 'Automatický kávovar', detail: 'Jedno tlačidlo', product: '9-to-fine', glyph: 'automat' },
-        { value: 'lever', title: 'Pákový kávovar', detail: 'Espresso ručne', product: 'guatemala-shb', glyph: 'lever' },
-        { value: 'moka', title: 'Moka alebo džezva', detail: 'Príprava na sporáku', product: 'brazil-cerrado', glyph: 'moka' },
-        { value: 'filter', title: 'Filter alebo V60', detail: 'Prekvapkávanie', product: 'vietnam-lang-biang', glyph: 'filter' }
+        { value: 'automat', title: 'Automatický kávovar', detail: 'Jedno tlačidlo', photo: '/assets/jolka/method/automat.webp' },
+        { value: 'lever', title: 'Pákový kávovar', detail: 'Espresso ručne', photo: '/assets/jolka/method/lever.webp' },
+        { value: 'moka', title: 'Moka alebo džezva', detail: 'Príprava na sporáku', photo: '/assets/jolka/method/moka.webp' },
+        { value: 'filter', title: 'Filter alebo V60', detail: 'Prekvapkávanie', photo: '/assets/jolka/method/filter.webp' }
       ]
     },
     {
@@ -369,9 +370,9 @@ window.JOLKA = (() => {
       name: 'Nápoj',
       title: 'Pijete ju čiernu alebo s mliekom?',
       options: [
-        { value: 'black', title: 'Čiernu', detail: 'Espresso alebo filter', product: 'colombia-sofia', glyph: 'black' },
-        { value: 'milk', title: 'S mliekom', detail: 'Cappuccino a latte', product: 'zmes-jolka', glyph: 'milk' },
-        { value: 'both', title: 'Striedam oboje', detail: 'Musí zvládnuť aj mlieko', product: 'sviatocna-zmes', glyph: 'both' }
+        { value: 'black', title: 'Čiernu', detail: 'Espresso alebo filter', photo: '/assets/jolka/method/black.webp' },
+        { value: 'milk', title: 'S mliekom', detail: 'Cappuccino a latte', photo: '/assets/jolka/method/milk.webp' },
+        { value: 'both', title: 'Striedam oboje', detail: 'Musí zvládnuť aj mlieko', photo: '/assets/jolka/method/both.webp' }
       ]
     },
     {

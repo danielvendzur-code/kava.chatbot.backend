@@ -202,7 +202,7 @@
         <section class="screen is-active" id="advisorScreen" aria-label="Výber kávy">
           <div class="advisor-top">
             <div class="advisor-top__row">
-              <button class="back" id="back" type="button" aria-label="Späť na predchádzajúci krok">${icons.back}</button>
+              <button class="back" id="back" type="button">${icons.back}<span>Späť</span></button>
               <div class="advisor-top__copy"><b id="stepTitle">Krok 1 zo 4</b><span id="stepName">Chuť</span></div>
             </div>
             <div class="progress" id="progress" aria-hidden="true"></div>
@@ -326,15 +326,15 @@
       .join('');
   }
 
-  /** Every option is illustrated with a real Jolka photo; methods also get a badge. */
+  /** Taste and acidity steps show a real coffee; method steps show the brew itself. */
   function optionVisual(option) {
-    const product = byId[option.product];
+    const src = option.photo || byId[option.product].photo;
     const badge = option.glyph
       ? `<span class="option__badge">${glyph(option.glyph)}</span>`
       : typeof option.dots === 'number'
         ? `<span class="option__badge option__badge--dots">${dots(option.dots - 1)}</span>`
         : '';
-    return `<span class="option__visual"><img src="${product.photo}" alt="" loading="lazy" width="120" height="96">${badge}</span>`;
+    return `<span class="option__visual"><img src="${src}" alt="" loading="lazy" width="120" height="96">${badge}</span>`;
   }
 
   function renderQuestion() {
@@ -357,46 +357,38 @@
           .join('')}
       </div>`;
 
-    advisorFoot.hidden = false;
-    advisorFoot.innerHTML = `
-      <button class="cta" type="button" id="next" ${selected ? '' : 'disabled'}>
-        ${last ? 'Zobraziť moju kávu' : 'Pokračovať'} ${icons.arrow}
-      </button>
-      <span class="advisor-foot__hint">${
-        selected ? esc(byId[step.options.find((o) => o.value === selected).product].name) : `Vyberáme z ${products.length} káv v ponuke Jolky`
-      }</span>`;
+    advisorFoot.hidden = true;
+    advisorFoot.innerHTML = '';
 
     $$('.option', advisor).forEach((button) =>
       button.addEventListener('click', () => select(button.dataset.value))
     );
-    $('#next').addEventListener('click', advance);
+    return last;
   }
 
+  /** Selecting confirms the step: mark it, let the choice register, then glide on. */
   function select(value) {
     if (state.busy || state.stage !== 'questions') return;
+    state.busy = true;
     state.answers[steps[state.step].key] = value;
-    const step = steps[state.step];
+
     $$('.option', advisor).forEach((button) => {
       const on = button.dataset.value === value;
       button.classList.toggle('is-selected', on);
+      button.classList.toggle('is-dimmed', !on);
       button.setAttribute('aria-pressed', String(on));
     });
-    const next = $('#next');
-    next.disabled = false;
-    $('.advisor-foot__hint').textContent = byId[step.options.find((o) => o.value === value).product].name;
-  }
 
-  function advance() {
-    if (state.busy || !state.answers[steps[state.step].key]) return;
-    state.busy = true;
-    advisor.classList.add('is-leaving');
     setTimeout(() => {
-      if (state.step < steps.length - 1) state.step += 1;
-      else state.stage = 'result';
-      state.busy = false;
-      advisor.classList.remove('is-leaving');
-      renderAdvisor();
-    }, 180);
+      advisor.classList.add('is-leaving');
+      setTimeout(() => {
+        if (state.step < steps.length - 1) state.step += 1;
+        else state.stage = 'result';
+        state.busy = false;
+        advisor.classList.remove('is-leaving');
+        renderAdvisor();
+      }, 200);
+    }, 340);
   }
 
   function renderResult() {

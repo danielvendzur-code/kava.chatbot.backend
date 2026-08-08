@@ -22,14 +22,13 @@ function watchConsole(page) {
   return failures;
 }
 
+// Selecting confirms the step and glides on by itself.
 async function answer(page, value) {
   const option = page.locator(`.option[data-value="${value}"]`);
   await option.click();
   await expect(option).toHaveClass(/is-selected/);
   await expect(option.locator('.option__copy b')).toBeVisible();
-  await expect(page.locator('#next')).toBeEnabled();
-  await page.locator('#next').click();
-  await page.waitForTimeout(320);
+  await page.waitForTimeout(700);
 }
 
 async function runAdvisor(page, values) {
@@ -78,8 +77,6 @@ test('advisor is four weighted steps and lands on a real product page', async ({
   await expect(page.locator('#stepTitle')).toHaveText('Krok 1 zo 4');
   await expect(page.locator('.option')).toHaveCount(4);
   await expect(page.locator('.option__visual img')).toHaveCount(4);
-  // nothing advances until the customer confirms
-  await expect(page.locator('#next')).toBeDisabled();
 
   await answer(page, 'fruity');
   await expect(page.locator('#stepTitle')).toHaveText('Krok 2 zo 4');
@@ -132,6 +129,7 @@ test('back keeps the answer, alternative swaps the product, reset clears everyth
   await page.locator('#heroOpen').click();
 
   await expect(page.locator('#back')).toBeDisabled();
+  await expect(page.locator('#back')).toContainText('Späť');
   await answer(page, 'chocolate');
   await expect(page.locator('#stepTitle')).toHaveText('Krok 2 zo 4');
 
@@ -139,11 +137,8 @@ test('back keeps the answer, alternative swaps the product, reset clears everyth
   await expect(page.locator('#stepTitle')).toHaveText('Krok 1 zo 4');
   await expect(page.locator('.option.is-selected')).toHaveCount(1);
   await expect(page.locator('.option.is-selected')).toHaveAttribute('data-value', 'chocolate');
-  // a remembered answer keeps the continue button live
-  await expect(page.locator('#next')).toBeEnabled();
 
-  await page.locator('#next').click();
-  await page.waitForTimeout(320);
+  await answer(page, 'chocolate');
   await answer(page, 'automat');
   await answer(page, 'milk');
   await answer(page, 'none');
@@ -244,16 +239,22 @@ for (const [width, height] of [[390, 844], [360, 800]]) {
   });
 }
 
-test('every advisor step fits its pane without scrolling', async ({ page }) => {
+test('every advisor step is photographic and fits its pane without scrolling', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto(JOLKA, { waitUntil: 'networkidle' });
   await page.locator('#heroOpen').click();
   for (const value of ['chocolate', 'automat', 'milk', 'none']) {
-    const spill = await page.evaluate(() => {
+    const state = await page.evaluate(() => {
       const a = document.querySelector('#advisor');
-      return a.scrollHeight - a.clientHeight;
+      const imgs = [...a.querySelectorAll('.option__visual img')];
+      return {
+        spill: a.scrollHeight - a.clientHeight,
+        options: a.querySelectorAll('.option').length,
+        decoded: imgs.filter((i) => i.complete && i.naturalWidth > 0).length
+      };
     });
-    expect(spill, `step ${value} overflows its pane`).toBeLessThanOrEqual(0);
+    expect(state.spill, `step ${value} overflows its pane`).toBeLessThanOrEqual(0);
+    expect(state.decoded, `step ${value} is missing photos`).toBe(state.options);
     await answer(page, value);
   }
 });
