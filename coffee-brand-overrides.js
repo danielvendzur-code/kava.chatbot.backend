@@ -15,14 +15,14 @@
   const vitazov = demos.vitazov;
   Object.assign(vitazov, {
     ownerGreeting: '',
-    headline: 'Vitajte vo vašom návrhu AI poradcu pre Kávu Víťazov.',
-    intro: 'Ukážka, ako môže poradca pomôcť zákazníkom vybrať kávu domov, do automatu aj kancelárie a skončiť pri konkrétnom produkte.',
-    welcome: 'Dobrý deň. Pomôžem vám vybrať kávu domov, do kancelárie aj do automatu. Môžete sa opýtať priamo alebo prejsť cez krátky výber.',
-    quick: ['Káva do kancelárie', 'Niečo jemné bez kyslosti', 'Káva do mlieka', 'Bezkofeínová'],
+    headline: 'Káva, ktorú si zákazník vyberie s istotou.',
+    intro: 'Poradca odpovie 24/7, zistí, kde a ako zákazník pije kávu, a odporučí konkrétny produkt.',
+    welcome: 'Dobrý deň. Pomôžem vám vybrať kávu domov, do kancelárie aj do automatu. Napíšte mi, čo máte radi.',
+    quick: ['Káva do kancelárie', 'Niečo jemné', 'Káva do mlieka', 'Bez kofeínu'],
     benefits: [
-      ['Menej váhania.', ''],
-      ['Konkrétna káva.', ''],
-      ['Domov aj firma.', '']
+      ['Jednoduchý výber', 'Pár otázok a zákazník vie, po ktorej káve siahnuť.'],
+      ['Pomoc 24/7', 'Odpoveď dostane aj vtedy, keď práve nie ste online.'],
+      ['Domov aj do firmy', 'Poradca rozlíši domácnosť, automat aj kanceláriu.']
     ],
     questions: [
       {
@@ -30,16 +30,16 @@
         options: [
           ['home', 'Domov', 'Káva na bežné každodenné pitie', 'home'],
           ['office', 'Kancelária', 'Stabilná voľba pre viac ľudí', 'office'],
-          ['automatic', 'Do automatu', 'Spoľahlivé zrná bez laborovania', 'automatic'],
-          ['discovery', 'Filter / objavovanie', 'Výraznejší pôvod a zaujímavejšia chuť', 'discovery']
+          ['automatic', 'Do automatu', 'Spoľahlivá káva bez skúšania naslepo', 'automatic'],
+          ['discovery', 'Chcem skúsiť niečo nové', 'Ovocnejšia a zaujímavejšia chuť', 'discovery']
         ]
       },
       {
         key: 'profile', name: 'Chuť', title: 'Aký chuťový smer chcete?',
         options: [
-          ['classic', 'Čokoláda a orechy', 'Klasickejší, pokojný profil', 'smooth'],
-          ['balanced', 'Jemná a vyvážená', '100 % arabika bez extrémov', 'both'],
-          ['fruity', 'Ovocná a objavná', 'Výberová káva s výraznejším pôvodom', 'fruity']
+          ['classic', 'Čokoláda a orechy', 'Známa a príjemná chuť', 'smooth'],
+          ['balanced', 'Jemná a vyvážená', 'Pokojná káva na každý deň', 'both'],
+          ['fruity', 'Ovocná a svieža', 'Ľahšia chuť s ovocnými tónmi', 'fruity']
         ]
       },
       {

@@ -70,14 +70,14 @@
   document.documentElement.style.setProperty('--accent', config.accent);
   document.documentElement.style.setProperty('--surface', config.surface);
   document.documentElement.style.setProperty('--ink', config.ink || config.primary);
-  document.title = `${config.brand} – návrh kávového poradcu`;
+  document.title = `${config.brand} – kávový poradca`;
 
   const root = $('#coffee-demo-root');
   root.innerHTML = `
-    <main class="demo-page" aria-label="Personalizovaný návrh pre ${esc(config.brand)}">
+    <main class="demo-page" aria-label="Kávový poradca ${esc(config.brand)}">
       <header class="demo-header">
         <div class="demo-brand"><span class="demo-brand__mark">${advisorLogo()}</span><span class="demo-brand__copy"><strong>${esc(config.brand)}</strong><small>${esc(config.subbrand)}</small></span></div>
-        <span class="demo-tag"><i></i> Personalizovaná ukážka</span>
+        <a class="demo-tag" href="${esc(config.shopUrl)}" target="_blank" rel="noreferrer">kavavitazov.sk ${icons.next}</a>
       </header>
       <section class="demo-hero">
         <div class="demo-copy">
@@ -85,9 +85,9 @@
           <h1>${esc(config.headline)}</h1>
           <p>${esc(config.intro)}</p>
           <div class="demo-benefits">${benefits.map(([title, text], index) => `<article class="demo-benefit"><span>${String(index + 1).padStart(2,'0')}</span><div><b>${esc(title)}</b><small>${esc(text)}</small></div></article>`).join('')}</div>
-          <div class="demo-actions"><button class="primary-action" id="heroOpen" type="button">Vyskúšať poradcu ${icons.next}</button><small>Funkčná ukážka. Bez vymyslených výsledkov a bez neoverených kontaktov.</small></div>
+          <div class="demo-actions"><button class="primary-action" id="heroOpen" type="button">Vyskúšať výber kávy ${icons.next}</button></div>
         </div>
-        <aside class="demo-visual" aria-label="Ukážka reálneho výsledku">
+        <aside class="demo-visual" aria-label="Odporúčaná káva">
           <div class="preview-panel">
             <div class="preview-panel__top"><div><small>Osobné odporúčanie</small><b>${esc(previewProduct.name)}</b></div><span><i></i> pripravené</span></div>
             <div class="preview-product"><div class="preview-pack">${advisorLogo('advisor-logo--pack')}<small>${esc(config.brand)}</small><strong>${esc(previewProduct.name)}</strong></div><div class="preview-product__copy"><span>${esc(previewProduct.price)}</span><h2>${esc(previewProduct.bestFor || previewProduct.reason)}</h2><div>${(previewProduct.tags || []).slice(0,3).map((tag) => `<b>${esc(tag)}</b>`).join('')}</div></div></div>
@@ -96,7 +96,7 @@
           </div>
         </aside>
       </section>
-      <footer class="demo-footer"><span>Neoficiálna ukážka pre ${esc(config.brand)}.</span><a href="${esc(config.shopUrl)}" target="_blank" rel="noreferrer">Aktuálny e-shop</a></footer>
+      <footer class="demo-footer"><span>Poradca pre jednoduchší výber kávy.</span><a href="${esc(config.shopUrl)}" target="_blank" rel="noreferrer">kavavitazov.sk</a></footer>
     </main>
 
     <div class="launcher" id="launcher">
@@ -105,11 +105,11 @@
     </div>
 
     <section class="widget" id="widget" aria-label="Kávový poradca ${esc(config.brand)}" aria-hidden="true">
-      <header class="widget__header"><div class="widget-brand"><span class="widget-brand__mark">${advisorLogo()}</span><span class="widget-brand__copy"><strong>${esc(config.brand)}</strong><small><i></i> Poradca je pripravený</small></span></div><div class="widget-actions"><button class="icon-button" id="resetAll" type="button" aria-label="Začať odznova">${icons.refresh}</button><button class="icon-button" id="closeWidget" type="button" aria-label="Zavrieť">${icons.close}</button></div></header>
+      <header class="widget__header"><div class="widget-brand"><span class="widget-brand__mark">${advisorLogo()}</span><span class="widget-brand__copy"><strong>${esc(config.brand)}</strong><small><i></i> Online</small></span></div><div class="widget-actions"><button class="icon-button" id="resetAll" type="button" aria-label="Začať odznova">${icons.refresh}</button><button class="icon-button" id="closeWidget" type="button" aria-label="Zavrieť">${icons.close}</button></div></header>
       <nav class="mode" id="modeSwitch" aria-label="Režim poradcu"><span class="mode__indicator" aria-hidden="true"></span><button class="mode__button is-active" type="button" data-mode="chat">${icons.chat}<b>Opýtať sa</b></button><button class="mode__button" type="button" data-mode="advisor">${icons.spark}<b>Vybrať kávu</b></button></nav>
       <div class="stage">
-        <section class="screen is-active" id="chatScreen"><button class="advisor-entry" id="openAdvisor" type="button"><span>${icons.spark}</span><div><small>Najrýchlejšia cesta</small><b>Vybrať kávu cez 4 voľby</b><em>Konkrétny produkt a priame CTA</em></div>${icons.next}</button><div class="chat" id="chatMessages" aria-live="polite"></div><div class="chips" id="quickChips"></div><form class="composer" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Opýtajte sa na kávu…" aria-label="Otázka o káve"><button type="submit" aria-label="Odoslať">${icons.send}</button></form><div class="support-row" id="supportRow"></div></section>
-        <section class="screen" id="advisorScreen"><div class="advisor-progress"><button class="progress-back" id="prevBtn" type="button" aria-label="Predchádzajúca otázka">${icons.back}</button><div><b id="stepLabel">1 / ${questions.length}</b><span id="stepName">${esc(questions[0].name)}</span></div><div class="progress" id="progress"></div></div><div class="advisor" id="advisorBody" aria-live="polite"></div></section>
+        <section class="screen is-active" id="chatScreen"><button class="advisor-entry" id="openAdvisor" type="button"><span>${icons.spark}</span><div><b>Nájsť kávu na mieru</b><em>4 otázky · výsledok do minúty</em></div>${icons.next}</button><div class="chat" id="chatMessages" aria-live="polite"></div><div class="chips" id="quickChips"></div><form class="composer" id="chatForm"><input id="chatInput" autocomplete="off" placeholder="Opýtajte sa na kávu…" aria-label="Otázka o káve"><button type="submit" aria-label="Odoslať">${icons.send}</button></form><div class="support-row" id="supportRow"></div></section>
+        <section class="screen" id="advisorScreen"><div class="advisor-progress"><button class="progress-back" id="prevBtn" type="button" aria-label="Predchádzajúca otázka">${icons.back}</button><div><b id="stepLabel">1 z ${questions.length}</b><span id="stepName">${esc(questions[0].name)}</span></div><div class="progress" id="progress"></div></div><div class="advisor" id="advisorBody" aria-live="polite"></div></section>
       </div>
     </section>`;
 
@@ -194,7 +194,7 @@
   }
 
   function renderChips() {
-    $('#quickChips').innerHTML = config.quick.map((label) => `<button class="chip" type="button"><span>${esc(label)}</span>${icons.next}</button>`).join('');
+    $('#quickChips').innerHTML = config.quick.map((label) => `<button class="chip" type="button"><span>${esc(label)}</span></button>`).join('');
     $$('.chip').forEach((button) => button.addEventListener('click', () => { if (button.classList.contains('is-sending')) return; button.classList.add('is-sending'); sendChat(button.textContent.trim(), button); }));
   }
   function renderSupport() {
@@ -204,17 +204,23 @@
   }
 
   function updateProgress() {
-    const result = state.stage === 'result'; $('#stepLabel').textContent = result ? 'Výsledok' : `${state.step + 1} / ${questions.length}`; $('#stepName').textContent = result ? 'Vaša káva' : questions[state.step].name; $('#prevBtn').disabled = state.stage === 'questions' && state.step === 0;
+    const result = state.stage === 'result'; $('#stepLabel').textContent = result ? 'Výsledok' : `${state.step + 1} z ${questions.length}`; $('#stepName').textContent = result ? 'Vaša káva' : questions[state.step].name; $('#prevBtn').disabled = state.stage === 'questions' && state.step === 0;
     $('#progress').innerHTML = questions.map((_, i) => `<i class="${result || i < state.step ? 'is-done ' : ''}${!result && i === state.step ? 'is-active' : ''}"></i>`).join('');
   }
   function renderQuestion() {
     const q = questions[state.step]; const selected = state.answers[q.key];
-    advisor.innerHTML = `<div class="question"><span>${esc(q.name)}</span><h2>${esc(q.title)}</h2><p>Vyberte možnosť, ktorá je vám najbližšia.</p></div><div class="options ${selected ? 'has-selection' : ''}">${q.options.map(([value,label,desc,iconName], index) => `<button class="option ${selected === value ? 'is-selected' : ''}" type="button" data-value="${esc(value)}" style="--delay:${index * 65}ms"><span class="option__icon">${icons[iconName] || icons.spark}</span><span class="option__copy"><b>${esc(label)}</b><small>${esc(desc)}</small></span><span class="option__state">${selected === value ? icons.check : icons.next}</span></button>`).join('')}</div>`;
+    advisor.innerHTML = `<div class="question"><span>${esc(q.name)}</span><h2>${esc(q.title)}</h2><p>Vyberte jednu možnosť. Odpoveď môžete zmeniť.</p></div><div class="options ${selected ? 'has-selection' : ''}">${q.options.map(([value,label,desc,iconName], index) => `<button class="option ${selected === value ? 'is-selected' : ''}" type="button" data-value="${esc(value)}" aria-pressed="${selected === value}" style="--delay:${index * 65}ms"><span class="option__photo option__photo--${esc(value)}">${icons[iconName] || icons.spark}</span><span class="option__copy"><b>${esc(label)}</b><small>${esc(desc)}</small></span><span class="option__state">${selected === value ? icons.check : icons.next}</span></button>`).join('')}</div><button class="question-continue" id="continueQuestion" type="button" ${selected ? '' : 'disabled'}>Pokračovať ${icons.next}</button>`;
     $$('.option', advisor).forEach((button) => button.addEventListener('click', () => selectAnswer(button.dataset.value)));
+    $('#continueQuestion')?.addEventListener('click', advanceQuestion);
   }
   function selectAnswer(value) {
-    if (state.transitioning || state.stage !== 'questions') return; const q = questions[state.step]; state.answers[q.key] = value; state.transitioning = true; renderQuestion(); emit('advisor_answer',{step:q.key,value});
-    setTimeout(() => { if (state.step < questions.length - 1) state.step += 1; else state.stage='result'; state.transitioning=false; renderAdvisor(); }, matchMedia('(prefers-reduced-motion: reduce)').matches ? 10 : 430);
+    if (state.stage !== 'questions') return; const q = questions[state.step]; state.answers[q.key] = value; renderQuestion(); emit('advisor_answer',{step:q.key,value});
+  }
+  function advanceQuestion() {
+    const q = questions[state.step];
+    if (!state.answers[q.key]) return;
+    if (state.step < questions.length - 1) state.step += 1; else state.stage = 'result';
+    renderAdvisor();
   }
 
   function productVisual(product) { return `<div class="product-visual">${advisorLogo('advisor-logo--pack')}<small>${esc(config.brand)}</small><strong>${esc(product.name)}</strong><i></i></div>`; }

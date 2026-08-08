@@ -41,37 +41,37 @@ window.COFFEE_DEMOS = {
     ]
   },
   vitazov: {
-    id: 'vitazov', brand: 'Káva Víťazov', subbrand: 'Slovenská pražiareň · Prešov', ownerGreeting: 'Dobrý deň, tím Kávy Víťazov.',
-    headline: 'Zákazník si vyberie správnu kávu bez preklikávania celého obchodu.',
-    intro: 'Štyri praktické voľby rozlíšia kanceláriu, automat, klasickú arabiku, výberovú kávu aj bezkofeínovú voľbu.',
+    id: 'vitazov', brand: 'Káva Víťazov', subbrand: 'Slovenská pražiareň · Prešov', ownerGreeting: '',
+    headline: 'Káva, ktorú si zákazník vyberie s istotou.',
+    intro: 'Poradca odpovie 24/7, zistí, kde a ako zákazník pije kávu, a odporučí konkrétny produkt.',
     primary: '#173f35', accent: '#b8df75', surface: '#f5f7f1', ink: '#1f2522',
     shopUrl: 'https://kavavitazov.sk/obchod/', contactUrl: 'https://kavavitazov.sk/kontakt/', businessUrl: 'https://kavavitazov.sk/kontakt/', email: 'kontakt@kavavitazov.sk', phone: '',
-    welcome: 'Dobrý deň. Vyberieme kávu podľa toho, kde ju pijete, čo od nej čakáte a ako ju pripravujete.',
-    quick: ['Káva do kancelárie', 'Silná bez kyslosti', 'Jemná 100 % arabika', 'Bezkofeínová na večer'],
+    welcome: 'Dobrý deň. Pomôžem vám vybrať kávu domov, do kancelárie aj do automatu. Napíšte mi, čo máte radi.',
+    quick: ['Káva do kancelárie', 'Niečo jemné', 'Káva do mlieka', 'Bez kofeínu'],
     benefits: [
-      ['Praktický výber', 'Rozlíši domácnosť, kanceláriu, automat a filter.'],
-      ['Konkrétny produkt', 'Ukáže dôvod, prípravu aj priamy odkaz.'],
-      ['Bez slepých údajov', 'Používa iba overenú ponuku a kontakty.']
+      ['Jednoduchý výber', 'Pár otázok a zákazník vie, po ktorej káve siahnuť.'],
+      ['Pomoc 24/7', 'Odpoveď dostane aj vtedy, keď práve nie ste online.'],
+      ['Domov aj do firmy', 'Poradca rozlíši domácnosť, automat aj kanceláriu.']
     ],
     previewProductId: 'office',
     questions: [
       { key:'use', name:'Použitie', title:'Čo dnes vyberáte?', options:[
         ['home','Domov','Spoľahlivá káva na každý deň','home'],
         ['office','Do kancelárie','Stabilná chuť pre viac ľudí','office'],
-        ['automatic','Do automatu','Zrná, ktoré fungujú bez laborovania','automatic'],
-        ['discovery','Filter a objavovanie','Výraznejší pôvod a ovocnejšia chuť','discovery']
+        ['automatic','Do automatu','Spoľahlivá káva bez skúšania naslepo','automatic'],
+        ['discovery','Chcem skúsiť niečo nové','Ovocnejšia a zaujímavejšia chuť','discovery']
       ]},
       { key:'taste', name:'Chuť', title:'Ktorý smer je vám najbližší?', options:[
-        ['strong','Silná, bez výraznej kyslosti','Plné telo, čokoláda a orechy','strong'],
+        ['strong','Silná a čokoládová','Plná chuť, čokoláda a orechy','strong'],
         ['smooth','Jemnejšia 100 % arabika','Vyvážená a hladká každodenná káva','smooth'],
-        ['fruity','Ovocnejšia výberová','Svieža aróma a výraznejší pôvod','fruity'],
+        ['fruity','Ovocnejšia a svieža','Ľahšia chuť s ovocnými tónmi','fruity'],
         ['decaf','Bezkofeínová','Plná chuť aj bez povzbudenia','decaf']
       ]},
       { key:'prep', name:'Príprava', title:'V čom ju pripravujete?', options:[
-        ['automatic','Automatický kávovar','Jednoduchá a stabilná extrakcia','automatic'],
+        ['automatic','Automatický kávovar','Káva jedným stlačením','automatic'],
         ['lever','Pákový kávovar','Espresso pripravujete ručne','lever'],
         ['moka','Moka alebo zalievanie','Výrazná domáca príprava','moka'],
-        ['filter','Filter','V60, French press alebo prekvapkávanie','filter']
+        ['filter','Filter','Prekvapkávanie, V60 alebo French press','filter']
       ]},
       { key:'drink', name:'Nápoj', title:'Ako ju pijete najčastejšie?', options:[
         ['black','Čiernu','Espresso, lungo alebo filter','black'],
@@ -80,11 +80,11 @@ window.COFFEE_DEMOS = {
       ]}
     ],
     products: [
-      { id:'office', name:'Office Blend', origin:'50 % Arabica · 50 % Robusta', price:'od 15,90 €', url:'https://kavavitazov.sk/espresso-blend/', use:['office','automatic','home'], taste:['strong'], prep:['automatic','lever','moka'], drink:['milk','black','both'], tags:['čokoláda','karamel','bez výraznej kyslosti'], bestFor:'Kancelárie, automaty a ľudí, ktorí chcú výraznú kávu s vyšším obsahom kofeínu.', machines:'Automatický alebo pákový kávovar, moka.', profile:'Plné telo, výrazná kréma, čokoláda, karamel a pražené orechy.', reason:'Je navrhnutý ako stabilný, menej kyslý blend, ktorý zostane čitateľný aj v mlieku a zvládne každodennú kancelársku prevádzku.', alternativeId:'victory' },
-      { id:'victory', name:'Victory Blend', origin:'100 % Arabica · blend troch arabík', price:'od 17,90 €', url:'https://kavavitazov.sk/blend-arabica/', use:['home','office','automatic'], taste:['smooth','strong'], prep:['automatic','lever','moka','filter'], drink:['black','both','milk'], tags:['kakao','korenie','hladká arabika'], bestFor:'Domácnosti a firmy, ktoré chcú univerzálnu 100 % arabiku bez prehnanej horkosti alebo kyslosti.', machines:'Pákový a automatický kávovar; pri strednom pražení aj filter.', profile:'Stredne silné telo, kakao, korenie a jemný kvetinový záver.', reason:'Vlajkový blend spája tri arabiky do vyváženej, aromatickej kávy, ktorá je zrozumiteľná aj pre širší tím.', alternativeId:'brazil' },
-      { id:'brazil', name:'Brazília', origin:'100 % Arabica · single origin', price:'od 16,90 €', url:'https://kavavitazov.sk/kava-brazilia/', use:['home','automatic','office'], taste:['smooth','strong'], prep:['automatic','lever','moka','filter'], drink:['black','both','milk'], tags:['lieskové orechy','jemná','mierna kyslosť'], bestFor:'Ľudí, ktorí chcú jemnú single-origin arabiku s neutrálnym telom a pokojnou aciditou.', machines:'Espresso alebo moka pri full city pražení; alternatívne metódy pri svetlom pražení.', profile:'Príjemná aróma, mierna kyslosť, neutrálne telo, lieskové orechy a jemná vínna dochuť.', reason:'Je to 100 % arabika z farmy Morada Da Prata, spracovaná natural metódou a hodnotená 84 bodmi podľa SCA.', alternativeId:'victory' },
-      { id:'ethiopia', name:'Etiópia', origin:'Specialty Coffee · 100 % Arabica', price:'od 19,90 €', url:'https://kavavitazov.sk/prazena-kava-etiopia/', use:['discovery','home'], taste:['fruity'], prep:['filter','lever'], drink:['black'], tags:['višňa','korenistá','výberová'], bestFor:'Zvedavých kávičkárov, ktorí chcú objavovať výberovú arabiku zo Sidama.', machines:'Filter pri svetlom pražení; espresso alebo moka pri full city pražení.', profile:'Sladká vôňa, korenistá aróma, jemná kyslosť a elegantná višňová dochuť.', reason:'Etiópia Sidamo Organic je 100 % arabika vo výberovej kvalite, spracovaná natural metódou a hodnotená 85 bodmi podľa SCA.', alternativeId:'victory' },
-      { id:'decaf', name:'Bezkofeínová', origin:'Decaf · 100 % Arabica', price:'od 17,90 €', url:'https://kavavitazov.sk/bezkofeinova-decaf/', use:['home','office','automatic','discovery'], taste:['decaf','smooth'], prep:['automatic','lever','moka','filter'], drink:['black','milk','both'], tags:['bez kofeínu','100 % arabika','Swiss Water'], bestFor:'Každého, kto chce brazílsku 100 % arabiku bez bežného obsahu kofeínu.', machines:'Espresso alebo moka; produkt ponúka aj viac hrúbok mletia.', profile:'Brazílska arabika zbavená kofeínu švajčiarskou vodnou metódou bez chemického rozpúšťadla.', reason:'Ako jediná presne rešpektuje požiadavku bez kofeínu a používa Swiss Water proces uvedený pri produkte.', alternativeId:'brazil' }
+      { id:'office', name:'Office Blend', origin:'Zmes arabiky a robusty', price:'od 15,90 €', url:'https://kavavitazov.sk/espresso-blend/', use:['office','automatic','home'], taste:['strong'], prep:['automatic','lever','moka'], drink:['milk','black','both'], tags:['čokoláda','karamel','bez výraznej kyslosti'], bestFor:'Kancelárie, automaty a ľudí, ktorí chcú výraznú kávu s vyšším obsahom kofeínu.', machines:'Automatický alebo pákový kávovar, moka kanvička.', profile:'Plná chuť, hustá pena, čokoláda, karamel a pražené orechy.', reason:'Má výraznú, menej kyslú chuť, nestratí sa v mlieku a hodí sa na každodenné pitie v kancelárii.', alternativeId:'victory' },
+      { id:'victory', name:'Victory Blend', origin:'100 % Arabica', price:'od 17,90 €', url:'https://kavavitazov.sk/blend-arabica/', use:['home','office','automatic'], taste:['smooth','strong'], prep:['automatic','lever','moka','filter'], drink:['black','both','milk'], tags:['kakao','korenie','jemná arabika'], bestFor:'Domácnosti a firmy, ktoré chcú jemnú a univerzálnu 100 % arabiku.', machines:'Pákový alebo automatický kávovar, moka kanvička aj filter.', profile:'Stredne silná chuť, kakao, korenie a jemný kvetinový záver.', reason:'Spája tri arabiky do vyváženej kávy, ktorá chutí dobre čierna aj s mliekom.', alternativeId:'brazil' },
+      { id:'brazil', name:'Brazília', origin:'100 % Arabica z Brazílie', price:'od 16,90 €', url:'https://kavavitazov.sk/kava-brazilia/', use:['home','automatic','office'], taste:['smooth','strong'], prep:['automatic','lever','moka','filter'], drink:['black','both','milk'], tags:['lieskové orechy','jemná','mierna kyslosť'], bestFor:'Ľudí, ktorí chcú jemnú arabiku bez výraznej kyslosti.', machines:'Espresso, moka kanvička aj filter.', profile:'Jemná chuť s lieskovými orechmi a ľahkou vínnou dochuťou.', reason:'Je to príjemná brazílska káva na každý deň, vhodná aj pre ľudí, ktorí nechcú ovocnú chuť.', alternativeId:'victory' },
+      { id:'ethiopia', name:'Etiópia', origin:'100 % Arabica z Etiópie', price:'od 19,90 €', url:'https://kavavitazov.sk/prazena-kava-etiopia/', use:['discovery','home'], taste:['fruity'], prep:['filter','lever'], drink:['black'], tags:['višňa','korenistá','ovocná'], bestFor:'Ľudí, ktorí chcú skúsiť ovocnejšiu a voňavejšiu kávu.', machines:'Najlepšie na filter, vhodná aj na espresso alebo moka kanvičku.', profile:'Sladká vôňa, jemná kyslosť, korenie a višňová dochuť.', reason:'Etiópska arabika je svieža, voňavá a ukáže úplne inú stránku kávy než klasické čokoládové chute.', alternativeId:'victory' },
+      { id:'decaf', name:'Bezkofeínová', origin:'100 % Arabica bez kofeínu', price:'od 17,90 €', url:'https://kavavitazov.sk/bezkofeinova-decaf/', use:['home','office','automatic','discovery'], taste:['decaf','smooth'], prep:['automatic','lever','moka','filter'], drink:['black','milk','both'], tags:['bez kofeínu','jemná','na večer'], bestFor:'Každého, kto chce plnú chuť kávy bez bežného obsahu kofeínu.', machines:'Espresso, moka kanvička aj filter; dostupná je aj mletá.', profile:'Jemná brazílska arabika zbavená kofeínu pomocou vody.', reason:'Presne rešpektuje voľbu bez kofeínu a stále ponúkne plnú kávovú chuť.', alternativeId:'brazil' }
     ]
   },
   concept: {

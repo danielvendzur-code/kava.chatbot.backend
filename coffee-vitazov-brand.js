@@ -118,12 +118,18 @@
 
     const footerLink = document.querySelector('.demo-footer a');
     if (footerLink) {
-      footerLink.href = 'https://mojchatbot.sk';
-      footerLink.textContent = 'mojchatbot.sk';
+      footerLink.href = 'https://kavavitazov.sk/';
+      footerLink.textContent = 'kavavitazov.sk';
     }
 
-    document.querySelector('.advisor-entry')?.remove();
     document.querySelector('.support-row')?.remove();
+
+    const widgetBrand = document.querySelector('.widget-brand');
+    if (widgetBrand && !widgetBrand.querySelector('.kv-widget-logo')) {
+      widgetBrand.innerHTML = `
+        <img class="kv-widget-logo" src="https://kavavitazov.sk/wp-content/uploads/2023/06/text-logo-tmave.svg" alt="Káva Víťazov">
+        <span class="kv-widget-status"><i></i> Online</span>`;
+    }
 
     const chatButton = document.querySelector('[data-mode="chat"] b');
     const advisorButton = document.querySelector('[data-mode="advisor"] b');
@@ -144,14 +150,6 @@
     if (previewReason) previewReason.textContent = 'Prečo to funguje';
     const previewCta = document.querySelector('.preview-cta');
     if (previewCta) previewCta.childNodes[0].textContent = 'Zobraziť odporúčanie ';
-
-    const chatScreen = document.querySelector('#chatScreen');
-    if (chatScreen && !chatScreen.querySelector('.widget-credit')) {
-      const credit = document.createElement('div');
-      credit.className = 'widget-credit';
-      credit.innerHTML = '<span>Ukážka zákazníckeho poradcu</span><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a>';
-      chatScreen.appendChild(credit);
-    }
 
     const widget = document.querySelector('#widget');
     if (widget) {
