@@ -4,11 +4,11 @@
   if (!demo) return;
 
   const localImages = {
-    'peru-valley': '/assets/diamonds/peru-valley.webp',
-    'brazil-fazenda': '/assets/diamonds/brazil-fazenda.webp',
-    'kenya-mugaya': '/assets/diamonds/kenya-mugaya.webp',
-    'kumanday': '/assets/diamonds/kumanday.webp',
-    'el-buho': '/assets/diamonds/el-buho.webp'
+    'peru-valley': '/assets/diamonds/peru-valley-official.jpg',
+    'brazil-fazenda': '/assets/diamonds/brazil-fazenda-official.jpg',
+    'kenya-mugaya': '/assets/diamonds/kenya-mugaya-official.jpg',
+    'kumanday': '/assets/diamonds/kumanday-official.jpg',
+    'el-buho': '/assets/diamonds/el-buho-official.jpg'
   };
 
   demo.products = demo.products.map((product) => ({
