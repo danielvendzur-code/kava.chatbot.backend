@@ -18,7 +18,7 @@
       const slug = last === 'index.html' || last === 'ukazka' ? 'praziarnicka' : last;
       window.COFFEE_DEMO_SLUG = slug;
       const styles = slug === 'praziarnicka'
-        ? ['/praziarnicka-v10.css']
+        ? ['/praziarnicka-v11.css']
         : ['/coffee-v8.css', '/coffee-v8-refine.css'];
       styles.forEach((href) => {
         const link = document.createElement('link');
@@ -38,7 +38,7 @@
     (() => {
       const slug = window.COFFEE_DEMO_SLUG || 'praziarnicka';
       const scripts = slug === 'praziarnicka'
-        ? ['/praziarnicka-v10.js']
+        ? ['/praziarnicka-v11.js']
         : ['/coffee-configs.js', '/coffee-brand-overrides.js', '/coffee-v8.js', '/coffee-v8-patch.js'];
       const load = (src) => new Promise((resolve, reject) => {
         const script = document.createElement('script');
