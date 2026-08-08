@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
   <meta name="theme-color" content="#f6f3ec">
   <meta name="robots" content="noindex,nofollow">
-  <title>Kávový poradca – personalizovaná ukážka</title>
-  <meta name="description" content="Neoficiálna interaktívna ukážka moderného kávového poradcu.">
+  <title>Kávový poradca</title>
+  <meta name="description" content="Nájdite kávu podľa svojej chuti a spôsobu prípravy.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111111'/%3E%3Ctext x='32' y='41' text-anchor='middle' fill='white' font-family='Georgia' font-size='28'%3EK%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +19,9 @@
       const isKaffa = requested === 'kaffa';
 
       if (isKaffa) {
-        document.title = 'Kaffa Roastery – návrh AI poradcu';
+        document.title = 'Kaffa Roastery – nájdite svoju kávu';
         document.querySelector('[name="theme-color"]').content = '#f6f3ec';
-        document.querySelector('[name="description"]').content = 'Personalizovaná ukážka AI poradcu pre Kaffa Roastery.';
+        document.querySelector('[name="description"]').content = 'Nájdite kávu Kaffa podľa svojej chuti a spôsobu prípravy.';
         document.write('<link rel="stylesheet" href="/kaffa-editorial.css"><link rel="stylesheet" href="/kaffa-widget.css">');
       } else {
         document.write('<link rel="stylesheet" href="/coffee-v8.css"><link rel="stylesheet" href="/coffee-v8-refine.css">');
