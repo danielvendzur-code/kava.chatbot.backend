@@ -13,11 +13,11 @@
       <section class="hero">
         <div class="hero-copy">
           <h1>Každý zákazník si nájde svoju kávu.</h1>
-          <p class="hero-intro">AI poradca odpovie 24/7, vysvetlí chuť bez baristického slovníka a prevedie zákazníka od otázky ku konkrétnemu produktu.</p>
+          <p class="hero-intro">Poradca odpovie 24/7, vysvetlí chute jednoducho a odporučí konkrétnu kávu.</p>
           <ul class="hero-benefits" aria-label="Výhody kávového poradcu">
-            <li><span class="benefit-icon">${icons.compass}</span><span><b>Výber bez váhania</b><small>Jednoduché otázky, jasné odporúčanie.</small></span></li>
-            <li><span class="benefit-icon">${icons.upsell}</span><span><b>Prirodzený upsell</b><small>Vhodné balenie alebo alternatíva navyše.</small></span></li>
-            <li><span class="benefit-icon">${icons.clock}</span><span><b>Odpovede 24/7</b><small>Bez čakania, aj mimo otváracích hodín.</small></span></li>
+            <li><span class="benefit-icon">${icons.compass}</span><span><b>Jednoduchý výber</b><small>Pár otázok a nájdeme kávu, ktorá vám sadne.</small></span></li>
+            <li><span class="benefit-icon">${icons.upsell}</span><span><b>Vhodné balenie</b><small>Odporučíme ho podľa toho, koľko kávy pijete.</small></span></li>
+            <li><span class="benefit-icon">${icons.clock}</span><span><b>Pomoc 24/7</b><small>Sme tu, keď potrebujete poradiť.</small></span></li>
           </ul>
           <button class="primary-action" id="heroOpen" type="button">Vyskúšať výber kávy ${icons.arrow}</button>
         </div>
@@ -82,7 +82,7 @@
                 <button class="composer__send" type="submit" aria-label="Odoslať otázku">${icons.send}</button>
               </div>
             </form>
-            <div class="widget-credit">Kávový poradca od <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">Môj Chatbot</a></div>
+            <div class="widget-credit"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">Môj Chatbot</a></div>
           </div>
         </section>
 
@@ -93,7 +93,7 @@
             <div class="progress" id="progress" aria-label="Priebeh výberu"></div>
           </div>
           <div class="advisor" id="advisorBody" aria-live="polite"></div>
-          <div class="advisor-credit">Kávový poradca od <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">Môj Chatbot</a></div>
+          <div class="advisor-credit"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">Môj Chatbot</a></div>
         </section>
       </div>
     </section>`;

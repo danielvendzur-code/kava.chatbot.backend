@@ -13,9 +13,10 @@ const [shell, core, flow, score, result, config, foundation, widget, advisor, re
 
 test('landing communicates customer value without preview disclaimers', () => {
   assert.match(shell, /Každý zákazník si nájde svoju kávu\./);
-  assert.match(shell, /Výber bez váhania/);
-  assert.match(shell, /Prirodzený upsell/);
-  assert.match(shell, /Odpovede 24\/7/);
+  assert.match(shell, /Jednoduchý výber/);
+  assert.match(shell, /Vhodné balenie/);
+  assert.match(shell, /Pomoc 24\/7/);
+  assert.doesNotMatch(shell, /Prirodzený upsell|baristický slovník/i);
   assert.doesNotMatch(shell, /neofici|personalizovan|nie je súčasť|demo/i);
 });
 
@@ -31,7 +32,7 @@ test('chat follows the compact product layout', () => {
   assert.match(widget, /\.chips\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
   assert.match(shell, /Nájsť svoju kávu/);
   assert.match(shell, /4 otázky · výsledok do minúty/);
-  assert.match(shell, /Kávový poradca od/);
+  assert.match(shell, />Môj Chatbot</);
   assert.doesNotMatch(shell, /support-row|mailto:|tel:/);
   assert.equal((chat.match(/function seedChat\(\)[\s\S]*?addMessage\(/g) || []).length, 1);
 });
