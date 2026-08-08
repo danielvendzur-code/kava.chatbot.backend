@@ -40,16 +40,16 @@
 
   const questions = [
     {
-      id: 'prep', eyebrow: 'Krok 1 z 4', title: 'Ako si zákazník pripravuje kávu?', help: 'Začneme spôsobom, ktorý najviac ovplyvní výber.',
+      id: 'prep', eyebrow: 'Príprava', title: 'Ako si pripravujete kávu?', help: 'Vyberte spôsob, ktorý používate najčastejšie.',
       options: [
         { value: 'automatic', title: 'Automat', description: 'Rýchla každodenná šálka', icon: 'automatic' },
         { value: 'espresso', title: 'Espresso', description: 'Pákový kávovar', icon: 'espresso' },
-        { value: 'filter', title: 'Filter', description: 'V60, Chemex, AeroPress', icon: 'filter' },
+        { value: 'filter', title: 'Filter', description: 'Prekvapkávaná káva', icon: 'filter' },
         { value: 'moka', title: 'Moka', description: 'Moka kanvička', icon: 'moka' }
       ]
     },
     {
-      id: 'taste', eyebrow: 'Krok 2 z 4', title: 'Čo chce cítiť v šálke?', help: 'Vyberte chuťový smer, ktorý mu bude prirodzený.',
+      id: 'taste', eyebrow: 'Chuť', title: 'Čo chcete cítiť v šálke?', help: 'Vyberte chuť, ktorá vám je najbližšia.',
       options: [
         { value: 'chocolate', title: 'Sladká a čokoládová', description: 'Kakao, orechy, karamel', icon: 'chocolate' },
         { value: 'balanced', title: 'Vyvážená', description: 'Čistá, jemná a univerzálna', icon: 'balanced' },
@@ -57,7 +57,7 @@
       ]
     },
     {
-      id: 'drink', eyebrow: 'Krok 3 z 4', title: 'Pije ju skôr čiernu alebo s mliekom?', help: 'Profil musí v šálke zostať čitateľný.',
+      id: 'drink', eyebrow: 'Spôsob pitia', title: 'Pijete ju čiernu alebo s mliekom?', help: 'Podľa toho vyberieme kávu, ktorá sa v šálke nestratí.',
       options: [
         { value: 'black', title: 'Čiernu', description: 'Chcem cítiť kávu naplno', icon: 'black' },
         { value: 'milk', title: 'S mliekom', description: 'Cappuccino alebo flat white', icon: 'milk' },
@@ -65,7 +65,7 @@
       ]
     },
     {
-      id: 'caffeine', eyebrow: 'Krok 4 z 4', title: 'Kedy ju bude najčastejšie piť?', help: 'Posledná voľba rozlíši dennú kávu od večernej bezkofeínovej.',
+      id: 'caffeine', eyebrow: 'Kofeín', title: 'Kedy ju pijete najčastejšie?', help: 'Vyberte klasickú alebo bezkofeínovú kávu.',
       options: [
         { value: 'classic', title: 'Počas dňa', description: 'Chcem klasickú kávu s kofeínom', icon: 'classic' },
         { value: 'decaf', title: 'Aj večer', description: 'Chcem chuť bez kofeínu', icon: 'decaf' }
@@ -91,20 +91,20 @@
     <main class="diamonds-page">
       <header class="site-head">
         <a class="brand-link" href="${esc(config.shopUrl)}" target="_blank" rel="noreferrer">${officialLogo()}</a>
-        <span class="owner-context"><i></i>Návrh pre majiteľa Diamonds Roastery</span>
+        <span class="owner-context"><i></i>Online</span>
       </header>
       <section class="owner-hero">
         <div class="owner-copy">
-          <h1>Vitajte vo vašom návrhu AI poradcu pre Diamonds Roastery.</h1>
-          <p>Ukážka, ako môže zákazníkovi zjednodušiť výber medzi skutočnými kávami Diamonds a doviesť ho ku konkrétnemu produktu.</p>
+          <h1>Káva, ktorá vám sadne.</h1>
+          <p>Odpovieme 24/7 a podľa chuti aj prípravy odporučíme konkrétnu kávu.</p>
           <div class="hero-actions">
-            <button id="heroOpen" class="button-primary" type="button">Otvoriť návrh poradcu ${icon('arrow')}</button>
-            <button id="heroAdvisor" class="button-secondary" type="button">Prejsť priamo na výber ${icon('arrow')}</button>
+            <button id="heroOpen" class="button-primary" type="button">Nájsť svoju kávu ${icon('arrow')}</button>
+            <a class="button-secondary" href="${esc(config.categoryUrl)}" target="_blank" rel="noreferrer">Všetky kávy ${icon('arrow')}</a>
           </div>
           <ul class="owner-benefits" aria-label="Obchodná hodnota poradcu">
-            <li><span class="benefit-icon">${icon('check')}</span><span><b>Zrozumiteľný výber</b><small>Rozdiely medzi pôvodmi a chuťami bez odbornej bariéry.</small></span></li>
-            <li><span class="benefit-icon">${icon('check')}</span><span><b>Menej váhania</b><small>Krátke otázky nahradia dlhé hľadanie v ponuke.</small></span></li>
-            <li><span class="benefit-icon">${icon('check')}</span><span><b>Konkrétny produkt</b><small>Od preferencie až k reálnemu produktu s priamym CTA.</small></span></li>
+            <li><span class="benefit-icon">${icon('filter')}</span><span><b>Jednoduchý výber</b><small>Pár otázok a nájdeme kávu, ktorá vám sadne.</small></span></li>
+            <li><span class="benefit-icon">${icon('chat')}</span><span><b>Pomoc 24/7</b><small>Poradíme aj vtedy, keď práve nie sme online.</small></span></li>
+            <li><span class="benefit-icon">${icon('shop')}</span><span><b>Konkrétna káva</b><small>Odporúčanie podľa vašej chuti aj prípravy.</small></span></li>
           </ul>
           <div class="advisor-flow" aria-label="Štyri kroky odporúčania">
             <div><span>1</span><small>Príprava</small></div><i></i><div><span>2</span><small>Chuť</small></div><i></i><div><span>3</span><small>Spôsob pitia</small></div><i></i><div><span>4</span><small>Produkt</small></div>
@@ -115,7 +115,7 @@
           <div class="hero-rail"><div>${productImage(findProduct('kenya-mugaya'), 'rail-photo')}<span>Pre objaviteľov</span></div><div>${productImage(findProduct('el-buho'), 'rail-photo')}<span>Aj bez kofeínu</span></div></div>
         </div>
       </section>
-      <section class="owner-strip" aria-label="Ukážka zákazníckej skúsenosti"><div><span>Chat</span><b>Odpovie na konkrétnu otázku.</b></div><div><span>Výber kávy</span><b>Štyri rozhodnutia → jeden produkt.</b></div><a href="${esc(config.categoryUrl)}" target="_blank" rel="noreferrer">Pozrieť aktuálnu ponuku ${icon('arrow')}</a></section>
+      <section class="owner-strip" aria-label="Výber kávy"><div><span>Chat</span><b>Odpovie na konkrétnu otázku.</b></div><div><span>Výber kávy</span><b>Štyri odpovede a konkrétna káva.</b></div><a href="${esc(config.categoryUrl)}" target="_blank" rel="noreferrer">Pozrieť ponuku ${icon('arrow')}</a></section>
     </main>
 
     <div class="launcher" id="launcher">
@@ -124,16 +124,15 @@
     </div>
 
     <section class="widget" id="widget" role="dialog" aria-modal="true" aria-labelledby="widgetTitle" aria-describedby="widgetDescription" aria-hidden="true" tabindex="-1">
-      <header class="widget-head"><div class="widget-brand">${officialLogo('widget-logo')}<span><strong id="widgetTitle">Diamonds Roastery</strong><small id="widgetDescription">Poradca pre výber kávy</small></span></div><div class="head-actions"><button id="resetAll" type="button" aria-label="Začať odznova">${icon('reset')}</button><button id="closeWidget" type="button" aria-label="Zavrieť poradcu">${icon('close')}</button></div></header>
-      <nav class="mode-switch" aria-label="Režim poradcu"><button data-mode="chat" type="button" aria-pressed="true" class="is-active">${icon('chat')}<span><b>Chat</b><small>Opýtať sa</small></span></button><button data-mode="advisor" type="button" aria-pressed="false">${icon('select')}<span><b>Výber kávy</b><small>4 kroky</small></span></button></nav>
+      <header class="widget-head"><div class="widget-brand">${officialLogo('widget-logo')}<span><strong id="widgetTitle">Diamonds Roastery</strong><small id="widgetDescription"><i></i> Online</small></span></div><div class="head-actions"><button id="resetAll" type="button" aria-label="Začať odznova">${icon('reset')}</button><button id="closeWidget" type="button" aria-label="Zavrieť poradcu">${icon('close')}</button></div></header>
+      <nav class="mode-switch" aria-label="Režim poradcu"><button data-mode="chat" type="button" aria-pressed="true" class="is-active">${icon('chat')}<span><b>Chat</b></span></button><button data-mode="advisor" type="button" aria-pressed="false">${icon('select')}<span><b>Výber kávy</b></span></button></nav>
       <div class="widget-stage">
         <section class="screen chat-screen is-active" id="chatScreen" aria-label="Chat s poradcom">
-          <div class="welcome-card"><div><small>Diamonds Roastery</small><h2>Nájdime kávu, ktorá vám sadne.</h2><p>Opýtajte sa na chuť, prípravu alebo si nechajte zúžiť ponuku cez štyri krátke otázky.</p></div></div>
-          <button class="advisor-entry" id="openAdvisor" type="button"><span>${icon('select')}</span><span><small>Najrýchlejšia cesta k produktu</small><b>Vybrať kávu podľa preferencií</b><em>4 otázky · približne minúta</em></span>${icon('arrow')}</button>
+          <button class="advisor-entry" id="openAdvisor" type="button"><span>${icon('select')}</span><span><b>Nájsť svoju kávu</b><em>4 otázky · výsledok do minúty</em></span>${icon('arrow')}</button>
           <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
-          <div class="chat-bottom"><div class="quick-grid" id="quickChips" aria-label="Rýchle otázky"></div><form id="chatForm" class="composer"><input id="chatInput" autocomplete="off" placeholder="Opýtajte sa na kávu…" aria-label="Otázka o káve"><button type="submit" aria-label="Odoslať otázku">${icon('send')}</button></form><a class="widget-credit" href="${esc(config.mojChatbotUrl)}" target="_blank" rel="noreferrer">Ukážka od Môj Chatbot ${icon('arrow')}</a></div>
+          <div class="chat-bottom"><div class="quick-grid" id="quickChips" aria-label="Rýchle otázky"></div><form id="chatForm" class="composer"><input id="chatInput" autocomplete="off" placeholder="Opýtajte sa na kávu…" aria-label="Otázka o káve"><button type="submit" aria-label="Odoslať otázku">${icon('send')}</button></form></div>
         </section>
-        <section class="screen advisor-screen" id="advisorScreen" aria-label="Výber kávy"><header class="advisor-top"><button id="backButton" type="button">${icon('back')}<span>Späť</span></button><div class="progress" aria-hidden="true"><span id="progressFill"></span></div><span id="progressText">1 / 4</span></header><div class="advisor-content" id="advisorContent"></div></section>
+        <section class="screen advisor-screen" id="advisorScreen" aria-label="Výber kávy"><header class="advisor-top"><button id="backButton" type="button">${icon('back')}<span>Späť</span></button><div class="progress" aria-hidden="true"><span id="progressFill"></span></div><span id="progressText">1 z 4</span></header><div class="advisor-content" id="advisorContent"></div></section>
       </div>
     </section>`;
 

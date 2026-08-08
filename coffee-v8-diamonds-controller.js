@@ -16,14 +16,13 @@
   const progressFill = $('#progressFill');
   const progressText = $('#progressText');
   const backButton = $('#backButton');
-  let transitionTimer = null;
 
   const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const focusableSelector = 'button:not([disabled]), a[href], input:not([disabled]), [tabindex]:not([tabindex="-1"])';
   const visibleFocusable = () => $$(focusableSelector, widget).filter((element) => element.offsetParent !== null);
 
   function renderChat() {
-    chatMessages.innerHTML = state.chat.map((message) => `<div class="chat-line chat-line--${message.role}"><div class="chat-bubble">${esc(message.content)}</div></div>`).join('');
+    chatMessages.innerHTML = state.chat.map((message) => `<div class="chat-line chat-line--${message.role}">${message.role === 'assistant' ? officialLogo('chat-logo') : ''}<div class="chat-bubble">${esc(message.content)}</div></div>`).join('');
     chatMessages.scrollTop = chatMessages.scrollHeight;
   }
 
@@ -123,35 +122,33 @@
 
   function optionCard(option, questionId) {
     const selected = state.answers[questionId] === option.value;
-    return `<button type="button" class="answer-card${selected ? ' is-selected' : ''}" data-answer="${esc(option.value)}" aria-pressed="${String(selected)}"><span class="answer-icon">${icon(option.icon)}</span><span class="answer-copy"><b>${esc(option.title)}</b><small>${esc(option.description)}</small></span><span class="answer-radio" aria-hidden="true"></span></button>`;
+    return `<button type="button" class="answer-card${selected ? ' is-selected' : ''}" data-answer="${esc(option.value)}" aria-pressed="${String(selected)}"><span class="answer-photo answer-photo--${esc(option.value)}">${icon(option.icon)}</span><span class="answer-copy"><b>${esc(option.title)}</b><small>${esc(option.description)}</small></span><span class="answer-radio" aria-hidden="true"></span></button>`;
   }
 
   function renderQuestion() {
     const question = questions[state.step];
-    progressText.textContent = `${state.step + 1} / ${questions.length}`;
+    progressText.textContent = `${state.step + 1} z ${questions.length}`;
     progressFill.style.width = `${((state.step + 1) / questions.length) * 100}%`;
     backButton.disabled = state.step === 0;
-    advisorContent.innerHTML = `<div class="question-view"><span class="question-kicker">${esc(question.eyebrow)}</span><h2>${esc(question.title)}</h2><p>${esc(question.help)}</p><div class="answers">${question.options.map((option) => optionCard(option, question.id)).join('')}</div></div>`;
+    const selected = state.answers[question.id];
+    advisorContent.innerHTML = `<div class="question-view"><span class="question-kicker">${esc(question.eyebrow)}</span><h2>${esc(question.title)}</h2><p>${esc(question.help)}</p><div class="answers">${question.options.map((option) => optionCard(option, question.id)).join('')}</div><button id="continueQuestion" class="question-continue" type="button" ${selected ? '' : 'disabled'}>Pokračovať ${icon('arrow')}</button></div>`;
     $$('.answer-card', advisorContent).forEach((button) => button.addEventListener('click', () => {
-      if (state.transitioning) return;
-      state.transitioning = true;
       state.answers[question.id] = button.dataset.answer;
-      $$('.answer-card', advisorContent).forEach((item) => {
-        const selected = item === button;
-        item.classList.toggle('is-selected', selected);
-        item.setAttribute('aria-pressed', String(selected));
-      });
-      transitionTimer = window.setTimeout(() => {
-        state.transitioning = false;
-        if (state.step < questions.length - 1) {
-          state.step += 1;
-          renderQuestion();
-        } else {
-          calculateResult();
-          renderResult();
-        }
-      }, reducedMotion() ? 0 : 180);
+      renderQuestion();
     }));
+    $('#continueQuestion').addEventListener('click', advanceQuestion);
+  }
+
+  function advanceQuestion() {
+    const question = questions[state.step];
+    if (!state.answers[question.id]) return;
+    if (state.step < questions.length - 1) {
+      state.step += 1;
+      renderQuestion();
+    } else {
+      calculateResult();
+      renderResult();
+    }
   }
 
   function prepLabel(values) {
@@ -165,7 +162,7 @@
     progressText.textContent = 'Výsledok';
     progressFill.style.width = '100%';
     backButton.disabled = false;
-    advisorContent.innerHTML = `<div class="result-view"><span class="question-kicker">Odporúčanie pripravené</span><article class="result-editorial"><div class="result-photo-wrap">${productImage(product, 'result-photo')}</div><div class="result-copy"><span class="result-label">Vaša káva</span><h2>${esc(product.name)}</h2><p class="result-taste"><b>Chuťový profil</b>${product.tags.join(' · ')}</p><div class="result-meta"><span>${esc(product.origin)}</span>${product.process ? `<span>${esc(product.process)}</span>` : ''}</div><dl class="result-facts"><div><dt>Príprava</dt><dd>${esc(prepLabel(product.prep))}</dd></div><div><dt>Sviežosť / acidita</dt><dd>${esc(product.acidity)}</dd></div><div><dt>Cena na e-shope</dt><dd>${esc(product.price)}</dd></div></dl><div class="result-why"><b>Prečo práve táto</b><p>${esc(product.reason)}</p></div><a class="result-cta" href="${esc(product.url)}" target="_blank" rel="noreferrer">Pozrieť produkt ${icon('shop')}</a></div></article><article class="alternative"><div class="alternative-media">${productImage(alternative, 'alternative-photo')}</div><div><small>Jedna relevantná alternatíva</small><b>${esc(alternative.name)}</b><span>${esc(alternative.tags.slice(0, 3).join(' · '))}</span></div><a href="${esc(alternative.url)}" target="_blank" rel="noreferrer" aria-label="Pozrieť ${esc(alternative.name)}">${icon('arrow')}</a></article><div class="next-best-action"><span>${icon('info')}</span><p>${esc(product.upsell)}</p><a href="${esc(product.url)}" target="_blank" rel="noreferrer">Väčšie balenia ${icon('arrow')}</a></div><button id="restartAdvisor" class="restart" type="button">Začať výber odznova</button></div>`;
+    advisorContent.innerHTML = `<div class="result-view"><span class="question-kicker">Odporúčanie je pripravené</span><article class="result-editorial"><div class="result-photo-wrap">${productImage(product, 'result-photo')}</div><div class="result-copy"><span class="result-label">Vaša káva</span><h2>${esc(product.name)}</h2><p class="result-taste"><b>Chuť</b>${product.tags.join(' · ')}</p><div class="result-meta"><span>${esc(product.origin)}</span>${product.process ? `<span>${esc(product.process)}</span>` : ''}</div><dl class="result-facts"><div><dt>Príprava</dt><dd>${esc(prepLabel(product.prep))}</dd></div><div><dt>Ovocnosť / kyslosť</dt><dd>${esc(product.acidity)}</dd></div><div><dt>Cena</dt><dd>${esc(product.price)}</dd></div></dl><div class="result-why"><b>Prečo práve táto</b><p>${esc(product.reason)}</p></div><a class="result-cta" href="${esc(product.url)}" target="_blank" rel="noreferrer">Pozrieť produkt ${icon('shop')}</a></div></article><article class="alternative"><div class="alternative-media">${productImage(alternative, 'alternative-photo')}</div><div><small>Ďalšia možnosť</small><b>${esc(alternative.name)}</b><span>${esc(alternative.tags.slice(0, 3).join(' · '))}</span></div><a href="${esc(alternative.url)}" target="_blank" rel="noreferrer" aria-label="Pozrieť ${esc(alternative.name)}">${icon('arrow')}</a></article><div class="next-best-action"><span>${icon('info')}</span><p>${esc(product.upsell)}</p><a href="${esc(product.url)}" target="_blank" rel="noreferrer">Väčšie balenia ${icon('arrow')}</a></div><button id="restartAdvisor" class="restart" type="button">Začať výber odznova</button></div>`;
     $('#restartAdvisor').addEventListener('click', resetAdvisor);
   }
 
@@ -175,8 +172,6 @@
   }
 
   function resetAdvisor() {
-    if (transitionTimer) window.clearTimeout(transitionTimer);
-    state.transitioning = false;
     state.step = 0;
     state.answers = {};
     state.result = null;
@@ -237,7 +232,7 @@
   }
 
   $('#heroOpen').addEventListener('click', () => openWidget('chat'));
-  $('#heroAdvisor').addEventListener('click', () => openWidget('advisor'));
+  $('#heroAdvisor')?.addEventListener('click', () => openWidget('advisor'));
   launcherButton.addEventListener('click', () => openWidget(state.mode));
   $('#teaserClose').addEventListener('click', () => teaser.classList.add('is-hidden'));
   $('#closeWidget').addEventListener('click', closeWidget);

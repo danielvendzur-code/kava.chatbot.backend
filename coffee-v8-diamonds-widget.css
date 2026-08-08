@@ -168,3 +168,81 @@ html.widget-open, html.widget-open body { overflow: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .widget, .answer-card, .progress span { transition: none !important; }
 }
+
+/* Final compact widget hierarchy */
+.widget { width: min(480px, calc(100vw - 28px)); height: min(790px, calc(100dvh - 28px)); border-radius: 34px; }
+.widget-head { min-height: 76px; flex-basis: 76px; }
+.widget-brand > span:last-child { gap: 4px; }
+.widget-brand small { display: flex; align-items: center; gap: 7px; color: var(--ink); font-size: 9px; }
+.widget-brand small i { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(183, 220, 69, .16); }
+.head-actions button { border-radius: 50%; background: var(--surface); }
+.mode-switch { min-height: 58px; margin: 10px 14px 9px; padding: 4px; border: 1px solid rgba(11, 13, 12, .06); border-radius: 999px; background: #f0f1ee; }
+.mode-switch button { min-height: 50px; border-radius: 999px; color: rgba(11, 13, 12, .56); }
+.mode-switch button.is-active { color: #fff; background: var(--ink); box-shadow: 0 11px 24px -18px rgba(11, 13, 12, .9); }
+.mode-switch button > span { display: flex; text-align: center; }
+.mode-switch small { display: none; }
+.chat-screen { padding: 4px 14px 10px; }
+.advisor-entry { min-height: 60px; margin-top: 3px; padding: 7px 11px; grid-template-columns: 34px 1fr 18px; gap: 10px; border-radius: 999px; }
+.advisor-entry > span:first-child { width: 34px; height: 34px; border-radius: 50%; }
+.advisor-entry small { display: none; }
+.advisor-entry b { font-size: 13px; }
+.advisor-entry em { font-size: 9px; }
+.chat-messages { min-height: 0; padding: 15px 3px 12px; gap: 10px; }
+.chat-line { align-items: flex-start; gap: 9px; }
+.chat-logo { min-width: 38px; width: 38px; height: 38px; display: block; overflow: hidden; border-radius: 50%; background: var(--ink); }
+.chat-logo img { width: 82px; max-width: none; height: 38px; object-fit: contain; object-position: left center; filter: invert(1); transform: scale(1.18); transform-origin: left center; }
+.chat-logo .brand-lockup__fallback { display: none; }
+.chat-bubble { max-width: 78%; padding: 13px 15px; border: 1px solid rgba(11, 13, 12, .08); border-radius: 20px 20px 20px 8px; background: linear-gradient(145deg, #f5f4f7, #fbfbfa); font-size: 12.5px; line-height: 1.52; box-shadow: 0 14px 30px -25px rgba(11, 13, 12, .45); }
+.chat-line--user .chat-bubble { border-color: var(--ink); }
+.chat-bottom { padding-bottom: 0; }
+.quick-grid { gap: 7px; margin-bottom: 8px; }
+.quick-grid button { min-height: 42px; padding: 0 9px; border-radius: 999px; font-size: 10px; text-align: center; }
+.composer { height: 58px; border-radius: 999px; }
+.composer button { width: 46px; height: 46px; border-radius: 50%; }
+.advisor-top { min-height: 62px; height: 62px; flex-basis: 62px; }
+.progress { height: 8px; }
+.advisor-content { padding: 8px 14px 18px; }
+.question-view h2 { margin-top: 6px; font-size: 25px; }
+.question-view > p { margin-bottom: 12px; font-size: 10px; }
+.answers { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
+.answer-card { min-height: 128px; grid-template-columns: 1fr; grid-template-rows: 64px auto; align-content: start; gap: 8px; padding: 8px; border-radius: 21px; }
+.answer-photo { width: 100%; height: 64px; display: grid; place-items: center; overflow: hidden; border-radius: 15px; color: white; background-color: var(--ink); background-image: url('/assets/diamonds/choice-sprite.png'); background-size: 400% 400%; background-position: center; box-shadow: inset 0 0 0 1px rgba(11, 13, 12, .1); }
+.answer-photo .ui-icon { width: 20px; height: 20px; filter: drop-shadow(0 1px 4px rgba(0, 0, 0, .7)); }
+.answer-copy { gap: 2px; padding-inline: 3px; }
+.answer-copy b { font-size: 11px; }
+.answer-copy small { font-size: 8px; line-height: 1.25; }
+.answer-radio { position: absolute; right: 13px; top: 13px; border-color: rgba(255, 255, 255, .9); background: white; }
+.answer-card.is-selected .answer-radio { border-color: var(--accent); background: var(--accent); }
+.answer-card.is-selected { border-color: var(--ink); background: #f4f9e6; box-shadow: inset 0 0 0 1px var(--ink); }
+.answer-photo--automatic { background-position: 0 0; }
+.answer-photo--espresso { background-position: 33.333% 0; }
+.answer-photo--filter { background-position: 66.666% 0; }
+.answer-photo--moka { background-position: 100% 0; }
+.answer-photo--chocolate { background-position: 0 33.333%; }
+.answer-photo--balanced { background-position: 33.333% 33.333%; }
+.answer-photo--fruity { background-position: 66.666% 33.333%; }
+.answer-photo--black { background-position: 100% 33.333%; }
+.answer-photo--milk { background-position: 0 66.666%; }
+.answer-photo--both { background-position: 33.333% 66.666%; }
+.answer-photo--classic { background-position: 66.666% 66.666%; }
+.answer-photo--decaf { background-position: 100% 66.666%; }
+.question-continue { width: 100%; min-height: 52px; margin-top: 11px; padding: 0 18px; display: flex; align-items: center; justify-content: space-between; border: 0; border-radius: 999px; color: white; background: var(--ink); font-size: 11px; font-weight: 800; cursor: pointer; transition: transform .18s ease, opacity .18s ease; }
+.question-continue:hover:not(:disabled) { transform: translateY(-2px); }
+.question-continue:disabled { color: rgba(11, 13, 12, .4); background: rgba(11, 13, 12, .08); cursor: default; }
+.question-continue .ui-icon { width: 16px; }
+
+@media (max-width: 680px) {
+  .widget { inset: 7px; width: auto; height: auto; max-width: none; max-height: none; right: 7px; bottom: 7px; border: 1px solid var(--line); border-radius: 28px; }
+  .widget-head { min-height: calc(66px + env(safe-area-inset-top)); flex-basis: calc(66px + env(safe-area-inset-top)); padding-top: max(0px, env(safe-area-inset-top)); }
+  .mode-switch { min-height: 57px; margin: 8px 10px; }
+  .mode-switch button { min-height: 49px; }
+  .chat-screen { padding: 3px 10px 9px; }
+  .advisor-entry { min-height: 60px; }
+  .quick-grid button { min-height: 41px; }
+  .advisor-top { min-height: 60px; height: 60px; flex-basis: 60px; }
+  .advisor-content { padding: 7px 10px 16px; }
+  .answers { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .answer-card { min-height: 119px; grid-template-rows: 57px auto; }
+  .answer-photo { height: 57px; }
+  .answer-copy small { display: none; }
+}

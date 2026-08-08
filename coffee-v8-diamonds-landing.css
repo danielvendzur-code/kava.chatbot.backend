@@ -149,3 +149,36 @@ button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* Final customer-facing Diamonds composition */
+.owner-context { color: var(--ink); }
+.owner-context i { width: 8px; height: 8px; }
+.owner-hero { min-height: 690px; grid-template-columns: minmax(0, .92fr) minmax(520px, 1.08fr); padding-top: 46px; }
+.owner-copy { max-width: 650px; }
+.owner-copy h1 { max-width: 590px; font-size: clamp(58px, 5.8vw, 84px); line-height: .96; }
+.owner-copy > p { max-width: 520px; font-size: 18px; }
+.owner-benefits { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: 38px; padding-top: 22px; }
+.owner-benefits li { min-width: 0; display: grid; gap: 12px; padding: 0 19px; border-right: 1px solid var(--line); }
+.owner-benefits li:first-child { padding-left: 0; }
+.owner-benefits li:last-child { padding-right: 0; border-right: 0; }
+.benefit-icon { width: 38px; height: 38px; }
+.benefit-icon .ui-icon { width: 18px; height: 18px; }
+.owner-benefits b { font-size: 13px; }
+.owner-benefits small { font-size: 10px; line-height: 1.42; }
+.advisor-flow { display: none; }
+.owner-strip { display: none; }
+.owner-copy > * { animation: diamonds-rise .68s cubic-bezier(.22, 1, .36, 1) both; }
+.owner-copy > p { animation-delay: .08s; }
+.hero-actions { animation-delay: .16s; }
+.owner-benefits { animation-delay: .24s; }
+.hero-media { animation: diamonds-media .86s .12s cubic-bezier(.22, 1, .36, 1) both; }
+@keyframes diamonds-rise { from { opacity: 0; transform: translateY(18px); } }
+@keyframes diamonds-media { from { opacity: 0; transform: translateX(24px) scale(.97); } }
+
+@media (max-width: 680px) {
+  .owner-hero { min-height: auto; grid-template-columns: 1fr; padding-top: 30px; }
+  .owner-copy h1 { font-size: 48px; }
+  .owner-benefits { grid-template-columns: 1fr; gap: 0; }
+  .owner-benefits li { grid-template-columns: 34px 1fr; align-items: center; padding: 10px 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  .benefit-icon { width: 34px; height: 34px; }
+}
