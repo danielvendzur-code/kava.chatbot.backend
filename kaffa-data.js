@@ -5,7 +5,6 @@
   }[char]));
 
   K.e = escapeHTML;
-
   K.wordmark = () => `
     <span class="kf-wordmark" aria-label="Kaffa Roastery">
       <strong>KAFFA</strong>
@@ -19,14 +18,14 @@
       price: '11,90 € – 32,13 €',
       url: 'https://kaffaroastery.sk/produkt/mokka-espresso-blend/',
       image: 'https://kaffaroastery.sk/wp-content/uploads/2025/11/mokka250g.webp',
-      origin: 'Ethiopia · Brazil · Peru · India · Vietnam',
-      process: 'Espresso blend · 80 % Arabica / 20 % Robusta',
-      taste: 'kakao · mandle · lieskovce',
+      origin: 'Ethiopia Harar · Brazil Santos · Peru Cuzco · India Kappi Royale · Vietnam Dak Lak',
+      process: '80 % Arabica / 20 % Robusta',
+      taste: 'kakao · mandle · lieskovce · škorica',
       prep: 'espresso · automat · moka',
-      why: 'Najbezpečnejší smer pre zákazníka, ktorý chce krémové espresso, minimum ostrej acidity alebo kávu do mlieka.',
+      why: 'Dobrá voľba, ak chcete sladšie a krémové espresso s jemnou aciditou. V mlieku zostane plná a čokoládová.',
       packs: ['250 g', '1 kg'],
       grinds: ['Zrnková', 'Espresso', 'Moka', 'Automat'],
-      keys: ['espresso', 'automatic', 'moka', 'chocolate', 'milk', 'classic']
+      weights: { prep: { espresso: 10, automatic: 9, moka: 8, filter: 1 }, taste: { chocolate: 10, balanced: 7, fruity: 1, adventurous: 0 }, drink: { black: 6, milk: 10 }, caffeine: { classic: 6, decaf: -12 } }
     },
     {
       id: 'kamundu',
@@ -34,14 +33,14 @@
       price: '13,98 €',
       url: 'https://kaffaroastery.sk/produkt/kenya-kamundu-estate-aa/',
       image: 'https://kaffaroastery.sk/wp-content/uploads/2025/11/kaffa-kamundu.webp',
-      origin: 'Kenya',
+      origin: 'Kiambu, Nairobi · Kamundu Estate',
       process: 'Washed',
-      taste: 'ríbezle · malina · slivka · vanilka',
+      taste: 'čierne ríbezle · smotana · ibištek · malina · slivka · vanilka',
       prep: 'V60 · Kalita · AeroPress',
-      why: 'Pre človeka, ktorý chce čistý a šťavnatý filter. Ovocnosť tu znamená zrelé bobuľové ovocie, nie nepríjemne ostrú kyslosť.',
+      why: 'Pre filter a čiernu kávu, ak chcete čistý, šťavnatý profil. Ovocnosť tu znamená zrelé bobuľové ovocie, nie ostrú kyslosť.',
       packs: ['250 g'],
       grinds: ['Zrnková', 'V60 / filter', 'AeroPress'],
-      keys: ['filter', 'black', 'fruity', 'classic']
+      weights: { prep: { espresso: 2, automatic: 2, filter: 11, moka: 1 }, taste: { chocolate: 2, balanced: 7, fruity: 10, adventurous: 5 }, drink: { black: 8, milk: 2 }, caffeine: { classic: 6, decaf: 3 } }
     },
     {
       id: 'decaf',
@@ -49,29 +48,29 @@
       price: '16,42 €',
       url: 'https://kaffaroastery.sk/produkt/colombia-finca-el-diviso-decaf/',
       image: '',
-      origin: 'Colombia · Huila, Pitalito',
+      origin: 'Huila, Pitalito · Finca El Diviso',
       process: 'Sugar Cane Decaf (EA)',
-      taste: 'vanilka · mandarínka · jazmín',
+      taste: 'vanilka · citrónová tráva · mandarínka · jazmínový kvet',
       prep: 'filter · AeroPress',
-      why: 'Keď zákazník nechce kofeín, ale stále očakáva sladkosť, čistotu a aromatiku výberovej kávy.',
+      why: 'Výberový decaf, keď chcete sladkosť a aromatiku bez povzbudenia. Sugar Cane proces zachováva charakter kávy, nie iba „bez kofeínu“.',
       packs: ['200 g'],
       grinds: ['Zrnková', 'V60 / filter', 'AeroPress'],
-      keys: ['filter', 'black', 'fruity', 'decaf']
+      weights: { prep: { espresso: 1, automatic: 1, filter: 9, moka: 1 }, taste: { chocolate: 4, balanced: 7, fruity: 8, adventurous: 5 }, drink: { black: 8, milk: 2 }, caffeine: { classic: -8, decaf: 18 } }
     },
     {
       id: 'geisha',
       name: 'Geisha Ninety Plus Stellar Origin',
       price: '21,42 €',
-      url: 'https://kaffaroastery.sk/produkt/stellar-origin/',
+      url: 'https://kaffaroastery.sk/produkt/wilder-lazo/',
       image: '',
-      origin: 'Panama · Silla Del Pando',
+      origin: 'Silla Del Pando, Panama · Volcan Valley',
       process: 'Anaerobic Natural',
-      taste: 'mango · marakuja · med · pomarančový kvet',
+      taste: 'žltý melón · mango · med · marakuja · pomarančový kvet',
       prep: 'V60 · Origami · Kalita',
-      why: 'Pre zákazníka, ktorý chce výrazný zážitkový filter a je otvorený intenzívnej ovocnosti a experimentálnejšiemu spracovaniu.',
+      why: 'Ak chcete výrazný, tropický filter s dlhým dozvukom a nevadí vám experimentálnejšie spracovanie.',
       packs: ['150 g'],
       grinds: ['Zrnková', 'V60 / filter'],
-      keys: ['filter', 'black', 'adventurous', 'fruity', 'classic']
+      weights: { prep: { espresso: 1, automatic: 1, filter: 11, moka: 0 }, taste: { chocolate: 0, balanced: 4, fruity: 9, adventurous: 13 }, drink: { black: 9, milk: 0 }, caffeine: { classic: 6, decaf: -8 } }
     }
   ];
 
@@ -86,7 +85,7 @@
     {
       key: 'prep',
       title: 'Ako si kávu najčastejšie pripravujete?',
-      hint: 'Začneme spôsobom prípravy. Ten najviac zúži vhodné kávy.',
+      hint: 'Začneme tým, čo poznáte najlepšie. Odborné názvy môžu počkať.',
       photo: true,
       options: [
         ['espresso', 'Espresso', 'Pákový kávovar', 'espresso'],
@@ -98,7 +97,7 @@
     {
       key: 'taste',
       title: 'Ktorý chuťový smer vám je najbližší?',
-      hint: 'Bez cuppingového slovníka. Stačí pocit, ktorý chcete v šálke.',
+      hint: 'Vyberte pocit, ktorý chcete v šálke. Cuppingový slovník netreba.',
       options: [
         ['chocolate', 'Čokoláda a orechy', 'Sladké, pokojné, minimum ostrosti'],
         ['balanced', 'Sladké s jemným ovocím', 'Moderné, ale stále prístupné'],
@@ -118,7 +117,7 @@
     {
       key: 'caffeine',
       title: 'Má vás káva povzbudiť?',
-      hint: 'Kaffa má aj výberový decaf, takže bez kofeínu nemusí znamenať kompromis.',
+      hint: 'Aj bez kofeínu sa dá vybrať plnohodnotná výberová káva.',
       options: [
         ['classic', 'Áno, klasicky', 'Bežný obsah kofeínu'],
         ['decaf', 'Radšej bez kofeínu', 'Chuť bez povzbudenia']
@@ -128,34 +127,15 @@
 
   K.byId = id => K.products.find(product => product.id === id) || K.products[0];
 
-  K.fallbackBag = product => {
-    const label = product.id === 'mokka' ? '#8fc5dc' : '#d7e7ef';
-    const name = escapeHTML(product.name.split(' ').slice(0, 3).join(' '));
-    return 'data:image/svg+xml,' + encodeURIComponent(`
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 620">
-        <defs>
-          <filter id="s" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#111" flood-opacity=".16"/></filter>
-        </defs>
-        <rect width="520" height="620" fill="#fff"/>
-        <g filter="url(#s)">
-          <path d="M126 66h268l-12 458c-.7 26-22 46-48 46H186c-26 0-47-20-48-46L126 66Z" fill="#cdbb9b"/>
-          <text x="260" y="148" text-anchor="middle" fill="#111" font-family="Georgia,serif" font-size="31" font-weight="700" letter-spacing="8">KAFFA</text>
-          <text x="305" y="174" text-anchor="middle" fill="#111" font-family="monospace" font-size="11">speciality coffee beans</text>
-          <path d="M177 228c56-27 116-37 169-13 32 15 46 57 27 90-27 48-106 69-166 39-43-22-59-91-30-116Z" fill="${label}"/>
-          <text x="260" y="278" text-anchor="middle" fill="#111" font-family="monospace" font-size="16" font-weight="700">${name}</text>
-          <text x="260" y="308" text-anchor="middle" fill="#111" font-family="monospace" font-size="12">KAFFA ROASTERY</text>
-        </g>
-      </svg>`);
-  };
-
-  K.productImage = (product, className = '') => `
-    <img class="${className}" src="${K.fallbackBag(product)}" data-remote="${escapeHTML(product.image || '')}" alt="Balenie ${escapeHTML(product.name)}">`;
+  K.productImage = (product, className = '') => product.image
+    ? `<img class="${className}" src="${escapeHTML(product.image)}" data-remote="${escapeHTML(product.image)}" alt="Oficiálna fotografia balenia ${escapeHTML(product.name)}">`
+    : `<div class="kf-product-photo-missing ${className}" role="img" aria-label="Oficiálna produktová fotografia nie je v tomto deme vložená"><span>Produktová fotografia<br>na e-shope</span></div>`;
 
   K.hydrateImages = scope => {
     scope.querySelectorAll('img[data-remote]').forEach(node => {
-      if (!node.dataset.remote) return;
       const image = new Image();
       image.onload = () => { node.src = node.dataset.remote; };
+      image.onerror = () => { node.classList.add('is-unavailable'); };
       image.src = node.dataset.remote;
     });
   };

@@ -4,8 +4,9 @@
   if (!K || !root) return;
 
   const mokka = K.byId('mokka');
-  const filterCoffee = K.byId('kamundu');
-  const brew = '/assets/kaffa/brew-filter.webp';
+  const brewFilter = '/assets/kaffa/brew-filter.webp';
+  const brewEspresso = '/assets/kaffa/brew-espresso.webp';
+  const arrow = '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h12M10 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
   root.innerHTML = `
     <main class="kf-shell">
@@ -14,53 +15,50 @@
           ${K.wordmark()}
           <span class="kf-brand-copy"><strong>Kaffa Roastery</strong><small>návrh AI poradcu</small></span>
         </div>
-        <div class="kf-status"><span>Personalizovaná ukážka pre majiteľa</span></div>
+        <div class="kf-head-note"><span class="kf-head-dot"></span><span>Ukážka pre majiteľa</span></div>
       </header>
 
-      <section class="kf-hero">
+      <section class="kf-hero" aria-labelledby="ownerHeading">
         <div class="kf-copy">
-          <p class="kf-owner-label">Návrh pre Kaffa Roastery</p>
-          <h1>Vitajte vo vašom návrhu <span>AI poradcu pre Kaffa Roastery.</span></h1>
-          <p class="kf-lead">Takto môže váš e-shop zákazníkovi zjednodušiť výber medzi espresso blendmi a výberovými kávami bez toho, aby musel rozumieť odbornej terminológii.</p>
+          <h1 id="ownerHeading">Vitajte vo vašom návrhu AI poradcu pre Kaffa Roastery.</h1>
+          <p class="kf-lead">Poradca zjednoduší výber medzi espresso blendmi a výberovými kávami bez toho, aby zákazník musel rozumieť odbornej terminológii.</p>
           <div class="kf-benefits" aria-label="Hlavné prínosy">
-            <article class="kf-benefit"><i></i><b>Zjednoduší výber</b><span>Začne prípravou a chuťou, nie odbornými názvami spracovania.</span></article>
-            <article class="kf-benefit"><i></i><b>Odpovie pri rozhodovaní</b><span>Vysvetlí aciditu, mlieko, filter aj rozdiel medzi profilmi.</span></article>
-            <article class="kf-benefit"><i></i><b>Dovedie ku konkrétnej káve</b><span>Výsledkom je produkt, dôvod odporúčania a priame CTA do e-shopu.</span></article>
+            <article class="kf-benefit"><span>01</span><div><b>Zjednoduší výber</b><p>Začne spôsobom prípravy a chuťou, nie odbornými názvami.</p></div></article>
+            <article class="kf-benefit"><span>02</span><div><b>Odpovie pri rozhodovaní</b><p>Preloží rozdiel medzi blendom, filtrom, aciditou a mliekom.</p></div></article>
+            <article class="kf-benefit"><span>03</span><div><b>Dovedie ku konkrétnej káve</b><p>Výsledkom je jeden produkt, jasný dôvod a priame CTA.</p></div></article>
           </div>
           <div class="kf-actions">
-            <button class="kf-primary" id="openAdvisor" type="button">Vyskúšať návrh poradcu →</button>
-            <small class="kf-note">Chat a 4-krokový výber sú v jednom kompaktnom widgete.</small>
+            <button class="kf-primary" id="openAdvisor" type="button">Vyskúšať návrh poradcu ${arrow}</button>
+            <span class="kf-note">Chat aj 4-krokový výber v jednom kompaktnom widgete.</span>
           </div>
         </div>
 
-        <aside class="kf-story" aria-label="Ukážka produktového príbehu">
-          <section class="kf-story-main">
-            <div class="kf-story-photo">
-              <img src="${brew}" alt="Príprava filtrovanej kávy">
-              <span class="kf-story-photo__tag">od prípravy k produktu</span>
+        <aside class="kf-story" aria-label="Od prípravy ku konkrétnej káve">
+          <div class="kf-story-photo">
+            <img src="${brewFilter}" alt="Príprava filtrovanej kávy" />
+            <span class="kf-story-photo__tag">Príprava → výber</span>
+          </div>
+          <div class="kf-story-body">
+            <div class="kf-story-product">${K.productImage(mokka, 'kf-story-product__img')}</div>
+            <div class="kf-story-copy">
+              <span class="kf-story-kicker">Demonštračný výsledok</span>
+              <h2>${K.e(mokka.name)}</h2>
+              <p>Sladšie espresso s jemnou aciditou a kakaovo-orieškovým profilom.</p>
+              <div class="kf-story-meta"><span>espresso</span><span>kakao</span><span>11,90 €</span></div>
             </div>
-            <div class="kf-story-body">
-              <div class="kf-story-product">${K.productImage(mokka)}</div>
-              <div class="kf-story-copy">
-                <small>Ukážka odporúčania</small>
-                <h2>${K.e(mokka.name)}</h2>
-                <p>Zákazník dostane jasný dôvod výberu a až potom odborný detail.</p>
-                <div class="kf-story-meta"><span>espresso</span><span>kakao</span><span>mlieko</span></div>
-              </div>
-            </div>
-          </section>
-          <div class="kf-story-note"><b>Nie ďalší katalóg.</b>Poradca zúži výber a odporučí jednu kávu podľa reálneho spôsobu prípravy.</div>
+          </div>
+          <div class="kf-story-foot"><span>Skutočný produkt. Konkrétny dôvod.</span><button id="openStoryAdvisor" type="button" aria-label="Otvoriť výber kávy">${arrow}</button></div>
         </aside>
       </section>
-      <footer class="kf-foot"><a href="https://mojchatbot.sk" target="_blank" rel="noopener">mojchatbot.sk ↗</a></footer>
+      <footer class="kf-foot"><span>Kaffa Roastery · interaktívna ukážka</span><a href="https://mojchatbot.sk" target="_blank" rel="noopener">mojchatbot.sk ↗</a></footer>
     </main>
 
     <div class="kf-launcher-wrap">
       <div class="kf-teaser" id="teaser">
-        <b>Pomôcť s výberom kávy?</b><span>Krátky chat alebo 4 otázky podľa chuti.</span>
-        <button class="kf-teaser-close" id="closeTeaser" type="button" aria-label="Zavrieť teaser">×</button>
+        <b>Pomôcť s výberom kávy?</b><span>Krátky chat alebo štyri otázky podľa prípravy a chuti.</span>
+        <button class="kf-teaser-close" id="closeTeaser" type="button" aria-label="Zavrieť upozornenie">×</button>
       </div>
-      <button class="kf-launcher" id="launcher" type="button" aria-label="Otvoriť Kaffa poradcu"><span class="kf-mini-mark">KF</span></button>
+      <button class="kf-launcher" id="launcher" type="button" aria-label="Otvoriť Kaffa poradcu"><span>KAFFA</span></button>
     </div>
 
     <div class="kf-widget" id="widget" role="dialog" aria-modal="true" aria-label="Kaffa Roastery AI poradca" aria-hidden="true">
@@ -91,10 +89,10 @@
     const q = text.toLowerCase();
     if (/espresso|blend|automat|moka/.test(q)) return 'Ak chcete sladšie espresso alebo kávu do mlieka, začal by som Mokka Espresso Blend. Má kakaovo-orieškový profil a jemnú aciditu.';
     if (/filter|v60|aero/.test(q)) return 'Na filter je vhodnejší čistejší a aromatickejší profil. Kenya Kamundu je ovocná, ale šťavnatá a vyvážená, nie ostro kyslá.';
-    if (/kysl|acid/.test(q)) return 'Ovocnosť a nepríjemná kyslosť nie sú to isté. Ak nechcete ostrý profil, zvoľte čokoládovejší smer alebo Mokka Espresso Blend.';
-    if (/ovoc|šťav|stav/.test(q)) return 'Ak chcete ovocnú kávu, na filtri by som začal Kenya Kamundu. Ak chcete výraznejší zážitok, Geisha Stellar Origin ide viac do tropického a kvetinového profilu.';
+    if (/kysl|acid/.test(q)) return 'Ovocnosť a nepríjemná kyslosť nie sú to isté. Ak nechcete ostrý profil, začnite čokoládovejším smerom.';
+    if (/ovoc|šťav|stav/.test(q)) return 'Ak chcete ovocnú kávu, začal by som Kenya Kamundu. Ak chcete výraznejší zážitok, Geisha Stellar Origin ide viac do tropického a kvetinového profilu.';
     if (/decaf|kofe/.test(q)) return 'Colombia El Diviso Decaf je výberová bezkofeínová káva. Sugar Cane proces zachováva sladkosť a aromatiku bez kofeínu.';
-    return 'Najrýchlejšie vás ku konkrétnej káve dovedie 4-krokový výber. Začína spôsobom prípravy a až na konci vysvetlí odborné detaily.';
+    return 'Najrýchlejšie vás ku konkrétnej káve dovedie 4-krokový výber. Začína spôsobom prípravy a odborné detaily vysvetlí až vo výsledku.';
   };
 
   async function send(text, trigger) {
@@ -103,21 +101,17 @@
     if (trigger) {
       trigger.disabled = true;
       trigger.classList.add('is-sending');
-      await new Promise(resolve => setTimeout(resolve, 320));
+      await new Promise(resolve => setTimeout(resolve, 240));
     }
     state.messages.push({ role: 'user', text: clean }, { role: 'bot', text: cannedReply(clean) });
     renderChat();
-
     try {
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify({
           demoId: 'kaffa',
-          messages: state.messages.slice(-8).map(message => ({
-            role: message.role === 'bot' ? 'assistant' : 'user',
-            content: message.text
-          }))
+          messages: state.messages.slice(-8).map(message => ({ role: message.role === 'bot' ? 'assistant' : 'user', content: message.text }))
         })
       });
       if (!response.ok) return;
@@ -126,7 +120,9 @@
         state.messages[state.messages.length - 1].text = data.reply;
         renderChat();
       }
-    } catch (_) {}
+    } catch (_) {
+      // The deterministic reply remains visible when the provider is unavailable.
+    }
   }
 
   function renderChat() {
@@ -136,9 +132,9 @@
         <div class="kf-messages ${state.messages.length ? 'has-thread' : ''}" id="messages">
           <div class="kf-chat-seed">
             <button class="kf-advisor-entry" id="advisorEntry" type="button">
-              <span class="kf-advisor-entry__photo"><img src="${brew}" alt="Príprava výberovej kávy"></span>
-              <span class="kf-advisor-entry__copy"><small>4 otázky · podľa chuti</small><b>Nájsť konkrétnu kávu</b><span>Príprava → chuť → mlieko → kofeín.</span></span>
-              <span class="kf-advisor-entry__arrow">→</span>
+              <span class="kf-advisor-entry__photo"><img src="${brewFilter}" alt="Príprava výberovej kávy"></span>
+              <span class="kf-advisor-entry__copy"><small>4 otázky · podľa prípravy a chuti</small><b>Nájsť konkrétnu kávu</b><span>Začneme prípravou, odborný detail vysvetlíme až potom.</span></span>
+              <span class="kf-advisor-entry__arrow">${arrow}</span>
             </button>
             <div class="kf-message bot">Dobrý deň. Povedzte, ako kávu pripravujete alebo čo v chuti hľadáte. Odpoviem stručne a bez zbytočnej terminológie.</div>
           </div>
@@ -146,7 +142,7 @@
         </div>
         <div class="kf-chat-footer">
           <div class="kf-chips" aria-label="Rýchle otázky">${chips.map(chip => `<button class="kf-chip" type="button">${chip}</button>`).join('')}</div>
-          <form class="kf-composer" id="composer"><input id="chatInput" autocomplete="off" placeholder="Opýtajte sa na chuť alebo prípravu…" aria-label="Správa"><button class="kf-send" type="submit" aria-label="Odoslať">→</button></form>
+          <form class="kf-composer" id="composer"><input id="chatInput" autocomplete="off" placeholder="Opýtajte sa na chuť alebo prípravu…" aria-label="Správa"><button class="kf-send" type="submit" aria-label="Odoslať">${arrow}</button></form>
           <div class="kf-credit">Návrh od <a href="https://mojchatbot.sk" target="_blank" rel="noopener">mojchatbot.sk</a></div>
         </div>
       </div>`;
@@ -164,29 +160,24 @@
     messages.scrollTop = messages.scrollHeight;
   }
 
-  const scoreProduct = product => {
-    let score = 0;
-    Object.values(state.answers).forEach(answer => { if (product.keys.includes(answer)) score += 4; });
-    if (state.answers.caffeine === 'decaf') score += product.id === 'decaf' ? 20 : -20;
-    if (state.answers.drink === 'milk' && product.id === 'mokka') score += 8;
-    if (state.answers.prep === 'automatic' && product.id === 'mokka') score += 6;
-    if (state.answers.taste === 'balanced' && product.id === 'mokka') score += 3;
-    if (state.answers.taste === 'adventurous' && product.id === 'geisha') score += 8;
-    return score;
-  };
+  const scoreProduct = product => K.questions.reduce((score, question) => {
+    const answer = state.answers[question.key];
+    return score + (product.weights[question.key]?.[answer] || 0);
+  }, 0);
 
-  const brewFor = product => product.keys.includes('filter') ? '/assets/kaffa/brew-filter.webp' : '/assets/kaffa/brew-espresso.webp';
+  const brewFor = product => product.id === 'mokka' ? brewEspresso : brewFilter;
 
   function renderResult(stage) {
     const ranked = [...K.products].sort((a, b) => scoreProduct(b) - scoreProduct(a));
     const product = ranked[0];
     const alternative = ranked.find(item => item.id !== product.id) || ranked[1];
+    const dailyPack = product.id === 'mokka' && product.packs.includes('1 kg');
     stage.innerHTML = `
       <section class="kf-result" aria-live="polite">
         <div class="kf-result-hero">
           <img class="kf-result-hero__brew" src="${brewFor(product)}" alt="Káva pripravená spôsobom vhodným pre odporúčanie">
-          ${K.productImage(product, 'kf-result-bag')}
-          <div class="kf-result-hero__copy"><small>Odporúčanie podľa odpovedí</small><h2>${K.e(product.name)}</h2><div class="kf-result-price">${K.e(product.price)}</div></div>
+          <div class="kf-result-hero__copy"><span>Odporúčanie podľa odpovedí</span><h2>${K.e(product.name)}</h2><strong>${K.e(product.price)}</strong></div>
+          <div class="kf-result-product">${K.productImage(product, 'kf-result-product__img')}</div>
         </div>
         <div class="kf-result-meta">
           <div class="kf-result-detail"><small>Pôvod</small><b>${K.e(product.origin)}</b></div>
@@ -195,15 +186,16 @@
           <div class="kf-result-detail"><small>Príprava</small><b>${K.e(product.prep)}</b></div>
         </div>
         <div class="kf-result-why"><b>Prečo práve táto</b><p>${K.e(product.why)}</p></div>
-        <a class="kf-result-cta" href="${K.e(product.url)}" target="_blank" rel="noopener">Pozrieť ${K.e(product.name)} v e-shope ↗</a>
+        <a class="kf-result-cta" href="${K.e(product.url)}" target="_blank" rel="noopener">Pozrieť kávu v e-shope ${arrow}</a>
+        ${dailyPack ? '<div class="kf-result-next"><b>Hodí sa k tomu</b><span>Pijete ju denne? 1 kg balenie je praktickejšia zásoba pre každodenné espresso.</span></div>' : ''}
         <div class="kf-result-choice">
           <label>Balenie<select aria-label="Balenie">${product.packs.map(pack => `<option>${K.e(pack)}</option>`).join('')}</select></label>
           <label>Mletie<select aria-label="Mletie">${product.grinds.map(grind => `<option>${K.e(grind)}</option>`).join('')}</select></label>
         </div>
         <article class="kf-alternative">
-          <div class="kf-alternative__image">${K.productImage(alternative)}</div>
-          <div class="kf-alternative__copy"><small>Alternatíva</small><b>${K.e(alternative.name)}</b><span>${K.e(alternative.taste)}</span></div>
-          <a href="${K.e(alternative.url)}" target="_blank" rel="noopener">Pozrieť ↗</a>
+          <div class="kf-alternative__image">${K.productImage(alternative, 'kf-alternative__img')}</div>
+          <div class="kf-alternative__copy"><small>Jedna alternatíva</small><b>${K.e(alternative.name)}</b><span>${K.e(alternative.taste)}</span></div>
+          <a href="${K.e(alternative.url)}" target="_blank" rel="noopener">Skúsiť ${arrow}</a>
         </article>
       </section>`;
     K.hydrateImages(stage);
@@ -213,7 +205,6 @@
     const question = K.questions[state.step];
     stage.innerHTML = `
       <section class="kf-question">
-        <span class="kf-question__kicker">Krok ${state.step + 1} z ${K.questions.length}</span>
         <h2>${K.e(question.title)}</h2>
         <p>${K.e(question.hint)}</p>
         <div class="kf-options">
@@ -241,10 +232,10 @@
             state.step += 1;
             renderAdvisor();
           } else {
-            stage.innerHTML = '<div class="kf-confirm"><i>✓</i><b>Odporúčanie je pripravené.</b><span>Teraz už môžeme ukázať aj odborný detail.</span></div>';
-            setTimeout(() => { state.result = true; renderAdvisor(); }, 520);
+            stage.innerHTML = '<div class="kf-confirm"><i>✓</i><b>Odporúčanie je pripravené.</b><span>Teraz už ukážeme aj odborný detail.</span></div>';
+            setTimeout(() => { state.result = true; renderAdvisor(); }, 420);
           }
-        }, 240);
+        }, 220);
       };
     });
   }
@@ -253,7 +244,7 @@
     view.innerHTML = `
       <div class="kf-advisor">
         <div class="kf-progress">
-          <button class="kf-progress-back" type="button" aria-label="Späť" ${!state.result && state.step === 0 ? 'disabled' : ''}>←</button>
+          <button class="kf-progress-back" type="button" aria-label="Späť" ${!state.result && state.step === 0 ? 'disabled' : ''}>${arrow}</button>
           <div class="kf-progress-dots">${K.questions.map((_, index) => `<i class="${state.result || index < state.step ? 'is-done' : index === state.step ? 'is-active' : ''}"></i>`).join('')}</div>
           <span>${state.result ? 'Hotovo' : `${state.step + 1} / ${K.questions.length}`}</span>
         </div>
@@ -308,6 +299,7 @@
   }
 
   root.querySelector('#openAdvisor').onclick = () => openWidget('advisor');
+  root.querySelector('#openStoryAdvisor').onclick = () => openWidget('advisor');
   root.querySelector('#launcher').onclick = () => openWidget('chat');
   closeButton.onclick = closeWidget;
   root.querySelector('#closeTeaser').onclick = () => root.querySelector('#teaser')?.remove();
