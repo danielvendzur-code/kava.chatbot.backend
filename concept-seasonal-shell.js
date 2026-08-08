@@ -4,7 +4,7 @@
   const { config, root, $, escapeHTML, mark, icons } = app;
 
   root.innerHTML = `
-    <main class="concept-page" aria-label="AI poradca pre ${escapeHTML(config.brand)}">
+    <main class="concept-page" aria-label="Výber kávy ${escapeHTML(config.brand)}">
       <header class="site-head">
         <img class="site-brand__logo" src="/brand/concept-official-logo.png" width="180" height="42" alt="Concept Coffee Roasters">
         <a class="site-head__link" href="${escapeHTML(config.shopUrl)}" target="_blank" rel="noreferrer">conceptcoffee.sk ${icons.arrow}</a>
@@ -30,7 +30,7 @@
       </section>
 
       <footer class="site-foot">
-        <span>AI poradca pre jednoduchší výber kávy.</span>
+        <span>Concept Coffee · sezónny výber kávy.</span>
         <a href="${escapeHTML(config.shopUrl)}" target="_blank" rel="noreferrer">Pozrieť ponuku Concept Coffee</a>
       </footer>
     </main>
@@ -96,7 +96,7 @@
       </div>
     </section>`;
 
-  document.title = `${config.brand} – AI poradca pre výber kávy`;
+  document.title = `${config.brand} – nájdite svoju kávu`;
   const widget = $('#widget');
   const launcher = $('#launcher');
   const teaser = $('#launcherTeaser');
