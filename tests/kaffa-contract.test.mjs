@@ -30,10 +30,11 @@ test('every configurator step uses the Kaffa photo sprite', () => {
   assert.match(css, /choice-sprite\.png/);
 });
 
-test('selection waits for an explicit Continue action', () => {
-  assert.match(app, /id="continueQuestion"/);
-  assert.match(app, /continueButton\.onclick/);
-  assert.doesNotMatch(app, /setTimeout\(\(\) => \{\s*if \(state\.step < K\.questions\.length - 1\)/);
+test('selection is guarded and advances automatically once', () => {
+  assert.doesNotMatch(app, /id="continueQuestion"/);
+  assert.match(app, /state\.transitioning/);
+  assert.match(app, /setTimeout\(advanceQuestion, delay\)/);
+  assert.match(app, /candidate\.disabled = true/);
 });
 
 test('progress, back navigation, reset and escape are available', () => {

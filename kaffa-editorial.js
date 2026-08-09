@@ -75,8 +75,8 @@
           </div>
         </header>
         <div class="kf-switch" id="modeSwitch" role="tablist" aria-label="Čo chcete urobiť">
-          <button data-view="chat" role="tab" aria-selected="true" type="button"><span>${chatIcon}</span>Porozprávať sa</button>
-          <button data-view="advisor" role="tab" aria-selected="false" type="button"><span>${cupIcon}</span>Nájsť kávu</button>
+          <button data-view="chat" role="tab" aria-selected="true" type="button"><span>${chatIcon}</span>Chat</button>
+          <button data-view="advisor" role="tab" aria-selected="false" type="button"><span>${cupIcon}</span>Výber kávy</button>
         </div>
         <div class="kf-view" id="view" role="tabpanel"></div>
       </section>
@@ -89,7 +89,7 @@
   const panel = root.querySelector('#panel');
   const modeSwitch = root.querySelector('#modeSwitch');
   const closeButton = root.querySelector('#closeWidget');
-  const state = { view: 'chat', step: 0, answers: {}, result: false, messages: [] };
+  const state = { view: 'chat', step: 0, answers: {}, result: false, transitioning: false, messages: [] };
   let lastFocus = null;
 
   const cannedReply = text => {
@@ -222,7 +222,6 @@
 
   function renderQuestion(stage) {
     const question = K.questions[state.step];
-    const hasSelection = Boolean(state.answers[question.key]);
     stage.innerHTML = `
       <section class="kf-question">
         <h2>${K.e(question.title)}</h2>
@@ -234,32 +233,38 @@
             return `<button class="kf-option kf-option--photo ${selected ? 'is-selected' : ''}" style="--i:${index};${spritePosition(index, state.step)}" data-value="${K.e(value)}" type="button" aria-pressed="${selected}"><span class="kf-option__visual" role="img" aria-label="${K.e(title)}"></span><span class="kf-option__copy"><b>${K.e(title)}</b><small>${K.e(description)}</small></span><i class="kf-option__state">${selected ? '✓' : '+'}</i></button>`;
           }).join('')}
         </div>
-        <div class="kf-question-actions"><button class="kf-continue" id="continueQuestion" type="button" ${hasSelection ? '' : 'disabled'}>Pokračovať ${arrow}</button></div>
+        <p class="kf-auto-note" aria-live="polite">Po výbere automaticky pokračujeme.</p>
       </section>`;
 
-    const continueButton = stage.querySelector('#continueQuestion');
     stage.querySelectorAll('.kf-option').forEach(option => {
       option.onclick = () => {
+        if (state.transitioning) return;
+        state.transitioning = true;
         state.answers[question.key] = option.dataset.value;
         stage.querySelectorAll('.kf-option').forEach(candidate => {
           const on = candidate === option;
           candidate.classList.toggle('is-selected', on);
           candidate.setAttribute('aria-pressed', String(on));
           candidate.querySelector('.kf-option__state').textContent = on ? '✓' : '+';
+          candidate.disabled = true;
         });
-        continueButton.disabled = false;
+        stage.querySelector('.kf-auto-note')?.classList.add('is-visible');
+        const delay = matchMedia('(prefers-reduced-motion: reduce)').matches ? 10 : 300;
+        setTimeout(advanceQuestion, delay);
       };
     });
-    continueButton.onclick = () => {
+
+    function advanceQuestion() {
       if (!state.answers[question.key]) return;
       if (state.step < K.questions.length - 1) {
         state.step += 1;
+        state.transitioning = false;
         renderAdvisor();
       } else {
-        stage.innerHTML = '<div class="kf-confirm"><i>✓</i><b>Vaša káva je pripravená.</b><span>Ešte chvíľku…</span></div>';
-        setTimeout(() => { state.result = true; renderAdvisor(); }, 320);
+        stage.innerHTML = '<div class="kf-confirm"><i>✓</i><b>Vaša káva je pripravená.</b><span>Pripravujeme odporúčanie…</span></div>';
+        setTimeout(() => { state.result = true; state.transitioning = false; renderAdvisor(); }, matchMedia('(prefers-reduced-motion: reduce)').matches ? 10 : 220);
       }
-    };
+    }
   }
 
   function renderAdvisor() {
@@ -276,6 +281,7 @@
     const stage = view.querySelector('#advisorStage');
     if (state.result) renderResult(stage); else renderQuestion(stage);
     view.querySelector('.kf-progress-back').onclick = () => {
+      state.transitioning = false;
       if (state.result) { state.result = false; state.step = K.questions.length - 1; }
       else if (state.step > 0) state.step -= 1;
       renderAdvisor();
@@ -293,6 +299,7 @@
     state.step = 0;
     state.answers = {};
     state.result = false;
+    state.transitioning = false;
     state.messages = [];
     render();
   }
