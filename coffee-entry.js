@@ -29,6 +29,7 @@
     await addStyle('/concept-seasonal-widget.css');
     await addStyle('/concept-seasonal-advisor.css');
     await addStyle('/concept-seasonal-responsive.css');
+    await addStyle('/concept-jolka-scale.css');
     await addScript('/concept-seasonal-config.js');
     for (const src of [
       '/concept-seasonal-core.js',

@@ -44,7 +44,7 @@
         </button>
       </aside>
       <button class="launcher__button" id="openWidget" type="button" aria-label="Otvoriť kávového poradcu" aria-expanded="false">
-        ${mark()}<span class="launcher__status" aria-hidden="true"></span>
+        <span class="launcher__brand-logo"><img src="/brand/concept-official-logo.png" alt=""></span><span class="launcher__status" aria-hidden="true"></span>
       </button>
     </div>
 
@@ -52,7 +52,6 @@
       <header class="widget__header">
         <div class="widget-brand">
           <img class="widget-brand__logo" src="/brand/concept-official-logo.png" width="126" height="30" alt="Concept Coffee Roasters">
-          <span class="widget-brand__status"><i class="online-dot"></i> Online</span>
         </div>
         <div class="widget-actions">
           <button class="icon-button" id="resetAll" type="button" aria-label="Začať odznova">${icons.reset}</button>

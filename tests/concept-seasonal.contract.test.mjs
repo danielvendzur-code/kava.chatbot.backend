@@ -44,12 +44,14 @@ test('every advisor step uses visual choices', () => {
   assert.match(questionBlock, /product-yellow-sunset\.jpg/);
 });
 
-test('selection is deliberate and advances only from Continue', () => {
-  assert.match(flow, /id="continueQuestion"/);
+test('selection is guarded and advances automatically once', () => {
+  assert.doesNotMatch(flow, /id="continueQuestion"/);
   assert.match(flow, /function advanceQuestion/);
   const selectAnswer = flow.match(/function selectAnswer[\s\S]*?\n  \}/)?.[0] || '';
-  assert.doesNotMatch(selectAnswer, /state\.step \+= 1|setTimeout/);
-  assert.match(advisor, /\.question-continue/);
+  assert.match(selectAnswer, /state\.transitioning/);
+  assert.match(selectAnswer, /setTimeout\(advanceQuestion, delay\)/);
+  assert.match(flow, /button\.disabled = true/);
+  assert.match(flow, /auto-advance-note/);
 });
 
 test('current products and direct URLs remain grounded', () => {
