@@ -131,22 +131,33 @@
     progressFill.style.width = `${((state.step + 1) / questions.length) * 100}%`;
     backButton.disabled = state.step === 0;
     const selected = state.answers[question.id];
-    advisorContent.innerHTML = `<div class="question-view"><span class="question-kicker">${esc(question.eyebrow)}</span><h2>${esc(question.title)}</h2><p>${esc(question.help)}</p><div class="answers">${question.options.map((option) => optionCard(option, question.id)).join('')}</div><button id="continueQuestion" class="question-continue" type="button" ${selected ? '' : 'disabled'}>Pokračovať ${icon('arrow')}</button></div>`;
+    advisorContent.innerHTML = `<div class="question-view"><span class="question-kicker">${esc(question.eyebrow)}</span><h2>${esc(question.title)}</h2><p>${esc(question.help)}</p><div class="answers">${question.options.map((option) => optionCard(option, question.id)).join('')}</div><p class="auto-advance-note" aria-live="polite">Po výbere automaticky pokračujeme.</p></div>`;
     $$('.answer-card', advisorContent).forEach((button) => button.addEventListener('click', () => {
+      if (state.transitioning) return;
+      state.transitioning = true;
       state.answers[question.id] = button.dataset.answer;
-      renderQuestion();
+      $$('.answer-card', advisorContent).forEach((candidate) => {
+        const selectedAnswer = candidate === button;
+        candidate.classList.toggle('is-selected', selectedAnswer);
+        candidate.setAttribute('aria-pressed', String(selectedAnswer));
+        candidate.disabled = true;
+      });
+      advisorContent.querySelector('.auto-advance-note')?.classList.add('is-visible');
+      const delay = reducedMotion() ? 10 : 300;
+      window.setTimeout(advanceQuestion, delay);
     }));
-    $('#continueQuestion').addEventListener('click', advanceQuestion);
   }
 
   function advanceQuestion() {
     const question = questions[state.step];
-    if (!state.answers[question.id]) return;
+    if (!state.answers[question.id]) { state.transitioning = false; return; }
     if (state.step < questions.length - 1) {
       state.step += 1;
+      state.transitioning = false;
       renderQuestion();
     } else {
       calculateResult();
+      state.transitioning = false;
       renderResult();
     }
   }
@@ -176,6 +187,7 @@
     state.answers = {};
     state.result = null;
     state.alternative = null;
+    state.transitioning = false;
     renderQuestion();
   }
 
@@ -240,6 +252,7 @@
   $('#openAdvisor').addEventListener('click', () => switchMode('advisor'));
   $$('.mode-switch button').forEach((button) => button.addEventListener('click', () => switchMode(button.dataset.mode)));
   backButton.addEventListener('click', () => {
+    state.transitioning = false;
     if (state.result) {
       state.result = null;
       state.alternative = null;

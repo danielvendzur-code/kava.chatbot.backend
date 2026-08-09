@@ -29,11 +29,13 @@ test('chat hierarchy is compact and self promo is absent', () => {
   assert.match(widget, /\.quick-grid button \{[\s\S]*?min-height: 42px/);
 });
 
-test('advisor advances only from Continue and remembers the answer', () => {
+test('advisor advances automatically once and remembers the answer', () => {
   const question = controller.match(/function renderQuestion[\s\S]*?\n  \}/)?.[0] || '';
-  assert.match(controller, /id="continueQuestion"/);
+  assert.doesNotMatch(controller, /id="continueQuestion"/);
   assert.match(controller, /function advanceQuestion/);
-  assert.doesNotMatch(question, /setTimeout|state\.step \+= 1/);
+  assert.match(question, /state\.transitioning/);
+  assert.match(question, /setTimeout\(advanceQuestion, delay\)/);
+  assert.match(question, /candidate\.disabled = true/);
   assert.match(controller, /aria-pressed/);
 });
 
@@ -41,6 +43,8 @@ test('every option uses the local Diamonds photo sprite in a two-column grid', a
   const sprite = await stat(new URL('assets/diamonds/choice-sprite.png', root));
   assert.ok(sprite.size > 100_000);
   assert.match(widget, /background-image: url\('\/assets\/diamonds\/choice-sprite\.png'\)/);
+  const scale = await read('coffee-v8-diamonds-jolka.css');
+  assert.match(scale, /background-size:400% auto/);
   assert.match(widget, /\.answers \{ grid-template-columns: repeat\(2, minmax\(0, 1fr\)\)/);
   for (const value of ['automatic', 'espresso', 'filter', 'moka', 'chocolate', 'balanced', 'fruity', 'black', 'milk', 'both', 'classic', 'decaf']) {
     assert.match(widget, new RegExp(`answer-photo--${value}`));

@@ -80,6 +80,7 @@
     answers: {},
     result: null,
     alternative: null,
+    transitioning: false,
     chat: [{ role: 'assistant', content: config.welcome }],
     scrollY: 0,
     lastFocused: null
