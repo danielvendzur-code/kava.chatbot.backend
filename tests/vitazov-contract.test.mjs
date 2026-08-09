@@ -30,27 +30,33 @@ test('chat uses compact full-width entry, centered text chips and no self promo'
   assert.doesNotMatch(core.match(/function renderChips[\s\S]*?\n  \}/)?.[0] || '', /icons\.next/);
 });
 
-test('selection advances only after a deliberate Continue action', () => {
+test('selection is guarded and advances automatically once', () => {
   const select = core.match(/function selectAnswer[\s\S]*?\n  \}/)?.[0] || '';
-  assert.match(core, /id="continueQuestion"/);
+  assert.doesNotMatch(core, /id="continueQuestion"/);
   assert.match(core, /function advanceQuestion/);
-  assert.doesNotMatch(select, /setTimeout|state\.step \+= 1/);
+  assert.match(select, /state\.transitioning/);
+  assert.match(select, /setTimeout\(advanceQuestion, delay\)/);
+  assert.match(select, /button\.disabled = true/);
 });
 
-test('every answer card uses the local four-by-four photo sprite', async () => {
+test('every answer card uses the local sprite without stretching it', async () => {
   const sprite = await stat(new URL('assets/vitazov-choice-sprite.png', root));
   assert.ok(sprite.size > 100_000);
   assert.match(css, /background-image: url\('\/assets\/vitazov-choice-sprite\.png'\)/);
+  const scale = await read('coffee-v8-jolka-scale.css');
+  assert.match(scale, /background-size:400% auto/);
   for (const value of ['home', 'office', 'automatic', 'discovery', 'classic', 'balanced', 'fruity', 'black', 'milk', 'both', 'strong', 'caffeine', 'decaf']) {
     assert.match(css, new RegExp(`option__photo--${value}`));
   }
 });
 
-test('brand system and large progress remain explicit', () => {
+test('brand system, local official logo and large progress remain explicit', async () => {
   assert.match(css, /--kv-green: #063f35/);
   assert.match(css, /--kv-lime: #b7e84d/);
   assert.match(css, /\.progress i \{[\s\S]*?height: 8px/);
-  assert.match(brand, /text-logo-tmave\.svg/);
+  assert.match(brand, /\/assets\/vitazov-logo\.svg/);
+  const logo = await stat(new URL('assets/vitazov-logo.svg', root));
+  assert.ok(logo.size > 10_000);
 });
 
 test('recommendations use direct products without fabricated percentages', () => {

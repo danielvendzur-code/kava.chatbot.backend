@@ -209,17 +209,31 @@
   }
   function renderQuestion() {
     const q = questions[state.step]; const selected = state.answers[q.key];
-    advisor.innerHTML = `<div class="question"><span>${esc(q.name)}</span><h2>${esc(q.title)}</h2><p>Vyberte jednu možnosť. Odpoveď môžete zmeniť.</p></div><div class="options ${selected ? 'has-selection' : ''}">${q.options.map(([value,label,desc,iconName], index) => `<button class="option ${selected === value ? 'is-selected' : ''}" type="button" data-value="${esc(value)}" aria-pressed="${selected === value}" style="--delay:${index * 65}ms"><span class="option__photo option__photo--${esc(value)}">${icons[iconName] || icons.spark}</span><span class="option__copy"><b>${esc(label)}</b><small>${esc(desc)}</small></span><span class="option__state">${selected === value ? icons.check : icons.next}</span></button>`).join('')}</div><button class="question-continue" id="continueQuestion" type="button" ${selected ? '' : 'disabled'}>Pokračovať ${icons.next}</button>`;
+    advisor.innerHTML = `<div class="question"><span>${esc(q.name)}</span><h2>${esc(q.title)}</h2><p>Vyberte jednu možnosť. Hneď potom pokračujeme.</p></div><div class="options ${selected ? 'has-selection' : ''}">${q.options.map(([value,label,desc,iconName], index) => `<button class="option ${selected === value ? 'is-selected' : ''}" type="button" data-value="${esc(value)}" aria-pressed="${selected === value}" style="--delay:${index * 55}ms"><span class="option__photo option__photo--${esc(value)}">${icons[iconName] || icons.spark}</span><span class="option__copy"><b>${esc(label)}</b><small>${esc(desc)}</small></span><span class="option__state">${selected === value ? icons.check : icons.next}</span></button>`).join('')}</div><p class="auto-advance-note" aria-live="polite">Po výbere automaticky pokračujeme.</p>`;
     $$('.option', advisor).forEach((button) => button.addEventListener('click', () => selectAnswer(button.dataset.value)));
-    $('#continueQuestion')?.addEventListener('click', advanceQuestion);
   }
   function selectAnswer(value) {
-    if (state.stage !== 'questions') return; const q = questions[state.step]; state.answers[q.key] = value; renderQuestion(); emit('advisor_answer',{step:q.key,value});
+    if (state.stage !== 'questions' || state.transitioning) return;
+    const q = questions[state.step];
+    state.transitioning = true;
+    state.answers[q.key] = value;
+    $$('.option', advisor).forEach((button) => {
+      const selected = button.dataset.value === value;
+      button.classList.toggle('is-selected', selected);
+      button.setAttribute('aria-pressed', String(selected));
+      button.disabled = true;
+      button.querySelector('.option__state').innerHTML = selected ? icons.check : icons.next;
+    });
+    advisor.querySelector('.auto-advance-note')?.classList.add('is-visible');
+    emit('advisor_answer',{step:q.key,value});
+    const delay = matchMedia('(prefers-reduced-motion: reduce)').matches ? 10 : 300;
+    setTimeout(advanceQuestion, delay);
   }
   function advanceQuestion() {
     const q = questions[state.step];
-    if (!state.answers[q.key]) return;
+    if (!state.answers[q.key]) { state.transitioning = false; return; }
     if (state.step < questions.length - 1) state.step += 1; else state.stage = 'result';
+    state.transitioning = false;
     renderAdvisor();
   }
 

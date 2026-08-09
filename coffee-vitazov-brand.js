@@ -100,11 +100,12 @@
   }
 
   function setupStaticBrand() {
+    const localLogo = '/assets/vitazov-logo.svg';
     const brand = document.querySelector('.demo-brand');
     if (brand && !brand.querySelector('.kv-official-logo')) {
       const logo = document.createElement('img');
       logo.className = 'kv-official-logo';
-      logo.src = 'https://kavavitazov.sk/wp-content/uploads/2023/06/text-logo-tmave.svg';
+      logo.src = localLogo;
       logo.alt = 'Káva Víťazov';
       logo.addEventListener('error', () => brand.classList.add('kv-logo-fallback'));
       brand.prepend(logo);
@@ -127,9 +128,11 @@
     const widgetBrand = document.querySelector('.widget-brand');
     if (widgetBrand && !widgetBrand.querySelector('.kv-widget-logo')) {
       widgetBrand.innerHTML = `
-        <img class="kv-widget-logo" src="https://kavavitazov.sk/wp-content/uploads/2023/06/text-logo-tmave.svg" alt="Káva Víťazov">
-        <span class="kv-widget-status"><i></i> Online</span>`;
+        <img class="kv-widget-logo" src="${localLogo}" alt="Káva Víťazov">`;
     }
+
+    const launcherButton = document.querySelector('#openWidget');
+    if (launcherButton) launcherButton.innerHTML = `<span class="kv-launcher-logo"><img src="${localLogo}" alt=""></span><span class="launcher__status" aria-hidden="true"></span>`;
 
     const chatButton = document.querySelector('[data-mode="chat"] b');
     const advisorButton = document.querySelector('[data-mode="advisor"] b');
