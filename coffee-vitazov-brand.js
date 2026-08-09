@@ -10,24 +10,24 @@
 
   const media = {
     office: {
-      src: 'https://kavavitazov.sk/wp-content/uploads/2023/05/prazena-kava-do-kancelarie-office.jpeg',
-      fallback: 'https://kavavitazov.sk/wp-content/uploads/2023/05/prazena-kava-do-kancelarie-office-300x300.jpeg'
+      src: '/assets/vitazov-office.jpeg',
+      fallback: '/assets/vitazov-office.jpeg'
     },
     victory: {
-      src: 'https://kavavitazov.sk/wp-content/uploads/2024/07/kava-prazena-slovensko-presov.jpeg',
-      fallback: 'https://kavavitazov.sk/wp-content/uploads/2024/07/kava-prazena-slovensko-presov-300x300.jpeg'
+      src: '/assets/vitazov-victory.jpeg',
+      fallback: '/assets/vitazov-victory.jpeg'
     },
     brazil: {
-      src: 'https://kavavitazov.sk/wp-content/uploads/2024/07/kava-z-praziarne-brazilia.jpeg',
-      fallback: 'https://kavavitazov.sk/wp-content/uploads/2024/07/kava-z-praziarne-brazilia-300x300.jpeg'
+      src: '/assets/vitazov-brazil.jpeg',
+      fallback: '/assets/vitazov-brazil.jpeg'
     },
     ethiopia: {
-      src: 'https://kavavitazov.sk/wp-content/uploads/2024/07/kava-etiopia-fairtrade-organicka.jpeg',
-      fallback: 'https://kavavitazov.sk/wp-content/uploads/2024/07/kava-etiopia-fairtrade-organicka-844x1024.jpeg'
+      src: '/assets/vitazov-ethiopia.jpeg',
+      fallback: '/assets/vitazov-ethiopia.jpeg'
     },
     decaf: {
-      src: 'https://kavavitazov.sk/wp-content/uploads/2023/05/kava-z-praziarne-bezkofeinova-decaf-bio-organicka.jpeg',
-      fallback: 'https://kavavitazov.sk/wp-content/uploads/2023/05/kava-z-praziarne-bezkofeinova-decaf-bio-organicka-300x300.jpeg'
+      src: '/assets/vitazov-decaf.jpeg',
+      fallback: '/assets/vitazov-decaf.jpeg'
     }
   };
 
