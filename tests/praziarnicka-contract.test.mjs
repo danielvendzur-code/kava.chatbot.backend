@@ -28,10 +28,11 @@ test('every step renders branded photo cards', () => {
   assert.match(css, /choice-sprite\.png/);
 });
 
-test('questions require manual confirmation', () => {
-  assert.match(app, /id="continueQuestion"/);
-  assert.match(app, /continueQuestion'\)\.onclick/);
-  assert.doesNotMatch(app, /setTimeout[^;]+state\.step/);
+test('questions advance automatically once after a guarded selection', () => {
+  assert.doesNotMatch(app, /id="continueQuestion"/);
+  assert.match(app, /state\.transitioning/);
+  assert.match(app, /setTimeout\(advanceQuestion, delay\)/);
+  assert.match(app, /candidate\.disabled = true/);
 });
 
 test('answers survive back navigation and the dialog supports reset and escape', () => {

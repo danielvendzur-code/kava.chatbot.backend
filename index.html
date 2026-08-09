@@ -19,7 +19,7 @@
       const slug = last === 'index.html' || last === 'ukazka' ? 'praziarnicka' : last;
       window.COFFEE_DEMO_SLUG = slug;
       const styles = slug === 'praziarnicka'
-        ? ['/praziarnicka-v11.css']
+        ? ['/praziarnicka-v11.css', '/praziarnicka-jolka-scale.css']
         : ['/coffee-v8.css', '/coffee-v8-refine.css'];
       styles.forEach((href) => {
         const link = document.createElement('link');

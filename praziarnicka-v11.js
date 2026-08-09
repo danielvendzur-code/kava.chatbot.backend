@@ -75,7 +75,7 @@
     ] }
   ];
 
-  const state = { screen: 'chat', step: 0, answers: {}, result: null, ranked: [], messages: [], lastFocus: null };
+  const state = { screen: 'chat', step: 0, answers: {}, result: null, ranked: [], messages: [], transitioning: false, lastFocus: null };
   const escapeHtml = value => String(value).replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 
   root.innerHTML = `
@@ -112,7 +112,7 @@
         <div class="pz-widget-brand">${mark}<span><strong id="pz-dialog-title">Pražiarnička</strong><small><i></i>Online</small></span></div>
         <div class="pz-widget-actions"><button class="pz-icon-btn" id="pz-reset" type="button" aria-label="Začať odznova">${icons.reset}</button><button class="pz-icon-btn" id="pz-close" type="button" aria-label="Zavrieť poradcu">${icons.close}</button></div>
       </header>
-      <div class="pz-mode" role="tablist" aria-label="Čo chcete urobiť"><span class="pz-mode-indicator"></span><button class="pz-mode-btn" data-mode="chat" role="tab" type="button">${icons.chat}<b>Porozprávať sa</b></button><button class="pz-mode-btn" data-mode="advisor" role="tab" type="button">${icons.cup}<b>Nájsť kávu</b></button></div>
+      <div class="pz-mode" role="tablist" aria-label="Čo chcete urobiť"><span class="pz-mode-indicator"></span><button class="pz-mode-btn" data-mode="chat" role="tab" type="button">${icons.chat}<b>Chat</b></button><button class="pz-mode-btn" data-mode="advisor" role="tab" type="button">${icons.cup}<b>Výber kávy</b></button></div>
       <div class="pz-view" id="pz-view"></div>
     </section>`;
 
@@ -187,25 +187,30 @@
   function renderAdvisor() {
     const question = questions[state.step];
     const selected = state.answers[question.key];
-    view.innerHTML = `<div class="pz-advisor-panel"><div class="pz-advisor-head"><button class="pz-back" id="pz-back" type="button" aria-label="Späť" ${state.step === 0 ? 'disabled' : ''}>${icons.back}</button><div class="pz-progress">${questions.map((_, index) => `<i class="${index < state.step ? 'is-done' : index === state.step ? 'is-active' : ''}"></i>`).join('')}</div><span id="stepLabel">${state.step + 1} z ${questions.length}</span></div><div class="pz-advisor-scroll"><div class="pz-advisor-copy"><small>${question.label}</small><h2>${question.title}</h2><p>${question.help}</p></div><div class="pz-options">${question.options.map(([value, title, help], index) => `<button class="pz-option ${selected === value ? 'is-selected' : ''}" data-value="${value}" type="button" aria-pressed="${selected === value}" style="--delay:${index * 45}ms;${spritePosition(index, state.step)}"><span class="pz-option-photo" role="img" aria-label="${escapeHtml(title)}"></span><span class="pz-option-copy"><b>${escapeHtml(title)}</b><small>${escapeHtml(help)}</small></span><i>${selected === value ? icons.check : '+'}</i></button>`).join('')}</div><div class="pz-question-actions"><button class="pz-continue" id="continueQuestion" type="button" ${selected ? '' : 'disabled'}>Pokračovať ${icons.arrow}</button></div></div></div>`;
+    view.innerHTML = `<div class="pz-advisor-panel"><div class="pz-advisor-head"><button class="pz-back" id="pz-back" type="button" aria-label="Späť" ${state.step === 0 ? 'disabled' : ''}>${icons.back}</button><div class="pz-progress">${questions.map((_, index) => `<i class="${index < state.step ? 'is-done' : index === state.step ? 'is-active' : ''}"></i>`).join('')}</div><span id="stepLabel">${state.step + 1} z ${questions.length}</span></div><div class="pz-advisor-scroll"><div class="pz-advisor-copy"><small>${question.label}</small><h2>${question.title}</h2><p>${question.help}</p></div><div class="pz-options">${question.options.map(([value, title, help], index) => `<button class="pz-option ${selected === value ? 'is-selected' : ''}" data-value="${value}" type="button" aria-pressed="${selected === value}" style="--delay:${index * 45}ms;${spritePosition(index, state.step)}"><span class="pz-option-photo" role="img" aria-label="${escapeHtml(title)}"></span><span class="pz-option-copy"><b>${escapeHtml(title)}</b><small>${escapeHtml(help)}</small></span><i>${selected === value ? icons.check : '+'}</i></button>`).join('')}</div><p class="pz-auto-note" aria-live="polite">Po výbere automaticky pokračujeme.</p></div></div>`;
     view.querySelectorAll('.pz-option').forEach(option => {
       option.onclick = () => {
+        if (state.transitioning) return;
+        state.transitioning = true;
         state.answers[question.key] = option.dataset.value;
         view.querySelectorAll('.pz-option').forEach(candidate => {
           const on = candidate === option;
           candidate.classList.toggle('is-selected', on);
           candidate.setAttribute('aria-pressed', String(on));
           candidate.querySelector(':scope > i').innerHTML = on ? icons.check : '+';
+          candidate.disabled = true;
         });
-        view.querySelector('#continueQuestion').disabled = false;
+        view.querySelector('.pz-auto-note')?.classList.add('is-visible');
+        const delay = matchMedia('(prefers-reduced-motion: reduce)').matches ? 10 : 300;
+        setTimeout(advanceQuestion, delay);
       };
     });
-    view.querySelector('#continueQuestion').onclick = () => {
-      if (!state.answers[question.key]) return;
-      if (state.step < questions.length - 1) { state.step += 1; renderAdvisor(); }
-      else { rankProducts(); render(); }
-    };
-    view.querySelector('#pz-back').onclick = () => { if (state.step > 0) { state.step -= 1; renderAdvisor(); } };
+    function advanceQuestion() {
+      if (!state.answers[question.key]) { state.transitioning = false; return; }
+      if (state.step < questions.length - 1) { state.step += 1; state.transitioning = false; renderAdvisor(); }
+      else { rankProducts(); state.transitioning = false; render(); }
+    }
+    view.querySelector('#pz-back').onclick = () => { state.transitioning = false; if (state.step > 0) { state.step -= 1; renderAdvisor(); } };
   }
 
   function prepLabel(value) {
@@ -216,7 +221,7 @@
     const product = state.result;
     const alternative = (state.ranked.find(item => item.product.id !== product.id) || { product: products[1] }).product;
     view.innerHTML = `<div class="pz-result"><div class="pz-result-head"><button class="pz-back" id="pz-result-back" type="button" aria-label="Späť">${icons.back}</button><div class="pz-progress">${questions.map(() => '<i class="is-done"></i>').join('')}</div><span>Hotovo</span></div><div class="pz-result-scroll"><div class="pz-result-hero"><img src="${product.photo}" alt="${escapeHtml(product.name)}"><div><small>Táto vám môže sadnúť</small><h2>${escapeHtml(product.name)}</h2><b>${escapeHtml(product.price)}</b></div></div><div class="pz-result-facts"><div><small>Hodí sa na</small><b>${prepLabel(state.answers.prep)}</b></div><div><small>Aká je</small><b>${escapeHtml(product.profile)}</b></div></div><div class="pz-tags">${product.notes.map(note => `<span>${escapeHtml(note)}</span>`).join('')}</div><div class="pz-why"><b>Prečo sme ju vybrali</b><p>${escapeHtml(product.reason)}</p></div><a class="pz-product-cta" href="${product.url}" target="_blank" rel="noreferrer">Pozrieť kávu ${icons.arrow}</a><div class="pz-result-tip"><b>Praktický tip</b><span>Ak ju pijete denne, pozrite si aj väčšie balenie.</span></div><article class="pz-alternative"><img src="${alternative.photo}" alt="${escapeHtml(alternative.name)}"><div><small>Ďalšia možnosť</small><b>${escapeHtml(alternative.name)}</b><span>${escapeHtml(alternative.profile)}</span></div><a href="${alternative.url}" target="_blank" rel="noreferrer">Pozrieť ${icons.arrow}</a></article></div></div>`;
-    view.querySelector('#pz-result-back').onclick = () => { state.result = null; state.step = questions.length - 1; render(); };
+    view.querySelector('#pz-result-back').onclick = () => { state.result = null; state.step = questions.length - 1; state.transitioning = false; render(); };
   }
 
   function render() {
@@ -227,7 +232,7 @@
   }
 
   function resetAll() {
-    state.screen = 'chat'; state.step = 0; state.answers = {}; state.result = null; state.ranked = []; state.messages = [];
+    state.screen = 'chat'; state.step = 0; state.answers = {}; state.result = null; state.ranked = []; state.messages = []; state.transitioning = false;
     render();
   }
 
