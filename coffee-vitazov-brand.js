@@ -230,7 +230,7 @@
     const labels = ['Komu sedí', 'Príprava', 'Chuť'];
     details.forEach((detail, index) => {
       const label = detail.querySelector('small');
-      if (label && labels[index]) label.textContent = labels[index];
+      if (label && labels[index] && label.textContent !== labels[index]) label.textContent = labels[index];
       detail.hidden = false;
     });
   }

@@ -63,4 +63,5 @@ test('recommendations use direct products without fabricated percentages', () =>
   assert.match(config, /https:\/\/kavavitazov\.sk\/espresso-blend\//);
   assert.match(config, /100 % Arabica bez kofeínu/);
   assert.doesNotMatch(core, /match-score|%\s*zhoda|percentFor/);
+  assert.match(brand, /label\.textContent !== labels\[index\]/);
 });
