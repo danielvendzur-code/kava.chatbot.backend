@@ -17,7 +17,7 @@
       name: 'Mokka Espresso Blend',
       price: '11,90 € – 32,13 €',
       url: 'https://kaffaroastery.sk/produkt/mokka-espresso-blend/',
-      image: 'https://kaffaroastery.sk/wp-content/uploads/2025/11/mokka250g.webp',
+      image: '/assets/kaffa/mokka-official.webp',
       origin: 'Etiópia, Brazília, Peru, India a Vietnam',
       process: 'Plná a krémová',
       taste: 'kakao, mandle, orechy a škorica',
@@ -32,7 +32,7 @@
       name: 'Kenya Kamundu Estate AA',
       price: '13,98 €',
       url: 'https://kaffaroastery.sk/produkt/kenya-kamundu-estate-aa/',
-      image: 'https://kaffaroastery.sk/wp-content/uploads/2025/11/kaffa-kamundu.webp',
+      image: '/assets/kaffa/kamundu-official.webp',
       origin: 'Kamundu Estate, Keňa',
       process: 'Svieža a jemne ovocná',
       taste: 'ríbezle, malina, slivka a vanilka',
@@ -47,7 +47,7 @@
       name: 'Colombia Finca El Diviso Decaf',
       price: '16,42 €',
       url: 'https://kaffaroastery.sk/produkt/colombia-finca-el-diviso-decaf/',
-      image: '',
+      image: '/assets/kaffa/decaf-official.jpg',
       origin: 'Huila, Kolumbia',
       process: 'Sladká a bez kofeínu',
       taste: 'vanilka, mandarínka a jazmín',
@@ -59,13 +59,13 @@
     },
     {
       id: 'geisha',
-      name: 'Geisha Ninety Plus Stellar Origin',
+      name: 'Wilder Lazo Stellar Origin',
       price: '21,42 €',
       url: 'https://kaffaroastery.sk/produkt/wilder-lazo/',
-      image: '',
-      origin: 'Volcan Valley, Panama',
-      process: 'Výrazná a nevšedná',
-      taste: 'mango, med, marakuja a kvety',
+      image: '/assets/kaffa/wilder-lazo-official.webp',
+      origin: 'Huila, Kolumbia',
+      process: 'Natural Mosto fermentácia',
+      taste: 'mango, broskyňa, malina a biele kvety',
       prep: 'filter',
       why: 'Radi skúšate nové chute a chcete výraznú kávu s tónmi tropického ovocia a kvetov.',
       packs: ['150 g'],
@@ -119,11 +119,12 @@
 
   K.byId = id => K.products.find(product => product.id === id) || K.products[0];
 
-  K.productImage = (product, className = '') => `
-    <div class="kf-packshot ${className}" role="img" aria-label="Balenie ${escapeHTML(product.name)}">
-      <span class="kf-packshot__seal"></span>
-      <span class="kf-packshot__label"><strong>KAFFA</strong><small>${escapeHTML(product.name)}</small></span>
-    </div>`;
+  K.productImage = (product, className = '') => product.image
+    ? `<img class="kf-product-photo ${className}" data-remote="${escapeHTML(product.image)}" alt="Balenie ${escapeHTML(product.name)}">`
+    : `<div class="kf-packshot ${className}" role="img" aria-label="Balenie ${escapeHTML(product.name)}">
+        <span class="kf-packshot__seal"></span>
+        <span class="kf-packshot__label"><strong>KAFFA</strong><small>${escapeHTML(product.name)}</small></span>
+      </div>`;
 
   K.hydrateImages = scope => {
     scope.querySelectorAll('img[data-remote]').forEach(node => {

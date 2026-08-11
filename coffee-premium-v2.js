@@ -128,7 +128,6 @@
 
     if (project() === 'kaffa') {
       $$('.kf-bot-avatar,.kf-advisor-entry__mark').forEach((avatar) => {
-        avatar.textContent = 'KAFFA';
         avatar.classList.add('mc-kaffa-avatar');
       });
     }
@@ -168,14 +167,17 @@
   }
 
   let lastChoiceClick = 0;
+  let lastChoiceTarget = null;
   document.addEventListener('click', (event) => {
-    if (!event.target.closest(choiceSelector)) return;
+    const target = event.target.closest(choiceSelector);
+    if (!target) return;
     const now = performance.now();
-    if (now - lastChoiceClick < 650) {
+    if (target === lastChoiceTarget && now - lastChoiceClick < 650) {
       event.preventDefault();
       event.stopImmediatePropagation();
       return;
     }
+    lastChoiceTarget = target;
     lastChoiceClick = now;
   }, true);
 
