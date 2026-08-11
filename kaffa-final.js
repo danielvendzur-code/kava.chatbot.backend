@@ -8,12 +8,13 @@
 
   function setOwnerPage() {
     const head = document.querySelector('.kf-head');
-    if (head && !head.querySelector('.kf-solution-brand')) {
+    if (head && !head.querySelector('.kf-company-brand')) {
       head.innerHTML = `
-        <a class="kf-solution-brand" href="https://mojchatbot.sk" target="_blank" rel="noreferrer">
-          <small>Ukážka riešenia</small><b>mojchatbot.sk</b><i aria-hidden="true">↗</i>
+        <a class="kf-company-brand" href="https://kaffaroastery.sk/" target="_blank" rel="noreferrer">
+          <span class="kf-company-mark">${bubble}</span>
+          <span><b>Kaffa Roastery</b><small>Výberová káva</small></span>
         </a>
-        <span class="kf-owner-badge">Návrh pre Kaffa Roastery</span>`;
+        <a class="kf-owner-badge" href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk <span aria-hidden="true">↗</span></a>`;
     }
 
     const copy = document.querySelector('.kf-copy');

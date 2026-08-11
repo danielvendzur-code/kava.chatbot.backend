@@ -14,11 +14,15 @@ html,body{background:#fff!important}
   background:#fff!important;
 }
 .kf-head{min-height:78px!important;height:78px!important;padding:0!important;border-color:var(--kf-final-line)!important}
+.kf-company-brand{display:flex;align-items:center;gap:10px;color:var(--kf-final-ink);text-decoration:none}
+.kf-company-mark{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--kf-final-ink);border-radius:11px;color:var(--kf-final-ink);background:#fff}
+.kf-company-mark svg{width:20px;height:20px}.kf-company-brand>span:last-child{display:grid;gap:2px}.kf-company-brand b{font-size:15px;letter-spacing:-.03em}.kf-company-brand small{color:#5194a6;font:700 6.5px/1.2 var(--kf-mono);letter-spacing:.08em;text-transform:uppercase}
 .kf-solution-brand{position:relative;display:grid;gap:2px;color:var(--kf-final-ink);text-decoration:none;line-height:1}
 .kf-solution-brand small{color:#5194a6;font:800 8px/1.2 var(--kf-mono);letter-spacing:.13em;text-transform:uppercase}
 .kf-solution-brand b{font-size:18px;letter-spacing:-.035em}
 .kf-solution-brand i{position:absolute;right:-19px;bottom:0;color:#5194a6;font-size:12px;font-style:normal}
-.kf-owner-badge{min-height:38px;display:inline-flex;align-items:center;padding:0 14px;border:1px solid var(--kf-final-line);border-radius:999px;background:#fff;font-size:9px;font-weight:800}
+.kf-owner-badge{min-height:38px;display:inline-flex;align-items:center;gap:7px;padding:0 14px;border:1px solid var(--kf-final-line);border-radius:999px;color:var(--kf-final-ink);background:#fff;font-size:9px;font-weight:800;text-decoration:none}
+.kf-owner-badge:hover{border-color:var(--kf-final-ink);background:var(--kf-final-blue-soft)}
 
 .kf-hero{
   min-height:0!important;
