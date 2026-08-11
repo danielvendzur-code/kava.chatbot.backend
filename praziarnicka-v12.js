@@ -84,7 +84,8 @@
 
   const state = {
     screen: 'chat', step: 0, answers: {}, result: null, ranked: [], messages: [],
-    transitioning: false, typing: false, chipsHidden: false, open: false, lastFocus: null, pack: '500 g'
+    transitioning: false, typing: false, chipsHidden: false, open: false, lastFocus: null,
+    pack: '500 g', addon: false, inCart: false, previewDismissed: false
   };
   const escapeHtml = (value) => String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
   const timeNow = () => new Intl.DateTimeFormat('sk-SK', { hour: '2-digit', minute: '2-digit' }).format(new Date());
@@ -92,32 +93,28 @@
   root.innerHTML = `
     <main class="pz-page" aria-labelledby="pz-title">
       <header class="pz-page-head">
-        <a class="pz-page-brand" href="https://praziarnicka.sk/" target="_blank" rel="noreferrer">${logo('pz-page-logo')}</a>
-        <a class="pz-built-by" href="https://mojchatbot.sk" target="_blank" rel="noreferrer"><span>Ukážka riešenia</span><b>mojchatbot.sk</b>${icons.external}</a>
+        <a class="pz-solution-brand" href="https://mojchatbot.sk" target="_blank" rel="noreferrer"><span>Ukážka riešenia</span><strong>mojchatbot.sk</strong>${icons.external}</a>
       </header>
       <section class="pz-owner-copy">
-        <p class="pz-eyebrow">Návrh pre tím Pražiarničky</p>
-        <h1 id="pz-title">AI poradca pre Pražiarničku</h1>
-        <p class="pz-owner-lead">Ukáže zákazníkovi správnu kávu, odpovie na otázky a pošle ho priamo k produktu.</p>
-        <div class="pz-benefits" aria-label="Ako ukážku vyskúšať">
-          <span><i>01</i><b>Otvoriť poradcu</b></span>
-          <span><i>02</i><b>4 otázky</b></span>
-          <span><i>03</i><b>Výsledok</b></span>
+        <h1 id="pz-title">Návrh AI chatbota pre Pražiarničku</h1>
+        <p class="pz-owner-lead">Zákazník odpovie na štyri otázky o chuti a príprave. Poradca mu odporučí vhodnú kávu a pošle ju rovno do košíka.</p>
+        <div class="pz-benefits" aria-label="Čo chatbot dokáže">
+          <article><i>01</i><div><b>Odpovie 24/7</b><span>Pomôže aj mimo otváracích hodín.</span></div></article>
+          <article><i>02</i><div><b>Vyberie kávu</b><span>Štyri otázky podľa chuti a prípravy.</span></div></article>
+          <article><i>03</i><div><b>Zvýši objednávku</b><span>Ponúkne väčšie balenie alebo darček.</span></div></article>
         </div>
-        <button class="pz-primary pz-open" type="button">Otvoriť poradcu ${icons.arrow}</button>
-        <nav class="pz-owner-links" aria-label="Užitočné odkazy">
-          <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a>
-          <a href="https://praziarnicka.sk" target="_blank" rel="noreferrer">Web Pražiarničky</a>
-          <a href="mailto:info@praziarnicka.sk">Napísať správu</a>
-        </nav>
+        <button class="pz-primary pz-open" type="button">Vyskúšať chatbot ${icons.arrow}</button>
       </section>
     </main>
 
-    <button class="pz-launcher" id="pz-launcher" type="button" aria-label="Otvoriť poradcu Pražiarničky" aria-expanded="false">${brandIcon()}</button>
+    <div class="pz-launcher-wrap">
+      <div class="pz-preview" id="pz-preview"><button id="pz-preview-close" type="button" aria-label="Zavrieť náhľad">${icons.close}</button><b>Hľadáte správnu kávu?</b><span>Pomôžem vám vybrať.</span></div>
+      <button class="pz-launcher" id="pz-launcher" type="button" aria-label="Otvoriť poradcu Pražiarničky" aria-expanded="false">${icons.chat}</button>
+    </div>
     <div class="pz-backdrop" id="pz-backdrop" hidden></div>
     <section class="pz-widget" id="pz-widget" role="dialog" aria-modal="true" aria-label="Poradca Pražiarničky" aria-hidden="true" hidden>
       <header class="pz-widget-head">
-        <div class="pz-widget-brand">${logo('pz-widget-logo')}</div>
+        <div class="pz-widget-brand"><span class="pz-chat-brand">${icons.chat}</span><span><strong>Pražiarnička</strong><small>Kávový poradca</small></span></div>
         <div class="pz-widget-actions">
           <button class="pz-icon-btn" id="pz-reset" type="button" aria-label="Začať odznova">${icons.reset}</button>
           <button class="pz-icon-btn" id="pz-close" type="button" aria-label="Zavrieť poradcu">${icons.close}</button>
@@ -133,6 +130,7 @@
 
   const widget = root.querySelector('#pz-widget');
   const launcher = root.querySelector('#pz-launcher');
+  const preview = root.querySelector('#pz-preview');
   const backdrop = root.querySelector('#pz-backdrop');
   const view = root.querySelector('#pz-view');
   const mode = root.querySelector('.pz-mode');
@@ -164,7 +162,7 @@
 
   function messageMarkup(message) {
     if (message.role === 'assistant') {
-      return `<div class="pz-message-row pz-message-row-assistant"><span class="pz-assistant-avatar">${brandIcon()}</span><div class="pz-message-stack"><div class="pz-bubble pz-bubble-assistant">${escapeHtml(message.text)}</div><time>${escapeHtml(message.time)}</time></div></div>`;
+      return `<div class="pz-message-row pz-message-row-assistant"><span class="pz-assistant-avatar">${icons.chat}</span><div class="pz-message-stack"><div class="pz-bubble pz-bubble-assistant">${escapeHtml(message.text)}</div><time>${escapeHtml(message.time)}</time></div></div>`;
     }
     return `<div class="pz-message-row pz-message-row-user"><div class="pz-message-stack"><div class="pz-bubble pz-bubble-user">${escapeHtml(message.text)}</div><time>${escapeHtml(message.time)}</time></div></div>`;
   }
@@ -202,7 +200,7 @@
   }
 
   function renderChat() {
-    const chips = ['Do automatu', 'Na cappuccino', 'Skôr čokoládová', 'Bez kofeínu'];
+    const chips = ['Káva do automatu', 'Na cappuccino', 'Skôr čokoládová', 'Bez kofeínu'];
     const intro = { role: 'assistant', text: 'Dobrý deň. Pomôžem vám vybrať kávu podľa toho, ako ju pripravujete a čo vám chutí.', time: timeNow() };
     view.innerHTML = `
       <div class="pz-chat-panel">
@@ -211,7 +209,7 @@
           <div class="pz-day"><span>Dnes</span></div>
           ${messageMarkup(intro)}
           ${state.messages.map(messageMarkup).join('')}
-          ${state.typing ? `<div class="pz-message-row pz-message-row-assistant"><span class="pz-assistant-avatar">${brandIcon()}</span><div class="pz-typing"><i></i><i></i><i></i></div></div>` : ''}
+          ${state.typing ? `<div class="pz-message-row pz-message-row-assistant"><span class="pz-assistant-avatar">${icons.chat}</span><div class="pz-typing"><i></i><i></i><i></i></div></div>` : ''}
         </div>
         <div class="pz-chat-bottom">
           <div class="pz-chips ${state.chipsHidden ? 'is-hidden' : ''}" aria-label="Rýchle možnosti">${chips.map((chip, index) => `<button class="pz-chip" style="--delay:${index * 55}ms" type="button">${chip}</button>`).join('')}</div>
@@ -305,7 +303,13 @@
               ${['250 g', '500 g', '1 kg'].map((pack) => `<button class="pz-pack ${state.pack === pack ? 'is-selected' : ''}" data-pack="${pack}" type="button">${pack}${pack === '500 g' ? '<em>TOP</em>' : ''}</button>`).join('')}
             </div>
           </div>
-          <a class="pz-product-cta" href="${product.url}" target="_blank" rel="noreferrer">Vybrať ${escapeHtml(state.pack)} na e-shope ${icons.arrow}</a>
+          <button class="pz-addon ${state.addon ? 'is-selected' : ''}" id="pz-addon" type="button" aria-pressed="${state.addon}">
+            <span class="pz-addon-photos"><img src="${asset('official-brazil.jpg')}" alt=""><img src="${asset('official-cuba.jpg')}" alt=""></span>
+            <span class="pz-addon-copy"><small>Pridať navyše</small><b>Degustačné balenie</b><span>Dve 100% arabicy · 39,90 €</span></span>
+            <i>${state.addon ? icons.check : '+'}</i>
+          </button>
+          <button class="pz-product-cta ${state.inCart ? 'is-added' : ''}" id="pz-add-cart" type="button">${state.inCart ? `Pridané do košíka ${icons.check}` : `Pridať ${escapeHtml(state.pack)} do košíka ${icons.arrow}`}</button>
+          ${state.inCart ? `<div class="pz-cart-note"><span>${escapeHtml(product.name)} · ${escapeHtml(state.pack)}${state.addon ? ' + degustačné balenie' : ''}</span><a href="${product.url}" target="_blank" rel="noreferrer">Otvoriť e-shop ${icons.external}</a></div>` : ''}
           <div class="pz-tags">${product.notes.map((note) => `<span>${escapeHtml(note)}</span>`).join('')}</div>
           <div class="pz-why"><b>Prečo práve táto?</b><p>${escapeHtml(product.reason)}</p></div>
           ${alternative ? `<article class="pz-alternative"><img src="${alternative.photo}" alt="${escapeHtml(alternative.name)}"><div><small>Ďalšia dobrá voľba</small><b>${escapeHtml(alternative.name)}</b><span>${escapeHtml(alternative.profile)}</span></div><a href="${alternative.url}" target="_blank" rel="noreferrer">Pozrieť ${icons.external}</a></article>` : ''}
@@ -317,9 +321,19 @@
     view.querySelectorAll('.pz-pack').forEach((button) => {
       button.onclick = () => {
         state.pack = button.dataset.pack;
+        state.inCart = false;
         renderResult();
       };
     });
+    view.querySelector('#pz-addon').onclick = () => {
+      state.addon = !state.addon;
+      state.inCart = false;
+      renderResult();
+    };
+    view.querySelector('#pz-add-cart').onclick = () => {
+      state.inCart = true;
+      renderResult();
+    };
   }
 
   function render() {
@@ -341,6 +355,8 @@
     state.result = null;
     state.ranked = [];
     state.pack = '500 g';
+    state.addon = false;
+    state.inCart = false;
     state.transitioning = false;
     state.screen = 'advisor';
     render();
@@ -370,10 +386,15 @@
     widget.setAttribute('aria-hidden', String(!open));
     launcher.setAttribute('aria-expanded', String(open));
     launcher.classList.toggle('is-hidden', open);
+    preview.classList.toggle('is-hidden', open || state.previewDismissed);
   }
 
   root.querySelectorAll('.pz-open').forEach((button) => { button.onclick = () => setWidget(true, 'chat'); });
   launcher.onclick = () => setWidget(true, 'chat');
+  root.querySelector('#pz-preview-close').onclick = () => {
+    state.previewDismissed = true;
+    preview.classList.add('is-hidden');
+  };
   root.querySelector('#pz-close').onclick = () => setWidget(false);
   backdrop.onclick = () => setWidget(false);
   root.querySelector('#pz-reset').onclick = () => {
@@ -393,5 +414,5 @@
 
   render();
   document.body.classList.add('pz-ready');
-  if (!new URLSearchParams(location.search).has('closed')) setTimeout(() => setWidget(true, 'chat'), 420);
+  if (new URLSearchParams(location.search).has('open')) setTimeout(() => setWidget(true, 'chat'), 320);
 })();
