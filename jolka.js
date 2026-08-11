@@ -223,7 +223,7 @@
         <div class="result-product">${productPhoto(selected, "result-product__photo")}<div><h3>${selected.name}</h3><span class="result-product__origin">${selected.origin}</span><div class="taste-tags">${selected.tones.map((tone) => `<span>${tone}</span>`).join("")}</div></div></div>
         <div class="result-facts"><article><small>Acidita normálne</small><b>${selected.acidityText}</b></article><article><small>Najlepšia príprava</small><b>${selected.prepText}</b></article></div>
         <div class="result-reason"><b>Prečo práve táto</b><p>${selected.reason}</p></div>
-        <div class="result-actions"><button class="result-actions__primary" id="choosePackage" type="button">Vybrať balenie a mletie</button><a class="result-actions__secondary" href="${selected.url}" target="_blank" rel="noreferrer">Pozrieť produkt</a></div>
+        <div class="result-actions"><a class="result-actions__primary" href="${selected.url}" target="_blank" rel="noreferrer">🛒 Do košíka</a><button class="result-actions__secondary" id="choosePackage" type="button">Vybrať balenie</button></div>
         ${alternative ? `<div class="alternative-card"><div><small>Jedna alternatíva</small><b>${alternative.name}·${alternative.tones.slice(0, 2).join(" · ")}</b></div><button type="button"data-alternative="${alternative.id}">Porovnať</button></div>` : ""}
       </section>`;
     $("#choosePackage").addEventListener("click", () => {
