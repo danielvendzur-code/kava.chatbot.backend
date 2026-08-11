@@ -202,6 +202,8 @@ body[data-demo="vitazov"] .preview-cta { min-height: 48px !important; display: f
 body[data-demo="vitazov"] .preview-cta:hover { color: var(--kv-dark) !important; background: var(--kv-lime) !important; }
 body[data-demo="vitazov"] .demo-footer { min-height: 42px !important; color: rgba(7,31,26,.48) !important; font-size: 7.5px !important; }
 body[data-demo="vitazov"] .demo-footer a { color: var(--kv-deep) !important; font-weight: 900 !important; }
+.kv-company-brand{display:inline-flex;align-items:center;text-decoration:none}.kv-company-brand .kv-official-logo{width:92px!important;height:58px!important;display:block!important;object-fit:contain!important}
+body[data-demo="vitazov"] .demo-tag{display:flex!important;align-items:center!important;gap:5px!important;text-decoration:none!important}body[data-demo="vitazov"] .demo-tag span{color:rgba(7,31,26,.55);font-size:7px!important;text-transform:uppercase;letter-spacing:.08em}body[data-demo="vitazov"] .demo-tag b{font-size:9px!important}body[data-demo="vitazov"] .demo-tag i{color:var(--kv-lime-dark);font-size:10px;font-style:normal}
 
 body[data-demo="vitazov"] .launcher { width: 64px !important; height: 64px !important; right: max(22px, env(safe-area-inset-right)) !important; bottom: max(22px, env(safe-area-inset-bottom)) !important; }
 body[data-demo="vitazov"] .launcher__button {
@@ -217,6 +219,7 @@ body[data-demo="vitazov"] .launcher__button {
 }
 body[data-demo="vitazov"] .launcher__button:hover { color: var(--kv-dark) !important; background: var(--kv-lime) !important; }
 body[data-demo="vitazov"] .launcher__teaser {
+  display: grid !important;
   width: 226px !important;
   min-height: 72px !important;
   right: 0 !important;
@@ -258,6 +261,7 @@ body[data-demo="vitazov"] .widget__header {
   background: var(--kv-deep) !important;
 }
 body[data-demo="vitazov"] .widget-brand { gap: 10px !important; }
+body[data-demo="vitazov"] .widget-brand .kv-widget-logo{width:76px!important;height:46px!important;object-fit:contain!important;object-position:left center!important;filter:brightness(0) invert(1)!important}
 body[data-demo="vitazov"] .icon-button { width: 39px !important; height: 39px !important; color: #fff !important; background: rgba(255,255,255,.08) !important; }
 body[data-demo="vitazov"] .icon-button:hover { color: var(--kv-dark) !important; background: #fff !important; }
 body[data-demo="vitazov"] .mode {
@@ -294,6 +298,7 @@ body[data-demo="vitazov"] #chatScreen .advisor-entry {
 body[data-demo="vitazov"] #chatScreen .advisor-entry:hover { border-color: var(--kv-lime) !important; color: var(--kv-dark) !important; background-color: var(--kv-lime) !important; }
 body[data-demo="vitazov"] #chatScreen .advisor-entry > span:first-child { width: 32px !important; height: 32px !important; padding: 0 !important; color: var(--kv-dark) !important; background: #fff !important; }
 body[data-demo="vitazov"] #chatScreen .advisor-entry > span:first-child .kv-chat-mark { width: 100%; height: 100%; border-radius: inherit; background: transparent; }
+body[data-demo="vitazov"] #chatScreen .kv-entry-logo{width:25px;height:25px;display:block;object-fit:contain}
 body[data-demo="vitazov"] #chatScreen .advisor-entry > div { display: grid !important; }
 body[data-demo="vitazov"] #chatScreen .advisor-entry b { display: block !important; color: inherit !important; font-size: 11.5px !important; }
 body[data-demo="vitazov"] #chatScreen .advisor-entry em { display: none !important; }
@@ -317,6 +322,7 @@ body[data-demo="vitazov"] #chatScreen .message__avatar {
 }
 body[data-demo="vitazov"] #chatScreen .message__avatar::before,
 body[data-demo="vitazov"] #chatScreen .message__avatar::after { content: none !important; display: none !important; }
+body[data-demo="vitazov"] #chatScreen .kv-message-logo{width:24px;height:24px;display:block;object-fit:contain;filter:brightness(0) invert(1)}
 body[data-demo="vitazov"] #chatScreen .kv-chat-mark--message { width: 33px; height: 33px; border-radius: 50%; color: #fff; background: transparent; }
 body[data-demo="vitazov"] #chatScreen .kv-chat-mark--message svg { width: 17px; height: 17px; }
 body[data-demo="vitazov"] #chatScreen .bubble {

@@ -2,6 +2,7 @@
   'use strict';
 
   if (document.body.dataset.demo !== 'vitazov') return;
+  const officialLogo = '/assets/vitazov-logo.svg';
 
   const bubbleMark = (className = '') => `
     <span class="kv-chat-mark ${className}" aria-hidden="true">
@@ -15,15 +16,13 @@
     const brand = document.querySelector('.demo-brand');
     if (brand) {
       brand.innerHTML = `
-        <a class="kv-solution-brand" href="https://mojchatbot.sk" target="_blank" rel="noreferrer">
-          <span>Ukážka riešenia</span><strong>mojchatbot.sk</strong><i>↗</i>
-        </a>`;
+        <a class="kv-company-brand" href="https://kavavitazov.sk/" target="_blank" rel="noreferrer"><img class="kv-official-logo" src="${officialLogo}" alt="Káva Víťazov"></a>`;
     }
 
     const badge = document.querySelector('.demo-tag');
     if (badge) {
       badge.href = 'https://mojchatbot.sk';
-      badge.innerHTML = 'Návrh pre Kávu Víťazov';
+      badge.innerHTML = '<span>Ukážka riešenia</span><b>mojchatbot.sk</b><i>↗</i>';
     }
 
     const copy = document.querySelector('.demo-copy');
@@ -78,11 +77,11 @@
   function setWidgetBrand() {
     const widgetBrand = document.querySelector('.widget-brand');
     if (widgetBrand) {
-      widgetBrand.innerHTML = `${bubbleMark()}<span class="kv-final-brand-copy"><strong>Kávový poradca</strong><small>Káva Víťazov</small></span>`;
+      widgetBrand.innerHTML = `<img class="kv-widget-logo" src="${officialLogo}" alt="Káva Víťazov">`;
     }
 
     const launcher = document.querySelector('#openWidget');
-    if (launcher) launcher.innerHTML = `${bubbleMark('kv-chat-mark--launcher')}<span class="launcher__status" aria-hidden="true"></span>`;
+    if (launcher) launcher.innerHTML = `<span class="kv-launcher-logo"><img src="${officialLogo}" alt=""></span><span class="launcher__status" aria-hidden="true"></span>`;
 
     const teaser = document.querySelector('#launcherTeaser');
     if (teaser) {
@@ -96,7 +95,7 @@
     if (advisorEntry) {
       const mark = advisorEntry.querySelector(':scope > span:first-child');
       const title = advisorEntry.querySelector('b');
-      if (mark) mark.innerHTML = bubbleMark();
+      if (mark) mark.innerHTML = `<img class="kv-entry-logo" src="${officialLogo}" alt="">`;
       if (title) title.textContent = 'Nájsť svoju kávu';
     }
 
@@ -114,7 +113,7 @@
     document.querySelectorAll('.message__avatar').forEach((avatar) => {
       if (avatar.dataset.kvFinalAvatar === 'true') return;
       avatar.dataset.kvFinalAvatar = 'true';
-      avatar.innerHTML = bubbleMark('kv-chat-mark--message');
+      avatar.innerHTML = `<img class="kv-message-logo" src="${officialLogo}" alt="">`;
     });
   }
 
