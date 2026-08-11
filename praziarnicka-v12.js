@@ -93,7 +93,8 @@
   root.innerHTML = `
     <main class="pz-page" aria-labelledby="pz-title">
       <header class="pz-page-head">
-        <a class="pz-solution-brand" href="https://mojchatbot.sk" target="_blank" rel="noreferrer"><span>Ukážka riešenia</span><strong>mojchatbot.sk</strong>${icons.external}</a>
+        <a class="pz-page-brand" href="https://praziarnicka.sk/" target="_blank" rel="noreferrer">${logo('pz-page-logo')}</a>
+        <a class="pz-built-by" href="https://mojchatbot.sk" target="_blank" rel="noreferrer"><span>Ukážka riešenia</span><b>mojchatbot.sk</b>${icons.external}</a>
       </header>
       <section class="pz-owner-copy">
         <h1 id="pz-title">Návrh AI chatbota pre Pražiarničku</h1>
@@ -104,17 +105,18 @@
           <article><i>03</i><div><b>Zvýši objednávku</b><span>Ponúkne väčšie balenie alebo darček.</span></div></article>
         </div>
         <button class="pz-primary pz-open" type="button">Vyskúšať chatbot ${icons.arrow}</button>
+        <div class="pz-owner-links"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a><a href="https://praziarnicka.sk/" target="_blank" rel="noreferrer">Web Pražiarničky</a></div>
       </section>
     </main>
 
     <div class="pz-launcher-wrap">
       <div class="pz-preview" id="pz-preview"><button id="pz-preview-close" type="button" aria-label="Zavrieť náhľad">${icons.close}</button><b>Hľadáte správnu kávu?</b><span>Pomôžem vám vybrať.</span></div>
-      <button class="pz-launcher" id="pz-launcher" type="button" aria-label="Otvoriť poradcu Pražiarničky" aria-expanded="false">${icons.chat}</button>
+      <button class="pz-launcher" id="pz-launcher" type="button" aria-label="Otvoriť poradcu Pražiarničky" aria-expanded="false">${brandIcon()}</button>
     </div>
     <div class="pz-backdrop" id="pz-backdrop" hidden></div>
     <section class="pz-widget" id="pz-widget" role="dialog" aria-modal="true" aria-label="Poradca Pražiarničky" aria-hidden="true" hidden>
       <header class="pz-widget-head">
-        <div class="pz-widget-brand"><span class="pz-chat-brand">${icons.chat}</span><span><strong>Pražiarnička</strong><small>Kávový poradca</small></span></div>
+        <div class="pz-widget-brand">${logo('pz-widget-logo')}</div>
         <div class="pz-widget-actions">
           <button class="pz-icon-btn" id="pz-reset" type="button" aria-label="Začať odznova">${icons.reset}</button>
           <button class="pz-icon-btn" id="pz-close" type="button" aria-label="Zavrieť poradcu">${icons.close}</button>
@@ -162,7 +164,7 @@
 
   function messageMarkup(message) {
     if (message.role === 'assistant') {
-      return `<div class="pz-message-row pz-message-row-assistant"><span class="pz-assistant-avatar">${icons.chat}</span><div class="pz-message-stack"><div class="pz-bubble pz-bubble-assistant">${escapeHtml(message.text)}</div><time>${escapeHtml(message.time)}</time></div></div>`;
+      return `<div class="pz-message-row pz-message-row-assistant"><span class="pz-assistant-avatar">${brandIcon()}</span><div class="pz-message-stack"><div class="pz-bubble pz-bubble-assistant">${escapeHtml(message.text)}</div><time>${escapeHtml(message.time)}</time></div></div>`;
     }
     return `<div class="pz-message-row pz-message-row-user"><div class="pz-message-stack"><div class="pz-bubble pz-bubble-user">${escapeHtml(message.text)}</div><time>${escapeHtml(message.time)}</time></div></div>`;
   }
@@ -205,11 +207,11 @@
     view.innerHTML = `
       <div class="pz-chat-panel">
         <div class="pz-chat-scroll" id="pz-chat-scroll">
-          <button class="pz-advisor-cta" id="pz-start-advisor" type="button"><span><b>Nájsť svoju kávu</b><small>4 krátke otázky</small></span>${icons.arrow}</button>
+          <button class="pz-advisor-cta" id="pz-start-advisor" type="button"><span class="pz-advisor-thumb"><img src="${products[0].photo}" alt=""></span><span class="pz-advisor-cta-copy"><b>Nájsť svoju kávu</b><small>4 krátke otázky</small></span>${icons.arrow}</button>
           <div class="pz-day"><span>Dnes</span></div>
           ${messageMarkup(intro)}
           ${state.messages.map(messageMarkup).join('')}
-          ${state.typing ? `<div class="pz-message-row pz-message-row-assistant"><span class="pz-assistant-avatar">${icons.chat}</span><div class="pz-typing"><i></i><i></i><i></i></div></div>` : ''}
+          ${state.typing ? `<div class="pz-message-row pz-message-row-assistant"><span class="pz-assistant-avatar">${brandIcon()}</span><div class="pz-typing"><i></i><i></i><i></i></div></div>` : ''}
         </div>
         <div class="pz-chat-bottom">
           <div class="pz-chips ${state.chipsHidden ? 'is-hidden' : ''}" aria-label="Rýchle možnosti">${chips.map((chip, index) => `<button class="pz-chip" style="--delay:${index * 55}ms" type="button">${chip}</button>`).join('')}</div>
