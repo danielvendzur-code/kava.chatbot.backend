@@ -30,6 +30,7 @@
     await addStyle('/concept-seasonal-advisor.css');
     await addStyle('/concept-seasonal-responsive.css');
     await addStyle('/concept-jolka-scale.css');
+    await addStyle('/coffee-premium-v2.css');
     await addScript('/concept-seasonal-config.js');
     for (const src of [
       '/concept-seasonal-core.js',
@@ -40,7 +41,8 @@
       '/concept-seasonal-advisor-result.js',
       '/concept-seasonal-advisor-completion.js',
       '/concept-seasonal-chat.js',
-      '/concept-seasonal-init.js'
+      '/concept-seasonal-init.js',
+      '/coffee-premium-v2.js'
     ]) await addScript(src);
   }
 
@@ -50,10 +52,12 @@
     fonts.href = 'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap';
     document.head.appendChild(fonts);
     await Promise.all([addStyle('/coffee-v8.css'), addStyle('/coffee-v8-refine.css')]);
+    await addStyle('/coffee-premium-v2.css');
     await addScript('/coffee-configs.js');
     await addScript('/coffee-brand-overrides.js');
     await addScript('/coffee-v8.js');
     await addScript('/coffee-v8-patch.js');
+    await addScript('/coffee-premium-v2.js');
   }
 
   (slug === 'concept' ? bootConcept() : bootLegacy()).catch((error) => {
