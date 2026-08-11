@@ -225,7 +225,6 @@
     stage.innerHTML = `
       <section class="kf-question">
         <h2>${K.e(question.title)}</h2>
-        <p>${K.e(question.hint)}</p>
         <div class="kf-options">
           ${question.options.map((option, index) => {
             const [value, title, description] = option;
@@ -233,7 +232,6 @@
             return `<button class="kf-option kf-option--photo ${selected ? 'is-selected' : ''}" style="--i:${index};${spritePosition(index, state.step)}" data-value="${K.e(value)}" type="button" aria-pressed="${selected}"><span class="kf-option__visual" role="img" aria-label="${K.e(title)}"></span><span class="kf-option__copy"><b>${K.e(title)}</b><small>${K.e(description)}</small></span><i class="kf-option__state">${selected ? '✓' : '+'}</i></button>`;
           }).join('')}
         </div>
-        <p class="kf-auto-note" aria-live="polite">Po výbere automaticky pokračujeme.</p>
       </section>`;
 
     stage.querySelectorAll('.kf-option').forEach(option => {
@@ -248,7 +246,6 @@
           candidate.querySelector('.kf-option__state').textContent = on ? '✓' : '+';
           candidate.disabled = true;
         });
-        stage.querySelector('.kf-auto-note')?.classList.add('is-visible');
         const delay = matchMedia('(prefers-reduced-motion: reduce)').matches ? 10 : 300;
         setTimeout(advanceQuestion, delay);
       };
