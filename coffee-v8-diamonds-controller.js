@@ -131,7 +131,7 @@
     progressFill.style.width = `${((state.step + 1) / questions.length) * 100}%`;
     backButton.disabled = state.step === 0;
     const selected = state.answers[question.id];
-    advisorContent.innerHTML = `<div class="question-view"><span class="question-kicker">${esc(question.eyebrow)}</span><h2>${esc(question.title)}</h2><p>${esc(question.help)}</p><div class="answers">${question.options.map((option) => optionCard(option, question.id)).join('')}</div><p class="auto-advance-note" aria-live="polite">Po výbere automaticky pokračujeme.</p></div>`;
+    advisorContent.innerHTML = `<div class="question-view"><span class="question-kicker">${esc(question.eyebrow)}</span><h2>${esc(question.title)}</h2><div class="answers">${question.options.map((option) => optionCard(option, question.id)).join('')}</div></div>`;
     $$('.answer-card', advisorContent).forEach((button) => button.addEventListener('click', () => {
       if (state.transitioning) return;
       state.transitioning = true;
@@ -142,7 +142,6 @@
         candidate.setAttribute('aria-pressed', String(selectedAnswer));
         candidate.disabled = true;
       });
-      advisorContent.querySelector('.auto-advance-note')?.classList.add('is-visible');
       const delay = reducedMotion() ? 10 : 300;
       window.setTimeout(advanceQuestion, delay);
     }));
