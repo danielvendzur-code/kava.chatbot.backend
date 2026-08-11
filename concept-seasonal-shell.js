@@ -4,34 +4,35 @@
   const { config, root, $, escapeHTML, mark, icons } = app;
 
   root.innerHTML = `
-    <main class="concept-page" aria-label="Výber kávy ${escapeHTML(config.brand)}">
+    <main class="concept-page" aria-label="Návrh AI chatbota pre ${escapeHTML(config.brand)}">
       <header class="site-head">
-        <img class="site-brand__logo" src="/brand/concept-official-logo.png" width="180" height="42" alt="Concept Coffee Roasters">
-        <a class="site-head__link" href="${escapeHTML(config.shopUrl)}" target="_blank" rel="noreferrer">conceptcoffee.sk ${icons.arrow}</a>
+        <a class="solution-brand" href="https://mojchatbot.sk" target="_blank" rel="noreferrer"><span>Ukážka riešenia</span><strong>mojchatbot.sk</strong>${icons.arrow}</a>
+        <span class="owner-badge">Návrh pre Concept Coffee</span>
       </header>
 
       <section class="hero">
         <div class="hero-copy">
-          <h1>Každý zákazník si nájde svoju kávu.</h1>
-          <p class="hero-intro">Poradca odpovie 24/7, vysvetlí chute jednoducho a odporučí konkrétnu kávu.</p>
-          <ul class="hero-benefits" aria-label="Výhody kávového poradcu">
-            <li><span class="benefit-icon">${icons.compass}</span><span><b>Jednoduchý výber</b><small>Pár otázok a nájdeme kávu, ktorá vám sadne.</small></span></li>
-            <li><span class="benefit-icon">${icons.upsell}</span><span><b>Vhodné balenie</b><small>Odporučíme ho podľa toho, koľko kávy pijete.</small></span></li>
-            <li><span class="benefit-icon">${icons.clock}</span><span><b>Pomoc 24/7</b><small>Sme tu, keď potrebujete poradiť.</small></span></li>
+          <p class="hero-eyebrow">Návrh AI chatbota pre Concept Coffee</p>
+          <h1>Sezónna káva bez zdĺhavého vyberania.</h1>
+          <p class="hero-intro">Zákazník odpovie na štyri otázky o chuti a príprave. Poradca odporučí konkrétnu kávu, balenie aj mletie a pripraví ju do košíka.</p>
+          <ul class="hero-benefits" aria-label="Čo AI poradca dokáže">
+            <li><i>01</i><span><b>Odpovie 24/7</b><small>Pomôže aj mimo otváracích hodín.</small></span></li>
+            <li><i>02</i><span><b>Vyberie kávu</b><small>Štyri otázky podľa chuti a prípravy.</small></span></li>
+            <li><i>03</i><span><b>Zvýši objednávku</b><small>Ponúkne balenie, mletie alebo ochutnávku.</small></span></li>
           </ul>
-          <button class="primary-action" id="heroOpen" type="button">Vyskúšať výber kávy ${icons.arrow}</button>
+          <button class="primary-action" id="heroOpen" type="button">Vyskúšať poradcu ${icons.arrow}</button>
         </div>
 
-        <aside class="hero-visual" aria-label="Sezónna káva Weithaga AA">
-          <div class="hero-visual__shape"></div>
-          <img src="/assets/concept/product-weithaga.jpg" width="1024" height="1024" alt="Oficiálna produktová fotografia Weithaga AA">
-          <div class="hero-visual__caption"><span>Sezónny výber</span><b>Weithaga AA · Kenya</b></div>
+        <aside class="hero-visual" aria-label="Ukážka odporúčania Weithaga AA">
+          <img src="/assets/concept/product-weithaga.jpg" width="1024" height="1024" alt="Produktová fotografia Weithaga AA">
+          <div class="hero-visual__caption"><span>Odporúčanie pre zákazníka</span><b>Kenya Weithaga AA</b><small>ríbezle · grep · vanilka · čierny čaj</small></div>
+          <div class="hero-visual__proof"><span>Filter roast</span><span>Kenya</span><b>od 15 €</b></div>
         </aside>
       </section>
 
       <footer class="site-foot">
-        <span>Concept Coffee · sezónny výber kávy.</span>
-        <a href="${escapeHTML(config.shopUrl)}" target="_blank" rel="noreferrer">Pozrieť ponuku Concept Coffee</a>
+        <span>Interaktívny návrh pre Concept Coffee Roasters</span>
+        <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk ↗</a>
       </footer>
     </main>
 
@@ -39,19 +40,19 @@
       <aside class="launcher-teaser" id="launcherTeaser" aria-label="Pozvánka do poradcu">
         <button class="launcher-teaser__close" id="closeTeaser" type="button" aria-label="Skryť pozvánku">×</button>
         <button class="launcher-teaser__open" id="openFromTeaser" type="button">
-          <b>Pomôžem vám vybrať kávu</b>
-          <span>Štyri otázky, konkrétne odporúčanie.</span>
+          <b>Vyskúšajte AI poradcu</b>
+          <span>Chat aj výber kávy.</span>
         </button>
       </aside>
       <button class="launcher__button" id="openWidget" type="button" aria-label="Otvoriť kávového poradcu" aria-expanded="false">
-        <span class="launcher__brand-logo"><img src="/brand/concept-official-logo.png" alt=""></span><span class="launcher__status" aria-hidden="true"></span>
+        <span class="launcher__chat-mark">${icons.chat}</span>
       </button>
     </div>
 
     <section class="widget" id="widget" role="dialog" aria-modal="true" aria-label="Kávový poradca ${escapeHTML(config.brand)}" aria-hidden="true">
       <header class="widget__header">
         <div class="widget-brand">
-          <img class="widget-brand__logo" src="/brand/concept-official-logo.png" width="126" height="30" alt="Concept Coffee Roasters">
+          <span class="widget-brand__mark">${icons.chat}</span><span class="widget-brand__copy"><strong>Concept poradca</strong><small>Kávový poradca</small></span>
         </div>
         <div class="widget-actions">
           <button class="icon-button" id="resetAll" type="button" aria-label="Začať odznova">${icons.reset}</button>

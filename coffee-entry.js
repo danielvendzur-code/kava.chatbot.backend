@@ -31,6 +31,7 @@
     await addStyle('/concept-seasonal-responsive.css');
     await addStyle('/concept-jolka-scale.css');
     await addStyle('/coffee-premium-v2.css');
+    await addStyle('/concept-final.css');
     await addScript('/concept-seasonal-config.js');
     for (const src of [
       '/concept-seasonal-core.js',
@@ -41,8 +42,7 @@
       '/concept-seasonal-advisor-result.js',
       '/concept-seasonal-advisor-completion.js',
       '/concept-seasonal-chat.js',
-      '/concept-seasonal-init.js',
-      '/coffee-premium-v2.js'
+      '/concept-seasonal-init.js'
     ]) await addScript(src);
   }
 

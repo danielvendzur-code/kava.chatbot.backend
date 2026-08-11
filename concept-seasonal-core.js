@@ -47,7 +47,8 @@
   const stateKey = 'concept-seasonal-state-v3';
   const defaultState = () => ({
     mode: 'chat', step: 0, answers: {}, stage: 'questions', selectedProduct: null,
-    packageGrams: null, grind: 'beans', transitioning: false, chatHistory: []
+    packageGrams: null, grind: 'beans', addon: false, inCart: false,
+    transitioning: false, chatHistory: []
   });
 
   let state = defaultState();

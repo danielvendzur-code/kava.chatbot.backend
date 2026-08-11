@@ -1,7 +1,7 @@
 (() => {
   'use strict';
   const app = window.ConceptSeasonalApp;
-  const { $, escapeHTML, icons, productById, rankings, persist, emit, animateMarks } = app;
+  const { $, $$, escapeHTML, icons, productById, rankings, persist, emit, animateMarks } = app;
   const { advisor } = app.refs;
 
   function resultProduct() {
@@ -21,31 +21,56 @@
     const product = resultProduct();
     app.state.selectedProduct = product.id;
     const alternative = list.find((item) => item.id !== product.id);
-    const upsell = product.packages?.find((pack) => pack.grams >= 1000);
     const image = product.productPhoto || product.photo;
     const alternativeImage = alternative?.productPhoto || alternative?.photo;
+    if (!app.state.packageGrams || !product.packages.some((pack) => pack.grams === app.state.packageGrams)) {
+      app.state.packageGrams = product.packages.find((pack) => pack.grams === 250)?.grams || product.packages[0].grams;
+    }
+    const selectedPack = product.packages.find((pack) => pack.grams === app.state.packageGrams);
+    const packLabel = (grams) => grams === 1000 ? '1 kg' : `${grams} g`;
+    const packPrice = (price) => `${price.toLocaleString('sk-SK', { minimumFractionDigits: price % 1 ? 2 : 0 })} €`;
     advisor.innerHTML = `
-      <div class="result-head"><span class="result-kicker">Odporúčanie podľa odpovedí</span><h2>Toto by som vám odporučil.</h2></div>
+      <div class="result-head"><span class="result-kicker">Vybrané podľa 4 odpovedí</span><h2>Vaša káva</h2></div>
       <section class="result-card" aria-label="Odporúčaná káva ${escapeHTML(product.name)}">
-        <div class="result-photo">
-          <img src="${escapeHTML(image)}" width="1024" height="1024" alt="Oficiálna produktová fotografia ${escapeHTML(product.name)}">
-          <div class="result-photo__copy"><small>${escapeHTML(product.country)} · ${escapeHTML(product.process)}</small><h3>${escapeHTML(product.name)}</h3><span>${escapeHTML(priceLabel(product))}</span></div>
+        <div class="result-main">
+          <div class="result-photo"><img src="${escapeHTML(image)}" width="1024" height="1024" alt="Produktová fotografia ${escapeHTML(product.name)}"></div>
+          <div class="result-main__copy"><small>${escapeHTML(product.country)} · ${escapeHTML(product.process)}</small><h3>${escapeHTML(product.name)}</h3><p>${escapeHTML(product.plainTaste)}</p><div class="taste-tags">${product.tags.slice(0, 3).map((tag) => `<span>${escapeHTML(tag)}</span>`).join('')}</div></div>
         </div>
-        <div class="result-body">
-          <div class="result-facts">
-            <div><span>Pôvod</span><p>${escapeHTML(product.region)}</p></div>
-            <div><span>Ako chutí</span><p>${escapeHTML(product.plainTaste)}</p></div>
-            <div><span>Príprava</span><p>${escapeHTML(product.suitable)}</p></div>
-          </div>
-          <div class="reason"><b>Prečo práve táto</b><p>${escapeHTML(product.reason)}</p></div>
-          <div class="result-actions"><a class="result-button result-button--primary" id="choosePack" href="${escapeHTML(product.url)}" target="_blank" rel="noreferrer">Vybrať balenie na e-shope ${icons.arrow}</a><button class="result-button" id="restartResult" type="button">Zmeniť odpovede</button></div>
-          ${alternative ? `<button class="alternative" type="button" data-product="${escapeHTML(alternative.id)}"><span>Ak chcete iný smer</span><span class="alternative__main"><img src="${escapeHTML(alternativeImage)}" alt=""><b>${escapeHTML(alternative.name)}</b><i>${icons.arrow}</i></span><small>${escapeHTML(alternative.tags.slice(0, 3).join(' · '))}</small></button>` : ''}
-          ${upsell ? `<a class="upsell-note" href="${escapeHTML(product.url)}" target="_blank" rel="noreferrer"><span><b>Pijete ju každý deň?</b> ${formatUpsell(upsell)} <u>pozrieť varianty</u></span>${icons.arrow}</a>` : ''}
-        </div>
+        <div class="result-packs"><span><small>Balenie</small><b>Vyberte veľkosť</b></span><div>${product.packages.map((pack) => `<button class="result-pack ${app.state.packageGrams === pack.grams ? 'is-selected' : ''}" type="button" data-grams="${pack.grams}"><b>${packLabel(pack.grams)}</b><small>${packPrice(pack.price)}</small></button>`).join('')}</div></div>
+        <button class="concept-upsell ${app.state.addon ? 'is-selected' : ''}" id="conceptAddon" type="button" aria-pressed="${app.state.addon}"><span class="concept-upsell__photos"><img src="/assets/concept/product-weithaga.jpg" alt=""><img src="/assets/concept/product-berry-blast.jpg" alt=""></span><span class="concept-upsell__copy"><small>Pridať navyše</small><b>Ochutnávková dvojica</b><span>2 sezónne kávy · 2 × 250 g</span></span><i>${app.state.addon ? icons.check : '+'}</i></button>
+        <div class="result-actions"><button class="result-button result-button--primary ${app.state.inCart ? 'is-added' : ''}" id="conceptAddCart" type="button">${app.state.inCart ? `${icons.check} Pridané do košíka` : `${icons.upsell} Pridať ${packLabel(selectedPack.grams)} do košíka`}</button><button class="result-button" id="customizePack" type="button">Mletie</button></div>
+        ${app.state.inCart ? `<div class="concept-cart"><span>${escapeHTML(product.name)} · ${packLabel(selectedPack.grams)}${app.state.addon ? ' + ochutnávková dvojica' : ''}</span><a href="${escapeHTML(product.url)}" target="_blank" rel="noreferrer">Otvoriť produkt ↗</a></div>` : ''}
+        ${alternative ? `<button class="alternative" type="button" data-product="${escapeHTML(alternative.id)}"><span class="alternative__main"><img src="${escapeHTML(alternativeImage)}" alt=""><span><small>Ďalšia dobrá voľba</small><b>${escapeHTML(alternative.name)}</b></span><i>${icons.arrow}</i></span></button>` : ''}
+        <button class="result-restart" id="restartResult" type="button">Zmeniť odpovede</button>
       </section>`;
+    $$('.result-pack', advisor).forEach((button) => button.addEventListener('click', () => {
+      app.state.packageGrams = Number(button.dataset.grams);
+      app.state.inCart = false;
+      persist();
+      renderResult();
+    }));
+    $('#conceptAddon').addEventListener('click', () => {
+      app.state.addon = !app.state.addon;
+      app.state.inCart = false;
+      persist();
+      renderResult();
+    });
+    $('#conceptAddCart').addEventListener('click', () => {
+      app.state.inCart = true;
+      persist();
+      renderResult();
+    });
+    $('#customizePack').addEventListener('click', () => {
+      app.state.stage = 'package';
+      persist();
+      app.renderAdvisor();
+    });
     $('#restartResult').addEventListener('click', app.resetAdvisor);
     $('.alternative', advisor)?.addEventListener('click', (event) => {
       app.state.selectedProduct = event.currentTarget.dataset.product;
+      app.state.packageGrams = null;
+      app.state.addon = false;
+      app.state.inCart = false;
       persist();
       renderResult();
       animateMarks('is-mark-result');
