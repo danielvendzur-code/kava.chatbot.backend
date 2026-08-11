@@ -187,7 +187,7 @@
   function renderAdvisor() {
     const question = questions[state.step];
     const selected = state.answers[question.key];
-    view.innerHTML = `<div class="pz-advisor-panel"><div class="pz-advisor-head"><button class="pz-back" id="pz-back" type="button" aria-label="Späť" ${state.step === 0 ? 'disabled' : ''}>${icons.back}</button><div class="pz-progress">${questions.map((_, index) => `<i class="${index < state.step ? 'is-done' : index === state.step ? 'is-active' : ''}"></i>`).join('')}</div><span id="stepLabel">${state.step + 1} z ${questions.length}</span></div><div class="pz-advisor-scroll"><div class="pz-advisor-copy"><small>${question.label}</small><h2>${question.title}</h2><p>${question.help}</p></div><div class="pz-options">${question.options.map(([value, title, help], index) => `<button class="pz-option ${selected === value ? 'is-selected' : ''}" data-value="${value}" type="button" aria-pressed="${selected === value}" style="--delay:${index * 45}ms;${spritePosition(index, state.step)}"><span class="pz-option-photo" role="img" aria-label="${escapeHtml(title)}"></span><span class="pz-option-copy"><b>${escapeHtml(title)}</b><small>${escapeHtml(help)}</small></span><i>${selected === value ? icons.check : '+'}</i></button>`).join('')}</div><p class="pz-auto-note" aria-live="polite">Po výbere automaticky pokračujeme.</p></div></div>`;
+    view.innerHTML = `<div class="pz-advisor-panel"><div class="pz-advisor-head"><button class="pz-back" id="pz-back" type="button" aria-label="Späť" ${state.step === 0 ? 'disabled' : ''}>${icons.back}</button><div class="pz-progress">${questions.map((_, index) => `<i class="${index < state.step ? 'is-done' : index === state.step ? 'is-active' : ''}"></i>`).join('')}</div><span id="stepLabel">${state.step + 1} z ${questions.length}</span></div><div class="pz-advisor-scroll"><div class="pz-advisor-copy"><small>${question.label}</small><h2>${question.title}</h2></div><div class="pz-options">${question.options.map(([value, title, help], index) => `<button class="pz-option ${selected === value ? 'is-selected' : ''}" data-value="${value}" type="button" aria-pressed="${selected === value}" style="--delay:${index * 45}ms;${spritePosition(index, state.step)}"><span class="pz-option-photo" role="img" aria-label="${escapeHtml(title)}"></span><span class="pz-option-copy"><b>${escapeHtml(title)}</b><small>${escapeHtml(help)}</small></span><i>${selected === value ? icons.check : '+'}</i></button>`).join('')}</div></div></div>`;
     view.querySelectorAll('.pz-option').forEach(option => {
       option.onclick = () => {
         if (state.transitioning) return;
@@ -200,7 +200,6 @@
           candidate.querySelector(':scope > i').innerHTML = on ? icons.check : '+';
           candidate.disabled = true;
         });
-        view.querySelector('.pz-auto-note')?.classList.add('is-visible');
         const delay = matchMedia('(prefers-reduced-motion: reduce)').matches ? 10 : 300;
         setTimeout(advanceQuestion, delay);
       };
