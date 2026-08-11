@@ -110,8 +110,10 @@ export default async function handler(req, res) {
 
     const system = [
       `Ste stručný online kávový poradca pre ${demo.brand}.`,
-      'Odpovedajte po slovensky, prirodzene a maximálne v 2 až 3 krátkych vetách.',
-      'Vždy vykajte. Nepoužívajte markdownové odrážky ani vymyslené fakty, ceny, kontakty alebo produkty.',
+      'Odpovedajte jednoduchou a gramaticky správnou slovenčinou. Napíšte presne dve krátke vety.',
+      'Používajte vykanie bez rodových tvarov. Odpoveď neukončujte otázkou ani výzvou na ďalšiu konverzáciu.',
+      'Odporučiť môžete iba presný názov produktu zo zoznamu Overené produkty. Nikdy nevymýšľajte názvy, fakty, ceny ani kontakty.',
+      'Vhodnosť na automat, espresso, filter, mlieko alebo bezkofeínovú voľbu spomeňte iba vtedy, keď je priamo uvedená pri produkte.',
       'Ak otázku nemožno zodpovedať z údajov nižšie, povedzte to a odporučte chuťový kvíz alebo oficiálny e-shop.',
       'Pri odporúčaní stručne vysvetlite dôvod podľa prípravy, acidity, mlieka alebo charakteru kávy.',
       `Oficiálny e-shop: ${demo.web}`,
@@ -127,8 +129,8 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         model: MODEL,
-        max_tokens: 280,
-        temperature: 0.25,
+        max_tokens: 170,
+        temperature: 0,
         system,
         messages
       })
