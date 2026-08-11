@@ -7,14 +7,20 @@
   function setOwnerPage() {
     const headerBrand = document.querySelector('.brand-link');
     if (headerBrand) {
-      headerBrand.href = 'https://mojchatbot.sk';
-      headerBrand.innerHTML = '<span class="diamonds-solution-brand"><small>Ukážka riešenia</small><b>mojchatbot.sk</b><i>↗</i></span>';
+      headerBrand.href = 'https://diroastery.sk/';
+      headerBrand.classList.add('diamonds-company-brand');
+      headerBrand.innerHTML = '<img src="/assets/diamonds/diroastery-logo.svg" alt="Diamonds Roastery">';
     }
 
     const badge = document.querySelector('.owner-context');
     if (badge) {
-      badge.innerHTML = 'Návrh pre Diamonds Roastery';
-      badge.classList.add('diamonds-owner-badge');
+      const ownerLink = document.createElement('a');
+      ownerLink.className = 'owner-context diamonds-owner-badge';
+      ownerLink.href = 'https://mojchatbot.sk';
+      ownerLink.target = '_blank';
+      ownerLink.rel = 'noreferrer';
+      ownerLink.innerHTML = 'mojchatbot.sk <span aria-hidden="true">↗</span>';
+      badge.replaceWith(ownerLink);
     }
 
     const copy = document.querySelector('.owner-copy');

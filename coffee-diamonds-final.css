@@ -15,11 +15,14 @@ html, body { background:#fff !important; }
 }
 .diamonds-page::before { display:none !important; }
 .diamonds-page .site-head { width:100% !important; height:78px !important; align-items:center !important; border-bottom:1px solid var(--diamonds-line) !important; }
+.diamonds-page .diamonds-company-brand { width:154px; height:42px; display:flex; align-items:center; color:var(--diamonds-ink); }
+.diamonds-page .diamonds-company-brand img { width:154px; height:42px; display:block; object-fit:contain; object-position:left center; }
 .diamonds-solution-brand { position:relative; display:grid; gap:2px; padding-right:22px; color:var(--diamonds-ink); }
 .diamonds-solution-brand small { color:#789d0e; font-size:8px; font-weight:900; letter-spacing:.14em; text-transform:uppercase; }
 .diamonds-solution-brand b { font:850 18px/1.05 Manrope,sans-serif; letter-spacing:-.04em; }
 .diamonds-solution-brand i { position:absolute; right:0; bottom:1px; color:#789d0e; font-size:13px; font-style:normal; font-weight:900; }
-.diamonds-page .owner-context.diamonds-owner-badge { min-height:38px; display:inline-flex !important; align-items:center; padding:0 14px; border:1px solid var(--diamonds-line); border-radius:999px; color:var(--diamonds-ink); background:#fff; font-size:9px; font-weight:850; }
+.diamonds-page .owner-context.diamonds-owner-badge { min-height:38px; display:inline-flex !important; align-items:center; gap:7px; padding:0 14px; border:1px solid var(--diamonds-line); border-radius:999px; color:var(--diamonds-ink); background:#fff; font-size:9px; font-weight:850; text-decoration:none; }
+.diamonds-page .owner-context.diamonds-owner-badge:hover { border-color:var(--diamonds-ink); background:var(--diamonds-soft); }
 
 .diamonds-page .owner-hero { width:100% !important; min-height:0 !important; grid-template-columns:minmax(0,1.08fr) minmax(410px,.82fr) !important; gap:clamp(44px,6vw,88px) !important; padding:23px 0 !important; }
 .diamonds-page .owner-copy { max-width:680px !important; }
@@ -54,7 +57,8 @@ html, body { background:#fff !important; }
 .launcher { right:max(22px,env(safe-area-inset-right)) !important; bottom:max(22px,env(safe-area-inset-bottom)) !important; }
 .launcher-button { width:64px !important; height:64px !important; padding:7px !important; border:3px solid #fff !important; border-radius:50% !important; background:var(--diamonds-ink) !important; box-shadow:0 21px 44px -18px rgba(10,11,9,.8),0 0 0 2px rgba(185,230,60,.8) !important; }
 .launcher-button > i { right:1px !important; bottom:2px !important; width:12px !important; height:12px !important; border:3px solid #fff; box-shadow:none !important; }
-.teaser { width:226px !important; min-height:72px !important; padding:13px 38px 12px 15px !important; border-radius:18px 18px 6px 18px !important; background:#fff !important; }
+.teaser { width:226px !important; min-height:72px !important; display:grid !important; align-content:center; padding:13px 38px 12px 15px !important; border-radius:18px 18px 6px 18px !important; background:#fff !important; opacity:1 !important; transform:none !important; pointer-events:auto !important; }
+.teaser.is-hidden { display:none !important; }
 .teaser strong { font-size:10.5px !important; }
 .teaser span { font-size:8px !important; }
 
