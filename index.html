@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <meta name="theme-color" content="#173f35">
+  <meta name="theme-color" content="#100c0a">
   <meta name="robots" content="noindex,nofollow">
-  <title>Pražiarnička – nájdite svoju kávu</title>
-  <meta name="description" content="Nájdite čerstvo praženú kávu podľa svojej chuti a spôsobu prípravy.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23173f35'/%3E%3Cpath d='M35 13c-16 7-19 27-7 38 14-4 22-20 15-33-2-4-5-6-8-5Z' fill='%23f8f2e8'/%3E%3C/svg%3E">
+  <title>Ukážka kávového poradcu</title>
+  <meta name="description" content="Interaktívna ukážka poradcu pre výber kávy.">
+  <link rel="icon" href="/brand/praziarnicka-icon-official.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
@@ -16,11 +16,12 @@
     (() => {
       const parts = location.pathname.split('/').filter(Boolean);
       const last = parts.at(-1) || 'praziarnicka';
-      const slug = last === 'index.html' || last === 'ukazka' ? 'praziarnicka' : last;
+      const queryDemo = new URLSearchParams(location.search).get('demo');
+      const slug = queryDemo || (last === 'index.html' || last === 'ukazka' ? 'praziarnicka' : last);
       window.COFFEE_DEMO_SLUG = slug;
       const styles = slug === 'praziarnicka'
-        ? ['/praziarnicka-v11.css', '/praziarnicka-jolka-scale.css']
-        : ['/coffee-v8.css', '/coffee-v8-refine.css'];
+        ? ['/praziarnicka-v12.css']
+        : ['/coffee-v8.css', '/coffee-v8-refine.css', '/coffee-premium-v2.css'];
       styles.forEach((href) => {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
@@ -29,7 +30,6 @@
       });
     })();
   </script>
-  <link rel="stylesheet" href="/coffee-premium-v2.css">
 </head>
 <body>
   <div id="praziarnicka-root"></div>
@@ -40,8 +40,8 @@
     (() => {
       const slug = window.COFFEE_DEMO_SLUG || 'praziarnicka';
       const scripts = slug === 'praziarnicka'
-        ? ['/praziarnicka-v11.js']
-        : ['/coffee-configs.js', '/coffee-brand-overrides.js', '/coffee-v8.js', '/coffee-v8-patch.js'];
+        ? ['/praziarnicka-v12.js']
+        : ['/coffee-configs.js', '/coffee-brand-overrides.js', '/coffee-v8.js', '/coffee-v8-patch.js', '/coffee-premium-v2.js'];
       const load = (src) => new Promise((resolve, reject) => {
         const script = document.createElement('script');
         script.src = src;
@@ -56,6 +56,5 @@
         });
     })();
   </script>
-  <script src="/coffee-premium-v2.js"></script>
 </body>
 </html>
