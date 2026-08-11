@@ -145,8 +145,9 @@ export default async function handler(req, res) {
     const reply = Array.isArray(data.content)
       ? data.content.filter((block) => block.type === 'text').map((block) => block.text).join('').trim()
       : '';
+    const cleanReply = reply.replace(/[\u002a_\u0060#]/g, '').replace(/\s+/g, ' ').trim();
 
-    return res.status(200).json({ reply: reply || 'Najpresnejšie odporúčanie získate cez krátky výber kávy.' });
+    return res.status(200).json({ reply: cleanReply || 'Najpresnejšie odporúčanie získate cez krátky výber kávy.' });
   } catch (error) {
     console.error('coffee chat error', error);
     return res.status(500).json({ error: 'Chat failed' });
