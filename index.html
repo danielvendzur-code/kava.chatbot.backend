@@ -28,6 +28,7 @@
     })();
   </script>
   <link rel="stylesheet" href="/coffee-premium-v2.css">
+  <link rel="stylesheet" href="/coffee-diamonds-final.css">
 </head>
 <body>
   <div id="coffee-demo-root"></div>
@@ -47,6 +48,14 @@
           const followUp = document.createElement('script');
           followUp.src = diamonds ? '/coffee-v8-diamonds-controller.js' : '/coffee-v8-patch.js';
           followUp.async = false;
+          if (diamonds) {
+            followUp.addEventListener('load', () => {
+              const finalPass = document.createElement('script');
+              finalPass.src = '/coffee-diamonds-final.js';
+              finalPass.async = false;
+              document.body.append(finalPass);
+            }, { once: true });
+          }
           document.body.append(followUp);
         }, { once: true });
         document.body.append(entry);
@@ -63,6 +72,5 @@
       }
     })();
   </script>
-  <script src="/coffee-premium-v2.js"></script>
 </body>
 </html>
