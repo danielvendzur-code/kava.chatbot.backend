@@ -1,30 +1,16 @@
-/* Final Jolka pass: clear owner demo, natural product imagery, compact commerce. */
+/* Small functional additions that preserve the original Jolka art direction. */
 :root{--jolka-coral:#df704a;--jolka-deep:#103b32;--jolka-cream:#fffaf3}
 
-.solution-brand{position:relative;display:grid;gap:2px;padding-right:25px;color:var(--jolka-deep);text-decoration:none}
-.solution-brand>span{color:var(--jolka-coral);font-size:9px;font-weight:850;letter-spacing:.14em;text-transform:uppercase}
-.solution-brand>strong{font:800 18px/1.05 var(--display);letter-spacing:-.035em}
-.solution-brand>svg{position:absolute;right:0;bottom:2px;width:14px;height:14px;color:var(--jolka-coral)}
-.owner-badge{display:inline-flex!important;border-radius:999px!important;background:rgba(255,255,255,.72)!important}
+.landing__footer a{color:inherit;font-weight:850;text-decoration:none}
 
-.hero__copy>.eyebrow{display:inline-flex!important;margin:0 0 16px!important;color:var(--jolka-coral)!important;font-size:10px!important;font-weight:850!important;line-height:1.2!important;letter-spacing:.12em!important;text-transform:uppercase!important}
-.hero__copy>.eyebrow::before{background:var(--jolka-coral)}
-.hero__copy>h1{max-width:670px!important;font-size:clamp(44px,4.9vw,68px)!important}
-.hero__copy>p:not(.eyebrow){max-width:600px!important;margin-top:20px!important;color:#50655e!important;font-size:16px!important;line-height:1.55!important}
-.owner-benefits{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:0!important;margin-top:27px!important;border-top:1px solid var(--line)!important;border-bottom:1px solid var(--line)!important}
-.owner-benefits article{min-height:82px!important;display:grid!important;grid-template-columns:24px minmax(0,1fr)!important;align-content:center!important;align-items:start!important;gap:9px!important;padding:14px 12px!important;border:0!important;border-right:1px solid var(--line)!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
-.owner-benefits article:first-child{padding-left:0!important}.owner-benefits article:last-child{border-right:0!important}
-.owner-benefits i{width:24px;height:24px;display:grid;place-items:center;border-radius:50%;color:var(--jolka-coral);background:#f3ece2;font-size:7px;font-style:normal;font-weight:900}
-.owner-benefits b{display:block;font-size:10px!important;line-height:1.2}.owner-benefits span{display:block;margin-top:4px;color:#66766f!important;font-size:8px!important;line-height:1.38!important}
-.primary-cta{background:var(--jolka-deep)!important}.primary-cta:hover{background:var(--jolka-coral)!important}
-.landing__footer a{color:var(--jolka-deep);font-weight:850}
+/* Reveal the original explanation cards on desktop; keep the mobile landing light. */
+@media(min-width:941px){
+  .owner-badge{display:inline-flex!important}
+  .owner-benefits{display:grid!important}
+}
 
-.teaser{display:block!important;width:244px!important;min-height:74px!important;bottom:91px!important;border-radius:20px 20px 7px 20px!important;background:#fff!important}
-.teaser__content{min-height:74px!important}.teaser__content b{font-size:12px}.teaser__content span{font-size:9px}
-
-.chat-advisor-cta{border:1px solid rgba(255,255,255,.11)!important;background:linear-gradient(110deg,#174c40,var(--jolka-deep))!important;transition:transform .22s var(--ease),background .22s ease!important}
-.chat-advisor-cta:hover{transform:translateY(-1px);background:linear-gradient(110deg,var(--jolka-coral),#c75a38)!important}
-.quick-questions button{border-color:rgba(223,112,74,.48)!important;color:var(--jolka-deep)!important;background:#fff7ef!important}
+/* Match the original dark Jolka chat chips; coral appears only as interaction feedback. */
+.quick-questions button{border-color:rgba(255,255,255,.24)!important;color:#fff!important;background:rgba(255,255,255,.045)!important}
 .quick-questions button:hover,.quick-questions button:disabled{border-color:var(--jolka-coral)!important;color:#fff!important;background:var(--jolka-coral)!important}
 
 .option{min-height:0!important;grid-template-columns:1fr!important;grid-template-rows:auto auto!important;gap:7px!important;padding:6px!important}
@@ -49,16 +35,10 @@
 .jolka-cart{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 12px 10px;padding:9px 11px;border-radius:13px;color:#66766f;background:#eef4ed;font-size:7.5px}.jolka-cart a{flex:0 0 auto;color:var(--jolka-deep);font-weight:900;text-decoration:none}
 .package-note{font-size:8.5px!important}
 
-@media(max-width:940px){.owner-benefits{display:grid!important}.hero__copy>h1{font-size:clamp(42px,8vw,62px)!important}}
 @media(max-width:640px){
-  .solution-brand>span{font-size:7px}.solution-brand>strong{font-size:15px}.owner-badge{font-size:7px!important}
-  .hero__copy>.eyebrow{font-size:8px!important}.hero__copy>h1{font-size:clamp(38px,11vw,50px)!important}.hero__copy>p:not(.eyebrow){font-size:13px!important}
-  .owner-benefits{grid-template-columns:repeat(3,minmax(0,1fr))!important}.owner-benefits article{display:block!important;min-height:88px!important;padding:11px 7px!important}.owner-benefits article:first-child{padding-left:0!important}.owner-benefits i{width:20px;height:20px;margin-bottom:7px}.owner-benefits b{font-size:8.5px!important}.owner-benefits span{font-size:6.8px!important}
-  .teaser{display:block!important;bottom:81px!important;width:218px!important}
   .options,.options--5{grid-template-columns:1fr!important}
   .option,.options--5 .option:first-child,.options--5>button:nth-last-child(1):nth-child(odd){min-height:82px!important;grid-template-columns:82px minmax(0,1fr)!important;grid-template-rows:1fr!important;align-items:center!important;padding:6px 35px 6px 6px!important}
   .option .option__visual,.options--5 .option:first-child .option__visual,.options--5>button:nth-last-child(1):nth-child(odd) .option__visual{grid-column:1!important;grid-row:1!important;width:82px!important;height:68px!important;aspect-ratio:auto!important}
   .option .option__copy,.options--5 .option:first-child .option__copy,.options--5>button:nth-last-child(1):nth-child(odd) .option__copy{grid-column:2!important;grid-row:1!important;padding:0!important}
   .result-actions{grid-template-columns:1fr!important}.jolka-cart{align-items:flex-start;flex-direction:column}
 }
-@media(max-width:370px){.owner-badge{display:none!important}.owner-benefits span{display:none}.owner-benefits article{min-height:58px!important}}
