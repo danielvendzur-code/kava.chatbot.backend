@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#173a32">
   <meta name="robots" content="noindex,nofollow,noarchive">
-  <title>Pražiareň Jolka – nájdite svoju kávu</title>
-  <meta name="description" content="Vyberte si kávu Jolka podľa chuti, prípravy a obľúbeného nápoja.">
+  <title>Návrh AI chatbota pre Pražiareň Jolka</title>
+  <meta name="description" content="Interaktívny návrh AI poradcu, ktorý odpovedá na otázky a pomáha vybrať kávu Pražiarne Jolka.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22><rect width=%2264%22 height=%2264%22 rx=%2218%22 fill=%22%230b493e%22/><path d=%22M18 37c0-13 8-22 18-22 8 0 14 6 14 14 0 12-10 22-21 23-6 1-11-6-11-15Z%22 fill=%22%23cbe0c5%22/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,49 +15,48 @@
   <link rel="stylesheet" href="/jolka-experience.css">
   <link rel="stylesheet" href="/jolka-premium.css">
   <link rel="stylesheet" href="/coffee-premium-v2.css">
+  <link rel="stylesheet" href="/jolka-final.css">
 </head>
 <body>
   <main class="landing" aria-label="Pražiareň Jolka">
     <header class="landing__header">
-      <div class="brand" aria-label="Pražiareň Jolka">
-        <span class="brand__mark" data-jolka-mark></span>
-        <span class="brand__copy">
-          <strong>Pražiareň Jolka</strong>
-          <small>výberová káva a obľúbené zmesi</small>
-        </span>
-      </div>
-      <span class="owner-badge"><i></i> Pražíme v Bratislave</span>
+      <a class="solution-brand" href="https://mojchatbot.sk" target="_blank" rel="noreferrer">
+        <span>Ukážka riešenia</span><strong>mojchatbot.sk</strong>
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 13v6H5V6h6"/></svg>
+      </a>
+      <span class="owner-badge">Návrh pre Pražiareň Jolka</span>
     </header>
 
     <section class="hero">
       <div class="hero__copy">
-        <h1>Nájdite kávu, na ktorú sa budete tešiť.</h1>
-        <p>Od čokoládovej klasiky po ovocný filter. Krátky výber vás privedie ku káve, ktorá sedí vašej chuti aj príprave.</p>
+        <p class="eyebrow">Návrh AI chatbota pre Pražiareň Jolka</p>
+        <h1>Pomôže vybrať kávu. A dokončí nákup.</h1>
+        <p>Zákazník odpovie na štyri otázky o chuti a príprave. Poradca odporučí konkrétnu kávu, balenie aj mletie a pripraví ju do košíka.</p>
 
-        <div class="owner-benefits" aria-label="Výber kávy Jolka">
-          <article><b>Klasické zmesi</b><span>Plná čokoládová chuť do espressa aj mlieka.</span></article>
-          <article><b>Ovocné výberovky</b><span>Svieže kávy pre filter a objavovanie nových chutí.</span></article>
-          <article><b>Výber na mieru</b><span>Štyri krátke odpovede a konkrétne odporúčanie.</span></article>
+        <div class="owner-benefits" aria-label="Čo AI poradca dokáže">
+          <article><i>01</i><div><b>Odpovie 24/7</b><span>Pomôže aj mimo otváracích hodín.</span></div></article>
+          <article><i>02</i><div><b>Vyberie kávu</b><span>Štyri otázky podľa chuti a prípravy.</span></div></article>
+          <article><i>03</i><div><b>Zvýši objednávku</b><span>Ponúkne balenie, mletie alebo ochutnávku.</span></div></article>
         </div>
 
         <div class="hero__actions">
           <button class="primary-cta" id="heroOpen" type="button">
-            Nájsť svoju kávu
+            Vyskúšať poradcu
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
           </button>
-          <span>4 krátke otázky · výsledok do minúty</span>
+          <span>Chat aj výber kávy v jednej ukážke</span>
         </div>
       </div>
 
       <aside class="owner-preview" aria-label="Odporúčanie kávy">
         <div class="owner-preview__header">
-          <div><small>Osobný výber</small><b>Káva podľa vašej chuti</b></div>
-          <span><i></i> poradca online</span>
+          <div><small>Ako vyzerá výsledok</small><b>Odporúčanie pre zákazníka</b></div>
+          <span>po 4 otázkach</span>
         </div>
 
         <div class="preview-chat">
           <div class="preview-chat__avatar" data-jolka-mark></div>
-          <div class="preview-chat__bubble">Hľadáte bezpečnú klasiku, ovocný filter alebo niečo netradičné?</div>
+          <div class="preview-chat__bubble">Hľadám jemnú kávu do espressa bez výraznej kyslosti.</div>
         </div>
 
         <div class="preview-products">
@@ -86,8 +85,8 @@
     </section>
 
     <footer class="landing__footer">
-      <span>Pražiareň Jolka · Bratislava – Ružinov</span>
-      <a href="https://www.praziarenjolka.sk/shop/" target="_blank" rel="noreferrer">Pozrieť ponuku</a>
+      <span>Interaktívny návrh pre Pražiareň Jolka</span>
+      <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk ↗</a>
     </footer>
   </main>
 
@@ -95,8 +94,8 @@
     <div class="teaser" id="teaser">
       <button class="teaser__close" id="closeTeaser" type="button" aria-label="Skryť správu">×</button>
       <button class="teaser__content" id="openFromTeaser" type="button">
-        <b>Nájdeme vám kávu</b>
-        <span>Stačia štyri krátke odpovede.</span>
+        <b>Vyskúšajte AI poradcu</b>
+        <span>Chat aj výber kávy.</span>
       </button>
     </div>
     <button class="launcher__button" id="openWidget" type="button" aria-label="Otvoriť poradcu Jolka" aria-expanded="false">
@@ -169,6 +168,5 @@
 
   <script src="/jolka-data.js"></script>
   <script src="/jolka.js"></script>
-  <script src="/coffee-premium-v2.js"></script>
 </body>
 </html>

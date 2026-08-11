@@ -24,6 +24,8 @@
     selectedProduct: null,
     weight: null,
     grind: "beans",
+    addon: false,
+    inCart: false,
     transitioning: false,
     chatHistory: [],
     lastFocused: null,
@@ -179,7 +181,7 @@
     advisor.innerHTML = `
       <div class="question-head"><small>${question.name}</small><h2>${question.title}</h2></div>
       <div class="options options--${question.options.length}">
-        ${question.options.map(([value, label, description, visualKey], index) => `<button class="option ${selected === value ? "is-selected" : selected ? "is-muted" : ""}"type="button"data-value="${value}"style="--delay:${index * 55}ms">${optionVisual(question, visualKey)}<span class="option__copy"><b>${label}</b><small>${description}</small></span><span class="option__state">${selected === value ? icons.check : icons.next}</span></button>`).join("")}
+        ${question.options.map(([value, label, description, visualKey], index) => `<button class="option ${selected === value ? "is-selected" : selected ? "is-muted" : ""}"type="button"data-value="${value}"style="--delay:${index * 55}ms">${index === 0 ? '<span class="mc-top">TOP</span>' : ""}${optionVisual(question, visualKey)}<span class="option__copy"><b>${label}</b><small>${description}</small></span><span class="option__state">${selected === value ? icons.check : icons.next}</span></button>`).join("")}
       </div>`;
     $$(".option", advisor).forEach((button) =>
       button.addEventListener("click", () =>
@@ -213,6 +215,11 @@
       ranked.find((item) => item.id === state.selectedProduct) || best;
     state.selectedProduct = selected.id;
     const alternative = ranked.find((item) => item.id !== selected.id);
+    if (!state.weight || !selected.weights.includes(state.weight)) {
+      state.weight = selected.weights.includes(500)
+        ? 500
+        : selected.weights[selected.weights.length - 1];
+    }
     advisor.innerHTML = `
       <div class="result-head"><small>Osobné odporúčanie</small><h2>${selected.id === best.id ? "Táto káva vám sedí najviac" : "Alternatívna voľba"}</h2></div>
       <section class="result-card">
@@ -221,18 +228,35 @@
           <b>${selected.price}</b>
         </div>
         <div class="result-product">${productPhoto(selected, "result-product__photo")}<div><h3>${selected.name}</h3><span class="result-product__origin">${selected.origin}</span><div class="taste-tags">${selected.tones.map((tone) => `<span>${tone}</span>`).join("")}</div></div></div>
-        <div class="result-facts"><article><small>Acidita normálne</small><b>${selected.acidityText}</b></article><article><small>Najlepšia príprava</small><b>${selected.prepText}</b></article></div>
+        <div class="result-facts"><article><small>Acidita</small><b>${selected.acidityText}</b></article><article><small>Najlepšia príprava</small><b>${selected.prepText}</b></article></div>
         <div class="result-reason"><b>Prečo práve táto</b><p>${selected.reason}</p></div>
-        <div class="result-actions"><a class="result-actions__primary" href="${selected.url}" target="_blank" rel="noreferrer">🛒 Do košíka</a><button class="result-actions__secondary" id="choosePackage" type="button">Vybrať balenie</button></div>
-        ${alternative ? `<div class="alternative-card"><div><small>Jedna alternatíva</small><b>${alternative.name}·${alternative.tones.slice(0, 2).join(" · ")}</b></div><button type="button"data-alternative="${alternative.id}">Porovnať</button></div>` : ""}
+        <button class="jolka-upsell ${state.addon ? "is-selected" : ""}" id="jolkaAddon" type="button" aria-pressed="${state.addon}">
+          <span class="jolka-upsell__photos"><img src="/assets/jolka/sidamo.png" alt=""><img src="/assets/jolka/vietnam.png" alt=""></span>
+          <span class="jolka-upsell__copy"><small>Pridať navyše</small><b>Ochutnávková dvojica</b><span>Sidamo + Vietnam · 2 × 75 g</span></span>
+          <i>${state.addon ? icons.check : "+"}</i>
+        </button>
+        <div class="result-actions"><button class="result-actions__primary ${state.inCart ? "is-added" : ""}" id="addToCart" type="button">${state.inCart ? `${icons.check} Pridané do košíka` : `${icons.shop} Pridať ${weightLabel(state.weight)} do košíka`}</button><button class="result-actions__secondary" id="choosePackage" type="button">Balenie a mletie</button></div>
+        ${state.inCart ? `<div class="jolka-cart"><span>${selected.name} · ${weightLabel(state.weight)}${state.addon ? " + ochutnávková dvojica" : ""}</span><a href="${selected.url}" target="_blank" rel="noreferrer">Otvoriť produkt ↗</a></div>` : ""}
+        ${alternative ? `<div class="alternative-card"><div><small>Jedna alternatíva</small><b>${alternative.name} · ${alternative.tones.slice(0, 2).join(" · ")}</b></div><button type="button"data-alternative="${alternative.id}">Porovnať</button></div>` : ""}
       </section>`;
+    $("#jolkaAddon").addEventListener("click", () => {
+      state.addon = !state.addon;
+      state.inCart = false;
+      renderResult();
+    });
+    $("#addToCart").addEventListener("click", () => {
+      state.inCart = true;
+      renderResult();
+    });
     $("#choosePackage").addEventListener("click", () => {
       state.stage = "package";
-      state.weight = null;
       renderAdvisor();
     });
     $("[data-alternative]", advisor)?.addEventListener("click", (event) => {
       state.selectedProduct = event.currentTarget.dataset.alternative;
+      state.weight = null;
+      state.addon = false;
+      state.inCart = false;
       renderResult();
     });
     emit("recommendation_view", { product: selected.id });
@@ -246,10 +270,11 @@
       <div class="select-field"><label for="grindSelect">Mletie</label><select id="grindSelect">${grinds.map(([value, label]) => `<option value="${value}"${state.grind === value ? " selected" : ""}>${label}</option>`).join("")}</select></div>
       <div class="order-summary"><div><span>Káva</span><b>${product.name}</b></div><div><span>Balenie</span><b>${state.weight ? weightLabel(state.weight) : "vyberte"}</b></div><div><span>Mletie</span><b>${grinds.find(([value]) => value === state.grind)[1]}</b></div><div><span>Cena na webe</span><b>${product.price}</b></div></div>
       <button class="product-link" id="finishSelection" type="button" ${state.weight ? "" : "disabled"}>${icons.check} Dokončiť výber</button>
-      <p class="package-note">Poradca nemení cenu ani sklad. Po dokončení otvorí konkrétny produkt Pražiarne Jolka.</p>`;
+      <p class="package-note">Balenie a mletie sa prenesú ku konkrétnemu produktu.</p>`;
     $$(".package-option", advisor).forEach((button) =>
       button.addEventListener("click", () => {
         state.weight = Number(button.dataset.weight);
+        state.inCart = false;
         renderPackage();
       }),
     );
@@ -259,6 +284,7 @@
     });
     $("#finishSelection").addEventListener("click", () => {
       if (state.weight) {
+        state.inCart = true;
         state.stage = "success";
         renderAdvisor();
       }
@@ -272,7 +298,7 @@
       <div class="success">
         <div class="success__icon">${icons.check}</div>
         <h2>Výber je pripravený</h2>
-        <p><b>${product.name}</b><br>${weightLabel(state.weight)} · ${grind}</p>
+        <p><b>${product.name}</b><br>${weightLabel(state.weight)} · ${grind}${state.addon ? "<br>+ ochutnávková dvojica" : ""}</p>
         <a class="product-link" href="${product.url}" target="_blank" rel="noreferrer">${icons.shop} Otvoriť konkrétny produkt</a>
         <button class="result-actions__secondary" id="startAgain" type="button">Vybrať inú kávu</button>
       </div>`;
@@ -298,6 +324,8 @@
     state.selectedProduct = null;
     state.weight = null;
     state.grind = "beans";
+    state.addon = false;
+    state.inCart = false;
     state.transitioning = false;
     renderAdvisor();
     emit("advisor_reset");
@@ -314,7 +342,17 @@
     const bubble = document.createElement("div");
     bubble.className = "message__bubble";
     bubble.textContent = text;
-    row.appendChild(bubble);
+    const stack = document.createElement("div");
+    stack.className = `mc-message-stack${user ? " mc-message-stack--user" : ""}`;
+    const stamp = document.createElement("time");
+    stamp.className = "mc-timestamp";
+    stamp.dateTime = new Date().toISOString();
+    stamp.textContent = new Intl.DateTimeFormat("sk-SK", {
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(new Date());
+    stack.append(bubble, stamp);
+    row.appendChild(stack);
     chat.appendChild(row);
     requestAnimationFrame(() => {
       chat.scrollTop = chat.scrollHeight;
