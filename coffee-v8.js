@@ -209,7 +209,7 @@
   }
   function renderQuestion() {
     const q = questions[state.step]; const selected = state.answers[q.key];
-    advisor.innerHTML = `<div class="question"><span>${esc(q.name)}</span><h2>${esc(q.title)}</h2><p>Vyberte jednu možnosť. Hneď potom pokračujeme.</p></div><div class="options ${selected ? 'has-selection' : ''}">${q.options.map(([value,label,desc,iconName], index) => `<button class="option ${selected === value ? 'is-selected' : ''}" type="button" data-value="${esc(value)}" aria-pressed="${selected === value}" style="--delay:${index * 55}ms"><span class="option__photo option__photo--${esc(value)}">${icons[iconName] || icons.spark}</span><span class="option__copy"><b>${esc(label)}</b><small>${esc(desc)}</small></span><span class="option__state">${selected === value ? icons.check : icons.next}</span></button>`).join('')}</div><p class="auto-advance-note" aria-live="polite">Po výbere automaticky pokračujeme.</p>`;
+    advisor.innerHTML = `<div class="question"><span>${esc(q.name)}</span><h2>${esc(q.title)}</h2></div><div class="options ${selected ? 'has-selection' : ''}">${q.options.map(([value,label,desc,iconName], index) => `<button class="option ${selected === value ? 'is-selected' : ''}" type="button" data-value="${esc(value)}" aria-pressed="${selected === value}" style="--delay:${index * 55}ms"><span class="option__photo option__photo--${esc(value)}">${icons[iconName] || icons.spark}</span><span class="option__copy"><b>${esc(label)}</b><small>${esc(desc)}</small></span><span class="option__state">${selected === value ? icons.check : icons.next}</span></button>`).join('')}</div>`;
     $$('.option', advisor).forEach((button) => button.addEventListener('click', () => selectAnswer(button.dataset.value)));
   }
   function selectAnswer(value) {
@@ -224,7 +224,6 @@
       button.disabled = true;
       button.querySelector('.option__state').innerHTML = selected ? icons.check : icons.next;
     });
-    advisor.querySelector('.auto-advance-note')?.classList.add('is-visible');
     emit('advisor_answer',{step:q.key,value});
     const delay = matchMedia('(prefers-reduced-motion: reduce)').matches ? 10 : 300;
     setTimeout(advanceQuestion, delay);
