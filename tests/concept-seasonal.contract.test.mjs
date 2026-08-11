@@ -51,7 +51,7 @@ test('selection is guarded and advances automatically once', () => {
   assert.match(selectAnswer, /state\.transitioning/);
   assert.match(selectAnswer, /setTimeout\(advanceQuestion, delay\)/);
   assert.match(flow, /button\.disabled = true/);
-  assert.match(flow, /auto-advance-note/);
+  assert.doesNotMatch(flow, /auto-advance-note/);
 });
 
 test('current products and direct URLs remain grounded', () => {

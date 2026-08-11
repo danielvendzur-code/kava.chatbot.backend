@@ -16,7 +16,7 @@
     const question = questions[app.state.step];
     const selected = app.state.answers[question.key];
     advisor.innerHTML = `
-      <div class="question"><span class="question__kicker">${escapeHTML(question.name)}</span><h2>${escapeHTML(question.title)}</h2><p>${escapeHTML(question.note)}</p></div>
+      <div class="question"><span class="question__kicker">${escapeHTML(question.name)}</span><h2>${escapeHTML(question.title)}</h2></div>
       <div class="options options--${question.options.length}">
         ${question.options.map((option, index) => {
           const visual = option.photo
@@ -25,8 +25,7 @@
           const classNames = [selected === option.value ? 'is-selected' : '', selected && selected !== option.value ? 'is-muted' : ''].filter(Boolean).join(' ');
           return `<button class="option ${classNames}" type="button" data-value="${escapeHTML(option.value)}" style="animation-delay:${index * 55}ms" aria-pressed="${selected === option.value}">${visual}<span class="option__copy"><b>${escapeHTML(option.label)}</b><small>${escapeHTML(option.description)}</small></span><span class="option__state">${selected === option.value ? icons.check : ''}</span></button>`;
         }).join('')}
-      </div>
-      <p class="auto-advance-note" aria-live="polite">Po výbere automaticky pokračujeme.</p>`;
+      </div>`;
     $$('.option', advisor).forEach((button) => button.addEventListener('click', () => selectAnswer(button.dataset.value)));
   }
 
@@ -46,7 +45,6 @@
       button.disabled = true;
       button.querySelector('.option__state').innerHTML = selected ? icons.check : '';
     });
-    advisor.querySelector('.auto-advance-note')?.classList.add('is-visible');
     const delay = matchMedia('(prefers-reduced-motion: reduce)').matches ? 10 : 300;
     setTimeout(advanceQuestion, delay);
   }
