@@ -6,8 +6,8 @@
   root.innerHTML = `
     <main class="concept-page" aria-label="Návrh AI chatbota pre ${escapeHTML(config.brand)}">
       <header class="site-head">
+        <a class="concept-company-brand" href="https://www.conceptcoffee.sk/" target="_blank" rel="noreferrer"><img src="/brand/concept-official-logo.png" alt="Concept Coffee Roasters"></a>
         <a class="solution-brand" href="https://mojchatbot.sk" target="_blank" rel="noreferrer"><span>Ukážka riešenia</span><strong>mojchatbot.sk</strong>${icons.arrow}</a>
-        <span class="owner-badge">Návrh pre Concept Coffee</span>
       </header>
 
       <section class="hero">
@@ -52,7 +52,7 @@
     <section class="widget" id="widget" role="dialog" aria-modal="true" aria-label="Kávový poradca ${escapeHTML(config.brand)}" aria-hidden="true">
       <header class="widget__header">
         <div class="widget-brand">
-          <span class="widget-brand__mark">${icons.chat}</span><span class="widget-brand__copy"><strong>Concept poradca</strong><small>Kávový poradca</small></span>
+          <img class="concept-widget-logo" src="/brand/concept-official-logo.png" alt="Concept Coffee Roasters">
         </div>
         <div class="widget-actions">
           <button class="icon-button" id="resetAll" type="button" aria-label="Začať odznova">${icons.reset}</button>
