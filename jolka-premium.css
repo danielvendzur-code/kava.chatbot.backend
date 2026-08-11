@@ -1,0 +1,188 @@
+/* Premium customer-facing pass: rich color, compact proportions, real imagery. */
+:root{
+  --jolka-deep:#103b32;
+  --jolka-deep-2:#082820;
+  --jolka-coral:#d66d48;
+  --jolka-sage:#d8edcf;
+  --jolka-canvas:#faf7f0;
+}
+
+body{
+  background:
+    radial-gradient(circle at 82% 12%,rgba(214,109,72,.1),transparent 31rem),
+    linear-gradient(160deg,#fbf8f1,#f2eadf);
+}
+
+.landing{border-color:rgba(16,59,50,.18);box-shadow:0 40px 100px -58px rgba(8,40,32,.55)}
+.owner-badge{color:var(--jolka-deep);border-color:rgba(16,59,50,.2);background:rgba(255,255,255,.66)}
+.primary-cta{background:var(--jolka-coral);box-shadow:0 20px 38px -24px rgba(214,109,72,.82)}
+.primary-cta:hover{background:var(--jolka-deep)}
+.owner-benefits article{border-color:rgba(16,59,50,.14);background:rgba(255,255,255,.72);box-shadow:0 18px 42px -38px rgba(8,40,32,.65)}
+.owner-preview{border-color:rgba(16,59,50,.16);box-shadow:0 34px 78px -48px rgba(8,40,32,.72)}
+
+.launcher__button{
+  border:2px solid rgba(255,255,255,.92);
+  background:linear-gradient(145deg,var(--jolka-coral),#b84d31);
+  box-shadow:0 20px 46px -16px rgba(184,77,49,.76),0 0 0 5px rgba(255,255,255,.82);
+}
+.launcher__button span{color:#fff;background:transparent}
+.launcher__button i{background:#7ee1ac}
+
+.widget{
+  width:min(492px,calc(100vw - 32px));
+  height:min(790px,calc(100dvh - 28px));
+  border:1px solid rgba(16,59,50,.2);
+  border-radius:28px;
+  background:var(--jolka-canvas);
+  box-shadow:0 48px 118px -42px rgba(8,40,32,.9),0 16px 42px -30px rgba(214,109,72,.48);
+}
+.widget__header{
+  min-height:70px;
+  flex-basis:70px;
+  padding:8px 12px 8px 16px;
+  color:#fff;
+  border-bottom:1px solid rgba(255,255,255,.12);
+  background:
+    radial-gradient(circle at 14% -30%,rgba(216,237,207,.2),transparent 42%),
+    linear-gradient(145deg,var(--jolka-deep-2),var(--jolka-deep));
+}
+.widget-brand__mark{width:44px;height:44px;flex-basis:44px;border-radius:15px;color:var(--jolka-deep);background:var(--jolka-sage)}
+.widget-brand__copy{gap:0}
+.widget-brand__copy strong{color:#fff;font-size:16px}
+.widget-actions button{width:40px;height:40px;color:#fff;background:rgba(255,255,255,.09)}
+.widget-actions button:hover{color:var(--jolka-deep);background:var(--jolka-sage)}
+
+.mode-switch{
+  width:calc(100% - 24px);
+  min-height:62px;
+  flex-basis:62px;
+  margin:9px 12px 7px;
+  padding:5px;
+  border:1px solid rgba(16,59,50,.12);
+  background:#ecefe9;
+  box-shadow:inset 0 1px rgba(255,255,255,.82);
+}
+.mode-switch__indicator{background:linear-gradient(145deg,var(--jolka-deep),var(--jolka-deep-2));box-shadow:0 12px 24px -18px rgba(8,40,32,.9)}
+.mode-switch.is-chat .mode-switch__indicator{transform:none}
+.mode-switch:not(.is-chat) .mode-switch__indicator{transform:translateX(100%)}
+.mode-switch__button{min-height:52px;color:#65736e}
+.mode-switch__button.is-active{color:#fff}
+.mode-switch__button small{display:none}
+
+.screen{background:
+  radial-gradient(circle at 88% 5%,rgba(214,109,72,.055),transparent 20rem),
+  var(--jolka-canvas)}
+.progress-bar{min-height:52px;flex-basis:52px;padding:6px 12px;border-color:rgba(16,59,50,.12)}
+.progress-bar>button{width:38px;height:38px;background:#fff;border:1px solid rgba(16,59,50,.12)}
+.progress-bar__copy b{color:var(--jolka-coral);font-size:10px}
+.progress-bar__copy small{color:#51655e}
+.progress-bar__steps i{height:8px;background:rgba(16,59,50,.1)}
+.progress-bar__steps i.is-done{background:var(--jolka-coral)}
+.progress-bar__steps i.is-active{background:var(--jolka-deep)}
+
+.advisor{padding:13px 12px 16px}
+.question-head{gap:5px;margin:0 2px 11px}
+.question-head small{color:var(--jolka-coral)}
+.question-head h2{font-size:24px;color:var(--jolka-deep)}
+.advisor-note{display:none}
+.options{gap:8px}
+.option{
+  min-height:104px;
+  border-color:rgba(16,59,50,.16);
+  border-radius:21px;
+  background:rgba(255,255,255,.88);
+  box-shadow:0 13px 30px -27px rgba(8,40,32,.78);
+}
+.option:hover{border-color:rgba(214,109,72,.7);box-shadow:0 18px 34px -26px rgba(214,109,72,.42)}
+.option.is-selected{border-color:var(--jolka-coral);background:#fff4ec;box-shadow:inset 0 0 0 1px var(--jolka-coral),0 16px 32px -28px rgba(214,109,72,.7)}
+.option__visual{
+  width:66px;
+  height:78px;
+  border:1px solid rgba(16,59,50,.08);
+  border-radius:16px;
+  background:linear-gradient(145deg,#fff,#eee7da);
+}
+.option__visual img{width:100%;height:100%;object-fit:contain;filter:saturate(1.08) contrast(1.03)}
+.option__visual--cover img{object-fit:cover}
+.option__copy b{font-size:12.5px;color:var(--jolka-deep)}
+.option__copy small{color:#53655f;font-size:9px}
+.option__state{right:11px;top:50%;transform:translateY(-50%);border-color:rgba(214,109,72,.38);color:var(--jolka-coral);background:#fff}
+.option.is-selected .option__state{border-color:var(--jolka-coral);background:var(--jolka-coral)}
+
+.chat-advisor-cta{
+  min-height:52px;
+  flex:0 0 52px;
+  display:grid;
+  grid-template-columns:30px minmax(0,1fr) 20px;
+  align-items:center;
+  gap:9px;
+  margin:4px 12px 7px;
+  padding:5px 14px 5px 8px;
+  border:0;
+  border-radius:18px;
+  color:#fff;
+  background:linear-gradient(100deg,var(--jolka-coral),#bd5436);
+  box-shadow:0 15px 30px -24px rgba(184,77,49,.92);
+}
+.chat-advisor-cta>span{width:30px;height:30px;display:grid;place-items:center;padding:5px;border-radius:11px;color:var(--jolka-deep);background:rgba(255,255,255,.86)}
+.chat-advisor-cta b{font-size:12px}
+.chat-advisor-cta>svg{width:17px;height:17px}
+.chat{padding:7px 12px 10px}
+.message__avatar{position:relative;color:var(--jolka-deep);background:var(--jolka-sage)}
+.message__avatar::after{content:"";position:absolute;right:-1px;bottom:0;width:8px;height:8px;border:2px solid #fff;border-radius:50%;background:#43bd7c}
+.message__bubble{border-color:rgba(16,59,50,.14);background:#fff;box-shadow:0 15px 34px -29px rgba(8,40,32,.76)}
+.chat-controls{padding:0 12px 12px;background:var(--jolka-canvas)}
+.quick-questions{flex-wrap:wrap;justify-content:center;gap:7px;padding:8px 0}
+.quick-questions button{min-height:35px;padding:0 11px;border-color:rgba(214,109,72,.5);color:var(--jolka-deep);background:#fff;font-size:9px}
+.quick-questions button:hover,.quick-questions button:disabled{color:#fff;background:var(--jolka-coral)}
+.composer{min-height:58px;border-color:rgba(16,59,50,.22);background:#fff;box-shadow:0 15px 34px -30px rgba(8,40,32,.78)}
+.composer button{background:var(--jolka-coral)}
+.chat-demo-note,.widget__footer{display:none!important}
+.match__badge{
+  width:42px;
+  height:42px;
+  flex:0 0 42px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  color:#fff;
+  background:var(--jolka-deep);
+  box-shadow:0 0 0 6px rgba(202,224,197,.72);
+  font-size:17px;
+  font-weight:900;
+}
+
+@media(max-width:640px){
+  .widget{inset:0!important;width:100%!important;height:100dvh!important;max-width:none!important;max-height:none!important;border:0!important;border-radius:0!important}
+  .widget__header{min-height:68px;flex-basis:68px;padding:7px max(10px,env(safe-area-inset-right)) 7px max(13px,env(safe-area-inset-left))}
+  .widget-brand__mark{width:42px;height:42px;flex-basis:42px}
+  .mode-switch{width:calc(100% - 20px);min-height:62px;flex-basis:62px;margin:8px 10px 6px}
+  .progress-bar{padding-inline:10px}
+  .advisor{padding:11px 10px 14px}
+  .question-head{margin-bottom:10px}
+  .question-head h2{font-size:23px}
+  .options,.options--5{grid-template-columns:1fr;gap:7px}
+  .options--5 .option:first-child{grid-column:auto;min-height:82px}
+  .option{
+    min-height:82px;
+    grid-template-columns:78px minmax(0,1fr);
+    gap:10px;
+    padding:6px 36px 6px 6px;
+    border-radius:18px;
+  }
+  .option__visual{width:78px;height:68px;border-radius:13px}
+  .option__copy{gap:3px}
+  .option__copy b{font-size:12px}
+  .option__copy small{font-size:8.5px}
+  .option__state{right:9px}
+  .chat-advisor-cta{margin-inline:10px}
+  .chat{padding-inline:10px}
+  .chat-controls{padding-inline:10px;padding-bottom:max(10px,env(safe-area-inset-bottom))}
+}
+
+@media(max-width:370px){
+  .widget-brand__copy strong{font-size:14px}
+  .mode-switch__button{gap:6px;font-size:10px}
+  .option{min-height:78px;grid-template-columns:72px minmax(0,1fr)}
+  .option__visual{width:72px;height:64px}
+}
