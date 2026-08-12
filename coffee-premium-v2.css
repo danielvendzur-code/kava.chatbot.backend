@@ -368,27 +368,6 @@ body[data-demo="vitazov"] #chatScreen{--mc-chat-bg:#073e34}
   border-color:rgba(255,255,255,.22)!important;
   box-shadow:0 0 0 3px rgba(255,255,255,.06)!important;
 }
-body[data-demo="vitazov"] #chatScreen .message__avatar{
-  width:48px!important;
-  height:30px!important;
-  flex:0 0 48px!important;
-  padding:0 5px!important;
-  border:1px solid rgba(255,255,255,.28)!important;
-  border-radius:10px 10px 10px 3px!important;
-  color:#153f35!important;
-  background:#fffaf0!important;
-  box-shadow:0 0 0 3px rgba(183,232,77,.08)!important;
-}
-body[data-demo="vitazov"] #chatScreen .message__avatar::before,
-body[data-demo="vitazov"] #chatScreen .message__avatar::after{
-  content:none!important;
-  display:none!important;
-}
-body[data-demo="vitazov"] #chatScreen .mc-vitazov-chat{
-  color:#153f35!important;
-  font:700 9px/1.05 Georgia,serif!important;
-  letter-spacing:-.03em!important;
-}
 
 /* Dense photographic choices */
 .options,.answers,.kf-options,.pz-options{
