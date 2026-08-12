@@ -21,7 +21,7 @@
   document.body.dataset.demo = slug;
 
   const meta = {
-    praziarnicka: ['Pražiarnička – kávový poradca', 'Interaktívna ukážka poradcu pre výber kávy Pražiarnička.', '#100c0a', '/brand/praziarnicka-icon-official.svg'],
+    praziarnicka: ['Pražiarnička – kávový poradca', 'Ukážka predajného poradcu pre jednoduchší výber kávy Pražiarnička.', '#123f35', '/brand/praziarnicka-icon-official.svg'],
     diamonds: ['Diamonds Roastery – kávový poradca', 'Jednoduchý výber kávy Diamonds Roastery podľa chuti a prípravy.', '#0d0f0e', 'data:,'],
     kaffa: ['Kaffa Roastery – nájdite svoju kávu', 'Nájdite kávu Kaffa podľa svojej chuti a spôsobu prípravy.', '#f6f3ec', 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 fill=%22%23111111%22/%3E%3Ctext x=%2232%22 y=%2241%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22Georgia%22 font-size=%2228%22%3EK%3C/text%3E%3C/svg%3E'],
     vitazov: ['Káva Víťazov – kávový poradca', 'Jednoduchý výber kávy domov, do kancelárie aj do automatu.', '#123f35', 'data:,'],
@@ -58,8 +58,8 @@
   const commonScripts = ['/coffee-api-route.js', '/coffee-local-api.js'];
   const manifests = {
     praziarnicka: {
-      styles: ['/praziarnicka-v12.css'],
-      scripts: ['/praziarnicka-v12.js']
+      styles: ['/praziarnicka-v13.css'],
+      scripts: ['/praziarnicka-v13.js']
     },
     concept: {
       styles: [
