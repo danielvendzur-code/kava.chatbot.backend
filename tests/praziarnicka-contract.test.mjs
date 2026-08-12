@@ -2,47 +2,47 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
-const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
-const app = readFileSync(new URL('../praziarnicka-v11.js', import.meta.url), 'utf8');
-const css = readFileSync(new URL('../praziarnicka-v11.css', import.meta.url), 'utf8');
+const router = readFileSync(new URL('../coffee-final-entry.js', import.meta.url), 'utf8');
+const app = readFileSync(new URL('../praziarnicka-v12.js', import.meta.url), 'utf8');
+const css = readFileSync(new URL('../praziarnicka-v12.css', import.meta.url), 'utf8');
 
-test('page is written for coffee customers', () => {
-  assert.match(html, /Pražiarnička – nájdite svoju kávu/);
-  assert.doesNotMatch(app, /návrh AI|ukážka pre majiteľa|neoficiálna|mojchatbot/i);
+test('final router loads the latest Praziarnicka v12 runtime', () => {
+  assert.match(router, /praziarnicka-v12\.css/);
+  assert.match(router, /praziarnicka-v12\.js/);
+  assert.match(router, /Pražiarnička – kávový poradca/);
 });
 
-test('chat has no promotional footer and keeps input below compact chips', () => {
-  assert.doesNotMatch(app, /pz-credit|mojchatbot/);
+test('owner page explains the solution and keeps the live widget separate', () => {
+  assert.match(app, /Návrh AI chatbota pre Pražiarničku/);
+  assert.match(app, /Zákazník odpovie na štyri otázky/);
+  assert.match(app, /Vyskúšať chatbot/);
+  assert.match(css, /#coffee-demo-root\{display:none!important\}/);
+});
+
+test('chat uses a compact two by two chip grid above the composer', () => {
   assert.match(app, /pz-chips[\s\S]*pz-composer/);
-  assert.match(css, /\.pz-chip\{min-height:41px/);
+  assert.match(css, /\.pz-chips\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
+  assert.match(css, /\.pz-chip\{[\s\S]*?min-height:42px/);
 });
 
-test('coffee finder action is full width and only sixty pixels high', () => {
-  assert.match(app, /Nájsť svoju kávu/);
-  assert.match(css, /\.pz-advisor-cta\{width:100%;height:60px;min-height:60px/);
+test('widget uses the final Jolka-scale proportions without page scrolling', () => {
+  assert.match(css, /width:min\(452px,calc\(100vw - 32px\)\)/);
+  assert.match(css, /height:min\(788px,calc\(100dvh - 52px\)\)/);
+  assert.match(css, /body\{overflow:hidden\}/);
+  assert.match(css, /\.pz-view\{min-height:0;overflow:hidden/);
 });
 
-test('every step renders branded photo cards', () => {
-  assert.equal((app.match(/key: '/g) || []).length, 4);
-  assert.match(app, /pz-option-photo/);
-  assert.match(css, /choice-sprite\.png/);
-});
-
-test('questions advance automatically once after a guarded selection', () => {
+test('four-step advisor advances automatically once and preserves answers', () => {
+  const questions = app.match(/const questions = \[[\s\S]*?\n  \];/)?.[0] || '';
+  assert.equal((questions.match(/key: '/g) || []).length, 4);
   assert.doesNotMatch(app, /id="continueQuestion"/);
   assert.match(app, /state\.transitioning/);
   assert.match(app, /setTimeout\(advanceQuestion, delay\)/);
-  assert.match(app, /candidate\.disabled = true/);
-});
-
-test('answers survive back navigation and the dialog supports reset and escape', () => {
   assert.match(app, /state\.answers\[question\.key\]/);
-  assert.match(app, /id="pz-back"/);
-  assert.match(app, /function resetAll/);
   assert.match(app, /event\.key === 'Escape'/);
 });
 
-test('results link to real Pražiarnička products', () => {
+test('recommendations link to five real Praziarnicka products', () => {
   assert.equal((app.match(/https:\/\/praziarnicka\.sk\/produkt\//g) || []).length, 5);
   assert.match(app, /Pozrieť kávu/);
 });

@@ -2,16 +2,19 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
-const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+const router = readFileSync(new URL('../coffee-final-entry.js', import.meta.url), 'utf8');
 const app = readFileSync(new URL('../kaffa-editorial.js', import.meta.url), 'utf8');
 const finalApp = readFileSync(new URL('../kaffa-final.js', import.meta.url), 'utf8');
 const data = readFileSync(new URL('../kaffa-data.js', import.meta.url), 'utf8');
 const css = readFileSync(new URL('../kaffa-widget.css', import.meta.url), 'utf8');
 const finalCss = readFileSync(new URL('../kaffa-final.css', import.meta.url), 'utf8');
 
-test('page title and metadata stay customer friendly', () => {
-  assert.match(html, /Kaffa Roastery – nájdite svoju kávu/);
-  assert.doesNotMatch(html, /neoficiálna|fake|živá ukážka/i);
+test('final router keeps Kaffa metadata and dedicated editorial runtime', () => {
+  assert.match(router, /Kaffa Roastery – nájdite svoju kávu/);
+  assert.match(router, /kaffa-editorial\.css/);
+  assert.match(router, /kaffa-editorial\.js/);
+  assert.match(router, /kaffa-final\.js/);
+  assert.doesNotMatch(router, /neoficiálna|fake/i);
 });
 
 test('owner page explains the proposed solution without disclaimers', () => {
