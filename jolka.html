@@ -45,6 +45,10 @@
     .launcher__teaser span { font-size:13.5px; }
     .launcher__button { width:72px; height:72px; }
 
+    /* The handoff is removed after the first customer message. The original
+       .entry rule uses display:flex, so make the semantic hidden state decisive. */
+    .entry[hidden] { display:none !important; }
+
     @media (max-width:640px) {
       .launcher { right:16px; bottom:max(18px,env(safe-area-inset-bottom)); gap:12px; }
       .launcher__teaser { max-width:min(276px,calc(100vw - 92px)); padding:15px 17px; }
