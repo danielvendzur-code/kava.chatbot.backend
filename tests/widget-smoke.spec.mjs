@@ -5,11 +5,11 @@ const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
 fs.mkdirSync('artifacts', { recursive: true });
 
 const demos = [
-  { slug:'praziarnicka', title:/Pražiarnička/, resource:'praziarnicka-v12.js', launcher:'#pz-launcher', teaser:'#pz-preview', teaserTitle:'#pz-preview b', teaserSub:'#pz-preview span', input:'#pz-input', bot:'.pz-bubble-assistant' },
-  { slug:'diamonds', title:/Diamonds Roastery/, resource:'coffee-diamonds-final.js', launcher:'#launcherButton', teaser:'#teaser', teaserTitle:'#teaser strong', teaserSub:'#teaser span', input:'#chatInput', bot:'.chat-line:not(.chat-line--user) .chat-bubble' },
-  { slug:'kaffa', title:/Kaffa Roastery/, resource:'kaffa-final.js', launcher:'#launcher', teaser:'#teaser', teaserTitle:'#teaser b', teaserSub:'#teaser span', input:'#chatInput', bot:'.kf-message.bot' },
-  { slug:'vitazov', title:/Káva Víťazov/, resource:'coffee-vitazov-final.js', launcher:'#openWidget', teaser:'#launcherTeaser', teaserTitle:'#launcherTeaser b', teaserSub:'#launcherTeaser span', input:'#chatInput', bot:'.message:not(.message--user) .bubble' },
-  { slug:'concept', title:/Concept Coffee Roasters/, resource:'concept-seasonal-init.js', launcher:'#openWidget', teaser:'#launcherTeaser', teaserTitle:'#launcherTeaser b', teaserSub:'#launcherTeaser span', input:'#chatInput', bot:'.message:not(.message--user) .bubble' }
+  { slug:'praziarnicka', title:/Pražiarnička/, resource:'praziarnicka-v12.js', launcher:'#pz-launcher', teaser:'#pz-preview', teaserTitle:'#pz-preview b', teaserSub:'#pz-preview span', input:'#pz-input', bot:'.pz-bubble-assistant', panel:'#pz-widget', chat:'.pz-chat-panel' },
+  { slug:'diamonds', title:/Diamonds Roastery/, resource:'coffee-diamonds-final.js', launcher:'#launcherButton', teaser:'#teaser', teaserTitle:'#teaser strong', teaserSub:'#teaser span', input:'#chatInput', bot:'.chat-line:not(.chat-line--user) .chat-bubble', panel:'#widget', chat:'#chatScreen' },
+  { slug:'kaffa', title:/Kaffa Roastery/, resource:'kaffa-final.js', launcher:'#launcher', teaser:'#teaser', teaserTitle:'#teaser b', teaserSub:'#teaser span', input:'#chatInput', bot:'.kf-message.bot', panel:'.kf-panel', chat:'.kf-chat' },
+  { slug:'vitazov', title:/Káva Víťazov/, resource:'coffee-vitazov-final.js', launcher:'#openWidget', teaser:'#launcherTeaser', teaserTitle:'#launcherTeaser b', teaserSub:'#launcherTeaser span', input:'#chatInput', bot:'.message:not(.message--user) .bubble', panel:'#widget', chat:'#chatScreen' },
+  { slug:'concept', title:/Concept Coffee Roasters/, resource:'concept-seasonal-init.js', launcher:'#openWidget', teaser:'#launcherTeaser', teaserTitle:'#launcherTeaser b', teaserSub:'#launcherTeaser span', input:'#chatInput', bot:'.message:not(.message--user) .bubble', panel:'#widget', chat:'#chatScreen' }
 ];
 
 function watchConsole(page) {
@@ -22,9 +22,7 @@ function watchConsole(page) {
     add(`console: ${message.text()}${location?.url ? ` @ ${location.url}` : ''}`);
   };
   const onPageError = error => add(`pageerror: ${error.message}`);
-  const onResponse = response => {
-    if (response.status() >= 400) add(`http ${response.status()}: ${response.url()}`);
-  };
+  const onResponse = response => { if (response.status() >= 400) add(`http ${response.status()}: ${response.url()}`); };
   const onRequestFailed = request => add(`request failed: ${request.url()} :: ${request.failure()?.errorText || 'unknown'}`);
   page.on('console', onConsole);
   page.on('pageerror', onPageError);
@@ -40,11 +38,28 @@ async function waitForDemo(page) {
     return Boolean((pz && pz.childElementCount) || (shared && shared.childElementCount));
   });
   await page.waitForFunction(() => document.documentElement.dataset.jolkaParity === 'ready');
-  await page.waitForTimeout(120);
+  await page.waitForTimeout(160);
 }
 
 async function px(locator, property) {
   return locator.evaluate((node, prop) => parseFloat(getComputedStyle(node)[prop]), property);
+}
+
+async function effectiveBackground(locator) {
+  return locator.evaluate(node => {
+    let current = node;
+    while (current) {
+      const value = getComputedStyle(current).backgroundColor;
+      if (value && value !== 'transparent' && value !== 'rgba(0, 0, 0, 0)') return value;
+      current = current.parentElement;
+    }
+    return getComputedStyle(document.body).backgroundColor;
+  });
+}
+
+function expectNotNearBlack(rgb) {
+  const values = rgb.match(/[\d.]+/g)?.slice(0, 3).map(Number) || [];
+  if (values.length === 3) expect(Math.max(...values)).toBeGreaterThan(70);
 }
 
 test('all five routed demos reach Jolka-parity owner readability and fit 1366x768', async ({ page }) => {
@@ -58,18 +73,21 @@ test('all five routed demos reach Jolka-parity owner readability and fit 1366x76
     const resources = await page.evaluate(() => performance.getEntriesByType('resource').map(entry => entry.name));
     expect(resources.some(url => url.includes(demo.resource))).toBeTruthy();
     expect(resources.some(url => url.includes('coffee-jolka-parity.css'))).toBeTruthy();
+    expect(resources.some(url => url.includes('coffee-no-black.css'))).toBeTruthy();
 
     const metrics = await page.evaluate(() => ({
       scrollHeight:document.scrollingElement.scrollHeight,
       scrollWidth:document.scrollingElement.scrollWidth,
       innerHeight:window.innerHeight,
       innerWidth:window.innerWidth,
-      text:document.body.innerText.trim()
+      text:document.body.innerText.trim(),
+      bg:getComputedStyle(document.body).backgroundColor
     }));
     expect(metrics.scrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
     expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
     expect(metrics.text.length).toBeGreaterThan(80);
     expect(metrics.text).not.toMatch(/Návrh AI|Vyskúšajte AI|Interaktívny návrh|Funguje s reálnou ponukou|overenou 8\. 8\. 2026/i);
+    expectNotNearBlack(metrics.bg);
 
     const strip = page.locator('.parity-bottom');
     await expect(strip).toBeVisible();
@@ -80,6 +98,7 @@ test('all five routed demos reach Jolka-parity owner readability and fit 1366x76
     const launcherBox = await launcher.boundingBox();
     expect(launcherBox.width).toBeGreaterThanOrEqual(68);
     expect(launcherBox.height).toBeGreaterThanOrEqual(68);
+    expectNotNearBlack(await effectiveBackground(launcher));
 
     const teaser = page.locator(demo.teaser);
     await expect(teaser).toBeVisible();
@@ -87,6 +106,7 @@ test('all five routed demos reach Jolka-parity owner readability and fit 1366x76
     expect(await px(page.locator(demo.teaserSub), 'fontSize')).toBeGreaterThanOrEqual(10.5);
     const teaserBox = await teaser.boundingBox();
     expect(teaserBox.y + teaserBox.height).toBeLessThan(700);
+    expectNotNearBlack(await effectiveBackground(teaser));
 
     expect(consoleWatch.failures).toEqual([]);
     consoleWatch.stop();
@@ -94,7 +114,7 @@ test('all five routed demos reach Jolka-parity owner readability and fit 1366x76
   }
 });
 
-test('all five chats visibly answer and use readable chips/bubbles', async ({ page }) => {
+test('all five chats are light, visibly answer and use readable chips/bubbles', async ({ page }) => {
   await page.setViewportSize({ width:1366, height:768 });
   for (const demo of demos) {
     const consoleWatch = watchConsole(page);
@@ -104,6 +124,13 @@ test('all five chats visibly answer and use readable chips/bubbles', async ({ pa
     const input = page.locator(demo.input);
     await expect(input).toBeVisible({ timeout:5000 });
 
+    const panel = page.locator(demo.panel);
+    await expect(panel).toBeVisible();
+    expectNotNearBlack(await effectiveBackground(panel));
+    const chatSurface = page.locator(demo.chat);
+    await expect(chatSurface).toBeVisible();
+    expectNotNearBlack(await effectiveBackground(chatSurface));
+
     const chips = page.locator('.pz-chip,#quickChips .chip,#quickChips button,.kf-chip').filter({ visible:true });
     const chipCount = await chips.count();
     expect(chipCount).toBeGreaterThanOrEqual(4);
@@ -111,14 +138,9 @@ test('all five chats visibly answer and use readable chips/bubbles', async ({ pa
     expect(chipFont).toBeGreaterThanOrEqual(11);
 
     if (demo.slug === 'kaffa') {
-      const panel = page.locator('.kf-panel');
-      await expect(panel).toBeVisible();
-      const panelStyle = await panel.evaluate(node => {
-        const style = getComputedStyle(node);
-        return { opacity:parseFloat(style.opacity), background:style.backgroundColor };
-      });
+      const panelStyle = await panel.evaluate(node => ({ opacity:parseFloat(getComputedStyle(node).opacity), background:getComputedStyle(node).backgroundColor }));
       expect(panelStyle.opacity).toBeGreaterThanOrEqual(.99);
-      expect(panelStyle.background).not.toBe('rgba(0, 0, 0, 0)');
+      expectNotNearBlack(panelStyle.background);
       expect(await page.locator('.kf-widget-brand .kf-widget-title,.kf-widget-brand .kf-widget-bubble').filter({ visible:true }).count()).toBe(0);
     }
 
@@ -127,18 +149,19 @@ test('all five chats visibly answer and use readable chips/bubbles', async ({ pa
     await input.fill('Akú kávu do automatu?');
     await input.press('Enter');
     await expect.poll(async () => await bots.count(), { timeout:6000 }).toBeGreaterThan(before);
+    await expect.poll(async () => {
+      const value = (await bots.last().innerText()).trim();
+      return value.length > 20 && !/Premýšľam|Načítavam|\.\.\./i.test(value);
+    }, { timeout:6000 }).toBeTruthy();
     const last = bots.last();
     await expect(last).toBeVisible();
-    const reply = (await last.innerText()).trim();
-    expect(reply.length).toBeGreaterThan(20);
     const bubbleMetrics = await last.evaluate(node => {
       const style = getComputedStyle(node);
       return { font:parseFloat(style.fontSize), bg:style.backgroundColor, color:style.color, opacity:parseFloat(style.opacity) };
     });
     expect(bubbleMetrics.font).toBeGreaterThanOrEqual(12);
     expect(bubbleMetrics.opacity).toBeGreaterThanOrEqual(.95);
-    expect(bubbleMetrics.bg).not.toBe('rgba(0, 0, 0, 0)');
-    expect(bubbleMetrics.bg).not.toBe('transparent');
+    expectNotNearBlack(bubbleMetrics.bg);
 
     expect(consoleWatch.failures).toEqual([]);
     consoleWatch.stop();
@@ -166,6 +189,7 @@ test('Káva Víťazov advisor uses distinct semantic photos and readable option 
     expect(await px(description, 'fontSize')).toBeGreaterThanOrEqual(9);
     const clipped = await option.evaluate(node => node.scrollHeight > node.clientHeight + 2);
     expect(clipped).toBeFalsy();
+    expectNotNearBlack(await effectiveBackground(option));
   }
   await page.screenshot({ path:'artifacts/final-vitazov-advisor-571x813.png', fullPage:true });
 });
@@ -191,6 +215,7 @@ test('Jolka stays standalone and unchanged by the parity layer', async ({ page }
   await page.waitForFunction(() => document.body.innerText.trim().length > 20);
   expect(await page.locator('link[data-jolka-parity]').count()).toBe(0);
   expect(await page.locator('script[src="/coffee-jolka-parity.js"]').count()).toBe(0);
+  expect(await page.locator('link[href="/coffee-no-black.css"]').count()).toBe(0);
   const metrics = await page.evaluate(() => ({ scrollHeight:document.scrollingElement.scrollHeight, scrollWidth:document.scrollingElement.scrollWidth, innerHeight:window.innerHeight, innerWidth:window.innerWidth }));
   expect(metrics.scrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
   expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
