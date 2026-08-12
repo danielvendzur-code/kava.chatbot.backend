@@ -39,8 +39,12 @@ jobs:
           test -f coffee-local-api.js
           test -f api/chat.js
           test -f vercel.json
+          test -f praziarnicka-v13.css
+          test -f praziarnicka-v13.js
           grep -Fq 'coffee-final-entry.js' index.html
           for slug in praziarnicka diamonds kaffa vitazov concept jolka; do grep -Fq "$slug" coffee-final-entry.js || test "$slug" = jolka; done
+          grep -Fq 'praziarnicka-v13.css' coffee-final-entry.js
+          grep -Fq 'praziarnicka-v13.js' coffee-final-entry.js
           grep -Fq '/ukazka/jolka' vercel.json
           grep -Fq '/ukazka/:slug' vercel.json
           grep -Fq "praziarnicka:" api/chat.js
@@ -58,7 +62,7 @@ jobs:
           node --check coffee-brand-overrides.js
           node --check coffee-vitazov-overrides.js
           node --check coffee-v8.js
-          node --check praziarnicka-v12.js
+          node --check praziarnicka-v13.js
           node --check concept-seasonal-init.js
           node --check kaffa-editorial.js
           node --check kaffa-final.js
