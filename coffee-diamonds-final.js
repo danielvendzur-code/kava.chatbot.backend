@@ -27,7 +27,7 @@
     const heading = copy?.querySelector('h1');
     const intro = copy?.querySelector(':scope > p');
     if (copy && !copy.querySelector('.diamonds-eyebrow')) {
-      copy.insertAdjacentHTML('afterbegin', '<span class="diamonds-eyebrow">Návrh AI chatbota pre Diamonds Roastery</span>');
+      copy.insertAdjacentHTML('afterbegin', '<span class="diamonds-eyebrow">Kávový poradca Diamonds Roastery</span>');
     }
     if (heading) heading.textContent = 'Výberová káva bez zložitého vyberania.';
     if (intro) intro.textContent = 'Zákazník odpovie na štyri otázky o chuti a príprave. Poradca odporučí konkrétnu kávu, balenie aj doplnok a pripraví výber do košíka.';
@@ -54,7 +54,7 @@
 
     const main = document.querySelector('.diamonds-page');
     if (main && !main.querySelector('.diamonds-final-footer')) {
-      main.insertAdjacentHTML('beforeend', '<footer class="diamonds-final-footer"><span>Interaktívny návrh pre Diamonds Roastery</span><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk ↗</a></footer>');
+      main.insertAdjacentHTML('beforeend', '<footer class="diamonds-final-footer"><span>Výber kávy za štyri otázky</span><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk ↗</a></footer>');
     }
   }
 
@@ -67,7 +67,7 @@
     const entryTitle = document.querySelector('#openAdvisor b');
     const entryDetail = document.querySelector('#openAdvisor em');
     if (entryTitle) entryTitle.textContent = 'Nájsť svoju kávu';
-    if (entryDetail) entryDetail.textContent = '';
+    if (entryDetail) entryDetail.textContent = '4 otázky · konkrétna káva';
 
     const teaser = document.querySelector('#teaser');
     const teaserTitle = teaser?.querySelector('strong');

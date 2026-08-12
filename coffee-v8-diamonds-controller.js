@@ -23,7 +23,11 @@
 
   function renderChat() {
     chatMessages.innerHTML = state.chat.map((message) => `<div class="chat-line chat-line--${message.role}">${message.role === 'assistant' ? officialLogo('chat-logo') : ''}<div class="chat-bubble">${esc(message.content)}</div></div>`).join('');
-    chatMessages.scrollTop = chatMessages.scrollHeight;
+    chatMessages.classList.toggle('is-seeded', state.chat.length === 1);
+    chatMessages.classList.toggle('has-user-message', state.chat.some((message) => message.role === 'user'));
+    window.requestAnimationFrame(() => {
+      chatMessages.scrollTo({ top: chatMessages.scrollHeight, behavior: reducedMotion() ? 'auto' : 'smooth' });
+    });
   }
 
   function renderQuick() {

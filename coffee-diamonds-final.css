@@ -189,3 +189,58 @@ html, body { background:#fff !important; }
   .answer-photo { grid-column:1 !important; grid-row:1 !important; width:100% !important; height:auto !important; aspect-ratio:4/3 !important; }.answer-copy { grid-column:1 !important; grid-row:2 !important; padding:0 5px 4px !important; }
 }
 @media(max-width:370px){ .diamonds-page .owner-context.diamonds-owner-badge { display:none !important; }.diamonds-page .owner-benefits small { display:none !important; }.diamonds-page .owner-benefits li { min-height:55px !important; } }
+
+/* Diamonds interaction/readability pass: larger launcher, photo-led advisor entry and Jolka-like chat rhythm. */
+.launcher { right:max(26px,env(safe-area-inset-right)) !important; bottom:max(26px,env(safe-area-inset-bottom)) !important; gap:14px !important; }
+.launcher-button { width:82px !important; height:82px !important; padding:9px !important; border-width:3px !important; }
+.launcher-button .launcher-logo img { width:64px !important; height:56px !important; }
+.launcher-button > i { width:14px !important; height:14px !important; right:2px !important; bottom:3px !important; }
+.teaser { width:286px !important; min-height:88px !important; padding:17px 48px 16px 19px !important; border-radius:21px 21px 8px 21px !important; }
+.teaser strong { font-size:14px !important; }
+.teaser span { font-size:10.5px !important; line-height:1.35 !important; }
+
+.widget-brand .widget-logo { min-width:68px !important; width:68px !important; height:38px !important; }
+.widget-brand .widget-logo img { width:68px !important; height:38px !important; }
+.widget-brand strong { font-size:13px !important; }
+
+#chatScreen .advisor-entry { min-height:102px !important; height:102px !important; grid-template-columns:84px minmax(0,1fr) 24px !important; gap:12px !important; margin:6px 12px 8px !important; padding:7px 12px 7px 7px !important; border-radius:23px !important; color:#fff !important; background:var(--diamonds-ink) !important; }
+#chatScreen .advisor-entry b, #chatScreen .advisor-entry em { color:#fff !important; }
+#chatScreen .advisor-entry em { display:block !important; color:rgba(255,255,255,.72) !important; font-size:10px !important; line-height:1.3 !important; }
+#chatScreen .advisor-entry:hover { color:var(--diamonds-ink) !important; background:var(--diamonds-lime) !important; }
+#chatScreen .advisor-entry:hover b, #chatScreen .advisor-entry:hover em { color:var(--diamonds-ink) !important; }
+#chatScreen .advisor-entry > .advisor-entry__media { width:84px !important; height:86px !important; display:block !important; overflow:hidden !important; border-radius:17px !important; color:var(--diamonds-ink) !important; background:#f3f0eb !important; }
+#chatScreen .advisor-entry .advisor-entry-photo { width:100% !important; height:100% !important; margin:0 !important; background:#f3f0eb !important; }
+#chatScreen .advisor-entry .advisor-entry-photo img { width:100% !important; height:100% !important; object-fit:contain !important; object-position:center !important; }
+#chatScreen .advisor-entry > .ui-icon { width:22px !important; color:var(--diamonds-lime) !important; }
+#chatScreen .advisor-entry:hover > .ui-icon { color:var(--diamonds-ink) !important; }
+
+#chatScreen .chat-messages { padding-top:10px !important; }
+#chatScreen .chat-messages.is-seeded { padding-top:clamp(88px,14vh,132px) !important; }
+#chatScreen .chat-messages.has-user-message { padding-top:10px !important; }
+#chatScreen .chat-line--assistant .chat-bubble { color:#11130f !important; background:#f2f3ee !important; border-color:rgba(10,11,9,.18) !important; }
+#chatScreen .chat-line--user .chat-bubble { color:#fff !important; background:#11130f !important; border-color:#11130f !important; box-shadow:0 9px 20px -16px rgba(10,11,9,.75) !important; }
+#chatScreen .chat-line--user { justify-content:flex-end !important; }
+#chatScreen .chat-line--user .chat-bubble, #chatScreen .chat-line--assistant .chat-bubble { font-size:14px !important; line-height:1.48 !important; }
+#chatScreen .quick-grid button { font-size:11.5px !important; }
+#chatScreen .composer input { font-size:14px !important; }
+.diamonds-time { font-size:9.5px !important; }
+.question-kicker { font-size:10px !important; }
+.advisor-top > span { font-size:10.5px !important; }
+.answer-copy b { font-size:13px !important; }
+.answer-copy small { font-size:10px !important; line-height:1.3 !important; }
+
+/* All dark CTA surfaces keep light copy; no dark-green-on-black combinations. */
+.diamonds-page .button-primary, #chatScreen .advisor-entry, .diamonds-add { color:#fff !important; }
+.diamonds-page .button-primary:hover, #chatScreen .advisor-entry:hover, .diamonds-add:hover, .diamonds-add.is-added { color:var(--diamonds-ink) !important; }
+
+@media(max-width:680px){
+  .widget { inset:0 !important; width:100% !important; height:100dvh !important; max-width:none !important; max-height:none !important; right:auto !important; bottom:auto !important; border:0 !important; border-radius:0 !important; }
+  .widget-head { min-height:68px !important; flex-basis:68px !important; padding-left:max(14px,env(safe-area-inset-left)) !important; padding-right:max(12px,env(safe-area-inset-right)) !important; }
+  .widget-brand .widget-logo { min-width:68px !important; width:68px !important; height:38px !important; }
+  #chatScreen .advisor-entry { width:calc(100% - 20px) !important; min-height:96px !important; height:96px !important; grid-template-columns:78px minmax(0,1fr) 22px !important; margin:5px 10px 7px !important; }
+  #chatScreen .advisor-entry > .advisor-entry__media { width:78px !important; height:80px !important; }
+  #chatScreen .advisor-entry b { font-size:14px !important; }
+  #chatScreen .advisor-entry em { font-size:10px !important; }
+  #chatScreen .chat-messages.is-seeded { padding-top:clamp(96px,16vh,138px) !important; }
+  .launcher { right:max(14px,env(safe-area-inset-right)) !important; bottom:max(14px,env(safe-area-inset-bottom)) !important; }
+}

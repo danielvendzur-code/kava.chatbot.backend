@@ -129,7 +129,7 @@
       <nav class="mode-switch" aria-label="Režim poradcu"><button data-mode="chat" type="button" aria-pressed="true" class="is-active">${icon('chat')}<span><b>Chat</b></span></button><button data-mode="advisor" type="button" aria-pressed="false">${icon('select')}<span><b>Výber kávy</b></span></button></nav>
       <div class="widget-stage">
         <section class="screen chat-screen is-active" id="chatScreen" aria-label="Chat s poradcom">
-          <button class="advisor-entry" id="openAdvisor" type="button"><span>${icon('select')}</span><span><b>Nájsť svoju kávu</b><em>4 otázky · výsledok do minúty</em></span>${icon('arrow')}</button>
+          <button class="advisor-entry" id="openAdvisor" type="button"><span class="advisor-entry__media">${productImage(findProduct('peru-valley'), 'advisor-entry-photo')}</span><span><b>Nájsť svoju kávu</b><em>4 otázky · výsledok do minúty</em></span>${icon('arrow')}</button>
           <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
           <div class="chat-bottom"><div class="quick-grid" id="quickChips" aria-label="Rýchle otázky"></div><form id="chatForm" class="composer"><input id="chatInput" autocomplete="off" placeholder="Opýtajte sa na kávu…" aria-label="Otázka o káve"><button type="submit" aria-label="Odoslať otázku">${icon('send')}</button></form></div>
         </section>
