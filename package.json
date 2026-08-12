@@ -3,7 +3,7 @@
   "private": true,
   "version": "7.0.0",
   "scripts": {
-    "test:browser": "playwright test tests/widget-smoke.spec.mjs tests/vitazov-conversion.spec.mjs tests/jolka.spec.mjs --reporter=line --workers=1"
+    "test:browser": "playwright test tests/praziarnicka-live.spec.mjs tests/widget-smoke.spec.mjs tests/vitazov-conversion.spec.mjs tests/jolka.spec.mjs --reporter=line --workers=1"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0"

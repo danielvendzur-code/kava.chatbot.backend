@@ -19,46 +19,54 @@
     chat: svg(path('M5 5h14v10H9l-4 4V5Z')),
     cup: svg(path('M5 7h11v7a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V7Zm11 2h2a2 2 0 0 1 0 4h-2')),
     check: svg(path('m5 12 4 4L19 6')),
-    bag: svg(path('M6 8h12l-1 12H7L6 8Zm3 0V6a3 3 0 0 1 6 0v2')),
-    spark: svg(path('M12 3l1.4 5.4L19 10l-5.6 1.6L12 17l-1.4-5.4L5 10l5.6-1.6L12 3Z'))
+    spark: svg(path('M12 3l1.4 5.4L19 10l-5.6 1.6L12 17l-1.4-5.4L5 10l5.6-1.6L12 3Z')),
+    pin: svg(path('M12 21s6-5.2 6-11a6 6 0 1 0-12 0c0 5.8 6 11 6 11Zm0-8.3a2.7 2.7 0 1 0 0-5.4 2.7 2.7 0 0 0 0 5.4Z')),
+    bag: svg(path('M6 8h12l-1 12H7L6 8Zm3 0V6a3 3 0 0 1 6 0v2'))
   };
 
   const products = [
     {
-      id:'paganini', name:'Paganini blend', price:'od 11,90 €', profile:'Plná a čokoládová',
+      id:'paganini', name:'Paganini blend', subtitle:'75 % arabica · 25 % robusta', price:'od 11,90 €', profile:'Plná a čokoládová',
       url:'https://praziarnicka.sk/produkt/paganini-blend-75-arabica-25-robusta', photo:asset('official-paganini.jpg'),
       prep:['automatic','lever','moka'], taste:['balanced','chocolate','strong'], drink:['milk','black','both'], caffeine:['classic'],
       notes:['čokoláda','mandle','orechy'], reason:'Plná, príjemná káva, ktorá sa nestratí ani v cappuccine. Dobrá voľba na každý deň.'
     },
     {
-      id:'brazil', name:'Brazil Santos', price:'od 9,90 €', profile:'Jemná a sladká',
+      id:'brazil', name:'Brazil Santos', subtitle:'100 % arabica', price:'od 9,90 €', profile:'Jemná a sladká',
       url:'https://praziarnicka.sk/produkt/brazil-santos-100percent-arabica', photo:asset('official-brazil.jpg'),
       prep:['automatic','lever','moka','filter'], taste:['chocolate','balanced'], drink:['black','both'], caffeine:['classic'],
       notes:['kakao','sladkosť','jemná chuť'], reason:'Jemnejšia káva bez výraznej kyslosti. Ľahko sa pije a funguje pri viacerých spôsoboch prípravy.'
     },
     {
-      id:'puccini', name:'Puccini blend', price:'od 11,50 €', profile:'Silná a výrazná',
-      url:'https://praziarnicka.sk/produkt/puccini-60arabica-40-robusta', photo:asset('official-puccini.jpg'),
-      prep:['automatic','lever','moka'], taste:['strong','balanced','chocolate'], drink:['milk','both'], caffeine:['classic'],
-      notes:['tmavá čokoláda','marhuľa','hustá pena'], reason:'Výrazná káva s plnou chuťou. Vhodná najmä vtedy, keď ju radi pijete s mliekom.'
-    },
-    {
-      id:'cuba', name:'Cuba Serrano Lavado', price:'od 12,90 €', profile:'Sladká a orechová',
+      id:'cuba', name:'Cuba Serrano', subtitle:'100 % arabica', price:'od 12,90 €', profile:'Sladká a orechová',
       url:'https://praziarnicka.sk/produkt/cuba-serrano-lavado-100-arabica', photo:asset('official-cuba.jpg'),
       prep:['lever','moka','filter'], taste:['balanced','chocolate'], drink:['black'], caffeine:['classic'],
       notes:['kakao','tabak','vlašské orechy'], reason:'Plná a sladká káva s orechovou dochuťou. Najlepšie vynikne bez mlieka.'
     },
     {
-      id:'decaf', name:'Bezkofeínová Brazil', price:'od 12,90 €', profile:'Jemná a bez kofeínu',
+      id:'puccini', name:'Puccini blend', subtitle:'60 % arabica · 40 % robusta', price:'od 11,50 €', profile:'Silná a výrazná',
+      url:'https://praziarnicka.sk/produkt/puccini-60arabica-40-robusta', photo:asset('official-puccini.jpg'),
+      prep:['automatic','lever','moka'], taste:['strong','balanced','chocolate'], drink:['milk','both'], caffeine:['classic'],
+      notes:['tmavá čokoláda','marhuľa','hustá pena'], reason:'Výrazná káva s plnou chuťou. Vhodná najmä vtedy, keď ju radi pijete s mliekom.'
+    },
+    {
+      id:'decaf', name:'Bezkofeínová Brazil', subtitle:'100 % arabica', price:'od 12,90 €', profile:'Jemná a bez kofeínu',
       url:'https://praziarnicka.sk/produkt/bezkofeinova-kava-brazilia', photo:asset('official-bezkofeinova.jpg'),
       prep:['automatic','lever','moka','filter'], taste:['chocolate','balanced'], drink:['black','milk','both'], caffeine:['decaf'],
       notes:['sladká','jemná','dobrá na večer'], reason:'Dobrá káva aj na večer. Je jemná a sladká, len bez povzbudenia.'
     }
   ];
 
+  const prepPhotos = {
+    automatic: asset('prep-automatic.webp'),
+    lever: asset('prep-lever.webp'),
+    moka: asset('prep-moka.webp'),
+    filter: asset('prep-filter.webp')
+  };
+
   const questions = [
     { key:'prep', label:'Príprava', title:'Ako si kávu pripravujete?', options:[
-      ['automatic','Automat','Rýchlo stlačením tlačidla'],
+      ['automatic','Automat','Káva stlačením tlačidla'],
       ['lever','Pákový kávovar','Espresso pripravujete ručne'],
       ['moka','Moka kanvička','Silnejšia káva zo sporáka'],
       ['filter','Filter','V60, dripper alebo prekvapkávanie']
@@ -94,50 +102,65 @@
     interacted:false,
     busy:false,
     messages:[{ role:'assistant', text:'Dobrý deň. Povedzte mi, ako si kávu pripravujete alebo čo vám chutí. Pomôžem vám zúžiť výber.' }],
-    lastFocus:null,
-    scrollY:0,
-    previewClosed:false
+    lastFocus:null
   };
 
+  const productCard = (product) => `
+    <a class="pz13-site-product" href="${product.url}" target="_blank" rel="noreferrer">
+      <span class="pz13-site-product__photo"><img src="${product.photo}" alt="${esc(product.name)}"></span>
+      <span class="pz13-site-product__copy"><small>${esc(product.subtitle)}</small><b>${esc(product.name)}</b><strong>${esc(product.price)}</strong></span>
+      <span class="pz13-site-product__arrow">${icons.arrow}</span>
+    </a>`;
+
   root.innerHTML = `
-    <main class="pz13-page" aria-labelledby="pz13-title">
-      <header class="pz13-head">
-        <div class="pz13-brand"><img src="${logoUrl}" alt="Pražiarnička by Caffè Vita"><span><b>Pražiarnička</b><small>ukážka predajného poradcu</small></span></div>
-        <a class="pz13-by" href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk ↗</a>
+    <main class="pz13-site" aria-label="Pražiarnička — ukážka webu s kávovým poradcom">
+      <header class="pz13-site-head">
+        <a class="pz13-site-logo" href="https://praziarnicka.sk/" target="_blank" rel="noreferrer"><img src="${logoUrl}" alt="Pražiarnička by Caffè Vita"></a>
+        <nav class="pz13-site-nav" aria-label="Navigácia Pražiarničky">
+          <a href="https://praziarnicka.sk/o-nas" target="_blank" rel="noreferrer">O nás</a>
+          <a href="https://praziarnicka.sk/eshop" target="_blank" rel="noreferrer">E-shop</a>
+          <a href="https://praziarnicka.sk/" target="_blank" rel="noreferrer">Kaviareň</a>
+          <button id="pz13-hero-open" type="button">Vybrať kávu ${icons.arrow}</button>
+        </nav>
       </header>
 
-      <section class="pz13-hero">
-        <div class="pz13-copy">
-          <span class="pz13-eyebrow">AKO TO FUNGUJE PRE ZÁKAZNÍKA</span>
-          <h1 id="pz13-title">Z neistoty pri výbere ku konkrétnej káve za štyri kroky.</h1>
-          <p>Zákazník nemusí poznať odrody ani praženie. Poradca sa opýta na prípravu, chuť, spôsob pitia a kofeín, potom vysvetlí výsledok a pošle ho na konkrétny produkt.</p>
-          <button class="pz13-primary" id="pz13-hero-open" type="button">Otvoriť poradcu ${icons.arrow}</button>
+      <section class="pz13-site-hero">
+        <div class="pz13-site-copy">
+          <span class="pz13-site-eyebrow">PRAŽIAREŇ KÁVY A KAVIAREŇ V TRENČÍNE</span>
+          <h1>Vitajte v Pražiarničke.</h1>
+          <h2>Prémiová kvalita,<br>jedinečná chuť.</h2>
+          <p>Čerstvo pražená zrnková aj mletá káva z vybraných svetových plantáží. Vyberte si z ponuky alebo si nechajte odporučiť tú správnu podľa vašej chuti.</p>
+          <div class="pz13-site-actions">
+            <a href="https://praziarnicka.sk/eshop" target="_blank" rel="noreferrer">Do e-shopu ${icons.bag}</a>
+            <a class="is-ghost" href="https://praziarnicka.sk/o-nas" target="_blank" rel="noreferrer">Spoznajte Pražiarničku ${icons.arrow}</a>
+          </div>
         </div>
 
-        <aside class="pz13-flow" aria-label="Štyri kroky poradcu">
-          <div class="pz13-flow__lead"><span>PROBLÉM</span><b>„Neviem, ktorú kávu si mám vybrať.“</b></div>
-          <div class="pz13-flow__steps">
-            <article><i>01</i><div><b>Príprava</b><span>automat · páka · moka · filter</span></div></article>
-            <article><i>02</i><div><b>Chuť</b><span>čokoládová · vyvážená · ovocná</span></div></article>
-            <article><i>03</i><div><b>Spôsob pitia</b><span>čierna · s mliekom · oboje</span></div></article>
-            <article><i>04</i><div><b>Kofeín</b><span>denná · bezkofeínová</span></div></article>
-          </div>
-          <div class="pz13-flow__result"><span>${icons.spark}</span><div><small>VÝSLEDOK</small><b>Konkrétna káva + dôvod + odkaz na produkt</b></div>${icons.arrow}</div>
-        </aside>
+        <div class="pz13-flow" aria-label="Výber z ponuky Pražiarničky">
+          <span class="pz13-flow__stamp">ČERSTVO PRAŽENÉ · TRENČÍN</span>
+          <div class="pz13-flow__bag pz13-flow__bag--main"><img src="${products[1].photo}" alt="Brazil Santos"><span><small>100 % arabica</small><b>Brazil Santos</b><strong>od 9,90 €</strong></span></div>
+          <div class="pz13-flow__bag pz13-flow__bag--side"><img src="${products[0].photo}" alt="Paganini blend"></div>
+          <button class="pz13-flow__advisor" type="button" data-open-advisor><span>${icons.spark}</span><div><small>NEVIETE, KTORÚ?</small><b>Nájdeme vašu kávu za 4 kroky.</b></div>${icons.arrow}</button>
+        </div>
       </section>
 
-      <footer class="pz13-proof" aria-label="Čo poradca rieši">
-        <div><b>Menej váhania</b><span>Jedna konkrétna voľba namiesto katalógu.</span></div>
-        <div><b>Jednoduchšie vysvetlenie</b><span>Chuť a príprava bez odborných výrazov.</span></div>
-        <div><b>Chat aj výber</b><span>Otázka alebo štyri rýchle kroky.</span></div>
-        <div><b>Priamy nákupný krok</b><span>Výsledok vedie na konkrétny produkt.</span></div>
+      <section class="pz13-site-products" aria-label="Naša ponuka">
+        <div class="pz13-site-products__title"><span>NAŠA PONUKA</span><b>Čerstvo pražená káva</b><a href="https://praziarnicka.sk/eshop" target="_blank" rel="noreferrer">Pozrieť všetky ${icons.arrow}</a></div>
+        <div class="pz13-site-products__grid">${products.slice(0,4).map(productCard).join('')}</div>
+      </section>
+
+      <footer class="pz13-proof" aria-label="Výhody Pražiarničky">
+        <div><b>Poštovné zdarma</b><span>pri objednávke nad 60 €</span></div>
+        <div><b>Čerstvo pražená káva</b><span>pražená každý týždeň</span></div>
+        <div><b>98 % spokojnosť</b><span>tisíce spokojných zákazníkov</span></div>
+        <div><b>Osobný odber</b><span>v kaviarni v Trenčíne</span></div>
       </footer>
     </main>
 
     <div class="pz13-launcher" id="pz13-launcher-wrap">
       <button class="pz13-preview" id="pz13-preview" type="button">
         <b>Neviete, ktorú kávu vybrať?</b>
-        <span>4 krátke otázky · konkrétny výsledok</span>
+        <span>4 krátke otázky · konkrétne odporúčanie</span>
       </button>
       <button class="pz13-launcher__button" id="pz13-open" type="button" aria-label="Otvoriť kávového poradcu" aria-expanded="false">
         <img src="${iconUrl}" alt="">
@@ -155,12 +178,15 @@
         </div>
       </header>
 
-      <nav class="pz13-mode" aria-label="Režim poradcu">
-        <button data-mode="chat" type="button" aria-pressed="true" class="is-active">${icons.chat}<b>Chat</b></button>
-        <button data-mode="advisor" type="button" aria-pressed="false">${icons.cup}<b>Výber kávy</b></button>
-      </nav>
-
       <div class="pz13-stage" id="pz13-stage"></div>
+
+      <div class="pz13-mode-shell">
+        <nav class="pz13-mode" aria-label="Režim poradcu">
+          <span class="pz13-mode-thumb" aria-hidden="true"></span>
+          <button data-mode="chat" type="button" aria-pressed="true" class="is-active">${icons.chat}<b>Chat</b></button>
+          <button data-mode="advisor" type="button" aria-pressed="false">${icons.cup}<b>Výber kávy</b></button>
+        </nav>
+      </div>
     </section>`;
 
   const widget = root.querySelector('#pz13-widget');
@@ -168,28 +194,24 @@
   const launcherWrap = root.querySelector('#pz13-launcher-wrap');
   const preview = root.querySelector('#pz13-preview');
   const backdrop = root.querySelector('#pz13-backdrop');
+  const mode = root.querySelector('.pz13-mode');
   const modeButtons = [...root.querySelectorAll('.pz13-mode button')];
 
-  function setMode(mode) {
-    state.mode = mode;
+  function setMode(nextMode) {
+    state.mode = nextMode;
+    mode.classList.toggle('is-advisor', nextMode === 'advisor');
     modeButtons.forEach((button) => {
-      const active = button.dataset.mode === mode;
+      const active = button.dataset.mode === nextMode;
       button.classList.toggle('is-active', active);
       button.setAttribute('aria-pressed', String(active));
     });
-    if (mode === 'chat') renderChat(); else renderAdvisor();
+    if (nextMode === 'chat') renderChat(); else renderAdvisor();
   }
 
-  function lockPage() {
-    state.scrollY = window.scrollY;
-    document.documentElement.classList.add('pz13-open');
-  }
+  function lockPage() { document.documentElement.classList.add('pz13-open'); }
+  function unlockPage() { document.documentElement.classList.remove('pz13-open'); }
 
-  function unlockPage() {
-    document.documentElement.classList.remove('pz13-open');
-  }
-
-  function openWidget(mode = state.mode) {
+  function openWidget(nextMode = state.mode) {
     if (!state.open) state.lastFocus = document.activeElement;
     state.open = true;
     widget.classList.add('is-open');
@@ -199,7 +221,7 @@
     backdrop.hidden = false;
     requestAnimationFrame(() => backdrop.classList.add('is-visible'));
     lockPage();
-    setMode(mode);
+    setMode(nextMode);
     requestAnimationFrame(() => root.querySelector('#pz13-close')?.focus());
   }
 
@@ -223,7 +245,7 @@
     if (/mlie|capp|latte|flat/.test(q)) return 'Do cappuccina a latte sa hodí Paganini alebo Puccini. Obe majú dosť plnú chuť, aby sa v mlieku nestratili.';
     if (/bez kofe|večer|decaf/.test(q)) return 'Na večer je vhodná Bezkofeínová Brazil. Je jemná a sladká, len bez kofeínu.';
     if (/filter|v60|drip/.test(q)) return 'Na filter by som pozeral najmä na Brazil Santos alebo Cuba Serrano. Krátky výber ešte zohľadní, či chcete skôr jemnú alebo výraznejšiu chuť.';
-    return 'Pomôžem vám. Napíšte, ako kávu pripravujete a aké chute máte radi, alebo použite hore „Výber kávy“ a prejdite štyri krátke kroky.';
+    return 'Pomôžem vám. Napíšte, ako kávu pripravujete a aké chute máte radi, alebo použite dole „Výber kávy“ a prejdite štyri krátke kroky.';
   }
 
   function messageMarkup(message) {
@@ -239,8 +261,8 @@
     stage.innerHTML = `
       <section class="pz13-chat">
         <div class="pz13-chat__messages" id="pz13-messages" aria-live="polite">
-          ${state.messages.map(messageMarkup).join('')}
           ${!state.interacted ? `<button class="pz13-advisor-entry" id="pz13-advisor-entry" type="button"><span>${icons.spark}</span><div><b>Nájsť svoju kávu za 4 kroky</b><small>Príprava · chuť · nápoj · kofeín</small></div>${icons.arrow}</button>` : ''}
+          ${state.messages.map(messageMarkup).join('')}
         </div>
         <div class="pz13-chat__bottom">
           ${!state.interacted ? `<div class="pz13-chips">${chips.map((chip) => `<button type="button" class="pz13-chip">${chip}</button>`).join('')}</div>` : ''}
@@ -286,7 +308,7 @@
         if (reply) fallback.text = reply;
       }
     } catch (_) {
-      // Deterministic catalogue answer remains visible when the provider is unavailable.
+      // A deterministic catalogue answer stays visible when the provider is unavailable.
     } finally {
       state.busy = false;
       renderChat();
@@ -319,11 +341,14 @@
     return `--pz13-x:${pos[optionIndex] ?? 0}%;--pz13-y:${pos[stepIndex] ?? 0}%`;
   }
 
+  function optionVisual(question, value, title, index) {
+    const proxy = `<span class="pz13-option__photo${question.key === 'prep' ? ' is-proxy' : ''}" role="img" aria-label="${esc(title)}" style="${spriteStyle(index, state.step)}"></span>`;
+    if (question.key !== 'prep') return `<span class="pz13-option__visual">${proxy}</span>`;
+    return `<span class="pz13-option__visual"><img class="pz13-option__img" src="${prepPhotos[value]}" alt="${esc(title)}">${proxy}</span>`;
+  }
+
   function renderAdvisor() {
-    if (state.result) {
-      renderResult();
-      return;
-    }
+    if (state.result) { renderResult(); return; }
     const question = questions[state.step];
     const selected = state.answers[question.key];
     stage.innerHTML = `
@@ -338,8 +363,8 @@
           <h2>${question.title}</h2>
           <div class="pz13-options">
             ${question.options.map(([value,title,description], index) => `
-              <button class="pz13-option ${selected === value ? 'is-selected' : ''}" data-value="${value}" type="button" aria-pressed="${selected === value}" style="${spriteStyle(index, state.step)}">
-                <span class="pz13-option__photo" role="img" aria-label="${esc(title)}"></span>
+              <button class="pz13-option ${selected === value ? 'is-selected' : ''}" data-value="${value}" type="button" aria-pressed="${selected === value}">
+                ${optionVisual(question, value, title, index)}
                 <span class="pz13-option__copy"><b>${esc(title)}</b><small>${esc(description)}</small></span>
                 <i>${selected === value ? icons.check : ''}</i>
               </button>`).join('')}
@@ -448,8 +473,9 @@
     if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
   }
 
-  root.querySelector('#pz13-hero-open').addEventListener('click', () => openWidget('chat'));
-  root.querySelector('#pz13-open').addEventListener('click', () => openWidget(state.mode));
+  root.querySelector('#pz13-hero-open').addEventListener('click', () => openWidget('advisor'));
+  root.querySelectorAll('[data-open-advisor]').forEach((button) => button.addEventListener('click', () => openWidget('advisor')));
+  root.querySelector('#pz13-open').addEventListener('click', () => openWidget('chat'));
   preview.addEventListener('click', () => openWidget('advisor'));
   root.querySelector('#pz13-close').addEventListener('click', closeWidget);
   root.querySelector('#pz13-reset').addEventListener('click', resetAll);
