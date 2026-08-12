@@ -7,6 +7,11 @@
     return;
   }
   if (requested && /^[a-z0-9-]+$/i.test(requested)) {
-    history.replaceState(null, '', `/ukazka/${requested}`);
+    // Canonicalize the demo URL without destroying unrelated query state.
+    // QA/fallback flags are intentionally preserved because the routed runtime reads them after bootstrap.
+    const canonicalParams = new URLSearchParams(location.search);
+    canonicalParams.delete('demo');
+    const query = canonicalParams.toString();
+    history.replaceState(null, '', `/ukazka/${requested}${query ? `?${query}` : ''}`);
   }
 })();
