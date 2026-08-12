@@ -4,9 +4,8 @@
   const chatScreen = document.querySelector('#chatScreen');
   const chat = document.querySelector('#chat');
   const entry = document.querySelector('#entry');
-  const composer = document.querySelector('#composer');
   const reset = document.querySelector('#reset');
-  if (!chatScreen || !chat || !entry || !composer) return;
+  if (!chatScreen || !chat || !entry) return;
 
   // Remove technical/AI-demo copy from the owner-facing presentation.
   const flag = document.querySelector('.demo-flag');
@@ -20,12 +19,13 @@
   // advisor handoff instead of being pushed down by it.
   chatScreen.insertBefore(chat, entry);
 
-  // Once the customer sends a free-text message, the only mode change is the
-  // persistent top Chat / Výber kávy switch. Reset restores the initial handoff.
-  composer.addEventListener('submit', () => {
-    entry.hidden = true;
-  });
-  reset?.addEventListener('click', () => {
-    entry.hidden = false;
-  });
+  // Any first customer message — free text or a quick chip — removes the
+  // secondary advisor handoff. The persistent top switch remains the only way
+  // to change modes after the conversation has started.
+  const syncEntry = () => {
+    entry.hidden = Boolean(chat.querySelector('.msg--user'));
+  };
+  new MutationObserver(syncEntry).observe(chat, { childList:true, subtree:true });
+  reset?.addEventListener('click', () => requestAnimationFrame(syncEntry));
+  syncEntry();
 })();
