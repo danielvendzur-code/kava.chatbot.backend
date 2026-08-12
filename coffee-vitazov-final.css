@@ -242,12 +242,12 @@ body[data-demo="vitazov"] .launcher__teaser span { color: rgba(7,31,26,.58) !imp
 .kv-final-brand-copy small { color: rgba(255,255,255,.6); font-size: 7.5px; }
 
 body[data-demo="vitazov"] .widget {
-  width: min(420px, calc(100vw - 28px)) !important;
-  height: min(724px, calc(100dvh - 28px)) !important;
-  max-width: 420px !important;
-  max-height: 724px !important;
+  width: min(452px, calc(100vw - 28px)) !important;
+  height: min(788px, calc(100dvh - 28px)) !important;
+  max-width: 452px !important;
+  max-height: 788px !important;
   border: 1px solid var(--kv-line) !important;
-  border-radius: 27px !important;
+  border-radius: 30px !important;
   color: var(--kv-dark) !important;
   background: #fff !important;
   box-shadow: 0 38px 90px -32px rgba(7,31,26,.58) !important;
@@ -265,17 +265,17 @@ body[data-demo="vitazov"] .widget-brand .kv-widget-logo{width:76px!important;hei
 body[data-demo="vitazov"] .icon-button { width: 39px !important; height: 39px !important; color: #fff !important; background: rgba(255,255,255,.08) !important; }
 body[data-demo="vitazov"] .icon-button:hover { color: var(--kv-dark) !important; background: #fff !important; }
 body[data-demo="vitazov"] .mode {
-  width: calc(100% - 24px) !important;
+  width: calc(100% - 28px) !important;
   min-height: 58px !important;
   height: 58px !important;
   flex-basis: 58px !important;
-  margin: 9px 12px 7px !important;
+  margin: 12px 14px 8px !important;
   padding: 4px !important;
   border: 1px solid var(--kv-line) !important;
-  border-radius: 18px !important;
+  border-radius: 999px !important;
   background: #f1f3ef !important;
 }
-body[data-demo="vitazov"] .mode__indicator { background: var(--kv-deep) !important; }
+body[data-demo="vitazov"] .mode__indicator { border-radius:999px !important; background: var(--kv-deep) !important; }
 body[data-demo="vitazov"] .mode__button { min-height: 48px !important; color: rgba(7,31,26,.6) !important; font-size: 11px !important; }
 body[data-demo="vitazov"] .mode__button.is-active { color: #fff !important; }
 
@@ -341,10 +341,10 @@ body[data-demo="vitazov"] #chatScreen .message > div > small { display: block !i
 body[data-demo="vitazov"] #chatScreen .message--user > div > small { text-align: right; }
 
 body[data-demo="vitazov"] #chatScreen .chips { display: grid !important; grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap: 7px !important; padding: 9px 12px 8px !important; border-top: 1px solid var(--kv-line); background: #fff !important; }
-body[data-demo="vitazov"] #chatScreen .chip { width: 100% !important; min-height: 37px !important; padding: 0 9px !important; border: 1px solid rgba(12,68,56,.22) !important; border-radius: 999px !important; color: var(--kv-dark) !important; background: var(--kv-lime-soft) !important; font-size: 9px !important; }
+body[data-demo="vitazov"] #chatScreen .chip { width: 100% !important; min-height: 42px !important; padding: 0 9px !important; border: 1px solid rgba(12,68,56,.22) !important; border-radius: 999px !important; color: var(--kv-dark) !important; background-color: var(--kv-lime-soft) !important; background-image:linear-gradient(90deg,var(--kv-lime),var(--kv-lime)) !important; background-repeat:no-repeat !important; background-position:left center !important; background-size:0 100% !important; font-size: 9px !important; transition:background-size .28s ease,border-color .2s ease,transform .2s ease !important; }
 body[data-demo="vitazov"] #chatScreen .chip::before { display: none !important; }
 body[data-demo="vitazov"] #chatScreen .chip:hover,
-body[data-demo="vitazov"] #chatScreen .chip.is-sending { border-color: var(--kv-lime) !important; color: var(--kv-dark) !important; background: var(--kv-lime) !important; }
+body[data-demo="vitazov"] #chatScreen .chip.is-sending { border-color: var(--kv-lime) !important; color: var(--kv-dark) !important; background-size:100% 100% !important; }
 body[data-demo="vitazov"] #chatScreen .composer {
   min-height: 54px !important;
   grid-template-columns: minmax(0,1fr) 42px !important;
@@ -368,6 +368,7 @@ body[data-demo="vitazov"] .progress i { height: 7px !important; background: #e7e
 body[data-demo="vitazov"] .progress i.is-done { background: var(--kv-deep) !important; }
 body[data-demo="vitazov"] .progress i.is-active { background: var(--kv-lime) !important; }
 body[data-demo="vitazov"] .advisor { padding: 9px 12px 12px !important; background: #fff !important; }
+body[data-demo="vitazov"] .advisor:has(.options) { overflow:hidden !important; }
 body[data-demo="vitazov"] .question,
 body[data-demo="vitazov"] .result-head { margin: 0 2px 9px !important; }
 body[data-demo="vitazov"] .question > span,
@@ -487,10 +488,10 @@ body[data-demo="vitazov"] .office-followup { display: none !important; }
   body[data-demo="vitazov"] .widget { inset: 0 !important; width: 100% !important; height: 100dvh !important; max-width: none !important; max-height: none !important; border: 0 !important; border-radius: 0 !important; }
   body[data-demo="vitazov"] .widget__header { min-height: 66px !important; height: 66px !important; flex-basis: 66px !important; padding-top: max(9px, env(safe-area-inset-top)) !important; }
   body[data-demo="vitazov"] .advisor { padding: 7px 10px 10px !important; }
-  body[data-demo="vitazov"] .options { grid-template-columns: 1fr !important; }
-  body[data-demo="vitazov"] .option { min-height: 82px !important; grid-template-columns: 82px minmax(0,1fr) !important; grid-template-rows: 1fr !important; align-items: center !important; padding: 6px 34px 6px 6px !important; }
-  body[data-demo="vitazov"] .option__photo { grid-column: 1 !important; grid-row: 1 !important; width: 82px !important; height: 68px !important; aspect-ratio: auto !important; }
-  body[data-demo="vitazov"] .option__copy { grid-column: 2 !important; grid-row: 1 !important; padding: 0 !important; }
+  body[data-demo="vitazov"] .options { grid-template-columns: repeat(2,minmax(0,1fr)) !important; gap:8px !important; }
+  body[data-demo="vitazov"] .option { min-height: 0 !important; grid-template-columns: 1fr !important; grid-template-rows: auto auto !important; align-items: stretch !important; padding: 6px !important; }
+  body[data-demo="vitazov"] .option__photo { grid-column: 1 !important; grid-row: 1 !important; width: 100% !important; height: auto !important; aspect-ratio: 4/3 !important; }
+  body[data-demo="vitazov"] .option__copy { grid-column: 1 !important; grid-row: 2 !important; padding: 0 5px 4px !important; }
 }
 
 @media (max-width: 370px) {
