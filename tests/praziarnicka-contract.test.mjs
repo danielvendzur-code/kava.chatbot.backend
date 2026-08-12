@@ -37,12 +37,13 @@ test('four-step advisor advances automatically once and preserves answers', () =
   assert.equal((questions.match(/key: '/g) || []).length, 4);
   assert.doesNotMatch(app, /id="continueQuestion"/);
   assert.match(app, /state\.transitioning/);
-  assert.match(app, /setTimeout\(advanceQuestion, delay\)/);
+  assert.match(app, /setTimeout\(\(\) => \{/);
+  assert.match(app, /\}, 330\);/);
   assert.match(app, /state\.answers\[question\.key\]/);
   assert.match(app, /event\.key === 'Escape'/);
 });
 
 test('recommendations link to five real Praziarnicka products', () => {
   assert.equal((app.match(/https:\/\/praziarnicka\.sk\/produkt\//g) || []).length, 5);
-  assert.match(app, /Pozrieť kávu/);
+  assert.match(app, /Otvoriť e-shop/);
 });

@@ -18,7 +18,7 @@ test('final router keeps Kaffa metadata and dedicated editorial runtime', () => 
 });
 
 test('owner page explains the proposed solution without disclaimers', () => {
-  assert.match(finalApp, /Ukážka riešenia/);
+  assert.match(finalApp, /kf-owner-badge/);
   assert.match(finalApp, /mojchatbot\.sk/);
   assert.match(finalApp, /Káva vybraná za minútu/);
   assert.match(finalApp, /Odpovie 24\/7/);

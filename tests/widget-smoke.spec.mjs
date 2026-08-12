@@ -5,11 +5,11 @@ const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
 fs.mkdirSync('artifacts', { recursive: true });
 
 const demos = [
-  { slug: 'praziarnicka', title: 'Pražiarnička – kávový poradca', resource: 'praziarnicka-v12.js' },
-  { slug: 'diamonds', title: 'Diamonds Roastery – kávový poradca', resource: 'coffee-diamonds-final.js' },
-  { slug: 'kaffa', title: 'Kaffa Roastery – nájdite svoju kávu', resource: 'kaffa-final.js' },
-  { slug: 'vitazov', title: 'Káva Víťazov – kávový poradca', resource: 'coffee-vitazov-final.js' },
-  { slug: 'concept', title: 'Concept Coffee Roasters – kávový poradca', resource: 'concept-seasonal-init.js' }
+  { slug: 'praziarnicka', title: /Pražiarnička/, resource: 'praziarnicka-v12.js' },
+  { slug: 'diamonds', title: /Diamonds Roastery/, resource: 'coffee-diamonds-final.js' },
+  { slug: 'kaffa', title: /Kaffa Roastery/, resource: 'kaffa-final.js' },
+  { slug: 'vitazov', title: /Káva Víťazov/, resource: 'coffee-vitazov-final.js' },
+  { slug: 'concept', title: /Concept Coffee Roasters/, resource: 'concept-seasonal-init.js' }
 ];
 
 function watchConsole(page) {
