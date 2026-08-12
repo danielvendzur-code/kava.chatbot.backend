@@ -9,3 +9,82 @@ html body[data-demo] .launcher__teaser span,
 html body[data-demo] .launcher-teaser span,
 html body[data-demo] .pz-preview span,
 html body[data-demo] .kf-teaser span{font-size:11px!important}
+
+/* Diamonds and Concept still had one black CTA strip in chat. Remove it completely. */
+html body[data-demo="diamonds"] #chatScreen #openAdvisor,
+html body[data-demo="concept"] #chatScreen #openAdvisor{
+  color:var(--nb-ink)!important;
+  background:var(--nb-soft)!important;
+  border:1px solid var(--nb-line)!important;
+  box-shadow:none!important;
+}
+html body[data-demo="diamonds"] #chatScreen #openAdvisor b,
+html body[data-demo="diamonds"] #chatScreen #openAdvisor em,
+html body[data-demo="concept"] #chatScreen #openAdvisor b,
+html body[data-demo="concept"] #chatScreen #openAdvisor span{color:var(--nb-ink)!important}
+html body[data-demo="diamonds"] #chatScreen #openAdvisor:hover,
+html body[data-demo="concept"] #chatScreen #openAdvisor:hover{background:color-mix(in srgb,var(--nb-accent) 25%,white)!important}
+
+/* Concept teaser belongs above the launcher, not at the viewport floor. */
+html body[data-demo="concept"] #launcher{position:fixed!important}
+html body[data-demo="concept"] #launcherTeaser{
+  position:absolute!important;
+  right:0!important;
+  bottom:88px!important;
+  top:auto!important;
+  margin:0!important;
+  transform:none!important;
+}
+
+/* Brand marks must remain visible on the new light headers. */
+html body[data-demo="diamonds"] .widget-head .brand-lockup img,
+html body[data-demo="diamonds"] .widget__header .brand-lockup img{
+  filter:none!important;
+  opacity:1!important;
+}
+html body[data-demo="concept"] .concept-widget-logo{
+  filter:none!important;
+  opacity:1!important;
+}
+html body[data-demo="vitazov"] .widget-brand__mark,
+html body[data-demo="vitazov"] .widget-brand__mark .advisor-logo,
+html body[data-demo="vitazov"] .widget-brand__copy strong{color:var(--nb-ink)!important;opacity:1!important}
+html body[data-demo="kaffa"] .kf-widget-brand{
+  display:flex!important;
+  align-items:center!important;
+  gap:10px!important;
+  opacity:1!important;
+  visibility:visible!important;
+}
+html body[data-demo="kaffa"] .kf-widget-brand>.kf-wordmark,
+html body[data-demo="kaffa"] .kf-widget-brand__copy{
+  display:grid!important;
+  opacity:1!important;
+  visibility:visible!important;
+  color:var(--nb-ink)!important;
+}
+html body[data-demo="kaffa"] .kf-widget-brand__copy strong{display:block!important;color:var(--nb-ink)!important;font-size:12px!important}
+html body[data-demo="kaffa"] .kf-widget-brand__copy small{display:block!important;color:#66706c!important;font-size:9px!important}
+
+/* Pražiarnička official black-backed logo becomes black-on-white inside the light widget. */
+html body[data-demo="praziarnicka"] .pz-widget-logo{filter:invert(1)!important;background:#fff!important}
+html body[data-demo="praziarnicka"] .pz-assistant-avatar{
+  background:#fff!important;
+  border:1px solid var(--nb-line)!important;
+}
+html body[data-demo="praziarnicka"] .pz-assistant-avatar img{filter:invert(1)!important}
+html body[data-demo="praziarnicka"] .pz-advisor-cta>svg{
+  color:#fff!important;
+  background:var(--nb-strong)!important;
+}
+
+/* Concept's generic chatbot marks should also be light, not black circles. */
+html body[data-demo="concept"] .advisor-entry__mark{
+  color:var(--nb-strong)!important;
+  background:#fff!important;
+  border:1px solid var(--nb-line)!important;
+}
+
+@media(max-width:760px){
+  html body[data-demo="concept"] #launcherTeaser{bottom:78px!important;right:0!important}
+}
