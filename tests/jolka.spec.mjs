@@ -42,7 +42,9 @@ test('owner landing carries the real Jolka identity and photography', async ({ p
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto(JOLKA, { waitUntil: 'networkidle' });
 
-  await expect(page.locator('h1')).toContainText('Vitajte vo vašom návrhu AI poradcu');
+  await expect(page.locator('h1')).toContainText('Vitajte vo vašom návrhu kávového poradcu');
+  await expect(page.locator('.demo-flag')).toContainText('Kávový poradca');
+  await expect(page.locator('.hero__hint')).not.toContainText(/Funguje s reálnou ponukou|overenou 8\. 8\. 2026/i);
   await expect(page.locator('.hero__lead')).toContainText('klasickými zmesami a výberovou kávou');
   await expect(page.locator('.benefit')).toHaveCount(3);
 
@@ -154,7 +156,7 @@ test('back keeps the answer, alternative swaps the product, reset clears everyth
   await expect(page.locator('.option.is-selected')).toHaveCount(0);
 });
 
-test('chat has four large chips, no contact block, and answers from the catalogue offline', async ({ page }) => {
+test('chat has four large chips, removes the handoff after first message, and answers offline', async ({ page }) => {
   const errors = watchConsole(page);
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto(JOLKA, { waitUntil: 'networkidle' });
@@ -176,14 +178,22 @@ test('chat has four large chips, no contact block, and answers from the catalogu
   expect(body).not.toMatch(/tel:|mailto:/);
   await expect(page.locator('.widget__note')).toContainText('mojchatbot.sk');
 
+  // welcome conversation is visually above the optional handoff
   await expect(page.locator('.msg .bubble')).toHaveCount(1);
   await expect(page.locator('#entry')).toBeVisible();
+  const chatY = (await page.locator('#chat').boundingBox()).y;
+  const entryY = (await page.locator('#entry').boundingBox()).y;
+  expect(chatY).toBeLessThan(entryY);
 
+  // A quick chip is a real user message too: handoff disappears immediately.
   await page.locator('.chip').nth(3).click();
   await expect(page.locator('.msg--user .bubble')).toHaveText('Niečo netradičné');
+  await expect(page.locator('#entry')).toBeHidden();
   await expect(page.locator('.msg:not(.msg--user) .bubble').last()).toContainText('Vietnam Lang Biang', { timeout: 5000 });
 
-  await page.locator('#entry').click();
+  // The persistent top switch is now the only route back to the advisor.
+  await expect(page.locator('.mode__button[data-mode="advisor"]')).toBeVisible();
+  await page.locator('.mode__button[data-mode="advisor"]').click();
   await expect(page.locator('#advisorScreen')).toHaveClass(/is-active/);
   expect(errors).toEqual([]);
 });

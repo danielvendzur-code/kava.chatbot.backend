@@ -39,8 +39,12 @@ jobs:
           test -f coffee-local-api.js
           test -f api/chat.js
           test -f vercel.json
+          test -f praziarnicka-v13.css
+          test -f praziarnicka-v13.js
           grep -Fq 'coffee-final-entry.js' index.html
           for slug in praziarnicka diamonds kaffa vitazov concept jolka; do grep -Fq "$slug" coffee-final-entry.js || test "$slug" = jolka; done
+          grep -Fq 'praziarnicka-v13.css' coffee-final-entry.js
+          grep -Fq 'praziarnicka-v13.js' coffee-final-entry.js
           grep -Fq '/ukazka/jolka' vercel.json
           grep -Fq '/ukazka/:slug' vercel.json
           grep -Fq "praziarnicka:" api/chat.js
@@ -58,7 +62,7 @@ jobs:
           node --check coffee-brand-overrides.js
           node --check coffee-vitazov-overrides.js
           node --check coffee-v8.js
-          node --check praziarnicka-v12.js
+          node --check praziarnicka-v13.js
           node --check concept-seasonal-init.js
           node --check kaffa-editorial.js
           node --check kaffa-final.js
@@ -75,15 +79,17 @@ jobs:
             tests/kaffa-contract.test.mjs \
             tests/vitazov-contract.test.mjs
 
-      - name: Validate Jolka is unchanged and standalone
+      - name: Validate Jolka standalone app and chat cleanup
         run: |
           test -f jolka.html
           test -f jolka/jolka.css
           test -f jolka/jolka-data.js
           test -f jolka/jolka-app.js
+          test -f jolka/jolka-chat-flow.js
           grep -Fq '/jolka/jolka.css' jolka.html
           grep -Fq '/jolka/jolka-data.js' jolka.html
           grep -Fq '/jolka/jolka-app.js' jolka.html
+          grep -Fq '/jolka/jolka-chat-flow.js' jolka.html
           grep -Fq '"/ukazka/jolka"' vercel.json
           grep -Fq "location.replace('/jolka.html')" coffee-bootstrap.js
           grep -Fq 'praziarenjolka.sk/eshop-kava/' api/chat.js
@@ -96,6 +102,7 @@ jobs:
           test "$(ls assets/jolka/tile/*.webp | wc -l)" -eq 14
           node --check jolka/jolka-data.js
           node --check jolka/jolka-app.js
+          node --check jolka/jolka-chat-flow.js
 
       - name: Run integrated desktop and mobile Chromium tests
         run: |

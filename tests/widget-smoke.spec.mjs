@@ -5,7 +5,7 @@ const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
 fs.mkdirSync('artifacts', { recursive: true });
 
 const demos = [
-  { slug:'praziarnicka', title:/Pražiarnička/, resource:'praziarnicka-v12.js', launcher:'#pz-launcher', teaser:'#pz-preview', teaserTitle:'#pz-preview b', teaserSub:'#pz-preview span', input:'#pz-input', bot:'.pz-bubble-assistant', panel:'#pz-widget', chat:'.pz-chat-panel' },
+  { slug:'praziarnicka', title:/Pražiarnička/, resource:'praziarnicka-v13.js', launcher:'#pz13-open', teaser:'#pz13-preview', teaserTitle:'#pz13-preview b', teaserSub:'#pz13-preview span', input:'#pz13-input', bot:'.pz13-message--assistant .pz13-bubble', panel:'#pz13-widget', chat:'.pz13-chat' },
   { slug:'diamonds', title:/Diamonds Roastery/, resource:'coffee-diamonds-final.js', launcher:'#launcherButton', teaser:'#teaser', teaserTitle:'#teaser strong', teaserSub:'#teaser span', input:'#chatInput', bot:'.chat-line:not(.chat-line--user) .chat-bubble', panel:'#widget', chat:'#chatScreen' },
   { slug:'kaffa', title:/Kaffa Roastery/, resource:'kaffa-final.js', launcher:'#launcher', teaser:'#teaser', teaserTitle:'#teaser b', teaserSub:'#teaser span', input:'#chatInput', bot:'.kf-message.bot', panel:'.kf-panel', chat:'.kf-chat' },
   { slug:'vitazov', title:/Káva Víťazov/, resource:'coffee-vitazov-final.js', launcher:'#openWidget', teaser:'#launcherTeaser', teaserTitle:'#launcherTeaser b', teaserSub:'#launcherTeaser span', input:'#chatInput', bot:'.message:not(.message--user) .bubble', panel:'#widget', chat:'#chatScreen' },
@@ -31,13 +31,17 @@ function watchConsole(page) {
   return { failures, stop(){ page.off('console', onConsole); page.off('pageerror', onPageError); page.off('response', onResponse); page.off('requestfailed', onRequestFailed); } };
 }
 
-async function waitForDemo(page) {
+async function waitForDemo(page, slug) {
   await page.waitForFunction(() => {
     const pz = document.querySelector('#praziarnicka-root');
     const shared = document.querySelector('#coffee-demo-root');
     return Boolean((pz && pz.childElementCount) || (shared && shared.childElementCount));
   });
-  await page.waitForFunction(() => document.documentElement.dataset.jolkaParity === 'ready');
+  if (slug === 'praziarnicka') {
+    await page.waitForFunction(() => document.documentElement.dataset.demoReady === 'true');
+  } else {
+    await page.waitForFunction(() => document.documentElement.dataset.jolkaParity === 'ready');
+  }
   await page.waitForTimeout(160);
 }
 
@@ -62,17 +66,22 @@ function expectNotNearBlack(rgb) {
   if (values.length === 3) expect(Math.max(...values)).toBeGreaterThan(70);
 }
 
-test('all five routed demos reach Jolka-parity owner readability and fit 1366x768', async ({ page }) => {
+test('all five routed demos fit 1366x768 and keep readable owner presentation', async ({ page }) => {
   await page.setViewportSize({ width:1366, height:768 });
   for (const demo of demos) {
     const consoleWatch = watchConsole(page);
     await page.goto(`${baseURL}/?demo=${demo.slug}`, { waitUntil:'networkidle' });
-    await waitForDemo(page);
+    await waitForDemo(page, demo.slug);
     await expect(page).toHaveTitle(demo.title);
 
     const resources = await page.evaluate(() => performance.getEntriesByType('resource').map(entry => entry.name));
     expect(resources.some(url => url.includes(demo.resource))).toBeTruthy();
-    expect(resources.some(url => url.includes('coffee-jolka-parity.css'))).toBeTruthy();
+    if (demo.slug === 'praziarnicka') {
+      expect(resources.some(url => url.includes('praziarnicka-v12'))).toBeFalsy();
+      expect(resources.some(url => url.includes('coffee-jolka-parity.css'))).toBeFalsy();
+    } else {
+      expect(resources.some(url => url.includes('coffee-jolka-parity.css'))).toBeTruthy();
+    }
     expect(resources.some(url => url.includes('coffee-no-black.css'))).toBeTruthy();
 
     const metrics = await page.evaluate(() => ({
@@ -89,9 +98,16 @@ test('all five routed demos reach Jolka-parity owner readability and fit 1366x76
     expect(metrics.text).not.toMatch(/Návrh AI|Vyskúšajte AI|Interaktívny návrh|Funguje s reálnou ponukou|overenou 8\. 8\. 2026/i);
     expectNotNearBlack(metrics.bg);
 
-    const strip = page.locator('.parity-bottom');
-    await expect(strip).toBeVisible();
-    await expect(strip.locator('.parity-bottom__item')).toHaveCount(4);
+    if (demo.slug === 'praziarnicka') {
+      const proof = page.locator('.pz13-proof > div');
+      await expect(proof).toHaveCount(4);
+      await expect(page.locator('.pz13-flow')).toBeVisible();
+      await expect(page.locator('.parity-pz-showcase')).toHaveCount(0);
+    } else {
+      const strip = page.locator('.parity-bottom');
+      await expect(strip).toBeVisible();
+      await expect(strip.locator('.parity-bottom__item')).toHaveCount(4);
+    }
 
     const launcher = page.locator(demo.launcher);
     await expect(launcher).toBeVisible();
@@ -119,7 +135,7 @@ test('all five chats are light, visibly answer and use readable chips/bubbles', 
   for (const demo of demos) {
     const consoleWatch = watchConsole(page);
     await page.goto(`${baseURL}/?demo=${demo.slug}`, { waitUntil:'networkidle' });
-    await waitForDemo(page);
+    await waitForDemo(page, demo.slug);
     await page.locator(demo.launcher).click({ force:true });
     const input = page.locator(demo.input);
     await expect(input).toBeVisible({ timeout:5000 });
@@ -131,7 +147,7 @@ test('all five chats are light, visibly answer and use readable chips/bubbles', 
     await expect(chatSurface).toBeVisible();
     expectNotNearBlack(await effectiveBackground(chatSurface));
 
-    const chips = page.locator('.pz-chip,#quickChips .chip,#quickChips button,.kf-chip').filter({ visible:true });
+    const chips = page.locator('.pz13-chip,.pz-chip,#quickChips .chip,#quickChips button,.kf-chip').filter({ visible:true });
     const chipCount = await chips.count();
     expect(chipCount).toBeGreaterThanOrEqual(4);
     const chipFont = await chips.first().evaluate(node => parseFloat(getComputedStyle(node).fontSize));
@@ -142,6 +158,12 @@ test('all five chats are light, visibly answer and use readable chips/bubbles', 
       expect(panelStyle.opacity).toBeGreaterThanOrEqual(.99);
       expectNotNearBlack(panelStyle.background);
       expect(await page.locator('.kf-widget-brand .kf-widget-title,.kf-widget-brand .kf-widget-bubble').filter({ visible:true }).count()).toBe(0);
+    }
+
+    if (demo.slug === 'praziarnicka') {
+      await expect(page.locator('.pz13-advisor-entry')).toBeVisible();
+      await expect(page.locator('.pz13-mode button')).toHaveCount(2);
+      await expect(page.locator('.pz13-mode-indicator')).toHaveCount(0);
     }
 
     const bots = page.locator(demo.bot);
@@ -163,16 +185,48 @@ test('all five chats are light, visibly answer and use readable chips/bubbles', 
     expect(bubbleMetrics.opacity).toBeGreaterThanOrEqual(.95);
     expectNotNearBlack(bubbleMetrics.bg);
 
+    if (demo.slug === 'praziarnicka') {
+      await expect(page.locator('.pz13-advisor-entry')).toHaveCount(0);
+      await expect(page.locator('.pz13-chip')).toHaveCount(0);
+      await expect(page.locator('.pz13-mode button[data-mode="advisor"]')).toBeVisible();
+    }
+
     expect(consoleWatch.failures).toEqual([]);
     consoleWatch.stop();
     await page.screenshot({ path:`artifacts/final-${demo.slug}-widget.png`, fullPage:true });
   }
 });
 
+test('Praziarnicka advisor crops one semantic sprite cell per card and has only one mode switch', async ({ page }) => {
+  await page.setViewportSize({ width:571, height:813 });
+  await page.goto(`${baseURL}/?demo=praziarnicka`, { waitUntil:'networkidle' });
+  await waitForDemo(page, 'praziarnicka');
+  await page.locator('#pz13-open').click();
+  await page.locator('.pz13-mode button[data-mode="advisor"]').click();
+  const options = page.locator('.pz13-option');
+  await expect(options).toHaveCount(4);
+  await expect(page.locator('.pz13-mode')).toHaveCount(1);
+  await expect(page.locator('.pz13-mode button')).toHaveCount(2);
+  const photos = page.locator('.pz13-option__photo');
+  await expect(photos).toHaveCount(4);
+  const styles = await photos.evaluateAll(nodes => nodes.map(node => ({ size:getComputedStyle(node).backgroundSize, position:getComputedStyle(node).backgroundPosition })));
+  for (const style of styles) expect(style.size).toBe('400% 400%');
+  expect(new Set(styles.map(style => style.position)).size).toBe(4);
+  for (const option of await options.all()) {
+    const title = option.locator('.pz13-option__copy b');
+    const description = option.locator('.pz13-option__copy small');
+    expect(await px(title, 'fontSize')).toBeGreaterThanOrEqual(11.4);
+    expect(await px(description, 'fontSize')).toBeGreaterThanOrEqual(9.7);
+    const clipped = await option.evaluate(node => node.scrollHeight > node.clientHeight + 2);
+    expect(clipped).toBeFalsy();
+  }
+  await page.screenshot({ path:'artifacts/final-praziarnicka-advisor-571x813.png', fullPage:true });
+});
+
 test('Káva Víťazov advisor uses distinct semantic photos and readable option text', async ({ page }) => {
   await page.setViewportSize({ width:571, height:813 });
   await page.goto(`${baseURL}/?demo=vitazov`, { waitUntil:'networkidle' });
-  await waitForDemo(page);
+  await waitForDemo(page, 'vitazov');
   await page.locator('#openWidget').click({ force:true });
   await page.locator('#openAdvisor').click();
   const options = page.locator('#advisorBody .option');
@@ -199,7 +253,7 @@ test('all five routed demos remain horizontally contained at 571x813', async ({ 
   for (const demo of demos) {
     const consoleWatch = watchConsole(page);
     await page.goto(`${baseURL}/?demo=${demo.slug}`, { waitUntil:'networkidle' });
-    await waitForDemo(page);
+    await waitForDemo(page, demo.slug);
     const metrics = await page.evaluate(() => ({ scrollWidth:document.scrollingElement.scrollWidth, innerWidth:window.innerWidth, text:document.body.innerText.trim() }));
     expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
     expect(metrics.text.length).toBeGreaterThan(20);
