@@ -3,57 +3,73 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <meta name="theme-color" content="#100c0a">
+  <meta id="themeColor" name="theme-color" content="#123f35">
   <meta name="robots" content="noindex,nofollow">
-  <title>Ukážka kávového poradcu</title>
-  <meta name="description" content="Interaktívna ukážka poradcu pre výber kávy.">
-  <link rel="icon" href="/brand/praziarnicka-icon-official.svg">
+  <title>Diamonds Roastery – kávový poradca</title>
+  <meta name="description" content="Jednoduchý výber kávy Diamonds Roastery podľa chuti a prípravy.">
+  <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <script src="/coffee-bootstrap.js"></script>
   <script>
     (() => {
+      const params = new URLSearchParams(location.search);
+      const fromQuery = params.get('demo') || location.hash.replace(/^#/, '');
       const parts = location.pathname.split('/').filter(Boolean);
-      const last = parts.at(-1) || 'praziarnicka';
-      const queryDemo = new URLSearchParams(location.search).get('demo');
-      const slug = queryDemo || (last === 'index.html' || last === 'ukazka' ? 'praziarnicka' : last);
-      window.COFFEE_DEMO_SLUG = slug;
-      const styles = slug === 'praziarnicka'
-        ? ['/praziarnicka-v12.css']
-        : ['/coffee-v8.css', '/coffee-v8-refine.css', '/coffee-premium-v2.css'];
-      styles.forEach((href) => {
-        const link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = href;
-        document.head.appendChild(link);
-      });
+      const fromPath = parts.at(-1);
+      const slug = /^[a-z0-9-]+$/i.test(fromQuery || '')
+        ? fromQuery
+        : ((fromPath && !['index.html', 'ukazka'].includes(fromPath)) ? fromPath : 'praziarnicka');
+      window.__COFFEE_DEMO_SLUG__ = slug;
+      document.querySelector('#themeColor').content = slug === 'diamonds' ? '#0d0f0e' : '#123f35';
+      document.write(slug === 'diamonds'
+        ? '<link rel="stylesheet" href="/coffee-v8-diamonds-landing.css"><link rel="stylesheet" href="/coffee-v8-diamonds-widget.css"><link rel="stylesheet" href="/coffee-v8-diamonds-jolka.css">'
+        : '<link rel="stylesheet" href="/coffee-v8.css"><link rel="stylesheet" href="/coffee-v8-refine.css">');
     })();
   </script>
+  <link rel="stylesheet" href="/coffee-premium-v2.css">
+  <link rel="stylesheet" href="/coffee-diamonds-final.css">
 </head>
 <body>
-  <div id="praziarnicka-root"></div>
   <div id="coffee-demo-root"></div>
+  <script src="/coffee-bootstrap.js"></script>
   <script src="/coffee-api-route.js"></script>
   <script src="/coffee-local-api.js"></script>
+  <script src="/coffee-configs.js"></script>
+  <script src="/coffee-brand-overrides.js"></script>
   <script>
     (() => {
-      const slug = window.COFFEE_DEMO_SLUG || 'praziarnicka';
-      const scripts = slug === 'praziarnicka'
-        ? ['/praziarnicka-v12.js']
-        : ['/coffee-configs.js', '/coffee-brand-overrides.js', '/coffee-v8.js', '/coffee-v8-patch.js', '/coffee-premium-v2.js'];
-      const load = (src) => new Promise((resolve, reject) => {
-        const script = document.createElement('script');
-        script.src = src;
-        script.onload = resolve;
-        script.onerror = reject;
-        document.body.appendChild(script);
-      });
-      scripts.reduce((chain, src) => chain.then(() => load(src)), Promise.resolve())
-        .catch((error) => {
-          console.error('Coffee page failed to load', error);
-          document.body.innerHTML = '<p style="padding:24px;font-family:system-ui">Stránku sa nepodarilo načítať.</p>';
-        });
+      const diamonds = window.__COFFEE_DEMO_SLUG__ === 'diamonds';
+      const start = () => {
+        const entry = document.createElement('script');
+        entry.src = diamonds ? '/coffee-v8-diamonds-foundation.js' : '/coffee-v8.js';
+        entry.async = false;
+        entry.addEventListener('load', () => {
+          const followUp = document.createElement('script');
+          followUp.src = diamonds ? '/coffee-v8-diamonds-controller.js' : '/coffee-v8-patch.js';
+          followUp.async = false;
+          if (diamonds) {
+            followUp.addEventListener('load', () => {
+              const finalPass = document.createElement('script');
+              finalPass.src = '/coffee-diamonds-final.js';
+              finalPass.async = false;
+              document.body.append(finalPass);
+            }, { once: true });
+          }
+          document.body.append(followUp);
+        }, { once: true });
+        document.body.append(entry);
+      };
+
+      if (diamonds) {
+        const director = document.createElement('script');
+        director.src = '/diamonds-director.js';
+        director.async = false;
+        director.addEventListener('load', start, { once: true });
+        document.body.append(director);
+      } else {
+        start();
+      }
     })();
   </script>
 </body>
