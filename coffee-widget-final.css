@@ -1,0 +1,726 @@
+/**
+ * Final widget pass for the four routed demos, levelled against Jolka.
+ *
+ * This layer loads last on purpose. Everything it touches is a defect that
+ * survived the earlier stack:
+ *   - white header text left over from a dark header that a later layer turned
+ *     light, so the roastery name was invisible,
+ *   - a sliding indicator pill drawn underneath an already-filled active button,
+ *     which read as two switches stacked on top of each other,
+ *   - quick chips laid out as a fixed 2 × 2 block of full-width buttons,
+ *   - 9–11 px timestamps and a fake "TOP" flag on the first answer,
+ *   - an 11 px launcher teaser glued to the bottom edge.
+ */
+
+/* ------------------------------------------------------------ widget shell */
+
+body[data-demo] .widget,
+body[data-demo] .kf-panel {
+  border-radius: 30px !important;
+  overflow: hidden !important;
+}
+
+/* Comfortable clearance from the browser edge on a 768 px-tall notebook. */
+@media (min-width: 761px) {
+  body[data-demo] .widget,
+  body[data-demo] .kf-panel {
+    max-height: calc(100dvh - 48px) !important;
+  }
+}
+
+/* ----------------------------------------------------------------- header */
+
+body[data-demo] .widget__header,
+body[data-demo] .widget-head,
+body[data-demo] .kf-panel-head {
+  min-height: 64px !important;
+  flex-basis: auto !important;
+  height: auto !important;
+  padding: 11px 12px 11px 18px !important;
+  color: var(--nb-ink) !important;
+  background: var(--nb-soft-2) !important;
+  border-bottom: 1px solid var(--nb-line) !important;
+}
+
+/* The header was inherited from a dark shell; every child still asked for
+   white. Anything sitting on the light header is ink again. */
+body[data-demo] .widget__header b,
+body[data-demo] .widget__header strong,
+body[data-demo] .widget__header span,
+body[data-demo] .widget__header small,
+body[data-demo] .widget-head b,
+body[data-demo] .widget-head strong,
+body[data-demo] .widget-head span,
+body[data-demo] .widget-head small,
+body[data-demo] .kf-panel-head b,
+body[data-demo] .kf-panel-head strong,
+body[data-demo] .kf-panel-head span,
+body[data-demo] .kf-panel-head small {
+  color: var(--nb-ink) !important;
+}
+body[data-demo] .widget__header #widgetTitle,
+body[data-demo] .widget-head #widgetTitle,
+body[data-demo] .kf-widget-title strong {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+}
+body[data-demo] .widget__header #widgetDescription,
+body[data-demo] .widget-head #widgetDescription,
+body[data-demo] .widget-brand small,
+body[data-demo] .kf-widget-brand small {
+  font-size: 11.5px !important;
+  color: color-mix(in srgb, var(--nb-ink) 62%, transparent) !important;
+}
+
+/* Brand marks were being inverted to white for a dark header that no longer
+   exists — and on Diamonds the invert sat on the lockup wrapper, so it bleached
+   the wordmark text too, not just the image. Render them as drawn. */
+body[data-demo] .widget__header .brand-lockup,
+body[data-demo] .widget-head .brand-lockup,
+body[data-demo] .widget__header .widget-logo,
+body[data-demo] .widget-head .widget-logo,
+body[data-demo] .kf-panel-head .kf-widget-bubble,
+body[data-demo] .widget__header img,
+body[data-demo] .widget-head img,
+body[data-demo] .kf-panel-head img,
+body[data-demo="vitazov"] .widget-brand .kv-widget-logo,
+body[data-demo="vitazov"] #chatScreen .kv-message-logo {
+  filter: none !important;
+}
+body[data-demo] .widget__header img,
+body[data-demo] .widget-head img,
+body[data-demo] .kf-panel-head img {
+  max-height: 40px !important;
+  max-width: 132px !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+body[data-demo] .widget-actions button,
+body[data-demo] .head-actions button,
+body[data-demo] .kf-head-actions button {
+  width: 38px !important;
+  height: 38px !important;
+  border: 1px solid var(--nb-line) !important;
+  border-radius: 50% !important;
+  color: var(--nb-ink) !important;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+body[data-demo] .widget-actions button:focus-visible,
+body[data-demo] .head-actions button:focus-visible,
+body[data-demo] .kf-head-actions button:focus-visible {
+  outline: 2px solid var(--nb-strong) !important;
+  outline-offset: 2px !important;
+}
+/* Opening the widget moves focus to Close, which left a permanent coloured ring
+   around it in every screenshot. Keyboard focus still shows one. */
+body[data-demo] .widget-actions button:focus:not(:focus-visible),
+body[data-demo] .head-actions button:focus:not(:focus-visible),
+body[data-demo] .kf-head-actions button:focus:not(:focus-visible),
+body[data-demo] .icon-button:focus:not(:focus-visible) {
+  outline: none !important;
+  border-color: var(--nb-line) !important;
+  box-shadow: none !important;
+}
+
+/* The chips and composer sat on their own translucent plate that spilled past
+   the widget's rounded corners. They belong on the panel itself. */
+/* Concept washed this strip with a linear-gradient down to rgba(7,24,20,.36),
+   which read as a dark plate sitting under the chips and the input. */
+body[data-demo] .chat-bottom,
+body[data-demo] .kf-chat-footer,
+body[data-demo] .composer-area,
+body[data-demo] #chatScreen .chat-bottom,
+body[data-demo] #chatScreen .composer-area {
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/* ------------------------------------------------------------ mode switch */
+
+body[data-demo] .mode,
+body[data-demo] .mode-switch,
+body[data-demo] .kf-switch {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 4px !important;
+  margin: 12px 16px 10px !important;
+  padding: 4px !important;
+  min-height: 0 !important;
+  border: 1px solid var(--nb-line) !important;
+  border-radius: 999px !important;
+  background: var(--nb-soft) !important;
+  box-shadow: none !important;
+}
+
+/* One switch, one layer: the sliding indicator sat under an active button that
+   already carried the brand fill, which read as a doubled control. */
+body[data-demo] .mode__indicator,
+body[data-demo] .mode__thumb,
+body[data-demo] .kf-switch__indicator {
+  display: none !important;
+}
+
+body[data-demo] .mode__button,
+body[data-demo] .mode-switch button,
+body[data-demo] .kf-switch button {
+  position: relative !important;
+  z-index: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0 !important;
+  width: auto !important;
+  min-height: 44px !important;
+  padding: 0 12px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  color: color-mix(in srgb, var(--nb-ink) 78%, transparent) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+  transition: background .18s ease, color .18s ease !important;
+}
+body[data-demo] .mode__button b,
+body[data-demo] .mode-switch button b,
+body[data-demo] .kf-switch button b,
+body[data-demo] .kf-switch button span:not([class]) {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+}
+/* Icons made the two labels sit off-centre and added visual noise. */
+body[data-demo] .mode__button > svg,
+body[data-demo] .mode-switch button > svg,
+body[data-demo] .kf-switch button > span > svg,
+body[data-demo] .kf-switch button > svg {
+  display: none !important;
+}
+body[data-demo] .mode__button.is-active,
+body[data-demo] .mode-switch button.is-active,
+body[data-demo] .kf-switch button[aria-selected="true"],
+body[data-demo] .kf-switch button.is-active {
+  color: #fff !important;
+  background: var(--nb-strong) !important;
+  box-shadow: 0 10px 20px -14px color-mix(in srgb, var(--nb-strong) 80%, transparent) !important;
+}
+body[data-demo] .mode__button.is-active b,
+body[data-demo] .mode-switch button.is-active b,
+body[data-demo] .kf-switch button[aria-selected="true"] b,
+body[data-demo] .kf-switch button.is-active b { color: #fff !important; }
+
+/* Kaffa labels its modes with a bare text node, and painted a second rounded
+   plate behind the active button through ::before. */
+body[data-demo] .kf-switch button { font-size: 15px !important; font-weight: 700 !important; }
+body[data-demo] .kf-switch button::before,
+body[data-demo] .kf-switch button::after,
+body[data-demo] .mode__button::before,
+body[data-demo] .mode-switch button::before { display: none !important; content: none !important; }
+
+/* ----------------------------------------------------------- advisor entry */
+
+/* One compact handoff before the conversation starts. coffee-widget-final.js
+   removes it after the first customer message, so the switch above stays the
+   only way to change modes. */
+body[data-demo] .advisor-entry,
+body[data-demo] .kf-advisor-entry {
+  min-height: 58px !important;
+  margin: 2px 16px 10px !important;
+  padding: 9px 14px !important;
+  border: 1px solid var(--nb-line) !important;
+  border-radius: 16px !important;
+  background: var(--nb-soft-2) !important;
+  box-shadow: none !important;
+}
+body[data-demo] .advisor-entry b,
+body[data-demo] .kf-advisor-entry__copy b { font-size: 14.5px !important; font-weight: 700 !important; }
+body[data-demo] .advisor-entry em,
+body[data-demo] .advisor-entry small,
+body[data-demo] .advisor-entry > span span,
+body[data-demo] .kf-advisor-entry__copy small {
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  font-size: 12.5px !important;
+  font-style: normal !important;
+  color: color-mix(in srgb, var(--nb-ink) 62%, transparent) !important;
+}
+body[data-demo] .advisor-entry[hidden],
+body[data-demo] .kf-advisor-entry[hidden] { display: none !important; }
+
+/* ------------------------------------------------------------------- chat */
+
+/* Keep the conversation resting on the composer instead of floating in the
+   middle of an empty pane. */
+body[data-demo] #chatMessages,
+body[data-demo] .chat-messages,
+body[data-demo] .kf-messages {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  gap: 10px !important;
+  padding: 12px 16px 14px !important;
+}
+body[data-demo] .kf-chat-seed { display: flex !important; flex-direction: column !important; gap: 10px !important; }
+
+body[data-demo] .chat-bubble,
+body[data-demo] .bubble,
+body[data-demo] .kf-message {
+  padding: 11px 14px !important;
+  border-radius: 16px !important;
+  font-size: 14.5px !important;
+  line-height: 1.5 !important;
+}
+
+/* Support-desk pattern; Jolka carries no timestamps at all. */
+body[data-demo] .diamonds-time,
+body[data-demo] .mc-timestamp,
+body[data-demo] .message > div > small,
+body[data-demo] .chat-line > small,
+body[data-demo] .kf-message-row time { display: none !important; }
+
+/* An invented "TOP" flag pinned to whichever answer happened to be first. */
+body[data-demo] .mc-top { display: none !important; }
+
+/* A three-answer step used to stretch its last card into a wide landscape row,
+   so one answer looked like a different kind of control. Jolka keeps all cards
+   the same shape; so does this. */
+body[data-demo] .options > button:nth-last-child(1):nth-child(odd),
+body[data-demo] .answers > button:nth-last-child(1):nth-child(odd),
+body[data-demo] .kf-options > button:nth-last-child(1):nth-child(odd) {
+  grid-column: auto !important;
+  min-height: 0 !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: auto auto !important;
+}
+body[data-demo] .options > button:nth-last-child(1):nth-child(odd) .option__photo,
+body[data-demo] .options > button:nth-last-child(1):nth-child(odd) .option__visual,
+body[data-demo] .answers > button:nth-last-child(1):nth-child(odd) .answer-photo,
+body[data-demo] .kf-options > button:nth-last-child(1):nth-child(odd) .kf-option__visual {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 10 !important;
+}
+body[data-demo] .options > button:nth-last-child(1):nth-child(odd) .option__copy,
+body[data-demo] .answers > button:nth-last-child(1):nth-child(odd) .answer-copy,
+body[data-demo] .kf-options > button:nth-last-child(1):nth-child(odd) .kf-option__copy {
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+}
+
+/* Brand marks in the conversation were rendered white on a light avatar plate
+   (or dark on a dark one) and disappeared either way. */
+body[data-demo] .message__avatar,
+body[data-demo] .chat-logo,
+body[data-demo] .kf-bot-avatar {
+  display: grid !important;
+  place-items: center !important;
+  width: 34px !important;
+  height: 34px !important;
+  flex: 0 0 34px !important;
+  padding: 5px !important;
+  border: 1px solid var(--nb-line) !important;
+  border-radius: 12px !important;
+  color: var(--nb-strong) !important;
+  background: #fff !important;
+  overflow: hidden !important;
+}
+body[data-demo] .message__avatar img,
+body[data-demo] .chat-logo img,
+body[data-demo] .kf-bot-avatar img {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  filter: none !important;
+}
+
+/* Diamonds' chat avatar showed the full horizontal wordmark scaled to 25 px, so
+   the plate read as empty. Crop to the roundel on its left. */
+body[data-demo="diamonds"] #chatScreen .chat-logo {
+  overflow: hidden !important;
+  padding: 0 !important;
+  border: 1px solid var(--nb-line) !important;
+  border-radius: 12px !important;
+  background: #fff url('/assets/diamonds/diroastery-logo.svg') no-repeat left center / auto 118% !important;
+}
+body[data-demo="diamonds"] #chatScreen .chat-logo img,
+body[data-demo="diamonds"] #chatScreen .chat-logo span { display: none !important; }
+
+/* The customer's own bubble must carry the brand, not a black block. */
+body[data-demo] .message--user .bubble,
+body[data-demo] .chat-line--user .chat-bubble,
+body[data-demo] #chatScreen .chat-line--user .chat-bubble,
+body[data-demo] .kf-message.user {
+  color: #fff !important;
+  background: var(--nb-strong) !important;
+  border-color: var(--nb-strong) !important;
+}
+
+/* Víťazov styles its avatar through an id-qualified rule, so the correction has
+   to be written at the same weight. */
+body[data-demo="vitazov"] #chatScreen .message__avatar,
+body[data-demo="concept"] #chatScreen .message__avatar {
+  padding: 5px !important;
+  border: 1px solid var(--nb-line) !important;
+  border-radius: 12px !important;
+  color: var(--nb-strong) !important;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+body[data-demo="vitazov"] #chatScreen .kv-message-logo { filter: none !important; }
+
+/* The modal scrim was heavy enough to grey out the whole shop behind it. */
+body[data-demo] .kf-widget::before,
+body[data-demo] .kf-widget,
+body[data-demo] .widget-backdrop,
+body[data-demo] .backdrop { background-color: rgba(24, 28, 26, .18) !important; }
+body[data-demo] .kf-panel { background: #fff !important; }
+@media (max-width: 760px) {
+  body[data-demo] .kf-widget::before,
+  body[data-demo] .kf-widget,
+  body[data-demo] .widget-backdrop,
+  body[data-demo] .backdrop { background-color: transparent !important; }
+}
+
+/* ------------------------------------------------------------------ chips */
+
+/* The chip rows are pinned by id-qualified rules in three earlier layers, so
+   these corrections are written at the same weight to land. */
+body[data-demo] .chips,
+body[data-demo] .quick-grid,
+body[data-demo] .kf-chips,
+body[data-demo] .quick-questions,
+body[data-demo] #chatScreen .chips,
+body[data-demo] #chatScreen .quick-grid,
+body[data-demo] #quickChips,
+body[data-demo] .kf-chat .kf-chips {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  grid-template-columns: none !important;
+  gap: 8px !important;
+  padding: 10px 16px 0 !important;
+  background: transparent !important;
+}
+body[data-demo] .chip,
+body[data-demo] .quick-grid button,
+body[data-demo] .kf-chip,
+body[data-demo] .quick-questions button,
+body[data-demo] #chatScreen .chip,
+body[data-demo] #chatScreen .quick-grid button,
+body[data-demo] #quickChips .chip,
+body[data-demo] .kf-chat .kf-chip.mc-chip {
+  flex: 0 0 auto !important;
+  width: auto !important;
+  min-width: 0 !important;
+  min-height: 38px !important;
+  height: auto !important;
+  padding: 0 14px !important;
+  border: 1px solid var(--nb-line) !important;
+  border-radius: 999px !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  line-height: 1.2 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+  white-space: nowrap !important;
+  justify-content: center !important;
+}
+/* Some chips carried a decorative leading glyph that pushed the label off-centre. */
+body[data-demo] .chip svg,
+body[data-demo] #chatScreen .quick-grid button svg,
+body[data-demo] .kf-chat .kf-chip.mc-chip svg { display: none !important; }
+
+/* --------------------------------------------------------------- composer */
+
+body[data-demo] .composer,
+body[data-demo] .kf-composer {
+  margin: 10px 16px 14px !important;
+  padding: 5px 5px 5px 6px !important;
+  border: 1px solid var(--nb-line) !important;
+  border-radius: 999px !important;
+}
+body[data-demo] .composer input,
+body[data-demo] .kf-composer input {
+  min-height: 42px !important;
+  padding: 0 10px !important;
+  font-size: 15px !important;
+}
+body[data-demo] .composer button,
+body[data-demo] .composer__send,
+body[data-demo] .kf-send {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+}
+
+/* -------------------------------------------------------- advisor legibility */
+
+body[data-demo] .option b,
+body[data-demo] .answer-card b,
+body[data-demo] .kf-option b,
+body[data-demo] .answer-copy b { font-size: 14.5px !important; font-weight: 700 !important; }
+body[data-demo] .option small,
+body[data-demo] .answer-card small,
+body[data-demo] .kf-option small,
+body[data-demo] .answer-copy small {
+  font-size: 12.5px !important;
+  color: color-mix(in srgb, var(--nb-ink) 64%, transparent) !important;
+}
+body[data-demo] .question-kicker,
+body[data-demo] .kf-question__kicker,
+body[data-demo] .result-label { font-size: 11.5px !important; letter-spacing: .14em !important; }
+body[data-demo] .result-facts dt,
+body[data-demo] .result-meta span,
+body[data-demo] .kf-result dt,
+body[data-demo] .alternative small,
+body[data-demo] .kf-alternative small { font-size: 12px !important; }
+body[data-demo] .result-facts dd,
+body[data-demo] .kf-result dd { font-size: 13.5px !important; }
+body[data-demo] .kf-result-detail small,
+body[data-demo] .kf-result-meta small { font-size: 11.5px !important; letter-spacing: .1em !important; }
+body[data-demo] .kf-result-detail b,
+body[data-demo] .kf-result-detail span,
+body[data-demo] .kf-result-meta b { font-size: 13px !important; line-height: 1.4 !important; }
+
+/* The result blocks still carried 8–11 px labels from the original build. The
+   floor across the widget is now 11.5 px, and only for uppercase labels. */
+body[data-demo] .result-detail small,
+body[data-demo] .alternative small,
+body[data-demo] .kf-alternative small,
+body[data-demo] .reason b,
+body[data-demo] .result-why b,
+body[data-demo] .kf-result-why b,
+body[data-demo] .taste-tags b,
+body[data-demo] .result-taste,
+body[data-demo] .result-main__copy span,
+body[data-demo] .result-meta span { font-size: 12px !important; }
+body[data-demo] .result-detail b,
+body[data-demo] .reason p,
+body[data-demo] .result-why p,
+body[data-demo] .kf-result-why p,
+body[data-demo] .alternative b,
+body[data-demo] .kf-alternative b { font-size: 13.5px !important; line-height: 1.45 !important; }
+body[data-demo] .alternative span,
+body[data-demo] .kf-alternative span { font-size: 12px !important; }
+body[data-demo] .result-main__copy h3,
+body[data-demo] .kv-product-name { font-size: 15px !important; }
+body[data-demo] .restart,
+body[data-demo] .result-button--secondary,
+body[data-demo] #restartResult,
+body[data-demo] .kf-result-restart {
+  min-height: 44px !important;
+  font-size: 13.5px !important;
+  letter-spacing: 0 !important;
+}
+
+/* Three fact columns in a 440 px panel truncated their own values; two columns
+   let the labels wrap instead of clipping. */
+body[data-demo] .result-facts,
+body[data-demo] .result-details {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 10px 14px !important;
+}
+body[data-demo] .result-facts > div,
+body[data-demo] .result-details > div { min-width: 0 !important; }
+body[data-demo] .result-facts dt,
+body[data-demo] .result-facts dd,
+body[data-demo] .result-detail b,
+body[data-demo] .result-detail small {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+}
+
+/* Diamonds hid the real mark and showed a text lockup that was still painted
+   white for the old dark header. Show the mark, drop the ghost. */
+body[data-demo="diamonds"] .widget-brand .widget-logo { overflow: visible !important; width: auto !important; min-width: 0 !important; }
+body[data-demo="diamonds"] .widget-brand .widget-logo img {
+  display: block !important;
+  width: 96px !important;
+  height: 34px !important;
+  filter: none !important;
+}
+body[data-demo="diamonds"] .widget-brand .brand-lockup__fallback { display: none !important; }
+
+/* Concept's recommendation now carries the price where the pack picker was. */
+body[data-demo="concept"] .result-price {
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 7px !important;
+  margin-top: 12px !important;
+}
+body[data-demo="concept"] .result-price b { font-size: 21px !important; font-weight: 800 !important; }
+body[data-demo="concept"] .result-price span {
+  font-size: 13px !important;
+  color: color-mix(in srgb, var(--nb-ink) 62%, transparent) !important;
+}
+
+/* ------------------------------------------------------- the closing action */
+
+/* One unmistakable step out of the recommendation, matching Jolka's footer CTA. */
+body[data-demo] .result-actions {
+  display: block !important;
+  grid-template-columns: none !important;
+  width: 100% !important;
+}
+body[data-demo] .alternative b,
+body[data-demo] .alternative__main b {
+  color: var(--nb-ink) !important;
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+}
+body[data-demo] .result-cta,
+body[data-demo] .kf-result-cta,
+body[data-demo] .kv-final-cta,
+body[data-demo] .result-actions a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 9px !important;
+  width: 100% !important;
+  min-height: 52px !important;
+  margin-top: 12px !important;
+  padding: 0 20px !important;
+  border: 0 !important;
+  border-radius: 16px !important;
+  color: #fff !important;
+  background: var(--nb-strong) !important;
+  font-size: 15.5px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  box-shadow: 0 18px 34px -24px color-mix(in srgb, var(--nb-strong) 85%, transparent) !important;
+}
+body[data-demo] .result-cta:hover,
+body[data-demo] .kf-result-cta:hover,
+body[data-demo] .kv-final-cta:hover,
+body[data-demo] .result-actions a:hover { background: var(--nb-accent) !important; }
+
+/* ----------------------------------------------------- launcher and teaser */
+
+body[data-demo] .launcher,
+body[data-demo] .kf-launcher-wrap {
+  right: 26px !important;
+  bottom: 58px !important;
+  gap: 16px !important;
+  align-items: flex-end !important;
+}
+
+body[data-demo] .launcher-button,
+body[data-demo] .launcher__button,
+body[data-demo] .kf-launcher {
+  width: 70px !important;
+  height: 70px !important;
+  color: #fff !important;
+  background: var(--nb-strong) !important;
+  border: 0 !important;
+  box-shadow: 0 20px 40px -22px color-mix(in srgb, var(--nb-strong) 85%, transparent) !important;
+}
+body[data-demo] .launcher-button:hover,
+body[data-demo] .launcher__button:hover,
+body[data-demo] .kf-launcher:hover { background: var(--nb-accent) !important; }
+body[data-demo] .launcher-button img,
+body[data-demo] .launcher__button img,
+body[data-demo] .kf-launcher img { max-width: 40px !important; max-height: 40px !important; filter: brightness(0) invert(1) !important; }
+body[data-demo] .launcher-button svg,
+body[data-demo] .launcher__button svg,
+body[data-demo] .kf-launcher svg { width: 26px !important; height: 26px !important; }
+
+body[data-demo] .teaser,
+body[data-demo] .launcher__teaser,
+body[data-demo] .launcher-teaser,
+body[data-demo] .kf-teaser {
+  max-width: 290px !important;
+  padding: 15px 18px !important;
+  border: 1px solid var(--nb-line) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 22px 46px -28px rgba(20, 24, 20, .55) !important;
+}
+body[data-demo] .teaser b,
+body[data-demo] .teaser strong,
+body[data-demo] .launcher__teaser b,
+body[data-demo] .launcher-teaser b,
+body[data-demo] .kf-teaser b {
+  display: block !important;
+  margin-bottom: 3px !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+}
+/* The previous layer pinned this to 11 px, which is below the readable floor
+   used everywhere else in the widget. */
+body[data-demo] .teaser span,
+body[data-demo] .launcher__teaser span,
+body[data-demo] .launcher-teaser span,
+body[data-demo] .kf-teaser span {
+  font-size: 13.5px !important;
+  line-height: 1.35 !important;
+  color: color-mix(in srgb, var(--nb-ink) 68%, transparent) !important;
+}
+body[data-demo] .teaser__close,
+body[data-demo] .launcher-teaser__close { opacity: .55 !important; }
+
+/* -------------------------------------------------------------- responsive */
+
+@media (max-width: 760px) {
+  /* Diamonds sat 24 px down with an 827 px panel (8 px of it past the fold) and
+     Kaffa stopped 120 px short, leaving the shop page visible under the chat.
+     Both are edge-to-edge now, like Jolka and Pražiarnička. */
+  body[data-demo] .widget,
+  body[data-demo] .kf-panel,
+  body[data-demo] .kf-widget.is-open .kf-panel {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    height: 100dvh !important;
+    max-height: none !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    transform: none !important;
+  }
+  body[data-demo] .widget-stage,
+  body[data-demo] .stage,
+  body[data-demo] .kf-view { min-height: 0 !important; }
+  body[data-demo] .mode,
+  body[data-demo] .mode-switch,
+  body[data-demo] .kf-switch { margin: 10px 14px 8px !important; }
+  body[data-demo] .advisor-entry,
+  body[data-demo] .kf-advisor-entry { margin: 2px 14px 8px !important; }
+  body[data-demo] #chatMessages,
+  body[data-demo] .chat-messages,
+  body[data-demo] .kf-messages { padding: 10px 14px 12px !important; }
+  body[data-demo] .chips,
+  body[data-demo] .quick-grid,
+  body[data-demo] .kf-chips { padding: 8px 14px 0 !important; }
+  body[data-demo] .composer,
+  body[data-demo] .kf-composer { margin: 8px 14px max(12px, env(safe-area-inset-bottom)) !important; }
+  /* Keep the closing CTA on one line in a 390 px panel. */
+  body[data-demo] .result-cta,
+  body[data-demo] .kf-result-cta,
+  body[data-demo] .kv-final-cta,
+  body[data-demo] .result-actions a { padding: 0 14px !important; font-size: 14.5px !important; }
+  body[data-demo] .launcher,
+  body[data-demo] .kf-launcher-wrap {
+    right: 16px !important;
+    bottom: max(20px, env(safe-area-inset-bottom)) !important;
+    gap: 12px !important;
+  }
+  body[data-demo] .teaser,
+  body[data-demo] .launcher__teaser,
+  body[data-demo] .launcher-teaser,
+  body[data-demo] .kf-teaser { max-width: min(280px, calc(100vw - 96px)) !important; }
+  body[data-demo] .launcher-button,
+  body[data-demo] .launcher__button,
+  body[data-demo] .kf-launcher { width: 64px !important; height: 64px !important; }
+}

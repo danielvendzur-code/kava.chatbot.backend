@@ -38,21 +38,24 @@ test('find-your-coffee CTA is rendered before the welcome message', () => {
   assert.match(chat, /Nájsť svoju kávu za 4 kroky/);
 });
 
-test('Chat / Vyber kavy is a compact bottom-centered switching chip', () => {
+test('Chat / Vyber kavy is one full-width switch directly under the header', () => {
+  // At the bottom the switch floated over the last row of answers on a
+  // 768 px-tall screen; it now sits between the header and the stage.
   const stageIndex = app.indexOf('<div class="pz13-stage"');
   const modeIndex = app.indexOf('<div class="pz13-mode-shell">');
-  assert.ok(stageIndex >= 0 && modeIndex > stageIndex);
+  assert.ok(modeIndex >= 0 && stageIndex > modeIndex);
   assert.match(app, /<span class="pz13-mode-thumb"/);
   assert.match(app, /data-mode="chat"/);
   assert.match(app, /data-mode="advisor"/);
-  assert.match(css, /\.pz13-mode-shell\{[^}]*display:grid;place-items:center/);
-  assert.match(css, /\.pz13-mode\{[^}]*width:244px;height:46px/);
+  assert.match(css, /\.pz13-mode\{[^}]*width:100%;height:48px/);
+  assert.match(css, /\.pz13-mode button\{[^}]*font-size:15px/);
   assert.match(css, /\.pz13-mode\.is-advisor \.pz13-mode-thumb/);
 });
 
 test('chat keeps quick chips next to the composer and removes choice clutter after first message', () => {
-  assert.match(css, /\.pz13-chips\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
-  assert.match(css, /\.pz13-chip\{min-height:42px/);
+  // Compact wrapping pills, but never below the readable floor.
+  assert.match(css, /\.pz13-chips\{display:flex;flex-wrap:wrap/);
+  assert.match(css, /\.pz13-chip\{min-height:38px[^}]*font-size:13\.5px/);
   assert.match(css, /\.pz13-bubble\{[\s\S]*font-size:12\.5px/);
   assert.match(app, /!state\.interacted \? `<div class="pz13-chips">/);
   assert.match(app, /state\.interacted = true/);

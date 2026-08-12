@@ -942,8 +942,8 @@ button { font: inherit; color: inherit; cursor: pointer; }
   backdrop-filter: blur(4px);
 }
 .option__badge svg { width: 20px; height: 20px; }
-.option__badge--dots { padding: 0 10px; }
-.option__badge .dots i { width: 8px; height: 8px; border-width: 1.5px; }
+.option__badge--dots { padding: 0 11px; height: 36px; }
+.option__badge .dots i { width: 9px; height: 9px; border-width: 1.6px; }
 
 .option__copy { padding: 11px 13px 13px; }
 .option__copy b {

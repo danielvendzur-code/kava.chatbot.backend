@@ -23,7 +23,7 @@
   function addMessage(text, user = false, options = {}) {
     const row = document.createElement('div'); row.className = `message${user ? ' message--user' : ''}`;
     const safeText = options.allowHTML ? text : escapeHTML(text);
-    row.innerHTML = `${user ? '' : `<span class="message__avatar">${mark()}</span>`}<div class="message__stack"><div class="bubble">${safeText}</div><div class="timestamp">${time()}</div></div>`;
+    row.innerHTML = `${user ? '' : `<span class="message__avatar">${mark()}</span>`}<div class="message__stack"><div class="bubble">${safeText}</div></div>`;
     chat.appendChild(row); requestAnimationFrame(() => { chat.scrollTop = chat.scrollHeight; });
   }
   function showTyping() {

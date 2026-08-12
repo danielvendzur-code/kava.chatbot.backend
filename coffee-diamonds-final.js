@@ -61,8 +61,10 @@
   function setWidgetCopy() {
     const title = document.querySelector('#widgetTitle');
     const description = document.querySelector('#widgetDescription');
-    if (title) title.textContent = 'Diamonds poradca';
-    if (description) description.textContent = 'Kávový poradca';
+    // The lockup beside it already says DIAMONDS ROASTERY, so the title no
+    // longer repeats the brand and the subtitle no longer repeats the title.
+    if (title) title.textContent = 'Kávový poradca';
+    if (description) description.textContent = 'Vyberie kávu za 4 otázky';
 
     const entryTitle = document.querySelector('#openAdvisor b');
     const entryDetail = document.querySelector('#openAdvisor em');
@@ -83,100 +85,26 @@
     });
   }
 
-  function addTimestamps() {
-    const now = new Intl.DateTimeFormat('sk-SK', { hour:'2-digit', minute:'2-digit' }).format(new Date());
-    document.querySelectorAll('.chat-line').forEach((line) => {
-      if (line.querySelector('.diamonds-time')) return;
-      const stamp = document.createElement('small');
-      stamp.className = 'diamonds-time';
-      stamp.textContent = now;
-      line.append(stamp);
-    });
-  }
-
-  function commerceMarkup(productName, href) {
-    return `
-      <section class="diamonds-commerce" aria-label="Balenie a košík">
-        <div class="diamonds-packs">
-          <span><small>Balenie</small><b>Vyberte veľkosť</b></span>
-          <div>
-            <button class="is-selected" type="button" data-pack="250 g" aria-pressed="true">250 g</button>
-            <button type="button" data-pack="500 g" aria-pressed="false">500 g</button>
-            <button type="button" data-pack="1 kg" aria-pressed="false">1 kg</button>
-          </div>
-        </div>
-        <button class="diamonds-upsell" type="button" aria-pressed="false">
-          <span class="diamonds-upsell__photos"><img src="/assets/diamonds/brazil-fazenda-official.jpg" alt=""><img src="/assets/diamonds/kenya-mugaya-official.jpg" alt=""></span>
-          <span class="diamonds-upsell__copy"><small>Pridať navyše</small><b>Tasting Pack 4 × 60 g</b><span>Ochutnávka · 17,90 €</span></span>
-          <i aria-hidden="true">+</i>
-        </button>
-        <div class="diamonds-commerce__actions">
-          <button class="diamonds-add" type="button"><span>Pridať do košíka</span><b aria-hidden="true">→</b></button>
-          <a href="${href}" target="_blank" rel="noreferrer">Otvoriť produkt ↗</a>
-        </div>
-        <div class="diamonds-cart" hidden><span>${productName} · 250 g</span><b>Pridané</b></div>
-      </section>`;
-  }
-
+  /**
+   * Same correction as Víťazov: the pack picker, the tasting-pack upsell and the
+   * "Pridať do košíka" button never reached a basket. The recommendation closes
+   * with the real product link instead.
+   */
   function enhanceResult() {
     const view = document.querySelector('#advisorContent .result-view');
     if (!view || view.dataset.diamondsFinal === 'true') return;
-    const title = view.querySelector('.result-copy h2');
-    const oldLink = view.querySelector('.result-cta');
-    const productName = title?.textContent?.trim() || 'Vybraná káva';
-    const href = oldLink?.href || 'https://diroastery.sk/kategoria-produktu/kava/';
-    const editorial = view.querySelector('.result-editorial');
-    if (!editorial) return;
-
+    const cta = view.querySelector('.result-cta');
+    if (!cta) return;
     view.dataset.diamondsFinal = 'true';
-    oldLink?.remove();
-    editorial.insertAdjacentHTML('afterend', commerceMarkup(productName, href));
+    cta.textContent = 'Pozrieť produkt v e-shope ';
+    cta.insertAdjacentHTML('beforeend', '<span aria-hidden="true">\u2197</span>');
     view.querySelector('.next-best-action')?.remove();
-
-    const packs = [...view.querySelectorAll('.diamonds-packs button')];
-    const upsell = view.querySelector('.diamonds-upsell');
-    const add = view.querySelector('.diamonds-add');
-    const cart = view.querySelector('.diamonds-cart');
-    let pack = '250 g';
-
-    packs.forEach((button) => button.addEventListener('click', () => {
-      pack = button.dataset.pack;
-      packs.forEach((item) => {
-        const selected = item === button;
-        item.classList.toggle('is-selected', selected);
-        item.setAttribute('aria-pressed', String(selected));
-      });
-      cart.hidden = true;
-      add.classList.remove('is-added');
-      add.querySelector('span').textContent = 'Pridať do košíka';
-    }));
-
-    upsell?.addEventListener('click', () => {
-      const selected = upsell.getAttribute('aria-pressed') !== 'true';
-      upsell.setAttribute('aria-pressed', String(selected));
-      upsell.classList.toggle('is-selected', selected);
-      upsell.querySelector('i').textContent = selected ? '✓' : '+';
-      cart.hidden = true;
-      add.classList.remove('is-added');
-      add.querySelector('span').textContent = 'Pridať do košíka';
-    });
-
-    add?.addEventListener('click', () => {
-      const withPack = upsell?.getAttribute('aria-pressed') === 'true';
-      cart.querySelector('span').textContent = `${productName} · ${pack}${withPack ? ' + Tasting Pack' : ''}`;
-      cart.hidden = false;
-      add.classList.add('is-added');
-      add.querySelector('span').textContent = 'Pridané do košíka';
-    });
   }
 
   setOwnerPage();
   setWidgetCopy();
-  addTimestamps();
   enhanceResult();
 
-  const chat = document.querySelector('#chatMessages');
-  if (chat) new MutationObserver(addTimestamps).observe(chat, { childList:true, subtree:true });
   const advisor = document.querySelector('#advisorContent');
   if (advisor) new MutationObserver(enhanceResult).observe(advisor, { childList:true, subtree:true });
 })();

@@ -32,7 +32,7 @@ test('Praziarnicka background reads as the branded customer website', async ({ p
   await page.screenshot({ path:'artifacts/final-praziarnicka-site-1366x768.png', fullPage:true });
 });
 
-test('initial chat puts find-your-coffee above the welcome message and switch centered at bottom', async ({ page }) => {
+test('initial chat puts find-your-coffee above the welcome message and the switch under the header', async ({ page }) => {
   await page.setViewportSize({ width:390, height:844 });
   await ready(page);
   await page.locator('#pz13-open').click();
@@ -46,19 +46,26 @@ test('initial chat puts find-your-coffee above the welcome message and switch ce
   const welcomeBox = await welcome.boundingBox();
   expect(advisorBox.y + advisorBox.height).toBeLessThan(welcomeBox.y + 3);
 
+  // At the bottom the floating switch sat over the last row of answers on a
+  // 768 px-tall screen. It now spans the panel directly under the header, above
+  // everything it switches between.
   const panel = await page.locator('#pz13-widget').boundingBox();
+  const head = await page.locator('.pz13-widget__head').boundingBox();
   const switchBox = await page.locator('.pz13-mode').boundingBox();
   expect(Math.abs(center(panel) - center(switchBox))).toBeLessThanOrEqual(2);
-  expect(switchBox.y).toBeGreaterThan(panel.y + panel.height * .78);
+  expect(switchBox.y).toBeGreaterThanOrEqual(head.y + head.height - 1);
+  expect(switchBox.y).toBeLessThan(panel.y + panel.height * .25);
+  expect(switchBox.width).toBeGreaterThan(panel.width * .8);
   await expect(page.locator('.pz13-mode button')).toHaveCount(2);
   await expect(page.locator('.pz13-mode button[data-mode="chat"]')).toHaveClass(/is-active/);
 
   const composer = await page.locator('.pz13-composer').boundingBox();
-  expect(composer.y + composer.height).toBeLessThanOrEqual(switchBox.y + 1);
+  expect(composer.y).toBeGreaterThan(switchBox.y + switchBox.height);
+  expect(composer.y + composer.height).toBeLessThanOrEqual(panel.y + panel.height + 1);
   await page.screenshot({ path:'artifacts/final-praziarnicka-mobile-chat.png', fullPage:true });
 });
 
-test('after first message the advisor CTA and quick chips disappear but bottom switch remains', async ({ page }) => {
+test('after first message the advisor CTA and quick chips disappear but the switch remains', async ({ page }) => {
   await page.setViewportSize({ width:390, height:844 });
   await ready(page);
   await page.locator('#pz13-open').click();

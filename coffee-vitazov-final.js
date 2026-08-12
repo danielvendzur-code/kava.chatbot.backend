@@ -117,82 +117,23 @@
     });
   }
 
-  function commerceMarkup(productName, productUrl) {
-    return {
-      packs: `
-        <div class="kv-final-packs" aria-label="Veľkosť balenia">
-          <span><small>Balenie</small><b>Vyberte veľkosť</b></span>
-          <div>
-            <button class="is-selected" type="button" data-pack="250 g" aria-pressed="true">250 g</button>
-            <button type="button" data-pack="500 g" aria-pressed="false">500 g</button>
-            <button type="button" data-pack="1 kg" aria-pressed="false">1 kg</button>
-          </div>
-        </div>`,
-      upsell: `
-        <button class="kv-final-upsell" type="button" aria-pressed="false">
-          <span class="kv-final-upsell__photos"><img src="/assets/vitazov-victory.jpeg" alt=""><img src="/assets/vitazov-ethiopia.jpeg" alt=""></span>
-          <span class="kv-final-upsell__copy"><small>Pridať navyše</small><b>Darčekové balenie</b><span>4 kávy · 24,90 €</span></span>
-          <i aria-hidden="true">+</i>
-        </button>`,
-      actions: `
-        <div class="kv-final-actions">
-          <button class="kv-final-add" type="button"><span>Pridať do košíka</span><b aria-hidden="true">→</b></button>
-          <a href="${productUrl}" target="_blank" rel="noreferrer">Otvoriť produkt ↗</a>
-        </div>
-        <div class="kv-final-cart" hidden><span>${productName} · 250 g</span><b>Pridané</b></div>`
-    };
-  }
-
+  /**
+   * The result used to end in a simulated shop: pack sizes, a gift-box upsell
+   * and an "Pridať do košíka" button that only relabelled itself. None of it
+   * reached a real basket, which made the closing step read as a demo of a
+   * feature rather than a way to buy. The recommendation now ends the way
+   * Jolka's does — one link to the actual product page.
+   */
   function enhanceResult() {
     const card = document.querySelector('#advisorBody .result-card');
-    if (!card || card.dataset.kvFinalCommerce === 'true') return;
-    const heading = document.querySelector('#advisorBody .result-head h2');
-    const productName = heading?.textContent?.trim() || 'Vybraná káva';
-    const oldActions = card.querySelector('.result-actions');
-    const productLink = oldActions?.querySelector('a')?.href || 'https://kavavitazov.sk/obchod/';
-    if (!oldActions) return;
+    if (!card || card.dataset.kvFinalCta === 'true') return;
+    const actions = card.querySelector('.result-actions');
+    if (!actions) return;
+    card.dataset.kvFinalCta = 'true';
 
-    card.dataset.kvFinalCommerce = 'true';
-    const markup = commerceMarkup(productName, productLink);
-    oldActions.insertAdjacentHTML('beforebegin', markup.packs + markup.upsell);
-    oldActions.insertAdjacentHTML('afterend', markup.actions);
-    oldActions.remove();
-
-    const packs = [...card.querySelectorAll('.kv-final-packs button')];
-    const upsell = card.querySelector('.kv-final-upsell');
-    const addButton = card.querySelector('.kv-final-add');
-    const cart = card.querySelector('.kv-final-cart');
-    let selectedPack = '250 g';
-
-    packs.forEach((button) => button.addEventListener('click', () => {
-      selectedPack = button.dataset.pack;
-      packs.forEach((item) => {
-        const selected = item === button;
-        item.classList.toggle('is-selected', selected);
-        item.setAttribute('aria-pressed', String(selected));
-      });
-      cart.hidden = true;
-      addButton.classList.remove('is-added');
-      addButton.querySelector('span').textContent = 'Pridať do košíka';
-    }));
-
-    upsell?.addEventListener('click', () => {
-      const selected = upsell.getAttribute('aria-pressed') !== 'true';
-      upsell.setAttribute('aria-pressed', String(selected));
-      upsell.classList.toggle('is-selected', selected);
-      upsell.querySelector('i').textContent = selected ? '✓' : '+';
-      cart.hidden = true;
-      addButton.classList.remove('is-added');
-      addButton.querySelector('span').textContent = 'Pridať do košíka';
-    });
-
-    addButton?.addEventListener('click', () => {
-      const withGift = upsell?.getAttribute('aria-pressed') === 'true';
-      cart.querySelector('span').textContent = `${productName} · ${selectedPack}${withGift ? ' + darčekové balenie' : ''}`;
-      cart.hidden = false;
-      addButton.classList.add('is-added');
-      addButton.querySelector('span').textContent = 'Pridané do košíka';
-    });
+    const link = actions.querySelector('a[href]');
+    const href = link?.href || 'https://kavavitazov.sk/obchod/';
+    actions.innerHTML = `<a class="kv-final-cta" href="${href}" target="_blank" rel="noreferrer">Pozrieť produkt v e-shope <span aria-hidden="true">\u2197</span></a>`;
   }
 
   setOwnerPage();
