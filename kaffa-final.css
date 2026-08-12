@@ -146,3 +146,55 @@ html,body{background:#fff!important}
   .kf-options{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}.kf-option,.kf-options>button:nth-last-child(1):nth-child(odd){min-height:0!important;grid-column:auto!important;grid-template-columns:1fr!important;grid-template-rows:auto auto!important;padding:5px!important}.kf-options>button:nth-last-child(1):nth-child(odd){grid-column:1/-1!important;width:calc(50% - 4px)!important;justify-self:center!important}.kf-option__visual,.kf-options>button:nth-last-child(1):nth-child(odd) .kf-option__visual{grid-column:1!important;grid-row:1!important;width:100%!important;height:auto!important;aspect-ratio:4/3!important}.kf-option__copy,.kf-options>button:nth-last-child(1):nth-child(odd) .kf-option__copy{grid-column:1!important;grid-row:2!important;align-self:auto!important;padding:1px 25px 3px 3px!important}.kf-option__copy b{font-size:10px!important}.kf-option__copy small{font-size:7.5px!important}.kf-option__state{top:9px!important;right:9px!important;transform:none!important}
 }
 @media(max-width:370px){.kf-owner-badge{display:none!important}.kf-benefit p{display:none!important}.kf-benefit{min-height:53px!important}}
+
+/* Kaffa chat: Jolka-like vertical rhythm, clean blue/black mark, stable mobile cards */
+.kf-shell{height:100dvh!important;overflow:hidden!important}
+.kf-company-mark{border:0!important;border-radius:0!important;background:transparent!important}
+.kf-company-mark svg,.kf-widget-bubble svg,.kf-launcher svg{display:block!important;width:30px!important;height:30px!important}
+.kf-widget-bubble{border:0!important;border-radius:0!important;background:transparent!important}
+.kf-panel{width:min(420px,calc(100vw - 28px))!important;max-width:420px!important;height:min(724px,calc(100dvh - 28px))!important;max-height:724px!important}
+.kf-teaser{width:min(272px,calc(100vw - 106px))!important}
+.kf-launcher{width:72px!important;height:72px!important}
+.kf-launcher svg{width:31px!important;height:31px!important}
+.kf-chat .kf-messages{display:flex!important;flex-direction:column!important;gap:10px!important}
+.kf-chat-seed{display:flex!important;flex-direction:column!important;width:100%!important;gap:10px!important}
+.kf-messages:not(.has-thread) .kf-chat-seed{min-height:100%!important}
+.kf-messages:not(.has-thread) .kf-chat-seed .kf-message-row--bot{margin-top:auto!important}
+.kf-message-row--user{justify-content:flex-end!important;width:100%!important}
+.kf-message-row--user .kf-message{margin-left:0!important;min-width:78px!important;max-width:82%!important}
+.kf-chat .kf-message{font-size:12px!important;line-height:1.48!important}
+.kf-chat .kf-message.bot{border:1px solid rgba(79,145,163,.34)!important;color:var(--kf-final-ink)!important;background:#f0f8fa!important;box-shadow:0 10px 24px -24px rgba(16,16,15,.8)!important}
+.kf-chat .kf-message.user{border:1px solid var(--kf-final-ink)!important;color:#fff!important;background:var(--kf-final-ink)!important}
+.kf-chat .kf-advisor-entry__mark{border:0!important;border-radius:0!important;background:transparent!important;color:var(--kf-final-blue)!important}
+.kf-chat .kf-bot-avatar{border:0!important;border-radius:0!important;background:transparent!important;color:var(--kf-final-ink)!important}
+.kf-chat .kf-chips{gap:6px!important}
+.kf-chat .kf-chip.mc-chip{min-height:38px!important;font-size:8px!important}
+.kf-chat .kf-composer{min-height:52px!important}
+.kf-stage:has(.kf-options){overflow-x:hidden!important;overflow-y:auto!important}
+.kf-options{align-items:start!important}
+.kf-option--photo{height:auto!important;min-height:0!important}
+.kf-option__copy{min-width:0!important;min-height:43px!important}
+.kf-option__copy b{font-size:10.5px!important;line-height:1.2!important}
+.kf-option__copy small{font-size:8px!important;line-height:1.3!important}
+@media(max-width:680px){
+  .kf-launcher{width:70px!important;height:70px!important}
+  .kf-launcher svg{width:29px!important;height:29px!important}
+  .kf-panel{width:100%!important;max-width:none!important}
+  .kf-chat .kf-message{font-size:11.5px!important}
+  .kf-chat .kf-chip.mc-chip{min-height:37px!important}
+  .kf-stage:has(.kf-options){padding-bottom:18px!important}
+}
+@media(max-width:370px){
+  .kf-option__copy b{font-size:10px!important}
+  .kf-option__copy small{font-size:7.5px!important}
+}
+
+/* Final legibility floor: readable at normal browser zoom. */
+.kf-chat .kf-message{font-size:14px!important;line-height:1.46!important}
+.kf-chat .mc-timestamp{font-size:9.5px!important}
+.kf-chat .kf-chip.mc-chip{font-size:11.5px!important}
+.kf-composer input{font-size:14px!important}
+.kf-progress>span{font-size:10px!important}
+.kf-question h2{font-size:27px!important}
+.kf-option__copy b{font-size:13px!important}
+.kf-option__copy small{font-size:10px!important;line-height:1.3!important}

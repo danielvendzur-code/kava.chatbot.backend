@@ -102,8 +102,15 @@
   };
 
   const messageMarkup = message => message.role === 'bot'
-    ? `<div class="kf-message-row"><span class="kf-bot-avatar" aria-hidden="true">K</span><div class="kf-message bot">${K.e(message.text)}</div></div>`
-    : `<div class="kf-message user">${K.e(message.text)}</div>`;
+    ? `<div class="kf-message-row kf-message-row--bot"><span class="kf-bot-avatar" aria-hidden="true">K</span><div class="kf-message bot">${K.e(message.text)}</div></div>`
+    : `<div class="kf-message-row kf-message-row--user"><div class="kf-message user">${K.e(message.text)}</div></div>`;
+
+  const settleMessageScroll = messages => {
+    if (!messages) return;
+    const scrollToEnd = () => { messages.scrollTop = messages.scrollHeight; };
+    requestAnimationFrame(scrollToEnd);
+    setTimeout(scrollToEnd, 0);
+  };
 
   async function send(text, trigger) {
     const clean = text.trim();
@@ -170,7 +177,7 @@
       send(text);
     };
     const messages = view.querySelector('#messages');
-    messages.scrollTop = messages.scrollHeight;
+    settleMessageScroll(messages);
   }
 
   const scoreProduct = product => K.questions.reduce((score, question) => {

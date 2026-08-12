@@ -3,7 +3,7 @@
 
   if (!window.__KAFFA_EDITORIAL__) return;
 
-  const bubble = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 5.5h13.6v9.3H11l-4.6 3.7v-3.7H5.2z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>';
+  const bubble = '<svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5.2 5.8h17.6v11.1H13l-5.1 4v-4H5.2z" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round"/><circle cx="10" cy="11.35" r="1.05" fill="currentColor"/><circle cx="14" cy="11.35" r="1.05" fill="currentColor"/><circle cx="18" cy="11.35" r="1.05" fill="currentColor"/></svg>';
   const setText = (node, value) => { if (node && node.textContent !== value) node.textContent = value; };
 
   function setOwnerPage() {
@@ -19,7 +19,7 @@
 
     const copy = document.querySelector('.kf-copy');
     if (copy && !copy.querySelector('.kf-final-eyebrow')) {
-      copy.insertAdjacentHTML('afterbegin', '<span class="kf-final-eyebrow">Návrh AI chatbota pre Kaffa Roastery</span>');
+      copy.insertAdjacentHTML('afterbegin', '<span class="kf-final-eyebrow">Kávový poradca Kaffa Roastery</span>');
     }
     const heading = copy?.querySelector('h1');
     const lead = copy?.querySelector('.kf-lead');
