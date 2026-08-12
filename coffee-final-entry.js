@@ -15,10 +15,10 @@
   }
 
   window.COFFEE_DEMO_SLUG = slug;
-  window.__COFFEE_DEMO_SLUG__ = slug;
+  window.__COFFEE_DEMO_SLUG__ = slug === 'praziarnicka' ? 'praziarnicka-v13' : slug;
   window.__KAFFA_EDITORIAL__ = slug === 'kaffa';
   document.documentElement.dataset.coffeeDemo = slug;
-  document.body.dataset.demo = slug;
+  document.body.dataset.demo = slug === 'praziarnicka' ? 'praziarnicka-v13' : slug;
 
   const meta = {
     praziarnicka: ['Pražiarnička – kávový poradca', 'Ukážka predajného poradcu pre jednoduchší výber kávy Pražiarnička.', '#123f35', '/brand/praziarnicka-icon-official.svg'],
