@@ -17,7 +17,9 @@
   function css(){
     if(!$('link[data-jolka-parity]')){const l=document.createElement('link');l.rel='stylesheet';l.href='/coffee-jolka-parity.css';l.dataset.jolkaParity='true';document.head.append(l)}
     if(!$('link[data-jolka-parity-polish]')){const l=document.createElement('link');l.rel='stylesheet';l.href='/coffee-jolka-parity-polish.css';l.dataset.jolkaParityPolish='true';document.head.append(l)}
+    if(!$('link[data-jolka-parity-final]')){const l=document.createElement('link');l.rel='stylesheet';l.href='/coffee-jolka-parity-final.css';l.dataset.jolkaParityFinal='true';document.head.append(l)}
   }
+  function stylesReady(){return Boolean($('link[data-jolka-parity]')?.sheet&&$('link[data-jolka-parity-polish]')?.sheet&&$('link[data-jolka-parity-final]')?.sheet)}
   function strip(){const p=$(rootSel[slug]);if(!p||$('.parity-bottom',p))return;const s=document.createElement('section');s.className='parity-bottom';s.setAttribute('aria-label','Čo poradca zákazníkovi uľahčí');s.innerHTML=strips[slug].map(([a,b])=>`<div class="parity-bottom__item"><i class="parity-bottom__dot" aria-hidden="true"></i><span class="parity-bottom__copy"><b>${a}</b><span>${b}</span></span></div>`).join('');p.append(s)}
   function pz(){
     const p=$('.pz-page');if(!p)return;
@@ -32,8 +34,8 @@
   function con(){set('.hero-eyebrow','CONCEPT COFFEE ROASTERS · SEZÓNNA PONUKA');const t=$('#launcherTeaser');if(t){set('b','Nájdite svoju kávu',t);set('span','4 otázky · konkrétny výsledok',t)}const e=$('#openAdvisor');if(e){set('b','Nájsť svoju kávu',e);const d=e.querySelector('em,.advisor-entry__copy span');if(d&&d.textContent!=='4 otázky · sezónny výber')d.textContent='4 otázky · sezónny výber'}}
   function kaf(){
     set('.kf-final-eyebrow','KAFFA ROASTERY · VÝBEROVÁ KÁVA');
-    const o=$('.kf-company-brand');if(o&&!$('.parity-kaffa-wordmark',o))o.innerHTML='<span class="parity-kaffa-wordmark"><b>KAFFA</b><small>ROASTERY</small></span>';
-    const w=$('.kf-widget-brand');if(w){let b=$('.kf-widget-bubble',w);if(!b){b=document.createElement('span');b.className='kf-widget-bubble';w.prepend(b)}if(!b.querySelector('svg'))b.innerHTML='<svg aria-hidden="true" viewBox="0 0 1 1"></svg>';let t=$('.kf-widget-title',w);if(!t){t=document.createElement('span');t.className='kf-widget-title';w.append(t)}if(t.textContent.trim()!=='KAFFA poradca')t.innerHTML='<strong>KAFFA poradca</strong>'}
+    const ownerCopy=$('.kf-brand-copy');if(ownerCopy){set('strong','Kaffa Roastery',ownerCopy);set('small','Výberová káva',ownerCopy)}
+    const widgetCopy=$('.kf-widget-brand__copy');if(widgetCopy){set('strong','Kaffa Roastery',widgetCopy);set('small','Online',widgetCopy)}
     const teaser=$('#teaser');if(teaser){set('b','Nájdite svoju kávu',teaser);set('span','4 otázky · konkrétny výsledok',teaser)}
     const e=$('.kf-advisor-entry');if(e)set('.kf-advisor-entry__copy b','Nájsť svoju kávu',e)
   }
@@ -41,7 +43,7 @@
   function key(card){if(imgs[card.dataset.value])return card.dataset.value;const h=(card.textContent||'').toLocaleLowerCase('sk');return [[/automat/,'automatic'],[/pák|pakov|espresso/,'lever'],[/moka/,'moka'],[/filter|v60|french|aeropress/,'filter'],[/mliek|capp|latte|flat white/,'milk'],[/čier|lungo/,'black'],[/stried|oboje|univerz/,'both'],[/ovoc|sviež/,'fruity'],[/čokol|kakao|orech/,'chocolate'],[/siln|výraz|intenz/,'strong'],[/bez kofe|decaf/,'decaf'],[/firma|office|kancel/,'office'],[/domov|doma/,'home']].find(([r])=>r.test(h))?.[1]||''}
   function choices(){if(slug!=='vitazov')return;$$('.option').forEach(card=>{const src=imgs[key(card)],p=card.querySelector('.option__photo');if(!src||!p||p.dataset.paritySrc===src)return;p.dataset.paritySrc=src;p.innerHTML=`<img class="parity-choice-img" src="${src}" alt="">`})}
   function scrub(){const rules=[[/^Návrh AI chatbota.*$/i,'Kávový poradca'],[/^Návrh AI poradcu.*$/i,'Kávový poradca'],[/^Interaktívny návrh.*$/i,'Kávový poradca'],[/^Ukážka riešenia$/i,'Kávový poradca'],[/^Vyskúšajte AI poradcu$/i,'Nájdite svoju kávu']];const walk=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT),nodes=[];while(walk.nextNode())nodes.push(walk.currentNode);nodes.forEach(n=>{const raw=n.nodeValue?.trim();if(!raw)return;let next=raw;rules.forEach(([r,v])=>{if(r.test(next))next=v});if(/Funguje s reálnou ponukou|overenou 8\. 8\. 2026/i.test(next))next='';if(next!==raw)n.nodeValue=n.nodeValue.replace(raw,next)})}
-  function enhance(){if(!$(rootSel[slug]))return false;css();strip();({praziarnicka:pz,vitazov:vit,diamonds:dia,concept:con,kaffa:kaf}[slug])();choices();scrub();document.documentElement.dataset.jolkaParity='ready';return true}
-  let queued=false;new MutationObserver(()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;choices();if(slug==='kaffa')kaf()})}).observe(document.documentElement,{childList:true,subtree:true});
-  let tries=0;const timer=setInterval(()=>{tries++;if(enhance()&&tries>5)clearInterval(timer);if(tries>80)clearInterval(timer)},75);enhance();
+  function enhance(){if(!$(rootSel[slug]))return false;css();strip();({praziarnicka:pz,vitazov:vit,diamonds:dia,concept:con,kaffa:kaf}[slug])();choices();scrub();if(stylesReady())document.documentElement.dataset.jolkaParity='ready';return true}
+  let queued=false;new MutationObserver(()=>{if(queued)return;queued=true;requestAnimationFrame(()=>{queued=false;choices();if(slug==='kaffa')kaf();if(stylesReady())document.documentElement.dataset.jolkaParity='ready'})}).observe(document.documentElement,{childList:true,subtree:true});
+  let tries=0;const timer=setInterval(()=>{tries++;if(enhance()&&stylesReady()&&tries>5)clearInterval(timer);if(tries>80)clearInterval(timer)},75);enhance();
 })();
