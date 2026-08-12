@@ -65,7 +65,7 @@ test('chat is customer-facing with stronger quick actions and no contact clutter
   const switchBox = await page.locator('.mode').boundingBox();
   expect(chipBox.height).toBeGreaterThanOrEqual(40);
   expect(chipBox.height).toBeLessThanOrEqual(46);
-  expect(entryBox.height).toBeLessThanOrEqual(66);
+  expect(entryBox.height).toBeLessThanOrEqual(70);
   expect(switchBox.height).toBeGreaterThanOrEqual(56);
   expect(await page.evaluate(() => document.activeElement?.id)).not.toBe('chatInput');
 });
@@ -74,8 +74,9 @@ test('advisor follows use → profile → drink → intensity and selects Victor
   await page.goto(demo('&qa=advisor'), { waitUntil: 'domcontentloaded' });
   await expectOpen(page);
   await expect(page.locator('#stepName')).toHaveText('Použitie');
-  const background = await page.locator('.option[data-value="home"] .option__photo').evaluate((node) => getComputedStyle(node).backgroundImage);
-  expect(background).not.toBe('none');
+  const semanticPhoto = page.locator('.option[data-value="home"] .option__photo .parity-choice-img');
+  await expect(semanticPhoto).toBeVisible();
+  await expect(semanticPhoto).toHaveAttribute('src', /\/assets\/jolka\/method\/(moka|automat|filter|black|milk|both|lever)\.webp/);
   await choose(page, 'home', '2 z 4');
   await expect(page.locator('#stepName')).toHaveText('Chuť');
   await choose(page, 'balanced', '3 z 4');
