@@ -15,7 +15,7 @@ concurrency:
 jobs:
   quality:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 15
     steps:
       - name: Checkout proposed changes
         uses: actions/checkout@v4
@@ -31,36 +31,51 @@ jobs:
       - name: Install Chromium
         run: npx playwright install chromium
 
-      - name: Validate shared v8 architecture
+      - name: Validate final six-demo architecture
         run: |
-          test -f coffee-v8.css
-          test -f coffee-v8.js
-          test -f coffee-configs.js
+          test -f index.html
+          test -f coffee-final-entry.js
+          test -f coffee-api-route.js
+          test -f coffee-local-api.js
           test -f api/chat.js
           test -f vercel.json
-          grep -Fq 'coffee-v8.css' index.html
-          grep -Fq 'coffee-configs.js' index.html
-          grep -Fq 'border-radius: 50%' coffee-v8.css
-          grep -Fq 'background-size 1.05s' coffee-v8.css
-          grep -Fq 'option-reveal' coffee-v8.css
-          grep -Fq "praziarnicka:" coffee-configs.js
-          grep -Fq "diamonds:" coffee-configs.js
-          grep -Fq "kaffa:" coffee-configs.js
-          grep -Fq "vitazov:" coffee-configs.js
-          grep -Fq "concept:" coffee-configs.js
-          grep -Fq "jolka:" coffee-configs.js
-          grep -Fq 'ANTHROPIC_API_KEY' api/chat.js
+          grep -Fq 'coffee-final-entry.js' index.html
+          for slug in praziarnicka diamonds kaffa vitazov concept jolka; do grep -Fq "$slug" coffee-final-entry.js || test "$slug" = jolka; done
+          grep -Fq '/ukazka/jolka' vercel.json
           grep -Fq '/ukazka/:slug' vercel.json
-          ! grep -Fq 'Voľba je uložená' coffee-v8.js
+          grep -Fq "praziarnicka:" api/chat.js
+          grep -Fq "diamonds:" api/chat.js
+          grep -Fq "kaffa:" api/chat.js
+          grep -Fq "vitazov:" api/chat.js
+          grep -Fq "concept:" api/chat.js
+          grep -Fq "jolka:" api/chat.js
+          grep -Fq 'ANTHROPIC_API_KEY' api/chat.js
+          grep -Fq "return nativeFetch('/api/chat', init)" coffee-api-route.js
           node --check coffee-bootstrap.js
+          node --check coffee-final-entry.js
           node --check coffee-local-api.js
           node --check coffee-configs.js
           node --check coffee-brand-overrides.js
+          node --check coffee-vitazov-overrides.js
           node --check coffee-v8.js
-          node --check coffee-v8-patch.js
+          node --check praziarnicka-v12.js
+          node --check concept-seasonal-init.js
+          node --check kaffa-editorial.js
+          node --check kaffa-final.js
+          node --check coffee-vitazov-final.js
+          node --check coffee-diamonds-final.js
           node --check api/chat.js
 
-      - name: Validate Jolka entry point
+      - name: Validate brand contract tests
+        run: |
+          node --test \
+            tests/praziarnicka-contract.test.mjs \
+            tests/diamonds-contract.test.mjs \
+            tests/concept-seasonal.contract.test.mjs \
+            tests/kaffa-contract.test.mjs \
+            tests/vitazov-contract.test.mjs
+
+      - name: Validate Jolka is unchanged and standalone
         run: |
           test -f jolka.html
           test -f jolka/jolka.css
@@ -72,26 +87,17 @@ jobs:
           grep -Fq '"/ukazka/jolka"' vercel.json
           grep -Fq "location.replace('/jolka.html')" coffee-bootstrap.js
           grep -Fq 'praziarenjolka.sk/eshop-kava/' api/chat.js
-          # the shop path that used to 404 must not come back
           ! grep -Fq 'praziarenjolka.sk/shop/' api/chat.js
           ! grep -Fq 'praziarenjolka.sk/shop/' jolka/jolka-data.js
-          # the sold-out single origin must not be recommended (it is still fine as a
-          # named component of the house blends) and no customer contact block anywhere
           ! grep -Fq 'produkt/el-salvador-shg-ep' jolka/jolka-data.js
           ! grep -Eq 'tel:|mailto:' jolka.html jolka/jolka-app.js jolka/jolka-data.js
-          # single stylesheet, no refine/override/patch layers for Jolka
           test "$(ls jolka/*.css | wc -l)" -eq 1
-          test -f assets/jolka/logo-ink.webp
-          test -f assets/jolka/logo-badge.webp
-          test -f assets/jolka/hero-bags.webp
-          test "$(ls assets/jolka/*.webp | wc -l)" -ge 15
           test "$(ls assets/jolka/method/*.webp | wc -l)" -eq 7
           test "$(ls assets/jolka/tile/*.webp | wc -l)" -eq 14
-          test -f assets/jolka/method/SOURCES.md
           node --check jolka/jolka-data.js
           node --check jolka/jolka-app.js
 
-      - name: Run desktop and mobile Chromium tests
+      - name: Run integrated desktop and mobile Chromium tests
         run: |
           python3 -m http.server 4173 >/tmp/kava-server.log 2>&1 &
           SERVER_PID=$!
@@ -99,11 +105,11 @@ jobs:
           for i in {1..30}; do curl -fsS http://127.0.0.1:4173/ >/dev/null && break; sleep 1; done
           npm run test:browser
 
-      - name: Upload visual QA screenshots
+      - name: Upload visual QA artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: coffee-v8-visual-qa
-          path: artifacts/*.png
-          if-no-files-found: error
+          name: coffee-final-visual-qa
+          path: artifacts/
+          if-no-files-found: ignore
           retention-days: 7

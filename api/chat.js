@@ -17,22 +17,25 @@ const DEMOS = {
     brand: 'Diamonds Roastery',
     web: 'https://diroastery.sk/kategoria-produktu/kava/',
     products: [
-      'Brazília Fazenda Pereira – sladký čokoládový profil',
-      'Kongo Kisunga – ovocnejšia výberová káva na filter',
-      'Keňa Mugaya AB – svieža a výrazná filtrovaná káva',
-      'Kolumbia Kumanday Reserve – jemná sladká káva s citrusovou dochuťou',
-      'Kolumbia El Buho Decaf – plná bezkofeínová káva'
+      'Peru Valley Coffee – vyvážená káva s nižšou aciditou, vhodná do automatu a na espresso',
+      'Brazília Fazenda Pereira – sladká káva s čokoládovým a orieškovým smerom',
+      'Keňa Mugaya AB – čistá a šťavnatá filtrovaná káva s egrešmi, černicami a jablkom',
+      'Kolumbia Kumanday Reserve – menej ovocná káva s karamelom, kakaom a sladkým citrusom; espresso a automat',
+      'Kolumbia El Buho Decaf – bezkofeínová omni káva s javorovým sirupom, karamelom a orieškami'
     ]
   },
   kaffa: {
     brand: 'Kaffa Roastery',
     web: 'https://kaffaroastery.sk/',
     products: [
-      'Mokka Espresso Blend – 80 % arabica a 20 % robusta, espresso a mliečne nápoje',
-      'Colombia Quebraditas Peach – moderný ovocný profil',
-      'Kenya Kabingara Estate – svieža káva na filter',
-      'Costa Rica Hacienda Sonora – sladká a vyvážená',
-      'Colombia Finca El Diviso Decaf – výberová bezkofeínová káva'
+      'Mokka Espresso Blend – 11,90 € až 32,13 €, 80 % Arabica / 20 % Robusta, kakao, mandle a lieskovce',
+      'Kenya Kamundu Estate AA – 13,98 €, 250 g, filter, čierne ríbezle, malina, slivka a vanilka',
+      'Colombia Finca El Diviso Decaf – 16,42 €, 200 g, Sugar Cane Decaf, vanilka, mandarínka a jazmín',
+      'Mexico Finca La Esperanza – 12,79 €, 250 g, moderné espresso, marakuja, mandarínka, čokoláda a toffee',
+      'Geisha Ninety Plus Stellar Origin – 21,42 €, 150 g, V60/Origami/Kalita, mango, marakuja, med a pomarančový kvet'
+    ],
+    guidance: [
+      'Pri Kaffa vysvetlite, že príjemná ovocnosť je šťavnatá a vyvážená, kým nepríjemná kyslosť je ostrá a rušivá.'
     ]
   },
   vitazov: {
@@ -127,10 +130,13 @@ export default async function handler(req, res) {
 
     const system = [
       `Ste stručný online kávový poradca pre ${demo.brand}.`,
-      'Odpovedajte po slovensky, prirodzene a maximálne v 2 až 3 krátkych vetách.',
-      'Vždy vykajte. Nepoužívajte markdownové odrážky ani vymyslené fakty, ceny, kontakty alebo produkty.',
+      'Odpovedajte jednoduchou a gramaticky správnou slovenčinou. Napíšte presne dve krátke vety.',
+      'Používajte vykanie bez rodových tvarov. Odpoveď neukončujte otázkou ani výzvou na ďalšiu konverzáciu.',
+      'Odporučiť môžete iba presný názov produktu zo zoznamu Overené produkty. Nikdy nevymýšľajte názvy, fakty, ceny ani kontakty.',
+      'Vhodnosť na automat, espresso, filter, mlieko alebo bezkofeínovú voľbu spomeňte iba vtedy, keď je priamo uvedená pri produkte.',
       'Ak otázku nemožno zodpovedať z údajov nižšie, povedzte to a odporučte chuťový kvíz alebo oficiálny e-shop.',
-      'Pri odporúčaní stručne vysvetlite dôvod podľa prípravy, acidity, mlieka alebo kofeínu.',
+      'Pri odporúčaní stručne vysvetlite dôvod podľa prípravy, acidity, mlieka alebo charakteru kávy.',
+      ...(demo.guidance || []),
       `Oficiálny e-shop: ${demo.web}`,
       `Overené produkty:\n- ${demo.products.join('\n- ')}`,
       ...(demo.notes?.length ? [`Ďalšie overené informácie:\n- ${demo.notes.join('\n- ')}`] : [])
@@ -145,8 +151,8 @@ export default async function handler(req, res) {
       },
       body: JSON.stringify({
         model: MODEL,
-        max_tokens: 280,
-        temperature: 0.25,
+        max_tokens: 170,
+        temperature: 0,
         system,
         messages
       })
@@ -162,8 +168,9 @@ export default async function handler(req, res) {
     const reply = Array.isArray(data.content)
       ? data.content.filter((block) => block.type === 'text').map((block) => block.text).join('').trim()
       : '';
+    const cleanReply = reply.replace(/[\u002a_\u0060#]/g, '').replace(/\s+/g, ' ').trim();
 
-    return res.status(200).json({ reply: reply || 'Najpresnejšie odporúčanie získate cez krátky výber kávy.' });
+    return res.status(200).json({ reply: cleanReply || 'Najpresnejšie odporúčanie získate cez krátky výber kávy.' });
   } catch (error) {
     console.error('coffee chat error', error);
     return res.status(500).json({ error: 'Chat failed' });
