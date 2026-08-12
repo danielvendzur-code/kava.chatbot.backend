@@ -4,18 +4,20 @@
   const chatScreen = document.querySelector('#chatScreen');
   const chat = document.querySelector('#chat');
   const entry = document.querySelector('#entry');
-  const composerArea = document.querySelector('.composer-area');
-  if (!chatScreen || !chat || !entry || !composerArea) return;
+  const composer = document.querySelector('#composer');
+  const reset = document.querySelector('#reset');
+  if (!chatScreen || !chat || !entry || !composer) return;
 
-  // Keep the actual conversation visually first. The optional advisor handoff
-  // sits below it until the customer starts chatting.
+  // Conversation comes first, so the welcome bubble sits above the optional
+  // advisor handoff instead of being pushed down by it.
   chatScreen.insertBefore(chat, entry);
 
-  const syncEntry = () => {
-    entry.hidden = Boolean(chat.querySelector('.msg--user'));
-  };
-
-  const observer = new MutationObserver(syncEntry);
-  observer.observe(chat, { childList:true, subtree:true });
-  syncEntry();
+  // Once the customer sends a free-text message, the only mode change is the
+  // persistent top Chat / Výber kávy switch. Reset restores the initial handoff.
+  composer.addEventListener('submit', () => {
+    entry.hidden = true;
+  });
+  reset?.addEventListener('click', () => {
+    entry.hidden = false;
+  });
 })();
