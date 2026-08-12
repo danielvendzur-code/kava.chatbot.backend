@@ -14,11 +14,19 @@ const demos = [
 
 function watchConsole(page) {
   const failures = [];
-  page.on('console', (message) => {
+  const onConsole = (message) => {
     if (message.type() === 'error') failures.push(message.text());
-  });
-  page.on('pageerror', (error) => failures.push(error.message));
-  return failures;
+  };
+  const onPageError = (error) => failures.push(error.message);
+  page.on('console', onConsole);
+  page.on('pageerror', onPageError);
+  return {
+    failures,
+    stop() {
+      page.off('console', onConsole);
+      page.off('pageerror', onPageError);
+    }
+  };
 }
 
 async function waitForDemo(page) {
@@ -33,7 +41,7 @@ test('all five routed demos load their final runtime with no page scroll at 1366
   await page.setViewportSize({ width: 1366, height: 768 });
 
   for (const demo of demos) {
-    const errors = watchConsole(page);
+    const consoleWatch = watchConsole(page);
     await page.goto(`${baseURL}/?demo=${demo.slug}`, { waitUntil: 'networkidle' });
     await waitForDemo(page);
     await expect(page).toHaveTitle(demo.title);
@@ -51,7 +59,8 @@ test('all five routed demos load their final runtime with no page scroll at 1366
     expect(metrics.scrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
     expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
     expect(metrics.text.length).toBeGreaterThan(20);
-    expect(errors).toEqual([]);
+    expect(consoleWatch.failures).toEqual([]);
+    consoleWatch.stop();
     await page.screenshot({ path: `artifacts/final-${demo.slug}-1366x768.png`, fullPage: true });
   }
 });
@@ -60,24 +69,25 @@ test('all five routed demos remain horizontally contained at 571x813', async ({ 
   await page.setViewportSize({ width: 571, height: 813 });
 
   for (const demo of demos) {
-    const errors = watchConsole(page);
+    const consoleWatch = watchConsole(page);
     await page.goto(`${baseURL}/?demo=${demo.slug}`, { waitUntil: 'networkidle' });
     await waitForDemo(page);
+    const resources = await page.evaluate(() => performance.getEntriesByType('resource').map((entry) => entry.name));
     const metrics = await page.evaluate(() => ({
       scrollWidth: document.scrollingElement.scrollWidth,
       innerWidth: window.innerWidth,
-      hasChat: document.body.innerText.includes('Chat'),
-      hasAdvisor: document.body.innerText.includes('Výber') || document.body.innerText.includes('Nájsť')
+      text: document.body.innerText.trim()
     }));
+    expect(resources.some((url) => url.includes(demo.resource))).toBeTruthy();
     expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
-    expect(metrics.hasChat).toBeTruthy();
-    expect(metrics.hasAdvisor).toBeTruthy();
-    expect(errors).toEqual([]);
+    expect(metrics.text.length).toBeGreaterThan(20);
+    expect(consoleWatch.failures).toEqual([]);
+    consoleWatch.stop();
   }
 });
 
-test('Jolka stays on its standalone entry point and remains no-scroll', async ({ page }) => {
-  const errors = watchConsole(page);
+test('Jolka stays standalone and its owner page fits 1366x768 without scroll', async ({ page }) => {
+  const consoleWatch = watchConsole(page);
   await page.setViewportSize({ width: 1366, height: 768 });
   await page.goto(`${baseURL}/jolka.html`, { waitUntil: 'networkidle' });
   await page.waitForFunction(() => document.body.innerText.trim().length > 20);
@@ -89,6 +99,7 @@ test('Jolka stays on its standalone entry point and remains no-scroll', async ({
   }));
   expect(metrics.scrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
   expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
-  expect(errors).toEqual([]);
+  expect(consoleWatch.failures).toEqual([]);
+  consoleWatch.stop();
   await page.screenshot({ path: 'artifacts/final-jolka-1366x768.png', fullPage: true });
 });
