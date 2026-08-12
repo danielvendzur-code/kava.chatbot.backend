@@ -4,8 +4,10 @@ const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
 const demo = (query = '') => `${baseURL}/?demo=vitazov${query}`;
 
 async function expectOpen(page) {
-  await expect(page.locator('#widget')).toHaveClass(/is-open/);
-  await expect(page.locator('#widget')).toHaveAttribute('aria-hidden', 'false');
+  const widget = page.locator('#widget');
+  await expect(widget).toHaveClass(/is-open/);
+  await expect(widget).toHaveAttribute('aria-hidden', 'false');
+  await expect(widget).toHaveCSS('transform', 'none');
 }
 
 async function choose(page, value, nextStep) {
@@ -89,7 +91,8 @@ test('office and decaf paths map the verified range', async ({ page }) => {
   await chooseOffice(page);
   await expect(page.locator('.result-head h2')).toHaveText('Office Blend');
   await expect(page.locator('.kv-final-actions a')).toHaveAttribute('href', 'https://kavavitazov.sk/espresso-blend/');
-  await expect(page.locator('.office-followup')).toBeVisible();
+  await expect(page.locator('.office-followup')).toBeHidden();
+  await expect(page.locator('.kv-final-upsell')).toBeVisible();
 
   await page.locator('#resetAll').click();
   await page.locator('[data-mode="advisor"]').click();
@@ -116,13 +119,13 @@ test('result shows three decisive detail rows and commerce actions', async ({ pa
   await expect(page.locator('.kv-next-best-action')).toHaveCount(0);
 });
 
-test('next-best action stays relevant and state-driven', async ({ page }) => {
+test('discovery path keeps one visible, relevant commerce upsell', async ({ page }) => {
   await page.goto(demo('&qa=advisor'), { waitUntil: 'domcontentloaded' });
   await chooseDiscovery(page);
   await expect(page.locator('.result-head h2')).toHaveText('Etiópia');
-  await expect(page.locator('.kv-next-best-action')).toContainText('Darčekové balenie');
-  await expect(page.locator('.kv-next-best-action a')).toHaveAttribute('href', 'https://kavavitazov.sk/kava-darcekove-balenie/');
-  await expect(page.locator('.kv-next-best-action')).toHaveCount(1);
+  await expect(page.locator('.kv-final-upsell')).toBeVisible();
+  await expect(page.locator('.kv-final-upsell')).toContainText('Darčekové balenie');
+  await expect(page.locator('.kv-next-best-action')).toBeHidden();
 });
 
 test('mobile, fallback and reduced motion remain robust', async ({ browser }) => {
