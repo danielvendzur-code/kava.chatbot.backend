@@ -10,7 +10,7 @@ html body[data-demo] .launcher-teaser span,
 html body[data-demo] .pz-preview span,
 html body[data-demo] .kf-teaser span{font-size:11px!important}
 
-/* Diamonds and Concept still had one black CTA strip in chat. Remove it completely. */
+/* Diamonds and Concept: no black CTA strip in chat. */
 html body[data-demo="diamonds"] #chatScreen #openAdvisor,
 html body[data-demo="concept"] #chatScreen #openAdvisor{
   color:var(--nb-ink)!important;
@@ -36,54 +36,60 @@ html body[data-demo="concept"] #launcherTeaser{
   transform:none!important;
 }
 
-/* Brand marks must remain visible on the new light headers. */
-html body[data-demo="diamonds"] .widget-head .brand-lockup img,
-html body[data-demo="diamonds"] .widget__header .brand-lockup img{
-  filter:none!important;
-  opacity:1!important;
+/* Brand marks must remain visible on light headers. */
+html body[data-demo="diamonds"] .widget-head .brand-lockup img{display:none!important}
+html body[data-demo="diamonds"] .widget-head .brand-lockup__fallback{
+  display:block!important;
+  color:#111!important;
+  background:transparent!important;
+  font:900 8px/1.02 "Manrope","DM Sans",sans-serif!important;
+  letter-spacing:.02em!important;
 }
-html body[data-demo="concept"] .concept-widget-logo{
-  filter:none!important;
-  opacity:1!important;
-}
+html body[data-demo="concept"] .concept-widget-logo{filter:none!important;opacity:1!important}
 html body[data-demo="vitazov"] .widget-brand__mark,
 html body[data-demo="vitazov"] .widget-brand__mark .advisor-logo,
-html body[data-demo="vitazov"] .widget-brand__copy strong{color:var(--nb-ink)!important;opacity:1!important}
+html body[data-demo="vitazov"] .widget-brand__copy,
+html body[data-demo="vitazov"] .widget-brand__copy strong{color:var(--nb-ink)!important;opacity:1!important;visibility:visible!important}
+
+/* Kaffa: guarantee a visible text lockup instead of an empty pale header. */
 html body[data-demo="kaffa"] .kf-widget-brand{
   display:flex!important;
   align-items:center!important;
-  gap:10px!important;
-  opacity:1!important;
-  visibility:visible!important;
-}
-html body[data-demo="kaffa"] .kf-widget-brand>.kf-wordmark,
-html body[data-demo="kaffa"] .kf-widget-brand__copy{
-  display:grid!important;
+  gap:8px!important;
   opacity:1!important;
   visibility:visible!important;
   color:var(--nb-ink)!important;
 }
-html body[data-demo="kaffa"] .kf-widget-brand__copy strong{display:block!important;color:var(--nb-ink)!important;font-size:12px!important}
-html body[data-demo="kaffa"] .kf-widget-brand__copy small{display:block!important;color:#66706c!important;font-size:9px!important}
-
-/* Pražiarnička official black-backed logo becomes black-on-white inside the light widget. */
-html body[data-demo="praziarnicka"] .pz-widget-logo{filter:invert(1)!important;background:#fff!important}
-html body[data-demo="praziarnicka"] .pz-assistant-avatar{
-  background:#fff!important;
-  border:1px solid var(--nb-line)!important;
+html body[data-demo="kaffa"] .kf-widget-brand>.kf-wordmark,
+html body[data-demo="kaffa"] .kf-widget-brand__copy{display:none!important}
+html body[data-demo="kaffa"] .kf-widget-brand::before{
+  content:"Kaffa Roastery";
+  display:block;
+  color:var(--nb-ink);
+  font:800 13px/1.1 "DM Sans",system-ui,sans-serif;
+  letter-spacing:-.02em;
 }
+html body[data-demo="kaffa"] .kf-widget-brand::after{
+  content:"Online";
+  display:block;
+  margin-left:2px;
+  color:#65716d;
+  font:700 9px/1 "DM Sans",system-ui,sans-serif;
+}
+
+/* Pražiarnička: white logo plate with black mark, never the inverted black rectangle. */
+html body[data-demo="praziarnicka"] .pz-widget-brand{background:transparent!important}
+html body[data-demo="praziarnicka"] .pz-widget-logo{
+  filter:none!important;
+  background:#fff!important;
+  border-radius:8px!important;
+}
+html body[data-demo="praziarnicka"] .pz-assistant-avatar{background:#fff!important;border:1px solid var(--nb-line)!important}
 html body[data-demo="praziarnicka"] .pz-assistant-avatar img{filter:invert(1)!important}
-html body[data-demo="praziarnicka"] .pz-advisor-cta>svg{
-  color:#fff!important;
-  background:var(--nb-strong)!important;
-}
+html body[data-demo="praziarnicka"] .pz-advisor-cta>svg{color:#fff!important;background:var(--nb-strong)!important}
 
-/* Concept's generic chatbot marks should also be light, not black circles. */
-html body[data-demo="concept"] .advisor-entry__mark{
-  color:var(--nb-strong)!important;
-  background:#fff!important;
-  border:1px solid var(--nb-line)!important;
-}
+/* Concept generic chatbot mark should be light, not a black tile. */
+html body[data-demo="concept"] .advisor-entry__mark{color:var(--nb-strong)!important;background:#fff!important;border:1px solid var(--nb-line)!important}
 
 @media(max-width:760px){
   html body[data-demo="concept"] #launcherTeaser{bottom:78px!important;right:0!important}
