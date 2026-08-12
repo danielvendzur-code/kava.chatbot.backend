@@ -17,22 +17,22 @@ const DEMOS = {
     brand: 'Diamonds Roastery',
     web: 'https://diroastery.sk/kategoria-produktu/kava/',
     products: [
-      'Brazília Fazenda Pereira – sladký čokoládový profil',
-      'Kongo Kisunga – ovocnejšia výberová káva na filter',
-      'Keňa Mugaya AB – svieža a výrazná filtrovaná káva',
-      'Kolumbia Kumanday Reserve – jemná sladká káva s citrusovou dochuťou',
-      'Kolumbia El Buho Decaf – plná bezkofeínová káva'
+      'Peru Valley Coffee – vyvážená káva s nižšou aciditou, vhodná do automatu a na espresso',
+      'Brazília Fazenda Pereira – sladká káva s čokoládovým a orieškovým smerom',
+      'Keňa Mugaya AB – čistá a šťavnatá filtrovaná káva s egrešmi, černicami a jablkom',
+      'Kolumbia Kumanday Reserve – menej ovocná káva s karamelom, kakaom a sladkým citrusom; espresso a automat',
+      'Kolumbia El Buho Decaf – bezkofeínová omni káva s javorovým sirupom, karamelom a orieškami'
     ]
   },
   kaffa: {
     brand: 'Kaffa Roastery',
     web: 'https://kaffaroastery.sk/',
     products: [
-      'Mokka Espresso Blend – 11,90 € až 32,13 €, 80 % Arabica / 20 % Robusta, kakao, mandle a lieskovce',
-      'Kenya Kamundu Estate AA – 13,98 €, 250 g, filter, čierne ríbezle, malina, slivka a vanilka',
-      'Colombia Finca El Diviso Decaf – 16,42 €, 200 g, Sugar Cane Decaf, vanilka, mandarínka a jazmín',
-      'Mexico Finca La Esperanza – 12,79 €, 250 g, moderné espresso, marakuja, mandarínka, čokoláda a toffee',
-      'Geisha Ninety Plus Stellar Origin – 21,42 €, 150 g, V60/Origami/Kalita, mango, marakuja, med a pomarančový kvet'
+      'Mokka Espresso Blend – 80 % arabica a 20 % robusta, espresso a mliečne nápoje',
+      'Colombia Quebraditas Peach – moderný ovocný profil',
+      'Kenya Kabingara Estate – svieža káva na filter',
+      'Costa Rica Hacienda Sonora – sladká a vyvážená',
+      'Colombia Finca El Diviso Decaf – výberová bezkofeínová káva'
     ]
   },
   vitazov: {
@@ -57,15 +57,32 @@ const DEMOS = {
       'Summerjam – Colombia – sladká sezónna káva'
     ]
   },
+  // Verified against the roastery's own WooCommerce store on 2026-08-08.
   jolka: {
     brand: 'Pražiareň Jolka',
-    web: 'https://www.praziarenjolka.sk/shop/',
+    web: 'https://www.praziarenjolka.sk/eshop-kava/',
     products: [
-      'Zmes Jolka – čokoládová, orechová, nízka acidita, vhodná do mlieka',
-      'Zmes Čokoláda – sladký klasický profil',
-      'Ethiopia SIDAMO GR.2 – citrus, jazmín a bergamot, light roast',
-      'Vietnam Lang Biang Anaerobic Natural – intenzívna ovocná káva',
-      'El Salvador SHG EP – vyvážená stredoamerická káva'
+      'Zmes Jolka – house blend s 20 % robusty, čokoláda a orechy, minimálna acidita, skvelá do mlieka aj ako espresso, 250 g za 13,50 €',
+      'Zmes Čokoláda – house blend s 30 % robusty, čokoláda, orechy a hustá kréma, takmer žiadna acidita, 250 g za 13,50 €',
+      '9-to-Fine – signature office blend s vyšším podielom robusty, krémová čokoládovo-oriešková chuť, minimálna acidita, ideálny do automatu, 500 g za 17 €',
+      'Horké zlato – zmes pre milovníkov horkej chuti, plná horkosladká chuť a bohatá pena bez ovocnej kyslosti, 250 g za 14 €',
+      'Sviatočná zmes – Brazil a Guatemala s 30 % vietnamskej robusty, vyšší kofeín, plná chuť a jemná acidita, 250 g za 14 €',
+      'Brazil Cerrado Doce Diamantina – 100 % arabica, veľmi nízka acidita, plné zamatové telo, čokoláda, karamel a lieskové oriešky, 250 g za 13,50 €',
+      'Honduras SHG EP San Andres – 100 % arabica, vyšší kofeín, minimálna jemná acidita, sladká až čokoládová chuť, 250 g za 13,50 €',
+      'Colombia Supremo Scr.19 Sofía – 100 % arabica, nízka acidita, kakao, karamelová sladkosť a korenisté podtóny, 250 g za 13,50 €',
+      'India Plantation AA – 100 % arabica, sladká a jemná, slaný karamel, škorica a orechy, plné telo a príjemná acidita, 250 g za 14 €',
+      'Guatemala SHB EP – 100 % arabica, vysoká acidita, chuť ovocia a čokolády, skvelá na espresso, 250 g za 14 €',
+      'Ethiopia SIDAMO GR.2 – 100 % arabica, vysoká citrusová acidita, jazmín a bergamot, na filter, svetlé alebo stredné praženie, 250 g za 14 €',
+      'Vietnam Lang Biang Anaerobic Natural – výberová káva priamo od farmára, tropické ovocie a vínna dochuť, odporúčaná na V60 a Chemex, 250 g za 17 €',
+      'DECAF Etiópia – bezkofeínová 100 % arabica z regiónu Guji, nízka acidita, jahody, čučoriedky a mliečna čokoláda, 250 g za 14 €',
+      'Jamaica Blue Mountain – exkluzívny mikrolot, sladká a hladká chuť bez horkosti s jemnou aciditou, 250 g za 80 €',
+      'Cascara Costa Rica – sušená dužina kávovej čerešne na prípravu čaju, sladký ovocný profil, 30 g za 3,50 €',
+      'Cesta okolo sveta za kávou – darčekové degustačné balenia MINI, MIDI a MAXI s kávami z viacerých krajín a cascarou'
+    ],
+    notes: [
+      'Káva sa predáva v baleniach 75 g, 150 g, 250 g, 500 g a 1 kg, okrem výnimiek uvedených vyššie.',
+      'Pri každej káve si zákazník volí mletie: zrnká, espresso, moka konvička, filter, French press, Aeropress alebo džezva.',
+      'El Salvador SHG EP je momentálne vypredaný, neodporúčajte ho.'
     ]
   }
 };
@@ -115,10 +132,10 @@ export default async function handler(req, res) {
       'Odporučiť môžete iba presný názov produktu zo zoznamu Overené produkty. Nikdy nevymýšľajte názvy, fakty, ceny ani kontakty.',
       'Vhodnosť na automat, espresso, filter, mlieko alebo bezkofeínovú voľbu spomeňte iba vtedy, keď je priamo uvedená pri produkte.',
       'Ak otázku nemožno zodpovedať z údajov nižšie, povedzte to a odporučte chuťový kvíz alebo oficiálny e-shop.',
-      'Pri odporúčaní stručne vysvetlite dôvod podľa prípravy, acidity, mlieka alebo kofeínu.',
-      'Pri Kaffa vysvetlite, že príjemná ovocnosť je šťavnatá a vyvážená, kým nepríjemná kyslosť je ostrá a rušivá.',
+      'Pri odporúčaní stručne vysvetlite dôvod podľa prípravy, acidity, mlieka alebo charakteru kávy.',
       `Oficiálny e-shop: ${demo.web}`,
-      `Overené produkty:\n- ${demo.products.join('\n- ')}`
+      `Overené produkty:\n- ${demo.products.join('\n- ')}`,
+      ...(demo.notes?.length ? [`Ďalšie overené informácie:\n- ${demo.notes.join('\n- ')}`] : [])
     ].join('\n\n');
 
     const apiResponse = await fetch('https://api.anthropic.com/v1/messages', {

@@ -3,46 +3,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <meta name="theme-color" content="#f6f3ec">
+  <meta id="themeColor" name="theme-color" content="#123f35">
   <meta name="robots" content="noindex,nofollow">
-  <title>Kávový poradca</title>
-  <meta name="description" content="Nájdite kávu podľa svojej chuti a spôsobu prípravy.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111111'/%3E%3Ctext x='32' y='41' text-anchor='middle' fill='white' font-family='Georgia' font-size='28'%3EK%3C/text%3E%3C/svg%3E">
+  <title>Diamonds Roastery – kávový poradca</title>
+  <meta name="description" content="Jednoduchý výber kávy Diamonds Roastery podľa chuti a prípravy.">
+  <link rel="icon" href="data:,">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <script>
     (() => {
-      const requested = new URLSearchParams(location.search).get('demo')
-        || location.hash.slice(1)
-        || location.pathname.split('/').filter(Boolean).at(-1);
-      const isKaffa = requested === 'kaffa';
-
-      if (isKaffa) {
-        document.title = 'Kaffa Roastery – nájdite svoju kávu';
-        document.querySelector('[name="theme-color"]').content = '#f6f3ec';
-        document.querySelector('[name="description"]').content = 'Nájdite kávu Kaffa podľa svojej chuti a spôsobu prípravy.';
-        document.write('<link rel="stylesheet" href="/kaffa-editorial.css"><link rel="stylesheet" href="/kaffa-widget.css"><link rel="stylesheet" href="/kaffa-jolka-scale.css">');
-      } else {
-        document.write('<link rel="stylesheet" href="/coffee-v8.css"><link rel="stylesheet" href="/coffee-v8-refine.css">');
-      }
-
-      window.__KAFFA_EDITORIAL__ = isKaffa;
+      const params = new URLSearchParams(location.search);
+      const fromQuery = params.get('demo') || location.hash.replace(/^#/, '');
+      const parts = location.pathname.split('/').filter(Boolean);
+      const fromPath = parts.at(-1);
+      const slug = /^[a-z0-9-]+$/i.test(fromQuery || '')
+        ? fromQuery
+        : ((fromPath && !['index.html', 'ukazka'].includes(fromPath)) ? fromPath : 'praziarnicka');
+      window.__COFFEE_DEMO_SLUG__ = slug;
+      document.querySelector('#themeColor').content = slug === 'diamonds' ? '#0d0f0e' : '#123f35';
+      document.write(slug === 'diamonds'
+        ? '<link rel="stylesheet" href="/coffee-v8-diamonds-landing.css"><link rel="stylesheet" href="/coffee-v8-diamonds-widget.css"><link rel="stylesheet" href="/coffee-v8-diamonds-jolka.css">'
+        : '<link rel="stylesheet" href="/coffee-v8.css"><link rel="stylesheet" href="/coffee-v8-refine.css">');
     })();
   </script>
   <link rel="stylesheet" href="/coffee-premium-v2.css">
-  <link rel="stylesheet" href="/kaffa-final.css">
+  <link rel="stylesheet" href="/coffee-diamonds-final.css">
 </head>
 <body>
   <div id="coffee-demo-root"></div>
+  <script src="/coffee-bootstrap.js"></script>
+  <script src="/coffee-api-route.js"></script>
+  <script src="/coffee-local-api.js"></script>
+  <script src="/coffee-configs.js"></script>
+  <script src="/coffee-brand-overrides.js"></script>
   <script>
-    if (window.__KAFFA_EDITORIAL__) {
-      document.write('<script src="/coffee-api-route.js"><\/script><script src="/coffee-local-api.js"><\/script><script src="/kaffa-data.js"><\/script><script src="/kaffa-editorial.js"><\/script>');
-    } else {
-      document.write('<script src="/coffee-bootstrap.js"><\/script><script src="/coffee-api-route.js"><\/script><script src="/coffee-local-api.js"><\/script><script src="/coffee-configs.js"><\/script><script src="/coffee-brand-overrides.js"><\/script><script src="/coffee-v8.js"><\/script><script src="/coffee-v8-patch.js"><\/script>');
-    }
+    (() => {
+      const diamonds = window.__COFFEE_DEMO_SLUG__ === 'diamonds';
+      const start = () => {
+        const entry = document.createElement('script');
+        entry.src = diamonds ? '/coffee-v8-diamonds-foundation.js' : '/coffee-v8.js';
+        entry.async = false;
+        entry.addEventListener('load', () => {
+          const followUp = document.createElement('script');
+          followUp.src = diamonds ? '/coffee-v8-diamonds-controller.js' : '/coffee-v8-patch.js';
+          followUp.async = false;
+          if (diamonds) {
+            followUp.addEventListener('load', () => {
+              const finalPass = document.createElement('script');
+              finalPass.src = '/coffee-diamonds-final.js';
+              finalPass.async = false;
+              document.body.append(finalPass);
+            }, { once: true });
+          }
+          document.body.append(followUp);
+        }, { once: true });
+        document.body.append(entry);
+      };
+
+      if (diamonds) {
+        const director = document.createElement('script');
+        director.src = '/diamonds-director.js';
+        director.async = false;
+        director.addEventListener('load', start, { once: true });
+        document.body.append(director);
+      } else {
+        start();
+      }
+    })();
   </script>
-  <script src="/coffee-premium-v2.js"></script>
-  <script src="/kaffa-final.js"></script>
 </body>
 </html>
