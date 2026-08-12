@@ -14,11 +14,23 @@ const demos = [
 
 function watchConsole(page) {
   const failures = [];
-  const onConsole = message => { if (message.type() === 'error') failures.push(message.text()); };
-  const onPageError = error => failures.push(error.message);
+  const seen = new Set();
+  const add = value => { if (!seen.has(value)) { seen.add(value); failures.push(value); } };
+  const onConsole = message => {
+    if (message.type() !== 'error') return;
+    const location = message.location();
+    add(`console: ${message.text()}${location?.url ? ` @ ${location.url}` : ''}`);
+  };
+  const onPageError = error => add(`pageerror: ${error.message}`);
+  const onResponse = response => {
+    if (response.status() >= 400) add(`http ${response.status()}: ${response.url()}`);
+  };
+  const onRequestFailed = request => add(`request failed: ${request.url()} :: ${request.failure()?.errorText || 'unknown'}`);
   page.on('console', onConsole);
   page.on('pageerror', onPageError);
-  return { failures, stop(){ page.off('console', onConsole); page.off('pageerror', onPageError); } };
+  page.on('response', onResponse);
+  page.on('requestfailed', onRequestFailed);
+  return { failures, stop(){ page.off('console', onConsole); page.off('pageerror', onPageError); page.off('response', onResponse); page.off('requestfailed', onRequestFailed); } };
 }
 
 async function waitForDemo(page) {
@@ -97,6 +109,18 @@ test('all five chats visibly answer and use readable chips/bubbles', async ({ pa
     expect(chipCount).toBeGreaterThanOrEqual(4);
     const chipFont = await chips.first().evaluate(node => parseFloat(getComputedStyle(node).fontSize));
     expect(chipFont).toBeGreaterThanOrEqual(11);
+
+    if (demo.slug === 'kaffa') {
+      const panel = page.locator('.kf-panel');
+      await expect(panel).toBeVisible();
+      const panelStyle = await panel.evaluate(node => {
+        const style = getComputedStyle(node);
+        return { opacity:parseFloat(style.opacity), background:style.backgroundColor };
+      });
+      expect(panelStyle.opacity).toBeGreaterThanOrEqual(.99);
+      expect(panelStyle.background).not.toBe('rgba(0, 0, 0, 0)');
+      expect(await page.locator('.kf-widget-brand .kf-widget-title,.kf-widget-brand .kf-widget-bubble').filter({ visible:true }).count()).toBe(0);
+    }
 
     const bots = page.locator(demo.bot);
     const before = await bots.count();

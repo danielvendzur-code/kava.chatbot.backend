@@ -150,7 +150,7 @@ body[data-demo="kaffa"] .kf-composer input{font-size:13px!important}
 
 /* Teasers must settle clearly above their launchers in the final state. */
 body[data-demo="praziarnicka"] .pz-preview{top:-64px!important}
-body[data-demo="diamonds"] .teaser{top:-28px!important}
+body[data-demo="diamonds"] .teaser{top:-52px!important}
 body[data-demo="kaffa"] .kf-teaser{top:-28px!important}
 body[data-demo="vitazov"] .launcher__teaser{bottom:108px!important}
 
@@ -158,6 +158,7 @@ body[data-demo="vitazov"] .launcher__teaser{bottom:108px!important}
   body[data-demo="concept"] .launcher{right:max(14px,env(safe-area-inset-right))!important;bottom:max(14px,env(safe-area-inset-bottom))!important;min-width:66px!important;min-height:66px!important}
   body[data-demo="concept"] #openWidget,body[data-demo="concept"] .launcher__button{width:66px!important;height:66px!important;flex-basis:66px!important}
   body[data-demo="praziarnicka"] .pz-preview{top:-40px!important}
-  body[data-demo="diamonds"] .teaser,body[data-demo="kaffa"] .kf-teaser{top:-14px!important}
+  body[data-demo="diamonds"] .teaser{top:-28px!important}
+  body[data-demo="kaffa"] .kf-teaser{top:-14px!important}
   body[data-demo="vitazov"] .launcher__teaser{bottom:94px!important}
 }
