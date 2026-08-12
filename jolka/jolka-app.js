@@ -119,13 +119,13 @@
           <img src="/assets/jolka/logo-ink.webp" width="52" height="52" alt="Pražiareň Jolka">
           <span class="lockup__text"><b>${esc(brand.name)}</b><span>${esc(brand.place)}</span></span>
         </div>
-        <span class="demo-flag"><i class="dot"></i> Návrh AI poradcu · ukážka</span>
+        <a class="site-link" href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk ${icons.arrow}</a>
       </header>
 
       <section class="hero">
         <div class="hero__copy">
-          <span class="eyebrow">Pre tím Pražiarne Jolka</span>
-          <h1>Vitajte vo vašom návrhu AI poradcu pre Pražiareň Jolka.</h1>
+          <span class="eyebrow">Pre Pražiareň Jolka</span>
+          <h1>Pomôžte zákazníkovi nájsť jeho kávu.</h1>
           <p class="hero__lead">Takto môže zákazníkovi vysvetliť rozdiel medzi klasickými zmesami a výberovou kávou a odporučiť konkrétny produkt.</p>
 
           <div class="benefits">
@@ -136,7 +136,6 @@
 
           <div class="hero__actions">
             <button class="cta" id="heroOpen" type="button">Otvoriť ukážku poradcu ${icons.arrow}</button>
-            <span class="hero__hint">Funguje s reálnou ponukou Jolky, overenou ${esc(brand.verifiedOn)}.</span>
           </div>
         </div>
 
@@ -163,7 +162,7 @@
           <li><b>Zvyšuje hodnotu košíka</b><span>Ukáže väčšie balenie aj druhú vhodnú kávu.</span></li>
           <li><b>Vedie k nákupu</b><span>Z odporúčania jedným klikom na produkt.</span></li>
         </ul>
-        <p class="page__by">Návrh pripravil <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a> · ukážka pre Pražiareň Jolka</p>
+        <p class="page__by">Kávový poradca od <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a></p>
       </footer>
     </main>
 
