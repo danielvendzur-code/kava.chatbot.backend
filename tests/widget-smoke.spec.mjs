@@ -104,9 +104,14 @@ test('all five routed demos fit 1366x768 and keep readable owner presentation', 
       await expect(page.locator('.pz13-flow')).toBeVisible();
       await expect(page.locator('.parity-pz-showcase')).toHaveCount(0);
     } else {
-      const strip = page.locator('.parity-bottom');
-      await expect(strip).toBeVisible();
-      await expect(strip.locator('.parity-bottom__item')).toHaveCount(4);
+      // The page behind the widget is the roastery's shop, so the service row
+      // belongs to the shop. The old strip was vendor copy about the advisor and
+      // was identical on three different brands.
+      const proof = page.locator('.cs-proof > div');
+      await expect(proof.first()).toBeVisible();
+      await expect(proof).toHaveCount(4);
+      await expect(page.locator('.cs-card')).toHaveCount(4);
+      await expect(page.locator('.parity-bottom')).toHaveCount(0);
     }
 
     const launcher = page.locator(demo.launcher);
@@ -232,10 +237,19 @@ test('Káva Víťazov advisor uses distinct semantic photos and readable option 
   const options = page.locator('#advisorBody .option');
   await expect(options.first()).toBeVisible();
   expect(await options.count()).toBeGreaterThanOrEqual(4);
-  const images = page.locator('#advisorBody .parity-choice-img');
-  await expect(images).toHaveCount(await options.count());
-  const srcs = await images.evaluateAll(nodes => nodes.map(node => node.getAttribute('src')));
-  expect(new Set(srcs).size).toBeGreaterThanOrEqual(3);
+  // Víťazov draws each answer from its own choice sprite. Jolka's brewing photos
+  // used to be injected over all of them, which made the taste step illustrate
+  // "čokoláda a orechy" with an espresso machine.
+  await expect(page.locator('.parity-choice-img')).toHaveCount(0);
+  const positions = await page.locator('#advisorBody .option__photo').evaluateAll((nodes) =>
+    nodes.map((node) => {
+      const style = getComputedStyle(node);
+      return `${style.backgroundImage}|${style.backgroundPosition}`;
+    })
+  );
+  expect(positions).toHaveLength(await options.count());
+  expect(positions.every((value) => value.includes('vitazov-choice-sprite'))).toBeTruthy();
+  expect(new Set(positions).size).toBeGreaterThanOrEqual(3);
   for (const option of await options.all()) {
     const title = option.locator('.option__copy b');
     const description = option.locator('.option__copy small');

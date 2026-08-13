@@ -32,20 +32,19 @@ async function chooseDiscovery(page) {
   await choose(page, 'balanced', null);
 }
 
-test('landing is owner-facing, compact and photo-led', async ({ page }) => {
+test('page behind the widget is the roastery shop, not a pitch for the chatbot', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto(demo(), { waitUntil: 'domcontentloaded' });
-  await expect(page.locator('h1')).toHaveText('Káva domov aj do firmy. Vybraná za minútu.');
-  await expect(page.locator('.demo-copy > p')).toContainText('štyri krátke otázky');
-  await expect(page.locator('.demo-benefit')).toHaveCount(3);
-  await expect(page.locator('.demo-benefit').nth(0)).toContainText('Odpovie 24/7');
-  await expect(page.locator('.demo-benefit').nth(1)).toContainText('Vyberie konkrétnu kávu');
-  await expect(page.locator('.demo-benefit').nth(2)).toContainText('Zvýši objednávku');
-  await expect(page.locator('.demo-tag')).toContainText('mojchatbot.sk');
-  await expect(page.locator('.kv-official-logo')).toHaveAttribute('src', '/assets/vitazov-logo.svg');
-  await expect(page.locator('.preview-panel')).toContainText('Office Blend');
-  await expect(page.locator('.preview-pack .kv-preview-photo img')).toHaveCount(1);
-  await expect(page.locator('#heroOpen')).toBeVisible();
+  await expect(page.locator('h1')).toHaveText('Káva domov aj do firmy.');
+  await expect(page.locator('.cs-hero__copy p')).toContainText('Pražíme na Slovensku');
+  await expect(page.locator('.cs-logo img')).toHaveAttribute('src', '/assets/vitazov-logo.svg');
+  await expect(page.locator('.cs-card')).toHaveCount(4);
+  await expect(page.locator('.cs-card').first()).toContainText('od 15,90 €');
+  await expect(page.locator('.cs-proof div')).toHaveCount(4);
+  // Vendor copy about the advisor itself has no place on the shop's own page.
+  await expect(page.locator('.diamonds-page, .demo-page')).not.toContainText('Odpovie 24/7');
+  await expect(page.locator('.demo-benefit')).toHaveCount(0);
+  await expect(page.locator('.parity-bottom')).toHaveCount(0);
   await expect(page.locator('button button')).toHaveCount(0);
   await expect(page.locator('a[href="tel:"]')).toHaveCount(0);
   expect(await page.evaluate(() => document.documentElement.scrollHeight)).toBeLessThanOrEqual(900);
@@ -60,13 +59,17 @@ test('chat is customer-facing with stronger quick actions and no contact clutter
   await expect(page.locator('.advisor-entry')).toHaveCount(1);
   await expect(page.locator('.advisor-entry')).toContainText('Nájsť svoju kávu');
   await expect(page.locator('.widget-credit')).toHaveCount(0);
+  // Chips are compact pills that still hold readable copy.
   const chipBox = await page.locator('.chip').first().boundingBox();
   const entryBox = await page.locator('.advisor-entry').boundingBox();
   const switchBox = await page.locator('.mode').boundingBox();
-  expect(chipBox.height).toBeGreaterThanOrEqual(40);
-  expect(chipBox.height).toBeLessThanOrEqual(46);
+  expect(chipBox.height).toBeGreaterThanOrEqual(36);
+  expect(chipBox.height).toBeLessThanOrEqual(44);
+  expect(chipBox.width).toBeLessThan(200);
+  const chipSize = await page.locator('.chip').first().evaluate((n) => parseFloat(getComputedStyle(n).fontSize));
+  expect(chipSize).toBeGreaterThanOrEqual(13);
   expect(entryBox.height).toBeLessThanOrEqual(70);
-  expect(switchBox.height).toBeGreaterThanOrEqual(56);
+  expect(switchBox.height).toBeGreaterThanOrEqual(50);
   expect(await page.evaluate(() => document.activeElement?.id)).not.toBe('chatInput');
 });
 
@@ -74,9 +77,14 @@ test('advisor follows use → profile → drink → intensity and selects Victor
   await page.goto(demo('&qa=advisor'), { waitUntil: 'domcontentloaded' });
   await expectOpen(page);
   await expect(page.locator('#stepName')).toHaveText('Použitie');
-  const semanticPhoto = page.locator('.option[data-value="home"] .option__photo .parity-choice-img');
+  // Every answer is illustrated from Víťazov's own choice sprite. Jolka's
+  // brewing photos used to be pasted over all of them, which meant the taste
+  // step answered "čokoláda a orechy" with a picture of an espresso machine.
+  const semanticPhoto = page.locator('.option[data-value="home"] .option__photo');
   await expect(semanticPhoto).toBeVisible();
-  await expect(semanticPhoto).toHaveAttribute('src', /\/assets\/jolka\/method\/(moka|automat|filter|black|milk|both|lever)\.webp/);
+  await expect(page.locator('.parity-choice-img')).toHaveCount(0);
+  const sprite = await semanticPhoto.evaluate((n) => getComputedStyle(n).backgroundImage);
+  expect(sprite).toContain('vitazov-choice-sprite');
   await choose(page, 'home', '2 z 4');
   await expect(page.locator('#stepName')).toHaveText('Chuť');
   await choose(page, 'balanced', '3 z 4');
@@ -91,9 +99,8 @@ test('office and decaf paths map the verified range', async ({ page }) => {
   await page.goto(demo('&qa=advisor'), { waitUntil: 'domcontentloaded' });
   await chooseOffice(page);
   await expect(page.locator('.result-head h2')).toHaveText('Office Blend');
-  await expect(page.locator('.kv-final-actions a')).toHaveAttribute('href', 'https://kavavitazov.sk/espresso-blend/');
+  await expect(page.locator('.kv-final-cta')).toHaveAttribute('href', 'https://kavavitazov.sk/espresso-blend/');
   await expect(page.locator('.office-followup')).toBeHidden();
-  await expect(page.locator('.kv-final-upsell')).toBeVisible();
 
   await page.locator('#resetAll').click();
   await page.locator('[data-mode="advisor"]').click();
@@ -102,10 +109,10 @@ test('office and decaf paths map the verified range', async ({ page }) => {
   await choose(page, 'both', '4 z 4');
   await choose(page, 'decaf', null);
   await expect(page.locator('.result-head h2')).toHaveText('Bezkofeínová');
-  await expect(page.locator('.kv-final-actions a')).toHaveAttribute('href', 'https://kavavitazov.sk/bezkofeinova-decaf/');
+  await expect(page.locator('.kv-final-cta')).toHaveAttribute('href', 'https://kavavitazov.sk/bezkofeinova-decaf/');
 });
 
-test('result shows three decisive detail rows and commerce actions', async ({ page }) => {
+test('result shows three decisive detail rows and one real closing action', async ({ page }) => {
   await page.goto(demo('&qa=advisor'), { waitUntil: 'domcontentloaded' });
   await chooseOffice(page);
   await expect(page.locator('.product-visual .kv-result-photo img')).toHaveCount(1);
@@ -113,19 +120,25 @@ test('result shows three decisive detail rows and commerce actions', async ({ pa
   await expect(page.locator('.result-detail').nth(0).locator('small')).toHaveText('Komu sedí');
   await expect(page.locator('.result-detail').nth(1).locator('small')).toHaveText('Príprava');
   await expect(page.locator('.result-detail').nth(2).locator('small')).toHaveText('Chuť');
+  // The taste row used to print the raw scoring token ("classic").
+  await expect(page.locator('.result-detail').nth(2)).not.toContainText(/^(classic|balanced|fruity|strong|decaf)$/);
   await expect(page.locator('.reason')).toBeVisible();
-  await expect(page.locator('.kv-final-packs')).toBeVisible();
-  await expect(page.locator('.kv-final-upsell')).toBeVisible();
-  await expect(page.locator('.kv-final-add')).toBeVisible();
+  // The pack picker, gift-box upsell and add-to-cart button never reached a
+  // basket; one link to the real product replaces them.
+  await expect(page.locator('.kv-final-packs')).toHaveCount(0);
+  await expect(page.locator('.kv-final-upsell')).toHaveCount(0);
+  await expect(page.locator('.kv-final-add')).toHaveCount(0);
+  await expect(page.locator('.kv-final-cta')).toBeVisible();
+  await expect(page.locator('.kv-final-cta')).toContainText('Pozrieť produkt v e-shope');
   await expect(page.locator('.kv-next-best-action')).toHaveCount(0);
 });
 
-test('discovery path keeps one visible, relevant commerce upsell', async ({ page }) => {
+test('discovery path ends on the discovered product, with no simulated basket', async ({ page }) => {
   await page.goto(demo('&qa=advisor'), { waitUntil: 'domcontentloaded' });
   await chooseDiscovery(page);
   await expect(page.locator('.result-head h2')).toHaveText('Etiópia');
-  await expect(page.locator('.kv-final-upsell')).toBeVisible();
-  await expect(page.locator('.kv-final-upsell')).toContainText('Darčekové balenie');
+  await expect(page.locator('.kv-final-cta')).toHaveAttribute('href', 'https://kavavitazov.sk/prazena-kava-etiopia/');
+  await expect(page.locator('.kv-final-upsell')).toHaveCount(0);
   await expect(page.locator('.kv-next-best-action')).toBeHidden();
 });
 
@@ -142,6 +155,10 @@ test('mobile, fallback and reduced motion remain robust', async ({ browser }) =>
 
   await page.goto(demo('&qa=chat&apiError=1'), { waitUntil: 'domcontentloaded' });
   await page.locator('.chip').first().click();
-  await expect(page.locator('.message--fallback')).toContainText('Overená lokálna odpoveď');
+  // The reply still arrives from the verified catalogue when the API is down;
+  // it just no longer announces its own plumbing to the customer.
+  await expect(page.locator('.message--fallback')).toBeVisible();
+  await expect(page.locator('.message--fallback')).not.toContainText('Overená lokálna odpoveď');
+  await expect(page.locator('.message--fallback time, .message--fallback small')).toHaveCount(0);
   await context.close();
 });

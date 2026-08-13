@@ -362,10 +362,13 @@ window.JOLKA = (() => {
       name: 'Chuť',
       title: 'Aká chuť vám v šálke sadne?',
       options: [
-        { value: 'chocolate', title: 'Čokoláda a orechy', detail: 'Klasika bez ovocnosti', product: 'zmes-cokolada' },
-        { value: 'balanced', title: 'Vyvážená a sladká', detail: 'Plné telo, karamel', product: 'honduras-san-andres' },
-        { value: 'fruity', title: 'Ovocná a svieža', detail: 'Citrusy a kvety', product: 'ethiopia-sidamo' },
-        { value: 'bold', title: 'Výrazná a horká', detail: 'Sila a hustá kréma', product: 'horke-zlato' }
+        // The four taste directions used to be four photographs of the same kraft
+        // bag, so the picture carried no information. Each answer now shows the
+        // flavour it stands for; the coffee that represents it stays as the badge.
+        { value: 'chocolate', title: 'Čokoláda a orechy', detail: 'Klasika bez ovocnosti', product: 'zmes-cokolada', photo: '/assets/jolka/taste/chocolate.webp' },
+        { value: 'balanced', title: 'Vyvážená a sladká', detail: 'Plné telo, karamel', product: 'honduras-san-andres', photo: '/assets/jolka/taste/sweet.webp' },
+        { value: 'fruity', title: 'Ovocná a svieža', detail: 'Citrusy a kvety', product: 'ethiopia-sidamo', photo: '/assets/jolka/taste/fruity.webp' },
+        { value: 'bold', title: 'Výrazná a horká', detail: 'Sila a hustá kréma', product: 'horke-zlato', photo: '/assets/jolka/taste/intense.webp' }
       ]
     },
     {

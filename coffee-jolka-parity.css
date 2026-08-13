@@ -155,7 +155,7 @@ body[data-demo="diamonds"] .question h2,
 body[data-demo="concept"] .question h2{font-size:23px!important;line-height:1.08!important}
 body[data-demo="vitazov"] .option__photo,
 body[data-demo="diamonds"] .option__photo,
-body[data-demo="concept"] .option__photo{aspect-ratio:16/10!important;overflow:hidden!important;background:#f2f1ed!important}
+body[data-demo="concept"] .option__photo{aspect-ratio:16/10!important;overflow:hidden!important;background-color:#f2f1ed!important}
 body[data-demo] .parity-choice-img{width:100%!important;height:100%!important;display:block!important;object-fit:cover!important;object-position:center!important}
 body[data-demo="vitazov"] .option__copy b,
 body[data-demo="diamonds"] .option__copy b,

@@ -86,7 +86,6 @@
     },
     kaffa: {
       styles: [
-        'https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap',
         '/kaffa-editorial.css',
         '/kaffa-widget.css',
         '/kaffa-jolka-scale.css',
@@ -125,11 +124,19 @@
     }
   };
 
+  // Loaded last for every brand except Pražiarnička, which runs an isolated
+  // v13 stack and needs none of the shared shell corrections.
+  // Both stylesheets are injected at the end of <body> by their own scripts:
+  // index.html keeps two <link> elements there, so a <head> stylesheet would
+  // lose every specificity tie to them.
+  const finalScripts = ['/coffee-storefront.js', '/coffee-widget-final.js'];
+
   const boot = async () => {
     const manifest = manifests[slug];
     await loadAll(manifest.styles, addStyle);
     await loadAll(commonScripts, addScript);
     await loadAll(manifest.scripts, addScript);
+    if (slug !== 'praziarnicka') await loadAll(finalScripts, addScript);
   };
 
   boot().catch((error) => {

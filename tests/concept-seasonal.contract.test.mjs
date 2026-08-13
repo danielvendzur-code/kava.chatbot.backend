@@ -38,11 +38,18 @@ test('chat follows the compact product layout without owner branding inside the 
   assert.equal((chat.match(/function seedChat\(\)[\s\S]*?addMessage\(/g) || []).length, 1);
 });
 
-test('every advisor step uses visual choices', () => {
+test('every advisor answer is illustrated by what it means, not by a product jar', () => {
   const questionBlock = core.match(/const questions = \[[\s\S]*?\n  \];/)?.[0] || '';
   assert.equal((questionBlock.match(/photo:/g) || []).length, 14);
   assert.match(questionBlock, /prep-automatic\.webp/);
-  assert.match(questionBlock, /product-yellow-sunset\.jpg/);
+  // Taste, drink and caffeine used to reuse the same product photography, so a
+  // flavour question was answered with a picture of a tin. They now show the
+  // flavour, the drink and the time of day instead.
+  assert.match(questionBlock, /taste\/chocolate\.webp/);
+  assert.match(questionBlock, /taste\/fruity\.webp/);
+  assert.match(questionBlock, /taste\/drink-milk\.webp/);
+  assert.match(questionBlock, /taste\/caffeine-decaf\.webp/);
+  assert.doesNotMatch(questionBlock, /product-[a-z-]+\.jpg/);
 });
 
 test('selection is guarded and advances automatically once', () => {

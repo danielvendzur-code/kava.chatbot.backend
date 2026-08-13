@@ -330,7 +330,11 @@
       .join('');
   }
 
-  /** Taste and acidity steps show a real coffee; method steps show the brew itself. */
+  /**
+   * Every answer shows what it means: the flavour for taste, the brew for the
+   * method steps, the coffee itself for acidity, where the dot scale carries
+   * the reading.
+   */
   function optionVisual(option) {
     const src = option.photo || byId[option.product].tile;
     const badge = option.glyph

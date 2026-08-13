@@ -178,15 +178,17 @@
         </div>
       </header>
 
-      <div class="pz13-stage" id="pz13-stage"></div>
-
+      <!-- The switch sits directly under the header: at the bottom it floated
+           over the last row of answers on a 768 px-tall screen. -->
       <div class="pz13-mode-shell">
         <nav class="pz13-mode" aria-label="Režim poradcu">
           <span class="pz13-mode-thumb" aria-hidden="true"></span>
-          <button data-mode="chat" type="button" aria-pressed="true" class="is-active">${icons.chat}<b>Chat</b></button>
-          <button data-mode="advisor" type="button" aria-pressed="false">${icons.cup}<b>Výber kávy</b></button>
+          <button data-mode="chat" type="button" aria-pressed="true" class="is-active"><b>Chat</b></button>
+          <button data-mode="advisor" type="button" aria-pressed="false"><b>Výber kávy</b></button>
         </nav>
       </div>
+
+      <div class="pz13-stage" id="pz13-stage"></div>
     </section>`;
 
   const widget = root.querySelector('#pz13-widget');
@@ -222,7 +224,9 @@
     requestAnimationFrame(() => backdrop.classList.add('is-visible'));
     lockPage();
     setMode(nextMode);
-    requestAnimationFrame(() => root.querySelector('#pz13-close')?.focus());
+    // Focus the dialog itself, not the close button: focusing Close drew a
+    // focus ring around it every time the widget opened.
+    requestAnimationFrame(() => widget.focus());
   }
 
   function closeWidget() {

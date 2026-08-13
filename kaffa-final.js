@@ -88,81 +88,22 @@
     });
   }
 
-  function commerceMarkup(productName, href, packs) {
-    return `
-      <section class="kf-final-commerce" aria-label="Balenie a košík">
-        <div class="kf-final-packs">
-          <span><small>Balenie</small><b>Vyberte veľkosť</b></span>
-          <div>${packs.map((pack, index) => `<button class="${index === 0 ? 'is-selected' : ''}" type="button" data-pack="${pack}" aria-pressed="${index === 0}">${pack}</button>`).join('')}</div>
-        </div>
-        <button class="kf-final-upsell" type="button" aria-pressed="false">
-          <span class="kf-final-upsell__art"><img src="/assets/kaffa/vak-official.webp" alt=""></span>
-          <span class="kf-final-upsell__copy"><small>Pridať navyše</small><b>ONLY GOOD KAFFA vak</b><span>Bio bavlna · 13,00 €</span></span>
-          <i aria-hidden="true">+</i>
-        </button>
-        <div class="kf-final-actions">
-          <button class="kf-final-add" type="button"><span>Pridať do košíka</span><b aria-hidden="true">→</b></button>
-          <a href="${href}" target="_blank" rel="noreferrer">Otvoriť produkt ↗</a>
-        </div>
-        <div class="kf-final-cart" hidden><span>${productName} · ${packs[0]}</span><b>Pridané</b></div>
-      </section>`;
-  }
-
+  /**
+   * Kaffa closed on a simulated basket too — pack buttons, a tote-bag upsell and
+   * an add-to-cart that only changed its own label. The result keeps the real
+   * product link as its single closing action.
+   */
   function enhanceResult() {
     const result = document.querySelector('.kf-result');
     if (!result || result.dataset.kfFinal === 'true') return;
-
-    const title = result.querySelector('.kf-result-hero__copy h2');
-    const oldLink = result.querySelector('.kf-result-cta');
-    const oldChoice = result.querySelector('.kf-result-choice');
-    const productName = title?.textContent?.trim() || 'Vybraná káva';
-    const href = oldLink?.href || 'https://kaffaroastery.sk';
-    const packs = [...(oldChoice?.querySelector('select')?.options || [])].map((option) => option.textContent.trim()).filter(Boolean);
-    if (!packs.length) packs.push('250 g');
-
+    const cta = result.querySelector('.kf-result-cta');
+    if (!cta) return;
     result.dataset.kfFinal = 'true';
-    oldLink?.remove();
-    oldChoice?.remove();
+    cta.textContent = 'Pozrieť produkt v e-shope ';
+    cta.insertAdjacentHTML('beforeend', '<span aria-hidden="true">\u2197</span>');
+    result.querySelector('.kf-result-choice')?.remove();
     result.querySelector('.kf-result-next')?.remove();
-    result.querySelector('.kf-result-hero')?.insertAdjacentHTML('afterend', commerceMarkup(productName, href, packs));
-
-    const packButtons = [...result.querySelectorAll('.kf-final-packs button')];
-    const upsell = result.querySelector('.kf-final-upsell');
-    const add = result.querySelector('.kf-final-add');
-    const cart = result.querySelector('.kf-final-cart');
-    let pack = packs[0];
-
-    packButtons.forEach((button) => button.addEventListener('click', () => {
-      pack = button.dataset.pack;
-      packButtons.forEach((candidate) => {
-        const selected = candidate === button;
-        candidate.classList.toggle('is-selected', selected);
-        candidate.setAttribute('aria-pressed', String(selected));
-      });
-      cart.hidden = true;
-      add.classList.remove('is-added');
-      add.querySelector('span').textContent = 'Pridať do košíka';
-    }));
-
-    upsell?.addEventListener('click', () => {
-      const selected = upsell.getAttribute('aria-pressed') !== 'true';
-      upsell.setAttribute('aria-pressed', String(selected));
-      upsell.classList.toggle('is-selected', selected);
-      upsell.querySelector('i').textContent = selected ? '✓' : '+';
-      cart.hidden = true;
-      add.classList.remove('is-added');
-      add.querySelector('span').textContent = 'Pridať do košíka';
-    });
-
-    add?.addEventListener('click', () => {
-      const extra = upsell?.getAttribute('aria-pressed') === 'true';
-      cart.querySelector('span').textContent = `${productName} · ${pack}${extra ? ' + KAFFA vak' : ''}`;
-      cart.hidden = false;
-      add.classList.add('is-added');
-      add.querySelector('span').textContent = 'Pridané do košíka';
-    });
   }
-
   function enhance() {
     setOwnerPage();
     setWidgetCopy();
