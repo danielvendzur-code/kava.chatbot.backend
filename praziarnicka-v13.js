@@ -105,63 +105,66 @@
     lastFocus:null
   };
 
-  const productCard = (product) => `
-    <a class="pz13-site-product" href="${product.url}" target="_blank" rel="noreferrer">
-      <span class="pz13-site-product__photo"><img src="${product.photo}" alt="${esc(product.name)}"></span>
-      <span class="pz13-site-product__copy"><small>${esc(product.subtitle)}</small><b>${esc(product.name)}</b><strong>${esc(product.price)}</strong></span>
-      <span class="pz13-site-product__arrow">${icons.arrow}</span>
-    </a>`;
+  const steps = [
+    ['01', 'Zákazník otvorí poradcu', 'Bublinu vidí na každej stránke, otvorí sa jedným klikom.'],
+    ['02', 'Odpovie na štyri otázky', 'Príprava, chuť, nápoj a kofeín — každá otázka má štyri veľké voľby.'],
+    ['03', 'Dostane jednu konkrétnu kávu', 'S dôvodom, prečo mu sadne, a s pridaním do košíka.']
+  ];
 
+  const perks = [
+    ['Poradí 24/7', 'Aj v nedeľu o polnoci, keď nemá kto odpísať.'],
+    ['Odbúra otázky', 'Aciditu, praženie aj mletie vysvetlí hneď v chate.'],
+    ['Zvyšuje hodnotu košíka', 'Ukáže väčšie balenie aj druhú vhodnú kávu.'],
+    ['Vedie k nákupu', 'Z odporúčania jedným klikom do košíka.']
+  ];
+
+  // The page behind the widget is shown to the owner of the roastery, not to
+  // their customer, so it carries the advisor — what it does and how it works —
+  // and nothing that pretends to be their shop.
   root.innerHTML = `
-    <main class="pz13-site" aria-label="Pražiarnička — ukážka webu s kávovým poradcom">
+    <main class="pz13-site" aria-label="Pražiarnička — návrh kávového poradcu">
       <header class="pz13-site-head">
-        <a class="pz13-site-logo" href="https://praziarnicka.sk/" target="_blank" rel="noreferrer"><img src="${logoUrl}" alt="Pražiarnička by Caffè Vita"></a>
-        <nav class="pz13-site-nav" aria-label="Navigácia Pražiarničky">
-          <a href="https://praziarnicka.sk/o-nas" target="_blank" rel="noreferrer">O nás</a>
-          <a href="https://praziarnicka.sk/eshop" target="_blank" rel="noreferrer">E-shop</a>
-          <a href="https://praziarnicka.sk/" target="_blank" rel="noreferrer">Kaviareň</a>
-          <button id="pz13-hero-open" type="button">Vybrať kávu ${icons.arrow}</button>
-        </nav>
+        <span class="pz13-site-logo"><img src="${logoUrl}" alt="Pražiarnička by Caffè Vita"></span>
+        <span class="pz13-site-flag"><i></i> Kávový poradca · ukážka</span>
       </header>
 
       <section class="pz13-site-hero">
         <div class="pz13-site-copy">
-          <span class="pz13-site-eyebrow">PRAŽIAREŇ KÁVY A KAVIAREŇ V TRENČÍNE</span>
-          <h1>Vitajte v Pražiarničke.</h1>
-          <h2>Prémiová kvalita,<br>jedinečná chuť.</h2>
-          <p>Čerstvo pražená zrnková aj mletá káva z vybraných svetových plantáží. Vyberte si z ponuky alebo si nechajte odporučiť tú správnu podľa vašej chuti.</p>
+          <span class="pz13-site-eyebrow">Pre tím Pražiarničky</span>
+          <h1>Vitajte vo vašom návrhu kávového poradcu pre Pražiarničku.</h1>
+          <p>Takto môže zákazníkovi vysvetliť rozdiel medzi zmesou do espressa a jednodruhovou kávou a odporučiť konkrétny produkt z vašej ponuky.</p>
+
+          <ol class="pz13-site-steps">
+            ${steps.map(([number, title, note]) => `<li><span>${number}</span><div><b>${esc(title)}</b><small>${esc(note)}</small></div></li>`).join('')}
+          </ol>
+
           <div class="pz13-site-actions">
-            <a href="https://praziarnicka.sk/eshop" target="_blank" rel="noreferrer">Do e-shopu ${icons.bag}</a>
-            <a class="is-ghost" href="https://praziarnicka.sk/o-nas" target="_blank" rel="noreferrer">Spoznajte Pražiarničku ${icons.arrow}</a>
+            <button id="pz13-hero-open" type="button">Otvoriť ukážku poradcu ${icons.arrow}</button>
+            <span class="pz13-site-hint">4 otázky · konkrétne odporúčanie · pridanie do košíka.</span>
           </div>
         </div>
 
-        <div class="pz13-flow" aria-label="Výber z ponuky Pražiarničky">
-          <span class="pz13-flow__stamp">ČERSTVO PRAŽENÉ · TRENČÍN</span>
-          <div class="pz13-flow__bag pz13-flow__bag--main"><img src="${products[1].photo}" alt="Brazil Santos"><span><small>100 % arabica</small><b>Brazil Santos</b><strong>od 9,90 €</strong></span></div>
-          <div class="pz13-flow__bag pz13-flow__bag--side"><img src="${products[0].photo}" alt="Paganini blend"></div>
+        <div class="pz13-flow" aria-label="Ukážka odporúčania">
+          <span class="pz13-flow__stamp">Ukážka odporúčania</span>
+          <div class="pz13-flow__bag pz13-flow__bag--main"><img src="${products[0].photo}" alt="Paganini blend"><span><small>Odporúčanie</small><b>Paganini blend</b><strong>čokoláda · mandle · orechy</strong></span></div>
           <button class="pz13-flow__advisor" type="button" data-open-advisor><span>${icons.spark}</span><div><small>NEVIETE, KTORÚ?</small><b>Nájdeme vašu kávu za 4 kroky.</b></div>${icons.arrow}</button>
         </div>
       </section>
 
-      <section class="pz13-site-products" aria-label="Naša ponuka">
-        <div class="pz13-site-products__title"><span>NAŠA PONUKA</span><b>Čerstvo pražená káva</b><a href="https://praziarnicka.sk/eshop" target="_blank" rel="noreferrer">Pozrieť všetky ${icons.arrow}</a></div>
-        <div class="pz13-site-products__grid">${products.slice(0,4).map(productCard).join('')}</div>
-      </section>
-
-      <footer class="pz13-proof" aria-label="Výhody Pražiarničky">
-        <div><b>Poštovné zdarma</b><span>pri objednávke nad 60 €</span></div>
-        <div><b>Čerstvo pražená káva</b><span>pražená každý týždeň</span></div>
-        <div><b>98 % spokojnosť</b><span>tisíce spokojných zákazníkov</span></div>
-        <div><b>Osobný odber</b><span>v kaviarni v Trenčíne</span></div>
+      <footer class="pz13-proof" aria-label="Čo poradca prinesie">
+        ${perks.map(([title, note]) => `<div><b>${esc(title)}</b><span>${esc(note)}</span></div>`).join('')}
+        <p class="pz13-site-by">Návrh pripravil <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a> · ukážka pre Pražiarničku</p>
       </footer>
     </main>
 
     <div class="pz13-launcher" id="pz13-launcher-wrap">
-      <button class="pz13-preview" id="pz13-preview" type="button">
-        <b>Neviete, ktorú kávu vybrať?</b>
-        <span>4 krátke otázky · konkrétne odporúčanie</span>
-      </button>
+      <div class="pz13-preview" id="pz13-preview">
+        <button class="pz13-preview__body" id="pz13-preview-open" type="button">
+          <b>Neviete, ktorú kávu vybrať?</b>
+          <span>4 krátke otázky · konkrétne odporúčanie</span>
+        </button>
+        <button class="pz13-preview__close" id="pz13-preview-close" type="button" aria-label="Skryť pozvánku">${icons.close}</button>
+      </div>
       <button class="pz13-launcher__button" id="pz13-open" type="button" aria-label="Otvoriť kávového poradcu" aria-expanded="false">
         <img src="${iconUrl}" alt="">
       </button>
@@ -425,7 +428,8 @@
               <h2>${esc(product.name)}</h2>
               <div class="pz13-tags">${product.notes.map((note) => `<b>${esc(note)}</b>`).join('')}</div>
               <p>${esc(product.reason)}</p>
-              <div class="pz13-product__buy"><strong>${esc(product.price)}</strong><a href="${product.url}" target="_blank" rel="noreferrer">Pozrieť produkt ${icons.arrow}</a></div>
+              <div class="pz13-product__buy"><strong>${esc(product.price)}</strong><button class="pz13-add" id="pz13-add" type="button">Pridať do košíka ${icons.bag}</button></div>
+              <div class="pz13-product__links"><a href="${product.url}" target="_blank" rel="noreferrer">Detail produktu</a><span class="pz13-cart-note" role="status" hidden></span></div>
             </div>
           </article>
           <article class="pz13-alternative">
@@ -444,6 +448,18 @@
       renderAdvisor();
     });
     stage.querySelector('#pz13-restart').addEventListener('click', resetAdvisor);
+
+    // The widget stands in for one already installed on the shop, so the
+    // recommendation ends in the basket rather than on a product listing.
+    const add = stage.querySelector('#pz13-add');
+    const note = stage.querySelector('.pz13-cart-note');
+    add.addEventListener('click', () => {
+      if (add.classList.contains('is-added')) return;
+      add.classList.add('is-added');
+      add.innerHTML = `Pridané do košíka ${icons.check}`;
+      note.textContent = `${product.name} je v košíku.`;
+      note.hidden = false;
+    });
   }
 
   function resetAdvisor() {
@@ -480,7 +496,9 @@
   root.querySelector('#pz13-hero-open').addEventListener('click', () => openWidget('advisor'));
   root.querySelectorAll('[data-open-advisor]').forEach((button) => button.addEventListener('click', () => openWidget('advisor')));
   root.querySelector('#pz13-open').addEventListener('click', () => openWidget('chat'));
-  preview.addEventListener('click', () => openWidget('advisor'));
+  root.querySelector('#pz13-preview-open').addEventListener('click', () => openWidget('advisor'));
+  // The invitation is a suggestion, not a banner the visitor has to live with.
+  root.querySelector('#pz13-preview-close').addEventListener('click', () => { preview.hidden = true; });
   root.querySelector('#pz13-close').addEventListener('click', closeWidget);
   root.querySelector('#pz13-reset').addEventListener('click', resetAll);
   backdrop.addEventListener('click', closeWidget);

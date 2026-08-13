@@ -104,13 +104,15 @@ test('all five routed demos fit 1366x768 and keep readable owner presentation', 
       await expect(page.locator('.pz13-flow')).toBeVisible();
       await expect(page.locator('.parity-pz-showcase')).toHaveCount(0);
     } else {
-      // The page behind the widget is the roastery's shop, so the service row
-      // belongs to the shop. The old strip was vendor copy about the advisor and
-      // was identical on three different brands.
-      const proof = page.locator('.cs-proof > div');
-      await expect(proof.first()).toBeVisible();
-      await expect(proof).toHaveCount(4);
-      await expect(page.locator('.cs-card')).toHaveCount(4);
+      // The page is read by the roastery's owner, so it carries the advisor —
+      // what it does, how it works and who built it — and nothing pretending to
+      // be the shop they already have.
+      const perks = page.locator('.op-perks > li');
+      await expect(perks.first()).toBeVisible();
+      await expect(perks).toHaveCount(4);
+      await expect(page.locator('.op-steps > li')).toHaveCount(3);
+      await expect(page.locator('.op-by')).toContainText('mojchatbot.sk');
+      await expect(page.locator('.cs-card')).toHaveCount(0);
       await expect(page.locator('.parity-bottom')).toHaveCount(0);
     }
 

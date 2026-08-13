@@ -38,15 +38,20 @@ html body[data-demo="concept"] #launcherTeaser{
   transform:none!important;
 }
 
-/* Brand marks must remain visible on light headers. */
-html body[data-demo="diamonds"] .widget-head .brand-lockup img{display:none!important}
-html body[data-demo="diamonds"] .widget-head .brand-lockup__fallback{
+/* Brand marks must remain visible on light headers. Diamonds hid its real mark
+   and printed a text stand-in, which was there only because the mark used to be
+   inverted to white for a dark header that no longer exists. */
+html body[data-demo="diamonds"] .widget-head .brand-lockup img{
   display:block!important;
-  color:#111!important;
-  background:transparent!important;
-  font:800 11px/1.15 "Manrope","DM Sans",sans-serif!important;
-  letter-spacing:.06em!important;
+  width:96px!important;
+  height:34px!important;
+  max-width:none!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+  filter:none!important;
 }
+html body[data-demo="diamonds"] .widget-head .brand-lockup__fallback{display:none!important}
+html body[data-demo="diamonds"] .widget-head .brand-lockup{width:auto!important;min-width:0!important;overflow:visible!important}
 html body[data-demo="concept"] .concept-widget-logo{filter:none!important;opacity:1!important}
 html body[data-demo="vitazov"] .widget-brand__mark,
 html body[data-demo="vitazov"] .widget-brand__mark .advisor-logo,

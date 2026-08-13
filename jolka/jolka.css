@@ -369,12 +369,11 @@ button { font: inherit; color: inherit; cursor: pointer; }
 }
 
 .launcher__teaser {
-  max-width: 262px;
-  text-align: left;
+  position: relative;
+  max-width: 286px;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
-  padding: 14px 16px;
   box-shadow: var(--shadow-float);
   opacity: 0;
   transform: translateY(8px) scale(.97);
@@ -382,8 +381,37 @@ button { font: inherit; color: inherit; cursor: pointer; }
   transition: opacity .38s var(--ease), transform .38s var(--ease);
 }
 .launcher__teaser.is-visible { opacity: 1; transform: none; pointer-events: auto; }
-.launcher__teaser b { display: block; font-size: 14.5px; font-weight: 600; margin-bottom: 3px; }
-.launcher__teaser span { display: block; font-size: 13px; line-height: 1.42; color: var(--text-3); }
+.launcher__teaser[hidden] { display: none; }
+.launcher__teaser-body {
+  display: block;
+  width: 100%;
+  padding: 15px 42px 15px 17px;
+  text-align: left;
+  background: none;
+  border: 0;
+  color: inherit;
+}
+.launcher__teaser b { display: block; font-size: 15px; font-weight: 600; margin-bottom: 3px; }
+.launcher__teaser span { display: block; font-size: 13.5px; line-height: 1.4; color: var(--text-3); }
+
+/* The invitation is a suggestion, not a banner the visitor has to live with. */
+.launcher__teaser-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: var(--text-3);
+  background: var(--surface-2);
+  transition: color .16s var(--ease), background .16s var(--ease);
+}
+.launcher__teaser-close:hover { color: var(--ink); background: var(--line); }
+.launcher__teaser-close svg { width: 13px; height: 13px; }
 
 .launcher__button {
   width: 68px;
@@ -1150,11 +1178,15 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .bulk b { font-size: 13.5px; font-weight: 600; }
 .bulk span { font-size: 12.5px; color: var(--text-2); }
 
+/* The reason block used to be a full-width ink panel. Inside a 452 px widget
+   that already carries an ink header and an ink CTA it read as a third dark
+   slab, so it is a warm card with a brand rule instead. */
 .why {
   padding: 12px 14px;
   border-radius: var(--r-md);
-  background: var(--ink);
-  color: var(--on-ink);
+  border-left: 3px solid var(--kraft);
+  background: var(--surface-2);
+  color: var(--ink);
   margin-bottom: 12px;
 }
 .why b {
@@ -1163,7 +1195,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
   font-weight: 700;
   letter-spacing: .11em;
   text-transform: uppercase;
-  color: var(--on-ink-2);
+  color: var(--kraft);
   margin-bottom: 5px;
 }
 .why p { margin: 0; font-size: 14px; line-height: 1.48; }
@@ -1210,6 +1242,34 @@ button { font: inherit; color: inherit; cursor: pointer; }
   pointer-events: none;
 }
 .advisor-foot .cta { justify-content: center; width: 100%; padding: 15px 24px; }
+.advisor-foot .cta.is-added {
+  color: var(--ink);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  box-shadow: none;
+  cursor: default;
+}
+.advisor-foot .foot-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+.advisor-foot .foot-link {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.advisor-foot .foot-link:hover { color: var(--ink); }
+.advisor-foot .cart-note {
+  margin: 4px 0 0;
+  color: var(--kraft);
+  font-size: 13px;
+  font-weight: 600;
+}
 .advisor-foot .cta[disabled] {
   background: var(--surface-2);
   color: var(--text-3);

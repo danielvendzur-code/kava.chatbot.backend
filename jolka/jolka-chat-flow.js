@@ -13,7 +13,7 @@
   const heroHint = document.querySelector('.hero__hint');
   if (flag) flag.innerHTML = '<i class="dot"></i> Kávový poradca · ukážka';
   if (heroTitle) heroTitle.textContent = 'Vitajte vo vašom návrhu kávového poradcu pre Pražiareň Jolka.';
-  if (heroHint) heroHint.textContent = '4 otázky · konkrétne odporúčanie · priamy odkaz na produkt.';
+  if (heroHint) heroHint.textContent = '4 otázky · konkrétne odporúčanie · pridanie do košíka.';
 
   // Conversation comes first, so the welcome bubble sits above the optional
   // advisor handoff instead of being pushed down by it.

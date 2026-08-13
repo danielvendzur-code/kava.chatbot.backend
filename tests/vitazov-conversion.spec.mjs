@@ -32,17 +32,19 @@ async function chooseDiscovery(page) {
   await choose(page, 'balanced', null);
 }
 
-test('page behind the widget is the roastery shop, not a pitch for the chatbot', async ({ page }) => {
+test('page behind the widget explains the advisor to the owner, not their own shop', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto(demo(), { waitUntil: 'domcontentloaded' });
-  await expect(page.locator('h1')).toHaveText('Káva domov aj do firmy.');
-  await expect(page.locator('.cs-hero__copy p')).toContainText('Pražíme na Slovensku');
-  await expect(page.locator('.cs-logo img')).toHaveAttribute('src', '/assets/vitazov-logo.svg');
-  await expect(page.locator('.cs-card')).toHaveCount(4);
-  await expect(page.locator('.cs-card').first()).toContainText('od 15,90 €');
-  await expect(page.locator('.cs-proof div')).toHaveCount(4);
-  // Vendor copy about the advisor itself has no place on the shop's own page.
-  await expect(page.locator('.diamonds-page, .demo-page')).not.toContainText('Odpovie 24/7');
+  await expect(page.locator('h1')).toContainText('Vitajte vo vašom návrhu kávového poradcu');
+  await expect(page.locator('.op-lockup img')).toHaveAttribute('src', '/assets/vitazov-logo.svg');
+  await expect(page.locator('.op-steps > li')).toHaveCount(3);
+  await expect(page.locator('.op-steps')).toContainText('Odpovie na štyri otázky');
+  await expect(page.locator('.op-perks > li')).toHaveCount(4);
+  await expect(page.locator('.op-by')).toContainText('mojchatbot.sk');
+  // Nothing that pretends to be the roastery's own storefront.
+  await expect(page.locator('.demo-page')).not.toContainText('Do e-shopu');
+  await expect(page.locator('.demo-page')).not.toContainText('Kontakt');
+  await expect(page.locator('.cs-card')).toHaveCount(0);
   await expect(page.locator('.demo-benefit')).toHaveCount(0);
   await expect(page.locator('.parity-bottom')).toHaveCount(0);
   await expect(page.locator('button button')).toHaveCount(0);
@@ -59,13 +61,16 @@ test('chat is customer-facing with stronger quick actions and no contact clutter
   await expect(page.locator('.advisor-entry')).toHaveCount(1);
   await expect(page.locator('.advisor-entry')).toContainText('Nájsť svoju kávu');
   await expect(page.locator('.widget-credit')).toHaveCount(0);
-  // Chips are compact pills that still hold readable copy.
+  // Four chips in a tidy 2 × 2 block, on the same surface as the conversation.
   const chipBox = await page.locator('.chip').first().boundingBox();
   const entryBox = await page.locator('.advisor-entry').boundingBox();
   const switchBox = await page.locator('.mode').boundingBox();
-  expect(chipBox.height).toBeGreaterThanOrEqual(36);
-  expect(chipBox.height).toBeLessThanOrEqual(44);
-  expect(chipBox.width).toBeLessThan(200);
+  expect(chipBox.height).toBeGreaterThanOrEqual(38);
+  expect(chipBox.height).toBeLessThanOrEqual(46);
+  const chipWidths = await page.locator('.chip').evaluateAll((nodes) => nodes.map((n) => Math.round(n.getBoundingClientRect().width)));
+  expect(new Set(chipWidths).size).toBe(1);
+  const chipBg = await page.locator('#quickChips').evaluate((n) => getComputedStyle(n).backgroundColor);
+  expect(chipBg).toBe('rgba(0, 0, 0, 0)');
   const chipSize = await page.locator('.chip').first().evaluate((n) => parseFloat(getComputedStyle(n).fontSize));
   expect(chipSize).toBeGreaterThanOrEqual(13);
   expect(entryBox.height).toBeLessThanOrEqual(70);
@@ -99,7 +104,7 @@ test('office and decaf paths map the verified range', async ({ page }) => {
   await page.goto(demo('&qa=advisor'), { waitUntil: 'domcontentloaded' });
   await chooseOffice(page);
   await expect(page.locator('.result-head h2')).toHaveText('Office Blend');
-  await expect(page.locator('.kv-final-cta')).toHaveAttribute('href', 'https://kavavitazov.sk/espresso-blend/');
+  await expect(page.locator('.mc-buy__link')).toHaveAttribute('href', 'https://kavavitazov.sk/espresso-blend/');
   await expect(page.locator('.office-followup')).toBeHidden();
 
   await page.locator('#resetAll').click();
@@ -109,7 +114,7 @@ test('office and decaf paths map the verified range', async ({ page }) => {
   await choose(page, 'both', '4 z 4');
   await choose(page, 'decaf', null);
   await expect(page.locator('.result-head h2')).toHaveText('Bezkofeínová');
-  await expect(page.locator('.kv-final-cta')).toHaveAttribute('href', 'https://kavavitazov.sk/bezkofeinova-decaf/');
+  await expect(page.locator('.mc-buy__link')).toHaveAttribute('href', 'https://kavavitazov.sk/bezkofeinova-decaf/');
 });
 
 test('result shows three decisive detail rows and one real closing action', async ({ page }) => {
@@ -128,8 +133,15 @@ test('result shows three decisive detail rows and one real closing action', asyn
   await expect(page.locator('.kv-final-packs')).toHaveCount(0);
   await expect(page.locator('.kv-final-upsell')).toHaveCount(0);
   await expect(page.locator('.kv-final-add')).toHaveCount(0);
-  await expect(page.locator('.kv-final-cta')).toBeVisible();
-  await expect(page.locator('.kv-final-cta')).toContainText('Pozrieť produkt v e-shope');
+  // The widget stands in for one already installed on the shop, so the
+  // recommendation ends in the basket and confirms it, with the product page
+  // kept as a quiet second step.
+  await expect(page.locator('.mc-buy__add')).toBeVisible();
+  await expect(page.locator('.mc-buy__add')).toContainText('Pridať do košíka');
+  await page.locator('.mc-buy__add').click();
+  await expect(page.locator('.mc-buy__add')).toContainText('Pridané do košíka');
+  await expect(page.locator('.mc-buy__note')).toContainText('je v košíku');
+  await expect(page.locator('.mc-buy__link')).toContainText('Detail produktu');
   await expect(page.locator('.kv-next-best-action')).toHaveCount(0);
 });
 
@@ -137,7 +149,7 @@ test('discovery path ends on the discovered product, with no simulated basket', 
   await page.goto(demo('&qa=advisor'), { waitUntil: 'domcontentloaded' });
   await chooseDiscovery(page);
   await expect(page.locator('.result-head h2')).toHaveText('Etiópia');
-  await expect(page.locator('.kv-final-cta')).toHaveAttribute('href', 'https://kavavitazov.sk/prazena-kava-etiopia/');
+  await expect(page.locator('.mc-buy__link')).toHaveAttribute('href', 'https://kavavitazov.sk/prazena-kava-etiopia/');
   await expect(page.locator('.kv-final-upsell')).toHaveCount(0);
   await expect(page.locator('.kv-next-best-action')).toBeHidden();
 });

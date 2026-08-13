@@ -393,8 +393,10 @@ body[data-demo] .kf-panel { background: #fff !important; }
 
 /* ------------------------------------------------------------------ chips */
 
-/* The chip rows are pinned by id-qualified rules in three earlier layers, so
-   these corrections are written at the same weight to land. */
+/* Chips sit on the same surface as the conversation — no tinted plate behind
+   them — and always in a tidy 2 × 2 block instead of a ragged wrap. The rows
+   are pinned by id-qualified rules in three earlier layers, so these
+   corrections are written at the same weight to land. */
 body[data-demo] .chips,
 body[data-demo] .quick-grid,
 body[data-demo] .kf-chips,
@@ -403,12 +405,15 @@ body[data-demo] #chatScreen .chips,
 body[data-demo] #chatScreen .quick-grid,
 body[data-demo] #quickChips,
 body[data-demo] .kf-chat .kf-chips {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  grid-template-columns: none !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   gap: 8px !important;
   padding: 10px 16px 0 !important;
-  background: transparent !important;
+  border: 0 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
 }
 body[data-demo] .chip,
 body[data-demo] .quick-grid button,
@@ -418,26 +423,36 @@ body[data-demo] #chatScreen .chip,
 body[data-demo] #chatScreen .quick-grid button,
 body[data-demo] #quickChips .chip,
 body[data-demo] .kf-chat .kf-chip.mc-chip {
-  flex: 0 0 auto !important;
-  width: auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
   min-width: 0 !important;
-  min-height: 38px !important;
+  min-height: 40px !important;
   height: auto !important;
-  padding: 0 14px !important;
+  padding: 0 12px !important;
   border: 1px solid var(--nb-line) !important;
   border-radius: 999px !important;
+  color: var(--nb-ink) !important;
+  background: var(--nb-soft) !important;
   font-size: 13.5px !important;
   font-weight: 600 !important;
   line-height: 1.2 !important;
   letter-spacing: 0 !important;
   text-transform: none !important;
+  text-align: center !important;
   white-space: nowrap !important;
-  justify-content: center !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 /* Some chips carried a decorative leading glyph that pushed the label off-centre. */
 body[data-demo] .chip svg,
 body[data-demo] #chatScreen .quick-grid button svg,
 body[data-demo] .kf-chat .kf-chip.mc-chip svg { display: none !important; }
+/* A fifth chip would break the 2 × 2 block. */
+body[data-demo] .chips > *:nth-child(n + 5),
+body[data-demo] .quick-grid > *:nth-child(n + 5),
+body[data-demo] .kf-chips > *:nth-child(n + 5) { display: none !important; }
 
 /* --------------------------------------------------------------- composer */
 
@@ -532,10 +547,16 @@ body[data-demo] .result-details {
 }
 body[data-demo] .result-facts > div,
 body[data-demo] .result-details > div { min-width: 0 !important; }
+/* The fact rows were clamped, so a two-line value printed an ellipsis in the
+   middle of a sentence. */
 body[data-demo] .result-facts dt,
 body[data-demo] .result-facts dd,
 body[data-demo] .result-detail b,
-body[data-demo] .result-detail small {
+body[data-demo] .result-detail small,
+body[data-demo] .result-detail div {
+  display: block !important;
+  -webkit-line-clamp: none !important;
+  -webkit-box-orient: horizontal !important;
   white-space: normal !important;
   overflow: visible !important;
   text-overflow: clip !important;
@@ -567,7 +588,8 @@ body[data-demo="concept"] .result-price span {
 
 /* ------------------------------------------------------- the closing action */
 
-/* One unmistakable step out of the recommendation, matching Jolka's footer CTA. */
+/* The recommendation ends in the basket, with the product page kept as a quiet
+   second step. Written to look installed, not demonstrated. */
 body[data-demo] .result-actions {
   display: block !important;
   grid-template-columns: none !important;
@@ -579,31 +601,56 @@ body[data-demo] .alternative__main b {
   text-transform: none !important;
   letter-spacing: 0 !important;
 }
-body[data-demo] .result-cta,
-body[data-demo] .kf-result-cta,
-body[data-demo] .kv-final-cta,
-body[data-demo] .result-actions a {
-  display: flex !important;
+
+.mc-buy {
+  display: grid !important;
+  justify-items: center !important;
+  gap: 8px !important;
+  width: 100% !important;
+  margin-top: 14px !important;
+}
+.mc-buy__add {
+  display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  gap: 9px !important;
+  gap: 10px !important;
   width: 100% !important;
-  min-height: 52px !important;
-  margin-top: 12px !important;
-  padding: 0 20px !important;
+  min-height: 54px !important;
+  padding: 0 22px !important;
   border: 0 !important;
   border-radius: 16px !important;
   color: #fff !important;
   background: var(--nb-strong) !important;
-  font-size: 15.5px !important;
+  font: inherit !important;
+  font-size: 16px !important;
   font-weight: 700 !important;
-  text-decoration: none !important;
-  box-shadow: 0 18px 34px -24px color-mix(in srgb, var(--nb-strong) 85%, transparent) !important;
+  cursor: pointer !important;
+  box-shadow: 0 18px 32px -22px color-mix(in srgb, var(--nb-strong) 90%, transparent) !important;
+  transition: background .18s ease, transform .18s ease !important;
 }
-body[data-demo] .result-cta:hover,
-body[data-demo] .kf-result-cta:hover,
-body[data-demo] .kv-final-cta:hover,
-body[data-demo] .result-actions a:hover { background: var(--nb-accent) !important; }
+.mc-buy__add:hover { background: var(--nb-accent) !important; transform: translateY(-1px) !important; }
+.mc-buy__add svg { width: 20px; height: 20px; flex: 0 0 auto; }
+.mc-buy__add.is-added {
+  color: var(--nb-ink) !important;
+  background: color-mix(in srgb, var(--nb-accent) 34%, white) !important;
+  box-shadow: none !important;
+  cursor: default !important;
+  transform: none !important;
+}
+.mc-buy__link {
+  color: color-mix(in srgb, var(--nb-ink) 66%, transparent) !important;
+  font-size: 13.5px !important;
+  font-weight: 600 !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+}
+.mc-buy__link:hover { color: var(--nb-strong) !important; }
+.mc-buy__note {
+  margin: 0 !important;
+  color: var(--nb-strong) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
 
 /* ----------------------------------------------------- launcher and teaser */
 
@@ -634,6 +681,9 @@ body[data-demo] .kf-launcher img { max-width: 40px !important; max-height: 40px 
 body[data-demo] .launcher-button svg,
 body[data-demo] .launcher__button svg,
 body[data-demo] .kf-launcher svg { width: 26px !important; height: 26px !important; }
+/* Kaffa draws its launcher mark as a ::before letter, which an earlier layer
+   coloured with the same brand tone the button now carries. */
+body[data-demo="kaffa"] .kf-launcher::before { color: #fff !important; font-size: 24px !important; }
 
 body[data-demo] .teaser,
 body[data-demo] .launcher__teaser,
@@ -666,8 +716,33 @@ body[data-demo] .kf-teaser span {
   line-height: 1.35 !important;
   color: color-mix(in srgb, var(--nb-ink) 68%, transparent) !important;
 }
+body[data-demo] .teaser,
+body[data-demo] .launcher__teaser,
+body[data-demo] .launcher-teaser,
+body[data-demo] .kf-teaser { position: relative !important; padding-right: 42px !important; }
+
+body[data-demo] .mc-teaser-close,
 body[data-demo] .teaser__close,
-body[data-demo] .launcher-teaser__close { opacity: .55 !important; }
+body[data-demo] .launcher-teaser__close {
+  position: absolute !important;
+  top: 9px !important;
+  right: 9px !important;
+  display: grid !important;
+  place-items: center !important;
+  width: 26px !important;
+  height: 26px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  color: color-mix(in srgb, var(--nb-ink) 55%, transparent) !important;
+  background: color-mix(in srgb, var(--nb-ink) 7%, transparent) !important;
+  cursor: pointer !important;
+  opacity: 1 !important;
+  transition: background .16s ease, color .16s ease !important;
+}
+body[data-demo] .mc-teaser-close:hover,
+body[data-demo] .teaser__close:hover { color: var(--nb-ink) !important; background: color-mix(in srgb, var(--nb-ink) 13%, transparent) !important; }
+body[data-demo] .mc-teaser-close svg { width: 13px; height: 13px; }
 
 /* -------------------------------------------------------------- responsive */
 
@@ -705,11 +780,8 @@ body[data-demo] .launcher-teaser__close { opacity: .55 !important; }
   body[data-demo] .kf-chips { padding: 8px 14px 0 !important; }
   body[data-demo] .composer,
   body[data-demo] .kf-composer { margin: 8px 14px max(12px, env(safe-area-inset-bottom)) !important; }
-  /* Keep the closing CTA on one line in a 390 px panel. */
-  body[data-demo] .result-cta,
-  body[data-demo] .kf-result-cta,
-  body[data-demo] .kv-final-cta,
-  body[data-demo] .result-actions a { padding: 0 14px !important; font-size: 14.5px !important; }
+  /* Keep the closing action on one line in a 390 px panel. */
+  .mc-buy__add { min-height: 50px !important; padding: 0 16px !important; font-size: 15px !important; }
   body[data-demo] .launcher,
   body[data-demo] .kf-launcher-wrap {
     right: 16px !important;

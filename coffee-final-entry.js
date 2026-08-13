@@ -129,7 +129,7 @@
   // Both stylesheets are injected at the end of <body> by their own scripts:
   // index.html keeps two <link> elements there, so a <head> stylesheet would
   // lose every specificity tie to them.
-  const finalScripts = ['/coffee-storefront.js', '/coffee-widget-final.js'];
+  const finalScripts = ['/coffee-owner-page.js', '/coffee-widget-final.js'];
 
   const boot = async () => {
     const manifest = manifests[slug];
