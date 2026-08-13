@@ -228,8 +228,13 @@
     lockPage();
     setMode(nextMode);
     // Focus the dialog itself, not the close button: focusing Close drew a
-    // focus ring around it every time the widget opened.
-    requestAnimationFrame(() => widget.focus());
+    // focus ring around it every time the widget opened. Moving focus happens a
+    // frame later, so only take it if the customer has not already put it
+    // somewhere inside the widget — typing straight into the composer used to
+    // lose the keystrokes to this call.
+    requestAnimationFrame(() => {
+      if (!widget.contains(document.activeElement)) widget.focus();
+    });
   }
 
   function closeWidget() {
@@ -318,7 +323,9 @@
       // A deterministic catalogue answer stays visible when the provider is unavailable.
     } finally {
       state.busy = false;
-      renderChat();
+      // Only redraw the chat if the customer is still in it: switching to the
+      // advisor while a reply was in flight used to be undone by this render.
+      if (state.mode === 'chat') renderChat();
     }
   }
 
