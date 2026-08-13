@@ -82,11 +82,12 @@ html body[data-demo] [data-owner-page="true"] > * {
 
 .op-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.06fr) minmax(0, 1fr);
-  align-items: center;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  align-items: stretch;
   gap: clamp(28px, 4.5vw, 64px);
-  flex: 1 1 auto;
-  min-height: 0;
+  /* Never shrink below its own content: the showcase used to spill out of the
+     row and sit on top of the two blocks underneath. */
+  flex: 0 0 auto;
 }
 .op-copy { min-width: 0; }
 .op-eyebrow {
@@ -113,35 +114,7 @@ html body[data-demo] [data-owner-page="true"] > * {
   line-height: 1.5;
 }
 
-.op-steps {
-  display: grid;
-  gap: 10px;
-  margin: 0 0 24px;
-  padding: 0;
-  list-style: none;
-}
-.op-steps li {
-  display: grid;
-  grid-template-columns: 34px minmax(0, 1fr);
-  align-items: start;
-  gap: 12px;
-}
-.op-steps__num {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border-radius: 11px;
-  color: var(--op-strong);
-  background: var(--op-soft);
-  font-size: 12.5px;
-  font-weight: 800;
-}
-.op-steps li div { display: grid; gap: 2px; min-width: 0; }
-.op-steps b { font-size: 15px; font-weight: 700; }
-.op-steps li span { color: color-mix(in srgb, var(--op-ink) 66%, transparent); font-size: 13.5px; line-height: 1.4; }
-
-.op-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.op-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 22px; }
 .op-cta {
   display: inline-flex;
   align-items: center;
@@ -161,16 +134,99 @@ html body[data-demo] [data-owner-page="true"] > * {
 }
 .op-cta:hover { background: var(--op-accent); transform: translateY(-1px); }
 .op-cta svg { width: 19px; height: 19px; }
-.op-hint { color: color-mix(in srgb, var(--op-ink) 60%, transparent); font-size: 13.5px; max-width: 26ch; line-height: 1.35; }
+.op-hint { color: color-mix(in srgb, var(--op-ink) 60%, transparent); font-size: 13.5px; max-width: 24ch; line-height: 1.35; }
+
+/* ------------------------------------------------------------------- modes */
+
+/* The widget does two separate things, so the page says so in two blocks. */
+.op-modes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.op-mode {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 18px 20px 20px;
+  border: 1px solid var(--op-line);
+  border-radius: 22px;
+  background: var(--op-soft-2);
+}
+.op-mode > header { display: flex; align-items: center; gap: 12px; }
+.op-mode__icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+  color: #fff;
+  background: var(--op-strong);
+}
+.op-mode__icon svg { width: 21px; height: 21px; }
+.op-mode > header div { display: grid; gap: 1px; }
+.op-mode > header small {
+  color: var(--op-strong);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.op-mode > header b { font-size: 19px; font-weight: 800; letter-spacing: -.01em; }
+.op-mode > p { margin: 0; color: color-mix(in srgb, var(--op-ink) 76%, transparent); font-size: 14.5px; line-height: 1.45; }
+.op-mode__note {
+  margin: 2px 0 0 !important;
+  padding-top: 10px;
+  border-top: 1px solid var(--op-line);
+  color: color-mix(in srgb, var(--op-ink) 62%, transparent) !important;
+  font-size: 13px !important;
+}
+
+/* Real questions this roastery's customers ask about this catalogue. */
+.op-asks { display: grid; gap: 7px; margin: 2px 0 0; padding: 0; list-style: none; }
+.op-asks li {
+  padding: 9px 13px;
+  border-radius: 14px 14px 14px 5px;
+  background: #fff;
+  border: 1px solid var(--op-line);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.op-flow { display: flex; flex-wrap: wrap; gap: 7px; margin: 4px 0 0; padding: 0; list-style: none; }
+.op-flow li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px 8px 8px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--op-line);
+  font-size: 14px;
+  font-weight: 600;
+}
+.op-flow i {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: var(--op-strong);
+  background: var(--op-soft);
+  font-size: 11.5px;
+  font-style: normal;
+  font-weight: 800;
+}
 
 /* ---------------------------------------------------------------- showcase */
 
+/* A single recommendation card, laid out the way the widget lays one out. */
 .op-showcase {
   position: relative;
   display: grid;
-  justify-items: center;
-  gap: 14px;
-  padding: 42px 22px 22px;
+  align-content: center;
+  gap: 12px;
+  padding: 40px 22px 22px;
   border-radius: 30px;
   background: linear-gradient(160deg, var(--op-soft) 0%, var(--op-soft-2) 62%, #fff 100%);
 }
@@ -184,49 +240,55 @@ html body[data-demo] [data-owner-page="true"] > * {
   letter-spacing: .16em;
   text-transform: uppercase;
 }
-.op-showcase__photo {
-  display: block;
-  width: 100%;
-  max-width: 320px;
-  height: clamp(210px, 30vh, 300px);
-  object-fit: contain;
-}
 .op-showcase__card {
   display: grid;
-  gap: 3px;
-  width: 100%;
-  max-width: 340px;
-  padding: 13px 17px;
-  border-radius: 18px;
+  grid-template-columns: 116px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px 14px 14px;
+  border-radius: 20px;
   background: #fff;
-  box-shadow: 0 20px 40px -30px rgba(20, 24, 20, .6);
+  box-shadow: 0 22px 44px -32px rgba(20, 24, 20, .65);
 }
-.op-showcase__card small { color: var(--op-strong); font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
-.op-showcase__card b { font-size: 17px; font-weight: 700; }
-.op-showcase__card span { color: color-mix(in srgb, var(--op-ink) 64%, transparent); font-size: 13.5px; }
+.op-showcase__card img {
+  display: block;
+  width: 116px;
+  height: 148px;
+  object-fit: contain;
+}
+.op-showcase__copy { display: grid; gap: 4px; min-width: 0; }
+.op-showcase__copy small {
+  color: var(--op-strong);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.op-showcase__copy b { font-size: 18px; font-weight: 800; line-height: 1.2; letter-spacing: -.01em; }
+.op-showcase__copy span { color: color-mix(in srgb, var(--op-ink) 64%, transparent); font-size: 13.5px; }
+.op-showcase__copy em {
+  justify-self: start;
+  margin-top: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--op-strong);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+}
 
 /* ------------------------------------------------------------------ footer */
 
-.op-foot { display: grid; gap: 12px; padding-top: 14px; border-top: 1px solid var(--op-line); }
-.op-perks {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px 26px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.op-perks li { display: grid; gap: 2px; }
-.op-perks b { font-size: 13.5px; font-weight: 700; }
-.op-perks span { color: color-mix(in srgb, var(--op-ink) 62%, transparent); font-size: 12.5px; line-height: 1.35; }
-.op-by { margin: 0; color: color-mix(in srgb, var(--op-ink) 56%, transparent); font-size: 12.5px; }
+.op-foot { padding-top: 14px; border-top: 1px solid var(--op-line); }
+.op-by { margin: 0; color: color-mix(in srgb, var(--op-ink) 56%, transparent); font-size: 13px; }
 .op-by a { color: var(--op-strong); font-weight: 600; }
 
 /* -------------------------------------------------------------- responsive */
 
 @media (max-width: 1100px) {
   .op-hero { grid-template-columns: minmax(0, 1fr); }
-  .op-perks { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .op-modes { grid-template-columns: minmax(0, 1fr); }
 }
 
 @media (max-width: 760px) {
@@ -246,8 +308,11 @@ html body[data-demo] [data-owner-page="true"] > * {
   .op-cta { min-height: 50px; padding: 0 20px; font-size: 15.5px; }
   .op-hint { max-width: none; }
   .op-showcase { padding: 38px 16px 18px; }
-  .op-showcase__photo { height: 220px; }
-  .op-perks { gap: 10px 18px; }
+  .op-showcase__card { grid-template-columns: 92px minmax(0, 1fr); gap: 12px; }
+  .op-showcase__card img { width: 92px; height: 118px; }
+  .op-showcase__copy b { font-size: 16px; }
+  .op-mode { padding: 16px 16px 18px; }
+  .op-mode > header b { font-size: 17px; }
 }
 
 /* The vendor strip belongs to the old shared landing. */

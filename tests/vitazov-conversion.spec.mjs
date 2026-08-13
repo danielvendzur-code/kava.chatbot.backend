@@ -35,11 +35,16 @@ async function chooseDiscovery(page) {
 test('page behind the widget explains the advisor to the owner, not their own shop', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto(demo(), { waitUntil: 'domcontentloaded' });
-  await expect(page.locator('h1')).toContainText('Vitajte vo vašom návrhu kávového poradcu');
+  await expect(page.locator('h1')).toContainText('Chat a výber kávy');
   await expect(page.locator('.op-lockup img')).toHaveAttribute('src', '/assets/vitazov-logo.svg');
-  await expect(page.locator('.op-steps > li')).toHaveCount(3);
-  await expect(page.locator('.op-steps')).toContainText('Odpovie na štyri otázky');
-  await expect(page.locator('.op-perks > li')).toHaveCount(4);
+  // Both halves of the widget are explained, each in its own block, with this
+  // roastery's own questions rather than a generic script.
+  await expect(page.locator('.op-mode')).toHaveCount(2);
+  await expect(page.locator('.op-mode').nth(0)).toContainText('Chat');
+  await expect(page.locator('.op-asks > li')).toHaveCount(3);
+  await expect(page.locator('.op-asks')).toContainText('Aká káva do kancelárie?');
+  await expect(page.locator('.op-mode').nth(1)).toContainText('Výber kávy');
+  await expect(page.locator('.op-flow > li')).toHaveCount(4);
   await expect(page.locator('.op-by')).toContainText('mojchatbot.sk');
   // Nothing that pretends to be the roastery's own storefront.
   await expect(page.locator('.demo-page')).not.toContainText('Do e-shopu');

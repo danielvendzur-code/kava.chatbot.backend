@@ -21,10 +21,13 @@ test('Praziarnicka background is the owner page about the advisor', async ({ pag
   // already have; what the advisor does and how it works does.
   await expect(page.locator('.pz13-site-logo img')).toHaveAttribute('src', '/brand/praziarnicka-logo-official.png');
   await expect(page.locator('.pz13-site-hero')).toBeVisible();
-  await expect(page.locator('.pz13-site-copy')).toContainText('Vitajte vo vašom návrhu kávového poradcu');
-  await expect(page.locator('.pz13-site-steps > li')).toHaveCount(3);
-  await expect(page.locator('.pz13-site-steps')).toContainText('Odpovie na štyri otázky');
-  await expect(page.locator('.pz13-proof > div')).toHaveCount(4);
+  await expect(page.locator('.pz13-site-copy')).toContainText('Chat a výber kávy');
+  // Both halves of the widget are explained, each in its own block.
+  await expect(page.locator('.pz13-site-mode')).toHaveCount(2);
+  await expect(page.locator('.pz13-site-mode').nth(0)).toContainText('Chat');
+  await expect(page.locator('.pz13-site-mode').nth(0)).toContainText('Aká káva do automatu?');
+  await expect(page.locator('.pz13-site-mode').nth(1)).toContainText('Výber kávy');
+  await expect(page.locator('.pz13-site-mode').nth(1).locator('ol li')).toHaveCount(4);
   await expect(page.locator('.pz13-site-by')).toContainText('mojchatbot.sk');
   await expect(page.locator('.pz13-site-product')).toHaveCount(0);
   await expect(page.locator('body')).not.toContainText('PRAŽIAREŇ KÁVY A KAVIAREŇ V TRENČÍNE');

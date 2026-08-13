@@ -99,18 +99,24 @@ test('all five routed demos fit 1366x768 and keep readable owner presentation', 
     expectNotNearBlack(metrics.bg);
 
     if (demo.slug === 'praziarnicka') {
-      const proof = page.locator('.pz13-proof > div');
-      await expect(proof).toHaveCount(4);
+      // Same two-part owner page as the routed demos, in Pražiarnička's own stack:
+      // one block about the chat, one about the picker, and the credit line.
+      const modes = page.locator('.pz13-site-mode');
+      await expect(modes.first()).toBeVisible();
+      await expect(modes).toHaveCount(2);
+      await expect(page.locator('.pz13-site-mode ol > li')).toHaveCount(4);
+      await expect(page.locator('.pz13-site-by')).toContainText('mojchatbot.sk');
       await expect(page.locator('.pz13-flow')).toBeVisible();
       await expect(page.locator('.parity-pz-showcase')).toHaveCount(0);
     } else {
       // The page is read by the roastery's owner, so it carries the advisor —
       // what it does, how it works and who built it — and nothing pretending to
       // be the shop they already have.
-      const perks = page.locator('.op-perks > li');
-      await expect(perks.first()).toBeVisible();
-      await expect(perks).toHaveCount(4);
-      await expect(page.locator('.op-steps > li')).toHaveCount(3);
+      const modes = page.locator('.op-mode');
+      await expect(modes.first()).toBeVisible();
+      await expect(modes).toHaveCount(2);
+      await expect(page.locator('.op-asks > li')).toHaveCount(3);
+      await expect(page.locator('.op-flow > li')).toHaveCount(4);
       await expect(page.locator('.op-by')).toContainText('mojchatbot.sk');
       await expect(page.locator('.cs-card')).toHaveCount(0);
       await expect(page.locator('.parity-bottom')).toHaveCount(0);

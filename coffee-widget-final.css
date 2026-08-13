@@ -654,12 +654,43 @@ body[data-demo] .alternative__main b {
 
 /* ----------------------------------------------------- launcher and teaser */
 
+/* The invitation belongs directly above the launcher. Víťazov placed it to the
+   right of the button, which pushed it off the screen entirely, and Kaffa
+   collapsed it to nothing on a phone. */
 body[data-demo] .launcher,
 body[data-demo] .kf-launcher-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-end !important;
+  position: fixed !important;
+  top: auto !important;
+  left: auto !important;
   right: 26px !important;
   bottom: 58px !important;
-  gap: 16px !important;
-  align-items: flex-end !important;
+  width: auto !important;
+  height: auto !important;
+  gap: 14px !important;
+}
+html body[data-demo] .teaser,
+html body[data-demo] .launcher__teaser,
+html body[data-demo] .launcher-teaser,
+html body[data-demo] .kf-teaser,
+html body[data-demo="concept"] #launcherTeaser {
+  position: relative !important;
+  display: block !important;
+  inset: auto !important;
+  order: -1 !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+/* Víťazov's button is absolutely placed inside the same wrapper, so the two
+   stacked on top of each other rather than beside each other. */
+html body[data-demo] .launcher__button,
+html body[data-demo] .launcher-button,
+html body[data-demo] .kf-launcher {
+  position: relative !important;
+  inset: auto !important;
+  flex: 0 0 auto !important;
 }
 
 body[data-demo] .launcher-button,

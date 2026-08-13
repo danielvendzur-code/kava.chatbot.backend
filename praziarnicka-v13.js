@@ -105,22 +105,13 @@
     lastFocus:null
   };
 
-  const steps = [
-    ['01', 'Zákazník otvorí poradcu', 'Bublinu vidí na každej stránke, otvorí sa jedným klikom.'],
-    ['02', 'Odpovie na štyri otázky', 'Príprava, chuť, nápoj a kofeín — každá otázka má štyri veľké voľby.'],
-    ['03', 'Dostane jednu konkrétnu kávu', 'S dôvodom, prečo mu sadne, a s pridaním do košíka.']
-  ];
+  // The widget does two separate things, so the page says so in two blocks: the
+  // chat, where the customer asks in their own words, and the picker, where four
+  // questions lead to one coffee. The chat examples are the questions
+  // Pražiarnička's own customers ask about this catalogue.
+  const asks = ['Aká káva do automatu?', 'Ktorá nie je veľmi kyslá?', 'Máte niečo bez kofeínu?'];
+  const flow = ['Príprava', 'Chuť', 'Nápoj', 'Kofeín'];
 
-  const perks = [
-    ['Poradí 24/7', 'Aj v nedeľu o polnoci, keď nemá kto odpísať.'],
-    ['Odbúra otázky', 'Aciditu, praženie aj mletie vysvetlí hneď v chate.'],
-    ['Zvyšuje hodnotu košíka', 'Ukáže väčšie balenie aj druhú vhodnú kávu.'],
-    ['Vedie k nákupu', 'Z odporúčania jedným klikom do košíka.']
-  ];
-
-  // The page behind the widget is shown to the owner of the roastery, not to
-  // their customer, so it carries the advisor — what it does and how it works —
-  // and nothing that pretends to be their shop.
   root.innerHTML = `
     <main class="pz13-site" aria-label="Pražiarnička — návrh kávového poradcu">
       <header class="pz13-site-head">
@@ -131,28 +122,45 @@
       <section class="pz13-site-hero">
         <div class="pz13-site-copy">
           <span class="pz13-site-eyebrow">Pre tím Pražiarničky</span>
-          <h1>Vitajte vo vašom návrhu kávového poradcu pre Pražiarničku.</h1>
-          <p>Takto môže zákazníkovi vysvetliť rozdiel medzi zmesou do espressa a jednodruhovou kávou a odporučiť konkrétny produkt z vašej ponuky.</p>
-
-          <ol class="pz13-site-steps">
-            ${steps.map(([number, title, note]) => `<li><span>${number}</span><div><b>${esc(title)}</b><small>${esc(note)}</small></div></li>`).join('')}
-          </ol>
-
+          <h1>Chat a výber kávy na vašom webe.</h1>
+          <p>Widget robí dve veci naraz: odpovedá na otázky o vašich kávach a v štyroch krokoch dovedie zákazníka k jednej konkrétnej.</p>
           <div class="pz13-site-actions">
-            <button id="pz13-hero-open" type="button">Otvoriť ukážku poradcu ${icons.arrow}</button>
-            <span class="pz13-site-hint">4 otázky · konkrétne odporúčanie · pridanie do košíka.</span>
+            <button id="pz13-hero-open" type="button">Otvoriť ukážku ${icons.arrow}</button>
+            <span class="pz13-site-hint">Bublina vpravo dole. Otvorí sa jedným klikom.</span>
           </div>
         </div>
 
         <div class="pz13-flow" aria-label="Ukážka odporúčania">
           <span class="pz13-flow__stamp">Ukážka odporúčania</span>
-          <div class="pz13-flow__bag pz13-flow__bag--main"><img src="${products[0].photo}" alt="Paganini blend"><span><small>Odporúčanie</small><b>Paganini blend</b><strong>čokoláda · mandle · orechy</strong></span></div>
-          <button class="pz13-flow__advisor" type="button" data-open-advisor><span>${icons.spark}</span><div><small>NEVIETE, KTORÚ?</small><b>Nájdeme vašu kávu za 4 kroky.</b></div>${icons.arrow}</button>
+          <div class="pz13-flow__card">
+            <img src="${products[0].photo}" alt="Paganini blend">
+            <div>
+              <small>Odporúčanie</small>
+              <b>Paganini blend</b>
+              <span>čokoláda · mandle · orechy</span>
+              <em>Pridať do košíka</em>
+            </div>
+          </div>
         </div>
       </section>
 
-      <footer class="pz13-proof" aria-label="Čo poradca prinesie">
-        ${perks.map(([title, note]) => `<div><b>${esc(title)}</b><span>${esc(note)}</span></div>`).join('')}
+      <section class="pz13-site-modes" aria-label="Čo widget robí">
+        <article class="pz13-site-mode">
+          <header><span>${icons.chat}</span><div><small>Prvá časť</small><b>Chat</b></div></header>
+          <p>Zákazník sa pýta vlastnými slovami, tak ako by sa spýtal vás.</p>
+          <ul>${asks.map((ask) => `<li>„${esc(ask)}“</li>`).join('')}</ul>
+          <p class="pz13-site-mode__note">Odpovedá z vášho katalógu — nikdy si nevymyslí kávu, ktorú nepražíte.</p>
+        </article>
+
+        <article class="pz13-site-mode">
+          <header><span>${icons.cup}</span><div><small>Druhá časť</small><b>Výber kávy</b></div></header>
+          <p>Kto sa pýtať nechce, prejde štyri kroky s veľkými fotkami.</p>
+          <ol>${flow.map((step, index) => `<li><i>${index + 1}</i>${esc(step)}</li>`).join('')}</ol>
+          <p class="pz13-site-mode__note">Jedna káva, dôvod prečo sedí, a pridanie do košíka.</p>
+        </article>
+      </section>
+
+      <footer class="pz13-proof">
         <p class="pz13-site-by">Návrh pripravil <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a> · ukážka pre Pražiarničku</p>
       </footer>
     </main>

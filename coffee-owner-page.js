@@ -4,10 +4,13 @@
  *
  * This page is shown to the roastery's owner, not to their customer. A fake
  * shop with an e-shop menu, a contact link and a product grid gives the owner
- * nothing — they already have a shop. What they need is the advisor: what it
- * does, how it works, and who built it.
+ * nothing — they already have a shop. What they need is the widget: what it
+ * does and how it works.
  *
- * Same structure as Jolka's page, brand by brand.
+ * The widget does two separate things, so the page says so in two blocks: the
+ * chat, where the customer asks in their own words, and the picker, where four
+ * questions lead to one coffee. The examples in each block are that roastery's
+ * own — the questions their customers actually ask about their catalogue.
  */
 (() => {
   'use strict';
@@ -19,44 +22,63 @@
     String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
 
   const arrow = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h13m-5-6 6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  const chatIcon = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5.5h14v10.2H10l-5 3.8V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  const cupIcon = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 7.5h11v6.2a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V7.5Zm11 2h1.8a2.2 2.2 0 0 1 0 4.4H16M4 21.5h13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
   const brands = {
     diamonds: {
       root: '.diamonds-page',
       name: 'Diamonds Roastery',
       logo: { src: '/assets/diamonds/diroastery-logo.svg', height: 38, width: 190 },
-      lead: 'Takto môže zákazníkovi vysvetliť rozdiel medzi zmesou do espressa a jednodruhovou kávou a odporučiť konkrétny produkt z vašej ponuky.',
+      lead: 'Widget robí dve veci naraz: odpovedá na otázky o vašich kávach a v štyroch krokoch dovedie zákazníka k jednej konkrétnej.',
       photo: '/assets/diamonds/peru-valley-official.jpg',
       product: 'Peru Valley Coffee',
-      notes: 'hruška · čokoláda · mandle'
+      notes: 'hruška · čokoláda · mandle',
+      asks: ['Máte niečo ovocné na filter?', 'Ktorá káva ide do automatu?', 'Čo znamená washed?'],
+      answer: 'Odpovedá z vášho katalógu — nikdy si nevymyslí kávu, ktorú nepražíte.',
+      steps: ['Príprava', 'Chuť', 'Nápoj', 'Kofeín'],
+      result: 'Jedna káva, dôvod prečo sedí, a pridanie do košíka.'
     },
     kaffa: {
       root: '.kf-shell',
       name: 'Kaffa Roastery',
       wordmark: { title: 'KAFFA', note: 'SPECIALITY COFFEE BEANS' },
-      lead: 'Takto môže zákazníkovi preložiť ovocnosť a aciditu do zrozumiteľnej reči a odporučiť konkrétnu kávu z aktuálnej ponuky.',
-      photo: '/assets/kaffa/mokka-official.webp',
+      lead: 'Widget robí dve veci naraz: odpovedá na otázky o vašich kávach a v štyroch krokoch dovedie zákazníka k jednej konkrétnej.',
+      photo: '/assets/kaffa/mokka-hero.webp',
       product: 'Mokka Espresso Blend',
-      notes: 'kakao · mandle · škorica'
+      notes: 'kakao · mandle · škorica',
+      asks: ['Je Kamundu kyslá?', 'Čo mi sadne, keď pijem s mliekom?', 'Máte niečo bez kofeínu?'],
+      answer: 'Ovocnosť a aciditu preloží do reči, ktorej zákazník rozumie.',
+      steps: ['Príprava', 'Chuť', 'Nápoj', 'Kofeín'],
+      result: 'Jedna káva, dôvod prečo sedí, a pridanie do košíka.'
     },
     vitazov: {
       root: '.demo-page',
       name: 'Káva Víťazov',
       forName: 'Kávu Víťazov',
+      teamName: 'Kávy Víťazov',
       logo: { src: '/assets/vitazov-logo.svg', height: 46, width: 120 },
-      lead: 'Takto môže zákazníkovi vybrať kávu podľa toho, či ju pije doma alebo vo firme, a odporučiť konkrétny produkt z vašej ponuky.',
+      lead: 'Widget robí dve veci naraz: odpovedá na otázky o vašich kávach a v štyroch krokoch dovedie zákazníka k jednej konkrétnej.',
       photo: '/assets/vitazov-victory.jpeg',
       product: 'Victory Blend',
-      notes: 'kakao · korenie · jemná arabika'
+      notes: 'kakao · korenie · jemná arabika',
+      asks: ['Aká káva do kancelárie?', 'Ktorá sa nestratí v mlieku?', 'Máte kávu na večer?'],
+      answer: 'Rozlíši domácnosť od firmy a podľa toho odporúča.',
+      steps: ['Použitie', 'Chuť', 'Nápoj', 'Sila'],
+      result: 'Jedna káva, dôvod prečo sedí, a pridanie do košíka.'
     },
     concept: {
       root: '.concept-page',
       name: 'Concept Coffee Roasters',
       logo: { src: '/brand/concept-official-logo.png', height: 46, width: 160 },
-      lead: 'Takto môže zákazníkovi vysvetliť sezónnu ponuku a odporučiť konkrétnu kávu podľa chuti a spôsobu prípravy.',
+      lead: 'Widget robí dve veci naraz: odpovedá na otázky o vašich kávach a v štyroch krokoch dovedie zákazníka k jednej konkrétnej.',
       photo: '/assets/concept/product-weithaga.jpg',
       product: 'Weithaga AA',
-      notes: 'ríbezle · grep · vanilka'
+      notes: 'ríbezle · grep · vanilka',
+      asks: ['Čo máte teraz čerstvé?', 'Ktorá je najmenej kyslá?', 'Hodí sa Berry Blast do espressa?'],
+      answer: 'Hovorí o sezónnej ponuke, nie o katalógu spred roka.',
+      steps: ['Príprava', 'Chuť', 'Nápoj', 'Kofeín'],
+      result: 'Jedna káva, dôvod prečo sedí, a pridanie do košíka.'
     }
   };
 
@@ -72,23 +94,11 @@
   document.body.appendChild(styles);
 
   const forName = brand.forName || brand.name;
+  const teamName = brand.teamName || brand.name;
 
   const lockup = brand.logo
     ? `<img src="${esc(brand.logo.src)}" alt="${esc(brand.name)}" style="height:${brand.logo.height}px;max-width:${brand.logo.width}px">`
     : `<span class="op-wordmark"><b>${esc(brand.wordmark.title)}</b><small>${esc(brand.wordmark.note)}</small></span>`;
-
-  const steps = [
-    ['01', 'Zákazník otvorí poradcu', 'Bublinu vidí na každej stránke, otvorí sa jedným klikom.'],
-    ['02', 'Odpovie na štyri otázky', 'Príprava, chuť, nápoj a acidita — každá otázka má štyri veľké voľby.'],
-    ['03', 'Dostane jednu konkrétnu kávu', 'S dôvodom, prečo mu sadne, a s pridaním do košíka.']
-  ];
-
-  const perks = [
-    ['Poradí 24/7', 'Aj v nedeľu o polnoci, keď nemá kto odpísať.'],
-    ['Odbúra otázky', 'Aciditu, praženie aj mletie vysvetlí hneď v chate.'],
-    ['Zvyšuje hodnotu košíka', 'Ukáže väčšie balenie aj druhú vhodnú kávu.'],
-    ['Vedie k nákupu', 'Z odporúčania jedným klikom do košíka.']
-  ];
 
   root.dataset.ownerPage = 'true';
   root.innerHTML = `
@@ -99,35 +109,50 @@
 
     <section class="op-hero">
       <div class="op-copy">
-        <span class="op-eyebrow">Pre tím ${esc(brand.name)}</span>
-        <h1>Vitajte vo vašom návrhu kávového poradcu pre ${esc(forName)}.</h1>
+        <span class="op-eyebrow">Pre tím ${esc(teamName)}</span>
+        <h1>Chat a výber kávy na vašom webe.</h1>
         <p class="op-lead">${esc(brand.lead)}</p>
-
-        <ol class="op-steps">
-          ${steps.map(([n, title, note]) => `<li><span class="op-steps__num">${n}</span><div><b>${esc(title)}</b><span>${esc(note)}</span></div></li>`).join('')}
-        </ol>
-
         <div class="op-actions">
-          <button class="op-cta" type="button" data-owner-open>Otvoriť ukážku poradcu ${arrow}</button>
-          <span class="op-hint">4 otázky · konkrétne odporúčanie · pridanie do košíka.</span>
+          <button class="op-cta" type="button" data-owner-open>Otvoriť ukážku ${arrow}</button>
+          <span class="op-hint">Bublina vpravo dole. Otvorí sa jedným klikom.</span>
         </div>
       </div>
 
       <aside class="op-showcase" aria-label="Ukážka odporúčania">
         <span class="op-showcase__tag">Ukážka odporúčania</span>
-        <img class="op-showcase__photo" src="${esc(brand.photo)}" alt="${esc(brand.product)}">
         <div class="op-showcase__card">
-          <small>Odporúčanie</small>
-          <b>${esc(brand.product)}</b>
-          <span>${esc(brand.notes)}</span>
+          <img src="${esc(brand.photo)}" alt="${esc(brand.product)}">
+          <div class="op-showcase__copy">
+            <small>Odporúčanie</small>
+            <b>${esc(brand.product)}</b>
+            <span>${esc(brand.notes)}</span>
+            <em>Pridať do košíka</em>
+          </div>
         </div>
       </aside>
     </section>
 
+    <section class="op-modes" aria-label="Čo widget robí">
+      <article class="op-mode">
+        <header><span class="op-mode__icon">${chatIcon}</span><div><small>Prvá časť</small><b>Chat</b></div></header>
+        <p>Zákazník sa pýta vlastnými slovami, tak ako by sa spýtal vás.</p>
+        <ul class="op-asks">
+          ${brand.asks.map((ask) => `<li>„${esc(ask)}“</li>`).join('')}
+        </ul>
+        <p class="op-mode__note">${esc(brand.answer)}</p>
+      </article>
+
+      <article class="op-mode">
+        <header><span class="op-mode__icon">${cupIcon}</span><div><small>Druhá časť</small><b>Výber kávy</b></div></header>
+        <p>Kto sa pýtať nechce, prejde štyri kroky s veľkými fotkami.</p>
+        <ol class="op-flow">
+          ${brand.steps.map((step, index) => `<li><i>${index + 1}</i>${esc(step)}</li>`).join('')}
+        </ol>
+        <p class="op-mode__note">${esc(brand.result)}</p>
+      </article>
+    </section>
+
     <footer class="op-foot">
-      <ul class="op-perks">
-        ${perks.map(([title, note]) => `<li><b>${esc(title)}</b><span>${esc(note)}</span></li>`).join('')}
-      </ul>
       <p class="op-by">Návrh pripravil <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a> · ukážka pre ${esc(forName)}</p>
     </footer>`;
 
@@ -135,12 +160,6 @@
   const openAdvisor = () => {
     const launcher = document.querySelector('#launcherButton, #openWidget, .kf-launcher, .launcher__button, .launcher-button');
     if (launcher && !document.querySelector('.widget.is-open, .kf-widget.is-open')) launcher.click();
-    window.setTimeout(() => {
-      const advisorButton = [...document.querySelectorAll('.mode__button, .mode-switch button, .kf-switch button')].find(
-        (button) => (button.textContent || '').toLowerCase().includes('výber')
-      );
-      advisorButton?.click();
-    }, 220);
   };
 
   root.querySelectorAll('[data-owner-open]').forEach((button) => button.addEventListener('click', openAdvisor));

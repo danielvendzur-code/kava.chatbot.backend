@@ -17,16 +17,18 @@ test('background is the owner\'s page about the advisor, not a stand-in for thei
   // This page is read by the roastery's owner. A fake shop with an e-shop menu,
   // a contact link and a product grid tells them nothing they do not already
   // have; what the advisor does, how it works and who built it does.
-  assert.match(app, /Vitajte vo vašom návrhu kávového poradcu pre Pražiarničku/);
-  assert.match(app, /Zákazník otvorí poradcu/);
-  assert.match(app, /Odpovie na štyri otázky/);
-  assert.match(app, /Dostane jednu konkrétnu kávu/);
+  assert.match(app, /Chat a výber kávy na vašom webe/);
+  // The widget does two things, so the page explains both, not just the picker.
+  assert.match(app, /<b>Chat<\/b>/);
+  assert.match(app, /<b>Výber kávy<\/b>/);
+  assert.match(app, /Zákazník sa pýta vlastnými slovami/);
+  assert.match(app, /Aká káva do automatu\?/);
   assert.match(app, /mojchatbot\.sk/);
   assert.doesNotMatch(app, /PRAŽIAREŇ KÁVY A KAVIAREŇ V TRENČÍNE/);
   assert.doesNotMatch(app, /Do e-shopu|Kaviareň|Poštovné zdarma|Osobný odber/);
   assert.doesNotMatch(app, /NAŠA PONUKA|Pozrieť všetky/);
   assert.doesNotMatch(app, /Návrh AI chatbota|Ukážka riešenia/);
-  assert.match(css, /grid-template-rows:76px minmax\(0,1fr\) auto/);
+  assert.match(css, /grid-template-rows:76px auto auto auto/);
 });
 
 test('find-your-coffee CTA is rendered before the welcome message', () => {
