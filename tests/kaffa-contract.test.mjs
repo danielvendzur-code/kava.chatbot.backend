@@ -62,7 +62,8 @@ test('progress, back navigation, reset and escape are available', () => {
 test('recommendations close on a real product link, not a simulated basket', () => {
   assert.equal((data.match(/https:\/\/kaffaroastery\.sk\/produkt\//g) || []).length, 4);
   assert.match(app, /Pozrieť kávu/);
-  assert.match(finalApp, /Pozrieť produkt v e-shope/);
+  // The result closes in the basket, handled by the shared widget layer.
+  assert.match(readFileSync(new URL('../coffee-widget-final.js', import.meta.url), 'utf8'), /Pridať do košíka/);
   // The pack picker, the tote-bag upsell and the add-to-cart button never
   // reached a basket, so the closing step read as a feature demo.
   assert.doesNotMatch(finalApp, /Pridať do košíka/);

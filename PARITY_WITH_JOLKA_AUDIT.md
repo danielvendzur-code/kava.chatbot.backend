@@ -145,3 +145,72 @@ Stav: 37 kontraktných testov a 25 browser testov zelených
 - Identita, paleta a typografia Jolky.
 - `widget-smoke.spec.mjs` — beží nad starším shared shellom a v tomto
   sandboxe nebol spustený.
+
+---
+
+# Druhé kolo — stránka pre majiteľa a nákupný krok
+
+Prvé kolo postavilo za widget falošný e-shop značky. Pri revízii sa ukázalo,
+že to je zlý smer: ukážku číta **majiteľ pražiarne**, nie jeho zákazník.
+Falošné menu s e-shopom a kontaktom mu nehovorí nič, čo už nemá.
+
+## Stránka za widgetom
+
+Diamonds, Kaffa, Víťazov, Concept aj Pražiarnička majú teraz stránku pre
+majiteľa: logo značky, „Chat a výber kávy na vašom webe.“, ukážka odporúčania
+a **dva bloky — Chat a Výber kávy**, každý s vlastným vysvetlením. Preč je
+navigácia, e-shop, kontakt, produktová mriežka aj copy typu „Pražiareň kávy
+a kaviareň v Trenčíne“, „Poštovné zdarma“ či „Osobný odber“.
+
+Prvý blok ukazuje **otázky, ktoré tej pražiarni zákazníci naozaj kladú** —
+Kaffa „Je Kamundu kyslá?“, Víťazov „Aká káva do kancelárie?“, Concept „Čo máte
+teraz čerstvé?“ — nie ten istý text prepísaný pre päť značiek. Druhý blok
+ukazuje štyri kroky výberu tak, ako ich má daná ukážka
+(Víťazov: Použitie · Chuť · Nápoj · Sila).
+
+Nové súbory: `coffee-owner-page.js` + `coffee-owner-page.css`
+(nahrádzajú `coffee-storefront.*`). Pražiarnička dostala tú istú úpravu
+priamo vo svojom v13 stacku.
+
+## Nákupný krok
+
+Widget zastupuje ten, ktorý je už na webe nasadený, takže odporúčanie končí
+tam, kde by končilo naozaj — **„Pridať do košíka“**. Po kliknutí sa tlačidlo
+zmení na „Pridané do košíka ✓“ a pod ním pribudne riadok `<káva> je v košíku.`
+Produktová stránka ostáva ako tichý druhý krok („Detail produktu“).
+Platí pre všetkých šesť ukážok vrátane Jolky.
+
+## Chipy
+
+Vždy štyri, v mriežke 2 × 2, rovnako široké, 40 px vysoké, text 13,5 px.
+Kontajner nemá vlastné pozadie — sedia na tej istej ploche ako konverzácia.
+
+## Pozvánka pred otvorením
+
+Má krížik. Zavretá ostane zavretá aj keď ju logika ukážky skúsi vrátiť.
+
+## Logá
+
+Diamonds ukazuje v hlavičke widgetu svoju skutočnú značku namiesto textovej
+náhrady — tá tam bola len preto, že sa mark kedysi invertoval do biela pre
+tmavú hlavičku, ktorá už neexistuje. Kaffa má svoj wordmark
+(KAFFA / SPECIALITY COFFEE BEANS), čo je jej reálna podoba značky.
+
+## Farby
+
+Odstránený posledný veľký tmavý blok — „Prečo práve táto“ v Jolke bola plná
+ink plocha; teraz je to teplá karta s akcentovou linkou. Kaffa launcher mal
+značkovú farbu na značkovej farbe, takže bol prázdny krúžok.
+
+## Tretie kolo — dve časti, pozvánka a Kaffa
+
+- Stránka hovorí o **oboch** častiach widgetu, nielen o výbere. Predtým bola
+  jedným zoznamom 01/02/03 s tým istým znením pre všetky značky, čo je presne
+  to, čo pôsobí ako vygenerovaný text.
+- **Pozvánka** bola u Víťazova umiestnená napravo od launchera, teda mimo
+  obrazovky (`right: 1546 px` pri šírke 1366), a na Kaffe mala na mobile nulovú
+  veľkosť. Teraz je vo všetkých ukážkach priamo nad launcherom a celá v zábere.
+- **Kaffa** mala v ukážke odporúčania fotku s obrovským bielym okrajom, takže
+  pôsobila ako prázdne miesto. Orezaná do `mokka-hero.webp`.
+- Ukážka odporúčania je teraz karta v rovnakom tvare, v akom ju vykresľuje
+  widget: fotka, názov, tóny a „Pridať do košíka“.

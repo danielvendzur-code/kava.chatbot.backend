@@ -1,0 +1,319 @@
+/**
+ * Owner page layout, shared by Diamonds, Kaffa, Káva Víťazov and Concept.
+ * Brand colour comes from the per-demo --nb-* tokens. Sized to fit 1366 × 768
+ * without scrolling and to reflow into one column on a phone.
+ */
+
+body[data-demo] {
+  --op-ink: var(--nb-ink, #17120f);
+  --op-accent: var(--nb-accent, #c08b4e);
+  --op-strong: var(--nb-strong, #8a5a24);
+  --op-soft: var(--nb-soft, #f6f1ea);
+  --op-soft-2: var(--nb-soft-2, #fdfbf8);
+  --op-line: var(--nb-line, #e6ded3);
+}
+
+/* The container is one of the demos' own landing roots and those carry grid
+   layouts with their own template areas in several media queries, so the
+   layout has to be reset, not merely re-declared. */
+html body[data-demo] [data-owner-page="true"],
+[data-owner-page="true"] {
+  display: flex !important;
+  flex-direction: column !important;
+  grid-template-columns: none !important;
+  grid-template-rows: none !important;
+  grid-template-areas: none !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  gap: 18px !important;
+  box-sizing: border-box;
+  min-height: 100dvh;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 18px clamp(20px, 3.6vw, 52px) 16px !important;
+  background: #fff !important;
+  color: var(--op-ink);
+}
+html body[data-demo] [data-owner-page="true"] > * {
+  position: static !important;
+  grid-area: auto !important;
+  inset: auto !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+[data-owner-page="true"] *,
+[data-owner-page="true"] *::before,
+[data-owner-page="true"] *::after { box-sizing: border-box; }
+
+/* ------------------------------------------------------------------ header */
+
+.op-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--op-line);
+}
+.op-lockup { display: inline-flex; align-items: center; }
+.op-lockup img { display: block; width: auto; object-fit: contain; object-position: left center; }
+.op-wordmark { display: grid; gap: 2px; line-height: 1; }
+.op-wordmark b { font-size: 26px; font-weight: 800; letter-spacing: .14em; }
+.op-wordmark small { font-size: 9.5px; font-weight: 600; letter-spacing: .22em; color: color-mix(in srgb, var(--op-ink) 58%, transparent); }
+
+.op-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 16px;
+  border: 1px solid var(--op-line);
+  border-radius: 999px;
+  background: var(--op-soft-2);
+  color: color-mix(in srgb, var(--op-ink) 76%, transparent);
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.op-flag i { width: 8px; height: 8px; border-radius: 50%; background: var(--op-strong); }
+
+/* -------------------------------------------------------------------- hero */
+
+.op-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
+  align-items: stretch;
+  gap: clamp(28px, 4.5vw, 64px);
+  /* Never shrink below its own content: the showcase used to spill out of the
+     row and sit on top of the two blocks underneath. */
+  flex: 0 0 auto;
+}
+.op-copy { min-width: 0; }
+.op-eyebrow {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--op-strong);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.op-hero h1 {
+  margin: 0 0 13px;
+  font-size: clamp(28px, 2.9vw, 40px);
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  font-weight: 800;
+}
+.op-lead {
+  margin: 0 0 22px;
+  max-width: 52ch;
+  color: color-mix(in srgb, var(--op-ink) 74%, transparent);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.op-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 22px; }
+.op-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 0 26px;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--op-strong);
+  font: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 20px 38px -24px color-mix(in srgb, var(--op-strong) 85%, transparent);
+  transition: background .18s ease, transform .18s ease;
+}
+.op-cta:hover { background: var(--op-accent); transform: translateY(-1px); }
+.op-cta svg { width: 19px; height: 19px; }
+.op-hint { color: color-mix(in srgb, var(--op-ink) 60%, transparent); font-size: 13.5px; max-width: 24ch; line-height: 1.35; }
+
+/* ------------------------------------------------------------------- modes */
+
+/* The widget does two separate things, so the page says so in two blocks. */
+.op-modes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.op-mode {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  padding: 18px 20px 20px;
+  border: 1px solid var(--op-line);
+  border-radius: 22px;
+  background: var(--op-soft-2);
+}
+.op-mode > header { display: flex; align-items: center; gap: 12px; }
+.op-mode__icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+  color: #fff;
+  background: var(--op-strong);
+}
+.op-mode__icon svg { width: 21px; height: 21px; }
+.op-mode > header div { display: grid; gap: 1px; }
+.op-mode > header small {
+  color: var(--op-strong);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.op-mode > header b { font-size: 19px; font-weight: 800; letter-spacing: -.01em; }
+.op-mode > p { margin: 0; color: color-mix(in srgb, var(--op-ink) 76%, transparent); font-size: 14.5px; line-height: 1.45; }
+.op-mode__note {
+  margin: 2px 0 0 !important;
+  padding-top: 10px;
+  border-top: 1px solid var(--op-line);
+  color: color-mix(in srgb, var(--op-ink) 62%, transparent) !important;
+  font-size: 13px !important;
+}
+
+/* Real questions this roastery's customers ask about this catalogue. */
+.op-asks { display: grid; gap: 7px; margin: 2px 0 0; padding: 0; list-style: none; }
+.op-asks li {
+  padding: 9px 13px;
+  border-radius: 14px 14px 14px 5px;
+  background: #fff;
+  border: 1px solid var(--op-line);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.op-flow { display: flex; flex-wrap: wrap; gap: 7px; margin: 4px 0 0; padding: 0; list-style: none; }
+.op-flow li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px 8px 8px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--op-line);
+  font-size: 14px;
+  font-weight: 600;
+}
+.op-flow i {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  color: var(--op-strong);
+  background: var(--op-soft);
+  font-size: 11.5px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+/* ---------------------------------------------------------------- showcase */
+
+/* A single recommendation card, laid out the way the widget lays one out. */
+.op-showcase {
+  position: relative;
+  display: grid;
+  align-content: center;
+  gap: 12px;
+  padding: 40px 22px 22px;
+  border-radius: 30px;
+  background: linear-gradient(160deg, var(--op-soft) 0%, var(--op-soft-2) 62%, #fff 100%);
+}
+.op-showcase__tag {
+  position: absolute;
+  top: 17px;
+  left: 24px;
+  color: var(--op-strong);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.op-showcase__card {
+  display: grid;
+  grid-template-columns: 116px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px 14px 14px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 22px 44px -32px rgba(20, 24, 20, .65);
+}
+.op-showcase__card img {
+  display: block;
+  width: 116px;
+  height: 148px;
+  object-fit: contain;
+}
+.op-showcase__copy { display: grid; gap: 4px; min-width: 0; }
+.op-showcase__copy small {
+  color: var(--op-strong);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.op-showcase__copy b { font-size: 18px; font-weight: 800; line-height: 1.2; letter-spacing: -.01em; }
+.op-showcase__copy span { color: color-mix(in srgb, var(--op-ink) 64%, transparent); font-size: 13.5px; }
+.op-showcase__copy em {
+  justify-self: start;
+  margin-top: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #fff;
+  background: var(--op-strong);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------------------ footer */
+
+.op-foot { padding-top: 14px; border-top: 1px solid var(--op-line); }
+.op-by { margin: 0; color: color-mix(in srgb, var(--op-ink) 56%, transparent); font-size: 13px; }
+.op-by a { color: var(--op-strong); font-weight: 600; }
+
+/* -------------------------------------------------------------- responsive */
+
+@media (max-width: 1100px) {
+  .op-hero { grid-template-columns: minmax(0, 1fr); }
+  .op-modes { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (max-width: 760px) {
+  html body[data-demo] [data-owner-page="true"],
+  [data-owner-page="true"] {
+    gap: 22px !important;
+    padding: 16px 16px 28px !important;
+    min-height: auto !important;
+  }
+  html body[data-demo] [data-owner-page="true"] > * { flex: 0 0 auto !important; }
+  .op-head { gap: 12px; }
+  .op-lockup img { height: 34px !important; max-width: 140px !important; }
+  .op-wordmark b { font-size: 21px; }
+  .op-flag { padding: 8px 12px; font-size: 12px; }
+  .op-hero h1 { font-size: clamp(25px, 7.4vw, 31px); }
+  .op-lead { font-size: 15px; margin-bottom: 20px; }
+  .op-cta { min-height: 50px; padding: 0 20px; font-size: 15.5px; }
+  .op-hint { max-width: none; }
+  .op-showcase { padding: 38px 16px 18px; }
+  .op-showcase__card { grid-template-columns: 92px minmax(0, 1fr); gap: 12px; }
+  .op-showcase__card img { width: 92px; height: 118px; }
+  .op-showcase__copy b { font-size: 16px; }
+  .op-mode { padding: 16px 16px 18px; }
+  .op-mode > header b { font-size: 17px; }
+}
+
+/* The vendor strip belongs to the old shared landing. */
+[data-owner-page="true"] .parity-bottom { display: none !important; }

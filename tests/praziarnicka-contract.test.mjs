@@ -13,19 +13,22 @@ test('final router keeps the isolated Praziarnicka v13 runtime', () => {
   assert.doesNotMatch(router, /praziarnicka-v12\.js/);
 });
 
-test('background is a customer-facing Praziarnicka shop page, not an owner process map', () => {
-  assert.match(app, /PRAŽIAREŇ KÁVY A KAVIAREŇ V TRENČÍNE/);
-  assert.match(app, /Vitajte v Pražiarničke/);
-  assert.match(app, /Prémiová kvalita/);
-  assert.match(app, /NAŠA PONUKA/);
-  assert.match(app, /Poštovné zdarma/);
-  assert.match(app, /Čerstvo pražená káva/);
-  assert.match(app, /98 % spokojnosť/);
-  assert.match(app, /Brazil Santos/);
-  assert.match(app, /Paganini blend/);
-  assert.doesNotMatch(app, /AKO TO FUNGUJE PRE ZÁKAZNÍKA|PROBLÉM|Konkrétna káva \+ dôvod/);
+test('background is the owner\'s page about the advisor, not a stand-in for their shop', () => {
+  // This page is read by the roastery's owner. A fake shop with an e-shop menu,
+  // a contact link and a product grid tells them nothing they do not already
+  // have; what the advisor does, how it works and who built it does.
+  assert.match(app, /Chat a výber kávy na vašom webe/);
+  // The widget does two things, so the page explains both, not just the picker.
+  assert.match(app, /<b>Chat<\/b>/);
+  assert.match(app, /<b>Výber kávy<\/b>/);
+  assert.match(app, /Zákazník sa pýta vlastnými slovami/);
+  assert.match(app, /Aká káva do automatu\?/);
+  assert.match(app, /mojchatbot\.sk/);
+  assert.doesNotMatch(app, /PRAŽIAREŇ KÁVY A KAVIAREŇ V TRENČÍNE/);
+  assert.doesNotMatch(app, /Do e-shopu|Kaviareň|Poštovné zdarma|Osobný odber/);
+  assert.doesNotMatch(app, /NAŠA PONUKA|Pozrieť všetky/);
   assert.doesNotMatch(app, /Návrh AI chatbota|Ukážka riešenia/);
-  assert.match(css, /grid-template-rows:76px minmax\(0,1fr\) 184px 72px/);
+  assert.match(css, /grid-template-rows:76px auto auto auto/);
 });
 
 test('find-your-coffee CTA is rendered before the welcome message', () => {
@@ -54,8 +57,8 @@ test('Chat / Vyber kavy is one full-width switch directly under the header', () 
 
 test('chat keeps quick chips next to the composer and removes choice clutter after first message', () => {
   // Compact wrapping pills, but never below the readable floor.
-  assert.match(css, /\.pz13-chips\{display:flex;flex-wrap:wrap/);
-  assert.match(css, /\.pz13-chip\{min-height:38px[^}]*font-size:13\.5px/);
+  assert.match(css, /\.pz13-chips\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
+  assert.match(css, /\.pz13-chip\{min-height:40px[^}]*font-size:13\.5px/);
   assert.match(css, /\.pz13-bubble\{[\s\S]*font-size:12\.5px/);
   assert.match(app, /!state\.interacted \? `<div class="pz13-chips">/);
   assert.match(app, /state\.interacted = true/);
@@ -85,6 +88,9 @@ test('advisor advances automatically and keeps back/reset/escape behavior', () =
 
 test('recommendations remain grounded in five real Praziarnicka product URLs', () => {
   assert.equal((app.match(/https:\/\/praziarnicka\.sk\/produkt\//g) || []).length, 5);
-  assert.match(app, /Pozrieť produkt/);
+  // The widget stands in for one already installed on the shop, so the
+  // recommendation ends in the basket, with the product page one step away.
+  assert.match(app, /Pridať do košíka/);
+  assert.match(app, /Detail produktu/);
   assert.match(app, /Ďalšia vhodná voľba/);
 });

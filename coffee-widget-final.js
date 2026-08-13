@@ -48,6 +48,87 @@
     });
   };
 
+  /* ------------------------------------------------- dismissable invitation */
+
+  // The invitation is a suggestion, not a banner the visitor has to live with.
+  const TEASER = '#teaser, #launcherTeaser, .teaser, .launcher__teaser, .launcher-teaser, .kf-teaser';
+
+  function addTeaserClose() {
+    document.querySelectorAll(TEASER).forEach((teaser) => {
+      if (teaser.dataset.dismissable === 'true') return;
+      teaser.dataset.dismissable = 'true';
+      if (teaser.querySelector('.mc-teaser-close, .teaser__close, .launcher-teaser__close')) return;
+
+      const close = document.createElement('button');
+      close.type = 'button';
+      close.className = 'mc-teaser-close';
+      close.setAttribute('aria-label', 'Skryť pozvánku');
+      close.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+      close.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        teaser.hidden = true;
+        teaser.classList.remove('is-visible');
+        teaser.dataset.dismissed = 'true';
+      });
+      teaser.appendChild(close);
+    });
+  }
+
+  // Whatever re-runs the demo's own teaser logic must not bring it back.
+  function keepDismissed() {
+    document.querySelectorAll('[data-dismissed="true"]').forEach((teaser) => {
+      teaser.hidden = true;
+      teaser.classList.remove('is-visible');
+    });
+  }
+
+  /* ------------------------------------------------- the closing action */
+
+  // The demo stands in for a widget already installed on the roastery's shop,
+  // so the recommendation ends the way it would there: the coffee goes into the
+  // basket. The product page stays reachable as a quiet second link.
+  const CTA = '.result-cta, .kf-result-cta, .kv-final-cta, .result-button--primary';
+  // Each demo puts the product name in a different place, and a shared guess
+  // picks up the wrong one: on Víťazov the sibling block holds the origin, on
+  // Concept the heading is the label "Vaša káva".
+  const NAME = {
+    diamonds: '.result-copy h2',
+    kaffa: '.kf-result-hero__copy h2',
+    vitazov: '.result-head h2',
+    concept: '.result-main__copy h3'
+  }[slug];
+
+  const cartIcon = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4.5 7.5h15l-1.2 11a1.6 1.6 0 0 1-1.6 1.4H7.3a1.6 1.6 0 0 1-1.6-1.4L4.5 7.5Zm4 0V5.6a3.5 3.5 0 1 1 7 0v1.9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  const checkIcon = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+
+  function enhanceCheckout() {
+    document.querySelectorAll(CTA).forEach((cta) => {
+      if (cta.dataset.cartReady === 'true' || cta.closest('.mc-buy')) return;
+      const name = document.querySelector(NAME)?.textContent?.trim() || 'Vybraná káva';
+      const href = cta.getAttribute('href') || '';
+
+      const buy = document.createElement('div');
+      buy.className = 'mc-buy';
+      buy.innerHTML = `
+        <button class="mc-buy__add" type="button">${cartIcon}<span>Pridať do košíka</span></button>
+        ${href ? `<a class="mc-buy__link" href="${href}" target="_blank" rel="noreferrer">Detail produktu</a>` : ''}
+        <p class="mc-buy__note" role="status" hidden></p>`;
+      cta.dataset.cartReady = 'true';
+      cta.replaceWith(buy);
+
+      const add = buy.querySelector('.mc-buy__add');
+      const note = buy.querySelector('.mc-buy__note');
+      add.addEventListener('click', () => {
+        if (add.classList.contains('is-added')) return;
+        add.classList.add('is-added');
+        add.innerHTML = `${checkIcon}<span>Pridané do košíka</span>`;
+        note.textContent = `${name} je v košíku.`;
+        note.hidden = false;
+      });
+    });
+  }
+
   let queued = false;
   const observer = new MutationObserver(() => {
     if (queued) return;
@@ -55,11 +136,16 @@
     requestAnimationFrame(() => {
       queued = false;
       syncEntry();
+      addTeaserClose();
+      keepDismissed();
+      enhanceCheckout();
       keepLast();
     });
   });
   observer.observe(document.documentElement, { childList: true, subtree: true });
   syncEntry();
+  addTeaserClose();
+  enhanceCheckout();
 
   // Starting over brings the conversation back to its opening state, so the
   // handoff is offered again.

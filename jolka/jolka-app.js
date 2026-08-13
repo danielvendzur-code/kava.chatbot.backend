@@ -105,7 +105,8 @@
     chosen: null,
     busy: false,
     history: [],
-    lastFocus: null
+    lastFocus: null,
+    teaserDismissed: false
   };
 
   /* --------------------------------------------------------------- shell */
@@ -131,7 +132,7 @@
           <div class="benefits">
             <article class="benefit"><span class="benefit__num">01</span><div><b>Menej váhania</b><span>Zákazník dostane jednu konkrétnu kávu, nie zoznam.</span></div></article>
             <article class="benefit"><span class="benefit__num">02</span><div><b>Menej otázok</b><span>Aciditu, praženie aj prípravu vysvetlí poradca.</span></div></article>
-            <article class="benefit"><span class="benefit__num">03</span><div><b>Priamy nákupný krok</b><span>Odporúčanie vedie rovno na produkt v e-shope.</span></div></article>
+            <article class="benefit"><span class="benefit__num">03</span><div><b>Priamy nákupný krok</b><span>Odporúčanie končí pridaním kávy do košíka.</span></div></article>
           </div>
 
           <div class="hero__actions">
@@ -161,17 +162,20 @@
           <li><b>Poradí 24/7</b><span>Aj v nedeľu o polnoci, keď nemá kto odpísať.</span></li>
           <li><b>Odbúra otázky</b><span>Acidita, praženie a mletie vysvetlené hneď v chate.</span></li>
           <li><b>Zvyšuje hodnotu košíka</b><span>Ukáže väčšie balenie aj druhú vhodnú kávu.</span></li>
-          <li><b>Vedie k nákupu</b><span>Z odporúčania jedným klikom na produkt.</span></li>
+          <li><b>Vedie k nákupu</b><span>Z odporúčania jedným klikom do košíka.</span></li>
         </ul>
         <p class="page__by">Návrh pripravil <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a> · ukážka pre Pražiareň Jolka</p>
       </footer>
     </main>
 
     <div class="launcher" id="launcher">
-      <button class="launcher__teaser" id="teaser" type="button">
-        <b>Neviete, ktorú kávu vybrať?</b>
-        <span>Za štyri otázky nájdeme tú vašu.</span>
-      </button>
+      <div class="launcher__teaser" id="teaser">
+        <button class="launcher__teaser-body" id="teaserOpen" type="button">
+          <b>Neviete, ktorú kávu vybrať?</b>
+          <span>Za štyri otázky nájdeme tú vašu.</span>
+        </button>
+        <button class="launcher__teaser-close" id="teaserClose" type="button" aria-label="Skryť pozvánku">${icons.close}</button>
+      </div>
       <button class="launcher__button" id="open" type="button" aria-label="Otvoriť kávového poradcu" aria-expanded="false" aria-controls="widget">
         <img src="/assets/jolka/logo-badge.webp" width="52" height="52" alt="">
       </button>
@@ -275,7 +279,7 @@
     document.body.classList.remove('widget-open');
     launcher.hidden = false;
     (state.lastFocus instanceof HTMLElement ? state.lastFocus : openButton).focus();
-    setTimeout(() => teaser.classList.add('is-visible'), 600);
+    if (!state.teaserDismissed) setTimeout(() => teaser.classList.add('is-visible'), 600);
   }
 
   document.addEventListener('keydown', (event) => {
@@ -460,11 +464,27 @@
         </div>
       </div>`;
 
+    // The demo stands in for a widget already installed on the shop, so the
+    // recommendation ends in the basket. The product page stays one quiet step
+    // away for anyone who wants to read the full description first.
     advisorFoot.hidden = false;
     advisorFoot.innerHTML = `
-      <a class="cta" href="${product.url}" target="_blank" rel="noreferrer" id="productCta">Pozrieť produkt v e-shope ${icons.shop}</a>
-      <button class="ghost" type="button" id="restart">Zmeniť odpovede</button>`;
+      <button class="cta" type="button" id="addToCart">Pridať do košíka ${icons.shop}</button>
+      <div class="foot-row">
+        <a class="foot-link" href="${product.url}" target="_blank" rel="noreferrer" id="productCta">Detail produktu</a>
+        <button class="ghost" type="button" id="restart">Zmeniť odpovede</button>
+      </div>
+      <p class="cart-note" role="status" hidden></p>`;
 
+    const addToCart = $('#addToCart');
+    const cartNote = $('.cart-note', advisorFoot);
+    addToCart.addEventListener('click', () => {
+      if (addToCart.classList.contains('is-added')) return;
+      addToCart.classList.add('is-added');
+      addToCart.innerHTML = `Pridané do košíka ${icons.check}`;
+      cartNote.textContent = `${product.name} · ${product.priceUnit} je v košíku.`;
+      cartNote.hidden = false;
+    });
     $('#restart').addEventListener('click', resetAdvisor);
     const altCard = $('.alt__card', advisor);
     if (altCard) {
@@ -590,7 +610,13 @@
 
   $('#heroOpen').addEventListener('click', openWidget);
   openButton.addEventListener('click', openWidget);
-  teaser.addEventListener('click', openWidget);
+  $('#teaserOpen').addEventListener('click', openWidget);
+  // The invitation is a suggestion, not something the visitor has to live with.
+  $('#teaserClose').addEventListener('click', () => {
+    teaser.hidden = true;
+    teaser.classList.remove('is-visible');
+    state.teaserDismissed = true;
+  });
   $('#close').addEventListener('click', closeWidget);
   $('#entry').addEventListener('click', () => setMode('advisor'));
   $('#reset').addEventListener('click', () => {
@@ -621,6 +647,6 @@
   seedChat();
   renderAdvisor();
   setTimeout(() => {
-    if (!widget.classList.contains('is-open')) teaser.classList.add('is-visible');
+    if (!widget.classList.contains('is-open') && !state.teaserDismissed) teaser.classList.add('is-visible');
   }, 1200);
 })();

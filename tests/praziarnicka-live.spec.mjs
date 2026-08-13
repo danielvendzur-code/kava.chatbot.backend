@@ -12,19 +12,27 @@ async function ready(page) {
 
 function center(box) { return box.x + box.width / 2; }
 
-test('Praziarnicka background reads as the branded customer website', async ({ page }) => {
+test('Praziarnicka background is the owner page about the advisor', async ({ page }) => {
   await page.setViewportSize({ width:1366, height:768 });
   await ready(page);
 
+  // The demo is read by the roastery's owner. A stand-in for their own shop —
+  // menu, e-shop link, contact, product grid — tells them nothing they do not
+  // already have; what the advisor does and how it works does.
   await expect(page.locator('.pz13-site-logo img')).toHaveAttribute('src', '/brand/praziarnicka-logo-official.png');
   await expect(page.locator('.pz13-site-hero')).toBeVisible();
-  await expect(page.locator('.pz13-site-copy')).toContainText('Vitajte v Pražiarničke');
-  await expect(page.locator('.pz13-site-copy')).toContainText('Prémiová kvalita');
-  await expect(page.locator('.pz13-site-products')).toContainText('Naša ponuka', { ignoreCase:true });
-  await expect(page.locator('.pz13-site-product')).toHaveCount(4);
-  await expect(page.locator('.pz13-proof > div')).toHaveCount(4);
+  await expect(page.locator('.pz13-site-copy')).toContainText('Chat a výber kávy');
+  // Both halves of the widget are explained, each in its own block.
+  await expect(page.locator('.pz13-site-mode')).toHaveCount(2);
+  await expect(page.locator('.pz13-site-mode').nth(0)).toContainText('Chat');
+  await expect(page.locator('.pz13-site-mode').nth(0)).toContainText('Aká káva do automatu?');
+  await expect(page.locator('.pz13-site-mode').nth(1)).toContainText('Výber kávy');
+  await expect(page.locator('.pz13-site-mode').nth(1).locator('ol li')).toHaveCount(4);
+  await expect(page.locator('.pz13-site-by')).toContainText('mojchatbot.sk');
+  await expect(page.locator('.pz13-site-product')).toHaveCount(0);
+  await expect(page.locator('body')).not.toContainText('PRAŽIAREŇ KÁVY A KAVIAREŇ V TRENČÍNE');
+  await expect(page.locator('body')).not.toContainText('Poštovné zdarma');
   await expect(page.locator('body')).not.toContainText('AKO TO FUNGUJE PRE ZÁKAZNÍKA');
-  await expect(page.locator('body')).not.toContainText('PROBLÉM');
 
   const size = await page.evaluate(() => ({ h:document.scrollingElement.scrollHeight, ih:innerHeight, w:document.scrollingElement.scrollWidth, iw:innerWidth }));
   expect(size.h).toBeLessThanOrEqual(size.ih + 1);
