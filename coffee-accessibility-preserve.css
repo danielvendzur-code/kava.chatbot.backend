@@ -44,7 +44,35 @@ html body[data-coffee-release] .mc-owner .mc-owner-contact,
 html body[data-coffee-release] .mc-owner .mc-owner-demo-card small,
 html body[data-coffee-release] .mc-owner .mc-owner-demo-card p,
 html body[data-coffee-release] .mc-owner .mc-owner-demo-card li,
+html body[data-coffee-release] .mc-owner .mc-owner-demo-card li i,
 html body[data-coffee-release] .mc-owner .mc-owner-benefits b,
 html body[data-coffee-release] .mc-owner .mc-owner-benefits small,
 html body[data-coffee-release] .mc-owner .mc-owner-foot,
 html body[data-coffee-release] .mc-owner .mc-owner-wordmark small{font-size:11px!important}
+
+/* Víťazov / Concept question markup has the heading and option grid as siblings.
+   The earlier flex rule gave the heading 100% height and forced a 1000px pane.
+   Keep the heading auto-sized and let the 2x2 grid consume the remaining space. */
+html body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-card)),
+html body[data-coffee-release="concept"] #advisorBody:not(:has(.result-card)){
+  height:100%!important;min-height:0!important;display:grid!important;grid-template-rows:auto minmax(0,1fr)!important;overflow:hidden!important;padding:10px 12px 12px!important
+}
+html body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-card)) .question,
+html body[data-coffee-release="concept"] #advisorBody:not(:has(.result-card)) .question{
+  height:auto!important;min-height:0!important;display:grid!important;margin:0 0 8px!important;align-content:start!important
+}
+html body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-card)) .options,
+html body[data-coffee-release="concept"] #advisorBody:not(:has(.result-card)) .options{
+  height:100%!important;min-height:0!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;gap:8px!important;overflow:hidden!important
+}
+html body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-card)) .option,
+html body[data-coffee-release="concept"] #advisorBody:not(:has(.result-card)) .option{
+  height:100%!important;min-height:0!important;padding:8px 10px!important;border-radius:18px!important
+}
+html body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-card)) .option__copy b,
+html body[data-coffee-release="concept"] #advisorBody:not(:has(.result-card)) .option__copy b{font-size:12.5px!important}
+html body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-card)) .option__copy small,
+html body[data-coffee-release="concept"] #advisorBody:not(:has(.result-card)) .option__copy small{font-size:11px!important}
+
+/* Preserve the user's already-good Victory layout; only the typing field changes. */
+html body[data-coffee-release="vitazov"] #widget #chatInput{font-size:13px!important;line-height:1.35!important}
