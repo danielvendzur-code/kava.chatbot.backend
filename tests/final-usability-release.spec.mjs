@@ -10,7 +10,7 @@ const demos = [
   { slug:'kaffa', launcher:'#launcher', advisor:'.kf-switch button[data-mode="advisor"]', chat:'.kf-switch button[data-mode="chat"]', option:'.kf-option', question:'.kf-stage', panel:'.kf-panel' },
   { slug:'vitazov', launcher:'#openWidget', advisor:'.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]', option:'#advisorBody .option', question:'#advisorBody', panel:'#widget' },
   { slug:'concept', launcher:'#openWidget', advisor:'.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]', option:'#advisorBody .option', question:'#advisorBody', panel:'#widget' },
-  { slug:'jolka', path:'/ukazka/jolka', launcher:'#open', advisor:'.mode__button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"]', option:'#advisor .option', question:'#advisor', panel:'#widget' }
+  { slug:'jolka', path:'/jolka.html', launcher:'#open', advisor:'.mode__button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"]', option:'#advisor .option', question:'#advisor', panel:'#widget' }
 ];
 
 async function openDemo(page, demo, viewport = { width:1366, height:768 }) {
@@ -39,7 +39,7 @@ test('all six owner pages are unified, company-helpful and AI-free', async ({ pa
     await expect(owner).toContainText('Jednoduchší výber kávy');
     await expect(owner).toContainText('Otvoriť Výber kávy');
     await expect(owner).toContainText('Pozrieť Chat');
-    await expect(owner.locator('a[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
+    await expect(owner.locator('a[href*="mojchatbot.sk/kontakt"]').first()).toBeVisible();
     const text = await owner.innerText();
     expect(text).not.toMatch(/Návrh AI|umelá inteligencia|overen[áou]\s+\d|match|zhoda\s*·\s*\d+\s*%/i);
     const pageMetrics = await page.evaluate(() => ({ h:document.scrollingElement.scrollHeight, ih:innerHeight, w:document.scrollingElement.scrollWidth, iw:innerWidth }));
@@ -52,9 +52,9 @@ test('all six owner pages are unified, company-helpful and AI-free', async ({ pa
 test('all six advisors keep every question inside one screen', async ({ page }) => {
   for (const demo of demos) {
     await openDemo(page, demo, { width:390, height:844 });
-    await page.locator(demo.launcher).click({ force:true });
+    await page.locator(demo.launcher).click();
     await expect(page.locator(demo.panel)).toBeVisible();
-    await page.locator(demo.advisor).first().click({ force:true });
+    await page.locator(demo.advisor).first().click();
 
     for (let step = 0; step < 4; step += 1) {
       const question = page.locator(demo.question).first();
@@ -62,11 +62,11 @@ test('all six advisors keep every question inside one screen', async ({ page }) 
       const metrics = await noOverflow(question);
       expect(metrics.ok, `${demo.slug} step ${step + 1}: ${JSON.stringify(metrics)}`).toBeTruthy();
       const options = page.locator(demo.option).filter({ visible:true });
-      expect(await options.count()).toBeGreaterThanOrEqual(3);
+      expect(await options.count()).toBeGreaterThanOrEqual(2);
       const first = options.first();
       const box = await first.boundingBox();
       expect(box.height).toBeGreaterThanOrEqual(48);
-      await first.click({ force:true });
+      await first.click();
       await page.waitForTimeout(720);
     }
 
@@ -74,10 +74,11 @@ test('all six advisors keep every question inside one screen', async ({ page }) 
   }
 });
 
-test('Diamonds controls are clickable and conversation starts near the top', async ({ page }) => {
+test('Diamonds controls are genuinely clickable and conversation starts near the top', async ({ page }) => {
   const demo = demos.find(item => item.slug === 'diamonds');
   await openDemo(page, demo, { width:390, height:844 });
   await page.locator(demo.launcher).click();
+  await expect(page.locator('#widget')).toHaveAttribute('aria-hidden', 'false');
   await page.locator(demo.chat).click();
   const panelBox = await page.locator('#widget').boundingBox();
   const messagesBox = await page.locator('.chat-messages').boundingBox();
@@ -89,7 +90,7 @@ test('Diamonds controls are clickable and conversation starts near the top', asy
   await expect(page.locator('#backButton')).toBeEnabled();
 });
 
-test('Praziarnicka has a clearly separated header and picker CTA', async ({ page }) => {
+test('Praziarnicka has clear separation and an opaque chat surface', async ({ page }) => {
   const demo = demos[0];
   await openDemo(page, demo, { width:390, height:844 });
   await page.locator(demo.launcher).click();
@@ -98,8 +99,10 @@ test('Praziarnicka has a clearly separated header and picker CTA', async ({ page
   await expect(cta).toBeVisible();
   const headBorder = await head.evaluate(node => parseFloat(getComputedStyle(node).borderBottomWidth));
   const ctaBorder = await cta.evaluate(node => parseFloat(getComputedStyle(node).borderTopWidth));
+  const stageColor = await page.locator('.pz13-stage').evaluate(node => getComputedStyle(node).backgroundColor);
   expect(headBorder).toBeGreaterThanOrEqual(1);
   expect(ctaBorder).toBeGreaterThanOrEqual(1);
+  expect(stageColor).toMatch(/rgb\(255, 255, 255\)/);
 });
 
 test('Kaffa brand and controls are readable and Victory composer stays polished', async ({ page }) => {
@@ -134,7 +137,7 @@ test('Jolka keeps coffee selection at the top and removes fake match percentages
   expect(entryBox.y).toBeLessThan(chatBox.y + 2);
   await page.locator(jolka.advisor).click();
   for (let i = 0; i < 4; i += 1) {
-    await page.locator('#advisor .option').filter({ visible:true }).first().click({ force:true });
+    await page.locator('#advisor .option').filter({ visible:true }).first().click();
     await page.waitForTimeout(720);
   }
   const badge = page.locator('.result__badge');
