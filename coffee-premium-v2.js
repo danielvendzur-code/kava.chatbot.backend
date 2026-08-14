@@ -5,7 +5,6 @@
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
   const choiceSelector = '.option[data-value],.answer-card[data-answer],.kf-option[data-value],.pz-option[data-value]';
   const chipContainers = '.chips,.quick-grid,.kf-chips,.pz-chips,.quick-questions';
-  const time = () => new Intl.DateTimeFormat('sk-SK', { hour: '2-digit', minute: '2-digit' }).format(new Date());
 
   const project = () => {
     if ($('.concept-page')) return 'concept';
@@ -76,7 +75,6 @@
       status.setAttribute('aria-label', 'Poradca je dostupný');
     });
 
-    $$('.message--fallback small').forEach((label) => { label.textContent = time(); });
     $$('.mode__button[data-mode="chat"] b,.mode-switch button[data-mode="chat"] b,.pz-mode-btn[data-mode="chat"] b').forEach((label) => { label.textContent = 'Chat'; });
     $$('.mode__button[data-mode="advisor"] b,.mode-switch button[data-mode="advisor"] b,.pz-mode-btn[data-mode="advisor"] b').forEach((label) => { label.textContent = 'Výber kávy'; });
   }
@@ -90,33 +88,9 @@
     });
   }
 
-  function decorateOptions() {
-    $$('.options,.answers,.kf-options,.pz-options').forEach((container) => {
-      const first = $(choiceSelector, container);
-      if (first && !$('.mc-top', first)) first.insertAdjacentHTML('beforeend', '<span class="mc-top">TOP</span>');
-    });
-  }
-
-  function messageTimestamp(row) {
-    if (!row || row.dataset.mcTime || row.querySelector('.timestamp,.time,.mc-timestamp') || row.matches('#typingRow') || row.querySelector('.typing')) return;
-    const bubble = row.matches('.kf-message.user,.pz-bubble-user') ? row : $('.chat-bubble,.kf-message,.pz-bubble,.message__bubble,.bubble', row);
-    if (!bubble) return;
-
-    const stack = document.createElement('div');
-    const user = row.matches('.message--user,.chat-line--user,.kf-message.user,.pz-bubble-user') || bubble.matches('.user,.pz-bubble-user');
-    stack.className = `mc-message-stack${user ? ' mc-message-stack--user' : ''}`;
-    bubble.parentNode.insertBefore(stack, bubble);
-    stack.appendChild(bubble);
-    const stamp = document.createElement('time');
-    stamp.className = 'mc-timestamp';
-    stamp.dateTime = new Date().toISOString();
-    stamp.textContent = time();
-    stack.appendChild(stamp);
-    row.dataset.mcTime = 'true';
-  }
-
   function decorateMessages() {
-    $$('.chat-line,.kf-message-row,.kf-message.user,.pz-message-row,.pz-bubble-user,.message').forEach(messageTimestamp);
+    // No per-message timestamps: a coffee advisor is not a support desk, and
+    // the reference build (Jolka) carries none.
 
     if (project() === 'vitazov') {
       $$('.message__avatar').forEach((avatar) => {
@@ -135,8 +109,8 @@
   }
 
   function promoteCheckout() {
-    $$('.result-button--primary,.result-cta,.kf-result-cta,.pz-product-cta,.result-actions__primary').forEach((button) => setLabel(button, '🛒 Do košíka'));
-
+    // Each demo now writes its own closing CTA ("Pozrieť produkt v e-shope"),
+    // so nothing is relabelled here.
     $$('.result-actions').forEach((actions) => {
       if (actions.dataset.mcMoved) return;
       const card = actions.closest('.result-card');
@@ -162,7 +136,6 @@
     simplifyLanding();
     removeOnlineLabels();
     decorateChips();
-    decorateOptions();
     decorateMessages();
     promoteCheckout();
   }

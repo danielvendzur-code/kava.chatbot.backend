@@ -1,0 +1,194 @@
+/* Final visual QA corrections layered after coffee-jolka-parity.css. */
+
+/* Never let the widget or a newly rendered message spend visible time translucent. */
+body[data-demo] .widget,
+body[data-demo] .kf-widget,
+body[data-demo] .pz-widget{
+  transition:transform .16s cubic-bezier(.16,1,.3,1)!important;
+}
+body[data-demo] .widget.is-open,
+body[data-demo] .kf-widget.is-open,
+body[data-demo] .pz-widget.is-open{
+  opacity:1!important;
+}
+body[data-demo] .message,
+body[data-demo] .chat-line,
+body[data-demo] .kf-message-row,
+body[data-demo] .pz-message-row{
+  opacity:1!important;
+  visibility:visible!important;
+  animation:none!important;
+  transform:none!important;
+}
+body[data-demo="diamonds"] .widget,
+body[data-demo="diamonds"] .widget-stage,
+body[data-demo="diamonds"] #chatScreen,
+body[data-demo="diamonds"] #chatScreen .chat-messages,
+body[data-demo="diamonds"] #chatScreen .chat-bottom{
+  opacity:1!important;
+}
+
+/* Keep every option readable immediately instead of showing staggered half-visible cards. */
+body[data-demo] .option,
+body[data-demo] .pz-option,
+body[data-demo] .kf-option{
+  opacity:1!important;
+  animation:none!important;
+  transform:none!important;
+}
+
+/* Bottom proof strip is content, not decorative microcopy. */
+.parity-bottom__copy b{font-size:12px!important;line-height:1.18!important}
+.parity-bottom__copy span{font-size:10.2px!important;line-height:1.34!important}
+.parity-bottom__dot{width:7px!important;height:7px!important;margin-top:4px!important}
+
+/* Pražiarnička: fix default figure margins, prevent product label cropping and lift teaser. */
+.parity-pz-showcase figure{margin:0!important;min-width:0!important}
+.parity-pz-showcase__main img{object-position:center 45%!important}
+.parity-pz-showcase__rail{min-width:0!important}
+.parity-pz-showcase__tile img{object-fit:contain!important;object-position:center!important;padding:6px!important;background:#f8f1e9!important}
+.parity-pz-showcase__tile span{font-size:9.5px!important;line-height:1.22!important;text-align:center!important}
+body[data-demo="praziarnicka"] .pz-benefits b{font-size:12px!important}
+body[data-demo="praziarnicka"] .pz-benefits span{font-size:10.2px!important;line-height:1.34!important}
+body[data-demo="praziarnicka"] .pz-owner-links a:first-child{display:none!important}
+body[data-demo="praziarnicka"] .pz-preview{
+  position:relative!important;
+  top:-52px!important;
+  opacity:1!important;
+  animation:none!important;
+  transform:none!important;
+}
+body[data-demo="praziarnicka"] .pz-preview b{font-size:13.5px!important}
+body[data-demo="praziarnicka"] .pz-preview span{font-size:11.2px!important}
+
+/* Káva Víťazov: preserve its strong layout but remove all micro typography. */
+body[data-demo="vitazov"] .demo-benefit b{font-size:12.5px!important}
+body[data-demo="vitazov"] .demo-benefit small{font-size:10.2px!important;line-height:1.4!important}
+body[data-demo="vitazov"] .demo-benefit>span{font-size:9px!important}
+body[data-demo="vitazov"] .preview-panel__top small{font-size:10.2px!important}
+body[data-demo="vitazov"] .preview-panel__top>span{font-size:10px!important}
+body[data-demo="vitazov"] .preview-product__copy>span{font-size:10px!important}
+body[data-demo="vitazov"] .preview-product__copy b{font-size:10px!important}
+body[data-demo="vitazov"] .preview-reason b{font-size:10.2px!important}
+body[data-demo="vitazov"] .preview-reason p{font-size:10.5px!important}
+body[data-demo="vitazov"] .launcher__teaser{bottom:104px!important;opacity:1!important;animation:none!important;transform:none!important}
+body[data-demo="vitazov"] #chatScreen .advisor-entry{
+  min-height:64px!important;
+  padding:8px 12px!important;
+  border:1px solid rgba(255,255,255,.24)!important;
+  background:linear-gradient(100deg,rgba(255,255,255,.15),rgba(255,255,255,.075))!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 16px 30px -25px #000!important;
+}
+body[data-demo="vitazov"] #chatScreen .advisor-entry b{font-size:13.5px!important}
+body[data-demo="vitazov"] #chatScreen .advisor-entry em{font-size:10.2px!important;opacity:.78!important}
+body[data-demo="vitazov"] #quickChips .chip{font-size:12px!important}
+body[data-demo="vitazov"] .option__copy b{font-size:12.5px!important}
+body[data-demo="vitazov"] .option__copy small{font-size:10px!important;line-height:1.32!important;color:rgba(7,31,26,.64)!important}
+body[data-demo="vitazov"] .option__photo{aspect-ratio:16/9!important}
+body[data-demo="vitazov"] .parity-choice-img{object-fit:cover!important}
+
+/* Diamonds: larger preview copy and fully opaque, readable chat. */
+body[data-demo="diamonds"] .owner-benefits b{font-size:12.5px!important}
+body[data-demo="diamonds"] .owner-benefits small{font-size:10.2px!important;line-height:1.38!important}
+body[data-demo="diamonds"] .hero-photo-frame figcaption span{font-size:9.5px!important}
+body[data-demo="diamonds"] .hero-photo-frame figcaption small{font-size:10.5px!important}
+body[data-demo="diamonds"] .hero-rail>div>span{font-size:9.5px!important}
+body[data-demo="diamonds"] .teaser{position:relative!important;top:-20px!important;opacity:1!important;animation:none!important;transform:none!important}
+body[data-demo="diamonds"] .teaser strong{font-size:13.5px!important}
+body[data-demo="diamonds"] .teaser span{font-size:11.2px!important}
+body[data-demo="diamonds"] #chatScreen{
+  background:linear-gradient(155deg,#11150d,#0a0d08)!important;
+}
+body[data-demo="diamonds"] #chatScreen .chat-messages{background:transparent!important}
+body[data-demo="diamonds"] #chatScreen .chat-line:not(.chat-line--user) .chat-bubble{
+  color:#182014!important;
+  background:#f7f8f1!important;
+  border-color:rgba(255,255,255,.48)!important;
+  opacity:1!important;
+}
+body[data-demo="diamonds"] #chatScreen .chat-line--user .chat-bubble{
+  color:#fff!important;
+  background:#272d22!important;
+  border-color:rgba(255,255,255,.18)!important;
+  opacity:1!important;
+}
+body[data-demo="diamonds"] #chatScreen .diamonds-time{color:rgba(255,255,255,.58)!important;font-size:8.5px!important}
+body[data-demo="diamonds"] #chatScreen .quick-grid button{font-size:12px!important;min-height:42px!important}
+body[data-demo="diamonds"] #chatScreen .composer input{font-size:12.5px!important}
+body[data-demo="diamonds"] #chatScreen .advisor-entry b{font-size:13.5px!important}
+body[data-demo="diamonds"] #chatScreen .advisor-entry em{display:block!important;font-size:10px!important;opacity:.72!important}
+
+/* Concept: same readability floor and higher teaser without changing its photography. */
+body[data-demo="concept"] .hero-benefits b{font-size:12px!important}
+body[data-demo="concept"] .hero-benefits small{font-size:10.2px!important}
+body[data-demo="concept"] .hero-visual__caption span{font-size:10px!important}
+body[data-demo="concept"] .hero-visual__caption small{font-size:10.5px!important}
+body[data-demo="concept"] .hero-visual__proof{font-size:10px!important}
+body[data-demo="concept"] .launcher-teaser{position:relative!important;top:-14px!important;opacity:1!important;animation:none!important;transform:none!important}
+body[data-demo="concept"] .launcher-teaser__open b{font-size:13.5px!important}
+body[data-demo="concept"] .launcher-teaser__open span{font-size:11.2px!important}
+body[data-demo="concept"] #quickChips .chip{font-size:12px!important}
+body[data-demo="concept"] .option__copy b{font-size:12.5px!important}
+body[data-demo="concept"] .option__copy small{font-size:10px!important}
+
+/* Kaffa: stronger real-site wordmark and a chat with the same visual weight as the advisor. */
+body[data-demo="kaffa"] .kf-benefit b{font-size:12px!important}
+body[data-demo="kaffa"] .kf-benefit p{font-size:10.2px!important}
+body[data-demo="kaffa"] .kf-story-kicker{font-size:9.5px!important}
+body[data-demo="kaffa"] .kf-story-copy p{font-size:10.5px!important}
+body[data-demo="kaffa"] .kf-story-meta span{font-size:9.5px!important}
+body[data-demo="kaffa"] .kf-story-foot{font-size:9.5px!important}
+body[data-demo="kaffa"] .kf-teaser{position:relative!important;top:-20px!important;opacity:1!important;animation:none!important;transform:none!important}
+body[data-demo="kaffa"] .kf-teaser b{font-size:13.5px!important}
+body[data-demo="kaffa"] .kf-teaser span{font-size:11.2px!important}
+body[data-demo="kaffa"] .kf-chat{background:linear-gradient(155deg,#171713,#0b0b09)!important}
+body[data-demo="kaffa"] .kf-message.bot{color:#171713!important;background:#f7f3eb!important;opacity:1!important}
+body[data-demo="kaffa"] .kf-message.user{color:#fff!important;background:#39352e!important;opacity:1!important}
+body[data-demo="kaffa"] .kf-chat .kf-chip.mc-chip{font-size:12px!important}
+body[data-demo="kaffa"] .kf-advisor-entry__copy b{font-size:13.5px!important}
+body[data-demo="kaffa"] .kf-advisor-entry__copy small{display:block!important;font-size:10px!important;opacity:.7!important}
+body[data-demo="kaffa"] .kf-option b,
+body[data-demo="kaffa"] .kf-option__copy b{font-size:12.5px!important}
+body[data-demo="kaffa"] .kf-option small,
+body[data-demo="kaffa"] .kf-option__copy small{font-size:10px!important}
+
+/* Pražiarnička chat readability follows the same floor. */
+body[data-demo="praziarnicka"] .pz-advisor-cta b{font-size:13.5px!important}
+body[data-demo="praziarnicka"] .pz-advisor-cta small{font-size:10.2px!important}
+body[data-demo="praziarnicka"] .pz-chip{font-size:12px!important}
+body[data-demo="praziarnicka"] .pz-option-copy b{font-size:12.5px!important}
+body[data-demo="praziarnicka"] .pz-option-copy small{font-size:10px!important}
+
+/* Result buttons are primary commerce actions on every brand. */
+body[data-demo] .result-actions a,
+body[data-demo] .result-actions button,
+body[data-demo] .kv-final-add,
+body[data-demo] .kv-final-actions a,
+body[data-demo] .kf-final-add,
+body[data-demo] .kf-final-actions a,
+body[data-demo] .pz-result-actions a,
+body[data-demo] .pz-result-actions button,
+body[data-demo] .result-cta,
+body[data-demo] .kf-result-cta{
+  min-height:50px!important;
+  font-size:12px!important;
+}
+
+@media(max-width:760px){
+  .parity-bottom{display:none!important}
+  body[data-demo="praziarnicka"] .pz-preview{top:-32px!important}
+  body[data-demo="diamonds"] .teaser,
+  body[data-demo="kaffa"] .kf-teaser,
+  body[data-demo="concept"] .launcher-teaser{top:-10px!important}
+  body[data-demo="vitazov"] .launcher__teaser{bottom:92px!important}
+  body[data-demo="vitazov"] .option__copy b,
+  body[data-demo="diamonds"] .option__copy b,
+  body[data-demo="concept"] .option__copy b,
+  body[data-demo="kaffa"] .kf-option b,
+  body[data-demo="praziarnicka"] .pz-option-copy b{font-size:12px!important}
+  body[data-demo="vitazov"] .option__copy small,
+  body[data-demo="diamonds"] .option__copy small,
+  body[data-demo="concept"] .option__copy small,
+  body[data-demo="kaffa"] .kf-option small,
+  body[data-demo="praziarnicka"] .pz-option-copy small{font-size:9.7px!important}
+}
