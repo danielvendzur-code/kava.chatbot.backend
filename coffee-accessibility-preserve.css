@@ -1,0 +1,78 @@
+/* Preserve proven readable controls and make closed dialogs truly non-interactive. */
+body[data-coffee-release="vitazov"] #quickChips .chip{font-size:13px!important;min-height:40px!important}
+body[data-coffee-release="jolka"] #chips .chip{font-size:12.5px!important;min-height:44px!important}
+
+/* A closed transformed dialog must never sit above the launcher and steal taps.
+   Descendants are disabled explicitly because older layers set pointer-events:auto
+   on buttons/options with !important. */
+html body[data-coffee-release] #widget[aria-hidden="true"],
+html body[data-coffee-release] #widget[aria-hidden="true"] *,
+html body[data-coffee-release] #pz13-widget[aria-hidden="true"],
+html body[data-coffee-release] #pz13-widget[aria-hidden="true"] *,
+html body[data-coffee-release] .kf-widget[aria-hidden="true"],
+html body[data-coffee-release] .kf-widget[aria-hidden="true"] *{pointer-events:none!important;visibility:hidden!important}
+html body[data-coffee-release] #widget[aria-hidden="false"],
+html body[data-coffee-release] #pz13-widget[aria-hidden="false"],
+html body[data-coffee-release] .kf-widget[aria-hidden="false"]{pointer-events:auto!important;visibility:visible!important}
+
+/* Pražiarnička: never let the owner page bleed through the conversation. */
+html body[data-coffee-release="praziarnicka"] #pz13-widget,
+html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-stage,
+html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-chat,
+html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-chat__messages,
+html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-chat__bottom{background:#fff!important;opacity:1!important}
+
+/* Diamonds and Kaffa use light opaque work surfaces too. */
+html body[data-coffee-release="diamonds"] #widget .widget-stage,
+html body[data-coffee-release="diamonds"] #widget .screen,
+html body[data-coffee-release="kaffa"] #widget .kf-panel,
+html body[data-coffee-release="kaffa"] #widget .kf-view{background:#fff!important;opacity:1!important}
+
+/* Kaffa always keeps a visible real wordmark in the widget header. */
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand,
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark,
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark strong,
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark small{display:grid!important;visibility:visible!important;opacity:1!important}
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark strong{font-size:19px!important;line-height:1!important;letter-spacing:.15em!important}
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark small{font-size:11px!important;line-height:1.15!important;letter-spacing:.05em!important}
+
+/* The owner presentation is meant to be readable at a glance, including for
+   older users. No explanatory text on this surface drops below 11 px. */
+html body[data-coffee-release] .mc-owner .mc-owner-label,
+html body[data-coffee-release] .mc-owner .mc-owner-eyebrow,
+html body[data-coffee-release] .mc-owner .mc-owner-contact,
+html body[data-coffee-release] .mc-owner .mc-owner-demo-card small,
+html body[data-coffee-release] .mc-owner .mc-owner-demo-card p,
+html body[data-coffee-release] .mc-owner .mc-owner-demo-card li,
+html body[data-coffee-release] .mc-owner .mc-owner-demo-card li i,
+html body[data-coffee-release] .mc-owner .mc-owner-benefits b,
+html body[data-coffee-release] .mc-owner .mc-owner-benefits small,
+html body[data-coffee-release] .mc-owner .mc-owner-foot,
+html body[data-coffee-release] .mc-owner .mc-owner-wordmark small{font-size:11px!important}
+
+/* Víťazov / Concept question markup has the heading and option grid as siblings.
+   The earlier flex rule gave the heading 100% height and forced a 1000px pane.
+   Keep the heading auto-sized and let the 2x2 grid consume the remaining space. */
+html body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-card)),
+html body[data-coffee-release="concept"] #advisorBody:not(:has(.result-card)){
+  height:100%!important;min-height:0!important;display:grid!important;grid-template-rows:auto minmax(0,1fr)!important;overflow:hidden!important;padding:10px 12px 12px!important
+}
+html body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-card)) .question,
+html body[data-coffee-release="concept"] #advisorBody:not(:has(.result-card)) .question{
+  height:auto!important;min-height:0!important;display:grid!important;margin:0 0 8px!important;align-content:start!important
+}
+html body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-card)) .options,
+html body[data-coffee-release="concept"] #advisorBody:not(:has(.result-card)) .options{
+  height:100%!important;min-height:0!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;gap:8px!important;overflow:hidden!important
+}
+html body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-card)) .option,
+html body[data-coffee-release="concept"] #advisorBody:not(:has(.result-card)) .option{
+  height:100%!important;min-height:0!important;padding:8px 10px!important;border-radius:18px!important
+}
+html body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-card)) .option__copy b,
+html body[data-coffee-release="concept"] #advisorBody:not(:has(.result-card)) .option__copy b{font-size:12.5px!important}
+html body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-card)) .option__copy small,
+html body[data-coffee-release="concept"] #advisorBody:not(:has(.result-card)) .option__copy small{font-size:11px!important}
+
+/* Preserve the user's already-good Victory layout; only the typing field changes. */
+html body[data-coffee-release="vitazov"] #widget #chatInput{font-size:13px!important;line-height:1.35!important}
