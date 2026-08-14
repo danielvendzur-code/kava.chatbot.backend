@@ -1,0 +1,280 @@
+/* Routed coffee demos must stay light. Jolka does not load this file. */
+body[data-demo="praziarnicka"]{--nb-accent:#d86c38;--nb-strong:#b94f24;--nb-soft:#fff4ec;--nb-soft-2:#fffaf6;--nb-line:#efd6c8;--nb-ink:#17120f}
+body[data-demo="diamonds"]{--nb-accent:#9ac51f;--nb-strong:#6f9414;--nb-soft:#f3f8e7;--nb-soft-2:#fbfdf6;--nb-line:#d9e6b4;--nb-ink:#151a10}
+body[data-demo="kaffa"]{--nb-accent:#5ca6b8;--nb-strong:#347f92;--nb-soft:#edf7f8;--nb-soft-2:#f9fcfc;--nb-line:#cfe7ec;--nb-ink:#151817}
+body[data-demo="vitazov"]{--nb-accent:#7eb33c;--nb-strong:#568226;--nb-soft:#f0f7e7;--nb-soft-2:#fbfdf8;--nb-line:#d7e8c1;--nb-ink:#102019}
+body[data-demo="concept"]{--nb-accent:#df6345;--nb-strong:#ba4931;--nb-soft:#fff1eb;--nb-soft-2:#fffaf7;--nb-line:#f2d3c8;--nb-ink:#1c1816}
+
+body[data-demo]{background:#fff!important;color:var(--nb-ink)!important}
+body[data-demo] .demo-page,
+body[data-demo] .diamonds-page,
+body[data-demo] .concept-page,
+body[data-demo] .kf-shell,
+body[data-demo] .pz-page{background:#fff!important}
+
+/* Owner CTAs: brand color, never black. */
+body[data-demo] .primary-action,
+body[data-demo] .button-primary,
+body[data-demo] .kf-primary,
+body[data-demo] .pz-primary{
+  color:#fff!important;
+  background:var(--nb-strong)!important;
+  border-color:var(--nb-strong)!important;
+  box-shadow:0 16px 34px -26px color-mix(in srgb,var(--nb-strong) 70%,transparent)!important;
+}
+body[data-demo] .primary-action:hover,
+body[data-demo] .button-primary:hover,
+body[data-demo] .kf-primary:hover,
+body[data-demo] .pz-primary:hover{background:var(--nb-accent)!important;border-color:var(--nb-accent)!important}
+
+/* Floating launchers: light branded controls. */
+body[data-demo] .launcher-button,
+body[data-demo] .launcher__button,
+body[data-demo] .pz-launcher,
+body[data-demo] .kf-launcher{
+  color:var(--nb-strong)!important;
+  background:var(--nb-soft-2)!important;
+  border:2px solid var(--nb-accent)!important;
+  box-shadow:0 18px 38px -26px rgba(20,20,20,.35)!important;
+}
+body[data-demo] .launcher-button:hover,
+body[data-demo] .launcher__button:hover,
+body[data-demo] .pz-launcher:hover,
+body[data-demo] .kf-launcher:hover{background:var(--nb-soft)!important}
+body[data-demo="kaffa"] .kf-launcher::before{color:var(--nb-strong)!important}
+
+/* The widget shell, header, stage and chat are all light. */
+body[data-demo] .widget,
+body[data-demo] .pz-widget,
+body[data-demo] .kf-panel{
+  color:var(--nb-ink)!important;
+  background:#fff!important;
+  border-color:var(--nb-line)!important;
+  box-shadow:0 30px 70px -40px rgba(22,28,24,.42)!important;
+}
+body[data-demo] .widget__header,
+body[data-demo] .widget-head,
+body[data-demo] .pz-widget-head,
+body[data-demo] .kf-panel-head{
+  color:var(--nb-ink)!important;
+  background:var(--nb-soft-2)!important;
+  border-color:var(--nb-line)!important;
+}
+body[data-demo] .widget__header *,
+body[data-demo] .widget-head *,
+body[data-demo] .pz-widget-head *,
+body[data-demo] .kf-panel-head *{color:inherit}
+body[data-demo] .widget-actions button,
+body[data-demo] .head-actions button,
+body[data-demo] .pz-icon-btn,
+body[data-demo] .kf-icon-btn{
+  color:var(--nb-ink)!important;
+  background:#fff!important;
+  border-color:var(--nb-line)!important;
+}
+body[data-demo] .stage,
+body[data-demo] .widget-stage,
+body[data-demo] .screen,
+body[data-demo] .chat-screen,
+body[data-demo] #chatScreen,
+body[data-demo] .chat,
+body[data-demo] .chat-messages,
+body[data-demo] .pz-view,
+body[data-demo] .pz-chat-panel,
+body[data-demo] .pz-chat-scroll,
+body[data-demo] .kf-view,
+body[data-demo] .kf-chat,
+body[data-demo] .kf-messages,
+body[data-demo] .advisor-screen,
+body[data-demo] .pz-advisor-panel,
+body[data-demo] .kf-advisor{
+  color:var(--nb-ink)!important;
+  background:#fff!important;
+}
+
+/* Switches: white rail, brand selected state. */
+body[data-demo] .mode,
+body[data-demo] .mode-switch,
+body[data-demo] .pz-mode,
+body[data-demo] .kf-switch{
+  color:var(--nb-ink)!important;
+  background:var(--nb-soft)!important;
+  border-color:var(--nb-line)!important;
+}
+body[data-demo] .mode__indicator,
+body[data-demo] .pz-mode-indicator{background:var(--nb-accent)!important}
+body[data-demo] .mode__button,
+body[data-demo] .mode-switch button,
+body[data-demo] .pz-mode-btn,
+body[data-demo] .kf-switch button{color:var(--nb-ink)!important;background:transparent!important}
+body[data-demo] .mode__button.is-active,
+body[data-demo] .mode-switch button.is-active,
+body[data-demo] .pz-mode-btn.is-selected,
+body[data-demo] .kf-switch button[aria-selected="true"]{
+  color:var(--nb-ink)!important;
+  background:var(--nb-accent)!important;
+}
+
+/* Advisor entry: highlighted without a black block. */
+body[data-demo] .advisor-entry,
+body[data-demo] .pz-advisor-cta,
+body[data-demo] .kf-advisor-entry{
+  color:var(--nb-ink)!important;
+  background:var(--nb-soft)!important;
+  border:1px solid var(--nb-line)!important;
+  box-shadow:none!important;
+}
+body[data-demo] .advisor-entry b,
+body[data-demo] .advisor-entry em,
+body[data-demo] .advisor-entry span,
+body[data-demo] .pz-advisor-cta b,
+body[data-demo] .pz-advisor-cta small,
+body[data-demo] .kf-advisor-entry__copy b,
+body[data-demo] .kf-advisor-entry__copy small,
+body[data-demo] .kf-advisor-entry__copy span{color:var(--nb-ink)!important}
+body[data-demo] .advisor-entry:hover,
+body[data-demo] .pz-advisor-cta:hover,
+body[data-demo] .kf-advisor-entry:hover{background:color-mix(in srgb,var(--nb-accent) 23%,white)!important}
+body[data-demo="vitazov"] #chatScreen .advisor-entry,
+body[data-demo="vitazov"] #chatScreen .advisor-entry:hover{
+  color:var(--nb-ink)!important;
+  background:var(--nb-soft)!important;
+  border-color:var(--nb-line)!important;
+}
+body[data-demo="vitazov"] #chatScreen .advisor-entry b,
+body[data-demo="vitazov"] #chatScreen .advisor-entry em{color:var(--nb-ink)!important}
+body[data-demo="vitazov"] #chatScreen .advisor-entry>span:first-child{color:var(--nb-strong)!important;background:#fff!important}
+body[data-demo="vitazov"] #chatScreen .advisor-entry>svg{color:var(--nb-strong)!important}
+
+/* Messages: assistant = soft card, customer = brand color. */
+body[data-demo] .message:not(.message--user) .bubble,
+body[data-demo] .chat-line:not(.chat-line--user) .chat-bubble,
+body[data-demo] .pz-bubble-assistant,
+body[data-demo] .kf-message.bot{
+  color:var(--nb-ink)!important;
+  background:var(--nb-soft)!important;
+  border:1px solid var(--nb-line)!important;
+  opacity:1!important;
+}
+body[data-demo] .message--user .bubble,
+body[data-demo] .chat-line--user .chat-bubble,
+body[data-demo] .pz-bubble-user,
+body[data-demo] .kf-message.user{
+  color:#fff!important;
+  background:var(--nb-strong)!important;
+  border-color:var(--nb-strong)!important;
+  opacity:1!important;
+}
+body[data-demo] .diamonds-time,
+body[data-demo] .mc-timestamp,
+body[data-demo] .pz-message-stack time{color:color-mix(in srgb,var(--nb-ink) 52%,transparent)!important}
+
+/* Chips/composers remain light; send buttons use brand color. */
+body[data-demo] .chip,
+body[data-demo] .quick-grid button,
+body[data-demo] .pz-chip,
+body[data-demo] .kf-chip{
+  color:var(--nb-ink)!important;
+  background:var(--nb-soft)!important;
+  border-color:var(--nb-line)!important;
+}
+body[data-demo] .chip:hover,
+body[data-demo] .quick-grid button:hover,
+body[data-demo] .pz-chip:hover,
+body[data-demo] .kf-chip:hover{background:color-mix(in srgb,var(--nb-accent) 26%,white)!important}
+body[data-demo] .composer,
+body[data-demo] .composer__shell,
+body[data-demo] .pz-composer,
+body[data-demo] .kf-composer{
+  color:var(--nb-ink)!important;
+  background:#fff!important;
+  border-color:var(--nb-line)!important;
+}
+body[data-demo] .composer input,
+body[data-demo] .composer__shell input,
+body[data-demo] .pz-composer input,
+body[data-demo] .kf-composer input{color:var(--nb-ink)!important;background:#fff!important}
+body[data-demo] .composer button,
+body[data-demo] .composer__send,
+body[data-demo] .pz-send,
+body[data-demo] .kf-send{
+  color:#fff!important;
+  background:var(--nb-strong)!important;
+  border-color:var(--nb-strong)!important;
+}
+
+/* Configurator and result areas also stay light. */
+body[data-demo] .advisor,
+body[data-demo] .advisor-content,
+body[data-demo] .question-view,
+body[data-demo] .result-view,
+body[data-demo] .pz-advisor-scroll,
+body[data-demo] .pz-result,
+body[data-demo] .pz-result-scroll,
+body[data-demo] .kf-question,
+body[data-demo] .kf-result{
+  color:var(--nb-ink)!important;
+  background:#fff!important;
+}
+body[data-demo] .option,
+body[data-demo] .answer-card,
+body[data-demo] .pz-option,
+body[data-demo] .kf-option,
+body[data-demo] .result-card,
+body[data-demo] .pz-result-card,
+body[data-demo] .kf-result-hero,
+body[data-demo] .alternative,
+body[data-demo] .pz-alternative,
+body[data-demo] .kf-alternative{
+  color:var(--nb-ink)!important;
+  background:var(--nb-soft-2)!important;
+  border-color:var(--nb-line)!important;
+}
+body[data-demo] .option.is-selected,
+body[data-demo] .answer-card.is-selected,
+body[data-demo] .pz-option.is-selected,
+body[data-demo] .kf-option.is-selected{border-color:var(--nb-accent)!important;box-shadow:0 0 0 2px color-mix(in srgb,var(--nb-accent) 20%,transparent)!important}
+
+/* Result commerce buttons also use the brand, not black. */
+body[data-demo] .result-cta,
+body[data-demo] .kf-result-cta,
+body[data-demo] .pz-product-cta,
+body[data-demo] .diamonds-add,
+body[data-demo] .kv-final-add,
+body[data-demo] .kf-final-add{
+  color:#fff!important;
+  background:var(--nb-strong)!important;
+  border-color:var(--nb-strong)!important;
+}
+
+/* Explicitly remove the dark overrides introduced by earlier visual QA. */
+body[data-demo="diamonds"] #chatScreen,
+body[data-demo="diamonds"] #chatScreen .chat-messages,
+body[data-demo="kaffa"] .kf-chat,
+body[data-demo="kaffa"] .kf-message.bot,
+body[data-demo="kaffa"] .kf-message.user{background-color:initial}
+body[data-demo="diamonds"] #chatScreen{background:#fff!important}
+body[data-demo="diamonds"] #chatScreen .chat-messages{background:#fff!important}
+body[data-demo="kaffa"] .kf-chat{background:#fff!important}
+body[data-demo="kaffa"] .kf-message.bot{background:var(--nb-soft)!important}
+body[data-demo="kaffa"] .kf-message.user{background:var(--nb-strong)!important}
+
+/* Preview invitations stay white and readable. */
+body[data-demo] .teaser,
+body[data-demo] .launcher__teaser,
+body[data-demo] .launcher-teaser,
+body[data-demo] .pz-preview,
+body[data-demo] .kf-teaser{
+  color:var(--nb-ink)!important;
+  background:#fff!important;
+  border-color:var(--nb-line)!important;
+}
+body[data-demo] .teaser span,
+body[data-demo] .launcher__teaser span,
+body[data-demo] .launcher-teaser span,
+body[data-demo] .pz-preview span,
+body[data-demo] .kf-teaser span{color:color-mix(in srgb,var(--nb-ink) 64%,transparent)!important;font-size:11px!important}
+
+@media(max-width:760px){
+  body[data-demo] .widget,body[data-demo] .pz-widget,body[data-demo] .kf-panel{background:#fff!important}
+}

@@ -4,21 +4,27 @@ import { readFile, stat } from 'node:fs/promises';
 
 const root = new URL('../', import.meta.url);
 const read = (name) => readFile(new URL(name, root), 'utf8');
-const [index, core, config, overrides, brand, css] = await Promise.all([
-  read('index.html'),
+const [router, core, config, overrides, brand, css] = await Promise.all([
+  read('coffee-final-entry.js'),
   read('coffee-v8.js'),
   read('coffee-configs.js'),
-  read('coffee-brand-overrides.js'),
+  read('coffee-vitazov-overrides.js'),
   read('coffee-vitazov-brand.js'),
   read('coffee-v8-vitazov.css'),
 ]);
+
+test('final router loads the dedicated Kava Vitazov layers', () => {
+  assert.match(router, /Káva Víťazov – kávový poradca/);
+  assert.match(router, /coffee-vitazov-overrides\.js/);
+  assert.match(router, /coffee-vitazov-brand\.js/);
+  assert.match(router, /coffee-vitazov-final\.js/);
+});
 
 test('landing copy is customer-facing and uses plain language', () => {
   assert.match(overrides, /Káva, ktorú si zákazník vyberie s istotou\./);
   assert.match(overrides, /Jednoduchý výber/);
   assert.match(overrides, /Pomoc 24\/7/);
   assert.doesNotMatch(overrides, /návrhu AI|personalizovaná ukážka|neoficiálna/i);
-  assert.doesNotMatch(index, /neoficiálna|ukážka/i);
 });
 
 test('chat uses compact full-width entry, centered text chips and no self promo', () => {
