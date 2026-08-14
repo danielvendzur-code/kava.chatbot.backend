@@ -5,16 +5,29 @@
 
   const ensureKaffaBrand = () => {
     const head = document.querySelector('.kf-panel-head');
-    if (!head) return;
-    let brand = head.querySelector('.kf-widget-brand');
-    if (!brand) {
-      brand = document.createElement('div');
-      brand.className = 'kf-widget-brand';
-      head.prepend(brand);
+    if (head) {
+      let brand = head.querySelector('.kf-widget-brand');
+      if (!brand) {
+        brand = document.createElement('div');
+        brand.className = 'kf-widget-brand';
+        head.prepend(brand);
+      }
+      if (!brand.querySelector('.kf-wordmark')) {
+        brand.insertAdjacentHTML('afterbegin', '<span class="kf-wordmark" aria-label="Kaffa Roastery"><strong>KAFFA</strong><small>speciality coffee beans</small></span>');
+      }
     }
-    if (!brand.querySelector('.kf-wordmark')) {
-      brand.insertAdjacentHTML('afterbegin', '<span class="kf-wordmark" aria-label="Kaffa Roastery"><strong>KAFFA</strong><small>speciality coffee beans</small></span>');
-    }
+
+    /* Kaffa's native switch uses data-view rather than data-mode. Keep the
+       shared owner CTA tied to the real control instead of duplicating state. */
+    document.querySelectorAll('[data-release-open="advisor"]').forEach((button) => {
+      if (button.dataset.kaffaPickerSafe === 'true') return;
+      button.dataset.kaffaPickerSafe = 'true';
+      button.addEventListener('click', () => {
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          document.querySelector('.kf-switch button[data-view="advisor"]')?.click();
+        }));
+      });
+    });
   };
 
   let queued = false;
