@@ -5,7 +5,7 @@
 
   const ensureKaffaBrand = () => {
     const head = document.querySelector('.kf-panel-head');
-    if (!head) return false;
+    if (!head) return;
     let brand = head.querySelector('.kf-widget-brand');
     if (!brand) {
       brand = document.createElement('div');
@@ -15,12 +15,18 @@
     if (!brand.querySelector('.kf-wordmark')) {
       brand.insertAdjacentHTML('afterbegin', '<span class="kf-wordmark" aria-label="Kaffa Roastery"><strong>KAFFA</strong><small>speciality coffee beans</small></span>');
     }
-    return true;
   };
 
-  if (ensureKaffaBrand()) return;
-  const observer = new MutationObserver(() => {
-    if (ensureKaffaBrand()) observer.disconnect();
-  });
-  observer.observe(document.documentElement, { childList:true, subtree:true });
+  let queued = false;
+  const sync = () => {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => {
+      queued = false;
+      ensureKaffaBrand();
+    });
+  };
+
+  ensureKaffaBrand();
+  new MutationObserver(sync).observe(document.documentElement, { childList:true, subtree:true });
 })();
