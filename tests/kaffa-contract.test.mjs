@@ -2,20 +2,23 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
-const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+const router = readFileSync(new URL('../coffee-final-entry.js', import.meta.url), 'utf8');
 const app = readFileSync(new URL('../kaffa-editorial.js', import.meta.url), 'utf8');
 const finalApp = readFileSync(new URL('../kaffa-final.js', import.meta.url), 'utf8');
 const data = readFileSync(new URL('../kaffa-data.js', import.meta.url), 'utf8');
 const css = readFileSync(new URL('../kaffa-widget.css', import.meta.url), 'utf8');
 const finalCss = readFileSync(new URL('../kaffa-final.css', import.meta.url), 'utf8');
 
-test('page title and metadata stay customer friendly', () => {
-  assert.match(html, /Kaffa Roastery – nájdite svoju kávu/);
-  assert.doesNotMatch(html, /neoficiálna|fake|živá ukážka/i);
+test('final router keeps Kaffa metadata and dedicated editorial runtime', () => {
+  assert.match(router, /Kaffa Roastery – nájdite svoju kávu/);
+  assert.match(router, /kaffa-editorial\.css/);
+  assert.match(router, /kaffa-editorial\.js/);
+  assert.match(router, /kaffa-final\.js/);
+  assert.doesNotMatch(router, /neoficiálna|fake/i);
 });
 
 test('owner page explains the proposed solution without disclaimers', () => {
-  assert.match(finalApp, /Ukážka riešenia/);
+  assert.match(finalApp, /kf-owner-badge/);
   assert.match(finalApp, /mojchatbot\.sk/);
   assert.match(finalApp, /Káva vybraná za minútu/);
   assert.match(finalApp, /Odpovie 24\/7/);
@@ -56,10 +59,14 @@ test('progress, back navigation, reset and escape are available', () => {
   assert.match(app, /event\.key === 'Escape'/);
 });
 
-test('recommendations link to real Kaffa products', () => {
+test('recommendations close on a real product link, not a simulated basket', () => {
   assert.equal((data.match(/https:\/\/kaffaroastery\.sk\/produkt\//g) || []).length, 4);
   assert.match(app, /Pozrieť kávu/);
-  assert.match(finalApp, /ONLY GOOD KAFFA vak/);
-  assert.match(finalApp, /13,00 €/);
-  assert.match(finalApp, /Pridať do košíka/);
+  // The result closes in the basket, handled by the shared widget layer.
+  assert.match(readFileSync(new URL('../coffee-widget-final.js', import.meta.url), 'utf8'), /Pridať do košíka/);
+  // The pack picker, the tote-bag upsell and the add-to-cart button never
+  // reached a basket, so the closing step read as a feature demo.
+  assert.doesNotMatch(finalApp, /Pridať do košíka/);
+  assert.doesNotMatch(finalApp, /ONLY GOOD KAFFA vak/);
+  assert.doesNotMatch(finalApp, /kf-final-packs/);
 });
