@@ -98,6 +98,8 @@
     target.dataset.releaseOwner = 'true';
     target.classList.add('mc-owner');
     target.innerHTML = ownerMarkup();
+    const primary = target.querySelector('[data-release-open="advisor"]');
+    if (primary) primary.id = normalized === 'praziarnicka' ? 'pz13-hero-open' : 'heroOpen';
     target.querySelectorAll('[data-release-open]').forEach((button) => button.addEventListener('click', () => openMode(button.dataset.releaseOpen)));
   }
 
@@ -148,8 +150,6 @@
     keepCssLast();
   }
 
-  /* The API already has a catalogue-grounded server fallback. This adds a short
-     client timeout so a slow provider can never leave the demo looking dead. */
   const upstreamFetch = window.fetch.bind(window);
   window.fetch = async (input, init) => {
     const url = typeof input === 'string' ? input : input?.url || '';
