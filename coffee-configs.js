@@ -1,23 +1,11 @@
 window.COFFEE_DEMOS = {
   praziarnicka: {
-    id: 'praziarnicka',
-    brand: 'Pražiarnička',
-    subbrand: 'by Caffè Vita',
-    ownerGreeting: 'Dobrý deň, tím Pražiarničky.',
+    id: 'praziarnicka', brand: 'Pražiarnička', subbrand: 'by Caffè Vita', ownerGreeting: 'Dobrý deň, tím Pražiarničky.',
     headline: 'Pomôžte zákazníkovi nájsť kávu, ktorá mu naozaj sadne.',
     intro: 'Poradca odpovie na otázky, vysvetlí rozdiely a cez krátky chuťový kvíz odporučí konkrétnu kávu, balenie aj mletie.',
-    primary: '#123f35',
-    accent: '#bdebd5',
-    surface: '#f7faf8',
-    shopUrl: 'https://praziarnicka.sk/eshop',
-    contactUrl: 'https://praziarnicka.sk/kontakt',
-    phone: '+421917502991',
+    primary: '#123f35', accent: '#bdebd5', surface: '#f7faf8', shopUrl: 'https://praziarnicka.sk/eshop', contactUrl: 'https://praziarnicka.sk/kontakt', phone: '+421917502991',
     welcome: 'Dobrý deň. Pomôžem vám vybrať kávu z ponuky Pražiarničky podľa chuti aj spôsobu prípravy.',
     quick: ['Káva do automatu', 'Nechcem kyslú kávu', 'Káva na cappuccino', 'Bezkofeínová'],
-    funFacts: {
-      automatic: 'Automatické kávovary zvyčajne najlepšie fungujú so stredne praženou, stabilnou kávou.',
-      fruity: 'Ovocné tóny nie sú príchuť. Prirodzene vznikajú odrodou, pôvodom a spracovaním zrna.'
-    },
     products: [
       { id:'paganini', name:'Paganini blend', origin:'75 % Arabica · 25 % Robusta', price:'od 11,90 €', prep:['automatic','lever','moka'], taste:['balanced','strong'], drink:['milk','black','both'], caffeine:['classic','either'], tags:['čokoláda','mandle','krémová'], reason:'Vyvážená zmes s plným telom, ktorá funguje ako espresso aj v mliečnych nápojoch.' },
       { id:'brazil', name:'Brazil Santos', origin:'100 % Arabica', price:'od 9,90 €', prep:['automatic','lever','moka','filter'], taste:['chocolate','balanced'], drink:['black','both'], caffeine:['classic','either'], tags:['kakao','sladká','nízka acidita'], reason:'Jemná arabica s čokoládovým profilom a nízkou aciditou. Bezpečná voľba na každý deň.' },
@@ -26,26 +14,11 @@ window.COFFEE_DEMOS = {
       { id:'decaf', name:'Bezkofeínová Brazil', origin:'100 % Arabica · bez kofeínu', price:'od 12,90 €', prep:['automatic','lever','moka','filter'], taste:['chocolate','balanced'], drink:['black','milk','both'], caffeine:['decaf'], tags:['bez kofeínu','jemná','večer'], reason:'Plnohodnotná káva bez povzbudivého účinku, vhodná aj na večernú šálku.' }
     ]
   },
-
   diamonds: {
-    id: 'diamonds',
-    brand: 'Diamonds Roastery',
-    subbrand: 'Dunajská Lužná',
-    ownerGreeting: 'Dobrý deň, tím Diamonds Roastery.',
-    headline: 'Premeňte široký výber káv na jednoduché osobné odporúčanie.',
-    intro: 'Poradca pomôže zákazníkovi zorientovať sa v pôvode, spracovaní a chuťovom profile a privedie ho ku konkrétnej káve.',
-    primary: '#152f38',
-    accent: '#c8ecdf',
-    surface: '#f6faf9',
-    shopUrl: 'https://diroastery.sk/kategoria-produktu/kava/',
-    contactUrl: 'https://diroastery.sk/kontakt/',
-    phone: '+421902900728',
-    welcome: 'Dobrý deň. Vyberieme spolu kávu z aktuálnej ponuky Diamonds Roastery podľa vašej prípravy a chutí.',
-    quick: ['Káva na filter', 'Sladká bez acidity', 'Niečo ovocné', 'Decaf'],
-    funFacts: {
-      filter: 'Pri filtri sa viac ukáže pôvod, spracovanie aj jemné chuťové rozdiely kávy.',
-      fruity: 'Svieže a ovocné profily najlepšie vyniknú pri svetlejšom pražení a filtri.'
-    },
+    id: 'diamonds', brand: 'Diamonds Roastery', subbrand: 'Dunajská Lužná', ownerGreeting: 'Dobrý deň, tím Diamonds Roastery.',
+    headline: 'Premeňte široký výber káv na jednoduché osobné odporúčanie.', intro: 'Poradca pomôže zákazníkovi zorientovať sa v pôvode, spracovaní a chuťovom profile a privedie ho ku konkrétnej káve.',
+    primary: '#152f38', accent: '#c8ecdf', surface: '#f6faf9', shopUrl: 'https://diroastery.sk/kategoria-produktu/kava/', contactUrl: 'https://diroastery.sk/kontakt/', phone: '+421902900728',
+    welcome: 'Dobrý deň. Vyberieme spolu kávu z aktuálnej ponuky Diamonds Roastery podľa vašej prípravy a chutí.', quick: ['Káva na filter', 'Sladká bez acidity', 'Niečo ovocné', 'Decaf'],
     products: [
       { id:'brazil-fazenda', name:'Brazília Fazenda Pereira', origin:'Brazília', price:'od 10,00 €', prep:['automatic','lever','moka'], taste:['chocolate','balanced'], drink:['black','milk','both'], caffeine:['classic','either'], tags:['sladká','čokoládová','klasická'], reason:'Prístupná sladká káva pre zákazníkov, ktorí chcú istotu a minimum výraznej acidity.' },
       { id:'kongo-kisunga', name:'Kongo Kisunga', origin:'Kongo', price:'od 15,00 €', prep:['filter','lever'], taste:['fruity','balanced'], drink:['black'], caffeine:['classic','either'], tags:['ovocná','sladká','filter'], reason:'Zaujímavejší profil pre zákazníka, ktorý chce v šálke objavovať pôvod a ovocné tóny.' },
@@ -54,26 +27,11 @@ window.COFFEE_DEMOS = {
       { id:'el-buho', name:'Kolumbia El Buho Decaf', origin:'Kolumbia · bez kofeínu', price:'od 14,00 €', prep:['automatic','lever','moka','filter'], taste:['balanced','chocolate'], drink:['black','milk','both'], caffeine:['decaf'], tags:['decaf','sladká','večer'], reason:'Bezkofeínová voľba, ktorá nepôsobí ako náhrada a zostáva chuťovo plná.' }
     ]
   },
-
   kaffa: {
-    id: 'kaffa',
-    brand: 'Kaffa Roastery',
-    subbrand: 'specialty coffee',
-    ownerGreeting: 'Dobrý deň, tím Kaffa Roastery.',
-    headline: 'Dajte výrazným kávam poradcu, ktorý ich vysvetlí bez odbornej bariéry.',
-    intro: 'Zákazník si vyberie podľa bežných chutí a prípravy. Poradca preloží komplexné profily do zrozumiteľného odporúčania.',
-    primary: '#182d2a',
-    accent: '#c9f0df',
-    surface: '#f7faf8',
-    shopUrl: 'https://kaffaroastery.sk/',
-    contactUrl: 'https://kaffaroastery.sk/kontakt/',
-    phone: '+421907627466',
-    welcome: 'Dobrý deň. Pomôžem vám nájsť kávu Kaffa podľa prípravy, intenzity a chuťového smeru.',
-    quick: ['Espresso blend', 'Výrazný filter', 'Ovocná káva', 'Bezkofeínová'],
-    funFacts: {
-      fruity: 'Pri výberovej káve môže byť ovocnosť intenzívna, no stále pochádza iba zo samotného zrna.',
-      lever: 'Pri espresse rozhoduje nielen káva, ale aj správne nastavenie mlynčeka a pomer vody.'
-    },
+    id: 'kaffa', brand: 'Kaffa Roastery', subbrand: 'specialty coffee', ownerGreeting: 'Dobrý deň, tím Kaffa Roastery.',
+    headline: 'Dajte výrazným kávam poradcu, ktorý ich vysvetlí bez odbornej bariéry.', intro: 'Zákazník si vyberie podľa bežných chutí a prípravy. Poradca preloží komplexné profily do zrozumiteľného odporúčania.',
+    primary: '#182d2a', accent: '#c9f0df', surface: '#f7faf8', shopUrl: 'https://kaffaroastery.sk/', contactUrl: 'https://kaffaroastery.sk/kontakt/', phone: '+421907627466',
+    welcome: 'Dobrý deň. Pomôžem vám nájsť kávu Kaffa podľa prípravy, intenzity a chuťového smeru.', quick: ['Espresso blend', 'Výrazný filter', 'Ovocná káva', 'Bezkofeínová'],
     products: [
       { id:'mokka', name:'Mokka Espresso Blend', origin:'80 % Arabica · 20 % Robusta', price:'pozrieť cenu', prep:['automatic','lever','moka'], taste:['strong','balanced'], drink:['milk','black','both'], caffeine:['classic','either'], tags:['espresso','kréma','plné telo'], reason:'Stabilný espresso blend vhodný do automatu aj pákového kávovaru a do mliečnych nápojov.' },
       { id:'quebraditas', name:'Colombia Quebraditas Peach', origin:'Kolumbia', price:'16,42 €', prep:['filter','lever'], taste:['fruity'], drink:['black'], caffeine:['classic','either'], tags:['broskyňa','ovocná','výberová'], reason:'Moderný ovocný profil pre zákazníka, ktorý chce neobyčajnú a aromatickú šálku.' },
@@ -82,54 +40,58 @@ window.COFFEE_DEMOS = {
       { id:'diviso-decaf', name:'Colombia Finca El Diviso Decaf', origin:'Kolumbia · bez kofeínu', price:'pozrieť cenu', prep:['automatic','lever','moka','filter'], taste:['balanced','fruity'], drink:['black','milk','both'], caffeine:['decaf'], tags:['decaf','Kolumbia','aromatická'], reason:'Bezkofeínová káva pre zákazníka, ktorý nechce prísť o komplexnejšiu chuť.' }
     ]
   },
-
   vitazov: {
-    id: 'vitazov',
-    brand: 'Káva Víťazov',
-    subbrand: 'Pražiareň Victory',
-    ownerGreeting: 'Dobrý deň, tím Kávy Víťazov.',
-    headline: 'Pomôžte zákazníkovi vybrať správnu kávu do domu, kancelárie aj na dobrodružstvo.',
-    intro: 'Poradca odpovie na praktické otázky a odporučí blend alebo odrodovú kávu podľa chuti, kofeínu a spôsobu prípravy.',
-    primary: '#252e29',
-    accent: '#d9edc8',
-    surface: '#f8faf6',
-    shopUrl: 'https://kavavitazov.sk/obchod/',
-    contactUrl: 'https://kavavitazov.sk/kontakt/',
-    phone: '',
-    welcome: 'Dobrý deň. Pomôžem vám vybrať Kávu Víťazov podľa toho, kde a ako ju budete piť.',
-    quick: ['Káva do kancelárie', 'Silná bez acidity', '100 % Arabica', 'Degustačný set'],
-    funFacts: {
-      automatic: 'Do kancelárskeho automatu je často lepší stabilný blend než veľmi svetlá výberová káva.',
-      strong: 'Silnejší chuťový dojem nemusí znamenať viac kofeínu. Veľa závisí od druhu zrna a receptu.'
-    },
+    id: 'vitazov', brand: 'Káva Víťazov', subbrand: 'Slovenská pražiareň · Prešov', ownerGreeting: '',
+    headline: 'Káva, ktorú si zákazník vyberie s istotou.',
+    intro: 'Poradca odpovie 24/7, zistí, kde a ako zákazník pije kávu, a odporučí konkrétny produkt.',
+    primary: '#173f35', accent: '#b8df75', surface: '#f5f7f1', ink: '#1f2522',
+    shopUrl: 'https://kavavitazov.sk/obchod/', contactUrl: 'https://kavavitazov.sk/kontakt/', businessUrl: 'https://kavavitazov.sk/kontakt/', email: 'kontakt@kavavitazov.sk', phone: '',
+    welcome: 'Dobrý deň. Pomôžem vám vybrať kávu domov, do kancelárie aj do automatu. Napíšte mi, čo máte radi.',
+    quick: ['Káva do kancelárie', 'Niečo jemné', 'Káva do mlieka', 'Bez kofeínu'],
+    benefits: [
+      ['Jednoduchý výber', 'Pár otázok a zákazník vie, po ktorej káve siahnuť.'],
+      ['Pomoc 24/7', 'Odpoveď dostane aj vtedy, keď práve nie ste online.'],
+      ['Domov aj do firmy', 'Poradca rozlíši domácnosť, automat aj kanceláriu.']
+    ],
+    previewProductId: 'office',
+    questions: [
+      { key:'use', name:'Použitie', title:'Čo dnes vyberáte?', options:[
+        ['home','Domov','Spoľahlivá káva na každý deň','home'],
+        ['office','Do kancelárie','Stabilná chuť pre viac ľudí','office'],
+        ['automatic','Do automatu','Spoľahlivá káva bez skúšania naslepo','automatic'],
+        ['discovery','Chcem skúsiť niečo nové','Ovocnejšia a zaujímavejšia chuť','discovery']
+      ]},
+      { key:'taste', name:'Chuť', title:'Ktorý smer je vám najbližší?', options:[
+        ['strong','Silná a čokoládová','Plná chuť, čokoláda a orechy','strong'],
+        ['smooth','Jemnejšia 100 % arabika','Vyvážená a hladká každodenná káva','smooth'],
+        ['fruity','Ovocnejšia a svieža','Ľahšia chuť s ovocnými tónmi','fruity'],
+        ['decaf','Bezkofeínová','Plná chuť aj bez povzbudenia','decaf']
+      ]},
+      { key:'prep', name:'Príprava', title:'V čom ju pripravujete?', options:[
+        ['automatic','Automatický kávovar','Káva jedným stlačením','automatic'],
+        ['lever','Pákový kávovar','Espresso pripravujete ručne','lever'],
+        ['moka','Moka alebo zalievanie','Výrazná domáca príprava','moka'],
+        ['filter','Filter','Prekvapkávanie, V60 alebo French press','filter']
+      ]},
+      { key:'drink', name:'Nápoj', title:'Ako ju pijete najčastejšie?', options:[
+        ['black','Čiernu','Espresso, lungo alebo filter','black'],
+        ['milk','S mliekom','Cappuccino, flat white alebo latte','milk'],
+        ['both','Striedam oboje','Potrebujete univerzálnu voľbu','both']
+      ]}
+    ],
     products: [
-      { id:'office', name:'Office Blend', origin:'50 % Arabica · 50 % Robusta', price:'od 15,90 €', prep:['automatic','lever','moka'], taste:['strong'], drink:['milk','black','both'], caffeine:['classic','either'], tags:['silná','kancelária','nízka acidita'], reason:'Plná, menej kyslá káva s vyšším obsahom kofeínu pre automat a náročné pracovné dni.' },
-      { id:'victory', name:'Victory Blend', origin:'100 % Arabica', price:'od 17,90 €', prep:['lever','moka','automatic'], taste:['balanced','chocolate'], drink:['black','both'], caffeine:['classic','either'], tags:['arabica','vyvážená','espresso'], reason:'Signature blend z arabík pre zákazníka, ktorý chce jemnejšiu a kvalitnú každodennú kávu.' },
-      { id:'brazil', name:'Brazília', origin:'100 % Arabica', price:'od 16,90 €', prep:['automatic','lever','moka','filter'], taste:['chocolate','balanced'], drink:['black','both'], caffeine:['classic','either'], tags:['čokoláda','sladká','klasika'], reason:'Prístupná brazílska arabica pre milovníkov sladších, čokoládových a menej kyslých chutí.' },
-      { id:'ethiopia', name:'Etiópia', origin:'specialty coffee · 100 % Arabica', price:'od 19,90 €', prep:['filter','lever'], taste:['fruity'], drink:['black'], caffeine:['classic','either'], tags:['ovocná','výberová','filter'], reason:'Sviežejšia výberová káva pre zákazníka, ktorý chce objavovať ovocné tóny.' },
-      { id:'decaf', name:'Bezkofeínová', origin:'100 % Arabica · decaf', price:'od 17,90 €', prep:['automatic','lever','moka','filter'], taste:['balanced','chocolate'], drink:['black','milk','both'], caffeine:['decaf'], tags:['bez kofeínu','arabica','večer'], reason:'Praktická bezkofeínová voľba na večer bez vzdania sa chuti kávy.' }
+      { id:'office', name:'Office Blend', origin:'Zmes arabiky a robusty', price:'od 15,90 €', url:'https://kavavitazov.sk/espresso-blend/', use:['office','automatic','home'], taste:['strong'], prep:['automatic','lever','moka'], drink:['milk','black','both'], tags:['čokoláda','karamel','bez výraznej kyslosti'], bestFor:'Kancelárie, automaty a ľudí, ktorí chcú výraznú kávu s vyšším obsahom kofeínu.', machines:'Automatický alebo pákový kávovar, moka kanvička.', profile:'Plná chuť, hustá pena, čokoláda, karamel a pražené orechy.', reason:'Má výraznú, menej kyslú chuť, nestratí sa v mlieku a hodí sa na každodenné pitie v kancelárii.', alternativeId:'victory' },
+      { id:'victory', name:'Victory Blend', origin:'100 % Arabica', price:'od 17,90 €', url:'https://kavavitazov.sk/blend-arabica/', use:['home','office','automatic'], taste:['smooth','strong'], prep:['automatic','lever','moka','filter'], drink:['black','both','milk'], tags:['kakao','korenie','jemná arabika'], bestFor:'Domácnosti a firmy, ktoré chcú jemnú a univerzálnu 100 % arabiku.', machines:'Pákový alebo automatický kávovar, moka kanvička aj filter.', profile:'Stredne silná chuť, kakao, korenie a jemný kvetinový záver.', reason:'Spája tri arabiky do vyváženej kávy, ktorá chutí dobre čierna aj s mliekom.', alternativeId:'brazil' },
+      { id:'brazil', name:'Brazília', origin:'100 % Arabica z Brazílie', price:'od 16,90 €', url:'https://kavavitazov.sk/kava-brazilia/', use:['home','automatic','office'], taste:['smooth','strong'], prep:['automatic','lever','moka','filter'], drink:['black','both','milk'], tags:['lieskové orechy','jemná','mierna kyslosť'], bestFor:'Ľudí, ktorí chcú jemnú arabiku bez výraznej kyslosti.', machines:'Espresso, moka kanvička aj filter.', profile:'Jemná chuť s lieskovými orechmi a ľahkou vínnou dochuťou.', reason:'Je to príjemná brazílska káva na každý deň, vhodná aj pre ľudí, ktorí nechcú ovocnú chuť.', alternativeId:'victory' },
+      { id:'ethiopia', name:'Etiópia', origin:'100 % Arabica z Etiópie', price:'od 19,90 €', url:'https://kavavitazov.sk/prazena-kava-etiopia/', use:['discovery','home'], taste:['fruity'], prep:['filter','lever'], drink:['black'], tags:['višňa','korenistá','ovocná'], bestFor:'Ľudí, ktorí chcú skúsiť ovocnejšiu a voňavejšiu kávu.', machines:'Najlepšie na filter, vhodná aj na espresso alebo moka kanvičku.', profile:'Sladká vôňa, jemná kyslosť, korenie a višňová dochuť.', reason:'Etiópska arabika je svieža, voňavá a ukáže úplne inú stránku kávy než klasické čokoládové chute.', alternativeId:'victory' },
+      { id:'decaf', name:'Bezkofeínová', origin:'100 % Arabica bez kofeínu', price:'od 17,90 €', url:'https://kavavitazov.sk/bezkofeinova-decaf/', use:['home','office','automatic','discovery'], taste:['decaf','smooth'], prep:['automatic','lever','moka','filter'], drink:['black','milk','both'], tags:['bez kofeínu','jemná','na večer'], bestFor:'Každého, kto chce plnú chuť kávy bez bežného obsahu kofeínu.', machines:'Espresso, moka kanvička aj filter; dostupná je aj mletá.', profile:'Jemná brazílska arabika zbavená kofeínu pomocou vody.', reason:'Presne rešpektuje voľbu bez kofeínu a stále ponúkne plnú kávovú chuť.', alternativeId:'brazil' }
     ]
   },
-
   concept: {
-    id: 'concept',
-    brand: 'Concept Coffee Roasters',
-    subbrand: 'Piešťany · Bratislava',
-    ownerGreeting: 'Dobrý deň, tím Concept Coffee Roasters.',
-    headline: 'Zjednodušte objavovanie sezónnych káv bez toho, aby sa stratil ich príbeh.',
-    intro: 'Poradca premení chuťové poznámky a spôsob prípravy na osobné odporúčanie z aktuálnej ponuky.',
-    primary: '#263630',
-    accent: '#d6efdf',
-    surface: '#f8faf8',
-    shopUrl: 'https://www.conceptcoffee.sk/',
-    contactUrl: 'https://www.conceptcoffee.sk/kontakty/',
-    phone: '',
-    welcome: 'Dobrý deň. Pomôžem vám zorientovať sa v aktuálnych kávach Concept podľa chuti a prípravy.',
-    quick: ['Káva na filter', 'Sladké espresso', 'Niečo ovocné', 'Chcem novinku'],
-    funFacts: {
-      filter: 'Pri filtri vynikne čistota a aróma, pri espresse zasa telo a intenzita.',
-      fruity: 'Chuťové poznámky opisujú pripomínajúce tóny, nie pridané arómy.'
-    },
+    id: 'concept', brand: 'Concept Coffee Roasters', subbrand: 'Piešťany · Bratislava', ownerGreeting: 'Dobrý deň, tím Concept Coffee Roasters.',
+    headline: 'Zjednodušte objavovanie sezónnych káv bez toho, aby sa stratil ich príbeh.', intro: 'Poradca premení chuťové poznámky a spôsob prípravy na osobné odporúčanie z aktuálnej ponuky.',
+    primary: '#263630', accent: '#d6efdf', surface: '#f8faf8', shopUrl: 'https://www.conceptcoffee.sk/', contactUrl: 'https://www.conceptcoffee.sk/kontakty/', phone: '',
+    welcome: 'Dobrý deň. Pomôžem vám zorientovať sa v aktuálnych kávach Concept podľa chuti a prípravy.', quick: ['Káva na filter', 'Sladké espresso', 'Niečo ovocné', 'Chcem novinku'],
     products: [
       { id:'weithaga', name:'Weithaga AA – Kenya', origin:'Keňa', price:'od 15,00 €', prep:['filter'], taste:['fruity'], drink:['black'], caffeine:['classic','either'], tags:['Keňa','svieža','filter'], reason:'Svieža kenská káva pre zákazníka, ktorý chce čistú a ovocnú filtrovanú šálku.' },
       { id:'nemba', name:'Nemba – Burundi', origin:'Burundi', price:'od 15,00 €', prep:['filter','lever'], taste:['balanced','fruity'], drink:['black'], caffeine:['classic','either'], tags:['sladká','ovocná','čistá'], reason:'Vyvážená africká káva medzi sladkosťou a sviežosťou.' },
@@ -138,26 +100,11 @@ window.COFFEE_DEMOS = {
       { id:'summerjam', name:'Summerjam – Colombia', origin:'Kolumbia', price:'od 18,50 €', prep:['filter'], taste:['fruity','balanced'], drink:['black'], caffeine:['classic','either'], tags:['šťavnatá','sladká','sezónna'], reason:'Sezónna ovocná káva, ktorá zaujme sladkosťou a šťavnatosťou.' }
     ]
   },
-
   jolka: {
-    id: 'jolka',
-    brand: 'Pražiareň Jolka',
-    subbrand: 'Bratislava – Ružinov',
-    ownerGreeting: 'Dobrý deň, tím Pražiarne Jolka.',
-    headline: 'Pomôžte zákazníkovi vybrať si medzi klasikou, ovocnou výberovkou a vašimi zmesami.',
-    intro: 'Krátky poradca vysvetlí aciditu, praženie aj prípravu a odporučí konkrétnu kávu bez zdĺhavého hľadania.',
-    primary: '#3d3035',
-    accent: '#ead9df',
-    surface: '#fbf8f9',
-    shopUrl: 'https://www.praziarenjolka.sk/shop/',
-    contactUrl: 'https://www.praziarenjolka.sk/kavarien-praziaren/',
-    phone: '',
-    welcome: 'Dobrý deň. Pomôžem vám vybrať kávu Jolka podľa chuti, prípravy a toho, či chcete klasiku alebo objavovať.',
-    quick: ['Nízka acidita', 'Káva na cappuccino', 'Ovocný filter', 'Vietnam'],
-    funFacts: {
-      fruity: 'Vyššia acidita môže pôsobiť sviežo a ovocne, nie nepríjemne kyslo.',
-      milk: 'Do mlieka sa hodí káva s plnším telom, ktorá zostane chuťovo čitateľná.'
-    },
+    id: 'jolka', brand: 'Pražiareň Jolka', subbrand: 'Bratislava – Ružinov', ownerGreeting: 'Dobrý deň, tím Pražiarne Jolka.',
+    headline: 'Pomôžte zákazníkovi vybrať si medzi klasikou, ovocnou výberovkou a vašimi zmesami.', intro: 'Krátky poradca vysvetlí aciditu, praženie aj prípravu a odporučí konkrétnu kávu bez zdĺhavého hľadania.',
+    primary: '#3d3035', accent: '#ead9df', surface: '#fbf8f9', shopUrl: 'https://www.praziarenjolka.sk/shop/', contactUrl: 'https://www.praziarenjolka.sk/kavarien-praziaren/', phone: '',
+    welcome: 'Dobrý deň. Pomôžem vám vybrať kávu Jolka podľa chuti, prípravy a toho, či chcete klasiku alebo objavovať.', quick: ['Nízka acidita', 'Káva na cappuccino', 'Ovocný filter', 'Vietnam'],
     products: [
       { id:'zmes-jolka', name:'Zmes Jolka', origin:'Arabica blend · 20 % Robusta', price:'od 5,90 €', prep:['automatic','lever','moka'], taste:['strong','chocolate'], drink:['milk','black','both'], caffeine:['classic','either'], tags:['čokoláda','orechy','nízka acidita'], reason:'House blend s vyšším kofeínom a nízkou aciditou, vhodný na espresso aj cappuccino.' },
       { id:'zmes-cokolada', name:'Zmes Čokoláda', origin:'house blend', price:'od 5,90 €', prep:['automatic','lever','moka'], taste:['chocolate','balanced'], drink:['milk','black','both'], caffeine:['classic','either'], tags:['čokoládová','sladká','klasika'], reason:'Prístupná čokoládová voľba pre zákazníka, ktorý nechce výraznú ovocnosť.' },
