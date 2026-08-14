@@ -17,6 +17,7 @@ async function openDemo(page, demo, viewport = { width:1366, height:768 }) {
   await page.setViewportSize(viewport);
   await page.goto(demo.path ? `${baseURL}${demo.path}` : `${baseURL}/?demo=${demo.slug}`, { waitUntil:'networkidle' });
   await page.waitForFunction(() => document.documentElement.dataset.coffeeRelease === '2026-08-final');
+  await page.waitForFunction(() => document.querySelector('.mc-owner')?.dataset.ownerConversion === 'ready');
   await page.waitForTimeout(120);
 }
 
@@ -30,22 +31,44 @@ async function noOverflow(locator, tolerance = 3) {
   }), tolerance);
 }
 
-test('all six owner pages are unified, company-helpful and AI-free', async ({ page }) => {
+test('all six owner pages sell the solution clearly without AI/demo language', async ({ page }) => {
   for (const demo of demos) {
     await openDemo(page, demo);
     const owner = page.locator('.mc-owner');
     await expect(owner).toBeVisible();
-    await expect(owner).toContainText('Menej otázok');
-    await expect(owner).toContainText('Jednoduchší výber kávy');
-    await expect(owner).toContainText('Otvoriť Výber kávy');
-    await expect(owner).toContainText('Pozrieť Chat');
-    await expect(owner.locator('a[href*="mojchatbot.sk/kontakt"]').first()).toBeVisible();
+    await expect(owner).toContainText('Zákazník sa nezasekne');
+    await expect(owner).toContainText('Dostane sa ku konkrétnej káve');
+    await expect(owner).toContainText('Vyskúšať Výber kávy');
+    await expect(owner).toContainText('Skúsiť Chat');
+    await expect(owner).toContainText('2spôsoby pomoci');
+    await expect(owner).toContainText('4krátke kroky');
+    await expect(owner).toContainText('1konkrétny produkt');
+    await expect(owner.locator('.mc-owner-head-cta[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
+    await expect(owner.locator('.mc-owner-contact[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
     const text = await owner.innerText();
     expect(text).not.toMatch(/Návrh AI|umelá inteligencia|overen[áou]\s+\d|match|zhoda\s*·\s*\d+\s*%/i);
     const pageMetrics = await page.evaluate(() => ({ h:document.scrollingElement.scrollHeight, ih:innerHeight, w:document.scrollingElement.scrollWidth, iw:innerWidth }));
     expect(pageMetrics.h).toBeLessThanOrEqual(pageMetrics.ih + 1);
     expect(pageMetrics.w).toBeLessThanOrEqual(pageMetrics.iw + 1);
     await page.screenshot({ path:`artifacts/release-${demo.slug}-owner.png`, fullPage:true });
+  }
+});
+
+test('owner conversion CTA and explanatory text stay readable on mobile', async ({ page }) => {
+  for (const demo of demos) {
+    await openDemo(page, demo, { width:390, height:844 });
+    const owner = page.locator('.mc-owner');
+    await expect(owner.locator('.mc-owner-head-cta')).toBeVisible();
+    await expect(owner.locator('[data-release-open="advisor"]')).toBeVisible();
+    const sizes = await owner.locator('small, .mc-owner-contact, .mc-owner-head-cta, .mc-owner-actions button').evaluateAll((nodes) =>
+      nodes.filter((node) => {
+        const style = getComputedStyle(node);
+        return style.display !== 'none' && style.visibility !== 'hidden';
+      }).map((node) => parseFloat(getComputedStyle(node).fontSize))
+    );
+    expect(Math.min(...sizes)).toBeGreaterThanOrEqual(11);
+    const metrics = await page.evaluate(() => ({ w:document.scrollingElement.scrollWidth, iw:innerWidth }));
+    expect(metrics.w).toBeLessThanOrEqual(metrics.iw + 1);
   }
 });
 
