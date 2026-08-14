@@ -1,3 +1,24 @@
-/* Keep proven readable controls where the shared release layer is intentionally more compact. */
+/* Preserve proven readable controls and make closed dialogs truly non-interactive. */
 body[data-coffee-release="vitazov"] #quickChips .chip{font-size:13px!important;min-height:40px!important}
 body[data-coffee-release="jolka"] #chips .chip{font-size:12.5px!important;min-height:44px!important}
+
+/* A closed transformed dialog must never sit above the launcher and steal taps. */
+html body[data-coffee-release] #widget[aria-hidden="true"],
+html body[data-coffee-release] #pz13-widget[aria-hidden="true"],
+html body[data-coffee-release] .kf-widget[aria-hidden="true"]{pointer-events:none!important;visibility:hidden!important}
+html body[data-coffee-release] #widget[aria-hidden="false"],
+html body[data-coffee-release] #pz13-widget[aria-hidden="false"],
+html body[data-coffee-release] .kf-widget[aria-hidden="false"]{pointer-events:auto!important;visibility:visible!important}
+
+/* Pražiarnička: never let the owner page bleed through the conversation. */
+html body[data-coffee-release="praziarnicka"] #pz13-widget,
+html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-stage,
+html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-chat,
+html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-chat__messages,
+html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-chat__bottom{background:#fff!important;opacity:1!important}
+
+/* Diamonds and Kaffa use light opaque work surfaces too. */
+html body[data-coffee-release="diamonds"] #widget .widget-stage,
+html body[data-coffee-release="diamonds"] #widget .screen,
+html body[data-coffee-release="kaffa"] #widget .kf-panel,
+html body[data-coffee-release="kaffa"] #widget .kf-view{background:#fff!important;opacity:1!important}
