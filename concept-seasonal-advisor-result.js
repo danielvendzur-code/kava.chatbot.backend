@@ -36,35 +36,11 @@
           <div class="result-photo"><img src="${escapeHTML(image)}" width="1024" height="1024" alt="Produktová fotografia ${escapeHTML(product.name)}"></div>
           <div class="result-main__copy"><small>${escapeHTML(product.country)} · ${escapeHTML(product.process)}</small><h3>${escapeHTML(product.name)}</h3><p>${escapeHTML(product.plainTaste)}</p><div class="taste-tags">${product.tags.slice(0, 3).map((tag) => `<span>${escapeHTML(tag)}</span>`).join('')}</div></div>
         </div>
-        <div class="result-packs"><span><small>Balenie</small><b>Vyberte veľkosť</b></span><div>${product.packages.map((pack) => `<button class="result-pack ${app.state.packageGrams === pack.grams ? 'is-selected' : ''}" type="button" data-grams="${pack.grams}"><b>${packLabel(pack.grams)}</b><small>${packPrice(pack.price)}</small></button>`).join('')}</div></div>
-        <button class="concept-upsell ${app.state.addon ? 'is-selected' : ''}" id="conceptAddon" type="button" aria-pressed="${app.state.addon}"><span class="concept-upsell__photos"><img src="/assets/concept/product-weithaga.jpg" alt=""><img src="/assets/concept/product-berry-blast.jpg" alt=""></span><span class="concept-upsell__copy"><small>Pridať navyše</small><b>Ochutnávková dvojica</b><span>2 sezónne kávy · 2 × 250 g</span></span><i>${app.state.addon ? icons.check : '+'}</i></button>
-        <div class="result-actions"><button class="result-button result-button--primary ${app.state.inCart ? 'is-added' : ''}" id="conceptAddCart" type="button">${app.state.inCart ? `${icons.check} Pridané do košíka` : `${icons.upsell} Pridať ${packLabel(selectedPack.grams)} do košíka`}</button><button class="result-button" id="customizePack" type="button">Mletie</button></div>
-        ${app.state.inCart ? `<div class="concept-cart"><span>${escapeHTML(product.name)} · ${packLabel(selectedPack.grams)}${app.state.addon ? ' + ochutnávková dvojica' : ''}</span><a href="${escapeHTML(product.url)}" target="_blank" rel="noreferrer">Otvoriť produkt ↗</a></div>` : ''}
+        <div class="result-price"><b>${escapeHTML(packPrice(selectedPack.price))}</b><span>/ ${escapeHTML(packLabel(selectedPack.grams))}</span></div>
+        <div class="result-actions"><a class="result-cta" href="${escapeHTML(product.url)}" target="_blank" rel="noreferrer">Pozrieť produkt v e-shope <span aria-hidden="true">\u2197</span></a></div>
         ${alternative ? `<button class="alternative" type="button" data-product="${escapeHTML(alternative.id)}"><span class="alternative__main"><img src="${escapeHTML(alternativeImage)}" alt=""><span><small>Ďalšia dobrá voľba</small><b>${escapeHTML(alternative.name)}</b></span><i>${icons.arrow}</i></span></button>` : ''}
         <button class="result-restart" id="restartResult" type="button">Zmeniť odpovede</button>
       </section>`;
-    $$('.result-pack', advisor).forEach((button) => button.addEventListener('click', () => {
-      app.state.packageGrams = Number(button.dataset.grams);
-      app.state.inCart = false;
-      persist();
-      renderResult();
-    }));
-    $('#conceptAddon').addEventListener('click', () => {
-      app.state.addon = !app.state.addon;
-      app.state.inCart = false;
-      persist();
-      renderResult();
-    });
-    $('#conceptAddCart').addEventListener('click', () => {
-      app.state.inCart = true;
-      persist();
-      renderResult();
-    });
-    $('#customizePack').addEventListener('click', () => {
-      app.state.stage = 'package';
-      persist();
-      app.renderAdvisor();
-    });
     $('#restartResult').addEventListener('click', app.resetAdvisor);
     $('.alternative', advisor)?.addEventListener('click', (event) => {
       app.state.selectedProduct = event.currentTarget.dataset.product;

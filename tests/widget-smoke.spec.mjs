@@ -2,128 +2,300 @@ import { test, expect } from '@playwright/test';
 import fs from 'node:fs';
 
 const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
-const demos = [
-  ['praziarnicka', 'Pražiarnička'],
-  ['diamonds', 'Diamonds Roastery'],
-  ['kaffa', 'Kaffa Roastery'],
-  ['vitazov', 'Káva Víťazov'],
-  ['concept', 'Concept Coffee Roasters'],
-  ['jolka', 'Pražiareň Jolka']
-];
-
 fs.mkdirSync('artifacts', { recursive: true });
+
+const demos = [
+  { slug:'praziarnicka', title:/Pražiarnička/, resource:'praziarnicka-v13.js', launcher:'#pz13-open', teaser:'#pz13-preview', teaserTitle:'#pz13-preview b', teaserSub:'#pz13-preview span', input:'#pz13-input', bot:'.pz13-message--assistant .pz13-bubble', panel:'#pz13-widget', chat:'.pz13-chat' },
+  { slug:'diamonds', title:/Diamonds Roastery/, resource:'coffee-diamonds-final.js', launcher:'#launcherButton', teaser:'#teaser', teaserTitle:'#teaser strong', teaserSub:'#teaser span', input:'#chatInput', bot:'.chat-line:not(.chat-line--user) .chat-bubble', panel:'#widget', chat:'#chatScreen' },
+  { slug:'kaffa', title:/Kaffa Roastery/, resource:'kaffa-final.js', launcher:'#launcher', teaser:'#teaser', teaserTitle:'#teaser b', teaserSub:'#teaser span', input:'#chatInput', bot:'.kf-message.bot', panel:'.kf-panel', chat:'.kf-chat' },
+  { slug:'vitazov', title:/Káva Víťazov/, resource:'coffee-vitazov-final.js', launcher:'#openWidget', teaser:'#launcherTeaser', teaserTitle:'#launcherTeaser b', teaserSub:'#launcherTeaser span', input:'#chatInput', bot:'.message:not(.message--user) .bubble', panel:'#widget', chat:'#chatScreen' },
+  { slug:'concept', title:/Concept Coffee Roasters/, resource:'concept-seasonal-init.js', launcher:'#openWidget', teaser:'#launcherTeaser', teaserTitle:'#launcherTeaser b', teaserSub:'#launcherTeaser span', input:'#chatInput', bot:'.message:not(.message--user) .bubble', panel:'#widget', chat:'#chatScreen' }
+];
 
 function watchConsole(page) {
   const failures = [];
-  page.on('console', (message) => {
-    if (message.type() === 'error') failures.push(message.text());
+  const seen = new Set();
+  const add = value => { if (!seen.has(value)) { seen.add(value); failures.push(value); } };
+  const onConsole = message => {
+    if (message.type() !== 'error') return;
+    const location = message.location();
+    add(`console: ${message.text()}${location?.url ? ` @ ${location.url}` : ''}`);
+  };
+  const onPageError = error => add(`pageerror: ${error.message}`);
+  const onResponse = response => { if (response.status() >= 400) add(`http ${response.status()}: ${response.url()}`); };
+  const onRequestFailed = request => add(`request failed: ${request.url()} :: ${request.failure()?.errorText || 'unknown'}`);
+  page.on('console', onConsole);
+  page.on('pageerror', onPageError);
+  page.on('response', onResponse);
+  page.on('requestfailed', onRequestFailed);
+  return { failures, stop(){ page.off('console', onConsole); page.off('pageerror', onPageError); page.off('response', onResponse); page.off('requestfailed', onRequestFailed); } };
+}
+
+async function waitForDemo(page, slug) {
+  await page.waitForFunction(() => {
+    const pz = document.querySelector('#praziarnicka-root');
+    const shared = document.querySelector('#coffee-demo-root');
+    return Boolean((pz && pz.childElementCount) || (shared && shared.childElementCount));
   });
-  page.on('pageerror', (error) => failures.push(error.message));
-  return failures;
+  if (slug === 'praziarnicka') {
+    await page.waitForFunction(() => document.documentElement.dataset.demoReady === 'true');
+  } else {
+    await page.waitForFunction(() => document.documentElement.dataset.jolkaParity === 'ready');
+  }
+  await page.waitForTimeout(160);
 }
 
-async function openAdvisor(page) {
-  await page.locator('#openWidget').click();
-  await expect(page.locator('#widget')).toHaveClass(/is-open/);
-  await page.locator('[data-mode="advisor"]').click();
-  await expect(page.locator('#advisorScreen')).toHaveClass(/is-active/);
+async function px(locator, property) {
+  return locator.evaluate((node, prop) => parseFloat(getComputedStyle(node)[prop]), property);
 }
 
-async function choose(page, value, nextStep) {
-  const option = page.locator(`.option[data-value="${value}"]`);
-  const title = option.locator('.option__copy b');
-  const text = (await title.textContent()).trim();
-  await option.click();
-  await expect(option).toHaveClass(/is-selected/);
-  await expect(title).toBeVisible();
-  await expect(title).toHaveText(text);
-  await page.waitForTimeout(720);
-  if (nextStep) await expect(page.locator('#stepLabel')).toHaveText(nextStep);
+async function effectiveBackground(locator) {
+  return locator.evaluate(node => {
+    let current = node;
+    while (current) {
+      const value = getComputedStyle(current).backgroundColor;
+      if (value && value !== 'transparent' && value !== 'rgba(0, 0, 0, 0)') return value;
+      current = current.parentElement;
+    }
+    return getComputedStyle(document.body).backgroundColor;
+  });
 }
 
-test('one-screen proposal, round launcher and complete recommendation flow', async ({ page }) => {
-  const errors = watchConsole(page);
-  await page.setViewportSize({ width: 1440, height: 960 });
-  await page.goto(`${baseURL}/?demo=praziarnicka`, { waitUntil: 'networkidle' });
+function expectNotNearBlack(rgb) {
+  const values = rgb.match(/[\d.]+/g)?.slice(0, 3).map(Number) || [];
+  if (values.length === 3) expect(Math.max(...values)).toBeGreaterThan(70);
+}
 
-  await expect(page.locator('h1')).toContainText('Pomôžte zákazníkovi');
-  await expect(page.locator('.demo-benefit')).toHaveCount(3);
-  expect(await page.evaluate(() => document.documentElement.scrollHeight)).toBeLessThanOrEqual(960);
+test('all five routed demos fit 1366x768 and keep readable owner presentation', async ({ page }) => {
+  await page.setViewportSize({ width:1366, height:768 });
+  for (const demo of demos) {
+    const consoleWatch = watchConsole(page);
+    await page.goto(`${baseURL}/?demo=${demo.slug}`, { waitUntil:'networkidle' });
+    await waitForDemo(page, demo.slug);
+    await expect(page).toHaveTitle(demo.title);
 
-  const launcher = page.locator('.launcher__button');
-  const launcherBox = await launcher.boundingBox();
-  expect(Math.abs(launcherBox.width - launcherBox.height)).toBeLessThan(1);
-  await expect(launcher).toHaveCSS('border-radius', '50%');
+    const resources = await page.evaluate(() => performance.getEntriesByType('resource').map(entry => entry.name));
+    expect(resources.some(url => url.includes(demo.resource))).toBeTruthy();
+    if (demo.slug === 'praziarnicka') {
+      expect(resources.some(url => url.includes('praziarnicka-v12'))).toBeFalsy();
+      expect(resources.some(url => url.includes('coffee-jolka-parity.css'))).toBeFalsy();
+    } else {
+      expect(resources.some(url => url.includes('coffee-jolka-parity.css'))).toBeTruthy();
+    }
+    expect(resources.some(url => url.includes('coffee-no-black.css'))).toBeTruthy();
 
-  await page.waitForTimeout(1450);
-  await expect(page.locator('#launcherTeaser')).toHaveClass(/is-visible/);
-  const teaserBox = await page.locator('#launcherTeaser').boundingBox();
-  expect(teaserBox.y + teaserBox.height).toBeLessThan(launcherBox.y);
-  await page.screenshot({ path: 'artifacts/coffee-v8-desktop-landing.png', fullPage: true });
+    const metrics = await page.evaluate(() => ({
+      scrollHeight:document.scrollingElement.scrollHeight,
+      scrollWidth:document.scrollingElement.scrollWidth,
+      innerHeight:window.innerHeight,
+      innerWidth:window.innerWidth,
+      text:document.body.innerText.trim(),
+      bg:getComputedStyle(document.body).backgroundColor
+    }));
+    expect(metrics.scrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
+    expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
+    expect(metrics.text.length).toBeGreaterThan(80);
+    expect(metrics.text).not.toMatch(/Návrh AI|Vyskúšajte AI|Interaktívny návrh|Funguje s reálnou ponukou|overenou 8\. 8\. 2026/i);
+    expectNotNearBlack(metrics.bg);
 
-  await page.locator('#openWidget').click();
-  await expect(page.locator('.support-row a')).toHaveCount(3);
-  await expect(page.locator('.chips .chip')).toHaveCount(4);
-  await expect(page.locator('#widget')).toHaveCSS('border-radius', '34px');
+    if (demo.slug === 'praziarnicka') {
+      // Same two-part owner page as the routed demos, in Pražiarnička's own stack:
+      // one block about the chat, one about the picker, and the credit line.
+      const modes = page.locator('.pz13-site-mode');
+      await expect(modes.first()).toBeVisible();
+      await expect(modes).toHaveCount(2);
+      await expect(page.locator('.pz13-site-mode ol > li')).toHaveCount(4);
+      await expect(page.locator('.pz13-site-by')).toContainText('mojchatbot.sk');
+      await expect(page.locator('.pz13-flow')).toBeVisible();
+      await expect(page.locator('.parity-pz-showcase')).toHaveCount(0);
+    } else {
+      // The page is read by the roastery's owner, so it carries the advisor —
+      // what it does, how it works and who built it — and nothing pretending to
+      // be the shop they already have.
+      const modes = page.locator('.op-mode');
+      await expect(modes.first()).toBeVisible();
+      await expect(modes).toHaveCount(2);
+      await expect(page.locator('.op-asks > li')).toHaveCount(3);
+      await expect(page.locator('.op-flow > li')).toHaveCount(4);
+      await expect(page.locator('.op-by')).toContainText('mojchatbot.sk');
+      await expect(page.locator('.cs-card')).toHaveCount(0);
+      await expect(page.locator('.parity-bottom')).toHaveCount(0);
+    }
 
-  const chip = page.locator('.chip').first();
-  const chipLabel = chip.locator('span');
-  const chipText = (await chipLabel.textContent()).trim();
-  await chip.click();
-  await page.waitForTimeout(520);
-  await expect(chipLabel).toBeVisible();
-  await expect(chipLabel).toHaveText(chipText);
-  await page.screenshot({ path: 'artifacts/coffee-v8-desktop-chat.png' });
+    const launcher = page.locator(demo.launcher);
+    await expect(launcher).toBeVisible();
+    const launcherBox = await launcher.boundingBox();
+    expect(launcherBox.width).toBeGreaterThanOrEqual(68);
+    expect(launcherBox.height).toBeGreaterThanOrEqual(68);
+    expectNotNearBlack(await effectiveBackground(launcher));
 
-  await page.locator('[data-mode="advisor"]').click();
-  await expect(page.locator('.option')).toHaveCount(4);
-  await expect(page.locator('.option__photo')).toHaveCount(4);
-  const delays = await page.locator('.option').evaluateAll((nodes) => nodes.map((node) => getComputedStyle(node).animationDelay));
-  expect(new Set(delays).size).toBeGreaterThan(1);
+    const teaser = page.locator(demo.teaser);
+    await expect(teaser).toBeVisible();
+    expect(await px(page.locator(demo.teaserTitle), 'fontSize')).toBeGreaterThanOrEqual(12.5);
+    expect(await px(page.locator(demo.teaserSub), 'fontSize')).toBeGreaterThanOrEqual(10.5);
+    const teaserBox = await teaser.boundingBox();
+    expect(teaserBox.y + teaserBox.height).toBeLessThan(700);
+    expectNotNearBlack(await effectiveBackground(teaser));
 
-  await choose(page, 'automatic', '2 / 4');
-  await choose(page, 'chocolate', '3 / 4');
-  await choose(page, 'milk', '4 / 4');
-  await choose(page, 'classic', null);
-
-  await expect(page.locator('.result-card')).toBeVisible();
-  await expect(page.locator('.result-product h3')).not.toBeEmpty();
-  await page.screenshot({ path: 'artifacts/coffee-v8-desktop-result.png' });
-
-  await page.locator('#choosePack').click();
-  await page.locator('.choice-card[data-weight="500"]').click();
-  await page.locator('.grind[data-grind="espresso"]').click();
-  await expect(page.locator('#checkout')).toBeEnabled();
-  await page.locator('#checkout').click();
-  await expect(page.locator('.success h2')).toHaveText('Výber je pripravený');
-  expect(errors).toEqual([]);
-});
-
-test('all six routed demos are personalized and use the same system', async ({ page }) => {
-  for (const [slug, brand] of demos) {
-    await page.goto(`${baseURL}/?demo=${slug}`, { waitUntil: 'domcontentloaded' });
-    await expect(page.locator('.demo-brand__copy strong')).toHaveText(brand);
-    await expect(page.locator('.owner-note')).toContainText('Dobrý deň');
-    await expect(page.locator('.preview-answer strong')).not.toBeEmpty();
-    await expect(page.locator('.widget-brand__copy strong')).toHaveText(brand);
+    expect(consoleWatch.failures).toEqual([]);
+    consoleWatch.stop();
+    await page.screenshot({ path:`artifacts/final-${demo.slug}-1366x768.png`, fullPage:true });
   }
 });
 
-test('mobile widget stays rounded, opaque and does not open the keyboard', async ({ page }) => {
-  const errors = watchConsole(page);
-  await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto(`${baseURL}/?demo=jolka`, { waitUntil: 'networkidle' });
-  await openAdvisor(page);
+test('all five chats are light, visibly answer and use readable chips/bubbles', async ({ page }) => {
+  await page.setViewportSize({ width:1366, height:768 });
+  for (const demo of demos) {
+    const consoleWatch = watchConsole(page);
+    await page.goto(`${baseURL}/?demo=${demo.slug}`, { waitUntil:'networkidle' });
+    await waitForDemo(page, demo.slug);
+    await page.locator(demo.launcher).click({ force:true });
+    const input = page.locator(demo.input);
+    await expect(input).toBeVisible({ timeout:5000 });
 
-  const panelBox = await page.locator('#widget').boundingBox();
-  expect(panelBox.x).toBeGreaterThanOrEqual(7);
-  expect(panelBox.width).toBeLessThanOrEqual(375);
-  await expect(page.locator('#widget')).toHaveCSS('border-radius', '28px');
-  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
-  expect(await page.evaluate(() => document.activeElement?.id)).not.toBe('chatInput');
-  await expect(page.locator('.option')).toHaveCount(4);
-  await page.locator('.option').first().click();
-  await expect(page.locator('.option.is-selected .option__copy b')).toBeVisible();
-  await page.screenshot({ path: 'artifacts/coffee-v8-mobile-advisor.png' });
-  expect(errors).toEqual([]);
+    const panel = page.locator(demo.panel);
+    await expect(panel).toBeVisible();
+    expectNotNearBlack(await effectiveBackground(panel));
+    const chatSurface = page.locator(demo.chat);
+    await expect(chatSurface).toBeVisible();
+    expectNotNearBlack(await effectiveBackground(chatSurface));
+
+    const chips = page.locator('.pz13-chip,.pz-chip,#quickChips .chip,#quickChips button,.kf-chip').filter({ visible:true });
+    const chipCount = await chips.count();
+    expect(chipCount).toBeGreaterThanOrEqual(4);
+    const chipFont = await chips.first().evaluate(node => parseFloat(getComputedStyle(node).fontSize));
+    expect(chipFont).toBeGreaterThanOrEqual(11);
+
+    if (demo.slug === 'kaffa') {
+      const panelStyle = await panel.evaluate(node => ({ opacity:parseFloat(getComputedStyle(node).opacity), background:getComputedStyle(node).backgroundColor }));
+      expect(panelStyle.opacity).toBeGreaterThanOrEqual(.99);
+      expectNotNearBlack(panelStyle.background);
+      expect(await page.locator('.kf-widget-brand .kf-widget-title,.kf-widget-brand .kf-widget-bubble').filter({ visible:true }).count()).toBe(0);
+    }
+
+    if (demo.slug === 'praziarnicka') {
+      await expect(page.locator('.pz13-advisor-entry')).toBeVisible();
+      await expect(page.locator('.pz13-mode button')).toHaveCount(2);
+      await expect(page.locator('.pz13-mode-indicator')).toHaveCount(0);
+    }
+
+    const bots = page.locator(demo.bot);
+    const before = await bots.count();
+    await input.fill('Akú kávu do automatu?');
+    await input.press('Enter');
+    await expect.poll(async () => await bots.count(), { timeout:6000 }).toBeGreaterThan(before);
+    await expect.poll(async () => {
+      const value = (await bots.last().innerText()).trim();
+      return value.length > 20 && !/Premýšľam|Načítavam|\.\.\./i.test(value);
+    }, { timeout:6000 }).toBeTruthy();
+    const last = bots.last();
+    await expect(last).toBeVisible();
+    const bubbleMetrics = await last.evaluate(node => {
+      const style = getComputedStyle(node);
+      return { font:parseFloat(style.fontSize), bg:style.backgroundColor, color:style.color, opacity:parseFloat(style.opacity) };
+    });
+    expect(bubbleMetrics.font).toBeGreaterThanOrEqual(12);
+    expect(bubbleMetrics.opacity).toBeGreaterThanOrEqual(.95);
+    expectNotNearBlack(bubbleMetrics.bg);
+
+    if (demo.slug === 'praziarnicka') {
+      await expect(page.locator('.pz13-advisor-entry')).toHaveCount(0);
+      await expect(page.locator('.pz13-chip')).toHaveCount(0);
+      await expect(page.locator('.pz13-mode button[data-mode="advisor"]')).toBeVisible();
+    }
+
+    expect(consoleWatch.failures).toEqual([]);
+    consoleWatch.stop();
+    await page.screenshot({ path:`artifacts/final-${demo.slug}-widget.png`, fullPage:true });
+  }
+});
+
+test('Praziarnicka advisor crops one semantic sprite cell per card and has only one mode switch', async ({ page }) => {
+  await page.setViewportSize({ width:571, height:813 });
+  await page.goto(`${baseURL}/?demo=praziarnicka`, { waitUntil:'networkidle' });
+  await waitForDemo(page, 'praziarnicka');
+  await page.locator('#pz13-open').click();
+  await page.locator('.pz13-mode button[data-mode="advisor"]').click();
+  const options = page.locator('.pz13-option');
+  await expect(options).toHaveCount(4);
+  await expect(page.locator('.pz13-mode')).toHaveCount(1);
+  await expect(page.locator('.pz13-mode button')).toHaveCount(2);
+  const photos = page.locator('.pz13-option__photo');
+  await expect(photos).toHaveCount(4);
+  const styles = await photos.evaluateAll(nodes => nodes.map(node => ({ size:getComputedStyle(node).backgroundSize, position:getComputedStyle(node).backgroundPosition })));
+  for (const style of styles) expect(style.size).toBe('400% 400%');
+  expect(new Set(styles.map(style => style.position)).size).toBe(4);
+  for (const option of await options.all()) {
+    const title = option.locator('.pz13-option__copy b');
+    const description = option.locator('.pz13-option__copy small');
+    expect(await px(title, 'fontSize')).toBeGreaterThanOrEqual(11.4);
+    expect(await px(description, 'fontSize')).toBeGreaterThanOrEqual(9.7);
+    const clipped = await option.evaluate(node => node.scrollHeight > node.clientHeight + 2);
+    expect(clipped).toBeFalsy();
+  }
+  await page.screenshot({ path:'artifacts/final-praziarnicka-advisor-571x813.png', fullPage:true });
+});
+
+test('Káva Víťazov advisor uses distinct semantic photos and readable option text', async ({ page }) => {
+  await page.setViewportSize({ width:571, height:813 });
+  await page.goto(`${baseURL}/?demo=vitazov`, { waitUntil:'networkidle' });
+  await waitForDemo(page, 'vitazov');
+  await page.locator('#openWidget').click({ force:true });
+  await page.locator('#openAdvisor').click();
+  const options = page.locator('#advisorBody .option');
+  await expect(options.first()).toBeVisible();
+  expect(await options.count()).toBeGreaterThanOrEqual(4);
+  // Víťazov draws each answer from its own choice sprite. Jolka's brewing photos
+  // used to be injected over all of them, which made the taste step illustrate
+  // "čokoláda a orechy" with an espresso machine.
+  await expect(page.locator('.parity-choice-img')).toHaveCount(0);
+  const positions = await page.locator('#advisorBody .option__photo').evaluateAll((nodes) =>
+    nodes.map((node) => {
+      const style = getComputedStyle(node);
+      return `${style.backgroundImage}|${style.backgroundPosition}`;
+    })
+  );
+  expect(positions).toHaveLength(await options.count());
+  expect(positions.every((value) => value.includes('vitazov-choice-sprite'))).toBeTruthy();
+  expect(new Set(positions).size).toBeGreaterThanOrEqual(3);
+  for (const option of await options.all()) {
+    const title = option.locator('.option__copy b');
+    const description = option.locator('.option__copy small');
+    expect(await px(title, 'fontSize')).toBeGreaterThanOrEqual(11.5);
+    expect(await px(description, 'fontSize')).toBeGreaterThanOrEqual(9);
+    const clipped = await option.evaluate(node => node.scrollHeight > node.clientHeight + 2);
+    expect(clipped).toBeFalsy();
+    expectNotNearBlack(await effectiveBackground(option));
+  }
+  await page.screenshot({ path:'artifacts/final-vitazov-advisor-571x813.png', fullPage:true });
+});
+
+test('all five routed demos remain horizontally contained at 571x813', async ({ page }) => {
+  await page.setViewportSize({ width:571, height:813 });
+  for (const demo of demos) {
+    const consoleWatch = watchConsole(page);
+    await page.goto(`${baseURL}/?demo=${demo.slug}`, { waitUntil:'networkidle' });
+    await waitForDemo(page, demo.slug);
+    const metrics = await page.evaluate(() => ({ scrollWidth:document.scrollingElement.scrollWidth, innerWidth:window.innerWidth, text:document.body.innerText.trim() }));
+    expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
+    expect(metrics.text.length).toBeGreaterThan(20);
+    expect(consoleWatch.failures).toEqual([]);
+    consoleWatch.stop();
+  }
+});
+
+test('Jolka stays standalone and unchanged by the parity layer', async ({ page }) => {
+  const consoleWatch = watchConsole(page);
+  await page.setViewportSize({ width:1366, height:768 });
+  await page.goto(`${baseURL}/jolka.html`, { waitUntil:'networkidle' });
+  await page.waitForFunction(() => document.body.innerText.trim().length > 20);
+  expect(await page.locator('link[data-jolka-parity]').count()).toBe(0);
+  expect(await page.locator('script[src="/coffee-jolka-parity.js"]').count()).toBe(0);
+  expect(await page.locator('link[href="/coffee-no-black.css"]').count()).toBe(0);
+  const metrics = await page.evaluate(() => ({ scrollHeight:document.scrollingElement.scrollHeight, scrollWidth:document.scrollingElement.scrollWidth, innerHeight:window.innerHeight, innerWidth:window.innerWidth }));
+  expect(metrics.scrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
+  expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
+  expect(consoleWatch.failures).toEqual([]);
+  consoleWatch.stop();
+  await page.screenshot({ path:'artifacts/final-jolka-1366x768.png', fullPage:true });
 });

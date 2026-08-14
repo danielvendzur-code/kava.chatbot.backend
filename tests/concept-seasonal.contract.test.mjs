@@ -11,13 +11,13 @@ const [shell, core, flow, score, result, config, foundation, widget, advisor, re
   read('concept-seasonal-responsive.css'), read('concept-seasonal-chat.js'), read('concept-seasonal-init.js')
 ]);
 
-test('landing communicates customer value without preview disclaimers', () => {
-  assert.match(shell, /Každý zákazník si nájde svoju kávu\./);
-  assert.match(shell, /Jednoduchý výber/);
-  assert.match(shell, /Vhodné balenie/);
-  assert.match(shell, /Pomoc 24\/7/);
-  assert.doesNotMatch(shell, /Prirodzený upsell|baristický slovník/i);
-  assert.doesNotMatch(shell, /neofici|personalizovan|nie je súčasť|demo/i);
+test('owner landing communicates the final Concept proposal value', () => {
+  assert.match(shell, /Návrh AI chatbota pre Concept Coffee/);
+  assert.match(shell, /Sezónna káva bez zdĺhavého vyberania\./);
+  assert.match(shell, /Odpovie 24\/7/);
+  assert.match(shell, /Vyberie kávu/);
+  assert.match(shell, /Zvýši objednávku/);
+  assert.doesNotMatch(shell, /neofici|personalizovan|nie je súčasť|fake/i);
 });
 
 test('recommendation never exposes a fabricated match percentage', () => {
@@ -26,22 +26,30 @@ test('recommendation never exposes a fabricated match percentage', () => {
   assert.equal((result.match(/class="alternative"/g) || []).length, 1);
 });
 
-test('chat follows the compact product layout', () => {
+test('chat follows the compact product layout without owner branding inside the widget', () => {
   assert.match(widget, /width:min\(480px,calc\(100vw - 32px\)\)/);
   assert.match(widget, /height:min\(790px,calc\(100dvh - 32px\)\)/);
   assert.match(widget, /\.chips\{display:grid;grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/);
   assert.match(shell, /Nájsť svoju kávu/);
   assert.match(shell, /4 otázky · výsledok do minúty/);
-  assert.doesNotMatch(shell, /Môj Chatbot|mojchatbot\.sk/i);
-  assert.doesNotMatch(shell, /support-row|mailto:|tel:/);
+  const widgetMarkup = shell.slice(shell.indexOf('<section class="widget"'));
+  assert.doesNotMatch(widgetMarkup, /Môj Chatbot|mojchatbot\.sk/i);
+  assert.doesNotMatch(widgetMarkup, /support-row|mailto:|tel:/);
   assert.equal((chat.match(/function seedChat\(\)[\s\S]*?addMessage\(/g) || []).length, 1);
 });
 
-test('every advisor step uses visual choices', () => {
+test('every advisor answer is illustrated by what it means, not by a product jar', () => {
   const questionBlock = core.match(/const questions = \[[\s\S]*?\n  \];/)?.[0] || '';
   assert.equal((questionBlock.match(/photo:/g) || []).length, 14);
   assert.match(questionBlock, /prep-automatic\.webp/);
-  assert.match(questionBlock, /product-yellow-sunset\.jpg/);
+  // Taste, drink and caffeine used to reuse the same product photography, so a
+  // flavour question was answered with a picture of a tin. They now show the
+  // flavour, the drink and the time of day instead.
+  assert.match(questionBlock, /taste\/chocolate\.webp/);
+  assert.match(questionBlock, /taste\/fruity\.webp/);
+  assert.match(questionBlock, /taste\/drink-milk\.webp/);
+  assert.match(questionBlock, /taste\/caffeine-decaf\.webp/);
+  assert.doesNotMatch(questionBlock, /product-[a-z-]+\.jpg/);
 });
 
 test('selection is guarded and advances automatically once', () => {

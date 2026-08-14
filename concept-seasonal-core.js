@@ -72,28 +72,28 @@
       key: 'taste', name: 'Chuť', title: 'Ktorý chuťový smer ti sedí?',
       note: 'Bez odborných výrazov — vyber podľa toho, čo ti znie príjemne.',
       options: [
-        { value: 'chocolate', label: 'Sladké a čokoládové', description: 'Kakao, orechy a nugát', photo: '/assets/concept/product-holyshot.jpg' },
-        { value: 'balanced', label: 'Vyvážené', description: 'Sladkosť aj jemné ovocie', photo: '/assets/concept/product-weithaga.jpg' },
-        { value: 'fruity', label: 'Ovocné a svieže', description: 'Bobuľové a citrusové tóny', photo: '/assets/concept/product-berry-blast.jpg' },
-        { value: 'strong', label: 'Výrazné a netradičné', description: 'Intenzívny sezónny profil', photo: '/assets/concept/result-filter.webp' }
+        { value: 'chocolate', label: 'Sladké a čokoládové', description: 'Kakao, orechy a nugát', photo: '/assets/concept/taste/chocolate.webp' },
+        { value: 'balanced', label: 'Vyvážené', description: 'Sladkosť aj jemné ovocie', photo: '/assets/concept/taste/sweet.webp' },
+        { value: 'fruity', label: 'Ovocné a svieže', description: 'Bobuľové a citrusové tóny', photo: '/assets/concept/taste/fruity.webp' },
+        { value: 'strong', label: 'Výrazné a netradičné', description: 'Intenzívny sezónny profil', photo: '/assets/concept/taste/intense.webp' }
       ]
     },
     {
       key: 'drink', name: 'Nápoj', title: 'Piješ ju skôr čistú alebo s mliekom?',
       note: 'Mlieko zvýrazní inú časť profilu než čisté espresso alebo filter.',
       options: [
-        { value: 'black', label: 'Najčastejšie čistú', description: 'Espresso, lungo alebo filter', photo: '/assets/concept/result-filter.webp' },
-        { value: 'milk', label: 'Najčastejšie s mliekom', description: 'Cappuccino alebo flat white', photo: '/assets/concept/result-espresso.webp' },
-        { value: 'both', label: 'Striedam oboje', description: 'Univerzálnejšia voľba', photo: '/assets/concept/product-holyshot.jpg' }
+        { value: 'black', label: 'Najčastejšie čistú', description: 'Espresso, lungo alebo filter', photo: '/assets/concept/taste/drink-black.webp' },
+        { value: 'milk', label: 'Najčastejšie s mliekom', description: 'Cappuccino alebo flat white', photo: '/assets/concept/taste/drink-milk.webp' },
+        { value: 'both', label: 'Striedam oboje', description: 'Univerzálnejšia voľba', photo: '/assets/concept/taste/drink-both.webp' }
       ]
     },
     {
       key: 'caffeine', name: 'Kofeín', title: 'Chceš klasickú alebo bez kofeínu?',
       note: 'Ak na tom nezáleží, necháme rozhodnúť hlavne chuť.',
       options: [
-        { value: 'classic', label: 'Klasickú', description: 'Káva s kofeínom', photo: '/assets/concept/product-weithaga.jpg' },
-        { value: 'decaf', label: 'Bezkofeínovú', description: 'Na večer alebo pri obmedzení kofeínu', photo: '/assets/concept/product-yellow-sunset.jpg' },
-        { value: 'either', label: 'Je mi to jedno', description: 'Rozhodnúť podľa chuti', photo: '/assets/concept/result-espresso.webp' }
+        { value: 'classic', label: 'Klasickú', description: 'Káva s kofeínom', photo: '/assets/concept/taste/caffeine-classic.webp' },
+        { value: 'decaf', label: 'Bezkofeínovú', description: 'Na večer alebo pri obmedzení kofeínu', photo: '/assets/concept/taste/caffeine-decaf.webp' },
+        { value: 'either', label: 'Je mi to jedno', description: 'Rozhodnúť podľa chuti', photo: '/assets/concept/taste/caffeine-either.webp' }
       ]
     }
   ];
