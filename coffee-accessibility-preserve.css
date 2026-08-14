@@ -2,10 +2,15 @@
 body[data-coffee-release="vitazov"] #quickChips .chip{font-size:13px!important;min-height:40px!important}
 body[data-coffee-release="jolka"] #chips .chip{font-size:12.5px!important;min-height:44px!important}
 
-/* A closed transformed dialog must never sit above the launcher and steal taps. */
+/* A closed transformed dialog must never sit above the launcher and steal taps.
+   Descendants are disabled explicitly because older layers set pointer-events:auto
+   on buttons/options with !important. */
 html body[data-coffee-release] #widget[aria-hidden="true"],
+html body[data-coffee-release] #widget[aria-hidden="true"] *,
 html body[data-coffee-release] #pz13-widget[aria-hidden="true"],
-html body[data-coffee-release] .kf-widget[aria-hidden="true"]{pointer-events:none!important;visibility:hidden!important}
+html body[data-coffee-release] #pz13-widget[aria-hidden="true"] *,
+html body[data-coffee-release] .kf-widget[aria-hidden="true"],
+html body[data-coffee-release] .kf-widget[aria-hidden="true"] *{pointer-events:none!important;visibility:hidden!important}
 html body[data-coffee-release] #widget[aria-hidden="false"],
 html body[data-coffee-release] #pz13-widget[aria-hidden="false"],
 html body[data-coffee-release] .kf-widget[aria-hidden="false"]{pointer-events:auto!important;visibility:visible!important}
