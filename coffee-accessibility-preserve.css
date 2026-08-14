@@ -27,3 +27,24 @@ html body[data-coffee-release="diamonds"] #widget .widget-stage,
 html body[data-coffee-release="diamonds"] #widget .screen,
 html body[data-coffee-release="kaffa"] #widget .kf-panel,
 html body[data-coffee-release="kaffa"] #widget .kf-view{background:#fff!important;opacity:1!important}
+
+/* Kaffa always keeps a visible real wordmark in the widget header. */
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand,
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark,
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark strong,
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark small{display:grid!important;visibility:visible!important;opacity:1!important}
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark strong{font-size:19px!important;line-height:1!important;letter-spacing:.15em!important}
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark small{font-size:11px!important;line-height:1.15!important;letter-spacing:.05em!important}
+
+/* The owner presentation is meant to be readable at a glance, including for
+   older users. No explanatory text on this surface drops below 11 px. */
+html body[data-coffee-release] .mc-owner .mc-owner-label,
+html body[data-coffee-release] .mc-owner .mc-owner-eyebrow,
+html body[data-coffee-release] .mc-owner .mc-owner-contact,
+html body[data-coffee-release] .mc-owner .mc-owner-demo-card small,
+html body[data-coffee-release] .mc-owner .mc-owner-demo-card p,
+html body[data-coffee-release] .mc-owner .mc-owner-demo-card li,
+html body[data-coffee-release] .mc-owner .mc-owner-benefits b,
+html body[data-coffee-release] .mc-owner .mc-owner-benefits small,
+html body[data-coffee-release] .mc-owner .mc-owner-foot,
+html body[data-coffee-release] .mc-owner .mc-owner-wordmark small{font-size:11px!important}
