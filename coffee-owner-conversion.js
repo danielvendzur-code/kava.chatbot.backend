@@ -64,62 +64,46 @@
     return `
       <header class="mc-owner-head">
         <div class="mc-owner-lockup">${lockup}</div>
-        <div class="mc-owner-head-actions">
-          <span class="mc-owner-label"><i></i> Ukážka pre váš web</span>
-          <a class="mc-owner-head-cta" href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">Chcem to na svoj web ${icons.arrow}</a>
-        </div>
+        <a class="mc-owner-head-cta" href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">Chcem to na svoj web ${icons.arrow}</a>
       </header>
 
       <section class="mc-owner-hero">
         <div class="mc-owner-copy">
-          <span class="mc-owner-eyebrow">Predajná pomoc priamo na vašom webe</span>
-          <h1>Zákazník sa nezasekne.<br><span>Dostane sa ku konkrétnej káve.</span></h1>
-          <p>Chat odpovie na bežnú otázku. Keď zákazník nevie, čo kúpiť, Výber kávy ho štyrmi jednoduchými kliknutiami dovedie ku konkrétnemu produktu. Menej opakovaného vysvetľovania pre váš tím, jednoduchšia cesta ku kúpe pre zákazníka.</p>
-
-          <div class="mc-owner-proof" aria-label="Ako riešenie funguje">
-            <span><b>2</b><small>spôsoby pomoci</small></span>
-            <span><b>4</b><small>krátke kroky</small></span>
-            <span><b>1</b><small>konkrétny produkt</small></span>
-          </div>
+          <h1>Pomôžte zákazníkovi<br><span>vybrať správnu kávu.</span></h1>
+          <p>Chat odpovie na otázky a Výber kávy ho pár kliknutiami dovedie ku konkrétnemu produktu.</p>
 
           <div class="mc-owner-actions">
             <button type="button" data-release-open="advisor">Vyskúšať Výber kávy ${icons.arrow}</button>
             <button class="is-secondary" type="button" data-release-open="chat">Skúsiť Chat ${icons.chat}</button>
           </div>
-
-          <a class="mc-owner-contact" href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer"><b>Chcete podobné riešenie?</b><span>Napíšte mi a pripravím návrh pre váš web.</span>${icons.arrow}</a>
         </div>
 
-        <div class="mc-owner-demo" aria-label="Cesta zákazníka od otázky k produktu">
-          <div class="mc-owner-demo-head">
-            <small>ČO VIDÍ ZÁKAZNÍK</small>
-            <b>Dve jednoduché cesty ku konkrétnemu produktu.</b>
-          </div>
+        <div class="mc-owner-demo" aria-label="Ako riešenie pomáha zákazníkovi">
+          <div class="mc-owner-demo-head"><b>Dve jednoduché cesty k výberu.</b></div>
 
           <article class="mc-owner-demo-card">
             <span class="mc-owner-demo-icon">${icons.chat}</span>
-            <div><small>CHAT</small><b>Má otázku? Normálne sa opýta.</b><p>„Čo by ste mi odporučili do automatu, keď nechcem kyslú kávu?“</p></div>
+            <div><small>CHAT</small><b>Zákazník sa opýta a dostane odpoveď.</b></div>
           </article>
 
           <article class="mc-owner-demo-card is-picker">
             <span class="mc-owner-demo-icon">${icons.picker}</span>
-            <div><small>VÝBER KÁVY</small><b>Nevie si vybrať? Prejde 4 krátke kroky.</b><ol><li><i>1</i>Príprava</li><li><i>2</i>Chuť</li><li><i>3</i>Nápoj</li><li><i>4</i>Voľba</li></ol></div>
+            <div><small>VÝBER KÁVY</small><b>Krátky výber ho dovedie ku konkrétnej káve.</b></div>
           </article>
 
-          <div class="mc-owner-demo-result">${icons.check}<span><b>Výsledok je konkrétna káva.</b><small>Odporúčanie pokračuje priamym preklikom na produkt.</small></span></div>
+          <div class="mc-owner-demo-result">${icons.check}<span><b>Výsledok vedie priamo na produkt.</b></span></div>
         </div>
       </section>
 
       <section class="mc-owner-benefits">
-        <div>${icons.check}<span><b>Šetrí čas tímu</b><small>Menej opakovaného vysvetľovania rovnakých otázok.</small></span></div>
-        <div>${icons.check}<span><b>Pomáha nerozhodným</b><small>Štyri jasné kroky namiesto preklikávania celej ponuky.</small></span></div>
-        <div>${icons.check}<span><b>Odporučí produkt</b><small>Výsledkom je konkrétna káva, nie všeobecná rada.</small></span></div>
-        <div>${icons.check}<span><b>Posúva k nákupu</b><small>Od odporúčania vedie zákazníka priamo na produkt.</small></span></div>
+        <div>${icons.check}<span><b>Menej opakovaných otázok</b></span></div>
+        <div>${icons.check}<span><b>Jednoduchší výber pre zákazníka</b></span></div>
+        <div>${icons.check}<span><b>Priama cesta k produktu</b></span></div>
       </section>
 
       <footer class="mc-owner-foot">
-        <span>Riešenie pripravil <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a></span>
-        <a href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">Chcem podobné riešenie ${icons.arrow}</a>
+        <span>Ukážku pripravil <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a></span>
+        <a href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">Kontakt ${icons.arrow}</a>
       </footer>`;
   }
 
