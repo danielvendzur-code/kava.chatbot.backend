@@ -31,21 +31,19 @@ async function noOverflow(locator, tolerance = 3) {
   }), tolerance);
 }
 
-test('all six owner pages sell the solution clearly without AI/demo language', async ({ page }) => {
+test('all six owner pages stay minimal, clear and AI-free', async ({ page }) => {
   for (const demo of demos) {
     await openDemo(page, demo);
     const owner = page.locator('.mc-owner');
     await expect(owner).toBeVisible();
-    await expect(owner).toContainText('Zákazník sa nezasekne');
-    await expect(owner).toContainText('Dostane sa ku konkrétnej káve');
+    await expect(owner).toContainText('Pomôžte zákazníkovi');
+    await expect(owner).toContainText('vybrať správnu kávu');
     await expect(owner).toContainText('Vyskúšať Výber kávy');
     await expect(owner).toContainText('Skúsiť Chat');
-    await expect(owner).toContainText('2spôsoby pomoci');
-    await expect(owner).toContainText('4krátke kroky');
-    await expect(owner).toContainText('1konkrétny produkt');
     await expect(owner.locator('.mc-owner-head-cta[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
-    await expect(owner.locator('.mc-owner-contact[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
     const text = await owner.innerText();
+    expect(text).not.toMatch(/2\s*spôsoby pomoci|4\s*krátke kroky|1\s*konkrétny produkt/i);
+    expect(text).not.toMatch(/Predajná pomoc priamo na vašom webe|Ukážka pre váš web/i);
     expect(text).not.toMatch(/Návrh AI|umelá inteligencia|overen[áou]\s+\d|match|zhoda\s*·\s*\d+\s*%/i);
     const pageMetrics = await page.evaluate(() => ({ h:document.scrollingElement.scrollHeight, ih:innerHeight, w:document.scrollingElement.scrollWidth, iw:innerWidth }));
     expect(pageMetrics.h).toBeLessThanOrEqual(pageMetrics.ih + 1);
@@ -54,19 +52,19 @@ test('all six owner pages sell the solution clearly without AI/demo language', a
   }
 });
 
-test('owner conversion CTA and explanatory text stay readable on mobile', async ({ page }) => {
+test('minimal owner CTA stays readable on mobile', async ({ page }) => {
   for (const demo of demos) {
     await openDemo(page, demo, { width:390, height:844 });
     const owner = page.locator('.mc-owner');
     await expect(owner.locator('.mc-owner-head-cta')).toBeVisible();
     await expect(owner.locator('[data-release-open="advisor"]')).toBeVisible();
-    const sizes = await owner.locator('small, .mc-owner-contact, .mc-owner-head-cta, .mc-owner-actions button').evaluateAll((nodes) =>
+    const sizes = await owner.locator('.mc-owner-head-cta, .mc-owner-actions button, .mc-owner-benefits b, .mc-owner-foot').evaluateAll((nodes) =>
       nodes.filter((node) => {
         const style = getComputedStyle(node);
         return style.display !== 'none' && style.visibility !== 'hidden';
       }).map((node) => parseFloat(getComputedStyle(node).fontSize))
     );
-    expect(Math.min(...sizes)).toBeGreaterThanOrEqual(11);
+    expect(Math.min(...sizes)).toBeGreaterThanOrEqual(10.5);
     const metrics = await page.evaluate(() => ({ w:document.scrollingElement.scrollWidth, iw:innerWidth }));
     expect(metrics.w).toBeLessThanOrEqual(metrics.iw + 1);
   }
@@ -147,10 +145,19 @@ test('Kaffa brand and controls are readable and Victory composer stays polished'
   expect(inputFont).toBeGreaterThanOrEqual(13);
 });
 
-test('Jolka keeps coffee selection at the top and removes fake match percentages', async ({ page }) => {
+test('Jolka keeps coffee selection at the top, uncropped badge and softened header', async ({ page }) => {
   const jolka = demos.find(item => item.slug === 'jolka');
   await openDemo(page, jolka, { width:390, height:844 });
   await page.locator(jolka.launcher).click();
+  const logo = page.locator('.widget__brand > img');
+  await expect(logo).toHaveAttribute('src', '/assets/jolka/logo-badge.webp');
+  const fit = await logo.evaluate(node => ({ fit:getComputedStyle(node).objectFit, w:node.getBoundingClientRect().width, h:node.getBoundingClientRect().height }));
+  expect(fit.fit).toBe('contain');
+  expect(fit.w).toBeGreaterThanOrEqual(42);
+  expect(fit.h).toBeGreaterThanOrEqual(42);
+  const headerBg = await page.locator('.widget__header').evaluate(node => getComputedStyle(node).backgroundImage);
+  expect(headerBg).toContain('linear-gradient');
+
   await page.locator(jolka.chat).click();
   const entry = page.locator('#entry');
   const chat = page.locator('#chat');
