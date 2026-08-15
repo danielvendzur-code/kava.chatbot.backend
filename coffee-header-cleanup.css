@@ -1,0 +1,92 @@
+/* Final visual cleanup. Keeps widget behavior untouched. */
+body[data-coffee-release]:not([data-coffee-release="jolka"]) #widget img,
+body[data-coffee-release]:not([data-coffee-release="jolka"]) #pz13-widget img,
+body[data-coffee-release]:not([data-coffee-release="jolka"]) .kf-panel img{
+  border:0!important;
+  box-shadow:none!important;
+}
+
+/* Readability floor for the small owner-page labels on every viewport. */
+html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-path-item small,
+html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-foot,
+html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-foot a{
+  font-size:11px!important;
+}
+
+/* The official Praziarnicka PNG contains a white canvas. A white header and multiply blending remove the visible tile without altering the logo artwork. */
+html body[data-coffee-release="praziarnicka"] .pz13-widget__head{
+  background:#fff!important;
+  border-bottom:2px solid #b7d4c9!important;
+  box-shadow:0 9px 22px -22px rgba(20,63,53,.55)!important;
+}
+html body[data-coffee-release="praziarnicka"] .pz13-widget__brand>img{
+  width:122px!important;
+  height:50px!important;
+  max-width:122px!important;
+  max-height:50px!important;
+  padding:0!important;
+  margin:0!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  filter:none!important;
+  mix-blend-mode:multiply!important;
+}
+html body[data-coffee-release="praziarnicka"] .pz13-widget__actions button{
+  background:#fff!important;
+  border-color:transparent!important;
+}
+html body[data-coffee-release="praziarnicka"] .pz13-widget__actions button:hover{
+  background:#f1f7f4!important;
+  border-color:#cfe1da!important;
+}
+
+/* The old shared mobile rules used height:auto and pushed the owner page down. Lock the final mobile composition to the actual viewport and reserve the lower area for the launcher/teaser. */
+@media(max-width:760px){
+  html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"]{
+    width:100%!important;
+    height:100dvh!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:0 16px!important;
+    grid-template-rows:64px minmax(0,1fr) 150px!important;
+    overflow:hidden!important;
+  }
+  html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-hero{
+    min-height:0!important;
+    align-content:start!important;
+    padding:18px 0 0!important;
+    gap:14px!important;
+  }
+  html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-benefits,
+  html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-foot{
+    display:none!important;
+  }
+  html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-head-cta,
+  html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-path-item small,
+  html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-demo-note b{
+    font-size:11px!important;
+  }
+  html body[data-coffee-release="praziarnicka"] .pz13-widget__brand>img{
+    width:116px!important;
+    height:48px!important;
+    max-width:116px!important;
+    max-height:48px!important;
+  }
+}
+
+@media(max-width:390px){
+  html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"]{
+    padding:0 13px!important;
+    grid-template-rows:62px minmax(0,1fr) 146px!important;
+  }
+  html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-path-item small,
+  html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-path-item b,
+  html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-demo-note b,
+  html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-head-cta{
+    font-size:11px!important;
+  }
+}
