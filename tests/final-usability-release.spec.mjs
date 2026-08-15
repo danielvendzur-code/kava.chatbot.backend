@@ -19,7 +19,7 @@ async function openDemo(page, demo, viewport = { width:1366, height:768 }) {
   await page.waitForFunction(() => document.documentElement.dataset.coffeeRelease === '2026-08-final');
   await page.waitForFunction(() => document.querySelector('.mc-owner')?.dataset.ownerConversion === 'ready');
   await page.waitForFunction(() => [...document.styleSheets].some((sheet) => String(sheet.href || '').includes('coffee-header-cleanup.css')));
-  await page.waitForTimeout(160);
+  await page.waitForTimeout(180);
 }
 
 async function noOverflow(locator, tolerance = 3) {
@@ -74,15 +74,24 @@ test('all six owner pages have a dedicated usable mobile composition', async ({ 
     await expect(owner.locator('[data-release-open="chat"]')).toBeVisible();
     await expect(owner.locator('.mc-owner-demo')).toBeVisible();
     await expect(owner.locator('.mc-owner-path-item')).toHaveCount(3);
-    await expect(owner.locator('.mc-owner-benefits > div')).toHaveCount(3);
+    await expect(owner.locator('.mc-owner-benefits')).toBeHidden();
+    await expect(owner.locator('.mc-owner-foot')).toBeHidden();
 
-    const sizes = await owner.locator('.mc-owner-head-cta, .mc-owner-actions button, .mc-owner-path-item b, .mc-owner-path-item small, .mc-owner-benefits b, .mc-owner-foot').evaluateAll((nodes) =>
+    const sizes = await owner.locator('.mc-owner-head-cta, .mc-owner-actions button, .mc-owner-path-item b, .mc-owner-path-item small, .mc-owner-demo-note b').evaluateAll((nodes) =>
       nodes.filter((node) => {
         const style = getComputedStyle(node);
         return style.display !== 'none' && style.visibility !== 'hidden';
       }).map((node) => parseFloat(getComputedStyle(node).fontSize))
     );
-    expect(Math.min(...sizes)).toBeGreaterThanOrEqual(10.5);
+    expect(Math.min(...sizes)).toBeGreaterThanOrEqual(11);
+
+    const ownerBox = await owner.boundingBox();
+    const heroBox = await owner.locator('.mc-owner-hero').boundingBox();
+    const demoBox = await owner.locator('.mc-owner-demo').boundingBox();
+    const launcherBox = await page.locator(demo.launcher).boundingBox();
+    expect(ownerBox.y).toBeLessThanOrEqual(1);
+    expect(heroBox.y).toBeLessThan(100);
+    expect(demoBox.y + demoBox.height).toBeLessThan(launcherBox.y - 95);
 
     const metrics = await pageMetrics(page);
     expect(metrics.h).toBeLessThanOrEqual(metrics.ih + 1);
