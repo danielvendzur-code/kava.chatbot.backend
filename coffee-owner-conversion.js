@@ -60,17 +60,25 @@
     }));
   }
 
+  function pathItem(iconMarkup, title, text) {
+    return `<article class="mc-owner-path-item"><span>${iconMarkup}</span><div><b>${title}</b><small>${text}</small></div></article>`;
+  }
+
   function markup(lockup) {
     return `
       <header class="mc-owner-head">
         <div class="mc-owner-lockup">${lockup}</div>
-        <a class="mc-owner-head-cta" href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">Chcem to na svoj web ${icons.arrow}</a>
+        <a class="mc-owner-head-cta" href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">
+          <span class="mc-owner-head-cta__desktop">Chcem to na svoj web</span>
+          <span class="mc-owner-head-cta__mobile">Kontakt</span>
+          ${icons.arrow}
+        </a>
       </header>
 
       <section class="mc-owner-hero">
         <div class="mc-owner-copy">
           <h1>Pomôžte zákazníkovi<br><span>vybrať správnu kávu.</span></h1>
-          <p>Chat odpovie na otázky a Výber kávy ho pár kliknutiami dovedie ku konkrétnemu produktu.</p>
+          <p>Chat odpovie na otázku. Výber kávy pomôže nerozhodnému zákazníkovi dostať sa ku konkrétnemu produktu.</p>
 
           <div class="mc-owner-actions">
             <button type="button" data-release-open="advisor">Vyskúšať Výber kávy ${icons.arrow}</button>
@@ -78,31 +86,26 @@
           </div>
         </div>
 
-        <div class="mc-owner-demo" aria-label="Ako riešenie pomáha zákazníkovi">
-          <div class="mc-owner-demo-head"><b>Dve jednoduché cesty k výberu.</b></div>
-
-          <article class="mc-owner-demo-card">
-            <span class="mc-owner-demo-icon">${icons.chat}</span>
-            <div><small>CHAT</small><b>Zákazník sa opýta a dostane odpoveď.</b></div>
-          </article>
-
-          <article class="mc-owner-demo-card is-picker">
-            <span class="mc-owner-demo-icon">${icons.picker}</span>
-            <div><small>VÝBER KÁVY</small><b>Krátky výber ho dovedie ku konkrétnej káve.</b></div>
-          </article>
-
-          <div class="mc-owner-demo-result">${icons.check}<span><b>Výsledok vedie priamo na produkt.</b></span></div>
+        <div class="mc-owner-demo" aria-label="Jednoduchá cesta zákazníka ku produktu">
+          <div class="mc-owner-path">
+            ${pathItem(icons.chat, 'Chat', 'Odpovie na otázku')}
+            <span class="mc-owner-path-arrow">${icons.arrow}</span>
+            ${pathItem(icons.picker, 'Výber kávy', 'Pomôže sa rozhodnúť')}
+            <span class="mc-owner-path-arrow">${icons.arrow}</span>
+            ${pathItem(icons.check, 'Produkt', 'Konkrétna káva')}
+          </div>
+          <div class="mc-owner-demo-note"><span></span><b>Jednoduchšie pre zákazníka. Menej vysvetľovania pre tím.</b></div>
         </div>
       </section>
 
       <section class="mc-owner-benefits">
-        <div>${icons.check}<span><b>Menej opakovaných otázok</b></span></div>
-        <div>${icons.check}<span><b>Jednoduchší výber pre zákazníka</b></span></div>
-        <div>${icons.check}<span><b>Priama cesta k produktu</b></span></div>
+        <div>${icons.check}<b>Menej opakovaných otázok</b></div>
+        <div>${icons.check}<b>Ľahší výber pre zákazníka</b></div>
+        <div>${icons.check}<b>Priama cesta k produktu</b></div>
       </section>
 
       <footer class="mc-owner-foot">
-        <span>Ukážku pripravil <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a></span>
+        <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a>
         <a href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">Kontakt ${icons.arrow}</a>
       </footer>`;
   }
