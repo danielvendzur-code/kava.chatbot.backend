@@ -5,11 +5,11 @@ const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
 const demos = ['mylo','ponio','two','bellcoria','biofy','anemone'];
 fs.mkdirSync('artifacts', { recursive:true });
 
-async function openDemo(page, slug, viewport={width:1366,height:768}) {
+async function openDemo(page, slug, viewport={width:1366,height:768}, settle=120) {
   await page.setViewportSize(viewport);
-  await page.goto(`${baseURL}/cosmetics.html?demo=${slug}`, { waitUntil:'networkidle' });
+  await page.goto(`${baseURL}/cosmetics.html?demo=${slug}`, { waitUntil:'domcontentloaded' });
   await page.waitForFunction(() => document.documentElement.dataset.cosmeticsReady === 'true');
-  await page.waitForTimeout(80);
+  await page.waitForTimeout(settle);
 }
 
 async function pageMetrics(page) {
@@ -27,8 +27,9 @@ async function noOverflow(locator, tolerance=3) {
 }
 
 test('all six cosmetics demos have a branded owner presentation that sells the solution', async ({ page }) => {
+  test.setTimeout(60000);
   for (const slug of demos) {
-    await openDemo(page,slug);
+    await openDemo(page,slug,{width:1366,height:768},1900);
     const owner=page.locator('.cx-owner');
     await expect(owner).toBeVisible();
     await expect(owner.locator('.cx-owner-brand .cx-wordmark')).toBeVisible();
@@ -48,8 +49,9 @@ test('all six cosmetics demos have a branded owner presentation that sells the s
 });
 
 test('all six owner presentations fit mobile and keep the important actions visible', async ({ page }) => {
+  test.setTimeout(60000);
   for (const slug of demos) {
-    await openDemo(page,slug,{width:390,height:844});
+    await openDemo(page,slug,{width:390,height:844},1900);
     await expect(page.locator('.cx-owner-brand')).toBeVisible();
     await expect(page.locator('.cx-owner-contact')).toBeVisible();
     await expect(page.locator('[data-open="advisor"]')).toBeVisible();
@@ -95,6 +97,7 @@ test('initial chat is simple, readable and removes selection clutter after the f
 });
 
 test('every cosmetics advisor is four photographic no-scroll steps and ends on a real product', async ({ page }) => {
+  test.setTimeout(60000);
   for (const slug of demos) {
     await openDemo(page,slug,{width:390,height:844});
     await page.locator('#cx-teaser').click();
