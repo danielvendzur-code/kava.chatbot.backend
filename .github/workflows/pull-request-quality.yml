@@ -15,7 +15,7 @@ concurrency:
 jobs:
   quality:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 18
     steps:
       - name: Checkout proposed changes
         uses: actions/checkout@v4
@@ -31,7 +31,7 @@ jobs:
       - name: Install Chromium
         run: npx playwright install chromium
 
-      - name: Validate final six-demo architecture
+      - name: Validate final demo architecture
         run: |
           test -f index.html
           test -f coffee-final-entry.js
@@ -70,7 +70,23 @@ jobs:
           node --check coffee-diamonds-final.js
           node --check api/chat.js
 
-      - name: Validate brand contract tests
+      - name: Validate cosmetics demo architecture
+        run: |
+          test -f cosmetics.html
+          test -f cosmetics.css
+          test -f cosmetics-config.js
+          test -f cosmetics.js
+          test -f api/cosmetics-chat.js
+          test -f tests/cosmetics.spec.mjs
+          grep -Fq '/kozmetika/:slug' vercel.json
+          for slug in mylo ponio two bellcoria biofy anemone; do grep -Fq "$slug:" cosmetics-config.js; done
+          grep -Fq "fetch('/api/cosmetics-chat'" cosmetics.js
+          grep -Fq 'ANTHROPIC_API_KEY' api/cosmetics-chat.js
+          node --check cosmetics-config.js
+          node --check cosmetics.js
+          node --check api/cosmetics-chat.js
+
+      - name: Validate coffee brand contract tests
         run: |
           node --test \
             tests/praziarnicka-contract.test.mjs \
@@ -116,7 +132,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: coffee-final-visual-qa
+          name: final-demo-visual-qa
           path: artifacts/
           if-no-files-found: ignore
           retention-days: 7
