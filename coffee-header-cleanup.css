@@ -6,6 +6,13 @@ body[data-coffee-release]:not([data-coffee-release="jolka"]) .kf-panel img{
   box-shadow:none!important;
 }
 
+/* Readability floor for the small owner-page labels on every viewport. */
+html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-path-item small,
+html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-foot,
+html body[data-coffee-release] .mc-owner[data-owner-conversion="ready"] .mc-owner-foot a{
+  font-size:11px!important;
+}
+
 /* The official Praziarnicka PNG contains a white canvas. A white header and multiply blending remove the visible tile without altering the logo artwork. */
 html body[data-coffee-release="praziarnicka"] .pz13-widget__head{
   background:#fff!important;
