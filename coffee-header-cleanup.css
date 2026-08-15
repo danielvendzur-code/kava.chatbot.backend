@@ -45,3 +45,13 @@ body[data-coffee-release="praziarnicka"] .pz13-widget__actions button:hover{
     max-height:48px!important;
   }
 }
+
+@media(max-width:390px){
+  body[data-coffee-release] .mc-owner-path-item small,
+  body[data-coffee-release] .mc-owner-benefits b,
+  body[data-coffee-release] .mc-owner-demo-note b,
+  body[data-coffee-release] .mc-owner-foot,
+  body[data-coffee-release] .mc-owner-foot a{
+    font-size:10.5px!important;
+  }
+}
