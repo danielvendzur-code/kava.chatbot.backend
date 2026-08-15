@@ -12,6 +12,18 @@ async function openDemo(page, slug, viewport={width:1366,height:768}, settle=120
   await page.waitForTimeout(settle);
 }
 
+async function capture(page, path) {
+  const session = await page.context().newCDPSession(page);
+  try {
+    const { data } = await session.send('Page.captureScreenshot', {
+      format:'png', fromSurface:true, captureBeyondViewport:true
+    });
+    fs.writeFileSync(path, Buffer.from(data, 'base64'));
+  } finally {
+    await session.detach();
+  }
+}
+
 async function pageMetrics(page) {
   return page.evaluate(() => ({
     h:document.scrollingElement.scrollHeight, ih:innerHeight,
@@ -44,7 +56,7 @@ test('all six cosmetics demos have a branded owner presentation that sells the s
     const metrics=await pageMetrics(page);
     expect(metrics.h,slug).toBeLessThanOrEqual(metrics.ih+1);
     expect(metrics.w,slug).toBeLessThanOrEqual(metrics.iw+1);
-    await page.screenshot({path:`artifacts/cosmetics-${slug}-owner-desktop.png`,fullPage:true});
+    await capture(page,`artifacts/cosmetics-${slug}-owner-desktop.png`);
   }
 });
 
@@ -63,7 +75,7 @@ test('all six owner presentations fit mobile and keep the important actions visi
     const controls=page.locator('.cx-owner-contact,.cx-owner-actions button');
     const heights=await controls.evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().height));
     expect(Math.min(...heights),slug).toBeGreaterThanOrEqual(36);
-    await page.screenshot({path:`artifacts/cosmetics-${slug}-owner-mobile.png`,fullPage:true});
+    await capture(page,`artifacts/cosmetics-${slug}-owner-mobile.png`);
   }
 });
 
@@ -129,7 +141,7 @@ test('every cosmetics advisor is four photographic no-scroll steps and ends on a
     await expect(productLink).toContainText('Pozrieť produkt');
     await expect(result).not.toContainText(/\d+\s*%/);
     await expect(result.locator('.cx-result-note')).toContainText('nie zdravotná diagnóza');
-    await page.screenshot({path:`artifacts/cosmetics-${slug}-result-mobile.png`,fullPage:true});
+    await capture(page,`artifacts/cosmetics-${slug}-result-mobile.png`);
   }
 });
 
