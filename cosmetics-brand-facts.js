@@ -3,15 +3,40 @@
   const brands = window.COSMETICS_DEMOS?.brands;
   if (!brands) return;
 
-  // Keep the public demo resilient when a third-party image host blocks hotlinking.
-  document.addEventListener('error', (event) => {
-    const image = event.target;
+  const markMissing = (image) => {
     if (!(image instanceof HTMLImageElement) || !image.closest('#cosmetics-root')) return;
     image.style.display = 'none';
     image.parentElement?.classList.add('is-image-missing');
-  }, true);
+  };
 
-  // Fresh, stable visual sources and product facts checked against the current shops.
+  const watchImage = (image) => {
+    if (!(image instanceof HTMLImageElement) || image.dataset.cxWatched === 'true') return;
+    image.dataset.cxWatched = 'true';
+    image.addEventListener('error', () => markMissing(image), { once:true });
+    const timer = window.setTimeout(() => {
+      if (!image.complete || image.naturalWidth < 2) markMissing(image);
+    }, 1800);
+    image.addEventListener('load', () => window.clearTimeout(timer), { once:true });
+    if (image.complete && image.naturalWidth < 2) markMissing(image);
+  };
+
+  // Third-party image hosts must never leave a broken icon or keep the demo visually unfinished.
+  const observer = new MutationObserver((records) => {
+    for (const record of records) {
+      for (const node of record.addedNodes) {
+        if (!(node instanceof Element)) continue;
+        if (node instanceof HTMLImageElement) watchImage(node);
+        node.querySelectorAll?.('img').forEach(watchImage);
+      }
+    }
+  });
+  const root = document.querySelector('#cosmetics-root');
+  if (root) {
+    observer.observe(root, { childList:true, subtree:true });
+    root.querySelectorAll('img').forEach(watchImage);
+  }
+
+  // Fresh visual sources and product facts checked against the current shops.
   brands.two.hero = 'https://gravitywrite.sgp1.digitaloceanspaces.com/ai-images/ee41c03eb8e5_20251128_072941_120025.png';
 
   brands.biofy.hero = 'https://biofy.sk/media/images/kremy-na-tvar/fullsizes/821-hydratacny_krem_biofy.png';
