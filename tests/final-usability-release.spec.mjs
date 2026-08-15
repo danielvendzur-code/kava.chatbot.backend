@@ -18,7 +18,8 @@ async function openDemo(page, demo, viewport = { width:1366, height:768 }) {
   await page.goto(demo.path ? `${baseURL}${demo.path}` : `${baseURL}/?demo=${demo.slug}`, { waitUntil:'networkidle' });
   await page.waitForFunction(() => document.documentElement.dataset.coffeeRelease === '2026-08-final');
   await page.waitForFunction(() => document.querySelector('.mc-owner')?.dataset.ownerConversion === 'ready');
-  await page.waitForTimeout(120);
+  await page.waitForFunction(() => [...document.styleSheets].some((sheet) => String(sheet.href || '').includes('coffee-header-cleanup.css')));
+  await page.waitForTimeout(160);
 }
 
 async function noOverflow(locator, tolerance = 3) {
@@ -31,7 +32,16 @@ async function noOverflow(locator, tolerance = 3) {
   }), tolerance);
 }
 
-test('all six owner pages stay minimal, clear and AI-free', async ({ page }) => {
+async function pageMetrics(page) {
+  return page.evaluate(() => ({
+    h:document.scrollingElement.scrollHeight,
+    ih:innerHeight,
+    w:document.scrollingElement.scrollWidth,
+    iw:innerWidth
+  }));
+}
+
+test('all six owner pages are concise, visible and AI-free', async ({ page }) => {
   for (const demo of demos) {
     await openDemo(page, demo);
     const owner = page.locator('.mc-owner');
@@ -40,33 +50,44 @@ test('all six owner pages stay minimal, clear and AI-free', async ({ page }) => 
     await expect(owner).toContainText('vybrať správnu kávu');
     await expect(owner).toContainText('Vyskúšať Výber kávy');
     await expect(owner).toContainText('Skúsiť Chat');
+    await expect(owner.locator('.mc-owner-demo')).toBeVisible();
+    await expect(owner.locator('.mc-owner-path-item')).toHaveCount(3);
     await expect(owner.locator('.mc-owner-head-cta[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
     const text = await owner.innerText();
     expect(text).not.toMatch(/2\s*spôsoby pomoci|4\s*krátke kroky|1\s*konkrétny produkt/i);
     expect(text).not.toMatch(/Predajná pomoc priamo na vašom webe|Ukážka pre váš web/i);
     expect(text).not.toMatch(/Návrh AI|umelá inteligencia|overen[áou]\s+\d|match|zhoda\s*·\s*\d+\s*%/i);
-    const pageMetrics = await page.evaluate(() => ({ h:document.scrollingElement.scrollHeight, ih:innerHeight, w:document.scrollingElement.scrollWidth, iw:innerWidth }));
-    expect(pageMetrics.h).toBeLessThanOrEqual(pageMetrics.ih + 1);
-    expect(pageMetrics.w).toBeLessThanOrEqual(pageMetrics.iw + 1);
+    const metrics = await pageMetrics(page);
+    expect(metrics.h).toBeLessThanOrEqual(metrics.ih + 1);
+    expect(metrics.w).toBeLessThanOrEqual(metrics.iw + 1);
     await page.screenshot({ path:`artifacts/release-${demo.slug}-owner.png`, fullPage:true });
   }
 });
 
-test('minimal owner CTA stays readable on mobile', async ({ page }) => {
+test('all six owner pages have a dedicated usable mobile composition', async ({ page }) => {
   for (const demo of demos) {
     await openDemo(page, demo, { width:390, height:844 });
     const owner = page.locator('.mc-owner');
+    await expect(owner.locator('.mc-owner-lockup')).toBeVisible();
     await expect(owner.locator('.mc-owner-head-cta')).toBeVisible();
     await expect(owner.locator('[data-release-open="advisor"]')).toBeVisible();
-    const sizes = await owner.locator('.mc-owner-head-cta, .mc-owner-actions button, .mc-owner-benefits b, .mc-owner-foot').evaluateAll((nodes) =>
+    await expect(owner.locator('[data-release-open="chat"]')).toBeVisible();
+    await expect(owner.locator('.mc-owner-demo')).toBeVisible();
+    await expect(owner.locator('.mc-owner-path-item')).toHaveCount(3);
+    await expect(owner.locator('.mc-owner-benefits > div')).toHaveCount(3);
+
+    const sizes = await owner.locator('.mc-owner-head-cta, .mc-owner-actions button, .mc-owner-path-item b, .mc-owner-path-item small, .mc-owner-benefits b, .mc-owner-foot').evaluateAll((nodes) =>
       nodes.filter((node) => {
         const style = getComputedStyle(node);
         return style.display !== 'none' && style.visibility !== 'hidden';
       }).map((node) => parseFloat(getComputedStyle(node).fontSize))
     );
     expect(Math.min(...sizes)).toBeGreaterThanOrEqual(10.5);
-    const metrics = await page.evaluate(() => ({ w:document.scrollingElement.scrollWidth, iw:innerWidth }));
+
+    const metrics = await pageMetrics(page);
+    expect(metrics.h).toBeLessThanOrEqual(metrics.ih + 1);
     expect(metrics.w).toBeLessThanOrEqual(metrics.iw + 1);
+    await page.screenshot({ path:`artifacts/release-${demo.slug}-owner-mobile.png`, fullPage:true });
   }
 });
 
@@ -111,19 +132,38 @@ test('Diamonds controls are genuinely clickable and conversation starts near the
   await expect(page.locator('#backButton')).toBeEnabled();
 });
 
-test('Praziarnicka has clear separation and an opaque chat surface', async ({ page }) => {
+test('Praziarnicka header logo no longer sits inside a visible white tile', async ({ page }) => {
   const demo = demos[0];
   await openDemo(page, demo, { width:390, height:844 });
   await page.locator(demo.launcher).click();
   const head = page.locator('.pz13-widget__head');
+  const logo = page.locator('.pz13-widget__brand > img');
   const cta = page.locator('.pz13-advisor-entry');
   await expect(cta).toBeVisible();
-  const headBorder = await head.evaluate(node => parseFloat(getComputedStyle(node).borderBottomWidth));
+  await expect(logo).toBeVisible();
+
+  const headStyle = await head.evaluate(node => ({
+    bg:getComputedStyle(node).backgroundColor,
+    border:parseFloat(getComputedStyle(node).borderBottomWidth)
+  }));
+  const logoStyle = await logo.evaluate(node => ({
+    blend:getComputedStyle(node).mixBlendMode,
+    bg:getComputedStyle(node).backgroundColor,
+    border:parseFloat(getComputedStyle(node).borderTopWidth),
+    fit:getComputedStyle(node).objectFit
+  }));
   const ctaBorder = await cta.evaluate(node => parseFloat(getComputedStyle(node).borderTopWidth));
   const stageColor = await page.locator('.pz13-stage').evaluate(node => getComputedStyle(node).backgroundColor);
-  expect(headBorder).toBeGreaterThanOrEqual(1);
+
+  expect(headStyle.bg).toMatch(/rgb\(255, 255, 255\)/);
+  expect(headStyle.border).toBeGreaterThanOrEqual(1);
+  expect(logoStyle.blend).toBe('multiply');
+  expect(logoStyle.bg).toMatch(/rgba?\(0, 0, 0, 0\)/);
+  expect(logoStyle.border).toBe(0);
+  expect(logoStyle.fit).toBe('contain');
   expect(ctaBorder).toBeGreaterThanOrEqual(1);
   expect(stageColor).toMatch(/rgb\(255, 255, 255\)/);
+  await page.screenshot({ path:'artifacts/release-praziarnicka-chat-mobile-final.png', fullPage:true });
 });
 
 test('Kaffa brand and controls are readable and Victory composer stays polished', async ({ page }) => {
