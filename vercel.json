@@ -1,6 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
+    { "source": "/kozmetika/:slug", "destination": "/cosmetics.html" },
+    { "source": "/kozmetika/:slug/", "destination": "/cosmetics.html" },
     { "source": "/ukazka/jolka", "destination": "/jolka.html" },
     { "source": "/ukazka/jolka/", "destination": "/jolka.html" },
     { "source": "/ukazka/:slug", "destination": "/index.html" },
@@ -9,6 +11,13 @@
   "headers": [
     {
       "source": "/ukazka/(.*)",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" },
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/kozmetika/(.*)",
       "headers": [
         { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" },
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }

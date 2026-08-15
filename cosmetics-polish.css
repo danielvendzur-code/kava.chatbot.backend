@@ -1,0 +1,43 @@
+/* Final fit/readability layer for the isolated cosmetics family. */
+.cx-advisor-body{
+  display:grid!important;
+  grid-template-rows:auto auto minmax(0,1fr)!important;
+  align-content:stretch!important;
+}
+.cx-options{
+  height:auto!important;
+  min-height:0!important;
+}
+.cx-option-photo.is-image-missing,
+.cx-owner-visual.is-image-missing,
+.cx-product-photo.is-image-missing{
+  background:
+    radial-gradient(circle at 25% 25%,color-mix(in srgb,var(--cx-accent) 24%,transparent),transparent 34%),
+    linear-gradient(145deg,color-mix(in srgb,var(--cx-soft) 86%,#fff),color-mix(in srgb,var(--cx-brand) 10%,#fff))!important;
+}
+.cx-option-photo.is-image-missing::after,
+.cx-owner-visual.is-image-missing::before,
+.cx-product-photo.is-image-missing::after{
+  content:"✦";
+  position:absolute;
+  inset:0;
+  display:grid;
+  place-items:center;
+  color:color-mix(in srgb,var(--cx-brand) 42%,transparent);
+  font-size:28px;
+}
+@media(max-width:760px){
+  .cx-owner-path b{font-size:11px!important}
+  .cx-owner-benefits b{font-size:10.5px!important}
+  .cx-owner-visual-card b{font-size:10.8px!important}
+  .cx-owner-visual-card small{font-size:9.5px!important}
+  .cx-progress>button,.cx-progress>b{font-size:10.5px!important}
+  .cx-option-copy b{font-size:11.5px!important}
+  .cx-option-copy small{font-size:10.3px!important;line-height:1.2!important}
+  .cx-result-note{font-size:10px!important}
+}
+@media(max-width:390px){
+  .cx-owner-benefits b{font-size:10.3px!important}
+  .cx-option-copy b{font-size:11.3px!important}
+  .cx-option-copy small{font-size:10.1px!important}
+}
