@@ -10,11 +10,16 @@
 
   if (!['praziarnicka', 'diamonds', 'kaffa', 'vitazov', 'concept', 'jolka'].includes(slug)) return;
 
-  const style = document.createElement('link');
-  style.rel = 'stylesheet';
-  style.href = '/coffee-owner-conversion.css';
-  style.dataset.ownerConversionStyle = 'true';
-  document.head.appendChild(style);
+  const attachStyle = (href, marker) => {
+    if (document.querySelector(`link[data-${marker}]`)) return;
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = href;
+    link.dataset[marker] = 'true';
+    document.head.appendChild(link);
+  };
+  attachStyle('/coffee-owner-conversion.css', 'ownerConversionStyle');
+  attachStyle('/coffee-header-cleanup.css', 'coffeeHeaderCleanup');
 
   const icon = (d) => `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="${d}" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   const icons = {
