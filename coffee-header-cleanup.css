@@ -1,0 +1,47 @@
+/* Final header cleanup. Keeps widget behavior untouched. */
+body[data-coffee-release]:not([data-coffee-release="jolka"]) #widget img,
+body[data-coffee-release]:not([data-coffee-release="jolka"]) #pz13-widget img,
+body[data-coffee-release]:not([data-coffee-release="jolka"]) .kf-panel img{
+  border:0!important;
+  box-shadow:none!important;
+}
+
+/* The official Praziarnicka PNG contains a white canvas. A white header and multiply blending remove the visible tile without altering the logo artwork. */
+body[data-coffee-release="praziarnicka"] .pz13-widget__head{
+  background:#fff!important;
+  border-bottom:2px solid #b7d4c9!important;
+  box-shadow:0 9px 22px -22px rgba(20,63,53,.55)!important;
+}
+body[data-coffee-release="praziarnicka"] .pz13-widget__brand>img{
+  width:122px!important;
+  height:50px!important;
+  max-width:122px!important;
+  max-height:50px!important;
+  padding:0!important;
+  margin:0!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  filter:none!important;
+  mix-blend-mode:multiply!important;
+}
+body[data-coffee-release="praziarnicka"] .pz13-widget__actions button{
+  background:#fff!important;
+  border-color:transparent!important;
+}
+body[data-coffee-release="praziarnicka"] .pz13-widget__actions button:hover{
+  background:#f1f7f4!important;
+  border-color:#cfe1da!important;
+}
+
+@media(max-width:640px){
+  body[data-coffee-release="praziarnicka"] .pz13-widget__brand>img{
+    width:116px!important;
+    height:48px!important;
+    max-width:116px!important;
+    max-height:48px!important;
+  }
+}
