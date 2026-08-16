@@ -119,3 +119,8 @@ body[data-coffee-release="concept"] .advisor-entry {
 body[data-coffee-release="concept"] .advisor-entry * {
   color:#fff!important;
 }
+
+/* No vendor signature inside client-facing Jolka. */
+body[data-coffee-release="jolka"] .widget__note {
+  display:none!important;
+}
