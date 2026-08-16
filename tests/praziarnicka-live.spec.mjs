@@ -3,41 +3,33 @@ import fs from 'node:fs';
 
 const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
 const PZ = `${baseURL}/?demo=praziarnicka`;
-fs.mkdirSync('artifacts', { recursive: true });
+fs.mkdirSync('artifacts', { recursive:true });
 
 async function ready(page) {
-  await page.goto(PZ, { waitUntil:'networkidle' });
+  await page.goto(PZ, { waitUntil:'domcontentloaded' });
   await page.waitForFunction(() => document.documentElement.dataset.demoReady === 'true');
+  await page.waitForFunction(() => document.documentElement.dataset.coffeeRelease === 'client-ready');
+  await page.waitForFunction(() => document.querySelector('.mc-owner')?.dataset.clientReadyOwner === 'true');
+  await page.waitForTimeout(180);
 }
 
 function center(box) { return box.x + box.width / 2; }
 
-test('Praziarnicka background is the owner page about the advisor', async ({ page }) => {
+test('Praziarnicka client-ready owner page is concise and contains no self promotion', async ({ page }) => {
   await page.setViewportSize({ width:1366, height:768 });
   await ready(page);
-
-  // The demo is read by the roastery's owner. A stand-in for their own shop —
-  // menu, e-shop link, contact, product grid — tells them nothing they do not
-  // already have; what the advisor does and how it works does.
-  await expect(page.locator('.pz13-site-logo img')).toHaveAttribute('src', '/brand/praziarnicka-logo-official.png');
-  await expect(page.locator('.pz13-site-hero')).toBeVisible();
-  await expect(page.locator('.pz13-site-copy')).toContainText('Chat a výber kávy');
-  // Both halves of the widget are explained, each in its own block.
-  await expect(page.locator('.pz13-site-mode')).toHaveCount(2);
-  await expect(page.locator('.pz13-site-mode').nth(0)).toContainText('Chat');
-  await expect(page.locator('.pz13-site-mode').nth(0)).toContainText('Aká káva do automatu?');
-  await expect(page.locator('.pz13-site-mode').nth(1)).toContainText('Výber kávy');
-  await expect(page.locator('.pz13-site-mode').nth(1).locator('ol li')).toHaveCount(4);
-  await expect(page.locator('.pz13-site-by')).toContainText('mojchatbot.sk');
-  await expect(page.locator('.pz13-site-product')).toHaveCount(0);
-  await expect(page.locator('body')).not.toContainText('PRAŽIAREŇ KÁVY A KAVIAREŇ V TRENČÍNE');
-  await expect(page.locator('body')).not.toContainText('Poštovné zdarma');
-  await expect(page.locator('body')).not.toContainText('AKO TO FUNGUJE PRE ZÁKAZNÍKA');
-
+  const owner = page.locator('.mc-owner');
+  await expect(owner).toContainText('Menej hľadania.');
+  await expect(owner).toContainText('Rýchlejšie ku káve.');
+  await expect(owner.locator('.mc-owner-demo-card')).toHaveCount(2);
+  await expect(owner.locator('.mc-owner-benefits > div')).toHaveCount(3);
+  await expect(page.locator('a[href*="mojchatbot.sk"]')).toHaveCount(0);
+  const text = await page.locator('body').innerText();
+  expect(text).not.toMatch(/Môj Chatbot|mojchatbot\.sk|Návrh AI|AI poradca|verzia\s*\d/i);
   const size = await page.evaluate(() => ({ h:document.scrollingElement.scrollHeight, ih:innerHeight, w:document.scrollingElement.scrollWidth, iw:innerWidth }));
   expect(size.h).toBeLessThanOrEqual(size.ih + 1);
   expect(size.w).toBeLessThanOrEqual(size.iw + 1);
-  await page.screenshot({ path:'artifacts/final-praziarnicka-site-1366x768.png', fullPage:true });
+  await page.screenshot({ path:'artifacts/client-ready-praziarnicka-site-1366x768.png', fullPage:true });
 });
 
 test('initial chat puts find-your-coffee above the welcome message and the switch under the header', async ({ page }) => {
@@ -54,9 +46,6 @@ test('initial chat puts find-your-coffee above the welcome message and the switc
   const welcomeBox = await welcome.boundingBox();
   expect(advisorBox.y + advisorBox.height).toBeLessThan(welcomeBox.y + 3);
 
-  // At the bottom the floating switch sat over the last row of answers on a
-  // 768 px-tall screen. It now spans the panel directly under the header, above
-  // everything it switches between.
   const panel = await page.locator('#pz13-widget').boundingBox();
   const head = await page.locator('.pz13-widget__head').boundingBox();
   const switchBox = await page.locator('.pz13-mode').boundingBox();
@@ -70,7 +59,7 @@ test('initial chat puts find-your-coffee above the welcome message and the switc
   const composer = await page.locator('.pz13-composer').boundingBox();
   expect(composer.y).toBeGreaterThan(switchBox.y + switchBox.height);
   expect(composer.y + composer.height).toBeLessThanOrEqual(panel.y + panel.height + 1);
-  await page.screenshot({ path:'artifacts/final-praziarnicka-mobile-chat.png', fullPage:true });
+  await page.screenshot({ path:'artifacts/client-ready-praziarnicka-mobile-chat.png', fullPage:true });
 });
 
 test('after first message the advisor CTA and quick chips disappear but the switch remains', async ({ page }) => {
@@ -79,7 +68,6 @@ test('after first message the advisor CTA and quick chips disappear but the swit
   await page.locator('#pz13-open').click();
   await page.locator('#pz13-input').fill('Káva do automatu');
   await page.locator('#pz13-input').press('Enter');
-
   await expect(page.locator('.pz13-message--user')).toContainText('Káva do automatu');
   await expect(page.locator('.pz13-advisor-entry')).toHaveCount(0);
   await expect(page.locator('.pz13-chip')).toHaveCount(0);
@@ -88,26 +76,24 @@ test('after first message the advisor CTA and quick chips disappear but the swit
   await expect(page.locator('.pz13-advisor')).toBeVisible();
 });
 
-test('preparation step has four different real images that remain on the selected card', async ({ page }) => {
+test('preparation step renders four distinct high-resolution sprite crops and keeps the selected visual', async ({ page }) => {
   await page.setViewportSize({ width:571, height:813 });
   await ready(page);
   await page.locator('#pz13-open').click();
   await page.locator('.pz13-mode button[data-mode="advisor"]').click();
 
-  const images = page.locator('.pz13-option__img');
-  await expect(images).toHaveCount(4);
-  const srcs = await images.evaluateAll(nodes => nodes.map(node => node.getAttribute('src')));
-  expect(new Set(srcs).size).toBe(4);
-  expect(srcs).toEqual(expect.arrayContaining([
-    '/assets/praziarnicka/prep-automatic.webp',
-    '/assets/praziarnicka/prep-lever.webp',
-    '/assets/praziarnicka/prep-moka.webp',
-    '/assets/praziarnicka/prep-filter.webp'
-  ]));
+  const options = page.locator('.pz13-option');
+  await expect(options).toHaveCount(4);
+  const photos = page.locator('.pz13-option__photo.is-proxy');
+  await expect(photos).toHaveCount(4);
+  const visuals = await photos.evaluateAll((nodes) => nodes.map((node) => ({ bg:getComputedStyle(node).backgroundImage, pos:getComputedStyle(node).backgroundPosition, opacity:getComputedStyle(node).opacity })));
+  expect(visuals.every((item) => item.bg.includes('choice-sprite.png'))).toBeTruthy();
+  expect(visuals.every((item) => Number(item.opacity) >= .99)).toBeTruthy();
+  expect(new Set(visuals.map((item) => item.pos)).size).toBe(4);
 
-  const first = page.locator('.pz13-option').first();
+  const first = options.first();
   await first.click();
   await expect(first).toHaveClass(/is-selected/);
-  await expect(first.locator('.pz13-option__img')).toBeVisible();
-  await page.screenshot({ path:'artifacts/final-praziarnicka-preparation-571x813.png', fullPage:true });
+  await expect(first.locator('.pz13-option__photo.is-proxy')).toBeVisible();
+  await page.screenshot({ path:'artifacts/client-ready-praziarnicka-preparation-571x813.png', fullPage:true });
 });
