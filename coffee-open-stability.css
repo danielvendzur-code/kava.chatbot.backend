@@ -1,0 +1,45 @@
+/* Immediate open-state stability. Pure CSS so the first painted open frame is final. */
+body[data-coffee-release] #widget.is-open,
+body[data-coffee-release] #pz13-widget.is-open {
+  z-index:2147483640!important;
+  opacity:1!important;
+  visibility:visible!important;
+  pointer-events:auto!important;
+  transform:none!important;
+  background:#fff!important;
+  transition:transform .18s ease,visibility 0s!important;
+}
+body[data-coffee-release] .kf-widget.is-open {
+  z-index:2147483640!important;
+  opacity:1!important;
+  visibility:visible!important;
+  pointer-events:auto!important;
+  background:#fff!important;
+}
+body[data-coffee-release] .kf-widget.is-open .kf-panel {
+  opacity:1!important;
+  visibility:visible!important;
+  pointer-events:auto!important;
+  transform:none!important;
+  background:#fff!important;
+  transition:transform .18s ease,visibility 0s!important;
+}
+body[data-coffee-release] #widget.is-open .stage,
+body[data-coffee-release] #widget.is-open .widget-stage,
+body[data-coffee-release] #widget.is-open #chatScreen,
+body[data-coffee-release] #widget.is-open #advisorScreen,
+body[data-coffee-release] #pz13-widget.is-open .pz13-stage,
+body[data-coffee-release] .kf-widget.is-open .kf-view,
+body[data-coffee-release] .kf-widget.is-open .kf-stage {
+  background:#fff!important;
+  opacity:1!important;
+}
+body[data-coffee-release] .mc-owner,
+body[data-coffee-release] .diamonds-page,
+body[data-coffee-release] .demo-page,
+body[data-coffee-release] .concept-page,
+body[data-coffee-release] .kf-shell {
+  position:relative!important;
+  z-index:0!important;
+  isolation:isolate!important;
+}
