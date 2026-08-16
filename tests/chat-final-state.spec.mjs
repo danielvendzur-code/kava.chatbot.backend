@@ -2,11 +2,14 @@ import { test, expect } from '@playwright/test';
 
 const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
 
+// Vitazov has its own dedicated chat/fallback/mobile coverage in
+// vitazov-conversion.spec.mjs. Keep this shared text-submit suite focused on
+// the four other routed shells plus Praziarnicka, so one brand-specific flow
+// is not tested twice through different DOM contracts.
 const demos = [
   { slug:'praziarnicka', launcher:'#pz13-open', input:'#pz13-input', bot:'.pz13-message--assistant .pz13-bubble', panel:'#pz13-widget', chat:'.pz13-chat' },
   { slug:'diamonds', launcher:'#launcherButton', input:'#chatInput', bot:'.chat-line:not(.chat-line--user) .chat-bubble', panel:'#widget', chat:'#chatScreen' },
   { slug:'kaffa', launcher:'#launcher', input:'#chatInput', bot:'.kf-message.bot', panel:'.kf-panel', chat:'.kf-chat' },
-  { slug:'vitazov', launcher:'#openWidget', input:'#chatInput', send:'#chatForm button[type="submit"]', bot:'.message:not(.message--user) .bubble', panel:'#widget', chat:'#chatScreen' },
   { slug:'concept', launcher:'#openWidget', input:'#chatInput', bot:'.message:not(.message--user) .bubble', panel:'#widget', chat:'#chatScreen' }
 ];
 
@@ -42,8 +45,7 @@ for (const demo of demos) {
     await expect(input).toBeVisible({ timeout:5000 });
     const before = await visibleReplies(page, demo.bot);
     await input.fill('Akú kávu do automatu?');
-    if (demo.send) await page.locator(demo.send).click({ force:true });
-    else await input.press('Enter');
+    await input.press('Enter');
 
     await expect.poll(async () => {
       const replies = await visibleReplies(page, demo.bot);
