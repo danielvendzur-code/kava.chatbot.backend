@@ -91,23 +91,44 @@
     jolka:'.mode__button[data-mode="chat"]'
   };
 
+  function visibleControl(selector){
+    return [...document.querySelectorAll(selector)].find((node) => node.offsetParent !== null && getComputedStyle(node).visibility !== 'hidden');
+  }
+
   function openMode(mode){
     const launcher = document.querySelector(launchers[normalized]);
     if (launcher && launcher.offsetParent !== null) launcher.click();
     requestAnimationFrame(() => requestAnimationFrame(() => {
-      document.querySelector(mode === 'advisor' ? advisorButtons[normalized] : chatButtons[normalized])?.click();
+      visibleControl(mode === 'advisor' ? advisorButtons[normalized] : chatButtons[normalized])?.click();
     }));
+  }
+
+  function applyOwnerGeometry(){
+    const target = ownerTarget();
+    if (!target?.classList.contains('mc-owner')) return;
+    const hero = target.querySelector('.mc-owner-hero');
+    const mobile = matchMedia('(max-width:760px)').matches;
+    if (mobile) {
+      target.style.setProperty('grid-template-rows','68px minmax(0,1fr) 128px','important');
+      hero?.style.setProperty('align-content','start','important');
+      hero?.style.setProperty('padding','14px 0 10px','important');
+    } else {
+      target.style.removeProperty('grid-template-rows');
+      hero?.style.removeProperty('align-content');
+      hero?.style.removeProperty('padding');
+    }
   }
 
   function renderOwner(){
     const target = ownerTarget();
-    if (!target || target.dataset.clientReadyOwner === 'true') return;
+    if (!target || target.dataset.clientReadyOwner === 'true') { applyOwnerGeometry(); return; }
     target.dataset.clientReadyOwner = 'true';
     target.classList.add('mc-owner');
     target.innerHTML = ownerMarkup();
     const primary = target.querySelector('[data-release-open="advisor"]');
     if (primary) primary.id = normalized === 'praziarnicka' ? 'pz13-hero-open' : 'heroOpen';
     target.querySelectorAll('[data-release-open]').forEach((button) => button.addEventListener('click', () => openMode(button.dataset.releaseOpen)));
+    applyOwnerGeometry();
   }
 
   function fixChatOrder(){
@@ -157,6 +178,9 @@
 
   function cleanResults(){
     document.querySelectorAll('.result__badge').forEach((badge) => { if (/\d+\s*%/.test(badge.textContent || '')) badge.textContent = 'Odporúčanie pre vás'; });
+    document.querySelectorAll('.alt__card small,.result small,.result-card small').forEach((node) => {
+      if (/\d+\s*%\s*zhoda/i.test(node.textContent || '')) node.textContent = (node.textContent || '').replace(/\s*·?\s*\d+\s*%\s*zhoda/ig,'');
+    });
   }
 
   function finaliseDom(){
@@ -196,5 +220,6 @@
     requestAnimationFrame(() => { queued = false; finaliseDom(); });
   });
   observer.observe(document.documentElement,{childList:true,subtree:true});
+  addEventListener('resize', applyOwnerGeometry, { passive:true });
   finaliseDom();
 })();
