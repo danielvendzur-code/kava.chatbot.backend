@@ -107,19 +107,34 @@
     const target = ownerTarget();
     if (!target?.classList.contains('mc-owner')) return;
     const hero = target.querySelector('.mc-owner-hero');
+    const copy = target.querySelector('.mc-owner-copy');
     const benefits = target.querySelector('.mc-owner-benefits');
     const mobile = matchMedia('(max-width:760px)').matches;
     if (mobile) {
-      target.style.setProperty('grid-template-rows','68px minmax(0,1fr) 116px','important');
-      hero?.style.setProperty('align-content','start','important');
-      hero?.style.setProperty('align-items','start','important');
-      hero?.style.setProperty('padding','14px 0 10px','important');
+      target.style.setProperty('grid-template-rows','68px minmax(0,1fr)','important');
+      hero?.style.setProperty('display','block','important');
+      hero?.style.setProperty('height','auto','important');
+      hero?.style.setProperty('min-height','0','important');
+      hero?.style.setProperty('padding','14px 0 120px','important');
+      hero?.style.setProperty('margin','0','important');
+      copy?.style.setProperty('position','static','important');
+      copy?.style.setProperty('transform','none','important');
+      copy?.style.setProperty('margin','0','important');
+      copy?.style.setProperty('padding','0','important');
+      copy?.style.setProperty('align-self','start','important');
       benefits?.style.setProperty('display','none','important');
     } else {
       target.style.removeProperty('grid-template-rows');
-      hero?.style.removeProperty('align-content');
-      hero?.style.removeProperty('align-items');
+      hero?.style.removeProperty('display');
+      hero?.style.removeProperty('height');
+      hero?.style.removeProperty('min-height');
       hero?.style.removeProperty('padding');
+      hero?.style.removeProperty('margin');
+      copy?.style.removeProperty('position');
+      copy?.style.removeProperty('transform');
+      copy?.style.removeProperty('margin');
+      copy?.style.removeProperty('padding');
+      copy?.style.removeProperty('align-self');
       benefits?.style.removeProperty('display');
     }
   }
@@ -167,6 +182,57 @@
     }
   }
 
+  function fixVisualStability(){
+    const panel = normalized === 'kaffa' ? document.querySelector('.kf-panel') : normalized === 'praziarnicka' ? document.querySelector('#pz13-widget') : document.querySelector('#widget');
+    const wrapper = normalized === 'kaffa' ? document.querySelector('.kf-widget') : panel;
+    const open = Boolean(wrapper?.classList.contains('is-open'));
+    if (panel) {
+      panel.style.setProperty('background','#fff','important');
+      if (open) {
+        panel.style.setProperty('opacity','1','important');
+        panel.style.setProperty('visibility','visible','important');
+        panel.style.setProperty('transform','none','important');
+        panel.style.setProperty('transition','transform .18s ease, visibility 0s','important');
+      } else {
+        panel.style.removeProperty('opacity');
+        panel.style.removeProperty('visibility');
+        panel.style.removeProperty('transform');
+        panel.style.removeProperty('transition');
+      }
+    }
+    document.querySelectorAll('.stage,.widget-stage,#chatScreen,#advisorScreen,.chat-screen,.advisor-screen,.kf-view,.pz13-stage').forEach((node) => {
+      node.style.setProperty('background','#fff','important');
+    });
+
+    if (normalized === 'diamonds' || normalized === 'vitazov') {
+      const header = document.querySelector('.widget-head,.widget__header');
+      header?.querySelectorAll('img').forEach((img) => img.style.setProperty('filter','brightness(0) invert(1)','important'));
+      header?.querySelectorAll('strong,b,small,span').forEach((node) => node.style.setProperty('color','#fff','important'));
+      header?.querySelectorAll('button').forEach((button) => button.style.setProperty('color','#fff','important'));
+    }
+
+    if (normalized === 'kaffa') {
+      const header = document.querySelector('.kf-panel-head');
+      const lockup = document.querySelector('.kf-widget-brand');
+      if (header) {
+        header.style.setProperty('overflow','hidden','important');
+        header.style.setProperty('padding','8px 12px 8px 16px','important');
+        header.style.setProperty('align-items','center','important');
+      }
+      if (lockup && lockup.dataset.clientReadyKaffa !== 'true') {
+        lockup.dataset.clientReadyKaffa = 'true';
+        lockup.innerHTML = '<span aria-hidden="true" style="font-family:Georgia,serif;font-size:22px;letter-spacing:.16em;font-weight:700;line-height:1">KAFFA</span><span class="kf-widget-brand__copy"><strong>Kaffa Roastery</strong><small><i></i>Online</small></span>';
+      }
+      if (lockup) {
+        lockup.style.setProperty('display','flex','important');
+        lockup.style.setProperty('align-items','center','important');
+        lockup.style.setProperty('gap','10px','important');
+        lockup.style.setProperty('height','100%','important');
+        lockup.style.setProperty('overflow','hidden','important');
+      }
+    }
+  }
+
   function removeDemoBranding(){
     document.querySelectorAll('a[href*="mojchatbot.sk"]').forEach((node) => node.remove());
     document.querySelectorAll('.solution-brand,.demo-flag,.op-flag,.owner-note,.demo-tag').forEach((node) => {
@@ -191,6 +257,7 @@
   function finaliseDom(){
     renderOwner();
     fixChatOrder();
+    fixVisualStability();
     removeDemoBranding();
     cleanResults();
     keepCssLast();
