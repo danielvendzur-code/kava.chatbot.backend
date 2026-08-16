@@ -107,15 +107,20 @@
     const target = ownerTarget();
     if (!target?.classList.contains('mc-owner')) return;
     const hero = target.querySelector('.mc-owner-hero');
+    const benefits = target.querySelector('.mc-owner-benefits');
     const mobile = matchMedia('(max-width:760px)').matches;
     if (mobile) {
-      target.style.setProperty('grid-template-rows','68px minmax(0,1fr) 128px','important');
+      target.style.setProperty('grid-template-rows','68px minmax(0,1fr) 116px','important');
       hero?.style.setProperty('align-content','start','important');
+      hero?.style.setProperty('align-items','start','important');
       hero?.style.setProperty('padding','14px 0 10px','important');
+      benefits?.style.setProperty('display','none','important');
     } else {
       target.style.removeProperty('grid-template-rows');
       hero?.style.removeProperty('align-content');
+      hero?.style.removeProperty('align-items');
       hero?.style.removeProperty('padding');
+      benefits?.style.removeProperty('display');
     }
   }
 
