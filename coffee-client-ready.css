@@ -1,0 +1,136 @@
+/* Client-ready coffee release: one final shared presentation layer for all six demos. */
+
+body[data-coffee-release="praziarnicka"]{--cr-brand:#145446;--cr-brand-2:#1f6a59;--cr-soft:#edf7f3;--cr-ink:#123d34;--cr-line:#c8ddd5;--cr-accent:#d56434}
+body[data-coffee-release="diamonds"]{--cr-brand:#171a15;--cr-brand-2:#759b18;--cr-soft:#f2f6e8;--cr-ink:#171a15;--cr-line:#d9e3ca;--cr-accent:#a9cf39}
+body[data-coffee-release="kaffa"]{--cr-brand:#151412;--cr-brand-2:#4f5c55;--cr-soft:#f5f2ea;--cr-ink:#171614;--cr-line:#ddd7cc;--cr-accent:#c8b58d}
+body[data-coffee-release="vitazov"]{--cr-brand:#0c4438;--cr-brand-2:#164f43;--cr-soft:#eef8dd;--cr-ink:#071f1a;--cr-line:#cfe0d8;--cr-accent:#b8e86a}
+body[data-coffee-release="concept"]{--cr-brand:#2f7775;--cr-brand-2:#1f605e;--cr-soft:#edf7f5;--cr-ink:#173b39;--cr-line:#cce2df;--cr-accent:#87bdb8}
+body[data-coffee-release="jolka"]{--cr-brand:#5d4734;--cr-brand-2:#403024;--cr-soft:#f3ece3;--cr-ink:#251b13;--cr-line:#decfbe;--cr-accent:#c9ad80}
+
+body[data-coffee-release]{background:#fff!important;color:var(--cr-ink)!important}
+body[data-coffee-release] *,body[data-coffee-release] *::before,body[data-coffee-release] *::after{box-sizing:border-box}
+body[data-coffee-release] img{image-rendering:auto!important}
+body[data-coffee-release] button,body[data-coffee-release] [role="button"]{touch-action:manipulation}
+
+/* Owner-facing page: compact, branded, no Môj Chatbot advertising. */
+body[data-coffee-release] .mc-owner{width:min(1240px,calc(100% - 48px))!important;height:100dvh!important;min-height:0!important;margin:0 auto!important;padding:0!important;display:grid!important;grid-template-rows:78px minmax(0,1fr) 96px!important;overflow:hidden!important;background:#fff!important;color:var(--cr-ink)!important;font-family:"DM Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif!important}
+body[data-coffee-release] .mc-owner-head{display:flex!important;align-items:center!important;justify-content:flex-start!important;border-bottom:2px solid color-mix(in srgb,var(--cr-brand) 38%,var(--cr-line))!important;box-shadow:0 12px 26px -28px color-mix(in srgb,var(--cr-brand) 65%,transparent)!important}
+body[data-coffee-release] .mc-owner-lockup{display:flex!important;align-items:center!important;min-width:0!important;max-height:60px!important}
+body[data-coffee-release] .mc-owner-lockup img{display:block!important;width:auto!important;height:auto!important;max-width:180px!important;max-height:54px!important;object-fit:contain!important;object-position:left center!important;filter:none!important;background:transparent!important}
+body[data-coffee-release="diamonds"] .mc-owner-lockup img{max-width:196px!important;max-height:46px!important}
+body[data-coffee-release="vitazov"] .mc-owner-lockup img{max-width:112px!important;max-height:58px!important}
+.mc-owner-wordmark{display:grid;gap:4px;line-height:1}.mc-owner-wordmark b{font-family:Georgia,"Times New Roman",serif;font-size:29px;letter-spacing:.16em}.mc-owner-wordmark small{font-size:8px;font-weight:750;letter-spacing:.09em}
+.mc-owner-jolka{display:flex;align-items:center;gap:10px}.mc-owner-jolka img{width:50px!important;height:50px!important;object-fit:contain!important}.mc-owner-jolka b{font-family:Georgia,"Times New Roman",serif;font-size:19px;font-weight:600}
+
+body[data-coffee-release] .mc-owner-hero{min-height:0!important;display:grid!important;grid-template-columns:minmax(0,1.03fr) minmax(390px,.82fr)!important;gap:clamp(34px,5vw,70px)!important;align-items:center!important;padding:28px 0 22px!important}
+.mc-owner-copy{min-width:0}.mc-owner-eyebrow{display:block;margin:0 0 10px;color:var(--cr-brand);font-size:10px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.mc-owner-copy h1{max-width:700px;margin:0;color:var(--cr-ink);font-size:clamp(43px,4.8vw,67px);line-height:.98;letter-spacing:-.055em;font-weight:850}.mc-owner-copy>p{max-width:610px;margin:17px 0 0;color:color-mix(in srgb,var(--cr-ink) 68%,transparent);font-size:15px;line-height:1.5}.mc-owner-actions{display:flex;align-items:center;gap:9px;margin-top:20px}.mc-owner-actions button{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:0 18px;border:1px solid var(--cr-brand);border-radius:999px;background:var(--cr-brand);color:#fff;font:inherit;font-size:12.5px;font-weight:850;cursor:pointer;box-shadow:0 17px 34px -27px color-mix(in srgb,var(--cr-brand) 80%,transparent);transition:transform .18s ease,background .18s ease}.mc-owner-actions button:hover{transform:translateY(-1px);background:var(--cr-brand-2)}.mc-owner-actions button.is-secondary{border-color:var(--cr-line);background:#fff;color:var(--cr-ink);box-shadow:none}.mc-owner-actions svg{width:16px;height:16px}
+.mc-owner-demo{min-height:0;display:grid;gap:10px;padding:15px;border:1px solid var(--cr-line);border-radius:25px;background:linear-gradient(145deg,var(--cr-soft),#fff 70%);box-shadow:0 30px 65px -54px color-mix(in srgb,var(--cr-brand) 70%,transparent)}.mc-owner-demo-card{min-height:122px;display:grid;grid-template-columns:40px minmax(0,1fr);gap:12px;align-items:start;padding:14px;border:1px solid var(--cr-line);border-radius:18px;background:#fff}.mc-owner-demo-icon{width:40px;height:40px;display:grid;place-items:center;border-radius:12px;background:var(--cr-soft);color:var(--cr-brand)}.mc-owner-demo-icon svg{width:19px;height:19px}.mc-owner-demo-card small{display:block;color:var(--cr-brand);font-size:9px;font-weight:900;letter-spacing:.11em}.mc-owner-demo-card b{display:block;margin-top:4px;font-size:14px}.mc-owner-demo-card p{margin:7px 0 0;padding:9px 11px;border-radius:12px 12px 12px 4px;background:var(--cr-soft);color:color-mix(in srgb,var(--cr-ink) 75%,transparent);font-size:11.5px;line-height:1.38}.mc-owner-demo-card ol{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:9px 0 0;padding:0;list-style:none}.mc-owner-demo-card li{display:grid;justify-items:center;gap:4px;padding:7px 3px;border:1px solid var(--cr-line);border-radius:10px;color:color-mix(in srgb,var(--cr-ink) 72%,transparent);font-size:8.5px;font-weight:750;text-align:center}.mc-owner-demo-card li i{width:20px;height:20px;display:grid;place-items:center;border-radius:50%;background:var(--cr-brand);color:#fff;font-size:9px;font-style:normal}
+.mc-owner-benefits{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;border-top:1px solid var(--cr-line)!important}.mc-owner-benefits>div{min-width:0;display:grid!important;grid-template-columns:27px minmax(0,1fr)!important;gap:9px!important;align-content:center!important;padding:12px 18px!important;border-right:1px solid var(--cr-line)!important}.mc-owner-benefits>div:first-child{padding-left:0!important}.mc-owner-benefits>div:last-child{border-right:0!important}.mc-owner-benefits>div>svg{width:24px;height:24px;padding:5px;border-radius:50%;background:var(--cr-soft);color:var(--cr-brand)}.mc-owner-benefits span{display:grid;gap:2px}.mc-owner-benefits b{font-size:11px}.mc-owner-benefits small{color:color-mix(in srgb,var(--cr-ink) 58%,transparent);font-size:9.5px;line-height:1.25}
+.mc-owner-label,.mc-owner-contact,.mc-owner-foot,.mc-owner-head-cta{display:none!important}
+
+/* A closed panel must never steal clicks from the launcher. */
+body[data-coffee-release] #widget:not(.is-open),body[data-coffee-release] #pz13-widget:not(.is-open){pointer-events:none!important}
+body[data-coffee-release] .kf-widget:not(.is-open) .kf-panel{pointer-events:none!important}
+body[data-coffee-release] #widget.is-open,body[data-coffee-release] #pz13-widget.is-open,body[data-coffee-release] .kf-widget.is-open .kf-panel{z-index:2147483500!important;pointer-events:auto!important}
+body[data-coffee-release] .screen:not(.is-active){pointer-events:none!important;visibility:hidden!important}
+body[data-coffee-release] .screen.is-active{pointer-events:auto!important;visibility:visible!important}
+
+/* Stronger, clearer headers across the whole family. */
+body[data-coffee-release="praziarnicka"] .pz13-widget__head{background:#fff!important;border-bottom:2px solid #8eb9aa!important;box-shadow:0 10px 24px -24px rgba(20,84,70,.7)!important}
+body[data-coffee-release="praziarnicka"] .pz13-widget__brand>img{max-width:126px!important;max-height:50px!important;object-fit:contain!important;background:transparent!important}
+body[data-coffee-release="diamonds"] .widget-head{background:#171a15!important;border-bottom:2px solid #a9cf39!important;box-shadow:0 12px 26px -24px rgba(23,26,21,.9)!important}
+body[data-coffee-release="kaffa"] .kf-panel-head{min-height:70px!important;background:#f7f4ec!important;border-bottom:2px solid #b9ad96!important;box-shadow:0 12px 28px -27px rgba(21,20,18,.6)!important}
+body[data-coffee-release="vitazov"] .widget__header,body[data-coffee-release="vitazov"] .widget-head{background:#0c4438!important;border-bottom:2px solid #b8e86a!important;color:#fff!important;box-shadow:0 12px 26px -24px rgba(12,68,56,.85)!important}
+body[data-coffee-release="concept"] .widget__header,body[data-coffee-release="concept"] .widget-head{background:#f7fbfa!important;border-bottom:2px solid #6aa5a1!important;box-shadow:0 12px 28px -27px rgba(47,119,117,.7)!important}
+body[data-coffee-release="jolka"] .widget__header{background:linear-gradient(180deg,#5d4734 0%,#513d2d 100%)!important;border-bottom:2px solid #d1b98f!important;box-shadow:0 12px 28px -25px rgba(64,48,36,.75)!important}
+
+/* One clear mode switch; no decorative slider layer behind it. */
+body[data-coffee-release] .mode__indicator,body[data-coffee-release] .mode-switch__indicator,body[data-coffee-release] .kf-switch::before{display:none!important}
+body[data-coffee-release] .mode,body[data-coffee-release] .mode-switch,body[data-coffee-release] .kf-switch,body[data-coffee-release] .pz13-mode{min-height:50px!important;padding:4px!important;border:1px solid var(--cr-line)!important;border-radius:999px!important;background:var(--cr-soft)!important;box-shadow:none!important}
+body[data-coffee-release] .mode button,body[data-coffee-release] .mode__button,body[data-coffee-release] .mode-switch button,body[data-coffee-release] .kf-switch button,body[data-coffee-release] .pz13-mode button{min-height:42px!important;border-radius:999px!important;font-size:13px!important;font-weight:800!important}
+body[data-coffee-release="concept"] .mode__button.is-active{background:#2f7775!important;color:#fff!important}
+body[data-coffee-release="kaffa"] .kf-switch button[aria-selected="true"],body[data-coffee-release="kaffa"] .kf-switch button.is-active{background:#151412!important;color:#fff!important}
+body[data-coffee-release="vitazov"] .mode__button.is-active,body[data-coffee-release="vitazov"] .mode-switch button.is-active{background:#0c4438!important;color:#fff!important}
+body[data-coffee-release="diamonds"] .mode-switch button.is-active{background:#171a15!important;color:#fff!important}
+body[data-coffee-release="praziarnicka"] .pz13-mode button.is-active{background:#145446!important;color:#fff!important}
+
+/* CTA first, then welcome message, with less empty chrome. */
+body[data-coffee-release] .advisor-entry,body[data-coffee-release] .kf-advisor-entry,body[data-coffee-release] .pz13-advisor-entry,body[data-coffee-release] .entry{position:relative!important;z-index:3!important;flex:none!important}
+body[data-coffee-release="praziarnicka"] .pz13-advisor-entry{min-height:62px!important;margin-bottom:7px!important;border:1.5px solid #256554!important;background:linear-gradient(110deg,#fff,#edf7f3)!important;box-shadow:0 10px 22px -23px rgba(20,84,70,.8)!important}
+body[data-coffee-release="diamonds"] #chatScreen .advisor-entry{min-height:58px!important;margin:7px 12px 7px!important;border:1px solid #171a15!important;background:#171a15!important;color:#fff!important}
+body[data-coffee-release="kaffa"] .kf-advisor-entry{min-height:60px!important;margin:0 0 8px!important;border:1px solid #cfc6b7!important;background:#f7f4ec!important;color:#171614!important}
+body[data-coffee-release="concept"] .advisor-entry{min-height:60px!important;border:1px solid #b9d8d5!important;background:#f3faf8!important;color:#173b39!important}
+body[data-coffee-release="vitazov"] .advisor-entry{min-height:60px!important;border:1px solid #a9cdbc!important;background:#f3f9f6!important;color:#071f1a!important}
+body[data-coffee-release="jolka"] .entry{order:-20!important;margin:8px 14px 5px!important;min-height:62px!important;padding:8px 11px 8px 8px!important}
+
+/* Compact chips, still readable/tappable. */
+body[data-coffee-release] .chip,body[data-coffee-release] .quick-grid button,body[data-coffee-release] .kf-chip,body[data-coffee-release] .pz13-chip,body[data-coffee-release] .chips button{min-height:37px!important;padding-block:7px!important;font-size:12px!important;line-height:1.15!important;border-radius:999px!important}
+body[data-coffee-release="jolka"] .chip,body[data-coffee-release="jolka"] .chips button{min-height:36px!important;font-size:11.8px!important}
+body[data-coffee-release] input{font-size:13.5px!important}
+
+/* Chat spacing: welcome starts immediately below the finder CTA. */
+body[data-coffee-release="diamonds"] .chat-messages{justify-content:flex-start!important;overflow-y:auto!important;padding:7px 13px 8px!important;gap:8px!important}
+body[data-coffee-release="concept"] .chat{justify-content:flex-start!important;padding-top:8px!important}
+body[data-coffee-release="kaffa"] .kf-messages{justify-content:flex-start!important;padding-top:8px!important}.kf-chat-editorial{display:none!important}
+body[data-coffee-release="praziarnicka"] .pz13-chat__messages{justify-content:flex-start!important;padding-top:12px!important;gap:8px!important}
+body[data-coffee-release="jolka"] #chat{justify-content:flex-start!important}
+
+/* High-quality semantic imagery. Use large local sprites instead of tiny prep thumbs. */
+body[data-coffee-release="praziarnicka"] .pz13-option__img{display:none!important}
+body[data-coffee-release="praziarnicka"] .pz13-option__photo.is-proxy{opacity:1!important;z-index:2!important;background-image:url('/assets/praziarnicka/choice-sprite.png')!important;background-size:400% 400%!important}
+body[data-coffee-release] .answer-card img,body[data-coffee-release] .option img,body[data-coffee-release] .kf-option img,body[data-coffee-release] .pz13-option img{width:100%!important;height:100%!important;object-fit:cover!important;filter:saturate(.96) contrast(1.03)!important}
+body[data-coffee-release] .answer-media,body[data-coffee-release] .option__media,body[data-coffee-release] .kf-option__visual,body[data-coffee-release] .pz13-option__visual{overflow:hidden!important;background:var(--cr-soft)!important}
+
+/* Concept: remove the orange cast entirely and follow its teal identity. */
+body[data-coffee-release="concept"] .widget,body[data-coffee-release="concept"] .stage,body[data-coffee-release="concept"] .chat-screen,body[data-coffee-release="concept"] .advisor-screen{background:#fff!important;color:#173b39!important}
+body[data-coffee-release="concept"] .bubble{border-color:#d6e7e4!important;background:#f6fbfa!important;color:#173b39!important}
+body[data-coffee-release="concept"] .message--user .bubble{border-color:#2f7775!important;background:#2f7775!important;color:#fff!important}
+body[data-coffee-release="concept"] .chip{border-color:#c9dfdc!important;background:#f3faf8!important;color:#173b39!important}
+body[data-coffee-release="concept"] .composer__shell{border-color:#bdd8d4!important;background:#fff!important;box-shadow:0 0 0 3px transparent!important}
+body[data-coffee-release="concept"] .composer__shell:focus-within{border-color:#2f7775!important;box-shadow:0 0 0 3px rgba(47,119,117,.12)!important}
+body[data-coffee-release="concept"] .composer__send{background:#2f7775!important;color:#fff!important}
+
+/* Kaffa: cream/black premium hierarchy, no blue wash. */
+body[data-coffee-release="kaffa"] .kf-panel{border-color:#d8d0c4!important;background:#fff!important;box-shadow:0 38px 88px -38px rgba(21,20,18,.58)!important}
+body[data-coffee-release="kaffa"] .kf-switch{background:#f5f2ea!important;border-color:#ddd7cc!important}
+body[data-coffee-release="kaffa"] .kf-message.bot{border-color:#ded7cc!important;background:#f8f6f1!important;color:#171614!important}
+body[data-coffee-release="kaffa"] .kf-message.user{background:#151412!important;color:#fff!important}
+body[data-coffee-release="kaffa"] .kf-chip{border-color:#ddd4c6!important;background:#f8f6f1!important;color:#171614!important}
+body[data-coffee-release="kaffa"] .kf-composer{min-height:54px!important;border:1.5px solid #cfc6b7!important;border-radius:17px!important;background:#fff!important}.kf-composer:focus-within{border-color:#151412!important;box-shadow:0 0 0 3px rgba(21,20,18,.08)!important}.kf-send{background:#151412!important;color:#fff!important}
+
+/* Diamonds: stable stacking and readable compact shell. */
+body[data-coffee-release="diamonds"] #widget{z-index:2147483500!important;background:#fff!important}
+body[data-coffee-release="diamonds"] .widget-stage{isolation:isolate!important;overflow:hidden!important;background:#fff!important}
+body[data-coffee-release="diamonds"] .chat-screen,body[data-coffee-release="diamonds"] .advisor-screen{z-index:1!important;background:#fff!important}
+body[data-coffee-release="diamonds"] #chatScreen .chat-bubble{font-size:12.5px!important;line-height:1.45!important}
+body[data-coffee-release="diamonds"] #chatScreen .quick-grid button{font-size:11.8px!important}
+body[data-coffee-release="diamonds"] #chatScreen .composer input{font-size:13px!important}
+
+/* Jolka: smaller preview/teaser, preserve its strongest header. */
+body[data-coffee-release="jolka"] .launcher__teaser{max-width:244px!important;padding:12px 14px!important}
+body[data-coffee-release="jolka"] .launcher__teaser b{font-size:13.5px!important}
+body[data-coffee-release="jolka"] .launcher__teaser span{font-size:11.5px!important}
+body[data-coffee-release="jolka"] .mode{margin:8px 14px 0!important;padding:3px!important}
+body[data-coffee-release="jolka"] .mode__button{min-height:40px!important;padding:8px!important;font-size:13px!important}
+
+/* Four-step advisor: no scrolling until the final recommendation. */
+body[data-coffee-release="diamonds"] .advisor-content:not(:has(.result-view)){overflow:hidden!important;padding-bottom:10px!important}.advisor-content:not(:has(.result-view)) .question-view{height:100%!important;display:flex!important;flex-direction:column!important;min-height:0!important}.advisor-content:not(:has(.result-view)) .answers{flex:1!important;min-height:0!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;gap:8px!important}.advisor-content:not(:has(.result-view)) .answer-card{min-height:0!important;height:100%!important}.advisor-content:has(.result-view){overflow-y:auto!important}
+body[data-coffee-release="kaffa"] .kf-stage:not(:has(.kf-result)){overflow:hidden!important;display:flex!important;flex-direction:column!important}.kf-stage:not(:has(.kf-result)) .kf-question{height:100%!important;min-height:0!important;display:flex!important;flex-direction:column!important}.kf-stage:not(:has(.kf-result)) .kf-options{flex:1!important;min-height:0!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;gap:8px!important}.kf-stage:not(:has(.kf-result)) .kf-option{height:100%!important;min-height:0!important}.kf-stage:has(.kf-result){overflow-y:auto!important}
+body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-view,.result,.kv-result)),body[data-coffee-release="concept"] #advisorBody:not(:has(.result-view,.result,.concept-result)){overflow:hidden!important}.question{min-height:0!important}.options{min-height:0!important}
+body[data-coffee-release="vitazov"] #advisorBody:not(:has(.result-view,.result,.kv-result)) .question,body[data-coffee-release="concept"] #advisorBody:not(:has(.result-view,.result,.concept-result)) .question{height:100%!important;display:flex!important;flex-direction:column!important}.options{flex:1!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+body[data-coffee-release="praziarnicka"] .pz13-advisor__body{overflow:hidden!important}.pz13-options{grid-template-rows:repeat(2,minmax(0,1fr))!important;gap:8px!important}
+body[data-coffee-release="jolka"] #advisor:not(:has(.result)){overflow:hidden!important;display:flex!important;flex-direction:column!important;min-height:0!important}body[data-coffee-release="jolka"] #advisor:not(:has(.result)) .options{flex:1!important;min-height:0!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;gap:8px!important}body[data-coffee-release="jolka"] #advisor:has(.result){overflow-y:auto!important}
+
+@media(max-width:760px){
+  body[data-coffee-release] .mc-owner{width:100%!important;height:100dvh!important;min-height:0!important;padding:0 16px!important;grid-template-rows:68px minmax(0,1fr) 96px!important;overflow:hidden!important}
+  body[data-coffee-release] .mc-owner-head{border-bottom-width:2px!important}.mc-owner-lockup img{max-width:146px!important;max-height:46px!important}.mc-owner-jolka b{display:none!important}.mc-owner-hero{grid-template-columns:1fr!important;gap:12px!important;padding:18px 0 12px!important;align-content:center!important}.mc-owner-copy h1{font-size:clamp(34px,10vw,43px)!important}.mc-owner-copy>p{font-size:13px!important;line-height:1.42!important;margin-top:12px!important}.mc-owner-actions{margin-top:15px!important;gap:7px!important;flex-wrap:wrap!important}.mc-owner-actions button{min-height:44px!important;padding:0 14px!important;font-size:11.5px!important}.mc-owner-demo{display:none!important}.mc-owner-benefits{grid-template-columns:repeat(3,minmax(0,1fr))!important}.mc-owner-benefits>div{display:grid!important;grid-template-columns:1fr!important;justify-items:center!important;gap:5px!important;padding:9px 5px!important;text-align:center!important}.mc-owner-benefits>div>svg{width:22px!important;height:22px!important}.mc-owner-benefits b{font-size:9.5px!important}.mc-owner-benefits small{display:none!important}
+
+  body[data-coffee-release] #widget.is-open,body[data-coffee-release] #pz13-widget.is-open,body[data-coffee-release] .kf-widget.is-open{position:fixed!important;inset:0!important;width:100dvw!important;height:100dvh!important;max-width:none!important;max-height:none!important;border:0!important;border-radius:0!important}
+  body[data-coffee-release] .kf-widget.is-open .kf-panel{width:100dvw!important;height:100dvh!important;max-width:none!important;max-height:none!important;border:0!important;border-radius:0!important}
+  body[data-coffee-release="diamonds"] .widget-head,body[data-coffee-release="concept"] .widget__header,body[data-coffee-release="vitazov"] .widget__header,body[data-coffee-release="praziarnicka"] .pz13-widget__head,body[data-coffee-release="kaffa"] .kf-panel-head,body[data-coffee-release="jolka"] .widget__header{min-height:68px!important;height:68px!important;flex-basis:68px!important}
+  body[data-coffee-release] .mode,body[data-coffee-release] .mode-switch,body[data-coffee-release] .kf-switch,body[data-coffee-release] .pz13-mode{margin-top:8px!important;margin-bottom:7px!important}
+  body[data-coffee-release] .chip,body[data-coffee-release] .quick-grid button,body[data-coffee-release] .kf-chip,body[data-coffee-release] .pz13-chip,body[data-coffee-release] .chips button{min-height:36px!important;font-size:11.5px!important}
+}
+
+@media(max-width:390px){body[data-coffee-release] .mc-owner{padding:0 13px!important}.mc-owner-copy h1{font-size:33px!important}.mc-owner-actions button{padding:0 12px!important}.mc-owner-benefits b{font-size:9px!important}body[data-coffee-release="jolka"] .launcher__teaser{max-width:220px!important}}
+@media(prefers-reduced-motion:reduce){body[data-coffee-release] *,body[data-coffee-release] *::before,body[data-coffee-release] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
