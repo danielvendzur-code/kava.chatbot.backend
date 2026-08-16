@@ -5,12 +5,12 @@ const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
 fs.mkdirSync('artifacts', { recursive:true });
 
 const demos = [
-  { slug:'praziarnicka', launcher:'#pz13-open', advisor:'.pz13-mode button[data-mode="advisor"]', chat:'.pz13-mode button[data-mode="chat"]', option:'.pz13-option', question:'.pz13-advisor__body', panel:'#pz13-widget', header:'.pz13-widget__head', finder:'.pz13-advisor-entry', messages:'.pz13-chat__messages', chip:'.pz13-chip' },
-  { slug:'diamonds', launcher:'#launcherButton', advisor:'.mode-switch button[data-mode="advisor"]', chat:'.mode-switch button[data-mode="chat"]', option:'.answer-card', question:'#advisorContent', panel:'#widget', header:'.widget-head', finder:'#chatScreen .advisor-entry', messages:'#chatScreen .chat-messages', chip:'#chatScreen .quick-grid button' },
-  { slug:'kaffa', launcher:'#launcher', advisor:'.kf-switch button[data-view="advisor"]', chat:'.kf-switch button[data-view="chat"]', option:'.kf-option', question:'.kf-stage', panel:'.kf-panel', header:'.kf-panel-head', finder:'.kf-advisor-entry', messages:'.kf-messages', chip:'.kf-chip' },
-  { slug:'vitazov', launcher:'#openWidget', advisor:'.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]', option:'#advisorBody .option', question:'#advisorBody', panel:'#widget', header:'.widget__header,.widget-head', finder:'#chatScreen .advisor-entry', messages:'#chatMessages,.chat-messages,.chat', chip:'#quickChips .chip,#quickChips button,.chips button' },
-  { slug:'concept', launcher:'#openWidget', advisor:'.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]', option:'#advisorBody .option', question:'#advisorBody', panel:'#widget', header:'.widget__header,.widget-head', finder:'#chatScreen .advisor-entry', messages:'#chatMessages,.chat-messages,.chat', chip:'#quickChips .chip,#quickChips button,.chips button' },
-  { slug:'jolka', path:'/jolka.html', launcher:'#open', advisor:'.mode__button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"]', option:'#advisor .option', question:'#advisor', panel:'#widget', header:'.widget__header', finder:'#entry', messages:'#chat', chip:'.chip' }
+  { slug:'praziarnicka', launcher:'#pz13-open', advisor:'.pz13-mode button[data-mode="advisor"]', chat:'.pz13-mode button[data-mode="chat"]', option:'.pz13-option', question:'.pz13-advisor__body', panel:'#pz13-widget', header:'.pz13-widget__head', finder:'.pz13-advisor-entry', welcome:'.pz13-message--assistant .pz13-bubble', chip:'.pz13-chip' },
+  { slug:'diamonds', launcher:'#launcherButton', advisor:'.mode-switch button[data-mode="advisor"]', chat:'.mode-switch button[data-mode="chat"]', option:'.answer-card', question:'#advisorContent', panel:'#widget', header:'.widget-head', finder:'#chatScreen .advisor-entry', welcome:'.chat-line:not(.chat-line--user) .chat-bubble', chip:'#chatScreen .quick-grid button' },
+  { slug:'kaffa', launcher:'#launcher', advisor:'.kf-switch button[data-view="advisor"]', chat:'.kf-switch button[data-view="chat"]', option:'.kf-option', question:'.kf-stage', panel:'.kf-panel', header:'.kf-panel-head', finder:'.kf-advisor-entry', welcome:'.kf-message.bot', chip:'.kf-chip' },
+  { slug:'vitazov', launcher:'#openWidget', advisor:'.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]', option:'#advisorBody .option', question:'#advisorBody', panel:'#widget', header:'.widget__header,.widget-head', finder:'#chatScreen .advisor-entry', welcome:'.message:not(.message--user) .bubble', chip:'#quickChips .chip,#quickChips button,.chips button' },
+  { slug:'concept', launcher:'#openWidget', advisor:'.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]', option:'#advisorBody .option', question:'#advisorBody', panel:'#widget', header:'.widget__header,.widget-head', finder:'#chatScreen .advisor-entry', welcome:'.message:not(.message--user) .bubble', chip:'#quickChips .chip,#quickChips button,.chips button' },
+  { slug:'jolka', path:'/jolka.html', launcher:'#open', advisor:'.mode__button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"]', option:'#advisor .option', question:'#advisor', panel:'#widget', header:'.widget__header', finder:'#entry', welcome:'.msg:not(.msg--user) .bubble', chip:'.chip' }
 ];
 
 async function openDemo(page, demo, viewport = { width:1366, height:768 }) {
@@ -67,27 +67,27 @@ test('all six mobile owner pages keep the core pitch and actions above launcher 
     expect(metrics.w).toBeLessThanOrEqual(metrics.iw + 1);
     const launcher = await page.locator(demo.launcher).boundingBox();
     const actions = await owner.locator('.mc-owner-actions').boundingBox();
-    expect(actions.y + actions.height).toBeLessThan(launcher.y - 20);
+    expect(actions.y + actions.height, `${demo.slug} owner CTA clear of launcher`).toBeLessThan(launcher.y - 20);
     await page.screenshot({ path:`artifacts/client-ready-${demo.slug}-owner-mobile.png`, fullPage:true });
   }
 });
 
-test('all six widgets have strong headers, one switch, finder before conversation and compact chips', async ({ page }) => {
+test('all six widgets have strong headers, one switch, finder immediately before welcome and compact chips', async ({ page }) => {
   for (const demo of demos) {
     await openDemo(page, demo, { width:390, height:844 });
     await page.locator(demo.launcher).click({ force:true });
     await expect(page.locator(demo.panel).first()).toBeVisible();
-    await page.locator(demo.chat).first().click({ force:true });
+    await page.locator(demo.chat).filter({ visible:true }).first().click({ force:true });
 
-    const border = await page.locator(demo.header).first().evaluate((node) => parseFloat(getComputedStyle(node).borderBottomWidth));
+    const border = await page.locator(demo.header).filter({ visible:true }).first().evaluate((node) => parseFloat(getComputedStyle(node).borderBottomWidth));
     expect(border, `${demo.slug} header`).toBeGreaterThanOrEqual(1.5);
-    const finder = page.locator(demo.finder).first();
-    const messages = page.locator(demo.messages).first();
+    const finder = page.locator(demo.finder).filter({ visible:true }).first();
+    const welcome = page.locator(demo.welcome).filter({ visible:true }).first();
     await expect(finder).toBeVisible();
-    await expect(messages).toBeVisible();
+    await expect(welcome).toBeVisible();
     const finderBox = await finder.boundingBox();
-    const messagesBox = await messages.boundingBox();
-    expect(finderBox.y, `${demo.slug} finder position`).toBeLessThanOrEqual(messagesBox.y + 14);
+    const welcomeBox = await welcome.boundingBox();
+    expect(finderBox.y + finderBox.height, `${demo.slug} finder directly above welcome`).toBeLessThanOrEqual(welcomeBox.y + 5);
 
     const chips = page.locator(demo.chip).filter({ visible:true });
     expect(await chips.count(), `${demo.slug} quick chips`).toBeGreaterThanOrEqual(4);
@@ -104,9 +104,11 @@ test('all six four-step selectors fit the mobile pane without scrolling', async 
   for (const demo of demos) {
     await openDemo(page, demo, { width:390, height:844 });
     await page.locator(demo.launcher).click({ force:true });
-    await page.locator(demo.advisor).first().click({ force:true });
+    const advisorButton = page.locator(demo.advisor).filter({ visible:true }).first();
+    await expect(advisorButton).toBeVisible();
+    await advisorButton.click({ force:true });
     for (let step = 0; step < 4; step += 1) {
-      const question = page.locator(demo.question).first();
+      const question = page.locator(demo.question).filter({ visible:true }).first();
       await expect(question).toBeVisible();
       const fit = await noOverflow(question);
       expect(fit.ok, `${demo.slug} step ${step + 1}: ${JSON.stringify(fit)}`).toBeTruthy();
@@ -125,7 +127,7 @@ test('Praziarnicka uses high-resolution semantic sprite crops instead of the tin
   const demo = demos[0];
   await openDemo(page, demo, { width:571, height:813 });
   await page.locator(demo.launcher).click();
-  await page.locator(demo.advisor).click();
+  await page.locator(demo.advisor).filter({ visible:true }).first().click();
   const photos = page.locator('.pz13-option__photo.is-proxy');
   await expect(photos).toHaveCount(4);
   const visuals = await photos.evaluateAll((nodes) => nodes.map((node) => ({ bg:getComputedStyle(node).backgroundImage, pos:getComputedStyle(node).backgroundPosition, opacity:Number(getComputedStyle(node).opacity) })));
@@ -141,7 +143,7 @@ test('Diamonds is truly clickable and the closed panel cannot cover the launcher
   expect(await page.locator('#widget').evaluate((node) => getComputedStyle(node).pointerEvents)).toBe('none');
   await page.locator(demo.launcher).click();
   await expect(page.locator('#widget')).toHaveAttribute('aria-hidden', 'false');
-  await page.locator(demo.advisor).click();
+  await page.locator(demo.advisor).filter({ visible:true }).first().click();
   await expect(page.locator('.answer-card').first()).toBeVisible();
   await page.locator('.answer-card').first().click({ force:true });
   await page.waitForTimeout(420);
@@ -153,13 +155,13 @@ test('Kaffa uses cream/ink and Concept uses teal rather than the old blue/orange
   await openDemo(page, kaffa, { width:390, height:844 });
   await page.locator(kaffa.launcher).click();
   await expect(page.locator('.kf-chat-editorial')).toHaveCount(0);
-  const kaffaBg = await page.locator('.kf-switch button[aria-selected="true"],.kf-switch button.is-active').first().evaluate((node) => getComputedStyle(node).backgroundColor);
+  const kaffaBg = await page.locator('.kf-switch button[aria-selected="true"],.kf-switch button.is-active').filter({ visible:true }).first().evaluate((node) => getComputedStyle(node).backgroundColor);
   expect(kaffaBg).toMatch(/rgb\(21, 20, 18\)/);
 
   const concept = demos.find((item) => item.slug === 'concept');
   await openDemo(page, concept, { width:390, height:844 });
   await page.locator(concept.launcher).click();
-  const conceptBg = await page.locator('.mode__button.is-active').first().evaluate((node) => getComputedStyle(node).backgroundColor);
+  const conceptBg = await page.locator('.mode__button.is-active').filter({ visible:true }).first().evaluate((node) => getComputedStyle(node).backgroundColor);
   expect(conceptBg).toMatch(/rgb\(47, 119, 117\)/);
 });
 
