@@ -16,11 +16,9 @@ async function waitForDemo(page, slug) {
     const shared = document.querySelector('#coffee-demo-root');
     return Boolean((pz && pz.childElementCount) || (shared && shared.childElementCount));
   });
-  if (slug === 'praziarnicka') {
-    await page.waitForFunction(() => document.documentElement.dataset.demoReady === 'true');
-  } else {
-    await page.waitForFunction(() => document.documentElement.dataset.jolkaParity === 'ready');
-  }
+  if (slug === 'praziarnicka') await page.waitForFunction(() => document.documentElement.dataset.demoReady === 'true');
+  await page.waitForFunction(() => document.documentElement.dataset.coffeeRelease === 'client-ready');
+  await page.waitForFunction(() => document.querySelector('.mc-owner')?.dataset.clientReadyOwner === 'true');
 }
 
 async function visibleNodeMetrics(page, selector) {
@@ -34,11 +32,11 @@ async function visibleNodeMetrics(page, selector) {
     if (!node) return null;
     const style = getComputedStyle(node);
     return {
-      text: (node.textContent || '').trim(),
-      font: Number.parseFloat(style.fontSize),
-      opacity: Number.parseFloat(style.opacity || '1'),
-      background: style.backgroundColor,
-      connected: node.isConnected
+      text:(node.textContent || '').trim(),
+      font:Number.parseFloat(style.fontSize),
+      opacity:Number.parseFloat(style.opacity || '1'),
+      background:style.backgroundColor,
+      connected:node.isConnected
     };
   }, selector);
 }
@@ -50,12 +48,10 @@ function expectLight(rgb) {
 
 test('all five chats settle to a readable connected final reply', async ({ page }) => {
   await page.setViewportSize({ width:1366, height:768 });
-
   for (const demo of demos) {
-    await page.goto(`${baseURL}/?demo=${demo.slug}`, { waitUntil:'networkidle' });
+    await page.goto(`${baseURL}/?demo=${demo.slug}`, { waitUntil:'domcontentloaded' });
     await waitForDemo(page, demo.slug);
     await page.locator(demo.launcher).click({ force:true });
-
     await expect(page.locator(demo.panel)).toBeVisible();
     await expect(page.locator(demo.chat)).toBeVisible();
     const input = page.locator(demo.input);
@@ -68,20 +64,10 @@ test('all five chats settle to a readable connected final reply', async ({ page 
 
     await input.fill('Akú kávu do automatu?');
     await input.press('Enter');
-
     await expect.poll(async () => {
       const state = await visibleNodeMetrics(page, demo.bot);
-      return Boolean(
-        state &&
-        state.connected &&
-        Number.isFinite(state.font) &&
-        state.font >= 12 &&
-        Number.isFinite(state.opacity) &&
-        state.opacity >= .95 &&
-        state.text.length > 20 &&
-        !/Premýšľam|Načítavam|\.\.\./i.test(state.text)
-      );
-    }, { timeout:7000, intervals:[100, 200, 350, 500] }).toBeTruthy();
+      return Boolean(state && state.connected && Number.isFinite(state.font) && state.font >= 12 && Number.isFinite(state.opacity) && state.opacity >= .95 && state.text.length > 20 && !/Premýšľam|Načítavam|\.\.\./i.test(state.text));
+    }, { timeout:7000, intervals:[100,200,350,500] }).toBeTruthy();
 
     const finalState = await visibleNodeMetrics(page, demo.bot);
     expect(finalState.connected).toBeTruthy();
