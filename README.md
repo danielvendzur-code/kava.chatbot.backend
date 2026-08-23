@@ -76,3 +76,42 @@ Ukážka je demo — pri reálnom nasadení sa katalóg a dopyty napoja na backe
 - výber kávy sa dá napojiť na košík e-shopu (Shoptet, WooCommerce, Shopify…)
 
 Widget sa na existujúci web vkladá jedným `<script>` tagom.
+
+---
+
+## Stránka za widgetom (prezentácia pre majiteľa)
+
+Stránku, ktorú majiteľ pražiarne uvidí ako prvú, stavia
+`coffee-owner-brand.js` — pre každú z ukážok zvlášť, z jej vlastnej palety,
+typografie, fotografií a katalógu. Obsah je v objekte `BRANDS` v tom súbore;
+štýly sú v `coffee-owner-brand.css` pod prefixom `mcb-`.
+
+Pridanie ďalšej pražiarne znamená jeden záznam v `BRANDS`:
+
+```js
+nazov: {
+  name: 'Pražiareň X', place: 'Pražiareň X · mesto',
+  root: '.selektor-korenoveho-prvku',          // kam sa stránka vykreslí
+  shop: 'https://…',                            // odkaz z produktových kariet
+  lockup: '<img src="/brand/…" alt="Pražiareň X">',
+  theme: { ink, brand, accent, soft, paper },   // ich farby
+  display: { family, weight, tracking },        // voliteľné vlastné písmo nadpisov
+  eyebrow, headline, lead,                      // nadpis musí byť ich vlastný
+  stage: { photo, alt },                        // hero fotka
+  ask: '…',                                     // čo píše zákazník
+  pick: { photo, name, notes, price, fit },     // odporúčanie v hero karte
+  asks: ['…','…','…'], answer, steps, result,
+  shelf: [{ photo, name, note, price }, …]      // štyri ich kávy
+}
+```
+
+Tri kávy zo `shelf` sa zároveň zobrazia v samotnom chate hneď pod privítaním
+(`coffee-chat-starter.js`) a zmiznú, len čo zákazník napíše prvú správu.
+
+Poradie stylesheetov riadi `data-mc-order`: `10` usability-release,
+`20` widget-final, `25` header-cleanup, `30` owner-brand. Zoradí ich jeden
+ohraničený prechod v `coffee-widget-final.js` — žiadny MutationObserver,
+ktorý by ich presúval donekonečna.
+
+Audit stavu pred touto zmenou a zoznam opráv je v
+[`AUDIT_2026-08_OWNER_VIEW.md`](AUDIT_2026-08_OWNER_VIEW.md).

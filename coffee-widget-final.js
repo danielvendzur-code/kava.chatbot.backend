@@ -21,18 +21,37 @@
 
   // index.html ends with two <link> elements inside <body>, and the parity layer
   // appends three more to <head> on a timer. A stylesheet in <head> therefore
-  // loses every specificity tie to those. This one is kept last in <body>.
+  // loses every specificity tie to those. This one belongs late in <body>.
+  //
+  // It used to be held there by a MutationObserver — and so did the one in
+  // coffee-usability-release.js. Each move fired the other's observer, which
+  // produced ~920 <body> mutations in four seconds, forever. Worse, the constant
+  // detach/attach kept aborting the stylesheet load, so on some runs neither
+  // sheet ever reached document.styleSheets: the brand custom properties went
+  // undefined and the primary call to action rendered white on white.
+  //
+  // Both sheets now declare a fixed rank and a bounded pass puts them in that
+  // order. No observer, so it terminates.
   const link = document.createElement('link');
   link.rel = 'stylesheet';
   link.href = '/coffee-widget-final.css';
   link.dataset.widgetFinal = 'true';
+  link.dataset.mcOrder = '20';
   document.body.appendChild(link);
 
-  const keepLast = () => {
-    if (document.body.lastElementChild !== link) document.body.appendChild(link);
+  const orderStyles = () => {
+    const ranked = [...document.body.querySelectorAll('link[rel="stylesheet"][data-mc-order]')];
+    if (!ranked.length) return;
+    const sorted = [...ranked].sort((a, b) => Number(a.dataset.mcOrder) - Number(b.dataset.mcOrder));
+    const settled = ranked.every((node, index) => node === sorted[index]) &&
+      document.body.lastElementChild === sorted.at(-1);
+    if (settled) return;
+    sorted.forEach((node) => document.body.appendChild(node));
   };
-  new MutationObserver(keepLast).observe(document.body, { childList: true });
-  new MutationObserver(keepLast).observe(document.head, { childList: true });
+
+  orderStyles();
+  [80, 400, 1200].forEach((delay) => setTimeout(orderStyles, delay));
+  addEventListener('load', orderStyles, { once: true });
 
   /* ------------------------------------------- single entry into the advisor */
 
@@ -57,13 +76,25 @@
     document.querySelectorAll(TEASER).forEach((teaser) => {
       if (teaser.dataset.dismissable === 'true') return;
       teaser.dataset.dismissable = 'true';
-      if (teaser.querySelector('.mc-teaser-close, .teaser__close, .launcher-teaser__close')) return;
+      // Every demo ships its own close control under a different class name.
+      // The old list missed three of them, so Vitazov, Kaffa and Diamonds each
+      // ended up with two close buttons stacked on the same corner.
+      if (teaser.querySelector([
+        '.mc-teaser-close', '.teaser__close', '.launcher-teaser__close',
+        '.launcher__teaser-close', '.kf-teaser-close', '#closeTeaser', '#teaserClose'
+      ].join(','))) return;
 
       const close = document.createElement('button');
       close.type = 'button';
       close.className = 'mc-teaser-close';
       close.setAttribute('aria-label', 'Skryť pozvánku');
-      close.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+      // Sized inline as well as in CSS. If the stylesheet is slow or missing the
+      // bare SVG expands to fill the invitation, which is how the Vitazov demo
+      // came to greet the owner with a black X across the whole bubble.
+      close.style.cssText = 'position:absolute;top:9px;right:9px;width:26px;height:26px;' +
+        'display:grid;place-items:center;padding:0;border:0;border-radius:50%;' +
+        'background:transparent;color:inherit;cursor:pointer;line-height:0';
+      close.innerHTML = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:13px;height:13px"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
       close.addEventListener('click', (event) => {
         event.preventDefault();
         event.stopPropagation();
@@ -139,7 +170,6 @@
       addTeaserClose();
       keepDismissed();
       enhanceCheckout();
-      keepLast();
     });
   });
   observer.observe(document.documentElement, { childList: true, subtree: true });

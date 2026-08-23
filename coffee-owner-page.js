@@ -17,6 +17,10 @@
 
   const slug = window.__COFFEE_DEMO_SLUG__ || window.COFFEE_DEMO_SLUG || document.body.dataset.demo || '';
   if (!['diamonds', 'kaffa', 'vitazov', 'concept'].includes(slug)) return;
+  // coffee-owner-brand.js builds the roastery's page and covers all six demos.
+  // Rendering here first only produces a page that is replaced a frame later,
+  // which the owner sees as a flash.
+  if (window.__MCB_OWNER__ || document.querySelector('[data-mcb-page="true"]')) return;
 
   const esc = (value = '') =>
     String(value).replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));

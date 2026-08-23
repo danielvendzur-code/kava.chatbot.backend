@@ -293,8 +293,17 @@ test('Jolka stays standalone and unchanged by the parity layer', async ({ page }
   expect(await page.locator('script[src="/coffee-jolka-parity.js"]').count()).toBe(0);
   expect(await page.locator('link[href="/coffee-no-black.css"]').count()).toBe(0);
   const metrics = await page.evaluate(() => ({ scrollHeight:document.scrollingElement.scrollHeight, scrollWidth:document.scrollingElement.scrollWidth, innerHeight:window.innerHeight, innerWidth:window.innerWidth }));
-  expect(metrics.scrollHeight).toBeLessThanOrEqual(metrics.innerHeight + 1);
+  // The presentation scrolls now. Locking it to one viewport is what left the
+  // page clipped mid-screen with the rest of the content hidden below the fold
+  // and unreachable, so the guarantee is horizontal containment plus a page
+  // that actually ends where its last section ends.
   expect(metrics.scrollWidth).toBeLessThanOrEqual(metrics.innerWidth + 1);
+  const tail = await page.evaluate(() => {
+    const last = document.querySelector('.mcb-foot') || document.body.lastElementChild;
+    const rect = last.getBoundingClientRect();
+    return Math.round(rect.bottom + window.scrollY);
+  });
+  expect(tail).toBeLessThanOrEqual(metrics.scrollHeight + 1);
   expect(consoleWatch.failures).toEqual([]);
   consoleWatch.stop();
   await page.screenshot({ path:'artifacts/final-jolka-1366x768.png', fullPage:true });

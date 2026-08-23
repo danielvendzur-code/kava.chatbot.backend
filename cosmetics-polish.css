@@ -41,3 +41,16 @@
   .cx-option-copy b{font-size:11.3px!important}
   .cx-option-copy small{font-size:10.1px!important}
 }
+
+/* ---------------------------------------------------- hotlinked photography
+
+   Every photograph in this demo is loaded from another company's server. When
+   one of them refuses the request — naturalno.sk resets the connection, which
+   left the hero as an empty grey rectangle — the container is marked and paints
+   a brand-toned panel instead of showing a broken image box. */
+[data-image-failed="true"] > img { display: none !important; }
+[data-image-failed="true"] {
+  background:
+    radial-gradient(120% 90% at 28% 22%, color-mix(in srgb, var(--cx-accent) 24%, transparent), transparent 62%),
+    linear-gradient(150deg, var(--cx-soft), color-mix(in srgb, var(--cx-paper) 88%, var(--cx-soft))) !important;
+}
