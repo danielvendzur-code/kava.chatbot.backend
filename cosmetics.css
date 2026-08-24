@@ -1,7 +1,7 @@
 :root{
   --cx-brand:#171717;--cx-accent:#a77a58;--cx-soft:#f2ece3;--cx-paper:#fffdf9;--cx-ink:#171717;--cx-line:#ddd5ca;
   --cx-radius:24px;--cx-card-radius:20px;--cx-shadow:0 30px 70px -45px color-mix(in srgb,var(--cx-brand) 48%,transparent);
-  font-family:Inter,"DM Sans",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:light;
+  font-family:"DM Sans",Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color-scheme:light;
 }
 *{box-sizing:border-box}html,body{width:100%;height:100%;margin:0}html.cx-lock,html.cx-lock body{overflow:hidden}body{overflow:hidden;background:var(--cx-paper);color:var(--cx-ink);font-family:inherit}button,input{font:inherit}button{cursor:pointer}a{color:inherit}img{display:block;max-width:100%}svg{display:block}#cosmetics-root{min-height:100dvh}
 

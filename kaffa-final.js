@@ -51,7 +51,7 @@
     const storyFoot = document.querySelector('.kf-story-foot > span');
     setText(storyKicker, 'Odporúčanie z reálnej ponuky');
     setText(storyDescription, 'Sladšie espresso s chuťou kakaa, mandlí a orechov.');
-    setText(storyFoot, '4 otázky · konkrétny výsledok');
+    setText(storyFoot, '4 otázky · jedno odporúčanie');
 
     const footer = document.querySelector('.kf-foot');
     if (footer && !footer.classList.contains('kf-final-footer')) {
@@ -73,7 +73,7 @@
     const teaserTitle = teaser?.querySelector('b');
     const teaserText = teaser?.querySelector('span');
     setText(teaserTitle, 'Nájdite svoju kávu');
-    setText(teaserText, '4 otázky · konkrétny výsledok');
+    setText(teaserText, '4 otázky · jedno odporúčanie');
 
     const entryTitle = document.querySelector('.kf-advisor-entry__copy b');
     setText(entryTitle, 'Nájsť svoju kávu');

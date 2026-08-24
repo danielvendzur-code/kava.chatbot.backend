@@ -216,7 +216,15 @@ test('dialog semantics: escape, focus return, focus trap and scroll lock', async
   await page.keyboard.press('Escape');
   await expect(page.locator('#widget')).toHaveAttribute('aria-hidden', 'true');
   expect(await page.evaluate(() => document.activeElement?.id)).toBe('open');
-  expect(await page.evaluate(() => getComputedStyle(document.body).overflow)).not.toBe('hidden');
+  // The page behind the widget is a single screen and never scrolls, so the
+  // release of the dialog's lock is the marker coming off the body — not a
+  // scrollbar reappearing.
+  expect(await page.evaluate(() => document.body.classList.contains('mcb-dialog-open'))).toBe(false);
+  const rest = await page.evaluate(() => ({
+    scrollHeight: document.scrollingElement.scrollHeight,
+    innerHeight: window.innerHeight
+  }));
+  expect(rest.scrollHeight).toBeLessThanOrEqual(rest.innerHeight + 1);
 });
 
 for (const [width, height] of [[390, 844], [360, 800]]) {

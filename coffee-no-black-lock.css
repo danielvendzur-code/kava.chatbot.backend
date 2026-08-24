@@ -67,22 +67,14 @@ html body[data-demo="kaffa"] .kf-widget-brand{
   visibility:visible!important;
   color:var(--nb-ink)!important;
 }
-html body[data-demo="kaffa"] .kf-widget-brand>.kf-wordmark,
+/* This layer used to hide Kaffa's own wordmark and print "Kaffa Roastery" and
+   "Online" as pseudo-elements instead. coffee-accessibility-preserve.css forces
+   the real wordmark back, so both rendered at once: three lines of text stacked
+   inside a 66 px header, the top one clipped above the panel. The roastery's own
+   lockup wins; the substitutes are gone. */
 html body[data-demo="kaffa"] .kf-widget-brand__copy{display:none!important}
-html body[data-demo="kaffa"] .kf-widget-brand::before{
-  content:"Kaffa Roastery";
-  display:block;
-  color:var(--nb-ink);
-  font:800 13px/1.1 "DM Sans",system-ui,sans-serif;
-  letter-spacing:-.02em;
-}
-html body[data-demo="kaffa"] .kf-widget-brand::after{
-  content:"Online";
-  display:block;
-  margin-left:2px;
-  color:#65716d;
-  font:700 9px/1 "DM Sans",system-ui,sans-serif;
-}
+html body[data-demo="kaffa"] .kf-widget-brand>.kf-wordmark{display:grid!important}
+html body[data-demo="kaffa"] .kf-widget-brand>.kf-wordmark small{white-space:nowrap!important}
 
 /* Pražiarnička: white logo plate with black mark, never the inverted black rectangle. */
 html body[data-demo="praziarnicka"] .pz-widget-brand{background:transparent!important}

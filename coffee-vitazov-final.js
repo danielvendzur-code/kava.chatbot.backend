@@ -88,7 +88,7 @@
       const title = teaser.querySelector('b');
       const text = teaser.querySelector('span');
       if (title) title.textContent = 'Nájdite svoju kávu';
-      if (text) text.textContent = '4 otázky · konkrétny výsledok';
+      if (text) text.textContent = '4 otázky · jedno odporúčanie';
     }
 
     const advisorEntry = document.querySelector('#openAdvisor');

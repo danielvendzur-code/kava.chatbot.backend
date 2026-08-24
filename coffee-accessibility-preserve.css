@@ -28,11 +28,22 @@ html body[data-coffee-release="diamonds"] #widget .screen,
 html body[data-coffee-release="kaffa"] #widget .kf-panel,
 html body[data-coffee-release="kaffa"] #widget .kf-view{background:#fff!important;opacity:1!important}
 
-/* Kaffa always keeps a visible real wordmark in the widget header. */
-html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand,
+/* Kaffa always keeps a visible real wordmark in the widget header.
+   The container stays a row: forcing `display:grid` on it too stacked the
+   wordmark, the bubble icon and the title into a 144 px column inside a 66 px
+   header, which is how "Kaffa Roastery" ended up clipped above the panel and
+   "Online" clipped below it. */
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand{
+  display:flex!important;align-items:center!important;gap:12px!important;
+  min-width:0!important;visibility:visible!important;opacity:1!important;
+}
 html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark,
 html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark strong,
 html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark small{display:grid!important;visibility:visible!important;opacity:1!important}
+/* The bubble icon and the "Kaffa poradca" caption repeat what the wordmark and
+   the mode switch directly below already say. */
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-bubble,
+html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-title{display:none!important}
 html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark strong{font-size:19px!important;line-height:1!important;letter-spacing:.15em!important}
 html body[data-coffee-release="kaffa"] .kf-panel-head .kf-widget-brand .kf-wordmark small{font-size:11px!important;line-height:1.15!important;letter-spacing:.05em!important}
 

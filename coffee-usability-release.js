@@ -12,11 +12,14 @@
   css.rel = 'stylesheet';
   css.href = '/coffee-usability-release.css';
   css.dataset.coffeeUsabilityRelease = 'true';
+  // Ranked instead of observed. This sheet and coffee-widget-final.css used to
+  // fight over being the last child of <body>, each move waking the other's
+  // MutationObserver — an endless loop that also kept aborting both stylesheet
+  // loads. Ranks are ordered once by a bounded pass in coffee-widget-final.js.
+  css.dataset.mcOrder = '10';
   document.body.appendChild(css);
 
-  const keepCssLast = () => {
-    if (document.body.lastElementChild !== css) document.body.appendChild(css);
-  };
+  const keepCssLast = () => {};
 
   const brand = {
     praziarnicka: { name:'Pražiarnička', logo:'<img src="/brand/praziarnicka-logo-official.png" alt="Pražiarnička">' },
@@ -93,8 +96,12 @@
   }
 
   function renderOwner() {
+    // coffee-owner-brand.js builds the roastery's own page. When it is present
+    // this generic version would only paint a page that gets replaced a frame
+    // later, so it stands down.
+    if (window.__MCB_OWNER__) return;
     const target = ownerTarget();
-    if (!target || target.dataset.releaseOwner === 'true') return;
+    if (!target || target.dataset.releaseOwner === 'true' || target.dataset.mcbPage === 'true') return;
     target.dataset.releaseOwner = 'true';
     target.classList.add('mc-owner');
     target.innerHTML = ownerMarkup();
