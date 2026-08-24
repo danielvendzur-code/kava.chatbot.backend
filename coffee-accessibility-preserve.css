@@ -19,8 +19,10 @@ html body[data-coffee-release] .kf-widget[aria-hidden="false"]{pointer-events:au
 html body[data-coffee-release="praziarnicka"] #pz13-widget,
 html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-stage,
 html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-chat,
-html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-chat__messages,
-html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-chat__bottom{background:#fff!important;opacity:1!important}
+html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-chat__messages{background:#fff!important;opacity:1!important}
+/* The bottom tray is the one surface here that is deliberately tinted, so it
+   only has to stay opaque — coffee-widget-polish.css owns its colour. */
+html body[data-coffee-release="praziarnicka"] #pz13-widget .pz13-chat__bottom{opacity:1!important}
 
 /* Diamonds and Kaffa use light opaque work surfaces too. */
 html body[data-coffee-release="diamonds"] #widget .widget-stage,

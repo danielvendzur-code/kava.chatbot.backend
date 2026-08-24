@@ -74,20 +74,21 @@ test('every owner page is that roastery\'s own, with a visible primary action', 
     await expect(owner.locator('[data-release-open="chat"]').first()).toBeVisible();
     await expect(owner.locator('a[href*="mojchatbot.sk/kontakt"]').first()).toBeVisible();
 
-    // The customer clicks through a picker; the visual says so rather than
-    // showing a typed question or a product photograph.
-    await expect(owner.locator('.mcb-preview-options li')).toHaveCount(4);
-    await expect(owner.locator('.mcb-preview-options li.is-picked')).toHaveCount(1);
-    await expect(owner.locator('.mcb-preview-result')).toBeVisible();
+    // The panel describes what the advisor does; it does not mock up a picker
+    // with invented option labels.
+    await expect(owner.locator('.mcb-figures li')).toHaveCount(3);
+    await expect(owner.locator('.mcb-figures strong').first()).toBeVisible();
 
-    // Benefits, price and the way to reach us are all on the first screen.
+    // Benefits, one price and the way to reach us are all on the first screen.
     await expect(owner.locator('.mcb-benefits li').first()).toBeVisible();
-    await expect(owner.locator('.mcb-plan')).toHaveCount(2);
-    await expect(owner.locator('.mcb-plan-price strong').first()).toBeVisible();
+    await expect(owner.locator('.mcb-plan')).toHaveCount(1);
+    await expect(owner.locator('.mcb-plan-price strong')).toHaveCount(2);
 
-    // Nothing that reads as a demo, a trial or an install instruction.
+    // Nothing that reads as a demo, a trial or an install instruction, and
+    // nothing promised in the price that is billed separately.
     const text = await owner.innerText();
     expect(text).not.toMatch(/Ukážka pripraven|riadok kódu|&lt;script|zdarma|trial|Návrh AI|umelá inteligencia/i);
+    expect(text).not.toMatch(/Priebežné úpravy ponuky/i);
 
     // One screen: the page must never grow a scrollbar.
     const metrics = await pageMetrics(page);

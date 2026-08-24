@@ -35,19 +35,19 @@
     /* Opacity is pinned: some runtimes run their own reveal transition over
        anything added to the log, which left the offer permanently half-faded.
        The entrance here is a translate only, so nothing can wash it out. */
-    html body .mcs-starter{--mcs-line:color-mix(in srgb,currentColor 14%,transparent);display:grid;gap:9px;margin:12px 0 4px;opacity:1!important;filter:none!important;animation:mcs-in .45s cubic-bezier(.22,1,.36,1) both}
+    html body .mcs-starter{--mcs-line:color-mix(in srgb,currentColor 14%,transparent);display:grid;gap:7px;margin:10px 0 2px;opacity:1!important;filter:none!important;animation:mcs-in .45s cubic-bezier(.22,1,.36,1) both}
     @keyframes mcs-in{from{transform:translateY(10px)}to{transform:none}}
     .mcs-starter-label{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:color-mix(in srgb,currentColor 58%,transparent)}
     .mcs-starter-label::after{content:"";flex:1;height:1px;background:var(--mcs-line)}
-    .mcs-list{display:grid;gap:7px;margin:0;padding:0;list-style:none}
-    .mcs-item{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:11px;align-items:center;padding:8px;border:1px solid var(--mcs-line);border-radius:15px;color:inherit;text-decoration:none;background:color-mix(in srgb,#fff 62%,transparent);transition:transform .22s cubic-bezier(.22,1,.36,1),border-color .22s ease,box-shadow .22s ease}
+    .mcs-list{display:grid;gap:6px;margin:0;padding:0;list-style:none}
+    .mcs-item{display:grid;grid-template-columns:40px minmax(0,1fr) auto;gap:10px;align-items:center;padding:7px;border:1px solid var(--mcs-line);border-radius:15px;color:inherit;text-decoration:none;background:color-mix(in srgb,#fff 62%,transparent);transition:transform .22s cubic-bezier(.22,1,.36,1),border-color .22s ease,box-shadow .22s ease}
     .mcs-item:hover{transform:translateY(-2px);border-color:color-mix(in srgb,currentColor 32%,transparent);box-shadow:0 14px 26px -20px color-mix(in srgb,currentColor 70%,transparent)}
-    .mcs-item img{width:46px;height:46px;border-radius:11px;object-fit:cover;background:color-mix(in srgb,currentColor 7%,transparent)}
+    .mcs-item img{width:40px;height:40px;border-radius:10px;object-fit:cover;background:color-mix(in srgb,currentColor 7%,transparent)}
     .mcs-item div{min-width:0;display:grid;gap:2px}
     .mcs-item b{font-size:12.5px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .mcs-item small{font-size:11px;line-height:1.25;color:color-mix(in srgb,currentColor 60%,transparent);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .mcs-item em{font-style:normal;font-size:11.5px;font-weight:850;white-space:nowrap}
-    .mcs-starter-note{margin:1px 0 0;font-size:11px;line-height:1.35;color:color-mix(in srgb,currentColor 56%,transparent)}
+    .mcs-starter-note{margin:0;font-size:11px;line-height:1.3;color:color-mix(in srgb,currentColor 56%,transparent)}
     /* An empty log is laid out bottom-up (justify-content:flex-end) so the
        greeting hugs the composer. Once there is more content than height, flex
        overflows upward and the overflow is unreachable by scrolling — the

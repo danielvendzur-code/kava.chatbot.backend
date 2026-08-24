@@ -176,6 +176,9 @@ test('mobile, fallback and reduced motion remain robust', async ({ browser }) =>
   // it just no longer announces its own plumbing to the customer.
   await expect(page.locator('.message--fallback')).toBeVisible();
   await expect(page.locator('.message--fallback')).not.toContainText('Overená lokálna odpoveď');
-  await expect(page.locator('.message--fallback time, .message--fallback small')).toHaveCount(0);
+  // The guard is against the reply announcing its own plumbing, not against a
+  // clock: every message carries a timestamp now, this one included.
+  await expect(page.locator('.message--fallback small')).toHaveCount(0);
+  await expect(page.locator('.message--fallback time')).toHaveCount(1);
   await context.close();
 });

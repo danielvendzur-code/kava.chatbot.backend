@@ -47,26 +47,24 @@
 
   /* --------------------------------------------------------------- pricing */
 
-  // EDIT HERE. These are the only numbers on the page. `note` is the one line
-  // under the two options; keep it short.
+  // EDIT HERE. The only numbers on the page.
+  //
+  // `points` is what the price actually covers, so nothing goes in it that is
+  // billed separately — ongoing catalogue work is not included and is not
+  // promised here. `addon` sits apart from that list for the same reason:
+  // it names an extra, not part of the package. Deleting the `addon` line
+  // removes it from every demo and changes nothing else.
   const PRICING = {
     currency: '€',
-    plans: [
-      {
-        name: 'Poradca',
-        setup: '290',
-        monthly: '29',
-        points: ['Chat aj výber kávy', 'Naplnený vaším katalógom', 'Priebežné úpravy ponuky']
-      },
-      {
-        name: 'Poradca + e-shop',
-        setup: '490',
-        monthly: '49',
-        featured: true,
-        points: ['Všetko z verzie Poradca', 'Napojenie na váš košík', 'Mesačný prehľad otázok']
-      }
+    setup: '297',
+    monthly: '10',
+    points: [
+      'Odpovie na otázky a dovedie zákazníka ku káve',
+      'Pri nasadení naplnený vaším katalógom',
+      'História konverzácií — vidíte, na čo sa pýtajú'
     ],
-    note: 'Jednorazové nasadenie a mesačná prevádzka. Bez viazanosti, vypnúť sa dá kedykoľvek.'
+    addon: 'Napojenie na košík e-shopu na požiadanie, za príplatok.',
+    note: 'Bez viazanosti, vypnúť sa dá kedykoľvek.'
   };
 
   /* ------------------------------------------------------------------ data */
@@ -92,13 +90,11 @@
         [icons.chat, 'Odpovie za váš tím', 'Otázky o kyslosti, mletí a automate vybaví bez vás.'],
         [icons.clock, 'Nikdy nespí', 'Objednávky chodia večer. Vtedy je online.']
       ],
-      preview: {
-        step: 3, of: 4,
-        title: 'Ako ju pijete najčastejšie?',
-        options: ['Čiernu', 'S mliekom', 'Striedam', 'Neviem'],
-        picked: 1,
-        result: { name: 'Paganini blend', notes: 'čokoláda · mandle · orechy', price: 'od 11,90 €' }
-      }
+      figures: [
+        ['24/7', 'odpovedá', 'aj večer a cez víkend'],
+        ['4', 'otázky', 'príprava · chuť · nápoj · kofeín'],
+        ['1', 'konkrétna káva', 'z piatich vašich káv, s dôvodom']
+      ]
     },
 
     diamonds: {
@@ -121,13 +117,11 @@
         [icons.chat, 'Odpovie za váš tím', 'Bez čakania na správu a bez opakovania toho istého.'],
         [icons.clock, 'Nikdy nespí', 'Objednávky chodia večer. Vtedy je online.']
       ],
-      preview: {
-        step: 2, of: 4,
-        title: 'Aký profil hľadáte?',
-        options: ['Sladký', 'Ovocný', 'Čokoládový', 'Prekvapte ma'],
-        picked: 1,
-        result: { name: 'Keňa Mugaya AB', notes: 'egreš · černica · jablko', price: 'od 16,00 €' }
-      }
+      figures: [
+        ['24/7', 'odpovedá', 'aj večer a cez víkend'],
+        ['4', 'otázky', 'príprava · chuť · nápoj · kofeín'],
+        ['1', 'konkrétna káva', 'z vašej ponuky, s dôvodom']
+      ]
     },
 
     kaffa: {
@@ -152,13 +146,11 @@
         [icons.chat, 'Odpovie za váš tím', 'Aciditu a ovocnosť vysvetlí bez straty presnosti.'],
         [icons.clock, 'Nikdy nespí', 'Objednávky chodia večer. Vtedy je online.']
       ],
-      preview: {
-        step: 2, of: 4,
-        title: 'Ako kávu pijete?',
-        options: ['Espresso', 'S mliekom', 'Filter', 'Striedam'],
-        picked: 1,
-        result: { name: 'Mokka Espresso Blend', notes: 'kakao · mandle · škorica', price: 'od 11,90 €' }
-      }
+      figures: [
+        ['24/7', 'odpovedá', 'aj večer a cez víkend'],
+        ['4', 'otázky', 'príprava · chuť · nápoj · kofeín'],
+        ['1', 'konkrétna káva', 'z vašej ponuky, bez odbornej hantýrky']
+      ]
     },
 
     vitazov: {
@@ -174,27 +166,26 @@
       ],
       lockup: '<img src="/assets/vitazov-logo.svg" alt="Káva Víťazov">',
       theme: { ink: '#071f1a', brand: '#0c4438', accent: '#5f8a1f', soft: '#eef7e2', paper: '#ffffff' },
-      headline: 'Domov, do kancelárie aj do automatu — <em>jedným výberom</em>.',
-      lead: 'Firma pre pätnásť ľudí hľadá inú kávu než človek s pákovým kávovarom. Poradca sa na to opýta ako prvé.',
+      headline: 'Iná káva pre firmu, <em>iná pre domácu kuchyňu</em>.',
+      lead: 'Firma pre pätnásť ľudí hľadá niečo iné než človek s pákovým kávovarom. Poradca sa na to opýta ako prvé.',
       benefits: [
-        [icons.cup, 'Rozlíši, kto kupuje', 'Domácnosť, kancelária alebo automat — každá dostane inú kávu.'],
+        [icons.cup, 'Vie, pre koho vyberá', 'Rozozná, či kávu kupujete sebe alebo celej firme, a podľa toho radí.'],
         [icons.chat, 'Odpovie za váš tím', 'Bez čakania na e-mail a bez opakovania toho istého.'],
         [icons.clock, 'Nikdy nespí', 'Objednávky chodia večer. Vtedy je online.']
       ],
-      preview: {
-        step: 1, of: 4,
-        title: 'Kam kávu kupujete?',
-        options: ['Domov', 'Do kancelárie', 'Do automatu', 'Skúsiť novú'],
-        picked: 1,
-        result: { name: 'Office Blend', notes: 'čokoláda · karamel · orechy', price: 'od 15,90 €' }
-      }
+      figures: [
+        ['24/7', 'odpovedá', 'aj večer a cez víkend'],
+        ['4', 'otázky', 'použitie · chuť · príprava · nápoj'],
+        ['1', 'konkrétna káva', 'z vašej ponuky, s dôvodom']
+      ]
     },
 
     concept: {
       name: 'Concept Coffee Roasters',
       place: 'Concept Coffee Roasters · Piešťany a Bratislava',
       forName: 'Concept Coffee Roasters',
-      mark: { src: '/brand/concept-official-logo.png' },
+      // A wide wordmark is unreadable at 34 px in a circle; the initial is not.
+      mark: { text: 'C', font: '"DM Sans", system-ui, sans-serif' },
       root: '.concept-page',
       shop: 'https://www.conceptcoffee.sk/',
       shelf: [
@@ -211,13 +202,11 @@
         [icons.chat, 'Odpovie za váš tím', 'Chuťové poznámky preloží na jednoduchú voľbu.'],
         [icons.clock, 'Nikdy nespí', 'Objednávky chodia večer. Vtedy je online.']
       ],
-      preview: {
-        step: 2, of: 4,
-        title: 'Čo v šálke hľadáte?',
-        options: ['Sladké', 'Ovocné', 'Výrazné', 'Prekvapte ma'],
-        picked: 1,
-        result: { name: 'Weithaga AA – Keňa', notes: 'ríbezle · grep · vanilka', price: 'od 15,00 €' }
-      }
+      figures: [
+        ['24/7', 'odpovedá', 'aj večer a cez víkend'],
+        ['4', 'otázky', 'príprava · chuť · nápoj · kofeín'],
+        ['1', 'konkrétna káva', 'z aktuálnej sezónnej ponuky']
+      ]
     },
 
     jolka: {
@@ -241,13 +230,11 @@
         [icons.chat, 'Odpovie za váš tím', 'Aciditu vysvetlí na stupnici z vašich obalov.'],
         [icons.clock, 'Nikdy nespí', 'Objednávky chodia večer. Vtedy je online.']
       ],
-      preview: {
-        step: 2, of: 4,
-        title: 'Akú chuť máte rád?',
-        options: ['Čokoládovú', 'Sladkú', 'Ovocnú', 'Výraznú'],
-        picked: 0,
-        result: { name: 'Zmes Jolka', notes: 'čokoláda · orechy · nízka acidita', price: '13,50 € / 250 g' }
-      }
+      figures: [
+        ['24/7', 'odpovedá', 'aj večer a cez víkend'],
+        ['4', 'otázky', 'príprava · chuť · nápoj · acidita'],
+        ['1', 'konkrétna káva', 'z vašej ponuky, s dôvodom']
+      ]
     }
   };
 
@@ -258,22 +245,16 @@
 
   /* --------------------------------------------------------------- markup */
 
-  const plan = (item, index) => `
-    <article class="mcb-plan${item.featured ? ' is-featured' : ''}" style="--i:${index}">
-      <b>${esc(item.name)}</b>
+  const planCard = () => `
+    <article class="mcb-plan">
       <p class="mcb-plan-price">
-        <strong>${esc(item.setup)}&nbsp;${esc(PRICING.currency)}</strong><span>nasadenie</span>
+        <strong>${esc(PRICING.setup)}&nbsp;${esc(PRICING.currency)}</strong><span>nasadenie</span>
         <i>+</i>
-        <strong>${esc(item.monthly)}&nbsp;${esc(PRICING.currency)}</strong><span>mesačne</span>
+        <strong>${esc(PRICING.monthly)}&nbsp;${esc(PRICING.currency)}</strong><span>mesačne</span>
       </p>
-      <ul>${item.points.map((point) => `<li>${icons.check}<span>${esc(point)}</span></li>`).join('')}</ul>
+      <ul>${PRICING.points.map((point) => `<li>${icons.check}<span>${esc(point)}</span></li>`).join('')}</ul>
+      ${PRICING.addon ? `<p class="mcb-plan-addon">${esc(PRICING.addon)}</p>` : ''}
     </article>`;
-
-  const previewOption = (label, index) => `
-    <li${index === brand.preview.picked ? ' class="is-picked"' : ''} style="--i:${index}">
-      <span>${esc(label)}</span>
-      ${index === brand.preview.picked ? `<i>${icons.check}</i>` : ''}
-    </li>`;
 
   const markup = () => `
     <header class="mcb-head">
@@ -303,31 +284,20 @@
         </ul>
       </section>
 
-      <section class="mcb-preview" aria-label="Ako zákazník vyberá kávu">
-        <div class="mcb-preview-frame">
-          <div class="mcb-preview-bar">
-            <span class="mcb-preview-dots" aria-hidden="true">${
-              Array.from({ length: brand.preview.of }, (_, i) =>
-                `<i${i < brand.preview.step ? ' class="is-done"' : ''}></i>`).join('')
-            }</span>
-            <small>Krok ${brand.preview.step} zo ${brand.preview.of}</small>
-          </div>
-
-          <p class="mcb-preview-question">${esc(brand.preview.title)}</p>
-          <ul class="mcb-preview-options">${brand.preview.options.map(previewOption).join('')}</ul>
-
-          <div class="mcb-preview-result">
-            <small>Odporúčanie</small>
-            <b>${esc(brand.preview.result.name)}</b>
-            <span>${esc(brand.preview.result.notes)}</span>
-            <p><strong>${esc(brand.preview.result.price)}</strong><em>${icons.bag} Do košíka</em></p>
-          </div>
-        </div>
+      <section class="mcb-figures" aria-label="Čo poradca robí">
+        <ul>
+          ${brand.figures.map(([value, name, note], i) => `
+            <li style="--i:${i}">
+              <strong>${esc(value)}</strong>
+              <b>${esc(name)}</b>
+              <small>${esc(note)}</small>
+            </li>`).join('')}
+        </ul>
       </section>
     </main>
 
     <section class="mcb-pricing" aria-label="Cena">
-      <div class="mcb-plans">${PRICING.plans.map(plan).join('')}</div>
+      ${planCard()}
       <div class="mcb-pricing-side">
         <p>${esc(PRICING.note)}</p>
         <a class="mcb-btn mcb-btn--accent" href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">

@@ -99,28 +99,36 @@ nazov: {
   root: '.selektor-korenoveho-prvku',           // kam sa stránka vykreslí
   shop: 'https://…',                            // odkaz z produktových kariet
   lockup: '<img src="/brand/…" alt="Pražiareň X">',
-  mark: { src: '…' } | { text: 'X', font: '…' },// značka na bubline widgetu
+  mark: { text: 'X', font: '…' },               // značka na bubline widgetu
   theme: { ink, brand, accent, soft, paper },   // ich farby
   display: { family, weight, tracking },        // voliteľné písmo nadpisov
   headline, lead,                               // nadpis musí byť ich vlastný
   benefits: [[ikona, titulok, text], …],        // tri
-  preview: { step, of, title, options, picked, result },  // postup vo výbere
+  figures: [[hodnota, názov, riadok], …],       // tri čísla v paneli vpravo
   shelf: [{ photo, name, note, price }, …]      // ponuka do chatu
 }
 ```
 
 ### Cena
 
-Ceny sú na jednom mieste — konštanta `PRICING` na začiatku
-`coffee-owner-brand.js`. Sú to **návrhové čísla**, nie dohodnutý cenník; menia
-sa tam a premietnu sa do všetkých ukážok naraz.
+Jedna verzia — **297 € nasadenie + 10 € mesačne** — v konštante `PRICING` na
+začiatku `coffee-owner-brand.js`. Mení sa tam a premietne sa do všetkých ukážok
+naraz.
+
+Do `points` patrí len to, čo cena naozaj kryje; nič účtované osobitne. Riadok
+`addon` (napojenie na košík e-shopu) stojí pod zoznamom oddelene práve preto,
+že je to doplnok — zmazaním toho riadku zmizne zo všetkých ukážok.
 
 ### Widget
 
-- `coffee-widget-polish.js` / `.css` — zjednotená pozvánka nad bublinou
-  (jeden krátky riadok, ~205 px namiesto 290 px), značka pražiarne na bubline
-  namiesto generickej ikonky, a popisky sekcií v paneli
-  („Rýchly výber“, „Časté otázky“), aby sa v ňom dalo zorientovať.
+- `coffee-widget-polish.js` / `.css` — zjednotená pozvánka nad bublinou, značka
+  pražiarne na bubline namiesto generickej ikonky, popisky sekcií v paneli
+  („Rýchly výber“, „Časté otázky“), tónovaná spodná lišta s výraznejšími chipmi
+  a vstupným poľom, čas pri správach, „píše…“ pred odpoveďou, „Premýšľam…“ pred
+  výsledkom poradcu a pulzujúci stav Online. Farby si berie zo záznamu značky,
+  nie z `--nb-*` — tie sa na Pražiarničke nikdy nenačítali, lebo
+  `coffee-no-black.css` ich píše pod `data-demo="praziarnicka"`, kým skutočná
+  hodnota je `praziarnicka-v13`.
 - `coffee-chat-starter.js` — dve kávy z ponuky hneď pod privítaním, s odkazom
   do ich e-shopu. Zmiznú, len čo zákazník napíše prvú správu.
 
