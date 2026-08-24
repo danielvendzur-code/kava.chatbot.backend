@@ -1,0 +1,125 @@
+/**
+ * Widget polish shared by all six demos. Ranked 35, after every per-brand
+ * layer, so these corrections are the last word.
+ */
+
+/* --------------------------------------------------------- the invitation */
+
+/* It was a 290 px card with a 15 px title and a 13.5 px subtitle, so both lines
+   wrapped and the card grew to four lines of text sitting on the launcher. It
+   is now one tight card with one line each. */
+html body [data-mcb-teaser="true"][data-mcb-teaser] {
+  width: auto !important;
+  max-width: 246px !important;
+  min-height: 0 !important;
+  /* Concept pushed the card 76 px clear of its launcher; the shared wrapper
+     already stacks them with a gap, so that margin was only dead space. */
+  margin: 0 !important;
+  padding: 11px 34px 11px 14px !important;
+  border-radius: 16px 16px 4px 16px !important;
+  box-shadow: 0 16px 34px -24px rgba(18, 22, 18, .5) !important;
+}
+html body [data-mcb-teaser="true"][data-mcb-teaser] b,
+html body [data-mcb-teaser="true"][data-mcb-teaser] strong {
+  display: block !important;
+  margin: 0 0 2px !important;
+  font-size: 13px !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  letter-spacing: -.01em !important;
+  white-space: nowrap !important;
+}
+/* Concept, Jolka and Prazarnicka wrap their invitation in an inner button that
+   carries its own padding, which added a second box inside the card. */
+html body [data-mcb-teaser="true"][data-mcb-teaser] > button:not([class*="close"]) {
+  display: block !important;
+  width: 100% !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  text-align: left !important;
+  font: inherit !important;
+  color: inherit !important;
+}
+html body [data-mcb-teaser="true"][data-mcb-teaser] span:not([class*="close"]) {
+  display: block !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  line-height: 1.3 !important;
+  white-space: nowrap !important;
+}
+html body [data-mcb-teaser="true"][data-mcb-teaser] button[class*="close"],
+html body [data-mcb-teaser="true"][data-mcb-teaser] .mc-teaser-close {
+  top: 7px !important; right: 7px !important;
+  width: 22px !important; height: 22px !important;
+  display: grid !important; place-items: center !important;
+  font-size: 15px !important; line-height: 1 !important;
+}
+html body [data-mcb-teaser="true"][data-mcb-teaser] button[class*="close"] svg,
+html body [data-mcb-teaser="true"][data-mcb-teaser] .mc-teaser-close svg { width: 11px !important; height: 11px !important; }
+
+/* ------------------------------------------------------------- the marker */
+
+html body .mcb-w-launcher {
+  width: 64px !important; height: 64px !important;
+  border: 1px solid color-mix(in srgb, var(--nb-ink, #16211d) 10%, transparent) !important;
+  box-shadow: 0 18px 34px -20px rgba(18, 22, 18, .6) !important;
+  transition: transform .22s cubic-bezier(.22, 1, .36, 1), box-shadow .22s ease !important;
+}
+html body .mcb-w-launcher:hover { transform: translateY(-2px) !important; }
+html body .mcb-w-launcher img {
+  max-width: 34px !important; max-height: 34px !important;
+  object-fit: contain !important;
+}
+html body .mcb-w-letter {
+  display: block !important;
+  color: #fff !important;
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: .06em !important;
+}
+
+/* ------------------------------------------------------------- the panel */
+
+/* A caption above each block, so the panel reads as separate parts. */
+html body .mcb-w-caption {
+  display: block !important;
+  /* Indented to sit over the block it labels rather than flush to the panel. */
+  margin: 10px 14px 5px !important;
+  color: color-mix(in srgb, var(--nb-ink, #16211d) 52%, transparent) !important;
+  font-size: 11px !important;
+  font-weight: 900 !important;
+  letter-spacing: .1em !important;
+  text-transform: uppercase !important;
+}
+html body .mcb-w-caption:first-child { margin-top: 2px !important; }
+
+/* The mode switch is the panel's primary control, so it is separated from
+   what follows rather than butting straight into it. */
+html body .mcb-w-switch {
+  margin-bottom: 4px !important;
+  padding-bottom: 0 !important;
+}
+
+/* The lockup is the largest thing in the header — it is their shop. */
+html body [data-demo] .widget__header img,
+html body [data-demo] .widget-head img,
+html body [data-demo] .kf-panel-head img,
+html body [data-demo] .pz13-widget__head img {
+  max-height: 34px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body .mcb-w-launcher { transition: none !important; }
+}
+
+@media (max-width: 560px) {
+  html body [data-mcb-teaser="true"][data-mcb-teaser] { max-width: min(232px, calc(100vw - 104px)) !important; }
+  html body .mcb-w-launcher { width: 58px !important; height: 58px !important; }
+}

@@ -54,7 +54,7 @@ test('every owner page is that roastery\'s own, with a visible primary action', 
     const owner = page.locator('[data-mcb-page="true"]');
     await expect(owner).toBeVisible();
 
-    const headline = (await owner.locator('.mcb-hero h1').innerText()).trim();
+    const headline = (await owner.locator('.mcb-copy h1').innerText()).trim();
     expect(headline.length).toBeGreaterThan(0);
     expect(headlines.has(headline)).toBe(false);
     headlines.add(headline);
@@ -74,17 +74,24 @@ test('every owner page is that roastery\'s own, with a visible primary action', 
     await expect(owner.locator('[data-release-open="chat"]').first()).toBeVisible();
     await expect(owner.locator('a[href*="mojchatbot.sk/kontakt"]').first()).toBeVisible();
 
-    // The roastery's own coffees, with photography that actually resolves.
-    await expect(owner.locator('.mcb-shelf .mcb-card')).toHaveCount(4);
-    const brokenPhotos = await owner.locator('.mcb-shelf img, .mcb-pick img').evaluateAll(
-      (nodes) => nodes.filter((node) => node.complete && node.naturalWidth === 0).length
-    );
-    expect(brokenPhotos).toBe(0);
+    // The customer clicks through a picker; the visual says so rather than
+    // showing a typed question or a product photograph.
+    await expect(owner.locator('.mcb-preview-options li')).toHaveCount(4);
+    await expect(owner.locator('.mcb-preview-options li.is-picked')).toHaveCount(1);
+    await expect(owner.locator('.mcb-preview-result')).toBeVisible();
 
+    // Benefits, price and the way to reach us are all on the first screen.
+    await expect(owner.locator('.mcb-benefits li').first()).toBeVisible();
+    await expect(owner.locator('.mcb-plan')).toHaveCount(2);
+    await expect(owner.locator('.mcb-plan-price strong').first()).toBeVisible();
+
+    // Nothing that reads as a demo, a trial or an install instruction.
     const text = await owner.innerText();
-    expect(text).not.toMatch(/Návrh AI|umelá inteligencia|match|zhoda\s*·\s*\d+\s*%/i);
+    expect(text).not.toMatch(/Ukážka pripraven|riadok kódu|&lt;script|zdarma|trial|Návrh AI|umelá inteligencia/i);
 
+    // One screen: the page must never grow a scrollbar.
     const metrics = await pageMetrics(page);
+    expect(metrics.h).toBeLessThanOrEqual(metrics.ih + 1);
     expect(metrics.w).toBeLessThanOrEqual(metrics.iw + 1);
     await page.screenshot({ path:`artifacts/release-${demo.slug}-owner.png`, fullPage:true });
   }
@@ -97,10 +104,11 @@ test('every owner page stays readable and contained on a phone', async ({ page }
     await expect(owner.locator('.mcb-lockup')).toBeVisible();
     await expect(owner.locator('[data-release-open="advisor"]').first()).toBeVisible();
     await expect(owner.locator('[data-release-open="chat"]').first()).toBeVisible();
-    await expect(owner.locator('.mcb-stage')).toBeVisible();
+    await expect(owner.locator('.mcb-plan').first()).toBeVisible();
+    await expect(owner.locator('.mcb-foot')).toBeVisible();
 
     // No explanatory text on this surface drops below 11 px.
-    const sizes = await owner.locator('p, b, small, span, em, li, h1, h2, h3, button, a').evaluateAll((nodes) =>
+    const sizes = await owner.locator('p, b, small, span, em, li, h1, button, a').evaluateAll((nodes) =>
       nodes.filter((node) => {
         const style = getComputedStyle(node);
         return style.display !== 'none' && style.visibility !== 'hidden' && node.textContent.trim();
@@ -109,6 +117,7 @@ test('every owner page stays readable and contained on a phone', async ({ page }
     expect(Math.min(...sizes)).toBeGreaterThanOrEqual(11);
 
     const metrics = await pageMetrics(page);
+    expect(metrics.h).toBeLessThanOrEqual(metrics.ih + 1);
     expect(metrics.w).toBeLessThanOrEqual(metrics.iw + 1);
     await page.screenshot({ path:`artifacts/release-${demo.slug}-owner-mobile.png`, fullPage:true });
   }

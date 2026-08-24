@@ -82,36 +82,52 @@ Widget sa na existujúci web vkladá jedným `<script>` tagom.
 ## Stránka za widgetom (prezentácia pre majiteľa)
 
 Stránku, ktorú majiteľ pražiarne uvidí ako prvú, stavia
-`coffee-owner-brand.js` — pre každú z ukážok zvlášť, z jej vlastnej palety,
-typografie, fotografií a katalógu. Obsah je v objekte `BRANDS` v tom súbore;
-štýly sú v `coffee-owner-brand.css` pod prefixom `mcb-`.
+`coffee-owner-brand.js`. Je to **jedna obrazovka bez scrollu**: kto to je,
+čo to robí, tri výhody, cena a kontakt. Žiadne texty ako z landing page,
+žiadne označenia typu „ukážka“ — pražiareň to má vidieť ako hotovú vec pre seba.
 
-Pridanie ďalšej pražiarne znamená jeden záznam v `BRANDS`:
+Vizuál vpravo je samotný výber v polovici cesty (krok, štyri možnosti, jedna
+označená, výsledok), pretože zákazník **klikaním vyberá, nepíše**.
+
+Obsah je v objekte `BRANDS`, štýly v `coffee-owner-brand.css` pod prefixom
+`mcb-`. Pridanie ďalšej pražiarne je jeden záznam:
 
 ```js
 nazov: {
   name: 'Pražiareň X', place: 'Pražiareň X · mesto',
-  root: '.selektor-korenoveho-prvku',          // kam sa stránka vykreslí
+  forName: 'Pražiareň X',                       // 4. pád do pätičky
+  root: '.selektor-korenoveho-prvku',           // kam sa stránka vykreslí
   shop: 'https://…',                            // odkaz z produktových kariet
   lockup: '<img src="/brand/…" alt="Pražiareň X">',
+  mark: { src: '…' } | { text: 'X', font: '…' },// značka na bubline widgetu
   theme: { ink, brand, accent, soft, paper },   // ich farby
-  display: { family, weight, tracking },        // voliteľné vlastné písmo nadpisov
-  eyebrow, headline, lead,                      // nadpis musí byť ich vlastný
-  stage: { photo, alt },                        // hero fotka
-  ask: '…',                                     // čo píše zákazník
-  pick: { photo, name, notes, price, fit },     // odporúčanie v hero karte
-  asks: ['…','…','…'], answer, steps, result,
-  shelf: [{ photo, name, note, price }, …]      // štyri ich kávy
+  display: { family, weight, tracking },        // voliteľné písmo nadpisov
+  headline, lead,                               // nadpis musí byť ich vlastný
+  benefits: [[ikona, titulok, text], …],        // tri
+  preview: { step, of, title, options, picked, result },  // postup vo výbere
+  shelf: [{ photo, name, note, price }, …]      // ponuka do chatu
 }
 ```
 
-Tri kávy zo `shelf` sa zároveň zobrazia v samotnom chate hneď pod privítaním
-(`coffee-chat-starter.js`) a zmiznú, len čo zákazník napíše prvú správu.
+### Cena
+
+Ceny sú na jednom mieste — konštanta `PRICING` na začiatku
+`coffee-owner-brand.js`. Sú to **návrhové čísla**, nie dohodnutý cenník; menia
+sa tam a premietnu sa do všetkých ukážok naraz.
+
+### Widget
+
+- `coffee-widget-polish.js` / `.css` — zjednotená pozvánka nad bublinou
+  (jeden krátky riadok, ~205 px namiesto 290 px), značka pražiarne na bubline
+  namiesto generickej ikonky, a popisky sekcií v paneli
+  („Rýchly výber“, „Časté otázky“), aby sa v ňom dalo zorientovať.
+- `coffee-chat-starter.js` — dve kávy z ponuky hneď pod privítaním, s odkazom
+  do ich e-shopu. Zmiznú, len čo zákazník napíše prvú správu.
 
 Poradie stylesheetov riadi `data-mc-order`: `10` usability-release,
-`20` widget-final, `25` header-cleanup, `30` owner-brand. Zoradí ich jeden
-ohraničený prechod v `coffee-widget-final.js` — žiadny MutationObserver,
-ktorý by ich presúval donekonečna.
+`20` widget-final, `25` header-cleanup, `30` owner-brand, `35` widget-polish.
+Zoradí ich jeden ohraničený prechod v `coffee-widget-final.js` — žiadny
+MutationObserver, ktorý by ich presúval donekonečna.
 
 Audit stavu pred touto zmenou a zoznam opráv je v
 [`AUDIT_2026-08_OWNER_VIEW.md`](AUDIT_2026-08_OWNER_VIEW.md).

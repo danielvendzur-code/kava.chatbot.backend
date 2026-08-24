@@ -75,7 +75,7 @@
     const teaserTitle = teaser?.querySelector('strong');
     const teaserText = teaser?.querySelector('span');
     if (teaserTitle) teaserTitle.textContent = 'Nájdite svoju kávu';
-    if (teaserText) teaserText.textContent = '4 otázky · konkrétny výsledok';
+    if (teaserText) teaserText.textContent = '4 otázky · jedno odporúčanie';
 
     const chips = ['Do automatu', 'Na filter', 'Čokoládová', 'Bez kofeínu'];
     document.querySelectorAll('#quickChips button').forEach((button, index) => {

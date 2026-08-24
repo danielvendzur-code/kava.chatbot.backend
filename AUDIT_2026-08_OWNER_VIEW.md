@@ -300,3 +300,59 @@ Tri testy boli prepísané, pretože popisovali stránku, ktorá už neexistuje.
 Nové znenie stráži silnejšie veci než pôvodné: unikátny nadpis pre každú
 pražiareň, viditeľné primárne tlačidlo, štyri produktové karty s načítanými
 fotkami a minimálnu veľkosť písma na mobile.
+
+---
+
+# Druhé kolo — po spätnej väzbe
+
+Prvá verzia opravy urobila zo stránky rolovaciu prezentáciu so sekciami ako na
+webe. To bolo priveľa. Stránka je teraz **jedna obrazovka bez scrollu**:
+
+| Bolo | Je |
+|---|---|
+| 7 sekcií, ~3 400 px, rolovanie | 1 obrazovka, `100dvh`, bez rolovania |
+| „Ukážka pripravená pre X“ v hlavičke | preč — nič, čo znie ako demo |
+| „Jeden riadok vo vašom e-shope“ + `<script>` tag | preč |
+| „Čo sa na vašom webe zmení“, „Prečo to stojí za zavedenie“ | tri výhody, nič viac |
+| žiadna cena | dve verzie s cenou + kontakt |
+| hero: fotka + bublina „zákazník píše“ | postup vo výbere — krok, štyri možnosti, jedna označená, výsledok |
+| pätička „Ukážku pripravil…“ | „Pripravené pre Kávu Víťazov“ + odkaz na web |
+
+Zákazník v poradcovi **kliká, nepíše** — hero to teraz ukazuje presne tak.
+Fotografia produktu z hero zmizla; produkty zostali tam, kde majú predajný
+zmysel, teda priamo v chate.
+
+## Widget
+
+- **Pozvánka nad bublinou** mala 290 px, 15 px titulok a 13,5 px podtitulok,
+  takže sa lámala na štyri riadky a každá ukážka mala iné znenie. Teraz má
+  ~205 px, jeden riadok na každú vetu a rovnaké znenie všade
+  („Nájdite svoju kávu / 4 otázky · jedno odporúčanie“). Text bol zjednotený
+  aj v zdroji — písali ho štyri rôzne vrstvy na časovačoch.
+- **Bublina** nesie značku pražiarne. Kaffa a Concept mali generickú ikonku
+  konverzácie; Kaffa má teraz serifové „K“, Concept svoje logo.
+- **Panel** dostal popisky sekcií („Rýchly výber“, „Časté otázky“), takže sa
+  číta ako tri časti, nie ako jedna kopa.
+
+Pri tom vyšli najavo tri ďalšie chyby:
+
+- Prázdny chat je vyskladaný zdola (`justify-content:flex-end`). Keď obsah
+  presiahne výšku, flex pretečie **smerom hore** a pretečená časť sa nedá
+  vyrolovať späť — privítanie jednoducho zmizlo nad panelom.
+- Kaffa navyše nechala svoj úvodný blok zmenšiť z 200 px obsahu na 55 px, takže
+  privítanie vytieklo z vlastného rámca a tlačilo sa cez ponuku pod ním.
+- Concept tónuje celý log tlmenou farbou, ktorú ponuka zdedila a bola takmer
+  nečitateľná.
+
+## Cena v ukážke
+
+Dve verzie — 290 € + 29 €/mes. a 490 € + 49 €/mes. Sú to **návrhové čísla**
+v konštante `PRICING` na začiatku `coffee-owner-brand.js`, nie dohodnutý
+cenník. Skúšobná verzia ani zľava na začiatok v ukážkach zámerne nie sú.
+
+## Stav testov
+
+31 prešlo / 3 zlyhali (pôvodne 25–26 / 8–9). Tri zostávajúce zlyhania existovali
+aj pred prvou zmenou. Assertion o rolovaní v `jolka.spec.mjs` bola upravená:
+stránka je jedna obrazovka, takže uvoľnenie zámku dialógu sa overuje cez
+značku na `body`, nie cez návrat scrollbaru.

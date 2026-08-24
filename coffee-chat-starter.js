@@ -32,9 +32,12 @@
   const style = document.createElement('style');
   style.dataset.mcsStarter = 'true';
   style.textContent = `
-    .mcs-starter{--mcs-line:color-mix(in srgb,currentColor 14%,transparent);display:grid;gap:9px;margin:12px 0 4px;animation:mcs-in .5s cubic-bezier(.22,1,.36,1) both}
-    @keyframes mcs-in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-    .mcs-starter-label{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;opacity:.6}
+    /* Opacity is pinned: some runtimes run their own reveal transition over
+       anything added to the log, which left the offer permanently half-faded.
+       The entrance here is a translate only, so nothing can wash it out. */
+    html body .mcs-starter{--mcs-line:color-mix(in srgb,currentColor 14%,transparent);display:grid;gap:9px;margin:12px 0 4px;opacity:1!important;filter:none!important;animation:mcs-in .45s cubic-bezier(.22,1,.36,1) both}
+    @keyframes mcs-in{from{transform:translateY(10px)}to{transform:none}}
+    .mcs-starter-label{display:flex;align-items:center;gap:8px;font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:color-mix(in srgb,currentColor 58%,transparent)}
     .mcs-starter-label::after{content:"";flex:1;height:1px;background:var(--mcs-line)}
     .mcs-list{display:grid;gap:7px;margin:0;padding:0;list-style:none}
     .mcs-item{display:grid;grid-template-columns:46px minmax(0,1fr) auto;gap:11px;align-items:center;padding:8px;border:1px solid var(--mcs-line);border-radius:15px;color:inherit;text-decoration:none;background:color-mix(in srgb,#fff 62%,transparent);transition:transform .22s cubic-bezier(.22,1,.36,1),border-color .22s ease,box-shadow .22s ease}
@@ -42,19 +45,23 @@
     .mcs-item img{width:46px;height:46px;border-radius:11px;object-fit:cover;background:color-mix(in srgb,currentColor 7%,transparent)}
     .mcs-item div{min-width:0;display:grid;gap:2px}
     .mcs-item b{font-size:12.5px;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .mcs-item small{font-size:11px;line-height:1.25;opacity:.62;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .mcs-item small{font-size:11px;line-height:1.25;color:color-mix(in srgb,currentColor 60%,transparent);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .mcs-item em{font-style:normal;font-size:11.5px;font-weight:850;white-space:nowrap}
-    .mcs-starter-note{margin:1px 0 0;font-size:11px;line-height:1.35;opacity:.55}
+    .mcs-starter-note{margin:1px 0 0;font-size:11px;line-height:1.35;color:color-mix(in srgb,currentColor 56%,transparent)}
     /* An empty log is laid out bottom-up (justify-content:flex-end) so the
        greeting hugs the composer. Once there is more content than height, flex
        overflows upward and the overflow is unreachable by scrolling — the
        greeting simply disappears above the panel. With the strip in place the
        log fills from the top and scrolls normally. */
-    .mcs-log{justify-content:flex-start!important}
+    html body .mcs-log{justify-content:flex-start!important}
+    /* A scrollable flex column must not shrink its rows. Kaffa's opening block
+       was being squashed from 200 px of content down to 55 px, so the greeting
+       spilled out of its own box and printed over the offer below it. */
+    html body .mcs-log>*{flex:0 0 auto!important;min-height:auto!important}
     /* Kaffa additionally stretches its opening block to the full height and
        pins the greeting to its bottom edge. */
-    .kf-messages.mcs-log:not(.has-thread) .kf-chat-seed{min-height:0!important}
-    .kf-messages.mcs-log:not(.has-thread) .kf-chat-seed .kf-message-row--bot{margin-top:0!important}
+    html body .kf-messages.mcs-log .kf-chat-seed{min-height:0!important;flex:0 0 auto!important}
+    html body .kf-messages.mcs-log .kf-chat-seed .kf-message-row--bot{margin-top:0!important}
     @media (prefers-reduced-motion:reduce){.mcs-starter,.mcs-item{animation:none!important;transition:none!important}}
   `;
   document.head.appendChild(style);
@@ -70,10 +77,13 @@
     const wrap = document.createElement('div');
     wrap.className = 'mcs-starter';
     wrap.dataset.mcsStarter = 'true';
+    // Explicit ink: Concept tints its whole log with a muted colour, which the
+    // offer inherited and rendered almost unreadable.
+    if (brand.theme?.ink) wrap.style.color = brand.theme.ink;
     wrap.innerHTML = `
       <span class="mcs-starter-label">Z ponuky ${esc(brand.name)}</span>
-      <ul class="mcs-list">${brand.shelf.slice(0, 3).map(item).join('')}</ul>
-      <p class="mcs-starter-note">Neviete si vybrať? Napíšte mi, ako kávu pripravujete — alebo prejdite Výber kávy.</p>`;
+      <ul class="mcs-list">${brand.shelf.slice(0, 2).map(item).join('')}</ul>
+      <p class="mcs-starter-note">Alebo mi napíšte, ako kávu pripravujete.</p>`;
     return wrap;
   };
 
@@ -98,6 +108,11 @@
     let anchor = greeting;
     while (anchor.parentElement && anchor.parentElement !== log) anchor = anchor.parentElement;
     log.classList.add('mcs-log');
+    // Set inline with priority: several demos pin `justify-content: flex-end`
+    // with !important, and a bottom-aligned flex column overflows upward once
+    // its content is taller than the log — an overflow that cannot be scrolled
+    // back into view.
+    log.style.setProperty('justify-content', 'flex-start', 'important');
     anchor.insertAdjacentElement('afterend', build());
     // Some runtimes scroll the log to the bottom whenever it grows. The greeting
     // is the first thing the customer should read, so put it back in view.
