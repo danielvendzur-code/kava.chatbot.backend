@@ -1,0 +1,124 @@
+/* Corrections found during the visual self-review of coffee-review-pass.css. */
+
+/* ======================================================== PRAZIARNICKA */
+html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option {
+  grid-template-rows:auto auto !important;
+}
+html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option__visual {
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:4 / 3 !important;
+  overflow:hidden !important;
+}
+html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option__img,
+html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option__visual img {
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center !important;
+}
+
+/* ============================================================= VITAZOV */
+/* Keep the icon as a graceful fallback. A card only hides its icon when a
+   genuine photograph is assigned below. */
+html body.mcw-on[data-demo="vitazov"] .option__photo > svg {
+  display:block !important;
+  width:30px !important;
+  height:30px !important;
+  margin:auto !important;
+  color:#0c4438 !important;
+}
+html body.mcw-on[data-demo="vitazov"] .option__photo {
+  display:grid !important;
+  place-items:center !important;
+  color:#0c4438 !important;
+  background-color:#f0f5ec !important;
+  background-image:none !important;
+}
+
+/* Step 1: real brand/product photography communicates the usage context. */
+html body.mcw-on[data-demo="vitazov"] .option__photo--home {
+  background-image:url('/assets/vitazov-victory.jpeg') !important;
+  background-position:center !important;
+  background-size:cover !important;
+}
+html body.mcw-on[data-demo="vitazov"] .option__photo--office {
+  background-image:url('/assets/vitazov-office.jpeg') !important;
+  background-position:center !important;
+  background-size:cover !important;
+}
+html body.mcw-on[data-demo="vitazov"] .option__photo--automatic {
+  background-image:url('/assets/vitazov-brazil.jpeg') !important;
+  background-position:center !important;
+  background-size:cover !important;
+}
+html body.mcw-on[data-demo="vitazov"] .option__photo--discovery {
+  background-image:url('/assets/vitazov-ethiopia.jpeg') !important;
+  background-position:center !important;
+  background-size:cover !important;
+}
+
+/* Step 2: visual taste direction stays tied to the actual range. */
+html body.mcw-on[data-demo="vitazov"] .option__photo--classic {
+  background-image:url('/assets/vitazov-brazil.jpeg') !important;
+  background-position:center !important;
+  background-size:cover !important;
+}
+html body.mcw-on[data-demo="vitazov"] .option__photo--balanced {
+  background-image:url('/assets/vitazov-victory.jpeg') !important;
+  background-position:center !important;
+  background-size:cover !important;
+}
+html body.mcw-on[data-demo="vitazov"] .option__photo--fruity {
+  background-image:url('/assets/vitazov-ethiopia.jpeg') !important;
+  background-position:center !important;
+  background-size:cover !important;
+}
+html body.mcw-on[data-demo="vitazov"] .option__photo--decaf {
+  background-image:url('/assets/vitazov-decaf.jpeg') !important;
+  background-position:center !important;
+  background-size:cover !important;
+}
+
+html body.mcw-on[data-demo="vitazov"] .option__photo--home > svg,
+html body.mcw-on[data-demo="vitazov"] .option__photo--office > svg,
+html body.mcw-on[data-demo="vitazov"] .option__photo--automatic > svg,
+html body.mcw-on[data-demo="vitazov"] .option__photo--discovery > svg,
+html body.mcw-on[data-demo="vitazov"] .option__photo--classic > svg,
+html body.mcw-on[data-demo="vitazov"] .option__photo--balanced > svg,
+html body.mcw-on[data-demo="vitazov"] .option__photo--fruity > svg,
+html body.mcw-on[data-demo="vitazov"] .option__photo--decaf > svg {
+  display:none !important;
+}
+
+/* ============================================================= CONCEPT */
+/* Concept already ships dedicated preparation photos. Use them directly and
+   leave the other question visuals supplied by its own advisor renderer. */
+html body.mcw-on[data-demo="concept"] .option__photo--automatic {
+  background-image:url('/assets/concept/prep-automatic.webp') !important;
+}
+html body.mcw-on[data-demo="concept"] .option__photo--lever,
+html body.mcw-on[data-demo="concept"] .option__photo--espresso {
+  background-image:url('/assets/concept/prep-lever.webp') !important;
+}
+html body.mcw-on[data-demo="concept"] .option__photo--filter {
+  background-image:url('/assets/concept/prep-filter.webp') !important;
+}
+html body.mcw-on[data-demo="concept"] .option__photo--moka {
+  background-image:url('/assets/concept/prep-moka.webp') !important;
+}
+
+/* =============================================================== KAFFA */
+/* Subject-aware crop: avoid cutting the brew device at the edge of the card. */
+html body.mcw-on[data-demo="kaffa"] .kf-option__visual {
+  background-position:center 46% !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][style*="--i:0"] .kf-option__visual { background-position:center 54% !important; }
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][style*="--i:1"] .kf-option__visual { background-position:center 50% !important; }
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][style*="--i:2"] .kf-option__visual { background-position:center 46% !important; }
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][style*="--i:3"] .kf-option__visual { background-position:center 48% !important; }
+
+@media(max-width:640px){
+  html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option__visual { aspect-ratio:4 / 3 !important; }
+}
