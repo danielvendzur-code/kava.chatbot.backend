@@ -103,7 +103,7 @@
     if (labels[0]) labels[0].textContent = 'Chat';
     if (labels[1]) labels[1].textContent = 'Výber kávy';
 
-    const chipLabels = ['Do automatu', 'Čokoládová', 'Do mlieka', 'Bez kofeínu'];
+    const chipLabels = ['Káva do kancelárie', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'];
     document.querySelectorAll('#quickChips .chip span').forEach((label, index) => {
       if (chipLabels[index]) label.textContent = chipLabels[index];
     });

@@ -38,10 +38,7 @@
   const icons = {
     arrow: icon('M5 12h13m-5-6 6 6-6 6'),
     chat: icon('M5 5h14v10H9l-4 4V5Z'),
-    cup: icon('M5 7h11v7a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5V7Zm11 2h2a2 2 0 0 1 0 4h-2M4 21h13'),
     check: icon('m5 12 4 4L19 6'),
-    clock: icon('M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-13v5l3.2 2'),
-    bag: icon('M6 8h12l-1 12H7L6 8Zm3 0V6a3 3 0 0 1 6 0v2'),
     mail: icon('M3 7h18v10H3V7Zm0 0 9 6 9-6')
   };
 
@@ -75,25 +72,13 @@
       place: 'Pražiarnička by Caffè Vita',
       forName: 'Pražiarničku',
       root: '.pz13-site',
-      shop: 'https://praziarnicka.sk/eshop',
-      shelf: [
-        { photo: '/assets/praziarnicka/official-paganini.jpg', name: 'Paganini blend', note: '75 % arabica · 25 % robusta', price: 'od 11,90 €' },
-        { photo: '/assets/praziarnicka/official-brazil.jpg', name: 'Brazil Santos', note: '100 % arabica, nízka acidita', price: 'od 9,90 €' },
-        { photo: '/assets/praziarnicka/official-cuba.jpg', name: 'Cuba Serrano', note: 'kakao · tabak · orechy', price: 'od 12,90 €' }
-      ],
       lockup: '<img src="/brand/praziarnicka-logo-official.png" alt="Pražiarnička">',
       theme: { ink: '#143f35', brand: '#1c5b4b', accent: '#c25a2b', soft: '#edf6f2', paper: '#ffffff' },
-      headline: 'Poradca, ktorý pozná <em>všetkých päť vašich káv</em>.',
-      lead: 'Zákazník klikne štyrikrát a dostane jednu konkrétnu kávu z vašej ponuky — aj o jednej v noci.',
-      benefits: [
-        [icons.cup, 'Vyberie za zákazníka', 'Paganini, Brazil, Cuba, Puccini alebo bezkofeínová — podľa toho, ako kávu pripravuje a pije.'],
-        [icons.chat, 'Odpovie za váš tím', 'Otázky o kyslosti, mletí a automate vybaví bez vás.'],
-        [icons.clock, 'Nikdy nespí', 'Objednávky chodia večer. Vtedy je online.']
-      ],
+      chips: ['Káva do automatu', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
       figures: [
         ['24/7', 'odpovedá', 'aj večer a cez víkend'],
         ['4', 'otázky', 'príprava · chuť · nápoj · kofeín'],
-        ['1', 'konkrétna káva', 'z piatich vašich káv, s dôvodom']
+        ['1', 'konkrétna káva', 'z vašej ponuky, nie zoznam']
       ]
     },
 
@@ -102,25 +87,13 @@
       place: 'Diamonds Roastery · Dunajská Lužná',
       forName: 'Diamonds Roastery',
       root: '.diamonds-page',
-      shop: 'https://diroastery.sk/kategoria-produktu/kava/',
-      shelf: [
-        { photo: '/assets/diamonds/brazil-fazenda-official.jpg', name: 'Brazília Fazenda Pereira', note: 'sladká · čokoládová', price: 'od 10,00 €' },
-        { photo: '/assets/diamonds/kenya-mugaya-official.jpg', name: 'Keňa Mugaya AB', note: 'svieža · ovocná · filter', price: 'od 16,00 €' },
-        { photo: '/assets/diamonds/el-buho-official.jpg', name: 'El Buho Decaf', note: 'bez kofeínu · sladká', price: 'od 14,00 €' }
-      ],
       lockup: '<img src="/assets/diamonds/diroastery-logo.svg" alt="Diamonds Roastery">',
       theme: { ink: '#0b0d0c', brand: '#0b0d0c', accent: '#6f8f19', soft: '#f2f6e8', paper: '#ffffff' },
-      headline: 'Z celej vašej ponuky <em>jedna káva</em> pre každého zákazníka.',
-      lead: 'Pôvod a spracovanie sú pre vás bežná reč. Pre zákazníka sú to štyri rozhodnutia — poradca ich zvládne za neho.',
-      benefits: [
-        [icons.cup, 'Preloží odbornosť', 'Washed, natural a acidita v reči, ktorej zákazník rozumie.'],
-        [icons.chat, 'Odpovie za váš tím', 'Bez čakania na správu a bez opakovania toho istého.'],
-        [icons.clock, 'Nikdy nespí', 'Objednávky chodia večer. Vtedy je online.']
-      ],
+      chips: ['Káva na filter', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
       figures: [
         ['24/7', 'odpovedá', 'aj večer a cez víkend'],
         ['4', 'otázky', 'príprava · chuť · nápoj · kofeín'],
-        ['1', 'konkrétna káva', 'z vašej ponuky, s dôvodom']
+        ['1', 'konkrétna káva', 'z vašej ponuky, nie zoznam']
       ]
     },
 
@@ -130,26 +103,14 @@
       forName: 'Kaffa Roastery',
       mark: { text: 'K', font: 'Georgia, "Times New Roman", serif' },
       root: '.kf-shell',
-      shop: 'https://kaffaroastery.sk/',
-      shelf: [
-        { photo: '/assets/kaffa/mokka-official.webp', name: 'Mokka Espresso Blend', note: 'kakao · mandle · lieskovce', price: '11,90 – 32,13 €' },
-        { photo: '/assets/kaffa/kamundu-official.webp', name: 'Kenya Kamundu Estate AA', note: 'ríbezle · malina · slivka', price: '13,98 €' },
-        { photo: '/assets/kaffa/decaf-official.jpg', name: 'Finca El Diviso Decaf', note: 'vanilka · mandarínka · jazmín', price: '16,42 €' }
-      ],
       lockup: '<span class="mcb-wordmark"><b>KAFFA</b><small>SPECIALITY COFFEE BEANS</small></span>',
       theme: { ink: '#111111', brand: '#111111', accent: '#3d7d97', soft: '#f2ede4', paper: '#fcfbf8' },
       display: { family: 'Georgia, "Times New Roman", serif', weight: '400', tracking: '-.03em' },
-      headline: 'Výberová káva <em>rečou vášho zákazníka</em>.',
-      lead: 'Nevie, či chce washed alebo natural. Vie, že pije cappuccino a nemá rád kyslé — a to poradcovi stačí.',
-      benefits: [
-        [icons.cup, 'Vyberie za zákazníka', 'Mokka, Kamundu, Diviso alebo Wilder Lazo — podľa chuti, nie podľa terminológie.'],
-        [icons.chat, 'Odpovie za váš tím', 'Aciditu a ovocnosť vysvetlí bez straty presnosti.'],
-        [icons.clock, 'Nikdy nespí', 'Objednávky chodia večer. Vtedy je online.']
-      ],
+      chips: ['Espresso do automatu', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
       figures: [
         ['24/7', 'odpovedá', 'aj večer a cez víkend'],
         ['4', 'otázky', 'príprava · chuť · nápoj · kofeín'],
-        ['1', 'konkrétna káva', 'z vašej ponuky, bez odbornej hantýrky']
+        ['1', 'konkrétna káva', 'z vašej ponuky, nie zoznam']
       ]
     },
 
@@ -158,25 +119,13 @@
       place: 'Káva Víťazov · Prešov',
       forName: 'Kávu Víťazov',
       root: '.demo-page',
-      shop: 'https://kavavitazov.sk/obchod/',
-      shelf: [
-        { photo: '/assets/vitazov-office.jpeg', name: 'Office Blend', note: 'čokoláda · karamel · bez kyslosti', price: 'od 15,90 €' },
-        { photo: '/assets/vitazov-victory.jpeg', name: 'Victory Blend', note: '100 % arabica · kakao · korenie', price: 'od 17,90 €' },
-        { photo: '/assets/vitazov-decaf.jpeg', name: 'Bezkofeínová', note: 'bez kofeínu · na večer', price: 'od 17,90 €' }
-      ],
       lockup: '<img src="/assets/vitazov-logo.svg" alt="Káva Víťazov">',
       theme: { ink: '#071f1a', brand: '#0c4438', accent: '#5f8a1f', soft: '#eef7e2', paper: '#ffffff' },
-      headline: 'Iná káva pre firmu, <em>iná pre domácu kuchyňu</em>.',
-      lead: 'Firma pre pätnásť ľudí hľadá niečo iné než človek s pákovým kávovarom. Poradca sa na to opýta ako prvé.',
-      benefits: [
-        [icons.cup, 'Vie, pre koho vyberá', 'Rozozná, či kávu kupujete sebe alebo celej firme, a podľa toho radí.'],
-        [icons.chat, 'Odpovie za váš tím', 'Bez čakania na e-mail a bez opakovania toho istého.'],
-        [icons.clock, 'Nikdy nespí', 'Objednávky chodia večer. Vtedy je online.']
-      ],
+      chips: ['Káva do kancelárie', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
       figures: [
         ['24/7', 'odpovedá', 'aj večer a cez víkend'],
         ['4', 'otázky', 'použitie · chuť · príprava · nápoj'],
-        ['1', 'konkrétna káva', 'z vašej ponuky, s dôvodom']
+        ['1', 'konkrétna káva', 'z vašej ponuky, nie zoznam']
       ]
     },
 
@@ -187,21 +136,9 @@
       // A wide wordmark is unreadable at 34 px in a circle; the initial is not.
       mark: { text: 'C', font: '"DM Sans", system-ui, sans-serif' },
       root: '.concept-page',
-      shop: 'https://www.conceptcoffee.sk/',
-      shelf: [
-        { photo: '/assets/concept/product-weithaga.jpg', name: 'Weithaga AA – Keňa', note: 'washed · Nyeri · filter', price: 'od 15,00 €' },
-        { photo: '/assets/concept/product-berry-blast.jpg', name: 'Berry Blast – Kolumbia', note: 'bobuľové ovocie · novinka', price: 'od 18,50 €' },
-        { photo: '/assets/concept/product-yellow-sunset.jpg', name: 'Yellow Sunset (decaf)', note: 'Tolima · bez kofeínu', price: 'od 12,50 €' }
-      ],
       lockup: '<img src="/brand/concept-official-logo.png" alt="Concept Coffee Roasters">',
       theme: { ink: '#1a1b19', brand: '#2c4038', accent: '#b8503c', soft: '#f4efe7', paper: '#fbfaf6' },
-      headline: 'Sezónna ponuka, ktorú zákazník pochopí <em>na prvý raz</em>.',
-      lead: 'Loty sa menia a popisy sú komplexné. Poradca hovorí o tom, čo máte teraz, a preloží to na rozhodnutie.',
-      benefits: [
-        [icons.cup, 'Drží krok so sezónou', 'Odporúča z aktuálnej ponuky, nie z katalógu spred roka.'],
-        [icons.chat, 'Odpovie za váš tím', 'Chuťové poznámky preloží na jednoduchú voľbu.'],
-        [icons.clock, 'Nikdy nespí', 'Objednávky chodia večer. Vtedy je online.']
-      ],
+      chips: ['Káva na filter', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
       figures: [
         ['24/7', 'odpovedá', 'aj večer a cez víkend'],
         ['4', 'otázky', 'príprava · chuť · nápoj · kofeín'],
@@ -214,29 +151,26 @@
       place: 'Pražiareň Jolka · Bratislava-Ružinov',
       forName: 'Pražiareň Jolka',
       root: '.page',
-      shop: 'https://www.praziarenjolka.sk/eshop-kava/',
-      shelf: [
-        { photo: '/assets/jolka/zmes-jolka.webp', name: 'Zmes Jolka', note: 'house blend · nízka acidita', price: '13,50 € / 250 g' },
-        { photo: '/assets/jolka/zmes-cokolada.webp', name: 'Zmes Čokoláda', note: 'sladká čokoládová klasika', price: '13,50 € / 250 g' },
-        { photo: '/assets/jolka/9-to-fine.webp', name: '9-to-Fine', note: 'plná · čokoládovo-orechová', price: '17,00 € / 500 g' }
-      ],
       lockup: '<img src="/assets/jolka/logo-ink.webp" alt="Pražiareň Jolka"><b>Pražiareň Jolka</b>',
       theme: { ink: '#23180f', brand: '#5e4834', accent: '#a8763f', soft: '#f3ece3', paper: '#fdfaf6' },
       display: { family: '"Playfair Display", Georgia, serif', weight: '600', tracking: '-.02em' },
-      headline: 'Klasika aj výberovka — <em>bez zdĺhavého vysvetľovania</em>.',
-      lead: 'Časť zákazníkov chce istotu a minimum kyslosti, časť chce objavovať. Poradca zistí, ktorí sú ktorí.',
-      benefits: [
-        [icons.cup, 'Vyberie za zákazníka', 'Zmes Jolka, Čokoláda, 9-to-Fine alebo výberovka — podľa toho, čo má rád.'],
-        [icons.chat, 'Odpovie za váš tím', 'Aciditu vysvetlí na stupnici z vašich obalov.'],
-        [icons.clock, 'Nikdy nespí', 'Objednávky chodia večer. Vtedy je online.']
-      ],
+      chips: ['Nízka acidita', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
       figures: [
         ['24/7', 'odpovedá', 'aj večer a cez víkend'],
         ['4', 'otázky', 'príprava · chuť · nápoj · acidita'],
-        ['1', 'konkrétna káva', 'z vašej ponuky, s dôvodom']
+        ['1', 'konkrétna káva', 'z vašej ponuky, nie zoznam']
       ]
     }
   };
+
+  // One plain description for every roastery. The brand is carried by the
+  // lockup, the palette, the type and the line above the heading — not by
+  // copywriting. Each demo used to open with its own slogan, which read as an
+  // advert rather than as an explanation of what is on offer.
+  const HEADING = 'Kávový poradca na váš web.';
+  const LEAD = 'Zákazníci na vašom webe nevedia, aké kávy máte, a ťažko sa im vyberá. ' +
+    'V poradcovi sa môžu opýtať vlastnými slovami — alebo cez pár otázok prísť ku ' +
+    'konkrétnej káve z vašej ponuky.';
 
   const brand = BRANDS[slug];
 
@@ -267,21 +201,13 @@
     <main class="mcb-main">
       <section class="mcb-copy">
         <span class="mcb-eyebrow">${esc(brand.place)}</span>
-        <h1>${brand.headline}</h1>
-        <p class="mcb-lead">${esc(brand.lead)}</p>
+        <h1>${esc(HEADING)}</h1>
+        <p class="mcb-lead">${esc(LEAD)}</p>
 
         <div class="mcb-actions">
           <button class="mcb-btn" type="button" data-release-open="advisor">Otvoriť poradcu ${icons.arrow}</button>
           <button class="mcb-btn mcb-btn--ghost" type="button" data-release-open="chat">Skúsiť chat ${icons.chat}</button>
         </div>
-
-        <ul class="mcb-benefits">
-          ${brand.benefits.map(([mark, title, text], i) => `
-            <li style="--i:${i}">
-              <span class="mcb-benefit-icon">${mark}</span>
-              <div><b>${esc(title)}</b><small>${esc(text)}</small></div>
-            </li>`).join('')}
-        </ul>
       </section>
 
       <section class="mcb-figures" aria-label="Čo poradca robí">
@@ -442,16 +368,6 @@
     requestAnimationFrame(() => root.classList.add('is-in'));
     watchDialog();
     return true;
-  }
-
-  // The widget's own empty state is filled by a separate module, loaded once the
-  // catalogue above is published on window.
-  if (!document.querySelector('script[data-mcs-starter]')) {
-    const starter = document.createElement('script');
-    starter.src = '/coffee-chat-starter.js';
-    starter.dataset.mcsStarter = 'true';
-    starter.async = false;
-    document.body.appendChild(starter);
   }
 
   // Widget-side polish (invitation copy, launcher mark, panel sections) is a

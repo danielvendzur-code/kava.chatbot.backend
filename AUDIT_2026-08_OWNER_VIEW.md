@@ -449,3 +449,67 @@ sú opravené v tomto kole; ostáva jedna vec na rozhodnutie:
 pred prvou zmenou. Assertion vo `vitazov-conversion.spec.mjs` bola zúžená:
 strážila, aby fallback odpoveď „neoznamovala vlastnú inštalatérčinu", a zakazovala
 aj `<time>` — čas pri správe je odteraz normálna súčasť každej správy.
+
+---
+
+# Štvrté kolo — vecné texty, čistý panel
+
+## Texty
+
+Každá ukážka otvárala vlastným sloganom — „Poradca, ktorý pozná všetkých päť
+vašich káv“, „Nikdy nespí“, „rečou vášho zákazníka“. Čítalo sa to ako reklama.
+Majiteľ pražiarne nemá čítať slogany; má sa dozvedieť, čo mu ponúkam.
+
+Nadpis a odsek sú teraz **rovnaké pre všetkých**:
+
+> **Kávový poradca na váš web.**
+>
+> Zákazníci na vašom webe nevedia, aké kávy máte, a ťažko sa im vyberá.
+> V poradcovi sa môžu opýtať vlastnými slovami — alebo cez pár otázok prísť
+> ku konkrétnej káve z vašej ponuky.
+
+Značku nesie logo, paleta, písmo, riadok nad nadpisom a pätička „Pripravené pre
+Kávu Víťazov“. To stačí — copywriting na to netreba.
+
+## Preč s duplicitou
+
+Ľavý stĺpec mal tri „výhody“ a pravý panel tri čísla, ktoré hovorili to isté
+inými slovami. Zoznam výhod je preč; výhody nesú tie tri čísla. Stránka je teraz
+nadpis, dve vety, dve tlačidlá, tri čísla, cena a kontakt.
+
+## Panel
+
+Von išlo všetko, čo nie je konverzácia:
+
+- popisky sekcií („Rýchly výber“, „Časté otázky“),
+- pás s dvomi kávami pod privítaním (`coffee-chat-starter.js` zmazaný).
+
+Zostáva hlavička, prepínač, karta „Nájsť svoju kávu“, privítanie, štyri rýchle
+otázky a vstupné pole. Panel je po otvorení prázdnejší — to je normálny stav
+chatu a tónovaná spodná lišta ho uzatvára.
+
+## Rýchle otázky
+
+Chipy ponúkali štyrikrát to isté („do automatu / na filter / čokoládová / bez
+kofeínu“). Dve sa menia na to, čo z e-shopu nevyčítate:
+
+- **„Odkiaľ je káva?“**
+- **„Porovnajte dve kávy“**
+
+Popisky sa museli zjednotiť na dvoch miestach naraz — v zázname značky aj
+v runtime, ktorý ich vykresľuje. Tri „final“ vrstvy (`kaffa-final.js`,
+`coffee-vitazov-final.js`, `coffee-diamonds-final.js`) si ich totiž prepisovali
+späť na časovači, rovnako ako predtým text pozvánky.
+
+Aby na ne poradca odpovedal aj bez API, pribudli vetvy do fallbackov:
+`coffee-api-route.js` má pre každú pražiareň `origin` a `compare` napísané z jej
+vlastného katalógu, `coffee-usability-release.js` všeobecnú vetvu. Overené
+priamo na tom module — prehliadačová ukážka sa k nemu nedostane, lebo na
+localhoste odpovedá vývojový stub.
+
+## Stav testov
+
+31 prešlo / 3 zlyhali — rovnako ako pred týmto kolom. Testu
+`jolka.spec.mjs:110` bol zdvihnutý časový limit: robí päť celých prechodov
+poradcom a „Premýšľam…“ mu pridalo približne tri sekundy. Kontroluje bodovanie,
+nie rýchlosť.

@@ -112,26 +112,6 @@ html body.mcw-on [data-mcw-mark]::before { display: none !important; }
 
 /* ------------------------------------------------------------- the panel */
 
-/* A caption above each block, so the panel reads as separate parts. */
-html body.mcw-on .mcb-w-caption {
-  display: block !important;
-  /* Indented to sit over the block it labels rather than flush to the panel. */
-  margin: 10px 14px 5px !important;
-  color: color-mix(in srgb, var(--nb-ink, #16211d) 52%, transparent) !important;
-  font-size: 11px !important;
-  font-weight: 900 !important;
-  letter-spacing: .1em !important;
-  text-transform: uppercase !important;
-}
-html body.mcw-on .mcb-w-caption:first-child { margin-top: 2px !important; }
-
-/* The mode switch is the panel's primary control, so it is separated from
-   what follows rather than butting straight into it. */
-html body.mcw-on .mcb-w-switch {
-  margin-bottom: 4px !important;
-  padding-bottom: 0 !important;
-}
-
 /* The lockup is the largest thing in the header — it is their shop. */
 html body.mcw-on [data-demo] .widget__header img,
 html body.mcw-on [data-demo] .widget-head img,

@@ -277,7 +277,7 @@
   }
 
   function renderChat() {
-    const chips = ['Káva do automatu', 'Nie veľmi kyslú', 'Káva do mlieka', 'Bezkofeínovú'];
+    const chips = ['Káva do automatu', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'];
     stage.innerHTML = `
       <section class="pz13-chat">
         <div class="pz13-chat__messages" id="pz13-messages" aria-live="polite">

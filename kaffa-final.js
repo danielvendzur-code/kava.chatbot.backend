@@ -82,7 +82,7 @@
       if (!avatar.querySelector('svg')) avatar.innerHTML = bubble;
     });
 
-    const chipLabels = ['Do automatu', 'Na filter', 'Čokoládová', 'Ovocná'];
+    const chipLabels = ['Espresso do automatu', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'];
     document.querySelectorAll('.kf-chip').forEach((chip, index) => {
       if (chipLabels[index]) setText(chip, chipLabels[index]);
     });

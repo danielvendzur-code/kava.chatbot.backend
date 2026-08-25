@@ -108,6 +108,11 @@ test('advisor is four weighted steps and lands on a real product page', async ({
 });
 
 test('scoring separates classic, milk, balanced, fruity and experimental', async ({ page }) => {
+  // Five full advisor runs, each on a fresh load. The recommendation now lands
+  // after a deliberate "Premýšľam…" beat, which adds about three seconds across
+  // the five and pushed this past the default budget. The assertions below are
+  // about scoring, not speed.
+  test.setTimeout(60_000);
   await page.setViewportSize({ width: 1440, height: 900 });
   const results = [];
   for (const values of [

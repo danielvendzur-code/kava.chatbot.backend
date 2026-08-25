@@ -72,45 +72,28 @@
     });
   }
 
-  /* --------------------------------------------------------- panel sections */
+  /* ------------------------------------------------------------- the chips */
 
-  // Each block gets a quiet caption so the panel reads as three parts rather
-  // than one pile: what the advisor does, the conversation, and the shortcuts.
-  const SWITCHES = '.mode-switch, .mode, .kf-switch, .pz13-mode';
-  const ENTRIES = '#openAdvisor, .advisor-entry, .kf-advisor-entry, #advisorEntry, .pz13-advisor-entry, #entry';
-  const CHIPS = '.chips, #chips, .kf-chips, .pz13-chips, .quick-replies';
+  // Four labels, written once per roastery. Every runtime sends the chip's own
+  // text as the message (praziarnicka-v13.js:299, coffee-v8.js:199,
+  // kaffa-editorial.js:171, jolka/jolka-app.js:600), so relabelling here also
+  // changes the question that gets asked — nothing else has to move.
+  //
+  // Two of them ask what a visitor cannot read off the shop: where the coffee
+  // comes from, and how two of them differ.
+  const CHIP_ROWS = '.chips, #chips, #quickChips, .kf-chips, .quick-grid, .quick-questions';
 
-  function label(node, text, key) {
-    if (!node || !node.parentElement) return;
-    const existing = node.previousElementSibling;
-    if (existing?.classList.contains('mcb-w-caption')) return;
-    // A stale caption left behind by a re-render sits after its block; move it
-    // rather than adding a second one.
-    const stray = [...node.parentElement.children].find(
-      (child) => child.classList.contains('mcb-w-caption') && child.textContent === text
-    );
-    node.classList.add('mcb-w-block');
-    const caption = stray || document.createElement('span');
-    caption.className = 'mcb-w-caption';
-    caption.textContent = text;
-    node.dataset[key] = 'true';
-    node.parentElement.insertBefore(caption, node);
-    // Prazarnicka pulls its handoff card to the top of a flex column with
-    // order:-1, which would leave the caption stranded below it. Equal order
-    // values fall back to DOM order, so the caption follows its block.
-    const order = getComputedStyle(node).order;
-    if (order && order !== '0') caption.style.order = order;
-  }
-
-  function sectionPanel() {
-    document.querySelectorAll(SWITCHES).forEach((node) => node.classList.add('mcb-w-switch'));
-    document.querySelectorAll(ENTRIES).forEach((node) => {
-      if (node.offsetParent === null) return;
-      label(node, 'Rýchly výber', 'mcbEntry');
-    });
-    document.querySelectorAll(CHIPS).forEach((node) => {
-      if (!node.children.length) return;
-      label(node, 'Časté otázky', 'mcbChips');
+  function relabelChips() {
+    if (!Array.isArray(brand.chips)) return;
+    document.querySelectorAll(CHIP_ROWS).forEach((row) => {
+      // Whatever the row holds, in order, however many: Jolka keeps its chat
+      // chips hidden until the visitor switches to the chat, and some rows
+      // carry a fifth chip the stylesheet hides.
+      const chips = [...row.children].filter((node) => node.tagName === 'BUTTON');
+      chips.slice(0, brand.chips.length).forEach((chip, index) => {
+        const label = brand.chips[index];
+        if (chip.textContent.trim() !== label) chip.textContent = label;
+      });
     });
   }
 
@@ -234,10 +217,16 @@
   // after a visible beat rather than snapping into place.
   const RESULTS = '.pz13-result, .kf-result, .result, #result, .result-card';
 
+  // Only the first recommendation of a visit gets the beat. Repeating it every
+  // time someone runs the advisor again turns a considered pause into a delay.
+  let thoughtOnce = false;
+
   function holdResult() {
     document.querySelectorAll(RESULTS).forEach((result) => {
       if (result.dataset.mcwThought) return;
       result.dataset.mcwThought = 'true';
+      if (thoughtOnce) return;
+      thoughtOnce = true;
       result.classList.add('mcw-thinking');
       const note = document.createElement('p');
       note.className = 'mcw-thinking-note';
@@ -246,7 +235,7 @@
       setTimeout(() => {
         result.classList.remove('mcw-thinking');
         note.remove();
-      }, 800);
+      }, 650);
     });
   }
 
@@ -264,7 +253,7 @@
     applyTokens();
     ensureTray();
     normaliseTeaser();
-    sectionPanel();
+    relabelChips();
     markLauncher();
     stampTimes();
     holdBotReply();
