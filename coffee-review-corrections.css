@@ -19,6 +19,37 @@ html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option__visual img {
   object-position:center !important;
 }
 
+/* ======================================================== LAUNCHER MARKS */
+/* The earlier shared launcher rule used object-fit:cover with higher
+   specificity. That cropped wide official lockups into arbitrary letters.
+   Diamonds has a square monogram in the left section of its official SVG, so
+   preserve the SVG ratio and clip only that legitimate mark. Concept keeps the
+   complete official lockup with contain instead of showing a random centre crop. */
+html body.mcw-on .mcb-w-launcher.coffee-official-launcher[data-official-brand="diamonds"] > img.coffee-official-launcher__logo {
+  position:absolute !important;
+  inset:0 auto 0 0 !important;
+  width:auto !important;
+  height:100% !important;
+  max-width:none !important;
+  max-height:none !important;
+  margin:0 !important;
+  object-fit:unset !important;
+  object-position:initial !important;
+  filter:brightness(0) invert(1) !important;
+}
+html body.mcw-on .mcb-w-launcher.coffee-official-launcher[data-official-brand="concept"] > img.coffee-official-launcher__logo {
+  position:relative !important;
+  inset:auto !important;
+  width:86% !important;
+  height:86% !important;
+  max-width:86% !important;
+  max-height:86% !important;
+  margin:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  filter:none !important;
+}
+
 /* ============================================================= VITAZOV */
 /* Do not replace the semantic 4x4 choice sprite with four near-identical bag
    photos. The brand's own advisor stylesheet maps each answer to a distinct
