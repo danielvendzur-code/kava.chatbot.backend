@@ -12,8 +12,9 @@
   const slug = rawSlug.replace('-v13', '');
   if (!valid.has(slug)) return;
 
-  document.documentElement.dataset.coffeeReviewPass = '2026-08-25';
+  document.documentElement.dataset.coffeeReviewPass = '2026-08-25-r2';
   document.body.dataset.coffeeReviewPass = slug;
+  document.documentElement.dataset.jolkaParity = 'ready';
 
   const BRAND_CONTACT = {
     praziarnicka: { name: 'Pražiarnička', web: 'https://praziarnicka.sk/eshop' },
@@ -135,8 +136,22 @@
       concept: '#chatMessages',
       jolka: '#chat'
     };
-    const host = document.querySelector(selectors[slug] || '');
+    const selector = selectors[slug];
+    if (!selector) return;
+    const host = document.querySelector(selector);
     if (host) host.dataset.greetingTop = 'true';
+  }
+
+  function refineOwnerCopy() {
+    const lead = document.querySelector('[data-mcb-page="true"] .mcb-lead');
+    if (!lead) return;
+    const copy = 'Zákazníci často nevedia, aké kávy máte a ktorá im sadne. Chat odpovie na pôvod, chuť, prípravu aj konkrétne produkty. Keď si stále nevedia vybrať, štyri krátke otázky ich dovedú k jednej odporúčanej káve aj s dôvodom.';
+    if (lead.textContent !== copy) lead.textContent = copy;
+  }
+
+  function removeFakeThinkingState() {
+    document.querySelectorAll('.mcw-thinking').forEach((result) => result.classList.remove('mcw-thinking'));
+    document.querySelectorAll('.mcw-thinking-note').forEach((note) => note.remove());
   }
 
   function improveAdvisorEntryCopy() {
@@ -149,6 +164,45 @@
       const note = entry.querySelector('em, small, .entry__copy span');
       if (title) title.textContent = 'Nájsť svoju kávu';
       if (note) note.textContent = '4 krátke otázky · konkrétne odporúčanie';
+      entry.style.setProperty('height', '68px', 'important');
+      entry.style.setProperty('min-height', '68px', 'important');
+    }
+  }
+
+  function refineVitazovSemanticPhotos() {
+    if (slug !== 'vitazov') return;
+    const assets = {
+      home: '/assets/vitazov-victory.jpeg',
+      office: '/assets/vitazov-office.jpeg',
+      automatic: '/assets/vitazov-brazil.jpeg',
+      discovery: '/assets/vitazov-ethiopia.jpeg'
+    };
+    document.querySelectorAll('#advisorBody .option[data-value]').forEach((card) => {
+      const src = assets[card.dataset.value];
+      if (!src) return;
+      const photo = card.querySelector('.option__photo');
+      if (!photo) return;
+      photo.style.setProperty('background-image', `url("${src}"), url("/assets/vitazov-choice-sprite.png")`, 'important');
+      photo.style.setProperty('background-size', 'cover, cover', 'important');
+      photo.style.setProperty('background-position', 'center, center', 'important');
+      photo.style.setProperty('background-repeat', 'no-repeat', 'important');
+      photo.querySelectorAll('svg').forEach((svg) => { svg.style.opacity = '0'; });
+    });
+  }
+
+  function protectOwnerMobileCta() {
+    const root = document.querySelector('[data-mcb-page="true"]');
+    if (!root) return;
+    const cta = root.querySelector('.mcb-pricing-side .mcb-btn');
+    if (!cta) return;
+    if (matchMedia('(max-width: 640px)').matches) {
+      cta.style.setProperty('width', 'calc(100% - 78px)', 'important');
+      cta.style.setProperty('max-width', 'calc(100% - 78px)', 'important');
+      cta.style.setProperty('justify-self', 'start', 'important');
+    } else {
+      cta.style.removeProperty('width');
+      cta.style.removeProperty('max-width');
+      cta.style.removeProperty('justify-self');
     }
   }
 
@@ -159,7 +213,11 @@
     replaceVitazovHeaderMark();
     markExistingOfficialHeaders();
     keepGreetingAtTop();
+    refineOwnerCopy();
+    removeFakeThinkingState();
     improveAdvisorEntryCopy();
+    refineVitazovSemanticPhotos();
+    protectOwnerMobileCta();
   }
 
   let queued = false;
@@ -173,6 +231,7 @@
   });
 
   observer.observe(document.documentElement, { childList: true, subtree: true });
+  addEventListener('resize', protectOwnerMobileCta, { passive: true });
   run();
   [180, 650, 1500, 3000].forEach((delay) => setTimeout(run, delay));
 })();
