@@ -1,0 +1,427 @@
+/*
+ * Final review pass for the coffee previews.
+ * Loaded after the brand runtimes. Each rule is scoped to one demo or to the
+ * owner sales page so a fix cannot silently restyle another product.
+ */
+
+/* ============================================================ OWNER OFFER */
+
+@media (min-width: 1081px) {
+  .mcb-pricing {
+    grid-template-columns: minmax(430px, .9fr) minmax(280px, 1fr) !important;
+    gap: clamp(22px, 2.5vw, 38px) !important;
+    padding-top: clamp(14px, 2vh, 22px) !important;
+  }
+  .mcb-plan {
+    padding: clamp(17px, 2.2vh, 22px) clamp(21px, 2.2vw, 30px) !important;
+    gap: 9px !important;
+    border-width: 1.5px !important;
+    border-radius: 21px !important;
+    box-shadow: 0 22px 48px -40px color-mix(in srgb, var(--mcb-brand) 72%, transparent) !important;
+  }
+  .mcb-plan-price strong {
+    font-size: clamp(29px, 2.5vw, 36px) !important;
+  }
+  .mcb-plan-price span,
+  .mcb-plan li,
+  .mcb-pricing-side p {
+    font-size: 12px !important;
+  }
+  .mcb-plan ul { gap: 5px !important; }
+  .mcb-pricing-side .mcb-btn {
+    min-height: 48px !important;
+    padding-inline: 20px !important;
+  }
+}
+
+/* ========================================================== BRAND MARKS */
+
+.coffee-official-launcher {
+  isolation: isolate !important;
+  transition: transform .22s cubic-bezier(.22,1,.36,1), background-color .22s ease, box-shadow .22s ease !important;
+}
+.coffee-official-launcher__logo {
+  position: relative !important;
+  z-index: 2 !important;
+  display: block !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  pointer-events: none !important;
+}
+
+/* Diamonds: keep the colour-changing hover, but show the complete official
+   horizontal lockup instead of cropping the middle of it out of the circle. */
+.coffee-official-launcher[data-official-brand="diamonds"] {
+  border: 2px solid #7fa72c !important;
+  background: #0b0d0c !important;
+  box-shadow: 0 0 0 3px rgba(127,167,44,.18), 0 18px 38px -20px rgba(11,13,12,.72) !important;
+}
+.coffee-official-launcher[data-official-brand="diamonds"] .coffee-official-launcher__logo {
+  width: 82% !important;
+  height: 82% !important;
+  margin: auto !important;
+  filter: brightness(0) invert(1) !important;
+}
+.coffee-official-launcher[data-official-brand="diamonds"]:hover {
+  background: #6f8f19 !important;
+  box-shadow: 0 0 0 4px rgba(127,167,44,.22), 0 22px 42px -20px rgba(58,83,18,.72) !important;
+}
+
+.coffee-official-launcher[data-official-brand="vitazov"] {
+  border: 1px solid rgba(255,255,255,.34) !important;
+  background: #0c4438 !important;
+}
+.coffee-official-launcher[data-official-brand="vitazov"] .coffee-official-launcher__logo {
+  width: 76% !important;
+  height: 76% !important;
+  margin: auto !important;
+  filter: brightness(0) invert(1) !important;
+}
+.coffee-official-launcher[data-official-brand="vitazov"]:hover { background:#5f8a1f !important; }
+
+.coffee-official-launcher[data-official-brand="concept"] {
+  border: 1px solid rgba(26,27,25,.15) !important;
+  background: #fff !important;
+  box-shadow: 0 18px 38px -21px rgba(26,27,25,.52), 0 0 0 3px rgba(184,80,60,.10) !important;
+}
+.coffee-official-launcher[data-official-brand="concept"] .coffee-official-launcher__logo {
+  width: 78% !important;
+  height: 78% !important;
+  margin: auto !important;
+  filter: none !important;
+}
+.coffee-official-launcher[data-official-brand="concept"]:hover {
+  background: #f6eee9 !important;
+  box-shadow: 0 20px 42px -20px rgba(184,80,60,.48), 0 0 0 3px rgba(184,80,60,.18) !important;
+}
+
+html body.mcw-on[data-demo="vitazov"] .widget-brand__mark[data-official-brand="vitazov"] {
+  width: 62px !important;
+  height: 42px !important;
+  display: grid !important;
+  place-items: center !important;
+  padding: 5px 7px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: rgba(255,255,255,.10) !important;
+}
+html body.mcw-on[data-demo="vitazov"] .coffee-official-header-logo {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 54px !important;
+  max-height: 34px !important;
+  object-fit: contain !important;
+  filter: brightness(0) invert(1) !important;
+}
+
+/* ========================================================== CHAT ORDER */
+
+/* No initial message may float down next to the quick chips. */
+[data-greeting-top="true"] {
+  justify-content: flex-start !important;
+  align-content: flex-start !important;
+}
+html body.mcw-on[data-demo="vitazov"] #chatMessages,
+html body.mcw-on[data-demo="concept"] #chatMessages,
+html body.mcw-on[data-demo="diamonds"] #chatMessages,
+body[data-coffee-release="jolka"] #chat {
+  justify-content: flex-start !important;
+  align-content: flex-start !important;
+}
+html body.mcw-on[data-demo="vitazov"] #chatMessages > :first-child,
+html body.mcw-on[data-demo="concept"] #chatMessages > :first-child,
+html body.mcw-on[data-demo="diamonds"] #chatMessages > :first-child,
+body[data-coffee-release="jolka"] #chat > :first-child {
+  margin-top: 0 !important;
+}
+
+/* ====================================================== ADVISOR HANDOFF */
+
+/* The handoff should look like a useful product action, not another tiny chip. */
+html body.mcw-on[data-demo="vitazov"] #openAdvisor {
+  width: calc(100% - 28px) !important;
+  min-height: 78px !important;
+  margin: 9px 14px 7px !important;
+  display: grid !important;
+  grid-template-columns: 74px minmax(0,1fr) 34px !important;
+  align-items: center !important;
+  gap: 11px !important;
+  padding: 7px 10px 7px 7px !important;
+  border: 1px solid rgba(12,68,56,.24) !important;
+  border-radius: 20px !important;
+  background: #f4f9f3 !important;
+  box-shadow: 0 16px 34px -29px rgba(7,31,26,.55) !important;
+}
+html body.mcw-on[data-demo="vitazov"] #openAdvisor > span:first-child {
+  width: 74px !important;
+  height: 62px !important;
+  display: block !important;
+  overflow: hidden !important;
+  border-radius: 15px !important;
+  color: transparent !important;
+  background: url('/assets/vitazov-brazil.jpeg') center 48% / cover no-repeat !important;
+}
+html body.mcw-on[data-demo="vitazov"] #openAdvisor > span:first-child svg { display:none !important; }
+html body.mcw-on[data-demo="vitazov"] #openAdvisor > div { min-width:0 !important; display:grid !important; gap:4px !important; }
+html body.mcw-on[data-demo="vitazov"] #openAdvisor b { font-size:14px !important; }
+html body.mcw-on[data-demo="vitazov"] #openAdvisor em { display:block !important; color:rgba(7,31,26,.58) !important; font-size:10.5px !important; font-style:normal !important; }
+
+html body.mcw-on[data-demo="concept"] #chatScreen .advisor-entry {
+  min-height: 78px !important;
+  grid-template-columns: 74px minmax(0,1fr) 34px !important;
+  gap: 11px !important;
+  padding: 7px 10px 7px 7px !important;
+  border-radius: 20px !important;
+  color: #1a1b19 !important;
+  background: #fbf7f2 !important;
+}
+html body.mcw-on[data-demo="concept"] #chatScreen .advisor-entry__mark {
+  width: 74px !important;
+  height: 62px !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  border-radius: 15px !important;
+  color: transparent !important;
+  background: url('/assets/concept/prep-filter.webp') center / cover no-repeat !important;
+}
+html body.mcw-on[data-demo="concept"] #chatScreen .advisor-entry__mark > * { display:none !important; }
+html body.mcw-on[data-demo="concept"] #chatScreen .advisor-entry__copy b { font-size:14px !important; }
+html body.mcw-on[data-demo="concept"] #chatScreen .advisor-entry__copy span { display:block !important; font-size:10.5px !important; color:rgba(26,27,25,.58) !important; }
+
+html body.mcw-on[data-demo="diamonds"] .advisor-entry {
+  min-height: 80px !important;
+  grid-template-columns: 76px minmax(0,1fr) 32px !important;
+  gap: 11px !important;
+  padding: 7px 10px 7px 7px !important;
+  border-radius: 20px !important;
+}
+html body.mcw-on[data-demo="diamonds"] .advisor-entry__media,
+html body.mcw-on[data-demo="diamonds"] .advisor-entry-photo {
+  width: 76px !important;
+  height: 64px !important;
+  border-radius: 15px !important;
+  overflow: hidden !important;
+}
+html body.mcw-on[data-demo="diamonds"] .advisor-entry-photo img { width:100% !important; height:100% !important; object-fit:cover !important; }
+
+/* ============================================================ COMPOSERS */
+
+/* Vitazov: one outer pill; the send control is an inset action, not a second
+   floating shape attached to the field. */
+html body.mcw-on[data-demo="vitazov"] .composer {
+  min-height: 58px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  padding: 5px 7px 5px 15px !important;
+  border: 1.5px solid rgba(12,68,56,.27) !important;
+  border-radius: 20px !important;
+  background: #fff !important;
+  box-shadow: 0 10px 24px -22px rgba(7,31,26,.55) !important;
+}
+html body.mcw-on[data-demo="vitazov"] .composer input {
+  min-width:0 !important;
+  height:46px !important;
+  padding:0 !important;
+  border:0 !important;
+  outline:0 !important;
+  background:transparent !important;
+  font-size:14px !important;
+}
+html body.mcw-on[data-demo="vitazov"] .composer > button {
+  width:44px !important;
+  height:44px !important;
+  flex:0 0 44px !important;
+  border:0 !important;
+  border-radius:14px !important;
+  color:#0c4438 !important;
+  background:#eef7e2 !important;
+  box-shadow:none !important;
+}
+html body.mcw-on[data-demo="vitazov"] .composer > button:hover { background:#dcefc1 !important; transform:none !important; }
+
+html body.mcw-on[data-demo="concept"] .composer {
+  width:calc(100% - 24px) !important;
+  margin:0 12px !important;
+  padding:0 !important;
+  border:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+html body.mcw-on[data-demo="concept"] .composer__shell {
+  min-height:58px !important;
+  display:flex !important;
+  align-items:center !important;
+  gap:5px !important;
+  padding:5px 7px 5px 15px !important;
+  border:1.5px solid rgba(26,27,25,.22) !important;
+  border-radius:20px !important;
+  background:#fff !important;
+  box-shadow:0 10px 24px -22px rgba(26,27,25,.5) !important;
+}
+html body.mcw-on[data-demo="concept"] .composer input { height:46px !important; padding:0 !important; border:0 !important; background:transparent !important; font-size:14px !important; }
+html body.mcw-on[data-demo="concept"] .composer__send { width:44px !important; height:44px !important; flex:0 0 44px !important; border:0 !important; border-radius:14px !important; color:#1a1b19 !important; background:#f5e7e2 !important; box-shadow:none !important; }
+html body.mcw-on[data-demo="concept"] .composer__send:hover { background:#efd2c8 !important; transform:none !important; }
+
+html body.mcw-on[data-demo="diamonds"] .composer {
+  min-height:58px !important;
+  display:flex !important;
+  align-items:center !important;
+  gap:5px !important;
+  padding:5px 7px 5px 15px !important;
+  border:1.5px solid rgba(11,13,12,.18) !important;
+  border-radius:20px !important;
+  background:#fff !important;
+  box-shadow:0 10px 24px -22px rgba(11,13,12,.48) !important;
+}
+html body.mcw-on[data-demo="diamonds"] .composer input { height:46px !important; padding:0 !important; border:0 !important; background:transparent !important; font-size:14px !important; }
+html body.mcw-on[data-demo="diamonds"] .composer button { width:44px !important; height:44px !important; flex:0 0 44px !important; border:0 !important; border-radius:14px !important; color:#fff !important; background:#0b0d0c !important; box-shadow:none !important; }
+html body.mcw-on[data-demo="diamonds"] .composer button:hover { background:#6f8f19 !important; transform:none !important; }
+
+/* Jolka's source has a bordered .composer__field and a separate send circle.
+   The border moves to the form, which turns both controls into one component. */
+body[data-coffee-release="jolka"] .composer {
+  min-height:58px !important;
+  display:flex !important;
+  align-items:center !important;
+  gap:5px !important;
+  padding:5px 7px 5px 15px !important;
+  border:1.5px solid #d2c0a5 !important;
+  border-radius:20px !important;
+  background:#fffdfa !important;
+  box-shadow:0 10px 24px -22px rgba(35,24,14,.52) !important;
+}
+body[data-coffee-release="jolka"] .composer__field {
+  min-width:0 !important;
+  flex:1 1 auto !important;
+  padding:0 !important;
+  border:0 !important;
+  border-radius:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+}
+body[data-coffee-release="jolka"] .composer__field input { width:100% !important; height:46px !important; padding:0 !important; border:0 !important; outline:0 !important; background:transparent !important; font-size:14px !important; }
+body[data-coffee-release="jolka"] .composer .send { width:44px !important; height:44px !important; flex:0 0 44px !important; margin:0 !important; border:0 !important; border-radius:14px !important; color:#23180f !important; background:#f0e2cc !important; box-shadow:none !important; }
+body[data-coffee-release="jolka"] .composer .send:hover { background:#e6cfab !important; transform:none !important; }
+
+/* ====================================================== ADVISOR PHOTOS */
+
+/* Preparation is the same physical action regardless of roastery. Use the
+   dedicated semantic photos already in the repository instead of scaling an
+   icon or an over-wide sprite cell. */
+html body.mcw-on[data-demo="vitazov"] .option__photo,
+html body.mcw-on[data-demo="concept"] .option__photo {
+  height:108px !important;
+  min-height:108px !important;
+  aspect-ratio:auto !important;
+  overflow:hidden !important;
+  border-radius:14px !important;
+  color:transparent !important;
+  background-color:#eee9e2 !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:cover !important;
+}
+html body.mcw-on[data-demo="vitazov"] .option__photo > svg,
+html body.mcw-on[data-demo="concept"] .option__photo > svg { display:none !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--automatic,
+html body.mcw-on[data-demo="concept"] .option__photo--automatic { background-image:url('/assets/praziarnicka/prep-automatic.webp') !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--lever,
+html body.mcw-on[data-demo="vitazov"] .option__photo--espresso,
+html body.mcw-on[data-demo="concept"] .option__photo--lever,
+html body.mcw-on[data-demo="concept"] .option__photo--espresso { background-image:url('/assets/praziarnicka/prep-lever.webp') !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--filter,
+html body.mcw-on[data-demo="concept"] .option__photo--filter { background-image:url('/assets/praziarnicka/prep-filter.webp') !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--moka,
+html body.mcw-on[data-demo="concept"] .option__photo--moka { background-image:url('/assets/praziarnicka/prep-moka.webp') !important; }
+
+html body.mcw-on[data-demo="vitazov"] .option,
+html body.mcw-on[data-demo="concept"] .option {
+  min-height:0 !important;
+  grid-template-rows:108px auto !important;
+  padding:6px !important;
+  gap:0 !important;
+  border-radius:18px !important;
+}
+html body.mcw-on[data-demo="vitazov"] .option__copy,
+html body.mcw-on[data-demo="concept"] .option__copy {
+  padding:10px 30px 8px 6px !important;
+  min-height:58px !important;
+}
+html body.mcw-on[data-demo="vitazov"] .option__copy b,
+html body.mcw-on[data-demo="concept"] .option__copy b { font-size:13px !important; line-height:1.2 !important; }
+html body.mcw-on[data-demo="vitazov"] .option__copy small,
+html body.mcw-on[data-demo="concept"] .option__copy small { margin-top:4px !important; font-size:10.5px !important; line-height:1.3 !important; }
+
+/* Diamonds cards keep their existing semantic backgrounds, but the image area
+   is taller and close to 4:3, so subjects no longer look horizontally pulled. */
+html body.mcw-on[data-demo="diamonds"] .answer-card {
+  min-height:0 !important;
+  grid-template-rows:auto auto !important;
+  padding:6px !important;
+  border-radius:18px !important;
+}
+html body.mcw-on[data-demo="diamonds"] .answer-photo {
+  width:100% !important;
+  height:auto !important;
+  min-height:112px !important;
+  aspect-ratio:4/3 !important;
+  border-radius:14px !important;
+  background-size:cover !important;
+  background-position:center !important;
+}
+html body.mcw-on[data-demo="diamonds"] .answer-copy { padding:10px 6px 8px !important; }
+html body.mcw-on[data-demo="diamonds"] .answer-copy b { font-size:13px !important; }
+html body.mcw-on[data-demo="diamonds"] .answer-copy small { margin-top:4px !important; font-size:10.5px !important; line-height:1.3 !important; }
+
+/* ======================================================= SMOOTH MOTION */
+
+html body.mcw-on[data-demo="vitazov"] .screen,
+html body.mcw-on[data-demo="concept"] .screen,
+html body.mcw-on[data-demo="diamonds"] .screen,
+body[data-coffee-release="jolka"] .screen {
+  transition: opacity .20s ease, transform .24s cubic-bezier(.22,1,.36,1), visibility .20s ease !important;
+}
+html body.mcw-on[data-demo="vitazov"] .screen:not(.is-active),
+html body.mcw-on[data-demo="concept"] .screen:not(.is-active),
+html body.mcw-on[data-demo="diamonds"] .screen:not(.is-active),
+body[data-coffee-release="jolka"] .screen:not(.is-active) {
+  opacity:0 !important;
+  transform:translateY(5px) !important;
+}
+html body.mcw-on[data-demo="vitazov"] .screen.is-active,
+html body.mcw-on[data-demo="concept"] .screen.is-active,
+html body.mcw-on[data-demo="diamonds"] .screen.is-active,
+body[data-coffee-release="jolka"] .screen.is-active {
+  opacity:1 !important;
+  transform:none !important;
+}
+
+@media (max-width:640px) {
+  html body.mcw-on[data-demo="vitazov"] #openAdvisor,
+  html body.mcw-on[data-demo="concept"] #chatScreen .advisor-entry,
+  html body.mcw-on[data-demo="diamonds"] .advisor-entry {
+    min-height:72px !important;
+    grid-template-columns:66px minmax(0,1fr) 32px !important;
+  }
+  html body.mcw-on[data-demo="vitazov"] #openAdvisor > span:first-child,
+  html body.mcw-on[data-demo="concept"] #chatScreen .advisor-entry__mark,
+  html body.mcw-on[data-demo="diamonds"] .advisor-entry__media,
+  html body.mcw-on[data-demo="diamonds"] .advisor-entry-photo {
+    width:66px !important;
+    height:56px !important;
+  }
+  html body.mcw-on[data-demo="vitazov"] .option,
+  html body.mcw-on[data-demo="concept"] .option { grid-template-rows:94px auto !important; }
+  html body.mcw-on[data-demo="vitazov"] .option__photo,
+  html body.mcw-on[data-demo="concept"] .option__photo { height:94px !important; min-height:94px !important; }
+  html body.mcw-on[data-demo="diamonds"] .answer-photo { min-height:96px !important; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .coffee-official-launcher,
+  html body.mcw-on[data-demo] .screen,
+  body[data-coffee-release="jolka"] .screen { transition:none !important; }
+}
