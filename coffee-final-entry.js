@@ -133,6 +133,8 @@
     await loadAll(manifest.scripts, addScript);
     if (slug !== 'praziarnicka') await loadAll(finalScripts, addScript);
     await addScript('/coffee-usability-release.js');
+    await addStyle('/coffee-review-pass.css');
+    await addScript('/coffee-review-pass.js');
   };
 
   boot().catch((error) => {
