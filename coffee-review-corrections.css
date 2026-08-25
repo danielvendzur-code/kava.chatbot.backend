@@ -20,76 +20,26 @@ html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option__visual img {
 }
 
 /* ============================================================= VITAZOV */
-/* Keep the icon as a graceful fallback. A card only hides its icon when a
-   genuine photograph is assigned below. */
-html body.mcw-on[data-demo="vitazov"] .option__photo > svg {
-  display:block !important;
-  width:30px !important;
-  height:30px !important;
-  margin:auto !important;
-  color:#0c4438 !important;
-}
+/* Do not replace the semantic 4x4 choice sprite with four near-identical bag
+   photos. The brand's own advisor stylesheet maps each answer to a distinct
+   sprite cell, which communicates preparation/taste faster than packaging. */
 html body.mcw-on[data-demo="vitazov"] .option__photo {
-  display:grid !important;
-  place-items:center !important;
-  color:#0c4438 !important;
-  background-color:#f0f5ec !important;
-  background-image:none !important;
+  background-image:url('/assets/vitazov-choice-sprite.png') !important;
+  background-size:400% 400% !important;
+  background-repeat:no-repeat !important;
 }
-
-/* Step 1: real brand/product photography communicates the usage context. */
-html body.mcw-on[data-demo="vitazov"] .option__photo--home {
-  background-image:url('/assets/vitazov-victory.jpeg') !important;
-  background-position:center !important;
-  background-size:cover !important;
-}
-html body.mcw-on[data-demo="vitazov"] .option__photo--office {
-  background-image:url('/assets/vitazov-office.jpeg') !important;
-  background-position:center !important;
-  background-size:cover !important;
-}
-html body.mcw-on[data-demo="vitazov"] .option__photo--automatic {
-  background-image:url('/assets/vitazov-brazil.jpeg') !important;
-  background-position:center !important;
-  background-size:cover !important;
-}
-html body.mcw-on[data-demo="vitazov"] .option__photo--discovery {
-  background-image:url('/assets/vitazov-ethiopia.jpeg') !important;
-  background-position:center !important;
-  background-size:cover !important;
-}
-
-/* Step 2: visual taste direction stays tied to the actual range. */
-html body.mcw-on[data-demo="vitazov"] .option__photo--classic {
-  background-image:url('/assets/vitazov-brazil.jpeg') !important;
-  background-position:center !important;
-  background-size:cover !important;
-}
-html body.mcw-on[data-demo="vitazov"] .option__photo--balanced {
-  background-image:url('/assets/vitazov-victory.jpeg') !important;
-  background-position:center !important;
-  background-size:cover !important;
-}
-html body.mcw-on[data-demo="vitazov"] .option__photo--fruity {
-  background-image:url('/assets/vitazov-ethiopia.jpeg') !important;
-  background-position:center !important;
-  background-size:cover !important;
-}
-html body.mcw-on[data-demo="vitazov"] .option__photo--decaf {
-  background-image:url('/assets/vitazov-decaf.jpeg') !important;
-  background-position:center !important;
-  background-size:cover !important;
-}
-
-html body.mcw-on[data-demo="vitazov"] .option__photo--home > svg,
-html body.mcw-on[data-demo="vitazov"] .option__photo--office > svg,
-html body.mcw-on[data-demo="vitazov"] .option__photo--automatic > svg,
-html body.mcw-on[data-demo="vitazov"] .option__photo--discovery > svg,
-html body.mcw-on[data-demo="vitazov"] .option__photo--classic > svg,
-html body.mcw-on[data-demo="vitazov"] .option__photo--balanced > svg,
-html body.mcw-on[data-demo="vitazov"] .option__photo--fruity > svg,
-html body.mcw-on[data-demo="vitazov"] .option__photo--decaf > svg {
-  display:none !important;
+html body.mcw-on[data-demo="vitazov"] .option__photo--home { background-position:0 0 !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--office { background-position:33.333% 0 !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--automatic { background-position:66.666% 0 !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--discovery { background-position:100% 0 !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--classic,
+html body.mcw-on[data-demo="vitazov"] .option__photo--strong { background-position:0 33.333% !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--balanced,
+html body.mcw-on[data-demo="vitazov"] .option__photo--smooth { background-position:33.333% 33.333% !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--fruity { background-position:66.666% 33.333% !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--decaf { background-position:100% 33.333% !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo > svg {
+  opacity:0 !important;
 }
 
 /* ============================================================= CONCEPT */
@@ -121,4 +71,16 @@ html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][st
 
 @media(max-width:640px){
   html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option__visual { aspect-ratio:4 / 3 !important; }
+
+  /* On the one-screen owner pitch the floating teaser was covering the price,
+     add-on note and contact CTA. The launcher remains available; only the
+     redundant invitation card is suppressed on phone-sized owner views. */
+  html body.mcw-on [data-mcb-page="true"] ~ [data-mcb-teaser="true"],
+  html body.mcw-on:has([data-mcb-page="true"]) .launcher__teaser,
+  html body.mcw-on:has([data-mcb-page="true"]) .launcher-teaser,
+  html body.mcw-on:has([data-mcb-page="true"]) .teaser,
+  html body.mcw-on:has([data-mcb-page="true"]) .kf-teaser,
+  html body.mcw-on:has([data-mcb-page="true"]) .pz13-preview {
+    display:none !important;
+  }
 }
