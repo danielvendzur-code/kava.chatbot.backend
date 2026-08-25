@@ -15,6 +15,15 @@
   document.documentElement.dataset.coffeeReviewPass = '2026-08-25';
   document.body.dataset.coffeeReviewPass = slug;
 
+  const BRAND_CONTACT = {
+    praziarnicka: { name: 'Pražiarnička', web: 'https://praziarnicka.sk/eshop' },
+    diamonds: { name: 'Diamonds Roastery', web: 'https://diroastery.sk/kategoria-produktu/kava/' },
+    kaffa: { name: 'Kaffa Roastery', web: 'https://kaffaroastery.sk/' },
+    vitazov: { name: 'Káva Víťazov', web: 'https://kavavitazov.sk/obchod/' },
+    concept: { name: 'Concept Coffee Roasters', web: 'https://www.conceptcoffee.sk/' },
+    jolka: { name: 'Pražiareň Jolka', web: 'https://www.praziarenjolka.sk/eshop-kava/' }
+  };
+
   const OFFICIAL_MARKS = {
     diamonds: '/assets/diamonds/diroastery-logo.svg',
     vitazov: '/assets/vitazov-logo.svg',
@@ -36,7 +45,8 @@
   }
 
   function personalisedContactHref() {
-    const brand = window.__MCB_BRAND__ || {};
+    const published = window.__MCB_BRAND__ || {};
+    const fallback = BRAND_CONTACT[slug];
     const existing = document.querySelector('.mcb-btn[href*="/kontakt"], .mc-owner-contact[href*="/kontakt"]');
     let params = new URLSearchParams();
 
@@ -44,9 +54,9 @@
       try { params = new URL(existing.href, location.href).searchParams; } catch (_) {}
     }
 
-    if (!params.get('source')) params.set('source', `coffee-demo-${slug}`);
-    if (!params.get('company') && brand.name) params.set('company', brand.name);
-    if (!params.get('web') && brand.shop) params.set('web', brand.shop);
+    params.set('source', `coffee-demo-${slug}`);
+    params.set('company', published.name || fallback.name);
+    params.set('web', published.shop || fallback.web);
     params.set('demo', location.href);
 
     return `${isPreviewHost() ? PREVIEW_CONTACT : PRODUCTION_CONTACT}?${params.toString()}`;
