@@ -12,7 +12,7 @@
   const slug = rawSlug.replace('-v13', '');
   if (!valid.has(slug)) return;
 
-  document.documentElement.dataset.coffeeReviewPass = '2026-08-25-r2';
+  document.documentElement.dataset.coffeeReviewPass = '2026-08-25-r3';
   document.body.dataset.coffeeReviewPass = slug;
   document.documentElement.dataset.jolkaParity = 'ready';
 
@@ -169,27 +169,6 @@
     }
   }
 
-  function refineVitazovSemanticPhotos() {
-    if (slug !== 'vitazov') return;
-    const assets = {
-      home: '/assets/vitazov-victory.jpeg',
-      office: '/assets/vitazov-office.jpeg',
-      automatic: '/assets/vitazov-brazil.jpeg',
-      discovery: '/assets/vitazov-ethiopia.jpeg'
-    };
-    document.querySelectorAll('#advisorBody .option[data-value]').forEach((card) => {
-      const src = assets[card.dataset.value];
-      if (!src) return;
-      const photo = card.querySelector('.option__photo');
-      if (!photo) return;
-      photo.style.setProperty('background-image', `url("${src}"), url("/assets/vitazov-choice-sprite.png")`, 'important');
-      photo.style.setProperty('background-size', 'cover, cover', 'important');
-      photo.style.setProperty('background-position', 'center, center', 'important');
-      photo.style.setProperty('background-repeat', 'no-repeat', 'important');
-      photo.querySelectorAll('svg').forEach((svg) => { svg.style.opacity = '0'; });
-    });
-  }
-
   function protectOwnerMobileCta() {
     const root = document.querySelector('[data-mcb-page="true"]');
     if (!root) return;
@@ -216,7 +195,6 @@
     refineOwnerCopy();
     removeFakeThinkingState();
     improveAdvisorEntryCopy();
-    refineVitazovSemanticPhotos();
     protectOwnerMobileCta();
   }
 
