@@ -1,14 +1,9 @@
 /**
  * The page the roastery owner opens.
  *
- * It is one screen, no scrolling: who it is for, what it does, three benefits,
- * the price, and how to reach us. Nothing that reads like a landing page and
- * nothing that reads like a demo — the roastery should feel this was built for
- * them and is ready to go on their site.
- *
- * The visual is the picker itself, mid-selection, because that is what their
- * customer actually does: clicks four times. Not a typed question, not a
- * product photograph.
+ * It is one screen, no scrolling: what the advisor does, the price, and a
+ * direct way to respond. The page is intentionally short because the owner
+ * should understand the offer before opening the widget.
  */
 (() => {
   'use strict';
@@ -44,13 +39,6 @@
 
   /* --------------------------------------------------------------- pricing */
 
-  // EDIT HERE. The only numbers on the page.
-  //
-  // `points` is what the price actually covers, so nothing goes in it that is
-  // billed separately — ongoing catalogue work is not included and is not
-  // promised here. `addon` sits apart from that list for the same reason:
-  // it names an extra, not part of the package. Deleting the `addon` line
-  // removes it from every demo and changes nothing else.
   const PRICING = {
     currency: '€',
     setup: '297',
@@ -66,116 +54,104 @@
 
   /* ------------------------------------------------------------------ data */
 
+  const commonFigures = (steps) => [
+    ['24/7', 'chat odpovedá', 'pôvod · chuť · príprava · konkrétne kávy'],
+    ['4', 'krátke otázky', steps],
+    ['1', 'odporúčanie', 'konkrétna káva + dôvod, prečo sedí']
+  ];
+
   const BRANDS = {
     praziarnicka: {
       name: 'Pražiarnička',
       place: 'Pražiarnička by Caffè Vita',
-      forName: 'Pražiarničku',
       root: '.pz13-site',
+      shop: 'https://praziarnicka.sk/eshop',
       lockup: '<img src="/brand/praziarnicka-logo-official.png" alt="Pražiarnička">',
       theme: { ink: '#143f35', brand: '#1c5b4b', accent: '#c25a2b', soft: '#edf6f2', paper: '#ffffff' },
       chips: ['Káva do automatu', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
-      figures: [
-        ['24/7', 'odpovedá', 'aj večer a cez víkend'],
-        ['4', 'otázky', 'príprava · chuť · nápoj · kofeín'],
-        ['1', 'konkrétna káva', 'z vašej ponuky, nie zoznam']
-      ]
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
 
     diamonds: {
       name: 'Diamonds Roastery',
       place: 'Diamonds Roastery · Dunajská Lužná',
-      forName: 'Diamonds Roastery',
       root: '.diamonds-page',
+      shop: 'https://diroastery.sk/kategoria-produktu/kava/',
       lockup: '<img src="/assets/diamonds/diroastery-logo.svg" alt="Diamonds Roastery">',
       theme: { ink: '#0b0d0c', brand: '#0b0d0c', accent: '#6f8f19', soft: '#f2f6e8', paper: '#ffffff' },
       chips: ['Káva na filter', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
-      figures: [
-        ['24/7', 'odpovedá', 'aj večer a cez víkend'],
-        ['4', 'otázky', 'príprava · chuť · nápoj · kofeín'],
-        ['1', 'konkrétna káva', 'z vašej ponuky, nie zoznam']
-      ]
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
 
     kaffa: {
       name: 'Kaffa Roastery',
       place: 'Kaffa Roastery · speciality coffee',
-      forName: 'Kaffa Roastery',
       mark: { text: 'K', font: 'Georgia, "Times New Roman", serif' },
       root: '.kf-shell',
+      shop: 'https://kaffaroastery.sk/',
       lockup: '<span class="mcb-wordmark"><b>KAFFA</b><small>SPECIALITY COFFEE BEANS</small></span>',
       theme: { ink: '#111111', brand: '#111111', accent: '#3d7d97', soft: '#f2ede4', paper: '#fcfbf8' },
       display: { family: 'Georgia, "Times New Roman", serif', weight: '400', tracking: '-.03em' },
       chips: ['Espresso do automatu', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
-      figures: [
-        ['24/7', 'odpovedá', 'aj večer a cez víkend'],
-        ['4', 'otázky', 'príprava · chuť · nápoj · kofeín'],
-        ['1', 'konkrétna káva', 'z vašej ponuky, nie zoznam']
-      ]
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
 
     vitazov: {
       name: 'Káva Víťazov',
       place: 'Káva Víťazov · Prešov',
-      forName: 'Kávu Víťazov',
       root: '.demo-page',
+      shop: 'https://kavavitazov.sk/obchod/',
       lockup: '<img src="/assets/vitazov-logo.svg" alt="Káva Víťazov">',
       theme: { ink: '#071f1a', brand: '#0c4438', accent: '#5f8a1f', soft: '#eef7e2', paper: '#ffffff' },
       chips: ['Káva do kancelárie', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
-      figures: [
-        ['24/7', 'odpovedá', 'aj večer a cez víkend'],
-        ['4', 'otázky', 'použitie · chuť · príprava · nápoj'],
-        ['1', 'konkrétna káva', 'z vašej ponuky, nie zoznam']
-      ]
+      figures: commonFigures('použitie · chuť · príprava · nápoj')
     },
 
     concept: {
       name: 'Concept Coffee Roasters',
       place: 'Concept Coffee Roasters · Piešťany a Bratislava',
-      forName: 'Concept Coffee Roasters',
-      // A wide wordmark is unreadable at 34 px in a circle; the initial is not.
       mark: { text: 'C', font: '"DM Sans", system-ui, sans-serif' },
       root: '.concept-page',
+      shop: 'https://www.conceptcoffee.sk/',
       lockup: '<img src="/brand/concept-official-logo.png" alt="Concept Coffee Roasters">',
       theme: { ink: '#1a1b19', brand: '#2c4038', accent: '#b8503c', soft: '#f4efe7', paper: '#fbfaf6' },
       chips: ['Káva na filter', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
-      figures: [
-        ['24/7', 'odpovedá', 'aj večer a cez víkend'],
-        ['4', 'otázky', 'príprava · chuť · nápoj · kofeín'],
-        ['1', 'konkrétna káva', 'z aktuálnej sezónnej ponuky']
-      ]
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
 
     jolka: {
       name: 'Pražiareň Jolka',
       place: 'Pražiareň Jolka · Bratislava-Ružinov',
-      forName: 'Pražiareň Jolka',
       root: '.page',
+      shop: 'https://www.praziarenjolka.sk/eshop-kava/',
       lockup: '<img src="/assets/jolka/logo-ink.webp" alt="Pražiareň Jolka"><b>Pražiareň Jolka</b>',
       theme: { ink: '#23180f', brand: '#5e4834', accent: '#a8763f', soft: '#f3ece3', paper: '#fdfaf6' },
       display: { family: '"Playfair Display", Georgia, serif', weight: '600', tracking: '-.02em' },
       chips: ['Nízka acidita', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
-      figures: [
-        ['24/7', 'odpovedá', 'aj večer a cez víkend'],
-        ['4', 'otázky', 'príprava · chuť · nápoj · acidita'],
-        ['1', 'konkrétna káva', 'z vašej ponuky, nie zoznam']
-      ]
+      figures: commonFigures('príprava · chuť · nápoj · acidita')
     }
   };
 
-  // One plain description for every roastery. The brand is carried by the
-  // lockup, the palette, the type and the line above the heading — not by
-  // copywriting. Each demo used to open with its own slogan, which read as an
-  // advert rather than as an explanation of what is on offer.
   const HEADING = 'Kávový poradca na váš web.';
-  const LEAD = 'Zákazníci na vašom webe nevedia, aké kávy máte, a ťažko sa im vyberá. ' +
-    'V poradcovi sa môžu opýtať vlastnými slovami — alebo cez pár otázok prísť ku ' +
-    'konkrétnej káve z vašej ponuky.';
+  const LEAD = 'Chat odpovie na otázky o pôvode, chuti, príprave aj konkrétnych kávach z vašej ponuky. ' +
+    'Keď zákazník nevie, čo vybrať, cez štyri krátke otázky sa dostane k jednému konkrétnemu odporúčaniu aj s dôvodom.';
 
   const brand = BRANDS[slug];
 
   // Published so the widget-side modules can reuse the same brand facts.
   window.__MCB_BRAND__ = { slug, ...brand };
+
+  /* ---------------------------------------------------------- contact link */
+
+  function contactHref() {
+    const params = new URLSearchParams({
+      source: `coffee-demo-${slug}`,
+      company: brand.name,
+      web: brand.shop,
+      demo: location.href
+    });
+    return `https://mojchatbot.sk/kontakt?${params.toString()}`;
+  }
 
   /* --------------------------------------------------------------- markup */
 
@@ -190,10 +166,12 @@
       ${PRICING.addon ? `<p class="mcb-plan-addon">${esc(PRICING.addon)}</p>` : ''}
     </article>`;
 
-  const markup = () => `
+  const markup = () => {
+    const contact = esc(contactHref());
+    return `
     <header class="mcb-head">
       <span class="mcb-lockup">${brand.lockup}</span>
-      <a class="mcb-btn mcb-btn--sm" href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">
+      <a class="mcb-btn mcb-btn--sm" href="${contact}" target="_blank" rel="noreferrer">
         Mám záujem ${icons.arrow}
       </a>
     </header>
@@ -226,16 +204,16 @@
       ${planCard()}
       <div class="mcb-pricing-side">
         <p>${esc(PRICING.note)}</p>
-        <a class="mcb-btn mcb-btn--accent" href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">
+        <a class="mcb-btn mcb-btn--accent" href="${contact}" target="_blank" rel="noreferrer">
           ${icons.mail} Ozvite sa mi
         </a>
       </div>
     </section>
 
-    <footer class="mcb-foot">
-      <span>Pripravené pre ${esc(brand.forName || brand.name)}</span>
+    <footer class="mcb-foot" style="justify-content:flex-end">
       <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk ${icons.arrow}</a>
     </footer>`;
+  };
 
   /* -------------------------------------------------------------- opening */
 
@@ -270,9 +248,6 @@
 
   /* ---------------------------------------------------------- scroll lock */
 
-  // Each demo locks page scrolling while its widget dialog is open, and the
-  // focus trap depends on that lock. The page marks the body while a dialog is
-  // open and hands the lock back.
   const OPEN_DIALOG = '#widget[aria-hidden="false"], #pz13-widget[aria-hidden="false"], ' +
     '.kf-panel[aria-hidden="false"], .widget[aria-hidden="false"], ' +
     '.widget.is-open, .kf-widget.is-open, .pz13-widget.is-open';
@@ -281,8 +256,6 @@
     const sync = () => {
       document.body.classList.toggle('mcb-dialog-open', Boolean(document.querySelector(OPEN_DIALOG)));
     };
-    // classList.toggle is a no-op when the state already matches, so this
-    // observer cannot retrigger itself through the class it sets.
     new MutationObserver(sync).observe(document.documentElement, {
       subtree: true, childList: true, attributes: true, attributeFilter: ['aria-hidden', 'class']
     });
@@ -291,9 +264,6 @@
 
   /* --------------------------------------------------------------- render */
 
-  // Ranked behind coffee-usability-release.css (10), coffee-widget-final.css
-  // (20) and coffee-header-cleanup.css (25), so the page styling wins without
-  // any of the observer ping-pong those layers used to run.
   const attachStyle = () => {
     if (document.querySelector('link[data-mcb-style]')) return;
 
@@ -310,6 +280,13 @@
     link.dataset.mcbStyle = 'true';
     link.dataset.mcOrder = '30';
     document.body.appendChild(link);
+
+    const sales = document.createElement('link');
+    sales.rel = 'stylesheet';
+    sales.href = '/coffee-owner-sales-polish.css';
+    sales.dataset.mcbSalesStyle = 'true';
+    sales.dataset.mcOrder = '40';
+    document.body.appendChild(sales);
 
     const orderStyles = () => {
       const ranked = [...document.body.querySelectorAll('link[rel="stylesheet"][data-mc-order]')];
@@ -334,7 +311,6 @@
       root.style.setProperty('--mcb-display-weight', brand.display.weight);
       root.style.setProperty('--mcb-display-tracking', brand.display.tracking);
     }
-    // The page background has to match, or the brand tint stops at the root edge.
     document.documentElement.style.setProperty('--mcb-paper', t.paper);
     document.body.style.setProperty('--mcb-paper', t.paper);
   }
@@ -351,8 +327,6 @@
 
     attachStyle();
     root.dataset.mcbPage = 'true';
-    // Drop every earlier owner-page class so none of the older !important
-    // layers keep the root in its previous composition.
     root.className = 'mcb-page';
     root.removeAttribute('style');
     applyTheme(root);
@@ -370,8 +344,6 @@
     return true;
   }
 
-  // Widget-side polish (invitation copy, launcher mark, panel sections) is a
-  // separate module, loaded once the brand facts above are on window.
   if (!document.querySelector('script[data-mcb-widget]')) {
     const polish = document.createElement('script');
     polish.src = '/coffee-widget-polish.js';
@@ -380,7 +352,6 @@
     document.body.appendChild(polish);
   }
 
-  // Every brand runtime builds its page asynchronously, so wait for the root.
   if (!render()) {
     let queued = false;
     const observer = new MutationObserver(() => {

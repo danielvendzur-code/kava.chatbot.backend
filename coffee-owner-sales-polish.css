@@ -1,0 +1,85 @@
+/**
+ * Final owner-sales polish shared by the six coffee demos.
+ *
+ * Deliberately narrow in scope:
+ * - no widget width changes;
+ * - only a modest desktop height increase;
+ * - photo choices use compact, proportional crops;
+ * - brand runtimes keep ownership of their header colours.
+ */
+
+@media (min-width: 641px) {
+  /* Pražiarnička was noticeably shorter than the other demos. */
+  html body.mcw-on .pz13-widget {
+    height: min(780px, calc(100dvh - 28px)) !important;
+    max-height: calc(100dvh - 28px) !important;
+  }
+
+  /* Kaffa starts at 700 px; add room without turning it into a full-screen modal. */
+  html body.mcw-on .kf-panel {
+    height: min(770px, calc(100dvh - 40px)) !important;
+    max-height: calc(100dvh - 40px) !important;
+  }
+
+  /* Jolka and the routed v8 demos share #widget. Width remains untouched. */
+  html body.mcw-on #widget {
+    height: min(812px, calc(100dvh - 36px)) !important;
+    max-height: calc(100dvh - 36px) !important;
+  }
+}
+
+/* ---------------------------------------------------------------- photos */
+
+/*
+ * Pražiarnička's option grid used minmax(0,1fr), so a taller widget made each
+ * image band grow with the free space. The photographs were still cover-crops,
+ * but visually looked stretched because the crop became far too tall.
+ * Keep the 2×2 layout and give every photo a stable compact band instead.
+ */
+html body.mcw-on .pz13-options {
+  grid-auto-rows: auto !important;
+  align-content: start !important;
+}
+
+html body.mcw-on .pz13-option {
+  grid-template-rows: 96px auto !important;
+  min-height: 0 !important;
+}
+
+html body.mcw-on .pz13-option__visual {
+  height: 96px !important;
+  min-height: 96px !important;
+}
+
+html body.mcw-on .pz13-option__img,
+html body.mcw-on .pz13-option__visual img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/*
+ * Jolka already has the right two-column composition. Its source rule lets the
+ * image band grow to 138 px; cap it so the four choices read like the compact
+ * reference cards instead of four large hero photographs.
+ */
+html body.mcw-on .widget .option__visual {
+  height: 100px !important;
+  min-height: 100px !important;
+}
+
+html body.mcw-on .widget .option__visual img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 50% !important;
+}
+
+/* Kaffa and Concept already use compact crops. This only guarantees that a
+   runtime-provided image can never be geometrically distorted. */
+html body.mcw-on .kf-option__visual img,
+html body.mcw-on .option__photo img,
+html body.mcw-on .answer-card img {
+  object-fit: cover !important;
+}
