@@ -8,7 +8,7 @@
 /* It was a 290 px card with a 15 px title and a 13.5 px subtitle, so both lines
    wrapped and the card grew to four lines of text sitting on the launcher. It
    is now one tight card with one line each. */
-html body [data-mcb-teaser="true"][data-mcb-teaser] {
+html body.mcw-on [data-mcb-teaser="true"][data-mcb-teaser] {
   width: auto !important;
   max-width: 246px !important;
   min-height: 0 !important;
@@ -17,21 +17,26 @@ html body [data-mcb-teaser="true"][data-mcb-teaser] {
   margin: 0 !important;
   padding: 11px 34px 11px 14px !important;
   border-radius: 16px 16px 4px 16px !important;
-  box-shadow: 0 16px 34px -24px rgba(18, 22, 18, .5) !important;
+  /* Readable at a glance without growing: the border and shadow carry it, not
+     a bigger box. */
+  border: 1.5px solid color-mix(in srgb, var(--mcw-brand, #16211d) 22%, transparent) !important;
+  background: #fff !important;
+  box-shadow: 0 18px 36px -22px rgba(18, 22, 18, .58) !important;
 }
-html body [data-mcb-teaser="true"][data-mcb-teaser] b,
-html body [data-mcb-teaser="true"][data-mcb-teaser] strong {
+html body.mcw-on [data-mcb-teaser="true"][data-mcb-teaser] b,
+html body.mcw-on [data-mcb-teaser="true"][data-mcb-teaser] strong {
   display: block !important;
   margin: 0 0 2px !important;
-  font-size: 13px !important;
+  font-size: 13.5px !important;
   font-weight: 800 !important;
   line-height: 1.25 !important;
   letter-spacing: -.01em !important;
   white-space: nowrap !important;
+  color: var(--mcw-ink, #16211d) !important;
 }
 /* Concept, Jolka and Prazarnicka wrap their invitation in an inner button that
    carries its own padding, which added a second box inside the card. */
-html body [data-mcb-teaser="true"][data-mcb-teaser] > button:not([class*="close"]) {
+html body.mcw-on [data-mcb-teaser="true"][data-mcb-teaser] > button:not([class*="close"]) {
   display: block !important;
   width: 100% !important;
   min-height: 0 !important;
@@ -43,72 +48,75 @@ html body [data-mcb-teaser="true"][data-mcb-teaser] > button:not([class*="close"
   font: inherit !important;
   color: inherit !important;
 }
-html body [data-mcb-teaser="true"][data-mcb-teaser] span:not([class*="close"]) {
+html body.mcw-on [data-mcb-teaser="true"][data-mcb-teaser] span:not([class*="close"]) {
   display: block !important;
-  font-size: 11px !important;
-  font-weight: 600 !important;
+  font-size: 11.5px !important;
+  font-weight: 650 !important;
   line-height: 1.3 !important;
   white-space: nowrap !important;
+  color: color-mix(in srgb, var(--mcw-ink, #16211d) 68%, transparent) !important;
 }
-html body [data-mcb-teaser="true"][data-mcb-teaser] button[class*="close"],
-html body [data-mcb-teaser="true"][data-mcb-teaser] .mc-teaser-close {
+html body.mcw-on [data-mcb-teaser="true"][data-mcb-teaser] button[class*="close"],
+html body.mcw-on [data-mcb-teaser="true"][data-mcb-teaser] .mc-teaser-close {
   top: 7px !important; right: 7px !important;
   width: 22px !important; height: 22px !important;
   display: grid !important; place-items: center !important;
   font-size: 15px !important; line-height: 1 !important;
 }
-html body [data-mcb-teaser="true"][data-mcb-teaser] button[class*="close"] svg,
-html body [data-mcb-teaser="true"][data-mcb-teaser] .mc-teaser-close svg { width: 11px !important; height: 11px !important; }
+html body.mcw-on [data-mcb-teaser="true"][data-mcb-teaser] button[class*="close"] svg,
+html body.mcw-on [data-mcb-teaser="true"][data-mcb-teaser] .mc-teaser-close svg { width: 11px !important; height: 11px !important; }
 
 /* ------------------------------------------------------------- the marker */
 
-html body .mcb-w-launcher {
+html body.mcw-on .mcb-w-launcher {
   width: 64px !important; height: 64px !important;
   border: 1px solid color-mix(in srgb, var(--nb-ink, #16211d) 10%, transparent) !important;
   box-shadow: 0 18px 34px -20px rgba(18, 22, 18, .6) !important;
   transition: transform .22s cubic-bezier(.22, 1, .36, 1), box-shadow .22s ease !important;
 }
-html body .mcb-w-launcher:hover { transform: translateY(-2px) !important; }
-html body .mcb-w-launcher img {
+html body.mcw-on .mcb-w-launcher:hover { transform: translateY(-2px) !important; }
+html body.mcw-on .mcb-w-launcher img {
   max-width: 34px !important; max-height: 34px !important;
   object-fit: contain !important;
 }
-html body .mcb-w-letter {
-  display: block !important;
+/* A letter mark: the roastery's initial in their own face, instead of the
+   generic speech bubble the runtime keeps putting back. */
+html body.mcw-on [data-mcw-mark] { position: relative !important; }
+html body.mcw-on [data-mcw-mark] > * { display: none !important; }
+html body.mcw-on [data-mcw-mark]::before,
+html body.mcw-on [data-mcw-mark]::after {
+  content: attr(data-mcw-mark) !important;
+  /* Kaffa's ::after already carried an absolutely placed green status blob, so
+     the slot is reset before the letter is drawn into it. */
+  position: absolute !important;
+  inset: 0 !important;
+  display: grid !important;
+  place-items: center !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: inherit !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
   color: #fff !important;
-  font-size: 26px !important;
+  font-family: var(--mcw-mark-font, inherit) !important;
+  font-size: 27px !important;
   font-weight: 700 !important;
   line-height: 1 !important;
-  letter-spacing: .06em !important;
+  letter-spacing: .02em !important;
 }
+/* Only one of the two is needed; the ::before slot is already taken on Kaffa. */
+html body.mcw-on [data-mcw-mark]::before { display: none !important; }
 
 /* ------------------------------------------------------------- the panel */
 
-/* A caption above each block, so the panel reads as separate parts. */
-html body .mcb-w-caption {
-  display: block !important;
-  /* Indented to sit over the block it labels rather than flush to the panel. */
-  margin: 10px 14px 5px !important;
-  color: color-mix(in srgb, var(--nb-ink, #16211d) 52%, transparent) !important;
-  font-size: 11px !important;
-  font-weight: 900 !important;
-  letter-spacing: .1em !important;
-  text-transform: uppercase !important;
-}
-html body .mcb-w-caption:first-child { margin-top: 2px !important; }
-
-/* The mode switch is the panel's primary control, so it is separated from
-   what follows rather than butting straight into it. */
-html body .mcb-w-switch {
-  margin-bottom: 4px !important;
-  padding-bottom: 0 !important;
-}
-
 /* The lockup is the largest thing in the header — it is their shop. */
-html body [data-demo] .widget__header img,
-html body [data-demo] .widget-head img,
-html body [data-demo] .kf-panel-head img,
-html body [data-demo] .pz13-widget__head img {
+html body.mcw-on [data-demo] .widget__header img,
+html body.mcw-on [data-demo] .widget-head img,
+html body.mcw-on [data-demo] .kf-panel-head img,
+html body.mcw-on [data-demo] .pz13-widget__head img {
   max-height: 34px !important;
   width: auto !important;
   object-fit: contain !important;
@@ -116,10 +124,183 @@ html body [data-demo] .pz13-widget__head img {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html body .mcb-w-launcher { transition: none !important; }
+  html body.mcw-on .mcb-w-launcher { transition: none !important; }
 }
 
 @media (max-width: 560px) {
-  html body [data-mcb-teaser="true"][data-mcb-teaser] { max-width: min(232px, calc(100vw - 104px)) !important; }
-  html body .mcb-w-launcher { width: 58px !important; height: 58px !important; }
+  html body.mcw-on [data-mcb-teaser="true"][data-mcb-teaser] { max-width: min(232px, calc(100vw - 104px)) !important; }
+  html body.mcw-on .mcb-w-launcher { width: 58px !important; height: 58px !important; }
+}
+
+/* ==================================================== bottom zone of the chat
+
+   The chips and the composer sat on the same white surface as the conversation
+   with the palest possible borders, so the whole bottom third of the panel read
+   as empty space. It is now a distinct zone: its own tint, a real top edge, and
+   chips with enough contrast to look pressable.
+
+   Selectors reach Prazarnicka and Jolka too — coffee-widget-final.css covers
+   only the four routed demos. */
+
+html body.mcw-on .pz13-chat__bottom,
+html body.mcw-on .composer-area,
+html body.mcw-on .kf-chat-footer,
+html body.mcw-on .mcw-tray {
+  border-top: 1px solid color-mix(in srgb, var(--mcw-ink, #16211d) 16%, transparent) !important;
+  background: var(--mcw-soft, #f2f5f3) !important;
+}
+/* Only the tray this layer creates needs spacing of its own; the demos that
+   already had a wrapper keep theirs, so the conversation above does not lose
+   height it was counting on. */
+html body.mcw-on .mcw-tray { padding: 10px 16px 14px !important; }
+/* The tray added around the v8 demos' chips and composer inherits the spacing
+   those two carried on their own. */
+html body.mcw-on .mcw-tray > .chips,
+html body.mcw-on .mcw-tray > #quickChips { padding: 0 0 10px !important; }
+html body.mcw-on .mcw-tray > .composer { margin: 0 !important; }
+
+html body.mcw-on .pz13-chip,
+html body.mcw-on .chip,
+html body.mcw-on .kf-chip,
+html body.mcw-on .kf-chat .kf-chip,
+html body.mcw-on .kf-chat .kf-chip.mc-chip,
+html body.mcw-on .quick-grid button,
+html body.mcw-on .quick-questions button,
+html body.mcw-on #quickChips .chip {
+  border: 1.5px solid color-mix(in srgb, var(--mcw-brand, #16211d) 34%, transparent) !important;
+  background: #fff !important;
+  color: var(--mcw-ink, #16211d) !important;
+  font-weight: 700 !important;
+  transition: transform .18s cubic-bezier(.22, 1, .36, 1), background-color .18s ease, border-color .18s ease, box-shadow .18s ease !important;
+}
+html body.mcw-on .pz13-chip:hover,
+html body.mcw-on .chip:hover,
+html body.mcw-on .kf-chip:hover,
+html body.mcw-on .kf-chat .kf-chip:hover,
+html body.mcw-on .kf-chat .kf-chip.mc-chip:hover,
+html body.mcw-on .quick-grid button:hover,
+html body.mcw-on .quick-questions button:hover,
+html body.mcw-on #quickChips .chip:hover {
+  transform: translateY(-2px) !important;
+  border-color: color-mix(in srgb, var(--mcw-brand, #16211d) 58%, transparent) !important;
+  background: color-mix(in srgb, var(--mcw-brand, #16211d) 6%, #fff) !important;
+  box-shadow: 0 10px 18px -14px color-mix(in srgb, var(--mcw-ink, #16211d) 80%, transparent) !important;
+}
+html body.mcw-on .pz13-chip:active,
+html body.mcw-on .chip:active,
+html body.mcw-on .kf-chip:active,
+html body.mcw-on .quick-grid button:active,
+html body.mcw-on #quickChips .chip:active { transform: translateY(0) !important; box-shadow: none !important; }
+
+/* The input has to look like something you can type into. */
+html body.mcw-on .pz13-composer,
+html body.mcw-on .composer,
+html body.mcw-on .kf-composer {
+  border: 1.5px solid color-mix(in srgb, var(--mcw-brand, #16211d) 28%, transparent) !important;
+  background: #fff !important;
+  box-shadow: 0 6px 14px -12px color-mix(in srgb, var(--mcw-ink, #16211d) 70%, transparent) !important;
+}
+html body.mcw-on .pz13-composer:focus-within,
+html body.mcw-on .composer:focus-within,
+html body.mcw-on .kf-composer:focus-within {
+  border-color: color-mix(in srgb, var(--mcw-brand, #16211d) 55%, transparent) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--mcw-brand, #16211d) 14%, transparent) !important;
+}
+html body.mcw-on .pz13-composer input::placeholder,
+html body.mcw-on .composer input::placeholder,
+html body.mcw-on .kf-composer input::placeholder {
+  color: color-mix(in srgb, var(--mcw-ink, #16211d) 52%, transparent) !important;
+}
+
+/* Advisor options and the main actions answer to the touch as well. */
+html body.mcw-on .option,
+html body.mcw-on .answer-card,
+html body.mcw-on .kf-option,
+html body.mcw-on .pz13-option {
+  transition: transform .18s cubic-bezier(.22, 1, .36, 1), box-shadow .18s ease, border-color .18s ease !important;
+}
+html body.mcw-on .option:hover,
+html body.mcw-on .answer-card:hover,
+html body.mcw-on .kf-option:hover,
+html body.mcw-on .pz13-option:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 12px 22px -16px color-mix(in srgb, var(--mcw-ink, #16211d) 78%, transparent) !important;
+}
+html body.mcw-on .option:active,
+html body.mcw-on .answer-card:active,
+html body.mcw-on .kf-option:active,
+html body.mcw-on .pz13-option:active { transform: translateY(0) !important; }
+
+/* ------------------------------------------------------------------- times */
+
+html body.mcw-on .mcw-row { position: relative !important; }
+html body.mcw-on .mcw-time {
+  display: block !important;
+  margin: 3px 0 0 auto !important;
+  width: max-content !important;
+  color: color-mix(in srgb, var(--mcw-ink, #16211d) 42%, transparent) !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  font-variant-numeric: tabular-nums !important;
+  line-height: 1 !important;
+}
+/* A reply is left-aligned, so its clock belongs on the left of the row. */
+html body.mcw-on .mcw-row:not(.mcw-row--user) .mcw-time { margin-left: 0 !important; margin-right: auto !important; }
+
+/* -------------------------------------------------------- typing and thinking */
+
+html body.mcw-on .mcw-dots { display: inline-flex; gap: 3px; margin-left: 5px; vertical-align: middle; }
+html body.mcw-on .mcw-dots i {
+  width: 4px; height: 4px; border-radius: 50%;
+  background: currentColor; opacity: .35;
+  animation: mcw-dot 1.25s infinite;
+}
+html body.mcw-on .mcw-dots i:nth-child(2) { animation-delay: .16s; }
+html body.mcw-on .mcw-dots i:nth-child(3) { animation-delay: .32s; }
+@keyframes mcw-dot {
+  0%, 60%, 100% { opacity: .28; transform: translateY(0); }
+  30% { opacity: 1; transform: translateY(-3px); }
+}
+
+html body.mcw-on .mcw-typing > *:not(.mcw-typing-mask) { visibility: hidden !important; }
+html body.mcw-on .mcw-typing-mask {
+  position: absolute !important; inset: 0 !important;
+  display: flex !important; align-items: center !important;
+  padding-left: 14px !important;
+  color: var(--mcw-brand, #16211d) !important;
+}
+
+html body.mcw-on .mcw-thinking { display: none !important; }
+html body.mcw-on .mcw-thinking-note {
+  display: flex !important; align-items: center !important;
+  margin: 10px 2px !important;
+  color: color-mix(in srgb, var(--mcw-ink, #16211d) 58%, transparent) !important;
+  font-size: 12.5px !important;
+  font-weight: 650 !important;
+}
+
+/* -------------------------------------------------------------- online dot */
+
+html body.mcw-on .mcw-pulse { animation: mcw-pulse 2.4s ease-out infinite !important; }
+@keyframes mcw-pulse {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 55%, transparent); }
+  70% { box-shadow: 0 0 0 6px color-mix(in srgb, currentColor 0%, transparent); }
+  100% { box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 0%, transparent); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body.mcw-on .mcw-dots i,
+  html body.mcw-on .mcw-pulse { animation: none !important; }
+  html body.mcw-on .pz13-chip,
+  html body.mcw-on .chip,
+  html body.mcw-on .kf-chip,
+  html body.mcw-on .option,
+  html body.mcw-on .kf-option,
+  html body.mcw-on .pz13-option { transition: none !important; }
+  html body.mcw-on .pz13-chip:hover,
+  html body.mcw-on .chip:hover,
+  html body.mcw-on .kf-chip:hover,
+  html body.mcw-on .option:hover,
+  html body.mcw-on .kf-option:hover,
+  html body.mcw-on .pz13-option:hover { transform: none !important; }
 }

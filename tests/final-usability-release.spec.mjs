@@ -5,12 +5,12 @@ const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
 fs.mkdirSync('artifacts', { recursive:true });
 
 const demos = [
-  { slug:'praziarnicka', launcher:'#pz13-open', advisor:'.pz13-mode button[data-mode="advisor"]', chat:'.pz13-mode button[data-mode="chat"]', option:'.pz13-option', question:'.pz13-advisor__body', panel:'#pz13-widget' },
-  { slug:'diamonds', launcher:'#launcherButton', advisor:'.mode-switch button[data-mode="advisor"]', chat:'.mode-switch button[data-mode="chat"]', option:'.answer-card', question:'#advisorContent', panel:'#widget' },
-  { slug:'kaffa', launcher:'#launcher', advisor:'.kf-switch button[data-view="advisor"]', chat:'.kf-switch button[data-view="chat"]', option:'.kf-option', question:'.kf-stage', panel:'.kf-panel' },
-  { slug:'vitazov', launcher:'#openWidget', advisor:'.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]', option:'#advisorBody .option', question:'#advisorBody', panel:'#widget' },
-  { slug:'concept', launcher:'#openWidget', advisor:'.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]', option:'#advisorBody .option', question:'#advisorBody', panel:'#widget' },
-  { slug:'jolka', path:'/jolka.html', launcher:'#open', advisor:'.mode__button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"]', option:'#advisor .option', question:'#advisor', panel:'#widget' }
+  { slug:'praziarnicka', chips:'.pz13-chip', launcher:'#pz13-open', advisor:'.pz13-mode button[data-mode="advisor"]', chat:'.pz13-mode button[data-mode="chat"]', option:'.pz13-option', question:'.pz13-advisor__body', panel:'#pz13-widget' },
+  { slug:'diamonds', chips:'.quick-grid button', launcher:'#launcherButton', advisor:'.mode-switch button[data-mode="advisor"]', chat:'.mode-switch button[data-mode="chat"]', option:'.answer-card', question:'#advisorContent', panel:'#widget' },
+  { slug:'kaffa', chips:'.kf-chip', launcher:'#launcher', advisor:'.kf-switch button[data-view="advisor"]', chat:'.kf-switch button[data-view="chat"]', option:'.kf-option', question:'.kf-stage', panel:'.kf-panel' },
+  { slug:'vitazov', chips:'.chip', launcher:'#openWidget', advisor:'.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]', option:'#advisorBody .option', question:'#advisorBody', panel:'#widget' },
+  { slug:'concept', chips:'.chip', launcher:'#openWidget', advisor:'.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]', option:'#advisorBody .option', question:'#advisorBody', panel:'#widget' },
+  { slug:'jolka', chips:'#chips .chip', path:'/jolka.html', launcher:'#open', advisor:'.mode__button[data-mode="advisor"]', chat:'.mode__button[data-mode="chat"]', option:'#advisor .option', question:'#advisor', panel:'#widget' }
 ];
 
 async function openDemo(page, demo, viewport = { width:1366, height:768 }) {
@@ -44,20 +44,22 @@ async function pageMetrics(page) {
 }
 
 test('every owner page is that roastery\'s own, with a visible primary action', async ({ page }) => {
-  // The six demos used to share one page whose only per-brand element was the
-  // logo. Each headline is now written for that roastery, so no two pages may
-  // open with the same one.
-  const headlines = new Set();
-
   for (const demo of demos) {
     await openDemo(page, demo);
     const owner = page.locator('[data-mcb-page="true"]');
     await expect(owner).toBeVisible();
 
-    const headline = (await owner.locator('.mcb-copy h1').innerText()).trim();
-    expect(headline.length).toBeGreaterThan(0);
-    expect(headlines.has(headline)).toBe(false);
-    headlines.add(headline);
+    // The page says plainly what is on offer. It used to open with a slogan
+    // written per roastery ("Poradca, ktorý pozná všetkých päť vašich káv"),
+    // which read as an advert rather than as an explanation.
+    await expect(owner.locator('.mcb-copy h1')).toHaveText('Kávový poradca na váš web.');
+    await expect(owner.locator('.mcb-lead')).toContainText('nevedia, aké kávy máte');
+
+    // The roastery is still named on its own page — by the line above the
+    // heading and by the footer, not by the copy.
+    const named = await owner.evaluate((node) => node.innerText);
+    expect(named).toContain('Pripravené pre');
+    await expect(owner.locator('.mcb-eyebrow')).not.toHaveText('');
 
     // The primary action was rendering white on a transparent background,
     // which made it invisible on four of the six demos.
@@ -74,26 +76,46 @@ test('every owner page is that roastery\'s own, with a visible primary action', 
     await expect(owner.locator('[data-release-open="chat"]').first()).toBeVisible();
     await expect(owner.locator('a[href*="mojchatbot.sk/kontakt"]').first()).toBeVisible();
 
-    // The customer clicks through a picker; the visual says so rather than
-    // showing a typed question or a product photograph.
-    await expect(owner.locator('.mcb-preview-options li')).toHaveCount(4);
-    await expect(owner.locator('.mcb-preview-options li.is-picked')).toHaveCount(1);
-    await expect(owner.locator('.mcb-preview-result')).toBeVisible();
+    // The panel describes what the advisor does; it does not mock up a picker
+    // with invented option labels.
+    await expect(owner.locator('.mcb-figures li')).toHaveCount(3);
+    await expect(owner.locator('.mcb-figures strong').first()).toBeVisible();
 
-    // Benefits, price and the way to reach us are all on the first screen.
-    await expect(owner.locator('.mcb-benefits li').first()).toBeVisible();
-    await expect(owner.locator('.mcb-plan')).toHaveCount(2);
-    await expect(owner.locator('.mcb-plan-price strong').first()).toBeVisible();
+    // One price and the way to reach us are on the first screen.
+    await expect(owner.locator('.mcb-plan')).toHaveCount(1);
+    await expect(owner.locator('.mcb-plan-price strong')).toHaveCount(2);
 
-    // Nothing that reads as a demo, a trial or an install instruction.
+    // Nothing that reads as a demo, a trial or an install instruction, and
+    // nothing promised in the price that is billed separately.
     const text = await owner.innerText();
     expect(text).not.toMatch(/Ukážka pripraven|riadok kódu|&lt;script|zdarma|trial|Návrh AI|umelá inteligencia/i);
+    expect(text).not.toMatch(/Priebežné úpravy ponuky/i);
 
     // One screen: the page must never grow a scrollbar.
     const metrics = await pageMetrics(page);
     expect(metrics.h).toBeLessThanOrEqual(metrics.ih + 1);
     expect(metrics.w).toBeLessThanOrEqual(metrics.iw + 1);
     await page.screenshot({ path:`artifacts/release-${demo.slug}-owner.png`, fullPage:true });
+  }
+});
+
+test('the panel carries the conversation and nothing else', async ({ page }) => {
+  for (const demo of demos) {
+    await openDemo(page, demo);
+    await page.locator(demo.launcher).first().click();
+    await page.waitForTimeout(900);
+
+    // Section captions and a strip of coffees under the greeting were both
+    // added and both taken back out: the panel is the conversation, the four
+    // quick questions and the composer.
+    await expect(page.locator('.mcb-w-caption')).toHaveCount(0);
+    await expect(page.locator('.mcs-starter')).toHaveCount(0);
+
+    // Two of the four quick questions ask what the shop page cannot answer.
+    const chips = await page.locator(demo.chips).allInnerTexts();
+    expect(chips.length).toBeGreaterThanOrEqual(4);
+    expect(chips.slice(0, 4)).toContain('Odkiaľ je káva?');
+    expect(chips.slice(0, 4)).toContain('Porovnajte dve kávy');
   }
 });
 
@@ -106,6 +128,7 @@ test('every owner page stays readable and contained on a phone', async ({ page }
     await expect(owner.locator('[data-release-open="chat"]').first()).toBeVisible();
     await expect(owner.locator('.mcb-plan').first()).toBeVisible();
     await expect(owner.locator('.mcb-foot')).toBeVisible();
+    await expect(owner.locator('.mcb-benefits')).toHaveCount(0);
 
     // No explanatory text on this surface drops below 11 px.
     const sizes = await owner.locator('p, b, small, span, em, li, h1, button, a').evaluateAll((nodes) =>

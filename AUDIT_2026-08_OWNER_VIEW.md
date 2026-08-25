@@ -356,3 +356,160 @@ cenník. Skúšobná verzia ani zľava na začiatok v ukážkach zámerne nie s�
 aj pred prvou zmenou. Assertion o rolovaní v `jolka.spec.mjs` bola upravená:
 stránka je jedna obrazovka, takže uvoľnenie zámku dialógu sa overuje cez
 značku na `body`, nie cez návrat scrollbaru.
+
+---
+
+# Tretie kolo — cena, pojmový panel, oživenie
+
+## Cena
+
+Dve verzie za 290/490 € nahradila **jedna: 297 € nasadenie + 10 € mesačne**.
+Z bodov vypadli „Priebežné úpravy ponuky" — nie sú zadarmo, takže sa nemajú
+sľubovať ako súčasť balíka. Namiesto toho je tam **história konverzácií**
+a jednoduchý popis toho, čo poradca robí. Napojenie na košík e-shopu je
+oddelené pod prerušovanou čiarou ako doplnok za príplatok, nie ako súčasť.
+
+Čísla sú v konštante `PRICING` na začiatku `coffee-owner-brand.js`. Test odteraz
+stráži, že sa medzi bodmi neobjaví nič, čo sa účtuje osobitne.
+
+## Panel vpravo
+
+Falošný výber („Kam kávu kupujete? Domov / Do kancelárie / Do automatu…")
+pôsobil ako vymyslené UI a vymenúvací tón. Nahradili ho **tri čísla**:
+
+| | |
+|---|---|
+| **24/7** | odpovedá · aj večer a cez víkend |
+| **4** | otázky · príprava · chuť · nápoj · kofeín |
+| **1** | konkrétna káva · z vašej ponuky, s dôvodom |
+
+Posledný riadok je pre každú pražiareň iný (Kaffa „bez odbornej hantýrky",
+Concept „z aktuálnej sezónnej ponuky", Jolka končí aciditou).
+
+Rovnaký vymenúvací tón zmizol aj z nadpisu Víťazova — z „Domov, do kancelárie
+aj do automatu" je „Iná káva pre firmu, iná pre domácu kuchyňu."
+
+## Spodná zóna chatu
+
+Toto bola pôvodná výhrada: chipy a vstupné pole splývali s konverzáciou.
+Skúšali sa dva varianty a porovnali sa na snímkach:
+
+- **A — chipy s jemnou farbou značky.** Na tónovanej lište splynuli ešte viac.
+- **B — biele chipy so silnejším 1,5 px rámom.** Zreteľné, vyzerajú stlačiteľne.
+
+**Použitý je variant B.** K tomu: spodok panela má vlastné tónované pozadie
+a zreteľnú hornú linku, vstupné pole má silnejší rám a viditeľný focus stav,
+placeholder je tmavší.
+
+Pri tom sa ukázalo, že `coffee-no-black.css` definuje svoju paletu cez
+`body[data-demo="praziarnicka"]`, ale skutočná hodnota atribútu je
+`praziarnicka-v13` — tie premenné sa na Pražiarničke nikdy nenačítali. Nová
+vrstva si preto berie farby priamo zo záznamu značky.
+
+Tri z ukážok vkladajú chipy a composer priamo do panela bez obalu, takže spodná
+zóna nemala na čom stáť; obal sa im dopĺňa okolo existujúcich prvkov.
+
+## Oživenie
+
+- **Čas pri každej správe**, v bubline. Nastaví sa raz a prekreslenie ho nemení.
+- **„Píše…"** — pred odpoveďou bota krátko pulzujú tri bodky. Nespúšťa sa pri
+  úvodnom privítaní, len počas rozhovoru.
+- **„Premýšľam…"** pred výsledkom poradcu.
+- **Pulzujúci stav Online** v hlavičke.
+- **Odozva na dotyk** na chipoch, možnostiach poradcu a tlačidlách.
+
+Všetko sa vypína pri `prefers-reduced-motion`.
+
+## Logá na bublinách
+
+Kaffa a Concept mali generickú ikonku konverzácie. Kaffa mala pod ňou vlastné
+serifové „K", len ju prekrývalo SVG a zelená bodka stavu. Značka sa teraz kreslí
+z atribútu na tlačidle, takže ju prekreslenie runtime nezmaže — Kaffa má „K"
+v Georgii, Concept „C". Ich široký wordmark bol pri 34 px v kruhu nečitateľný.
+
+## Pozvánka nad bublinou
+
+Silnejší rám, hlbší tieň, plná farba textu, titulok 13,5 px a podtitulok
+11,5 px. Šírka ostáva ~212 px a obe vety na jednom riadku — čitateľnejšia,
+nie väčšia.
+
+## Čo by som ako majiteľ ešte vyčítal
+
+Prejdenie celého toku na šiestich ukážkach, desktop aj mobil. Dizajnové nálezy
+sú opravené v tomto kole; ostáva jedna vec na rozhodnutie:
+
+- **Bublina prekrýva spodný pravý roh.** Pri otvorení stránky sedí pozvánka nad
+  poznámkou o cene. Je zavieracia a po otvorení widgetu zmizne, ale prvá snímka,
+  ktorú si majiteľ spraví, ju bude mať. Dá sa nastaviť, aby sa po ~10 sekundách
+  schovala sama.
+
+## Stav testov
+
+31 prešlo / 3 zlyhali — rovnako ako pred týmto kolom; tie tri zlyhávali už
+pred prvou zmenou. Assertion vo `vitazov-conversion.spec.mjs` bola zúžená:
+strážila, aby fallback odpoveď „neoznamovala vlastnú inštalatérčinu", a zakazovala
+aj `<time>` — čas pri správe je odteraz normálna súčasť každej správy.
+
+---
+
+# Štvrté kolo — vecné texty, čistý panel
+
+## Texty
+
+Každá ukážka otvárala vlastným sloganom — „Poradca, ktorý pozná všetkých päť
+vašich káv“, „Nikdy nespí“, „rečou vášho zákazníka“. Čítalo sa to ako reklama.
+Majiteľ pražiarne nemá čítať slogany; má sa dozvedieť, čo mu ponúkam.
+
+Nadpis a odsek sú teraz **rovnaké pre všetkých**:
+
+> **Kávový poradca na váš web.**
+>
+> Zákazníci na vašom webe nevedia, aké kávy máte, a ťažko sa im vyberá.
+> V poradcovi sa môžu opýtať vlastnými slovami — alebo cez pár otázok prísť
+> ku konkrétnej káve z vašej ponuky.
+
+Značku nesie logo, paleta, písmo, riadok nad nadpisom a pätička „Pripravené pre
+Kávu Víťazov“. To stačí — copywriting na to netreba.
+
+## Preč s duplicitou
+
+Ľavý stĺpec mal tri „výhody“ a pravý panel tri čísla, ktoré hovorili to isté
+inými slovami. Zoznam výhod je preč; výhody nesú tie tri čísla. Stránka je teraz
+nadpis, dve vety, dve tlačidlá, tri čísla, cena a kontakt.
+
+## Panel
+
+Von išlo všetko, čo nie je konverzácia:
+
+- popisky sekcií („Rýchly výber“, „Časté otázky“),
+- pás s dvomi kávami pod privítaním (`coffee-chat-starter.js` zmazaný).
+
+Zostáva hlavička, prepínač, karta „Nájsť svoju kávu“, privítanie, štyri rýchle
+otázky a vstupné pole. Panel je po otvorení prázdnejší — to je normálny stav
+chatu a tónovaná spodná lišta ho uzatvára.
+
+## Rýchle otázky
+
+Chipy ponúkali štyrikrát to isté („do automatu / na filter / čokoládová / bez
+kofeínu“). Dve sa menia na to, čo z e-shopu nevyčítate:
+
+- **„Odkiaľ je káva?“**
+- **„Porovnajte dve kávy“**
+
+Popisky sa museli zjednotiť na dvoch miestach naraz — v zázname značky aj
+v runtime, ktorý ich vykresľuje. Tri „final“ vrstvy (`kaffa-final.js`,
+`coffee-vitazov-final.js`, `coffee-diamonds-final.js`) si ich totiž prepisovali
+späť na časovači, rovnako ako predtým text pozvánky.
+
+Aby na ne poradca odpovedal aj bez API, pribudli vetvy do fallbackov:
+`coffee-api-route.js` má pre každú pražiareň `origin` a `compare` napísané z jej
+vlastného katalógu, `coffee-usability-release.js` všeobecnú vetvu. Overené
+priamo na tom module — prehliadačová ukážka sa k nemu nedostane, lebo na
+localhoste odpovedá vývojový stub.
+
+## Stav testov
+
+31 prešlo / 3 zlyhali — rovnako ako pred týmto kolom. Testu
+`jolka.spec.mjs:110` bol zdvihnutý časový limit: robí päť celých prechodov
+poradcom a „Premýšľam…“ mu pridalo približne tri sekundy. Kontroluje bodovanie,
+nie rýchlosť.

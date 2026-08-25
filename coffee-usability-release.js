@@ -174,7 +174,9 @@
         text = String(payload.messages?.filter((message) => message?.role === 'user').at(-1)?.content || '').toLocaleLowerCase('sk');
       } catch {}
       let reply = 'Pomôžem vám. Ak chcete najjednoduchšiu cestu, prejdite Výber kávy — štyri krátke kroky vás dovedú ku konkrétnemu produktu.';
-      if (/automat|kancel/.test(text)) reply = 'Do automatu sa zvyčajne hodí plnšia a menej kyslá káva. Vo Výbere kávy to spresníme podľa chuti a toho, či ju pijete s mliekom.';
+      if (/odkia[ľl]|p[ôo]vod|krajin|pochádz|farma/.test(text)) reply = 'Pri každej káve je uvedená krajina pôvodu a spôsob spracovania. Napíšte mi, ktorá vás zaujíma, alebo prejdite Výber kávy a odporučím vám jednu podľa chuti.';
+      else if (/porovna|rozdiel|lep[šs]ia|ktor[áa] z|namiesto/.test(text)) reply = 'Rozdiel býva najmä v kyslosti a v tom, či sa káva nestratí v mlieku. Napíšte mi, ktoré dve porovnať, alebo prejdite Výber kávy — vyberiem tú, ktorá sedí vám.';
+      else if (/automat|kancel/.test(text)) reply = 'Do automatu sa zvyčajne hodí plnšia a menej kyslá káva. Vo Výbere kávy to spresníme podľa chuti a toho, či ju pijete s mliekom.';
       else if (/mliek|capp|latte/.test(text)) reply = 'Do mliečnych nápojov sa hodí plnšia káva, ktorá sa v mlieku nestratí. Vo Výbere kávy ju vyberieme podľa vašej chuti.';
       else if (/filter|v60|ovoc|sviež/.test(text)) reply = 'Na filter sa dá ísť jemnejším aj ovocnejším smerom. Vo Výbere kávy to zúžime podľa toho, akú chuť chcete v šálke.';
       else if (/bez\s*kofe|decaf|večer/.test(text)) reply = 'Ak hľadáte kávu bez kofeínu, poradca vás nasmeruje na vhodnú voľbu z ponuky. Stačí povedať, ako ju pripravujete a akú chuť máte radi.';

@@ -8,7 +8,7 @@ window.CONCEPT_SEASONAL_CONFIG = Object.freeze({
   email: 'shop@conceptcoffee.sk',
   phone: '+421949205711',
   welcome: 'Dobrý deň. Pomôžem vám vybrať sezónnu kávu podľa toho, ako ju pripravujete a čo vám chutí.',
-  quick: ['Do automatu', 'Na filter', 'Ovocná káva', 'Bez kofeínu'],
+  quick: ['Káva na filter', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
   products: [
     {
       id: 'weithaga', name: 'Weithaga AA', country: 'Keňa', region: 'Nyeri', process: 'washed',

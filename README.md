@@ -97,32 +97,57 @@ nazov: {
   name: 'Pražiareň X', place: 'Pražiareň X · mesto',
   forName: 'Pražiareň X',                       // 4. pád do pätičky
   root: '.selektor-korenoveho-prvku',           // kam sa stránka vykreslí
-  shop: 'https://…',                            // odkaz z produktových kariet
   lockup: '<img src="/brand/…" alt="Pražiareň X">',
-  mark: { src: '…' } | { text: 'X', font: '…' },// značka na bubline widgetu
+  mark: { text: 'X', font: '…' },               // značka na bubline widgetu
   theme: { ink, brand, accent, soft, paper },   // ich farby
   display: { family, weight, tracking },        // voliteľné písmo nadpisov
-  headline, lead,                               // nadpis musí byť ich vlastný
-  benefits: [[ikona, titulok, text], …],        // tri
-  preview: { step, of, title, options, picked, result },  // postup vo výbere
-  shelf: [{ photo, name, note, price }, …]      // ponuka do chatu
+  chips: ['…', '…', '…', '…'],                  // štyri rýchle otázky
+  figures: [[hodnota, názov, riadok], …]        // tri čísla v paneli vpravo
 }
 ```
 
+### Texty
+
+Nadpis a odsek pod ním sú **rovnaké pre všetkých** — konštanty `HEADING`
+a `LEAD` v `coffee-owner-brand.js`. Značku nesie logo, paleta, písmo, riadok
+nad nadpisom a pätička; nie copywriting. Každá ukážka mala predtým vlastný
+slogan a čítalo sa to ako reklama, nie ako vysvetlenie toho, čo je v ponuke.
+
 ### Cena
 
-Ceny sú na jednom mieste — konštanta `PRICING` na začiatku
-`coffee-owner-brand.js`. Sú to **návrhové čísla**, nie dohodnutý cenník; menia
-sa tam a premietnu sa do všetkých ukážok naraz.
+Jedna verzia — **297 € nasadenie + 10 € mesačne** — v konštante `PRICING` na
+začiatku `coffee-owner-brand.js`. Mení sa tam a premietne sa do všetkých ukážok
+naraz.
+
+Do `points` patrí len to, čo cena naozaj kryje; nič účtované osobitne. Riadok
+`addon` (napojenie na košík e-shopu) stojí pod zoznamom oddelene práve preto,
+že je to doplnok — zmazaním toho riadku zmizne zo všetkých ukážok.
 
 ### Widget
 
-- `coffee-widget-polish.js` / `.css` — zjednotená pozvánka nad bublinou
-  (jeden krátky riadok, ~205 px namiesto 290 px), značka pražiarne na bubline
-  namiesto generickej ikonky, a popisky sekcií v paneli
-  („Rýchly výber“, „Časté otázky“), aby sa v ňom dalo zorientovať.
-- `coffee-chat-starter.js` — dve kávy z ponuky hneď pod privítaním, s odkazom
-  do ich e-shopu. Zmiznú, len čo zákazník napíše prvú správu.
+- `coffee-widget-polish.js` / `.css` — zjednotená pozvánka nad bublinou, značka
+  pražiarne na bubline namiesto generickej ikonky, popisky sekcií v paneli
+  tónovaná spodná lišta s výraznejšími chipmi
+  a vstupným poľom, čas pri správach, „píše…“ pred odpoveďou, „Premýšľam…“ pred
+  výsledkom poradcu a pulzujúci stav Online. Farby si berie zo záznamu značky,
+  nie z `--nb-*` — tie sa na Pražiarničke nikdy nenačítali, lebo
+  `coffee-no-black.css` ich píše pod `data-demo="praziarnicka"`, kým skutočná
+  hodnota je `praziarnicka-v13`.
+Panel obsahuje len konverzáciu: hlavičku, prepínač, kartu „Nájsť svoju kávu“,
+privítanie, štyri rýchle otázky a vstupné pole. Popisky sekcií ani pás
+s kávami pod privítaním tam nepatria — obe boli skúšané a obe sú preč.
+
+### Rýchle otázky
+
+Štyri popisky na pražiareň. Píšu sa na dvoch miestach naraz: v `chips` v zázname
+značky (odtiaľ ich `coffee-widget-polish.js` presadzuje) a v runtime, ktorý ich
+vykresľuje — inak si ich tá vrstva prepíše späť. Runtime posiela pri kliknutí
+`chip.textContent`, takže popisok je zároveň otázka.
+
+Dve z nich sa pýtajú na to, čo z e-shopu nevyčítate — „Odkiaľ je káva?“
+a „Porovnajte dve kávy“. Odpovede majú vlastné vetvy vo fallbackoch:
+`coffee-api-route.js` má pre každú pražiareň `origin` a `compare` z jej
+katalógu, `coffee-usability-release.js` všeobecnú vetvu.
 
 Poradie stylesheetov riadi `data-mc-order`: `10` usability-release,
 `20` widget-final, `25` header-cleanup, `30` owner-brand, `35` widget-polish.
