@@ -340,3 +340,247 @@ html body.mcw-on .answer-card img {
     min-height: 78px !important;
   }
 }
+
+/* ======================================================= KAFFA REFERENCE PASS
+   Kaffa is the reference implementation for the routed demos. The goal here is
+   not a different skin: it is clean information order, a single composer shape,
+   larger photographic choices and the same calm motion quality as Jolka. */
+
+html body.mcw-on[data-demo="kaffa"] .kf-panel {
+  width: min(452px, calc(100vw - 28px)) !important;
+  max-width: 452px !important;
+}
+
+/* One segmented control, not a dark thumb plus a second dark selected button. */
+html body.mcw-on[data-demo="kaffa"] .kf-switch {
+  padding: 4px !important;
+  border: 1px solid rgba(17,17,17,.14) !important;
+  background: #f3f4f1 !important;
+  box-shadow: inset 0 0 0 1px rgba(17,17,17,.025) !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-switch::before {
+  background: #111 !important;
+  box-shadow: 0 8px 18px -14px rgba(17,17,17,.8) !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-switch button,
+html body.mcw-on[data-demo="kaffa"] .kf-switch button[aria-selected="true"] {
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* The greeting belongs with the top of the conversation. A previous Jolka
+   parity rule gave the seed 100% height and pushed the greeting to the tray. */
+html body.mcw-on[data-demo="kaffa"] .kf-messages:not(.has-thread) .kf-chat-seed {
+  min-height: 0 !important;
+  height: auto !important;
+  align-content: start !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-messages:not(.has-thread) .kf-chat-seed .kf-message-row--bot,
+html body.mcw-on[data-demo="kaffa"] .kf-messages:not(.has-thread) .kf-chat-seed .kf-message-row:not(.kf-message-row--user) {
+  margin-top: 0 !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-chat-seed {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 11px !important;
+}
+
+/* The handoff is a compact visual card: real coffee photography, clear title,
+   small explanation. It remains a button and keeps the existing listener. */
+html body.mcw-on[data-demo="kaffa"] .kf-chat .kf-advisor-entry {
+  min-height: 76px !important;
+  height: 76px !important;
+  grid-template-columns: 72px minmax(0,1fr) 34px !important;
+  gap: 11px !important;
+  padding: 7px 10px 7px 7px !important;
+  border: 1px solid rgba(61,125,151,.34) !important;
+  border-radius: 20px !important;
+  color: #111 !important;
+  background: #f7fbfc !important;
+  box-shadow: 0 16px 34px -29px rgba(31,85,101,.5) !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-chat .kf-advisor-entry:hover {
+  border-color: rgba(61,125,151,.66) !important;
+  color: #111 !important;
+  background: #eef8fa !important;
+  transform: translateY(-1px) !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-advisor-entry__mark {
+  width: 72px !important;
+  height: 60px !important;
+  display: block !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  border-radius: 15px !important;
+  background: #e8e3da url('/assets/kaffa/brew-espresso.webp') center 58% / cover no-repeat !important;
+  box-shadow: inset 0 0 0 1px rgba(17,17,17,.06) !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-advisor-entry__copy {
+  display: grid !important;
+  gap: 4px !important;
+  min-width: 0 !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-advisor-entry__copy b {
+  font-size: 14px !important;
+  line-height: 1.18 !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-advisor-entry__copy small {
+  display: block !important;
+  color: rgba(17,17,17,.58) !important;
+  font-size: 10.5px !important;
+  font-weight: 650 !important;
+  line-height: 1.28 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-chat .kf-advisor-entry__arrow {
+  width: 34px !important;
+  height: 34px !important;
+  color: #fff !important;
+  background: #111 !important;
+}
+
+/* KAFFA avatar: a deliberate monogram instead of an empty/incorrect icon. */
+html body.mcw-on[data-demo="kaffa"] .kf-bot-avatar {
+  width: 34px !important;
+  height: 34px !important;
+  flex: 0 0 34px !important;
+  display: grid !important;
+  place-items: center !important;
+  border: 1px solid rgba(17,17,17,.12) !important;
+  border-radius: 50% !important;
+  color: transparent !important;
+  background: #111 !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-bot-avatar::before {
+  content: 'K' !important;
+  display: block !important;
+  color: #fff !important;
+  font-family: Georgia, 'Times New Roman', serif !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+}
+
+/* One composer surface. The send affordance is inside it, not a second blue
+   circle competing with the field. */
+html body.mcw-on[data-demo="kaffa"] .kf-chat-footer {
+  padding: 10px 12px max(12px, env(safe-area-inset-bottom)) !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-composer {
+  min-height: 58px !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 5px 7px 5px 15px !important;
+  border: 1.5px solid rgba(61,125,151,.36) !important;
+  border-radius: 20px !important;
+  background: #fff !important;
+  box-shadow: 0 10px 24px -22px rgba(17,17,17,.5) !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-composer input {
+  height: 46px !important;
+  font-size: 14px !important;
+  line-height: 46px !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-send {
+  width: 44px !important;
+  height: 44px !important;
+  flex: 0 0 44px !important;
+  border: 0 !important;
+  border-radius: 14px !important;
+  color: #111 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-send:hover,
+html body.mcw-on[data-demo="kaffa"] .kf-send:focus-visible {
+  color: #111 !important;
+  background: #eaf6f8 !important;
+  transform: none !important;
+}
+
+/* Larger photographic answers. The first question already has four dedicated
+   real photos in the repository, so it no longer relies on the 4x4 sprite. */
+html body.mcw-on[data-demo="kaffa"] .kf-stage:has(.kf-options) {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  padding-bottom: 18px !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-options {
+  gap: 10px !important;
+  align-items: start !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo {
+  height: auto !important;
+  min-height: 0 !important;
+  grid-template-rows: 108px auto !important;
+  gap: 0 !important;
+  padding: 6px !important;
+  border-radius: 18px !important;
+  background: #fff !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-option__visual {
+  width: 100% !important;
+  height: 108px !important;
+  min-height: 108px !important;
+  border-radius: 14px !important;
+  background-repeat: no-repeat !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-option__copy {
+  min-height: 56px !important;
+  padding: 10px 28px 8px 5px !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-option__copy b {
+  font-size: 13.5px !important;
+  line-height: 1.18 !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-option__copy small {
+  margin-top: 4px !important;
+  font-size: 10.75px !important;
+  line-height: 1.32 !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][style*="--i:0"] .kf-option__visual {
+  background-image: url('/assets/kaffa/prep-espresso.webp') !important;
+  background-position: center 52% !important;
+  background-size: cover !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][style*="--i:1"] .kf-option__visual {
+  background-image: url('/assets/kaffa/prep-automatic.webp') !important;
+  background-position: center 50% !important;
+  background-size: cover !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][style*="--i:2"] .kf-option__visual {
+  background-image: url('/assets/kaffa/prep-filter.webp') !important;
+  background-position: center 48% !important;
+  background-size: cover !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][style*="--i:3"] .kf-option__visual {
+  background-image: url('/assets/kaffa/prep-moka.webp') !important;
+  background-position: center 48% !important;
+  background-size: cover !important;
+}
+
+@media (max-width: 640px) {
+  html body.mcw-on[data-demo="kaffa"] .kf-chat .kf-advisor-entry {
+    min-height: 72px !important;
+    height: 72px !important;
+    grid-template-columns: 66px minmax(0,1fr) 32px !important;
+  }
+  html body.mcw-on[data-demo="kaffa"] .kf-advisor-entry__mark {
+    width: 66px !important;
+    height: 56px !important;
+  }
+  html body.mcw-on[data-demo="kaffa"] .kf-option--photo {
+    grid-template-rows: 92px auto !important;
+  }
+  html body.mcw-on[data-demo="kaffa"] .kf-option__visual {
+    height: 92px !important;
+    min-height: 92px !important;
+  }
+  html body.mcw-on[data-demo="kaffa"] .kf-option__copy {
+    min-height: 54px !important;
+    padding-top: 9px !important;
+  }
+}
