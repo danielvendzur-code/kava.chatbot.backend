@@ -67,14 +67,12 @@ html body.mcw-on .mcb-w-launcher img {
 /* Wide wordmarks need breathing room inside the circular launcher rather than
    being cropped. Their button is still fully brand-coloured, so there is no
    white halo. */
-html body.mcw-on body[data-demo="vitazov"] .kv-launcher-logo,
-html body.mcw-on [data-demo="vitazov"] .kv-launcher-logo {
+html body.mcw-on[data-demo="vitazov"] .kv-launcher-logo {
   display: grid !important;
   place-items: center !important;
   background: var(--kv-green, var(--mcw-brand, #16211d)) !important;
 }
-html body.mcw-on body[data-demo="vitazov"] .kv-launcher-logo img,
-html body.mcw-on [data-demo="vitazov"] .kv-launcher-logo img {
+html body.mcw-on[data-demo="vitazov"] .kv-launcher-logo img {
   width: 78% !important;
   height: 78% !important;
   object-fit: contain !important;
@@ -136,7 +134,7 @@ html body.mcw-on .quick-questions button,
 html body.mcw-on #quickChips .chip {
   min-height: 44px !important;
   padding-block: 9px !important;
-  font-size: 11.75px !important;
+  font-size: 13px !important;
   line-height: 1.25 !important;
 }
 
@@ -163,18 +161,31 @@ html body.mcw-on .pz13-advisor-entry span {
 
 /* --------------------------------------------------------------- photos */
 
-/* Pražiarnička uses a 4×4 semantic sprite for most steps. The free-height grid
-   made those cells tall enough to look geometrically stretched. Keep the 2×2
-   layout and a stable wide thumbnail band, matching the compact reference. */
-html body.mcw-on .pz13-options {
-  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  grid-auto-rows: auto !important;
+/* Pražiarnička uses a 4×4 semantic sprite for most steps. The source layout
+   assigned the option grid all remaining widget height, which stretched the
+   two card rows and created a large blank area between title and description.
+   The whole question now sizes to its actual content, not merely the photo. */
+html body.mcw-on .pz13-advisor__body {
+  grid-template-rows: auto auto auto !important;
   align-content: start !important;
+  overflow-y: auto !important;
+}
+html body.mcw-on .pz13-options {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+  align-self: start !important;
+  align-content: start !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-template-rows: repeat(2, auto) !important;
+  grid-auto-rows: auto !important;
   gap: 9px !important;
 }
 html body.mcw-on .pz13-option {
-  grid-template-rows: 84px auto !important;
+  height: auto !important;
   min-height: 0 !important;
+  align-self: start !important;
+  grid-template-rows: 84px auto !important;
 }
 html body.mcw-on .pz13-option__visual {
   height: 84px !important;
@@ -190,6 +201,23 @@ html body.mcw-on .pz13-option__visual img {
 html body.mcw-on .pz13-option__photo {
   width: 100% !important;
   height: 100% !important;
+}
+html body.mcw-on .pz13-option__copy {
+  display: block !important;
+  min-height: 0 !important;
+  padding: 10px 11px 11px !important;
+}
+html body.mcw-on .pz13-option__copy b {
+  display: block !important;
+  margin: 0 !important;
+  font-size: 12.5px !important;
+  line-height: 1.22 !important;
+}
+html body.mcw-on .pz13-option__copy small {
+  display: block !important;
+  margin-top: 4px !important;
+  font-size: 10.5px !important;
+  line-height: 1.32 !important;
 }
 
 /* Routed v8 demos use a photo wrapper. Give it one deterministic height so a
