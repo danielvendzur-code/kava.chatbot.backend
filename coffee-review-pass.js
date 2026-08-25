@@ -101,10 +101,15 @@
     button.dataset.officialBrand = slug;
     button.removeAttribute('data-mcw-mark');
 
+    // Some brand runtimes place their own lockup span directly in the button.
+    // Remove it before checking our injected image; otherwise Diamonds ended up
+    // with the original lockup plus the review-pass image stacked in one circle.
+    button.querySelectorAll(':scope > .brand-lockup, :scope > .launcher-logo, :scope > .launcher__chat-mark, :scope > .advisor-logo')
+      .forEach((node) => node.remove());
+
     const current = button.querySelector(':scope > img.coffee-official-launcher__logo');
     if (current?.getAttribute('src') === src) return;
 
-    button.querySelectorAll(':scope > .launcher__chat-mark, :scope > .advisor-logo').forEach((node) => node.remove());
     button.querySelectorAll(':scope > svg').forEach((node) => node.remove());
     button.querySelectorAll(':scope > img').forEach((node) => node.remove());
     button.prepend(officialImage(src, 'coffee-official-launcher__logo'));
