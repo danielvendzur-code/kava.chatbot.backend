@@ -16,7 +16,7 @@
   document.documentElement.dataset.coffeeFinal = '2026-08-26';
 
   const logo = {
-    praziarnicka: '/brand/praziarnicka-icon-official.svg',
+    praziarnicka: '/brand/praziarnicka-logo-official.png',
     diamonds: '/assets/diamonds/diroastery-logo.svg',
     vitazov: '/assets/vitazov-logo.svg',
     concept: '/brand/concept-official-logo.png',
@@ -27,42 +27,74 @@
     praziarnicka: { name: 'Pražiarnička', web: 'https://praziarnicka.sk/' },
     diamonds: { name: 'Diamonds Roastery', web: 'https://diroastery.sk/' },
     kaffa: { name: 'Kaffa Roastery', web: 'https://kaffaroastery.sk/' },
-    vitazov: { name: 'Káva Víťazov', web: 'https://www.kavavitazov.sk/' },
+    vitazov: { name: 'Káva Víťazov', web: 'https://kavavitazov.sk/' },
     concept: { name: 'Concept Coffee Roasters', web: 'https://www.conceptcoffee.sk/' },
     jolka: { name: 'Pražiareň Jolka', web: 'https://www.praziarenjolka.sk/' }
   }[slug];
 
   const productionContact = 'https://mojchatbot.sk/kontakt';
 
-  function image(src, className = 'cf-brand-logo') {
+  function image(src, className = 'cf-brand-logo', alt = '') {
     const img = document.createElement('img');
     img.src = src;
-    img.alt = '';
+    img.alt = alt;
     img.decoding = 'async';
     img.draggable = false;
     img.className = className;
     return img;
   }
 
+  function kaffaWordmark() {
+    const mark = document.createElement('span');
+    mark.className = 'kf-wordmark cf-avatar-wordmark';
+    mark.setAttribute('aria-label', 'Kaffa Roastery');
+    mark.innerHTML = '<strong>KAFFA</strong><small>speciality coffee beans</small>';
+    return mark;
+  }
+
   function replaceWithLogo(host, brandSlug = slug) {
     if (!host || host.dataset.cfLogo === brandSlug) return;
     if (brandSlug === 'kaffa') {
-      const source = document.querySelector('.kf-widget-brand .kf-wordmark, .kf-panel-head .kf-wordmark, .kf-brand .kf-wordmark');
-      if (!source) return;
-      const clone = source.cloneNode(true);
-      clone.classList.add('cf-avatar-wordmark');
-      host.replaceChildren(clone);
+      host.replaceChildren(kaffaWordmark());
     } else {
       const src = logo[brandSlug];
       if (!src) return;
-      host.replaceChildren(image(src));
+      host.replaceChildren(image(src, 'cf-brand-logo', ''));
     }
     host.dataset.cfLogo = brandSlug;
   }
 
+  function fixWidgetBrandIdentity() {
+    if (slug === 'kaffa') {
+      const brand = document.querySelector('.kf-widget-brand');
+      if (brand && brand.dataset.cfHeaderLogo !== 'true') {
+        const online = document.createElement('span');
+        online.className = 'cf-kaffa-online';
+        online.innerHTML = '<i></i> Online poradca';
+        brand.replaceChildren(kaffaWordmark(), online);
+        brand.dataset.cfHeaderLogo = 'true';
+      }
+      return;
+    }
+
+    if (slug === 'vitazov') {
+      document.querySelectorAll('.widget-brand__mark').forEach((node) => replaceWithLogo(node, 'vitazov'));
+      return;
+    }
+
+    if (slug === 'concept') {
+      document.querySelectorAll('.widget-brand__mark,.brand-mark').forEach((node) => replaceWithLogo(node, 'concept'));
+      return;
+    }
+
+    if (slug === 'diamonds') {
+      document.querySelectorAll('.widget-logo').forEach((node) => replaceWithLogo(node, 'diamonds'));
+    }
+  }
+
   function fixBrandAvatars() {
     if (slug === 'kaffa') {
-      document.querySelectorAll('.kf-bot-avatar').forEach((node) => replaceWithLogo(node, 'kaffa'));
+      document.querySelectorAll('.kf-bot-avatar,.kf-advisor-entry__mark').forEach((node) => replaceWithLogo(node, 'kaffa'));
       return;
     }
     if (slug === 'concept' || slug === 'vitazov') {
@@ -74,19 +106,23 @@
     }
   }
 
+  /* Pražiarnička previously reused Kaffa/Concept images. The preparation and
+     drink answers now use the neutral, individually sourced method photos used
+     by the strongest Jolka flow; taste/caffeine remain tied to real products
+     from Pražiarnička instead of invented imagery. */
   const praziarnickaPhotoMap = new Map([
-    ['Automat', ['/assets/kaffa/prep-automatic.webp', 'scene']],
-    ['Pákový kávovar', ['/assets/kaffa/prep-espresso.webp', 'scene']],
-    ['Moka kanvička', ['/assets/kaffa/prep-moka.webp', 'scene']],
-    ['Filter', ['/assets/kaffa/prep-filter.webp', 'scene']],
+    ['Automat', ['/assets/jolka/method/automat.webp', 'scene']],
+    ['Pákový kávovar', ['/assets/jolka/method/lever.webp', 'scene']],
+    ['Moka kanvička', ['/assets/jolka/method/moka.webp', 'scene']],
+    ['Filter', ['/assets/jolka/method/filter.webp', 'scene']],
     ['Čokoláda a orechy', ['/assets/praziarnicka/official-paganini.jpg', 'product']],
     ['Sladká a vyvážená', ['/assets/praziarnicka/official-brazil.jpg', 'product']],
     ['Ovocná a svieža', ['/assets/praziarnicka/official-cuba.jpg', 'product']],
     ['Silná a výrazná', ['/assets/praziarnicka/official-puccini.jpg', 'product']],
-    ['Čiernu', ['/assets/kaffa/brew-filter.webp', 'scene']],
-    ['S mliekom', ['/assets/kaffa/brew-espresso.webp', 'scene']],
-    ['Striedam oboje', ['/assets/concept/prep-automatic.webp', 'scene']],
-    ['Podľa nálady', ['/assets/concept/prep-moka.webp', 'scene']],
+    ['Čiernu', ['/assets/jolka/method/black.webp', 'scene']],
+    ['S mliekom', ['/assets/jolka/method/milk.webp', 'scene']],
+    ['Striedam oboje', ['/assets/jolka/method/both.webp', 'scene']],
+    ['Podľa nálady', ['/assets/jolka/method/filter.webp', 'scene']],
     ['Počas dňa', ['/assets/praziarnicka/official-brazil.jpg', 'product']],
     ['Aj večer', ['/assets/praziarnicka/official-bezkofeinova.jpg', 'product']],
     ['Je mi to jedno', ['/assets/praziarnicka/official-cuba.jpg', 'product']],
@@ -94,16 +130,16 @@
   ]);
 
   const diamondsPhotoMap = new Map([
-    ['Automat', ['/assets/kaffa/prep-automatic.webp', 'scene']],
-    ['Espresso', ['/assets/kaffa/prep-espresso.webp', 'scene']],
-    ['Filter', ['/assets/kaffa/prep-filter.webp', 'scene']],
-    ['Moka', ['/assets/kaffa/prep-moka.webp', 'scene']],
+    ['Automat', ['/assets/jolka/method/automat.webp', 'scene']],
+    ['Espresso', ['/assets/jolka/method/lever.webp', 'scene']],
+    ['Filter', ['/assets/jolka/method/filter.webp', 'scene']],
+    ['Moka', ['/assets/jolka/method/moka.webp', 'scene']],
     ['Sladká a čokoládová', ['/assets/diamonds/brazil-fazenda-official.jpg', 'product']],
     ['Vyvážená', ['/assets/diamonds/kumanday-official.jpg', 'product']],
     ['Ovocná a svieža', ['/assets/diamonds/kenya-mugaya-official.jpg', 'product']],
-    ['Čiernu', ['/assets/diamonds/kenya-mugaya.webp', 'scene']],
-    ['S mliekom', ['/assets/diamonds/brazil-fazenda.webp', 'scene']],
-    ['Oboje', ['/assets/diamonds/kumanday.webp', 'scene']],
+    ['Čiernu', ['/assets/jolka/method/black.webp', 'scene']],
+    ['S mliekom', ['/assets/jolka/method/milk.webp', 'scene']],
+    ['Oboje', ['/assets/jolka/method/both.webp', 'scene']],
     ['Počas dňa', ['/assets/diamonds/kumanday-official.jpg', 'product']],
     ['Aj večer', ['/assets/diamonds/el-buho-official.jpg', 'product']]
   ]);
@@ -113,16 +149,15 @@
     const mapping = praziarnickaPhotoMap.get(title);
     const visual = card.querySelector('.pz13-option__visual');
     if (!mapping || !visual) return;
-
     const [src, kind] = mapping;
     let img = visual.querySelector('.pz13-option__img');
     if (!img) {
-      img = image(src, 'pz13-option__img cf-real-photo');
+      img = image(src, 'pz13-option__img cf-real-photo', title || '');
       visual.prepend(img);
-    } else {
+    } else if (img.getAttribute('src') !== src) {
       img.src = src;
-      img.classList.add('cf-real-photo');
     }
+    img.classList.add('cf-real-photo');
     img.alt = title || '';
     img.loading = 'lazy';
     visual.dataset.cfRealPhoto = title;
@@ -133,12 +168,17 @@
     const title = card.querySelector('.answer-copy b')?.textContent?.trim();
     const mapping = diamondsPhotoMap.get(title);
     const visual = card.querySelector('.answer-photo');
-    if (!mapping || !visual || visual.dataset.cfRealPhoto === title) return;
+    if (!mapping || !visual) return;
     const [src, kind] = mapping;
-    const img = image(src, 'cf-real-photo');
+    let img = visual.querySelector('.cf-real-photo');
+    if (!img) {
+      img = image(src, 'cf-real-photo', title || '');
+      visual.replaceChildren(img);
+    } else if (img.getAttribute('src') !== src) {
+      img.src = src;
+    }
     img.alt = title || '';
     img.loading = 'lazy';
-    visual.replaceChildren(img);
     visual.dataset.cfRealPhoto = title;
     visual.dataset.photoKind = kind;
   }
@@ -146,9 +186,7 @@
   function fixAdvisorPhotos() {
     if (slug === 'praziarnicka') {
       document.querySelectorAll('.pz13-option').forEach(setPraziarnickaPhoto);
-      return;
-    }
-    if (slug === 'diamonds') {
+    } else if (slug === 'diamonds') {
       document.querySelectorAll('.answer-card').forEach(setDiamondsPhoto);
     }
   }
@@ -163,19 +201,41 @@
     if (entry && greeting && entry.nextElementSibling !== greeting) entry.after(greeting);
   }
 
-  function fixContactLinks() {
+  function contactTarget() {
     const params = new URLSearchParams({
       source: `coffee-demo-${slug}`,
       company: company.name,
       web: company.web,
       demo: location.href
     });
-    const target = `${productionContact}?${params.toString()}`;
-    document.querySelectorAll('a[href*="/kontakt"],a[data-coffee-prefill="true"]').forEach((link) => {
-      if (!/mojchatbot/i.test(link.href)) return;
+    return `${productionContact}?${params.toString()}`;
+  }
+
+  function fixContactLinks() {
+    const target = contactTarget();
+    const owner = document.querySelector('[data-mcb-page="true"]');
+    const links = new Set([
+      ...document.querySelectorAll('a[href*="/kontakt"],a[data-coffee-prefill="true"]'),
+      ...(owner ? owner.querySelectorAll('.mcb-head a.mcb-btn,.mcb-pricing-side a.mcb-btn') : [])
+    ]);
+    links.forEach((link) => {
+      if (!(link instanceof HTMLAnchorElement)) return;
       link.href = target;
       link.dataset.coffeePrefill = 'true';
     });
+
+    if (!owner || owner.querySelector('a[href*="mojchatbot.sk/kontakt"]')) return;
+    const head = owner.querySelector('.mcb-head');
+    const existing = head?.querySelector('.mcb-btn');
+    if (!head || !existing) return;
+    const anchor = document.createElement('a');
+    anchor.className = existing.className;
+    anchor.href = target;
+    anchor.target = '_blank';
+    anchor.rel = 'noreferrer';
+    anchor.dataset.coffeePrefill = 'true';
+    anchor.innerHTML = existing.innerHTML;
+    existing.replaceWith(anchor);
   }
 
   function improveVitazovEntry() {
@@ -190,7 +250,7 @@
 
   function hideMobileTeasers() {
     const mobile = matchMedia('(max-width: 640px)').matches;
-    document.querySelectorAll('[data-mcb-teaser="true"],.launcher__teaser,.launcher-teaser,.launcher-teaser,.teaser,.kf-teaser,.pz13-preview').forEach((node) => {
+    document.querySelectorAll('[data-mcb-teaser="true"],.launcher__teaser,.launcher-teaser,.teaser,.kf-teaser,.pz13-preview').forEach((node) => {
       if (!(node instanceof HTMLElement)) return;
       if (mobile) {
         node.dataset.cfMobileHidden = 'true';
@@ -218,15 +278,17 @@
     window.__CF_FAST_CHAT_FALLBACK__ = true;
     const upstream = window.fetch.bind(window);
     window.fetch = async (input, init) => {
-      const url = typeof input === 'string' ? input : input?.url || '';
-      if (!(url === '/api/chat' || url.endsWith('/api/chat'))) return upstream(input, init);
+      const rawUrl = typeof input === 'string' ? input : input?.url || '';
+      let pathname = rawUrl;
+      try { pathname = new URL(rawUrl, location.href).pathname; } catch {}
+      if (pathname !== '/api/chat') return upstream(input, init);
 
       let timer;
       try {
         return await Promise.race([
           upstream(input, init),
           new Promise((_, reject) => {
-            timer = setTimeout(() => reject(new Error('coffee-fast-fallback')), 2600);
+            timer = setTimeout(() => reject(new Error('coffee-fast-fallback')), 1600);
           })
         ]);
       } catch {
@@ -245,8 +307,23 @@
     };
   }
 
+  function installStepMotion() {
+    if (slug === 'jolka' || document.documentElement.dataset.cfStepMotion === 'true') return;
+    document.documentElement.dataset.cfStepMotion = 'true';
+    const optionSelector = '.kf-option,.option,.answer-card,.pz13-option';
+    document.addEventListener('click', (event) => {
+      const button = event.target.closest(optionSelector);
+      if (!button || button.disabled) return;
+      const container = button.closest('.kf-stage,#advisorBody,#advisorContent,.advisor,.pz13-advisor');
+      if (!container || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      setTimeout(() => container.classList.add('cf-step-leaving'), 170);
+      setTimeout(() => container.classList.remove('cf-step-leaving'), 292);
+    }, true);
+  }
+
   function run() {
     document.body.dataset.coffeeFinal = slug;
+    fixWidgetBrandIdentity();
     fixBrandAvatars();
     fixAdvisorPhotos();
     fixKaffaSeed();
@@ -256,6 +333,7 @@
   }
 
   installFastChatFallback();
+  installStepMotion();
 
   let queued = false;
   const observer = new MutationObserver(() => {
