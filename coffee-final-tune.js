@@ -32,9 +32,7 @@
     jolka: { name: 'Pražiareň Jolka', web: 'https://www.praziarenjolka.sk/' }
   }[slug];
 
-  const previewContact = 'https://vne-n-git-agent-coffee-demo-6cbc05-danielvendzur-codes-projects.vercel.app/kontakt';
   const productionContact = 'https://mojchatbot.sk/kontakt';
-  const isPreview = /(?:^|\.)vercel\.app$/i.test(location.hostname) || /^(?:localhost|127\.0\.0\.1)$/i.test(location.hostname);
 
   function image(src, className = 'cf-brand-logo') {
     const img = document.createElement('img');
@@ -110,10 +108,31 @@
     ['Aj večer', ['/assets/diamonds/el-buho-official.jpg', 'product']]
   ]);
 
-  function setCardPhoto(card, visualSelector, copySelector, photoMap) {
-    const title = card.querySelector(copySelector)?.textContent?.trim();
-    const mapping = photoMap.get(title);
-    const visual = card.querySelector(visualSelector);
+  function setPraziarnickaPhoto(card) {
+    const title = card.querySelector('.pz13-option__copy b')?.textContent?.trim();
+    const mapping = praziarnickaPhotoMap.get(title);
+    const visual = card.querySelector('.pz13-option__visual');
+    if (!mapping || !visual) return;
+
+    const [src, kind] = mapping;
+    let img = visual.querySelector('.pz13-option__img');
+    if (!img) {
+      img = image(src, 'pz13-option__img cf-real-photo');
+      visual.prepend(img);
+    } else {
+      img.src = src;
+      img.classList.add('cf-real-photo');
+    }
+    img.alt = title || '';
+    img.loading = 'lazy';
+    visual.dataset.cfRealPhoto = title;
+    visual.dataset.photoKind = kind;
+  }
+
+  function setDiamondsPhoto(card) {
+    const title = card.querySelector('.answer-copy b')?.textContent?.trim();
+    const mapping = diamondsPhotoMap.get(title);
+    const visual = card.querySelector('.answer-photo');
     if (!mapping || !visual || visual.dataset.cfRealPhoto === title) return;
     const [src, kind] = mapping;
     const img = image(src, 'cf-real-photo');
@@ -126,11 +145,11 @@
 
   function fixAdvisorPhotos() {
     if (slug === 'praziarnicka') {
-      document.querySelectorAll('.pz13-option').forEach((card) => setCardPhoto(card, '.pz13-option__visual', '.pz13-option__copy b', praziarnickaPhotoMap));
+      document.querySelectorAll('.pz13-option').forEach(setPraziarnickaPhoto);
       return;
     }
     if (slug === 'diamonds') {
-      document.querySelectorAll('.answer-card').forEach((card) => setCardPhoto(card, '.answer-photo', '.answer-copy b', diamondsPhotoMap));
+      document.querySelectorAll('.answer-card').forEach(setDiamondsPhoto);
     }
   }
 
@@ -151,9 +170,9 @@
       web: company.web,
       demo: location.href
     });
-    const target = `${isPreview ? previewContact : productionContact}?${params.toString()}`;
+    const target = `${productionContact}?${params.toString()}`;
     document.querySelectorAll('a[href*="/kontakt"],a[data-coffee-prefill="true"]').forEach((link) => {
-      if (!/mojchatbot|vercel\.app/i.test(link.href)) return;
+      if (!/mojchatbot/i.test(link.href)) return;
       link.href = target;
       link.dataset.coffeePrefill = 'true';
     });
@@ -169,6 +188,63 @@
     if (note) note.textContent = '4 krátke otázky · jedno odporúčanie';
   }
 
+  function hideMobileTeasers() {
+    const mobile = matchMedia('(max-width: 640px)').matches;
+    document.querySelectorAll('[data-mcb-teaser="true"],.launcher__teaser,.launcher-teaser,.launcher-teaser,.teaser,.kf-teaser,.pz13-preview').forEach((node) => {
+      if (!(node instanceof HTMLElement)) return;
+      if (mobile) {
+        node.dataset.cfMobileHidden = 'true';
+        node.style.setProperty('display', 'none', 'important');
+      } else if (node.dataset.cfMobileHidden === 'true') {
+        node.style.removeProperty('display');
+        delete node.dataset.cfMobileHidden;
+      }
+    });
+  }
+
+  function fallbackReply(text) {
+    const q = text.toLocaleLowerCase('sk');
+    if (/automat|kancel/.test(q)) return 'Do automatu sa zvyčajne hodí plnšia a menej kyslá káva. Vo Výbere kávy to spresníme podľa chuti a toho, či ju pijete s mliekom.';
+    if (/odkia[ľl]|p[ôo]vod|krajin|pochádz|farma/.test(q)) return 'Pri každej káve je uvedená krajina pôvodu a spôsob spracovania. Napíšte mi, ktorá vás zaujíma, alebo prejdite Výber kávy a odporučím jednu podľa chuti.';
+    if (/porovna|rozdiel|lep[šs]ia|ktor[áa] z|namiesto/.test(q)) return 'Rozdiel býva najmä v kyslosti, tele a v tom, či sa káva nestratí v mlieku. Napíšte mi, ktoré dve porovnať, alebo prejdite Výber kávy.';
+    if (/mliek|capp|latte/.test(q)) return 'Do mliečnych nápojov sa hodí plnšia káva, ktorá sa v mlieku nestratí. Vo Výbere kávy ju vyberieme podľa vašej chuti.';
+    if (/filter|v60|ovoc|sviež/.test(q)) return 'Na filter sa dá ísť jemnejším aj ovocnejším smerom. Vo Výbere kávy to zúžime podľa toho, akú chuť chcete v šálke.';
+    if (/bez\s*kofe|decaf|večer/.test(q)) return 'Ak hľadáte kávu bez kofeínu, poradca vás nasmeruje na vhodnú voľbu z ponuky. Stačí povedať, ako ju pripravujete a akú chuť máte radi.';
+    return 'Pomôžem vám vybrať. Ak chcete najjednoduchšiu cestu, prejdite Výber kávy — štyri krátke kroky vás dovedú ku konkrétnemu produktu.';
+  }
+
+  function installFastChatFallback() {
+    if (window.__CF_FAST_CHAT_FALLBACK__) return;
+    window.__CF_FAST_CHAT_FALLBACK__ = true;
+    const upstream = window.fetch.bind(window);
+    window.fetch = async (input, init) => {
+      const url = typeof input === 'string' ? input : input?.url || '';
+      if (!(url === '/api/chat' || url.endsWith('/api/chat'))) return upstream(input, init);
+
+      let timer;
+      try {
+        return await Promise.race([
+          upstream(input, init),
+          new Promise((_, reject) => {
+            timer = setTimeout(() => reject(new Error('coffee-fast-fallback')), 2600);
+          })
+        ]);
+      } catch {
+        let text = '';
+        try {
+          const payload = JSON.parse(init?.body || '{}');
+          text = String(payload.messages?.filter((message) => message?.role === 'user').at(-1)?.content || '');
+        } catch {}
+        return new Response(JSON.stringify({ reply: fallbackReply(text), fallback: true }), {
+          status: 200,
+          headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' }
+        });
+      } finally {
+        clearTimeout(timer);
+      }
+    };
+  }
+
   function run() {
     document.body.dataset.coffeeFinal = slug;
     fixBrandAvatars();
@@ -176,7 +252,10 @@
     fixKaffaSeed();
     fixContactLinks();
     improveVitazovEntry();
+    hideMobileTeasers();
   }
+
+  installFastChatFallback();
 
   let queued = false;
   const observer = new MutationObserver(() => {
@@ -189,6 +268,7 @@
   });
   observer.observe(document.documentElement, { childList: true, subtree: true });
 
+  matchMedia('(max-width: 640px)').addEventListener?.('change', hideMobileTeasers);
   run();
   [120, 350, 800, 1600, 3000].forEach((delay) => setTimeout(run, delay));
 })();
