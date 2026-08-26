@@ -1,0 +1,40 @@
+/* Final QA-only corrections, loaded after the visual tune. */
+
+/* Pražiarnička keeps the semantic sprite proxy in the DOM for selection/QA,
+   while the visible image is now a real local photo. */
+body[data-coffee-final="praziarnicka"] .pz13-option__img.cf-real-photo{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  position:relative!important;
+  inset:auto!important;
+  transform:none!important;
+}
+body[data-coffee-final="praziarnicka"] .pz13-option__visual[data-photo-kind="product"] .pz13-option__img.cf-real-photo{
+  object-fit:contain!important;
+  padding:4px!important;
+  background:#f7f4ef!important;
+}
+body[data-coffee-final="praziarnicka"] .pz13-option__photo{display:none!important}
+
+/* Placeholder contrast is deliberately brand-specific; a late Diamonds rule
+   must not tint the light widgets. */
+body[data-coffee-final="kaffa"] .kf-composer input::placeholder{color:#7a8588!important;opacity:1!important}
+body[data-coffee-final="concept"] .composer input::placeholder{color:#8a7770!important;opacity:1!important}
+body[data-coffee-final="vitazov"] .composer input::placeholder{color:#6e7e72!important;opacity:1!important}
+body[data-coffee-final="jolka"] .composer input::placeholder{color:#8b7b6e!important;opacity:1!important}
+body[data-coffee-final="praziarnicka"] .pz13-composer input::placeholder{color:#70867e!important;opacity:1!important}
+body[data-coffee-final="diamonds"] .composer input::placeholder{color:#879188!important;opacity:1!important}
+
+/* Owner pitch on phones must remain unobstructed. The launcher can stay,
+   invitation bubbles cannot cover price or contact CTA. */
+@media(max-width:640px){
+  [data-mcb-teaser="true"],
+  .launcher__teaser,
+  .launcher-teaser,
+  .teaser,
+  .kf-teaser,
+  .pz13-preview{display:none!important}
+}
