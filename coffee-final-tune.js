@@ -13,7 +13,7 @@
   if (!valid.has(slug)) return;
 
   document.body.dataset.coffeeFinal = slug;
-  document.documentElement.dataset.coffeeFinal = '2026-08-26';
+  document.documentElement.dataset.coffeeFinal = '2026-08-26-release-repair';
 
   const logo = {
     praziarnicka: '/brand/praziarnicka-logo-official.png',
@@ -78,7 +78,10 @@
     }
 
     if (slug === 'vitazov') {
-      document.querySelectorAll('.widget-brand__mark').forEach((node) => replaceWithLogo(node, 'vitazov'));
+      const brand = document.querySelector('.widget-brand');
+      if (brand && !brand.querySelector('img[src*="vitazov-logo"]')) {
+        brand.replaceChildren(image('/assets/vitazov-logo.svg', 'kv-widget-logo cf-brand-logo', 'Káva Víťazov'));
+      }
       return;
     }
 
@@ -94,7 +97,9 @@
 
   function fixBrandAvatars() {
     if (slug === 'kaffa') {
-      document.querySelectorAll('.kf-bot-avatar,.kf-advisor-entry__mark').forEach((node) => replaceWithLogo(node, 'kaffa'));
+      /* The advisor entry intentionally keeps the real preparation photo. Only
+         actual chat avatars use the compact Kaffa wordmark. */
+      document.querySelectorAll('.kf-bot-avatar').forEach((node) => replaceWithLogo(node, 'kaffa'));
       return;
     }
     if (slug === 'concept' || slug === 'vitazov') {
@@ -106,10 +111,6 @@
     }
   }
 
-  /* Pražiarnička previously reused Kaffa/Concept images. The preparation and
-     drink answers now use the neutral, individually sourced method photos used
-     by the strongest Jolka flow; taste/caffeine remain tied to real products
-     from Pražiarnička instead of invented imagery. */
   const praziarnickaPhotoMap = new Map([
     ['Automat', ['/assets/jolka/method/automat.webp', 'scene']],
     ['Pákový kávovar', ['/assets/jolka/method/lever.webp', 'scene']],
@@ -160,7 +161,7 @@
     img.classList.add('cf-real-photo');
     img.alt = title || '';
     img.loading = 'lazy';
-    visual.dataset.cfRealPhoto = title;
+    visual.dataset.cfRealPhoto = title || '';
     visual.dataset.photoKind = kind;
   }
 
@@ -179,7 +180,7 @@
     }
     img.alt = title || '';
     img.loading = 'lazy';
-    visual.dataset.cfRealPhoto = title;
+    visual.dataset.cfRealPhoto = title || '';
     visual.dataset.photoKind = kind;
   }
 
@@ -188,6 +189,37 @@
       document.querySelectorAll('.pz13-option').forEach(setPraziarnickaPhoto);
     } else if (slug === 'diamonds') {
       document.querySelectorAll('.answer-card').forEach(setDiamondsPhoto);
+    }
+  }
+
+  const vitazovContextPhotos = {
+    home: '/assets/jolka/method/lever.webp',
+    office: '/assets/jolka/method/automat.webp',
+    automatic: '/assets/jolka/method/automat.webp',
+    discovery: '/assets/jolka/method/filter.webp'
+  };
+
+  function fixVitazovContextPhotos() {
+    if (slug !== 'vitazov') return;
+    const stepName = document.querySelector('#stepName')?.textContent?.trim();
+    if (stepName !== 'Použitie') return;
+    document.querySelectorAll('#advisorBody .option[data-value]').forEach((option) => {
+      const visual = option.querySelector('.option__photo');
+      const src = vitazovContextPhotos[option.dataset.value];
+      if (!visual || !src) return;
+      let img = visual.querySelector('.cf-context-photo');
+      if (!img) {
+        img = image(src, 'cf-context-photo', '');
+        visual.prepend(img);
+      } else if (img.getAttribute('src') !== src) {
+        img.src = src;
+      }
+    });
+
+    const entryMark = document.querySelector('#openAdvisor > span:first-child');
+    if (entryMark && entryMark.dataset.cfContextPhoto !== 'true') {
+      entryMark.replaceChildren(image('/assets/jolka/method/automat.webp', 'cf-context-photo', ''));
+      entryMark.dataset.cfContextPhoto = 'true';
     }
   }
 
@@ -201,12 +233,59 @@
     if (entry && greeting && entry.nextElementSibling !== greeting) entry.after(greeting);
   }
 
+  function normalizeTeaserAndLauncher() {
+    const teaserSelectors = {
+      diamonds: '.teaser',
+      kaffa: '.kf-teaser',
+      vitazov: '.launcher__teaser',
+      concept: '.launcher__teaser',
+      praziarnicka: '.pz13-preview',
+      jolka: '.launcher__teaser'
+    };
+    const teaser = document.querySelector(teaserSelectors[slug]);
+    if (!teaser) return;
+
+    /* A past generic pass injected a second close button into brand teasers.
+       Keep the brand-native close control and delete only duplicates. */
+    const preferred = teaser.querySelector('#teaserClose,#closeTeaser,#pz13-preview-close,.kf-teaser-close,.launcher__teaser-close');
+    teaser.querySelectorAll('button').forEach((button) => {
+      const looksLikeClose = /close|zavrie|skry/i.test(`${button.id} ${button.className} ${button.getAttribute('aria-label') || ''}`);
+      if (looksLikeClose && preferred && button !== preferred) button.remove();
+    });
+
+    if (slug === 'diamonds') {
+      const title = teaser.querySelector('strong,b');
+      const copy = teaser.querySelector('span');
+      if (title) title.textContent = 'Nájdite svoju kávu';
+      if (copy) copy.textContent = '4 otázky · jedno odporúčanie';
+
+      const launcher = document.querySelector('#launcherButton');
+      if (launcher && launcher.dataset.cfLauncherLogo !== 'true') {
+        const status = document.createElement('i');
+        status.setAttribute('aria-hidden', 'true');
+        launcher.replaceChildren(image('/assets/diamonds/diroastery-logo.svg', 'cf-brand-logo', ''), status);
+        launcher.dataset.cfLauncherLogo = 'true';
+      }
+    }
+  }
+
+  function publicDemoHref() {
+    const fromHost = new URLSearchParams(location.search).get('public');
+    if (fromHost) {
+      try {
+        const url = new URL(fromHost);
+        if (url.protocol === 'https:' && url.hostname === 'mojchatbot.sk') return url.toString();
+      } catch {}
+    }
+    return location.href;
+  }
+
   function contactTarget() {
     const params = new URLSearchParams({
       source: `coffee-demo-${slug}`,
       company: company.name,
       web: company.web,
-      demo: location.href
+      demo: publicDemoHref()
     });
     return `${productionContact}?${params.toString()}`;
   }
@@ -316,9 +395,43 @@
       if (!button || button.disabled) return;
       const container = button.closest('.kf-stage,#advisorBody,#advisorContent,.advisor,.pz13-advisor');
       if (!container || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      setTimeout(() => container.classList.add('cf-step-leaving'), 170);
-      setTimeout(() => container.classList.remove('cf-step-leaving'), 292);
+      setTimeout(() => container.classList.add('cf-step-leaving'), 150);
+      setTimeout(() => container.classList.remove('cf-step-leaving'), 275);
     }, true);
+  }
+
+  /* The source chats already keep their messages in state. What looked like
+     deletion was the scroll position jumping all the way to a newly appended
+     typing row. While a reply is pending, keep the last real exchange visible
+     above the indicator instead of presenting an apparently empty chat. */
+  function installConversationContextGuard() {
+    if (document.documentElement.dataset.cfConversationGuard === 'true') return;
+    document.documentElement.dataset.cfConversationGuard = 'true';
+
+    const selectors = '#chatMessages,.kf-messages,.pz13-chat__messages,#chat';
+    const guarded = new WeakSet();
+
+    const guard = (container) => {
+      if (!(container instanceof HTMLElement) || guarded.has(container)) return;
+      guarded.add(container);
+      const observer = new MutationObserver(() => {
+        const typing = container.querySelector('#typingRow,#typing,.typing');
+        const pendingText = [...container.children].at(-1)?.textContent?.trim() === 'Premýšľam…';
+        if (!typing && !pendingText) return;
+        requestAnimationFrame(() => {
+          const rows = [...container.children].filter((node) => node instanceof HTMLElement && node.getClientRects().length);
+          if (rows.length < 2) return;
+          const anchor = rows[Math.max(0, rows.length - 3)];
+          const top = Math.max(0, anchor.offsetTop - 8);
+          container.scrollTop = Math.min(top, Math.max(0, container.scrollHeight - container.clientHeight));
+        });
+      });
+      observer.observe(container, { childList: true, subtree: true });
+    };
+
+    document.querySelectorAll(selectors).forEach(guard);
+    const rootObserver = new MutationObserver(() => document.querySelectorAll(selectors).forEach(guard));
+    rootObserver.observe(document.body, { childList: true, subtree: true });
   }
 
   function run() {
@@ -326,7 +439,9 @@
     fixWidgetBrandIdentity();
     fixBrandAvatars();
     fixAdvisorPhotos();
+    fixVitazovContextPhotos();
     fixKaffaSeed();
+    normalizeTeaserAndLauncher();
     fixContactLinks();
     improveVitazovEntry();
     hideMobileTeasers();
@@ -334,6 +449,7 @@
 
   installFastChatFallback();
   installStepMotion();
+  installConversationContextGuard();
 
   let queued = false;
   const observer = new MutationObserver(() => {
