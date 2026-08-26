@@ -37,20 +37,37 @@ async function visibleNodeStates(page, selector) {
         font: Number.parseFloat(style.fontSize),
         opacity: Number.parseFloat(style.opacity || '1'),
         background: style.backgroundColor,
+        color: style.color,
         connected: node.isConnected
       };
     }), selector);
 }
 
-function expectLight(rgb) {
-  const values = rgb?.match(/[\d.]+/g)?.slice(0, 3).map(Number) || [];
-  if (values.length === 3) expect(Math.max(...values)).toBeGreaterThan(70);
+function rgb(value) {
+  const parts = value?.match(/[\d.]+/g)?.slice(0, 3).map(Number) || [];
+  return parts.length === 3 ? parts : null;
 }
 
-test('all five chats settle to a readable connected final reply', async ({ page }) => {
-  await page.setViewportSize({ width:1366, height:768 });
+function luminance(parts) {
+  const channel = (value) => {
+    const s = value / 255;
+    return s <= .03928 ? s / 12.92 : ((s + .055) / 1.055) ** 2.4;
+  };
+  return .2126 * channel(parts[0]) + .7152 * channel(parts[1]) + .0722 * channel(parts[2]);
+}
 
-  for (const demo of demos) {
+function contrast(foreground, background) {
+  const fg = rgb(foreground);
+  const bg = rgb(background);
+  if (!fg || !bg) return 21;
+  const a = luminance(fg);
+  const b = luminance(bg);
+  return (Math.max(a, b) + .05) / (Math.min(a, b) + .05);
+}
+
+for (const demo of demos) {
+  test(`${demo.slug} chat settles to a readable final reply`, async ({ page }) => {
+    await page.setViewportSize({ width:1366, height:768 });
     await page.goto(`${baseURL}/?demo=${demo.slug}`, { waitUntil:'networkidle' });
     await waitForDemo(page, demo.slug);
     await page.locator(demo.launcher).click({ force:true });
@@ -86,12 +103,12 @@ test('all five chats settle to a readable connected final reply', async ({ page 
       if (!candidate) return false;
       finalState = candidate;
       return true;
-    }, { timeout:7000, intervals:[100, 200, 350, 500] }).toBeTruthy();
+    }, { timeout:6000, intervals:[100, 180, 300, 450] }).toBeTruthy();
 
     expect(finalState).not.toBeNull();
     expect(finalState.connected).toBeTruthy();
     expect(finalState.font).toBeGreaterThanOrEqual(12);
     expect(finalState.opacity).toBeGreaterThanOrEqual(.95);
-    expectLight(finalState.background);
-  }
-});
+    expect(contrast(finalState.color, finalState.background)).toBeGreaterThanOrEqual(3.5);
+  });
+}
