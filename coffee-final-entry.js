@@ -5,12 +5,15 @@
   const params = new URLSearchParams(location.search);
   const parts = location.pathname.split('/').filter(Boolean);
   const pathSlug = parts.at(-1);
-  const requested = params.get('demo') || location.hash.replace(/^#/, '') || pathSlug;
+  const hostnameSlug = location.hostname.toLowerCase().endsWith('.mojchatbot.sk')
+    ? location.hostname.toLowerCase().split('.')[0]
+    : '';
+  const requested = params.get('demo') || (VALID.has(hostnameSlug) ? hostnameSlug : '') || location.hash.replace(/^#/, '') || pathSlug;
   const normalized = requested === 'index.html' || requested === 'ukazka' || !requested ? 'praziarnicka' : requested;
   const slug = VALID.has(normalized) ? normalized : 'praziarnicka';
 
   if (slug === 'jolka') {
-    location.replace('/jolka.html');
+    if (location.pathname !== '/jolka.html') location.replace('/jolka.html');
     return;
   }
 
@@ -133,6 +136,12 @@
     await loadAll(manifest.scripts, addScript);
     if (slug !== 'praziarnicka') await loadAll(finalScripts, addScript);
     await addScript('/coffee-usability-release.js');
+    await addStyle('/coffee-review-pass.css');
+    await addStyle('/coffee-review-corrections.css');
+    await addScript('/coffee-review-pass.js');
+    await addStyle('/coffee-final-tune.css');
+    await addStyle('/coffee-final-qa.css');
+    await addScript('/coffee-final-tune.js');
   };
 
   boot().catch((error) => {

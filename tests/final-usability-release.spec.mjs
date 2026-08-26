@@ -55,10 +55,10 @@ test('every owner page is that roastery\'s own, with a visible primary action', 
     await expect(owner.locator('.mcb-copy h1')).toHaveText('Kávový poradca na váš web.');
     await expect(owner.locator('.mcb-lead')).toContainText('nevedia, aké kávy máte');
 
-    // The roastery is still named on its own page — by the line above the
-    // heading and by the footer, not by the copy.
+    // The roastery is named by its own lockup and eyebrow. The old repetitive
+    // "Pripravené pre…" sales copy was intentionally removed from this pass.
     const named = await owner.evaluate((node) => node.innerText);
-    expect(named).toContain('Pripravené pre');
+    expect(named).not.toContain('Pripravené pre');
     await expect(owner.locator('.mcb-eyebrow')).not.toHaveText('');
 
     // The primary action was rendering white on a transparent background,
@@ -129,6 +129,13 @@ test('every owner page stays readable and contained on a phone', async ({ page }
     await expect(owner.locator('.mcb-plan').first()).toBeVisible();
     await expect(owner.locator('.mcb-foot')).toBeVisible();
     await expect(owner.locator('.mcb-benefits')).toHaveCount(0);
+
+    // The floating launcher may remain, but its large invitation bubble must
+    // not cover pricing, add-on copy or the contact CTA on the one-screen pitch.
+    const visibleTeasers = page.locator(
+      '[data-mcb-teaser="true"],.launcher__teaser,.launcher-teaser,.teaser,.kf-teaser,.pz13-preview'
+    ).filter({ visible:true });
+    expect(await visibleTeasers.count()).toBe(0);
 
     // No explanatory text on this surface drops below 11 px.
     const sizes = await owner.locator('p, b, small, span, em, li, h1, button, a').evaluateAll((nodes) =>

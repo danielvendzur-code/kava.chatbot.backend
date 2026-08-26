@@ -1,0 +1,117 @@
+/* Corrections found during the visual self-review of coffee-review-pass.css. */
+
+/* ======================================================== PRAZIARNICKA */
+html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option {
+  grid-template-rows:auto auto !important;
+}
+html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option__visual {
+  width:100% !important;
+  height:auto !important;
+  min-height:0 !important;
+  aspect-ratio:4 / 3 !important;
+  overflow:hidden !important;
+}
+html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option__img,
+html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option__visual img {
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center !important;
+}
+
+/* ======================================================== LAUNCHER MARKS */
+/* The earlier shared launcher rule used object-fit:cover with higher
+   specificity. That cropped wide official lockups into arbitrary letters.
+   Diamonds has a square monogram in the left section of its official SVG, so
+   preserve the SVG ratio and clip only that legitimate mark. Concept keeps the
+   complete official lockup with contain instead of showing a random centre crop. */
+html body.mcw-on .mcb-w-launcher.coffee-official-launcher[data-official-brand="diamonds"] > img.coffee-official-launcher__logo {
+  position:absolute !important;
+  inset:0 auto 0 0 !important;
+  width:auto !important;
+  height:100% !important;
+  max-width:none !important;
+  max-height:none !important;
+  margin:0 !important;
+  object-fit:unset !important;
+  object-position:initial !important;
+  filter:brightness(0) invert(1) !important;
+}
+html body.mcw-on .mcb-w-launcher.coffee-official-launcher[data-official-brand="concept"] > img.coffee-official-launcher__logo {
+  position:relative !important;
+  inset:auto !important;
+  width:86% !important;
+  height:86% !important;
+  max-width:86% !important;
+  max-height:86% !important;
+  margin:auto !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  filter:none !important;
+}
+
+/* ============================================================= VITAZOV */
+/* Do not replace the semantic 4x4 choice sprite with four near-identical bag
+   photos. The brand's own advisor stylesheet maps each answer to a distinct
+   sprite cell, which communicates preparation/taste faster than packaging. */
+html body.mcw-on[data-demo="vitazov"] .option__photo {
+  background-image:url('/assets/vitazov-choice-sprite.png') !important;
+  background-size:400% 400% !important;
+  background-repeat:no-repeat !important;
+}
+html body.mcw-on[data-demo="vitazov"] .option__photo--home { background-position:0 0 !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--office { background-position:33.333% 0 !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--automatic { background-position:66.666% 0 !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--discovery { background-position:100% 0 !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--classic,
+html body.mcw-on[data-demo="vitazov"] .option__photo--strong { background-position:0 33.333% !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--balanced,
+html body.mcw-on[data-demo="vitazov"] .option__photo--smooth { background-position:33.333% 33.333% !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--fruity { background-position:66.666% 33.333% !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo--decaf { background-position:100% 33.333% !important; }
+html body.mcw-on[data-demo="vitazov"] .option__photo > svg {
+  opacity:0 !important;
+}
+
+/* ============================================================= CONCEPT */
+/* Concept already ships dedicated preparation photos. Use them directly and
+   leave the other question visuals supplied by its own advisor renderer. */
+html body.mcw-on[data-demo="concept"] .option__photo--automatic {
+  background-image:url('/assets/concept/prep-automatic.webp') !important;
+}
+html body.mcw-on[data-demo="concept"] .option__photo--lever,
+html body.mcw-on[data-demo="concept"] .option__photo--espresso {
+  background-image:url('/assets/concept/prep-lever.webp') !important;
+}
+html body.mcw-on[data-demo="concept"] .option__photo--filter {
+  background-image:url('/assets/concept/prep-filter.webp') !important;
+}
+html body.mcw-on[data-demo="concept"] .option__photo--moka {
+  background-image:url('/assets/concept/prep-moka.webp') !important;
+}
+
+/* =============================================================== KAFFA */
+/* Subject-aware crop: avoid cutting the brew device at the edge of the card. */
+html body.mcw-on[data-demo="kaffa"] .kf-option__visual {
+  background-position:center 46% !important;
+}
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][style*="--i:0"] .kf-option__visual { background-position:center 54% !important; }
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][style*="--i:1"] .kf-option__visual { background-position:center 50% !important; }
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][style*="--i:2"] .kf-option__visual { background-position:center 46% !important; }
+html body.mcw-on[data-demo="kaffa"] .kf-option--photo[style*="--sprite-y:0%"][style*="--i:3"] .kf-option__visual { background-position:center 48% !important; }
+
+@media(max-width:640px){
+  html body.mcw-on[data-demo="praziarnicka-v13"] .pz13-option__visual { aspect-ratio:4 / 3 !important; }
+
+  /* On the one-screen owner pitch the floating teaser was covering the price,
+     add-on note and contact CTA. The launcher remains available; only the
+     redundant invitation card is suppressed on phone-sized owner views. */
+  html body.mcw-on [data-mcb-page="true"] ~ [data-mcb-teaser="true"],
+  html body.mcw-on:has([data-mcb-page="true"]) .launcher__teaser,
+  html body.mcw-on:has([data-mcb-page="true"]) .launcher-teaser,
+  html body.mcw-on:has([data-mcb-page="true"]) .teaser,
+  html body.mcw-on:has([data-mcb-page="true"]) .kf-teaser,
+  html body.mcw-on:has([data-mcb-page="true"]) .pz13-preview {
+    display:none !important;
+  }
+}
