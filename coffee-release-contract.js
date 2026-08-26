@@ -19,6 +19,9 @@
       'Nechcem kyslú',
       'Chcem ovocnú'
     ]);
+    const entry = document.querySelector('.kf-advisor-entry');
+    const started = Boolean(document.querySelector('.kf-message-row--user'));
+    if (entry) entry.hidden = started;
   }
 
   const victoryContext = {
