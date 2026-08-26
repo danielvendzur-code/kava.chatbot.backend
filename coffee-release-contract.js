@@ -3,6 +3,7 @@
 
   const slug = String(window.COFFEE_DEMO_SLUG || document.body.dataset.coffeeFinal || '').replace('-v13', '');
   if (!['praziarnicka', 'diamonds', 'kaffa', 'vitazov', 'concept'].includes(slug)) return;
+  document.documentElement.dataset.coffeeReleaseContract = 'ready';
 
   const setText = (nodes, labels) => {
     [...nodes].forEach((node, index) => {
