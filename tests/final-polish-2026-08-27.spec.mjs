@@ -7,8 +7,10 @@ mkdirSync(artifacts, { recursive: true });
 
 async function waitReady(page, slug) {
   await page.waitForFunction((expected) => {
-    if (expected === 'jolka') return document.body.dataset.coffeeFinal === 'jolka' && document.documentElement.dataset.coffeeReleaseFinal === '2026-08-27';
-    return document.documentElement.dataset.coffeeReleaseFinal === '2026-08-27';
+    const settled = document.documentElement.dataset.coffeeReleaseReady === 'true';
+    const final = document.documentElement.dataset.coffeeReleaseFinal === '2026-08-27';
+    if (expected === 'jolka') return settled && final && document.body.dataset.coffeeFinal === 'jolka';
+    return settled && final;
   }, slug);
 }
 
