@@ -11,6 +11,15 @@
 
   document.documentElement.dataset.coffeeReleaseFinal = '2026-08-27';
 
+  // Historic coffee-final-tune.js installed a 1.6 s Promise.race around
+  // /api/chat. That could display a local fallback while the Anthropic request
+  // continued in the background and consumed credits. Restore the canonical
+  // production wrapper captured immediately after coffee-api-route.js loaded.
+  if (typeof window.__COFFEE_STABLE_FETCH__ === 'function') {
+    window.fetch = window.__COFFEE_STABLE_FETCH__;
+    document.documentElement.dataset.coffeeApiRoute = 'stable';
+  }
+
   const makeImg = (src, className, alt = '') => {
     const img = document.createElement('img');
     img.src = src;
