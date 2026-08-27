@@ -1,0 +1,22 @@
+/* Last release safety rules: never dim a finished recommendation. */
+html body.mcw-on .mcw-thinking {
+  display: block !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transition: none !important;
+}
+html body.mcw-on .mcw-thinking-note {
+  display: none !important;
+}
+
+/* A disabled Back button may be inactive, but it must not look missing. */
+body[data-coffee-final="jolka"] .back[disabled] {
+  opacity: 1 !important;
+  color: #76665a !important;
+  border-color: #d1c0aa !important;
+  background: #fbf7f1 !important;
+}
+body[data-coffee-final="concept"] .progress-back:disabled {
+  opacity: .82 !important;
+  color: #67544c !important;
+}
