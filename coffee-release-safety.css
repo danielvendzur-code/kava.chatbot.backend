@@ -24,36 +24,50 @@ body[data-coffee-final="concept"] .progress-back:disabled {
 /* Keep the first message/selection CTA at the top of the conversation. Older
    brand layers used auto margins/end alignment and could leave a 250–330 px
    empty band above the first useful content on mobile. */
-html body.mcw-on[data-coffee-final="kaffa"] .kf-messages,
-html body.mcw-on[data-coffee-final="kaffa"] .kf-chat-seed,
-html body.mcw-on[data-coffee-final="concept"] #chatScreen .chat,
-html body.mcw-on[data-coffee-final="concept"] #chatScreen,
-html body.mcw-on[data-coffee-final="diamonds"] #chatScreen .chat-messages,
-html body.mcw-on[data-coffee-final="diamonds"] #chatScreen,
-html body.mcw-on[data-coffee-final="vitazov"] #chatScreen .chat,
-html body.mcw-on[data-coffee-final="vitazov"] #chatScreen {
+html body[data-coffee-final="kaffa"] .kf-messages,
+html body[data-coffee-final="kaffa"] .kf-chat-seed,
+html body[data-coffee-final="concept"] #chatScreen .chat,
+html body[data-coffee-final="concept"] #chatScreen,
+html body[data-coffee-final="diamonds"] #chatScreen .chat-messages,
+html body[data-coffee-final="diamonds"] #chatScreen,
+html body[data-coffee-final="vitazov"] #chatScreen .chat,
+html body[data-coffee-final="vitazov"] #chatScreen {
   justify-content: flex-start !important;
   align-content: flex-start !important;
 }
-html body.mcw-on[data-coffee-final="kaffa"] .kf-chat-seed,
-html body.mcw-on[data-coffee-final="concept"] #chatScreen .chat,
-html body.mcw-on[data-coffee-final="diamonds"] #chatScreen .chat-messages,
-html body.mcw-on[data-coffee-final="vitazov"] #chatScreen .chat {
+html body[data-coffee-final="kaffa"] .kf-chat-seed,
+html body[data-coffee-final="concept"] #chatScreen .chat,
+html body[data-coffee-final="diamonds"] #chatScreen .chat-messages,
+html body[data-coffee-final="vitazov"] #chatScreen .chat {
   margin-top: 0 !important;
 }
 
-/* Tablet is still a floating widget. Full-screen starts only on phone widths. */
+/* 481–640px is still a floating tablet-size widget. Historic mobile rules used
+   inset:0/full-screen here and visibly cut the top of Kaffa and Concept. Full
+   screen begins only at true phone widths. */
 @media (min-width:481px) and (max-width:640px) {
-  html body.mcw-on[data-coffee-final="kaffa"] .kf-panel {
+  html body[data-coffee-final="kaffa"] .kf-panel {
     inset: auto 12px 12px auto !important;
-    right: 12px !important;
-    bottom: 12px !important;
     top: auto !important;
     left: auto !important;
+    right: 12px !important;
+    bottom: 12px !important;
     width: min(452px, calc(100vw - 24px)) !important;
     max-width: 452px !important;
     height: min(650px, calc(100dvh - 24px)) !important;
     max-height: 650px !important;
+    border-radius: 28px !important;
+  }
+  html body[data-coffee-final="concept"] #widget.widget {
+    inset: auto 12px 12px auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: 12px !important;
+    bottom: 12px !important;
+    width: min(456px, calc(100vw - 24px)) !important;
+    max-width: 456px !important;
+    height: min(684px, calc(100dvh - 24px)) !important;
+    max-height: 684px !important;
     border-radius: 28px !important;
   }
 }
@@ -75,18 +89,18 @@ html body.mcw-on[data-coffee-final="vitazov"] #chatScreen .chat {
 
 /* Preserve the intended Concept orange→blue brand interaction even against
    older high-specificity launcher rules. */
-html body.mcw-on[data-coffee-final="concept"] #openWidget.launcher__button {
+html body[data-coffee-final="concept"] #openWidget.launcher__button {
   background: #df6345 !important;
   border-color: #f2aa95 !important;
 }
-html body.mcw-on[data-coffee-final="concept"] #openWidget.launcher__button:hover,
-html body.mcw-on[data-coffee-final="concept"] #openWidget.launcher__button:focus-visible {
+html body[data-coffee-final="concept"] #openWidget.launcher__button:hover,
+html body[data-coffee-final="concept"] #openWidget.launcher__button:focus-visible {
   background: #2753a5 !important;
   border-color: #8eaae1 !important;
 }
 
 /* The Victory wordmark must read as a brand lockup, not a tiny icon. */
-html body.mcw-on[data-coffee-final="vitazov"] .widget-brand img.cfr-vitazov-header-logo {
+html body[data-coffee-final="vitazov"] .widget-brand img.cfr-vitazov-header-logo {
   width: 172px !important;
   height: 56px !important;
   max-width: 172px !important;
@@ -96,19 +110,19 @@ html body.mcw-on[data-coffee-final="vitazov"] .widget-brand img.cfr-vitazov-head
 }
 
 /* Diamonds switch is deliberately the same large control as the other demos. */
-html body.mcw-on[data-coffee-final="diamonds"] #widget .mode-switch {
+html body[data-coffee-final="diamonds"] #widget .mode-switch {
   height: 58px !important;
   min-height: 58px !important;
 }
 
 /* Keep the complete first Victory decision in the mobile viewport. */
 @media (max-width:480px) {
-  html body.mcw-on[data-coffee-final="vitazov"] #advisorBody .option {
+  html body[data-coffee-final="vitazov"] #advisorBody .option {
     height: 118px !important;
     min-height: 118px !important;
     grid-template-rows: 68px auto !important;
   }
-  html body.mcw-on[data-coffee-final="vitazov"] #advisorBody .option__photo {
+  html body[data-coffee-final="vitazov"] #advisorBody .option__photo {
     height: 68px !important;
     min-height: 68px !important;
   }
