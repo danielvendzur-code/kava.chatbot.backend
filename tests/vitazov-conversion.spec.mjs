@@ -37,8 +37,6 @@ test('page behind the widget explains the advisor to the owner, not their own sh
   await page.goto(demo(), { waitUntil: 'domcontentloaded' });
   await expect(page.locator('h1')).toContainText('Chat a výber kávy');
   await expect(page.locator('.op-lockup img')).toHaveAttribute('src', '/assets/vitazov-logo.svg');
-  // Both halves of the widget are explained, each in its own block, with this
-  // roastery's own questions rather than a generic script.
   await expect(page.locator('.op-mode')).toHaveCount(2);
   await expect(page.locator('.op-mode').nth(0)).toContainText('Chat');
   await expect(page.locator('.op-asks > li')).toHaveCount(3);
@@ -46,7 +44,6 @@ test('page behind the widget explains the advisor to the owner, not their own sh
   await expect(page.locator('.op-mode').nth(1)).toContainText('Výber kávy');
   await expect(page.locator('.op-flow > li')).toHaveCount(4);
   await expect(page.locator('.op-by')).toContainText('mojchatbot.sk');
-  // Nothing that pretends to be the roastery's own storefront.
   await expect(page.locator('.demo-page')).not.toContainText('Do e-shopu');
   await expect(page.locator('.demo-page')).not.toContainText('Kontakt');
   await expect(page.locator('.cs-card')).toHaveCount(0);
@@ -66,7 +63,6 @@ test('chat is customer-facing with stronger quick actions and no contact clutter
   await expect(page.locator('.advisor-entry')).toHaveCount(1);
   await expect(page.locator('.advisor-entry')).toContainText('Nájsť svoju kávu');
   await expect(page.locator('.widget-credit')).toHaveCount(0);
-  // Four chips in a tidy 2 × 2 block, on the same surface as the conversation.
   const chipBox = await page.locator('.chip').first().boundingBox();
   const entryBox = await page.locator('.advisor-entry').boundingBox();
   const switchBox = await page.locator('.mode').boundingBox();
@@ -87,14 +83,10 @@ test('advisor follows use → profile → drink → intensity and selects Victor
   await page.goto(demo('&qa=advisor'), { waitUntil: 'domcontentloaded' });
   await expectOpen(page);
   await expect(page.locator('#stepName')).toHaveText('Použitie');
-  // Every answer is illustrated from Víťazov's own choice sprite. Jolka's
-  // brewing photos used to be pasted over all of them, which meant the taste
-  // step answered "čokoláda a orechy" with a picture of an espresso machine.
-  const semanticPhoto = page.locator('.option[data-value="home"] .option__photo');
+  const semanticPhoto = page.locator('.option[data-value="home"] .option__photo .cfr-vitazov-photo');
   await expect(semanticPhoto).toBeVisible();
-  await expect(page.locator('.parity-choice-img')).toHaveCount(0);
-  const sprite = await semanticPhoto.evaluate((n) => getComputedStyle(n).backgroundImage);
-  expect(sprite).toContain('vitazov-choice-sprite');
+  await expect(semanticPhoto).toHaveAttribute('src', /\/assets\//);
+  await expect(page.locator('.option[data-value="home"] .option__photo svg')).toBeHidden();
   await choose(page, 'home', '2 z 4');
   await expect(page.locator('#stepName')).toHaveText('Chuť');
   await choose(page, 'balanced', '3 z 4');
@@ -130,17 +122,11 @@ test('result shows three decisive detail rows and one real closing action', asyn
   await expect(page.locator('.result-detail').nth(0).locator('small')).toHaveText('Komu sedí');
   await expect(page.locator('.result-detail').nth(1).locator('small')).toHaveText('Príprava');
   await expect(page.locator('.result-detail').nth(2).locator('small')).toHaveText('Chuť');
-  // The taste row used to print the raw scoring token ("classic").
   await expect(page.locator('.result-detail').nth(2)).not.toContainText(/^(classic|balanced|fruity|strong|decaf)$/);
   await expect(page.locator('.reason')).toBeVisible();
-  // The pack picker, gift-box upsell and add-to-cart button never reached a
-  // basket; one link to the real product replaces them.
   await expect(page.locator('.kv-final-packs')).toHaveCount(0);
   await expect(page.locator('.kv-final-upsell')).toHaveCount(0);
   await expect(page.locator('.kv-final-add')).toHaveCount(0);
-  // The widget stands in for one already installed on the shop, so the
-  // recommendation ends in the basket and confirms it, with the product page
-  // kept as a quiet second step.
   await expect(page.locator('.mc-buy__add')).toBeVisible();
   await expect(page.locator('.mc-buy__add')).toContainText('Pridať do košíka');
   await page.locator('.mc-buy__add').click();
@@ -172,12 +158,8 @@ test('mobile, fallback and reduced motion remain robust', async ({ browser }) =>
 
   await page.goto(demo('&qa=chat&apiError=1'), { waitUntil: 'domcontentloaded' });
   await page.locator('.chip').first().click();
-  // The reply still arrives from the verified catalogue when the API is down;
-  // it just no longer announces its own plumbing to the customer.
   await expect(page.locator('.message--fallback')).toBeVisible();
   await expect(page.locator('.message--fallback')).not.toContainText('Overená lokálna odpoveď');
-  // The guard is against the reply announcing its own plumbing, not against a
-  // clock: every message carries a timestamp now, this one included.
   await expect(page.locator('.message--fallback small')).toHaveCount(0);
   await expect(page.locator('.message--fallback time')).toHaveCount(1);
   await context.close();
