@@ -12,10 +12,6 @@
   css.rel = 'stylesheet';
   css.href = '/coffee-usability-release.css';
   css.dataset.coffeeUsabilityRelease = 'true';
-  // Ranked instead of observed. This sheet and coffee-widget-final.css used to
-  // fight over being the last child of <body>, each move waking the other's
-  // MutationObserver — an endless loop that also kept aborting both stylesheet
-  // loads. Ranks are ordered once by a bounded pass in coffee-widget-final.js.
   css.dataset.mcOrder = '10';
   document.body.appendChild(css);
 
@@ -96,9 +92,6 @@
   }
 
   function renderOwner() {
-    // coffee-owner-brand.js builds the roastery's own page. When it is present
-    // this generic version would only paint a page that gets replaced a frame
-    // later, so it stands down.
     if (window.__MCB_OWNER__) return;
     const target = ownerTarget();
     if (!target || target.dataset.releaseOwner === 'true' || target.dataset.mcbPage === 'true') return;
@@ -129,12 +122,15 @@
     }));
   }
 
+  /* Jolka's accepted chat hierarchy is welcome conversation first, then the
+     optional picker handoff. The previous release observer continually moved
+     the handoff back above the chat and undid jolka-chat-flow.js. */
   function fixJolkaFlow() {
     if (normalized !== 'jolka') return;
     const chatScreen = document.querySelector('#chatScreen');
     const entry = document.querySelector('#entry');
     const chat = document.querySelector('#chat');
-    if (chatScreen && entry && chat && entry.nextElementSibling !== chat) chatScreen.insertBefore(entry, chat);
+    if (chatScreen && entry && chat && chat.nextElementSibling !== entry) chatScreen.insertBefore(chat, entry);
   }
 
   function cleanResultLabels() {
@@ -161,12 +157,8 @@
   window.fetch = async (input, init) => {
     const url = typeof input === 'string' ? input : input?.url || '';
     if (!(url === '/api/chat' || url.endsWith('/api/chat'))) return upstreamFetch(input, init);
-    let timer;
     try {
-      return await Promise.race([
-        upstreamFetch(input, init),
-        new Promise((_, reject) => { timer = setTimeout(() => reject(new Error('coffee-chat-timeout')), 5200); })
-      ]);
+      return await upstreamFetch(input, init);
     } catch (error) {
       let text = '';
       try {
@@ -181,8 +173,6 @@
       else if (/filter|v60|ovoc|sviež/.test(text)) reply = 'Na filter sa dá ísť jemnejším aj ovocnejším smerom. Vo Výbere kávy to zúžime podľa toho, akú chuť chcete v šálke.';
       else if (/bez\s*kofe|decaf|večer/.test(text)) reply = 'Ak hľadáte kávu bez kofeínu, poradca vás nasmeruje na vhodnú voľbu z ponuky. Stačí povedať, ako ju pripravujete a akú chuť máte radi.';
       return new Response(JSON.stringify({ reply, fallback:true }), { status:200, headers:{ 'content-type':'application/json; charset=utf-8', 'cache-control':'no-store' } });
-    } finally {
-      clearTimeout(timer);
     }
   };
 
