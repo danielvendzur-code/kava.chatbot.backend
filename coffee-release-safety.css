@@ -45,6 +45,10 @@ html body[data-coffee-final="diamonds"] #chatScreen .chat-messages,
 html body[data-coffee-final="vitazov"] #chatScreen .chat {
   margin-top: 0 !important;
 }
+/* Keep the welcome bubble visually attached to the Kaffa selection CTA. */
+html body[data-coffee-final="kaffa"] .kf-chat-seed {
+  gap: 2px !important;
+}
 
 /* Concept always uses a real sliding thumb. Some older layers hid it on the
    tablet breakpoint, which made the switch appear as two static buttons. */
@@ -69,7 +73,7 @@ html body[data-coffee-final="concept"] #modeSwitch .mode__indicator {
   transition: transform .34s cubic-bezier(.22,.8,.3,1) !important;
 }
 html body[data-coffee-final="concept"] #modeSwitch.mode.is-advisor .mode__indicator {
-  transform: translateX(100%) !important;
+  transform: translateX(calc(100% + 8px)) !important;
 }
 html body[data-coffee-final="concept"] #modeSwitch .mode__button {
   position: relative !important;
