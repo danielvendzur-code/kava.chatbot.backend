@@ -1,7 +1,13 @@
 /* Last release safety rules: never dim a finished recommendation. */
-html body.mcw-on .mcw-thinking {
+html body.mcw-on .mcw-thinking,
+html body.mcw-on .mcw-thinking > *,
+html body.mcw-on .mcw-thinking .result-view,
+html body.mcw-on .mcw-thinking .kf-result,
+html body.mcw-on .mcw-thinking .result,
+html body.mcw-on .mcw-thinking .result-main {
   display: block !important;
   opacity: 1 !important;
+  filter: none !important;
   pointer-events: auto !important;
   transition: none !important;
 }
@@ -21,9 +27,7 @@ body[data-coffee-final="concept"] .progress-back:disabled {
   color: #67544c !important;
 }
 
-/* Keep the first message/selection CTA at the top of the conversation. Older
-   brand layers used auto margins/end alignment and could leave a 250–330 px
-   empty band above the first useful content on mobile. */
+/* Keep useful chat content at the top. */
 html body[data-coffee-final="kaffa"] .kf-messages,
 html body[data-coffee-final="kaffa"] .kf-chat-seed,
 html body[data-coffee-final="concept"] #chatScreen .chat,
@@ -42,12 +46,40 @@ html body[data-coffee-final="vitazov"] #chatScreen .chat {
   margin-top: 0 !important;
 }
 
-/* 481–640px is still a floating tablet-size widget. Historic mobile rules used
-   inset:0/full-screen here and visibly cut the top of Kaffa and Concept. Full
-   screen begins only at true phone widths. */
+/* Concept always uses a real sliding thumb. Some older layers hid it on the
+   tablet breakpoint, which made the switch appear as two static buttons. */
+html body[data-coffee-final="concept"] #modeSwitch.mode {
+  position: relative !important;
+  overflow: hidden !important;
+}
+html body[data-coffee-final="concept"] #modeSwitch .mode__indicator {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: absolute !important;
+  z-index: 0 !important;
+  left: 4px !important;
+  top: 4px !important;
+  bottom: 4px !important;
+  width: calc(50% - 4px) !important;
+  height: auto !important;
+  border-radius: 999px !important;
+  background: #c74a32 !important;
+  transform: translateX(0) !important;
+  transition: transform .34s cubic-bezier(.22,.8,.3,1) !important;
+}
+html body[data-coffee-final="concept"] #modeSwitch.mode.is-advisor .mode__indicator {
+  transform: translateX(100%) !important;
+}
+html body[data-coffee-final="concept"] #modeSwitch .mode__button {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* 481–640px is still a floating tablet-size widget. Full screen begins only
+   on actual phone widths; JS reinforces this with inline-important geometry. */
 @media (min-width:481px) and (max-width:640px) {
   html body[data-coffee-final="kaffa"] .kf-panel {
-    inset: auto 12px 12px auto !important;
     top: auto !important;
     left: auto !important;
     right: 12px !important;
@@ -59,7 +91,6 @@ html body[data-coffee-final="vitazov"] #chatScreen .chat {
     border-radius: 28px !important;
   }
   html body[data-coffee-final="concept"] #widget.widget {
-    inset: auto 12px 12px auto !important;
     top: auto !important;
     left: auto !important;
     right: 12px !important;
@@ -72,8 +103,30 @@ html body[data-coffee-final="vitazov"] #chatScreen .chat {
   }
 }
 
-/* Jolka is the photographic reference. A historic shared rule won the cascade
-   and shrank the card imagery to ~77 rendered px on tablet. */
+/* Jolka: welcome bubble first, then the optional picker card. On the untouched
+   chat the message block is content-height instead of consuming the whole flex
+   remainder; after a user message the card disappears and chat grows normally. */
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat {
+  order: -30 !important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat:not(:has(.msg--user)) {
+  flex: 0 0 auto !important;
+  min-height: 0 !important;
+  overflow: visible !important;
+  justify-content: flex-start !important;
+  padding-top: 10px !important;
+  padding-bottom: 4px !important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #entry {
+  order: -20 !important;
+  margin-top: 8px !important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat:has(.msg--user) {
+  flex: 1 1 auto !important;
+  overflow-y: auto !important;
+}
+
+/* Jolka is the photographic reference. */
 @media (min-width:481px) {
   html body[data-coffee-final="jolka"] #widget .option__visual {
     height: 148px !important;
@@ -87,8 +140,7 @@ html body[data-coffee-final="vitazov"] #chatScreen .chat {
   }
 }
 
-/* Preserve the intended Concept orange→blue brand interaction even against
-   older high-specificity launcher rules. */
+/* Concept launcher: orange base, blue hover. */
 html body[data-coffee-final="concept"] #openWidget.launcher__button {
   background: #df6345 !important;
   border-color: #f2aa95 !important;
@@ -109,13 +161,11 @@ html body[data-coffee-final="vitazov"] .widget-brand img.cfr-vitazov-header-logo
   object-position: left center !important;
 }
 
-/* Diamonds switch is deliberately the same large control as the other demos. */
 html body[data-coffee-final="diamonds"] #widget .mode-switch {
   height: 58px !important;
   min-height: 58px !important;
 }
 
-/* Keep the complete first Victory decision in the mobile viewport. */
 @media (max-width:480px) {
   html body[data-coffee-final="vitazov"] #advisorBody .option {
     height: 118px !important;
@@ -128,7 +178,6 @@ html body[data-coffee-final="diamonds"] #widget .mode-switch {
   }
 }
 
-/* Header actions must stay visible on the dark brand bars. */
 html body[data-coffee-final="vitazov"] .widget-actions .icon-button,
 html body[data-coffee-final="jolka"] .widget__actions .icon-button,
 html body[data-coffee-final="jolka"] .widget-actions .icon-button {
