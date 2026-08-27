@@ -247,7 +247,7 @@ test('Kaffa brand and controls are readable and Victory composer stays polished'
   expect(inputFont).toBeGreaterThanOrEqual(13);
 });
 
-test('Jolka keeps coffee selection at the top, uncropped badge and softened header', async ({ page }) => {
+test('Jolka keeps the welcome message above coffee selection, uncropped badge and softened header', async ({ page }) => {
   const jolka = demos.find(item => item.slug === 'jolka');
   await openDemo(page, jolka, { width:390, height:844 });
   await page.locator(jolka.launcher).click();
@@ -266,7 +266,7 @@ test('Jolka keeps coffee selection at the top, uncropped badge and softened head
   await expect(entry).toBeVisible();
   const entryBox = await entry.boundingBox();
   const chatBox = await chat.boundingBox();
-  expect(entryBox.y).toBeLessThan(chatBox.y + 2);
+  expect(chatBox.y).toBeLessThan(entryBox.y);
   await page.locator(jolka.advisor).click();
   for (let i = 0; i < 4; i += 1) {
     await page.locator('#advisor .option').filter({ visible:true }).first().click();
