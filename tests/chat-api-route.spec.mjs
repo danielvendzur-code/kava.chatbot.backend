@@ -13,7 +13,8 @@ const demos = [
 async function waitForCompleteRelease(page) {
   await page.waitForFunction(() =>
     document.documentElement.dataset.coffeeApiRoute === 'stable' &&
-    document.documentElement.dataset.coffeeReleaseFinal === '2026-08-27'
+    document.documentElement.dataset.coffeeReleaseFinal === '2026-08-27' &&
+    document.documentElement.dataset.coffeeReleaseReady === 'true'
   );
 }
 
@@ -25,11 +26,13 @@ for (const [slug, path] of demos) {
       stableType: typeof window.__COFFEE_STABLE_FETCH__,
       sameFunction: window.fetch === window.__COFFEE_STABLE_FETCH__,
       release: document.documentElement.dataset.coffeeReleaseFinal,
+      ready: document.documentElement.dataset.coffeeReleaseReady,
       apiRoute: document.documentElement.dataset.coffeeApiRoute
     }));
     expect(state.stableType).toBe('function');
     expect(state.sameFunction).toBe(true);
     expect(state.release).toBe('2026-08-27');
+    expect(state.ready).toBe('true');
     expect(state.apiRoute).toBe('stable');
   });
 }
