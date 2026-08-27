@@ -133,12 +133,11 @@
     const manifest = manifests[slug];
     await loadAll(manifest.styles, addStyle);
     await loadAll(commonScripts, addScript);
+    await addScript('/coffee-api-stable.js');
     await loadAll(manifest.scripts, addScript);
     if (slug !== 'praziarnicka') await loadAll(finalScripts, addScript);
     await addScript('/coffee-usability-release.js');
 
-    // Obsolete review-pass layers are intentionally omitted. They predate the
-    // current owner-approved geometry and were re-injecting old logos/sprites.
     await addStyle('/coffee-final-tune.css');
     await addStyle('/coffee-final-qa.css');
     await addScript('/coffee-final-tune.js');
@@ -146,7 +145,6 @@
     await addStyle('/coffee-final-polish-2026-08-27.css');
     await addScript('/coffee-final-polish-2026-08-27.js');
 
-    // One authoritative layer is loaded last and owns the final release state.
     await addStyle('/coffee-release-final.css');
     await addScript('/coffee-release-final.js');
   };
