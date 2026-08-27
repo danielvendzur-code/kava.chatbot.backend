@@ -68,6 +68,18 @@
 
   function polishConcept() {
     if (slug !== 'concept') return;
+
+    const launcher = document.querySelector('#openWidget.launcher__button');
+    if (launcher && !launcher.querySelector('.cfp-concept-launcher-logo')) {
+      launcher.replaceChildren(makeImg('/brand/concept-official-logo.png', 'cfp-concept-launcher-logo', ''));
+    }
+
+    const entry = document.querySelector('#openAdvisor');
+    if (entry) {
+      const media = entry.querySelector('.advisor-entry__mark');
+      if (media) ensureImage(media, '/assets/concept/prep-lever.webp', 'cfp-concept-entry-photo');
+    }
+
     document.querySelectorAll('.message__avatar').forEach((avatar) => {
       ensureImage(avatar, '/brand/concept-official-logo.png', 'cfp-concept-chat-logo');
     });
