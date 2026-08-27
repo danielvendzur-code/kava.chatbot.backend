@@ -47,7 +47,10 @@ html body[data-coffee-final="vitazov"] #chatScreen .chat {
 }
 /* Keep the welcome bubble visually attached to the Kaffa selection CTA. */
 html body[data-coffee-final="kaffa"] .kf-chat-seed {
-  gap: 2px !important;
+  gap: 0 !important;
+}
+html body[data-coffee-final="kaffa"] .kf-chat-seed > .kf-advisor-entry + .kf-message-row {
+  margin-top: -6px !important;
 }
 
 /* Concept always uses a real sliding thumb. Some older layers hid it on the
@@ -78,6 +81,11 @@ html body[data-coffee-final="concept"] #modeSwitch.mode.is-advisor .mode__indica
 html body[data-coffee-final="concept"] #modeSwitch .mode__button {
   position: relative !important;
   z-index: 1 !important;
+}
+/* Recommendation title remains a primary result, including tablet. */
+html body[data-coffee-final="concept"] .result-main__copy h3 {
+  font-size: 24px !important;
+  line-height: 1.06 !important;
 }
 
 /* 481–640px is still a floating tablet-size widget. Full screen begins only
