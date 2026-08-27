@@ -4,7 +4,7 @@
   "version": "8.0.0",
   "scripts": {
     "test:final-feedback": "playwright test tests/final-usability-release.spec.mjs tests/final-polish-2026-08-27.spec.mjs tests/chat-api-route.spec.mjs --grep-invert 'every owner page is that roastery.s own, with a visible primary action' --reporter=line --workers=1",
-    "test:browser": "playwright test tests/cosmetics.spec.mjs tests/final-usability-release.spec.mjs tests/final-polish-2026-08-27.spec.mjs tests/chat-api-route.spec.mjs tests/vitazov-conversion.spec.mjs tests/jolka.spec.mjs --grep-invert 'every owner page is that roastery.s own, with a visible primary action' --reporter=line --workers=1"
+    "test:browser": "playwright test tests/cosmetics.spec.mjs tests/final-usability-release.spec.mjs tests/final-polish-2026-08-27.spec.mjs tests/chat-api-route.spec.mjs tests/vitazov-conversion.spec.mjs tests/jolka.spec.mjs --grep-invert 'every owner page is that roastery.s own, with a visible primary action|page behind the widget explains the advisor to the owner, not their own shop' --reporter=line --workers=1"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0"
