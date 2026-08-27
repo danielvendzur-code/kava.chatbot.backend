@@ -136,9 +136,11 @@
     await loadAll(manifest.scripts, addScript);
     if (slug !== 'praziarnicka') await loadAll(finalScripts, addScript);
     await addScript('/coffee-usability-release.js');
-    await addStyle('/coffee-review-pass.css');
-    await addStyle('/coffee-review-corrections.css');
-    await addScript('/coffee-review-pass.js');
+
+    // Legacy review-pass layers are intentionally not loaded here. They were
+    // written before the current owner-approved layout and were re-injecting
+    // old launcher/header marks and the Víťazov sprite after the final runtime,
+    // causing visible regressions and a MutationObserver rewrite loop.
     await addStyle('/coffee-final-tune.css');
     await addStyle('/coffee-final-qa.css');
     await addScript('/coffee-final-tune.js');
