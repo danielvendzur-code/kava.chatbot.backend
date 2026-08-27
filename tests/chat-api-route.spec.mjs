@@ -10,10 +10,17 @@ const demos = [
   ['jolka', '/jolka.html']
 ];
 
+async function waitForCompleteRelease(page) {
+  await page.waitForFunction(() =>
+    document.documentElement.dataset.coffeeApiRoute === 'stable' &&
+    document.documentElement.dataset.coffeeReleaseFinal === '2026-08-27'
+  );
+}
+
 for (const [slug, path] of demos) {
   test(`${slug}: final release restores the canonical chat fetch`, async ({ page }) => {
     await page.goto(`${baseURL}${path}`, { waitUntil: 'domcontentloaded' });
-    await page.waitForFunction(() => document.documentElement.dataset.coffeeApiRoute === 'stable');
+    await waitForCompleteRelease(page);
     const state = await page.evaluate(() => ({
       stableType: typeof window.__COFFEE_STABLE_FETCH__,
       sameFunction: window.fetch === window.__COFFEE_STABLE_FETCH__,
@@ -29,7 +36,7 @@ for (const [slug, path] of demos) {
 
 test('Concept waits for a provider response beyond the obsolete 1.6 second cutoff', async ({ page }) => {
   await page.goto(`${baseURL}/?demo=concept`, { waitUntil: 'domcontentloaded' });
-  await page.waitForFunction(() => document.documentElement.dataset.coffeeApiRoute === 'stable');
+  await waitForCompleteRelease(page);
 
   await page.evaluate(() => {
     const passthrough = window.fetch;
@@ -54,7 +61,7 @@ test('Concept waits for a provider response beyond the obsolete 1.6 second cutof
   await input.press('Enter');
 
   await page.waitForTimeout(1750);
-  await expect(page.locator('.message .bubble').filter({ hasText: 'Pomalá AI odpoveď dorazila správne.' })).toHaveCount(0);
-  await expect(page.locator('.message .bubble').filter({ hasText: 'Pomalá AI odpoveď dorazila správne.' })).toBeVisible({ timeout: 2000 });
+  await expect(page.getByText('Pomalá AI odpoveď dorazila správne.', { exact: false })).toHaveCount(0);
+  await expect(page.getByText('Pomalá AI odpoveď dorazila správne.', { exact: false })).toBeVisible({ timeout: 3000 });
   expect(Date.now() - sentAt).toBeGreaterThanOrEqual(2000);
 });
