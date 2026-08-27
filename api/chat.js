@@ -130,6 +130,7 @@ function deterministicReply(demo,latest){
 }
 
 export default async function handler(req,res){
+  const startedAt=Date.now();
   setCors(req,res);
   res.setHeader('Cache-Control','no-store');
   if(req.method==='OPTIONS') return res.status(204).end();
@@ -137,7 +138,8 @@ export default async function handler(req,res){
 
   let body={};
   try{body=typeof req.body==='string'?JSON.parse(req.body):(req.body||{});}catch{return res.status(400).json({error:'Invalid body'});}
-  const demo=DEMOS[String(body.demoId||'')];
+  const demoId=String(body.demoId||'');
+  const demo=DEMOS[demoId];
   if(!demo) return res.status(400).json({error:'Unknown demo'});
   const messages=Array.isArray(body.messages)?body.messages
     .filter((m)=>m&&(m.role==='user'||m.role==='assistant'))
@@ -146,9 +148,15 @@ export default async function handler(req,res){
     .filter((m)=>m.content.trim()):[];
   const latest=messages.filter((m)=>m.role==='user').at(-1)?.content||'';
   if(!latest) return res.status(400).json({error:'Missing user message'});
-  const fallback=()=>res.status(200).json({reply:deterministicReply(demo,latest),fallback:true});
 
-  if(!ANTHROPIC_API_KEY) return fallback();
+  const fallback=(reason='fallback')=>{
+    const latencyMs=Date.now()-startedAt;
+    res.setHeader('X-Coffee-Reply-Source','fallback');
+    console.info('coffee-chat-result',{demoId,source:'fallback',reason,latencyMs});
+    return res.status(200).json({reply:deterministicReply(demo,latest),fallback:true});
+  };
+
+  if(!ANTHROPIC_API_KEY) return fallback('missing_api_key');
 
   const system=[
     `Ste stručný online kávový poradca pre ${demo.brand}.`,
@@ -169,14 +177,23 @@ export default async function handler(req,res){
       headers:{'content-type':'application/json','x-api-key':ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01'},
       body:JSON.stringify({model:MODEL,max_tokens:170,temperature:0,system,messages})
     });
-    if(!apiResponse.ok){console.error('Anthropic API error',apiResponse.status,await apiResponse.text());return fallback();}
+    if(!apiResponse.ok){
+      console.error('coffee-chat-provider-error',{demoId,status:apiResponse.status,latencyMs:Date.now()-startedAt});
+      return fallback(`provider_${apiResponse.status}`);
+    }
     const data=await apiResponse.json();
     const reply=Array.isArray(data.content)?data.content.filter((b)=>b.type==='text').map((b)=>b.text).join('').trim():'';
     const clean=reply.replace(/[\u002a_\u0060#]/g,'').replace(/\s+/g,' ').trim();
-    if(!clean) return fallback();
+    if(!clean) return fallback('empty_provider_reply');
+
+    const latencyMs=Date.now()-startedAt;
+    const inputTokens=Number.isFinite(data.usage?.input_tokens)?data.usage.input_tokens:null;
+    const outputTokens=Number.isFinite(data.usage?.output_tokens)?data.usage.output_tokens:null;
+    res.setHeader('X-Coffee-Reply-Source','anthropic');
+    console.info('coffee-chat-result',{demoId,source:'anthropic',model:MODEL,latencyMs,inputTokens,outputTokens});
     return res.status(200).json({reply:clean});
   }catch(error){
-    console.error('coffee chat provider error',error);
-    return fallback();
+    console.error('coffee-chat-provider-exception',{demoId,latencyMs:Date.now()-startedAt,name:error?.name||'Error'});
+    return fallback('provider_exception');
   }
 }
