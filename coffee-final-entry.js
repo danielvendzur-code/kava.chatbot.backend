@@ -137,16 +137,18 @@
     if (slug !== 'praziarnicka') await loadAll(finalScripts, addScript);
     await addScript('/coffee-usability-release.js');
 
-    // Legacy review-pass layers are intentionally not loaded here. They were
-    // written before the current owner-approved layout and were re-injecting
-    // old launcher/header marks and the Víťazov sprite after the final runtime,
-    // causing visible regressions and a MutationObserver rewrite loop.
+    // Obsolete review-pass layers are intentionally omitted. They predate the
+    // current owner-approved geometry and were re-injecting old logos/sprites.
     await addStyle('/coffee-final-tune.css');
     await addStyle('/coffee-final-qa.css');
     await addScript('/coffee-final-tune.js');
     await addScript('/coffee-release-contract.js');
     await addStyle('/coffee-final-polish-2026-08-27.css');
     await addScript('/coffee-final-polish-2026-08-27.js');
+
+    // One authoritative layer is loaded last and owns the final release state.
+    await addStyle('/coffee-release-final.css');
+    await addScript('/coffee-release-final.js');
   };
 
   boot().catch((error) => {
