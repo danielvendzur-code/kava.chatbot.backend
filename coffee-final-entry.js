@@ -143,6 +143,8 @@
     await addStyle('/coffee-final-qa.css');
     await addScript('/coffee-final-tune.js');
     await addScript('/coffee-release-contract.js');
+    await addStyle('/coffee-last-mile.css');
+    await addScript('/coffee-last-mile.js');
   };
 
   boot().catch((error) => {
