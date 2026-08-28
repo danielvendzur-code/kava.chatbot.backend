@@ -104,6 +104,8 @@
     await addStyle('/coffee-user-review-final.css');
     await addStyle('/coffee-user-review-dom-fix.css');
     await addScript('/coffee-release-ready.js');
+    await addStyle('/coffee-six-audit-final.css');
+    await addScript('/coffee-six-audit-final.js');
   };
 
   boot().catch((error) => {
