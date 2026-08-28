@@ -1,159 +1,133 @@
 (() => {
   'use strict';
 
+  const slug = () => document.body.dataset.coffeeFinal || String(window.COFFEE_DEMO_SLUG || '').replace('-v13', '');
   const setImportant = (node, property, value) => node?.style?.setProperty(property, value, 'important');
 
-  function enforceTabletPanel() {
-    const width = window.innerWidth;
-    if (width < 481 || width > 640) return;
-    const slug = document.body.dataset.coffeeFinal;
-    if (slug === 'kaffa') {
-      const panel = document.querySelector('.kf-panel');
-      if (!panel) return;
-      setImportant(panel, 'position', 'absolute');
-      setImportant(panel, 'inset', 'auto 12px 12px auto');
-      setImportant(panel, 'top', 'auto');
-      setImportant(panel, 'left', 'auto');
-      setImportant(panel, 'right', '12px');
-      setImportant(panel, 'bottom', '12px');
-      setImportant(panel, 'width', 'min(452px, calc(100vw - 24px))');
-      setImportant(panel, 'max-width', '452px');
-      setImportant(panel, 'height', 'min(650px, calc(100dvh - 24px))');
-      setImportant(panel, 'max-height', '650px');
-      setImportant(panel, 'border-radius', '28px');
-    }
-    if (slug === 'concept') {
-      const panel = document.querySelector('#widget.widget');
-      if (!panel) return;
-      setImportant(panel, 'position', 'fixed');
-      setImportant(panel, 'inset', 'auto 12px 12px auto');
-      setImportant(panel, 'top', 'auto');
-      setImportant(panel, 'left', 'auto');
-      setImportant(panel, 'right', '12px');
-      setImportant(panel, 'bottom', '12px');
-      setImportant(panel, 'width', 'min(456px, calc(100vw - 24px))');
-      setImportant(panel, 'max-width', '456px');
-      setImportant(panel, 'height', 'min(684px, calc(100dvh - 24px))');
-      setImportant(panel, 'max-height', '684px');
-      setImportant(panel, 'border-radius', '28px');
-    }
-  }
-
   function settleJolkaOrder() {
-    if (document.body.dataset.coffeeFinal !== 'jolka') return;
+    if (slug() !== 'jolka') return;
     const screen = document.querySelector('#chatScreen');
     const chat = document.querySelector('#chat');
     const entry = document.querySelector('#entry');
     if (screen && chat && entry && chat.nextElementSibling !== entry) screen.insertBefore(chat, entry);
   }
 
-  function settleKaffaChat() {
-    if (document.body.dataset.coffeeFinal !== 'kaffa') return;
-    const seed = document.querySelector('.kf-messages:not(.has-thread) .kf-chat-seed');
-    if (seed) {
-      /* An older Kaffa layer stretched the untouched seed to 100% height and
-         pushed the welcome row down with margin-top:auto. That made a large empty
-         hole appear between "Nájsť svoju kávu" and the first bot message. */
-      setImportant(seed, 'min-height', '0');
-      setImportant(seed, 'height', 'auto');
-      setImportant(seed, 'flex', '0 0 auto');
-      setImportant(seed, 'gap', '6px');
-
-      const botRow = seed.querySelector('.kf-message-row--bot') ||
-        [...seed.querySelectorAll('.kf-message-row')].find((row) => row.querySelector('.kf-message.bot'));
-      if (botRow) setImportant(botRow, 'margin-top', '0');
-    }
-
-    /* Grid items with width:100% can still overflow their padded grid area when
-       old Kaffa layers leave intrinsic/content-box sizing behind. Let the grid
-       stretch the footer and composer instead of forcing a percentage width. */
-    const footer = document.querySelector('.kf-chat-footer');
-    const composer = document.querySelector('.kf-composer');
-    if (footer) {
-      setImportant(footer, 'box-sizing', 'border-box');
-      setImportant(footer, 'width', 'auto');
-      setImportant(footer, 'min-width', '0');
-      setImportant(footer, 'max-width', 'none');
-      setImportant(footer, 'justify-self', 'stretch');
-    }
-    if (composer) {
-      setImportant(composer, 'box-sizing', 'border-box');
-      setImportant(composer, 'width', 'auto');
-      setImportant(composer, 'min-width', '0');
-      setImportant(composer, 'max-width', 'none');
-      setImportant(composer, 'justify-self', 'stretch');
-      setImportant(composer, 'align-self', 'stretch');
-    }
-  }
-
   function settleFinishedResults() {
-    /* The historic shared polish added a temporary "Premýšľam…" note. Some
-       brand runtimes repaint the result during that timeout, which could leave
-       the note visible beside an already finished recommendation. A finished
-       result must never look as if it is still loading. */
     document.querySelectorAll('.mcw-thinking-note').forEach((note) => note.remove());
     document.querySelectorAll('.mcw-thinking').forEach((result) => result.classList.remove('mcw-thinking'));
   }
 
-  function settleLauncherMarks() {
-    const slug = document.body.dataset.coffeeFinal;
-
-    if (slug === 'concept') {
-      const crop = document.querySelector('#openWidget .cfr-concept-launcher-crop');
-      const img = crop?.querySelector('img');
-      if (crop) {
-        setImportant(crop, 'inset', '6px');
-        setImportant(crop, 'display', 'grid');
-        setImportant(crop, 'place-items', 'center');
-        setImportant(crop, 'overflow', 'visible');
-        setImportant(crop, 'background', 'transparent');
-      }
-      if (img) {
-        setImportant(img, 'width', '52px');
-        setImportant(img, 'height', 'auto');
-        setImportant(img, 'max-width', '52px');
-        setImportant(img, 'max-height', '46px');
-        setImportant(img, 'object-fit', 'contain');
-        setImportant(img, 'transform', 'none');
-        setImportant(img, 'filter', 'brightness(0) invert(1)');
-      }
+  function settleKaffa() {
+    if (slug() !== 'kaffa') return;
+    const seed = document.querySelector('.kf-messages:not(.has-thread) .kf-chat-seed');
+    if (seed) {
+      setImportant(seed, 'min-height', '0');
+      setImportant(seed, 'height', 'auto');
+      setImportant(seed, 'flex', '0 0 auto');
+      setImportant(seed, 'gap', '10px');
+      const botRow = seed.querySelector('.kf-message-row--bot') || [...seed.querySelectorAll('.kf-message-row')].find((row) => row.querySelector('.kf-message.bot'));
+      if (botRow) setImportant(botRow, 'margin-top', '0');
     }
-
-    if (slug === 'vitazov') {
-      const launcher = document.querySelector('#openWidget.launcher__button');
-      const img = launcher?.querySelector('.cfr-vitazov-launcher-logo');
-      if (launcher) launcher.removeAttribute('data-mcw-mark');
-      if (img) {
-        setImportant(img, 'display', 'block');
-        setImportant(img, 'visibility', 'visible');
-        setImportant(img, 'opacity', '1');
-        setImportant(img, 'position', 'relative');
-        setImportant(img, 'z-index', '2');
-        setImportant(img, 'width', '54px');
-        setImportant(img, 'height', 'auto');
-        setImportant(img, 'max-width', '54px');
-        setImportant(img, 'max-height', '38px');
-        setImportant(img, 'object-fit', 'contain');
-        setImportant(img, 'filter', 'brightness(0)');
-      }
-      launcher?.querySelectorAll('.launcher__status').forEach((node) => node.remove());
+    const entry = document.querySelector('.kf-advisor-entry');
+    if (entry) setImportant(entry, 'align-items', 'center');
+    const copy = document.querySelector('.kf-advisor-entry__copy');
+    if (copy) {
+      setImportant(copy, 'display', 'grid');
+      setImportant(copy, 'align-content', 'center');
+      setImportant(copy, 'align-self', 'stretch');
     }
+    const footer = document.querySelector('.kf-chat-footer');
+    const composer = document.querySelector('.kf-composer');
+    [footer, composer].forEach((node) => {
+      if (!node) return;
+      setImportant(node, 'box-sizing', 'border-box');
+      setImportant(node, 'min-width', '0');
+      setImportant(node, 'max-width', 'none');
+      setImportant(node, 'justify-self', 'stretch');
+      setImportant(node, 'align-self', 'stretch');
+    });
+    if (footer) setImportant(footer, 'width', '100%');
+    if (composer) setImportant(composer, 'width', '100%');
+  }
 
-    if (slug === 'diamonds') {
-      const img = document.querySelector('#launcherButton img');
-      if (img) {
-        setImportant(img, 'width', '48px');
-        setImportant(img, 'height', 'auto');
-        setImportant(img, 'max-width', '48px');
-        setImportant(img, 'max-height', '42px');
-        setImportant(img, 'object-fit', 'contain');
-        setImportant(img, 'filter', 'brightness(0) invert(1)');
-      }
+  function settlePraziarnicka() {
+    if (slug() !== 'praziarnicka') return;
+    const entry = document.querySelector('#pz13-advisor-entry');
+    if (entry) {
+      setImportant(entry, 'margin', '0');
+      setImportant(entry, 'transform', 'none');
+      setImportant(entry, 'position', 'relative');
+      setImportant(entry, 'z-index', '0');
     }
   }
 
+  function settleConcept() {
+    if (slug() !== 'concept') return;
+    const launcher = document.querySelector('#openWidget.launcher__button');
+    if (launcher && !launcher.querySelector('.cfr-concept-monogram')) {
+      const monogram = document.createElement('span');
+      monogram.className = 'cfr-concept-monogram';
+      monogram.textContent = 'C';
+      monogram.setAttribute('aria-hidden', 'true');
+      launcher.appendChild(monogram);
+    }
+
+    const teaser = document.querySelector('#launcherTeaser');
+    if (teaser) {
+      const title = teaser.querySelector('b');
+      const text = teaser.querySelector('.launcher-teaser__open span');
+      if (title) title.textContent = 'Pomôžeme vám vybrať?';
+      if (text) text.textContent = 'Odpovedzte na štyri krátke otázky.';
+    }
+
+    const headerLogo = document.querySelector('.concept-widget-logo');
+    if (headerLogo) {
+      headerLogo.src = '/brand/concept-official-logo.png';
+      headerLogo.alt = 'Concept Coffee Roasters';
+    }
+  }
+
+  function settleVitazov() {
+    if (slug() !== 'vitazov') return;
+    const headerLogo = document.querySelector('.widget-brand .cfr-vitazov-header-logo, .widget-brand .kv-widget-logo');
+    if (headerLogo) {
+      setImportant(headerLogo, 'width', '118px');
+      setImportant(headerLogo, 'height', '50px');
+      setImportant(headerLogo, 'max-width', '118px');
+      setImportant(headerLogo, 'max-height', '50px');
+      setImportant(headerLogo, 'object-fit', 'contain');
+      setImportant(headerLogo, 'filter', 'none');
+    }
+
+    const entry = document.querySelector('#openAdvisor');
+    const media = entry?.firstElementChild;
+    if (media) {
+      setImportant(media, 'width', '72px');
+      setImportant(media, 'height', '64px');
+    }
+
+    const chatBottom = document.querySelector('#chatScreen .chat-bottom');
+    if (chatBottom) {
+      setImportant(chatBottom, 'width', '100%');
+      setImportant(chatBottom, 'box-sizing', 'border-box');
+    }
+  }
+
+  function settleDiamonds() {
+    if (slug() !== 'diamonds') return;
+    document.querySelectorAll('#advisorContent .answer-card').forEach((card) => {
+      setImportant(card, 'grid-template-columns', '1fr');
+      setImportant(card, 'opacity', '1');
+    });
+    document.querySelectorAll('#advisorContent .answer-photo').forEach((photo) => {
+      setImportant(photo, 'width', '100%');
+      setImportant(photo, 'min-width', '0');
+    });
+    document.querySelectorAll('#advisorContent .answer-copy, #advisorContent .answer-copy b, #advisorContent .answer-copy small').forEach((node) => setImportant(node, 'opacity', '1'));
+  }
+
   function settleOwnerPrice() {
-    if (document.body.dataset.coffeeFinal !== 'concept' || window.innerWidth > 480) return;
+    if (slug() !== 'concept' || window.innerWidth > 480) return;
     const row = document.querySelector('.mcb-plan-price');
     if (!row) return;
     setImportant(row, 'flex-wrap', 'nowrap');
@@ -163,35 +137,44 @@
       setImportant(node, 'font-size', '11px');
       setImportant(node, 'white-space', 'nowrap');
     });
-    row.querySelectorAll('i').forEach((node) => {
-      setImportant(node, 'font-size', '12px');
-      setImportant(node, 'padding', '0 1px');
-    });
   }
 
   function settle() {
-    enforceTabletPanel();
     settleJolkaOrder();
-    settleKaffaChat();
     settleFinishedResults();
-    settleLauncherMarks();
+    settlePraziarnicka();
+    settleKaffa();
+    settleConcept();
+    settleVitazov();
+    settleDiamonds();
     settleOwnerPrice();
   }
 
-  /* Opening/mode scripts from older brand layers can rewrite geometry after
-     initial boot. Reinforce only the final contracts after those interactions;
-     phone full-screen mode itself remains untouched. */
+  /* Concept had a real user-visible failure where the branded launcher rendered
+     but an inherited layer prevented the panel from opening. Keep the native
+     listener, then recover only if it did not open the dialog. */
   document.addEventListener('click', (event) => {
-    if (!event.target.closest('#launcher,#launcherButton,#openWidget,#open,.kf-switch,.mode,#modeSwitch')) return;
-    requestAnimationFrame(() => requestAnimationFrame(settle));
-    setTimeout(settle, 90);
-    setTimeout(settle, 260);
-    setTimeout(settle, 720);
-  }, true);
-  window.addEventListener('resize', settle, { passive:true });
+    const conceptTrigger = event.target.closest('#openWidget,#heroOpen,#openFromTeaser');
+    if (slug() === 'concept' && conceptTrigger) {
+      setTimeout(() => {
+        const widget = document.querySelector('#widget.widget');
+        if (!widget?.classList.contains('is-open') && typeof window.ConceptSeasonalApp?.openWidget === 'function') {
+          window.ConceptSeasonalApp.openWidget({ focus: false });
+        }
+        settle();
+      }, 0);
+    }
 
+    if (event.target.closest('#launcher,#launcherButton,#openWidget,#open,.kf-switch,.mode,#modeSwitch,#openAdvisor')) {
+      requestAnimationFrame(() => requestAnimationFrame(settle));
+      setTimeout(settle, 100);
+      setTimeout(settle, 320);
+    }
+  }, true);
+
+  window.addEventListener('resize', settle, { passive: true });
   const observer = new MutationObserver(() => requestAnimationFrame(settle));
-  observer.observe(document.body, { subtree:true, childList:true, attributes:true, attributeFilter:['class','aria-hidden'] });
+  observer.observe(document.body, { subtree: true, childList: true, attributes: true, attributeFilter: ['class','aria-hidden'] });
 
   setTimeout(() => {
     settle();
@@ -199,5 +182,5 @@
       settle();
       document.documentElement.dataset.coffeeReleaseReady = 'true';
     }));
-  }, 380);
+  }, 420);
 })();
