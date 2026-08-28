@@ -20,8 +20,13 @@
   function praziarnicka() {
     if (slug() !== 'praziarnicka') return;
     tabletFloat(document.querySelector('#pz13-widget'), 646);
+    const messages = document.querySelector('.pz13-chat__messages');
+    if (messages) setI(messages, 'padding-top', '14px');
     const entry = document.querySelector('#pz13-advisor-entry');
-    if (entry) setI(entry, 'margin', '6px 0 0');
+    if (entry) {
+      setI(entry, 'margin', '0 0 4px');
+      setI(entry, 'transform', 'none');
+    }
   }
 
   function kaffa() {
@@ -41,27 +46,70 @@
     }
   }
 
+  function ensureConceptLauncher() {
+    let launcher = document.querySelector('#openWidget.launcher__button');
+    if (!launcher) {
+      let shell = document.querySelector('#launcher');
+      if (!shell) {
+        shell = document.createElement('div');
+        shell.id = 'launcher';
+        shell.className = 'launcher six-concept-launcher-shell';
+        document.body.appendChild(shell);
+      }
+      launcher = document.createElement('button');
+      launcher.id = 'openWidget';
+      launcher.className = 'launcher__button six-concept-launcher-fallback';
+      launcher.type = 'button';
+      launcher.setAttribute('aria-label', 'Otvoriť kávového poradcu');
+      launcher.setAttribute('aria-expanded', 'false');
+      shell.appendChild(launcher);
+    }
+
+    launcher.querySelectorAll('.cfr-concept-monogram,.cfr-concept-launcher-crop,.launcher__chat-mark').forEach((node) => node.remove());
+    let mark = launcher.querySelector('.six-concept-logo');
+    if (!mark) {
+      mark = document.createElement('span');
+      mark.className = 'six-concept-logo';
+      mark.setAttribute('aria-hidden', 'true');
+      const img = document.createElement('img');
+      img.src = '/brand/concept-official-logo.png';
+      img.alt = '';
+      mark.appendChild(img);
+      launcher.prepend(mark);
+    }
+    if (launcher.dataset.sixConceptOpen !== 'true') {
+      launcher.dataset.sixConceptOpen = 'true';
+      launcher.addEventListener('click', () => {
+        if (typeof window.ConceptSeasonalApp?.openWidget === 'function') {
+          window.ConceptSeasonalApp.openWidget({ focus: true });
+        } else {
+          const widget = document.querySelector('#widget.widget');
+          if (widget) {
+            widget.classList.add('is-open');
+            widget.setAttribute('aria-hidden', 'false');
+          }
+        }
+        launcher.setAttribute('aria-expanded', 'true');
+      });
+    }
+    return launcher;
+  }
+
   function concept() {
     if (slug() !== 'concept') return;
     tabletFloat(document.querySelector('#widget.widget'), 660);
+    ensureConceptLauncher();
 
-    const launcher = document.querySelector('#openWidget.launcher__button');
-    if (launcher) {
-      launcher.querySelectorAll('.cfr-concept-monogram,.cfr-concept-launcher-crop').forEach((node) => node.remove());
-      let mark = launcher.querySelector('.six-concept-logo');
-      if (!mark) {
-        mark = document.createElement('span');
-        mark.className = 'six-concept-logo';
-        mark.setAttribute('aria-hidden', 'true');
-        const img = document.createElement('img');
-        img.src = '/brand/concept-official-logo.png';
-        img.alt = '';
-        mark.appendChild(img);
-        launcher.prepend(mark);
-      }
+    let teaser = document.querySelector('#launcherTeaser');
+    const shell = document.querySelector('#launcher');
+    if (!teaser && shell) {
+      teaser = document.createElement('aside');
+      teaser.id = 'launcherTeaser';
+      teaser.className = 'launcher-teaser six-concept-teaser';
+      teaser.innerHTML = '<button class="launcher-teaser__open" id="openFromTeaser" type="button"><b>Nájdite svoju kávu</b><span>4 otázky · jedno odporúčanie</span></button>';
+      shell.prepend(teaser);
+      teaser.querySelector('#openFromTeaser')?.addEventListener('click', () => ensureConceptLauncher().click());
     }
-
-    const teaser = document.querySelector('#launcherTeaser');
     if (teaser) {
       const title = teaser.querySelector('b');
       const copy = teaser.querySelector('.launcher-teaser__open span');
