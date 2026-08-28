@@ -9,12 +9,8 @@
   ).replace('-v13', '');
   if (!['praziarnicka','jolka','kaffa','concept','vitazov','diamonds'].includes(slug)) return;
 
-  document.documentElement.dataset.coffeeReleaseFinal = '2026-08-27';
+  document.documentElement.dataset.coffeeReleaseFinal = '2026-08-27-stable';
 
-  // Historic coffee-final-tune.js installed a 1.6 s Promise.race around
-  // /api/chat. That could display a local fallback while the Anthropic request
-  // continued in the background and consumed credits. Restore the canonical
-  // production wrapper captured immediately after coffee-api-route.js loaded.
   if (typeof window.__COFFEE_STABLE_FETCH__ === 'function') {
     window.fetch = window.__COFFEE_STABLE_FETCH__;
     document.documentElement.dataset.coffeeApiRoute = 'stable';
@@ -31,10 +27,10 @@
     return img;
   };
 
-  const ensureImg = (host, src, className, alt = '') => {
+  const ensureOnlyImg = (host, src, className, alt = '') => {
     if (!(host instanceof HTMLElement)) return null;
     let img = host.querySelector(`:scope > img.${className}`);
-    if (!img) {
+    if (!img || host.children.length !== 1) {
       img = makeImg(src, className, alt);
       host.replaceChildren(img);
     } else if (img.getAttribute('src') !== src) {
@@ -43,22 +39,12 @@
     return img;
   };
 
-  function conceptCrop(host, className) {
-    if (!(host instanceof HTMLElement)) return;
-    if (host.querySelector(`:scope > .${className}`)) return;
-    const wrap = document.createElement('span');
-    wrap.className = className;
-    wrap.appendChild(makeImg('/brand/concept-official-logo.png', '', ''));
-    host.replaceChildren(wrap);
-    host.dataset.cfLogo = 'concept';
-  }
-
   function polishPraziarnicka() {
     if (slug !== 'praziarnicka') return;
     const entry = document.querySelector('#pz13-advisor-entry');
     if (!entry) return;
     const media = entry.firstElementChild;
-    if (media) ensureImg(media, '/assets/jolka/method/lever.webp', 'cfr-praziarnicka-entry-photo');
+    if (media) ensureOnlyImg(media, '/assets/jolka/method/lever.webp', 'cfr-praziarnicka-entry-photo');
     const title = entry.querySelector('b');
     const note = entry.querySelector('small');
     if (title) title.textContent = 'Nájsť svoju kávu';
@@ -70,58 +56,31 @@
     document.querySelector('.widget__note')?.remove();
   }
 
-  const kaffaPhotos = {
-    espresso:'/assets/kaffa/prep-espresso.webp',
-    automatic:'/assets/kaffa/prep-automatic.webp',
-    filter:'/assets/kaffa/prep-filter.webp',
-    moka:'/assets/kaffa/prep-moka.webp',
-    chocolate:'/assets/kaffa/mokka-hero.webp',
-    balanced:'/assets/kaffa/brew-espresso.webp',
-    fruity:'/assets/kaffa/kamundu-official.webp',
-    adventurous:'/assets/kaffa/wilder-lazo-official.webp',
-    black:'/assets/jolka/method/black.webp',
-    milk:'/assets/jolka/method/milk.webp',
-    classic:'/assets/kaffa/mokka-official.webp',
-    decaf:'/assets/kaffa/decaf-official.jpg'
-  };
-
   function polishKaffa() {
     if (slug !== 'kaffa') return;
-    document.querySelectorAll('.kf-option[data-value]').forEach((option) => {
-      const visual = option.querySelector('.kf-option__visual');
-      const src = kaffaPhotos[option.dataset.value];
-      if (!visual || !src) return;
-      const existing = visual.querySelector(':scope > img.cfr-option-photo');
-      if (existing) {
-        if (existing.getAttribute('src') !== src) existing.src = src;
-        return;
-      }
-      visual.replaceChildren(makeImg(src, 'cfr-option-photo', ''));
+    // Photo nodes are rendered by coffee-final-polish. Remove any legacy hidden
+    // image duplicates so the audit and the user see one real image per card.
+    document.querySelectorAll('.kf-option__visual').forEach((visual) => {
+      const images = [...visual.querySelectorAll(':scope > img')];
+      if (images.length <= 1) return;
+      const keep = images.find((img) => img.classList.contains('cfp-option-photo')) || images.at(-1);
+      images.forEach((img) => { if (img !== keep) img.remove(); });
     });
   }
 
   function polishConcept() {
     if (slug !== 'concept') return;
-
-    const launcher = document.querySelector('#openWidget.launcher__button');
-    if (launcher && !launcher.querySelector(':scope > .cfr-concept-launcher-crop')) {
-      const status = launcher.querySelector('.launcher__status') || document.createElement('span');
-      status.className = 'launcher__status';
-      status.setAttribute('aria-hidden', 'true');
-      const crop = document.createElement('span');
-      crop.className = 'cfr-concept-launcher-crop';
-      crop.appendChild(makeImg('/brand/concept-official-logo.png', '', ''));
-      launcher.replaceChildren(crop, status);
-      launcher.dataset.cfLogo = 'concept';
-    }
-
-    document.querySelectorAll('.message__avatar').forEach((avatar) => conceptCrop(avatar, 'cfr-concept-mark-crop'));
-
     const headerLogo = document.querySelector('.concept-widget-logo');
     if (headerLogo) {
       headerLogo.src = '/brand/concept-official-logo.png';
       headerLogo.alt = 'Concept Coffee Roasters';
     }
+
+    document.querySelectorAll('.message__avatar').forEach((avatar) => {
+      if (avatar.dataset.cfrLogo === 'concept') return;
+      avatar.replaceChildren(makeImg('/brand/concept-official-logo.png', 'cfr-concept-chat-logo', ''));
+      avatar.dataset.cfrLogo = 'concept';
+    });
 
     const entry = document.querySelector('#openAdvisor');
     if (entry) {
@@ -156,28 +115,33 @@
     if (slug !== 'vitazov') return;
 
     const brand = document.querySelector('.widget-brand');
-    if (brand && !brand.querySelector(':scope > img.cfr-vitazov-header-logo')) {
+    if (brand && brand.dataset.cfrLogo !== 'vitazov') {
       brand.replaceChildren(makeImg('/assets/vitazov-logo.svg', 'cfr-vitazov-header-logo', 'Káva Víťazov'));
+      brand.dataset.cfrLogo = 'vitazov';
     }
 
     const launcher = document.querySelector('#openWidget.launcher__button');
-    if (launcher && !launcher.querySelector(':scope > img.cfr-vitazov-launcher-logo')) {
+    if (launcher && launcher.dataset.cfrLogo !== 'vitazov') {
       const status = document.createElement('span');
       status.className = 'launcher__status';
       status.setAttribute('aria-hidden', 'true');
       launcher.replaceChildren(makeImg('/assets/vitazov-logo.svg', 'cfr-vitazov-launcher-logo', ''), status);
-      launcher.dataset.cfLogo = 'vitazov';
+      launcher.dataset.cfrLogo = 'vitazov';
     }
 
     document.querySelectorAll('.message__avatar').forEach((avatar) => {
-      const img = ensureImg(avatar, '/assets/vitazov-logo.svg', 'cfr-vitazov-avatar-logo');
-      if (img) avatar.dataset.cfLogo = 'vitazov';
+      if (avatar.dataset.cfrLogo === 'vitazov') return;
+      avatar.replaceChildren(makeImg('/assets/vitazov-logo.svg', 'cfr-vitazov-avatar-logo', ''));
+      avatar.dataset.cfrLogo = 'vitazov';
     });
 
     const entry = document.querySelector('#openAdvisor');
     if (entry) {
       const media = entry.firstElementChild;
-      if (media) ensureImg(media, '/assets/vitazov-brazil.jpeg', 'cfr-vitazov-entry-photo');
+      if (media && media.dataset.cfrPhoto !== 'vitazov') {
+        media.replaceChildren(makeImg('/assets/vitazov-brazil.jpeg', 'cfr-vitazov-entry-photo', ''));
+        media.dataset.cfrPhoto = 'vitazov';
+      }
       const title = entry.querySelector('b');
       const note = entry.querySelector('em');
       if (title) title.textContent = 'Nájsť svoju kávu';
@@ -189,9 +153,9 @@
       const visual = option.querySelector('.option__photo');
       if (!src || !visual) return;
       let img = visual.querySelector(':scope > img.cfr-vitazov-photo');
-      if (!img) {
+      if (!img || visual.querySelectorAll(':scope > img').length !== 1) {
         img = makeImg(src, 'cfr-vitazov-photo', '');
-        visual.prepend(img);
+        visual.replaceChildren(img);
       } else if (img.getAttribute('src') !== src) {
         img.src = src;
       }
@@ -201,10 +165,14 @@
   function polishDiamonds() {
     if (slug !== 'diamonds') return;
     const header = document.querySelector('.widget-logo');
-    if (header) ensureImg(header, '/assets/diamonds/diroastery-logo.svg', 'cfr-diamonds-header-logo', 'Diamonds Roastery');
+    if (header && header.dataset.cfrLogo !== 'diamonds') {
+      header.replaceChildren(makeImg('/assets/diamonds/diroastery-logo.svg', 'cfr-diamonds-header-logo', 'Diamonds Roastery'));
+      header.dataset.cfrLogo = 'diamonds';
+    }
     document.querySelectorAll('.chat-logo').forEach((avatar) => {
-      const img = ensureImg(avatar, '/assets/diamonds/diroastery-logo.svg', 'cfr-diamonds-chat-logo');
-      if (img) avatar.dataset.cfLogo = 'diamonds';
+      if (avatar.dataset.cfrLogo === 'diamonds') return;
+      avatar.replaceChildren(makeImg('/assets/diamonds/diroastery-logo.svg', 'cfr-diamonds-chat-logo', ''));
+      avatar.dataset.cfrLogo = 'diamonds';
     });
   }
 
@@ -217,17 +185,16 @@
     polishDiamonds();
   }
 
-  let queued = false;
-  const observer = new MutationObserver(() => {
-    if (queued) return;
-    queued = true;
-    requestAnimationFrame(() => {
-      queued = false;
-      run();
-    });
-  });
-  observer.observe(document.body, { childList:true, subtree:true });
+  // Deterministic bounded reconciliation only. No global MutationObserver: the
+  // old observers repeatedly replaced Concept/Victory nodes while Playwright
+  // and real users were clicking them.
+  document.addEventListener('click', () => {
+    requestAnimationFrame(run);
+    setTimeout(run, 90);
+    setTimeout(run, 420);
+  }, true);
+  window.addEventListener('resize', run, { passive: true });
 
   run();
-  [120,360,850,1600].forEach((delay) => setTimeout(run, delay));
+  [140, 480, 1100].forEach((delay) => setTimeout(run, delay));
 })();
