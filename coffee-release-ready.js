@@ -47,19 +47,117 @@
     if (screen && chat && entry && chat.nextElementSibling !== entry) screen.insertBefore(chat, entry);
   }
 
+  function settleKaffaChat() {
+    if (document.body.dataset.coffeeFinal !== 'kaffa') return;
+    const seed = document.querySelector('.kf-messages:not(.has-thread) .kf-chat-seed');
+    if (!seed) return;
+
+    /* An older Kaffa layer stretched the untouched seed to 100% height and
+       pushed the welcome row down with margin-top:auto. That made a large empty
+       hole appear between "Nájsť svoju kávu" and the first bot message. */
+    setImportant(seed, 'min-height', '0');
+    setImportant(seed, 'height', 'auto');
+    setImportant(seed, 'flex', '0 0 auto');
+    setImportant(seed, 'gap', '8px');
+
+    const botRow = seed.querySelector('.kf-message-row--bot') ||
+      [...seed.querySelectorAll('.kf-message-row')].find((row) => row.querySelector('.kf-message.bot'));
+    if (botRow) setImportant(botRow, 'margin-top', '0');
+  }
+
+  function settleFinishedResults() {
+    /* The historic shared polish added a temporary "Premýšľam…" note. Some
+       brand runtimes repaint the result during that timeout, which could leave
+       the note visible beside an already finished recommendation. A finished
+       result must never look as if it is still loading. */
+    document.querySelectorAll('.mcw-thinking-note').forEach((note) => note.remove());
+    document.querySelectorAll('.mcw-thinking').forEach((result) => result.classList.remove('mcw-thinking'));
+  }
+
+  function settleLauncherMarks() {
+    const slug = document.body.dataset.coffeeFinal;
+
+    if (slug === 'concept') {
+      const crop = document.querySelector('#openWidget .cfr-concept-launcher-crop');
+      const img = crop?.querySelector('img');
+      if (crop) {
+        setImportant(crop, 'inset', '6px');
+        setImportant(crop, 'display', 'grid');
+        setImportant(crop, 'place-items', 'center');
+        setImportant(crop, 'overflow', 'visible');
+        setImportant(crop, 'background', 'transparent');
+      }
+      if (img) {
+        setImportant(img, 'width', '52px');
+        setImportant(img, 'height', 'auto');
+        setImportant(img, 'max-width', '52px');
+        setImportant(img, 'max-height', '46px');
+        setImportant(img, 'object-fit', 'contain');
+        setImportant(img, 'transform', 'none');
+        setImportant(img, 'filter', 'brightness(0) invert(1)');
+      }
+    }
+
+    if (slug === 'vitazov') {
+      const img = document.querySelector('#openWidget .cfr-vitazov-launcher-logo');
+      if (img) {
+        setImportant(img, 'width', '54px');
+        setImportant(img, 'height', 'auto');
+        setImportant(img, 'max-width', '54px');
+        setImportant(img, 'max-height', '38px');
+        setImportant(img, 'object-fit', 'contain');
+        setImportant(img, 'filter', 'brightness(0)');
+      }
+    }
+
+    if (slug === 'diamonds') {
+      const img = document.querySelector('#launcherButton img');
+      if (img) {
+        setImportant(img, 'width', '48px');
+        setImportant(img, 'height', 'auto');
+        setImportant(img, 'max-width', '48px');
+        setImportant(img, 'max-height', '42px');
+        setImportant(img, 'object-fit', 'contain');
+        setImportant(img, 'filter', 'brightness(0) invert(1)');
+      }
+    }
+  }
+
+  function settleOwnerPrice() {
+    if (document.body.dataset.coffeeFinal !== 'concept' || window.innerWidth > 480) return;
+    const row = document.querySelector('.mcb-plan-price');
+    if (!row) return;
+    setImportant(row, 'flex-wrap', 'nowrap');
+    setImportant(row, 'gap', '3px 5px');
+    row.querySelectorAll('strong').forEach((node) => setImportant(node, 'font-size', '26px'));
+    row.querySelectorAll('span').forEach((node) => {
+      setImportant(node, 'font-size', '10px');
+      setImportant(node, 'white-space', 'nowrap');
+    });
+    row.querySelectorAll('i').forEach((node) => {
+      setImportant(node, 'font-size', '12px');
+      setImportant(node, 'padding', '0 1px');
+    });
+  }
+
   function settle() {
     enforceTabletPanel();
     settleJolkaOrder();
+    settleKaffaChat();
+    settleFinishedResults();
+    settleLauncherMarks();
+    settleOwnerPrice();
   }
 
   /* Opening/mode scripts from older brand layers can rewrite geometry after
-     initial boot. Reinforce only the final tablet/Jolka contract after those
-     interactions; this intentionally does not affect phone full-screen mode. */
+     initial boot. Reinforce only the final contracts after those interactions;
+     phone full-screen mode itself remains untouched. */
   document.addEventListener('click', (event) => {
-    if (!event.target.closest('#launcher,#openWidget,#open,.kf-switch,.mode,#modeSwitch')) return;
+    if (!event.target.closest('#launcher,#launcherButton,#openWidget,#open,.kf-switch,.mode,#modeSwitch')) return;
     requestAnimationFrame(() => requestAnimationFrame(settle));
     setTimeout(settle, 90);
     setTimeout(settle, 260);
+    setTimeout(settle, 720);
   }, true);
   window.addEventListener('resize', settle, { passive:true });
 
