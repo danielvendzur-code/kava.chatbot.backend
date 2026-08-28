@@ -16,11 +16,7 @@
     tabletFloat(document.querySelector('#pz13-widget'), 642);
     const entry = document.querySelector('#pz13-advisor-entry');
     if (entry) {
-      setI(entry, 'position', 'relative');
-      setI(entry, 'top', '5px');
-      setI(entry, 'margin-top', '7px');
-      setI(entry, 'margin-bottom', '9px');
-      setI(entry, 'transform', 'none');
+      setI(entry, 'position', 'relative'); setI(entry, 'top', '5px'); setI(entry, 'margin-top', '7px'); setI(entry, 'margin-bottom', '9px'); setI(entry, 'transform', 'none');
     }
   }
 
@@ -50,7 +46,6 @@
     const mode = document.querySelector('#modeSwitch.mode,.mode');
     if (mode) { setI(mode, 'height', '60px'); setI(mode, 'min-height', '60px'); setI(mode, 'flex-basis', '60px'); }
     document.querySelectorAll('.mode__button').forEach((button) => setI(button, 'min-height', '50px'));
-
     const launcher = document.querySelector('#openWidget.launcher__button');
     if (launcher && !launcher.querySelector('.cfr-concept-launcher-crop,.six-concept-logo')) {
       const mark = document.createElement('span'); mark.className = 'six-concept-logo'; mark.setAttribute('aria-hidden', 'true');
@@ -65,9 +60,18 @@
     if (headerLogo) { headerLogo.src = '/brand/concept-official-logo.png'; headerLogo.alt = 'Concept Coffee Roasters'; setI(headerLogo, 'object-fit', 'contain'); }
   }
 
+  function lockRenderedWidth(node, pixels) {
+    if (!node || !Number.isFinite(pixels) || pixels < 1) return;
+    const width = `${Math.round(pixels)}px`;
+    setI(node, 'box-sizing', 'border-box'); setI(node, 'width', width); setI(node, 'min-width', width); setI(node, 'max-width', width);
+    setI(node, 'transform', 'none'); setI(node, 'scale', '1'); setI(node, 'zoom', '1'); setI(node, 'transition', 'none'); setI(node, 'animation', 'none');
+    setI(node, 'justify-self', 'stretch'); setI(node, 'align-self', 'stretch');
+  }
+
   function vitazov() {
     if (slug() !== 'vitazov') return;
-    tabletFloat(document.querySelector('#widget.widget'), 672);
+    const panel = document.querySelector('#widget.widget');
+    tabletFloat(panel, 672);
     const header = document.querySelector('.widget__header');
     if (header) { setI(header, 'background', '#0d493d'); setI(header, 'color', '#fff'); setI(header, 'border-bottom-color', '#0a3b32'); }
     const logo = document.querySelector('.widget-brand img[src*="vitazov-logo"]');
@@ -78,17 +82,23 @@
     document.querySelectorAll('.widget-actions .icon-button').forEach((button) => { setI(button, 'color', '#fff'); setI(button, 'background', 'rgba(255,255,255,.08)'); setI(button, 'border-color', 'rgba(255,255,255,.28)'); });
     const mode = document.querySelector('.mode'); if (mode) { setI(mode, 'height', '60px'); setI(mode, 'min-height', '60px'); }
     const screen = document.querySelector('#chatScreen');
-    if (screen) { setI(screen, 'width', '100%'); setI(screen, 'max-width', 'none'); setI(screen, 'align-self', 'stretch'); setI(screen, 'box-sizing', 'border-box'); setI(screen, 'transform', 'none'); }
+    if (screen) {
+      setI(screen, 'width', '100%'); setI(screen, 'min-width', '100%'); setI(screen, 'max-width', 'none'); setI(screen, 'align-self', 'stretch'); setI(screen, 'box-sizing', 'border-box');
+      setI(screen, 'transform', 'none'); setI(screen, 'scale', '1'); setI(screen, 'transition', 'none'); setI(screen, 'animation', 'none');
+    }
+
+    const panelWidth = panel?.getBoundingClientRect().width || 0;
+    const targetWidth = Math.max(0, panelWidth - 26);
     const entry = document.querySelector('#openAdvisor');
     if (entry) {
-      setI(entry, 'width', 'calc(100% - 26px)'); setI(entry, 'min-width', 'calc(100% - 26px)'); setI(entry, 'max-width', 'none');
+      lockRenderedWidth(entry, targetWidth);
       setI(entry, 'height', '70px'); setI(entry, 'min-height', '70px'); setI(entry, 'margin-left', '13px'); setI(entry, 'margin-right', '13px');
-      setI(entry, 'align-self', 'stretch'); setI(entry, 'flex', '0 0 auto'); setI(entry, 'box-sizing', 'border-box'); setI(entry, 'transform', 'none');
+      setI(entry, 'flex', '0 0 auto'); setI(entry, 'position', 'relative'); setI(entry, 'left', '0'); setI(entry, 'right', 'auto');
     }
     const form = document.querySelector('#chatForm');
     if (form) {
-      setI(form, 'width', 'calc(100% - 26px)'); setI(form, 'min-width', 'calc(100% - 26px)'); setI(form, 'max-width', 'none');
-      setI(form, 'height', '54px'); setI(form, 'min-height', '54px'); setI(form, 'margin-left', '13px'); setI(form, 'margin-right', '13px'); setI(form, 'box-sizing', 'border-box');
+      lockRenderedWidth(form, targetWidth);
+      setI(form, 'height', '54px'); setI(form, 'min-height', '54px'); setI(form, 'margin-left', '13px'); setI(form, 'margin-right', '13px');
     }
     document.querySelectorAll('#chatMessages .message__avatar img[src*="vitazov-logo"]').forEach((img) => img.classList.add('six-vitazov-avatar'));
   }
@@ -100,9 +110,8 @@
   }
 
   function settle() { praziarnicka(); kaffa(); concept(); vitazov(); jolka(); }
-
-  document.addEventListener('click', () => { requestAnimationFrame(settle); setTimeout(settle, 90); setTimeout(settle, 420); }, true);
+  document.addEventListener('click', () => { requestAnimationFrame(settle); setTimeout(settle, 60); setTimeout(settle, 180); setTimeout(settle, 420); }, true);
   window.addEventListener('resize', settle, { passive: true });
-  settle(); setTimeout(settle, 140); setTimeout(settle, 520);
-  setTimeout(() => { settle(); document.documentElement.dataset.coffeeSixAuditReady = 'true'; }, 900);
+  settle(); setTimeout(settle, 120); setTimeout(settle, 360); setTimeout(settle, 720);
+  setTimeout(() => { settle(); document.documentElement.dataset.coffeeSixAuditReady = 'true'; }, 960);
 })();
