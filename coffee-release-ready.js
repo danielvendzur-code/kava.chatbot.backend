@@ -58,7 +58,7 @@
     setImportant(seed, 'min-height', '0');
     setImportant(seed, 'height', 'auto');
     setImportant(seed, 'flex', '0 0 auto');
-    setImportant(seed, 'gap', '8px');
+    setImportant(seed, 'gap', '6px');
 
     const botRow = seed.querySelector('.kf-message-row--bot') ||
       [...seed.querySelectorAll('.kf-message-row')].find((row) => row.querySelector('.kf-message.bot'));
@@ -128,10 +128,10 @@
     const row = document.querySelector('.mcb-plan-price');
     if (!row) return;
     setImportant(row, 'flex-wrap', 'nowrap');
-    setImportant(row, 'gap', '3px 5px');
-    row.querySelectorAll('strong').forEach((node) => setImportant(node, 'font-size', '26px'));
+    setImportant(row, 'gap', '3px 4px');
+    row.querySelectorAll('strong').forEach((node) => setImportant(node, 'font-size', '25px'));
     row.querySelectorAll('span').forEach((node) => {
-      setImportant(node, 'font-size', '10px');
+      setImportant(node, 'font-size', '11px');
       setImportant(node, 'white-space', 'nowrap');
     });
     row.querySelectorAll('i').forEach((node) => {
