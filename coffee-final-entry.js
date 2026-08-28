@@ -45,6 +45,16 @@
     document.head.appendChild(link);
   });
 
+  const addLateStyle = (href, order) => new Promise((resolve, reject) => {
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = href;
+    link.dataset.mcOrder = String(order);
+    link.onload = resolve;
+    link.onerror = () => reject(new Error(`Nenačítal sa finálny štýl ${href}`));
+    document.body.appendChild(link);
+  });
+
   const addScript = (src) => new Promise((resolve, reject) => {
     const script = document.createElement('script');
     script.src = src;
@@ -143,8 +153,10 @@
     await addStyle('/coffee-final-qa.css');
     await addScript('/coffee-final-tune.js');
     await addScript('/coffee-release-contract.js');
-    await addStyle('/coffee-last-mile.css');
+    await addLateStyle('/coffee-last-mile.css', 50);
     await addScript('/coffee-last-mile.js');
+    await addLateStyle('/coffee-last-mile-repair.css', 60);
+    await addScript('/coffee-last-mile-repair.js');
   };
 
   boot().catch((error) => {
