@@ -64,21 +64,25 @@
       if (botRow) setImportant(botRow, 'margin-top', '0');
     }
 
-    /* Old Kaffa styles used content-box sizing on the composer. Combined with a
-       later width:100% rule, its padding and border could spill two pixels past
-       the right edge on the tablet-width floating panel. Keep the entire bottom
-       tray geometrically inside the panel on every repaint. */
+    /* Grid items with width:100% can still overflow their padded grid area when
+       old Kaffa layers leave intrinsic/content-box sizing behind. Let the grid
+       stretch the footer and composer instead of forcing a percentage width. */
     const footer = document.querySelector('.kf-chat-footer');
     const composer = document.querySelector('.kf-composer');
     if (footer) {
       setImportant(footer, 'box-sizing', 'border-box');
-      setImportant(footer, 'width', '100%');
-      setImportant(footer, 'max-width', '100%');
+      setImportant(footer, 'width', 'auto');
+      setImportant(footer, 'min-width', '0');
+      setImportant(footer, 'max-width', 'none');
+      setImportant(footer, 'justify-self', 'stretch');
     }
     if (composer) {
       setImportant(composer, 'box-sizing', 'border-box');
-      setImportant(composer, 'width', '100%');
-      setImportant(composer, 'max-width', '100%');
+      setImportant(composer, 'width', 'auto');
+      setImportant(composer, 'min-width', '0');
+      setImportant(composer, 'max-width', 'none');
+      setImportant(composer, 'justify-self', 'stretch');
+      setImportant(composer, 'align-self', 'stretch');
     }
   }
 
@@ -116,8 +120,15 @@
     }
 
     if (slug === 'vitazov') {
-      const img = document.querySelector('#openWidget .cfr-vitazov-launcher-logo');
+      const launcher = document.querySelector('#openWidget.launcher__button');
+      const img = launcher?.querySelector('.cfr-vitazov-launcher-logo');
+      if (launcher) launcher.removeAttribute('data-mcw-mark');
       if (img) {
+        setImportant(img, 'display', 'block');
+        setImportant(img, 'visibility', 'visible');
+        setImportant(img, 'opacity', '1');
+        setImportant(img, 'position', 'relative');
+        setImportant(img, 'z-index', '2');
         setImportant(img, 'width', '54px');
         setImportant(img, 'height', 'auto');
         setImportant(img, 'max-width', '54px');
@@ -125,6 +136,7 @@
         setImportant(img, 'object-fit', 'contain');
         setImportant(img, 'filter', 'brightness(0)');
       }
+      launcher?.querySelectorAll('.launcher__status').forEach((node) => node.remove());
     }
 
     if (slug === 'diamonds') {
