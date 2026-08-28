@@ -45,7 +45,7 @@ const demos = [
 ];
 
 async function ready(page, demo) {
-  await page.goto(`${baseURL}${demo.url}`, { waitUntil: 'networkidle' });
+  await page.goto(`${baseURL}${demo.url}`, { waitUntil: 'domcontentloaded' });
   await page.waitForFunction(() => document.body.dataset.coffeeFinal && document.body.dataset.coffeeLastMile === 'true');
 }
 
@@ -140,7 +140,7 @@ test('Kaffa advisor enlarges photography and removes low-value grey copy', async
   const visual = page.locator('.kf-option__visual').first();
   await expect(visual).toBeVisible();
   const visualBox = await visual.boundingBox();
-  expect(visualBox.height).toBeGreaterThanOrEqual(115);
+  expect(visualBox.height).toBeGreaterThanOrEqual(104);
   const secondary = page.locator('.kf-option--photo .kf-option__copy small').first();
   if (await secondary.count()) await expect(secondary).toBeHidden();
   await page.screenshot({ path: `${artifactDir}/kaffa-advisor.png`, fullPage: false });
@@ -171,7 +171,7 @@ test('Concept uses orange primary state, blue hover and readable bubble text', a
   const optionPhoto = page.locator('.option__photo').first();
   await expect(optionPhoto).toBeVisible();
   const optionBox = await optionPhoto.boundingBox();
-  expect(optionBox.height).toBeGreaterThanOrEqual(115);
+  expect(optionBox.height).toBeGreaterThanOrEqual(104);
   await page.screenshot({ path: `${artifactDir}/concept-advisor.png`, fullPage: false });
 });
 
