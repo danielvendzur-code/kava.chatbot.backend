@@ -111,7 +111,7 @@
       const formBox = form.getBoundingClientRect();
       if (panelBox && formBox) {
         const rightInset = panelBox.right - formBox.right;
-        if (rightInset < 10) lockRenderedWidth(form, Math.max(1, targetWidth - (10 - rightInset)));
+        if (rightInset < 8) lockRenderedWidth(form, Math.max(1, targetWidth - (8 - rightInset)));
       }
     }
     document.querySelectorAll('#chatMessages .message__avatar img[src*="vitazov-logo"]').forEach((img) => img.classList.add('six-vitazov-avatar'));
