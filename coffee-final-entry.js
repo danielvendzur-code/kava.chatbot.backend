@@ -102,6 +102,7 @@
     await addScript('/coffee-release-final.js');
     await addStyle('/coffee-release-safety.css');
     await addStyle('/coffee-user-review-final.css');
+    await addStyle('/coffee-user-review-dom-fix.css');
     await addScript('/coffee-release-ready.js');
   };
 
