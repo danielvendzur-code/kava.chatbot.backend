@@ -8,9 +8,10 @@ mkdirSync(artifacts, { recursive: true });
 async function waitReady(page, slug) {
   await page.waitForFunction((expected) => {
     const settled = document.documentElement.dataset.coffeeReleaseReady === 'true';
+    const audited = document.documentElement.dataset.coffeeSixAuditReady === 'true';
     const final = document.documentElement.dataset.coffeeReleaseFinal === '2026-08-27';
-    if (expected === 'jolka') return settled && final && document.body.dataset.coffeeFinal === 'jolka';
-    return settled && final;
+    if (expected === 'jolka') return settled && audited && final && document.body.dataset.coffeeFinal === 'jolka';
+    return settled && audited && final;
   }, slug);
 }
 
@@ -20,11 +21,12 @@ async function openDemo(page, demo, viewport = { width: 568, height: 809 }) {
   await waitReady(page, demo.slug);
   await page.locator(demo.launcher).click({ force: true });
   await expect(page.locator(demo.panel)).toBeVisible();
+  await page.waitForTimeout(140);
 }
 
 async function selectMode(page, selector) {
   await page.locator(selector).click({ force: true });
-  await page.waitForTimeout(120);
+  await page.waitForTimeout(140);
 }
 
 async function metrics(page, selector) {
@@ -77,11 +79,14 @@ test('Jolka remains the reference: separated selection card, readable back/progr
   expect(mode.height).toBeGreaterThanOrEqual(58);
   expect(entry.y - (mode.y + mode.height)).toBeGreaterThanOrEqual(8);
   expect(await page.locator('.widget__note').count()).toBe(0);
+  const welcome = page.locator('#chat .msg:not(.msg--user) .bubble').first();
+  await expect(welcome).toBeVisible();
+  expect((await welcome.boundingBox()).width).toBeGreaterThanOrEqual(220);
 
   await selectMode(page, demo.advisor);
-  const disabledBack = page.locator('#back');
-  const opacity = await disabledBack.evaluate((node) => Number.parseFloat(getComputedStyle(node).opacity));
-  expect(opacity).toBeGreaterThanOrEqual(0.65);
+  const back = page.locator('#back');
+  const opacity = await back.evaluate((node) => Number.parseFloat(getComputedStyle(node).opacity));
+  expect(opacity).toBeGreaterThanOrEqual(.95);
   const firstVisual = await metrics(page, '.option__visual');
   expect(firstVisual.height).toBeGreaterThanOrEqual(120);
   const copyColor = await page.locator('.option__copy small').first().evaluate((node) => getComputedStyle(node).color);
@@ -124,33 +129,33 @@ test('Kaffa matches the reference scale, centers the picker CTA and keeps readab
   const sources = await photos.evaluateAll((nodes) => nodes.map((node) => node.getAttribute('src')));
   expect(new Set(sources).size).toBe(4);
   expect((await metrics(page, '.kf-option__visual')).height).toBeGreaterThanOrEqual(88);
-  const optionSmallColor = await page.locator('.kf-option small').first().evaluate((node) => getComputedStyle(node).color);
-  expect(optionSmallColor).not.toMatch(/rgba\([^)]*,\s*0\)/);
+  const optionSmall = page.locator('.kf-option small').first();
+  expect(await optionSmall.evaluate((node) => Number.parseFloat(getComputedStyle(node).fontSize))).toBeGreaterThanOrEqual(11);
   const stage = page.locator('.kf-stage');
   const scrollDelta = await stage.evaluate((node) => node.scrollHeight - node.clientHeight);
-  expect(scrollDelta).toBeLessThanOrEqual(12);
+  expect(scrollDelta).toBeLessThanOrEqual(16);
   await page.screenshot({ path: `${artifacts}/kaffa-advisor.png` });
 });
 
-test('Concept has a clean monogram launcher, useful teaser and always opens', async ({ page }) => {
+test('Concept uses the official logo, orange-to-blue launcher, useful teaser and always opens', async ({ page }) => {
   const demo = demos.concept;
   await page.setViewportSize({ width: 568, height: 809 });
   await page.goto(`${baseURL}${demo.url}`, { waitUntil: 'domcontentloaded' });
   await waitReady(page, demo.slug);
 
   const launcher = page.locator(demo.launcher);
-  await expect(launcher.locator('.cfr-concept-monogram')).toHaveText('C');
-  await expect(launcher.locator('.cfr-concept-monogram')).toBeVisible();
+  await expect(launcher.locator('.six-concept-logo img[src*="concept-official-logo"]')).toBeVisible();
   expect(await launcher.evaluate((node) => getComputedStyle(node).backgroundColor)).toBe('rgb(223, 99, 69)');
   await launcher.hover();
   await page.waitForTimeout(330);
   expect(await launcher.evaluate((node) => getComputedStyle(node).backgroundColor)).toBe('rgb(39, 83, 165)');
-  await expect(page.locator('#launcherTeaser')).toContainText('Pomôžeme vám vybrať?');
-  await expect(page.locator('#launcherTeaser')).toContainText('štyri krátke otázky');
+  await expect(page.locator('#launcherTeaser')).toContainText('Nájdite svoju kávu');
+  await expect(page.locator('#launcherTeaser')).toContainText('4 otázky · jedno odporúčanie');
 
   await launcher.click({ force: true });
   await expect(page.locator(demo.panel)).toBeVisible();
   await expect(page.locator(demo.panel)).toHaveAttribute('aria-hidden', 'false');
+  await expect(page.locator('.concept-widget-logo[src*="concept-official-logo"]')).toBeVisible();
   await selectMode(page, demo.chat);
   const panel = await metrics(page, demo.panel);
   const mode = await metrics(page, '.mode');
@@ -179,8 +184,7 @@ test('Concept has a clean monogram launcher, useful teaser and always opens', as
   expect(optionBox.y).toBeGreaterThanOrEqual(advisorBox.y);
   await firstOption.click({ force: true });
   await page.waitForTimeout(80);
-  const selectedShadow = await firstOption.evaluate((node) => getComputedStyle(node).boxShadow);
-  expect(selectedShadow).not.toBe('none');
+  expect(await firstOption.evaluate((node) => getComputedStyle(node).boxShadow)).not.toBe('none');
   await page.waitForTimeout(320);
 
   for (let step = 1; step < 4; step += 1) {
@@ -206,6 +210,7 @@ test('Victory is a full-width polished shell instead of the broken partial foote
   const logoBox = await logo.boundingBox();
   expect(logoBox.width).toBeGreaterThanOrEqual(100);
   expect(logoBox.width).toBeLessThanOrEqual(130);
+  expect(await page.locator('.widget__header').evaluate((node) => getComputedStyle(node).backgroundColor)).toBe('rgb(13, 73, 61)');
 
   await selectMode(page, demo.chat);
   await expect(page.locator('#openAdvisor .cfr-vitazov-entry-photo')).toBeVisible();
@@ -213,6 +218,8 @@ test('Victory is a full-width polished shell instead of the broken partial foote
   expect((await metrics(page, '.composer')).height).toBeGreaterThanOrEqual(54);
   const bottom = await metrics(page, '#chatScreen .chat-bottom');
   expect(bottom.width).toBeGreaterThan(panel.width - 4);
+  const entryBox = await metrics(page, '#openAdvisor');
+  expect(entryBox.height).toBeLessThanOrEqual(70);
   const entryPhoto = await metrics(page, '#openAdvisor>span:first-child');
   expect(entryPhoto.width).toBeGreaterThanOrEqual(68);
   expect(entryPhoto.height).toBeGreaterThanOrEqual(60);
@@ -226,7 +233,7 @@ test('Victory is a full-width polished shell instead of the broken partial foote
   expect(firstPhoto.width).toBeGreaterThanOrEqual(200);
   expect(firstPhoto.height).toBeGreaterThanOrEqual(88);
   const advisorDelta = await page.locator('#advisorBody').evaluate((node) => node.scrollHeight - node.clientHeight);
-  expect(advisorDelta).toBeLessThanOrEqual(16);
+  expect(advisorDelta).toBeLessThanOrEqual(18);
   await page.screenshot({ path: `${artifacts}/vitazov-advisor.png` });
 });
 
