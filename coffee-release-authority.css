@@ -2,6 +2,7 @@
  * Authoritative release layer for the six coffee demos.
  * Loaded after every legacy/final stylesheet. Keep this file small: it only
  * contains rules that must win the cascade in the public release state.
+ * Preview refresh: force Git-integrated Vercel to publish the current branch HEAD.
  */
 :root{--cra-ease:cubic-bezier(.22,.8,.28,1)}
 
