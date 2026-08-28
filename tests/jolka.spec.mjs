@@ -25,6 +25,14 @@ async function answer(page, value) {
   await option.click();
   await expect(option).toHaveClass(/is-selected/);
   await expect(option.locator('.option__copy b')).toBeVisible();
+  const copy = await option.locator('.option__copy').evaluate((node) => ({
+    opacity: Number.parseFloat(getComputedStyle(node).opacity),
+    title: getComputedStyle(node.querySelector('b')).color,
+    detail: getComputedStyle(node.querySelector('small')).color
+  }));
+  expect(copy.opacity).toBe(1);
+  expect(copy.title).not.toMatch(/rgba\([^)]*,\s*0\)/);
+  expect(copy.detail).not.toMatch(/rgba\([^)]*,\s*0\)/);
   await page.waitForTimeout(700);
 }
 
@@ -65,6 +73,13 @@ test('advisor is four weighted steps and lands on a real product page', async ({
   await expect(page.locator('#stepTitle')).toHaveText('Krok 1 zo 4');
   await expect(page.locator('.option')).toHaveCount(4);
   await expect(page.locator('.option__visual img')).toHaveCount(4);
+
+  const backStyle = await page.locator('#back').evaluate((node) => ({
+    opacity: Number.parseFloat(getComputedStyle(node).opacity),
+    color: getComputedStyle(node).color
+  }));
+  expect(backStyle.opacity).toBe(1);
+  expect(backStyle.color).not.toMatch(/rgba\([^)]*,\s*0\)/);
 
   await answer(page, 'fruity');
   await expect(page.locator('#stepTitle')).toHaveText('Krok 2 zo 4');
@@ -108,13 +123,18 @@ test('scoring separates classic, milk, balanced, fruity and experimental', async
   expect(results[4]).toBe('Vietnam Lang Biang');
 });
 
-test('back keeps the answer, alternative swaps the product, reset clears everything', async ({ page }) => {
+test('Back exits first advisor step to chat, then keeps earlier answers on later steps', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto(JOLKA, { waitUntil: 'networkidle' });
   await page.locator('#heroOpen,#open,[data-release-open="advisor"]').first().click();
 
-  await expect(page.locator('#back')).toBeDisabled();
+  await expect(page.locator('#back')).toBeEnabled();
   await expect(page.locator('#back')).toContainText('Späť');
+  await page.locator('#back').click();
+  await expect(page.locator('#chatScreen')).toHaveClass(/is-active/);
+
+  await page.locator('.mode__button[data-mode="advisor"]').click();
+  await expect(page.locator('#stepTitle')).toHaveText('Krok 1 zo 4');
   await answer(page, 'chocolate');
   await expect(page.locator('#stepTitle')).toHaveText('Krok 2 zo 4');
 
@@ -139,7 +159,7 @@ test('back keeps the answer, alternative swaps the product, reset clears everyth
   await expect(page.locator('.option.is-selected')).toHaveCount(0);
 });
 
-test('chat has four visible final chips, removes the handoff after first message, and answers offline', async ({ page }) => {
+test('chat order is picker, message, chips, input with no large dead gap', async ({ page }) => {
   const errors = watchConsole(page);
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto(JOLKA, { waitUntil: 'networkidle' });
@@ -162,9 +182,17 @@ test('chat has four visible final chips, removes the handoff after first message
 
   await expect(page.locator('.msg .bubble')).toHaveCount(1);
   await expect(page.locator('#entry')).toBeVisible();
-  const chatY = (await page.locator('#chat').boundingBox()).y;
-  const entryY = (await page.locator('#entry').boundingBox()).y;
-  expect(chatY).toBeLessThan(entryY);
+
+  const entry = await page.locator('#entry').boundingBox();
+  const chat = await page.locator('#chat').boundingBox();
+  const chips = await page.locator('#chips').boundingBox();
+  const composer = await page.locator('#composer').boundingBox();
+  expect(entry.y + entry.height).toBeLessThanOrEqual(chat.y + 1);
+  expect(chat.y + chat.height).toBeLessThanOrEqual(chips.y + 12);
+  expect(chips.y + chips.height).toBeLessThanOrEqual(composer.y + 12);
+  expect(composer.y).toBeGreaterThan(chips.y);
+
+  await page.screenshot({ path: 'artifacts/jolka-desktop-chat-reviewed.png' });
 
   await page.locator('.chip').nth(3).click();
   await expect(page.locator('.msg--user .bubble')).toHaveText('Porovnajte dve kávy');
