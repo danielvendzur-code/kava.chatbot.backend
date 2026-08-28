@@ -44,8 +44,14 @@ body[data-coffee-final="diamonds"] #openAdvisor>span:first-child>img.cra-entry-p
 body[data-coffee-final="diamonds"] .chat-bubble{font-size:13px!important;line-height:1.45!important;opacity:1!important}
 
 /* Kaffa's accepted desktop contract is 468×640. Widen the switch, not the
-   panel itself. */
+   panel itself. The 50px switch stays inside its 58px grid row instead of
+   bleeding into the entry card below. */
 body[data-coffee-final="kaffa"] .kf-panel{width:min(468px,calc(100vw - 20px))!important;max-width:468px!important}
+body[data-coffee-final="kaffa"] .kf-switch{
+  width:calc(100% - 24px)!important;height:50px!important;min-height:50px!important;
+  margin:7px 12px 1px!important;padding:4px!important;
+}
+body[data-coffee-final="kaffa"] .kf-switch button{min-height:40px!important;font-size:13px!important}
 body[data-coffee-final="kaffa"] .kf-composer{height:48px!important;min-height:48px!important;max-height:48px!important}
 body[data-coffee-final="kaffa"] .kf-message.bot{font-size:12.5px!important;line-height:1.45!important;opacity:1!important}
 
