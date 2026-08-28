@@ -3,14 +3,22 @@ html body[data-coffee-final="jolka"] #widget.widget{
   height:min(700px,calc(100dvh - 24px))!important;
   max-height:700px!important;
 }
+html body[data-coffee-final="jolka"] #widget.widget:has(#chatScreen.is-active){
+  height:auto!important;
+  max-height:min(700px,calc(100dvh - 24px))!important;
+}
+html body[data-coffee-final="jolka"] #widget.widget:has(#chatScreen.is-active) .stage{
+  flex:none!important;
+  min-height:0!important;
+}
 
 /* CHAT: header/mode -> picker -> welcome -> small gap -> chips -> input. */
 html body[data-coffee-final="jolka"] #chatScreen.screen.is-active{
   display:grid!important;
-  grid-template-rows:auto auto minmax(8px,1fr) auto!important;
+  grid-template-rows:auto auto 8px auto!important;
   min-height:0!important;
   overflow:hidden!important;
-  align-content:stretch!important;
+  align-content:start!important;
 }
 html body[data-coffee-final="jolka"] #chatScreen.is-active #entry{
   order:initial!important;
@@ -65,7 +73,7 @@ html body[data-coffee-final="jolka"] #chatScreen.is-active #chat:not(:has(.msg--
   padding-bottom:2px!important;
 }
 html body[data-coffee-final="jolka"] #chatScreen.is-active #chat:has(.msg--user){
-  max-height:none!important;
+  max-height:220px!important;
   overflow-y:auto!important;
 }
 html body[data-coffee-final="jolka"] #chatScreen.is-active #chat .msg{
@@ -97,10 +105,10 @@ html body[data-coffee-final="jolka"] #chatScreen.is-active #chat .bubble{
 html body[data-coffee-final="jolka"] #chatScreen.is-active .composer-area{
   order:initial!important;
   grid-row:4!important;
-  align-self:end!important;
+  align-self:start!important;
   width:100%!important;
   box-sizing:border-box!important;
-  padding:5px 16px 12px!important;
+  padding:0 16px 12px!important;
   margin:0!important;
   background:#fffdfa!important;
 }
@@ -214,7 +222,10 @@ html body[data-coffee-final="jolka"] #advisorScreen .option.is-selected .option_
 }
 
 @media(max-width:480px){
-  html body[data-coffee-final="jolka"] #widget.widget{inset:0!important;width:100vw!important;max-width:none!important;height:100dvh!important;max-height:none!important;border-radius:0!important}
+  html body[data-coffee-final="jolka"] #widget.widget,
+  html body[data-coffee-final="jolka"] #widget.widget:has(#chatScreen.is-active){inset:0!important;width:100vw!important;max-width:none!important;height:100dvh!important;max-height:none!important;border-radius:0!important}
+  html body[data-coffee-final="jolka"] #widget.widget:has(#chatScreen.is-active) .stage{flex:1!important;min-height:0!important}
+  html body[data-coffee-final="jolka"] #chatScreen.screen.is-active{grid-template-rows:auto auto minmax(8px,1fr) auto!important;align-content:stretch!important}
   html body[data-coffee-final="jolka"] #advisorScreen .option__visual{height:112px!important;min-height:112px!important}
   html body[data-coffee-final="jolka"] #chatScreen.is-active #entry{margin-top:7px!important}
 }
