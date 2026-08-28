@@ -61,6 +61,7 @@ async function open(page, viewport) {
   await page.setViewportSize(viewport);
   await page.goto(`${baseURL}${demo.url}`, { waitUntil:'domcontentloaded' });
   await ready(page);
+  await expect(page.locator(demo.launcher)).toBeVisible();
   await page.locator(demo.launcher).click({ force:true });
   await expect(page.locator(demo.panel)).toBeVisible();
   await page.waitForTimeout(180);
@@ -130,8 +131,11 @@ test(`${auditDemo}: independent desktop/tablet and mobile release audit`, async 
   }
   if (auditDemo === 'jolka') {
     const entry = await renderedBox(page, '#entry');
+    const firstChip = await renderedBox(page, '.chip');
     expect(entry.y).toBeLessThan(greetingBox.y);
-    expect(greetingBox.y + greetingBox.height).toBeLessThan(composer.y);
+    expect(greetingBox.y + greetingBox.height).toBeLessThan(firstChip.y);
+    expect(firstChip.y - (greetingBox.y + greetingBox.height)).toBeLessThanOrEqual(52);
+    expect(firstChip.y + firstChip.height).toBeLessThan(composer.y + 2);
     expect(await page.locator('#back').evaluate((node) => getComputedStyle(node).opacity)).toBe('1');
   }
   if (auditDemo === 'kaffa') {
@@ -144,6 +148,7 @@ test(`${auditDemo}: independent desktop/tablet and mobile release audit`, async 
     expect(Math.abs(leftInset - rightInset)).toBeLessThanOrEqual(2);
   }
   if (auditDemo === 'concept') {
+    await expect(page.locator('#openWidget .six-concept-logo img[src*="concept-official-logo"]')).toBeVisible();
     await expect(page.locator('.concept-widget-logo[src*="concept-official-logo"]')).toBeVisible();
     const bubbleBorder = await greeting.evaluate((node) => parseFloat(getComputedStyle(node).borderTopWidth));
     expect(bubbleBorder).toBeGreaterThanOrEqual(1);
@@ -155,6 +160,13 @@ test(`${auditDemo}: independent desktop/tablet and mobile release audit`, async 
     await expect(logo).toBeVisible();
     expect((await logo.boundingBox()).width).toBeGreaterThanOrEqual(100);
     expect(mode.height).toBeGreaterThanOrEqual(60);
+    const screen = await renderedBox(page, '#chatScreen');
+    expect(screen.width).toBeGreaterThan(panel.width - 4);
+    const entry = await renderedBox(page, '#openAdvisor');
+    expect(entry.width).toBeGreaterThan(panel.width - 40);
+    const composerBox = await renderedBox(page, '#chatForm');
+    expect(composerBox.width).toBeGreaterThan(panel.width - 40);
+    await expect(page.locator('#chatMessages .message__avatar .six-vitazov-avatar').first()).toBeVisible();
   }
   if (auditDemo === 'diamonds') {
     await expect(page.locator('.widget-logo img[src*="diroastery-logo"]')).toBeVisible();
@@ -186,5 +198,10 @@ test(`${auditDemo}: independent desktop/tablet and mobile release audit`, async 
   await page.waitForTimeout(140);
   await expect(page.locator(demo.greeting).first()).toBeVisible();
   await expect(page.locator(demo.composer).first()).toBeVisible();
+  if (auditDemo === 'jolka') {
+    const mobileGreeting = await renderedBox(page, demo.greeting);
+    const mobileChip = await renderedBox(page, '.chip');
+    expect(mobileChip.y - (mobileGreeting.y + mobileGreeting.height)).toBeLessThanOrEqual(58);
+  }
   await page.screenshot({ path:`${artifacts}/${auditDemo}-chat-390.png`, fullPage:true });
 });
