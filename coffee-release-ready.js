@@ -9,7 +9,11 @@
     const screen = document.querySelector('#chatScreen');
     const chat = document.querySelector('#chat');
     const entry = document.querySelector('#entry');
-    if (screen && chat && entry && chat.nextElementSibling !== entry) screen.insertBefore(chat, entry);
+    const composer = screen?.querySelector('.composer-area');
+    if (!screen || !chat || !entry || !composer) return;
+    if (screen.firstElementChild !== entry) screen.insertBefore(entry, screen.firstElementChild);
+    if (entry.nextElementSibling !== chat) screen.insertBefore(chat, entry.nextElementSibling);
+    if (screen.lastElementChild !== composer) screen.appendChild(composer);
   }
 
   function settleFinishedResults() {
@@ -150,9 +154,6 @@
     settleOwnerPrice();
   }
 
-  /* Concept had a real user-visible failure where the branded launcher rendered
-     but an inherited layer prevented the panel from opening. Keep the native
-     listener, then recover only if it did not open the dialog. */
   document.addEventListener('click', (event) => {
     const conceptTrigger = event.target.closest('#openWidget,#heroOpen,#openFromTeaser');
     if (slug() === 'concept' && conceptTrigger) {
