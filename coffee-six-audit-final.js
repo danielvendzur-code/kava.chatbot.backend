@@ -155,6 +155,24 @@
       setI(mode, 'height', '60px');
       setI(mode, 'min-height', '60px');
     }
+
+    const chatScreen = document.querySelector('#chatScreen');
+    if (chatScreen) {
+      setI(chatScreen, 'width', '100%');
+      setI(chatScreen, 'max-width', 'none');
+      setI(chatScreen, 'align-self', 'stretch');
+      setI(chatScreen, 'box-sizing', 'border-box');
+    }
+    ['#openAdvisor','#chatMessages','#quickChips','#chatForm'].forEach((selector) => {
+      const node = document.querySelector(selector);
+      if (!node) return;
+      setI(node, 'width', 'calc(100% - 26px)');
+      setI(node, 'max-width', 'none');
+      setI(node, 'box-sizing', 'border-box');
+      setI(node, 'margin-left', '13px');
+      setI(node, 'margin-right', '13px');
+    });
+
     const entry = document.querySelector('#openAdvisor');
     if (entry) {
       setI(entry, 'height', '70px');
@@ -165,6 +183,22 @@
         setI(media, 'height', '60px');
       }
     }
+    const chat = document.querySelector('#chatMessages');
+    if (chat) {
+      setI(chat, 'padding-left', '0');
+      setI(chat, 'padding-right', '0');
+    }
+    document.querySelectorAll('#chatMessages .message__avatar').forEach((avatar) => {
+      let img = avatar.querySelector('.six-vitazov-avatar');
+      if (!img) {
+        avatar.replaceChildren();
+        img = document.createElement('img');
+        img.className = 'six-vitazov-avatar';
+        img.src = '/assets/vitazov-logo.svg';
+        img.alt = '';
+        avatar.appendChild(img);
+      }
+    });
     const bottom = document.querySelector('#chatScreen .chat-bottom');
     if (bottom) {
       setI(bottom, 'width', '100%');
@@ -210,6 +244,7 @@
     if (back) {
       setI(back, 'opacity', '1');
       setI(back, 'color', '#2b221c');
+      setI(back, '-webkit-text-fill-color', '#2b221c');
       setI(back, 'background', '#fffdfa');
       setI(back, 'border-color', '#c7b397');
     }
