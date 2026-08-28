@@ -62,10 +62,18 @@
 
   function lockRenderedWidth(node, pixels) {
     if (!node || !Number.isFinite(pixels) || pixels < 1) return;
-    const width = `${Math.round(pixels)}px`;
-    setI(node, 'box-sizing', 'border-box'); setI(node, 'width', width); setI(node, 'min-width', width); setI(node, 'max-width', width);
+    setI(node, 'box-sizing', 'border-box');
     setI(node, 'transform', 'none'); setI(node, 'scale', '1'); setI(node, 'zoom', '1'); setI(node, 'transition', 'none'); setI(node, 'animation', 'none');
     setI(node, 'justify-self', 'stretch'); setI(node, 'align-self', 'stretch');
+
+    let declared = Math.round(pixels);
+    for (let i = 0; i < 3; i += 1) {
+      const width = `${Math.max(1, declared)}px`;
+      setI(node, 'width', width); setI(node, 'min-width', width); setI(node, 'max-width', width);
+      const actual = node.getBoundingClientRect().width;
+      if (!Number.isFinite(actual) || Math.abs(actual - pixels) <= .5) break;
+      declared += pixels - actual;
+    }
   }
 
   function vitazov() {
@@ -99,6 +107,12 @@
     if (form) {
       lockRenderedWidth(form, targetWidth);
       setI(form, 'height', '54px'); setI(form, 'min-height', '54px'); setI(form, 'margin-left', '13px'); setI(form, 'margin-right', '13px');
+      const panelBox = panel?.getBoundingClientRect();
+      const formBox = form.getBoundingClientRect();
+      if (panelBox && formBox) {
+        const rightInset = panelBox.right - formBox.right;
+        if (rightInset < 10) lockRenderedWidth(form, Math.max(1, targetWidth - (10 - rightInset)));
+      }
     }
     document.querySelectorAll('#chatMessages .message__avatar img[src*="vitazov-logo"]').forEach((img) => img.classList.add('six-vitazov-avatar'));
   }
