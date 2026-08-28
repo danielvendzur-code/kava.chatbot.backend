@@ -1,0 +1,231 @@
+/* Final Jolka correction from screenshot review. Loaded after release-safety.css. */
+html body[data-coffee-final="jolka"] #widget.widget{
+  height:min(700px,calc(100dvh - 24px))!important;
+  max-height:700px!important;
+}
+html body[data-coffee-final="jolka"] #widget.widget:has(#chatScreen.is-active){
+  height:auto!important;
+  max-height:min(700px,calc(100dvh - 24px))!important;
+}
+html body[data-coffee-final="jolka"] #widget.widget:has(#chatScreen.is-active) .stage{
+  flex:none!important;
+  min-height:0!important;
+}
+
+/* CHAT: header/mode -> picker -> welcome -> small gap -> chips -> input. */
+html body[data-coffee-final="jolka"] #chatScreen.screen.is-active{
+  display:grid!important;
+  grid-template-rows:auto auto 8px auto!important;
+  min-height:0!important;
+  overflow:hidden!important;
+  align-content:start!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #entry{
+  order:initial!important;
+  grid-row:1!important;
+  width:calc(100% - 32px)!important;
+  min-height:82px!important;
+  height:82px!important;
+  margin:9px 16px 0!important;
+  padding:8px 13px 8px 8px!important;
+  align-self:start!important;
+  border-radius:20px!important;
+  background:linear-gradient(112deg,#fffdfa 40%,#f3e6d3)!important;
+  border-color:#d3c2aa!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #entry .entry__thumb{
+  width:64px!important;
+  height:64px!important;
+  border-radius:14px!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #entry .entry__copy small{
+  font-size:10.5px!important;
+  color:#87552d!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #entry .entry__copy b{
+  font-size:16px!important;
+  line-height:1.15!important;
+  color:#1f1915!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #entry .entry__copy span{
+  font-size:11.5px!important;
+  line-height:1.3!important;
+  color:#5d5047!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat{
+  order:initial!important;
+  grid-row:2!important;
+  flex:none!important;
+  min-height:0!important;
+  height:auto!important;
+  max-height:150px!important;
+  overflow-y:auto!important;
+  justify-content:flex-start!important;
+  align-content:flex-start!important;
+  gap:8px!important;
+  padding:9px 16px 2px!important;
+  margin:0!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat:not(:has(.msg--user)){
+  flex:none!important;
+  overflow:visible!important;
+  padding-top:9px!important;
+  padding-bottom:2px!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat:has(.msg--user){
+  max-height:220px!important;
+  overflow-y:auto!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat .msg{
+  align-items:flex-start!important;
+  gap:8px!important;
+  margin:0!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat .msg__avatar{
+  width:34px!important;
+  height:34px!important;
+  min-width:34px!important;
+  margin:1px 0 0!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat .msg__avatar img{
+  width:28px!important;
+  height:28px!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat .bubble{
+  max-width:88%!important;
+  padding:10px 13px 11px!important;
+  border-radius:17px 17px 17px 7px!important;
+  border-color:#decfb9!important;
+  background:#faf2e7!important;
+  color:#211a16!important;
+  font-size:13px!important;
+  line-height:1.45!important;
+  box-shadow:none!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active .composer-area{
+  order:initial!important;
+  grid-row:4!important;
+  align-self:start!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  padding:0 16px 12px!important;
+  margin:0!important;
+  background:#fffdfa!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active .chips{
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  gap:7px!important;
+  margin:0 0 8px!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active .chip{
+  min-height:40px!important;
+  padding:7px 10px!important;
+  border-radius:999px!important;
+  border-color:#d0bda3!important;
+  background:#fffaf3!important;
+  color:#2b221c!important;
+  font-size:11.5px!important;
+  font-weight:650!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active .composer{
+  width:100%!important;
+  display:grid!important;
+  grid-template-columns:minmax(0,1fr) 48px!important;
+  gap:7px!important;
+  align-items:center!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active .composer__field{
+  width:100%!important;
+  min-width:0!important;
+  height:50px!important;
+  padding:0 16px!important;
+  border:1.5px solid #cbb89e!important;
+  border-radius:18px!important;
+  background:#fff!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active .composer__field input{
+  width:100%!important;
+  height:47px!important;
+  font-size:13.5px!important;
+  color:#241c17!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active .composer__field input::placeholder{
+  color:#76675d!important;
+  opacity:1!important;
+}
+html body[data-coffee-final="jolka"] #chatScreen.is-active .send{
+  width:48px!important;
+  height:48px!important;
+  min-width:48px!important;
+  border-radius:15px!important;
+}
+
+/* ADVISOR: never fade information; first-step Back remains a real escape to Chat. */
+html body[data-coffee-final="jolka"] #advisorScreen .advisor-top{
+  padding:10px 16px 9px!important;
+  gap:8px!important;
+}
+html body[data-coffee-final="jolka"] #advisorScreen .back,
+html body[data-coffee-final="jolka"] #advisorScreen .back[disabled]{
+  opacity:1!important;
+  color:#2b221c!important;
+  border-color:#c7b397!important;
+  background:#fffdfa!important;
+  cursor:pointer!important;
+}
+html body[data-coffee-final="jolka"] #advisorScreen .advisor-top__copy b{
+  color:#211a16!important;
+  opacity:1!important;
+}
+html body[data-coffee-final="jolka"] #advisorScreen .advisor-top__copy span{
+  color:#5b4d43!important;
+  opacity:1!important;
+}
+html body[data-coffee-final="jolka"] #advisorScreen .question h2{
+  color:#201914!important;
+  opacity:1!important;
+}
+html body[data-coffee-final="jolka"] #advisorScreen .option,
+html body[data-coffee-final="jolka"] #advisorScreen .option.is-dimmed,
+html body[data-coffee-final="jolka"] #advisorScreen .option[disabled]{
+  opacity:1!important;
+  filter:none!important;
+}
+html body[data-coffee-final="jolka"] #advisorScreen .option__copy{
+  position:relative!important;
+  z-index:2!important;
+  min-height:58px!important;
+  padding:9px 12px 11px!important;
+  background:#fffdfa!important;
+}
+html body[data-coffee-final="jolka"] #advisorScreen .option__copy b{
+  display:block!important;
+  color:#211a16!important;
+  opacity:1!important;
+  font-size:14px!important;
+  line-height:1.2!important;
+}
+html body[data-coffee-final="jolka"] #advisorScreen .option__copy small{
+  display:block!important;
+  color:#5c5047!important;
+  opacity:1!important;
+  font-size:11.5px!important;
+  line-height:1.35!important;
+}
+html body[data-coffee-final="jolka"] #advisorScreen .option__visual{
+  height:132px!important;
+  min-height:132px!important;
+}
+html body[data-coffee-final="jolka"] #advisorScreen .option.is-selected .option__copy{
+  background:#f3e5d0!important;
+}
+
+@media(max-width:480px){
+  html body[data-coffee-final="jolka"] #widget.widget,
+  html body[data-coffee-final="jolka"] #widget.widget:has(#chatScreen.is-active){inset:0!important;width:100vw!important;max-width:none!important;height:100dvh!important;max-height:none!important;border-radius:0!important}
+  html body[data-coffee-final="jolka"] #widget.widget:has(#chatScreen.is-active) .stage{flex:1!important;min-height:0!important}
+  html body[data-coffee-final="jolka"] #chatScreen.screen.is-active{grid-template-rows:auto auto minmax(8px,1fr) auto!important;align-content:stretch!important}
+  html body[data-coffee-final="jolka"] #advisorScreen .option__visual{height:112px!important;min-height:112px!important}
+  html body[data-coffee-final="jolka"] #chatScreen.is-active #entry{margin-top:7px!important}
+}

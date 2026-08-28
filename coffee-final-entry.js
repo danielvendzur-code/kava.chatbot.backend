@@ -60,70 +60,22 @@
 
   const commonScripts = ['/coffee-api-route.js', '/coffee-local-api.js'];
   const manifests = {
-    praziarnicka: {
-      styles: ['/praziarnicka-v13.css'],
-      scripts: ['/praziarnicka-v13.js']
-    },
+    praziarnicka: { styles: ['/praziarnicka-v13.css'], scripts: ['/praziarnicka-v13.js'] },
     concept: {
-      styles: [
-        '/concept-seasonal-foundation.css',
-        '/concept-seasonal-widget.css',
-        '/concept-seasonal-advisor.css',
-        '/concept-seasonal-responsive.css',
-        '/concept-jolka-scale.css',
-        '/coffee-premium-v2.css',
-        '/concept-final.css'
-      ],
-      scripts: [
-        '/concept-seasonal-config.js',
-        '/concept-seasonal-core.js',
-        '/concept-seasonal-shell.js',
-        '/concept-seasonal-shared.js',
-        '/concept-seasonal-score.js',
-        '/concept-seasonal-advisor-flow.js',
-        '/concept-seasonal-advisor-result.js',
-        '/concept-seasonal-advisor-completion.js',
-        '/concept-seasonal-chat.js',
-        '/concept-seasonal-init.js'
-      ]
+      styles: ['/concept-seasonal-foundation.css','/concept-seasonal-widget.css','/concept-seasonal-advisor.css','/concept-seasonal-responsive.css','/concept-jolka-scale.css','/coffee-premium-v2.css','/concept-final.css'],
+      scripts: ['/concept-seasonal-config.js','/concept-seasonal-core.js','/concept-seasonal-shell.js','/concept-seasonal-shared.js','/concept-seasonal-score.js','/concept-seasonal-advisor-flow.js','/concept-seasonal-advisor-result.js','/concept-seasonal-advisor-completion.js','/concept-seasonal-chat.js','/concept-seasonal-init.js']
     },
     kaffa: {
-      styles: [
-        '/kaffa-editorial.css',
-        '/kaffa-widget.css',
-        '/kaffa-jolka-scale.css',
-        '/coffee-premium-v2.css',
-        '/kaffa-final.css'
-      ],
-      scripts: ['/kaffa-data.js', '/kaffa-editorial.js', '/coffee-premium-v2.js', '/kaffa-final.js']
+      styles: ['/kaffa-editorial.css','/kaffa-widget.css','/kaffa-jolka-scale.css','/coffee-premium-v2.css','/kaffa-final.css'],
+      scripts: ['/kaffa-data.js','/kaffa-editorial.js','/coffee-premium-v2.js','/kaffa-final.js']
     },
     vitazov: {
-      styles: ['/coffee-v8.css', '/coffee-premium-v2.css', '/coffee-vitazov-final.css'],
-      scripts: [
-        '/coffee-configs.js',
-        '/coffee-brand-overrides.js',
-        '/coffee-vitazov-overrides.js',
-        '/coffee-v8.js',
-        '/coffee-vitazov-brand.js',
-        '/coffee-vitazov-final.js'
-      ]
+      styles: ['/coffee-v8.css','/coffee-premium-v2.css','/coffee-vitazov-final.css'],
+      scripts: ['/coffee-configs.js','/coffee-brand-overrides.js','/coffee-vitazov-overrides.js','/coffee-v8.js','/coffee-vitazov-brand.js','/coffee-vitazov-final.js']
     },
     diamonds: {
-      styles: [
-        '/coffee-v8-diamonds-landing.css',
-        '/coffee-v8-diamonds-widget.css',
-        '/coffee-v8-diamonds-jolka.css',
-        '/coffee-premium-v2.css',
-        '/coffee-diamonds-final.css'
-      ],
-      scripts: [
-        '/coffee-configs.js',
-        '/coffee-brand-overrides.js',
-        '/diamonds-director.js',
-        '/coffee-v8-diamonds-foundation.js',
-        '/coffee-v8-diamonds-controller.js',
-        '/coffee-diamonds-final.js'
-      ]
+      styles: ['/coffee-v8-diamonds-landing.css','/coffee-v8-diamonds-widget.css','/coffee-v8-diamonds-jolka.css','/coffee-premium-v2.css','/coffee-diamonds-final.css'],
+      scripts: ['/coffee-configs.js','/coffee-brand-overrides.js','/diamonds-director.js','/coffee-v8-diamonds-foundation.js','/coffee-v8-diamonds-controller.js','/coffee-diamonds-final.js']
     }
   };
 
@@ -133,16 +85,27 @@
     const manifest = manifests[slug];
     await loadAll(manifest.styles, addStyle);
     await loadAll(commonScripts, addScript);
+    await addScript('/coffee-api-stable.js');
     await loadAll(manifest.scripts, addScript);
     if (slug !== 'praziarnicka') await loadAll(finalScripts, addScript);
     await addScript('/coffee-usability-release.js');
-    await addStyle('/coffee-review-pass.css');
-    await addStyle('/coffee-review-corrections.css');
-    await addScript('/coffee-review-pass.js');
+
     await addStyle('/coffee-final-tune.css');
     await addStyle('/coffee-final-qa.css');
     await addScript('/coffee-final-tune.js');
+    await addScript('/coffee-api-restore.js');
     await addScript('/coffee-release-contract.js');
+    await addStyle('/coffee-final-polish-2026-08-27.css');
+    await addScript('/coffee-final-polish-2026-08-27.js');
+
+    await addStyle('/coffee-release-final.css');
+    await addScript('/coffee-release-final.js');
+    await addStyle('/coffee-release-safety.css');
+    await addStyle('/coffee-user-review-final.css');
+    await addStyle('/coffee-user-review-dom-fix.css');
+    await addScript('/coffee-release-ready.js');
+    await addStyle('/coffee-six-audit-final.css');
+    await addScript('/coffee-six-audit-final.js');
   };
 
   boot().catch((error) => {
