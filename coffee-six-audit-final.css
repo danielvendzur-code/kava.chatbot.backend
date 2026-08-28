@@ -1,0 +1,99 @@
+/* Authoritative six-demo visual release layer.
+   Loaded after every legacy/review layer so the six independent audits see
+   the same geometry the user sees. Keep this file narrow and deterministic. */
+
+:root{--six-ease:cubic-bezier(.22,.8,.3,1)}
+
+/* Shared: no washed-out helper copy. */
+body[data-coffee-final] :is(.kf-option small,.option__copy small,.answer-copy small,.pz13-option__copy small,.kf-question>p){opacity:1!important}
+
+/* PRAZIARNICKA ---------------------------------------------------------- */
+@media (min-width:481px) and (max-width:640px){
+  html body[data-coffee-final="praziarnicka"] #pz13-widget{
+    top:auto!important;left:auto!important;right:8px!important;bottom:8px!important;
+    width:calc(100vw - 16px)!important;max-width:none!important;
+    height:min(646px,calc(100dvh - 16px))!important;max-height:646px!important;
+    border-radius:28px!important;
+  }
+}
+html body[data-coffee-final="praziarnicka"] .pz13-advisor-entry{box-sizing:border-box!important}
+html body[data-coffee-final="praziarnicka"] .pz13-chat__messages{padding-top:8px!important}
+
+/* KAFFA ---------------------------------------------------------------- */
+@media (min-width:481px) and (max-width:640px){
+  html body[data-coffee-final="kaffa"] .kf-panel{
+    top:auto!important;left:auto!important;right:8px!important;bottom:8px!important;
+    width:calc(100vw - 16px)!important;max-width:none!important;
+    height:min(646px,calc(100dvh - 16px))!important;max-height:646px!important;
+    border-radius:28px!important;
+  }
+}
+html body[data-coffee-final="kaffa"] .kf-switch{height:60px!important;min-height:60px!important;padding:5px!important}
+html body[data-coffee-final="kaffa"] .kf-switch::before{top:5px!important;bottom:5px!important;left:5px!important;width:calc(50% - 5px)!important;transition:transform .34s var(--six-ease)!important}
+html body[data-coffee-final="kaffa"] .kf-switch button{min-height:50px!important;font-size:14px!important;font-weight:800!important;color:#40545a!important}
+html body[data-coffee-final="kaffa"] .kf-advisor-entry{width:calc(100% - 8px)!important;margin:4px!important;align-self:center!important}
+html body[data-coffee-final="kaffa"] .kf-advisor-entry__copy small{font-size:11.5px!important;line-height:1.3!important;color:#40565c!important}
+html body[data-coffee-final="kaffa"] .kf-question>p{font-size:12px!important;line-height:1.35!important;color:#435a60!important}
+html body[data-coffee-final="kaffa"] .kf-option{height:142px!important;grid-template-rows:90px auto!important}
+html body[data-coffee-final="kaffa"] .kf-option__visual{height:90px!important;min-height:90px!important}
+html body[data-coffee-final="kaffa"] .kf-option small{font-size:11.25px!important;line-height:1.28!important;color:#40565c!important}
+html body[data-coffee-final="kaffa"] .kf-message.bot{border-color:#b7d5dc!important;background:#eaf6f9!important;color:#17272c!important}
+html body[data-coffee-final="kaffa"] .kf-composer{box-sizing:border-box!important;margin:0!important}
+
+/* CONCEPT -------------------------------------------------------------- */
+@media (min-width:481px) and (max-width:640px){
+  html body[data-coffee-final="concept"] #widget.widget{
+    top:auto!important;left:auto!important;right:8px!important;bottom:8px!important;
+    width:calc(100vw - 16px)!important;max-width:none!important;
+    height:min(660px,calc(100dvh - 16px))!important;max-height:660px!important;
+    border-radius:28px!important;
+  }
+}
+html body[data-coffee-final="concept"] #openWidget.launcher__button{background:#df6345!important;border-color:#f2aa95!important;overflow:hidden!important;transition:background .28s var(--six-ease),border-color .28s var(--six-ease),transform .28s var(--six-ease),box-shadow .28s var(--six-ease)!important}
+html body[data-coffee-final="concept"] #openWidget.launcher__button:hover,html body[data-coffee-final="concept"] #openWidget.launcher__button:focus-visible{background:#2753a5!important;border-color:#8eaae1!important}
+html body[data-coffee-final="concept"] #openWidget .six-concept-logo{position:absolute!important;inset:9px!important;display:grid!important;place-items:center!important;border-radius:50%!important;background:#fff!important;overflow:hidden!important}
+html body[data-coffee-final="concept"] #openWidget .six-concept-logo img{display:block!important;width:112%!important;height:112%!important;max-width:none!important;object-fit:contain!important}
+html body[data-coffee-final="concept"] .mode__indicator{transition:transform .34s var(--six-ease)!important}
+html body[data-coffee-final="concept"] .message__avatar{border-radius:50%!important;background:#fff!important;overflow:hidden!important}
+html body[data-coffee-final="concept"] .bubble{border:1px solid #ddb9ad!important;background:#fff2ed!important;color:#27231f!important;opacity:1!important}
+html body[data-coffee-final="concept"] .option__copy small{font-size:11.25px!important;line-height:1.3!important;color:#584c47!important}
+html body[data-coffee-final="concept"] .result-main__copy h3{font-size:24px!important;line-height:1.06!important;color:#24211e!important}
+html body[data-coffee-final="concept"] .composer__shell{box-sizing:border-box!important}
+
+/* VICTORY -------------------------------------------------------------- */
+@media (min-width:481px) and (max-width:640px){
+  html body[data-coffee-final="vitazov"] #widget.widget{
+    top:auto!important;left:auto!important;right:8px!important;bottom:8px!important;
+    width:calc(100vw - 16px)!important;max-width:none!important;
+    height:min(680px,calc(100dvh - 16px))!important;max-height:680px!important;
+    border-radius:28px!important;
+  }
+}
+html body[data-coffee-final="vitazov"] .widget__header{height:72px!important;min-height:72px!important;background:#0d493d!important;border-bottom-color:#0a3b32!important;color:#fff!important}
+html body[data-coffee-final="vitazov"] .widget-brand img.cfr-vitazov-header-logo,html body[data-coffee-final="vitazov"] .widget-brand img.kv-widget-logo{width:128px!important;height:50px!important;max-width:128px!important;max-height:50px!important;object-fit:contain!important;object-position:left center!important;filter:brightness(0) invert(1)!important}
+html body[data-coffee-final="vitazov"] .widget-actions .icon-button{color:#fff!important;background:rgba(255,255,255,.08)!important;border-color:rgba(255,255,255,.28)!important}
+html body[data-coffee-final="vitazov"] .mode{height:60px!important;min-height:60px!important}
+html body[data-coffee-final="vitazov"] .mode__button{min-height:50px!important}
+html body[data-coffee-final="vitazov"] #openAdvisor{height:70px!important;min-height:70px!important;padding-top:5px!important;padding-bottom:5px!important}
+html body[data-coffee-final="vitazov"] #openAdvisor>span:first-child{width:68px!important;height:60px!important}
+html body[data-coffee-final="vitazov"] #advisorBody .option{height:136px!important;grid-template-rows:82px auto!important}
+html body[data-coffee-final="vitazov"] #advisorBody .option__photo{height:82px!important;min-height:82px!important}
+html body[data-coffee-final="vitazov"] #advisorBody .option__copy small{font-size:11.25px!important;line-height:1.28!important;color:#4f6a60!important}
+html body[data-coffee-final="vitazov"] #chatScreen .chat-bottom{width:100%!important;box-sizing:border-box!important}
+
+/* DIAMONDS ------------------------------------------------------------- */
+html body[data-coffee-final="diamonds"] #advisorContent .answer-card{opacity:1!important;grid-template-columns:1fr!important;overflow:hidden!important}
+html body[data-coffee-final="diamonds"] #advisorContent .answer-photo{width:100%!important;min-width:0!important;min-height:104px!important;aspect-ratio:16/8.8!important;overflow:hidden!important}
+html body[data-coffee-final="diamonds"] #advisorContent .answer-photo img{width:100%!important;height:100%!important;object-fit:cover!important}
+html body[data-coffee-final="diamonds"] #advisorContent :is(.answer-copy,.answer-copy b,.answer-copy small){opacity:1!important;color:#1f241c!important}
+
+/* JOLKA ---------------------------------------------------------------- */
+html body[data-coffee-final="jolka"] #chatScreen.is-active{display:grid!important;grid-template-rows:auto auto minmax(8px,1fr) auto!important;overflow:hidden!important}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #entry{grid-row:1!important;order:initial!important;margin:9px 16px 0!important}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat{grid-row:2!important;order:initial!important;width:100%!important;max-height:150px!important;padding:8px 16px 2px!important;overflow-y:auto!important}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat .msg:not(.msg--user){width:100%!important;display:flex!important;align-items:flex-start!important}
+html body[data-coffee-final="jolka"] #chatScreen.is-active #chat .msg:not(.msg--user) .bubble{display:block!important;visibility:visible!important;opacity:1!important;min-width:min(250px,calc(100% - 44px))!important;max-width:calc(100% - 44px)!important;width:auto!important;color:#211a16!important;background:#faf2e7!important;border-color:#decfb9!important}
+html body[data-coffee-final="jolka"] #chatScreen.is-active .composer-area{grid-row:4!important;order:initial!important;align-self:end!important}
+html body[data-coffee-final="jolka"] #advisorScreen .back,html body[data-coffee-final="jolka"] #advisorScreen .back[disabled]{opacity:1!important;color:#2b221c!important;border-color:#c7b397!important;background:#fffdfa!important}
+html body[data-coffee-final="jolka"] #advisorScreen .option__copy b{color:#211a16!important;opacity:1!important}
+html body[data-coffee-final="jolka"] #advisorScreen .option__copy small{color:#5c5047!important;opacity:1!important;font-size:11.5px!important}
