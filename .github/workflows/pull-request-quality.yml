@@ -41,10 +41,18 @@ jobs:
           test -f vercel.json
           test -f praziarnicka-v13.css
           test -f praziarnicka-v13.js
+          test -f coffee-release-authority.css
+          test -f coffee-release-authority.js
+          test -f tests/full-coffee-release-audit.spec.mjs
           grep -Fq 'coffee-final-entry.js' index.html
           for slug in praziarnicka diamonds kaffa vitazov concept jolka; do grep -Fq "$slug" coffee-final-entry.js || test "$slug" = jolka; done
           grep -Fq 'praziarnicka-v13.css' coffee-final-entry.js
           grep -Fq 'praziarnicka-v13.js' coffee-final-entry.js
+          grep -Fq 'coffee-release-authority.css' coffee-final-entry.js
+          grep -Fq 'coffee-release-authority.js' coffee-final-entry.js
+          ! grep -Fq "await addScript('/coffee-final-tune.js')" coffee-final-entry.js
+          ! grep -Fq "await addScript('/coffee-last-mile.js')" coffee-final-entry.js
+          ! grep -Fq "await addScript('/coffee-last-mile-repair.js')" coffee-final-entry.js
           grep -Fq '/ukazka/jolka' vercel.json
           grep -Fq '/ukazka/:slug' vercel.json
           grep -Fq "praziarnicka:" api/chat.js
@@ -57,6 +65,7 @@ jobs:
           grep -Fq "return nativeFetch('/api/chat', init)" coffee-api-route.js
           node --check coffee-bootstrap.js
           node --check coffee-final-entry.js
+          node --check coffee-release-authority.js
           node --check coffee-local-api.js
           node --check coffee-configs.js
           node --check coffee-brand-overrides.js
@@ -106,6 +115,11 @@ jobs:
           grep -Fq '/jolka/jolka-data.js' jolka.html
           grep -Fq '/jolka/jolka-app.js' jolka.html
           grep -Fq '/jolka/jolka-chat-flow.js' jolka.html
+          grep -Fq '/coffee-release-authority.css' jolka.html
+          grep -Fq '/coffee-release-authority.js' jolka.html
+          ! grep -Fq '/coffee-final-tune.js' jolka.html
+          ! grep -Fq '/coffee-last-mile.js' jolka.html
+          ! grep -Fq '/coffee-last-mile-repair.js' jolka.html
           grep -Fq '"/ukazka/jolka"' vercel.json
           grep -Fq "location.replace('/jolka.html')" coffee-bootstrap.js
           grep -Fq 'praziarenjolka.sk/eshop-kava/' api/chat.js
