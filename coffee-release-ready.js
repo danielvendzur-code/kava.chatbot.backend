@@ -50,19 +50,36 @@
   function settleKaffaChat() {
     if (document.body.dataset.coffeeFinal !== 'kaffa') return;
     const seed = document.querySelector('.kf-messages:not(.has-thread) .kf-chat-seed');
-    if (!seed) return;
+    if (seed) {
+      /* An older Kaffa layer stretched the untouched seed to 100% height and
+         pushed the welcome row down with margin-top:auto. That made a large empty
+         hole appear between "Nájsť svoju kávu" and the first bot message. */
+      setImportant(seed, 'min-height', '0');
+      setImportant(seed, 'height', 'auto');
+      setImportant(seed, 'flex', '0 0 auto');
+      setImportant(seed, 'gap', '6px');
 
-    /* An older Kaffa layer stretched the untouched seed to 100% height and
-       pushed the welcome row down with margin-top:auto. That made a large empty
-       hole appear between "Nájsť svoju kávu" and the first bot message. */
-    setImportant(seed, 'min-height', '0');
-    setImportant(seed, 'height', 'auto');
-    setImportant(seed, 'flex', '0 0 auto');
-    setImportant(seed, 'gap', '6px');
+      const botRow = seed.querySelector('.kf-message-row--bot') ||
+        [...seed.querySelectorAll('.kf-message-row')].find((row) => row.querySelector('.kf-message.bot'));
+      if (botRow) setImportant(botRow, 'margin-top', '0');
+    }
 
-    const botRow = seed.querySelector('.kf-message-row--bot') ||
-      [...seed.querySelectorAll('.kf-message-row')].find((row) => row.querySelector('.kf-message.bot'));
-    if (botRow) setImportant(botRow, 'margin-top', '0');
+    /* Old Kaffa styles used content-box sizing on the composer. Combined with a
+       later width:100% rule, its padding and border could spill two pixels past
+       the right edge on the tablet-width floating panel. Keep the entire bottom
+       tray geometrically inside the panel on every repaint. */
+    const footer = document.querySelector('.kf-chat-footer');
+    const composer = document.querySelector('.kf-composer');
+    if (footer) {
+      setImportant(footer, 'box-sizing', 'border-box');
+      setImportant(footer, 'width', '100%');
+      setImportant(footer, 'max-width', '100%');
+    }
+    if (composer) {
+      setImportant(composer, 'box-sizing', 'border-box');
+      setImportant(composer, 'width', '100%');
+      setImportant(composer, 'max-width', '100%');
+    }
   }
 
   function settleFinishedResults() {
