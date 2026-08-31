@@ -160,12 +160,12 @@
     await addLateStyle('/coffee-last-mile.css', 50);
     await addLateStyle('/coffee-last-mile-repair.css', 60);
     await addLateStyle('/coffee-release-authority.css', 100);
+    await addLateStyle('/coffee-release-contract.css', 110);
 
     /* Compatibility copy/photo hooks run once before the authority runtime.
        The authority runtime is the only script allowed to declare the final
        rendered state and deliberately does not fight Victory's photo nodes. */
     await addScript('/coffee-release-authority.js');
-    await addLateStyle('/coffee-release-contract.css', 110);
     await addScript('/coffee-release-contract.js');
   };
 

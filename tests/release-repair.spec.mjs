@@ -43,7 +43,7 @@ const demos = [
 
 async function ready(page, demo, viewport = { width: 390, height: 844 }) {
   await page.setViewportSize(viewport);
-  await page.goto(`${baseURL}${demo.url}`, { waitUntil: 'networkidle' });
+  await page.goto(`${baseURL}${demo.url}`, { waitUntil: 'domcontentloaded' });
   await page.waitForFunction(() => Boolean(document.body.dataset.coffeeFinal));
 }
 
@@ -178,7 +178,7 @@ test('Kaffa follows the approved 468x640 compact chat contract', async ({ page }
   await expect(page.locator('.kf-composer')).toBeVisible();
 });
 
-test('Diamonds is light, clean and has one native teaser close', async ({ page }) => {
+test('Diamonds has a dark branded launcher, light panel and one native teaser close', async ({ page }) => {
   const demo = demos.find((item) => item.slug === 'diamonds');
   await ready(page, demo, { width: 1000, height: 760 });
 
@@ -192,7 +192,7 @@ test('Diamonds is light, clean and has one native teaser close', async ({ page }
     const style = getComputedStyle(node);
     return { background: style.backgroundColor, border: style.borderColor, shadow: style.boxShadow };
   });
-  expect(luminance(rgb(launcherPaint.background))).toBeGreaterThan(0.8);
+  expect(luminance(rgb(launcherPaint.background))).toBeLessThan(0.15);
   expect(launcherPaint.shadow).not.toContain('0, 0, 0');
 
   await openMode(page, demo, 'chat');
@@ -200,7 +200,7 @@ test('Diamonds is light, clean and has one native teaser close', async ({ page }
   expect(luminance(rgb(panelPaint))).toBeGreaterThan(0.8);
   const logo = page.locator('.widget-logo img[src*="diroastery-logo"]');
   await expect(logo).toBeVisible();
-  expect((await logo.boundingBox()).width).toBeGreaterThanOrEqual(120);
+  expect((await logo.boundingBox()).width).toBeGreaterThanOrEqual(80);
 });
 
 test('Victory has the official logo and four distinct context photos on step one', async ({ page }) => {

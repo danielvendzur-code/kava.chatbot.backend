@@ -71,11 +71,17 @@
 
   function enforceDiamondsCopy() {
     if (slug !== 'diamonds') return;
+    const title = document.querySelector('#widgetTitle');
+    const description = document.querySelector('#widgetDescription');
+    if (title && title.textContent !== 'Diamonds Roastery') title.textContent = 'Diamonds Roastery';
+    if (description && (description.textContent.trim() !== 'Online poradca' || !description.querySelector('i'))) {
+      description.replaceChildren(document.createElement('i'), document.createTextNode('Online poradca'));
+    }
     const teaser = document.querySelector('.teaser');
     if (!teaser) return;
-    const title = teaser.querySelector('strong,b');
+    const teaserTitle = teaser.querySelector('strong,b');
     const copy = teaser.querySelector('span');
-    if (title) title.textContent = 'Nájdite svoju kávu';
+    if (teaserTitle) teaserTitle.textContent = 'Nájdite svoju kávu';
     if (copy) copy.textContent = '4 otázky · jedno odporúčanie';
   }
 
