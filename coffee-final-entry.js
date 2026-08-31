@@ -141,6 +141,7 @@
     await addScript('/coffee-review-pass.js');
     await addStyle('/coffee-final-tune.css');
     await addStyle('/coffee-final-qa.css');
+    await addStyle('/coffee-release-contract.css');
     await addScript('/coffee-final-tune.js');
     await addScript('/coffee-release-contract.js');
   };

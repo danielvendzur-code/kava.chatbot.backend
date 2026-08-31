@@ -92,7 +92,7 @@
       lockup: '<span class="mcb-wordmark"><b>KAFFA</b><small>SPECIALITY COFFEE BEANS</small></span>',
       theme: { ink: '#111111', brand: '#111111', accent: '#3d7d97', soft: '#f2ede4', paper: '#fcfbf8' },
       display: { family: 'Georgia, "Times New Roman", serif', weight: '400', tracking: '-.03em' },
-      chips: ['Espresso do automatu', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
+      chips: ['Espresso blend', 'Niečo na filter', 'Nechcem kyslú', 'Chcem ovocnú'],
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
 

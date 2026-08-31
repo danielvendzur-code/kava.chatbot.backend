@@ -79,8 +79,12 @@
 
     if (slug === 'vitazov') {
       const brand = document.querySelector('.widget-brand');
-      if (brand && !brand.querySelector('img[src*="vitazov-logo"]')) {
-        brand.replaceChildren(image('/assets/vitazov-logo.svg', 'kv-widget-logo cf-brand-logo', 'Káva Víťazov'));
+      if (brand && !brand.querySelector('.widget-brand__mark img[src*="vitazov-logo"]')) {
+        const mark = document.createElement('span');
+        mark.className = 'widget-brand__mark';
+        mark.dataset.officialBrand = 'vitazov';
+        mark.replaceChildren(image('/assets/vitazov-logo.svg', 'kv-widget-logo cf-brand-logo', 'Káva Víťazov'));
+        brand.replaceChildren(mark);
       }
       return;
     }
@@ -112,10 +116,10 @@
   }
 
   const praziarnickaPhotoMap = new Map([
-    ['Automat', ['/assets/jolka/method/automat.webp', 'scene']],
-    ['Pákový kávovar', ['/assets/jolka/method/lever.webp', 'scene']],
-    ['Moka kanvička', ['/assets/jolka/method/moka.webp', 'scene']],
-    ['Filter', ['/assets/jolka/method/filter.webp', 'scene']],
+    ['Automat', ['/assets/praziarnicka/prep-automatic.webp', 'scene']],
+    ['Pákový kávovar', ['/assets/praziarnicka/prep-lever.webp', 'scene']],
+    ['Moka kanvička', ['/assets/praziarnicka/prep-moka.webp', 'scene']],
+    ['Filter', ['/assets/praziarnicka/prep-filter.webp', 'scene']],
     ['Čokoláda a orechy', ['/assets/praziarnicka/official-paganini.jpg', 'product']],
     ['Sladká a vyvážená', ['/assets/praziarnicka/official-brazil.jpg', 'product']],
     ['Ovocná a svieža', ['/assets/praziarnicka/official-cuba.jpg', 'product']],
@@ -194,7 +198,7 @@
 
   const vitazovContextPhotos = {
     home: '/assets/jolka/method/lever.webp',
-    office: '/assets/jolka/method/automat.webp',
+    office: '/assets/jolka/method/both.webp',
     automatic: '/assets/jolka/method/automat.webp',
     discovery: '/assets/jolka/method/filter.webp'
   };

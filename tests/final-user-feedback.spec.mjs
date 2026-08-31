@@ -109,10 +109,12 @@ test('Praziarnicka uses four distinct non-Kaffa preparation photos', async ({ pa
   await expect(photos).toHaveCount(4);
   const sources = await photos.evaluateAll((nodes) => nodes.map((node) => node.getAttribute('src')));
   expect(new Set(sources).size).toBe(4);
-  sources.forEach((src) => {
-    expect(src).toContain('/assets/jolka/method/');
-    expect(src).not.toContain('/assets/kaffa/');
-  });
+  expect(sources).toEqual(expect.arrayContaining([
+    '/assets/praziarnicka/prep-automatic.webp',
+    '/assets/praziarnicka/prep-lever.webp',
+    '/assets/praziarnicka/prep-moka.webp',
+    '/assets/praziarnicka/prep-filter.webp'
+  ]));
 });
 
 test('Victory exposes a colored header, large official logo and four progress segments', async ({ page }) => {

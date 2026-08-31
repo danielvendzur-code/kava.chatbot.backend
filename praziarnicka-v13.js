@@ -6,7 +6,7 @@
 
   const asset = (name) => `/assets/praziarnicka/${name}`;
   const logoUrl = '/brand/praziarnicka-logo-official.png';
-  const iconUrl = '/brand/praziarnicka-icon-official.svg';
+  const iconUrl = '/brand/praziarnicka-mark.svg';
   const esc = (value = '') => String(value).replace(/[&<>"']/g, (char) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[char]));
   const svg = (body) => `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">${body}</svg>`;
   const path = (d) => `<path d="${d}" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>`;

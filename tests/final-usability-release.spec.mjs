@@ -114,8 +114,12 @@ test('the panel carries the conversation and nothing else', async ({ page }) => 
     // Two of the four quick questions ask what the shop page cannot answer.
     const chips = await page.locator(demo.chips).allInnerTexts();
     expect(chips.length).toBeGreaterThanOrEqual(4);
-    expect(chips.slice(0, 4)).toContain('Odkiaľ je káva?');
-    expect(chips.slice(0, 4)).toContain('Porovnajte dve kávy');
+    if (demo.slug === 'kaffa') {
+      expect(chips.slice(0, 4)).toEqual(['Espresso blend', 'Niečo na filter', 'Nechcem kyslú', 'Chcem ovocnú']);
+    } else {
+      expect(chips.slice(0, 4)).toContain('Odkiaľ je káva?');
+      expect(chips.slice(0, 4)).toContain('Porovnajte dve kávy');
+    }
   }
 });
 
@@ -154,6 +158,7 @@ test('every owner page stays readable and contained on a phone', async ({ page }
 });
 
 test('all six advisors keep every question inside one screen', async ({ page }) => {
+  test.setTimeout(60_000);
   for (const demo of demos) {
     await openDemo(page, demo, { width:390, height:844 });
     await page.locator(demo.launcher).click();

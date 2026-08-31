@@ -78,11 +78,17 @@
     const entryTitle = document.querySelector('.kf-advisor-entry__copy b');
     setText(entryTitle, 'Nájsť svoju kávu');
 
-    document.querySelectorAll('.kf-bot-avatar,.kf-advisor-entry__mark').forEach((avatar) => {
+    document.querySelectorAll('.kf-advisor-entry__mark').forEach((avatar) => {
       if (!avatar.querySelector('svg')) avatar.innerHTML = bubble;
     });
 
-    const chipLabels = ['Espresso do automatu', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'];
+    document.querySelectorAll('.kf-bot-avatar').forEach((avatar) => {
+      if (!avatar.querySelector('.kf-wordmark')) {
+        avatar.innerHTML = '<span class="kf-wordmark" aria-label="Kaffa Roastery"><strong>KAFFA</strong><small>speciality coffee beans</small></span>';
+      }
+    });
+
+    const chipLabels = ['Espresso blend', 'Niečo na filter', 'Nechcem kyslú', 'Chcem ovocnú'];
     document.querySelectorAll('.kf-chip').forEach((chip, index) => {
       if (chipLabels[index]) setText(chip, chipLabels[index]);
     });

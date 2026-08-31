@@ -1,0 +1,107 @@
+/* Jolka parity contract — deliberately loaded after every legacy/final layer. */
+:root { --cf-smooth: cubic-bezier(.22, 1, .36, 1); }
+
+/* Muted copy stays secondary without becoming illegible. */
+.mcb-page { --mcb-muted: color-mix(in srgb, var(--mcb-ink) 76%, transparent) !important; }
+body[data-coffee-final] :is(.mcb-page small, .mcb-page .mcb-muted, .mcb-page .mcb-plan-price span) { opacity: .82 !important; }
+
+/* The segmented controls should glide instead of snapping. */
+body[data-coffee-final] :is(.mode__thumb, .mode__indicator, .pz13-mode-thumb, .kf-switch::before, .mode-switch::before) {
+  transition: transform .38s var(--cf-smooth), width .38s var(--cf-smooth), background-color .2s ease !important;
+}
+
+/* Clear, brand-filled chip feedback like mojplot, only on devices with hover. */
+@media (hover:hover) {
+  body[data-coffee-final="praziarnicka"] .pz13-chip:hover { background:#123f35 !important; border-color:#123f35 !important; color:#fff !important; }
+  body[data-coffee-final="kaffa"] .kf-chip:hover { background:#111 !important; border-color:#111 !important; color:#fff !important; }
+  body[data-coffee-final="diamonds"] #quickChips button:hover { background:#111 !important; border-color:#111 !important; color:#fff !important; }
+  body[data-coffee-final="vitazov"] .chip:hover { background:#0e493c !important; border-color:#0e493c !important; color:#fff !important; }
+  body[data-coffee-final="concept"] .chip:hover { background:#25231f !important; border-color:#25231f !important; color:#fff !important; }
+  body[data-coffee-final="jolka"] .chip:hover { background:var(--ink) !important; border-color:var(--ink) !important; color:var(--on-ink) !important; }
+}
+
+/* Composer is visible at a glance, while focus remains the strongest state. */
+body[data-coffee-final] :is(.pz13-composer, .kf-composer, .composer, .composer__shell) {
+  border-width:1.5px !important;
+  box-shadow:0 5px 18px -16px rgba(24,31,27,.55) !important;
+}
+body[data-coffee-final] :is(.pz13-composer, .kf-composer, .composer, .composer__shell):focus-within {
+  border-color:currentColor !important;
+  box-shadow:0 0 0 3px color-mix(in srgb, currentColor 12%, transparent) !important;
+}
+
+/* Question steps never need an internal scrollbar; summaries may scroll. */
+body[data-coffee-final] :is(.pz13-advisor__body, .kf-stage, .advisor-content, #advisorBody, .advisor) { scrollbar-width:none !important; }
+body[data-coffee-final] :is(.pz13-advisor__body, .kf-stage, .advisor-content, #advisorBody, .advisor)::-webkit-scrollbar { display:none !important; }
+
+/* Praziarnicka */
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-mode button:is(.is-active,[aria-pressed="true"]) { color:#fff !important; background:#123f35 !important; }
+body[data-coffee-final="praziarnicka"] .pz13-launcher img { width:100% !important; height:100% !important; padding:0 !important; border-radius:50% !important; object-fit:cover !important; }
+body[data-coffee-final="praziarnicka"] #pz13-widget #pz13-close { transition:none !important; }
+body[data-coffee-final="praziarnicka"] #pz13-widget #pz13-close:hover,
+body[data-coffee-final="praziarnicka"] #pz13-widget #pz13-close:focus-visible { color:#b42318 !important; background:#fff0ef !important; border-color:#efc3bd !important; }
+
+/* Kaffa: remove the inherited empty flex spacer and animation scale. */
+body[data-coffee-final="kaffa"] #panel.kf-panel {
+  width:468px !important; min-width:468px !important; max-width:468px !important;
+  height:640px !important; min-height:640px !important; max-height:640px !important;
+  transform:none !important; animation:none !important;
+}
+body[data-coffee-final="kaffa"] #messages.kf-messages { justify-content:flex-start !important; align-content:start !important; }
+body[data-coffee-final="kaffa"] #messages.kf-messages:not(.has-thread) .kf-chat-seed { min-height:0 !important; height:auto !important; margin:0 !important; gap:4px !important; flex:none !important; }
+body[data-coffee-final="kaffa"] #messages .kf-chat-seed > .kf-message-row--bot { margin:0 !important; }
+body[data-coffee-final="kaffa"] #panel .kf-chat-footer .kf-composer { box-sizing:border-box !important; height:50px !important; min-height:50px !important; max-height:50px !important; }
+
+/* Diamonds: welcome begins directly under the advisor card and the launcher is clean. */
+body[data-coffee-final="diamonds"] #widget #chatMessages.chat-messages { justify-content:flex-start !important; align-content:start !important; padding:7px 13px 8px !important; }
+body[data-coffee-final="diamonds"] #widget #chatMessages > .chat-line:first-child { margin:0 !important; }
+body[data-coffee-final="diamonds"] #launcherButton.launcher-button {
+  background:#fff !important;
+  box-shadow:0 16px 36px -25px rgba(93,124,47,.42) !important;
+}
+body[data-coffee-final="diamonds"] #launcherButton.launcher-button img { background:transparent !important; }
+body[data-coffee-final="diamonds"] #widget .chat-bottom .composer { box-sizing:border-box !important; height:50px !important; min-height:50px !important; max-height:50px !important; }
+body[data-coffee-final="diamonds"] #widget .widget-head .widget-logo { width:150px !important; min-width:150px !important; max-width:150px !important; height:43px !important; padding:2px 4px !important; }
+body[data-coffee-final="diamonds"] #widget .widget-head .widget-logo img.cf-brand-logo { width:140px !important; min-width:140px !important; max-width:140px !important; height:39px !important; }
+body[data-coffee-final="diamonds"] #widget #chatScreen .chat-logo { background:#fff !important; }
+body[data-coffee-final="diamonds"] #widget #chatScreen .chat-logo img.cf-brand-logo { display:block !important; width:76px !important; min-width:76px !important; max-width:76px !important; height:34px !important; max-height:34px !important; object-fit:contain !important; object-position:left center !important; filter:none !important; transform:none !important; }
+
+/* Vitazov: official wide logo, centered in a stable mark wrapper. */
+body[data-coffee-final="vitazov"] #widget .widget-brand .widget-brand__mark {
+  width:150px !important; height:50px !important; min-width:150px !important;
+  display:grid !important; place-items:center !important; overflow:visible !important;
+  border:0 !important; background:transparent !important;
+}
+body[data-coffee-final="vitazov"] #widget .widget-brand .widget-brand__mark img.kv-widget-logo {
+  width:142px !important; min-width:142px !important; max-width:142px !important; height:48px !important;
+  object-fit:contain !important; object-position:center !important;
+}
+body[data-coffee-final="vitazov"] #widget #chatMessages .bubble { font-size:12.5px !important; }
+body[data-coffee-final="vitazov"] #widget #advisorBody .option { height:111px !important; min-height:111px !important; padding:4px !important; grid-template-rows:55px 48px !important; }
+body[data-coffee-final="vitazov"] #widget #advisorBody .option__photo { height:55px !important; min-height:55px !important; }
+body[data-coffee-final="vitazov"] #widget #advisorBody .option__copy { height:48px !important; min-height:0 !important; padding:4px 3px 0 !important; align-content:center !important; }
+body[data-coffee-final="vitazov"] #widget #advisorBody .option__photo { background-image:url('/assets/vitazov-choice-sprite.png') !important; background-size:400% 400% !important; }
+body[data-coffee-final="vitazov"] #widget #advisorBody .option[data-value="home"] .option__photo { background-position:0 0 !important; }
+body[data-coffee-final="vitazov"] #widget #advisorBody .option[data-value="office"] .option__photo { background-position:33.333% 0 !important; }
+body[data-coffee-final="vitazov"] #widget #advisorBody .option[data-value="automatic"] .option__photo { background-position:66.666% 0 !important; }
+body[data-coffee-final="vitazov"] #widget #advisorBody .option[data-value="discovery"] .option__photo { background-position:100% 0 !important; }
+
+/* Concept's old box model added padding on top of its declared height. */
+body[data-coffee-final="concept"] #widget .composer .composer__shell { box-sizing:border-box !important; height:50px !important; min-height:50px !important; max-height:50px !important; flex-basis:50px !important; }
+
+/* Jolka polish requested by the owner. */
+body[data-coffee-final="jolka"] .back { color:var(--text) !important; }
+body[data-coffee-final="jolka"] .back[disabled] { color:#1b1613 !important; opacity:1 !important; }
+body[data-coffee-final="jolka"] .option__visual { height:clamp(110px, 17vh, 158px) !important; flex:0 0 clamp(110px, 17vh, 158px) !important; }
+body[data-coffee-final="jolka"] .option__copy { padding:9px 12px 10px !important; }
+body[data-coffee-final="jolka"] .widget__note { padding-bottom:9px !important; }
+body[data-coffee-final] [data-price-animated="true"] { font-variant-numeric:tabular-nums; }
+
+@media (max-width:640px) {
+  body[data-coffee-final] :is(.widget,.pz13-widget,.kf-panel,#widget) { padding-bottom:env(safe-area-inset-bottom) !important; }
+  body[data-coffee-final="jolka"] .widget { height:100dvh !important; max-height:100dvh !important; }
+  body[data-coffee-final="jolka"] .option__visual { height:clamp(130px, 19vh, 170px) !important; flex-basis:clamp(130px, 19vh, 170px) !important; }
+  body[data-coffee-final="jolka"] .option__copy { padding:8px 10px 9px !important; }
+  body[data-coffee-final="kaffa"] #panel.kf-panel { width:100% !important; min-width:0 !important; max-width:none !important; height:100dvh !important; min-height:100dvh !important; max-height:100dvh !important; }
+  body[data-coffee-final="praziarnicka"] #pz13-widget.pz13-widget { height:calc(100dvh - 1px) !important; max-height:calc(100dvh - 1px) !important; }
+}
