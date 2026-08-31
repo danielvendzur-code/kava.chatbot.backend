@@ -1,0 +1,539 @@
+/*
+ * Coffee last-mile repair layer.
+ * This file is intentionally loaded as the highest ranked BODY stylesheet.
+ * It only fixes verified visual regressions from the first CI/visual pass.
+ */
+
+:root{--clmr-ease:cubic-bezier(.22,.8,.28,1)}
+
+/* All close controls stay neutral until hover/focus, then become clearly destructive. */
+body[data-coffee-final] :is(#closeWidget,#pz13-close,#close,.kf-icon-btn[aria-label*="Zavrieť"]):hover,
+body[data-coffee-final] :is(#closeWidget,#pz13-close,#close,.kf-icon-btn[aria-label*="Zavrieť"]):focus-visible{
+  color:#b42318!important;
+  background:#fff0ef!important;
+  border-color:#e9aaa2!important;
+}
+
+/* ========================================================================== */
+/* PRAZIARNICKA                                                               */
+/* ========================================================================== */
+body[data-coffee-final="praziarnicka"] .pz13-widget{
+  width:min(472px,calc(100vw - 20px))!important;
+}
+body[data-coffee-final="praziarnicka"] .pz13-mode-shell{padding:7px 10px 3px!important}
+body[data-coffee-final="praziarnicka"] .pz13-mode{
+  width:100%!important;
+  height:52px!important;
+  min-height:52px!important;
+  padding:4px!important;
+}
+body[data-coffee-final="praziarnicka"] .pz13-mode-thumb{
+  top:4px!important;
+  left:4px!important;
+  width:calc(50% - 6px)!important;
+  height:44px!important;
+  transition:transform .34s var(--clmr-ease),background-color .2s ease,box-shadow .2s ease!important;
+}
+body[data-coffee-final="praziarnicka"] .pz13-mode.is-advisor .pz13-mode-thumb{
+  transform:translateX(calc(100% + 4px))!important;
+}
+body[data-coffee-final="praziarnicka"] .pz13-mode button{
+  min-height:44px!important;
+  font-size:14px!important;
+  font-weight:800!important;
+}
+body[data-coffee-final="praziarnicka"] .pz13-mode button.is-active,
+body[data-coffee-final="praziarnicka"] .pz13-mode button[aria-pressed="true"]{color:#fff!important}
+body[data-coffee-final="praziarnicka"] .pz13-chat__messages{
+  padding-top:6px!important;
+  justify-content:flex-start!important;
+  align-content:flex-start!important;
+}
+body[data-coffee-final="praziarnicka"] .pz13-advisor-entry{
+  min-height:72px!important;
+  height:72px!important;
+  grid-template-columns:62px minmax(0,1fr) 20px!important;
+  padding:5px 10px 5px 5px!important;
+}
+body[data-coffee-final="praziarnicka"] .pz13-advisor-entry>span:first-child{
+  width:62px!important;
+  height:60px!important;
+  overflow:hidden!important;
+  border:1px solid #d7e5df!important;
+  border-radius:14px!important;
+  color:transparent!important;
+  background:#f5f0e8 url('/assets/praziarnicka/official-puccini.jpg') center/cover no-repeat!important;
+}
+body[data-coffee-final="praziarnicka"] .pz13-advisor-entry>span:first-child>*{opacity:0!important}
+body[data-coffee-final="praziarnicka"] .pz13-launcher__button{
+  position:relative!important;
+  overflow:hidden!important;
+  border:2px solid #fff!important;
+  background:#f5f0e8 url('/assets/praziarnicka/official-puccini.jpg') center/cover no-repeat!important;
+  box-shadow:0 15px 34px -20px rgba(18,63,53,.5),0 0 0 1px #b8d2c7!important;
+}
+body[data-coffee-final="praziarnicka"] .pz13-launcher__button>*{opacity:0!important}
+body[data-coffee-final="praziarnicka"] .pz13-launcher__button::after{
+  content:""!important;
+  position:absolute!important;
+  inset:5px!important;
+  border:1px solid rgba(255,255,255,.75)!important;
+  border-radius:50%!important;
+  pointer-events:none!important;
+}
+
+/* ========================================================================== */
+/* DIAMONDS                                                                   */
+/* ========================================================================== */
+body[data-coffee-final="diamonds"] #widget{
+  width:min(470px,calc(100vw - 20px))!important;
+  color:#132117!important;
+  background:#fff!important;
+}
+body[data-coffee-final="diamonds"] #launcherButton{
+  overflow:hidden!important;
+  border:1px solid #d7e3c2!important;
+  color:#17301e!important;
+  background:#fbfcf8!important;
+  box-shadow:0 18px 38px -24px rgba(66,94,42,.42),0 0 0 1px rgba(160,190,94,.2)!important;
+}
+body[data-coffee-final="diamonds"] #launcherButton img{
+  width:100%!important;
+  height:100%!important;
+  padding:6px!important;
+  object-fit:contain!important;
+  clip-path:circle(46% at 50% 50%)!important;
+}
+body[data-coffee-final="diamonds"] .mode-switch{
+  width:calc(100% - 16px)!important;
+  height:58px!important;
+  min-height:58px!important;
+  flex:0 0 58px!important;
+  margin:8px 8px 4px!important;
+  padding:4px!important;
+  border-color:#cfe09f!important;
+  background:#f2f7e7!important;
+}
+body[data-coffee-final="diamonds"] .mode-switch button{
+  min-height:48px!important;
+  font-size:14px!important;
+  color:#344231!important;
+}
+body[data-coffee-final="diamonds"] .mode-switch button.is-active{
+  color:#fff!important;
+  background:#719d0b!important;
+}
+body[data-coffee-final="diamonds"] #chatScreen.is-active{
+  display:flex!important;
+  flex-direction:column!important;
+  min-height:0!important;
+  overflow:hidden!important;
+  padding-top:4px!important;
+  background:#fff!important;
+}
+body[data-coffee-final="diamonds"] #openAdvisor{
+  width:calc(100% - 20px)!important;
+  min-height:74px!important;
+  height:74px!important;
+  grid-template-columns:86px minmax(0,1fr) 24px!important;
+  gap:10px!important;
+  margin:4px 10px 5px!important;
+  padding:5px 9px 5px 5px!important;
+  border-color:#bcd477!important;
+  background:#f3f8e7!important;
+}
+body[data-coffee-final="diamonds"] #openAdvisor>span:first-child{
+  width:86px!important;
+  height:62px!important;
+  overflow:hidden!important;
+  border:0!important;
+  border-radius:13px!important;
+  background:url('/assets/kaffa/prep-espresso.webp') center/cover no-repeat!important;
+}
+body[data-coffee-final="diamonds"] #openAdvisor>span:first-child>*{opacity:0!important}
+body[data-coffee-final="diamonds"] #openAdvisor b{font-size:14px!important;color:#142018!important}
+body[data-coffee-final="diamonds"] #openAdvisor em{font-size:10.5px!important;color:#5d6c5f!important}
+body[data-coffee-final="diamonds"] #chatMessages{
+  flex:0 1 auto!important;
+  height:auto!important;
+  min-height:0!important;
+  max-height:220px!important;
+  margin:0!important;
+  padding:5px 12px 7px!important;
+  justify-content:flex-start!important;
+  align-content:flex-start!important;
+  overflow-y:auto!important;
+}
+body[data-coffee-final="diamonds"] .chat-bottom{
+  margin-top:auto!important;
+  padding:8px 12px max(10px,env(safe-area-inset-bottom))!important;
+  border-top:1px solid #e2e9d8!important;
+  background:#fbfcf8!important;
+}
+body[data-coffee-final="diamonds"] .quick-grid button{
+  min-height:42px!important;
+  border:1px solid #aeca64!important;
+  color:#19311e!important;
+  background:#eef5dd!important;
+  font-size:12.5px!important;
+  font-weight:760!important;
+}
+body[data-coffee-final="diamonds"] .chat-logo{
+  width:36px!important;
+  height:36px!important;
+  min-width:36px!important;
+  padding:0!important;
+  overflow:hidden!important;
+  border:0!important;
+  border-radius:50%!important;
+  background:#fff!important;
+  box-shadow:none!important;
+}
+body[data-coffee-final="diamonds"] .chat-logo img{
+  width:38px!important;
+  height:38px!important;
+  max-width:none!important;
+  object-fit:contain!important;
+  transform:translate(-1px,-1px) scale(.96)!important;
+  clip-path:circle(45% at 50% 50%)!important;
+}
+body[data-coffee-final="diamonds"] .chat-bubble{
+  color:#202721!important;
+  background:#f4f5f1!important;
+}
+body[data-coffee-final="diamonds"] .composer{height:50px!important;min-height:50px!important}
+body[data-coffee-final="diamonds"] .answers{grid-template-columns:1fr 1fr!important;gap:8px!important}
+body[data-coffee-final="diamonds"] .answer-card{
+  height:176px!important;
+  min-height:176px!important;
+  grid-template-columns:1fr!important;
+  grid-template-rows:108px 1fr!important;
+  gap:5px!important;
+  padding:5px!important;
+  border-color:#c7da91!important;
+  color:#142018!important;
+  background:#fbfcf8!important;
+}
+body[data-coffee-final="diamonds"] .answer-photo{
+  width:100%!important;
+  height:108px!important;
+  min-height:108px!important;
+  border-radius:13px!important;
+  overflow:hidden!important;
+}
+body[data-coffee-final="diamonds"] .answer-photo .cf-real-photo{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+}
+body[data-coffee-final="diamonds"] .answer-copy{padding:2px 6px 5px!important;gap:2px!important}
+body[data-coffee-final="diamonds"] .answer-copy b{font-size:13px!important;line-height:1.16!important;color:#102016!important;opacity:1!important}
+body[data-coffee-final="diamonds"] .answer-copy small{font-size:9.5px!important;line-height:1.2!important;color:#526157!important;opacity:1!important}
+
+/* ========================================================================== */
+/* KAFFA                                                                      */
+/* ========================================================================== */
+body[data-coffee-final="kaffa"] .kf-panel{width:min(470px,calc(100vw - 20px))!important}
+body[data-coffee-final="kaffa"] .kf-switch{
+  width:calc(100% - 20px)!important;
+  height:56px!important;
+  min-height:56px!important;
+  margin:7px 10px 3px!important;
+  padding:4px!important;
+}
+body[data-coffee-final="kaffa"] .kf-switch button{min-height:46px!important;font-size:14px!important}
+body[data-coffee-final="kaffa"] .kf-switch::before{transition:transform .34s var(--clmr-ease)!important}
+body[data-coffee-final="kaffa"] .kf-chat{
+  height:100%!important;
+  display:flex!important;
+  flex-direction:column!important;
+  overflow:hidden!important;
+  background:#fff!important;
+}
+body[data-coffee-final="kaffa"] .kf-messages{
+  flex:0 1 auto!important;
+  min-height:0!important;
+  height:auto!important;
+  max-height:220px!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:flex-start!important;
+  align-items:stretch!important;
+  overflow-y:auto!important;
+  padding:5px 12px 7px!important;
+}
+body[data-coffee-final="kaffa"] .kf-chat-seed{
+  width:100%!important;
+  min-height:0!important;
+  height:auto!important;
+  margin:0!important;
+  padding:0!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:flex-start!important;
+  align-items:stretch!important;
+  gap:7px!important;
+}
+body[data-coffee-final="kaffa"] .kf-advisor-entry{
+  width:100%!important;
+  min-height:74px!important;
+  height:74px!important;
+  grid-template-columns:84px minmax(0,1fr) 34px!important;
+  gap:10px!important;
+  margin:0!important;
+  padding:5px 8px 5px 5px!important;
+  color:#171918!important;
+  background:#f4fafc!important;
+}
+body[data-coffee-final="kaffa"] .kf-advisor-entry__mark{
+  width:84px!important;
+  height:62px!important;
+  border-radius:13px!important;
+  background:url('/assets/kaffa/prep-espresso.webp') center/cover no-repeat!important;
+}
+body[data-coffee-final="kaffa"] .kf-advisor-entry__copy b{font-size:14px!important;color:#171918!important}
+body[data-coffee-final="kaffa"] .kf-advisor-entry__copy small{display:block!important;font-size:10px!important;color:#667276!important}
+body[data-coffee-final="kaffa"] .kf-chat-footer{
+  margin-top:auto!important;
+  padding:7px 12px max(9px,env(safe-area-inset-bottom))!important;
+  background:#f8faf8!important;
+}
+body[data-coffee-final="kaffa"] .kf-composer{width:100%!important;height:48px!important;min-height:48px!important;margin:0!important}
+body[data-coffee-final="kaffa"] .kf-option--photo{
+  height:150px!important;
+  min-height:150px!important;
+  max-height:150px!important;
+  grid-template-rows:106px 44px!important;
+  padding:5px!important;
+}
+body[data-coffee-final="kaffa"] .kf-option--photo .kf-option__visual{
+  width:100%!important;
+  height:106px!important;
+  min-height:106px!important;
+  border-radius:12px!important;
+}
+body[data-coffee-final="kaffa"] .kf-option--photo .kf-option__copy{min-height:0!important;padding:7px 5px 3px!important}
+body[data-coffee-final="kaffa"] .kf-option--photo .kf-option__copy b{font-size:12px!important;color:#161a1b!important}
+body[data-coffee-final="kaffa"] .kf-option--photo .kf-option__copy small{display:none!important}
+
+/* ========================================================================== */
+/* VITAZOV                                                                    */
+/* ========================================================================== */
+body[data-coffee-final="vitazov"] .widget-brand{gap:8px!important}
+body[data-coffee-final="vitazov"] .widget-brand__mark{
+  width:124px!important;
+  min-width:124px!important;
+  height:44px!important;
+  display:flex!important;
+  align-items:center!important;
+  overflow:hidden!important;
+}
+body[data-coffee-final="vitazov"] .widget-brand__mark .kv-widget-logo,
+body[data-coffee-final="vitazov"] .widget-brand__mark img[src*="vitazov-logo"]{
+  width:124px!important;
+  min-width:124px!important;
+  height:42px!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+}
+body[data-coffee-final="vitazov"] .launcher__button{
+  overflow:hidden!important;
+  border:2px solid #fff!important;
+  box-shadow:0 18px 38px -20px rgba(7,31,26,.62),0 0 0 1px rgba(126,190,70,.45)!important;
+}
+body[data-coffee-final="vitazov"] .kv-launcher-logo{
+  width:100%!important;
+  height:100%!important;
+  display:grid!important;
+  place-items:center!important;
+  overflow:hidden!important;
+  border:0!important;
+  border-radius:50%!important;
+  background:#fff!important;
+}
+body[data-coffee-final="vitazov"] .kv-launcher-logo img{
+  width:116%!important;
+  height:116%!important;
+  max-width:none!important;
+  object-fit:contain!important;
+  clip-path:circle(43% at 50% 50%)!important;
+  transform:scale(1.03)!important;
+}
+body[data-coffee-final="vitazov"] #advisorBody .option{
+  height:114px!important;
+  min-height:114px!important;
+  grid-template-rows:61px 1fr!important;
+}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo{
+  height:61px!important;
+  min-height:61px!important;
+  background-color:#063f35!important;
+  background-image:url('/assets/vitazov-choice-sprite.png')!important;
+  background-size:400% 400%!important;
+}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo .cf-context-photo{display:none!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--home{background-position:0 0!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--office{background-position:33.333% 0!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--automatic{background-position:66.666% 0!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--discovery{background-position:100% 0!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--strong{background-position:0 33.333%!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--smooth{background-position:33.333% 33.333%!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--fruity{background-position:66.666% 33.333%!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--decaf{background-position:100% 33.333%!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--classic{background-position:0 66.666%!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--balanced{background-position:33.333% 66.666%!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--lever{background-position:66.666% 66.666%!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--moka{background-position:100% 66.666%!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--black{background-position:0 100%!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--milk{background-position:33.333% 100%!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--both{background-position:66.666% 100%!important}
+body[data-coffee-final="vitazov"] #advisorBody .option__photo--caffeine{background-position:100% 100%!important}
+
+/* ========================================================================== */
+/* CONCEPT                                                                    */
+/* ========================================================================== */
+body[data-coffee-final="concept"]{
+  --clmr-orange:#d85d2c;
+  --clmr-orange-soft:#fff0e8;
+  --clmr-blue:#177f9a;
+  --clmr-blue-soft:#e8f6f9;
+}
+body[data-coffee-final="concept"] .widget,
+body[data-coffee-final="concept"] .screen,
+body[data-coffee-final="concept"] #chatScreen,
+body[data-coffee-final="concept"] .chat,
+body[data-coffee-final="concept"] .advisor{background:#fff!important}
+body[data-coffee-final="concept"] .mode{
+  width:calc(100% - 18px)!important;
+  height:56px!important;
+  min-height:56px!important;
+  margin:7px 9px 3px!important;
+  padding:4px!important;
+  border-color:#efb79c!important;
+  background:#fff0e8!important;
+}
+body[data-coffee-final="concept"] .mode__indicator{
+  background:#d85d2c!important;
+  transition:transform .34s var(--clmr-ease),background-color .2s ease!important;
+}
+body[data-coffee-final="concept"] .mode__button{min-height:46px!important;font-size:14px!important;color:#604b42!important}
+body[data-coffee-final="concept"] .mode__button.is-active{color:#fff!important}
+body[data-coffee-final="concept"] .mode__button:hover{color:#177f9a!important}
+body[data-coffee-final="concept"] .advisor-entry{
+  min-height:74px!important;
+  height:74px!important;
+  grid-template-columns:86px minmax(0,1fr) 34px!important;
+  margin:5px 10px 5px!important;
+  padding:5px 9px 5px 5px!important;
+  border-color:#efb79c!important;
+  background:#fff4ee!important;
+}
+body[data-coffee-final="concept"] .advisor-entry__mark{
+  width:86px!important;
+  height:62px!important;
+  overflow:hidden!important;
+  border-radius:13px!important;
+  background:url('/assets/kaffa/prep-filter.webp') center/cover no-repeat!important;
+}
+body[data-coffee-final="concept"] .advisor-entry__mark>*{opacity:0!important}
+body[data-coffee-final="concept"] .advisor-entry__copy b{font-size:14px!important;color:#172823!important}
+body[data-coffee-final="concept"] .advisor-entry__copy :is(span,small){font-size:10.5px!important;color:#68564d!important}
+body[data-coffee-final="concept"] .chat{
+  min-height:0!important;
+  justify-content:flex-start!important;
+  align-content:flex-start!important;
+  color:#17342e!important;
+  background:#fff!important;
+}
+body[data-coffee-final="concept"] .bubble{
+  color:#17342e!important;
+  background:#fff7f2!important;
+  border-color:#efd3c5!important;
+  opacity:1!important;
+}
+body[data-coffee-final="concept"] .chat-bottom{margin-top:auto!important;background:#fff!important}
+body[data-coffee-final="concept"] .chip{
+  border-color:#e6a27d!important;
+  color:#5e3425!important;
+  background:#fff0e8!important;
+}
+body[data-coffee-final="concept"] .chip:hover,
+body[data-coffee-final="concept"] .chip:focus-visible{
+  border-color:#177f9a!important;
+  color:#0f5567!important;
+  background:#e8f6f9!important;
+}
+body[data-coffee-final="concept"] .composer__shell{height:52px!important;min-height:52px!important;border-color:#e6a27d!important}
+body[data-coffee-final="concept"] .composer__send{color:#fff!important;background:#d85d2c!important}
+body[data-coffee-final="concept"] .composer__send:hover,
+body[data-coffee-final="concept"] .composer__send:focus-visible{background:#177f9a!important}
+body[data-coffee-final="concept"] .option{
+  height:150px!important;
+  min-height:150px!important;
+  grid-template-rows:106px 44px!important;
+  padding:5px!important;
+  border-color:#efc2ad!important;
+  background:#fffaf7!important;
+}
+body[data-coffee-final="concept"] .option__photo{height:106px!important;min-height:106px!important;border-radius:12px!important}
+body[data-coffee-final="concept"] .option__copy{min-height:0!important;padding:7px 5px 3px!important}
+body[data-coffee-final="concept"] .option__copy b{font-size:12px!important;color:#172823!important}
+body[data-coffee-final="concept"] .option__copy small{display:none!important}
+
+/* ========================================================================== */
+/* JOLKA                                                                      */
+/* ========================================================================== */
+body[data-coffee-final="jolka"] #widget,
+body[data-coffee-final="jolka"] .stage,
+body[data-coffee-final="jolka"] .screen,
+body[data-coffee-final="jolka"] #chatScreen,
+body[data-coffee-final="jolka"] .chat{background:#fffaf4!important}
+body[data-coffee-final="jolka"] .mode{
+  width:calc(100% - 18px)!important;
+  margin-left:9px!important;
+  margin-right:9px!important;
+}
+body[data-coffee-final="jolka"] #chatScreen .entry{width:calc(100% - 18px)!important;margin:9px 9px 6px!important}
+body[data-coffee-final="jolka"] .back:disabled{
+  opacity:.62!important;
+  color:#8f5f28!important;
+  border-color:#d7bc98!important;
+  background:#fffaf3!important;
+}
+body[data-coffee-final="jolka"] .back:disabled svg{opacity:.82!important}
+
+/* Mobile: the widget is the app. Make every surface opaque and keep it contained. */
+@media(max-width:640px){
+  body[data-coffee-final="praziarnicka"] .pz13-widget,
+  body[data-coffee-final="diamonds"] #widget,
+  body[data-coffee-final="kaffa"] .kf-panel,
+  body[data-coffee-final="vitazov"] .widget,
+  body[data-coffee-final="concept"] .widget{
+    inset:0!important;
+    right:0!important;
+    bottom:0!important;
+    width:100dvw!important;
+    max-width:none!important;
+    height:100dvh!important;
+    max-height:none!important;
+    border-radius:0!important;
+  }
+  body[data-coffee-final="kaffa"] .kf-panel{grid-template-rows:62px 60px minmax(0,1fr)!important}
+  body[data-coffee-final="diamonds"] #widget,
+  body[data-coffee-final="kaffa"] .kf-panel,
+  body[data-coffee-final="vitazov"] .widget,
+  body[data-coffee-final="concept"] .widget,
+  body[data-coffee-final="praziarnicka"] .pz13-widget{background:#fff!important}
+}
+
+@media(max-height:700px) and (min-width:641px){
+  body[data-coffee-final="kaffa"] .kf-option--photo,
+  body[data-coffee-final="concept"] .option{height:140px!important;min-height:140px!important;grid-template-rows:98px 42px!important}
+  body[data-coffee-final="kaffa"] .kf-option--photo .kf-option__visual,
+  body[data-coffee-final="concept"] .option__photo{height:98px!important;min-height:98px!important}
+}
+
+@media(prefers-reduced-motion:reduce){
+  body[data-coffee-final] :is(.pz13-mode-thumb,.kf-switch::before,.mode__indicator,.mode-switch::before){transition-duration:.01ms!important}
+}

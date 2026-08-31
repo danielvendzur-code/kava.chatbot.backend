@@ -363,7 +363,7 @@ značku na `body`, nie cez návrat scrollbaru.
 
 ## Cena
 
-Dve verzie za 290/490 € nahradila **jedna: 297 € nasadenie + 10 € mesačne**.
+Dve verzie za 290/490 € nahradila **jedna: 247 € nasadenie + 10 € mesačne**.
 Z bodov vypadli „Priebežné úpravy ponuky" — nie sú zadarmo, takže sa nemajú
 sľubovať ako súčasť balíka. Namiesto toho je tam **história konverzácií**
 a jednoduchý popis toho, čo poradca robí. Napojenie na košík e-shopu je

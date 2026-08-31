@@ -41,7 +41,7 @@
 
   const PRICING = {
     currency: '€',
-    setup: '297',
+    setup: '247',
     monthly: '10',
     points: [
       'Odpovie na otázky a dovedie zákazníka ku káve',

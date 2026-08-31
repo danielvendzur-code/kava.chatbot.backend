@@ -115,7 +115,7 @@ slogan a čítalo sa to ako reklama, nie ako vysvetlenie toho, čo je v ponuke.
 
 ### Cena
 
-Jedna verzia — **297 € nasadenie + 10 € mesačne** — v konštante `PRICING` na
+Jedna verzia — **247 € nasadenie + 10 € mesačne** — v konštante `PRICING` na
 začiatku `coffee-owner-brand.js`. Mení sa tam a premietne sa do všetkých ukážok
 naraz.
 

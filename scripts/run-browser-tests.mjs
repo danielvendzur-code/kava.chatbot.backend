@@ -21,6 +21,8 @@ const specs = [
   'tests/chat-final-state.spec.mjs',
   'tests/vitazov-conversion.spec.mjs',
   'tests/jolka.spec.mjs',
+  'tests/last-mile-user-fixes.spec.mjs',
+  'tests/full-coffee-release-audit.spec.mjs',
 ];
 
 const result = spawnSync(process.execPath, [

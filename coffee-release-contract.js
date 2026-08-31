@@ -11,7 +11,7 @@
   lateStyle.rel = 'stylesheet';
   lateStyle.href = '/coffee-release-contract.css';
   lateStyle.dataset.coffeeReleaseStyle = 'true';
-  lateStyle.dataset.mcOrder = '100';
+  lateStyle.dataset.mcOrder = '110';
   document.body.appendChild(lateStyle);
 
   const orderLateStyles = () => {
