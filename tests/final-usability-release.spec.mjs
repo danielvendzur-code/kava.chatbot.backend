@@ -199,7 +199,7 @@ test('Diamonds controls are genuinely clickable and conversation starts near the
   await expect(page.locator('#backButton')).toBeEnabled();
 });
 
-test('Praziarnicka header logo no longer sits inside a visible white tile', async ({ page }) => {
+test('Praziarnicka header logo sits cleanly on the distinct mint header', async ({ page }) => {
   const demo = demos[0];
   await openDemo(page, demo, { width:390, height:844 });
   await page.locator(demo.launcher).click();
@@ -211,6 +211,7 @@ test('Praziarnicka header logo no longer sits inside a visible white tile', asyn
 
   const headStyle = await head.evaluate(node => ({
     bg:getComputedStyle(node).backgroundColor,
+    image:getComputedStyle(node).backgroundImage,
     border:parseFloat(getComputedStyle(node).borderBottomWidth)
   }));
   const logoStyle = await logo.evaluate(node => ({
@@ -222,7 +223,7 @@ test('Praziarnicka header logo no longer sits inside a visible white tile', asyn
   const ctaBorder = await cta.evaluate(node => parseFloat(getComputedStyle(node).borderTopWidth));
   const stageColor = await page.locator('.pz13-stage').evaluate(node => getComputedStyle(node).backgroundColor);
 
-  expect(headStyle.bg).toMatch(/rgb\(255, 255, 255\)/);
+  expect(headStyle.image).toContain('linear-gradient');
   expect(headStyle.border).toBeGreaterThanOrEqual(1);
   expect(logoStyle.blend).toBe('multiply');
   expect(logoStyle.bg).toMatch(/rgba?\(0, 0, 0, 0\)/);

@@ -48,8 +48,8 @@ const demos = [
 ];
 
 async function ready(page, demo) {
-  await page.goto(`${baseURL}${demo.url}`, { waitUntil:'networkidle' });
-  await page.waitForFunction(() => document.body.dataset.coffeeFinal);
+  await page.goto(`${baseURL}${demo.url}`, { waitUntil:'domcontentloaded' });
+  await page.waitForFunction(() => document.body.dataset.coffeeFinal && document.documentElement.dataset.coffeeReleaseReady === 'true');
 }
 
 async function box(page, selector) {
@@ -99,6 +99,30 @@ for (const demo of demos) {
   });
 }
 
+test('all six brands fill quick chips radially from the centre', async ({ page }) => {
+  await page.setViewportSize({ width:1000, height:760 });
+  for (const demo of demos) {
+    await ready(page, demo);
+    await page.locator(demo.launcher).click({ force:true });
+    await expect(page.locator(demo.panel)).toBeVisible();
+    await expect(page.locator(demo.chatMode)).toBeVisible();
+    await page.locator(demo.chatMode).click({ force:true });
+    const chip = page.locator(demo.chips).filter({ visible:true }).first();
+    await expect(chip).toBeVisible();
+    const rest = await chip.evaluate((node) => {
+      const style = getComputedStyle(node);
+      return { image:style.backgroundImage, size:style.backgroundSize, position:style.backgroundPosition };
+    });
+    expect(rest.image, `${demo.slug}: radial fill is missing`).toContain('radial-gradient');
+    expect(rest.size, `${demo.slug}: fill should start collapsed`).toMatch(/^(0px|0%) (0px|0%)$/);
+    expect(rest.position, `${demo.slug}: fill must originate in the centre`).toMatch(/50%/);
+    await chip.hover();
+    await page.waitForTimeout(540);
+    const hoverSize = await chip.evaluate((node) => getComputedStyle(node).backgroundSize);
+    expect(hoverSize, `${demo.slug}: radial fill did not expand`).not.toMatch(/^(0px|0%) (0px|0%)$/);
+  }
+});
+
 test('Praziarnicka uses four distinct non-Kaffa preparation photos', async ({ page }) => {
   await page.setViewportSize({ width:390, height:844 });
   const demo = demos[0];
@@ -121,6 +145,7 @@ test('Victory exposes a colored header, large official logo and four progress se
   await page.setViewportSize({ width:390, height:844 });
   const demo = demos.find((item) => item.slug === 'vitazov');
   await ready(page, demo);
+  await page.waitForTimeout(420);
   await page.locator(demo.launcher).click({ force:true });
   const header = page.locator('.widget__header');
   const logo = page.locator('.widget-brand__mark img[src*="vitazov-logo"]');
@@ -129,8 +154,11 @@ test('Victory exposes a colored header, large official logo and four progress se
   expect(logoBox.width).toBeGreaterThanOrEqual(100);
   const background = await header.evaluate((node) => getComputedStyle(node).backgroundImage || getComputedStyle(node).backgroundColor);
   expect(background).not.toMatch(/rgba\(0, 0, 0, 0\)|transparent/);
+  await page.waitForTimeout(320);
   await page.locator(demo.advisorMode).click({ force:true });
   await expect(page.locator('#progress i')).toHaveCount(4);
+  await expect(page.locator('#progress')).toBeVisible();
+  await page.waitForTimeout(260);
   const widths = await page.locator('#progress i').evaluateAll((nodes) => nodes.map((node) => node.getBoundingClientRect().width));
   widths.forEach((width) => expect(width).toBeGreaterThan(8));
 });

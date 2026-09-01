@@ -145,12 +145,12 @@
     if (slug === 'praziarnicka') {
       const launcher = document.querySelector('#pz13-open');
       if (launcher) {
-        let img = launcher.querySelector('img.cra-launcher-photo');
+        let img = launcher.querySelector('img.cra-launcher-logo');
         if (!img) {
-          img = createImage('/assets/praziarnicka/official-puccini.jpg', 'cra-launcher-photo', '');
+          img = createImage('/brand/praziarnicka-icon-official.svg', 'cra-launcher-logo', 'Pražiarnička');
           launcher.replaceChildren(img);
         }
-        if (img.getAttribute('src') !== '/assets/praziarnicka/official-puccini.jpg') img.src = '/assets/praziarnicka/official-puccini.jpg';
+        if (img.getAttribute('src') !== '/brand/praziarnicka-icon-official.svg') img.src = '/brand/praziarnicka-icon-official.svg';
       }
       const entry = document.querySelector('#pz13-advisor-entry > span:first-child');
       if (entry && !entry.querySelector('img.cra-entry-photo')) {

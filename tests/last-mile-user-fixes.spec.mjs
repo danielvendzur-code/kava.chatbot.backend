@@ -46,7 +46,7 @@ const demos = [
 
 async function ready(page, demo) {
   await page.goto(`${baseURL}${demo.url}`, { waitUntil: 'domcontentloaded' });
-  await page.waitForFunction(() => document.body.dataset.coffeeFinal && document.body.dataset.coffeeLastMile === 'true');
+  await page.waitForFunction(() => document.body.dataset.coffeeFinal && document.documentElement.dataset.coffeeReleaseReady === 'true');
 }
 
 async function box(page, selector) {
@@ -101,12 +101,13 @@ for (const demo of demos) {
   });
 }
 
-test('Praziarnicka launcher and entry use real coffee photography', async ({ page }) => {
+test('Praziarnicka launcher uses the official logo and the entry uses real coffee photography', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   const demo = demos[0];
   await ready(page, demo);
-  const launcherPaint = await page.locator('.pz13-launcher__button').evaluate((node) => getComputedStyle(node).backgroundImage);
-  expect(launcherPaint).toContain('official-puccini.jpg');
+  const launcherLogo = page.locator('.pz13-launcher__button img').first();
+  await expect(launcherLogo).toBeVisible();
+  await expect(launcherLogo).toHaveAttribute('src', /praziarnicka-(?:icon|logo)-official/);
   await page.locator(demo.launcher).click({ force: true });
   await page.locator(demo.chatMode).click({ force: true });
   const entryPaint = await page.locator('.pz13-advisor-entry > span:first-child').evaluate((node) => getComputedStyle(node).backgroundImage);
@@ -164,6 +165,7 @@ test('Concept uses orange primary state, blue hover and readable bubble text', a
 
   const send = page.locator('.composer__send');
   await send.hover();
+  await page.waitForTimeout(240);
   const hoverColor = await send.evaluate((node) => getComputedStyle(node).backgroundColor);
   expect(hoverColor).toBe('rgb(23, 127, 154)');
 

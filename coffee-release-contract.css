@@ -48,7 +48,56 @@ body[data-coffee-final] :is(#closeWidget,#pz13-close,#close,.kf-icon-btn[aria-la
 
 /* Praziarnicka */
 body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-mode button:is(.is-active,[aria-pressed="true"]) { color:#fff !important; background:#123f35 !important; }
-body[data-coffee-final="praziarnicka"] .pz13-launcher img { width:100% !important; height:100% !important; padding:0 !important; border-radius:50% !important; object-fit:cover !important; }
+body[data-coffee-final="praziarnicka"] #pz13-open.pz13-launcher__button {
+  border:2px solid #fff !important;
+  background-color:#123f35 !important;
+  background-image:radial-gradient(circle at center,#f1ab72 0%,#f1ab72 68%,transparent 70%) !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:0 0 !important;
+  box-shadow:0 18px 38px -21px rgba(18,63,53,.66),0 0 0 1px #9fbfb3 !important;
+  transition:background-size .46s var(--cf-smooth),transform .22s ease !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-open.pz13-launcher__button::after { display:none !important; }
+body[data-coffee-final="praziarnicka"] #pz13-open.pz13-launcher__button > img.cra-launcher-logo {
+  width:100% !important;
+  height:100% !important;
+  max-width:none !important;
+  padding:0 !important;
+  border-radius:50% !important;
+  object-fit:cover !important;
+  opacity:1 !important;
+  visibility:visible !important;
+  filter:none !important;
+  transform:none !important;
+}
+@media (hover:hover) {
+  body[data-coffee-final="praziarnicka"] #pz13-open.pz13-launcher__button:hover { background-size:250% 250% !important; transform:translateY(-2px) !important; }
+  body[data-coffee-final="praziarnicka"] #pz13-open.pz13-launcher__button:hover > img.cra-launcher-logo { transform:scale(.94) !important; }
+}
+
+@media (min-width:641px) {
+  body[data-coffee-final="praziarnicka"] #pz13-widget.pz13-widget {
+    width:min(468px,calc(100vw - 16px)) !important;
+    height:min(880px,calc(100dvh - 12px)) !important;
+    max-height:880px !important;
+    bottom:6px !important;
+  }
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-widget__head {
+  border-bottom:1px solid #9fc8ba !important;
+  background:linear-gradient(135deg,#d9eee7 0%,#eef7f3 62%,#f7fbf9 100%) !important;
+  box-shadow:inset 0 -1px 0 rgba(18,63,53,.05) !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-composer {
+  border-color:#78aa99 !important;
+  background:#fbfefd !important;
+  box-shadow:0 8px 22px -15px rgba(18,63,53,.58),0 0 0 1px rgba(18,63,53,.045) !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-composer input::placeholder {
+  color:#668079 !important;
+  opacity:.9 !important;
+}
 
 /* Kaffa: remove the inherited empty flex spacer and animation scale. */
 body[data-coffee-final="kaffa"] #panel.kf-panel {
@@ -64,6 +113,23 @@ body[data-coffee-final="kaffa"] #messages.kf-messages { justify-content:flex-sta
 body[data-coffee-final="kaffa"] #messages.kf-messages:not(.has-thread) .kf-chat-seed { min-height:0 !important; height:auto !important; margin:0 !important; gap:4px !important; flex:none !important; }
 body[data-coffee-final="kaffa"] #messages .kf-chat-seed > .kf-message-row--bot { margin:0 !important; }
 body[data-coffee-final="kaffa"] #panel .kf-chat-footer .kf-composer { box-sizing:border-box !important; height:50px !important; min-height:50px !important; max-height:50px !important; }
+body[data-coffee-final="kaffa"] #panel .kf-options {
+  grid-template-rows:auto auto !important;
+  grid-auto-rows:auto !important;
+  align-content:start !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-option--photo {
+  height:150px !important;
+  min-height:150px !important;
+  max-height:150px !important;
+  grid-template-rows:108px 42px !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-option--photo .kf-option__visual {
+  width:100% !important;
+  height:108px !important;
+  min-height:108px !important;
+  aspect-ratio:auto !important;
+}
 
 /* Diamonds: welcome begins directly under the advisor card and the launcher is clean. */
 body[data-coffee-final="diamonds"] #widget #chatMessages.chat-messages { justify-content:flex-start !important; align-content:start !important; padding:7px 13px 8px !important; }
@@ -188,7 +254,7 @@ body[data-coffee-final="diamonds"] #widget .mode-switch button[aria-pressed="tru
 }
 body[data-coffee-final="diamonds"] #widget .widget-stage,
 body[data-coffee-final="diamonds"] #widget #chatScreen.chat-screen { background:var(--d-paper) !important; }
-body[data-coffee-final="diamonds"] #widget #chatScreen.chat-screen { padding-top:10px !important; }
+body[data-coffee-final="diamonds"] #widget #chatScreen.chat-screen { padding-top:16px !important; }
 body[data-coffee-final="diamonds"] #widget #chatScreen .advisor-entry {
   width:calc(100% - 28px) !important;
   min-height:96px !important;
@@ -277,7 +343,7 @@ body[data-coffee-final="diamonds"] #widget #quickChips > button {
   background-repeat:no-repeat !important;
   background-size:0 0 !important;
   font-size:12px !important;
-  transition:background-size .48s var(--cf-smooth),border-color .24s ease,color .24s ease,transform .24s ease !important;
+  transition:background-size .82s var(--cf-smooth),border-color .24s ease,color .24s ease,transform .24s ease !important;
 }
 @media (hover:hover) {
   body[data-coffee-final="diamonds"] #widget #quickChips > button:hover {
@@ -382,6 +448,20 @@ body[data-coffee-final="vitazov"] #widget #advisorBody .option[data-value="disco
 
 /* Concept's old box model added padding on top of its declared height. */
 body[data-coffee-final="concept"] #widget .composer .composer__shell { box-sizing:border-box !important; height:50px !important; min-height:50px !important; max-height:50px !important; flex-basis:50px !important; }
+body[data-coffee-final="concept"] #widget #chatScreen { padding-top:12px !important; }
+body[data-coffee-final="concept"] #widget .composer__send:hover,
+body[data-coffee-final="concept"] #widget .composer__send:focus-visible { color:#fff !important; background:#177f9a !important; }
+body[data-coffee-final="concept"] #widget .option {
+  height:150px !important;
+  min-height:150px !important;
+  grid-template-rows:108px 42px !important;
+}
+body[data-coffee-final="concept"] #widget .option__photo {
+  width:100% !important;
+  height:108px !important;
+  min-height:108px !important;
+  aspect-ratio:auto !important;
+}
 
 /* Jolka polish requested by the owner. */
 body[data-coffee-final="jolka"] .back { color:var(--text) !important; }
@@ -391,11 +471,57 @@ body[data-coffee-final="jolka"] .option__copy { padding:9px 12px 10px !important
 body[data-coffee-final="jolka"] .widget__note { padding-bottom:9px !important; }
 body[data-coffee-final] [data-price-animated="true"] { font-variant-numeric:tabular-nums; }
 
+/* Every brand gets the same centre-out fill interaction, using its own palette. */
+html body.mcw-on[data-coffee-final="praziarnicka"] .pz13-chip { --cf-chip-fill:#123f35; --cf-chip-on-fill:#fff; }
+html body.mcw-on[data-coffee-final="kaffa"] .kf-chat .kf-chip.kf-chip { --cf-chip-fill:#111; --cf-chip-on-fill:#fff; }
+html body.mcw-on[data-coffee-final="vitazov"] #widget #quickChips .chip { --cf-chip-fill:#0e493c; --cf-chip-on-fill:#fff; }
+html body.mcw-on[data-coffee-final="concept"] #widget #quickChips .chip { --cf-chip-fill:#d85d2c; --cf-chip-on-fill:#fff; }
+html body.mcw-on[data-coffee-final="jolka"] #widget .chips .chip { --cf-chip-fill:var(--ink); --cf-chip-on-fill:var(--on-ink); }
+html body.mcw-on[data-coffee-final="praziarnicka"] .pz13-chip,
+html body.mcw-on[data-coffee-final="kaffa"] .kf-chat .kf-chip.kf-chip,
+html body.mcw-on[data-coffee-final="vitazov"] #widget #quickChips .chip,
+html body.mcw-on[data-coffee-final="concept"] #widget #quickChips .chip,
+html body.mcw-on[data-coffee-final="jolka"] #widget .chips .chip {
+  background-image:radial-gradient(circle at center,var(--cf-chip-fill) 0%,var(--cf-chip-fill) 69%,transparent 71%) !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:0 0 !important;
+  transition:background-size .82s var(--cf-smooth),border-color .24s ease,color .24s ease,transform .24s ease !important;
+}
+@media (hover:hover) {
+  html body.mcw-on[data-coffee-final="praziarnicka"] .pz13-chip:hover,
+  html body.mcw-on[data-coffee-final="kaffa"] .kf-chat .kf-chip.kf-chip:hover,
+  html body.mcw-on[data-coffee-final="vitazov"] #widget #quickChips .chip:hover,
+  html body.mcw-on[data-coffee-final="concept"] #widget #quickChips .chip:hover,
+  html body.mcw-on[data-coffee-final="jolka"] #widget .chips .chip:hover {
+    border-color:var(--cf-chip-fill) !important;
+    color:var(--cf-chip-on-fill) !important;
+    background-color:inherit !important;
+    background-size:250% 250% !important;
+    transform:translateY(-1px) !important;
+  }
+}
+
 @media (max-width:640px) {
   body[data-coffee-final] :is(.widget,.pz13-widget,.kf-panel,#widget) { padding-bottom:env(safe-area-inset-bottom) !important; }
-  body[data-coffee-final="jolka"] .widget { height:100dvh !important; max-height:100dvh !important; }
+  body[data-coffee-final="jolka"] #widget.widget,
+  body[data-coffee-final="praziarnicka"] #pz13-widget.pz13-widget {
+    inset:0 !important;
+    top:0 !important;
+    right:0 !important;
+    bottom:0 !important;
+    left:0 !important;
+    width:100dvw !important;
+    max-width:none !important;
+    height:100dvh !important;
+    min-height:100dvh !important;
+    max-height:100dvh !important;
+    border:0 !important;
+    border-radius:0 !important;
+    transform:none !important;
+    transform-origin:center !important;
+  }
   body[data-coffee-final="jolka"] .option__visual { height:clamp(130px, 19vh, 170px) !important; flex-basis:clamp(130px, 19vh, 170px) !important; }
   body[data-coffee-final="jolka"] .option__copy { padding:8px 10px 9px !important; }
   body[data-coffee-final="kaffa"] #panel.kf-panel { inset:0 !important; width:100% !important; min-width:0 !important; max-width:none !important; height:100dvh !important; min-height:100dvh !important; max-height:100dvh !important; }
-  body[data-coffee-final="praziarnicka"] #pz13-widget.pz13-widget { height:calc(100dvh - 1px) !important; max-height:calc(100dvh - 1px) !important; }
 }

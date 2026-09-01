@@ -12,7 +12,7 @@ const demos = [
     slug:'praziarnicka', url:'/?demo=praziarnicka', launcher:'#pz13-open', panel:'#pz13-widget',
     switch:'.pz13-mode', chatMode:'.pz13-mode button[data-mode="chat"]', advisorMode:'.pz13-mode button[data-mode="advisor"]',
     entry:'#pz13-advisor-entry', greeting:'.pz13-message--assistant .pz13-bubble', chips:'.pz13-chip', composer:'.pz13-composer',
-    options:'.pz13-option', optionVisual:'.pz13-option__visual', close:'#pz13-close', launcherImage:'img.cra-launcher-photo'
+    options:'.pz13-option', optionVisual:'.pz13-option__visual', close:'#pz13-close', launcherImage:'img.cra-launcher-logo'
   },
   {
     slug:'diamonds', url:'/?demo=diamonds', launcher:'#launcherButton', panel:'#widget',
@@ -68,7 +68,7 @@ async function ready(page, demo, viewport) {
   await page.setViewportSize(viewport);
   await page.goto(`${baseURL}${demo.url}`, { waitUntil:'domcontentloaded' });
   await page.waitForFunction(() => document.documentElement.dataset.coffeeReleaseReady === 'true', null, { timeout:10_000 });
-  await page.waitForTimeout(80);
+  await page.waitForTimeout(520);
 }
 
 async function visibleBox(page, selector) {

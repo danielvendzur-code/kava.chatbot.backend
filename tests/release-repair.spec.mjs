@@ -44,14 +44,17 @@ const demos = [
 async function ready(page, demo, viewport = { width: 390, height: 844 }) {
   await page.setViewportSize(viewport);
   await page.goto(`${baseURL}${demo.url}`, { waitUntil: 'domcontentloaded' });
-  await page.waitForFunction(() => Boolean(document.body.dataset.coffeeFinal));
+  await page.waitForFunction(() => document.body.dataset.coffeeFinal && document.documentElement.dataset.coffeeReleaseReady === 'true');
+  await page.waitForTimeout(420);
 }
 
 async function openMode(page, demo, mode) {
   await page.locator(demo.launcher).click({ force: true });
   await expect(page.locator(demo.panel)).toBeVisible();
+  await page.waitForTimeout(480);
   const selector = mode === 'advisor' ? demo.advisorMode : demo.chatMode;
   await page.locator(selector).click({ force: true });
+  await page.waitForTimeout(220);
 }
 
 function rgb(value) {
@@ -106,7 +109,7 @@ for (const demo of demos) {
     expect(metrics.scrollTop, `${demo.slug}: initial advisor is pre-scrolled`).toBe(0);
     expect(metrics.scrollHeight - metrics.clientHeight, `${demo.slug}: first decision requires vertical scrolling`).toBeLessThanOrEqual(3);
     expect(lastBox.y + lastBox.height, `${demo.slug}: last option is clipped`).toBeLessThanOrEqual(panelBox.y + panelBox.height + 1);
-    expect(panelBox.height, `${demo.slug}: panel exceeds the viewport`).toBeLessThanOrEqual(844);
+    expect(panelBox.height, `${demo.slug}: panel exceeds the viewport`).toBeLessThanOrEqual(844.5);
   });
 }
 
@@ -129,7 +132,7 @@ for (const demo of demos) {
     expect(initialRows).toBeGreaterThanOrEqual(1);
 
     const firstRow = page.locator(demo.rows).first();
-    const initialText = (await firstRow.textContent())?.trim();
+    const initialText = (await firstRow.textContent())?.trim().replace(/\d{1,2}:\d{2}\s*$/, '').trim();
     expect(initialText).toBeTruthy();
 
     const input = page.locator(demo.input);

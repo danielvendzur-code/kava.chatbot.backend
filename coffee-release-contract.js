@@ -99,6 +99,7 @@
   }
 
   const priceSelectors = [
+    '.mcb-plan-price strong',
     '.pz13-product__buy strong',
     '.result-facts dd',
     '.kf-result-hero__copy strong',
