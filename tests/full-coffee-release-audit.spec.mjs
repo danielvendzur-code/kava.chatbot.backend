@@ -76,7 +76,7 @@ async function expectBrandGeometry(page) {
 
   const header = widget.locator('.widget__header');
   const brand = widget.locator('.widget__brand');
-  const brandImage = brand.locator('> img');
+  const brandImage = brand.locator(':scope > img');
   const actions = widget.locator('.widget__actions');
   await expectLoadedImage(brandImage);
   const brandImageBox = await brandImage.boundingBox();

@@ -40,6 +40,7 @@ jobs:
           test -f coffee-jolka-app.js
           test -f coffee-jolka-shell.css
           test -f tests/full-coffee-release-audit.spec.mjs
+          test -f tests/clean-coffee-data-contract.test.mjs
           test -f api/chat.js
           test -f vercel.json
           grep -Fq 'coffee-final-entry.js' index.html
@@ -83,14 +84,8 @@ jobs:
           node --check cosmetics.js
           node --check api/cosmetics-chat.js
 
-      - name: Validate existing coffee content contracts
-        run: |
-          node --test \
-            tests/praziarnicka-contract.test.mjs \
-            tests/diamonds-contract.test.mjs \
-            tests/concept-seasonal.contract.test.mjs \
-            tests/kaffa-contract.test.mjs \
-            tests/vitazov-contract.test.mjs
+      - name: Validate active coffee data contracts
+        run: node --test tests/clean-coffee-data-contract.test.mjs
 
       - name: Validate untouched Jolka benchmark
         run: |
