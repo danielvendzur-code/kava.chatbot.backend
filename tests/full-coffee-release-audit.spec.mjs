@@ -5,7 +5,7 @@ const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
 const artifactDir = 'artifacts/full-release-audit';
 mkdirSync(artifactDir, { recursive: true });
 
-test.setTimeout(45_000);
+test.setTimeout(50_000);
 
 const demos = [
   ['praziarnicka', '/praziarnicka.html'],
@@ -40,7 +40,7 @@ async function ready(page, url, viewport) {
     if (location.pathname === '/jolka.html') return Boolean(document.querySelector('#widget .mode'));
     return document.documentElement.dataset.coffeeReleaseReady === 'true';
   }, null, { timeout: 10_000 });
-  await page.waitForTimeout(250);
+  await page.waitForTimeout(300);
 }
 
 async function expectLoadedImage(locator) {
@@ -48,24 +48,60 @@ async function expectLoadedImage(locator) {
   expect(await locator.evaluate((image) => image.complete && image.naturalWidth > 0 && image.naturalHeight > 0)).toBeTruthy();
 }
 
+async function expectContained(parent, child, tolerance = 1) {
+  const [parentBox, childBox] = await Promise.all([parent.boundingBox(), child.boundingBox()]);
+  expect(parentBox).not.toBeNull();
+  expect(childBox).not.toBeNull();
+  expect(childBox.x).toBeGreaterThanOrEqual(parentBox.x - tolerance);
+  expect(childBox.y).toBeGreaterThanOrEqual(parentBox.y - tolerance);
+  expect(childBox.x + childBox.width).toBeLessThanOrEqual(parentBox.x + parentBox.width + tolerance);
+  expect(childBox.y + childBox.height).toBeLessThanOrEqual(parentBox.y + parentBox.height + tolerance);
+}
+
+async function expectBrandGeometry(page) {
+  const lockupLogo = page.locator('.lockup > img');
+  await expectLoadedImage(lockupLogo);
+  const lockupBox = await lockupLogo.boundingBox();
+  expect(lockupBox.width).toBeLessThanOrEqual(52.5);
+  expect(lockupBox.height).toBeLessThanOrEqual(52.5);
+
+  const launcher = page.locator('#open');
+  const launcherImage = launcher.locator('img');
+  await expectLoadedImage(launcherImage);
+  await expectContained(launcher, launcherImage, 1);
+
+  await launcher.click();
+  const widget = page.locator('#widget');
+  await expect(widget).toHaveClass(/is-open/);
+
+  const header = widget.locator('.widget__header');
+  const brand = widget.locator('.widget__brand');
+  const brandImage = brand.locator('> img');
+  const actions = widget.locator('.widget__actions');
+  await expectLoadedImage(brandImage);
+  const brandImageBox = await brandImage.boundingBox();
+  expect(brandImageBox.width).toBeLessThanOrEqual(52);
+  expect(brandImageBox.height).toBeLessThanOrEqual(52);
+  await expectContained(header, brand, 1);
+  await expectContained(header, actions, 1);
+
+  const [brandBox, actionsBox] = await Promise.all([brand.boundingBox(), actions.boundingBox()]);
+  expect(brandBox.x + brandBox.width).toBeLessThanOrEqual(actionsBox.x + 1);
+  expect(await widget.evaluate((element) => element.scrollWidth <= element.clientWidth + 1)).toBeTruthy();
+}
+
 for (const [slug, url] of demos) {
-  test(`${slug}: clean mobile Jolka contract`, async ({ page }) => {
+  test(`${slug}: mobile Jolka geometry, logos and full flow`, async ({ page }) => {
     const failures = monitor(page);
     await ready(page, url, { width: 390, height: 844 });
 
     await expect(page.locator('.page')).toBeVisible();
-    await expectLoadedImage(page.locator('.lockup img'));
     await expectLoadedImage(page.locator('.showcase__photo'));
+    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
 
-    const launcher = page.locator('#open');
-    await expect(launcher).toBeVisible();
-    const launcherBox = await launcher.boundingBox();
-    expect(launcherBox?.width).toBeGreaterThanOrEqual(56);
-    expect(launcherBox?.height).toBeGreaterThanOrEqual(56);
+    await expectBrandGeometry(page);
 
-    await launcher.click();
     const widget = page.locator('#widget');
-    await expect(widget).toHaveClass(/is-open/);
     const widgetBox = await widget.boundingBox();
     expect(widgetBox).not.toBeNull();
     expect(widgetBox.x).toBeGreaterThanOrEqual(-1);
@@ -75,7 +111,7 @@ for (const [slug, url] of demos) {
 
     const mode = page.locator('#mode');
     await expect(mode).toBeVisible();
-    expect((await mode.boundingBox())?.width / widgetBox.width).toBeGreaterThan(.85);
+    expect((await mode.boundingBox()).width / widgetBox.width).toBeGreaterThan(.85);
 
     await page.locator('.mode__button[data-mode="chat"]').click();
     await expect(page.locator('#chatScreen')).toHaveClass(/is-active/);
@@ -83,6 +119,7 @@ for (const [slug, url] of demos) {
     await expect(page.locator('#chat .msg .bubble').first()).toBeVisible();
     await expect(page.locator('#chips .chip')).toHaveCount(4);
     await expect(page.locator('#composer')).toBeVisible();
+    expect(await page.locator('#chatScreen').evaluate((element) => element.scrollWidth <= element.clientWidth + 1)).toBeTruthy();
 
     await page.locator('#chips .chip').first().click();
     await expect(page.locator('#chat .msg--user')).toHaveCount(1);
@@ -94,8 +131,8 @@ for (const [slug, url] of demos) {
     for (let step = 0; step < 4; step += 1) {
       const options = page.locator('#advisor .option');
       await expect(options.first()).toBeVisible();
-      const image = options.first().locator('.option__visual img');
-      await expectLoadedImage(image);
+      await expectLoadedImage(options.first().locator('.option__visual img'));
+      expect(await page.locator('#advisor').evaluate((element) => element.scrollWidth <= element.clientWidth + 1)).toBeTruthy();
       await options.first().click();
       await page.waitForTimeout(620);
     }
@@ -103,6 +140,7 @@ for (const [slug, url] of demos) {
     await expect(page.locator('#advisor .result')).toBeVisible();
     await expectLoadedImage(page.locator('#advisor .result__photo'));
     await expect(page.locator('#advisorFoot #productCta')).toHaveAttribute('href', /^https:\/\//);
+    expect(await page.locator('#advisor').evaluate((element) => element.scrollWidth <= element.clientWidth + 1)).toBeTruthy();
 
     await page.locator('#close').click();
     await expect(widget).not.toHaveClass(/is-open/);
@@ -110,13 +148,26 @@ for (const [slug, url] of demos) {
     expect(failures).toEqual([]);
   });
 
-  test(`${slug}: desktop owner presentation is contained`, async ({ page }) => {
+  test(`${slug}: desktop owner page and widget stay inside viewport`, async ({ page }) => {
     const failures = monitor(page);
     await ready(page, url, { width: 1366, height: 768 });
     await expect(page.locator('.page')).toBeVisible();
-    await expect(page.locator('#open')).toBeVisible();
+    await expectLoadedImage(page.locator('.showcase__photo'));
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(1366);
+
+    const pageGeometry = await page.locator('.page').evaluate((element) => ({ clientHeight: element.clientHeight, scrollHeight: element.scrollHeight }));
+    expect(pageGeometry.scrollHeight).toBeLessThanOrEqual(pageGeometry.clientHeight + 2);
+
+    await expectBrandGeometry(page);
+    const widget = page.locator('#widget');
+    const widgetBox = await widget.boundingBox();
+    expect(widgetBox.x).toBeGreaterThanOrEqual(-1);
+    expect(widgetBox.y).toBeGreaterThanOrEqual(-1);
+    expect(widgetBox.x + widgetBox.width).toBeLessThanOrEqual(1367);
+    expect(widgetBox.y + widgetBox.height).toBeLessThanOrEqual(769);
+
     await page.screenshot({ path: `${artifactDir}/${slug}-desktop.png`, fullPage: false });
+    await page.locator('#close').click();
     expect(failures).toEqual([]);
   });
 }

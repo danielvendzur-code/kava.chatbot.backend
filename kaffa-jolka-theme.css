@@ -18,19 +18,8 @@
   --on-ink-2:rgba(255,255,255,.72);
 }
 
-body.kaffa-clean :is(.lockup > img,.widget__brand > img,.msg__avatar img,.launcher__button img) {
-  object-fit:contain;
-}
-body.kaffa-clean .lockup > img {
-  width:82px;
-  padding:5px;
-}
-body.kaffa-clean .widget__brand > img {
-  width:82px;
-  padding:5px;
-  border-radius:9px;
-  background:#fff;
-}
+body.kaffa-clean :is(.lockup > img,.widget__brand > img,.msg__avatar img,.launcher__button img) { object-fit:contain; }
+body.kaffa-clean :is(.lockup > img,.widget__brand > img) { padding:4px; }
 body.kaffa-clean .msg__avatar img {
   width:25px;
   height:25px;

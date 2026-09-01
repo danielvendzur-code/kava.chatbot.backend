@@ -20,6 +20,13 @@
   <script src="/coffee-api-route.js"></script>
   <script src="/coffee-local-api.js"></script>
   <script src="/praziarnicka-jolka-data.js"></script>
+  <script>
+    if (window.JOLKA && window.JOLKA.demo) {
+      window.JOLKA.demo.logoInk = '/brand/praziarnicka-mark.svg';
+      window.JOLKA.demo.logoBadge = '/brand/praziarnicka-mark.svg';
+      window.JOLKA.demo.logoHeader = '/brand/praziarnicka-mark.svg';
+    }
+  </script>
   <script src="/coffee-jolka-app.js"></script>
 </body>
 </html>

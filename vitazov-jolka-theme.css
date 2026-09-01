@@ -18,18 +18,8 @@
   --on-ink-2:rgba(255,255,255,.74);
 }
 
-body.vitazov-clean :is(.lockup > img,.widget__brand > img,.msg__avatar img,.launcher__button img) {
-  object-fit:contain;
-}
-body.vitazov-clean .lockup > img {
-  width:78px;
-}
-body.vitazov-clean .widget__brand > img {
-  width:80px;
-  padding:5px;
-  border-radius:9px;
-  background:#fff;
-}
+body.vitazov-clean :is(.lockup > img,.widget__brand > img,.msg__avatar img,.launcher__button img) { object-fit:contain; }
+body.vitazov-clean :is(.lockup > img,.widget__brand > img) { padding:3px; }
 body.vitazov-clean .msg__avatar img {
   width:25px;
   height:25px;
@@ -38,9 +28,9 @@ body.vitazov-clean .msg__avatar img {
   background:#fff;
 }
 body.vitazov-clean .launcher__button img {
-  width:50px;
-  height:50px;
-  padding:5px;
+  width:48px;
+  height:48px;
+  padding:4px;
   border-radius:50%;
   background:#fff;
 }

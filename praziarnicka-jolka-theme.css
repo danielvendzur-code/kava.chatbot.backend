@@ -18,17 +18,9 @@
   --on-ink-2:rgba(255,255,255,.74);
 }
 
-body.praziarnicka-clean :is(.lockup > img,.widget__brand > img,.msg__avatar img,.launcher__button img) {
-  object-fit:contain;
-}
-body.praziarnicka-clean .lockup > img {
-  padding:5px;
-  border-radius:12px;
-  background:#fff;
-}
-body.praziarnicka-clean .widget__brand > img {
-  width:76px;
-  padding:5px;
+body.praziarnicka-clean :is(.lockup > img,.widget__brand > img,.msg__avatar img,.launcher__button img) { object-fit:contain; }
+body.praziarnicka-clean :is(.lockup > img,.widget__brand > img) {
+  padding:4px;
   border-radius:10px;
   background:#fff;
 }
@@ -42,4 +34,7 @@ body.praziarnicka-clean .msg__avatar img {
 body.praziarnicka-clean .launcher__button img {
   width:48px;
   height:48px;
+  padding:2px;
+  border-radius:50%;
+  background:#fff;
 }
