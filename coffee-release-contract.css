@@ -617,6 +617,97 @@ body[data-coffee-final="jolka"] .option__copy { padding:9px 12px 10px !important
 body[data-coffee-final="jolka"] .widget__note { padding-bottom:9px !important; }
 body[data-coffee-final] [data-price-animated="true"] { font-variant-numeric:tabular-nums; }
 
+/* Jolka master template — final readability and surface continuity pass. */
+html body.mcw-on[data-coffee-final="jolka"] #widget .back,
+html body.mcw-on[data-coffee-final="jolka"] #widget .back[disabled] {
+  color:#684b35 !important;
+  opacity:1 !important;
+  background:#f1e1cf !important;
+  border-color:#d6bb98 !important;
+  box-shadow:inset 0 0 0 1px rgba(104,75,53,.05) !important;
+}
+html body.mcw-on[data-coffee-final="jolka"] #widget .back:not([disabled]) {
+  color:#fffaf4 !important;
+  background:#21160f !important;
+  border-color:#21160f !important;
+  font-weight:750 !important;
+  box-shadow:0 5px 12px rgba(40,28,20,.14) !important;
+}
+html body.mcw-on[data-coffee-final="jolka"] #widget .back:not([disabled]):hover {
+  color:#fffaf4 !important;
+  background:#4b3323 !important;
+  border-color:#4b3323 !important;
+}
+html body.mcw-on[data-coffee-final="jolka"] #widget .advisor-top :is(#stepTitle,#stepName) { opacity:1 !important; }
+html body.mcw-on[data-coffee-final="jolka"] #widget .advisor-top #stepTitle { color:#281c14 !important; }
+html body.mcw-on[data-coffee-final="jolka"] #widget .advisor-top #stepName { color:#6e513b !important; }
+
+html body.mcw-on[data-coffee-final="jolka"] #widget #chatScreen {
+  background:linear-gradient(180deg,#fffdfa 0%,#fffdfa 42%,#f8f0e6 63%,#f1e1cf 100%) !important;
+}
+html body.mcw-on[data-coffee-final="jolka"] #widget #chatScreen .chat { background:transparent !important; }
+html body.mcw-on[data-coffee-final="jolka"] #widget #chatScreen .composer-area {
+  padding:14px 16px 10px !important;
+  background:linear-gradient(180deg,rgba(241,225,207,0),#f1e1cf 38%) !important;
+}
+html body.mcw-on[data-coffee-final="jolka"] #widget .widget__note {
+  padding:0 16px 12px !important;
+  color:#6e513b !important;
+  background:#f1e1cf !important;
+  border-top:0 !important;
+}
+
+html body.mcw-on[data-coffee-final="jolka"] #widget .chips .chip {
+  --cf-chip-fill:#aa7c50;
+  --cf-chip-on-fill:#fffaf4;
+  background-color:#fffdfa !important;
+  border-color:#ddc6ab !important;
+  transition-duration:1.18s,.24s,.24s,.24s !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  html body.mcw-on[data-coffee-final="jolka"] #widget .chips .chip:hover {
+    color:#fffaf4 !important;
+    border-color:#aa7c50 !important;
+    background-size:250% 250% !important;
+  }
+}
+
+html body.mcw-on[data-coffee-final="jolka"] #teaser.launcher__teaser {
+  width:min(286px,calc(100vw - 126px)) !important;
+  max-width:none !important;
+  padding:0 !important;
+  overflow:visible !important;
+  border:1.5px solid #d8c5ad !important;
+  border-radius:24px 24px 8px 24px !important;
+  background:#fffdfa !important;
+  box-shadow:0 16px 34px rgba(47,31,20,.15) !important;
+}
+html body.mcw-on[data-coffee-final="jolka"] #teaser.launcher__teaser::after {
+  content:"";
+  position:absolute;
+  right:24px;
+  bottom:-8px;
+  width:15px;
+  height:15px;
+  background:#fffdfa;
+  border-right:1.5px solid #d8c5ad;
+  border-bottom:1.5px solid #d8c5ad;
+  transform:rotate(45deg);
+  z-index:0;
+}
+html body.mcw-on[data-coffee-final="jolka"] #teaser .launcher__teaser-body {
+  position:relative;
+  z-index:1;
+  padding:15px 44px 15px 18px !important;
+  border-radius:inherit;
+  background:#fffdfa;
+}
+html body.mcw-on[data-coffee-final="jolka"] #teaser .launcher__teaser-close {
+  z-index:2;
+  color:#77553d !important;
+  background:#f1e1cf !important;
+}
+
 /* Every brand gets the same centre-out fill interaction, using its own palette. */
 html body.mcw-on[data-coffee-final="praziarnicka"] .pz13-chip { --cf-chip-fill:#123f35; --cf-chip-on-fill:#fff; }
 html body.mcw-on[data-coffee-final="kaffa"] .kf-chat .kf-chip.kf-chip { --cf-chip-fill:#111; --cf-chip-on-fill:#fff; }
@@ -652,6 +743,22 @@ html body.mcw-on[data-coffee-final="jolka"] #widget .chips .chip {
   html body.mcw-on[data-coffee-final="praziarnicka"] #pz13-widget .pz13-chip:hover {
     border-color:#2c211c !important;
     color:#fff !important;
+  }
+}
+
+/* This stays after the shared interaction rule so Jolka remains the timing reference. */
+html body.mcw-on[data-coffee-final="jolka"] #widget .chips .chip {
+  --cf-chip-fill:#aa7c50;
+  --cf-chip-on-fill:#fffaf4;
+  background-color:#fffdfa !important;
+  border-color:#ddc6ab !important;
+  transition:background-size 1.18s var(--cf-smooth),border-color .24s ease,color .24s ease,transform .24s ease !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  html body.mcw-on[data-coffee-final="jolka"] #widget .chips .chip:hover {
+    color:#fffaf4 !important;
+    border-color:#aa7c50 !important;
+    background-size:250% 250% !important;
   }
 }
 

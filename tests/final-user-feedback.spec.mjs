@@ -142,6 +142,39 @@ test('all six owner pages explain the free month, recurring price and one-line i
   }
 });
 
+test('Jolka keeps the first advisor controls readable and the warm finish intentional', async ({ page }) => {
+  await page.setViewportSize({ width:1000, height:760 });
+  const demo = demos.find((item) => item.slug === 'jolka');
+  await ready(page, demo);
+  await page.locator(demo.launcher).click({ force:true });
+  await expect(page.locator(demo.panel)).toBeVisible();
+  await page.locator(demo.advisorMode).click({ force:true });
+
+  const backPaint = await page.locator('#back').evaluate((node) => {
+    const style = getComputedStyle(node);
+    return { color:style.color, background:style.backgroundColor, opacity:style.opacity };
+  });
+  const backChannels = backPaint.color.match(/[\d.]+/g)?.slice(0,3).map(Number) || [255,255,255];
+  expect(Math.min(...backChannels), 'Jolka: disabled back control must not be white').toBeLessThan(170);
+  expect(parseFloat(backPaint.opacity)).toBeGreaterThanOrEqual(.95);
+  expect(backPaint.background).not.toBe('rgba(0, 0, 0, 0)');
+
+  const titlePaint = await page.locator('#stepTitle').evaluate((node) => getComputedStyle(node).color);
+  const titleChannels = titlePaint.match(/[\d.]+/g)?.slice(0,3).map(Number) || [255,255,255];
+  expect(Math.min(...titleChannels), 'Jolka: step title must remain readable').toBeLessThan(100);
+
+  await page.locator(demo.chatMode).click({ force:true });
+  const chip = page.locator('.chips .chip').filter({ visible:true }).first();
+  const chipTiming = await chip.evaluate((node) => getComputedStyle(node).transitionDuration);
+  expect(Math.max(...(chipTiming.match(/[\d.]+/g) || []).map(Number))).toBeGreaterThanOrEqual(1.1);
+  const notePaint = await page.locator('.widget__note').evaluate((node) => {
+    const style = getComputedStyle(node);
+    return { background:style.backgroundColor, topBorder:style.borderTopWidth };
+  });
+  expect(notePaint.background).not.toBe('rgba(0, 0, 0, 0)');
+  expect(notePaint.topBorder).toBe('0px');
+});
+
 test('Praziarnicka uses four distinct non-Kaffa preparation photos', async ({ page }) => {
   await page.setViewportSize({ width:390, height:844 });
   const demo = demos[0];
