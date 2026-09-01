@@ -52,7 +52,8 @@
     if (brandSlug === 'kaffa') {
       host.replaceChildren(kaffaWordmark());
     } else if (logo[brandSlug]) {
-      host.replaceChildren(createImage(logo[brandSlug], 'cf-brand-logo', brandSlug === 'vitazov' ? 'Káva Víťazov' : ''));
+      const alt = brandSlug === 'vitazov' ? 'Káva Víťazov' : brandSlug === 'praziarnicka' ? 'Pražiarnička' : '';
+      host.replaceChildren(createImage(logo[brandSlug], 'cf-brand-logo', alt));
     }
     host.dataset.craBrand = brandSlug;
   }
@@ -93,6 +94,16 @@
   }
 
   function fixWidgetBrandIdentity() {
+    if (slug === 'praziarnicka') {
+      const img = document.querySelector('.pz13-widget__brand > img');
+      if (img) {
+        img.src = '/brand/praziarnicka-icon-official.svg';
+        img.alt = 'Pražiarnička';
+        img.classList.add('cf-praziarnicka-header-mark');
+      }
+      return;
+    }
+
     if (slug === 'kaffa') {
       const brand = document.querySelector('.kf-widget-brand');
       if (brand && brand.dataset.craHeader !== 'true') {
@@ -132,7 +143,9 @@
   }
 
   function fixBrandAvatars() {
-    if (slug === 'kaffa') {
+    if (slug === 'praziarnicka') {
+      document.querySelectorAll('.pz13-avatar').forEach((node) => replaceWithBrand(node, 'praziarnicka'));
+    } else if (slug === 'kaffa') {
       document.querySelectorAll('.kf-bot-avatar').forEach((node) => replaceWithBrand(node, 'kaffa'));
     } else if (slug === 'concept' || slug === 'vitazov') {
       document.querySelectorAll('.message__avatar').forEach((node) => replaceWithBrand(node, slug));
