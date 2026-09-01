@@ -1,0 +1,51 @@
+/* Diamonds Roastery brand tokens on the approved Jolka component system. */
+:root {
+  --ink:#0b0d0c;
+  --ink-2:#171a18;
+  --ink-3:#252a27;
+  --paper:#f1f2ed;
+  --surface:#ffffff;
+  --surface-2:#f4f6ec;
+  --line:#dce2ca;
+  --line-strong:#c0cf91;
+  --kraft:#b7dc45;
+  --kraft-deep:#6f8f19;
+  --kraft-tint:#edf5d2;
+  --text:#171917;
+  --text-2:#5a5f58;
+  --text-3:#7c8279;
+  --on-ink:#ffffff;
+  --on-ink-2:rgba(255,255,255,.72);
+}
+
+body.diamonds-clean :is(.lockup > img,.widget__brand > img,.msg__avatar img,.launcher__button img) {
+  object-fit:contain;
+}
+body.diamonds-clean .lockup > img {
+  width:88px;
+}
+body.diamonds-clean .widget__brand > img {
+  width:88px;
+  padding:5px;
+  border-radius:9px;
+  background:#fff;
+}
+body.diamonds-clean .msg__avatar img {
+  width:25px;
+  height:25px;
+  padding:3px;
+  border-radius:50%;
+  background:#fff;
+}
+body.diamonds-clean .launcher__button img {
+  width:52px;
+  height:52px;
+  filter:brightness(0) invert(1);
+  transition:filter .24s var(--ease);
+}
+body.diamonds-clean .launcher__button:hover {
+  background:var(--kraft);
+}
+body.diamonds-clean .launcher__button:hover img {
+  filter:brightness(0);
+}

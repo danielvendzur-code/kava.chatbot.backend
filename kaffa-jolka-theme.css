@@ -1,0 +1,45 @@
+/* Kaffa Roastery brand tokens on the approved Jolka component system. */
+:root {
+  --ink:#151412;
+  --ink-2:#24211d;
+  --ink-3:#37322c;
+  --paper:#f1ede7;
+  --surface:#fffdfa;
+  --surface-2:#edf5f5;
+  --line:#d8dfdd;
+  --line-strong:#b9ccca;
+  --kraft:#5fc2d6;
+  --kraft-deep:#347e91;
+  --kraft-tint:#dff1f4;
+  --text:#201f1c;
+  --text-2:#5d5a54;
+  --text-3:#817d75;
+  --on-ink:#ffffff;
+  --on-ink-2:rgba(255,255,255,.72);
+}
+
+body.kaffa-clean :is(.lockup > img,.widget__brand > img,.msg__avatar img,.launcher__button img) {
+  object-fit:contain;
+}
+body.kaffa-clean .lockup > img {
+  width:82px;
+  padding:5px;
+}
+body.kaffa-clean .widget__brand > img {
+  width:82px;
+  padding:5px;
+  border-radius:9px;
+  background:#fff;
+}
+body.kaffa-clean .msg__avatar img {
+  width:25px;
+  height:25px;
+  padding:2px;
+  border-radius:50%;
+  background:#fff;
+}
+body.kaffa-clean .launcher__button img {
+  width:50px;
+  height:50px;
+  filter:brightness(0) invert(1);
+}
