@@ -4,6 +4,28 @@
 /* Muted copy stays secondary without becoming illegible. */
 .mcb-page { --mcb-muted: color-mix(in srgb, var(--mcb-ink) 76%, transparent) !important; }
 body[data-coffee-final] :is(.mcb-page small, .mcb-page .mcb-muted, .mcb-page .mcb-plan-price span) { opacity: .82 !important; }
+.mcb-page .mcb-plan { position:relative !important; }
+.mcb-page .mcb-plan-trial {
+  position:absolute;
+  top:-13px;
+  right:18px;
+  display:inline-flex;
+  align-items:center;
+  min-height:26px;
+  padding:4px 11px;
+  border:1px solid color-mix(in srgb,var(--mcb-brand) 34%,white);
+  border-radius:999px;
+  color:#fff;
+  background:var(--mcb-brand);
+  box-shadow:0 9px 20px -14px color-mix(in srgb,var(--mcb-brand) 78%,transparent);
+  font-size:10.5px;
+  font-weight:850;
+  letter-spacing:.015em;
+  white-space:nowrap;
+}
+@media (max-width:560px) {
+  .mcb-page .mcb-plan-trial { top:-11px; right:12px; min-height:24px; padding:3px 9px; font-size:9.5px; }
+}
 
 /* The segmented controls should glide instead of snapping. */
 body[data-coffee-final] :is(.mode__thumb, .mode__indicator, .pz13-mode-thumb, .kf-switch::before, .mode-switch::before) {
@@ -233,6 +255,8 @@ body[data-coffee-final="kaffa"] #panel.kf-panel {
   transform:none !important; animation:none !important;
 }
 body[data-coffee-final="kaffa"] #messages.kf-messages { justify-content:flex-start !important; align-content:start !important; }
+body[data-coffee-final="kaffa"] #messages.kf-messages { scrollbar-width:none !important; }
+body[data-coffee-final="kaffa"] #messages.kf-messages::-webkit-scrollbar { display:none !important; }
 body[data-coffee-final="kaffa"] #messages.kf-messages:not(.has-thread) .kf-chat-seed { min-height:0 !important; height:auto !important; margin:0 !important; gap:4px !important; flex:none !important; }
 body[data-coffee-final="kaffa"] #messages .kf-chat-seed > .kf-message-row--bot { margin:0 !important; }
 body[data-coffee-final="kaffa"] #panel .kf-chat-footer .kf-composer { box-sizing:border-box !important; height:50px !important; min-height:50px !important; max-height:50px !important; }
@@ -423,20 +447,19 @@ body[data-coffee-final="diamonds"] #widget #chatScreen .chat-logo {
   overflow:hidden !important;
   border:0 !important;
   border-radius:50% !important;
-  background:var(--d-ink) !important;
+  background:#fff !important;
   box-shadow:0 0 0 3px rgba(185,230,60,.16) !important;
 }
 body[data-coffee-final="diamonds"] #widget #chatScreen .chat-logo img.cf-brand-logo {
-  width:72px !important;
-  min-width:72px !important;
-  max-width:72px !important;
-  height:34px !important;
-  max-height:34px !important;
-  object-fit:contain !important;
+  width:40px !important;
+  min-width:40px !important;
+  max-width:40px !important;
+  height:40px !important;
+  max-height:40px !important;
+  object-fit:cover !important;
   object-position:left center !important;
-  filter:brightness(0) invert(1) !important;
-  transform:translateX(15px) scale(1.06) !important;
-  transform-origin:left center !important;
+  filter:none !important;
+  transform:none !important;
 }
 body[data-coffee-final="diamonds"] #widget #chatScreen .chat-line--assistant .chat-bubble {
   max-width:79% !important;
@@ -622,6 +645,13 @@ html body.mcw-on[data-coffee-final="jolka"] #widget .chips .chip {
     background-color:inherit !important;
     background-size:250% 250% !important;
     transform:translateY(-1px) !important;
+  }
+
+  /* The Jolka-style Praziarnicka restyle sets a stronger resting label color.
+     Keep that specificity from winning once the espresso fill reaches the text. */
+  html body.mcw-on[data-coffee-final="praziarnicka"] #pz13-widget .pz13-chip:hover {
+    border-color:#2c211c !important;
+    color:#fff !important;
   }
 }
 

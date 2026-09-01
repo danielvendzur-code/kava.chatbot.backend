@@ -43,13 +43,15 @@
     currency: '€',
     setup: '247',
     monthly: '10',
+    trial: '1. mesiac zdarma',
     points: [
       'Odpovie na otázky a dovedie zákazníka ku káve',
       'Pri nasadení naplnený vaším katalógom',
-      'História konverzácií — vidíte, na čo sa pýtajú'
+      'História konverzácií — vidíte, na čo sa pýtajú',
+      'Nasadenie na web jedným riadkom kódu'
     ],
     addon: 'Napojenie na košík e-shopu na požiadanie, za príplatok.',
-    note: 'Bez viazanosti, vypnúť sa dá kedykoľvek.'
+    note: 'Po bezplatnom mesiaci. Bez viazanosti, vypnúť sa dá kedykoľvek.'
   };
 
   /* ------------------------------------------------------------------ data */
@@ -157,8 +159,9 @@
 
   const planCard = () => `
     <article class="mcb-plan">
+      <span class="mcb-plan-trial">${esc(PRICING.trial)}</span>
       <p class="mcb-plan-price">
-        <strong>${esc(PRICING.setup)}&nbsp;${esc(PRICING.currency)}</strong><span>nasadenie</span>
+        <strong>${esc(PRICING.setup)}&nbsp;${esc(PRICING.currency)}</strong><span>jednorazovo</span>
         <i>+</i>
         <strong>${esc(PRICING.monthly)}&nbsp;${esc(PRICING.currency)}</strong><span>mesačne</span>
       </p>

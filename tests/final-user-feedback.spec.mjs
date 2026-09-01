@@ -118,8 +118,27 @@ test('all six brands fill quick chips radially from the centre', async ({ page }
     expect(rest.position, `${demo.slug}: fill must originate in the centre`).toMatch(/50%/);
     await chip.hover();
     await page.waitForTimeout(540);
-    const hoverSize = await chip.evaluate((node) => getComputedStyle(node).backgroundSize);
+    const hoverPaint = await chip.evaluate((node) => {
+      const style = getComputedStyle(node);
+      return { size:style.backgroundSize, color:style.color };
+    });
+    const hoverSize = hoverPaint.size;
     expect(hoverSize, `${demo.slug}: radial fill did not expand`).not.toMatch(/^(0px|0%) (0px|0%)$/);
+    if (demo.slug === 'praziarnicka') {
+      const channels = hoverPaint.color.match(/[\d.]+/g)?.slice(0,3).map(Number) || [0,0,0];
+      expect(Math.min(...channels), 'praziarnicka: filled chip label must stay light').toBeGreaterThan(230);
+    }
+  }
+});
+
+test('all six owner pages explain the free month, recurring price and one-line install', async ({ page }) => {
+  for (const demo of demos) {
+    await ready(page, demo);
+    await expect(page.locator('.mcb-plan-trial')).toHaveText('1. mesiac zdarma');
+    await expect(page.locator('.mcb-plan-price')).toContainText('247 €');
+    await expect(page.locator('.mcb-plan-price')).toContainText('10 €');
+    await expect(page.locator('.mcb-plan')).toContainText('Nasadenie na web jedným riadkom kódu');
+    await expect(page.locator('.mcb-pricing-side')).toContainText('Bez viazanosti');
   }
 });
 
