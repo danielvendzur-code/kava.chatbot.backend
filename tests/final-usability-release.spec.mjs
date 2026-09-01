@@ -223,7 +223,7 @@ test('Praziarnicka header logo sits cleanly on the Jolka-inspired dark header', 
   const ctaBorder = await cta.evaluate(node => parseFloat(getComputedStyle(node).borderTopWidth));
   const stageColor = await page.locator('.pz13-stage').evaluate(node => getComputedStyle(node).backgroundColor);
 
-  expect(headStyle.bg).toBe('rgb(18, 63, 53)');
+  expect(headStyle.bg).toBe('rgb(44, 33, 28)');
   expect(headStyle.image).toBe('none');
   expect(headStyle.border).toBeGreaterThanOrEqual(1);
   expect(logoStyle.blend).toBe('normal');

@@ -144,7 +144,10 @@
 
   function fixBrandAvatars() {
     if (slug === 'praziarnicka') {
-      document.querySelectorAll('.pz13-avatar').forEach((node) => replaceWithBrand(node, 'praziarnicka'));
+      document.querySelectorAll('.pz13-avatar').forEach((node) => {
+        node.replaceChildren(createImage('/brand/praziarnicka-icon-official.svg', 'cf-brand-logo', 'Pražiarnička'));
+        node.dataset.craBrand = 'praziarnicka';
+      });
     } else if (slug === 'kaffa') {
       document.querySelectorAll('.kf-bot-avatar').forEach((node) => replaceWithBrand(node, 'kaffa'));
     } else if (slug === 'concept' || slug === 'vitazov') {
