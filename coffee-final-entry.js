@@ -17,6 +17,11 @@
     return;
   }
 
+  if (slug === 'concept') {
+    if (location.pathname !== '/concept.html') location.replace('/concept.html');
+    return;
+  }
+
   window.COFFEE_DEMO_SLUG = slug;
   window.__COFFEE_DEMO_SLUG__ = slug === 'praziarnicka' ? 'praziarnicka-v13' : slug;
   window.__KAFFA_EDITORIAL__ = slug === 'kaffa';

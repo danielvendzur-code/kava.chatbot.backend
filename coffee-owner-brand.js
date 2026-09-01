@@ -222,7 +222,7 @@
 
   const launchers = {
     praziarnicka: '#pz13-open', diamonds: '#launcherButton', kaffa: '#launcher',
-    vitazov: '#openWidget', concept: '#openWidget', jolka: '#open'
+    vitazov: '#openWidget', concept: '#open,#openWidget', jolka: '#open'
   };
   const advisorButtons = {
     praziarnicka: '.pz13-mode button[data-mode="advisor"]',

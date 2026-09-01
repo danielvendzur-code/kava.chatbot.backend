@@ -39,6 +39,118 @@
     const entry = document.querySelector('.kf-advisor-entry');
     const started = Boolean(document.querySelector('.kf-message-row--user'));
     if (entry) entry.hidden = started;
+    const back = document.querySelector('.kf-progress-back');
+    if (back && !back.querySelector('span')) {
+      const label = document.createElement('span');
+      label.textContent = 'Späť';
+      back.appendChild(label);
+    }
+    const brand = document.querySelector('#panel .kf-widget-brand');
+    if (brand && !brand.querySelector('.kf-jolka-brand__copy')) {
+      const copy = document.createElement('span');
+      copy.className = 'kf-jolka-brand__copy';
+      copy.innerHTML = '<strong>Kaffa poradca</strong><small><i></i> Online poradca</small>';
+      brand.appendChild(copy);
+    }
+  }
+
+  const brandAssets = {
+    praziarnicka: '/brand/praziarnicka-logo-official.png',
+    concept: '/brand/concept-official-logo.png',
+    vitazov: '/assets/vitazov-logo.svg'
+  };
+
+  function brandImage(src, className, alt = '') {
+    const image = document.createElement('img');
+    image.src = src;
+    image.className = className;
+    image.alt = alt;
+    image.decoding = 'async';
+    return image;
+  }
+
+  function ensureHeaderCopy(brand, name, accentClass = '') {
+    if (!brand) return;
+    let copy = brand.querySelector('.cf-jolka-brand__copy');
+    if (!copy) {
+      copy = document.createElement('span');
+      copy.className = `cf-jolka-brand__copy ${accentClass}`.trim();
+      copy.innerHTML = `<strong></strong><small><i></i> Online poradca</small>`;
+      brand.appendChild(copy);
+    }
+    copy.querySelector('strong').textContent = name;
+  }
+
+  function enforcePraziarnickaIdentity() {
+    if (slug !== 'praziarnicka') return;
+    document.querySelectorAll('.pz13-widget__brand > img, .pz13-avatar img, #pz13-open img').forEach((image) => {
+      if (image.getAttribute('src') !== brandAssets.praziarnicka) image.src = brandAssets.praziarnicka;
+      image.classList.add('cf-praziarnicka-logo');
+      image.alt = image.closest('.pz13-widget__brand') ? 'Pražiarnička' : '';
+    });
+    const entryMark = document.querySelector('#pz13-widget .pz13-advisor-entry > span:first-child');
+    if (entryMark && !entryMark.querySelector('img.cf-entry-photo')) {
+      entryMark.replaceChildren(brandImage('/assets/praziarnicka/prep-automatic.webp', 'cf-entry-photo', ''));
+    }
+  }
+
+  function enforceConceptIdentity() {
+    if (slug !== 'concept') return;
+    const brand = document.querySelector('#widget .widget-brand');
+    if (brand) {
+      let logo = brand.querySelector('img');
+      if (!logo) {
+        logo = brandImage(brandAssets.concept, 'concept-widget-logo cf-header-logo', 'Concept Coffee Roasters');
+        brand.prepend(logo);
+      }
+      logo.src = brandAssets.concept;
+      logo.classList.add('cf-header-logo');
+      ensureHeaderCopy(brand, 'Concept Coffee Roasters', 'cf-jolka-brand__copy--concept');
+    }
+    document.querySelectorAll('#widget .message__avatar').forEach((avatar) => {
+      if (avatar.querySelector('img.cf-message-logo')) return;
+      avatar.replaceChildren(brandImage(brandAssets.concept, 'cf-message-logo', ''));
+    });
+    const entryMark = document.querySelector('#widget .advisor-entry__mark');
+    if (entryMark && !entryMark.querySelector('img.cf-entry-photo')) {
+      entryMark.replaceChildren(brandImage('/assets/concept/prep-filter.webp', 'cf-entry-photo', ''));
+    }
+    const back = document.querySelector('#widget #prevBtn');
+    if (back && !back.querySelector('span')) {
+      const label = document.createElement('span');
+      label.textContent = 'Späť';
+      back.appendChild(label);
+    }
+  }
+
+  function enforceVictoryIdentity() {
+    if (slug !== 'vitazov') return;
+    const brand = document.querySelector('#widget .widget-brand');
+    if (brand) {
+      brand.querySelectorAll('.cf-header-logo-lockup:empty').forEach((node) => node.remove());
+      let mark = brand.querySelector('.widget-brand__mark');
+      if (!mark) {
+        mark = document.createElement('span');
+        mark.className = 'widget-brand__mark';
+        mark.appendChild(brandImage(brandAssets.vitazov, 'kv-widget-logo cf-header-logo', 'Káva Víťazov'));
+        brand.prepend(mark);
+      }
+      ensureHeaderCopy(brand, 'Káva Víťazov', 'cf-jolka-brand__copy--vitazov');
+    }
+    document.querySelectorAll('#widget .message__avatar').forEach((avatar) => {
+      if (avatar.querySelector('img.cf-message-logo')) return;
+      avatar.replaceChildren(brandImage(brandAssets.vitazov, 'cf-message-logo', ''));
+    });
+    const entryMark = document.querySelector('#widget #openAdvisor > span:first-child');
+    if (entryMark && !entryMark.querySelector('img.cf-entry-photo')) {
+      entryMark.replaceChildren(brandImage('/assets/vitazov-office.jpeg', 'cf-entry-photo', ''));
+    }
+    const back = document.querySelector('#widget #prevBtn');
+    if (back && !back.querySelector('span')) {
+      const label = document.createElement('span');
+      label.textContent = 'Späť';
+      back.appendChild(label);
+    }
   }
 
   const victoryContext = {
@@ -145,6 +257,9 @@
 
   function run() {
     enforceKaffa();
+    enforcePraziarnickaIdentity();
+    enforceConceptIdentity();
+    enforceVictoryIdentity();
     enforceVictoryPhotos();
     enforceDiamondsCopy();
     enforceJolkaCredit();

@@ -656,6 +656,14 @@ html body.mcw-on[data-coffee-final="jolka"] #widget .widget__note {
   background:#f1e1cf !important;
   border-top:0 !important;
 }
+html body.mcw-on[data-coffee-final="jolka"] #widget:has(#advisorScreen.is-active) .widget__note {
+  color:#6e513b !important;
+  background:#fffdfa !important;
+}
+html body.mcw-on[data-coffee-final="jolka"] #widget:has(#chatScreen.is-active) .widget__note {
+  color:#6e513b !important;
+  background:#f1e1cf !important;
+}
 
 html body.mcw-on[data-coffee-final="jolka"] #widget .chips .chip {
   --cf-chip-fill:#aa7c50;
@@ -784,4 +792,669 @@ html body.mcw-on[data-coffee-final="jolka"] #widget .chips .chip {
   body[data-coffee-final="jolka"] .option__visual { height:clamp(130px, 19vh, 170px) !important; flex-basis:clamp(130px, 19vh, 170px) !important; }
   body[data-coffee-final="jolka"] .option__copy { padding:8px 10px 9px !important; }
   body[data-coffee-final="kaffa"] #panel.kf-panel { inset:0 !important; width:100% !important; min-width:0 !important; max-width:none !important; height:100dvh !important; min-height:100dvh !important; max-height:100dvh !important; }
+}
+
+/* -------------------------------------------------------------------------
+   Approved Jolka master applied to the remaining coffee demos.
+   Structure stays brand-specific; geometry, hierarchy and interaction rhythm
+   now share one calm system. */
+
+@media (min-width:641px) {
+  body[data-coffee-final="praziarnicka"] #pz13-widget.pz13-widget,
+  body[data-coffee-final="kaffa"] #panel.kf-panel,
+  body[data-coffee-final="diamonds"] #widget.widget,
+  body[data-coffee-final="vitazov"] #widget.widget,
+  body[data-coffee-final="concept"] #widget.widget {
+    top:auto !important;
+    right:18px !important;
+    bottom:14px !important;
+    left:auto !important;
+    width:452px !important;
+    min-width:452px !important;
+    max-width:452px !important;
+    height:min(788px,calc(100dvh - 36px)) !important;
+    min-height:0 !important;
+    max-height:calc(100dvh - 36px) !important;
+    border-radius:30px !important;
+    transform:none !important;
+    transform-origin:center !important;
+  }
+}
+
+body[data-coffee-final="praziarnicka"] #pz13-widget.pz13-widget,
+body[data-coffee-final="kaffa"] #panel.kf-panel,
+body[data-coffee-final="diamonds"] #widget.widget,
+body[data-coffee-final="vitazov"] #widget.widget,
+body[data-coffee-final="concept"] #widget.widget {
+  overflow:hidden !important;
+  border-width:1px !important;
+  box-shadow:0 34px 80px -32px rgba(25,24,21,.62),0 8px 24px -20px rgba(25,24,21,.42) !important;
+}
+
+/* Pražiarnička — actual company identity in the Jolka composition. */
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-widget__head {
+  min-height:70px !important;
+  height:70px !important;
+  flex-basis:70px !important;
+  padding:9px 11px 9px 14px !important;
+  background:linear-gradient(135deg,#211712,#33231c) !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-widget__brand { gap:10px !important; }
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-widget__brand > img.cf-praziarnicka-logo {
+  width:84px !important;
+  min-width:84px !important;
+  max-width:84px !important;
+  height:44px !important;
+  padding:4px !important;
+  border:1px solid rgba(255,255,255,.18) !important;
+  border-radius:12px !important;
+  object-fit:contain !important;
+  background:#fff !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-widget__brand > span { padding-left:10px !important; }
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-avatar {
+  width:38px !important;
+  height:38px !important;
+  flex-basis:38px !important;
+  padding:4px !important;
+  border:1px solid #d8c7b7 !important;
+  background:#fff !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-avatar img.cf-praziarnicka-logo {
+  width:100% !important;
+  height:100% !important;
+  border-radius:0 !important;
+  object-fit:contain !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-open.pz13-launcher__button {
+  overflow:hidden !important;
+  border-color:#fff !important;
+  background-color:#2c211c !important;
+  background-image:radial-gradient(circle at center,#d86734 0%,#d86734 68%,transparent 70%) !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-open.pz13-launcher__button > img.cf-praziarnicka-logo {
+  width:calc(100% - 10px) !important;
+  height:calc(100% - 10px) !important;
+  margin:5px !important;
+  padding:5px !important;
+  border-radius:50% !important;
+  object-fit:contain !important;
+  background:#fff !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-advisor-entry {
+  min-height:76px !important;
+  grid-template-columns:62px minmax(0,1fr) 24px !important;
+  padding:7px 11px 7px 7px !important;
+  border-radius:20px !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-advisor-entry > span:first-child {
+  width:62px !important;
+  height:60px !important;
+  overflow:hidden !important;
+  border-radius:15px !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-advisor-entry .cf-entry-photo {
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-bubble { border-radius:19px 19px 19px 7px !important; }
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-chat__bottom {
+  border-top:0 !important;
+  background:linear-gradient(180deg,#f7efe5 0%,#efdfcc 100%) !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-option {
+  min-height:146px !important;
+  height:146px !important;
+  grid-template-rows:100px 46px !important;
+  border-radius:20px !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-option__visual,
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-option__photo,
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-option__img {
+  min-height:100px !important;
+  height:100px !important;
+  border-radius:16px 16px 8px 8px !important;
+}
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-advisor__body { overflow:hidden !important; }
+
+/* Kaffa — monochrome brand, one restrained blue accent and visible presence. */
+body[data-coffee-final="kaffa"] #panel .kf-panel-head {
+  min-height:70px !important;
+  height:70px !important;
+  flex-basis:70px !important;
+  padding:9px 11px 9px 15px !important;
+  border-bottom:1px solid rgba(255,255,255,.1) !important;
+  color:#fff !important;
+  background:#151412 !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-widget-brand { display:flex !important; align-items:center !important; gap:12px !important; }
+body[data-coffee-final="kaffa"] #panel .kf-widget-brand > .kf-wordmark {
+  width:84px !important;
+  min-width:84px !important;
+  padding-right:11px !important;
+  border-right:1px solid rgba(255,255,255,.18) !important;
+  color:#fff !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-widget-brand > .kf-wordmark :is(strong,small) { color:#fff !important; }
+body[data-coffee-final="kaffa"] #panel .kf-widget-brand__copy {
+  display:grid !important;
+  gap:3px !important;
+  color:#fff !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-widget-brand__copy strong { color:#fff !important; font-size:13px !important; }
+body[data-coffee-final="kaffa"] #panel .kf-widget-brand__copy small { display:flex !important; align-items:center !important; gap:6px !important; color:rgba(255,255,255,.72) !important; font-size:9px !important; }
+body[data-coffee-final="kaffa"] #panel .kf-widget-brand__copy small i { width:8px !important; height:8px !important; border-radius:50% !important; background:#5fc2d6 !important; box-shadow:0 0 0 4px rgba(95,194,214,.14) !important; }
+body[data-coffee-final="kaffa"] #panel .kf-head-actions .kf-icon-btn {
+  width:40px !important;
+  height:40px !important;
+  border-color:rgba(255,255,255,.14) !important;
+  color:#fff !important;
+  background:rgba(255,255,255,.08) !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-switch {
+  min-height:58px !important;
+  height:58px !important;
+  flex-basis:58px !important;
+  margin:0 !important;
+  padding:8px 12px !important;
+  border:0 !important;
+  border-bottom:1px solid rgba(21,20,18,.12) !important;
+  border-radius:0 !important;
+  background:#f1ede7 !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-switch button { min-height:42px !important; border-radius:999px !important; }
+body[data-coffee-final="kaffa"] #panel .kf-advisor-entry {
+  min-height:76px !important;
+  border-radius:20px !important;
+  border-color:rgba(52,126,145,.24) !important;
+  background:#edf7f8 !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-message.bot {
+  border:1px solid rgba(52,126,145,.18) !important;
+  border-radius:19px 19px 19px 7px !important;
+  color:#26231f !important;
+  background:#eef7f8 !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-bot-avatar {
+  width:38px !important;
+  height:38px !important;
+  flex:0 0 38px !important;
+  display:grid !important;
+  place-items:center !important;
+  overflow:hidden !important;
+  border-radius:50% !important;
+  color:#fff !important;
+  background:#151412 !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-bot-avatar .kf-wordmark { width:auto !important; transform:scale(.62) !important; color:#fff !important; }
+body[data-coffee-final="kaffa"] #panel .kf-bot-avatar .kf-wordmark small { display:none !important; }
+body[data-coffee-final="kaffa"] #panel .kf-chat-footer {
+  border-top:0 !important;
+  background:linear-gradient(180deg,#f3f7f6 0%,#e5f0f1 100%) !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-option--photo {
+  min-height:146px !important;
+  height:146px !important;
+  max-height:146px !important;
+  grid-template-rows:100px 46px !important;
+  border-radius:20px !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-option--photo .kf-option__visual { min-height:100px !important; height:100px !important; border-radius:16px 16px 8px 8px !important; }
+body[data-coffee-final="kaffa"] #panel .kf-progress-back {
+  width:auto !important;
+  min-width:82px !important;
+  padding:0 13px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:6px !important;
+  color:#fff !important;
+  background:#151412 !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-progress-back svg { transform:rotate(180deg) !important; }
+body[data-coffee-final="kaffa"] #panel .kf-stage { overflow:hidden !important; }
+
+/* Diamonds — retain graphite/lime, use the calmer Jolka proportions. */
+body[data-coffee-final="diamonds"] #widget .widget-head {
+  min-height:70px !important;
+  height:70px !important;
+  flex-basis:70px !important;
+  padding:8px 11px 8px 14px !important;
+}
+body[data-coffee-final="diamonds"] #widget .widget-brand .widget-logo,
+body[data-coffee-final="diamonds"] #widget .widget-brand .widget-logo img.cf-brand-logo {
+  width:78px !important;
+  min-width:78px !important;
+  max-width:78px !important;
+  height:40px !important;
+}
+body[data-coffee-final="diamonds"] #widget .mode-switch { min-height:56px !important; height:56px !important; padding:7px 12px !important; }
+body[data-coffee-final="diamonds"] #widget #chatScreen.chat-screen { padding-top:10px !important; }
+body[data-coffee-final="diamonds"] #widget #chatScreen .advisor-entry {
+  width:calc(100% - 24px) !important;
+  min-height:80px !important;
+  height:80px !important;
+  margin:0 12px 8px !important;
+  grid-template-columns:64px minmax(0,1fr) 22px !important;
+  border-radius:20px !important;
+}
+body[data-coffee-final="diamonds"] #widget #chatScreen .advisor-entry > .advisor-entry__media { width:64px !important; height:64px !important; border-radius:15px !important; }
+body[data-coffee-final="diamonds"] #widget #chatScreen .chat-logo { width:38px !important; min-width:38px !important; height:38px !important; }
+body[data-coffee-final="diamonds"] #widget #chatScreen .chat-logo img.cf-brand-logo { width:38px !important; min-width:38px !important; max-width:38px !important; height:38px !important; max-height:38px !important; }
+body[data-coffee-final="diamonds"] #widget #chatScreen .chat-bottom {
+  border-top:0 !important;
+  background:linear-gradient(180deg,#f3f2e8 0%,#e6ead7 100%) !important;
+}
+body[data-coffee-final="diamonds"] #widget .answer-card { min-height:146px !important; height:146px !important; border-radius:20px !important; overflow:hidden !important; }
+body[data-coffee-final="diamonds"] #widget .answer-photo { min-height:100px !important; height:100px !important; aspect-ratio:auto !important; }
+body[data-coffee-final="diamonds"] #widget .advisor-content:not(:has(.result-card)) { overflow:hidden !important; }
+
+/* Shared wide-logo header anatomy for Víťazov and Concept. */
+body[data-coffee-final="vitazov"] #widget .widget__header,
+body[data-coffee-final="concept"] #widget .widget__header {
+  min-height:70px !important;
+  height:70px !important;
+  flex-basis:70px !important;
+  padding:8px 11px 8px 14px !important;
+  border-bottom:1px solid rgba(255,255,255,.11) !important;
+  color:#fff !important;
+}
+body[data-coffee-final="vitazov"] #widget .widget__header { background:linear-gradient(135deg,#063f35,#0b5748) !important; }
+body[data-coffee-final="concept"] #widget .widget__header { background:linear-gradient(135deg,#173d3b,#225856) !important; }
+body[data-coffee-final="vitazov"] #widget .widget-brand,
+body[data-coffee-final="concept"] #widget .widget-brand { display:flex !important; align-items:center !important; gap:10px !important; min-width:0 !important; }
+body[data-coffee-final="vitazov"] #widget .cf-header-logo-lockup,
+body[data-coffee-final="concept"] #widget .widget-brand > img.cf-header-logo {
+  width:82px !important;
+  min-width:82px !important;
+  height:42px !important;
+  display:grid !important;
+  place-items:center !important;
+  padding:4px !important;
+  overflow:hidden !important;
+  border-radius:12px !important;
+  background:#fff !important;
+}
+body[data-coffee-final="vitazov"] #widget .cf-header-logo-lockup img,
+body[data-coffee-final="concept"] #widget .widget-brand > img.cf-header-logo {
+  width:100% !important;
+  height:100% !important;
+  max-width:100% !important;
+  object-fit:contain !important;
+  object-position:center !important;
+  filter:none !important;
+  mix-blend-mode:normal !important;
+}
+body[data-coffee-final="vitazov"] #widget .cf-jolka-brand__copy,
+body[data-coffee-final="concept"] #widget .cf-jolka-brand__copy {
+  min-width:0 !important;
+  display:grid !important;
+  gap:3px !important;
+  padding-left:10px !important;
+  border-left:1px solid rgba(255,255,255,.2) !important;
+}
+body[data-coffee-final="vitazov"] #widget .cf-jolka-brand__copy strong,
+body[data-coffee-final="concept"] #widget .cf-jolka-brand__copy strong {
+  overflow:hidden !important;
+  display:-webkit-box !important;
+  color:#fff !important;
+  font-size:12px !important;
+  line-height:1.08 !important;
+  text-overflow:ellipsis !important;
+  white-space:normal !important;
+  -webkit-box-orient:vertical !important;
+  -webkit-line-clamp:2 !important;
+}
+body[data-coffee-final="vitazov"] #widget .cf-jolka-brand__copy small,
+body[data-coffee-final="concept"] #widget .cf-jolka-brand__copy small { display:flex !important; align-items:center !important; gap:6px !important; color:rgba(255,255,255,.72) !important; font-size:9px !important; font-weight:700 !important; }
+body[data-coffee-final="vitazov"] #widget .cf-jolka-brand__copy small i,
+body[data-coffee-final="concept"] #widget .cf-jolka-brand__copy small i { width:8px !important; height:8px !important; flex:0 0 8px !important; border-radius:50% !important; }
+body[data-coffee-final="vitazov"] #widget .cf-jolka-brand__copy small i { background:#b7e84d !important; box-shadow:0 0 0 4px rgba(183,232,77,.14) !important; }
+body[data-coffee-final="concept"] #widget .cf-jolka-brand__copy small i { background:#f39765 !important; box-shadow:0 0 0 4px rgba(243,151,101,.14) !important; }
+body[data-coffee-final="vitazov"] #widget .widget-actions .icon-button,
+body[data-coffee-final="concept"] #widget .widget-actions .icon-button {
+  width:40px !important;
+  height:40px !important;
+  border:1px solid rgba(255,255,255,.14) !important;
+  color:#fff !important;
+  background:rgba(255,255,255,.08) !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-head-actions .kf-icon-btn[aria-label*="Zavrieť"]:hover,
+body[data-coffee-final="kaffa"] #panel .kf-head-actions .kf-icon-btn[aria-label*="Zavrieť"]:focus-visible,
+body[data-coffee-final="vitazov"] #widget #closeWidget:hover,
+body[data-coffee-final="vitazov"] #widget #closeWidget:focus-visible,
+body[data-coffee-final="concept"] #widget #closeWidget:hover,
+body[data-coffee-final="concept"] #widget #closeWidget:focus-visible {
+  color:#b42318 !important;
+  background:#fff0ef !important;
+  border-color:#efc3bd !important;
+}
+body[data-coffee-final="vitazov"] #widget .mode,
+body[data-coffee-final="concept"] #widget .mode {
+  width:calc(100% - 24px) !important;
+  min-height:54px !important;
+  height:54px !important;
+  flex-basis:54px !important;
+  margin:8px 12px !important;
+  padding:4px !important;
+  border-radius:999px !important;
+}
+body[data-coffee-final="vitazov"] #widget .mode__button,
+body[data-coffee-final="concept"] #widget .mode__button { min-height:44px !important; border-radius:999px !important; }
+body[data-coffee-final="concept"] #widget .mode__indicator { background:#d85d2c !important; }
+
+body[data-coffee-final="vitazov"] #widget .message__avatar,
+body[data-coffee-final="concept"] #widget .message__avatar {
+  width:38px !important;
+  min-width:38px !important;
+  height:38px !important;
+  padding:4px !important;
+  display:grid !important;
+  place-items:center !important;
+  overflow:hidden !important;
+  border:1px solid rgba(23,61,59,.18) !important;
+  border-radius:50% !important;
+  background:#fff !important;
+}
+body[data-coffee-final="vitazov"] #widget .message__avatar .cf-message-logo,
+body[data-coffee-final="concept"] #widget .message__avatar .cf-message-logo { width:100% !important; height:100% !important; object-fit:contain !important; }
+body[data-coffee-final="vitazov"] #widget .message .bubble,
+body[data-coffee-final="concept"] #widget .message .bubble { border-radius:19px 19px 19px 7px !important; border-width:1px !important; }
+body[data-coffee-final="vitazov"] #widget .advisor-entry,
+body[data-coffee-final="concept"] #widget .advisor-entry {
+  min-height:78px !important;
+  height:78px !important;
+  margin:2px 12px 8px !important;
+  padding:7px 11px 7px 7px !important;
+  border-radius:20px !important;
+}
+body[data-coffee-final="vitazov"] #widget #openAdvisor > span:first-child,
+body[data-coffee-final="concept"] #widget .advisor-entry__mark {
+  width:62px !important;
+  min-width:62px !important;
+  height:62px !important;
+  display:grid !important;
+  place-items:center !important;
+  overflow:hidden !important;
+  border-radius:15px !important;
+  background:#fff !important;
+}
+body[data-coffee-final="vitazov"] #widget .cf-entry-logo,
+body[data-coffee-final="concept"] #widget .cf-entry-logo { width:86% !important; height:86% !important; object-fit:contain !important; }
+body[data-coffee-final="vitazov"] #widget .progress-back,
+body[data-coffee-final="concept"] #widget .progress-back {
+  width:auto !important;
+  min-width:82px !important;
+  padding:0 13px !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:6px !important;
+  color:#fff !important;
+  border-radius:999px !important;
+}
+body[data-coffee-final="vitazov"] #widget .progress-back { background:#063f35 !important; }
+body[data-coffee-final="concept"] #widget .progress-back { background:#173d3b !important; }
+body[data-coffee-final="vitazov"] #widget .advisor:not(:has(.result-card)),
+body[data-coffee-final="concept"] #widget .advisor:not(:has(.result-card)) { overflow:hidden !important; }
+
+/* Víťazov — dark green chrome, lime interaction and real photography. */
+body[data-coffee-final="vitazov"] #widget #chatScreen {
+  background:linear-gradient(180deg,#fffefb 0%,#fffefb 58%,#edf5df 100%) !important;
+}
+body[data-coffee-final="vitazov"] #widget .option {
+  min-height:146px !important;
+  height:146px !important;
+  grid-template-rows:100px 46px !important;
+  border-radius:20px !important;
+  overflow:hidden !important;
+}
+body[data-coffee-final="vitazov"] #widget .option__photo { min-height:100px !important; height:100px !important; border-radius:16px 16px 8px 8px !important; }
+body[data-coffee-final="vitazov"] #openWidget.launcher__button {
+  background-color:#063f35 !important;
+  background-image:radial-gradient(circle at center,#b7e84d 0%,#b7e84d 68%,transparent 70%) !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:0 0 !important;
+  transition:background-size .58s var(--cf-smooth),transform .24s ease !important;
+}
+body[data-coffee-final="vitazov"] #openWidget .kv-launcher-logo { width:68% !important; height:68% !important; display:grid !important; place-items:center !important; }
+body[data-coffee-final="vitazov"] #openWidget .kv-launcher-logo img { width:100% !important; height:100% !important; object-fit:contain !important; filter:brightness(0) invert(1) !important; transition:filter .2s ease !important; }
+@media (hover:hover) {
+  body[data-coffee-final="vitazov"] #openWidget.launcher__button:hover { background-size:250% 250% !important; transform:translateY(-2px) !important; }
+  body[data-coffee-final="vitazov"] #openWidget.launcher__button:hover .kv-launcher-logo img { filter:brightness(0) !important; }
+}
+
+/* Concept — orange launcher, teal chrome and branded circular message marks. */
+body[data-coffee-final="concept"] #widget #chatScreen {
+  background:linear-gradient(180deg,#fffdfa 0%,#fffdfa 58%,#fae9df 100%) !important;
+}
+body[data-coffee-final="concept"] #widget .chat-bottom {
+  border-top:0 !important;
+  background:linear-gradient(180deg,rgba(250,233,223,.3),#f7dfd2) !important;
+}
+body[data-coffee-final="concept"] #widget .option {
+  min-height:146px !important;
+  height:146px !important;
+  grid-template-rows:100px 46px !important;
+  border-radius:20px !important;
+  overflow:hidden !important;
+}
+body[data-coffee-final="concept"] #widget .option__photo { min-height:100px !important; height:100px !important; border-radius:16px 16px 8px 8px !important; }
+body[data-coffee-final="concept"] #openWidget.launcher__button {
+  background-color:#d85d2c !important;
+  background-image:radial-gradient(circle at center,#177f9a 0%,#177f9a 68%,transparent 70%) !important;
+  background-position:center !important;
+  background-repeat:no-repeat !important;
+  background-size:0 0 !important;
+  box-shadow:0 18px 38px -21px rgba(216,93,44,.66),0 0 0 1px rgba(216,93,44,.22) !important;
+  transition:background-size .62s var(--cf-smooth),transform .24s ease !important;
+}
+body[data-coffee-final="concept"] #openWidget.launcher__button img { max-width:72% !important; max-height:72% !important; object-fit:contain !important; filter:brightness(0) invert(1) !important; }
+@media (hover:hover) {
+  body[data-coffee-final="concept"] #openWidget.launcher__button:hover { background-size:250% 250% !important; transform:translateY(-2px) !important; }
+}
+
+/* Final Jolka-parity details: readable navigation, full-width imagery and
+   a compact identity/status lockup in every branded header. */
+body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-progress-back {
+  min-width:76px !important;
+  min-height:36px !important;
+  padding:0 13px !important;
+  color:#fff !important;
+  border:1px solid #2d2019 !important;
+  border-radius:999px !important;
+  background:#2d2019 !important;
+  opacity:1 !important;
+}
+
+body[data-coffee-final="kaffa"] #panel .kf-jolka-brand__copy {
+  min-width:0 !important;
+  display:grid !important;
+  gap:3px !important;
+  padding-left:10px !important;
+  border-left:1px solid rgba(255,255,255,.2) !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-jolka-brand__copy strong {
+  overflow:hidden !important;
+  color:#fff !important;
+  font-size:12px !important;
+  line-height:1.08 !important;
+  text-overflow:ellipsis !important;
+  white-space:nowrap !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-jolka-brand__copy small {
+  display:flex !important;
+  align-items:center !important;
+  gap:6px !important;
+  color:rgba(255,255,255,.72) !important;
+  font-size:9px !important;
+  font-weight:700 !important;
+  white-space:nowrap !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-jolka-brand__copy small i {
+  width:8px !important;
+  height:8px !important;
+  flex:0 0 8px !important;
+  border-radius:50% !important;
+  background:#5fc2d6 !important;
+  box-shadow:0 0 0 4px rgba(95,194,214,.14) !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-bot-avatar .kf-wordmark strong { color:#fff !important; }
+body[data-coffee-final="kaffa"] #panel .kf-option--photo {
+  box-sizing:border-box !important;
+  grid-template-columns:1fr !important;
+  grid-template-rows:100px 46px !important;
+  gap:0 !important;
+  padding:0 !important;
+  position:relative !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-option--photo .kf-option__copy {
+  min-width:0 !important;
+  padding:6px 10px 7px !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-option--photo .kf-option__copy small {
+  overflow:hidden !important;
+  display:block !important;
+  color:#6f6963 !important;
+  font-size:9.5px !important;
+  line-height:1.2 !important;
+  text-overflow:ellipsis !important;
+  white-space:nowrap !important;
+}
+body[data-coffee-final="kaffa"] #panel .kf-option--photo > i {
+  position:absolute !important;
+  top:10px !important;
+  right:10px !important;
+}
+
+body[data-coffee-final="diamonds"] #widget .answer-card {
+  box-sizing:border-box !important;
+  grid-template-columns:1fr !important;
+  grid-template-rows:100px 46px !important;
+  gap:0 !important;
+  padding:0 !important;
+  position:relative !important;
+}
+body[data-coffee-final="diamonds"] #widget .answer-photo,
+body[data-coffee-final="diamonds"] #widget .answer-photo img {
+  width:100% !important;
+  min-width:0 !important;
+  max-width:none !important;
+  height:100px !important;
+  object-fit:cover !important;
+}
+body[data-coffee-final="diamonds"] #widget .answer-copy { min-width:0 !important; padding:6px 10px 7px !important; }
+body[data-coffee-final="diamonds"] #widget .answer-copy small {
+  overflow:hidden !important;
+  display:block !important;
+  color:#77756d !important;
+  font-size:9.5px !important;
+  line-height:1.2 !important;
+  text-overflow:ellipsis !important;
+  white-space:nowrap !important;
+}
+body[data-coffee-final="diamonds"] #widget .answer-radio { position:absolute !important; top:10px !important; right:10px !important; }
+body[data-coffee-final="diamonds"] #widget #backButton {
+  min-width:76px !important;
+  min-height:36px !important;
+  padding:0 13px !important;
+  color:#fff !important;
+  border:1px solid #151a16 !important;
+  border-radius:999px !important;
+  background:#151a16 !important;
+  opacity:1 !important;
+}
+
+body[data-coffee-final="vitazov"] #widget .widget-brand__mark {
+  width:82px !important;
+  min-width:82px !important;
+  max-width:82px !important;
+  height:42px !important;
+  padding:4px !important;
+  display:grid !important;
+  place-items:center !important;
+  border-radius:12px !important;
+  background:rgba(255,255,255,.08) !important;
+}
+body[data-coffee-final="vitazov"] #widget .widget-brand__mark img {
+  width:100% !important;
+  max-width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  filter:brightness(0) invert(1) !important;
+}
+body[data-coffee-final="vitazov"] #widget .cf-header-logo-lockup:empty { display:none !important; }
+body[data-coffee-final="vitazov"] #widget .cf-jolka-brand__copy { padding-left:9px !important; }
+
+body[data-coffee-final="vitazov"] #widget .option,
+body[data-coffee-final="concept"] #widget .option {
+  box-sizing:border-box !important;
+  gap:0 !important;
+  padding:0 !important;
+  position:relative !important;
+}
+body[data-coffee-final="vitazov"] #widget .option__copy,
+body[data-coffee-final="concept"] #widget .option__copy { min-width:0 !important; padding:6px 10px 7px !important; }
+body[data-coffee-final="vitazov"] #widget .option__copy small,
+body[data-coffee-final="concept"] #widget .option__copy small {
+  overflow:hidden !important;
+  display:block !important;
+  color:#6f655f !important;
+  font-size:9.5px !important;
+  line-height:1.2 !important;
+  text-overflow:ellipsis !important;
+  white-space:nowrap !important;
+}
+body[data-coffee-final="vitazov"] #widget .option__state,
+body[data-coffee-final="concept"] #widget .option__state { position:absolute !important; top:10px !important; right:10px !important; }
+body[data-coffee-final="vitazov"] #widget .advisor-entry .cf-entry-photo,
+body[data-coffee-final="concept"] #widget .advisor-entry .cf-entry-photo {
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+}
+
+/* All remaining quick chips use the same deliberate, slower centre-out fill. */
+html body.mcw-on[data-coffee-final="praziarnicka"] #pz13-widget .pz13-chip,
+html body.mcw-on[data-coffee-final="kaffa"] #panel .kf-chip,
+html body.mcw-on[data-coffee-final="diamonds"] #widget #quickChips > button,
+html body.mcw-on[data-coffee-final="vitazov"] #widget #quickChips .chip,
+html body.mcw-on[data-coffee-final="concept"] #widget #quickChips .chip {
+  transition:background-size 1.08s var(--cf-smooth),border-color .24s ease,color .24s ease,transform .24s ease !important;
+}
+
+@media (max-width:640px) {
+  body[data-coffee-final="praziarnicka"] #pz13-widget.pz13-widget,
+  body[data-coffee-final="kaffa"] #panel.kf-panel,
+  body[data-coffee-final="diamonds"] #widget.widget,
+  body[data-coffee-final="vitazov"] #widget.widget,
+  body[data-coffee-final="concept"] #widget.widget {
+    inset:0 !important;
+    width:100dvw !important;
+    min-width:0 !important;
+    max-width:none !important;
+    height:100dvh !important;
+    min-height:100dvh !important;
+    max-height:100dvh !important;
+    border:0 !important;
+    border-radius:0 !important;
+  }
+  body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-widget__head,
+  body[data-coffee-final="kaffa"] #panel .kf-panel-head,
+  body[data-coffee-final="diamonds"] #widget .widget-head,
+  body[data-coffee-final="vitazov"] #widget .widget__header,
+  body[data-coffee-final="concept"] #widget .widget__header {
+    min-height:calc(68px + env(safe-area-inset-top)) !important;
+    height:calc(68px + env(safe-area-inset-top)) !important;
+    flex-basis:calc(68px + env(safe-area-inset-top)) !important;
+    padding-top:max(8px,env(safe-area-inset-top)) !important;
+  }
+  body[data-coffee-final="praziarnicka"] #pz13-widget .pz13-option,
+  body[data-coffee-final="kaffa"] #panel .kf-option--photo,
+  body[data-coffee-final="diamonds"] #widget .answer-card,
+  body[data-coffee-final="vitazov"] #widget .option,
+  body[data-coffee-final="concept"] #widget .option {
+    min-height:136px !important;
+    height:136px !important;
+  }
 }

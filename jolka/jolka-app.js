@@ -18,6 +18,30 @@
   }
 
   const { brand, acidityScale, products, steps, chat: chatCopy, fallbacks } = DATA;
+  const demo = {
+    id: 'jolka',
+    rootId: 'jolka-root',
+    pageClass: '',
+    heroProductId: 'zmes-jolka',
+    logoInk: '/assets/jolka/logo-ink.webp',
+    logoBadge: '/assets/jolka/logo-badge.webp',
+    logoHeader: '/assets/jolka/logo-cream.webp',
+    heroImage: '/assets/jolka/hero-bags.webp',
+    entryImage: '/assets/jolka/tile/zmes-jolka.webp',
+    eyebrow: 'Pre tím Pražiarne Jolka',
+    heroTitle: 'Vitajte vo vašom návrhu AI poradcu pre Pražiareň Jolka.',
+    heroLead: 'Takto môže zákazníkovi vysvetliť rozdiel medzi klasickými zmesami a výberovou kávou a odporučiť konkrétny produkt.',
+    heroImageAlt: 'Balenia kávy Pražiarne Jolka',
+    ownerCredit: 'ukážka pre Pražiareň Jolka',
+    teaserTitle: 'Neviete, ktorú kávu vybrať?',
+    teaserText: 'Za štyri otázky nájdeme tú vašu.',
+    dialogLabel: 'Kávový poradca Pražiareň Jolka',
+    advisorLabel: 'Kávový poradca',
+    entryKicker: 'Kávový výber',
+    entryTitle: 'Vyberte kávu na mieru',
+    entryText: '4 otázky · odporúčanie do minúty',
+    ...(DATA.demo || {})
+  };
   const byId = Object.fromEntries(products.map((p) => [p.id, p]));
 
   /* ---------------------------------------------------------------- icons */
@@ -111,13 +135,13 @@
 
   /* --------------------------------------------------------------- shell */
 
-  const heroProduct = byId['zmes-jolka'];
+  const heroProduct = byId[demo.heroProductId] || products[0];
 
-  document.getElementById('jolka-root').innerHTML = `
-    <main class="page">
+  document.getElementById(demo.rootId).innerHTML = `
+    <main class="page ${esc(demo.pageClass)}">
       <header class="topbar">
         <div class="lockup">
-          <img src="/assets/jolka/logo-ink.webp" width="52" height="52" alt="Pražiareň Jolka">
+          <img src="${demo.logoInk}" width="52" height="52" alt="${esc(brand.name)}">
           <span class="lockup__text"><b>${esc(brand.name)}</b><span>${esc(brand.place)}</span></span>
         </div>
         <span class="demo-flag"><i class="dot"></i> Návrh AI poradcu · ukážka</span>
@@ -125,9 +149,9 @@
 
       <section class="hero">
         <div class="hero__copy">
-          <span class="eyebrow">Pre tím Pražiarne Jolka</span>
-          <h1>Vitajte vo vašom návrhu AI poradcu pre Pražiareň Jolka.</h1>
-          <p class="hero__lead">Takto môže zákazníkovi vysvetliť rozdiel medzi klasickými zmesami a výberovou kávou a odporučiť konkrétny produkt.</p>
+          <span class="eyebrow">${esc(demo.eyebrow)}</span>
+          <h1>${esc(demo.heroTitle)}</h1>
+          <p class="hero__lead">${esc(demo.heroLead)}</p>
 
           <div class="benefits">
             <article class="benefit"><span class="benefit__num">01</span><div><b>Menej váhania</b><span>Zákazník dostane jednu konkrétnu kávu, nie zoznam.</span></div></article>
@@ -144,7 +168,7 @@
         <aside class="showcase" aria-label="Ukážka odporúčania">
           <div class="showcase__frame">
             <span class="showcase__tag">Vaša ponuka v poradcovi</span>
-            <img class="showcase__photo" src="/assets/jolka/hero-bags.webp" width="878" height="920" alt="Balenia kávy Pražiarne Jolka">
+            <img class="showcase__photo" src="${demo.heroImage}" width="878" height="920" alt="${esc(demo.heroImageAlt)}">
           </div>
           <div class="showcase__card">
             <img src="${heroProduct.photo}" width="54" height="76" alt="" loading="lazy">
@@ -164,30 +188,30 @@
           <li><b>Zvyšuje hodnotu košíka</b><span>Ukáže väčšie balenie aj druhú vhodnú kávu.</span></li>
           <li><b>Vedie k nákupu</b><span>Z odporúčania jedným klikom do košíka.</span></li>
         </ul>
-        <p class="page__by">Návrh pripravil <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a> · ukážka pre Pražiareň Jolka</p>
+        <p class="page__by">Návrh pripravil <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a> · ${esc(demo.ownerCredit)}</p>
       </footer>
     </main>
 
     <div class="launcher" id="launcher">
       <div class="launcher__teaser" id="teaser">
         <button class="launcher__teaser-body" id="teaserOpen" type="button">
-          <b>Neviete, ktorú kávu vybrať?</b>
-          <span>Za štyri otázky nájdeme tú vašu.</span>
+          <b>${esc(demo.teaserTitle)}</b>
+          <span>${esc(demo.teaserText)}</span>
         </button>
         <button class="launcher__teaser-close" id="teaserClose" type="button" aria-label="Skryť pozvánku">${icons.close}</button>
       </div>
       <button class="launcher__button" id="open" type="button" aria-label="Otvoriť kávového poradcu" aria-expanded="false" aria-controls="widget">
-        <img src="/assets/jolka/logo-badge.webp" width="52" height="52" alt="">
+        <img src="${demo.logoBadge}" width="52" height="52" alt="">
       </button>
     </div>
 
-    <section class="widget" id="widget" role="dialog" aria-modal="true" aria-label="Kávový poradca Pražiareň Jolka" aria-hidden="true" tabindex="-1">
+    <section class="widget" id="widget" role="dialog" aria-modal="true" aria-label="${esc(demo.dialogLabel)}" aria-hidden="true" tabindex="-1">
       <header class="widget__header">
         <div class="widget__brand">
-          <img src="/assets/jolka/logo-cream.webp" width="40" height="40" alt="">
+          <img src="${demo.logoHeader}" width="40" height="40" alt="">
           <div>
             <b>${esc(brand.name)}</b>
-            <span><i></i> Kávový poradca</span>
+            <span><i></i> ${esc(demo.advisorLabel)}</span>
           </div>
         </div>
         <div class="widget__actions">
@@ -217,11 +241,11 @@
 
         <section class="screen" id="chatScreen" aria-label="Chat">
           <button class="entry" id="entry" type="button">
-            <span class="entry__thumb"><img src="/assets/jolka/tile/zmes-jolka.webp" alt="" width="120" height="96"></span>
+            <span class="entry__thumb"><img src="${demo.entryImage}" alt="" width="120" height="96"></span>
             <span class="entry__copy">
-              <small>Kávový výber</small>
-              <b>Vyberte kávu na mieru</b>
-              <span>4 otázky · odporúčanie do minúty</span>
+              <small>${esc(demo.entryKicker)}</small>
+              <b>${esc(demo.entryTitle)}</b>
+              <span>${esc(demo.entryText)}</span>
             </span>
             <span class="entry__arrow">${icons.arrow}</span>
           </button>
@@ -527,7 +551,7 @@
   function addMessage(html, fromUser = false) {
     const row = document.createElement('div');
     row.className = `msg${fromUser ? ' msg--user' : ''}`;
-    row.innerHTML = `${fromUser ? '' : '<span class="msg__avatar"><img src="/assets/jolka/logo-cream.webp" width="26" height="26" alt="Poradca"></span>'}<div class="bubble">${html}</div>`;
+    row.innerHTML = `${fromUser ? '' : `<span class="msg__avatar"><img src="${demo.logoHeader}" width="26" height="26" alt="Poradca"></span>`}<div class="bubble">${html}</div>`;
     chatLog.appendChild(row);
     requestAnimationFrame(() => { chatLog.scrollTop = chatLog.scrollHeight; });
     return row;
@@ -537,7 +561,7 @@
     const row = document.createElement('div');
     row.className = 'msg';
     row.id = 'typing';
-    row.innerHTML = '<span class="msg__avatar"><img src="/assets/jolka/logo-cream.webp" width="26" height="26" alt=""></span><div class="bubble typing"><i></i><i></i><i></i></div>';
+    row.innerHTML = `<span class="msg__avatar"><img src="${demo.logoHeader}" width="26" height="26" alt=""></span><div class="bubble typing"><i></i><i></i><i></i></div>`;
     chatLog.appendChild(row);
     requestAnimationFrame(() => { chatLog.scrollTop = chatLog.scrollHeight; });
   }
@@ -558,7 +582,7 @@
     const response = await fetch('/api/chat', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ demoId: 'jolka', messages: state.history.slice(-10) })
+      body: JSON.stringify({ demoId: demo.id, messages: state.history.slice(-10) })
     });
     if (!response.ok) throw new Error('AI unavailable');
     const data = await response.json();

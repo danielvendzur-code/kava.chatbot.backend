@@ -162,6 +162,8 @@ test('Jolka keeps the first advisor controls readable and the warm finish intent
   const titlePaint = await page.locator('#stepTitle').evaluate((node) => getComputedStyle(node).color);
   const titleChannels = titlePaint.match(/[\d.]+/g)?.slice(0,3).map(Number) || [255,255,255];
   expect(Math.min(...titleChannels), 'Jolka: step title must remain readable').toBeLessThan(100);
+  const advisorNote = await page.locator('.widget__note').evaluate((node) => getComputedStyle(node).backgroundColor);
+  expect(advisorNote).toBe('rgb(255, 253, 250)');
 
   await page.locator(demo.chatMode).click({ force:true });
   const chip = page.locator('.chips .chip').filter({ visible:true }).first();
@@ -171,7 +173,7 @@ test('Jolka keeps the first advisor controls readable and the warm finish intent
     const style = getComputedStyle(node);
     return { background:style.backgroundColor, topBorder:style.borderTopWidth };
   });
-  expect(notePaint.background).not.toBe('rgba(0, 0, 0, 0)');
+  expect(notePaint.background).toBe('rgb(241, 225, 207)');
   expect(notePaint.topBorder).toBe('0px');
 });
 
