@@ -99,6 +99,31 @@
 
   const heroProduct = byId[demo.heroProductId] || products[0];
   const heroHint = demo.heroHint || `Funguje s reálnou ponukou ${brand.name}${brand.verifiedOn ? `, overenou ${brand.verifiedOn}` : ''}.`;
+  const referenceChoiceMedia = {
+    taste: [
+      '/assets/jolka/taste/chocolate.webp',
+      '/assets/jolka/taste/sweet.webp',
+      '/assets/jolka/taste/fruity.webp',
+      '/assets/jolka/taste/intense.webp'
+    ],
+    prep: [
+      '/assets/jolka/method/automat.webp',
+      '/assets/jolka/method/lever.webp',
+      '/assets/jolka/method/moka.webp',
+      '/assets/jolka/method/filter.webp'
+    ],
+    drink: [
+      '/assets/jolka/method/black.webp',
+      '/assets/jolka/method/milk.webp',
+      '/assets/jolka/method/both.webp'
+    ],
+    acidity: [
+      '/assets/jolka/taste/chocolate.webp',
+      '/assets/jolka/taste/sweet.webp',
+      '/assets/jolka/taste/fruity.webp',
+      '/assets/jolka/taste/intense.webp'
+    ]
+  };
 
   root.innerHTML = `
     <main class="page ${esc(demo.pageClass || '')}">
@@ -225,7 +250,7 @@
         </section>
       </div>
 
-      <p class="widget__note">Chatbot dodáva <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">${esc(brand.author || 'mojchatbot.sk')}</a></p>
+      <p class="widget__note"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">${esc(brand.author || 'mojchatbot.sk')}</a></p>
     </section>`;
 
   const widget = $('#widget');
@@ -312,22 +337,25 @@
     }).join('');
   }
 
-  function optionVisual(option) {
+  function optionVisual(step, option, index) {
     const product = option.product ? byId[option.product] : null;
-    const source = option.photo || product?.tile || product?.photo || demo.entryImage;
+    const referencePhoto = demo.id === 'concept' ? null : referenceChoiceMedia[step.key]?.[index];
+    const source = referencePhoto || option.photo || product?.tile || product?.photo || demo.entryImage;
     return `<span class="option__visual"><img src="${esc(source)}" alt="" loading="lazy" width="240" height="192"></span>`;
   }
 
   function renderQuestion() {
     const step = steps[state.step];
     const selected = state.answers[step.key];
+    advisor.classList.add('is-questions');
+    advisor.classList.remove('is-result');
     advisor.innerHTML = `
       <div class="question"><h2>${esc(step.title)}</h2></div>
       <div class="options" role="group" aria-label="${esc(step.title)}">
         ${step.options.map((option, index) => {
           const isSelected = selected === option.value;
           return `<button class="option${isSelected ? ' is-selected' : ''}" type="button" data-value="${esc(option.value)}" aria-pressed="${isSelected}" style="--reveal:${index * 70}ms">
-            ${optionVisual(option)}
+            ${optionVisual(step, option, index)}
             <span class="option__copy"><b>${esc(option.title)}</b><small>${esc(option.detail)}</small></span>
             <span class="option__mark">${icons.check}</span>
           </button>`;
@@ -362,6 +390,8 @@
   }
 
   function renderResult() {
+    advisor.classList.remove('is-questions');
+    advisor.classList.add('is-result');
     const ranked = rank(state.answers);
     const best = ranked[0];
     const current = state.chosen ? ranked.find((entry) => entry.product.id === state.chosen) || best : best;
@@ -431,7 +461,7 @@
   }
 
   function updateScrollHint() {
-    const hasMore = advisor.scrollHeight - advisor.clientHeight - advisor.scrollTop > 4;
+    const hasMore = state.stage === 'result' && advisor.scrollHeight - advisor.clientHeight - advisor.scrollTop > 4;
     advisorScreen.classList.toggle('has-more', hasMore);
   }
 
@@ -458,7 +488,7 @@
   function addMessage(html, fromUser = false) {
     const row = document.createElement('div');
     row.className = `msg${fromUser ? ' msg--user' : ''}`;
-    row.innerHTML = `${fromUser ? '' : `<span class="msg__avatar"><img src="${esc(demo.logoHeader)}" width="26" height="26" alt="Poradca"></span>`}<div class="bubble">${html}</div>`;
+    row.innerHTML = `${fromUser ? '' : `<span class="msg__avatar"><img src="${esc(demo.logoAvatar || demo.logoHeader)}" width="26" height="26" alt="${esc(brand.name)}"></span>`}<div class="bubble">${html}</div>`;
     chatLog.appendChild(row);
     requestAnimationFrame(() => { chatLog.scrollTop = chatLog.scrollHeight; });
     return row;
@@ -468,7 +498,7 @@
     const row = document.createElement('div');
     row.className = 'msg';
     row.id = 'typing';
-    row.innerHTML = `<span class="msg__avatar"><img src="${esc(demo.logoHeader)}" width="26" height="26" alt=""></span><div class="bubble typing"><i></i><i></i><i></i></div>`;
+    row.innerHTML = `<span class="msg__avatar"><img src="${esc(demo.logoAvatar || demo.logoHeader)}" width="26" height="26" alt=""></span><div class="bubble typing"><i></i><i></i><i></i></div>`;
     chatLog.appendChild(row);
     requestAnimationFrame(() => { chatLog.scrollTop = chatLog.scrollHeight; });
   }

@@ -125,7 +125,7 @@ window.JOLKA = (() => {
   const demo = {
     id: 'concept', rootId: 'concept-root', pageClass: 'concept-page', heroProductId: 'holyshot',
     logoInk: '/brand/concept-official-logo.png', logoBadge: '/brand/concept-official-logo.png', logoHeader: '/brand/concept-official-logo.png',
-    heroImage: '/assets/concept/product-holyshot.jpg', entryImage: '/assets/concept/result-espresso.webp',
+    heroImage: '/assets/concept/product-holyshot.jpg', entryImage: '/assets/concept/result-filter.webp',
     eyebrow: 'Pre tím Concept Coffee Roasters',
     heroTitle: 'Vitajte vo vašom návrhu kávového poradcu pre Concept Coffee Roasters.',
     heroLead: 'Poradca vysvetlí chuť, pôvod aj prípravu a odporučí jednu konkrétnu sezónnu kávu.',

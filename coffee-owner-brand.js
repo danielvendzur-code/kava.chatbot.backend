@@ -43,15 +43,15 @@
     currency: '€',
     setup: '247',
     monthly: '10',
-    trial: '1. mesiac zdarma',
+    trial: 'Prvý mesiac zdarma',
     points: [
       'Odpovie na otázky a dovedie zákazníka ku káve',
-      'Pri nasadení naplnený vaším katalógom',
+      'Váš katalóg je pripravený už pri spustení',
       'História konverzácií — vidíte, na čo sa pýtajú',
       'Nasadenie na web jedným riadkom kódu'
     ],
     addon: 'Napojenie na košík e-shopu na požiadanie, za príplatok.',
-    note: 'Po bezplatnom mesiaci. Bez viazanosti, vypnúť sa dá kedykoľvek.'
+    note: 'Po prvom bezplatnom mesiaci. Bez viazanosti, vypnúť sa dá kedykoľvek.'
   };
 
   /* ------------------------------------------------------------------ data */
@@ -160,6 +160,7 @@
   const planCard = () => `
     <article class="mcb-plan">
       <span class="mcb-plan-trial">${esc(PRICING.trial)}</span>
+      <small class="mcb-plan-after">Potom pokračujete za</small>
       <p class="mcb-plan-price">
         <strong>${esc(PRICING.setup)}&nbsp;${esc(PRICING.currency)}</strong><span>jednorazovo</span>
         <i>+</i>
@@ -221,21 +222,21 @@
   /* -------------------------------------------------------------- opening */
 
   const launchers = {
-    praziarnicka: '#pz13-open', diamonds: '#launcherButton', kaffa: '#launcher',
-    vitazov: '#openWidget', concept: '#open,#openWidget', jolka: '#open'
+    praziarnicka: '#open,#pz13-open', diamonds: '#open,#launcherButton', kaffa: '#open,#launcher',
+    vitazov: '#open,#openWidget', concept: '#open,#openWidget', jolka: '#open'
   };
   const advisorButtons = {
-    praziarnicka: '.pz13-mode button[data-mode="advisor"]',
-    diamonds: '.mode-switch button[data-mode="advisor"]',
-    kaffa: '.kf-switch button[data-view="advisor"],.kf-switch button[data-mode="advisor"]',
+    praziarnicka: '.mode__button[data-mode="advisor"],.pz13-mode button[data-mode="advisor"]',
+    diamonds: '.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]',
+    kaffa: '.mode__button[data-mode="advisor"],.kf-switch button[data-view="advisor"],.kf-switch button[data-mode="advisor"]',
     vitazov: '.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]',
     concept: '.mode__button[data-mode="advisor"],.mode-switch button[data-mode="advisor"]',
     jolka: '.mode__button[data-mode="advisor"]'
   };
   const chatButtons = {
-    praziarnicka: '.pz13-mode button[data-mode="chat"]',
-    diamonds: '.mode-switch button[data-mode="chat"]',
-    kaffa: '.kf-switch button[data-view="chat"],.kf-switch button[data-mode="chat"]',
+    praziarnicka: '.mode__button[data-mode="chat"],.pz13-mode button[data-mode="chat"]',
+    diamonds: '.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]',
+    kaffa: '.mode__button[data-mode="chat"],.kf-switch button[data-view="chat"],.kf-switch button[data-mode="chat"]',
     vitazov: '.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]',
     concept: '.mode__button[data-mode="chat"],.mode-switch button[data-mode="chat"]',
     jolka: '.mode__button[data-mode="chat"]'
@@ -319,9 +320,11 @@
   }
 
   function findRoot() {
-    return document.querySelector(brand.root) ||
+    return document.querySelector(`.page.${slug}-page`) ||
+      document.querySelector(brand.root) ||
       document.querySelector('[data-owner-page="true"]') ||
-      document.querySelector('.mc-owner');
+      document.querySelector('.mc-owner') ||
+      document.querySelector('.page');
   }
 
   function render() {
@@ -347,7 +350,8 @@
     return true;
   }
 
-  if (!document.querySelector('script[data-mcb-widget]')) {
+  const usesCleanJolkaWidget = document.documentElement.dataset.coffeeReleaseReady === 'true';
+  if (!usesCleanJolkaWidget && !document.querySelector('script[data-mcb-widget]')) {
     const polish = document.createElement('script');
     polish.src = '/coffee-widget-polish.js';
     polish.dataset.mcbWidget = 'true';

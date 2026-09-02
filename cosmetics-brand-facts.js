@@ -37,15 +37,15 @@
   }
 
   // Fresh visual sources and product facts checked against the current shops.
-  brands.two.hero = 'https://gravitywrite.sgp1.digitaloceanspaces.com/ai-images/ee41c03eb8e5_20251128_072941_120025.png';
+  brands.two.hero = '/assets/cosmetics/two.png';
 
-  brands.biofy.hero = 'https://biofy.sk/media/images/kremy-na-tvar/fullsizes/821-hydratacny_krem_biofy.png';
+  brands.biofy.hero = '/assets/cosmetics/biofy.png';
   const biofyDry = brands.biofy.products.find((product) => product.id === 'dry');
   if (biofyDry) biofyDry.price = '21,20 €';
   const biofyHemp = brands.biofy.products.find((product) => product.id === 'hemp');
   if (biofyHemp) biofyHemp.price = '17,80 €';
 
-  brands.anemone.hero = 'https://anemone.sk/img/cms/uvod1.webp';
+  brands.anemone.hero = '/assets/cosmetics/anemone.webp';
   const anemoneChamomileIndex = brands.anemone.products.findIndex((product) => product.id === 'chamomile');
   if (anemoneChamomileIndex >= 0) {
     brands.anemone.products[anemoneChamomileIndex] = {

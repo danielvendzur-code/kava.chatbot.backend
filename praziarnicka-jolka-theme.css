@@ -18,23 +18,24 @@
   --on-ink-2:rgba(255,255,255,.74);
 }
 
-body.praziarnicka-clean :is(.lockup > img,.widget__brand > img,.msg__avatar img,.launcher__button img) { object-fit:contain; }
-body.praziarnicka-clean :is(.lockup > img,.widget__brand > img) {
-  padding:4px;
-  border-radius:10px;
-  background:#fff;
+body.praziarnicka-clean :is(.widget__brand > img,.msg__avatar img,.launcher__button img) { object-fit:contain; }
+body.praziarnicka-clean .widget__brand > img {
+  width:76px !important;
+  min-width:76px !important;
+  max-width:76px !important;
+  height:40px !important;
+  filter:invert(1);
+  mix-blend-mode:screen;
 }
 body.praziarnicka-clean .msg__avatar img {
-  width:25px;
-  height:25px;
-  padding:3px;
-  border-radius:50%;
-  background:#fff;
+  width:31px !important;
+  height:31px !important;
 }
 body.praziarnicka-clean .launcher__button img {
   width:48px;
   height:48px;
-  padding:2px;
-  border-radius:50%;
-  background:#fff;
+}
+body.praziarnicka-clean .launcher__button { --launcher-fill:#d86734; }
+@media (hover:hover) and (pointer:fine) {
+  body.praziarnicka-clean .launcher__button:hover img { filter:brightness(0) invert(1); }
 }

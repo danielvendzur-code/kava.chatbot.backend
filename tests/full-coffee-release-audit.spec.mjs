@@ -58,12 +58,26 @@ async function expectContained(parent, child, tolerance = 1) {
   expect(childBox.y + childBox.height).toBeLessThanOrEqual(parentBox.y + parentBox.height + tolerance);
 }
 
+async function expectOwnerOffer(page) {
+  const ownerPage = page.locator('.mcb-page');
+  await expect(ownerPage).toBeVisible();
+  await expect(ownerPage.locator('.mcb-plan')).toContainText('Prvý mesiac zdarma');
+  await expect(ownerPage.locator('.mcb-plan')).toContainText('247');
+  await expect(ownerPage.locator('.mcb-plan')).toContainText('10');
+  await expect(ownerPage.locator('.mcb-plan')).toContainText('Nasadenie na web jedným riadkom kódu');
+  await expect(ownerPage.locator('.mcb-pricing-side')).toContainText('Bez viazanosti');
+}
+
 async function expectBrandGeometry(page) {
-  const lockupLogo = page.locator('.lockup > img');
-  await expectLoadedImage(lockupLogo);
-  const lockupBox = await lockupLogo.boundingBox();
-  expect(lockupBox.width).toBeLessThanOrEqual(52.5);
-  expect(lockupBox.height).toBeLessThanOrEqual(52.5);
+  const lockupLogo = page.locator('.mcb-lockup img').first();
+  if (await lockupLogo.count()) {
+    await expectLoadedImage(lockupLogo);
+    const lockupBox = await lockupLogo.boundingBox();
+    expect(lockupBox.width).toBeLessThanOrEqual(180);
+    expect(lockupBox.height).toBeLessThanOrEqual(58);
+  } else {
+    await expect(page.locator('.mcb-wordmark')).toBeVisible();
+  }
 
   const launcher = page.locator('#open');
   const launcherImage = launcher.locator('img');
@@ -73,6 +87,7 @@ async function expectBrandGeometry(page) {
   await launcher.click();
   const widget = page.locator('#widget');
   await expect(widget).toHaveClass(/is-open/);
+  await page.waitForTimeout(420);
 
   const header = widget.locator('.widget__header');
   const brand = widget.locator('.widget__brand');
@@ -80,8 +95,15 @@ async function expectBrandGeometry(page) {
   const actions = widget.locator('.widget__actions');
   await expectLoadedImage(brandImage);
   const brandImageBox = await brandImage.boundingBox();
-  expect(brandImageBox.width).toBeLessThanOrEqual(52);
+  expect(brandImageBox.width).toBeLessThanOrEqual(84);
   expect(brandImageBox.height).toBeLessThanOrEqual(52);
+  const brandImageStyle = await brandImage.evaluate((image) => {
+    const style = getComputedStyle(image);
+    const alpha = Number(style.backgroundColor.match(/rgba\([^,]+,[^,]+,[^,]+,\s*([\d.]+)\)/)?.[1] ?? 1);
+    return { backgroundAlpha: alpha, borderWidth: style.borderWidth };
+  });
+  expect(brandImageStyle.backgroundAlpha).toBeLessThanOrEqual(.1);
+  expect(brandImageStyle.borderWidth).toBe('0px');
   await expectContained(header, brand, 1);
   await expectContained(header, actions, 1);
 
@@ -95,13 +117,13 @@ for (const [slug, url] of demos) {
     const failures = monitor(page);
     await ready(page, url, { width: 390, height: 844 });
 
-    await expect(page.locator('.page')).toBeVisible();
-    await expectLoadedImage(page.locator('.showcase__photo'));
+    await expectOwnerOffer(page);
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(390);
 
     await expectBrandGeometry(page);
 
     const widget = page.locator('#widget');
+    await expect(widget.locator('.widget__note')).toHaveText('mojchatbot.sk');
     const widgetBox = await widget.boundingBox();
     expect(widgetBox).not.toBeNull();
     expect(widgetBox.x).toBeGreaterThanOrEqual(-1);
@@ -151,11 +173,10 @@ for (const [slug, url] of demos) {
   test(`${slug}: desktop owner page and widget stay inside viewport`, async ({ page }) => {
     const failures = monitor(page);
     await ready(page, url, { width: 1366, height: 768 });
-    await expect(page.locator('.page')).toBeVisible();
-    await expectLoadedImage(page.locator('.showcase__photo'));
+    await expectOwnerOffer(page);
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(1366);
 
-    const pageGeometry = await page.locator('.page').evaluate((element) => ({ clientHeight: element.clientHeight, scrollHeight: element.scrollHeight }));
+    const pageGeometry = await page.locator('.mcb-page').evaluate((element) => ({ clientHeight: element.clientHeight, scrollHeight: element.scrollHeight }));
     expect(pageGeometry.scrollHeight).toBeLessThanOrEqual(pageGeometry.clientHeight + 2);
 
     await expectBrandGeometry(page);

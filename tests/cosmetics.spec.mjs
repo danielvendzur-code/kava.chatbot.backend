@@ -50,6 +50,11 @@ test('all six cosmetics demos have a branded owner presentation that sells the s
     await expect(owner.locator('.cx-owner-path > div')).toHaveCount(3);
     await expect(owner.locator('.cx-owner-benefits > div')).toHaveCount(3);
     await expect(owner.locator('.cx-owner-contact[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
+    await expect(owner.locator('.cx-owner-offer')).toContainText('Prvý mesiac zdarma');
+    await expect(owner.locator('.cx-owner-offer')).toContainText('247 €');
+    await expect(owner.locator('.cx-owner-offer')).toContainText('10 €');
+    await expect(owner.locator('.cx-owner-offer')).toContainText('Nasadenie na web jedným riadkom kódu');
+    expect(await owner.locator('.cx-owner-visual > img').evaluate(image => image.complete && image.naturalWidth > 0)).toBeTruthy();
     const text=await owner.innerText();
     expect(text).not.toMatch(/umelá inteligencia|AI demo|match\s*%|zhoda\s*%/i);
     expect(text.length).toBeLessThan(1250);
@@ -86,11 +91,14 @@ test('initial chat is simple, readable and removes selection clutter after the f
     const widget=page.locator('#cx-widget');
     await expect(widget).toHaveClass(/is-open/);
     await expect(page.locator('.cx-mode button')).toHaveCount(2);
+    await expect(page.locator('.cx-mode button').first()).toHaveAttribute('data-mode','advisor');
     await expect(page.locator('.cx-chip')).toHaveCount(4);
     const entry=page.locator('.cx-advisor-entry');
     const welcome=page.locator('.cx-message--assistant .cx-bubble').first();
     await expect(entry).toBeVisible();
     await expect(welcome).toBeVisible();
+    await expect(page.locator('.cx-message-avatar')).toBeVisible();
+    await expect(page.locator('.cx-widget-note')).toHaveText('mojchatbot.sk');
     const entryBox=await entry.boundingBox();
     const welcomeBox=await welcome.boundingBox();
     expect(entryBox.y,slug).toBeLessThan(welcomeBox.y);
@@ -100,6 +108,14 @@ test('initial chat is simple, readable and removes selection clutter after the f
     expect(chipHeight,slug).toBeGreaterThanOrEqual(39);
     expect(chipFont,slug).toBeGreaterThanOrEqual(10.4);
     expect(bubbleFont,slug).toBeGreaterThanOrEqual(12.5);
+    await page.locator('.cx-chip').first().hover();
+    await page.waitForTimeout(1180);
+    const hoverStyle=await page.locator('.cx-chip').first().evaluate(node=>({size:getComputedStyle(node).backgroundSize,position:getComputedStyle(node).backgroundPosition,color:getComputedStyle(node).color,image:getComputedStyle(node).backgroundImage}));
+    expect(hoverStyle.size,slug).toBe('250% 250%');
+    expect(hoverStyle.position,slug).toBe('50% 50%');
+    expect(hoverStyle.color,slug).toBe('rgb(255, 255, 255)');
+    expect(hoverStyle.image,slug).toContain('radial-gradient');
+    await capture(page,`artifacts/cosmetics-${slug}-chat-mobile.png`);
     await page.locator('.cx-chip').first().click();
     await expect(page.locator('.cx-message--user')).toHaveCount(1);
     await expect(page.locator('.cx-advisor-entry')).toHaveCount(0);
@@ -112,8 +128,9 @@ test('every cosmetics advisor is four photographic no-scroll steps and ends on a
   test.setTimeout(60000);
   for (const slug of demos) {
     await openDemo(page,slug,{width:390,height:844});
-    await page.locator('#cx-teaser').click();
+    await page.locator('#cx-open').click();
     await expect(page.locator('#cx-widget')).toHaveClass(/is-open/);
+    await page.locator('.cx-mode button[data-mode="advisor"]').click();
     await expect(page.locator('.cx-mode button[data-mode="advisor"]')).toHaveClass(/is-active/);
 
     for (let step=0; step<4; step+=1) {
@@ -127,8 +144,10 @@ test('every cosmetics advisor is four photographic no-scroll steps and ends on a
       expect(visible,slug).toBeTruthy();
       const imageCount=await options.locator('img').count();
       expect(imageCount,slug).toBe(4);
+      expect(await options.locator('img').evaluateAll(images=>images.every(image=>image.complete&&image.naturalWidth>0)),slug).toBeTruthy();
       const h=await options.first().evaluate(n=>n.getBoundingClientRect().height);
       expect(h,slug).toBeGreaterThanOrEqual(105);
+      if(step===0) await capture(page,`artifacts/cosmetics-${slug}-advisor-mobile.png`);
       await options.first().click();
       await page.waitForTimeout(300);
     }

@@ -67,15 +67,17 @@
           <div class="cx-owner-visual-card"><span>${icons.spark}</span><div><small>4 krátke otázky</small><b>Od potreby ku konkrétnemu produktu.</b></div></div>
         </div>
       </section>
-      <section class="cx-owner-benefits">
-        ${brand.benefit.map((item) => `<div>${icons.check}<b>${esc(item)}</b></div>`).join('')}
+      <section class="cx-owner-benefits cx-owner-offer" aria-label="Cena">
+        <div class="cx-plan-summary"><span>Prvý mesiac zdarma</span><small>Potom pokračujete za</small><p><strong>247 €</strong><em>jednorazovo</em><i>+</i><strong>10 €</strong><em>mesačne</em></p></div>
+        <div class="cx-plan-points"><span>${icons.check} Váš katalóg je pripravený už pri spustení</span><span>${icons.check} História konverzácií — vidíte, na čo sa pýtajú</span><span>${icons.check} Nasadenie na web jedným riadkom kódu</span></div>
+        <div class="cx-plan-cta"><small>Po prvom bezplatnom mesiaci. Bez viazanosti, vypnúť sa dá kedykoľvek.</small><a href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a></div>
       </section>
       <footer class="cx-owner-foot"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a><span>Ukážka riešenia pre ${esc(brand.name)}</span></footer>
     </main>
 
     <div class="cx-launcher" id="cx-launcher">
       <button class="cx-teaser" id="cx-teaser" type="button"><b>Pomôcť s výberom?</b><span>4 otázky · konkrétny produkt</span></button>
-      <button class="cx-launcher-button" id="cx-open" type="button" aria-label="Otvoriť poradcu" aria-expanded="false">${icons.spark}</button>
+      <button class="cx-launcher-button" id="cx-open" type="button" aria-label="Otvoriť poradcu" aria-expanded="false">${brand.wordmark}</button>
     </div>
     <div class="cx-backdrop" id="cx-backdrop" hidden></div>
     <section class="cx-widget" id="cx-widget" role="dialog" aria-modal="true" aria-label="Poradca starostlivosti ${esc(brand.name)}" aria-hidden="true">
@@ -85,10 +87,11 @@
       </header>
       <nav class="cx-mode" aria-label="Režim poradcu">
         <span class="cx-mode-thumb"></span>
+        <button type="button" data-mode="advisor" aria-pressed="false">${icons.spark}<b>Výber starostlivosti</b></button>
         <button type="button" data-mode="chat" class="is-active" aria-pressed="true">${icons.chat}<b>Chat</b></button>
-        <button type="button" data-mode="advisor" aria-pressed="false">${icons.spark}<b>Výber</b></button>
       </nav>
       <div class="cx-stage" id="cx-stage"></div>
+      <p class="cx-widget-note"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a></p>
     </section>`;
 
   const widget = root.querySelector('#cx-widget');
@@ -132,7 +135,8 @@
   }
 
   function messageMarkup(message) {
-    return `<div class="cx-message cx-message--${message.role}"><div class="cx-bubble">${esc(message.text)}</div></div>`;
+    const avatar = message.role === 'assistant' ? `<span class="cx-message-avatar">${brand.wordmark}</span>` : '';
+    return `<div class="cx-message cx-message--${message.role}">${avatar}<div class="cx-bubble">${esc(message.text)}</div></div>`;
   }
 
   function renderChat() {
@@ -140,7 +144,7 @@
     stage.innerHTML = `
       <section class="cx-chat">
         <div class="cx-chat-messages" id="cx-messages">
-          ${!state.interacted ? `<button class="cx-advisor-entry" id="cx-advisor-entry" type="button"><span>${icons.spark}</span><div><b>Nájsť starostlivosť za 4 kroky</b><small>Pleť · priorita · rutina · textúra</small></div>${icons.arrow}</button>` : ''}
+          ${!state.interacted ? `<button class="cx-advisor-entry" id="cx-advisor-entry" type="button"><span class="cx-advisor-entry-photo"><img src="${brand.hero}" alt="" referrerpolicy="no-referrer" onerror="this.closest('.cx-advisor-entry-photo')?.setAttribute('data-image-failed','true')"></span><div><small>VÝBER STAROSTLIVOSTI</small><b>Nájsť vhodný produkt</b><em>Pleť · priorita · rutina · textúra</em></div>${icons.arrow}</button>` : ''}
           ${state.messages.map(messageMarkup).join('')}
         </div>
         <div class="cx-chat-bottom">

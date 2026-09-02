@@ -20,28 +20,27 @@
 
 /* The official Diamonds SVG is horizontal. Its symbol occupies the left square of the source artwork,
    so compact Jolka slots crop that symbol instead of shrinking the whole wordmark to illegibility. */
-body.diamonds-clean :is(.lockup > img,.widget__brand > img,.msg__avatar img,.launcher__button img) {
-  object-fit:cover;
-  object-position:left center;
-}
-body.diamonds-clean :is(.lockup > img,.widget__brand > img) {
-  padding:3px;
-  border-radius:10px;
-  background:#fff;
+body.diamonds-clean :is(.widget__brand > img,.launcher__button img) { object-fit:contain; }
+body.diamonds-clean .widget__brand > img {
+  width:72px !important;
+  min-width:72px !important;
+  max-width:72px !important;
+  height:38px !important;
+  filter:brightness(0) invert(1);
 }
 body.diamonds-clean .msg__avatar img {
-  width:25px;
-  height:25px;
-  padding:2px;
-  border-radius:50%;
-  background:#fff;
+  width:30px !important;
+  height:30px !important;
+  object-fit:cover !important;
+  object-position:left center;
+  filter:brightness(0) invert(1);
 }
 body.diamonds-clean .launcher__button img {
   width:48px;
   height:48px;
   border-radius:50%;
   filter:brightness(0) invert(1);
-  transition:filter .24s var(--ease);
+  transition:filter .28s var(--ease);
 }
-body.diamonds-clean .launcher__button:hover { background:var(--kraft); }
+body.diamonds-clean .launcher__button { --launcher-fill:#b7dc45; }
 body.diamonds-clean .launcher__button:hover img { filter:brightness(0); }

@@ -159,6 +159,15 @@ body:has(.mcb-page) { margin: 0 !important; background: var(--mcb-paper, #fff) !
   border-radius: 18px;
   background: linear-gradient(150deg, var(--mcb-soft), var(--mcb-paper) 68%);
 }
+.mcb-plan-trial {
+  display:flex; align-items:center; gap:8px;
+  color:var(--mcb-brand); font-size:14px; font-weight:850; letter-spacing:-.01em;
+}
+.mcb-plan-trial::before {
+  content:""; width:8px; height:8px; flex:0 0 8px; border-radius:50%;
+  background:var(--mcb-accent); box-shadow:0 0 0 4px color-mix(in srgb,var(--mcb-accent) 14%,transparent);
+}
+.mcb-plan-after { margin:0 0 -4px; color:var(--mcb-muted); font-size:10.5px; font-weight:700; }
 .mcb-plan-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 7px; margin: 0; }
 .mcb-plan-price strong { font-family: var(--mcb-display); font-size: clamp(23px, 2.2vw, 30px); font-weight: 850; letter-spacing: -.035em; }
 .mcb-plan-price span { color: var(--mcb-muted); font-size: 11.5px; }
