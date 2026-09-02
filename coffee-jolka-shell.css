@@ -51,8 +51,8 @@ html, body { overflow-x:hidden; }
 .launcher__button { overflow:hidden; }
 .launcher__button img {
   display:block;
-  max-width:52px !important;
-  max-height:52px !important;
+  max-width:56px !important;
+  max-height:56px !important;
   object-fit:contain;
 }
 
@@ -135,7 +135,7 @@ html, body { overflow-x:hidden; }
   margin:13px 16px 4px;
   padding:8px 14px 8px 8px;
   min-height:82px;
-  border-radius:24px 24px 10px 24px;
+  border-radius:22px;
   border-color:var(--line-strong);
   background:linear-gradient(112deg,var(--surface) 34%,var(--kraft-tint));
   box-shadow:0 10px 24px -22px color-mix(in srgb,var(--ink) 48%,transparent);
@@ -144,8 +144,17 @@ html, body { overflow-x:hidden; }
   width:82px;
   height:64px;
   border:0;
-  border-radius:17px 17px 8px 17px;
+  border-radius:16px;
   box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ink) 10%,transparent);
+  overflow:hidden;
+}
+.entry__thumb img {
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center !important;
+  transform:none !important;
+  transition:none !important;
 }
 .entry__copy small { color:var(--kraft-deep); }
 .entry__arrow { width:34px; height:34px; }
@@ -174,24 +183,30 @@ html, body { overflow-x:hidden; }
   background:color-mix(in srgb,var(--surface) 70%,var(--kraft-tint));
   border-color:var(--line);
 }
+.bubble .msg__time {
+  display:block;
+  margin-top:6px;
+  color:color-mix(in srgb,currentColor 48%,transparent);
+  font-size:9.5px;
+  font-weight:500;
+  line-height:1;
+  text-align:right;
+}
 
+/* Calm hover states: no radial fill, no white-on-white transition. */
 .chip {
   --chip-fill:var(--kraft-deep);
-  --chip-on-fill:var(--on-ink);
-  background-color:var(--surface);
-  background-image:radial-gradient(circle at center,var(--chip-fill) 0%,var(--chip-fill) 69%,transparent 71%);
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:0 0;
-  transition:background-size 1.12s var(--ease),border-color .24s ease,color .24s ease,transform .24s ease;
+  background:var(--surface);
+  color:var(--text);
+  transition:background-color .18s ease,border-color .18s ease,color .18s ease,transform .18s ease,box-shadow .18s ease;
 }
 @media (hover:hover) and (pointer:fine) {
   .chip:hover {
-    color:var(--chip-on-fill);
-    border-color:var(--chip-fill);
-    background-color:var(--surface);
-    background-size:250% 250%;
+    color:var(--text);
+    border-color:color-mix(in srgb,var(--chip-fill) 58%,var(--line));
+    background:color-mix(in srgb,var(--chip-fill) 8%,var(--surface));
     transform:translateY(-1px);
+    box-shadow:0 8px 18px -16px color-mix(in srgb,var(--chip-fill) 58%,transparent);
   }
 }
 
@@ -226,24 +241,35 @@ html, body { overflow-x:hidden; }
 }
 .launcher__teaser-close { z-index:2; }
 
+/* Launcher colour changes immediately on hover; only lift/shadow are animated. */
 .launcher__button {
   --launcher-fill:var(--kraft);
   border:0;
-  background-color:var(--ink);
-  background-image:radial-gradient(circle at center,var(--launcher-fill) 0%,var(--launcher-fill) 68%,transparent 70%);
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:0 0;
+  background:var(--ink);
   box-shadow:0 18px 38px -22px color-mix(in srgb,var(--ink) 72%,transparent);
-  transition:background-size .92s var(--ease),transform .24s var(--ease),box-shadow .24s var(--ease);
+  transition:transform .2s var(--ease),box-shadow .2s var(--ease);
 }
-.launcher__button img { transition:filter .28s ease,transform .28s ease; }
+.launcher__button img { transition:transform .18s ease; }
 @media (hover:hover) and (pointer:fine) {
   .launcher__button:hover {
-    background-size:250% 250%;
+    background:var(--launcher-fill);
     transform:translateY(-2px);
+    box-shadow:0 20px 42px -22px color-mix(in srgb,var(--launcher-fill) 70%,transparent);
   }
+  .launcher__button:hover img { transform:scale(1.035); }
 }
+
+/* Photo surfaces stay optically stable. No blur overlay and no delayed resampling. */
+.option__visual::after { display:none !important; content:none !important; }
+.option__visual img,
+.option:hover .option__visual img {
+  transform:none !important;
+  transition:none !important;
+  filter:none;
+}
+.showcase__card img,
+.showcase__photo,
+.result__photo { transform:none !important; }
 
 .advisor.is-questions {
   overflow-y:hidden;
@@ -254,7 +280,7 @@ html, body { overflow-x:hidden; }
 .advisor.is-questions .question { margin-bottom:10px; }
 .advisor.is-questions .options { gap:8px; }
 .advisor.is-questions .option {
-  border-radius:20px 20px 13px 20px;
+  border-radius:20px;
 }
 .advisor.is-questions .option__visual {
   height:clamp(94px,14.5vh,114px);
