@@ -20,22 +20,25 @@
 
 body.praziarnicka-clean :is(.widget__brand > img,.msg__avatar img,.launcher__button img) { object-fit:contain; }
 body.praziarnicka-clean .widget__brand > img {
-  width:76px !important;
-  min-width:76px !important;
-  max-width:76px !important;
-  height:40px !important;
-  filter:invert(1);
-  mix-blend-mode:screen;
+  width:112px !important;
+  min-width:112px !important;
+  max-width:112px !important;
+  height:42px !important;
+  filter:brightness(0) invert(1);
+  mix-blend-mode:normal;
 }
+body.praziarnicka-clean .widget__brand b { display:none; }
+body.praziarnicka-clean .widget__brand > div { display:flex; align-items:center; }
 body.praziarnicka-clean .msg__avatar img {
   width:31px !important;
   height:31px !important;
 }
 body.praziarnicka-clean .launcher__button img {
-  width:48px;
-  height:48px;
+  width:54px !important;
+  height:54px !important;
+  filter:brightness(0) invert(1);
 }
 body.praziarnicka-clean .launcher__button { --launcher-fill:#d86734; }
 @media (hover:hover) and (pointer:fine) {
-  body.praziarnicka-clean .launcher__button:hover img { filter:brightness(0) invert(1); }
+  body.praziarnicka-clean .launcher__button:hover img { filter:brightness(0); }
 }
