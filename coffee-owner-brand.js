@@ -162,10 +162,8 @@
       <span class="mcb-plan-label">Cena</span>
       <b class="mcb-plan-trial">${esc(PRICING.trial)}</b>
       <p class="mcb-plan-price">
-        <em>potom</em>
-        <strong>${esc(PRICING.setup)}&nbsp;${esc(PRICING.currency)}</strong><span>jednorazovo</span>
-        <i>+</i>
-        <strong>${esc(PRICING.monthly)}&nbsp;${esc(PRICING.currency)}</strong><span>mesačne</span>
+        <b><em>potom</em><strong>${esc(PRICING.setup)}&nbsp;${esc(PRICING.currency)}</strong><span>jednorazovo</span></b>
+        <b><i>+</i><strong>${esc(PRICING.monthly)}&nbsp;${esc(PRICING.currency)}</strong><span>mesačne</span></b>
       </p>
       <ul>${PRICING.points.map((point) => `<li>${icons.check}<span>${esc(point)}</span></li>`).join('')}</ul>
       ${PRICING.addon ? `<p class="mcb-plan-addon">${esc(PRICING.addon)}</p>` : ''}

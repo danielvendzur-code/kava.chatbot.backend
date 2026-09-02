@@ -11,19 +11,35 @@
  */
 
 /* ==========================================================================
-   1. Figures — the number needs its own room
+   1. Figures — a panel, not three loose rows
    ========================================================================== */
 
+.mcb-page .mcb-figures {
+  border-left: 0 !important;
+  padding-left: 0 !important;
+}
+.mcb-page .mcb-figures ul {
+  padding: clamp(12px, 1.9vh, 18px) clamp(16px, 1.8vw, 24px) !important;
+  border: 1px solid var(--mcb-line) !important;
+  border-radius: 4px !important;
+  background: #fff !important;
+}
 .mcb-page .mcb-figures li {
-  grid-template-columns: clamp(88px, 8vw, 116px) minmax(0, 1fr) !important;
-  column-gap: clamp(12px, 1.4vw, 20px) !important;
+  grid-template-columns: clamp(86px, 7.4vw, 108px) minmax(0, 1fr) !important;
+  column-gap: clamp(12px, 1.4vw, 18px) !important;
+  padding: clamp(11px, 1.7vh, 16px) 0 !important;
+}
+.mcb-page .mcb-figures li + li {
+  border-top: 1px solid color-mix(in srgb, var(--mcb-ink) 12%, transparent) !important;
 }
 .mcb-page .mcb-figures strong {
-  font-size: clamp(27px, 2.5vw, 38px) !important;
+  color: var(--mcb-accent) !important;
+  font-size: clamp(26px, 2.4vw, 36px) !important;
+  font-weight: 800 !important;
   letter-spacing: -.05em !important;
 }
 .mcb-page .mcb-figures b { font-size: clamp(13px, 1.1vw, 15.5px) !important; }
-.mcb-page .mcb-figures small { color: color-mix(in srgb, var(--mcb-ink) 68%, transparent) !important; }
+.mcb-page .mcb-figures small { color: color-mix(in srgb, var(--mcb-ink) 66%, transparent) !important; }
 
 /* ==========================================================================
    2. Hero — fill the band
@@ -33,24 +49,30 @@
 .mcb-page .mcb-lead { max-width: 46ch; font-size: 15px; line-height: 1.5; }
 
 /* ==========================================================================
-   3. Price — a labelled column, bottom left
+   3. Price — a panel on the left half
    ========================================================================== */
 
 .mcb-page .mcb-pricing {
   grid-template-columns: minmax(0, 1fr) !important;
-  width: min(100%, 64%);
+  width: min(100%, 40%);
   gap: 0 !important;
+  padding-top: clamp(10px, 1.4vh, 16px) !important;
+  border-top: 0 !important;
 }
 /* The note repeats the sticker and the header already carries the same call to
    action, so the corner is left to the launcher. */
 .mcb-page .mcb-pricing-side { display: none !important; }
 
 .mcb-page .mcb-plan {
-  grid-template-columns: minmax(210px, .8fr) minmax(280px, 1.2fr) !important;
-  grid-template-areas: "price points" "price addon" !important;
-  column-gap: clamp(20px, 2.6vw, 40px) !important;
-  row-gap: 3px !important;
+  grid-template-columns: minmax(158px, .74fr) minmax(0, 1.26fr) !important;
+  grid-template-areas: "price points" "addon points" !important;
+  column-gap: clamp(18px, 2.2vw, 30px) !important;
+  row-gap: 6px !important;
   align-items: start !important;
+  padding: clamp(12px, 1.9vh, 18px) clamp(14px, 1.6vw, 20px) !important;
+  border: 1px solid var(--mcb-line) !important;
+  border-radius: 4px !important;
+  background: #fff !important;
 }
 .mcb-page .mcb-plan-label {
   grid-area: price;
@@ -66,7 +88,7 @@
   grid-area: price;
   justify-self: start;
   align-self: start;
-  margin-top: 17px;
+  margin-top: 16px;
   display: inline-flex;
   align-items: center;
   padding: 6px 11px;
@@ -83,9 +105,9 @@
 .mcb-page .mcb-plan-price {
   grid-area: price;
   align-self: end;
-  margin-top: 50px !important;
-  gap: 3px 5px !important;
-  color: color-mix(in srgb, var(--mcb-ink) 78%, transparent);
+  margin-top: 48px !important;
+  gap: 2px 5px !important;
+  color: color-mix(in srgb, var(--mcb-ink) 80%, transparent);
 }
 .mcb-page .mcb-plan-price em {
   font-style: normal;
@@ -96,8 +118,19 @@
 .mcb-page .mcb-plan-price span { font-size: 10.5px !important; }
 .mcb-page .mcb-plan-price i { font-size: 12px !important; padding: 0 2px !important; }
 .mcb-page .mcb-plan-after { display: none !important; }
-.mcb-page .mcb-plan li { color: color-mix(in srgb, var(--mcb-ink) 76%, transparent) !important; font-size: 11px !important; }
-.mcb-page .mcb-plan-addon { color: color-mix(in srgb, var(--mcb-ink) 58%, transparent) !important; }
+.mcb-page .mcb-plan ul {
+  grid-area: points;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 5px !important;
+  align-self: center;
+}
+.mcb-page .mcb-plan li { color: color-mix(in srgb, var(--mcb-ink) 78%, transparent) !important; font-size: 10.2px !important; }
+.mcb-page .mcb-plan-addon {
+  grid-area: addon;
+  align-self: end;
+  color: color-mix(in srgb, var(--mcb-ink) 55%, transparent) !important;
+  font-size: 10px !important;
+}
 
 @media (max-width: 1080px) {
   .mcb-page .mcb-pricing { width: 100%; }
@@ -105,7 +138,7 @@
     grid-template-columns: minmax(0, 1fr) !important;
     grid-template-areas: "price" "points" "addon" !important;
   }
-  .mcb-page .mcb-plan-price { margin-top: 46px !important; }
+  .mcb-page .mcb-plan-price { margin-top: 44px !important; }
 }
 
 /* ==========================================================================
@@ -141,3 +174,22 @@
    empty panel, right above the chips, with the entry card stranded at the top.
    A conversation reads downward from where it started. */
 .chat { justify-content: flex-start !important; }
+
+/* Each price keeps its own line so the unit never wraps away from the number. */
+.mcb-page .mcb-plan-price { display: grid !important; gap: 3px !important; }
+.mcb-page .mcb-plan-price > b {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  font-weight: inherit;
+}
+
+/* A caption that wraps to two lines took the height out of its own picture, so
+   the four photographs in a step came out different sizes. The caption row is
+   the same height in every card. */
+.advisor.is-questions .option__copy {
+  min-height: 62px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}

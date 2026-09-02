@@ -65,7 +65,7 @@
         ${ownerFigures}
       </section>
       <section class="cx-owner-benefits cx-owner-offer" aria-label="Cena">
-        <div class="cx-plan-summary"><span class="cx-plan-label">Cena</span><b class="cx-plan-badge">Prvý mesiac zdarma</b><p><em>potom</em><strong>247 €</strong><em>jednorazovo</em><i>+</i><strong>10 €</strong><em>mesačne</em></p></div>
+        <div class="cx-plan-summary"><span class="cx-plan-label">Cena</span><b class="cx-plan-badge">Prvý mesiac zdarma</b><p><b><em>potom</em><strong>247 €</strong><em>jednorazovo</em></b><b><i>+</i><strong>10 €</strong><em>mesačne</em></b></p></div>
         <div class="cx-plan-points"><span>${icons.check} Váš katalóg je pripravený už pri spustení</span><span>${icons.check} História konverzácií — vidíte, na čo sa pýtajú</span><span>${icons.check} Nasadenie na web jedným riadkom kódu</span></div>
         <div class="cx-plan-cta"><small>Po prvom bezplatnom mesiaci. Bez viazanosti, vypnúť sa dá kedykoľvek.</small><a href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a></div>
       </section>
