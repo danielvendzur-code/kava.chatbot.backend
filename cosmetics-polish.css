@@ -99,7 +99,7 @@
 @media(max-width:760px){
   .cx-owner{grid-template-rows:64px minmax(0,1fr) 120px 34px}
   .cx-owner-offer{min-height:120px;grid-template-columns:1.05fr 1.15fr .9fr;border-radius:18px}.cx-owner-offer>div{padding:10px 8px}.cx-plan-summary>span{font-size:10.5px}.cx-plan-summary>small{font-size:7.5px}.cx-plan-summary p{gap:3px;flex-wrap:wrap}.cx-plan-summary strong{font-size:18px}.cx-plan-summary em{font-size:7px}.cx-plan-points{gap:5px}.cx-plan-points span{font-size:7.6px}.cx-plan-points svg{width:11px;height:11px;flex-basis:11px}.cx-plan-cta{gap:8px}.cx-plan-cta small{font-size:7.6px}.cx-plan-cta a{min-height:34px;padding:0 8px;font-size:8.5px}
-  .cx-teaser{display:none}.cx-launcher{right:12px;bottom:10px}.cx-launcher-button{width:60px;height:60px}
+  .cx-launcher{display:none}
   .cx-widget{inset:0;width:100dvw;height:100dvh;grid-template-rows:68px 56px minmax(0,1fr) 30px}.cx-mode{height:46px;margin:6px 12px 4px}.cx-mode-thumb,.cx-mode button{height:38px}.cx-mode button{font-size:11.5px}.cx-advisor-entry{grid-template-columns:74px 1fr 24px}.cx-advisor-entry-photo{width:74px!important;height:60px!important}.cx-bubble{font-size:13px}.cx-chip{min-height:43px;font-size:11px}
 }
 @media(max-width:390px){

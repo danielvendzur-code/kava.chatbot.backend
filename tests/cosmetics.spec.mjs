@@ -87,7 +87,7 @@ test('all six owner presentations fit mobile and keep the important actions visi
 test('initial chat is simple, readable and removes selection clutter after the first message', async ({ page }) => {
   for (const slug of demos) {
     await openDemo(page,slug,{width:390,height:844});
-    await page.locator('#cx-open').click();
+    await page.locator('[data-open="chat"]').click();
     const widget=page.locator('#cx-widget');
     await expect(widget).toHaveClass(/is-open/);
     await expect(page.locator('.cx-mode button')).toHaveCount(2);
@@ -128,9 +128,8 @@ test('every cosmetics advisor is four photographic no-scroll steps and ends on a
   test.setTimeout(60000);
   for (const slug of demos) {
     await openDemo(page,slug,{width:390,height:844});
-    await page.locator('#cx-open').click();
+    await page.locator('[data-open="advisor"]').click();
     await expect(page.locator('#cx-widget')).toHaveClass(/is-open/);
-    await page.locator('.cx-mode button[data-mode="advisor"]').click();
     await expect(page.locator('.cx-mode button[data-mode="advisor"]')).toHaveClass(/is-active/);
 
     for (let step=0; step<4; step+=1) {
