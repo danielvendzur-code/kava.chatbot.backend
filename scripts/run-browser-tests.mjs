@@ -54,10 +54,14 @@ mkdirSync(join(rootDir, 'artifacts'), { recursive: true });
 
 const forwardedArgs = process.argv.slice(2);
 const hasExplicitTestFile = forwardedArgs.some((argument) => /(?:^|[\\/])tests[\\/].*\.(?:spec|test)\.m?js$/i.test(argument));
+const defaultTests = [
+  'tests/full-coffee-release-audit.spec.mjs',
+  'tests/cosmetics.spec.mjs'
+];
 const child = spawn(process.execPath, [
   cli,
   'test',
-  ...(!hasExplicitTestFile ? ['tests/full-coffee-release-audit.spec.mjs'] : []),
+  ...(!hasExplicitTestFile ? defaultTests : []),
   '--reporter=json',
   '--workers=1',
   ...forwardedArgs
