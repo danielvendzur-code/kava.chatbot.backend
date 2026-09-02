@@ -1,271 +1,199 @@
-/* Structural contract copied from the approved Jolka shell. Brand themes may change colour and artwork, not geometry. */
+/* Shared geometry and interaction corrections for all clean coffee demos. */
 html, body { overflow-x:hidden; }
 
-.page,
-.hero,
-.hero__copy,
-.showcase,
-.showcase__frame,
-.widget,
-.widget__header,
-.widget__brand,
-.widget__brand > div,
-.stage,
-.screen,
-.advisor,
-.chat,
-.result,
-.result__hero,
-.result__headline { min-width:0; }
+.page,.hero,.hero__copy,.showcase,.showcase__frame,.widget,.widget__header,.widget__brand,.widget__brand>div,.stage,.screen,.advisor,.chat,.result,.result__hero,.result__headline { min-width:0; }
 
 .lockup { min-width:0; }
-.lockup > img {
-  width:52px !important;
-  min-width:52px !important;
-  max-width:52px !important;
-  height:52px !important;
-  flex:0 0 52px !important;
+.lockup>img {
+  width:52px!important;
+  min-width:52px!important;
+  max-width:52px!important;
+  height:52px!important;
+  flex:0 0 52px!important;
   object-fit:contain;
 }
 .lockup__text { min-width:0; }
-.lockup__text b,
-.widget__brand b {
-  display:block;
-  max-width:100%;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-}
+.lockup__text b,.widget__brand b { display:block;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; }
 
 .widget__brand { max-width:calc(100% - 92px); }
-.widget__brand > img {
-  width:40px !important;
-  min-width:40px !important;
-  max-width:40px !important;
-  height:40px !important;
-  flex:0 0 40px !important;
+.widget__brand>img {
+  width:40px!important;
+  min-width:40px!important;
+  max-width:104px!important;
+  height:40px!important;
+  flex:0 0 auto!important;
   object-fit:contain;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
 }
 .widget__actions { flex:none; }
 
-.launcher__button { overflow:hidden; }
-.launcher__button img {
-  display:block;
-  max-width:52px !important;
-  max-height:52px !important;
-  object-fit:contain;
-}
+.showcase__photo,.showcase__card img,.option__visual img,.result__photo,.entry__thumb img,.msg__avatar img { max-width:100%; }
 
-.showcase__photo,
-.showcase__card img,
-.option__visual img,
-.result__photo,
-.entry__thumb img,
-.msg__avatar img { max-width:100%; }
-
-@media (min-width:1081px) and (max-height:850px) {
-  html, body { height:100%; overflow-y:hidden; }
-  .page { height:100dvh; min-height:0; padding:16px 32px 14px; gap:12px; overflow:hidden; }
-  .hero { min-height:0; gap:36px; }
-  .eyebrow { margin-bottom:8px; }
-  .hero h1 { font-size:clamp(32px,3vw,42px); margin-bottom:10px; }
-  .hero__lead { font-size:15.5px; line-height:1.42; margin-bottom:12px; }
-  .benefits { gap:8px; margin-bottom:12px; }
-  .benefit { padding:9px 11px 10px; }
-  .benefit__num { font-size:17px; margin-bottom:5px; }
-  .benefit b { font-size:14px; }
-  .benefit span { font-size:12px; line-height:1.3; }
-  .hero__actions { gap:12px; }
-  .page .cta { padding:13px 22px; font-size:15px; }
-  .hero__hint { font-size:12.5px; }
-  .showcase__frame { height:min(400px,52vh); aspect-ratio:auto; padding:42px 26px 0; }
-  .showcase__card { right:-4px; bottom:14px; width:260px; padding:12px; }
-  .page__footer { padding-top:9px; }
-  .perks { gap:8px 18px; margin-bottom:6px; }
-  .perks b { font-size:13px; margin-bottom:1px; }
-  .perks span { font-size:11.5px; line-height:1.3; }
-  .page__by { font-size:11.5px; }
+/* No quality jump when a pointer rests over photography. */
+.option__visual::after { content:none!important;display:none!important; }
+.option__visual img {
+  transform:none!important;
+  transition:none!important;
+  backface-visibility:visible!important;
+  will-change:auto!important;
 }
+.option:hover .option__visual img { transform:none!important; }
 
-.launcher { bottom:34px; gap:17px; }
-.launcher__teaser { max-width:280px; padding:16px 18px; }
-.launcher__button { width:72px; height:72px; }
+/* Keep the chat surface calm; hierarchy comes from cards, not a synthetic blur/fade. */
+#chatScreen,.chat,.composer-area,.widget__note { background:var(--surface)!important; }
+.composer-area { padding:12px 16px 10px; }
+.widget__note { padding:0 16px 12px;border-top:0;color:var(--text-2); }
 
-@media (max-width:640px) {
-  .launcher { right:16px; bottom:max(18px,env(safe-area-inset-bottom)); gap:12px; }
-  .launcher__teaser { max-width:min(276px,calc(100vw - 92px)); padding:15px 17px; }
-  .launcher__button { width:68px; height:68px; }
-  .widget { max-width:100vw; }
-  .widget__brand { max-width:calc(100% - 84px); }
-}
-
-/* --------------------------------------------------------------------------
-   Approved Jolka interaction details, shared without loading legacy layers.
-   -------------------------------------------------------------------------- */
-
-.widget__brand > img {
-  padding:0 !important;
-  border:0 !important;
-  border-radius:0 !important;
-  background:transparent !important;
-  box-shadow:none !important;
-}
-
-#chatScreen {
-  background:linear-gradient(180deg,var(--surface) 0%,var(--surface) 44%,var(--kraft-tint) 100%);
-}
-.chat {
-  justify-content:flex-start;
-  background:transparent;
-}
-.composer-area {
-  padding:12px 16px 10px;
-  background:linear-gradient(180deg,color-mix(in srgb,var(--kraft-tint) 0%,transparent),var(--kraft-tint) 42%);
-}
-.widget__note {
-  padding:0 16px 12px;
-  border-top:0;
-  background:var(--kraft-tint);
-  color:var(--text-2);
-}
-.widget:has(#advisorScreen.is-active) .widget__note { background:var(--surface); }
-.widget:has(#chatScreen.is-active) .widget__note { background:var(--kraft-tint); }
-
+/* Straight, even recommendation entry. */
 .entry {
   margin:13px 16px 4px;
-  padding:8px 14px 8px 8px;
-  min-height:82px;
-  border-radius:24px 24px 10px 24px;
-  border-color:var(--line-strong);
-  background:linear-gradient(112deg,var(--surface) 34%,var(--kraft-tint));
-  box-shadow:0 10px 24px -22px color-mix(in srgb,var(--ink) 48%,transparent);
+  min-height:84px;
+  padding:9px 13px 9px 9px;
+  grid-template-columns:88px minmax(0,1fr) 38px;
+  gap:13px;
+  border:1px solid var(--line-strong);
+  border-radius:22px;
+  background:color-mix(in srgb,var(--surface) 90%,var(--kraft-tint));
+  box-shadow:none;
+  overflow:hidden;
 }
 .entry__thumb {
-  width:82px;
-  height:64px;
+  position:relative;
+  width:88px;
+  height:66px;
+  overflow:hidden;
   border:0;
-  border-radius:17px 17px 8px 17px;
-  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ink) 10%,transparent);
+  border-radius:14px;
+  background:var(--surface-2);
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ink) 8%,transparent);
 }
+.entry__thumb img {
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  transform:none!important;
+  transition:none!important;
+}
+.entry__copy { min-width:0; }
 .entry__copy small { color:var(--kraft-deep); }
-.entry__arrow { width:34px; height:34px; }
+.entry__arrow { width:36px;height:36px; }
 
 .msg { align-items:flex-start; }
 .msg__avatar {
-  width:34px;
-  height:34px;
-  margin-top:2px;
-  margin-bottom:0;
-  border:0;
-  border-radius:50%;
-  background:var(--ink);
-  overflow:hidden;
+  width:34px;height:34px;margin-top:2px;margin-bottom:0;
+  border:0;border-radius:50%;background:var(--ink);overflow:hidden;
 }
 .msg__avatar img {
-  width:28px !important;
-  height:28px !important;
-  padding:0 !important;
-  border:0 !important;
-  border-radius:0 !important;
-  background:transparent !important;
-  object-fit:contain !important;
-}
-.bubble {
-  background:color-mix(in srgb,var(--surface) 70%,var(--kraft-tint));
-  border-color:var(--line);
+  width:28px!important;height:28px!important;padding:0!important;border:0!important;border-radius:0!important;
+  background:transparent!important;object-fit:contain!important;transition:none!important;
 }
 
+/* Use the original Jolka chip behaviour: gentle tint + border. Never radial fill. */
 .chip {
-  --chip-fill:var(--kraft-deep);
-  --chip-on-fill:var(--on-ink);
-  background-color:var(--surface);
-  background-image:radial-gradient(circle at center,var(--chip-fill) 0%,var(--chip-fill) 69%,transparent 71%);
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:0 0;
-  transition:background-size 1.12s var(--ease),border-color .24s ease,color .24s ease,transform .24s ease;
+  background-image:none!important;
+  background-color:var(--surface)!important;
+  color:var(--text)!important;
+  border-color:var(--line-strong)!important;
+  transition:background-color .18s ease,border-color .18s ease,color .18s ease,transform .18s ease!important;
 }
 @media (hover:hover) and (pointer:fine) {
   .chip:hover {
-    color:var(--chip-on-fill);
-    border-color:var(--chip-fill);
-    background-color:var(--surface);
-    background-size:250% 250%;
+    background-image:none!important;
+    background-color:color-mix(in srgb,var(--kraft-tint) 76%,var(--surface))!important;
+    color:var(--text)!important;
+    border-color:var(--kraft)!important;
     transform:translateY(-1px);
   }
 }
 
-.launcher__teaser {
-  width:min(286px,calc(100vw - 126px));
-  max-width:none;
-  padding:0 !important;
-  overflow:visible;
-  border:1.5px solid var(--line-strong);
-  border-radius:24px 24px 8px 24px;
-  background:var(--surface);
-}
-.launcher__teaser::after {
-  content:"";
-  position:absolute;
-  right:24px;
-  bottom:-8px;
-  width:15px;
-  height:15px;
-  z-index:0;
-  border-right:1.5px solid var(--line-strong);
-  border-bottom:1.5px solid var(--line-strong);
-  background:var(--surface);
-  transform:rotate(45deg);
-}
-.launcher__teaser-body {
-  position:relative;
-  z-index:1;
-  padding:15px 44px 15px 18px;
-  border-radius:inherit;
-  background:var(--surface);
-}
-.launcher__teaser-close { z-index:2; }
-
+/* Launcher colour swaps directly. No fill wave and no animated logo filter. */
 .launcher__button {
-  --launcher-fill:var(--kraft);
-  border:0;
-  background-color:var(--ink);
-  background-image:radial-gradient(circle at center,var(--launcher-fill) 0%,var(--launcher-fill) 68%,transparent 70%);
-  background-position:center;
-  background-repeat:no-repeat;
-  background-size:0 0;
-  box-shadow:0 18px 38px -22px color-mix(in srgb,var(--ink) 72%,transparent);
-  transition:background-size .92s var(--ease),transform .24s var(--ease),box-shadow .24s var(--ease);
+  overflow:hidden;
+  border:0!important;
+  background-image:none!important;
+  background-color:var(--ink)!important;
+  box-shadow:var(--shadow-float);
+  transition:transform .2s var(--ease),box-shadow .2s var(--ease)!important;
 }
-.launcher__button img { transition:filter .28s ease,transform .28s ease; }
+.launcher__button img {
+  display:block;
+  max-width:56px!important;
+  max-height:56px!important;
+  object-fit:contain;
+  transition:none!important;
+}
 @media (hover:hover) and (pointer:fine) {
   .launcher__button:hover {
-    background-size:250% 250%;
-    transform:translateY(-2px);
+    background-image:none!important;
+    background-color:var(--kraft)!important;
+    transform:translateY(-2px) scale(1.02);
   }
 }
 
-.advisor.is-questions {
-  overflow-y:hidden;
-  scrollbar-width:none;
+/* Teaser remains a speech card but not an irregular decorative blob. */
+.launcher__teaser {
+  width:min(286px,calc(100vw - 126px));
+  max-width:none;
+  padding:0!important;
+  overflow:hidden;
+  border:1px solid var(--line-strong);
+  border-radius:20px;
+  background:var(--surface);
 }
+.launcher__teaser::after { content:none!important;display:none!important; }
+.launcher__teaser-body { position:relative;padding:15px 44px 15px 18px;border-radius:inherit;background:transparent; }
+
+.advisor.is-questions { overflow-y:hidden;scrollbar-width:none; }
 .advisor.is-questions::-webkit-scrollbar { display:none; }
 .advisor.is-result { overflow-y:auto; }
 .advisor.is-questions .question { margin-bottom:10px; }
 .advisor.is-questions .options { gap:8px; }
-.advisor.is-questions .option {
-  border-radius:20px 20px 13px 20px;
-}
-.advisor.is-questions .option__visual {
-  height:clamp(94px,14.5vh,114px);
-}
+.advisor.is-questions .option { border-radius:18px;overflow:hidden; }
+.advisor.is-questions .option__visual { height:clamp(94px,14.5vh,114px); }
 .advisor.is-questions .option__copy { padding:9px 12px 10px; }
 .advisor.is-questions .option__copy b { font-size:14px; }
-.advisor.is-questions .option__copy small { font-size:12px; line-height:1.28; }
+.advisor.is-questions .option__copy small { font-size:12px;line-height:1.28; }
+
+@media (min-width:1081px) and (max-height:850px) {
+  html,body { height:100%;overflow-y:hidden; }
+  .page { height:100dvh;min-height:0;padding:16px 32px 14px;gap:12px;overflow:hidden; }
+  .hero { min-height:0;gap:36px; }
+  .eyebrow { margin-bottom:8px; }
+  .hero h1 { font-size:clamp(32px,3vw,42px);margin-bottom:10px; }
+  .hero__lead { font-size:15.5px;line-height:1.42;margin-bottom:12px; }
+  .benefits { gap:8px;margin-bottom:12px; }
+  .benefit { padding:9px 11px 10px; }
+  .benefit__num { font-size:17px;margin-bottom:5px; }
+  .benefit b { font-size:14px; }
+  .benefit span { font-size:12px;line-height:1.3; }
+  .hero__actions { gap:12px; }
+  .page .cta { padding:13px 22px;font-size:15px; }
+  .hero__hint { font-size:12.5px; }
+  .showcase__frame { height:min(400px,52vh);aspect-ratio:auto;padding:42px 26px 0; }
+  .showcase__card { right:-4px;bottom:14px;width:260px;padding:12px; }
+  .page__footer { padding-top:9px; }
+  .perks { gap:8px 18px;margin-bottom:6px; }
+  .perks b { font-size:13px;margin-bottom:1px; }
+  .perks span { font-size:11.5px;line-height:1.3; }
+  .page__by { font-size:11.5px; }
+}
+
+.launcher { bottom:34px;gap:17px; }
+.launcher__button { width:72px;height:72px; }
 
 @media (max-width:640px) {
-  .entry { margin:11px 14px 3px; }
-  .entry__thumb { width:76px; height:60px; }
+  .launcher { right:16px;bottom:max(18px,env(safe-area-inset-bottom));gap:12px; }
+  .launcher__teaser { width:min(276px,calc(100vw - 92px)); }
+  .launcher__button { width:68px;height:68px; }
+  .widget { max-width:100vw; }
+  .widget__brand { max-width:calc(100% - 84px); }
+  .entry { margin:11px 14px 3px;grid-template-columns:76px minmax(0,1fr) 34px;padding:8px 11px 8px 8px;border-radius:18px; }
+  .entry__thumb { width:76px;height:60px;border-radius:12px; }
   .composer-area { padding:10px 14px 12px; }
   .advisor.is-questions .option__visual { height:clamp(90px,14vh,112px); }
 }

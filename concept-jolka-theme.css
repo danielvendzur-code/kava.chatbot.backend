@@ -1,40 +1,7 @@
-/* Concept Coffee Roasters brand tokens on the approved Jolka component system. */
-:root {
-  --ink:#173d3b;
-  --ink-2:#225856;
-  --ink-3:#2f6a67;
-  --paper:#f4efe7;
-  --surface:#fffdfa;
-  --surface-2:#faeee7;
-  --line:#ead3c8;
-  --line-strong:#ddb9a9;
-  --kraft:#d85d2c;
-  --kraft-deep:#b94822;
-  --kraft-tint:#f7dfd2;
-  --text:#1b201e;
-  --text-2:#625b56;
-  --text-3:#887b73;
-  --on-ink:#ffffff;
-  --on-ink-2:rgba(255,255,255,.74);
-}
-
-body.concept-clean :is(.widget__brand > img,.msg__avatar img,.launcher__button img) { object-fit:contain; }
-body.concept-clean .widget__brand > img {
-  width:54px !important;
-  min-width:54px !important;
-  max-width:54px !important;
-  height:38px !important;
-  filter:brightness(0) invert(1);
-}
-body.concept-clean .msg__avatar img {
-  filter:brightness(0) invert(1);
-}
-body.concept-clean .launcher__button img {
-  width:48px;
-  height:48px;
-  filter:brightness(0) saturate(100%) invert(43%) sepia(82%) saturate(1793%) hue-rotate(344deg) brightness(91%) contrast(86%);
-}
-body.concept-clean .launcher__button { --launcher-fill:#d85d2c; }
-@media (hover:hover) and (pointer:fine) {
-  body.concept-clean .launcher__button:hover img { filter:brightness(0) invert(1); }
-}
+/* Concept Coffee Roasters brand tokens on the shared Jolka system. */
+:root{--ink:#173d3b;--ink-2:#225856;--ink-3:#2f6a67;--paper:#f4efe7;--surface:#fffdfa;--surface-2:#faeee7;--line:#ead3c8;--line-strong:#ddb9a9;--kraft:#d85d2c;--kraft-deep:#b94822;--kraft-tint:#f7dfd2;--text:#1b201e;--text-2:#625b56;--text-3:#887b73;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.concept-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
+body.concept-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important;filter:brightness(0) invert(1)}
+body.concept-clean .msg__avatar img{width:30px!important;height:30px!important;filter:brightness(0) invert(1)}
+body.concept-clean .launcher__button img{width:54px!important;height:54px!important;filter:brightness(0) invert(1)}
+@media(hover:hover) and (pointer:fine){body.concept-clean .launcher__button:hover{background-color:#d85d2c!important}body.concept-clean .launcher__button:hover img{filter:brightness(0) saturate(100%) invert(21%) sepia(14%) saturate(1396%) hue-rotate(128deg) brightness(93%) contrast(88%)}}

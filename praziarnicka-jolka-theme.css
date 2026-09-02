@@ -1,41 +1,9 @@
-/* Pražiarnička brand tokens on the approved Jolka component system. */
-:root {
-  --ink:#143f35;
-  --ink-2:#1c5b4b;
-  --ink-3:#276b5a;
-  --paper:#edf4f0;
-  --surface:#fffdf9;
-  --surface-2:#f4eee6;
-  --line:#dfd4c7;
-  --line-strong:#cdbba8;
-  --kraft:#d86734;
-  --kraft-deep:#a9461d;
-  --kraft-tint:#f6dfd3;
-  --text:#17211d;
-  --text-2:#59635f;
-  --text-3:#7b847f;
-  --on-ink:#ffffff;
-  --on-ink-2:rgba(255,255,255,.74);
-}
-
-body.praziarnicka-clean :is(.widget__brand > img,.msg__avatar img,.launcher__button img) { object-fit:contain; }
-body.praziarnicka-clean .widget__brand > img {
-  width:76px !important;
-  min-width:76px !important;
-  max-width:76px !important;
-  height:40px !important;
-  filter:invert(1);
-  mix-blend-mode:screen;
-}
-body.praziarnicka-clean .msg__avatar img {
-  width:31px !important;
-  height:31px !important;
-}
-body.praziarnicka-clean .launcher__button img {
-  width:48px;
-  height:48px;
-}
-body.praziarnicka-clean .launcher__button { --launcher-fill:#d86734; }
-@media (hover:hover) and (pointer:fine) {
-  body.praziarnicka-clean .launcher__button:hover img { filter:brightness(0) invert(1); }
-}
+/* Pražiarnička brand tokens on the shared Jolka system. */
+:root{--ink:#143f35;--ink-2:#1c5b4b;--ink-3:#276b5a;--paper:#edf4f0;--surface:#fffdf9;--surface-2:#f4eee6;--line:#dfd4c7;--line-strong:#cdbba8;--kraft:#d86734;--kraft-deep:#a9461d;--kraft-tint:#f6dfd3;--text:#17211d;--text-2:#59635f;--text-3:#7b847f;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.praziarnicka-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
+body.praziarnicka-clean .widget__brand{gap:0}
+body.praziarnicka-clean .widget__brand>div{display:none}
+body.praziarnicka-clean .widget__brand>img{width:108px!important;min-width:108px!important;max-width:108px!important;height:42px!important;filter:brightness(0) invert(1);mix-blend-mode:normal}
+body.praziarnicka-clean .msg__avatar img{width:31px!important;height:31px!important;filter:brightness(0) invert(1)}
+body.praziarnicka-clean .launcher__button img{width:54px!important;height:54px!important;filter:brightness(0) invert(1)}
+@media(hover:hover) and (pointer:fine){body.praziarnicka-clean .launcher__button:hover{background-color:#d86734!important}body.praziarnicka-clean .launcher__button:hover img{filter:brightness(0) invert(1)}}

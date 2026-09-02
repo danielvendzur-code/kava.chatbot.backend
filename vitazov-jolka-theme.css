@@ -1,42 +1,7 @@
-/* Káva Víťazov brand tokens on the approved Jolka component system. */
-:root {
-  --ink:#0c4438;
-  --ink-2:#15574a;
-  --ink-3:#23685a;
-  --paper:#eff4eb;
-  --surface:#fffefa;
-  --surface-2:#f0f5e7;
-  --line:#d8e0ca;
-  --line-strong:#becda8;
-  --kraft:#6f9b2b;
-  --kraft-deep:#4d7318;
-  --kraft-tint:#e5efd4;
-  --text:#17221e;
-  --text-2:#59645f;
-  --text-3:#7d8882;
-  --on-ink:#ffffff;
-  --on-ink-2:rgba(255,255,255,.74);
-}
-
-body.vitazov-clean :is(.widget__brand > img,.msg__avatar img,.launcher__button img) { object-fit:contain; }
-body.vitazov-clean .widget__brand > img {
-  width:72px !important;
-  min-width:72px !important;
-  max-width:72px !important;
-  height:38px !important;
-  filter:brightness(0) invert(1);
-}
-body.vitazov-clean .msg__avatar img {
-  width:30px !important;
-  height:30px !important;
-  filter:brightness(0) invert(1);
-}
-body.vitazov-clean .launcher__button img {
-  width:48px;
-  height:48px;
-  filter:brightness(0) invert(1);
-}
-body.vitazov-clean .launcher__button { --launcher-fill:#9bd85f; }
-@media (hover:hover) and (pointer:fine) {
-  body.vitazov-clean .launcher__button:hover img { filter:brightness(0); }
-}
+/* Káva Víťazov brand tokens on the shared Jolka system. */
+:root{--ink:#0c4438;--ink-2:#15574a;--ink-3:#23685a;--paper:#eff4eb;--surface:#fffefa;--surface-2:#f0f5e7;--line:#d8e0ca;--line-strong:#becda8;--kraft:#6f9b2b;--kraft-deep:#4d7318;--kraft-tint:#e5efd4;--text:#17221e;--text-2:#59645f;--text-3:#7d8882;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.vitazov-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
+body.vitazov-clean .widget__brand>img{width:92px!important;min-width:92px!important;max-width:92px!important;height:40px!important;filter:brightness(0) invert(1)}
+body.vitazov-clean .msg__avatar img{width:30px!important;height:30px!important;filter:brightness(0) invert(1)}
+body.vitazov-clean .launcher__button img{width:53px!important;height:53px!important;filter:brightness(0) invert(1)}
+@media(hover:hover) and (pointer:fine){body.vitazov-clean .launcher__button:hover{background-color:#9bd85f!important}body.vitazov-clean .launcher__button:hover img{filter:brightness(0)}}

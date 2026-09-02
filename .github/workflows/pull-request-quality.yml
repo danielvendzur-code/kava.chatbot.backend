@@ -31,7 +31,7 @@ jobs:
       - name: Install Chromium
         run: npx playwright install chromium
 
-      - name: Validate clean Jolka-based coffee architecture
+      - name: Validate shared coffee architecture
         run: |
           test -f index.html
           test -f coffee-final-entry.js
@@ -39,6 +39,8 @@ jobs:
           test -f coffee-local-api.js
           test -f coffee-jolka-app.js
           test -f coffee-jolka-shell.css
+          test -f coffee-owner-brand.js
+          test -f coffee-owner-brand.css
           test -f tests/full-coffee-release-audit.spec.mjs
           test -f tests/clean-coffee-data-contract.test.mjs
           test -f api/chat.js
@@ -53,19 +55,33 @@ jobs:
             grep -Fq "/$slug-jolka-data.js" "$slug.html"
             grep -Fq "/$slug-jolka-theme.css" "$slug.html"
             grep -Fq '/coffee-jolka-app.js' "$slug.html"
-            ! grep -Eq 'coffee-owner-brand|coffee-final-tune|coffee-last-mile|coffee-release-authority' "$slug.html"
+            grep -Fq '/coffee-owner-brand.js' "$slug.html"
+            ! grep -Eq 'coffee-final-tune|coffee-last-mile|coffee-release-authority|coffee-release-contract' "$slug.html"
             grep -Fq "$slug" coffee-final-entry.js
             node --check "$slug-jolka-data.js"
           done
-          grep -Fq 'jolka' coffee-final-entry.js
+          test -f jolka.html
+          test -f jolka/jolka-data.js
+          test -f jolka/jolka-demo-data.js
+          grep -Fq '/coffee-jolka-shell.css' jolka.html
+          grep -Fq '/jolka/jolka-data.js' jolka.html
+          grep -Fq '/jolka/jolka-demo-data.js' jolka.html
+          grep -Fq '/coffee-jolka-app.js' jolka.html
+          grep -Fq '/coffee-owner-brand.js' jolka.html
+          ! grep -Eq 'jolka-app|jolka-chat-flow|coffee-final-tune|coffee-last-mile|coffee-release-authority|coffee-release-contract' jolka.html
           grep -Fq '/ukazka/jolka' vercel.json
           grep -Fq '/ukazka/:slug' vercel.json
           for slug in praziarnicka diamonds kaffa vitazov concept jolka; do grep -Fq "$slug:" api/chat.js; done
           grep -Fq 'ANTHROPIC_API_KEY' api/chat.js
           grep -Fq "return nativeFetch('/api/chat', init)" coffee-api-route.js
+          ! grep -Fq 'radial-gradient(circle at center' coffee-jolka-shell.css
+          ! grep -Fq 'option:hover .option__visual img { transform: scale' coffee-jolka-shell.css
           node --check coffee-final-entry.js
           node --check coffee-jolka-app.js
           node --check coffee-local-api.js
+          node --check coffee-owner-brand.js
+          node --check jolka/jolka-data.js
+          node --check jolka/jolka-demo-data.js
           node --check api/chat.js
 
       - name: Validate cosmetics demo architecture
@@ -86,33 +102,6 @@ jobs:
 
       - name: Validate active coffee data contracts
         run: node --test tests/clean-coffee-data-contract.test.mjs
-
-      - name: Validate untouched Jolka benchmark
-        run: |
-          test -f jolka.html
-          test -f jolka/jolka.css
-          test -f jolka/jolka-data.js
-          test -f jolka/jolka-app.js
-          test -f jolka/jolka-chat-flow.js
-          grep -Fq '/jolka/jolka.css' jolka.html
-          grep -Fq '/jolka/jolka-data.js' jolka.html
-          grep -Fq '/jolka/jolka-app.js' jolka.html
-          grep -Fq '/jolka/jolka-chat-flow.js' jolka.html
-          grep -Fq '/coffee-release-contract.css' jolka.html
-          grep -Fq '/coffee-release-contract.js' jolka.html
-          grep -Fq '"/ukazka/jolka"' vercel.json
-          grep -Fq "location.replace('/jolka.html')" coffee-bootstrap.js
-          grep -Fq 'praziarenjolka.sk/eshop-kava/' api/chat.js
-          ! grep -Fq 'praziarenjolka.sk/shop/' api/chat.js
-          ! grep -Fq 'praziarenjolka.sk/shop/' jolka/jolka-data.js
-          ! grep -Fq 'produkt/el-salvador-shg-ep' jolka/jolka-data.js
-          ! grep -Eq 'tel:|mailto:' jolka.html jolka/jolka-app.js jolka/jolka-data.js
-          test "$(ls jolka/*.css | wc -l)" -eq 1
-          test "$(ls assets/jolka/method/*.webp | wc -l)" -eq 7
-          test "$(ls assets/jolka/tile/*.webp | wc -l)" -eq 14
-          node --check jolka/jolka-data.js
-          node --check jolka/jolka-app.js
-          node --check jolka/jolka-chat-flow.js
 
       - name: Run integrated desktop and mobile Chromium tests
         run: |

@@ -1,46 +1,7 @@
-/* Diamonds Roastery brand tokens on the approved Jolka component system. */
-:root {
-  --ink:#0b0d0c;
-  --ink-2:#171a18;
-  --ink-3:#252a27;
-  --paper:#f1f2ed;
-  --surface:#ffffff;
-  --surface-2:#f4f6ec;
-  --line:#dce2ca;
-  --line-strong:#c0cf91;
-  --kraft:#b7dc45;
-  --kraft-deep:#6f8f19;
-  --kraft-tint:#edf5d2;
-  --text:#171917;
-  --text-2:#5a5f58;
-  --text-3:#7c8279;
-  --on-ink:#ffffff;
-  --on-ink-2:rgba(255,255,255,.72);
-}
-
-/* The official Diamonds SVG is horizontal. Its symbol occupies the left square of the source artwork,
-   so compact Jolka slots crop that symbol instead of shrinking the whole wordmark to illegibility. */
-body.diamonds-clean :is(.widget__brand > img,.launcher__button img) { object-fit:contain; }
-body.diamonds-clean .widget__brand > img {
-  width:72px !important;
-  min-width:72px !important;
-  max-width:72px !important;
-  height:38px !important;
-  filter:brightness(0) invert(1);
-}
-body.diamonds-clean .msg__avatar img {
-  width:30px !important;
-  height:30px !important;
-  object-fit:cover !important;
-  object-position:left center;
-  filter:brightness(0) invert(1);
-}
-body.diamonds-clean .launcher__button img {
-  width:48px;
-  height:48px;
-  border-radius:50%;
-  filter:brightness(0) invert(1);
-  transition:filter .28s var(--ease);
-}
-body.diamonds-clean .launcher__button { --launcher-fill:#b7dc45; }
-body.diamonds-clean .launcher__button:hover img { filter:brightness(0); }
+/* Diamonds Roastery brand tokens on the shared Jolka system. */
+:root{--ink:#0b0d0c;--ink-2:#171a18;--ink-3:#252a27;--paper:#f1f2ed;--surface:#fff;--surface-2:#f4f6ec;--line:#dce2ca;--line-strong:#c0cf91;--kraft:#b7dc45;--kraft-deep:#6f8f19;--kraft-tint:#edf5d2;--text:#171917;--text-2:#5a5f58;--text-3:#7c8279;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.72)}
+body.diamonds-clean :is(.widget__brand>img,.launcher__button img){object-fit:contain}
+body.diamonds-clean .widget__brand>img{width:92px!important;min-width:92px!important;max-width:92px!important;height:40px!important;filter:brightness(0) invert(1)}
+body.diamonds-clean .msg__avatar img{width:30px!important;height:30px!important;object-fit:cover!important;object-position:left center;filter:brightness(0) invert(1)}
+body.diamonds-clean .launcher__button img{width:53px!important;height:53px!important;border-radius:0;filter:brightness(0) invert(1)}
+@media(hover:hover) and (pointer:fine){body.diamonds-clean .launcher__button:hover{background-color:#b7dc45!important}body.diamonds-clean .launcher__button:hover img{filter:brightness(0)}}
