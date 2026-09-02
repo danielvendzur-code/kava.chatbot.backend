@@ -208,6 +208,27 @@
     state.alternative=(ranked.find((item)=>item.product.id!==state.result.id)||ranked[1]||ranked[0]).product;
   }
 
+  /* Only five photographs exist for sixteen answers, so the last two steps were
+     showing pictures from the first two — a jar of cream for "olej", a face for
+     "2-3 kroky". How many steps a routine has, and what a product feels like,
+     are not things a stock photograph states. These are drawn, take the brand's
+     own accent through currentColor, and repeat nothing. */
+  const bottle = (x, h, w = 9) =>
+    `<rect x="${x}" y="${34 - h}" width="${w}" height="${h}" rx="2.4"/><rect x="${x + w / 2 - 1.6}" y="${30 - h}" width="3.2" height="4" rx="1"/>`;
+  const mark = (body) =>
+    `<svg class="cx-mark" viewBox="0 0 48 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${body}</svg>`;
+
+  const optionMarks = {
+    simple: mark(bottle(19, 17, 10)),
+    basic: mark(bottle(11, 15) + bottle(23.5, 19) + bottle(36, 13, 7)),
+    full: mark(bottle(5, 13, 7) + bottle(15, 18) + bottle(26, 15) + bottle(37, 11, 6)),
+    target: mark(bottle(12, 15) + bottle(24, 12, 7) + '<path d="M38 13v8M34 17h8"/>'),
+    cream: mark('<rect x="14" y="16" width="20" height="14" rx="3.4"/><rect x="18" y="11" width="12" height="5" rx="1.8"/><path d="M18 23h12"/>'),
+    serum: mark('<rect x="17" y="15" width="14" height="16" rx="3"/><rect x="20.5" y="8" width="7" height="7" rx="2"/><path d="M24 20v6"/>'),
+    oil: mark('<path d="M24 9c5 6 8 9.6 8 13a8 8 0 1 1-16 0c0-3.4 3-7 8-13Z"/><path d="M20.5 22.5a3.5 3.5 0 0 0 3.5 3.5"/>'),
+    any: mark('<circle cx="24" cy="20" r="10"/><path d="M24 15v10M19 20h10"/>')
+  };
+
   function renderAdvisor() {
     if (state.result) return renderResult();
     const question=questions[state.step];
@@ -217,7 +238,7 @@
         <header class="cx-progress"><button id="cx-back" type="button" ${state.step===0?'disabled':''}>${icons.back}<span>Späť</span></button><div>${questions.map((_,index)=>`<i class="${index<=state.step?'is-on':''}"></i>`).join('')}</div><b>${state.step+1}/4</b></header>
         <div class="cx-advisor-body">
           <span class="cx-kicker">${esc(question.kicker)}</span><h2>${esc(question.title)}</h2>
-          <div class="cx-options">${question.options.map((option)=>`<button class="cx-option ${selected===option.value?'is-selected':''}" data-value="${option.value}" type="button" aria-pressed="${selected===option.value}"><span class="cx-option-photo"><img src="${option.image}" alt="" referrerpolicy="no-referrer" loading="lazy" onerror="this.closest('.cx-option-photo')?.setAttribute('data-image-failed','true')"></span><span class="cx-option-copy"><b>${esc(option.title)}</b><small>${esc(option.text)}</small></span><i>${selected===option.value?icons.check:''}</i></button>`).join('')}</div>
+          <div class="cx-options">${question.options.map((option)=>`<button class="cx-option ${selected===option.value?'is-selected':''}" data-value="${option.value}" type="button" aria-pressed="${selected===option.value}"><span class="cx-option-photo${optionMarks[option.value]?' cx-option-photo--mark':''}">${optionMarks[option.value] || `<img src="${option.image}" alt="" referrerpolicy="no-referrer" loading="lazy" onerror="this.closest('.cx-option-photo')?.setAttribute('data-image-failed','true')">`}</span><span class="cx-option-copy"><b>${esc(option.title)}</b><small>${esc(option.text)}</small></span><i>${selected===option.value?icons.check:''}</i></button>`).join('')}</div>
         </div>
       </section>`;
     stage.querySelector('#cx-back')?.addEventListener('click',()=>{ if(state.step>0&&!state.transitioning){state.step-=1;renderAdvisor();} });
@@ -230,6 +251,22 @@
     }));
   }
 
+  /* The answers are stored as tokens because that is what scoring needs. The
+     result says which of them this product actually matched, the way the coffee
+     result names the notes it was picked for. */
+  const ANSWER_LABELS = {
+    dry:'suchá pleť', oily:'mastenie', sensitive:'citlivá pleť', balanced:'zmiešaná pleť',
+    hydrate:'hydratácia', calm:'upokojenie', clarity:'nedokonalosti', mature:'zrelá pleť',
+    simple:'jeden krok', basic:'2–3 kroky', full:'celá rutina', target:'cielený krok',
+    cream:'krém', serum:'sérum', oil:'olej'
+  };
+
+  const matchedLabels = (product) => questions
+    .map((question) => state.answers[question.key])
+    .filter((answer) => answer && answer !== 'any' && product.tags.includes(answer))
+    .map((answer) => ANSWER_LABELS[answer])
+    .filter(Boolean);
+
   function renderResult() {
     const product=state.result;
     const alt=state.alternative;
@@ -238,7 +275,8 @@
         <header class="cx-progress"><button id="cx-result-back" type="button">${icons.back}<span>Späť</span></button><div>${questions.map(()=>'<i class="is-on"></i>').join('')}</div><b>Výsledok</b></header>
         <div class="cx-result-body">
           <span class="cx-kicker">Váš smer</span>
-          <article class="cx-product"><div class="cx-product-photo"><img src="${brand.hero}" alt="${esc(product.name)}" referrerpolicy="no-referrer" onerror="this.closest('.cx-product-photo')?.setAttribute('data-image-failed','true')"></div><div class="cx-product-copy"><small>${esc(brand.name)}</small><h2>${esc(product.name)}</h2><p>${esc(product.reason)}</p><div class="cx-product-price"><strong>${esc(product.price)}</strong><a href="${product.url}" target="_blank" rel="noreferrer">Pozrieť produkt ${icons.arrow}</a></div></div></article>
+          <article class="cx-product"><div class="cx-product-photo"><img src="${brand.hero}" alt="${esc(product.name)}" referrerpolicy="no-referrer" onerror="this.closest('.cx-product-photo')?.setAttribute('data-image-failed','true')"></div><div class="cx-product-copy"><small>${esc(brand.name)}</small><h2>${esc(product.name)}</h2>${matchedLabels(product).length?`<div class="cx-product-tags">${matchedLabels(product).map((label)=>`<span>${esc(label)}</span>`).join('')}</div>`:''}<div class="cx-product-price"><strong>${esc(product.price)}</strong><a href="${product.url}" target="_blank" rel="noreferrer">Pozrieť produkt ${icons.arrow}</a></div></div></article>
+          <section class="cx-why"><small>Prečo práve toto</small><p>${esc(product.reason)}</p></section>
           ${alt && alt.id!==product.id ? `<article class="cx-alt"><span>${icons.leaf}</span><div><small>Alternatíva</small><b>${esc(alt.name)}</b></div><a href="${alt.url}" target="_blank" rel="noreferrer" aria-label="Pozrieť alternatívu">${icons.arrow}</a></article>`:''}
           <p class="cx-result-note">Výber je orientačný podľa preferencií, nie zdravotná diagnóza.</p>
           <button class="cx-restart" id="cx-restart" type="button">Vybrať znova</button>

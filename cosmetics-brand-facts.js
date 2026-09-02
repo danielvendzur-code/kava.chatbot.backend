@@ -37,9 +37,9 @@
   }
 
   // Fresh visual sources and product facts checked against the current shops.
-  brands.two.hero = '/assets/cosmetics/two.png';
+  brands.two.hero = '/assets/cosmetics/two.webp';
 
-  brands.biofy.hero = '/assets/cosmetics/biofy.png';
+  brands.biofy.hero = '/assets/cosmetics/biofy.webp';
   const biofyDry = brands.biofy.products.find((product) => product.id === 'dry');
   if (biofyDry) biofyDry.price = '21,20 €';
   const biofyHemp = brands.biofy.products.find((product) => product.id === 'hemp');

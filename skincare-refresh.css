@@ -365,3 +365,69 @@
   /* A stretched flex child turned the sticker into a full-width bar. */
   .cx-plan-badge { align-self: flex-start; }
 }
+
+/* ==========================================================================
+   11. Result — say what it matched and why
+   ========================================================================== */
+
+/* The coffee result names the notes it was picked for and sets the reason apart
+   under a label. The skincare result had the reason as an unmarked paragraph
+   and nothing about the match at all. */
+.cx-product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 7px 0 0;
+}
+.cx-product-tags span {
+  padding: 4px 9px;
+  border: 1px solid color-mix(in srgb, var(--cx-ink) 14%, transparent);
+  border-radius: 999px;
+  color: color-mix(in srgb, var(--cx-ink) 74%, transparent);
+  font-size: 9.6px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.cx-why {
+  margin: 9px 0 0;
+  padding: 10px 12px 11px;
+  border-left: 3px solid var(--cx-accent);
+  border-radius: 0 10px 10px 0;
+  background: color-mix(in srgb, var(--cx-accent) 7%, var(--cx-paper));
+}
+.cx-why small {
+  display: block;
+  color: var(--cx-accent);
+  font-size: 8.8px;
+  font-weight: 900;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.cx-why p {
+  margin: 4px 0 0;
+  color: color-mix(in srgb, var(--cx-ink) 80%, transparent);
+  font-size: 11px;
+  line-height: 1.42;
+}
+
+/* ==========================================================================
+   12. Drawn answers
+   ========================================================================== */
+
+/* Where an answer is a concept rather than a thing, the card carries a drawn
+   mark on the brand's soft ground instead of a photograph borrowed from an
+   earlier step. */
+.cx-option-photo--mark {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(120% 110% at 50% 12%, color-mix(in srgb, var(--cx-accent) 11%, transparent), transparent 68%),
+    color-mix(in srgb, var(--cx-soft) 74%, var(--cx-paper)) !important;
+  color: color-mix(in srgb, var(--cx-brand) 78%, transparent);
+}
+.cx-option-photo--mark .cx-mark {
+  width: 58%;
+  max-width: 96px;
+  height: auto;
+}
+.cx-option.is-selected .cx-option-photo--mark { color: var(--cx-accent); }
