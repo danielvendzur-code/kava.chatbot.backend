@@ -1,9 +1,10 @@
 /* Pražiarnička brand tokens on the shared Jolka system. */
 :root{--ink:#143f35;--ink-2:#1c5b4b;--ink-3:#276b5a;--paper:#f3f1ec;--surface:#fffdf9;--surface-2:#f0ece4;--line:#ded8cd;--line-strong:#c8c1b3;--kraft:#cb5f2c;--kraft-deep:#a9461d;--kraft-tint:#f6e2d6;--text:#17211d;--text-2:#59635f;--text-3:#7b847f;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
 body.praziarnicka-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
-body.praziarnicka-clean .widget__brand{gap:0}
-body.praziarnicka-clean .widget__brand>div{display:none}
-body.praziarnicka-clean .widget__brand>img{width:108px!important;min-width:108px!important;max-width:108px!important;height:42px!important;filter:brightness(0) invert(1);mix-blend-mode:normal}
+/* The header used to carry the wide lockup on its own with the name hidden,
+   which left this the only demo without a name and a status line. It takes the
+   roastery's own round mark next to the name, like the other five. */
+body.praziarnicka-clean .widget__brand>img{width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important;filter:none!important}
 body.praziarnicka-clean .msg__avatar img{width:31px!important;height:31px!important;filter:brightness(0) invert(1)}
 body.praziarnicka-clean .launcher__button img{width:54px!important;height:54px!important;filter:brightness(0) invert(1)}
 @media(hover:hover) and (pointer:fine){body.praziarnicka-clean .launcher__button:hover{background-color:#d86734!important}body.praziarnicka-clean .launcher__button:hover img{filter:brightness(0) invert(1)}}

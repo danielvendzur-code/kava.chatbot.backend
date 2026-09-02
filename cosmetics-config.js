@@ -81,7 +81,7 @@
     two: {
       name:'two cosmetics', domain:'twocosmetics.sk', website:'https://www.twocosmetics.sk/',
       theme:{brand:'#101010',accent:'#e6a85f',soft:'#f4efe6',paper:'#ffffff',ink:'#101010',line:'#dedede'},
-      wordmark:'<span class="cx-wordmark cx-wordmark--two"><i>ↄ</i> two</span>',
+      wordmark:'<span class="cx-wordmark cx-wordmark--two">two</span>',
       hero:'/assets/cosmetics/two.png',
       ownerTitle:'Z veľkého výberu urobte zákazníkovi štyri jednoduché rozhodnutia.',
       ownerText:'Chat vysvetlí rozdiely. Výber starostlivosti spojí typ pleti, prioritu a preferovanú textúru s konkrétnym produktom.',
@@ -111,7 +111,7 @@
     biofy: {
       name:'BIOFY', domain:'biofy.sk', website:'https://biofy.sk/',
       theme:{brand:'#33483c',accent:'#839f74',soft:'#edf2e9',paper:'#fbfdf9',ink:'#253129',line:'#d4dfd0'},
-      wordmark:'<span class="cx-wordmark cx-wordmark--biofy"><i>◇</i>BIOFY</span>',
+      wordmark:'<span class="cx-wordmark cx-wordmark--biofy">BIOFY</span>',
       hero:'/assets/cosmetics/biofy.png',
       ownerTitle:'Pomôžte zákazníkovi dostať sa k správnemu krému bez preklikávania kategórií.',
       ownerText:'Výber starostlivosti zjednoduší rozdiely medzi typmi pleti. Chat odpovie na otázky, ktoré by inak smerovali na podporu.',

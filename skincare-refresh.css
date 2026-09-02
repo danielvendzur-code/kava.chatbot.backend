@@ -321,3 +321,9 @@
 /* `.cx-owner-benefits` also sits on the offer element and drew a rule between
    its columns. */
 .cx-owner-offer > div { border-right: 0 !important; border-left: 0 !important; }
+
+/* The decorative glyph in front of a wordmark was a 25 px disc that kept its
+   size wherever the wordmark shrank — inside the header, the launcher and the
+   message avatar it came out as a clipped half-circle. The wordmarks stand on
+   their own. */
+.cx-wordmark i { display: none !important; }

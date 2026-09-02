@@ -193,3 +193,8 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
+/* Footer matches the skincare pages: where it comes from on the left, what the
+   page is on the right. */
+.mcb-page .mcb-foot { justify-content: space-between !important; }
+.mcb-page .mcb-foot span { color: color-mix(in srgb, var(--mcb-ink) 50%, transparent); }

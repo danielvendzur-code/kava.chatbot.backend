@@ -39,6 +39,15 @@
   // What the advisor answers, how long it takes, what comes out of it. This is
   // the block the hero used to spend on a product photograph, and it is the
   // same one the coffee pages carry.
+  /* The contact links carried no context, so an owner arriving from a demo had
+     to type in who they were. The coffee pages already pass this. */
+  const contactHref = () => `https://mojchatbot.sk/kontakt?${new URLSearchParams({
+    source: `skincare-demo-${slug}`,
+    company: brand.name,
+    web: brand.website,
+    demo: location.href
+  })}`;
+
   const ownerFigures = `
     <aside class="cx-owner-figures" aria-label="Čo poradca robí">
       <div><strong>24/7</strong><div><b>chat odpovedá</b><small>zloženie · pleť · rutina · konkrétne produkty</small></div></div>
@@ -50,7 +59,7 @@
     <main class="cx-owner">
       <header class="cx-owner-head">
         <a class="cx-owner-brand" href="${brand.website}" target="_blank" rel="noreferrer">${brand.wordmark}</a>
-        <a class="cx-owner-contact" href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">Chcem to na svoj web ${icons.arrow}</a>
+        <a class="cx-owner-contact" href="${esc(contactHref())}" target="_blank" rel="noreferrer">Chcem to na svoj web ${icons.arrow}</a>
       </header>
       <section class="cx-owner-hero">
         <div class="cx-owner-copy">
@@ -67,7 +76,7 @@
       <section class="cx-owner-benefits cx-owner-offer" aria-label="Cena">
         <div class="cx-plan-summary"><span class="cx-plan-label">Cena</span><b class="cx-plan-badge">Prvý mesiac zdarma</b><p><b><em>potom</em><strong>247 €</strong><em>jednorazovo</em></b><b><i>+</i><strong>10 €</strong><em>mesačne</em></b></p></div>
         <div class="cx-plan-points"><span>${icons.check} Váš katalóg je pripravený už pri spustení</span><span>${icons.check} História konverzácií — vidíte, na čo sa pýtajú</span><span>${icons.check} Nasadenie na web jedným riadkom kódu</span></div>
-        <div class="cx-plan-cta"><small>Po prvom bezplatnom mesiaci. Bez viazanosti, vypnúť sa dá kedykoľvek.</small><a href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a></div>
+        <div class="cx-plan-cta"><small>Po prvom bezplatnom mesiaci. Bez viazanosti, vypnúť sa dá kedykoľvek.</small><a href="${esc(contactHref())}" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a></div>
       </section>
       <footer class="cx-owner-foot"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a><span>Ukážka riešenia pre ${esc(brand.name)}</span></footer>
     </main>

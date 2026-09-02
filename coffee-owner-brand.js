@@ -213,8 +213,9 @@
       </div>
     </section>
 
-    <footer class="mcb-foot" style="justify-content:flex-end">
+    <footer class="mcb-foot">
       <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk ${icons.arrow}</a>
+      <span>Ukážka riešenia pre ${esc(brand.name)}</span>
     </footer>`;
   };
 
