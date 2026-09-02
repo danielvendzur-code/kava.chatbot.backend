@@ -39,6 +39,9 @@ jobs:
           test -f coffee-local-api.js
           test -f coffee-jolka-app.js
           test -f coffee-jolka-shell.css
+          test -f coffee-runtime-polish.js
+          test -f coffee-owner-brand.js
+          test -f coffee-owner-brand.css
           test -f tests/full-coffee-release-audit.spec.mjs
           test -f tests/clean-coffee-data-contract.test.mjs
           test -f api/chat.js
@@ -53,7 +56,9 @@ jobs:
             grep -Fq "/$slug-jolka-data.js" "$slug.html"
             grep -Fq "/$slug-jolka-theme.css" "$slug.html"
             grep -Fq '/coffee-jolka-app.js' "$slug.html"
-            ! grep -Eq 'coffee-owner-brand|coffee-final-tune|coffee-last-mile|coffee-release-authority' "$slug.html"
+            grep -Fq '/coffee-runtime-polish.js' "$slug.html"
+            grep -Fq '/coffee-owner-brand.js' "$slug.html"
+            ! grep -Eq 'coffee-final-tune|coffee-last-mile|coffee-release-authority|coffee-release-contract' "$slug.html"
             grep -Fq "$slug" coffee-final-entry.js
             node --check "$slug-jolka-data.js"
           done
@@ -65,6 +70,8 @@ jobs:
           grep -Fq "return nativeFetch('/api/chat', init)" coffee-api-route.js
           node --check coffee-final-entry.js
           node --check coffee-jolka-app.js
+          node --check coffee-runtime-polish.js
+          node --check coffee-owner-brand.js
           node --check coffee-local-api.js
           node --check api/chat.js
 
@@ -72,55 +79,54 @@ jobs:
         run: |
           test -f cosmetics.html
           test -f cosmetics.css
+          test -f cosmetics-polish.css
           test -f cosmetics-config.js
           test -f cosmetics.js
+          test -f cosmetics-owner-parity.js
           test -f api/cosmetics-chat.js
           test -f tests/cosmetics.spec.mjs
           grep -Fq '/kozmetika/:slug' vercel.json
           for slug in mylo ponio two bellcoria biofy anemone; do grep -Fq "$slug:" cosmetics-config.js; done
           grep -Fq "fetch('/api/cosmetics-chat'" cosmetics.js
+          grep -Fq '/cosmetics-owner-parity.js' cosmetics.html
           grep -Fq 'ANTHROPIC_API_KEY' api/cosmetics-chat.js
           node --check cosmetics-config.js
           node --check cosmetics.js
+          node --check cosmetics-owner-parity.js
           node --check api/cosmetics-chat.js
 
       - name: Validate active coffee data contracts
         run: node --test tests/clean-coffee-data-contract.test.mjs
 
-      - name: Validate untouched Jolka benchmark
+      - name: Validate Jolka shared-runtime parity
         run: |
           test -f jolka.html
           test -f jolka/jolka.css
           test -f jolka/jolka-data.js
-          test -f jolka/jolka-app.js
-          test -f jolka/jolka-chat-flow.js
+          test -f jolka/jolka-demo-bridge.js
           grep -Fq '/jolka/jolka.css' jolka.html
+          grep -Fq '/coffee-jolka-shell.css' jolka.html
           grep -Fq '/jolka/jolka-data.js' jolka.html
-          grep -Fq '/jolka/jolka-app.js' jolka.html
-          grep -Fq '/jolka/jolka-chat-flow.js' jolka.html
-          grep -Fq '/coffee-release-contract.css' jolka.html
-          grep -Fq '/coffee-release-contract.js' jolka.html
+          grep -Fq '/jolka/jolka-demo-bridge.js' jolka.html
+          grep -Fq '/coffee-jolka-app.js' jolka.html
+          grep -Fq '/coffee-runtime-polish.js' jolka.html
+          grep -Fq '/coffee-owner-brand.js' jolka.html
+          ! grep -Eq 'jolka-app.js|jolka-chat-flow.js|coffee-release-contract|coffee-last-mile|coffee-final-tune' jolka.html
           grep -Fq '"/ukazka/jolka"' vercel.json
           grep -Fq "location.replace('/jolka.html')" coffee-bootstrap.js
           grep -Fq 'praziarenjolka.sk/eshop-kava/' api/chat.js
           ! grep -Fq 'praziarenjolka.sk/shop/' api/chat.js
           ! grep -Fq 'praziarenjolka.sk/shop/' jolka/jolka-data.js
           ! grep -Fq 'produkt/el-salvador-shg-ep' jolka/jolka-data.js
-          ! grep -Eq 'tel:|mailto:' jolka.html jolka/jolka-app.js jolka/jolka-data.js
+          ! grep -Eq 'tel:|mailto:' jolka.html jolka/jolka-data.js
           test "$(ls jolka/*.css | wc -l)" -eq 1
           test "$(ls assets/jolka/method/*.webp | wc -l)" -eq 7
           test "$(ls assets/jolka/tile/*.webp | wc -l)" -eq 14
           node --check jolka/jolka-data.js
-          node --check jolka/jolka-app.js
-          node --check jolka/jolka-chat-flow.js
+          node --check jolka/jolka-demo-bridge.js
 
       - name: Run integrated desktop and mobile Chromium tests
-        run: |
-          python3 -m http.server 4173 >/tmp/kava-server.log 2>&1 &
-          SERVER_PID=$!
-          trap 'kill $SERVER_PID' EXIT
-          for i in {1..30}; do curl -fsS http://127.0.0.1:4173/ >/dev/null && break; sleep 1; done
-          npm run test:browser
+        run: npm run test:browser
 
       - name: Upload visual QA artifacts
         if: always()
