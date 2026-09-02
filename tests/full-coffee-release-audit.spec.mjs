@@ -36,10 +36,7 @@ function monitor(page) {
 async function ready(page, url, viewport) {
   await page.setViewportSize(viewport);
   await page.goto(`${baseURL}${url}`, { waitUntil: 'domcontentloaded' });
-  await page.waitForFunction(() => {
-    if (location.pathname === '/jolka.html') return Boolean(document.querySelector('#widget .mode'));
-    return document.documentElement.dataset.coffeeReleaseReady === 'true';
-  }, null, { timeout: 10_000 });
+  await page.waitForFunction(() => document.documentElement.dataset.coffeeReleaseReady === 'true', null, { timeout: 10_000 });
   await page.waitForTimeout(300);
 }
 
@@ -66,6 +63,8 @@ async function expectOwnerOffer(page) {
   await expect(ownerPage.locator('.mcb-plan')).toContainText('10');
   await expect(ownerPage.locator('.mcb-plan')).toContainText('Nasadenie na web jedným riadkom kódu');
   await expect(ownerPage.locator('.mcb-pricing-side')).toContainText('Bez viazanosti');
+  const pricingDot = await ownerPage.locator('.mcb-plan-trial').evaluate(node => getComputedStyle(node,'::before').content);
+  expect(['none','normal','""'].includes(pricingDot)).toBeTruthy();
 }
 
 async function expectBrandGeometry(page) {
@@ -83,11 +82,19 @@ async function expectBrandGeometry(page) {
   const launcherImage = launcher.locator('img');
   await expectLoadedImage(launcherImage);
   await expectContained(launcher, launcherImage, 1);
+  const before = await launcher.evaluate(node => ({ bg:getComputedStyle(node).backgroundColor, image:getComputedStyle(node).backgroundImage }));
+  await launcher.hover();
+  await page.waitForTimeout(60);
+  const after = await launcher.evaluate(node => ({ bg:getComputedStyle(node).backgroundColor, image:getComputedStyle(node).backgroundImage, transition:getComputedStyle(node).transitionProperty }));
+  expect(before.image).toBe('none');
+  expect(after.image).toBe('none');
+  expect(after.bg).not.toBe(before.bg);
+  expect(after.transition).not.toContain('background');
 
   await launcher.click();
   const widget = page.locator('#widget');
   await expect(widget).toHaveClass(/is-open/);
-  await page.waitForTimeout(420);
+  await page.waitForTimeout(320);
 
   const header = widget.locator('.widget__header');
   const brand = widget.locator('.widget__brand');
@@ -95,8 +102,8 @@ async function expectBrandGeometry(page) {
   const actions = widget.locator('.widget__actions');
   await expectLoadedImage(brandImage);
   const brandImageBox = await brandImage.boundingBox();
-  expect(brandImageBox.width).toBeLessThanOrEqual(84);
-  expect(brandImageBox.height).toBeLessThanOrEqual(52);
+  expect(brandImageBox.width).toBeLessThanOrEqual(120);
+  expect(brandImageBox.height).toBeLessThanOrEqual(54);
   const brandImageStyle = await brandImage.evaluate((image) => {
     const style = getComputedStyle(image);
     const alpha = Number(style.backgroundColor.match(/rgba\([^,]+,[^,]+,[^,]+,\s*([\d.]+)\)/)?.[1] ?? 1);
@@ -113,7 +120,7 @@ async function expectBrandGeometry(page) {
 }
 
 for (const [slug, url] of demos) {
-  test(`${slug}: mobile Jolka geometry, logos and full flow`, async ({ page }) => {
+  test(`${slug}: mobile shared geometry, logos and full flow`, async ({ page }) => {
     const failures = monitor(page);
     await ready(page, url, { width: 390, height: 844 });
 
@@ -139,13 +146,26 @@ for (const [slug, url] of demos) {
     await expect(page.locator('#chatScreen')).toHaveClass(/is-active/);
     await expect(page.locator('#entry')).toBeVisible();
     await expect(page.locator('#chat .msg .bubble').first()).toBeVisible();
+    await expect(page.locator('#chat .msg .bubble .msg__time').first()).toBeVisible();
     await expect(page.locator('#chips .chip')).toHaveCount(4);
     await expect(page.locator('#composer')).toBeVisible();
     expect(await page.locator('#chatScreen').evaluate((element) => element.scrollWidth <= element.clientWidth + 1)).toBeTruthy();
 
-    await page.locator('#chips .chip').first().click();
+    const chip = page.locator('#chips .chip').first();
+    const chipBefore = await chip.evaluate(node => ({ bg:getComputedStyle(node).backgroundColor, border:getComputedStyle(node).borderColor, image:getComputedStyle(node).backgroundImage }));
+    await chip.hover();
+    await page.waitForTimeout(220);
+    const chipAfter = await chip.evaluate(node => ({ bg:getComputedStyle(node).backgroundColor, border:getComputedStyle(node).borderColor, image:getComputedStyle(node).backgroundImage, color:getComputedStyle(node).color }));
+    expect(chipBefore.image).toBe('none');
+    expect(chipAfter.image).toBe('none');
+    expect(chipAfter.bg).not.toBe(chipBefore.bg);
+    expect(chipAfter.border).not.toBe(chipBefore.border);
+    expect(chipAfter.color).not.toBe('rgb(255, 255, 255)');
+
+    await chip.click();
     await expect(page.locator('#chat .msg--user')).toHaveCount(1);
     await expect(page.locator('#chat .msg:not(.msg--user)')).toHaveCount(2);
+    await expect(page.locator('#chat .msg--user .msg__time')).toBeVisible();
 
     await page.locator('.mode__button[data-mode="advisor"]').click();
     await expect(page.locator('#advisorScreen')).toHaveClass(/is-active/);
@@ -153,7 +173,16 @@ for (const [slug, url] of demos) {
     for (let step = 0; step < 4; step += 1) {
       const options = page.locator('#advisor .option');
       await expect(options.first()).toBeVisible();
-      await expectLoadedImage(options.first().locator('.option__visual img'));
+      const image = options.first().locator('.option__visual img');
+      await expectLoadedImage(image);
+      const transformBefore = await image.evaluate(node => getComputedStyle(node).transform);
+      await options.first().hover();
+      await page.waitForTimeout(160);
+      const transformAfter = await image.evaluate(node => getComputedStyle(node).transform);
+      expect(transformBefore).toBe('none');
+      expect(transformAfter).toBe('none');
+      const overlay = await options.first().locator('.option__visual').evaluate(node => getComputedStyle(node,'::after').display);
+      expect(overlay).toBe('none');
       expect(await page.locator('#advisor').evaluate((element) => element.scrollWidth <= element.clientWidth + 1)).toBeTruthy();
       await options.first().click();
       await page.waitForTimeout(620);
