@@ -57,7 +57,7 @@ const hasExplicitTestFile = forwardedArgs.some((argument) => /(?:^|[\\/])tests[\
 const child = spawn(process.execPath, [
   cli,
   'test',
-  ...(!hasExplicitTestFile ? ['tests/full-coffee-release-audit.spec.mjs'] : []),
+  ...(!hasExplicitTestFile ? ['tests/full-coffee-release-audit.spec.mjs', 'tests/cosmetics.spec.mjs'] : []),
   '--reporter=json',
   '--workers=1',
   ...forwardedArgs
