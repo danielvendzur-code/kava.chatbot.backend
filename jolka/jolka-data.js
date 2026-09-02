@@ -409,7 +409,7 @@ window.JOLKA = (() => {
     welcome: 'Dobrý deň. Pomôžem vám nájsť kávu podľa toho, ako ju pijete a pripravujete.',
     cta: 'Pomôžte mi vybrať kávu',
     placeholder: 'Napíšte, akú kávu hľadáte…',
-    chips: ['Nízka acidita', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy']
+    chips: ['Nízka acidita', 'Káva na filter', 'Niečo netradičné', 'Bez kofeínu']
   };
 
   /** Deterministic answers used when /api/chat is unavailable. */

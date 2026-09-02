@@ -70,7 +70,6 @@
       shop: 'https://praziarnicka.sk/eshop',
       lockup: '<img src="/brand/praziarnicka-logo-official.png" alt="Pražiarnička">',
       theme: { ink: '#143f35', brand: '#1c5b4b', accent: '#c25a2b', soft: '#edf6f2', paper: '#ffffff' },
-      chips: ['Káva do automatu', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
       hero: '/assets/praziarnicka/official-paganini.jpg',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
@@ -82,7 +81,6 @@
       shop: 'https://diroastery.sk/kategoria-produktu/kava/',
       lockup: '<img src="/assets/diamonds/diroastery-logo.svg" alt="Diamonds Roastery">',
       theme: { ink: '#0b0d0c', brand: '#0b0d0c', accent: '#6f8f19', soft: '#f2f6e8', paper: '#ffffff' },
-      chips: ['Káva na filter', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
       hero: '/assets/diamonds/kenya-mugaya-official.jpg',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
@@ -96,7 +94,6 @@
       lockup: '<span class="mcb-wordmark"><b>KAFFA</b><small>SPECIALITY COFFEE BEANS</small></span>',
       theme: { ink: '#111111', brand: '#111111', accent: '#3d7d97', soft: '#f2ede4', paper: '#fcfbf8' },
       display: { family: 'Georgia, "Times New Roman", serif', weight: '400', tracking: '-.03em' },
-      chips: ['Espresso blend', 'Niečo na filter', 'Nechcem kyslú', 'Chcem ovocnú'],
       hero: '/assets/kaffa/mokka-hero.webp',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
@@ -108,7 +105,6 @@
       shop: 'https://kavavitazov.sk/obchod/',
       lockup: '<img src="/assets/vitazov-logo.svg" alt="Káva Víťazov">',
       theme: { ink: '#071f1a', brand: '#0c4438', accent: '#5f8a1f', soft: '#eef7e2', paper: '#ffffff' },
-      chips: ['Káva do kancelárie', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
       hero: '/assets/vitazov-office.jpeg',
       figures: commonFigures('použitie · chuť · príprava · nápoj')
     },
@@ -121,7 +117,6 @@
       shop: 'https://www.conceptcoffee.sk/',
       lockup: '<img src="/brand/concept-official-logo.png" alt="Concept Coffee Roasters">',
       theme: { ink: '#1a1b19', brand: '#2c4038', accent: '#b8503c', soft: '#f4efe7', paper: '#fbfaf6' },
-      chips: ['Káva na filter', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
       hero: '/assets/concept/product-yellow-sunset.jpg',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
@@ -134,7 +129,6 @@
       lockup: '<img src="/assets/jolka/logo-ink.webp" alt="Pražiareň Jolka"><b>Pražiareň Jolka</b>',
       theme: { ink: '#23180f', brand: '#5e4834', accent: '#a8763f', soft: '#f3ece3', paper: '#fdfaf6' },
       display: { family: '"Playfair Display", Georgia, serif', weight: '600', tracking: '-.02em' },
-      chips: ['Nízka acidita', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
       hero: '/assets/jolka/hero-bags.webp',
       figures: commonFigures('príprava · chuť · nápoj · acidita')
     }

@@ -110,7 +110,7 @@ window.JOLKA = (() => {
   const chat = {
     welcome: 'Dobrý deň. Pomôžem vám vybrať sezónnu kávu podľa prípravy a chuti.',
     placeholder: 'Napíšte, akú kávu hľadáte…',
-    chips: ['Káva na filter', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy']
+    chips: ['Káva na filter', 'Nie veľmi kyslú', 'Niečo ovocné', 'Bez kofeínu']
   };
 
   const fallbacks = [
