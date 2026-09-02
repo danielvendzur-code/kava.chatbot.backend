@@ -18,16 +18,16 @@
   --on-ink-2:rgba(255,255,255,.72);
 }
 
-/* The official Diamonds SVG is horizontal. Its symbol occupies the left square of the source artwork,
-   so compact Jolka slots crop that symbol instead of shrinking the whole wordmark to illegibility. */
 body.diamonds-clean :is(.widget__brand > img,.launcher__button img) { object-fit:contain; }
 body.diamonds-clean .widget__brand > img {
-  width:72px !important;
-  min-width:72px !important;
-  max-width:72px !important;
-  height:38px !important;
+  width:108px !important;
+  min-width:108px !important;
+  max-width:108px !important;
+  height:40px !important;
   filter:brightness(0) invert(1);
 }
+body.diamonds-clean .widget__brand b { display:none; }
+body.diamonds-clean .widget__brand > div { display:flex; align-items:center; }
 body.diamonds-clean .msg__avatar img {
   width:30px !important;
   height:30px !important;
@@ -36,11 +36,12 @@ body.diamonds-clean .msg__avatar img {
   filter:brightness(0) invert(1);
 }
 body.diamonds-clean .launcher__button img {
-  width:48px;
-  height:48px;
-  border-radius:50%;
+  width:54px !important;
+  height:54px !important;
+  border-radius:0;
   filter:brightness(0) invert(1);
-  transition:filter .28s var(--ease);
 }
 body.diamonds-clean .launcher__button { --launcher-fill:#b7dc45; }
-body.diamonds-clean .launcher__button:hover img { filter:brightness(0); }
+@media (hover:hover) and (pointer:fine) {
+  body.diamonds-clean .launcher__button:hover img { filter:brightness(0); }
+}
