@@ -6,7 +6,10 @@
   if (!root || !data) return;
 
   const match = location.pathname.match(/\/kozmetika\/([a-z0-9-]+)/i);
-  const slug = (match?.[1] || new URLSearchParams(location.search).get('demo') || 'mylo').toLowerCase();
+  const host = location.hostname.toLowerCase();
+  const hostSlug = host.endsWith('.mojchatbot.sk') ? host.split('.')[0] : '';
+  const requested = match?.[1] || new URLSearchParams(location.search).get('demo') || hostSlug || 'mylo';
+  const slug = String(requested).toLowerCase();
   const brand = data.brands[slug] || data.brands.mylo;
   const questions = data.questions;
 
