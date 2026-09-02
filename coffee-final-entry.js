@@ -7,11 +7,22 @@
   const SKINCARE = new Set(['mylo', 'ponio', 'two', 'bellcoria', 'biofy', 'anemone']);
   const params = new URLSearchParams(location.search);
   const parts = location.pathname.split('/').filter(Boolean);
-  const pathSlug = (parts.at(-1) || '').replace(/\.html$/i, '');
+  const pathSlug = (parts.at(-1) || '').replace(/\.html$/i, '').toLowerCase();
   const hostnameSlug = location.hostname.toLowerCase().endsWith('.mojchatbot.sk')
     ? location.hostname.toLowerCase().split('.')[0]
     : '';
-  const requested = params.get('demo') || (VALID.has(hostnameSlug) || SKINCARE.has(hostnameSlug) ? hostnameSlug : '') || location.hash.replace(/^#/, '') || pathSlug;
+  const known = (slug) => VALID.has(slug) || SKINCARE.has(slug);
+  const hashSlug = location.hash.replace(/^#/, '').toLowerCase();
+
+  // A path that names a demo wins over the subdomain it was opened on, so every
+  // demo stays reachable by URL from whichever host already points here —
+  // praziarnicka.mojchatbot.sk/ukazka/concept opens Concept, not the roastery
+  // the host is named after.
+  const requested = params.get('demo')
+    || (known(pathSlug) ? pathSlug : '')
+    || (known(hashSlug) ? hashSlug : '')
+    || (known(hostnameSlug) ? hostnameSlug : '')
+    || pathSlug;
 
   if (SKINCARE.has(requested)) {
     const target = `/kozmetika/${requested}`;
