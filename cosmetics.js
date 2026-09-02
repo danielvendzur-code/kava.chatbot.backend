@@ -51,6 +51,47 @@
     demo: location.href
   })}`;
 
+  const CHIPS = ['Mám suchú pleť', 'Pleť sa mi mastí', 'Niečo na citlivú pleť', 'Chcem jednoduchú rutinu'];
+
+  /* Each of these questions is answered from one tag. A brand whose catalogue
+     carries no product for that tag would be answered with its first product,
+     so a small catalogue named the same jar three times; those questions are
+     left out rather than repeated. */
+  const ASK_TAGS = [['Mám suchú pleť', 'dry'], ['Pleť sa mi mastí', 'oily'],
+                    ['Niečo na citlivú pleť', 'sensitive'], ['Zrelá pleť a vrásky', 'mature']];
+
+  const askable = () => {
+    const used = new Set();
+    const picked = [];
+    for (const [question, tag] of ASK_TAGS) {
+      // Take the first product carrying the tag that another question has not
+      // already taken, rather than dropping the question outright: Bellcoria's
+      // opuntia oil carries dry, sensitive and mature at once.
+      const product = brand.products.find((item) => item.tags.includes(tag) && !used.has(item.id));
+      if (!product) continue;
+      used.add(product.id);
+      picked.push({ question, product });
+      if (picked.length === 3) break;
+    }
+    return picked;
+  };
+
+  /* The questions are the ones the widget itself offers, and the answers are
+     what it actually replies — the page shows the product, not a claim about
+     it. First sentence only: the rest is in the conversation. */
+  const firstSentence = (text) => {
+    const trimmed = String(text).trim();
+    const end = trimmed.search(/(?<=[.!?])\s/);
+    return end === -1 ? trimmed : trimmed.slice(0, end + 1).trim();
+  };
+
+  const ownerAsks = () => askable().length < 2 ? '' : `
+    <aside class="cx-owner-asks" aria-label="Na čo poradca odpovie">
+      <h2>Na čo sa zákazníci pýtajú</h2>
+      ${askable().map(({ question, product }) => `
+        <div><b>${esc(question)}</b><small>${esc(firstSentence(product.reason))}</small></div>`).join('')}
+    </aside>`;
+
   const ownerFigures = `
     <aside class="cx-owner-figures" aria-label="Čo poradca robí">
       <div><strong>24/7</strong><div><b>chat odpovedá</b><small>zloženie · pleť · rutina · konkrétne produkty</small></div></div>
@@ -74,7 +115,7 @@
             <button type="button" data-open="chat" class="is-secondary">Skúsiť chat ${icons.chat}</button>
           </div>
         </div>
-        ${ownerFigures}
+        <div class="cx-owner-side">${ownerFigures}${ownerAsks()}</div>
       </section>
       <section class="cx-owner-benefits cx-owner-offer" aria-label="Cena">
         <div class="cx-plan-summary"><span class="cx-plan-label">Cena</span><b class="cx-plan-badge">Prvý mesiac zdarma</b><p><b><em>potom</em><strong>247 €</strong><em>jednorazovo</em></b><b><i>+</i><strong>10 €</strong><em>mesačne</em></b></p></div>
@@ -149,7 +190,6 @@
   }
 
   function renderChat() {
-    const chips = ['Mám suchú pleť','Pleť sa mi mastí','Chcem jednoduchú rutinu','Niečo na citlivú pleť'];
     stage.innerHTML = `
       <section class="cx-chat">
         <div class="cx-chat-messages" id="cx-messages">
@@ -157,7 +197,7 @@
           ${state.messages.map(messageMarkup).join('')}
         </div>
         <div class="cx-chat-bottom">
-          ${!state.interacted ? `<div class="cx-chips">${chips.map((chip) => `<button class="cx-chip" type="button">${esc(chip)}</button>`).join('')}</div>` : ''}
+          ${!state.interacted ? `<div class="cx-chips">${CHIPS.map((chip) => `<button class="cx-chip" type="button">${esc(chip)}</button>`).join('')}</div>` : ''}
           <form class="cx-composer" id="cx-form"><input id="cx-input" maxlength="500" autocomplete="off" placeholder="Opýtajte sa na starostlivosť…" aria-label="Otázka"><button type="submit" aria-label="Odoslať" ${state.busy?'disabled':''}>${icons.send}</button></form>
         </div>
       </section>`;

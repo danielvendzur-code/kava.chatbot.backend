@@ -143,6 +143,12 @@
   // Published so the widget-side modules can reuse the same brand facts.
   window.__MCB_BRAND__ = { slug, ...brand };
 
+  const firstSentence = (text) => {
+    const trimmed = String(text).trim();
+    const end = trimmed.search(/(?<=[.!?])\s/);
+    return end === -1 ? trimmed : trimmed.slice(0, end + 1).trim();
+  };
+
   /* ---------------------------------------------------------- contact link */
 
   function contactHref() {
@@ -191,6 +197,7 @@
         </div>
       </section>
 
+      <div class="mcb-side">
       <section class="mcb-figures" aria-label="Čo poradca robí">
         <ul>
           ${brand.figures.map(([value, name, note], i) => `
@@ -201,6 +208,14 @@
             </li>`).join('')}
         </ul>
       </section>
+      ${(window.__COFFEE_ASKS__ || []).length < 2 ? '' : `
+      <section class="mcb-asks" aria-label="Na čo poradca odpovie">
+        <h2>Na čo sa zákazníci pýtajú</h2>
+        ${(window.__COFFEE_ASKS__ || []).map(({ question, answer }) => `
+          <div><b>${esc(question)}</b><small>${esc(firstSentence(answer))}</small></div>`).join('')}
+      </section>`}
+      </div>
+
     </main>
 
     <section class="mcb-pricing" aria-label="Cena">

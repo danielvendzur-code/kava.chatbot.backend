@@ -431,3 +431,92 @@
   height: auto;
 }
 .cx-option.is-selected .cx-option-photo--mark { color: var(--cx-accent); }
+
+/* ==========================================================================
+   13. What customers ask
+   ========================================================================== */
+
+/* The hero's right column was one panel in the middle of a tall band, which
+   left the page looking unfinished. It carries what the advisor does and what
+   it answers, stacked, so the band is full. */
+@media (min-width: 761px) {
+  .cx-owner-side {
+    min-width: 0;
+    display: grid;
+    align-content: center;
+    gap: clamp(10px, 1.6vh, 16px);
+  }
+}
+.cx-owner-asks {
+  padding: clamp(11px, 1.7vh, 16px) clamp(16px, 1.8vw, 24px) clamp(13px, 1.9vh, 18px);
+  border: 1px solid var(--cx-line);
+  border-radius: 4px;
+  background: #fff;
+}
+.cx-owner-asks h2 {
+  margin: 0 0 9px;
+  color: color-mix(in srgb, var(--cx-ink) 55%, transparent);
+  font-size: 9.5px;
+  font-weight: 850;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.cx-owner-asks > div {
+  padding: 7px 0;
+  border-top: 1px solid color-mix(in srgb, var(--cx-ink) 10%, transparent);
+}
+.cx-owner-asks > div:first-of-type { border-top: 0; padding-top: 0; }
+.cx-owner-asks b {
+  display: block;
+  color: var(--cx-ink);
+  font-size: 12.5px;
+  line-height: 1.25;
+  letter-spacing: -.012em;
+}
+.cx-owner-asks small {
+  display: block;
+  margin-top: 2px;
+  color: color-mix(in srgb, var(--cx-ink) 66%, transparent);
+  font-size: 10.4px;
+  line-height: 1.35;
+}
+@media (max-width: 760px) { .cx-owner-asks { display: none; } }
+
+/* ==========================================================================
+   14. Price — a framed block, set rather than typed
+   ========================================================================== */
+
+.cx-owner-offer {
+  border-top: 2px solid var(--cx-brand) !important;
+  border-radius: 0 !important;
+}
+.cx-owner-offer > div + div { border-left: 1px solid var(--cx-line) !important; }
+.cx-plan-label { color: var(--cx-brand); font-size: 9px !important; letter-spacing: .18em; }
+.cx-plan-badge {
+  margin-top: 2px;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-size: 11px;
+  letter-spacing: .005em;
+  transform: none;
+  box-shadow: none;
+}
+.cx-plan-summary p { margin-top: 4px !important; font-variant-numeric: tabular-nums; }
+.cx-plan-summary p > b { align-items: baseline; gap: 6px; }
+.cx-plan-summary strong {
+  font-size: 19px !important;
+  font-weight: 800 !important;
+  letter-spacing: -.035em !important;
+  color: var(--cx-ink) !important;
+}
+.cx-plan-summary em {
+  font-size: 10px !important;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: color-mix(in srgb, var(--cx-ink) 52%, transparent) !important;
+}
+.cx-plan-summary i { font-size: 13px; color: color-mix(in srgb, var(--cx-ink) 38%, transparent); }
+.cx-plan-points svg { color: var(--cx-brand) !important; }
+@media (max-width: 760px) {
+  .cx-owner-offer > div + div { border-left: 0 !important; border-top: 1px solid var(--cx-line) !important; }
+}

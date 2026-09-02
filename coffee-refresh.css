@@ -208,3 +208,107 @@
 @media (max-width: 760px) {
   .launcher__teaser { display: none !important; }
 }
+
+/* ==========================================================================
+   7. What customers ask
+   ========================================================================== */
+
+/* The right column held one block in the middle of a tall band, which left the
+   page reading as unfinished. It now carries what the advisor answers under
+   what it does, so the band is full and the page says something concrete. */
+.mcb-page .mcb-side {
+  min-width: 0;
+  display: grid;
+  align-content: center;
+  gap: clamp(10px, 1.6vh, 16px);
+}
+.mcb-page .mcb-asks {
+  min-width: 0;
+  padding: clamp(11px, 1.7vh, 16px) clamp(16px, 1.8vw, 24px) clamp(13px, 1.9vh, 18px);
+  border: 1px solid var(--mcb-line);
+  border-radius: 4px;
+  background: #fff;
+}
+.mcb-page .mcb-asks h2 {
+  margin: 0 0 9px;
+  color: color-mix(in srgb, var(--mcb-ink) 55%, transparent);
+  font-size: 9.5px;
+  font-weight: 850;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.mcb-page .mcb-asks > div {
+  padding: 7px 0;
+  border-top: 1px solid color-mix(in srgb, var(--mcb-ink) 10%, transparent);
+}
+.mcb-page .mcb-asks > div:first-of-type { border-top: 0; padding-top: 0; }
+.mcb-page .mcb-asks b {
+  display: block;
+  font-size: 12.5px;
+  line-height: 1.25;
+  letter-spacing: -.012em;
+}
+.mcb-page .mcb-asks small {
+  display: block;
+  margin-top: 2px;
+  color: color-mix(in srgb, var(--mcb-ink) 66%, transparent);
+  font-size: 10.4px;
+  line-height: 1.35;
+}
+@media (max-width: 1080px) { .mcb-page .mcb-side { display: none; } }
+
+/* ==========================================================================
+   8. Price — a framed block, set rather than typed
+   ========================================================================== */
+
+/* A hairline box with everything at one size read as a placeholder. The block
+   is anchored by a rule in the brand ink, the two halves are separated instead
+   of floating, and the figures carry the weight: tabular numerals at a size
+   that makes them the thing you read first, units small and muted beside them. */
+.mcb-page .mcb-plan {
+  border-top: 2px solid var(--mcb-brand) !important;
+  border-radius: 0 !important;
+  column-gap: 0 !important;
+}
+.mcb-page .mcb-plan ul {
+  padding-left: clamp(18px, 2.2vw, 30px) !important;
+  border-left: 1px solid var(--mcb-line);
+}
+.mcb-page .mcb-plan-label {
+  color: var(--mcb-brand);
+  font-size: 9px;
+  letter-spacing: .18em;
+}
+.mcb-page .mcb-plan-trial {
+  margin-top: 15px;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-size: 11px;
+  letter-spacing: .005em;
+  transform: none;
+  box-shadow: none;
+}
+.mcb-page .mcb-plan-price {
+  margin-top: 46px !important;
+  gap: 1px !important;
+  font-variant-numeric: tabular-nums;
+}
+.mcb-page .mcb-plan-price > b { align-items: baseline; gap: 6px; }
+.mcb-page .mcb-plan-price strong {
+  font-size: 19px !important;
+  font-weight: 800 !important;
+  letter-spacing: -.035em !important;
+  color: var(--mcb-ink) !important;
+}
+.mcb-page .mcb-plan-price em,
+.mcb-page .mcb-plan-price span {
+  font-size: 10px !important;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: color-mix(in srgb, var(--mcb-ink) 52%, transparent) !important;
+}
+.mcb-page .mcb-plan-price i {
+  font-size: 13px !important;
+  color: color-mix(in srgb, var(--mcb-ink) 38%, transparent) !important;
+}
+.mcb-page .mcb-plan li svg { color: var(--mcb-brand) !important; }

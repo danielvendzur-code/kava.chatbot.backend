@@ -463,6 +463,24 @@
     return `${esc(hit.lead)} <b>${esc(product.name)}</b>. ${esc(product.why)} ${esc(product.price)}.`;
   }
 
+  /* The owner page shows what the advisor answers. Sampling its own offline
+     replies keeps the page and the conversation from drifting apart. */
+  window.__COFFEE_ASKS__ = (() => {
+    const seen = new Set();
+    return (chatCopy.chips || [])
+      .map((question) => {
+        // A chip with no match answers "rád vám poradím", which tells the owner
+        // nothing; two chips landing on the same coffee reads as if the advisor
+        // knows one answer. Both are dropped here.
+        const hit = fallbacks.find((entry) => entry.match.some((needle) =>
+          question.toLocaleLowerCase('sk').includes(needle)));
+        return hit ? { question, product: hit.product } : null;
+      })
+      .filter((entry) => entry && !seen.has(entry.product) && seen.add(entry.product))
+      .slice(0, 3)
+      .map(({ question }) => ({ question, answer: fallbackAnswer(question).replace(/<[^>]*>/g, '') }));
+  })();
+
   async function requestReply(text) {
     state.history.push({ role:'user', content:text });
     const response = await fetch('/api/chat', { method:'POST', headers:{ 'content-type':'application/json' }, body:JSON.stringify({ demoId:demo.id, messages:state.history.slice(-10) }) });
