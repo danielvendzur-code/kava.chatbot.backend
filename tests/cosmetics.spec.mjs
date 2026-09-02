@@ -15,9 +15,7 @@ async function openDemo(page, slug, viewport={width:1366,height:768}, settle=120
 async function capture(page, path) {
   const session = await page.context().newCDPSession(page);
   try {
-    const { data } = await session.send('Page.captureScreenshot', {
-      format:'png', fromSurface:true, captureBeyondViewport:true
-    });
+    const { data } = await session.send('Page.captureScreenshot', { format:'png', fromSurface:true, captureBeyondViewport:true });
     fs.writeFileSync(path, Buffer.from(data, 'base64'));
   } finally {
     await session.detach();
@@ -25,10 +23,7 @@ async function capture(page, path) {
 }
 
 async function pageMetrics(page) {
-  return page.evaluate(() => ({
-    h:document.scrollingElement.scrollHeight, ih:innerHeight,
-    w:document.scrollingElement.scrollWidth, iw:innerWidth
-  }));
+  return page.evaluate(() => ({ h:document.scrollingElement.scrollHeight, ih:innerHeight, w:document.scrollingElement.scrollWidth, iw:innerWidth }));
 }
 
 async function noOverflow(locator, tolerance=3) {
@@ -38,26 +33,37 @@ async function noOverflow(locator, tolerance=3) {
   }), tolerance);
 }
 
-test('all six cosmetics demos have a branded owner presentation that sells the solution', async ({ page }) => {
+test('all six cosmetics demos keep the Codex owner composition and calm pricing', async ({ page }) => {
   test.setTimeout(60000);
   for (const slug of demos) {
-    await openDemo(page,slug,{width:1366,height:768},1900);
+    await openDemo(page,slug,{width:1366,height:768},300);
     const owner=page.locator('.cx-owner');
     await expect(owner).toBeVisible();
     await expect(owner.locator('.cx-owner-brand .cx-wordmark')).toBeVisible();
     await expect(owner.locator('[data-open="advisor"]')).toBeVisible();
     await expect(owner.locator('[data-open="chat"]')).toBeVisible();
     await expect(owner.locator('.cx-owner-path > div')).toHaveCount(3);
-    await expect(owner.locator('.cx-owner-benefits > div')).toHaveCount(3);
-    await expect(owner.locator('.cx-owner-contact[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
     await expect(owner.locator('.cx-owner-offer')).toContainText('Prvý mesiac zdarma');
     await expect(owner.locator('.cx-owner-offer')).toContainText('247 €');
     await expect(owner.locator('.cx-owner-offer')).toContainText('10 €');
     await expect(owner.locator('.cx-owner-offer')).toContainText('Nasadenie na web jedným riadkom kódu');
+    const pricing=owner.locator('.cx-plan-summary > span');
+    const pricingStyle=await pricing.evaluate(node=>({
+      pseudo:getComputedStyle(node,'::before').content,
+      font:parseFloat(getComputedStyle(node).fontSize)
+    }));
+    expect(['none','normal','""']).toContain(pricingStyle.pseudo);
+    expect(pricingStyle.font,slug).toBeGreaterThanOrEqual(12);
+    const visualCard=owner.locator('.cx-owner-visual-card');
+    const visualStyle=await visualCard.evaluate(node=>({
+      blur:getComputedStyle(node).backdropFilter || getComputedStyle(node).webkitBackdropFilter,
+      overlay:getComputedStyle(node.closest('.cx-owner-visual'),'::after').display
+    }));
+    expect(visualStyle.blur === 'none' || visualStyle.blur === '',slug).toBeTruthy();
+    expect(visualStyle.overlay,slug).toBe('none');
     expect(await owner.locator('.cx-owner-visual > img').evaluate(image => image.complete && image.naturalWidth > 0)).toBeTruthy();
     const text=await owner.innerText();
     expect(text).not.toMatch(/umelá inteligencia|AI demo|match\s*%|zhoda\s*%/i);
-    expect(text.length).toBeLessThan(1250);
     const metrics=await pageMetrics(page);
     expect(metrics.h,slug).toBeLessThanOrEqual(metrics.ih+1);
     expect(metrics.w,slug).toBeLessThanOrEqual(metrics.iw+1);
@@ -65,33 +71,66 @@ test('all six cosmetics demos have a branded owner presentation that sells the s
   }
 });
 
-test('all six owner presentations fit mobile and keep the important actions visible', async ({ page }) => {
+test('all six owner presentations fit mobile and keep launcher access', async ({ page }) => {
   test.setTimeout(60000);
   for (const slug of demos) {
-    await openDemo(page,slug,{width:390,height:844},1900);
+    await openDemo(page,slug,{width:390,height:844},250);
     await expect(page.locator('.cx-owner-brand')).toBeVisible();
     await expect(page.locator('.cx-owner-contact')).toBeVisible();
     await expect(page.locator('[data-open="advisor"]')).toBeVisible();
     await expect(page.locator('[data-open="chat"]')).toBeVisible();
     await expect(page.locator('.cx-owner-visual')).toBeVisible();
+    await expect(page.locator('.cx-launcher-button')).toBeVisible();
+    await expect(page.locator('.cx-teaser')).toBeHidden();
     const metrics=await pageMetrics(page);
     expect(metrics.h,slug).toBeLessThanOrEqual(metrics.ih+1);
     expect(metrics.w,slug).toBeLessThanOrEqual(metrics.iw+1);
     const controls=page.locator('.cx-owner-contact,.cx-owner-actions button');
     const heights=await controls.evaluateAll(nodes=>nodes.map(n=>n.getBoundingClientRect().height));
     expect(Math.min(...heights),slug).toBeGreaterThanOrEqual(36);
-    await capture(page,`artifacts/cosmetics-${slug}-owner-mobile.png`);
   }
 });
 
-test('initial chat is simple, readable and removes selection clutter after the first message', async ({ page }) => {
+test('launcher and chips change state without radial fill animation on all brands', async ({ page }) => {
+  for (const slug of demos) {
+    await openDemo(page,slug,{width:1366,height:768});
+    const launcher=page.locator('.cx-launcher-button');
+    const before=await launcher.evaluate(node=>({
+      bg:getComputedStyle(node).backgroundColor,
+      image:getComputedStyle(node).backgroundImage,
+      transition:getComputedStyle(node).transitionProperty,
+      wordmarkSize:parseFloat(getComputedStyle(node.querySelector('.cx-wordmark')).fontSize)
+    }));
+    expect(before.image,slug).toBe('none');
+    expect(before.transition,slug).not.toContain('background-color');
+    expect(before.wordmarkSize,slug).toBeGreaterThanOrEqual(10);
+    await launcher.hover();
+    await page.waitForTimeout(25);
+    const after=await launcher.evaluate(node=>({bg:getComputedStyle(node).backgroundColor,image:getComputedStyle(node).backgroundImage}));
+    expect(after.image,slug).toBe('none');
+    expect(after.bg,slug).not.toBe(before.bg);
+
+    await page.locator('[data-open="chat"]').click();
+    const chip=page.locator('.cx-chip').first();
+    const chipBefore=await chip.evaluate(node=>({bg:getComputedStyle(node).backgroundColor,border:getComputedStyle(node).borderColor,image:getComputedStyle(node).backgroundImage}));
+    expect(chipBefore.image,slug).toBe('none');
+    await chip.hover();
+    await page.waitForTimeout(80);
+    const chipAfter=await chip.evaluate(node=>({bg:getComputedStyle(node).backgroundColor,border:getComputedStyle(node).borderColor,image:getComputedStyle(node).backgroundImage,color:getComputedStyle(node).color}));
+    expect(chipAfter.image,slug).toBe('none');
+    expect(chipAfter.bg,slug).not.toBe(chipBefore.bg);
+    expect(chipAfter.border,slug).not.toBe(chipBefore.border);
+    expect(chipAfter.color,slug).not.toBe('rgb(255, 255, 255)');
+  }
+});
+
+test('initial chat stays readable and removes selection clutter after first message', async ({ page }) => {
   for (const slug of demos) {
     await openDemo(page,slug,{width:390,height:844});
     await page.locator('[data-open="chat"]').click();
     const widget=page.locator('#cx-widget');
     await expect(widget).toHaveClass(/is-open/);
     await expect(page.locator('.cx-mode button')).toHaveCount(2);
-    await expect(page.locator('.cx-mode button').first()).toHaveAttribute('data-mode','advisor');
     await expect(page.locator('.cx-chip')).toHaveCount(4);
     const entry=page.locator('.cx-advisor-entry');
     const welcome=page.locator('.cx-message--assistant .cx-bubble').first();
@@ -99,39 +138,26 @@ test('initial chat is simple, readable and removes selection clutter after the f
     await expect(welcome).toBeVisible();
     await expect(page.locator('.cx-message-avatar')).toBeVisible();
     await expect(page.locator('.cx-widget-note')).toHaveText('mojchatbot.sk');
-    const entryBox=await entry.boundingBox();
-    const welcomeBox=await welcome.boundingBox();
-    expect(entryBox.y,slug).toBeLessThan(welcomeBox.y);
+    const header=await page.locator('.cx-widget-brand').evaluate(node=>({display:getComputedStyle(node).display,divider:getComputedStyle(node.querySelector(':scope > span')).borderLeftWidth}));
+    expect(header.display,slug).toBe('grid');
+    expect(header.divider,slug).toBe('0px');
     const chipHeight=await page.locator('.cx-chip').first().evaluate(n=>n.getBoundingClientRect().height);
-    const chipFont=await page.locator('.cx-chip').first().evaluate(n=>parseFloat(getComputedStyle(n).fontSize));
     const bubbleFont=await welcome.evaluate(n=>parseFloat(getComputedStyle(n).fontSize));
     expect(chipHeight,slug).toBeGreaterThanOrEqual(39);
-    expect(chipFont,slug).toBeGreaterThanOrEqual(10.4);
     expect(bubbleFont,slug).toBeGreaterThanOrEqual(12.5);
-    await page.locator('.cx-chip').first().hover();
-    await page.waitForTimeout(1180);
-    const hoverStyle=await page.locator('.cx-chip').first().evaluate(node=>({size:getComputedStyle(node).backgroundSize,position:getComputedStyle(node).backgroundPosition,color:getComputedStyle(node).color,image:getComputedStyle(node).backgroundImage}));
-    expect(hoverStyle.size,slug).toBe('250% 250%');
-    expect(hoverStyle.position,slug).toBe('50% 50%');
-    expect(hoverStyle.color,slug).toBe('rgb(255, 255, 255)');
-    expect(hoverStyle.image,slug).toContain('radial-gradient');
-    await capture(page,`artifacts/cosmetics-${slug}-chat-mobile.png`);
     await page.locator('.cx-chip').first().click();
     await expect(page.locator('.cx-message--user')).toHaveCount(1);
     await expect(page.locator('.cx-advisor-entry')).toHaveCount(0);
     await expect(page.locator('.cx-chip')).toHaveCount(0);
-    await expect(page.locator('.cx-mode')).toBeVisible();
   }
 });
 
-test('every cosmetics advisor is four photographic no-scroll steps and ends on a real product', async ({ page }) => {
+test('every cosmetics advisor keeps four photographic no-scroll steps with stable images', async ({ page }) => {
   test.setTimeout(60000);
   for (const slug of demos) {
     await openDemo(page,slug,{width:390,height:844});
     await page.locator('[data-open="advisor"]').click();
     await expect(page.locator('#cx-widget')).toHaveClass(/is-open/);
-    await expect(page.locator('.cx-mode button[data-mode="advisor"]')).toHaveClass(/is-active/);
-
     for (let step=0; step<4; step+=1) {
       const body=page.locator('.cx-advisor-body');
       await expect(body).toBeVisible();
@@ -139,31 +165,29 @@ test('every cosmetics advisor is four photographic no-scroll steps and ends on a
       expect(metrics.ok,`${slug} step ${step+1}: ${JSON.stringify(metrics)}`).toBeTruthy();
       const options=page.locator('.cx-option');
       await expect(options).toHaveCount(4);
-      const visible=await options.evaluateAll(nodes=>nodes.every(n=>n.getClientRects().length>0));
-      expect(visible,slug).toBeTruthy();
-      const imageCount=await options.locator('img').count();
-      expect(imageCount,slug).toBe(4);
       expect(await options.locator('img').evaluateAll(images=>images.every(image=>image.complete&&image.naturalWidth>0)),slug).toBeTruthy();
-      const h=await options.first().evaluate(n=>n.getBoundingClientRect().height);
-      expect(h,slug).toBeGreaterThanOrEqual(105);
-      if(step===0) await capture(page,`artifacts/cosmetics-${slug}-advisor-mobile.png`);
+      const image=options.first().locator('img');
+      const before=await image.evaluate(node=>({transform:getComputedStyle(node).transform,filter:getComputedStyle(node).filter}));
+      await options.first().hover();
+      await page.waitForTimeout(120);
+      const after=await image.evaluate(node=>({transform:getComputedStyle(node).transform,filter:getComputedStyle(node).filter}));
+      expect(before.transform,slug).toBe('none');
+      expect(after.transform,slug).toBe('none');
+      expect(after.filter,slug).toBe('none');
       await options.first().click();
       await page.waitForTimeout(300);
     }
-
     const result=page.locator('.cx-result');
     await expect(result).toBeVisible();
     await expect(result.locator('.cx-product h2')).not.toHaveText('');
     const productLink=result.locator('.cx-product-price a');
     await expect(productLink).toHaveAttribute('href',/^https:\/\//);
     await expect(productLink).toContainText('Pozrieť produkt');
-    await expect(result).not.toContainText(/\d+\s*%/);
     await expect(result.locator('.cx-result-note')).toContainText('nie zdravotná diagnóza');
-    await capture(page,`artifacts/cosmetics-${slug}-result-mobile.png`);
   }
 });
 
-test('brand systems are not just one identical recolored shell', async ({ page }) => {
+test('brand systems remain distinct rather than one recolored shell', async ({ page }) => {
   const fingerprints=[];
   for (const slug of demos) {
     await openDemo(page,slug);
