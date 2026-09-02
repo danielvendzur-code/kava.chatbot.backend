@@ -9,7 +9,7 @@
     heroProductId:'zmes-jolka',
     logoInk:'/assets/jolka/logo-ink.webp',
     logoBadge:'/assets/jolka/logo-badge.webp',
-    logoHeader:'/assets/jolka/logo-ink.webp',
+    logoHeader:'/assets/jolka/logo-cream.webp',
     logoAvatar:'/assets/jolka/logo-badge.webp',
     heroImage:'/assets/jolka/hero-bags.webp',
     entryImage:'/assets/jolka/zmes-jolka.webp',

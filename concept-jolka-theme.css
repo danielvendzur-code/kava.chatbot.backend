@@ -1,5 +1,5 @@
 /* Concept Coffee Roasters brand tokens on the shared Jolka system. */
-:root{--ink:#173d3b;--ink-2:#225856;--ink-3:#2f6a67;--paper:#f4efe7;--surface:#fffdfa;--surface-2:#faeee7;--line:#ead3c8;--line-strong:#ddb9a9;--kraft:#d85d2c;--kraft-deep:#b94822;--kraft-tint:#f7dfd2;--text:#1b201e;--text-2:#625b56;--text-3:#887b73;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+:root{--ink:#173d3b;--ink-2:#225856;--ink-3:#2f6a67;--paper:#f4f1ea;--surface:#fffefb;--surface-2:#f0ece3;--line:#ded8cc;--line-strong:#c7c0b1;--kraft:#c4552a;--kraft-deep:#a1421c;--kraft-tint:#f6e4d9;--text:#1b201e;--text-2:#625b56;--text-3:#887b73;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
 body.concept-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
 body.concept-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important;filter:brightness(0) invert(1)}
 body.concept-clean .msg__avatar img{width:30px!important;height:30px!important;filter:brightness(0) invert(1)}

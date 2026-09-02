@@ -159,9 +159,10 @@
 
   const planCard = () => `
     <article class="mcb-plan">
-      <span class="mcb-plan-trial">${esc(PRICING.trial)}</span>
-      <small class="mcb-plan-after">Potom pokračujete za</small>
+      <span class="mcb-plan-label">Cena</span>
+      <b class="mcb-plan-trial">${esc(PRICING.trial)}</b>
       <p class="mcb-plan-price">
+        <em>potom</em>
         <strong>${esc(PRICING.setup)}&nbsp;${esc(PRICING.currency)}</strong><span>jednorazovo</span>
         <i>+</i>
         <strong>${esc(PRICING.monthly)}&nbsp;${esc(PRICING.currency)}</strong><span>mesačne</span>
@@ -291,6 +292,13 @@
     sales.dataset.mcbSalesStyle = 'true';
     sales.dataset.mcOrder = '40';
     document.body.appendChild(sales);
+
+    const refresh = document.createElement('link');
+    refresh.rel = 'stylesheet';
+    refresh.href = '/coffee-refresh.css';
+    refresh.dataset.mcbRefreshStyle = 'true';
+    refresh.dataset.mcOrder = '95';
+    document.body.appendChild(refresh);
 
     const orderStyles = () => {
       const ranked = [...document.body.querySelectorAll('link[rel="stylesheet"][data-mc-order]')];

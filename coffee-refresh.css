@@ -1,0 +1,143 @@
+/**
+ * Coffee refresh — the same composition the skincare pages carry.
+ *
+ *  - "24/7" was set at 41 px inside a 74 px column, so it ran into its own
+ *    label. The column is sized for the longest figure now.
+ *  - The price strip ran the full width and its right end sat under the
+ *    invitation and the bubble. It is a labelled column on the left instead,
+ *    with the free month as a sticker and the numbers small under it.
+ *  - The middle of the page was empty because the headline had been sized for
+ *    a layout that carried more blocks.
+ */
+
+/* ==========================================================================
+   1. Figures — the number needs its own room
+   ========================================================================== */
+
+.mcb-page .mcb-figures li {
+  grid-template-columns: clamp(88px, 8vw, 116px) minmax(0, 1fr) !important;
+  column-gap: clamp(12px, 1.4vw, 20px) !important;
+}
+.mcb-page .mcb-figures strong {
+  font-size: clamp(27px, 2.5vw, 38px) !important;
+  letter-spacing: -.05em !important;
+}
+.mcb-page .mcb-figures b { font-size: clamp(13px, 1.1vw, 15.5px) !important; }
+.mcb-page .mcb-figures small { color: color-mix(in srgb, var(--mcb-ink) 68%, transparent) !important; }
+
+/* ==========================================================================
+   2. Hero — fill the band
+   ========================================================================== */
+
+.mcb-page .mcb-copy h1 { font-size: clamp(34px, 4.4vw, 62px); max-width: 15ch; }
+.mcb-page .mcb-lead { max-width: 46ch; font-size: 15px; line-height: 1.5; }
+
+/* ==========================================================================
+   3. Price — a labelled column, bottom left
+   ========================================================================== */
+
+.mcb-page .mcb-pricing {
+  grid-template-columns: minmax(0, 1fr) !important;
+  width: min(100%, 64%);
+  gap: 0 !important;
+}
+/* The note repeats the sticker and the header already carries the same call to
+   action, so the corner is left to the launcher. */
+.mcb-page .mcb-pricing-side { display: none !important; }
+
+.mcb-page .mcb-plan {
+  grid-template-columns: minmax(210px, .8fr) minmax(280px, 1.2fr) !important;
+  grid-template-areas: "price points" "price addon" !important;
+  column-gap: clamp(20px, 2.6vw, 40px) !important;
+  row-gap: 3px !important;
+  align-items: start !important;
+}
+.mcb-page .mcb-plan-label {
+  grid-area: price;
+  align-self: start;
+  color: color-mix(in srgb, var(--mcb-ink) 58%, transparent);
+  font-size: 9.5px;
+  font-weight: 850;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+/* Reads as a sticker put on the page, not another line of copy. */
+.mcb-page .mcb-plan-trial {
+  grid-area: price;
+  justify-self: start;
+  align-self: start;
+  margin-top: 17px;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: var(--mcb-accent);
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 850;
+  letter-spacing: -.01em;
+  white-space: nowrap;
+  transform: rotate(-1.4deg);
+  box-shadow: 0 8px 18px -12px color-mix(in srgb, var(--mcb-accent) 90%, #000);
+}
+.mcb-page .mcb-plan-price {
+  grid-area: price;
+  align-self: end;
+  margin-top: 50px !important;
+  gap: 3px 5px !important;
+  color: color-mix(in srgb, var(--mcb-ink) 78%, transparent);
+}
+.mcb-page .mcb-plan-price em {
+  font-style: normal;
+  font-size: 10.5px;
+  color: color-mix(in srgb, var(--mcb-ink) 58%, transparent);
+}
+.mcb-page .mcb-plan-price strong { font-size: 15px !important; font-weight: 850 !important; }
+.mcb-page .mcb-plan-price span { font-size: 10.5px !important; }
+.mcb-page .mcb-plan-price i { font-size: 12px !important; padding: 0 2px !important; }
+.mcb-page .mcb-plan-after { display: none !important; }
+.mcb-page .mcb-plan li { color: color-mix(in srgb, var(--mcb-ink) 76%, transparent) !important; font-size: 11px !important; }
+.mcb-page .mcb-plan-addon { color: color-mix(in srgb, var(--mcb-ink) 58%, transparent) !important; }
+
+@media (max-width: 1080px) {
+  .mcb-page .mcb-pricing { width: 100%; }
+  .mcb-page .mcb-plan {
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-areas: "price" "points" "addon" !important;
+  }
+  .mcb-page .mcb-plan-price { margin-top: 46px !important; }
+}
+
+/* ==========================================================================
+   4. Advisor — the answers fill the panel
+   ========================================================================== */
+
+/* The grid was pinned to the top of a taller panel, so every question left a
+   band of empty paper under it. The two rows share the height instead, and the
+   picture takes whatever the caption does not. */
+.advisor.is-questions { justify-content: stretch; }
+.advisor.is-questions .options {
+  flex: 1;
+  min-height: 0;
+  align-content: stretch !important;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+.advisor.is-questions .option { min-height: 0; }
+.advisor.is-questions .option__visual {
+  flex: 1;
+  min-height: 78px;
+  height: auto !important;
+}
+/* A three-answer step keeps the last card on its own row rather than leaving a
+   hole beside it. */
+.advisor.is-questions .options:has(> .option:nth-child(3):last-child) { grid-template-rows: repeat(2, minmax(0, 1fr)); }
+.advisor.is-questions .options > .option:nth-child(3):last-child { grid-column: 1 / -1; }
+
+/* ==========================================================================
+   5. Chat — the conversation starts at the top
+   ========================================================================== */
+
+/* The log was bottom-aligned, so the opening line sat at the far end of an
+   empty panel, right above the chips, with the entry card stranded at the top.
+   A conversation reads downward from where it started. */
+.chat { justify-content: flex-start !important; }

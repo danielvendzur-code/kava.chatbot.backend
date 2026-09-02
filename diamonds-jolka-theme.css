@@ -1,5 +1,5 @@
 /* Diamonds Roastery brand tokens on the shared Jolka system. */
-:root{--ink:#0b0d0c;--ink-2:#171a18;--ink-3:#252a27;--paper:#f1f2ed;--surface:#fff;--surface-2:#f4f6ec;--line:#dce2ca;--line-strong:#c0cf91;--kraft:#b7dc45;--kraft-deep:#6f8f19;--kraft-tint:#edf5d2;--text:#171917;--text-2:#5a5f58;--text-3:#7c8279;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.72)}
+:root{--ink:#0b0d0c;--ink-2:#171a18;--ink-3:#252a27;--paper:#f1f1ec;--surface:#ffffff;--surface-2:#eeefe8;--line:#dcddd3;--line-strong:#c3c5b7;--kraft:#7d9d22;--kraft-deep:#617e18;--kraft-tint:#eaf1d5;--text:#171917;--text-2:#5a5f58;--text-3:#7c8279;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.72)}
 body.diamonds-clean :is(.widget__brand>img,.launcher__button img){object-fit:contain}
 body.diamonds-clean .widget__brand>img{width:92px!important;min-width:92px!important;max-width:92px!important;height:40px!important;filter:brightness(0) invert(1)}
 body.diamonds-clean .msg__avatar img{width:30px!important;height:30px!important;object-fit:cover!important;object-position:left center;filter:brightness(0) invert(1)}

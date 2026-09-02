@@ -286,9 +286,41 @@
     }).join('');
   }
 
-  function optionVisual(option) {
+  /* The question steps ask about taste, preparation and how the coffee is
+     drunk. Several demos illustrated those answers with a photograph of a bag,
+     which meant the first step showed the same packaging four times and told
+     the visitor nothing. Every answer now carries a picture of the thing it
+     describes; the product itself is what the result is for. */
+  const CHOICE_PHOTOS = {
+    taste: {
+      chocolate: '/assets/choice/taste-chocolate.webp',
+      balanced: '/assets/choice/taste-balanced.webp',
+      fruity: '/assets/choice/taste-fruity.webp',
+      bold: '/assets/choice/taste-bold.webp'
+    },
+    prep: {
+      automat: '/assets/choice/prep-automat.webp',
+      lever: '/assets/choice/prep-lever.webp',
+      moka: '/assets/choice/prep-moka.webp',
+      filter: '/assets/choice/prep-filter.webp'
+    },
+    drink: {
+      black: '/assets/choice/drink-black.webp',
+      milk: '/assets/choice/drink-milk.webp',
+      both: '/assets/choice/drink-both.webp'
+    },
+    acidity: {
+      none: '/assets/choice/taste-chocolate.webp',
+      mild: '/assets/choice/taste-balanced.webp',
+      bright: '/assets/choice/taste-fruity.webp',
+      explore: '/assets/choice/taste-bold.webp'
+    }
+  };
+
+  function optionVisual(option, stepKey) {
     const product = option.product ? byId[option.product] : null;
-    const source = option.photo || product?.tile || product?.photo || demo.entryImage;
+    const source = CHOICE_PHOTOS[stepKey]?.[option.value]
+      || option.photo || product?.tile || product?.photo || demo.entryImage;
     return `<span class="option__visual"><img src="${esc(source)}" alt="" loading="lazy" width="240" height="192"></span>`;
   }
 
@@ -303,7 +335,7 @@
         ${step.options.map((option, index) => {
           const isSelected = selected === option.value;
           return `<button class="option${isSelected ? ' is-selected' : ''}" type="button" data-value="${esc(option.value)}" aria-pressed="${isSelected}" style="--reveal:${index * 70}ms">
-            ${optionVisual(option)}
+            ${optionVisual(option, step.key)}
             <span class="option__copy"><b>${esc(option.title)}</b><small>${esc(option.detail)}</small></span>
             <span class="option__mark">${icons.check}</span>
           </button>`;

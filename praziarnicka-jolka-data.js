@@ -108,7 +108,7 @@ window.JOLKA = (() => {
 
   const demo = {
     id:'praziarnicka', rootId:'praziarnicka-clean-root', pageClass:'praziarnicka-page', heroProductId:'paganini',
-    logoInk:'/brand/praziarnicka-logo-official.png', logoBadge:'/brand/praziarnicka-mark.svg', logoHeader:'/brand/praziarnicka-logo-official.png',
+    logoInk:'/brand/praziarnicka-logo-official.png', logoBadge:'/brand/praziarnicka-mark.svg', logoHeader:'/brand/praziarnicka-wordmark.png', logoAvatar:'/brand/praziarnicka-mark.svg',
     heroImage:'/assets/praziarnicka/official-paganini.jpg', entryImage:'/assets/praziarnicka/official-paganini.jpg',
     eyebrow:'Pre tím Pražiarničky',
     heroTitle:'Vitajte vo vašom návrhu kávového poradcu pre Pražiarničku.',

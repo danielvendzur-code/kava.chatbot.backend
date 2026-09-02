@@ -1,5 +1,5 @@
 /* Káva Víťazov brand tokens on the shared Jolka system. */
-:root{--ink:#0c4438;--ink-2:#15574a;--ink-3:#23685a;--paper:#eff4eb;--surface:#fffefa;--surface-2:#f0f5e7;--line:#d8e0ca;--line-strong:#becda8;--kraft:#6f9b2b;--kraft-deep:#4d7318;--kraft-tint:#e5efd4;--text:#17221e;--text-2:#59645f;--text-3:#7d8882;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+:root{--ink:#0c4438;--ink-2:#15574a;--ink-3:#23685a;--paper:#f2f2ec;--surface:#fffefa;--surface-2:#eeefe6;--line:#dcdcd0;--line-strong:#c4c5b5;--kraft:#5f8f1f;--kraft-deep:#456912;--kraft-tint:#e8f0d7;--text:#17221e;--text-2:#59645f;--text-3:#7d8882;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
 body.vitazov-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
 body.vitazov-clean .widget__brand>img{width:92px!important;min-width:92px!important;max-width:92px!important;height:40px!important;filter:brightness(0) invert(1)}
 body.vitazov-clean .msg__avatar img{width:30px!important;height:30px!important;filter:brightness(0) invert(1)}

@@ -1,5 +1,5 @@
 /* Pražiarnička brand tokens on the shared Jolka system. */
-:root{--ink:#143f35;--ink-2:#1c5b4b;--ink-3:#276b5a;--paper:#edf4f0;--surface:#fffdf9;--surface-2:#f4eee6;--line:#dfd4c7;--line-strong:#cdbba8;--kraft:#d86734;--kraft-deep:#a9461d;--kraft-tint:#f6dfd3;--text:#17211d;--text-2:#59635f;--text-3:#7b847f;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+:root{--ink:#143f35;--ink-2:#1c5b4b;--ink-3:#276b5a;--paper:#f3f1ec;--surface:#fffdf9;--surface-2:#f0ece4;--line:#ded8cd;--line-strong:#c8c1b3;--kraft:#cb5f2c;--kraft-deep:#a9461d;--kraft-tint:#f6e2d6;--text:#17211d;--text-2:#59635f;--text-3:#7b847f;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
 body.praziarnicka-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
 body.praziarnicka-clean .widget__brand{gap:0}
 body.praziarnicka-clean .widget__brand>div{display:none}
