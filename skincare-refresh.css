@@ -1,0 +1,293 @@
+/**
+ * Skincare refresh — the round of notes on the mylo/ponio pair.
+ *
+ * The composition is not touched: this layer only changes what was called out.
+ *
+ *  - the mojchatbot footer inside the open panel was a coloured band; it now
+ *    reads as part of the panel instead of a stripe across it
+ *  - supporting copy sat at ~50% ink and disappeared against the paper
+ *  - the status left the middle of the header bar and became a live signal
+ *  - chips take the coffee behaviour: tint plus edge, no radial fill
+ *  - the figures block and the price column replace the three-step path and
+ *    the old plan summary
+ */
+
+/* ==========================================================================
+   1. Panel footer — no coloured stripe
+   ========================================================================== */
+
+.cx-widget-note {
+  border-top: 1px solid color-mix(in srgb, var(--cx-line) 62%, transparent);
+  background: var(--cx-paper);
+  color: color-mix(in srgb, var(--cx-ink) 60%, transparent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+.cx-widget-note a { color: color-mix(in srgb, var(--cx-ink) 72%, transparent); }
+.cx-widget-note a:hover { color: var(--cx-ink); }
+
+/* ==========================================================================
+   2. Supporting copy — readable, not decorative
+   ========================================================================== */
+
+.cx-option-copy small,
+.cx-advisor-entry > div > em,
+.cx-advisor-entry small {
+  color: color-mix(in srgb, var(--cx-ink) 74%, transparent) !important;
+}
+.cx-progress > b { color: color-mix(in srgb, var(--cx-ink) 70%, transparent); }
+.cx-product-copy p { color: color-mix(in srgb, var(--cx-ink) 76%, transparent); }
+.cx-alt small { color: color-mix(in srgb, var(--cx-ink) 68%, transparent); }
+.cx-result-note { color: color-mix(in srgb, var(--cx-ink) 64%, transparent); font-size: 9.6px; }
+.cx-owner-copy p { color: color-mix(in srgb, var(--cx-ink) 74%, transparent); }
+.cx-owner-foot { color: color-mix(in srgb, var(--cx-ink) 62%, transparent); }
+.cx-teaser span { color: color-mix(in srgb, var(--cx-ink) 70%, transparent); }
+.cx-composer input::placeholder { color: color-mix(in srgb, var(--cx-ink) 58%, transparent) !important; }
+
+/* ==========================================================================
+   3. Status — out of the middle, and alive
+   ========================================================================== */
+
+/* The head rule matched every direct span, so the wordmark inherited the
+   divider and the faded ink meant for the status. */
+.cx-widget-brand {
+  display: grid !important;
+  align-content: center;
+  justify-items: start;
+  gap: 3px;
+}
+.cx-widget-brand > span.cx-wordmark {
+  padding-left: 0 !important;
+  border-left: 0 !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+.cx-widget-brand > span.cx-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding-left: 0 !important;
+  border-left: 0 !important;
+  color: color-mix(in srgb, #fff 78%, transparent);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .05em;
+}
+.cx-widget-brand > span.cx-status i {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4ddb92;
+  box-shadow: 0 0 7px 1px rgba(77, 219, 146, .85);
+  animation: cx-pulse 2.1s ease-in-out infinite;
+}
+/* The ring travels outward so the signal reads as live rather than decorative. */
+.cx-widget-brand > span.cx-status i::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border: 1.5px solid rgba(77, 219, 146, .75);
+  border-radius: 50%;
+  animation: cx-ping 2.1s cubic-bezier(.2, .76, .24, 1) infinite;
+}
+@keyframes cx-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 7px 1px rgba(77, 219, 146, .85); }
+  50% { opacity: .74; box-shadow: 0 0 12px 2px rgba(77, 219, 146, .55); }
+}
+@keyframes cx-ping {
+  0% { transform: scale(.7); opacity: .85; }
+  70%, 100% { transform: scale(2.1); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cx-widget-brand > span.cx-status i,
+  .cx-widget-brand > span.cx-status i::after { animation: none; }
+}
+
+/* ==========================================================================
+   4. Chips — the coffee behaviour
+   ========================================================================== */
+
+/* Tint and edge, both in one step. The radial fill took 1.12 s, so the label
+   spent most of a second sitting half on the wash and half off it. */
+.cx-chip {
+  min-height: 46px;
+  padding: 12px 14px;
+  border: 1px solid color-mix(in srgb, var(--cx-ink) 17%, transparent) !important;
+  background-image: none !important;
+  background-size: auto !important;
+  background-color: var(--cx-paper) !important;
+  color: var(--cx-ink) !important;
+  font-size: 12px;
+  font-weight: 700;
+  transition:
+    background-color .18s ease,
+    border-color .18s ease,
+    color .18s ease,
+    transform .18s ease !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  .cx-chip:hover,
+  .cx-chip:focus-visible {
+    background-image: none !important;
+    background-size: auto !important;
+    background-color: color-mix(in srgb, var(--cx-accent) 13%, var(--cx-paper)) !important;
+    border-color: color-mix(in srgb, var(--cx-accent) 68%, transparent) !important;
+    color: var(--cx-ink) !important;
+    transform: translateY(-1px);
+  }
+}
+.cx-chip:active { transform: none; }
+
+/* ==========================================================================
+   5. Figures block (replaces the three-step path)
+   ========================================================================== */
+
+.cx-owner-figures {
+  max-width: 620px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(14px, 2.2vh, 22px);
+  padding-top: clamp(11px, 1.7vh, 16px);
+  border-top: 1px solid var(--cx-line);
+}
+.cx-owner-figures > div {
+  min-width: 0;
+  display: grid;
+  align-content: start;
+  gap: 2px;
+  padding: 0 14px;
+}
+.cx-owner-figures > div:first-child { padding-left: 0; }
+.cx-owner-figures > div + div { border-left: 1px solid color-mix(in srgb, var(--cx-line) 78%, transparent); }
+.cx-owner-figures strong {
+  color: var(--cx-brand);
+  font-size: clamp(21px, 1.9vw, 27px);
+  font-weight: 850;
+  line-height: .95;
+  letter-spacing: -.045em;
+  font-variant-numeric: tabular-nums;
+}
+.cx-owner-figures b { display: block; margin-top: 4px; font-size: 12.5px; line-height: 1.18; letter-spacing: -.015em; }
+.cx-owner-figures small {
+  display: block;
+  color: color-mix(in srgb, var(--cx-ink) 68%, transparent);
+  font-size: 10px;
+  line-height: 1.28;
+}
+
+/* ==========================================================================
+   6. Price column
+   ========================================================================== */
+
+.cx-plan-summary { flex-direction: column; gap: 7px; align-items: flex-start; }
+.cx-plan-label {
+  padding-left: 0 !important;
+  color: color-mix(in srgb, var(--cx-ink) 58%, transparent);
+  font-size: 9.5px !important;
+  font-weight: 850 !important;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.cx-plan-label::before { content: none !important; }
+
+/* Reads as a sticker put on the page rather than another line of copy. */
+.cx-plan-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 11px;
+  border-radius: 999px;
+  background: var(--cx-accent);
+  color: #fff;
+  font-size: 11.5px;
+  font-weight: 850;
+  letter-spacing: -.01em;
+  white-space: nowrap;
+  transform: rotate(-1.4deg);
+  box-shadow: 0 8px 18px -12px color-mix(in srgb, var(--cx-accent) 90%, #000);
+}
+.cx-plan-summary p {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0;
+  color: color-mix(in srgb, var(--cx-ink) 78%, transparent);
+}
+.cx-plan-summary strong { font-size: 14.5px !important; font-weight: 850; letter-spacing: -.02em; }
+.cx-plan-summary em { font-size: 10px !important; color: color-mix(in srgb, var(--cx-ink) 62%, transparent) !important; }
+.cx-plan-summary i { color: color-mix(in srgb, var(--cx-ink) 45%, transparent); }
+.cx-plan-points span { font-size: 10.4px; color: color-mix(in srgb, var(--cx-ink) 80%, transparent); }
+.cx-plan-cta small { font-size: 10px; color: color-mix(in srgb, var(--cx-ink) 70%, transparent); }
+
+@media (max-width: 760px) {
+  .cx-owner-figures { margin-top: 16px; }
+  .cx-owner-figures > div { grid-template-columns: 58px minmax(0, 1fr); gap: 10px; padding: 8px 0; }
+  .cx-owner-figures b { font-size: 12px; }
+  .cx-owner-figures small { font-size: 9.6px; }
+  .cx-plan-badge { padding: 5px 9px; font-size: 9.5px; }
+  .cx-plan-summary strong { font-size: 12.5px !important; }
+  .cx-plan-summary em { font-size: 8.5px !important; }
+}
+
+/* ==========================================================================
+   7. Keep the offer clear of the launcher
+   ========================================================================== */
+
+/* The invitation and the bubble are fixed to the bottom-right corner, so the
+   third column of the offer was reading through them. The band now ends where
+   that corner begins instead of running under it. */
+@media (min-width: 1100px) {
+  .cx-owner-offer { margin-right: 332px; }
+}
+
+/* ==========================================================================
+   8. Launcher — the colour swaps at once, and the mark is readable
+   ========================================================================== */
+
+/* The wave took 0.92 s to cross the disc, so most of a hover was spent with the
+   mark sitting on two colours. */
+.cx-launcher-button {
+  background-image: none !important;
+  background-size: auto !important;
+  border: 0 !important;
+  transition: none !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  .cx-launcher-button:hover {
+    background-image: none !important;
+    background-size: auto !important;
+    background-color: var(--cx-accent) !important;
+    transform: none !important;
+  }
+  .cx-launcher-button:hover .cx-wordmark {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+    transform: scale(.92) !important;
+    transition: none !important;
+  }
+}
+.cx-launcher-button .cx-wordmark {
+  max-width: 74px !important;
+  font-size: 15px !important;
+  transform: scale(.92) !important;
+  transition: none !important;
+}
+.cx-launcher-button .cx-wordmark--mylo,
+.cx-launcher-button .cx-wordmark--bellcoria { font-size: 23px !important; }
+.cx-launcher-button .cx-wordmark--anemone { font-size: 11px !important; }
+
+/* ==========================================================================
+   9. Hero column has to hold the figures without clipping
+   ========================================================================== */
+
+/* Ponio's headline runs to four lines, which pushed the third figure under the
+   offer band. The savings come from the spacing between blocks rather than
+   from the headline, so the composition is unchanged. */
+.cx-owner-hero { padding: clamp(14px, 2.4vh, 25px) 0 clamp(12px, 2vh, 20px); }
+.cx-owner-copy h1 { font-size: clamp(40px, 4.1vw, 60px); }
+.cx-owner-copy p { margin-top: clamp(12px, 1.8vh, 17px); }
+.cx-owner-actions { margin-top: clamp(15px, 2.2vh, 22px); }
+.cx-owner-figures { margin-top: clamp(11px, 1.7vh, 18px); }
+.cx-owner-figures > div { padding: clamp(5px, .85vh, 9px) 0; }

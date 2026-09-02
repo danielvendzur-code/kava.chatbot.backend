@@ -47,7 +47,7 @@ test('all six cosmetics demos have a branded owner presentation that sells the s
     await expect(owner.locator('.cx-owner-brand .cx-wordmark')).toBeVisible();
     await expect(owner.locator('[data-open="advisor"]')).toBeVisible();
     await expect(owner.locator('[data-open="chat"]')).toBeVisible();
-    await expect(owner.locator('.cx-owner-path > div')).toHaveCount(3);
+    await expect(owner.locator('.cx-owner-figures > div')).toHaveCount(3);
     await expect(owner.locator('.cx-owner-benefits > div')).toHaveCount(3);
     await expect(owner.locator('.cx-owner-contact[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
     await expect(owner.locator('.cx-owner-offer')).toContainText('Prvý mesiac zdarma');

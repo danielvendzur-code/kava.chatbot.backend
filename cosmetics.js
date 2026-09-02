@@ -36,13 +36,13 @@
     messages:[{role:'assistant',text:'Dobrý deň. Napíšte, čo od starostlivosti očakávate alebo ako sa vaša pleť správa. Pomôžem vám zúžiť výber.'}]
   };
 
-  const ownerPath = `
-    <div class="cx-owner-path">
-      <div><span>${icons.chat}</span><b>Chat</b><small>odpovie na otázku</small></div>
-      <i>${icons.arrow}</i>
-      <div><span>${icons.spark}</span><b>Výber</b><small>4 jednoduché kroky</small></div>
-      <i>${icons.arrow}</i>
-      <div><span>${icons.bag}</span><b>Produkt</b><small>konkrétny preklik</small></div>
+  // The three-step path said the same thing three times. These are the figures
+  // the coffee pages carry: what answers, how long it takes, what comes out.
+  const ownerFigures = `
+    <div class="cx-owner-figures">
+      <div><strong>24/7</strong><b>chat odpovedá</b><small>zloženie · pleť · rutina</small></div>
+      <div><strong>4</strong><b>krátke otázky</b><small>pleť · priorita · rutina · textúra</small></div>
+      <div><strong>1</strong><b>odporúčanie</b><small>konkrétny produkt + dôvod</small></div>
     </div>`;
 
   root.innerHTML = `
@@ -60,7 +60,7 @@
             <button type="button" data-open="advisor">Vyskúšať výber ${icons.arrow}</button>
             <button type="button" data-open="chat" class="is-secondary">Skúsiť chat ${icons.chat}</button>
           </div>
-          ${ownerPath}
+          ${ownerFigures}
         </div>
         <div class="cx-owner-visual">
           <img src="${brand.hero}" alt="${esc(brand.name)} – produktová prezentácia" referrerpolicy="no-referrer" onerror="this.closest('[class*=visual],[class*=photo]')?.setAttribute('data-image-failed','true')">
@@ -68,7 +68,7 @@
         </div>
       </section>
       <section class="cx-owner-benefits cx-owner-offer" aria-label="Cena">
-        <div class="cx-plan-summary"><span>Prvý mesiac zdarma</span><small>Potom pokračujete za</small><p><strong>247 €</strong><em>jednorazovo</em><i>+</i><strong>10 €</strong><em>mesačne</em></p></div>
+        <div class="cx-plan-summary"><span class="cx-plan-label">Cena</span><b class="cx-plan-badge">Prvý mesiac zdarma</b><p><em>potom</em><strong>247 €</strong><em>jednorazovo</em><i>+</i><strong>10 €</strong><em>mesačne</em></p></div>
         <div class="cx-plan-points"><span>${icons.check} Váš katalóg je pripravený už pri spustení</span><span>${icons.check} História konverzácií — vidíte, na čo sa pýtajú</span><span>${icons.check} Nasadenie na web jedným riadkom kódu</span></div>
         <div class="cx-plan-cta"><small>Po prvom bezplatnom mesiaci. Bez viazanosti, vypnúť sa dá kedykoľvek.</small><a href="https://mojchatbot.sk/kontakt" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a></div>
       </section>
@@ -82,7 +82,7 @@
     <div class="cx-backdrop" id="cx-backdrop" hidden></div>
     <section class="cx-widget" id="cx-widget" role="dialog" aria-modal="true" aria-label="Poradca starostlivosti ${esc(brand.name)}" aria-hidden="true">
       <header class="cx-widget-head">
-        <div class="cx-widget-brand">${brand.wordmark}<span><i></i> online</span></div>
+        <div class="cx-widget-brand">${brand.wordmark}<span class="cx-status"><i></i> online</span></div>
         <div class="cx-widget-actions"><button id="cx-reset" type="button" aria-label="Začať odznova">${icons.reset}</button><button id="cx-close" type="button" aria-label="Zavrieť">${icons.close}</button></div>
       </header>
       <nav class="cx-mode" aria-label="Režim poradcu">
