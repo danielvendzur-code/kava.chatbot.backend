@@ -241,7 +241,7 @@
 .cx-launcher-button .cx-wordmark--anemone{font-size:10px!important;letter-spacing:.1em!important}
 @media(hover:hover) and (pointer:fine){
   .cx-launcher-button:hover{
-    background-color:var(--cx-accent);
+    background-color:color-mix(in srgb,var(--cx-brand) 34%,var(--cx-paper));
     background-image:none!important;
     transform:translateY(-2px);
   }
