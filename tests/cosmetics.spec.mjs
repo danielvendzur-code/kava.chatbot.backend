@@ -54,7 +54,7 @@ test('all six cosmetics demos have a branded owner presentation that sells the s
     await expect(owner.locator('.cx-owner-offer')).toContainText('247 €');
     await expect(owner.locator('.cx-owner-offer')).toContainText('10 €');
     await expect(owner.locator('.cx-owner-offer')).toContainText('Nasadenie na web jedným riadkom kódu');
-    expect(await owner.locator('.cx-owner-visual > img').evaluate(image => image.complete && image.naturalWidth > 0)).toBeTruthy();
+    await expect(owner.locator('.cx-owner-figures strong').first()).toHaveText('24/7');
     const text=await owner.innerText();
     expect(text).not.toMatch(/umelá inteligencia|AI demo|match\s*%|zhoda\s*%/i);
     expect(text.length).toBeLessThan(1250);
@@ -73,7 +73,7 @@ test('all six owner presentations fit mobile and keep the important actions visi
     await expect(page.locator('.cx-owner-contact')).toBeVisible();
     await expect(page.locator('[data-open="advisor"]')).toBeVisible();
     await expect(page.locator('[data-open="chat"]')).toBeVisible();
-    await expect(page.locator('.cx-owner-visual')).toBeVisible();
+    await expect(page.locator('.cx-owner-figures')).toBeVisible();
     const metrics=await pageMetrics(page);
     expect(metrics.h,slug).toBeLessThanOrEqual(metrics.ih+1);
     expect(metrics.w,slug).toBeLessThanOrEqual(metrics.iw+1);
@@ -168,7 +168,7 @@ test('brand systems are not just one identical recolored shell', async ({ page }
   for (const slug of demos) {
     await openDemo(page,slug);
     fingerprints.push(await page.evaluate(() => {
-      const visual=getComputedStyle(document.querySelector('.cx-owner-visual'));
+      const visual=getComputedStyle(document.querySelector('.cx-owner-contact'));
       const title=getComputedStyle(document.querySelector('.cx-owner-copy h1'));
       const action=getComputedStyle(document.querySelector('.cx-owner-actions button'));
       return [visual.borderRadius,title.fontFamily,title.fontWeight,action.borderRadius,getComputedStyle(document.body).backgroundColor].join('|');

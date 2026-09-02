@@ -36,14 +36,15 @@
     messages:[{role:'assistant',text:'Dobrý deň. Napíšte, čo od starostlivosti očakávate alebo ako sa vaša pleť správa. Pomôžem vám zúžiť výber.'}]
   };
 
-  // The three-step path said the same thing three times. These are the figures
-  // the coffee pages carry: what answers, how long it takes, what comes out.
+  // What the advisor answers, how long it takes, what comes out of it. This is
+  // the block the hero used to spend on a product photograph, and it is the
+  // same one the coffee pages carry.
   const ownerFigures = `
-    <div class="cx-owner-figures">
-      <div><strong>24/7</strong><b>chat odpovedá</b><small>zloženie · pleť · rutina</small></div>
-      <div><strong>4</strong><b>krátke otázky</b><small>pleť · priorita · rutina · textúra</small></div>
-      <div><strong>1</strong><b>odporúčanie</b><small>konkrétny produkt + dôvod</small></div>
-    </div>`;
+    <aside class="cx-owner-figures" aria-label="Čo poradca robí">
+      <div><strong>24/7</strong><div><b>chat odpovedá</b><small>zloženie · pleť · rutina · konkrétne produkty</small></div></div>
+      <div><strong>4</strong><div><b>krátke otázky</b><small>pleť · priorita · rutina · textúra</small></div></div>
+      <div><strong>1</strong><div><b>odporúčanie</b><small>konkrétny produkt + dôvod, prečo sedí</small></div></div>
+    </aside>`;
 
   root.innerHTML = `
     <main class="cx-owner">
@@ -60,12 +61,8 @@
             <button type="button" data-open="advisor">Vyskúšať výber ${icons.arrow}</button>
             <button type="button" data-open="chat" class="is-secondary">Skúsiť chat ${icons.chat}</button>
           </div>
-          ${ownerFigures}
         </div>
-        <div class="cx-owner-visual">
-          <img src="${brand.hero}" alt="${esc(brand.name)} – produktová prezentácia" referrerpolicy="no-referrer" onerror="this.closest('[class*=visual],[class*=photo]')?.setAttribute('data-image-failed','true')">
-          <div class="cx-owner-visual-card"><span>${icons.spark}</span><div><small>4 krátke otázky</small><b>Od potreby ku konkrétnemu produktu.</b></div></div>
-        </div>
+        ${ownerFigures}
       </section>
       <section class="cx-owner-benefits cx-owner-offer" aria-label="Cena">
         <div class="cx-plan-summary"><span class="cx-plan-label">Cena</span><b class="cx-plan-badge">Prvý mesiac zdarma</b><p><em>potom</em><strong>247 €</strong><em>jednorazovo</em><i>+</i><strong>10 €</strong><em>mesačne</em></p></div>

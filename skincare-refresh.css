@@ -144,37 +144,45 @@
    5. Figures block (replaces the three-step path)
    ========================================================================== */
 
+/* The hero is two columns: what it is on the left, what it does on the right.
+   The product photograph that used to hold the right column said nothing the
+   headline did not already say. */
+.cx-owner-hero {
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr) !important;
+  align-items: center;
+}
 .cx-owner-figures {
-  max-width: 620px;
+  min-width: 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: clamp(14px, 2.2vh, 22px);
-  padding-top: clamp(11px, 1.7vh, 16px);
-  border-top: 1px solid var(--cx-line);
+  align-content: center;
+  gap: 0;
+  padding-left: clamp(24px, 3.4vw, 56px);
+  border-left: 1px solid var(--cx-line);
 }
 .cx-owner-figures > div {
   min-width: 0;
   display: grid;
-  align-content: start;
-  gap: 2px;
-  padding: 0 14px;
+  grid-template-columns: clamp(64px, 6vw, 92px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(10px, 1.2vw, 18px);
+  padding: clamp(11px, 1.8vh, 18px) 0;
 }
-.cx-owner-figures > div:first-child { padding-left: 0; }
-.cx-owner-figures > div + div { border-left: 1px solid color-mix(in srgb, var(--cx-line) 78%, transparent); }
+.cx-owner-figures > div + div { border-top: 1px solid color-mix(in srgb, var(--cx-line) 78%, transparent); }
 .cx-owner-figures strong {
   color: var(--cx-brand);
-  font-size: clamp(21px, 1.9vw, 27px);
+  font-size: clamp(26px, 2.6vw, 38px);
   font-weight: 850;
-  line-height: .95;
-  letter-spacing: -.045em;
+  line-height: .92;
+  letter-spacing: -.05em;
   font-variant-numeric: tabular-nums;
 }
-.cx-owner-figures b { display: block; margin-top: 4px; font-size: 12.5px; line-height: 1.18; letter-spacing: -.015em; }
+.cx-owner-figures b { display: block; font-size: clamp(13px, 1.1vw, 15.5px); line-height: 1.18; letter-spacing: -.018em; }
 .cx-owner-figures small {
   display: block;
+  margin-top: 4px;
   color: color-mix(in srgb, var(--cx-ink) 68%, transparent);
-  font-size: 10px;
-  line-height: 1.28;
+  font-size: 10.8px;
+  line-height: 1.3;
 }
 
 /* ==========================================================================
@@ -239,7 +247,8 @@
    third column of the offer was reading through them. The band now ends where
    that corner begins instead of running under it. */
 @media (min-width: 1100px) {
-  .cx-owner-offer { margin-right: 332px; }
+  .cx-owner-offer { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); width: min(100%, 62%); }
+  .cx-owner-offer > div:last-child { display: none; }
 }
 
 /* ==========================================================================
@@ -285,9 +294,9 @@
 /* Ponio's headline runs to four lines, which pushed the third figure under the
    offer band. The savings come from the spacing between blocks rather than
    from the headline, so the composition is unchanged. */
+/* With the figures in their own column the headline has the room it wants, and
+   the hero fills the band instead of floating in the middle of it. */
 .cx-owner-hero { padding: clamp(14px, 2.4vh, 25px) 0 clamp(12px, 2vh, 20px); }
-.cx-owner-copy h1 { font-size: clamp(40px, 4.1vw, 60px); }
-.cx-owner-copy p { margin-top: clamp(12px, 1.8vh, 17px); }
-.cx-owner-actions { margin-top: clamp(15px, 2.2vh, 22px); }
-.cx-owner-figures { margin-top: clamp(11px, 1.7vh, 18px); }
-.cx-owner-figures > div { padding: clamp(5px, .85vh, 9px) 0; }
+.cx-owner-copy h1 { font-size: clamp(42px, 4.6vw, 68px); max-width: 15ch; }
+.cx-owner-copy p { max-width: 46ch; margin-top: clamp(14px, 2vh, 20px); font-size: 15px; }
+.cx-owner-actions { margin-top: clamp(18px, 2.6vh, 26px); }
