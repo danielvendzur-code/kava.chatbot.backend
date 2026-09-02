@@ -145,50 +145,69 @@
    ========================================================================== */
 
 @media (min-width: 761px) {
-  /* The hero is two columns: what it is on the left, what it does on the right.
-     The product photograph that used to hold the right column said nothing the
-     headline did not already say. */
+  /* Copy on the left — headline, lead, the two buttons. The brand's own
+     photograph fills the right half and the three figures run under it as one
+     thin strip, so the left column reads as a page rather than a stack. */
   .cx-owner-hero {
-    grid-template-columns: minmax(0, 1.15fr) minmax(300px, .8fr) !important;
+    grid-template-columns: minmax(0, 1.02fr) minmax(340px, .86fr) !important;
     align-items: center;
+    padding: clamp(10px, 1.6vh, 16px) 0 clamp(8px, 1.2vh, 12px);
   }
-  .cx-owner-figures {
+  .cx-owner-copy h1 { font-size: clamp(32px, 3.3vw, 47px); max-width: 15ch; line-height: 1.02; }
+  .cx-owner-copy p { max-width: 44ch; margin-top: clamp(10px, 1.5vh, 15px); font-size: 14px; }
+  .cx-owner-actions { margin-top: clamp(14px, 2vh, 20px); }
+
+  .cx-owner-frame {
     min-width: 0;
+    align-self: stretch;
+    min-height: 0;
     display: grid;
-    align-content: center;
-    gap: 0;
-    padding: clamp(15px, 2.2vh, 22px) clamp(20px, 2.1vw, 28px);
-    border: 1px solid color-mix(in srgb, var(--cx-ink) 9%, transparent);
-    border-radius: 16px;
-    background: #fff;
-    box-shadow: 0 1px 2px rgba(18, 22, 20, .04), 0 12px 30px -22px rgba(18, 22, 20, .3);
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: clamp(9px, 1.3vh, 13px);
   }
-  .cx-owner-figures > div {
-    min-width: 0;
-    display: grid;
-    grid-template-columns: clamp(80px, 6.8vw, 104px) minmax(0, 1fr);
-    align-items: center;
-    gap: clamp(12px, 1.4vw, 18px);
-    padding: clamp(11px, 1.7vh, 16px) 0;
-  }
-  .cx-owner-figures > div + div { border-top: 1px solid color-mix(in srgb, var(--cx-ink) 12%, transparent); }
-  .cx-owner-figures strong {
-    color: var(--cx-accent);
-    font-size: clamp(26px, 2.4vw, 36px);
-    font-weight: 850;
-    line-height: .92;
-    letter-spacing: -.05em;
-    font-variant-numeric: tabular-nums;
-  }
-  .cx-owner-figures b { display: block; font-size: clamp(13px, 1.1vw, 15.5px); line-height: 1.18; letter-spacing: -.018em; }
-  .cx-owner-figures small {
-    display: block;
-    margin-top: 3px;
-    color: color-mix(in srgb, var(--cx-ink) 66%, transparent);
-    font-size: 10.6px;
-    line-height: 1.3;
-  }
+  .cx-owner-visual { min-height: 0; height: 100%; }
+  .cx-owner-visual img { width: 100%; height: 100%; object-fit: cover; }
 }
+
+/* The strip above the photograph: three figures on one line, the number and
+   its label side by side. It sits over the picture rather than under it —
+   below, it ran into the invitation fixed to the bottom-right corner. */
+.cx-owner-figures {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: baseline;
+  gap: clamp(8px, 1.1vw, 16px);
+  padding-bottom: clamp(7px, 1vh, 10px);
+  border-bottom: 1px solid var(--cx-line);
+}
+.cx-owner-figures > div {
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
+}
+.cx-owner-figures > div + div {
+  padding-left: clamp(8px, 1.1vw, 16px);
+  border-left: 1px solid color-mix(in srgb, var(--cx-line) 76%, transparent);
+}
+.cx-owner-figures strong {
+  color: var(--cx-brand);
+  font-size: clamp(15px, 1.3vw, 19px);
+  font-weight: 850;
+  line-height: 1;
+  letter-spacing: -.045em;
+  font-variant-numeric: tabular-nums;
+}
+.cx-owner-figures b {
+  min-width: 0;
+  font-size: 10.6px;
+  font-weight: 650;
+  line-height: 1.15;
+  letter-spacing: -.012em;
+  color: color-mix(in srgb, var(--cx-ink) 72%, transparent);
+}
+@media (max-width: 760px) { .cx-owner-figures { display: none; } }
 
 /* ==========================================================================
    6. Price column
@@ -252,10 +271,10 @@
    third column of the offer was reading through them. The band now ends where
    that corner begins instead of running under it. */
 @media (min-width: 1100px) {
-  .cx-owner-offer { width: min(100%, 40%); }
+  .cx-owner-offer { width: min(100%, 47%); }
 }
 .cx-owner-offer {
-  grid-template-columns: minmax(150px, .74fr) minmax(0, 1.26fr);
+  grid-template-columns: minmax(288px, 1fr) minmax(0, .86fr);
   align-items: start;
   border-radius: 16px;
   background: #fff;
@@ -301,29 +320,37 @@
   transform: scale(.92) !important;
   transition: none !important;
 }
-.cx-launcher-button .cx-wordmark--mylo,
-.cx-launcher-button .cx-wordmark--bellcoria { font-size: 23px !important; }
+.cx-launcher-button .cx-wordmark--mylo { font-size: 23px !important; }
+/* Nine letters, not four: at 23 px the disc cut the name to "Bellcori". */
+.cx-launcher-button .cx-wordmark--bellcoria { font-size: 13px !important; }
 .cx-launcher-button .cx-wordmark--anemone { font-size: 11px !important; }
 
 /* ==========================================================================
    9. Hero column has to hold the figures without clipping
    ========================================================================== */
 
-/* Ponio's headline runs to four lines, which pushed the third figure under the
-   offer band. The savings come from the spacing between blocks rather than
-   from the headline, so the composition is unchanged. */
-/* With the figures in their own column the headline has the room it wants, and
-   the hero fills the band instead of floating in the middle of it. */
-@media (min-width: 761px) {
-  .cx-owner-hero { padding: clamp(14px, 2.4vh, 25px) 0 clamp(12px, 2vh, 20px); }
-  .cx-owner-copy h1 { font-size: clamp(42px, 4.6vw, 68px); max-width: 15ch; }
-  .cx-owner-copy p { max-width: 46ch; margin-top: clamp(14px, 2vh, 20px); font-size: 15px; }
-  .cx-owner-actions { margin-top: clamp(18px, 2.6vh, 26px); }
-}
+/* The hero band is a fixed row between the header and the offer, so the copy
+   column — headline, lead, buttons and the three figures — has to end above
+   the price. Ponio's and Bellcoria's headlines are the long ones; the type
+   scale below is the one that holds all six inside the band. The rules live
+   in section 5 with the rest of the hero. */
 
-/* Each price keeps its own line so the unit never wraps away from the number. */
-.cx-plan-summary p { display: grid !important; gap: 3px !important; }
-.cx-plan-summary p > b { display: flex; align-items: baseline; gap: 5px; font-weight: inherit; }
+/* Both prices read as one line — the one-off and the monthly next to each
+   other, the way a price list on a shop reads. */
+.cx-plan-summary p {
+  display: flex !important;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  gap: 0 !important;
+}
+.cx-plan-summary p > b { display: flex; align-items: baseline; gap: 5px; font-weight: inherit; white-space: nowrap; }
+.cx-plan-summary p > b + b::before {
+  content: "·";
+  margin: 0 8px 0 7px;
+  color: color-mix(in srgb, var(--cx-ink) 34%, transparent);
+  font-size: 13px;
+  font-weight: 400;
+}
 /* `.cx-owner-benefits` also sits on the offer element and drew a rule between
    its columns. */
 .cx-owner-offer > div { border-right: 0 !important; border-left: 0 !important; }
@@ -435,57 +462,6 @@
 .cx-option.is-selected .cx-option-photo--mark { color: var(--cx-accent); }
 
 /* ==========================================================================
-   13. What customers ask
-   ========================================================================== */
-
-/* The hero's right column was one panel in the middle of a tall band, which
-   left the page looking unfinished. It carries what the advisor does and what
-   it answers, stacked, so the band is full. */
-@media (min-width: 761px) {
-  .cx-owner-side {
-    min-width: 0;
-    display: grid;
-    align-content: center;
-    gap: clamp(10px, 1.6vh, 16px);
-  }
-}
-.cx-owner-asks {
-  padding: clamp(14px, 2vh, 19px) clamp(20px, 2.1vw, 28px) clamp(15px, 2.2vh, 20px);
-  border: 1px solid color-mix(in srgb, var(--cx-ink) 9%, transparent);
-  border-radius: 16px;
-  background: #fff;
-  box-shadow: 0 1px 2px rgba(18, 22, 20, .04), 0 12px 30px -22px rgba(18, 22, 20, .3);
-}
-.cx-owner-asks h2 {
-  margin: 0 0 9px;
-  color: color-mix(in srgb, var(--cx-ink) 55%, transparent);
-  font-size: 9.5px;
-  font-weight: 850;
-  letter-spacing: .13em;
-  text-transform: uppercase;
-}
-.cx-owner-asks > div {
-  padding: 7px 0;
-  border-top: 1px solid color-mix(in srgb, var(--cx-ink) 10%, transparent);
-}
-.cx-owner-asks > div:first-of-type { border-top: 0; padding-top: 0; }
-.cx-owner-asks b {
-  display: block;
-  color: var(--cx-ink);
-  font-size: 12.5px;
-  line-height: 1.25;
-  letter-spacing: -.012em;
-}
-.cx-owner-asks small {
-  display: block;
-  margin-top: 2px;
-  color: color-mix(in srgb, var(--cx-ink) 66%, transparent);
-  font-size: 10.4px;
-  line-height: 1.35;
-}
-@media (max-width: 760px) { .cx-owner-asks { display: none; } }
-
-/* ==========================================================================
    15. Motion — a step should arrive, not appear
    ========================================================================== */
 
@@ -545,7 +521,6 @@
    16. Price — the number is the point
    ========================================================================== */
 
-.cx-owner-offer { grid-template-columns: minmax(212px, .86fr) minmax(0, 1.14fr); }
 .cx-owner-offer > div + div {
   border-left: 1px solid color-mix(in srgb, var(--cx-ink) 9%, transparent) !important;
 }
@@ -601,7 +576,6 @@
 /* A price is one word: the currency must not fall to the next line. */
 .cx-plan-summary p > b { flex-wrap: nowrap; white-space: nowrap; }
 .cx-plan-summary p > b strong { white-space: nowrap; }
-.cx-owner-offer { grid-template-columns: minmax(238px, .9fr) minmax(0, 1.1fr); }
 
 /* ==========================================================================
    17. The offer badge
@@ -612,24 +586,64 @@
 .cx-plan-badge {
   align-self: flex-start;
   margin: 0 0 2px;
-  padding: 5px 10px 5px 9px;
+  padding: 4px 10px;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
   border: 0;
   border-radius: 7px;
   background: var(--cx-accent);
   color: #fff;
-  font-size: 10.5px;
+  font-size: 9.8px;
   font-weight: 800;
   letter-spacing: .005em;
   box-shadow: 0 6px 14px -10px color-mix(in srgb, var(--cx-accent) 92%, #000);
 }
-.cx-plan-badge::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: currentColor;
-  opacity: .85;
+
+
+/* The side column carried the no-commitment line and is not shown on desktop;
+   the fact belongs next to the price it qualifies. */
+.cx-plan-note {
+  display: block;
+  color: color-mix(in srgb, var(--cx-ink) 48%, transparent);
+  font-size: 10px;
+  line-height: 1.35;
 }
+
+/* ==========================================================================
+   18. The price card reads like a price list
+   ========================================================================== */
+
+/* The label, the offer and the sum were four blocks stacked down a narrow
+   column with the height spread between them, which is what made the card read
+   as filler. The label and the sticker share the top line, both prices sit on
+   one line under it, and the note closes the block — three rows, centred. */
+.cx-plan-summary {
+  display: grid !important;
+  grid-template-columns: auto minmax(0, 1fr);
+  grid-template-areas: "label badge" "price price" "note  note";
+  align-content: center;
+  justify-content: start;
+  row-gap: clamp(9px, 1.3vh, 14px);
+  column-gap: 12px;
+}
+.cx-plan-label { grid-area: label; align-self: center; }
+.cx-plan-badge { grid-area: badge; justify-self: start; align-self: center; margin: 0 !important; }
+.cx-plan-summary p { grid-area: price; margin: 0 !important; }
+.cx-plan-note { grid-area: note; margin: 0 !important; }
+
+/* The check was a pale disc with a paler tick inside it. */
+.cx-plan-points span { align-items: center; gap: 9px; }
+.cx-plan-points svg {
+  width: 15px !important;
+  height: 15px !important;
+  flex: 0 0 15px !important;
+  padding: 3px;
+  border-radius: 50%;
+  color: #fff !important;
+  background: var(--cx-brand);
+  opacity: 1 !important;
+}
+
+/* The sum needs the room; the benefits take what is left. */
+.cx-owner-offer { grid-template-columns: max-content minmax(0, 1fr) !important; }
+@media (min-width: 1100px) { .cx-owner-offer { width: max-content; max-width: min(100%, 56%); } }

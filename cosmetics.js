@@ -56,51 +56,12 @@
 
   const CHIPS = ['Mám suchú pleť', 'Pleť sa mi mastí', 'Niečo na citlivú pleť', 'Chcem jednoduchú rutinu'];
 
-  /* Each of these questions is answered from one tag. A brand whose catalogue
-     carries no product for that tag would be answered with its first product,
-     so a small catalogue named the same jar three times; those questions are
-     left out rather than repeated. */
-  const ASK_TAGS = [['Mám suchú pleť', 'dry'], ['Pleť sa mi mastí', 'oily'],
-                    ['Niečo na citlivú pleť', 'sensitive'], ['Zrelá pleť a vrásky', 'mature']];
-
-  const askable = () => {
-    const used = new Set();
-    const picked = [];
-    for (const [question, tag] of ASK_TAGS) {
-      // Take the first product carrying the tag that another question has not
-      // already taken, rather than dropping the question outright: Bellcoria's
-      // opuntia oil carries dry, sensitive and mature at once.
-      const product = brand.products.find((item) => item.tags.includes(tag) && !used.has(item.id));
-      if (!product) continue;
-      used.add(product.id);
-      picked.push({ question, product });
-      if (picked.length === 3) break;
-    }
-    return picked;
-  };
-
-  /* The questions are the ones the widget itself offers, and the answers are
-     what it actually replies — the page shows the product, not a claim about
-     it. First sentence only: the rest is in the conversation. */
-  const firstSentence = (text) => {
-    const trimmed = String(text).trim();
-    const end = trimmed.search(/(?<=[.!?])\s/);
-    return end === -1 ? trimmed : trimmed.slice(0, end + 1).trim();
-  };
-
-  const ownerAsks = () => askable().length < 2 ? '' : `
-    <aside class="cx-owner-asks" aria-label="Na čo poradca odpovie">
-      <h2>Na čo sa zákazníci pýtajú</h2>
-      ${askable().map(({ question, product }) => `
-        <div><b>${esc(question)}</b><small>${esc(firstSentence(product.reason))}</small></div>`).join('')}
-    </aside>`;
-
   const ownerFigures = `
-    <aside class="cx-owner-figures" aria-label="Čo poradca robí">
-      <div><strong>24/7</strong><div><b>chat odpovedá</b><small>zloženie · pleť · rutina · konkrétne produkty</small></div></div>
-      <div><strong>4</strong><div><b>krátke otázky</b><small>pleť · priorita · rutina · textúra</small></div></div>
-      <div><strong>1</strong><div><b>odporúčanie</b><small>konkrétny produkt + dôvod, prečo sedí</small></div></div>
-    </aside>`;
+    <div class="cx-owner-figures" aria-label="Čo poradca robí">
+      <div><strong>24/7</strong><b>chat odpovedá</b></div>
+      <div><strong>4</strong><b>krátke otázky</b></div>
+      <div><strong>1</strong><b>odporúčanie</b></div>
+    </div>`;
 
   root.innerHTML = `
     <main class="cx-owner">
@@ -118,11 +79,16 @@
             <button type="button" data-open="chat" class="is-secondary">Skúsiť chat ${icons.chat}</button>
           </div>
         </div>
-        <div class="cx-owner-side">${ownerFigures}${ownerAsks()}</div>
+        <div class="cx-owner-frame">
+          ${ownerFigures}
+          <div class="cx-owner-visual">
+            <img src="${brand.hero}" alt="${esc(brand.name)} – produktová prezentácia" referrerpolicy="no-referrer" onerror="this.closest('.cx-owner-visual')?.setAttribute('data-image-failed','true')">
+          </div>
+        </div>
       </section>
       <section class="cx-owner-benefits cx-owner-offer" aria-label="Cena">
-        <div class="cx-plan-summary"><span class="cx-plan-label">Cena</span><b class="cx-plan-badge">${esc(TRIAL)}</b><p><b><em>potom</em><strong>247 €</strong><em>jednorazovo</em></b><b><i>+</i><strong>10 €</strong><em>mesačne</em></b></p></div>
-        <div class="cx-plan-points"><span>${icons.check} Váš katalóg je pripravený už pri spustení</span><span>${icons.check} História konverzácií — vidíte, na čo sa pýtajú</span><span>${icons.check} Nasadenie na web jedným riadkom kódu</span></div>
+        <div class="cx-plan-summary"><span class="cx-plan-label">Cena</span><b class="cx-plan-badge">${esc(TRIAL)}</b><p><b><strong>247 €</strong><em>jednorazovo</em></b><b><strong>10 €</strong><em>mesačne</em></b></p><small class="cx-plan-note">Bez viazanosti, vypnúť sa dá kedykoľvek.</small></div>
+        <div class="cx-plan-points"><span>${icons.check} Váš katalóg pripravený pri spustení</span><span>${icons.check} História konverzácií</span><span>${icons.check} Nasadenie jedným riadkom kódu</span></div>
         <div class="cx-plan-cta"><small>Po prvom bezplatnom mesiaci. Bez viazanosti, vypnúť sa dá kedykoľvek.</small><a href="${esc(contactHref())}" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a></div>
       </section>
       <footer class="cx-owner-foot"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a><span>Ukážka riešenia pre ${esc(brand.name)}</span></footer>

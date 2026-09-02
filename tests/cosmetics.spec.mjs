@@ -53,7 +53,7 @@ test('all six cosmetics demos have a branded owner presentation that sells the s
     await expect(owner.locator('.cx-owner-offer')).toContainText('Prvý mesiac zdarma');
     await expect(owner.locator('.cx-owner-offer')).toContainText('247 €');
     await expect(owner.locator('.cx-owner-offer')).toContainText('10 €');
-    await expect(owner.locator('.cx-owner-offer')).toContainText('Nasadenie na web jedným riadkom kódu');
+    await expect(owner.locator('.cx-owner-offer')).toContainText('Nasadenie jedným riadkom kódu');
     await expect(owner.locator('.cx-owner-figures strong').first()).toHaveText('24/7');
     const text=await owner.innerText();
     expect(text).not.toMatch(/umelá inteligencia|AI demo|match\s*%|zhoda\s*%/i);

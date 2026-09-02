@@ -137,7 +137,7 @@ test('all six owner pages explain the free month, recurring price and one-line i
     await expect(page.locator('.mcb-plan-trial')).toHaveText('1. mesiac zdarma');
     await expect(page.locator('.mcb-plan-price')).toContainText('247 €');
     await expect(page.locator('.mcb-plan-price')).toContainText('10 €');
-    await expect(page.locator('.mcb-plan')).toContainText('Nasadenie na web jedným riadkom kódu');
+    await expect(page.locator('.mcb-plan')).toContainText('Nasadenie jedným riadkom kódu');
     await expect(page.locator('.mcb-pricing-side')).toContainText('Bez viazanosti');
   }
 });

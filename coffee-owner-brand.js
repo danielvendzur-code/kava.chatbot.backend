@@ -46,13 +46,12 @@
     // Change here to switch the offer; the skincare copy reads the same words.
     trial: 'Prvý mesiac zdarma',
     points: [
-      'Odpovie na otázky a dovedie zákazníka ku káve',
-      'Váš katalóg je pripravený už pri spustení',
-      'História konverzácií — vidíte, na čo sa pýtajú',
-      'Nasadenie na web jedným riadkom kódu'
+      'Váš katalóg pripravený pri spustení',
+      'História konverzácií',
+      'Nasadenie jedným riadkom kódu'
     ],
-    addon: 'Napojenie na košík e-shopu na požiadanie, za príplatok.',
-    note: 'Po prvom bezplatnom mesiaci. Bez viazanosti, vypnúť sa dá kedykoľvek.'
+    addon: 'Napojenie na košík e-shopu za príplatok.',
+    note: 'Bez viazanosti, vypnúť sa dá kedykoľvek.'
   };
 
   /* ------------------------------------------------------------------ data */
@@ -72,6 +71,7 @@
       lockup: '<img src="/brand/praziarnicka-logo-official.png" alt="Pražiarnička">',
       theme: { ink: '#143f35', brand: '#1c5b4b', accent: '#c25a2b', soft: '#edf6f2', paper: '#ffffff' },
       chips: ['Káva do automatu', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
+      hero: '/assets/praziarnicka/official-paganini.jpg',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
 
@@ -83,6 +83,7 @@
       lockup: '<img src="/assets/diamonds/diroastery-logo.svg" alt="Diamonds Roastery">',
       theme: { ink: '#0b0d0c', brand: '#0b0d0c', accent: '#6f8f19', soft: '#f2f6e8', paper: '#ffffff' },
       chips: ['Káva na filter', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
+      hero: '/assets/diamonds/kenya-mugaya-official.jpg',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
 
@@ -96,6 +97,7 @@
       theme: { ink: '#111111', brand: '#111111', accent: '#3d7d97', soft: '#f2ede4', paper: '#fcfbf8' },
       display: { family: 'Georgia, "Times New Roman", serif', weight: '400', tracking: '-.03em' },
       chips: ['Espresso blend', 'Niečo na filter', 'Nechcem kyslú', 'Chcem ovocnú'],
+      hero: '/assets/kaffa/mokka-hero.webp',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
 
@@ -107,6 +109,7 @@
       lockup: '<img src="/assets/vitazov-logo.svg" alt="Káva Víťazov">',
       theme: { ink: '#071f1a', brand: '#0c4438', accent: '#5f8a1f', soft: '#eef7e2', paper: '#ffffff' },
       chips: ['Káva do kancelárie', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
+      hero: '/assets/vitazov-office.jpeg',
       figures: commonFigures('použitie · chuť · príprava · nápoj')
     },
 
@@ -119,6 +122,7 @@
       lockup: '<img src="/brand/concept-official-logo.png" alt="Concept Coffee Roasters">',
       theme: { ink: '#1a1b19', brand: '#2c4038', accent: '#b8503c', soft: '#f4efe7', paper: '#fbfaf6' },
       chips: ['Káva na filter', 'Nie veľmi kyslú', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
+      hero: '/assets/concept/product-yellow-sunset.jpg',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
     },
 
@@ -131,24 +135,19 @@
       theme: { ink: '#23180f', brand: '#5e4834', accent: '#a8763f', soft: '#f3ece3', paper: '#fdfaf6' },
       display: { family: '"Playfair Display", Georgia, serif', weight: '600', tracking: '-.02em' },
       chips: ['Nízka acidita', 'Káva do mlieka', 'Odkiaľ je káva?', 'Porovnajte dve kávy'],
+      hero: '/assets/jolka/hero-bags.webp',
       figures: commonFigures('príprava · chuť · nápoj · acidita')
     }
   };
 
   const HEADING = 'Kávový poradca na váš web.';
-  const LEAD = 'Chat odpovie na otázky o pôvode, chuti, príprave aj konkrétnych kávach z vašej ponuky. ' +
-    'Keď zákazník nevie, čo vybrať, cez štyri krátke otázky sa dostane k jednému konkrétnemu odporúčaniu aj s dôvodom.';
+  const LEAD = 'Chat odpovie na otázku o pôvode aj chuti. Výber kávy cez štyri otázky ' +
+    'skončí pri jednej konkrétnej káve aj s dôvodom, prečo sedí.';
 
   const brand = BRANDS[slug];
 
   // Published so the widget-side modules can reuse the same brand facts.
   window.__MCB_BRAND__ = { slug, ...brand };
-
-  const firstSentence = (text) => {
-    const trimmed = String(text).trim();
-    const end = trimmed.search(/(?<=[.!?])\s/);
-    return end === -1 ? trimmed : trimmed.slice(0, end + 1).trim();
-  };
 
   /* ---------------------------------------------------------- contact link */
 
@@ -169,11 +168,11 @@
       <span class="mcb-plan-label">Cena</span>
       <b class="mcb-plan-trial">${esc(PRICING.trial)}</b>
       <p class="mcb-plan-price">
-        <b><em>potom</em><strong>${esc(PRICING.setup)}&nbsp;${esc(PRICING.currency)}</strong><span>jednorazovo</span></b>
-        <b><i>+</i><strong>${esc(PRICING.monthly)}&nbsp;${esc(PRICING.currency)}</strong><span>mesačne</span></b>
+        <b><strong>${esc(PRICING.setup)}&nbsp;${esc(PRICING.currency)}</strong><span>jednorazovo</span></b>
+        <b><strong>${esc(PRICING.monthly)}&nbsp;${esc(PRICING.currency)}</strong><span>mesačne</span></b>
       </p>
       <ul>${PRICING.points.map((point) => `<li>${icons.check}<span>${esc(point)}</span></li>`).join('')}</ul>
-      ${PRICING.addon ? `<p class="mcb-plan-addon">${esc(PRICING.addon)}</p>` : ''}
+      <p class="mcb-plan-addon">${esc(PRICING.note)}${PRICING.addon ? ` ${esc(PRICING.addon)}` : ''}</p>
     </article>`;
 
   const markup = () => {
@@ -196,25 +195,23 @@
           <button class="mcb-btn" type="button" data-release-open="advisor">Otvoriť poradcu ${icons.arrow}</button>
           <button class="mcb-btn mcb-btn--ghost" type="button" data-release-open="chat">Skúsiť chat ${icons.chat}</button>
         </div>
+
       </section>
 
-      <div class="mcb-side">
-      <section class="mcb-figures" aria-label="Čo poradca robí">
-        <ul>
-          ${brand.figures.map(([value, name, note], i) => `
-            <li style="--i:${i}">
-              <strong>${esc(value)}</strong>
-              <b>${esc(name)}</b>
-              <small>${esc(note)}</small>
-            </li>`).join('')}
-        </ul>
-      </section>
-      ${(window.__COFFEE_ASKS__ || []).length < 2 ? '' : `
-      <section class="mcb-asks" aria-label="Na čo poradca odpovie">
-        <h2>Na čo sa zákazníci pýtajú</h2>
-        ${(window.__COFFEE_ASKS__ || []).map(({ question, answer }) => `
-          <div><b>${esc(question)}</b><small>${esc(firstSentence(answer))}</small></div>`).join('')}
-      </section>`}
+      <div class="mcb-frame">
+        <section class="mcb-figures" aria-label="Čo poradca robí">
+          <ul>
+            ${brand.figures.map(([value, name], i) => `
+              <li style="--i:${i}">
+                <strong>${esc(value)}</strong>
+                <b>${esc(name)}</b>
+              </li>`).join('')}
+          </ul>
+        </section>
+        <div class="mcb-visual">
+          <img src="${esc(brand.hero)}" alt="${esc(brand.name)} – produktová prezentácia" referrerpolicy="no-referrer"
+               onerror="this.closest('.mcb-visual')?.setAttribute('data-image-failed','true')">
+        </div>
       </div>
 
     </main>

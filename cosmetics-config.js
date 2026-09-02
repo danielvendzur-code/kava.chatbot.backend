@@ -68,7 +68,7 @@
       theme:{brand:'#8d5b4d',accent:'#d6a08c',soft:'#f4e8df',paper:'#fffaf6',ink:'#3e2f2b',line:'#e6d5cc'},
       wordmark:'<span class="cx-wordmark cx-wordmark--ponio">ponio</span>',
       hero:'/assets/cosmetics/ponio.webp',
-      ownerTitle:'Pomôžte zákazníkovi nájsť jednoduchú rutinu bez zbytočného hľadania.',
+      ownerTitle:'Nájdite zákazníkovi jednoduchú rutinu za štyri otázky.',
       ownerText:'Poradca prepojí otázky zákazníka s krátkym výberom a pošle ho rovno na vhodný produkt.',
       benefit:['Menej váhania v katalógu','Výber podľa reálnej potreby','Konkrétny produkt na konci'],
       products:[
@@ -83,7 +83,7 @@
       theme:{brand:'#101010',accent:'#e6a85f',soft:'#f4efe6',paper:'#ffffff',ink:'#101010',line:'#dedede'},
       wordmark:'<span class="cx-wordmark cx-wordmark--two">two</span>',
       hero:'/assets/cosmetics/two.webp',
-      ownerTitle:'Z veľkého výberu urobte zákazníkovi štyri jednoduché rozhodnutia.',
+      ownerTitle:'Z veľkého výberu urobte štyri jednoduché rozhodnutia.',
       ownerText:'Chat vysvetlí rozdiely. Výber starostlivosti spojí typ pleti, prioritu a preferovanú textúru s konkrétnym produktom.',
       benefit:['Menej filtrovania kategórií','Zrozumiteľný výber pre každého','Produkt podľa potrieb pleti'],
       products:[
@@ -98,7 +98,7 @@
       theme:{brand:'#6d5539',accent:'#c58b52',soft:'#f3eee4',paper:'#fffdf8',ink:'#30281f',line:'#e3d8c8'},
       wordmark:'<span class="cx-wordmark cx-wordmark--bellcoria">Bellcoria</span>',
       hero:'/assets/cosmetics/bellcoria.webp',
-      ownerTitle:'Premeňte filtre podľa typu pokožky na krátky výber, ktorému každý rozumie.',
+      ownerTitle:'Filtre podľa typu pokožky nahraďte krátkym výberom.',
       ownerText:'Zákazník nemusí poznať kategórie ani zložky. Odpovie na štyri jednoduché otázky a dostane konkrétny smer.',
       benefit:['Jednoduchšie než filtre','Menej opakovaných otázok','Preklik na konkrétny produkt'],
       products:[
@@ -113,7 +113,7 @@
       theme:{brand:'#33483c',accent:'#839f74',soft:'#edf2e9',paper:'#fbfdf9',ink:'#253129',line:'#d4dfd0'},
       wordmark:'<span class="cx-wordmark cx-wordmark--biofy">BIOFY</span>',
       hero:'/assets/cosmetics/biofy.webp',
-      ownerTitle:'Pomôžte zákazníkovi dostať sa k správnemu krému bez preklikávania kategórií.',
+      ownerTitle:'Doveďte zákazníka k správnemu krému bez preklikávania.',
       ownerText:'Výber starostlivosti zjednoduší rozdiely medzi typmi pleti. Chat odpovie na otázky, ktoré by inak smerovali na podporu.',
       benefit:['Rýchlejší výber krému','Menej neistoty pred nákupom','Odporúčanie s dôvodom'],
       products:[
@@ -128,7 +128,7 @@
       theme:{brand:'#536575',accent:'#9faeb8',soft:'#edf1f3',paper:'#fbfcfc',ink:'#26333c',line:'#d8e0e4'},
       wordmark:'<span class="cx-wordmark cx-wordmark--anemone">ANEMONE</span>',
       hero:'/assets/cosmetics/anemone.webp',
-      ownerTitle:'Dajte malému e-shopu veľký rozdiel v tom, ako ľahko sa zákazník rozhodne.',
+      ownerTitle:'Malému e-shopu dá veľký rozdiel jedno dobré odporúčanie.',
       ownerText:'Namiesto prezerania každej kategórie dostane zákazník krátky výber a konkrétny produkt. Chat zostáva po ruke na bežné otázky.',
       benefit:['Ľahký výber aj pre nového zákazníka','Viac priestoru pre lokálnu značku','Priama cesta k nákupu'],
       products:[

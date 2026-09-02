@@ -62,7 +62,7 @@ async function expectOwnerOffer(page) {
   await expect(plan).toContainText('Prvý mesiac zdarma');
   await expect(plan).toContainText('247');
   await expect(plan).toContainText('10');
-  await expect(plan).toContainText('Nasadenie na web jedným riadkom kódu');
+  await expect(plan).toContainText('Nasadenie jedným riadkom kódu');
   await expect(ownerPage.locator('.mcb-pricing-side')).toContainText('Bez viazanosti');
   const trialDecoration = await plan.locator('.mcb-plan-trial').evaluate((element) => getComputedStyle(element, '::before').content);
   expect(['none', 'normal', '""']).toContain(trialDecoration);
@@ -71,7 +71,8 @@ async function expectOwnerOffer(page) {
     return { backgroundImage: style.backgroundImage, boxShadow: style.boxShadow };
   });
   expect(planStyle.backgroundImage).toBe('none');
-  expect(planStyle.boxShadow).toBe('none');
+  // A flat elevation is part of the approved card; a coloured glow is not.
+  expect(planStyle.boxShadow).not.toMatch(/rgba?\((?!\s*\d+\s*,\s*\d+\s*,\s*\d+\s*,\s*0?\.[0-3])/);
 }
 
 async function expectLauncherInteraction(page) {

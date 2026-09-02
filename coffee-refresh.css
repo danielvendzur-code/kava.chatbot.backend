@@ -15,39 +15,94 @@
    ========================================================================== */
 
 .mcb-page .mcb-figures {
-  border-left: 0 !important;
-  padding-left: 0 !important;
+  min-width: 0;
+  border: 0 !important;
+  padding: 0 0 clamp(7px, 1vh, 10px) !important;
+  margin: 0 !important;
+  border-bottom: 1px solid color-mix(in srgb, var(--mcb-ink) 13%, transparent) !important;
+  background: none !important;
 }
 .mcb-page .mcb-figures ul {
-  padding: clamp(15px, 2.2vh, 22px) clamp(20px, 2.1vw, 28px) !important;
-  border: 1px solid color-mix(in srgb, var(--mcb-ink) 9%, transparent) !important;
-  border-radius: 16px !important;
-  background: #fff !important;
-  box-shadow: 0 1px 2px rgba(18, 22, 20, .04), 0 12px 30px -22px rgba(18, 22, 20, .32) !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  align-items: baseline !important;
+  gap: clamp(8px, 1.1vw, 16px) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+  list-style: none !important;
 }
 .mcb-page .mcb-figures li {
-  grid-template-columns: clamp(86px, 7.4vw, 108px) minmax(0, 1fr) !important;
-  column-gap: clamp(12px, 1.4vw, 18px) !important;
-  padding: clamp(11px, 1.7vh, 16px) 0 !important;
+  min-width: 0;
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 7px !important;
+  padding: 0 !important;
+  border: 0 !important;
 }
 .mcb-page .mcb-figures li + li {
-  border-top: 1px solid color-mix(in srgb, var(--mcb-ink) 12%, transparent) !important;
+  padding-left: clamp(8px, 1.1vw, 16px) !important;
+  border-left: 1px solid color-mix(in srgb, var(--mcb-ink) 11%, transparent) !important;
+  border-top: 0 !important;
 }
 .mcb-page .mcb-figures strong {
   color: var(--mcb-accent) !important;
-  font-size: clamp(26px, 2.4vw, 36px) !important;
-  font-weight: 800 !important;
-  letter-spacing: -.05em !important;
+  font-size: clamp(15px, 1.3vw, 19px) !important;
+  font-weight: 850 !important;
+  line-height: 1 !important;
+  letter-spacing: -.045em !important;
+  font-variant-numeric: tabular-nums;
 }
-.mcb-page .mcb-figures b { font-size: clamp(13px, 1.1vw, 15.5px) !important; }
-.mcb-page .mcb-figures small { color: color-mix(in srgb, var(--mcb-ink) 66%, transparent) !important; }
+.mcb-page .mcb-figures b {
+  min-width: 0;
+  font-size: 10.6px !important;
+  font-weight: 650 !important;
+  line-height: 1.15 !important;
+  letter-spacing: -.012em !important;
+  color: color-mix(in srgb, var(--mcb-ink) 72%, transparent) !important;
+}
+
+/* The brand's own product photograph fills the right half, the way the
+   skincare pages carry theirs, with the three figures as one thin strip above
+   it. Below the picture the strip ran into the invitation fixed to the
+   bottom-right corner. */
+.mcb-page .mcb-frame {
+  min-width: 0;
+  align-self: stretch;
+  min-height: 0;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  gap: clamp(9px, 1.3vh, 13px);
+}
+.mcb-page .mcb-visual {
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid color-mix(in srgb, var(--mcb-ink) 9%, transparent);
+  background: color-mix(in srgb, var(--mcb-soft) 58%, #fff);
+}
+.mcb-page .mcb-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.mcb-page .mcb-visual[data-image-failed] { display: none; }
 
 /* ==========================================================================
    2. Hero — fill the band
    ========================================================================== */
 
-.mcb-page .mcb-copy h1 { font-size: clamp(34px, 4.4vw, 62px); max-width: 15ch; }
-.mcb-page .mcb-lead { max-width: 46ch; font-size: 15px; line-height: 1.5; }
+.mcb-page .mcb-copy h1 { font-size: clamp(32px, 3.3vw, 47px); max-width: 15ch; line-height: 1.02; }
+.mcb-page .mcb-lead { max-width: 44ch; margin-top: clamp(10px, 1.5vh, 15px); font-size: 14px; line-height: 1.5; }
+.mcb-page .mcb-actions { margin-top: clamp(14px, 2vh, 20px); }
+@media (max-width: 1080px) { .mcb-page .mcb-frame { display: none; } }
+@media (max-width: 760px) { .mcb-page .mcb-figures { display: none !important; } }
 
 /* ==========================================================================
    3. Price — a panel on the left half
@@ -55,7 +110,7 @@
 
 .mcb-page .mcb-pricing {
   grid-template-columns: minmax(0, 1fr) !important;
-  width: min(100%, 40%);
+  width: min(100%, 44%);
   gap: 0 !important;
   padding-top: clamp(10px, 1.4vh, 16px) !important;
   border-top: 0 !important;
@@ -77,8 +132,7 @@
   box-shadow: 0 1px 2px rgba(18, 22, 20, .04), 0 14px 34px -24px rgba(18, 22, 20, .34) !important;
 }
 .mcb-page .mcb-plan-label {
-  grid-area: price;
-  align-self: start;
+  grid-area: label;
   color: color-mix(in srgb, var(--mcb-ink) 58%, transparent);
   font-size: 9.5px;
   font-weight: 850;
@@ -122,6 +176,7 @@
 .mcb-page .mcb-plan-after { display: none !important; }
 .mcb-page .mcb-plan ul {
   grid-area: points;
+  align-self: center;
   grid-template-columns: minmax(0, 1fr) !important;
   gap: 5px !important;
   align-self: center;
@@ -212,56 +267,6 @@
 }
 
 /* ==========================================================================
-   7. What customers ask
-   ========================================================================== */
-
-/* The right column held one block in the middle of a tall band, which left the
-   page reading as unfinished. It now carries what the advisor answers under
-   what it does, so the band is full and the page says something concrete. */
-.mcb-page .mcb-side {
-  min-width: 0;
-  display: grid;
-  align-content: center;
-  gap: clamp(10px, 1.6vh, 16px);
-}
-.mcb-page .mcb-asks {
-  min-width: 0;
-  padding: clamp(14px, 2vh, 19px) clamp(20px, 2.1vw, 28px) clamp(15px, 2.2vh, 20px);
-  border: 1px solid color-mix(in srgb, var(--mcb-ink) 9%, transparent);
-  border-radius: 16px;
-  background: #fff;
-  box-shadow: 0 1px 2px rgba(18, 22, 20, .04), 0 12px 30px -22px rgba(18, 22, 20, .3);
-}
-.mcb-page .mcb-asks h2 {
-  margin: 0 0 9px;
-  color: color-mix(in srgb, var(--mcb-ink) 55%, transparent);
-  font-size: 9.5px;
-  font-weight: 850;
-  letter-spacing: .13em;
-  text-transform: uppercase;
-}
-.mcb-page .mcb-asks > div {
-  padding: 7px 0;
-  border-top: 1px solid color-mix(in srgb, var(--mcb-ink) 10%, transparent);
-}
-.mcb-page .mcb-asks > div:first-of-type { border-top: 0; padding-top: 0; }
-.mcb-page .mcb-asks b {
-  display: block;
-  font-size: 12.5px;
-  line-height: 1.25;
-  letter-spacing: -.012em;
-}
-.mcb-page .mcb-asks small {
-  display: block;
-  margin-top: 2px;
-  color: color-mix(in srgb, var(--mcb-ink) 66%, transparent);
-  font-size: 10.4px;
-  line-height: 1.35;
-}
-@media (max-width: 1080px) { .mcb-page .mcb-side { display: none; } }
-
-
-/* ==========================================================================
    8. Price — the number is the point
    ========================================================================== */
 
@@ -270,8 +275,9 @@
    quiet above, the sum large and in tabular figures, the term beside it rather
    than under it, what is included behind a rule. */
 .mcb-page .mcb-plan {
-  grid-template-columns: minmax(232px, .86fr) minmax(0, 1.14fr) !important;
-  grid-template-areas: "price points" "price addon" !important;
+  grid-template-columns: minmax(206px, .8fr) minmax(0, 1.2fr) !important;
+  grid-template-areas: "label points" "trial points" "price points" "addon addon" !important;
+  align-items: start !important;
   column-gap: clamp(24px, 2.8vw, 44px) !important;
 }
 .mcb-page .mcb-plan-label {
@@ -331,7 +337,73 @@
 /* A price is one word: the currency must not fall to the next line. */
 .mcb-page .mcb-plan-price > b { flex-wrap: nowrap; white-space: nowrap; }
 .mcb-page .mcb-plan-price > b strong { white-space: nowrap; }
-.mcb-page .mcb-plan { grid-template-columns: minmax(252px, .9fr) minmax(0, 1.1fr) !important; }
+
+/* ==========================================================================
+   9. The price card reads like a price list
+   ========================================================================== */
+
+/* The label, the offer and the sum were three blocks down a narrow column with
+   the height spread between them, which is what made the card read as filler.
+   The label and the sticker share the top line, both prices sit on one line
+   under it, and what is included stays behind the rule. */
+.mcb-page .mcb-plan {
+  grid-template-columns: max-content minmax(0, 1fr) !important;
+  grid-template-areas: "label points" "price points" "addon addon" !important;
+  align-content: center !important;
+  row-gap: clamp(9px, 1.3vh, 14px) !important;
+}
+.mcb-page .mcb-plan-label {
+  grid-area: label;
+  align-self: center;
+  justify-self: start;
+}
+/* The sticker rides on the label's line rather than taking one of its own. */
+.mcb-page .mcb-plan-trial {
+  grid-area: label;
+  justify-self: start;
+  align-self: center;
+  margin: 0 0 0 calc(4ch + 12px) !important;
+  padding: 4px 10px !important;
+  border: 0 !important;
+  border-radius: 7px !important;
+  background: var(--mcb-accent) !important;
+  color: #fff !important;
+  font-size: 9.8px !important;
+  box-shadow: 0 6px 14px -10px color-mix(in srgb, var(--mcb-accent) 92%, #000) !important;
+}
+.mcb-page .mcb-plan-price {
+  grid-area: price;
+  display: flex !important;
+  align-items: baseline !important;
+  flex-wrap: nowrap !important;
+  margin: 0 !important;
+  gap: 0 !important;
+}
+.mcb-page .mcb-plan-price > b + b::before {
+  content: "·";
+  margin: 0 8px 0 7px;
+  color: color-mix(in srgb, var(--mcb-ink) 34%, transparent);
+  font-size: 13px;
+  font-weight: 400;
+}
+.mcb-page .mcb-plan-addon { grid-area: addon; margin: 0 !important; }
+
+/* The check was a pale tick with no weight behind it. */
+.mcb-page .mcb-plan li { align-items: center !important; gap: 9px !important; }
+.mcb-page .mcb-plan li svg {
+  width: 15px !important;
+  height: 15px !important;
+  flex: 0 0 15px !important;
+  padding: 3px;
+  border-radius: 50%;
+  color: #fff !important;
+  background: var(--mcb-brand);
+  opacity: 1 !important;
+}
+
+/* The sum needs the room; what is included takes what is left. */
+.mcb-page .mcb-pricing { width: max-content !important; max-width: min(100%, 56%) !important; }
+
 
 /* ==========================================================================
    9. The offer badge
@@ -341,10 +413,9 @@
    accent, small and tight, sitting directly above the sum it applies to. */
 .mcb-page .mcb-plan-trial {
   margin-top: 13px;
-  padding: 5px 10px 5px 9px;
+  padding: 5px 11px;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
   border: 0;
   border-radius: 7px;
   background: var(--mcb-accent);
@@ -354,11 +425,48 @@
   letter-spacing: .005em;
   box-shadow: 0 6px 14px -10px color-mix(in srgb, var(--mcb-accent) 92%, #000);
 }
-.mcb-page .mcb-plan-trial::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: currentColor;
-  opacity: .85;
+
+
+/* The note moved into the card. Squeezed into the right column it wrapped to
+   six lines and stretched the card over the hero; it runs across the foot of
+   the card instead. */
+.mcb-page .mcb-plan-addon {
+  grid-area: addon;
+  margin: clamp(11px, 1.6vh, 15px) 0 0 !important;
+  padding-top: clamp(10px, 1.5vh, 14px) !important;
+  border-top: 1px solid color-mix(in srgb, var(--mcb-ink) 9%, transparent) !important;
+  color: color-mix(in srgb, var(--mcb-ink) 46%, transparent) !important;
+  font-size: 10px !important;
+  line-height: 1.4 !important;
+}
+
+/* ==========================================================================
+   10. Motion — parity with the skincare steps
+   ========================================================================== */
+
+/* The answers already staggered in, but the progress switched colour in one
+   frame and the check appeared under the pointer, which is what made a step
+   read as a jump on this side too. */
+.progress i::before,
+.progress i > b { transition: none; }
+.progress i {
+  background-image: linear-gradient(var(--kraft), var(--kraft));
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size .42s cubic-bezier(.22, 1, .36, 1);
+}
+.progress i.is-active,
+.progress i.is-done { background-size: 100% 100% !important; }
+
+.option__mark {
+  transform: scale(.4);
+  opacity: 0;
+  transition: transform .22s cubic-bezier(.22, 1, .36, 1), opacity .16s ease,
+              background-color .18s ease, color .18s ease;
+}
+.option.is-selected .option__mark { transform: none; opacity: 1; }
+.option.is-dimmed { opacity: .45; }
+
+@media (prefers-reduced-motion: reduce) {
+  .progress i, .option__mark, .option { transition: none !important; animation: none !important; }
 }
