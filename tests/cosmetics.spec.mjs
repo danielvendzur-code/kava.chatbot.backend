@@ -61,7 +61,7 @@ test('all six cosmetics demos keep the Codex owner composition and calm pricing'
     }));
     expect(visualStyle.blur === 'none' || visualStyle.blur === '',slug).toBeTruthy();
     expect(visualStyle.overlay,slug).toBe('none');
-    expect(await owner.locator('.cx-owner-visual > img').evaluate(image => image.complete && image.naturalWidth > 0)).toBeTruthy();
+    await expect.poll(() => owner.locator('.cx-owner-visual > img').evaluate(image => image.complete && image.naturalWidth > 0), { timeout:5000 }).toBeTruthy();
     const text=await owner.innerText();
     expect(text).not.toMatch(/umelá inteligencia|AI demo|match\s*%|zhoda\s*%/i);
     const metrics=await pageMetrics(page);
@@ -111,6 +111,8 @@ test('launcher and chips change state without radial fill animation on all brand
     expect(after.bg,slug).not.toBe(before.bg);
 
     await page.locator('[data-open="chat"]').click();
+    await expect(page.locator('#cx-widget')).toHaveClass(/is-open/);
+    await capture(page,`artifacts/cosmetics-${slug}-widget-desktop.png`);
     const chip=page.locator('.cx-chip').first();
     const chipBefore=await chip.evaluate(node=>({bg:getComputedStyle(node).backgroundColor,border:getComputedStyle(node).borderColor,image:getComputedStyle(node).backgroundImage}));
     expect(chipBefore.image,slug).toBe('none');
@@ -165,7 +167,7 @@ test('every cosmetics advisor keeps four photographic no-scroll steps with stabl
       expect(metrics.ok,`${slug} step ${step+1}: ${JSON.stringify(metrics)}`).toBeTruthy();
       const options=page.locator('.cx-option');
       await expect(options).toHaveCount(4);
-      expect(await options.locator('img').evaluateAll(images=>images.every(image=>image.complete&&image.naturalWidth>0)),slug).toBeTruthy();
+      await expect.poll(() => options.locator('img').evaluateAll(images=>images.every(image=>image.complete&&image.naturalWidth>0)), { timeout:5000 }).toBeTruthy();
       const image=options.first().locator('img');
       const before=await image.evaluate(node=>({transform:getComputedStyle(node).transform,filter:getComputedStyle(node).filter}));
       await options.first().hover();
