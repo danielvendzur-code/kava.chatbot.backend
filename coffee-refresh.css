@@ -19,10 +19,11 @@
   padding-left: 0 !important;
 }
 .mcb-page .mcb-figures ul {
-  padding: clamp(12px, 1.9vh, 18px) clamp(16px, 1.8vw, 24px) !important;
-  border: 1px solid var(--mcb-line) !important;
-  border-radius: 4px !important;
+  padding: clamp(15px, 2.2vh, 22px) clamp(20px, 2.1vw, 28px) !important;
+  border: 1px solid color-mix(in srgb, var(--mcb-ink) 9%, transparent) !important;
+  border-radius: 16px !important;
   background: #fff !important;
+  box-shadow: 0 1px 2px rgba(18, 22, 20, .04), 0 12px 30px -22px rgba(18, 22, 20, .32) !important;
 }
 .mcb-page .mcb-figures li {
   grid-template-columns: clamp(86px, 7.4vw, 108px) minmax(0, 1fr) !important;
@@ -69,10 +70,11 @@
   column-gap: clamp(18px, 2.2vw, 30px) !important;
   row-gap: 6px !important;
   align-items: start !important;
-  padding: clamp(12px, 1.9vh, 18px) clamp(14px, 1.6vw, 20px) !important;
-  border: 1px solid var(--mcb-line) !important;
-  border-radius: 4px !important;
+  padding: clamp(17px, 2.5vh, 24px) clamp(20px, 2.1vw, 28px) !important;
+  border: 1px solid color-mix(in srgb, var(--mcb-ink) 9%, transparent) !important;
+  border-radius: 16px !important;
   background: #fff !important;
+  box-shadow: 0 1px 2px rgba(18, 22, 20, .04), 0 14px 34px -24px rgba(18, 22, 20, .34) !important;
 }
 .mcb-page .mcb-plan-label {
   grid-area: price;
@@ -224,10 +226,11 @@
 }
 .mcb-page .mcb-asks {
   min-width: 0;
-  padding: clamp(11px, 1.7vh, 16px) clamp(16px, 1.8vw, 24px) clamp(13px, 1.9vh, 18px);
-  border: 1px solid var(--mcb-line);
-  border-radius: 4px;
+  padding: clamp(14px, 2vh, 19px) clamp(20px, 2.1vw, 28px) clamp(15px, 2.2vh, 20px);
+  border: 1px solid color-mix(in srgb, var(--mcb-ink) 9%, transparent);
+  border-radius: 16px;
   background: #fff;
+  box-shadow: 0 1px 2px rgba(18, 22, 20, .04), 0 12px 30px -22px rgba(18, 22, 20, .3);
 }
 .mcb-page .mcb-asks h2 {
   margin: 0 0 9px;
@@ -257,58 +260,105 @@
 }
 @media (max-width: 1080px) { .mcb-page .mcb-side { display: none; } }
 
+
 /* ==========================================================================
-   8. Price — a framed block, set rather than typed
+   8. Price — the number is the point
    ========================================================================== */
 
-/* A hairline box with everything at one size read as a placeholder. The block
-   is anchored by a rule in the brand ink, the two halves are separated instead
-   of floating, and the figures carry the weight: tabular numerals at a size
-   that makes them the thing you read first, units small and muted beside them. */
+/* A hairline box with a coral blob and 15 px figures read as a form field. The
+   card is set the way a price is set anywhere it is taken seriously: the label
+   quiet above, the sum large and in tabular figures, the term beside it rather
+   than under it, what is included behind a rule. */
 .mcb-page .mcb-plan {
-  border-top: 2px solid var(--mcb-brand) !important;
-  border-radius: 0 !important;
-  column-gap: 0 !important;
-}
-.mcb-page .mcb-plan ul {
-  padding-left: clamp(18px, 2.2vw, 30px) !important;
-  border-left: 1px solid var(--mcb-line);
+  grid-template-columns: minmax(232px, .86fr) minmax(0, 1.14fr) !important;
+  grid-template-areas: "price points" "price addon" !important;
+  column-gap: clamp(24px, 2.8vw, 44px) !important;
 }
 .mcb-page .mcb-plan-label {
-  color: var(--mcb-brand);
-  font-size: 9px;
-  letter-spacing: .18em;
+  color: color-mix(in srgb, var(--mcb-ink) 46%, transparent);
+  font-size: 9.5px;
+  font-weight: 800;
+  letter-spacing: .16em;
 }
+/* Accent as a tint, not a slab: the free month is an offer, not a warning. */
 .mcb-page .mcb-plan-trial {
   margin-top: 15px;
-  padding: 6px 12px;
-  border-radius: 2px;
-  font-size: 11px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--mcb-accent) 34%, transparent);
+  background: color-mix(in srgb, var(--mcb-accent) 11%, #fff);
+  color: color-mix(in srgb, var(--mcb-accent) 88%, #000);
+  font-size: 10.5px;
+  font-weight: 800;
   letter-spacing: .005em;
   transform: none;
   box-shadow: none;
 }
 .mcb-page .mcb-plan-price {
-  margin-top: 46px !important;
-  gap: 1px !important;
+  margin-top: 47px !important;
+  gap: 2px !important;
   font-variant-numeric: tabular-nums;
 }
-.mcb-page .mcb-plan-price > b { align-items: baseline; gap: 6px; }
+.mcb-page .mcb-plan-price > b { align-items: baseline; gap: 7px; }
+.mcb-page .mcb-plan-price > b:first-child strong {
+  font-size: clamp(27px, 2.5vw, 34px) !important;
+  line-height: 1;
+}
 .mcb-page .mcb-plan-price strong {
-  font-size: 19px !important;
-  font-weight: 800 !important;
-  letter-spacing: -.035em !important;
+  font-size: 17px !important;
+  font-weight: 750 !important;
+  letter-spacing: -.04em !important;
   color: var(--mcb-ink) !important;
 }
 .mcb-page .mcb-plan-price em,
 .mcb-page .mcb-plan-price span {
-  font-size: 10px !important;
+  font-size: 10.5px !important;
   font-weight: 600;
-  letter-spacing: .02em;
-  color: color-mix(in srgb, var(--mcb-ink) 52%, transparent) !important;
+  letter-spacing: .015em;
+  color: color-mix(in srgb, var(--mcb-ink) 50%, transparent) !important;
 }
 .mcb-page .mcb-plan-price i {
   font-size: 13px !important;
-  color: color-mix(in srgb, var(--mcb-ink) 38%, transparent) !important;
+  color: color-mix(in srgb, var(--mcb-ink) 34%, transparent) !important;
 }
-.mcb-page .mcb-plan li svg { color: var(--mcb-brand) !important; }
+.mcb-page .mcb-plan ul {
+  padding-left: clamp(24px, 2.8vw, 44px) !important;
+  border-left: 1px solid color-mix(in srgb, var(--mcb-ink) 9%, transparent);
+}
+.mcb-page .mcb-plan li { font-size: 11px !important; line-height: 1.45 !important; }
+.mcb-page .mcb-plan li svg { color: var(--mcb-accent) !important; opacity: .9; }
+
+/* A price is one word: the currency must not fall to the next line. */
+.mcb-page .mcb-plan-price > b { flex-wrap: nowrap; white-space: nowrap; }
+.mcb-page .mcb-plan-price > b strong { white-space: nowrap; }
+.mcb-page .mcb-plan { grid-template-columns: minmax(252px, .9fr) minmax(0, 1.1fr) !important; }
+
+/* ==========================================================================
+   9. The offer badge
+   ========================================================================== */
+
+/* A pale outline pill read as a disabled control rather than an offer. Solid
+   accent, small and tight, sitting directly above the sum it applies to. */
+.mcb-page .mcb-plan-trial {
+  margin-top: 13px;
+  padding: 5px 10px 5px 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--mcb-accent);
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .005em;
+  box-shadow: 0 6px 14px -10px color-mix(in srgb, var(--mcb-accent) 92%, #000);
+}
+.mcb-page .mcb-plan-trial::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: .85;
+}

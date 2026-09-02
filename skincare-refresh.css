@@ -157,10 +157,11 @@
     display: grid;
     align-content: center;
     gap: 0;
-    padding: clamp(12px, 1.9vh, 18px) clamp(16px, 1.8vw, 24px);
-    border: 1px solid var(--cx-line);
-    border-radius: 4px;
+    padding: clamp(15px, 2.2vh, 22px) clamp(20px, 2.1vw, 28px);
+    border: 1px solid color-mix(in srgb, var(--cx-ink) 9%, transparent);
+    border-radius: 16px;
     background: #fff;
+    box-shadow: 0 1px 2px rgba(18, 22, 20, .04), 0 12px 30px -22px rgba(18, 22, 20, .3);
   }
   .cx-owner-figures > div {
     min-width: 0;
@@ -256,10 +257,11 @@
 .cx-owner-offer {
   grid-template-columns: minmax(150px, .74fr) minmax(0, 1.26fr);
   align-items: start;
-  border-radius: 4px;
+  border-radius: 16px;
   background: #fff;
+  box-shadow: 0 1px 2px rgba(18, 22, 20, .04), 0 14px 34px -24px rgba(18, 22, 20, .32);
 }
-.cx-owner-offer > div { padding: clamp(12px, 1.9vh, 18px) clamp(13px, 1.5vw, 19px); }
+.cx-owner-offer > div { padding: clamp(17px, 2.5vh, 24px) clamp(20px, 2.1vw, 28px); }
 .cx-owner-offer > div + div { border-left: 0; }
 /* The note repeats the sticker and the header already carries the same call to
    action, so the corner is left to the launcher. */
@@ -448,10 +450,11 @@
   }
 }
 .cx-owner-asks {
-  padding: clamp(11px, 1.7vh, 16px) clamp(16px, 1.8vw, 24px) clamp(13px, 1.9vh, 18px);
-  border: 1px solid var(--cx-line);
-  border-radius: 4px;
+  padding: clamp(14px, 2vh, 19px) clamp(20px, 2.1vw, 28px) clamp(15px, 2.2vh, 20px);
+  border: 1px solid color-mix(in srgb, var(--cx-ink) 9%, transparent);
+  border-radius: 16px;
   background: #fff;
+  box-shadow: 0 1px 2px rgba(18, 22, 20, .04), 0 12px 30px -22px rgba(18, 22, 20, .3);
 }
 .cx-owner-asks h2 {
   margin: 0 0 9px;
@@ -483,40 +486,150 @@
 @media (max-width: 760px) { .cx-owner-asks { display: none; } }
 
 /* ==========================================================================
-   14. Price — a framed block, set rather than typed
+   15. Motion — a step should arrive, not appear
    ========================================================================== */
 
-.cx-owner-offer {
-  border-top: 2px solid var(--cx-brand) !important;
-  border-radius: 0 !important;
+/* The four answers were written into the panel in one go and the progress bar
+   changed colour in the same frame, so a step read as a jump. The answers come
+   in one after another, the step that is leaving steps aside first, and the
+   progress fills rather than switches. */
+.cx-advisor-body {
+  transition: opacity .19s ease, transform .19s ease;
 }
-.cx-owner-offer > div + div { border-left: 1px solid var(--cx-line) !important; }
-.cx-plan-label { color: var(--cx-brand); font-size: 9px !important; letter-spacing: .18em; }
+.cx-advisor-body.is-leaving {
+  opacity: 0;
+  transform: translateX(-12px);
+}
+
+.cx-option {
+  opacity: 0;
+  animation: cx-option-in .34s cubic-bezier(.22, 1, .36, 1) both;
+  animation-delay: var(--cx-reveal, 0ms);
+}
+@keyframes cx-option-in {
+  from { opacity: 0; transform: translateY(9px) scale(.985); }
+  to { opacity: 1; transform: none; }
+}
+
+/* The mark is present from the start so it can grow into place instead of
+   being inserted under the pointer. */
+.cx-option > i {
+  transform: scale(.4);
+  opacity: 0;
+  transition: transform .22s cubic-bezier(.22, 1, .36, 1), opacity .16s ease,
+              background-color .18s ease, color .18s ease;
+}
+.cx-option.is-selected > i {
+  transform: none;
+  opacity: 1;
+  background: var(--cx-accent) !important;
+  color: #fff !important;
+}
+.cx-option[disabled]:not(.is-selected) { opacity: .45; }
+.cx-option { transition: transform .16s ease, border-color .16s ease, box-shadow .16s ease, opacity .2s ease; }
+
+/* A bar that fills reads as progress; one that changes colour reads as a jump. */
+.cx-progress > div i {
+  background-image: linear-gradient(var(--cx-accent), var(--cx-accent));
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background-size .42s cubic-bezier(.22, 1, .36, 1);
+}
+.cx-progress > div i.is-on { background-size: 100% 100% !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .cx-option, .cx-advisor-body, .cx-progress > div i { animation: none !important; transition: none !important; opacity: 1; }
+}
+
+/* ==========================================================================
+   16. Price — the number is the point
+   ========================================================================== */
+
+.cx-owner-offer { grid-template-columns: minmax(212px, .86fr) minmax(0, 1.14fr); }
+.cx-owner-offer > div + div {
+  border-left: 1px solid color-mix(in srgb, var(--cx-ink) 9%, transparent) !important;
+}
+.cx-plan-label {
+  color: color-mix(in srgb, var(--cx-ink) 46%, transparent);
+  font-size: 9.5px !important;
+  font-weight: 800 !important;
+  letter-spacing: .16em;
+}
+/* Accent as a tint, not a slab: the free month is an offer, not a warning. */
 .cx-plan-badge {
-  margin-top: 2px;
-  padding: 6px 12px;
-  border-radius: 2px;
-  font-size: 11px;
+  margin-top: 1px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--cx-accent) 34%, transparent);
+  background: color-mix(in srgb, var(--cx-accent) 11%, #fff);
+  color: color-mix(in srgb, var(--cx-accent) 88%, #000);
+  font-size: 10.5px;
   letter-spacing: .005em;
   transform: none;
   box-shadow: none;
 }
-.cx-plan-summary p { margin-top: 4px !important; font-variant-numeric: tabular-nums; }
-.cx-plan-summary p > b { align-items: baseline; gap: 6px; }
+.cx-plan-summary p { margin-top: 5px !important; font-variant-numeric: tabular-nums; }
+.cx-plan-summary p > b { align-items: baseline; gap: 7px; }
+.cx-plan-summary p > b:first-child strong {
+  font-size: clamp(27px, 2.5vw, 34px) !important;
+  line-height: 1;
+}
 .cx-plan-summary strong {
-  font-size: 19px !important;
-  font-weight: 800 !important;
-  letter-spacing: -.035em !important;
+  font-size: 17px !important;
+  font-weight: 750 !important;
+  letter-spacing: -.04em !important;
   color: var(--cx-ink) !important;
 }
 .cx-plan-summary em {
-  font-size: 10px !important;
+  font-size: 10.5px !important;
   font-weight: 600;
-  letter-spacing: .02em;
-  color: color-mix(in srgb, var(--cx-ink) 52%, transparent) !important;
+  letter-spacing: .015em;
+  color: color-mix(in srgb, var(--cx-ink) 50%, transparent) !important;
 }
-.cx-plan-summary i { font-size: 13px; color: color-mix(in srgb, var(--cx-ink) 38%, transparent); }
-.cx-plan-points svg { color: var(--cx-brand) !important; }
+.cx-plan-summary i { font-size: 13px; color: color-mix(in srgb, var(--cx-ink) 34%, transparent); }
+.cx-plan-points span { font-size: 11px; line-height: 1.45; }
+.cx-plan-points svg { color: var(--cx-accent) !important; opacity: .9; }
 @media (max-width: 760px) {
-  .cx-owner-offer > div + div { border-left: 0 !important; border-top: 1px solid var(--cx-line) !important; }
+  .cx-owner-offer > div + div { border-left: 0 !important; border-top: 1px solid color-mix(in srgb, var(--cx-ink) 9%, transparent) !important; }
+}
+
+/* The offer row was fixed at 126 px, which was enough for 15 px figures and is
+   not enough for the price the card is now built around. */
+.cx-owner { grid-template-rows: 72px minmax(0, 1fr) auto 40px; }
+@media (max-width: 760px) { .cx-owner { grid-template-rows: 64px minmax(0, 1fr) auto 32px !important; } }
+
+/* A price is one word: the currency must not fall to the next line. */
+.cx-plan-summary p > b { flex-wrap: nowrap; white-space: nowrap; }
+.cx-plan-summary p > b strong { white-space: nowrap; }
+.cx-owner-offer { grid-template-columns: minmax(238px, .9fr) minmax(0, 1.1fr); }
+
+/* ==========================================================================
+   17. The offer badge
+   ========================================================================== */
+
+/* A pale outline pill read as a disabled control rather than an offer. Solid
+   accent, small and tight, sitting directly above the sum it applies to. */
+.cx-plan-badge {
+  align-self: flex-start;
+  margin: 0 0 2px;
+  padding: 5px 10px 5px 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--cx-accent);
+  color: #fff;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: .005em;
+  box-shadow: 0 6px 14px -10px color-mix(in srgb, var(--cx-accent) 92%, #000);
+}
+.cx-plan-badge::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: .85;
 }

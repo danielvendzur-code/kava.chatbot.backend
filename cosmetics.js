@@ -51,6 +51,9 @@
     demo: location.href
   })}`;
 
+  // Change here to switch the offer; the coffee copy reads the same words.
+  const TRIAL = 'Prvý mesiac zdarma';
+
   const CHIPS = ['Mám suchú pleť', 'Pleť sa mi mastí', 'Niečo na citlivú pleť', 'Chcem jednoduchú rutinu'];
 
   /* Each of these questions is answered from one tag. A brand whose catalogue
@@ -118,7 +121,7 @@
         <div class="cx-owner-side">${ownerFigures}${ownerAsks()}</div>
       </section>
       <section class="cx-owner-benefits cx-owner-offer" aria-label="Cena">
-        <div class="cx-plan-summary"><span class="cx-plan-label">Cena</span><b class="cx-plan-badge">Prvý mesiac zdarma</b><p><b><em>potom</em><strong>247 €</strong><em>jednorazovo</em></b><b><i>+</i><strong>10 €</strong><em>mesačne</em></b></p></div>
+        <div class="cx-plan-summary"><span class="cx-plan-label">Cena</span><b class="cx-plan-badge">${esc(TRIAL)}</b><p><b><em>potom</em><strong>247 €</strong><em>jednorazovo</em></b><b><i>+</i><strong>10 €</strong><em>mesačne</em></b></p></div>
         <div class="cx-plan-points"><span>${icons.check} Váš katalóg je pripravený už pri spustení</span><span>${icons.check} História konverzácií — vidíte, na čo sa pýtajú</span><span>${icons.check} Nasadenie na web jedným riadkom kódu</span></div>
         <div class="cx-plan-cta"><small>Po prvom bezplatnom mesiaci. Bez viazanosti, vypnúť sa dá kedykoľvek.</small><a href="${esc(contactHref())}" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a></div>
       </section>
@@ -278,16 +281,29 @@
         <header class="cx-progress"><button id="cx-back" type="button" ${state.step===0?'disabled':''}>${icons.back}<span>Späť</span></button><div>${questions.map((_,index)=>`<i class="${index<=state.step?'is-on':''}"></i>`).join('')}</div><b>${state.step+1}/4</b></header>
         <div class="cx-advisor-body">
           <span class="cx-kicker">${esc(question.kicker)}</span><h2>${esc(question.title)}</h2>
-          <div class="cx-options">${question.options.map((option)=>`<button class="cx-option ${selected===option.value?'is-selected':''}" data-value="${option.value}" type="button" aria-pressed="${selected===option.value}"><span class="cx-option-photo${optionMarks[option.value]?' cx-option-photo--mark':''}">${optionMarks[option.value] || `<img src="${option.image}" alt="" referrerpolicy="no-referrer" loading="lazy" onerror="this.closest('.cx-option-photo')?.setAttribute('data-image-failed','true')">`}</span><span class="cx-option-copy"><b>${esc(option.title)}</b><small>${esc(option.text)}</small></span><i>${selected===option.value?icons.check:''}</i></button>`).join('')}</div>
+          <div class="cx-options">${question.options.map((option,index)=>`<button style="--cx-reveal:${index*70}ms" class="cx-option ${selected===option.value?'is-selected':''}" data-value="${option.value}" type="button" aria-pressed="${selected===option.value}"><span class="cx-option-photo${optionMarks[option.value]?' cx-option-photo--mark':''}">${optionMarks[option.value] || `<img src="${option.image}" alt="" referrerpolicy="no-referrer" loading="lazy" onerror="this.closest('.cx-option-photo')?.setAttribute('data-image-failed','true')">`}</span><span class="cx-option-copy"><b>${esc(option.title)}</b><small>${esc(option.text)}</small></span><i>${icons.check}</i></button>`).join('')}</div>
         </div>
       </section>`;
-    stage.querySelector('#cx-back')?.addEventListener('click',()=>{ if(state.step>0&&!state.transitioning){state.step-=1;renderAdvisor();} });
+    stage.querySelector('#cx-back')?.addEventListener('click',()=>{
+      if(state.step===0||state.transitioning) return;
+      state.transitioning=true;
+      stage.querySelector('.cx-advisor-body')?.classList.add('is-leaving');
+      setTimeout(()=>{state.step-=1;state.transitioning=false;renderAdvisor();},190);
+    });
     stage.querySelectorAll('.cx-option').forEach((button)=>button.addEventListener('click',()=>{
       if(state.transitioning) return;
       state.transitioning=true;
       state.answers[question.key]=button.dataset.value;
       stage.querySelectorAll('.cx-option').forEach((item)=>{const on=item===button;item.classList.toggle('is-selected',on);item.setAttribute('aria-pressed',String(on));item.disabled=true;});
-      setTimeout(()=>{ if(state.step<questions.length-1){state.step+=1;state.transitioning=false;renderAdvisor();} else {chooseResult();state.transitioning=false;renderResult();} },220);
+      // Hold on the confirmed answer, then leave and enter. Replacing the
+      // markup outright is what made a step look like it jumped.
+      setTimeout(()=>{
+        stage.querySelector('.cx-advisor-body')?.classList.add('is-leaving');
+        setTimeout(()=>{
+          if(state.step<questions.length-1){state.step+=1;state.transitioning=false;renderAdvisor();}
+          else {chooseResult();state.transitioning=false;renderResult();}
+        },190);
+      },340);
     }));
   }
 

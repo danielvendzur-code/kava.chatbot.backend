@@ -43,6 +43,7 @@
     currency: '€',
     setup: '247',
     monthly: '10',
+    // Change here to switch the offer; the skincare copy reads the same words.
     trial: 'Prvý mesiac zdarma',
     points: [
       'Odpovie na otázky a dovedie zákazníka ku káve',
