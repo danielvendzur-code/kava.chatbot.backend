@@ -20,20 +20,22 @@
 
 body.kaffa-clean :is(.widget__brand > img,.msg__avatar img,.launcher__button img) { object-fit:contain; }
 body.kaffa-clean .widget__brand > img {
-  width:82px !important;
-  min-width:82px !important;
-  max-width:82px !important;
-  height:34px !important;
+  width:112px !important;
+  min-width:112px !important;
+  max-width:112px !important;
+  height:40px !important;
   filter:brightness(0) invert(1);
 }
+body.kaffa-clean .widget__brand b { display:none; }
+body.kaffa-clean .widget__brand > div { display:flex; align-items:center; }
 body.kaffa-clean .msg__avatar img {
   width:30px !important;
   height:30px !important;
   filter:brightness(0) invert(1);
 }
 body.kaffa-clean .launcher__button img {
-  width:50px;
-  height:50px;
+  width:54px !important;
+  height:54px !important;
   filter:brightness(0) invert(1);
 }
 body.kaffa-clean .launcher__button { --launcher-fill:#5fc2d6; }
