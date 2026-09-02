@@ -20,21 +20,21 @@
 
 body.concept-clean :is(.widget__brand > img,.msg__avatar img,.launcher__button img) { object-fit:contain; }
 body.concept-clean .widget__brand > img {
-  width:54px !important;
-  min-width:54px !important;
-  max-width:54px !important;
-  height:38px !important;
+  width:94px !important;
+  min-width:94px !important;
+  max-width:94px !important;
+  height:40px !important;
   filter:brightness(0) invert(1);
 }
-body.concept-clean .msg__avatar img {
-  filter:brightness(0) invert(1);
-}
+body.concept-clean .widget__brand b { display:none; }
+body.concept-clean .widget__brand > div { display:flex; align-items:center; }
+body.concept-clean .msg__avatar img { filter:brightness(0) invert(1); }
 body.concept-clean .launcher__button img {
-  width:48px;
-  height:48px;
-  filter:brightness(0) saturate(100%) invert(43%) sepia(82%) saturate(1793%) hue-rotate(344deg) brightness(91%) contrast(86%);
+  width:56px !important;
+  height:56px !important;
+  filter:brightness(0) invert(1);
 }
 body.concept-clean .launcher__button { --launcher-fill:#d85d2c; }
 @media (hover:hover) and (pointer:fine) {
-  body.concept-clean .launcher__button:hover img { filter:brightness(0) invert(1); }
+  body.concept-clean .launcher__button:hover img { filter:brightness(0); }
 }
