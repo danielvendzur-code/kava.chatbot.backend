@@ -198,3 +198,13 @@
    page is on the right. */
 .mcb-page .mcb-foot { justify-content: space-between !important; }
 .mcb-page .mcb-foot span { color: color-mix(in srgb, var(--mcb-ink) 50%, transparent); }
+
+/* ==========================================================================
+   6. Phones
+   ========================================================================== */
+
+/* The invitation is anchored to the bottom-right corner, which on a phone is
+   on top of the price. The bubble alone is enough there. */
+@media (max-width: 760px) {
+  .launcher__teaser { display: none !important; }
+}
