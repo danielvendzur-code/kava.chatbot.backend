@@ -38,23 +38,28 @@ async function noOverflow(locator, tolerance=3) {
   }), tolerance);
 }
 
-test('all six cosmetics demos have a branded owner presentation that sells the solution', async ({ page }) => {
+test('all six cosmetics demos keep branded owner presentation and shared commercial offer', async ({ page }) => {
   test.setTimeout(60000);
   for (const slug of demos) {
-    await openDemo(page,slug,{width:1366,height:768},1900);
+    await openDemo(page,slug,{width:1366,height:768},350);
     const owner=page.locator('.cx-owner');
     await expect(owner).toBeVisible();
     await expect(owner.locator('.cx-owner-brand .cx-wordmark')).toBeVisible();
     await expect(owner.locator('[data-open="advisor"]')).toBeVisible();
     await expect(owner.locator('[data-open="chat"]')).toBeVisible();
     await expect(owner.locator('.cx-owner-path > div')).toHaveCount(3);
-    await expect(owner.locator('.cx-owner-benefits > div')).toHaveCount(3);
+    await expect(owner.locator('.cx-owner-offer > div')).toHaveCount(3);
     await expect(owner.locator('.cx-owner-contact[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
+    await expect(owner.locator('.cx-owner-kicker')).toHaveText('PRODUKTOVÝ PORADCA NA VÁŠ WEB');
     await expect(owner.locator('.cx-owner-offer')).toContainText('Prvý mesiac zdarma');
     await expect(owner.locator('.cx-owner-offer')).toContainText('247 €');
     await expect(owner.locator('.cx-owner-offer')).toContainText('10 €');
     await expect(owner.locator('.cx-owner-offer')).toContainText('Nasadenie na web jedným riadkom kódu');
     expect(await owner.locator('.cx-owner-visual > img').evaluate(image => image.complete && image.naturalWidth > 0)).toBeTruthy();
+    const pricingDot = await owner.locator('.cx-plan-summary > span').evaluate(node => getComputedStyle(node,'::before').content);
+    expect(['none','normal','""'].includes(pricingDot),slug).toBeTruthy();
+    const visualCardBlur = await owner.locator('.cx-owner-visual-card').evaluate(node => getComputedStyle(node).backdropFilter || getComputedStyle(node).webkitBackdropFilter || 'none');
+    expect(visualCardBlur,slug).toBe('none');
     const text=await owner.innerText();
     expect(text).not.toMatch(/umelá inteligencia|AI demo|match\s*%|zhoda\s*%/i);
     expect(text.length).toBeLessThan(1250);
@@ -68,7 +73,7 @@ test('all six cosmetics demos have a branded owner presentation that sells the s
 test('all six owner presentations fit mobile and keep the important actions visible', async ({ page }) => {
   test.setTimeout(60000);
   for (const slug of demos) {
-    await openDemo(page,slug,{width:390,height:844},1900);
+    await openDemo(page,slug,{width:390,height:844},350);
     await expect(page.locator('.cx-owner-brand')).toBeVisible();
     await expect(page.locator('.cx-owner-contact')).toBeVisible();
     await expect(page.locator('[data-open="advisor"]')).toBeVisible();
@@ -84,15 +89,22 @@ test('all six owner presentations fit mobile and keep the important actions visi
   }
 });
 
-test('initial chat is simple, readable and removes selection clutter after the first message', async ({ page }) => {
+test('initial chat keeps Codex layout but uses calm chips, clean status and coffee-like preview copy', async ({ page }) => {
   for (const slug of demos) {
     await openDemo(page,slug,{width:390,height:844});
+    await expect(page.locator('#cx-teaser b')).toHaveText('Neviete, čo vybrať?');
+    await expect(page.locator('#cx-teaser span')).toHaveText('4 otázky · jedno odporúčanie');
     await page.locator('#cx-open').click();
     const widget=page.locator('#cx-widget');
     await expect(widget).toHaveClass(/is-open/);
     await expect(page.locator('.cx-mode button')).toHaveCount(2);
     await expect(page.locator('.cx-mode button').first()).toHaveAttribute('data-mode','advisor');
     await expect(page.locator('.cx-chip')).toHaveCount(4);
+    await expect(page.locator('.cx-widget-brand > span')).toHaveText('Online poradca');
+    const statusStyle=await page.locator('.cx-widget-brand > span').evaluate(node=>({border:getComputedStyle(node).borderLeftWidth,padding:getComputedStyle(node).paddingLeft}));
+    expect(statusStyle.border,slug).toBe('0px');
+    expect(parseFloat(statusStyle.padding),slug).toBeLessThanOrEqual(1);
+
     const entry=page.locator('.cx-advisor-entry');
     const welcome=page.locator('.cx-message--assistant .cx-bubble').first();
     await expect(entry).toBeVisible();
@@ -108,15 +120,24 @@ test('initial chat is simple, readable and removes selection clutter after the f
     expect(chipHeight,slug).toBeGreaterThanOrEqual(39);
     expect(chipFont,slug).toBeGreaterThanOrEqual(10.4);
     expect(bubbleFont,slug).toBeGreaterThanOrEqual(12.5);
-    await page.locator('.cx-chip').first().hover();
-    await page.waitForTimeout(1180);
-    const hoverStyle=await page.locator('.cx-chip').first().evaluate(node=>({size:getComputedStyle(node).backgroundSize,position:getComputedStyle(node).backgroundPosition,color:getComputedStyle(node).color,image:getComputedStyle(node).backgroundImage}));
-    expect(hoverStyle.size,slug).toBe('250% 250%');
-    expect(hoverStyle.position,slug).toBe('50% 50%');
-    expect(hoverStyle.color,slug).toBe('rgb(255, 255, 255)');
-    expect(hoverStyle.image,slug).toContain('radial-gradient');
+
+    const chip=page.locator('.cx-chip').first();
+    const before=await chip.evaluate(node=>({border:getComputedStyle(node).borderColor,bg:getComputedStyle(node).backgroundColor}));
+    await chip.hover();
+    await page.waitForTimeout(220);
+    const hoverStyle=await chip.evaluate(node=>({
+      image:getComputedStyle(node).backgroundImage,
+      color:getComputedStyle(node).color,
+      border:getComputedStyle(node).borderColor,
+      bg:getComputedStyle(node).backgroundColor
+    }));
+    expect(hoverStyle.image,slug).toBe('none');
+    expect(hoverStyle.color,slug).not.toBe('rgb(255, 255, 255)');
+    expect(hoverStyle.border,slug).not.toBe(before.border);
+    expect(hoverStyle.bg,slug).not.toBe(before.bg);
+
     await capture(page,`artifacts/cosmetics-${slug}-chat-mobile.png`);
-    await page.locator('.cx-chip').first().click();
+    await chip.click();
     await expect(page.locator('.cx-message--user')).toHaveCount(1);
     await expect(page.locator('.cx-advisor-entry')).toHaveCount(0);
     await expect(page.locator('.cx-chip')).toHaveCount(0);
@@ -124,7 +145,7 @@ test('initial chat is simple, readable and removes selection clutter after the f
   }
 });
 
-test('every cosmetics advisor is four photographic no-scroll steps and ends on a real product', async ({ page }) => {
+test('every cosmetics advisor preserves four photographic no-scroll steps and stable images', async ({ page }) => {
   test.setTimeout(60000);
   for (const slug of demos) {
     await openDemo(page,slug,{width:390,height:844});
@@ -145,6 +166,12 @@ test('every cosmetics advisor is four photographic no-scroll steps and ends on a
       const imageCount=await options.locator('img').count();
       expect(imageCount,slug).toBe(4);
       expect(await options.locator('img').evaluateAll(images=>images.every(image=>image.complete&&image.naturalWidth>0)),slug).toBeTruthy();
+      const transformBefore=await options.first().locator('img').evaluate(img=>getComputedStyle(img).transform);
+      await options.first().hover();
+      await page.waitForTimeout(180);
+      const transformAfter=await options.first().locator('img').evaluate(img=>getComputedStyle(img).transform);
+      expect(transformBefore,slug).toBe('none');
+      expect(transformAfter,slug).toBe('none');
       const h=await options.first().evaluate(n=>n.getBoundingClientRect().height);
       expect(h,slug).toBeGreaterThanOrEqual(105);
       if(step===0) await capture(page,`artifacts/cosmetics-${slug}-advisor-mobile.png`);
@@ -164,7 +191,7 @@ test('every cosmetics advisor is four photographic no-scroll steps and ends on a
   }
 });
 
-test('brand systems are not just one identical recolored shell', async ({ page }) => {
+test('brand systems remain distinct rather than recolored clones', async ({ page }) => {
   const fingerprints=[];
   for (const slug of demos) {
     await openDemo(page,slug);
