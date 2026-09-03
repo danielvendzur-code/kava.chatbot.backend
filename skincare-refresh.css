@@ -647,3 +647,71 @@
 /* The sum needs the room; the benefits take what is left. */
 .cx-owner-offer { grid-template-columns: max-content minmax(0, 1fr) !important; }
 @media (min-width: 1100px) { .cx-owner-offer { width: max-content; max-width: min(100%, 56%); } }
+
+/* ==========================================================================
+   19. The price card carries the page, so it is set at the page's scale
+   ========================================================================== */
+
+/* Everything on the card had been trimmed to fit a narrow column that no
+   longer exists: a 9.5 px label, a 17 px monthly sum and 11 px benefits read
+   as small print rather than as the offer. The card takes the room it needs
+   and the type goes up with it. */
+.cx-owner-offer > div {
+  padding: clamp(21px, 3vh, 30px) clamp(24px, 2.5vw, 34px) !important;
+}
+.cx-plan-summary { row-gap: clamp(11px, 1.6vh, 17px) !important; }
+.cx-plan-label { font-size: 11px !important; letter-spacing: .15em; }
+.cx-plan-badge {
+  padding: 6px 13px !important;
+  border-radius: 8px;
+  font-size: 11.5px !important;
+}
+.cx-plan-summary p > b:first-child strong { font-size: clamp(33px, 3.1vw, 43px) !important; }
+.cx-plan-summary strong { font-size: 22px !important; }
+.cx-plan-summary em { font-size: 12.5px !important; }
+.cx-plan-summary p > b { gap: 9px; }
+.cx-plan-summary p > b + b::before { margin: 0 12px 0 11px; font-size: 16px; }
+.cx-plan-points { gap: 11px !important; }
+.cx-plan-points span { font-size: 12.6px !important; line-height: 1.4 !important; gap: 11px; }
+.cx-plan-points svg {
+  width: 17px !important;
+  height: 17px !important;
+  flex: 0 0 17px !important;
+  padding: 3.5px;
+}
+.cx-plan-note { font-size: 11.5px; line-height: 1.4; }
+
+/* The strip over the photograph was set to match the old card. */
+.cx-owner-figures strong { font-size: clamp(17px, 1.5vw, 22px); }
+.cx-owner-figures b { font-size: 12px; }
+.cx-owner-kicker { font-size: 10.5px !important; letter-spacing: .15em; }
+
+@media (max-width: 760px) {
+  .cx-owner-offer > div { padding: 12px 15px !important; }
+  .cx-plan-summary p > b:first-child strong { font-size: 27px !important; }
+  .cx-plan-summary strong { font-size: 17px !important; }
+  .cx-plan-summary em { font-size: 10.5px !important; }
+  .cx-plan-points span { font-size: 11.4px !important; }
+  .cx-plan-note { font-size: 10.4px; }
+}
+
+/* "Váš katalóg pripravený pri spustení" broke over two lines while the card
+   still had room to the right of it. Each benefit is one line. */
+.cx-plan-points span { white-space: nowrap; }
+@media (min-width: 1100px) { .cx-owner-offer { max-width: min(100%, 62%); } }
+@media (max-width: 760px) { .cx-plan-points span { white-space: normal; } }
+
+/* ==========================================================================
+   20. The conversation is set at the coffee pages' size
+   ========================================================================== */
+
+/* The skincare bubble was 13.5 px against the coffee family's 15.5 px, and the
+   composer 13 px. The two runtimes are shown side by side to the same client. */
+.cx-bubble { font-size: 15px !important; line-height: 1.5 !important; }
+.cx-chip { font-size: 13.6px !important; }
+#cx-input { font-size: 14.5px !important; }
+#cx-input::placeholder { font-size: 14px; }
+.cx-advisor-entry > div > b { font-size: 14.5px !important; }
+.cx-advisor-entry > div > em { font-size: 11.5px !important; }
+.cx-advisor-entry > div > small { font-size: 10px !important; }
+.cx-widget-note { font-size: 11px !important; }

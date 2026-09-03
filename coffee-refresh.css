@@ -470,3 +470,65 @@
 @media (prefers-reduced-motion: reduce) {
   .progress i, .option__mark, .option { transition: none !important; animation: none !important; }
 }
+
+/* ==========================================================================
+   10. The price card is set at the page's scale
+   ========================================================================== */
+
+/* The same pass as the skincare pages: everything on the card had been trimmed
+   to fit a narrow column that no longer exists, so a 9.5 px label and 11 px
+   benefits read as small print rather than as the offer. */
+.mcb-page .mcb-plan {
+  padding: clamp(21px, 3vh, 30px) clamp(24px, 2.5vw, 34px) !important;
+  row-gap: clamp(11px, 1.6vh, 17px) !important;
+}
+.mcb-page .mcb-plan-label { font-size: 11px !important; letter-spacing: .15em !important; }
+.mcb-page .mcb-plan-trial {
+  padding: 6px 13px !important;
+  border-radius: 8px !important;
+  font-size: 11.5px !important;
+  margin-left: calc(4ch + 14px) !important;
+}
+.mcb-page .mcb-plan-price > b:first-child strong { font-size: clamp(33px, 3.1vw, 43px) !important; }
+.mcb-page .mcb-plan-price strong { font-size: 22px !important; }
+.mcb-page .mcb-plan-price em,
+.mcb-page .mcb-plan-price span { font-size: 12.5px !important; }
+.mcb-page .mcb-plan-price > b { gap: 9px !important; }
+.mcb-page .mcb-plan-price > b + b::before { margin: 0 12px 0 11px; font-size: 16px; }
+.mcb-page .mcb-plan ul { gap: 11px !important; padding-left: clamp(26px, 3vw, 40px) !important; }
+.mcb-page .mcb-plan li {
+  font-size: 12.6px !important;
+  line-height: 1.4 !important;
+  gap: 11px !important;
+  white-space: nowrap;
+}
+.mcb-page .mcb-plan li svg {
+  width: 17px !important;
+  height: 17px !important;
+  flex: 0 0 17px !important;
+  padding: 3.5px;
+}
+.mcb-page .mcb-plan-addon { font-size: 11.5px !important; line-height: 1.4 !important; }
+.mcb-page .mcb-pricing { max-width: min(100%, 70%) !important; }
+
+/* The strip over the photograph was set to match the old card. */
+.mcb-page .mcb-figures strong { font-size: clamp(17px, 1.5vw, 22px) !important; }
+.mcb-page .mcb-figures b { font-size: 12px !important; }
+.mcb-page .mcb-eyebrow { font-size: 10.5px !important; letter-spacing: .15em !important; }
+
+@media (max-width: 760px) {
+  .mcb-page .mcb-plan { padding: 13px 16px !important; }
+  .mcb-page .mcb-plan-price > b:first-child strong { font-size: 27px !important; }
+  .mcb-page .mcb-plan-price strong { font-size: 17px !important; }
+  .mcb-page .mcb-plan-price em,
+  .mcb-page .mcb-plan-price span { font-size: 10.5px !important; }
+  .mcb-page .mcb-plan li { font-size: 11.4px !important; white-space: normal; }
+  .mcb-page .mcb-plan-addon { font-size: 10.4px !important; }
+}
+
+/* "chat odpovedá" broke over two lines in the first cell of the strip: the
+   coffee number column is wider than the skincare one and the cell is a third
+   of the frame. Each label is one line. */
+.mcb-page .mcb-figures b { white-space: nowrap; }
+.mcb-page .mcb-figures li { justify-content: flex-start; }
+.mcb-page .mcb-figures ul { grid-template-columns: auto auto auto !important; justify-content: space-between !important; }

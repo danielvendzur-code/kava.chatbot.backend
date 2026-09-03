@@ -182,7 +182,18 @@
     if (/mast|lesk|nedokonal|akné/.test(q)) return `Pri vyššej tvorbe mazu sa oplatí pozrieť na ${brand.products.find(p=>p.tags.includes('oily'))?.name || brand.products[0].name}. Výber starostlivosti vám pomôže zúžiť výsledok bez skúšania naslepo.`;
     if (/citliv|reakt|štíp|podráž/.test(q)) return `Pri citlivejšej pleti by som volil jednoduchšiu starostlivosť a začal produktom ${brand.products.find(p=>p.tags.includes('sensitive'))?.name || brand.products[0].name}. Ak pokožka výrazne reaguje, vhodnosť produktu je lepšie konzultovať s odborníkom.`;
     if (/zrel|vrásk|pruž/.test(q)) return `Pre zrelšiu pleť je z ponuky vhodný smer ${brand.products.find(p=>p.tags.includes('mature'))?.name || brand.products[0].name}. Krátky výber ešte zohľadní, ako komplexnú rutinu chcete.`;
-    return `Pomôžem vám zúžiť ponuku ${brand.name}. Napíšte, ako sa pleť správa a čo chcete riešiť, alebo prejdite štyri krátke kroky vo Výbere.`;
+    // Everything else used to answer without naming anything, which reads as if
+    // the advisor knows only the four chips. It answers from this brand's own
+    // catalogue instead.
+    if (/odkia|zložen|zlozen|obsahuj|ingredien|prísad|prisad/.test(q)) {
+      const first = brand.products[0];
+      return `Zloženie je uvedené pri každom produkte na webe ${brand.name}. Napríklad ${first.name}: ${first.reason} Napíšte, ako sa pleť správa, a vyberiem jeden konkrétny.`;
+    }
+    if (/cena|ceny|cenu|koľko|kolko|stoj|draho|lacn/.test(q)) {
+      const first = brand.products[0];
+      return `Ceny sú uvedené pri produktoch — ${first.name} je ${first.price}. Cez štyri krátke kroky vo Výbere vyberiem ten, ktorý vám sadne, aj s cenou.`;
+    }
+    return `Z ponuky ${brand.name} je dobrý začiatok ${brand.products[0].name}. Napíšte, ako sa pleť správa a čo chcete riešiť, alebo prejdite štyri krátke kroky vo Výbere — vyberiem jeden konkrétny produkt aj s dôvodom.`;
   }
 
   async function send(text) {
@@ -194,10 +205,15 @@
     const answer = {role:'assistant',text:localReply(clean)};
     state.messages.push(answer);
     renderChat();
+    // The offline answer is already on screen; the request only ever replaces
+    // it. Six seconds, so a request that is accepted and never answered cannot
+    // leave the chat marked busy and refusing the next message.
+    const abort = new AbortController();
+    const timer = setTimeout(() => abort.abort(), 6000);
     try {
-      const response = await fetch('/api/cosmetics-chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({demoId:slug,messages:state.messages.slice(-8).map((m)=>({role:m.role,content:m.text}))})});
+      const response = await fetch('/api/cosmetics-chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({demoId:slug,messages:state.messages.slice(-8).map((m)=>({role:m.role,content:m.text}))}),signal:abort.signal});
       if (response.ok) { const payload=await response.json(); if(String(payload.reply||'').trim()) answer.text=String(payload.reply).trim(); }
-    } catch (_) {}
+    } catch (_) {} finally { clearTimeout(timer); }
     state.busy = false;
     renderChat();
   }

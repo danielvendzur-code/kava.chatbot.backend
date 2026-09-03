@@ -455,22 +455,61 @@
   }
 
   function fallbackAnswer(text) {
-    const query = text.toLocaleLowerCase('sk');
+    const query = String(text ?? '').toLocaleLowerCase('sk');
     const hit = fallbacks.find((entry) => entry.match.some((needle) => query.includes(needle)));
-    if (!hit) return 'Rád vám poradím konkrétnu kávu. Najpresnejšie to pôjde cez krátky výber — štyri otázky na chuť, prípravu a aciditu.';
-    const product = byId[hit.product];
-    if (!product) return 'Rád vám poradím konkrétnu kávu. Skúste krátky výber a podľa odpovedí vyberiem jednu konkrétnu.';
-    return `${esc(hit.lead)} <b>${esc(product.name)}</b>. ${esc(product.why)} ${esc(product.price)}.`;
+    const product = hit && byId[hit.product];
+    if (product) return `${esc(hit.lead)} <b>${esc(product.name)}</b>. ${esc(product.why)} ${esc(product.price)}.`;
+
+    /* What is left used to be answered with "Rád vám poradím konkrétnu kávu",
+       which names nothing and reads to an owner as if the advisor knows only
+       the four questions it was given. The questions every shop is asked are
+       answered from this roastery's own catalogue instead. */
+    if (/odkia|pôvod|povod|pestuj|farm|krajin|plantáž|plantaz/.test(query)) {
+      const named = products.filter((item) => item.line).slice(0, 3)
+        .map((item) => `${item.name} (${item.line})`);
+      if (named.length) {
+        return `Pôvod je uvedený pri každej káve — napríklad ${esc(named.join(', '))}. `
+          + 'Napíšte, akú chuť hľadáte, a vyberiem jednu konkrétnu.';
+      }
+    }
+    if (/cena|ceny|cenu|koľko|kolko|stoj|draho|lacn/.test(query)) {
+      const weights = heroProduct.weights ? ` (${heroProduct.weights})` : '';
+      return `Ceny sa líšia podľa gramáže — <b>${esc(heroProduct.name)}</b> je `
+        + `${esc(heroProduct.price)} / ${esc(heroProduct.priceUnit || 'balenie')}${esc(weights)}. `
+        + 'Cez krátky výber vyberiem tú, ktorá vám sadne, aj s cenou.';
+    }
+    if (/porovna|rozdiel|lepš|leps|ktorá|ktora|ktorú|ktoru/.test(query)) {
+      const [first, second] = products;
+      if (first && second) {
+        return `<b>${esc(first.name)}</b>: ${esc(first.why)} <b>${esc(second.name)}</b>: ${esc(second.why)}`;
+      }
+    }
+    return `Z ponuky by som začal kávou <b>${esc(heroProduct.name)}</b>. ${esc(heroProduct.why)} `
+      + 'Cez štyri krátke otázky vo Výbere kávy vyberiem jednu konkrétnu aj s dôvodom.';
   }
 
+  /* A request that is accepted and never answered used to hang here for as long
+     as the page was open: the typing dots never cleared, the chips stayed
+     disabled and the chat was dead. It gets six seconds. */
+  const AI_TIMEOUT_MS = 6000;
+
   async function requestReply(text) {
-    state.history.push({ role:'user', content:text });
-    const response = await fetch('/api/chat', { method:'POST', headers:{ 'content-type':'application/json' }, body:JSON.stringify({ demoId:demo.id, messages:state.history.slice(-10) }) });
-    if (!response.ok) throw new Error(`AI unavailable: ${response.status}`);
-    const payload = await response.json();
-    if (typeof payload.reply !== 'string' || payload.reply.trim() === '') throw new Error('Empty reply');
-    state.history.push({ role:'assistant', content:payload.reply });
-    return esc(payload.reply);
+    const abort = new AbortController();
+    const timer = setTimeout(() => abort.abort(), AI_TIMEOUT_MS);
+    try {
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ demoId: demo.id, messages: state.history.slice(-10) }),
+        signal: abort.signal
+      });
+      if (!response.ok) throw new Error(`AI unavailable: ${response.status}`);
+      const payload = await response.json();
+      if (typeof payload.reply !== 'string' || payload.reply.trim() === '') throw new Error('Empty reply');
+      return esc(payload.reply);
+    } finally {
+      clearTimeout(timer);
+    }
   }
 
   function setChipsDisabled(disabled) { $$('.chip').forEach((chip) => { chip.disabled = disabled; }); }
@@ -483,18 +522,23 @@
     input.value = '';
     showTyping();
     setChipsDisabled(true);
-    try {
-      const reply = await requestReply(value);
-      $('#typing')?.remove();
-      addMessage(reply);
-    } catch (_) {
-      await new Promise((resolve) => setTimeout(resolve, 360));
-      $('#typing')?.remove();
-      addMessage(fallbackAnswer(value));
-    } finally {
-      state.busy = false;
-      setChipsDisabled(false);
-    }
+    state.history.push({ role: 'user', content: value });
+
+    // The answer this demo can always give is settled before the request goes
+    // out; the API only ever replaces it. There is no path where the visitor
+    // asks and gets nothing back.
+    let reply = fallbackAnswer(value);
+    const [better] = await Promise.all([
+      requestReply(value).catch(() => ''),
+      new Promise((resolve) => setTimeout(resolve, 360))
+    ]);
+    if (better) reply = better;
+
+    $('#typing')?.remove();
+    addMessage(reply);
+    state.history.push({ role: 'assistant', content: reply.replace(/<[^>]*>/g, '') });
+    state.busy = false;
+    setChipsDisabled(false);
   }
 
   function renderChips() {
