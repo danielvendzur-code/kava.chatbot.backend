@@ -1,11 +1,18 @@
 import { createServer } from 'node:http';
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { readFile, stat } from 'node:fs/promises';
-import { spawn } from 'node:child_process';
+import { spawn, spawnSync } from 'node:child_process';
 import { extname, join, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const rootDir = resolve(fileURLToPath(new URL('../', import.meta.url)));
+
+/* An asset whose contents changed but whose URL did not is served from a cache
+   that has no way to know, so the page runs old code. The stamps are checked
+   before the suite rather than discovered in production. */
+const stamps = spawnSync(process.execPath, [join(rootDir, 'scripts/stamp-assets.mjs'), '--check'], { stdio: 'inherit' });
+if (stamps.status !== 0) process.exit(stamps.status ?? 1);
+
 const cli = fileURLToPath(new URL('../node_modules/@playwright/test/cli.js', import.meta.url));
 const host = '127.0.0.1';
 const port = 4173;

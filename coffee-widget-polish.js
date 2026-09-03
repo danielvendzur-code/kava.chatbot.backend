@@ -46,7 +46,7 @@
     if (document.querySelector('link[data-mcb-widget-style]')) return;
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '/coffee-widget-polish.css';
+    link.href = '/coffee-widget-polish.css?v=edd615ae';
     link.dataset.mcbWidgetStyle = 'true';
     link.dataset.mcOrder = '35';
     document.body.appendChild(link);

@@ -15,9 +15,9 @@
     concept:[['Sezónny výber','Zúži aktuálnu ponuku.'],['Podľa prípravy','Espresso, filter aj mlieko.'],['Podľa chuti','Od čokolády po ovocné profily.'],['Vedie ku káve','Výsledok smeruje na produkt.']]
   };
   function css(){
-    if(!$('link[data-jolka-parity]')){const l=document.createElement('link');l.rel='stylesheet';l.href='/coffee-jolka-parity.css';l.dataset.jolkaParity='true';document.head.append(l)}
-    if(!$('link[data-jolka-parity-polish]')){const l=document.createElement('link');l.rel='stylesheet';l.href='/coffee-jolka-parity-polish.css';l.dataset.jolkaParityPolish='true';document.head.append(l)}
-    if(!$('link[data-jolka-parity-final]')){const l=document.createElement('link');l.rel='stylesheet';l.href='/coffee-jolka-parity-final.css';l.dataset.jolkaParityFinal='true';document.head.append(l)}
+    if(!$('link[data-jolka-parity]')){const l=document.createElement('link');l.rel='stylesheet';l.href='/coffee-jolka-parity.css?v=7db35e83';l.dataset.jolkaParity='true';document.head.append(l)}
+    if(!$('link[data-jolka-parity-polish]')){const l=document.createElement('link');l.rel='stylesheet';l.href='/coffee-jolka-parity-polish.css?v=4f7e364d';l.dataset.jolkaParityPolish='true';document.head.append(l)}
+    if(!$('link[data-jolka-parity-final]')){const l=document.createElement('link');l.rel='stylesheet';l.href='/coffee-jolka-parity-final.css?v=8a2ee71a';l.dataset.jolkaParityFinal='true';document.head.append(l)}
   }
   function stylesReady(){return Boolean($('link[data-jolka-parity]')?.sheet&&$('link[data-jolka-parity-polish]')?.sheet&&$('link[data-jolka-parity-final]')?.sheet)}
   function strip(){const p=$(rootSel[slug]);if(!p||$('.parity-bottom',p))return;const s=document.createElement('section');s.className='parity-bottom';s.setAttribute('aria-label','Čo poradca zákazníkovi uľahčí');s.innerHTML=strips[slug].map(([a,b])=>`<div class="parity-bottom__item"><i class="parity-bottom__dot" aria-hidden="true"></i><span class="parity-bottom__copy"><b>${a}</b><span>${b}</span></span></div>`).join('');p.append(s)}

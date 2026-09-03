@@ -34,7 +34,7 @@
   // order. No observer, so it terminates.
   const link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href = '/coffee-widget-final.css';
+  link.href = '/coffee-widget-final.css?v=bb0b33b9';
   link.dataset.widgetFinal = 'true';
   link.dataset.mcOrder = '20';
   document.body.appendChild(link);

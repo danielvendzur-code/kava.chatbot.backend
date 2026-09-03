@@ -7,9 +7,9 @@
 
   /* Several legacy layers append their styles into body after page load. Keep
      this contract at the actual end of the cascade, with a finite reorder pass. */
-  const lateStyle = document.querySelector('link[href="/coffee-release-contract.css"]') || document.createElement('link');
+  const lateStyle = document.querySelector('link[href="/coffee-release-contract.css?v=ca00b227"]') || document.createElement('link');
   lateStyle.rel = 'stylesheet';
-  lateStyle.href = '/coffee-release-contract.css';
+  lateStyle.href = '/coffee-release-contract.css?v=ca00b227';
   lateStyle.dataset.coffeeReleaseStyle = 'true';
   lateStyle.dataset.mcOrder = '110';
   document.body.appendChild(lateStyle);

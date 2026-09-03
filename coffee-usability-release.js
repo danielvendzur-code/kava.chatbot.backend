@@ -10,7 +10,7 @@
 
   const css = document.createElement('link');
   css.rel = 'stylesheet';
-  css.href = '/coffee-usability-release.css';
+  css.href = '/coffee-usability-release.css?v=4766b60e';
   css.dataset.coffeeUsabilityRelease = 'true';
   // Ranked instead of observed. This sheet and coffee-widget-final.css used to
   // fight over being the last child of <body>, each move waking the other's

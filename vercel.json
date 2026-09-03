@@ -1,32 +1,119 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/kozmetika/:slug", "destination": "/cosmetics.html" },
-    { "source": "/kozmetika/:slug/", "destination": "/cosmetics.html" },
-    { "source": "/ukazka/jolka", "destination": "/jolka.html" },
-    { "source": "/ukazka/jolka/", "destination": "/jolka.html" },
-    { "source": "/ukazka/:slug", "destination": "/index.html" },
-    { "source": "/ukazka/:slug/", "destination": "/index.html" }
+    {
+      "source": "/kozmetika/:slug",
+      "destination": "/cosmetics.html"
+    },
+    {
+      "source": "/kozmetika/:slug/",
+      "destination": "/cosmetics.html"
+    },
+    {
+      "source": "/ukazka/jolka",
+      "destination": "/jolka.html"
+    },
+    {
+      "source": "/ukazka/jolka/",
+      "destination": "/jolka.html"
+    },
+    {
+      "source": "/ukazka/:slug",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/ukazka/:slug/",
+      "destination": "/index.html"
+    }
   ],
   "headers": [
     {
+      "source": "/(.*)\\.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/verzia.txt",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
+      ]
+    },
+    {
+      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|mylo|ponio|two|bellcoria|biofy|anemone)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|mylo|ponio|two|bellcoria|biofy|anemone)/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
+    {
       "source": "/ukazka/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" },
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
       ]
     },
     {
       "source": "/kozmetika/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" },
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
       ]
     },
     {
       "source": "/api/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "no-store" }
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        }
       ]
     }
   ]

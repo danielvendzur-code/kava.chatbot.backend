@@ -93,7 +93,7 @@
   // Kept at the end of <body>, after index.html's own two stylesheets.
   const styles = document.createElement('link');
   styles.rel = 'stylesheet';
-  styles.href = '/coffee-owner-page.css';
+  styles.href = '/coffee-owner-page.css?v=7b3bb783';
   styles.dataset.ownerPage = 'true';
   document.body.appendChild(styles);
 

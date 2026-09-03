@@ -280,28 +280,28 @@
 
     const cleanup = document.createElement('link');
     cleanup.rel = 'stylesheet';
-    cleanup.href = '/coffee-header-cleanup.css';
+    cleanup.href = '/coffee-header-cleanup.css?v=e64c70d2';
     cleanup.dataset.coffeeHeaderCleanup = 'true';
     cleanup.dataset.mcOrder = '25';
     document.body.appendChild(cleanup);
 
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '/coffee-owner-brand.css';
+    link.href = '/coffee-owner-brand.css?v=b277d2a9';
     link.dataset.mcbStyle = 'true';
     link.dataset.mcOrder = '30';
     document.body.appendChild(link);
 
     const sales = document.createElement('link');
     sales.rel = 'stylesheet';
-    sales.href = '/coffee-owner-sales-polish.css';
+    sales.href = '/coffee-owner-sales-polish.css?v=7787f148';
     sales.dataset.mcbSalesStyle = 'true';
     sales.dataset.mcOrder = '40';
     document.body.appendChild(sales);
 
     const refresh = document.createElement('link');
     refresh.rel = 'stylesheet';
-    refresh.href = '/coffee-refresh.css';
+    refresh.href = '/coffee-refresh.css?v=9948e7cf';
     refresh.dataset.mcbRefreshStyle = 'true';
     refresh.dataset.mcOrder = '95';
     document.body.appendChild(refresh);
@@ -367,7 +367,7 @@
   const usesCleanJolkaWidget = document.documentElement.dataset.coffeeReleaseReady === 'true';
   if (!usesCleanJolkaWidget && !document.querySelector('script[data-mcb-widget]')) {
     const polish = document.createElement('script');
-    polish.src = '/coffee-widget-polish.js';
+    polish.src = '/coffee-widget-polish.js?v=a6b2ac52';
     polish.dataset.mcbWidget = 'true';
     polish.async = false;
     document.body.appendChild(polish);
