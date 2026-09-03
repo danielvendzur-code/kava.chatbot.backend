@@ -488,10 +488,10 @@
       + 'Cez štyri krátke otázky vo Výbere kávy vyberiem jednu konkrétnu aj s dôvodom.';
   }
 
-  /* A request that is accepted and never answered used to hang here for as long
-     as the page was open: the typing dots never cleared, the chips stayed
-     disabled and the chat was dead. It gets six seconds. */
-  const AI_TIMEOUT_MS = 6000;
+  /* Two bounds, not one. The request gets long enough for a real model reply;
+     the visitor gets an answer well before that whether it arrives or not. */
+  const AI_TIMEOUT_MS = 12000;
+  const PATIENCE_MS = 4500;
 
   async function requestReply(text) {
     const abort = new AbortController();
@@ -524,21 +524,33 @@
     setChipsDisabled(true);
     state.history.push({ role: 'user', content: value });
 
-    // The answer this demo can always give is settled before the request goes
-    // out; the API only ever replaces it. There is no path where the visitor
-    // asks and gets nothing back.
-    let reply = fallbackAnswer(value);
-    const [better] = await Promise.all([
-      requestReply(value).catch(() => ''),
-      new Promise((resolve) => setTimeout(resolve, 360))
-    ]);
-    if (better) reply = better;
+    /* The answer this demo can always give is settled before the request goes
+       out, and it is put on screen as soon as waiting would start to read as
+       silence. The model's reply replaces it whenever it arrives. There is no
+       path where the visitor asks and gets nothing back. */
+    const offline = fallbackAnswer(value);
+    const pending = requestReply(value).catch(() => '');
+    const patience = new Promise((resolve) => setTimeout(() => resolve(null), PATIENCE_MS));
 
+    const raced = await Promise.race([pending, patience]);
     $('#typing')?.remove();
-    addMessage(reply);
-    state.history.push({ role: 'assistant', content: reply.replace(/<[^>]*>/g, '') });
+    const shown = raced || offline;
+    const row = addMessage(shown);
+    state.history.push({ role: 'assistant', content: shown.replace(/<[^>]*>/g, '') });
+
+    /* The answer is on screen, so the chat is free again — a request still in
+       flight upgrades this one bubble in the background. */
     state.busy = false;
     setChipsDisabled(false);
+
+    if (!raced) {
+      const late = await pending;
+      if (late) {
+        row.querySelector('.bubble').innerHTML = late;
+        const entry = state.history[state.history.length - 1];
+        if (entry && entry.role === 'assistant') entry.content = late.replace(/<[^>]*>/g, '');
+      }
+    }
   }
 
   function renderChips() {

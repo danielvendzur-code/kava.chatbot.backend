@@ -207,9 +207,9 @@
     renderChat();
     // The offline answer is already on screen; the request only ever replaces
     // it. Six seconds, so a request that is accepted and never answered cannot
-    // leave the chat marked busy and refusing the next message.
+    // which is accepted and never answered cannot leave the chat marked busy.
     const abort = new AbortController();
-    const timer = setTimeout(() => abort.abort(), 6000);
+    const timer = setTimeout(() => abort.abort(), 12000);
     try {
       const response = await fetch('/api/cosmetics-chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({demoId:slug,messages:state.messages.slice(-8).map((m)=>({role:m.role,content:m.text}))}),signal:abort.signal});
       if (response.ok) { const payload=await response.json(); if(String(payload.reply||'').trim()) answer.text=String(payload.reply).trim(); }
