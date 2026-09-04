@@ -1,0 +1,246 @@
+{
+ "slug": "readyafter",
+ "brand": {
+  "name": "Ready After",
+  "place": "Ready After · Bošany",
+  "shopUrl": "https://www.readyafter.sk/zrnkova-kava/",
+  "storyUrl": "https://www.readyafter.sk/"
+ },
+ "colors": {
+  "ink": "#1c1c1c",
+  "brand": "#e41d19",
+  "accent": "#e41d19",
+  "soft": "#f6f1ef",
+  "paper": "#fffdfc",
+  "line": "#e6dedb"
+ },
+ "ownerTitle": "Zákazník nemusí poznať pôvod ani spracovanie.",
+ "ownerLead": "Ready After má blendy aj single origin z Etiópie, Burundi či Kolumbie. Chat vysvetlí rozdiel a výber cez štyri otázky skončí pri jednej konkrétnej káve.",
+ "chips": [
+  "Káva do automatu",
+  "Káva na filter",
+  "Niečo netradičné",
+  "Bez kofeínu"
+ ],
+ "products": [
+  {
+   "id": "mat",
+   "name": "Espresso MAT zmes",
+   "line": "Zmes 50/50 arabica a robusta",
+   "url": "https://www.readyafter.sk/espresso-mat-vyberova-kavova-zmes/",
+   "price": "od 16,00 €",
+   "priceUnit": "500 g",
+   "weights": "500 g a 1 kg",
+   "notes": [
+    "horká čokoláda",
+    "karamel",
+    "vyšší kofeín"
+   ],
+   "acidity": 0,
+   "acidityNote": "Plná zmes bez ovocnej kyslosti.",
+   "bestFor": "Automat, páka a moka",
+   "why": "Pre toho, kto chce vyšší podiel kofeínu. V pozadí cítiť horkú čokoládu a tóny karamelu.",
+   "taste": {
+    "chocolate": 0.95,
+    "balanced": 0.8,
+    "fruity": 0.05,
+    "bold": 0.75
+   },
+   "prep": {
+    "automat": 1,
+    "lever": 0.95,
+    "moka": 0.9,
+    "filter": 0.25
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 1,
+    "both": 1
+   },
+   "explore": 0.1
+  },
+  {
+   "id": "santos",
+   "name": "Brasil Santos Cerrado 17/18 Natural",
+   "line": "Brazília · Cerrado · natural · 100 % arabica",
+   "url": "https://www.readyafter.sk/brasil-santos-cerrado-17-18-natural/",
+   "price": "od 7,90 €",
+   "priceUnit": "200 g",
+   "weights": "200 g – 1 kg",
+   "notes": [
+    "horkosť",
+    "ovocná chuť",
+    "krása krémy"
+   ],
+   "acidity": 1,
+   "acidityNote": "Horkosť vyvážená jemnou ovocnou chuťou.",
+   "bestFor": "Espresso a moka",
+   "why": "Mierne exotická káva, ktorej horkosť je vyvážená ovocnou chuťou. Má nezameniteľnú chuť a krásnu krému.",
+   "taste": {
+    "chocolate": 0.85,
+    "balanced": 0.95,
+    "fruity": 0.4,
+    "bold": 0.4
+   },
+   "prep": {
+    "automat": 0.9,
+    "lever": 1,
+    "moka": 0.95,
+    "filter": 0.4
+   },
+   "drink": {
+    "black": 0.95,
+    "milk": 0.85,
+    "both": 1
+   },
+   "explore": 0.3
+  },
+  {
+   "id": "supremo",
+   "name": "Colombia Supremo Medelin Wash",
+   "line": "Kolumbia · Medellín · praná · 100 % arabica",
+   "url": "https://www.readyafter.sk/colombia-supremo-medelin-wash/",
+   "price": "od 7,90 €",
+   "priceUnit": "200 g",
+   "weights": "200 g – 1 kg",
+   "notes": [
+    "čokoláda",
+    "sladkosť",
+    "plné telo"
+   ],
+   "acidity": 1,
+   "acidityNote": "Sladký čokoládový profil s nízkou aciditou.",
+   "bestFor": "Espresso a mliečne nápoje",
+   "why": "Pre toho, kto chce stopercentnú arabicu a horkejšiu chuť. Má krásnu a sladkú chuť po čokoláde.",
+   "taste": {
+    "chocolate": 1,
+    "balanced": 0.9,
+    "fruity": 0.2,
+    "bold": 0.5
+   },
+   "prep": {
+    "automat": 0.85,
+    "lever": 1,
+    "moka": 0.9,
+    "filter": 0.45
+   },
+   "drink": {
+    "black": 0.95,
+    "milk": 0.95,
+    "both": 1
+   },
+   "explore": 0.2
+  },
+  {
+   "id": "yirgacheffe",
+   "name": "Ethiopia Yirgacheffe Gr.2 YCFCU",
+   "line": "Etiópia · Yirgacheffe · 100 % arabica",
+   "url": "https://www.readyafter.sk/ethiopia-yirgacheffe-gr-2-ycfcu/",
+   "price": "od 9,50 €",
+   "priceUnit": "200 g",
+   "weights": "200 g – 1 kg",
+   "notes": [
+    "jazmínový čaj",
+    "citrónová tráva",
+    "ružový grapefruit"
+   ],
+   "acidity": 3,
+   "acidityNote": "Sladko-ovocná káva s výraznou sviežosťou.",
+   "bestFor": "Espresso aj filter",
+   "why": "Krásne sladko-ovocná káva s profilom jazmínový čaj, citrónová tráva a ružový grapefruit.",
+   "taste": {
+    "chocolate": 0.1,
+    "balanced": 0.5,
+    "fruity": 1,
+    "bold": 0.6
+   },
+   "prep": {
+    "automat": 0.15,
+    "lever": 0.6,
+    "moka": 0.2,
+    "filter": 1
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.1,
+    "both": 0.3
+   },
+   "explore": 0.8
+  },
+  {
+   "id": "burundi",
+   "name": "Burundi Rumanda Muraho Natural Anaerobic",
+   "line": "Burundi · Rumanda · natural anaerobic",
+   "url": "https://www.readyafter.sk/burundi-rumanda-muraho-natural-anaerobic/",
+   "price": "od 13,90 €",
+   "priceUnit": "200 g",
+   "weights": "200 g – 1 kg",
+   "notes": [
+    "ananás",
+    "červené jablko",
+    "mandarinka"
+   ],
+   "acidity": 3,
+   "acidityNote": "Čistá ovocná káva po anaeróbnej fermentácii.",
+   "bestFor": "Filter a alternatívna príprava",
+   "why": "Čistá a ovocná káva s profilom ananás, červené jablko, mandarinka a trstinový cukor.",
+   "taste": {
+    "chocolate": 0.05,
+    "balanced": 0.45,
+    "fruity": 0.95,
+    "bold": 1
+   },
+   "prep": {
+    "automat": 0.05,
+    "lever": 0.35,
+    "moka": 0.1,
+    "filter": 0.95
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.05,
+    "both": 0.25
+   },
+   "explore": 1
+  },
+  {
+   "id": "decaf",
+   "name": "Bezkofeínová Colombia Supremo Sugar Cane",
+   "line": "Kolumbia · bez kofeínu · sugar cane proces",
+   "url": "https://www.readyafter.sk/bezkofeinova-kava-colombia-sugar-cane-decaf/",
+   "price": "od 10,50 €",
+   "priceUnit": "200 g",
+   "weights": "200 g – 1 kg",
+   "notes": [
+    "med",
+    "karamel",
+    "marhuľa"
+   ],
+   "acidity": 1,
+   "acidityNote": "Sladký bezkofeínový profil s marhuľovou aciditou.",
+   "bestFor": "Espresso aj filter",
+   "why": "Ich prvá bezkofeínová káva s profilom med, karamel a sladká chuť s marhuľovou aciditou.",
+   "taste": {
+    "chocolate": 0.8,
+    "balanced": 0.9,
+    "fruity": 0.35,
+    "bold": 0.35
+   },
+   "prep": {
+    "automat": 0.7,
+    "lever": 0.95,
+    "moka": 0.85,
+    "filter": 0.7
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 0.85,
+    "both": 1
+   },
+   "explore": 0.25,
+   "decaf": true
+  }
+ ],
+ "logoUrl": "https://cdn.myshoptet.com/usr/www.readyafter.sk/user/logos/img-0.png",
+ "heroPhotoUrl": "https://cdn.myshoptet.com/usr/www.readyafter.sk/user/banners/compressed_k__pia_s__boru_evj05369-2.jpg"
+}

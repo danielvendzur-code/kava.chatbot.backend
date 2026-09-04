@@ -35,6 +35,8 @@ need(data.brand && text(data.brand.name), 'brand.name chýba');
 need(data.brand && text(data.brand.place), 'brand.place chýba');
 need(data.brand && /^https?:\/\//.test(data.brand.shopUrl || ''), 'brand.shopUrl chýba');
 need(data.brand && /^https?:\/\//.test(data.brand.storyUrl || ''), 'brand.storyUrl chýba');
+need(text(data.ownerTitle), 'ownerTitle chýba — jedna veta o tom, čo poradca urobí práve pre tento e-shop');
+need(text(data.ownerLead), 'ownerLead chýba — dve vety, ktoré to rozvedú');
 
 const HEX = /^#[0-9a-fA-F]{6}$/;
 ['ink', 'brand', 'accent', 'soft', 'paper'].forEach((key) =>
@@ -291,22 +293,34 @@ const patch = (file, find, replacement, describe) => {
   console.log('  ' + file);
 };
 
-patch('coffee-owner-brand.js', '\n    }\n  };\n\n  const HEADING', `
-    },
-
-    ${slug}: {
-      name: ${JSON.stringify(name)},
-      place: ${JSON.stringify(place)},
-      root: '.${slug}-page',
-      shop: ${JSON.stringify(shopUrl)},
-      lockup: '<img src="${logoPath}" alt="${name.replace(/"/g, '&quot;')}">',
-      theme: { ink: '${c.ink}', brand: '${c.brand}', accent: '${c.accent}', soft: '${c.soft}', paper: '${c.paper}' },
-      hero: '/assets/${slug}/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
-    }
-  };
-
-  const HEADING`, 'koniec tabuľky BRANDS');
+{
+  /* Insert before the brace that closes the brand table, wherever it sits, and
+     supply the comma the last entry does not carry. Anchoring on the text that
+     follows the table broke the moment a comment was added above it. */
+  const file = 'coffee-owner-brand.js';
+  const full = path.join(ROOT, file);
+  const before = fs.readFileSync(full, 'utf8');
+  if (before.includes(`${slug}: {`)) { console.log(`  ${file} (uz tam je)`); }
+  else {
+    const open = before.indexOf('const BRANDS = {');
+    const close = before.indexOf('\n  };', open);
+    if (open === -1 || close === -1) throw new Error(`${file}: nenasiel som tabulku BRANDS`);
+    const entry = `,\n\n    ${slug}: {\n`
+      + `      name: ${JSON.stringify(name)},\n`
+      + `      place: ${JSON.stringify(place)},\n`
+      + `      title: ${JSON.stringify(data.ownerTitle)},\n`
+      + `      lead: ${JSON.stringify(data.ownerLead)},\n`
+      + `      root: '.${slug}-page',\n`
+      + `      shop: ${JSON.stringify(shopUrl)},\n`
+      + `      lockup: '<img src="${logoPath}" alt="${name.replace(/"/g, '&quot;')}">',\n`
+      + `      theme: { ink: '${c.ink}', brand: '${c.brand}', accent: '${c.accent}', soft: '${c.soft}', paper: '${c.paper}' },\n`
+      + `      hero: '/assets/${slug}/hero.jpg',\n`
+      + `      figures: commonFigures('príprava · chuť · nápoj · kofeín')\n`
+      + `    }`;
+    fs.writeFileSync(full, before.slice(0, close) + entry + before.slice(close));
+    console.log('  ' + file);
+  }
+}
 
 const router = path.join(ROOT, 'coffee-final-entry.js');
 const routerText = fs.readFileSync(router, 'utf8');

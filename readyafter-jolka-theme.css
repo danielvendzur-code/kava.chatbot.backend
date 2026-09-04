@@ -1,0 +1,6 @@
+/* Ready After brand tokens on the shared Jolka system. */
+:root{--ink:#1c1c1c;--ink-2:#e41d19;--ink-3:#e41d19;--paper:#fffdfc;--surface:#fff;--surface-2:#f6f1ef;--line:#e6dedb;--line-strong:#e6dedb;--kraft:#e41d19;--kraft-deep:#e41d19;--kraft-tint:#f6f1ef;--text:#1c1c1c;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.readyafter-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.readyafter-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.readyafter-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.readyafter-clean .launcher__button img{width:54px!important;height:54px!important}

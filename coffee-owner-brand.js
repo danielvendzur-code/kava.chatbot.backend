@@ -128,15 +128,33 @@
     goriffee: {
       name: "Goriffee roastery",
       place: "Goriffee roastery · Bratislava",
+      title: "Z veľkej ponuky doveďte zákazníka k jednej káve.",
+      lead: "Goriffee praží každý týždeň a v ponuke sú blendy, single origin aj decaf. Chat odpovie na otázku o pôvode aj chuti, výber cez štyri otázky skončí pri jednej konkrétnej káve.",
       root: '.goriffee-page',
       shop: "https://www.goriffee.com/shop/kava/",
       lockup: '<img src="/assets/goriffee/logo.svg" alt="Goriffee roastery">',
       theme: { ink: '#121212', brand: '#121212', accent: '#e01a37', soft: '#f3efeb', paper: '#fffdfb' },
       hero: '/assets/goriffee/hero.jpg',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
+    },
+
+    readyafter: {
+      name: "Ready After",
+      place: "Ready After · Bošany",
+      title: "Zákazník nemusí poznať pôvod ani spracovanie.",
+      lead: "Ready After má blendy aj single origin z Etiópie, Burundi či Kolumbie. Chat vysvetlí rozdiel a výber cez štyri otázky skončí pri jednej konkrétnej káve.",
+      root: '.readyafter-page',
+      shop: "https://www.readyafter.sk/zrnkova-kava/",
+      lockup: '<img src="/assets/readyafter/logo.png" alt="Ready After">',
+      theme: { ink: '#1c1c1c', brand: '#e41d19', accent: '#e41d19', soft: '#f6f1ef', paper: '#fffdfc' },
+      hero: '/assets/readyafter/hero.jpg',
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
     }
   };
 
+  /* The skincare pages say something about the shop they were built for; the
+     roasteries all said the same sentence. A brand that carries its own
+     headline and lead uses them, and these stay as the fallback. */
   const HEADING = 'Kávový poradca na váš web.';
   const LEAD = 'Chat odpovie na otázku o pôvode aj chuti. Výber kávy cez štyri otázky ' +
     'skončí pri jednej konkrétnej káve aj s dôvodom, prečo sedí.';
@@ -193,9 +211,9 @@
 
     <main class="mcb-main">
       <section class="mcb-copy">
-        <span class="mcb-eyebrow">${esc(brand.place)}</span>
-        <h1>${esc(HEADING)}</h1>
-        <p class="mcb-lead">${esc(LEAD)}</p>
+        <span class="mcb-eyebrow">${esc(brand.title ? 'Chat + výber kávy' : brand.place)}</span>
+        <h1>${esc(brand.title || HEADING)}</h1>
+        <p class="mcb-lead">${esc(brand.lead || LEAD)}</p>
 
         <div class="mcb-actions">
           <button class="mcb-btn" type="button" data-release-open="advisor">Otvoriť poradcu ${icons.arrow}</button>
