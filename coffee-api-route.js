@@ -70,8 +70,13 @@
     }
   };
 
+  /* A roastery with no canned answers here used to be served Pražiarnička's —
+     a demo that names another roastery's coffees to its own client. It answers
+     from its own catalogue instead, which the widget does when this returns
+     nothing. */
   const fallbackReply = (demoId, content) => {
-    const set = replies[demoId] || replies.praziarnicka;
+    const set = replies[demoId];
+    if (!set) return null;
     const q = content.toLocaleLowerCase('sk');
     // Asked before the brewing matchers: "odkiaľ je káva" names no preparation,
     // and a comparison question usually names two coffees at once.
@@ -86,7 +91,9 @@
 
   const fallbackResponse = (init) => {
     const { demoId, content } = latestText(init);
-    return new Response(JSON.stringify({ reply: fallbackReply(demoId, content), fallback: true }), {
+    const reply = fallbackReply(demoId, content);
+    if (!reply) return new Response('', { status: 503, headers: { 'cache-control': 'no-store' } });
+    return new Response(JSON.stringify({ reply, fallback: true }), {
       status: 200,
       headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' }
     });

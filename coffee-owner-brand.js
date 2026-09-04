@@ -8,8 +8,6 @@
 (() => {
   'use strict';
 
-  const SLUGS = ['praziarnicka', 'diamonds', 'kaffa', 'vitazov', 'concept', 'jolka'];
-
   const slug = String(
     window.__COFFEE_DEMO_SLUG__ ||
     window.COFFEE_DEMO_SLUG ||
@@ -17,12 +15,6 @@
     (location.pathname.includes('jolka') ? 'jolka' : '')
   ).replace('-v13', '');
 
-  if (!SLUGS.includes(slug)) return;
-
-  // Claimed immediately, before any rendering: the older generic renderers in
-  // coffee-usability-release.js check this and step aside instead of painting a
-  // page that would be replaced a frame later.
-  window.__MCB_OWNER__ = true;
 
   const esc = (value = '') =>
     String(value).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -138,7 +130,16 @@
   const LEAD = 'Chat odpovie na otázku o pôvode aj chuti. Výber kávy cez štyri otázky ' +
     'skončí pri jednej konkrétnej káve aj s dôvodom, prečo sedí.';
 
+  /* The brand table is the only list of roasteries this file keeps. A slug it
+     does not know belongs to some other page, and the claim below must not be
+     made on that page's behalf. */
   const brand = BRANDS[slug];
+  if (!brand) return;
+
+  // Claimed here, before any rendering: the older generic renderers in
+  // coffee-usability-release.js check this and step aside instead of painting a
+  // page that would be replaced a frame later.
+  window.__MCB_OWNER__ = true;
 
   // Published so the widget-side modules can reuse the same brand facts.
   window.__MCB_BRAND__ = { slug, ...brand };
@@ -250,10 +251,13 @@
   };
 
   function openMode(mode) {
-    const launcher = document.querySelector(launchers[slug]);
+    const launcher = document.querySelector(launchers[slug] || '#open');
     if (launcher && launcher.offsetParent !== null) launcher.click();
     requestAnimationFrame(() => requestAnimationFrame(() => {
-      document.querySelector(mode === 'advisor' ? advisorButtons[slug] : chatButtons[slug])?.click();
+      const selector = mode === 'advisor'
+        ? advisorButtons[slug] || '.mode__button[data-mode="advisor"]'
+        : chatButtons[slug] || '.mode__button[data-mode="chat"]';
+      document.querySelector(selector)?.click();
     }));
   }
 
