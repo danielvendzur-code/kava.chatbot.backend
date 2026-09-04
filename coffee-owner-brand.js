@@ -123,6 +123,17 @@
       display: { family: '"Playfair Display", Georgia, serif', weight: '600', tracking: '-.02em' },
       hero: '/assets/jolka/hero-bags.webp',
       figures: commonFigures('príprava · chuť · nápoj · acidita')
+    },
+
+    goriffee: {
+      name: "Goriffee roastery",
+      place: "Goriffee roastery · Bratislava",
+      root: '.goriffee-page',
+      shop: "https://www.goriffee.com/shop/kava/",
+      lockup: '<img src="/assets/goriffee/logo.svg" alt="Goriffee roastery">',
+      theme: { ink: '#121212', brand: '#121212', accent: '#e01a37', soft: '#f3efeb', paper: '#fffdfb' },
+      hero: '/assets/goriffee/hero.jpg',
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
     }
   };
 

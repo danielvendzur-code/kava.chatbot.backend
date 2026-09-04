@@ -158,6 +158,21 @@ const { name, place, shopUrl, storyUrl } = data.brand;
 const heroId = best((p) => p.prep.automat + p.drink.both);
 const logoPath = `/assets/${slug}/${path.basename(logo)}`;
 
+/* An SVG that declares width="100%" height="100%" has no intrinsic size, and
+   inside an <img> constrained only by max-height it lays out at nothing at all
+   — the lockup loads and draws a header with a hole in it. The viewBox already
+   carries the real proportions. */
+if (logo.endsWith('.svg')) {
+  const before = fs.readFileSync(logo, 'utf8');
+  const box = before.match(/viewBox="0 0 ([\d.]+) ([\d.]+)"/);
+  if (box && /width="100%"/.test(before)) {
+    fs.writeFileSync(logo, before
+      .replace('width="100%"', `width="${box[1]}"`)
+      .replace('height="100%"', `height="${box[2]}"`));
+    console.log(`  ${path.relative(ROOT, logo)} (doplnená veľkosť)`);
+  }
+}
+
 const JOLKA = {
   brand: { name, place, shopUrl, storyUrl, author: 'mojchatbot.sk' },
   acidityScale: ['minimálna', 'jemná', 'stredná', 'výrazná'],
@@ -203,10 +218,19 @@ console.log(`${name}:`);
 write(`${slug}-jolka-data.js`, `window.JOLKA=${JSON.stringify(JOLKA)};\n`);
 
 const c = data.colors;
+/* The lockup is drawn in the brand's ink, which reads on the light owner page
+   and disappears on the widget header, the avatar and the launcher disc when
+   those are painted in that same ink. There it is inverted to white. */
+const luminance = (hex) => {
+  const [r, g, b] = [1, 3, 5].map((at) => parseInt(hex.slice(at, at + 2), 16) / 255)
+    .map((v) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4));
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+};
+const invert = luminance(c.brand) < 0.4 ? ';filter:brightness(0) invert(1)' : '';
 const mix = (hex, pct) => hex; // brand tokens stay literal; the shared system does the shading
 write(`${slug}-jolka-theme.css`, `/* ${name} brand tokens on the shared Jolka system. */
 :root{--ink:${c.ink};--ink-2:${c.brand};--ink-3:${c.brand};--paper:${c.paper};--surface:#fff;--surface-2:${c.soft};--line:${c.line || '#e3ded6'};--line-strong:${c.line || '#cec8bf'};--kraft:${c.accent};--kraft-deep:${c.accent};--kraft-tint:${c.soft};--text:${c.ink};--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
-body.${slug}-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
+body.${slug}-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain${invert}}
 body.${slug}-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
 body.${slug}-clean .msg__avatar img{width:30px!important;height:30px!important}
 body.${slug}-clean .launcher__button img{width:54px!important;height:54px!important}

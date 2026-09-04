@@ -1,0 +1,244 @@
+{
+ "slug": "goriffee",
+ "brand": {
+  "name": "Goriffee roastery",
+  "place": "Goriffee roastery · Bratislava",
+  "shopUrl": "https://www.goriffee.com/shop/kava/",
+  "storyUrl": "https://www.goriffee.com/"
+ },
+ "colors": {
+  "ink": "#121212",
+  "brand": "#121212",
+  "accent": "#e01a37",
+  "soft": "#f3efeb",
+  "paper": "#fffdfb",
+  "line": "#e3ddd6"
+ },
+ "chips": [
+  "Káva do automatu",
+  "Káva na filter",
+  "Niečo netradičné",
+  "Bez kofeínu"
+ ],
+ "products": [
+  {
+   "id": "jednoducho",
+   "name": "Jednoducho káva espresso blend",
+   "line": "Espresso blend · Full City Roast",
+   "url": "https://www.goriffee.com/shop/kava/vyberova-kava-na-espresso/jednoducho-kava-espresso-blend/",
+   "price": "7,80 €",
+   "priceUnit": "200 g",
+   "weights": "200 g a 1 kg",
+   "notes": [
+    "kávová",
+    "horká",
+    "silná"
+   ],
+   "acidity": 0,
+   "acidityNote": "Klasický kávový profil bez ovocnej kyslosti.",
+   "bestFor": "Automat, páka a moka",
+   "why": "Bez ovocných experimentov — poriadne silná káva s klasickým profilom pre každodenné espresso aj mliečne nápoje.",
+   "taste": {
+    "chocolate": 0.9,
+    "balanced": 0.8,
+    "fruity": 0.05,
+    "bold": 0.6
+   },
+   "prep": {
+    "automat": 1,
+    "lever": 0.95,
+    "moka": 0.9,
+    "filter": 0.3
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 1,
+    "both": 1
+   },
+   "explore": 0.1
+  },
+  {
+   "id": "morada",
+   "name": "Brazil Morada da Prata Natural",
+   "line": "Brazília · Fazenda Morada da Prata · natural",
+   "url": "https://www.goriffee.com/shop/kava/brazil-morada-da-prata-natural/",
+   "price": "14,00 €",
+   "priceUnit": "250 g",
+   "weights": "250 g a 1 kg",
+   "notes": [
+    "orechová",
+    "ovocná",
+    "sladká"
+   ],
+   "acidity": 1,
+   "acidityNote": "Sladký natural s jemnou kyslosťou.",
+   "bestFor": "Espresso, moka a automat",
+   "why": "Rodinná farma s históriou od roku 1936. Sladká brazília na espresso, tentokrát trochu inak.",
+   "taste": {
+    "chocolate": 0.85,
+    "balanced": 0.95,
+    "fruity": 0.45,
+    "bold": 0.35
+   },
+   "prep": {
+    "automat": 0.9,
+    "lever": 1,
+    "moka": 0.95,
+    "filter": 0.35
+   },
+   "drink": {
+    "black": 0.95,
+    "milk": 0.85,
+    "both": 1
+   },
+   "explore": 0.3
+  },
+  {
+   "id": "aricha",
+   "name": "Ethiopia Aricha Washed",
+   "line": "Etiópia · Yirgacheffe · praná",
+   "url": "https://www.goriffee.com/shop/kava/vyberova-kava-na-filter/ethiopia-aricha-washed/",
+   "price": "16,00 €",
+   "priceUnit": "250 g",
+   "weights": "250 g a 1 kg",
+   "notes": [
+    "florálna",
+    "ovocná",
+    "sladká"
+   ],
+   "acidity": 3,
+   "acidityNote": "Svieža praná Etiópia s výraznou ovocnou aciditou.",
+   "bestFor": "Filter — V60, Chemex, Aeropress",
+   "why": "Zo stanice Aricha v srdci Yirgacheffe, z nadmorskej výšky 1900 – 2100 m. Kvetinová a sladká káva na filter.",
+   "taste": {
+    "chocolate": 0.05,
+    "balanced": 0.5,
+    "fruity": 1,
+    "bold": 0.55
+   },
+   "prep": {
+    "automat": 0.05,
+    "lever": 0.2,
+    "moka": 0.05,
+    "filter": 1
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.05,
+    "both": 0.2
+   },
+   "explore": 0.8
+  },
+  {
+   "id": "senda",
+   "name": "Guatemala Finca La Senda Champagne Yeast",
+   "line": "Guatemala · Finca La Senda · odroda Pache",
+   "url": "https://www.goriffee.com/shop/kava/vyberova-kava-na-filter/guatemala-finca-la-senda-champagne-yeast/",
+   "price": "17,00 €",
+   "priceUnit": "250 g",
+   "weights": "250 g a 1 kg",
+   "notes": [
+    "citrusová",
+    "fermentovaná",
+    "sladká"
+   ],
+   "acidity": 2,
+   "acidityNote": "Fermentovaný profil s citrusovou sviežosťou.",
+   "bestFor": "Filter a Aeropress",
+   "why": "Farma, kde je káva neustály experiment — tento lot prešiel fermentáciou so šampanskými kvasinkami.",
+   "taste": {
+    "chocolate": 0.1,
+    "balanced": 0.45,
+    "fruity": 0.9,
+    "bold": 1
+   },
+   "prep": {
+    "automat": 0.05,
+    "lever": 0.3,
+    "moka": 0.05,
+    "filter": 0.95
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.05,
+    "both": 0.2
+   },
+   "explore": 1
+  },
+  {
+   "id": "marshmallow",
+   "name": "Marshmallow brewing blend",
+   "line": "Zmes na filter · Afrika a Južná Amerika",
+   "url": "https://www.goriffee.com/shop/kava/vyberova-kava-na-filter/marshmallow-brewing-blend/",
+   "price": "19,00 €",
+   "priceUnit": "250 g",
+   "weights": "250 g a 1 kg",
+   "notes": [
+    "jahoda",
+    "malina",
+    "vanilka"
+   ],
+   "acidity": 2,
+   "acidityNote": "Sladká ovocná zmes so strednou aciditou.",
+   "bestFor": "Filter a Cold Brew",
+   "why": "Svieža jahoda, šťavnaté maliny a jemná vanilka — chuť, ktorá pripomína mäkké marshmallow.",
+   "taste": {
+    "chocolate": 0.15,
+    "balanced": 0.6,
+    "fruity": 0.95,
+    "bold": 0.5
+   },
+   "prep": {
+    "automat": 0.1,
+    "lever": 0.25,
+    "moka": 0.1,
+    "filter": 0.9
+   },
+   "drink": {
+    "black": 0.95,
+    "milk": 0.2,
+    "both": 0.35
+   },
+   "explore": 0.7
+  },
+  {
+   "id": "tumbaga",
+   "name": "Colombia Tumbaga decaf na espresso",
+   "line": "Kolumbia · bez kofeínu · Medium Roast",
+   "url": "https://www.goriffee.com/shop/kava/bezkofeinova-kava/colombia-tumbaga-decaf-na-espresso/",
+   "price": "13,00 €",
+   "priceUnit": "250 g",
+   "weights": "250 g a 1 kg",
+   "notes": [
+    "telo",
+    "sladkosť",
+    "karamel"
+   ],
+   "acidity": 1,
+   "acidityNote": "Plný bezkofeínový profil s jemnou aciditou.",
+   "bestFor": "Espresso aj mliečne nápoje",
+   "why": "Decaf vyladený na espresso, v ktorom naplno vynikne mohutné telo a intenzívna sladkosť.",
+   "taste": {
+    "chocolate": 0.85,
+    "balanced": 0.9,
+    "fruity": 0.25,
+    "bold": 0.4
+   },
+   "prep": {
+    "automat": 0.7,
+    "lever": 1,
+    "moka": 0.85,
+    "filter": 0.5
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 0.9,
+    "both": 1
+   },
+   "explore": 0.2,
+   "decaf": true
+  }
+ ],
+ "logoUrl": "https://www.goriffee.com/wp-content/uploads/2025/10/gorifee-logo.svg",
+ "heroPhotoUrl": "https://www.goriffee.com/wp-content/uploads/2024/03/My-First-Figma-Weave_ChatGPT-Images-2.0-Edit_2026-07-29_10-06-07-1-1.jpg"
+}
