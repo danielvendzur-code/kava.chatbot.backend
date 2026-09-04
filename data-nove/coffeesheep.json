@@ -1,0 +1,246 @@
+{
+ "slug": "coffeesheep",
+ "brand": {
+  "name": "Coffee Sheep",
+  "place": "Coffee Sheep · Trenčín",
+  "shopUrl": "https://www.coffeesheep.sk/kava/",
+  "storyUrl": "https://www.coffeesheep.sk/"
+ },
+ "colors": {
+  "ink": "#3a2a16",
+  "brand": "#583408",
+  "accent": "#a8442b",
+  "soft": "#f4ede2",
+  "paper": "#fffdf8",
+  "line": "#e5dccc"
+ },
+ "ownerTitle": "Sedem káv zúžte na jednu, ktorá zákazníkovi sadne.",
+ "ownerLead": "Coffee Sheep má zmesi na espresso aj single origin z Kene či Indonézie. Chat odpovie na otázku o pôvode aj chuti a výber cez štyri otázky skončí pri jednej konkrétnej káve.",
+ "chips": [
+  "Káva do automatu",
+  "Káva na filter",
+  "Niečo netradičné",
+  "Bez kofeínu"
+ ],
+ "products": [
+  {
+   "id": "sheepresso",
+   "name": "Sheepresso",
+   "line": "Zmes arabík z Brazílie, Kolumbie, Etiópie a Indie + indická robusta",
+   "url": "https://www.coffeesheep.sk/kava/sheepresso/",
+   "price": "od 8,90 €",
+   "priceUnit": "250 g",
+   "weights": "250 g – 1 kg",
+   "notes": [
+    "intenzívna",
+    "vyvážená",
+    "plné telo"
+   ],
+   "acidity": 0,
+   "acidityNote": "Intenzívna zmes bez ovocnej kyslosti.",
+   "bestFor": "Espresso, automat a moka",
+   "why": "Ich najobľúbenejšia espresso zmes — káva s intenzívnou a vyváženou chuťou, stavaná na top espresso.",
+   "taste": {
+    "chocolate": 0.9,
+    "balanced": 0.85,
+    "fruity": 0.05,
+    "bold": 0.8
+   },
+   "prep": {
+    "automat": 1,
+    "lever": 0.95,
+    "moka": 0.9,
+    "filter": 0.25
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 1,
+    "both": 1
+   },
+   "explore": 0.1
+  },
+  {
+   "id": "belmondo",
+   "name": "Belmondo Espresso Blend",
+   "line": "Zmes 100 % arabica · Kolumbia a India",
+   "url": "https://www.coffeesheep.sk/kava/belmondo-espresso-blend/",
+   "price": "od 9,30 €",
+   "priceUnit": "250 g",
+   "weights": "250 g – 1 kg",
+   "notes": [
+    "čokoláda",
+    "kakao",
+    "jemné korenie"
+   ],
+   "acidity": 0,
+   "acidityNote": "Čokoládový profil s minimálnou aciditou.",
+   "bestFor": "Espresso a mliečne nápoje",
+   "why": "Spája čokoládovo-kakaovú Kolumbiu s elegantne korenistou Indiou — zmes na výnimočné espresso.",
+   "taste": {
+    "chocolate": 1,
+    "balanced": 0.85,
+    "fruity": 0.15,
+    "bold": 0.6
+   },
+   "prep": {
+    "automat": 0.85,
+    "lever": 1,
+    "moka": 0.9,
+    "filter": 0.35
+   },
+   "drink": {
+    "black": 0.95,
+    "milk": 0.95,
+    "both": 1
+   },
+   "explore": 0.2
+  },
+  {
+   "id": "supremo",
+   "name": "Colombia Supremo",
+   "line": "Kolumbia · 100 % arabica",
+   "url": "https://www.coffeesheep.sk/kava/colombia-supremo/",
+   "price": "od 9,30 €",
+   "priceUnit": "250 g",
+   "weights": "250 g – 1 kg",
+   "notes": [
+    "čokoláda",
+    "kakao",
+    "zamatová dochuť"
+   ],
+   "acidity": 1,
+   "acidityNote": "Jemná acidita v závere, plná a zamatová dochuť.",
+   "bestFor": "Všetky spôsoby prípravy",
+   "why": "Výrazne voňavá, univerzálna káva vhodná na všetky spôsoby prípravy.",
+   "taste": {
+    "chocolate": 0.9,
+    "balanced": 1,
+    "fruity": 0.3,
+    "bold": 0.4
+   },
+   "prep": {
+    "automat": 0.9,
+    "lever": 0.95,
+    "moka": 0.9,
+    "filter": 0.7
+   },
+   "drink": {
+    "black": 0.95,
+    "milk": 0.85,
+    "both": 1
+   },
+   "explore": 0.3
+  },
+  {
+   "id": "kenya",
+   "name": "Kenya Kiambu",
+   "line": "Keňa · Kiambu · 100 % arabica",
+   "url": "https://www.coffeesheep.sk/kava/kenya/",
+   "price": "od 10,10 €",
+   "priceUnit": "250 g",
+   "weights": "250 g – 1 kg",
+   "notes": [
+    "ovocná dochuť",
+    "aromatická",
+    "stredné telo"
+   ],
+   "acidity": 3,
+   "acidityNote": "Výrazná, ale neagresívna acidita.",
+   "bestFor": "Filter, french press a moka",
+   "why": "Aromatická káva s výraznou, neagresívnou aciditou a dlhou ovocnou chuťou. Super na alternatívnu prípravu.",
+   "taste": {
+    "chocolate": 0.15,
+    "balanced": 0.55,
+    "fruity": 1,
+    "bold": 0.6
+   },
+   "prep": {
+    "automat": 0.15,
+    "lever": 0.4,
+    "moka": 0.55,
+    "filter": 1
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.1,
+    "both": 0.3
+   },
+   "explore": 0.8
+  },
+  {
+   "id": "aceh",
+   "name": "Indonesia Aceh Gayo",
+   "line": "Indonézia · Aceh Gayo · vulkanické svahy",
+   "url": "https://www.coffeesheep.sk/kava/indonesia-aceh-gayo/",
+   "price": "od 10,60 €",
+   "priceUnit": "250 g",
+   "weights": "250 g – 1 kg",
+   "notes": [
+    "zemitá",
+    "korenistá",
+    "plné telo"
+   ],
+   "acidity": 2,
+   "acidityNote": "Netradičný indonézsky profil so strednou aciditou.",
+   "bestFor": "Filter, moka a french press",
+   "why": "Káva pestovaná v súlade s prírodou zo svahov vulkanického masívu okolo jazera Laut Tawar.",
+   "taste": {
+    "chocolate": 0.4,
+    "balanced": 0.5,
+    "fruity": 0.55,
+    "bold": 1
+   },
+   "prep": {
+    "automat": 0.2,
+    "lever": 0.5,
+    "moka": 0.75,
+    "filter": 0.9
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.2,
+    "both": 0.4
+   },
+   "explore": 1
+  },
+  {
+   "id": "decaf",
+   "name": "Brazil Santos Carbonic Natural Decaf",
+   "line": "Brazília · bez kofeínu · 100 % arabica",
+   "url": "https://www.coffeesheep.sk/kava/brazil-santos-carbonic-natural-decaf/",
+   "price": "od 9,90 €",
+   "priceUnit": "250 g",
+   "weights": "250 g – 1 kg",
+   "notes": [
+    "tmavá čokoláda",
+    "kakao",
+    "oriešky"
+   ],
+   "acidity": 1,
+   "acidityNote": "Sladký bezkofeínový profil s nízkou aciditou.",
+   "bestFor": "Espresso aj filter",
+   "why": "Chute tmavej čokolády a kakaa s orieškovými tónmi. Je na nerozoznanie od kávy s obsahom kofeínu.",
+   "taste": {
+    "chocolate": 0.95,
+    "balanced": 0.9,
+    "fruity": 0.2,
+    "bold": 0.4
+   },
+   "prep": {
+    "automat": 0.75,
+    "lever": 0.95,
+    "moka": 0.85,
+    "filter": 0.6
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 0.9,
+    "both": 1
+   },
+   "explore": 0.2,
+   "decaf": true
+  }
+ ],
+ "logoUrl": "https://cdn.myshoptet.com/usr/www.coffeesheep.sk/user/logos/coffee-sheep-logo-2011.svg",
+ "heroPhotoUrl": "https://cdn.myshoptet.com/usr/www.coffeesheep.sk/user/shop/big/233-11_coffee-sheep-kava-sheepresso-250g-real-10.jpg"
+}

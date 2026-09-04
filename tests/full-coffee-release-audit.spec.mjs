@@ -15,7 +15,8 @@ const demos = [
   ['concept', '/concept.html'],
   ['jolka', '/jolka.html'],
   ['goriffee', '/goriffee.html'],
-  ['readyafter', '/readyafter.html']
+  ['readyafter', '/readyafter.html'],
+  ['coffeesheep', '/coffeesheep.html']
 ];
 
 function monitor(page) {

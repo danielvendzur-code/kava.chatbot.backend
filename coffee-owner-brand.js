@@ -129,7 +129,7 @@
       name: "Goriffee roastery",
       place: "Goriffee roastery · Bratislava",
       title: "Z veľkej ponuky doveďte zákazníka k jednej káve.",
-      lead: "Goriffee praží každý týždeň a v ponuke sú blendy, single origin aj decaf. Chat odpovie na otázku o pôvode aj chuti, výber cez štyri otázky skončí pri jednej konkrétnej káve.",
+      lead: "Goriffee praží v Bratislave každý týždeň a v ponuke sú blendy, single origin aj decaf. Chat odpovie na otázku o pôvode aj chuti a výber cez štyri otázky skončí pri jednej konkrétnej káve.",
       root: '.goriffee-page',
       shop: "https://www.goriffee.com/shop/kava/",
       lockup: '<img src="/assets/goriffee/logo.svg" alt="Goriffee roastery">',
@@ -141,13 +141,26 @@
     readyafter: {
       name: "Ready After",
       place: "Ready After · Bošany",
-      title: "Zákazník nemusí poznať pôvod ani spracovanie.",
-      lead: "Ready After má blendy aj single origin z Etiópie, Burundi či Kolumbie. Chat vysvetlí rozdiel a výber cez štyri otázky skončí pri jednej konkrétnej káve.",
+      title: "Poraďte s výberom kávy aj mimo otváracích hodín.",
+      lead: "Ready After má blendy aj single origin z Etiópie, Burundi či Kolumbie. Chat odpovie na otázku o pôvode, spracovaní aj chuti a výber cez štyri otázky skončí pri jednej konkrétnej káve.",
       root: '.readyafter-page',
       shop: "https://www.readyafter.sk/zrnkova-kava/",
       lockup: '<img src="/assets/readyafter/logo.png" alt="Ready After">',
       theme: { ink: '#1c1c1c', brand: '#e41d19', accent: '#e41d19', soft: '#f6f1ef', paper: '#fffdfc' },
       hero: '/assets/readyafter/hero.jpg',
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+    },
+
+    coffeesheep: {
+      name: "Coffee Sheep",
+      place: "Coffee Sheep · Trenčín",
+      title: "Sedem káv zúžte na jednu, ktorá zákazníkovi sadne.",
+      lead: "Coffee Sheep má zmesi na espresso aj single origin z Kene či Indonézie. Chat odpovie na otázku o pôvode aj chuti a výber cez štyri otázky skončí pri jednej konkrétnej káve.",
+      root: '.coffeesheep-page',
+      shop: "https://www.coffeesheep.sk/kava/",
+      lockup: '<img src="/assets/coffeesheep/logo.svg" alt="Coffee Sheep">',
+      theme: { ink: '#3a2a16', brand: '#583408', accent: '#a8442b', soft: '#f4ede2', paper: '#fffdf8' },
+      hero: '/assets/coffeesheep/hero.jpg',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
     }
   };

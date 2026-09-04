@@ -35,8 +35,14 @@ need(data.brand && text(data.brand.name), 'brand.name chýba');
 need(data.brand && text(data.brand.place), 'brand.place chýba');
 need(data.brand && /^https?:\/\//.test(data.brand.shopUrl || ''), 'brand.shopUrl chýba');
 need(data.brand && /^https?:\/\//.test(data.brand.storyUrl || ''), 'brand.storyUrl chýba');
-need(text(data.ownerTitle), 'ownerTitle chýba — jedna veta o tom, čo poradca urobí práve pre tento e-shop');
-need(text(data.ownerLead), 'ownerLead chýba — dve vety, ktoré to rozvedú');
+/* The page is read by the roastery's owner, not by their customer: the
+   headline is an instruction to them about what the advisor will do for their
+   shop — "Poraďte…", "Doveďte…", "Zúžte…" — never a sentence addressed to a
+   visitor choosing coffee. */
+need(text(data.ownerTitle), 'ownerTitle chýba — veta pre majiteľa: čo poradca urobí pre jeho e-shop');
+need(!/\b(?:vaša|vašu|vám sadne|tá vaša)\b/i.test(data.ownerTitle || ''),
+  'ownerTitle je písaný zákazníkovi — otočte ho na majiteľa (Poraďte…, Doveďte…, Zúžte…)');
+need(text(data.ownerLead), 'ownerLead chýba — dve vety pre majiteľa: čo chat odpovie a kam výber dovedie');
 
 const HEX = /^#[0-9a-fA-F]{6}$/;
 ['ink', 'brand', 'accent', 'soft', 'paper'].forEach((key) =>

@@ -1,0 +1,6 @@
+/* Coffee Sheep brand tokens on the shared Jolka system. */
+:root{--ink:#3a2a16;--ink-2:#583408;--ink-3:#583408;--paper:#fffdf8;--surface:#fff;--surface-2:#f4ede2;--line:#e5dccc;--line-strong:#e5dccc;--kraft:#a8442b;--kraft-deep:#a8442b;--kraft-tint:#f4ede2;--text:#3a2a16;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.coffeesheep-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.coffeesheep-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.coffeesheep-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.coffeesheep-clean .launcher__button img{width:54px!important;height:54px!important}
