@@ -1,0 +1,6 @@
+/* Be:Café brand tokens on the shared Jolka system. */
+:root{--ink:#151310;--ink-2:#121212;--ink-3:#121212;--paper:#fffefa;--surface:#fff;--surface-2:#faf3d8;--line:#eee3bd;--line-strong:#eee3bd;--kraft:#b3860d;--kraft-deep:#b3860d;--kraft-tint:#faf3d8;--text:#151310;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.becafe-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.becafe-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.becafe-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.becafe-clean .launcher__button img{width:54px!important;height:54px!important}

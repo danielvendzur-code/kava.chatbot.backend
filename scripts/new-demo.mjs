@@ -311,12 +311,11 @@ const patch = (file, find, replacement, describe) => {
   const file = 'coffee-owner-brand.js';
   const full = path.join(ROOT, file);
   const before = fs.readFileSync(full, 'utf8');
-  if (before.includes(`${slug}: {`)) { console.log(`  ${file} (uz tam je)`); }
-  else {
+  {
     const open = before.indexOf('const BRANDS = {');
     const close = before.indexOf('\n  };', open);
     if (open === -1 || close === -1) throw new Error(`${file}: nenasiel som tabulku BRANDS`);
-    const entry = `,\n\n    ${slug}: {\n`
+    const body = `    ${slug}: {\n`
       + `      name: ${JSON.stringify(name)},\n`
       + `      place: ${JSON.stringify(place)},\n`
       + `      title: ${JSON.stringify(data.ownerTitle)},\n`
@@ -328,8 +327,72 @@ const patch = (file, find, replacement, describe) => {
       + `      hero: '/assets/${slug}/hero.jpg',\n`
       + `      figures: commonFigures('príprava · chuť · nápoj · kofeín')\n`
       + `    }`;
-    fs.writeFileSync(full, before.slice(0, close) + entry + before.slice(close));
+
+    /* Re-running the generator after a wording change has to reach the page,
+       not stop at "it is already there" and leave the old sentence in the
+       table. An entry that exists is replaced in place; a new one is inserted
+       before the closing brace, with the comma the last entry does not carry. */
+    const at = before.indexOf(`    ${slug}: {`);
+    if (at === -1) {
+      fs.writeFileSync(full, `${before.slice(0, close)},\n\n${body}${before.slice(close)}`);
+      console.log('  ' + file);
+    } else {
+      const end = before.indexOf('\n    }', at);
+      if (end === -1) throw new Error(`${file}: nenasiel som koniec zaznamu ${slug}`);
+      const after = before.slice(0, at) + body + before.slice(end + '\n    }'.length);
+      if (after === before) console.log(`  ${file} (bez zmeny)`);
+      else { fs.writeFileSync(full, after); console.log(`  ${file} (aktualizovane)`); }
+    }
+  }
+}
+
+/* The live chat asks api/chat.js which coffees exist; a demo missing from that
+   table gets "Unknown demo" and the page falls back to its offline answers, so
+   the model never speaks for the shop. The entry is built from the same data
+   the page uses, which is why it cannot drift from it. */
+{
+  const file = 'api/chat.js';
+  const full = path.join(ROOT, file);
+  const before = fs.readFileSync(full, 'utf8');
+  const byId = (id) => products.find((p) => p.id === id);
+  const label = (p) => `${p.name} – ${p.notes.join(', ')}; ${p.bestFor}`
+    + (p.decaf ? '; bez kofeínu' : '');
+  /* The table keeps every answer to two short sentences; a product blurb that
+     runs to three would make the offline reply longer than the model's. */
+  const firstSentence = (text) => `${String(text).split(/(?<=\.)\s+/)[0]}`;
+  const pick = (id) => byId(id) || products[0];
+  const automat = pick(best((p) => p.prep.automat));
+  const milk = pick(best((p) => p.drink.milk));
+  const filtered = pick(best((p) => p.prep.filter));
+  const decaf = products.find((p) => p.decaf) || filtered;
+  const hero = pick(heroId);
+  const body = `  ${slug}: {\n`
+    + `    brand: ${JSON.stringify(name)}, web: ${JSON.stringify(shopUrl)},\n`
+    + `    products: [\n`
+    + products.map((p) => `      ${JSON.stringify(label(p))}`).join(',\n') + '\n'
+    + `    ],\n`
+    + `    fallback: {\n`
+    + `      automatic: ${JSON.stringify(`Do automatu je dobrý východiskový bod ${automat.name}. ${automat.acidityNote}`)},\n`
+    + `      milk: ${JSON.stringify(`Do mlieka sa hodí ${milk.name}. ${firstSentence(milk.why)}`)},\n`
+    + `      filter: ${JSON.stringify(`Na filter siahnite po ${filtered.name}. ${filtered.acidityNote}`)},\n`
+    + `      decaf: ${JSON.stringify(`Bez kofeínu je v ponuke ${decaf.name}. ${firstSentence(decaf.why)}`)},\n`
+    + `      default: ${JSON.stringify(`Ak chcete začať istotou, dobrým smerom je ${hero.name}. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete.`)}\n`
+    + `    }\n`
+    + `  }`;
+
+  const at = before.indexOf(`\n  ${slug}: {`);
+  if (at === -1) {
+    const open = before.indexOf('const DEMOS = {');
+    const close = before.indexOf('\n};', open);
+    if (open === -1 || close === -1) throw new Error(`${file}: nenasiel som tabulku DEMOS`);
+    fs.writeFileSync(full, `${before.slice(0, close)},\n${body}${before.slice(close)}`);
     console.log('  ' + file);
+  } else {
+    const end = before.indexOf('\n  }', at + 1);
+    if (end === -1) throw new Error(`${file}: nenasiel som koniec zaznamu ${slug}`);
+    const after = before.slice(0, at + 1) + body + before.slice(end + '\n  }'.length);
+    if (after === before) console.log(`  ${file} (bez zmeny)`);
+    else { fs.writeFileSync(full, after); console.log(`  ${file} (aktualizovane)`); }
   }
 }
 
@@ -342,7 +405,64 @@ if (!routerText.includes(`'${slug}'`)) {
   console.log('  coffee-final-entry.js');
 }
 
+/* A demo path that carries no cache policy is served from whatever the CDN
+   still holds, which is how the live links kept showing an older build. The
+   one-segment routes name every slug, so a new one has to join them. */
+{
+  const file = 'vercel.json';
+  const full = path.join(ROOT, file);
+  const before = fs.readFileSync(full, 'utf8');
+  if (before.includes(`|${slug}|`)) console.log(`  ${file} (uz tam je)`);
+  else {
+    const after = before.replaceAll('|mylo|', `|${slug}|mylo|`);
+    if (after === before) throw new Error(`${file}: nenasiel som zoznam ukazok`);
+    JSON.parse(after);
+    fs.writeFileSync(full, after);
+    console.log('  ' + file);
+  }
+}
+
 patch('ukazky.html', '\n    </ul>', `\n      <li><a href="/${slug}/">${name}</a></li>\n    </ul>`, 'zoznam ukážok');
+
+/* The index says how many demos it lists; adding one without saying so leaves
+   the sentence counting the wrong number. It is recomputed from the lists. */
+{
+  const file = 'ukazky.html';
+  const full = path.join(ROOT, file);
+  const before = fs.readFileSync(full, 'utf8');
+  const counts = [...before.matchAll(/<ul>([\s\S]*?)<\/ul>/g)]
+    .map((block) => (block[1].match(/<li>/g) || []).length);
+  const word = (n) => ['nula', 'jedna', 'dve', 'tri', 'štyri', 'päť', 'šesť', 'sedem', 'osem',
+    'deväť', 'desať', 'jedenásť', 'dvanásť', 'trinásť', 'štrnásť', 'pätnásť', 'šestnásť',
+    'sedemnásť', 'osemnásť', 'devätnásť', 'dvadsať'][n] || String(n);
+  const total = counts.reduce((sum, n) => sum + n, 0);
+  const lead = `<p class="lead">${word(total).replace(/^./, (ch) => ch.toUpperCase())} ukážok — `
+    + `${word(counts[0])} pražiarní a ${word(counts[1])} značiek starostlivosti.</p>`;
+  const after = before.replace(/<p class="lead">[^<]*<\/p>/, lead);
+  if (after === before) console.log(`  ${file} (bez zmeny)`);
+  else { fs.writeFileSync(full, after); console.log(`  ${file} (pocet aktualizovany)`); }
+}
+
+/* A product link that 404s or errors is the one defect a demo cannot survive:
+   the recommendation ends at a broken page in the shop's own e-shop. The links
+   are checked here rather than discovered by the owner. Node's fetch ignores
+   the proxy this environment sets, so curl does the asking; no network means no
+   check, never a failed build. */
+if (!process.argv.includes('--no-links')) {
+  const links = [shopUrl, ...products.map((p) => p.url)];
+  const codes = links.map((url) => {
+    try {
+      return execFileSync('curl', ['-s', '-o', '/dev/null', '-w', '%{http_code}', '-L',
+        '-m', '20', url], { encoding: 'utf8' }).trim();
+    } catch { return '000'; }
+  });
+  if (codes.every((code) => code === '000')) console.log('\nOdkazy: bez siete, nekontrolované.');
+  else {
+    const broken = links.map((url, i) => [url, codes[i]]).filter(([, code]) => !/^2/.test(code));
+    if (!broken.length) console.log(`\nOdkazy: ${links.length}× v poriadku.`);
+    else broken.forEach(([url, code]) => console.log(`\nPOZOR: ${url} vracia ${code}`));
+  }
+}
 
 execFileSync(process.execPath, [path.join(ROOT, 'scripts/stamp-assets.mjs')], { stdio: 'inherit' });
 console.log(`\nHotové. Otvorte http://localhost:4400/${slug}/`);

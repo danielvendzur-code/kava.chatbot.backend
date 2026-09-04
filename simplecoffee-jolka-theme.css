@@ -1,0 +1,6 @@
+/* Simple Coffee brand tokens on the shared Jolka system. */
+:root{--ink:#24262b;--ink-2:#24262b;--ink-3:#24262b;--paper:#fffaf4;--surface:#fff;--surface-2:#f7f0e4;--line:#ece0cd;--line-strong:#ece0cd;--kraft:#9a7c46;--kraft-deep:#9a7c46;--kraft-tint:#f7f0e4;--text:#24262b;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.simplecoffee-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.simplecoffee-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.simplecoffee-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.simplecoffee-clean .launcher__button img{width:54px!important;height:54px!important}

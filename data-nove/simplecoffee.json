@@ -1,0 +1,246 @@
+{
+ "slug": "simplecoffee",
+ "brand": {
+  "name": "Simple Coffee",
+  "place": "Simple Coffee · Bratislava",
+  "shopUrl": "https://simplecoffee.sk/kategorie/zrnkova-kava/",
+  "storyUrl": "https://simplecoffee.sk/"
+ },
+ "colors": {
+  "ink": "#24262b",
+  "brand": "#24262b",
+  "accent": "#9a7c46",
+  "soft": "#f7f0e4",
+  "paper": "#fffaf4",
+  "line": "#ece0cd"
+ },
+ "ownerTitle": "Chatbot vyberie kávu podľa chuti aj spôsobu prípravy.",
+ "ownerLead": "Ponuka je delená podľa chuti, prípravy aj momentu — zákazník to však musí prejsť sám. Chatbot ho ponukou prevedie, odpovie na otázky o pôvode aj kyslosti a na konci odporučí jednu konkrétnu kávu.",
+ "chips": [
+  "Káva do automatu",
+  "Káva na filter",
+  "Niečo ovocné",
+  "Bez kofeínu"
+ ],
+ "products": [
+  {
+   "id": "oro",
+   "name": "Oro Nero",
+   "line": "Zmes 80 % robusta z Indie / 20 % arabika z Brazílie",
+   "url": "https://simplecoffee.sk/produkt/zrnkova-kava-oro-nero/",
+   "price": "od 8,90 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "čokoláda a oriešky",
+    "hustá créma",
+    "vysoký kofeín"
+   ],
+   "acidity": 0,
+   "acidityNote": "Nízka kyslosť, plné telo.",
+   "bestFor": "Automat a pákový kávovar",
+   "why": "Pre tých, ktorým bežné espresso nestačí. Plné telo, hustá créma a výrazná čokoládovo-oriešková chuť s vyšším obsahom kofeínu.",
+   "taste": {
+    "chocolate": 0.95,
+    "balanced": 0.5,
+    "fruity": 0.03,
+    "bold": 1
+   },
+   "prep": {
+    "automat": 1,
+    "lever": 0.95,
+    "moka": 0.9,
+    "filter": 0.1
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 0.95,
+    "both": 0.95
+   },
+   "explore": 0.25
+  },
+  {
+   "id": "prava",
+   "name": "Tá pravá káva",
+   "line": "Zmes · každodenná káva · jemná acidita",
+   "url": "https://simplecoffee.sk/produkt/ta-prava-kava/",
+   "price": "od 9,90 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "mliečna čokoláda",
+    "oriešky",
+    "krémové telo"
+   ],
+   "acidity": 1,
+   "acidityNote": "Veľmi jemná, decentne zakomponovaná.",
+   "bestFor": "Každodenná káva do kávovaru",
+   "why": "Káva o rovnováhe, nie o extrémoch. Jemné tóny mliečnej čokolády a orieškov, hladké krémové telo a dlhá čistá dochuť.",
+   "taste": {
+    "chocolate": 0.85,
+    "balanced": 1,
+    "fruity": 0.25,
+    "bold": 0.3
+   },
+   "prep": {
+    "automat": 0.95,
+    "lever": 0.9,
+    "moka": 0.85,
+    "filter": 0.4
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 1,
+    "both": 1
+   },
+   "explore": 0.15
+  },
+  {
+   "id": "mexiko",
+   "name": "Mexiko SHG EP",
+   "line": "Mexiko · 100 % arabika · jednodruhová",
+   "url": "https://simplecoffee.sk/produkt/zrnkova-kava-z-mexika/",
+   "price": "od 9,90 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "čokoláda",
+    "oriešky",
+    "ľahký ovocný tón"
+   ],
+   "acidity": 1,
+   "acidityNote": "Sviežosť bez nepríjemnej kyslosti.",
+   "bestFor": "Espresso aj mlieko",
+   "why": "Jemná, vyvážená a príjemne sladká káva so stredným telom. Nie je príliš kyslá, nepôsobí ťažko a chutí znova a znova.",
+   "taste": {
+    "chocolate": 0.8,
+    "balanced": 0.9,
+    "fruity": 0.35,
+    "bold": 0.25
+   },
+   "prep": {
+    "automat": 0.85,
+    "lever": 0.85,
+    "moka": 0.8,
+    "filter": 0.6
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 0.9,
+    "both": 0.9
+   },
+   "explore": 0.3
+  },
+  {
+   "id": "running",
+   "name": "RUNNING HIGH",
+   "line": "Etiópia + Keňa · svetlé praženie · na filter",
+   "url": "https://simplecoffee.sk/produkt/running-high-svieza-ovocna-kava-na-filter/",
+   "price": "od 9,90 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "kvetinová Etiópia",
+    "jasná kyslosť",
+    "šťavnatá a ľahká"
+   ],
+   "acidity": 3,
+   "acidityNote": "Jasná kyslosť, svetlé praženie.",
+   "bestFor": "Filter, V60 a Chemex",
+   "why": "Spája kvetinovú Etiópiu s jasnou kyslosťou a plným telom Kene. Ľahká, šťavnatá a energická káva zostavená na ranné kilometre.",
+   "taste": {
+    "chocolate": 0.08,
+    "balanced": 0.45,
+    "fruity": 1,
+    "bold": 0.65
+   },
+   "prep": {
+    "automat": 0.2,
+    "lever": 0.6,
+    "moka": 0.3,
+    "filter": 0.95
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.15,
+    "both": 0.35
+   },
+   "explore": 0.85
+  },
+  {
+   "id": "kena",
+   "name": "Keňa Nyeri",
+   "line": "Keňa · Nyeri · svetlejšie praženie · 100 % arabika",
+   "url": "https://simplecoffee.sk/produkt/zrnkova-kava-z-keni/",
+   "price": "od 9,90 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "citrusy",
+    "sladká čerešňa",
+    "vínny nádych"
+   ],
+   "acidity": 3,
+   "acidityNote": "Živšia acidita, čistý profil.",
+   "bestFor": "Filter a alternatívne prípravy",
+   "why": "Šťavnatá africká arabika s citrusmi, sladkou čerešňou a jemnou korenistosťou. Ľahšie až stredné telo, svieža a výrazná.",
+   "taste": {
+    "chocolate": 0.1,
+    "balanced": 0.5,
+    "fruity": 0.9,
+    "bold": 0.8
+   },
+   "prep": {
+    "automat": 0.18,
+    "lever": 0.6,
+    "moka": 0.25,
+    "filter": 1
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.12,
+    "both": 0.3
+   },
+   "explore": 0.7
+  },
+  {
+   "id": "decaf",
+   "name": "Peru Decaf – Swiss Water",
+   "line": "Peru · 100 % arabika · bez kofeínu · Swiss Water Process",
+   "url": "https://simplecoffee.sk/produkt/zrnkova-bezkofeinova-kava-decaf/",
+   "price": "od 10,50 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "sladkosť",
+    "telo",
+    "príjemná chuť"
+   ],
+   "acidity": 1,
+   "acidityNote": "Jemná kyslosť, plný bezkofeínový profil.",
+   "bestFor": "Večer aj po obede",
+   "why": "Bezkofeínová káva, ktorá nie je kompromis. Kofeín odchádza šetrnou metódou Swiss Water Process, sladkosť a telo zostávajú.",
+   "taste": {
+    "chocolate": 0.7,
+    "balanced": 0.85,
+    "fruity": 0.35,
+    "bold": 0.3
+   },
+   "prep": {
+    "automat": 0.8,
+    "lever": 0.85,
+    "moka": 0.8,
+    "filter": 0.75
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 0.9,
+    "both": 0.95
+   },
+   "explore": 0.35,
+   "decaf": true
+  }
+ ],
+ "logoUrl": "https://simplecoffee.sk/wp-content/uploads/2024/04/SimpleCoffee-logo-web.png",
+ "heroPhotoUrl": "https://simplecoffee.sk/wp-content/uploads/2024/05/Degustacne-balicky_6ks_1000x1000.jpg"
+}

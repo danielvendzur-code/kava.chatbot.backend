@@ -108,6 +108,114 @@ const DEMOS = {
       decaf:'Bez kofeínu je DECAF Etiópia. Má nízku aciditu a sladší profil s jahodami, čučoriedkami a mliečnou čokoládou.',
       default:'Ak chcete minimum acidity a klasickú sladšiu chuť, začnite Zmesou Jolka. Výber kávy potom zohľadní prípravu aj to, či ju pijete s mliekom.'
     }
+  },
+  goriffee: {
+    brand: "Goriffee roastery", web: "https://www.goriffee.com/shop/kava/",
+    products: [
+      "Jednoducho káva espresso blend – kávová, horká, silná; Automat, páka a moka",
+      "Brazil Morada da Prata Natural – orechová, ovocná, sladká; Espresso, moka a automat",
+      "Ethiopia Aricha Washed – florálna, ovocná, sladká; Filter — V60, Chemex, Aeropress",
+      "Guatemala Finca La Senda Champagne Yeast – citrusová, fermentovaná, sladká; Filter a Aeropress",
+      "Marshmallow brewing blend – jahoda, malina, vanilka; Filter a Cold Brew",
+      "Colombia Tumbaga decaf na espresso – telo, sladkosť, karamel; Espresso aj mliečne nápoje; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Jednoducho káva espresso blend. Klasický kávový profil bez ovocnej kyslosti.",
+      milk: "Do mlieka sa hodí Jednoducho káva espresso blend. Bez ovocných experimentov — poriadne silná káva s klasickým profilom pre každodenné espresso aj mliečne nápoje.",
+      filter: "Na filter siahnite po Ethiopia Aricha Washed. Svieža praná Etiópia s výraznou ovocnou aciditou.",
+      decaf: "Bez kofeínu je v ponuke Colombia Tumbaga decaf na espresso. Decaf vyladený na espresso, v ktorom naplno vynikne mohutné telo a intenzívna sladkosť.",
+      default: "Ak chcete začať istotou, dobrým smerom je Jednoducho káva espresso blend. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
+  },
+  readyafter: {
+    brand: "Ready After", web: "https://www.readyafter.sk/zrnkova-kava/",
+    products: [
+      "Espresso MAT zmes – horká čokoláda, karamel, vyšší kofeín; Automat, páka a moka",
+      "Brasil Santos Cerrado 17/18 Natural – horkosť, ovocná chuť, krása krémy; Espresso a moka",
+      "Colombia Supremo Medelin Wash – čokoláda, sladkosť, plné telo; Espresso a mliečne nápoje",
+      "Ethiopia Yirgacheffe Gr.2 YCFCU – jazmínový čaj, citrónová tráva, ružový grapefruit; Espresso aj filter",
+      "Burundi Rumanda Muraho Natural Anaerobic – ananás, červené jablko, mandarinka; Filter a alternatívna príprava",
+      "Bezkofeínová Colombia Supremo Sugar Cane – med, karamel, marhuľa; Espresso aj filter; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Espresso MAT zmes. Plná zmes bez ovocnej kyslosti.",
+      milk: "Do mlieka sa hodí Espresso MAT zmes. Pre toho, kto chce vyšší podiel kofeínu.",
+      filter: "Na filter siahnite po Ethiopia Yirgacheffe Gr.2 YCFCU. Sladko-ovocná káva s výraznou sviežosťou.",
+      decaf: "Bez kofeínu je v ponuke Bezkofeínová Colombia Supremo Sugar Cane. Ich prvá bezkofeínová káva s profilom med, karamel a sladká chuť s marhuľovou aciditou.",
+      default: "Ak chcete začať istotou, dobrým smerom je Espresso MAT zmes. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
+  },
+  coffeesheep: {
+    brand: "Coffee Sheep", web: "https://www.coffeesheep.sk/kava/",
+    products: [
+      "Sheepresso – intenzívna, vyvážená, plné telo; Espresso, automat a moka",
+      "Belmondo Espresso Blend – čokoláda, kakao, jemné korenie; Espresso a mliečne nápoje",
+      "Colombia Supremo – čokoláda, kakao, zamatová dochuť; Všetky spôsoby prípravy",
+      "Kenya Kiambu – ovocná dochuť, aromatická, stredné telo; Filter, french press a moka",
+      "Indonesia Aceh Gayo – zemitá, korenistá, plné telo; Filter, moka a french press",
+      "Brazil Santos Carbonic Natural Decaf – tmavá čokoláda, kakao, oriešky; Espresso aj filter; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Sheepresso. Intenzívna zmes bez ovocnej kyslosti.",
+      milk: "Do mlieka sa hodí Sheepresso. Ich najobľúbenejšia espresso zmes — káva s intenzívnou a vyváženou chuťou, stavaná na top espresso.",
+      filter: "Na filter siahnite po Kenya Kiambu. Výrazná, ale neagresívna acidita.",
+      decaf: "Bez kofeínu je v ponuke Brazil Santos Carbonic Natural Decaf. Chute tmavej čokolády a kakaa s orieškovými tónmi.",
+      default: "Ak chcete začať istotou, dobrým smerom je Sheepresso. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
+  },
+  zlatezrnko: {
+    brand: "Zlaté Zrnko", web: "https://zlatezrnko.sk/obchod/",
+    products: [
+      "Emília – „JEMNÁ“ – oriešky, pečený chlieb, vyvážená; Automat, espresso aj mlieko",
+      "India – „ČOKOLÁDOVÁ“ – horká čokoláda, pražené lieskové oriešky, vlašský orech; Espresso a moka",
+      "Etiópia – „OVOCNÁ“ – zrelé ovocie, kvetinová dochuť, sviežosť; Filter aj espresso",
+      "Káva na filter – Tanzánia – mandarinka, biely čaj, limetka; Filter a alternatívna príprava",
+      "Smrťák – „SILNÝ“ – horká čokoláda, intenzita, vyšší kofeín; Espresso a moka",
+      "Decaf Kolumbia – plná chuť, sladkosť, večerná káva; Espresso aj filter; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Emília – „JEMNÁ“. Vyvážená chuť s jemnou aciditou.",
+      milk: "Do mlieka sa hodí Emília – „JEMNÁ“. Ich najpredávanejšia káva — zmes arabík vyváženej chuti, ktorú ocení najširšie spektrum ľudí.",
+      filter: "Na filter siahnite po Káva na filter – Tanzánia. Svetlo pražená výberovka s výraznou sviežosťou.",
+      decaf: "Bez kofeínu je v ponuke Decaf Kolumbia. Bezkofeínová káva z fariem, ktoré vlastnia a vedú výhradne ženy.",
+      default: "Ak chcete začať istotou, dobrým smerom je Emília – „JEMNÁ“. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
+  },
+  becafe: {
+    brand: "Be:Café", web: "https://becafe.sk/kategoria-produktu/kava/",
+    products: [
+      "Crema Blend 70/30 – horká čokoláda, kakao, hustá créma; Automat aj pákový kávovar",
+      "Guatemala Finca El Cascajal – mliečna čokoláda, mandle, kôstkové ovocie; Espresso a mliečne nápoje",
+      "Copabanana Espresso – banán v čokoláde, tropické ovocie, sladké plné telo; Espresso na páke",
+      "Ethiopia Sidamo Bombe Natural – ovocno-kvetinová, jahoda, natural sladkosť; Espresso aj filter",
+      "Kenya Baragwi Guama filter – čierne ríbezle, červený grep, čierny čaj a med; V60, Chemex a Aeropress",
+      "Colombia Ombligon Decaf filter – mandarínka, zrelé maliny, vanilkový kvet; Filter kedykoľvek počas dňa; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Crema Blend 70/30. Takmer nulová kyslosť.",
+      milk: "Do mlieka sa hodí Crema Blend 70/30. Zmes pre konzervatívnych kávičkárov — horká čokoláda a kakao, tridsať percent vietnamskej robusty pridáva kofeín aj hustú krému.",
+      filter: "Na filter siahnite po Kenya Baragwi Guama filter. Iskrivá, šťavnatá acidita.",
+      decaf: "Bez kofeínu je v ponuke Colombia Ombligon Decaf filter. Raritná odroda Ombligon od Nestora Lassa v sugar cane decaf spracovaní.",
+      default: "Ak chcete začať istotou, dobrým smerom je Crema Blend 70/30. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
+  },
+  simplecoffee: {
+    brand: "Simple Coffee", web: "https://simplecoffee.sk/kategorie/zrnkova-kava/",
+    products: [
+      "Oro Nero – čokoláda a oriešky, hustá créma, vysoký kofeín; Automat a pákový kávovar",
+      "Tá pravá káva – mliečna čokoláda, oriešky, krémové telo; Každodenná káva do kávovaru",
+      "Mexiko SHG EP – čokoláda, oriešky, ľahký ovocný tón; Espresso aj mlieko",
+      "RUNNING HIGH – kvetinová Etiópia, jasná kyslosť, šťavnatá a ľahká; Filter, V60 a Chemex",
+      "Keňa Nyeri – citrusy, sladká čerešňa, vínny nádych; Filter a alternatívne prípravy",
+      "Peru Decaf – Swiss Water – sladkosť, telo, príjemná chuť; Večer aj po obede; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Oro Nero. Nízka kyslosť, plné telo.",
+      milk: "Do mlieka sa hodí Tá pravá káva. Káva o rovnováhe, nie o extrémoch.",
+      filter: "Na filter siahnite po Keňa Nyeri. Živšia acidita, čistý profil.",
+      decaf: "Bez kofeínu je v ponuke Peru Decaf – Swiss Water. Bezkofeínová káva, ktorá nie je kompromis.",
+      default: "Ak chcete začať istotou, dobrým smerom je Oro Nero. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
   }
 };
 

@@ -185,6 +185,32 @@
       theme: { ink: '#2e2113', brand: '#3a2a12', accent: '#c8891f', soft: '#f6efe2', paper: '#fffdf8' },
       hero: '/assets/zlatezrnko/hero.jpg',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
+    },
+
+    becafe: {
+      name: "Be:Café",
+      place: "Be:Café · Lietavská Lúčka",
+      title: "Chatbot rozlíši espresso od filtra a vyberie zákazníkovi kávu.",
+      lead: "Be:Café praží na espresso aj na filter — k tomu zmes, single origin a bezkofeínovú. Chatbot prevedie zákazníka ponukou, odpovie na otázky o pôvode, pražení aj príprave a podľa jeho preferencií ho dovedie ku konkrétnej káve.",
+      root: '.becafe-page',
+      shop: "https://becafe.sk/kategoria-produktu/kava/",
+      lockup: '<img src="/assets/becafe/logo.svg" alt="Be:Café">',
+      theme: { ink: '#151310', brand: '#121212', accent: '#b3860d', soft: '#faf3d8', paper: '#fffefa' },
+      hero: '/assets/becafe/hero.jpg',
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+    },
+
+    simplecoffee: {
+      name: "Simple Coffee",
+      place: "Simple Coffee · Bratislava",
+      title: "Chatbot vyberie kávu podľa chuti aj spôsobu prípravy.",
+      lead: "Ponuka je delená podľa chuti, prípravy aj momentu — zákazník to však musí prejsť sám. Chatbot ho ponukou prevedie, odpovie na otázky o pôvode aj kyslosti a na konci odporučí jednu konkrétnu kávu.",
+      root: '.simplecoffee-page',
+      shop: "https://simplecoffee.sk/kategorie/zrnkova-kava/",
+      lockup: '<img src="/assets/simplecoffee/logo.png" alt="Simple Coffee">',
+      theme: { ink: '#24262b', brand: '#24262b', accent: '#9a7c46', soft: '#f7f0e4', paper: '#fffaf4' },
+      hero: '/assets/simplecoffee/hero.jpg',
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
     }
   };
 
