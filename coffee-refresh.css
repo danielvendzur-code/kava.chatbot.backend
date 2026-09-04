@@ -532,3 +532,97 @@
 .mcb-page .mcb-figures b { white-space: nowrap; }
 .mcb-page .mcb-figures li { justify-content: flex-start; }
 .mcb-page .mcb-figures ul { grid-template-columns: auto auto auto !important; justify-content: space-between !important; }
+
+/* ==========================================================================
+   11. "Mám záujem" says what the offer is before it asks for a decision
+   ========================================================================== */
+
+/* display:grid overrides what the hidden attribute does, so a closed sheet
+   stayed on top of the page and swallowed every click on the header. */
+.mcb-page .mcb-offer[hidden] { display: none; }
+.mcb-page .mcb-offer {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  padding: clamp(16px, 4vh, 40px);
+  background: color-mix(in srgb, var(--mcb-ink) 46%, transparent);
+  backdrop-filter: blur(3px);
+  animation: mcb-offer-in .18s ease-out;
+}
+@keyframes mcb-offer-in { from { opacity: 0 } to { opacity: 1 } }
+.mcb-page .mcb-offer-card {
+  position: relative;
+  width: min(520px, 100%);
+  max-height: 100%;
+  overflow: auto;
+  padding: clamp(24px, 3.4vh, 34px) clamp(24px, 2.6vw, 36px);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 30px 80px -30px rgba(18, 22, 20, .5);
+}
+.mcb-page .mcb-offer-close {
+  position: absolute;
+  top: 14px; right: 14px;
+  width: 32px; height: 32px;
+  display: grid; place-items: center;
+  border: 0; border-radius: 50%;
+  background: color-mix(in srgb, var(--mcb-ink) 7%, transparent);
+  color: var(--mcb-ink);
+  font-size: 19px; line-height: 1;
+  cursor: pointer;
+}
+.mcb-page .mcb-offer-close:hover { background: color-mix(in srgb, var(--mcb-ink) 13%, transparent); }
+.mcb-page .mcb-offer-kicker {
+  display: block;
+  color: color-mix(in srgb, var(--mcb-ink) 48%, transparent);
+  font-size: 10.5px; font-weight: 800; letter-spacing: .15em; text-transform: uppercase;
+}
+.mcb-page .mcb-offer-card h2 {
+  margin: 7px 0 clamp(15px, 2.2vh, 21px);
+  font-size: clamp(20px, 1.9vw, 25px);
+  line-height: 1.15;
+  letter-spacing: -.03em;
+}
+.mcb-page .mcb-offer-card ul {
+  display: grid; gap: clamp(9px, 1.3vh, 13px);
+  margin: 0; padding: 0; list-style: none;
+}
+.mcb-page .mcb-offer-card li { display: flex; gap: 11px; align-items: flex-start; }
+.mcb-page .mcb-offer-card li svg {
+  width: 17px; height: 17px; flex: 0 0 17px; margin-top: 2px;
+  padding: 3.5px; border-radius: 50%;
+  color: #fff; background: var(--mcb-brand, var(--mcb-ink));
+}
+.mcb-page .mcb-offer-card li b { display: block; font-size: 13px; letter-spacing: -.012em; }
+.mcb-page .mcb-offer-card li small {
+  display: block; margin-top: 2px;
+  color: color-mix(in srgb, var(--mcb-ink) 62%, transparent);
+  font-size: 11.4px; line-height: 1.35;
+}
+.mcb-page .mcb-offer-price {
+  margin: clamp(16px, 2.4vh, 22px) 0 clamp(15px, 2.2vh, 20px);
+  padding-top: clamp(14px, 2vh, 18px);
+  border-top: 1px solid color-mix(in srgb, var(--mcb-ink) 12%, transparent);
+}
+.mcb-page .mcb-offer-price > b {
+  display: inline-flex; padding: 4px 10px; border-radius: 7px;
+  background: var(--mcb-accent); color: #fff; font-size: 9.8px; font-weight: 800;
+}
+.mcb-page .mcb-offer-price p {
+  display: flex; align-items: baseline; gap: 7px; margin: 10px 0 0;
+  font-variant-numeric: tabular-nums;
+}
+.mcb-page .mcb-offer-price strong { font-size: 24px; font-weight: 800; letter-spacing: -.04em; }
+.mcb-page .mcb-offer-price span { font-size: 11.5px; color: color-mix(in srgb, var(--mcb-ink) 56%, transparent); }
+.mcb-page .mcb-offer-price i { font-style: normal; color: color-mix(in srgb, var(--mcb-ink) 34%, transparent); }
+.mcb-page .mcb-offer-price small {
+  display: block; margin-top: 9px;
+  color: color-mix(in srgb, var(--mcb-ink) 52%, transparent);
+  font-size: 11px; line-height: 1.4;
+}
+.mcb-page .mcb-offer-card > .mcb-btn { width: 100%; justify-content: center; }
+body.mcb-offer-open { overflow: hidden; }
+
+@media (prefers-reduced-motion: reduce) { .mcb-page .mcb-offer { animation: none; } }

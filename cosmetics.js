@@ -54,6 +54,17 @@
   // Change here to switch the offer; the coffee copy reads the same words.
   const TRIAL = 'Prvý mesiac zdarma';
 
+  /* "Chcem to na svoj web" used to jump straight to a contact form, which asked
+     for a decision before saying what the decision was about. */
+  const INCLUDED = [
+    ['Chatbot s vaším katalógom', 'Naplníme ho vašimi produktmi, cenami a odkazmi do e-shopu.'],
+    ['Chat, ktorý odpovedá 24/7', 'Zloženie, typ pleti, rutina aj porovnanie dvoch produktov.'],
+    ['Výber cez štyri otázky', 'Pleť, priorita, rutina a textúra — na konci jeden konkrétny produkt.'],
+    ['Preklik rovno na produkt', 'Odporúčanie končí odkazom do vášho e-shopu.'],
+    ['História konverzácií', 'Vidíte, na čo sa zákazníci naozaj pýtajú.'],
+    ['Nasadenie jedným riadkom kódu', 'Vložíte jeden skript, o zvyšok sa postaráme.']
+  ];
+
   const CHIPS = ['Mám suchú pleť', 'Pleť sa mi mastí', 'Niečo na citlivú pleť', 'Chcem jednoduchú rutinu'];
 
   const ownerFigures = `
@@ -67,8 +78,24 @@
     <main class="cx-owner">
       <header class="cx-owner-head">
         <a class="cx-owner-brand" href="${brand.website}" target="_blank" rel="noreferrer">${brand.wordmark}</a>
-        <a class="cx-owner-contact" href="${esc(contactHref())}" target="_blank" rel="noreferrer">Chcem to na svoj web ${icons.arrow}</a>
+        <button class="cx-owner-contact" type="button" data-cx-offer="open" aria-haspopup="dialog">Chcem to na svoj web ${icons.arrow}</button>
       </header>
+      <div class="cx-offer" data-cx-offer="sheet" role="dialog" aria-modal="true" aria-label="Čo dostanete" hidden>
+        <div class="cx-offer-card">
+          <button class="cx-offer-close" type="button" data-cx-offer="close" aria-label="Zavrieť">×</button>
+          <span class="cx-offer-kicker">Čo dostanete</span>
+          <h2>Chatbot pre ${esc(brand.name)}</h2>
+          <ul>
+            ${INCLUDED.map(([title, note]) => `<li>${icons.check}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
+          </ul>
+          <div class="cx-offer-price">
+            <b>${esc(TRIAL)}</b>
+            <p><strong>247&nbsp;€</strong> <span>jednorazovo</span> <i>·</i> <strong>10&nbsp;€</strong> <span>mesačne</span></p>
+            <small>Bez viazanosti, vypnúť sa dá kedykoľvek. Napojenie na košík e-shopu za príplatok.</small>
+          </div>
+          <a class="cx-offer-cta" href="${esc(contactHref())}" target="_blank" rel="noreferrer">Chcem to na svoj web ${icons.arrow}</a>
+        </div>
+      </div>
       <section class="cx-owner-hero">
         <div class="cx-owner-copy">
           <span class="cx-owner-kicker">CHAT + VÝBER STAROSTLIVOSTI</span>
@@ -328,6 +355,17 @@
   function resetAll(){state.step=0;state.answers={};state.result=null;state.alternative=null;state.interacted=false;state.busy=false;state.transitioning=false;state.messages=[{role:'assistant',text:'Dobrý deň. Napíšte, čo od starostlivosti očakávate alebo ako sa vaša pleť správa. Pomôžem vám zúžiť výber.'}];setMode('chat');}
 
   root.querySelectorAll('[data-open]').forEach((button)=>button.addEventListener('click',()=>openWidget(button.dataset.open)));
+  const offerSheet = root.querySelector('[data-cx-offer="sheet"]');
+  const setOffer = (open) => {
+    offerSheet.hidden = !open;
+    document.body.classList.toggle('cx-offer-open', open);
+    if (open) offerSheet.querySelector('[data-cx-offer="close"]').focus();
+  };
+  root.querySelectorAll('[data-cx-offer="open"]').forEach((b) => b.addEventListener('click', () => setOffer(true)));
+  root.querySelectorAll('[data-cx-offer="close"]').forEach((b) => b.addEventListener('click', () => setOffer(false)));
+  offerSheet.addEventListener('click', (event) => { if (event.target === offerSheet) setOffer(false); });
+  document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !offerSheet.hidden) setOffer(false); });
+
   root.querySelector('#cx-open').addEventListener('click',()=>openWidget('chat'));
   root.querySelector('#cx-teaser').addEventListener('click',()=>openWidget('advisor'));
   root.querySelector('#cx-close').addEventListener('click',closeWidget);

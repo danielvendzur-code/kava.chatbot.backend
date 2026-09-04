@@ -43,7 +43,17 @@
       'Nasadenie jedným riadkom kódu'
     ],
     addon: 'Napojenie na košík e-shopu za príplatok.',
-    note: 'Bez viazanosti, vypnúť sa dá kedykoľvek.'
+    note: 'Bez viazanosti, vypnúť sa dá kedykoľvek.',
+    /* "Mám záujem" used to jump straight to a contact form, which asked for a
+       decision before saying what the decision was about. */
+    included: [
+      ['Chatbot s vaším katalógom', 'Naplníme ho vašimi kávami, cenami a odkazmi do e-shopu.'],
+      ['Chat, ktorý odpovedá 24/7', 'Pôvod, praženie, príprava aj porovnanie dvoch káv.'],
+      ['Výber cez štyri otázky', 'Chuť, príprava, nápoj a acidita — na konci jedna konkrétna káva.'],
+      ['Preklik rovno na produkt', 'Odporúčanie končí odkazom do vášho e-shopu.'],
+      ['História konverzácií', 'Vidíte, na čo sa zákazníci naozaj pýtajú.'],
+      ['Nasadenie jedným riadkom kódu', 'Vložíte jeden skript, o zvyšok sa postaráme.']
+    ]
   };
 
   /* ------------------------------------------------------------------ data */
@@ -128,8 +138,8 @@
     goriffee: {
       name: "Goriffee roastery",
       place: "Goriffee roastery · Bratislava",
-      title: "Z veľkej ponuky doveďte zákazníka k jednej káve.",
-      lead: "Goriffee praží v Bratislave každý týždeň a v ponuke sú blendy, single origin aj decaf. Chat odpovie na otázku o pôvode aj chuti a výber cez štyri otázky skončí pri jednej konkrétnej káve.",
+      title: "Chatbot prevedie zákazníka ponukou a poradí mu kávu.",
+      lead: "Odpovie na otázky o pôvode, pražení aj príprave a podľa chuťových preferencií ho cez štyri otázky dovedie ku konkrétnej káve z vášho e-shopu — od blendov po single origin a decaf.",
       root: '.goriffee-page',
       shop: "https://www.goriffee.com/shop/kava/",
       lockup: '<img src="/assets/goriffee/logo.svg" alt="Goriffee roastery">',
@@ -141,8 +151,8 @@
     readyafter: {
       name: "Ready After",
       place: "Ready After · Bošany",
-      title: "Poraďte s výberom kávy aj mimo otváracích hodín.",
-      lead: "Ready After má blendy aj single origin z Etiópie, Burundi či Kolumbie. Chat odpovie na otázku o pôvode, spracovaní aj chuti a výber cez štyri otázky skončí pri jednej konkrétnej káve.",
+      title: "Chatbot poradí kávu podľa chuti aj mimo otváracích hodín.",
+      lead: "Zákazníka prevedie ponukou, odpovie na otázky o pôvode aj spracovaní a podľa jeho preferencií ho dovedie ku konkrétnej káve z Etiópie, Burundi či Kolumbie.",
       root: '.readyafter-page',
       shop: "https://www.readyafter.sk/zrnkova-kava/",
       lockup: '<img src="/assets/readyafter/logo.png" alt="Ready After">',
@@ -154,8 +164,8 @@
     coffeesheep: {
       name: "Coffee Sheep",
       place: "Coffee Sheep · Trenčín",
-      title: "Sedem káv zúžte na jednu, ktorá zákazníkovi sadne.",
-      lead: "Coffee Sheep má zmesi na espresso aj single origin z Kene či Indonézie. Chat odpovie na otázku o pôvode aj chuti a výber cez štyri otázky skončí pri jednej konkrétnej káve.",
+      title: "Chatbot zúži sedem káv na tú, ktorú zákazník hľadá.",
+      lead: "Prevedie ho ponukou, odpovie na otázky o pôvode aj chuti a podľa preferencií ho dovedie ku konkrétnej káve — od espresso zmesí po single origin z Kene či Indonézie.",
       root: '.coffeesheep-page',
       shop: "https://www.coffeesheep.sk/kava/",
       lockup: '<img src="/assets/coffeesheep/logo.svg" alt="Coffee Sheep">',
@@ -217,10 +227,32 @@
     return `
     <header class="mcb-head">
       <span class="mcb-lockup">${brand.lockup}</span>
-      <a class="mcb-btn mcb-btn--sm" href="${contact}" target="_blank" rel="noreferrer">
+      <button class="mcb-btn mcb-btn--sm" type="button" data-mcb-offer="open" aria-haspopup="dialog">
         Mám záujem ${icons.arrow}
-      </a>
+      </button>
     </header>
+
+    <div class="mcb-offer" data-mcb-offer="sheet" role="dialog" aria-modal="true"
+         aria-label="Čo dostanete" hidden>
+      <div class="mcb-offer-card">
+        <button class="mcb-offer-close" type="button" data-mcb-offer="close" aria-label="Zavrieť">×</button>
+        <span class="mcb-offer-kicker">Čo dostanete</span>
+        <h2>Kávový chatbot pre ${esc(brand.name)}</h2>
+        <ul>
+          ${PRICING.included.map(([title, note]) => `
+            <li>${icons.check}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
+        </ul>
+        <div class="mcb-offer-price">
+          <b>${esc(PRICING.trial)}</b>
+          <p><strong>${esc(PRICING.setup)}&nbsp;€</strong> <span>jednorazovo</span>
+             <i>·</i> <strong>${esc(PRICING.monthly)}&nbsp;€</strong> <span>mesačne</span></p>
+          <small>${esc(PRICING.note)} ${esc(PRICING.addon)}</small>
+        </div>
+        <a class="mcb-btn mcb-btn--accent" href="${contact}" target="_blank" rel="noreferrer">
+          ${icons.mail} Chcem to na svoj web
+        </a>
+      </div>
+    </div>
 
     <main class="mcb-main">
       <section class="mcb-copy">
@@ -347,7 +379,7 @@
 
     const refresh = document.createElement('link');
     refresh.rel = 'stylesheet';
-    refresh.href = '/coffee-refresh.css?v=9948e7cf';
+    refresh.href = '/coffee-refresh.css?v=392d2836';
     refresh.dataset.mcbRefreshStyle = 'true';
     refresh.dataset.mcOrder = '95';
     document.body.appendChild(refresh);
@@ -404,6 +436,17 @@
     root.querySelectorAll('[data-release-open]').forEach((button) => {
       button.addEventListener('click', () => openMode(button.dataset.releaseOpen));
     });
+
+    const sheet = root.querySelector('[data-mcb-offer="sheet"]');
+    const setOffer = (open) => {
+      sheet.hidden = !open;
+      document.body.classList.toggle('mcb-offer-open', open);
+      if (open) sheet.querySelector('[data-mcb-offer="close"]').focus();
+    };
+    root.querySelectorAll('[data-mcb-offer="open"]').forEach((b) => b.addEventListener('click', () => setOffer(true)));
+    root.querySelectorAll('[data-mcb-offer="close"]').forEach((b) => b.addEventListener('click', () => setOffer(false)));
+    sheet.addEventListener('click', (event) => { if (event.target === sheet) setOffer(false); });
+    document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !sheet.hidden) setOffer(false); });
 
     requestAnimationFrame(() => root.classList.add('is-in'));
     watchDialog();
