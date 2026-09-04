@@ -172,6 +172,19 @@
       theme: { ink: '#3a2a16', brand: '#583408', accent: '#a8442b', soft: '#f4ede2', paper: '#fffdf8' },
       hero: '/assets/coffeesheep/hero.jpg',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
+    },
+
+    zlatezrnko: {
+      name: "Zlaté Zrnko",
+      place: "Zlaté Zrnko · Ivanka pri Dunaji",
+      title: "Chatbot vyberie z osemdesiatich káv tú jednu pravú.",
+      lead: "Zlaté Zrnko má vyše osemdesiat káv — zmesi, single origin aj bezkofeínové. Chatbot prevedie zákazníka ponukou, odpovie na otázky o pôvode aj chuti a podľa jeho preferencií ho dovedie ku konkrétnej káve.",
+      root: '.zlatezrnko-page',
+      shop: "https://zlatezrnko.sk/obchod/",
+      lockup: '<img src="/assets/zlatezrnko/logo.png" alt="Zlaté Zrnko">',
+      theme: { ink: '#2e2113', brand: '#3a2a12', accent: '#c8891f', soft: '#f6efe2', paper: '#fffdf8' },
+      hero: '/assets/zlatezrnko/hero.jpg',
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
     }
   };
 

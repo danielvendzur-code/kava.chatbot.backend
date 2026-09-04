@@ -1,0 +1,247 @@
+{
+ "slug": "zlatezrnko",
+ "brand": {
+  "name": "Zlaté Zrnko",
+  "place": "Zlaté Zrnko · Ivanka pri Dunaji",
+  "shopUrl": "https://zlatezrnko.sk/obchod/",
+  "storyUrl": "https://zlatezrnko.sk/"
+ },
+ "colors": {
+  "ink": "#2e2113",
+  "brand": "#3a2a12",
+  "accent": "#c8891f",
+  "soft": "#f6efe2",
+  "paper": "#fffdf8",
+  "line": "#e6dbc8"
+ },
+ "invertLogo": false,
+ "ownerTitle": "Chatbot vyberie z osemdesiatich káv tú jednu pravú.",
+ "ownerLead": "Zlaté Zrnko má vyše osemdesiat káv — zmesi, single origin aj bezkofeínové. Chatbot prevedie zákazníka ponukou, odpovie na otázky o pôvode aj chuti a podľa jeho preferencií ho dovedie ku konkrétnej káve.",
+ "chips": [
+  "Káva do automatu",
+  "Káva na filter",
+  "Niečo netradičné",
+  "Bez kofeínu"
+ ],
+ "products": [
+  {
+   "id": "emilia",
+   "name": "Emília – „JEMNÁ“",
+   "line": "Zmes 100 % arabika · stredné praženie",
+   "url": "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-emilia/",
+   "price": "od 8,99 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "oriešky",
+    "pečený chlieb",
+    "vyvážená"
+   ],
+   "acidity": 1,
+   "acidityNote": "Vyvážená chuť s jemnou aciditou.",
+   "bestFor": "Automat, espresso aj mlieko",
+   "why": "Ich najpredávanejšia káva — zmes arabík vyváženej chuti, ktorú ocení najširšie spektrum ľudí.",
+   "taste": {
+    "chocolate": 0.7,
+    "balanced": 1,
+    "fruity": 0.3,
+    "bold": 0.35
+   },
+   "prep": {
+    "automat": 1,
+    "lever": 0.9,
+    "moka": 0.85,
+    "filter": 0.5
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 0.95,
+    "both": 1
+   },
+   "explore": 0.2
+  },
+  {
+   "id": "india",
+   "name": "India – „ČOKOLÁDOVÁ“",
+   "line": "India · single origin",
+   "url": "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-india/",
+   "price": "od 9,49 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "horká čokoláda",
+    "pražené lieskové oriešky",
+    "vlašský orech"
+   ],
+   "acidity": 0,
+   "acidityNote": "Plné telo bez ovocnej kyslosti.",
+   "bestFor": "Espresso a moka",
+   "why": "Kvalitné plné telo s intenzívnym pocitom v ústach. Náznaky horkej čokolády s tónmi pražených orieškov.",
+   "taste": {
+    "chocolate": 1,
+    "balanced": 0.8,
+    "fruity": 0.1,
+    "bold": 0.6
+   },
+   "prep": {
+    "automat": 0.8,
+    "lever": 1,
+    "moka": 0.95,
+    "filter": 0.35
+   },
+   "drink": {
+    "black": 0.95,
+    "milk": 0.9,
+    "both": 1
+   },
+   "explore": 0.25
+  },
+  {
+   "id": "etiopia",
+   "name": "Etiópia – „OVOCNÁ“",
+   "line": "Etiópia · single origin · vyššie nadmorské výšky",
+   "url": "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-etiopia/",
+   "price": "od 10,49 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "zrelé ovocie",
+    "kvetinová dochuť",
+    "sviežosť"
+   ],
+   "acidity": 3,
+   "acidityNote": "Charakteristická ovocná chuť s výraznou sviežosťou.",
+   "bestFor": "Filter aj espresso",
+   "why": "Káva z kolísky kávy. V šálke svieže tóny zrelého ovocia a jemná kvetinová dochuť.",
+   "taste": {
+    "chocolate": 0.1,
+    "balanced": 0.5,
+    "fruity": 1,
+    "bold": 0.55
+   },
+   "prep": {
+    "automat": 0.2,
+    "lever": 0.6,
+    "moka": 0.3,
+    "filter": 0.9
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.1,
+    "both": 0.3
+   },
+   "explore": 0.75
+  },
+  {
+   "id": "tanzania",
+   "name": "Káva na filter – Tanzánia",
+   "line": "Tanzánia · stanica Sambewe · washed · SCA 85,5",
+   "url": "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-kava-na-filter/",
+   "price": "od 11,99 €",
+   "priceUnit": "250 g",
+   "weights": "",
+   "notes": [
+    "mandarinka",
+    "biely čaj",
+    "limetka"
+   ],
+   "acidity": 3,
+   "acidityNote": "Svetlo pražená výberovka s výraznou sviežosťou.",
+   "bestFor": "Filter a alternatívna príprava",
+   "why": "Svetlo pražená výberová arabika zo stanice Sambewe s chuťou mandariniek, bieleho čaju a limetky.",
+   "taste": {
+    "chocolate": 0.05,
+    "balanced": 0.45,
+    "fruity": 0.95,
+    "bold": 0.7
+   },
+   "prep": {
+    "automat": 0.05,
+    "lever": 0.25,
+    "moka": 0.1,
+    "filter": 1
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.05,
+    "both": 0.25
+   },
+   "explore": 0.9
+  },
+  {
+   "id": "smrtak",
+   "name": "Smrťák – „SILNÝ“",
+   "line": "Zmes 100 % robusta · stredne-tmavé praženie",
+   "url": "https://zlatezrnko.sk/obchod/kava-smrtak/",
+   "price": "od 7,99 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "horká čokoláda",
+    "intenzita",
+    "vyšší kofeín"
+   ],
+   "acidity": 0,
+   "acidityNote": "Intenzívna horkosť bez akejkoľvek kyslosti.",
+   "bestFor": "Espresso a moka",
+   "why": "Zmes robusty s vyšším obsahom kofeínu a intenzívnou horkou chuťou s tónmi horkej čokolády.",
+   "taste": {
+    "chocolate": 0.6,
+    "balanced": 0.35,
+    "fruity": 0.05,
+    "bold": 1
+   },
+   "prep": {
+    "automat": 0.7,
+    "lever": 0.95,
+    "moka": 0.9,
+    "filter": 0.15
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.6,
+    "both": 0.7
+   },
+   "explore": 1
+  },
+  {
+   "id": "decaf",
+   "name": "Decaf Kolumbia",
+   "line": "Kolumbia · bez kofeínu · 100 % arabika",
+   "url": "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-decaf-kolumbia-200g-bezkofeinova-100-arabika/",
+   "price": "od 9,99 €",
+   "priceUnit": "200 g",
+   "weights": "",
+   "notes": [
+    "plná chuť",
+    "sladkosť",
+    "večerná káva"
+   ],
+   "acidity": 1,
+   "acidityNote": "Plný bezkofeínový profil s jemnou aciditou.",
+   "bestFor": "Espresso aj filter",
+   "why": "Bezkofeínová káva z fariem, ktoré vlastnia a vedú výhradne ženy. Plná chuť kedykoľvek počas dňa aj večer.",
+   "taste": {
+    "chocolate": 0.75,
+    "balanced": 0.9,
+    "fruity": 0.35,
+    "bold": 0.35
+   },
+   "prep": {
+    "automat": 0.75,
+    "lever": 0.9,
+    "moka": 0.85,
+    "filter": 0.7
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 0.9,
+    "both": 1
+   },
+   "explore": 0.3,
+   "decaf": true
+  }
+ ],
+ "logoUrl": "https://zlatezrnko.sk/wp-content/uploads/2022/12/cropped-logo-zlate-zrnko-brown-small-270x270.png",
+ "heroPhotoUrl": "https://zlatezrnko.sk/wp-content/uploads/2017/04/brown-200-zlate-zrnko-5-kavy_0008_Layer-Comp-9.jpg"
+}

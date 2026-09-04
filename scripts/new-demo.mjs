@@ -234,7 +234,12 @@ const luminance = (hex) => {
     .map((v) => (v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4));
   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
 };
-const invert = luminance(c.brand) < 0.4 ? ';filter:brightness(0) invert(1)' : '';
+/* A wordmark drawn as white letters inside a coloured shape already reads on a
+   dark ground, and inverting it turns the whole thing into a white blob with
+   the name gone — which is what a luminance guess alone cannot know. Data may
+   say so with invertLogo: false. */
+const wantsInvert = data.invertLogo === undefined ? luminance(c.brand) < 0.4 : Boolean(data.invertLogo);
+const invert = wantsInvert ? ';filter:brightness(0) invert(1)' : '';
 const mix = (hex, pct) => hex; // brand tokens stay literal; the shared system does the shading
 write(`${slug}-jolka-theme.css`, `/* ${name} brand tokens on the shared Jolka system. */
 :root{--ink:${c.ink};--ink-2:${c.brand};--ink-3:${c.brand};--paper:${c.paper};--surface:#fff;--surface-2:${c.soft};--line:${c.line || '#e3ded6'};--line-strong:${c.line || '#cec8bf'};--kraft:${c.accent};--kraft-deep:${c.accent};--kraft-tint:${c.soft};--text:${c.ink};--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
