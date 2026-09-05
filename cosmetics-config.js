@@ -137,6 +137,21 @@
         {id:'oily',name:'Pleťový olej na mastnú & problematickú pleť',price:'7,38 €',url:'https://anemone.sk/pletove-oleje-a-sera/',tags:['oily','clarity','oil','simple','target'],reason:'Olejová voľba zameraná na mastnejšiu a problematickú pleť.'},
         {id:'chamomile',name:'Kvetinová voda Harmanček',price:'4 €',url:'https://anemone.sk/kvetinove-vody/kvetinova-voda-harmancek.html',tags:['sensitive','calm','target','any','basic'],reason:'Jemný doplnkový krok pre zákazníka, ktorý chce rutinu skôr upokojiť než rozširovať.'}
       ]
+    },
+    modrapupava: {
+      name:"Modrá púpava", domain:"modrapupava.sk", website:"https://www.modrapupava.sk/",
+      theme:{brand:'#1c5850',accent:'#108474',soft:'#e8f1ee',paper:'#fbfdfc',ink:'#1d2b28',line:'#d2e2dd'},
+      wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/modrapupava-logo.png\" alt=\"Modrá púpava\">",
+      hero:'/assets/cosmetics/modrapupava.jpg',
+      ownerTitle:"Chatbot poradí, ktorým produktom z rady začať.",
+      ownerText:"Modrá púpava má oleje, séra aj krémy pre rôzne typy pleti. Chatbot prevedie zákazníka ponukou, odpovie na otázky o zložení a podľa pleti, priority a preferovanej textúry odporučí jeden konkrétny produkt.",
+      benefit:["Menej otázok pred nákupom","Výber podľa pleti, nie podľa kategórie","Preklik rovno na produkt"],
+      products:[
+        {id:'antiage',name:"Inspiral Anti-age – krém na spevnenie pleti",price:"51,35 €",url:"https://www.modrapupava.sk/products/krem-na-spevnenie-pleti-inspiral-anti-age",photo:'/assets/cosmetics/modrapupava-antiage.jpg',tags:['mature','dry','hydrate','cream','full','simple'],reason:"Krém pre zrelú a suchú pleť — spevňuje kontúry, zmierňuje vrásky a zjednocuje tón. Jemný natoľko, že sadne aj citlivejšej pleti."},
+        {id:'energy',name:"Inspiral Energy – pleťové sérum",price:"50,65 €",url:"https://www.modrapupava.sk/products/pletove-serum-inspiral-energy",photo:'/assets/cosmetics/modrapupava-energy.jpg',tags:['balanced','dry','hydrate','serum','target','basic'],reason:"Rozjasňujúce sérum s piatimi druhmi kyseliny hyalurónovej a vitamínom C — cielený krok do existujúcej rutiny."},
+        {id:'problem',name:"Problematická pleť – pleťový a telový olej",price:"26,11 €",url:"https://www.modrapupava.sk/products/pletovy-a-telovy-olej-problematicka-plet",photo:'/assets/cosmetics/modrapupava-problem.jpg',tags:['oily','clarity','oil','simple','basic'],reason:"Ľahký olej s čajovníkom a moringou pre mastnú a problematickú pleť. Udržiava póry čisté a zároveň upokojuje podráždenie."},
+        {id:'fialka',name:"Fialka – pleťová olejová kúra",price:"22,48 €",url:"https://www.modrapupava.sk/products/pletova-kura-fialka",photo:'/assets/cosmetics/modrapupava-fialka.jpg',tags:['sensitive','calm','oil','target','simple'],reason:"Jemná olejová kúra pre citlivú, začervenanú a namáhanú pleť — posilňuje kožnú bariéru a vracia komfort."}
+      ]
     }
   };
 

@@ -812,3 +812,28 @@
 body.cx-offer-open { overflow: hidden; }
 
 @media (prefers-reduced-motion: reduce) { .cx-offer { animation: none; } }
+
+/* ------------------------------------------------------------------ 22. real logos
+   The first six brands were set as drawn wordmarks. A brand that has a logo
+   worth showing drops an <img> into the same slot, and it has to answer to the
+   four places the wordmark does: the owner header, the widget header, the chat
+   avatar and the launcher. The last two sit on the brand colour, so the mark
+   goes white there the way the coffee launcher does. */
+.cx-logo {
+  display: block; width: auto; height: auto;
+  max-width: 168px; max-height: 34px;
+  object-fit: contain; object-position: left center;
+}
+.cx-owner-brand .cx-logo { max-height: clamp(30px, 4.4vh, 42px); }
+.cx-widget-brand .cx-logo { max-width: 118px; max-height: 25px; }
+.cx-message-avatar .cx-logo,
+.cx-launcher-button .cx-logo {
+  max-width: 34px; max-height: 19px;
+  object-position: center;
+  filter: brightness(0) invert(1);
+}
+.cx-message-avatar .cx-logo { max-width: 26px; max-height: 15px; }
+
+@media (max-width: 720px) {
+  .cx-owner-brand .cx-logo { max-width: 130px; max-height: 28px; }
+}

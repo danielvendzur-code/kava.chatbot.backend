@@ -332,6 +332,9 @@
     .map((answer) => ANSWER_LABELS[answer])
     .filter(Boolean);
 
+  /* The card used to show the same brand photograph whatever the advisor
+     picked, so the recommendation never looked like the thing you would buy.
+     A brand that ships its own packshots names one per product. */
   function renderResult() {
     const product=state.result;
     const alt=state.alternative;
@@ -340,7 +343,7 @@
         <header class="cx-progress"><button id="cx-result-back" type="button">${icons.back}<span>Späť</span></button><div>${questions.map(()=>'<i class="is-on"></i>').join('')}</div><b>Výsledok</b></header>
         <div class="cx-result-body">
           <span class="cx-kicker">Váš smer</span>
-          <article class="cx-product"><div class="cx-product-photo"><img src="${brand.hero}" alt="${esc(product.name)}" referrerpolicy="no-referrer" onerror="this.closest('.cx-product-photo')?.setAttribute('data-image-failed','true')"></div><div class="cx-product-copy"><small>${esc(brand.name)}</small><h2>${esc(product.name)}</h2>${matchedLabels(product).length?`<div class="cx-product-tags">${matchedLabels(product).map((label)=>`<span>${esc(label)}</span>`).join('')}</div>`:''}<div class="cx-product-price"><strong>${esc(product.price)}</strong><a href="${product.url}" target="_blank" rel="noreferrer">Pozrieť produkt ${icons.arrow}</a></div></div></article>
+          <article class="cx-product"><div class="cx-product-photo"><img src="${product.photo || brand.hero}" alt="${esc(product.name)}" referrerpolicy="no-referrer" onerror="this.closest('.cx-product-photo')?.setAttribute('data-image-failed','true')"></div><div class="cx-product-copy"><small>${esc(brand.name)}</small><h2>${esc(product.name)}</h2>${matchedLabels(product).length?`<div class="cx-product-tags">${matchedLabels(product).map((label)=>`<span>${esc(label)}</span>`).join('')}</div>`:''}<div class="cx-product-price"><strong>${esc(product.price)}</strong><a href="${product.url}" target="_blank" rel="noreferrer">Pozrieť produkt ${icons.arrow}</a></div></div></article>
           <section class="cx-why"><small>Prečo práve toto</small><p>${esc(product.reason)}</p></section>
           ${alt && alt.id!==product.id ? `<article class="cx-alt"><span>${icons.leaf}</span><div><small>Alternatíva</small><b>${esc(alt.name)}</b></div><a href="${alt.url}" target="_blank" rel="noreferrer" aria-label="Pozrieť alternatívu">${icons.arrow}</a></article>`:''}
           <p class="cx-result-note">Výber je orientačný podľa preferencií, nie zdravotná diagnóza.</p>
