@@ -2,7 +2,8 @@ import { test, expect } from '@playwright/test';
 import fs from 'node:fs';
 
 const baseURL = process.env.BASE_URL || 'http://127.0.0.1:4173';
-const demos = ['mylo','ponio','two','bellcoria','biofy','anemone'];
+const demos = ['mylo','ponio','two','bellcoria','biofy','anemone',
+  'modrapupava','facederma','cyprianus','panakeia','barboralori','bellmedi'];
 fs.mkdirSync('artifacts', { recursive:true });
 
 async function openDemo(page, slug, viewport={width:1366,height:768}, settle=120) {

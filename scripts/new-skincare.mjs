@@ -60,11 +60,21 @@ need(fs.existsSync(path.join(ROOT, 'assets/cosmetics', `${slug}.jpg`)),
 /* Every answer has to lead somewhere. A value no product carries drops every
    candidate by the same amount, so the advisor still answers — with whatever
    was first in the list, for no reason the visitor can see. */
-Object.entries(VOCAB).forEach(([question, values]) => values.forEach((value) => {
-  if (value === 'any') return;
+/* Skin and priority are what the visitor came with, so every one of those has
+   to lead somewhere. Routine and texture are preferences: an answer no product
+   carries costs every candidate the same point, so the other questions still
+   decide — but a shop that only makes creams should not be forced to pretend
+   otherwise. Those are held to a floor instead. */
+const covered = (values) => values.filter((value) => value !== 'any'
+  && products.some((product) => (product.tags || []).includes(value)));
+['skin', 'goal'].forEach((question) => VOCAB[question].forEach((value) =>
   need(products.some((product) => (product.tags || []).includes(value)),
-    `odpoveď "${value}" (${question}) nemá produkt — doplňte ju niektorému`);
-}));
+    `odpoveď "${value}" (${question}) nemá produkt — doplňte ju niektorému`)));
+need(covered(VOCAB.routine).length >= 3,
+  `rutina pokrýva len ${covered(VOCAB.routine).length} zo štyroch odpovedí — doplňte tagy`);
+need(covered(VOCAB.texture).length >= 1,
+  'textúra nepokrýva ani jednu odpoveď — označte produktom krém, sérum alebo olej');
+const thinTexture = covered(VOCAB.texture).length < 2;
 
 /* Two answers that land on the same product read as if the advisor knows one
    answer. The four skin types are the ones a visitor notices. */
@@ -218,7 +228,10 @@ console.log(`  ${slug}/index.html`);
   const before = fs.readFileSync(full, 'utf8');
   if (before.includes(`|${slug}|`) || before.includes(`|${slug})`)) console.log(`  ${file} (už tam je)`);
   else {
-    const after = before.replaceAll('|anemone)', `|anemone|${slug})`);
+    /* Anchoring on the slug that happened to be last broke the moment one was
+       appended after it. The group itself is the anchor. */
+    const after = before.replace(/("source": "\/:slug\()([^)]+)(\))/g,
+      (whole, head, list, tail) => `${head}${list}|${slug}${tail}`);
     if (after === before) throw new Error(`${file}: nenašiel som zoznam ukážok`);
     JSON.parse(after);
     fs.writeFileSync(full, after);
@@ -270,6 +283,10 @@ if (!process.argv.includes('--no-links')) {
     else broken.forEach(([url, code]) => console.log(`\nPOZOR: ${url} vracia ${code}`));
   }
 }
+
+/* Not an error — a shop that only makes creams should say so — but worth
+   saying out loud, because that question then decides nothing. */
+if (thinTexture) console.log('\nPOZNÁMKA: ponuka má jednu textúru, štvrtá otázka výsledok neovplyvní.');
 
 execFileSync(process.execPath, [path.join(ROOT, 'scripts/stamp-assets.mjs')], { stdio: 'inherit' });
 console.log(`\nHotové. Otvorte http://localhost:4400/${slug}/`);

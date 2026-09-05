@@ -1,0 +1,57 @@
+{
+ "slug": "panakeia",
+ "brand": {
+  "name": "Panakeia",
+  "domain": "panakeia.sk",
+  "website": "https://www.panakeia.sk/"
+ },
+ "colors": {
+  "brand": "#1b6f9c",
+  "accent": "#178fcf",
+  "soft": "#e7f2f9",
+  "paper": "#fbfdfe",
+  "ink": "#17303d",
+  "line": "#d2e4ef"
+ },
+ "ownerTitle": "Chatbot preloží názvy produktov na typ pleti.",
+ "ownerText": "Báthoryčka, Bosorkin lektvar, Kopaničiarska žehlička — mená, ktoré si zákazník zapamätá, ale nič mu nepovedia o pleti. Chatbot ho prevedie ponukou, odpovie na otázky o zložení a podľa pleti, priority a textúry mu odporučí jeden konkrétny produkt.",
+ "benefit": [
+  "Názov produktu prestane byť hádankou",
+  "Menej otázok pred nákupom",
+  "Preklik rovno na produkt"
+ ],
+ "products": [
+  {
+   "id": "noc",
+   "name": "BÁTHORYČKA – nočný krém s dračou krvou 30 ml",
+   "price": "15,28 €",
+   "url": "https://www.panakeia.sk/bathorycka---nocny-krem-s-dracou-krvou-30ml/",
+   "tags": ["dry", "sensitive", "hydrate", "calm", "cream", "simple", "basic"],
+   "reason": "Nočný krém so živicou Sangre de Drago — intenzívne vyživuje, podporuje regeneráciu a obnovuje ochrannú bariéru pleti."
+  },
+  {
+   "id": "bakuchiol",
+   "name": "BOSORKIN LEKTVAR – bakuchiol pleťové sérum 15 ml",
+   "price": "15,28 €",
+   "url": "https://www.panakeia.sk/bosorkin-lektvar-bakuchiol-pletove-serum-15ml/",
+   "tags": ["mature", "balanced", "serum", "target", "full"],
+   "reason": "Bakuchiol 1 % podporuje tvorbu kolagénu a elastínu, zjemňuje vrásky a upokojuje podráždenie. Ručne vyrobené na Slovensku."
+  },
+  {
+   "id": "zehlicka",
+   "name": "Kopaničiarska žehlička s peptidom Argireline 20 ml",
+   "price": "16,10 €",
+   "url": "https://www.panakeia.sk/kopaniciarska-zehlicka-s-peptidom-argireline-20ml--pletove-olejove-serum/",
+   "tags": ["mature", "dry", "hydrate", "oil", "target", "full"],
+   "reason": "Olejové sérum s peptidom Argirelin, vitamínom E, skvalánom a vzácnymi olejmi — pár kvapiek namiesto ďalšieho kroku navyše."
+  },
+  {
+   "id": "pena",
+   "name": "BÁTHORYČKA – čistiaca pleťová pena s dračou krvou 100 ml",
+   "price": "8,78 €",
+   "url": "https://www.panakeia.sk/bathorycka-cistiaca-pletova-pena-s-dracou-krvou-100ml/",
+   "tags": ["oily", "clarity", "simple", "basic", "any"],
+   "reason": "Jemná exfoliácia a čistenie vrátane zvyškov líčidiel — základ rutiny, keď je prvým problémom maz a nečistoty."
+  }
+ ]
+}

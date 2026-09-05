@@ -1,0 +1,57 @@
+{
+ "slug": "bellmedi",
+ "brand": {
+  "name": "BellMedi",
+  "domain": "bellmedi.sk",
+  "website": "https://bellmedi.sk/"
+ },
+ "colors": {
+  "brand": "#2a2622",
+  "accent": "#b08200",
+  "soft": "#fbf3dd",
+  "paper": "#fffef9",
+  "ink": "#241f19",
+  "line": "#eee2c3"
+ },
+ "ownerTitle": "Chatbot sa v stovke olejov vyzná za zákazníka.",
+ "ownerText": "BellMedi má vyše sto za studena lisovaných olejov, masiel a kvetových vôd — v takom katalógu sa zákazník sám nevyzná. Chatbot ho prevedie ponukou, odpovie na otázky o použití a podľa pleti, priority a textúry mu odporučí jeden konkrétny produkt.",
+ "benefit": [
+  "Stovka olejov prestane byť labyrint",
+  "Výber podľa pleti, nie podľa názvu rastliny",
+  "Preklik rovno na produkt"
+ ],
+ "products": [
+  {
+   "id": "hyaluron",
+   "name": "Kyselina hyalurónová",
+   "price": "22,90 €",
+   "url": "https://bellmedi.sk/produkt/kyselina-hyaluronova/",
+   "tags": ["dry", "balanced", "hydrate", "serum", "target", "basic"],
+   "reason": "Udržuje pokožku pevnú a pružnú, redukuje a vypĺňa vrásky — cielený hydratačný krok do existujúcej rutiny."
+  },
+  {
+   "id": "ibistek",
+   "name": "Ibištekový olej",
+   "price": "9,90 €",
+   "url": "https://bellmedi.sk/produkt/ibistekovy-olej/",
+   "tags": ["mature", "dry", "oil", "target", "full"],
+   "reason": "Podporuje elasticitu a spevnenie pleti, prispieva k zmierneniu jemných vrások a pomáha pri ochabnutej a unavenej pokožke."
+  },
+  {
+   "id": "kakao",
+   "name": "Kakaové maslo",
+   "price": "7,90 €",
+   "url": "https://bellmedi.sk/produkt/kakaove-maslo/",
+   "tags": ["dry", "sensitive", "calm", "cream", "simple", "basic"],
+   "reason": "Intenzívne vyživuje, vytvára jemný ochranný film a upokojuje podráždenú, suchú a citlivú pokožku."
+  },
+  {
+   "id": "ceder",
+   "name": "Cédrová kvetová voda",
+   "price": "6,90 €",
+   "url": "https://bellmedi.sk/produkt/cedrova-voda/",
+   "tags": ["oily", "clarity", "calm", "simple", "basic", "any"],
+   "reason": "Vyrovnáva pleť a reguluje maz — pri akné a zanesených póroch, s jemným sťahujúcim a antibakteriálnym účinkom."
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "slug": "facederma",
+ "brand": {
+  "name": "Facederma",
+  "domain": "facederma.sk",
+  "website": "https://facederma.sk/"
+ },
+ "colors": {
+  "brand": "#1b1b1b",
+  "accent": "#a9736c",
+  "soft": "#f3ece5",
+  "paper": "#fffefc",
+  "ink": "#161312",
+  "line": "#e2dace"
+ },
+ "ownerTitle": "Chatbot vysvetlí rozdiely a odporučí jeden produkt.",
+ "ownerText": "Séra aj krémy Facederma stoja podobne a líšia sa zložením — zákazník to z názvu nevyčíta. Chatbot ho prevedie ponukou, odpovie na otázky a podľa pleti, priority a rutiny mu odporučí jeden konkrétny produkt.",
+ "benefit": [
+  "Menej otázok na podporu",
+  "Rozdiel medzi produktmi zrozumiteľne",
+  "Preklik rovno na produkt"
+ ],
+ "products": [
+  {
+   "id": "akne",
+   "name": "ANTI-AKNÉ krém pre problematickú pleť",
+   "price": "26,90 €",
+   "url": "https://facederma.sk/products/anti-akne-krem-pre-problematicku-plet",
+   "tags": ["oily", "clarity", "cream", "simple", "basic"],
+   "reason": "Krém na akné a vyrážky — zmierňuje zápalové aj nezápalové prejavy a podporuje obnovu rovnováhy mikrobiómu pleti."
+  },
+  {
+   "id": "hyaluron",
+   "name": "Sérum kyseliny hyalurónovej",
+   "price": "58,90 €",
+   "url": "https://facederma.sk/products/facederma-serum-kyseliny-hyaluronovej",
+   "tags": ["balanced", "dry", "hydrate", "serum", "target", "basic"],
+   "reason": "Hĺbková hydratácia, ktorá zjemňuje jemné linky a zároveň vyrovnáva tvorbu kožného mazu — cielený krok do rutiny."
+  },
+  {
+   "id": "lifting",
+   "name": "Liftingový krém na vrásky a kontúry tváre",
+   "price": "72,90 €",
+   "url": "https://facederma.sk/products/liftingovy-krem",
+   "tags": ["mature", "dry", "cream", "full", "simple"],
+   "reason": "Extrakty z goji a vitexu podporujú pevnosť a pružnosť pokožky. Pre zákazníka, ktorý rieši vrásky a kontúry tváre."
+  },
+  {
+   "id": "hodvab",
+   "name": "Pleťový krém s hodvábom a kmeňovými bunkami",
+   "price": "72,90 €",
+   "url": "https://facederma.sk/products/pletovy-krem-s-hodvabom-a-bunkami-kostihoja-lekarskeho",
+   "tags": ["sensitive", "calm", "mature", "hydrate", "cream", "simple", "full"],
+   "reason": "Výživný krém s kašmírovo jemnou textúrou — komfortná voľba, keď pleť potrebuje skôr upokojiť než zaťažiť."
+  }
+ ]
+}

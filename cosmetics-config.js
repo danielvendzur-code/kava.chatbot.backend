@@ -152,6 +152,81 @@
         {id:'problem',name:"Problematická pleť – pleťový a telový olej",price:"26,11 €",url:"https://www.modrapupava.sk/products/pletovy-a-telovy-olej-problematicka-plet",photo:'/assets/cosmetics/modrapupava-problem.jpg',tags:['oily','clarity','oil','simple','basic'],reason:"Ľahký olej s čajovníkom a moringou pre mastnú a problematickú pleť. Udržiava póry čisté a zároveň upokojuje podráždenie."},
         {id:'fialka',name:"Fialka – pleťová olejová kúra",price:"22,48 €",url:"https://www.modrapupava.sk/products/pletova-kura-fialka",photo:'/assets/cosmetics/modrapupava-fialka.jpg',tags:['sensitive','calm','oil','target','simple'],reason:"Jemná olejová kúra pre citlivú, začervenanú a namáhanú pleť — posilňuje kožnú bariéru a vracia komfort."}
       ]
+    },
+    facederma: {
+      name:"Facederma", domain:"facederma.sk", website:"https://facederma.sk/",
+      theme:{brand:'#1b1b1b',accent:'#a9736c',soft:'#f3ece5',paper:'#fffefc',ink:'#161312',line:'#e2dace'},
+      wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/facederma-logo.png\" alt=\"Facederma\">",
+      hero:'/assets/cosmetics/facederma.jpg',
+      ownerTitle:"Chatbot vysvetlí rozdiely a odporučí jeden produkt.",
+      ownerText:"Séra aj krémy Facederma stoja podobne a líšia sa zložením — zákazník to z názvu nevyčíta. Chatbot ho prevedie ponukou, odpovie na otázky a podľa pleti, priority a rutiny mu odporučí jeden konkrétny produkt.",
+      benefit:["Menej otázok na podporu","Rozdiel medzi produktmi zrozumiteľne","Preklik rovno na produkt"],
+      products:[
+        {id:'akne',name:"ANTI-AKNÉ krém pre problematickú pleť",price:"26,90 €",url:"https://facederma.sk/products/anti-akne-krem-pre-problematicku-plet",photo:'/assets/cosmetics/facederma-akne.jpg',tags:['oily','clarity','cream','simple','basic'],reason:"Krém na akné a vyrážky — zmierňuje zápalové aj nezápalové prejavy a podporuje obnovu rovnováhy mikrobiómu pleti."},
+        {id:'hyaluron',name:"Sérum kyseliny hyalurónovej",price:"58,90 €",url:"https://facederma.sk/products/facederma-serum-kyseliny-hyaluronovej",photo:'/assets/cosmetics/facederma-hyaluron.jpg',tags:['balanced','dry','hydrate','serum','target','basic'],reason:"Hĺbková hydratácia, ktorá zjemňuje jemné linky a zároveň vyrovnáva tvorbu kožného mazu — cielený krok do rutiny."},
+        {id:'lifting',name:"Liftingový krém na vrásky a kontúry tváre",price:"72,90 €",url:"https://facederma.sk/products/liftingovy-krem",photo:'/assets/cosmetics/facederma-lifting.jpg',tags:['mature','dry','cream','full','simple'],reason:"Extrakty z goji a vitexu podporujú pevnosť a pružnosť pokožky. Pre zákazníka, ktorý rieši vrásky a kontúry tváre."},
+        {id:'hodvab',name:"Pleťový krém s hodvábom a kmeňovými bunkami",price:"72,90 €",url:"https://facederma.sk/products/pletovy-krem-s-hodvabom-a-bunkami-kostihoja-lekarskeho",photo:'/assets/cosmetics/facederma-hodvab.jpg',tags:['sensitive','calm','mature','hydrate','cream','simple','full'],reason:"Výživný krém s kašmírovo jemnou textúrou — komfortná voľba, keď pleť potrebuje skôr upokojiť než zaťažiť."}
+      ]
+    },
+    cyprianus: {
+      name:"Cyprianus", domain:"cyprianus.sk", website:"https://www.cyprianus.sk/",
+      theme:{brand:'#2c3d31',accent:'#4c7c22',soft:'#eef3ea',paper:'#fdfbf6',ink:'#24312a',line:'#dae4d6'},
+      wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/cyprianus-logo.svg\" alt=\"Cyprianus\">",
+      hero:'/assets/cosmetics/cyprianus.jpg',
+      ownerTitle:"Chatbot vyberie z ručnej kozmetiky ten správny krém.",
+      ownerText:"Krémy Cyprianus sa volajú podľa vône, nie podľa typu pleti — zákazník z názvu nespozná, ktorý je preňho. Chatbot ho prevedie ponukou, odpovie na otázky o zložení a podľa pleti, priority a textúry mu odporučí jeden konkrétny produkt.",
+      benefit:["Názov vône prestane byť prekážkou","Výber podľa pleti, nie podľa kategórie","Preklik rovno na produkt"],
+      products:[
+        {id:'mandla',name:"Hydratačný pleťový krém Mandľa a Malina 50 ml",price:"14,63 €",url:"https://www.cyprianus.sk/hydratacny-pletovy-krem-mandla-a-malina-50ml/",photo:'/assets/cosmetics/cyprianus-mandla.jpg',tags:['dry','balanced','hydrate','cream','simple','basic'],reason:"Mandľovo-malinový hydratačný krém s niacínamidom a hyalurónom — jemnosť a svieži vzhľad pre bežnú každodennú starostlivosť."},
+        {id:'q10',name:"Omladzujúci denný krém proti vráskam Q10 50 ml",price:"14,63 €",url:"https://www.cyprianus.sk/omladzujuci-denny-krem-proti-vraskam-50ml/",photo:'/assets/cosmetics/cyprianus-q10.jpg',tags:['mature','dry','hydrate','cream','full','simple'],reason:"Denný krém s koenzýmom Q10, skvalánom a vitamínom E — hebkosť a žiarivejší vzhľad bez lepivého filmu."},
+        {id:'jojoba',name:"Pleťové sérum Jojobový olej a ruža 50 ml",price:"8,93 €",url:"https://www.cyprianus.sk/pletove-serum-jojoba-a-ruza-50ml/",photo:'/assets/cosmetics/cyprianus-jojoba.jpg',tags:['sensitive','calm','serum','oil','target','basic'],reason:"Olejové sérum z jojoby a ruže — jemný cielený krok, keď zákazník nechce meniť celú rutinu."},
+        {id:'bergamot',name:"Hydratačný pleťový krém Pižmo a Bergamot 50 ml",price:"16,25 €",url:"https://www.cyprianus.sk/hydratacny-pletovy-krem-bergamot-50ml/",photo:'/assets/cosmetics/cyprianus-bergamot.jpg',tags:['oily','clarity','cream','simple','basic'],reason:"Denný krém s niacínamidom a hyalurónom, ktorý zjednotí vzhľad pleti a nechá ľahký zamatový finiš."}
+      ]
+    },
+    panakeia: {
+      name:"Panakeia", domain:"panakeia.sk", website:"https://www.panakeia.sk/",
+      theme:{brand:'#1b6f9c',accent:'#178fcf',soft:'#e7f2f9',paper:'#fbfdfe',ink:'#17303d',line:'#d2e4ef'},
+      wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/panakeia-logo.png\" alt=\"Panakeia\">",
+      hero:'/assets/cosmetics/panakeia.jpg',
+      ownerTitle:"Chatbot preloží názvy produktov na typ pleti.",
+      ownerText:"Báthoryčka, Bosorkin lektvar, Kopaničiarska žehlička — mená, ktoré si zákazník zapamätá, ale nič mu nepovedia o pleti. Chatbot ho prevedie ponukou, odpovie na otázky o zložení a podľa pleti, priority a textúry mu odporučí jeden konkrétny produkt.",
+      benefit:["Názov produktu prestane byť hádankou","Menej otázok pred nákupom","Preklik rovno na produkt"],
+      products:[
+        {id:'noc',name:"BÁTHORYČKA – nočný krém s dračou krvou 30 ml",price:"15,28 €",url:"https://www.panakeia.sk/bathorycka---nocny-krem-s-dracou-krvou-30ml/",photo:'/assets/cosmetics/panakeia-noc.jpg',tags:['dry','sensitive','hydrate','calm','cream','simple','basic'],reason:"Nočný krém so živicou Sangre de Drago — intenzívne vyživuje, podporuje regeneráciu a obnovuje ochrannú bariéru pleti."},
+        {id:'bakuchiol',name:"BOSORKIN LEKTVAR – bakuchiol pleťové sérum 15 ml",price:"15,28 €",url:"https://www.panakeia.sk/bosorkin-lektvar-bakuchiol-pletove-serum-15ml/",photo:'/assets/cosmetics/panakeia-bakuchiol.jpg',tags:['mature','balanced','serum','target','full'],reason:"Bakuchiol 1 % podporuje tvorbu kolagénu a elastínu, zjemňuje vrásky a upokojuje podráždenie. Ručne vyrobené na Slovensku."},
+        {id:'zehlicka',name:"Kopaničiarska žehlička s peptidom Argireline 20 ml",price:"16,10 €",url:"https://www.panakeia.sk/kopaniciarska-zehlicka-s-peptidom-argireline-20ml--pletove-olejove-serum/",photo:'/assets/cosmetics/panakeia-zehlicka.jpg',tags:['mature','dry','hydrate','oil','target','full'],reason:"Olejové sérum s peptidom Argirelin, vitamínom E, skvalánom a vzácnymi olejmi — pár kvapiek namiesto ďalšieho kroku navyše."},
+        {id:'pena',name:"BÁTHORYČKA – čistiaca pleťová pena s dračou krvou 100 ml",price:"8,78 €",url:"https://www.panakeia.sk/bathorycka-cistiaca-pletova-pena-s-dracou-krvou-100ml/",photo:'/assets/cosmetics/panakeia-pena.jpg',tags:['oily','clarity','simple','basic','any'],reason:"Jemná exfoliácia a čistenie vrátane zvyškov líčidiel — základ rutiny, keď je prvým problémom maz a nečistoty."}
+      ]
+    },
+    barboralori: {
+      name:"Barbora Lori", domain:"barboralori.sk", website:"https://www.barboralori.sk/",
+      theme:{brand:'#2b2b2b',accent:'#117e6f',soft:'#e9f2f0',paper:'#fdfdfc',ink:'#232323',line:'#dbe7e3'},
+      wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/barboralori-logo.png\" alt=\"Barbora Lori\">",
+      hero:'/assets/cosmetics/barboralori.jpg',
+      ownerTitle:"Chatbot dovedie zákazníka k správnej fľaštičke.",
+      ownerText:"Krémy, tonikum aj čistiace mlieko Barbora Lori vyzerajú v katalógu rovnako a líšia sa typom pleti. Chatbot prevedie zákazníka ponukou, odpovie na otázky o zložení a podľa pleti, priority a rutiny mu odporučí jeden konkrétny produkt.",
+      benefit:["Rovnaké fľaštičky prestanú miasť","Menej otázok pred nákupom","Preklik rovno na produkt"],
+      products:[
+        {id:'sucha',name:"Denný krém pre suchú a zrelšiu pleť s liftingovým účinkom",price:"5,50 – 18,50 €",url:"https://www.barboralori.sk/ochranny-denny-krem-pre-suchu-a-zrelsiu-plet/",photo:'/assets/cosmetics/barboralori-sucha.jpg',tags:['dry','mature','hydrate','cream','simple','basic'],reason:"Denný krém pre suchú a zrelšiu pleť s liftingovým účinkom — probiotická receptúra vhodná aj pre veľmi citlivú pleť."},
+        {id:'spf',name:"Opaľovací krém na tvár SPF 50 s nízkym komedogénnym indexom",price:"24,40 €",url:"https://www.barboralori.sk/opalovaci-krem-na-tvar-s-nizkym-komedogennym-indexom-spf-50/",photo:'/assets/cosmetics/barboralori-spf.jpg',tags:['oily','balanced','clarity','cream','target','basic'],reason:"Ochrana SPF 50 s nízkym komedogénnym indexom — pre pleť, ktorá sa maslí a bežné opaľovacie krémy jej upchávajú póry."},
+        {id:'mlieko',name:"Čistiace mlieko na tvár",price:"17,70 €",url:"https://www.barboralori.sk/cistiace-mlieko-na-tvar/",photo:'/assets/cosmetics/barboralori-mlieko.jpg',tags:['sensitive','calm','simple','basic'],reason:"Jemné čistenie ako základ rutiny — vhodné aj pre veľmi citlivú pleť so sklonom k ekzému či seborei."},
+        {id:'tonikum',name:"Upokojujúce a hydratačné tonikum",price:"14,99 €",url:"https://www.barboralori.sk/upokojujuce-a-hydratacne-tonikum/",photo:'/assets/cosmetics/barboralori-tonikum.jpg',tags:['sensitive','calm','hydrate','target','full'],reason:"Krok navyše po čistení, keď zákazník nechce meniť celú rutinu a hľadá len upokojenie a hydratáciu."}
+      ]
+    },
+    bellmedi: {
+      name:"BellMedi", domain:"bellmedi.sk", website:"https://bellmedi.sk/",
+      theme:{brand:'#2a2622',accent:'#b08200',soft:'#fbf3dd',paper:'#fffef9',ink:'#241f19',line:'#eee2c3'},
+      wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/bellmedi-logo.png\" alt=\"BellMedi\">",
+      hero:'/assets/cosmetics/bellmedi.jpg',
+      ownerTitle:"Chatbot sa v stovke olejov vyzná za zákazníka.",
+      ownerText:"BellMedi má vyše sto za studena lisovaných olejov, masiel a kvetových vôd — v takom katalógu sa zákazník sám nevyzná. Chatbot ho prevedie ponukou, odpovie na otázky o použití a podľa pleti, priority a textúry mu odporučí jeden konkrétny produkt.",
+      benefit:["Stovka olejov prestane byť labyrint","Výber podľa pleti, nie podľa názvu rastliny","Preklik rovno na produkt"],
+      products:[
+        {id:'hyaluron',name:"Kyselina hyalurónová",price:"22,90 €",url:"https://bellmedi.sk/produkt/kyselina-hyaluronova/",photo:'/assets/cosmetics/bellmedi-hyaluron.jpg',tags:['dry','balanced','hydrate','serum','target','basic'],reason:"Udržuje pokožku pevnú a pružnú, redukuje a vypĺňa vrásky — cielený hydratačný krok do existujúcej rutiny."},
+        {id:'ibistek',name:"Ibištekový olej",price:"9,90 €",url:"https://bellmedi.sk/produkt/ibistekovy-olej/",photo:'/assets/cosmetics/bellmedi-ibistek.jpg',tags:['mature','dry','oil','target','full'],reason:"Podporuje elasticitu a spevnenie pleti, prispieva k zmierneniu jemných vrások a pomáha pri ochabnutej a unavenej pokožke."},
+        {id:'kakao',name:"Kakaové maslo",price:"7,90 €",url:"https://bellmedi.sk/produkt/kakaove-maslo/",photo:'/assets/cosmetics/bellmedi-kakao.jpg',tags:['dry','sensitive','calm','cream','simple','basic'],reason:"Intenzívne vyživuje, vytvára jemný ochranný film a upokojuje podráždenú, suchú a citlivú pokožku."},
+        {id:'ceder',name:"Cédrová kvetová voda",price:"6,90 €",url:"https://bellmedi.sk/produkt/cedrova-voda/",photo:'/assets/cosmetics/bellmedi-ceder.jpg',tags:['oily','clarity','calm','simple','basic','any'],reason:"Vyrovnáva pleť a reguluje maz — pri akné a zanesených póroch, s jemným sťahujúcim a antibakteriálnym účinkom."}
+      ]
     }
   };
 

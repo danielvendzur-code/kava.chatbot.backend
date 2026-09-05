@@ -825,14 +825,21 @@ body.cx-offer-open { overflow: hidden; }
   object-fit: contain; object-position: left center;
 }
 .cx-owner-brand .cx-logo { max-height: clamp(30px, 4.4vh, 42px); }
-.cx-widget-brand .cx-logo { max-width: 118px; max-height: 25px; }
+/* The widget header is painted in the brand colour, not white, so a logo in
+   the brand's own ink disappears into it the way Barbora Lori's did. */
+.cx-widget-brand .cx-logo {
+  max-width: 118px; max-height: 25px;
+  filter: brightness(0) invert(1);
+}
+/* The wordmark rules above these two are !important, and a wide logo held to
+   their width runs to the edge of the disc. */
 .cx-message-avatar .cx-logo,
 .cx-launcher-button .cx-logo {
-  max-width: 34px; max-height: 19px;
   object-position: center;
   filter: brightness(0) invert(1);
 }
-.cx-message-avatar .cx-logo { max-width: 26px; max-height: 15px; }
+.cx-launcher-button .cx-logo { max-width: 46px !important; max-height: 20px !important; }
+.cx-message-avatar .cx-logo { max-width: 24px !important; max-height: 14px !important; }
 
 @media (max-width: 720px) {
   .cx-owner-brand .cx-logo { max-width: 130px; max-height: 28px; }

@@ -1,0 +1,57 @@
+{
+ "slug": "barboralori",
+ "brand": {
+  "name": "Barbora Lori",
+  "domain": "barboralori.sk",
+  "website": "https://www.barboralori.sk/"
+ },
+ "colors": {
+  "brand": "#2b2b2b",
+  "accent": "#117e6f",
+  "soft": "#e9f2f0",
+  "paper": "#fdfdfc",
+  "ink": "#232323",
+  "line": "#dbe7e3"
+ },
+ "ownerTitle": "Chatbot dovedie zákazníka k správnej fľaštičke.",
+ "ownerText": "Krémy, tonikum aj čistiace mlieko Barbora Lori vyzerajú v katalógu rovnako a líšia sa typom pleti. Chatbot prevedie zákazníka ponukou, odpovie na otázky o zložení a podľa pleti, priority a rutiny mu odporučí jeden konkrétny produkt.",
+ "benefit": [
+  "Rovnaké fľaštičky prestanú miasť",
+  "Menej otázok pred nákupom",
+  "Preklik rovno na produkt"
+ ],
+ "products": [
+  {
+   "id": "sucha",
+   "name": "Denný krém pre suchú a zrelšiu pleť s liftingovým účinkom",
+   "price": "5,50 – 18,50 €",
+   "url": "https://www.barboralori.sk/ochranny-denny-krem-pre-suchu-a-zrelsiu-plet/",
+   "tags": ["dry", "mature", "hydrate", "cream", "simple", "basic"],
+   "reason": "Denný krém pre suchú a zrelšiu pleť s liftingovým účinkom — probiotická receptúra vhodná aj pre veľmi citlivú pleť."
+  },
+  {
+   "id": "spf",
+   "name": "Opaľovací krém na tvár SPF 50 s nízkym komedogénnym indexom",
+   "price": "24,40 €",
+   "url": "https://www.barboralori.sk/opalovaci-krem-na-tvar-s-nizkym-komedogennym-indexom-spf-50/",
+   "tags": ["oily", "balanced", "clarity", "cream", "target", "basic"],
+   "reason": "Ochrana SPF 50 s nízkym komedogénnym indexom — pre pleť, ktorá sa maslí a bežné opaľovacie krémy jej upchávajú póry."
+  },
+  {
+   "id": "mlieko",
+   "name": "Čistiace mlieko na tvár",
+   "price": "17,70 €",
+   "url": "https://www.barboralori.sk/cistiace-mlieko-na-tvar/",
+   "tags": ["sensitive", "calm", "simple", "basic"],
+   "reason": "Jemné čistenie ako základ rutiny — vhodné aj pre veľmi citlivú pleť so sklonom k ekzému či seborei."
+  },
+  {
+   "id": "tonikum",
+   "name": "Upokojujúce a hydratačné tonikum",
+   "price": "14,99 €",
+   "url": "https://www.barboralori.sk/upokojujuce-a-hydratacne-tonikum/",
+   "tags": ["sensitive", "calm", "hydrate", "target", "full"],
+   "reason": "Krok navyše po čistení, keď zákazník nechce meniť celú rutinu a hľadá len upokojenie a hydratáciu."
+  }
+ ]
+}

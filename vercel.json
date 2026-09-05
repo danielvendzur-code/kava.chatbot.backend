@@ -64,7 +64,7 @@
       ]
     },
     {
-      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|mylo|ponio|two|bellcoria|biofy|anemone|modrapupava)",
+      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|mylo|ponio|two|bellcoria|biofy|anemone|modrapupava|facederma|cyprianus|panakeia|barboralori|bellmedi)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|mylo|ponio|two|bellcoria|biofy|anemone|modrapupava)/",
+      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|mylo|ponio|two|bellcoria|biofy|anemone|modrapupava|facederma|cyprianus|panakeia|barboralori|bellmedi)/",
       "headers": [
         {
           "key": "Cache-Control",

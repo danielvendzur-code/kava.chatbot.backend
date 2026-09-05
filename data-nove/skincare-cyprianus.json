@@ -1,0 +1,57 @@
+{
+ "slug": "cyprianus",
+ "brand": {
+  "name": "Cyprianus",
+  "domain": "cyprianus.sk",
+  "website": "https://www.cyprianus.sk/"
+ },
+ "colors": {
+  "brand": "#2c3d31",
+  "accent": "#4c7c22",
+  "soft": "#eef3ea",
+  "paper": "#fdfbf6",
+  "ink": "#24312a",
+  "line": "#dae4d6"
+ },
+ "ownerTitle": "Chatbot vyberie z ručnej kozmetiky ten správny krém.",
+ "ownerText": "Krémy Cyprianus sa volajú podľa vône, nie podľa typu pleti — zákazník z názvu nespozná, ktorý je preňho. Chatbot ho prevedie ponukou, odpovie na otázky o zložení a podľa pleti, priority a textúry mu odporučí jeden konkrétny produkt.",
+ "benefit": [
+  "Názov vône prestane byť prekážkou",
+  "Výber podľa pleti, nie podľa kategórie",
+  "Preklik rovno na produkt"
+ ],
+ "products": [
+  {
+   "id": "mandla",
+   "name": "Hydratačný pleťový krém Mandľa a Malina 50 ml",
+   "price": "14,63 €",
+   "url": "https://www.cyprianus.sk/hydratacny-pletovy-krem-mandla-a-malina-50ml/",
+   "tags": ["dry", "balanced", "hydrate", "cream", "simple", "basic"],
+   "reason": "Mandľovo-malinový hydratačný krém s niacínamidom a hyalurónom — jemnosť a svieži vzhľad pre bežnú každodennú starostlivosť."
+  },
+  {
+   "id": "q10",
+   "name": "Omladzujúci denný krém proti vráskam Q10 50 ml",
+   "price": "14,63 €",
+   "url": "https://www.cyprianus.sk/omladzujuci-denny-krem-proti-vraskam-50ml/",
+   "tags": ["mature", "dry", "hydrate", "cream", "full", "simple"],
+   "reason": "Denný krém s koenzýmom Q10, skvalánom a vitamínom E — hebkosť a žiarivejší vzhľad bez lepivého filmu."
+  },
+  {
+   "id": "jojoba",
+   "name": "Pleťové sérum Jojobový olej a ruža 50 ml",
+   "price": "8,93 €",
+   "url": "https://www.cyprianus.sk/pletove-serum-jojoba-a-ruza-50ml/",
+   "tags": ["sensitive", "calm", "serum", "oil", "target", "basic"],
+   "reason": "Olejové sérum z jojoby a ruže — jemný cielený krok, keď zákazník nechce meniť celú rutinu."
+  },
+  {
+   "id": "bergamot",
+   "name": "Hydratačný pleťový krém Pižmo a Bergamot 50 ml",
+   "price": "16,25 €",
+   "url": "https://www.cyprianus.sk/hydratacny-pletovy-krem-bergamot-50ml/",
+   "tags": ["oily", "clarity", "cream", "simple", "basic"],
+   "reason": "Denný krém s niacínamidom a hyalurónom, ktorý zjednotí vzhľad pleti a nechá ľahký zamatový finiš."
+  }
+ ]
+}
