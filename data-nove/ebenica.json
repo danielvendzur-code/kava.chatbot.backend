@@ -1,0 +1,246 @@
+{
+ "slug": "ebenica",
+ "brand": {
+  "name": "EBENICA Coffee",
+  "place": "EBENICA Coffee · Modra",
+  "shopUrl": "https://ebenica.sk/kategoria-produktu/kava/",
+  "storyUrl": "https://ebenica.sk/"
+ },
+ "colors": {
+  "ink": "#1a201a",
+  "brand": "#18211a",
+  "accent": "#467c45",
+  "soft": "#eaf2e9",
+  "paper": "#fbfdfa",
+  "line": "#d6e3d4"
+ },
+ "ownerTitle": "Poradí zákazníkovi kávu podľa jeho chuti.",
+ "ownerLead": "Zmesi, single origin aj bezkofeínová — z názvu zákazník nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
+ "chips": [
+  "Káva do automatu",
+  "Káva na filter",
+  "Niečo ovocné",
+  "Bez kofeínu"
+ ],
+ "products": [
+  {
+   "id": "impulso",
+   "name": "Impulso",
+   "line": "Espresso zmes · vyšší obsah kofeínu",
+   "url": "https://ebenica.sk/kava-ebenica-impulso/",
+   "price": "od 7,90 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "čokoláda",
+    "oriešky",
+    "hustá créma"
+   ],
+   "acidity": 0,
+   "acidityNote": "Bez kyslosti, plné telo.",
+   "bestFor": "Automatické kávovary",
+   "why": "Silná káva na štart dňa — čokoládovo-oriešková chuť bez kyslosti, hustá créma a vyšší obsah kofeínu. Stavaná na automat.",
+   "taste": {
+    "chocolate": 0.95,
+    "balanced": 0.55,
+    "fruity": 0.05,
+    "bold": 1
+   },
+   "prep": {
+    "automat": 1,
+    "lever": 0.9,
+    "moka": 0.85,
+    "filter": 0.12
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 0.9,
+    "both": 0.95
+   },
+   "explore": 0.2
+  },
+  {
+   "id": "harmonelle",
+   "name": "Harmonelle",
+   "line": "Espresso zmes · Great Taste",
+   "url": "https://ebenica.sk/kava-ebenica-harmonelle/",
+   "price": "od 4,49 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "kvetinová aróma",
+    "čokoláda",
+    "krémová chuť"
+   ],
+   "acidity": 1,
+   "acidityNote": "Bez výraznej horkosti aj acidity.",
+   "bestFor": "Espresso a mliečne nápoje",
+   "why": "Výborne vyvážená espresso káva so sviežou kvetinovou arómou a tónmi čokolády. Sadne milovníkom espressa aj mliečnych nápojov.",
+   "taste": {
+    "chocolate": 0.85,
+    "balanced": 1,
+    "fruity": 0.3,
+    "bold": 0.4
+   },
+   "prep": {
+    "automat": 0.9,
+    "lever": 0.95,
+    "moka": 0.85,
+    "filter": 0.4
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 1,
+    "both": 1
+   },
+   "explore": 0.2
+  },
+  {
+   "id": "brasil",
+   "name": "Brasil Santos",
+   "line": "Brazília · 100 % arabika · Great Taste 2025",
+   "url": "https://ebenica.sk/kava-brasil-santos/",
+   "price": "od 4,49 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "sladká čokoláda",
+    "oriešky",
+    "harmonická"
+   ],
+   "acidity": 1,
+   "acidityNote": "Jemná, vyvážená.",
+   "bestFor": "Espresso a cappuccino",
+   "why": "Singlová káva ocenená v Great Taste 2025. Sladká čokoládová chuť a jemná oriešková vôňa — harmonická voľba na espresso aj cappuccino.",
+   "taste": {
+    "chocolate": 1,
+    "balanced": 0.9,
+    "fruity": 0.2,
+    "bold": 0.45
+   },
+   "prep": {
+    "automat": 0.85,
+    "lever": 0.9,
+    "moka": 0.85,
+    "filter": 0.5
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 0.95,
+    "both": 0.95
+   },
+   "explore": 0.3
+  },
+  {
+   "id": "ethiopia",
+   "name": "Ethiopia Guji Habesha",
+   "line": "Etiópia · Guji · farmárska káva",
+   "url": "https://ebenica.sk/ethiopia-guji-habesha/",
+   "price": "od 4,49 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "jazmínový čaj",
+    "kvetinové tóny",
+    "jemná kyselinka"
+   ],
+   "acidity": 3,
+   "acidityNote": "Komplexná, s jemnou kyselinkou.",
+   "bestFor": "Filter aj moderné espresso",
+   "why": "Vôňa pripomína jazmínový čaj, v chuti kvetinové tóny, horkosť čierneho čaju a jemná kyselinka. Skvelá na filter aj na moderné espresso.",
+   "taste": {
+    "chocolate": 0.1,
+    "balanced": 0.5,
+    "fruity": 1,
+    "bold": 0.65
+   },
+   "prep": {
+    "automat": 0.25,
+    "lever": 0.7,
+    "moka": 0.3,
+    "filter": 0.9
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.15,
+    "both": 0.35
+   },
+   "explore": 0.8
+  },
+  {
+   "id": "kenya",
+   "name": "Kenya Tekangu Tegu",
+   "line": "Keňa · svetlé praženie · Great Taste",
+   "url": "https://ebenica.sk/kava-kenya-tekangu-tegu/",
+   "price": "od 4,49 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "grep",
+    "kvety",
+    "maliny"
+   ],
+   "acidity": 3,
+   "acidityNote": "Jasná ovocná chuť.",
+   "bestFor": "Filter aj espresso",
+   "why": "Svetlo pražená výberová arabika ocenená v Great Taste. Svieže tóny grepu, kvetov a malín, ktoré vyniknú v espresse aj cez filter.",
+   "taste": {
+    "chocolate": 0.08,
+    "balanced": 0.45,
+    "fruity": 0.93,
+    "bold": 0.75
+   },
+   "prep": {
+    "automat": 0.2,
+    "lever": 0.65,
+    "moka": 0.25,
+    "filter": 1
+   },
+   "drink": {
+    "black": 1,
+    "milk": 0.12,
+    "both": 0.3
+   },
+   "explore": 0.75
+  },
+  {
+   "id": "zero",
+   "name": "EBENICA Zero",
+   "line": "Kolumbia · 100 % arabika · bez kofeínu",
+   "url": "https://ebenica.sk/bezkofeinova-kava-ebenica-zero/",
+   "price": "od 4,49 €",
+   "priceUnit": "balenie",
+   "weights": "",
+   "notes": [
+    "plná chuť",
+    "jemné ovocné tóny",
+    "bez kofeínu"
+   ],
+   "acidity": 1,
+   "acidityNote": "Plná chuť s jemnými ovocnými tónmi.",
+   "bestFor": "Moderné espresso aj alternatívy",
+   "why": "Kolumbijská arabika zbavená kofeínu šetrnou metódou. Vhodná aj pre tehotné a dojčiace ženy či kardio pacientov.",
+   "taste": {
+    "chocolate": 0.7,
+    "balanced": 0.85,
+    "fruity": 0.4,
+    "bold": 0.35
+   },
+   "prep": {
+    "automat": 0.75,
+    "lever": 0.85,
+    "moka": 0.8,
+    "filter": 0.7
+   },
+   "drink": {
+    "black": 0.9,
+    "milk": 0.9,
+    "both": 0.95
+   },
+   "explore": 0.35,
+   "decaf": true
+  }
+ ],
+ "logoUrl": "https://ebenica.sk/wp-content/uploads/2019/01/ebenica-logo_gkg.png",
+ "heroPhotoUrl": "https://ebenica.sk/wp-content/uploads/2020/06/ (rad balení z ich vlastných produktových fotiek)"
+}

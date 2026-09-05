@@ -211,6 +211,84 @@
       theme: { ink: '#24262b', brand: '#24262b', accent: '#9a7c46', soft: '#f7f0e4', paper: '#fffaf4' },
       hero: '/assets/simplecoffee/hero.jpg',
       figures: commonFigures('príprava · chuť · nápoj · kofeín')
+    },
+
+    ebenica: {
+      name: "EBENICA Coffee",
+      place: "EBENICA Coffee · Modra",
+      title: "Poradí zákazníkovi kávu podľa jeho chuti.",
+      lead: "Zmesi, single origin aj bezkofeínová — z názvu zákazník nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
+      root: '.ebenica-page',
+      shop: "https://ebenica.sk/kategoria-produktu/kava/",
+      lockup: '<img src="/assets/ebenica/logo.png" alt="EBENICA Coffee">',
+      theme: { ink: '#1a201a', brand: '#18211a', accent: '#467c45', soft: '#eaf2e9', paper: '#fbfdfa' },
+      hero: '/assets/ebenica/hero.jpg',
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+    },
+
+    casadelcaffe: {
+      name: "Casa del Caffé",
+      place: "Casa del Caffé · Bratislava",
+      title: "Poradí zákazníkovi kávu podľa jeho chuti.",
+      lead: "Talianske zmesi aj plantážne kávy z jedného regálu — z názvu zákazník nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
+      root: '.casadelcaffe-page',
+      shop: "https://casadelcaffe.sk/kategoria-produktu/kava/",
+      lockup: '<img src="/assets/casadelcaffe/logo.png" alt="Casa del Caffé">',
+      theme: { ink: '#221c14', brand: '#1c1a17', accent: '#a8823f', soft: '#f5efe3', paper: '#fffdf9' },
+      hero: '/assets/casadelcaffe/hero.jpg',
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+    },
+
+    coffeeveronia: {
+      name: "Coffee Veronia",
+      place: "Coffee Veronia · Trnava",
+      title: "Poradí zákazníkovi kávu podľa jeho chuti.",
+      lead: "Brazílie, africké single origin aj bezkofeínová v jednej rade plechoviek — z etikety zákazník nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
+      root: '.coffeeveronia-page',
+      shop: "https://www.coffeeveronia.sk/arabika/",
+      lockup: '<img src="/assets/coffeeveronia/logo.png" alt="Coffee Veronia">',
+      theme: { ink: '#231a12', brand: '#231a12', accent: '#6c3608', soft: '#f6ece0', paper: '#fffdf9' },
+      hero: '/assets/coffeeveronia/hero.jpg',
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+    },
+
+    grandroastery: {
+      name: "Grand Roastery",
+      place: "Grand Roastery · Bardejovské Kúpele",
+      title: "Poradí zákazníkovi kávu podľa jeho chuti.",
+      lead: "Zmesi do kávovaru aj experimentálne single origin v jednom e-shope — z názvu zákazník nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
+      root: '.grandroastery-page',
+      shop: "https://www.grandroastery.sk/cerstvo-prazena-kava-1",
+      lockup: '<img src="/assets/grandroastery/logo.png" alt="Grand Roastery">',
+      theme: { ink: '#1b1b1b', brand: '#161616', accent: '#14907a', soft: '#e8f4f0', paper: '#fdfefd' },
+      hero: '/assets/grandroastery/hero.jpg',
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+    },
+
+    coffeein: {
+      name: "COFFEEIN",
+      place: "COFFEEIN · Šahy",
+      title: "Poradí zákazníkovi kávu podľa jeho chuti.",
+      lead: "Espresso zmesi aj tretia vlna z vlastnej pražiarne — zákazník z názvu nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
+      root: '.coffeein-page',
+      shop: "https://www.coffeein.sk/kategoria/2/cerstvo-prazena-zrnkova-kava/1/",
+      lockup: '<img src="/assets/coffeein/logo.png" alt="COFFEEIN">',
+      theme: { ink: '#1c1a19', brand: '#1e1c1b', accent: '#d4591f', soft: '#fdeee4', paper: '#fffdfb' },
+      hero: '/assets/coffeein/hero.jpg',
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+    },
+
+    kavoholik: {
+      name: "Kávoholik",
+      place: "Kávoholik · vlastná pražiareň",
+      title: "Poradí zákazníkovi kávu podľa jeho chuti.",
+      lead: "Espresso zmesi s menami slovenských dejateľov aj experimentálne kolumbijské lóty — z názvu zákazník nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
+      root: '.kavoholik-page',
+      shop: "https://kavoholik.sk/12-e-shop",
+      lockup: '<img src="/assets/kavoholik/logo.png" alt="Kávoholik">',
+      theme: { ink: '#1d1a17', brand: '#1d1a17', accent: '#5f7d21', soft: '#eef3e3', paper: '#fdfdfa' },
+      hero: '/assets/kavoholik/hero.jpg',
+      figures: commonFigures('príprava · chuť · nápoj · kofeín')
     }
   };
 

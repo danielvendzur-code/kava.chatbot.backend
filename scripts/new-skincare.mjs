@@ -255,7 +255,9 @@ console.log(`  ${slug}/index.html`);
   const word = (n) => ['nula', 'jedna', 'dve', 'tri', 'štyri', 'päť', 'šesť', 'sedem', 'osem',
     'deväť', 'desať', 'jedenásť', 'dvanásť', 'trinásť', 'štrnásť', 'pätnásť', 'šestnásť',
     'sedemnásť', 'osemnásť', 'devätnásť', 'dvadsať', 'dvadsaťjeden', 'dvadsaťdva',
-    'dvadsaťtri', 'dvadsaťštyri'][n] || String(n);
+    'dvadsaťtri', 'dvadsaťštyri', 'dvadsaťpäť', 'dvadsaťšesť', 'dvadsaťsedem',
+    'dvadsaťosem', 'dvadsaťdeväť', 'tridsať', 'tridsaťjeden', 'tridsaťdva',
+    'tridsaťtri', 'tridsaťštyri', 'tridsaťpäť', 'tridsaťšesť'][n] || String(n);
   const total = counts.reduce((sum, n) => sum + n, 0);
   text = text.replace(/<p class="lead">[^<]*<\/p>/,
     `<p class="lead">${word(total).replace(/^./, (ch) => ch.toUpperCase())} ukážok — `

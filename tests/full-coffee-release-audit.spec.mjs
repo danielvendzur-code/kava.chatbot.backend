@@ -19,7 +19,13 @@ const demos = [
   ['coffeesheep', '/coffeesheep.html'],
   ['zlatezrnko', '/zlatezrnko.html'],
   ['becafe', '/becafe.html'],
-  ['simplecoffee', '/simplecoffee.html']
+  ['simplecoffee', '/simplecoffee.html'],
+  ['ebenica', '/ebenica.html'],
+  ['casadelcaffe', '/casadelcaffe.html'],
+  ['coffeeveronia', '/coffeeveronia.html'],
+  ['grandroastery', '/grandroastery.html'],
+  ['coffeein', '/coffeein.html'],
+  ['kavoholik', '/kavoholik.html']
 ];
 
 function monitor(page) {

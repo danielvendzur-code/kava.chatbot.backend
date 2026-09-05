@@ -1,0 +1,6 @@
+/* Kávoholik brand tokens on the shared Jolka system. */
+:root{--ink:#1d1a17;--ink-2:#1d1a17;--ink-3:#1d1a17;--paper:#fdfdfa;--surface:#fff;--surface-2:#eef3e3;--line:#dde5cd;--line-strong:#dde5cd;--kraft:#5f7d21;--kraft-deep:#5f7d21;--kraft-tint:#eef3e3;--text:#1d1a17;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.kavoholik-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.kavoholik-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.kavoholik-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.kavoholik-clean .launcher__button img{width:54px!important;height:54px!important}

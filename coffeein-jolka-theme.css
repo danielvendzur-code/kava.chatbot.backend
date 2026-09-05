@@ -1,0 +1,6 @@
+/* COFFEEIN brand tokens on the shared Jolka system. */
+:root{--ink:#1c1a19;--ink-2:#1e1c1b;--ink-3:#1e1c1b;--paper:#fffdfb;--surface:#fff;--surface-2:#fdeee4;--line:#f0dbc9;--line-strong:#f0dbc9;--kraft:#d4591f;--kraft-deep:#d4591f;--kraft-tint:#fdeee4;--text:#1c1a19;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.coffeein-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.coffeein-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.coffeein-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.coffeein-clean .launcher__button img{width:54px!important;height:54px!important}

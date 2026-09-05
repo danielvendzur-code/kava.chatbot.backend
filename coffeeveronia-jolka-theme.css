@@ -1,0 +1,6 @@
+/* Coffee Veronia brand tokens on the shared Jolka system. */
+:root{--ink:#231a12;--ink-2:#231a12;--ink-3:#231a12;--paper:#fffdf9;--surface:#fff;--surface-2:#f6ece0;--line:#e8d8c6;--line-strong:#e8d8c6;--kraft:#6c3608;--kraft-deep:#6c3608;--kraft-tint:#f6ece0;--text:#231a12;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.coffeeveronia-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.coffeeveronia-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.coffeeveronia-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.coffeeveronia-clean .launcher__button img{width:54px!important;height:54px!important}

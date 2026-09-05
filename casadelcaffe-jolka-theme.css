@@ -1,0 +1,6 @@
+/* Casa del Caffé brand tokens on the shared Jolka system. */
+:root{--ink:#221c14;--ink-2:#1c1a17;--ink-3:#1c1a17;--paper:#fffdf9;--surface:#fff;--surface-2:#f5efe3;--line:#e6dbc7;--line-strong:#e6dbc7;--kraft:#a8823f;--kraft-deep:#a8823f;--kraft-tint:#f5efe3;--text:#221c14;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.casadelcaffe-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.casadelcaffe-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.casadelcaffe-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.casadelcaffe-clean .launcher__button img{width:54px!important;height:54px!important}

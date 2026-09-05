@@ -434,7 +434,10 @@ patch('ukazky.html', '\n    </ul>', `\n      <li><a href="/${slug}/">${name}</a>
     .map((block) => (block[1].match(/<li>/g) || []).length);
   const word = (n) => ['nula', 'jedna', 'dve', 'tri', 'štyri', 'päť', 'šesť', 'sedem', 'osem',
     'deväť', 'desať', 'jedenásť', 'dvanásť', 'trinásť', 'štrnásť', 'pätnásť', 'šestnásť',
-    'sedemnásť', 'osemnásť', 'devätnásť', 'dvadsať'][n] || String(n);
+    'sedemnásť', 'osemnásť', 'devätnásť', 'dvadsať', 'dvadsaťjeden', 'dvadsaťdva',
+    'dvadsaťtri', 'dvadsaťštyri', 'dvadsaťpäť', 'dvadsaťšesť', 'dvadsaťsedem',
+    'dvadsaťosem', 'dvadsaťdeväť', 'tridsať', 'tridsaťjeden', 'tridsaťdva',
+    'tridsaťtri', 'tridsaťštyri', 'tridsaťpäť', 'tridsaťšesť'][n] || String(n);
   const total = counts.reduce((sum, n) => sum + n, 0);
   const lead = `<p class="lead">${word(total).replace(/^./, (ch) => ch.toUpperCase())} ukážok — `
     + `${word(counts[0])} pražiarní a ${word(counts[1])} značiek starostlivosti.</p>`;

@@ -1,0 +1,6 @@
+/* EBENICA Coffee brand tokens on the shared Jolka system. */
+:root{--ink:#1a201a;--ink-2:#18211a;--ink-3:#18211a;--paper:#fbfdfa;--surface:#fff;--surface-2:#eaf2e9;--line:#d6e3d4;--line-strong:#d6e3d4;--kraft:#467c45;--kraft-deep:#467c45;--kraft-tint:#eaf2e9;--text:#1a201a;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.ebenica-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.ebenica-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.ebenica-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.ebenica-clean .launcher__button img{width:54px!important;height:54px!important}

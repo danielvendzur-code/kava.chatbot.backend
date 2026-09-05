@@ -216,6 +216,114 @@ const DEMOS = {
       decaf: "Bez kofeínu je v ponuke Peru Decaf – Swiss Water. Bezkofeínová káva, ktorá nie je kompromis.",
       default: "Ak chcete začať istotou, dobrým smerom je Oro Nero. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
     }
+  },
+  ebenica: {
+    brand: "EBENICA Coffee", web: "https://ebenica.sk/kategoria-produktu/kava/",
+    products: [
+      "Impulso – čokoláda, oriešky, hustá créma; Automatické kávovary",
+      "Harmonelle – kvetinová aróma, čokoláda, krémová chuť; Espresso a mliečne nápoje",
+      "Brasil Santos – sladká čokoláda, oriešky, harmonická; Espresso a cappuccino",
+      "Ethiopia Guji Habesha – jazmínový čaj, kvetinové tóny, jemná kyselinka; Filter aj moderné espresso",
+      "Kenya Tekangu Tegu – grep, kvety, maliny; Filter aj espresso",
+      "EBENICA Zero – plná chuť, jemné ovocné tóny, bez kofeínu; Moderné espresso aj alternatívy; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Impulso. Bez kyslosti, plné telo.",
+      milk: "Do mlieka sa hodí Harmonelle. Výborne vyvážená espresso káva so sviežou kvetinovou arómou a tónmi čokolády.",
+      filter: "Na filter siahnite po Kenya Tekangu Tegu. Jasná ovocná chuť.",
+      decaf: "Bez kofeínu je v ponuke EBENICA Zero. Kolumbijská arabika zbavená kofeínu šetrnou metódou.",
+      default: "Ak chcete začať istotou, dobrým smerom je Impulso. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
+  },
+  casadelcaffe: {
+    brand: "Casa del Caffé", web: "https://casadelcaffe.sk/kategoria-produktu/kava/",
+    products: [
+      "Bella Italia – horká čokoláda, kakao, hustá oriešková kréma; Automat a pákový kávovar",
+      "Toscana – kakao, pražené lieskové oriešky, tmavá čokoláda; Espresso a moka",
+      "Markom – mliečna čokoláda, oriešky, jemnosť; Cappuccino a mliečne nápoje",
+      "Colombia Supremo – jemne sladká, zamatová čokoláda, stredne plné telo; Filter aj espresso",
+      "Honduras Marcala BIO – čerešne, mliečna čokoláda, smotanový záver; Filter a alternatívne prípravy",
+      "Bezkofeínová káva BIO – mliečna čokoláda, sladký karamel, orechový záver; Neskoré popoludnie a večer; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Bella Italia. Nulová kyslosť, plné zemité telo.",
+      milk: "Do mlieka sa hodí Markom. Stredne silná káva z Južnej a Strednej Ameriky s jemnou chuťou mliečnej čokolády a orieškov.",
+      filter: "Na filter siahnite po Colombia Supremo. Dokonalá rovnováha sladkosti a acidity.",
+      decaf: "Bez kofeínu je v ponuke Bezkofeínová káva BIO. Šetrný proces dekofeinizácie bez použitia chémie zachová chuť — mliečna čokoláda, sladký karamel a orechový záver.",
+      default: "Ak chcete začať istotou, dobrým smerom je Bella Italia. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
+  },
+  coffeeveronia: {
+    brand: "Coffee Veronia", web: "https://www.coffeeveronia.sk/arabika/",
+    products: [
+      "Brazil Signature Espresso 200 g – čokoláda, oriešky, hustá créma; Automat a pákový kávovar",
+      "Brazil Santos Exclusive 200 g – sladká čokoláda, oriešky, jemnosť; Espresso a mliečne nápoje",
+      "Etiópia 250 g – kvetinová aróma, ovocie, sviežosť; Filter aj espresso",
+      "Costa Rica Yellow Honey 200 g – medová sladkosť, čistý profil, ovocie; V60, Chemex a Aeropress",
+      "Rwanda – limitovaná edícia 200 g – červené ovocie, výrazný profil, africký charakter; Filter a alternatívne prípravy",
+      "Mexiko bezkofeínová 250 g – jemná sladkosť, orech, plná chuť; Popoludnie a večer; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Brazil Signature Espresso 200 g. Bez výraznej kyslosti.",
+      milk: "Do mlieka sa hodí Brazil Santos Exclusive 200 g. Klasika z brazílskeho Santosu — sladká čokoládová chuť s orieškami, ktorá sa v mlieku nestratí.",
+      filter: "Na filter siahnite po Costa Rica Yellow Honey 200 g. Šťavnatá, s medovou sladkosťou.",
+      decaf: "Bez kofeínu je v ponuke Mexiko bezkofeínová 250 g. Mexická arabika zbavená kofeínu metódou Mountain Water — bez chemických rozpúšťadiel a s plnou chuťou.",
+      default: "Ak chcete začať istotou, dobrým smerom je Brazil Signature Espresso 200 g. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
+  },
+  grandroastery: {
+    brand: "Grand Roastery", web: "https://www.grandroastery.sk/cerstvo-prazena-kava-1",
+    products: [
+      "Créma Blend – hustá créma, plné telo, bez kyslosti; Automatické kávovary",
+      "Espresso Blend – čokoláda, karamel, vyvážená; Pákový kávovar",
+      "Brazília Cemorrado Choco – čokoláda, oriešky, sladkosť; Espresso a moka",
+      "Ethiopia Berhanu Kurse – kvetinová aróma, ovocie, sviežosť; Filter aj moderné espresso",
+      "Colombia El Diviso Natural – tropické ovocie, výrazná sladkosť, experimentálne spracovanie; V60, Chemex a Aeropress",
+      "Colombia Supremo Sugar Cane DECAF – karamel, sladkosť, plná chuť; Popoludnie a večer; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Créma Blend. Bez výraznej kyslosti.",
+      milk: "Do mlieka sa hodí Créma Blend. Zmes postavená na hustú krému a plné telo.",
+      filter: "Na filter siahnite po Colombia El Diviso Natural. Intenzívna, ovocná.",
+      decaf: "Bez kofeínu je v ponuke Colombia Supremo Sugar Cane DECAF. Kolumbijská arabika zbavená kofeínu prírodnou metódou z cukrovej trstiny — sladká a plná aj bez kofeínu.",
+      default: "Ak chcete začať istotou, dobrým smerom je Créma Blend. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
+  },
+  coffeein: {
+    brand: "COFFEEIN", web: "https://www.coffeein.sk/kategoria/2/cerstvo-prazena-zrnkova-kava/1/",
+    products: [
+      "Brutálne silná káva – horká čokoláda, kakao, karamel; Automat a pákový kávovar",
+      "COFFEEIN Elite espresso zmes – čokoláda, orechy, karamel; Espresso a mliečne nápoje",
+      "Ethiopia Adorsi – sušené ovocie, karamel, korenisté tóny; Filter aj espresso",
+      "Kenya Mutitu NATURAL – bobuľové ovocie, zelené jablko, tropické ovocie; V60, Chemex a Aeropress",
+      "Vietnam Lang Biang NATURAL – sušené ovocie, trstinový cukor, mandarínky; Espresso a filter",
+      "Colombia Nogales DECAF – bobuľové ovocie, slivky, karamel; Popoludnie a večer; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Brutálne silná káva. Bez štipky acidity a kyslosti.",
+      milk: "Do mlieka sa hodí COFFEEIN Elite espresso zmes. Mohutné telo s orechovými tónmi a veľmi jemnou aciditou.",
+      filter: "Na filter siahnite po Kenya Mutitu NATURAL. Živá, ovocná.",
+      decaf: "Bez kofeínu je v ponuke Colombia Nogales DECAF. Stredne silné čajové telo, sladkosť bobuľového ovocia a sliviek, dochuť v tóne jemnej karamelizácie — a bez kofeínu.",
+      default: "Ak chcete začať istotou, dobrým smerom je Brutálne silná káva. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
+  },
+  kavoholik: {
+    brand: "Kávoholik", web: "https://kavoholik.sk/12-e-shop",
+    products: [
+      "Espresso káva Jánošík 90/10 – čokoláda, oriešky, plná chuť; Automat a pákový kávovar",
+      "Espresso káva Štúr 80/20 – horká čokoláda, hustá créma, vyšší kofeín; Pákový kávovar a moka",
+      "Káva Štefánik – Brazília YB – sladká čokoláda, oriešky, jemnosť; Espresso a mliečne nápoje",
+      "Etiópia Dimtu Guji washed – broskyňa, čierny čaj, ovocnosť; Filter aj espresso",
+      "Kolumbia Edwin Noreňa – Caturra Chiroso – kvety a jazmín, zelené jablko, zelený čaj; V60, Chemex a Aeropress",
+      "Decaf na filter – Kolumbia Popayán – sladkosť, plná chuť, bez kofeínu; Filter kedykoľvek počas dňa; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Espresso káva Jánošík 90/10. Nízka, vyvážená.",
+      milk: "Do mlieka sa hodí Espresso káva Jánošík 90/10. Desatina robusty pridá telo aj krému.",
+      filter: "Na filter siahnite po Kolumbia Edwin Noreňa – Caturra Chiroso. Jasná, čajová.",
+      decaf: "Bez kofeínu je v ponuke Decaf na filter – Kolumbia Popayán. Bezkofeínová Kolumbia z oblasti Popayán, pražená na filter — bez kofeínu a bez toho, aby chuť ostala niekde vzadu.",
+      default: "Ak chcete začať istotou, dobrým smerom je Espresso káva Jánošík 90/10. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
   }
 };
 
