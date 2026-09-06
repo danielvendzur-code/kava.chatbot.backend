@@ -4,7 +4,7 @@
   const VALID = new Set(['praziarnicka', 'diamonds', 'kaffa', 'vitazov', 'concept', 'jolka', 'goriffee', 'readyafter', 'coffeesheep', 'zlatezrnko', 'becafe', 'simplecoffee', 'ebenica', 'casadelcaffe', 'coffeeveronia', 'grandroastery', 'coffeein', 'kavoholik']);
   // The skincare demos live on the same domain, so a cosmetics subdomain that
   // lands on the root would otherwise be routed to a roastery.
-  const SKINCARE = new Set(['mylo', 'ponio', 'two', 'bellcoria', 'biofy', 'anemone', 'modrapupava', 'facederma', 'cyprianus', 'panakeia', 'barboralori', 'bellmedi']);
+  const SKINCARE = new Set(['mylo', 'ponio', 'two', 'bellcoria', 'biofy', 'anemone', 'modrapupava', 'facederma', 'cyprianus', 'panakeia', 'barboralori', 'bellmedi', 'lavelin', 'kvitok', 'soaphoria', 'syncare', 'fytopharma', 'natureal']);
   const params = new URLSearchParams(location.search);
   const parts = location.pathname.split('/').filter(Boolean);
   const pathSlug = (parts.at(-1) || '').replace(/\.html$/i, '').toLowerCase();

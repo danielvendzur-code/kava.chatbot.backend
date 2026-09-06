@@ -1,0 +1,81 @@
+{
+  "slug": "lavelin",
+  "brand": {
+    "name": "Lavelin",
+    "domain": "lavelin.sk",
+    "website": "https://www.lavelin.sk/"
+  },
+  "colors": {
+    "brand": "#1d2b2f",
+    "accent": "#c0674c",
+    "soft": "#f2efe9",
+    "paper": "#fdfcfa",
+    "ink": "#1a2225",
+    "line": "#e6e0d6"
+  },
+  "benefit": [
+    "Účinná látka preložená na typ pleti",
+    "Výber za štyri otázky",
+    "Preklik rovno na produkt"
+  ],
+  "products": [
+    {
+      "id": "sipkovy",
+      "name": "Vyživujúci pleťový krém so šípkovým olejom",
+      "price": "17,00 €",
+      "url": "https://www.lavelin.sk/tovar/vyzivujuci-pletovy-krem-so-sipkovym-olejom/",
+      "tags": [
+        "dry",
+        "sensitive",
+        "calm",
+        "cream",
+        "simple",
+        "basic"
+      ],
+      "reason": "Výživná krémová voľba pre suchšiu a citlivejšiu pleť — šípkový olej vracia komfort bez zaťaženia."
+    },
+    {
+      "id": "bakuchiol",
+      "name": "Pleťové sérum s bakuchiolom",
+      "price": "25,00 €",
+      "url": "https://www.lavelin.sk/tovar/pletove-serum-s-bakuchiolom/",
+      "tags": [
+        "mature",
+        "dry",
+        "serum",
+        "target",
+        "full"
+      ],
+      "reason": "Rastlinná alternatíva retinolu pre zrelšiu pleť — cielený krok proti vráskam, ktorý pleť nedráždi."
+    },
+    {
+      "id": "papaja",
+      "name": "Pleťový čistiaci gél s papájou a mangom",
+      "price": "17,00 €",
+      "url": "https://www.lavelin.sk/tovar/pletovy-cistiaci-gel-s-papajou-a-mangom/",
+      "tags": [
+        "oily",
+        "clarity",
+        "basic",
+        "simple",
+        "any"
+      ],
+      "reason": "Enzymatické čistenie pre pleť s vyššou tvorbou mazu — základ rutiny, keď sa póry rýchlo zanášajú."
+    },
+    {
+      "id": "malinove",
+      "name": "Malinové pleťové sérum s kyselinou hyalurónovou",
+      "price": "29,00 €",
+      "url": "https://www.lavelin.sk/tovar/malinove-pletove-serum-s-kyselinou-hyaluronovou-1-kolagenom-a-peptidmi/",
+      "tags": [
+        "balanced",
+        "hydrate",
+        "serum",
+        "target",
+        "basic"
+      ],
+      "reason": "Hydratačné sérum s hyalurónom, kolagénom a peptidmi — jeden cielený krok do bežnej rutiny."
+    }
+  ],
+  "ownerNote": "Séra a krémy sa líšia účinnou látkou, nie typom pleti — zákazník z názvu nevyčíta, ktorý je preňho."
+}

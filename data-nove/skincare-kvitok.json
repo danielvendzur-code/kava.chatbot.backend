@@ -1,0 +1,82 @@
+{
+  "slug": "kvitok",
+  "brand": {
+    "name": "Kvitok",
+    "domain": "kvitok.sk",
+    "website": "https://www.kvitok.sk/"
+  },
+  "colors": {
+    "brand": "#3f5d3a",
+    "accent": "#c2557a",
+    "soft": "#eef2e6",
+    "paper": "#fdfdf8",
+    "ink": "#233022",
+    "line": "#dfe6d2"
+  },
+  "benefit": [
+    "Z desiatok krémov jeden konkrétny",
+    "Výber podľa pleti, nie podľa veku na obale",
+    "Preklik rovno na produkt"
+  ],
+  "products": [
+    {
+      "id": "konopny",
+      "name": "Konopný krém pre mastnú a problematickú pleť",
+      "price": "19,00 €",
+      "url": "https://www.kvitok.sk/konopny-krem-pre-mastnu-problematicku-plet-denny-30-ml/",
+      "tags": [
+        "oily",
+        "clarity",
+        "cream",
+        "simple",
+        "basic"
+      ],
+      "reason": "Denný krém pre pleť s vyššou tvorbou mazu a sklonom k nedokonalostiam — ľahký, ale výživný."
+    },
+    {
+      "id": "arganovy",
+      "name": "Arganový krém pre zrelú pleť (30+) — denný",
+      "price": "19,00 €",
+      "url": "https://www.kvitok.sk/arganovy-krem-pre-zrelu-plet--vek-30-denny-30ml/",
+      "tags": [
+        "mature",
+        "dry",
+        "hydrate",
+        "cream",
+        "full",
+        "simple"
+      ],
+      "reason": "Arganový olej pre zrelšiu a suchšiu pleť — hydratácia a podpora pružnosti v jednom dennom kroku."
+    },
+    {
+      "id": "azelaova",
+      "name": "Pleťové sérum s kyselinou azelaovou",
+      "price": "11,90 €",
+      "url": "https://www.kvitok.sk/pletove-serum-kyselina-azelaova-10ml/",
+      "tags": [
+        "sensitive",
+        "calm",
+        "clarity",
+        "serum",
+        "target",
+        "basic"
+      ],
+      "reason": "Azelaová kyselina zmierňuje začervenanie aj nedokonalosti — cielené sérum pre reaktívnu pleť."
+    },
+    {
+      "id": "bbochranny",
+      "name": "BB ochranný pleťový krém",
+      "price": "19,90 €",
+      "url": "https://www.kvitok.sk/bb-ochranny-pletovy-krem-30ml/",
+      "tags": [
+        "balanced",
+        "hydrate",
+        "cream",
+        "simple",
+        "basic"
+      ],
+      "reason": "Univerzálny denný krém pre normálnu pleť — hydratuje a chráni, keď zákazník chce jeden produkt."
+    }
+  ],
+  "ownerNote": "Krémy sú delené podľa veku a suroviny — arganový, malinový, slivkový — nie podľa toho, čo pleť rieši."
+}

@@ -1,0 +1,81 @@
+{
+  "slug": "fytopharma",
+  "brand": {
+    "name": "Fytopharma",
+    "domain": "fytopharma.sk",
+    "website": "https://www.fytopharma.sk/"
+  },
+  "colors": {
+    "brand": "#2f6b3f",
+    "accent": "#c08a1e",
+    "soft": "#ecf3ea",
+    "paper": "#fcfdfa",
+    "ink": "#1e2c20",
+    "line": "#d9e6d6"
+  },
+  "benefit": [
+    "Z deviatich krémov ten správny",
+    "Výber podľa pleti, nie podľa zloženia",
+    "Preklik rovno na produkt"
+  ],
+  "products": [
+    {
+      "id": "omladzujuci",
+      "name": "Omladzujúci krém s kyselinou hyalurónovou",
+      "price": "14,30 €",
+      "url": "https://www.fytopharma.sk/produkt/omladzujuci-krem-s-kyselinou-hyaluronovou-a-rastlinnym-glykogenom/",
+      "tags": [
+        "mature",
+        "dry",
+        "hydrate",
+        "cream",
+        "full",
+        "simple"
+      ],
+      "reason": "Hyalurón a rastlinný glykogén pre zrelšiu a suchšiu pleť — vypĺňa jemné linky a dopĺňa vlahu."
+    },
+    {
+      "id": "pletovavoda",
+      "name": "Pleťová voda s pH 4",
+      "price": "11,55 €",
+      "url": "https://www.fytopharma.sk/produkt/pletova-voda-s-ph-4/",
+      "tags": [
+        "oily",
+        "clarity",
+        "basic",
+        "target",
+        "any"
+      ],
+      "reason": "Kyslé pH vracia pleti rovnováhu po umytí — krok pre mastnejšiu pleť so zanesenými pórmi."
+    },
+    {
+      "id": "hydratacny",
+      "name": "Hydratačný krém s obsahom aminokyselín",
+      "price": "7,85 €",
+      "url": "https://www.fytopharma.sk/produkt/hydratacny-krem-s-obsahom-aminokyselin/",
+      "tags": [
+        "balanced",
+        "hydrate",
+        "cream",
+        "simple",
+        "basic"
+      ],
+      "reason": "Každodenný hydratačný krém pre normálnu pleť — jednoduchá voľba, ktorá nič nekomplikuje."
+    },
+    {
+      "id": "mastny",
+      "name": "Mastný krém s kakaovým maslom a vitamínom E",
+      "price": "6,50 €",
+      "url": "https://www.fytopharma.sk/produkt/mastny-krem-s-obsahom-kakaoveho-masla-a-vitaminu-e/",
+      "tags": [
+        "dry",
+        "sensitive",
+        "calm",
+        "cream",
+        "simple"
+      ],
+      "reason": "Výdatná ochrana pre veľmi suchú a citlivú pleť — kakaové maslo drží vlahu aj v zime."
+    }
+  ],
+  "ownerNote": "Deväť krémov, ktoré sa volajú podľa zloženia — mandľový, kolagénový, polomastný, mastný."
+}

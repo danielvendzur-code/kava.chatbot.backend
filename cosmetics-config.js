@@ -203,6 +203,90 @@
         {id:'kakao',name:"Kakaové maslo",price:"7,90 €",url:"https://bellmedi.sk/produkt/kakaove-maslo/",photo:'/assets/cosmetics/bellmedi-kakao.jpg',tags:['dry','sensitive','calm','cream','simple','basic'],reason:"Intenzívne vyživuje, vytvára jemný ochranný film a upokojuje podráždenú, suchú a citlivú pokožku."},
         {id:'ceder',name:"Cédrová kvetová voda",price:"6,90 €",url:"https://bellmedi.sk/produkt/cedrova-voda/",photo:'/assets/cosmetics/bellmedi-ceder.jpg',tags:['oily','clarity','calm','simple','basic','any'],reason:"Vyrovnáva pleť a reguluje maz — pri akné a zanesených póroch, s jemným sťahujúcim a antibakteriálnym účinkom."}
       ]
+    },
+    lavelin: {
+      name:"Lavelin", domain:"lavelin.sk", website:"https://www.lavelin.sk/",
+      theme:{brand:'#1d2b2f',accent:'#c0674c',soft:'#f2efe9',paper:'#fdfcfa',ink:'#1a2225',line:'#e6e0d6'},
+      wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/lavelin-logo.png\" alt=\"Lavelin\">",
+      hero:'/assets/cosmetics/lavelin.jpg',
+      ownerNote:"Séra a krémy sa líšia účinnou látkou, nie typom pleti — zákazník z názvu nevyčíta, ktorý je preňho.",
+      benefit:["Účinná látka preložená na typ pleti","Výber za štyri otázky","Preklik rovno na produkt"],
+      products:[
+        {id:'sipkovy',name:"Vyživujúci pleťový krém so šípkovým olejom",price:"17,00 €",url:"https://www.lavelin.sk/tovar/vyzivujuci-pletovy-krem-so-sipkovym-olejom/",photo:'/assets/cosmetics/lavelin-sipkovy.jpg',tags:['dry','sensitive','calm','cream','simple','basic'],reason:"Výživná krémová voľba pre suchšiu a citlivejšiu pleť — šípkový olej vracia komfort bez zaťaženia."},
+        {id:'bakuchiol',name:"Pleťové sérum s bakuchiolom",price:"25,00 €",url:"https://www.lavelin.sk/tovar/pletove-serum-s-bakuchiolom/",photo:'/assets/cosmetics/lavelin-bakuchiol.jpg',tags:['mature','dry','serum','target','full'],reason:"Rastlinná alternatíva retinolu pre zrelšiu pleť — cielený krok proti vráskam, ktorý pleť nedráždi."},
+        {id:'papaja',name:"Pleťový čistiaci gél s papájou a mangom",price:"17,00 €",url:"https://www.lavelin.sk/tovar/pletovy-cistiaci-gel-s-papajou-a-mangom/",photo:'/assets/cosmetics/lavelin-papaja.jpg',tags:['oily','clarity','basic','simple','any'],reason:"Enzymatické čistenie pre pleť s vyššou tvorbou mazu — základ rutiny, keď sa póry rýchlo zanášajú."},
+        {id:'malinove',name:"Malinové pleťové sérum s kyselinou hyalurónovou",price:"29,00 €",url:"https://www.lavelin.sk/tovar/malinove-pletove-serum-s-kyselinou-hyaluronovou-1-kolagenom-a-peptidmi/",photo:'/assets/cosmetics/lavelin-malinove.jpg',tags:['balanced','hydrate','serum','target','basic'],reason:"Hydratačné sérum s hyalurónom, kolagénom a peptidmi — jeden cielený krok do bežnej rutiny."}
+      ]
+    },
+    kvitok: {
+      name:"Kvitok", domain:"kvitok.sk", website:"https://www.kvitok.sk/",
+      theme:{brand:'#3f5d3a',accent:'#c2557a',soft:'#eef2e6',paper:'#fdfdf8',ink:'#233022',line:'#dfe6d2'},
+      wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/kvitok-logo.png\" alt=\"Kvitok\">",
+      hero:'/assets/cosmetics/kvitok.jpg',
+      ownerNote:"Krémy sú delené podľa veku a suroviny — arganový, malinový, slivkový — nie podľa toho, čo pleť rieši.",
+      benefit:["Z desiatok krémov jeden konkrétny","Výber podľa pleti, nie podľa veku na obale","Preklik rovno na produkt"],
+      products:[
+        {id:'konopny',name:"Konopný krém pre mastnú a problematickú pleť",price:"19,00 €",url:"https://www.kvitok.sk/konopny-krem-pre-mastnu-problematicku-plet-denny-30-ml/",photo:'/assets/cosmetics/kvitok-konopny.jpg',tags:['oily','clarity','cream','simple','basic'],reason:"Denný krém pre pleť s vyššou tvorbou mazu a sklonom k nedokonalostiam — ľahký, ale výživný."},
+        {id:'arganovy',name:"Arganový krém pre zrelú pleť (30+) — denný",price:"19,00 €",url:"https://www.kvitok.sk/arganovy-krem-pre-zrelu-plet--vek-30-denny-30ml/",photo:'/assets/cosmetics/kvitok-arganovy.jpg',tags:['mature','dry','hydrate','cream','full','simple'],reason:"Arganový olej pre zrelšiu a suchšiu pleť — hydratácia a podpora pružnosti v jednom dennom kroku."},
+        {id:'azelaova',name:"Pleťové sérum s kyselinou azelaovou",price:"11,90 €",url:"https://www.kvitok.sk/pletove-serum-kyselina-azelaova-10ml/",photo:'/assets/cosmetics/kvitok-azelaova.jpg',tags:['sensitive','calm','clarity','serum','target','basic'],reason:"Azelaová kyselina zmierňuje začervenanie aj nedokonalosti — cielené sérum pre reaktívnu pleť."},
+        {id:'bbochranny',name:"BB ochranný pleťový krém",price:"19,90 €",url:"https://www.kvitok.sk/bb-ochranny-pletovy-krem-30ml/",photo:'/assets/cosmetics/kvitok-bbochranny.jpg',tags:['balanced','hydrate','cream','simple','basic'],reason:"Univerzálny denný krém pre normálnu pleť — hydratuje a chráni, keď zákazník chce jeden produkt."}
+      ]
+    },
+    soaphoria: {
+      name:"Soaphoria", domain:"soaphoria.sk", website:"https://www.soaphoria.sk/",
+      theme:{brand:'#3b5a4a',accent:'#c07d3a',soft:'#eef3ee',paper:'#fdfdfa',ink:'#1f2b24',line:'#dde7dd'},
+      wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/soaphoria-logo.png\" alt=\"Soaphoria\">",
+      hero:'/assets/cosmetics/soaphoria.jpg',
+      ownerNote:"Oleje, hydroláty, masky aj čistiace peny vedľa seba — zákazník z názvu rastliny nevyčíta, čo sadne jeho pleti.",
+      benefit:["Z rastlín a hydrolátov jeden konkrétny krok","Výber podľa pleti a priority","Preklik rovno na produkt"],
+      products:[
+        {id:'mousse',name:"Osviežujúci čistiaci mousse na zmiešanú až mastnú pleť",price:"10,95 €",url:"https://www.soaphoria.sk/sk/cistenie-a-odlicenie-pleti/149-osviezujuci-normalizujuci-cistiaci-mousse-na-zmiesanu-az-mastnu-plet-8586017852181.html",photo:'/assets/cosmetics/soaphoria-mousse.jpg',tags:['oily','clarity','basic','simple','any'],reason:"Čistenie, ktoré nenaruší bariéru — základ rutiny pre pleť, čo sa cez deň leskne a zanáša póry."},
+        {id:'arganovy',name:"Arganový olej",price:"9,00 €",url:"https://www.soaphoria.sk/sk/pletove-oleje-a-masla/146-arganovy-olej-8586017852341.html",photo:'/assets/cosmetics/soaphoria-arganovy.jpg',tags:['dry','mature','hydrate','oil','target','simple'],reason:"Pár kvapiek na noc pre suchú a zrelšiu pleť — výživa a pružnosť bez ďalšieho kroku navyše."},
+        {id:'levandula',name:"Levanduľa lekárska — organická kvetová voda",price:"8,95 €",url:"https://www.soaphoria.sk/sk/pletove-tonika-a-kvetove-vody/144-levandula-lekarska-organicka-kvetova-voda-8586017852211.html",photo:'/assets/cosmetics/soaphoria-levandula.jpg',tags:['sensitive','calm','basic','target','any'],reason:"Jemný hydrolát pre citlivú a podráždenú pleť — upokojí bez alkoholu aj parfumu."},
+        {id:'herbaphoria',name:"Herbaphoria — organická pleťová maska",price:"11,45 €",url:"https://www.soaphoria.sk/sk/pletove-masky-a-kozmeticke-ily/198-herbaphoria-pletova-maska-cistic-8586017850965.html",photo:'/assets/cosmetics/soaphoria-herbaphoria.jpg',tags:['balanced','hydrate','full','target','any'],reason:"Bylinná maska pre normálnu pleť — týždenný krok, keď zákazník chce rutinu rozšíriť, nie vymeniť."}
+      ]
+    },
+    syncare: {
+      name:"Syncare", domain:"syncare.sk", website:"https://www.syncare.sk/",
+      theme:{brand:'#0b4f86',accent:'#12a0a8',soft:'#e9f2f8',paper:'#fbfdff',ink:'#122733',line:'#d5e4ef'},
+      wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/syncare-logo.png\" alt=\"Syncare\">",
+      hero:'/assets/cosmetics/syncare.jpg',
+      ownerNote:"Názvy ako GlycoRETINAL+C, NICREAM či BOOSTER hovoria o zložení, nie o tom, komu produkt sadne.",
+      benefit:["Zloženie preložené na typ pleti","Výber za štyri otázky","Preklik rovno na produkt"],
+      products:[
+        {id:'glycoretinal',name:"GlycoRETINAL+C krém pre pleť so sklonom k akné",price:"23,40 €",url:"https://www.syncare.sk/p/glycoretinal-c-krempre-plet-so-sklonom-k-akne",photo:'/assets/cosmetics/syncare-glycoretinal.jpg',tags:['oily','clarity','cream','target','full'],reason:"Kombinácia kyselín a retinalu pre pleť so sklonom k akné — cielený krok proti nedokonalostiam."},
+        {id:'centelaria',name:"CENTELARIA upokojujúca maska pre citlivú pleť",price:"13,10 €",url:"https://www.syncare.sk/p/maska-ukludnujuca-so-shea-maslom-bio",photo:'/assets/cosmetics/syncare-centelaria.jpg',tags:['sensitive','calm','basic','simple','any'],reason:"Okamžitá úľava pre podráždenú a citlivú pleť — jednoduchý doplnok, keď pleť potrebuje upokojiť."},
+        {id:'bbnewage',name:"BB NEW AGE omladzujúci denný krém SPF 20",price:"24,40 €",url:"https://www.syncare.sk/p/bb-new-age-omladzujuci-denny-krem-s-kmenovymi-bunkami",photo:'/assets/cosmetics/syncare-bbnewage.jpg',tags:['mature','dry','cream','simple','full'],reason:"Denný krém s kmeňovými bunkami a ochranou SPF 20 — pre zrelšiu pleť, ktorá rieši vrásky aj tón."},
+        {id:'hydragel',name:"Hydratačný gél s argánovým olejom a skvalánom",price:"14,90 €",url:"https://www.syncare.sk/p/hydratacny-gel-s-arganovym-olejom-a-skvalanom",photo:'/assets/cosmetics/syncare-hydragel.jpg',tags:['balanced','hydrate','serum','simple','basic'],reason:"Ľahká hydratácia pre normálnu pleť — gélová textúra, ktorá sa vstrebe a nelepí."}
+      ]
+    },
+    fytopharma: {
+      name:"Fytopharma", domain:"fytopharma.sk", website:"https://www.fytopharma.sk/",
+      theme:{brand:'#2f6b3f',accent:'#c08a1e',soft:'#ecf3ea',paper:'#fcfdfa',ink:'#1e2c20',line:'#d9e6d6'},
+      wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/fytopharma-logo.png\" alt=\"Fytopharma\">",
+      hero:'/assets/cosmetics/fytopharma.jpg',
+      ownerNote:"Deväť krémov, ktoré sa volajú podľa zloženia — mandľový, kolagénový, polomastný, mastný.",
+      benefit:["Z deviatich krémov ten správny","Výber podľa pleti, nie podľa zloženia","Preklik rovno na produkt"],
+      products:[
+        {id:'omladzujuci',name:"Omladzujúci krém s kyselinou hyalurónovou",price:"14,30 €",url:"https://www.fytopharma.sk/produkt/omladzujuci-krem-s-kyselinou-hyaluronovou-a-rastlinnym-glykogenom/",photo:'/assets/cosmetics/fytopharma-omladzujuci.jpg',tags:['mature','dry','hydrate','cream','full','simple'],reason:"Hyalurón a rastlinný glykogén pre zrelšiu a suchšiu pleť — vypĺňa jemné linky a dopĺňa vlahu."},
+        {id:'pletovavoda',name:"Pleťová voda s pH 4",price:"11,55 €",url:"https://www.fytopharma.sk/produkt/pletova-voda-s-ph-4/",photo:'/assets/cosmetics/fytopharma-pletovavoda.jpg',tags:['oily','clarity','basic','target','any'],reason:"Kyslé pH vracia pleti rovnováhu po umytí — krok pre mastnejšiu pleť so zanesenými pórmi."},
+        {id:'hydratacny',name:"Hydratačný krém s obsahom aminokyselín",price:"7,85 €",url:"https://www.fytopharma.sk/produkt/hydratacny-krem-s-obsahom-aminokyselin/",photo:'/assets/cosmetics/fytopharma-hydratacny.jpg',tags:['balanced','hydrate','cream','simple','basic'],reason:"Každodenný hydratačný krém pre normálnu pleť — jednoduchá voľba, ktorá nič nekomplikuje."},
+        {id:'mastny',name:"Mastný krém s kakaovým maslom a vitamínom E",price:"6,50 €",url:"https://www.fytopharma.sk/produkt/mastny-krem-s-obsahom-kakaoveho-masla-a-vitaminu-e/",photo:'/assets/cosmetics/fytopharma-mastny.jpg',tags:['dry','sensitive','calm','cream','simple'],reason:"Výdatná ochrana pre veľmi suchú a citlivú pleť — kakaové maslo drží vlahu aj v zime."}
+      ]
+    },
+    natureal: {
+      name:"Natureal", domain:"natureal.sk", website:"https://eshop.natureal.sk/sk/",
+      theme:{brand:'#2b2b30',accent:'#c9657f',soft:'#f6f0f2',paper:'#fffdfd',ink:'#22222a',line:'#ebe0e3'},
+      wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/natureal-logo.png\" alt=\"Natureal\">",
+      hero:'/assets/cosmetics/natureal.jpg',
+      ownerNote:"Desiatky značiek s anglickými názvami zložiek — zákazník z etikety nevyčíta, čo sadne jeho pleti.",
+      benefit:["Cez značky a zložky k jednému produktu","Výber podľa pleti a priority","Preklik rovno na produkt"],
+      products:[
+        {id:'bortox',name:"MEDI-PEEL Bor-Tox Cream — antiage krém",price:"17,90 €",url:"https://eshop.natureal.sk/sk/pletovy-krem/2235-medi-peel-bor-tox-cream-antiage-krem-50-ml.html",photo:'/assets/cosmetics/natureal-bortox.jpg',tags:['mature','dry','cream','simple','full'],reason:"Peptidový antiage krém pre zrelšiu a suchšiu pleť — vyhladzuje a spevňuje bez ťažkého filmu."},
+        {id:'blackbamboo',name:"HARUHARU WONDER Black Bamboo Mist — pleťová hmla",price:"10,32 €",url:"https://eshop.natureal.sk/sk/tonizacia/1793-haruharu-wonder-black-bamboo-mist-pletova-hmla-80-ml.html",photo:'/assets/cosmetics/natureal-blackbamboo.jpg',tags:['sensitive','calm','basic','simple','any'],reason:"Upokojujúca hmla s bambusovou vodou — okamžitá úľava pre citlivú a podráždenú pleť."},
+        {id:'oskiaha',name:"OSKIA Universal Hyaluronic Acid Serum",price:"66,40 €",url:"https://eshop.natureal.sk/sk/serum/2145-oskia-universal-hyaluronic-acid-serum-hydratacne-serum-250ml.html",photo:'/assets/cosmetics/natureal-oskiaha.jpg',tags:['balanced','dry','hydrate','serum','target','basic'],reason:"Čisté hyalurónové sérum pre normálnu aj suchšiu pleť — hydratácia, ktorá sa dá pridať k čomukoľvek."},
+        {id:'ahabha',name:"THE ORDINARY AHA 30% + BHA 2% Peeling Solution",price:"11,50 €",url:"https://eshop.natureal.sk/sk/doplnkova-starostlivost/830-the-ordinary-aha-30-bha-2-peeling-solution-exfoliacna-maska-30ml-769915195606.html",photo:'/assets/cosmetics/natureal-ahabha.jpg',tags:['oily','clarity','target','full','any'],reason:"Silná exfoliácia pre mastnejšiu pleť so zanesenými pórmi — týždenný krok proti nedokonalostiam."}
+      ]
     }
   };
 

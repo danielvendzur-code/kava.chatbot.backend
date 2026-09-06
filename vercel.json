@@ -16,7 +16,7 @@
       "has": [
         {
           "type": "host",
-          "value": "^(?<sub>mylo|ponio|two|bellcoria|biofy|anemone|modrapupava|facederma|cyprianus|panakeia|barboralori|bellmedi)\\.mojchatbot\\.sk$"
+          "value": "^(?<sub>mylo|ponio|two|bellcoria|biofy|anemone|modrapupava|facederma|cyprianus|panakeia|barboralori|bellmedi|lavelin|kvitok|soaphoria|syncare|fytopharma|natureal)\\.mojchatbot\\.sk$"
         }
       ],
       "destination": "/cosmetics.html"
@@ -84,7 +84,7 @@
       ]
     },
     {
-      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|ebenica|casadelcaffe|coffeeveronia|grandroastery|coffeein|kavoholik|mylo|ponio|two|bellcoria|biofy|anemone|modrapupava|facederma|cyprianus|panakeia|barboralori|bellmedi)",
+      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|ebenica|casadelcaffe|coffeeveronia|grandroastery|coffeein|kavoholik|mylo|ponio|two|bellcoria|biofy|anemone|modrapupava|facederma|cyprianus|panakeia|barboralori|bellmedi|lavelin|kvitok|soaphoria|syncare|fytopharma|natureal)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|ebenica|casadelcaffe|coffeeveronia|grandroastery|coffeein|kavoholik|mylo|ponio|two|bellcoria|biofy|anemone|modrapupava|facederma|cyprianus|panakeia|barboralori|bellmedi)/",
+      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|ebenica|casadelcaffe|coffeeveronia|grandroastery|coffeein|kavoholik|mylo|ponio|two|bellcoria|biofy|anemone|modrapupava|facederma|cyprianus|panakeia|barboralori|bellmedi|lavelin|kvitok|soaphoria|syncare|fytopharma|natureal)/",
       "headers": [
         {
           "key": "Cache-Control",

@@ -1,0 +1,81 @@
+{
+  "slug": "soaphoria",
+  "brand": {
+    "name": "Soaphoria",
+    "domain": "soaphoria.sk",
+    "website": "https://www.soaphoria.sk/"
+  },
+  "colors": {
+    "brand": "#3b5a4a",
+    "accent": "#c07d3a",
+    "soft": "#eef3ee",
+    "paper": "#fdfdfa",
+    "ink": "#1f2b24",
+    "line": "#dde7dd"
+  },
+  "benefit": [
+    "Z rastlín a hydrolátov jeden konkrétny krok",
+    "Výber podľa pleti a priority",
+    "Preklik rovno na produkt"
+  ],
+  "products": [
+    {
+      "id": "mousse",
+      "name": "Osviežujúci čistiaci mousse na zmiešanú až mastnú pleť",
+      "price": "10,95 €",
+      "url": "https://www.soaphoria.sk/sk/cistenie-a-odlicenie-pleti/149-osviezujuci-normalizujuci-cistiaci-mousse-na-zmiesanu-az-mastnu-plet-8586017852181.html",
+      "tags": [
+        "oily",
+        "clarity",
+        "basic",
+        "simple",
+        "any"
+      ],
+      "reason": "Čistenie, ktoré nenaruší bariéru — základ rutiny pre pleť, čo sa cez deň leskne a zanáša póry."
+    },
+    {
+      "id": "arganovy",
+      "name": "Arganový olej",
+      "price": "9,00 €",
+      "url": "https://www.soaphoria.sk/sk/pletove-oleje-a-masla/146-arganovy-olej-8586017852341.html",
+      "tags": [
+        "dry",
+        "mature",
+        "hydrate",
+        "oil",
+        "target",
+        "simple"
+      ],
+      "reason": "Pár kvapiek na noc pre suchú a zrelšiu pleť — výživa a pružnosť bez ďalšieho kroku navyše."
+    },
+    {
+      "id": "levandula",
+      "name": "Levanduľa lekárska — organická kvetová voda",
+      "price": "8,95 €",
+      "url": "https://www.soaphoria.sk/sk/pletove-tonika-a-kvetove-vody/144-levandula-lekarska-organicka-kvetova-voda-8586017852211.html",
+      "tags": [
+        "sensitive",
+        "calm",
+        "basic",
+        "target",
+        "any"
+      ],
+      "reason": "Jemný hydrolát pre citlivú a podráždenú pleť — upokojí bez alkoholu aj parfumu."
+    },
+    {
+      "id": "herbaphoria",
+      "name": "Herbaphoria — organická pleťová maska",
+      "price": "11,45 €",
+      "url": "https://www.soaphoria.sk/sk/pletove-masky-a-kozmeticke-ily/198-herbaphoria-pletova-maska-cistic-8586017850965.html",
+      "tags": [
+        "balanced",
+        "hydrate",
+        "full",
+        "target",
+        "any"
+      ],
+      "reason": "Bylinná maska pre normálnu pleť — týždenný krok, keď zákazník chce rutinu rozšíriť, nie vymeniť."
+    }
+  ],
+  "ownerNote": "Oleje, hydroláty, masky aj čistiace peny vedľa seba — zákazník z názvu rastliny nevyčíta, čo sadne jeho pleti."
+}

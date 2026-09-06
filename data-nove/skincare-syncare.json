@@ -1,0 +1,80 @@
+{
+  "slug": "syncare",
+  "brand": {
+    "name": "Syncare",
+    "domain": "syncare.sk",
+    "website": "https://www.syncare.sk/"
+  },
+  "colors": {
+    "brand": "#0b4f86",
+    "accent": "#12a0a8",
+    "soft": "#e9f2f8",
+    "paper": "#fbfdff",
+    "ink": "#122733",
+    "line": "#d5e4ef"
+  },
+  "benefit": [
+    "Zloženie preložené na typ pleti",
+    "Výber za štyri otázky",
+    "Preklik rovno na produkt"
+  ],
+  "products": [
+    {
+      "id": "glycoretinal",
+      "name": "GlycoRETINAL+C krém pre pleť so sklonom k akné",
+      "price": "23,40 €",
+      "url": "https://www.syncare.sk/p/glycoretinal-c-krempre-plet-so-sklonom-k-akne",
+      "tags": [
+        "oily",
+        "clarity",
+        "cream",
+        "target",
+        "full"
+      ],
+      "reason": "Kombinácia kyselín a retinalu pre pleť so sklonom k akné — cielený krok proti nedokonalostiam."
+    },
+    {
+      "id": "centelaria",
+      "name": "CENTELARIA upokojujúca maska pre citlivú pleť",
+      "price": "13,10 €",
+      "url": "https://www.syncare.sk/p/maska-ukludnujuca-so-shea-maslom-bio",
+      "tags": [
+        "sensitive",
+        "calm",
+        "basic",
+        "simple",
+        "any"
+      ],
+      "reason": "Okamžitá úľava pre podráždenú a citlivú pleť — jednoduchý doplnok, keď pleť potrebuje upokojiť."
+    },
+    {
+      "id": "bbnewage",
+      "name": "BB NEW AGE omladzujúci denný krém SPF 20",
+      "price": "24,40 €",
+      "url": "https://www.syncare.sk/p/bb-new-age-omladzujuci-denny-krem-s-kmenovymi-bunkami",
+      "tags": [
+        "mature",
+        "dry",
+        "cream",
+        "simple",
+        "full"
+      ],
+      "reason": "Denný krém s kmeňovými bunkami a ochranou SPF 20 — pre zrelšiu pleť, ktorá rieši vrásky aj tón."
+    },
+    {
+      "id": "hydragel",
+      "name": "Hydratačný gél s argánovým olejom a skvalánom",
+      "price": "14,90 €",
+      "url": "https://www.syncare.sk/p/hydratacny-gel-s-arganovym-olejom-a-skvalanom",
+      "tags": [
+        "balanced",
+        "hydrate",
+        "serum",
+        "simple",
+        "basic"
+      ],
+      "reason": "Ľahká hydratácia pre normálnu pleť — gélová textúra, ktorá sa vstrebe a nelepí."
+    }
+  ],
+  "ownerNote": "Názvy ako GlycoRETINAL+C, NICREAM či BOOSTER hovoria o zložení, nie o tom, komu produkt sadne."
+}

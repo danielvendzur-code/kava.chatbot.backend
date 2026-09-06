@@ -1,0 +1,81 @@
+{
+  "slug": "natureal",
+  "brand": {
+    "name": "Natureal",
+    "domain": "natureal.sk",
+    "website": "https://eshop.natureal.sk/sk/"
+  },
+  "colors": {
+    "brand": "#2b2b30",
+    "accent": "#c9657f",
+    "soft": "#f6f0f2",
+    "paper": "#fffdfd",
+    "ink": "#22222a",
+    "line": "#ebe0e3"
+  },
+  "benefit": [
+    "Cez značky a zložky k jednému produktu",
+    "Výber podľa pleti a priority",
+    "Preklik rovno na produkt"
+  ],
+  "products": [
+    {
+      "id": "bortox",
+      "name": "MEDI-PEEL Bor-Tox Cream — antiage krém",
+      "price": "17,90 €",
+      "url": "https://eshop.natureal.sk/sk/pletovy-krem/2235-medi-peel-bor-tox-cream-antiage-krem-50-ml.html",
+      "tags": [
+        "mature",
+        "dry",
+        "cream",
+        "simple",
+        "full"
+      ],
+      "reason": "Peptidový antiage krém pre zrelšiu a suchšiu pleť — vyhladzuje a spevňuje bez ťažkého filmu."
+    },
+    {
+      "id": "blackbamboo",
+      "name": "HARUHARU WONDER Black Bamboo Mist — pleťová hmla",
+      "price": "10,32 €",
+      "url": "https://eshop.natureal.sk/sk/tonizacia/1793-haruharu-wonder-black-bamboo-mist-pletova-hmla-80-ml.html",
+      "tags": [
+        "sensitive",
+        "calm",
+        "basic",
+        "simple",
+        "any"
+      ],
+      "reason": "Upokojujúca hmla s bambusovou vodou — okamžitá úľava pre citlivú a podráždenú pleť."
+    },
+    {
+      "id": "oskiaha",
+      "name": "OSKIA Universal Hyaluronic Acid Serum",
+      "price": "66,40 €",
+      "url": "https://eshop.natureal.sk/sk/serum/2145-oskia-universal-hyaluronic-acid-serum-hydratacne-serum-250ml.html",
+      "tags": [
+        "balanced",
+        "dry",
+        "hydrate",
+        "serum",
+        "target",
+        "basic"
+      ],
+      "reason": "Čisté hyalurónové sérum pre normálnu aj suchšiu pleť — hydratácia, ktorá sa dá pridať k čomukoľvek."
+    },
+    {
+      "id": "ahabha",
+      "name": "THE ORDINARY AHA 30% + BHA 2% Peeling Solution",
+      "price": "11,50 €",
+      "url": "https://eshop.natureal.sk/sk/doplnkova-starostlivost/830-the-ordinary-aha-30-bha-2-peeling-solution-exfoliacna-maska-30ml-769915195606.html",
+      "tags": [
+        "oily",
+        "clarity",
+        "target",
+        "full",
+        "any"
+      ],
+      "reason": "Silná exfoliácia pre mastnejšiu pleť so zanesenými pórmi — týždenný krok proti nedokonalostiam."
+    }
+  ],
+  "ownerNote": "Desiatky značiek s anglickými názvami zložiek — zákazník z etikety nevyčíta, čo sadne jeho pleti."
+}
