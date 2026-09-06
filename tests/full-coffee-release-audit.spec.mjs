@@ -70,21 +70,48 @@ async function expectContained(parent, child, tolerance = 1) {
 async function expectOwnerOffer(page) {
   const ownerPage = page.locator('.mcb-page');
   await expect(ownerPage).toBeVisible();
-  const plan = ownerPage.locator('.mcb-plan');
-  await expect(plan).toContainText('Prvý mesiac zdarma');
-  await expect(plan).toContainText('247');
-  await expect(plan).toContainText('10');
-  await expect(plan).toContainText('Nasadenie jedným riadkom kódu');
-  await expect(ownerPage.locator('.mcb-pricing-side')).toContainText('Bez viazanosti');
-  const trialDecoration = await plan.locator('.mcb-plan-trial').evaluate((element) => getComputedStyle(element, '::before').content);
-  expect(['none', 'normal', '""']).toContain(trialDecoration);
-  const planStyle = await plan.evaluate((element) => {
+
+  // The headline says what the thing is; the lead says what the owner gets out
+  // of it. Both are the same sentence on every demo.
+  await expect(ownerPage.locator('.mcb-eyebrow')).toHaveText('Chatbot pre váš e-shop');
+  await expect(ownerPage.locator('.mcb-copy h1')).toHaveText('Poradí zákazníkovi kávu a odpovie mu na otázky.');
+  await expect(ownerPage.locator('.mcb-lead')).toContainText('Neodíde preto, že sa nevedel rozhodnúť.');
+
+  // Both sums, each with the sentence that says what it buys, then the terms.
+  const price = ownerPage.locator('.mcb-price');
+  await expect(price).toBeVisible();
+  const sums = price.locator('.mcb-price-sum');
+  await expect(sums).toHaveCount(2);
+  await expect(sums.nth(0)).toContainText('247');
+  await expect(sums.nth(1)).toContainText('10');
+  await expect(price.locator('.mcb-price-sum small')).toHaveCount(2);
+  await expect(price.locator('.mcb-price-terms')).toContainText('Prvý mesiac zdarma');
+  await expect(price.locator('.mcb-price-terms')).toContainText('Bez viazanosti');
+
+  // The offer that four styling passes had layered over each other is gone: no
+  // sticker rotated off the baseline, no gradient, no coloured glow.
+  const panel = await price.evaluate((element) => {
     const style = getComputedStyle(element);
-    return { backgroundImage: style.backgroundImage, boxShadow: style.boxShadow };
+    return { backgroundImage: style.backgroundImage, boxShadow: style.boxShadow, transform: style.transform };
   });
-  expect(planStyle.backgroundImage).toBe('none');
-  // A flat elevation is part of the approved card; a coloured glow is not.
-  expect(planStyle.boxShadow).not.toMatch(/rgba?\((?!\s*\d+\s*,\s*\d+\s*,\s*\d+\s*,\s*0?\.[0-3])/);
+  expect(panel.backgroundImage).toBe('none');
+  expect(panel.boxShadow).toBe('none');
+  expect(['none', 'matrix(1, 0, 0, 1, 0, 0)']).toContain(panel.transform);
+
+  // A price with no way to answer it is a dead end, and the reply must not sit
+  // under the invitation fixed to the bottom-right corner.
+  const cta = price.locator('a[href*="mojchatbot.sk/kontakt"]');
+  await expect(cta).toBeVisible();
+  const ctaBox = await cta.boundingBox();
+  const launcherBox = await page.locator('.launcher, #launcher, [data-mcb-teaser="true"]').first()
+    .boundingBox().catch(() => null);
+  if (launcherBox) {
+    const overlaps = ctaBox.x < launcherBox.x + launcherBox.width &&
+      ctaBox.x + ctaBox.width > launcherBox.x &&
+      ctaBox.y < launcherBox.y + launcherBox.height &&
+      ctaBox.y + ctaBox.height > launcherBox.y;
+    expect(overlaps).toBe(false);
+  }
 }
 
 async function expectLauncherInteraction(page) {

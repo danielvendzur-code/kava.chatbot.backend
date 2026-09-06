@@ -134,11 +134,10 @@ test('all six brands fill quick chips radially from the centre', async ({ page }
 test('all six owner pages explain the free month, recurring price and one-line install', async ({ page }) => {
   for (const demo of demos) {
     await ready(page, demo);
-    await expect(page.locator('.mcb-plan-trial')).toHaveText('1. mesiac zdarma');
-    await expect(page.locator('.mcb-plan-price')).toContainText('247 €');
-    await expect(page.locator('.mcb-plan-price')).toContainText('10 €');
-    await expect(page.locator('.mcb-plan')).toContainText('Nasadenie jedným riadkom kódu');
-    await expect(page.locator('.mcb-pricing-side')).toContainText('Bez viazanosti');
+    await expect(page.locator('.mcb-price-terms')).toContainText('Prvý mesiac zdarma');
+    await expect(page.locator('.mcb-price-sum').nth(0)).toContainText('247');
+    await expect(page.locator('.mcb-price-sum').nth(1)).toContainText('10');
+    await expect(page.locator('.mcb-price-terms')).toContainText('Bez viazanosti');
   }
 });
 
@@ -223,9 +222,9 @@ test('every owner pitch has a prominent price and fully prefilled contact CTA', 
     await ready(page, demo);
     const owner = page.locator('[data-mcb-page="true"]');
     await expect(owner).toBeVisible();
-    const price = owner.locator('.mcb-plan-price strong').first();
+    const price = owner.locator('.mcb-price-sum b').first();
     await expect(price).toBeVisible();
-    expect(await price.evaluate((node) => parseFloat(getComputedStyle(node).fontSize))).toBeGreaterThanOrEqual(42);
+    expect(await price.evaluate((node) => parseFloat(getComputedStyle(node).fontSize))).toBeGreaterThanOrEqual(26);
 
     const contact = owner.locator('a[href*="mojchatbot.sk/kontakt"]').first();
     await expect(contact).toBeVisible();

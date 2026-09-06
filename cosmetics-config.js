@@ -53,8 +53,7 @@
       theme:{brand:'#171717',accent:'#b27b51',soft:'#f2ece3',paper:'#fffdf9',ink:'#171717',line:'#ddd5ca'},
       wordmark:'<span class="cx-wordmark cx-wordmark--mylo">mylo</span>',
       hero:'/assets/cosmetics/mylo.webp',
-      ownerTitle:'Pomôžte zákazníkovi vybrať starostlivosť, ktorá mu sadne.',
-      ownerText:'Chat odpovie na otázku. Výber starostlivosti zúži ponuku podľa pleti, priority a preferovanej rutiny.',
+      ownerNote:"Krémy, séra aj oleje v jednom e-shope — zákazník z názvu nevyčíta, ktorý je pre jeho pleť.",
       benefit:['Menej otázok pred nákupom','Jednoduchší výber produktu','Priamy preklik do e-shopu'],
       products:[
         {id:'rose-hemp',name:'Hydratačný krém RUŽA A KONOPE',price:'3–24 €',url:'https://www.mylo.sk/starostlivost-o-tvar/ruza-a-konope/',tags:['dry','sensitive','hydrate','calm','cream','simple','basic'],reason:'Jemný smer pre suchšiu alebo dehydrovanú pleť, keď chcete praktický hydratačný krém.'},
@@ -68,8 +67,7 @@
       theme:{brand:'#8d5b4d',accent:'#d6a08c',soft:'#f4e8df',paper:'#fffaf6',ink:'#3e2f2b',line:'#e6d5cc'},
       wordmark:'<span class="cx-wordmark cx-wordmark--ponio">ponio</span>',
       hero:'/assets/cosmetics/ponio.webp',
-      ownerTitle:'Nájdite zákazníkovi jednoduchú rutinu za štyri otázky.',
-      ownerText:'Poradca prepojí otázky zákazníka s krátkym výberom a pošle ho rovno na vhodný produkt.',
+      ownerNote:"Krémy pre suchú, citlivú aj zrelú pleť vedľa seba — zákazník z názvu nevyčíta, ktorý je pre neho.",
       benefit:['Menej váhania v katalógu','Výber podľa reálnej potreby','Konkrétny produkt na konci'],
       products:[
         {id:'vanilla',name:'Vanilka & kokos – pleťový krém',price:'13 €',url:'https://ponio.sk/products/vanilka-a-kokos-pletovy-krem',tags:['dry','sensitive','hydrate','calm','cream','simple','basic'],reason:'Jednoduchý výživný krém pre normálnu až suchšiu alebo citlivejšiu pleť.'},
@@ -83,8 +81,7 @@
       theme:{brand:'#101010',accent:'#e6a85f',soft:'#f4efe6',paper:'#ffffff',ink:'#101010',line:'#dedede'},
       wordmark:'<span class="cx-wordmark cx-wordmark--two">two</span>',
       hero:'/assets/cosmetics/two.webp',
-      ownerTitle:'Z veľkého výberu urobte štyri jednoduché rozhodnutia.',
-      ownerText:'Chat vysvetlí rozdiely. Výber starostlivosti spojí typ pleti, prioritu a preferovanú textúru s konkrétnym produktom.',
+      ownerNote:"Krémy sa líšia typom pleti aj zložením — zákazník si to z kategórií sám neposkladá.",
       benefit:['Menej filtrovania kategórií','Zrozumiteľný výber pre každého','Produkt podľa potrieb pleti'],
       products:[
         {id:'sensitive',name:'Krém pre citlivú pleť',price:'18 €',url:'https://www.twocosmetics.sk/p/krem-pre-citlivu-plet-s-kyselinou-hyaluronovou-a-bisabololom',tags:['sensitive','calm','hydrate','cream','simple','basic'],reason:'Jemná hydratačná voľba pre citlivejšiu pleť, keď je prioritou komfort.'},
@@ -98,8 +95,7 @@
       theme:{brand:'#6d5539',accent:'#c58b52',soft:'#f3eee4',paper:'#fffdf8',ink:'#30281f',line:'#e3d8c8'},
       wordmark:'<span class="cx-wordmark cx-wordmark--bellcoria">Bellcoria</span>',
       hero:'/assets/cosmetics/bellcoria.webp',
-      ownerTitle:'Filtre podľa typu pokožky nahraďte krátkym výberom.',
-      ownerText:'Zákazník nemusí poznať kategórie ani zložky. Odpovie na štyri jednoduché otázky a dostane konkrétny smer.',
+      ownerNote:"Oleje, séra aj čistenie v jednej ponuke — zákazník z názvu nevyčíta, ktorý je pre jeho pleť.",
       benefit:['Jednoduchšie než filtre','Menej opakovaných otázok','Preklik na konkrétny produkt'],
       products:[
         {id:'opuntia',name:'Organický opunciový olej',price:'30,90 €',url:'https://bellcoria.sk/produkty/organicky-opunciovy-olej/',tags:['dry','sensitive','mature','hydrate','oil','target'],reason:'Výživnejší olejový smer pre suchšiu alebo citlivejšiu pleť a zákazníka, ktorý preferuje pár kvapiek.'},
@@ -113,8 +109,7 @@
       theme:{brand:'#33483c',accent:'#839f74',soft:'#edf2e9',paper:'#fbfdf9',ink:'#253129',line:'#d4dfd0'},
       wordmark:'<span class="cx-wordmark cx-wordmark--biofy">BIOFY</span>',
       hero:'/assets/cosmetics/biofy.webp',
-      ownerTitle:'Doveďte zákazníka k správnemu krému bez preklikávania.',
-      ownerText:'Výber starostlivosti zjednoduší rozdiely medzi typmi pleti. Chat odpovie na otázky, ktoré by inak smerovali na podporu.',
+      ownerNote:"Štyri krémy pre rôzne typy pleti — zákazník z názvu nevyčíta, ktorý je pre neho.",
       benefit:['Rýchlejší výber krému','Menej neistoty pred nákupom','Odporúčanie s dôvodom'],
       products:[
         {id:'dry',name:'Hydratačný krém – suchá a citlivá pleť',price:'15,20 €',url:'https://biofy.sk/produkty/hydratacny-krem-na-suchu-a-citlivu-plet-60ml/',tags:['dry','sensitive','hydrate','calm','cream','simple','basic'],reason:'Priama hydratačná voľba pre suchšiu alebo citlivejšiu pleť.'},
@@ -128,8 +123,7 @@
       theme:{brand:'#536575',accent:'#9faeb8',soft:'#edf1f3',paper:'#fbfcfc',ink:'#26333c',line:'#d8e0e4'},
       wordmark:'<span class="cx-wordmark cx-wordmark--anemone">ANEMONE</span>',
       hero:'/assets/cosmetics/anemone.webp',
-      ownerTitle:'Malému e-shopu dá veľký rozdiel jedno dobré odporúčanie.',
-      ownerText:'Namiesto prezerania každej kategórie dostane zákazník krátky výber a konkrétny produkt. Chat zostáva po ruke na bežné otázky.',
+      ownerNote:"Pleťové oleje aj kvetinové vody vedľa seba — zákazník z názvu nevyčíta, ktorý je pre jeho pleť.",
       benefit:['Ľahký výber aj pre nového zákazníka','Viac priestoru pre lokálnu značku','Priama cesta k nákupu'],
       products:[
         {id:'mature',name:'Pleťový olej na zrelú pleť',price:'8,90 €',url:'https://anemone.sk/pletove-oleje-a-sera/pletovy-olej-na-zrelu-plet.html',tags:['mature','dry','oil','target','simple'],reason:'Jednoduchý olejový krok pre zrelšiu alebo suchšiu pleť.'},
@@ -143,8 +137,7 @@
       theme:{brand:'#1c5850',accent:'#108474',soft:'#e8f1ee',paper:'#fbfdfc',ink:'#1d2b28',line:'#d2e2dd'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/modrapupava-logo.png\" alt=\"Modrá púpava\">",
       hero:'/assets/cosmetics/modrapupava.jpg',
-      ownerTitle:"Chatbot poradí, ktorým produktom z rady začať.",
-      ownerText:"Modrá púpava má oleje, séra aj krémy pre rôzne typy pleti. Chatbot prevedie zákazníka ponukou, odpovie na otázky o zložení a podľa pleti, priority a preferovanej textúry odporučí jeden konkrétny produkt.",
+      ownerNote:"Oleje, séra aj krémy pre rôzne typy pleti — zákazník z názvu nevyčíta, ktorý je pre neho.",
       benefit:["Menej otázok pred nákupom","Výber podľa pleti, nie podľa kategórie","Preklik rovno na produkt"],
       products:[
         {id:'antiage',name:"Inspiral Anti-age – krém na spevnenie pleti",price:"51,35 €",url:"https://www.modrapupava.sk/products/krem-na-spevnenie-pleti-inspiral-anti-age",photo:'/assets/cosmetics/modrapupava-antiage.jpg',tags:['mature','dry','hydrate','cream','full','simple'],reason:"Krém pre zrelú a suchú pleť — spevňuje kontúry, zmierňuje vrásky a zjednocuje tón. Jemný natoľko, že sadne aj citlivejšej pleti."},
@@ -158,8 +151,7 @@
       theme:{brand:'#1b1b1b',accent:'#a9736c',soft:'#f3ece5',paper:'#fffefc',ink:'#161312',line:'#e2dace'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/facederma-logo.png\" alt=\"Facederma\">",
       hero:'/assets/cosmetics/facederma.jpg',
-      ownerTitle:"Chatbot vysvetlí rozdiely a odporučí jeden produkt.",
-      ownerText:"Séra aj krémy Facederma stoja podobne a líšia sa zložením — zákazník to z názvu nevyčíta. Chatbot ho prevedie ponukou, odpovie na otázky a podľa pleti, priority a rutiny mu odporučí jeden konkrétny produkt.",
+      ownerNote:"Séra aj krémy stoja podobne a líšia sa zložením — zákazník to z názvu nevyčíta.",
       benefit:["Menej otázok na podporu","Rozdiel medzi produktmi zrozumiteľne","Preklik rovno na produkt"],
       products:[
         {id:'akne',name:"ANTI-AKNÉ krém pre problematickú pleť",price:"26,90 €",url:"https://facederma.sk/products/anti-akne-krem-pre-problematicku-plet",photo:'/assets/cosmetics/facederma-akne.jpg',tags:['oily','clarity','cream','simple','basic'],reason:"Krém na akné a vyrážky — zmierňuje zápalové aj nezápalové prejavy a podporuje obnovu rovnováhy mikrobiómu pleti."},
@@ -173,8 +165,7 @@
       theme:{brand:'#2c3d31',accent:'#4c7c22',soft:'#eef3ea',paper:'#fdfbf6',ink:'#24312a',line:'#dae4d6'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/cyprianus-logo.svg\" alt=\"Cyprianus\">",
       hero:'/assets/cosmetics/cyprianus.jpg',
-      ownerTitle:"Chatbot vyberie z ručnej kozmetiky ten správny krém.",
-      ownerText:"Krémy Cyprianus sa volajú podľa vône, nie podľa typu pleti — zákazník z názvu nespozná, ktorý je preňho. Chatbot ho prevedie ponukou, odpovie na otázky o zložení a podľa pleti, priority a textúry mu odporučí jeden konkrétny produkt.",
+      ownerNote:"Krémy sa volajú podľa vône, nie podľa typu pleti — zákazník z názvu nespozná, ktorý je preňho.",
       benefit:["Názov vône prestane byť prekážkou","Výber podľa pleti, nie podľa kategórie","Preklik rovno na produkt"],
       products:[
         {id:'mandla',name:"Hydratačný pleťový krém Mandľa a Malina 50 ml",price:"14,63 €",url:"https://www.cyprianus.sk/hydratacny-pletovy-krem-mandla-a-malina-50ml/",photo:'/assets/cosmetics/cyprianus-mandla.jpg',tags:['dry','balanced','hydrate','cream','simple','basic'],reason:"Mandľovo-malinový hydratačný krém s niacínamidom a hyalurónom — jemnosť a svieži vzhľad pre bežnú každodennú starostlivosť."},
@@ -188,8 +179,7 @@
       theme:{brand:'#1b6f9c',accent:'#178fcf',soft:'#e7f2f9',paper:'#fbfdfe',ink:'#17303d',line:'#d2e4ef'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/panakeia-logo.png\" alt=\"Panakeia\">",
       hero:'/assets/cosmetics/panakeia.jpg',
-      ownerTitle:"Chatbot preloží názvy produktov na typ pleti.",
-      ownerText:"Báthoryčka, Bosorkin lektvar, Kopaničiarska žehlička — mená, ktoré si zákazník zapamätá, ale nič mu nepovedia o pleti. Chatbot ho prevedie ponukou, odpovie na otázky o zložení a podľa pleti, priority a textúry mu odporučí jeden konkrétny produkt.",
+      ownerNote:"Báthoryčka, Bosorkin lektvar, Kopaničiarska žehlička — mená si zákazník zapamätá, o pleti mu však nepovedia nič.",
       benefit:["Názov produktu prestane byť hádankou","Menej otázok pred nákupom","Preklik rovno na produkt"],
       products:[
         {id:'noc',name:"BÁTHORYČKA – nočný krém s dračou krvou 30 ml",price:"15,28 €",url:"https://www.panakeia.sk/bathorycka---nocny-krem-s-dracou-krvou-30ml/",photo:'/assets/cosmetics/panakeia-noc.jpg',tags:['dry','sensitive','hydrate','calm','cream','simple','basic'],reason:"Nočný krém so živicou Sangre de Drago — intenzívne vyživuje, podporuje regeneráciu a obnovuje ochrannú bariéru pleti."},
@@ -203,8 +193,7 @@
       theme:{brand:'#2b2b2b',accent:'#117e6f',soft:'#e9f2f0',paper:'#fdfdfc',ink:'#232323',line:'#dbe7e3'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/barboralori-logo.png\" alt=\"Barbora Lori\">",
       hero:'/assets/cosmetics/barboralori.jpg',
-      ownerTitle:"Chatbot dovedie zákazníka k správnej fľaštičke.",
-      ownerText:"Krémy, tonikum aj čistiace mlieko Barbora Lori vyzerajú v katalógu rovnako a líšia sa typom pleti. Chatbot prevedie zákazníka ponukou, odpovie na otázky o zložení a podľa pleti, priority a rutiny mu odporučí jeden konkrétny produkt.",
+      ownerNote:"Krémy, tonikum aj čistiace mlieko vyzerajú v katalógu rovnako a líšia sa typom pleti.",
       benefit:["Rovnaké fľaštičky prestanú miasť","Menej otázok pred nákupom","Preklik rovno na produkt"],
       products:[
         {id:'sucha',name:"Denný krém pre suchú a zrelšiu pleť s liftingovým účinkom",price:"5,50 – 18,50 €",url:"https://www.barboralori.sk/ochranny-denny-krem-pre-suchu-a-zrelsiu-plet/",photo:'/assets/cosmetics/barboralori-sucha.jpg',tags:['dry','mature','hydrate','cream','simple','basic'],reason:"Denný krém pre suchú a zrelšiu pleť s liftingovým účinkom — probiotická receptúra vhodná aj pre veľmi citlivú pleť."},
@@ -218,8 +207,7 @@
       theme:{brand:'#2a2622',accent:'#b08200',soft:'#fbf3dd',paper:'#fffef9',ink:'#241f19',line:'#eee2c3'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/bellmedi-logo.png\" alt=\"BellMedi\">",
       hero:'/assets/cosmetics/bellmedi.jpg',
-      ownerTitle:"Chatbot sa v stovke olejov vyzná za zákazníka.",
-      ownerText:"BellMedi má vyše sto za studena lisovaných olejov, masiel a kvetových vôd — v takom katalógu sa zákazník sám nevyzná. Chatbot ho prevedie ponukou, odpovie na otázky o použití a podľa pleti, priority a textúry mu odporučí jeden konkrétny produkt.",
+      ownerNote:"Vyše sto za studena lisovaných olejov, masiel a kvetových vôd — v takom katalógu sa zákazník sám nevyzná.",
       benefit:["Stovka olejov prestane byť labyrint","Výber podľa pleti, nie podľa názvu rastliny","Preklik rovno na produkt"],
       products:[
         {id:'hyaluron',name:"Kyselina hyalurónová",price:"22,90 €",url:"https://bellmedi.sk/produkt/kyselina-hyaluronova/",photo:'/assets/cosmetics/bellmedi-hyaluron.jpg',tags:['dry','balanced','hydrate','serum','target','basic'],reason:"Udržuje pokožku pevnú a pružnú, redukuje a vypĺňa vrásky — cielený hydratačný krok do existujúcej rutiny."},

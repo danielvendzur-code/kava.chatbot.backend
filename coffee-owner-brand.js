@@ -31,41 +31,41 @@
 
   /* --------------------------------------------------------------- pricing */
 
+  /* One offer, written the way it is quoted on the phone: each sum says what
+     it buys. The feature list it replaced said things like "Váš katalóg
+     pripravený pri spustení", which is a sentence nobody would say out loud. */
   const PRICING = {
-    currency: '€',
-    setup: '247',
-    monthly: '10',
-    // Change here to switch the offer; the skincare copy reads the same words.
-    trial: 'Prvý mesiac zdarma',
-    points: [
-      'Váš katalóg pripravený pri spustení',
-      'História konverzácií',
-      'Nasadenie jedným riadkom kódu'
+    sums: [
+      ['247', 'jednorazovo', 'Postavíme ho, naplníme vašimi kávami a nasadíme na váš web.'],
+      ['10', 'mesačne', 'Prevádzka, zmeny v ponuke a opravy, keď treba.']
     ],
-    addon: 'Napojenie na košík e-shopu za príplatok.',
-    note: 'Bez viazanosti, vypnúť sa dá kedykoľvek.',
-    /* "Mám záujem" used to jump straight to a contact form, which asked for a
-       decision before saying what the decision was about. */
+    trial: 'Prvý mesiac zdarma',
+    note: 'Bez viazanosti, vypnete kedykoľvek.',
+    addon: 'Napojenie na košík za príplatok.',
+    // The sheet behind "Mám záujem" is the long version of the same offer.
     included: [
-      ['Chatbot s vaším katalógom', 'Naplníme ho vašimi kávami, cenami a odkazmi do e-shopu.'],
-      ['Chat, ktorý odpovedá 24/7', 'Pôvod, praženie, príprava aj porovnanie dvoch káv.'],
-      ['Výber cez štyri otázky', 'Chuť, príprava, nápoj a acidita — na konci jedna konkrétna káva.'],
+      ['Chatbot s vašimi kávami', 'Vaše kávy, ceny a odkazy do e-shopu, nie všeobecné odpovede.'],
+      ['Odpovedá aj o polnoci', 'Pôvod, praženie, príprava aj porovnanie dvoch káv.'],
+      ['Výber cez štyri otázky', 'Chuť, príprava, nápoj a kofeín — na konci jedna konkrétna káva.'],
       ['Preklik rovno na produkt', 'Odporúčanie končí odkazom do vášho e-shopu.'],
-      ['História konverzácií', 'Vidíte, na čo sa zákazníci naozaj pýtajú.'],
-      ['Nasadenie jedným riadkom kódu', 'Vložíte jeden skript, o zvyšok sa postaráme.']
+      ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.'],
+      ['Nasadenie za vás', 'Vložíte na web jeden riadok kódu, o zvyšok sa postaráme.']
     ]
   };
 
   /* ------------------------------------------------------------------ data */
 
-  const commonFigures = (steps) => [
-    ['24/7', 'chat odpovedá', 'pôvod · chuť · príprava · konkrétne kávy'],
-    ['4', 'krátke otázky', steps],
-    ['1', 'odporúčanie', 'konkrétna káva + dôvod, prečo sedí']
+  /* Read from the owner's side: what the chatbot takes off his hands, not a
+     description of the interface. */
+  const commonFigures = () => [
+    ['24/7', 'odpovedá za vás'],
+    ['4', 'otázky k výberu'],
+    ['1', 'káva na konci']
   ];
 
   const BRANDS = {
     praziarnicka: {
+      note: "Zmesi aj single origin v jednom e-shope — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: 'Pražiarnička',
       place: 'Pražiarnička by Caffè Vita',
       root: '.pz13-site',
@@ -73,10 +73,11 @@
       lockup: '<img src="/brand/praziarnicka-logo-official.png" alt="Pražiarnička">',
       theme: { ink: '#143f35', brand: '#1c5b4b', accent: '#c25a2b', soft: '#edf6f2', paper: '#ffffff' },
       hero: '/assets/praziarnicka/official-paganini.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     diamonds: {
+      note: "Výberové kávy z rôznych pôvodov — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: 'Diamonds Roastery',
       place: 'Diamonds Roastery · Dunajská Lužná',
       root: '.diamonds-page',
@@ -84,10 +85,11 @@
       lockup: '<img src="/assets/diamonds/diroastery-logo.svg" alt="Diamonds Roastery">',
       theme: { ink: '#0b0d0c', brand: '#0b0d0c', accent: '#6f8f19', soft: '#f2f6e8', paper: '#ffffff' },
       hero: '/assets/diamonds/kenya-mugaya-official.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     kaffa: {
+      note: "Výberové kávy z rôznych pôvodov — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: 'Kaffa Roastery',
       place: 'Kaffa Roastery · speciality coffee',
       mark: { text: 'K', font: 'Georgia, "Times New Roman", serif' },
@@ -97,10 +99,11 @@
       theme: { ink: '#111111', brand: '#111111', accent: '#3d7d97', soft: '#f2ede4', paper: '#fcfbf8' },
       display: { family: 'Georgia, "Times New Roman", serif', weight: '400', tracking: '-.03em' },
       hero: '/assets/kaffa/mokka-hero.webp',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     vitazov: {
+      note: "Zmesi aj single origin v jednom e-shope — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: 'Káva Víťazov',
       place: 'Káva Víťazov · Prešov',
       root: '.demo-page',
@@ -108,10 +111,11 @@
       lockup: '<img src="/assets/vitazov-logo.svg" alt="Káva Víťazov">',
       theme: { ink: '#071f1a', brand: '#0c4438', accent: '#5f8a1f', soft: '#eef7e2', paper: '#ffffff' },
       hero: '/assets/vitazov-office.jpeg',
-      figures: commonFigures('použitie · chuť · príprava · nápoj')
+      figures: commonFigures()
     },
 
     concept: {
+      note: "Výberové kávy z rôznych pôvodov — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: 'Concept Coffee Roasters',
       place: 'Concept Coffee Roasters · Piešťany a Bratislava',
       mark: { text: 'C', font: '"DM Sans", system-ui, sans-serif' },
@@ -120,10 +124,11 @@
       lockup: '<img src="/brand/concept-official-logo.png" alt="Concept Coffee Roasters">',
       theme: { ink: '#1a1b19', brand: '#2c4038', accent: '#b8503c', soft: '#f4efe7', paper: '#fbfaf6' },
       hero: '/assets/concept/product-yellow-sunset.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     jolka: {
+      note: "Zmesi aj single origin z vlastnej pražiarne — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: 'Pražiareň Jolka',
       place: 'Pražiareň Jolka · Bratislava-Ružinov',
       root: '.page',
@@ -132,172 +137,164 @@
       theme: { ink: '#23180f', brand: '#5e4834', accent: '#a8763f', soft: '#f3ece3', paper: '#fdfaf6' },
       display: { family: '"Playfair Display", Georgia, serif', weight: '600', tracking: '-.02em' },
       hero: '/assets/jolka/hero-bags.webp',
-      figures: commonFigures('príprava · chuť · nápoj · acidita')
+      figures: commonFigures()
     },
 
     goriffee: {
+      note: "Od blendov po single origin a bezkofeínovú — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Goriffee roastery",
       place: "Goriffee roastery · Bratislava",
-      title: "Chatbot prevedie zákazníka ponukou a poradí mu kávu.",
-      lead: "Odpovie na otázky o pôvode, pražení aj príprave a podľa chuťových preferencií ho cez štyri otázky dovedie ku konkrétnej káve z vášho e-shopu — od blendov po single origin a decaf.",
       root: '.goriffee-page',
       shop: "https://www.goriffee.com/shop/kava/",
       lockup: '<img src="/assets/goriffee/logo.svg" alt="Goriffee roastery">',
       theme: { ink: '#121212', brand: '#121212', accent: '#e01a37', soft: '#f3efeb', paper: '#fffdfb' },
       hero: '/assets/goriffee/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     readyafter: {
+      note: "Etiópia, Burundi aj Kolumbia v jednej ponuke — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Ready After",
       place: "Ready After · Bošany",
-      title: "Chatbot poradí kávu podľa chuti aj mimo otváracích hodín.",
-      lead: "Zákazníka prevedie ponukou, odpovie na otázky o pôvode aj spracovaní a podľa jeho preferencií ho dovedie ku konkrétnej káve z Etiópie, Burundi či Kolumbie.",
       root: '.readyafter-page',
       shop: "https://www.readyafter.sk/zrnkova-kava/",
       lockup: '<img src="/assets/readyafter/logo.png" alt="Ready After">',
       theme: { ink: '#1c1c1c', brand: '#e41d19', accent: '#e41d19', soft: '#f6f1ef', paper: '#fffdfc' },
       hero: '/assets/readyafter/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     coffeesheep: {
+      note: "Espresso zmesi aj single origin z Kene či Indonézie — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Coffee Sheep",
       place: "Coffee Sheep · Trenčín",
-      title: "Chatbot zúži sedem káv na tú, ktorú zákazník hľadá.",
-      lead: "Prevedie ho ponukou, odpovie na otázky o pôvode aj chuti a podľa preferencií ho dovedie ku konkrétnej káve — od espresso zmesí po single origin z Kene či Indonézie.",
       root: '.coffeesheep-page',
       shop: "https://www.coffeesheep.sk/kava/",
       lockup: '<img src="/assets/coffeesheep/logo.svg" alt="Coffee Sheep">',
       theme: { ink: '#3a2a16', brand: '#583408', accent: '#a8442b', soft: '#f4ede2', paper: '#fffdf8' },
       hero: '/assets/coffeesheep/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     zlatezrnko: {
+      note: "Vyše osemdesiat káv — zmesi, single origin aj bezkofeínové. Zákazník sa v tom sám nevyzná.",
       name: "Zlaté Zrnko",
       place: "Zlaté Zrnko · Ivanka pri Dunaji",
-      title: "Chatbot vyberie z osemdesiatich káv tú jednu pravú.",
-      lead: "Zlaté Zrnko má vyše osemdesiat káv — zmesi, single origin aj bezkofeínové. Chatbot prevedie zákazníka ponukou, odpovie na otázky o pôvode aj chuti a podľa jeho preferencií ho dovedie ku konkrétnej káve.",
       root: '.zlatezrnko-page',
       shop: "https://zlatezrnko.sk/obchod/",
       lockup: '<img src="/assets/zlatezrnko/logo.png" alt="Zlaté Zrnko">',
       theme: { ink: '#2e2113', brand: '#3a2a12', accent: '#c8891f', soft: '#f6efe2', paper: '#fffdf8' },
       hero: '/assets/zlatezrnko/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     becafe: {
+      note: "Praženie na espresso aj na filter, k tomu zmes a bezkofeínová — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Be:Café",
       place: "Be:Café · Lietavská Lúčka",
-      title: "Chatbot rozlíši espresso od filtra a vyberie zákazníkovi kávu.",
-      lead: "Be:Café praží na espresso aj na filter — k tomu zmes, single origin a bezkofeínovú. Chatbot prevedie zákazníka ponukou, odpovie na otázky o pôvode, pražení aj príprave a podľa jeho preferencií ho dovedie ku konkrétnej káve.",
       root: '.becafe-page',
       shop: "https://becafe.sk/kategoria-produktu/kava/",
       lockup: '<img src="/assets/becafe/logo.svg" alt="Be:Café">',
       theme: { ink: '#151310', brand: '#121212', accent: '#b3860d', soft: '#faf3d8', paper: '#fffefa' },
       hero: '/assets/becafe/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     simplecoffee: {
+      note: "Ponuka je delená podľa chuti, prípravy aj momentu — zákazník to však musí prejsť celé sám.",
       name: "Simple Coffee",
       place: "Simple Coffee · Bratislava",
-      title: "Chatbot vyberie kávu podľa chuti aj spôsobu prípravy.",
-      lead: "Ponuka je delená podľa chuti, prípravy aj momentu — zákazník to však musí prejsť sám. Chatbot ho ponukou prevedie, odpovie na otázky o pôvode aj kyslosti a na konci odporučí jednu konkrétnu kávu.",
       root: '.simplecoffee-page',
       shop: "https://simplecoffee.sk/kategorie/zrnkova-kava/",
       lockup: '<img src="/assets/simplecoffee/logo.png" alt="Simple Coffee">',
       theme: { ink: '#24262b', brand: '#24262b', accent: '#9a7c46', soft: '#f7f0e4', paper: '#fffaf4' },
       hero: '/assets/simplecoffee/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     ebenica: {
+      note: "Zmesi, single origin aj bezkofeínová — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "EBENICA Coffee",
       place: "EBENICA Coffee · Modra",
-      title: "Poradí zákazníkovi kávu podľa jeho chuti.",
-      lead: "Zmesi, single origin aj bezkofeínová — z názvu zákazník nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
       root: '.ebenica-page',
       shop: "https://ebenica.sk/kategoria-produktu/kava/",
       lockup: '<img src="/assets/ebenica/logo.png" alt="EBENICA Coffee">',
       theme: { ink: '#1a201a', brand: '#18211a', accent: '#467c45', soft: '#eaf2e9', paper: '#fbfdfa' },
       hero: '/assets/ebenica/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     casadelcaffe: {
+      note: "Talianske zmesi aj plantážne kávy z jedného regálu — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Casa del Caffé",
       place: "Casa del Caffé · Bratislava",
-      title: "Poradí zákazníkovi kávu podľa jeho chuti.",
-      lead: "Talianske zmesi aj plantážne kávy z jedného regálu — z názvu zákazník nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
       root: '.casadelcaffe-page',
       shop: "https://casadelcaffe.sk/kategoria-produktu/kava/",
       lockup: '<img src="/assets/casadelcaffe/logo.png" alt="Casa del Caffé">',
       theme: { ink: '#221c14', brand: '#1c1a17', accent: '#a8823f', soft: '#f5efe3', paper: '#fffdf9' },
       hero: '/assets/casadelcaffe/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     coffeeveronia: {
+      note: "Brazílie, africké single origin aj bezkofeínová v jednej rade plechoviek — zákazník z etikety nevyčíta, ktorá je pre neho.",
       name: "Coffee Veronia",
       place: "Coffee Veronia · Trnava",
-      title: "Poradí zákazníkovi kávu podľa jeho chuti.",
-      lead: "Brazílie, africké single origin aj bezkofeínová v jednej rade plechoviek — z etikety zákazník nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
       root: '.coffeeveronia-page',
       shop: "https://www.coffeeveronia.sk/arabika/",
       lockup: '<img src="/assets/coffeeveronia/logo.png" alt="Coffee Veronia">',
       theme: { ink: '#231a12', brand: '#231a12', accent: '#6c3608', soft: '#f6ece0', paper: '#fffdf9' },
       hero: '/assets/coffeeveronia/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     grandroastery: {
+      note: "Zmesi do kávovaru aj experimentálne single origin v jednom e-shope — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Grand Roastery",
       place: "Grand Roastery · Bardejovské Kúpele",
-      title: "Poradí zákazníkovi kávu podľa jeho chuti.",
-      lead: "Zmesi do kávovaru aj experimentálne single origin v jednom e-shope — z názvu zákazník nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
       root: '.grandroastery-page',
       shop: "https://www.grandroastery.sk/cerstvo-prazena-kava-1",
       lockup: '<img src="/assets/grandroastery/logo.png" alt="Grand Roastery">',
       theme: { ink: '#1b1b1b', brand: '#161616', accent: '#14907a', soft: '#e8f4f0', paper: '#fdfefd' },
       hero: '/assets/grandroastery/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     coffeein: {
+      note: "Espresso zmesi aj tretia vlna z vlastnej pražiarne — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "COFFEEIN",
       place: "COFFEEIN · Šahy",
-      title: "Poradí zákazníkovi kávu podľa jeho chuti.",
-      lead: "Espresso zmesi aj tretia vlna z vlastnej pražiarne — zákazník z názvu nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
       root: '.coffeein-page',
       shop: "https://www.coffeein.sk/kategoria/2/cerstvo-prazena-zrnkova-kava/1/",
       lockup: '<img src="/assets/coffeein/logo.png" alt="COFFEEIN">',
       theme: { ink: '#1c1a19', brand: '#1e1c1b', accent: '#d4591f', soft: '#fdeee4', paper: '#fffdfb' },
       hero: '/assets/coffeein/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     },
 
     kavoholik: {
+      note: "Espresso zmesi s menami slovenských dejateľov aj kolumbijské lóty — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Kávoholik",
       place: "Kávoholik · vlastná pražiareň",
-      title: "Poradí zákazníkovi kávu podľa jeho chuti.",
-      lead: "Espresso zmesi s menami slovenských dejateľov aj experimentálne kolumbijské lóty — z názvu zákazník nevyčíta, ktorá je pre neho. Chat odpovie na otázky o pôvode aj pražení a štyri otázky skončia pri jednej káve s odkazom do e-shopu.",
       root: '.kavoholik-page',
       shop: "https://kavoholik.sk/12-e-shop",
       lockup: '<img src="/assets/kavoholik/logo.png" alt="Kávoholik">',
       theme: { ink: '#1d1a17', brand: '#1d1a17', accent: '#5f7d21', soft: '#eef3e3', paper: '#fdfdfa' },
       hero: '/assets/kavoholik/hero.jpg',
-      figures: commonFigures('príprava · chuť · nápoj · kofeín')
+      figures: commonFigures()
     }
   };
 
   /* The skincare pages say something about the shop they were built for; the
      roasteries all said the same sentence. A brand that carries its own
      headline and lead uses them, and these stay as the fallback. */
-  const HEADING = 'Kávový poradca na váš web.';
-  const LEAD = 'Chat odpovie na otázku o pôvode aj chuti. Výber kávy cez štyri otázky ' +
-    'skončí pri jednej konkrétnej káve aj s dôvodom, prečo sedí.';
+  /* What it is (headline) and what it does for the owner (the second sentence
+     of the lead) are the same on all eighteen pages; only the first sentence
+     names the shop this demo was built for. */
+  const HEADING = 'Poradí zákazníkovi kávu a odpovie mu na otázky.';
+  const NOTE = 'Zmesi aj single origin v jednom e-shope — zákazník z názvu nevyčíta, ktorá je pre neho.';
+  const BENEFIT = 'Chatbot mu odpovie na otázky a po štyroch otázkach ho dovedie k jednej káve ' +
+    's odkazom na produkt. Neodíde preto, že sa nevedel rozhodnúť.';
 
   /* The brand table is the only list of roasteries this file keeps. A slug it
      does not know belongs to some other page, and the claim below must not be
@@ -327,16 +324,22 @@
 
   /* --------------------------------------------------------------- markup */
 
-  const planCard = () => `
-    <article class="mcb-plan">
-      <span class="mcb-plan-label">Cena</span>
-      <b class="mcb-plan-trial">${esc(PRICING.trial)}</b>
-      <p class="mcb-plan-price">
-        <b><strong>${esc(PRICING.setup)}&nbsp;${esc(PRICING.currency)}</strong><span>jednorazovo</span></b>
-        <b><strong>${esc(PRICING.monthly)}&nbsp;${esc(PRICING.currency)}</strong><span>mesačne</span></b>
-      </p>
-      <ul>${PRICING.points.map((point) => `<li>${icons.check}<span>${esc(point)}</span></li>`).join('')}</ul>
-      <p class="mcb-plan-addon">${esc(PRICING.note)}${PRICING.addon ? ` ${esc(PRICING.addon)}` : ''}</p>
+  /* Both sums, each with the sentence that says what it buys, then the terms
+     and the one place on the page where the owner can answer. */
+  const priceCard = (contact) => `
+    <article class="mcb-price">
+      ${PRICING.sums.map(([sum, term, buys]) => `
+        <div class="mcb-price-sum">
+          <b>${esc(sum)}&nbsp;€</b><span>${esc(term)}</span>
+          <small>${esc(buys)}</small>
+        </div>`).join('')}
+      <div class="mcb-price-terms">
+        <b>${esc(PRICING.trial)}</b>
+        <p>${esc(PRICING.note)} ${esc(PRICING.addon)}</p>
+        <a class="mcb-btn mcb-btn--accent" href="${contact}" target="_blank" rel="noreferrer">
+          ${icons.mail} Ozvite sa mi
+        </a>
+      </div>
     </article>`;
 
   const markup = () => {
@@ -361,8 +364,8 @@
         </ul>
         <div class="mcb-offer-price">
           <b>${esc(PRICING.trial)}</b>
-          <p><strong>${esc(PRICING.setup)}&nbsp;€</strong> <span>jednorazovo</span>
-             <i>·</i> <strong>${esc(PRICING.monthly)}&nbsp;€</strong> <span>mesačne</span></p>
+          <p>${PRICING.sums.map(([sum, term]) =>
+            `<strong>${esc(sum)}&nbsp;€</strong> <span>${esc(term)}</span>`).join(' <i>·</i> ')}</p>
           <small>${esc(PRICING.note)} ${esc(PRICING.addon)}</small>
         </div>
         <a class="mcb-btn mcb-btn--accent" href="${contact}" target="_blank" rel="noreferrer">
@@ -373,9 +376,9 @@
 
     <main class="mcb-main">
       <section class="mcb-copy">
-        <span class="mcb-eyebrow">${esc(brand.title ? 'Chat + výber kávy' : brand.place)}</span>
-        <h1>${esc(brand.title || HEADING)}</h1>
-        <p class="mcb-lead">${esc(brand.lead || LEAD)}</p>
+        <span class="mcb-eyebrow">Chatbot pre váš e-shop</span>
+        <h1>${esc(HEADING)}</h1>
+        <p class="mcb-lead">${esc(brand.note || NOTE)} ${esc(BENEFIT)}</p>
 
         <div class="mcb-actions">
           <button class="mcb-btn" type="button" data-release-open="advisor">Otvoriť poradcu ${icons.arrow}</button>
@@ -403,13 +406,7 @@
     </main>
 
     <section class="mcb-pricing" aria-label="Cena">
-      ${planCard()}
-      <div class="mcb-pricing-side">
-        <p>${esc(PRICING.note)}</p>
-        <a class="mcb-btn mcb-btn--accent" href="${contact}" target="_blank" rel="noreferrer">
-          ${icons.mail} Ozvite sa mi
-        </a>
-      </div>
+      ${priceCard(contact)}
     </section>
 
     <footer class="mcb-foot">
@@ -482,7 +479,7 @@
 
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '/coffee-owner-brand.css?v=b277d2a9';
+    link.href = '/coffee-owner-brand.css?v=b04c57fb';
     link.dataset.mcbStyle = 'true';
     link.dataset.mcOrder = '30';
     document.body.appendChild(link);
@@ -496,7 +493,7 @@
 
     const refresh = document.createElement('link');
     refresh.rel = 'stylesheet';
-    refresh.href = '/coffee-refresh.css?v=392d2836';
+    refresh.href = '/coffee-refresh.css?v=1155d8b0';
     refresh.dataset.mcbRefreshStyle = 'true';
     refresh.dataset.mcOrder = '95';
     document.body.appendChild(refresh);

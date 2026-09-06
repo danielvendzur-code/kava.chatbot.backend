@@ -70,7 +70,9 @@
    bottom-right corner. */
 .mcb-page .mcb-frame {
   min-width: 0;
-  align-self: stretch;
+  /* The lineup heroes are square, so a stretched frame padded them with white
+     bands top and bottom. The frame takes the height it needs and centres. */
+  align-self: center;
   min-height: 0;
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
@@ -79,7 +81,9 @@
 .mcb-page .mcb-visual {
   min-width: 0;
   min-height: 0;
-  height: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  max-height: 100%;
   overflow: hidden;
   border-radius: 18px;
   border: 1px solid color-mix(in srgb, var(--mcb-ink) 9%, transparent);
@@ -101,101 +105,9 @@
 .mcb-page .mcb-copy h1 { font-size: clamp(32px, 3.3vw, 47px); max-width: 15ch; line-height: 1.02; }
 .mcb-page .mcb-lead { max-width: 44ch; margin-top: clamp(10px, 1.5vh, 15px); font-size: 14px; line-height: 1.5; }
 .mcb-page .mcb-actions { margin-top: clamp(14px, 2vh, 20px); }
-@media (max-width: 1080px) { .mcb-page .mcb-frame { display: none; } }
-@media (max-width: 760px) { .mcb-page .mcb-figures { display: none !important; } }
-
-/* ==========================================================================
-   3. Price — a panel on the left half
-   ========================================================================== */
-
-.mcb-page .mcb-pricing {
-  grid-template-columns: minmax(0, 1fr) !important;
-  width: min(100%, 44%);
-  gap: 0 !important;
-  padding-top: clamp(10px, 1.4vh, 16px) !important;
-  border-top: 0 !important;
+@media (max-width: 1080px) { .mcb-page .mcb-frame { display: none; } 
 }
-/* The note repeats the sticker and the header already carries the same call to
-   action, so the corner is left to the launcher. */
-.mcb-page .mcb-pricing-side { display: none !important; }
-
-.mcb-page .mcb-plan {
-  grid-template-columns: minmax(158px, .74fr) minmax(0, 1.26fr) !important;
-  grid-template-areas: "price points" "addon points" !important;
-  column-gap: clamp(18px, 2.2vw, 30px) !important;
-  row-gap: 6px !important;
-  align-items: start !important;
-  padding: clamp(17px, 2.5vh, 24px) clamp(20px, 2.1vw, 28px) !important;
-  border: 1px solid color-mix(in srgb, var(--mcb-ink) 9%, transparent) !important;
-  border-radius: 16px !important;
-  background: #fff !important;
-  box-shadow: 0 1px 2px rgba(18, 22, 20, .04), 0 14px 34px -24px rgba(18, 22, 20, .34) !important;
-}
-.mcb-page .mcb-plan-label {
-  grid-area: label;
-  color: color-mix(in srgb, var(--mcb-ink) 58%, transparent);
-  font-size: 9.5px;
-  font-weight: 850;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-}
-/* Reads as a sticker put on the page, not another line of copy. */
-.mcb-page .mcb-plan-trial {
-  grid-area: price;
-  justify-self: start;
-  align-self: start;
-  margin-top: 16px;
-  display: inline-flex;
-  align-items: center;
-  padding: 6px 11px;
-  border-radius: 999px;
-  background: var(--mcb-accent);
-  color: #fff;
-  font-size: 11.5px;
-  font-weight: 850;
-  letter-spacing: -.01em;
-  white-space: nowrap;
-  transform: rotate(-1.4deg);
-  box-shadow: 0 8px 18px -12px color-mix(in srgb, var(--mcb-accent) 90%, #000);
-}
-.mcb-page .mcb-plan-price {
-  grid-area: price;
-  align-self: end;
-  margin-top: 48px !important;
-  gap: 2px 5px !important;
-  color: color-mix(in srgb, var(--mcb-ink) 80%, transparent);
-}
-.mcb-page .mcb-plan-price em {
-  font-style: normal;
-  font-size: 10.5px;
-  color: color-mix(in srgb, var(--mcb-ink) 58%, transparent);
-}
-.mcb-page .mcb-plan-price strong { font-size: 15px !important; font-weight: 850 !important; }
-.mcb-page .mcb-plan-price span { font-size: 10.5px !important; }
-.mcb-page .mcb-plan-price i { font-size: 12px !important; padding: 0 2px !important; }
-.mcb-page .mcb-plan-after { display: none !important; }
-.mcb-page .mcb-plan ul {
-  grid-area: points;
-  align-self: center;
-  grid-template-columns: minmax(0, 1fr) !important;
-  gap: 5px !important;
-  align-self: center;
-}
-.mcb-page .mcb-plan li { color: color-mix(in srgb, var(--mcb-ink) 78%, transparent) !important; font-size: 10.2px !important; }
-.mcb-page .mcb-plan-addon {
-  grid-area: addon;
-  align-self: end;
-  color: color-mix(in srgb, var(--mcb-ink) 55%, transparent) !important;
-  font-size: 10px !important;
-}
-
-@media (max-width: 1080px) {
-  .mcb-page .mcb-pricing { width: 100%; }
-  .mcb-page .mcb-plan {
-    grid-template-columns: minmax(0, 1fr) !important;
-    grid-template-areas: "price" "points" "addon" !important;
-  }
-  .mcb-page .mcb-plan-price { margin-top: 44px !important; }
+@media (max-width: 760px) { .mcb-page .mcb-figures { display: none !important; } 
 }
 
 /* ==========================================================================
@@ -232,15 +144,6 @@
    A conversation reads downward from where it started. */
 .chat { justify-content: flex-start !important; }
 
-/* Each price keeps its own line so the unit never wraps away from the number. */
-.mcb-page .mcb-plan-price { display: grid !important; gap: 3px !important; }
-.mcb-page .mcb-plan-price > b {
-  display: flex;
-  align-items: baseline;
-  gap: 5px;
-  font-weight: inherit;
-}
-
 /* A caption that wraps to two lines took the height out of its own picture, so
    the four photographs in a step came out different sizes. The caption row is
    the same height in every card. */
@@ -264,180 +167,7 @@
    on top of the price. The bubble alone is enough there. */
 @media (max-width: 760px) {
   .launcher__teaser { display: none !important; }
-}
 
-/* ==========================================================================
-   8. Price — the number is the point
-   ========================================================================== */
-
-/* A hairline box with a coral blob and 15 px figures read as a form field. The
-   card is set the way a price is set anywhere it is taken seriously: the label
-   quiet above, the sum large and in tabular figures, the term beside it rather
-   than under it, what is included behind a rule. */
-.mcb-page .mcb-plan {
-  grid-template-columns: minmax(206px, .8fr) minmax(0, 1.2fr) !important;
-  grid-template-areas: "label points" "trial points" "price points" "addon addon" !important;
-  align-items: start !important;
-  column-gap: clamp(24px, 2.8vw, 44px) !important;
-}
-.mcb-page .mcb-plan-label {
-  color: color-mix(in srgb, var(--mcb-ink) 46%, transparent);
-  font-size: 9.5px;
-  font-weight: 800;
-  letter-spacing: .16em;
-}
-/* Accent as a tint, not a slab: the free month is an offer, not a warning. */
-.mcb-page .mcb-plan-trial {
-  margin-top: 15px;
-  padding: 5px 11px;
-  border-radius: 999px;
-  border: 1px solid color-mix(in srgb, var(--mcb-accent) 34%, transparent);
-  background: color-mix(in srgb, var(--mcb-accent) 11%, #fff);
-  color: color-mix(in srgb, var(--mcb-accent) 88%, #000);
-  font-size: 10.5px;
-  font-weight: 800;
-  letter-spacing: .005em;
-  transform: none;
-  box-shadow: none;
-}
-.mcb-page .mcb-plan-price {
-  margin-top: 47px !important;
-  gap: 2px !important;
-  font-variant-numeric: tabular-nums;
-}
-.mcb-page .mcb-plan-price > b { align-items: baseline; gap: 7px; }
-.mcb-page .mcb-plan-price > b:first-child strong {
-  font-size: clamp(27px, 2.5vw, 34px) !important;
-  line-height: 1;
-}
-.mcb-page .mcb-plan-price strong {
-  font-size: 17px !important;
-  font-weight: 750 !important;
-  letter-spacing: -.04em !important;
-  color: var(--mcb-ink) !important;
-}
-.mcb-page .mcb-plan-price em,
-.mcb-page .mcb-plan-price span {
-  font-size: 10.5px !important;
-  font-weight: 600;
-  letter-spacing: .015em;
-  color: color-mix(in srgb, var(--mcb-ink) 50%, transparent) !important;
-}
-.mcb-page .mcb-plan-price i {
-  font-size: 13px !important;
-  color: color-mix(in srgb, var(--mcb-ink) 34%, transparent) !important;
-}
-.mcb-page .mcb-plan ul {
-  padding-left: clamp(24px, 2.8vw, 44px) !important;
-  border-left: 1px solid color-mix(in srgb, var(--mcb-ink) 9%, transparent);
-}
-.mcb-page .mcb-plan li { font-size: 11px !important; line-height: 1.45 !important; }
-.mcb-page .mcb-plan li svg { color: var(--mcb-accent) !important; opacity: .9; }
-
-/* A price is one word: the currency must not fall to the next line. */
-.mcb-page .mcb-plan-price > b { flex-wrap: nowrap; white-space: nowrap; }
-.mcb-page .mcb-plan-price > b strong { white-space: nowrap; }
-
-/* ==========================================================================
-   9. The price card reads like a price list
-   ========================================================================== */
-
-/* The label, the offer and the sum were three blocks down a narrow column with
-   the height spread between them, which is what made the card read as filler.
-   The label and the sticker share the top line, both prices sit on one line
-   under it, and what is included stays behind the rule. */
-.mcb-page .mcb-plan {
-  grid-template-columns: max-content minmax(0, 1fr) !important;
-  grid-template-areas: "label points" "price points" "addon addon" !important;
-  align-content: center !important;
-  row-gap: clamp(9px, 1.3vh, 14px) !important;
-}
-.mcb-page .mcb-plan-label {
-  grid-area: label;
-  align-self: center;
-  justify-self: start;
-}
-/* The sticker rides on the label's line rather than taking one of its own. */
-.mcb-page .mcb-plan-trial {
-  grid-area: label;
-  justify-self: start;
-  align-self: center;
-  margin: 0 0 0 calc(4ch + 12px) !important;
-  padding: 4px 10px !important;
-  border: 0 !important;
-  border-radius: 7px !important;
-  background: var(--mcb-accent) !important;
-  color: #fff !important;
-  font-size: 9.8px !important;
-  box-shadow: 0 6px 14px -10px color-mix(in srgb, var(--mcb-accent) 92%, #000) !important;
-}
-.mcb-page .mcb-plan-price {
-  grid-area: price;
-  display: flex !important;
-  align-items: baseline !important;
-  flex-wrap: nowrap !important;
-  margin: 0 !important;
-  gap: 0 !important;
-}
-.mcb-page .mcb-plan-price > b + b::before {
-  content: "·";
-  margin: 0 8px 0 7px;
-  color: color-mix(in srgb, var(--mcb-ink) 34%, transparent);
-  font-size: 13px;
-  font-weight: 400;
-}
-.mcb-page .mcb-plan-addon { grid-area: addon; margin: 0 !important; }
-
-/* The check was a pale tick with no weight behind it. */
-.mcb-page .mcb-plan li { align-items: center !important; gap: 9px !important; }
-.mcb-page .mcb-plan li svg {
-  width: 15px !important;
-  height: 15px !important;
-  flex: 0 0 15px !important;
-  padding: 3px;
-  border-radius: 50%;
-  color: #fff !important;
-  background: var(--mcb-brand);
-  opacity: 1 !important;
-}
-
-/* The sum needs the room; what is included takes what is left. */
-.mcb-page .mcb-pricing { width: max-content !important; max-width: min(100%, 56%) !important; }
-
-
-/* ==========================================================================
-   9. The offer badge
-   ========================================================================== */
-
-/* A pale outline pill read as a disabled control rather than an offer. Solid
-   accent, small and tight, sitting directly above the sum it applies to. */
-.mcb-page .mcb-plan-trial {
-  margin-top: 13px;
-  padding: 5px 11px;
-  display: inline-flex;
-  align-items: center;
-  border: 0;
-  border-radius: 7px;
-  background: var(--mcb-accent);
-  color: #fff;
-  font-size: 10.5px;
-  font-weight: 800;
-  letter-spacing: .005em;
-  box-shadow: 0 6px 14px -10px color-mix(in srgb, var(--mcb-accent) 92%, #000);
-}
-
-
-/* The note moved into the card. Squeezed into the right column it wrapped to
-   six lines and stretched the card over the hero; it runs across the foot of
-   the card instead. */
-.mcb-page .mcb-plan-addon {
-  grid-area: addon;
-  margin: clamp(11px, 1.6vh, 15px) 0 0 !important;
-  padding-top: clamp(10px, 1.5vh, 14px) !important;
-  border-top: 1px solid color-mix(in srgb, var(--mcb-ink) 9%, transparent) !important;
-  color: color-mix(in srgb, var(--mcb-ink) 46%, transparent) !important;
-  font-size: 10px !important;
-  line-height: 1.4 !important;
 }
 
 /* ==========================================================================
@@ -469,62 +199,13 @@
 
 @media (prefers-reduced-motion: reduce) {
   .progress i, .option__mark, .option { transition: none !important; animation: none !important; }
-}
 
-/* ==========================================================================
-   10. The price card is set at the page's scale
-   ========================================================================== */
-
-/* The same pass as the skincare pages: everything on the card had been trimmed
-   to fit a narrow column that no longer exists, so a 9.5 px label and 11 px
-   benefits read as small print rather than as the offer. */
-.mcb-page .mcb-plan {
-  padding: clamp(21px, 3vh, 30px) clamp(24px, 2.5vw, 34px) !important;
-  row-gap: clamp(11px, 1.6vh, 17px) !important;
 }
-.mcb-page .mcb-plan-label { font-size: 11px !important; letter-spacing: .15em !important; }
-.mcb-page .mcb-plan-trial {
-  padding: 6px 13px !important;
-  border-radius: 8px !important;
-  font-size: 11.5px !important;
-  margin-left: calc(4ch + 14px) !important;
-}
-.mcb-page .mcb-plan-price > b:first-child strong { font-size: clamp(33px, 3.1vw, 43px) !important; }
-.mcb-page .mcb-plan-price strong { font-size: 22px !important; }
-.mcb-page .mcb-plan-price em,
-.mcb-page .mcb-plan-price span { font-size: 12.5px !important; }
-.mcb-page .mcb-plan-price > b { gap: 9px !important; }
-.mcb-page .mcb-plan-price > b + b::before { margin: 0 12px 0 11px; font-size: 16px; }
-.mcb-page .mcb-plan ul { gap: 11px !important; padding-left: clamp(26px, 3vw, 40px) !important; }
-.mcb-page .mcb-plan li {
-  font-size: 12.6px !important;
-  line-height: 1.4 !important;
-  gap: 11px !important;
-  white-space: nowrap;
-}
-.mcb-page .mcb-plan li svg {
-  width: 17px !important;
-  height: 17px !important;
-  flex: 0 0 17px !important;
-  padding: 3.5px;
-}
-.mcb-page .mcb-plan-addon { font-size: 11.5px !important; line-height: 1.4 !important; }
-.mcb-page .mcb-pricing { max-width: min(100%, 70%) !important; }
 
 /* The strip over the photograph was set to match the old card. */
 .mcb-page .mcb-figures strong { font-size: clamp(17px, 1.5vw, 22px) !important; }
 .mcb-page .mcb-figures b { font-size: 12px !important; }
 .mcb-page .mcb-eyebrow { font-size: 10.5px !important; letter-spacing: .15em !important; }
-
-@media (max-width: 760px) {
-  .mcb-page .mcb-plan { padding: 13px 16px !important; }
-  .mcb-page .mcb-plan-price > b:first-child strong { font-size: 27px !important; }
-  .mcb-page .mcb-plan-price strong { font-size: 17px !important; }
-  .mcb-page .mcb-plan-price em,
-  .mcb-page .mcb-plan-price span { font-size: 10.5px !important; }
-  .mcb-page .mcb-plan li { font-size: 11.4px !important; white-space: normal; }
-  .mcb-page .mcb-plan-addon { font-size: 10.4px !important; }
-}
 
 /* "chat odpovedá" broke over two lines in the first cell of the strip: the
    coffee number column is wider than the skincare one and the cell is a third
@@ -625,4 +306,5 @@
 .mcb-page .mcb-offer-card > .mcb-btn { width: 100%; justify-content: center; }
 body.mcb-offer-open { overflow: hidden; }
 
-@media (prefers-reduced-motion: reduce) { .mcb-page .mcb-offer { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .mcb-page .mcb-offer { animation: none; } 
+}

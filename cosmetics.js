@@ -51,27 +51,44 @@
     demo: location.href
   })}`;
 
-  // Change here to switch the offer; the coffee copy reads the same words.
-  const TRIAL = 'Prvý mesiac zdarma';
+  /* One offer, written the way it is quoted on the phone: each sum says what it
+     buys. The coffee pages read the same words. */
+  const PRICE = {
+    sums: [
+      ['247', 'jednorazovo', 'Postavíme ho, naplníme vašimi produktmi a nasadíme na váš web.'],
+      ['10', 'mesačne', 'Prevádzka, zmeny v ponuke a opravy, keď treba.']
+    ],
+    trial: 'Prvý mesiac zdarma',
+    note: 'Bez viazanosti, vypnete kedykoľvek.',
+    addon: 'Napojenie na košík za príplatok.'
+  };
 
   /* "Chcem to na svoj web" used to jump straight to a contact form, which asked
      for a decision before saying what the decision was about. */
   const INCLUDED = [
-    ['Chatbot s vaším katalógom', 'Naplníme ho vašimi produktmi, cenami a odkazmi do e-shopu.'],
-    ['Chat, ktorý odpovedá 24/7', 'Zloženie, typ pleti, rutina aj porovnanie dvoch produktov.'],
+    ['Chatbot s vaším katalógom', 'Vaše produkty, ceny a odkazy do e-shopu, nie všeobecné odpovede.'],
+    ['Odpovedá aj o polnoci', 'Zloženie, typ pleti, rutina aj porovnanie dvoch produktov.'],
     ['Výber cez štyri otázky', 'Pleť, priorita, rutina a textúra — na konci jeden konkrétny produkt.'],
     ['Preklik rovno na produkt', 'Odporúčanie končí odkazom do vášho e-shopu.'],
-    ['História konverzácií', 'Vidíte, na čo sa zákazníci naozaj pýtajú.'],
-    ['Nasadenie jedným riadkom kódu', 'Vložíte jeden skript, o zvyšok sa postaráme.']
+    ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.'],
+    ['Nasadenie za vás', 'Vložíte na web jeden riadok kódu, o zvyšok sa postaráme.']
   ];
+
+  /* What it is (headline) and what it does for the owner (the second sentence of
+     the lead) are the same on all twelve pages; only the first sentence names the
+     shop this demo was built for. */
+  const HEADING = 'Poradí zákazníkovi starostlivosť a odpovie mu na otázky.';
+  const NOTE = 'Krémy, séra aj oleje v jednom e-shope — zákazník z názvu nevyčíta, ktorý je pre jeho pleť.';
+  const BENEFIT = 'Chatbot mu odpovie na otázky a po štyroch otázkach ho dovedie k jednému ' +
+    'produktu s odkazom do e-shopu. Neodíde preto, že sa nevedel rozhodnúť.';
 
   const CHIPS = ['Mám suchú pleť', 'Pleť sa mi mastí', 'Niečo na citlivú pleť', 'Chcem jednoduchú rutinu'];
 
   const ownerFigures = `
     <div class="cx-owner-figures" aria-label="Čo poradca robí">
-      <div><strong>24/7</strong><b>chat odpovedá</b></div>
-      <div><strong>4</strong><b>krátke otázky</b></div>
-      <div><strong>1</strong><b>odporúčanie</b></div>
+      <div><strong>24/7</strong><b>odpovedá za vás</b></div>
+      <div><strong>4</strong><b>otázky k výberu</b></div>
+      <div><strong>1</strong><b>produkt na konci</b></div>
     </div>`;
 
   root.innerHTML = `
@@ -89,18 +106,19 @@
             ${INCLUDED.map(([title, note]) => `<li>${icons.check}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
           </ul>
           <div class="cx-offer-price">
-            <b>${esc(TRIAL)}</b>
-            <p><strong>247&nbsp;€</strong> <span>jednorazovo</span> <i>·</i> <strong>10&nbsp;€</strong> <span>mesačne</span></p>
-            <small>Bez viazanosti, vypnúť sa dá kedykoľvek. Napojenie na košík e-shopu za príplatok.</small>
+            <b>${esc(PRICE.trial)}</b>
+            <p>${PRICE.sums.map(([sum, term]) =>
+              `<strong>${esc(sum)}&nbsp;€</strong> <span>${esc(term)}</span>`).join(' <i>·</i> ')}</p>
+            <small>${esc(PRICE.note)} ${esc(PRICE.addon)}</small>
           </div>
           <a class="cx-offer-cta" href="${esc(contactHref())}" target="_blank" rel="noreferrer">Chcem to na svoj web ${icons.arrow}</a>
         </div>
       </div>
       <section class="cx-owner-hero">
         <div class="cx-owner-copy">
-          <span class="cx-owner-kicker">CHAT + VÝBER STAROSTLIVOSTI</span>
-          <h1>${esc(brand.ownerTitle)}</h1>
-          <p>${esc(brand.ownerText)}</p>
+          <span class="cx-owner-kicker">Chatbot pre váš e-shop</span>
+          <h1>${esc(HEADING)}</h1>
+          <p>${esc(brand.ownerNote || NOTE)} ${esc(BENEFIT)}</p>
           <div class="cx-owner-actions">
             <button type="button" data-open="advisor">Vyskúšať výber ${icons.arrow}</button>
             <button type="button" data-open="chat" class="is-secondary">Skúsiť chat ${icons.chat}</button>
@@ -113,10 +131,16 @@
           </div>
         </div>
       </section>
-      <section class="cx-owner-benefits cx-owner-offer" aria-label="Cena">
-        <div class="cx-plan-summary"><span class="cx-plan-label">Cena</span><b class="cx-plan-badge">${esc(TRIAL)}</b><p><b><strong>247 €</strong><em>jednorazovo</em></b><b><strong>10 €</strong><em>mesačne</em></b></p><small class="cx-plan-note">Bez viazanosti, vypnúť sa dá kedykoľvek.</small></div>
-        <div class="cx-plan-points"><span>${icons.check} Váš katalóg pripravený pri spustení</span><span>${icons.check} História konverzácií</span><span>${icons.check} Nasadenie jedným riadkom kódu</span></div>
-        <div class="cx-plan-cta"><small>Po prvom bezplatnom mesiaci. Bez viazanosti, vypnúť sa dá kedykoľvek.</small><a href="${esc(contactHref())}" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a></div>
+      <section class="cx-owner-offer" aria-label="Cena">
+        <article class="cx-price">
+          ${PRICE.sums.map(([sum, term, buys]) => `
+            <div class="cx-price-sum"><b>${esc(sum)}&nbsp;€</b><span>${esc(term)}</span><small>${esc(buys)}</small></div>`).join('')}
+          <div class="cx-price-terms">
+            <b>${esc(PRICE.trial)}</b>
+            <p>${esc(PRICE.note)} ${esc(PRICE.addon)}</p>
+            <a href="${esc(contactHref())}" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a>
+          </div>
+        </article>
       </section>
       <footer class="cx-owner-foot"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a><span>Ukážka riešenia pre ${esc(brand.name)}</span></footer>
     </main>

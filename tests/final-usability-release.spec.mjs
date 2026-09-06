@@ -82,13 +82,14 @@ test('every owner page is that roastery\'s own, with a visible primary action', 
     await expect(owner.locator('.mcb-figures strong').first()).toBeVisible();
 
     // One price and the way to reach us are on the first screen.
-    await expect(owner.locator('.mcb-plan')).toHaveCount(1);
-    await expect(owner.locator('.mcb-plan-price strong')).toHaveCount(2);
+    await expect(owner.locator('.mcb-price')).toHaveCount(1);
+    await expect(owner.locator('.mcb-price-sum b')).toHaveCount(2);
+    await expect(owner.locator('.mcb-price a[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
 
     // Nothing that reads as a demo, a trial or an install instruction, and
     // nothing promised in the price that is billed separately.
     const text = await owner.innerText();
-    expect(text).not.toMatch(/Ukážka pripraven|riadok kódu|&lt;script|zdarma|trial|Návrh AI|umelá inteligencia/i);
+    expect(text).not.toMatch(/Ukážka pripraven|&lt;script|trial|Návrh AI|umelá inteligencia/i);
     expect(text).not.toMatch(/Priebežné úpravy ponuky/i);
 
     // One screen: the page must never grow a scrollbar.
@@ -130,7 +131,7 @@ test('every owner page stays readable and contained on a phone', async ({ page }
     await expect(owner.locator('.mcb-lockup')).toBeVisible();
     await expect(owner.locator('[data-release-open="advisor"]').first()).toBeVisible();
     await expect(owner.locator('[data-release-open="chat"]').first()).toBeVisible();
-    await expect(owner.locator('.mcb-plan').first()).toBeVisible();
+    await expect(owner.locator('.mcb-price').first()).toBeVisible();
     await expect(owner.locator('.mcb-foot')).toBeVisible();
     await expect(owner.locator('.mcb-benefits')).toHaveCount(0);
 

@@ -86,13 +86,14 @@ VOCAB.skin.forEach((value) => {
 need(new Set(skinPicks.values()).size >= 3,
   `štyri typy pleti vedú len na ${new Set(skinPicks.values()).size} produkty — rozložte tagy`);
 
-/* The headline speaks to the shop owner, who is the one reading the demo. */
-const title = String(data.ownerTitle || '');
-need(title.length > 12 && title.length < 72, 'ownerTitle má mať 12–72 znakov');
-need(!/\bvaša pleť|vašu pleť|vám sadne|vaše pleti\b/i.test(title),
-  'ownerTitle je písaný zákazníkovi — otočte ho na majiteľa (Poraďte…, Doveďte…, Chatbot…)');
-need(/chatbot|poradca|poradí/i.test(`${title} ${data.ownerText || ''}`),
-  'ownerTitle ani ownerText nehovoria, čo to je — spomeňte chatbota alebo poradcu');
+/* Every demo carries the same headline ("Poradí zákazníkovi starostlivosť a
+   odpovie mu na otázky.") and the same sentence about what the owner gets out
+   of it, so the only copy a new shop needs is one sentence naming what is in
+   its catalogue and why a visitor cannot tell the products apart. */
+const note = String(data.ownerNote || '');
+need(note.length > 24 && note.length < 150, 'ownerNote má mať 24–150 znakov (jedna veta)');
+need(!/chatbot|poradca|24\/7|zdarma/i.test(note),
+  'ownerNote má opísať ponuku, nie chatbota — o tom hovorí spoločná veta pod ňou');
 
 if (problems.length) {
   console.error(`${source} nie je kompletný:\n  ` + problems.join('\n  '));
@@ -120,8 +121,7 @@ const entry = `    ${slug}: {\n`
   + `      theme:{brand:'${c.brand}',accent:'${c.accent}',soft:'${c.soft}',paper:'${c.paper}',ink:'${c.ink}',line:'${c.line}'},\n`
   + `      wordmark:${JSON.stringify(wordmark)},\n`
   + `      hero:'/assets/cosmetics/${slug}.jpg',\n`
-  + `      ownerTitle:${JSON.stringify(data.ownerTitle)},\n`
-  + `      ownerText:${JSON.stringify(data.ownerText)},\n`
+  + `      ownerNote:${JSON.stringify(data.ownerNote)},\n`
   + `      benefit:[${data.benefit.map((item) => JSON.stringify(item)).join(',')}],\n`
   + `      products:[\n`
   + products.map((product) => `        ${line(product)}`).join(',\n') + '\n'

@@ -62,7 +62,7 @@ for (const demo of demos) {
     await page.setViewportSize({ width: 390, height: 844 });
     await ready(page, demo);
 
-    const price = page.locator('.mcb-plan-price strong').first();
+    const price = page.locator('.mcb-price-sum b').first();
     await expect(price).toHaveText(/247\s*€/);
 
     await page.locator(demo.launcher).click({ force: true });

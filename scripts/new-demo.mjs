@@ -35,14 +35,15 @@ need(data.brand && text(data.brand.name), 'brand.name chýba');
 need(data.brand && text(data.brand.place), 'brand.place chýba');
 need(data.brand && /^https?:\/\//.test(data.brand.shopUrl || ''), 'brand.shopUrl chýba');
 need(data.brand && /^https?:\/\//.test(data.brand.storyUrl || ''), 'brand.storyUrl chýba');
-/* The page is read by the roastery's owner, not by their customer: the
-   headline is an instruction to them about what the advisor will do for their
-   shop — "Poraďte…", "Doveďte…", "Zúžte…" — never a sentence addressed to a
-   visitor choosing coffee. */
-need(text(data.ownerTitle), 'ownerTitle chýba — veta pre majiteľa: čo poradca urobí pre jeho e-shop');
-need(!/\b(?:vaša|vašu|vám sadne|tá vaša)\b/i.test(data.ownerTitle || ''),
-  'ownerTitle je písaný zákazníkovi — otočte ho na majiteľa (Poraďte…, Doveďte…, Zúžte…)');
-need(text(data.ownerLead), 'ownerLead chýba — dve vety pre majiteľa: čo chat odpovie a kam výber dovedie');
+/* Every demo carries the same headline ("Poradí zákazníkovi kávu a odpovie mu
+   na otázky.") and the same sentence about what the owner gets out of it, so
+   the only copy a new roastery needs is one sentence naming what is in its
+   catalogue and why a visitor cannot tell the coffees apart. */
+need(text(data.ownerNote), 'ownerNote chýba — jedna veta: čo je v ponuke a prečo si z nej zákazník sám nevyberie');
+const note = String(data.ownerNote || '');
+need(note.length > 24 && note.length < 150, 'ownerNote má mať 24–150 znakov (jedna veta)');
+need(!/chatbot|poradca|24\/7|zdarma/i.test(note),
+  'ownerNote má opísať ponuku, nie chatbota — o tom hovorí spoločná veta pod ňou');
 
 const HEX = /^#[0-9a-fA-F]{6}$/;
 ['ink', 'brand', 'accent', 'soft', 'paper'].forEach((key) =>
@@ -260,6 +261,10 @@ write(`${slug}.html`, `<!doctype html>
   <meta name="description" content="Ukážka kávového poradcu pripravená pre ${name}.">
   <link rel="icon" href="${logoPath}">
   <link rel="preload" as="font" type="font/woff2" href="/assets/jolka/fonts/inter-latin-ext.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/dmsans-002a94d0.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/dmsans-850928f5.woff2" crossorigin>
+  <!-- The owner page is set in DM Sans; jolka.css only carries Inter and Playfair. -->
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
   <link rel="stylesheet" href="/jolka/jolka.css">
   <link rel="stylesheet" href="/coffee-jolka-shell.css">
   <link rel="stylesheet" href="/${slug}-jolka-theme.css">
@@ -318,14 +323,13 @@ const patch = (file, find, replacement, describe) => {
     const body = `    ${slug}: {\n`
       + `      name: ${JSON.stringify(name)},\n`
       + `      place: ${JSON.stringify(place)},\n`
-      + `      title: ${JSON.stringify(data.ownerTitle)},\n`
-      + `      lead: ${JSON.stringify(data.ownerLead)},\n`
+      + `      note: ${JSON.stringify(data.ownerNote)},\n`
       + `      root: '.${slug}-page',\n`
       + `      shop: ${JSON.stringify(shopUrl)},\n`
       + `      lockup: '<img src="${logoPath}" alt="${name.replace(/"/g, '&quot;')}">',\n`
       + `      theme: { ink: '${c.ink}', brand: '${c.brand}', accent: '${c.accent}', soft: '${c.soft}', paper: '${c.paper}' },\n`
       + `      hero: '/assets/${slug}/hero.jpg',\n`
-      + `      figures: commonFigures('príprava · chuť · nápoj · kofeín')\n`
+      + `      figures: commonFigures()\n`
       + `    }`;
 
     /* Re-running the generator after a wording change has to reach the page,
