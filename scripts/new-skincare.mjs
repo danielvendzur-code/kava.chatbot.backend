@@ -154,10 +154,11 @@ const written = [];
 }
 
 /* The redirect page is what /<slug>/ serves; cosmetics.html reads the slug back
-   out of the query string. */
-const redirect = path.join(ROOT, slug, 'index.html');
-fs.mkdirSync(path.dirname(redirect), { recursive: true });
-fs.writeFileSync(redirect, `<!doctype html>
+   out of the query string. /kozmetika/<slug>/ is served by a rewrite in
+   production, but the file has to exist too or the path only works on Vercel —
+   the first six brands had it and the next six did not, so a local run of the
+   demos answered 404 on half of them. */
+const redirectPage = `<!doctype html>
 <html lang="sk">
 <head>
 <meta charset="utf-8">
@@ -170,9 +171,14 @@ fs.writeFileSync(redirect, `<!doctype html>
 </head>
 <body><p>Presmerovanie na <a href="/cosmetics.html?demo=${slug}">${name}</a>…</p></body>
 </html>
-`);
-written.push(`${slug}/index.html`);
-console.log(`  ${slug}/index.html`);
+`;
+for (const where of [`${slug}/index.html`, `kozmetika/${slug}/index.html`]) {
+  const redirect = path.join(ROOT, where);
+  fs.mkdirSync(path.dirname(redirect), { recursive: true });
+  fs.writeFileSync(redirect, redirectPage);
+  written.push(where);
+  console.log(`  ${where}`);
+}
 
 /* A brand missing from api/cosmetics-chat.js gets "Unknown demo" and the page
    falls back to its offline answers, so the model never speaks for the shop. */
@@ -220,24 +226,32 @@ console.log(`  ${slug}/index.html`);
   }
 }
 
-/* A demo path with no cache policy is served from whatever the CDN still holds,
-   which is how the live links kept showing an older build. */
 {
   const file = 'vercel.json';
   const full = path.join(ROOT, file);
-  const before = fs.readFileSync(full, 'utf8');
-  if (before.includes(`|${slug}|`) || before.includes(`|${slug})`)) console.log(`  ${file} (už tam je)`);
-  else {
-    /* Anchoring on the slug that happened to be last broke the moment one was
-       appended after it. The group itself is the anchor. */
-    const after = before.replace(/("source": "\/:slug\()([^)]+)(\))/g,
-      (whole, head, list, tail) => `${head}${list}|${slug}${tail}`);
-    if (after === before) throw new Error(`${file}: nenašiel som zoznam ukážok`);
-    JSON.parse(after);
-    fs.writeFileSync(full, after);
-    written.push(file);
-    console.log(`  ${file}`);
+  const config = JSON.parse(fs.readFileSync(full, 'utf8'));
+  let touched = false;
+
+  /* A demo path that carries no cache policy is served from whatever the CDN
+     still holds, which is how the live links kept showing an older build. The
+     one-segment routes name every slug, so a new one has to join them. */
+  for (const rule of config.headers || []) {
+    rule.source = rule.source.replace(/^\/:slug\(([^)]+)\)/, (whole, list) =>
+      list.split('|').includes(slug) ? whole : `/:slug(${list}|${slug})`);
   }
+
+  /* Each demo is also handed out as its own link, so the root of
+     <slug>.mojchatbot.sk answers with this page instead of the demo list. */
+  const rewrite = (config.rewrites || []).find((rule) =>
+    rule.source === '/' && rule.destination === '/cosmetics.html');
+  if (!rewrite) throw new Error(`${file}: nenašiel som pravidlo pre vlastnú subdoménu`);
+  rewrite.has[0].value = rewrite.has[0].value.replace(/\(\?<sub>([^)]+)\)/, (whole, list) =>
+    list.split('|').includes(slug) ? whole : `(?<sub>${list}|${slug})`);
+
+  const after = `${JSON.stringify(config, null, 2)}\n`;
+  if (after !== fs.readFileSync(full, 'utf8')) { fs.writeFileSync(full, after); touched = true; }
+  console.log(`  ${file}${touched ? '' : ' (už tam je)'}`);
+  if (touched) written.push(file);
 }
 
 /* The index lists the demos and says how many there are. */
@@ -248,7 +262,8 @@ console.log(`  ${slug}/index.html`);
   if (text.includes(`href="/${slug}/"`)) console.log(`  ${file} (už tam je)`);
   else {
     const close = text.lastIndexOf('\n    </ul>');
-    text = `${text.slice(0, close)}\n      <li><a href="/${slug}/">${name}</a></li>${text.slice(close)}`;
+    text = `${text.slice(0, close)}\n      <li><a href="/${slug}/">${name}`
+      + `<code>${slug}.mojchatbot.sk</code></a></li>${text.slice(close)}`;
   }
   const counts = [...text.matchAll(/<ul>([\s\S]*?)<\/ul>/g)]
     .map((block) => (block[1].match(/<li>/g) || []).length);

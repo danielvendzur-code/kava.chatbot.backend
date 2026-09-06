@@ -36,11 +36,12 @@
      pripravený pri spustení", which is a sentence nobody would say out loud. */
   const PRICING = {
     sums: [
-      ['247', 'jednorazovo', 'Postavíme ho, naplníme vašimi kávami a nasadíme na váš web.'],
-      ['10', 'mesačne', 'Prevádzka, zmeny v ponuke a opravy, keď treba.']
+      ['247', 'jednorazovo', 'nastavenie a naplnenie vašimi kávami'],
+      ['10', 'mesačne', 'prevádzka, zmeny v ponuke, opravy']
     ],
     trial: 'Prvý mesiac zdarma',
     note: 'Bez viazanosti, vypnete kedykoľvek.',
+    // Only in the sheet: the strip stays short enough to read at a glance.
     addon: 'Napojenie na košík za príplatok.',
     // The sheet behind "Mám záujem" is the long version of the same offer.
     included: [
@@ -65,7 +66,6 @@
 
   const BRANDS = {
     praziarnicka: {
-      note: "Zmesi aj single origin v jednom e-shope — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: 'Pražiarnička',
       place: 'Pražiarnička by Caffè Vita',
       root: '.pz13-site',
@@ -77,7 +77,6 @@
     },
 
     diamonds: {
-      note: "Výberové kávy z rôznych pôvodov — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: 'Diamonds Roastery',
       place: 'Diamonds Roastery · Dunajská Lužná',
       root: '.diamonds-page',
@@ -89,7 +88,6 @@
     },
 
     kaffa: {
-      note: "Výberové kávy z rôznych pôvodov — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: 'Kaffa Roastery',
       place: 'Kaffa Roastery · speciality coffee',
       mark: { text: 'K', font: 'Georgia, "Times New Roman", serif' },
@@ -103,7 +101,6 @@
     },
 
     vitazov: {
-      note: "Zmesi aj single origin v jednom e-shope — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: 'Káva Víťazov',
       place: 'Káva Víťazov · Prešov',
       root: '.demo-page',
@@ -115,7 +112,6 @@
     },
 
     concept: {
-      note: "Výberové kávy z rôznych pôvodov — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: 'Concept Coffee Roasters',
       place: 'Concept Coffee Roasters · Piešťany a Bratislava',
       mark: { text: 'C', font: '"DM Sans", system-ui, sans-serif' },
@@ -128,7 +124,6 @@
     },
 
     jolka: {
-      note: "Zmesi aj single origin z vlastnej pražiarne — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: 'Pražiareň Jolka',
       place: 'Pražiareň Jolka · Bratislava-Ružinov',
       root: '.page',
@@ -141,7 +136,6 @@
     },
 
     goriffee: {
-      note: "Od blendov po single origin a bezkofeínovú — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Goriffee roastery",
       place: "Goriffee roastery · Bratislava",
       root: '.goriffee-page',
@@ -153,7 +147,6 @@
     },
 
     readyafter: {
-      note: "Etiópia, Burundi aj Kolumbia v jednej ponuke — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Ready After",
       place: "Ready After · Bošany",
       root: '.readyafter-page',
@@ -165,7 +158,6 @@
     },
 
     coffeesheep: {
-      note: "Espresso zmesi aj single origin z Kene či Indonézie — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Coffee Sheep",
       place: "Coffee Sheep · Trenčín",
       root: '.coffeesheep-page',
@@ -177,7 +169,6 @@
     },
 
     zlatezrnko: {
-      note: "Vyše osemdesiat káv — zmesi, single origin aj bezkofeínové. Zákazník sa v tom sám nevyzná.",
       name: "Zlaté Zrnko",
       place: "Zlaté Zrnko · Ivanka pri Dunaji",
       root: '.zlatezrnko-page',
@@ -189,7 +180,6 @@
     },
 
     becafe: {
-      note: "Praženie na espresso aj na filter, k tomu zmes a bezkofeínová — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Be:Café",
       place: "Be:Café · Lietavská Lúčka",
       root: '.becafe-page',
@@ -201,7 +191,6 @@
     },
 
     simplecoffee: {
-      note: "Ponuka je delená podľa chuti, prípravy aj momentu — zákazník to však musí prejsť celé sám.",
       name: "Simple Coffee",
       place: "Simple Coffee · Bratislava",
       root: '.simplecoffee-page',
@@ -213,7 +202,6 @@
     },
 
     ebenica: {
-      note: "Zmesi, single origin aj bezkofeínová — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "EBENICA Coffee",
       place: "EBENICA Coffee · Modra",
       root: '.ebenica-page',
@@ -225,7 +213,6 @@
     },
 
     casadelcaffe: {
-      note: "Talianske zmesi aj plantážne kávy z jedného regálu — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Casa del Caffé",
       place: "Casa del Caffé · Bratislava",
       root: '.casadelcaffe-page',
@@ -237,7 +224,6 @@
     },
 
     coffeeveronia: {
-      note: "Brazílie, africké single origin aj bezkofeínová v jednej rade plechoviek — zákazník z etikety nevyčíta, ktorá je pre neho.",
       name: "Coffee Veronia",
       place: "Coffee Veronia · Trnava",
       root: '.coffeeveronia-page',
@@ -249,7 +235,6 @@
     },
 
     grandroastery: {
-      note: "Zmesi do kávovaru aj experimentálne single origin v jednom e-shope — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Grand Roastery",
       place: "Grand Roastery · Bardejovské Kúpele",
       root: '.grandroastery-page',
@@ -261,7 +246,6 @@
     },
 
     coffeein: {
-      note: "Espresso zmesi aj tretia vlna z vlastnej pražiarne — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "COFFEEIN",
       place: "COFFEEIN · Šahy",
       root: '.coffeein-page',
@@ -273,7 +257,6 @@
     },
 
     kavoholik: {
-      note: "Espresso zmesi s menami slovenských dejateľov aj kolumbijské lóty — zákazník z názvu nevyčíta, ktorá je pre neho.",
       name: "Kávoholik",
       place: "Kávoholik · vlastná pražiareň",
       root: '.kavoholik-page',
@@ -288,13 +271,12 @@
   /* The skincare pages say something about the shop they were built for; the
      roasteries all said the same sentence. A brand that carries its own
      headline and lead uses them, and these stay as the fallback. */
-  /* What it is (headline) and what it does for the owner (the second sentence
-     of the lead) are the same on all eighteen pages; only the first sentence
-     names the shop this demo was built for. */
+  /* Headline and lead are the same on every page. The lead used to open with
+     a sentence about the shop's catalogue, which took two lines to say what
+     the visitor cannot tell apart and never got round to the chatbot. */
   const HEADING = 'Poradí zákazníkovi kávu a odpovie mu na otázky.';
-  const NOTE = 'Zmesi aj single origin v jednom e-shope — zákazník z názvu nevyčíta, ktorá je pre neho.';
-  const BENEFIT = 'Chatbot mu odpovie na otázky a po štyroch otázkach ho dovedie k jednej káve ' +
-    's odkazom na produkt. Neodíde preto, že sa nevedel rozhodnúť.';
+  const LEAD = 'Chatbot odpovie zákazníkovi na otázky o vašich kávach. Cez štyri otázky ' +
+    'mu vyberie tú, ktorá mu sadne, a pošle ho rovno na ňu. Predáte aj vtedy, keď pri tom nie ste.';
 
   /* The brand table is the only list of roasteries this file keeps. A slug it
      does not know belongs to some other page, and the claim below must not be
@@ -335,7 +317,7 @@
         </div>`).join('')}
       <div class="mcb-price-terms">
         <b>${esc(PRICING.trial)}</b>
-        <p>${esc(PRICING.note)} ${esc(PRICING.addon)}</p>
+        <p>${esc(PRICING.note)}</p>
         <a class="mcb-btn mcb-btn--accent" href="${contact}" target="_blank" rel="noreferrer">
           ${icons.mail} Ozvite sa mi
         </a>
@@ -378,7 +360,7 @@
       <section class="mcb-copy">
         <span class="mcb-eyebrow">Chatbot pre váš e-shop</span>
         <h1>${esc(HEADING)}</h1>
-        <p class="mcb-lead">${esc(brand.note || NOTE)} ${esc(BENEFIT)}</p>
+        <p class="mcb-lead">${esc(LEAD)}</p>
 
         <div class="mcb-actions">
           <button class="mcb-btn" type="button" data-release-open="advisor">Otvoriť poradcu ${icons.arrow}</button>
@@ -479,7 +461,7 @@
 
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '/coffee-owner-brand.css?v=b04c57fb';
+    link.href = '/coffee-owner-brand.css?v=8cb2599b';
     link.dataset.mcbStyle = 'true';
     link.dataset.mcOrder = '30';
     document.body.appendChild(link);
@@ -493,7 +475,7 @@
 
     const refresh = document.createElement('link');
     refresh.rel = 'stylesheet';
-    refresh.href = '/coffee-refresh.css?v=1155d8b0';
+    refresh.href = '/coffee-refresh.css?v=400802a0';
     refresh.dataset.mcbRefreshStyle = 'true';
     refresh.dataset.mcOrder = '95';
     document.body.appendChild(refresh);

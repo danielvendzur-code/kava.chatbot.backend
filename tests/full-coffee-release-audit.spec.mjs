@@ -75,7 +75,7 @@ async function expectOwnerOffer(page) {
   // of it. Both are the same sentence on every demo.
   await expect(ownerPage.locator('.mcb-eyebrow')).toHaveText('Chatbot pre váš e-shop');
   await expect(ownerPage.locator('.mcb-copy h1')).toHaveText('Poradí zákazníkovi kávu a odpovie mu na otázky.');
-  await expect(ownerPage.locator('.mcb-lead')).toContainText('Neodíde preto, že sa nevedel rozhodnúť.');
+  await expect(ownerPage.locator('.mcb-lead')).toContainText('Predáte aj vtedy, keď pri tom nie ste.');
 
   // Both sums, each with the sentence that says what it buys, then the terms.
   const price = ownerPage.locator('.mcb-price');

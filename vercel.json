@@ -2,6 +2,26 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "^(?<sub>praziarnicka|diamonds|kaffa|vitazov|concept|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|ebenica|casadelcaffe|coffeeveronia|grandroastery|coffeein|kavoholik)\\.mojchatbot\\.sk$"
+        }
+      ],
+      "destination": "/:sub.html"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "^(?<sub>mylo|ponio|two|bellcoria|biofy|anemone|modrapupava|facederma|cyprianus|panakeia|barboralori|bellmedi)\\.mojchatbot\\.sk$"
+        }
+      ],
+      "destination": "/cosmetics.html"
+    },
+    {
       "source": "/kozmetika/:slug",
       "destination": "/cosmetics.html"
     },

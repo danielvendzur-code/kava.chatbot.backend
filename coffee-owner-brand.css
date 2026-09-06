@@ -89,20 +89,20 @@ body:has(.mcb-page){margin:0!important;background:var(--mcb-paper,#fff)!importan
    beside them, and the reply button is next to the number instead of only in the
    corner of the header. The panel stops short of the right edge so it does not
    run under the invitation fixed to that corner. */
-.mcb-pricing{padding:0;max-width:min(100%,76%)}
+.mcb-pricing{padding:0;width:max-content;max-width:100%}
 .mcb-price{
-  display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,.9fr) minmax(0,1.45fr);
-  gap:clamp(16px,2.2vw,32px);align-items:center;
+  display:grid;grid-template-columns:auto auto auto;
+  gap:clamp(14px,1.8vw,26px);align-items:center;
   padding:clamp(15px,2.1vh,22px) clamp(18px,1.9vw,28px);
   border-radius:18px;background:var(--mcb-soft);
 }
-.mcb-price-sum{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:baseline;column-gap:9px;row-gap:5px}
+.mcb-price-sum{display:grid;grid-template-columns:auto auto;justify-content:start;align-items:baseline;column-gap:9px;row-gap:5px}
 .mcb-price-sum b{font-size:clamp(23px,2.1vw,30px);font-weight:800;line-height:1;letter-spacing:-.04em;color:var(--mcb-ink);font-variant-numeric:tabular-nums;white-space:nowrap}
 .mcb-price-sum span{color:var(--mcb-muted);font-size:11.5px;font-weight:600}
-.mcb-price-sum small{grid-column:1/-1;max-width:34ch;color:var(--mcb-muted);font-size:11.8px;line-height:1.42}
+.mcb-price-sum small{grid-column:1/-1;max-width:23ch;color:var(--mcb-muted);font-size:11.4px;line-height:1.35}
 .mcb-price-terms{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;column-gap:clamp(13px,1.6vw,22px);row-gap:4px;padding-left:clamp(16px,2.2vw,34px);border-left:1px solid color-mix(in srgb,var(--mcb-ink) 12%,transparent)}
 .mcb-price-terms b{grid-column:1;white-space:nowrap;font-size:13px;font-weight:800;letter-spacing:-.01em;color:var(--mcb-accent)}
-.mcb-price-terms p{grid-column:1;margin:0;max-width:36ch;color:var(--mcb-muted);font-size:11.5px;line-height:1.42}
+.mcb-price-terms p{grid-column:1;margin:0;color:var(--mcb-muted);font-size:11.4px;line-height:1.35;white-space:nowrap}
 .mcb-price-terms .mcb-btn{grid-column:2;grid-row:1/3;align-self:center}
 
 /* Entrance (the copy and the price share the stagger the figures use) */
@@ -121,7 +121,7 @@ body:has(.mcb-page){margin:0!important;background:var(--mcb-paper,#fff)!importan
   .mcb-price-terms p{max-width:none}
 }
 @media(max-width:760px){
-  .mcb-pricing{max-width:100%}
+  .mcb-pricing{width:auto;max-width:100%}
   .mcb-price{gap:9px 18px;padding:13px 15px;border-radius:14px}
   .mcb-price-terms p{font-size:10.8px}
   .mcb-price-sum b{font-size:22px}

@@ -55,8 +55,8 @@
      buys. The coffee pages read the same words. */
   const PRICE = {
     sums: [
-      ['247', 'jednorazovo', 'Postavíme ho, naplníme vašimi produktmi a nasadíme na váš web.'],
-      ['10', 'mesačne', 'Prevádzka, zmeny v ponuke a opravy, keď treba.']
+      ['247', 'jednorazovo', 'nastavenie a naplnenie vašimi produktmi'],
+      ['10', 'mesačne', 'prevádzka, zmeny v ponuke, opravy']
     ],
     trial: 'Prvý mesiac zdarma',
     note: 'Bez viazanosti, vypnete kedykoľvek.',
@@ -74,13 +74,11 @@
     ['Nasadenie za vás', 'Vložíte na web jeden riadok kódu, o zvyšok sa postaráme.']
   ];
 
-  /* What it is (headline) and what it does for the owner (the second sentence of
-     the lead) are the same on all twelve pages; only the first sentence names the
-     shop this demo was built for. */
+  /* Headline and lead are the same on every page; the coffee pages read the
+     same words. */
   const HEADING = 'Poradí zákazníkovi starostlivosť a odpovie mu na otázky.';
-  const NOTE = 'Krémy, séra aj oleje v jednom e-shope — zákazník z názvu nevyčíta, ktorý je pre jeho pleť.';
-  const BENEFIT = 'Chatbot mu odpovie na otázky a po štyroch otázkach ho dovedie k jednému ' +
-    'produktu s odkazom do e-shopu. Neodíde preto, že sa nevedel rozhodnúť.';
+  const LEAD = 'Chatbot odpovie zákazníkovi na otázky o vašich produktoch. Cez štyri otázky ' +
+    'mu vyberie ten, ktorý sadne jeho pleti, a pošle ho rovno naň. Predáte aj vtedy, keď pri tom nie ste.';
 
   const CHIPS = ['Mám suchú pleť', 'Pleť sa mi mastí', 'Niečo na citlivú pleť', 'Chcem jednoduchú rutinu'];
 
@@ -118,7 +116,7 @@
         <div class="cx-owner-copy">
           <span class="cx-owner-kicker">Chatbot pre váš e-shop</span>
           <h1>${esc(HEADING)}</h1>
-          <p>${esc(brand.ownerNote || NOTE)} ${esc(BENEFIT)}</p>
+          <p>${esc(LEAD)}</p>
           <div class="cx-owner-actions">
             <button type="button" data-open="advisor">Vyskúšať výber ${icons.arrow}</button>
             <button type="button" data-open="chat" class="is-secondary">Skúsiť chat ${icons.chat}</button>
@@ -137,7 +135,7 @@
             <div class="cx-price-sum"><b>${esc(sum)}&nbsp;€</b><span>${esc(term)}</span><small>${esc(buys)}</small></div>`).join('')}
           <div class="cx-price-terms">
             <b>${esc(PRICE.trial)}</b>
-            <p>${esc(PRICE.note)} ${esc(PRICE.addon)}</p>
+            <p>${esc(PRICE.note)}</p>
             <a href="${esc(contactHref())}" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a>
           </div>
         </article>

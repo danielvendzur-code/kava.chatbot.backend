@@ -409,24 +409,36 @@ if (!routerText.includes(`'${slug}'`)) {
   console.log('  coffee-final-entry.js');
 }
 
-/* A demo path that carries no cache policy is served from whatever the CDN
-   still holds, which is how the live links kept showing an older build. The
-   one-segment routes name every slug, so a new one has to join them. */
 {
   const file = 'vercel.json';
   const full = path.join(ROOT, file);
-  const before = fs.readFileSync(full, 'utf8');
-  if (before.includes(`|${slug}|`)) console.log(`  ${file} (uz tam je)`);
-  else {
-    const after = before.replaceAll('|mylo|', `|${slug}|mylo|`);
-    if (after === before) throw new Error(`${file}: nenasiel som zoznam ukazok`);
-    JSON.parse(after);
-    fs.writeFileSync(full, after);
-    console.log('  ' + file);
+  const config = JSON.parse(fs.readFileSync(full, 'utf8'));
+  let touched = false;
+
+  /* A demo path that carries no cache policy is served from whatever the CDN
+     still holds, which is how the live links kept showing an older build. The
+     one-segment routes name every slug, so a new one has to join them. */
+  for (const rule of config.headers || []) {
+    rule.source = rule.source.replace(/^\/:slug\(([^)]+)\)/, (whole, list) =>
+      list.split('|').includes(slug) ? whole : `/:slug(${list}|${slug})`);
   }
+
+  /* Each demo is also handed out as its own link, so the root of
+     <slug>.mojchatbot.sk answers with this page instead of the demo list. */
+  const rewrite = (config.rewrites || []).find((rule) =>
+    rule.source === '/' && rule.destination === '/:sub.html');
+  if (!rewrite) throw new Error(`${file}: nenašiel som pravidlo pre vlastnú subdoménu`);
+  rewrite.has[0].value = rewrite.has[0].value.replace(/\(\?<sub>([^)]+)\)/, (whole, list) =>
+    list.split('|').includes(slug) ? whole : `(?<sub>${list}|${slug})`);
+
+  const after = `${JSON.stringify(config, null, 2)}\n`;
+  if (after !== fs.readFileSync(full, 'utf8')) { fs.writeFileSync(full, after); touched = true; }
+  console.log(`  ${file}${touched ? '' : ' (už tam je)'}`);
 }
 
-patch('ukazky.html', '\n    </ul>', `\n      <li><a href="/${slug}/">${name}</a></li>\n    </ul>`, 'zoznam ukážok');
+patch('ukazky.html', '\n    </ul>',
+  `\n      <li><a href="/${slug}/">${name}<code>${slug}.mojchatbot.sk</code></a></li>\n    </ul>`,
+  'zoznam ukážok');
 
 /* The index says how many demos it lists; adding one without saying so leaves
    the sentence counting the wrong number. It is recomputed from the lists. */
