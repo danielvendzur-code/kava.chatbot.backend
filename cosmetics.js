@@ -28,6 +28,7 @@
     chat:svg(path('M5 5h14v10H9l-4 4V5Z')),
     spark:svg(path('M12 3l1.4 5.4L19 10l-5.6 1.6L12 17l-1.4-5.4L5 10l5.6-1.6L12 3Z')),
     check:svg(path('m5 12 4 4L19 6')),
+    dot:'<svg viewBox="0 0 8 8" aria-hidden="true"><circle cx="4" cy="4" r="3" fill="currentColor"/></svg>',
     send:svg(path('m4 4 16 8-16 8 3-8-3-8Zm3 8h13')),
     bag:svg(path('M6 8h12l-1 12H7L6 8Zm3 0V6a3 3 0 0 1 6 0v2')),
     leaf:svg(path('M19 4C11 4 5 8 5 14c0 3 2 5 5 5 6 0 9-7 9-15ZM8 17c2-4 5-7 9-9'))
@@ -80,6 +81,16 @@
   const LEAD = 'Chatbot odpovie zákazníkovi na otázky o vašich produktoch. Cez štyri otázky ' +
     'mu vyberie ten, ktorý sadne jeho pleti, a pošle ho rovno naň. Predáte aj vtedy, keď pri tom nie ste.';
 
+  /* The sheet behind "Chcem to na svoj web" listed what the owner gets, but the
+     page itself said none of it — the conversation history among it. Four of
+     them sit under the buttons instead. The coffee pages carry the same four. */
+  const KEEPS = [
+    ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
+    ['História konverzácií', 'vidíte, na čo sa zákazníci pýtajú'],
+    ['Preklik rovno na produkt', 'odporúčanie končí vo vašom e-shope'],
+    ['Nasadenie za vás', 'na web vložíte jeden riadok kódu']
+  ];
+
   const CHIPS = ['Mám suchú pleť', 'Pleť sa mi mastí', 'Niečo na citlivú pleť', 'Chcem jednoduchú rutinu'];
 
   const ownerFigures = `
@@ -121,6 +132,10 @@
             <button type="button" data-open="advisor">Vyskúšať výber ${icons.arrow}</button>
             <button type="button" data-open="chat" class="is-secondary">Skúsiť chat ${icons.chat}</button>
           </div>
+          <ul class="cx-keeps">
+            ${KEEPS.map(([title, note]) => `
+              <li>${icons.dot}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
+          </ul>
         </div>
         <div class="cx-owner-frame">
           ${ownerFigures}

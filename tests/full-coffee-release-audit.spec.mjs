@@ -77,6 +77,21 @@ async function expectOwnerOffer(page) {
   await expect(ownerPage.locator('.mcb-copy h1')).toHaveText('Poradí zákazníkovi kávu a odpovie mu na otázky.');
   await expect(ownerPage.locator('.mcb-lead')).toContainText('Predáte aj vtedy, keď pri tom nie ste.');
 
+  // What the owner keeps is on the page, not only behind the header button.
+  const keeps = ownerPage.locator('.mcb-keeps li');
+  await expect(keeps).toHaveCount(4);
+  await expect(ownerPage.locator('.mcb-keeps')).toContainText('História konverzácií');
+
+  // The invitation is fixed to the bottom-right corner; the picture stops above it.
+  const picture = await ownerPage.locator('.mcb-visual').boundingBox();
+  const teaser = await page.locator('.launcher__teaser, .pz13-preview, [data-mcb-teaser]').first()
+    .boundingBox().catch(() => null);
+  if (picture && teaser) {
+    const overlaps = picture.x < teaser.x + teaser.width && picture.x + picture.width > teaser.x &&
+      picture.y < teaser.y + teaser.height && picture.y + picture.height > teaser.y;
+    expect(overlaps).toBe(false);
+  }
+
   // Both sums, each with the sentence that says what it buys, then the terms.
   const price = ownerPage.locator('.mcb-price');
   await expect(price).toBeVisible();

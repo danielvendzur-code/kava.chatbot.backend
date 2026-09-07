@@ -24,6 +24,7 @@
 
   const icons = {
     arrow: icon('M5 12h13m-5-6 6 6-6 6'),
+    dot: '<svg viewBox="0 0 8 8" aria-hidden="true"><circle cx="4" cy="4" r="3" fill="currentColor"/></svg>',
     chat: icon('M5 5h14v10H9l-4 4V5Z'),
     check: icon('m5 12 4 4L19 6'),
     mail: icon('M3 7h18v10H3V7Zm0 0 9 6 9-6')
@@ -34,6 +35,19 @@
   /* One offer, written the way it is quoted on the phone: each sum says what
      it buys. The feature list it replaced said things like "Váš katalóg
      pripravený pri spustení", which is a sentence nobody would say out loud. */
+  /* The offer sheet behind "Mám záujem" listed what the owner gets, but the page
+     itself said none of it, so the history and the deployment never reached
+     anyone who did not click. Four of them sit under the buttons instead. */
+  /* Approved on Pražiarnička's own page, then switched on for the rest. */
+  const V2 = { has: () => true };
+
+  const KEEPS = [
+    ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
+    ['História konverzácií', 'vidíte, na čo sa zákazníci pýtajú'],
+    ['Preklik rovno na produkt', 'odporúčanie končí vo vašom e-shope'],
+    ['Nasadenie za vás', 'na web vložíte jeden riadok kódu']
+  ];
+
   const PRICING = {
     sums: [
       ['247', 'jednorazovo', 'nastavenie a naplnenie vašimi kávami'],
@@ -342,7 +356,7 @@
         <h2>Kávový chatbot pre ${esc(brand.name)}</h2>
         <ul>
           ${PRICING.included.map(([title, note]) => `
-            <li>${icons.check}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
+            <li>${icons.dot}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
         </ul>
         <div class="mcb-offer-price">
           <b>${esc(PRICING.trial)}</b>
@@ -367,6 +381,10 @@
           <button class="mcb-btn mcb-btn--ghost" type="button" data-release-open="chat">Skúsiť chat ${icons.chat}</button>
         </div>
 
+        <ul class="mcb-keeps">
+          ${KEEPS.map(([title, note]) => `
+            <li>${icons.dot}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
+        </ul>
       </section>
 
       <div class="mcb-frame">
@@ -461,7 +479,7 @@
 
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '/coffee-owner-brand.css?v=8cb2599b';
+    link.href = '/coffee-owner-brand.css?v=78eccfea';
     link.dataset.mcbStyle = 'true';
     link.dataset.mcOrder = '30';
     document.body.appendChild(link);
@@ -522,6 +540,9 @@
     attachStyle();
     root.dataset.mcbPage = 'true';
     root.className = 'mcb-page';
+    /* The reworked hero is switched on one demo at a time: the roastery sees it
+       on its own page first, and the rest follow once it is approved. */
+    if (V2.has(slug)) root.dataset.mcbV2 = 'true';
     root.removeAttribute('style');
     applyTheme(root);
     root.innerHTML = markup();

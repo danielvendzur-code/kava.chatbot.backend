@@ -261,6 +261,7 @@ write(`${slug}.html`, `<!doctype html>
   <meta name="description" content="Ukážka kávového poradcu pripravená pre ${name}.">
   <link rel="icon" href="${logoPath}">
   <link rel="preload" as="font" type="font/woff2" href="/assets/jolka/fonts/inter-latin-ext.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/jolka/fonts/playfair-latin.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/dmsans-002a94d0.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/dmsans-850928f5.woff2" crossorigin>
   <!-- The owner page is set in DM Sans; jolka.css only carries Inter and Playfair. -->
