@@ -97,7 +97,8 @@
     busy: false,
     history: [],
     lastFocus: null,
-    teaserDismissed: false
+    teaserDismissed: false,
+    chatStarted: false
   };
 
   const heroProduct = byId[demo.heroProductId] || products[0];
@@ -221,8 +222,31 @@
   const advisor = $('#advisor');
   const advisorFoot = $('#advisorFoot');
   const chatLog = $('#chat');
+  const entryCard = $('#entry');
+  const chips = $('#chips');
+  const composer = $('#composer');
   const input = $('#input');
   const FOCUSABLE = 'button:not([disabled]), a[href], input, [tabindex]:not([tabindex="-1"])';
+
+  function syncChatStarted() {
+    const started = state.chatStarted === true;
+    chatScreen.classList.toggle('is-chat-started', started);
+    entryCard.hidden = started;
+    entryCard.setAttribute('aria-hidden', String(started));
+    chips.hidden = started;
+    chips.setAttribute('aria-hidden', String(started));
+  }
+
+  function startChat() {
+    if (state.chatStarted) return;
+    state.chatStarted = true;
+    syncChatStarted();
+  }
+
+  function resetChat() {
+    state.chatStarted = false;
+    syncChatStarted();
+  }
 
   function openWidget() {
     if (widget.classList.contains('is-open')) return;
@@ -517,6 +541,7 @@
   async function send(text) {
     const value = String(text ?? '').trim();
     if (!value || state.busy) return;
+    startChat();
     state.busy = true;
     addMessage(esc(value), true);
     input.value = '';
@@ -566,7 +591,7 @@
   $('#teaserClose').addEventListener('click', () => { teaser.hidden = true; teaser.classList.remove('is-visible'); state.teaserDismissed = true; });
   $('#close').addEventListener('click', closeWidget);
   $('#entry').addEventListener('click', () => setMode('advisor'));
-  $('#reset').addEventListener('click', () => { resetAdvisor(); seedChat(); setMode('advisor'); });
+  $('#reset').addEventListener('click', () => { resetAdvisor(); resetChat(); seedChat(); setMode('advisor'); });
   $('#back').addEventListener('click', () => {
     if (state.stage !== 'questions') { state.stage = 'questions'; state.step = steps.length - 1; state.chosen = null; }
     else if (state.step > 0) state.step -= 1;
@@ -574,9 +599,10 @@
     renderAdvisor();
   });
   $$('.mode__button').forEach((button) => button.addEventListener('click', () => setMode(button.dataset.mode)));
-  $('#composer').addEventListener('submit', (event) => { event.preventDefault(); send(input.value); });
+  composer.addEventListener('submit', (event) => { event.preventDefault(); send(input.value); });
 
   renderChips();
+  resetChat();
   seedChat();
   renderAdvisor();
   document.documentElement.dataset.coffeeReleaseReady = 'true';
