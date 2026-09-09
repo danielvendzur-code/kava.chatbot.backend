@@ -170,6 +170,7 @@ async function auditSkincareDesktop(page, slug) {
   record(`skin/${slug}/no install claim`, !/Nasadenie za vás/i.test(ownerText));
   record(`skin/${slug}/no included product-link claim`, !/Preklik rovno na produkt/i.test(ownerText));
   record(`skin/${slug}/old metric strip removed`, await owner.locator('.cx-owner-figures').count() === 0);
+  record(`skin/${slug}/online hidden while closed`, !(await page.locator('.cx-status').isVisible()));
 }
 
 async function auditMobile(page, kind, slug) {
