@@ -956,3 +956,54 @@ body[data-cosmetics-demo] .cx-widget-brand > span.cx-status i::after {
     padding-bottom: 0 !important;
   }
 }
+
+
+/* ==========================================================================
+   25. Price density and owner-page text contrast
+   ========================================================================== */
+
+/* Owner presentation only; widget/chat typography is intentionally unchanged. */
+body[data-cosmetics-demo] .cx-owner-offer {
+  width: min(820px, 100%) !important;
+  max-width: min(820px, calc(100% - 300px)) !important;
+}
+body[data-cosmetics-demo] .cx-price {
+  width: 100%;
+  min-height: 102px;
+  gap: clamp(13px, 1.45vw, 21px) !important;
+  padding: clamp(19px, 2.5vh, 25px) clamp(20px, 1.7vw, 25px) !important;
+  border-radius: 19px;
+}
+body[data-cosmetics-demo] .cx-price-sum span {
+  color: color-mix(in srgb, var(--cx-ink) 70%, var(--cx-soft)) !important;
+  font-weight: 650;
+}
+body[data-cosmetics-demo] .cx-price-sum small,
+body[data-cosmetics-demo] .cx-price-terms p,
+body[data-cosmetics-demo] .cx-keeps--side small {
+  color: color-mix(in srgb, var(--cx-ink) 72%, var(--cx-paper)) !important;
+}
+body[data-cosmetics-demo] .cx-price-terms {
+  padding-left: clamp(14px, 1.6vw, 24px) !important;
+  border-left-color: color-mix(in srgb, var(--cx-ink) 18%, transparent) !important;
+}
+body[data-cosmetics-demo] .cx-owner-foot {
+  color: color-mix(in srgb, var(--cx-ink) 66%, var(--cx-paper)) !important;
+}
+
+@media (max-width: 1180px) {
+  body[data-cosmetics-demo] .cx-owner-offer {
+    width: min(760px, 100%) !important;
+    max-width: calc(100% - 280px) !important;
+  }
+}
+@media (max-width: 760px) {
+  body[data-cosmetics-demo] .cx-owner-offer {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  body[data-cosmetics-demo] .cx-price {
+    min-height: 0;
+    padding: 15px 14px !important;
+  }
+}
