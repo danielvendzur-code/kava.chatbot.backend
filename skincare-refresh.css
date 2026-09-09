@@ -1963,3 +1963,65 @@ body[data-cosmetics-demo="barboralori"] .cx-advisor-entry .cx-advisor-entry-phot
 .cx-widget[aria-hidden="false"] .cx-status i {
   animation-play-state: running !important;
 }
+
+
+/* ==========================================================================
+   34. Barbora Lori exact B/L from official wordmark
+   ========================================================================== */
+
+/* The official 700×127 wordmark is reused directly. The B occupies the first
+   ~20/188 of the rendered wordmark and the L starts at ~130/188; these crops
+   were measured from the actual rendered asset, not substituted typography. */
+body[data-cosmetics-demo="barboralori"] .cx-barbora-monogram {
+  width: 43px !important;
+  height: 34px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  overflow: hidden !important;
+  transform: none !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-barbora-letter {
+  display: block !important;
+  height: 34px !important;
+  flex: 0 0 auto !important;
+  background-image: url("/assets/cosmetics/barboralori-logo.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: 188px 34px !important;
+  background-position-y: 50% !important;
+  filter: brightness(0) invert(1) !important;
+  transform: none !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-barbora-letter--b {
+  width: 20px !important;
+  background-position-x: 0 !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-barbora-letter--l {
+  width: 15px !important;
+  background-position-x: -130px !important;
+}
+
+body[data-cosmetics-demo="barboralori"] .cx-barbora-monogram--avatar {
+  width: 23px !important;
+  height: 18px !important;
+  gap: 3px !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-barbora-monogram--avatar .cx-barbora-letter {
+  height: 18px !important;
+  background-size: 100px 18px !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-barbora-monogram--avatar .cx-barbora-letter--b {
+  width: 11px !important;
+  background-position-x: 0 !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-barbora-monogram--avatar .cx-barbora-letter--l {
+  width: 8px !important;
+  background-position-x: -69px !important;
+}
+
+/* Disable the temporary text initials if stale markup ever survives a cache
+   boundary; only the exact cropped official letters are production styling. */
+body[data-cosmetics-demo="barboralori"] .cx-barbora-initials {
+  display: none !important;
+}
