@@ -43,9 +43,9 @@
 
   const KEEPS = [
     ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
-    ['História konverzácií', 'vidíte, na čo sa zákazníci pýtajú'],
-
-    ['Nasadenie za vás', 'na web vložíte jeden riadok kódu']
+    ['Pozná vašu ponuku', 'pracuje s vašimi kávami a cenami'],
+    ['Výber cez štyri otázky', 'na konci jedna konkrétna káva'],
+    ['História konverzácií', 'vidíte, na čo sa zákazníci pýtajú']
   ];
 
   const PRICING = {
@@ -56,15 +56,14 @@
     trial: 'Prvý mesiac zdarma',
     note: 'Bez viazanosti, vypnete kedykoľvek.',
     // Only in the sheet: the strip stays short enough to read at a glance.
-    addon: 'Napojenie na košík za príplatok.',
+    addon: 'Preklik na produkt alebo napojenie na košík za príplatok.',
     // The sheet behind "Mám záujem" is the long version of the same offer.
     included: [
-      ['Chatbot s vašimi kávami', 'Vaše kávy, ceny a odkazy do e-shopu, nie všeobecné odpovede.'],
+      ['Chatbot s vašimi kávami', 'Vaše kávy a ceny, nie všeobecné odpovede.'],
       ['Odpovedá aj o polnoci', 'Pôvod, praženie, príprava aj porovnanie dvoch káv.'],
       ['Výber cez štyri otázky', 'Chuť, príprava, nápoj a kofeín — na konci jedna konkrétna káva.'],
 
-      ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.'],
-      ['Nasadenie za vás', 'Vložíte na web jeden riadok kódu, o zvyšok sa postaráme.']
+      ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.']
     ]
   };
 
@@ -290,7 +289,7 @@
      the visitor cannot tell apart and never got round to the chatbot. */
   const HEADING = 'Poradí zákazníkovi kávu a odpovie mu na otázky.';
   const LEAD = 'Chatbot odpovie zákazníkovi na otázky o vašich kávach. Cez štyri otázky ' +
-    'mu vyberie tú, ktorá mu sadne, a pošle ho rovno na ňu. Predáte aj vtedy, keď pri tom nie ste.';
+    'mu vyberie tú, ktorá mu sadne. Predáte aj vtedy, keď pri tom nie ste.';
 
   /* The brand table is the only list of roasteries this file keeps. A slug it
      does not know belongs to some other page, and the claim below must not be
