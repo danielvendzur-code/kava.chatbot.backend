@@ -1182,3 +1182,45 @@ body[data-benefit-style="panel"] .cx-keeps--side small {
     grid-template-columns: minmax(250px, 1.15fr) minmax(180px, .85fr) !important;
   }
 }
+
+
+/* ==========================================================================
+   27. Final launcher logo containment
+   ========================================================================== */
+
+.cx-launcher-button {
+  overflow: hidden !important;
+  position: relative;
+  place-items: center !important;
+}
+.cx-launcher-button .cx-logo {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 54px !important;
+  max-height: 28px !important;
+  margin: 0 auto !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  transform: none !important;
+}
+
+/* Barbora Lori is a wide horizontal mark. Keep it optically larger than the
+   generic rule, but still fully inside the 72 px launcher. */
+body[data-cosmetics-demo="barboralori"] .cx-launcher-button .cx-logo {
+  max-width: 57px !important;
+  max-height: 25px !important;
+  transform: none !important;
+}
+
+/* Keep the same source visually centred in the other brand-logo surfaces. */
+body[data-cosmetics-demo="barboralori"] .cx-owner-brand .cx-logo,
+body[data-cosmetics-demo="barboralori"] .cx-widget-brand .cx-logo,
+body[data-cosmetics-demo="barboralori"] .cx-message-avatar .cx-logo {
+  object-position: center center !important;
+}
+
+/* Variant A is now the production treatment. */
+body[data-benefit-style="lines"] .cx-keeps--side li:last-child {
+  border-bottom: 0 !important;
+}
