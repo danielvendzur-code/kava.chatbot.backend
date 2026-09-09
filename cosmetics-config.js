@@ -182,6 +182,8 @@
       name:"Barbora Lori", domain:"barboralori.sk", website:"https://www.barboralori.sk/",
       theme:{brand:'#2b2b2b',accent:'#117e6f',soft:'#e9f2f0',paper:'#fdfdfc',ink:'#232323',line:'#dbe7e3'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/barboralori-logo.png\" alt=\"Barbora Lori\">",
+      launcherMark:"<img class=\"cx-bubble-logo\" src=\"/assets/cosmetics/barboralori-launcher.svg\" alt=\"Barbora Lori\">",
+      avatarMark:"<img class=\"cx-bubble-logo cx-bubble-logo--avatar\" src=\"/assets/cosmetics/barboralori-avatar.svg\" alt=\"Barbora Lori\">",
       hero:'/assets/cosmetics/barboralori.jpg',
       benefit:["Rovnaké fľaštičky prestanú miasť","Menej otázok pred nákupom","Odpovie aj mimo otváracích hodín"],
       products:[

@@ -13,6 +13,10 @@
   const brand = data.brands[slug] || data.brands.mylo;
   const isMylo = slug === 'mylo';
   const hasImageLogo = /class=["'][^"']*cx-logo/.test(brand.wordmark);
+  const launcherMarkup = brand.launcherMark || brand.wordmark;
+  const avatarMarkup = brand.avatarMark || brand.launcherMark || brand.wordmark;
+  const launcherUsesRawImageLogo = hasImageLogo && !brand.launcherMark;
+  const avatarUsesRawImageLogo = hasImageLogo && !brand.avatarMark && !brand.launcherMark;
   const questions = data.questions;
 
   document.body.dataset.cosmeticsDemo = slug;
@@ -158,7 +162,7 @@
 
     <div class="cx-launcher" id="cx-launcher">
       <button class="cx-teaser" id="cx-teaser" type="button"><b>Pomôcť s výberom?</b><span>4 otázky · konkrétny produkt</span></button>
-      <button class="cx-launcher-button${hasImageLogo ? ' is-image-logo' : ''}" id="cx-open" type="button" aria-label="Otvoriť poradcu" aria-expanded="false">${brand.wordmark}</button>
+      <button class="cx-launcher-button${launcherUsesRawImageLogo ? ' is-image-logo' : ''}" id="cx-open" type="button" aria-label="Otvoriť poradcu" aria-expanded="false">${launcherMarkup}</button>
     </div>
     <div class="cx-backdrop" id="cx-backdrop" hidden></div>
     <section class="cx-widget" id="cx-widget" role="dialog" aria-modal="true" aria-label="Poradca starostlivosti ${esc(brand.name)}" aria-hidden="true">
@@ -216,7 +220,7 @@
   }
 
   function messageMarkup(message) {
-    const avatar = message.role === 'assistant' ? `<span class="cx-message-avatar${hasImageLogo ? ' is-image-logo' : ''}">${brand.wordmark}</span>` : '';
+    const avatar = message.role === 'assistant' ? `<span class="cx-message-avatar${avatarUsesRawImageLogo ? ' is-image-logo' : ''}">${avatarMarkup}</span>` : '';
     return `<div class="cx-message cx-message--${message.role}">${avatar}<div class="cx-bubble">${esc(message.text)}</div></div>`;
   }
 

@@ -1338,3 +1338,141 @@ body[data-benefit-style="lines"] .cx-keeps--side small {
     width: 118px !important;
   }
 }
+
+
+/* ==========================================================================
+   29. Barbora Lori circular mark and true image centring
+   ========================================================================== */
+
+/* The launcher remains a real circular chatbot bubble. A dedicated square
+   vector mark avoids shrinking the original 5.5:1 horizontal wordmark until
+   it becomes unreadable. */
+body[data-cosmetics-demo="barboralori"] .cx-launcher-button {
+  width: 72px !important;
+  height: 72px !important;
+  min-width: 72px !important;
+  min-height: 72px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  background: var(--cx-brand) !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-launcher-button .cx-bubble-logo {
+  display: block !important;
+  width: 62px !important;
+  height: 62px !important;
+  max-width: 62px !important;
+  max-height: 62px !important;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  margin: 0 !important;
+  filter: none !important;
+  transform: none !important;
+}
+
+/* Crisp dedicated monogram in assistant-message bubbles. */
+body[data-cosmetics-demo="barboralori"] .cx-message-avatar {
+  width: 34px !important;
+  min-width: 34px !important;
+  height: 34px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  background: var(--cx-brand) !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-message-avatar .cx-bubble-logo--avatar {
+  display: block !important;
+  width: 28px !important;
+  height: 28px !important;
+  max-width: 28px !important;
+  max-height: 28px !important;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  filter: none !important;
+  transform: none !important;
+}
+
+/* The full horizontal logo still has enough room in the owner and widget
+   headers, where it can remain the actual brand wordmark. */
+body[data-cosmetics-demo="barboralori"] .cx-owner-brand .cx-logo {
+  width: min(210px, 19vw) !important;
+  max-width: 210px !important;
+  max-height: 46px !important;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  transform: none !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-widget-brand .cx-logo {
+  width: 132px !important;
+  max-width: 132px !important;
+  max-height: 28px !important;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  transform: none !important;
+}
+
+/* True centring: do not stretch the photograph to the box and then merely
+   move the crop. Centre the image element itself and show the whole source. */
+body[data-cosmetics-demo="barboralori"] .cx-owner-visual {
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  background: color-mix(in srgb, var(--cx-soft) 72%, #fff) !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-owner-visual > img {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  justify-self: center !important;
+  align-self: center !important;
+  margin: auto !important;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  transform: none !important;
+}
+
+/* Same centring rule in the chat's product-selection entry. */
+body[data-cosmetics-demo="barboralori"] .cx-advisor-entry .cx-advisor-entry-photo {
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  background: color-mix(in srgb, var(--cx-soft) 72%, #fff) !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-advisor-entry .cx-advisor-entry-photo img {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  justify-self: center !important;
+  align-self: center !important;
+  margin: auto !important;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  transform: none !important;
+}
+
+@media (max-width: 760px) {
+  body[data-cosmetics-demo="barboralori"] .cx-launcher-button {
+    width: 68px !important;
+    height: 68px !important;
+    min-width: 68px !important;
+    min-height: 68px !important;
+  }
+  body[data-cosmetics-demo="barboralori"] .cx-launcher-button .cx-bubble-logo {
+    width: 58px !important;
+    height: 58px !important;
+    max-width: 58px !important;
+    max-height: 58px !important;
+  }
+  body[data-cosmetics-demo="barboralori"] .cx-owner-brand .cx-logo {
+    width: 160px !important;
+    max-width: 160px !important;
+  }
+}
