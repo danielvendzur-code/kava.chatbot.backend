@@ -12,6 +12,7 @@
   const slug = String(requested).toLowerCase();
   const brand = data.brands[slug] || data.brands.mylo;
   const isMylo = slug === 'mylo';
+  const hasImageLogo = /class=["'][^"']*cx-logo/.test(brand.wordmark);
   const questions = data.questions;
 
   document.body.dataset.cosmeticsDemo = slug;
@@ -63,34 +64,32 @@
     ],
     trial: 'Prvý mesiac zdarma',
     note: 'Bez viazanosti, vypnete kedykoľvek.',
-    addon: 'Napojenie na košík za príplatok.'
+    addon: 'Preklik na produkt alebo napojenie na košík za príplatok.'
   };
 
   /* "Chcem to na svoj web" used to jump straight to a contact form, which asked
      for a decision before saying what the decision was about. */
   const INCLUDED = [
-    ['Chatbot s vaším katalógom', 'Vaše produkty, ceny a odkazy do e-shopu, nie všeobecné odpovede.'],
+    ['Chatbot s vaším katalógom', 'Vaše produkty a ceny, nie všeobecné odpovede.'],
     ['Odpovedá aj o polnoci', 'Zloženie, typ pleti, rutina aj porovnanie dvoch produktov.'],
     ['Výber cez štyri otázky', 'Pleť, priorita, rutina a textúra — na konci jeden konkrétny produkt.'],
-
-    ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.'],
-    ['Nasadenie za vás', 'Vložíte na web jeden riadok kódu, o zvyšok sa postaráme.']
+    ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.']
   ];
 
   /* Headline and lead are the same on every page; the coffee pages read the
      same words. */
   const HEADING = 'Poradí zákazníkovi starostlivosť a odpovie mu na otázky.';
   const LEAD = 'Chatbot odpovie zákazníkovi na otázky o vašich produktoch. Cez štyri otázky ' +
-    'mu vyberie ten, ktorý sadne jeho pleti, a pošle ho rovno naň. Predáte aj vtedy, keď pri tom nie ste.';
+    'mu vyberie ten, ktorý sadne jeho pleti. Predáte aj vtedy, keď pri tom nie ste.';
 
   /* The sheet behind "Chcem to na svoj web" listed what the owner gets, but the
      page itself said none of it — the conversation history among it. Four of
      them sit under the buttons instead. The coffee pages carry the same four. */
   const KEEPS = [
     ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
-    ['História konverzácií', 'vidíte, na čo sa zákazníci pýtajú'],
-
-    ['Nasadenie za vás', 'na web vložíte jeden riadok kódu']
+    ['Pozná váš katalóg', 'pracuje s vašimi produktmi a cenami'],
+    ['Výber cez štyri otázky', 'na konci jeden konkrétny produkt'],
+    ['História konverzácií', 'vidíte, na čo sa zákazníci pýtajú']
   ];
 
   const CHIPS = ['Mám suchú pleť', 'Pleť sa mi mastí', 'Niečo na citlivú pleť', 'Chcem jednoduchú rutinu'];
@@ -159,7 +158,7 @@
 
     <div class="cx-launcher" id="cx-launcher">
       <button class="cx-teaser" id="cx-teaser" type="button"><b>Pomôcť s výberom?</b><span>4 otázky · konkrétny produkt</span></button>
-      <button class="cx-launcher-button" id="cx-open" type="button" aria-label="Otvoriť poradcu" aria-expanded="false">${brand.wordmark}</button>
+      <button class="cx-launcher-button${hasImageLogo ? ' is-image-logo' : ''}" id="cx-open" type="button" aria-label="Otvoriť poradcu" aria-expanded="false">${brand.wordmark}</button>
     </div>
     <div class="cx-backdrop" id="cx-backdrop" hidden></div>
     <section class="cx-widget" id="cx-widget" role="dialog" aria-modal="true" aria-label="Poradca starostlivosti ${esc(brand.name)}" aria-hidden="true">
@@ -217,7 +216,7 @@
   }
 
   function messageMarkup(message) {
-    const avatar = message.role === 'assistant' ? `<span class="cx-message-avatar">${brand.wordmark}</span>` : '';
+    const avatar = message.role === 'assistant' ? `<span class="cx-message-avatar${hasImageLogo ? ' is-image-logo' : ''}">${brand.wordmark}</span>` : '';
     return `<div class="cx-message cx-message--${message.role}">${avatar}<div class="cx-bubble">${esc(message.text)}</div></div>`;
   }
 
