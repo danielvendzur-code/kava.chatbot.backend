@@ -44,7 +44,7 @@
   const KEEPS = [
     ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
     ['História konverzácií', 'vidíte, na čo sa zákazníci pýtajú'],
-    ['Preklik rovno na produkt', 'odporúčanie končí vo vašom e-shope'],
+
     ['Nasadenie za vás', 'na web vložíte jeden riadok kódu']
   ];
 
@@ -62,7 +62,7 @@
       ['Chatbot s vašimi kávami', 'Vaše kávy, ceny a odkazy do e-shopu, nie všeobecné odpovede.'],
       ['Odpovedá aj o polnoci', 'Pôvod, praženie, príprava aj porovnanie dvoch káv.'],
       ['Výber cez štyri otázky', 'Chuť, príprava, nápoj a kofeín — na konci jedna konkrétna káva.'],
-      ['Preklik rovno na produkt', 'Odporúčanie končí odkazom do vášho e-shopu.'],
+
       ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.'],
       ['Nasadenie za vás', 'Vložíte na web jeden riadok kódu, o zvyšok sa postaráme.']
     ]
