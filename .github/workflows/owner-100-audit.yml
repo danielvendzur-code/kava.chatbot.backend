@@ -1,6 +1,8 @@
 name: Owner 100+ visual audit
 
 on:
+  pull_request:
+    branches: [main]
   push:
     branches: [main]
     paths:
