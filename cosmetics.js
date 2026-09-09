@@ -15,8 +15,7 @@
   const questions = data.questions;
 
   document.body.dataset.cosmeticsDemo = slug;
-  const benefitStyle = new URLSearchParams(location.search).get('benefits');
-  document.body.dataset.benefitStyle = ['lines', 'cards', 'panel'].includes(benefitStyle) ? benefitStyle : 'lines';
+  document.body.dataset.benefitStyle = 'lines';
   document.title = `${brand.name} – výber starostlivosti`;
   for (const [key,value] of Object.entries(brand.theme)) document.documentElement.style.setProperty(`--cx-${key}`, value);
 
@@ -73,7 +72,7 @@
     ['Chatbot s vaším katalógom', 'Vaše produkty, ceny a odkazy do e-shopu, nie všeobecné odpovede.'],
     ['Odpovedá aj o polnoci', 'Zloženie, typ pleti, rutina aj porovnanie dvoch produktov.'],
     ['Výber cez štyri otázky', 'Pleť, priorita, rutina a textúra — na konci jeden konkrétny produkt.'],
-    ['Preklik rovno na produkt', 'Odporúčanie končí odkazom do vášho e-shopu.'],
+
     ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.'],
     ['Nasadenie za vás', 'Vložíte na web jeden riadok kódu, o zvyšok sa postaráme.']
   ];
@@ -90,7 +89,7 @@
   const KEEPS = [
     ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
     ['História konverzácií', 'vidíte, na čo sa zákazníci pýtajú'],
-    ['Preklik rovno na produkt', 'odporúčanie končí vo vašom e-shope'],
+
     ['Nasadenie za vás', 'na web vložíte jeden riadok kódu']
   ];
 
