@@ -15,6 +15,8 @@
   const questions = data.questions;
 
   document.body.dataset.cosmeticsDemo = slug;
+  const benefitStyle = new URLSearchParams(location.search).get('benefits');
+  document.body.dataset.benefitStyle = ['lines', 'cards', 'panel'].includes(benefitStyle) ? benefitStyle : 'lines';
   document.title = `${brand.name} – výber starostlivosti`;
   for (const [key,value] of Object.entries(brand.theme)) document.documentElement.style.setProperty(`--cx-${key}`, value);
 
