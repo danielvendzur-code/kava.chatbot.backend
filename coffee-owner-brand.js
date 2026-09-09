@@ -374,33 +374,22 @@
       <section class="mcb-copy">
         <span class="mcb-eyebrow">Chatbot pre váš e-shop</span>
         <h1>${esc(HEADING)}</h1>
-        <p class="mcb-lead">${esc(LEAD)}</p>
 
         <div class="mcb-actions">
           <button class="mcb-btn" type="button" data-release-open="advisor">Otvoriť poradcu ${icons.arrow}</button>
           <button class="mcb-btn mcb-btn--ghost" type="button" data-release-open="chat">Skúsiť chat ${icons.chat}</button>
         </div>
-
-        <ul class="mcb-keeps">
-          ${KEEPS.map(([title, note]) => `
-            <li>${icons.dot}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
-        </ul>
       </section>
 
       <div class="mcb-frame">
-        <section class="mcb-figures" aria-label="Čo poradca robí">
-          <ul>
-            ${brand.figures.map(([value, name], i) => `
-              <li style="--i:${i}">
-                <strong>${esc(value)}</strong>
-                <b>${esc(name)}</b>
-              </li>`).join('')}
-          </ul>
-        </section>
         <div class="mcb-visual">
           <img src="${esc(brand.hero)}" alt="${esc(brand.name)} – produktová prezentácia" referrerpolicy="no-referrer"
                onerror="this.closest('.mcb-visual')?.setAttribute('data-image-failed','true')">
         </div>
+        <ul class="mcb-keeps mcb-keeps--side">
+          ${KEEPS.map(([title, note]) => `
+            <li><span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
+        </ul>
       </div>
 
     </main>
