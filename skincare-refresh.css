@@ -1937,3 +1937,29 @@ body[data-cosmetics-demo="barboralori"] .cx-advisor-entry .cx-advisor-entry-phot
   body[data-cosmetics-demo] .cx-owner-offer { width: 100% !important; max-width: 100% !important; }
   body[data-cosmetics-demo] .cx-price { grid-template-columns: 1fr 1fr !important; padding: 16px !important; }
 }
+
+
+/* ==========================================================================
+   33. Online status lifecycle
+   ========================================================================== */
+
+/* The live-status label belongs to the open widget only. Off-canvas/closed
+   widgets must not expose it visually or to pointer interaction. */
+.cx-widget[aria-hidden="true"] .cx-status {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+.cx-widget[aria-hidden="true"] .cx-status i {
+  animation-play-state: paused !important;
+}
+.cx-widget.is-open .cx-status,
+.cx-widget[aria-hidden="false"] .cx-status {
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+.cx-widget.is-open .cx-status i,
+.cx-widget[aria-hidden="false"] .cx-status i {
+  animation-play-state: running !important;
+}
