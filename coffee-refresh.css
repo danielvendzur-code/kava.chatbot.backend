@@ -607,3 +607,164 @@ body.mcb-offer-open { overflow: hidden; }
   .mcb-page .mcb-pricing { width: 100% !important; max-width: 100% !important; }
   .mcb-page .mcb-price { min-height: 0 !important; padding: 18px 16px !important; gap: 14px !important; }
 }
+
+
+/* ==========================================================================
+   18. Collision-proof owner layout
+   ========================================================================== */
+
+/* Keep the main row short enough to fit inside the fixed 100dvh owner shell.
+   The image and benefits share one row instead of stacking vertically. */
+.mcb-page .mcb-frame {
+  width: 100% !important;
+  max-width: 620px !important;
+  margin-left: auto !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.28fr) minmax(220px, .72fr) !important;
+  grid-template-rows: minmax(0, auto) !important;
+  gap: 14px !important;
+  align-items: stretch !important;
+  align-self: start !important;
+  padding-bottom: 0 !important;
+  min-height: 0 !important;
+}
+.mcb-page .mcb-visual {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 286px !important;
+  max-height: 306px !important;
+  align-self: stretch !important;
+}
+.mcb-page .mcb-keeps--side {
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  align-self: stretch !important;
+}
+.mcb-page .mcb-keeps--side li,
+.mcb-page .mcb-keeps--side li:first-child,
+.mcb-page .mcb-keeps--side li:last-child {
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 11px 11px 11px 44px !important;
+  overflow: hidden !important;
+}
+.mcb-page .mcb-keeps--side li::before {
+  left: 11px !important;
+  top: 11px !important;
+  width: 23px !important;
+  height: 23px !important;
+}
+.mcb-page .mcb-keeps--side li::after {
+  top: 10px !important;
+  bottom: 10px !important;
+}
+.mcb-page .mcb-keeps--side b {
+  font-size: 12.9px !important;
+  line-height: 1.2 !important;
+}
+.mcb-page .mcb-keeps--side small {
+  margin-top: 3px !important;
+  font-size: 10.9px !important;
+  line-height: 1.32 !important;
+  overflow-wrap: anywhere;
+}
+
+/* Price: two sums on the first row, terms + CTA on a dedicated full-width row.
+   No intrinsic-width three-column layout remains, so the button cannot overlap
+   either the terms or the hero content above it. */
+.mcb-page .mcb-pricing {
+  width: min(680px, 100%) !important;
+  max-width: 680px !important;
+  min-width: 0 !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+.mcb-page .mcb-price {
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px 22px !important;
+  padding: 20px 22px !important;
+  align-items: start !important;
+}
+.mcb-page .mcb-price-sum {
+  min-width: 0 !important;
+}
+.mcb-page .mcb-price-sum small {
+  display: block !important;
+  max-width: 25ch !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+.mcb-page .mcb-price-terms {
+  grid-column: 1 / -1 !important;
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  grid-template-rows: auto auto !important;
+  column-gap: 18px !important;
+  row-gap: 4px !important;
+  align-items: center !important;
+  padding: 14px 0 0 !important;
+  border-left: 0 !important;
+  border-top: 1px solid color-mix(in srgb, var(--mcb-ink) 17%, transparent) !important;
+}
+.mcb-page .mcb-price-terms b {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  min-width: 0 !important;
+}
+.mcb-page .mcb-price-terms p {
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+.mcb-page .mcb-price-terms .mcb-btn {
+  grid-column: 2 !important;
+  grid-row: 1 / 3 !important;
+  align-self: center !important;
+  justify-self: end !important;
+  min-width: max-content !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 1180px) {
+  .mcb-page .mcb-frame {
+    max-width: 560px !important;
+    grid-template-columns: minmax(0, 1.18fr) minmax(205px, .82fr) !important;
+  }
+  .mcb-page .mcb-visual {
+    min-height: 258px !important;
+    max-height: 278px !important;
+  }
+  .mcb-page .mcb-pricing {
+    width: min(640px, 100%) !important;
+    max-width: 640px !important;
+  }
+}
+@media (max-width: 900px) {
+  .mcb-page .mcb-price-terms {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  .mcb-page .mcb-price-terms .mcb-btn {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    justify-self: start !important;
+    margin-top: 8px !important;
+  }
+}
+@media (max-width: 760px) {
+  .mcb-page .mcb-frame { display: none !important; }
+  .mcb-page .mcb-pricing { width: 100% !important; max-width: 100% !important; }
+  .mcb-page .mcb-price { grid-template-columns: 1fr 1fr !important; padding: 16px !important; }
+}
