@@ -94,12 +94,7 @@
 
   const CHIPS = ['Mám suchú pleť', 'Pleť sa mi mastí', 'Niečo na citlivú pleť', 'Chcem jednoduchú rutinu'];
 
-  const ownerFigures = isMylo ? '' : `
-    <div class="cx-owner-figures" aria-label="Čo poradca robí">
-      <div><strong>24/7</strong><b>odpovedá za vás</b></div>
-      <div><strong>4</strong><b>otázky k výberu</b></div>
-      <div><strong>1</strong><b>produkt na konci</b></div>
-    </div>`;
+  const ownerFigures = '';
 
   const keepsMarkup = (side = false) => `
     <ul class="cx-keeps${side ? ' cx-keeps--side' : ''}">
@@ -134,19 +129,17 @@
         <div class="cx-owner-copy">
           <span class="cx-owner-kicker">Chatbot pre váš e-shop</span>
           <h1>${esc(HEADING)}</h1>
-          ${isMylo ? '' : `<p>${esc(LEAD)}</p>`}
           <div class="cx-owner-actions">
             <button type="button" data-open="advisor">Vyskúšať výber ${icons.arrow}</button>
             <button type="button" data-open="chat" class="is-secondary">Skúsiť chat ${icons.chat}</button>
           </div>
-          ${isMylo ? '' : keepsMarkup(false)}
         </div>
         <div class="cx-owner-frame">
           ${ownerFigures}
           <div class="cx-owner-visual">
             <img src="${brand.hero}" alt="${esc(brand.name)} – produktová prezentácia" referrerpolicy="no-referrer" onerror="this.closest('.cx-owner-visual')?.setAttribute('data-image-failed','true')">
           </div>
-          ${isMylo ? keepsMarkup(true) : ''}
+          ${keepsMarkup(true)}
         </div>
       </section>
       <section class="cx-owner-offer" aria-label="Cena">
