@@ -1,0 +1,36 @@
+name: One-time asset stamping
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/stamp-assets-once.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Stamp changed local JS/CSS references
+        run: node scripts/stamp-assets.mjs
+      - name: Commit exact stamps
+        run: |
+          if git diff --quiet; then
+            echo "No stamp changes needed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Stamp owner demo assets"
+          git push origin HEAD:main
