@@ -131,7 +131,7 @@
       theme:{brand:'#1c5850',accent:'#108474',soft:'#e8f1ee',paper:'#fbfdfc',ink:'#1d2b28',line:'#d2e2dd'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/modrapupava-logo.png\" alt=\"Modrá púpava\">",
       hero:'/assets/cosmetics/modrapupava.jpg',
-      benefit:["Menej otázok pred nákupom","Výber podľa pleti, nie podľa kategórie","Preklik rovno na produkt"],
+      benefit:["Menej otázok pred nákupom","Výber podľa pleti, nie podľa kategórie","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'antiage',name:"Inspiral Anti-age – krém na spevnenie pleti",price:"51,35 €",url:"https://www.modrapupava.sk/products/krem-na-spevnenie-pleti-inspiral-anti-age",photo:'/assets/cosmetics/modrapupava-antiage.jpg',tags:['mature','dry','hydrate','cream','full','simple'],reason:"Krém pre zrelú a suchú pleť — spevňuje kontúry, zmierňuje vrásky a zjednocuje tón. Jemný natoľko, že sadne aj citlivejšej pleti."},
         {id:'energy',name:"Inspiral Energy – pleťové sérum",price:"50,65 €",url:"https://www.modrapupava.sk/products/pletove-serum-inspiral-energy",photo:'/assets/cosmetics/modrapupava-energy.jpg',tags:['balanced','dry','hydrate','serum','target','basic'],reason:"Rozjasňujúce sérum s piatimi druhmi kyseliny hyalurónovej a vitamínom C — cielený krok do existujúcej rutiny."},
@@ -144,7 +144,7 @@
       theme:{brand:'#1b1b1b',accent:'#a9736c',soft:'#f3ece5',paper:'#fffefc',ink:'#161312',line:'#e2dace'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/facederma-logo.png\" alt=\"Facederma\">",
       hero:'/assets/cosmetics/facederma.jpg',
-      benefit:["Menej otázok na podporu","Rozdiel medzi produktmi zrozumiteľne","Preklik rovno na produkt"],
+      benefit:["Menej otázok na podporu","Rozdiel medzi produktmi zrozumiteľne","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'akne',name:"ANTI-AKNÉ krém pre problematickú pleť",price:"26,90 €",url:"https://facederma.sk/products/anti-akne-krem-pre-problematicku-plet",photo:'/assets/cosmetics/facederma-akne.jpg',tags:['oily','clarity','cream','simple','basic'],reason:"Krém na akné a vyrážky — zmierňuje zápalové aj nezápalové prejavy a podporuje obnovu rovnováhy mikrobiómu pleti."},
         {id:'hyaluron',name:"Sérum kyseliny hyalurónovej",price:"58,90 €",url:"https://facederma.sk/products/facederma-serum-kyseliny-hyaluronovej",photo:'/assets/cosmetics/facederma-hyaluron.jpg',tags:['balanced','dry','hydrate','serum','target','basic'],reason:"Hĺbková hydratácia, ktorá zjemňuje jemné linky a zároveň vyrovnáva tvorbu kožného mazu — cielený krok do rutiny."},
@@ -157,7 +157,7 @@
       theme:{brand:'#2c3d31',accent:'#4c7c22',soft:'#eef3ea',paper:'#fdfbf6',ink:'#24312a',line:'#dae4d6'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/cyprianus-logo.svg\" alt=\"Cyprianus\">",
       hero:'/assets/cosmetics/cyprianus.jpg',
-      benefit:["Názov vône prestane byť prekážkou","Výber podľa pleti, nie podľa kategórie","Preklik rovno na produkt"],
+      benefit:["Názov vône prestane byť prekážkou","Výber podľa pleti, nie podľa kategórie","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'mandla',name:"Hydratačný pleťový krém Mandľa a Malina 50 ml",price:"14,63 €",url:"https://www.cyprianus.sk/hydratacny-pletovy-krem-mandla-a-malina-50ml/",photo:'/assets/cosmetics/cyprianus-mandla.jpg',tags:['dry','balanced','hydrate','cream','simple','basic'],reason:"Mandľovo-malinový hydratačný krém s niacínamidom a hyalurónom — jemnosť a svieži vzhľad pre bežnú každodennú starostlivosť."},
         {id:'q10',name:"Omladzujúci denný krém proti vráskam Q10 50 ml",price:"14,63 €",url:"https://www.cyprianus.sk/omladzujuci-denny-krem-proti-vraskam-50ml/",photo:'/assets/cosmetics/cyprianus-q10.jpg',tags:['mature','dry','hydrate','cream','full','simple'],reason:"Denný krém s koenzýmom Q10, skvalánom a vitamínom E — hebkosť a žiarivejší vzhľad bez lepivého filmu."},
@@ -170,7 +170,7 @@
       theme:{brand:'#1b6f9c',accent:'#178fcf',soft:'#e7f2f9',paper:'#fbfdfe',ink:'#17303d',line:'#d2e4ef'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/panakeia-logo.png\" alt=\"Panakeia\">",
       hero:'/assets/cosmetics/panakeia.jpg',
-      benefit:["Názov produktu prestane byť hádankou","Menej otázok pred nákupom","Preklik rovno na produkt"],
+      benefit:["Názov produktu prestane byť hádankou","Menej otázok pred nákupom","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'noc',name:"BÁTHORYČKA – nočný krém s dračou krvou 30 ml",price:"15,28 €",url:"https://www.panakeia.sk/bathorycka---nocny-krem-s-dracou-krvou-30ml/",photo:'/assets/cosmetics/panakeia-noc.jpg',tags:['dry','sensitive','hydrate','calm','cream','simple','basic'],reason:"Nočný krém so živicou Sangre de Drago — intenzívne vyživuje, podporuje regeneráciu a obnovuje ochrannú bariéru pleti."},
         {id:'bakuchiol',name:"BOSORKIN LEKTVAR – bakuchiol pleťové sérum 15 ml",price:"15,28 €",url:"https://www.panakeia.sk/bosorkin-lektvar-bakuchiol-pletove-serum-15ml/",photo:'/assets/cosmetics/panakeia-bakuchiol.jpg',tags:['mature','balanced','serum','target','full'],reason:"Bakuchiol 1 % podporuje tvorbu kolagénu a elastínu, zjemňuje vrásky a upokojuje podráždenie. Ručne vyrobené na Slovensku."},
@@ -183,7 +183,7 @@
       theme:{brand:'#2b2b2b',accent:'#117e6f',soft:'#e9f2f0',paper:'#fdfdfc',ink:'#232323',line:'#dbe7e3'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/barboralori-logo.png\" alt=\"Barbora Lori\">",
       hero:'/assets/cosmetics/barboralori.jpg',
-      benefit:["Rovnaké fľaštičky prestanú miasť","Menej otázok pred nákupom","Preklik rovno na produkt"],
+      benefit:["Rovnaké fľaštičky prestanú miasť","Menej otázok pred nákupom","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'sucha',name:"Denný krém pre suchú a zrelšiu pleť s liftingovým účinkom",price:"5,50 – 18,50 €",url:"https://www.barboralori.sk/ochranny-denny-krem-pre-suchu-a-zrelsiu-plet/",photo:'/assets/cosmetics/barboralori-sucha.jpg',tags:['dry','mature','hydrate','cream','simple','basic'],reason:"Denný krém pre suchú a zrelšiu pleť s liftingovým účinkom — probiotická receptúra vhodná aj pre veľmi citlivú pleť."},
         {id:'spf',name:"Opaľovací krém na tvár SPF 50 s nízkym komedogénnym indexom",price:"24,40 €",url:"https://www.barboralori.sk/opalovaci-krem-na-tvar-s-nizkym-komedogennym-indexom-spf-50/",photo:'/assets/cosmetics/barboralori-spf.jpg',tags:['oily','balanced','clarity','cream','target','basic'],reason:"Ochrana SPF 50 s nízkym komedogénnym indexom — pre pleť, ktorá sa maslí a bežné opaľovacie krémy jej upchávajú póry."},
@@ -196,7 +196,7 @@
       theme:{brand:'#2a2622',accent:'#b08200',soft:'#fbf3dd',paper:'#fffef9',ink:'#241f19',line:'#eee2c3'},
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/bellmedi-logo.png\" alt=\"BellMedi\">",
       hero:'/assets/cosmetics/bellmedi.jpg',
-      benefit:["Stovka olejov prestane byť labyrint","Výber podľa pleti, nie podľa názvu rastliny","Preklik rovno na produkt"],
+      benefit:["Stovka olejov prestane byť labyrint","Výber podľa pleti, nie podľa názvu rastliny","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'hyaluron',name:"Kyselina hyalurónová",price:"22,90 €",url:"https://bellmedi.sk/produkt/kyselina-hyaluronova/",photo:'/assets/cosmetics/bellmedi-hyaluron.jpg',tags:['dry','balanced','hydrate','serum','target','basic'],reason:"Udržuje pokožku pevnú a pružnú, redukuje a vypĺňa vrásky — cielený hydratačný krok do existujúcej rutiny."},
         {id:'ibistek',name:"Ibištekový olej",price:"9,90 €",url:"https://bellmedi.sk/produkt/ibistekovy-olej/",photo:'/assets/cosmetics/bellmedi-ibistek.jpg',tags:['mature','dry','oil','target','full'],reason:"Podporuje elasticitu a spevnenie pleti, prispieva k zmierneniu jemných vrások a pomáha pri ochabnutej a unavenej pokožke."},
@@ -210,7 +210,7 @@
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/lavelin-logo.png\" alt=\"Lavelin\">",
       hero:'/assets/cosmetics/lavelin.jpg',
       ownerNote:"Séra a krémy sa líšia účinnou látkou, nie typom pleti — zákazník z názvu nevyčíta, ktorý je preňho.",
-      benefit:["Účinná látka preložená na typ pleti","Výber za štyri otázky","Preklik rovno na produkt"],
+      benefit:["Účinná látka preložená na typ pleti","Výber za štyri otázky","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'sipkovy',name:"Vyživujúci pleťový krém so šípkovým olejom",price:"17,00 €",url:"https://www.lavelin.sk/tovar/vyzivujuci-pletovy-krem-so-sipkovym-olejom/",photo:'/assets/cosmetics/lavelin-sipkovy.jpg',tags:['dry','sensitive','calm','cream','simple','basic'],reason:"Výživná krémová voľba pre suchšiu a citlivejšiu pleť — šípkový olej vracia komfort bez zaťaženia."},
         {id:'bakuchiol',name:"Pleťové sérum s bakuchiolom",price:"25,00 €",url:"https://www.lavelin.sk/tovar/pletove-serum-s-bakuchiolom/",photo:'/assets/cosmetics/lavelin-bakuchiol.jpg',tags:['mature','dry','serum','target','full'],reason:"Rastlinná alternatíva retinolu pre zrelšiu pleť — cielený krok proti vráskam, ktorý pleť nedráždi."},
@@ -224,7 +224,7 @@
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/kvitok-logo.png\" alt=\"Kvitok\">",
       hero:'/assets/cosmetics/kvitok.jpg',
       ownerNote:"Krémy sú delené podľa veku a suroviny — arganový, malinový, slivkový — nie podľa toho, čo pleť rieši.",
-      benefit:["Z desiatok krémov jeden konkrétny","Výber podľa pleti, nie podľa veku na obale","Preklik rovno na produkt"],
+      benefit:["Z desiatok krémov jeden konkrétny","Výber podľa pleti, nie podľa veku na obale","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'konopny',name:"Konopný krém pre mastnú a problematickú pleť",price:"19,00 €",url:"https://www.kvitok.sk/konopny-krem-pre-mastnu-problematicku-plet-denny-30-ml/",photo:'/assets/cosmetics/kvitok-konopny.jpg',tags:['oily','clarity','cream','simple','basic'],reason:"Denný krém pre pleť s vyššou tvorbou mazu a sklonom k nedokonalostiam — ľahký, ale výživný."},
         {id:'arganovy',name:"Arganový krém pre zrelú pleť (30+) — denný",price:"19,00 €",url:"https://www.kvitok.sk/arganovy-krem-pre-zrelu-plet--vek-30-denny-30ml/",photo:'/assets/cosmetics/kvitok-arganovy.jpg',tags:['mature','dry','hydrate','cream','full','simple'],reason:"Arganový olej pre zrelšiu a suchšiu pleť — hydratácia a podpora pružnosti v jednom dennom kroku."},
@@ -238,7 +238,7 @@
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/soaphoria-logo.png\" alt=\"Soaphoria\">",
       hero:'/assets/cosmetics/soaphoria.jpg',
       ownerNote:"Oleje, hydroláty, masky aj čistiace peny vedľa seba — zákazník z názvu rastliny nevyčíta, čo sadne jeho pleti.",
-      benefit:["Z rastlín a hydrolátov jeden konkrétny krok","Výber podľa pleti a priority","Preklik rovno na produkt"],
+      benefit:["Z rastlín a hydrolátov jeden konkrétny krok","Výber podľa pleti a priority","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'mousse',name:"Osviežujúci čistiaci mousse na zmiešanú až mastnú pleť",price:"10,95 €",url:"https://www.soaphoria.sk/sk/cistenie-a-odlicenie-pleti/149-osviezujuci-normalizujuci-cistiaci-mousse-na-zmiesanu-az-mastnu-plet-8586017852181.html",photo:'/assets/cosmetics/soaphoria-mousse.jpg',tags:['oily','clarity','basic','simple','any'],reason:"Čistenie, ktoré nenaruší bariéru — základ rutiny pre pleť, čo sa cez deň leskne a zanáša póry."},
         {id:'arganovy',name:"Arganový olej",price:"9,00 €",url:"https://www.soaphoria.sk/sk/pletove-oleje-a-masla/146-arganovy-olej-8586017852341.html",photo:'/assets/cosmetics/soaphoria-arganovy.jpg',tags:['dry','mature','hydrate','oil','target','simple'],reason:"Pár kvapiek na noc pre suchú a zrelšiu pleť — výživa a pružnosť bez ďalšieho kroku navyše."},
@@ -252,7 +252,7 @@
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/syncare-logo.png\" alt=\"Syncare\">",
       hero:'/assets/cosmetics/syncare.jpg',
       ownerNote:"Názvy ako GlycoRETINAL+C, NICREAM či BOOSTER hovoria o zložení, nie o tom, komu produkt sadne.",
-      benefit:["Zloženie preložené na typ pleti","Výber za štyri otázky","Preklik rovno na produkt"],
+      benefit:["Zloženie preložené na typ pleti","Výber za štyri otázky","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'glycoretinal',name:"GlycoRETINAL+C krém pre pleť so sklonom k akné",price:"23,40 €",url:"https://www.syncare.sk/p/glycoretinal-c-krempre-plet-so-sklonom-k-akne",photo:'/assets/cosmetics/syncare-glycoretinal.jpg',tags:['oily','clarity','cream','target','full'],reason:"Kombinácia kyselín a retinalu pre pleť so sklonom k akné — cielený krok proti nedokonalostiam."},
         {id:'centelaria',name:"CENTELARIA upokojujúca maska pre citlivú pleť",price:"13,10 €",url:"https://www.syncare.sk/p/maska-ukludnujuca-so-shea-maslom-bio",photo:'/assets/cosmetics/syncare-centelaria.jpg',tags:['sensitive','calm','basic','simple','any'],reason:"Okamžitá úľava pre podráždenú a citlivú pleť — jednoduchý doplnok, keď pleť potrebuje upokojiť."},
@@ -266,7 +266,7 @@
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/fytopharma-logo.png\" alt=\"Fytopharma\">",
       hero:'/assets/cosmetics/fytopharma.jpg',
       ownerNote:"Deväť krémov, ktoré sa volajú podľa zloženia — mandľový, kolagénový, polomastný, mastný.",
-      benefit:["Z deviatich krémov ten správny","Výber podľa pleti, nie podľa zloženia","Preklik rovno na produkt"],
+      benefit:["Z deviatich krémov ten správny","Výber podľa pleti, nie podľa zloženia","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'omladzujuci',name:"Omladzujúci krém s kyselinou hyalurónovou",price:"14,30 €",url:"https://www.fytopharma.sk/produkt/omladzujuci-krem-s-kyselinou-hyaluronovou-a-rastlinnym-glykogenom/",photo:'/assets/cosmetics/fytopharma-omladzujuci.jpg',tags:['mature','dry','hydrate','cream','full','simple'],reason:"Hyalurón a rastlinný glykogén pre zrelšiu a suchšiu pleť — vypĺňa jemné linky a dopĺňa vlahu."},
         {id:'pletovavoda',name:"Pleťová voda s pH 4",price:"11,55 €",url:"https://www.fytopharma.sk/produkt/pletova-voda-s-ph-4/",photo:'/assets/cosmetics/fytopharma-pletovavoda.jpg',tags:['oily','clarity','basic','target','any'],reason:"Kyslé pH vracia pleti rovnováhu po umytí — krok pre mastnejšiu pleť so zanesenými pórmi."},
@@ -280,7 +280,7 @@
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/natureal-logo.png\" alt=\"Natureal\">",
       hero:'/assets/cosmetics/natureal.jpg',
       ownerNote:"Desiatky značiek s anglickými názvami zložiek — zákazník z etikety nevyčíta, čo sadne jeho pleti.",
-      benefit:["Cez značky a zložky k jednému produktu","Výber podľa pleti a priority","Preklik rovno na produkt"],
+      benefit:["Cez značky a zložky k jednému produktu","Výber podľa pleti a priority","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'bortox',name:"MEDI-PEEL Bor-Tox Cream — antiage krém",price:"17,90 €",url:"https://eshop.natureal.sk/sk/pletovy-krem/2235-medi-peel-bor-tox-cream-antiage-krem-50-ml.html",photo:'/assets/cosmetics/natureal-bortox.jpg',tags:['mature','dry','cream','simple','full'],reason:"Peptidový antiage krém pre zrelšiu a suchšiu pleť — vyhladzuje a spevňuje bez ťažkého filmu."},
         {id:'blackbamboo',name:"HARUHARU WONDER Black Bamboo Mist — pleťová hmla",price:"10,32 €",url:"https://eshop.natureal.sk/sk/tonizacia/1793-haruharu-wonder-black-bamboo-mist-pletova-hmla-80-ml.html",photo:'/assets/cosmetics/natureal-blackbamboo.jpg',tags:['sensitive','calm','basic','simple','any'],reason:"Upokojujúca hmla s bambusovou vodou — okamžitá úľava pre citlivú a podráždenú pleť."},
