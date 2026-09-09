@@ -197,3 +197,40 @@ html, body { overflow-x:hidden; }
   .composer-area { padding:10px 14px 12px; }
   .advisor.is-questions .option__visual { height:clamp(90px,14vh,112px); }
 }
+
+
+/* ==========================================================================
+   Chat after first message
+   ========================================================================== */
+
+/* After the first real message, remove the intro choice card and quick chips.
+   The mode slider remains available so the visitor can still switch modes. */
+#chatScreen.is-chat-started .entry,
+#chatScreen.is-chat-started .chips {
+  display: none !important;
+}
+
+/* Start the conversation directly under the slider so removing the intro
+   controls does not leave a dead empty band. */
+#chatScreen.is-chat-started .chat {
+  justify-content: flex-start;
+  padding: 18px 18px 10px;
+  gap: 16px;
+}
+#chatScreen.is-chat-started .composer-area {
+  padding: 10px 18px 12px;
+  border-top: 1px solid color-mix(in srgb, var(--ink) 8%, transparent);
+}
+#chatScreen.is-chat-started .bubble {
+  max-width: 86%;
+}
+
+@media (max-width: 640px) {
+  #chatScreen.is-chat-started .chat {
+    padding: 15px 14px 8px;
+    gap: 14px;
+  }
+  #chatScreen.is-chat-started .composer-area {
+    padding: 9px 14px 11px;
+  }
+}
