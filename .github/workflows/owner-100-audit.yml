@@ -1,0 +1,57 @@
+name: Owner 100+ visual audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'coffee-refresh.css'
+      - 'coffee-owner-brand.js'
+      - 'skincare-refresh.css'
+      - 'cosmetics.js'
+      - 'cosmetics-config.js'
+      - 'cosmetics.html'
+      - '*.html'
+      - 'tests/owner-100-checks.spec.mjs'
+      - '.github/workflows/owner-100-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: owner-100-audit-main
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-audit --no-fund
+      - run: npx playwright install chromium
+      - name: Serve repository
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 > /tmp/owner-audit-server.log 2>&1 &
+          echo $! > /tmp/owner-audit-server.pid
+          for i in {1..30}; do
+            curl -fsS http://127.0.0.1:4173/grandroastery.html >/dev/null && exit 0
+            sleep 1
+          done
+          cat /tmp/owner-audit-server.log
+          exit 1
+      - name: Run 100+ owner checks
+        env:
+          BASE_URL: http://127.0.0.1:4173
+        run: npx playwright test tests/owner-100-checks.spec.mjs --reporter=line --workers=1
+      - name: Upload audit evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: owner-100-audit
+          path: artifacts/owner-100-audit/
+          if-no-files-found: ignore
+          retention-days: 7
