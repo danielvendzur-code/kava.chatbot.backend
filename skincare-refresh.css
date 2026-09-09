@@ -1476,3 +1476,118 @@ body[data-cosmetics-demo="barboralori"] .cx-advisor-entry .cx-advisor-entry-phot
     max-width: 160px !important;
   }
 }
+
+
+/* ==========================================================================
+   30. Barbora Lori exact-initial mark and subject centring
+   ========================================================================== */
+
+/* Use the real Barbora Lori logo artwork for the initials instead of a
+   substitute font. Each initial is a clipped view of the original 700×127
+   wordmark asset, so the letterforms stay faithful to the brand. */
+body[data-cosmetics-demo="barboralori"] .cx-barbora-monogram {
+  width: 50px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  overflow: hidden;
+}
+body[data-cosmetics-demo="barboralori"] .cx-barbora-letter {
+  display: block;
+  width: 20px;
+  height: 34px;
+  flex: 0 0 20px;
+  background-image: url("/assets/cosmetics/barboralori-logo.png");
+  background-repeat: no-repeat;
+  background-size: 188px 34px;
+  filter: brightness(0) invert(1);
+}
+body[data-cosmetics-demo="barboralori"] .cx-barbora-letter--b {
+  background-position: 0 50%;
+}
+body[data-cosmetics-demo="barboralori"] .cx-barbora-letter--l {
+  background-position: -108px 50%;
+}
+
+/* Keep the chatbot launcher as the same 72px circular bubble used elsewhere. */
+body[data-cosmetics-demo="barboralori"] .cx-launcher-button {
+  width: 72px !important;
+  height: 72px !important;
+  min-width: 72px !important;
+  min-height: 72px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  background: var(--cx-brand) !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-message-avatar {
+  width: 34px !important;
+  min-width: 34px !important;
+  height: 34px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  background: var(--cx-brand) !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-barbora-monogram--avatar {
+  width: 26px;
+  height: 18px;
+  gap: 2px;
+}
+body[data-cosmetics-demo="barboralori"] .cx-barbora-monogram--avatar .cx-barbora-letter {
+  width: 11px;
+  height: 18px;
+  flex-basis: 11px;
+  background-size: 100px 18px;
+}
+body[data-cosmetics-demo="barboralori"] .cx-barbora-monogram--avatar .cx-barbora-letter--l {
+  background-position: -57.5px 50%;
+}
+
+/* The source hero is a square with the jar optically around 71% across the
+   canvas. A centred square image therefore leaves the product visibly right
+   of centre in the wide owner frame. Shift the source square by 20.8% of its
+   own width so the actual jar, not the JPEG canvas, is centred. */
+body[data-cosmetics-demo="barboralori"] .cx-owner-visual > img {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  justify-self: center !important;
+  align-self: center !important;
+  margin: auto !important;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  transform: translateX(-20.8%) !important;
+}
+
+/* Apply the same focal correction in the compact chat entry. */
+body[data-cosmetics-demo="barboralori"] .cx-advisor-entry .cx-advisor-entry-photo img {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  justify-self: center !important;
+  align-self: center !important;
+  margin: auto !important;
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  transform: translateX(-20.8%) !important;
+}
+
+@media (max-width: 760px) {
+  body[data-cosmetics-demo="barboralori"] .cx-launcher-button {
+    width: 68px !important;
+    height: 68px !important;
+    min-width: 68px !important;
+    min-height: 68px !important;
+  }
+}
