@@ -252,16 +252,19 @@ test('owner presentation: 100+ collision, readability and brand checks', async (
   await page.waitForTimeout(200);
 
   const launcher=page.locator('.cx-launcher-button');
-  const initials=launcher.locator('.cx-barbora-initials');
-  const [launcherBox,initialsBox]=await Promise.all([box(launcher),box(initials)]);
+  const monogram=launcher.locator('.cx-barbora-monogram');
+  const letters=monogram.locator('.cx-barbora-letter');
+  const [launcherBox,monogramBox]=await Promise.all([box(launcher),box(monogram)]);
   record('barboralori launcher is circle', launcherBox && Math.abs(launcherBox.width-launcherBox.height)<=1, JSON.stringify(launcherBox));
-  record('barboralori launcher uses BL', (await initials.innerText()).trim()==='BL');
-  record('barboralori BL centered in launcher', launcherBox && initialsBox &&
-    Math.abs((launcherBox.x+launcherBox.width/2)-(initialsBox.x+initialsBox.width/2))<=3 &&
-    Math.abs((launcherBox.y+launcherBox.height/2)-(initialsBox.y+initialsBox.height/2))<=3,
-    JSON.stringify({launcherBox,initialsBox}));
-  record('barboralori BL readable size', await initials.evaluate(n=>parseFloat(getComputedStyle(n).fontSize))>=24);
+  record('barboralori launcher uses two official cropped initials', await letters.count()===2);
+  record('barboralori BL centered in launcher', launcherBox && monogramBox &&
+    Math.abs((launcherBox.x+launcherBox.width/2)-(monogramBox.x+monogramBox.width/2))<=3 &&
+    Math.abs((launcherBox.y+launcherBox.height/2)-(monogramBox.y+monogramBox.height/2))<=3,
+    JSON.stringify({launcherBox,monogramBox}));
+  record('barboralori official B/L crops have readable geometry', await letters.evaluateAll(nodes =>
+    nodes.length===2 && nodes.every(n=>n.getBoundingClientRect().width>=8 && n.getBoundingClientRect().height>=18)));
 
+  await page.screenshot({ path:'artifacts/owner-100-audit/barboralori-owner.png', fullPage:true });
   const heroDelta=await barboraSubjectDelta(page,'.cx-owner-visual > img','.cx-owner-visual');
   record('barboralori jar optically centered on owner page', heroDelta.ok && Math.abs(heroDelta.delta)<=24, JSON.stringify(heroDelta));
 
@@ -272,8 +275,8 @@ test('owner presentation: 100+ collision, readability and brand checks', async (
   await page.waitForTimeout(160);
   record('barboralori online visible only in open widget', await page.locator('.cx-status').isVisible());
   record('barboralori widget full logo loaded', await loadedImage(page.locator('.cx-widget-brand .cx-logo')));
-  const avatar=page.locator('.cx-message-avatar .cx-barbora-initials').first();
-  record('barboralori assistant avatar uses BL', await avatar.count() === 1 && (await avatar.innerText()).trim()==='BL');
+  const avatar=page.locator('.cx-message-avatar .cx-barbora-monogram').first();
+  record('barboralori assistant avatar uses exact B/L', await avatar.count()===1 && await avatar.locator('.cx-barbora-letter').count()===2);
 
   const entryImage=page.locator('.cx-advisor-entry .cx-advisor-entry-photo img');
   if (await entryImage.count()) {
