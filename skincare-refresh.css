@@ -1730,3 +1730,210 @@ body[data-cosmetics-demo] .cx-price-terms {
   body[data-cosmetics-demo] .cx-owner-offer { width: 100% !important; max-width: 100% !important; }
   body[data-cosmetics-demo] .cx-price { min-height: 0 !important; padding: 18px 16px !important; gap: 14px !important; }
 }
+
+
+/* ==========================================================================
+   32. Collision-proof owner layout
+   ========================================================================== */
+
+body[data-cosmetics-demo] .cx-owner-frame {
+  width: 100% !important;
+  max-width: 620px !important;
+  margin-left: auto !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1.28fr) minmax(220px, .72fr) !important;
+  grid-template-rows: minmax(0, auto) !important;
+  gap: 14px !important;
+  align-items: stretch !important;
+  align-self: start !important;
+  padding-bottom: 0 !important;
+  min-height: 0 !important;
+}
+body[data-cosmetics-demo] .cx-owner-visual {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 286px !important;
+  max-height: 306px !important;
+  align-self: stretch !important;
+}
+body[data-cosmetics-demo] .cx-keeps--side {
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+  gap: 8px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  align-self: stretch !important;
+}
+body[data-cosmetics-demo] .cx-keeps--side li,
+body[data-cosmetics-demo] .cx-keeps--side li:first-child,
+body[data-cosmetics-demo] .cx-keeps--side li:last-child {
+  min-width: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 11px 11px 11px 44px !important;
+  overflow: hidden !important;
+}
+body[data-cosmetics-demo] .cx-keeps--side li::before {
+  left: 11px !important;
+  top: 11px !important;
+  width: 23px !important;
+  height: 23px !important;
+}
+body[data-cosmetics-demo] .cx-keeps--side li::after {
+  top: 10px !important;
+  bottom: 10px !important;
+}
+body[data-cosmetics-demo] .cx-keeps--side b {
+  font-size: 12.9px !important;
+  line-height: 1.2 !important;
+}
+body[data-cosmetics-demo] .cx-keeps--side small {
+  margin-top: 3px !important;
+  font-size: 10.9px !important;
+  line-height: 1.32 !important;
+  overflow-wrap: anywhere;
+}
+
+body[data-cosmetics-demo] .cx-owner-offer {
+  width: min(680px, 100%) !important;
+  max-width: 680px !important;
+  min-width: 0 !important;
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+body[data-cosmetics-demo] .cx-price {
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 14px 22px !important;
+  padding: 20px 22px !important;
+  align-items: start !important;
+}
+body[data-cosmetics-demo] .cx-price-sum {
+  min-width: 0 !important;
+}
+body[data-cosmetics-demo] .cx-price-sum small {
+  display: block !important;
+  max-width: 25ch !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+body[data-cosmetics-demo] .cx-price-terms {
+  grid-column: 1 / -1 !important;
+  min-width: 0 !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  grid-template-rows: auto auto !important;
+  column-gap: 18px !important;
+  row-gap: 4px !important;
+  align-items: center !important;
+  padding: 14px 0 0 !important;
+  border-left: 0 !important;
+  border-top: 1px solid color-mix(in srgb, var(--cx-ink) 17%, transparent) !important;
+}
+body[data-cosmetics-demo] .cx-price-terms b {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+}
+body[data-cosmetics-demo] .cx-price-terms p {
+  grid-column: 1 !important;
+  grid-row: 2 !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  margin: 0 !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+body[data-cosmetics-demo] .cx-price-terms > a {
+  grid-column: 2 !important;
+  grid-row: 1 / 3 !important;
+  align-self: center !important;
+  justify-self: end !important;
+  min-width: max-content !important;
+  margin: 0 !important;
+}
+
+/* Barbora Lori: use a clean, readable initial mark instead of trying to crop
+   two glyphs out of a 700×127 horizontal bitmap. The full real logo remains in
+   the page and widget headers. */
+body[data-cosmetics-demo="barboralori"] .cx-barbora-initials {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -.08em;
+  transform: translateX(-1px);
+}
+body[data-cosmetics-demo="barboralori"] .cx-message-avatar .cx-barbora-initials {
+  font-size: 12.5px;
+  letter-spacing: -.06em;
+  transform: translateX(-.5px);
+}
+body[data-cosmetics-demo="barboralori"] .cx-launcher-button {
+  width: 72px !important;
+  height: 72px !important;
+  min-width: 72px !important;
+  min-height: 72px !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  background: var(--cx-brand) !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-message-avatar {
+  width: 34px !important;
+  min-width: 34px !important;
+  height: 34px !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  background: var(--cx-brand) !important;
+}
+
+/* Preserve the measured optical centring of the actual jar in the 900×900
+   source image. */
+body[data-cosmetics-demo="barboralori"] .cx-owner-visual > img,
+body[data-cosmetics-demo="barboralori"] .cx-advisor-entry .cx-advisor-entry-photo img {
+  object-fit: contain !important;
+  object-position: 50% 50% !important;
+  transform: translateX(-20.8%) !important;
+}
+
+@media (max-width: 1180px) {
+  body[data-cosmetics-demo] .cx-owner-frame {
+    max-width: 560px !important;
+    grid-template-columns: minmax(0, 1.18fr) minmax(205px, .82fr) !important;
+  }
+  body[data-cosmetics-demo] .cx-owner-visual {
+    min-height: 258px !important;
+    max-height: 278px !important;
+  }
+  body[data-cosmetics-demo] .cx-owner-offer {
+    width: min(640px, 100%) !important;
+    max-width: 640px !important;
+  }
+}
+@media (max-width: 900px) {
+  body[data-cosmetics-demo] .cx-price-terms {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+  body[data-cosmetics-demo] .cx-price-terms > a {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    justify-self: start !important;
+    margin-top: 8px !important;
+  }
+}
+@media (max-width: 760px) {
+  body[data-cosmetics-demo] .cx-owner-frame { display: none !important; }
+  body[data-cosmetics-demo] .cx-owner-offer { width: 100% !important; max-width: 100% !important; }
+  body[data-cosmetics-demo] .cx-price { grid-template-columns: 1fr 1fr !important; padding: 16px !important; }
+}
