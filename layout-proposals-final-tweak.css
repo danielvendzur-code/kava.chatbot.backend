@@ -1,0 +1,55 @@
+/* Focused tweak requested for the current default proposal only. */
+.layout-1{grid-template-columns:minmax(0,1.05fr) minmax(440px,.95fr);column-gap:26px}
+.layout-1 .area-copy{position:relative;padding-right:2.5vw}
+.layout-1 .area-media{
+  width:280px;
+  height:164px;
+  justify-self:start;
+  align-self:start;
+  margin-top:28px;
+  margin-left:52px;
+}
+.layout-1 .area-benefits{
+  width:430px;
+  justify-self:start;
+  align-self:end;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:6px 22px;
+  margin-left:0;
+  padding-bottom:4px;
+}
+.layout-1 .benefit{padding:11px 0 9px;gap:11px}
+.layout-1 .benefit h2{font-size:14.5px}
+.layout-1 .benefit p{font-size:11.5px}
+.layout-1 .area-pricing{max-width:940px}
+
+/* understated handwritten cue pointing at “Skúsiť chat” */
+.try-cue{
+  display:flex;
+  align-items:center;
+  gap:7px;
+  width:max-content;
+  margin:8px 0 0 174px;
+  color:#4c4943;
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:14px;
+  line-height:1;
+  font-style:italic;
+  transform:rotate(-2deg);
+  opacity:.9;
+  pointer-events:none;
+}
+.try-cue svg{width:72px;height:30px;overflow:visible;transform:rotate(-4deg)}
+.try-cue path{fill:none;stroke:#403d38;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
+
+@media (max-height:820px){
+  .layout-1 .area-media{width:245px;height:142px;margin-top:16px;margin-left:42px}
+  .layout-1 .area-benefits{width:400px;gap:4px 18px}
+  .try-cue{margin-top:5px;margin-left:168px;font-size:13px}.try-cue svg{width:64px;height:26px}
+}
+
+@media (max-width:1280px){
+  .layout-1 .area-media{width:240px;height:140px;margin-left:28px}
+  .layout-1 .area-benefits{width:380px;gap:4px 16px}
+  .try-cue{margin-left:155px}
+}
