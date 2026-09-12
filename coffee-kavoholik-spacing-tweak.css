@@ -1,25 +1,37 @@
-/* Requested micro-adjustment only: slightly enlarge and center the product visual
-   and the four quality cards. Keep all copy, pricing, CTA and overall composition. */
+/* Kávoholik only — tiny layout correction requested from the screenshot.
+   Do not redesign or move the block noticeably. Make the visual and quality
+   cards genuinely a little larger, keep them perfectly aligned, and nudge the
+   complete group only a few pixels toward the page centre. */
 
 .mcb-page[data-mcb-v2="true"] .mcb-main {
-  grid-template-columns: minmax(0, 1fr) minmax(470px, 560px) !important;
+  grid-template-columns: minmax(0, 1fr) minmax(500px, 590px) !important;
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-frame {
-  max-width: 650px !important;
+  width: 100% !important;
+  max-width: 675px !important;
   position: relative !important;
-  left: -18px !important;
-  grid-template-columns: minmax(0, 1.31fr) minmax(232px, .69fr) !important;
+  left: -6px !important;
+  grid-template-columns: minmax(0, 1.34fr) minmax(238px, .66fr) !important;
+  grid-template-rows: 318px !important;
   gap: 16px !important;
   align-items: stretch !important;
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-visual {
-  min-height: 296px !important;
-  max-height: 316px !important;
+  width: 100% !important;
+  height: 318px !important;
+  min-height: 318px !important;
+  max-height: 318px !important;
+  align-self: stretch !important;
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side {
+  height: 318px !important;
+  min-height: 318px !important;
+  max-height: 318px !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
   gap: 9px !important;
   align-self: stretch !important;
 }
@@ -27,14 +39,16 @@
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side li,
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side li:first-child,
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side li:last-child {
-  padding: 12px 12px 12px 46px !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 12px 13px 12px 47px !important;
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side li::before {
   left: 12px !important;
   top: 12px !important;
-  width: 24px !important;
-  height: 24px !important;
+  width: 25px !important;
+  height: 25px !important;
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side li::after {
@@ -43,26 +57,32 @@
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side b {
-  font-size: 13.2px !important;
+  font-size: 13.5px !important;
+  line-height: 1.2 !important;
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side small {
-  font-size: 11.1px !important;
+  margin-top: 4px !important;
+  font-size: 11.35px !important;
+  line-height: 1.32 !important;
 }
 
 @media (max-width: 1180px) {
   .mcb-page[data-mcb-v2="true"] .mcb-main {
-    grid-template-columns: minmax(0, 1fr) minmax(420px, 490px) !important;
+    grid-template-columns: minmax(0, 1fr) minmax(440px, 510px) !important;
   }
   .mcb-page[data-mcb-v2="true"] .mcb-frame {
-    max-width: 590px !important;
-    left: -12px !important;
-    grid-template-columns: minmax(0, 1.22fr) minmax(214px, .78fr) !important;
+    max-width: 610px !important;
+    left: -4px !important;
+    grid-template-columns: minmax(0, 1.26fr) minmax(220px, .74fr) !important;
+    grid-template-rows: 286px !important;
     gap: 14px !important;
   }
-  .mcb-page[data-mcb-v2="true"] .mcb-visual {
-    min-height: 270px !important;
-    max-height: 290px !important;
+  .mcb-page[data-mcb-v2="true"] .mcb-visual,
+  .mcb-page[data-mcb-v2="true"] .mcb-keeps--side {
+    height: 286px !important;
+    min-height: 286px !important;
+    max-height: 286px !important;
   }
 }
 
