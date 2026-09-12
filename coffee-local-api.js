@@ -3,7 +3,7 @@
     if (document.querySelector('link[data-mcb-owner-final-polish]')) return;
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '/coffee-owner-final-polish.css?v=20260912a';
+    link.href = '/coffee-owner-final-polish.css?v=20260912b';
     link.dataset.mcbOwnerFinalPolish = 'true';
     const mount = () => (document.body || document.head || document.documentElement).appendChild(link);
     if (document.readyState === 'complete') setTimeout(mount, 0);
