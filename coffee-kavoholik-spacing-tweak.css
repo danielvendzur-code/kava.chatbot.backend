@@ -1,0 +1,74 @@
+/* Requested micro-adjustment only: slightly enlarge and center the product visual
+   and the four quality cards. Keep all copy, pricing, CTA and overall composition. */
+
+.mcb-page[data-mcb-v2="true"] .mcb-main {
+  grid-template-columns: minmax(0, 1fr) minmax(470px, 560px) !important;
+}
+
+.mcb-page[data-mcb-v2="true"] .mcb-frame {
+  max-width: 650px !important;
+  position: relative !important;
+  left: -18px !important;
+  grid-template-columns: minmax(0, 1.31fr) minmax(232px, .69fr) !important;
+  gap: 16px !important;
+  align-items: stretch !important;
+}
+
+.mcb-page[data-mcb-v2="true"] .mcb-visual {
+  min-height: 296px !important;
+  max-height: 316px !important;
+}
+
+.mcb-page[data-mcb-v2="true"] .mcb-keeps--side {
+  gap: 9px !important;
+  align-self: stretch !important;
+}
+
+.mcb-page[data-mcb-v2="true"] .mcb-keeps--side li,
+.mcb-page[data-mcb-v2="true"] .mcb-keeps--side li:first-child,
+.mcb-page[data-mcb-v2="true"] .mcb-keeps--side li:last-child {
+  padding: 12px 12px 12px 46px !important;
+}
+
+.mcb-page[data-mcb-v2="true"] .mcb-keeps--side li::before {
+  left: 12px !important;
+  top: 12px !important;
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.mcb-page[data-mcb-v2="true"] .mcb-keeps--side li::after {
+  top: 11px !important;
+  bottom: 11px !important;
+}
+
+.mcb-page[data-mcb-v2="true"] .mcb-keeps--side b {
+  font-size: 13.2px !important;
+}
+
+.mcb-page[data-mcb-v2="true"] .mcb-keeps--side small {
+  font-size: 11.1px !important;
+}
+
+@media (max-width: 1180px) {
+  .mcb-page[data-mcb-v2="true"] .mcb-main {
+    grid-template-columns: minmax(0, 1fr) minmax(420px, 490px) !important;
+  }
+  .mcb-page[data-mcb-v2="true"] .mcb-frame {
+    max-width: 590px !important;
+    left: -12px !important;
+    grid-template-columns: minmax(0, 1.22fr) minmax(214px, .78fr) !important;
+    gap: 14px !important;
+  }
+  .mcb-page[data-mcb-v2="true"] .mcb-visual {
+    min-height: 270px !important;
+    max-height: 290px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .mcb-page[data-mcb-v2="true"] .mcb-frame {
+    display: none !important;
+    left: 0 !important;
+  }
+}
