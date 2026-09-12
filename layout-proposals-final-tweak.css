@@ -1,55 +1,69 @@
-/* Focused tweak requested for the current default proposal only. */
+/* Focused composition tweaks across all five proposals.
+   Keep the current structures, only pull the product proof inward,
+   tighten the four benefit points and add the try-chat cue consistently. */
+
+/* 1 — editorial split */
 .layout-1{grid-template-columns:minmax(0,1.05fr) minmax(440px,.95fr);column-gap:26px}
 .layout-1 .area-copy{position:relative;padding-right:2.5vw}
-.layout-1 .area-media{
-  width:280px;
-  height:164px;
-  justify-self:start;
-  align-self:start;
-  margin-top:28px;
-  margin-left:52px;
-}
-.layout-1 .area-benefits{
-  width:430px;
-  justify-self:start;
-  align-self:end;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:6px 22px;
-  margin-left:0;
-  padding-bottom:4px;
-}
+.layout-1 .area-media{width:280px;height:164px;justify-self:start;align-self:start;margin-top:28px;margin-left:52px}
+.layout-1 .area-benefits{width:430px;justify-self:start;align-self:end;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 22px;margin-left:0;padding-bottom:4px}
 .layout-1 .benefit{padding:11px 0 9px;gap:11px}
 .layout-1 .benefit h2{font-size:14.5px}
 .layout-1 .benefit p{font-size:11.5px}
 .layout-1 .area-pricing{max-width:940px}
 
+/* 2 — centered composition: pull the side qualities closer to the product */
+.layout-2 .area-media{width:250px;height:150px;justify-self:center;align-self:center}
+.layout-2 .area-benefits{grid-template-columns:minmax(230px,.8fr) 270px minmax(230px,.8fr);column-gap:18px}
+.layout-2 .benefit{width:min(100%,280px);padding:10px 0 9px}
+.layout-2 .benefit-1,.layout-2 .benefit-2{justify-self:end;margin-right:8px}
+.layout-2 .benefit-3,.layout-2 .benefit-4{justify-self:start;margin-left:8px}
+
+/* 3 — magazine composition: move the photo inward toward the headline */
+.layout-3{grid-template-columns:minmax(250px,.6fr) minmax(460px,1.16fr) minmax(285px,.68fr);column-gap:24px}
+.layout-3 .area-media{width:230px;height:145px;justify-self:end;margin-top:32px;margin-right:-8px}
+.layout-3 .area-pricing{max-width:278px;justify-self:end}
+.layout-3 .area-benefits{width:100%;max-width:310px;justify-self:start;gap:3px}
+.layout-3 .benefit{padding:12px 0 10px}
+
+/* 4 — sales sheet: bring the image back from the extreme right edge */
+.layout-4{grid-template-columns:minmax(430px,1.08fr) minmax(390px,.94fr) minmax(250px,.54fr);column-gap:18px}
+.layout-4 .area-media{width:238px;height:148px;justify-self:start;margin-left:-18px;margin-top:28px}
+.layout-4 .area-pricing{width:244px;justify-self:start;margin-left:-18px}
+.layout-4 .area-benefits{gap:22px;padding-right:22px}
+.layout-4 .benefit{padding:13px 0 10px}
+
+/* 5 — restrained split: make the product visual sit closer to the centerline */
+.layout-5{grid-template-columns:minmax(0,1.16fr) minmax(350px,.74fr);column-gap:24px}
+.layout-5 .area-media{width:258px;height:160px;justify-self:start;margin-left:18px}
+.layout-5 .area-benefits{gap:22px;padding-right:18px}
+.layout-5 .benefit{padding-top:13px}
+.layout-5 .area-pricing{max-width:490px}
+
 /* understated handwritten cue pointing at “Skúsiť chat” */
-.try-cue{
-  display:flex;
-  align-items:center;
-  gap:7px;
-  width:max-content;
-  margin:8px 0 0 174px;
-  color:#4c4943;
-  font-family:"Playfair Display",Georgia,serif;
-  font-size:14px;
-  line-height:1;
-  font-style:italic;
-  transform:rotate(-2deg);
-  opacity:.9;
-  pointer-events:none;
-}
+.try-cue{display:flex;align-items:center;gap:7px;width:max-content;margin:8px 0 0 174px;color:#4c4943;font-family:"Playfair Display",Georgia,serif;font-size:14px;line-height:1;font-style:italic;transform:rotate(-2deg);opacity:.9;pointer-events:none}
 .try-cue svg{width:72px;height:30px;overflow:visible;transform:rotate(-4deg)}
 .try-cue path{fill:none;stroke:#403d38;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
+.layout-2 .try-cue{margin:7px auto 0;transform:translateX(38px) rotate(-2deg)}
+.layout-3 .try-cue{margin-left:164px}
+.layout-4 .try-cue{margin-left:160px}
+.layout-5 .try-cue{margin-left:166px}
 
 @media (max-height:820px){
-  .layout-1 .area-media{width:245px;height:142px;margin-top:16px;margin-left:42px}
-  .layout-1 .area-benefits{width:400px;gap:4px 18px}
+  .layout-1 .area-media{width:245px;height:142px;margin-top:16px;margin-left:42px}.layout-1 .area-benefits{width:400px;gap:4px 18px}
+  .layout-2 .area-media{width:220px;height:132px}.layout-2 .area-benefits{grid-template-columns:minmax(210px,.8fr) 235px minmax(210px,.8fr);column-gap:14px}.layout-2 .benefit{max-width:250px}
+  .layout-3 .area-media{width:205px;height:128px;margin-top:18px}.layout-3 .area-pricing{max-width:250px}.layout-3 .area-benefits{max-width:285px}
+  .layout-4 .area-media{width:210px;height:126px;margin-top:16px;margin-left:-8px}.layout-4 .area-pricing{width:218px;margin-left:-8px}.layout-4 .area-benefits{gap:14px;padding-right:10px}
+  .layout-5 .area-media{width:225px;height:136px;margin-left:8px}.layout-5 .area-benefits{gap:15px}
   .try-cue{margin-top:5px;margin-left:168px;font-size:13px}.try-cue svg{width:64px;height:26px}
+  .layout-2 .try-cue{margin-left:auto;margin-right:auto;transform:translateX(32px) rotate(-2deg)}
 }
 
 @media (max-width:1280px){
-  .layout-1 .area-media{width:240px;height:140px;margin-left:28px}
-  .layout-1 .area-benefits{width:380px;gap:4px 16px}
-  .try-cue{margin-left:155px}
+  .layout-1 .area-media{width:240px;height:140px;margin-left:28px}.layout-1 .area-benefits{width:380px;gap:4px 16px}
+  .layout-2 .area-media{width:220px;height:132px}.layout-2 .area-benefits{grid-template-columns:minmax(200px,.8fr) 235px minmax(200px,.8fr);column-gap:10px}.layout-2 .benefit{max-width:235px}
+  .layout-3 .area-media{width:200px;height:128px;margin-right:0}.layout-3 .area-pricing{max-width:245px}.layout-3 .area-benefits{max-width:275px}
+  .layout-4 .area-media{width:205px;height:132px;margin-left:-4px}.layout-4 .area-pricing{width:212px;margin-left:-4px}.layout-4 .area-benefits{gap:12px;padding-right:6px}
+  .layout-5 .area-media{width:220px;height:140px;margin-left:6px}.layout-5 .area-benefits{gap:14px}
+  .try-cue{margin-left:155px}.layout-2 .try-cue{margin-left:auto;margin-right:auto;transform:translateX(28px) rotate(-2deg)}
 }
