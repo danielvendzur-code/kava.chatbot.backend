@@ -1,92 +1,42 @@
-/* FINAL SINGLE PROPOSAL — preserve the accepted direction, only refine placement. */
+/* FINAL SINGLE PROPOSAL — preserve accepted sizes. Only placement and visual emphasis change. */
 
-/* one-screen editorial split */
-.layout-1{
-  grid-template-columns:minmax(0,1.03fr) minmax(445px,.97fr);
-  grid-template-rows:66px minmax(0,1fr) 178px 22px;
-  column-gap:24px;
-  row-gap:12px;
-}
-.layout-1 .area-copy{
-  position:relative;
-  padding-right:2vw;
-  align-self:center;
-}
+/* exact accepted layout sizing */
+.layout-1{grid-template-columns:minmax(0,1.05fr) minmax(440px,.95fr);column-gap:26px}
+.layout-1 .area-copy{position:relative;padding-right:2.5vw}
 
-/* product proof: still small, but pulled toward the visual center */
+/* same image size as the accepted version; only nudged toward the center */
 .layout-1 .area-media{
-  width:300px;
-  height:176px;
+  width:280px;
+  height:164px;
   justify-self:start;
   align-self:start;
-  margin-top:24px;
-  margin-left:12px;
-  border-color:#deddd7;
-  box-shadow:0 8px 24px rgba(26,23,18,.055);
+  margin-top:28px;
+  margin-left:28px;
 }
 
-/* four qualities: more breathing room, less cramped, using the empty space */
+/* same benefit dimensions and typography; only repositioned slightly into the open space */
 .layout-1 .area-benefits{
-  width:500px;
-  max-width:100%;
+  width:430px;
   justify-self:start;
   align-self:end;
   grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:8px 34px;
-  margin-left:-8px;
-  padding-bottom:8px;
+  gap:6px 22px;
+  margin-left:12px;
+  padding-bottom:4px;
 }
-.layout-1 .benefit{
-  padding:13px 0 11px;
-  gap:12px;
-  border-top-color:#d6d5cf;
-}
-.layout-1 .benefit .num{
-  width:27px;
-  height:27px;
-  font-size:11px;
-}
-.layout-1 .benefit h2{
-  font-size:15px;
-  line-height:1.2;
-  margin-top:2px;
-}
-.layout-1 .benefit p{
-  font-size:12px;
-  line-height:1.35;
-}
+.layout-1 .benefit{padding:11px 0 9px;gap:11px}
+.layout-1 .benefit h2{font-size:14.5px}
+.layout-1 .benefit p{font-size:11.5px}
 
-/* price becomes a clear conversion area without turning into a dashboard card */
+/* exact previous pricing dimensions; visibility improved only through contrast */
 .layout-1 .area-pricing{
-  grid-column:1/-1;
-  grid-row:3;
-  width:min(1030px,calc(100% - 330px));
-  max-width:none;
-  justify-self:start;
-  grid-template-columns:1.08fr 1fr .9fr auto;
-  gap:22px;
-  padding:22px 26px;
+  max-width:940px;
   background:#edf4df;
-  border:1.5px solid #cbd8b2;
-  box-shadow:0 8px 24px rgba(76,101,29,.07);
+  border-color:#bdcc9f;
+  box-shadow:0 6px 18px rgba(76,101,29,.08);
 }
-.layout-1 .area-pricing .price strong{
-  font-size:38px;
-  color:#171512;
-}
-.layout-1 .area-pricing .price b,
-.layout-1 .area-pricing .trial b{
-  font-size:13px;
-}
-.layout-1 .area-pricing .price p,
-.layout-1 .area-pricing .trial p{
-  font-size:12px;
-}
-.layout-1 .area-pricing .price-cta{
-  min-height:48px;
-  padding-inline:25px;
-  box-shadow:0 7px 18px rgba(79,113,18,.14);
-}
+.layout-1 .area-pricing .price strong{color:#171512}
+.layout-1 .area-pricing .trial b{color:#45670f}
 
 /* handwritten cue pointing at “Skúsiť chat” */
 .try-cue{
@@ -101,41 +51,24 @@
   line-height:1;
   font-style:italic;
   transform:rotate(-2deg);
-  opacity:.92;
+  opacity:.9;
   pointer-events:none;
 }
-.try-cue svg{
-  width:72px;
-  height:30px;
-  overflow:visible;
-  transform:rotate(-4deg);
-}
-.try-cue path{
-  fill:none;
-  stroke:#403d38;
-  stroke-width:1.35;
-  stroke-linecap:round;
-  stroke-linejoin:round;
-}
+.try-cue svg{width:72px;height:30px;overflow:visible;transform:rotate(-4deg)}
+.try-cue path{fill:none;stroke:#403d38;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}
 
-/* no multi-proposal UI in the final preview */
+/* single proposal only */
 .proposal-switcher{display:none!important}
 
 @media (max-height:820px){
-  .layout-1{grid-template-rows:58px minmax(0,1fr) 154px 18px}
-  .layout-1 .area-media{width:255px;height:146px;margin-top:14px;margin-left:8px}
-  .layout-1 .area-benefits{width:450px;gap:4px 26px;padding-bottom:2px}
-  .layout-1 .benefit{padding:9px 0 7px}
-  .layout-1 .area-pricing{width:min(980px,calc(100% - 300px));padding:17px 21px;gap:16px}
-  .layout-1 .area-pricing .price strong{font-size:32px}
-  .try-cue{margin-top:4px;margin-left:166px;font-size:13px}.try-cue svg{width:64px;height:26px}
+  .layout-1 .area-media{width:245px;height:142px;margin-top:16px;margin-left:22px}
+  .layout-1 .area-benefits{width:400px;gap:4px 18px;margin-left:8px}
+  .try-cue{margin-top:5px;margin-left:168px;font-size:13px}
+  .try-cue svg{width:64px;height:26px}
 }
 
 @media (max-width:1280px){
-  .layout-1{grid-template-columns:minmax(0,1fr) minmax(390px,.88fr)}
-  .layout-1 .area-media{width:250px;height:148px;margin-left:2px}
-  .layout-1 .area-benefits{width:410px;gap:4px 22px;margin-left:-4px}
-  .layout-1 .area-pricing{width:min(900px,calc(100% - 280px));gap:14px;padding:18px 20px}
-  .layout-1 .area-pricing .price strong{font-size:31px}
-  .try-cue{margin-left:154px}
+  .layout-1 .area-media{width:240px;height:140px;margin-left:16px}
+  .layout-1 .area-benefits{width:380px;gap:4px 16px;margin-left:6px}
+  .try-cue{margin-left:155px}
 }
