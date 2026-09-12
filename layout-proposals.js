@@ -1,12 +1,7 @@
 (() => {
-  const params = new URLSearchParams(location.search);
-  const raw = Number(params.get('v') || 1);
-  const v = Math.min(5, Math.max(1, Number.isFinite(raw) ? raw : 1));
   const proposal = document.getElementById('proposal');
-  proposal.classList.add(`layout-${v}`);
-  document.querySelectorAll('.proposal-switcher a').forEach((a) => {
-    if (Number(a.dataset.v) === v) a.classList.add('active');
-  });
+  proposal.classList.remove('layout-2','layout-3','layout-4','layout-5');
+  proposal.classList.add('layout-1');
 
   const drawer = document.getElementById('chatDrawer');
   const backdrop = document.getElementById('drawerBackdrop');
