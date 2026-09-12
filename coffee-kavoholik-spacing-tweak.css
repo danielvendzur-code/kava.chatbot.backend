@@ -3,6 +3,11 @@
    cards genuinely a little larger, keep them perfectly aligned, and nudge the
    complete group only a few pixels toward the page centre. */
 
+/* Slightly larger headline only, to fill the left side better. */
+.mcb-page[data-mcb-v2="true"] .mcb-copy h1 {
+  font-size: clamp(34px, 3.5vw, 51px) !important;
+}
+
 .mcb-page[data-mcb-v2="true"] .mcb-main {
   grid-template-columns: minmax(0, 1fr) minmax(500px, 590px) !important;
 }
@@ -68,6 +73,9 @@
 }
 
 @media (max-width: 1180px) {
+  .mcb-page[data-mcb-v2="true"] .mcb-copy h1 {
+    font-size: clamp(33px, 4vw, 48px) !important;
+  }
   .mcb-page[data-mcb-v2="true"] .mcb-main {
     grid-template-columns: minmax(0, 1fr) minmax(440px, 510px) !important;
   }
