@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Kávoholik — 5 kódovaných návrhov rozloženia</title>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/jolka/fonts/inter-latin-ext.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/jolka/fonts/playfair-latin.woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/fonts/fonts.css?v=43ec8a95">
+  <link rel="stylesheet" href="/layout-proposals.css?v=1">
+</head>
+<body>
+  <nav class="proposal-switcher" aria-label="Prepínač návrhov">
+    <span>Návrh</span>
+    <a href="?v=1" data-v="1">1</a>
+    <a href="?v=2" data-v="2">2</a>
+    <a href="?v=3" data-v="3">3</a>
+    <a href="?v=4" data-v="4">4</a>
+    <a href="?v=5" data-v="5">5</a>
+  </nav>
+
+  <main class="proposal" id="proposal">
+    <header class="site-header area-header">
+      <img class="brand-logo" src="/assets/kavoholik/logo.png" alt="Kávoholik">
+      <button class="btn btn-dark header-cta" data-interest>Mám záujem <span>→</span></button>
+    </header>
+
+    <section class="hero-copy area-copy">
+      <div class="eyebrow"><i></i> CHATBOT PRE VÁŠ E-SHOP</div>
+      <h1>Poradí zákazníkovi kávu<br>a odpovie mu na otázky.</h1>
+      <div class="hero-actions">
+        <button class="btn btn-dark" data-chat>Otvoriť poradcu <span>→</span></button>
+        <button class="btn btn-light" data-chat>Skúsiť chat <span class="chat-icon" aria-hidden="true"></span></button>
+      </div>
+    </section>
+
+    <figure class="hero-media area-media">
+      <img src="/assets/kavoholik/hero.jpg" alt="Výber káv Kávoholik">
+    </figure>
+
+    <section class="benefits area-benefits" aria-label="Výhody">
+      <article class="benefit benefit-1"><b class="num">1</b><div><h2>Odpovedá aj o polnoci</h2><p>aj cez víkend, bez vás</p></div></article>
+      <article class="benefit benefit-2"><b class="num">2</b><div><h2>Pozná vašu ponuku</h2><p>pracuje s vašimi kávami a cenami</p></div></article>
+      <article class="benefit benefit-3"><b class="num">3</b><div><h2>Výber cez štyri otázky</h2><p>na konci jedna konkrétna káva</p></div></article>
+      <article class="benefit benefit-4"><b class="num">4</b><div><h2>História konverzácií</h2><p>vidíte, na čo sa zákazníci pýtajú</p></div></article>
+    </section>
+
+    <section class="pricing area-pricing" aria-label="Cena">
+      <div class="price price-setup"><strong>247 €</strong><div><b>jednorazovo</b><p>nastavenie a naplnenie vašimi kávami</p></div></div>
+      <div class="price price-monthly"><strong>10 €</strong><div><b>mesačne</b><p>prevádzka, zmeny v ponuke, opravy</p></div></div>
+      <div class="trial"><b>Prvý mesiac zdarma</b><p>Bez viazanosti, vypnete kedykoľvek.</p></div>
+      <button class="btn btn-green price-cta" data-interest><span class="mail-icon" aria-hidden="true"></span> Ozvite sa mi</button>
+    </section>
+
+    <div class="advisor area-advisor">
+      <div class="advisor-callout">Spýtajte sa<br>nášho poradcu</div>
+      <svg class="advisor-arrow" viewBox="0 0 120 70" aria-hidden="true"><path d="M5 8 C 40 18, 63 18, 84 42 C 92 51, 95 55, 106 56"/><path d="M96 48 L107 56 L98 64"/></svg>
+      <button class="advisor-teaser" data-chat>
+        <span><b>Nájdite svoju kávu</b><small>4 otázky · jedno odporúčanie</small></span>
+        <i>×</i>
+      </button>
+      <button class="advisor-orb" data-chat aria-label="Otvoriť poradcu"><img src="/assets/kavoholik/logo.png" alt=""></button>
+    </div>
+
+    <footer class="site-footer area-footer">
+      <a href="https://mojchatbot.sk">mojchatbot.sk <span>→</span></a>
+      <span>Ukážka riešenia pre Kávoholik</span>
+    </footer>
+  </main>
+
+  <aside class="chat-drawer" id="chatDrawer" aria-hidden="true">
+    <div class="drawer-head">
+      <div class="drawer-brand"><img src="/assets/kavoholik/logo.png" alt=""><span><b>Kávoholik poradca</b><small><i></i> Online</small></span></div>
+      <button class="drawer-close" data-close aria-label="Zavrieť">×</button>
+    </div>
+    <div class="drawer-body">
+      <div class="bot-message">Dobrý deň! 👋 Rád vám pomôžem vybrať kávu.</div>
+      <div class="bot-message">Ako ju najčastejšie pripravujete?</div>
+      <div class="chips"><button>Espresso</button><button>Moka kanvička</button><button>Filtrovaná káva</button><button>French press</button></div>
+    </div>
+    <div class="drawer-input"><span>Napíšte svoju otázku...</span><button>→</button></div>
+  </aside>
+  <div class="drawer-backdrop" id="drawerBackdrop" data-close></div>
+
+  <dialog class="interest-dialog" id="interestDialog">
+    <button class="dialog-close" data-interest-close aria-label="Zavrieť">×</button>
+    <strong>247 € jednorazovo + 10 € mesačne</strong>
+    <p>Prvý mesiac zdarma. Bez viazanosti, vypnete kedykoľvek.</p>
+    <a href="mailto:info@mojchatbot.sk" class="btn btn-green">Ozvite sa mi</a>
+  </dialog>
+
+  <script src="/layout-proposals.js?v=1"></script>
+</body>
+</html>
