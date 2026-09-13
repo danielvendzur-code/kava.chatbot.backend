@@ -1,5 +1,5 @@
-/* Zlaté Zrnko: make the real owner-header mark visibly legible without changing
-   the rest of the header or the separate floating-launcher treatment. */
+/* Zlaté Zrnko: separate the real logo from dark brown header surfaces with a
+   restrained cream/gold badge. The logo itself stays unchanged. */
 html body.zlatezrnko-clean .mcb-page .mcb-head .mcb-lockup > img {
   display: block !important;
   width: 58px !important;
@@ -9,20 +9,39 @@ html body.zlatezrnko-clean .mcb-page .mcb-head .mcb-lockup > img {
   min-height: 58px !important;
   max-height: 58px !important;
   margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  filter: contrast(1.18) saturate(1.08) !important;
+  padding: 5px !important;
+  border: 2px solid #c8891f !important;
+  border-radius: 50% !important;
+  background: #f6efe2 !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.3) !important;
+  filter: contrast(1.12) saturate(1.06) !important;
   object-fit: contain !important;
-  object-position: left center !important;
-  transform: scale(1.12) !important;
-  transform-origin: left center !important;
+  object-position: center !important;
+  transform: none !important;
 }
 html body.zlatezrnko-clean .mcb-page .mcb-head .mcb-lockup::before {
   content: none !important;
   display: none !important;
+}
+
+/* The screenshot issue is the advisor header: dark logo artwork was sitting on
+   almost the same dark brown as the bar. Give it the same cream/gold separation. */
+html body.zlatezrnko-clean .widget__brand > img {
+  display: block !important;
+  width: 48px !important;
+  min-width: 48px !important;
+  max-width: 48px !important;
+  height: 48px !important;
+  min-height: 48px !important;
+  max-height: 48px !important;
+  padding: 4px !important;
+  border: 2px solid #c8891f !important;
+  border-radius: 50% !important;
+  background: #f6efe2 !important;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.22) !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  filter: contrast(1.1) saturate(1.05) !important;
 }
 
 @media (max-width:620px) {
@@ -33,6 +52,16 @@ html body.zlatezrnko-clean .mcb-page .mcb-head .mcb-lockup::before {
     height: 50px !important;
     min-height: 50px !important;
     max-height: 50px !important;
-    transform: scale(1.08) !important;
+    padding: 4px !important;
+  }
+
+  html body.zlatezrnko-clean .widget__brand > img {
+    width: 44px !important;
+    min-width: 44px !important;
+    max-width: 44px !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    max-height: 44px !important;
+    padding: 4px !important;
   }
 }
