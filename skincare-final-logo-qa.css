@@ -28,22 +28,23 @@ body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-button
   box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-brand) 68%, transparent) !important;
 }
 
-/* Keep the real raster logo, but give only the logo itself a small neutral
-   backing so dark/blue artwork (SynCare, Natureal, etc.) stays readable on the
-   original brand-colour launcher. The outer circle colour is not changed. */
+/* Real raster logos sit directly on the launcher colour. There must never be a
+   second white/neutral plate around the logo. Multiply also makes baked-in
+   white raster backgrounds visually inherit the same solid launcher colour. */
 body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-real-logo {
   display: block !important;
   width: auto !important;
   height: auto !important;
-  max-width: 56px !important;
-  max-height: 38px !important;
+  max-width: 58px !important;
+  max-height: 40px !important;
   margin: auto !important;
-  padding: 3px 5px !important;
+  padding: 0 !important;
   border: 0 !important;
-  border-radius: 6px !important;
-  background: rgba(255,255,255,.96) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
   box-shadow: none !important;
   filter: none !important;
+  mix-blend-mode: multiply !important;
   object-fit: contain !important;
   object-position: center !important;
   transform: none !important;
@@ -58,21 +59,21 @@ body[data-cosmetics-demo="cyprianus"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="bellmedi"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="lavelin"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="natureal"] .cx-launcher-real-logo {
-  max-width: 60px !important;
-  max-height: 34px !important;
+  max-width: 61px !important;
+  max-height: 35px !important;
 }
 body[data-cosmetics-demo="panakeia"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="soaphoria"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo {
-  max-width: 59px !important;
-  max-height: 36px !important;
+  max-width: 60px !important;
+  max-height: 37px !important;
 }
 body[data-cosmetics-demo="kvitok"] .cx-launcher-real-logo {
   width: 52px !important;
   height: 52px !important;
   max-width: 52px !important;
   max-height: 52px !important;
-  padding: 3px !important;
+  padding: 0 !important;
   border-radius: 50% !important;
   object-fit: contain !important;
 }
