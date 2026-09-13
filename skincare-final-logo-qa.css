@@ -1,5 +1,7 @@
-/* Final, deliberately narrow skincare logo QA.
-   PONIO stays untouched. Header colours stay untouched. */
+/* Final launcher logo QA.
+   PONIO stays untouched. Header colours stay untouched.
+   Restore every demo's original launcher colours from its theme:
+   base = --cx-brand, hover = --cx-accent. Only the inner logo treatment changes. */
 
 body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-owner-kicker::before {
   content: "" !important;
@@ -13,34 +15,42 @@ body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-owner-kicker::b
   box-shadow: none !important;
 }
 
-/* Image logos need a light brand-tinted base so the real artwork never
-   disappears into a launcher painted the same colour as the logo. */
+/* Restore the launcher itself exactly to the previous brand-colour behaviour.
+   This is intentionally independent of whether the real logo is an image or
+   a text/vector wordmark. */
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-button,
 body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-button.cx-launcher-has-image-logo {
   overflow: hidden !important;
-  border: 1px solid color-mix(in srgb, var(--cx-brand) 16%, var(--cx-line)) !important;
-  background-color: color-mix(in srgb, var(--cx-soft) 86%, var(--cx-paper)) !important;
-  color: var(--cx-brand) !important;
-  box-shadow: 0 18px 38px -28px color-mix(in srgb, var(--cx-brand) 38%, transparent) !important;
+  border: 0 !important;
+  background-image: none !important;
+  background-color: var(--cx-brand) !important;
+  color: #fff !important;
+  box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-brand) 68%, transparent) !important;
 }
 
+/* Keep the real raster logo, but give only the logo itself a small neutral
+   backing so dark/blue artwork (SynCare, Natureal, etc.) stays readable on the
+   original brand-colour launcher. The outer circle colour is not changed. */
 body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-real-logo {
   display: block !important;
   width: auto !important;
   height: auto !important;
-  max-width: 54px !important;
+  max-width: 56px !important;
   max-height: 38px !important;
   margin: auto !important;
-  padding: 0 !important;
+  padding: 3px 5px !important;
   border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
+  border-radius: 6px !important;
+  background: rgba(255,255,255,.96) !important;
   box-shadow: none !important;
   filter: none !important;
   object-fit: contain !important;
   object-position: center !important;
   transform: none !important;
+  box-sizing: border-box !important;
 }
 
+/* Wide logos use more width and less height. */
 body[data-cosmetics-demo="syncare"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="modrapupava"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="facederma"] .cx-launcher-real-logo,
@@ -48,24 +58,26 @@ body[data-cosmetics-demo="cyprianus"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="bellmedi"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="lavelin"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="natureal"] .cx-launcher-real-logo {
-  max-width: 58px !important;
-  max-height: 32px !important;
+  max-width: 60px !important;
+  max-height: 34px !important;
 }
 body[data-cosmetics-demo="panakeia"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="soaphoria"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo {
-  max-width: 57px !important;
-  max-height: 35px !important;
+  max-width: 59px !important;
+  max-height: 36px !important;
 }
 body[data-cosmetics-demo="kvitok"] .cx-launcher-real-logo {
-  width: 50px !important;
-  height: 50px !important;
-  max-width: 50px !important;
-  max-height: 50px !important;
+  width: 52px !important;
+  height: 52px !important;
+  max-width: 52px !important;
+  max-height: 52px !important;
+  padding: 3px !important;
+  border-radius: 50% !important;
   object-fit: contain !important;
 }
 
-/* Text/vector wordmarks keep the original brand-colour launcher treatment. */
+/* Text/vector wordmarks keep the same original launcher colours. */
 body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-real-wordmark {
   max-width: 58px !important;
   max-height: 42px !important;
@@ -80,11 +92,11 @@ body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-real-w
 }
 
 @media (hover:hover) and (pointer:fine) {
-  /* Keep the old brand-accent interaction, but tint it enough that natural
-     coloured logos such as SynCare/Natureal remain legible on hover. */
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-button:hover,
   body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-button.cx-launcher-has-image-logo:hover {
-    border-color: color-mix(in srgb, var(--cx-accent) 54%, var(--cx-line)) !important;
-    background-color: color-mix(in srgb, var(--cx-soft) 46%, var(--cx-accent)) !important;
+    border: 0 !important;
+    background-image: none !important;
+    background-color: var(--cx-accent) !important;
     transform: translateY(-2px) !important;
   }
 }
