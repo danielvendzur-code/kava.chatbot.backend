@@ -10,25 +10,30 @@
   /* PONIO is the approved reference and must not be touched. */
   if (slug === 'ponio') return;
 
-  /* These source marks remain readable at launcher size. Restore the real logo
-     after the generic raster fallback script has run. SynCare is deliberately
-     excluded because its source PNG is a wide rectangular badge. */
+  /* Only use a real logo in the round launcher when the source artwork is
+     compact enough to remain readable. Wide wordmarks become clean initials. */
   const REAL_LOGO = new Set([
-    'modrapupava',
-    'facederma',
-    'cyprianus',
     'panakeia',
-    'bellmedi',
-    'lavelin',
     'kvitok',
     'soaphoria',
-    'natureal'
+    'fytopharma'
   ]);
 
-  if (slug === 'syncare') {
+  const FALLBACK_MARK = {
+    modrapupava: 'MP',
+    facederma: 'F',
+    cyprianus: 'C',
+    bellmedi: 'BM',
+    lavelin: 'L',
+    natureal: 'N',
+    syncare: 'SC'
+  };
+
+  if (FALLBACK_MARK[slug]) {
     const mark = document.createElement('span');
     mark.className = 'cx-launcher-fallback';
-    mark.textContent = 'SC';
+    mark.textContent = FALLBACK_MARK[slug];
+    mark.setAttribute('aria-label', brand.name || slug);
     launcher.classList.remove('is-image-logo');
     launcher.replaceChildren(mark);
     return;
