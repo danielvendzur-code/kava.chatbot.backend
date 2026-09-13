@@ -28,12 +28,21 @@ export default async function handler(req, res) {
   try {
     const data = await loadData();
     const { brands, questions } = data;
-    const weights = { skin: 9, goal: 11, routine: 5, texture: 6 };
-    const score = (product, answers) => questions.reduce((total, question) => {
-      const answer = answers[question.key];
-      if (!answer || answer === 'any') return total;
-      return total + (product.tags.includes(answer) ? weights[question.key] : -1);
-    }, 0);
+
+    const recommendationScore = (product, selected) => {
+      let total = 0;
+      if (product.tags.includes(selected.goal)) total += 18;
+      if (product.tags.includes(selected.skin)) total += 15;
+      if (selected.texture !== 'any' && product.tags.includes(selected.texture)) total += 7;
+      if (product.tags.includes(selected.routine)) total += 4;
+      return total;
+    };
+    const rankedProducts = (brand, selected) => {
+      const primary = brand.products.filter((product) => product.tags.includes(selected.skin) || product.tags.includes(selected.goal));
+      const pool = primary.length ? primary : brand.products;
+      return pool.map((product, index) => ({ product, index, score: recommendationScore(product, selected) }))
+        .sort((a, b) => b.score - a.score || a.index - b.index);
+    };
 
     const optionImagesMissing = questions.flatMap((question) => question.options
       .filter((option) => !option.image)
@@ -66,10 +75,8 @@ export default async function handler(req, res) {
       const values = Object.fromEntries(questions.map((question) => [question.key, question.options.map((option) => option.value)]));
       for (const skin of values.skin) for (const goal of values.goal) for (const routine of values.routine) for (const texture of values.texture) {
         combinations += 1;
-        const answers = { skin, goal, routine, texture };
-        const ranked = brand.products
-          .map((product, index) => ({ product, index, score: score(product, answers) }))
-          .sort((a, b) => b.score - a.score || a.index - b.index);
+        const selected = { skin, goal, routine, texture };
+        const ranked = rankedProducts(brand, selected);
         const winner = ranked[0]?.product;
         if (!winner) { noPrimaryWinner += 1; continue; }
 
@@ -77,18 +84,16 @@ export default async function handler(req, res) {
         if (primaryCandidates.length && !winner.tags.includes(skin) && !winner.tags.includes(goal)) noPrimaryWinner += 1;
 
         if (texture !== 'any' && !winner.tags.includes(texture)) {
-          const betterTexture = brand.products.some((product) =>
-            product.tags.includes(texture) &&
-            (product.tags.includes(skin) || product.tags.includes(goal)) &&
-            score(product, answers) >= score(winner, answers));
+          const betterTexture = ranked.some((item) =>
+            item.product.tags.includes(texture) &&
+            item.score > recommendationScore(winner, selected));
           if (betterTexture) avoidableTextureMiss += 1;
         }
 
         if (!winner.tags.includes(routine)) {
-          const betterRoutine = brand.products.some((product) =>
-            product.tags.includes(routine) &&
-            (product.tags.includes(skin) || product.tags.includes(goal)) &&
-            score(product, answers) >= score(winner, answers));
+          const betterRoutine = ranked.some((item) =>
+            item.product.tags.includes(routine) &&
+            item.score > recommendationScore(winner, selected));
           if (betterRoutine) avoidableRoutineMiss += 1;
         }
       }
@@ -114,6 +119,7 @@ export default async function handler(req, res) {
       ok: missingBrands.length === 0 && optionImagesMissing.length === 0 && failed.length === 0,
       expectedBrands: EXPECTED.length,
       actualBrands: Object.keys(brands).length,
+      combinationsChecked: EXPECTED.length * 256,
       missingBrands,
       extraBrands,
       optionImagesMissing,
