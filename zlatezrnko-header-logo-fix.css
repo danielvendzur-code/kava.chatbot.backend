@@ -1,24 +1,38 @@
-/* Zlaté Zrnko: use the real logo in the owner header. The floating launcher
-   keeps its separate gold-ring treatment from zlatezrnko-jolka-theme.css. */
+/* Zlaté Zrnko: make the real owner-header mark visibly legible without changing
+   the rest of the header or the separate floating-launcher treatment. */
 html body.zlatezrnko-clean .mcb-page .mcb-head .mcb-lockup > img {
   display: block !important;
-  width: 50px !important;
-  min-width: 50px !important;
-  max-width: 50px !important;
-  height: 50px !important;
-  min-height: 50px !important;
-  max-height: 50px !important;
+  width: 58px !important;
+  min-width: 58px !important;
+  max-width: 58px !important;
+  height: 58px !important;
+  min-height: 58px !important;
+  max-height: 58px !important;
   margin: 0 !important;
   padding: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
   background: transparent !important;
   box-shadow: none !important;
-  filter: contrast(1.06) saturate(1.03) !important;
+  filter: contrast(1.18) saturate(1.08) !important;
   object-fit: contain !important;
   object-position: left center !important;
+  transform: scale(1.12) !important;
+  transform-origin: left center !important;
 }
 html body.zlatezrnko-clean .mcb-page .mcb-head .mcb-lockup::before {
   content: none !important;
   display: none !important;
+}
+
+@media (max-width:620px) {
+  html body.zlatezrnko-clean .mcb-page .mcb-head .mcb-lockup > img {
+    width: 50px !important;
+    min-width: 50px !important;
+    max-width: 50px !important;
+    height: 50px !important;
+    min-height: 50px !important;
+    max-height: 50px !important;
+    transform: scale(1.08) !important;
+  }
 }
