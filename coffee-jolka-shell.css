@@ -83,14 +83,22 @@ html, body { overflow-x:hidden; }
 .entry__copy small { color:var(--kraft-deep); }
 .entry__arrow { width:36px;height:36px; }
 
+/* Every assistant avatar is a true circle. Some roasteries ship rectangular
+   badge artwork; clipping the image itself prevents a rectangle from showing
+   inside the circular avatar. */
 .msg { align-items:flex-start; }
 .msg__avatar {
   width:34px;height:34px;margin-top:2px;margin-bottom:0;
-  border:0;border-radius:50%;background:var(--ink);overflow:hidden;
+  display:grid;place-items:center;
+  border:1px solid color-mix(in srgb,var(--kraft) 30%,var(--line));
+  border-radius:50%;background:var(--ink);overflow:hidden;
+  clip-path:circle(50% at 50% 50%);
 }
 .msg__avatar img {
-  width:28px!important;height:28px!important;padding:0!important;border:0!important;border-radius:0!important;
-  background:transparent!important;object-fit:contain!important;transition:none!important;
+  width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+  padding:2px!important;border:0!important;border-radius:50%!important;
+  background:transparent!important;object-fit:cover!important;object-position:center!important;
+  transition:none!important;clip-path:circle(50% at 50% 50%);
 }
 
 /* Use the original Jolka chip behaviour: gentle tint + border. Never radial fill. */
