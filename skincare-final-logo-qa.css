@@ -99,3 +99,44 @@ body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-real-w
     transform: translateY(-2px) !important;
   }
 }
+
+/* PONIO, TWO and BIOFY are approved references and intentionally keep the
+   treatment above exactly as-is. The remaining demos use both brand colours at
+   the same time instead of painting the mark and circle in the same hue. */
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button,
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button.cx-launcher-has-image-logo {
+  border: 3px solid var(--cx-brand) !important;
+  background-color: var(--cx-accent) !important;
+  color: var(--cx-brand) !important;
+  box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-brand) 48%, transparent) !important;
+}
+
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-real-wordmark,
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-real-wordmark * {
+  color: var(--cx-brand) !important;
+  -webkit-text-fill-color: var(--cx-brand) !important;
+}
+
+/* Fytopharma's logo already contains its own green/orange artwork. Do not tint
+   it with the launcher's background; show those original colours and use the
+   opposite colour as the outer ring. */
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo {
+  mix-blend-mode: normal !important;
+  filter: saturate(1.06) contrast(1.03) !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button:hover,
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button.cx-launcher-has-image-logo:hover {
+    border-color: var(--cx-accent) !important;
+    background-color: var(--cx-brand) !important;
+    color: var(--cx-accent) !important;
+    box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-accent) 48%, transparent) !important;
+  }
+
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button:hover .cx-launcher-real-wordmark,
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button:hover .cx-launcher-real-wordmark * {
+    color: var(--cx-accent) !important;
+    -webkit-text-fill-color: var(--cx-accent) !important;
+  }
+}
