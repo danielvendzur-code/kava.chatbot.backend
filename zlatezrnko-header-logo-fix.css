@@ -1,0 +1,24 @@
+/* Zlaté Zrnko: use the real logo in the owner header. The floating launcher
+   keeps its separate gold-ring treatment from zlatezrnko-jolka-theme.css. */
+html body.zlatezrnko-clean .mcb-page .mcb-head .mcb-lockup > img {
+  display: block !important;
+  width: 46px !important;
+  min-width: 46px !important;
+  max-width: 46px !important;
+  height: 46px !important;
+  min-height: 46px !important;
+  max-height: 46px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+html body.zlatezrnko-clean .mcb-page .mcb-head .mcb-lockup::before {
+  content: none !important;
+  display: none !important;
+}
