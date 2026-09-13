@@ -1,48 +1,62 @@
-/* Final coffee owner-page correction.
+/* Final coffee owner-page correction shared by every coffee demo.
    Preserve the approved one-screen composition and existing typography/CTAs/pricing.
-   Only keep the product visual + four quality cards slightly larger, centred and aligned. */
+   Only make the product visual + four quality cards a little larger so the right
+   half fills its space better, while keeping the complete block aligned. */
 
 .mcb-page[data-mcb-v2="true"] .mcb-main {
-  grid-template-columns: minmax(0, 1fr) minmax(470px, 560px) !important;
+  grid-template-columns: minmax(0, 1fr) minmax(500px, 600px) !important;
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-frame {
-  max-width: 650px !important;
+  width: 100% !important;
+  max-width: 690px !important;
   position: relative !important;
-  left: -18px !important;
-  grid-template-columns: minmax(0, 1.31fr) minmax(232px, .69fr) !important;
-  gap: 16px !important;
+  left: -10px !important;
+  grid-template-columns: minmax(0, 1.35fr) minmax(244px, .65fr) !important;
+  grid-template-rows: 330px !important;
+  gap: 18px !important;
   align-items: stretch !important;
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-visual {
-  min-height: 296px !important;
-  max-height: 316px !important;
+  width: 100% !important;
+  height: 330px !important;
+  min-height: 330px !important;
+  max-height: 330px !important;
+  align-self: stretch !important;
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side {
-  gap: 9px !important;
+  height: 330px !important;
+  min-height: 330px !important;
+  max-height: 330px !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  grid-template-rows: repeat(4, minmax(0, 1fr)) !important;
+  gap: 10px !important;
   align-self: stretch !important;
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side li,
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side li:first-child,
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side li:last-child {
-  padding: 12px 12px 12px 46px !important;
+  min-height: 0 !important;
+  height: auto !important;
+  padding: 13px 14px 13px 48px !important;
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side li::before {
   left: 12px !important;
   top: 12px !important;
-  width: 24px !important;
-  height: 24px !important;
+  width: 25px !important;
+  height: 25px !important;
 }
 
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side li::after {
-  top: 11px !important;
-  bottom: 11px !important;
+  top: 12px !important;
+  bottom: 12px !important;
 }
 
+/* Keep the approved text sizing. */
 .mcb-page[data-mcb-v2="true"] .mcb-keeps--side b {
   font-size: 13.2px !important;
 }
@@ -53,17 +67,22 @@
 
 @media (max-width: 1180px) {
   .mcb-page[data-mcb-v2="true"] .mcb-main {
-    grid-template-columns: minmax(0, 1fr) minmax(420px, 490px) !important;
+    grid-template-columns: minmax(0, 1fr) minmax(455px, 530px) !important;
   }
+
   .mcb-page[data-mcb-v2="true"] .mcb-frame {
-    max-width: 590px !important;
-    left: -12px !important;
-    grid-template-columns: minmax(0, 1.22fr) minmax(214px, .78fr) !important;
-    gap: 14px !important;
+    max-width: 620px !important;
+    left: -6px !important;
+    grid-template-columns: minmax(0, 1.28fr) minmax(226px, .72fr) !important;
+    grid-template-rows: 300px !important;
+    gap: 15px !important;
   }
-  .mcb-page[data-mcb-v2="true"] .mcb-visual {
-    min-height: 270px !important;
-    max-height: 290px !important;
+
+  .mcb-page[data-mcb-v2="true"] .mcb-visual,
+  .mcb-page[data-mcb-v2="true"] .mcb-keeps--side {
+    height: 300px !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
   }
 }
 
