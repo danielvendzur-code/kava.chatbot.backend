@@ -19,33 +19,41 @@ body.zlatezrnko-clean .msg__avatar img{
   clip-path:circle(50% at 50% 50%)!important;
 }
 
-/* Closed launcher follows the visible round Zlaté Zrnko badge: warm gold outer
-   disc, thin light separator and the dark round logo in the middle. */
+/* Closed state: clean real logo on a light surface. No gold ring until hover. */
 body.zlatezrnko-clean .launcher__button{
   width:72px!important;height:72px!important;
-  padding:6px!important;
+  padding:7px!important;
   overflow:hidden!important;
-  border:2px solid #b97912!important;
+  border:1px solid var(--line)!important;
   border-radius:50%!important;
-  background:#dfa127!important;
-  box-shadow:
-    0 0 0 2px rgba(255,255,255,.92),
-    0 0 0 4px rgba(200,137,31,.72),
-    var(--shadow-float)!important;
+  background:var(--paper)!important;
+  box-shadow:0 18px 38px -26px rgba(46,33,19,.28)!important;
+  transition:background-color .16s ease,border-color .16s ease,box-shadow .16s ease,transform .16s ease!important;
 }
 body.zlatezrnko-clean .launcher__button img{
-  width:56px!important;height:56px!important;max-width:56px!important;max-height:56px!important;
+  width:58px!important;height:58px!important;max-width:58px!important;max-height:58px!important;
   padding:0!important;
-  border:2px solid rgba(255,255,255,.94)!important;
-  border-radius:50%!important;
-  object-fit:cover!important;object-position:center!important;
-  clip-path:circle(50% at 50% 50%)!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  object-fit:contain!important;object-position:center!important;
+  clip-path:none!important;
+  transform:none!important;
 }
-body.zlatezrnko-clean .launcher__button:hover{
-  border-color:#c8891f!important;
-  background:#e7ad36!important;
-  box-shadow:
-    0 0 0 2px #fff,
-    0 0 0 5px rgba(200,137,31,.82),
-    var(--shadow-float)!important;
+
+/* Hover uses the previous gold base treatment. */
+@media(hover:hover) and (pointer:fine){
+  body.zlatezrnko-clean .launcher__button:hover{
+    border:2px solid #b97912!important;
+    background:#dfa127!important;
+    transform:translateY(-2px) scale(1.02)!important;
+    box-shadow:
+      0 0 0 2px rgba(255,255,255,.92),
+      0 0 0 4px rgba(200,137,31,.72),
+      var(--shadow-float)!important;
+  }
+  body.zlatezrnko-clean .launcher__button:hover img{
+    transform:none!important;
+    filter:none!important;
+  }
 }
