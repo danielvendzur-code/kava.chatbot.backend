@@ -1,0 +1,119 @@
+/* Final, deliberately narrow skincare logo QA.
+   Do not redesign approved demos (notably PONIO). Fix only launcher/logo geometry
+   and the owner eyebrow marker reported in QA. Header colours are untouched. */
+
+/* The eyebrow marker is the same short line used by the approved demos — never
+   a dot/ring. PONIO is intentionally excluded because it is already approved. */
+body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-owner-kicker::before {
+  content: "" !important;
+  display: block !important;
+  width: 24px !important;
+  min-width: 24px !important;
+  height: 2px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: var(--cx-accent) !important;
+  box-shadow: none !important;
+}
+
+/* Real-logo launchers use a quiet neutral disc. This removes the coloured halo
+   around the logo without touching the brand colour used by the page header. */
+body[data-cosmetics-demo="modrapupava"] .cx-launcher-button,
+body[data-cosmetics-demo="facederma"] .cx-launcher-button,
+body[data-cosmetics-demo="cyprianus"] .cx-launcher-button,
+body[data-cosmetics-demo="panakeia"] .cx-launcher-button,
+body[data-cosmetics-demo="bellmedi"] .cx-launcher-button,
+body[data-cosmetics-demo="lavelin"] .cx-launcher-button,
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button,
+body[data-cosmetics-demo="soaphoria"] .cx-launcher-button,
+body[data-cosmetics-demo="natureal"] .cx-launcher-button,
+body[data-cosmetics-demo="syncare"] .cx-launcher-button {
+  border: 1px solid color-mix(in srgb, var(--cx-ink) 13%, transparent) !important;
+  background: var(--cx-paper) !important;
+  color: var(--cx-brand) !important;
+  box-shadow: 0 14px 34px -28px color-mix(in srgb, var(--cx-ink) 45%, transparent) !important;
+}
+
+body[data-cosmetics-demo] .cx-launcher-real-logo {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 50px !important;
+  max-height: 36px !important;
+  margin: auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
+}
+
+/* A little more breathing room for visually wider marks. */
+body[data-cosmetics-demo="panakeia"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="modrapupava"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="soaphoria"] .cx-launcher-real-logo {
+  max-width: 52px !important;
+  max-height: 32px !important;
+}
+
+/* SynCare's source PNG contains a rectangular blue badge, so putting the raw
+   raster inside a circle recreates the exact bug from QA. Use a clean SC mark. */
+body[data-cosmetics-demo="syncare"] .cx-launcher-label,
+body[data-cosmetics-demo="syncare"] .cx-launcher-fallback {
+  display: grid !important;
+  place-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  color: #0b4f86 !important;
+  -webkit-text-fill-color: #0b4f86 !important;
+  font-size: 17px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+  letter-spacing: .03em !important;
+}
+
+/* BL remains a monogram, but without a coloured ring in the resting state.
+   Hover still changes colour so the interaction remains visible. */
+body[data-cosmetics-demo="barboralori"] .cx-launcher-button {
+  border: 1px solid color-mix(in srgb, var(--cx-ink) 13%, transparent) !important;
+  background: var(--cx-paper) !important;
+  color: var(--cx-brand) !important;
+  box-shadow: 0 14px 34px -28px color-mix(in srgb, var(--cx-ink) 45%, transparent) !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-launcher-button .cx-barbora-monogram,
+body[data-cosmetics-demo="barboralori"] .cx-launcher-button .cx-barbora-letter {
+  color: var(--cx-brand) !important;
+  -webkit-text-fill-color: var(--cx-brand) !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="modrapupava"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="facederma"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="cyprianus"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="panakeia"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="bellmedi"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="lavelin"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="kvitok"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="soaphoria"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="natureal"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="syncare"] .cx-launcher-button:hover {
+    border-color: color-mix(in srgb, var(--cx-accent) 42%, var(--cx-line)) !important;
+    background: color-mix(in srgb, var(--cx-soft) 66%, var(--cx-paper)) !important;
+    transform: translateY(-2px) !important;
+  }
+
+  body[data-cosmetics-demo="barboralori"] .cx-launcher-button:hover {
+    border-color: var(--cx-accent) !important;
+    background: var(--cx-accent) !important;
+    color: #fff !important;
+  }
+  body[data-cosmetics-demo="barboralori"] .cx-launcher-button:hover .cx-barbora-monogram,
+  body[data-cosmetics-demo="barboralori"] .cx-launcher-button:hover .cx-barbora-letter {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+  }
+}
