@@ -132,24 +132,28 @@ html body.zlatezrnko-clean .msg__avatar img{
   padding:3px!important;
 }
 
-/* Zlaté Zrnko: the circular badge belongs to the floating launcher, not the
-   owner-page header. Keep the header colour intact and use a clean wordmark. */
+/* Zlaté Zrnko header: never replace the real logo with generated text. */
 html body.zlatezrnko-clean .mcb-page .mcb-lockup>img{
-  display:none!important;
+  display:block!important;
+  width:46px!important;
+  min-width:46px!important;
+  max-width:46px!important;
+  height:46px!important;
+  min-height:46px!important;
+  max-height:46px!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  filter:none!important;
+  object-fit:contain!important;
+  object-position:left center!important;
 }
 html body.zlatezrnko-clean .mcb-page .mcb-lockup::before{
-  content:"ZLATÉ ZRNKO"!important;
-  display:inline-flex!important;
-  align-items:center!important;
-  min-height:38px!important;
-  color:var(--mcb-ink)!important;
-  -webkit-text-fill-color:var(--mcb-ink)!important;
-  font-family:"DM Sans",Inter,system-ui,sans-serif!important;
-  font-size:14px!important;
-  font-weight:850!important;
-  line-height:1!important;
-  letter-spacing:.11em!important;
-  white-space:nowrap!important;
+  content:none!important;
+  display:none!important;
 }
 
 /* Jolka: hover must not flood the badge with kraft brown. Keep the dark disc
