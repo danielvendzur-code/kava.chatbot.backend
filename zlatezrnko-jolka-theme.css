@@ -4,3 +4,15 @@ body.zlatezrnko-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button 
 body.zlatezrnko-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
 body.zlatezrnko-clean .msg__avatar img{width:30px!important;height:30px!important}
 body.zlatezrnko-clean .launcher__button img{width:54px!important;height:54px!important}
+
+/* The dark logo used to disappear into the dark closed launcher. Keep the same
+   brand colours, but give the floating button a visible permanent ring; hover
+   only strengthens it instead of being the first moment the edge is readable. */
+body.zlatezrnko-clean .launcher__button{
+  border:2px solid color-mix(in srgb,var(--kraft) 74%,#fff)!important;
+  box-shadow:0 0 0 3px color-mix(in srgb,var(--kraft) 18%,transparent),var(--shadow-float)!important;
+}
+body.zlatezrnko-clean .launcher__button:hover{
+  border-color:color-mix(in srgb,var(--kraft) 88%,#fff)!important;
+  box-shadow:0 0 0 4px color-mix(in srgb,var(--kraft) 24%,transparent),var(--shadow-float)!important;
+}
