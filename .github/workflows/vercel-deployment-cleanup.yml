@@ -1,0 +1,84 @@
+name: Clean up old Vercel deployments
+
+on:
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete only safe old deployments
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_PROJECT_ID: prj_wCzamTfbYrn2asWAU0agL3yoF7nD
+          VERCEL_TEAM_ID: team_xJCHkDHUMXQ0lqpImtY3Fbvr
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          test -n "$VERCEL_TOKEN" || { echo "VERCEL_TOKEN secret is missing"; exit 1; }
+
+          api="https://api.vercel.com"
+          today_start=$(date -u -d 'today 00:00:00' +%s000)
+          cursor=""
+          kept=0
+          deleted=0
+          skipped=0
+
+          project_json=$(curl --fail-with-body -sS \
+            -H "Authorization: Bearer $VERCEL_TOKEN" \
+            "$api/v9/projects/$VERCEL_PROJECT_ID?teamId=$VERCEL_TEAM_ID")
+          production_id=$(jq -r '.latestDeployments[0].id // .latestDeployment.id // empty' <<<"$project_json")
+
+          while :; do
+            url="$api/v6/deployments?projectId=$VERCEL_PROJECT_ID&teamId=$VERCEL_TEAM_ID&limit=100"
+            [ -n "$cursor" ] && url="$url&until=$cursor"
+            page=$(curl --fail-with-body -sS \
+              -H "Authorization: Bearer $VERCEL_TOKEN" "$url")
+            count=$(jq '.deployments | length' <<<"$page")
+            [ "$count" -eq 0 ] && break
+
+            while IFS= read -r deployment; do
+              id=$(jq -r '.id' <<<"$deployment")
+              created=$(jq -r '.created // .createdAt // 0' <<<"$deployment")
+              target=$(jq -r '.target // ""' <<<"$deployment")
+              alias_match=$(jq -r '([.alias // []] | map(select(type == "string" and endswith("mojchatbot.sk"))) | length) > 0' <<<"$deployment")
+
+              if [ "$created" -ge "$today_start" ]; then
+                kept=$((kept+1)); continue
+              fi
+              if [ "$id" = "$production_id" ] || [ "$target" = "production" ] || [ "$alias_match" = "true" ]; then
+                kept=$((kept+1)); continue
+              fi
+
+              detail=$(curl --fail-with-body -sS \
+                -H "Authorization: Bearer $VERCEL_TOKEN" \
+                "$api/v13/deployments/$id?teamId=$VERCEL_TEAM_ID") || { skipped=$((skipped+1)); continue; }
+              detail_project=$(jq -r '.projectId // ""' <<<"$detail")
+              detail_created=$(jq -r '.created // .createdAt // 0' <<<"$detail")
+              detail_target=$(jq -r '.target // ""' <<<"$detail")
+              [ "$detail_project" = "$VERCEL_PROJECT_ID" ] || { skipped=$((skipped+1)); continue; }
+              [ "$detail_created" -lt "$today_start" ] || { skipped=$((skipped+1)); continue; }
+              [ "$detail_target" != "production" ] || { skipped=$((skipped+1)); continue; }
+
+              if curl --fail-with-body -sS -X DELETE \
+                -H "Authorization: Bearer $VERCEL_TOKEN" \
+                "$api/v13/deployments/$id?teamId=$VERCEL_TEAM_ID" >/dev/null; then
+                echo "Deleted $id"
+                deleted=$((deleted+1))
+              else
+                echo "Skipped after DELETE error: $id"
+                skipped=$((skipped+1))
+              fi
+            done < <(jq -c '.deployments[]' <<<"$page")
+
+            next=$(jq -r '.pagination.next // empty' <<<"$page")
+            [ -n "$next" ] || break
+            cursor="$next"
+          done
+
+          echo "Kept: $kept; deleted: $deleted; skipped: $skipped"
