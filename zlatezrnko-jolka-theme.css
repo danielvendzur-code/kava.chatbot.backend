@@ -1,6 +1,59 @@
 /* Zlaté Zrnko brand tokens on the shared Jolka system. */
 :root{--ink:#2e2113;--ink-2:#3a2a12;--ink-3:#3a2a12;--paper:#fffdf8;--surface:#fff;--surface-2:#f6efe2;--line:#e6dbc8;--line-strong:#e6dbc8;--kraft:#c8891f;--kraft-deep:#c8891f;--kraft-tint:#f6efe2;--text:#2e2113;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
-body.zlatezrnko-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
-body.zlatezrnko-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
-body.zlatezrnko-clean .msg__avatar img{width:30px!important;height:30px!important}
-body.zlatezrnko-clean .launcher__button img{width:54px!important;height:54px!important}
+body.zlatezrnko-clean .widget__brand>img{object-fit:contain;width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+
+/* Message logo is always a real circle, never the rectangular source badge. */
+body.zlatezrnko-clean .msg__avatar{
+  width:34px!important;height:34px!important;
+  display:grid!important;place-items:center!important;
+  overflow:hidden!important;
+  border:1px solid color-mix(in srgb,var(--kraft) 52%,#fff)!important;
+  border-radius:50%!important;
+  background:#3a2618!important;
+  clip-path:circle(50% at 50% 50%)!important;
+}
+body.zlatezrnko-clean .msg__avatar img{
+  width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+  padding:2px!important;border:0!important;border-radius:50%!important;
+  object-fit:cover!important;object-position:center!important;
+  clip-path:circle(50% at 50% 50%)!important;
+}
+
+/* Closed state: clean real logo on a light surface. No gold ring until hover. */
+body.zlatezrnko-clean .launcher__button{
+  width:72px!important;height:72px!important;
+  padding:7px!important;
+  overflow:hidden!important;
+  border:1px solid var(--line)!important;
+  border-radius:50%!important;
+  background:var(--paper)!important;
+  box-shadow:0 18px 38px -26px rgba(46,33,19,.28)!important;
+  transition:background-color .16s ease,border-color .16s ease,box-shadow .16s ease,transform .16s ease!important;
+}
+body.zlatezrnko-clean .launcher__button img{
+  width:58px!important;height:58px!important;max-width:58px!important;max-height:58px!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  object-fit:contain!important;object-position:center!important;
+  clip-path:none!important;
+  transform:none!important;
+}
+
+/* Hover uses the previous gold base treatment. */
+@media(hover:hover) and (pointer:fine){
+  body.zlatezrnko-clean .launcher__button:hover{
+    border:2px solid #b97912!important;
+    background:#dfa127!important;
+    transform:translateY(-2px) scale(1.02)!important;
+    box-shadow:
+      0 0 0 2px rgba(255,255,255,.92),
+      0 0 0 4px rgba(200,137,31,.72),
+      var(--shadow-float)!important;
+  }
+  body.zlatezrnko-clean .launcher__button:hover img{
+    transform:none!important;
+    filter:none!important;
+  }
+}
