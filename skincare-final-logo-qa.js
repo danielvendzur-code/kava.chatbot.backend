@@ -7,50 +7,26 @@
   const launcher = document.querySelector('#cx-open');
   if (!brand || !launcher) return;
 
-  /* PONIO is the approved reference and must not be touched. */
+  /* PONIO is the approved reference and must remain exactly as it is. */
   if (slug === 'ponio') return;
 
-  /* Only use a real logo in the round launcher when the source artwork is
-     compact enough to remain readable. Wide wordmarks become clean initials. */
-  const REAL_LOGO = new Set([
-    'panakeia',
-    'kvitok',
-    'soaphoria',
-    'fytopharma'
-  ]);
-
-  const FALLBACK_MARK = {
-    modrapupava: 'MP',
-    facederma: 'F',
-    cyprianus: 'C',
-    bellmedi: 'BM',
-    lavelin: 'L',
-    natureal: 'N',
-    syncare: 'SC'
-  };
-
-  if (FALLBACK_MARK[slug]) {
-    const mark = document.createElement('span');
-    mark.className = 'cx-launcher-fallback';
-    mark.textContent = FALLBACK_MARK[slug];
-    mark.setAttribute('aria-label', brand.name || slug);
-    launcher.classList.remove('is-image-logo');
-    launcher.replaceChildren(mark);
-    return;
-  }
-
-  if (!REAL_LOGO.has(slug)) return;
-
+  /* The closed preview must always carry the firm's real mark from the same
+     wordmark used in the page header. Never replace it with SC/N/BM initials. */
   const template = document.createElement('template');
   template.innerHTML = String(brand.wordmark || '').trim();
-  const source = template.content.querySelector('img');
+  const source = template.content.firstElementChild;
   if (!source) return;
 
-  const img = document.createElement('img');
-  img.className = 'cx-launcher-real-logo';
-  img.src = source.getAttribute('src') || '';
-  img.alt = source.getAttribute('alt') || brand.name || '';
-  img.decoding = 'async';
+  const mark = source.cloneNode(true);
   launcher.classList.remove('is-image-logo');
-  launcher.replaceChildren(img);
+  launcher.replaceChildren(mark);
+
+  if (mark.matches('img')) {
+    mark.classList.add('cx-launcher-real-logo');
+    mark.removeAttribute('width');
+    mark.removeAttribute('height');
+    mark.decoding = 'async';
+  } else {
+    mark.classList.add('cx-launcher-real-wordmark');
+  }
 })();
