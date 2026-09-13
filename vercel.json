@@ -12,24 +12,6 @@
       "destination": "/:sub.html"
     },
     {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "^(?<sub>mylo|ponio|two|bellcoria|biofy|anemone|modrapupava|facederma|cyprianus|panakeia|barboralori|bellmedi|lavelin|kvitok|soaphoria|syncare|fytopharma|natureal)\\.mojchatbot\\.sk$"
-        }
-      ],
-      "destination": "/cosmetics.html"
-    },
-    {
-      "source": "/kozmetika/:slug",
-      "destination": "/cosmetics.html"
-    },
-    {
-      "source": "/kozmetika/:slug/",
-      "destination": "/cosmetics.html"
-    },
-    {
       "source": "/ukazka/jolka",
       "destination": "/jolka.html"
     },
@@ -50,90 +32,50 @@
     {
       "source": "/(.*)\\.html",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     },
     {
       "source": "/(.*)\\.js",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     },
     {
       "source": "/(.*)\\.css",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     },
     {
       "source": "/verzia.txt",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-store"
-        }
+        { "key": "Cache-Control", "value": "no-store" }
       ]
     },
     {
-      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|ebenica|casadelcaffe|coffeeveronia|grandroastery|coffeein|kavoholik|mylo|ponio|two|bellcoria|biofy|anemone|modrapupava|facederma|cyprianus|panakeia|barboralori|bellmedi|lavelin|kvitok|soaphoria|syncare|fytopharma|natureal)",
+      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|ebenica|casadelcaffe|coffeeveronia|grandroastery|coffeein|kavoholik)",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     },
     {
-      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|ebenica|casadelcaffe|coffeeveronia|grandroastery|coffeein|kavoholik|mylo|ponio|two|bellcoria|biofy|anemone|modrapupava|facederma|cyprianus|panakeia|barboralori|bellmedi|lavelin|kvitok|soaphoria|syncare|fytopharma|natureal)/",
+      "source": "/:slug(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|ebenica|casadelcaffe|coffeeveronia|grandroastery|coffeein|kavoholik)/",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     },
     {
       "source": "/ukazka/(.*)",
       "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow, noarchive"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
-      "source": "/kozmetika/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow, noarchive"
-        },
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" },
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
     },
     {
       "source": "/api/(.*)",
       "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-store"
-        }
+        { "key": "Cache-Control", "value": "no-store" }
       ]
     }
   ]
