@@ -1,18 +1,51 @@
 /* Zlaté Zrnko brand tokens on the shared Jolka system. */
 :root{--ink:#2e2113;--ink-2:#3a2a12;--ink-3:#3a2a12;--paper:#fffdf8;--surface:#fff;--surface-2:#f6efe2;--line:#e6dbc8;--line-strong:#e6dbc8;--kraft:#c8891f;--kraft-deep:#c8891f;--kraft-tint:#f6efe2;--text:#2e2113;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
-body.zlatezrnko-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
-body.zlatezrnko-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
-body.zlatezrnko-clean .msg__avatar img{width:30px!important;height:30px!important}
-body.zlatezrnko-clean .launcher__button img{width:54px!important;height:54px!important}
+body.zlatezrnko-clean .widget__brand>img{object-fit:contain;width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
 
-/* The dark logo used to disappear into the dark closed launcher. Keep the same
-   brand colours, but give the floating button a visible permanent ring; hover
-   only strengthens it instead of being the first moment the edge is readable. */
+/* Message logo is always a real circle, never the rectangular source badge. */
+body.zlatezrnko-clean .msg__avatar{
+  width:34px!important;height:34px!important;
+  display:grid!important;place-items:center!important;
+  overflow:hidden!important;
+  border:1px solid color-mix(in srgb,var(--kraft) 52%,#fff)!important;
+  border-radius:50%!important;
+  background:#3a2618!important;
+  clip-path:circle(50% at 50% 50%)!important;
+}
+body.zlatezrnko-clean .msg__avatar img{
+  width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;
+  padding:2px!important;border:0!important;border-radius:50%!important;
+  object-fit:cover!important;object-position:center!important;
+  clip-path:circle(50% at 50% 50%)!important;
+}
+
+/* Closed launcher follows the visible round Zlaté Zrnko badge: warm gold outer
+   disc, thin light separator and the dark round logo in the middle. */
 body.zlatezrnko-clean .launcher__button{
-  border:2px solid color-mix(in srgb,var(--kraft) 74%,#fff)!important;
-  box-shadow:0 0 0 3px color-mix(in srgb,var(--kraft) 18%,transparent),var(--shadow-float)!important;
+  width:72px!important;height:72px!important;
+  padding:6px!important;
+  overflow:hidden!important;
+  border:2px solid #b97912!important;
+  border-radius:50%!important;
+  background:#dfa127!important;
+  box-shadow:
+    0 0 0 2px rgba(255,255,255,.92),
+    0 0 0 4px rgba(200,137,31,.72),
+    var(--shadow-float)!important;
+}
+body.zlatezrnko-clean .launcher__button img{
+  width:56px!important;height:56px!important;max-width:56px!important;max-height:56px!important;
+  padding:0!important;
+  border:2px solid rgba(255,255,255,.94)!important;
+  border-radius:50%!important;
+  object-fit:cover!important;object-position:center!important;
+  clip-path:circle(50% at 50% 50%)!important;
 }
 body.zlatezrnko-clean .launcher__button:hover{
-  border-color:color-mix(in srgb,var(--kraft) 88%,#fff)!important;
-  box-shadow:0 0 0 4px color-mix(in srgb,var(--kraft) 24%,transparent),var(--shadow-float)!important;
+  border-color:#c8891f!important;
+  background:#e7ad36!important;
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 5px rgba(200,137,31,.82),
+    var(--shadow-float)!important;
 }
