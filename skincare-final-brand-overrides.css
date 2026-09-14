@@ -109,25 +109,38 @@ body[data-cosmetics-demo="modrapupava"] .cx-widget-brand > img.cx-final-trimmed-
   object-position: left center !important;
 }
 
-/* Facederma — old hover becomes rest; old rest becomes hover. */
+/* Facederma — keep the real high-resolution wordmark crisp and high-contrast.
+   The logo is trimmed in JS so transparent padding does not make the mark look tiny. */
 body[data-cosmetics-demo="facederma"] .cx-launcher-button {
   background-color: var(--cx-brand) !important;
 }
-body[data-cosmetics-demo="facederma"] .cx-launcher-real-logo {
+body[data-cosmetics-demo="facederma"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="facederma"] .cx-final-trimmed-launcher {
+  width: auto !important;
+  height: auto !important;
+  max-width: 61px !important;
+  max-height: 34px !important;
+  margin: auto !important;
+  padding: 0 !important;
   filter: brightness(0) invert(1) !important;
   mix-blend-mode: normal !important;
+  image-rendering: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  transform: none !important;
 }
 @media (hover:hover) and (pointer:fine) {
   body[data-cosmetics-demo="facederma"] .cx-launcher-button:hover {
     background-color: var(--cx-accent) !important;
   }
-  body[data-cosmetics-demo="facederma"] .cx-launcher-button:hover .cx-launcher-real-logo {
-    filter: none !important;
+  body[data-cosmetics-demo="facederma"] .cx-launcher-button:hover .cx-launcher-real-logo,
+  body[data-cosmetics-demo="facederma"] .cx-launcher-button:hover .cx-final-trimmed-launcher {
+    filter: brightness(0) invert(1) !important;
     mix-blend-mode: normal !important;
   }
 }
 
-/* Cyprianus — icon only, no wordmark text inside the launcher. */
+/* Cyprianus — icon only, no wordmark text inside the launcher or chat avatar. */
 body[data-cosmetics-demo="cyprianus"] .cx-cyprianus-symbol {
   width: 46px !important;
   height: 46px !important;
@@ -145,21 +158,28 @@ body[data-cosmetics-demo="cyprianus"] .cx-cyprianus-symbol img {
   margin: 0 !important;
   filter: brightness(0) invert(1) !important;
 }
+body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-symbol {
+  width: 28px !important;
+  height: 28px !important;
+}
+body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-symbol img {
+  height: 28px !important;
+}
 
-/* Panakeia — reverse the two launcher fills. */
+/* Panakeia — swap the CURRENT states: accent at rest, brand on hover. */
 body[data-cosmetics-demo="panakeia"] .cx-launcher-button {
-  background-color: var(--cx-brand) !important;
+  background-color: var(--cx-accent) !important;
 }
 body[data-cosmetics-demo="panakeia"] .cx-launcher-real-logo {
-  filter: brightness(0) invert(1) !important;
+  filter: none !important;
   mix-blend-mode: normal !important;
 }
 @media (hover:hover) and (pointer:fine) {
   body[data-cosmetics-demo="panakeia"] .cx-launcher-button:hover {
-    background-color: var(--cx-accent) !important;
+    background-color: var(--cx-brand) !important;
   }
   body[data-cosmetics-demo="panakeia"] .cx-launcher-button:hover .cx-launcher-real-logo {
-    filter: none !important;
+    filter: brightness(0) invert(1) !important;
     mix-blend-mode: normal !important;
   }
 }
