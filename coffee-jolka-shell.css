@@ -244,7 +244,7 @@ html, body { overflow-x:hidden; }
   margin-right: 7px;
 }
 .widget__brand > div > span::after {
-  content: "poradca online";
+  content: "online poradca";
   font-size: 12.5px;
   line-height: 1.2;
 }
