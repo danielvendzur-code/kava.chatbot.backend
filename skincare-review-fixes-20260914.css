@@ -1,22 +1,34 @@
 /* Narrow follow-up: only Barbora Lori, Cyprianus and Panakeia. */
 
-/* Barbora Lori — make the existing BL brand mark clearly readable without
-   touching the header or changing the launcher geometry. */
+/* Barbora Lori — the current launcher renders a dark wordmark on a dark bubble.
+   Force whichever real mark is present (image, wordmark or monogram) to a clean
+   high-contrast white without changing launcher geometry or the open header. */
 body[data-cosmetics-demo="barboralori"] #cx-open.cx-launcher-button {
   background-color: var(--cx-brand) !important;
   border: 0 !important;
   outline: 0 !important;
 }
-body[data-cosmetics-demo="barboralori"] #cx-open .cx-barbora-monogram {
-  width: 60px !important;
-  height: 48px !important;
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 2px !important;
-  margin: 0 !important;
+body[data-cosmetics-demo="barboralori"] #cx-open .cx-launcher-real-logo,
+body[data-cosmetics-demo="barboralori"] #cx-open img {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: 64px !important;
+  max-height: 40px !important;
+  margin: auto !important;
+  opacity: 1 !important;
+  filter: brightness(0) invert(1) !important;
+  mix-blend-mode: normal !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+body[data-cosmetics-demo="barboralori"] #cx-open .cx-launcher-real-wordmark,
+body[data-cosmetics-demo="barboralori"] #cx-open .cx-launcher-real-wordmark *,
+body[data-cosmetics-demo="barboralori"] #cx-open .cx-barbora-monogram,
+body[data-cosmetics-demo="barboralori"] #cx-open .cx-barbora-monogram * {
   color: #fff !important;
   -webkit-text-fill-color: #fff !important;
+  opacity: 1 !important;
 }
 body[data-cosmetics-demo="barboralori"] #cx-open .cx-barbora-letter::before {
   color: #fff !important;
@@ -31,25 +43,23 @@ body[data-cosmetics-demo="barboralori"] #cx-open .cx-barbora-letter::before {
   }
 }
 
-/* Cyprianus — keep the exact compact emblem treatment used by the preview.
-   The message avatar is the same emblem, only fitted into the smaller avatar. */
+/* Cyprianus — show only the compact emblem crop in both places. The preview
+   and every assistant avatar use exactly the same SVG crop; only the size differs. */
 body[data-cosmetics-demo="cyprianus"] #cx-open .cx-cyprianus-symbol {
   width: 46px !important;
   height: 46px !important;
-  display: block !important;
+  display: grid !important;
+  place-items: center !important;
   overflow: hidden !important;
   border: 0 !important;
   background: transparent !important;
 }
-body[data-cosmetics-demo="cyprianus"] #cx-open .cx-cyprianus-symbol img {
+body[data-cosmetics-demo="cyprianus"] #cx-open .cx-cyprianus-symbol svg {
+  width: 42px !important;
+  height: 42px !important;
   display: block !important;
-  width: auto !important;
-  height: 46px !important;
-  max-width: none !important;
-  max-height: none !important;
-  margin: 0 !important;
+  overflow: hidden !important;
   filter: brightness(0) invert(1) !important;
-  transform: none !important;
 }
 body[data-cosmetics-demo="cyprianus"] .cx-message-avatar {
   display: grid !important;
@@ -59,26 +69,22 @@ body[data-cosmetics-demo="cyprianus"] .cx-message-avatar {
 body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-symbol {
   width: 30px !important;
   height: 30px !important;
-  display: block !important;
+  display: grid !important;
+  place-items: center !important;
   overflow: hidden !important;
   border: 0 !important;
   background: transparent !important;
 }
-body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-symbol img {
+body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-symbol svg {
+  width: 28px !important;
+  height: 28px !important;
   display: block !important;
-  width: auto !important;
-  height: 30px !important;
-  max-width: none !important;
-  max-height: none !important;
-  margin: 0 !important;
+  overflow: hidden !important;
   filter: brightness(0) invert(1) !important;
-  transform: none !important;
 }
 
-/* Panakeia — true reversal of the original states.
-   Original resting state was accent and original hover was brand, so the
-   required result is brand at rest and accent on hover. ID specificity makes
-   this win over the older generic :not(...) launcher rules. */
+/* Panakeia — keep the now-approved reversed fills. Only make the hover logo
+   visibly lighter, as requested. */
 body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button,
 body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button.cx-launcher-has-image-logo {
   background-image: none !important;
@@ -88,6 +94,7 @@ body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button.cx-launcher-has
 }
 body[data-cosmetics-demo="panakeia"] #cx-open .cx-launcher-real-logo {
   filter: brightness(0) invert(1) !important;
+  opacity: 1 !important;
   mix-blend-mode: normal !important;
 }
 @media (hover:hover) and (pointer:fine) {
@@ -96,7 +103,8 @@ body[data-cosmetics-demo="panakeia"] #cx-open .cx-launcher-real-logo {
     background-color: var(--cx-accent) !important;
   }
   body[data-cosmetics-demo="panakeia"] #cx-open:hover .cx-launcher-real-logo {
-    filter: none !important;
+    filter: brightness(0) invert(1) !important;
+    opacity: .72 !important;
     mix-blend-mode: normal !important;
   }
 }
