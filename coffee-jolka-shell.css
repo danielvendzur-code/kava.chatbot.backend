@@ -234,3 +234,17 @@ html, body { overflow-x:hidden; }
     padding: 9px 14px 11px;
   }
 }
+
+/* Make the status self-explanatory in every coffee demo without changing the
+   existing dot, header spacing or brand-specific colours. */
+.widget__brand > div > span {
+  font-size: 0 !important;
+}
+.widget__brand > div > span > i {
+  margin-right: 7px;
+}
+.widget__brand > div > span::after {
+  content: "poradca online";
+  font-size: 12.5px;
+  line-height: 1.2;
+}
