@@ -24,50 +24,53 @@ body[data-cosmetics-demo="barboralori"] #cx-open .cx-barbora-letter::before {
   }
 }
 
-/* Cyprianus — use the real emblem from the left side of the official 150x35 SVG.
-   The wordmark begins to the right of the clipped box, so it cannot appear. */
-body[data-cosmetics-demo="cyprianus"] #cx-open .cx-cyprianus-symbol {
+/* Cyprianus — force the official left-hand emblem at the CSS layer too.
+   This does not depend on any JS replacement: all launcher/avatar children are
+   hidden and the first 35x35 part of the real 150x35 SVG is painted directly. */
+body[data-cosmetics-demo="cyprianus"] #cx-open.cx-launcher-button {
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  font-size: 0 !important;
+  color: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+body[data-cosmetics-demo="cyprianus"] #cx-open.cx-launcher-button > * {
+  display: none !important;
+}
+body[data-cosmetics-demo="cyprianus"] #cx-open.cx-launcher-button::before {
+  content: "" !important;
+  display: block !important;
   width: 48px !important;
   height: 48px !important;
-  display: block !important;
-  overflow: hidden !important;
-  border: 0 !important;
-  background: transparent !important;
-}
-body[data-cosmetics-demo="cyprianus"] #cx-open .cx-cyprianus-symbol img {
-  display: block !important;
-  width: auto !important;
-  height: 48px !important;
-  max-width: none !important;
-  max-height: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
+  background-image: url('/assets/cosmetics/cyprianus-logo.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: 205.714px 48px !important;
   filter: brightness(0) invert(1) !important;
   transform: none !important;
 }
 body[data-cosmetics-demo="cyprianus"] .cx-message-avatar {
+  position: relative !important;
   display: grid !important;
   place-items: center !important;
   overflow: hidden !important;
+  font-size: 0 !important;
+  color: transparent !important;
 }
-body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-symbol {
+body[data-cosmetics-demo="cyprianus"] .cx-message-avatar > * {
+  display: none !important;
+}
+body[data-cosmetics-demo="cyprianus"] .cx-message-avatar::before {
+  content: "" !important;
+  display: block !important;
   width: 29px !important;
   height: 29px !important;
-  display: block !important;
-  overflow: hidden !important;
-  border: 0 !important;
-  background: transparent !important;
-}
-body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-symbol img {
-  display: block !important;
-  width: auto !important;
-  height: 29px !important;
-  max-width: none !important;
-  max-height: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: 0 !important;
+  background-image: url('/assets/cosmetics/cyprianus-logo.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: 124.286px 29px !important;
   filter: brightness(0) invert(1) !important;
   transform: none !important;
 }
