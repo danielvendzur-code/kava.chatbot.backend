@@ -24,24 +24,52 @@ body[data-cosmetics-demo="barboralori"] #cx-open .cx-barbora-letter::before {
   }
 }
 
-/* Cyprianus — real emblem only. JS extracts Path_1 from the original SVG,
-   so neither the preview nor message avatar contains the Cyprianus wordmark. */
-body[data-cosmetics-demo="cyprianus"] #cx-open .cx-cyprianus-emblem {
+/* Cyprianus — use the real emblem from the left side of the official 150x35 SVG.
+   The wordmark begins to the right of the clipped box, so it cannot appear. */
+body[data-cosmetics-demo="cyprianus"] #cx-open .cx-cyprianus-symbol {
   width: 48px !important;
   height: 48px !important;
   display: block !important;
-  color: #fff !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+body[data-cosmetics-demo="cyprianus"] #cx-open .cx-cyprianus-symbol img {
+  display: block !important;
+  width: auto !important;
+  height: 48px !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  filter: brightness(0) invert(1) !important;
+  transform: none !important;
 }
 body[data-cosmetics-demo="cyprianus"] .cx-message-avatar {
   display: grid !important;
   place-items: center !important;
   overflow: hidden !important;
 }
-body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-emblem {
+body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-symbol {
   width: 29px !important;
   height: 29px !important;
   display: block !important;
-  color: #fff !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-symbol img {
+  display: block !important;
+  width: auto !important;
+  height: 29px !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  filter: brightness(0) invert(1) !important;
+  transform: none !important;
 }
 
 /* Panakeia — keep the approved fill states; only make the hover logo lighter. */
