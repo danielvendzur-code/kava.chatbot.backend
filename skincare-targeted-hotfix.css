@@ -22,65 +22,8 @@ body[data-cosmetics-demo] .cx-widget-brand > .cx-status {
   line-height: 1.05 !important;
 }
 
-/* Kvitok: one branded green launcher circle and a white cleaned wordmark.
-   No second coloured disc, outline, ring or same-colour logo-on-fill. */
-body[data-cosmetics-demo="kvitok"] .cx-launcher-button,
-body[data-cosmetics-demo="kvitok"] .cx-launcher-button.cx-launcher-has-image-logo {
-  background-image: none !important;
-  background-color: var(--cx-brand) !important;
-  border: 0 !important;
-  outline: 0 !important;
-  box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-brand) 58%, transparent) !important;
-}
-body[data-cosmetics-demo="kvitok"] .cx-launcher-real-logo,
-body[data-cosmetics-demo="kvitok"] .cx-kvitok-launcher-clean {
-  width: 62px !important;
-  height: auto !important;
-  max-width: 62px !important;
-  max-height: 44px !important;
-  margin: auto !important;
-  padding: 0 !important;
-  border: 0 !important;
-  outline: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  filter: none !important;
-  mix-blend-mode: normal !important;
-  object-fit: contain !important;
-  object-position: center !important;
-}
-/* Never leave a blank disc while the real Kvitok mark is being cleaned. */
-body[data-cosmetics-demo="kvitok"] .cx-launcher-button.cx-kvitok-processing > img {
-  opacity: 0 !important;
-}
-body[data-cosmetics-demo="kvitok"] .cx-kvitok-fallback-wordmark {
-  position: absolute !important;
-  inset: 0 !important;
-  display: grid !important;
-  place-items: center !important;
-  padding: 0 8px !important;
-  color: #fff !important;
-  -webkit-text-fill-color: #fff !important;
-  font-family: Georgia, "Times New Roman", serif !important;
-  font-size: 18px !important;
-  font-style: italic !important;
-  font-weight: 700 !important;
-  line-height: 1 !important;
-  letter-spacing: -.04em !important;
-  text-align: center !important;
-  pointer-events: none !important;
-}
-@media (hover:hover) and (pointer:fine) {
-  body[data-cosmetics-demo="kvitok"] .cx-launcher-button:hover,
-  body[data-cosmetics-demo="kvitok"] .cx-launcher-button.cx-launcher-has-image-logo:hover {
-    background-color: var(--cx-accent) !important;
-    border: 0 !important;
-  }
-}
-
-/* Kvitok header: same cleaned white mark, no badge border. The status position
-   is governed by the common header rule above, not a one-off offset. */
+/* Kvitok header only. Launcher final appearance is owned by
+   kvitok-direct-logo.css, loaded after this file. */
 body[data-cosmetics-demo="kvitok"] .cx-widget-head {
   background: var(--cx-brand) !important;
   border: 0 !important;
@@ -137,5 +80,14 @@ body[data-cosmetics-demo="fytopharma"] .cx-fytopharma-launcher-clean {
   body[data-cosmetics-demo="fytopharma"] .cx-launcher-button.cx-launcher-has-image-logo:hover {
     background-color: color-mix(in srgb, var(--cx-accent) 82%, #ffffff) !important;
     border: 0 !important;
+  }
+
+  /* Raster logos such as Facederma, Lavelin, Natureal and SynCare sit on the
+     existing dark brand-colour hover. Keep that hover colour, but render the
+     logo white so black/dark artwork can never disappear into the circle. */
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]):not([data-cosmetics-demo="kvitok"]):not([data-cosmetics-demo="fytopharma"]) .cx-launcher-button:hover .cx-launcher-real-logo,
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]):not([data-cosmetics-demo="kvitok"]):not([data-cosmetics-demo="fytopharma"]) .cx-launcher-button.cx-launcher-has-image-logo:hover .cx-launcher-real-logo {
+    filter: brightness(0) invert(1) !important;
+    mix-blend-mode: normal !important;
   }
 }
