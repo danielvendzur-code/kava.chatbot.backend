@@ -1,0 +1,235 @@
+/* Final targeted skincare review — 2026-09-14.
+   Only the brands explicitly called out in review are touched here.
+   Coffee and Kvitok are intentionally outside every selector. */
+
+/* ---------- shared targeted launcher hygiene ---------- */
+body[data-cosmetics-demo="two"] .cx-launcher-button,
+body[data-cosmetics-demo="bellcoria"] .cx-launcher-button,
+body[data-cosmetics-demo="anemone"] .cx-launcher-button,
+body[data-cosmetics-demo="modrapupava"] .cx-launcher-button,
+body[data-cosmetics-demo="facederma"] .cx-launcher-button,
+body[data-cosmetics-demo="cyprianus"] .cx-launcher-button,
+body[data-cosmetics-demo="panakeia"] .cx-launcher-button,
+body[data-cosmetics-demo="barboralori"] .cx-launcher-button,
+body[data-cosmetics-demo="syncare"] .cx-launcher-button,
+body[data-cosmetics-demo="natureal"] .cx-launcher-button {
+  border: 0 !important;
+  outline: 0 !important;
+  background-image: none !important;
+}
+
+/* TWO — swap the old base and hover fills. */
+body[data-cosmetics-demo="two"] .cx-launcher-button {
+  background-color: var(--cx-brand) !important;
+  color: #fff !important;
+}
+body[data-cosmetics-demo="two"] .cx-launcher-real-wordmark,
+body[data-cosmetics-demo="two"] .cx-launcher-real-wordmark * {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="two"] .cx-launcher-button:hover {
+    background-color: var(--cx-accent) !important;
+  }
+}
+
+/* Bellcoria — higher contrast in both states. */
+body[data-cosmetics-demo="bellcoria"] .cx-launcher-button {
+  background-color: var(--cx-brand) !important;
+  color: #fff !important;
+}
+body[data-cosmetics-demo="bellcoria"] .cx-launcher-real-wordmark,
+body[data-cosmetics-demo="bellcoria"] .cx-launcher-real-wordmark * {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  font-weight: 800 !important;
+  font-size: 14px !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="bellcoria"] .cx-launcher-button:hover {
+    background-color: var(--cx-accent) !important;
+  }
+  body[data-cosmetics-demo="bellcoria"] .cx-launcher-button:hover .cx-launcher-real-wordmark,
+  body[data-cosmetics-demo="bellcoria"] .cx-launcher-button:hover .cx-launcher-real-wordmark * {
+    color: var(--cx-brand) !important;
+    -webkit-text-fill-color: var(--cx-brand) !important;
+  }
+}
+
+/* ANEMONE — dark blue resting fill, white wordmark, pale-blue hover. */
+body[data-cosmetics-demo="anemone"] .cx-launcher-button {
+  background-color: var(--cx-brand) !important;
+  color: #fff !important;
+}
+body[data-cosmetics-demo="anemone"] .cx-launcher-real-wordmark,
+body[data-cosmetics-demo="anemone"] .cx-launcher-real-wordmark * {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  font-weight: 850 !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="anemone"] .cx-launcher-button:hover {
+    background-color: var(--cx-accent) !important;
+  }
+  body[data-cosmetics-demo="anemone"] .cx-launcher-button:hover .cx-launcher-real-wordmark,
+  body[data-cosmetics-demo="anemone"] .cx-launcher-button:hover .cx-launcher-real-wordmark * {
+    color: #fff !important;
+    -webkit-text-fill-color: #fff !important;
+  }
+}
+
+/* Modra pupava — launcher gets the flower only; header image is trimmed in JS. */
+body[data-cosmetics-demo="modrapupava"] .cx-modrapupava-symbol {
+  width: 46px !important;
+  height: 46px !important;
+  display: block !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+body[data-cosmetics-demo="modrapupava"] .cx-modrapupava-symbol img {
+  display: block !important;
+  height: 46px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  filter: brightness(0) invert(1) !important;
+  object-fit: contain !important;
+}
+body[data-cosmetics-demo="modrapupava"] .cx-widget-brand > img.cx-final-trimmed-header {
+  width: auto !important;
+  height: 30px !important;
+  max-width: 116px !important;
+  max-height: 30px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+/* Facederma — old hover becomes rest; old rest becomes hover. */
+body[data-cosmetics-demo="facederma"] .cx-launcher-button {
+  background-color: var(--cx-brand) !important;
+}
+body[data-cosmetics-demo="facederma"] .cx-launcher-real-logo {
+  filter: brightness(0) invert(1) !important;
+  mix-blend-mode: normal !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="facederma"] .cx-launcher-button:hover {
+    background-color: var(--cx-accent) !important;
+  }
+  body[data-cosmetics-demo="facederma"] .cx-launcher-button:hover .cx-launcher-real-logo {
+    filter: none !important;
+    mix-blend-mode: normal !important;
+  }
+}
+
+/* Cyprianus — icon only, no wordmark text inside the launcher. */
+body[data-cosmetics-demo="cyprianus"] .cx-cyprianus-symbol {
+  width: 46px !important;
+  height: 46px !important;
+  display: block !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+body[data-cosmetics-demo="cyprianus"] .cx-cyprianus-symbol img {
+  display: block !important;
+  height: 46px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  filter: brightness(0) invert(1) !important;
+}
+
+/* Panakeia — reverse the two launcher fills. */
+body[data-cosmetics-demo="panakeia"] .cx-launcher-button {
+  background-color: var(--cx-brand) !important;
+}
+body[data-cosmetics-demo="panakeia"] .cx-launcher-real-logo {
+  filter: brightness(0) invert(1) !important;
+  mix-blend-mode: normal !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="panakeia"] .cx-launcher-button:hover {
+    background-color: var(--cx-accent) !important;
+  }
+  body[data-cosmetics-demo="panakeia"] .cx-launcher-button:hover .cx-launcher-real-logo {
+    filter: none !important;
+    mix-blend-mode: normal !important;
+  }
+}
+
+/* Barbora Lori — trim the real wordmark and give it strong contrast. */
+body[data-cosmetics-demo="barboralori"] .cx-launcher-button {
+  background-color: var(--cx-brand) !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="barboralori"] .cx-final-trimmed-launcher {
+  width: auto !important;
+  height: auto !important;
+  max-width: 62px !important;
+  max-height: 38px !important;
+  margin: auto !important;
+  filter: brightness(0) invert(1) !important;
+  mix-blend-mode: normal !important;
+}
+body[data-cosmetics-demo="barboralori"] .cx-widget-brand > img.cx-final-trimmed-header {
+  width: auto !important;
+  height: 31px !important;
+  max-width: 118px !important;
+  max-height: 31px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="barboralori"] .cx-launcher-button:hover {
+    background-color: var(--cx-accent) !important;
+  }
+  body[data-cosmetics-demo="barboralori"] .cx-launcher-button:hover .cx-launcher-real-logo,
+  body[data-cosmetics-demo="barboralori"] .cx-launcher-button:hover .cx-final-trimmed-launcher {
+    filter: brightness(0) invert(1) !important;
+  }
+}
+
+/* SynCare — reverse resting and hover fills. */
+body[data-cosmetics-demo="syncare"] .cx-launcher-button {
+  background-color: var(--cx-brand) !important;
+}
+body[data-cosmetics-demo="syncare"] .cx-launcher-real-logo {
+  filter: brightness(0) invert(1) !important;
+  mix-blend-mode: normal !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="syncare"] .cx-launcher-button:hover {
+    background-color: var(--cx-accent) !important;
+  }
+  body[data-cosmetics-demo="syncare"] .cx-launcher-button:hover .cx-launcher-real-logo {
+    filter: none !important;
+    mix-blend-mode: normal !important;
+  }
+}
+
+/* Natureal — reverse resting and hover fills. */
+body[data-cosmetics-demo="natureal"] .cx-launcher-button {
+  background-color: var(--cx-brand) !important;
+}
+body[data-cosmetics-demo="natureal"] .cx-launcher-real-logo {
+  filter: brightness(0) invert(1) !important;
+  mix-blend-mode: normal !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="natureal"] .cx-launcher-button:hover {
+    background-color: var(--cx-accent) !important;
+  }
+  body[data-cosmetics-demo="natureal"] .cx-launcher-button:hover .cx-launcher-real-logo {
+    filter: none !important;
+    mix-blend-mode: normal !important;
+  }
+}
