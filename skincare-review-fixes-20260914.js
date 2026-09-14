@@ -7,19 +7,20 @@
   const launcher = document.querySelector('#cx-open');
   if (!launcher) return;
 
-  /* Restore the exact compact Cyprianus preview mark used before the last
-     follow-up. Do not alter the launcher fill or geometry here. */
+  /* The source SVG is a 150x35 horizontal logo. The actual emblem occupies the
+     left 35x35 area. Crop that area with an SVG viewport so no wordmark text can
+     leak into the round launcher. */
+  const symbolMarkup = '<span class="cx-cyprianus-symbol" aria-label="Cyprianus"><svg viewBox="0 0 35 35" aria-hidden="true" focusable="false"><image href="/assets/cosmetics/cyprianus-logo.svg" x="0" y="0" width="150" height="35" preserveAspectRatio="xMinYMid meet"></image></svg></span>';
+
   launcher.classList.remove('is-image-logo', 'cx-launcher-has-image-logo', 'cx-launcher-has-wordmark');
   launcher.classList.add('cx-launcher-has-image-logo');
-  launcher.innerHTML = '<span class="cx-cyprianus-symbol" aria-label="Cyprianus"><img src="/assets/cosmetics/cyprianus-logo.svg" alt=""></span>';
+  launcher.innerHTML = symbolMarkup;
 
-  /* Assistant message avatars must use the very same mark as the preview,
-     not the full Cyprianus wordmark. */
+  /* Chat message avatars use exactly the same emblem markup as the preview. */
   const syncAvatars = () => {
-    const markup = launcher.innerHTML;
     document.querySelectorAll('.cx-message-avatar').forEach((avatar) => {
-      if (avatar.innerHTML === markup) return;
-      avatar.innerHTML = markup;
+      if (avatar.querySelector('.cx-cyprianus-symbol')) return;
+      avatar.innerHTML = symbolMarkup;
     });
   };
 
