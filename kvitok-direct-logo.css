@@ -1,4 +1,4 @@
-/* Kvitok: always render the real brand artwork. No empty accent disc, no generated text. */
+/* Kvitok-only final polish. Keep all other skincare demos untouched. */
 body[data-cosmetics-demo="kvitok"] .cx-launcher-button,
 body[data-cosmetics-demo="kvitok"] .cx-launcher-button:hover,
 body[data-cosmetics-demo="kvitok"] .cx-launcher-button:focus-visible {
@@ -9,14 +9,15 @@ body[data-cosmetics-demo="kvitok"] .cx-launcher-button:focus-visible {
   background: var(--cx-brand) !important;
 }
 
+/* Preview bubble: keep the real logo, just a little smaller than before. */
 body[data-cosmetics-demo="kvitok"] .cx-launcher-button > img,
 body[data-cosmetics-demo="kvitok"] .cx-kvitok-direct-mark {
   display: block !important;
-  width: 100% !important;
-  height: 100% !important;
+  width: 90% !important;
+  height: 90% !important;
   max-width: none !important;
   max-height: none !important;
-  margin: 0 !important;
+  margin: 5% auto !important;
   padding: 0 !important;
   border: 0 !important;
   border-radius: 50% !important;
@@ -25,20 +26,40 @@ body[data-cosmetics-demo="kvitok"] .cx-kvitok-direct-mark {
   filter: none !important;
   opacity: 1 !important;
   visibility: visible !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
   object-position: center !important;
   transform: none !important;
 }
 
-/* Assistant messages use the real Kvitok artwork too — never a typed K. */
+/* Open widget header: use the cleaned real wordmark only, not the circular plate. */
+body[data-cosmetics-demo="kvitok"] .cx-widget-brand > img.cx-kvitok-header-clean {
+  display: block !important;
+  width: 82px !important;
+  height: 32px !important;
+  max-width: 82px !important;
+  max-height: 32px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+/* Assistant messages: crop the actual K from the original Kvitok artwork. */
 body[data-cosmetics-demo="kvitok"] .cx-message-avatar {
   padding: 0 !important;
   overflow: hidden !important;
   border-radius: 50% !important;
-  background: var(--cx-brand) !important;
+  background: var(--cx-soft) !important;
+  display: grid !important;
+  place-items: center !important;
 }
-body[data-cosmetics-demo="kvitok"] .cx-message-avatar > img,
-body[data-cosmetics-demo="kvitok"] .cx-kvitok-message-mark {
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-message-k {
   display: block !important;
   width: 100% !important;
   height: 100% !important;
@@ -47,17 +68,12 @@ body[data-cosmetics-demo="kvitok"] .cx-kvitok-message-mark {
   margin: 0 !important;
   padding: 0 !important;
   border: 0 !important;
-  border-radius: 50% !important;
   background: transparent !important;
   box-shadow: none !important;
-  filter: none !important;
-  opacity: 1 !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  transform: none !important;
+  overflow: hidden !important;
 }
 
-/* Disable remnants of the previous processing/fallback path. */
+/* Disable remnants of older Kvitok fallback/processing paths. */
 body[data-cosmetics-demo="kvitok"] .cx-kvitok-fallback-wordmark {
   display: none !important;
 }
