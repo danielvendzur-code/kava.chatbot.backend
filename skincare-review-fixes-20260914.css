@@ -1,90 +1,50 @@
 /* Narrow follow-up: only Barbora Lori, Cyprianus and Panakeia. */
 
-/* Barbora Lori — the current launcher renders a dark wordmark on a dark bubble.
-   Force whichever real mark is present (image, wordmark or monogram) to a clean
-   high-contrast white without changing launcher geometry or the open header. */
+/* Barbora Lori — strong contrast in the closed preview bubble. */
 body[data-cosmetics-demo="barboralori"] #cx-open.cx-launcher-button {
-  background-color: var(--cx-brand) !important;
+  background-color: var(--cx-accent) !important;
   border: 0 !important;
   outline: 0 !important;
 }
+body[data-cosmetics-demo="barboralori"] #cx-open img,
 body[data-cosmetics-demo="barboralori"] #cx-open .cx-launcher-real-logo,
-body[data-cosmetics-demo="barboralori"] #cx-open img {
-  display: block !important;
-  width: auto !important;
-  height: auto !important;
-  max-width: 64px !important;
-  max-height: 40px !important;
-  margin: auto !important;
+body[data-cosmetics-demo="barboralori"] #cx-open .cx-final-trimmed-launcher {
   opacity: 1 !important;
   filter: brightness(0) invert(1) !important;
   mix-blend-mode: normal !important;
-  object-fit: contain !important;
-  object-position: center !important;
 }
-body[data-cosmetics-demo="barboralori"] #cx-open .cx-launcher-real-wordmark,
-body[data-cosmetics-demo="barboralori"] #cx-open .cx-launcher-real-wordmark *,
 body[data-cosmetics-demo="barboralori"] #cx-open .cx-barbora-monogram,
-body[data-cosmetics-demo="barboralori"] #cx-open .cx-barbora-monogram * {
-  color: #fff !important;
-  -webkit-text-fill-color: #fff !important;
-  opacity: 1 !important;
-}
 body[data-cosmetics-demo="barboralori"] #cx-open .cx-barbora-letter::before {
   color: #fff !important;
   -webkit-text-fill-color: #fff !important;
-  font-size: 27px !important;
-  font-weight: 700 !important;
-  line-height: 1 !important;
 }
 @media (hover:hover) and (pointer:fine) {
   body[data-cosmetics-demo="barboralori"] #cx-open.cx-launcher-button:hover {
-    background-color: var(--cx-accent) !important;
+    background-color: var(--cx-brand) !important;
   }
 }
 
-/* Cyprianus — show only the compact emblem crop in both places. The preview
-   and every assistant avatar use exactly the same SVG crop; only the size differs. */
-body[data-cosmetics-demo="cyprianus"] #cx-open .cx-cyprianus-symbol {
-  width: 46px !important;
-  height: 46px !important;
-  display: grid !important;
-  place-items: center !important;
-  overflow: hidden !important;
-  border: 0 !important;
-  background: transparent !important;
-}
-body[data-cosmetics-demo="cyprianus"] #cx-open .cx-cyprianus-symbol svg {
-  width: 42px !important;
-  height: 42px !important;
+/* Cyprianus — real emblem only. JS extracts Path_1 from the original SVG,
+   so neither the preview nor message avatar contains the Cyprianus wordmark. */
+body[data-cosmetics-demo="cyprianus"] #cx-open .cx-cyprianus-emblem {
+  width: 48px !important;
+  height: 48px !important;
   display: block !important;
-  overflow: hidden !important;
-  filter: brightness(0) invert(1) !important;
+  color: #fff !important;
 }
 body[data-cosmetics-demo="cyprianus"] .cx-message-avatar {
   display: grid !important;
   place-items: center !important;
   overflow: hidden !important;
 }
-body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-symbol {
-  width: 30px !important;
-  height: 30px !important;
-  display: grid !important;
-  place-items: center !important;
-  overflow: hidden !important;
-  border: 0 !important;
-  background: transparent !important;
-}
-body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-symbol svg {
-  width: 28px !important;
-  height: 28px !important;
+body[data-cosmetics-demo="cyprianus"] .cx-message-avatar .cx-cyprianus-emblem {
+  width: 29px !important;
+  height: 29px !important;
   display: block !important;
-  overflow: hidden !important;
-  filter: brightness(0) invert(1) !important;
+  color: #fff !important;
 }
 
-/* Panakeia — keep the now-approved reversed fills. Only make the hover logo
-   visibly lighter, as requested. */
+/* Panakeia — keep the approved fill states; only make the hover logo lighter. */
 body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button,
 body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button.cx-launcher-has-image-logo {
   background-image: none !important;
@@ -94,7 +54,6 @@ body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button.cx-launcher-has
 }
 body[data-cosmetics-demo="panakeia"] #cx-open .cx-launcher-real-logo {
   filter: brightness(0) invert(1) !important;
-  opacity: 1 !important;
   mix-blend-mode: normal !important;
 }
 @media (hover:hover) and (pointer:fine) {
@@ -102,9 +61,10 @@ body[data-cosmetics-demo="panakeia"] #cx-open .cx-launcher-real-logo {
   body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button.cx-launcher-has-image-logo:hover {
     background-color: var(--cx-accent) !important;
   }
-  body[data-cosmetics-demo="panakeia"] #cx-open:hover .cx-launcher-real-logo {
+  body[data-cosmetics-demo="panakeia"] #cx-open:hover .cx-launcher-real-logo,
+  body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button:hover img {
     filter: brightness(0) invert(1) !important;
-    opacity: .72 !important;
+    opacity: .94 !important;
     mix-blend-mode: normal !important;
   }
 }
