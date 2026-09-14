@@ -68,12 +68,34 @@
   }
 
   /* Cyprianus: its SVG is 150x35 and the standalone emblem occupies the first
-     35x35 block. Clip that block instead of shrinking the whole wordmark. */
+     35x35 block. Use that same real emblem in the launcher and every assistant
+     message avatar, including messages rendered after this script runs. */
   if (slug === 'cyprianus') {
+    const symbolMarkup = '<span class="cx-cyprianus-symbol" aria-label="Cyprianus"><img src="/assets/cosmetics/cyprianus-logo.svg" alt=""></span>';
     launcher.classList.remove('is-image-logo', 'cx-launcher-has-image-logo', 'cx-launcher-has-wordmark');
     launcher.classList.add('cx-launcher-has-image-logo');
-    launcher.innerHTML = '<span class="cx-cyprianus-symbol" aria-label="Cyprianus"><img src="/assets/cosmetics/cyprianus-logo.svg" alt=""></span>';
+    launcher.innerHTML = symbolMarkup;
+
+    const syncCyprianusAvatars = () => {
+      document.querySelectorAll('.cx-message-avatar').forEach((avatar) => {
+        if (avatar.querySelector('.cx-cyprianus-symbol')) return;
+        avatar.innerHTML = symbolMarkup;
+      });
+    };
+    syncCyprianusAvatars();
+    const root = document.querySelector('#cosmetics-root');
+    if (root) {
+      const observer = new MutationObserver(syncCyprianusAvatars);
+      observer.observe(root, { childList: true, subtree: true });
+    }
     return;
+  }
+
+  /* Facederma: keep the real source artwork, but trim transparent padding so
+     the high-resolution wordmark uses the available launcher area cleanly. */
+  if (slug === 'facederma') {
+    const launchLogo = launcher.querySelector('img');
+    if (launchLogo) trimTransparentImage(launchLogo, 'cx-final-trimmed-launcher');
   }
 
   /* Barbora Lori: the source PNG carries generous transparent side padding.
