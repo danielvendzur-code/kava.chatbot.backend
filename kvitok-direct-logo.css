@@ -1,34 +1,42 @@
 /* Kvitok-only final polish. Keep all other skincare demos untouched. */
 body[data-cosmetics-demo="kvitok"] .cx-launcher-button,
 body[data-cosmetics-demo="kvitok"] .cx-launcher-button:hover,
-body[data-cosmetics-demo="kvitok"] .cx-launcher-button:focus-visible {
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button:focus-visible,
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button.cx-launcher-has-image-logo,
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button.cx-launcher-has-image-logo:hover {
   padding: 0 !important;
   overflow: hidden !important;
   border: 0 !important;
   outline: 0 !important;
-  background: var(--cx-brand) !important;
+  background-image: none !important;
+  background-color: #cb758e !important;
+  box-shadow: none !important;
 }
 
-/* Preview bubble: keep the real logo, just a little smaller than before. */
+/* Preview bubble: one flat pink circle + the real extracted Kvitok wordmark.
+   The source badge rim is removed in JS; do not recreate a ring in CSS. */
 body[data-cosmetics-demo="kvitok"] .cx-launcher-button > img,
-body[data-cosmetics-demo="kvitok"] .cx-kvitok-direct-mark {
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-direct-mark,
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-launcher-clean {
   display: block !important;
-  width: 90% !important;
-  height: 90% !important;
-  max-width: none !important;
-  max-height: none !important;
-  margin: 5% auto !important;
+  width: 74% !important;
+  height: auto !important;
+  max-width: 58px !important;
+  max-height: 40px !important;
+  margin: auto !important;
   padding: 0 !important;
   border: 0 !important;
-  border-radius: 50% !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
   background: transparent !important;
-  box-shadow: inset 0 0 0 5px #cb758e !important;
+  box-shadow: none !important;
   filter: none !important;
   opacity: 1 !important;
   visibility: visible !important;
   object-fit: contain !important;
   object-position: center !important;
   transform: none !important;
+  mix-blend-mode: normal !important;
 }
 
 /* Open widget header: use the cleaned real wordmark only, not the circular plate. */
@@ -73,7 +81,6 @@ body[data-cosmetics-demo="kvitok"] .cx-kvitok-message-k {
   overflow: hidden !important;
 }
 
-/* Disable remnants of older Kvitok fallback/processing paths. */
 body[data-cosmetics-demo="kvitok"] .cx-kvitok-fallback-wordmark {
   display: none !important;
 }
