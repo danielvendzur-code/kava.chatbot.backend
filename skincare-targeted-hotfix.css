@@ -50,6 +50,27 @@ body[data-cosmetics-demo="kvitok"] .cx-kvitok-launcher-clean {
   object-fit: contain !important;
   object-position: center !important;
 }
+/* Never leave a blank disc while the real Kvitok mark is being cleaned. */
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button.cx-kvitok-processing > img {
+  opacity: 0 !important;
+}
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-fallback-wordmark {
+  position: absolute !important;
+  inset: 0 !important;
+  display: grid !important;
+  place-items: center !important;
+  padding: 0 8px !important;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 18px !important;
+  font-style: italic !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+  letter-spacing: -.04em !important;
+  text-align: center !important;
+  pointer-events: none !important;
+}
 @media (hover:hover) and (pointer:fine) {
   body[data-cosmetics-demo="kvitok"] .cx-launcher-button:hover,
   body[data-cosmetics-demo="kvitok"] .cx-launcher-button.cx-launcher-has-image-logo:hover {
