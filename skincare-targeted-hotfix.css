@@ -1,73 +1,43 @@
-/* Targeted QA fixes from the 2026-09-14 visual review.
-   This file intentionally does not redesign launcher geometry or owner pages. */
+/* Targeted launcher/status QA from the 2026-09-14 review.
+   Keep the existing widget geometry and owner-page design intact. */
 
-/* No coloured outline/ring around any closed preview bubble. */
-body[data-cosmetics-demo] .cx-launcher-button,
-body[data-cosmetics-demo] .cx-launcher-button.is-image-logo,
-body[data-cosmetics-demo] .cx-launcher-button.cx-launcher-has-image-logo {
+/* The status belongs directly under the brand mark in every skincare header.
+   Do not move it with per-brand top/margin offsets. */
+body[data-cosmetics-demo] .cx-widget-brand {
+  display: grid !important;
+  grid-auto-flow: row !important;
+  align-content: center !important;
+  justify-items: start !important;
+  gap: 3px !important;
+}
+body[data-cosmetics-demo] .cx-widget-brand > .cx-status {
+  position: static !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  transform: none !important;
+  line-height: 1.05 !important;
+}
+
+/* Kvitok: one branded green launcher circle and a white cleaned wordmark.
+   No second coloured disc, outline, ring or same-colour logo-on-fill. */
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button,
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button.cx-launcher-has-image-logo {
+  background-image: none !important;
+  background-color: var(--cx-brand) !important;
   border: 0 !important;
   outline: 0 !important;
+  box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-brand) 58%, transparent) !important;
 }
-
-/* Fytopharma: keep the established orange base and the real green logo.
-   Hover stays in the orange family, never the green/logo colour. */
-body[data-cosmetics-demo="fytopharma"] .cx-launcher-button,
-body[data-cosmetics-demo="fytopharma"] .cx-launcher-button.cx-launcher-has-image-logo {
-  background-color: var(--cx-accent) !important;
-  border: 0 !important;
-}
-body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo {
-  max-width: 62px !important;
-  max-height: 39px !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  filter: none !important;
-  mix-blend-mode: normal !important;
-  object-fit: contain !important;
-}
-
-/* Natureal: keep the established pink base and real dark wordmark.
-   Hover remains pink, so it cannot swallow the dark logo. */
-body[data-cosmetics-demo="natureal"] .cx-launcher-button,
-body[data-cosmetics-demo="natureal"] .cx-launcher-button.cx-launcher-has-image-logo {
-  background-color: var(--cx-accent) !important;
-  border: 0 !important;
-}
-body[data-cosmetics-demo="natureal"] .cx-launcher-real-logo {
-  max-width: 64px !important;
-  max-height: 36px !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  filter: none !important;
-  mix-blend-mode: normal !important;
-  object-fit: contain !important;
-}
-
-@media (hover:hover) and (pointer:fine) {
-  body[data-cosmetics-demo="fytopharma"] .cx-launcher-button:hover,
-  body[data-cosmetics-demo="fytopharma"] .cx-launcher-button.cx-launcher-has-image-logo:hover {
-    background-color: color-mix(in srgb, var(--cx-accent) 84%, #ffffff) !important;
-    border: 0 !important;
-  }
-  body[data-cosmetics-demo="natureal"] .cx-launcher-button:hover,
-  body[data-cosmetics-demo="natureal"] .cx-launcher-button.cx-launcher-has-image-logo:hover {
-    background-color: color-mix(in srgb, var(--cx-accent) 80%, #ffffff) !important;
-    border: 0 !important;
-  }
-}
-
-/* Kvitok: use only the cleaned white wordmark inside the coloured circle.
-   The source PNG's coloured disc/outline is removed in JS. */
 body[data-cosmetics-demo="kvitok"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="kvitok"] .cx-kvitok-launcher-clean {
-  width: 60px !important;
+  width: 62px !important;
   height: auto !important;
-  max-width: 60px !important;
-  max-height: 42px !important;
+  max-width: 62px !important;
+  max-height: 44px !important;
   margin: auto !important;
   padding: 0 !important;
   border: 0 !important;
@@ -80,19 +50,71 @@ body[data-cosmetics-demo="kvitok"] .cx-kvitok-launcher-clean {
   object-fit: contain !important;
   object-position: center !important;
 }
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="kvitok"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="kvitok"] .cx-launcher-button.cx-launcher-has-image-logo:hover {
+    background-color: var(--cx-accent) !important;
+    border: 0 !important;
+  }
+}
 
-/* Header keeps one solid green field, a clean logo, and brings the status line
-   slightly closer to the logo as requested. */
+/* Kvitok header: same cleaned white mark, no badge border. The status position
+   is governed by the common header rule above, not a one-off offset. */
+body[data-cosmetics-demo="kvitok"] .cx-widget-head {
+  background: var(--cx-brand) !important;
+  border: 0 !important;
+}
 body[data-cosmetics-demo="kvitok"] .cx-widget-brand > img.cx-logo,
 body[data-cosmetics-demo="kvitok"] .cx-widget-brand > img.cx-kvitok-header-clean {
+  width: 66px !important;
+  height: 44px !important;
+  max-width: 66px !important;
+  max-height: 44px !important;
+  margin: 0 !important;
+  padding: 0 !important;
   border: 0 !important;
   outline: 0 !important;
   border-radius: 0 !important;
   background: transparent !important;
   box-shadow: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  object-fit: contain !important;
+  object-position: left center !important;
 }
-body[data-cosmetics-demo="kvitok"] .cx-widget-brand > .cx-status {
-  position: relative !important;
-  top: -3px !important;
-  margin-top: -2px !important;
+
+/* Fytopharma: gold fill + the actual logo rendered in the opposite brand green.
+   Hover stays in the gold family so the logo never becomes the fill colour. */
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-button,
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-button.cx-launcher-has-image-logo {
+  background-image: none !important;
+  background-color: var(--cx-accent) !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-accent) 62%, transparent) !important;
+}
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="fytopharma"] .cx-fytopharma-launcher-clean {
+  width: auto !important;
+  height: auto !important;
+  max-width: 62px !important;
+  max-height: 40px !important;
+  margin: auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="fytopharma"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="fytopharma"] .cx-launcher-button.cx-launcher-has-image-logo:hover {
+    background-color: color-mix(in srgb, var(--cx-accent) 82%, #ffffff) !important;
+    border: 0 !important;
+  }
 }
