@@ -6,10 +6,11 @@
 
   const src = '/assets/cosmetics/kvitok-logo.png?v=20260914g';
 
-  /* Closed launcher keeps the real Kvitok badge. */
+  /* Closed launcher starts from the real Kvitok artwork; the Kvitok-only final
+     script replaces only the visible badge with the cleaned real wordmark. */
   brand.launcherMark = `<img class="cx-kvitok-direct-mark" src="${src}" alt="Kvitok">`;
 
-  /* Chat messages use the K taken directly from the real Kvitok artwork.
-     This is an image crop of the original logo, not a typed/generated letter. */
-  brand.avatarMark = `<svg class="cx-kvitok-message-k" viewBox="0 60 82 82" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Kvitok"><image href="${src}" x="0" y="0" width="220" height="220" preserveAspectRatio="none"></image></svg>`;
+  /* Message avatars do not need the full badge. Keep a compact, stable K so the
+     source artwork is never stretched or awkwardly cropped inside messages. */
+  brand.avatarMark = '<span class="cx-kvitok-message-letter" aria-label="Kvitok">K</span>';
 })();
