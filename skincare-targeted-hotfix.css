@@ -1,0 +1,98 @@
+/* Targeted QA fixes from the 2026-09-14 visual review.
+   This file intentionally does not redesign launcher geometry or owner pages. */
+
+/* No coloured outline/ring around any closed preview bubble. */
+body[data-cosmetics-demo] .cx-launcher-button,
+body[data-cosmetics-demo] .cx-launcher-button.is-image-logo,
+body[data-cosmetics-demo] .cx-launcher-button.cx-launcher-has-image-logo {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+/* Fytopharma: keep the established orange base and the real green logo.
+   Hover stays in the orange family, never the green/logo colour. */
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-button,
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-button.cx-launcher-has-image-logo {
+  background-color: var(--cx-accent) !important;
+  border: 0 !important;
+}
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo {
+  max-width: 62px !important;
+  max-height: 39px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  object-fit: contain !important;
+}
+
+/* Natureal: keep the established pink base and real dark wordmark.
+   Hover remains pink, so it cannot swallow the dark logo. */
+body[data-cosmetics-demo="natureal"] .cx-launcher-button,
+body[data-cosmetics-demo="natureal"] .cx-launcher-button.cx-launcher-has-image-logo {
+  background-color: var(--cx-accent) !important;
+  border: 0 !important;
+}
+body[data-cosmetics-demo="natureal"] .cx-launcher-real-logo {
+  max-width: 64px !important;
+  max-height: 36px !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  object-fit: contain !important;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="fytopharma"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="fytopharma"] .cx-launcher-button.cx-launcher-has-image-logo:hover {
+    background-color: color-mix(in srgb, var(--cx-accent) 84%, #ffffff) !important;
+    border: 0 !important;
+  }
+  body[data-cosmetics-demo="natureal"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="natureal"] .cx-launcher-button.cx-launcher-has-image-logo:hover {
+    background-color: color-mix(in srgb, var(--cx-accent) 80%, #ffffff) !important;
+    border: 0 !important;
+  }
+}
+
+/* Kvitok: use only the cleaned white wordmark inside the coloured circle.
+   The source PNG's coloured disc/outline is removed in JS. */
+body[data-cosmetics-demo="kvitok"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-launcher-clean {
+  width: 60px !important;
+  height: auto !important;
+  max-width: 60px !important;
+  max-height: 42px !important;
+  margin: auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Header keeps one solid green field, a clean logo, and brings the status line
+   slightly closer to the logo as requested. */
+body[data-cosmetics-demo="kvitok"] .cx-widget-brand > img.cx-logo,
+body[data-cosmetics-demo="kvitok"] .cx-widget-brand > img.cx-kvitok-header-clean {
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+body[data-cosmetics-demo="kvitok"] .cx-widget-brand > .cx-status {
+  position: relative !important;
+  top: -3px !important;
+  margin-top: -2px !important;
+}
