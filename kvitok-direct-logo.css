@@ -1,0 +1,63 @@
+/* Kvitok: always render the real brand artwork. No empty accent disc, no generated text. */
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button,
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button:hover,
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button:focus-visible {
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  outline: 0 !important;
+  background: var(--cx-brand) !important;
+}
+
+body[data-cosmetics-demo="kvitok"] .cx-launcher-button > img,
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-direct-mark {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  transform: none !important;
+}
+
+/* Assistant messages use the real Kvitok artwork too — never a typed K. */
+body[data-cosmetics-demo="kvitok"] .cx-message-avatar {
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: 50% !important;
+  background: var(--cx-brand) !important;
+}
+body[data-cosmetics-demo="kvitok"] .cx-message-avatar > img,
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-message-mark {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 50% !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  opacity: 1 !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  transform: none !important;
+}
+
+/* Disable remnants of the previous processing/fallback path. */
+body[data-cosmetics-demo="kvitok"] .cx-kvitok-fallback-wordmark {
+  display: none !important;
+}
