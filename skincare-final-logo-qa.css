@@ -1,8 +1,8 @@
 /* Final launcher logo QA.
-   PONIO stays untouched. Header colours stay untouched.
-   Current launcher treatment intentionally uses the accent as the resting state
-   and the darker brand colour on hover so real logos do not disappear into a
-   same-colour circle. */
+   PONIO keeps its approved launcher treatment. Header colours stay untouched.
+   The established launcher colours/geometry stay the same; this layer only
+   removes unwanted outlines, keeps real marks legible and fixes targeted logo
+   contrast issues. */
 
 body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-owner-kicker::before {
   content: "" !important;
@@ -26,9 +26,8 @@ body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-button
   box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-accent) 68%, transparent) !important;
 }
 
-/* Real raster logos sit directly on the launcher colour. There must never be a
-   second white/neutral plate around the logo. Multiply also makes baked-in
-   white raster backgrounds visually inherit the same solid launcher colour. */
+/* Real raster logos sit directly on the launcher colour. No secondary plate,
+   ring or border is introduced around the mark. */
 body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-real-logo {
   display: block !important;
   width: auto !important;
@@ -49,8 +48,8 @@ body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-real-l
   box-sizing: border-box !important;
 }
 
-/* Wide logos use more width and less height. Keep these existing footprints so
-   removing the outline does not move or resize the approved launcher layout. */
+/* Wide wordmarks get almost the full usable diameter, while keeping the same
+   button geometry. */
 body[data-cosmetics-demo="syncare"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="modrapupava"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="facederma"] .cx-launcher-real-logo,
@@ -58,14 +57,14 @@ body[data-cosmetics-demo="cyprianus"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="bellmedi"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="lavelin"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="natureal"] .cx-launcher-real-logo {
-  max-width: 61px !important;
-  max-height: 35px !important;
+  max-width: 64px !important;
+  max-height: 36px !important;
 }
 body[data-cosmetics-demo="panakeia"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="soaphoria"] .cx-launcher-real-logo,
 body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo {
-  max-width: 60px !important;
-  max-height: 37px !important;
+  max-width: 62px !important;
+  max-height: 39px !important;
 }
 body[data-cosmetics-demo="kvitok"] .cx-launcher-real-logo {
   width: 52px !important;
@@ -101,9 +100,8 @@ body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]) .cx-launcher-real-w
   }
 }
 
-/* PONIO, TWO and BIOFY are approved references and intentionally keep the
-   treatment above exactly as-is. The remaining demos keep the exact previous
-   colours and logo placement; only the unwanted coloured outline is removed. */
+/* TWO and BIOFY retain their approved treatment. The remaining demos keep the
+   same base/hover colours as before; the unwanted outer ring stays removed. */
 body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button,
 body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]) .cx-launcher-button.cx-launcher-has-image-logo {
   border: 0 !important;
@@ -118,11 +116,13 @@ body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics
   -webkit-text-fill-color: var(--cx-brand) !important;
 }
 
-/* Fytopharma's logo already contains its own green/orange artwork. Do not tint
-   it with the launcher's background. */
-body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo {
+/* These two raster marks are cleaned/tinted in JS. Base uses the original
+   brand-colour mark on the existing accent circle; hover keeps the existing
+   darker circle but swaps the mark to white so it never disappears. */
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="natureal"] .cx-launcher-real-logo {
   mix-blend-mode: normal !important;
-  filter: saturate(1.06) contrast(1.03) !important;
+  filter: none !important;
 }
 
 @media (hover:hover) and (pointer:fine) {
@@ -141,23 +141,23 @@ body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo {
   }
 }
 
-/* Kvitok open header: one solid header colour + the cleaned mark only. The
-   image background is removed by skincare-final-logo-qa.js; these rules ensure
-   no old plate/border/background can reappear around it. */
+/* Kvitok open header: one solid green header + the cleaned white mark only.
+   The cropped mark is intentionally larger than before, but still fits the
+   common 68px header without changing its layout. */
 body[data-cosmetics-demo="kvitok"] .cx-widget-head {
   border: 0 !important;
   background: var(--cx-brand) !important;
 }
 body[data-cosmetics-demo="kvitok"] .cx-widget-brand > img.cx-logo {
-  width: auto !important;
-  height: auto !important;
-  max-width: 48px !important;
-  max-height: 38px !important;
+  width: 64px !important;
+  height: 48px !important;
+  max-width: 64px !important;
+  max-height: 48px !important;
   padding: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
   background: transparent !important;
   box-shadow: none !important;
   object-fit: contain !important;
-  object-position: center !important;
+  object-position: left center !important;
 }
