@@ -15,65 +15,55 @@ jobs:
       VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
       VERCEL_PROJECT_ID: prj_wCzamTfbYrn2asWAU0agL3yoF7nD
       VERCEL_TEAM_ID: team_xJCHkDHUMXQ0lqpImtY3Fbvr
+      VERCEL_TEAM_SLUG: danielvendzur-codes-projects
     steps:
-      - name: Validate Vercel access
+      - name: Detect valid Vercel API scope
         shell: bash
         run: |
           set -Eeuo pipefail
           test -n "$VERCEL_TOKEN" || { echo "VERCEL_TOKEN secret is missing"; exit 1; }
-          curl --fail-with-body -sS \
-            -H "Authorization: Bearer $VERCEL_TOKEN" \
-            "https://api.vercel.com/v9/projects/$VERCEL_PROJECT_ID?teamId=$VERCEL_TEAM_ID" \
-            | jq '{id,name,accountId}'
+          api="https://api.vercel.com"
+          scope=""
+          for candidate in "" "teamId=$VERCEL_TEAM_ID" "slug=$VERCEL_TEAM_SLUG"; do
+            url="$api/v9/projects/$VERCEL_PROJECT_ID"
+            [ -n "$candidate" ] && url="$url?$candidate"
+            body=$(mktemp)
+            code=$(curl -sS -o "$body" -w '%{http_code}' -H "Authorization: Bearer $VERCEL_TOKEN" "$url")
+            echo "Probe scope '${candidate:-none}': HTTP $code"
+            if [ "$code" -ge 200 ] && [ "$code" -lt 300 ]; then
+              jq '{id,name,accountId}' "$body"
+              scope="$candidate"
+              break
+            fi
+          done
+          if [ -z "$scope" ]; then
+            echo "VERCEL_TOKEN cannot access this project with personal, teamId, or team slug scope." >&2
+            exit 1
+          fi
+          echo "VERCEL_SCOPE_PARAM=$scope" >> "$GITHUB_ENV"
 
       - name: Add every coffee and skincare demo domain
         shell: bash
         run: |
           set -Eeuo pipefail
           api="https://api.vercel.com"
+          scope_q=""
+          [ -n "${VERCEL_SCOPE_PARAM:-}" ] && scope_q="&$VERCEL_SCOPE_PARAM"
+          scope_only=""
+          [ -n "${VERCEL_SCOPE_PARAM:-}" ] && scope_only="?$VERCEL_SCOPE_PARAM"
 
           domains=(
-            mylo.mojchatbot.sk
-            ponio.mojchatbot.sk
-            two.mojchatbot.sk
-            bellcoria.mojchatbot.sk
-            biofy.mojchatbot.sk
-            anemone.mojchatbot.sk
-            modrapupava.mojchatbot.sk
-            facederma.mojchatbot.sk
-            cyprianus.mojchatbot.sk
-            panakeia.mojchatbot.sk
-            barboralori.mojchatbot.sk
-            bellmedi.mojchatbot.sk
-            lavelin.mojchatbot.sk
-            kvitok.mojchatbot.sk
-            soaphoria.mojchatbot.sk
-            syncare.mojchatbot.sk
-            fytopharma.mojchatbot.sk
-            natureal.mojchatbot.sk
-            praziarnicka.mojchatbot.sk
-            diamonds.mojchatbot.sk
-            kaffa.mojchatbot.sk
-            vitazov.mojchatbot.sk
-            concept.mojchatbot.sk
-            jolka.mojchatbot.sk
-            goriffee.mojchatbot.sk
-            readyafter.mojchatbot.sk
-            coffeesheep.mojchatbot.sk
-            zlatezrnko.mojchatbot.sk
-            becafe.mojchatbot.sk
-            simplecoffee.mojchatbot.sk
-            ebenica.mojchatbot.sk
-            casadelcaffe.mojchatbot.sk
-            coffeeveronia.mojchatbot.sk
-            grandroastery.mojchatbot.sk
-            coffeein.mojchatbot.sk
-            kavoholik.mojchatbot.sk
+            mylo.mojchatbot.sk ponio.mojchatbot.sk two.mojchatbot.sk bellcoria.mojchatbot.sk biofy.mojchatbot.sk anemone.mojchatbot.sk
+            modrapupava.mojchatbot.sk facederma.mojchatbot.sk cyprianus.mojchatbot.sk panakeia.mojchatbot.sk barboralori.mojchatbot.sk bellmedi.mojchatbot.sk
+            lavelin.mojchatbot.sk kvitok.mojchatbot.sk soaphoria.mojchatbot.sk syncare.mojchatbot.sk fytopharma.mojchatbot.sk natureal.mojchatbot.sk
+            praziarnicka.mojchatbot.sk diamonds.mojchatbot.sk kaffa.mojchatbot.sk vitazov.mojchatbot.sk concept.mojchatbot.sk jolka.mojchatbot.sk
+            goriffee.mojchatbot.sk readyafter.mojchatbot.sk coffeesheep.mojchatbot.sk zlatezrnko.mojchatbot.sk becafe.mojchatbot.sk simplecoffee.mojchatbot.sk
+            ebenica.mojchatbot.sk casadelcaffe.mojchatbot.sk coffeeveronia.mojchatbot.sk grandroastery.mojchatbot.sk coffeein.mojchatbot.sk kavoholik.mojchatbot.sk
           )
 
           existing=$(curl --fail-with-body -sS \
             -H "Authorization: Bearer $VERCEL_TOKEN" \
-            "$api/v9/projects/$VERCEL_PROJECT_ID/domains?limit=100&teamId=$VERCEL_TEAM_ID")
+            "$api/v9/projects/$VERCEL_PROJECT_ID/domains?limit=100$scope_q")
 
           : > /tmp/domain-summary.tsv
           for domain in "${domains[@]}"; do
@@ -87,7 +77,7 @@ jobs:
             code=$(curl -sS -o "$body" -w '%{http_code}' -X POST \
               -H "Authorization: Bearer $VERCEL_TOKEN" \
               -H "Content-Type: application/json" \
-              "$api/v10/projects/$VERCEL_PROJECT_ID/domains?teamId=$VERCEL_TEAM_ID" \
+              "$api/v10/projects/$VERCEL_PROJECT_ID/domains$scope_only" \
               --data "$(jq -nc --arg name "$domain" '{name:$name}')")
 
             if [ "$code" -ge 200 ] && [ "$code" -lt 300 ]; then
@@ -108,13 +98,15 @@ jobs:
         run: |
           set -Eeuo pipefail
           api="https://api.vercel.com"
+          scope_q=""
+          [ -n "${VERCEL_SCOPE_PARAM:-}" ] && scope_q="&$VERCEL_SCOPE_PARAM"
           cursor=""
           deleted=0
           kept=0
           failed=0
 
           while :; do
-            url="$api/v6/deployments?projectId=$VERCEL_PROJECT_ID&teamId=$VERCEL_TEAM_ID&limit=100"
+            url="$api/v6/deployments?projectId=$VERCEL_PROJECT_ID&limit=100$scope_q"
             [ -n "$cursor" ] && url="$url&until=$cursor"
             page=$(curl --fail-with-body -sS -H "Authorization: Bearer $VERCEL_TOKEN" "$url")
             count=$(jq '.deployments | length' <<<"$page")
@@ -132,9 +124,9 @@ jobs:
                 continue
               fi
 
-              detail=$(curl --fail-with-body -sS \
-                -H "Authorization: Bearer $VERCEL_TOKEN" \
-                "$api/v13/deployments/$id?teamId=$VERCEL_TEAM_ID") || { failed=$((failed+1)); continue; }
+              detail_url="$api/v13/deployments/$id"
+              [ -n "${VERCEL_SCOPE_PARAM:-}" ] && detail_url="$detail_url?$VERCEL_SCOPE_PARAM"
+              detail=$(curl --fail-with-body -sS -H "Authorization: Bearer $VERCEL_TOKEN" "$detail_url") || { failed=$((failed+1)); continue; }
               detail_project=$(jq -r '.projectId // .project.id // ""' <<<"$detail")
               detail_target=$(jq -r '.target // ""' <<<"$detail")
 
@@ -144,9 +136,9 @@ jobs:
                 continue
               fi
 
-              code=$(curl -sS -o /tmp/delete-body -w '%{http_code}' -X DELETE \
-                -H "Authorization: Bearer $VERCEL_TOKEN" \
-                "$api/v13/deployments/$id?teamId=$VERCEL_TEAM_ID")
+              delete_url="$api/v13/deployments/$id"
+              [ -n "${VERCEL_SCOPE_PARAM:-}" ] && delete_url="$delete_url?$VERCEL_SCOPE_PARAM"
+              code=$(curl -sS -o /tmp/delete-body -w '%{http_code}' -X DELETE -H "Authorization: Bearer $VERCEL_TOKEN" "$delete_url")
               if [ "$code" -ge 200 ] && [ "$code" -lt 300 ]; then
                 echo "DELETED preview $id $sha $state"
                 deleted=$((deleted+1))
@@ -169,8 +161,10 @@ jobs:
         shell: bash
         run: |
           set -Eeuo pipefail
+          scope_q=""
+          [ -n "${VERCEL_SCOPE_PARAM:-}" ] && scope_q="&$VERCEL_SCOPE_PARAM"
           curl --fail-with-body -sS \
             -H "Authorization: Bearer $VERCEL_TOKEN" \
-            "https://api.vercel.com/v9/projects/$VERCEL_PROJECT_ID/domains?limit=100&teamId=$VERCEL_TEAM_ID" \
+            "https://api.vercel.com/v9/projects/$VERCEL_PROJECT_ID/domains?limit=100$scope_q" \
             | jq -r '.domains[] | [.name, (.verified|tostring), (.gitBranch // "production")] | @tsv' \
             | sort
