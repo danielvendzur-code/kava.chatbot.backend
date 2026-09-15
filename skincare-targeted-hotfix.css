@@ -1,0 +1,93 @@
+/* Targeted launcher/status QA from the 2026-09-14 review.
+   Keep the existing widget geometry and owner-page design intact. */
+
+/* The status belongs directly under the brand mark in every skincare header.
+   Do not move it with per-brand top/margin offsets. */
+body[data-cosmetics-demo] .cx-widget-brand {
+  display: grid !important;
+  grid-auto-flow: row !important;
+  align-content: center !important;
+  justify-items: start !important;
+  gap: 3px !important;
+}
+body[data-cosmetics-demo] .cx-widget-brand > .cx-status {
+  position: static !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  margin: 0 !important;
+  padding-left: 0 !important;
+  transform: none !important;
+  line-height: 1.05 !important;
+}
+
+/* Kvitok header only. Launcher final appearance is owned by
+   kvitok-direct-logo.css, loaded after this file. */
+body[data-cosmetics-demo="kvitok"] .cx-widget-head {
+  background: var(--cx-brand) !important;
+  border: 0 !important;
+}
+body[data-cosmetics-demo="kvitok"] .cx-widget-brand > img.cx-logo,
+body[data-cosmetics-demo="kvitok"] .cx-widget-brand > img.cx-kvitok-header-clean {
+  width: 66px !important;
+  height: 44px !important;
+  max-width: 66px !important;
+  max-height: 44px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+/* Fytopharma: gold fill + the actual logo rendered in the opposite brand green.
+   Hover stays in the gold family so the logo never becomes the fill colour. */
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-button,
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-button.cx-launcher-has-image-logo {
+  background-image: none !important;
+  background-color: var(--cx-accent) !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: 0 18px 38px -25px color-mix(in srgb, var(--cx-accent) 62%, transparent) !important;
+}
+body[data-cosmetics-demo="fytopharma"] .cx-launcher-real-logo,
+body[data-cosmetics-demo="fytopharma"] .cx-fytopharma-launcher-clean {
+  width: auto !important;
+  height: auto !important;
+  max-width: 62px !important;
+  max-height: 40px !important;
+  margin: auto !important;
+  padding: 0 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="fytopharma"] .cx-launcher-button:hover,
+  body[data-cosmetics-demo="fytopharma"] .cx-launcher-button.cx-launcher-has-image-logo:hover {
+    background-color: color-mix(in srgb, var(--cx-accent) 82%, #ffffff) !important;
+    border: 0 !important;
+  }
+
+  /* Raster logos such as Facederma, Lavelin, Natureal and SynCare sit on the
+     existing dark brand-colour hover. Keep that hover colour, but render the
+     logo white so black/dark artwork can never disappear into the circle. */
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]):not([data-cosmetics-demo="kvitok"]):not([data-cosmetics-demo="fytopharma"]) .cx-launcher-button:hover .cx-launcher-real-logo,
+  body[data-cosmetics-demo]:not([data-cosmetics-demo="ponio"]):not([data-cosmetics-demo="two"]):not([data-cosmetics-demo="biofy"]):not([data-cosmetics-demo="kvitok"]):not([data-cosmetics-demo="fytopharma"]) .cx-launcher-button.cx-launcher-has-image-logo:hover .cx-launcher-real-logo {
+    filter: brightness(0) invert(1) !important;
+    mix-blend-mode: normal !important;
+  }
+}

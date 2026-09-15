@@ -90,3 +90,84 @@ html body[data-coffee-release="praziarnicka"] .pz13-widget__actions button:hover
     font-size:11px!important;
   }
 }
+
+/* -------------------------------------------------------------------------
+   Final logo QA. Geometry only — owner layout, header colours and approved
+   launcher artwork stay untouched.
+   ------------------------------------------------------------------------- */
+
+/* Assistant message logos must sit inside the circle instead of being cropped
+   or enlarged. This applies to the shared Jolka widget used by the coffee set. */
+html body .msg__avatar{
+  width:34px!important;
+  min-width:34px!important;
+  max-width:34px!important;
+  height:34px!important;
+  min-height:34px!important;
+  max-height:34px!important;
+  flex:0 0 34px!important;
+  display:grid!important;
+  place-items:center!important;
+  overflow:hidden!important;
+  border-radius:50%!important;
+}
+html body .msg__avatar img{
+  width:100%!important;
+  height:100%!important;
+  max-width:none!important;
+  max-height:none!important;
+  margin:0!important;
+  padding:4px!important;
+  border:0!important;
+  border-radius:50%!important;
+  background:transparent!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  transform:none!important;
+  filter:none!important;
+  clip-path:circle(50% at 50% 50%)!important;
+}
+html body.jolka-clean .msg__avatar img,
+html body.zlatezrnko-clean .msg__avatar img{
+  padding:3px!important;
+}
+
+/* Zlaté Zrnko header: never replace the real logo with generated text. */
+html body.zlatezrnko-clean .mcb-page .mcb-lockup>img{
+  display:block!important;
+  width:46px!important;
+  min-width:46px!important;
+  max-width:46px!important;
+  height:46px!important;
+  min-height:46px!important;
+  max-height:46px!important;
+  margin:0!important;
+  padding:0!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  box-shadow:none!important;
+  filter:none!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+}
+html body.zlatezrnko-clean .mcb-page .mcb-lockup::before{
+  content:none!important;
+  display:none!important;
+}
+
+/* Jolka: hover must not flood the badge with kraft brown. Keep the dark disc
+   and signal hover with a restrained ring. */
+@media(hover:hover) and (pointer:fine){
+  html body.jolka-clean .launcher__button:hover{
+    background-image:none!important;
+    background-color:var(--ink)!important;
+    border:0!important;
+    transform:translateY(-2px) scale(1.02)!important;
+    box-shadow:0 0 0 2px var(--surface),0 0 0 4px color-mix(in srgb,var(--kraft) 72%,transparent),var(--shadow-float)!important;
+  }
+  html body.jolka-clean .launcher__button:hover img{
+    transform:none!important;
+    filter:none!important;
+  }
+}
