@@ -1,0 +1,11 @@
+Options -MultiViews
+RewriteEngine On
+
+# One public hostname per coffee demo. Keep the visible URL at the subdomain root.
+RewriteCond %{HTTP_HOST} ^(praziarnicka|concept|kaffa|vitazov|diamonds|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|ebenica|casadelcaffe|coffeeveronia|grandroastery|coffeein|kavoholik)\.mojchatbot\.sk$ [NC]
+RewriteRule ^$ %1/ [L]
+
+# Real files/assets must remain directly accessible from the shared document root.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
