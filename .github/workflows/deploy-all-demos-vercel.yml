@@ -72,6 +72,6 @@ jobs:
             sleep 10
           done
           test "$state" = READY
-          for d in praz iarnicka concept kaffa vitazov diamonds jolka goriffee readyafter coffeesheep zlatezrnko becafe simplecoffee ebenica casadelcaffe coffeeveronia grandroastery coffeein kavoholik modrapupava facederma panakeia barboralori bellmedi lavelin kvitok soaphoria syncare fytopharma natureal; do
+          for d in praziarnicka concept kaffa vitazov diamonds jolka goriffee readyafter coffeesheep zlatezrnko becafe simplecoffee ebenica casadelcaffe coffeeveronia grandroastery coffeein kavoholik modrapupava facederma panakeia barboralori bellmedi lavelin kvitok soaphoria syncare fytopharma natureal; do
             curl -fsS -X POST "$api/v10/projects/$PROJECT_A_ID/domains?teamId=$VERCEL_TEAM_ID" "${hdr[@]}" -d "{\"name\":\"${d}.mojchatbot.sk\"}" || true
           done
