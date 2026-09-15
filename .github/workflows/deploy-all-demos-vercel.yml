@@ -1,0 +1,77 @@
+name: Deploy all demos to Vercel
+
+on:
+  push:
+    branches:
+      - ops/vercel-all-demos-20260915
+  workflow_dispatch:
+
+env:
+  VERCEL_TEAM_ID: team_xJCHkDHUMXQ0lqpImtY3Fbvr
+  PROJECT_A_ID: prj_wCzamTfbYrn2asWAU0agL3yoF7nD
+
+jobs:
+  prepare-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ops/vercel-all-demos-20260915
+
+      - name: Merge legacy skincare into isolated branch
+        if: ${{ !hashFiles('.legacy-skincare-merged') }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          git remote add legacy https://github.com/danielvendzur-code/kava.chatbot.backend.git
+          git fetch --no-tags legacy 3fde12d36276b8cb5676c0e9836fb4747c601760
+          files=(
+            api/cosmetics-chat.js assets/cosmetics/ cosmetics.html cosmetics.css cosmetics-polish.css cosmetics-config.js cosmetics-brand-facts.js cosmetics.js
+            skincare-refresh.css skincare-final-fix.css skincare-routine-polish.css skincare-avatar-round-fix.css skincare-final-logo-qa.css skincare-targeted-hotfix.css skincare-final-brand-overrides.css skincare-review-fixes-20260914.css
+            skincare-final-fix.js skincare-launcher-logo-fix.js skincare-routine-enhancer.js skincare-final-logo-qa.js skincare-final-brand-marks.js skincare-review-fixes-20260914.js
+            kvitok-direct-logo.css kvitok-brand-mark-preload.js kvitok-logo-final-fix.js
+          )
+          for path in "${files[@]}"; do
+            git checkout 3fde12d36276b8cb5676c0e9836fb4747c601760 -- "$path"
+          done
+          node - <<'NODE'
+          const fs = require('fs');
+          const p = 'vercel.json';
+          const v = JSON.parse(fs.readFileSync(p, 'utf8'));
+          v.rewrites = v.rewrites || [];
+          const source = '/(?<sub>modrapupava|facederma|panakeia|barboralori|bellmedi|lavelin|kvitok|soaphoria|syncare|fytopharma|natureal)\\.mojchatbot\\.sk/';
+          if (!v.rewrites.some(x => x.source === source)) v.rewrites.unshift({source, destination:'/cosmetics.html'});
+          fs.writeFileSync(p, JSON.stringify(v, null, 2) + '\\n');
+          NODE
+          touch .legacy-skincare-merged
+          git config user.name github-actions
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add .
+          git commit -m "Prepare isolated all-demo deployment"
+          git push origin HEAD:ops/vercel-all-demos-20260915
+
+      - name: Deploy Project A and configure domains
+        if: ${{ hashFiles('.legacy-skincare-merged') }}
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          test -n "$VERCEL_TOKEN"
+          api="https://api.vercel.com"
+          hdr=(-H "Authorization: Bearer $VERCEL_TOKEN" -H "Content-Type: application/json")
+          curl -fsS -X POST "$api/v13/deployments?teamId=$VERCEL_TEAM_ID" "${hdr[@]}"             -d '{"name":"kava-chatbot-backend","project":"prj_wCzamTfbYrn2asWAU0agL3yoF7nD","target":"production","gitSource":{"type":"github","org":"danielvendzur-code","repo":"kava.chatbot.backend","ref":"ops/vercel-all-demos-20260915"}}' > /tmp/a.json
+          aid=$(jq -r .id /tmp/a.json)
+          for i in $(seq 1 60); do
+            state=$(curl -fsS "$api/v13/deployments/$aid?teamId=$VERCEL_TEAM_ID" "${hdr[@]}" | tee /tmp/status.json | jq -r .readyState)
+            [ "$state" = READY ] && break
+            [ "$state" = ERROR ] || [ "$state" = CANCELED ] && { jq . /tmp/status.json; exit 1; }
+            sleep 10
+          done
+          test "$state" = READY
+          for d in praz iarnicka concept kaffa vitazov diamonds jolka goriffee readyafter coffeesheep zlatezrnko becafe simplecoffee ebenica casadelcaffe coffeeveronia grandroastery coffeein kavoholik modrapupava facederma panakeia barboralori bellmedi lavelin kvitok soaphoria syncare fytopharma natureal; do
+            curl -fsS -X POST "$api/v10/projects/$PROJECT_A_ID/domains?teamId=$VERCEL_TEAM_ID" "${hdr[@]}" -d "{\"name\":\"${d}.mojchatbot.sk\"}" || true
+          done
