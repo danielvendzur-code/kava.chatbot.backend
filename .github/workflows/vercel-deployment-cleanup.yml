@@ -43,8 +43,8 @@ jobs:
           total=$(wc -l < "$tmp" | tr -d ' ')
           echo "Found $total deployments"
 
-          # Keep production/custom-domain deployments plus five rollback previews for
-          # each of the two active demo branches. Everything else is redundant storage.
+          # Keep every production deployment for maximum safety, plus five rollback
+          # previews for each active demo branch. Delete only redundant previews.
           skincare_kept=0
           coffee_kept=0
           kept=0
@@ -52,9 +52,15 @@ jobs:
           skipped=0
 
           while IFS= read -r deployment; do
-            id=$(jq -r '.id' <<<"$deployment")
+            id=$(jq -r '.uid // .id // empty' <<<"$deployment")
             target=$(jq -r '.target // ""' <<<"$deployment")
             branch=$(jq -r '.meta.githubCommitRef // ""' <<<"$deployment")
+
+            if [ -z "$id" ]; then
+              echo "SKIP deployment without id"
+              skipped=$((skipped+1))
+              continue
+            fi
 
             if [ "$target" = "production" ]; then
               echo "KEEP production $id"
