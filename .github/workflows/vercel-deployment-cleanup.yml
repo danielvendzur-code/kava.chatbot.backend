@@ -1,4 +1,3 @@
-# Manual cleanup retrigger: 2026-09-21
 name: Clean up old Vercel deployments
 
 on:
@@ -21,11 +20,13 @@ jobs:
   cleanup:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete safe redundant deployments
+      - name: Keep only the two protected deployments
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_PROJECT_ID: prj_wCzamTfbYrn2asWAU0agL3yoF7nD
           VERCEL_TEAM_ID: team_xJCHkDHUMXQ0lqpImtY3Fbvr
+          PROTECTED_DEPLOYMENT_1: dpl_EB6anDoPNsjRPzdyC7EnSBvG18wG
+          PROTECTED_DEPLOYMENT_2: dpl_9JQ2vbVCtPTu2HqLQq12W4rNw99L
         shell: bash
         run: |
           set -Eeuo pipefail
@@ -35,14 +36,22 @@ jobs:
           tmp=$(mktemp)
           cursor=""
 
-          project_json=$(curl --fail-with-body -sS \
-            -H "Authorization: Bearer $VERCEL_TOKEN" \
-            "$api/v9/projects/$VERCEL_PROJECT_ID?teamId=$VERCEL_TEAM_ID")
-          current_production_id=$(jq -r '.latestDeployment.id // .latestDeployments[0].id // empty' <<<"$project_json")
-          test -n "$current_production_id" || { echo "Could not resolve current production deployment"; exit 1; }
-          echo "Current production: $current_production_id"
+          # Verify both explicitly protected deployments first.
+          for protected in "$PROTECTED_DEPLOYMENT_1" "$PROTECTED_DEPLOYMENT_2"; do
+            detail=$(curl --fail-with-body -sS \
+              -H "Authorization: Bearer $VERCEL_TOKEN" \
+              "$api/v13/deployments/$protected?teamId=$VERCEL_TEAM_ID")
+            project_id=$(jq -r '.projectId // .project.id // empty' <<<"$detail")
+            deployment_id=$(jq -r '.id // .uid // empty' <<<"$detail")
+            state=$(jq -r '.readyState // .state // empty' <<<"$detail")
+            if [ "$project_id" != "$VERCEL_PROJECT_ID" ] || [ "$deployment_id" != "$protected" ] || [ "$state" != "READY" ]; then
+              echo "Protected deployment verification failed: $protected project=$project_id state=$state"
+              exit 1
+            fi
+            echo "PROTECTED $protected state=$state"
+          done
 
-          # Snapshot the whole project deployment list before deleting anything.
+          # Snapshot all deployments for this exact project.
           while :; do
             url="$api/v6/deployments?projectId=$VERCEL_PROJECT_ID&teamId=$VERCEL_TEAM_ID&limit=100"
             [ -n "$cursor" ] && url="$url&until=$cursor"
@@ -57,121 +66,72 @@ jobs:
           total=$(wc -l < "$tmp" | tr -d ' ')
           echo "Found $total deployments"
 
-          # Retention: current production + 2 production rollbacks + 5 skincare previews
-          # + 5 coffee previews + any deployment that still carries a mojchatbot.sk alias.
-          prod_rollback_kept=0
-          skincare_kept=0
-          coffee_kept=0
-          kept=0
           deleted=0
+          kept=0
           skipped=0
 
-          get_detail() {
-            local id="$1" out code attempt
-            for attempt in 1 2 3 4 5; do
-              out=$(mktemp)
-              code=$(curl -sS -o "$out" -w "%{http_code}" \
-                -H "Authorization: Bearer $VERCEL_TOKEN" \
-                "$api/v13/deployments/$id?teamId=$VERCEL_TEAM_ID" || true)
-              if [ "$code" = "200" ]; then
-                cat "$out"
-                rm -f "$out"
-                return 0
-              fi
-              rm -f "$out"
-              if [ "$code" = "404" ]; then return 44; fi
-              if [ "$code" = "429" ]; then sleep $((attempt * 2)); continue; fi
-              sleep 2
-            done
-            return 1
-          }
-
-          delete_deployment() {
-            local id="$1" out code attempt
-            for attempt in 1 2 3 4 5; do
-              out=$(mktemp)
-              code=$(curl -sS -o "$out" -w "%{http_code}" -X DELETE \
-                -H "Authorization: Bearer $VERCEL_TOKEN" \
-                "$api/v13/deployments/$id?teamId=$VERCEL_TEAM_ID" || true)
-              rm -f "$out"
-              if [ "$code" = "200" ] || [ "$code" = "204" ]; then return 0; fi
-              if [ "$code" = "404" ]; then return 44; fi
-              if [ "$code" = "429" ]; then sleep $((attempt * 3)); continue; fi
-              sleep 2
-            done
-            return 1
-          }
-
-          # v6 returns newest first; preserve that order so the rollback counters keep the newest.
           while IFS= read -r deployment; do
             id=$(jq -r '.uid // .id // empty' <<<"$deployment")
-            target=$(jq -r '.target // ""' <<<"$deployment")
-            branch=$(jq -r '.meta.githubCommitRef // ""' <<<"$deployment")
-            alias_match=$(jq -r '([.alias // []] | map(select(type == "string" and endswith("mojchatbot.sk"))) | length) > 0' <<<"$deployment")
+            [ -n "$id" ] || { skipped=$((skipped+1)); continue; }
 
-            if [ -z "$id" ]; then
-              skipped=$((skipped+1)); continue
+            if [ "$id" = "$PROTECTED_DEPLOYMENT_1" ] || [ "$id" = "$PROTECTED_DEPLOYMENT_2" ]; then
+              echo "KEEP protected $id"
+              kept=$((kept+1))
+              continue
             fi
 
-            if [ "$id" = "$current_production_id" ]; then
-              echo "KEEP current production $id"
-              kept=$((kept+1)); continue
+            # Re-read exact deployment immediately before deletion.
+            out=$(mktemp)
+            code=$(curl -sS -o "$out" -w "%{http_code}" \
+              -H "Authorization: Bearer $VERCEL_TOKEN" \
+              "$api/v13/deployments/$id?teamId=$VERCEL_TEAM_ID" || true)
+
+            if [ "$code" = "404" ]; then
+              echo "SKIP already absent $id"
+              rm -f "$out"
+              skipped=$((skipped+1))
+              continue
+            fi
+            if [ "$code" != "200" ]; then
+              echo "SKIP unreadable $id http=$code"
+              rm -f "$out"
+              skipped=$((skipped+1))
+              continue
             fi
 
-            if [ "$alias_match" = "true" ]; then
-              echo "KEEP custom-domain deployment $id"
-              kept=$((kept+1)); continue
+            detail_project=$(jq -r '.projectId // .project.id // empty' "$out")
+            detail_id=$(jq -r '.id // .uid // empty' "$out")
+            rm -f "$out"
+
+            if [ "$detail_project" != "$VERCEL_PROJECT_ID" ] || [ "$detail_id" != "$id" ]; then
+              echo "SKIP verification mismatch $id"
+              skipped=$((skipped+1))
+              continue
             fi
 
-            if [ "$target" = "production" ] && [ "$prod_rollback_kept" -lt 2 ]; then
-              echo "KEEP production rollback $id"
-              prod_rollback_kept=$((prod_rollback_kept+1)); kept=$((kept+1)); continue
-            fi
-
-            if [ "$branch" = "fix/final-coffee-skincare-demos-20260913" ] && [ "$skincare_kept" -lt 5 ]; then
-              echo "KEEP skincare rollback $id"
-              skincare_kept=$((skincare_kept+1)); kept=$((kept+1)); continue
-            fi
-
-            if [ "$branch" = "migration/coffee-only-final-20260913" ] && [ "$coffee_kept" -lt 5 ]; then
-              echo "KEEP coffee rollback $id"
-              coffee_kept=$((coffee_kept+1)); kept=$((kept+1)); continue
-            fi
-
-            # Verify the exact deployment immediately before deletion.
-            if ! detail=$(get_detail "$id"); then
-              rc=$?
-              if [ "$rc" = "44" ]; then
-                echo "SKIP already unavailable $id"
-              else
-                echo "SKIP unreadable $id"
-              fi
-              skipped=$((skipped+1)); continue
-            fi
-
-            detail_project=$(jq -r '.projectId // ""' <<<"$detail")
-            detail_id=$(jq -r '.id // .uid // ""' <<<"$detail")
-            detail_alias_match=$(jq -r '([.alias // []] | map(select(type == "string" and endswith("mojchatbot.sk"))) | length) > 0' <<<"$detail")
-
-            if [ "$detail_project" != "$VERCEL_PROJECT_ID" ] || [ "$detail_id" != "$id" ] || [ "$detail_alias_match" = "true" ] || [ "$id" = "$current_production_id" ]; then
+            # Final hard guard.
+            if [ "$id" = "$PROTECTED_DEPLOYMENT_1" ] || [ "$id" = "$PROTECTED_DEPLOYMENT_2" ]; then
               echo "KEEP protected after verification $id"
-              kept=$((kept+1)); continue
+              kept=$((kept+1))
+              continue
             fi
 
-            if delete_deployment "$id"; then
-              echo "DELETED $id target=${target:-preview} branch=${branch:-none}"
+            out=$(mktemp)
+            code=$(curl -sS -o "$out" -w "%{http_code}" -X DELETE \
+              -H "Authorization: Bearer $VERCEL_TOKEN" \
+              "$api/v13/deployments/$id?teamId=$VERCEL_TEAM_ID" || true)
+            body=$(cat "$out" || true)
+            rm -f "$out"
+
+            if [ "$code" = "200" ] || [ "$code" = "204" ] || [ "$code" = "404" ]; then
+              echo "DELETED $id http=$code"
               deleted=$((deleted+1))
-              sleep 1
             else
-              rc=$?
-              if [ "$rc" = "44" ]; then
-                echo "SKIP already deleted $id"
-              else
-                echo "SKIP delete-error $id"
-              fi
+              echo "DELETE FAILED $id http=$code body=$body"
               skipped=$((skipped+1))
             fi
+            sleep 1
           done < "$tmp"
 
           rm -f "$tmp"
-          echo "RESULT kept=$kept deleted=$deleted skipped=$skipped production_rollbacks=$prod_rollback_kept skincare_rollbacks=$skincare_kept coffee_rollbacks=$coffee_kept"
+          echo "RESULT total=$total kept=$kept deleted=$deleted skipped=$skipped"
