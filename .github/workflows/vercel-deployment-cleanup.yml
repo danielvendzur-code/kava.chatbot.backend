@@ -12,15 +12,11 @@ on:
 permissions:
   contents: read
 
-concurrency:
-  group: vercel-deployment-cleanup
-  cancel-in-progress: false
-
 jobs:
   cleanup:
     runs-on: ubuntu-latest
     steps:
-      - name: Keep only the two protected deployments
+      - name: Delete known stale deployments; keep two protected
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_PROJECT_ID: prj_wCzamTfbYrn2asWAU0agL3yoF7nD
@@ -30,108 +26,70 @@ jobs:
         shell: bash
         run: |
           set -Eeuo pipefail
-          test -n "$VERCEL_TOKEN" || { echo "VERCEL_TOKEN secret is missing"; exit 1; }
-
           api="https://api.vercel.com"
-          tmp=$(mktemp)
-          cursor=""
 
-          # Verify both explicitly protected deployments first.
           for protected in "$PROTECTED_DEPLOYMENT_1" "$PROTECTED_DEPLOYMENT_2"; do
-            detail=$(curl --fail-with-body -sS \
-              -H "Authorization: Bearer $VERCEL_TOKEN" \
-              "$api/v13/deployments/$protected?teamId=$VERCEL_TEAM_ID")
+            detail=$(curl --fail-with-body -sS -H "Authorization: Bearer $VERCEL_TOKEN"               "$api/v13/deployments/$protected?teamId=$VERCEL_TEAM_ID")
             project_id=$(jq -r '.projectId // .project.id // empty' <<<"$detail")
-            deployment_id=$(jq -r '.id // .uid // empty' <<<"$detail")
             state=$(jq -r '.readyState // .state // empty' <<<"$detail")
-            if [ "$project_id" != "$VERCEL_PROJECT_ID" ] || [ "$deployment_id" != "$protected" ] || [ "$state" != "READY" ]; then
-              echo "Protected deployment verification failed: $protected project=$project_id state=$state"
-              exit 1
-            fi
-            echo "PROTECTED $protected state=$state"
+            test "$project_id" = "$VERCEL_PROJECT_ID"
+            test "$state" = "READY"
+            echo "KEEP $protected"
           done
 
-          # Snapshot all deployments for this exact project.
-          while :; do
-            url="$api/v7/deployments?projectId=$VERCEL_PROJECT_ID&teamId=$VERCEL_TEAM_ID&limit=100"
-            [ -n "$cursor" ] && url="$url&until=$cursor"
-            page=$(curl --fail-with-body -sS \
-              -H "Authorization: Bearer $VERCEL_TOKEN" "$url")
-            jq -c '.deployments[]' <<<"$page" >> "$tmp"
-            next=$(jq -r '.pagination.next // empty' <<<"$page")
-            [ -n "$next" ] || break
-            cursor="$next"
-          done
-
-          total=$(wc -l < "$tmp" | tr -d ' ')
-          echo "Found $total deployments"
+          stale=(
+            dpl_8xzCDQhkUj9cwm2CUSSgEbs5oHdV
+            dpl_BNjJi2hXpyNfyHT9yqVAj3jhvnoC
+            dpl_ACD93TxJ9aE3eDXJzFMJ6gbDh4h8
+            dpl_xmuoFsi9zCapuNGMDf1C9XTnYocC
+            dpl_FPxm3aMgEVsJA8z2UhSf6AtHegCC
+            dpl_6kwB4a4YEtuuS5NbQEpaYrNryAcy
+          )
 
           deleted=0
-          kept=0
           skipped=0
-
-          while IFS= read -r deployment; do
-            id=$(jq -r '.uid // .id // empty' <<<"$deployment")
-            [ -n "$id" ] || { skipped=$((skipped+1)); continue; }
-
+          for id in "${stale[@]}"; do
             if [ "$id" = "$PROTECTED_DEPLOYMENT_1" ] || [ "$id" = "$PROTECTED_DEPLOYMENT_2" ]; then
-              echo "KEEP protected $id"
-              kept=$((kept+1))
-              continue
+              echo "REFUSE protected $id"
+              exit 1
             fi
 
-            # Re-read exact deployment immediately before deletion.
             out=$(mktemp)
-            code=$(curl -sS -o "$out" -w "%{http_code}" \
-              -H "Authorization: Bearer $VERCEL_TOKEN" \
-              "$api/v13/deployments/$id?teamId=$VERCEL_TEAM_ID" || true)
+            code=$(curl -sS -o "$out" -w "%{http_code}"               -H "Authorization: Bearer $VERCEL_TOKEN"               "$api/v13/deployments/$id?teamId=$VERCEL_TEAM_ID" || true)
 
             if [ "$code" = "404" ]; then
-              echo "SKIP already absent $id"
+              echo "ALREADY GONE $id"
               rm -f "$out"
-              skipped=$((skipped+1))
               continue
             fi
             if [ "$code" != "200" ]; then
               echo "SKIP unreadable $id http=$code"
+              cat "$out" || true
               rm -f "$out"
               skipped=$((skipped+1))
               continue
             fi
 
-            detail_project=$(jq -r '.projectId // .project.id // empty' "$out")
-            detail_id=$(jq -r '.id // .uid // empty' "$out")
+            project_id=$(jq -r '.projectId // .project.id // empty' "$out")
             rm -f "$out"
-
-            if [ "$detail_project" != "$VERCEL_PROJECT_ID" ] || [ "$detail_id" != "$id" ]; then
-              echo "SKIP verification mismatch $id"
+            if [ "$project_id" != "$VERCEL_PROJECT_ID" ]; then
+              echo "REFUSE wrong-project $id project=$project_id"
               skipped=$((skipped+1))
               continue
             fi
 
-            # Final hard guard.
-            if [ "$id" = "$PROTECTED_DEPLOYMENT_1" ] || [ "$id" = "$PROTECTED_DEPLOYMENT_2" ]; then
-              echo "KEEP protected after verification $id"
-              kept=$((kept+1))
-              continue
-            fi
-
             out=$(mktemp)
-            code=$(curl -sS -o "$out" -w "%{http_code}" -X DELETE \
-              -H "Authorization: Bearer $VERCEL_TOKEN" \
-              "$api/v13/deployments/$id?teamId=$VERCEL_TEAM_ID" || true)
+            code=$(curl -sS -o "$out" -w "%{http_code}" -X DELETE               -H "Authorization: Bearer $VERCEL_TOKEN"               "$api/v13/deployments/$id?teamId=$VERCEL_TEAM_ID" || true)
             body=$(cat "$out" || true)
             rm -f "$out"
 
             if [ "$code" = "200" ] || [ "$code" = "204" ] || [ "$code" = "404" ]; then
-              echo "DELETED $id http=$code"
+              echo "DELETED $id"
               deleted=$((deleted+1))
             else
               echo "DELETE FAILED $id http=$code body=$body"
               skipped=$((skipped+1))
             fi
-            sleep 1
-          done < "$tmp"
+          done
 
-          rm -f "$tmp"
-          echo "RESULT total=$total kept=$kept deleted=$deleted skipped=$skipped"
+          echo "RESULT deleted=$deleted skipped=$skipped"
