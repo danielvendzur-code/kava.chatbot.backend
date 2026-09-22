@@ -53,7 +53,7 @@ jobs:
 
           # Snapshot all deployments for this exact project.
           while :; do
-            url="$api/v13/deployments?projectId=$VERCEL_PROJECT_ID&teamId=$VERCEL_TEAM_ID&limit=100"
+            url="$api/v7/deployments?projectId=$VERCEL_PROJECT_ID&teamId=$VERCEL_TEAM_ID&limit=100"
             [ -n "$cursor" ] && url="$url&until=$cursor"
             page=$(curl --fail-with-body -sS \
               -H "Authorization: Bearer $VERCEL_TOKEN" "$url")
