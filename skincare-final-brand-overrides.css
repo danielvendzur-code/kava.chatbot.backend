@@ -79,17 +79,21 @@ body[data-cosmetics-demo="anemone"] .cx-launcher-real-wordmark * {
   }
 }
 
-/* Modra pupava — launcher gets the flower only; header image is trimmed in JS. */
+/* Modra pupava — launcher gets the flower only; header image is trimmed in JS.
+   The flower is the right-hand end of the wordmark, so the square is anchored
+   to the image's right edge; the left edge is transparent padding. */
 body[data-cosmetics-demo="modrapupava"] .cx-modrapupava-symbol {
   width: 46px !important;
   height: 46px !important;
-  display: block !important;
+  display: flex !important;
+  justify-content: flex-end !important;
   overflow: hidden !important;
   border: 0 !important;
   background: transparent !important;
 }
 body[data-cosmetics-demo="modrapupava"] .cx-modrapupava-symbol img {
   display: block !important;
+  flex: none !important;
   height: 46px !important;
   width: auto !important;
   max-width: none !important;

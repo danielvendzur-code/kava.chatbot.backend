@@ -56,7 +56,7 @@
 
   /* Modrá púpava: the launcher should show the flower symbol only, not the full
      horizontal wordmark. The brand asset is a wide mark with its compact symbol
-     at the left edge, so the launcher clips exactly one logo-height square. */
+     at the right edge, so the launcher clips exactly one logo-height square. */
   if (slug === 'modrapupava') {
     launcher.classList.remove('is-image-logo', 'cx-launcher-has-image-logo', 'cx-launcher-has-wordmark');
     launcher.classList.add('cx-launcher-has-image-logo');

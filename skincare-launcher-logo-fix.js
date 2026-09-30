@@ -44,6 +44,9 @@
   const patchMessageAvatars = () => {
     document.querySelectorAll('.cx-message-avatar').forEach((avatar) => {
       avatar.classList.add('cx-message-avatar--round');
+      /* Cyprianus puts its own emblem image here on purpose; replacing it would
+         make both observers rewrite the avatar forever and freeze the page. */
+      if (avatar.querySelector('.cx-cyprianus-symbol')) return;
       const hasImage = Boolean(avatar.querySelector('img, picture, .cx-logo'));
       if (!hasImage) return;
       const mark = document.createElement('span');
