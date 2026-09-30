@@ -460,7 +460,7 @@
 
     const cleanup = document.createElement('link');
     cleanup.rel = 'stylesheet';
-    cleanup.href = '/coffee-header-cleanup.css?v=7984d30a';
+    cleanup.href = '/coffee-header-cleanup.css?v=bc30d145';
     cleanup.dataset.coffeeHeaderCleanup = 'true';
     cleanup.dataset.mcOrder = '25';
     document.body.appendChild(cleanup);

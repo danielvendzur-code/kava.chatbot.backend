@@ -1,6 +1,7 @@
 name: Deploy demos to Websupport
 
 # Manual only: nothing is uploaded until someone runs this from the Actions tab.
+# Step-by-step instructions (also for Claude in Chrome): deploy/WEBSUPPORT.md
 #
 # Repository secrets (Settings → Secrets and variables → Actions → Secrets):
 #   WEBSUPPORT_FTP_HOST      FTP server from the Websupport admin
@@ -8,8 +9,9 @@ name: Deploy demos to Websupport
 #   WEBSUPPORT_FTP_PASSWORD  FTP account password
 #
 # Repository variable (… → Variables), used when the run leaves "targets" empty:
-#   WEBSUPPORT_TARGETS       remote folders to upload into, one per line or
-#                            space-separated, e.g. "/web" or "/sub/mylo /sub/ponio"
+#   WEBSUPPORT_TARGETS       remote folders to upload into, space-separated,
+#                            relative to the FTP account's home, e.g. "web" or
+#                            "sub/praziarnicka sub/mylo"
 #
 # Every target receives the same files. /index.html picks the demo from the
 # subdomain it is opened on, so one folder serves any number of subdomains.
@@ -17,6 +19,11 @@ name: Deploy demos to Websupport
 on:
   workflow_dispatch:
     inputs:
+      mode:
+        description: 'dry-run = only list, upload = upload and check, verify = only check the live subdomains'
+        type: choice
+        options: [dry-run, upload, verify]
+        default: dry-run
       targets:
         description: 'Remote folders (space-separated). Empty = WEBSUPPORT_TARGETS variable.'
         required: false
@@ -26,8 +33,8 @@ on:
         type: choice
         options: [ftp, sftp]
         default: ftp
-      dry_run:
-        description: 'Only list what would be uploaded'
+      verify_certificate:
+        description: 'Verify the FTP TLS certificate (turn off only if the run fails on a certificate name mismatch)'
         type: boolean
         default: true
 
@@ -41,7 +48,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
 
@@ -56,16 +63,19 @@ jobs:
         run: bash deploy/build-websupport.sh
 
       - name: Install lftp
+        if: inputs.mode != 'verify'
         run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
 
       - name: Upload
+        if: inputs.mode != 'verify'
         env:
           FTP_HOST: ${{ secrets.WEBSUPPORT_FTP_HOST }}
           FTP_USER: ${{ secrets.WEBSUPPORT_FTP_USER }}
           FTP_PASSWORD: ${{ secrets.WEBSUPPORT_FTP_PASSWORD }}
           TARGETS: ${{ inputs.targets || vars.WEBSUPPORT_TARGETS }}
           PROTOCOL: ${{ inputs.protocol }}
-          DRY_RUN: ${{ inputs.dry_run }}
+          MODE: ${{ inputs.mode }}
+          VERIFY_CERT: ${{ inputs.verify_certificate }}
         run: |
           set -euo pipefail
           for name in FTP_HOST FTP_USER FTP_PASSWORD TARGETS; do
@@ -75,17 +85,60 @@ jobs:
           # Files already on the server that are not in this repository (older
           # demos, other sites) are never deleted: mirror runs without --delete.
           dry=""
-          if [ "$DRY_RUN" = "true" ]; then dry="--dry-run"; fi
+          if [ "$MODE" = "dry-run" ]; then dry="--dry-run"; fi
+
+          {
+            echo "## Websupport: $MODE"
+            echo ""
+            echo "| Folder | Files |"
+            echo "|---|---|"
+          } >> "$GITHUB_STEP_SUMMARY"
 
           for target in $TARGETS; do
             echo "::group::$target"
+            # A dry run must not touch the server, so it does not create folders.
+            mk=""
+            if [ "$MODE" != "dry-run" ]; then mk="mkdir -p -f '$target';"; fi
             lftp -u "$FTP_USER","$FTP_PASSWORD" "$PROTOCOL://$FTP_HOST" -e "
               set ftp:ssl-force true;
               set ftp:ssl-protect-data true;
-              set ssl:verify-certificate true;
+              set ssl:verify-certificate $VERIFY_CERT;
               set sftp:auto-confirm yes;
               set net:max-retries 3;
+              set net:timeout 30;
+              $mk
               mirror --reverse --only-newer --no-perms --parallel=4 --verbose $dry dist/ '$target';
-              bye"
+              bye" 2>&1 | tee "lftp-$(echo "$target" | tr '/' '_').log"
+            count=$(grep -cE '^(Transferring|put|Would)|Transferring file' "lftp-$(echo "$target" | tr '/' '_').log" || true)
+            echo "| \`$target\` | $count |" >> "$GITHUB_STEP_SUMMARY"
             echo "::endgroup::"
           done
+
+      - name: Check live subdomains
+        if: inputs.mode != 'dry-run'
+        run: |
+          set -uo pipefail
+          expected=$(sed -n 's/^verzia: //p' dist/verzia.txt)
+          hosts=$(grep -o '[a-z0-9-]*\.mojchatbot\.sk' ukazky.html | sort -u)
+          {
+            echo "## Live check (expected build \`$expected\`)"
+            echo ""
+            echo "| Subdomain | verzia.txt | Page |"
+            echo "|---|---|---|"
+          } >> "$GITHUB_STEP_SUMMARY"
+          ok=0; bad=0
+          for host in $hosts; do
+            live=$(curl -fsSL --max-time 20 "https://$host/verzia.txt?nocache=$RANDOM" 2>/dev/null | sed -n 's/^verzia: //p')
+            page=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 20 "https://$host/")
+            if [ "$live" = "$expected" ] && [ "$page" = "200" ]; then
+              ok=$((ok+1)); mark="OK"
+            else
+              bad=$((bad+1)); mark="**${live:-no answer}**"
+            fi
+            echo "| $host | $mark | $page |" >> "$GITHUB_STEP_SUMMARY"
+          done
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "**$ok OK, $bad not on this build.**" >> "$GITHUB_STEP_SUMMARY"
+          echo "$ok OK, $bad not on this build"
+          # A subdomain whose DNS still points elsewhere is reported, not fatal:
+          # the upload itself succeeded.

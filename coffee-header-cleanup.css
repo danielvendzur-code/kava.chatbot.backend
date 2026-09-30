@@ -177,7 +177,7 @@ html body.zlatezrnko-clean .mcb-page .mcb-lockup::before{
    header row instead. */
 html body.coffeesheep-clean .mcb-page .mcb-lockup>img,
 html body.casadelcaffe-clean .mcb-page .mcb-lockup>img{
-  max-height:clamp(46px,7vh,60px);
+  max-height:clamp(46px,7vh,52px);
 }
 @media(max-width:620px){
   html body.coffeesheep-clean .mcb-page .mcb-lockup>img,

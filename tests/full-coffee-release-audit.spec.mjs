@@ -71,11 +71,11 @@ async function expectOwnerOffer(page) {
   const ownerPage = page.locator('.mcb-page');
   await expect(ownerPage).toBeVisible();
 
-  // The headline says what the thing is; the lead says what the owner gets out
-  // of it. Both are the same sentence on every demo.
+  // The headline says what the thing is, the same sentence on every demo. The
+  // lead paragraph under it was removed from the page; the four numbered
+  // points beside the picture carry that message now.
   await expect(ownerPage.locator('.mcb-eyebrow')).toHaveText('Chatbot pre váš e-shop');
   await expect(ownerPage.locator('.mcb-copy h1')).toHaveText('Poradí zákazníkovi kávu a odpovie mu na otázky.');
-  await expect(ownerPage.locator('.mcb-lead')).toContainText('Predáte aj vtedy, keď pri tom nie ste.');
 
   // What the owner keeps is on the page, not only behind the header button.
   const keeps = ownerPage.locator('.mcb-keeps li');
@@ -111,7 +111,10 @@ async function expectOwnerOffer(page) {
   });
   expect(panel.backgroundImage).toBe('none');
   expect(panel.boxShadow).toBe('none');
-  expect(['none', 'matrix(1, 0, 0, 1, 0, 0)']).toContain(panel.transform);
+  // The panel slides in when the page reveals itself, so the transform is
+  // read once that transition has finished rather than mid-way through it.
+  await expect.poll(() => price.evaluate((element) => getComputedStyle(element).transform))
+    .toMatch(/^(none|matrix\(1, 0, 0, 1, 0, 0\))$/);
 
   // A price with no way to answer it is a dead end, and the reply must not sit
   // under the invitation fixed to the bottom-right corner.

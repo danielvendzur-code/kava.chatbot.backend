@@ -173,8 +173,11 @@ Pred prvým spustením v GitHube (Settings → Secrets and variables → Actions
   alebo `/sub/mylo /sub/ponio …`
 
 Každý cieľ dostane rovnaké súbory; `index.html` si ukážku vyberie podľa
-subdomény, takže jeden priečinok obslúži ľubovoľný počet subdomén. Predvolene
-beží `dry_run` (len vypíše, čo by nahral). Na serveri sa nič nemaže.
+subdomény, takže jeden priečinok obslúži ľubovoľný počet subdomén. Režimy:
+`dry-run` (predvolený, len vypíše), `upload` a `verify` (skontroluje
+`verzia.txt` na všetkých 36 subdoménach). Na serveri sa nič nemaže.
+
+Hotový prompt pre Claude v Chrome aj ručný postup: [`deploy/WEBSUPPORT.md`](deploy/WEBSUPPORT.md).
 
 Na Websupporte nebeží `/api/chat` — chat odpovedá pripravenými odpoveďami
 z katalógu (`coffee-api-route.js`, `localReply` v `cosmetics.js`).
