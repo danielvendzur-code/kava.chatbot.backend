@@ -1,0 +1,91 @@
+name: Deploy demos to Websupport
+
+# Manual only: nothing is uploaded until someone runs this from the Actions tab.
+#
+# Repository secrets (Settings → Secrets and variables → Actions → Secrets):
+#   WEBSUPPORT_FTP_HOST      FTP server from the Websupport admin
+#   WEBSUPPORT_FTP_USER      FTP account name
+#   WEBSUPPORT_FTP_PASSWORD  FTP account password
+#
+# Repository variable (… → Variables), used when the run leaves "targets" empty:
+#   WEBSUPPORT_TARGETS       remote folders to upload into, one per line or
+#                            space-separated, e.g. "/web" or "/sub/mylo /sub/ponio"
+#
+# Every target receives the same files. /index.html picks the demo from the
+# subdomain it is opened on, so one folder serves any number of subdomains.
+
+on:
+  workflow_dispatch:
+    inputs:
+      targets:
+        description: 'Remote folders (space-separated). Empty = WEBSUPPORT_TARGETS variable.'
+        required: false
+        default: ''
+      protocol:
+        description: 'ftp (explicit TLS) or sftp'
+        type: choice
+        options: [ftp, sftp]
+        default: ftp
+      dry_run:
+        description: 'Only list what would be uploaded'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-websupport
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Refuse unstamped assets
+        run: node scripts/stamp-assets.mjs --check
+
+      - name: Build upload folder
+        run: bash deploy/build-websupport.sh
+
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Upload
+        env:
+          FTP_HOST: ${{ secrets.WEBSUPPORT_FTP_HOST }}
+          FTP_USER: ${{ secrets.WEBSUPPORT_FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.WEBSUPPORT_FTP_PASSWORD }}
+          TARGETS: ${{ inputs.targets || vars.WEBSUPPORT_TARGETS }}
+          PROTOCOL: ${{ inputs.protocol }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          set -euo pipefail
+          for name in FTP_HOST FTP_USER FTP_PASSWORD TARGETS; do
+            if [ -z "${!name}" ]; then echo "::error::$name is not set"; exit 1; fi
+          done
+
+          # Files already on the server that are not in this repository (older
+          # demos, other sites) are never deleted: mirror runs without --delete.
+          dry=""
+          if [ "$DRY_RUN" = "true" ]; then dry="--dry-run"; fi
+
+          for target in $TARGETS; do
+            echo "::group::$target"
+            lftp -u "$FTP_USER","$FTP_PASSWORD" "$PROTOCOL://$FTP_HOST" -e "
+              set ftp:ssl-force true;
+              set ftp:ssl-protect-data true;
+              set ssl:verify-certificate true;
+              set sftp:auto-confirm yes;
+              set net:max-retries 3;
+              mirror --reverse --only-newer --no-perms --parallel=4 --verbose $dry dist/ '$target';
+              bye"
+            echo "::endgroup::"
+          done

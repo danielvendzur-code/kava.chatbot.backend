@@ -76,7 +76,10 @@ body:has(.mcb-page){margin:0!important;background:var(--mcb-paper,#fff)!importan
   .mcb-page{grid-template-rows:clamp(52px,8vh,62px) minmax(0,1fr) auto auto;gap:clamp(7px,1.2vh,12px)}
   .mcb-lockup img{max-width:145px;max-height:38px}
   .mcb-actions .mcb-btn{flex:1 1 auto}
-  .mcb-foot a{margin-right:74px}
+  /* The launcher sits over the right end of the footer, so the footer keeps
+     that corner clear rather than pushing only the link aside. */
+  .mcb-foot{padding-right:84px}
+  .mcb-foot a{margin-right:auto}
 
 }
 

@@ -171,3 +171,15 @@ html body.zlatezrnko-clean .mcb-page .mcb-lockup::before{
     filter:none!important;
   }
 }
+
+/* Coffee Sheep and Casa del Caffé ship stacked logos (mark above the name), so
+   the shared 48px height leaves the name unreadably small. They get the full
+   header row instead. */
+html body.coffeesheep-clean .mcb-page .mcb-lockup>img,
+html body.casadelcaffe-clean .mcb-page .mcb-lockup>img{
+  max-height:clamp(46px,7vh,60px);
+}
+@media(max-width:620px){
+  html body.coffeesheep-clean .mcb-page .mcb-lockup>img,
+  html body.casadelcaffe-clean .mcb-page .mcb-lockup>img{max-height:48px}
+}
