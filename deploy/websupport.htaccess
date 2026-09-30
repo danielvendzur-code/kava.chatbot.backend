@@ -1,0 +1,25 @@
+# Websupport (Apache) settings for the demo pages. Copied to the web root of
+# every target by .github/workflows/deploy-websupport.yml.
+#
+# No rewrites are needed: /index.html picks the demo from the subdomain and
+# redirects to /<slug>.html or /kozmetika/<slug>/, both of which are real files.
+
+Options -Indexes
+DirectoryIndex index.html
+AddDefaultCharset UTF-8
+
+AddType font/woff2 .woff2
+AddType image/webp .webp
+AddType image/svg+xml .svg
+
+<IfModule mod_headers.c>
+  Header set X-Robots-Tag "noindex, nofollow, noarchive"
+  # Asset URLs carry a content hash (?v=…), so pages and scripts are always
+  # revalidated and a new upload is seen on the next load.
+  <FilesMatch "\.(html|js|css)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "^verzia\.txt$">
+    Header set Cache-Control "no-store"
+  </FilesMatch>
+</IfModule>

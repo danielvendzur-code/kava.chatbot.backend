@@ -406,7 +406,7 @@
   /* -------------------------------------------------------------- opening */
 
   const launchers = {
-    praziarnicka: '#open,#pz13-open', diamonds: '#open,#launcherButton', kaffa: '#open,#launcher',
+    praziarnicka: '#open,#pz13-open', diamonds: '#open,#launcherButton', kaffa: '#open,button#launcher',
     vitazov: '#open,#openWidget', concept: '#open,#openWidget', jolka: '#open'
   };
   const advisorButtons = {
@@ -460,14 +460,14 @@
 
     const cleanup = document.createElement('link');
     cleanup.rel = 'stylesheet';
-    cleanup.href = '/coffee-header-cleanup.css?v=e64c70d2';
+    cleanup.href = '/coffee-header-cleanup.css?v=bc30d145';
     cleanup.dataset.coffeeHeaderCleanup = 'true';
     cleanup.dataset.mcOrder = '25';
     document.body.appendChild(cleanup);
 
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = '/coffee-owner-brand.css?v=78eccfea';
+    link.href = '/coffee-owner-brand.css?v=266a9330';
     link.dataset.mcbStyle = 'true';
     link.dataset.mcOrder = '30';
     document.body.appendChild(link);
@@ -481,7 +481,7 @@
 
     const refresh = document.createElement('link');
     refresh.rel = 'stylesheet';
-    refresh.href = '/coffee-refresh.css?v=20260909m';
+    refresh.href = '/coffee-refresh.css?v=d3fe06bc';
     refresh.dataset.mcbRefreshStyle = 'true';
     refresh.dataset.mcOrder = '95';
     document.body.appendChild(refresh);

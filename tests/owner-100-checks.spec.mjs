@@ -251,18 +251,18 @@ test('owner presentation: 100+ collision, readability and brand checks', async (
   await page.waitForFunction(() => document.documentElement.dataset.cosmeticsReady === 'true');
   await page.waitForTimeout(200);
 
+  // The closed preview carries the real company logo (skincare-final-logo-qa.js),
+  // which replaced the earlier cropped B/L monogram.
   const launcher=page.locator('.cx-launcher-button');
-  const monogram=launcher.locator('.cx-barbora-monogram');
-  const letters=monogram.locator('.cx-barbora-letter');
-  const [launcherBox,monogramBox]=await Promise.all([box(launcher),box(monogram)]);
+  const launcherLogo=launcher.locator('img.cx-launcher-real-logo');
+  const [launcherBox,launcherLogoBox]=await Promise.all([box(launcher),box(launcherLogo)]);
   record('barboralori launcher is circle', launcherBox && Math.abs(launcherBox.width-launcherBox.height)<=1, JSON.stringify(launcherBox));
-  record('barboralori launcher uses two official cropped initials', await letters.count()===2);
-  record('barboralori BL centered in launcher', launcherBox && monogramBox &&
-    Math.abs((launcherBox.x+launcherBox.width/2)-(monogramBox.x+monogramBox.width/2))<=3 &&
-    Math.abs((launcherBox.y+launcherBox.height/2)-(monogramBox.y+monogramBox.height/2))<=3,
-    JSON.stringify({launcherBox,monogramBox}));
-  record('barboralori official B/L crops have readable geometry', await letters.evaluateAll(nodes =>
-    nodes.length===2 && nodes.every(n=>n.getBoundingClientRect().width>=8 && n.getBoundingClientRect().height>=18)));
+  record('barboralori launcher shows the real logo', await loadedImage(launcherLogo));
+  record('barboralori launcher logo inside the circle', contained(launcherBox, launcherLogoBox, 1), JSON.stringify({launcherBox,launcherLogoBox}));
+  record('barboralori launcher logo centered', launcherBox && launcherLogoBox &&
+    Math.abs((launcherBox.x+launcherBox.width/2)-(launcherLogoBox.x+launcherLogoBox.width/2))<=3 &&
+    Math.abs((launcherBox.y+launcherBox.height/2)-(launcherLogoBox.y+launcherLogoBox.height/2))<=3,
+    JSON.stringify({launcherBox,launcherLogoBox}));
 
   await page.screenshot({ path:'artifacts/owner-100-audit/barboralori-owner.png', fullPage:true });
   const heroDelta=await barboraSubjectDelta(page,'.cx-owner-visual > img','.cx-owner-visual');

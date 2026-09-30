@@ -90,3 +90,16 @@ body[data-cosmetics-demo="kvitok"] .cx-kvitok-message-k {
 body[data-cosmetics-demo="kvitok"] .cx-kvitok-fallback-wordmark {
   display: none !important;
 }
+
+/* The Kvitok logo is a round badge with the script name inside, so at the
+   shared 40px cap the name is barely legible in the page header. */
+body[data-cosmetics-demo="kvitok"] .cx-owner-brand .cx-logo {
+  max-height: 56px !important;
+  max-width: 56px !important;
+}
+@media (max-width: 760px) {
+  body[data-cosmetics-demo="kvitok"] .cx-owner-brand .cx-logo {
+    max-height: 44px !important;
+    max-width: 44px !important;
+  }
+}

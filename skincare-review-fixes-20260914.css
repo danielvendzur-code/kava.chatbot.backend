@@ -99,3 +99,13 @@ body[data-cosmetics-demo="panakeia"] #cx-open .cx-launcher-real-logo {
     mix-blend-mode: normal !important;
   }
 }
+
+/* Phone widget header: cosmetics.css hides every direct span of the brand row
+   on small screens, which also removed the text wordmarks (mylo, ponio, two,
+   Bellcoria, BIOFY, ANEMONE) and left the header with only "online poradca".
+   Image logos were never affected; text wordmarks are restored here. */
+@media (max-width: 760px) {
+  body[data-cosmetics-demo] .cx-widget-brand > span.cx-wordmark {
+    display: inline-block !important;
+  }
+}

@@ -156,3 +156,28 @@ MutationObserver, ktorý by ich presúval donekonečna.
 
 Audit stavu pred touto zmenou a zoznam opráv je v
 [`AUDIT_2026-08_OWNER_VIEW.md`](AUDIT_2026-08_OWNER_VIEW.md).
+
+---
+
+## Nasadenie na Websupport
+
+Workflow `.github/workflows/deploy-websupport.yml` sa spúšťa **len ručne**
+(Actions → *Deploy demos to Websupport* → *Run workflow*). Zostaví priečinok
+`dist/` (`deploy/build-websupport.sh` — len súbory, ktoré stránky potrebujú,
+plus `.htaccess` z `deploy/websupport.htaccess`) a nahrá ho cez FTP/SFTP.
+
+Pred prvým spustením v GitHube (Settings → Secrets and variables → Actions):
+
+- secrets `WEBSUPPORT_FTP_HOST`, `WEBSUPPORT_FTP_USER`, `WEBSUPPORT_FTP_PASSWORD`
+- variable `WEBSUPPORT_TARGETS` — cieľové priečinky na serveri, napr. `/web`
+  alebo `/sub/mylo /sub/ponio …`
+
+Každý cieľ dostane rovnaké súbory; `index.html` si ukážku vyberie podľa
+subdomény, takže jeden priečinok obslúži ľubovoľný počet subdomén. Režimy:
+`dry-run` (predvolený, len vypíše), `upload` a `verify` (skontroluje
+`verzia.txt` na všetkých 36 subdoménach). Na serveri sa nič nemaže.
+
+Hotový prompt pre Claude v Chrome aj ručný postup: [`deploy/WEBSUPPORT.md`](deploy/WEBSUPPORT.md).
+
+Na Websupporte nebeží `/api/chat` — chat odpovedá pripravenými odpoveďami
+z katalógu (`coffee-api-route.js`, `localReply` v `cosmetics.js`).
