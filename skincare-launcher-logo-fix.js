@@ -25,10 +25,15 @@
   /* Rectangular raster badges do not belong inside a circular floating button.
      Keep the original logo in the page/widget header and use a clean wordmark
      in the closed launcher. */
+  /* Brands that ship their own launcher and avatar mark built from the logo
+     (the Cyprianus emblem) keep it. */
+  const OWN_MARK = '.cx-cyprianus-symbol';
+
   const hasRasterBadge =
+    !launcher.querySelector(OWN_MARK) && (
     launcher.classList.contains('is-image-logo') ||
     Boolean(launcher.querySelector('img, picture, .cx-logo')) ||
-    rasterMarkup;
+    rasterMarkup);
 
   if (hasRasterBadge) {
     const label = document.createElement('span');
@@ -44,9 +49,9 @@
   const patchMessageAvatars = () => {
     document.querySelectorAll('.cx-message-avatar').forEach((avatar) => {
       avatar.classList.add('cx-message-avatar--round');
-      /* Cyprianus puts its own emblem image here on purpose; replacing it would
-         make both observers rewrite the avatar forever and freeze the page. */
-      if (avatar.querySelector('.cx-cyprianus-symbol')) return;
+      /* Replacing a brand's own mark here would also make the Cyprianus
+         observer rewrite the avatar forever and freeze the page. */
+      if (avatar.querySelector(OWN_MARK)) return;
       const hasImage = Boolean(avatar.querySelector('img, picture, .cx-logo'));
       if (!hasImage) return;
       const mark = document.createElement('span');
