@@ -107,6 +107,26 @@
     cream:'krém', serum:'sérum', oil:'olej'
   };
 
+  /* The alternative must be something the result does not already show. A
+     trio, a carton or a routine lists several products, and ranked[1] is then
+     usually one of them, so the "alternative" repeated a card right above it.
+     Runs after every change to the result, whichever layer rendered last. */
+  const reconcileAlternative = () => {
+    const resultRoot = document.querySelector('.cx-result');
+    const alt = resultRoot?.querySelector('.cx-alt');
+    if (!alt || !data.questions.every((question) => answers[question.key])) return;
+    const shown = new Set([...resultRoot.querySelectorAll('.cx-product-copy h2, .cx-routine-card b')]
+      .map((node) => node.textContent.trim()));
+    const pick = rankedProducts(answers).map((item) => item.product)
+      .find((product) => !shown.has(product.name));
+    const altName = alt.querySelector('b');
+    const altLink = alt.querySelector('a');
+    if (!pick) { if (!alt.hidden) alt.hidden = true; return; }
+    if (altName && altName.textContent !== pick.name) altName.textContent = pick.name;
+    if (altLink && altLink.getAttribute('href') !== pick.url) altLink.href = pick.url;
+    if (alt.hidden) alt.hidden = false;
+  };
+
   let lastPatched = '';
   const patchResult = () => {
     if (!data.questions.every((question) => answers[question.key])) return;
@@ -114,12 +134,11 @@
     if (!resultRoot) return;
     const ranked = rankedProducts(answers);
     const product = ranked[0]?.product;
-    const alternative = ranked[1]?.product;
     if (!product) return;
 
     const key = `${product.id}:${Object.values(answers).join('|')}`;
     const title = resultRoot.querySelector('.cx-product-copy h2');
-    if (lastPatched === key && title?.textContent === product.name) return;
+    if (lastPatched === key && title?.textContent === product.name) { reconcileAlternative(); return; }
     lastPatched = key;
 
     const img = resultRoot.querySelector('.cx-product-photo img');
@@ -153,16 +172,7 @@
       tags.remove();
     }
 
-    const alt = resultRoot.querySelector('.cx-alt');
-    if (alt && alternative) {
-      const altName = alt.querySelector('b');
-      const altLink = alt.querySelector('a');
-      if (altName) altName.textContent = alternative.name;
-      if (altLink) altLink.href = alternative.url;
-      alt.hidden = false;
-    } else if (alt) {
-      alt.hidden = true;
-    }
+    reconcileAlternative();
   };
 
   const stage = document.querySelector('#cx-stage');
