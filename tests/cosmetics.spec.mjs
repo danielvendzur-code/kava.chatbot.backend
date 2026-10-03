@@ -49,7 +49,9 @@ test('all six cosmetics demos have a branded owner presentation that sells the s
     await expect(owner.locator('[data-open="advisor"]')).toBeVisible();
     await expect(owner.locator('[data-open="chat"]')).toBeVisible();
     await expect(owner.locator('.cx-owner-figures > div')).toHaveCount(3);
-    await expect(owner.locator('.cx-owner-contact[data-cx-offer="open"]')).toBeVisible();
+    // The header button goes straight to the contact form; the sheet opens from "Viac info".
+    await expect(owner.locator('a.cx-owner-contact[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
+    await expect(owner.locator('.cx-owner-more[data-cx-offer="open"]')).toBeVisible();
     await expect(owner.locator('.cx-price a[href*="mojchatbot.sk/kontakt"]')).toBeVisible();
     await expect(owner.locator('.cx-owner-offer')).toContainText('Prvý mesiac zdarma');
     await expect(owner.locator('.cx-owner-offer')).toContainText('247 €');
