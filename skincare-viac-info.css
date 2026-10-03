@@ -60,3 +60,4 @@ body[data-cosmetics-demo="syncare"] .cx-chat-mark {
 }
 body[data-cosmetics-demo="syncare"] .cx-message-avatar .cx-chat-mark { width: 22px; height: 22px; }
 body[data-cosmetics-demo="syncare"] #cosmetics-root .cx-message-avatar { background: #12a0a8 !important; }
+body.cx-offer-open .cx-launcher { visibility: hidden !important; }
