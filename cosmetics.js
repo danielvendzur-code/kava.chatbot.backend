@@ -5,12 +5,16 @@
   const data = window.COSMETICS_DEMOS;
   if (!root || !data) return;
 
-  const match = location.pathname.match(/\/kozmetika\/([a-z0-9-]+)/i);
+  /* The subdomain decides the brand. A path or ?demo= naming another brand
+     goes to that brand's own subdomain, so one company's demo never renders
+     under another company's address. */
+  const known = (value) => Object.prototype.hasOwnProperty.call(data.brands, value);
   const host = location.hostname.toLowerCase();
   const hostSlug = host.endsWith('.mojchatbot.sk') ? host.split('.')[0] : '';
-  const requested = match?.[1] || new URLSearchParams(location.search).get('demo') || hostSlug || 'mylo';
-  const slug = String(requested).toLowerCase();
-  const brand = data.brands[slug] || data.brands.mylo;
+  const asked = String(location.pathname.match(/\/kozmetika\/([a-z0-9-]+)/i)?.[1] || new URLSearchParams(location.search).get('demo') || '').toLowerCase();
+  if (known(hostSlug) && asked && asked !== hostSlug && known(asked)) { location.replace(`https://${asked}.mojchatbot.sk/`); return; }
+  const slug = known(hostSlug) ? hostSlug : known(asked) ? asked : 'mylo';
+  const brand = data.brands[slug];
   const isMylo = slug === 'mylo';
   const hasImageLogo = /class=["'][^"']*cx-logo/.test(brand.wordmark);
   const launcherMarkup = brand.launcherMark || brand.wordmark;

@@ -1,3 +1,12 @@
+/* A demo page opened under another company's subdomain
+   (praziarnicka.mojchatbot.sk/concept.html) goes to its own subdomain. */
+(() => {
+  const DEMOS = ['praziarnicka', 'diamonds', 'kaffa', 'vitazov', 'concept', 'jolka', 'goriffee', 'readyafter', 'coffeesheep', 'zlatezrnko', 'becafe', 'simplecoffee', 'ebenica', 'casadelcaffe', 'coffeeveronia', 'grandroastery', 'coffeein', 'kavoholik', 'mylo', 'ponio', 'two', 'bellcoria', 'biofy', 'anemone', 'modrapupava', 'facederma', 'cyprianus', 'panakeia', 'barboralori', 'bellmedi', 'lavelin', 'kvitok', 'soaphoria', 'syncare', 'fytopharma', 'natureal'];
+  const host = location.hostname.toLowerCase();
+  const hostSlug = host.endsWith('.mojchatbot.sk') ? host.split('.')[0] : '';
+  const page = (location.pathname.match(/^\/([a-z0-9-]+)\.html$/i)?.[1] || '').toLowerCase();
+  if (DEMOS.includes(hostSlug) && DEMOS.includes(page) && page !== hostSlug) location.replace(`https://${page}.mojchatbot.sk/`);
+})();
 (() => {
   'use strict';
   if (['127.0.0.1', 'localhost'].includes(location.hostname)) return;

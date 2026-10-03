@@ -1,0 +1,168 @@
+/* Older skincare demos (mylo … natureal): the same advisor and chat standard
+   as the new demos (ukazky-final.css in the vino and skincare repos), without
+   touching their launchers. */
+/* ---------- Chat ----------
+   A quiet single tint per side, so a message never reads as background. */
+#cosmetics-root .cx-message--assistant .cx-bubble {
+  background: color-mix(in srgb, var(--cx-accent) 6%, #fff) !important;
+  border: 1px solid color-mix(in srgb, var(--cx-accent) 17%, var(--cx-line)) !important;
+  color: var(--cx-ink) !important;
+  box-shadow: none !important;
+}
+#cosmetics-root .cx-message--user .cx-bubble {
+  background: color-mix(in srgb, var(--cx-brand) 11%, #fff) !important;
+  border: 1px solid color-mix(in srgb, var(--cx-brand) 22%, transparent) !important;
+  color: var(--cx-ink) !important;
+  box-shadow: none !important;
+}
+
+/* ---------- Advisor options ----------
+   Hover: a clear brand border. Selected: tinted card, brand border drawn
+   inside (no size change, no glow) and a filled check. */
+#cosmetics-root .cx-option {
+  border-color: color-mix(in srgb, var(--cx-ink) 13%, var(--cx-line)) !important;
+  box-shadow: none !important;
+  transition: border-color .15s ease, background-color .15s ease, transform .15s ease !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  #cosmetics-root .cx-option:not(.is-selected):not(:disabled):hover {
+    border-color: color-mix(in srgb, var(--cx-brand) 55%, var(--cx-line)) !important;
+    transform: translateY(-1px);
+  }
+}
+#cosmetics-root .cx-option.is-selected {
+  border-color: var(--cx-accent) !important;
+  background: color-mix(in srgb, var(--cx-accent) 9%, #fff) !important;
+  box-shadow: inset 0 0 0 1px var(--cx-accent) !important;
+  transform: none !important;
+}
+#cosmetics-root .cx-option.is-selected .cx-option-copy {
+  background: transparent !important;
+}
+#cosmetics-root .cx-option.is-selected .cx-option-copy b { color: var(--cx-ink) !important; }
+#cosmetics-root .cx-option.is-selected > i {
+  background: var(--cx-accent) !important;
+  color: #fff !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .18) !important;
+}
+#cosmetics-root .cx-option:focus-visible {
+  outline: 2px solid var(--cx-accent) !important;
+  outline-offset: 2px;
+}
+/* Same photo height on every card of a step, whatever the caption length. */
+#cosmetics-root .cx-option .cx-option-copy { min-height: var(--cx-copy-h, 0px); box-sizing: border-box; }
+
+/* ---------- Result ---------- */
+#cosmetics-root .cx-product,
+#cosmetics-root .cx-routine-card,
+#cosmetics-root .cx-alt {
+  border: 1px solid color-mix(in srgb, var(--cx-accent) 26%, var(--cx-line)) !important;
+}
+#cosmetics-root .cx-product-price strong {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 11px;
+  border: 1px solid color-mix(in srgb, var(--cx-accent) 34%, var(--cx-line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--cx-accent) 6%, #fff);
+  color: var(--cx-ink) !important;
+}
+#cosmetics-root .cx-product-tags span {
+  border-color: color-mix(in srgb, var(--cx-ink) 18%, var(--cx-line)) !important;
+}
+#cosmetics-root .cx-alt > a,
+#cosmetics-root .cx-routine-card a {
+  border: 1px solid color-mix(in srgb, var(--cx-ink) 14%, var(--cx-line)) !important;
+}
+#cosmetics-root .cx-restart {
+  border: 1px solid color-mix(in srgb, var(--cx-ink) 14%, var(--cx-line)) !important;
+}
+#cosmetics-root .cx-composer {
+  border-color: color-mix(in srgb, var(--cx-ink) 18%, var(--cx-line)) !important;
+}
+
+/* Keyboard focus: a visible ring on every control of the page and widget. */
+#cosmetics-root :is(button, a, input):focus-visible {
+  outline: 2px solid var(--cx-accent) !important;
+  outline-offset: 2px !important;
+}
+body[data-cosmetics-demo] #cx-open#cx-open:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--cx-l-bg, var(--cx-accent)) 55%, #fff) !important;
+  outline-offset: 3px !important;
+}
+
+/* Skoupil: the scanned logo turned its subline into a grey smudge at header
+   size. A typographic lockup in the house colours instead: the yellow stripe,
+   the name, the line under it. */
+body .cx-wordmark.cx-lockup-skoupil {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 11px !important;
+  width: auto !important;
+  height: auto !important;
+  color: var(--cx-ink) !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+body .cx-lockup-skoupil > i {
+  display: block !important;
+  flex: 0 0 auto;
+  width: 11px !important;
+  height: 36px !important;
+  background: #ffbb00 !important;
+  transform: skewX(-24deg);
+}
+body .cx-lockup-skoupil > span { display: grid !important; gap: 4px !important; }
+body .cx-lockup-skoupil b {
+  font: 800 21px/1 'DM Sans', system-ui, sans-serif !important;
+  letter-spacing: .14em !important;
+  color: inherit !important;
+}
+body .cx-lockup-skoupil small {
+  font: 700 8.5px/1 'DM Sans', system-ui, sans-serif !important;
+  letter-spacing: .26em !important;
+  text-transform: uppercase !important;
+  color: inherit !important;
+  opacity: .7;
+}
+body .cx-widget-brand .cx-lockup-skoupil { color: #fff !important; }
+body .cx-widget-brand .cx-lockup-skoupil > i { height: 28px !important; width: 9px !important; }
+body .cx-widget-brand .cx-lockup-skoupil b { font-size: 17px !important; }
+body .cx-widget-brand .cx-lockup-skoupil small { font-size: 7.5px !important; }
+@media (max-width: 420px) {
+  body .cx-owner-brand .cx-lockup-skoupil b { font-size: 17px !important; }
+  body .cx-owner-brand .cx-lockup-skoupil small { font-size: 7px !important; letter-spacing: .2em !important; }
+  body .cx-owner-brand .cx-lockup-skoupil > i { height: 30px !important; width: 9px !important; }
+}
+/* Phone owner page: the hero photograph was hidden below 760px and left an
+   empty band; it now fills that band (these heroes are single photographs). */
+@media (max-width: 760px) {
+  body[data-cosmetics-demo] .cx-owner-hero { grid-template-rows: auto minmax(0, 1fr) !important; min-height: 0 !important; }
+  body[data-cosmetics-demo] .cx-owner-frame { display: block !important; min-height: 0 !important; height: 100% !important; padding: 0 0 12px !important; box-sizing: border-box !important; }
+  body[data-cosmetics-demo] .cx-owner-frame .cx-keeps { display: none !important; }
+  body[data-cosmetics-demo] .cx-owner-visual { height: 100% !important; min-height: 120px !important; max-height: 300px !important; border-radius: 20px !important; }
+  body[data-cosmetics-demo] .cx-owner-visual img { object-fit: cover !important; }
+  body[data-cosmetics-demo] .cx-launcher { display: block !important; }
+  body[data-cosmetics-demo] .cx-launcher .cx-teaser { display: none !important; }
+}
+
+/* One readable photograph instead of four thumbnails. */
+body[data-cx-hero-single] .cx-owner-visual {
+  background: var(--cx-hero-bg, #fff) !important;
+}
+body[data-cx-hero-single] .cx-owner-visual img {
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 3% !important;
+  background: var(--cx-hero-bg, #fff) !important;
+  box-sizing: border-box;
+}
+body[data-cx-hero-single][data-cx-hero-fill] .cx-owner-visual img {
+  object-fit: cover !important;
+  padding: 0 !important;
+}
+
+@media (max-width: 760px) {
+  body[data-cx-hero-single] .cx-owner-visual img { object-fit: contain !important; }
+}

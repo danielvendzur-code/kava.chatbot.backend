@@ -24,6 +24,14 @@
     || (known(hostnameSlug) ? hostnameSlug : '')
     || pathSlug;
 
+  // A demo is only ever shown on its own subdomain: a path or ?demo= naming
+  // another company sends the visitor to that company's address instead of
+  // rendering company B under company A's domain.
+  if (known(hostnameSlug) && known(requested) && requested !== hostnameSlug) {
+    location.replace(`https://${requested}.mojchatbot.sk/`);
+    return;
+  }
+
   if (SKINCARE.has(requested)) {
     const target = `/kozmetika/${requested}`;
     if (location.pathname !== target) location.replace(target);
