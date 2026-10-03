@@ -768,3 +768,28 @@ body.mcb-offer-open { overflow: hidden; }
   .mcb-page .mcb-pricing { width: 100% !important; max-width: 100% !important; }
   .mcb-page .mcb-price { grid-template-columns: 1fr 1fr !important; padding: 16px !important; }
 }
+
+/* "Viac info" under the two buttons: a quiet text link that opens the sheet. */
+.mcb-page .mcb-more-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 4px 2px;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 30%, transparent);
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+.mcb-page .mcb-more-link svg { width: 14px; height: 14px; transition: transform .15s ease; }
+.mcb-page .mcb-more-link:hover { text-decoration-color: currentColor; }
+.mcb-page .mcb-more-link:hover svg { transform: translateX(2px); }
+.mcb-page .mcb-more .mcb-offer-card ul { margin-bottom: 22px; }
+.mcb-page .mcb-more .mcb-offer-card li small { line-height: 1.45; }
+.mcb-page a.mcb-btn { text-decoration: none; }

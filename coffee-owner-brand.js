@@ -57,7 +57,17 @@
     note: 'Bez viazanosti, vypnete kedykoľvek.',
     // Only in the sheet: the strip stays short enough to read at a glance.
     addon: 'Preklik na produkt alebo napojenie na košík za príplatok.',
-    // The sheet behind "Mám záujem" is the long version of the same offer.
+    /* "Viac info": only what the owner cannot see on the demo itself (no
+       price, no "your brand"). Approved wording, same on every demo. */
+    more: [
+      ['Prvý mesiac zdarma', 'Vyskúšate ho naostro na vlastnom webe.'],
+      ['Preklik priamo na produkt', 'Po odporúčaní zákazník pokračuje rovno na konkrétny produkt vo vašom e-shope.'],
+      ['Vloženie jedným riadkom kódu', 'Pridá sa do existujúceho webu, nič netreba prerábať.'],
+      ['Funguje aj mimo pracovného času', 'Zákazník dostane odpoveď a pomoc s výberom aj večer či cez víkend.'],
+      ['História správ', 'Vidíte, na čo sa zákazníci pýtajú, a zistíte, čo im na stránke chýba alebo čomu nerozumejú.'],
+      ['Priebežné úpravy', 'Sortiment, ceny aj odpovede sa dajú kedykoľvek aktualizovať.'],
+      ['Ďalšie funkcie podľa vašej firmy', 'Neskôr sa dá doplniť napríklad košík, formulár, rezervácia, zber kontaktov alebo iný typ výberu.']
+    ],
     included: [
       ['Chatbot s vašimi kávami', 'Vaše kávy a ceny, nie všeobecné odpovede.'],
       ['Odpovedá aj o polnoci', 'Pôvod, praženie, príprava aj porovnanie dvoch káv.'],
@@ -342,27 +352,21 @@
     return `
     <header class="mcb-head">
       <span class="mcb-lockup">${brand.lockup}</span>
-      <button class="mcb-btn mcb-btn--sm" type="button" data-mcb-offer="open" aria-haspopup="dialog">
+      <a class="mcb-btn mcb-btn--sm" href="${contact}" target="_blank" rel="noreferrer">
         Mám záujem ${icons.arrow}
-      </button>
+      </a>
     </header>
 
-    <div class="mcb-offer" data-mcb-offer="sheet" role="dialog" aria-modal="true"
-         aria-label="Čo dostanete" hidden>
+    <div class="mcb-offer mcb-more" data-mcb-offer="sheet" role="dialog" aria-modal="true"
+         aria-labelledby="mcb-more-title" hidden>
       <div class="mcb-offer-card">
         <button class="mcb-offer-close" type="button" data-mcb-offer="close" aria-label="Zavrieť">×</button>
-        <span class="mcb-offer-kicker">Čo dostanete</span>
-        <h2>Kávový chatbot pre ${esc(brand.name)}</h2>
+        <span class="mcb-offer-kicker">Viac info</span>
+        <h2 id="mcb-more-title">Čo ešte dostanete</h2>
         <ul>
-          ${PRICING.included.map(([title, note]) => `
+          ${PRICING.more.map(([title, note]) => `
             <li>${icons.dot}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
         </ul>
-        <div class="mcb-offer-price">
-          <b>${esc(PRICING.trial)}</b>
-          <p>${PRICING.sums.map(([sum, term]) =>
-            `<strong>${esc(sum)}&nbsp;€</strong> <span>${esc(term)}</span>`).join(' <i>·</i> ')}</p>
-          <small>${esc(PRICING.note)} ${esc(PRICING.addon)}</small>
-        </div>
         <a class="mcb-btn mcb-btn--accent" href="${contact}" target="_blank" rel="noreferrer">
           ${icons.mail} Chcem to na svoj web
         </a>
@@ -378,6 +382,7 @@
           <button class="mcb-btn" type="button" data-release-open="advisor">Otvoriť poradcu ${icons.arrow}</button>
           <button class="mcb-btn mcb-btn--ghost" type="button" data-release-open="chat">Skúsiť chat ${icons.chat}</button>
         </div>
+        <button class="mcb-more-link" type="button" data-mcb-offer="open" aria-haspopup="dialog">Viac info ${icons.arrow}</button>
       </section>
 
       <div class="mcb-frame">
@@ -481,7 +486,7 @@
 
     const refresh = document.createElement('link');
     refresh.rel = 'stylesheet';
-    refresh.href = '/coffee-refresh.css?v=d3fe06bc';
+    refresh.href = '/coffee-refresh.css?v=3848d2b7';
     refresh.dataset.mcbRefreshStyle = 'true';
     refresh.dataset.mcOrder = '95';
     document.body.appendChild(refresh);

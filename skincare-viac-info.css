@@ -1,0 +1,62 @@
+/* Older skincare demos (mylo … natureal): only the October changes the owner
+   asked for everywhere. Their visual design is otherwise left as it is. */
+/* Owner page: direct contact link and the "Viac info" sheet (the same
+   rules as ukazky-final.css in the vino and skincare repos). */
+a.cx-owner-contact { text-decoration: none; }
+.cx-owner-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 4px 2px;
+  border: 0;
+  background: none;
+  color: var(--cx-ink);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -.005em;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--cx-ink) 30%, transparent);
+  text-underline-offset: 4px;
+  cursor: pointer;
+  transition: text-decoration-color .15s ease, color .15s ease;
+}
+.cx-owner-more svg { width: 14px; height: 14px; transition: transform .15s ease; }
+.cx-owner-more:hover { text-decoration-color: currentColor; }
+.cx-owner-more:hover svg { transform: translateX(2px); }
+.cx-owner-more:focus-visible { outline: 2px solid var(--cx-accent); outline-offset: 3px; border-radius: 4px; }
+
+/* "Viac info" sheet: the old offer shell, a list without the price block. */
+.cx-more .cx-offer-card ul { margin-bottom: 22px; }
+.cx-more .cx-offer-card li b { font-size: 13.5px; }
+.cx-more .cx-offer-card li small { font-size: 12px; line-height: 1.45; }
+.cx-more .cx-offer-card li svg {
+  flex: 0 0 auto;
+  color: #fff;
+  background: var(--cx-accent);
+  border-radius: 50%;
+}
+.cx-more .cx-offer-cta { text-decoration: none; }
+
+
+/* Syncare: the boxed wordmark did not read in the small circle; a chat
+   bubble in the brand teal instead. */
+body[data-cosmetics-demo="syncare"] #cx-open#cx-open.cx-launcher-button {
+  background: #12a0a8 !important;
+  background-image: none !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  body[data-cosmetics-demo="syncare"] #cx-open#cx-open.cx-launcher-button:hover { background: #0b4f86 !important; }
+}
+body[data-cosmetics-demo="syncare"] .cx-chat-mark {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background: #fff;
+  -webkit-mask: var(--cx-chat-mark) center / contain no-repeat;
+  mask: var(--cx-chat-mark) center / contain no-repeat;
+}
+body[data-cosmetics-demo="syncare"] .cx-message-avatar .cx-chat-mark { width: 22px; height: 22px; }
+body[data-cosmetics-demo="syncare"] #cosmetics-root .cx-message-avatar { background: #12a0a8 !important; }

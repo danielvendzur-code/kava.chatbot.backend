@@ -54,7 +54,7 @@
      to type in who they were. The coffee pages already pass this. */
   const contactHref = () => `https://mojchatbot.sk/kontakt?${new URLSearchParams({
     source: `skincare-demo-${slug}`,
-    company: brand.name,
+    company: brand.fullName || brand.name,
     web: brand.website,
     demo: location.href
   })}`;
@@ -73,6 +73,18 @@
 
   /* "Chcem to na svoj web" used to jump straight to a contact form, which asked
      for a decision before saying what the decision was about. */
+  /* "Viac info": only what the owner cannot see on the demo itself (no price,
+     no "your brand" — both are in plain view). Approved wording. */
+  const MORE = [
+    ['Prvý mesiac zdarma', 'Vyskúšate ho naostro na vlastnom webe.'],
+    ['Preklik priamo na produkt', 'Po odporúčaní zákazník pokračuje rovno na konkrétny produkt vo vašom e-shope.'],
+    ['Vloženie jedným riadkom kódu', 'Pridá sa do existujúceho webu, nič netreba prerábať.'],
+    ['Funguje aj mimo pracovného času', 'Zákazník dostane odpoveď a pomoc s výberom aj večer či cez víkend.'],
+    ['História správ', 'Vidíte, na čo sa zákazníci pýtajú, a zistíte, čo im na stránke chýba alebo čomu nerozumejú.'],
+    ['Priebežné úpravy', 'Sortiment, ceny aj odpovede sa dajú kedykoľvek aktualizovať.'],
+    ['Ďalšie funkcie podľa vašej firmy', 'Neskôr sa dá doplniť napríklad košík, formulár, rezervácia, zber kontaktov alebo iný typ výberu.']
+  ];
+
   const INCLUDED = [
     ['Chatbot s vaším katalógom', 'Vaše produkty a ceny, nie všeobecné odpovede.'],
     ['Odpovedá aj o polnoci', 'Zloženie, typ pleti, rutina aj porovnanie dvoch produktov.'],
@@ -110,22 +122,16 @@
     <main class="cx-owner">
       <header class="cx-owner-head">
         <a class="cx-owner-brand" href="${brand.website}" target="_blank" rel="noreferrer">${brand.wordmark}</a>
-        <button class="cx-owner-contact" type="button" data-cx-offer="open" aria-haspopup="dialog">Chcem to na svoj web ${icons.arrow}</button>
+        <a class="cx-owner-contact" href="${esc(contactHref())}" target="_blank" rel="noreferrer">Chcem to na svoj web ${icons.arrow}</a>
       </header>
-      <div class="cx-offer" data-cx-offer="sheet" role="dialog" aria-modal="true" aria-label="Čo dostanete" hidden>
+      <div class="cx-offer cx-more" data-cx-offer="sheet" role="dialog" aria-modal="true" aria-labelledby="cx-more-title" hidden>
         <div class="cx-offer-card">
           <button class="cx-offer-close" type="button" data-cx-offer="close" aria-label="Zavrieť">×</button>
-          <span class="cx-offer-kicker">Čo dostanete</span>
-          <h2>Chatbot pre ${esc(brand.name)}</h2>
+          <span class="cx-offer-kicker">Viac info</span>
+          <h2 id="cx-more-title">Čo ešte dostanete</h2>
           <ul>
-            ${INCLUDED.map(([title, note]) => `<li>${icons.check}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
+            ${MORE.map(([title, note]) => `<li>${icons.check}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
           </ul>
-          <div class="cx-offer-price">
-            <b>${esc(PRICE.trial)}</b>
-            <p>${PRICE.sums.map(([sum, term]) =>
-              `<strong>${esc(sum)}&nbsp;€</strong> <span>${esc(term)}</span>`).join(' <i>·</i> ')}</p>
-            <small>${esc(PRICE.note)} ${esc(PRICE.addon)}</small>
-          </div>
           <a class="cx-offer-cta" href="${esc(contactHref())}" target="_blank" rel="noreferrer">Chcem to na svoj web ${icons.arrow}</a>
         </div>
       </div>
@@ -137,6 +143,7 @@
             <button type="button" data-open="advisor">Vyskúšať výber ${icons.arrow}</button>
             <button type="button" data-open="chat" class="is-secondary">Skúsiť chat ${icons.chat}</button>
           </div>
+          <button type="button" class="cx-owner-more" data-cx-offer="open" aria-haspopup="dialog">Viac info ${icons.arrow}</button>
         </div>
         <div class="cx-owner-frame">
           ${ownerFigures}
