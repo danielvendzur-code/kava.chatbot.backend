@@ -1,0 +1,27 @@
+/* Approved Plener surface design, adapted to all branded demos. Layout and pricing dimensions stay unchanged. */
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root { --cx-ui-line:#cfd2d6; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-widget,.cx-chat,.cx-chat-messages,.cx-chat-bottom,.cx-advisor,.cx-advisor-body,.cx-widget-note,.cx-composer,.cx-advisor-entry,.cx-option,.cx-product,.cx-routine-card,.cx-alt) { background:#fff !important; background-image:none !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-widget,.cx-mode,.cx-advisor-entry,.cx-composer,.cx-option,.cx-product,.cx-routine-card,.cx-alt,.cx-restart,.cx-product-tags span,.cx-widget-note) { border-color:#cfd2d6 !important; box-shadow:none !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-mode { background:#f2f3f4 !important; border:1px solid #cfd2d6 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-mode-thumb { background:#141414 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-mode button { color:#555 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-mode button.is-active { color:#fff !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-message .cx-bubble { border:0 !important; border-radius:18px !important; padding:10px 14px !important; box-shadow:none !important; font-size:14px !important; line-height:1.55 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-message--assistant .cx-bubble { background:#e2e3e0 !important; color:#16181c !important; border-bottom-left-radius:7px !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-message--user .cx-bubble { background:#141414 !important; color:#fff !important; border-bottom-right-radius:7px !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-chip { background:#fff !important; border:1px solid #cfd2d6 !important; border-radius:999px !important; min-height:40px !important; padding:9px 12px !important; font-size:12px !important; line-height:1.35 !important; box-sizing:border-box !important; box-shadow:none !important; color:#16181c !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-advisor-entry { border:1px solid #cfd2d6 !important; border-radius:22px !important; padding:10px !important; gap:12px !important; min-height:0 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-advisor-entry-photo { width:48px !important; height:48px !important; flex:0 0 48px !important; border-radius:14px !important; overflow:hidden !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-advisor-entry-photo img { object-fit:cover !important; width:100% !important; height:100% !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-option.is-selected { border-color:#757575 !important; background:#f6f6f6 !important; box-shadow:inset 0 0 0 1px #757575 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-teaser { background:#fff !important; border:1px solid #cfd2d6 !important; box-shadow:0 6px 22px rgba(0,0,0,.08) !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-teaser::before,
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-teaser::after { display:none !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-owner-offer { background:#1b1b1b !important; color:#fdfbf7 !important; border-radius:18px; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root article.cx-price { background:#1b1b1b !important; background-image:none !important; border-color:#3a3734 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-sum b { color:#fdfbf7 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-sum :is(span,small),
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-terms p { color:#bdb6ad !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-terms { border-color:#3a3734 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-terms b { color:#d4af65 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-terms a { background:#d4af65 !important; color:#1b1b1b !important; border-color:#d4af65 !important; }
