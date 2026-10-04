@@ -791,3 +791,6 @@ body .mcb-price.mcb-price .mcb-price-sum :is(span,small),body .mcb-price.mcb-pri
 body .mcb-price.mcb-price .mcb-price-terms { border-color:#3a3734 !important; }
 body .mcb-price.mcb-price .mcb-price-terms b { color:#d4af65 !important; }
 body .mcb-price.mcb-price .mcb-price-terms a { background:#d4af65 !important; color:#1b1b1b !important; border-color:#d4af65 !important; }
+
+body #widget#widget .msg__avatar { background:#141414 !important; }
+body #widget#widget .msg__avatar img { filter:brightness(0) invert(1) !important; }

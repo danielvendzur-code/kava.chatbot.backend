@@ -25,3 +25,6 @@ body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#co
 body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-terms { border-color:#3a3734 !important; }
 body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-terms b { color:#d4af65 !important; }
 body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-price-terms a { background:#d4af65 !important; color:#1b1b1b !important; border-color:#d4af65 !important; }
+
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-product-price strong,.cx-product-tags span,.cx-option-copy) { background:#fff !important; border-color:#cfd2d6 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-widget-actions button { border:0 !important; }
