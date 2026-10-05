@@ -204,8 +204,11 @@
     if (!source) return;
     const style = getComputedStyle(image);
     const fill = getComputedStyle(launcher).backgroundColor;
+    const rgb = fill.match(/[\d.]+/g)?.slice(0, 3).map(Number) || [255, 255, 255];
+    const dark = (rgb[0] * .2126 + rgb[1] * .7152 + rgb[2] * .0722) < 150;
+    const logoFilter = style.filter === 'none' && dark ? 'brightness(0) invert(1)' : style.filter;
     const compact = slug === 'modrapupava' ? 'right' : 'center';
-    const key = source + '|' + style.filter + '|' + fill + '|' + compact;
+    const key = source + '|' + logoFilter + '|' + fill + '|' + compact;
     root.querySelectorAll('.cx-message--assistant .cx-message-avatar').forEach((avatar) => {
       if (avatar.querySelector('.cx-cyprianus-symbol,.cx-new-mark')) return;
       if (avatar.dataset.companyLogo === key && avatar.querySelector('.cx-avatar-company-logo')) return;
@@ -215,7 +218,7 @@
       logo.setAttribute('aria-label', window.COSMETICS_DEMOS?.brands?.[slug]?.name || slug);
       logo.style.cssText = 'display:block;width:30px;height:24px;flex:none;background-repeat:no-repeat;background-position:center;background-size:contain';
       logo.style.backgroundImage = 'url(' + JSON.stringify(source) + ')';
-      logo.style.filter = style.filter;
+      logo.style.filter = logoFilter;
       if (compact === 'right') {
         logo.style.width = '24px';
         logo.style.backgroundSize = 'auto 24px';
