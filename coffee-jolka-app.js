@@ -612,3 +612,73 @@
     if (!widget.classList.contains('is-open') && !state.teaserDismissed) teaser.classList.add('is-visible');
   }, 1200);
 })();
+
+/* Real company logos in black assistant-avatar circles, independent of launcher artwork. */
+(() => {
+  'use strict';
+  const slug = document.body?.dataset?.cosmeticsDemo;
+  const brand = window.COSMETICS_DEMOS?.brands?.[slug];
+  const coffee = window.JOLKA;
+  const root = document.querySelector('#cosmetics-root') || document.getElementById(coffee?.demo?.rootId || '');
+  if (!root || (!brand && !coffee?.brand)) return;
+  const name = brand?.name || coffee.brand.name;
+  const header = root.querySelector('.cx-widget-brand img.cx-logo');
+  const original = header?.getAttribute('src') || coffee?.demo?.logoHeader || brand?.mark || coffee?.demo?.logoAvatar;
+  if (!original) return;
+  const style = document.createElement('style');
+  style.dataset.companyMessageLogo = 'black-real-logo-v1';
+  style.textContent = `
+    body #cosmetics-root#cosmetics-root .cx-message--assistant .cx-message-avatar,
+    body #widget#widget .msg__avatar { background:#141414 !important; background-image:none !important; color:#fff !important; border:0 !important; border-radius:50% !important; display:flex !important; align-items:center !important; justify-content:center !important; }
+    body #cosmetics-root#cosmetics-root .cx-message-avatar .cx-company-message-logo,
+    body #widget#widget .msg__avatar .cx-company-message-logo { display:block !important; width:calc(100% - 8px) !important; height:calc(100% - 8px) !important; min-width:0 !important; max-width:none !important; min-height:0 !important; max-height:none !important; flex:none !important; margin:0 !important; border:0 !important; border-radius:0 !important; background:transparent var(--cx-company-message-art) center / contain no-repeat !important; mask:none !important; -webkit-mask:none !important; filter:none !important; transform:none !important; }
+  `;
+  document.head.append(style);
+  let artwork = original;
+  let revision = 0;
+  const sync = () => root.querySelectorAll('.cx-message--assistant .cx-message-avatar,.msg:not(.msg--user) .msg__avatar').forEach(avatar => {
+    if (avatar.dataset.realCompanyRevision === String(revision) && avatar.querySelector('.cx-company-message-logo')) return;
+    const logo = document.createElement('span');
+    // Older brand observers recognize these markers and leave the real logo intact.
+    logo.className = 'cx-company-message-logo cx-avatar-company-logo cx-new-mark cx-mark-swap cx-cyprianus-symbol';
+    logo.setAttribute('role', 'img');
+    logo.setAttribute('aria-label', name);
+    logo.style.setProperty('--cx-company-message-art', 'url(' + JSON.stringify(artwork) + ')');
+    avatar.replaceChildren(logo);
+    avatar.dataset.realCompanyRevision = String(revision);
+    avatar.dataset.realCompanySource = original;
+  });
+  sync();
+  new MutationObserver(sync).observe(root, {childList:true, subtree:true});
+  const image = new Image();
+  image.onload = () => {
+    try {
+      const scale = Math.min(1, 480 / Math.max(image.naturalWidth, image.naturalHeight));
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.max(1, Math.round(image.naturalWidth * scale));
+      canvas.height = Math.max(1, Math.round(image.naturalHeight * scale));
+      const ctx = canvas.getContext('2d', {willReadFrequently:true});
+      ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+      const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const px = pixels.data, w = canvas.width, h = canvas.height;
+      const corners = [0, w-1, (h-1)*w, h*w-1].map(p=>Array.from(px.slice(p*4,p*4+4)));
+      const distance = (a,b) => Math.hypot(a[0]-b[0],a[1]-b[1],a[2]-b[2]);
+      const plate = corners.every(c=>c[3]>245 && distance(c,corners[0])<18) ? corners[0] : null;
+      let x0=w, y0=h, x1=-1, y1=-1;
+      for(let y=0;y<h;y++) for(let x=0;x<w;x++) {
+        const i=(y*w+x)*4;
+        if(plate) { const d=distance([px[i],px[i+1],px[i+2]],plate); px[i+3]=Math.round(px[i+3]*Math.min(1,Math.max(0,(d-18)/42))); }
+        if(px[i+3]>12) { x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y); }
+        px[i]=px[i+1]=px[i+2]=255;
+      }
+      if(x1<x0 || y1<y0) return;
+      ctx.putImageData(pixels,0,0);
+      const out=document.createElement('canvas');
+      out.width=x1-x0+5;out.height=y1-y0+5;
+      out.getContext('2d').drawImage(canvas,x0,y0,x1-x0+1,y1-y0+1,2,2,x1-x0+1,y1-y0+1);
+      artwork=out.toDataURL('image/png');revision++;sync();
+    } catch (_) { /* Preserve the real source artwork if canvas access is unavailable. */ }
+  };
+  image.src=original;
+})();
+
