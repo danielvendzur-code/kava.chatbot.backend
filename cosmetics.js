@@ -20,7 +20,7 @@
   // Only offer product forms represented in this company's demo catalogue.
   // Masks are a separate form, never a leave-on cream.
   brand.products.forEach((product) => {
-    if (/\\bmaska\\b|\\bmask\\b/i.test(product.name)) {
+    if (/\bmaska\b|\bmask\b/i.test(product.name)) {
       product.tags = product.tags.filter((tag) => tag !== 'cream');
       if (!product.tags.includes('mask')) product.tags.push('mask');
     }
