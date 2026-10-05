@@ -59,6 +59,7 @@
   const questionKeyByValue = new Map(
     data.questions.flatMap((question) => question.options.map((option) => [option.value, question.key]))
   );
+  questionKeyByValue.set('mask', 'texture');
   const photoFor = (value) => {
     const product = brand.products.find((item) => Array.isArray(item.tags) && item.tags.includes(value) && item.photo);
     return product?.photo || optionByValue.get(value)?.image || brand.hero;
@@ -94,8 +95,10 @@
     return total;
   };
   const rankedProducts = (selected) => {
-    const primary = brand.products.filter((product) => product.tags.includes(selected.skin) || product.tags.includes(selected.goal));
-    const pool = primary.length ? primary : brand.products;
+    const matchingForm = selected.texture && selected.texture !== 'any' ? brand.products.filter((product) => product.tags.includes(selected.texture)) : brand.products;
+    const formPool = matchingForm.length ? matchingForm : brand.products;
+    const matchingSkin = formPool.filter((product) => product.tags.includes(selected.skin));
+    const pool = matchingSkin.length ? matchingSkin : formPool;
     return pool.map((product, index) => ({ product, index, score: recommendationScore(product, selected) }))
       .sort((a, b) => b.score - a.score || a.index - b.index);
   };
@@ -104,7 +107,7 @@
     dry:'suchá pleť', oily:'mastenie', sensitive:'citlivá pleť', balanced:'zmiešaná pleť',
     hydrate:'hydratácia', calm:'upokojenie', clarity:'nedokonalosti', mature:'zrelá pleť',
     simple:'jeden krok', basic:'2–3 kroky', full:'celá rutina', target:'cielený krok',
-    cream:'krém', serum:'sérum', oil:'olej'
+    cream:'krém', serum:'sérum', oil:'olej', mask:'maska'
   };
 
   /* The alternative must be something the result does not already show. A

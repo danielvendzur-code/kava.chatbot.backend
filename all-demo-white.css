@@ -34,3 +34,6 @@ body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#co
 body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-why { border-left:2px solid #cfd2d6 !important; }
 body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-kicker,.cx-why b,.cx-product-brand) { color:#64676b !important; }
 body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-progress>div i.is-on { background:#62656a !important; }
+
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-restart,.cx-alt>div:first-child,.cx-alt>a) { background:#fff !important; border-color:#cfd2d6 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-restart { border:1px solid #cfd2d6 !important; }
