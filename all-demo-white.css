@@ -28,3 +28,9 @@ body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#co
 
 body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-product-price strong,.cx-product-tags span,.cx-option-copy) { background:#fff !important; border-color:#cfd2d6 !important; }
 body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-widget-actions button { border:0 !important; }
+
+/* Neutral detail surfaces; retain the company's header, logo and CTA colour. */
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-result-body,.cx-why,.cx-option-photo,.cx-alt-icon,.cx-alt-arrow) { background:#fff !important; border-color:#cfd2d6 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-why { border-left:2px solid #cfd2d6 !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root :is(.cx-kicker,.cx-why b,.cx-product-brand) { color:#64676b !important; }
+body[data-cosmetics-demo]:not([data-cosmetics-demo="plener"]) #cosmetics-root#cosmetics-root .cx-progress>div i.is-on { background:#62656a !important; }

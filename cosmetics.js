@@ -17,7 +17,20 @@
   const avatarMarkup = brand.avatarMark || brand.launcherMark || brand.wordmark;
   const launcherUsesRawImageLogo = hasImageLogo && !brand.launcherMark;
   const avatarUsesRawImageLogo = hasImageLogo && !brand.avatarMark && !brand.launcherMark;
-  const questions = data.questions;
+  // Only offer product forms represented in this company's demo catalogue.
+  // Masks are a separate form, never a leave-on cream.
+  brand.products.forEach((product) => {
+    if (/\\bmaska\\b|\\bmask\\b/i.test(product.name)) {
+      product.tags = product.tags.filter((tag) => tag !== 'cream');
+      if (!product.tags.includes('mask')) product.tags.push('mask');
+    }
+  });
+  const questions = data.questions.map((question) => {
+    if (question.key !== 'texture') return question;
+    const options = question.options.filter((option) => option.value === 'any' || brand.products.some((product) => product.tags.includes(option.value)));
+    if (brand.products.some((product) => product.tags.includes('mask'))) options.splice(Math.max(0, options.length - 1), 0, {value:'mask',title:'Maska',text:'Doplnková starostlivosť podľa potreby',image:brand.products.find((product) => product.tags.includes('mask')).photo || brand.hero});
+    return {...question, options:options.length > 4 ? options.filter((option) => option.value !== 'any') : options};
+  });
 
   document.body.dataset.cosmeticsDemo = slug;
   document.body.dataset.benefitStyle = 'lines';
@@ -294,7 +307,10 @@
   }
 
   function chooseResult() {
-    const ranked=brand.products.map((product,index)=>({product,index,score:score(product)})).sort((a,b)=>b.score-a.score || a.index-b.index);
+    const requestedForm = state.answers.texture;
+    const matchingForm = requestedForm && requestedForm !== 'any' ? brand.products.filter((product) => product.tags.includes(requestedForm)) : brand.products;
+    const candidates = matchingForm.length ? matchingForm : brand.products;
+    const ranked=candidates.map((product,index)=>({product,index,score:score(product)})).sort((a,b)=>b.score-a.score || a.index-b.index);
     state.result=ranked[0].product;
     state.alternative=(ranked.find((item)=>item.product.id!==state.result.id)||ranked[1]||ranked[0]).product;
   }
@@ -362,7 +378,7 @@
     dry:'suchá pleť', oily:'mastenie', sensitive:'citlivá pleť', balanced:'zmiešaná pleť',
     hydrate:'hydratácia', calm:'upokojenie', clarity:'nedokonalosti', mature:'zrelá pleť',
     simple:'jeden krok', basic:'2–3 kroky', full:'celá rutina', target:'cielený krok',
-    cream:'krém', serum:'sérum', oil:'olej'
+    cream:'krém', serum:'sérum', oil:'olej', mask:'maska'
   };
 
   const matchedLabels = (product) => questions
