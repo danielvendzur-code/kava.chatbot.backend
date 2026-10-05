@@ -794,3 +794,10 @@ body .mcb-price.mcb-price .mcb-price-terms a { background:#d4af65 !important; co
 
 body #widget#widget .msg__avatar { background:#141414 !important; }
 body #widget#widget .msg__avatar img { filter:brightness(0) invert(1) !important; }
+
+/* Neutral recommendation cards; preserve the artwork in Jolka's dark logo badge. */
+body #widget#widget :is(.result__hero,.result__body,.result__price,.result__price b,.notes span,.why,.facts,.fact,.acidity-note,.bulk,.alt,.alt__card) { background:#fff !important; background-image:none !important; border-color:#cfd2d6 !important; box-shadow:none !important; }
+body #widget#widget .progress i { background:#e1e3e6 !important; background-image:none !important; }
+body #widget#widget .progress i.is-active,body #widget#widget .progress i.is-done { background:#61666e !important; background-image:none !important; }
+body #widget#widget .result__badge { color:#626870 !important; }
+body #widget#widget .msg__avatar img[src*="/jolka/logo-badge"] { filter:none !important; }
