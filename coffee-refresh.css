@@ -773,7 +773,7 @@ body.mcb-offer-open { overflow: hidden; }
 body #widget#widget { background:#fff !important; border:1px solid #cfd2d6 !important; }
 body #widget#widget :is(.stage,.screen,.chat,.composer-area,.composer,.composer__field,.advisor,.advisor-top,.advisor-foot,.widget__note,.entry,.option,.product,.result,.alternative) { background:#fff !important; background-image:none !important; border-color:#cfd2d6 !important; box-shadow:none !important; }
 body #widget#widget .mode { background:#f2f3f4 !important; border:1px solid #cfd2d6 !important; }
-body #widget#widget .mode__thumb { background:#141414 !important; }
+body #widget#widget .mode__thumb { background:var(--ink, #141414) !important; }
 body #widget#widget .mode__button { color:#555 !important; }
 body #widget#widget .mode__button.is-active { color:#fff !important; }
 body #widget#widget .bubble { background:#e2e3e0 !important; color:#16181c !important; border:0 !important; box-shadow:none !important; border-radius:18px 18px 18px 7px !important; padding:10px 14px !important; }
