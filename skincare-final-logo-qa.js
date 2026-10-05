@@ -187,3 +187,45 @@
     }
   }
 })();
+
+/* Use the same real company artwork in every assistant message as in the
+   closed launcher. A background span avoids older image-to-initial observers. */
+(() => {
+  'use strict';
+  const slug = document.body?.dataset?.cosmeticsDemo;
+  if (!slug || slug === 'plener') return;
+  const root = document.querySelector('#cosmetics-root');
+  const launcher = document.querySelector('#cx-open');
+  if (!root || !launcher) return;
+  const syncCompanyLogos = () => {
+    const image = launcher.querySelector('img');
+    if (!image) return; // SVG/text wordmarks and dedicated marks already render as logos.
+    const source = image.getAttribute('src');
+    if (!source) return;
+    const style = getComputedStyle(image);
+    const fill = getComputedStyle(launcher).backgroundColor;
+    const compact = slug === 'modrapupava' ? 'right' : 'center';
+    const key = source + '|' + style.filter + '|' + fill + '|' + compact;
+    root.querySelectorAll('.cx-message--assistant .cx-message-avatar').forEach((avatar) => {
+      if (avatar.querySelector('.cx-cyprianus-symbol,.cx-new-mark')) return;
+      if (avatar.dataset.companyLogo === key && avatar.querySelector('.cx-avatar-company-logo')) return;
+      const logo = document.createElement('span');
+      logo.className = 'cx-avatar-company-logo';
+      logo.setAttribute('role', 'img');
+      logo.setAttribute('aria-label', window.COSMETICS_DEMOS?.brands?.[slug]?.name || slug);
+      logo.style.cssText = 'display:block;width:30px;height:24px;flex:none;background-repeat:no-repeat;background-position:center;background-size:contain';
+      logo.style.backgroundImage = 'url(' + JSON.stringify(source) + ')';
+      logo.style.filter = style.filter;
+      if (compact === 'right') {
+        logo.style.width = '24px';
+        logo.style.backgroundSize = 'auto 24px';
+        logo.style.backgroundPosition = 'right center';
+      }
+      avatar.style.backgroundColor = fill;
+      avatar.replaceChildren(logo);
+      avatar.dataset.companyLogo = key;
+    });
+  };
+  syncCompanyLogos();
+  new MutationObserver(syncCompanyLogos).observe(root, {childList:true,subtree:true,attributes:true,attributeFilter:['src','class']});
+})();
