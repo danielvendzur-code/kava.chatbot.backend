@@ -1897,6 +1897,9 @@ export default async function handler(req,res){
   let body={};try{body=typeof req.body==='string'?JSON.parse(req.body):(req.body||{});}catch{return res.status(400).json({error:'Invalid body'});}
   const demo=DEMOS[String(body.demoId||'')];if(!demo)return res.status(400).json({error:'Unknown demo'});
   const messages=(Array.isArray(body.messages)?body.messages:[]).filter(m=>m&&(m.role==='user'||m.role==='assistant')).slice(-10).map(m=>({role:m.role,content:String(m.content||'').slice(0,700)})).filter(m=>m.content.trim());
+  // Ignore the greeting and optimistic placeholder; answer the last user question.
+  while(messages[0]?.role==='assistant')messages.shift();
+  while(messages.at(-1)?.role==='assistant')messages.pop();
   const latest=messages.filter(m=>m.role==='user').at(-1)?.content||'';if(!latest)return res.status(400).json({error:'Missing user message'});
   if(demo.kind==='vino' && (/tehot|koj[ií]|doj[čc]|som vodi[cč]|budem (?:vies[tť]|[sš]of[eé]rova[tť])|idem (?:vies[tť]|[sš]of[eé]rova[tť])/i.test(latest) || /(?:m[aá]m|som)\s+(?:[1-9]|1[0-7])(?:\s|[-–])*(?:rok|ro[cč]n)/i.test(latest))) return res.status(200).json({reply:'V tejto situácii vám alkoholické víno neodporúčam. Ak hľadáte nealkoholickú alternatívu, overte si jej dostupnosť v oficiálnom e-shope.'});
   const fallback=()=>res.status(200).json({reply:fallbackReply(demo,latest),fallback:true});
