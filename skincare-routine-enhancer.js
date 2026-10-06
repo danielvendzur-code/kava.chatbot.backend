@@ -14,6 +14,7 @@
   const questionKeyByValue = new Map(
     data.questions.flatMap((question) => question.options.map((option) => [option.value, question.key]))
   );
+  questionKeyByValue.set('mask', 'texture');
   const answers = {};
 
   const roleOf = (product) => {
@@ -50,7 +51,13 @@
 
   const pickRoutine = (selected) => {
     const all = ranked(selected);
-    const primary = all.filter(({ product }) => product.tags.includes(selected.skin) || product.tags.includes(selected.goal));
+    // Respect the customer's chosen form for the primary product; other
+    // forms can still complement a multi-step routine.
+    const matchingForm = selected.texture && selected.texture !== 'any'
+      ? all.filter(({ product }) => product.tags.includes(selected.texture)) : all;
+    const formPool = matchingForm.length ? matchingForm : all;
+    const matchingSkin = formPool.filter(({ product }) => product.tags.includes(selected.skin));
+    const primary = matchingSkin.length ? matchingSkin : formPool;
     const ordered = [...primary, ...all.filter((item) => !primary.includes(item))];
     const count = Math.min(desiredCount(selected.routine), ordered.length);
     if (!ordered.length) return [];
