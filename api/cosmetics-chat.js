@@ -1870,6 +1870,20 @@ function cors(req,res){
 }
 function fallbackReply(demo,text){
   const q=String(text||'').toLocaleLowerCase('sk');
+  if(demo.kind==='vino'){
+  if(/darč|darc/.test(q))return demo.fallback.gift;
+  if(/sladk|dezert/.test(q))return demo.fallback.sweet;
+  if(/červen|cerven|mäs|mas|steak|gril/.test(q))return demo.fallback.red;
+  if(/biel|ryb|hydin|šalát|salat|ružov|ruzov|šumiv|sumiv|sekt/.test(q))return demo.fallback.white;
+  return demo.fallback.default;
+  }
+  if(demo.kind==='vlasy'){
+  if(/lup|svrb|citliv|podráž|podraz|šupin|supin|pokož|pokoz|ekzém|štíp|stip/.test(q))return demo.fallback.sensitive;
+  if(/vypad|padaj|redn|rídn|ridn|slab|rast|hust|posil|lysin/.test(q))return demo.fallback.mature;
+  if(/mast|maz|objem|splasnut|ploch|jemn/.test(q))return demo.fallback.oily;
+  if(/such|lámav|lamav|krep|poškod|poskod|konč|konc|farb|zniče|znice|kudrn|vlnit/.test(q))return demo.fallback.dry;
+  return demo.fallback.default;
+  }
   if(/such|pnut|dehyd/.test(q))return demo.fallback.dry;
   if(/mast|lesk|nedokonal|problem|akné/.test(q))return demo.fallback.oily;
   if(/citliv|reakt|podráž|štíp/.test(q))return demo.fallback.sensitive;
