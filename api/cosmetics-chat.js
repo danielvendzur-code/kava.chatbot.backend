@@ -112,7 +112,7 @@ Object.assign(DEMOS, {
       "oily": "Pri mastnej a zmiešanej pleti sa hodí Hydratačný krém s ureou a na čistenie kyslá pleťová voda s obsahom alkoholu.",
       "sensitive": "Citlivej pleti najviac sedí 24-hodinový Ultrafacial krém s ceramidmi, kyslá pleťová voda bez alkoholu a sérum s bakuchiolom.",
       "mature": "Na vrásky a pružnosť je tu RevitaNAD krém, sérum s bakuchiolom a sérum s vitamínom C.",
-      "default": "Dr. Sandra má krémy podľa typu pleti, séra a tri kyslé pleťové vody. Výber starostlivosti odporučí konkrétny produkt aj poradie krokov."
+      "default": "Dr. Sandra má krémy podľa typu pleti, séra a dve kyslé pleťové vody. Výber starostlivosti odporučí konkrétny produkt aj poradie krokov."
     },
     "kind": "kozmetika"
   },
@@ -1898,6 +1898,7 @@ export default async function handler(req,res){
   const demo=DEMOS[String(body.demoId||'')];if(!demo)return res.status(400).json({error:'Unknown demo'});
   const messages=(Array.isArray(body.messages)?body.messages:[]).filter(m=>m&&(m.role==='user'||m.role==='assistant')).slice(-10).map(m=>({role:m.role,content:String(m.content||'').slice(0,700)})).filter(m=>m.content.trim());
   const latest=messages.filter(m=>m.role==='user').at(-1)?.content||'';if(!latest)return res.status(400).json({error:'Missing user message'});
+  if(demo.kind==='vino' && (/tehot|koj[ií]|doj[čc]|som vodi[cč]|budem (?:vies[tť]|[sš]of[eé]rova[tť])|idem (?:vies[tť]|[sš]of[eé]rova[tť])/i.test(latest) || /(?:m[aá]m|som)\s+(?:[1-9]|1[0-7])(?:\s|[-–])*(?:rok|ro[cč]n)/i.test(latest))) return res.status(200).json({reply:'V tejto situácii vám alkoholické víno neodporúčam. Ak hľadáte nealkoholickú alternatívu, overte si jej dostupnosť v oficiálnom e-shope.'});
   const fallback=()=>res.status(200).json({reply:fallbackReply(demo,latest),fallback:true});
   if(!ANTHROPIC_API_KEY)return fallback();
   const system=[
@@ -1908,6 +1909,7 @@ export default async function handler(req,res){
     'Ak otázku nemožno zodpovedať z uvedených údajov, povedzte to a odkážte na oficiálny e-shop. Nevymýšľajte dodacie lehoty, kontakty ani obchodné podmienky.',
     'Odporučiť môžete iba presný názov produktu zo zoznamu Overené produkty. Nevymýšľajte ceny, zloženie ani účinky, ktoré nie sú uvedené.',
     'Pri výraznom, bolestivom alebo dlhodobom kožnom probléme odporučte konzultáciu s dermatológom alebo iným odborníkom.',
+    ...(demo.replyRules?.length ? [`Ďalšie overené informácie:\n- ${demo.replyRules.map(rule=>rule.reply).join('\n- ')}`] : []),
     `Oficiálny e-shop: ${demo.web}`,
     `Overené produkty:\n- ${demo.products.join('\n- ')}`
   ].join('\n\n');
@@ -1915,9 +1917,8 @@ export default async function handler(req,res){
     const api=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'content-type':'application/json','x-api-key':ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01'},body:JSON.stringify({model:MODEL,max_tokens:160,temperature:0,system,messages})});
     if(!api.ok){console.error('cosmetics Anthropic API error',api.status,await api.text());return fallback();}
     const data=await api.json();const reply=Array.isArray(data.content)?data.content.filter(b=>b.type==='text').map(b=>b.text).join('').trim():'';
-    const clean=reply.replace(/[\u002a_\u0060#]/g,'').replace(/\s+/g,' ').trim();if(!clean)return fallback();
+    const clean=reply.replace(/[\u002a_\u0060]/g,'').replace(/\s+/g,' ').trim();if(!clean)return fallback();
     return res.status(200).json({reply:clean});
   }catch(error){console.error('cosmetics chat provider error',error);return fallback();}
 }
-
 
