@@ -243,7 +243,10 @@
   if (!root || (!brand && !coffee?.brand)) return;
   const name = brand?.name || coffee.brand.name;
   const header = root.querySelector('.cx-widget-brand img.cx-logo');
-  const original = header?.getAttribute('src') || coffee?.demo?.logoHeader || brand?.mark || coffee?.demo?.logoAvatar;
+  const headerWordmark = root.querySelector('.cx-widget-brand .cx-wordmark');
+  const sourceImage = header?.getAttribute('src') || coffee?.demo?.logoHeader || brand?.mark || coffee?.demo?.logoAvatar;
+  const textWordmark = !sourceImage && headerWordmark ? headerWordmark : null;
+  const original = sourceImage || (textWordmark ? 'wordmark:' + slug : null);
   if (!original) return;
   const style = document.createElement('style');
   style.dataset.companyMessageLogo = 'black-real-logo-v1';
@@ -255,7 +258,7 @@
   `;
   document.head.append(style);
   let artwork = original;
-  let revision = 0;
+  let revision = textWordmark ? 1 : 0;
   const sync = () => root.querySelectorAll('.cx-message--assistant .cx-message-avatar,.msg:not(.msg--user) .msg__avatar').forEach(avatar => {
     if (avatar.dataset.realCompanyRevision === String(revision) && avatar.querySelector('.cx-company-message-logo')) return;
     const logo = document.createElement('span');
@@ -264,12 +267,26 @@
     logo.setAttribute('role', 'img');
     logo.setAttribute('aria-label', name);
     logo.style.setProperty('--cx-company-message-art', 'url(' + JSON.stringify(artwork) + ')');
+    if (textWordmark) {
+      logo.textContent = textWordmark.textContent;
+      const markStyle = getComputedStyle(textWordmark);
+      logo.style.setProperty('font-family', markStyle.fontFamily, 'important');
+      logo.style.setProperty('font-weight', markStyle.fontWeight, 'important');
+      logo.style.setProperty('font-size', Math.min(11, 48 / Math.max(1, logo.textContent.length)) + 'px', 'important');
+      logo.style.setProperty('color', '#fff', 'important');
+      logo.style.setProperty('display', 'flex', 'important');
+      logo.style.setProperty('align-items', 'center', 'important');
+      logo.style.setProperty('justify-content', 'center', 'important');
+      logo.style.setProperty('white-space', 'nowrap', 'important');
+      logo.style.setProperty('letter-spacing', '0', 'important');
+    }
     avatar.replaceChildren(logo);
     avatar.dataset.realCompanyRevision = String(revision);
     avatar.dataset.realCompanySource = original;
   });
   sync();
   new MutationObserver(sync).observe(root, {childList:true, subtree:true});
+  if (textWordmark) return;
   const image = new Image();
   image.onload = () => {
     try {
