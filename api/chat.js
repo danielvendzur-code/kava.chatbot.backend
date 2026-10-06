@@ -360,6 +360,9 @@ export default async function handler(req,res){
     .slice(-10)
     .map((m)=>({role:m.role,content:String(m.content||'').slice(0,700)}))
     .filter((m)=>m.content.trim()):[];
+  // Ignore the greeting and optimistic placeholder; answer the last user question.
+  while(messages[0]?.role==='assistant')messages.shift();
+  while(messages.at(-1)?.role==='assistant')messages.pop();
   const latest=messages.filter((m)=>m.role==='user').at(-1)?.content||'';
   if(!latest) return res.status(400).json({error:'Missing user message'});
   const fallback=()=>res.status(200).json({reply:deterministicReply(demo,latest),fallback:true});
