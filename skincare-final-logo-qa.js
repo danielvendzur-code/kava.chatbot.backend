@@ -256,6 +256,7 @@
     body #cosmetics-root#cosmetics-root .cx-message-avatar .cx-company-message-logo,
     body #widget#widget .msg__avatar .cx-company-message-logo { display:block !important; width:calc(100% - 8px) !important; height:calc(100% - 8px) !important; min-width:0 !important; max-width:none !important; min-height:0 !important; max-height:none !important; flex:none !important; margin:0 !important; border:0 !important; border-radius:0 !important; background:transparent var(--cx-company-message-art) center / contain no-repeat !important; mask:none !important; -webkit-mask:none !important; filter:none !important; transform:none !important; }
   `;
+  if (slug === 'ponio') style.textContent += '\nbody #cosmetics-root#cosmetics-root .cx-message--assistant .cx-message-avatar {background:' + brand.theme.brand + ' !important;}';
   document.head.append(style);
   let artwork = original;
   let revision = textWordmark ? 1 : 0;
