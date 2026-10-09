@@ -1,3 +1,4 @@
+import { catalogueReply } from './catalogue-reply.js';
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const MODEL = process.env.CHAT_MODEL || 'claude-haiku-4-5';
 
@@ -1901,6 +1902,8 @@ export default async function handler(req,res){
   while(messages[0]?.role==='assistant')messages.shift();
   while(messages.at(-1)?.role==='assistant')messages.pop();
   const latest=messages.filter(m=>m.role==='user').at(-1)?.content||'';if(!latest)return res.status(400).json({error:'Missing user message'});
+  const expandedReply=catalogueReply(String(body.demoId||''),latest);
+  if(expandedReply)return res.status(200).json({reply:expandedReply,fallback:true});
   if(demo.kind==='vino' && (/tehot|koj[ií]|doj[čc]|som vodi[cč]|budem (?:vies[tť]|[sš]of[eé]rova[tť])|idem (?:vies[tť]|[sš]of[eé]rova[tť])/i.test(latest) || /(?:m[aá]m|som)\s+(?:[1-9]|1[0-7])(?:\s|[-–])*(?:rok|ro[cč]n)/i.test(latest))) return res.status(200).json({reply:'V tejto situácii vám alkoholické víno neodporúčam. Ak hľadáte nealkoholickú alternatívu, overte si jej dostupnosť v oficiálnom e-shope.'});
   const fallback=()=>res.status(200).json({reply:fallbackReply(demo,latest),fallback:true});
   if(!ANTHROPIC_API_KEY)return fallback();

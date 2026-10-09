@@ -62,14 +62,17 @@
   questionKeyByValue.set('mask', 'texture');
   const photoFor = (value) => {
     const product = brand.products.find((item) => Array.isArray(item.tags) && item.tags.includes(value) && item.photo);
-    return product?.photo || optionByValue.get(value)?.image || brand.hero;
+    return product?.photo || (brand.catalogue ? brand.products[0]?.photo : optionByValue.get(value)?.image) || brand.hero;
   };
 
   const hydrateOptionPhotos = () => {
+    const usedPhotos=new Set();
     document.querySelectorAll('.cx-option[data-value]').forEach((button) => {
       const value = button.dataset.value;
       const holder = button.querySelector('.cx-option-photo');
-      const src = photoFor(value);
+      let src = photoFor(value);
+      if(brand.catalogue&&usedPhotos.has(src))src=(brand.products.find(p=>p.tags?.includes(value)&&p.photo&&!usedPhotos.has(p.photo))||brand.products.find(p=>p.photo&&!usedPhotos.has(p.photo)))?.photo||src;
+      usedPhotos.add(src);
       if (!holder || !src) return;
       const current = holder.querySelector('img')?.getAttribute('src');
       if (current === src && !holder.classList.contains('cx-option-photo--mark')) return;

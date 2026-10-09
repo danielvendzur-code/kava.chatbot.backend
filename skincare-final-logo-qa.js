@@ -245,8 +245,8 @@
   const header = root.querySelector('.cx-widget-brand img.cx-logo');
   const headerWordmark = root.querySelector('.cx-widget-brand .cx-wordmark');
   const sourceImage = header?.getAttribute('src') || coffee?.demo?.logoHeader || brand?.mark || coffee?.demo?.logoAvatar;
-  const textWordmark = !sourceImage && headerWordmark ? headerWordmark : null;
-  const original = sourceImage || (textWordmark ? 'wordmark:' + slug : null);
+  const textWordmark = !brand?.avatarIcon && !sourceImage && headerWordmark ? headerWordmark : null;
+  const original = brand?.avatarIcon || sourceImage || (textWordmark ? 'wordmark:' + slug : null);
   if (!original) return;
   const style = document.createElement('style');
   style.dataset.companyMessageLogo = 'black-real-logo-v1';
@@ -273,7 +273,7 @@
       const markStyle = getComputedStyle(textWordmark);
       logo.style.setProperty('font-family', markStyle.fontFamily, 'important');
       logo.style.setProperty('font-weight', markStyle.fontWeight, 'important');
-      logo.style.setProperty('font-size', Math.min(11, 48 / Math.max(1, logo.textContent.length)) + 'px', 'important');
+      logo.style.setProperty('font-size', (slug === 'ponio' ? 11 : Math.min(11, 48 / Math.max(1, logo.textContent.length))) + 'px', 'important');
       logo.style.setProperty('color', '#fff', 'important');
       logo.style.setProperty('display', 'flex', 'important');
       logo.style.setProperty('align-items', 'center', 'important');
@@ -290,6 +290,7 @@
   if (textWordmark) return;
   const image = new Image();
   image.onload = () => {
+    if(brand?.avatarIcon)return;
     try {
       const scale = Math.min(1, 480 / Math.max(image.naturalWidth, image.naturalHeight));
       const canvas = document.createElement('canvas');

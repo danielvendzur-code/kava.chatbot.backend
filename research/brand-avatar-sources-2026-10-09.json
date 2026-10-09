@@ -1,0 +1,36 @@
+[
+  {
+    "slug": "mylo",
+    "homepage": "https://www.mylo.sk/",
+    "icons": [
+      "https://www.mylo.sk/wp-content/uploads/cropped-Mylo_favicon512-100x100.png",
+      "https://www.mylo.sk/wp-content/uploads/cropped-Mylo_favicon512-247x247.png"
+    ],
+    "sourceUrl": "https://www.mylo.sk/wp-content/uploads/cropped-Mylo_favicon512.png",
+    "originalSize": [
+      512,
+      512
+    ],
+    "sourceSha256": "f1fda076cdd95db4ae1aa22160340e5a13ac0f22fbe64d60665ceee24a77e7c3",
+    "assetSha256": "f3cffa943d48b48b642c0fd1058ae4140f6ac1bca4cc4e5f7d3b727bb03ed06a",
+    "asset": "/assets/catalogue/logos/mylo-symbol.png",
+    "treatment": "Oficiálny znak; orezanie okrajov a monochromatická biela pre tmavý avatar"
+  },
+  {
+    "slug": "bellcoria",
+    "homepage": "https://bellcoria.sk/",
+    "icons": [
+      "https://bellcoria.sk/wp-content/uploads/favicon-bellcoria-100x100.png",
+      "https://bellcoria.sk/wp-content/uploads/favicon-bellcoria.png"
+    ],
+    "sourceUrl": "https://bellcoria.sk/wp-content/uploads/favicon-bellcoria.png",
+    "originalSize": [
+      183,
+      183
+    ],
+    "sourceSha256": "68ab9afb3791ce140e750a64cd0b0bd89d7818f15fa106f837eda41770bafd51",
+    "assetSha256": "9ef3ccb8718bf6df0bc2e7f03700f28d6c0e275469d32a33b339673b87f7a7da",
+    "asset": "/assets/catalogue/logos/bellcoria-symbol.png",
+    "treatment": "Oficiálny znak; orezanie okrajov a monochromatická biela pre tmavý avatar"
+  }
+]

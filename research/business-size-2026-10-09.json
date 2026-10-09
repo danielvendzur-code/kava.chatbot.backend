@@ -1,0 +1,41 @@
+[
+  {
+    "slug": "mylo",
+    "ico": "51003198",
+    "country": "SK",
+    "verifiedOn": "2026-10-09",
+    "turnover": 53210,
+    "currency": "EUR",
+    "period": "2025",
+    "sizeCode": "02",
+    "rpoUrl": "https://api.statistics.sk/rpo/v1/entity/9280062",
+    "financialReportUrl": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10361187",
+    "unitUrl": "https://www.registeruz.sk/cruz-public/api/uctovna-jednotka?id=1716456"
+  },
+  {
+    "slug": "ponio",
+    "ico": "46424342",
+    "country": "SK",
+    "verifiedOn": "2026-10-09",
+    "turnover": 223841,
+    "currency": "EUR",
+    "period": "2025",
+    "sizeCode": "03",
+    "rpoUrl": "https://api.statistics.sk/rpo/v1/entity/204453",
+    "financialReportUrl": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10342418",
+    "unitUrl": "https://www.registeruz.sk/cruz-public/api/uctovna-jednotka?id=1113525"
+  },
+  {
+    "slug": "bellcoria",
+    "ico": "48311456",
+    "country": "SK",
+    "verifiedOn": "2026-10-09",
+    "turnover": 16941,
+    "currency": "EUR",
+    "period": "2025",
+    "sizeCode": "02",
+    "rpoUrl": "https://api.statistics.sk/rpo/v1/entity/699122",
+    "financialReportUrl": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10315689",
+    "unitUrl": "https://www.registeruz.sk/cruz-public/api/uctovna-jednotka?id=1603296"
+  }
+]

@@ -12,6 +12,7 @@
   const slug = String(requested).toLowerCase();
   const brand = data.brands[slug] || data.brands.mylo;
   const isMylo = slug === 'mylo';
+  const hasCatalogue = !!brand.catalogue?.length;
   const hasImageLogo = /class=["'][^"']*cx-logo/.test(brand.wordmark);
   const launcherMarkup = brand.launcherMark || brand.wordmark;
   const avatarMarkup = brand.avatarMark || brand.launcherMark || brand.wordmark;
@@ -57,7 +58,7 @@
   const state = {
     open:false, mode:'chat', step:0, answers:{}, result:null, alternative:null,
     interacted:false, busy:false, transitioning:false,
-    messages:[{role:'assistant',text:'Dobrý deň. Napíšte, čo od starostlivosti očakávate alebo ako sa vaša pleť správa. Pomôžem vám zúžiť výber.'}]
+    messages:[{role:'assistant',text:hasCatalogue?'Dobrý deň. Vyberajte z ponuky '+brand.name+'. Napíšte, aký produkt hľadáte, alebo otvorte Výber či Ponuku.':'Dobrý deň. Napíšte, čo od starostlivosti očakávate alebo ako sa vaša pleť správa. Pomôžem vám zúžiť výber.'}]
   };
 
   // What the advisor answers, how long it takes, what comes out of it. This is
@@ -89,7 +90,7 @@
   const INCLUDED = [
     ['Chatbot s vaším katalógom', 'Vaše produkty a ceny, nie všeobecné odpovede.'],
     ['Odpovedá aj o polnoci', 'Zloženie, typ pleti, rutina aj porovnanie dvoch produktov.'],
-    ['Výber cez štyri otázky', 'Pleť, priorita, rutina a textúra — na konci jeden konkrétny produkt.'],
+    ['Výber cez štyri otázky', hasCatalogue?'Kategória, druh produktu, rozpočet a zoradenie — konkrétne produkty z vašej ponuky.':'Pleť, priorita, rutina a textúra — na konci jeden konkrétny produkt.'],
     ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.']
   ];
 
@@ -109,7 +110,7 @@
     ['História konverzácií', 'vidíte, na čo sa zákazníci pýtajú']
   ];
 
-  const CHIPS = ['Mám suchú pleť', 'Pleť sa mi mastí', 'Niečo na citlivú pleť', 'Chcem jednoduchú rutinu'];
+  const CHIPS = hasCatalogue ? ['Mám suchú pleť', ...(brand.catalogue.some(p=>p.category==='hair')?['Produkty na vlasy']:[]), ...(brand.catalogue.some(p=>p.category==='body')?['Starostlivosť o telo']:[]), ...(brand.catalogue.some(p=>p.category==='sets')?['Darčekové sady']:[])].slice(0,4) : ['Mám suchú pleť', 'Pleť sa mi mastí', 'Niečo na citlivú pleť', 'Chcem jednoduchú rutinu'];
 
   const ownerFigures = '';
 
@@ -232,16 +233,29 @@
     if (next === 'advisor') renderAdvisor(); else renderChat();
   }
 
+  function messageBody(text) {
+    if(!hasCatalogue)return esc(text);
+    let cursor=0,html='';
+    for(const match of text.matchAll(/https?:\/\/[^\s]+/g)) {
+      const url=match[0].replace(/[.,;]+$/,'');
+      html+=esc(text.slice(cursor,match.index));
+      const known=brand.catalogue.some(p=>p.url===url);
+      html+=known?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Pozrieť produkt v e-shope ↗</a>${esc(match[0].slice(url.length))}`:esc(match[0]);
+      cursor=match.index+match[0].length;
+    }
+    return html+esc(text.slice(cursor));
+  }
+
   function messageMarkup(message) {
     const avatar = message.role === 'assistant' ? `<span class="cx-message-avatar${avatarUsesRawImageLogo ? ' is-image-logo' : ''}">${avatarMarkup}</span>` : '';
-    return `<div class="cx-message cx-message--${message.role}">${avatar}<div class="cx-bubble">${esc(message.text)}</div></div>`;
+    return `<div class="cx-message cx-message--${message.role}">${avatar}<div class="cx-bubble">${messageBody(message.text)}</div></div>`;
   }
 
   function renderChat() {
     stage.innerHTML = `
       <section class="cx-chat">
         <div class="cx-chat-messages" id="cx-messages">
-          ${!state.interacted ? `<button class="cx-advisor-entry" id="cx-advisor-entry" type="button"><span class="cx-advisor-entry-photo"><img src="${brand.hero}" alt="" referrerpolicy="no-referrer" onerror="this.closest('.cx-advisor-entry-photo')?.setAttribute('data-image-failed','true')"></span><div><small>VÝBER STAROSTLIVOSTI</small><b>Nájsť vhodný produkt</b><em>Pleť · priorita · rutina · textúra</em></div>${icons.arrow}</button>` : ''}
+          ${!state.interacted ? `<button class="cx-advisor-entry" id="cx-advisor-entry" type="button"><span class="cx-advisor-entry-photo"><img src="${brand.hero}" alt="" referrerpolicy="no-referrer" onerror="this.closest('.cx-advisor-entry-photo')?.setAttribute('data-image-failed','true')"></span><div><small>VÝBER STAROSTLIVOSTI</small><b>Nájsť vhodný produkt</b><em>${hasCatalogue?'Kategória · produkt · rozpočet · zoradenie':'Pleť · priorita · rutina · textúra'}</em></div>${icons.arrow}</button>` : ''}
           ${state.messages.map(messageMarkup).join('')}
         </div>
         <div class="cx-chat-bottom">
@@ -256,6 +270,8 @@
   }
 
   function localReply(text) {
+    const catalogueReply=window.CX_CATALOGUE_REPLY?.(slug,text);
+    if(catalogueReply)return catalogueReply;
     const q = String(text||'').toLocaleLowerCase('sk');
     if (/such|pnut|dehyd/.test(q)) return `Pri suchej alebo napnutej pleti by som začal produktom ${brand.products.find(p=>p.tags.includes('dry'))?.name || brand.products[0].name}. Cez Výber starostlivosti ešte zohľadníme, či chcete krém, sérum alebo olej.`;
     if (/mast|lesk|nedokonal|akné/.test(q)) return `Pri vyššej tvorbe mazu sa oplatí pozrieť na ${brand.products.find(p=>p.tags.includes('oily'))?.name || brand.products[0].name}. Výber starostlivosti vám pomôže zúžiť výsledok bez skúšania naslepo.`;

@@ -1,0 +1,38 @@
+.cx-has-catalogue .cx-mode{display:grid!important;grid-template-columns:1fr 1fr 1fr;gap:4px;padding:5px!important;height:auto!important;min-height:48px}
+.cx-has-catalogue .cx-mode-thumb{display:none!important}
+.cx-has-catalogue .cx-mode button{position:relative!important;min-width:0!important;margin:0!important;padding:10px 4px!important;border-radius:10px!important;transform:none!important;left:auto!important;width:auto!important;white-space:nowrap;font-size:12px!important}
+.cx-has-catalogue .cx-mode button svg{display:none!important}
+.cx-has-catalogue .cx-mode button.is-active{background:var(--cx-brand)!important;color:white!important}
+.cx-has-catalogue .cx-mode button[data-catalogue-mode] span{font-size:10px;opacity:.8}
+.cx-catalogue-active #cx-stage{display:none!important}
+.cx-catalogue-stage[hidden]{display:none!important}
+.cx-catalogue-stage{overflow-y:auto;overscroll-behavior:contain;flex:1;min-height:0;padding:22px;color:var(--cx-ink);background:white;scrollbar-width:thin}
+.cx-catalogue-heading small{font-size:11px;letter-spacing:.04em;color:var(--cx-brand)}
+.cx-catalogue-heading h2{font:500 25px/1.2 Georgia,serif;margin:12px 0;outline:none}
+.cx-catalogue-heading p{font-size:12px;line-height:1.6;color:#59616a;margin:8px 0 17px}
+.cx-catalogue-progress{display:flex;align-items:center;gap:5px}.cx-catalogue-progress span{height:3px;width:28px;background:var(--cx-line)}.cx-catalogue-progress span.is-on{background:var(--cx-brand)}.cx-catalogue-progress small{margin-left:auto}
+.cx-catalogue-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cx-catalogue-option{position:relative;text-align:left;border:1px solid var(--cx-line);background:white;border-radius:14px;padding:12px;cursor:pointer;min-width:0;color:var(--cx-ink)}
+.cx-catalogue-option:hover,.cx-catalogue-option:focus-visible{border-color:var(--cx-brand);box-shadow:0 0 0 1px var(--cx-brand);outline:none}
+.cx-catalogue-option img{display:block;width:100%;height:110px;object-fit:contain;margin:0 0 8px}
+.cx-catalogue-option span{display:block;padding-right:13px}.cx-catalogue-option b{font-size:13px;line-height:1.35;display:block}.cx-catalogue-option small{display:block;font-size:11px;margin-top:5px;color:#59616a}.cx-catalogue-option i{position:absolute;right:11px;bottom:14px;font-style:normal;font-size:14px;color:var(--cx-brand)}
+.cx-catalogue-footer{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:18px}.cx-catalogue-footer button{font-size:11px;background:none;border:0;color:var(--cx-brand);padding:7px 0;cursor:pointer;text-align:left}
+.cx-catalogue-search{display:block;font-size:12px;font-weight:600;margin-top:18px}.cx-catalogue-search input{display:block;margin-top:7px;width:100%;box-sizing:border-box;border:1px solid var(--cx-line);border-radius:10px;background:white;font:14px inherit;padding:12px;color:var(--cx-ink)}
+.cx-catalogue-filters{display:flex;flex-wrap:wrap;gap:7px;margin-top:13px}.cx-catalogue-filters button{border:1px solid var(--cx-line);background:white;border-radius:20px;padding:7px 11px;font-size:11px;color:var(--cx-ink);cursor:pointer}.cx-catalogue-filters button[aria-pressed=true]{border-color:var(--cx-brand);background:var(--cx-brand);color:white}
+.cx-catalogue-grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.cx-catalogue-card{overflow:hidden;border:1px solid var(--cx-line);border-radius:13px;background:white;min-width:0}.cx-catalogue-card>img{display:block;width:100%;height:145px;object-fit:contain;background:white}.cx-catalogue-card>div{padding:12px}.cx-catalogue-card small{display:block;font-size:9px;color:#59616a;line-height:1.4}.cx-catalogue-card h3{font-size:13px;font-weight:600;line-height:1.4;margin:7px 0;overflow-wrap:anywhere}.cx-catalogue-card .cx-catalogue-size{font-size:11px;color:#59616a;margin:6px 0;min-height:16px}.cx-catalogue-card strong{display:block;font-size:14px;margin:9px 0}.cx-catalogue-card a{display:flex;justify-content:space-between;font-size:11px;color:var(--cx-brand);text-decoration:none;gap:4px;line-height:1.5}.cx-catalogue-card a:hover{text-decoration:underline}.cx-catalogue-more{width:100%;margin-top:14px;border:1px solid var(--cx-line);background:white;color:var(--cx-brand);padding:12px;border-radius:10px;cursor:pointer}.cx-catalogue-empty{grid-column:1/-1;font-size:13px;line-height:1.6}
+@media(max-width:480px){.cx-catalogue-stage{padding:16px}.cx-catalogue-heading h2{font-size:24px}.cx-catalogue-option img{height:95px}.cx-catalogue-grid{gap:9px}.cx-catalogue-card>img{height:130px}.cx-catalogue-card>div{padding:10px}.cx-has-catalogue .cx-mode button{font-size:11px!important}}
+@media(max-width:370px){.cx-catalogue-card h3{font-size:12px}.cx-catalogue-option{padding:10px}.cx-catalogue-option b{font-size:12px}.cx-catalogue-stage{padding:13px}}
+
+.cx-has-catalogue .cx-bubble a {color:inherit;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;}
+
+/* Expanded demos show the official packshots in the original face flow too. */
+body[data-cosmetics-demo] #cx-widget.cx-has-catalogue .cx-option-photo {background-image:none!important;display:flex!important;align-items:center;justify-content:center;}
+body[data-cosmetics-demo] #cx-widget.cx-has-catalogue .cx-option-photo::before,body[data-cosmetics-demo] #cx-widget.cx-has-catalogue .cx-option-photo::after {display:none!important;}
+body[data-cosmetics-demo] #cx-widget.cx-has-catalogue .cx-option-photo img {display:block!important;opacity:1!important;visibility:visible!important;width:100%;height:100%;object-fit:contain;padding:9px;background:#fff;position:relative;z-index:1;}
+
+body[data-cosmetics-demo] #cx-widget.cx-has-catalogue .cx-option-photo>img {display:block!important;visibility:visible!important;opacity:1!important;position:static!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;padding:8px!important;box-sizing:border-box!important;transform:none!important;filter:none!important;background:white!important;}
+
+#cx-widget.cx-has-catalogue .cx-mode button[aria-pressed="false"] {color:var(--cx-ink)!important;background:transparent!important;opacity:1!important;}
+#cx-widget.cx-has-catalogue .cx-mode button[aria-pressed="true"] {color:#fff!important;background:var(--cx-brand)!important;}
+
+body #cosmetics-root#cosmetics-root .cx-message-avatar .cx-wordmark--ponio {font-size:11px!important;letter-spacing:-.03em!important;line-height:1!important;}

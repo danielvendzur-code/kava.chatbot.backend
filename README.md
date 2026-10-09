@@ -181,3 +181,6 @@ Hotový prompt pre Claude v Chrome aj ručný postup: [`deploy/WEBSUPPORT.md`](d
 
 Na Websupporte nebeží `/api/chat` — chat odpovedá pripravenými odpoveďami
 z katalógu (`coffee-api-route.js`, `localReply` v `cosmetics.js`).
+
+
+[Kontrola 18 kávových ukážok a rozšírenie troch kozmetických kópií — 9. 10. 2026](REWORK-2026-10-09.md).
