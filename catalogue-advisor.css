@@ -26,11 +26,11 @@
 .cx-has-catalogue .cx-bubble a {color:inherit;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere;}
 
 /* Expanded demos show the official packshots in the original face flow too. */
-body[data-cosmetics-demo] #cx-widget.cx-has-catalogue .cx-option-photo {background-image:none!important;display:flex!important;align-items:center;justify-content:center;}
-body[data-cosmetics-demo] #cx-widget.cx-has-catalogue .cx-option-photo::before,body[data-cosmetics-demo] #cx-widget.cx-has-catalogue .cx-option-photo::after {display:none!important;}
-body[data-cosmetics-demo] #cx-widget.cx-has-catalogue .cx-option-photo img {display:block!important;opacity:1!important;visibility:visible!important;width:100%;height:100%;object-fit:contain;padding:9px;background:#fff;position:relative;z-index:1;}
+body[data-cosmetics-demo] #cx-widget:is(.cx-has-catalogue,.cx-has-own-photos) .cx-option-photo {background-image:none!important;display:flex!important;align-items:center;justify-content:center;}
+body[data-cosmetics-demo] #cx-widget:is(.cx-has-catalogue,.cx-has-own-photos) .cx-option-photo::before,body[data-cosmetics-demo] #cx-widget:is(.cx-has-catalogue,.cx-has-own-photos) .cx-option-photo::after {display:none!important;}
+body[data-cosmetics-demo] #cx-widget:is(.cx-has-catalogue,.cx-has-own-photos) .cx-option-photo img {display:block!important;opacity:1!important;visibility:visible!important;width:100%;height:100%;object-fit:contain;padding:9px;background:#fff;position:relative;z-index:1;}
 
-body[data-cosmetics-demo] #cx-widget.cx-has-catalogue .cx-option-photo>img {display:block!important;visibility:visible!important;opacity:1!important;position:static!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;padding:8px!important;box-sizing:border-box!important;transform:none!important;filter:none!important;background:white!important;}
+body[data-cosmetics-demo] #cx-widget:is(.cx-has-catalogue,.cx-has-own-photos) .cx-option-photo>img {display:block!important;visibility:visible!important;opacity:1!important;position:static!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;padding:8px!important;box-sizing:border-box!important;transform:none!important;filter:none!important;background:white!important;}
 
 #cx-widget.cx-has-catalogue .cx-mode button[aria-pressed="false"] {color:var(--cx-ink)!important;background:transparent!important;opacity:1!important;}
 #cx-widget.cx-has-catalogue .cx-mode button[aria-pressed="true"] {color:#fff!important;background:var(--cx-brand)!important;}

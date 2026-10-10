@@ -26,15 +26,20 @@
   const sizeLabel=p=>[p.volume,p.variantLabel&&!p.variantLabel.includes(p.volume)?p.variantLabel:''].filter(Boolean).join(' · ')||'Balenie podľa e-shopu';
   const card=p=>`<article class="cx-catalogue-card" data-product-id="${esc(p.id)}"><img src="${esc(p.photo)}" alt="${esc(p.name)}" loading="lazy" width="900" height="1000"><div><small>${esc(labels[p.category])} · ${esc(p.kind)}</small><h3>${esc(p.name)}</h3><p class="cx-catalogue-size">${esc(sizeLabel(p))}</p><strong>${esc(p.price)}</strong>${p.availabilityNote?`<p class="cx-catalogue-size">${esc(p.availabilityNote)}</p>`:''}<a href="${esc(p.url)}" target="_blank" rel="noopener noreferrer">Pozrieť v e-shope <span aria-hidden="true">↗</span></a></div></article>`;
   const selected=()=>products.filter(p=>(!state.answers.category||p.category===state.answers.category)&&(!state.answers.kind||state.answers.kind==='any'||p.kind===state.answers.kind)&&(!state.answers.budget||p.priceAmount<=Number(state.answers.budget)));
+  // Compare only one explicitly measured container. Composite sets have no
+  // meaningful single volume; mixed ml/g units are never compared.
+  const packageSize=p=>{
+    const m=String(p.volume||'').match(/^\s*(\d+(?:[.,]\d+)?)\s*(ml|l|g|kg)\s*(?:±\s*\d+(?:[.,]\d+)?\s*(?:g|%)?)?\s*$/i);
+    return m?{value:Number(m[1].replace(',','.'))*(/^(l|kg)$/i.test(m[2])?1000:1),unit:/^(ml|l)$/i.test(m[2])?'ml':'g'}:null;
+  };
+  const comparablePackages=list=>list.length>1&&list.every(p=>packageSize(p))&&new Set(list.map(p=>packageSize(p).unit)).size===1;
   const sorted=()=>{
     const list=selected().slice();
     if(state.answers.order==='price')list.sort((a,b)=>a.priceAmount-b.priceAmount);
     if(state.answers.order==='name')list.sort((a,b)=>a.name.localeCompare(b.name,'sk'));
     if(state.answers.order==='small'||state.answers.order==='large') {
-      const size=p=>{const m=p.volume.match(/(\d+(?:[.,]\d+)?)\s*(ml|g|kg)/);return m?Number(m[1].replace(',','.'))*(m[2]==='kg'?1000:1):null;};
-      const units=new Set(list.map(p=>p.volume.match(/ml|g|kg/)?.[0]).filter(Boolean));
-      if(units.size===1)list.sort((a,b)=>(size(a)??Infinity)-(size(b)??Infinity));
-      if(units.size===1&&state.answers.order==='large')list.reverse();
+      if(comparablePackages(list))list.sort((a,b)=>packageSize(a).value-packageSize(b).value);
+      if(comparablePackages(list)&&state.answers.order==='large')list.reverse();
     }
     return list;
   };
@@ -51,7 +56,7 @@
     if(state.step===0){title='Čo si chcete vybrať?';options=groups.map(([g,l])=>option(g,l,representative(g).photo,`${products.filter(p=>p.category===g).length} produktov`));}
     if(state.step===1){title='Aký produkt hľadáte?';const kinds=[...new Set(selected().map(p=>p.kind))];options=kinds.map(k=>option(k,k,representative(state.answers.category,k).photo));options.push(option('any','Nechajte mi širší výber',representative(state.answers.category).photo));}
     if(state.step===2){title='Aký rozpočet vám vyhovuje?';const list=selected();const currency=list[0]?.currency||'EUR';const thresholds=currency==='CZK'?[300,600,1000]:[10,20,35];const viable=thresholds.filter(n=>list.some(p=>p.priceAmount<=n));options=viable.map(n=>option(String(n),`Do ${n} ${currency==='CZK'?'Kč':'€'}`,list.find(p=>p.priceAmount<=n).photo));options.push(option('','Bez obmedzenia',list[0].photo));}
-    if(state.step===3){title='Ako chcete ponuku zoradiť?';const list=selected();options=[option('price','Od najnižšej ceny',list[0].photo),option('name','Podľa názvu',list[Math.min(1,list.length-1)].photo)];const units=new Set(list.map(p=>p.volume.match(/ml|g|kg/)?.[0]).filter(Boolean));if(units.size===1&&list.filter(p=>p.volume).length>1){options.push(option('small','Od menšieho balenia',list[0].photo),option('large','Od väčšieho balenia',list.at(-1).photo));}}
+    if(state.step===3){title='Ako chcete ponuku zoradiť?';const list=selected();options=[option('price','Od najnižšej ceny',list[0].photo),option('name','Podľa názvu',list[Math.min(1,list.length-1)].photo)];if(comparablePackages(list)){options.push(option('small','Od menšieho balenia',list[0].photo),option('large','Od väčšieho balenia',list.at(-1).photo));}}
     if(state.step>=4){const list=sorted();return `<div class="cx-catalogue-heading"><small>Váš výber · ${esc(labels[state.answers.category])}</small><h2>${list.length===1?'Tento produkt zodpovedá výberu':`${list.length} produktov podľa výberu`}</h2><p>Presné balenie, fotografia a cena z ponuky ${esc(brand.name)}.</p></div><div class="cx-catalogue-grid">${list.slice(0,6).map(card).join('')}</div>${list.length>6?`<button class="cx-catalogue-more" data-show-matches>Ukázať všetkých ${list.length} výsledkov</button>`:''}<button class="cx-catalogue-more" data-restart>Vybrať odznova</button>`;}
     return `<div class="cx-catalogue-heading"><div class="cx-catalogue-progress">${[0,1,2,3].map(i=>`<span class="${i<=state.step?'is-on':''}"></span>`).join('')}<small>${state.step+1}/4</small></div><h2 tabindex="-1">${esc(title)}</h2><p>${state.step===0?'Vyberte oblasť, ktorá vás zaujíma.':'Vyberajte z konkrétnych produktov tejto značky.'}</p></div><div class="cx-catalogue-options">${options.join('')}</div><div class="cx-catalogue-footer">${state.step>0?'<button type="button" data-back>← Späť</button>':''}${state.step===1&&state.answers.category==='face'?'<button type="button" data-face-advisor>Vybrať podľa typu pleti →</button>':''}<button type="button" data-browse>Prejsť ponuku</button></div>`;
   }
@@ -90,5 +95,5 @@
     const oldEntry=document.querySelector('#cx-advisor-entry');
     if(!isWine&&oldEntry&&!oldEntry.dataset.catalogueBound){oldEntry.dataset.catalogueBound='true';oldEntry.addEventListener('click',()=>mode('guide'));}
   });observer.observe(widget.querySelector('#cx-stage'),{childList:true,subtree:true});
-  window.CX_CATALOGUE_QA={products,groups,selected,sorted,state,mode};
+  window.CX_CATALOGUE_QA={products,groups,selected,sorted,state,mode,comparablePackages};
 })();

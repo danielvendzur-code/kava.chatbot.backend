@@ -7,7 +7,7 @@ globalThis.CXCatalogueReplyCore = (catalogues,slug,text) => {
   const terms=q.split(/\W+/).filter(w=>w.length>3);const desired=[];
   for(const [tag,pattern] of Object.entries({dry:/such|pnut|dehyd/,oily:/mast|lesk|maz|akne/,sensitive:/citliv|reakt/,mature:/zrel|vrask/,hydrate:/hydrat/,cream:/krem/,serum:/serum/,oil:/olej/,mask:/mask/}))if(pattern.test(q))desired.push(tag);
   const rank=p=>terms.reduce((s,w)=>s+Number(norm(p.name+' '+p.kind).includes(w)),0)+desired.reduce((s,t)=>s+Number(p.tags.includes(t))*5,0);
-  const rows=catalogue.products.filter(p=>p.category===category).sort((a,b)=>rank(b)-rank(a));
+  const rows=catalogue.products.filter(p=>p.category===category&&(!p.isSample||/vzork|sample|mini/.test(q))).sort((a,b)=>rank(b)-rank(a));
   if(!rows.length)return 'V tejto kategórii ukážka nemá overený širší sortiment. Aktuálnu ponuku nájdete v oficiálnom e-shope značky.';
   if(/zlozen|ingredien|obsahuj/.test(q))return `Úplné zloženie nájdete pri ${rows[0].name}: ${rows[0].url}.`;
   return rows.slice(0,2).map(p=>`${p.name}${p.volume?' ('+p.volume+')':''} — ${p.price}. ${p.url}`).join('\n\n')+'\n\nĎalšie produkty sú vo Výbere a v Ponuke. Aktuálnu dostupnosť potvrďte v e-shope.';

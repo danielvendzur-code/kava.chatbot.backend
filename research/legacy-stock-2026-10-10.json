@@ -1,0 +1,90 @@
+{
+  "verifiedAt": "2026-10-10T13:47:08.457515+00:00",
+  "slug": "modrapupava",
+  "products": [
+    {
+      "id": "antiage",
+      "name": "Inspiral Anti-age",
+      "volume": "50 ml",
+      "price": "51,35 €",
+      "url": "https://www.modrapupava.sk/products/krem-na-spevnenie-pleti-inspiral-anti-age?variant=52841044181331",
+      "variantId": 52841044181331,
+      "inStock": true,
+      "stockEvidence": "Shopify available=true",
+      "photo": "/assets/catalogue/modrapupava-stock-catalogue-antiage.webp",
+      "assetEvidence": {
+        "url": "https://cdn.shopify.com/s/files/1/0948/4841/8131/files/inspiral-anti-age-krem-na-spevnenie-pleti-balenie.jpg?v=1766047016",
+        "originalSize": [
+          2000,
+          3000
+        ],
+        "crop": [
+          420,
+          1771,
+          1684,
+          2275
+        ],
+        "sourceSha256": "bb59f2652b0650887be4c299cb9c1fda1c203db54ad5218fc86dcc7eab5e5612",
+        "assetSha256": "df350227033d3e82072d2d05abde4e5e5ec3788910f7db825a95ae2868bcddb5"
+      }
+    },
+    {
+      "id": "problem",
+      "name": "Problematická pleť",
+      "volume": "100 ml",
+      "price": "26,11 €",
+      "url": "https://www.modrapupava.sk/products/pletovy-a-telovy-olej-problematicka-plet?variant=52121006080339",
+      "variantId": 52121006080339,
+      "inStock": true,
+      "stockEvidence": "Shopify available=true",
+      "photo": "/assets/catalogue/modrapupava-stock-catalogue-problem.webp",
+      "assetEvidence": {
+        "url": "https://cdn.shopify.com/s/files/1/0948/4841/8131/files/olej-na-problematicku-plet-100ml-balenie.jpg?v=1766062383",
+        "originalSize": [
+          2000,
+          3000
+        ],
+        "crop": [
+          495,
+          909,
+          1604,
+          2308
+        ],
+        "sourceSha256": "95075696b3e927457289eda714c8af7102586065bf5a087e8e51c5d21ed4e072",
+        "assetSha256": "f227024e748e0cfb27972508d0471a992616ccaf60d0f52189a8b4c106abec89"
+      }
+    },
+    {
+      "id": "fialka",
+      "name": "Fialka",
+      "volume": "30 ml",
+      "price": "22,48 €",
+      "url": "https://www.modrapupava.sk/products/pletova-kura-fialka?variant=52841004368211",
+      "variantId": 52841004368211,
+      "inStock": true,
+      "stockEvidence": "Shopify available=true",
+      "photo": "/assets/catalogue/modrapupava-stock-catalogue-fialka.webp",
+      "assetEvidence": {
+        "url": "https://cdn.shopify.com/s/files/1/0948/4841/8131/files/pletova-kura-fialka-modra-pupava-produkt.jpg?v=1764944722",
+        "originalSize": [
+          2000,
+          3000
+        ],
+        "crop": [
+          638,
+          1209,
+          1412,
+          2253
+        ],
+        "sourceSha256": "b16dc9a862cae657c472b3c8e270bb1d4b419467b3877271ad9333e9cf536140",
+        "assetSha256": "d9fbbfb3557ec75e0c18aee49c0b7084e69362da6bba099a5b397e0a47c569d5"
+      }
+    }
+  ],
+  "removed": [
+    {
+      "id": "energy",
+      "reason": "Both 30 ml and 2 ml variants sold out; not replaced with an unverified SKU."
+    }
+  ]
+}

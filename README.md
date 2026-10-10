@@ -184,3 +184,8 @@ z katalógu (`coffee-api-route.js`, `localReply` v `cosmetics.js`).
 
 
 [Kontrola 18 kávových ukážok a rozšírenie troch kozmetických kópií — 9. 10. 2026](REWORK-2026-10-09.md).
+
+
+## Dokončenie katalógov 10. 10. 2026
+
+[Zmeny po ukážkach, registre, zdroje produktov a QA](REWORK-2026-10-10.md). Aktuálne doplnené fakty sú v `research/catalogue-expansion-2026-10-10.json`; predchádzajúce rozšírenia zostávajú v audite z 9. 10.

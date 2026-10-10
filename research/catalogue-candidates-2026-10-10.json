@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "modrapupava",
+    "ico": "47027720",
+    "merchant": "ELVI s. r. o.",
+    "reason": "Latest public statement available is 2021 (sales 126468 EUR); insufficient current size proof for broad expansion. Only remove sold-out Energy from existing demo.",
+    "source": "https://www.registeruz.sk/cruz-public/api/uctovna-jednotka?id=1489835"
+  },
+  {
+    "slug": "smyssly",
+    "ico": "06112412",
+    "employees": "6–9",
+    "reason": "ARES 120 qualifies, but own shop exposes no explicit stock evidence; enabled basket is not proof of availability.",
+    "source": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-res/06112412"
+  },
+  {
+    "slug": "delibutus",
+    "ico": "05201799",
+    "reason": "ARES employee code 000 means unknown, not zero; smallness unverified."
+  },
+  {
+    "slug": "omorfia",
+    "ico": "07105738",
+    "reason": "ARES employee code 000 means unknown, not zero; smallness unverified."
+  },
+  {
+    "slug": "caltha",
+    "ico": "07376413",
+    "employees": "10–19",
+    "reason": "ARES 130; kept unchanged in this pass in favour of verified 0–9 candidates."
+  },
+  {
+    "slug": "pravaja",
+    "ico": "04177584",
+    "employees": "10–19",
+    "reason": "ARES 130; kept unchanged in this pass in favour of verified 0–9 candidates."
+  }
+]

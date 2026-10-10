@@ -234,12 +234,13 @@
   }
 
   function messageBody(text) {
-    if(!hasCatalogue)return esc(text);
+    const linkedProducts=brand.catalogue || (slug==='modrapupava'?brand.products:null);
+    if(!linkedProducts)return esc(text);
     let cursor=0,html='';
     for(const match of text.matchAll(/https?:\/\/[^\s]+/g)) {
       const url=match[0].replace(/[.,;]+$/,'');
       html+=esc(text.slice(cursor,match.index));
-      const known=brand.catalogue.some(p=>p.url===url);
+      const known=linkedProducts.some(p=>p.url===url);
       html+=known?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Pozrieť produkt v e-shope ↗</a>${esc(match[0].slice(url.length))}`:esc(match[0]);
       cursor=match.index+match[0].length;
     }

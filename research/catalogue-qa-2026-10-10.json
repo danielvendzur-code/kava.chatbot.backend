@@ -1,0 +1,185 @@
+{
+  "verifiedOn": "2026-10-10",
+  "browser": "Chromium 140 / Playwright 1.55.0",
+  "catalogues": [
+    {
+      "slug": "two",
+      "viewport": "desktop",
+      "status": "PASS",
+      "products": 54,
+      "categories": [
+        "face",
+        "hair",
+        "sets",
+        "lips"
+      ],
+      "evidenceRun": "qa-coffee-forms-final-20261010"
+    },
+    {
+      "slug": "two",
+      "viewport": "mobile",
+      "status": "PASS",
+      "products": 54,
+      "categories": [
+        "face",
+        "hair",
+        "sets",
+        "lips"
+      ],
+      "evidenceRun": "qa-coffee-forms-final-20261010"
+    },
+    {
+      "slug": "two",
+      "viewport": "small",
+      "status": "PASS",
+      "products": 54,
+      "categories": [
+        "face",
+        "hair",
+        "sets",
+        "lips"
+      ],
+      "evidenceRun": "qa-coffee-forms-final-20261010"
+    },
+    {
+      "slug": "mylo",
+      "viewport": "desktop",
+      "status": "PASS",
+      "products": 33,
+      "categories": [
+        "face",
+        "body",
+        "beard"
+      ],
+      "evidenceRun": "qa-coffee-20261010"
+    },
+    {
+      "slug": "mylo",
+      "viewport": "mobile",
+      "status": "PASS",
+      "products": 33,
+      "categories": [
+        "face",
+        "body",
+        "beard"
+      ],
+      "evidenceRun": "qa-coffee-20261010"
+    },
+    {
+      "slug": "mylo",
+      "viewport": "small",
+      "status": "PASS",
+      "products": 33,
+      "categories": [
+        "face",
+        "body",
+        "beard"
+      ],
+      "evidenceRun": "qa-coffee-20261010"
+    },
+    {
+      "slug": "ponio",
+      "viewport": "desktop",
+      "status": "PASS",
+      "products": 61,
+      "categories": [
+        "face",
+        "body",
+        "hair",
+        "lips"
+      ],
+      "evidenceRun": "qa-coffee-20261010"
+    },
+    {
+      "slug": "ponio",
+      "viewport": "mobile",
+      "status": "PASS",
+      "products": 61,
+      "categories": [
+        "face",
+        "body",
+        "hair",
+        "lips"
+      ],
+      "evidenceRun": "qa-coffee-20261010"
+    },
+    {
+      "slug": "ponio",
+      "viewport": "small",
+      "status": "PASS",
+      "products": 61,
+      "categories": [
+        "face",
+        "body",
+        "hair",
+        "lips"
+      ],
+      "evidenceRun": "qa-coffee-20261010"
+    },
+    {
+      "slug": "bellcoria",
+      "viewport": "desktop",
+      "status": "PASS",
+      "products": 48,
+      "categories": [
+        "face",
+        "body",
+        "hair",
+        "sets"
+      ],
+      "evidenceRun": "qa-coffee-20261010"
+    },
+    {
+      "slug": "bellcoria",
+      "viewport": "mobile",
+      "status": "PASS",
+      "products": 48,
+      "categories": [
+        "face",
+        "body",
+        "hair",
+        "sets"
+      ],
+      "evidenceRun": "qa-coffee-20261010"
+    },
+    {
+      "slug": "bellcoria",
+      "viewport": "small",
+      "status": "PASS",
+      "products": 48,
+      "categories": [
+        "face",
+        "body",
+        "hair",
+        "sets"
+      ],
+      "evidenceRun": "qa-coffee-20261010"
+    }
+  ],
+  "legacyStockRepair": [
+    {
+      "slug": "modrapupava",
+      "viewport": "desktop",
+      "status": "PASS",
+      "products": 3,
+      "paths": 3
+    },
+    {
+      "slug": "modrapupava",
+      "viewport": "mobile",
+      "status": "PASS",
+      "products": 3,
+      "paths": 3
+    },
+    {
+      "slug": "modrapupava",
+      "viewport": "small",
+      "status": "PASS",
+      "products": 3,
+      "paths": 3
+    }
+  ],
+  "totalChecks": 15,
+  "visualReview": "Official asset contact sheets and desktop/mobile screenshots reviewed before commit. Original form choices produce their actual SKU type; downloaded own photos and logos visible.",
+  "contracts": "catalogue-contract.mjs PASS; source/photo hashes checked; latest user API history and stock-repaired API tested."
+}

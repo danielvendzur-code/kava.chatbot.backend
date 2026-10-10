@@ -60,9 +60,10 @@
     data.questions.flatMap((question) => question.options.map((option) => [option.value, question.key]))
   );
   questionKeyByValue.set('mask', 'texture');
+  if(slug==='modrapupava')document.querySelector('#cx-widget')?.classList.add('cx-has-own-photos');
   const photoFor = (value) => {
     const product = brand.products.find((item) => Array.isArray(item.tags) && item.tags.includes(value) && item.photo);
-    return product?.photo || (brand.catalogue ? brand.products[0]?.photo : optionByValue.get(value)?.image) || brand.hero;
+    return product?.photo || ((brand.catalogue || slug==='modrapupava') ? brand.products[0]?.photo : optionByValue.get(value)?.image) || brand.hero;
   };
 
   const hydrateOptionPhotos = () => {
