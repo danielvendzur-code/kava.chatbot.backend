@@ -1,0 +1,390 @@
+{
+  "slug": "kavavra",
+  "brand": {
+    "name": "KAVAVRA",
+    "place": "KAVAVRA · Sviny",
+    "shopUrl": "https://www.kavavra.cz/",
+    "storyUrl": "https://www.kavavra.cz/"
+  },
+  "ownerNote": "Jednodruhové kávy, espresso zmesi aj bezkofeínová káva — výber sa líši chuťou, prípravou a veľkosťou balenia.",
+  "colors": {
+    "ink": "#403829",
+    "brand": "#76674d",
+    "accent": "#99886a",
+    "soft": "#f5f1e8",
+    "paper": "#fffefa",
+    "line": "#e9e1d3"
+  },
+  "chips": [
+    "Káva do automatu",
+    "Káva na filter",
+    "Bez kofeínu",
+    "Káva do mlieka"
+  ],
+  "products": [
+    {
+      "id": "45-501-200g",
+      "name": "Brasil Santos",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.kavavra.cz/brasil-santos/",
+      "price": "180 Kč",
+      "priceUnit": "200 g",
+      "weights": "200 g",
+      "notes": [
+        "mléčná čokoláda",
+        "kakao",
+        "ořechy"
+      ],
+      "acidity": 0,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a automat",
+      "why": "Chuťový profil podľa e-shopu: mléčná čokoláda, kakao, ořechy.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.45
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 0.85,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "81-125-125g",
+      "name": "PERU TRABACONAS G1 ORGANIC WASHED",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.kavavra.cz/peru-trabaconas/",
+      "price": "175 Kč",
+      "priceUnit": "125 g",
+      "weights": "125 g",
+      "notes": [
+        "svěží jahody",
+        "mango",
+        "med",
+        "florální tóny",
+        "vhodná letní vzpruha"
+      ],
+      "acidity": 2,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: svěží jahody, mango, med, florální tóny, vhodná letní vzpruha.",
+      "taste": {
+        "chocolate": 0.4,
+        "balanced": 0.55,
+        "fruity": 1.0,
+        "bold": 1.0
+      },
+      "prep": {
+        "automat": 0.35,
+        "lever": 0.95,
+        "moka": 0.55,
+        "filter": 1.0
+      },
+      "drink": {
+        "black": 1,
+        "milk": 0.4,
+        "both": 0.6
+      },
+      "explore": 1
+    },
+    {
+      "id": "87-125-125g",
+      "name": "ETHIOPIA LEGESSE MATISSO NATURAL",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.kavavra.cz/ethiopia-legesse-matisso/",
+      "price": "180 Kč",
+      "priceUnit": "125 g",
+      "weights": "125 g",
+      "notes": [
+        "sušené peckovice",
+        "borůvkový džem",
+        "mléčná čokoláda"
+      ],
+      "acidity": 2,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: sušené peckovice, borůvkový džem, mléčná čokoláda.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 0.55,
+        "fruity": 1.0,
+        "bold": 1.0
+      },
+      "prep": {
+        "automat": 0.35,
+        "lever": 0.95,
+        "moka": 0.55,
+        "filter": 1.0
+      },
+      "drink": {
+        "black": 1,
+        "milk": 0.4,
+        "both": 0.6
+      },
+      "explore": 1
+    },
+    {
+      "id": "60-200-200g",
+      "name": "Costa Rica",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.kavavra.cz/costa-rica/",
+      "price": "190 Kč",
+      "priceUnit": "200 g",
+      "weights": "200 g",
+      "notes": [
+        "peckoviny",
+        "karamel",
+        "výrazná sladkost"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: peckoviny, karamel, výrazná sladkost.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 0.75,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.85
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 1,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "51-200-200g",
+      "name": "Brasil Cerrado",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.kavavra.cz/brasil-cerrado/",
+      "price": "180 Kč",
+      "priceUnit": "200 g",
+      "weights": "200 g",
+      "notes": [
+        "čokoláda",
+        "lískové ořechy"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Výber podľa prípravy a chuti",
+      "why": "Chuťový profil podľa e-shopu: čokoláda, lískové ořechy.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 0.75,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.45
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 0.85,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "89-200-200g",
+      "name": "Brasil Doce Samba",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.kavavra.cz/brasil-doce-samba/",
+      "price": "180 Kč",
+      "priceUnit": "200 g",
+      "weights": "200 g",
+      "notes": [
+        "sladká čokoláda",
+        "karamel",
+        "lískové ořechy",
+        "broskev"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a automat",
+      "why": "Chuťový profil podľa e-shopu: sladká čokoláda, karamel, lískové ořechy, broskev.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.7,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.7
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 0.85,
+        "both": 0.95
+      },
+      "explore": 0.7
+    },
+    {
+      "id": "48-200-200g",
+      "name": "Směs Brasil Santos a India Kaapi",
+      "line": "Kávové zmesi",
+      "url": "https://www.kavavra.cz/smes-brasil-santos-a-india-kaapi/",
+      "price": "180 Kč",
+      "priceUnit": "200 g",
+      "weights": "200 g",
+      "notes": [
+        "výrazná hořká čokoláda",
+        "výrazný profil"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: výrazná hořká čokoláda, výrazný profil.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 0.75,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.85
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 0.85,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "54-200-200g",
+      "name": "Kenya AA Washed",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.kavavra.cz/kenya-aa-washed/",
+      "price": "195 Kč",
+      "priceUnit": "200 g",
+      "weights": "200 g",
+      "notes": [
+        "vysoká sladkokyselost",
+        "citrusy",
+        "maliny",
+        "mléčná čokoláda"
+      ],
+      "acidity": 3,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: vysoká sladkokyselost, citrusy, maliny, mléčná čokoláda.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 0.55,
+        "fruity": 1.0,
+        "bold": 0.6
+      },
+      "prep": {
+        "automat": 0.35,
+        "lever": 0.75,
+        "moka": 0.55,
+        "filter": 1.0
+      },
+      "drink": {
+        "black": 1,
+        "milk": 0.4,
+        "both": 0.6
+      },
+      "explore": 0.7
+    },
+    {
+      "id": "63-200-200g",
+      "name": "COLOMBIA Supremo",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.kavavra.cz/colombia-supremo/",
+      "price": "190 Kč",
+      "priceUnit": "200 g",
+      "weights": "200 g",
+      "notes": [
+        "kyselé červené ovoce",
+        "ostružiny"
+      ],
+      "acidity": 2,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: kyselé červené ovoce, ostružiny.",
+      "taste": {
+        "chocolate": 0.4,
+        "balanced": 0.55,
+        "fruity": 1.0,
+        "bold": 0.6
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.95,
+        "moka": 0.55,
+        "filter": 1.0
+      },
+      "drink": {
+        "black": 1,
+        "milk": 1,
+        "both": 0.6
+      },
+      "explore": 0.7
+    },
+    {
+      "id": "78-200-200g",
+      "name": "Mexico DECAF",
+      "line": "Bezkofeínová káva",
+      "url": "https://www.kavavra.cz/mexico-decaf-2/",
+      "price": "200 Kč",
+      "priceUnit": "200 g",
+      "weights": "200 g",
+      "notes": [
+        "čokoláda",
+        "oříšky",
+        "karamel"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: čokoláda, oříšky, karamel.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 0.75,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.85
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 0.85,
+        "both": 0.95
+      },
+      "explore": 0.2,
+      "decaf": true
+    }
+  ],
+  "avatarLogo": "/assets/kavavra/symbol.png",
+  "productOptionPhotos": true
+}

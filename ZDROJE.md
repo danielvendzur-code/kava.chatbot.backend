@@ -55,3 +55,25 @@ IČO **62225383**, vlastník **Ivan Masařík**, ARES 110: 1–5. [Primárny ARE
 | HONDURAS - Finca Azul Esmeralda | 250 g | 255 Kč | [e-shop](https://www.ajvencoffee.cz/honduras-finca-azul-esmeralda/) |
 
 AJVENCOFFEE QA 11. 10. 2026: desktop 1440 × 900, mobil 390 × 844 a 360 × 800; štyri kroky, obe chuťové cesty, celá Ponuka, vyhľadávanie, ceny/balenia/odkazy, API aj výpadok API, všetky fotografie a logo pri každej odpovedi. Screenshoty vizuálne skontrolované; PASS. `research/qa-new-demos-2026-10-10/ajvencoffee-results.json`.
+
+
+## KAVAVRA — 10. 10. 2026
+
+IČO **21916446**, vlastník **Ing. Marie Vávrová**, ARES 110: 1–5. [Primárny ARES RES](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-res/21916446). Vlastný e-shop https://www.kavavra.cz/. Doména, IČO a vlastníci skontrolovaní oproti všetkým existujúcim ukážkam: bez duplicity.
+
+10 dostupných kávových profilov, presná cena pre uvedené najmenšie dostupné balenie. Chuťové poznámky sú z oficiálneho popisu; bodové váhy a odporúčania prípravy sú kurátorské. Celá zaradená ponuka má samostatnú záložku. Fotky výberu a produktov sú lokálne kópie oficiálnych fotografií, iba orez vonkajšieho bieleho okraja a rámovanie bez deformácie. Čitateľný symbol pri každej správe je výrez oficiálneho loga. Bez zdravotných tvrdení a predstierania vloženia do skutočného košíka. Podklady a SHA-256: `research/new-demos-2026-10-10.json`.
+
+| Káva | Balenie | Cena | Zdroj |
+|---|---|---|---|
+| Brasil Santos | 200 g | 180 Kč | [e-shop](https://www.kavavra.cz/brasil-santos/) |
+| PERU TRABACONAS G1 ORGANIC WASHED | 125 g | 175 Kč | [e-shop](https://www.kavavra.cz/peru-trabaconas/) |
+| ETHIOPIA LEGESSE MATISSO NATURAL | 125 g | 180 Kč | [e-shop](https://www.kavavra.cz/ethiopia-legesse-matisso/) |
+| Costa Rica | 200 g | 190 Kč | [e-shop](https://www.kavavra.cz/costa-rica/) |
+| Brasil Cerrado | 200 g | 180 Kč | [e-shop](https://www.kavavra.cz/brasil-cerrado/) |
+| Brasil Doce Samba | 200 g | 180 Kč | [e-shop](https://www.kavavra.cz/brasil-doce-samba/) |
+| Směs Brasil Santos a India Kaapi | 200 g | 180 Kč | [e-shop](https://www.kavavra.cz/smes-brasil-santos-a-india-kaapi/) |
+| Kenya AA Washed | 200 g | 195 Kč | [e-shop](https://www.kavavra.cz/kenya-aa-washed/) |
+| COLOMBIA Supremo | 200 g | 190 Kč | [e-shop](https://www.kavavra.cz/colombia-supremo/) |
+| Mexico DECAF | 200 g | 200 Kč | [e-shop](https://www.kavavra.cz/mexico-decaf-2/) |
+
+KAVAVRA QA 11. 10. 2026: desktop 1440 × 900, mobil 390 × 844 a 360 × 800; výber, výsledky, celá Ponuka, vyhľadávanie, ceny/balenia/odkazy, API aj výpadok API, fotografie a logo pri každej odpovedi. Screenshoty vizuálne skontrolované; PASS. `research/qa-new-demos-2026-10-10/kavavra-results.json`.

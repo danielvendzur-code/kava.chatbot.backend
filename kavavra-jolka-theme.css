@@ -1,0 +1,6 @@
+/* KAVAVRA brand tokens on the shared Jolka system. */
+:root{--ink:#403829;--ink-2:#76674d;--ink-3:#76674d;--paper:#fffefa;--surface:#fff;--surface-2:#f5f1e8;--line:#e9e1d3;--line-strong:#e9e1d3;--kraft:#99886a;--kraft-deep:#99886a;--kraft-tint:#f5f1e8;--text:#403829;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.kavavra-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.kavavra-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.kavavra-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.kavavra-clean .launcher__button img{width:54px!important;height:54px!important}

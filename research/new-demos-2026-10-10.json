@@ -72,6 +72,25 @@
           "reason": "Nie je pražená zrnková káva; do rovnakého espresso poradcu nepatrí."
         }
       ]
+    },
+    "kavavra": {
+      "name": "KAVAVRA",
+      "ico": "21916446",
+      "size": "ARES 110: 1–5",
+      "owner": "Ing. Marie Vávrová",
+      "website": "https://www.kavavra.cz/",
+      "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+      "exclusions": [
+        {
+          "name": "Degustační balíček káv",
+          "url": "https://www.kavavra.cz/degustacni-balicek-kav/",
+          "reason": "Darčeková sada alebo doplnok bez overeného samostatného kávového balenia."
+        },
+        {
+          "name": "Cascara",
+          "reason": "Nie je pražená zrnková káva; do rovnakého espresso poradcu nepatrí."
+        }
+      ]
     }
   },
   "catalogues": {
@@ -1152,6 +1171,438 @@
         },
         "photo": "/assets/ajvencoffee/159-250-250g.jpg",
         "tasteSourceUrl": "https://www.ajvencoffee.cz/honduras-finca-azul-esmeralda/"
+      }
+    ],
+    "kavavra": [
+      {
+        "id": "45-501-200g",
+        "sourceId": "45/501",
+        "name": "Brasil Santos",
+        "originalName": "Brasil Santos",
+        "url": "https://www.kavavra.cz/brasil-santos/",
+        "priceAmount": 180.0,
+        "currency": "CZK",
+        "price": "180 Kč",
+        "volume": "200 g",
+        "variantLabel": "Velikost: 200g - Skladem  (180 Kč)",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Velikost: 200g - Skladem  (180 Kč)",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.kavavra.cz/brasil-santos/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "200 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/big/45_brasil-santos.jpg?ff=1&x=1024&y=768&q=85&ts=69a7e94e&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/orig/45_brasil-santos.jpg",
+          "originalSize": [
+            1536,
+            2048
+          ],
+          "sourceSha256": "945c4a9a5710667e9ebce80680e6e36968c3e9abdebb8d6d27adc66d2eb28878",
+          "assetSha256": "f9bc16a840967e732d701b52eb733f43c5a13eca4a8387c570e08b1dc8f209fb"
+        },
+        "photo": "/assets/kavavra/45-501-200g.jpg",
+        "tasteSourceUrl": "https://www.kavavra.cz/brasil-santos/"
+      },
+      {
+        "id": "81-125-125g",
+        "sourceId": "81/125",
+        "name": "PERU TRABACONAS G1 ORGANIC WASHED",
+        "originalName": "PERU TRABACONAS G1 ORGANIC WASHED",
+        "url": "https://www.kavavra.cz/peru-trabaconas/",
+        "priceAmount": 175.0,
+        "currency": "CZK",
+        "price": "175 Kč",
+        "volume": "125 g",
+        "variantLabel": "Velikost: 125g - Skladem  (175 Kč)",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Velikost: 125g - Skladem  (175 Kč)",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.kavavra.cz/peru-trabaconas/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "125 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/big/81_peru-trabaconas.jpg?ff=1&x=1024&y=768&q=85&ts=6a391ed4&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/orig/81_peru-trabaconas.jpg",
+          "originalSize": [
+            2048,
+            1536
+          ],
+          "sourceSha256": "840fe85c599222fc81bdfc9fe373a3d4fdeb80f4e7e98b08d0eadceac401b793",
+          "assetSha256": "f6c48c5b1d399e8a5fb75f6c458749ffcd2300ac0f1c64f96eaea286c2e98689"
+        },
+        "photo": "/assets/kavavra/81-125-125g.jpg",
+        "tasteSourceUrl": "https://www.kavavra.cz/peru-trabaconas/"
+      },
+      {
+        "id": "87-125-125g",
+        "sourceId": "87/125",
+        "name": "ETHIOPIA LEGESSE MATISSO NATURAL",
+        "originalName": "ETHIOPIA LEGESSE MATISSO NATURAL",
+        "url": "https://www.kavavra.cz/ethiopia-legesse-matisso/",
+        "priceAmount": 180.0,
+        "currency": "CZK",
+        "price": "180 Kč",
+        "volume": "125 g",
+        "variantLabel": "Velikost: 125g - Skladem  (180 Kč)",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Velikost: 125g - Skladem  (180 Kč)",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.kavavra.cz/ethiopia-legesse-matisso/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "125 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/big/87-2_ethiopia-legesse-matisso.jpg?ff=1&x=1024&y=768&q=85&ts=6a3920a3&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/orig/87-2_ethiopia-legesse-matisso.jpg",
+          "originalSize": [
+            2048,
+            1536
+          ],
+          "sourceSha256": "824ddc9522fbf463310867b9b48848762b97c8db3fdeb9da98a466b437b9e28b",
+          "assetSha256": "9cfe3b1df83a7a51b310903df2b97f4ff235b31e75b02e5a81e9f31b2767e48c"
+        },
+        "photo": "/assets/kavavra/87-125-125g.jpg",
+        "tasteSourceUrl": "https://www.kavavra.cz/ethiopia-legesse-matisso/"
+      },
+      {
+        "id": "60-200-200g",
+        "sourceId": "60/200",
+        "name": "Costa Rica",
+        "originalName": "Costa Rica",
+        "url": "https://www.kavavra.cz/costa-rica/",
+        "priceAmount": 190.0,
+        "currency": "CZK",
+        "price": "190 Kč",
+        "volume": "200 g",
+        "variantLabel": "Velikost: 200g - Skladem  (190 Kč)",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Velikost: 200g - Skladem  (190 Kč)",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.kavavra.cz/costa-rica/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "200 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/big/60-1_costa-rica.jpg?ff=1&x=1024&y=768&q=85&ts=69a7eb32&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/orig/60-1_costa-rica.jpg",
+          "originalSize": [
+            2048,
+            1536
+          ],
+          "sourceSha256": "400689dd2230fe94aedd796970e6cca07e1ffd920f2c1271281d222a14f675da",
+          "assetSha256": "5aa1b17c31d987ed19cc09557b476dda1376cf4f8f4ab3b7024b943ceb0dab96"
+        },
+        "photo": "/assets/kavavra/60-200-200g.jpg",
+        "tasteSourceUrl": "https://www.kavavra.cz/costa-rica/"
+      },
+      {
+        "id": "51-200-200g",
+        "sourceId": "51/200",
+        "name": "Brasil Cerrado",
+        "originalName": "Brasil Cerrado",
+        "url": "https://www.kavavra.cz/brasil-cerrado/",
+        "priceAmount": 180.0,
+        "currency": "CZK",
+        "price": "180 Kč",
+        "volume": "200 g",
+        "variantLabel": "Velikost: 200g - Skladem  (180 Kč)",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Velikost: 200g - Skladem  (180 Kč)",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.kavavra.cz/brasil-cerrado/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "200 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/big/51_brasil-cerrado.jpg?ff=1&x=1024&y=768&q=85&ts=69a7e92f&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/orig/51_brasil-cerrado.jpg",
+          "originalSize": [
+            1536,
+            2048
+          ],
+          "sourceSha256": "27c233ca5244bfe4cae174d670290866f3e0ec6640b3b8c00a925deeb12cbc88",
+          "assetSha256": "f5e505a532135f0f18154ae7379a05fe09eba3a3b0e1fa34747e75937c5acff1"
+        },
+        "photo": "/assets/kavavra/51-200-200g.jpg",
+        "tasteSourceUrl": "https://www.kavavra.cz/brasil-cerrado/"
+      },
+      {
+        "id": "89-200-200g",
+        "sourceId": "89/200",
+        "name": "Brasil Doce Samba",
+        "originalName": "Brasil Doce Samba",
+        "url": "https://www.kavavra.cz/brasil-doce-samba/",
+        "priceAmount": 180.0,
+        "currency": "CZK",
+        "price": "180 Kč",
+        "volume": "200 g",
+        "variantLabel": "Velikost: 200g - Skladem  (180 Kč)",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Velikost: 200g - Skladem  (180 Kč)",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.kavavra.cz/brasil-doce-samba/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "200 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/big/89_brasil-doce-samba.jpg?ff=1&x=1024&y=768&q=85&ts=6a50e64c&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/orig/89_brasil-doce-samba.jpg",
+          "originalSize": [
+            1536,
+            2048
+          ],
+          "sourceSha256": "7323920828ab2354d5a4499543a45ef372fc4b06e07ac319f56074ba6b8c33fd",
+          "assetSha256": "f81b0c0374bf4d6edb71fdeae54c4591e4ef56c14158539164ceb5460e7bfd3a"
+        },
+        "photo": "/assets/kavavra/89-200-200g.jpg",
+        "tasteSourceUrl": "https://www.kavavra.cz/brasil-doce-samba/"
+      },
+      {
+        "id": "48-200-200g",
+        "sourceId": "48/200",
+        "name": "Směs Brasil Santos a India Kaapi",
+        "originalName": "Směs Brasil Santos a India Kaapi",
+        "url": "https://www.kavavra.cz/smes-brasil-santos-a-india-kaapi/",
+        "priceAmount": 180.0,
+        "currency": "CZK",
+        "price": "180 Kč",
+        "volume": "200 g",
+        "variantLabel": "Velikost: 200g - Skladem  (180 Kč)",
+        "category": "coffee",
+        "kind": "Kávové zmesi",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky kávové zmesi. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Velikost: 200g - Skladem  (180 Kč)",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.kavavra.cz/smes-brasil-santos-a-india-kaapi/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "200 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/big/48_smes-brasil-santos-a-india-kaapi.jpg?ff=1&x=1024&y=768&q=85&ts=69a7ece5&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/orig/48_smes-brasil-santos-a-india-kaapi.jpg",
+          "originalSize": [
+            1536,
+            2048
+          ],
+          "sourceSha256": "c11afbb0d31525a818e58913f354b0e5706e7da6b4f6e33f8902277d09551efc",
+          "assetSha256": "a94b016c9982331ed2f43a50027a948c4a1abf8024e2e0d339bc6804798d20bf"
+        },
+        "photo": "/assets/kavavra/48-200-200g.jpg",
+        "tasteSourceUrl": "https://www.kavavra.cz/smes-brasil-santos-a-india-kaapi/"
+      },
+      {
+        "id": "54-200-200g",
+        "sourceId": "54/200",
+        "name": "Kenya AA Washed",
+        "originalName": "Kenya AA Washed",
+        "url": "https://www.kavavra.cz/kenya-aa-washed/",
+        "priceAmount": 195.0,
+        "currency": "CZK",
+        "price": "195 Kč",
+        "volume": "200 g",
+        "variantLabel": "Velikost: 200g - Skladem  (195 Kč)",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Velikost: 200g - Skladem  (195 Kč)",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.kavavra.cz/kenya-aa-washed/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "200 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/big/54_kenya-aa-washed.jpg?ff=1&x=1024&y=768&q=85&ts=69a7ecc1&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/orig/54_kenya-aa-washed.jpg",
+          "originalSize": [
+            1536,
+            2048
+          ],
+          "sourceSha256": "32ec571139f94011fd41e587da8a8e3c0846e264ebf43b48e1e38f7087706ea4",
+          "assetSha256": "8ca9e09f0cf6d994835fe4103f54ede79877017cb66285519e2018a3132b21d2"
+        },
+        "photo": "/assets/kavavra/54-200-200g.jpg",
+        "tasteSourceUrl": "https://www.kavavra.cz/kenya-aa-washed/"
+      },
+      {
+        "id": "63-200-200g",
+        "sourceId": "63/200",
+        "name": "COLOMBIA Supremo",
+        "originalName": "COLOMBIA Supremo",
+        "url": "https://www.kavavra.cz/colombia-supremo/",
+        "priceAmount": 190.0,
+        "currency": "CZK",
+        "price": "190 Kč",
+        "volume": "200 g",
+        "variantLabel": "Velikost: 200g - Skladem  (190 Kč)",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Velikost: 200g - Skladem  (190 Kč)",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.kavavra.cz/colombia-supremo/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "200 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/big/63_colombia-supremo.jpg?ff=1&x=1024&y=768&q=85&ts=69a7eb0c&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/orig/63_colombia-supremo.jpg",
+          "originalSize": [
+            1536,
+            2048
+          ],
+          "sourceSha256": "35a9acffd4d942a533e45122ddb7518ae2b59e303efb8e71472ee9f076f340a8",
+          "assetSha256": "c3c40969b4dac43cdfc10902f8c865e02e74eddc2071bb7c1fe79de0f5642c75"
+        },
+        "photo": "/assets/kavavra/63-200-200g.jpg",
+        "tasteSourceUrl": "https://www.kavavra.cz/colombia-supremo/"
+      },
+      {
+        "id": "78-200-200g",
+        "sourceId": "78/200",
+        "name": "Mexico DECAF",
+        "originalName": "Mexico DECAF",
+        "url": "https://www.kavavra.cz/mexico-decaf-2/",
+        "priceAmount": 200.0,
+        "currency": "CZK",
+        "price": "200 Kč",
+        "volume": "200 g",
+        "variantLabel": "Velikost: 200g - Skladem  (200 Kč)",
+        "category": "coffee",
+        "kind": "Bezkofeínová káva",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky bezkofeínová káva. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Velikost: 200g - Skladem  (200 Kč)",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.kavavra.cz/mexico-decaf-2/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "200 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/big/78_mexico-decaf.jpg?ff=1&x=1024&y=768&q=85&ts=6a182e55&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.kavavra.cz/user/shop/orig/78_mexico-decaf.jpg",
+          "originalSize": [
+            1536,
+            2048
+          ],
+          "sourceSha256": "e9e22b26bd42a9d0af4be0ae13db127f2666aa755ce5d643da0d5216b74e81b6",
+          "assetSha256": "532a151c39dcc70d3ceb3fd81c8d33f3f82b19b7e4c007c536a4651865824564"
+        },
+        "photo": "/assets/kavavra/78-200-200g.jpg",
+        "tasteSourceUrl": "https://www.kavavra.cz/mexico-decaf-2/"
       }
     ]
   }

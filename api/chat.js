@@ -374,6 +374,28 @@ const DEMOS = {
       decaf: "Bez kofeínu je v ponuke BEZKOFEINOVÁ | Honduras - Excelso. Chuťový profil podľa e-shopu: čokoláda, oriešky, marhule.",
       default: "Ak chcete začať istotou, dobrým smerom je HOUSE BLEND. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
     }
+  },
+  kavavra: {
+    brand: "KAVAVRA", web: "https://www.kavavra.cz/",
+    products: [
+      "Brasil Santos – mléčná čokoláda, kakao, ořechy; Espresso a automat",
+      "PERU TRABACONAS G1 ORGANIC WASHED – svěží jahody, mango, med, florální tóny, vhodná letní vzpruha; Espresso a filter",
+      "ETHIOPIA LEGESSE MATISSO NATURAL – sušené peckovice, borůvkový džem, mléčná čokoláda; Espresso a filter",
+      "Costa Rica – peckoviny, karamel, výrazná sladkost; Espresso a filter",
+      "Brasil Cerrado – čokoláda, lískové ořechy; Výber podľa prípravy a chuti",
+      "Brasil Doce Samba – sladká čokoláda, karamel, lískové ořechy, broskev; Espresso a automat",
+      "Směs Brasil Santos a India Kaapi – výrazná hořká čokoláda, výrazný profil; Espresso a filter",
+      "Kenya AA Washed – vysoká sladkokyselost, citrusy, maliny, mléčná čokoláda; Espresso a filter",
+      "COLOMBIA Supremo – kyselé červené ovoce, ostružiny; Espresso a filter",
+      "Mexico DECAF – čokoláda, oříšky, karamel; Espresso a filter; bez kofeínu"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Brasil Santos. Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      milk: "Do mlieka sa hodí Costa Rica. Chuťový profil podľa e-shopu: peckoviny, karamel, výrazná sladkost.",
+      filter: "Na filter siahnite po PERU TRABACONAS G1 ORGANIC WASHED. Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      decaf: "Bez kofeínu je v ponuke Mexico DECAF. Chuťový profil podľa e-shopu: čokoláda, oříšky, karamel.",
+      default: "Ak chcete začať istotou, dobrým smerom je Brasil Santos. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
   }
 };
 

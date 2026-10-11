@@ -302,6 +302,18 @@
       theme: { ink: '#163e43', brand: '#114e56', accent: '#568b8d', soft: '#eef5f4', paper: '#fffdf9' },
       hero: '/assets/ajvencoffee/hero.jpg',
       figures: commonFigures()
+    },
+
+    kavavra: {
+      name: "KAVAVRA",
+      place: "KAVAVRA · Sviny",
+      note: "Jednodruhové kávy, espresso zmesi aj bezkofeínová káva — výber sa líši chuťou, prípravou a veľkosťou balenia.",
+      root: '.kavavra-page',
+      shop: "https://www.kavavra.cz/",
+      lockup: '<img src="/assets/kavavra/logo.png" alt="KAVAVRA">',
+      theme: { ink: '#403829', brand: '#76674d', accent: '#99886a', soft: '#f5f1e8', paper: '#fffefa' },
+      hero: '/assets/kavavra/hero.jpg',
+      figures: commonFigures()
     }
   };
 

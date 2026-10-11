@@ -195,3 +195,7 @@ z katalógu (`coffee-api-route.js`, `localReply` v `cosmetics.js`).
 - **AJVENCOFFEE** — `/ajvencoffee/`; 10 dostupných káv, reálne fotografie vo všetkých štyroch krokoch aj v Ponuke; IČO 62225383, ARES 110: 1–5. Zdroje v `ZDROJE.md`.
 
 AJVENCOFFEE QA 11. 10. 2026: desktop 1440 × 900, mobil 390 × 844 a 360 × 800; štyri kroky, obe chuťové cesty, celá Ponuka, vyhľadávanie, ceny/balenia/odkazy, API aj výpadok API, všetky fotografie a logo pri každej odpovedi. Screenshoty vizuálne skontrolované; PASS. `research/qa-new-demos-2026-10-10/ajvencoffee-results.json`.
+
+- **KAVAVRA** — `/kavavra/`; 10 dostupných káv, reálne fotografie vo všetkých štyroch krokoch aj v Ponuke; IČO 21916446, ARES 110: 1–5. Zdroje v `ZDROJE.md`.
+
+KAVAVRA QA 11. 10. 2026: desktop 1440 × 900, mobil 390 × 844 a 360 × 800; výber, výsledky, celá Ponuka, vyhľadávanie, ceny/balenia/odkazy, API aj výpadok API, fotografie a logo pri každej odpovedi. Screenshoty vizuálne skontrolované; PASS. `research/qa-new-demos-2026-10-10/kavavra-results.json`.
