@@ -1,0 +1,20 @@
+[
+  {
+    "slug": "grain",
+    "viewport": "desktop",
+    "status": "PASS",
+    "products": 10
+  },
+  {
+    "slug": "grain",
+    "viewport": "mobile",
+    "status": "PASS",
+    "products": 10
+  },
+  {
+    "slug": "grain",
+    "viewport": "small",
+    "status": "PASS",
+    "products": 10
+  }
+]

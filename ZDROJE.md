@@ -77,3 +77,25 @@ IČO **21916446**, vlastník **Ing. Marie Vávrová**, ARES 110: 1–5. [Primár
 | Mexico DECAF | 200 g | 200 Kč | [e-shop](https://www.kavavra.cz/mexico-decaf-2/) |
 
 KAVAVRA QA 11. 10. 2026: desktop 1440 × 900, mobil 390 × 844 a 360 × 800; výber, výsledky, celá Ponuka, vyhľadávanie, ceny/balenia/odkazy, API aj výpadok API, fotografie a logo pri každej odpovedi. Screenshoty vizuálne skontrolované; PASS. `research/qa-new-demos-2026-10-10/kavavra-results.json`.
+
+
+## Pražírna Brno — 11. 10. 2026
+
+IČO **10718761**, vlastník **Květuše Lišková**, ARES 120: 6–9. [Primárny ARES RES](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-res/10718761). Vlastný e-shop https://www.prazirnabrno.cz/. Doména, IČO a vlastníci skontrolovaní oproti všetkým existujúcim ukážkam: bez duplicity.
+
+10 dostupných kávových profilov, presná cena pre uvedené najmenšie dostupné balenie. Chuťové poznámky sú z oficiálneho popisu; bodové váhy a odporúčania prípravy sú kurátorské. Celá zaradená ponuka má samostatnú záložku. Fotky výberu a produktov sú lokálne kópie oficiálnych fotografií, iba orez vonkajšieho bieleho okraja a rámovanie bez deformácie. Čitateľný symbol pri každej správe je výrez oficiálneho loga. Bez zdravotných tvrdení a predstierania vloženia do skutočného košíka. Podklady a SHA-256: `research/new-demos-2026-10-10.json`.
+
+| Káva | Balenie | Cena | Zdroj |
+|---|---|---|---|
+| Brazil Cerrado | 250 g | 306 Kč | [e-shop](https://www.prazirnabrno.cz/brazil-cerrado-3/) |
+| Směs na probuzení | 250 g | 296 Kč | [e-shop](https://www.prazirnabrno.cz/smes-na-probuzeni/) |
+| Honduras | 250 g | 342 Kč | [e-shop](https://www.prazirnabrno.cz/honduras/) |
+| Colombia Supremo | 250 g | 334 Kč | [e-shop](https://www.prazirnabrno.cz/colombia/) |
+| Ethiopia Sidamo – střední pražení | 250 g | 345 Kč | [e-shop](https://www.prazirnabrno.cz/ethiopia-sidamo/) |
+| Dominikána Barahona | 250 g | 362 Kč | [e-shop](https://www.prazirnabrno.cz/dominikanska-republika/) |
+| Colombia Decaf | 250 g | 388 Kč | [e-shop](https://www.prazirnabrno.cz/decaf/) |
+| India Monsooned Malabar | 250 g | 336 Kč | [e-shop](https://www.prazirnabrno.cz/india-monsooned-malabar-3/) |
+| Ethiopia Sidamo – světlé pražení | 250 g | 345 Kč | [e-shop](https://www.prazirnabrno.cz/ethiopia-sidamo-2/) |
+| Kenya | 250 g | 365 Kč | [e-shop](https://www.prazirnabrno.cz/kenya/) |
+
+Pražírna Brno QA 11. 10. 2026: desktop 1440 × 900, mobil 390 × 844 a 360 × 800; výber, výsledky, celá Ponuka, vyhľadávanie, ceny/balenia/odkazy, API aj výpadok API, fotografie a logo pri každej odpovedi. Screenshoty vizuálne skontrolované; PASS. Všetkých 45 nových kávových balení (Don Franko, AJVENCOFFEE, KAVAVRA, Pražírna Brno) opätovne overených na oficiálnych produktových stránkach 11. 10. 2026: cena a skladovosť bez rozdielu. `research/release-stock-price-check-2026-10-11.json`.

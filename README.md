@@ -199,3 +199,7 @@ AJVENCOFFEE QA 11. 10. 2026: desktop 1440 × 900, mobil 390 × 844 a 360 × 800;
 - **KAVAVRA** — `/kavavra/`; 10 dostupných káv, reálne fotografie vo všetkých štyroch krokoch aj v Ponuke; IČO 21916446, ARES 110: 1–5. Zdroje v `ZDROJE.md`.
 
 KAVAVRA QA 11. 10. 2026: desktop 1440 × 900, mobil 390 × 844 a 360 × 800; výber, výsledky, celá Ponuka, vyhľadávanie, ceny/balenia/odkazy, API aj výpadok API, fotografie a logo pri každej odpovedi. Screenshoty vizuálne skontrolované; PASS. `research/qa-new-demos-2026-10-10/kavavra-results.json`.
+
+- **Pražírna Brno** — `/grain/`; 10 dostupných káv, reálne fotografie vo všetkých štyroch krokoch aj v Ponuke; IČO 10718761, ARES 120: 6–9. Zdroje v `ZDROJE.md`.
+
+Pražírna Brno QA 11. 10. 2026: desktop 1440 × 900, mobil 390 × 844 a 360 × 800; výber, výsledky, celá Ponuka, vyhľadávanie, ceny/balenia/odkazy, API aj výpadok API, fotografie a logo pri každej odpovedi. Screenshoty vizuálne skontrolované; PASS. Všetkých 45 nových kávových balení (Don Franko, AJVENCOFFEE, KAVAVRA, Pražírna Brno) opätovne overených na oficiálnych produktových stránkach 11. 10. 2026: cena a skladovosť bez rozdielu. `research/release-stock-price-check-2026-10-11.json`.

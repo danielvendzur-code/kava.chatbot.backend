@@ -1,0 +1,6 @@
+/* Pražírna Brno brand tokens on the shared Jolka system. */
+:root{--ink:#2d211d;--ink-2:#bf4b48;--ink-3:#bf4b48;--paper:#fffdfb;--surface:#fff;--surface-2:#f8efec;--line:#ebd9d2;--line-strong:#ebd9d2;--kraft:#ca7463;--kraft-deep:#ca7463;--kraft-tint:#f8efec;--text:#2d211d;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.grain-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.grain-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.grain-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.grain-clean .launcher__button img{width:54px!important;height:54px!important}

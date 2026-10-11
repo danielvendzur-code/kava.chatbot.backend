@@ -396,6 +396,28 @@ const DEMOS = {
       decaf: "Bez kofeínu je v ponuke Mexico DECAF. Chuťový profil podľa e-shopu: čokoláda, oříšky, karamel.",
       default: "Ak chcete začať istotou, dobrým smerom je Brasil Santos. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
     }
+  },
+  grain: {
+    brand: "Pražírna Brno", web: "https://www.prazirnabrno.cz/",
+    products: [
+      "Brazil Cerrado – kakao, oriešky; Espresso a automat",
+      "Směs na probuzení – kakao, oriešky, jemná korenistosť; Espresso a mliečne nápoje",
+      "Honduras – pražené oriešky, kakao, marhule; Espresso a filter",
+      "Colombia Supremo – čokoláda, oriešky; Espresso a mliečne nápoje",
+      "Ethiopia Sidamo – střední pražení – čokoláda, korenie; Espresso a filter",
+      "Dominikána Barahona – kakao, vlašské orechy; Espresso a mliečne nápoje",
+      "Colombia Decaf – zelené hrozno, citrusy, čokoláda; Espresso a filter; bez kofeínu",
+      "India Monsooned Malabar – cédrové drevo, čokoláda, korenie; Espresso a mliečne nápoje",
+      "Ethiopia Sidamo – světlé pražení – citrusy, ovocnosť; Espresso a filter",
+      "Kenya – čierne ríbezle, bobuľové ovocie, kakao; Espresso a filter"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod Brazil Cerrado. Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      milk: "Do mlieka sa hodí Směs na probuzení. Chuťový profil podľa e-shopu: kakao, oriešky, jemná korenistosť.",
+      filter: "Na filter siahnite po Colombia Decaf. Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      decaf: "Bez kofeínu je v ponuke Colombia Decaf. Chuťový profil podľa e-shopu: zelené hrozno, citrusy, čokoláda.",
+      default: "Ak chcete začať istotou, dobrým smerom je Brazil Cerrado. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
   }
 };
 

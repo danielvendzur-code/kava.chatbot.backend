@@ -1261,5 +1261,363 @@ export const verifiedCoffee = {
       "explore": 0.2,
       "decaf": true
     }
+  ],
+  "grain": [
+    {
+      "id": "158-250-250g",
+      "name": "Brazil Cerrado",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.prazirnabrno.cz/brazil-cerrado-3/",
+      "price": "306 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "kakao",
+        "oriešky"
+      ],
+      "acidity": 0,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a automat",
+      "why": "Chuťový profil podľa e-shopu: kakao, oriešky.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.45
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 0.85,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "128-250-250g",
+      "name": "Směs na probuzení",
+      "line": "Kávové zmesi",
+      "url": "https://www.prazirnabrno.cz/smes-na-probuzeni/",
+      "price": "296 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "kakao",
+        "oriešky",
+        "jemná korenistosť"
+      ],
+      "acidity": 0,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a mliečne nápoje",
+      "why": "Chuťový profil podľa e-shopu: kakao, oriešky, jemná korenistosť.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.45
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 1,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "134-250-250g",
+      "name": "Honduras",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.prazirnabrno.cz/honduras/",
+      "price": "342 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "pražené oriešky",
+        "kakao",
+        "marhule"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: pražené oriešky, kakao, marhule.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.85
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 0.85,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "137-250-250g",
+      "name": "Colombia Supremo",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.prazirnabrno.cz/colombia/",
+      "price": "334 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "čokoláda",
+        "oriešky"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a mliečne nápoje",
+      "why": "Chuťový profil podľa e-shopu: čokoláda, oriešky.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.45
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 1,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "140-250-250g",
+      "name": "Ethiopia Sidamo – střední pražení",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.prazirnabrno.cz/ethiopia-sidamo/",
+      "price": "345 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "čokoláda",
+        "korenie"
+      ],
+      "acidity": 2,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: čokoláda, korenie.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 0.55,
+        "fruity": 0.1,
+        "bold": 0.6
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.95,
+        "moka": 0.55,
+        "filter": 0.85
+      },
+      "drink": {
+        "black": 1,
+        "milk": 0.4,
+        "both": 0.6
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "237-250-250g",
+      "name": "Dominikána Barahona",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.prazirnabrno.cz/dominikanska-republika/",
+      "price": "362 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "kakao",
+        "vlašské orechy"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a mliečne nápoje",
+      "why": "Chuťový profil podľa e-shopu: kakao, vlašské orechy.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.45
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 1,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "234-250-250g",
+      "name": "Colombia Decaf",
+      "line": "Bezkofeínová káva",
+      "url": "https://www.prazirnabrno.cz/decaf/",
+      "price": "388 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "zelené hrozno",
+        "citrusy",
+        "čokoláda"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: zelené hrozno, citrusy, čokoláda.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.7,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 1.0
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 0.85,
+        "both": 0.95
+      },
+      "explore": 0.7,
+      "decaf": true
+    },
+    {
+      "id": "152-250-250g",
+      "name": "India Monsooned Malabar",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.prazirnabrno.cz/india-monsooned-malabar-3/",
+      "price": "336 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "cédrové drevo",
+        "čokoláda",
+        "korenie"
+      ],
+      "acidity": 0,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a mliečne nápoje",
+      "why": "Chuťový profil podľa e-shopu: cédrové drevo, čokoláda, korenie.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.45
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 1,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "143-250-250g",
+      "name": "Ethiopia Sidamo – světlé pražení",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.prazirnabrno.cz/ethiopia-sidamo-2/",
+      "price": "345 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "citrusy",
+        "ovocnosť"
+      ],
+      "acidity": 3,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: citrusy, ovocnosť.",
+      "taste": {
+        "chocolate": 0.4,
+        "balanced": 0.55,
+        "fruity": 1.0,
+        "bold": 0.6
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.75,
+        "moka": 0.55,
+        "filter": 1.0
+      },
+      "drink": {
+        "black": 1,
+        "milk": 0.4,
+        "both": 0.6
+      },
+      "explore": 0.7
+    },
+    {
+      "id": "146-250-250g",
+      "name": "Kenya",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.prazirnabrno.cz/kenya/",
+      "price": "365 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "čierne ríbezle",
+        "bobuľové ovocie",
+        "kakao"
+      ],
+      "acidity": 3,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: čierne ríbezle, bobuľové ovocie, kakao.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 0.55,
+        "fruity": 1.0,
+        "bold": 0.6
+      },
+      "prep": {
+        "automat": 0.35,
+        "lever": 0.75,
+        "moka": 0.55,
+        "filter": 1.0
+      },
+      "drink": {
+        "black": 1,
+        "milk": 0.4,
+        "both": 0.6
+      },
+      "explore": 0.7
+    }
   ]
 };

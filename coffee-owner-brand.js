@@ -314,6 +314,18 @@
       theme: { ink: '#403829', brand: '#76674d', accent: '#99886a', soft: '#f5f1e8', paper: '#fffefa' },
       hero: '/assets/kavavra/hero.jpg',
       figures: commonFigures()
+    },
+
+    grain: {
+      name: "Pražírna Brno",
+      place: "Pražírna Brno · Brno",
+      note: "Jednodruhové kávy, espresso zmesi aj bezkofeínová káva — výber sa líši chuťou, prípravou a veľkosťou balenia.",
+      root: '.grain-page',
+      shop: "https://www.prazirnabrno.cz/",
+      lockup: '<img src="/assets/grain/logo.png" alt="Pražírna Brno">',
+      theme: { ink: '#2d211d', brand: '#bf4b48', accent: '#ca7463', soft: '#f8efec', paper: '#fffdfb' },
+      hero: '/assets/grain/hero.jpg',
+      figures: commonFigures()
     }
   };
 

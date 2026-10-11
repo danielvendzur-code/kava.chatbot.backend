@@ -91,6 +91,20 @@
           "reason": "Nie je pražená zrnková káva; do rovnakého espresso poradcu nepatrí."
         }
       ]
+    },
+    "grain": {
+      "name": "Pražírna Brno",
+      "ico": "10718761",
+      "size": "ARES 120: 6–9",
+      "owner": "Květuše Lišková",
+      "website": "https://www.prazirnabrno.cz/",
+      "verifiedAt": "2026-10-10T20:59:30.637944+00:00",
+      "exclusions": [
+        {
+          "name": "Cascara",
+          "reason": "Nie je pražená zrnková káva; do rovnakého espresso poradcu nepatrí."
+        }
+      ]
     }
   },
   "catalogues": {
@@ -1603,6 +1617,439 @@
         },
         "photo": "/assets/kavavra/78-200-200g.jpg",
         "tasteSourceUrl": "https://www.kavavra.cz/mexico-decaf-2/"
+      }
+    ],
+    "grain": [
+      {
+        "id": "158-250-250g",
+        "sourceId": "158/250",
+        "name": "Brazil Cerrado",
+        "originalName": "Brazil Cerrado",
+        "url": "https://www.prazirnabrno.cz/brazil-cerrado-3/",
+        "priceAmount": 306.0,
+        "currency": "CZK",
+        "price": "306 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.prazirnabrno.cz/brazil-cerrado-3/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/big/158_brazil-cerrado-zrnkova-kava---prazirna-brno.jpg?ff=1&x=1024&y=1024&q=85&ts=65fb06f3&sg=38cb01fe",
+        "verifiedAt": "2026-10-10T20:59:30.637944+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/orig/158_brazil-cerrado-zrnkova-kava---prazirna-brno.jpg",
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "sourceSha256": "20f1888c288ccb430cbba75ddfd24199ac5e8d51b0cd3befade6c1db64fde3ad",
+          "assetSha256": "ceefa6f8bd2931ca15a4c0138589b89fc8099d19d59bb742b111756e2f5d4c87"
+        },
+        "photo": "/assets/grain/158-250-250g.jpg",
+        "tasteSourceUrl": "https://www.prazirnabrno.cz/brazil-cerrado-3/"
+      },
+      {
+        "id": "128-250-250g",
+        "sourceId": "128/250",
+        "name": "Směs na probuzení",
+        "originalName": "Směs na probuzení",
+        "url": "https://www.prazirnabrno.cz/smes-na-probuzeni/",
+        "priceAmount": 296.0,
+        "currency": "CZK",
+        "price": "296 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Kávové zmesi",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky kávové zmesi. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.prazirnabrno.cz/smes-na-probuzeni/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/big/128_smes-na-probuzeni---zrnkova-kava-arabica-a-robusta.jpg?ff=1&x=1024&y=1024&q=85&ts=64747587&sg=38cb01fe",
+        "verifiedAt": "2026-10-10T20:59:30.637944+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/orig/128_smes-na-probuzeni---zrnkova-kava-arabica-a-robusta.jpg",
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "sourceSha256": "361c1df091411ba241dd32fa2d348f788ef051c1a203cda174d879226052c35c",
+          "assetSha256": "942b069bc5522827dc598bd8d1b3b414e0f12f93eda2a16c466bb82b7a69eb96"
+        },
+        "photo": "/assets/grain/128-250-250g.jpg",
+        "tasteSourceUrl": "https://www.prazirnabrno.cz/smes-na-probuzeni/"
+      },
+      {
+        "id": "134-250-250g",
+        "sourceId": "134/250",
+        "name": "Honduras",
+        "originalName": "Honduras",
+        "url": "https://www.prazirnabrno.cz/honduras/",
+        "priceAmount": 342.0,
+        "currency": "CZK",
+        "price": "342 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.prazirnabrno.cz/honduras/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/big/134_honduras---zrnkova-kava-s-tony-kakaa--orisku-a-merunek.jpg?ff=1&x=1024&y=1024&q=85&ts=647474ed&sg=38cb01fe",
+        "verifiedAt": "2026-10-10T20:59:30.637944+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/orig/134_honduras---zrnkova-kava-s-tony-kakaa--orisku-a-merunek.jpg",
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "sourceSha256": "1c12403cab9bbfaf87d8fbdffca9248f349a5de5cca3cac5464528147119a9c9",
+          "assetSha256": "7e27fc58a8f300e3dc0e23f7a748fbac92b8c16a2e56644ef6db0f44fad3de96"
+        },
+        "photo": "/assets/grain/134-250-250g.jpg",
+        "tasteSourceUrl": "https://www.prazirnabrno.cz/honduras/"
+      },
+      {
+        "id": "137-250-250g",
+        "sourceId": "137/250",
+        "name": "Colombia Supremo",
+        "originalName": "Colombia Supremo",
+        "url": "https://www.prazirnabrno.cz/colombia/",
+        "priceAmount": 334.0,
+        "currency": "CZK",
+        "price": "334 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.prazirnabrno.cz/colombia/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/big/137_colombia---zrnkova-kava-s-tony-cokolady-a-orisku.jpg?ff=1&x=1024&y=1024&q=85&ts=64747515&sg=38cb01fe",
+        "verifiedAt": "2026-10-10T20:59:30.637944+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/orig/137_colombia---zrnkova-kava-s-tony-cokolady-a-orisku.jpg",
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "sourceSha256": "1258007faa4f3162961b9a64bc4a0b1606a476c8f6e3404bb93d913753ec03d7",
+          "assetSha256": "f7b179f9adb708b0380fdf95470aae198c4ea8b6bbd9cb84c34ffe1e4581d346"
+        },
+        "photo": "/assets/grain/137-250-250g.jpg",
+        "tasteSourceUrl": "https://www.prazirnabrno.cz/colombia/"
+      },
+      {
+        "id": "140-250-250g",
+        "sourceId": "140/250",
+        "name": "Ethiopia Sidamo – střední pražení",
+        "originalName": "Ethiopia Sidamo – střední pražení",
+        "url": "https://www.prazirnabrno.cz/ethiopia-sidamo/",
+        "priceAmount": 345.0,
+        "currency": "CZK",
+        "price": "345 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.prazirnabrno.cz/ethiopia-sidamo/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/big/140_ethiopia-sidamo---stredne-prazena-zrnkova-kava.jpg?ff=1&x=1024&y=1024&q=85&ts=647474b7&sg=38cb01fe",
+        "verifiedAt": "2026-10-10T20:59:30.637944+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/orig/140_ethiopia-sidamo---stredne-prazena-zrnkova-kava.jpg",
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "sourceSha256": "b34370817a24f201fb17ee9a4a5746f5e920500aad865ad71407c667fd3badcd",
+          "assetSha256": "a1e1120f9cfdc62ba010f6d3b9f5614155f689b8e48892dbb8a767f47639d516"
+        },
+        "photo": "/assets/grain/140-250-250g.jpg",
+        "tasteSourceUrl": "https://www.prazirnabrno.cz/ethiopia-sidamo/"
+      },
+      {
+        "id": "237-250-250g",
+        "sourceId": "237/250",
+        "name": "Dominikána Barahona",
+        "originalName": "Dominikána Barahona",
+        "url": "https://www.prazirnabrno.cz/dominikanska-republika/",
+        "priceAmount": 362.0,
+        "currency": "CZK",
+        "price": "362 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.prazirnabrno.cz/dominikanska-republika/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/big/237-1_dominikana-barahona---zrnkova-kava-s-tony-kakaa-a-orechu.png?ff=1&x=1024&y=1024&q=85&ts=6a57bb28&sg=38cb01fe",
+        "verifiedAt": "2026-10-10T20:59:30.637944+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/orig/237-1_dominikana-barahona---zrnkova-kava-s-tony-kakaa-a-orechu.png",
+          "originalSize": [
+            1254,
+            1254
+          ],
+          "sourceSha256": "5432b3d4307e7b1bd4c69f467ed6286bb9803b7403bdcf23b5d8729e06cc7ec2",
+          "assetSha256": "a869962506ded26ae75bdb71adf6691635daa6634b514ad41bf760e9d1448617"
+        },
+        "photo": "/assets/grain/237-250-250g.jpg",
+        "tasteSourceUrl": "https://www.prazirnabrno.cz/dominikanska-republika/"
+      },
+      {
+        "id": "234-250-250g",
+        "sourceId": "234/250",
+        "name": "Colombia Decaf",
+        "originalName": "Colombia Decaf",
+        "url": "https://www.prazirnabrno.cz/decaf/",
+        "priceAmount": 388.0,
+        "currency": "CZK",
+        "price": "388 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Bezkofeínová káva",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky bezkofeínová káva. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.prazirnabrno.cz/decaf/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/big/234_colombia-decaf---bezkofeinova-zrnkova-kava.png?ff=1&x=1024&y=1024&q=85&ts=65a85122&sg=38cb01fe",
+        "verifiedAt": "2026-10-10T20:59:30.637944+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/orig/234_colombia-decaf---bezkofeinova-zrnkova-kava.png",
+          "originalSize": [
+            3152,
+            3152
+          ],
+          "sourceSha256": "6f7cfcdce714babec4bd9b12e8e3c8b21cbc8007bc777797e565326d9d1de532",
+          "assetSha256": "2ee3ece4ae4cd1e509ccd239f090abc2516a2a8dbbeb88ac1af2672f4dd95a6d"
+        },
+        "photo": "/assets/grain/234-250-250g.jpg",
+        "tasteSourceUrl": "https://www.prazirnabrno.cz/decaf/"
+      },
+      {
+        "id": "152-250-250g",
+        "sourceId": "152/250",
+        "name": "India Monsooned Malabar",
+        "originalName": "India Monsooned Malabar",
+        "url": "https://www.prazirnabrno.cz/india-monsooned-malabar-3/",
+        "priceAmount": 336.0,
+        "currency": "CZK",
+        "price": "336 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full",
+          "mature"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.prazirnabrno.cz/india-monsooned-malabar-3/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/big/152_india-monsooned-malabar---zrnkova-kava-s-nizkou-kyselosti.jpg?ff=1&x=1024&y=1024&q=85&ts=64747564&sg=38cb01fe",
+        "verifiedAt": "2026-10-10T20:59:30.637944+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/orig/152_india-monsooned-malabar---zrnkova-kava-s-nizkou-kyselosti.jpg",
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "sourceSha256": "c4ac4fe145748b6df92d5047bedc2c2dc77e1b677018ceb54d2ea9dd782403a1",
+          "assetSha256": "8f495b012658d047693f7514bfb8c7084bbb889089d477dd76c83e27a2a0e302"
+        },
+        "photo": "/assets/grain/152-250-250g.jpg",
+        "tasteSourceUrl": "https://www.prazirnabrno.cz/india-monsooned-malabar-3/"
+      },
+      {
+        "id": "143-250-250g",
+        "sourceId": "143/250",
+        "name": "Ethiopia Sidamo – světlé pražení",
+        "originalName": "Ethiopia Sidamo – světlé pražení",
+        "url": "https://www.prazirnabrno.cz/ethiopia-sidamo-2/",
+        "priceAmount": 345.0,
+        "currency": "CZK",
+        "price": "345 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.prazirnabrno.cz/ethiopia-sidamo-2/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/big/143_ethiopia-sidamo---svetle-prazena-zrnkova-kava-na-filtr.jpg?ff=1&x=1024&y=1024&q=85&ts=647474a8&sg=38cb01fe",
+        "verifiedAt": "2026-10-10T20:59:30.637944+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/orig/143_ethiopia-sidamo---svetle-prazena-zrnkova-kava-na-filtr.jpg",
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "sourceSha256": "39f14f9316e77e8cc7cbc19556f7532934f7e86b71788fa31c7a2828519d2e7b",
+          "assetSha256": "c0ebeed05892fdc7cd664f5b9907857c76204d52a062c1a3e5981ea2975f1984"
+        },
+        "photo": "/assets/grain/143-250-250g.jpg",
+        "tasteSourceUrl": "https://www.prazirnabrno.cz/ethiopia-sidamo-2/"
+      },
+      {
+        "id": "146-250-250g",
+        "sourceId": "146/250",
+        "name": "Kenya",
+        "originalName": "Kenya",
+        "url": "https://www.prazirnabrno.cz/kenya/",
+        "priceAmount": 365.0,
+        "currency": "CZK",
+        "price": "365 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.prazirnabrno.cz/kenya/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/big/146_kenya---svetle-prazena-zrnkova-kava-na-filtr.jpg?ff=1&x=1024&y=1024&q=85&ts=64747574&sg=38cb01fe",
+        "verifiedAt": "2026-10-10T20:59:30.637944+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.prazirnabrno.cz/user/shop/orig/146_kenya---svetle-prazena-zrnkova-kava-na-filtr.jpg",
+          "originalSize": [
+            1024,
+            1024
+          ],
+          "sourceSha256": "db575523999d93d4ffb4e04d58daa72889a825d6ad0873d5547dd32f45e71c8a",
+          "assetSha256": "6ce3b1c6d7fd876338df559d34825bcaad40cb6961106bf1d317f47595f07a83"
+        },
+        "photo": "/assets/grain/146-250-250g.jpg",
+        "tasteSourceUrl": "https://www.prazirnabrno.cz/kenya/"
       }
     ]
   }
