@@ -1,0 +1,388 @@
+{
+  "slug": "ajvencoffee",
+  "brand": {
+    "name": "AJVENCOFFEE",
+    "place": "AJVENCOFFEE · Krásná",
+    "shopUrl": "https://www.ajvencoffee.cz/",
+    "storyUrl": "https://www.ajvencoffee.cz/"
+  },
+  "ownerNote": "Jednodruhové kávy, espresso zmesi aj bezkofeínová káva — výber sa líši chuťou, prípravou a veľkosťou balenia.",
+  "colors": {
+    "ink": "#163e43",
+    "brand": "#114e56",
+    "accent": "#568b8d",
+    "soft": "#eef5f4",
+    "paper": "#fffdf9",
+    "line": "#d9e6e4"
+  },
+  "chips": [
+    "Káva do automatu",
+    "Káva na filter",
+    "Niečo netradičné",
+    "Bez kofeínu"
+  ],
+  "products": [
+    {
+      "id": "107-200-250g",
+      "name": "COLOMBIA - Medellin Supremo",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.ajvencoffee.cz/colombia-medellin-supremo/",
+      "price": "325 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "broskyne",
+        "kakao",
+        "jazmínový čaj"
+      ],
+      "acidity": 2,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: broskyne, kakao, jazmínový čaj.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 0.55,
+        "fruity": 1.0,
+        "bold": 0.6
+      },
+      "prep": {
+        "automat": 0.35,
+        "lever": 0.95,
+        "moka": 0.55,
+        "filter": 1.0
+      },
+      "drink": {
+        "black": 1,
+        "milk": 0.4,
+        "both": 0.6
+      },
+      "explore": 0.7
+    },
+    {
+      "id": "92-200-250g",
+      "name": "BEZKOFEINOVÁ | Honduras - Excelso",
+      "line": "Bezkofeínová káva",
+      "url": "https://www.ajvencoffee.cz/honduras-decaf/",
+      "price": "320 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "čokoláda",
+        "oriešky",
+        "marhule"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: čokoláda, oriešky, marhule.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 0.75,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.85
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 1,
+        "both": 0.95
+      },
+      "explore": 0.2,
+      "decaf": true
+    },
+    {
+      "id": "138-250-250g",
+      "name": "(Legendí) PERU 🦙 LOS SANTOS - Double fermentation",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.ajvencoffee.cz/peru-los-santos-double-fermentation/",
+      "price": "335 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "mliečna čokoláda",
+        "červené jablko",
+        "med"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a mliečne nápoje",
+      "why": "Chuťový profil podľa e-shopu: mliečna čokoláda, červené jablko, med.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 0.55,
+        "fruity": 0.7,
+        "bold": 1.0
+      },
+      "prep": {
+        "automat": 0.75,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.7
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 1,
+        "both": 0.95
+      },
+      "explore": 1
+    },
+    {
+      "id": "113-200-250g",
+      "name": "KRÁSENSKÝ NEKYSELO",
+      "line": "Kávové zmesi",
+      "url": "https://www.ajvencoffee.cz/krasensky-nekyselo/",
+      "price": "285 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "čokoláda",
+        "pečené jablká",
+        "vanilka"
+      ],
+      "acidity": 0,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a mliečne nápoje",
+      "why": "Chuťový profil podľa e-shopu: čokoláda, pečené jablká, vanilka.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.7,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 0.75,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.7
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 1,
+        "both": 0.95
+      },
+      "explore": 0.7
+    },
+    {
+      "id": "137-200-250g",
+      "name": "TANZANIA KILIMANJARO - DARK ROAST",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.ajvencoffee.cz/tanzania-kilimanjaro-dark-roast/",
+      "price": "290 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "čokoláda",
+        "karamel",
+        "sušené ovocie"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a mliečne nápoje",
+      "why": "Chuťový profil podľa e-shopu: čokoláda, karamel, sušené ovocie.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.7,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 0.75,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.7
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 1,
+        "both": 0.95
+      },
+      "explore": 0.7
+    },
+    {
+      "id": "147-250-250g",
+      "name": "🐘INDIA MALABAR - Monsooned",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.ajvencoffee.cz/india-malabar-monsooned/",
+      "price": "320 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "nugát",
+        "oriešky",
+        "zemitosť"
+      ],
+      "acidity": 0,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a mliečne nápoje",
+      "why": "Chuťový profil podľa e-shopu: nugát, oriešky, zemitosť.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 0.75,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.45
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 1,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "65-250-250g",
+      "name": "BRASILIA - Monte Carmelo",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.ajvencoffee.cz/brasilia-monte-carmelo/",
+      "price": "245 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "čokoláda",
+        "smotana",
+        "mandarínka"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: čokoláda, smotana, mandarínka.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 0.75,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.85
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 0.85,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "131-500-250g",
+      "name": "TANZANIA KILIMANJARO - SVĚTLÝ ROAST",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.ajvencoffee.cz/tanzania-kilimanjaro-svetly-roast/",
+      "price": "270 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "pomarančová kôra",
+        "slivky",
+        "škorica"
+      ],
+      "acidity": 2,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a filter",
+      "why": "Chuťový profil podľa e-shopu: pomarančová kôra, slivky, škorica.",
+      "taste": {
+        "chocolate": 0.4,
+        "balanced": 0.55,
+        "fruity": 1.0,
+        "bold": 0.6
+      },
+      "prep": {
+        "automat": 0.35,
+        "lever": 0.95,
+        "moka": 0.55,
+        "filter": 1.0
+      },
+      "drink": {
+        "black": 1,
+        "milk": 0.4,
+        "both": 0.6
+      },
+      "explore": 0.7
+    },
+    {
+      "id": "50-250-250g",
+      "name": "HOUSE BLEND",
+      "line": "Kávové zmesi",
+      "url": "https://www.ajvencoffee.cz/house-blend/",
+      "price": "230 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "čokoláda",
+        "smotana",
+        "mandle"
+      ],
+      "acidity": 0,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Espresso a automat",
+      "why": "Chuťový profil podľa e-shopu: čokoláda, smotana, mandle.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 1.0,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.45
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 0.85,
+        "both": 0.95
+      },
+      "explore": 0.2
+    },
+    {
+      "id": "159-250-250g",
+      "name": "HONDURAS - Finca Azul Esmeralda",
+      "line": "Jednodruhové kávy",
+      "url": "https://www.ajvencoffee.cz/honduras-finca-azul-esmeralda/",
+      "price": "255 Kč",
+      "priceUnit": "250 g",
+      "weights": "250 g",
+      "notes": [
+        "mliečna čokoláda",
+        "jemná kyselinka"
+      ],
+      "acidity": 1,
+      "acidityNote": "Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      "bestFor": "Výber podľa prípravy a chuti",
+      "why": "Chuťový profil podľa e-shopu: mliečna čokoláda, jemná kyselinka.",
+      "taste": {
+        "chocolate": 0.95,
+        "balanced": 1.0,
+        "fruity": 0.1,
+        "bold": 0.35
+      },
+      "prep": {
+        "automat": 0.75,
+        "lever": 0.95,
+        "moka": 0.85,
+        "filter": 0.45
+      },
+      "drink": {
+        "black": 0.85,
+        "milk": 0.85,
+        "both": 0.95
+      },
+      "explore": 0.2
+    }
+  ],
+  "avatarLogo": "/assets/ajvencoffee/symbol.png",
+  "productOptionPhotos": true
+}

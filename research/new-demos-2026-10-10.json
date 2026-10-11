@@ -33,6 +33,45 @@
           "reason": "Nie je pražená zrnková káva; do rovnakého espresso poradcu nepatrí."
         }
       ]
+    },
+    "ajvencoffee": {
+      "name": "AJVENCOFFEE",
+      "ico": "62225383",
+      "size": "ARES 110: 1–5",
+      "owner": "Ivan Masařík",
+      "website": "https://www.ajvencoffee.cz/",
+      "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+      "exclusions": [
+        {
+          "name": "DÁRKOVÁ KOLEKCE - Klasika",
+          "url": "https://www.ajvencoffee.cz/darkova-kolekce-klasika/",
+          "reason": "Objem alebo hmotnosť nie je jednoznačne uvedená pri konkrétnom balení."
+        },
+        {
+          "name": "TESTOVACÍ BALÍČEK",
+          "url": "https://www.ajvencoffee.cz/testovaci-balicek/",
+          "reason": "Darčeková sada alebo doplnok bez overeného samostatného kávového balenia."
+        },
+        {
+          "name": "DÁRKOVÁ KOLEKCE - Objevuj",
+          "url": "https://www.ajvencoffee.cz/darkova-kolekce/",
+          "reason": "Objem alebo hmotnosť nie je jednoznačne uvedená pri konkrétnom balení."
+        },
+        {
+          "name": "UDĚLEJ Z KÁVY DÁREK",
+          "url": "https://www.ajvencoffee.cz/darkovy-box/",
+          "reason": "Objem alebo hmotnosť nie je jednoznačne uvedená pri konkrétnom balení."
+        },
+        {
+          "name": "DÁRKOVÝ POUKAZ",
+          "url": "https://www.ajvencoffee.cz/darkovy-poukaz/",
+          "reason": "Darčeková sada alebo doplnok bez overeného samostatného kávového balenia."
+        },
+        {
+          "name": "Cascara",
+          "reason": "Nie je pražená zrnková káva; do rovnakého espresso poradcu nepatrí."
+        }
+      ]
     }
   },
   "catalogues": {
@@ -681,6 +720,438 @@
         },
         "photo": "/assets/donfranko/198-250-250g.jpg",
         "tasteSourceUrl": "https://www.donfranko.cz/espresso-smesi/italske-espresso-smes/"
+      }
+    ],
+    "ajvencoffee": [
+      {
+        "id": "107-200-250g",
+        "sourceId": "107/200",
+        "name": "COLOMBIA - Medellin Supremo",
+        "originalName": "COLOMBIA - Medellin Supremo",
+        "url": "https://www.ajvencoffee.cz/colombia-medellin-supremo/",
+        "priceAmount": 325.0,
+        "currency": "CZK",
+        "price": "325 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.ajvencoffee.cz/colombia-medellin-supremo/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/big/107-1_photoroom-20260531-153914.jpg?ff=1&x=1024&y=768&q=85&ts=6a1c3a4c&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/orig/107-1_photoroom-20260531-153914.jpg",
+          "originalSize": [
+            2048,
+            1536
+          ],
+          "sourceSha256": "eadca1a67ee34c70118d9f86165003a66a9a683260dd85531aabcd982f19af0f",
+          "assetSha256": "af0f8e03ebfe01cdc80742c6a924021572277370cbbd09dc4d461c3ffadb2927"
+        },
+        "photo": "/assets/ajvencoffee/107-200-250g.jpg",
+        "tasteSourceUrl": "https://www.ajvencoffee.cz/colombia-medellin-supremo/"
+      },
+      {
+        "id": "92-200-250g",
+        "sourceId": "92/200",
+        "name": "BEZKOFEINOVÁ | Honduras - Excelso",
+        "originalName": "BEZKOFEINOVÁ | Honduras - Excelso",
+        "url": "https://www.ajvencoffee.cz/honduras-decaf/",
+        "priceAmount": 320.0,
+        "currency": "CZK",
+        "price": "320 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Bezkofeínová káva",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky bezkofeínová káva. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.ajvencoffee.cz/honduras-decaf/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/big/92_photoroom-20260820-133243.jpg?ff=1&x=1024&y=768&q=85&ts=6a86e5e9&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/orig/92_photoroom-20260820-133243.jpg",
+          "originalSize": [
+            2016,
+            1512
+          ],
+          "sourceSha256": "4d2fe375657b1a31f0c408218c939dc453b3ef5bf8ebe0d24ac299107615b4bb",
+          "assetSha256": "fcf453f47edd64283ced9d830c3d368abd251dbcacc3f01f6e9c41faa87a0ab6"
+        },
+        "photo": "/assets/ajvencoffee/92-200-250g.jpg",
+        "tasteSourceUrl": "https://www.ajvencoffee.cz/honduras-decaf/"
+      },
+      {
+        "id": "138-250-250g",
+        "sourceId": "138/250",
+        "name": "(Legendí) PERU 🦙 LOS SANTOS - Double fermentation",
+        "originalName": "(Legendí) PERU 🦙 LOS SANTOS - Double fermentation",
+        "url": "https://www.ajvencoffee.cz/peru-los-santos-double-fermentation/",
+        "priceAmount": 335.0,
+        "currency": "CZK",
+        "price": "335 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.ajvencoffee.cz/peru-los-santos-double-fermentation/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/big/138_photoroom-20260531-151928.jpg?ff=1&x=1024&y=768&q=85&ts=6a1c359a&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/orig/138_photoroom-20260531-151928.jpg",
+          "originalSize": [
+            2048,
+            1536
+          ],
+          "sourceSha256": "252d89bf06741a40025e3d235953198a2378c187870503c3cd9e023a4ce0410f",
+          "assetSha256": "47ea00c75ad081cd439bd73e04125e0cf8ba758cc609a40e82b6117bcd22dee9"
+        },
+        "photo": "/assets/ajvencoffee/138-250-250g.jpg",
+        "tasteSourceUrl": "https://www.ajvencoffee.cz/peru-los-santos-double-fermentation/"
+      },
+      {
+        "id": "113-200-250g",
+        "sourceId": "113/200",
+        "name": "KRÁSENSKÝ NEKYSELO",
+        "originalName": "KRÁSENSKÝ NEKYSELO",
+        "url": "https://www.ajvencoffee.cz/krasensky-nekyselo/",
+        "priceAmount": 285.0,
+        "currency": "CZK",
+        "price": "285 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Kávové zmesi",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky kávové zmesi. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.ajvencoffee.cz/krasensky-nekyselo/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/big/113_photoroom-20260531-143449.jpg?ff=1&x=1024&y=768&q=85&ts=6a1c2c4a&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/orig/113_photoroom-20260531-143449.jpg",
+          "originalSize": [
+            2048,
+            1536
+          ],
+          "sourceSha256": "fa48328fcbdd968c6cfd60d28a94e3924655583fd716444338e2baa280cba1af",
+          "assetSha256": "0807c08fb4e2abbe4445d030808eabb2d7165be27c739e3ead8a9d851ad3925d"
+        },
+        "photo": "/assets/ajvencoffee/113-200-250g.jpg",
+        "tasteSourceUrl": "https://www.ajvencoffee.cz/krasensky-nekyselo/"
+      },
+      {
+        "id": "137-200-250g",
+        "sourceId": "137/200",
+        "name": "TANZANIA KILIMANJARO - DARK ROAST",
+        "originalName": "TANZANIA KILIMANJARO - DARK ROAST",
+        "url": "https://www.ajvencoffee.cz/tanzania-kilimanjaro-dark-roast/",
+        "priceAmount": 290.0,
+        "currency": "CZK",
+        "price": "290 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.ajvencoffee.cz/tanzania-kilimanjaro-dark-roast/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/big/137_photoroom-20260531-160230.jpg?ff=1&x=1024&y=768&q=85&ts=6a1c4027&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/orig/137_photoroom-20260531-160230.jpg",
+          "originalSize": [
+            2048,
+            1536
+          ],
+          "sourceSha256": "0d1f3d8d3b1869e9a9e8cc38b49fb3a22792d7fcee42b43bb7ccc22628f324e5",
+          "assetSha256": "06557ed116973f865631dce09c504471af0590171f1ce094362dec111e57d321"
+        },
+        "photo": "/assets/ajvencoffee/137-200-250g.jpg",
+        "tasteSourceUrl": "https://www.ajvencoffee.cz/tanzania-kilimanjaro-dark-roast/"
+      },
+      {
+        "id": "147-250-250g",
+        "sourceId": "147/250",
+        "name": "🐘INDIA MALABAR - Monsooned",
+        "originalName": "🐘INDIA MALABAR - Monsooned",
+        "url": "https://www.ajvencoffee.cz/india-malabar-monsooned/",
+        "priceAmount": 320.0,
+        "currency": "CZK",
+        "price": "320 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.ajvencoffee.cz/india-malabar-monsooned/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/big/147_photoroom-20260531-161218.jpg?ff=1&x=1024&y=768&q=85&ts=6a1c4425&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/orig/147_photoroom-20260531-161218.jpg",
+          "originalSize": [
+            2048,
+            1536
+          ],
+          "sourceSha256": "1e92af4f90cb1050eb942aeb4d26b93fa12684963c9cc48c9d6f22fe53a2aa0e",
+          "assetSha256": "7a8229d24f1863f3da8356b52659bed1744c0393aa68d5807b025c5b0b30dd58"
+        },
+        "photo": "/assets/ajvencoffee/147-250-250g.jpg",
+        "tasteSourceUrl": "https://www.ajvencoffee.cz/india-malabar-monsooned/"
+      },
+      {
+        "id": "65-250-250g",
+        "sourceId": "65/250",
+        "name": "BRASILIA - Monte Carmelo",
+        "originalName": "BRASILIA - Monte Carmelo",
+        "url": "https://www.ajvencoffee.cz/brasilia-monte-carmelo/",
+        "priceAmount": 245.0,
+        "currency": "CZK",
+        "price": "245 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.ajvencoffee.cz/brasilia-monte-carmelo/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/big/65_photoroom-20260531-114727.jpg?ff=1&x=1024&y=768&q=85&ts=6a1c0721&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/orig/65_photoroom-20260531-114727.jpg",
+          "originalSize": [
+            2016,
+            1512
+          ],
+          "sourceSha256": "b4ff7e1795fa04a480302ff5c0fae03f39a4b5a1dcfc46b584ca6a8a8e416036",
+          "assetSha256": "ea5e16364ab77d2cb4b72d570a8f9726511f55987d13d321f4e90d2c90e37bb0"
+        },
+        "photo": "/assets/ajvencoffee/65-250-250g.jpg",
+        "tasteSourceUrl": "https://www.ajvencoffee.cz/brasilia-monte-carmelo/"
+      },
+      {
+        "id": "131-500-250g",
+        "sourceId": "131/500",
+        "name": "TANZANIA KILIMANJARO - SVĚTLÝ ROAST",
+        "originalName": "TANZANIA KILIMANJARO - SVĚTLÝ ROAST",
+        "url": "https://www.ajvencoffee.cz/tanzania-kilimanjaro-svetly-roast/",
+        "priceAmount": 270.0,
+        "currency": "CZK",
+        "price": "270 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.ajvencoffee.cz/tanzania-kilimanjaro-svetly-roast/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/big/131_photoroom-20260531-115413.jpg?ff=1&x=1024&y=768&q=85&ts=6a1c0775&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/orig/131_photoroom-20260531-115413.jpg",
+          "originalSize": [
+            2016,
+            1512
+          ],
+          "sourceSha256": "e076c5f698f140d0f4a51cbfd558c54f2fc523b763775121009a064404a314ec",
+          "assetSha256": "ed00a90ce0ae3f526b7630366380091d41637b9b186300e3856e260160a43f9b"
+        },
+        "photo": "/assets/ajvencoffee/131-500-250g.jpg",
+        "tasteSourceUrl": "https://www.ajvencoffee.cz/tanzania-kilimanjaro-svetly-roast/"
+      },
+      {
+        "id": "50-250-250g",
+        "sourceId": "50/250",
+        "name": "HOUSE BLEND",
+        "originalName": "HOUSE BLEND",
+        "url": "https://www.ajvencoffee.cz/house-blend/",
+        "priceAmount": 230.0,
+        "currency": "CZK",
+        "price": "230 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Kávové zmesi",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky kávové zmesi. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.ajvencoffee.cz/house-blend/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/big/50_photoroom-20260531-115232.jpg?ff=1&x=1024&y=768&q=85&ts=6a1c0761&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/orig/50_photoroom-20260531-115232.jpg",
+          "originalSize": [
+            2016,
+            1512
+          ],
+          "sourceSha256": "4fb36c32b3347ea54380ff50b5b42addb6b6c3e0cede3048680969c605b5921b",
+          "assetSha256": "403afb9ef0efc788ed8b6b2e448730f1f3d6a6d8061f6cbfcec17a7eebb3185c"
+        },
+        "photo": "/assets/ajvencoffee/50-250-250g.jpg",
+        "tasteSourceUrl": "https://www.ajvencoffee.cz/house-blend/"
+      },
+      {
+        "id": "159-250-250g",
+        "sourceId": "159/250",
+        "name": "HONDURAS - Finca Azul Esmeralda",
+        "originalName": "HONDURAS - Finca Azul Esmeralda",
+        "url": "https://www.ajvencoffee.cz/honduras-finca-azul-esmeralda/",
+        "priceAmount": 255.0,
+        "currency": "CZK",
+        "price": "255 Kč",
+        "volume": "250 g",
+        "variantLabel": "250g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.ajvencoffee.cz/honduras-finca-azul-esmeralda/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/big/159_photoroom-20260531-115031.jpg?ff=1&x=1024&y=768&q=85&ts=6ac50823&sg=161563f2",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.ajvencoffee.cz/user/shop/orig/159_photoroom-20260531-115031.jpg",
+          "originalSize": [
+            2016,
+            1512
+          ],
+          "sourceSha256": "f88f32dc83a4875919bf61a20849d68e9d3d8e64aea44352cb45fbb44aae786d",
+          "assetSha256": "8e0f13c0422e2fcab8e16efe868e0f8012eaf489779711c9013f2b00ad648987"
+        },
+        "photo": "/assets/ajvencoffee/159-250-250g.jpg",
+        "tasteSourceUrl": "https://www.ajvencoffee.cz/honduras-finca-azul-esmeralda/"
       }
     ]
   }

@@ -290,6 +290,18 @@
       theme: { ink: '#272321', brand: '#272321', accent: '#96784e', soft: '#f5f0e8', paper: '#fffdfa' },
       hero: '/assets/donfranko/hero.jpg',
       figures: commonFigures()
+    },
+
+    ajvencoffee: {
+      name: "AJVENCOFFEE",
+      place: "AJVENCOFFEE · Krásná",
+      note: "Jednodruhové kávy, espresso zmesi aj bezkofeínová káva — výber sa líši chuťou, prípravou a veľkosťou balenia.",
+      root: '.ajvencoffee-page',
+      shop: "https://www.ajvencoffee.cz/",
+      lockup: '<img src="/assets/ajvencoffee/logo.png" alt="AJVENCOFFEE">',
+      theme: { ink: '#163e43', brand: '#114e56', accent: '#568b8d', soft: '#eef5f4', paper: '#fffdf9' },
+      hero: '/assets/ajvencoffee/hero.jpg',
+      figures: commonFigures()
     }
   };
 

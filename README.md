@@ -191,3 +191,7 @@ z katalógu (`coffee-api-route.js`, `localReply` v `cosmetics.js`).
 [Zmeny po ukážkach, registre, zdroje produktov a QA](REWORK-2026-10-10.md). Aktuálne doplnené fakty sú v `research/catalogue-expansion-2026-10-10.json`; predchádzajúce rozšírenia zostávajú v audite z 9. 10.
 
 - **Don Franko** — `/donfranko/`; 15 dostupných káv, reálne fotografie vo všetkých štyroch krokoch aj v Ponuke; IČO 07966644, ARES 120: 6–9. Zdroje v `ZDROJE.md`.
+
+- **AJVENCOFFEE** — `/ajvencoffee/`; 10 dostupných káv, reálne fotografie vo všetkých štyroch krokoch aj v Ponuke; IČO 62225383, ARES 110: 1–5. Zdroje v `ZDROJE.md`.
+
+AJVENCOFFEE QA 11. 10. 2026: desktop 1440 × 900, mobil 390 × 844 a 360 × 800; štyri kroky, obe chuťové cesty, celá Ponuka, vyhľadávanie, ceny/balenia/odkazy, API aj výpadok API, všetky fotografie a logo pri každej odpovedi. Screenshoty vizuálne skontrolované; PASS. `research/qa-new-demos-2026-10-10/ajvencoffee-results.json`.

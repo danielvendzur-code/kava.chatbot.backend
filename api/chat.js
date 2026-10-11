@@ -352,6 +352,28 @@ const DEMOS = {
       decaf: "Bez kofeínu je v ponuke Bezkofeinová káva. Chuťový profil podľa e-shopu: jemná čokoláda, nízka acidita.",
       default: "Ak chcete začať istotou, dobrým smerom je PERU - SHB Gr.1 ep ORGANIC. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
     }
+  },
+  ajvencoffee: {
+    brand: "AJVENCOFFEE", web: "https://www.ajvencoffee.cz/",
+    products: [
+      "COLOMBIA - Medellin Supremo – broskyne, kakao, jazmínový čaj; Espresso a filter",
+      "BEZKOFEINOVÁ | Honduras - Excelso – čokoláda, oriešky, marhule; Espresso a filter; bez kofeínu",
+      "(Legendí) PERU 🦙 LOS SANTOS - Double fermentation – mliečna čokoláda, červené jablko, med; Espresso a mliečne nápoje",
+      "KRÁSENSKÝ NEKYSELO – čokoláda, pečené jablká, vanilka; Espresso a mliečne nápoje",
+      "TANZANIA KILIMANJARO - DARK ROAST – čokoláda, karamel, sušené ovocie; Espresso a mliečne nápoje",
+      "🐘INDIA MALABAR - Monsooned – nugát, oriešky, zemitosť; Espresso a mliečne nápoje",
+      "BRASILIA - Monte Carmelo – čokoláda, smotana, mandarínka; Espresso a filter",
+      "TANZANIA KILIMANJARO - SVĚTLÝ ROAST – pomarančová kôra, slivky, škorica; Espresso a filter",
+      "HOUSE BLEND – čokoláda, smotana, mandle; Espresso a automat",
+      "HONDURAS - Finca Azul Esmeralda – mliečna čokoláda, jemná kyselinka; Výber podľa prípravy a chuti"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod HOUSE BLEND. Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      milk: "Do mlieka sa hodí BEZKOFEINOVÁ | Honduras - Excelso. Chuťový profil podľa e-shopu: čokoláda, oriešky, marhule.",
+      filter: "Na filter siahnite po COLOMBIA - Medellin Supremo. Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      decaf: "Bez kofeínu je v ponuke BEZKOFEINOVÁ | Honduras - Excelso. Chuťový profil podľa e-shopu: čokoláda, oriešky, marhule.",
+      default: "Ak chcete začať istotou, dobrým smerom je HOUSE BLEND. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
   }
 };
 

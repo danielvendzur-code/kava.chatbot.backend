@@ -33,3 +33,25 @@ IČO **07966644**, vlastník **Barbora Franková a Jan Franek**, ARES 120: 6–9
 | Směs ITALSKÉ ESPRESSO | 250 g | 180 Kč | [e-shop](https://www.donfranko.cz/espresso-smesi/italske-espresso-smes/) |
 
 QA Don Franko: desktop 1440 × 900 a mobil 390 × 844 / 360 × 800 — PASS. Vizuálne skontrolované výbery, výsledok, celá ponuka a chat; všetky oficiálne obrázky sa načítajú. API vracia presnú gramáž, cenu a odkaz aj bez modelového kľúča. Protokol: `research/qa-new-demos-2026-10-10/donfranko.json`.
+
+
+## AJVENCOFFEE — 10. 10. 2026
+
+IČO **62225383**, vlastník **Ivan Masařík**, ARES 110: 1–5. [Primárny ARES RES](https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty-res/62225383). Vlastný e-shop https://www.ajvencoffee.cz/. Doména, IČO a vlastníci skontrolovaní oproti všetkým existujúcim ukážkam: bez duplicity.
+
+10 dostupných kávových profilov, presná cena pre uvedené najmenšie dostupné balenie. Chuťové poznámky sú z oficiálneho popisu; bodové váhy a odporúčania prípravy sú kurátorské. Celá zaradená ponuka má samostatnú záložku. Fotky výberu a produktov sú lokálne kópie oficiálnych fotografií, iba orez vonkajšieho bieleho okraja a rámovanie bez deformácie. Čitateľný symbol pri každej správe je výrez oficiálneho loga. Bez zdravotných tvrdení a predstierania vloženia do skutočného košíka. Podklady a SHA-256: `research/new-demos-2026-10-10.json`.
+
+| Káva | Balenie | Cena | Zdroj |
+|---|---|---|---|
+| COLOMBIA - Medellin Supremo | 250 g | 325 Kč | [e-shop](https://www.ajvencoffee.cz/colombia-medellin-supremo/) |
+| BEZKOFEINOVÁ | Honduras - Excelso | 250 g | 320 Kč | [e-shop](https://www.ajvencoffee.cz/honduras-decaf/) |
+| (Legendí) PERU 🦙 LOS SANTOS - Double fermentation | 250 g | 335 Kč | [e-shop](https://www.ajvencoffee.cz/peru-los-santos-double-fermentation/) |
+| KRÁSENSKÝ NEKYSELO | 250 g | 285 Kč | [e-shop](https://www.ajvencoffee.cz/krasensky-nekyselo/) |
+| TANZANIA KILIMANJARO - DARK ROAST | 250 g | 290 Kč | [e-shop](https://www.ajvencoffee.cz/tanzania-kilimanjaro-dark-roast/) |
+| 🐘INDIA MALABAR - Monsooned | 250 g | 320 Kč | [e-shop](https://www.ajvencoffee.cz/india-malabar-monsooned/) |
+| BRASILIA - Monte Carmelo | 250 g | 245 Kč | [e-shop](https://www.ajvencoffee.cz/brasilia-monte-carmelo/) |
+| TANZANIA KILIMANJARO - SVĚTLÝ ROAST | 250 g | 270 Kč | [e-shop](https://www.ajvencoffee.cz/tanzania-kilimanjaro-svetly-roast/) |
+| HOUSE BLEND | 250 g | 230 Kč | [e-shop](https://www.ajvencoffee.cz/house-blend/) |
+| HONDURAS - Finca Azul Esmeralda | 250 g | 255 Kč | [e-shop](https://www.ajvencoffee.cz/honduras-finca-azul-esmeralda/) |
+
+AJVENCOFFEE QA 11. 10. 2026: desktop 1440 × 900, mobil 390 × 844 a 360 × 800; štyri kroky, obe chuťové cesty, celá Ponuka, vyhľadávanie, ceny/balenia/odkazy, API aj výpadok API, všetky fotografie a logo pri každej odpovedi. Screenshoty vizuálne skontrolované; PASS. `research/qa-new-demos-2026-10-10/ajvencoffee-results.json`.

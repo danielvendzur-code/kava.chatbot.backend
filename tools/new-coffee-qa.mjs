@@ -1,9 +1,9 @@
 import {chromium} from '@playwright/test';
 import fs from 'node:fs/promises';import assert from 'node:assert/strict';
 const [out,...slugs]=process.argv.slice(2);await fs.mkdir(out,{recursive:true});const base=process.env.QA_BASE||'http://127.0.0.1:8800';
-const browser=await chromium.launch({executablePath:process.env.CHROMIUM||'/tmp/chromium',args:['--no-sandbox']});const results=[];
+const newBrowser=()=>chromium.launch({executablePath:process.env.CHROMIUM||'/tmp/chromium',args:['--no-sandbox','--single-process','--no-zygote']});const results=[];
 for(const slug of slugs)for(const vp of [{name:'desktop',width:1440,height:900},{name:'mobile',width:390,height:844},{name:'small',width:360,height:800}]){
- const page=await browser.newPage({viewport:vp});const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400&&!r.url().includes('/api/'))errors.push(r.status()+' '+r.url());});
+ const browser=await newBrowser();const page=await browser.newPage({viewport:vp});const errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400&&!r.url().includes('/api/'))errors.push(r.status()+' '+r.url());});
  // Exercise deterministic product fallback when the API is unavailable.
  await page.route('**/api/**',async route=>{const req=route.request();if(req.method()!=='POST')return route.fulfill({status:405,body:'{}'});const body=req.postDataJSON();assert.equal(body.demoId||body.demo,slug);await route.fulfill({status:503,contentType:'application/json',body:'{"error":"QA fallback"}'});});
  const shot=async n=>page.screenshot({animations:'disabled',path:`${out}/${slug}-${vp.name}-${n}.png`});
@@ -32,6 +32,6 @@ for(const slug of slugs)for(const vp of [{name:'desktop',width:1440,height:900},
   const logos=await page.locator('.msg:not(.msg--user) .cx-company-message-logo').evaluateAll(a=>a.map(x=>({url:getComputedStyle(x).getPropertyValue('--cx-company-message-art'),w:x.getBoundingClientRect().width})));assert.equal(logos.length,await page.locator('.msg:not(.msg--user)').count());assert.ok(logos.every(x=>x.url.includes('/assets/'+slug+'/symbol.png')&&x.w>=24));await shot('chat');
   assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);assert.deepEqual(errors,[]);results.push({slug,viewport:vp.name,status:'PASS',products:products.length});
  }catch(e){await shot('FAIL');results.push({slug,viewport:vp.name,status:'FAIL',error:String(e),errors});console.log(slug,vp.name,String(e));}
- await page.close();
+ await page.close();await browser.close();
 }
-await browser.close();await fs.writeFile(out+'/results.json',JSON.stringify(results,null,2));console.log(JSON.stringify(results));if(results.some(r=>r.status==='FAIL'))process.exitCode=1;
+await fs.writeFile(out+'/results.json',JSON.stringify(results,null,2));console.log(JSON.stringify(results));if(results.some(r=>r.status==='FAIL'))process.exitCode=1;

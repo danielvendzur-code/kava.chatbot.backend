@@ -1,0 +1,6 @@
+/* AJVENCOFFEE brand tokens on the shared Jolka system. */
+:root{--ink:#163e43;--ink-2:#114e56;--ink-3:#114e56;--paper:#fffdf9;--surface:#fff;--surface-2:#eef5f4;--line:#d9e6e4;--line-strong:#d9e6e4;--kraft:#568b8d;--kraft-deep:#568b8d;--kraft-tint:#eef5f4;--text:#163e43;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.ajvencoffee-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.ajvencoffee-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.ajvencoffee-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.ajvencoffee-clean .launcher__button img{width:54px!important;height:54px!important}
