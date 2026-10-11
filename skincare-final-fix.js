@@ -99,9 +99,11 @@
     return total;
   };
   const rankedProducts = (selected) => {
-    const matchingForm = selected.texture && selected.texture !== 'any' ? brand.products.filter((product) => product.tags.includes(selected.texture)) : brand.products;
-    const formPool = matchingForm.length ? matchingForm : brand.products;
-    const matchingSkin = formPool.filter((product) => product.tags.includes(selected.skin));
+    const needs = brand.products.filter(product => product.tags.includes(selected.skin) || product.tags.includes(selected.goal));
+    const needsPool = needs.length ? needs : brand.products;
+    const matchingForm = selected.texture && selected.texture !== 'any' ? needsPool.filter(product => product.tags.includes(selected.texture)) : needsPool;
+    const formPool = matchingForm.length ? matchingForm : needsPool;
+    const matchingSkin = formPool.filter(product => product.tags.includes(selected.skin));
     const pool = matchingSkin.length ? matchingSkin : formPool;
     return pool.map((product, index) => ({ product, index, score: recommendationScore(product, selected) }))
       .sort((a, b) => b.score - a.score || a.index - b.index);
@@ -167,6 +169,7 @@
       .filter((value) => value && value !== 'any' && product.tags.includes(value))
       .map((value) => ANSWER_LABELS[value])
       .filter(Boolean);
+    if (why && matched.length) why.textContent = `Zodpovedá vašim voľbám: ${matched.join(', ')}. ${product.reason}`;
     let tags = resultRoot.querySelector('.cx-product-tags');
     if (matched.length) {
       if (!tags) {
