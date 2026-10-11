@@ -11,9 +11,9 @@ body #cx-widget#cx-widget .cx-option-photo--bottles img {
   position:static!important; inset:auto!important; width:calc((100% - 6px)/var(--bottle-count))!important;
   height:100%!important; min-width:0!important; max-width:none!important;
   object-fit:contain!important; object-position:center!important; border-radius:0!important;
-  mix-blend-mode:multiply;
+  mix-blend-mode:multiply; transform:scale(1.6);
 }
 .cx-wine-gift-mark { position:absolute; top:10px; right:10px; width:25px; height:25px; color:var(--cx-accent); }
-.cx-catalogue-question-mark { display:flex; align-items:center; justify-content:center; width:100%; height:120px; background:var(--cx-soft,#f5f3ef); color:var(--cx-brand); }
+body #cx-widget#cx-widget .cx-catalogue-question-mark { display:flex!important; align-items:center; justify-content:center; width:100%; height:120px; background:var(--cx-soft,#f5f3ef); color:var(--cx-brand); }
 .cx-catalogue-question-mark svg { width:54px; height:54px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
 @media(max-width:480px) { .cx-catalogue-question-mark {height:105px} }
