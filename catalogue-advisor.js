@@ -47,7 +47,16 @@
   }
   function legacy() {panel.hidden=true;widget.classList.remove('cx-catalogue-active');}
   const representative=(category,kind)=>products.find(p=>(!category||p.category===category)&&(!kind||p.kind===kind))||products[0];
-  const option=(value,title,photo,note='')=>`<button type="button" class="cx-catalogue-option" data-choice="${esc(value)}"><img src="${esc(photo)}" alt="" width="900" height="1000"><span><b>${esc(title)}</b>${note?`<small>${esc(note)}</small>`:''}</span><i aria-hidden="true">↗</i></button>`;
+  const questionVisual=(value,photo)=>{
+    if(state.step!==2&&state.step!==3)return `<img src="${esc(photo)}" alt="" width="900" height="1000">`;
+    const drawing=state.step===2
+      ? '<circle cx="23" cy="24" r="12"/><path d="M22 18v12m4-11h-6m6 5h-6m14-9a12 12 0 0 1 0 18"/>'
+      : value==='name' ? '<path d="M9 33l7-18 7 18m-11-6h8M29 15h12L29 33h12"/>'
+      : value==='small'||value==='large' ? '<rect x="10" y="24" width="8" height="12" rx="2"/><rect x="24" y="16" width="11" height="20" rx="2"/><path d="M12 24v-4h4v4m11-8v-5h5v5"/>'
+      : '<path d="M10 34V27m10 7V22m10 12V16m10 18V10M8 38h34"/>';
+    return `<span class="cx-catalogue-question-mark"><svg viewBox="0 0 48 48" aria-hidden="true">${drawing}</svg></span>`;
+  };
+  const option=(value,title,photo,note='')=>`<button type="button" class="cx-catalogue-option" data-choice="${esc(value)}">${questionVisual(value,photo)}<span><b>${esc(title)}</b>${note?`<small>${esc(note)}</small>`:''}</span><i aria-hidden="true">↗</i></button>`;
   function guide() {
     let title,options;
     if(state.step===0){title='Čo si chcete vybrať?';options=groups.map(([g,l])=>option(g,l,representative(g).photo,`${products.filter(p=>p.category===g).length} produktov`));}

@@ -71,6 +71,8 @@
     document.querySelectorAll('.cx-option[data-value]').forEach((button) => {
       const value = button.dataset.value;
       const holder = button.querySelector('.cx-option-photo');
+      // A routine count is expressed by the existing bottle illustration.
+      if (questionKeyByValue.get(value) === 'routine' && holder?.classList.contains('cx-option-photo--mark')) return;
       let src = photoFor(value);
       if(brand.catalogue&&usedPhotos.has(src))src=(brand.products.find(p=>p.tags?.includes(value)&&p.photo&&!usedPhotos.has(p.photo))||brand.products.find(p=>p.photo&&!usedPhotos.has(p.photo)))?.photo||src;
       usedPhotos.add(src);
