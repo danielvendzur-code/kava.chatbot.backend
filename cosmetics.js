@@ -90,7 +90,7 @@
   const INCLUDED = [
     ['Chatbot s vaším katalógom', 'Vaše produkty a ceny, nie všeobecné odpovede.'],
     ['Odpovedá aj o polnoci', 'Zloženie, typ pleti, rutina aj porovnanie dvoch produktov.'],
-    ['Výber cez štyri otázky', hasCatalogue?'Kategória, druh produktu, rozpočet a zoradenie — konkrétne produkty z vašej ponuky.':'Pleť, priorita, rutina a textúra — na konci jeden konkrétny produkt.'],
+    ['Výber cez štyri otázky', 'Potreby, priority a preferencie — na konci konkrétny produkt alebo zostava.'],
     ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.']
   ];
 
@@ -256,7 +256,7 @@
     stage.innerHTML = `
       <section class="cx-chat">
         <div class="cx-chat-messages" id="cx-messages">
-          ${!state.interacted ? `<button class="cx-advisor-entry" id="cx-advisor-entry" type="button"><span class="cx-advisor-entry-photo"><img src="${brand.hero}" alt="" referrerpolicy="no-referrer" onerror="this.closest('.cx-advisor-entry-photo')?.setAttribute('data-image-failed','true')"></span><div><small>VÝBER STAROSTLIVOSTI</small><b>Nájsť vhodný produkt</b><em>${hasCatalogue?'Kategória · produkt · rozpočet · zoradenie':'Pleť · priorita · rutina · textúra'}</em></div>${icons.arrow}</button>` : ''}
+          ${!state.interacted ? `<button class="cx-advisor-entry" id="cx-advisor-entry" type="button"><span class="cx-advisor-entry-photo"><img src="${brand.hero}" alt="" referrerpolicy="no-referrer" onerror="this.closest('.cx-advisor-entry-photo')?.setAttribute('data-image-failed','true')"></span><div><small>VÝBER STAROSTLIVOSTI</small><b>Nájsť vhodný produkt</b><em>Pleť · priorita · rutina · textúra</em></div>${icons.arrow}</button>` : ''}
           ${state.messages.map(messageMarkup).join('')}
         </div>
         <div class="cx-chat-bottom">

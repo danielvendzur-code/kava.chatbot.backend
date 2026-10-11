@@ -53,12 +53,13 @@
     const all = ranked(selected);
     // Respect the customer's chosen form for the primary product; other
     // forms can still complement a multi-step routine.
-    const matchingForm = selected.texture && selected.texture !== 'any'
-      ? all.filter(({ product }) => product.tags.includes(selected.texture)) : all;
-    const formPool = matchingForm.length ? matchingForm : all;
-    const matchingSkin = formPool.filter(({ product }) => product.tags.includes(selected.skin));
+    const needs = all.filter(({product}) => product.tags.includes(selected.skin) || product.tags.includes(selected.goal));
+    const needsPool = needs.length ? needs : all;
+    const matchingForm = selected.texture && selected.texture !== 'any' ? needsPool.filter(({product}) => product.tags.includes(selected.texture)) : needsPool;
+    const formPool = matchingForm.length ? matchingForm : needsPool;
+    const matchingSkin = formPool.filter(({product}) => product.tags.includes(selected.skin));
     const primary = matchingSkin.length ? matchingSkin : formPool;
-    const ordered = [...primary, ...all.filter((item) => !primary.includes(item))];
+    const ordered = [...primary, ...all.filter(item => !primary.includes(item))];
     const count = Math.min(desiredCount(selected.routine), ordered.length);
     if (!ordered.length) return [];
 
@@ -98,7 +99,7 @@
       badge.className = 'cx-step-badge';
       card.querySelector('.cx-product-copy')?.prepend(badge);
     }
-    badge.textContent = 'Krok 1';
+    badge.textContent = 'Hlavný produkt';
   };
 
   const routineCopy = (routine, count) => {
@@ -148,7 +149,7 @@
       <article class="cx-routine-card">
         <div class="cx-routine-card-photo"><img src="${esc(product.photo || brand.hero)}" alt="${esc(product.name)}" loading="lazy" referrerpolicy="no-referrer"></div>
         <div class="cx-routine-card-copy">
-          <small>Krok ${index + 2}</small>
+          <small>Doplnok ${index + 1}</small>
           <b>${esc(product.name)}</b>
           <span>${esc(product.price)}</span>
         </div>
