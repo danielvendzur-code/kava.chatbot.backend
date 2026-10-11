@@ -10,5 +10,5 @@ globalThis.CXCatalogueReplyCore = (catalogues,slug,text) => {
   const rows=catalogue.products.filter(p=>p.category===category&&(!p.isSample||/vzork|sample|mini/.test(q))).sort((a,b)=>rank(b)-rank(a));
   if(!rows.length)return 'V tejto kategórii ukážka nemá overený širší sortiment. Aktuálnu ponuku nájdete v oficiálnom e-shope značky.';
   if(/zlozen|ingredien|obsahuj/.test(q))return `Úplné zloženie nájdete pri ${rows[0].name}: ${rows[0].url}.`;
-  return rows.slice(0,2).map(p=>`${p.name}${p.volume?' ('+p.volume+')':''} — ${p.price}. ${p.url}`).join('\n\n')+'\n\nĎalšie produkty sú vo Výbere a v Ponuke. Aktuálnu dostupnosť potvrďte v e-shope.';
+  return rows.slice(0,2).map(p=>`${p.name}${p.volume?' ('+p.volume+')':''} — ${p.price}. ${p.url}`).join('\n\n')+'\n\nĎalšie produkty sú vo Výbere. Aktuálnu dostupnosť potvrďte v e-shope.';
 };

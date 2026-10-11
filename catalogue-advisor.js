@@ -15,9 +15,6 @@
   panel.className = 'cx-catalogue-stage'; panel.hidden = true;
   panel.setAttribute('aria-label','Výber z ponuky');
   widget.querySelector('#cx-stage').after(panel);
-  const browse = document.createElement('button');
-  browse.type='button'; browse.dataset.catalogueMode='browse';
-  browse.innerHTML=`<b>Ponuka <span>${products.length}</span></b>`;browse.setAttribute('aria-pressed','false');nav.append(browse);
   widget.classList.add('cx-has-catalogue');
   const state={mode:'guide',step:0,answers:{},query:'',category:'all'};
   const groups=Object.entries(labels).filter(([key])=>products.filter(p=>p.category===key).length>=4);
@@ -45,10 +42,10 @@
   };
   function mode(next) {
     state.mode=next; panel.hidden=false;widget.classList.add('cx-catalogue-active');
-    nav.querySelectorAll('button').forEach(b=>{const active=next==='browse'?b===browse:b.dataset.mode==='advisor';b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active));});
+    nav.querySelectorAll('button').forEach(b=>{const active=b.dataset.mode==='advisor';b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active));});
     render();
   }
-  function legacy() {panel.hidden=true;widget.classList.remove('cx-catalogue-active');browse.classList.remove('is-active');browse.setAttribute('aria-pressed','false');}
+  function legacy() {panel.hidden=true;widget.classList.remove('cx-catalogue-active');}
   const representative=(category,kind)=>products.find(p=>(!category||p.category===category)&&(!kind||p.kind===kind))||products[0];
   const option=(value,title,photo,note='')=>`<button type="button" class="cx-catalogue-option" data-choice="${esc(value)}"><img src="${esc(photo)}" alt="" width="900" height="1000"><span><b>${esc(title)}</b>${note?`<small>${esc(note)}</small>`:''}</span><i aria-hidden="true">↗</i></button>`;
   function guide() {
@@ -58,7 +55,7 @@
     if(state.step===2){title='Aký rozpočet vám vyhovuje?';const list=selected();const currency=list[0]?.currency||'EUR';const thresholds=currency==='CZK'?[300,600,1000]:[10,20,35];const viable=thresholds.filter(n=>list.some(p=>p.priceAmount<=n));options=viable.map(n=>option(String(n),`Do ${n} ${currency==='CZK'?'Kč':'€'}`,list.find(p=>p.priceAmount<=n).photo));options.push(option('','Bez obmedzenia',list[0].photo));}
     if(state.step===3){title='Ako chcete ponuku zoradiť?';const list=selected();options=[option('price','Od najnižšej ceny',list[0].photo),option('name','Podľa názvu',list[Math.min(1,list.length-1)].photo)];if(comparablePackages(list)){options.push(option('small','Od menšieho balenia',list[0].photo),option('large','Od väčšieho balenia',list.at(-1).photo));}}
     if(state.step>=4){const list=sorted();return `<div class="cx-catalogue-heading"><small>Váš výber · ${esc(labels[state.answers.category])}</small><h2>${list.length===1?'Tento produkt zodpovedá výberu':`${list.length} produktov podľa výberu`}</h2><p>Presné balenie, fotografia a cena z ponuky ${esc(brand.name)}.</p></div><div class="cx-catalogue-grid">${list.slice(0,6).map(card).join('')}</div>${list.length>6?`<button class="cx-catalogue-more" data-show-matches>Ukázať všetkých ${list.length} výsledkov</button>`:''}<button class="cx-catalogue-more" data-restart>Vybrať odznova</button>`;}
-    return `<div class="cx-catalogue-heading"><div class="cx-catalogue-progress">${[0,1,2,3].map(i=>`<span class="${i<=state.step?'is-on':''}"></span>`).join('')}<small>${state.step+1}/4</small></div><h2 tabindex="-1">${esc(title)}</h2><p>${state.step===0?'Vyberte oblasť, ktorá vás zaujíma.':'Vyberajte z konkrétnych produktov tejto značky.'}</p></div><div class="cx-catalogue-options">${options.join('')}</div><div class="cx-catalogue-footer">${state.step>0?'<button type="button" data-back>← Späť</button>':''}${state.step===1&&state.answers.category==='face'?'<button type="button" data-face-advisor>Vybrať podľa typu pleti →</button>':''}<button type="button" data-browse>Prejsť ponuku</button></div>`;
+    return `<div class="cx-catalogue-heading"><div class="cx-catalogue-progress">${[0,1,2,3].map(i=>`<span class="${i<=state.step?'is-on':''}"></span>`).join('')}<small>${state.step+1}/4</small></div><h2 tabindex="-1">${esc(title)}</h2><p>${state.step===0?'Vyberte oblasť, ktorá vás zaujíma.':'Vyberajte z konkrétnych produktov tejto značky.'}</p></div><div class="cx-catalogue-options">${options.join('')}</div><div class="cx-catalogue-footer">${state.step>0?'<button type="button" data-back>← Späť</button>':''}${state.step===1&&state.answers.category==='face'?'<button type="button" data-face-advisor>Vybrať podľa typu pleti →</button>':''}</div>`;
   }
   function renderCards(){
     const list=products.filter(p=>(state.category==='all'||p.category===state.category)&&(!state.query||norm(p.name+' '+p.kind+' '+p.volume).includes(norm(state.query))));
@@ -77,13 +74,12 @@
     if(!isWine&&(b.dataset.open==='advisor'||b.id==='cx-teaser'))queueMicrotask(()=>mode('guide'));
     if(b.dataset.mode==='chat'){legacy();return;}
     if(b.dataset.mode==='advisor'&&isWine){legacy();return;}
-    if((b.dataset.mode==='advisor'&&!allowLegacyOnce)||b===browse){event.preventDefault();event.stopImmediatePropagation();mode(b===browse?'browse':'guide');return;}
+    if(b.dataset.mode==='advisor'&&!allowLegacyOnce){event.preventDefault();event.stopImmediatePropagation();mode('guide');return;}
     if(b.id==='cx-reset'&&widget.classList.contains('cx-catalogue-active')){event.preventDefault();event.stopImmediatePropagation();state.step=0;state.answers={};state.query='';state.category='all';render();return;}
     if(b.closest('.cx-catalogue-stage')){
       if(b.hasAttribute('data-choice')){const keys=['category','kind','budget','order'];state.answers[keys[state.step]]=b.dataset.choice;state.step++;render();}
       if(b.hasAttribute('data-back')){state.step--;const keys=['category','kind','budget','order'];keys.slice(state.step).forEach(k=>delete state.answers[k]);render();}
       if(b.hasAttribute('data-restart')){state.step=0;state.answers={};mode('guide');}
-      if(b.hasAttribute('data-browse'))mode('browse');
       if(b.hasAttribute('data-show-matches')){panel.querySelector('.cx-catalogue-grid').innerHTML=sorted().map(card).join('');b.remove();}
       if(b.hasAttribute('data-filter')){state.category=b.dataset.filter;panel.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));renderCards();}
       if(b.hasAttribute('data-face-advisor')){legacy();allowLegacyOnce=true;nav.querySelector('[data-mode="advisor"]').click();allowLegacyOnce=false;}

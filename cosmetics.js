@@ -58,7 +58,7 @@
   const state = {
     open:false, mode:'chat', step:0, answers:{}, result:null, alternative:null,
     interacted:false, busy:false, transitioning:false,
-    messages:[{role:'assistant',text:hasCatalogue?'Dobrý deň. Vyberajte z ponuky '+brand.name+'. Napíšte, aký produkt hľadáte, alebo otvorte Výber či Ponuku.':'Dobrý deň. Napíšte, čo od starostlivosti očakávate alebo ako sa vaša pleť správa. Pomôžem vám zúžiť výber.'}]
+    messages:[{role:'assistant',text:hasCatalogue?'Dobrý deň. Vyberajte z ponuky '+brand.name+'. Napíšte, aký produkt hľadáte, alebo otvorte Výber.':'Dobrý deň. Napíšte, čo od starostlivosti očakávate alebo ako sa vaša pleť správa. Pomôžem vám zúžiť výber.'}]
   };
 
   // What the advisor answers, how long it takes, what comes out of it. This is

@@ -7,5 +7,5 @@ export function verifiedCoffeeReply(slug,text){
  const rows=/bez\s*kof|bezkof|decaf/.test(q)?products.filter(p=>p.decaf):products.filter(p=>!p.decaf);
  const score=p=>/filter|v60|prekvap/.test(q)?p.prep.filter:/automat/.test(q)?p.prep.automat:/mliek|cappuc|latte/.test(q)?p.drink.milk:/ovoc|sviez/.test(q)?p.taste.fruity:/coko|orech|slad/.test(q)?p.taste.chocolate:/kysl|acidit/.test(q)?3-p.acidity:1;
  const selected=rows.slice().sort((a,b)=>score(b)-score(a)).slice(0,2);
- return selected.map(p=>`${p.name} (${p.priceUnit}) — ${p.price}. Chuť: ${p.notes.join(', ')}. ${p.url}`).join('\n\n')+'\n\nCelú zaradenú ponuku nájdete v záložke Ponuka. Dostupnosť potvrďte v e-shope.';
+ return selected.map(p=>`${p.name} (${p.priceUnit}) — ${p.price}. Chuť: ${p.notes.join(', ')}. ${p.url}`).join('\n\n')+'\n\nĎalšie kávy porovnáte vo Výbere kávy. Dostupnosť potvrďte v e-shope.';
 }
