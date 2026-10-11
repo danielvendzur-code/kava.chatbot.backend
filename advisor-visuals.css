@@ -27,3 +27,5 @@ body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-option-copy {paddin
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-catalogue-option {padding:0!important;overflow:hidden;}
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-catalogue-option > img {width:100%!important;height:auto!important;aspect-ratio:3/2;object-fit:cover!important;}
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-catalogue-option > span:not(.cx-catalogue-question-mark) {padding:10px!important;}
+
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-options {height:auto!important;min-height:0!important;grid-template-rows:none!important;grid-auto-rows:max-content!important;align-content:start!important;}
