@@ -11,9 +11,19 @@ body #cx-widget#cx-widget .cx-option-photo--bottles img {
   position:static!important; inset:auto!important; width:calc((100% - 6px)/var(--bottle-count))!important;
   height:100%!important; min-width:0!important; max-width:none!important;
   object-fit:contain!important; object-position:center!important; border-radius:0!important;
-  mix-blend-mode:multiply; transform:scale(1.6);
+  mix-blend-mode:multiply;
 }
 .cx-wine-gift-mark { position:absolute; top:10px; right:10px; width:25px; height:25px; color:var(--cx-accent); }
 body #cx-widget#cx-widget .cx-catalogue-question-mark { display:flex!important; align-items:center; justify-content:center; width:100%; height:120px; background:var(--cx-soft,#f5f3ef); color:var(--cx-brand); }
 .cx-catalogue-question-mark svg { width:54px; height:54px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
 @media(max-width:480px) { .cx-catalogue-question-mark {height:105px} }
+
+/* Full-bleed choice images and clean owner footer. */
+.cx-owner-foot > span, .mcb-foot > span { display:none!important; }
+body #cx-widget#cx-widget .cx-option {padding:0!important; overflow:hidden;}
+body #cx-widget#cx-widget .cx-option-photo:not(.cx-option-photo--mark) {display:block!important;width:100%!important;height:auto!important;aspect-ratio:3/2;padding:0!important;border-radius:0!important;}
+body #cx-widget#cx-widget .cx-option-photo:not(.cx-option-photo--mark) img {position:static!important;inset:auto!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important;transform:none!important;mix-blend-mode:normal!important;border-radius:0!important;}
+body #cx-widget#cx-widget .cx-option-copy {padding:10px!important;}
+body #cx-widget#cx-widget .cx-catalogue-option {padding:0!important;overflow:hidden;}
+body #cx-widget#cx-widget .cx-catalogue-option > img {width:100%!important;height:auto!important;aspect-ratio:3/2;object-fit:cover!important;}
+body #cx-widget#cx-widget .cx-catalogue-option > span:not(.cx-catalogue-question-mark) {padding:10px!important;}
