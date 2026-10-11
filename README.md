@@ -189,3 +189,5 @@ z katalógu (`coffee-api-route.js`, `localReply` v `cosmetics.js`).
 ## Dokončenie katalógov 10. 10. 2026
 
 [Zmeny po ukážkach, registre, zdroje produktov a QA](REWORK-2026-10-10.md). Aktuálne doplnené fakty sú v `research/catalogue-expansion-2026-10-10.json`; predchádzajúce rozšírenia zostávajú v audite z 9. 10.
+
+- **Don Franko** — `/donfranko/`; 15 dostupných káv, reálne fotografie vo všetkých štyroch krokoch aj v Ponuke; IČO 07966644, ARES 120: 6–9. Zdroje v `ZDROJE.md`.

@@ -1,0 +1,6 @@
+/* Don Franko brand tokens on the shared Jolka system. */
+:root{--ink:#272321;--ink-2:#272321;--ink-3:#272321;--paper:#fffdfa;--surface:#fff;--surface-2:#f5f0e8;--line:#e7dfd5;--line-strong:#e7dfd5;--kraft:#96784e;--kraft-deep:#96784e;--kraft-tint:#f5f0e8;--text:#272321;--text-2:#5f5a55;--text-3:#8a837c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.donfranko-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.donfranko-clean .widget__brand>img{width:64px!important;min-width:64px!important;max-width:64px!important;height:40px!important}
+body.donfranko-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.donfranko-clean .launcher__button img{width:54px!important;height:54px!important}

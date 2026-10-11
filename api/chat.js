@@ -1,3 +1,4 @@
+import {verifiedCoffeeReply} from './verified-coffee-reply.js';
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const MODEL = process.env.CHAT_MODEL || 'claude-haiku-4-5';
 
@@ -324,6 +325,33 @@ const DEMOS = {
       decaf: "Bez kofeínu je v ponuke Decaf na filter – Kolumbia Popayán. Bezkofeínová Kolumbia z oblasti Popayán, pražená na filter — bez kofeínu a bez toho, aby chuť ostala niekde vzadu.",
       default: "Ak chcete začať istotou, dobrým smerom je Espresso káva Jánošík 90/10. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
     }
+  },
+  donfranko: {
+    brand: "Don Franko", web: "https://www.donfranko.cz/",
+    products: [
+      "BRAZÍLIE - Santos – nízka acidita, bohatá pena; Espresso a filter",
+      "PERU - SHB Gr.1 ep ORGANIC – intenzívna chuť, vyvážený profil; Espresso a mliečne nápoje",
+      "KOLUMBIE - Supremo Medellin – citrusy, čokoláda, karamel; Výber podľa prípravy a chuti",
+      "KEŇA - Mount Kenya Selection AA+ – ovocie, karamel, čokoláda; Výber podľa prípravy a chuti",
+      "KOSTARIKA - Las Trojas – slivky, ostružiny, čierne ríbezle; Espresso a filter",
+      "HONDURAS - Occidente Las Mercedes – karamel, horká čokoláda, kávovina; Výber podľa prípravy a chuti",
+      "GUATEMALA - Huehuetenango – horká čokoláda, karamel, ostružiny; Espresso a filter",
+      "Kostarika Elizondo - ANAEROBIC NATURAL – ovocný profil, aromatická chuť; Espresso a filter",
+      "MEXIKO - Esmeralda – karamel, pomaranč, minerálna dochuť; Espresso a mliečne nápoje",
+      "Finca la Colombia - DOUBLE FERMENTATION – maliny, limetky, biela čokoláda; Espresso a filter",
+      "Směs DON FRANKO – vyvážená chuť, zmes troch arabík; Výber podľa prípravy a chuti",
+      "Bezkofeinová káva – jemná čokoláda, nízka acidita; Výber podľa prípravy a chuti; bez kofeínu",
+      "Timana Huila Natural – tmavá čokoláda, javorový sirup, červený pomaranč; Espresso a mliečne nápoje",
+      "Směs ESPRESSO 80 – horká čokoláda, hutná pena; Espresso a automat",
+      "Směs ITALSKÉ ESPRESSO – čokoláda, kávovina, horkosť; Espresso a automat"
+    ],
+    fallback: {
+      automatic: "Do automatu je dobrý východiskový bod PERU - SHB Gr.1 ep ORGANIC. Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      milk: "Do mlieka sa hodí PERU - SHB Gr.1 ep ORGANIC. Chuťový profil podľa e-shopu: intenzívna chuť, vyvážený profil.",
+      filter: "Na filter siahnite po KOSTARIKA - Las Trojas. Acidita opisuje chuťovú sviežosť, nie kvalitu kávy.",
+      decaf: "Bez kofeínu je v ponuke Bezkofeinová káva. Chuťový profil podľa e-shopu: jemná čokoláda, nízka acidita.",
+      default: "Ak chcete začať istotou, dobrým smerom je PERU - SHB Gr.1 ep ORGANIC. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+    }
   }
 };
 
@@ -365,6 +393,7 @@ export default async function handler(req,res){
   while(messages.at(-1)?.role==='assistant')messages.pop();
   const latest=messages.filter((m)=>m.role==='user').at(-1)?.content||'';
   if(!latest) return res.status(400).json({error:'Missing user message'});
+  const verified=verifiedCoffeeReply(String(body.demoId||''),latest);if(verified)return res.status(200).json({reply:verified,fallback:true});
   const fallback=()=>res.status(200).json({reply:deterministicReply(demo,latest),fallback:true});
 
   if(!ANTHROPIC_API_KEY) return fallback();

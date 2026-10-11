@@ -278,6 +278,18 @@
       theme: { ink: '#1d1a17', brand: '#1d1a17', accent: '#5f7d21', soft: '#eef3e3', paper: '#fdfdfa' },
       hero: '/assets/kavoholik/hero.jpg',
       figures: commonFigures()
+    },
+
+    donfranko: {
+      name: "Don Franko",
+      place: "Don Franko · Nový Jičín",
+      note: "Jednodruhové kávy, espresso zmesi aj bezkofeínová káva — výber sa líši chuťou, prípravou a veľkosťou balenia.",
+      root: '.donfranko-page',
+      shop: "https://www.donfranko.cz/",
+      lockup: '<img src="/assets/donfranko/logo.png" alt="Don Franko">',
+      theme: { ink: '#272321', brand: '#272321', accent: '#96784e', soft: '#f5f0e8', paper: '#fffdfa' },
+      hero: '/assets/donfranko/hero.jpg',
+      figures: commonFigures()
     }
   };
 
@@ -481,7 +493,7 @@
 
     const refresh = document.createElement('link');
     refresh.rel = 'stylesheet';
-    refresh.href = '/coffee-refresh.css?v=d3fe06bc';
+    refresh.href = '/coffee-refresh.css?v=e89b0ab8';
     refresh.dataset.mcbRefreshStyle = 'true';
     refresh.dataset.mcOrder = '95';
     document.body.appendChild(refresh);

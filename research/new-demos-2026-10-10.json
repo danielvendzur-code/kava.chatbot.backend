@@ -1,0 +1,687 @@
+{
+  "companies": {
+    "donfranko": {
+      "name": "Don Franko",
+      "ico": "07966644",
+      "size": "ARES 120: 6–9",
+      "owner": "Barbora Franková a Jan Franek",
+      "website": "https://www.donfranko.cz/",
+      "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+      "exclusions": [
+        {
+          "name": "Balíček Degustátor",
+          "url": "https://www.donfranko.cz/specialni-nabidka/balicek-degustator/",
+          "reason": "Darčeková sada alebo doplnok bez overeného samostatného kávového balenia."
+        },
+        {
+          "name": "Dárkový poukaz 500 Kč",
+          "url": "https://www.donfranko.cz/specialni-nabidka/darkovy-poukaz-500-kc/",
+          "reason": "Darčeková sada alebo doplnok bez overeného samostatného kávového balenia."
+        },
+        {
+          "name": "Dárkový poukaz 1000 Kč",
+          "url": "https://www.donfranko.cz/specialni-nabidka/darkovy-poukaz-1000-kc/",
+          "reason": "Darčeková sada alebo doplnok bez overeného samostatného kávového balenia."
+        },
+        {
+          "name": "Dárkový poukaz 2000 Kč",
+          "url": "https://www.donfranko.cz/specialni-nabidka/darkovy-poukaz-2000-kc/",
+          "reason": "Darčeková sada alebo doplnok bez overeného samostatného kávového balenia."
+        },
+        {
+          "name": "Cascara",
+          "reason": "Nie je pražená zrnková káva; do rovnakého espresso poradcu nepatrí."
+        }
+      ]
+    }
+  },
+  "catalogues": {
+    "donfranko": [
+      {
+        "id": "57-525-250g",
+        "sourceId": "57/525",
+        "name": "BRAZÍLIE - Santos",
+        "originalName": "BRAZÍLIE - Santos",
+        "url": "https://www.donfranko.cz/kava-arabica/brazilie-santos/",
+        "priceAmount": 190.0,
+        "currency": "CZK",
+        "price": "190 Kč",
+        "volume": "250 g",
+        "variantLabel": "250 g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/kava-arabica/brazilie-santos/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/57-1_brazil-santos-mleta-i-zrnkova-2022.png?ff=1&x=677&y=507&q=85&ts=620114aa&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/57-1_brazil-santos-mleta-i-zrnkova-2022.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "f958047f41df8186f4d946bf616cfa64fa75d2dfa72c46867d5abb4eed186341",
+          "assetSha256": "2f8b79764e0ba3bba9076f4148d9ab3aa51b524045c0ac10fadff43f32a1c7d4"
+        },
+        "photo": "/assets/donfranko/57-525-250g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/kava-arabica/brazilie-santos/"
+      },
+      {
+        "id": "07-250-250g",
+        "sourceId": "07/250",
+        "name": "PERU - SHB Gr.1 ep ORGANIC",
+        "originalName": "PERU - SHB Gr.1 ep ORGANIC",
+        "url": "https://www.donfranko.cz/kava-arabica/peru-shb-gr-1-ep-organic/",
+        "priceAmount": 190.0,
+        "currency": "CZK",
+        "price": "190 Kč",
+        "volume": "250 g",
+        "variantLabel": "250 g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/kava-arabica/peru-shb-gr-1-ep-organic/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/84_peru-2022.png?ff=1&x=677&y=507&q=85&ts=62011949&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/84_peru-2022.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "e1b1bb58497521587fc9e8214315e4e0b26c689a9333e895f03405ce096c0962",
+          "assetSha256": "cac4ea612034139dd9c89e1031b4dd3fc1712194bda7f592f53132ee4e1da3e6"
+        },
+        "photo": "/assets/donfranko/07-250-250g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/kava-arabica/peru-shb-gr-1-ep-organic/"
+      },
+      {
+        "id": "72-525-250g",
+        "sourceId": "72/525",
+        "name": "KOLUMBIE - Supremo Medellin",
+        "originalName": "KOLUMBIE - Supremo Medellin",
+        "url": "https://www.donfranko.cz/kava-arabica/kolumbie-supremo-medellin/",
+        "priceAmount": 190.0,
+        "currency": "CZK",
+        "price": "190 Kč",
+        "volume": "250 g",
+        "variantLabel": "250 g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/kava-arabica/kolumbie-supremo-medellin/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/72_kolumbie-supremo-2022.png?ff=1&x=677&y=507&q=85&ts=6201183d&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/72_kolumbie-supremo-2022.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "e1d422dcca52a227345163604b30e3f6536a7e5a272e81bb9a2f064e7f481e79",
+          "assetSha256": "0d6c20cedffc4824a878732fb7306e099f9dd204f5a6b5fdcda1e316712edde4"
+        },
+        "photo": "/assets/donfranko/72-525-250g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/kava-arabica/kolumbie-supremo-medellin/"
+      },
+      {
+        "id": "102-525-250g",
+        "sourceId": "102/525",
+        "name": "KEŇA - Mount Kenya Selection AA+",
+        "originalName": "KEŇA - Mount Kenya Selection AA+",
+        "url": "https://www.donfranko.cz/kava-arabica/kena-aa-plus-mount-kenya-selection/",
+        "priceAmount": 230.0,
+        "currency": "CZK",
+        "price": "230 Kč",
+        "volume": "250 g",
+        "variantLabel": "250 g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/kava-arabica/kena-aa-plus-mount-kenya-selection/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/102_kenya-aa-plus-2022.png?ff=1&x=677&y=507&q=85&ts=620116f0&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/102_kenya-aa-plus-2022.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "cb5b85df0f805ec1480013679d0900675b227c9c17441f17b5e3b864a86fa878",
+          "assetSha256": "956611b66731451e5588585bfb051dfbb4c568a00736f72c44aaa726029fbb4d"
+        },
+        "photo": "/assets/donfranko/102-525-250g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/kava-arabica/kena-aa-plus-mount-kenya-selection/"
+      },
+      {
+        "id": "06-250-250g",
+        "sourceId": "06/250",
+        "name": "KOSTARIKA - Las Trojas",
+        "originalName": "KOSTARIKA - Las Trojas",
+        "url": "https://www.donfranko.cz/kava-arabica/kostarika-las-trojas/",
+        "priceAmount": 230.0,
+        "currency": "CZK",
+        "price": "230 Kč",
+        "volume": "250 g",
+        "variantLabel": "250 g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/kava-arabica/kostarika-las-trojas/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/78_kostarika-2022.png?ff=1&x=677&y=507&q=85&ts=62011887&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/78_kostarika-2022.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "9e8fd207525680edf5f8570a8524571210f6638cd1d99ebc8108e14a0ab0d2ab",
+          "assetSha256": "2c0488c06c68af0a7becfe0df8431e0ddaac67e4760e257b7e4a3535191cb6cb"
+        },
+        "photo": "/assets/donfranko/06-250-250g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/kava-arabica/kostarika-las-trojas/"
+      },
+      {
+        "id": "05-250-250g",
+        "sourceId": "05/250",
+        "name": "HONDURAS - Occidente Las Mercedes",
+        "originalName": "HONDURAS - Occidente Las Mercedes",
+        "url": "https://www.donfranko.cz/kava-arabica/honduras-occidente-las-mercedes/",
+        "priceAmount": 190.0,
+        "currency": "CZK",
+        "price": "190 Kč",
+        "volume": "250 g",
+        "variantLabel": "250 g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/kava-arabica/honduras-occidente-las-mercedes/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/87_honduras-2022.png?ff=1&x=677&y=507&q=85&ts=62011630&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/87_honduras-2022.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "227831d43e2f3475cb6e0f7ad99c08e41a10a8ff628fc43323e4bf4a63ba7e2d",
+          "assetSha256": "4b74b936b00cdbf09c30ed186b2fd731948fc71d782d0f70b10ba69817989ef0"
+        },
+        "photo": "/assets/donfranko/05-250-250g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/kava-arabica/honduras-occidente-las-mercedes/"
+      },
+      {
+        "id": "04-250-250g",
+        "sourceId": "04/250",
+        "name": "GUATEMALA - Huehuetenango",
+        "originalName": "GUATEMALA - Huehuetenango",
+        "url": "https://www.donfranko.cz/kava-arabica/guatemala-huehuetenango/",
+        "priceAmount": 210.0,
+        "currency": "CZK",
+        "price": "210 Kč",
+        "volume": "250 g",
+        "variantLabel": "250 g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/kava-arabica/guatemala-huehuetenango/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/99_guatemala-2022.png?ff=1&x=677&y=507&q=85&ts=620115ac&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/99_guatemala-2022.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "2a12cbd03dcecb6744195177d59580c00154c67bbfdfe4c3deb91f94ecc7227b",
+          "assetSha256": "2081a6663ba60fe74030aa703b497a04c633cbfdca75e56e631daf08c3e3cebd"
+        },
+        "photo": "/assets/donfranko/04-250-250g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/kava-arabica/guatemala-huehuetenango/"
+      },
+      {
+        "id": "459-125-125g",
+        "sourceId": "459/125",
+        "name": "Kostarika Elizondo - ANAEROBIC NATURAL",
+        "originalName": "Kostarika Elizondo - ANAEROBIC NATURAL",
+        "url": "https://www.donfranko.cz/limitka/kostarika-elizondo-anaerobic-natutal/",
+        "priceAmount": 160.0,
+        "currency": "CZK",
+        "price": "160 Kč",
+        "volume": "125 g",
+        "variantLabel": "125 g · NEMLÍT - chci zrnka",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/limitka/kostarika-elizondo-anaerobic-natutal/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "125 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/459_elizondo.png?ff=1&x=677&y=507&q=85&ts=6a2abf4e&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/459_elizondo.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "13b3aca122afe4039d5eec03fd2e5d35d04efe10a761f47d15ee0391a41e1a5b",
+          "assetSha256": "4f204ba9323e6eafa7dae79bbc0462885c964a4dca52c0275ee8cf7d32761b13"
+        },
+        "photo": "/assets/donfranko/459-125-125g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/limitka/kostarika-elizondo-anaerobic-natutal/"
+      },
+      {
+        "id": "250mex-250g",
+        "sourceId": "250MEX",
+        "name": "MEXIKO - Esmeralda",
+        "originalName": "MEXIKO - Esmeralda",
+        "url": "https://www.donfranko.cz/kava-arabica/mexiko-esmeralda/",
+        "priceAmount": 190.0,
+        "currency": "CZK",
+        "price": "190 Kč",
+        "volume": "250 g",
+        "variantLabel": "250 g",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/kava-arabica/mexiko-esmeralda/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/434-1_mexiko-esmeralda.png?ff=1&x=677&y=507&q=85&ts=695f93ec&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/434-1_mexiko-esmeralda.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "ae01e175cf4ad7ebc360984cf5a88ed9f92ce434dcf8579e3bc9dc57f2781dda",
+          "assetSha256": "6c4d00dff1e09c2a41b3f29f473d5cd35a7fa169d98ae1c8b4d1492ff1bc7ebc"
+        },
+        "photo": "/assets/donfranko/250mex-250g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/kava-arabica/mexiko-esmeralda/"
+      },
+      {
+        "id": "462-125-125g",
+        "sourceId": "462/125",
+        "name": "Finca la Colombia - DOUBLE FERMENTATION",
+        "originalName": "Finca la Colombia - DOUBLE FERMENTATION",
+        "url": "https://www.donfranko.cz/limitka/finca-la-colombia-double-fermentation/",
+        "priceAmount": 220.0,
+        "currency": "CZK",
+        "price": "220 Kč",
+        "volume": "125 g",
+        "variantLabel": "125 g · NEMLÍT - chci zrnka",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/limitka/finca-la-colombia-double-fermentation/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "125 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/462_la-columbia.png?ff=1&x=677&y=507&q=85&ts=6a2abf5f&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/462_la-columbia.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "a26fd747a0a125102dc1ce00b7ec54c07483994b506eb00f3ac7737649ca84d8",
+          "assetSha256": "a471d6a71863d50c82513c536bf5c5e44e75e95ab6e65c6d3d3774fabbf75e06"
+        },
+        "photo": "/assets/donfranko/462-125-125g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/limitka/finca-la-colombia-double-fermentation/"
+      },
+      {
+        "id": "230-533-125g",
+        "sourceId": "230/533",
+        "name": "Směs DON FRANKO",
+        "originalName": "Směs DON FRANKO",
+        "url": "https://www.donfranko.cz/e-shop/smes-don-franko/",
+        "priceAmount": 100.0,
+        "currency": "CZK",
+        "price": "100 Kč",
+        "volume": "125 g",
+        "variantLabel": "125 g",
+        "category": "coffee",
+        "kind": "Kávové zmesi",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky kávové zmesi. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/e-shop/smes-don-franko/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "125 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/230_smes-don-franko-2022.png?ff=1&x=677&y=507&q=85&ts=62011984&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/230_smes-don-franko-2022.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "d91b9f2ad34c811cb79f8a7f4a853c1508d14556f48212e5b2672ba1b5ca14f5",
+          "assetSha256": "24b93d7c7ddd8202cbe7303d469335a91820cd5c0b0b7764c761de59f96c0d4c"
+        },
+        "photo": "/assets/donfranko/230-533-125g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/e-shop/smes-don-franko/"
+      },
+      {
+        "id": "192-250-250g",
+        "sourceId": "192/250",
+        "name": "Bezkofeinová káva",
+        "originalName": "Bezkofeinová káva",
+        "url": "https://www.donfranko.cz/specialni-nabidka/kava-bez-kofeinu-z-kolumbie/",
+        "priceAmount": 230.0,
+        "currency": "CZK",
+        "price": "230 Kč",
+        "volume": "250 g",
+        "variantLabel": "250 g",
+        "category": "coffee",
+        "kind": "Bezkofeínová káva",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky bezkofeínová káva. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/specialni-nabidka/kava-bez-kofeinu-z-kolumbie/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/192_bezkofeinova-kolumbie-2022.png?ff=1&x=677&y=507&q=85&ts=620113d7&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/192_bezkofeinova-kolumbie-2022.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "99b7bcb68750f9f67f093feadc511d72cd725bbea25fbb431c3db431ec68e85d",
+          "assetSha256": "97c18f05f3b4b613ebb3001834067ed9af3b1a34900674583a919b383760e551"
+        },
+        "photo": "/assets/donfranko/192-250-250g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/specialni-nabidka/kava-bez-kofeinu-z-kolumbie/"
+      },
+      {
+        "id": "479-125-125g",
+        "sourceId": "479/125",
+        "name": "Timana Huila Natural",
+        "originalName": "Timana Huila Natural",
+        "url": "https://www.donfranko.cz/limitka/timana-huila-natural/",
+        "priceAmount": 150.0,
+        "currency": "CZK",
+        "price": "150 Kč",
+        "volume": "125 g",
+        "variantLabel": "125 g · NEMLÍT - chci zrnka",
+        "category": "coffee",
+        "kind": "Jednodruhové kávy",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky jednodruhové kávy. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/limitka/timana-huila-natural/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "125 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/479_timana2.png?ff=1&x=677&y=507&q=85&ts=6a2a83c2&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/479_timana2.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "6a543aae9c6b9d2247fb6ddc99f8fee1183d233115c813e667748e9b50bf2291",
+          "assetSha256": "632ff56172242e52c84b1a1562ab1d741565e36111236ff14366a9165eb5e3b2"
+        },
+        "photo": "/assets/donfranko/479-125-125g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/limitka/timana-huila-natural/"
+      },
+      {
+        "id": "80-250-250g",
+        "sourceId": "80/250",
+        "name": "Směs ESPRESSO 80",
+        "originalName": "Směs ESPRESSO 80",
+        "url": "https://www.donfranko.cz/espresso-smesi/espresso-80-smes/",
+        "priceAmount": 190.0,
+        "currency": "CZK",
+        "price": "190 Kč",
+        "volume": "250 g",
+        "variantLabel": "250 g",
+        "category": "coffee",
+        "kind": "Kávové zmesi",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky kávové zmesi. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/espresso-smesi/espresso-80-smes/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/120_smes-espresso-80-2022.png?ff=1&x=677&y=507&q=85&ts=62011ae5&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/120_smes-espresso-80-2022.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "7bd88e185e790688e7da4456a8f63cb9650ce934b664ec05c8b4a86f834e32e5",
+          "assetSha256": "1cd4237fcec68510666adb501ea4136701d7f90d15734211724e655cb963f3c4"
+        },
+        "photo": "/assets/donfranko/80-250-250g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/espresso-smesi/espresso-80-smes/"
+      },
+      {
+        "id": "198-250-250g",
+        "sourceId": "198/250",
+        "name": "Směs ITALSKÉ ESPRESSO",
+        "originalName": "Směs ITALSKÉ ESPRESSO",
+        "url": "https://www.donfranko.cz/espresso-smesi/italske-espresso-smes/",
+        "priceAmount": 180.0,
+        "currency": "CZK",
+        "price": "180 Kč",
+        "volume": "250 g",
+        "variantLabel": "250 g",
+        "category": "coffee",
+        "kind": "Kávové zmesi",
+        "tags": [
+          "balanced",
+          "any",
+          "simple",
+          "basic",
+          "target",
+          "full"
+        ],
+        "reason": "Z ponuky kávové zmesi. Úplné zloženie a použitie sú uvedené pri produkte v e-shope.",
+        "inStock": true,
+        "stockEvidence": "Skladem. Odesíláme do 24 hodin.",
+        "volumeEvidence": {
+          "sourceUrl": "https://www.donfranko.cz/espresso-smesi/italske-espresso-smes/",
+          "source": "Explicit selectable variant label or official product weight/volume statement",
+          "volume": "250 g"
+        },
+        "imageUrl": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/detail_alt_1/198_smes-italske-espresso-2022.png?ff=1&x=677&y=507&q=85&ts=62011af7&sg=933072d8",
+        "verifiedAt": "2026-10-10T20:07:08.668811+00:00",
+        "assetEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.donfranko.cz/user/shop/orig/198_smes-italske-espresso-2022.png",
+          "originalSize": [
+            1024,
+            768
+          ],
+          "sourceSha256": "59b9d873a73f31caf0f10d2d5ee03ef8bd7ec82ad493c7c5bf2743befdc50799",
+          "assetSha256": "8d259e9f4ea16f1f71f60fba9d3635c6b3446e19a41be3c4ba15f94fab894956"
+        },
+        "photo": "/assets/donfranko/198-250-250g.jpg",
+        "tasteSourceUrl": "https://www.donfranko.cz/espresso-smesi/italske-espresso-smes/"
+      }
+    ]
+  }
+}

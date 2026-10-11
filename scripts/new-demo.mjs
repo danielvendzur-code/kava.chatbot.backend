@@ -203,7 +203,8 @@ const JOLKA = {
   fallbacks,
   demo: {
     id: slug, rootId: `${slug}-clean-root`, pageClass: `${slug}-page`, heroProductId: heroId,
-    logoInk: logoPath, logoBadge: logoPath, logoHeader: logoPath, logoAvatar: logoPath,
+    logoInk: logoPath, logoBadge: data.avatarLogo || logoPath, logoHeader: logoPath, logoAvatar: data.avatarLogo || logoPath,
+    ...(data.productOptionPhotos ? {productOptionPhotos:true} : {}),
     heroImage: `/assets/${slug}/hero.jpg`, entryImage: `/assets/${slug}/hero.jpg`,
     eyebrow: `Pre tím ${name}`,
     heroTitle: `Vitajte vo vašom návrhu kávového poradcu pre ${name}.`,
@@ -278,6 +279,7 @@ write(`${slug}.html`, `<!doctype html>
   <script src="/${slug}-jolka-data.js"></script>
   <script src="/coffee-jolka-app.js"></script>
   <script src="/coffee-owner-brand.js"></script>
+  ${data.productOptionPhotos ? '<script src="/coffee-offer.js"></script>' : ''}
 </body>
 </html>
 `);

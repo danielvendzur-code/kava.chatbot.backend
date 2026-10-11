@@ -4,6 +4,7 @@
   window.fetch = async (input, init) => {
     const url = typeof input === 'string' ? input : input?.url || '';
     if (url === '/api/chat' || url.endsWith('/api/chat')) {
+      if (window.JOLKA?.demo?.productOptionPhotos) return nativeFetch(input, init);
       if (new URLSearchParams(location.search).get('apiError') === '1') {
         return new Response(JSON.stringify({ error: 'Simulated local API failure' }), { status: 503, headers: { 'content-type': 'application/json' } });
       }

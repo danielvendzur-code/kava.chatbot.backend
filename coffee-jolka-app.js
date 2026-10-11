@@ -343,7 +343,7 @@
 
   function optionVisual(option, stepKey) {
     const product = option.product ? byId[option.product] : null;
-    const source = CHOICE_PHOTOS[stepKey]?.[option.value]
+    const source = (demo.productOptionPhotos && (option.photo || product?.tile || product?.photo)) || CHOICE_PHOTOS[stepKey]?.[option.value]
       || option.photo || product?.tile || product?.photo || demo.entryImage;
     return `<span class="option__visual"><img src="${esc(source)}" alt="" loading="lazy" width="240" height="192"></span>`;
   }
@@ -420,11 +420,12 @@
       </div>`;
 
     advisorFoot.hidden = false;
-    advisorFoot.innerHTML = `<button class="cta" type="button" id="addToCart">Pridať do košíka ${icons.shop}</button><div class="foot-row"><a class="foot-link" href="${esc(product.url)}" target="_blank" rel="noreferrer" id="productCta">Detail produktu</a><button class="ghost" type="button" id="restart">Zmeniť odpovede</button></div><p class="cart-note" role="status" hidden></p>`;
+    advisorFoot.innerHTML = `<button class="cta" type="button" id="addToCart">${demo.productOptionPhotos?'Otvoriť v e-shope':'Pridať do košíka'} ${icons.shop}</button><div class="foot-row"><a class="foot-link" href="${esc(product.url)}" target="_blank" rel="noreferrer" id="productCta">Detail produktu</a><button class="ghost" type="button" id="restart">Zmeniť odpovede</button></div><p class="cart-note" role="status" hidden></p>`;
 
     const addButton = $('#addToCart');
     const cartNote = $('.cart-note', advisorFoot);
     addButton.addEventListener('click', () => {
+      if(demo.productOptionPhotos){window.open(product.url,'_blank','noopener,noreferrer');return;}
       if (addButton.classList.contains('is-added')) return;
       addButton.classList.add('is-added');
       addButton.innerHTML = `Pridané do košíka ${icons.check}`;
@@ -482,7 +483,7 @@
     const query = String(text ?? '').toLocaleLowerCase('sk');
     const hit = fallbacks.find((entry) => entry.match.some((needle) => query.includes(needle)));
     const product = hit && byId[hit.product];
-    if (product) return `${esc(hit.lead)} <b>${esc(product.name)}</b>. ${esc(product.why)} ${esc(product.price)}.`;
+    if (product) return `${esc(hit.lead)} <b>${esc(product.name)}</b>. ${esc(product.why)} ${esc(product.price)}.${demo.productOptionPhotos?` Balenie ${esc(product.priceUnit)}. <a href="${esc(product.url)}" target="_blank" rel="noopener noreferrer">Pozrieť v e-shope ↗</a>`:''}`;
 
     /* What is left used to be answered with "Rád vám poradím konkrétnu kávu",
        which names nothing and reads to an owner as if the advisor knows only
@@ -530,7 +531,7 @@
       if (!response.ok) throw new Error(`AI unavailable: ${response.status}`);
       const payload = await response.json();
       if (typeof payload.reply !== 'string' || payload.reply.trim() === '') throw new Error('Empty reply');
-      return esc(payload.reply);
+      return demo.productOptionPhotos?esc(payload.reply).replace(/https:\/\/[^\s<>]+/g,url=>products.some(p=>esc(p.url)===url)?`<a href="${url}" target="_blank" rel="noopener noreferrer">Pozrieť v e-shope ↗</a>`:url):esc(payload.reply);
     } finally {
       clearTimeout(timer);
     }
@@ -623,7 +624,7 @@
   if (!root || (!brand && !coffee?.brand)) return;
   const name = brand?.name || coffee.brand.name;
   const header = root.querySelector('.cx-widget-brand img.cx-logo');
-  const original = header?.getAttribute('src') || coffee?.demo?.logoHeader || brand?.mark || coffee?.demo?.logoAvatar;
+  const original = (coffee?.demo?.productOptionPhotos && coffee?.demo?.logoAvatar) || header?.getAttribute('src') || coffee?.demo?.logoHeader || brand?.mark || coffee?.demo?.logoAvatar;
   if (!original) return;
   const style = document.createElement('style');
   style.dataset.companyMessageLogo = 'black-real-logo-v1';
@@ -652,6 +653,7 @@
   new MutationObserver(sync).observe(root, {childList:true, subtree:true});
   const image = new Image();
   image.onload = () => {
+    if(coffee?.demo?.productOptionPhotos) return;
     try {
       const scale = Math.min(1, 480 / Math.max(image.naturalWidth, image.naturalHeight));
       const canvas = document.createElement('canvas');
