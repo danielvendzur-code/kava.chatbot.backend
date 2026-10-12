@@ -56,6 +56,9 @@
     .map((index) => `<i class="${index <= level ? 'on' : ''}"></i>`)
     .join('')}</span>`;
 
+  /* Notes are shown as the taste itself, without a source remark in every sentence. */
+  products.forEach((product) => { if (typeof product.why === 'string') product.why = product.why.replace(/Chuťový profil podľa e-shopu:/g, 'Chuť:'); });
+
   const WEIGHTS = { taste: 3.2, prep: 2.4, drink: 2.0, acidity: 2.6 };
   const MAX_SCORE = WEIGHTS.taste + WEIGHTS.prep + WEIGHTS.drink + WEIGHTS.acidity;
   const ACIDITY_TARGET = { none: 0, mild: 1, bright: 3 };

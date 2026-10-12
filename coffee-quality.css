@@ -52,3 +52,4 @@ html.cq-logo-mask body .launcher__button#open#open{border:0!important;}
 html.cq-logo-mask body .launcher__button#open#open:hover,html.cq-logo-mask body .launcher__button#open#open:focus-visible{background:var(--cq-hover,var(--kraft,#555))!important;}
 html.cq-logo-mask body .launcher__button#open#open:hover .cq-mark,html.cq-logo-mask body .launcher__button#open#open:focus-visible .cq-mark{background:var(--cq-fg,#fff);}
 html.cq-logo-mask body .launcher__button#open#open:hover .cq-mark,html.cq-logo-mask body .launcher__button#open#open:focus-visible .cq-mark{background:var(--cq-hover-fg,#fff);}
+html body #widget#widget #mode .mode__button:focus,html body #widget#widget #mode .mode__button:focus-visible{outline:none!important;box-shadow:none!important;}
