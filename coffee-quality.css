@@ -46,3 +46,8 @@ html body #widget#widget .fits{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 
 html body #widget#widget .fits span{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:var(--surface-2,#eef5f4);font-size:12px;line-height:1.2;font-weight:600;color:var(--ink,#222);}
 html body #widget#widget .fits span::before{content:"✓";font-weight:700;}
 html body #widget#widget .result__photo{width:132px!important;height:auto!important;max-height:190px!important;}
+
+/* Hover goes to the brand's second colour (or a deeper shade), the mark keeps its colour. */
+html.cq-logo-mask body .launcher__button#open#open{border:0!important;}
+html.cq-logo-mask body .launcher__button#open#open:hover,html.cq-logo-mask body .launcher__button#open#open:focus-visible{background:var(--cq-hover,var(--kraft,#555))!important;}
+html.cq-logo-mask body .launcher__button#open#open:hover .cq-mark,html.cq-logo-mask body .launcher__button#open#open:focus-visible .cq-mark{background:var(--cq-fg,#fff);}
