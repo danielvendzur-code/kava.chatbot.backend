@@ -1,23 +1,17 @@
 /* Hover colour of the closed bubble – same rule as ukazky-final.js: another brand colour if it is
    dark enough for the mark and clearly different, otherwise a deeper shade of the rest colour. */
-window.CXLauncherHover = ((rest, candidates = []) => {
-  const rgb = (value) => {
-    const v = String(value || '').trim();
-    if (v.startsWith('#')) { const h = v.length === 4 ? v.slice(1).split('').map((c) => c + c).join('') : v.slice(1, 7); return [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16)); }
-    const m = v.match(/[\d.]+/g); return m ? m.slice(0, 3).map(Number) : [255, 255, 255];
-  };
-  const lum = (c) => { const [r, g, b] = rgb(c).map((x) => { x /= 255; return x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4; }); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
-  const dist = (a, b) => { const x = rgb(a), y = rgb(b); return Math.hypot(x[0] - y[0], x[1] - y[1], x[2] - y[2]); };
-  const css = (c) => 'rgb(' + rgb(c).join(', ') + ')';
-  const contrast = (a, b) => { const x = lum(a), y = lum(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
-  /* The brand's second colour: the first theme colour that clearly differs from the rest colour and is
-     not plain white; a brand with a single colour gets its own light tint. */
-  let bg = candidates.map((c) => String(c || '').trim()).find((c) => c && dist(c, rest) > 60 && lum(c) < 0.92);
-  if (!bg) bg = css(rgb(rest).map((x) => Math.round(x + (255 - x) * (lum(rest) < 0.4 ? 0.82 : -0.6))));
-  /* The mark swaps to the brand colour whenever that reads on the new circle. */
-  const fg = contrast(rest, bg) >= 2.4 ? css(rest) : (lum(bg) > 0.45 ? '#141414' : '#fff');
-  return {bg: css(bg), fg};
-});
+/* Two brand colours trade places together, as in the original Mylo launcher. */
+window.CXLauncherHover=(primary,candidates=[])=>{
+  const rgb=v=>{const s=String(v||'').trim();if(/^#[a-f\d]{3}$/i.test(s))return s.slice(1).split('').map(c=>parseInt(c+c,16));if(/^#[a-f\d]{6}$/i.test(s))return [1,3,5].map(i=>parseInt(s.slice(i,i+2),16));const m=s.match(/[\d.]+/g);return m?.length>=3?m.slice(0,3).map(Number):null;};
+  const css=c=>'rgb('+c.map(Math.round).join(', ')+')';
+  const lum=c=>c.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;}).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0);
+  const contrast=(a,b)=>(Math.max(lum(a),lum(b))+.05)/(Math.min(lum(a),lum(b))+.05);
+  const input=rgb(primary)||[23,23,23],dark=lum(input)>.55?[23,23,23]:input;
+  let light=[input,...candidates.map(rgb).filter(Boolean)].find(c=>contrast(dark,c)>=3&&lum(c)<.94);
+  if(!light)light=dark.map(v=>v+(244-v)*.8);
+  return {restBg:css(light),restFg:css(dark),bg:css(dark),fg:css(light)};
+};
+
 /* Final shared pass for every coffee demo: the real company logo, cleanly, in the
    launcher, the widget header and each assistant avatar. Loaded after all brand overrides. */
 (() => {
@@ -112,11 +106,11 @@ window.CXLauncherHover = ((rest, candidates = []) => {
     sync();
     new MutationObserver(sync).observe(root, {childList:true, subtree:true});
     const dark = isLight(rgb(widget.querySelector('.widget__header') || launcher));
-    document.documentElement.style.setProperty('--cq-fg', dark ? '#141414' : '#fff');
+    document.documentElement.style.setProperty('--cq-chat-fg', dark ? '#141414' : '#fff');
     const tokens = getComputedStyle(document.documentElement);
     /* The bubble's rest colour is the brand ink token (the computed colour is still the loading state here). */
     const hover = window.CXLauncherHover(tokens.getPropertyValue('--ink'), [tokens.getPropertyValue('--kraft'), tokens.getPropertyValue('--kraft-tint'), tokens.getPropertyValue('--surface-2')]);
-    document.documentElement.style.setProperty('--cq-hover', hover.bg);
+    document.documentElement.style.setProperty('--cq-hover', hover.bg);document.documentElement.style.setProperty('--cq-rest',hover.restBg);document.documentElement.style.setProperty('--cq-fg',hover.restFg);
     document.documentElement.style.setProperty('--cq-hover-fg', hover.fg);
     clean(markSource, dark ? 20 : 255).then((url) => {
       if (!url) return;

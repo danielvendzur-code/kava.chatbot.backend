@@ -1,3 +1,17 @@
+/* Hover colour of the closed bubble – same rule as ukazky-final.js: another brand colour if it is
+   dark enough for the mark and clearly different, otherwise a deeper shade of the rest colour. */
+/* Two brand colours trade places together, as in the original Mylo launcher. */
+window.CXLauncherHover=(primary,candidates=[])=>{
+  const rgb=v=>{const s=String(v||'').trim();if(/^#[a-f\d]{3}$/i.test(s))return s.slice(1).split('').map(c=>parseInt(c+c,16));if(/^#[a-f\d]{6}$/i.test(s))return [1,3,5].map(i=>parseInt(s.slice(i,i+2),16));const m=s.match(/[\d.]+/g);return m?.length>=3?m.slice(0,3).map(Number):null;};
+  const css=c=>'rgb('+c.map(Math.round).join(', ')+')';
+  const lum=c=>c.map(v=>{v/=255;return v<=.04045?v/12.92:((v+.055)/1.055)**2.4;}).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0);
+  const contrast=(a,b)=>(Math.max(lum(a),lum(b))+.05)/(Math.min(lum(a),lum(b))+.05);
+  const input=rgb(primary)||[23,23,23],dark=lum(input)>.55?[23,23,23]:input;
+  let light=[input,...candidates.map(rgb).filter(Boolean)].find(c=>contrast(dark,c)>=3&&lum(c)<.94);
+  if(!light)light=dark.map(v=>v+(244-v)*.8);
+  return {restBg:css(light),restFg:css(dark),bg:css(dark),fg:css(light)};
+};
+
 (() => {
   'use strict';
 
@@ -243,23 +257,19 @@
   if (!root || (!brand && !coffee?.brand)) return;
   const name = brand?.name || coffee.brand.name;
   const header = root.querySelector('.cx-widget-brand img.cx-logo');
-  const headerWordmark = root.querySelector('.cx-widget-brand .cx-wordmark');
-  const sourceImage = header?.getAttribute('src') || coffee?.demo?.logoHeader || brand?.mark || coffee?.demo?.logoAvatar;
-  const textWordmark = !brand?.avatarIcon && !sourceImage && headerWordmark ? headerWordmark : null;
-  const original = brand?.avatarIcon || sourceImage || (textWordmark ? 'wordmark:' + slug : null);
+  const original = brand?.avatarIcon || header?.getAttribute('src') || coffee?.demo?.logoHeader || brand?.mark || coffee?.demo?.logoAvatar;
   if (!original) return;
   const style = document.createElement('style');
   style.dataset.companyMessageLogo = 'black-real-logo-v1';
   style.textContent = `
     body #cosmetics-root#cosmetics-root .cx-message--assistant .cx-message-avatar,
-    body #widget#widget .msg__avatar { background:#141414 !important; background-image:none !important; color:#fff !important; border:0 !important; border-radius:50% !important; display:flex !important; align-items:center !important; justify-content:center !important; }
+    body #widget#widget .msg__avatar { background:var(--cx-brand, #141414) !important; background-image:none !important; color:#fff !important; border:0 !important; border-radius:50% !important; display:flex !important; align-items:center !important; justify-content:center !important; }
     body #cosmetics-root#cosmetics-root .cx-message-avatar .cx-company-message-logo,
     body #widget#widget .msg__avatar .cx-company-message-logo { display:block !important; width:calc(100% - 8px) !important; height:calc(100% - 8px) !important; min-width:0 !important; max-width:none !important; min-height:0 !important; max-height:none !important; flex:none !important; margin:0 !important; border:0 !important; border-radius:0 !important; background:transparent var(--cx-company-message-art) center / contain no-repeat !important; mask:none !important; -webkit-mask:none !important; filter:none !important; transform:none !important; }
   `;
-  if (slug === 'ponio') style.textContent += '\nbody #cosmetics-root#cosmetics-root .cx-message--assistant .cx-message-avatar {background:' + brand.theme.brand + ' !important;}';
   document.head.append(style);
   let artwork = original;
-  let revision = textWordmark ? 1 : 0;
+  let revision = 0;
   const sync = () => root.querySelectorAll('.cx-message--assistant .cx-message-avatar,.msg:not(.msg--user) .msg__avatar').forEach(avatar => {
     if (avatar.dataset.realCompanyRevision === String(revision) && avatar.querySelector('.cx-company-message-logo')) return;
     const logo = document.createElement('span');
@@ -268,29 +278,32 @@
     logo.setAttribute('role', 'img');
     logo.setAttribute('aria-label', name);
     logo.style.setProperty('--cx-company-message-art', 'url(' + JSON.stringify(artwork) + ')');
-    if (textWordmark) {
-      logo.textContent = textWordmark.textContent;
-      const markStyle = getComputedStyle(textWordmark);
-      logo.style.setProperty('font-family', markStyle.fontFamily, 'important');
-      logo.style.setProperty('font-weight', markStyle.fontWeight, 'important');
-      logo.style.setProperty('font-size', (slug === 'ponio' ? 11 : Math.min(11, 48 / Math.max(1, logo.textContent.length))) + 'px', 'important');
-      logo.style.setProperty('color', '#fff', 'important');
-      logo.style.setProperty('display', 'flex', 'important');
-      logo.style.setProperty('align-items', 'center', 'important');
-      logo.style.setProperty('justify-content', 'center', 'important');
-      logo.style.setProperty('white-space', 'nowrap', 'important');
-      logo.style.setProperty('letter-spacing', '0', 'important');
-    }
     avatar.replaceChildren(logo);
     avatar.dataset.realCompanyRevision = String(revision);
     avatar.dataset.realCompanySource = original;
   });
-  sync();
+  const syncLauncher = () => {
+    const launcher = document.querySelector("#cx-open");
+    if (!launcher || slug === "ponio") return;
+    if (slug === 'mylo') {
+      const nameMark=document.createElement('span');
+      nameMark.className='cx-launcher-name cx-launcher-real-wordmark';
+      nameMark.textContent='mylo';
+      launcher.classList.add('cx-quality-logo','cx-launcher-has-wordmark');
+      launcher.replaceChildren(nameMark);
+      return;
+    }
+    const logo = document.createElement("span");
+    logo.className = "cx-company-message-logo cx-new-mark cx-cyprianus-symbol cx-mark-swap";
+    logo.setAttribute("role", "img");logo.setAttribute("aria-label",name);
+    logo.style.setProperty("--cx-company-message-art", "url(" + JSON.stringify(artwork) + ")");
+    launcher.classList.add("cx-quality-logo");launcher.replaceChildren(logo);
+  };
+  sync();syncLauncher();
   new MutationObserver(sync).observe(root, {childList:true, subtree:true});
-  if (textWordmark) return;
   const image = new Image();
   image.onload = () => {
-    if(brand?.avatarIcon)return;
+
     try {
       const scale = Math.min(1, 480 / Math.max(image.naturalWidth, image.naturalHeight));
       const canvas = document.createElement('canvas');
@@ -303,21 +316,74 @@
       const corners = [0, w-1, (h-1)*w, h*w-1].map(p=>Array.from(px.slice(p*4,p*4+4)));
       const distance = (a,b) => Math.hypot(a[0]-b[0],a[1]-b[1],a[2]-b[2]);
       const plate = corners.every(c=>c[3]>245 && distance(c,corners[0])<18) ? corners[0] : null;
-      let x0=w, y0=h, x1=-1, y1=-1;
+      /* White mark on a dark brand circle, dark mark on a light one. */
+      const probe=document.querySelector('#cx-open')||root;const fill=(getComputedStyle(probe).backgroundColor.match(/[\d.]+/g)||[20,20,20]).slice(0,3).map(Number);
+      const tone=(fill[0]*.2126+fill[1]*.7152+fill[2]*.0722)>170?20:255;
+      let x0=w, y0=h, x1=-1, y1=-1, solid=0;
       for(let y=0;y<h;y++) for(let x=0;x<w;x++) {
         const i=(y*w+x)*4;
         if(plate) { const d=distance([px[i],px[i+1],px[i+2]],plate); px[i+3]=Math.round(px[i+3]*Math.min(1,Math.max(0,(d-18)/42))); }
         if(px[i+3]>12) { x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y); }
-        px[i]=px[i+1]=px[i+2]=255;
+        px[i]=px[i+1]=px[i+2]=tone;
+        if(px[i+3]>128)solid++;
       }
       if(x1<x0 || y1<y0) return;
+      /* A filled badge would become a blank blob: keep the original artwork on a white circle instead. */
+      if(solid/((x1-x0+1)*(y1-y0+1))>.72){document.documentElement.classList.add('cx-logo-plain');return;}
       ctx.putImageData(pixels,0,0);
       const out=document.createElement('canvas');
       out.width=x1-x0+5;out.height=y1-y0+5;
       out.getContext('2d').drawImage(canvas,x0,y0,x1-x0+1,y1-y0+1,2,2,x1-x0+1,y1-y0+1);
-      artwork=out.toDataURL('image/png');revision++;sync();
+      artwork=out.toDataURL('image/png');revision++;sync();syncLauncher();
+      /* One-colour mark: the closed bubble can now invert on hover. */
+      document.documentElement.style.setProperty('--cx-q-fg',tone===255?'#fff':'#141414');{const hover=window.CXLauncherHover(getComputedStyle(document.body).getPropertyValue('--cx-brand')||getComputedStyle(probe).backgroundColor,[getComputedStyle(document.body).getPropertyValue('--cx-accent'),brand?.theme?.accent,brand?.theme?.soft,brand?.theme?.line]);document.documentElement.style.setProperty('--cx-q-hover',hover.bg);document.documentElement.style.setProperty('--cx-q-rest',hover.restBg);document.documentElement.style.setProperty('--cx-q-fg',hover.restFg);document.documentElement.style.setProperty('--cx-q-hover-fg',hover.fg);}document.documentElement.classList.add('cx-logo-mask');
     } catch (_) { /* Preserve the real source artwork if canvas access is unavailable. */ }
   };
   image.src=original;
 })();
 
+
+/* A header logo with a flat plate must not sit as a sticker in a coloured header:
+   remove only the plate and show the full real wordmark in white. */
+(() => {
+  'use strict';
+  const root = document.querySelector('#cosmetics-root');
+  const head = root?.querySelector('.cx-widget-head');
+  const logo = head?.querySelector('.cx-widget-brand img.cx-logo');
+  if (!logo) return;
+  const rgb = (getComputedStyle(head).backgroundColor.match(/[\d.]+/g) || []).slice(0, 4).map(Number);
+  if (rgb.length < 3 || rgb[3] === 0 || (rgb[0] * .2126 + rgb[1] * .7152 + rgb[2] * .0722) > 140) return;
+  const image = new Image();
+  image.onload = () => {
+    try {
+      const scale = Math.min(1, 640 / Math.max(image.naturalWidth, image.naturalHeight));
+      const canvas = document.createElement('canvas');
+      const w = canvas.width = Math.max(1, Math.round(image.naturalWidth * scale));
+      const h = canvas.height = Math.max(1, Math.round(image.naturalHeight * scale));
+      const ctx = canvas.getContext('2d', {willReadFrequently:true});
+      ctx.drawImage(image, 0, 0, w, h);
+      const pixels = ctx.getImageData(0, 0, w, h), px = pixels.data;
+      const distance = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
+      const corners = [0, w - 1, (h - 1) * w, h * w - 1].map(p => Array.from(px.slice(p * 4, p * 4 + 4)));
+      /* The plate is the colour shared by at least three opaque corners. */
+      const plate = corners.find(c => c[3] > 245 && corners.filter(o => o[3] > 245 && distance(o, c) < 18).length >= 3);
+      if (!plate) return;
+      let x0 = w, y0 = h, x1 = -1, y1 = -1, solid = 0;
+      for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+        const i = (y * w + x) * 4, d = distance([px[i], px[i + 1], px[i + 2]], plate);
+        px[i + 3] = Math.round(px[i + 3] * Math.min(1, Math.max(0, (d - 30) / 42)));
+        px[i] = px[i + 1] = px[i + 2] = 255;
+        if (px[i + 3] > 12) { x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); }
+        if (px[i + 3] > 128) solid++;
+      }
+      if (x1 < x0 || y1 < y0 || solid / ((x1 - x0 + 1) * (y1 - y0 + 1)) > .72) return;
+      ctx.putImageData(pixels, 0, 0);
+      const out = document.createElement('canvas');
+      out.width = x1 - x0 + 5; out.height = y1 - y0 + 5;
+      out.getContext('2d').drawImage(canvas, x0, y0, x1 - x0 + 1, y1 - y0 + 1, 2, 2, x1 - x0 + 1, y1 - y0 + 1);
+      logo.src = out.toDataURL('image/png');
+      logo.classList.add('cx-logo-clean');
+    } catch (_) { /* Keep the original logo if canvas access is unavailable. */ }
+  };
+  image.src = logo.currentSrc || logo.getAttribute('src');
+})();

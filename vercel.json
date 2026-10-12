@@ -145,5 +145,13 @@
         }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "api/chat.js": {
+      "includeFiles": "{coffee-catalogues/*.js,coffee-reply-core.js}"
+    },
+    "api/cosmetics-chat.js": {
+      "includeFiles": "{catalogues/*-refresh.js,advisor-core.js,catalogue-reply-core.js,catalogue-data.js}"
+    }
+  }
 }

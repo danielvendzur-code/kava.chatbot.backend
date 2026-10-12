@@ -115,7 +115,7 @@ window.JOLKA = (() => {
     heroLead:'Poradca odpovie na pôvod, chuť aj prípravu a cez štyri krátke otázky odporučí jednu konkrétnu kávu.',
     heroHint:'Používa konkrétne kávy a fotografie z tejto ukážky Pražiarničky.',
     heroImageAlt:'Paganini blend Pražiarničky', ownerCredit:'ukážka pre Pražiarničku',
-    teaserTitle:'Neviete, ktorú kávu vybrať?', teaserText:'4 otázky · jedno odporúčanie',
+    teaserTitle:'Neviete, ktorú kávu vybrať?', teaserText:'Krátky výber · jedno odporúčanie',
     dialogLabel:'Kávový poradca Pražiarnička', advisorLabel:'Online poradca',
     entryKicker:'Kávový výber', entryTitle:'Nájdite svoju kávu', entryText:'4 otázky · konkrétne odporúčanie'
   };

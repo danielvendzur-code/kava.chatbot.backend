@@ -58,7 +58,7 @@
   // Short enough to stay on one line each at the new width. Every demo used to
   // write its own, from "Vyskúšajte AI poradcu" to a two-line question.
   const TEASER_TITLE = 'Nájdite svoju kávu';
-  const TEASER_SUB = '4 otázky · jedno odporúčanie';
+  const TEASER_SUB = 'Krátky výber · jedno odporúčanie';
 
   const TEASERS = '#teaser, #launcherTeaser, .teaser, .launcher__teaser, .launcher-teaser, .kf-teaser, #pz13-preview';
 

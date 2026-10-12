@@ -91,7 +91,7 @@
 
   const fallbackResponse = (init) => {
     const { demoId, content } = latestText(init);
-    const reply = fallbackReply(demoId, content);
+    const payload=JSON.parse(init?.body||'{}');const c=globalThis.CX_COFFEE_CATALOGUES?.[demoId];const reply=c&&globalThis.CXCoffeeReplyCore?globalThis.CXCoffeeReplyCore(c,content,payload.messages||[]):null;
     if (!reply) return new Response('', { status: 503, headers: { 'cache-control': 'no-store' } });
     return new Response(JSON.stringify({ reply, fallback: true }), {
       status: 200,

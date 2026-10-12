@@ -68,7 +68,7 @@
     if (answers.taste) total += WEIGHTS.taste * (product.taste?.[answers.taste] ?? 0);
     if (answers.prep) total += WEIGHTS.prep * (product.prep?.[answers.prep] ?? 0);
     if (answers.drink) total += WEIGHTS.drink * (product.drink?.[answers.drink] ?? 0);
-    if (answers.acidity) {
+    if (answers.acidity && answers.acidity!=='any') {
       if (answers.acidity === 'explore') {
         total += WEIGHTS.acidity * (product.explore ?? 0);
       } else {
@@ -77,23 +77,27 @@
         total += WEIGHTS.acidity * (1 - Math.abs(target - acidity) / 3);
       }
     }
-    if (product.decaf) total -= 1.6;
+
     return total;
   }
 
-  /* Conditions a coffee must really meet; taste and drink stay weighted preferences. */
+  /* Each explicit preference must be supported by the product facts. */
   function unmet(product, answers) {
     const missing = [];
-    if (answers.prep && (product.prep?.[answers.prep] ?? 0) < 0.6) missing.push('prep');
-    const acidity = Number.isFinite(product.acidity) ? product.acidity : 1;
+    for(const key of ['taste','drink'])if(answers[key]&&answers[key]!=='any'&&(product[key]?.[answers[key]]??0)<.5)missing.push(key);
+    if (answers.prep && answers.prep!=='any' && (product.prep?.[answers.prep] ?? 0) < 0.6) missing.push('prep');
+    const acidity = Number.isFinite(product.acidity) ? product.acidity : null;
+    if(answers.caffeine&&answers.caffeine!=='any'&&product.decaf!==(answers.caffeine==='no'))missing.push('caffeine');
+    if(answers.acidity&&answers.acidity!=='any'&&answers.acidity!=='explore'&&acidity===null)missing.push('acidity');
     if (answers.acidity === 'none' && acidity > 1) missing.push('acidity');
+    if(answers.acidity==='mild'&&acidity>2)missing.push('acidity');
     if (answers.acidity === 'bright' && acidity < 2) missing.push('acidity');
     return missing;
   }
 
   function rank(answers) {
     return products
-      .map((product) => ({ product, value: score(product, answers), unmet: unmet(product, answers) }))
+      .filter(product=>product.available!==false).map((product) => ({ product, value: score(product, answers), unmet: unmet(product, answers) })).filter(entry=>!entry.unmet.length)
       .sort((left, right) => left.unmet.length - right.unmet.length || right.value - left.value || left.product.name.localeCompare(right.product.name, 'sk'));
   }
 
@@ -326,37 +330,40 @@
      describes; the product itself is what the result is for. */
   const CHOICE_PHOTOS = {
     taste: {
-      chocolate: '/assets/choice/taste-chocolate.webp',
-      balanced: '/assets/choice/taste-balanced.webp',
-      fruity: '/assets/choice/taste-fruity.webp',
-      bold: '/assets/choice/taste-bold.webp'
+      chocolate: '/assets/scenes/coffee-nuts.jpg',
+      balanced: '/assets/scenes/coffee-caramel.jpg',
+      fruity: '/assets/scenes/coffee-berries.jpg',
+      bold: '/assets/scenes/coffee-beans.jpg'
     },
     prep: {
-      automat: '/assets/choice/prep-automat.webp',
-      lever: '/assets/choice/prep-lever.webp',
-      moka: '/assets/choice/prep-moka.webp',
-      filter: '/assets/choice/prep-filter.webp'
+      automat: '/assets/scenes/coffee-automatic-brew.jpg',
+      lever: '/assets/scenes/coffee-espresso.jpg',
+      moka: '/assets/scenes/coffee-moka.jpg',
+      filter: '/assets/scenes/coffee-filter.jpg'
     },
     drink: {
-      black: '/assets/choice/drink-black.webp',
-      milk: '/assets/choice/drink-milk.webp',
-      both: '/assets/choice/drink-both.webp'
+      black: '/assets/scenes/coffee-black.jpg',
+      milk: '/assets/scenes/coffee-milk.jpg',
+      both: '/assets/scenes/coffee-decaf-cup.jpg'
     },
     acidity: {
-      none: '/assets/choice/taste-chocolate.webp',
-      mild: '/assets/choice/taste-balanced.webp',
-      bright: '/assets/choice/taste-fruity.webp',
-      explore: '/assets/choice/taste-bold.webp'
+      none: '/assets/scenes/coffee-nuts.jpg',
+      mild: '/assets/scenes/coffee-caramel.jpg',
+      bright: '/assets/scenes/coffee-berries.jpg',
+      explore: '/assets/scenes/coffee-beans.jpg'
     }
   };
 
   function optionVisual(option, stepKey) {
+    if(stepKey==='drink'&&option.value==='both')return '<span class="option__visual coffee-double-cup"><img src="/assets/scenes/coffee-black.jpg" alt="" loading="lazy"><img src="/assets/scenes/coffee-milk.jpg" alt="" loading="lazy"></span>';
     const product = option.product ? byId[option.product] : null;
     const source = CHOICE_PHOTOS[stepKey]?.[option.value]
       || option.photo || product?.tile || product?.photo || demo.entryImage;
-    return `<span class="option__visual"><img src="${esc(source)}" alt="" loading="lazy" width="240" height="192"></span>`;
+    return `<span class="option__visual"><img src="${esc(source)}" alt="" loading="lazy" width="240" height="192" style="object-position:${source.includes('automatic-brew')?'50% 90%':source.includes('espresso')?'50% 43%':'center'} !important"></span>`;
   }
 
+  function equalCopy(){if(!advisor.classList.contains('is-questions'))return;const copies=$$('.option__copy',advisor);copies.forEach(e=>e.style.removeProperty('min-height'));const h=Math.max(0,...copies.map(e=>e.offsetHeight));copies.forEach(e=>e.style.setProperty('min-height',h+'px','important'));}
+  window.addEventListener('resize',()=>requestAnimationFrame(equalCopy));
   function renderQuestion() {
     const step = steps[state.step];
     const selected = state.answers[step.key];
@@ -376,7 +383,10 @@
       </div>`;
     advisorFoot.hidden = true;
     advisorFoot.innerHTML = '';
+    const skip=document.createElement('button');skip.className='ghost';skip.type='button';skip.textContent='Nechám si poradiť';skip.addEventListener('click',()=>select('any'));advisor.append(skip);
     $$('.option', advisor).forEach((button) => button.addEventListener('click', () => select(button.dataset.value)));
+    requestAnimationFrame(equalCopy);
+    document.fonts?.ready.then(equalCopy);
   }
 
   function select(value) {
@@ -406,10 +416,11 @@
     advisor.classList.add('is-result');
     const ranked = rank(state.answers);
     const best = ranked[0];
+    if(!best){advisor.innerHTML='<div class="result"><h2>Takúto kombináciu v ponuke nemáme</h2><p>Žiadna overená káva nespĺňa tieto podmienky naraz. Upravte odpovede alebo niektorú otázku preskočte.</p><button class="ghost" type="button" id="restartEmpty">Zmeniť odpovede</button></div>';advisorFoot.hidden=true;$('#restartEmpty',advisor).addEventListener('click',resetAdvisor);return;}
     const current = state.chosen ? ranked.find((entry) => entry.product.id === state.chosen) || best : best;
     const product = current.product;
     const alternative = ranked.find((entry) => entry.product.id !== product.id && !entry.unmet.length);
-    const acidityLabel = acidityScale[product.acidity] || acidityScale[1] || 'jemná';
+    const acidityLabel = Number.isFinite(product.acidity)?acidityScale[product.acidity]:'Neuvedená';
     /* The answers this coffee verifiably meets, in the customer's own words. */
     const acidityNow = Number.isFinite(product.acidity) ? product.acidity : 1;
     const met = steps.map((step) => {
@@ -423,7 +434,7 @@
 
     advisor.innerHTML = `
       <div class="result">
-        ${current.unmet.length ? `<p class="result__nomatch"><b>Presnú zhodu v ponuke nemáme.</b> Žiadna káva nespĺňa naraz vašu ${current.unmet.map((key) => key === 'prep' ? 'prípravu' : 'aciditu').join(' aj ')}. Toto je najbližšia možnosť – alebo zmeňte odpovede.</p>` : ''}<span class="result__badge">${current.unmet.length ? 'Najbližšia možnosť' : product.id === best.product.id ? 'Odporúčam vám' : 'Vaša voľba'}</span>
+        ${current.unmet.length ? `<p class="result__nomatch"><b>Presnú zhodu v ponuke nemáme.</b> Žiadna káva nespĺňa naraz vašu ${current.unmet.map((key) => key === 'prep' ? 'prípravu' : key==='caffeine'?'požiadavku na kofeín':'aciditu').join(' aj ')}. Toto je najbližšia možnosť – alebo zmeňte odpovede.</p>` : ''}<span class="result__badge">${current.unmet.length ? 'Najbližšia možnosť' : product.id === best.product.id ? 'Odporúčam vám' : 'Vaša voľba'}</span>
         <div class="result__hero">
           <img class="result__photo" src="${esc(product.photo)}" alt="${esc(product.name)}" width="132" height="178">
           <div class="result__headline"><h2>${esc(product.name)}</h2><p>${esc(product.line)}</p><span class="result__price"><b>${esc(product.price)}</b><span>/ ${esc(product.priceUnit)}</span></span>${product.roast ? `<small class="result__weights">${esc(product.roast)}</small>` : ''}</div>
@@ -443,6 +454,13 @@
     const addButton = $('#addToCart');
     addButton.addEventListener('click', () => window.open(product.url || brand.shopUrl, '_blank', 'noopener,noreferrer'));
     $('#restart').addEventListener('click', resetAdvisor);
+    if(ranked.length>1){
+      const more=document.createElement('details');more.className='coffee-more-matches';
+      const title=document.createElement('summary');title.textContent='Ďalšie kávy spĺňajúce váš výber ('+(ranked.length-1)+')';more.append(title);
+      const list=document.createElement('div');let count=0;
+      function append(){const rows=ranked.filter(e=>e.product.id!==product.id).slice(count,count+24);for(const row of rows){const p=row.product;const link=document.createElement('a');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.className='coffee-match-link';link.innerHTML='<img src="'+esc(p.photo)+'" alt="" loading="lazy"><span><b>'+esc(p.name)+'</b><small>'+esc(p.notes.join(' · '))+'</small><strong>'+esc(p.price)+'</strong></span>';list.append(link);}count+=rows.length;}
+      append();more.append(list);if(ranked.length-1>count){const next=document.createElement('button');next.className='ghost';next.type='button';next.textContent='Načítať ďalšie';next.addEventListener('click',()=>{append();if(count>=ranked.length-1)next.remove();});more.append(next);}advisor.append(more);
+    }
     const alternativeButton = $('.alt__card', advisor);
     if (alternativeButton) alternativeButton.addEventListener('click', () => { state.chosen = alternativeButton.dataset.product; renderResult(); advisor.scrollTop = 0; });
   }
@@ -489,7 +507,11 @@
     requestAnimationFrame(() => { chatLog.scrollTop = chatLog.scrollHeight; });
   }
 
+  function linkReply(text){return esc(text).replace(/https:\/\/[^\s<>]+/g,url=>(DATA.fullOffer||products).some(p=>esc(p.url)===url)?`<a href="${url}" target="_blank" rel="noopener noreferrer">Pozrieť v e-shope ↗</a>`:url).replace(/\n/g,'<br>');}
   function fallbackAnswer(text) {
+    const catalogue=globalThis.CX_COFFEE_CATALOGUES?.[demo.id];
+    const grounded=catalogue&&globalThis.CXCoffeeReplyCore?.(catalogue,text,state.history);
+    if(grounded)return linkReply(grounded);
     /* Matching ignores diacritics and understands the Czech spelling of the same words. */
     const fold = (value) => String(value ?? '').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
     const query = fold(text).replace(/filtr(?!e)/g, 'filter').replace(/mlek/g, 'mliek').replace(/neco/g, 'nieco').replace(/netradicniho/g, 'netradicne');
@@ -543,7 +565,7 @@
       if (!response.ok) throw new Error(`AI unavailable: ${response.status}`);
       const payload = await response.json();
       if (typeof payload.reply !== 'string' || payload.reply.trim() === '') throw new Error('Empty reply');
-      return demo.productOptionPhotos?esc(payload.reply).replace(/https:\/\/[^\s<>]+/g,url=>products.some(p=>esc(p.url)===url)?`<a href="${url}" target="_blank" rel="noopener noreferrer">Pozrieť v e-shope ↗</a>`:url):esc(payload.reply);
+      return linkReply(payload.reply);
     } finally {
       clearTimeout(timer);
     }

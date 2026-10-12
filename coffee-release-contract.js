@@ -194,7 +194,7 @@
     const teaserTitle = teaser.querySelector('strong,b');
     const copy = teaser.querySelector('span');
     if (teaserTitle) teaserTitle.textContent = 'Nájdite svoju kávu';
-    if (copy) copy.textContent = '4 otázky · jedno odporúčanie';
+    if (copy) copy.textContent = 'Krátky výber · jedno odporúčanie';
   }
 
   function enforceJolkaCredit() {

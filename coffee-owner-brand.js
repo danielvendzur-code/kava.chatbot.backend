@@ -44,14 +44,14 @@
   const KEEPS = [
     ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
     ['Pozná vašu ponuku', 'pracuje s vašimi kávami a cenami'],
-    ['Výber cez štyri otázky', 'na konci jedna konkrétna káva'],
+    ['Výber podľa vašich potrieb', 'na konci jedna konkrétna káva'],
     ['História konverzácií', 'vidíte, na čo sa zákazníci pýtajú']
   ];
 
   const PRICING = {
     sums: [
       ['247', 'jednorazovo', 'nastavenie a naplnenie vašimi kávami'],
-      ['10', 'mesačne', 'prevádzka, zmeny v ponuke, opravy']
+      ['10', 'mesačne', 'prevádzka']
     ],
     trial: 'Prvý mesiac zdarma',
     note: 'Bez viazanosti, vypnete kedykoľvek.',
@@ -61,7 +61,7 @@
     included: [
       ['Chatbot s vašimi kávami', 'Vaše kávy a ceny, nie všeobecné odpovede.'],
       ['Odpovedá aj o polnoci', 'Pôvod, praženie, príprava aj porovnanie dvoch káv.'],
-      ['Výber cez štyri otázky', 'Chuť, príprava, nápoj a kofeín — na konci jedna konkrétna káva.'],
+      ['Výber podľa vašich potrieb', 'Chuť, príprava, nápoj a kofeín — na konci jedna konkrétna káva.'],
 
       ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.']
     ]

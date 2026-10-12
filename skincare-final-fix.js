@@ -31,7 +31,7 @@
     teaser.className = 'cx-teaser';
     teaser.innerHTML = `
       <button class="cx-teaser-open" type="button" aria-label="Otvoriť výber starostlivosti">
-        <b>Pomôcť s výberom?</b><span>4 otázky · konkrétny produkt</span>
+        <b>Pomôcť s výberom?</b><span>Pár otázok · konkrétny produkt</span>
       </button>
       <button class="cx-teaser-close" type="button" aria-label="Zavrieť náhľad">×</button>`;
     originalTeaser.replaceWith(teaser);

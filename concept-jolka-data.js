@@ -130,9 +130,9 @@ window.JOLKA = (() => {
     heroTitle: 'Vitajte vo vašom návrhu kávového poradcu pre Concept Coffee Roasters.',
     heroLead: 'Poradca vysvetlí chuť, pôvod aj prípravu a odporučí jednu konkrétnu sezónnu kávu.',
     heroImageAlt: 'Káva Concept Coffee Roasters', ownerCredit: 'ukážka pre Concept Coffee Roasters',
-    teaserTitle: 'Nájdite svoju kávu', teaserText: '4 otázky · jedno odporúčanie',
+    teaserTitle: 'Nájdite svoju kávu', teaserText: 'Krátky výber · jedno odporúčanie',
     dialogLabel: 'Kávový poradca Concept Coffee Roasters', advisorLabel: 'Online poradca',
-    entryKicker: 'Kávový výber', entryTitle: 'Nájdite svoju kávu', entryText: '4 otázky · jedno odporúčanie'
+    entryKicker: 'Kávový výber', entryTitle: 'Nájdite svoju kávu', entryText: 'Krátky výber · jedno odporúčanie'
   };
 
   return { brand, acidityScale, prepLabels, products, steps, chat, fallbacks, demo };

@@ -261,7 +261,7 @@
       const title = teaser.querySelector('strong,b');
       const copy = teaser.querySelector('span');
       if (title) title.textContent = 'Nájdite svoju kávu';
-      if (copy) copy.textContent = '4 otázky · jedno odporúčanie';
+      if (copy) copy.textContent = 'Krátky výber · jedno odporúčanie';
 
       const launcher = document.querySelector('#launcherButton');
       if (launcher && launcher.dataset.cfLauncherLogo !== 'true') {

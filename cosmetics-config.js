@@ -211,7 +211,7 @@
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/lavelin-logo.png\" alt=\"Lavelin\">",
       hero:'/assets/cosmetics/lavelin.jpg',
       ownerNote:"Séra a krémy sa líšia účinnou látkou, nie typom pleti — zákazník z názvu nevyčíta, ktorý je preňho.",
-      benefit:["Účinná látka preložená na typ pleti","Výber za štyri otázky","Odpovie aj mimo otváracích hodín"],
+      benefit:["Účinná látka preložená na typ pleti","Výber podľa potrieb","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'sipkovy',name:"Vyživujúci pleťový krém so šípkovým olejom",price:"17,00 €",url:"https://www.lavelin.sk/tovar/vyzivujuci-pletovy-krem-so-sipkovym-olejom/",photo:'/assets/cosmetics/lavelin-sipkovy.jpg',tags:['dry','sensitive','calm','cream','simple','basic'],reason:"Výživná krémová voľba pre suchšiu a citlivejšiu pleť — šípkový olej vracia komfort bez zaťaženia."},
         {id:'bakuchiol',name:"Pleťové sérum s bakuchiolom",price:"25,00 €",url:"https://www.lavelin.sk/tovar/pletove-serum-s-bakuchiolom/",photo:'/assets/cosmetics/lavelin-bakuchiol.jpg',tags:['mature','dry','serum','target','full'],reason:"Rastlinná alternatíva retinolu pre zrelšiu pleť — cielený krok proti vráskam, ktorý pleť nedráždi."},
@@ -253,7 +253,7 @@
       wordmark:"<img class=\"cx-wordmark cx-logo\" src=\"/assets/cosmetics/syncare-logo.png\" alt=\"Syncare\">",
       hero:'/assets/cosmetics/syncare.jpg',
       ownerNote:"Názvy ako GlycoRETINAL+C, NICREAM či BOOSTER hovoria o zložení, nie o tom, komu produkt sadne.",
-      benefit:["Zloženie preložené na typ pleti","Výber za štyri otázky","Odpovie aj mimo otváracích hodín"],
+      benefit:["Zloženie preložené na typ pleti","Výber podľa potrieb","Odpovie aj mimo otváracích hodín"],
       products:[
         {id:'glycoretinal',name:"GlycoRETINAL+C krém pre pleť so sklonom k akné",price:"23,40 €",url:"https://www.syncare.sk/p/glycoretinal-c-krempre-plet-so-sklonom-k-akne",photo:'/assets/cosmetics/syncare-glycoretinal.jpg',tags:['oily','clarity','cream','target','full'],reason:"Kombinácia kyselín a retinalu pre pleť so sklonom k akné — cielený krok proti nedokonalostiam."},
         {id:'centelaria',name:"CENTELARIA upokojujúca maska pre citlivú pleť",price:"13,10 €",url:"https://www.syncare.sk/p/maska-ukludnujuca-so-shea-maslom-bio",photo:'/assets/cosmetics/syncare-centelaria.jpg',tags:['sensitive','calm','basic','simple','any'],reason:"Okamžitá úľava pre podráždenú a citlivú pleť — jednoduchý doplnok, keď pleť potrebuje upokojiť."},

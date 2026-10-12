@@ -1,3 +1,4 @@
+import {fullCoffeeReply} from './full-coffee-reply.js';
 import {verifiedCoffeeReply} from './verified-coffee-reply.js';
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const MODEL = process.env.CHAT_MODEL || 'claude-haiku-4-5';
@@ -459,6 +460,7 @@ export default async function handler(req,res){
   while(messages.at(-1)?.role==='assistant')messages.pop();
   const latest=messages.filter((m)=>m.role==='user').at(-1)?.content||'';
   if(!latest) return res.status(400).json({error:'Missing user message'});
+  const full=await fullCoffeeReply(String(body.demoId||''),latest,messages);if(full)return res.status(200).json({reply:full,fallback:true});
   const verified=verifiedCoffeeReply(String(body.demoId||''),latest);if(verified)return res.status(200).json({reply:verified,fallback:true});
   const fallback=()=>res.status(200).json({reply:deterministicReply(demo,latest),fallback:true});
 

@@ -7,11 +7,11 @@
   for (const [slug, catalogue] of Object.entries(catalogues)) {
     const brand = data.brands[slug];
     if (!brand) continue;
-    if(slug!=='ponio')brand.avatarIcon='/assets/catalogue/logos/'+slug+'-symbol.png';
+    if(['almara','bellcoria','dulcia','liqoil','modrapupava','monlevur','mujluj','mydlitto','mylo','noili','pimpinella','puaree','two','yemna'].includes(slug))brand.avatarIcon='/assets/catalogue/logos/'+slug+'-symbol.png';
     brand.catalogue = catalogue.products;
     brand.catalogueVerifiedAt = catalogue.verifiedAt;
     const face = catalogue.products.filter(p => p.category === 'face' && !p.isSample);
     if (face.length) brand.products = face;
   }
-  window.CX_CATALOGUE_REPLY = (slug,text) => globalThis.CXCatalogueReplyCore?.(catalogues,slug,text) || '';
+  window.CX_CATALOGUE_REPLY = (slug,text,history=[])=> globalThis.CXCatalogueReplyCore?.(catalogues,slug,text,history) || '';
 })();
