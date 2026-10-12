@@ -127,3 +127,6 @@ body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-que
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-option.cx-quality-option .cx-quality-photo{aspect-ratio:3/2!important;height:auto!important;min-height:0!important;}
 
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-options{grid-auto-rows:1fr!important;}
+
+/* Phones: the launcher stays visible; its invitation bubble would cover the page copy. */
+@media(max-width:760px){body #cosmetics-root#cosmetics-root .cx-launcher .cx-teaser{display:none!important;}}

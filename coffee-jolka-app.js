@@ -97,7 +97,9 @@
 
   function rank(answers) {
     return products
-      .filter(product=>product.available!==false).map((product) => ({ product, value: score(product, answers), unmet: unmet(product, answers) })).filter(entry=>!entry.unmet.length)
+      .filter(product=>product.available!==false).map((product) => ({ product, value: score(product, answers), unmet: unmet(product, answers) }))
+      /* Caffeine is a firm requirement; for the rest the closest coffee is shown with an honest note. */
+      .filter(entry=>!entry.unmet.includes('caffeine'))
       .sort((left, right) => left.unmet.length - right.unmet.length || right.value - left.value || left.product.name.localeCompare(right.product.name, 'sk'));
   }
 
@@ -434,10 +436,10 @@
 
     advisor.innerHTML = `
       <div class="result">
-        ${current.unmet.length ? `<p class="result__nomatch"><b>Presnú zhodu v ponuke nemáme.</b> Žiadna káva nespĺňa naraz vašu ${current.unmet.map((key) => key === 'prep' ? 'prípravu' : key==='caffeine'?'požiadavku na kofeín':'aciditu').join(' aj ')}. Toto je najbližšia možnosť – alebo zmeňte odpovede.</p>` : ''}<span class="result__badge">${current.unmet.length ? 'Najbližšia možnosť' : product.id === best.product.id ? 'Odporúčam vám' : 'Vaša voľba'}</span>
+        ${current.unmet.length ? `<p class="result__nomatch"><b>Presnú zhodu v ponuke nemáme.</b> Žiadna káva nespĺňa naraz vašu ${current.unmet.map((key) => ({prep:'prípravu',caffeine:'požiadavku na kofeín',taste:'chuť',drink:'spôsob pitia'})[key]||'aciditu').join(' aj ')}. Toto je najbližšia možnosť – alebo zmeňte odpovede.</p>` : ''}<span class="result__badge">${current.unmet.length ? 'Najbližšia možnosť' : product.id === best.product.id ? 'Odporúčam vám' : 'Vaša voľba'}</span>
         <div class="result__hero">
           <img class="result__photo" src="${esc(product.photo)}" alt="${esc(product.name)}" width="132" height="178">
-          <div class="result__headline"><h2>${esc(product.name)}</h2><p>${esc(product.line)}</p><span class="result__price"><b>${esc(product.price)}</b><span>/ ${esc(product.priceUnit)}</span></span>${product.roast ? `<small class="result__weights">${esc(product.roast)}</small>` : ''}</div>
+          <div class="result__headline"><h2>${esc(product.name)}</h2>${product.line?`<p>${esc(product.line)}</p>`:''}<span class="result__price"><b>${esc(product.price)}</b>${product.priceUnit?`<span>/ ${esc(product.priceUnit)}</span>`:''}</span>${product.roast ? `<small class="result__weights">${esc(product.roast)}</small>` : ''}</div>
         </div>
         <div class="result__body">
           <div class="notes">${product.notes.map((note) => `<span>${esc(note)}</span>`).join('')}</div>
@@ -454,12 +456,13 @@
     const addButton = $('#addToCart');
     addButton.addEventListener('click', () => window.open(product.url || brand.shopUrl, '_blank', 'noopener,noreferrer'));
     $('#restart').addEventListener('click', resetAdvisor);
-    if(ranked.length>1){
+    const exact=ranked.filter(e=>!e.unmet.length);
+    if(exact.filter(e=>e.product.id!==product.id).length){
       const more=document.createElement('details');more.className='coffee-more-matches';
-      const title=document.createElement('summary');title.textContent='Ďalšie kávy spĺňajúce váš výber ('+(ranked.length-1)+')';more.append(title);
+      const title=document.createElement('summary');title.textContent='Ďalšie kávy spĺňajúce váš výber ('+exact.filter(e=>e.product.id!==product.id).length+')';more.append(title);
       const list=document.createElement('div');let count=0;
-      function append(){const rows=ranked.filter(e=>e.product.id!==product.id).slice(count,count+24);for(const row of rows){const p=row.product;const link=document.createElement('a');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.className='coffee-match-link';link.innerHTML='<img src="'+esc(p.photo)+'" alt="" loading="lazy"><span><b>'+esc(p.name)+'</b><small>'+esc(p.notes.join(' · '))+'</small><strong>'+esc(p.price)+'</strong></span>';list.append(link);}count+=rows.length;}
-      append();more.append(list);if(ranked.length-1>count){const next=document.createElement('button');next.className='ghost';next.type='button';next.textContent='Načítať ďalšie';next.addEventListener('click',()=>{append();if(count>=ranked.length-1)next.remove();});more.append(next);}advisor.append(more);
+      function append(){const rows=exact.filter(e=>e.product.id!==product.id).slice(count,count+24);for(const row of rows){const p=row.product;const link=document.createElement('a');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.className='coffee-match-link';link.innerHTML='<img src="'+esc(p.photo)+'" alt="" loading="lazy"><span><b>'+esc(p.name)+'</b><small>'+esc(p.notes.join(' · '))+'</small><strong>'+esc(p.price)+'</strong></span>';list.append(link);}count+=rows.length;}
+      append();more.append(list);if(exact.filter(e=>e.product.id!==product.id).length>count){const next=document.createElement('button');next.className='ghost';next.type='button';next.textContent='Načítať ďalšie';next.addEventListener('click',()=>{append();if(count>=exact.filter(e=>e.product.id!==product.id).length)next.remove();});more.append(next);}advisor.append(more);
     }
     const alternativeButton = $('.alt__card', advisor);
     if (alternativeButton) alternativeButton.addEventListener('click', () => { state.chosen = alternativeButton.dataset.product; renderResult(); advisor.scrollTop = 0; });

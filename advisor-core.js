@@ -74,10 +74,11 @@
       const category = answers.category || categories[0];
       const pool = products.filter(p => p.category === category && p.available !== false);
       const supportedProfiles = profiles.filter(v => pool.some(p => p.signals.includes(v)) && pool.some(p => !p.signals.includes(v)));
-      if (['face', 'hair', 'body'].includes(category) && supportedProfiles.length) result.push({key:'profile', options:[...supportedProfiles, 'any']});
+      /* A question needs at least two real answers; one answer plus "nechám si poradiť" asks nothing. */
+      if (['face', 'hair', 'body'].includes(category) && supportedProfiles.length > 1) result.push({key:'profile', options:[...supportedProfiles, 'any']});
       const profilePool = pool.filter(p => !answers.profile || answers.profile === 'any' || p.signals.includes(answers.profile));
       const relevant = goals.filter(v => profilePool.some(p => p.signals.includes(v)) && profilePool.some(p => !p.signals.includes(v)));
-      if (relevant.length) result.push({key:'goal', options:[...relevant, 'any']});
+      if (relevant.length > 1) result.push({key:'goal', options:[...relevant, 'any']});
       const formPool = pool.filter(p => (!answers.goal || answers.goal === 'any' || p.signals.includes(answers.goal)) && (!answers.profile || answers.profile === 'any' || p.signals.includes(answers.profile)));
       const forms = [...new Set(formPool.map(p => p.kind))];
       if (forms.length > 1) result.push({key:'kind', options:[...forms, 'any']});
@@ -87,7 +88,9 @@
       const facetPool=recommend({...answers,category,budget:'',area:'',time:'',ingredient:'',size:''}).matches;
       if(baseAnswered&&result.length<5){for(const key of ['area','time','ingredient','size']){
         const values=[...new Set(facetPool.map(p=>p.features[key]).filter(Boolean))];
-        if(key==='size'&&new Set(values.map(v=>v.split(' ')[1])).size>1)continue;
+        if(key==='size')values.sort((a,b)=>parseFloat(a)-parseFloat(b));
+        /* Pack size is a real choice only between sizes of one and the same product. */
+        if(key==='size'&&(new Set(values.map(v=>v.split(' ')[1])).size>1||new Set(facetPool.map(p=>norm(p.name).replace(/\s*[–-]?\s*\d+(?:[.,]\d+)?\s*(ml|g|kg|l)\b.*$/,''))).size>1))continue;
         if(values.length<2||values.length>4)continue;
         result.push({key,options:[...values,'any']});break;
       }}
