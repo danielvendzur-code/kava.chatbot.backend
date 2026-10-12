@@ -78,14 +78,20 @@
     return total;
   }
 
-  function rank(answers) {
-    return products
-      .map((product) => ({ product, value: score(product, answers) }))
-      .sort((left, right) => right.value - left.value || left.product.name.localeCompare(right.product.name, 'sk'));
+  /* Conditions a coffee must really meet; taste and drink stay weighted preferences. */
+  function unmet(product, answers) {
+    const missing = [];
+    if (answers.prep && (product.prep?.[answers.prep] ?? 0) < 0.6) missing.push('prep');
+    const acidity = Number.isFinite(product.acidity) ? product.acidity : 1;
+    if (answers.acidity === 'none' && acidity > 1) missing.push('acidity');
+    if (answers.acidity === 'bright' && acidity < 2) missing.push('acidity');
+    return missing;
   }
 
-  function matchPercent(value) {
-    return Math.max(62, Math.min(97, Math.round(50 + (value / MAX_SCORE) * 47)));
+  function rank(answers) {
+    return products
+      .map((product) => ({ product, value: score(product, answers), unmet: unmet(product, answers) }))
+      .sort((left, right) => left.unmet.length - right.unmet.length || right.value - left.value || left.product.name.localeCompare(right.product.name, 'sk'));
   }
 
   const state = {
@@ -343,7 +349,7 @@
 
   function optionVisual(option, stepKey) {
     const product = option.product ? byId[option.product] : null;
-    const source = (demo.productOptionPhotos && (option.photo || product?.tile || product?.photo)) || CHOICE_PHOTOS[stepKey]?.[option.value]
+    const source = CHOICE_PHOTOS[stepKey]?.[option.value]
       || option.photo || product?.tile || product?.photo || demo.entryImage;
     return `<span class="option__visual"><img src="${esc(source)}" alt="" loading="lazy" width="240" height="192"></span>`;
   }
@@ -399,12 +405,12 @@
     const best = ranked[0];
     const current = state.chosen ? ranked.find((entry) => entry.product.id === state.chosen) || best : best;
     const product = current.product;
-    const alternative = ranked.find((entry) => entry.product.id !== product.id);
+    const alternative = ranked.find((entry) => entry.product.id !== product.id && !entry.unmet.length);
     const acidityLabel = acidityScale[product.acidity] || acidityScale[1] || 'jemná';
 
     advisor.innerHTML = `
       <div class="result">
-        <span class="result__badge">${product.id === best.product.id ? 'Najlepšia zhoda' : 'Vaša voľba'} · ${matchPercent(current.value)} %</span>
+        ${current.unmet.length ? `<p class="result__nomatch"><b>Presnú zhodu v ponuke nemáme.</b> Žiadna káva nespĺňa naraz vašu ${current.unmet.map((key) => key === 'prep' ? 'prípravu' : 'aciditu').join(' aj ')}. Toto je najbližšia možnosť – alebo zmeňte odpovede.</p>` : ''}<span class="result__badge">${current.unmet.length ? 'Najbližšia možnosť' : product.id === best.product.id ? 'Odporúčam vám' : 'Vaša voľba'}</span>
         <div class="result__hero">
           <img class="result__photo" src="${esc(product.photo)}" alt="${esc(product.name)}" width="132" height="178">
           <div class="result__headline"><h2>${esc(product.name)}</h2><p>${esc(product.line)}</p><span class="result__price"><b>${esc(product.price)}</b><span>/ ${esc(product.priceUnit)}</span></span><small class="result__weights">${esc(product.weights)}${product.priceFrom ? ` · ${esc(product.priceFrom)}` : ''}${product.roast ? ` · ${esc(product.roast)}` : ''}</small></div>
@@ -415,23 +421,15 @@
           <div class="facts"><div class="fact"><b>${icons.drop} Acidita</b><span class="fact__value">${dots(product.acidity)} ${esc(acidityLabel)}</span></div><div class="fact"><b>${icons.cup} Príprava</b><span class="fact__value">${esc(product.bestFor)}</span></div></div>
           <p class="acidity-note">${esc(product.acidityNote)}</p>
           ${product.bulk ? `<div class="bulk"><b>${esc(product.bulk.label)}</b><span>${esc(product.bulk.saving)}</span></div>` : ''}
-          ${alternative ? `<div class="alt"><span>Ak by ste chceli inú</span><button class="alt__card" type="button" data-product="${esc(alternative.product.id)}"><img src="${esc(alternative.product.photo)}" alt="" loading="lazy" width="42" height="58"><div><b>${esc(alternative.product.name)}</b><small>${esc(alternative.product.notes.slice(0, 2).join(' · '))} · ${matchPercent(alternative.value)} % zhoda</small></div>${icons.arrow}</button></div>` : ''}
+          ${alternative ? `<div class="alt"><span>Ak by ste chceli inú</span><button class="alt__card" type="button" data-product="${esc(alternative.product.id)}"><img src="${esc(alternative.product.photo)}" alt="" loading="lazy" width="42" height="58"><div><b>${esc(alternative.product.name)}</b><small>${esc(alternative.product.notes.slice(0, 2).join(' · '))}</small></div>${icons.arrow}</button></div>` : ''}
         </div>
       </div>`;
 
     advisorFoot.hidden = false;
-    advisorFoot.innerHTML = `<button class="cta" type="button" id="addToCart">${demo.productOptionPhotos?'Otvoriť v e-shope':'Pridať do košíka'} ${icons.shop}</button><div class="foot-row"><a class="foot-link" href="${esc(product.url)}" target="_blank" rel="noreferrer" id="productCta">Detail produktu</a><button class="ghost" type="button" id="restart">Zmeniť odpovede</button></div><p class="cart-note" role="status" hidden></p>`;
+    advisorFoot.innerHTML = `<button class="cta" type="button" id="addToCart">Otvoriť v e-shope ${icons.shop}</button><div class="foot-row"><button class="ghost" type="button" id="restart">Zmeniť odpovede</button></div>`;
 
     const addButton = $('#addToCart');
-    const cartNote = $('.cart-note', advisorFoot);
-    addButton.addEventListener('click', () => {
-      if(demo.productOptionPhotos){window.open(product.url,'_blank','noopener,noreferrer');return;}
-      if (addButton.classList.contains('is-added')) return;
-      addButton.classList.add('is-added');
-      addButton.innerHTML = `Pridané do košíka ${icons.check}`;
-      cartNote.textContent = `${product.name} je v košíku.`;
-      cartNote.hidden = false;
-    });
+    addButton.addEventListener('click', () => window.open(product.url || brand.shopUrl, '_blank', 'noopener,noreferrer'));
     $('#restart').addEventListener('click', resetAdvisor);
     const alternativeButton = $('.alt__card', advisor);
     if (alternativeButton) alternativeButton.addEventListener('click', () => { state.chosen = alternativeButton.dataset.product; renderResult(); advisor.scrollTop = 0; });
@@ -480,8 +478,10 @@
   }
 
   function fallbackAnswer(text) {
-    const query = String(text ?? '').toLocaleLowerCase('sk');
-    const hit = fallbacks.find((entry) => entry.match.some((needle) => query.includes(needle)));
+    /* Matching ignores diacritics and understands the Czech spelling of the same words. */
+    const fold = (value) => String(value ?? '').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
+    const query = fold(text).replace(/filtr(?!e)/g, 'filter').replace(/mlek/g, 'mliek').replace(/neco/g, 'nieco').replace(/netradicniho/g, 'netradicne');
+    const hit = fallbacks.find((entry) => entry.match.some((needle) => query.includes(fold(needle))));
     const product = hit && byId[hit.product];
     if (product) return `${esc(hit.lead)} <b>${esc(product.name)}</b>. ${esc(product.why)} ${esc(product.price)}.${demo.productOptionPhotos?` Balenie ${esc(product.priceUnit)}. <a href="${esc(product.url)}" target="_blank" rel="noopener noreferrer">Pozrieť v e-shope ↗</a>`:''}`;
 
@@ -489,7 +489,7 @@
        which names nothing and reads to an owner as if the advisor knows only
        the four questions it was given. The questions every shop is asked are
        answered from this roastery's own catalogue instead. */
-    if (/odkia|pôvod|povod|pestuj|farm|krajin|plantáž|plantaz/.test(query)) {
+    if (/odkia|odkud|povod|puvod|pestuj|farm|krajin|zeme|plantaz/.test(query)) {
       const named = products.filter((item) => item.line).slice(0, 3)
         .map((item) => `${item.name} (${item.line})`);
       if (named.length) {
@@ -497,13 +497,13 @@
           + 'Napíšte, akú chuť hľadáte, a vyberiem jednu konkrétnu.';
       }
     }
-    if (/cena|ceny|cenu|koľko|kolko|stoj|draho|lacn/.test(query)) {
+    if (/cena|ceny|cenu|kolko|kolik|stoj|draho|lacn|levn/.test(query)) {
       const weights = heroProduct.weights ? ` (${heroProduct.weights})` : '';
       return `Ceny sa líšia podľa gramáže — <b>${esc(heroProduct.name)}</b> je `
         + `${esc(heroProduct.price)} / ${esc(heroProduct.priceUnit || 'balenie')}${esc(weights)}. `
         + 'Cez krátky výber vyberiem tú, ktorá vám sadne, aj s cenou.';
     }
-    if (/porovna|rozdiel|lepš|leps|ktorá|ktora|ktorú|ktoru/.test(query)) {
+    if (/porovna|srovna|rozdiel|rozdil|leps|ktora|ktoru|ktera|kterou/.test(query)) {
       const [first, second] = products;
       if (first && second) {
         return `<b>${esc(first.name)}</b>: ${esc(first.why)} <b>${esc(second.name)}</b>: ${esc(second.why)}`;
@@ -612,75 +612,5 @@
   setTimeout(() => {
     if (!widget.classList.contains('is-open') && !state.teaserDismissed) teaser.classList.add('is-visible');
   }, 1200);
-})();
-
-/* Real company logos in black assistant-avatar circles, independent of launcher artwork. */
-(() => {
-  'use strict';
-  const slug = document.body?.dataset?.cosmeticsDemo;
-  const brand = window.COSMETICS_DEMOS?.brands?.[slug];
-  const coffee = window.JOLKA;
-  const root = document.querySelector('#cosmetics-root') || document.getElementById(coffee?.demo?.rootId || '');
-  if (!root || (!brand && !coffee?.brand)) return;
-  const name = brand?.name || coffee.brand.name;
-  const header = root.querySelector('.cx-widget-brand img.cx-logo');
-  const original = (coffee?.demo?.productOptionPhotos && coffee?.demo?.logoAvatar) || header?.getAttribute('src') || coffee?.demo?.logoHeader || brand?.mark || coffee?.demo?.logoAvatar;
-  if (!original) return;
-  const style = document.createElement('style');
-  style.dataset.companyMessageLogo = 'black-real-logo-v1';
-  style.textContent = `
-    body #cosmetics-root#cosmetics-root .cx-message--assistant .cx-message-avatar,
-    body #widget#widget .msg__avatar { background:#141414 !important; background-image:none !important; color:#fff !important; border:0 !important; border-radius:50% !important; display:flex !important; align-items:center !important; justify-content:center !important; }
-    body #cosmetics-root#cosmetics-root .cx-message-avatar .cx-company-message-logo,
-    body #widget#widget .msg__avatar .cx-company-message-logo { display:block !important; width:calc(100% - 8px) !important; height:calc(100% - 8px) !important; min-width:0 !important; max-width:none !important; min-height:0 !important; max-height:none !important; flex:none !important; margin:0 !important; border:0 !important; border-radius:0 !important; background:transparent var(--cx-company-message-art) center / contain no-repeat !important; mask:none !important; -webkit-mask:none !important; filter:none !important; transform:none !important; }
-  `;
-  document.head.append(style);
-  let artwork = original;
-  let revision = 0;
-  const sync = () => root.querySelectorAll('.cx-message--assistant .cx-message-avatar,.msg:not(.msg--user) .msg__avatar').forEach(avatar => {
-    if (avatar.dataset.realCompanyRevision === String(revision) && avatar.querySelector('.cx-company-message-logo')) return;
-    const logo = document.createElement('span');
-    // Older brand observers recognize these markers and leave the real logo intact.
-    logo.className = 'cx-company-message-logo cx-avatar-company-logo cx-new-mark cx-mark-swap cx-cyprianus-symbol';
-    logo.setAttribute('role', 'img');
-    logo.setAttribute('aria-label', name);
-    logo.style.setProperty('--cx-company-message-art', 'url(' + JSON.stringify(artwork) + ')');
-    avatar.replaceChildren(logo);
-    avatar.dataset.realCompanyRevision = String(revision);
-    avatar.dataset.realCompanySource = original;
-  });
-  sync();
-  new MutationObserver(sync).observe(root, {childList:true, subtree:true});
-  const image = new Image();
-  image.onload = () => {
-    if(coffee?.demo?.productOptionPhotos) return;
-    try {
-      const scale = Math.min(1, 480 / Math.max(image.naturalWidth, image.naturalHeight));
-      const canvas = document.createElement('canvas');
-      canvas.width = Math.max(1, Math.round(image.naturalWidth * scale));
-      canvas.height = Math.max(1, Math.round(image.naturalHeight * scale));
-      const ctx = canvas.getContext('2d', {willReadFrequently:true});
-      ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
-      const pixels = ctx.getImageData(0, 0, canvas.width, canvas.height);
-      const px = pixels.data, w = canvas.width, h = canvas.height;
-      const corners = [0, w-1, (h-1)*w, h*w-1].map(p=>Array.from(px.slice(p*4,p*4+4)));
-      const distance = (a,b) => Math.hypot(a[0]-b[0],a[1]-b[1],a[2]-b[2]);
-      const plate = corners.every(c=>c[3]>245 && distance(c,corners[0])<18) ? corners[0] : null;
-      let x0=w, y0=h, x1=-1, y1=-1;
-      for(let y=0;y<h;y++) for(let x=0;x<w;x++) {
-        const i=(y*w+x)*4;
-        if(plate) { const d=distance([px[i],px[i+1],px[i+2]],plate); px[i+3]=Math.round(px[i+3]*Math.min(1,Math.max(0,(d-18)/42))); }
-        if(px[i+3]>12) { x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y); }
-        px[i]=px[i+1]=px[i+2]=255;
-      }
-      if(x1<x0 || y1<y0) return;
-      ctx.putImageData(pixels,0,0);
-      const out=document.createElement('canvas');
-      out.width=x1-x0+5;out.height=y1-y0+5;
-      out.getContext('2d').drawImage(canvas,x0,y0,x1-x0+1,y1-y0+1,2,2,x1-x0+1,y1-y0+1);
-      artwork=out.toDataURL('image/png');revision++;sync();
-    } catch (_) { /* Preserve the real source artwork if canvas access is unavailable. */ }
-  };
-  image.src=original;
 })();
 

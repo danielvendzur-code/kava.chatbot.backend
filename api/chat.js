@@ -466,7 +466,7 @@ export default async function handler(req,res){
 
   const system=[
     `Ste stručný online kávový poradca pre ${demo.brand}.`,
-    'Odpovedajte jednoduchou a gramaticky správnou slovenčinou. Napíšte presne dve krátke vety.',
+    /\.cz(\/|$)/.test(String(demo.web||''))?'Odpovídejte jednoduchou a gramaticky správnou češtinou, i když jsou podklady níže slovensky. Napište přesně dvě krátké věty.':'Odpovedajte jednoduchou a gramaticky správnou slovenčinou. Napíšte presne dve krátke vety.',
     'Používajte vykanie bez rodových tvarov. Odpoveď neukončujte otázkou ani výzvou na ďalšiu konverzáciu.',
     'Odporučiť môžete iba presný názov produktu zo zoznamu Overené produkty. Nikdy nevymýšľajte názvy, fakty, ceny ani kontakty.',
     'Vhodnosť na automat, espresso, filter, mlieko alebo bezkofeínovú voľbu spomeňte iba vtedy, keď je priamo uvedená pri produkte.',
