@@ -50,6 +50,46 @@
     'Do automatu a na väčšiu spotrebu je stavaná': 'Do automatu a na větší spotřebu je stavěná', 'Na filter odporúčam': 'Na filtr doporučuji', 'Najnetradičnejšia káva v ponuke je': 'Nejnetradičnější káva v nabídce je', 'Bez kofeínu je tu': 'Bez kofeinu je tu',
     'Napíšte, akú kávu hľadáte…': 'Napište, jakou kávu hledáte…', 'Napíšte otázku o káve': 'Napište otázku o kávě', 'Otvoriť kávového poradcu': 'Otevřít kávového poradce',
     'Presnú zhodu v ponuke nemáme.': 'Přesnou shodu v nabídce nemáme.',
+// skincare
+    'Chatbot s vaším katalógom': 'Chatbot s vaším katalogem', 'Vaše produkty a ceny, nie všeobecné odpovede.': 'Vaše produkty a ceny, ne obecné odpovědi.',
+    'Zloženie, typ pleti, rutina aj porovnanie dvoch produktov.': 'Složení, typ pleti, rutina i srovnání dvou produktů.',
+    'Výber podľa potrieb': 'Výběr podle potřeb', 'Typ pleti, priorita, typ produktu a rozpočet — na konci konkrétny produkt.': 'Typ pleti, priorita, typ produktu a rozpočet — na konci konkrétní produkt.',
+    'Poradí zákazníkovi starostlivosť a odpovie mu na otázky.': 'Poradí zákazníkovi péči a odpoví mu na otázky.', 'pracuje s vašimi produktmi a cenami': 'pracuje s vašimi produkty a cenami',
+    'Výber podľa vašich potrieb': 'Výběr podle vašich potřeb', 'na konci konkrétny produkt': 'na konci konkrétní produkt', 'nastavenie a naplnenie vašimi produktmi': 'nastavení a naplnění vašimi produkty',
+    'Pomôcť s výberom?': 'Pomoci s výběrem?', 'Pár otázok · konkrétny produkt': 'Pár otázek · konkrétní produkt', 'Výber starostlivosti': 'Výběr péče', 'VÝBER STAROSTLIVOSTI': 'VÝBĚR PÉČE',
+    'Nájsť vhodný produkt': 'Najít vhodný produkt', 'Vaše potreby · typ produktu · rozpočet': 'Vaše potřeby · typ produktu · rozpočet',
+    'Mám suchú pleť': 'Mám suchou pleť', 'Produkty na vlasy': 'Produkty na vlasy', 'Starostlivosť o telo': 'Péče o tělo', 'Darčekové sady': 'Dárkové sady',
+    'Otvoriť výber starostlivosti': 'Otevřít výběr péče', 'Opýtajte sa na starostlivosť…': 'Zeptejte se na péči…', 'Otázka': 'Otázka', 'Odoslať': 'Odeslat', 'Poradca pri výbere starostlivosti': 'Poradce při výběru péče',
+    'Oblasť': 'Oblast', 'S čím vám môžem pomôcť?': 'S čím vám mohu pomoci?', 'Najprv vyberte oblasť starostlivosti.': 'Nejprve vyberte oblast péče.',
+    'Pleť': 'Pleť', 'Pery': 'Rty', 'Telo': 'Tělo', 'Vlasy': 'Vlasy', 'Darčeky a sady': 'Dárky a sady', 'Doplnky a ďalšia ponuka': 'Doplňky a další nabídka', 'Doplnky výživy': 'Doplňky stravy', 'Líčenie': 'Líčení',
+    'Okolie očí': 'Oční okolí', 'Brada': 'Vousy', 'Deti a mamy': 'Děti a maminky', 'Vône do domácnosti': 'Vůně do domácnosti', 'Čaje': 'Čaje',
+    'Vaše potreby': 'Vaše potřeby', 'Aká je vaša pleť?': 'Jaká je vaše pleť?', 'Ako sa cíti vaša pokožka?': 'Jak se cítí vaše pokožka?', 'Aké sú vaše vlasy a pokožka hlavy?': 'Jaké jsou vaše vlasy a pokožka hlavy?',
+    'Zohľadním to pri odporúčaní.': 'Zohledním to při doporučení.', 'Suchá a napnutá': 'Suchá a napjatá', 'Chýba jej komfort': 'Chybí jí komfort', 'Mastná alebo zmiešaná': 'Mastná nebo smíšená', 'Lesk a nedokonalosti': 'Lesk a nedokonalosti',
+    'Citlivá': 'Citlivá', 'Reaguje na bežnú starostlivosť': 'Reaguje na běžnou péči', 'Bez výrazného problému': 'Bez výrazného problému', 'Bežná každodenná starostlivosť': 'Běžná každodenní péče',
+    'Nechám si poradiť': 'Nechám si poradit', 'Podľa ostatných odpovedí': 'Podle ostatních odpovědí', 'Suché vlasy': 'Suché vlasy', 'Potrebujú výživu a komfort': 'Potřebují výživu a komfort',
+    'Rýchlo sa mastiace': 'Rychle se mastící', 'Starostlivosť o vlasy a pokožku hlavy': 'Péče o vlasy a pokožku hlavy', 'Citlivá pokožka hlavy': 'Citlivá pokožka hlavy', 'Jemná starostlivosť': 'Jemná péče', 'Bežné umývanie a starostlivosť': 'Běžné mytí a péče',
+    'Priorita': 'Priorita', 'Čo je pre vás najdôležitejšie?': 'Co je pro vás nejdůležitější?', 'Vyberte jednu hlavnú potrebu.': 'Vyberte jednu hlavní potřebu.',
+    'Hydratácia a výživa': 'Hydratace a výživa', 'Doplniť bežnú starostlivosť': 'Doplnit běžnou péči', 'Komfort a upokojenie': 'Komfort a zklidnění', 'Menej mastenia': 'Méně maštění', 'Cielenejšia starostlivosť': 'Cílenější péče',
+    'Každodenná starostlivosť': 'Každodenní péče', 'Pravidelný základ': 'Pravidelný základ', 'Pružnosť a zrelá pleť': 'Pružnost a zralá pleť', 'Starostlivosť proti vráskam': 'Péče proti vráskám',
+    'Čistenie a umývanie': 'Čištění a mytí', 'Čistý základ starostlivosti': 'Čistý základ péče',
+    'Typ produktu': 'Typ produktu', 'Ktorý typ produktu hľadáte?': 'Jaký typ produktu hledáte?', 'Vyberte formu, ktorú chcete používať.': 'Vyberte formu, kterou chcete používat.', 'Forma nie je pre mňa dôležitá': 'Forma pro mě není důležitá',
+    'Krémy a balzamy': 'Krémy a balzámy', 'Šampóny': 'Šampony', 'Séra': 'Séra', 'Oleje': 'Oleje', 'Masky': 'Masky', 'Gély': 'Gely', 'Krémy': 'Krémy', 'Toniká a vody': 'Tonika a vody', 'Kondicionéry': 'Kondicionéry',
+    'Doplnky': 'Doplňky', 'Darčekové poukazy': 'Dárkové poukazy', 'Vône': 'Vůně', 'Sviečky': 'Svíčky', 'Iné produkty': 'Jiné produkty', 'Ďalšia ponuka': 'Další nabídka', 'Starostlivosť': 'Péče',
+    'Rozpočet': 'Rozpočet', 'Do akej sumy vyberáme?': 'Do jaké částky vybíráme?', 'Cena jedného produktu.': 'Cena jednoho produktu.', 'Bez limitu': 'Bez limitu', 'Rozhodne vhodnosť produktu': 'Rozhodne vhodnost produktu',
+    'Váš výber': 'Váš výběr', 'Toto vám odporúčam': 'Tohle vám doporučuji', 'Konkrétny produkt podľa vašich odpovedí.': 'Konkrétní produkt podle vašich odpovědí.', 'Prečo práve tento': 'Proč právě tento',
+    'Ďalšia vhodná možnosť': 'Další vhodná možnost', 'Skryť ďalšie možnosti': 'Skrýt další možnosti', 'Cenu potvrdí e-shop': 'Cenu potvrdí e-shop',
+    'Takúto kombináciu v ponuke nemáme': 'Takovou kombinaci v nabídce nemáme',
+    'Žiadny produkt nespĺňa všetky vaše odpovede naraz. Skúste upraviť rozpočet alebo sa vráťte o krok späť.': 'Žádný produkt nesplňuje všechny vaše odpovědi najednou. Zkuste upravit rozpočet nebo se vraťte o krok zpět.',
+    'Je to jediný produkt v ponuke, ktorý spĺňa všetky vaše odpovede.': 'Je to jediný produkt v nabídce, který splňuje všechny vaše odpovědi.',
+    'Z produktov, ktoré spĺňajú vaše odpovede, je cenovo najdostupnejší.': 'Z produktů, které splňují vaše odpovědi, je cenově nejdostupnější.',
+    'Otázku liečby kožného ochorenia riešte s lekárom. Môžem vám ukázať kozmetické produkty a odkazy na ich úplné zloženie.': 'Otázku léčby kožního onemocnění řešte s lékařem. Mohu vám ukázat kosmetické produkty a odkazy na jejich úplné složení.',
+    'Táto ponuka má ceny v Kč. Zadajte prosím rozpočet v Kč alebo vyberajte bez cenového limitu.': 'Tato nabídka má ceny v Kč. Zadejte prosím rozpočet v Kč nebo vybírejte bez cenového limitu.',
+    'Takúto formu produktu v tejto oblasti ponuky nemáme. Vyberte inú formu vo Výbere starostlivosti.': 'Takovou formu produktu v této oblasti nabídky nemáme. Vyberte jinou formu ve Výběru péče.',
+    'V overenej ponuke sa nenašla táto kombinácia potrieb a rozpočtu. Skúste upraviť jednu podmienku vo Výbere starostlivosti.': 'V ověřené nabídce se tato kombinace potřeb a rozpočtu nenašla. Zkuste upravit jednu podmínku ve Výběru péče.',
+    'Poradcu sa nepodarilo načítať. Skúste obnoviť stránku.': 'Poradce se nepodařilo načíst. Zkuste obnovit stránku.',
+    'suchú pokožku': 'suchou pokožku', 'mastnú alebo zmiešanú pleť': 'mastnou nebo smíšenou pleť', 'mastnú pokožku': 'mastnou pokožku', 'citlivú pokožku': 'citlivou pokožku', 'pokožku bez výrazného problému': 'pokožku bez výrazného problému',
+    'rýchlo sa mastiace vlasy': 'rychle se mastící vlasy', 'citlivú pokožku hlavy': 'citlivou pokožku hlavy', 'bežné vlasy bez výrazného problému': 'běžné vlasy bez výrazného problému',
+    'hydratácia a výživa': 'hydratace a výživa', 'jemná starostlivosť': 'jemná péče', 'menej mastenia': 'méně maštění', 'pružnosť a zrelá pleť': 'pružnost a zralá pleť', 'čistenie a umývanie': 'čištění a mytí', 'každodenná starostlivosť': 'každodenní péče',
     // tasting notes
     'broskyne': 'broskve', 'kakao': 'kakao', 'jazmínový čaj': 'jasmínový čaj', 'čokoláda': 'čokoláda', 'oriešky': 'oříšky', 'marhule': 'meruňky', 'mliečna čokoláda': 'mléčná čokoláda', 'červené jablko': 'červené jablko',
     'med': 'med', 'pečené jablká': 'pečená jablka', 'vanilka': 'vanilka', 'karamel': 'karamel', 'sušené ovocie': 'sušené ovoce', 'nugát': 'nugát', 'zemitosť': 'zemitost', 'smotana': 'smetana', 'mandarínka': 'mandarinka',
@@ -74,17 +114,34 @@
     [/^(.+) — (.+)\. Chuť: (.+)\.$/, (m, name, price, list) => name + ' — ' + price + '. Chuť: ' + pieces(list) + '.'],
     [/^Táto ukážka vyberá kávu podľa chuti a prípravy\. Úplné informácie o produkte nájdete v oficiálnom e-shope\.$/, 'Tento poradce vybírá kávu podle chuti a přípravy. Úplné informace o produktu najdete v oficiálním e-shopu.'],
     [/^Aktuálne podmienky dopravy, platby a vrátenia nájdete v oficiálnom e-shope\..*$/, 'Aktuální podmínky dopravy, platby a vrácení najdete v oficiálním e-shopu.'],
+[/^Chatbot pre (.+)$/, 'Chatbot pro $1'], [/^(.+) – výber starostlivosti$/, '$1 – výběr péče'], [/^Poradca starostlivosti (.+)$/, 'Poradce péče $1'], [/^Poradca starostlivosti$/, 'Poradce péče'],
+    [/^Dobrý deň\. Vyberajte z ponuky (.+)\. Napíšte, aký produkt hľadáte, alebo otvorte Výber\.$/, 'Dobrý den. Vybírejte z nabídky $1. Napište, jaký produkt hledáte, nebo otevřete Výběr.'],
+    [/^(\d+) (produkt|produkty|produktov)$/, (m, n) => n + (n === '1' ? ' produkt' : +n >= 2 && +n <= 4 ? ' produkty' : ' produktů')],
+    [/^Pozrieť ďalšie možnosti \((\d+)\)$/, 'Zobrazit další možnosti ($1)'], [/^Načítať ďalšie \((\d+)\)$/, 'Načíst další ($1)'], [/^Vzorky — (.+)$/, (m, kind) => 'Vzorky — ' + (exact[kind] ?? kind)],
+    [/^Je určený pre ([^.]+)\.$/, (m, target) => 'Je určený pro ' + (exact[target] ?? target) + '.'],
+    [/^Zodpovedá vašej priorite: ([^.]+)\.$/, (m, goal) => 'Odpovídá vaší prioritě: ' + (exact[goal] ?? goal) + '.'],
+    [/^Zmestí sa do rozpočtu ([^.]+)\.$/, 'Vejde se do rozpočtu $1.'], [/^Úplné zloženie nájdete pri (.+)$/, 'Úplné složení najdete u $1'],
     [/^Žiadna káva nespĺňa naraz vašu (.+)\. Toto je najbližšia možnosť – alebo zmeňte odpovede\.$/, (m, what) => 'Žádná káva nesplňuje zároveň vaši ' + what.replace('prípravu', 'přípravu').replace(' aj ', ' i ') + '. Toto je nejbližší možnost – nebo změňte odpovědi.']
   ];
 
   const pieces = (list) => list.split(/(, | · )/).map((part) => exact[part] ?? part).join('');
   window.CX_LANG_CS = {exact, patterns};
 
+  function one(core) {
+    if (Object.prototype.hasOwnProperty.call(exact, core)) return exact[core];
+    for (const [test, replacement] of patterns) if (test.test(core)) return core.replace(test, replacement);
+    return null;
+  }
+
   function translate(text) {
     const core = text.replace(/\s+/g, ' ').trim();
     if (!core) return null;
     let out = Object.prototype.hasOwnProperty.call(exact, core) ? exact[core] : null;
     if (out === null) for (const [test, replacement] of patterns) if (test.test(core)) { out = core.replace(test, replacement); break; }
+    if (out === null && /[.?!] \S/.test(core)) {
+      const parts = core.split(/(?<=[.?!]) /), done = parts.map((part) => one(part) ?? part);
+      if (done.some((part, index) => part !== parts[index])) out = done.join(' ');
+    }
     if (out === null && /, | · /.test(core)) { const joined = pieces(core); if (joined !== core) out = joined; }
     if (out === null || out === core) return null;
     return text.replace(/^(\s*)[\s\S]*?(\s*)$/, (m, lead, tail) => lead + out + tail);
