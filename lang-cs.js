@@ -90,6 +90,29 @@
     'suchú pokožku': 'suchou pokožku', 'mastnú alebo zmiešanú pleť': 'mastnou nebo smíšenou pleť', 'mastnú pokožku': 'mastnou pokožku', 'citlivú pokožku': 'citlivou pokožku', 'pokožku bez výrazného problému': 'pokožku bez výrazného problému',
     'rýchlo sa mastiace vlasy': 'rychle se mastící vlasy', 'citlivú pokožku hlavy': 'citlivou pokožku hlavy', 'bežné vlasy bez výrazného problému': 'běžné vlasy bez výrazného problému',
     'hydratácia a výživa': 'hydratace a výživa', 'jemná starostlivosť': 'jemná péče', 'menej mastenia': 'méně maštění', 'pružnosť a zrelá pleť': 'pružnost a zralá pleť', 'čistenie a umývanie': 'čištění a mytí', 'každodenná starostlivosť': 'každodenní péče',
+    // tea
+    'Kofeín, druh čaju, chuť a rozpočet — na konci konkrétny čaj.': 'Kofein, druh čaje, chuť a rozpočet — na konci konkrétní čaj.', 'Pár otázok · konkrétny čaj': 'Pár otázek · konkrétní čaj',
+    'Poradí zákazníkovi čaj a odpovie mu na otázky.': 'Poradí zákazníkovi čaj a odpoví mu na otázky.', 'Výber čaju': 'Výběr čaje', 'VÝBER ČAJU': 'VÝBĚR ČAJE', 'Nájsť vhodný čaj': 'Najít vhodný čaj',
+    'Kofeín · druh · chuť · rozpočet': 'Kofein · druh · chuť · rozpočet', 'Poradca pri výbere čaju': 'Poradce při výběru čaje', 'Otvoriť výber čaju': 'Otevřít výběr čaje',
+    'Pre koho': 'Pro koho', 'Kofeín': 'Kofein', 'Druh čaju': 'Druh čaje', 'Pre koho čaj vyberáte?': 'Pro koho čaj vybíráte?', 'Podľa toho vyberiem čaj alebo darčekovú sadu.': 'Podle toho vyberu čaj nebo dárkovou sadu.',
+    'Pre seba': 'Pro sebe', 'Čaj na každý deň': 'Čaj na každý den', 'Ako darček': 'Jako dárek', 'Čajová sada alebo kolekcia': 'Čajová sada nebo kolekce',
+    'Kedy si čaj doprajete?': 'Kdy si čaj dopřejete?', 'Rozhoduje to o tom, či má čaj obsahovať kofeín.': 'Rozhoduje to o tom, zda má čaj obsahovat kofein.',
+    'Ráno a cez deň': 'Ráno a přes den', 'S kofeínom: čierny, zelený alebo biely čaj': 'S kofeinem: černý, zelený nebo bílý čaj', 'Večer alebo pre deti': 'Večer nebo pro děti',
+    'Bez kofeínu: ovocné, bylinné čaje a rooibos': 'Bez kofeinu: ovocné, bylinné čaje a rooibos', 'Nezáleží mi na tom': 'Nezáleží mi na tom', 'Vyberiem podľa chuti': 'Vyberu podle chuti',
+    'Aký čaj máte radi?': 'Jaký čaj máte rádi?', 'Vyberte druh čaju.': 'Vyberte druh čaje.', 'Ovocný': 'Ovocný', 'Ovocné zmesi': 'Ovocné směsi', 'Jemný, prirodzene bez kofeínu': 'Jemný, přirozeně bez kofeinu',
+    'Biely': 'Bílý', 'Jemný pravý čaj': 'Jemný pravý čaj', 'Čierny': 'Černý', 'Plný pravý čaj': 'Plný pravý čaj', 'Zelený': 'Zelený', 'Svieži pravý čaj': 'Svěží pravý čaj', 'Bylinný': 'Bylinný', 'Byliny, kvety a plody': 'Byliny, květy a plody',
+    'Druh nie je pre mňa dôležitý': 'Druh pro mě není důležitý', 'Akú chuť hľadáte?': 'Jakou chuť hledáte?', 'Podľa ovocia a korenia v názve čaju.': 'Podle ovoce a koření v názvu čaje.',
+    'Hrejivú a korenistú': 'Hřejivou a kořeněnou', 'Zimné zmesi, škorica, punč': 'Zimní směsi, skořice, punč', 'Bobuľovú': 'Bobulovou', 'Jahoda, malina, čučoriedka, čerešňa': 'Jahoda, malina, borůvka, třešeň',
+    'Exotickú a citrusovú': 'Exotickou a citrusovou', 'Mango, melón, mandarínka, limetka': 'Mango, meloun, mandarinka, limetka', 'Sadové ovocie': 'Sadové ovoce', 'Slivka, hruška': 'Švestka, hruška',
+    'Inú ovocnú': 'Jinou ovocnou', 'Ďalšie ovocné zmesi': 'Další ovocné směsi', 'Chuť nie je pre mňa dôležitá': 'Chuť pro mě není důležitá', 'Cena jedného balenia.': 'Cena jednoho balení.',
+    'Konkrétny čaj podľa vašich odpovedí.': 'Konkrétní čaj podle vašich odpovědí.', 'Čajová sada vhodná ako darček.': 'Čajová sada vhodná jako dárek.', 'Tento druh čaju je prirodzene bez kofeínu.': 'Tento druh čaje je přirozeně bez kofeinu.',
+    'Obsahuje zložku s kofeínom.': 'Obsahuje složku s kofeinem.', 'Pravý čaj obsahuje kofeín.': 'Pravý čaj obsahuje kofein.', 'Darčeková sada': 'Dárková sada', 'S kofeínom': 'S kofeinem',
+    'Ovocné čaje': 'Ovocné čaje', 'Biele čaje': 'Bílé čaje', 'Čierne čaje': 'Černé čaje', 'Zelené čaje': 'Zelené čaje', 'Bylinné čaje': 'Bylinné čaje', 'Darčekové čajové sady': 'Dárkové čajové sady',
+    'ovocný čaj': 'ovocný čaj', 'biely čaj': 'bílý čaj', 'čierny čaj': 'černý čaj', 'zelený čaj': 'zelený čaj', 'bylinný čaj': 'bylinný čaj', 'čajová sada': 'čajová sada',
+    'Zdravotné účinky čajov neposudzujem. Vyberiem vám čaj podľa druhu, chuti a toho, či má obsahovať kofeín; zloženie nájdete pri produkte v e-shope.': 'Zdravotní účinky čajů neposuzuji. Vyberu vám čaj podle druhu, chuti a toho, zda má obsahovat kofein; složení najdete u produktu v e-shopu.',
+    'Dopravu, platbu a kontakty nájdete priamo v e-shope. Tu vám pomôžem vybrať konkrétny čaj.': 'Dopravu, platbu a kontakty najdete přímo v e-shopu. Tady vám pomohu vybrat konkrétní čaj.',
+    'Tu vyberáme čaje. Ďalší sortiment nájdete v e-shope.': 'Tady vybíráme čaje. Další sortiment najdete v e-shopu.', 'Táto ponuka má ceny v Kč. Zadajte prosím rozpočet v Kč.': 'Tato nabídka má ceny v Kč. Zadejte prosím rozpočet v Kč.',
+    'Takýto čaj v ponuke nemáme. Skúste zmeniť druh čaju alebo rozpočet, prípadne otvorte Výber čaju.': 'Takový čaj v nabídce nemáme. Zkuste změnit druh čaje nebo rozpočet, případně otevřete Výběr čaje.',
     // tasting notes
     'broskyne': 'broskve', 'kakao': 'kakao', 'jazmínový čaj': 'jasmínový čaj', 'čokoláda': 'čokoláda', 'oriešky': 'oříšky', 'marhule': 'meruňky', 'mliečna čokoláda': 'mléčná čokoláda', 'červené jablko': 'červené jablko',
     'med': 'med', 'pečené jablká': 'pečená jablka', 'vanilka': 'vanilka', 'karamel': 'karamel', 'sušené ovocie': 'sušené ovoce', 'nugát': 'nugát', 'zemitosť': 'zemitost', 'smotana': 'smetana', 'mandarínka': 'mandarinka',
@@ -121,6 +144,7 @@
     [/^Je určený pre ([^.]+)\.$/, (m, target) => 'Je určený pro ' + (exact[target] ?? target) + '.'],
     [/^Zodpovedá vašej priorite: ([^.]+)\.$/, (m, goal) => 'Odpovídá vaší prioritě: ' + (exact[goal] ?? goal) + '.'],
     [/^Zmestí sa do rozpočtu ([^.]+)\.$/, 'Vejde se do rozpočtu $1.'], [/^Úplné zloženie nájdete pri (.+)$/, 'Úplné složení najdete u $1'],
+    [/^(.+) – výber čaju$/, '$1 – výběr čaje'], [/^Je to ([^.]+)\.$/, (m, kind) => 'Je to ' + (exact[kind] ?? kind) + '.'], [/^Poradca čaju (.+)$/, 'Poradce čaje $1'],
     [/^Žiadna káva nespĺňa naraz vašu (.+)\. Toto je najbližšia možnosť – alebo zmeňte odpovede\.$/, (m, what) => 'Žádná káva nesplňuje zároveň vaši ' + what.replace('prípravu', 'přípravu').replace(' aj ', ' i ') + '. Toto je nejbližší možnost – nebo změňte odpovědi.']
   ];
 
@@ -148,11 +172,20 @@
   }
 
   const ATTRIBUTES = ['placeholder', 'aria-label', 'title', 'alt'];
+  /* Another script may keep writing its own Slovak text back; never fight it in a loop. */
+  const pace = new WeakMap();
+  const calm = (element) => {
+    if (!element) return true;
+    const now = performance.now(), entry = pace.get(element) || {since: now, count: 0};
+    if (now - entry.since > 2000) { entry.since = now; entry.count = 0; }
+    entry.count += 1; pace.set(element, entry);
+    return entry.count <= 8;
+  };
   function sweep(node) {
     if (node.nodeType === 3) {
       if (node.parentElement?.closest('script,style,textarea')) return;
       const next = translate(node.nodeValue);
-      if (next !== null) node.nodeValue = next;
+      if (next !== null && calm(node.parentElement)) node.nodeValue = next;
       return;
     }
     if (node.nodeType !== 1) return;
