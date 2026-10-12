@@ -1,6 +1,6 @@
 /* Hover colour of the closed bubble – same rule as ukazky-final.js: another brand colour if it is
    dark enough for the mark and clearly different, otherwise a deeper shade of the rest colour. */
-window.CXLauncherHover = window.CXLauncherHover || ((rest, candidates = []) => {
+window.CXLauncherHover = ((rest, candidates = []) => {
   const rgb = (value) => {
     const v = String(value || '').trim();
     if (v.startsWith('#')) { const h = v.length === 4 ? v.slice(1).split('').map((c) => c + c).join('') : v.slice(1, 7); return [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16)); }
@@ -9,9 +9,12 @@ window.CXLauncherHover = window.CXLauncherHover || ((rest, candidates = []) => {
   const lum = (c) => { const [r, g, b] = rgb(c).map((x) => { x /= 255; return x <= 0.03928 ? x / 12.92 : ((x + 0.055) / 1.055) ** 2.4; }); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
   const dist = (a, b) => { const x = rgb(a), y = rgb(b); return Math.hypot(x[0] - y[0], x[1] - y[1], x[2] - y[2]); };
   const css = (c) => 'rgb(' + rgb(c).join(', ') + ')';
-  if (lum(rest) > 0.6) { /* light bubble with a dark mark: hover goes one step deeper */ return css(rgb(rest).map((x) => Math.round(x * 0.88))); }
-  for (const candidate of candidates) if (candidate && lum(candidate) < 0.32 && dist(candidate, rest) > 70) return css(candidate);
-  return lum(rest) < 0.02 ? css(rgb(rest).map((x) => Math.round(x + (255 - x) * 0.16))) : css(rgb(rest).map((x) => Math.round(x * 0.76)));
+  const mix = (c, target, k) => css(rgb(c).map((x, i) => Math.round(x + (target[i] - x) * k)));
+  /* Another brand colour that is clearly different and not close to white … */
+  let bg = candidates.map((c) => String(c || '').trim()).find((c) => c && lum(c) < 0.7 && dist(c, rest) > 60);
+  /* … otherwise a strong step lighter (dark brands) or darker (light brands). */
+  if (!bg) bg = lum(rest) < 0.2 ? mix(rest, [255, 255, 255], 0.38) : mix(rest, [0, 0, 0], 0.42);
+  return {bg: css(bg), fg: lum(bg) > 0.45 ? (lum(rest) < 0.2 ? css(rest) : '#141414') : '#fff'};
 });
 /* Final shared pass for every coffee demo: the real company logo, cleanly, in the
    launcher, the widget header and each assistant avatar. Loaded after all brand overrides. */
@@ -109,7 +112,10 @@ window.CXLauncherHover = window.CXLauncherHover || ((rest, candidates = []) => {
     const dark = isLight(rgb(widget.querySelector('.widget__header') || launcher));
     document.documentElement.style.setProperty('--cq-fg', dark ? '#141414' : '#fff');
     const tokens = getComputedStyle(document.documentElement);
-    document.documentElement.style.setProperty('--cq-hover', window.CXLauncherHover(getComputedStyle(launcher).backgroundColor, [tokens.getPropertyValue('--kraft-deep'), tokens.getPropertyValue('--kraft'), tokens.getPropertyValue('--ink-2')]));
+    /* The bubble's rest colour is the brand ink token (the computed colour is still the loading state here). */
+    const hover = window.CXLauncherHover(tokens.getPropertyValue('--ink'), [tokens.getPropertyValue('--kraft-deep'), tokens.getPropertyValue('--kraft'), tokens.getPropertyValue('--ink-2')]);
+    document.documentElement.style.setProperty('--cq-hover', hover.bg);
+    document.documentElement.style.setProperty('--cq-hover-fg', hover.fg);
     clean(markSource, dark ? 20 : 255).then((url) => {
       if (!url) return;
       art = url; revision++;

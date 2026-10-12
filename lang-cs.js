@@ -51,6 +51,7 @@
     'Napíšte, akú kávu hľadáte…': 'Napište, jakou kávu hledáte…', 'Napíšte otázku o káve': 'Napište otázku o kávě', 'Otvoriť kávového poradcu': 'Otevřít kávového poradce',
     'Presnú zhodu v ponuke nemáme.': 'Přesnou shodu v nabídce nemáme.',
 // skincare
+    'Ktorý z nich vám sedí viac?': 'Který z nich vám sedí víc?', 'Tieto produkty spĺňajú vaše odpovede.': 'Tyto produkty splňují vaše odpovědi.', 'Vybrali ste si ho z produktov, ktoré spĺňajú vaše odpovede.': 'Vybrali jste si ho z produktů, které splňují vaše odpovědi.', 'Výber': 'Výběr', 'Ktorý čaj si vyberiete?': 'Který čaj si vyberete?', 'Tieto čaje spĺňajú vaše odpovede.': 'Tyto čaje splňují vaše odpovědi.', 'Vybrali ste si ho z čajov, ktoré spĺňajú vaše odpovede.': 'Vybrali jste si ho z čajů, které splňují vaše odpovědi.',
     'Tento produkt nájdete aj v sade': 'Tento produkt najdete i v sadě', 'Doplňte starostlivosť': 'Doplňte péči', 'Sada': 'Sada', 'Rastlina': 'Rostlina', 'Aký bylinný čaj hľadáte?': 'Jaký bylinný čaj hledáte?', 'Podľa časti rastliny, z ktorej čaj je.': 'Podle části rostliny, ze které čaj je.', 'Z kvetov': 'Z květů', 'Jemné kvetové čaje': 'Jemné květové čaje', 'Z vňate a listov': 'Z natě a listů', 'Bylinné čaje z celej rastliny': 'Bylinné čaje z celé rostliny', 'Z plodov': 'Z plodů', 'Plodové čaje': 'Plodové čaje',
     'Ďalšie možnosti': 'Další možnosti',
     'Chatbot s vaším katalógom': 'Chatbot s vaším katalogem', 'Vaše produkty a ceny, nie všeobecné odpovede.': 'Vaše produkty a ceny, ne obecné odpovědi.',
