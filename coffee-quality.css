@@ -25,7 +25,12 @@ html body #widget#widget .result__photo{object-fit:contain!important;background:
 html body #widget#widget .result__nomatch{margin:0 0 12px!important;padding:12px 14px!important;border:1px solid #d5d7d9!important;border-radius:16px!important;background:#faf8f4!important;font-size:12px!important;line-height:1.5!important;color:var(--text,#222)!important;}
 
 /* Real logo: clean mark on the brand circle. */
-.cq-mark{display:block;width:100%;height:100%;background:center / contain no-repeat;}
+.cq-mark{display:block;width:100%;height:100%;background:var(--cq-art) center / contain no-repeat;transition:background-color .16s;}
+/* Closed bubble inverts on hover. */
+html.cq-logo-mask .cq-mark{background:var(--cq-fg,#fff);-webkit-mask:var(--cq-art) center / contain no-repeat;mask:var(--cq-art) center / contain no-repeat;}
+html.cq-logo-mask body .launcher__button#open#open{border:1px solid var(--ink,#222)!important;transition:background-color .16s!important;transform:none!important;}
+html.cq-logo-mask body .launcher__button#open#open:hover,html.cq-logo-mask body .launcher__button#open#open:focus-visible{background:var(--cq-fg,#fff)!important;}
+html.cq-logo-mask body .launcher__button#open#open:hover .cq-mark,html.cq-logo-mask body .launcher__button#open#open:focus-visible .cq-mark{background:var(--ink,#222);}
 html body .launcher__button#open{display:grid!important;place-items:center!important;padding:11px!important;border:0!important;border-radius:50%!important;background:var(--ink,#222)!important;overflow:hidden!important;box-sizing:border-box!important;}
 html body #widget#widget .msg__avatar{display:grid!important;place-items:center!important;width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;flex:0 0 36px!important;padding:6px!important;border:0!important;border-radius:50%!important;background:var(--ink,#222)!important;overflow:hidden!important;box-sizing:border-box!important;}
 /* Filled badge artwork stays original on a white circle. */
@@ -35,3 +40,9 @@ html.cq-logo-plain body .launcher__button#open#open{padding:6px!important;}html.
 html body #widget#widget .widget__brand>img{filter:none!important;background:transparent!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;object-fit:contain!important;}
 html body #widget#widget .widget__brand>img.cq-header-pending{visibility:hidden!important;}
 html body #widget#widget .widget__brand>img.cq-header-plate{background:#fff!important;border-radius:50%!important;padding:3px!important;width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important;}
+
+/* Result: answers the coffee meets, as ticked chips. */
+html body #widget#widget .fits{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px;}
+html body #widget#widget .fits span{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;background:var(--surface-2,#eef5f4);font-size:12px;line-height:1.2;font-weight:600;color:var(--ink,#222);}
+html body #widget#widget .fits span::before{content:"✓";font-weight:700;}
+html body #widget#widget .result__photo{width:132px!important;height:auto!important;max-height:190px!important;}

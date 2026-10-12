@@ -51,6 +51,7 @@
     'Napíšte, akú kávu hľadáte…': 'Napište, jakou kávu hledáte…', 'Napíšte otázku o káve': 'Napište otázku o kávě', 'Otvoriť kávového poradcu': 'Otevřít kávového poradce',
     'Presnú zhodu v ponuke nemáme.': 'Přesnou shodu v nabídce nemáme.',
 // skincare
+    'Ďalšie možnosti': 'Další možnosti',
     'Chatbot s vaším katalógom': 'Chatbot s vaším katalogem', 'Vaše produkty a ceny, nie všeobecné odpovede.': 'Vaše produkty a ceny, ne obecné odpovědi.',
     'Zloženie, typ pleti, rutina aj porovnanie dvoch produktov.': 'Složení, typ pleti, rutina i srovnání dvou produktů.',
     'Výber podľa potrieb': 'Výběr podle potřeb', 'Typ pleti, priorita, typ produktu a rozpočet — na konci konkrétny produkt.': 'Typ pleti, priorita, typ produktu a rozpočet — na konci konkrétní produkt.',
@@ -128,6 +129,7 @@
     [/^Dobrý deň\. Vyberieme spolu kávu z ponuky (.+) podľa vašej prípravy a chutí\.$/, 'Dobrý den. Vybereme spolu kávu z nabídky $1 podle vaší přípravy a chutí.'],
     [/^Chuťový profil podľa e-shopu: (.+)\.$/, (m, list) => 'Chuťový profil podle e-shopu: ' + pieces(list) + '.'],
     [/^\. Chuťový profil podľa e-shopu: (.+?)\. (.+?)\. Balenie (.+)\.$/, (m, list, price, pack) => '. Chuťový profil podle e-shopu: ' + pieces(list) + '. ' + price + '. Balení ' + pack + '.'],
+    [/^Acidita: (.+)$/, (m, level) => 'Acidita: ' + ({'čo najmenej':'co nejméně','jemnú':'jemnou','výraznú':'výraznou','prekvapte ma':'překvapte mě'}[level] ?? level)],
     [/^Z ponuky by som začal kávou$/, 'Z nabídky bych začal kávou'],
     [/^\. Chuťový profil podľa e-shopu: (.+?)\. Cez štyri krátke otázky vo Výbere kávy vyberiem jednu konkrétnu aj s dôvodom\.$/, (m, list) => '. Chuťový profil podle e-shopu: ' + pieces(list) + '. Přes čtyři krátké otázky ve Výběru kávy vyberu jednu konkrétní i s důvodem.'],
     [/^Pôvod je uvedený pri každej káve — napríklad (.+)\. Napíšte, akú chuť hľadáte, a vyberiem jednu konkrétnu\.$/, 'Původ je uvedený u každé kávy — například $1. Napište, jakou chuť hledáte, a vyberu jednu konkrétní.'],

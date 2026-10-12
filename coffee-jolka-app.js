@@ -407,19 +407,28 @@
     const product = current.product;
     const alternative = ranked.find((entry) => entry.product.id !== product.id && !entry.unmet.length);
     const acidityLabel = acidityScale[product.acidity] || acidityScale[1] || 'jemná';
+    /* The answers this coffee verifiably meets, in the customer's own words. */
+    const acidityNow = Number.isFinite(product.acidity) ? product.acidity : 1;
+    const met = steps.map((step) => {
+      const value = state.answers[step.key];
+      const ok = step.key === 'acidity'
+        ? (value === 'explore' ? (product.explore ?? 0) >= 0.6 : Math.abs(ACIDITY_TARGET[value] - acidityNow) <= 1 && !current.unmet.includes('acidity'))
+        : (product[step.key]?.[value] ?? 0) >= 0.6;
+      const title = step.options.find((option) => option.value === value)?.title;
+      return ok && title ? (step.key === 'acidity' ? 'Acidita: ' + title.toLowerCase() : title) : null;
+    }).filter(Boolean);
 
     advisor.innerHTML = `
       <div class="result">
         ${current.unmet.length ? `<p class="result__nomatch"><b>Presnú zhodu v ponuke nemáme.</b> Žiadna káva nespĺňa naraz vašu ${current.unmet.map((key) => key === 'prep' ? 'prípravu' : 'aciditu').join(' aj ')}. Toto je najbližšia možnosť – alebo zmeňte odpovede.</p>` : ''}<span class="result__badge">${current.unmet.length ? 'Najbližšia možnosť' : product.id === best.product.id ? 'Odporúčam vám' : 'Vaša voľba'}</span>
         <div class="result__hero">
           <img class="result__photo" src="${esc(product.photo)}" alt="${esc(product.name)}" width="132" height="178">
-          <div class="result__headline"><h2>${esc(product.name)}</h2><p>${esc(product.line)}</p><span class="result__price"><b>${esc(product.price)}</b><span>/ ${esc(product.priceUnit)}</span></span><small class="result__weights">${esc(product.weights)}${product.priceFrom ? ` · ${esc(product.priceFrom)}` : ''}${product.roast ? ` · ${esc(product.roast)}` : ''}</small></div>
+          <div class="result__headline"><h2>${esc(product.name)}</h2><p>${esc(product.line)}</p><span class="result__price"><b>${esc(product.price)}</b><span>/ ${esc(product.priceUnit)}</span></span>${product.roast ? `<small class="result__weights">${esc(product.roast)}</small>` : ''}</div>
         </div>
         <div class="result__body">
           <div class="notes">${product.notes.map((note) => `<span>${esc(note)}</span>`).join('')}</div>
-          <div class="why"><b>Prečo práve táto</b><p>${esc(product.why)}</p></div>
+          <div class="why"><b>Prečo práve táto</b>${met.length ? `<div class="fits">${met.map((title) => `<span>${esc(title)}</span>`).join('')}</div>` : ''}<p>${esc(product.why)}</p></div>
           <div class="facts"><div class="fact"><b>${icons.drop} Acidita</b><span class="fact__value">${dots(product.acidity)} ${esc(acidityLabel)}</span></div><div class="fact"><b>${icons.cup} Príprava</b><span class="fact__value">${esc(product.bestFor)}</span></div></div>
-          <p class="acidity-note">${esc(product.acidityNote)}</p>
           ${product.bulk ? `<div class="bulk"><b>${esc(product.bulk.label)}</b><span>${esc(product.bulk.saving)}</span></div>` : ''}
           ${alternative ? `<div class="alt"><span>Ak by ste chceli inú</span><button class="alt__card" type="button" data-product="${esc(alternative.product.id)}"><img src="${esc(alternative.product.photo)}" alt="" loading="lazy" width="42" height="58"><div><b>${esc(alternative.product.name)}</b><small>${esc(alternative.product.notes.slice(0, 2).join(' · '))}</small></div>${icons.arrow}</button></div>` : ''}
         </div>

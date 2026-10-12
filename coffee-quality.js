@@ -80,7 +80,7 @@
     mark.className = 'cq-mark';
     mark.setAttribute('role', 'img');
     mark.setAttribute('aria-label', name);
-    mark.style.backgroundImage = 'url(' + JSON.stringify(art) + ')';
+    mark.style.setProperty('--cq-art', 'url(' + JSON.stringify(art) + ')');
     host.replaceChildren(mark);
     host.dataset.cqLogo = String(revision);
   };
@@ -91,10 +91,14 @@
     document.documentElement.classList.add('cq-logo-plain');
     sync();
     new MutationObserver(sync).observe(root, {childList:true, subtree:true});
-    clean(markSource, isLight(rgb(widget.querySelector('.widget__header') || launcher)) ? 20 : 255).then((url) => {
+    const dark = isLight(rgb(widget.querySelector('.widget__header') || launcher));
+    document.documentElement.style.setProperty('--cq-fg', dark ? '#141414' : '#fff');
+    clean(markSource, dark ? 20 : 255).then((url) => {
       if (!url) return;
       art = url; revision++;
       document.documentElement.classList.remove('cq-logo-plain');
+      /* One-colour mark: the closed bubble can invert on hover. */
+      document.documentElement.classList.add('cq-logo-mask');
       sync();
     });
   }
