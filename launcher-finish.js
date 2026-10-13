@@ -22,6 +22,8 @@
     ID + '.cx-lf-solid .cx-launcher-name{color:currentColor!important;}',
     ID + '.cx-lf-mark-host{padding:0!important;}',
     'html body #cx-open#cx-open#cx-open.cx-lf-solid>.cx-lf-mark{display:block!important;width:62%!important;height:62%!important;margin:0!important;border:0!important;border-radius:0!important;background:currentColor!important;-webkit-mask:var(--lf-mark) center / contain no-repeat!important;mask:var(--lf-mark) center / contain no-repeat!important;filter:none!important;transform:none!important;opacity:1!important;}',
+    /* One panel size for every chatbot: 552 x 760, narrowing in the same proportion on a low window. */
+    '@media (min-width:761px){html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget{width:min(552px,calc((100dvh - 44px) * .7263),calc(100vw - 28px))!important;height:min(760px,calc(100dvh - 44px))!important;right:22px!important;bottom:22px!important;left:auto!important;top:auto!important;}}',
     ID + '.cx-lf-ring{transition:box-shadow .16s!important;}',
     ID + '.cx-lf-ring:hover,' + ID + '.cx-lf-ring:focus-visible{box-shadow:0 0 0 3px var(--lf-bg,#141414),0 14px 30px -16px rgba(20,20,20,.55)!important;outline:none!important;transform:none!important;}'
   ].join('');
