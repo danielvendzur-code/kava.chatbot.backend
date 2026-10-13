@@ -89,10 +89,11 @@ export default async function handler(req,res){
   if(stockReply)return res.status(200).json({reply:stockReply,fallback:true});
   const fallback=()=>res.status(200).json({reply:fallbackReply(demo,latest),fallback:true});
   if(!ANTHROPIC_API_KEY){
+    if(body._upstreamHop)return fallback();
     try {
-      const upstream=await fetch('https://kava-chatbot-backend.vercel.app/api/cosmetics-chat',{
+      const upstream=await fetch('https://jolka.mojchatbot.sk/api/cosmetics-chat',{
         method:'POST',headers:{'content-type':'application/json'},
-        body:JSON.stringify({demoId:String(body.demoId),messages}),signal:AbortSignal.timeout(9000)
+        body:JSON.stringify({demoId:String(body.demoId),messages,_upstreamHop:true}),signal:AbortSignal.timeout(9000)
       });
       if(upstream.ok){const result=await upstream.json();if(!result.fallback&&String(result.reply||'').trim())return res.status(200).json({reply:String(result.reply).trim()});}
     } catch (_) { /* Keep the company-specific offline reply when the provider is unavailable. */ }

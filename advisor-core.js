@@ -34,10 +34,12 @@
       const category = p.category || 'face';
       const kind = p.kind || kinds.find(([tag]) => tags.includes(tag))?.[1] || 'Starostlivosť';
       const signals = new Set(tags.filter(t => profiles.includes(t) || goals.includes(t)));
+      if (!p.source?.suitabilityEvidence) {
       if (/hydrat|hyaluron|such[aeuoy]|vyziv|zvlacn/.test(text)) signals.add('hydrate');
       if (/citliv|upokoj|zklid|jemne myti/.test(text)) signals.add('calm');
       if (/mastn|mastici|sebum|nedokonal|akne/.test(text)) signals.add('balance');
       if (/vrask|aging|lifting|zrel|spevn/.test(text)) signals.add('mature');
+      }
       if (['face','body','hair'].includes(category) && kind!=='Doplnky' && /cist|odlic|mydl|myci|umyv|sprch|sampon|sampuk|cleanser|cleansing|shampoo|soap|wash/.test(text)) signals.add('clean');
       /* Anti-wrinkle care is a face matter; a shower cream is not "for mature skin". */
       if (!['face', 'eyes'].includes(category)) signals.delete('mature');
@@ -48,6 +50,7 @@
   }
   function create(source) {
     const products = prepare(source);
+    const withinBudget=(p,n)=>Number.isFinite(p.priceAmount)&&p.priceAmount<=Number(n)&&(!p.source?.priceFrom||(Number.isFinite(p.source.priceMax)&&p.source.priceMax<=Number(n)));
     function categoryPool(answers = {}) {
       return products.filter(p => (!answers.category || p.category === answers.category) && (!answers.kind || answers.kind === 'any' || p.kind === answers.kind));
     }
@@ -55,10 +58,10 @@
       let list = categoryPool(answers).filter(p => p.available !== false);
       // Samples belong to their explicit form; never silently replace the normal product.
       if (!/vzork|sample/i.test(answers.kind || '') && !answers.size && list.some(p => !p.isSample)) list = list.filter(p => !p.isSample);
-      if (answers.budget) list = list.filter(p => Number.isFinite(p.priceAmount) && p.priceAmount <= Number(answers.budget));
+      if (answers.budget) list = list.filter(p => withinBudget(p,answers.budget));
       if (answers.profile === 'sensitive') list = list.filter(p => p.signals.includes('sensitive') || p.signals.includes('calm') || !/retinol|retinal|aha|bha|peeling|kyselin/.test(norm(p.name + ' ' + p.kind)));
       if (answers.goal && answers.goal !== 'any') list = list.filter(p => p.signals.includes(answers.goal));
-      if (answers.profile && answers.profile !== 'any') list = list.filter(p => p.signals.includes(answers.profile));
+      if (answers.profile && answers.profile !== 'any') list = list.filter(p => p.signals.includes(answers.profile)||p.source?.allSkinTypes===true);
       for(const key of ['area','time','ingredient','size'])if(answers[key]&&answers[key]!=='any')list=list.filter(p=>p.features[key]===answers[key]);
       const rank = p => (p.signals.includes(answers.profile) ? 8 : 0) + (p.signals.includes(answers.goal) ? 12 : 0);
       const cost=p=>Number.isFinite(p.priceAmount)?p.priceAmount:Infinity;
@@ -76,10 +79,10 @@
       const supportedProfiles = profiles.filter(v => pool.some(p => p.signals.includes(v)) && pool.some(p => !p.signals.includes(v)));
       /* A question needs at least two real answers; one answer plus "nechám si poradiť" asks nothing. */
       if (['face', 'hair', 'body'].includes(category) && supportedProfiles.length > 1) result.push({key:'profile', options:[...supportedProfiles, 'any']});
-      const profilePool = pool.filter(p => !answers.profile || answers.profile === 'any' || p.signals.includes(answers.profile));
+      const profilePool = pool.filter(p => !answers.profile || answers.profile === 'any' || p.signals.includes(answers.profile)||p.source?.allSkinTypes===true);
       const relevant = goals.filter(v => profilePool.some(p => p.signals.includes(v)) && profilePool.some(p => !p.signals.includes(v)));
       if (relevant.length > 1) result.push({key:'goal', options:[...relevant, 'any']});
-      const formPool = pool.filter(p => (!answers.goal || answers.goal === 'any' || p.signals.includes(answers.goal)) && (!answers.profile || answers.profile === 'any' || p.signals.includes(answers.profile)));
+      const formPool = pool.filter(p => (!answers.goal || answers.goal === 'any' || p.signals.includes(answers.goal)) && (!answers.profile || answers.profile === 'any' || p.signals.includes(answers.profile)||p.source?.allSkinTypes===true));
       const forms = [...new Set(formPool.map(p => p.kind))];
       if (forms.length > 1) result.push({key:'kind', options:[...forms, 'any']});
       const priced = recommend({...answers, category, budget:''}).matches;
@@ -94,7 +97,7 @@
         if(values.length<2||values.length>4)continue;
         result.push({key,options:[...values,'any']});break;
       }}
-      const limits=(priced[0]?.currency === 'CZK' ? [300,600,1000] : [10,25,50]).filter(n=>{const c=priced.filter(p=>Number.isFinite(p.priceAmount)&&p.priceAmount<=n).length;return c&&c<priced.length;});
+      const limits=(priced[0]?.currency === 'CZK' ? [300,600,1000] : [10,25,50]).filter(n=>{const c=priced.filter(p=>withinBudget(p,n)).length;return c&&c<priced.length;});
       if(priced.length>4&&limits.length&&result.length<5&&!result.some(s=>['area','time','ingredient','size'].includes(s.key)))result.push({key:'budget',options:limits});
       return result;
     }

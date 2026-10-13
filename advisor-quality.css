@@ -130,3 +130,6 @@ body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-que
 
 /* Phones: the launcher stays visible; its invitation bubble would cover the page copy. */
 @media(max-width:760px){body #cosmetics-root#cosmetics-root .cx-launcher .cx-teaser{display:none!important;}}
+
+/* Keep the actual product presentation visible on phones. */
+@media(max-width:760px){body[data-cosmetics-demo] .cx-owner-hero{grid-template-rows:auto minmax(130px,1fr)!important;min-height:0!important;}body[data-cosmetics-demo] .cx-owner-frame{display:block!important;min-height:130px!important;padding:0 0 10px!important;box-sizing:border-box!important;}body[data-cosmetics-demo] .cx-owner-frame .cx-keeps{display:none!important;}body[data-cosmetics-demo] .cx-owner-visual{display:block!important;min-height:130px!important;max-height:260px!important;border-radius:20px!important;}body[data-cosmetics-demo] .cx-owner-visual img{object-fit:contain!important;width:100%!important;height:100%!important;}}

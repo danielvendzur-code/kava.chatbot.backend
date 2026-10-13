@@ -436,7 +436,7 @@
 
     advisor.innerHTML = `
       <div class="result">
-        ${current.unmet.length ? `<p class="result__nomatch"><b>Presnú zhodu v ponuke nemáme.</b> Žiadna káva nespĺňa naraz vašu ${current.unmet.map((key) => ({prep:'prípravu',caffeine:'požiadavku na kofeín',taste:'chuť',drink:'spôsob pitia'})[key]||'aciditu').join(' aj ')}. Toto je najbližšia možnosť – alebo zmeňte odpovede.</p>` : ''}<span class="result__badge">${current.unmet.length ? 'Najbližšia možnosť' : product.id === best.product.id ? 'Odporúčam vám' : 'Vaša voľba'}</span>
+        ${current.unmet.length ? `<p class="result__nomatch"><b>Úplnú zhodu nemáme overenú.</b> Pri tejto káve nie sú potvrdené všetky vaše voľby: ${current.unmet.map((key) => ({prep:'príprava',caffeine:'kofeín',taste:'chuť',drink:'spôsob pitia'})[key]||'acidita').join(', ')}. Je to najbližšia možnosť. Podrobnosti overte v e-shope alebo zmeňte odpovede.</p>` : ''}<span class="result__badge">${current.unmet.length ? 'Najbližšia možnosť' : product.id === best.product.id ? 'Odporúčam vám' : 'Vaša voľba'}</span>
         <div class="result__hero">
           <img class="result__photo" src="${esc(product.photo)}" alt="${esc(product.name)}" width="132" height="178">
           <div class="result__headline"><h2>${esc(product.name)}</h2>${product.line?`<p>${esc(product.line)}</p>`:''}<span class="result__price"><b>${esc(product.price)}</b>${product.priceUnit?`<span>/ ${esc(product.priceUnit)}</span>`:''}</span>${product.roast ? `<small class="result__weights">${esc(product.roast)}</small>` : ''}</div>
