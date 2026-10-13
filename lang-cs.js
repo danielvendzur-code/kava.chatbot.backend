@@ -13,6 +13,9 @@
 
   /* Whole text nodes. */
   const exact = {
+    'Úplnú zhodu nemáme overenú.':'Úplnou shodu nemáme ověřenou.','Žiadna overená káva nespĺňa tieto podmienky naraz. Upravte odpovede alebo niektorú otázku preskočte.':'Žádná ověřená káva nesplňuje tyto podmínky zároveň. Upravte odpovědi nebo některou otázku přeskočte.',
+    'Má káva obsahovať kofeín?':'Má káva obsahovat kofein?','Vyberiem bežnú kávu z ponuky':'Vyberu běžnou kávu z nabídky','Iba kávy označené ako bezkofeínové':'Pouze kávy označené jako bezkofeinové',
+    'bobuľové ovocie':'bobulové ovoce','tropické ovocie':'tropické ovoce','vlašské orechy':'vlašské ořechy','kôstkové ovocie':'peckové ovoce','sušené ovocie':'sušené ovoce',
     // shared page copy
     'Mám záujem': 'Mám zájem', 'Čo dostanete': 'Co získáte', 'Chcem to na svoj web': 'Chci to na svůj web', 'Chatbot pre váš e-shop': 'Chatbot pro váš e-shop',
     'Odpovedá aj o polnoci': 'Odpovídá i o půlnoci', 'aj cez víkend, bez vás': 'i o víkendu, bez vás', 'Pozná vašu ponuku': 'Zná vaši nabídku', 'Pozná váš katalóg': 'Zná váš katalog',
@@ -31,7 +34,7 @@
     'Chuť, príprava, nápoj a kofeín — na konci jedna konkrétna káva.': 'Chuť, příprava, nápoj a kofein — na konci jedna konkrétní káva.',
     'Poradí zákazníkovi kávu a odpovie mu na otázky.': 'Poradí zákazníkovi kávu a odpoví mu na otázky.', 'pracuje s vašimi kávami a cenami': 'pracuje s vašimi kávami a cenami',
     'na konci jedna konkrétna káva': 'na konci jedna konkrétní káva', 'nastavenie a naplnenie vašimi kávami': 'nastavení a naplnění vašimi kávami',
-    'Nájdite svoju kávu': 'Najděte svou kávu', 'Krátky výber · jedno odporúčanie': '4 otázky · jedno doporučení', '4 otázky · konkrétne odporúčanie': '4 otázky · konkrétní doporučení',
+    'Nájdite svoju kávu': 'Najděte svou kávu', 'Krátky výber · jedno odporúčanie': 'Krátký výběr · jedno doporučení', 'Pár otázok · konkrétne odporúčanie': 'Pár otázek · konkrétní doporučení', '4 otázky · konkrétne odporúčanie': '4 otázky · konkrétní doporučení',
     'Výber kávy': 'Výběr kávy', 'Kávový výber': 'Kávový výběr', 'Príprava': 'Příprava', 'Nápoj': 'Nápoj', 'Acidita': 'Acidita', 'Chuť': 'Chuť',
     'Čo chcete cítiť v šálke?': 'Co chcete cítit v šálku?', 'Sladká a čokoládová': 'Sladká a čokoládová', 'Kakao, orechy a karamel': 'Kakao, ořechy a karamel',
     'Vyvážená': 'Vyvážená', 'Čistá, jemná a univerzálna': 'Čistá, jemná a univerzální', 'Ovocná a svieža': 'Ovocná a svěží', 'Výraznejší pôvod a iskra': 'Výraznější původ a jiskra',
@@ -298,6 +301,8 @@
 
   /* Sentences with a changing part. */
   const patterns = [
+    [/^Pri tejto káve nie sú potvrdené všetky vaše voľby: (.+)\. Je to najbližšia možnosť\. Podrobnosti overte v e-shope alebo zmeňte odpovede\.$/, (m, list) => 'U této kávy nejsou potvrzeny všechny vaše volby: ' + list.split(', ').map((part) => ({'príprava':'příprava','kofeín':'kofein','spôsob pitia':'způsob pití'})[part] || part).join(', ') + '. Je to nejbližší možnost. Podrobnosti ověřte v e-shopu nebo změňte odpovědi.'],
+    [/^Ďalšie kávy spĺňajúce váš výber \((\d+)\)$/, 'Další kávy splňující váš výběr ($1)'], [/^(Chuťový profil|Chuť): (.+)\.$/, (m, label, list) => label + ': ' + list.split(', ').map((part) => exact[part] ?? part).join(', ') + '.'],
     [/^Kávový chatbot pre (.+)$/, 'Kávový chatbot pro $1'], [/^Krok (\d+) zo (\d+)$/, 'Krok $1 ze $2'], [/^(\d+)\. krok$/, '$1. krok'],
     [/^(.+) – kávový poradca$/, '$1 – kávový poradce'], [/^Kávový poradca (.+)$/, 'Kávový poradce $1'], [/^(.+) – produktová prezentácia$/, '$1 – produktová prezentace'],
     [/^Dobrý deň\. Vyberieme spolu kávu z ponuky (.+) podľa vašej prípravy a chutí\.$/, 'Dobrý den. Vybereme spolu kávu z nabídky $1 podle vaší přípravy a chutí.'],
