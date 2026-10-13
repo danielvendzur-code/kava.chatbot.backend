@@ -369,6 +369,17 @@
 
   /* Both sums, each with the sentence that says what it buys, then the terms
      and the one place on the page where the owner can answer. */
+  /* "Viac info": the same approved wording as on the other demos; price is already on the page. */
+  const MORE = [
+    ['Prvý mesiac zdarma', 'Vyskúšate ho naostro na vlastnom webe.'],
+    ['Preklik priamo na produkt', 'Po odporúčaní zákazník pokračuje rovno na konkrétny produkt vo vašom e-shope.'],
+    ['Vloženie jedným riadkom kódu', 'Pridá sa do existujúceho webu, nič netreba prerábať.'],
+    ['Funguje aj mimo pracovného času', 'Zákazník dostane odpoveď a pomoc s výberom aj večer či cez víkend.'],
+    ['História správ', 'Vidíte, na čo sa zákazníci pýtajú, a zistíte, čo im na stránke chýba alebo čomu nerozumejú.'],
+    ['Priebežné úpravy', 'Sortiment, ceny aj odpovede sa dajú kedykoľvek aktualizovať.'],
+    ['Ďalšie funkcie podľa vašej firmy', 'Neskôr sa dá doplniť napríklad košík, formulár, rezervácia, zber kontaktov alebo iný typ výberu.']
+  ];
+
   const priceCard = (contact) => `
     <article class="mcb-price">
       ${PRICING.sums.map(([sum, term, buys]) => `
@@ -399,18 +410,12 @@
          aria-label="Čo dostanete" hidden>
       <div class="mcb-offer-card">
         <button class="mcb-offer-close" type="button" data-mcb-offer="close" aria-label="Zavrieť">×</button>
-        <span class="mcb-offer-kicker">Čo dostanete</span>
-        <h2>Kávový chatbot pre ${esc(brand.name)}</h2>
+        <span class="mcb-offer-kicker">Viac info</span>
+        <h2>Čo ešte dostanete</h2>
         <ul>
-          ${PRICING.included.map(([title, note]) => `
+          ${MORE.map(([title, note]) => `
             <li>${icons.dot}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
         </ul>
-        <div class="mcb-offer-price">
-          <b>${esc(PRICING.trial)}</b>
-          <p>${PRICING.sums.map(([sum, term]) =>
-            `<strong>${esc(sum)}&nbsp;€</strong> <span>${esc(term)}</span>`).join(' <i>·</i> ')}</p>
-          <small>${esc(PRICING.note)} ${esc(PRICING.addon)}</small>
-        </div>
         <a class="mcb-btn mcb-btn--accent" href="${contact}" target="_blank" rel="noreferrer">
           ${icons.mail} Chcem to na svoj web
         </a>
@@ -426,6 +431,7 @@
           <button class="mcb-btn" type="button" data-release-open="advisor">Otvoriť poradcu ${icons.arrow}</button>
           <button class="mcb-btn mcb-btn--ghost" type="button" data-release-open="chat">Skúsiť chat ${icons.chat}</button>
         </div>
+        <button class="mcb-more" type="button" data-mcb-offer="open" aria-haspopup="dialog">Viac info ${icons.arrow}</button>
       </section>
 
       <div class="mcb-frame">

@@ -13,6 +13,13 @@
 
   /* Whole text nodes. */
   const exact = {
+    'Čo ešte dostanete':'Co ještě dostanete','Vyskúšate ho naostro na vlastnom webe.':'Vyzkoušíte ho naostro na vlastním webu.',
+    'Preklik priamo na produkt':'Proklik přímo na produkt','Po odporúčaní zákazník pokračuje rovno na konkrétny produkt vo vašom e-shope.':'Po doporučení zákazník pokračuje rovnou na konkrétní produkt ve vašem e-shopu.',
+    'Vloženie jedným riadkom kódu':'Vložení jedním řádkem kódu','Pridá sa do existujúceho webu, nič netreba prerábať.':'Přidá se do stávajícího webu, nic není třeba předělávat.',
+    'Funguje aj mimo pracovného času':'Funguje i mimo pracovní dobu','Zákazník dostane odpoveď a pomoc s výberom aj večer či cez víkend.':'Zákazník dostane odpověď a pomoc s výběrem i večer nebo o víkendu.',
+    'História správ':'Historie zpráv','Vidíte, na čo sa zákazníci pýtajú, a zistíte, čo im na stránke chýba alebo čomu nerozumejú.':'Vidíte, na co se zákazníci ptají, a zjistíte, co jim na stránce chybí nebo čemu nerozumějí.',
+    'Priebežné úpravy':'Průběžné úpravy','Sortiment, ceny aj odpovede sa dajú kedykoľvek aktualizovať.':'Sortiment, ceny i odpovědi lze kdykoli aktualizovat.',
+    'Ďalšie funkcie podľa vašej firmy':'Další funkce podle vaší firmy','Neskôr sa dá doplniť napríklad košík, formulár, rezervácia, zber kontaktov alebo iný typ výberu.':'Později lze doplnit například košík, formulář, rezervaci, sběr kontaktů nebo jiný typ výběru.',
     'Úplnú zhodu nemáme overenú.':'Úplnou shodu nemáme ověřenou.','Žiadna overená káva nespĺňa tieto podmienky naraz. Upravte odpovede alebo niektorú otázku preskočte.':'Žádná ověřená káva nesplňuje tyto podmínky zároveň. Upravte odpovědi nebo některou otázku přeskočte.',
     'Má káva obsahovať kofeín?':'Má káva obsahovat kofein?','Vyberiem bežnú kávu z ponuky':'Vyberu běžnou kávu z nabídky','Iba kávy označené ako bezkofeínové':'Pouze kávy označené jako bezkofeinové',
     'bobuľové ovocie':'bobulové ovoce','tropické ovocie':'tropické ovoce','vlašské orechy':'vlašské ořechy','kôstkové ovocie':'peckové ovoce','sušené ovocie':'sušené ovoce',
