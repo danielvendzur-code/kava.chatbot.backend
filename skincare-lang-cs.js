@@ -13,6 +13,27 @@
 
   /* Whole text nodes. */
   const exact = {
+    'Kúpeľové výrobky':'Koupelové výrobky',
+    'Na umývanie':'Na mytí',
+    'Sprcha alebo umývanie pokožky.':'Sprcha nebo mytí pokožky.',
+    'Do kúpeľa':'Do koupele',
+    'Krémový alebo balzamový krok starostlivosti.':'Krémový nebo balzámový krok péče.',
+    'Krémový krok starostlivosti.':'Krémový krok péče.',
+    'Sérum na cielený krok vašej rutiny.':'Sérum na cílený krok vaší rutiny.',
+    'Starostlivosť s olejovým základom.':'Péče s olejovým základem.',
+    'Príležitostná starostlivosť podľa návodu.':'Příležitostná péče podle návodu.',
+    'Vodový krok, tonikum alebo hydrolát.':'Vodový krok, tonikum nebo hydrolát.',
+    'Mliečna alebo emulzná forma produktu.':'Mléčná nebo emulzní forma produktu.',
+    'Produkt na umytie alebo odlíčenie.':'Produkt na umytí nebo odlíčení.',
+    'Peelingový krok podľa návodu.':'Peelingový krok podle návodu.',
+    'Umývanie vlasov a pokožky hlavy.':'Mytí vlasů a pokožky hlavy.',
+    'Krok starostlivosti po umytí vlasov.':'Krok péče po umytí vlasů.',
+    'Starostlivosť proti telesnému pachu.':'Péče proti tělesnému pachu.',
+    'Produkt určený do kúpeľa.':'Produkt určený do koupele.',
+    'Vôňa na osobné použitie.':'Vůně k osobnímu použití.',
+    'Tiež spĺňa vaše odpovede':'Také splňuje vaše odpovědi',
+    'Vyberte mi formu podľa mojich potrieb':'Vyberte mi formu podle mých potřeb',
+    'Vyberieme tento typ z celej ponuky.':'Vybereme tento typ z celé nabídky.',
     // shared page copy
     'Mám záujem': 'Mám zájem', 'Čo dostanete': 'Co získáte', 'Chcem to na svoj web': 'Chci to na svůj web', 'Chatbot pre váš e-shop': 'Chatbot pro váš e-shop',
     'Odpovedá aj o polnoci': 'Odpovídá i o půlnoci', 'aj cez víkend, bez vás': 'i o víkendu, bez vás', 'Pozná vašu ponuku': 'Zná vaši nabídku', 'Pozná váš katalóg': 'Zná váš katalog',
@@ -298,6 +319,8 @@
 
   /* Sentences with a changing part. */
   const patterns = [
+    [/^Vyberiem produkt označený s (.+)\.$/, 'Vyberu produkt označený s $1.'],
+    [/^Porovnať ďalšie vhodné možnosti \((\d+)\)$/, 'Porovnat další vhodné možnosti ($1)'], [/^Skryť ďalšie možnosti$/, 'Skrýt další možnosti'],
     [/^Kávový chatbot pre (.+)$/, 'Kávový chatbot pro $1'], [/^Krok (\d+) zo (\d+)$/, 'Krok $1 ze $2'], [/^(\d+)\. krok$/, '$1. krok'],
     [/^(.+) – kávový poradca$/, '$1 – kávový poradce'], [/^Kávový poradca (.+)$/, 'Kávový poradce $1'], [/^(.+) – produktová prezentácia$/, '$1 – produktová prezentace'],
     [/^Dobrý deň\. Vyberieme spolu kávu z ponuky (.+) podľa vašej prípravy a chutí\.$/, 'Dobrý den. Vybereme spolu kávu z nabídky $1 podle vaší přípravy a chutí.'],

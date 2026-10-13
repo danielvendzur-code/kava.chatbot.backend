@@ -18,7 +18,7 @@
   const plural=n=>n===1?'1 produkt':n>=2&&n<=4?n+' produkty':n+' produktov';
   const usable=p=>p.photo&&!/placeholder/.test(p.photo)&&p.available!==false&&!p.isSample;
   /* Every answer, including the neutral answer, shares one of four equal tiles. */
-  function options(list,rowsOnly){
+  function options(list,rowsOnly){/* "Let me be advised" fills the fourth place beside three real answers; it is never added as a fifth card. */if(list.filter(o=>o.value!=='any').length>3)list=list.filter(o=>o.value!=='any');
     const pages=[];
     for(let rest=list;rest.length;){const take=rest.length<=4?rest.length:3;pages.push(rest.slice(0,take));rest=rest.slice(take);}
     state.page=Math.min(state.page||0,Math.max(0,pages.length-1));

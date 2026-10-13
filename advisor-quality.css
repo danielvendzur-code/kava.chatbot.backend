@@ -133,3 +133,15 @@ body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-que
 
 /* Keep the actual product presentation visible on phones. */
 @media(max-width:760px){body[data-cosmetics-demo] .cx-owner-hero{grid-template-rows:auto minmax(130px,1fr)!important;min-height:0!important;}body[data-cosmetics-demo] .cx-owner-frame{display:block!important;min-height:130px!important;padding:0 0 10px!important;box-sizing:border-box!important;}body[data-cosmetics-demo] .cx-owner-frame .cx-keeps{display:none!important;}body[data-cosmetics-demo] .cx-owner-visual{display:block!important;min-height:130px!important;max-height:260px!important;border-radius:20px!important;}body[data-cosmetics-demo] .cx-owner-visual img{object-fit:contain!important;width:100%!important;height:100%!important;}}
+
+/* Question steps never show a scrollbar: the answer cards share the height the panel has and the
+   photos take what is left. Text-only answers keep their own height. */
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question{display:flex!important;flex-direction:column!important;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question>*{flex:0 0 auto!important;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question>.cx-catalogue-options{flex:1 1 0!important;min-height:0!important;height:auto!important;max-height:580px!important;grid-template-rows:none!important;grid-auto-rows:minmax(min-content,1fr)!important;align-content:stretch!important;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-option.cx-quality-option{display:flex!important;flex-direction:column!important;min-height:0!important;height:auto!important;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-option.cx-quality-option>.cx-quality-photo{position:relative!important;flex:1 1 0!important;height:0!important;min-height:0!important;max-height:none!important;aspect-ratio:auto!important;overflow:hidden!important;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-option.cx-quality-option>.cx-quality-photo>img,html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-option.cx-quality-option>.cx-quality-photo>.cx-wine-bottles{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-option.cx-quality-option>.cx-quality-copy{flex:0 0 auto!important;}
+/* Two answers do not stretch into tall posters. */
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question>.cx-catalogue-options:not(:has(> :nth-child(3))){max-height:300px!important;}
