@@ -145,3 +145,25 @@ html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.i
 html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-option.cx-quality-option>.cx-quality-copy{flex:0 0 auto!important;}
 /* Two answers do not stretch into tall posters. */
 html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question>.cx-catalogue-options:not(:has(> :nth-child(3))){max-height:300px!important;}
+
+/* Advisor polish (20261013): a lone third answer spans the row, steps arrive with a light motion,
+   and the recommended product shows a small photo beside its text so the reasons are visible at once. */
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-options>.cx-quality-option:nth-child(3):last-child{grid-column:1 / -1!important;flex-direction:row!important;align-items:stretch!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-options>.cx-quality-option:nth-child(3):last-child>.cx-quality-photo{flex:0 0 44%!important;height:auto!important;min-height:0!important;align-self:stretch!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-options>.cx-quality-option:nth-child(3):last-child>.cx-quality-copy{flex:1 1 0!important;min-width:0!important;min-height:0!important;height:auto!important;align-self:center!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-option{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-option:hover{transform:translateY(-2px)!important;box-shadow:0 14px 28px -20px rgba(20,20,20,.5)!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-option:active{transform:scale(.985)!important;}
+@keyframes cx-polish-rise{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+@media (prefers-reduced-motion:no-preference){
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body>h2,html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body>.cx-quality-intro{animation:cx-polish-rise .24s ease both;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question .cx-quality-option{animation:cx-polish-rise .32s cubic-bezier(.2,.7,.2,1) both;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question .cx-quality-option:nth-child(2){animation-delay:.04s;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question .cx-quality-option:nth-child(3){animation-delay:.08s;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question .cx-quality-option:nth-child(4){animation-delay:.12s;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body:not(.is-question)>.cx-quality-product.is-primary,html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body:not(.is-question)>.cx-quality-why{animation:cx-polish-rise .32s cubic-bezier(.2,.7,.2,1) both;}
+}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-product.is-primary{display:grid!important;grid-template-columns:minmax(0,34%) minmax(0,1fr)!important;grid-template-rows:auto!important;gap:14px!important;align-items:center!important;padding:12px!important;height:auto!important;min-height:0!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-product.is-primary>.cx-quality-product-photo{width:100%!important;height:176px!important;min-height:0!important;max-height:176px!important;aspect-ratio:auto!important;margin:0!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-product.is-primary>.cx-quality-product-photo img{width:100%!important;height:100%!important;object-fit:contain!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-product.is-primary>.cx-quality-product-copy{min-width:0!important;padding:0!important;}
