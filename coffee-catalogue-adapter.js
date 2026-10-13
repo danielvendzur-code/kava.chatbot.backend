@@ -7,7 +7,7 @@
   const money=v=>typeof v==='string'?v.replace(/(\d),(\d)(?!\d)/g,'$1,$20'):v,seen=new Set();
   const products=catalogue.products.filter(p=>p.available!==false).map(p=>({...p,line:/^\/|^https?:/.test(p.line||'')?'':p.line,price:money(p.price),priceFrom:money(p.priceFrom),priceUnit:/podľa e-shopu|podle e-shopu/i.test(p.priceUnit||'')?'':p.priceUnit})).filter(p=>{const key=String(p.name||'').trim().toLowerCase();if(seen.has(key))return false;seen.add(key);return true;});
   if(!products.length)return;
-  data.products=products;data.fullOffer=catalogue.offer;data.demo.teaserText='Krátky výber · jedno odporúčanie';
+  data.products=products;data.fullOffer=catalogue.offer;data.demo.teaserText='Krátky výber · jedno odporúčanie';data.demo.entryText='Pár otázok · konkrétne odporúčanie';
   if(!products.some(p=>p.id===data.demo.heroProductId))data.demo.heroProductId=products.find(p=>p.photo)?.id||products[0].id;
   if(products.some(p=>p.decaf)&&products.some(p=>!p.decaf)&&!data.steps.some(s=>s.key==='caffeine'))data.steps.push({key:'caffeine',name:'Kofeín',title:'Má káva obsahovať kofeín?',options:[
     {value:'yes',title:'S kofeínom',detail:'Vyberiem bežnú kávu z ponuky',photo:'/assets/scenes/coffee-black.jpg'},

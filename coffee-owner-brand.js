@@ -477,12 +477,10 @@
   function openMode(mode) {
     const launcher = document.querySelector(launchers[slug] || '#open');
     if (launcher && launcher.offsetParent !== null) launcher.click();
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      const selector = mode === 'advisor'
-        ? advisorButtons[slug] || '.mode__button[data-mode="advisor"]'
-        : chatButtons[slug] || '.mode__button[data-mode="chat"]';
-      document.querySelector(selector)?.click();
-    }));
+    const selector = mode === 'advisor'
+      ? advisorButtons[slug] || '.mode__button[data-mode="advisor"]'
+      : chatButtons[slug] || '.mode__button[data-mode="chat"]';
+    document.querySelector(selector)?.click();
   }
 
   /* ---------------------------------------------------------- scroll lock */
