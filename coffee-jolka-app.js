@@ -84,7 +84,10 @@
   /* Each explicit preference must be supported by the product facts. */
   function unmet(product, answers) {
     const missing = [];
-    for(const key of ['taste','drink'])if(answers[key]&&answers[key]!=='any'&&(product[key]?.[answers[key]]??0)<.5)missing.push(key);
+    /* Any coffee can be drunk black; a shop that says nothing about milk is not a mismatch for
+       "black" or "both". The answer is then simply not listed among the confirmed reasons. */
+    const drinkUnknown=!Object.values(product.drink||{}).some(v=>v>0)&&answers.drink!=='milk';
+    for(const key of ['taste','drink'])if(answers[key]&&answers[key]!=='any'&&!(key==='drink'&&drinkUnknown)&&(product[key]?.[answers[key]]??0)<.5)missing.push(key);
     if (answers.prep && answers.prep!=='any' && (product.prep?.[answers.prep] ?? 0) < 0.6) missing.push('prep');
     const acidity = Number.isFinite(product.acidity) ? product.acidity : null;
     if(answers.caffeine&&answers.caffeine!=='any'&&product.decaf!==(answers.caffeine==='no'))missing.push('caffeine');
@@ -346,18 +349,18 @@
     drink: {
       black: '/assets/scenes/coffee-black.jpg',
       milk: '/assets/scenes/coffee-milk.jpg',
-      both: '/assets/scenes/coffee-decaf-cup.jpg'
+      both: '/assets/scenes/coffee-both.jpg'
     },
+    /* Acidity reads as a scale and never repeats the taste photos of the first step. */
     acidity: {
-      none: '/assets/scenes/coffee-nuts.jpg',
-      mild: '/assets/scenes/coffee-caramel.jpg',
-      bright: '/assets/scenes/coffee-berries.jpg',
-      explore: '/assets/scenes/coffee-beans.jpg'
+      none: '/assets/scenes/coffee-chocolate.jpg',
+      mild: '/assets/scenes/coffee-acidity-mild.jpg',
+      bright: '/assets/scenes/coffee-acidity-bright.jpg',
+      explore: '/assets/scenes/coffee-explore.jpg'
     }
   };
 
   function optionVisual(option, stepKey) {
-    if(stepKey==='drink'&&option.value==='both')return '<span class="option__visual coffee-double-cup"><img src="/assets/scenes/coffee-black.jpg" alt="" loading="lazy"><img src="/assets/scenes/coffee-milk.jpg" alt="" loading="lazy"></span>';
     const product = option.product ? byId[option.product] : null;
     const source = CHOICE_PHOTOS[stepKey]?.[option.value]
       || option.photo || product?.tile || product?.photo || demo.entryImage;

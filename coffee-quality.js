@@ -9,6 +9,9 @@ window.CXLauncherHover=(primary,candidates=[])=>{
   const input=rgb(primary)||[23,23,23],dark=lum(input)>.55?[23,23,23]:input;
   let light=[input,...candidates.map(rgb).filter(Boolean)].find(c=>contrast(dark,c)>=3&&lum(c)<.94);
   if(!light)light=dark.map(v=>v+(244-v)*.8);
+  /* A washed-out bubble is easy to miss on a light page: when the lighter colour is pale,
+     the bubble rests dark with a light mark and lightens on hover instead. */
+  if(lum(light)>.6)return {restBg:css(dark),restFg:css(light),bg:css(light),fg:css(dark)};
   return {restBg:css(light),restFg:css(dark),bg:css(dark),fg:css(light)};
 };
 

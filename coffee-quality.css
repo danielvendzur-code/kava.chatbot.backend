@@ -69,3 +69,13 @@ html body #widget#widget .advisor.is-questions .option__visual{height:auto!impor
 html body #widget#widget .advisor.is-questions .option__copy{height:auto!important;max-height:none!important;overflow:visible!important;}
 
 html body #widget#widget .option__visual.coffee-double-cup{display:grid!important;grid-template-columns:1fr 1fr!important;}html body #widget#widget .coffee-double-cup img{min-width:0!important;height:100%!important;width:100%!important;}
+
+/* A lone third answer spans both columns; its photo strip keeps the height of the cards above it. */
+html body #widget#widget .advisor.is-questions .options:has(> .option:nth-child(3):last-child){grid-auto-rows:auto!important;}
+html body #widget#widget .advisor.is-questions .options > .option:nth-child(3):last-child .option__visual{aspect-ratio:10/3!important;height:auto!important;grid-template-rows:minmax(0,1fr)!important;}
+html body #widget#widget .advisor.is-questions .options > .option:nth-child(3):last-child .option__visual img{min-height:0!important;}
+
+/* The panel takes focus when it opens so the keyboard lands inside it; it is not a control and shows no ring. */
+html body #widget#widget:focus,html body #widget#widget:focus-visible{outline:none!important;}
+/* Four answers and the skip link fit the panel without scrolling. */
+html body #widget#widget .advisor.is-questions .options > .option:not(:nth-child(3):last-child) .option__visual{aspect-ratio:5/3!important;}

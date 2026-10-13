@@ -1,5 +1,7 @@
 /* The advisor and chat use the same refreshed official product records. */
 (()=>{
+  /* Some shops refuse product photos requested from another site; sending no referrer loads them. */
+  document.head.append(Object.assign(document.createElement('meta'),{name:'referrer',content:'no-referrer'}));
   const data=window.JOLKA,catalogue=globalThis.CX_COFFEE_CATALOGUES?.[data?.demo?.id];
   if(!data||!catalogue)return;
   /* Shop records are cleaned for display: a URL path is not a description, prices keep two

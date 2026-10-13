@@ -460,7 +460,29 @@ export default async function handler(req,res){
   while(messages.at(-1)?.role==='assistant')messages.pop();
   const latest=messages.filter((m)=>m.role==='user').at(-1)?.content||'';
   if(!latest) return res.status(400).json({error:'Missing user message'});
-  const full=await fullCoffeeReply(String(body.demoId||''),latest,messages);if(full)return res.status(200).json({reply:full,fallback:true});
+  /* A general coffee question outside the prepared topics goes to the model, which may only
+     explain coffee in general: no products, prices, shop terms or health advice. */
+  const asked=globalThis.CXCoffeeReplyKind?.(latest);
+  if(asked?.kind==='general'&&!asked.topic&&ANTHROPIC_API_KEY){
+    const czech=/\.cz(\/|$)/.test(String(demo.web||''));
+    try{
+      const general=await fetch('https://api.anthropic.com/v1/messages',{
+        method:'POST',signal:AbortSignal.timeout(9000),
+        headers:{'content-type':'application/json','x-api-key':ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01'},
+        body:JSON.stringify({model:MODEL,max_tokens:170,temperature:0,system:[
+          czech?'Odpovídejte jednoduchou a gramaticky správnou češtinou, přesně dvěma krátkými větami.':'Odpovedajte jednoduchou a gramaticky správnou slovenčinou, presne dvoma krátkymi vetami.',
+          'Ste kávový poradca. Odpovedajte iba na všeobecné otázky o káve: druhy, spracovanie, praženie, príprava, mletie, skladovanie, chuť.',
+          'Nemenujte žiadne konkrétne produkty, značky, ceny ani podmienky obchodu. Neposudzujte zdravie. Používajte vykanie a odpoveď neukončujte otázkou.',
+          'Ak otázka nie je o káve alebo si odpoveďou nie ste istý, odpovedzte presne: NEVIEM'
+        ].join('\n'),messages:[{role:'user',content:latest}]})
+      });
+      if(general.ok){
+        const data=await general.json();
+        const text=(Array.isArray(data.content)?data.content.filter((b)=>b.type==='text').map((b)=>b.text).join(''):'').replace(/[\u002a_\u0060#]/g,'').replace(/\s+/g,' ').trim();
+        if(text&&!/NEVIEM/i.test(text)&&!/https?:|€|Kč/.test(text))return res.status(200).json({reply:text});
+      }else console.error('Anthropic API error',general.status);
+    }catch(error){console.error('coffee general answer error',error);}
+  }  const full=await fullCoffeeReply(String(body.demoId||''),latest,messages);if(full)return res.status(200).json({reply:full,fallback:true});
   const verified=verifiedCoffeeReply(String(body.demoId||''),latest);if(verified)return res.status(200).json({reply:verified,fallback:true});
   const fallback=()=>res.status(200).json({reply:deterministicReply(demo,latest),fallback:true});
 
