@@ -388,7 +388,6 @@
       </div>`;
     advisorFoot.hidden = true;
     advisorFoot.innerHTML = '';
-    const skip=document.createElement('button');skip.className='ghost';skip.type='button';skip.textContent='Nechám si poradiť';skip.addEventListener('click',()=>select('any'));advisor.append(skip);
     $$('.option', advisor).forEach((button) => button.addEventListener('click', () => select(button.dataset.value)));
     requestAnimationFrame(equalCopy);
     document.fonts?.ready.then(equalCopy);
