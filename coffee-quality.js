@@ -71,12 +71,28 @@ window.CXLauncherHover=(primary,candidates=[])=>{
           }
         }
         let x0 = w, y0 = h, x1 = -1, y1 = -1, solid = 0;
+        /* Remembered for a logo that is a filled plate with the name cut out of it. */
+        const alpha0 = new Uint8ClampedArray(w * h);
+        let px0 = w, py0 = h, px1 = -1, py1 = -1;
         for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
           const i = (y * w + x) * 4;
+          alpha0[y * w + x] = px[i + 3];
+          if (px[i + 3] > 128) { px0 = Math.min(px0, x); px1 = Math.max(px1, x); py0 = Math.min(py0, y); py1 = Math.max(py1, y); }
           if (plate) px[i + 3] = Math.round(px[i + 3] * Math.min(1, Math.max(0, (distance([px[i], px[i + 1], px[i + 2]], plate) - 30) / 42)));
           px[i] = px[i + 1] = px[i + 2] = tone;
           if (px[i + 3] > 12) { x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); }
           if (px[i + 3] > 128) solid++;
+        }
+        if ((x1 < x0 || solid / ((x1 - x0 + 1) * (y1 - y0 + 1)) > .72) && px1 > px0) {
+          /* Only a filled plate is left (or nothing): the mark is the lettering cut out of it. */
+          solid = 0; x0 = w; y0 = h; x1 = -1; y1 = -1;
+          for (let i = 3; i < px.length; i += 4) px[i] = 0;
+          for (let y = py0 + 1; y < py1; y++) for (let x = px0 + 1; x < px1; x++) {
+            const i = (y * w + x) * 4, a = 255 - alpha0[y * w + x];
+            px[i + 3] = a;
+            if (a > 12) { x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); }
+            if (a > 128) solid++;
+          }
         }
         if (x1 < x0 || y1 < y0 || solid / ((x1 - x0 + 1) * (y1 - y0 + 1)) > .72) return resolve(null);
         ctx.putImageData(pixels, 0, 0);
@@ -114,6 +130,9 @@ window.CXLauncherHover=(primary,candidates=[])=>{
     const tokens = getComputedStyle(document.documentElement);
     /* The bubble's rest colour is the brand ink token (the computed colour is still the loading state here). */
     const hover = window.CXLauncherHover(tokens.getPropertyValue('--ink'), [tokens.getPropertyValue('--kraft'), tokens.getPropertyValue('--kraft-tint'), tokens.getPropertyValue('--surface-2')]);
+    /* A black-and-white brand: dark bubble with a white mark, reversed on hover. */
+    if (demo.logoMono) { const ink = tokens.getPropertyValue('--ink').trim() || '#141414'; Object.assign(hover, {restBg: ink, restFg: '#fff', bg: '#fff', fg: ink}); }
+    if (demo.logoWide) document.documentElement.classList.add('cq-logo-wide');
     document.documentElement.style.setProperty('--cq-hover', hover.bg);document.documentElement.style.setProperty('--cq-rest',hover.restBg);document.documentElement.style.setProperty('--cq-fg',hover.restFg);
     document.documentElement.style.setProperty('--cq-hover-fg', hover.fg);
     /* A logo whose filled shape is the mark itself (e.g. a bean with the name inside) stays untouched. */

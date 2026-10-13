@@ -80,12 +80,13 @@ html body #widget#widget .advisor.is-questions .option{min-height:0!important;he
 html body #widget#widget .advisor.is-questions .option .option__visual{aspect-ratio:auto!important;height:100%!important;min-height:0!important;}
 html body #widget#widget .advisor.is-questions .option .option__visual img{height:100%!important;min-height:0!important;}
 
-/* An untouched logo rests on white and turns to white-on-black on hover. */
-html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open{background:#fff!important;border:1px solid #d9d4c8!important;padding:8px!important;transition:background-color .16s,border-color .16s!important;}
-html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open .cq-mark{transition:filter .16s;}
-html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open:hover,html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open:focus-visible{background:#141414!important;border-color:#141414!important;}
-html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open:hover .cq-mark,html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open:focus-visible .cq-mark{filter:grayscale(1) invert(1) brightness(1.25);}
-
+/* An untouched logo rests white-on-black and turns to its own colours on white on hover. */
+html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open{background:#141414!important;border:1px solid #141414!important;padding:8px!important;transition:background-color .16s,border-color .16s!important;}
+html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open .cq-mark{filter:grayscale(1) invert(1) brightness(1.25);transition:filter .16s;}
+html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open:hover,html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open:focus-visible{background:#fff!important;border-color:#d9d4c8!important;}
+html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open:hover .cq-mark,html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open:focus-visible .cq-mark{filter:none;}
+/* No ring around the bubble on hover or focus, on any demo: only the colours change. */
+html body .launcher__button#open#open,html body .launcher__button#open#open:hover,html body .launcher__button#open#open:focus,html body .launcher__button#open#open:focus-visible,html body .launcher__button#open#open:active{box-shadow:0 10px 24px -12px rgba(35,24,14,.45)!important;outline:none!important;transform:none!important;}
 /* "Viac info" under the hero buttons, as on the other demos. */
 .mcb-more{display:inline-flex;align-items:center;gap:6px;margin-top:14px;padding:0;border:0;background:none;font:inherit;font-size:13px;font-weight:700;color:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer;}
 .mcb-more svg{width:14px;height:14px;}
@@ -95,3 +96,11 @@ html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open:hover .cq-mark,
 @media (max-height:680px),(max-width:640px){html:not(#_):not(#_),html:not(#_):not(#_) body,html:not(#_):not(#_) body>div[id$="-root"]{height:auto!important;min-height:100%!important;max-height:none!important;overflow:visible!important;}html:not(#_):not(#_){overflow-y:auto!important;}html:not(#_):not(#_) body .mcb-page{height:auto!important;min-height:100dvh!important;max-height:none!important;overflow:visible!important;grid-template-rows:auto!important;grid-auto-rows:auto!important;align-content:space-between!important;row-gap:18px!important;}html:not(#_):not(#_) body .mcb-page .mcb-main{height:auto!important;min-height:0!important;overflow:visible!important;}}
 /* On a phone the page scrolls, and leaves room so the bubble never sits on the price card. */
 @media (max-width:640px){html:not(#_):not(#_) body .mcb-page{padding-bottom:104px!important;}}
+
+/* The more-info sheet is a white card: its text is dark whatever the page theme is, and its
+   close button shows no ring. */
+body .mcb-offer .mcb-offer-card h2,body .mcb-offer .mcb-offer-card li b{color:#1c1a19!important;}
+body .mcb-offer .mcb-offer-card li small{color:#55504a!important;}
+body .mcb-offer .mcb-offer-close,body .mcb-offer .mcb-offer-close:focus,body .mcb-offer .mcb-offer-close:focus-visible{outline:none!important;box-shadow:none!important;}
+/* A wide wordmark gets more room in the bubble. */
+html.cq-logo-wide body .launcher__button#open#open{padding:7px!important;}
