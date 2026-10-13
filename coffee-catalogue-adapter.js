@@ -12,6 +12,10 @@
   const products=catalogue.products.filter(p=>p.available!==false).map(p=>({...p,line:/^\/|^https?:/.test(p.line||'')?'':tidy(p.line),price:money(p.price),priceFrom:money(p.priceFrom),priceUnit:/podľa e-shopu|podle e-shopu/i.test(p.priceUnit||'')?'':p.priceUnit})).filter(p=>{const key=String(p.name||'').trim().toLowerCase();if(seen.has(key))return false;seen.add(key);return true;});
   if(!products.length)return;
   data.products=products;data.fullOffer=catalogue.offer;data.demo.teaserText='Krátky výber · jedno odporúčanie';data.demo.entryText='Pár otázok · konkrétne odporúčanie';
+  // Moka and Turkish coffee use different preparation and grind; this value
+  // is scored against moka suitability, so it must name only that preparation.
+  const moka=data.steps.find(s=>s.key==='prep')?.options.find(o=>o.value==='moka');
+  if(moka){moka.title='Moka kanvička';moka.detail='Príprava na sporáku';}
   if(!products.some(p=>p.id===data.demo.heroProductId))data.demo.heroProductId=products.find(p=>p.photo)?.id||products[0].id;
   if(products.some(p=>p.decaf)&&products.some(p=>!p.decaf)&&!data.steps.some(s=>s.key==='caffeine'))data.steps.push({key:'caffeine',name:'Kofeín',title:'Má káva obsahovať kofeín?',options:[
     {value:'yes',title:'S kofeínom',detail:'Vyberiem bežnú kávu z ponuky',photo:'/assets/scenes/coffee-black.jpg'},

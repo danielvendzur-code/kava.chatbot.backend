@@ -53,7 +53,8 @@ const stock={modrapupava:{products:[
 export const legacyStockReply=(slug,text)=>{
  if(slug!=='modrapupava')return null;
  const q=String(text).normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase();
- const reply=globalThis.CXCatalogueReplyCore(stock,slug,text).replace('Ďalšie produkty sú vo Výbere a v Ponuke.','Overené produkty nájdete vo Výbere starostlivosti.');
+ const raw=globalThis.CXCatalogueReplyCore(stock,slug,text);if(!raw)return null;
+ const reply=raw.replace('Ďalšie produkty sú vo Výbere a v Ponuke.','Overené produkty nájdete vo Výbere starostlivosti.');
  if(/serum/.test(q)&&!/liec|chorob|ekzem|rosacea|dermatit/.test(q))return 'Medzi tromi overenými produktmi v tejto ukážke teraz nie je skladové pleťové sérum. Môžem ukázať dostupný krém a oleje.\n\n'+reply;
  return reply;
 };

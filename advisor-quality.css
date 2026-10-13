@@ -167,3 +167,13 @@ html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-
 html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-product.is-primary>.cx-quality-product-photo{width:100%!important;height:176px!important;min-height:0!important;max-height:176px!important;aspect-ratio:auto!important;margin:0!important;}
 html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-product.is-primary>.cx-quality-product-photo img{width:100%!important;height:100%!important;object-fit:contain!important;}
 html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-product.is-primary>.cx-quality-product-copy{min-width:0!important;padding:0!important;}
+
+/* Small screens keep the hero and price in normal flow, with no overlapping fixed rows. */
+@media(max-width:760px){
+html body #cosmetics-root#cosmetics-root .cx-owner{display:flex!important;flex-direction:column!important;justify-content:flex-start!important;height:auto!important;min-height:100dvh!important;max-height:none!important;gap:20px!important;padding-bottom:104px!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-hero{display:flex!important;flex-direction:column!important;height:auto!important;min-height:0!important;gap:20px!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-copy,html body #cosmetics-root#cosmetics-root .cx-owner-frame{flex:0 0 auto!important;min-height:0!important;height:auto!important;width:100%!important;margin:0!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-frame{padding:0!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-visual{height:clamp(180px,62vw,260px)!important;min-height:0!important;max-height:none!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-offer{flex:0 0 auto!important;margin-top:0!important;}
+}

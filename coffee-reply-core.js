@@ -47,7 +47,7 @@ const KNOW={sk:{
  none:'Pre túto kombináciu nemám v ponuke overenú kávu. Skúste upraviť jednu podmienku alebo pozrite celú ponuku: ',
  clarify:'Rád pomôžem s výberom. Napíšte, ako kávu pripravujete (espresso, filter, automat), akú chuť máte radi alebo aký máte rozpočet.',
  fits:'Z ponuky sa na túto prípravu hodí: ',lead:'Z ponuky vyberám',start:'Na začiatok z ponuky:',unusual:'Z menej tradičných káv v ponuke:',gear:'V ďalšej ponuke obchodu som našiel:',noGear:'Takýto produkt v overenej ponuke nevidím. Celú ponuku nájdete v obchode: ',
- size:s=>'Balenie '+s+' som pri týchto kávach v overených údajoch nenašiel. Dostupné veľkosti a ich ceny sú na stránke produktu.',
+ size:s=>'Pre balenie '+s+' nemám overenú cenu dostupnej kávy spĺňajúcej vaše podmienky. Veľkosti a ceny overte na stránke produktu: ',
  from:'Ceny „od“ platia pre najmenšie balenie; ostatné veľkosti sú na stránke produktu.',
  labels:{filter:'filter',automat:'automat',moka:'moka',lever:'espresso',decaf:'bez kofeínu',fruity:'ovocná chuť',chocolate:'čokoládová chuť',lowAcid:'nízka acidita',milk:'do mlieka',budget:'do '}
 },cs:{
@@ -74,7 +74,7 @@ const KNOW={sk:{
  none:'Pro tuto kombinaci nemám v nabídce ověřenou kávu. Zkuste upravit jednu podmínku nebo se podívejte na celou nabídku: ',
  clarify:'Rád pomohu s výběrem. Napište, jak kávu připravujete (espresso, filtr, automat), jakou chuť máte rádi nebo jaký máte rozpočet.',
  fits:'Z nabídky se na tuto přípravu hodí: ',lead:'Z nabídky vybírám',start:'Na začátek z nabídky:',unusual:'Z méně tradičních káv v nabídce:',gear:'V další nabídce obchodu jsem našel:',noGear:'Takový produkt v ověřené nabídce nevidím. Celou nabídku najdete v obchodě: ',
- size:s=>'Balení '+s+' jsem u těchto káv v ověřených údajích nenašel. Dostupné velikosti a jejich ceny jsou na stránce produktu.',
+ size:s=>'Pro balení '+s+' nemám ověřenou cenu dostupné kávy splňující vaše podmínky. Velikosti a ceny ověřte na stránce produktu: ',
  from:'Ceny „od“ platí pro nejmenší balení; ostatní velikosti jsou na stránce produktu.',
  labels:{filter:'filtr',automat:'automat',moka:'moka',lever:'espresso',decaf:'bez kofeinu',fruity:'ovocná chuť',chocolate:'čokoládová chuť',lowAcid:'nízká acidita',milk:'do mléka',budget:'do '}
 }};
@@ -89,6 +89,8 @@ globalThis.CXCoffeeReplyKind=text=>classify(text);
 globalThis.CXCoffeeReplyCore=(c,text,history=[])=>{
  const q=norm(text),cs=/\.cz(?:\/|$)/.test(c.source||''),T=KNOW[cs?'cs':'sk'],kind=classify(text);
  const beans=c.products.filter(p=>p.available!==false&&(!p.kind||p.kind==='Káva'));
+ const requestedName=q.match(/(?:mate|predavate|prodavate)\s+produkt\s+(.+?)\??$/)?.[1];if(requestedName&&!/^(?:na|pre|pro)\b/.test(requestedName)&&!c.products.some(p=>norm(p.name).includes(requestedName.replace(/\?$/,''))))return 'Takýto produkt v overenej ponuke nemám. Upresnite prosím jeho názov.';
+
  if(kind.kind==='health')return T.health;
  if(kind.kind==='service')return T.service+c.source;
  if(kind.kind==='general'){if(!kind.topic)return T.unknown+c.source;const prep=TOPIC_PREP[kind.topic],fit=prep?beans.filter(p=>(p.prep?.[prep]||0)>=.6).sort((a,b)=>(b.prep[prep]-a.prep[prep])||(a.priceAmount??Infinity)-(b.priceAmount??Infinity))[0]:null;return T[kind.topic]+(fit?'\n\n'+T.fits+line(fit):'');}
@@ -102,22 +104,28 @@ globalThis.CXCoffeeReplyCore=(c,text,history=[])=>{
  const budget=/bez limit|bez rozpo/.test(budgetQ)?null:budgetQ.match(/(?:do|max|rozpocet)\s*(\d+(?:[.,]\d+)?)\s*(€|eur|kc|czk)?/),amount=budget?Number(budget[1].replace(',','.')):null;
  const currency=budget?(/kc|czk/.test(budget[2]||'')?'CZK':/€|eur/.test(budget[2]||'')?'EUR':c.products[0]?.currency):null;
  if(currency&&c.products.some(p=>p.currency!==currency))return T.currency;
- const sizeMatch=q.match(/(\d+(?:[.,]\d+)?)\s*(kg|kilo|g|gram)/),grams=sizeMatch?Math.round(Number(sizeMatch[1].replace(',','.'))*(/k/.test(sizeMatch[2])?1000:1)):/\bkilo(?:gram|vk|ve|ove)?\w*/.test(q)?1000:null;
+ const packQ=recent(/\d+(?:[.,]\d+)?\s*(?:kg|kilo|g\b|gram)|\bkilo|balenie nerozhoduje|baleni nerozhoduje|ak[eé]ko[lľ]vek balenie|libovolne baleni/);
+ const sizeMatch=packQ.match(/(\d+(?:[.,]\d+)?)\s*(kg|kilo|g\b|gram)/),grams=sizeMatch?Math.round(Number(sizeMatch[1].replace(',','.'))*(/k/.test(sizeMatch[2])?1000:1)):/\bkilo(?:gram|vk|ve|ove)?\w*/.test(packQ)?1000:null;
  const sizeLabel=grams?(grams>=1000&&grams%1000===0?grams/1000+' kg':grams+' g'):'',sizeRx=grams?(grams%1000===0?new RegExp('(?:^|\\D)(?:'+grams/1000+'\\s*kg|'+grams+'\\s*g)'):new RegExp('(?:^|\\D)'+grams+'\\s*g')):null;
  const hasSize=p=>sizeRx.test(norm([p.name,p.priceUnit,p.weights].join(' ')));
  const priced=p=>amount===null||(Number.isFinite(p.priceAmount)&&p.priceAmount<=amount);
  const eligible=p=>(!wantsDecaf||p.decaf)&&(!prep||(p.prep?.[prep]||0)>=.6)&&(!taste||(p.taste?.[taste]||0)>=.6)&&(!lowAcid||(Number.isFinite(p.acidity)&&p.acidity<=1))&&(!milk||(p.drink?.milk||0)>=.6)&&priced(p);
  const score=p=>tokens.filter(t=>norm(p.name+' '+(p.notes||[]).join(' ')).includes(t)).length;
- const gearIntent=/mlynce|mlyne|mlynk|filtre|papierov.*filter|papirov.*filtr|hario|chemex|french press|aeropress|tamper|konvic|kanvic|doza|hrnce|hrnek|salk|odmerk|cascara|\bknih|cisti|poukaz|doplnk|prislusenstv|degusta|balicek|predplat|\bpohar|\btask|\bkurz|\bflas|sitko|lievik|vzork/.test(q)||/kavovar/.test(q)&&!/(?:do|pre|pro)\s+kavovar/.test(q);
+ const beansForBrewer=/kav[auy]\b.*(?:do|na|pre|pro)\s+(?:french|aeropress|chemex|hario|moka|konvic|kanvic)/.test(q);
+ const gearIntent=!beansForBrewer&&(/mlynce|mlyne|mlynk|filtre|papierov.*filter|papirov.*filtr|hario|chemex|french press|aeropress|tamper|konvic|kanvic|doza|hrnce|hrnek|salk|odmerk|cascara|\bknih|cisti|poukaz|doplnk|prislusenstv|degusta|balicek|predplat|\bpohar|\btask|\bkurz|\bflas|sitko|lievik|vzork/.test(q)||/kavovar/.test(q)&&!/(?:do|pre|pro)\s+kavovar/.test(q));
  if(gearIntent){const gear=(c.offer||[]).filter(p=>p.kind!=='Káva'&&p.available!==false&&priced(p)&&(score(p)>0||/doplnk|prislusenstv/.test(q))).sort((a,b)=>score(b)-score(a)||(a.priceAmount??Infinity)-(b.priceAmount??Infinity));if(gear.length)return T.gear+'\n\n'+gear.slice(0,3).map(line).join('\n\n');return T.noGear+c.source;}
  const conditions=[prep&&T.labels[prep],taste&&T.labels[taste],wantsDecaf&&T.labels.decaf,lowAcid&&T.labels.lowAcid,milk&&T.labels.milk,amount!==null&&T.labels.budget+budget[1]+' '+(currency==='CZK'?'Kč':'€'),grams&&sizeLabel].filter(Boolean);
  let list=beans.filter(eligible);
- const named=beans.filter(p=>priced(p)&&tokens.length&&tokens.every(t=>norm(p.name).includes(t)));if(named.length)list=named;
+ const namedCandidates=beans.filter(p=>tokens.length&&tokens.every(t=>norm(p.name).includes(t)));
+ const named=namedCandidates.filter(eligible);
+ if(namedCandidates.length){if(!named.length)return T.none+c.source;list=named;}
  const adventurous=/netradic|zaujimav|zajimav|nezvycajn|neobvykl|special|experiment|vyberov/.test(q),asksAdvice=/odporuc|doporuc|porad|nieco|neco|\btip|najlep|nejlep|oblub|oblib|predavan|prodavan|ponuk|nabid|sortiment|ake mate|jake mate/.test(q);
  if(!conditions.length&&!named.length&&!adventurous&&!asksAdvice&&!list.some(p=>score(p)>0))return T.clarify;
  if(!list.length)return T.none+c.source;
  list.sort((a,b)=>score(b)-score(a)||(adventurous?(b.explore||0)-(a.explore||0):0)||((b.notes||[]).length>0)-((a.notes||[]).length>0)||(a.priceAmount??Infinity)-(b.priceAmount??Infinity));
- let sizeNote='';if(grams){const sized=list.filter(hasSize);if(sized.length)list=sized;else sizeNote=T.size(sizeLabel);}
+ // A parent “from” price is not the verified price of the requested pack.
+ // Never label a cheap small-pack offer as a matching kilogram recommendation.
+ let sizeNote='';if(grams){const sized=list.filter(p=>hasSize(p)&&!/^od /i.test(p.price||'')&&!p.source?.priceFrom);if(!sized.length)return T.size(sizeLabel)+c.source;list=sized;}
  const shown=list.slice(0,3),fromNote=(amount!==null||grams)&&!sizeNote&&shown.some(p=>/^od /i.test(p.price||'')||p.source?.priceFrom)?T.from:'';
  return (conditions.length?T.lead+' ('+conditions.join(', ')+'):':named.length?'':adventurous?T.unusual:T.start)+(conditions.length||!named.length?'\n\n':'')+shown.map(line).join('\n\n')+(sizeNote||fromNote?'\n\n'+(sizeNote||fromNote):'');
 };})();

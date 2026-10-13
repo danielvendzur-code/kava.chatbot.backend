@@ -105,3 +105,6 @@ body .mcb-offer .mcb-offer-card li small{color:#55504a!important;}
 body .mcb-offer .mcb-offer-close,body .mcb-offer .mcb-offer-close:focus,body .mcb-offer .mcb-offer-close:focus-visible{outline:none!important;box-shadow:none!important;}
 /* A wide wordmark gets more room in the bubble. */
 html.cq-logo-wide body .launcher__button#open#open{padding:7px!important;}
+
+/* The open fixed panel must not retain the landing page scrollbar. */
+html.widget-open:not(#_):not(#_):not(#_),html.widget-open:not(#_):not(#_):not(#_) body{overflow:hidden!important;height:100dvh!important;}

@@ -84,9 +84,9 @@
   /* Each explicit preference must be supported by the product facts. */
   function unmet(product, answers) {
     const missing = [];
-    /* Any coffee can be drunk black; a shop that says nothing about milk is not a mismatch for
-       "black" or "both". The answer is then simply not listed among the confirmed reasons. */
-    const drinkUnknown=!Object.values(product.drink||{}).some(v=>v>0)&&answers.drink!=='milk';
+    /* Black coffee needs no milk suitability claim. “Both” explicitly promises
+       milk too, so unknown milk suitability remains an unconfirmed preference. */
+    const drinkUnknown=!Object.values(product.drink||{}).some(v=>v>0)&&answers.drink==='black';
     for(const key of ['taste','drink'])if(answers[key]&&answers[key]!=='any'&&!(key==='drink'&&drinkUnknown)&&(product[key]?.[answers[key]]??0)<.5)missing.push(key);
     if (answers.prep && answers.prep!=='any' && (product.prep?.[answers.prep] ?? 0) < 0.6) missing.push('prep');
     const acidity = Number.isFinite(product.acidity) ? product.acidity : null;
@@ -94,7 +94,7 @@
     if(answers.acidity&&answers.acidity!=='any'&&answers.acidity!=='explore'&&acidity===null)missing.push('acidity');
     if (answers.acidity === 'none' && acidity > 1) missing.push('acidity');
     if(answers.acidity==='mild'&&acidity>2)missing.push('acidity');
-    if (answers.acidity === 'bright' && acidity < 2) missing.push('acidity');
+    if (answers.acidity === 'bright' && acidity !== null && acidity < 2) missing.push('acidity');
     return missing;
   }
 

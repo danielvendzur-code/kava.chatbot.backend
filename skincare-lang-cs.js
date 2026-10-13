@@ -13,6 +13,7 @@
 
   /* Whole text nodes. */
   const exact = {
+    'Malé balenie na vyskúšanie':'Malé balení na vyzkoušení',
     'Kúpeľové výrobky':'Koupelové výrobky',
     'Na umývanie':'Na mytí',
     'Sprcha alebo umývanie pokožky.':'Sprcha nebo mytí pokožky.',
