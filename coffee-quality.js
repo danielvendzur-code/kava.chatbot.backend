@@ -115,7 +115,8 @@ window.CXLauncherHover=(primary,candidates=[])=>{
     const hover = window.CXLauncherHover(tokens.getPropertyValue('--ink'), [tokens.getPropertyValue('--kraft'), tokens.getPropertyValue('--kraft-tint'), tokens.getPropertyValue('--surface-2')]);
     document.documentElement.style.setProperty('--cq-hover', hover.bg);document.documentElement.style.setProperty('--cq-rest',hover.restBg);document.documentElement.style.setProperty('--cq-fg',hover.restFg);
     document.documentElement.style.setProperty('--cq-hover-fg', hover.fg);
-    clean(markSource, dark ? 20 : 255).then((url) => {
+    /* A logo whose filled shape is the mark itself (e.g. a bean with the name inside) stays untouched. */
+    (demo.logoPlain ? Promise.resolve(null) : clean(markSource, dark ? 20 : 255)).then((url) => {
       if (!url) return;
       art = url; revision++;
       document.documentElement.classList.remove('cq-logo-plain');
@@ -130,7 +131,7 @@ window.CXLauncherHover=(primary,candidates=[])=>{
   if (headerLogo && head) {
     const light = isLight(rgb(head));
     headerLogo.classList.add(light ? 'cq-header-plain' : 'cq-header-pending');
-    if (!light) clean(headerLogo.getAttribute('src'), 255).then((url) => {
+    if (!light) (demo.logoPlain ? Promise.resolve(null) : clean(headerLogo.getAttribute('src'), 255)).then((url) => {
       headerLogo.classList.remove('cq-header-pending');
       if (url) { headerLogo.src = url; headerLogo.classList.add('cq-header-clean'); }
       else headerLogo.classList.add('cq-header-plate');
