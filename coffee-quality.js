@@ -106,6 +106,7 @@ window.CXLauncherHover=(primary,candidates=[])=>{
   if (markSource) {
     /* Until the artwork is processed, show the untouched logo on white rather than a filtered square. */
     document.documentElement.classList.add('cq-logo-plain');
+    if (demo.logoPlain) document.documentElement.classList.add('cq-logo-keep');
     sync();
     new MutationObserver(sync).observe(root, {childList:true, subtree:true});
     const dark = isLight(rgb(widget.querySelector('.widget__header') || launcher));

@@ -79,3 +79,7 @@ html body #widget#widget .advisor.is-questions .options{flex:1 1 0!important;min
 html body #widget#widget .advisor.is-questions .option{min-height:0!important;height:auto!important;display:grid!important;grid-template-rows:minmax(0,1fr) auto!important;}
 html body #widget#widget .advisor.is-questions .option .option__visual{aspect-ratio:auto!important;height:100%!important;min-height:0!important;}
 html body #widget#widget .advisor.is-questions .option .option__visual img{height:100%!important;min-height:0!important;}
+
+/* An untouched logo sits on the brand colour, not on a white disc. */
+html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open{background:var(--cq-rest,var(--kraft,#888))!important;border:0!important;padding:9px!important;transition:filter .16s!important;}
+html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open:hover,html.cq-logo-plain.cq-logo-keep body .launcher__button#open#open:focus-visible{filter:brightness(1.1);}
