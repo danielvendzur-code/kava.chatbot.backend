@@ -44,8 +44,11 @@
       /* Anti-wrinkle care is a face matter; a shower cream is not "for mature skin". */
       if (!['face', 'eyes'].includes(category)) signals.delete('mature');
       if (!signals.has('mature') && !signals.has('clean')) signals.add('daily');
+      // A dry shampoo absorbs oil; its form is not evidence of dry-hair care.
+      const dryShampoo=category==='hair'&&/(?:such[yae]\s+samp|dry\s+(?:shampoo|powder))/.test(norm(p.name));
+      if(dryShampoo){for(const signal of ['dry','hydrate','mature','clean','daily'])signals.delete(signal);signals.add('oily');signals.add('balance');}
       const amount = Number.isFinite(p.priceAmount) ? p.priceAmount : Number(String(p.price || '').replace(/\s/g, '').replace(',', '.').match(/\d+(?:\.\d+)?/)?.[0]);
-      return {...p, id:String(p.id ?? index), category, kind, tags, features:features({...p,category}),signals:[...signals], priceAmount:Number.isFinite(amount)?amount:null, currency:p.currency || (/Kč|CZK/.test(p.price || '') ? 'CZK' : 'EUR'), photo:p.photo || p.image};
+      return {...p, id:String(p.id ?? index), category, kind:dryShampoo?'Suché šampóny':kind, tags:dryShampoo?tags.filter(t=>!['dry','hydrate','mature','clean','daily'].includes(t)):tags, features:features({...p,category}),signals:[...signals], priceAmount:Number.isFinite(amount)?amount:null, currency:p.currency || (/Kč|CZK/.test(p.price || '') ? 'CZK' : 'EUR'), photo:p.photo || p.image};
     });
   }
   function create(source) {
