@@ -18,6 +18,9 @@
   const moka=data.steps.find(s=>s.key==='prep')?.options.find(o=>o.value==='moka');
   if(moka){moka.title='Moka kanvička';moka.detail='Príprava na sporáku';}
   if(!products.some(p=>p.id===data.demo.heroProductId))data.demo.heroProductId=products.find(p=>p.photo)?.id||products[0].id;
+  /* A question is asked only when most coffees carry the fact it decides on; an unknown is never shown as a match. */
+  const KNOWN={taste:p=>Object.values(p.taste||{}).some(v=>v>=.6),prep:p=>Object.values(p.prep||{}).some(v=>v>=.6),drink:p=>Object.values(p.drink||{}).some(v=>v>=.6),acidity:p=>Number.isFinite(p.acidity)};
+  data.steps=data.steps.filter(s=>!KNOWN[s.key]||products.filter(KNOWN[s.key]).length>=products.length*.5);
   if(products.some(p=>p.decaf)&&products.some(p=>!p.decaf)&&!data.steps.some(s=>s.key==='caffeine'))data.steps.push({key:'caffeine',name:'Kofeín',title:'Má káva obsahovať kofeín?',options:[
     {value:'yes',title:'S kofeínom',detail:'Vyberiem bežnú kávu z ponuky',photo:'/assets/scenes/coffee-black.jpg'},
     {value:'no',title:'Bez kofeínu',detail:'Iba kávy označené ako bezkofeínové',photo:'/assets/scenes/coffee-decaf-cup.jpg'}

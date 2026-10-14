@@ -98,12 +98,20 @@
     return missing;
   }
 
+  /* Among equally good coffees a regular pack comes first: a kilo, a multipack or a sample is not the first suggestion. */
+  function packRank(product) {
+    const text = `${product.name} ${product.priceUnit || ''}`;
+    const m = text.match(/(\d+(?:[.,]\d+)?)\s*(kg|g)\b/i);
+    const grams = m ? Number(m[1].replace(',', '.')) * (/kg/i.test(m[2]) ? 1000 : 1) : null;
+    return /\d\s*x\s*\d|\d\s*\+\s*\d|vzork|vzorek|degust|balíček|balicek/i.test(text) || (grams && (grams >= 1000 || grams < 150)) ? 1 : 0;
+  }
+
   function rank(answers) {
     return products
       .filter(product=>product.available!==false).map((product) => ({ product, value: score(product, answers), unmet: unmet(product, answers) }))
       /* Caffeine is a firm requirement; for the rest the closest coffee is shown with an honest note. */
       .filter(entry=>!entry.unmet.includes('caffeine'))
-      .sort((left, right) => left.unmet.length - right.unmet.length || right.value - left.value || left.product.name.localeCompare(right.product.name, 'sk'));
+      .sort((left, right) => left.unmet.length - right.unmet.length || right.value - left.value || packRank(left.product) - packRank(right.product) || left.product.name.localeCompare(right.product.name, 'sk'));
   }
 
   const state = {
@@ -415,6 +423,86 @@
     }, 300);
   }
 
+  /* Result helpers. Every reason, variant and difference below comes from the shop's own product
+     record; an answer the record cannot confirm is never shown as met. */
+  const T = (sk, cs) => window.CX_LANG === 'cs' ? cs : sk;
+  const PREP_REASON = {automat: ['Do automatu', 'Do automatu'], lever: ['Na espresso', 'Na espresso'], moka: ['Do moka kanvičky', 'Do moka konvičky'], filter: ['Na filter', 'Na filtr']};
+  const TASTE_REASON = {chocolate: ['Čokoládová chuť', 'Čokoládová chuť'], balanced: ['Vyvážená chuť', 'Vyvážená chuť'], fruity: ['Ovocná chuť', 'Ovocná chuť'], bold: ['Výrazná chuť', 'Výrazná chuť']};
+  const PREP_GRIND = {automat: /^$/, lever: /espresso|páka|pák/i, moka: /moka|koťog|kotog/i, filter: /filter|filtr|french|v60|chemex|drip|prekvap/i};
+  const amountText = (value, currency) => {
+    if (!Number.isFinite(value)) return '';
+    if (currency === 'CZK') return Math.round(value).toLocaleString('cs-CZ').replace(/ /g, ' ') + ' Kč';
+    const fixed = Math.round(value * 100) / 100;
+    return (Number.isInteger(fixed) ? String(fixed) : fixed.toFixed(2).replace('.', ',')) + ' €';
+  };
+  const packOf = (product) => { const m = String(product.priceUnit || product.weights || product.name || '').match(/(\d+(?:[.,]\d+)?)\s*(kg|g)\b/i); return m ? Math.round(Number(m[1].replace(',', '.')) * (/kg/i.test(m[2]) ? 1000 : 1)) : null; };
+  const composition = (product) => { const text = `${product.name} ${product.line || ''}`; return /100\s*%\s*arabi/i.test(text) ? 'arabica' : /robust|\b\d{2}\s*\/\s*\d{2}\b/i.test(text) ? 'blend' : ''; };
+  const baseName = (product) => String(product.name || '').toLowerCase().replace(/\(.*?\)|\d+(?:[.,]\d+)?\s*(?:kg|g)\b|\d+\s*\+\s*\d+|\d+\s*x\s*/g, '').replace(/[^a-záäčďéíĺľňóôŕšťúýž0-9]+/g, ' ').trim();
+
+  /* One concrete pack: whole beans for an automatic machine, otherwise the smallest regular pack. */
+  function pickVariant(product, answers) {
+    const live = (product.variants || []).filter((v) => v.available !== false && Number.isFinite(v.price) && (v.grams || v.grind));
+    if (!live.length) return null;
+    const regular = live.filter((v) => !(v.grams && v.grams < 150) && !/vzork|vzorek|sample/i.test(v.label || ''));
+    let pool = regular.length ? regular : live;
+    if (pool.some((v) => v.grind === 'beans')) pool = pool.filter((v) => v.grind === 'beans');
+    const pick = pool.slice().sort((a, b) => (a.grams || 1e6) - (b.grams || 1e6) || a.price - b.price)[0];
+    const ground = answers.prep && answers.prep !== 'automat' ? live.find((v) => v.grind === 'ground' && v.grams === pick.grams && PREP_GRIND[answers.prep].test(v.label || '')) : null;
+    const label = String(pick.label || '').replace(/Zrnková/g, T('zrnková', 'zrnková')).replace(/\s*·\s*/g, ' · ');
+    return {...pick, label, ground};
+  }
+
+  function reasonsFor(product, answers, entry, variant) {
+    const out = [];
+    const a = answers;
+    if (a.prep && (product.prep?.[a.prep] ?? 0) >= 0.6) {
+      const [sk, cs] = PREP_REASON[a.prep] || [];
+      if (sk) out.push([T(sk, cs), a.prep === 'automat' && variant?.grind === 'beans' ? T('Zrnková, akú automat potrebuje.', 'Zrnková, jakou automat potřebuje.') : T('Podľa popisu sa hodí na túto prípravu.', 'Podle popisu se hodí na tuto přípravu.')]);
+    }
+    if (a.taste && (product.taste?.[a.taste] ?? 0) >= 0.6 && product.notes?.length) {
+      const [sk, cs] = TASTE_REASON[a.taste] || [];
+      if (sk) out.push([T(sk, cs), T('V chuti: ', 'V chuti: ') + product.notes.slice(0, 3).join(', ') + '.']);
+    }
+    if (a.caffeine === 'no' && product.decaf) out.push([T('Bez kofeínu', 'Bez kofeinu'), T('E-shop ju označuje ako bezkofeínovú.', 'E-shop ji označuje jako bezkofeinovou.')]);
+    if (a.acidity && a.acidity !== 'explore' && Number.isFinite(product.acidity) && !entry.unmet.includes('acidity')) {
+      out.push([product.acidity <= 1 ? T('Nízka kyslosť', 'Nízká kyselost') : T('Výraznejšia kyslosť', 'Výraznější kyselost'), T('Kyslosť: ', 'Kyselost: ') + acidityScale[product.acidity] + '.']);
+    }
+    if ((a.drink === 'milk' || a.drink === 'both') && (product.drink?.milk ?? 0) >= 0.6) out.push([T('Aj do mlieka', 'I do mléka'), T('Hodí sa do cappuccina a latte.', 'Hodí se do cappuccina a latte.')]);
+    if (out.length < 3) {
+      const comp = composition(product);
+      if (comp === 'arabica') out.push([T('100 % arabica', '100 % arabika'), T('Bez robusty, jemnejšia chuť.', 'Bez robusty, jemnější chuť.')]);
+      else if (comp === 'blend' && /robust/i.test(`${product.name} ${product.line || ''}`)) out.push([T('Arabica s robustou', 'Arabika s robustou'), T('Plnšia chuť a hustejšia crema.', 'Plnější chuť a hustší crema.')]);
+    }
+    return out.slice(0, 3);
+  }
+
+  /* What actually differs from the main coffee; nothing to say means it is not a useful alternative. */
+  function differenceOf(main, other) {
+    const parts = [];
+    const cm = composition(main), co = composition(other);
+    if (co === 'arabica' && cm === 'blend') parts.push(T(`100 % arabica, oproti ${main.name} neobsahuje robustu`, `100 % arabika, oproti ${main.name} neobsahuje robustu`));
+    else if (co === 'blend' && cm === 'arabica' && /robust/i.test(`${other.name} ${other.line || ''}`)) parts.push(T('zmes s robustou, plnšia a silnejšia', 'směs s robustou, plnější a silnější'));
+    const fresh = (other.notes || []).filter((note) => !(main.notes || []).includes(note));
+    if (fresh.length) parts.push(T('v chuti ', 'v chuti ') + (other.notes || []).slice(0, 3).join(', '));
+    if (Number.isFinite(main.acidity) && Number.isFinite(other.acidity) && main.acidity !== other.acidity) parts.push(other.acidity > main.acidity ? T('viac kyslosti', 'více kyselosti') : T('menej kyslosti', 'méně kyselosti'));
+    if (other.decaf && !main.decaf) parts.push(T('bez kofeínu', 'bez kofeinu'));
+    return parts;
+  }
+
+  /* A storage canister from the same shop, sized for the recommended pack. */
+  function accessoryFor(product, variant) {
+    const offer = Array.isArray(DATA.fullOffer) ? DATA.fullOffer : [];
+    const STORE = /\bdóz[auy]?\b|\bdoz[auy]?\b|dóza|vákuov|vakuov|tightvac|airscape|coffeevac|turn-n-seal/i;
+    const seen = new Set();
+    const list = offer.filter((p) => p && p.available !== false && STORE.test(p.name || '') && !/matcha|čaj|ube|cukr/i.test(p.name || '') && Number.isFinite(p.priceAmount) && (p.currency || product.currency) === product.currency && !seen.has(p.url) && seen.add(p.url));
+    if (!list.length) return null;
+    const pack = variant?.grams || packOf(product);
+    const capacity = (p) => { const m = String(p.name).match(/(\d+)\s*(g|ml)\b/i); return m ? Number(m[1]) : null; };
+    const sized = pack ? list.filter((p) => { const c = capacity(p); return c && /g\b/i.test(String(p.name).match(/\d+\s*(g|ml)\b/i)?.[0] || '') ? c >= pack : false; }) : [];
+    const pick = (sized.length ? sized : list).slice().sort((a, b) => (capacity(a) || 1e6) - (capacity(b) || 1e6) || a.priceAmount - b.priceAmount)[0];
+    return {product: pick, pack};
+  }
+
   function renderResult() {
     advisor.classList.remove('is-questions');
     advisor.classList.add('is-result');
@@ -423,18 +511,16 @@
     if(!best){advisor.innerHTML='<div class="result"><h2>Takúto kombináciu v ponuke nemáme</h2><p>Žiadna overená káva nespĺňa tieto podmienky naraz. Upravte odpovede alebo niektorú otázku preskočte.</p><button class="ghost" type="button" id="restartEmpty">Zmeniť odpovede</button></div>';advisorFoot.hidden=true;$('#restartEmpty',advisor).addEventListener('click',resetAdvisor);return;}
     const current = state.chosen ? ranked.find((entry) => entry.product.id === state.chosen) || best : best;
     const product = current.product;
-    const alternative = ranked.find((entry) => entry.product.id !== product.id && !entry.unmet.length);
+    const variant = pickVariant(product, state.answers);
+    const priceLabel = variant ? variant.priceLabel || amountText(variant.price, product.currency) : product.price;
+    const priceValue = variant ? variant.price : Number.isFinite(product.priceAmount) && !/^od\s/i.test(String(product.price || '')) ? product.priceAmount : null;
+    const reasons = reasonsFor(product, state.answers, current, variant);
+    const exactOthers = ranked.filter((entry) => entry.product.id !== product.id && !entry.unmet.length && baseName(entry.product) !== baseName(product));
+    const altEntry = exactOthers.find((entry) => differenceOf(product, entry.product).length) || null;
+    const alternative = altEntry ? {entry: altEntry, variant: pickVariant(altEntry.product, state.answers), diff: differenceOf(product, altEntry.product)} : null;
+    const accessory = accessoryFor(product, variant);
     const acidityLabel = Number.isFinite(product.acidity)?acidityScale[product.acidity]:'Neuvedená';
-    /* The answers this coffee verifiably meets, in the customer's own words. */
-    const acidityNow = Number.isFinite(product.acidity) ? product.acidity : 1;
-    const met = steps.map((step) => {
-      const value = state.answers[step.key];
-      const ok = step.key === 'acidity'
-        ? (value === 'explore' ? (product.explore ?? 0) >= 0.6 : Math.abs(ACIDITY_TARGET[value] - acidityNow) <= 1 && !current.unmet.includes('acidity'))
-        : (product[step.key]?.[value] ?? 0) >= 0.6;
-      const title = step.options.find((option) => option.value === value)?.title;
-      return ok && title ? (step.key === 'acidity' ? 'Acidita: ' + title.toLowerCase() : title) : null;
-    }).filter(Boolean);
+    const whyText = typeof product.why === 'string' && !/^Vybran[áa] z aktuálnej ponuky|^Chuť:|^Chuťový profil:/i.test(product.why.trim()) ? product.why : '';
 
     const differences=current.unmet.map(key=>{
       const step=steps.find(step=>step.key===key),wanted=step?.options.find(option=>option.value===state.answers[key])?.title||'';
@@ -442,20 +528,23 @@
       const offered=key==='prep'?product.bestFor||'Neuvedená':key==='taste'?product.notes.join(' · ')||'Neuvedená':key==='acidity'?acidityLabel:step?.options.filter(option=>(product[key]?.[option.value]??0)>=0.6).map(option=>option.title).join(' · ')||'Neuvedené';
       return {label,wanted,offered};
     });
+    const altPrice = alternative ? (alternative.variant ? alternative.variant.priceLabel || amountText(alternative.variant.price, alternative.entry.product.currency) : alternative.entry.product.price) : '';
+    const sum = accessory && Number.isFinite(priceValue) ? amountText(priceValue + accessory.product.priceAmount, product.currency) : '';
     advisor.innerHTML = `
       <div class="result">
         <span class="result__badge">${current.unmet.length ? 'Najbližšia možnosť' : product.id === best.product.id ? 'Odporúčam vám' : 'Vaša voľba'}</span>
         <div class="result__hero">
           <img class="result__photo" src="${esc(product.photo)}" alt="${esc(product.name)}" width="132" height="178">
-          <div class="result__headline"><h2>${esc(product.name)}</h2>${product.line?`<p>${esc(product.line)}</p>`:''}<span class="result__price"><b>${esc(product.price)}</b>${product.priceUnit?`<span>/ ${esc(product.priceUnit)}</span>`:''}</span>${product.roast ? `<small class="result__weights">${esc(product.roast)}</small>` : ''}</div>
+          <div class="result__headline"><h2>${esc(product.name)}</h2>${product.line?`<p>${esc(product.line)}</p>`:''}${variant?`<span class="result__variant">${esc(variant.label)}</span>`:''}<span class="result__price"><b>${esc(priceLabel)}</b>${!variant&&product.priceUnit?`<span>/ ${esc(product.priceUnit)}</span>`:''}</span>${variant?.ground?`<small class="result__weights">${esc(T('Predáva sa aj pomletá: ', 'Prodává se i mletá: ') + String(variant.ground.label || '').replace(/^\d+\s*g\s*·\s*/, '').toLowerCase() + ' · ' + (variant.ground.priceLabel || amountText(variant.ground.price, product.currency)))}</small>`:''}${product.roast ? `<small class="result__weights">${esc(product.roast)}</small>` : ''}</div>
         </div>
         <div class="result__body">
-          <div class="notes">${product.notes.map((note) => `<span>${esc(note)}</span>`).join('')}</div>
-          <div class="why"><b>Prečo práve táto</b>${met.length ? `<div class="fits">${met.map((title) => `<span>${esc(title)}</span>`).join('')}</div>` : ''}<p>${esc(product.why)}</p></div>
-          <div class="facts"><div class="fact"><b>${icons.drop} Acidita</b><span class="fact__value">${dots(product.acidity)} ${esc(acidityLabel)}</span></div><div class="fact"><b>${icons.cup} Príprava</b><span class="fact__value">${esc(product.bestFor)}</span></div></div>
+          ${reasons.length ? `<ul class="result__reasons">${reasons.map(([title, text]) => `<li><b>${esc(title)}</b><span>${esc(text)}</span></li>`).join('')}</ul>` : `<div class="notes">${product.notes.map((note) => `<span>${esc(note)}</span>`).join('')}</div>`}
+          ${whyText ? `<div class="why"><p>${esc(whyText)}</p></div>` : ''}
+          <div class="facts"><div class="fact"><b>${icons.drop} Acidita</b><span class="fact__value">${Number.isFinite(product.acidity)?dots(product.acidity):''} ${esc(acidityLabel)}</span></div><div class="fact"><b>${icons.cup} Príprava</b><span class="fact__value">${esc(product.bestFor || 'Neuvedená')}</span></div></div>
           ${differences.length?`<details class="result__differences"><summary>Rozdiely oproti vášmu výberu</summary><dl>${differences.map(item=>`<div><dt>${esc(item.label)}</dt><dd><small>Váš výber</small><span>${esc(item.wanted)}</span><small>Táto káva</small><span>${esc(item.offered)}</span></dd></div>`).join('')}</dl></details>`:''}
           ${product.bulk ? `<div class="bulk"><b>${esc(product.bulk.label)}</b><span>${esc(product.bulk.saving)}</span></div>` : ''}
-          ${alternative ? `<div class="alt"><span>Ak by ste chceli inú</span><button class="alt__card" type="button" data-product="${esc(alternative.product.id)}"><img src="${esc(alternative.product.photo)}" alt="" loading="lazy" width="42" height="58"><div><b>${esc(alternative.product.name)}</b><small>${esc(alternative.product.notes.slice(0, 2).join(' · '))}</small></div>${icons.arrow}</button></div>` : ''}
+          ${alternative ? `<div class="alt"><span>${T('Ak by ste chceli inú', 'Pokud byste chtěli jinou')}</span><button class="alt__card" type="button" data-product="${esc(alternative.entry.product.id)}"><img src="${esc(alternative.entry.product.photo)}" alt="" loading="lazy" width="42" height="58"><div><b>${esc(alternative.entry.product.name)}</b><small>${esc(alternative.diff.join('; ').replace(/^./, (c) => c.toUpperCase()))}.</small>${altPrice?`<strong class="alt__price">${esc(altPrice)}</strong>`:''}</div>${icons.arrow}</button></div>` : ''}
+          ${accessory ? `<div class="result__addon"><span>${T('Hodí sa k nákupu · voliteľné', 'Hodí se k nákupu · volitelné')}</span><a class="addon__card" href="${esc(accessory.product.url)}" target="_blank" rel="noopener noreferrer">${accessory.product.photo?`<img src="${esc(accessory.product.photo)}" alt="" loading="lazy" width="42" height="58">`:''}<div><b>${esc(accessory.product.name)}</b><small>${esc(accessory.pack ? T(`Na uskladnenie otvoreného ${accessory.pack >= 1000 ? accessory.pack / 1000 + ' kg' : accessory.pack + ' g'} balenia.`, `Na uskladnění otevřeného ${accessory.pack >= 1000 ? accessory.pack / 1000 + ' kg' : accessory.pack + ' g'} balení.`) : T('Na uskladnenie otvoreného balenia.', 'Na uskladnění otevřeného balení.'))}</small><strong class="alt__price">${esc(amountText(accessory.product.priceAmount, product.currency) || accessory.product.price)}</strong>${sum?`<small class="addon__sum">${esc(T(`Káva + dóza: ${sum} za produkty.`, `Káva + dóza: ${sum} za produkty.`))}</small>`:''}</div>${icons.arrow}</a></div>` : ''}
         </div>
       </div>`;
 
