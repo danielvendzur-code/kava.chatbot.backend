@@ -11,3 +11,7 @@
 @media(prefers-reduced-motion:reduce){
  :is(.cx-option,.cx-quality-product,.cx-product,.cx-option-photo img,.cx-quality-product-photo img,.cx-mode button,[role="dialog"] .option){transition:none!important;animation:none!important}
 }
+
+/* Clearer quick replies and optional differences below the recommendation. */
+html body #widget #chips button.chip{font-weight:650!important}
+.result__differences{margin:16px 0;padding:12px 14px;border:1px solid #d7dadd;border-radius:14px}.result__differences summary{cursor:pointer;font-size:13px;font-weight:650}.result__differences dl{margin:12px 0 0;display:grid;gap:12px}.result__differences dt{font-size:12px;font-weight:650;margin-bottom:5px}.result__differences dd{display:grid;grid-template-columns:80px minmax(0,1fr);gap:4px 8px;margin:0;font-size:12px;line-height:1.5}.result__differences dd small{font-size:11px;color:#6d737a}

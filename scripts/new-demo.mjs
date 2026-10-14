@@ -277,8 +277,8 @@ write(`${slug}.html`, `<!doctype html>
   <script src="/coffee-api-route.js"></script>
   <script src="/coffee-local-api.js"></script>
   <script src="/${slug}-jolka-data.js"></script>
-  <script src="/coffee-jolka-app.js"></script>
-  <script src="/coffee-owner-brand.js"></script>
+  <script src="/coffee-jolka-app.js?v=20261014-final-audit-9"></script>
+  <script src="/coffee-owner-brand.js?v=20261014-final-audit-9"></script>
   ${data.productOptionPhotos ? '<script src="/coffee-offer.js"></script>' : ''}
 </body>
 </html>
@@ -316,7 +316,7 @@ const patch = (file, find, replacement, describe) => {
   /* Insert before the brace that closes the brand table, wherever it sits, and
      supply the comma the last entry does not carry. Anchoring on the text that
      follows the table broke the moment a comment was added above it. */
-  const file = 'coffee-owner-brand.js';
+  const file = 'coffee-owner-brand.js?v=20261014-final-audit-9';
   const full = path.join(ROOT, file);
   const before = fs.readFileSync(full, 'utf8');
   {

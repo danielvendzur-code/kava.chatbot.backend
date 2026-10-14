@@ -71,9 +71,9 @@ const fingerprint = createHash('sha1')
 const release = [
   'Ukazky mojchatbot.sk',
   `verzia: ${fingerprint}`,
-  'cosmetics.js: ' + (stampFor('/cosmetics.js') || '-'),
+  'cosmetics.js: ' + (stampFor('/cosmetics.js?v=20261014-final-audit-9') || '-'),
   'skincare-refresh.css: ' + (stampFor('/skincare-refresh.css') || '-'),
-  'coffee-jolka-app.js: ' + (stampFor('/coffee-jolka-app.js') || '-'),
+  'coffee-jolka-app.js: ' + (stampFor('/coffee-jolka-app.js?v=20261014-final-audit-9') || '-'),
   'coffee-refresh.css: ' + (stampFor('/coffee-refresh.css') || '-'),
   ''
 ].join('\n');

@@ -401,26 +401,10 @@
     return `
     <header class="mcb-head">
       <span class="mcb-lockup">${brand.lockup}</span>
-      <button class="mcb-btn mcb-btn--sm" type="button" data-mcb-offer="open" aria-haspopup="dialog">
+      <a class="mcb-btn mcb-btn--sm" href="${contact}" target="_blank" rel="noopener noreferrer">
         Mám záujem ${icons.arrow}
-      </button>
+      </a>
     </header>
-
-    <div class="mcb-offer" data-mcb-offer="sheet" role="dialog" aria-modal="true"
-         aria-label="Čo dostanete" hidden>
-      <div class="mcb-offer-card">
-        <button class="mcb-offer-close" type="button" data-mcb-offer="close" aria-label="Zavrieť">×</button>
-        <span class="mcb-offer-kicker">Viac info</span>
-        <h2>Čo ešte dostanete</h2>
-        <ul>
-          ${MORE.map(([title, note]) => `
-            <li>${icons.dot}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
-        </ul>
-        <a class="mcb-btn mcb-btn--accent" href="${contact}" target="_blank" rel="noreferrer">
-          ${icons.mail} Chcem to na svoj web
-        </a>
-      </div>
-    </div>
 
     <main class="mcb-main">
       <section class="mcb-copy">
@@ -431,7 +415,6 @@
           <button class="mcb-btn" type="button" data-release-open="advisor">Otvoriť poradcu ${icons.arrow}</button>
           <button class="mcb-btn mcb-btn--ghost" type="button" data-release-open="chat">Skúsiť chat ${icons.chat}</button>
         </div>
-        <button class="mcb-more" type="button" data-mcb-offer="open" aria-haspopup="dialog">Viac info ${icons.arrow}</button>
       </section>
 
       <div class="mcb-frame">
@@ -594,16 +577,6 @@
       button.addEventListener('click', () => openMode(button.dataset.releaseOpen));
     });
 
-    const sheet = root.querySelector('[data-mcb-offer="sheet"]');
-    const setOffer = (open) => {
-      sheet.hidden = !open;
-      document.body.classList.toggle('mcb-offer-open', open);
-      if (open) sheet.querySelector('[data-mcb-offer="close"]').focus();
-    };
-    root.querySelectorAll('[data-mcb-offer="open"]').forEach((b) => b.addEventListener('click', () => setOffer(true)));
-    root.querySelectorAll('[data-mcb-offer="close"]').forEach((b) => b.addEventListener('click', () => setOffer(false)));
-    sheet.addEventListener('click', (event) => { if (event.target === sheet) setOffer(false); });
-    document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !sheet.hidden) setOffer(false); });
 
     requestAnimationFrame(() => root.classList.add('is-in'));
     watchDialog();

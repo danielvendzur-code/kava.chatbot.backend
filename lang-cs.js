@@ -13,6 +13,7 @@
 
   /* Whole text nodes. */
   const exact = {
+    'Rozdiely oproti vášmu výberu':'Rozdíly oproti vašemu výběru','Váš výber':'Váš výběr','Táto káva':'Tato káva','Spôsob pitia':'Způsob pití',
     'Moka kanvička':'Moka konvička',
     'Čo ešte dostanete':'Co ještě dostanete','Vyskúšate ho naostro na vlastnom webe.':'Vyzkoušíte ho naostro na vlastním webu.',
     'Preklik priamo na produkt':'Proklik přímo na produkt','Po odporúčaní zákazník pokračuje rovno na konkrétny produkt vo vašom e-shope.':'Po doporučení zákazník pokračuje rovnou na konkrétní produkt ve vašem e-shopu.',
