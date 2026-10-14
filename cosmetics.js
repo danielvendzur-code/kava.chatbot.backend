@@ -307,18 +307,20 @@
     state.interacted = true;
     state.busy = true;
     state.messages.push({role:'user',text:clean});
-    const answer = {role:'assistant',text:localReply(clean)};
+    const generation=state.generation||0;
+    let replied=false;
+    const answer = {role:'assistant',text:document.documentElement.lang==='cs'?'Ověřuji odpověď v nabídce…':'Overujem odpoveď v ponuke…'};
     state.messages.push(answer);
     renderChat();
-    // The offline answer is already on screen; the request only ever replaces
-    // it. Six seconds, so a request that is accepted and never answered cannot
-    // which is accepted and never answered cannot leave the chat marked busy.
+    // Keep the pending bubble neutral until a canonical response arrives.
     const abort = new AbortController();
     const timer = setTimeout(() => abort.abort(), 12000);
     try {
       const response = await fetch('/api/cosmetics-chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({demoId:slug,messages:state.messages.slice(-8).map((m)=>({role:m.role,content:m.text}))}),signal:abort.signal});
-      if (response.ok) { const payload=await response.json(); if(String(payload.reply||'').trim()) answer.text=String(payload.reply).trim(); }
+      if (response.ok) { const payload=await response.json(); if(String(payload.reply||'').trim()){answer.text=String(payload.reply).trim();replied=true;} }
     } catch (_) {} finally { clearTimeout(timer); }
+    if(generation!==(state.generation||0))return;
+    if(!replied)answer.text=globalThis.CXCatalogueReplyCore?.(globalThis.CX_CATALOGUES||{},slug,clean,state.messages.map(m=>({role:m.role,content:m.text})))||(document.documentElement.lang==='cs'?'Odpověď se nyní nepodařilo načíst. Nabídku můžete projít ve Výběru.':'Odpoveď sa teraz nepodarilo načítať. Ponuku môžete prejsť vo Výbere.');
     state.busy = false;
     renderChat();
   }
@@ -436,7 +438,7 @@
   }
 
   function resetAdvisor(){state.step=0;state.answers={};state.result=null;state.alternative=null;state.transitioning=false;renderAdvisor();}
-  function resetAll(){state.step=0;state.answers={};state.result=null;state.alternative=null;state.interacted=false;state.busy=false;state.transitioning=false;state.messages=[{role:'assistant',text:'Dobrý deň. Napíšte, čo od starostlivosti očakávate alebo ako sa vaša pleť správa. Pomôžem vám zúžiť výber.'}];setMode('chat');}
+  function resetAll(){state.generation=(state.generation||0)+1;state.step=0;state.answers={};state.result=null;state.alternative=null;state.interacted=false;state.busy=false;state.transitioning=false;state.messages=[{role:'assistant',text:document.documentElement.lang==='cs'?'Dobrý den. Vybírejte z nabídky '+brand.name+'. Napište, jaký produkt hledáte, nebo otevřete Výběr.':'Dobrý deň. Vyberajte z ponuky '+brand.name+'. Napíšte, aký produkt hľadáte, alebo otvorte Výber.'}];setMode('chat');}
 
   root.querySelectorAll('[data-open]').forEach((button)=>button.addEventListener('click',()=>openWidget(button.dataset.open)));
   const offerSheet = root.querySelector('[data-cx-offer="sheet"]');

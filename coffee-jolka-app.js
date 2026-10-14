@@ -582,6 +582,7 @@
     const value = String(text ?? '').trim();
     if (!value || state.busy) return;
     startChat();
+    const generation=state.generation||0;
     state.busy = true;
     addMessage(esc(value), true);
     input.value = '';
@@ -598,10 +599,12 @@
     const patience = new Promise((resolve) => setTimeout(() => resolve(null), PATIENCE_MS));
 
     const raced = await Promise.race([pending, patience]);
+    if(generation!==(state.generation||0))return;
     $('#typing')?.remove();
     const shown = raced || offline;
     const row = addMessage(shown);
-    state.history.push({ role: 'assistant', content: shown.replace(/<[^>]*>/g, '') });
+    const historyEntry={ role: 'assistant', content: shown.replace(/<[^>]*>/g, '') };
+    state.history.push(historyEntry);
 
     /* The answer is on screen, so the chat is free again — a request still in
        flight upgrades this one bubble in the background. */
@@ -610,10 +613,9 @@
 
     if (!raced) {
       const late = await pending;
-      if (late) {
+      if (late && generation===(state.generation||0)) {
         row.querySelector('.bubble').innerHTML = late;
-        const entry = state.history[state.history.length - 1];
-        if (entry && entry.role === 'assistant') entry.content = late.replace(/<[^>]*>/g, '');
+        historyEntry.content = late.replace(/<[^>]*>/g, '');
       }
     }
   }
@@ -623,7 +625,7 @@
     $$('.chip').forEach((chip) => chip.addEventListener('click', () => send(chip.textContent)));
   }
 
-  function seedChat() { chatLog.innerHTML = ''; state.history = []; addMessage(esc(chatCopy.welcome)); }
+  function seedChat() { state.generation=(state.generation||0)+1;state.busy=false;chatLog.innerHTML = ''; state.history = []; addMessage(esc(chatCopy.welcome));renderChips(); }
 
   $('#heroOpen').addEventListener('click', openWidget);
   openButton.addEventListener('click', openWidget);

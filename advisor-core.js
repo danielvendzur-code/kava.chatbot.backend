@@ -65,7 +65,7 @@
       for(const key of ['area','time','ingredient','size'])if(answers[key]&&answers[key]!=='any')list=list.filter(p=>p.features[key]===answers[key]);
       const rank = p => (p.signals.includes(answers.profile) ? 8 : 0) + (p.signals.includes(answers.goal) ? 12 : 0);
       const cost=p=>Number.isFinite(p.priceAmount)?p.priceAmount:Infinity;
-      list.sort((a, b) => rank(b) - rank(a) || cost(a) - cost(b) || a.name.localeCompare(b.name, 'sk') || a.id.localeCompare(b.id));
+      list.sort((a, b) => rank(b) - rank(a) || (Number(answers.budget)>0?cost(b)-cost(a):cost(a)-cost(b)) || a.name.localeCompare(b.name, 'sk') || a.id.localeCompare(b.id));
       const winner = list[0] || null;
       // An alternative must be a different real product, not a size variant of the winner.
       const alternative = winner ? list.find(p => p.url !== winner.url && norm(p.name) !== norm(winner.name)) || null : null;

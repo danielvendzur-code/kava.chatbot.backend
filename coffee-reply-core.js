@@ -96,9 +96,9 @@ globalThis.CXCoffeeReplyCore=(c,text,history=[])=>{
  if(kind.kind==='general'){if(!kind.topic)return T.unknown+c.source;const prep=TOPIC_PREP[kind.topic],fit=prep?beans.filter(p=>(p.prep?.[prep]||0)>=.6).sort((a,b)=>(b.prep[prep]-a.prep[prep])||(a.priceAmount??Infinity)-(b.priceAmount??Infinity))[0]:null;return T[kind.topic]+(fit?'\n\n'+T.fits+line(fit):'');}
  /* Earlier general or health questions are not product conditions. */
  const texts=[...history.filter(m=>m?.role==='user').map(m=>m.content).filter(t=>classify(t).kind==='product').map(norm),q],recent=rx=>texts.slice().reverse().find(t=>rx.test(t))||q;
- const cafQ=recent(/kof|decaf/),prepQ=recent(/filtr|filter|v60|chemex|automat|moka|espresso|pakov/),tasteQ=recent(/ovoc|fruity|cokol|chocol/),acidQ=recent(/kys|acid/),milkQ=recent(/mliek|mlie|mlek|cierna|cernou|cappucc|latte/),budgetQ=recent(/(?:do|max|rozpocet)\s*\d|bez limit|bez rozpo/);
+ const cafQ=recent(/kof|decaf/),prepQ=recent(/filtr|filter|v60|chemex|aeropress|french|frenc|automat|moka|espresso|pakov/),tasteQ=recent(/ovoc|fruity|cokol|chocol/),acidQ=recent(/kys|acid/),milkQ=recent(/mliek|mlie|mlek|cierna|cernou|cappucc|latte/),budgetQ=recent(/(?:do|max|rozpocet)\s*\d|bez limit|bez rozpo/);
  const tokens=q.split(/[^a-z0-9]+/).filter(t=>t.length>2&&!['chcem','chci','hladam','hledam','prosim','kavu','kava','kavy','coffee','produkt','produkty','mate','ponuke','nabidce','nieco','neco','eur','czk','max','automatu','automat','filter','filtr','espresso','bez','kofeinu','odporucte','doporucte','poradte'].includes(t)&&!/^\d+(?:kg|g)?$/.test(t));
- const wantsDecaf=/bez\s*kof|bezkof|decaf/.test(cafQ),prep=/filtr|filter|v60|chemex/.test(prepQ)?'filter':/automat/.test(prepQ)?'automat':/\bmoka\b/.test(prepQ)?'moka':/espresso|pakov|pakovy/.test(prepQ)?'lever':null;
+ const wantsDecaf=/bez\s*kof|bezkof|decaf/.test(cafQ),prep=/filtr|filter|v60|chemex|aeropress|french|frenc/.test(prepQ)?'filter':/automat/.test(prepQ)?'automat':/\bmoka\b/.test(prepQ)?'moka':/espresso|pakov|pakovy/.test(prepQ)?'lever':null;
  const taste=/ovoc|fruity/.test(tasteQ)&&!/bez\s*ovoc/.test(tasteQ)?'fruity':/cokol|chocol/.test(tasteQ)?'chocolate':null;
  const lowAcid=/bez\s*kys|nekys|nizk.*(?:kys|acid)|jemn.*acid/.test(acidQ),milk=/s mlie|do mlie|s mlek|do mlek|cappucc|latte/.test(milkQ);
  const budget=/bez limit|bez rozpo/.test(budgetQ)?null:budgetQ.match(/(?:do|max|rozpocet)\s*(\d+(?:[.,]\d+)?)\s*(€|eur|kc|czk)?/),amount=budget?Number(budget[1].replace(',','.')):null;
@@ -113,7 +113,7 @@ globalThis.CXCoffeeReplyCore=(c,text,history=[])=>{
  const score=p=>tokens.filter(t=>norm(p.name+' '+(p.notes||[]).join(' ')).includes(t)).length;
  const beansForBrewer=/kav[auy]\b.*(?:do|na|pre|pro)\s+(?:french|aeropress|chemex|hario|moka|konvic|kanvic)/.test(q);
  const gearIntent=!beansForBrewer&&(/mlynce|mlyne|mlynk|filtre|papierov.*filter|papirov.*filtr|hario|chemex|french press|aeropress|tamper|konvic|kanvic|doza|hrnce|hrnek|salk|odmerk|cascara|\bknih|cisti|poukaz|doplnk|prislusenstv|degusta|balicek|predplat|\bpohar|\btask|\bkurz|\bflas|sitko|lievik|vzork/.test(q)||/kavovar/.test(q)&&!/(?:do|pre|pro)\s+kavovar/.test(q));
- if(gearIntent){const gear=(c.offer||[]).filter(p=>p.kind!=='Káva'&&p.available!==false&&priced(p)&&(score(p)>0||/doplnk|prislusenstv/.test(q))).sort((a,b)=>score(b)-score(a)||(a.priceAmount??Infinity)-(b.priceAmount??Infinity));if(gear.length)return T.gear+'\n\n'+gear.slice(0,3).map(line).join('\n\n');return T.noGear+c.source;}
+ if(gearIntent){const gear=(c.offer||[]).filter(p=>p.kind!=='Káva'&&p.available!==false&&priced(p)&&(score(p)>0||/doplnk|prislusenstv/.test(q))).sort((a,b)=>score(b)-score(a)||(amount>0&&!/lacn|levn/.test(q)?(b.priceAmount??-Infinity)-(a.priceAmount??-Infinity):(a.priceAmount??Infinity)-(b.priceAmount??Infinity)));if(gear.length)return T.gear+'\n\n'+gear.slice(0,3).map(line).join('\n\n');return T.noGear+c.source;}
  const conditions=[prep&&T.labels[prep],taste&&T.labels[taste],wantsDecaf&&T.labels.decaf,lowAcid&&T.labels.lowAcid,milk&&T.labels.milk,amount!==null&&T.labels.budget+budget[1]+' '+(currency==='CZK'?'Kč':'€'),grams&&sizeLabel].filter(Boolean);
  let list=beans.filter(eligible);
  const namedCandidates=beans.filter(p=>tokens.length&&tokens.every(t=>norm(p.name).includes(t)));
@@ -122,7 +122,7 @@ globalThis.CXCoffeeReplyCore=(c,text,history=[])=>{
  const adventurous=/netradic|zaujimav|zajimav|nezvycajn|neobvykl|special|experiment|vyberov/.test(q),asksAdvice=/odporuc|doporuc|porad|nieco|neco|\btip|najlep|nejlep|oblub|oblib|predavan|prodavan|ponuk|nabid|sortiment|ake mate|jake mate/.test(q);
  if(!conditions.length&&!named.length&&!adventurous&&!asksAdvice&&!list.some(p=>score(p)>0))return T.clarify;
  if(!list.length)return T.none+c.source;
- list.sort((a,b)=>score(b)-score(a)||(adventurous?(b.explore||0)-(a.explore||0):0)||((b.notes||[]).length>0)-((a.notes||[]).length>0)||(a.priceAmount??Infinity)-(b.priceAmount??Infinity));
+ list.sort((a,b)=>score(b)-score(a)||(adventurous?(b.explore||0)-(a.explore||0):0)||((b.notes||[]).length>0)-((a.notes||[]).length>0)||(amount>0&&!/lacn|levn/.test(q)?(b.priceAmount??-Infinity)-(a.priceAmount??-Infinity):(a.priceAmount??Infinity)-(b.priceAmount??Infinity)));
  // A parent “from” price is not the verified price of the requested pack.
  // Never label a cheap small-pack offer as a matching kilogram recommendation.
  let sizeNote='';if(grams){const sized=list.filter(p=>hasSize(p)&&!/^od /i.test(p.price||'')&&!p.source?.priceFrom);if(!sized.length)return T.size(sizeLabel)+c.source;list=sized;}
