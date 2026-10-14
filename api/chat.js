@@ -1,4 +1,4 @@
-import {fullCoffeeReply} from './full-coffee-reply.js';
+import {fullCoffeeReply,brainCoffeeReply} from './full-coffee-reply.js';
 import {verifiedCoffeeReply} from './verified-coffee-reply.js';
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 const MODEL = process.env.CHAT_MODEL || 'claude-haiku-4-5';
@@ -460,6 +460,9 @@ export default async function handler(req,res){
   while(messages.at(-1)?.role==='assistant')messages.pop();
   const latest=messages.filter((m)=>m.role==='user').at(-1)?.content||'';
   if(!latest) return res.status(400).json({error:'Missing user message'});
+  /* Questions about named products, comparisons, exclusions and changed conditions are answered
+     from the shop catalogue first; only general coffee questions continue below. */
+  const grounded=await brainCoffeeReply(String(body.demoId||''),latest,messages);if(grounded)return res.status(200).json({reply:grounded,fallback:true});
   /* A general coffee question outside the prepared topics goes to the model, which may only
      explain coffee in general: no products, prices, shop terms or health advice. */
   const asked=globalThis.CXCoffeeReplyKind?.(latest);

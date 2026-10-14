@@ -148,10 +148,10 @@
   ],
   "functions": {
     "api/chat.js": {
-      "includeFiles": "{coffee-catalogues/*.js,coffee-reply-core.js}"
+      "includeFiles": "{coffee-catalogues/*.js,coffee-reply-core.js,chat-brain.js,chat-adapters.js}"
     },
     "api/cosmetics-chat.js": {
-      "includeFiles": "{catalogues/*-refresh.js,advisor-core.js,catalogue-reply-core.js,catalogue-data.js}"
+      "includeFiles": "{catalogues/*-refresh.js,advisor-core.js,catalogue-reply-core.js,catalogue-data.js,chat-brain.js,chat-adapters.js}"
     }
   }
 }

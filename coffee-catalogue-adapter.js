@@ -9,7 +9,8 @@
   const money=v=>typeof v==='string'?v.replace(/(\d),(\d)(?!\d)/g,'$1,$20'):v,seen=new Set();
   /* The line under the name is a short category, not the shop's whole breadcrumb list. */
   const tidy=line=>{const parts=[...new Set(String(line||'').split(/\s*[·|]\s*/).map(s=>s.trim()).filter(s=>s&&!/^(káva|kava|e-shop|eshop|obchod)$/i.test(s)))];return parts.slice(0,2).join(' · ').slice(0,64);};
-  const products=catalogue.products.filter(p=>p.available!==false).map(p=>({...p,line:/^\/|^https?:/.test(p.line||'')?'':tidy(p.line),price:money(p.price),priceFrom:money(p.priceFrom),priceUnit:/podľa e-shopu|podle e-shopu/i.test(p.priceUnit||'')?'':p.priceUnit})).filter(p=>{const key=String(p.name||'').trim().toLowerCase();if(seen.has(key))return false;seen.add(key);return true;});
+  /* Only coffee is recommended as coffee; machines, filters and sweets stay in the shop's other offer. */
+  const products=catalogue.products.filter(p=>p.available!==false&&(!p.kind||p.kind==='Káva')).map(p=>({...p,line:/^\/|^https?:/.test(p.line||'')?'':tidy(p.line),price:money(p.price),priceFrom:money(p.priceFrom),priceUnit:/podľa e-shopu|podle e-shopu/i.test(p.priceUnit||'')?'':p.priceUnit})).filter(p=>{const key=String(p.name||'').trim().toLowerCase();if(seen.has(key))return false;seen.add(key);return true;});
   if(!products.length)return;
   data.products=products;data.fullOffer=catalogue.offer;data.demo.teaserText='Krátky výber · jedno odporúčanie';data.demo.entryText='Pár otázok · konkrétne odporúčanie';
   // Moka and Turkish coffee use different preparation and grind; this value
