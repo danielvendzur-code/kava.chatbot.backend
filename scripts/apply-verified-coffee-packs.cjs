@@ -14,11 +14,21 @@ for (const [slug, shop] of Object.entries(evidence.shops)) {
   for (const product of [...catalogue.products, ...catalogue.offer]) {
     const record = byUrl.get(product.url);
     if (!record) continue;
-    product.variants = record.variants.map(([grams, price, extra, available]) => ({
-      grams, price, extra, available, grind: null,
-      label: `${grams === 1000 ? '1 kg' : grams + ' g'}${extra ? ' · ' + extra : ''}`,
-      priceLabel: money(price)
-    }));
+    product.source = {...product.source, packVerifiedAt: evidence.checkedAt, packEvidenceUrl: product.url};
+    count++;
+    if (record.packLabel) {
+      product.variants = [];
+      product.priceAmount = record.price;
+      product.price = product.priceFrom = money(record.price);
+      product.priceUnit = product.weights = record.packLabel;
+      continue;
+    }
+    product.variants = record.variants.flatMap(([grams, basePrice, extra, available]) =>
+      (shop.grinds || [{grind:null,label:null,surcharge:0}]).map(grind => ({
+        grams, price:basePrice + grind.surcharge, extra, available, grind:grind.grind,
+        label: `${grams === 1000 ? '1 kg' : grams + ' g'}${extra ? ' · ' + extra : ''}${grind.label ? ' · ' + grind.label : ''}`,
+        priceLabel: money(basePrice + grind.surcharge)
+      })));
     const live = product.variants.filter(v => v.available);
     const minimum = Math.min(...live.map(v => v.price));
     product.priceAmount = minimum;
@@ -26,8 +36,6 @@ for (const [slug, shop] of Object.entries(evidence.shops)) {
     product.priceFrom = product.price;
     product.priceUnit = 'Viac balení';
     product.weights = [...new Set(live.map(v => v.grams + ' g'))].join(', ');
-    product.source = {...product.source, packVerifiedAt: evidence.checkedAt, packEvidenceUrl: product.url};
-    count++;
   }
   if (count !== shop.products.length * 2) throw new Error(`Expected catalogue/offer pairs: ${slug} ${count}`);
   catalogue.packVariantsVerifiedAt = evidence.checkedAt;

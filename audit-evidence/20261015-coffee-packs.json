@@ -1,56 +1,1050 @@
 {
- "checkedAt":"2026-10-15",
- "method":"Oficialne produktove stranky otvorene v Chrome. Kazda uvedena hmotnost a pripadne prazenie zvolene vo viditelnom ovladaci; precitana aktualna cena a dostupnost. Bez pridania do kosika.",
- "tupleFormat":["grams","price","roast_or_null","available"],
- "grind":null,
- "grindReason":"Na tychto produktovych strankach nie je vyber mletia ani dostatocny vyslovny dokaz formy kavy. Z gramaze ani z volby prazenia sa zrnkovost neodvodzuje.",
- "shops":{
-  "ajvencoffee":{
-   "baseUrl":"https://www.ajvencoffee.cz/",
-   "currency":"CZK",
-   "products":[
-    {"path":"house-blend/","variants":[[1000,695,null,true],[500,385,null,true],[250,230,null,true]]},
-    {"path":"honduras-decaf/","variants":[[500,545,null,true],[250,320,null,true]]},
-    {"path":"tanzania-kilimanjaro-dark-roast/","variants":[[1000,875,null,true],[500,475,null,true],[250,290,null,true]]},
-    {"path":"colombia-medellin-supremo/","variants":[[500,525,null,true],[250,325,null,true]]},
-    {"path":"peru-los-santos-double-fermentation/","variants":[[500,535,null,true],[250,335,null,true]]},
-    {"path":"brasilia-monte-carmelo/","variants":[[1000,745,null,true],[500,420,null,true],[250,245,null,true]]},
-    {"path":"tanzania-kilimanjaro-svetly-roast/","variants":[[500,445,null,true],[250,270,null,true]]},
-    {"path":"krasensky-nekyselo/","variants":[[1000,830,null,true],[500,465,null,true],[250,285,null,true]]},
-    {"path":"india-malabar-monsooned/","variants":[[1000,945,null,true],[500,525,null,true],[250,320,null,true]]},
-    {"path":"honduras-finca-azul-esmeralda/","variants":[[1000,760,null,true],[500,430,null,true],[250,255,null,true]]}
-   ]
-  },
-  "concept":{
-   "baseUrl":"https://www.conceptcoffee.sk/",
-   "currency":"EUR",
-   "products":[
-    {"path":"holysht-espresso/","variants":[[500,17.5,"Espresso",true],[1000,34,"Espresso",true]]},
-    {"path":"yellow-sunset/","variants":[[250,12.5,"Espresso",true],[500,24.5,"Espresso",true],[1000,48,"Espresso",true]]},
-    {"path":"butegana-burundi/","variants":[[250,14.5,"Filter",true],[1000,54,"Filter",true],[250,14.5,"Espresso",true],[1000,54,"Espresso",true]]},
-    {"path":"peace-of-cake/","variants":[[500,19.5,"Espresso",true],[1000,38,"Espresso",true]]},
-    {"path":"summerjam-colombia/","variants":[[250,18.5,"Filter",true],[1000,66,"Filter",false],[250,18.5,"Espresso",true],[1000,66,"Espresso",true]]},
-    {"path":"chiroso-colombia/","variants":[[250,20,"Filter",true],[1000,75,"Filter",true],[250,20,"Espresso",true],[1000,75,"Espresso",true]]},
-    {"path":"chocolate-brazil/","variants":[[250,10.5,"Espresso",true],[500,20,"Espresso",true],[1000,37,"Espresso",true]]},
-    {"path":"whiskey-barrel-aged/","variants":[[250,15,null,true],[1000,57,null,false]]},
-    {"path":"falling-leaves-colombia/","variants":[[250,14,"Filter",true],[1000,52,"Filter",true],[250,14,"Espresso",true],[1000,52,"Espresso",true]]},
-    {"path":"mubuku-uganda/","variants":[[250,13,"Filter",true],[1000,49,"Filter",true],[250,13,"Espresso",true],[1000,49,"Espresso",true]]},
-    {"path":"worka-sakaro-ethiopia/","variants":[[250,14,"Filter",true],[1000,52,"Filter",true],[250,14,"Espresso",true],[1000,52,"Espresso",true]]},
-    {"path":"yellow-nectar-colombia/","variants":[[250,18.5,"Filter",true],[1000,70,"Filter",true],[250,18.5,"Espresso",true],[1000,70,"Espresso",true]]}
-   ]
-  },
-  "praziarnicka":{
-   "baseUrl":"https://praziarnicka.sk/",
-   "currency":"EUR",
-   "availabilityEvidence":"Vybrana hmotnost zobrazuje konkretnu cenu a aktivne tlacidlo Pridat do kosika. Tovar nebol pridany.",
-   "grindEvidence":"FAQ uvadza mletie podla sposobu pripravy pri objednavke. Priplatok a konkretna volba neboli na produktovej stranke zobrazene, preto grind variantu zostava null.",
-   "products":[
-    {"path":"produkt/brazil-santos-100-arabica","variants":[[250,9.9,null,true],[500,15.5,null,true],[1000,27,null,true]]},
-    {"path":"produkt/cuba-serrano-lavado-100-arabica","variants":[[250,12.9,null,true],[500,19.5,null,true],[1000,34,null,true]]},
-    {"path":"produkt/bezkofeinova-kava-brazil-100-arabica","variants":[[250,12.9,null,true],[500,19.5,null,true],[1000,34,null,true]]},
-    {"path":"produkt/puccini-blend-60-arabica-40-robusta","variants":[[250,11.5,null,true],[500,18,null,true],[1000,31,null,true]]},
-    {"path":"produkt/paganini-blend-75-arabica-25-robusta","variants":[[250,11.9,null,true],[500,18.5,null,true],[1000,32,null,true]]}
-   ]
+  "checkedAt": "2026-10-15",
+  "method": "Oficialne produktove stranky otvorene v Chrome. Kazda uvedena hmotnost a pripadne prazenie zvolene vo viditelnom ovladaci; precitana aktualna cena a dostupnost. Bez pridania do kosika.",
+  "tupleFormat": [
+    "grams",
+    "price",
+    "roast_or_null",
+    "available"
+  ],
+  "grind": null,
+  "grindReason": "Forma je null tam, kde na produktovej stranke nie je vyslovna volba alebo dokaz. Coffee Sheep ma samostatne dolozene volby grinds s nulovym priplatkom.",
+  "shops": {
+    "ajvencoffee": {
+      "baseUrl": "https://www.ajvencoffee.cz/",
+      "currency": "CZK",
+      "products": [
+        {
+          "path": "house-blend/",
+          "variants": [
+            [
+              1000,
+              695,
+              null,
+              true
+            ],
+            [
+              500,
+              385,
+              null,
+              true
+            ],
+            [
+              250,
+              230,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "honduras-decaf/",
+          "variants": [
+            [
+              500,
+              545,
+              null,
+              true
+            ],
+            [
+              250,
+              320,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "tanzania-kilimanjaro-dark-roast/",
+          "variants": [
+            [
+              1000,
+              875,
+              null,
+              true
+            ],
+            [
+              500,
+              475,
+              null,
+              true
+            ],
+            [
+              250,
+              290,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "colombia-medellin-supremo/",
+          "variants": [
+            [
+              500,
+              525,
+              null,
+              true
+            ],
+            [
+              250,
+              325,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "peru-los-santos-double-fermentation/",
+          "variants": [
+            [
+              500,
+              535,
+              null,
+              true
+            ],
+            [
+              250,
+              335,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "brasilia-monte-carmelo/",
+          "variants": [
+            [
+              1000,
+              745,
+              null,
+              true
+            ],
+            [
+              500,
+              420,
+              null,
+              true
+            ],
+            [
+              250,
+              245,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "tanzania-kilimanjaro-svetly-roast/",
+          "variants": [
+            [
+              500,
+              445,
+              null,
+              true
+            ],
+            [
+              250,
+              270,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "krasensky-nekyselo/",
+          "variants": [
+            [
+              1000,
+              830,
+              null,
+              true
+            ],
+            [
+              500,
+              465,
+              null,
+              true
+            ],
+            [
+              250,
+              285,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "india-malabar-monsooned/",
+          "variants": [
+            [
+              1000,
+              945,
+              null,
+              true
+            ],
+            [
+              500,
+              525,
+              null,
+              true
+            ],
+            [
+              250,
+              320,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "honduras-finca-azul-esmeralda/",
+          "variants": [
+            [
+              1000,
+              760,
+              null,
+              true
+            ],
+            [
+              500,
+              430,
+              null,
+              true
+            ],
+            [
+              250,
+              255,
+              null,
+              true
+            ]
+          ]
+        }
+      ]
+    },
+    "concept": {
+      "baseUrl": "https://www.conceptcoffee.sk/",
+      "currency": "EUR",
+      "products": [
+        {
+          "path": "holysht-espresso/",
+          "variants": [
+            [
+              500,
+              17.5,
+              "Espresso",
+              true
+            ],
+            [
+              1000,
+              34,
+              "Espresso",
+              true
+            ]
+          ]
+        },
+        {
+          "path": "yellow-sunset/",
+          "variants": [
+            [
+              250,
+              12.5,
+              "Espresso",
+              true
+            ],
+            [
+              500,
+              24.5,
+              "Espresso",
+              true
+            ],
+            [
+              1000,
+              48,
+              "Espresso",
+              true
+            ]
+          ]
+        },
+        {
+          "path": "butegana-burundi/",
+          "variants": [
+            [
+              250,
+              14.5,
+              "Filter",
+              true
+            ],
+            [
+              1000,
+              54,
+              "Filter",
+              true
+            ],
+            [
+              250,
+              14.5,
+              "Espresso",
+              true
+            ],
+            [
+              1000,
+              54,
+              "Espresso",
+              true
+            ]
+          ]
+        },
+        {
+          "path": "peace-of-cake/",
+          "variants": [
+            [
+              500,
+              19.5,
+              "Espresso",
+              true
+            ],
+            [
+              1000,
+              38,
+              "Espresso",
+              true
+            ]
+          ]
+        },
+        {
+          "path": "summerjam-colombia/",
+          "variants": [
+            [
+              250,
+              18.5,
+              "Filter",
+              true
+            ],
+            [
+              1000,
+              66,
+              "Filter",
+              false
+            ],
+            [
+              250,
+              18.5,
+              "Espresso",
+              true
+            ],
+            [
+              1000,
+              66,
+              "Espresso",
+              true
+            ]
+          ]
+        },
+        {
+          "path": "chiroso-colombia/",
+          "variants": [
+            [
+              250,
+              20,
+              "Filter",
+              true
+            ],
+            [
+              1000,
+              75,
+              "Filter",
+              true
+            ],
+            [
+              250,
+              20,
+              "Espresso",
+              true
+            ],
+            [
+              1000,
+              75,
+              "Espresso",
+              true
+            ]
+          ]
+        },
+        {
+          "path": "chocolate-brazil/",
+          "variants": [
+            [
+              250,
+              10.5,
+              "Espresso",
+              true
+            ],
+            [
+              500,
+              20,
+              "Espresso",
+              true
+            ],
+            [
+              1000,
+              37,
+              "Espresso",
+              true
+            ]
+          ]
+        },
+        {
+          "path": "whiskey-barrel-aged/",
+          "variants": [
+            [
+              250,
+              15,
+              null,
+              true
+            ],
+            [
+              1000,
+              57,
+              null,
+              false
+            ]
+          ]
+        },
+        {
+          "path": "falling-leaves-colombia/",
+          "variants": [
+            [
+              250,
+              14,
+              "Filter",
+              true
+            ],
+            [
+              1000,
+              52,
+              "Filter",
+              true
+            ],
+            [
+              250,
+              14,
+              "Espresso",
+              true
+            ],
+            [
+              1000,
+              52,
+              "Espresso",
+              true
+            ]
+          ]
+        },
+        {
+          "path": "mubuku-uganda/",
+          "variants": [
+            [
+              250,
+              13,
+              "Filter",
+              true
+            ],
+            [
+              1000,
+              49,
+              "Filter",
+              true
+            ],
+            [
+              250,
+              13,
+              "Espresso",
+              true
+            ],
+            [
+              1000,
+              49,
+              "Espresso",
+              true
+            ]
+          ]
+        },
+        {
+          "path": "worka-sakaro-ethiopia/",
+          "variants": [
+            [
+              250,
+              14,
+              "Filter",
+              true
+            ],
+            [
+              1000,
+              52,
+              "Filter",
+              true
+            ],
+            [
+              250,
+              14,
+              "Espresso",
+              true
+            ],
+            [
+              1000,
+              52,
+              "Espresso",
+              true
+            ]
+          ]
+        },
+        {
+          "path": "yellow-nectar-colombia/",
+          "variants": [
+            [
+              250,
+              18.5,
+              "Filter",
+              true
+            ],
+            [
+              1000,
+              70,
+              "Filter",
+              true
+            ],
+            [
+              250,
+              18.5,
+              "Espresso",
+              true
+            ],
+            [
+              1000,
+              70,
+              "Espresso",
+              true
+            ]
+          ]
+        }
+      ]
+    },
+    "praziarnicka": {
+      "baseUrl": "https://praziarnicka.sk/",
+      "currency": "EUR",
+      "availabilityEvidence": "Vybrana hmotnost zobrazuje konkretnu cenu a aktivne tlacidlo Pridat do kosika. Tovar nebol pridany.",
+      "grindEvidence": "FAQ uvadza mletie podla sposobu pripravy pri objednavke. Priplatok a konkretna volba neboli na produktovej stranke zobrazene, preto grind variantu zostava null.",
+      "products": [
+        {
+          "path": "produkt/brazil-santos-100-arabica",
+          "variants": [
+            [
+              250,
+              9.9,
+              null,
+              true
+            ],
+            [
+              500,
+              15.5,
+              null,
+              true
+            ],
+            [
+              1000,
+              27,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "produkt/cuba-serrano-lavado-100-arabica",
+          "variants": [
+            [
+              250,
+              12.9,
+              null,
+              true
+            ],
+            [
+              500,
+              19.5,
+              null,
+              true
+            ],
+            [
+              1000,
+              34,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "produkt/bezkofeinova-kava-brazil-100-arabica",
+          "variants": [
+            [
+              250,
+              12.9,
+              null,
+              true
+            ],
+            [
+              500,
+              19.5,
+              null,
+              true
+            ],
+            [
+              1000,
+              34,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "produkt/puccini-blend-60-arabica-40-robusta",
+          "variants": [
+            [
+              250,
+              11.5,
+              null,
+              true
+            ],
+            [
+              500,
+              18,
+              null,
+              true
+            ],
+            [
+              1000,
+              31,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "produkt/paganini-blend-75-arabica-25-robusta",
+          "variants": [
+            [
+              250,
+              11.9,
+              null,
+              true
+            ],
+            [
+              500,
+              18.5,
+              null,
+              true
+            ],
+            [
+              1000,
+              32,
+              null,
+              true
+            ]
+          ]
+        }
+      ]
+    },
+    "coffeesheep": {
+      "baseUrl": "https://www.coffeesheep.sk/",
+      "currency": "EUR",
+      "method": "Kazda hmotnost zvolena a precitana cena a Skladom. Pri troch pevnych250g produktoch precitana gramaz a cena. Pri kazdej kave precitane vsetky moznosti mletia s priplatkom0; ceny kombinacii mletia vyplyvaju z vyslovneho priplatku0, nie zo samostatneho prekliknutia kazdej kombinacie.",
+      "grinds": [
+        {
+          "label": "bez mletia",
+          "grind": "beans",
+          "surcharge": 0
+        },
+        {
+          "label": "veľmi jemné mletie — džezva",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "jemné mletie — zalievaná káva",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "stredne jemné mletie — espresso (domáca páka)",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "stredné mletie — moka",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "stredne hrubé mletie — aeropress",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "hrubé mletie — filter, V60, chemex",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "veľmi hrubé mletie — french press, cold brew",
+          "grind": "ground",
+          "surcharge": 0
+        }
+      ],
+      "products": [
+        {
+          "path": "kava/sheepresso/",
+          "variants": [
+            [
+              250,
+              8.9,
+              null,
+              true
+            ],
+            [
+              500,
+              16.5,
+              null,
+              true
+            ],
+            [
+              1000,
+              29.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/brazil-santos-carbonic-natural-decaf/",
+          "variants": [
+            [
+              250,
+              9.9,
+              null,
+              true
+            ],
+            [
+              500,
+              18.5,
+              null,
+              true
+            ],
+            [
+              1000,
+              33.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/colombia-supremo/",
+          "variants": [
+            [
+              250,
+              9.3,
+              null,
+              true
+            ],
+            [
+              500,
+              17.3,
+              null,
+              true
+            ],
+            [
+              1000,
+              31.5,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/belmondo-espresso-blend/",
+          "variants": [
+            [
+              250,
+              9.3,
+              null,
+              true
+            ],
+            [
+              500,
+              17.3,
+              null,
+              true
+            ],
+            [
+              1000,
+              31.5,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/brazil-cerrado-dulce/",
+          "variants": [
+            [
+              250,
+              8.9,
+              null,
+              true
+            ],
+            [
+              500,
+              16.5,
+              null,
+              true
+            ],
+            [
+              1000,
+              29.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/kenya/",
+          "variants": [
+            [
+              250,
+              10.1,
+              null,
+              true
+            ],
+            [
+              500,
+              19,
+              null,
+              true
+            ],
+            [
+              1000,
+              34.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/india-bababudan/",
+          "variants": [
+            [
+              250,
+              8.9,
+              null,
+              true
+            ],
+            [
+              500,
+              16.5,
+              null,
+              true
+            ],
+            [
+              1000,
+              29.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/costa-rica/",
+          "variants": [
+            [
+              250,
+              9.9,
+              null,
+              true
+            ],
+            [
+              500,
+              18.5,
+              null,
+              true
+            ],
+            [
+              1000,
+              33.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/ethiopia-sidamo/",
+          "variants": [
+            [
+              250,
+              9.6,
+              null,
+              true
+            ],
+            [
+              500,
+              18,
+              null,
+              true
+            ],
+            [
+              1000,
+              32.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "espresso/tma-v-tme/",
+          "variants": [
+            [
+              250,
+              8.9,
+              null,
+              true
+            ],
+            [
+              500,
+              16.5,
+              null,
+              true
+            ],
+            [
+              1000,
+              29.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "espresso/honduras-marcala/",
+          "variants": [
+            [
+              250,
+              10.1,
+              null,
+              true
+            ],
+            [
+              500,
+              19,
+              null,
+              true
+            ],
+            [
+              1000,
+              34.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/ethiorica/",
+          "variants": [
+            [
+              250,
+              9.8,
+              null,
+              true
+            ],
+            [
+              500,
+              18.3,
+              null,
+              true
+            ],
+            [
+              1000,
+              33.5,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/ecuador-loja-organic/",
+          "variants": [
+            [
+              250,
+              10.9,
+              null,
+              true
+            ],
+            [
+              500,
+              20.8,
+              null,
+              true
+            ],
+            [
+              1000,
+              38.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/burundi-rama-natural/",
+          "variants": [
+            [
+              250,
+              14.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/colombia-finca-milan-nitro-fermented/",
+          "variants": [
+            [
+              250,
+              18.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava/ethiopia-konga-natural/",
+          "variants": [
+            [
+              250,
+              15.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "degustacne-balicky/sweet-degustacny-balicek/",
+          "packLabel": "5 x 100 g",
+          "price": 24,
+          "available": true,
+          "variants": []
+        },
+        {
+          "path": "degustacne-balicky/answer-degustacny-balicek/",
+          "packLabel": "5 x 250 g + espresso šálka",
+          "price": 57,
+          "available": true,
+          "variants": []
+        }
+      ]
+    }
   }
- }
 }
