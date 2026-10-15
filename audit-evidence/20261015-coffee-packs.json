@@ -2369,6 +2369,32 @@
           ]
         }
       ]
+    },
+    "simplecoffee": {
+      "baseUrl": "https://simplecoffee.sk/produkt/",
+      "currency": "EUR",
+      "coverage": "Iba Simple New Wave Espresso Blend, ktory sa stal hlavnym odporucanim po oprave chuti.",
+      "method": "Oficialna produktova stranka uvadza pevnu cenu7,90 EUR, Skladom, bez vyberu balenia. Dalsie informacie: Objem0,200kg =200g. Forma nie je jednoznacne uvedena ako predajny variant; null.",
+      "grinds": [
+        {
+          "label": null,
+          "grind": null,
+          "surcharge": 0
+        }
+      ],
+      "products": [
+        {
+          "path": "simple-new-wave-espresso-blend/",
+          "variants": [
+            [
+              200,
+              7.9,
+              null,
+              true
+            ]
+          ]
+        }
+      ]
     }
   }
 }
