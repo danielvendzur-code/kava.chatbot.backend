@@ -465,7 +465,7 @@
     }
     if (a.caffeine === 'no' && product.decaf) out.push([T('Bez kofeínu', 'Bez kofeinu'), T('E-shop ju označuje ako bezkofeínovú.', 'E-shop ji označuje jako bezkofeinovou.')]);
     if (a.acidity && a.acidity !== 'explore' && Number.isFinite(product.acidity) && !entry.unmet.includes('acidity')) {
-      out.push([product.acidity <= 1 ? T('Nízka kyslosť', 'Nízká kyselost') : T('Výraznejšia kyslosť', 'Výraznější kyselost'), T('Kyslosť: ', 'Kyselost: ') + acidityScale[product.acidity] + '.']);
+      out.push([product.acidity <= 1 ? T('Nízka kyslosť', 'Nízká kyselost') : T('Výraznejšia kyslosť', 'Výraznější kyselost'), T('Kyslosť: ', 'Kyselost: ') + T(acidityScale[product.acidity], ['minimální', 'jemná', 'střední', 'výrazná'][product.acidity] || acidityScale[product.acidity]) + '.']);
     }
     if ((a.drink === 'milk' || a.drink === 'both') && (product.drink?.milk ?? 0) >= 0.6) out.push([T('Aj do mlieka', 'I do mléka'), T('Hodí sa do cappuccina a latte.', 'Hodí se do cappuccina a latte.')]);
     if (out.length < 3) {
