@@ -498,6 +498,11 @@
     return parts;
   }
 
+  function displayedPack(product, variant) {
+    if (variant?.label) return variant.label;
+    return /\d+(?:[.,]\d+)?\s*(kg|g)\b/i.test(product.priceUnit || '') ? product.priceUnit : T('Balenie overte v e-shope', 'Balení ověřte v e-shopu');
+  }
+
   /* A storage canister from the same shop, sized for the recommended pack. */
   function accessoryFor(product, variant) {
     const offer = Array.isArray(DATA.fullOffer) ? DATA.fullOffer : [];
@@ -506,9 +511,13 @@
     const list = offer.filter((p) => p && p.available !== false && STORE.test(p.name || '') && !/matcha|čaj|ube|cukr/i.test(p.name || '') && Number.isFinite(p.priceAmount) && (p.currency || product.currency) === product.currency && !seen.has(p.url) && seen.add(p.url));
     if (!list.length) return null;
     const pack = variant?.grams || packOf(product);
-    const capacity = (p) => { const m = String(p.name).match(/(\d+)\s*(g|ml)\b/i); return m ? Number(m[1]) : null; };
-    const sized = pack ? list.filter((p) => { const c = capacity(p); return c && /g\b/i.test(String(p.name).match(/\d+\s*(g|ml)\b/i)?.[0] || '') ? c >= pack : false; }) : [];
-    const pick = (sized.length ? sized : list).slice().sort((a, b) => (capacity(a) || 1e6) - (capacity(b) || 1e6) || a.priceAmount - b.priceAmount)[0];
+    const capacity = (p) => p.coffeeCapacityGrams || Number(String(p.name).match(/(\d+)\s*g\b/i)?.[1]) || null;
+    const candidates = list.flatMap((p) => Array.isArray(p.storageVariants) ? p.storageVariants
+      .filter((v) => v.available !== false && Number.isFinite(v.price) && v.capacityGrams > 0)
+      .map((v) => ({...p, name: `${p.name} · ${v.label}`, coffeeCapacityGrams: v.capacityGrams, priceAmount: v.price})) : [p]);
+    const sized = pack ? candidates.filter((p) => capacity(p) >= pack) : candidates;
+    if (!sized.length) return null;
+    const pick = sized.slice().sort((a, b) => (capacity(a) || 1e6) - (capacity(b) || 1e6) || a.priceAmount - b.priceAmount)[0];
     return {product: pick, pack};
   }
 
@@ -552,7 +561,7 @@
           <div class="facts"><div class="fact"><b>${icons.drop} Acidita</b><span class="fact__value">${Number.isFinite(product.acidity)?dots(product.acidity):''} ${esc(acidityLabel)}</span></div><div class="fact"><b>${icons.cup} Príprava</b><span class="fact__value">${esc(product.bestFor || 'Neuvedená')}</span></div></div>
           ${differences.length?`<details class="result__differences"><summary>Rozdiely oproti vášmu výberu</summary><dl>${differences.map(item=>`<div><dt>${esc(item.label)}</dt><dd><small>Váš výber</small><span>${esc(item.wanted)}</span><small>Táto káva</small><span>${esc(item.offered)}</span></dd></div>`).join('')}</dl></details>`:''}
           ${product.bulk ? `<div class="bulk"><b>${esc(product.bulk.label)}</b><span>${esc(product.bulk.saving)}</span></div>` : ''}
-          ${alternative ? `<div class="alt"><span>${T('Ak by ste chceli inú', 'Pokud byste chtěli jinou')}</span><button class="alt__card" type="button" data-product="${esc(alternative.entry.product.id)}"><img src="${esc(alternative.entry.product.photo)}" alt="" loading="lazy" width="42" height="58"><div><b>${esc(alternative.entry.product.name)}</b><small>${esc(alternative.diff.join('; ').replace(/^./, (c) => c.toUpperCase()))}.</small>${altPrice?`<strong class="alt__price">${esc(altPrice)}</strong>`:''}</div>${icons.arrow}</button></div>` : ''}
+          ${alternative ? `<div class="alt"><span>${T('Ak by ste chceli inú', 'Pokud byste chtěli jinou')}</span><button class="alt__card" type="button" data-product="${esc(alternative.entry.product.id)}"><img src="${esc(alternative.entry.product.photo)}" alt="" loading="lazy" width="42" height="58"><div><b>${esc(alternative.entry.product.name)}</b><small>${esc(displayedPack(alternative.entry.product, alternative.variant))}</small><small>${esc(alternative.diff.join('; ').replace(/^./, (c) => c.toUpperCase()))}.</small>${altPrice?`<strong class="alt__price">${esc(altPrice)}</strong>`:''}</div>${icons.arrow}</button></div>` : ''}
           ${accessory ? `<div class="result__addon"><span>${T('Hodí sa k nákupu · voliteľné', 'Hodí se k nákupu · volitelné')}</span><a class="addon__card" href="${esc(accessory.product.url)}" target="_blank" rel="noopener noreferrer">${accessory.product.photo?`<img src="${esc(accessory.product.photo)}" alt="" loading="lazy" width="42" height="58">`:''}<div><b>${esc(accessory.product.name)}</b><small>${esc(accessory.pack ? T(`Na uskladnenie otvoreného ${accessory.pack >= 1000 ? accessory.pack / 1000 + ' kg' : accessory.pack + ' g'} balenia.`, `Na uskladnění otevřeného ${accessory.pack >= 1000 ? accessory.pack / 1000 + ' kg' : accessory.pack + ' g'} balení.`) : T('Na uskladnenie otvoreného balenia.', 'Na uskladnění otevřeného balení.'))}</small><strong class="alt__price">${esc(amountText(accessory.product.priceAmount, product.currency) || accessory.product.price)}</strong>${sum?`<small class="addon__sum">${esc(T(`Káva + dóza: ${sum} za produkty.`, `Káva + dóza: ${sum} za produkty.`))}</small>`:''}</div>${icons.arrow}</a></div>` : ''}
         </div>
       </div>`;
@@ -568,7 +577,7 @@
       const more=document.createElement('details');more.className='coffee-more-matches';
       const title=document.createElement('summary');title.textContent='Ďalšie kávy spĺňajúce váš výber ('+exact.filter(e=>e.product.id!==product.id).length+')';more.append(title);
       const list=document.createElement('div');let count=0;
-      function append(){const rows=exact.filter(e=>e.product.id!==product.id).slice(count,count+24);for(const row of rows){const p=row.product;const link=document.createElement('a');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.className='coffee-match-link';link.innerHTML='<img src="'+esc(p.photo)+'" alt="" loading="lazy"><span><b>'+esc(p.name)+'</b><small>'+esc(p.notes.join(' · '))+'</small><strong>'+esc(p.price)+'</strong></span>';list.append(link);}count+=rows.length;}
+      function append(){const rows=exact.filter(e=>e.product.id!==product.id).slice(count,count+24);for(const row of rows){const p=row.product;const v=pickVariant(p,state.answers);const link=document.createElement('a');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.className='coffee-match-link';link.innerHTML='<img src="'+esc(p.photo)+'" alt="" loading="lazy"><span><b>'+esc(p.name)+'</b><small>'+esc(displayedPack(p,v))+'</small><small>'+esc(p.notes.join(' · '))+'</small><strong>'+esc(v ? v.priceLabel || amountText(v.price,p.currency) : p.price)+'</strong></span>';list.append(link);}count+=rows.length;}
       append();more.append(list);if(exact.filter(e=>e.product.id!==product.id).length>count){const next=document.createElement('button');next.className='ghost';next.type='button';next.textContent='Načítať ďalšie';next.addEventListener('click',()=>{append();if(count>=exact.filter(e=>e.product.id!==product.id).length)next.remove();});more.append(next);}advisor.append(more);
     }
     const alternativeButton = $('.alt__card', advisor);
