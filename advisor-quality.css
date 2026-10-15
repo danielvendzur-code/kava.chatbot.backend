@@ -210,3 +210,18 @@ html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-
 html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question .cx-quality-copy b{font-size:12px!important;line-height:1.2!important;}
 html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question .cx-quality-copy small{font-size:10px!important;line-height:1.2!important;}
 }
+/* Keep the offer above the launcher area on a mobile owner page. */
+@media(max-width:760px){
+html body #cosmetics-root#cosmetics-root .cx-owner{padding:0 15px!important;gap:20px!important;box-sizing:border-box!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-hero{flex:1 0 auto!important;display:block!important;padding:10px 0!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-frame{display:none!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-copy h1{font-size:28px!important;line-height:1.12!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-head{flex:none!important;min-height:72px!important;padding:12px 0!important;box-sizing:border-box!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-foot{flex:none!important;min-height:100px!important;padding:0 88px 20px 0!important;display:flex!important;align-items:flex-end!important;box-sizing:border-box!important;}
+}
+@media(max-width:760px) and (max-height:700px){
+html body #cosmetics-root#cosmetics-root .cx-owner{gap:12px!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-head{min-height:64px!important;padding:8px 0!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-hero{padding:0!important;}
+html body #cosmetics-root#cosmetics-root .cx-owner-copy h1{font-size:25px!important;}
+}

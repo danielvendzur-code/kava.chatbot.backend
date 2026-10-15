@@ -60,7 +60,7 @@
   const close = () => { sheet.hidden = true; opener?.focus(); };
   function open(from) {
     const t = TEXT[lang()];
-    const contact = document.querySelector('.cx-owner-contact')?.getAttribute('href') || 'https://mojchatbot.sk/kontakt';
+    const contact = document.querySelector('.cx-owner-contact,.mcb-head a')?.getAttribute('href') || 'https://mojchatbot.sk/kontakt';
     sheet.innerHTML = '<div class="cx-info-card"><button type="button" class="cx-info-close" aria-label="' + esc(t.close) + '">×</button>'
       + '<small>' + esc(t.more) + '</small><h2>' + esc(t.title) + '</h2><ul>'
       + t.items.map(([title, note]) => '<li><i></i><div><b>' + esc(title) + '</b><span>' + esc(note) + '</span></div></li>').join('')
@@ -73,7 +73,7 @@
   document.addEventListener('keydown', (event) => { if (event.key === 'Escape' && !sheet.hidden) close(); });
 
   function mount() {
-    const actions = document.querySelector('.cx-owner-actions');
+    const actions = document.querySelector('.cx-owner-actions,.mcb-actions');
     if (!actions) return false;
     if (document.querySelector('.cx-owner-more,.cx-info-link')) return true;
     const link = document.createElement('button');

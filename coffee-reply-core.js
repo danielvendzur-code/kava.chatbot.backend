@@ -92,7 +92,11 @@ globalThis.CXCoffeeReplyCore=(c,text,history=[])=>{
  const requestedName=q.match(/(?:mate|predavate|prodavate)\s+produkt\s+(.+?)\??$/)?.[1];if(requestedName&&!/^(?:na|pre|pro)\b/.test(requestedName)&&!c.products.some(p=>norm(p.name).includes(requestedName.replace(/\?$/,''))))return 'Takýto produkt v overenej ponuke nemám. Upresnite prosím jeho názov.';
 
  if(kind.kind==='health')return T.health;
- if(kind.kind==='service')return T.service+c.source;
+ if(kind.kind==='service'){
+  if(/doprav|doruc|dorucen|postovn|zasiel|zasil|dobier|dobirk/.test(q)&&Array.isArray(c.shipping?.lines)&&c.shipping.lines.length)
+   return c.shipping.lines.join('\n\n');
+  return T.service+c.source;
+ }
  if(kind.kind==='general'){if(!kind.topic)return T.unknown+c.source;const prep=TOPIC_PREP[kind.topic],fit=prep?beans.filter(p=>(p.prep?.[prep]||0)>=.6).sort((a,b)=>(b.prep[prep]-a.prep[prep])||(a.priceAmount??Infinity)-(b.priceAmount??Infinity))[0]:null;return T[kind.topic]+(fit?'\n\n'+T.fits+line(fit):'');}
  /* Earlier general or health questions are not product conditions. */
  const texts=[...history.filter(m=>m?.role==='user').map(m=>m.content).filter(t=>classify(t).kind==='product').map(norm),q],recent=rx=>texts.slice().reverse().find(t=>rx.test(t))||q;

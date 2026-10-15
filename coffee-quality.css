@@ -96,7 +96,7 @@ html body .launcher__button#open#open,html body .launcher__button#open#open:hove
    letting the price card slide over the buttons. */
 @media (max-height:680px),(max-width:640px){html:not(#_):not(#_),html:not(#_):not(#_) body,html:not(#_):not(#_) body>div[id$="-root"]{height:auto!important;min-height:100%!important;max-height:none!important;overflow:visible!important;}html:not(#_):not(#_){overflow-y:auto!important;}html:not(#_):not(#_) body .mcb-page{height:auto!important;min-height:100dvh!important;max-height:none!important;overflow:visible!important;grid-template-rows:auto!important;grid-auto-rows:auto!important;align-content:space-between!important;row-gap:18px!important;}html:not(#_):not(#_) body .mcb-page .mcb-main{height:auto!important;min-height:0!important;overflow:visible!important;}}
 /* On a phone the page scrolls, and leaves room so the bubble never sits on the price card. */
-@media (max-width:640px){html:not(#_):not(#_) body .mcb-page{padding-bottom:104px!important;}}
+@media (max-width:640px){html:not(#_):not(#_) body .mcb-page{padding-bottom:0!important;}}
 
 /* The more-info sheet is a white card: its text is dark whatever the page theme is, and its
    close button shows no ring. */

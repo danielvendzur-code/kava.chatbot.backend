@@ -105,9 +105,9 @@
 .mcb-page .mcb-copy h1 { font-size: clamp(32px, 3.3vw, 47px); max-width: 15ch; line-height: 1.02; }
 .mcb-page .mcb-lead { max-width: 44ch; margin-top: clamp(10px, 1.5vh, 15px); font-size: 14px; line-height: 1.5; }
 .mcb-page .mcb-actions { margin-top: clamp(14px, 2vh, 20px); }
-@media (max-width: 1080px) { .mcb-page .mcb-frame { display: none; } 
+@media (max-width: 1080px) { .mcb-page .mcb-frame { display: none; }
 }
-@media (max-width: 760px) { .mcb-page .mcb-figures { display: none !important; } 
+@media (max-width: 760px) { .mcb-page .mcb-figures { display: none !important; }
 }
 
 /* ==========================================================================
@@ -306,7 +306,7 @@
 .mcb-page .mcb-offer-card > .mcb-btn { width: 100%; justify-content: center; }
 body.mcb-offer-open { overflow: hidden; }
 
-@media (prefers-reduced-motion: reduce) { .mcb-page .mcb-offer { animation: none; } 
+@media (prefers-reduced-motion: reduce) { .mcb-page .mcb-offer { animation: none; }
 }
 
 
@@ -801,3 +801,22 @@ body #widget#widget .progress i { background:#e1e3e6 !important; background-imag
 body #widget#widget .progress i.is-active,body #widget#widget .progress i.is-done { background:#61666e !important; background-image:none !important; }
 body #widget#widget .result__badge { color:#626870 !important; }
 body #widget#widget .msg__avatar img[src*="/jolka/logo-badge"] { filter:none !important; }
+
+/* Mobile owner page: keep the header rule clear and reserve a footer for the launcher. */
+@media (max-width:760px) {
+  html body .mcb-page.mcb-page { display:flex!important;flex-direction:column!important;gap:20px!important;min-height:100dvh!important;height:auto!important;padding:0 20px!important;box-sizing:border-box!important; }
+  html body .mcb-page .mcb-head { flex:none!important;min-height:72px!important;height:auto!important;padding:12px 0!important;box-sizing:border-box!important;align-items:center!important; }
+  html body .mcb-page .mcb-head .mcb-btn { position:static!important;transform:none!important;margin:0!important;min-height:38px!important; }
+  html body .mcb-page .mcb-main { flex:1 0 auto!important;display:block!important;padding:10px 0!important; }
+  html body .mcb-page .mcb-copy h1 { font-size:28px!important;line-height:1.12!important; }
+  html body .mcb-page .mcb-foot { flex:none!important;min-height:100px!important;margin:0!important;padding:0 88px 20px 0!important;display:flex!important;align-items:flex-end!important;box-sizing:border-box!important; }
+  html body #widget#widget .entry__copy b { font-size:15px!important;line-height:1.2!important; }
+  html body #widget#widget .entry__copy small { font-size:9px!important; }
+  html body #widget#widget .entry__copy span { font-size:11px!important;line-height:1.35!important; }
+}
+@media(max-width:760px) and (max-height:700px){
+html body .mcb-page.mcb-page{gap:12px!important;}
+html body .mcb-page .mcb-head{min-height:64px!important;padding:8px 0!important;}
+html body .mcb-page .mcb-main{padding:0!important;}
+html body .mcb-page .mcb-copy h1{font-size:25px!important;}
+}

@@ -516,10 +516,17 @@
 
     const refresh = document.createElement('link');
     refresh.rel = 'stylesheet';
-    refresh.href = '/coffee-refresh.css?v=e89b0ab8';
+    refresh.href = '/coffee-refresh.css?v=20261015-mobile';
     refresh.dataset.mcbRefreshStyle = 'true';
     refresh.dataset.mcOrder = '95';
     document.body.appendChild(refresh);
+
+    if (!document.querySelector('script[data-owner-info]')) {
+      const info = document.createElement('script');
+      info.src = '/owner-more-info.js?v=20261015-mobile';
+      info.dataset.ownerInfo = 'true';
+      document.body.appendChild(info);
+    }
 
     const orderStyles = () => {
       const ranked = [...document.body.querySelectorAll('link[rel="stylesheet"][data-mc-order]')];
