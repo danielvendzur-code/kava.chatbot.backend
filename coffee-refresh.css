@@ -827,3 +827,6 @@ html body #widget#widget .result__hero{gap:12px!important;align-items:flex-start
 html body #widget#widget .result__photo{width:76px!important;height:104px!important;flex:0 0 76px!important;max-height:104px!important;}
 html body #widget#widget .result__headline h2{font-size:18px!important;line-height:1.15!important;overflow-wrap:anywhere;}
 }
+/* The pane's scroll fade must stay behind the persistent action bar. */
+#advisorScreen .advisor-foot { z-index: 1; }
+#advisorScreen .advisor-foot #restart { color: var(--ink, #333); }
