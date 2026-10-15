@@ -820,3 +820,10 @@ html body .mcb-page .mcb-head{min-height:64px!important;padding:8px 0!important;
 html body .mcb-page .mcb-main{padding:0!important;}
 html body .mcb-page .mcb-copy h1{font-size:25px!important;}
 }
+
+/* Leave room for the pack and price even when a shop has a long product name. */
+@media(max-width:480px){
+html body #widget#widget .result__hero{gap:12px!important;align-items:flex-start!important;}
+html body #widget#widget .result__photo{width:76px!important;height:104px!important;flex:0 0 76px!important;max-height:104px!important;}
+html body #widget#widget .result__headline h2{font-size:18px!important;line-height:1.15!important;overflow-wrap:anywhere;}
+}

@@ -469,8 +469,8 @@
       if (sk) out.push([T(sk, cs), a.prep === 'automat' && variant?.grind === 'beans' ? T('Zrnková, akú automat potrebuje.', 'Zrnková, jakou automat potřebuje.') : T('Podľa popisu sa hodí na túto prípravu.', 'Podle popisu se hodí na tuto přípravu.')]);
     }
     if (a.taste && (product.taste?.[a.taste] ?? 0) >= 0.6 && product.notes?.length) {
-      const [sk, cs] = TASTE_REASON[a.taste] || [];
-      if (sk) out.push([T(sk, cs), T('V chuti: ', 'V chuti: ') + product.notes.slice(0, 3).join(', ') + '.']);
+      // A taste-family score is not evidence of a specific flavour note.
+      out.push([T('Chuťový profil', 'Chuťový profil'), T('V chuti: ', 'V chuti: ') + product.notes.slice(0, 3).join(', ') + '.']);
     }
     if (a.caffeine === 'no' && product.decaf) out.push([T('Bez kofeínu', 'Bez kofeinu'), T('E-shop ju označuje ako bezkofeínovú.', 'E-shop ji označuje jako bezkofeinovou.')]);
     if (a.acidity && a.acidity !== 'explore' && Number.isFinite(product.acidity) && !entry.unmet.includes('acidity')) {
@@ -544,7 +544,7 @@
         <span class="result__badge">${current.unmet.length ? 'Najbližšia možnosť' : product.id === best.product.id ? 'Odporúčam vám' : 'Vaša voľba'}</span>
         <div class="result__hero">
           <img class="result__photo" src="${esc(product.photo)}" alt="${esc(product.name)}" width="132" height="178">
-          <div class="result__headline"><h2>${esc(product.name)}</h2>${product.line?`<p>${esc(product.line)}</p>`:''}${variant?`<span class="result__variant">${esc(variant.label)}</span>`:''}<span class="result__price"><b>${esc(priceLabel)}</b>${!variant&&product.priceUnit?`<span>/ ${esc(product.priceUnit)}</span>`:''}</span>${variant?.ground?`<small class="result__weights">${esc(T('Predáva sa aj pomletá: ', 'Prodává se i mletá: ') + String(variant.ground.label || '').replace(/^\d+\s*g\s*·\s*/, '').toLowerCase() + ' · ' + (variant.ground.priceLabel || amountText(variant.ground.price, product.currency)))}</small>`:''}${product.roast ? `<small class="result__weights">${esc(product.roast)}</small>` : ''}</div>
+          <div class="result__headline"><h2>${esc(product.name)}</h2>${product.line&&!variant?`<p>${esc(product.line)}</p>`:''}${variant?`<span class="result__variant">${esc(variant.label)}</span>`:''}<span class="result__price"><b>${esc(priceLabel)}</b>${!variant&&product.priceUnit?`<span>/ ${esc(product.priceUnit)}</span>`:''}</span>${variant?.ground?`<small class="result__weights">${esc(T('Predáva sa aj pomletá: ', 'Prodává se i mletá: ') + String(variant.ground.label || '').replace(/^\d+\s*g\s*·\s*/, '').toLowerCase() + ' · ' + (variant.ground.priceLabel || amountText(variant.ground.price, product.currency)))}</small>`:''}${product.roast ? `<small class="result__weights">${esc(product.roast)}</small>` : ''}</div>
         </div>
         <div class="result__body">
           ${reasons.length ? `<ul class="result__reasons">${reasons.map(([title, text]) => `<li><b>${esc(title)}</b><span>${esc(text)}</span></li>`).join('')}</ul>` : `<div class="notes">${product.notes.map((note) => `<span>${esc(note)}</span>`).join('')}</div>`}
