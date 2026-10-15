@@ -167,7 +167,7 @@
   // Pack sizes of one product share a core name; a multipack ("2x1kg") is a different product.
   const coreOf = name => norm(name).replace(/\(\s*[^)]*\)/g, ' ').replace(/\b(\d+)\s*x\s*(\d+(?:[.,]\d+)?)\s*(ml|g|kg|l)\b/g, '$1x$2$3').replace(/(^|\s)\d+(?:[.,]\d+)?\s*(?:ml|g|kg|l|ks|cm|mm|kc|eur)\b/g, ' ').replace(/[–—|,]/g, ' ').replace(/\s+/g, ' ').trim();
   /* Words customers use to describe a need; they identify a product only together with a real name. */
-  const COMMON = new Set(['citli', 'pokoz', 'plet', 'pleti', 'suchu', 'sucha', 'suche', 'suchy', 'mastn', 'zrelu', 'zrela', 'vrask', 'hydra', 'vyziv', 'regen', 'upoko', 'zklid', 'jemna', 'jemny', 'jemne', 'parfu', 'alerg', 'vonav', 'vone', 'vune', 'olejo', 'olej', 'vlasy', 'vlasu', 'vlaso', 'tmave', 'svetl', 'darce', 'darek', 'darko', 'kavu', 'kavy', 'vino', 'vina', 'sladk', 'polos', 'cerve', 'biele', 'biely', 'bila', 'ruzov', 'filte', 'filtr', 'espre', 'autom', 'mliek', 'mleko', 'rastl', 'rostl', 'kveti', 'macka', 'macku', 'svetl', 'tien', 'polot', 'slnko', 'izbov', 'pokoj', 'telo', 'telov', 'tvar', 'krem', 'serum', 'maska', 'sampo', 'mydlo', 'balza', 'tonik', 'cista', 'cisti', 'odlic', 'akne', 'vlhke', 'pevna', 'velke', 'male', 'mini', 'veľk', 'cajov', 'caj', 'bylin', 'ovocn', 'zelen', 'ciern', 'cerny', 'kofei', 'bezko', 'zrnko', 'zrna', 'zrno', 'zrnka', 'kavov', 'kavou', 'cele', 'celu', 'mleta', 'mletu', 'mlete', 'pomle', 'balen', 'kilo', 'gram', 'cena', 'lacne', 'lacny', 'drahy', 'kvali', 'prirod', 'natur', 'organ', 'zdrav', 'vegan', 'sensi', 'probl', 'citro', 'levan', 'ruza', 'ruze', 'mandl', 'kokos', 'argan', 'konop', 'aloe']);
+  const COMMON = new Set(['mate', 'mam', 'mas', 'mame', 'chcem', 'chci', 'hlada', 'hleda', 'citli', 'pokoz', 'plet', 'pleti', 'suchu', 'sucha', 'suche', 'suchy', 'mastn', 'zrelu', 'zrela', 'vrask', 'hydra', 'vyziv', 'regen', 'upoko', 'zklid', 'jemna', 'jemny', 'jemne', 'parfu', 'alerg', 'vonav', 'vone', 'vune', 'olejo', 'olej', 'vlasy', 'vlasu', 'vlaso', 'tmave', 'svetl', 'darce', 'darek', 'darko', 'kavu', 'kavy', 'vino', 'vina', 'sladk', 'polos', 'cerve', 'biele', 'biely', 'bila', 'ruzov', 'filte', 'filtr', 'espre', 'autom', 'mliek', 'mleko', 'rastl', 'rostl', 'kveti', 'macka', 'macku', 'svetl', 'tien', 'polot', 'slnko', 'izbov', 'pokoj', 'telo', 'telov', 'tvar', 'krem', 'serum', 'maska', 'sampo', 'mydlo', 'balza', 'tonik', 'cista', 'cisti', 'odlic', 'akne', 'vlhke', 'pevna', 'velke', 'male', 'mini', 'veľk', 'cajov', 'caj', 'bylin', 'ovocn', 'zelen', 'ciern', 'cerny', 'kofei', 'bezko', 'zrnko', 'zrna', 'zrno', 'zrnka', 'kavov', 'kavou', 'cele', 'celu', 'mleta', 'mletu', 'mlete', 'pomle', 'balen', 'kilo', 'gram', 'cena', 'lacne', 'lacny', 'drahy', 'kvali', 'prirod', 'natur', 'organ', 'zdrav', 'vegan', 'sensi', 'probl', 'citro', 'levan', 'ruza', 'ruze', 'mandl', 'kokos', 'argan', 'konop', 'aloe']);
   function buildIndex(products) {
     const items = products.map(p => {
       const name = norm(p.name);
@@ -192,7 +192,8 @@
     const qWords = words(q), qStems = new Set(qWords.map(stem));
     const qCoreFlat = ' ' + words(coreOf(raw)).join(' ') + ' ';
     // Words written with a capital letter are likely names ("Guatemalou"), plain words are not.
-    const capitalStems = new Set(String(raw).split(/[^\p{L}\p{N}]+/u).filter(w => /^\p{Lu}/u.test(w)).map(w => stem(norm(w))));
+    // The first word of a sentence is capitalised anyway ("Máte …"), so it is no sign of a name.
+    const capitalStems = new Set(String(raw).replace(/(^|[.!?]\s+)\p{L}+/gu, '$1').split(/[^\p{L}\p{N}]+/u).filter(w => /^\p{Lu}/u.test(w)).map(w => stem(norm(w))));
     const found = new Map();
     for (const [core, list] of index.cores) {
       const head = list[0];
@@ -320,7 +321,7 @@
 
   /* ---------- product lines ---------- */
   function priceOf(p, st) {
-    const v = p.variantFor ? p.variantFor(st?.answers || {}) : null;
+    const v = p.variantFor ? p.variantFor(st?.answers || {}, st?.budget && !st.budget.total ? st.budget.amount : null) : null;
     if (v) return {amount: v.price, label: money(v.price, p.currency), variant: v.label};
     return {amount: Number.isFinite(p.amount) ? p.amount : null, label: p.price, variant: ''};
   }

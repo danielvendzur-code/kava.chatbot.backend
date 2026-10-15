@@ -11,6 +11,8 @@
   const tidy=line=>{const parts=[...new Set(String(line||'').split(/\s*[·|]\s*/).map(s=>s.trim()).filter(s=>s&&!/^(káva|kava|e-shop|eshop|obchod)$/i.test(s)))];return parts.slice(0,2).join(' · ').slice(0,64);};
   /* Only coffee is recommended as coffee; machines, filters and sweets stay in the shop's other offer. */
   const products=catalogue.products.filter(p=>p.available!==false&&(!p.kind||p.kind==='Káva')).map(p=>({...p,line:/^\/|^https?:/.test(p.line||'')?'':tidy(p.line),price:money(p.price),priceFrom:money(p.priceFrom),priceUnit:/podľa e-shopu|podle e-shopu/i.test(p.priceUnit||'')?'':p.priceUnit})).filter(p=>{const key=String(p.name||'').trim().toLowerCase();if(seen.has(key))return false;seen.add(key);return true;});
+  /* A tasting sample (under 150 g) is not the coffee's price: "od" starts at the smallest regular pack. */
+  products.forEach(p=>{const live=(p.variants||[]).filter(v=>v.available!==false&&Number.isFinite(v.price));const regular=live.filter(v=>v.grams&&v.grams>=150);if(!regular.length||!live.some(v=>v.grams&&v.grams<150))return;const min=Math.min(...regular.map(v=>v.price));const label=(p.currency==='CZK'?Math.round(min)+' Kč':String(Math.round(min*100)/100).replace('.',',').replace(/,(\d)$/,',$10')+' €');p.price=(new Set(regular.map(v=>v.price)).size>1?'od ':'')+label;p.priceAmount=min;});
   if(!products.length)return;
   data.products=products;data.fullOffer=catalogue.offer;data.demo.teaserText='Krátky výber · jedno odporúčanie';data.demo.entryText='Pár otázok · konkrétne odporúčanie';
   // Moka and Turkish coffee use different preparation and grind; this value
