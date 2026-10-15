@@ -1,0 +1,27 @@
+const fs = require('node:fs');
+const vm = require('node:vm');
+const assert = require('node:assert/strict');
+const source = fs.readFileSync('coffee-jolka-app.js', 'utf8');
+const start = source.indexOf('  function pickVariant(');
+const end = source.indexOf('  function reasonsFor(', start);
+const context = {T: (sk) => sk, PREP_GRIND: {lever: /espresso/i, moka: /moka/i, filter: /filter|filtr/i}};
+vm.createContext(context);
+vm.runInContext(source.slice(start, end), context);
+for (const slug of ['vitazov', 'diamonds', 'becafe', 'goriffee'])
+  vm.runInContext(fs.readFileSync(`coffee-catalogues/${slug}.js`, 'utf8'), context);
+const catalogues = context.CX_COFFEE_CATALOGUES;
+const kolumbia = catalogues.vitazov.products.find(p => p.name === 'Kolumbia');
+assert.equal(context.pickVariant(kolumbia, {prep: 'automat'}).grind, 'beans');
+assert.match(context.pickVariant(kolumbia, {prep: 'automat'}).extra, /Espresso/);
+assert.equal(context.pickVariant(kolumbia, {prep: 'filter'}).extra, 'Filter');
+assert.match(context.pickVariant(kolumbia, {prep: 'lever'}).ground.extra, /Espresso/);
+const guatemala = catalogues.diamonds.products.find(p => /Guatemala Molino/.test(p.name));
+assert.equal(context.pickVariant(guatemala, {prep: 'automat'}).extra, 'Automatický kávovar');
+const crema = catalogues.becafe.products.find(p => /Crema Blend/.test(p.name));
+const pack = context.pickVariant(crema, {prep: 'automat'});
+assert.equal(pack.grams, 220);
+assert.equal(pack.price, 8);
+assert.equal(pack.grind, 'beans');
+const goriffee = catalogues.goriffee.products.find(p => /Jednoducho káva espresso blend/.test(p.name));
+assert.equal(context.pickVariant(goriffee, {prep: 'automat'}).price, 7.8);
+console.log('PASS: automatic/filter/espresso variants, matching grind option, Diamonds automatic roast, BeCafe 220g / 8 EUR and Goriffee price.');

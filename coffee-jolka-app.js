@@ -446,8 +446,17 @@
     const regular = live.filter((v) => !(v.grams && v.grams < 150) && !/vzork|vzorek|sample/i.test(v.label || ''));
     let pool = regular.length ? regular : live;
     if (pool.some((v) => v.grind === 'beans')) pool = pool.filter((v) => v.grind === 'beans');
+    /* Roast/preparation is a separate shop variant from grinding. Prefer the
+       requested preparation before choosing the pack, rather than the first
+       equal-priced variant (which could be Filter for an automatic machine). */
+    const prep = {automat: /automat/i, lever: /espresso/i, moka: /moka/i, filter: /filter|filtr/i}[answers.prep];
+    let suited = prep ? pool.filter((v) => prep.test(v.extra || '')) : [];
+    if (!suited.length && /^(automat|moka)$/.test(answers.prep || ''))
+      suited = pool.filter((v) => /espresso/i.test(v.extra || ''));
+    if (suited.length) pool = suited;
     const pick = pool.slice().sort((a, b) => (a.grams || 1e6) - (b.grams || 1e6) || a.price - b.price)[0];
-    const ground = answers.prep && answers.prep !== 'automat' ? live.find((v) => v.grind === 'ground' && v.grams === pick.grams && PREP_GRIND[answers.prep].test(v.label || '')) : null;
+    const grounds = answers.prep && answers.prep !== 'automat' ? live.filter((v) => v.grind === 'ground' && v.grams === pick.grams && PREP_GRIND[answers.prep].test(v.label || '')) : [];
+    const ground = grounds.find((v) => v.extra === pick.extra) || grounds[0] || null;
     const label = String(pick.label || '').replace(/Zrnková/g, T('zrnková', 'zrnková')).replace(/\s*·\s*/g, ' · ');
     return {...pick, label, ground};
   }
