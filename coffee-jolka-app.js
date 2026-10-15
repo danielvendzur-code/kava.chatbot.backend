@@ -544,7 +544,7 @@
     const altEntry = exactOthers.find((entry) => differenceOf(product, entry.product).length) || null;
     const alternative = altEntry ? {entry: altEntry, variant: pickVariant(altEntry.product, state.answers), diff: differenceOf(product, altEntry.product)} : null;
     const accessory = accessoryFor(product, variant);
-    const acidityLabel = product.acidityNote || (Number.isFinite(product.acidity)?acidityScale[product.acidity]:'Neuvedená');
+    const acidityLabel = (product.source?.acidityVerifiedAt && product.acidityNote) || (Number.isFinite(product.acidity)?acidityScale[product.acidity]:'Neuvedená');
     const whyText = typeof product.why === 'string' && !/^Vybran[áa] z aktuálnej ponuky|^Chuť:|^Chuťový profil:/i.test(product.why.trim()) ? product.why : '';
 
     const differences=current.unmet.map(key=>{
