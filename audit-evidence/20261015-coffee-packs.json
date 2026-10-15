@@ -1423,6 +1423,952 @@
           ]
         }
       ]
+    },
+    "grandroastery": {
+      "baseUrl": "https://www.grandroastery.sk/",
+      "currency": "EUR",
+      "coverage": "Sedem produktov, ktore sa objavili ako hlavne odporucania v teste vsetkych nakonfigurovanych odpovedi. Nie cely katalog Grand.",
+      "method": "Vo viditelnom vybere Gramaz zvolena kazda uvedena hmotnost, vybrane namletie Nie. Pri Colombia La Secreta oddelene zvolene espresso aj filter prazenie. Precitana konkretna cena po zmene nadpisu na prislusnu gramaz. Aktivne Do kosika, nic nepridane. Ethiopia mala aktivne tlacidlo, ale samostatny skladovy text sa nezobrazil.",
+      "grinds": [
+        {
+          "label": "bez mletia",
+          "grind": "beans",
+          "surcharge": 0
+        }
+      ],
+      "groundNote": "Viditelne su aj moznosti mletia na zelanie. Cely cennik pomletych variantov sa tu nepotvrdzuje; tento zaznam doplna iba zrnkovu volbu.",
+      "products": [
+        {
+          "path": "p/crema-blend",
+          "variants": [
+            [
+              250,
+              9.1,
+              null,
+              true
+            ],
+            [
+              500,
+              16.4,
+              null,
+              true
+            ],
+            [
+              1000,
+              29.6,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "p/brazil-santos",
+          "variants": [
+            [
+              250,
+              9.1,
+              null,
+              true
+            ],
+            [
+              500,
+              16.4,
+              null,
+              true
+            ],
+            [
+              1000,
+              29.6,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "p/brazil-cemorrado-choco",
+          "variants": [
+            [
+              250,
+              10.9,
+              null,
+              true
+            ],
+            [
+              500,
+              19.6,
+              null,
+              true
+            ],
+            [
+              1000,
+              35.2,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "p/espresso-blend",
+          "variants": [
+            [
+              250,
+              9.1,
+              null,
+              true
+            ],
+            [
+              500,
+              16.4,
+              null,
+              true
+            ],
+            [
+              1000,
+              29.6,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "p/colombia-la-secreta",
+          "variants": [
+            [
+              250,
+              9.8,
+              "tmavé - full city (espresso)",
+              true
+            ],
+            [
+              500,
+              17.6,
+              "tmavé - full city (espresso)",
+              true
+            ],
+            [
+              1000,
+              31.7,
+              "tmavé - full city (espresso)",
+              true
+            ],
+            [
+              250,
+              9.8,
+              "svetlé (filter)",
+              true
+            ],
+            [
+              500,
+              17.6,
+              "svetlé (filter)",
+              true
+            ],
+            [
+              1000,
+              31.7,
+              "svetlé (filter)",
+              true
+            ]
+          ]
+        },
+        {
+          "path": "p/barista-blend",
+          "variants": [
+            [
+              250,
+              9.2,
+              null,
+              true
+            ],
+            [
+              500,
+              16.6,
+              null,
+              true
+            ],
+            [
+              1000,
+              29.9,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "p/ethiopia-berhanu-kurse",
+          "variants": [
+            [
+              200,
+              13.8,
+              "svetlé",
+              true
+            ],
+            [
+              1000,
+              48.3,
+              "svetlé",
+              true
+            ]
+          ]
+        }
+      ]
+    },
+    "grain": {
+      "baseUrl": "https://www.prazirnabrno.cz/",
+      "currency": "CZK",
+      "method": "V Chrome postupne zvolena kazda kombinacia vsetkych troch gramazi a deviatich moznosti mletia pri kazdej z10 kav. Precitana konkretna cena a aktivne Pridat do kosiku. Vsetky mletia pri rovnakej gramazi mali rovnaku cenu. Nic nepridane.",
+      "grinds": [
+        {
+          "label": "Bez mletí",
+          "grind": "beans",
+          "surcharge": 0
+        },
+        {
+          "label": "Turek",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "Aeropress",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "Filtr obyčejný",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "Espresso",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "Filtr Hario",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "Moka konvička",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "French press",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "Cold brew",
+          "grind": "ground",
+          "surcharge": 0
+        }
+      ],
+      "products": [
+        {
+          "path": "brazil-cerrado-3/",
+          "variants": [
+            [
+              250,
+              306,
+              null,
+              true
+            ],
+            [
+              500,
+              565,
+              null,
+              true
+            ],
+            [
+              1000,
+              1082,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "decaf/",
+          "variants": [
+            [
+              250,
+              388,
+              null,
+              true
+            ],
+            [
+              500,
+              731,
+              null,
+              true
+            ],
+            [
+              1000,
+              1409,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "colombia/",
+          "variants": [
+            [
+              250,
+              334,
+              null,
+              true
+            ],
+            [
+              500,
+              622,
+              null,
+              true
+            ],
+            [
+              1000,
+              1191,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "ethiopia-sidamo-2/",
+          "variants": [
+            [
+              250,
+              345,
+              null,
+              true
+            ],
+            [
+              500,
+              645,
+              null,
+              true
+            ],
+            [
+              1000,
+              1237,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "india-monsooned-malabar-3/",
+          "variants": [
+            [
+              250,
+              336,
+              null,
+              true
+            ],
+            [
+              500,
+              625,
+              null,
+              true
+            ],
+            [
+              1000,
+              1197,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "ethiopia-sidamo/",
+          "variants": [
+            [
+              250,
+              345,
+              null,
+              true
+            ],
+            [
+              500,
+              645,
+              null,
+              true
+            ],
+            [
+              1000,
+              1237,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "honduras/",
+          "variants": [
+            [
+              250,
+              342,
+              null,
+              true
+            ],
+            [
+              500,
+              639,
+              null,
+              true
+            ],
+            [
+              1000,
+              1226,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "smes-na-probuzeni/",
+          "variants": [
+            [
+              250,
+              296,
+              null,
+              true
+            ],
+            [
+              500,
+              545,
+              null,
+              true
+            ],
+            [
+              1000,
+              1041,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kenya/",
+          "variants": [
+            [
+              250,
+              365,
+              null,
+              true
+            ],
+            [
+              500,
+              684,
+              null,
+              true
+            ],
+            [
+              1000,
+              1314,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "dominikanska-republika/",
+          "variants": [
+            [
+              250,
+              362,
+              null,
+              true
+            ],
+            [
+              500,
+              679,
+              null,
+              true
+            ],
+            [
+              1000,
+              1306,
+              null,
+              true
+            ]
+          ]
+        }
+      ]
+    },
+    "kavavra": {
+      "baseUrl": "https://www.kavavra.cz/",
+      "currency": "CZK",
+      "method": "Kazdy variant Velikost vybrany v prehliadaci. Zobrazena cena vybraneho variantu porovnana s cenou v prislusnej moznosti; vsetky sa zhodovali. Dostupnost Skladem bola pri kazdej uvedenej variante.",
+      "grindEvidence": "Pre sedem oznacenych kav dolozene zrnkovostou na https://www.kavavra.cz/degustacni-balicek-kav/ z kontroly15.10.2026: konkretne pomenovane kavy s odkazom na samostatny produkt a textom Stredne prazena zrnkova kava. Pre Mexico Decaf, Peru a Ethiopiu ostava forma null; samotny produkt ponuka iba velkost, mletie neuvedene.",
+      "grindGroups": {
+        "default": [
+          {
+            "label": null,
+            "grind": null,
+            "surcharge": 0
+          }
+        ],
+        "beans": [
+          {
+            "label": "zrnková",
+            "grind": "beans",
+            "surcharge": 0
+          }
+        ]
+      },
+      "products": [
+        {
+          "path": "brasil-santos/",
+          "grindGroup": "beans",
+          "variants": [
+            [
+              500,
+              345,
+              null,
+              true
+            ],
+            [
+              200,
+              180,
+              null,
+              true
+            ],
+            [
+              1000,
+              690,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "mexico-decaf-2/",
+          "variants": [
+            [
+              500,
+              400,
+              null,
+              true
+            ],
+            [
+              200,
+              200,
+              null,
+              true
+            ],
+            [
+              1000,
+              800,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "brasil-doce-samba/",
+          "grindGroup": "beans",
+          "variants": [
+            [
+              500,
+              345,
+              null,
+              true
+            ],
+            [
+              200,
+              180,
+              null,
+              true
+            ],
+            [
+              1000,
+              690,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kenya-aa-washed/",
+          "grindGroup": "beans",
+          "variants": [
+            [
+              500,
+              380,
+              null,
+              true
+            ],
+            [
+              200,
+              195,
+              null,
+              true
+            ],
+            [
+              1000,
+              760,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "brasil-cerrado/",
+          "grindGroup": "beans",
+          "variants": [
+            [
+              500,
+              345,
+              null,
+              true
+            ],
+            [
+              200,
+              180,
+              null,
+              true
+            ],
+            [
+              1000,
+              690,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "ethiopia-legesse-matisso/",
+          "variants": [
+            [
+              500,
+              545,
+              null,
+              true
+            ],
+            [
+              200,
+              260,
+              null,
+              true
+            ],
+            [
+              125,
+              180,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "costa-rica/",
+          "grindGroup": "beans",
+          "variants": [
+            [
+              500,
+              370,
+              null,
+              true
+            ],
+            [
+              200,
+              190,
+              null,
+              true
+            ],
+            [
+              1000,
+              740,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "colombia-supremo/",
+          "grindGroup": "beans",
+          "variants": [
+            [
+              500,
+              370,
+              null,
+              true
+            ],
+            [
+              200,
+              190,
+              null,
+              true
+            ],
+            [
+              1000,
+              740,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "smes-brasil-santos-a-india-kaapi/",
+          "grindGroup": "beans",
+          "variants": [
+            [
+              500,
+              345,
+              null,
+              true
+            ],
+            [
+              200,
+              180,
+              null,
+              true
+            ],
+            [
+              1000,
+              690,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "peru-trabaconas/",
+          "variants": [
+            [
+              500,
+              525,
+              null,
+              true
+            ],
+            [
+              200,
+              255,
+              null,
+              true
+            ],
+            [
+              125,
+              175,
+              null,
+              true
+            ]
+          ]
+        }
+      ]
+    },
+    "kavoholik": {
+      "baseUrl": "https://kavoholik.sk/",
+      "currency": "EUR",
+      "coverage": "Iba posledny produkt bez zobrazenej gramaze v testovanych hlavnych odporucaniach. Zvysok katalogu sa tymto zaznamom znova neoveruje.",
+      "method": "Otvorena oficialna produktova stranka. Cena9,52 EUR s DPH, povodna11,90 EUR, zlava20 percent; posledne2ks. Popis vyslovne uvadza200g balicek a prazenu zrnkovu bezkofeinovu kavu. Bez vyberu dalsich baleni na stranke.",
+      "grinds": [
+        {
+          "label": "zrnková",
+          "grind": "beans",
+          "surcharge": 0
+        }
+      ],
+      "products": [
+        {
+          "path": "mokra-washed/998-kavoholik-decaf-na-filter-kolumbia-popayan.html",
+          "discountNote": "Aktualna akciova cena9,52 EUR; povodna11,90 EUR.",
+          "variants": [
+            [
+              200,
+              9.52,
+              "Svetlé praženie",
+              true
+            ]
+          ]
+        }
+      ]
+    },
+    "readyafter": {
+      "baseUrl": "https://www.readyafter.sk/",
+      "currency": "EUR",
+      "coverage": "Sedem produktov, ktore boli hlavnymi odporucaniami bez konkretneho balenia; nejde o audit celeho katalogu.",
+      "method": "Oficialne produktove stranky: kazde viditelne balenie vybrane a nasledne vsetky styri moznosti mletia. Cena zostala rovnaka, priplatok 0. Text: Kávu dodávame štandardne zrnkovú. Bez vlozenia do kosika.",
+      "grinds": [
+        {
+          "label": "zrnková",
+          "grind": "beans",
+          "surcharge": 0
+        },
+        {
+          "label": "Domáce espresso",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "Moka konvička / koťogo",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "Dripper / Filter",
+          "grind": "ground",
+          "surcharge": 0
+        },
+        {
+          "label": "French press / cold brew",
+          "grind": "ground",
+          "surcharge": 0
+        }
+      ],
+      "products": [
+        {
+          "path": "crema-lover-blend/",
+          "discountNote": "Aktualna akciova cena 23,32 EUR namiesto 31,90 EUR. Stranka ponukla iba 1000g.",
+          "variants": [
+            [
+              1000,
+              23.32,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "bellissimo-blend-vyberova-kavova-zmes/",
+          "variants": [
+            [
+              1000,
+              29,
+              null,
+              true
+            ],
+            [
+              200,
+              7.9,
+              null,
+              true
+            ],
+            [
+              500,
+              17,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "rwanda-gicumbi-fully-washed-lot-01/",
+          "variants": [
+            [
+              1000,
+              43,
+              null,
+              true
+            ],
+            [
+              200,
+              10.9,
+              null,
+              true
+            ],
+            [
+              500,
+              23,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "brasil-santos-cerrado-17-18-natural/",
+          "variants": [
+            [
+              1000,
+              29.9,
+              null,
+              true
+            ],
+            [
+              200,
+              7.9,
+              null,
+              true
+            ],
+            [
+              500,
+              17.5,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "peru-amazonas-monte-verde-wash/",
+          "variants": [
+            [
+              1000,
+              40,
+              null,
+              true
+            ],
+            [
+              200,
+              10,
+              null,
+              true
+            ],
+            [
+              500,
+              21,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "ethiopia-sookoo-coffee-guji-okoluu-g1-organic/",
+          "variants": [
+            [
+              1000,
+              53,
+              null,
+              true
+            ],
+            [
+              200,
+              12.5,
+              null,
+              true
+            ],
+            [
+              500,
+              28,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "ethiopia-yirgacheffe-gr-2-ycfcu/",
+          "variants": [
+            [
+              1000,
+              40,
+              null,
+              true
+            ],
+            [
+              200,
+              9.5,
+              null,
+              true
+            ],
+            [
+              500,
+              22,
+              null,
+              true
+            ]
+          ]
+        }
+      ]
     }
   }
 }
