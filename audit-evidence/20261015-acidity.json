@@ -1,0 +1,29 @@
+{
+  "checkedAt":"2026-10-15",
+  "method":"Precitany viditelny popis kazdeho uvedeneho oficialneho produktu. Pri Coffee Ride otvorena odpoved FAQ Je Coffee Ride kyslá?.",
+  "simplecoffee":{
+    "url":"https://simplecoffee.sk/produkt/coffee-ride/",
+    "evidence":"Má jemnú až strednú ovocnú aciditu.",
+    "acidity":null,
+    "acidityNote":"Jemná až stredná ovocná acidita.",
+    "reason":"Zdroj uvadza rozsah, nie jeden stupen. Presny bod nevymyslame a kavu nevydavame za overenu minimalne kyslu.",
+    "beansEvidence":"Coffee Ride je zrnková káva pre cyklistov",
+    "notes":["biela čokoláda","červené jablko","jemný citrus"]
+  },
+  "zlatezrnko":{
+    "evidence":"Čistá a hladká chuť kakaa s jemnou príchuťou acidity.",
+    "acidity":1,
+    "acidityNote":"Jemná príchuť acidity.",
+    "reason":"Doslovne jemna zodpoveda existujucej stupnici aplikacie 1=jemna; povodne 0=minimalna bolo nepresne.",
+    "urls":[
+      "https://zlatezrnko.sk/obchod/kava-rozvoj-dietata/",
+      "https://zlatezrnko.sk/obchod/kava-dakujeme-ocko/",
+      "https://zlatezrnko.sk/obchod/kava-najlepsi-ocko/",
+      "https://zlatezrnko.sk/obchod/kava-najlepsi-pan-ucitel-kava/",
+      "https://zlatezrnko.sk/obchod/kava-najlepsej-pani-ucitelke/",
+      "https://zlatezrnko.sk/obchod/o-kvapku-lepsia-kava/",
+      "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-emilia-mleta-v-plechovke-250g/",
+      "https://zlatezrnko.sk/obchod/snipers-kava/"
+    ]
+  }
+}

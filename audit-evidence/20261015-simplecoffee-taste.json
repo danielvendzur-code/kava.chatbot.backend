@@ -1,0 +1,33 @@
+{
+  "checkedAt":"2026-10-15",
+  "baseUrl":"https://simplecoffee.sk/produkt/",
+  "coverage":"25 dostupnych kav. Precitany oficialny vlastny popis a tabulka Chut kavy. Prednost ma konkretny vlastny chutovy profil pred vseobecnymi porovnaniami a odporucanymi produktmi.",
+  "mapping":"Rodiny chuti su redakcne zaradenie pre vyber, nie meranie vyrobcu. chocolate zahŕňa cokoladu, kakao, orechy, karamel a med; fruity iba pozitivne uvedene ovocne/citrusove/vinne tony. bold iba vyrazny profil, plne robustove zmesi alebo tmave prazenie. balanced je uvedeny vyvazeny alebo jemny profil. Negovane a porovnavane chute sa nepreberaju.",
+  "products":[
+    {"path":"cierna-kava/","notes":["čokoláda","jazmín","oriešky"],"families":["chocolate","bold"],"evidence":"Tabulka Chuť kávy: čokoládová, jasmínová, orechová, sladká. Popis: tmavšie espresso praženie, tmavší a výraznejší prejav."},
+    {"path":"po-svojom/","notes":["citrusy","jahody","jazmín"],"families":["fruity","bold"],"evidence":"Tabulka Chuť kávy: citrusová, jahodová, jasmínová. Popis: ovocné espresso s pevným telom; India robusta pridáva plnosť, intenzitu a cremu."},
+    {"path":"najka-jemna-cokoladovo-orieskova-kava/","notes":["čokoláda","kakao","lieskové oriešky"],"families":["chocolate","balanced"],"evidence":"Chuťový profil: čokoláda a kakao, lieskové oriešky, prirodzená sladkosť."},
+    {"path":"running-high-svieza-ovocna-kava-na-filter/","notes":["červené jablko","citrusy","kvety"],"families":["fruity","balanced"],"evidence":"Tabulka Chuť kávy: červené jablko, citrusová, kvetinová. Popis: vyvážený profil, ľahká v dojme, výrazná v chuti."},
+    {"path":"coffee-ride/","notes":["biela čokoláda","červené jablko","jemný citrus"],"families":["chocolate","fruity","balanced"],"evidence":"Vlastny popis: biela čokoláda, červené jablko, jemný citrus. Tabulka nejednotne uvadza mliecnu cokoladu; pouzity aktualny vlastny popis."},
+    {"path":"ta-prava-kava/","notes":["mliečna čokoláda","oriešky"],"families":["chocolate","balanced"],"evidence":"Chuť: jemné tóny mliečnej čokolády a orieškov."},
+    {"path":"simple-new-wave-espresso-blend/","notes":["čokoláda","lieskové oriešky","sušené ovocie","med"],"families":["chocolate","fruity","balanced"],"evidence":"V šálke odhaľuje vrstvy čokolády, lieskových orieškov, sušeného ovocia a medu; harmonická zmes."},
+    {"path":"el-salvador-washed-200g-special/","notes":["mliečna čokoláda","červené jablko","sušené slivky","med"],"families":["chocolate","fruity","balanced"],"evidence":"Typické sú tóny mliečnej čokolády, červeného jablka, sušených sliviek a medu; harmonická sladkosť."},
+    {"path":"simple-special-praziara/","notes":["jemná čokoláda","citrusy","červené bobuľové ovocie","oriešková dochuť"],"families":["chocolate","fruity","balanced"],"evidence":"Chuť: jemná čokoláda, citrusy, červené bobuľové ovocie, oriešková dochuť; vyvážený profil."},
+    {"path":"zrnkova-kava-oro-nero/","notes":["horká čokoláda","karamel","lieskové oriešky"],"families":["chocolate","bold"],"evidence":"Chuť: horká čokoláda, karamel, lieskové oriešky. Charakter: silný, intenzívny, plný, nízko kyslý."},
+    {"path":"laskava-kava/","notes":["orechy","jazmín a lupene ruže","jemný citrus","mandle"],"families":["chocolate","fruity","balanced"],"evidence":"Chuťový profil: orechy, jazmín a lupene ruže, likérová sladkosť, jemný citrus, mandle v dochuti; sladkost a jemna sviezost."},
+    {"path":"zrnkova-kava-z-peru/","notes":["vanilka","oriešky","jemná sladkosť"],"families":["chocolate","balanced"],"evidence":"Chuť: vanilka, oriešky, jemná sladkosť; mäkké telo."},
+    {"path":"zrnkova-kava-z-mexika/","notes":["čokoláda","oriešky","jemné ovocné tóny"],"families":["chocolate","fruity","balanced"],"evidence":"Chuť: čokoláda, oriešky, jemné ovocné tóny; vyvážený profil."},
+    {"path":"zrnkova-kava-z-kostariky/","notes":["med","karamel","mliečna čokoláda","jemné citrusy"],"families":["chocolate","fruity","balanced"],"evidence":"Chuť: med, karamel, mliečna čokoláda, jemné citrusy; pokojnejší, sladký, čistý, hladký filter."},
+    {"path":"zrnkova-kava-z-kolumbie/","notes":["karamel","med","orechy","jemná mandľová dochuť"],"families":["chocolate","balanced"],"evidence":"Chuť: karamel, med, orechy, jemná mandľová dochuť; vyvážená chuť."},
+    {"path":"zrnkova-kava-z-bolivie/","notes":["jablko v čokoláde","hnedý cukor","vanilka","jemný karamel"],"families":["chocolate","fruity","balanced"],"evidence":"Chuť: jablko v čokoláde, hnedý cukor, vanilka, jemný karamel; vyvážená."},
+    {"path":"zrnkova-kava-z-keni/","notes":["citrusy","sladká čerešňa","jemná korenistosť","vínny nádych"],"families":["fruity","bold"],"evidence":"Chuť: citrusy, sladká čerešňa, jemná korenistosť, vínny nádych; jasná, šťavnatá a výrazná."},
+    {"path":"zrnkova-kava-z-dominikanske-republiky/","notes":["orechy","karamel","jemná korenistosť","zemitý dozvuk"],"families":["chocolate","balanced"],"evidence":"Chuť: orechy, karamel, jemná korenistosť, zemitý dozvuk; pokojný karibský charakter."},
+    {"path":"zrnkova-bezkofeinova-kava-decaf/","notes":["karamelky","trstinová melasa","kakao"],"families":["chocolate","balanced"],"evidence":"Chuť: karamelky, trstinová melasa, kakao; pokojný, sladký a zrozumiteľný profil."},
+    {"path":"zrnkova-kava-z-guatemala-guatemala-el-quiche/","notes":["čokoláda","oriešky","jemný citrus"],"families":["chocolate","fruity","balanced"],"evidence":"Chuť: čokoláda, oriešky, jemný citrus, sladkastý profil; vyvážené telo."},
+    {"path":"zrnkova-kava-z-etiopie-etiopie-yirgacheffe/","notes":["citrusy","jahody","jazmín","ruža"],"families":["fruity"],"evidence":"Chuť: citrusy, jahody, jazmín, ruža, jemná likérová sladkosť; ľahší, aromatickejší profil."},
+    {"path":"zrnkova-kava-espresso-blend-kostarika-indie/","notes":["oriešky","korenená čokoláda","jemná sladkosť"],"families":["chocolate","bold"],"evidence":"Chuť: oriešky, korenená čokoláda, jemná sladkosť, ľahká sviežosť; indická robusta pridava telo."},
+    {"path":"zrnkova-kava-espresso-blend-brazil-indie/","notes":["čerstvá čokoláda","oriešky","jemné exotické tóny indickej robusty"],"families":["chocolate","bold"],"evidence":"Chuť: čerstvá čokoláda, oriešky, jemné exotické tóny indickej robusty; telo plné, krémové."},
+    {"path":"zrnkova-kava-z-burundi/","notes":["citrusy","jemná škorica","ľahká karamelová sladkosť","zemitá dochuť"],"families":["chocolate","fruity","bold"],"evidence":"Chuť: citrusy, jemná škorica, ľahká karamelová sladkosť, zemitá dochuť; výraznejší charakter."},
+    {"path":"zrnkova-kava-z-brazilie-brazil-cerrado-santos/","notes":["čerstvá čokoláda","jemná sladkosť"],"families":["chocolate","balanced"],"evidence":"Chuť: čerstvá čokoláda, jemná sladkosť; pokojný, sladký a ľahko čitateľný charakter."}
+  ]
+}

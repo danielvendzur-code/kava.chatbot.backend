@@ -63,6 +63,12 @@
   const MAX_SCORE = WEIGHTS.taste + WEIGHTS.prep + WEIGHTS.drink + WEIGHTS.acidity;
   const ACIDITY_TARGET = { none: 0, mild: 1, bright: 3 };
 
+  function acidityBounds(product) {
+    if (Number.isFinite(product.acidity)) return [product.acidity, product.acidity];
+    const range = product.acidityRange;
+    return Array.isArray(range) && range.length === 2 && range.every(Number.isFinite) && range[0] <= range[1] ? range : null;
+  }
+
   function score(product, answers) {
     let total = 0;
     if (answers.taste) total += WEIGHTS.taste * (product.taste?.[answers.taste] ?? 0);
@@ -73,7 +79,8 @@
         total += WEIGHTS.acidity * (product.explore ?? 0);
       } else {
         const target = ACIDITY_TARGET[answers.acidity];
-        const acidity = Number.isFinite(product.acidity) ? product.acidity : 1;
+        const bounds = acidityBounds(product);
+        const acidity = bounds ? (bounds[0] + bounds[1]) / 2 : 1;
         total += WEIGHTS.acidity * (1 - Math.abs(target - acidity) / 3);
       }
     }
@@ -89,12 +96,12 @@
     const drinkUnknown=!Object.values(product.drink||{}).some(v=>v>0)&&answers.drink==='black';
     for(const key of ['taste','drink'])if(answers[key]&&answers[key]!=='any'&&!(key==='drink'&&drinkUnknown)&&(product[key]?.[answers[key]]??0)<.5)missing.push(key);
     if (answers.prep && answers.prep!=='any' && (product.prep?.[answers.prep] ?? 0) < 0.6) missing.push('prep');
-    const acidity = Number.isFinite(product.acidity) ? product.acidity : null;
+    const acidity = acidityBounds(product);
     if(answers.caffeine&&answers.caffeine!=='any'&&product.decaf!==(answers.caffeine==='no'))missing.push('caffeine');
     if(answers.acidity&&answers.acidity!=='any'&&answers.acidity!=='explore'&&acidity===null)missing.push('acidity');
-    if (answers.acidity === 'none' && acidity > 1) missing.push('acidity');
-    if(answers.acidity==='mild'&&acidity>2)missing.push('acidity');
-    if (answers.acidity === 'bright' && acidity !== null && acidity < 2) missing.push('acidity');
+    if (answers.acidity === 'none' && acidity && acidity[1] > 1) missing.push('acidity');
+    if(answers.acidity==='mild'&&acidity&&acidity[1]>2)missing.push('acidity');
+    if (answers.acidity === 'bright' && acidity && acidity[0] < 2) missing.push('acidity');
     return missing;
   }
 
@@ -537,7 +544,7 @@
     const altEntry = exactOthers.find((entry) => differenceOf(product, entry.product).length) || null;
     const alternative = altEntry ? {entry: altEntry, variant: pickVariant(altEntry.product, state.answers), diff: differenceOf(product, altEntry.product)} : null;
     const accessory = accessoryFor(product, variant);
-    const acidityLabel = Number.isFinite(product.acidity)?acidityScale[product.acidity]:'Neuvedená';
+    const acidityLabel = product.acidityNote || (Number.isFinite(product.acidity)?acidityScale[product.acidity]:'Neuvedená');
     const whyText = typeof product.why === 'string' && !/^Vybran[áa] z aktuálnej ponuky|^Chuť:|^Chuťový profil:/i.test(product.why.trim()) ? product.why : '';
 
     const differences=current.unmet.map(key=>{
