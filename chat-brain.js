@@ -48,7 +48,6 @@
       pick: n => `Na ${n} ks vyberám:`,
       shippingHead: 'Doprava podľa e-shopu',
       shippingUnknown: 'Cenu dopravy pre vašu krajinu v ukážke overenú nemám. Aktuálne možnosti a ceny sú v e-shope:',
-      shippingCountry: 'Napíšte mi krajinu doručenia a poviem vám, ktorý riadok platí.',
       excludedNote: 'Vynechávam:',
       conditions: 'podľa vašich podmienok',
       priceFrom: 'od',
@@ -88,7 +87,6 @@
       pick: n => `Na ${n} ks vybírám:`,
       shippingHead: 'Doprava podle e-shopu',
       shippingUnknown: 'Cenu dopravy pro vaši zemi v ukázce ověřenou nemám. Aktuální možnosti a ceny jsou v e-shopu:',
-      shippingCountry: 'Napište mi zemi doručení a řeknu vám, který řádek platí.',
       excludedNote: 'Vynechávám:',
       conditions: 'podle vašich podmínek',
       priceFrom: 'od',
@@ -526,8 +524,7 @@
       const general = s.lines.filter(l => !byCountry.includes(l));
       lines = own.length ? [...own, ...general] : [(ad.lang === 'cs' ? 'Pro tuto zemi e-shop cenu dopravy neuvádí. Uvedené ceny:' : 'Pre túto krajinu e-shop cenu dopravy neuvádza. Uvedené ceny:'), ...s.lines];
     }
-    const askCountry = !asked && byCountry.length >= 2;
-    return [t.shippingHead + (s.checkedAt ? ' (' + s.checkedAt + ')' : '') + ':', ...lines, s.url || '', askCountry ? t.shippingCountry : ''].filter(Boolean).join('\n');
+    return [t.shippingHead + (s.checkedAt ? ' (' + s.checkedAt + ')' : '') + ':', ...lines, s.url || ''].filter(Boolean).join('\n');
   }
 
   /* ---------- main entry ---------- */
