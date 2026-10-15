@@ -23,16 +23,20 @@ for (const [slug, shop] of Object.entries(evidence.shops)) {
       product.priceUnit = product.weights = record.packLabel;
       continue;
     }
+    const grinds = (shop.grindGroups?.[record.grindGroup || 'default'] || shop.grinds || [{grind:null,label:null,surcharge:0}])
+      .map(g => typeof g === 'string' ? {label:g, grind:/^NEMLÍT/.test(g)?'beans':'ground',surcharge:0} : g);
     product.variants = record.variants.flatMap(([grams, basePrice, extra, available]) =>
-      (shop.grinds || [{grind:null,label:null,surcharge:0}]).map(grind => ({
+      grinds.map(grind => ({
         grams, price:basePrice + grind.surcharge, extra, available, grind:grind.grind,
         label: `${grams === 1000 ? '1 kg' : grams + ' g'}${extra ? ' · ' + extra : ''}${grind.label ? ' · ' + grind.label : ''}`,
         priceLabel: money(basePrice + grind.surcharge)
       })));
     const live = product.variants.filter(v => v.available);
-    const minimum = Math.min(...live.map(v => v.price));
+    const regular = live.filter(v => v.grams >= 150);
+    const priced = regular.length ? regular : live;
+    const minimum = Math.min(...priced.map(v => v.price));
     product.priceAmount = minimum;
-    product.price = (new Set(live.map(v => v.price)).size > 1 ? 'od ' : '') + money(minimum);
+    product.price = (new Set(priced.map(v => v.price)).size > 1 ? 'od ' : '') + money(minimum);
     product.priceFrom = product.price;
     product.priceUnit = 'Viac balení';
     product.weights = [...new Set(live.map(v => v.grams + ' g'))].join(', ');

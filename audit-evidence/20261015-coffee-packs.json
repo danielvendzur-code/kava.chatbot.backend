@@ -1045,6 +1045,384 @@
           "variants": []
         }
       ]
+    },
+    "donfranko": {
+      "baseUrl": "https://www.donfranko.cz/",
+      "currency": "CZK",
+      "method": "V Chrome zvolena kazda kombinacia vsetkych zobrazenych gramazi a mleti pre kazdy produkt. Precitana cena a overene aktivne tlacidlo Do kosiku; nic nepridane. Vsetky moznosti mletia pri rovnakej gramazi mali rovnaku cenu.",
+      "grindGroups": {
+        "default": [
+          "NEMLÍT - chci zrnka",
+          "Turek - jemně",
+          "Moka konvička - jemně",
+          "Espresso - jemně",
+          "Aeropress - jemně",
+          "Překapávaná - středně",
+          "Chemex - středně",
+          "Hario V60 - středně",
+          "French press - hrubě"
+        ],
+        "espresso80": [
+          "NEMLÍT - chci zrnka",
+          "Turek - jemně",
+          "Moka konvička - jemně",
+          "Espresso - jemně",
+          "French press - hrubě"
+        ],
+        "italian": [
+          "NEMLÍT - chci zrnka",
+          "Turek - jemně",
+          "Moka konvička - jemně",
+          "Espresso - jemně"
+        ],
+        "elizondo": [
+          "NEMLÍT - chci zrnka",
+          "Espresso - jemně",
+          "Aeropress - jemně",
+          "Překapávaná - středně",
+          "Chemex - středně",
+          "Hario V60 - středně",
+          "French press - hrubě"
+        ]
+      },
+      "products": [
+        {
+          "path": "kava-arabica/peru-shb-gr-1-ep-organic/",
+          "variants": [
+            [
+              250,
+              190,
+              null,
+              true
+            ],
+            [
+              500,
+              360,
+              null,
+              true
+            ],
+            [
+              1000,
+              690,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava-arabica/brazilie-santos/",
+          "variants": [
+            [
+              250,
+              190,
+              null,
+              true
+            ],
+            [
+              500,
+              360,
+              null,
+              true
+            ],
+            [
+              1000,
+              670,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava-arabica/kolumbie-supremo-medellin/",
+          "variants": [
+            [
+              250,
+              190,
+              null,
+              true
+            ],
+            [
+              500,
+              360,
+              null,
+              true
+            ],
+            [
+              1000,
+              690,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava-arabica/kostarika-las-trojas/",
+          "variants": [
+            [
+              250,
+              230,
+              null,
+              true
+            ],
+            [
+              500,
+              430,
+              null,
+              true
+            ],
+            [
+              1000,
+              790,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava-arabica/honduras-occidente-las-mercedes/",
+          "variants": [
+            [
+              250,
+              190,
+              null,
+              true
+            ],
+            [
+              500,
+              350,
+              null,
+              true
+            ],
+            [
+              1000,
+              670,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava-arabica/guatemala-huehuetenango/",
+          "variants": [
+            [
+              250,
+              210,
+              null,
+              true
+            ],
+            [
+              500,
+              380,
+              null,
+              true
+            ],
+            [
+              1000,
+              710,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava-arabica/kena-aa-plus-mount-kenya-selection/",
+          "variants": [
+            [
+              250,
+              230,
+              null,
+              true
+            ],
+            [
+              500,
+              430,
+              null,
+              true
+            ],
+            [
+              1000,
+              830,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "espresso-smesi/espresso-80-smes/",
+          "grindGroup": "espresso80",
+          "variants": [
+            [
+              250,
+              190,
+              null,
+              true
+            ],
+            [
+              500,
+              340,
+              null,
+              true
+            ],
+            [
+              1000,
+              640,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "specialni-nabidka/kava-bez-kofeinu-z-kolumbie/",
+          "variants": [
+            [
+              250,
+              230,
+              null,
+              true
+            ],
+            [
+              500,
+              430,
+              null,
+              true
+            ],
+            [
+              1000,
+              820,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "espresso-smesi/italske-espresso-smes/",
+          "grindGroup": "italian",
+          "variants": [
+            [
+              250,
+              180,
+              null,
+              true
+            ],
+            [
+              500,
+              330,
+              null,
+              true
+            ],
+            [
+              1000,
+              630,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "e-shop/smes-don-franko/",
+          "variants": [
+            [
+              125,
+              100,
+              null,
+              true
+            ],
+            [
+              250,
+              190,
+              null,
+              true
+            ],
+            [
+              500,
+              360,
+              null,
+              true
+            ],
+            [
+              1000,
+              690,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "kava-arabica/mexiko-esmeralda/",
+          "variants": [
+            [
+              250,
+              190,
+              null,
+              true
+            ],
+            [
+              500,
+              350,
+              null,
+              true
+            ],
+            [
+              1000,
+              690,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "limitka/kostarika-elizondo-anaerobic-natutal/",
+          "grindGroup": "elizondo",
+          "variants": [
+            [
+              125,
+              160,
+              null,
+              true
+            ],
+            [
+              250,
+              310,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "limitka/finca-la-colombia-double-fermentation/",
+          "variants": [
+            [
+              125,
+              220,
+              null,
+              true
+            ],
+            [
+              250,
+              410,
+              null,
+              true
+            ]
+          ]
+        },
+        {
+          "path": "limitka/timana-huila-natural/",
+          "variants": [
+            [
+              125,
+              150,
+              null,
+              true
+            ],
+            [
+              250,
+              270,
+              null,
+              true
+            ]
+          ]
+        }
+      ]
     }
   }
 }
