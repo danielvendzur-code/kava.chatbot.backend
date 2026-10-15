@@ -48,7 +48,7 @@
       pick: n => `Na ${n} ks vyberám:`,
       shippingHead: 'Doprava podľa e-shopu',
       shippingUnknown: 'Cenu dopravy pre vašu krajinu v ukážke overenú nemám. Aktuálne možnosti a ceny sú v e-shope:',
-      shippingCountry: 'Ak mi napíšete krajinu doručenia, poviem vám presnejšie, čo z týchto údajov platí.',
+      shippingCountry: 'Napíšte mi krajinu doručenia a poviem vám, ktorý riadok platí.',
       excludedNote: 'Vynechávam:',
       conditions: 'podľa vašich podmienok',
       priceFrom: 'od',
@@ -88,7 +88,7 @@
       pick: n => `Na ${n} ks vybírám:`,
       shippingHead: 'Doprava podle e-shopu',
       shippingUnknown: 'Cenu dopravy pro vaši zemi v ukázce ověřenou nemám. Aktuální možnosti a ceny jsou v e-shopu:',
-      shippingCountry: 'Když mi napíšete zemi doručení, řeknu vám přesněji, co z těchto údajů platí.',
+      shippingCountry: 'Napište mi zemi doručení a řeknu vám, který řádek platí.',
       excludedNote: 'Vynechávám:',
       conditions: 'podle vašich podmínek',
       priceFrom: 'od',
@@ -511,11 +511,22 @@
     return [head, ...pick.slice(0, 2).map(p => line(ad, p, st, why(p))), note].filter(Boolean).join('\n\n');
   }
 
-  function shippingReply(ad) {
+  /* Country lines start with the country ("Slovensko: …"); a named country narrows the answer. */
+  const COUNTRY = [[/sloven|\bsk\b|\bslovak/, /^Slovensk/], [/cesk|\bcz\b|cesko|czech|\bcr\b/, /^Česk|^Česká|^Cesk/], [/rakus|rakous|austri/, /^Rak/]];
+  function shippingReply(ad, q = '') {
     const t = T[ad.lang];
     const s = ad.shipping;
-    if (s && s.lines?.length) return [t.shippingHead + (s.checkedAt ? ' (' + s.checkedAt + ')' : '') + ':', ...s.lines, s.url ? s.url : '', s.countryNote === false ? '' : t.shippingCountry].filter(Boolean).join('\n');
-    return t.shippingUnknown + ' ' + (s?.url || ad.source);
+    if (!s || !s.lines?.length) return t.shippingUnknown + ' ' + (s?.url || ad.source);
+    const byCountry = s.lines.filter(l => /^[A-ZÁČĎÉÍĽĹŇÓÔŔŠŤÚÝŽ][a-záäčďéíľĺňóôŕšťúýž]+:/.test(l));
+    const asked = COUNTRY.find(([rx]) => rx.test(q));
+    let lines = s.lines;
+    if (asked && byCountry.length) {
+      const own = s.lines.filter(l => asked[1].test(l));
+      const general = s.lines.filter(l => !byCountry.includes(l));
+      lines = own.length ? [...own, ...general] : [(ad.lang === 'cs' ? 'Pro tuto zemi e-shop cenu dopravy neuvádí. Uvedené ceny:' : 'Pre túto krajinu e-shop cenu dopravy neuvádza. Uvedené ceny:'), ...s.lines];
+    }
+    const askCountry = !asked && byCountry.length >= 2;
+    return [t.shippingHead + (s.checkedAt ? ' (' + s.checkedAt + ')' : '') + ':', ...lines, s.url || '', askCountry ? t.shippingCountry : ''].filter(Boolean).join('\n');
   }
 
   /* ---------- main entry ---------- */
@@ -527,7 +538,10 @@
     if (!q.trim()) return null;
     if (HEALTH.test(q)) return null;
     const index = ad.index || (ad.index = buildIndex(ad.products));
-    if (SHIPPING.test(q) && !/produkt|odporuc|doporuc|kav[auy]|vin[oa]|krem|caj|rastlin/.test(q.replace(/doprav\w*/g, ''))) return shippingReply(ad);
+    if (SHIPPING.test(q) && !/produkt|odporuc|doporuc|kav[auy]|vin[oa]|krem|caj|rastlin/.test(q.replace(/doprav\w*/g, ''))) return shippingReply(ad, q);
+    // "A do Česka?" right after a shipping answer is the same question for another country.
+    const lastBot = [...messages].reverse().find(m => m.role === 'assistant')?.content || '';
+    if (lastBot.startsWith(T[ad.lang].shippingHead) && COUNTRY.some(([rx]) => rx.test(q)) && q.split(' ').length <= 6) return shippingReply(ad, q);
     if (ad.pre) { const early = ad.pre(q, messages); if (early !== undefined) return early; }
     const st = stateOf(ad, index, messages);
     const pol = polarity(latestRaw);
