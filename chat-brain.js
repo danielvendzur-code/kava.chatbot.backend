@@ -327,7 +327,7 @@
     if (ad._listed) ad._listed.push(p.id);
     const pr = priceOf(p, st);
     const pack = pr.variant ? pr.variant : p.pack ? p.pack : '';
-    const label = p.name + (pack && !norm(p.name).includes(norm(pack)) ? ' (' + pack + ')' : '');
+    const label = p.name + (pack && !norm(p.name).replace(/\s+/g, '').includes(norm(pack).replace(/\s+/g, '')) ? ' (' + pack + ')' : '');
     const tail = ad.family === 'plants' ? '' : ' ' + p.url;
     return `${label} — ${pr.label || ''}.${reason ? ' ' + reason : ''}${tail}`.replace(/\s+—\s+\./, '.').trim();
   }

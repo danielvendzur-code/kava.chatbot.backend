@@ -110,15 +110,18 @@
     const text = `${product.name} ${product.priceUnit || ''}`;
     const m = text.match(/(\d+(?:[.,]\d+)?)\s*(kg|g)\b/i);
     const grams = m ? Number(m[1].replace(',', '.')) * (/kg/i.test(m[2]) ? 1000 : 1) : null;
-    return /\d\s*x\s*\d|\d\s*\+\s*\d|vzork|vzorek|degust|balíček|balicek/i.test(text) || (grams && (grams >= 1000 || grams < 150)) ? 1 : 0;
+    return /\d\s*x\s*\d|\d\s*\+\s*\d|vzork|vzorek|degust|tasting|balíček|balicek/i.test(text) || (grams && (grams >= 1000 || grams < 150)) ? 1 : 0;
   }
+
+  /* Decaf is the answer when it was asked for, not a first suggestion otherwise. */
+  const decafRank = (product, answers) => answers.caffeine === 'no' || !product.decaf ? 0 : 1;
 
   function rank(answers) {
     return products
       .filter(product=>product.available!==false).map((product) => ({ product, value: score(product, answers), unmet: unmet(product, answers) }))
       /* Caffeine is a firm requirement; for the rest the closest coffee is shown with an honest note. */
       .filter(entry=>!entry.unmet.includes('caffeine'))
-      .sort((left, right) => left.unmet.length - right.unmet.length || right.value - left.value || packRank(left.product) - packRank(right.product) || left.product.name.localeCompare(right.product.name, 'sk'));
+      .sort((left, right) => left.unmet.length - right.unmet.length || decafRank(left.product, answers) - decafRank(right.product, answers) || right.value - left.value || packRank(left.product) - packRank(right.product) || left.product.name.localeCompare(right.product.name, 'sk'));
   }
 
   const state = {

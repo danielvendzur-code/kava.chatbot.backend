@@ -108,3 +108,37 @@ html.cq-logo-wide body .launcher__button#open#open{padding:7px!important;}
 
 /* The open fixed panel must not retain the landing page scrollbar. */
 html.widget-open:not(#_):not(#_):not(#_),html.widget-open:not(#_):not(#_):not(#_) body{overflow:hidden!important;height:100dvh!important;}
+
+/* Two answers fill the question area as two wide cards instead of leaving an empty row. */
+html body #widget#widget#widget .advisor.is-questions .options:not(:has(> :nth-child(3))){grid-template-columns:minmax(0,1fr)!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;}
+
+/* The result shows the coffee, not the step header: "Zmeniť odpovede" stays in the footer beside the shop button. */
+html body #widget#widget#widget #advisorScreen:has(> .advisor.is-result) > .advisor-top{display:none!important;}
+html body #widget#widget#widget #advisorScreen:has(> .advisor.is-result) > .advisor.is-result{padding-top:4px!important;}
+@media (min-width:360px){html body #widget#widget#widget #advisorScreen:has(> .advisor.is-result) > .advisor-foot{display:flex!important;flex-direction:row-reverse!important;align-items:center!important;gap:12px!important;padding-top:10px!important;padding-bottom:10px!important;}}
+html body #widget#widget#widget#widget #advisorScreen:has(> .advisor.is-result) > .advisor-foot > .cta{flex:1 1 auto!important;margin:0!important;white-space:nowrap!important;min-height:50px!important;height:50px!important;font-size:15px!important;}
+html body #widget#widget#widget#widget #advisorScreen:has(> .advisor.is-result) > .advisor-foot > .foot-row{flex:0 0 auto!important;margin:0!important;}
+html body #widget#widget#widget#widget #advisorScreen:has(> .advisor.is-result) > .advisor-foot #restart{font-size:13px!important;white-space:nowrap!important;padding:0 2px!important;}
+
+/* Result: the coffee and its attributes first, without boxed repetition. */
+html body #widget#widget#widget#widget .advisor.is-result .result__badge{display:none!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__hero{display:grid!important;grid-template-columns:72px minmax(0,1fr)!important;gap:12px!important;align-items:start!important;padding:12px 14px 10px!important;margin:0!important;min-height:0!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__photo{width:72px!important;height:72px!important;min-height:0!important;object-fit:contain!important;box-shadow:none!important;margin:0!important;padding:0!important;border-radius:12px!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__headline{gap:6px!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__headline h2{font-size:17px!important;line-height:1.22!important;margin:0 0 6px!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__body{padding:0 14px 14px!important;gap:8px!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__reasons{gap:0!important;margin:0!important;padding:0!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__reasons li{border:0!important;background:none!important;box-shadow:none!important;border-radius:0!important;padding:7px 0 7px 24px!important;margin:0!important;position:relative!important;display:block!important;border-top:1px solid rgba(0,0,0,.08)!important;font-size:13px!important;line-height:1.35!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__reasons li::before{content:"✓"!important;position:absolute!important;left:2px!important;top:7px!important;font-weight:700!important;color:var(--brand,#1b1b1b)!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__reasons li b{display:inline!important;font-size:13px!important;margin:0 4px 0 0!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__reasons li b::after{content:" –";font-weight:400;}
+html body #widget#widget#widget#widget .advisor.is-result .result__reasons li span{display:inline!important;font-size:13px!important;}
+html body #widget#widget#widget#widget .advisor.is-result .facts{gap:8px!important;margin:4px 0 0!important;}
+html body #widget#widget#widget#widget .advisor.is-result .fact{padding:8px 10px!important;min-height:0!important;}
+@media (max-width:359px){
+html body #widget#widget#widget#widget .advisor.is-result .result__hero{grid-template-columns:52px minmax(0,1fr)!important;gap:10px!important;padding:10px 12px 8px!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__photo{width:52px!important;height:52px!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__headline h2{font-size:15.5px!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__headline{flex-direction:row!important;flex-wrap:wrap!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__body{padding:0 12px 12px!important;}
+}
