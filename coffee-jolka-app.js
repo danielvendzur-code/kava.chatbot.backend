@@ -17,10 +17,11 @@
   const {
     brand,
     acidityScale = ['minimálna', 'jemná', 'stredná', 'výrazná'],
-    products,
+    products: catalogue,
     steps,
     chat: chatCopy
   } = DATA;
+  const products = catalogue.filter((product) => product.available !== false);
   const demo = DATA.demo;
   const root = document.getElementById(demo.rootId);
 
@@ -84,6 +85,7 @@
 
   // Suitability is a prerequisite; taste scores cannot override it.
   function eligible(product, answers) {
+    if (product.available === false) return false;
     if (answers.caffeine === 'decaf' ? !product.decaf : product.decaf) return false;
     if (answers.prep && (product.prep?.[answers.prep] ?? 0) < 0.6) return false;
     if (answers.drink && (product.drink?.[answers.drink] ?? 0) < 0.6) return false;

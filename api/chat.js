@@ -132,17 +132,17 @@ const DEMOS = {
     products: [
       "Espresso MAT zmes – horká čokoláda, karamel, vyšší kofeín; Automat, páka a moka",
       "Brasil Santos Cerrado 17/18 Natural – horkosť, ovocná chuť, krása krémy; Espresso a moka",
-      "Colombia Supremo Medelin Wash – čokoláda, sladkosť, plné telo; Espresso a mliečne nápoje",
-      "Ethiopia Yirgacheffe Gr.2 YCFCU – jazmínový čaj, citrónová tráva, ružový grapefruit; Espresso aj filter",
-      "Burundi Rumanda Muraho Natural Anaerobic – ananás, červené jablko, mandarinka; Filter a alternatívna príprava",
-      "Bezkofeínová Colombia Supremo Sugar Cane – med, karamel, marhuľa; Espresso aj filter; bez kofeínu"
+      "Colombia Supremo Café Sofia Washed – čokoláda, sladkosť, plné telo; Espresso a mliečne nápoje",
+      "Ethiopia Yirgacheffe Gr.2 YCFCU – jazmínový čaj, citrónová tráva, ružový grapefruit; Espresso",
+      "Bezkofeínová Colombia Supremo Sugar Cane – med, karamel, marhuľa; Espresso; bez kofeínu",
+      "Vietnam Lang Biang Super natural – tropické ovocie, jahodový džem, slivka; Filter"
     ],
     fallback: {
-      automatic: "Do automatu je dobrý východiskový bod Espresso MAT zmes. Plná zmes bez ovocnej kyslosti.",
-      milk: "Do mlieka sa hodí Espresso MAT zmes. Pre toho, kto chce vyšší podiel kofeínu.",
-      filter: "Na filter siahnite po Ethiopia Yirgacheffe Gr.2 YCFCU. Sladko-ovocná káva s výraznou sviežosťou.",
-      decaf: "Bez kofeínu je v ponuke Bezkofeínová Colombia Supremo Sugar Cane. Ich prvá bezkofeínová káva s profilom med, karamel a sladká chuť s marhuľovou aciditou.",
-      default: "Ak chcete začať istotou, dobrým smerom je Espresso MAT zmes. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+      automatic: "Espresso MAT zmes: horká čokoláda, karamel, vyšší kofeín. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      milk: "Espresso MAT zmes: horká čokoláda, karamel, vyšší kofeín. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      filter: "Vietnam Lang Biang Super natural: tropické ovocie, jahodový džem, slivka. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      decaf: "Bezkofeínová Colombia Supremo Sugar Cane: med, karamel, marhuľa. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      default: "Espresso MAT zmes: horká čokoláda, karamel, vyšší kofeín. Aktuálnu cenu a dostupnosť overte v e-shope."
     }
   },
   coffeesheep: {
@@ -152,15 +152,14 @@ const DEMOS = {
       "Belmondo Espresso Blend – čokoláda, kakao, jemné korenie; Espresso a mliečne nápoje",
       "Colombia Supremo – čokoláda, kakao, zamatová dochuť; Všetky spôsoby prípravy",
       "Kenya Kiambu – ovocná dochuť, aromatická, stredné telo; Filter, french press a moka",
-      "Indonesia Aceh Gayo – zemitá, korenistá, plné telo; Filter, moka a french press",
       "Brazil Santos Carbonic Natural Decaf – tmavá čokoláda, kakao, oriešky; Espresso aj filter; bez kofeínu"
     ],
     fallback: {
-      automatic: "Do automatu je dobrý východiskový bod Sheepresso. Intenzívna zmes bez ovocnej kyslosti.",
-      milk: "Do mlieka sa hodí Sheepresso. Ich najobľúbenejšia espresso zmes — káva s intenzívnou a vyváženou chuťou, stavaná na top espresso.",
-      filter: "Na filter siahnite po Kenya Kiambu. Výrazná, ale neagresívna acidita.",
-      decaf: "Bez kofeínu je v ponuke Brazil Santos Carbonic Natural Decaf. Chute tmavej čokolády a kakaa s orieškovými tónmi.",
-      default: "Ak chcete začať istotou, dobrým smerom je Sheepresso. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+      automatic: "Sheepresso: intenzívna, vyvážená, plné telo. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      milk: "Belmondo Espresso Blend: čokoláda, kakao, jemné korenie. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      filter: "Kenya Kiambu: ovocná dochuť, aromatická, stredné telo. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      decaf: "Brazil Santos Carbonic Natural Decaf: tmavá čokoláda, kakao, oriešky. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      default: "Sheepresso: intenzívna, vyvážená, plné telo. Aktuálnu cenu a dostupnosť overte v e-shope."
     }
   },
   zlatezrnko: {
@@ -256,19 +255,19 @@ const DEMOS = {
   coffeeveronia: {
     brand: "Coffee Veronia", web: "https://www.coffeeveronia.sk/arabika/",
     products: [
-      "Brazil Signature Espresso 200 g – čokoláda, oriešky, hustá créma; Automat a pákový kávovar",
-      "Brazil Santos Exclusive 200 g – sladká čokoláda, oriešky, jemnosť; Espresso a mliečne nápoje",
-      "Etiópia 250 g – kvetinová aróma, ovocie, sviežosť; Filter aj espresso",
-      "Costa Rica Yellow Honey 200 g – medová sladkosť, čistý profil, ovocie; V60, Chemex a Aeropress",
-      "Rwanda – limitovaná edícia 200 g – červené ovocie, výrazný profil, africký charakter; Filter a alternatívne prípravy",
-      "Mexiko bezkofeínová 250 g – jemná sladkosť, orech, plná chuť; Popoludnie a večer; bez kofeínu"
+      "Brazil Signature Espresso 200 g – likér, lieskové orechy, karamel, maslo; Automat a pákový kávovar",
+      "Brazil Santos Exclusive 200 g – pečené gaštany, mandle, jemné korenie; Espresso a mliečne nápoje",
+      "Etiópia 250 g – kakao, karamel, med, bylinky, exotické ovocie; Filter aj espresso",
+      "Costa Rica Yellow Honey 200 g – citrusy, pomaranč, ovocie, med; V60, Chemex a Aeropress",
+      "Rwanda – limitovaná edícia 200 g – figa, citróny, bylinky, exotické ovocie, horká čokoláda; Filter a alternatívne prípravy",
+      "Mexiko bezkofeínová 250 g – lesné ovocie, grapefruit, egreš, čierny čaj, kakao, vlašský orech; Popoludnie a večer; bez kofeínu"
     ],
     fallback: {
-      automatic: "Do automatu je dobrý východiskový bod Brazil Signature Espresso 200 g. Bez výraznej kyslosti.",
-      milk: "Do mlieka sa hodí Brazil Santos Exclusive 200 g. Klasika z brazílskeho Santosu — sladká čokoládová chuť s orieškami, ktorá sa v mlieku nestratí.",
-      filter: "Na filter siahnite po Costa Rica Yellow Honey 200 g. Šťavnatá, s medovou sladkosťou.",
-      decaf: "Bez kofeínu je v ponuke Mexiko bezkofeínová 250 g. Mexická arabika zbavená kofeínu metódou Mountain Water — bez chemických rozpúšťadiel a s plnou chuťou.",
-      default: "Ak chcete začať istotou, dobrým smerom je Brazil Signature Espresso 200 g. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+      automatic: "Brazil Signature Espresso 200 g: likér, lieskové orechy, karamel, maslo. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      milk: "Brazil Santos Exclusive 200 g: pečené gaštany, mandle, jemné korenie. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      filter: "Costa Rica Yellow Honey 200 g: citrusy, pomaranč, ovocie, med. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      decaf: "Mexiko bezkofeínová 250 g: lesné ovocie, grapefruit, egreš, čierny čaj, kakao, vlašský orech. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      default: "Brazil Signature Espresso 200 g: likér, lieskové orechy, karamel, maslo. Aktuálnu cenu a dostupnosť overte v e-shope."
     }
   },
   grandroastery: {
@@ -278,15 +277,14 @@ const DEMOS = {
       "Espresso Blend – čokoláda, karamel, vyvážená; Pákový kávovar",
       "Brazília Cemorrado Choco – čokoláda, oriešky, sladkosť; Espresso a moka",
       "Ethiopia Berhanu Kurse – kvetinová aróma, ovocie, sviežosť; Filter aj moderné espresso",
-      "Colombia El Diviso Natural – tropické ovocie, výrazná sladkosť, experimentálne spracovanie; V60, Chemex a Aeropress",
       "Colombia Supremo Sugar Cane DECAF – karamel, sladkosť, plná chuť; Popoludnie a večer; bez kofeínu"
     ],
     fallback: {
-      automatic: "Do automatu je dobrý východiskový bod Créma Blend. Bez výraznej kyslosti.",
-      milk: "Do mlieka sa hodí Créma Blend. Zmes postavená na hustú krému a plné telo.",
-      filter: "Na filter siahnite po Colombia El Diviso Natural. Intenzívna, ovocná.",
-      decaf: "Bez kofeínu je v ponuke Colombia Supremo Sugar Cane DECAF. Kolumbijská arabika zbavená kofeínu prírodnou metódou z cukrovej trstiny — sladká a plná aj bez kofeínu.",
-      default: "Ak chcete začať istotou, dobrým smerom je Créma Blend. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+      automatic: "Créma Blend: hustá créma, plné telo, bez kyslosti. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      milk: "Créma Blend: hustá créma, plné telo, bez kyslosti. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      filter: "Ethiopia Berhanu Kurse: kvetinová aróma, ovocie, sviežosť. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      decaf: "Colombia Supremo Sugar Cane DECAF: karamel, sladkosť, plná chuť. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      default: "Créma Blend: hustá créma, plné telo, bez kyslosti. Aktuálnu cenu a dostupnosť overte v e-shope."
     }
   },
   coffeein: {
@@ -310,7 +308,6 @@ const DEMOS = {
   kavoholik: {
     brand: "Kávoholik", web: "https://kavoholik.sk/12-e-shop",
     products: [
-      "Espresso káva Jánošík 90/10 – čokoláda, oriešky, plná chuť; Automat a pákový kávovar",
       "Espresso káva Štúr 80/20 – horká čokoláda, hustá créma, vyšší kofeín; Pákový kávovar a moka",
       "Káva Štefánik – Brazília YB – sladká čokoláda, oriešky, jemnosť; Espresso a mliečne nápoje",
       "Etiópia Dimtu Guji washed – broskyňa, čierny čaj, ovocnosť; Filter aj espresso",
@@ -318,11 +315,11 @@ const DEMOS = {
       "Decaf na filter – Kolumbia Popayán – sladkosť, plná chuť, bez kofeínu; Filter kedykoľvek počas dňa; bez kofeínu"
     ],
     fallback: {
-      automatic: "Do automatu je dobrý východiskový bod Espresso káva Jánošík 90/10. Nízka, vyvážená.",
-      milk: "Do mlieka sa hodí Espresso káva Jánošík 90/10. Desatina robusty pridá telo aj krému.",
-      filter: "Na filter siahnite po Kolumbia Edwin Noreňa – Caturra Chiroso. Jasná, čajová.",
-      decaf: "Bez kofeínu je v ponuke Decaf na filter – Kolumbia Popayán. Bezkofeínová Kolumbia z oblasti Popayán, pražená na filter — bez kofeínu a bez toho, aby chuť ostala niekde vzadu.",
-      default: "Ak chcete začať istotou, dobrým smerom je Espresso káva Jánošík 90/10. Výber kávy potom zohľadní prípravu aj chuť, ktorú preferujete."
+      automatic: "Espresso káva Štúr 80/20: horká čokoláda, hustá créma, vyšší kofeín. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      milk: "Káva Štefánik – Brazília YB: sladká čokoláda, oriešky, jemnosť. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      filter: "Etiópia Dimtu Guji washed: broskyňa, čierny čaj, ovocnosť. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      decaf: "Decaf na filter – Kolumbia Popayán: sladkosť, plná chuť, bez kofeínu. Aktuálnu cenu a dostupnosť overte v e-shope.",
+      default: "Espresso káva Štúr 80/20: horká čokoláda, hustá créma, vyšší kofeín. Aktuálnu cenu a dostupnosť overte v e-shope."
     }
   }
 };

@@ -62,3 +62,19 @@ for(const [file,[filter,automatic]] of Object.entries(sentDemos)) test(file+': r
  assert.equal(rank({prep:'filter',taste:'fruity',drink:'black',acidity:'bright'})[0].product.id,filter);
  assert.equal(rank({prep:'automat',taste:'chocolate',drink:'black',acidity:'none'})[0].product.id,automatic);
 });
+test('October 16 availability and product corrections',()=>{
+ for(const [file,id] of [['coffeesheep-jolka-data.js','aceh'],['readyafter-jolka-data.js','burundi'],['grandroastery-jolka-data.js','eldiviso'],['kavoholik-jolka-data.js','janosik']]) {
+  const {rank}=load(file);
+  assert.ok(rank({taste:'bold',prep:'filter',acidity:'explore'}).every(r=>r.product.id!==id));
+  assert.ok(rank({taste:'chocolate',prep:'automat'}).every(r=>r.product.id!==id));
+ }
+ const ready=load('readyafter-jolka-data.js');
+ assert.equal(ready.rank({prep:'filter',drink:'black',taste:'fruity'})[0].product.id,'vietnam-supernatural');
+ assert.equal(ready.rank({prep:'filter',caffeine:'decaf'}).length,0);
+ const veronia=load('coffeeveronia-jolka-data.js').data;
+ assert.equal(veronia.products.find(p=>p.id==='espresso').price,'9,90 €');
+ assert.equal(load('kavoholik-jolka-data.js').data.products.find(p=>p.id==='stur').priceUnit,'250 g');
+ const api=fs.readFileSync('api/chat.js','utf8');
+ const blocks=api.slice(api.indexOf('const DEMOS=' )>=0?api.indexOf('const DEMOS='):api.indexOf('const DEMOS ='),api.indexOf('function setCors'));
+ for(const removed of ['Indonesia Aceh Gayo','Colombia El Diviso Natural','Burundi Rumanda Muraho Natural Anaerobic','Espresso káva Jánošík']) assert.ok(!blocks.includes(removed),removed+' must not be in server catalogue');
+});
