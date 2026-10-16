@@ -2,7 +2,7 @@ import {readFileSync,writeFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
 const root=fileURLToPath(new URL('../',import.meta.url));
-const brands=['coffeesheep','readyafter','grandroastery','kavoholik'];
+const brands=['coffeesheep','readyafter','coffeeveronia','grandroastery','kavoholik'];
 const path=resolve(root,'api/chat.js');
 let source=readFileSync(path,'utf8');
 for(const slug of brands){

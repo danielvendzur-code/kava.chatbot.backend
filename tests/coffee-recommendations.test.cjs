@@ -104,3 +104,27 @@ test('caffeine negation and milk restrictions remain explicit',()=>{
  assert.equal(parseCoffeeRequest('Nechcem kofeínovú kávu').caffeine,'decaf');
  assert.equal(parseCoffeeRequest('Nechcem kávu s mliekom').drink,'black');
 });
+
+test('today\'s source-backed automatic choices return an actual coffee',()=>{
+ for(const slug of ['coffeesheep','readyafter','grandroastery','kavoholik']){
+  const ranked=load(slug+'-jolka-data.js').rank({prep:'automat',drink:'black',acidity:'none',taste:'chocolate'});
+  assert.ok(ranked.length>0,slug+' must not pass by returning an empty list');
+  assert.equal(ranked[0].product.available,true);
+ }
+});
+test('Ready After includes every individual source coffee and recovers nested taste and preparation fields',()=>{
+ const {data,rank}=load('readyafter-jolka-data.js');
+ assert.equal(data.products.length,40);
+ for(const product of data.products) assert.ok(product.notes.length>0,product.name);
+ const moonlight=data.products.find(p=>p.id==='d91ecac075de');
+ assert.ok(moonlight.notes.includes('čučoriedky'));
+ assert.equal(moonlight.prep.automat,1);
+ assert.ok(rank({prep:'automat',drink:'milk',taste:'fruity'}).some(r=>r.product.id===moonlight.id));
+});
+test('Veronia filter coffees cannot be offered as espresso and unverified decaf stays excluded',()=>{
+ const {rank,data}=load('coffeeveronia-jolka-data.js');
+ for(const {product} of rank({prep:'lever'})) assert.ok(!['costarica','rwanda'].includes(product.id));
+ assert.ok(rank({prep:'moka'}).some(r=>r.product.id==='etiopia'));
+ assert.equal(rank({caffeine:'decaf'}).length,0);
+ assert.equal(data.products.find(p=>p.id==='santos').acidity,null);
+});

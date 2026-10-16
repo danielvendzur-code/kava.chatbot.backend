@@ -2,8 +2,8 @@
   "source": "https://www.grandroastery.sk/cerstvo-prazena-kava-1",
   "checkedOn": "2026-10-16",
   "status": "incomplete",
-  "demoCount": 6,
-  "demoActiveCount": 5,
+  "demoCount": 21,
+  "demoActiveCount": 16,
   "reportedCategoryItems": 30,
   "listingProductsRecovered": 30,
   "listingResultLabels": [],
@@ -662,5 +662,8 @@
       "redirectedOffProduct": false
     }
   ],
-  "browserQaComplete": false
+  "browserQaComplete": false,
+  "verifiedRecommendationCount": 16,
+  "extraPreparationSource": "https://www.grandroastery.sk/espresso",
+  "extraPreparationCondition": "Automatic espresso uses darker roast as specified by manufacturer category; product must belong to that category."
 }

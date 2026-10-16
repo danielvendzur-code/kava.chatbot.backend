@@ -2,8 +2,8 @@
   "source": "https://www.readyafter.sk/zrnkova-kava/",
   "checkedOn": "2026-10-16",
   "status": "incomplete",
-  "demoCount": 7,
-  "demoActiveCount": 6,
+  "demoCount": 40,
+  "demoActiveCount": 36,
   "reportedCategoryItems": 43,
   "listingProductsRecovered": 43,
   "listingResultLabels": [],
@@ -1397,5 +1397,7 @@
       ]
     }
   ],
-  "browserQaComplete": false
+  "browserQaComplete": false,
+  "verifiedRecommendationCount": 36,
+  "attributeReviewProgress": "All 40 product URLs re-read directly on 2026-10-16. Recovered nested taste fields and explicit preparation parameter rows. No missing taste profiles remain; browser QA still blocked."
 }

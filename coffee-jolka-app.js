@@ -138,7 +138,9 @@
     lastFocus: null,
     teaserDismissed: false,
     chatStarted: false,
-    chatPreferences: {}
+    chatPreferences: {},
+    advisorVersion: 0,
+    chatVersion: 0
   };
 
   const heroProduct = byId[demo.heroProductId] || products[0];
@@ -284,6 +286,9 @@
   }
 
   function resetChat() {
+    state.chatVersion += 1;
+    state.busy = false;
+    setChipsDisabled(false);
     state.chatPreferences = {};
     state.chatStarted = false;
     syncChatStarted();
@@ -413,6 +418,7 @@
 
   function select(value) {
     if (state.busy || state.stage !== 'questions') return;
+    const version = ++state.advisorVersion;
     state.busy = true;
     state.answers[steps[state.step].key] = value;
     $$('.option', advisor).forEach((button) => {
@@ -422,8 +428,10 @@
       button.setAttribute('aria-pressed', String(selected));
     });
     setTimeout(() => {
+      if (version !== state.advisorVersion) return;
       advisor.classList.add('is-leaving');
       setTimeout(() => {
+        if (version !== state.advisorVersion) return;
         if (state.step < steps.length - 1) state.step += 1;
         else state.stage = 'result';
         state.busy = false;
@@ -489,6 +497,8 @@
   }
 
   function resetAdvisor() {
+    state.advisorVersion += 1;
+    advisor.classList.remove('is-leaving');
     state.step = 0;
     state.answers = {};
     state.stage = 'questions';
@@ -594,6 +604,7 @@
   async function send(text) {
     const value = String(text ?? '').trim();
     if (!value || state.busy) return;
+    const version = state.chatVersion;
     startChat();
     state.busy = true;
     addMessage(esc(value), true);
@@ -613,6 +624,7 @@
     const patience = new Promise((resolve) => setTimeout(() => resolve(null), PATIENCE_MS));
 
     const raced = await Promise.race([pending, patience]);
+    if (version !== state.chatVersion) return;
     $('#typing')?.remove();
     const shown = raced || offline;
     const row = addMessage(shown);
@@ -626,7 +638,7 @@
 
     if (!raced) {
       const late = await pending;
-      if (late) {
+      if (late && version === state.chatVersion && row.isConnected) {
         row.querySelector('.bubble').innerHTML = late;
         historyEntry.content = late.replace(/<[^>]*>/g, '');
       }
@@ -648,6 +660,8 @@
   $('#entry').addEventListener('click', () => setMode('advisor'));
   $('#reset').addEventListener('click', () => { resetAdvisor(); resetChat(); seedChat(); setMode('advisor'); });
   $('#back').addEventListener('click', () => {
+    state.advisorVersion += 1;
+    advisor.classList.remove('is-leaving');
     if (state.stage !== 'questions') { state.stage = 'questions'; state.step = steps.length - 1; state.chosen = null; }
     else if (state.step > 0) state.step -= 1;
     state.busy = false;
