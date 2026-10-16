@@ -1,0 +1,669 @@
+{
+  "source": "https://www.grandroastery.sk/cerstvo-prazena-kava-1",
+  "checkedOn": "2026-10-16",
+  "status": "incomplete",
+  "demoCount": 21,
+  "demoActiveCount": 16,
+  "reportedCategoryItems": 30,
+  "listingProductsRecovered": 30,
+  "listingResultLabels": [],
+  "demoUrlsAbsentFromListing": [
+    "https://www.grandroastery.sk/p/colombia-el-diviso-natural"
+  ],
+  "products": [
+    {
+      "name": "Cascara - kávovníkový čaj",
+      "url": "https://www.grandroastery.sk/p/cascara-kavovy-caj",
+      "listingAvailability": "Skladom",
+      "listingPrice": "4,50 € 3,78 € bez DPH",
+      "kind": "other"
+    },
+    {
+      "name": "Kúpeľná káva 250g - špeciálna edícia",
+      "url": "https://www.grandroastery.sk/p/kupelna-kava-250g-specialna-edicia",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 9,10 € od 7,65 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Salvador Santa Ana",
+      "url": "https://www.grandroastery.sk/p/salvador-santa-ana",
+      "listingAvailability": "Vypredané",
+      "listingPrice": "od 9,10 € od 7,65 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Summer Espresso Blend",
+      "url": "https://www.grandroastery.sk/p/summer-espresso-blend",
+      "listingAvailability": "Vypredané",
+      "listingPrice": "od 7,90 € od 6,64 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Whisky barrel aged coffee 200g",
+      "url": "https://www.grandroastery.sk/p/whisky-barrel-aged-coffee-200g",
+      "listingAvailability": "Nie je na sklade",
+      "listingPrice": "14,90 € 12,52 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Indonesia Hendra Maulizar",
+      "url": "https://www.grandroastery.sk/p/indonesia-hendra-maulizar",
+      "listingAvailability": "Vypredané",
+      "listingPrice": "od 13,80 € od 11,60 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Honduras El Coyote",
+      "url": "https://www.grandroastery.sk/p/honduras-el-coyote",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 11 € od 9,24 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Ethiopia Berhanu Kurse",
+      "url": "https://www.grandroastery.sk/p/ethiopia-berhanu-kurse",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 13,80 € od 11,60 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Colombia El Diviso Carbonic Java",
+      "url": "https://www.grandroastery.sk/p/colombia-el-diviso-carbonic-java",
+      "listingAvailability": "Skladom",
+      "listingPrice": "18,20 € 15,29 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Brazil Cemorrado Choco",
+      "url": "https://www.grandroastery.sk/p/brazil-cemorrado-choco",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 10,90 € od 9,16 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Dominican Republic Barahona AA",
+      "url": "https://www.grandroastery.sk/p/dominican-republic-barahona-aa",
+      "listingAvailability": "Na sklade 1ks",
+      "listingPrice": "od 11 € od 9,24 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Mix espresso káv 5+1",
+      "url": "https://www.grandroastery.sk/p/mix-espresso-kav-5-1kg",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 45,70 € 54,80 € od 38,40 € bez DPH",
+      "kind": "bundle"
+    },
+    {
+      "name": "Barista Blend 5+1",
+      "url": "https://www.grandroastery.sk/p/barista-blend-5-1kg",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 46 € 55,20 € od 38,66 € bez DPH",
+      "kind": "bundle"
+    },
+    {
+      "name": "City Blend 5+1",
+      "url": "https://www.grandroastery.sk/p/city-blend-5-1kg",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 46 € 55,20 € od 38,66 € bez DPH",
+      "kind": "bundle"
+    },
+    {
+      "name": "Brazil Santos 5+1",
+      "url": "https://www.grandroastery.sk/p/brazil-santos-5-1kg",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 45,50 € 54,60 € od 38,24 € bez DPH",
+      "kind": "bundle"
+    },
+    {
+      "name": "Peru Lamas 5+1",
+      "url": "https://www.grandroastery.sk/p/peru-lamas-5-1kg",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 45,50 € 54,60 € od 38,24 € bez DPH",
+      "kind": "bundle"
+    },
+    {
+      "name": "Créma Blend 5+1",
+      "url": "https://www.grandroastery.sk/p/crema-blend-5-1kg",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 45,50 € 54,60 € od 38,24 € bez DPH",
+      "kind": "bundle"
+    },
+    {
+      "name": "Espresso Blend 5+1",
+      "url": "https://www.grandroastery.sk/p/espresso-blend-5-1kg",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 45,50 € 54,60 € od 38,24 € bez DPH",
+      "kind": "bundle"
+    },
+    {
+      "name": "Mexico Grandote maragogype",
+      "url": "https://www.grandroastery.sk/p/mexico-grandote-maragogype",
+      "listingAvailability": "Skladom",
+      "listingPrice": "12,15 € 13,50 € 10,21 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "3x1kg - najpredávanejšie espresso kávy",
+      "url": "https://www.grandroastery.sk/p/3kg-najpredavanejsie-kavy",
+      "listingAvailability": "Skladom",
+      "listingPrice": "75,47 € 88,80 € 63,42 € bez DPH",
+      "kind": "bundle"
+    },
+    {
+      "name": "Intensivo Blend",
+      "url": "https://www.grandroastery.sk/p/intensivo-blend",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 8,80 € od 7,39 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Espresso Blend",
+      "url": "https://www.grandroastery.sk/p/espresso-blend",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 9,10 € od 7,65 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Créma Blend",
+      "url": "https://www.grandroastery.sk/p/crema-blend",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 9,10 € od 7,65 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Peru Lamas",
+      "url": "https://www.grandroastery.sk/p/peru",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 9,10 € od 7,65 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Brazil Santos",
+      "url": "https://www.grandroastery.sk/p/brazil-santos",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 9,10 € od 7,65 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Barista Blend",
+      "url": "https://www.grandroastery.sk/p/barista-blend",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 9,20 € od 7,73 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Papua New Guinea Simbu",
+      "url": "https://www.grandroastery.sk/p/papua-new-guinea-simbu",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 9,90 € od 8,32 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Colombia La Secreta",
+      "url": "https://www.grandroastery.sk/p/colombia-la-secreta",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 9,80 € od 8,24 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "Colombia Supremo Sugar Cane DECAF - Bezkofeinová káva",
+      "url": "https://www.grandroastery.sk/p/colombia-decaf",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 10 € od 8,40 € bez DPH",
+      "kind": "coffee"
+    },
+    {
+      "name": "City Blend",
+      "url": "https://www.grandroastery.sk/p/city-blend",
+      "listingAvailability": "Skladom",
+      "listingPrice": "od 9,20 € od 7,73 € bez DPH",
+      "kind": "coffee"
+    }
+  ],
+  "outreachReady": false,
+  "inventoryVerified": true,
+  "missingIndividualCoffeeUrls": [
+    "https://www.grandroastery.sk/p/kupelna-kava-250g-specialna-edicia",
+    "https://www.grandroastery.sk/p/salvador-santa-ana",
+    "https://www.grandroastery.sk/p/summer-espresso-blend",
+    "https://www.grandroastery.sk/p/whisky-barrel-aged-coffee-200g",
+    "https://www.grandroastery.sk/p/indonesia-hendra-maulizar",
+    "https://www.grandroastery.sk/p/honduras-el-coyote",
+    "https://www.grandroastery.sk/p/colombia-el-diviso-carbonic-java",
+    "https://www.grandroastery.sk/p/dominican-republic-barahona-aa",
+    "https://www.grandroastery.sk/p/mexico-grandote-maragogype",
+    "https://www.grandroastery.sk/p/intensivo-blend",
+    "https://www.grandroastery.sk/p/peru",
+    "https://www.grandroastery.sk/p/brazil-santos",
+    "https://www.grandroastery.sk/p/barista-blend",
+    "https://www.grandroastery.sk/p/papua-new-guinea-simbu",
+    "https://www.grandroastery.sk/p/colombia-la-secreta",
+    "https://www.grandroastery.sk/p/city-blend"
+  ],
+  "missingCatalogueUrls": [
+    "https://www.grandroastery.sk/p/cascara-kavovy-caj",
+    "https://www.grandroastery.sk/p/kupelna-kava-250g-specialna-edicia",
+    "https://www.grandroastery.sk/p/salvador-santa-ana",
+    "https://www.grandroastery.sk/p/summer-espresso-blend",
+    "https://www.grandroastery.sk/p/whisky-barrel-aged-coffee-200g",
+    "https://www.grandroastery.sk/p/indonesia-hendra-maulizar",
+    "https://www.grandroastery.sk/p/honduras-el-coyote",
+    "https://www.grandroastery.sk/p/colombia-el-diviso-carbonic-java",
+    "https://www.grandroastery.sk/p/dominican-republic-barahona-aa",
+    "https://www.grandroastery.sk/p/mix-espresso-kav-5-1kg",
+    "https://www.grandroastery.sk/p/barista-blend-5-1kg",
+    "https://www.grandroastery.sk/p/city-blend-5-1kg",
+    "https://www.grandroastery.sk/p/brazil-santos-5-1kg",
+    "https://www.grandroastery.sk/p/peru-lamas-5-1kg",
+    "https://www.grandroastery.sk/p/crema-blend-5-1kg",
+    "https://www.grandroastery.sk/p/espresso-blend-5-1kg",
+    "https://www.grandroastery.sk/p/mexico-grandote-maragogype",
+    "https://www.grandroastery.sk/p/3kg-najpredavanejsie-kavy",
+    "https://www.grandroastery.sk/p/intensivo-blend",
+    "https://www.grandroastery.sk/p/peru",
+    "https://www.grandroastery.sk/p/brazil-santos",
+    "https://www.grandroastery.sk/p/barista-blend",
+    "https://www.grandroastery.sk/p/papua-new-guinea-simbu",
+    "https://www.grandroastery.sk/p/colombia-la-secreta",
+    "https://www.grandroastery.sk/p/city-blend"
+  ],
+  "detailsRead": 21,
+  "recommendationAttributeReviewComplete": false,
+  "productPageEvidence": [
+    {
+      "name": "Cascara - kávovníkový čaj",
+      "url": "https://www.grandroastery.sk/p/cascara-kavovy-caj",
+      "title": "Cascara - kávovníkový čaj",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/cascara-kavovy-caj",
+      "verification": "source-read",
+      "preparationEvidence": [],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Kúpeľná káva 250g - špeciálna edícia",
+      "url": "https://www.grandroastery.sk/p/kupelna-kava-250g-specialna-edicia",
+      "title": "Kúpeľná káva 250g - špeciálna edícia",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/kupelna-kava-250g-specialna-edicia",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Čokoládová, ",
+        "Spôsob prípravy Katarina Kocisova 03. 12. 2023, 19:46 Overená recenzia hviezda 1 hviezda 2 hviezda 3 hviez"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Salvador Santa Ana",
+      "url": "https://www.grandroastery.sk/p/salvador-santa-ana",
+      "title": "Salvador Santa Ana",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/salvador-santa-ana",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 1 400 - 1 600 mnm Chuť Horká , Sladká druh 100% arabica Odroda red bourbon",
+        "Spôsob prípravy Nadmorská výška 1 400 - 1 600 mnm Arabika vs. Robusta Rozšírené názvy, ktoré poznajú asi v"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Summer Espresso Blend",
+      "url": "https://www.grandroastery.sk/p/summer-espresso-blend",
+      "title": "Summer Espresso Blend",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/summer-espresso-blend",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Čokoládová , Vyvážená druh Blend Oblasť Južná Amerika , Afrika horkosť acidita chuťov",
+        "Spôsob prípravy Nicol Jurková 17. 02. 2026, 18:17 Overená recenzia hviezda 1 hviezda 2 hviezda 3 hviezda 4"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Whisky barrel aged coffee 200g",
+      "url": "https://www.grandroastery.sk/p/whisky-barrel-aged-coffee-200g",
+      "title": "Whisky barrel aged coffee 200g",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/whisky-barrel-aged-coffee-200g",
+      "verification": "source-read",
+      "preparationEvidence": [],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Indonesia Hendra Maulizar",
+      "url": "https://www.grandroastery.sk/p/indonesia-hendra-maulizar",
+      "title": "Indonesia Hendra Maulizar",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/indonesia-hendra-maulizar",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 1 400 - 1 600 mnm Farma Gayo Avatara Región Sumatra, Aceh Cupping score 88"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Honduras El Coyote",
+      "url": "https://www.grandroastery.sk/p/honduras-el-coyote",
+      "title": "Honduras El Coyote",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/honduras-el-coyote",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 1500 mnm Okres Guajiquiro Región La Paz Chuť Čokoládová , Sladká , Vyvážen",
+        "Spôsob prípravy Nadmorská výška 1500 mnm Okres Guajiquiro Región La Paz Arabika vs. Robusta Rozšírené názv"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Ethiopia Berhanu Kurse",
+      "url": "https://www.grandroastery.sk/p/ethiopia-berhanu-kurse",
+      "title": "Ethiopia Berhanu Kurse",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/ethiopia-berhanu-kurse",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 2 200 - 2300 mnm Farma Gotiti Región Yirgacheffe Cupping score 87b Chuť Ov",
+        "Spôsob prípravy Nadmorská výška 2 200 - 2300 mnm Farma Gotiti Región Yirgacheffe Cupping score 87b Arabika"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Colombia El Diviso Carbonic Java",
+      "url": "https://www.grandroastery.sk/p/colombia-el-diviso-carbonic-java",
+      "title": "Colombia El Diviso Carbonic Java",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/colombia-el-diviso-carbonic-java",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 1800 mnm Farma El Diviso Okres Pitalito Región Huila Cupping score 87 Prod"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Brazília Cemorrado Choco",
+      "url": "https://www.grandroastery.sk/p/brazil-cemorrado-choco",
+      "title": "Brazil Cemorrado Choco",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/brazil-cemorrado-choco",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 850 - 1250 mnm Cupping score 85 Chuť Čokoládová , Sladká druh 100% arabica",
+        "Spôsob prípravy Nadmorská výška 850 - 1250 mnm Cupping score 85 Patrik Pancurák 05. 05. 2026, 15:45 Overen"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Dominican Republic Barahona AA",
+      "url": "https://www.grandroastery.sk/p/dominican-republic-barahona-aa",
+      "title": "Dominican Republic Barahona AA",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/dominican-republic-barahona-aa",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 850 - 1 200 mnm Okres Barahona Región San José de Ocoa Chuť Čokoládová , H",
+        "Spôsob prípravy Nadmorská výška 850 - 1 200 mnm Okres Barahona Región San José de Ocoa Tomáš Iľko 09. 04. "
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Mix espresso káv 5+1",
+      "url": "https://www.grandroastery.sk/p/mix-espresso-kav-5-1kg",
+      "title": "Mix espresso káv 5+1",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/mix-espresso-kav-5-1kg",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Čokoládová , Horká , Vyvážená druh 100% arabica , Blend Oblasť Južná Amerika , Ázia ,",
+        "Spôsob prípravy Arabika vs. Robusta Rozšírené názvy, ktoré poznajú asi všetci Arabika (Coffea arabica) a R"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Barista Blend 5+1",
+      "url": "https://www.grandroastery.sk/p/barista-blend-5-1kg",
+      "title": "Barista Blend 5+1",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/barista-blend-5-1kg",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Čokoládová , Vyvážená druh Blend Oblasť Južná Amerika , Ázia horkosť acidita chuťový ",
+        "Spôsob prípravy Michaela Trojanovičová 02. 07. 2026, 20:42 Overená recenzia hviezda 1 hviezda 2 hviezda 3 "
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "City Blend 5+1",
+      "url": "https://www.grandroastery.sk/p/city-blend-5-1kg",
+      "title": "City Blend 5+1",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/city-blend-5-1kg",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Ovocná , Čokoládová druh Blend Oblasť Južná Amerika , Afrika horkosť acidita chuťový ",
+        "Spôsob prípravy frankie 29. 10. 2025, 10:31 Overená recenzia hviezda 1 hviezda 2 hviezda 3 hviezda 4 hviez"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Brazil Santos 5+1",
+      "url": "https://www.grandroastery.sk/p/brazil-santos-5-1kg",
+      "title": "Brazil Santos 5+1",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/brazil-santos-5-1kg",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 1 100 mnm Chuť Čokoládová , Horká , Sladká druh 100% arabica Oblasť Južná ",
+        "Spôsob prípravy Nadmorská výška 1 100 mnm Lýdia Solin 23. 11. 2025, 09:51 Overená recenzia hviezda 1 hviez"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Peru Lamas 5+1",
+      "url": "https://www.grandroastery.sk/p/peru-lamas-5-1kg",
+      "title": "Peru Lamas 5+1",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/peru-lamas-5-1kg",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Korenistá , Horká druh 100% arabica Oblasť Južná Amerika horkosť acidita chuťový prof",
+        "Spôsob prípravy Odoslať Zdieľať Tweet Pin It Káva na espresso Káva na filter Čaj Príslušenstvo"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Créma Blend 5+1",
+      "url": "https://www.grandroastery.sk/p/crema-blend-5-1kg",
+      "title": "Créma Blend 5+1",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/crema-blend-5-1kg",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Čokoládová , Horká druh Blend Oblasť Južná Amerika , Ázia horkosť acidita chuťový pro",
+        "Spôsob prípravy Arabika vs. Robusta Rozšírené názvy, ktoré poznajú asi všetci Arabika (Coffea arabica) a R"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Espresso Blend 5+1",
+      "url": "https://www.grandroastery.sk/p/espresso-blend-5-1kg",
+      "title": "Espresso Blend 5+1",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/espresso-blend-5-1kg",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Čokoládová , Horká druh Blend Oblasť Južná Amerika , Ázia horkosť acidita chuťový pro",
+        "Spôsob prípravy Arabika vs. Robusta Rozšírené názvy, ktoré poznajú asi všetci Arabika (Coffea arabica) a R"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Mexico Grandote maragogype",
+      "url": "https://www.grandroastery.sk/p/mexico-grandote-maragogype",
+      "title": "Mexico Grandote maragogype - Gramáž: 200g",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/mexico-grandote-maragogype",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 1250 - 1600 Farma Finca Las Chicharras Okres San Martin Región Chiapas Cup"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "3x1kg - najpredávanejšie espresso kávy",
+      "url": "https://www.grandroastery.sk/p/3kg-najpredavanejsie-kavy",
+      "title": "3x1kg - najpredávanejšie espresso kávy",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/3kg-najpredavanejsie-kavy",
+      "verification": "source-read",
+      "preparationEvidence": [],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Intensivo Blend",
+      "url": "https://www.grandroastery.sk/p/intensivo-blend",
+      "title": "Intensivo Blend",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/intensivo-blend",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Čokoládová , Horká , Intenzívna druh Blend Oblasť Južná Amerika, ",
+        "Spôsob prípravy Janka Grznárová 13. 04. 2026, 17:34 Overená recenzia hviezda 1 hviezda 2 hviezda 3 hviezda"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Espresso Blend",
+      "url": "https://www.grandroastery.sk/p/espresso-blend",
+      "title": "Espresso Blend",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/espresso-blend",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Čokoládová , Horká druh Blend Oblasť Južná Amerika , Ázia horkosť acidita chuťový pro",
+        "Spôsob prípravy Peter Kisely 30. 01. 2026, 17:44 Overená recenzia hviezda 1 hviezda 2 hviezda 3 hviezda 4 "
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Créma Blend",
+      "url": "https://www.grandroastery.sk/p/crema-blend",
+      "title": "Créma Blend",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/crema-blend",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Čokoládová , Horká druh Blend Oblasť Južná Amerika , Ázia horkosť acidita chuťový pro",
+        "Spôsob prípravy DDerek 15. 11. 2025, 17:04 Overená recenzia hviezda 1 hviezda 2 hviezda 3 hviezda 4 hviezd"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Peru Lamas",
+      "url": "https://www.grandroastery.sk/p/peru",
+      "title": "Peru Lamas",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/peru",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Korenistá , Horká druh 100% arabica Oblasť Južná Amerika horkosť acidita chuťový prof",
+        "Spôsob prípravy Valer Weiss 01. 10. 2025, 08:55 Overená recenzia hviezda 1 hviezda 2 hviezda 3 hviezda 4 h"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Brazil Santos",
+      "url": "https://www.grandroastery.sk/p/brazil-santos",
+      "title": "Brazil Santos",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/brazil-santos",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 1 100 mnm Chuť Čokoládová , Horká , Sladká druh 100% arabica Oblasť Južná ",
+        "Spôsob prípravy Nadmorská výška 1 100 mnm Martin Semančik 04. 10. 2026, 18:45 Overená recenzia hviezda 1 h"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Barista Blend",
+      "url": "https://www.grandroastery.sk/p/barista-blend",
+      "title": "Barista Blend",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/barista-blend",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Čokoládová , Vyvážená druh Blend Oblasť Južná Amerika , Ázia horkosť acidita chuťový ",
+        "Spôsob prípravy Janka Kundratová 16. 04. 2026, 17:32 Overená recenzia hviezda 1 hviezda 2 hviezda 3 hviezd"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Papua New Guinea Simbu",
+      "url": "https://www.grandroastery.sk/p/papua-new-guinea-simbu",
+      "title": "Papua New Guinea Simbu",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/papua-new-guinea-simbu",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 1 600 - 1 850 mnm Okres Eastern Highlands Región Simbu Cupping score 83,25"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Colombia La Secreta",
+      "url": "https://www.grandroastery.sk/p/colombia-la-secreta",
+      "title": "Colombia La Secreta",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/colombia-la-secreta",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 1 700 - 2 050 mnm Okres Ciudad Bolivar Región Antioquia Chuť Čokoládová , ",
+        "Spôsob prípravy Nadmorská výška 1 700 - 2 050 mnm Okres Ciudad Bolivar Región Antioquia Domenico 19. 02. 2"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Colombia Supremo Sugar Cane DECAF",
+      "url": "https://www.grandroastery.sk/p/colombia-decaf",
+      "title": "Colombia Supremo Sugar Cane DECAF - Bezkofeinová káva",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/colombia-decaf",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Spôsob odstránenia kofeínu Sugar Cane Decaf Región Huila Cupping score 86+ Chuť Sladká , V",
+        "Spôsob prípravy Spôsob odstránenia kofeínu Sugar Cane Decaf Región Huila Cupping score 86+ Daniel Weiss 12"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "City Blend",
+      "url": "https://www.grandroastery.sk/p/city-blend",
+      "title": "City Blend",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/city-blend",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Chuť Ovocná , Čokoládová druh Blend Oblasť Južná Amerika , Afrika horkosť acidita chuťový ",
+        "Spôsob prípravy Emília Matiašová 08. 04. 2026, 08:24 Overená recenzia hviezda 1 hviezda 2 hviezda 3 hviezd"
+      ],
+      "redirectedOffProduct": false
+    },
+    {
+      "name": "Colombia El Diviso Natural",
+      "url": "https://www.grandroastery.sk/p/colombia-el-diviso-natural",
+      "title": "Colombia El Diviso Natural",
+      "status": 200,
+      "finalUrl": "https://www.grandroastery.sk/p/colombia-el-diviso-natural",
+      "verification": "source-read",
+      "preparationEvidence": [
+        "Spôsob prípravy Nadmorská výška 1800 mnm Farma El Diviso Okres Pitalito Región Huila Cupping score 88 Prod"
+      ],
+      "redirectedOffProduct": false
+    }
+  ],
+  "browserQaComplete": false,
+  "verifiedRecommendationCount": 16,
+  "extraPreparationSource": "https://www.grandroastery.sk/espresso",
+  "extraPreparationCondition": "Automatic espresso uses darker roast as specified by manufacturer category; product must belong to that category."
+}

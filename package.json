@@ -4,7 +4,9 @@
   "version": "8.0.0",
   "scripts": {
     "test:final-feedback": "playwright test tests/final-user-feedback.spec.mjs tests/release-repair.spec.mjs --reporter=line --workers=1",
-    "test:browser": "node scripts/run-browser-tests.mjs"
+    "test:browser": "node scripts/run-browser-tests.mjs",
+    "audit:coffee-catalogs": "node scripts/audit-coffee-catalogs.mjs",
+    "sync:coffee-chat-catalogs": "node scripts/sync-coffee-chat-catalogs.mjs"
   },
   "devDependencies": {
     "@playwright/test": "1.55.0"

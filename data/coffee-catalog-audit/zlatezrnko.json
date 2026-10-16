@@ -1,0 +1,63 @@
+{
+  "source": "https://zlatezrnko.sk/obchod/",
+  "checkedOn": "2026-10-16",
+  "status": "blocked-partial",
+  "demoCount": 6,
+  "demoActiveCount": 6,
+  "reportedCategoryItems": 112,
+  "listingProductsRecovered": 0,
+  "listingResultLabels": [],
+  "demoUrlsAbsentFromListing": [
+    "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-emilia/",
+    "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-india/",
+    "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-etiopia/",
+    "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-kava-na-filter/",
+    "https://zlatezrnko.sk/obchod/kava-smrtak/",
+    "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-decaf-kolumbia-200g-bezkofeinova-100-arabika/"
+  ],
+  "products": [],
+  "outreachReady": false,
+  "limitation": "Direct catalogue request returned HTTP 403. Public search retrieval supplies category-level evidence but not a complete current product inventory.",
+  "inventoryVerified": false,
+  "missingIndividualCoffeeUrls": [],
+  "missingCatalogueUrls": [],
+  "productPageEvidence": [
+    {
+      "name": "Emília – „JEMNÁ“",
+      "url": "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-emilia/",
+      "verification": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "India – „ČOKOLÁDOVÁ“",
+      "url": "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-india/",
+      "verification": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "Etiópia – „OVOCNÁ“",
+      "url": "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-etiopia/",
+      "verification": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "Káva na filter – Tanzánia",
+      "url": "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-kava-na-filter/",
+      "verification": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "Smrťák – „SILNÝ“",
+      "url": "https://zlatezrnko.sk/obchod/kava-smrtak/",
+      "verification": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "Decaf Kolumbia",
+      "url": "https://zlatezrnko.sk/obchod/kava-zlate-zrnko-decaf-kolumbia-200g-bezkofeinova-100-arabika/",
+      "verification": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "browserQaComplete": false
+}

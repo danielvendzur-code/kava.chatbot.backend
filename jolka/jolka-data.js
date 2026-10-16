@@ -96,7 +96,7 @@ window.JOLKA = (() => {
       acidity: 0,
       acidityNote: 'Pražiareň uvádza minimálnu až žiadnu aciditu.',
       bestFor: 'Automat a väčšia spotreba',
-      why: 'Blend postavený priamo na automat. Viac kofeínu, plné telo a krémová textúra, ktorá zvládne aj desiatu kávu za deň.',
+      why: 'Blend postavený priamo na automat. Plné telo a krémová textúra na prípravu v automatickom kávovare.',
       taste: { chocolate: 0.95, balanced: 0.6, fruity: 0, bold: 0.8 },
       prep: { automat: 1, lever: 0.75, moka: 0.6, filter: 0.15 },
       drink: { black: 0.7, milk: 1, both: 1 },
