@@ -69,8 +69,7 @@
         total += WEIGHTS.acidity * (product.explore ?? 0);
       } else {
         const target = ACIDITY_TARGET[answers.acidity];
-        const acidity = Number.isFinite(product.acidity) ? product.acidity : 1;
-        total += WEIGHTS.acidity * (1 - Math.abs(target - acidity) / 3);
+        if (Number.isFinite(product.acidity)) total += WEIGHTS.acidity * (1 - Math.abs(target - product.acidity) / 3);
       }
     }
     return total;
@@ -85,7 +84,7 @@
 
   // Suitability is a prerequisite; taste scores cannot override it.
   function eligible(product, answers) {
-    if (product.available === false) return false;
+    if (product.available === false || product.recommendationReady === false) return false;
     if (answers.caffeine === 'decaf' ? !product.decaf : product.decaf) return false;
     if (answers.prep && (product.prep?.[answers.prep] ?? 0) < 0.6) return false;
     if (answers.drink && (product.drink?.[answers.drink] ?? 0) < 0.6) return false;
@@ -105,20 +104,21 @@
     if (answers.taste && (product.taste?.[answers.taste] ?? 0) < 0.6) {
       parts.push('Požadovaná chuť nie je presná zhoda; uprednostnili sme vhodnosť prípravy a vaše obmedzenia.');
     }
-    parts.push(`Chuťový profil: ${product.notes.join(', ')}.`);
+    if (product.notes.length) parts.push(`Chuťový profil: ${product.notes.join(', ')}.`);
     return parts.join(' ');
   }
 
   function parseCoffeeRequest(text) {
     const query = String(text ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
     const answers = {};
-    if (/nechcem.{0,12}(bezkofe|decaf)|s kofein|\bkofeinov/.test(query)) answers.caffeine = 'regular';
+    if (/(?:nechcem|nemam rad|nepotrebujem).{0,24}\bkofeinov/.test(query)) answers.caffeine = 'decaf';
+    else if (/(?:nechcem|nemam rad|nepotrebujem).{0,24}(bez\s*kofe|bezkofe|decaf)|s kofein|\bkofeinov/.test(query)) answers.caffeine = 'regular';
     else if (/bez\s*kofe|bezkofe|decaf/.test(query)) answers.caffeine = 'decaf';
     if (/automat/.test(query)) answers.prep = 'automat';
     else if (/filter|v60|aeropress|chemex|prekvapk/.test(query)) answers.prep = 'filter';
     else if (/moka/.test(query)) answers.prep = 'moka';
     else if (/espresso|pako/.test(query)) answers.prep = 'lever';
-    if (/bez mlie|ciernu|cierna/.test(query)) answers.drink = 'black';
+    if (/bez mlie|(?:nechcem|nepijem).{0,16}mlie|ciernu|cierna/.test(query)) answers.drink = 'black';
     else if (/mlie|cappucc|latte|flat white/.test(query)) answers.drink = 'milk';
     if (/nekys|bez kys|malo kys|nizk.{0,8}acid|nizs.{0,8}acid|nechcem.{0,16}kys|nemam rad.{0,16}kys/.test(query)) answers.acidity = 'none';
     else if (/vyrazn.{0,12}acid|kysl.{0,8}chut|sviez/.test(query)) answers.acidity = 'bright';
@@ -160,7 +160,7 @@
           <h1>${esc(demo.heroTitle)}</h1>
           <p class="hero__lead">${esc(demo.heroLead)}</p>
           <div class="benefits">
-            <article class="benefit"><span class="benefit__num">01</span><div><b>Menej váhania</b><span>Zákazník dostane jednu konkrétnu kávu, nie zoznam.</span></div></article>
+            <article class="benefit"><span class="benefit__num">01</span><div><b>Menej váhania</b><span>Poradca odporučí kávu podľa odpovedí a overených parametrov.</span></div></article>
             <article class="benefit"><span class="benefit__num">02</span><div><b>Menej otázok</b><span>Chuť, aciditu aj prípravu vysvetlí poradca.</span></div></article>
             <article class="benefit"><span class="benefit__num">03</span><div><b>Priamy nákupný krok</b><span>Odporúčanie končí konkrétnym produktom.</span></div></article>
           </div>
@@ -185,7 +185,7 @@
         <ul class="perks">
           <li><b>Poradí 24/7</b><span>Zákazník dostane odpoveď aj mimo otváracích hodín.</span></li>
           <li><b>Odbúra otázky</b><span>Chuť, pôvod a prípravu vysvetlí priamo v chate.</span></li>
-          <li><b>Zjednoduší výber</b><span>Štyri odpovede skončia jednou konkrétnou kávou.</span></li>
+          <li><b>Zjednoduší výber</b><span>Štyri otázky pomôžu nájsť vhodnú kávu z overenej ponuky.</span></li>
           <li><b>Vedie k nákupu</b><span>Výsledok má priamy odkaz na detail produktu.</span></li>
         </ul>
         <p class="page__by">Návrh pripravil <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a> · ${esc(demo.ownerCredit)}</p>
@@ -439,7 +439,7 @@
     const ranked = rank(state.answers);
     const best = ranked[0];
     if (!best) {
-      advisor.innerHTML = `<div class="result"><span class="result__badge">Skúsme upraviť výber</span><div class="question"><h2>Presnú zhodu tu nemáme</h2></div><div class="why"><p>V katalógu tejto ukážky nemáme kávu, ktorá spĺňa zvolenú prípravu, nápoj a aciditu súčasne. Nebudeme vám odporúčať nevhodnú. Skúste zmeniť jednu odpoveď alebo sa opýtajte v chate.</p></div></div>`;
+      advisor.innerHTML = `<div class="result"><span class="result__badge">Skúsme upraviť výber</span><div class="question"><h2>Presnú zhodu tu nemáme</h2></div><div class="why"><p>Z overených údajov tejto ukážky nevieme potvrdiť kávu, ktorá spĺňa zvolenú prípravu, nápoj a aciditu súčasne. Skúste zmeniť jednu odpoveď alebo sa opýtajte v chate.</p></div></div>`;
       advisorFoot.hidden = false;
       advisorFoot.innerHTML = '<button class="cta" type="button" id="restart">Upraviť odpovede</button>';
       $('#restart').addEventListener('click', resetAdvisor);
@@ -448,19 +448,20 @@
     const current = state.chosen ? ranked.find((entry) => entry.product.id === state.chosen) || best : best;
     const product = current.product;
     const alternative = ranked.find((entry) => entry.product.id !== product.id);
-    const acidityLabel = acidityScale[product.acidity] || acidityScale[1] || 'jemná';
+    const acidityKnown = Number.isFinite(product.acidity);
+    const acidityLabel = product.acidityDisplay || (acidityKnown ? acidityScale[product.acidity] : 'neuvedená');
 
     advisor.innerHTML = `
       <div class="result">
         <span class="result__badge">${product.id === best.product.id ? 'Odporúčame pre vás' : 'Vhodná alternatíva'}</span>
         <div class="result__hero">
           <img class="result__photo" src="${esc(product.photo)}" alt="${esc(product.name)}" width="132" height="178">
-          <div class="result__headline"><h2>${esc(product.name)}</h2><p>${esc(product.line)}</p><span class="result__price"><b>${esc(product.price)}</b><span>/ ${esc(product.priceUnit)}</span></span><small class="result__weights">${esc(product.weights)}${product.priceFrom ? ` · ${esc(product.priceFrom)}` : ''}${product.roast ? ` · ${esc(product.roast)}` : ''}</small></div>
+          <div class="result__headline"><h2>${esc(product.name)}</h2><p>${esc(product.line)}</p><span class="result__price">${product.price ? `<b>${esc(product.price)}</b><span>/ ${esc(product.priceUnit)}</span>` : '<b>Cena v e-shope</b>'}</span><small class="result__weights">${esc(product.weights)}${product.priceFrom ? ` · ${esc(product.priceFrom)}` : ''}${product.roast ? ` · ${esc(product.roast)}` : ''}</small></div>
         </div>
         <div class="result__body">
           <div class="notes">${product.notes.map((note) => `<span>${esc(note)}</span>`).join('')}</div>
           <div class="why"><b>Prečo práve táto</b><p>${esc(recommendationReason(product, state.answers))}</p></div>
-          <div class="facts"><div class="fact"><b>${icons.drop} Acidita</b><span class="fact__value">${dots(product.acidity)} ${esc(acidityLabel)}</span></div><div class="fact"><b>${icons.cup} Príprava</b><span class="fact__value">${esc(product.bestFor)}</span></div></div>
+          <div class="facts"><div class="fact"><b>${icons.drop} Acidita</b><span class="fact__value">${acidityKnown && !product.acidityDisplay ? dots(product.acidity) : ''} ${esc(acidityLabel)}</span></div><div class="fact"><b>${icons.cup} Príprava</b><span class="fact__value">${esc(product.bestFor)}</span></div></div>
           <p class="acidity-note">${esc(product.acidityNote)}</p>
           ${product.bulk ? `<div class="bulk"><b>${esc(product.bulk.label)}</b><span>${esc(product.bulk.saving)}</span></div>` : ''}
           ${alternative ? `<div class="alt"><span>Ak by ste chceli inú</span><button class="alt__card" type="button" data-product="${esc(alternative.product.id)}"><img src="${esc(alternative.product.photo)}" alt="" loading="lazy" width="42" height="58"><div><b>${esc(alternative.product.name)}</b><small>${esc(alternative.product.notes.slice(0, 2).join(' · '))}</small></div>${icons.arrow}</button></div>` : ''}
@@ -517,41 +518,49 @@
     requestAnimationFrame(() => { chatLog.scrollTop = chatLog.scrollHeight; });
   }
 
+  function namedProducts(text) {
+    const normal = (value) => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const query = normal(text);
+    const exact = products.filter((product) => query.includes(normal(product.name)));
+    if (exact.length) return exact;
+    const ignored = new Set(['kolko','stoji','cena','ceny','porovnaj','rozdiel','povod','odkial','chcem','kavu','kava','kavy','espresso','filter','arabica','arabika','coffee','blend', ...normal(brand.name).split(/[^a-z0-9]+/)]);
+    const words = query.split(/[^a-z0-9]+/).filter((word) => word.length >= 4 && !ignored.has(word));
+    return products.filter((product) => normal(product.name).split(/[^a-z0-9]+/).some((word) => words.includes(word)));
+  }
+
   function fallbackAnswer(text) {
-    const query = String(text ?? '').toLocaleLowerCase('sk');
+    const query = String(text ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const named = namedProducts(text);
+    const clarify = () => named.length
+      ? `Ktorú konkrétnu kávu myslíte: ${esc(named.slice(0, 3).map((product) => product.name).join(', '))}?`
+      : 'Napíšte, o ktorú konkrétnu kávu máte záujem, aby som uviedol správne údaje.';
+    // Factual questions take precedence over words such as espresso in a product name.
+    if (/cena|ceny|cenu|kolko|stoj|draho|lacn/.test(query)) {
+      if (named.length !== 1) return clarify();
+      const product = named[0];
+      return product.price
+        ? `<b>${esc(product.name)}</b>: ${esc(product.price)} / ${esc(product.priceUnit)}. Aktuálnu cenu a dostupné balenia overíte v e-shope.`
+        : `Aktuálnu cenu kávy <b>${esc(product.name)}</b> nemám overenú. Nájdete ju na produktovej stránke v e-shope.`;
+    }
+    if (/odkial|povod|krajin|pochadz|farm/.test(query)) {
+      if (named.length !== 1) return clarify();
+      const product = named[0];
+      const origin = product.origin || (!product.sourceEvidence ? product.line : null);
+      return origin
+        ? `<b>${esc(product.name)}</b>: ${esc(origin)}. Podrobnosti o pôvode overíte pri produkte v e-shope.`
+        : `Podrobný pôvod kávy <b>${esc(product.name)}</b> nemám v overených údajoch. Overte ho na produktovej stránke.`;
+    }
+    if (/porovna|rozdiel|ktora z|ktoru z/.test(query)) {
+      if (named.length !== 2) return clarify();
+      return named.map((product) => `<b>${esc(product.name)}</b>: ${esc(product.notes.length ? product.notes.join(', ') : 'chuťový profil nemám overený')}. ${esc(product.bestFor)}.`).join(' ');
+    }
     const parsed = parseCoffeeRequest(text);
     const constraints = Object.keys(parsed).length ? { ...state.chatPreferences, ...parsed } : {};
     if (Object.keys(constraints).length) {
       const best = rank(constraints)[0];
-      if (!best) return 'V katalógu tejto ukážky nemám kávu, ktorá spĺňa všetky tieto požiadavky. Ktorú z nich môžeme upraviť?';
+      if (!best) return 'Z overených údajov tejto ukážky neviem potvrdiť kávu, ktorá spĺňa všetky tieto požiadavky. Ktorú z nich môžeme upraviť?';
       const product = best.product;
       return `<b>${esc(product.name)}</b>. ${esc(recommendationReason(product, constraints))} <a href="${esc(product.url)}" target="_blank" rel="noopener noreferrer">Pozrieť produkt a aktuálnu cenu</a>.`;
-    }
-
-    /* What is left used to be answered with "Rád vám poradím konkrétnu kávu",
-       which names nothing and reads to an owner as if the advisor knows only
-       the four questions it was given. The questions every shop is asked are
-       answered from this roastery's own catalogue instead. */
-    if (/odkia|pôvod|povod|pestuj|farm|krajin|plantáž|plantaz/.test(query)) {
-      const named = products.filter((item) => item.line).slice(0, 3)
-        .map((item) => `${item.name} (${item.line})`);
-      if (named.length) {
-        return `Pôvod je uvedený pri každej káve — napríklad ${esc(named.join(', '))}. `
-          + 'Napíšte, akú chuť hľadáte, a vyberiem jednu konkrétnu.';
-      }
-    }
-    if (/cena|ceny|cenu|koľko|kolko|stoj|draho|lacn/.test(query)) {
-      const weights = heroProduct.weights ? ` (${heroProduct.weights})` : '';
-      return `Ceny sa líšia podľa gramáže — <b>${esc(heroProduct.name)}</b> je `
-        + `${esc(heroProduct.price)} / ${esc(heroProduct.priceUnit || 'balenie')}${esc(weights)}. `
-        + 'Cez krátky výber vyberiem tú, ktorá vám sadne, aj s cenou.';
-    }
-    if (/porovna|rozdiel|lepš|leps|ktorá|ktora|ktorú|ktoru/.test(query)) {
-      const named = products.filter((product) => query.includes(product.name.toLocaleLowerCase('sk')));
-      const [first, second] = named;
-      if (first && second) {
-        return `<b>${esc(first.name)}</b>: ${esc(first.why)} <b>${esc(second.name)}</b>: ${esc(second.why)}`;
-      }
     }
     return 'Napíšte, ako kávu pripravujete, akú chuť hľadáte a či ju chcete bez kofeínu. Potom odporučím konkrétnu kávu z katalógu tejto ukážky.';
   }
@@ -599,7 +608,7 @@
        path where the visitor asks and gets nothing back. */
     state.chatPreferences = { ...state.chatPreferences, ...parseCoffeeRequest(value) };
     const offline = fallbackAnswer(value);
-    const constrained = Object.keys(parseCoffeeRequest(value)).length > 0;
+    const constrained = Object.keys(parseCoffeeRequest(value)).length > 0 || /cena|ceny|cenu|koľko|kolko|stoj/.test(value.toLocaleLowerCase('sk'));
     const pending = constrained ? Promise.resolve(offline) : requestReply(value).catch(() => '');
     const patience = new Promise((resolve) => setTimeout(() => resolve(null), PATIENCE_MS));
 

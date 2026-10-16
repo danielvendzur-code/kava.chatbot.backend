@@ -1,0 +1,67 @@
+{
+  "source": "https://www.coffeeveronia.sk/kava/",
+  "checkedOn": "2026-10-16",
+  "status": "blocked-partial",
+  "demoCount": 6,
+  "demoActiveCount": 6,
+  "reportedCategoryItems": null,
+  "listingProductsRecovered": 0,
+  "listingResultLabels": [],
+  "demoUrlsAbsentFromListing": [
+    "https://www.coffeeveronia.sk/bean-s-friends-brazil-signature-espresso-zrnkova-kava-200g/",
+    "https://www.coffeeveronia.sk/bean--s-friends-brazil-santos-exclusive-zrnkova-kava-200g/",
+    "https://www.coffeeveronia.sk/zrnkova-kava-etiopia--250g/",
+    "https://www.coffeeveronia.sk/veronia-costa-rica-yellow-honey-200g--zrnkova-vyberova-kava/",
+    "https://www.coffeeveronia.sk/rwanda-limitovana-edicia-arabica--zrnkova-kava--200g/",
+    "https://www.coffeeveronia.sk/bezkofeinova-kava-mexiko-arabica-zrnkova-kava-250g-/"
+  ],
+  "products": [],
+  "outreachReady": false,
+  "limitation": "Direct catalogue request returned HTTP 403. Public search retrieval supplies category-level evidence but not a complete current product inventory. Public page snapshots disagree (113 versus 117); do not treat either as a confirmed live unique-coffee count.",
+  "categoryCountObservations": [
+    113,
+    117
+  ],
+  "inventoryVerified": false,
+  "missingIndividualCoffeeUrls": [],
+  "missingCatalogueUrls": [],
+  "productPageEvidence": [
+    {
+      "name": "Brazil Signature Espresso 200 g",
+      "url": "https://www.coffeeveronia.sk/bean-s-friends-brazil-signature-espresso-zrnkova-kava-200g/",
+      "verification": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "Brazil Santos Exclusive 200 g",
+      "url": "https://www.coffeeveronia.sk/bean--s-friends-brazil-santos-exclusive-zrnkova-kava-200g/",
+      "verification": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "Etiópia 250 g",
+      "url": "https://www.coffeeveronia.sk/zrnkova-kava-etiopia--250g/",
+      "verification": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "Costa Rica Yellow Honey 200 g",
+      "url": "https://www.coffeeveronia.sk/veronia-costa-rica-yellow-honey-200g--zrnkova-vyberova-kava/",
+      "verification": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "Rwanda – limitovaná edícia 200 g",
+      "url": "https://www.coffeeveronia.sk/rwanda-limitovana-edicia-arabica--zrnkova-kava--200g/",
+      "verification": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "name": "Mexiko bezkofeínová 250 g",
+      "url": "https://www.coffeeveronia.sk/bezkofeinova-kava-mexiko-arabica-zrnkova-kava-250g-/",
+      "verification": "blocked",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "browserQaComplete": false
+}

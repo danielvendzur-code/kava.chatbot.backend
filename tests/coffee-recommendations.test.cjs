@@ -9,7 +9,12 @@ function load(file) {
  vm.runInNewContext(fs.readFileSync(file,'utf8'),context);
  context.products=context.window.JOLKA.products;
  vm.runInNewContext(functions+'\nthis.api={rank,parseCoffeeRequest,recommendationReason};',context);
- return {data:context.window.JOLKA,...context.api};
+ context.brand=context.window.JOLKA.brand;
+ context.state={chatPreferences:{}};
+ context.esc=value=>String(value??'');
+ const fallback=source.slice(source.indexOf('  function namedProducts('),source.indexOf('  /* Two bounds,'));
+ vm.runInNewContext(fallback+'\nthis.fallbackAnswer=fallbackAnswer;',context);
+ return {data:context.window.JOLKA,...context.api,fallbackAnswer:context.fallbackAnswer};
 }
 const files=['jolka/jolka-data.js',...fs.readdirSync('.').filter(f=>f.endsWith('-jolka-data.js'))];
 for(const file of files) {
@@ -69,12 +74,33 @@ test('October 16 availability and product corrections',()=>{
   assert.ok(rank({taste:'chocolate',prep:'automat'}).every(r=>r.product.id!==id));
  }
  const ready=load('readyafter-jolka-data.js');
- assert.equal(ready.rank({prep:'filter',drink:'black',taste:'fruity'})[0].product.id,'vietnam-supernatural');
+ const filterResult=ready.rank({prep:'filter',drink:'black',taste:'fruity'})[0].product;
+ assert.ok(filterResult.sourceEvidence.preparation.includes('filter'));
+ assert.equal(filterResult.available,true);
+ assert.equal(filterResult.prep.filter,1);
+ assert.ok(filterResult.taste.fruity>0);
  assert.equal(ready.rank({prep:'filter',caffeine:'decaf'}).length,0);
  const veronia=load('coffeeveronia-jolka-data.js').data;
  assert.equal(veronia.products.find(p=>p.id==='espresso').price,'9,90 €');
  assert.equal(load('kavoholik-jolka-data.js').data.products.find(p=>p.id==='stur').priceUnit,'250 g');
  const api=fs.readFileSync('api/chat.js','utf8');
  const blocks=api.slice(api.indexOf('const DEMOS=' )>=0?api.indexOf('const DEMOS='):api.indexOf('const DEMOS ='),api.indexOf('function setCors'));
- for(const removed of ['Indonesia Aceh Gayo','Colombia El Diviso Natural','Burundi Rumanda Muraho Natural Anaerobic','Espresso káva Jánošík']) assert.ok(!blocks.includes(removed),removed+' must not be in server catalogue');
+ for(const removed of ['Indonesia Aceh Gayo','Colombia El Diviso Natural','Burundi Rumanda Muraho Natural Anaerobic','Espresso káva Jánošík']) {
+  const entries=blocks.split('\n').filter(line=>line.includes(removed));
+  for(const entry of entries) assert.ok(entry.includes('nepotvrdená, neodporúčať'),removed+' must not be recommendable');
+ }
+});
+
+test('prices answer the named coffee and never silently substitute the hero coffee',()=>{
+ const {fallbackAnswer}=load('kaffa-jolka-data.js');
+ const answer=fallbackAnswer('Koľko stojí Kamundu?');
+ assert.ok(answer.includes('13,98 €'));
+ assert.ok(!answer.includes('11,90'));
+ assert.ok(!/\d+[,.]\d+ €/.test(fallbackAnswer('Koľko stojí káva?')));
+});
+test('caffeine negation and milk restrictions remain explicit',()=>{
+ const {parseCoffeeRequest}=load('kaffa-jolka-data.js');
+ assert.equal(parseCoffeeRequest('Nechcem kávu bez kofeínu').caffeine,'regular');
+ assert.equal(parseCoffeeRequest('Nechcem kofeínovú kávu').caffeine,'decaf');
+ assert.equal(parseCoffeeRequest('Nechcem kávu s mliekom').drink,'black');
 });
