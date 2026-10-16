@@ -384,6 +384,11 @@
         const condNoBudget = conditionText(ad, {...st, budget: null});
         return `${t.noneUnder(money(st.budget.amount, st.budget.currency || ad.currency), condNoBudget)} ${t.cheapest(cheapest.name, priceOf(cheapest, st).label)}\n\n${line(ad, cheapest, st)}`;
       }
+      // A coffee that fits but is sold out right now is named rather than denied.
+      if (ad.soldOutMatch && !st.budget) {
+        const so = ad.soldOutMatch(st.answers, st.not);
+        if (so) return (ad.lang === 'cs' ? `${so.name} v nabídce je, ale momentálně není skladem.` : `${so.name} v ponuke je, ale momentálne nie je skladom.`) + '\n\n' + line(ad, so, st);
+      }
       // Nearest option: relax soft preferences, never exclusions or the budget.
       for (const key of ad.relax || []) {
         if (st.answers[key] === undefined) continue;

@@ -473,7 +473,7 @@
     const a = answers;
     if (a.prep && (product.prep?.[a.prep] ?? 0) >= 0.6) {
       const [sk, cs] = PREP_REASON[a.prep] || [];
-      if (sk) out.push([T(sk, cs), a.prep === 'automat' && variant?.grind === 'beans' ? T('Zrnková, akú automat potrebuje.', 'Zrnková, jakou automat potřebuje.') : T('Podľa popisu sa hodí na túto prípravu.', 'Podle popisu se hodí na tuto přípravu.')]);
+      if (sk) out.push([T(sk, cs), a.prep === 'automat' && product.automatDerived ? T('E-shop ju uvádza na espresso, ktoré pripravuje aj automat.', 'E-shop ji uvádí na espresso, které připravuje i automat.') : a.prep === 'automat' && variant?.grind === 'beans' ? T('Zrnková, akú automat potrebuje.', 'Zrnková, jakou automat potřebuje.') : T('Podľa popisu sa hodí na túto prípravu.', 'Podle popisu se hodí na tuto přípravu.')]);
     }
     if (a.taste && (product.taste?.[a.taste] ?? 0) >= 0.6 && product.notes?.length) {
       // A taste-family score is not evidence of a specific flavour note.
