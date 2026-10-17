@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // Re-checks every coffee in a catalogue against its live product page and reports, or with
 // --write saves, which coffees and which pack sizes the shop sells right now, and at what price.
-// Usage: node tools/coffee-availability.mjs <slug>[,<slug>...] [--write]
+// Usage: node tools/coffee-availability.mjs <slug>[,<slug>...] [--write] [--other]
+// With --other it checks everything else the shop sells (brewers, grinders, cups...) instead: stock and price.
 //
 // A coffee counts as available only when the shop sells at least one of its packs now.
 // - Shoptet shops (Ready After, Coffee Sheep, Coffee Veronia) publish every variant's price and
@@ -27,10 +28,11 @@ const UA = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Geck
 const [slugArg, ...flags] = process.argv.slice(2);
 if (!slugArg) { console.error('Usage: node tools/coffee-availability.mjs <slug>[,<slug>...] [--write]'); process.exit(1); }
 const write = flags.includes('--write');
+const other = flags.includes('--other');
 
 const grams = s => { const m = String(s || '').match(/(?:(\d+)\s*[x×]\s*)?([\d.,]+)\s*(kg|g)\b/i); return m ? Math.round(Number(m[2].replace(',', '.')) * (/kg/i.test(m[3]) ? 1000 : 1) * Number(m[1] || 1)) : null; };
 const euro = s => Number(String(s || '').replace(/[^\d,.]/g, '').replace(/\.(?=\d{3}\b)/g, '').replace(',', '.'));
-const money = v => v.toFixed(2).replace('.', ',') + ' €';
+const money = v => v.toFixed(2).replace('.', ',').replace(/\B(?=(\d{3})+,)/g, ' ') + ' €';
 const packLabel = g => g >= 1000 ? (g / 1000 + ' kg').replace('.', ',') : g + ' g';
 
 function load(slug) {
@@ -145,13 +147,15 @@ async function check(p) {
     states = [...part.matchAll(/itemprop="availability"[^>]*?(?:href|content)="([^"]+)"/gi)].map(m => m[1]);
     prices = [...part.matchAll(/itemprop="price"[^>]*?content="([^"]+)"/gi)].map(m => Number(m[1].replace(',', '.'))).filter(Number.isFinite);
   }
+  if (!prices.length) { const meta = html.match(/property="product:price:amount"\s+content="([\d.,]+)"/i) || html.match(/itemprop="price"\s+content="([\d.,]+)"/i); if (meta) prices = [Number(meta[1].replace(',', '.'))]; }
   if (prices.length && prices.every(v => v === 0)) return {available: false, why: 'offer price 0 €'};
-  if (states.some(s => SELLING.test(s))) return {available: true, why: states.join(' ')};
-  if (states.length && states.every(s => NOT_SELLING.test(s))) return {available: false, why: states.join(' ')};
+  const price = prices.length ? Math.min(...prices.filter(v => v > 0)) : null;
+  if (states.some(s => SELLING.test(s))) return {available: true, price, why: states.join(' ')};
+  if (states.length && states.every(s => NOT_SELLING.test(s))) return {available: false, price, why: states.join(' ')};
   const h1 = html.search(/<h1[\s>]/i);
   const near = h1 >= 0 ? html.slice(h1, h1 + 20000).replace(/<[^>]+>/g, ' ') : '';
-  if (NOT_SELLING_TEXT.test(near)) return {available: false, why: 'text: ' + near.match(NOT_SELLING_TEXT)[0]};
-  return {available: states.length ? null : true, why: states.length ? 'unknown offer: ' + states.join(' ') : 'no offer data, no stock warning'};
+  if (NOT_SELLING_TEXT.test(near)) return {available: false, price, why: 'text: ' + near.match(NOT_SELLING_TEXT)[0]};
+  return {available: states.length ? null : true, price, why: states.length ? 'unknown offer: ' + states.join(' ') : 'no offer data, no stock warning'};
 }
 
 /* Pack prices and stock into the catalogue record; the shown price is the smallest regular pack on sale. */
@@ -178,14 +182,24 @@ function applyPacks(p, packs) {
 
 for (const slug of slugArg.split(',')) {
   const {file, catalogue} = load(slug);
-  const list = catalogue.products.filter(p => p.url && (!p.kind || p.kind === 'Káva'));
+  const isCoffee = p => !p.kind || p.kind === 'Káva';
+  const list = other ? [...catalogue.products, ...(catalogue.offer || [])].filter(p => p.url && !isCoffee(p)) : catalogue.products.filter(p => p.url && isCoffee(p));
+  let priceChanges = 0;
   const changes = [];
   let packChanges = 0;
   for (let i = 0; i < list.length; i += 3) {
     await Promise.all(list.slice(i, i + 3).map(async p => {
       const r = await check(p);
       if (r.available === null) { console.log(`?  ${slug} ${p.name} — ${r.why}`); return; }
-      if (r.packs) {
+      // Other goods: one price; a page with variants shows its lowest price on sale.
+      if (other) {
+        const live = r.packs ? r.packs.filter(k => k.available && k.price > 0) : [];
+        const now = r.packs ? (live.length ? Math.min(...live.map(k => k.price)) : null) : r.price;
+        if (Number.isFinite(now) && now > 0 && Math.abs(now - (p.priceAmount ?? -1)) > 0.004) {
+          priceChanges++; console.log(`€  ${slug} ${p.name} — ${p.price} → ${money(now)}`);
+          if (write) { p.priceAmount = now; p.price = money(now).replace(',00 €', ' €'); }
+        }
+      } else if (r.packs) {
         const before = JSON.stringify([p.price, (p.variants || []).map(v => [v.price, v.available])]);
         const copy = JSON.parse(JSON.stringify(p));
         applyPacks(copy, r.packs);
@@ -195,8 +209,8 @@ for (const slug of slugArg.split(',')) {
     }));
   }
   for (const {p, r} of changes) console.log(`${r.available ? '+ ' : '- '} ${slug} ${p.name} — ${r.why}`);
-  console.log(`${slug}: ${list.length} coffees checked, ${changes.length} availability change(s), ${packChanges} pack change(s)`);
-  if (write && (changes.length || packChanges)) {
+  console.log(`${slug}: ${list.length} ${other ? 'other products' : 'coffees'} checked, ${changes.length} availability change(s), ${other ? priceChanges + ' price' : packChanges + ' pack'} change(s)`);
+  if (write && (changes.length || packChanges || priceChanges)) {
     const now = new Date().toISOString();
     for (const {p, r} of changes) { p.available = r.available; if (r.gone) p.gone = true; else delete p.gone; p.verifiedAt = now; }
     fs.writeFileSync(file, `globalThis.CX_COFFEE_CATALOGUES ||= {};\nglobalThis.CX_COFFEE_CATALOGUES[${JSON.stringify(slug)}] = ${JSON.stringify(catalogue)};\n`);

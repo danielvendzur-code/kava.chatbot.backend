@@ -14,7 +14,7 @@
   const L = (lang, sk, cs) => lang === 'cs' ? cs : sk;
 
   /* ======================= COFFEE ======================= */
-  const COUNTRIES = [['brazil', 'Brazílie', 'Brazílie'], ['brasil', 'Brazílie', 'Brazílie'], ['brazil', 'Brazílie', 'Brazílie'], ['colombia', 'Kolumbie', 'Kolumbie'], ['kolumb', 'Kolumbie', 'Kolumbie'], ['ethiop', 'Etiópie', 'Etiopie'], ['etiop', 'Etiópie', 'Etiopie'], ['guatemal', 'Guatemaly', 'Guatemaly'], ['kenya', 'Kene', 'Keni'], ['keni', 'Kene', 'Keni'], ['costa rica', 'Kostariky', 'Kostariky'], ['kostarik', 'Kostariky', 'Kostariky'], ['hondur', 'Hondurasu', 'Hondurasu'], ['peru', 'Peru', 'Peru'], ['mexic', 'Mexika', 'Mexika'], ['mexik', 'Mexika', 'Mexika'], ['nicarag', 'Nikaraguy', 'Nikaraguy'], ['nikarag', 'Nikaraguy', 'Nikaraguy'], ['salvador', 'Salvádoru', 'Salvadoru'], ['tanzan', 'Tanzánie', 'Tanzanie'], ['rwand', 'Rwandy', 'Rwandy'], ['burundi', 'Burundi', 'Burundi'], ['uganda', 'Ugandy', 'Ugandy'], ['india', 'Indie', 'Indie'], ['vietnam', 'Vietnamu', 'Vietnamu'], ['indones', 'Indonézie', 'Indonésie'], ['sumatr', 'Sumatry', 'Sumatry'], ['papua', 'Papuy-Novej Guiney', 'Papuy-Nové Guineje'], ['cuba', 'Kuby', 'Kuby'], ['kuba', 'Kuby', 'Kuby'], ['panam', 'Panamy', 'Panamy'], ['bolivi', 'Bolívie', 'Bolívie'], ['ecuador', 'Ekvádoru', 'Ekvádoru'], ['ekvador', 'Ekvádoru', 'Ekvádoru'], ['yemen', 'Jemenu', 'Jemenu'], ['jamaic', 'Jamajky', 'Jamajky'], ['jamajk', 'Jamajky', 'Jamajky'], ['dominik', 'Dominikánskej republiky', 'Dominikánské republiky'], ['china', 'Číny', 'Číny'], ['laos', 'Laosu', 'Laosu']];
+  const COUNTRIES = [['brazil', 'Brazílie', 'Brazílie'], ['brasil', 'Brazílie', 'Brazílie'], ['brazil', 'Brazílie', 'Brazílie'], ['colombia', 'Kolumbie', 'Kolumbie'], ['kolumb', 'Kolumbie', 'Kolumbie'], ['ethiop', 'Etiópie', 'Etiopie'], ['etiop', 'Etiópie', 'Etiopie'], ['guatemal', 'Guatemaly', 'Guatemaly'], ['kenya', 'Kene', 'Keni'], ['keni', 'Kene', 'Keni'], ['kena', 'Kene', 'Keni'], ['kene', 'Kene', 'Keni'], ['keny', 'Kene', 'Keni'], ['kenu', 'Kene', 'Keni'], ['costa rica', 'Kostariky', 'Kostariky'], ['kostarik', 'Kostariky', 'Kostariky'], ['hondur', 'Hondurasu', 'Hondurasu'], ['peru', 'Peru', 'Peru'], ['mexic', 'Mexika', 'Mexika'], ['mexik', 'Mexika', 'Mexika'], ['nicarag', 'Nikaraguy', 'Nikaraguy'], ['nikarag', 'Nikaraguy', 'Nikaraguy'], ['salvador', 'Salvádoru', 'Salvadoru'], ['tanzan', 'Tanzánie', 'Tanzanie'], ['rwand', 'Rwandy', 'Rwandy'], ['burundi', 'Burundi', 'Burundi'], ['uganda', 'Ugandy', 'Ugandy'], ['india', 'Indie', 'Indie'], ['indie', 'Indie', 'Indie'], ['indiu', 'Indie', 'Indie'], ['vietnam', 'Vietnamu', 'Vietnamu'], ['indones', 'Indonézie', 'Indonésie'], ['indonez', 'Indonézie', 'Indonésie'], ['sumatr', 'Sumatry', 'Sumatry'], ['papua', 'Papuy-Novej Guiney', 'Papuy-Nové Guineje'], ['papuy', 'Papuy-Novej Guiney', 'Papuy-Nové Guineje'], ['papuu', 'Papuy-Novej Guiney', 'Papuy-Nové Guineje'], ['cuba', 'Kuby', 'Kuby'], ['kuba', 'Kuby', 'Kuby'], ['kuby', 'Kuby', 'Kuby'], ['kubu', 'Kuby', 'Kuby'], ['panam', 'Panamy', 'Panamy'], ['bolivi', 'Bolívie', 'Bolívie'], ['ecuador', 'Ekvádoru', 'Ekvádoru'], ['ekvador', 'Ekvádoru', 'Ekvádoru'], ['yemen', 'Jemenu', 'Jemenu'], ['jamaic', 'Jamajky', 'Jamajky'], ['jamajk', 'Jamajky', 'Jamajky'], ['dominik', 'Dominikánskej republiky', 'Dominikánské republiky'], ['dominican', 'Dominikánskej republiky', 'Dominikánské republiky'], ['domingo', 'Dominikánskej republiky', 'Dominikánské republiky'], ['china', 'Číny', 'Číny'], ['ciny', 'Číny', 'Číny'], ['cinu', 'Číny', 'Číny'], ['nepal', 'Nepálu', 'Nepálu'], ['thajsk', 'Thajska', 'Thajska'], ['thailand', 'Thajska', 'Thajska'], ['havaj', 'Havaja', 'Havaje'], ['hawai', 'Havaja', 'Havaje'], ['zambi', 'Zambie', 'Zambie'], ['malawi', 'Malawi', 'Malawi'], ['kongo', 'Konga', 'Konga'], ['congo', 'Konga', 'Konga'], ['timor', 'Timoru', 'Timoru'], ['filipin', 'Filipín', 'Filipín'], ['venezuel', 'Venezuely', 'Venezuely'], ['laos', 'Laosu', 'Laosu']];
   const PREP_LABEL = {sk: {filter: 'filter', automat: 'automat', moka: 'moka kanvičku', lever: 'espresso'}, cs: {filter: 'filtr', automat: 'automat', moka: 'moka konvičku', lever: 'espresso'}};
   const COFFEE_KNOW = {
     sk: {filter: 'Na V60 alebo iný filter: približne 15 g stredne nahrubo mletej kávy na 250 ml vody s teplotou 92–96 °C, celkový čas 2,5–3,5 minúty.', frenchpress: 'Do french pressu: hrubo mletá káva, približne 30 g na 500 ml vody tesne pod bodom varu, 4 minúty lúhovať a pomaly stlačiť piest.', aeropress: 'Do AeroPressu: 15 g stredne jemne mletej kávy na 220–250 ml vody (85–95 °C), 1,5–2 minúty.', moka: 'Do moka kanvičky: stredne jemné mletie, sitko naplniť bez utláčania, voda po ventil, mierny oheň.', lever: 'Na espresso: jemné mletie, približne 18 g kávy na dvojitú dávku a 36–40 g nápoja za 25–30 sekúnd.', automat: 'Do automatu použite zrnkovú kávu; hrubosť mletia nastavíte na mlynčeku automatu.', storage: 'Kávu skladujte vo vzduchotesnej nádobe v suchu, v tme a pri izbovej teplote, nie v chladničke.', turkish: 'Na džezvu: veľmi jemne (na prach) mletá káva, približne 7–8 g na 100 ml studenej vody; pomaly zohrievať, kým pena nevystúpi k okraju, a pred varom odstaviť.'},
@@ -94,6 +94,9 @@
       if (a.turkish) out.push(L(lang, 'na džezvu', 'do džezvy'));
       if (a.roast && roastKnown(a.roast).length) out.push({full: L(lang, 'tmavšie praženie', 'tmavší pražení'), light: L(lang, 'svetlé praženie', 'světlé pražení'), balanced: L(lang, 'stredné praženie', 'střední pražení')}[a.roast]);
       if (a.robustaOnly) out.push(L(lang, 'robusta', 'robusta'));
+      else if (a.robusta === 'yes') out.push(L(lang, 's robustou', 's robustou'));
+      if (a.strong) out.push(L(lang, 'silná', 'silná'));
+      if (a.process) out.push(L(lang, 'spracovanie ', 'zpracování ') + {natural: 'natural', washed: 'washed', honey: 'honey', ferment: L(lang, 'fermentované', 'fermentované')}[a.process]);
       if (a.sort) out.push(a.sort === 'cheap' ? L(lang, 'od najlacnejšej', 'od nejlevnější') : L(lang, 'od najdrahšej', 'od nejdražší'));
       if (a.decaf === 'yes') out.push(L(lang, 'bez kofeínu', 'bez kofeinu'));
       if (a.gift && products.some(p => p.main && p.available && p.raw.gift)) out.push(L(lang, 'ako darček', 'jako dárek'));
@@ -109,7 +112,7 @@
       if (a.origin) { const c = COUNTRIES.find(([, l]) => l === a.origin); out.push('z ' + (lang === 'cs' ? c[2] : c[1])); }
       if (a.arabica) out.push(L(lang, 'bez robusty', 'bez robusty'));
       if (not.prep?.length) out.push(L(lang, 'nie ', 'ne ') + not.prep.map(k => PREP_LABEL[lang][k]).join(', '));
-      if (not.robusta) out.push(L(lang, 'bez robusty', 'bez robusty'));
+      if (not.robusta && a.robusta !== 'yes') out.push(L(lang, 'bez robusty', 'bez robusty'));
       if (not.blend) out.push(L(lang, 'bez zmesí', 'bez směsí'));
       return uniq(out);
     };
@@ -118,9 +121,9 @@
       if (/bez\s*kofein|bezkofein|decaf|odkofein|nizkokofein|nizko kofein|menej kofein|malo kofein|mene kofein/.test(pos) || /kofein/.test(neg)) set.decaf = 'yes';
       else if (/s kofeinom|s kofeinem|kofeinov\w* kav|normaln\w* kav|klasick\w* kav|kavu s kofein/.test(pos)) set.decaf = 'no';
       if (/filtr|filter|v60|chemex|aeropress|french|frenc|prekap|prekvap|kalita|zalievan|zalivan|pour.?over/.test(pos)) set.prep = 'filter';
-      else if (/automat|plnoautomat|super.?automat/.test(pos)) set.prep = 'automat';
+      else if (/automat|plnoautomat|super.?automat|delonghi|de longhi|saeco|philips|jura\b|krups|siemens|melitta|nivona|gaggia|sencor/.test(pos)) set.prep = 'automat';
       else if (/\bmok[ay]\b|kanvick|konvick|kotog|bialetti/.test(pos)) set.prep = 'moka';
-      else if (/espresso|pakov|portafilter|paka\b/.test(pos)) set.prep = 'lever';
+      else if (/espresso|pakov|portafilter|paka\b|kavovar/.test(pos)) set.prep = 'lever';
       if (/espresso|pakov/.test(neg)) not.prep = ['lever'];
       if (/automat/.test(neg)) not.prep = [...(not.prep || []), 'automat'];
       if (/s mliek|do mliek|s mlek|do mlek|cappucc|latte|flat ?white|mliecn/.test(pos)) set.milk = 'yes';
@@ -128,16 +131,21 @@
       if (/ovocn|fruity|kysl\w* chut|svieza|sviez|kvetin/.test(pos) && !/nekysl|nizk\w* kysl|bez kysl|menej kysl|jemn\w* kysl/.test(pos)) set.taste = 'fruity';
       else if (/cokol|orech|oriesk|karamel|chocol/.test(pos)) { set.taste = 'chocolate'; set.tasteWord = /karamel/.test(pos) ? 'karamel' : /orech|oriesk/.test(pos) && !/cokol|chocol/.test(pos) ? 'oriešky' : ''; }
       if (/jemn\w* kav|jemnu|jemnejs|mild|nie silnu|nie moc silnu|slabs\w* kav/.test(pos)) set.mild = true;
+      else if (/najsiln|siln\w* kav|\bsiln[uaey]\b|strong|nakopn|povzbud|vela kofein|viac kofein|najviac kofein|vic kofein/.test(pos)) set.strong = true;
+      // Processing named by the shop in the coffee's name or notes.
+      const proc = pos.match(/\b(natural|naturalne|prirodn\w* spracov|washed|prat\w*|honey|medov\w* spracov|anaerob\w*|carbonic|kvasen\w*|ferment\w*)/);
+      if (proc) set.process = /natur|prirodn/.test(proc[1]) ? 'natural' : /wash|prat/.test(proc[1]) ? 'washed' : /honey|medov/.test(proc[1]) ? 'honey' : 'ferment';
       if (/cappucc|kapucin|latte|flat ?white|cortado|macchiato/.test(pos)) set.milkDrink = true;
       // A beginner or someone after an everyday coffee gets the balanced ones first.
       else if (/zaciatocn|zacinam|beginner|univerzaln|bezn\w* kav|klasick\w* kav|nic extra|nic exoticke/.test(pos)) set.taste = 'balanced';
-      if (/nekysl|nizk\w* kysl|bez kysl|menej kysl|malo kysl|jemn\w* kysl|nizk\w* acid|nizsi\w* acid|nizka acid|nizkou kysel|nekysel|bez kysel/.test(pos) || /kysl|kysel|acid/.test(neg)) set.lowAcid = true;
+      if (/najmenej kys|najnizs\w* kys|kyselin|nekysl|nizk\w* kysl|bez kysl|menej kysl|malo kysl|jemn\w* kysl|nizk\w* acid|nizsi\w* acid|nizka acid|nizkou kysel|nekysel|bez kysel/.test(pos) || /kysl|kysel|acid/.test(neg)) set.lowAcid = true;
       if (/zrnk|cele zrn|celé zrn|nemlet|\bzrna\b|\bzrno\b|beans/.test(pos) || /mlet|pomlet/.test(neg)) set.grind = 'beans';
       else if (/\bmlet(?!i[ea]?\b|im\b)|pomlet/.test(pos) || /zrnk|zrna/.test(neg)) set.grind = 'ground';
       const size = pos.match(/(\d+(?:[.,]\d+)?)\s*(kg|g)\b/) || (/\bkilo\b|kilov|kilogram/.test(pos) ? ['', '1', 'kg'] : null);
       if (size) { const g = Math.round(Number(size[1].replace(',', '.')) * (size[2] === 'kg' ? 1000 : 1)); if (g >= 100 && g <= 5000) set.size = g; }
-      if (/robust/.test(neg) || /bez robust|nie robust|ziadn\w* robust|bez obsahu robust/.test(pos)) not.robusta = true;
-      else if (/100\s*%\s*robust|cist\w* robust|iba robust|len robust|jen robust|samotn\w* robust/.test(pos)) set.robustaOnly = true;
+      if (/robust/.test(neg) || /bez robust|nie robust|ziadn\w* robust|bez obsahu robust/.test(pos)) { not.robusta = true; set.robusta = 'no'; }
+      else if (/\bs robust|\bso robust|robustou|s obsahom robust|aj robust|s primesou robust/.test(pos)) set.robusta = 'yes';
+      if (/100\s*%\s*robust|cist\w* robust|iba robust|len robust|jen robust|samotn\w* robust/.test(pos)) set.robustaOnly = true;
       if (/100\s*% arabik|100\s*% arabic|iba arabik|len arabik|jen arabik|cista arabik/.test(pos)) set.arabica = true;
       if (/zmes|smes|blend/.test(neg)) not.blend = true;
       if (/french|frenc|presovac/.test(pos)) { set.prep = 'filter'; set.method = 'french'; }
@@ -154,6 +162,8 @@
       return {set, not};
     }
     const isBlend = p => /blend|zmes|směs|smes|\d+\s*\/\s*\d+/.test(norm(p.name + ' ' + (p.raw.line || '')));
+    const PROCESS = {natural: /natural|prirodn|sucha/, washed: /washed|prany|prana|mokre/, honey: /honey|medov/, ferment: /anaerob|carbonic|ferment|kvasen|co-ferment|nitro/};
+    const processOf = (p, k) => PROCESS[k].test(norm(p.name + ' ' + (p.raw.line || '') + ' ' + (p.raw.process || '')));
     const hasRobusta = p => Number.isFinite(p.raw.robustaPercent) ? p.raw.robustaPercent > 0 : /robust|canephor|conilon/.test(norm(p.name + ' ' + (p.raw.line || ''))) || /\bA\s*\/\s*R\b/.test(p.name + ' ' + (p.raw.line || ''));
     /* Evidence for a Turkish-coffee (džezva) grind: the name, the shop's preparation text or a grind option says so. */
     const turkishFit = p => /dzezv|turek|tureck/.test(norm(p.name + ' ' + (p.raw.line || '') + ' ' + (p.raw.prepSource || '') + ' ' + (p.raw.variants || []).map(v => v.label).join(' ')));
@@ -181,7 +191,9 @@
       else if (a.lowAcid) list = list.filter(p => !(Number.isFinite(p.raw.acidity) && p.raw.acidity > 1) && !(p.raw.taste?.fruity >= 0.6));
       if (a.grind && grindData && !grindMissing(a.grind)) list = list.filter(p => p.grinds.includes(a.grind));
       if (a.size) list = list.filter(p => p.raw.variants?.length ? p.raw.variants.some(v => v.available && v.grams === a.size) : gramsOf(p.pack) === a.size || gramsOf(p.raw.weights) === a.size && !/,/.test(p.raw.weights || ''));
-      if (not.robusta || a.arabica) list = list.filter(p => !hasRobusta(p));
+      if (not.robusta && a.robusta !== 'yes' || a.arabica) list = list.filter(p => !hasRobusta(p));
+      if (a.robusta === 'yes' && !a.robustaOnly) list = list.filter(hasRobusta);
+      if (a.process) list = list.filter(p => processOf(p, a.process));
       if (not.blend) list = list.filter(p => !isBlend(p));
       if (a.origin) list = list.filter(p => COUNTRIES.some(([k, label]) => label === a.origin && norm(p.name + ' ' + (p.raw.line || '')).includes(k)));
       if (a.turkish) list = list.filter(turkishFit);
@@ -196,7 +208,7 @@
       const multi = p => !a.size && (/\d\s*x\s*\d|\d\s*\+\s*\d|\+\s*salk/.test(norm(p.name + ' ' + (p.pack || ''))) || (gramsOf(p.pack) || 0) >= 1000);
       const known = p => (a.lowAcid && Number.isFinite(p.raw.acidity) && p.raw.acidity <= 1 ? 0.5 : 0);
       // A decaf is not the first suggestion for someone who did not ask for one.
-      const score = p => (a.prep ? p.raw.prep?.[a.prep] || 0 : 0) + named(p) + (a.taste ? p.raw.taste?.[a.taste] || 0 : 0) + (a.milk === 'yes' ? p.raw.drink?.milk || 0 : 0) + known(p) + ((p.raw.notes || []).length ? 0.2 : 0) - (sample(p) ? 1 : 0) - (multi(p) ? 0.5 : 0) - (!a.decaf && p.raw.decaf ? 1 : 0) - (a.decaf === 'yes' && !p.raw.decaf ? 0.6 : 0) + (a.gift && p.raw.gift ? 2 : 0) + (a.tasteWord && (p.raw.notes || []).some(n => norm(n).includes(norm(a.tasteWord).slice(0, 5))) ? 0.8 : 0) + (a.method === 'french' && /french/i.test((p.raw.prepSource || '') + ' ' + (p.raw.bestFor || '')) ? 0.5 : 0) + (a.robustaOnly ? robustaShare(p) / 100 : 0) - (a.mild ? 1.5 * robustaShare(p) / 100 + 0.5 * (p.raw.taste?.bold || 0) : 0) + (a.milkDrink && !a.prep ? 0.5 * (p.raw.prep?.lever || 0) + 0.3 * (p.raw.drink?.milk || 0) : 0);
+      const score = p => (a.prep ? p.raw.prep?.[a.prep] || 0 : 0) + named(p) + (a.taste ? p.raw.taste?.[a.taste] || 0 : 0) + (a.milk === 'yes' ? p.raw.drink?.milk || 0 : 0) + known(p) + ((p.raw.notes || []).length ? 0.2 : 0) - (sample(p) ? 1 : 0) - (multi(p) ? 1.2 : 0) - (!a.decaf && p.raw.decaf ? 1 : 0) - (a.decaf === 'yes' && !p.raw.decaf ? 0.6 : 0) + (a.gift && p.raw.gift ? 2 : 0) + (a.tasteWord && (p.raw.notes || []).some(n => norm(n).includes(norm(a.tasteWord).slice(0, 5))) ? 0.8 : 0) + (a.method === 'french' && /french/i.test((p.raw.prepSource || '') + ' ' + (p.raw.bestFor || '')) ? 0.5 : 0) - (pureRobusta(p) && !a.robustaOnly && !a.strong && a.robusta !== 'yes' ? 0.6 : 0) + (a.robustaOnly ? robustaShare(p) / 100 : 0) + (a.strong ? robustaShare(p) / 100 * 1.2 + 0.8 * (p.raw.taste?.bold || 0) + 0.5 * (p.raw.intensity?.full || (p.raw.roastLevel === 'full' ? 1 : 0)) : 0) - (a.mild ? 1.5 * robustaShare(p) / 100 + 0.5 * (p.raw.taste?.bold || 0) : 0) + (a.milkDrink && !a.prep ? 0.5 * (p.raw.prep?.lever || 0) + 0.3 * (p.raw.drink?.milk || 0) : 0);
       const price = p => { const v = p.variantFor(a, st.budget && !st.budget.total ? st.budget.amount : null); return v ? v.price : Number.isFinite(p.amount) ? p.amount : Infinity; };
       const budget = st.budget?.amount;
       // "Najlacnejšia" / "najdrahšia": by the price of a regular pack, samples and multipacks aside.
@@ -209,7 +221,7 @@
       const r = p.raw, f = [];
       if (!p.main) return /ďalšia ponuka|další nabídka/i.test(r.kind || '') ? [] : [{k: 'kind', v: lc(r.kind || '')}];
       const text = norm(p.name + ' ' + (r.line || ''));
-      if (hasRobusta(p) && /arabi/.test(text)) f.push({k: 'beans', v: L(lang, 'zmes arabiky a robusty', 'směs arabiky a robusty'), hint: L(lang, 'ak chcete plnšiu, hutnejšiu chuť s výraznou crema', 'pokud chcete plnější chuť s výraznou cremou')});
+      if (hasRobusta(p) && (/arabi|\ba\s*\/\s*r\b/.test(text) || p.raw.robustaPercent > 0 && p.raw.robustaPercent < 100)) f.push({k: 'beans', v: L(lang, 'zmes arabiky a robusty', 'směs arabiky a robusty'), hint: L(lang, 'ak chcete plnšiu, hutnejšiu chuť s výraznou crema', 'pokud chcete plnější chuť s výraznou cremou')});
       else if (hasRobusta(p)) f.push({k: 'beans', v: L(lang, 'robusta', 'robusta'), hint: L(lang, 'ak chcete silnú a horkejšiu kávu', 'pokud chcete silnou a hořčí kávu')});
       else if (/arabi/.test(text)) f.push({k: 'beans', v: L(lang, 'arabika', 'arabika'), hint: L(lang, 'ak chcete jemnejšiu chuť bez robusty', 'pokud chcete jemnější chuť bez robusty')});
       const country = COUNTRIES.find(([k]) => norm(p.name).includes(k));
@@ -234,11 +246,27 @@
       }
       return f;
     }
+    // The same coffee sold as a separate product in another size ("… zrnková káva 1kg").
+    const baseName = p => norm(p.name).replace(/\d+(?:[.,]\d+)?\s*x?\s*\d*(?:[.,]\d+)?\s*(?:kg|g)\b/g, '').replace(/\s+/g, ' ').trim();
+    const sibling = (p, grams) => products.find(x => x.main && x.available && x.id !== p.id && baseName(x) === baseName(p) && (gramsOf(x.pack) === grams || gramsOf(x.name) === grams) && !/\d\s*x\s*\d/.test(norm(x.name)));
     function attribute(p, q) {
       const r = p.raw;
       if (/kofein|decaf/.test(q)) return r.decaf ? L(lang, `Áno, ${p.name} je podľa e-shopu bezkofeínová.`, `Ano, ${p.name} je podle e-shopu bezkofeinová.`) : r.lowCaffeine ? L(lang, `${p.name} je podľa e-shopu nízkokofeínová, nie úplne bez kofeínu.`, `${p.name} je podle e-shopu nízkokofeinová, ne zcela bez kofeinu.`) : L(lang, `${p.name} nie je označená ako bezkofeínová.`, `${p.name} není označená jako bezkofeinová.`);
       if (/zrnk|mlet|zrna/.test(q)) { const g = p.grinds; return g.length === 2 ? L(lang, `${p.name} sa predáva zrnková aj mletá.`, `${p.name} se prodává zrnková i mletá.`) : g[0] === 'beans' ? L(lang, `${p.name} je v ponuke zrnková.`, `${p.name} je v nabídce zrnková.`) : g[0] === 'ground' ? L(lang, `${p.name} je v ponuke mletá.`, `${p.name} je v nabídce mletá.`) : L(lang, `Či je ${p.name} zrnková alebo mletá, e-shop pri produkte neuvádza.`, `Zda je ${p.name} zrnková nebo mletá, e-shop u produktu neuvádí.`); }
       if (/kysl|kysel|acid/.test(q)) return Number.isFinite(r.acidity) ? `${p.name}: ${acidText(r)}.` : L(lang, `Kyslosť e-shop pri produkte ${p.name} neuvádza.`, `Kyselost e-shop u produktu ${p.name} neuvádí.`);
+      // "Máte ju aj v kilovom balení?": that pack, or the packs the shop sells.
+      const askedSize = (() => { const m = q.match(/(\d+(?:[.,]\d+)?)\s*(kg|g)\b/); return m ? Math.round(Number(m[1].replace(',', '.')) * (m[2] === 'kg' ? 1000 : 1)) : /\bkilo|kilov|kilogram/.test(q) ? 1000 : null; })();
+      if (askedSize && r.variants?.length) {
+        const live = r.variants.filter(v => v.available);
+        const hit = live.filter(v => v.grams === askedSize);
+        if (hit.length) return L(lang, `Áno, ${p.name} v balení ${packLabel(askedSize)}: `, `Ano, ${p.name} v balení ${packLabel(askedSize)}: `) + hit.slice(0, 3).map(v => `${v.label.replace(/(?:bez mletia|bez mletí)/i, 'zrnková')} ${money(v.price, p.currency)}`).join('; ') + '.';
+        const sizes = uniq(live.map(v => v.grams).filter(Boolean)).sort((x, y) => x - y);
+        const sib = sibling(p, askedSize);
+        if (sib) return L(lang, `V balení ${packLabel(askedSize)} ju e-shop predáva ako samostatný produkt: `, `V balení ${packLabel(askedSize)} ji e-shop prodává jako samostatný produkt: `) + `${sib.name} — ${sib.price}. ${sib.url}`;
+        return L(lang, `${p.name} v balení ${packLabel(askedSize)} e-shop nepredáva`, `${p.name} v balení ${packLabel(askedSize)} e-shop neprodává`) + (sizes.length ? L(lang, `; balenia: ${sizes.map(packLabel).join(', ')}.`, `; balení: ${sizes.map(packLabel).join(', ')}.`) : '.');
+      }
+      if (askedSize && !r.variants?.length && gramsOf(p.pack) && gramsOf(p.pack) !== askedSize && sibling(p, askedSize)) { const sib = sibling(p, askedSize); return L(lang, `V balení ${packLabel(askedSize)} ju e-shop predáva ako samostatný produkt: `, `V balení ${packLabel(askedSize)} ji e-shop prodává jako samostatný produkt: `) + `${sib.name} — ${sib.price}. ${sib.url}`; }
+      if (askedSize && !r.variants?.length && gramsOf(p.pack)) return gramsOf(p.pack) === askedSize ? L(lang, `Áno, ${p.name} je v balení ${packLabel(askedSize)}.`, `Ano, ${p.name} je v balení ${packLabel(askedSize)}.`) : L(lang, `${p.name} e-shop predáva v balení ${p.pack}, nie ${packLabel(askedSize)}.`, `${p.name} e-shop prodává v balení ${p.pack}, ne ${packLabel(askedSize)}.`);
       if (/baleni|balenie|gramaz|gram|velkost|kolko stoj|kolik stoj|cena|cenu/.test(q) && r.variants?.length) {
         const live = r.variants.filter(v => v.available);
         if (live.length) return L(lang, 'Ceny podľa balenia: ', 'Ceny podle balení: ') + live.slice(0, 6).map(v => `${v.label} ${money(v.price, p.currency)}`).join('; ') + '.';
@@ -359,8 +387,42 @@
     }
     // "Bialetti 3x tesnenie+filter alu 2", "3x1kg - najpredávanejšie espresso kávy": most of a product's own name.
     const namesProduct = q => products.some(p => { const ws = norm(p.name).split(/[^a-z0-9+]+/).filter(w => w.length >= 3); return ws.length >= 2 && ws.filter(w => q.includes(w)).length / ws.length >= 0.6; });
-    const pre = q => {
+    const lineOf = p => `${p.name}${p.pack && !norm(p.name).replace(/\s/g, '').includes(norm(p.pack).replace(/\s/g, '')) && !/\d\s*[x×]\s*\d/.test(p.name) ? ' (' + p.pack + ')' : ''} — ${p.price}. ${p.url}`;
+    const multiPack = p => /\d\s*[x×]\s*\d|\d\s*\+\s*\d/.test(norm(p.name));
+    const home = (() => { try { return new URL(String(c.source?.url || c.source)).origin + '/'; } catch { return ''; } })();
+    /* Small talk and shop questions the catalogue cannot answer: said plainly, with the shop's link. */
+    function shopReply(q) {
+      const t = q.replace(/[!?.,\s]+$/, '').trim();
+      if (/^(?:ahoj|ahojte|dobry den|dobry vecer|dobre rano|zdravim|cau|cauko|hello|hi|hej|nazdar)(?: \w+)?$/.test(t)) return L(lang, 'Dobrý deň! Poradím vám s výberom kávy. Napíšte, ako ju pripravujete (espresso, automat, filter, moka) a akú chuť máte radi.', 'Dobrý den! Poradím vám s výběrem kávy. Napište, jak ji připravujete (espresso, automat, filtr, moka) a jakou chuť máte rádi.');
+      if (/^(?:dakujem|dakujeme|dakujem pekne|dakujem vam|vdaka|velka vdaka|diky|dik|dekuji|dekujeme|super dakujem|ok dakujem|dobre dakujem)$/.test(t)) return L(lang, 'Rado sa stalo. Ak budete chcieť poradiť s ďalšou kávou, napíšte.', 'Rádo se stalo. Pokud budete chtít poradit s další kávou, napište.');
+      if (/pijete vy|pijes ty|pijes ti|tvoj\w* oblub|vas\w* oblub|co by ste si dali|co by si si dal|chutna vam|chutna ti/.test(q)) return L(lang, 'Sám kávu nepijem, ale rád vám vyberiem z ponuky e-shopu. Napíšte, ako kávu pripravujete a akú chuť máte radi.', 'Sám kávu nepiji, ale rád vám vyberu z nabídky e-shopu. Napište, jak kávu připravujete a jakou chuť máte rádi.');
+      if (/minimaln\w* (?:objednav|hodnot|nakup|sum)|najmenej (?:musim|treba) objednat/.test(q)) return L(lang, 'Minimálnu hodnotu objednávky e-shop na svojej stránke neuvádza. Podmienky nájdete v e-shope: ', 'Minimální hodnotu objednávky e-shop na svých stránkách neuvádí. Podmínky najdete v e-shopu: ') + (c.shipping?.termsUrl || home);
+      if (/kedy\b.*\bpraz|kdy\b.*\bpraz|datum prazen|datum prazeni|ako cerstv|jak cerstv|cerstvo prazen\w* je/.test(q)) return L(lang, 'Dátum praženia pri jednotlivých kávach v ponuke e-shop neuvádza. Na obale ho zvyčajne nájdete; presnú informáciu vám dá e-shop: ', 'Datum pražení u jednotlivých káv v nabídce e-shop neuvádí. Na obalu ho obvykle najdete; přesnou informaci vám dá e-shop: ') + home;
+      if (/zlav|akci[ae]|vypredaj|vyprodej|zlavov|kupon|kod na zlavu|sleva|slevu/.test(q)) return L(lang, 'Aktuálne zľavy a akcie v ukážke overené nemám; nájdete ich priamo v e-shope: ', 'Aktuální slevy a akce v ukázce ověřené nemám; najdete je přímo v e-shopu: ') + home;
+      if (/\bbio\b|organic|organick|ekologick|certifik/.test(q) && /kav|mate|je |su /.test(q)) {
+        const bio = products.filter(p => p.main && p.available && /\bbio\b|organic|organick/.test(norm(p.name + ' ' + (p.raw.line || '')))).sort((a, b) => multiPack(a) - multiPack(b));
+        return bio.length ? L(lang, 'Ako bio (organic) e-shop označuje tieto kávy:', 'Jako bio (organic) e-shop označuje tyto kávy:') + '\n\n' + bio.slice(0, 4).map(lineOf).join('\n\n') : L(lang, 'Bio (organic) certifikát e-shop pri kávach v ponuke neuvádza.', 'Bio (organic) certifikát e-shop u káv v nabídce neuvádí.');
+      }
+      if (/vzork|degust|ochutnav|ochutnavk|tasting|sampler|tester|ochutnat viac/.test(q)) {
+        const sets = products.filter(p => p.available && /vzork|vzorek|degust|ochutn|tasting|sampler|tester/.test(norm(p.name)) && !/cokolad|caj\b|tea\b|cerisett/.test(norm(p.name)));
+        return sets.length ? L(lang, 'Z ponuky na ochutnanie:', 'Z nabídky na ochutnání:') + '\n\n' + sets.slice(0, 4).map(lineOf).join('\n\n') : L(lang, 'Vzorky ani degustačné sady e-shop v ponuke nemá.', 'Vzorky ani degustační sady e-shop v nabídce nemá.');
+      }
+      if (/najvacs\w* (?:balen|gramaz)|nejvets\w* (?:balen|gramaz)|najvacs\w* kav|velk\w* balen/.test(q) && !/do \d|\d+ ?(?:€|eur)/.test(q)) {
+        const sizes = sizesOffered();
+        const top = sizes.at(-1);
+        if (!top) return undefined;
+        const list = products.filter(p => p.main && p.available && !multiPack(p) && ((p.raw.variants || []).some(v => v.available && v.grams === top) || gramsOf(p.pack) === top));
+        return L(lang, `Najväčšie balenie kávy v e-shope je ${packLabel(top)}`, `Největší balení kávy v e-shopu je ${packLabel(top)}`) + (list.length ? L(lang, ', napríklad:', ', například:') + '\n\n' + list.slice(0, 3).map(p => { const v = (p.raw.variants || []).find(x => x.available && x.grams === top); return `${p.name} (${v ? v.label.replace(/(?:bez mletia|bez mletí)/i, 'zrnková') : packLabel(top)}) — ${money(v ? v.price : p.amount, p.currency)}. ${p.url}`; }).join('\n\n') : '.');
+      }
+      return undefined;
+    }
+    const ARAB_ROB = L(lang, 'Arabika má jemnejšiu, sladšiu a aromatickejšiu chuť s vyššou kyslosťou a menej kofeínu. Robusta je výraznejšia a horkejšia, má približne dvojnásobok kofeínu a v espresse dáva hustejšiu cremu.', 'Arabika má jemnější, sladší a aromatičtější chuť s vyšší kyselostí a méně kofeinu. Robusta je výraznější a hořčí, má přibližně dvojnásobek kofeinu a v espressu dává hustší cremu.');
+    const pre = (q, messages = []) => {
+      // "Aký je medzi nimi rozdiel?" after asking with and without robusta.
+      if (/rozdiel|rozdil|lisi|lisia/.test(q) && /nimi|nima|nich/.test(q) && messages.slice(0, -1).some(m => m.role === 'user' && /robust/.test(norm(m.content))) && messages.slice(0, -1).filter(m => m.role === 'assistant').slice(-1).every(m => !/https?:/.test(m.content) || /robust/i.test(m.content))) return ARAB_ROB;
       if (namesProduct(q)) return undefined;
+      const small = shopReply(q);
+      if (small !== undefined) return small;
       const how = howReply(q);
       if (how !== undefined) return how;
       const gear = gearReply(q);
@@ -378,7 +440,9 @@
       }
       return undefined;
     };
-    const noMatchNote = a => a.robustaOnly && !products.some(p => p.main && p.available && hasRobusta(p)) ? L(lang, 'Kávu s robustou e-shop v ponuke nemá.', 'Kávu s robustou e-shop v nabídce nemá.') : a.turkish ? L(lang, 'Kávu mletú na džezvu e-shop v ponuke nemá. Na džezvu treba veľmi jemné mletie (na prach), zrnkovú kávu si tak môžete pomlieť doma.', 'Kávu mletou do džezvy e-shop v nabídce nemá. Do džezvy je potřeba velmi jemné mletí (na prach), zrnkovou kávu si tak můžete namlít doma.') : '';
+    const originsOffered = () => uniq(products.filter(p => p.main && p.available).map(p => COUNTRIES.find(([k]) => norm(p.name + ' ' + (p.raw.line || '')).includes(k))).filter(Boolean).map(c => lang === 'cs' ? c[2] : c[1]));
+    const sizesOffered = () => uniq(products.filter(p => p.main && p.available && !p.sample).flatMap(p => (p.raw.variants || []).filter(v => v.available && v.grams >= 150).map(v => v.grams).concat(p.raw.variants?.length ? [] : [gramsOf(p.pack)]))).filter(Boolean).sort((x, y) => x - y);
+    const noMatchNote = a => (a.robustaOnly || a.robusta === 'yes') && !products.some(p => p.main && p.available && hasRobusta(p)) ? L(lang, 'Kávu s robustou e-shop v ponuke nemá; všetky jeho kávy sú 100 % arabika.', 'Kávu s robustou e-shop v nabídce nemá; všechny jeho kávy jsou 100% arabika.') : a.origin && !products.some(p => p.main && p.available && COUNTRIES.some(([k, label]) => label === a.origin && norm(p.name + ' ' + (p.raw.line || '')).includes(k))) ? (() => { const c = COUNTRIES.find(([, l]) => l === a.origin); const has = originsOffered(); return L(lang, `Kávu z ${c[1]} e-shop momentálne v ponuke nemá.`, `Kávu z ${c[2]} e-shop momentálně v nabídce nemá.`) + (has.length ? L(lang, ' Má kávy z ' + has.slice(0, 8).join(', ') + '.', ' Má kávy z ' + has.slice(0, 8).join(', ') + '.') : ''); })() : a.size && !sizesOffered().includes(a.size) ? L(lang, `Balenie ${packLabel(a.size)} e-shop nemá; kávu predáva v baleniach ${sizesOffered().map(packLabel).join(', ')}.`, `Balení ${packLabel(a.size)} e-shop nemá; kávu prodává v baleních ${sizesOffered().map(packLabel).join(', ')}.`) : a.process && !products.some(p => p.main && p.available && processOf(p, a.process)) ? L(lang, 'Kávu s takýmto spracovaním e-shop v ponuke neuvádza.', 'Kávu s takovým zpracováním e-shop v nabídce neuvádí.') : a.robustaOnly && !products.some(p => p.main && p.available && hasRobusta(p)) ? L(lang, 'Kávu s robustou e-shop v ponuke nemá.', 'Kávu s robustou e-shop v nabídce nemá.') : a.turkish ? L(lang, 'Kávu mletú na džezvu e-shop v ponuke nemá. Na džezvu treba veľmi jemné mletie (na prach), zrnkovú kávu si tak môžete pomlieť doma.', 'Kávu mletou do džezvy e-shop v nabídce nemá. Do džezvy je potřeba velmi jemné mletí (na prach), zrnkovou kávu si tak můžete namlít doma.') : '';
     const notSoldSuggest = () => {
       const pick = rank({prep: 'lever'}, {}, {}).filter(p => isBlend(p) && hasRobusta(p) && /arabi/.test(norm(p.name + ' ' + (p.raw.line || ''))));
       return pick.length ? {head: L(lang, 'Ak hľadáte zmes arabiky a robusty na espresso, z ponuky:', 'Pokud hledáte směs arabiky a robusty na espresso, z nabídky:'), list: pick} : {head: L(lang, 'Z ponuky na espresso:', 'Z nabídky na espresso:'), list: rank({prep: 'lever'}, {}, {})};
