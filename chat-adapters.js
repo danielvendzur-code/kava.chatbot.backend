@@ -253,7 +253,7 @@
       if (r.variants?.length) {
         const live = r.variants.filter(v => v.available);
         const packs = uniq(live.map(v => v.grams).filter(Boolean)).sort((a, b) => a - b).map(packLabel);
-        const g = uniq(live.map(v => v.grind).filter(Boolean));
+        const g = uniq([...live.map(v => v.grind).filter(Boolean), ...(r.grindOptions?.length ? ['ground'] : [])]);
         if (packs.length || g.length) f.push({k: 'packs', v: (packs.length ? L(lang, 'balenia ', 'balení ') + packs.join(', ') : '') + (g.length === 2 ? L(lang, ', zrnková aj mletá', ', zrnková i mletá') : g[0] === 'beans' ? L(lang, ', zrnková', ', zrnková') : g[0] === 'ground' ? L(lang, ', mletá', ', mletá') : '')});
       }
       return f;
