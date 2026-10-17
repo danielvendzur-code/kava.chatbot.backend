@@ -494,8 +494,14 @@
     if (suited.length) pool = suited;
     const pick = pool.slice().sort((a, b) => (a.grams || 1e6) - (b.grams || 1e6) || a.price - b.price)[0];
     const grounds = answers.prep && answers.prep !== 'automat' ? live.filter((v) => v.grind === 'ground' && v.grams === pick.grams && PREP_GRIND[answers.prep].test(v.label || '')) : [];
-    const ground = grounds.find((v) => v.extra === pick.extra) || grounds[0] || null;
-    const label = String(pick.label || '').replace(/Zrnková/g, T('zrnková', 'zrnková')).replace(/\s*·\s*/g, ' · ');
+    let ground = grounds.find((v) => v.extra === pick.extra) || grounds[0] || null;
+    /* A shop that grinds on order (a grind choice beside the pack) names the grind for this preparation. */
+    if (!ground && answers.prep && answers.prep !== 'automat' && (product.grindOptions || []).length) {
+      const want = {lever: /espresso/i, moka: /moka/i, filter: /drip|chemex|filter|french/i}[answers.prep];
+      const opt = want && product.grindOptions.find((o) => want.test(o));
+      if (opt) ground = {label: opt, price: pick.price, priceLabel: pick.priceLabel};
+    }
+    const label = String(pick.label || '').replace(/Zrnková/g, T('zrnková', 'zrnková')).replace(/bez mletia|bez mletí/gi, T('zrnková', 'zrnková')).replace(/\s*·\s*/g, ' · ');
     return {...pick, label, ground};
   }
 
@@ -687,6 +693,8 @@
   /* Every address on the shop's own site becomes a link; the answer may name a coffee that is not in the advisor list. */
   const hostOf=u=>{try{return new URL(u).hostname.replace(/^www\./,'');}catch{return '';}};
   const shopHosts=new Set([...products,...(Array.isArray(DATA.fullOffer)?DATA.fullOffer:[])].map(p=>hostOf(p.url)).concat(hostOf(brand.shopUrl||'')).filter(Boolean));
+  // An offline answer is HTML; its text, line breaks and link targets go into the history.
+  function plainText(html){const box=document.createElement('div');box.innerHTML=String(html).replace(/<br\s*\/?>/gi,'\n').replace(/<a [^>]*href="([^"]+)"[^>]*>[^<]*<\/a>/gi,'$1');return box.textContent;}
   function linkReply(text){return esc(text).replace(/https:\/\/[^\s<>]+/g,raw=>{const url=raw.replace(/[.,;:)]+$/,''),tail=raw.slice(url.length);return shopHosts.has(hostOf(url.replace(/&amp;/g,'&')))?`<a href="${url}" target="_blank" rel="noopener noreferrer">Pozrieť v e-shope ↗</a>${tail}`:raw;}).replace(/\n/g,'<br>');}
   function fallbackAnswer(text) {
     const catalogue=globalThis.CX_COFFEE_CATALOGUES?.[demo.id];
@@ -745,7 +753,8 @@
       if (!response.ok) throw new Error(`AI unavailable: ${response.status}`);
       const payload = await response.json();
       if (typeof payload.reply !== 'string' || payload.reply.trim() === '') throw new Error('Empty reply');
-      return linkReply(payload.reply);
+      // The plain reply goes back in the history: it keeps the product links and lines the next answer refers to.
+      return { html: linkReply(payload.reply), raw: payload.reply };
     } finally {
       clearTimeout(timer);
     }
@@ -776,9 +785,9 @@
     const raced = await Promise.race([pending, patience]);
     if(generation!==(state.generation||0))return;
     $('#typing')?.remove();
-    const shown = raced || offline;
+    const shown = raced ? raced.html : offline;
     const row = addMessage(shown);
-    const historyEntry={ role: 'assistant', content: shown.replace(/<[^>]*>/g, '') };
+    const historyEntry={ role: 'assistant', content: raced ? raced.raw : plainText(offline) };
     state.history.push(historyEntry);
 
     /* The answer is on screen, so the chat is free again — a request still in
@@ -789,8 +798,8 @@
     if (!raced) {
       const late = await pending;
       if (late && generation===(state.generation||0)) {
-        row.querySelector('.bubble').innerHTML = late;
-        historyEntry.content = late.replace(/<[^>]*>/g, '');
+        row.querySelector('.bubble').innerHTML = late.html;
+        historyEntry.content = late.raw;
       }
     }
   }

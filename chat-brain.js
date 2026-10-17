@@ -32,7 +32,7 @@
       notSold: name => `${name} tento e-shop nepredáva.`,
       over: (name, price, limit) => `${name} stojí ${price}, čo je nad váš limit ${limit}.`,
       fits: (name, price, limit) => `${name} stojí ${price}, teda zmestí sa do limitu ${limit}.`,
-      cheapest: (name, price) => `Najlacnejšia dostupná možnosť je ${name} za ${price}.`,
+      cheapest: (name, price) => `Najlacnejšia dostupná možnosť je ${name} za ${String(price).replace(/^od /, '')}${/^od /.test(price) ? ' (najmenšie balenie)' : ''}.`,
       underLimit: limit => `Do ${limit} máte z ponuky:`,
       noneUnder: (limit, cond) => cond ? `Do ${limit} v ponuke nie je nič, čo spĺňa: ${cond}.` : `Do ${limit} v ponuke nič vhodné nie je.`,
       chosen: 'Vyberám',
@@ -76,7 +76,7 @@
       notSold: name => `${name} tento e-shop neprodává.`,
       over: (name, price, limit) => `${name} stojí ${price}, což je nad váš limit ${limit}.`,
       fits: (name, price, limit) => `${name} stojí ${price}, takže se vejde do limitu ${limit}.`,
-      cheapest: (name, price) => `Nejlevnější dostupná možnost je ${name} za ${price}.`,
+      cheapest: (name, price) => `Nejlevnější dostupná možnost je ${name} za ${String(price).replace(/^od /, '')}${/^od /.test(price) ? ' (nejmenší balení)' : ''}.`,
       underLimit: limit => `Do ${limit} máte z nabídky:`,
       noneUnder: (limit, cond) => cond ? `Do ${limit} v nabídce není nic, co splňuje: ${cond}.` : `Do ${limit} v nabídce nic vhodného není.`,
       chosen: 'Vybírám',
@@ -116,7 +116,7 @@
   function parseBudget(raw) {
     const q = norm(raw);
     if (/bez (?:cenoveho )?limitu|bez rozpoctu|rozpocet (?:nerie|neres|nehra)|na cene nezalez|cena nehra/.test(q)) return {clear: true};
-    const rx = /(?:\bdo\b|\bmax(?:imalne|imalně)?\b|\bnajviac\b|\bnanajvys\b|\bnejvyse\b|\bpod\b|\blimit\w*(?:\s+(?:je|na|do))?|\brozpo[cč]et\w*(?:\s+(?:je|mam|mám|na|do))?|\bzvys\w*\s+(?:rozpocet\s+|limit\s+)?na|\bzvys\w*\s+na|\bnajviac\s+za|\bza\s+max\w*)\s*(\d+(?:[.,]\d+)?)\s*(kc\b|czk\b|eur\w*|€|e\b|korun\w*)?/g;
+    const rx = /(?:\bdo\b|\bmax(?:imalne|imalně)?\b|\bnajviac\b|\bnanajvys\b|\bnejvyse\b|\bpod\b|\blimit\w*(?:\s+(?:je|na|do))?|\brozpo[cč]et\w*(?:\s+(?:je|mam|mám|na|do))?|\bzvys\w*\s+(?:rozpocet\s+|limit\s+)?na|\bzvys\w*\s+na|\bnajviac\s+za|\bza\s+max\w*|\blacnejs\w*\s+(?:ako|nez)|\blevnejs\w*\s+(?:nez|jak)|\bmenej\s+(?:ako|nez)|\bmene\s+nez|\bnepresahuj\w*)\s*(\d+(?:[.,]\d+)?)\s*(kc\b|czk\b|eur\w*|€|e\b|korun\w*)?/g;
     let m, best = null;
     while ((m = rx.exec(q))) {
       const after = q.slice(m.index + m[0].length, m.index + m[0].length + 12);
@@ -269,7 +269,7 @@
       if (m.role !== 'assistant') continue;
       for (const u of String(m.content).match(/https?:\/\/[^\s]+/g) || []) { const p = byUrl.get(u.replace(/[.,;)]+$/, '')); if (p) shown.push(p); }
       // Lines "Name (pack) — price." name a product even without a link.
-      for (const line of String(m.content).split('\n')) { const head = line.split(' — ')[0].replace(/^\d+\s*×\s*/, ''); for (const k of [norm(head), norm(head.replace(/\s*\([^)]*\)\s*$/, ''))]) if (byName.has(k)) shown.push(...byName.get(k)); }
+      for (const line of String(m.content).split('\n')) { const colon = line.match(/^(?:Áno, |Ano, |Nie, |Ne, )?([^:]{6,}?)(?::| je | sa | se | obsahuje | v balení )/); if (colon && byName.has(norm(colon[1]))) shown.push(...byName.get(norm(colon[1]))); const head = line.split(' — ')[0].replace(/^\d+\s*×\s*/, ''); for (const k of [norm(head), norm(head.replace(/\s*\([^)]*\)\s*$/, ''))]) if (byName.has(k)) shown.push(...byName.get(k)); }
     }
     return uniq(shown);
   }
@@ -386,7 +386,8 @@
 
   function conditionText(ad, st) {
     const parts = (ad.describe ? ad.describe(st.answers, st.not) : []).filter(Boolean);
-    if (st.budget) parts.push((st.budget.total ? (st.qty ? st.qty + ' ks ' : '') + 'do ' : 'do ') + money(st.budget.amount, st.budget.currency || ad.currency) + (st.budget.total ? ' spolu' : ''));
+    if (st.budget?.below) parts.push((ad.lang === 'cs' ? 'levnější než ' : 'lacnejšie ako ') + money(st.budget.below, st.budget.currency || ad.currency));
+    else if (st.budget) parts.push((st.budget.total ? (st.qty ? st.qty + ' ks ' : '') + 'do ' : 'do ') + money(st.budget.amount, st.budget.currency || ad.currency) + (st.budget.total ? ' spolu' : ''));
     return parts.join(', ');
   }
 
@@ -402,7 +403,7 @@
       if (opts.other && opts.skip?.length) return t.noOther + (cond ? ' (' + cond + ')' : '') + ' ' + t.change + (ad.lang === 'cs' ? ', třeba rozpočet nebo typ.' : ', napríklad rozpočet alebo typ.');
       if (all.length && st.budget) {
         const cheapest = all.slice().sort((a, b) => (priceOf(a, st).amount ?? 1e12) - (priceOf(b, st).amount ?? 1e12))[0];
-        const condNoBudget = conditionText(ad, {...st, budget: null});
+        const condNoBudget = conditionText(ad, {...st, budget: null, answers: {...st.answers, sort: undefined}});
         return `${t.noneUnder(money(st.budget.amount, st.budget.currency || ad.currency), condNoBudget)} ${t.cheapest(cheapest.name, priceOf(cheapest, st).label)}\n\n${line(ad, cheapest, st)}`;
       }
       // A coffee that fits but is sold out right now is named rather than denied.
@@ -628,7 +629,7 @@
     if (OWNED.test(q) && ASK_REC.test(q)) named = named.filter(m => m.p.main !== false);
     // A weak name match next to real conditions ("z Kolumbie na filter") is a condition, not a product question.
     // "kávu z Dominikánskej republiky" loosely resembling one name is a country of origin, not that product.
-    if (named.length && named.every(m => !m.exact && !m.weak && m.score < 5) && ad.parse) { const pl0 = ad.parse(norm(pol.pos || latestRaw), norm(pol.neg), q); if (pl0.set?.origin) { named = []; st.answers = {...st.answers, ...pl0.set}; } }
+    if (named.length && named.every(m => !m.exact && !m.weak && m.score < 5 && words(m.p.name).map(stem).filter(x => x.length >= 4 && words(q).map(stem).includes(x)).length < 2) && ad.parse) { const pl0 = ad.parse(norm(pol.pos || latestRaw), norm(pol.neg), q); if (pl0.set?.origin) { named = []; st.answers = {...st.answers, ...pl0.set}; } }
     if (named.length && named.every(m => m.weak) && ad.parse) { const nameStems = new Set(named.flatMap(m => words(m.core).map(stem))); const rest = words(pol.pos || latestRaw).filter(w => !nameStems.has(stem(w))).join(' '); const pl = ad.parse(rest, norm(pol.neg), q); if (Object.keys(pl.set || {}).some(k => k !== 'size')) named = []; }
     // Only weak matches (one word shared by several products): the asked pack size decides, else the products are listed.
     if (named.length && named.every(m => m.weak)) {
@@ -647,9 +648,31 @@
     const lastBotMsg = [...messages].slice(0, -1).reverse().find(m => m.role === 'assistant');
     const shownLast = !named.length && lastBotMsg ? uniq(shownProducts(ad, [lastBotMsg])) : [];
     const PRONOUN = /\b(?:ju|ho|tuto|tuhle|tento|tenhle|tu istu|tu kavu|tuto kavu|tato|tata|ta)\b/;
+    // "A lacnejšiu?", "Ešte lacnejší": cheaper than everything just shown.
+    const lastListed = !named.length ? [...messages].slice(0, -1).reverse().filter(m => m.role === 'assistant').slice(0, 3).map(m => uniq(shownProducts(ad, [m]))).find(l => l.length) || [] : [];
+    if (lastListed.length && /lacnejs|levnejs/.test(q) && !/najlacn|nejlevn/.test(q) && !/\d/.test(q) && words(q).length <= 6) {
+      const shownLast = lastListed;
+      if (shownLast.every(x => x.main === false) && ad.cheaperGear) return ad.cheaperGear(shownLast);
+      // The prices and pack the customer saw in that answer ("(1 kg · zrnková) — 29 €").
+      const listedMsg = [...messages].slice(0, -1).reverse().filter(m => m.role === 'assistant').slice(0, 3).find(m => uniq(shownProducts(ad, [m])).length) || {content: ''};
+      const seen = String(listedMsg.content).split('\n').map(l => l.match(/\((\d+(?:[.,]\d+)?\s*k?g)[^)]*\)\s+—\s+(?:od\s+)?([\d\s]+(?:,\d+)?)\s*(?:€|Kč)|—\s+(?:od\s+)?([\d\s]+(?:,\d+)?)\s*(?:€|Kč)/)).filter(Boolean);
+      const seenPrices = seen.map(m => Number(String(m[2] || m[3]).replace(/\s/g, '').replace(',', '.'))).filter(Number.isFinite);
+      const seenSizes = uniq(seen.map(m => m[1] ? gramsIn(m[1]) : null));
+      const floor = seenPrices.length ? Math.min(...seenPrices) : Math.min(...shownLast.map(x => priceOf(x, st).amount).filter(Number.isFinite));
+      if (Number.isFinite(floor)) {
+        const cheaper = {...st, budget: {amount: floor - 0.01, currency: ad.currency, below: floor}, answers: {...st.answers, ...(seenSizes.length === 1 && seenSizes[0] ? {size: seenSizes[0]} : {})}};
+        delete cheaper.answers.sort;
+        const {fit} = candidates(ad, cheaper, {});
+        if (!fit.length) return (ad.lang === 'cs' ? 'Levnější kávu, která splňuje vaše podmínky, e-shop nemá; nejlevnější jsou za ' : 'Lacnejšiu kávu, ktorá spĺňa vaše podmienky, e-shop nemá; najlacnejšie sú za ') + money(floor, ad.currency) + '.';
+        return recommendReply(ad, cheaper);
+      }
+    }
     if (shownLast.length && words(q).length <= 8) {
       // "Ktorá z nich je najlacnejšia / najmenej kyslá?": chosen among the coffees just shown.
-      if (/\bz (?:nich|tychto|tych|tejto|techto|tech)\b|ktor\w* z |kter\w* z /.test(q) && shownLast.length > 1) {
+      // "Je prvá z nich kyslá?", "Koľko stojí tá druhá?": that coffee in the list.
+      const ord = /\b(?:prv[aáyeýu]|prvn[ií])\b/.test(q) ? 0 : /\b(?:druh[aáyeýu]|druh[aá])\b/.test(q) ? 1 : /\b(?:tret[iíia]\w*)\b/.test(q) ? 2 : -1;
+      if (ord >= 0 && shownLast[ord] && !named.length) named = [{p: shownLast[ord], all: [shownLast[ord]], exact: false, core: '', score: 10, pos: 0}];
+      else if (/\bz (?:nich|tychto|tych|tejto|techto|tech)\b|ktor\w* z |kter\w* z /.test(q) && shownLast.length > 1 && /\bnaj|\bnej/.test(q)) {
         const by = /najlacn|nejlevn/.test(q) ? (x => priceOf(x, st).amount ?? 1e9) : /najdrah|nejdraz/.test(q) ? (x => -(priceOf(x, st).amount ?? 0)) : /kysl|kysel|acid/.test(q) ? (x => Number.isFinite(x.raw?.acidity) ? x.raw.acidity : 9) : null;
         if (by) {
           const best = shownLast.filter(x => x.available !== false).slice().sort((a, b) => by(a) - by(b))[0];
@@ -659,7 +682,7 @@
       // "Aký je medzi nimi rozdiel?": the first two coffees just shown.
       if (COMPARE.test(q) && shownLast.length >= 2 && /nimi|nich|tymi|tyma|tymito|dvoma|oboma|nima/.test(q)) return compareReply(ad, st, {p: shownLast[0], all: [shownLast[0]]}, {p: shownLast[1], all: [shownLast[1]]});
       // "Je mletá alebo zrnková?", "Sú bez kofeínu?" about the coffees just shown.
-      if (shownLast.length > 1 && ad.attribute && /^(?:a\s+)?(?:je|su|ma|maju|jsou|sa predava|predavaju|da sa|daju sa)\b/.test(q) && !ASK_REC.test(q)) {
+      if (!named.length && shownLast.length > 1 && ad.attribute && /^(?:a\s+)?(?:je|su|ma|maju|jsou|sa predava|predavaju|da sa|daju sa)\b/.test(q) && !ASK_REC.test(q)) {
         const answers = shownLast.slice(0, 3).map(x => ad.attribute(x, q)).filter(Boolean);
         if (answers.length) return answers.join('\n');
       }
@@ -747,7 +770,7 @@
     // A named product that is not excluded: detail, attribute or price check against the budget.
     if (named.length && !st.excluded.has(named[0].p.id)) {
       const m = named[0];
-      const inexact = (() => { const ws = words(pol.pos || latestRaw).filter(w => w.length >= 5 && !(index.df.get(stem(w))) && !/^(?:rozpoc|limit|chcem|teraz|stale|povod|plati|neplat|prosim|hladam|odpor|konkr|produk|vyber|dostup|moznos|zvys|nizsi|vyssi|porov|rozdi|lisi|ktory|ktora|ktore|preco|kupuj|chcel|chcela)/.test(w)); return ws; })();
+      const inexact = (() => { const ws = words(pol.pos || latestRaw).filter(w => w.length >= 5 && !(index.df.get(stem(w))) && !/^(?:rozpoc|limit|chcem|teraz|stale|povod|plati|neplat|prosim|hladam|odpor|konkr|produk|vyber|dostup|moznos|zvys|nizsi|vyssi|porov|rozdi|lisi|ktory|ktora|ktore|preco|kupuj|chcel|chcela|kolko|kolik|stoji|stoja|cena|ceny|cenu|skladom|skladem|baleni|predav|prodav|mletu|mleta|zrnkov|kilov)/.test(w)); return ws; })();
       if (DETAIL.test(qi) || /\?$/.test(q.trim()) || asked) {
         const head = inexact.length && !m.exact && m.score < 5 ? t.notExact(capital(inexact.slice(0, 2).join(' ')), m.p.name) + '\n\n' : '';
         return head + detailReply(ad, st, m, q, qi);
