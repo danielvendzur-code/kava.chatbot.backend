@@ -89,9 +89,24 @@
     return set.default;
   };
 
+  const adapters = {};
+  const brainReply = (demoId, catalogue, content, messages) => {
+    const brain = globalThis.CXChatBrain;
+    if (!brain?.adapters?.coffee) return null;
+    try {
+      adapters[demoId] ||= brain.adapters.coffee(catalogue);
+      return brain.reply(adapters[demoId], content, messages) || null;
+    } catch (error) {
+      console.warn('Coffee chat brain failed, using the catalogue answers.', error);
+      return null;
+    }
+  };
+
   const fallbackResponse = (init) => {
     const { demoId, content } = latestText(init);
-    const payload=JSON.parse(init?.body||'{}');const c=globalThis.CX_COFFEE_CATALOGUES?.[demoId];const reply=c&&globalThis.CXCoffeeReplyCore?globalThis.CXCoffeeReplyCore(c,content,payload.messages||[]):null;
+    const payload=JSON.parse(init?.body||'{}');const c=globalThis.CX_COFFEE_CATALOGUES?.[demoId];
+    // Without the API (Websupport) the same chat brain answers in the browser; the catalogue core is the last resort.
+    const reply=(c&&brainReply(demoId,c,content,payload.messages||[]))||(c&&globalThis.CXCoffeeReplyCore?globalThis.CXCoffeeReplyCore(c,content,payload.messages||[]):null);
     if (!reply) return new Response('', { status: 503, headers: { 'cache-control': 'no-store' } });
     return new Response(JSON.stringify({ reply, fallback: true }), {
       status: 200,
