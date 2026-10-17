@@ -43,7 +43,8 @@
       const shownPrice = fromRegular !== null ? (new Set(regular.map(v => v.price)).size > 1 ? 'od ' : '') + money(fromRegular, p.currency || currency) : tidyPrice(p.price);
       return {
         id: String(p.id || p.url), name: p.name, url: p.url, price: shownPrice, amount: fromRegular !== null ? fromRegular : Number.isFinite(p.priceAmount) ? p.priceAmount : null, currency: p.currency || currency,
-        pack, available: p.available !== false, main, kind: p.kind || 'Káva', raw: p, grinds: grindKnown,
+        pack, available: p.available !== false, gone: !!p.gone, main, kind: p.kind || 'Káva', raw: p, grinds: grindKnown,
+        sample: /vzork|vzorek|sample|degust|ochutn|tester|tasting/i.test(norm(p.name)) || (gramsOf(pack) || 999) < 150,
         variantFor(answers, limit) {
           if (!p.variants?.length) return null;
           // Over the budget with a regular pack, a smaller pack (also a sample) that fits is the honest answer.
@@ -82,6 +83,7 @@
       const out = [];
       if (a.prep) out.push(L(lang, a.prep === 'automat' ? 'do automatu' : 'na ' + PREP_LABEL.sk[a.prep], a.prep === 'automat' ? 'do automatu' : 'na ' + PREP_LABEL.cs[a.prep]));
       if (a.decaf === 'yes') out.push(L(lang, 'bez kofeínu', 'bez kofeinu'));
+      if (a.gift && products.some(p => p.main && p.available && p.raw.gift)) out.push(L(lang, 'ako darček', 'jako dárek'));
       if (a.decaf === 'no') out.push(L(lang, 's kofeínom', 's kofeinem'));
       if (a.milk === 'yes' && milkData) out.push(L(lang, 'do mlieka', 'do mléka'));
       if (a.taste === 'fruity') out.push(L(lang, 'ovocná chuť', 'ovocná chuť'));
@@ -90,6 +92,7 @@
       if (a.grind === 'beans' && grindData && !grindMissing('beans')) out.push(L(lang, 'zrnková', 'zrnková'));
       if (a.grind === 'ground' && grindData && !grindMissing('ground')) out.push(L(lang, 'mletá', 'mletá'));
       if (a.size) out.push(L(lang, 'balenie ', 'balení ') + packLabel(a.size));
+      if (a.origin) { const c = COUNTRIES.find(([, l]) => l === a.origin); out.push('z ' + (lang === 'cs' ? c[2] : c[1])); }
       if (a.arabica) out.push(L(lang, 'bez robusty', 'bez robusty'));
       if (not.prep?.length) out.push(L(lang, 'nie ', 'ne ') + not.prep.map(k => PREP_LABEL[lang][k]).join(', '));
       if (not.robusta) out.push(L(lang, 'bez robusty', 'bez robusty'));
@@ -98,7 +101,7 @@
     };
     function parse(pos, neg, q) {
       const set = {}, not = {};
-      if (/bez\s*kofein|bezkofein|decaf|odkofein/.test(pos) || /kofein/.test(neg)) set.decaf = 'yes';
+      if (/bez\s*kofein|bezkofein|decaf|odkofein|nizkokofein|nizko kofein|menej kofein|malo kofein|mene kofein/.test(pos) || /kofein/.test(neg)) set.decaf = 'yes';
       else if (/s kofeinom|s kofeinem|kofeinov\w* kav|normaln\w* kav|klasick\w* kav|kavu s kofein/.test(pos)) set.decaf = 'no';
       if (/filtr|filter|v60|chemex|aeropress|french|frenc|prekap|prekvap|kalita|zalievan|zalivan|pour.?over/.test(pos)) set.prep = 'filter';
       else if (/automat|plnoautomat|super.?automat/.test(pos)) set.prep = 'automat';
@@ -118,14 +121,20 @@
       if (/robust/.test(neg)) not.robusta = true;
       if (/100\s*% arabik|100\s*% arabic|iba arabik|len arabik|jen arabik|cista arabik/.test(pos)) set.arabica = true;
       if (/zmes|smes|blend/.test(neg)) not.blend = true;
+      // A country of origin ("Máte Brazíliu?", "kávu z Etiópie") is a condition on the coffee's name.
+      const origin = B.words(pos).map(w => COUNTRIES.find(([k]) => w.length >= 4 && (w.startsWith(k.slice(0, 5)) || k.startsWith(w.slice(0, 5)) && w.length >= 5))).find(Boolean);
+      if (origin) set.origin = origin[1];
+      if (/darcek|darcekov|darcek\w*|darek|darkov|na darcek|ako darcek|jako darek|pre mamu|pro mamu|k narodenin|k meninam|svadb|svatb|podakov|podekov|pre ucitel|pro ucitel/.test(pos)) set.gift = true;
       return {set, not};
     }
     const isBlend = p => /blend|zmes|směs|smes|\d+\s*\/\s*\d+/.test(norm(p.name + ' ' + (p.raw.line || '')));
     const hasRobusta = p => /robust/.test(norm(p.name + ' ' + (p.raw.line || '')));
     function rank(a = {}, not = {}, st = {}, opts = {}) {
       let list = products.filter(p => p.main && (opts.all || p.available));
-      if (a.decaf === 'yes') list = list.filter(p => p.raw.decaf);
-      if (a.decaf === 'no') list = list.filter(p => !p.raw.decaf);
+      // A low-caffeine coffee is offered next to decaf (after it), never as a coffee with caffeine.
+      const caffeineLess = p => p.raw.decaf || p.raw.lowCaffeine;
+      if (a.decaf === 'yes') list = list.filter(caffeineLess);
+      if (a.decaf === 'no') list = list.filter(p => !caffeineLess(p));
       if (a.prep) list = list.filter(p => (p.raw.prep?.[a.prep] || 0) >= 0.6);
       if (not.prep?.length) list = list.filter(p => { const fits = Object.entries(p.raw.prep || {}).filter(([, v]) => v >= 0.6).map(([k]) => k); return !fits.length || fits.some(k => !not.prep.includes(k)) && !(not.prep.includes('lever') && (p.raw.prep?.lever || 0) >= 0.6 && (p.raw.prep?.filter || 0) < 0.6 && !a.prep); });
       if (a.milk === 'yes' && milkData) list = list.filter(p => (p.raw.drink?.milk || 0) >= 0.6);
@@ -136,8 +145,9 @@
       if (a.size) list = list.filter(p => p.raw.variants?.length ? p.raw.variants.some(v => v.available && v.grams === a.size) : gramsOf(p.pack) === a.size || gramsOf(p.raw.weights) === a.size && !/,/.test(p.raw.weights || ''));
       if (not.robusta || a.arabica) list = list.filter(p => !hasRobusta(p));
       if (not.blend) list = list.filter(p => !isBlend(p));
+      if (a.origin) list = list.filter(p => COUNTRIES.some(([k, label]) => label === a.origin && norm(p.name + ' ' + (p.raw.line || '')).includes(k)));
       // Decaf only when asked for, or when no other coffee fits.
-      if (!a.decaf && list.some(p => !p.raw.decaf)) list = list.filter(p => !p.raw.decaf);
+      if (!a.decaf && list.some(p => !caffeineLess(p))) list = list.filter(p => !caffeineLess(p));
       const named = p => { const n = norm(p.name); if (a.prep === 'filter') return /filter|filtr/.test(n) ? 0.5 : /espresso/.test(n) ? -0.6 : 0; if (a.prep === 'lever') return /espresso/.test(n) ? 0.5 : /filter|filtr/.test(n) ? -0.6 : 0; return 0; };
       // Samples and tasting packs are not a main recommendation unless the size was asked for.
       const sample = p => !a.size && (/vzork|vzorek|sample|degust|ochutn|tester|testovac|tasting/.test(norm(p.name)) || (gramsOf(p.pack) || 999) < 150);
@@ -145,7 +155,7 @@
       const multi = p => !a.size && (/\d\s*x\s*\d|\d\s*\+\s*\d/.test(norm(p.name)) || (gramsOf(p.pack) || 0) >= 1000);
       const known = p => (a.lowAcid && Number.isFinite(p.raw.acidity) && p.raw.acidity <= 1 ? 0.5 : 0);
       // A decaf is not the first suggestion for someone who did not ask for one.
-      const score = p => (a.prep ? p.raw.prep?.[a.prep] || 0 : 0) + named(p) + (a.taste ? p.raw.taste?.[a.taste] || 0 : 0) + (a.milk === 'yes' ? p.raw.drink?.milk || 0 : 0) + known(p) + ((p.raw.notes || []).length ? 0.2 : 0) - (sample(p) ? 1 : 0) - (multi(p) ? 0.5 : 0) - (!a.decaf && p.raw.decaf ? 1 : 0);
+      const score = p => (a.prep ? p.raw.prep?.[a.prep] || 0 : 0) + named(p) + (a.taste ? p.raw.taste?.[a.taste] || 0 : 0) + (a.milk === 'yes' ? p.raw.drink?.milk || 0 : 0) + known(p) + ((p.raw.notes || []).length ? 0.2 : 0) - (sample(p) ? 1 : 0) - (multi(p) ? 0.5 : 0) - (!a.decaf && p.raw.decaf ? 1 : 0) - (a.decaf === 'yes' && !p.raw.decaf ? 0.6 : 0) + (a.gift && p.raw.gift ? 2 : 0);
       const price = p => { const v = p.variantFor(a, st.budget && !st.budget.total ? st.budget.amount : null); return v ? v.price : Number.isFinite(p.amount) ? p.amount : Infinity; };
       const budget = st.budget?.amount;
       return list.sort((x, y) => score(y) - score(x) || (budget ? price(y) - price(x) : price(x) - price(y)) || x.name.localeCompare(y.name));
@@ -161,6 +171,8 @@
       if (country && !isBlend(p)) f.push({k: 'origin', v: L(lang, 'z ', 'z ') + (lang === 'cs' ? country[2] : country[1])});
       else if (isBlend(p) && !f.some(x => x.k === 'beans' && /zmes|směs/.test(x.v))) f.push({k: 'origin', v: L(lang, 'zmes', 'směs')});
       if (r.decaf) f.push({k: 'decaf', v: L(lang, 'bez kofeínu', 'bez kofeinu'), hint: L(lang, 'ak nechcete kofeín', 'pokud nechcete kofein')});
+      else if (r.lowCaffeine) f.push({k: 'decaf', v: L(lang, 'nízkokofeínová, nie úplne bez kofeínu', 'nízkokofeinová, ne zcela bez kofeinu'), hint: L(lang, 'ak chcete menej kofeínu', 'pokud chcete méně kofeinu')});
+      if (r.gift) f.push({k: 'gift', v: L(lang, 'e-shop ju ponúka ako darček', 'e-shop ji nabízí jako dárek')});
       if ((r.notes || []).length) f.push({k: 'taste', v: L(lang, 'chuť: ', 'chuť: ') + tasteNotes(r).join(', '), hint: (r.taste?.fruity || 0) >= 0.6 && !(r.taste?.chocolate >= 0.6) ? L(lang, 'ak máte radi ovocnejšiu chuť', 'pokud máte rádi ovocnější chuť') : L(lang, 'ak máte radi čokoládové tóny', 'pokud máte rádi čokoládové tóny')});
       if (Number.isFinite(r.acidity) && !tasteNotes(r).some(n => /kysl|kysel|acid/.test(norm(n)))) f.push({k: 'acidity', v: acidText(r), hint: r.acidity <= 0 ? L(lang, 'ak nechcete kyslú kávu', 'pokud nechcete kyselou kávu') : ''});
       // Only preparations the shop names are quoted as the shop's; an espresso coffee fit for a machine is not.
@@ -176,7 +188,7 @@
     }
     function attribute(p, q) {
       const r = p.raw;
-      if (/kofein|decaf/.test(q)) return r.decaf ? L(lang, `Áno, ${p.name} je podľa e-shopu bezkofeínová.`, `Ano, ${p.name} je podle e-shopu bezkofeinová.`) : L(lang, `${p.name} nie je označená ako bezkofeínová.`, `${p.name} není označená jako bezkofeinová.`);
+      if (/kofein|decaf/.test(q)) return r.decaf ? L(lang, `Áno, ${p.name} je podľa e-shopu bezkofeínová.`, `Ano, ${p.name} je podle e-shopu bezkofeinová.`) : r.lowCaffeine ? L(lang, `${p.name} je podľa e-shopu nízkokofeínová, nie úplne bez kofeínu.`, `${p.name} je podle e-shopu nízkokofeinová, ne zcela bez kofeinu.`) : L(lang, `${p.name} nie je označená ako bezkofeínová.`, `${p.name} není označená jako bezkofeinová.`);
       if (/zrnk|mlet|zrna/.test(q)) { const g = p.grinds; return g.length === 2 ? L(lang, `${p.name} sa predáva zrnková aj mletá.`, `${p.name} se prodává zrnková i mletá.`) : g[0] === 'beans' ? L(lang, `${p.name} je v ponuke zrnková.`, `${p.name} je v nabídce zrnková.`) : g[0] === 'ground' ? L(lang, `${p.name} je v ponuke mletá.`, `${p.name} je v nabídce mletá.`) : L(lang, `Či je ${p.name} zrnková alebo mletá, e-shop pri produkte neuvádza.`, `Zda je ${p.name} zrnková nebo mletá, e-shop u produktu neuvádí.`); }
       if (/kysl|kysel|acid/.test(q)) return Number.isFinite(r.acidity) ? `${p.name}: ${acidText(r)}.` : L(lang, `Kyslosť e-shop pri produkte ${p.name} neuvádza.`, `Kyselost e-shop u produktu ${p.name} neuvádí.`);
       if (/baleni|balenie|gramaz|gram|velkost|kolko stoj|kolik stoj|cena|cenu/.test(q) && r.variants?.length) {
@@ -227,7 +239,30 @@
     }
     const accessoryReason = (p) => ACC.storage.test(norm(p.name)) ? L(lang, 'Vákuová alebo vzduchotesná dóza udrží otvorené balenie dlhšie čerstvé.', 'Vakuová nebo vzduchotěsná dóza udrží otevřené balení déle čerstvé.') : ACC.grinder.test(norm(p.name)) ? L(lang, 'Zrnkovú kávu pomeliete čerstvo pred prípravou.', 'Zrnkovou kávu namelete čerstvě před přípravou.') : '';
     const general = q => { const kind = scope.CXCoffeeReplyKind?.(q); return kind?.kind === 'general' || kind?.kind === 'health'; };
-    return {family: 'coffee', lang, currency, source: c.source, shipping: c.shipping || null, products, parse, rank, facts, attribute, usage, accessories, accessoryReason, describe, relax: ['taste', 'milk', 'lowAcid', 'prep'], soldOutMatch: (a, not) => rank(a, not, {}, {all: true}).find(p => !p.available) || null, reasonKeys: ['taste', 'acidity', 'decaf', 'origin', 'beans', 'prep', 'packs'], general, preNote: a => { const miss = [a.grind && !grindData ? L(lang, 'či je zrnková alebo mletá', 'zda je zrnková nebo mletá') : '', a.milk === 'yes' && !milkData ? L(lang, 'či sa hodí do mlieka', 'zda se hodí do mléka') : '', a.lowAcid && !acidData ? L(lang, 'akú má kyslosť', 'jakou má kyselost') : ''].filter(Boolean); const gone = a.grind && grindMissing(a.grind) ? (a.grind === 'ground' ? L(lang, 'Mletú kávu e-shop v ponuke nemá, predáva ju v zrnách.', 'Mletou kávu e-shop v nabídce nemá, prodává ji v zrnech.') : L(lang, 'Zrnkovú kávu e-shop v ponuke nemá, predáva ju mletú.', 'Zrnkovou kávu e-shop v nabídce nemá, prodává ji mletou.')) : ''; return [gone, miss.length ? L(lang, 'E-shop pri väčšine káv neuvádza, ', 'E-shop u většiny káv neuvádí, ') + miss.join(L(lang, ' ani ', ' ani ')) + '.' : ''].filter(Boolean).join(' '); }, similar: p => ({decaf: p.raw.decaf ? 'yes' : undefined})};
+    /* Coffees in stock closest to one the shop does not sell now: shared taste, preparation and notes,
+       the same caffeine and robusta content, a similar price; the asked pack size first. */
+    function similarTo(p, a = {}) {
+      const r = p.raw, notes = new Set((r.notes || []).map(norm));
+      const sim = x => {
+        const y = x.raw;
+        let v = 0;
+        for (const k of ['chocolate', 'fruity', 'bold', 'balanced']) v += Math.min(r.taste?.[k] || 0, y.taste?.[k] || 0);
+        for (const k of ['lever', 'filter', 'moka', 'automat']) if ((r.prep?.[k] || 0) >= 0.6 && (y.prep?.[k] || 0) >= 0.6) v += 0.4;
+        v += 0.3 * (y.notes || []).filter(n => notes.has(norm(n))).length;
+        if (hasRobusta(x) === hasRobusta(p)) v += 1;
+        if (isBlend(x) === isBlend(p)) v += 0.5;
+        if (a.size && (gramsOf(x.pack) === a.size || gramsOf(y.weights) === a.size)) v += 1.2;
+        if (Number.isFinite(p.amount) && Number.isFinite(x.amount)) v -= 0.6 * Math.min(1, Math.abs(x.amount - p.amount) / Math.max(p.amount, 1));
+        return v - (x.sample ? 1 : 0) - (/\d\s*x\s*\d/.test(norm(x.name)) ? 0.6 : 0);
+      };
+      return products.filter(x => x.main && x.available && x.id !== p.id && !!(x.raw.decaf || x.raw.lowCaffeine) === !!(r.decaf || r.lowCaffeine)).map(x => [x, sim(x)]).sort((m, n) => n[1] - m[1]).map(([x]) => x);
+    }
+    /* A brand the shop does not sell: what the shop has for the same use, without claims about the other brand. */
+    const notSoldSuggest = () => {
+      const pick = rank({prep: 'lever'}, {}, {}).filter(p => isBlend(p) && hasRobusta(p) && /arabi/.test(norm(p.name + ' ' + (p.raw.line || ''))));
+      return pick.length ? {head: L(lang, 'Ak hľadáte zmes arabiky a robusty na espresso, z ponuky:', 'Pokud hledáte směs arabiky a robusty na espresso, z nabídky:'), list: pick} : {head: L(lang, 'Z ponuky na espresso:', 'Z nabídky na espresso:'), list: rank({prep: 'lever'}, {}, {})};
+    };
+    return {family: 'coffee', lang, currency, source: c.source, shipping: c.shipping || null, products, parse, rank, facts, attribute, usage, accessories, accessoryReason, describe, relax: ['taste', 'milk', 'lowAcid', 'prep'], similarTo, notSoldSuggest, notBrand: q => COUNTRIES.some(([k]) => q.includes(k.slice(0, 4))), soldOutMatch: (a, not) => rank(a, not, {}, {all: true}).find(p => !p.available) || null, reasonKeys: ['gift', 'taste', 'acidity', 'decaf', 'origin', 'beans', 'prep', 'packs'], general, preNote: a => { const miss = [a.grind && !grindData ? L(lang, 'či je zrnková alebo mletá', 'zda je zrnková nebo mletá') : '', a.milk === 'yes' && !milkData ? L(lang, 'či sa hodí do mlieka', 'zda se hodí do mléka') : '', a.lowAcid && !acidData ? L(lang, 'akú má kyslosť', 'jakou má kyselost') : ''].filter(Boolean); const gone = a.grind && grindMissing(a.grind) ? (a.grind === 'ground' ? L(lang, 'Mletú kávu e-shop v ponuke nemá, predáva ju v zrnách.', 'Mletou kávu e-shop v nabídce nemá, prodává ji v zrnech.') : L(lang, 'Zrnkovú kávu e-shop v ponuke nemá, predáva ju mletú.', 'Zrnkovou kávu e-shop v nabídce nemá, prodává ji mletou.')) : ''; return [gone, miss.length ? L(lang, 'E-shop pri väčšine káv neuvádza, ', 'E-shop u většiny káv neuvádí, ') + miss.join(L(lang, ' ani ', ' ani ')) + '.' : ''].filter(Boolean).join(' '); }, similar: p => ({decaf: p.raw.decaf ? 'yes' : undefined})};
   }
 
   /* ======================= WINE ======================= */

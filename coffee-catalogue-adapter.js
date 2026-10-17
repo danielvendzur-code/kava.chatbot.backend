@@ -23,7 +23,19 @@
   /* A question is asked only when most coffees carry the fact it decides on; an unknown is never shown as a match. */
   const KNOWN={taste:p=>Object.values(p.taste||{}).some(v=>v>=.6),prep:p=>Object.values(p.prep||{}).some(v=>v>=.6),drink:p=>Object.values(p.drink||{}).some(v=>v>=.6),acidity:p=>Number.isFinite(p.acidity)};
   data.steps=data.steps.filter(s=>!KNOWN[s.key]||products.filter(KNOWN[s.key]).length>=products.length*.5);
-  if(products.some(p=>p.decaf)&&products.some(p=>!p.decaf)&&!data.steps.some(s=>s.key==='caffeine'))data.steps.push({key:'caffeine',name:'Kofeín',title:'Má káva obsahovať kofeín?',options:[
+  /* Roast intensity is asked where the shop states the roast (a category or a roast variant) for most coffees.
+     A coffee without that statement is not a match for any intensity, but it is not removed either. */
+  const INTENSITY=[['light','Jemnejšia a svieža','Svetlejšie praženie'],['balanced','Vyvážená','Omni alebo stredné praženie'],['full','Plná a tmavšia','Tmavé praženie na espresso']];
+  const roastKnown=products.filter(p=>Object.values(p.intensity||{}).some(v=>v>=.6));
+  if(roastKnown.length>=products.length*.5&&!data.steps.some(s=>s.key==='intensity')){
+    const options=INTENSITY.filter(([v])=>roastKnown.some(p=>p.intensity[v]>=.6)).map(([value,title,detail])=>({value,title,detail,photo:`/assets/scenes/coffee-intensity-${value}.jpg`}));
+    if(options.length>=2){
+      if(options.length<3)options.push({value:'any',title:'Nezáleží mi na tom',detail:'Vyberiem podľa ostatných odpovedí',photo:'/assets/scenes/coffee-explore.jpg'});
+      const at=data.steps.findIndex(s=>s.key==='prep');
+      data.steps.splice(at>=0?at+1:data.steps.length,0,{key:'intensity',name:'Intenzita',title:'Akú intenzitu chcete?',options});
+    }
+  }
+  if(products.some(p=>p.decaf)&&products.some(p=>!p.decaf&&!p.lowCaffeine)&&!data.steps.some(s=>s.key==='caffeine'))data.steps.push({key:'caffeine',name:'Kofeín',title:'Má káva obsahovať kofeín?',options:[
     {value:'yes',title:'S kofeínom',detail:'Vyberiem bežnú kávu z ponuky',photo:'/assets/scenes/coffee-black.jpg'},
     {value:'no',title:'Bez kofeínu',detail:'Iba kávy označené ako bezkofeínové',photo:'/assets/scenes/coffee-decaf-cup.jpg'}
   ]});

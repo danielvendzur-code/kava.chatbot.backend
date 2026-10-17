@@ -25,6 +25,11 @@
       notExact: (asked, found) => `${asked} v ponuke nevidím; najbližší názov je ${found}.`,
       compareMissing: (missing) => `${missing} v ponuke nevidím, preto ich neviem porovnať. V ponuke je:`,
       soldOut: 'Momentálne nie je skladom.',
+      gone: name => `${name} teraz v ponuke nie je.`,
+      sameOther: 'Tá istá v inom balení, ktoré je skladom:',
+      byName: 'V ponuke s týmto názvom:',
+      similarNow: 'Podobné, ktoré sú teraz skladom:',
+      notSold: name => `${name} tento e-shop nepredáva.`,
       over: (name, price, limit) => `${name} stojí ${price}, čo je nad váš limit ${limit}.`,
       fits: (name, price, limit) => `${name} stojí ${price}, teda zmestí sa do limitu ${limit}.`,
       cheapest: (name, price) => `Najlacnejšia dostupná možnosť je ${name} za ${price}.`,
@@ -64,6 +69,11 @@
       notExact: (asked, found) => `${asked} v nabídce nevidím; nejbližší název je ${found}.`,
       compareMissing: (missing) => `${missing} v nabídce nevidím, proto je nemohu porovnat. V nabídce je:`,
       soldOut: 'Momentálně není skladem.',
+      gone: name => `${name} teď v nabídce není.`,
+      sameOther: 'Stejná v jiném balení, které je skladem:',
+      byName: 'V nabídce s tímto názvem:',
+      similarNow: 'Podobné, které jsou teď skladem:',
+      notSold: name => `${name} tento e-shop neprodává.`,
       over: (name, price, limit) => `${name} stojí ${price}, což je nad váš limit ${limit}.`,
       fits: (name, price, limit) => `${name} stojí ${price}, takže se vejde do limitu ${limit}.`,
       cheapest: (name, price) => `Nejlevnější dostupná možnost je ${name} za ${price}.`,
@@ -191,12 +201,12 @@
     const qCoreFlat = ' ' + words(coreOf(raw)).join(' ') + ' ';
     // Words written with a capital letter are likely names ("Guatemalou"), plain words are not.
     // The first word of a sentence is capitalised anyway ("Máte …"), so it is no sign of a name.
-    const capitalStems = new Set(String(raw).replace(/(^|[.!?]\s+)\p{L}+/gu, '$1').split(/[^\p{L}\p{N}]+/u).filter(w => /^\p{Lu}/u.test(w)).map(w => stem(norm(w))));
+    const capitalStems = new Set(String(opts.raw || raw).replace(/(^|[.!?]\s+)\p{L}+/gu, '$1').split(/[^\p{L}\p{N}]+/u).filter(w => /^\p{Lu}/u.test(w)).map(w => stem(norm(w))));
     const found = new Map();
     for (const [core, list] of index.cores) {
       const head = list[0];
       if (!head.toks.length) continue;
-      let score = 0, pos = -1, exact = false;
+      let score = 0, pos = -1, exact = false, weak = false;
       const coreWords = words(core);
       const allGeneric = coreWords.every(w => GENERIC.test(w) || w.length < 3 || /^\d+$/.test(w));
       const coreFlat = ' ' + coreWords.join(' ') + ' ';
@@ -213,6 +223,10 @@
         const uniqueCapital = hit.some(s => (index.stemCores.get(s)?.size || 0) === 1 && s.length >= 4 && capitalStems.has(s));
         if (coverage >= 0.6 && (hit.length >= 2 || unique && (significant.length <= 2 || uniqueCapital) || significant.length === 1 && (capitalStems.has(hit[0]) || hit[0].length >= 5 && unique))) score = 5 * coverage + hit.length;
         else if (uniqueCapital && !opts.strict) score = 3 + coverage;
+        // "Máte kupelnu kavu?": one distinctive word of a name, written without capitals or diacritics and with any ending.
+        else if (opts.loose && !opts.strict && hit.some(s => (index.stemCores.get(s)?.size || 0) === 1 && s.length >= 5 && !COMMON.has(s))) score = 2.5 + coverage;
+        // A name word shared by several products ("Etiópiu"): a weak match the reply resolves by pack size or lists.
+        else if (opts.loose && !opts.strict && coverage >= 0.6 && hit.some(s => s.length >= 5 && !COMMON.has(s) && (capitalStems.has(s) || (index.stemCores.get(s)?.size || 0) <= 8))) { score = 1 + coverage; weak = true; }
         else continue;
         pos = Math.min(...hit.map(s => { const i = qWords.findIndex(w => stem(w) === s); return i < 0 ? 1e9 : q.indexOf(' ' + qWords[i]); }));
       }
@@ -220,7 +234,7 @@
       const size = q.match(/(\d+(?:[.,]\d+)?)\s*(ml|g|kg|l)\b/);
       let pick = list.find(it => it.p.available !== false) || list[0];
       if (size) { const s = size[1].replace(',', '.') + ' ' + size[2]; const sized = list.find(it => norm(it.p.pack || it.p.name).replace(',', '.').includes(s) || norm(it.p.pack || it.p.name).replace(',', '.').includes(s.replace(' ', ''))); if (sized) pick = sized; }
-      found.set(core, {p: pick.p, all: list.map(i => i.p), score, pos, exact, core});
+      found.set(core, {p: pick.p, all: list.map(i => i.p), score, pos, exact, core, weak});
     }
     let list = [...found.values()].sort((a, b) => b.score - a.score || a.pos - b.pos);
     if (!list.length) return [];
@@ -242,6 +256,7 @@
   const USAGE = /\bako (?:sa )?(?:spravne )?(?:pouzi|pouziv|aplik|nanies|nanas|pripr|uvar|varit|davk|pit|podav|pest|polie|zalie|skladov|pouzit)|\bjak (?:se )?(?:spravne )?(?:pouzi|pouziv|aplik|nanes|pripr|uvar|varit|davk|pit|podav|pest|zali|skladov)|navod|postup|mnozstv|kolko (?:gram|ml|kvap|krat|lyzic)|kolik (?:gram|ml|kap|krat)|\bv60\b|french ?press|aeropress|chemex|moka|dzezv|mozem .* (?:pouzit|pripravit)|muzu .* (?:pouzit|pripravit)|na (?:v60|filter|filtr|french|aeropress)\b.*\?/;
   const DETAIL = /\bco je\b|\bco su\b|\bco jsou\b|\bpre koho\b|\bpro koho\b|povedz|povedzte|popis|informac|viac o|vic o|o (?:tomto|tomhle|produkte|vyrobku)|\bje (?:to )?\w+.*\?|\bma\b.*\?|\bobsahuje\b|\bkolko stoj|\bkolik stoj|\bcena\b|\bskladom\b|\bskladem\b|\bdostupn|\bmate (?:produkt|na sklade)|\bmate\b.*\?|\bje vhodn|\bhodi sa\b|\bhodi se\b|\bsuche alebo|\bsladke alebo|\bpolosuche alebo/;
   const ACCESSORY = /doplnok|doplnk|doplnek|prislusenstv|k tomu|k nej\b|k nemu\b|k nim\b|k tejto|k tomuto|k tomu|co este|co jeste|\bdoz[auy]\b|doza\b|vakuov|sitk|sitek|sítk|infuz|kanvick|konvick|kvetinac|crepnik|obal na|podmisk|misk[auy]\b|substrat|hnojiv|pohar|otvarac|vyvrtk|darcekov\w* (?:taska|krabic|obal)|na skladovanie|na skladovani/;
+  const ASK_NAME = /^(?:a\s+)?(?:mate|mas|mame|predavate|prodavate|ponukate|nabizite|vediete|vedete|je u vas|dostanem|seženiem|da sa kupit|kolko stoji|kolik stoji)\b/;
   const ASK_REC = /odporuc|doporuc|porad|vyber|hladam|hledam|chcem|chci|potrebujem|potrebuji|nieco|neco|\btip\b|ake mate|jake mate|mate nieco|mate neco|ponuk|nabid|najlep|nejlep|ukaz/;
 
   function shownProducts(ad, messages) {
@@ -332,6 +347,7 @@
     return `${label} — ${pr.label || ''}.${reason ? ' ' + reason : ''}${tail}`.replace(/\s+—\s+\./, '.').trim();
   }
   const capital = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
+  const gramsIn = s => { const m = String(s || '').match(/(\d+(?:[.,]\d+)?)\s*(kg|g)\b/i); return m ? Math.round(Number(m[1].replace(',', '.')) * (/kg/i.test(m[2]) ? 1000 : 1)) : null; };
   /* Two short verified facts that help to decide; a fact that only repeats the customer's own
      condition comes after the ones that tell something new. */
   function reasonFor(ad, p, st) {
@@ -456,8 +472,26 @@
       const who = facts.map(f => f.who).filter(Boolean);
       out.push(who.length ? capital(uniq(who).slice(0, 2).join('; ')) + '.' : t.forWhomUnknown);
     }
-    if (p.available === false) out.push(t.soldOut);
+    if (p.available === false) return unavailableReply(ad, st, m, attr);
     if (st.budget && !fitsBudget(p, st)) out.push(t.over(p.name, priceOf(p, st).label, money(st.budget.amount, st.budget.currency || ad.currency)));
+    return out.join('\n\n');
+  }
+
+  /* A named product the shop does not sell now: say so, then the same product in a pack that is in
+     stock and one or two similar products in stock, each with price and link. A page that no longer
+     exists is not linked. */
+  function unavailableReply(ad, st, m, attr) {
+    const t = T[ad.lang];
+    const p = m.p;
+    const out = [];
+    if (p.gone) out.push(t.gone(p.name));
+    else { if (attr) out.push(attr); out.push(line(ad, p, st)); out.push(t.soldOut); }
+    const same = (m.all || []).filter(x => x.available !== false && x.id !== p.id && x.main !== false).sort((a, b) => (a.sample ? 1 : 0) - (b.sample ? 1 : 0) || (a.amount ?? 1e9) - (b.amount ?? 1e9));
+    const skip = new Set([...(m.all || []).map(x => x.id), ...st.excluded]);
+    const similar = (ad.similarTo ? ad.similarTo(p, st.answers || {}) : []).filter(x => !skip.has(x.id) && fitsBudget(x, st));
+    if (same.length) out.push(t.sameOther + '\n\n' + line(ad, same[0], st));
+    const n = same.length ? 1 : 2;
+    if (similar.length) out.push(t.similarNow + '\n\n' + similar.slice(0, n).map(x => line(ad, x, st, reasonFor(ad, x, st))).join('\n\n'));
     return out.join('\n\n');
   }
 
@@ -548,10 +582,34 @@
     if (ad.pre) { const early = ad.pre(q, messages); if (early !== undefined) return early; }
     const st = stateOf(ad, index, messages);
     const pol = polarity(latestRaw);
-    const named = mentions(index, pol.pos || latestRaw).filter(m => !st.excluded.has(m.p.id) || COMPARE.test(q));
+    // A short question or "Máte …?" names a product even by one distinctive word of its name.
+    const loose = ASK_NAME.test(q) || words(q).length <= 3 && !OTHER.test(q) && !ASK_REC.test(q) && !COMPARE.test(q);
+    let named = mentions(index, pol.pos || latestRaw, {raw: pol.neg ? '' : latestRaw, loose}).filter(m => !st.excluded.has(m.p.id) || COMPARE.test(q));
+    // Only weak matches (one word shared by several products): the asked pack size decides, else the products are listed.
+    if (named.length && named.every(m => m.weak)) {
+      const size = st.answers?.size;
+      const pool = named.flatMap(m => m.all.map(p => ({m, p})));
+      const sized = size ? pool.filter(({p}) => !/\d\s*x\s*\d/.test(norm(p.name)) && (gramsIn(p.pack) === size || gramsIn(p.name) === size)) : [];
+      if (sized.length) { const hit = sized.find(x => x.p.available !== false) || sized[0]; named = [{...hit.m, p: hit.p}]; }
+      else if (named.length > 1 && !COMPARE.test(q)) {
+        const list = uniq(pool.map(x => x.p)).filter(p => p.available !== false && p.main !== false && !p.sample && !/\d\s*x\s*\d/.test(norm(p.name)) && fitsBudget(p, st)).slice(0, 3);
+        if (list.length) return T[ad.lang].byName + '\n\n' + list.map(p => line(ad, p, st, reasonFor(ad, p, st))).join('\n\n');
+      }
+    }
     const t = T[ad.lang];
     // Intent words inside a product's own name ("… na príslušenstvo") are not the customer's intent.
     const qi = named.filter(m => m.exact).reduce((text, m) => (' ' + text + ' ').split(' ' + words(m.core).join(' ') + ' ').join(' '), ' ' + words(q).join(' ') + ' ').trim();
+    // "Máte Lavazza Qualità Rossa?": a proper name the shop does not sell is said plainly, then what the shop has instead.
+    if (!named.length && ASK_NAME.test(q) && ad.notSoldSuggest) {
+      const body = String(latestRaw).replace(/^\s*(?:a\s+)?\S+\s+/i, '').replace(/[?!.\s]+$/, '').trim();
+      const nameWords = body.split(/\s+/).filter(w => /^\p{Lu}/u.test(w));
+      const parsed = ad.parse(norm(body), '', norm(body));
+      if (nameWords.length && !/^(?:produkt|vyrobok|vyrobek)\b/.test(norm(body)) && !/[_\d]{3,}/.test(body) && !Object.keys(parsed.set).length && !(ad.notBrand && ad.notBrand(norm(body)))) {
+        const sug = ad.notSoldSuggest();
+        const list = sug.list.filter(x => x.available !== false && fitsBudget(x, st)).slice(0, 2);
+        return t.notSold(body) + (list.length ? '\n\n' + sug.head + '\n\n' + list.map(x => line(ad, x, st, reasonFor(ad, x, st))).join('\n\n') : '');
+      }
+    }
     // General knowledge questions without a named product stay with the family's own answers.
     if (!named.length && ad.general && ad.general(q)) return null;
 
@@ -612,7 +670,7 @@
       if (st.budget) {
         const pr = priceOf(m.p, st);
         const limit = money(st.budget.amount, st.budget.currency || ad.currency);
-        if (m.p.available === false) return t.soldOut + ' ' + line(ad, m.p, st) + '\n\n' + (recommendReply(ad, {...st, excluded: new Set([...st.excluded, ...m.all.map(p => p.id)])}) || '');
+        if (m.p.available === false) return unavailableReply(ad, st, m, null);
         if (fitsBudget(m.p, st)) return t.fits(m.p.name, pr.label, limit) + '\n\n' + line(ad, m.p, st, reasonFor(ad, m.p, st));
         const alt = recommendReply(ad, {...st, answers: {...st.answers, ...(ad.similar ? ad.similar(m.p) : {})}, excluded: new Set([...st.excluded, ...m.all.map(p => p.id)])});
         return t.over(m.p.name, pr.label, limit) + (alt ? '\n\n' + alt : '');

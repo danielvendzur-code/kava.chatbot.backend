@@ -121,7 +121,8 @@ html body #widget#widget#widget#widget #advisorScreen:has(> .advisor.is-result) 
 html body #widget#widget#widget#widget #advisorScreen:has(> .advisor.is-result) > .advisor-foot #restart{font-size:13px!important;white-space:nowrap!important;padding:0 2px!important;}
 
 /* Result: the coffee and its attributes first, without boxed repetition. */
-html body #widget#widget#widget#widget .advisor.is-result .result__badge{display:none!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__badge:not(.is-nearest){display:none!important;}
+html body #widget#widget#widget#widget .advisor.is-result .result__badge.is-nearest{display:inline-block!important;margin:0 0 8px!important;}
 html body #widget#widget#widget#widget .advisor.is-result .result__hero{display:grid!important;grid-template-columns:72px minmax(0,1fr)!important;gap:12px!important;align-items:start!important;padding:12px 14px 10px!important;margin:0!important;min-height:0!important;}
 html body #widget#widget#widget#widget .advisor.is-result .result__photo{width:72px!important;height:72px!important;min-height:0!important;object-fit:contain!important;box-shadow:none!important;margin:0!important;padding:0!important;border-radius:12px!important;}
 html body #widget#widget#widget#widget .advisor.is-result .result__headline{gap:6px!important;}
