@@ -253,10 +253,11 @@
   const HEALTH = /\bliec|vyliec|\blecb|\blecit|vylec|chorob|nemoc|ekzem|rosacea|dermatit|\bliek\b|\blek\b|tehot|dojc|kojen|alergick\w* reakc|diagnoz|zdravotn|cukrovk|diabet|hypertenz/;
   const OTHER = /\b(?:in[auyeoi]|inej|inu|jin[auyeoi]|jinou|dals\w*|dalsi\w*|nieco ine|neco jine|niekto ine|ukaz(?:te)? (?:mi )?(?:viac|vic|dalsi\w*|ine|inu|jine)|este (?:nieco|jednu|jeden|dalsi\w*|iny|inu|ine)|alternativ\w*|iba to\?|nic ine)\b/;
   const COMPARE = /porovn|srovn|rozdiel|rozdil|\blisi\b|\bliši\b|odlis|\bvs\.?\b|versus|lepsi[ae]?\b.*\balebo\b|\balebo\b.*\blepsi|ktor[aáyeý]\s.*\b(?:lepsi|vybrat|zvolit)/;
-  const USAGE = /\bako (?:sa )?(?:spravne )?(?:pouzi|pouziv|aplik|nanies|nanas|pripr|uvar|varit|davk|pit|podav|pest|polie|zalie|skladov|pouzit)|\bjak (?:se )?(?:spravne )?(?:pouzi|pouziv|aplik|nanes|pripr|uvar|varit|davk|pit|podav|pest|zali|skladov)|navod|postup|mnozstv|kolko (?:gram|ml|kvap|krat|lyzic)|kolik (?:gram|ml|kap|krat)|\bv60\b|french ?press|aeropress|chemex|moka|dzezv|mozem .* (?:pouzit|pripravit)|muzu .* (?:pouzit|pripravit)|na (?:v60|filter|filtr|french|aeropress)\b.*\?/;
+  const USAGE = /\bako (?:ju |ho |ich |to )?(?:sa )?(?:spravne )?(?:pouzi|pouziv|aplik|nanies|nanas|pripr|uvar|varit|davk|pit|podav|pest|polie|zalie|skladov|pouzit)|\bjak (?:ji |ho |je |to )?(?:se )?(?:spravne )?(?:pouzi|pouziv|aplik|nanes|pripr|uvar|varit|davk|pit|podav|pest|zali|skladov)|navod|postup|mnozstv|kolko (?:gram|ml|kvap|krat|lyzic)|kolik (?:gram|ml|kap|krat)|\bv60\b|french ?press|aeropress|chemex|moka|dzezv|mozem .* (?:pouzit|pripravit)|muzu .* (?:pouzit|pripravit)|na (?:v60|filter|filtr|french|aeropress)\b.*\?/;
   const DETAIL = /\bco je\b|\bco su\b|\bco jsou\b|\bpre koho\b|\bpro koho\b|povedz|povedzte|popis|informac|viac o|vic o|o (?:tomto|tomhle|produkte|vyrobku)|\bje (?:to )?\w+.*\?|\bma\b.*\?|\bobsahuje\b|\bkolko stoj|\bkolik stoj|\bcena\b|\bskladom\b|\bskladem\b|\bdostupn|\bmate (?:produkt|na sklade)|\bmate\b.*\?|\bje vhodn|\bhodi sa\b|\bhodi se\b|\bsuche alebo|\bsladke alebo|\bpolosuche alebo/;
   const ACCESSORY = /doplnok|doplnk|doplnek|prislusenstv|k tomu|k nej\b|k nemu\b|k nim\b|k tejto|k tomuto|k tomu|co este|co jeste|\bdoz[auy]\b|doza\b|vakuov|sitk|sitek|sítk|infuz|kanvick|konvick|kvetinac|crepnik|obal na|podmisk|misk[auy]\b|substrat|hnojiv|pohar|otvarac|vyvrtk|darcekov\w* (?:taska|krabic|obal)|na skladovanie|na skladovani/;
   const ASK_NAME = /^(?:a\s+)?(?:mate|mas|mame|predavate|prodavate|ponukate|nabizite|vediete|vedete|je u vas|dostanem|seženiem|da sa kupit|kolko stoji|kolik stoji)\b/;
+  const OWNED = /\bkav[auy]\s+(?:do|na|pre|k)\s|\b(?:mam|mame|pouzivam|pouzivame)\b/;
   const ASK_REC = /odporuc|doporuc|porad|vyber|hladam|hledam|chcem|chci|potrebujem|potrebuji|nieco|neco|\btip\b|ake mate|jake mate|mate nieco|mate neco|ponuk|nabid|najlep|nejlep|ukaz/;
 
   function shownProducts(ad, messages) {
@@ -312,9 +313,13 @@
       const n = parseQty(q);
       if (n) st.qty = n; else if (b && !b.total && st.qty && !/spolu|celkom|kus|ks|flas|lahv/.test(q)) st.qty = st.qty;
       const pol = polarity(raw);
-      const ms = mentions(index, raw);
+      // "Akú kávu do french pressu?", "Mám french press": a brewer the customer owns is the preparation, not the subject.
+      const ms = mentions(index, raw).filter(m => m.p.main !== false || !OWNED.test(q));
       // A question about a named product is not a new condition ("Je Perešek suché alebo sladké?").
-      const productQuestion = ms.length && (DETAIL.test(q) || COMPARE.test(q) || USAGE.test(q)) && !/chcem|chci|hladam|hledam|potrebujem|potrebuji|odporuc|doporuc|vyber/.test(q);
+      const asking = !/chcem|chci|hladam|hledam|potrebujem|potrebuji|odporuc|doporuc|vyber/.test(q);
+      const productQuestion = ms.length && (DETAIL.test(q) || COMPARE.test(q) || USAGE.test(q)) && asking
+        // An earlier "Máte Etiópiu?" asked about products; it does not narrow the next request.
+        || !latest && ASK_NAME.test(q) && asking && !(i === users.length - 2 && OTHER.test(norm(users.at(-1).content)));
       // A product's own name is not a condition either ("Tramín červený" does not mean red wine).
       let posText = norm(pol.pos);
       for (const mm of ms) if (mm.exact) posText = posText.split(mm.core).join(' ');
@@ -413,12 +418,14 @@
         const c = candidates(ad, relaxed, {skip}).fit;
         if (c.length) {
           const what = ad.describe ? ad.describe({[key]: st.answers[key]}, {}).join(', ') : key;
-          return `${t.nothing}${cond ? ' (' + cond + ')' : ''} ${t.nearest}${ad.lang === 'cs' ? ' (nesplňuje: ' : ' (nespĺňa: '}${what}):\n\n${line(ad, c[0], relaxed, reasonFor(ad, c[0], relaxed))}`;
+          return `${cond ? t.nothing.replace(/\.$/, '') + ' (' + cond + ').' : t.nothing} ${t.nearest}${ad.lang === 'cs' ? ' (nesplňuje: ' : ' (nespĺňa: '}${what}):\n\n${line(ad, c[0], relaxed, reasonFor(ad, c[0], relaxed))}`;
         }
       }
       if (!ad.products.some(p => p.main && p.available !== false)) return null;
       const note = ad.noMatchNote ? ad.noMatchNote(st.answers, st.not) : '';
-      return t.nothing + (cond ? ' (' + cond + ')' : '') + (note ? ' ' + note : ' ' + t.change + '.');
+      // The family's own note ("Kávu s robustou e-shop v ponuke nemá.") says it plainly on its own.
+      if (note) return note;
+      return (cond ? t.nothing.replace(/\.$/, '') + ' (' + cond + ').' : t.nothing) + ' ' + t.change + '.';
     }
     const shown = fit.slice(0, opts.limit || 3);
     const head = cond ? (ad.lang === 'cs' ? 'Z nabídky vybírám (' : 'Z ponuky vyberám (') + cond + '):' : (ad.lang === 'cs' ? 'Z nabídky vybírám:' : 'Z ponuky vyberám:');
@@ -465,6 +472,8 @@
     const out = [];
     const attr = ad.attribute ? ad.attribute(p, qi ?? q) : null;
     if (attr) out.push(attr);
+    // "Je skladom?" gets a plain yes before the details.
+    else if (/\bskladom\b|\bskladem\b|\bdostupn/.test(q) && p.available !== false) out.push(ad.lang === 'cs' ? `Ano, ${p.name} je skladem.` : `Áno, ${p.name} je skladom.`);
     out.push(line(ad, p, st));
     const facts = (ad.facts(p) || []).filter(f => f.v);
     if (facts.length) out.push(capital(facts.slice(0, 4).map(f => f.v).join(', ')) + '.');
@@ -558,6 +567,8 @@
     const byCountry = s.lines.filter(l => /^[A-ZÁČĎÉÍĽĹŇÓÔŔŠŤÚÝŽ][a-záäčďéíľĺňóôŕšťúýž]+:/.test(l));
     const asked = COUNTRY.find(([rx]) => rx.test(q));
     let lines = s.lines;
+    // Prices that name no country are the shop's home prices; another country is not assumed to cost the same.
+    if (asked && !byCountry.length && !/^Slovensk/.test(asked[1].source.replace(/^\^/, '')) && !asked[1].test('Slovensko')) return (ad.lang === 'cs' ? 'Cenu dopravy do této země e-shop na své stránce neuvádí. Aktuální možnosti jsou v e-shopu:' : 'Cenu dopravy do tejto krajiny e-shop na svojej stránke neuvádza. Aktuálne možnosti sú v e-shope:') + ' ' + (s.url || ad.source);
     if (asked && byCountry.length) {
       const own = s.lines.filter(l => asked[1].test(l));
       const general = s.lines.filter(l => !byCountry.includes(l));
@@ -566,8 +577,20 @@
     return [t.shippingHead + (s.checkedAt ? ' (' + s.checkedAt + ')' : '') + ':', ...lines, s.url || ''].filter(Boolean).join('\n');
   }
 
+  /* Payment methods and delivery time exactly as the shop's terms state them. */
+  const PAYMENT = /platit|platb|kartou|\bkarta\b|\bkartu\b|dobierk|dobirk|prevod|apple pay|google pay|zaplat/;
+  const DELIVERY = /kedy (?:mi |nam )?(?:pride|prid|dorazi|dojde|dostanem|odoslete|expedujete)|kdy (?:mi )?(?:prijde|dorazi)|ako dlho|jak dlouho|dodac\w* (?:leh|dob)|lehot|ako rychlo|jak rychle|do kolkych dni|kolko dni/;
+  function termsReply(ad, kind) {
+    const s = ad.shipping || {};
+    const lines = kind === 'payment' ? s.payment : s.delivery;
+    const head = kind === 'payment' ? (ad.lang === 'cs' ? 'Platba podle e-shopu' : 'Platba podľa e-shopu') : (ad.lang === 'cs' ? 'Dodání podle e-shopu' : 'Doručenie podľa e-shopu');
+    if (!lines?.length) return (kind === 'payment' ? (ad.lang === 'cs' ? 'Způsoby platby v ukázce ověřené nemám. Aktuální možnosti jsou v e-shopu:' : 'Spôsoby platby v ukážke overené nemám. Aktuálne možnosti sú v e-shope:') : (ad.lang === 'cs' ? 'Dodací lhůtu v ukázce ověřenou nemám. Aktuální informace jsou v e-shopu:' : 'Dodaciu lehotu v ukážke overenú nemám. Aktuálne informácie sú v e-shope:')) + ' ' + (s.termsUrl || s.url || ad.source);
+    return [head + (s.checkedAt ? ' (' + s.checkedAt + ')' : '') + ':', ...lines, s.termsUrl || s.url || ''].filter(Boolean).join('\n');
+  }
+
   /* ---------- main entry ---------- */
-  function reply(ad, latestRaw, history) {
+  function reply(ad, latestRaw, history) { const __r = reply0(ad, latestRaw, history); if (globalThis.__DBG) console.error("DBG", __r === null ? "null" : "ok"); return __r; }
+  function reply0(ad, latestRaw, history) {
     if (!ad || !ad.products?.length) return null;
     const messages = (Array.isArray(history) ? history : []).filter(m => m && (m.role === 'user' || m.role === 'assistant')).map(m => ({role: m.role, content: String(m.content || '')}));
     if (!messages.length || messages.at(-1).role !== 'user' || messages.at(-1).content !== latestRaw) messages.push({role: 'user', content: String(latestRaw || '')});
@@ -575,7 +598,10 @@
     if (!q.trim()) return null;
     if (HEALTH.test(q)) return null;
     const index = ad.index || (ad.index = buildIndex(ad.products));
-    if (SHIPPING.test(q) && !/produkt|odporuc|doporuc|kav[auy]|vin[oa]|krem|caj|rastlin/.test(q.replace(/doprav\w*/g, ''))) return shippingReply(ad, q);
+    const notProduct = !/produkt|odporuc|doporuc|kav[auy]|vin[oa]|krem|caj|rastlin/.test(q.replace(/doprav\w*/g, ''));
+    if (ad.shipping && DELIVERY.test(q) && notProduct) return termsReply(ad, 'delivery');
+    if (ad.shipping && PAYMENT.test(q) && !/doprav|postovn|poštovn/.test(q) && notProduct) return termsReply(ad, 'payment');
+    if (SHIPPING.test(q) && notProduct) return shippingReply(ad, q);
     // "A do Česka?" right after a shipping answer is the same question for another country.
     const lastBot = [...messages].reverse().find(m => m.role === 'assistant')?.content || '';
     if (lastBot.startsWith(T[ad.lang].shippingHead) && COUNTRY.some(([rx]) => rx.test(q)) && q.split(' ').length <= 6) return shippingReply(ad, q);
@@ -585,6 +611,11 @@
     // A short question or "Máte …?" names a product even by one distinctive word of its name.
     const loose = ASK_NAME.test(q) || words(q).length <= 3 && !OTHER.test(q) && !ASK_REC.test(q) && !COMPARE.test(q);
     let named = mentions(index, pol.pos || latestRaw, {raw: pol.neg ? '' : latestRaw, loose}).filter(m => !st.excluded.has(m.p.id) || COMPARE.test(q));
+    // "Akú kávu do french pressu?" asks for coffee: a brewer or syrup named only in passing is not the subject.
+    if (/\bkav[auy]\b/.test(q)) named = named.filter(m => m.p.main !== false || m.exact && !new RegExp('\\bkav[auy]\\s+(?:do|na|pre|k)\\s').test(q));
+    if (OWNED.test(q) && ASK_REC.test(q)) named = named.filter(m => m.p.main !== false);
+    // A weak name match next to real conditions ("z Kolumbie na filter") is a condition, not a product question.
+    if (named.length && named.every(m => m.weak) && ad.parse) { const nameStems = new Set(named.flatMap(m => words(m.core).map(stem))); const rest = words(pol.pos || latestRaw).filter(w => !nameStems.has(stem(w))).join(' '); const pl = ad.parse(rest, norm(pol.neg), q); if (Object.keys(pl.set || {}).some(k => k !== 'origin' && k !== 'size')) named = []; }
     // Only weak matches (one word shared by several products): the asked pack size decides, else the products are listed.
     if (named.length && named.every(m => m.weak)) {
       const size = st.answers?.size;
@@ -592,10 +623,26 @@
       const sized = size ? pool.filter(({p}) => !/\d\s*x\s*\d/.test(norm(p.name)) && (gramsIn(p.pack) === size || gramsIn(p.name) === size)) : [];
       if (sized.length) { const hit = sized.find(x => x.p.available !== false) || sized[0]; named = [{...hit.m, p: hit.p}]; }
       else if (named.length > 1 && !COMPARE.test(q)) {
-        const list = uniq(pool.map(x => x.p)).filter(p => p.available !== false && p.main !== false && !p.sample && !/\d\s*x\s*\d/.test(norm(p.name)) && fitsBudget(p, st)).slice(0, 3);
+        const gearOnly = pool.every(x => x.p.main === false);
+        const list = uniq(pool.map(x => x.p)).filter(p => p.available !== false && (p.main !== false || gearOnly) && !p.sample && !/\d\s*x\s*\d/.test(norm(p.name)) && fitsBudget(p, st)).slice(0, 3);
         if (list.length) return T[ad.lang].byName + '\n\n' + list.map(p => line(ad, p, st, reasonFor(ad, p, st))).join('\n\n');
       }
     }
+    // "Koľko stojí?", "Je skladom?" right after one product was shown asks about that product.
+    const PRICE_Q = /kolko stoj|kolik stoj|\bcena\b|\bcenu\b|za kolko|za kolik/;
+    if (!named.length && words(q).length <= 6 && (DETAIL.test(q) || USAGE.test(q) || PRICE_Q.test(q) || /\bhodi\b|vhodn/.test(q)) && !/^(?:a\s+)?(?:mate|mas|predavate|prodavate|ponukate|nabizite)\b/.test(q)) {
+      const lastBotMsg = [...messages].slice(0, -1).reverse().find(m => m.role === 'assistant');
+      const shownLast = lastBotMsg ? uniq(shownProducts(ad, [lastBotMsg])) : [];
+      // The product the customer named in the previous question, when the answer also listed alternatives.
+      const prevUsers = [...messages].slice(0, -1).reverse().filter(m => m.role === 'user').slice(0, 3);
+      const prevHit = shownLast.length > 1 ? prevUsers.map(u => mentions(index, u.content, {raw: u.content, loose: true}).find(m => shownLast.includes(m.p))).find(Boolean) : null;
+      if (shownLast.length === 1) named = [{p: shownLast[0], all: [shownLast[0]], exact: false, core: '', score: 10, pos: 0}];
+      else if (prevHit) named = [{...prevHit, exact: false, score: 10, pos: 0}];
+      // Several were shown: their prices side by side.
+      else if (shownLast.length > 1 && PRICE_Q.test(q)) return shownLast.slice(0, 4).map(p => line(ad, p, st)).join('\n\n');
+    }
+    // "Hodí sa na filter?" about a named coffee is a preparation question.
+    if (named.length && /\bhodi\b|vhodn|da sa|\bmozem\b|\bmuzu\b|\bide\b|pouzit/.test(q) && /\b(?:na|do|pre|pro)\s+(?:v60|filter|filtr|french|aeropress|moka|mok[uy]|espresso|automat|dzezv|chemex|kanvick|konvick|pakov)/.test(q)) return usageReply(ad, st, named[0], q);
     const t = T[ad.lang];
     // Intent words inside a product's own name ("… na príslušenstvo") are not the customer's intent.
     const qi = named.filter(m => m.exact).reduce((text, m) => (' ' + text + ' ').split(' ' + words(m.core).join(' ') + ' ').join(' '), ' ' + words(q).join(' ') + ' ').trim();
@@ -648,11 +695,15 @@
       }
     }
     if (COMPARE.test(qi) && named.length >= 2) return compareReply(ad, st, named[0].pos <= named[1].pos ? named[0] : named[1], named[0].pos <= named[1].pos ? named[1] : named[0]);
-    if (USAGE.test(qi) && named.length) return usageReply(ad, st, named[0], q);
+    // "Máte french press?" asks for the brewer itself; a brewer's name alone is a usage question only about a coffee.
+    const BREWER = /french ?press|aeropress|chemex|moka|dzezv\w*|\bv60\b/g;
+    const ownName = named.length ? norm(named[0].p.name) : '';
+    const usageQ = named.length && USAGE.test(named[0].p.main === false ? qi.replace(BREWER, ' ') : qi.replace(BREWER, w => ownName.includes(w.slice(0, 5)) && ASK_NAME.test(q) ? ' ' : w));
+    if (usageQ) return usageReply(ad, st, named[0], q);
     if (ACCESSORY.test(qi) && ad.accessories) {
       const main = named[0] || (() => { const shown = shownProducts(ad, messages).filter(p => p.main); return shown.length ? {p: shown[0], all: [shown[0]]} : null; })();
       const wantsAcc = /doplnok|doplnk|doplnek|prislusenstv|k tomu|k nej\b|k nemu\b|co este|co jeste|\bdoz|vakuov|sitk|sítk|infuz|kvetinac|crepnik|obal|podmisk|misk|substrat|hnojiv|pohar|otvarac|vyvrtk|skladovan/.test(qi);
-      if (wantsAcc && main) return accessoryReply(ad, st, main, q);
+      if (wantsAcc) return accessoryReply(ad, st, main, q);
     }
     const otherAsked = OTHER.test(qi) && !named.length;
     if (otherAsked) {

@@ -84,11 +84,18 @@
     return product.prep || {};
   }
 
+  /* "Both" fits a coffee the shop recommends black and with milk; any coffee can be drunk black. */
+  function drinkFit(product, want) {
+    const d = product.drink || {};
+    if (want === 'both') return Math.max(d.both ?? 0, Math.min(d.milk ?? 0, d.black ?? 1));
+    return d[want] ?? 0;
+  }
+
   function score(product, answers) {
     let total = 0;
     if (answers.taste) total += WEIGHTS.taste * (product.taste?.[answers.taste] ?? 0);
     if (answers.prep) total += WEIGHTS.prep * (prepOf(product, answers)[answers.prep] ?? 0);
-    if (answers.drink) total += WEIGHTS.drink * (product.drink?.[answers.drink] ?? 0);
+    if (answers.drink) total += WEIGHTS.drink * drinkFit(product, answers.drink);
     if (answers.intensity && answers.intensity !== 'any') total += WEIGHTS.intensity * (product.intensity?.[answers.intensity] ?? 0);
     if (answers.acidity && answers.acidity!=='any') {
       if (answers.acidity === 'explore') {
@@ -110,7 +117,8 @@
     /* Black coffee needs no milk suitability claim. “Both” explicitly promises
        milk too, so unknown milk suitability remains an unconfirmed preference. */
     const drinkUnknown=!Object.values(product.drink||{}).some(v=>v>0)&&answers.drink==='black';
-    for(const key of ['taste','drink'])if(answers[key]&&answers[key]!=='any'&&!(key==='drink'&&drinkUnknown)&&(product[key]?.[answers[key]]??0)<.5)missing.push(key);
+    if(answers.taste&&answers.taste!=='any'&&(product.taste?.[answers.taste]??0)<.5)missing.push('taste');
+    if(answers.drink&&answers.drink!=='any'&&!drinkUnknown&&drinkFit(product,answers.drink)<.5)missing.push('drink');
     if (answers.prep && answers.prep!=='any' && (prepOf(product, answers)[answers.prep] ?? 0) < 0.6) missing.push('prep');
     const acidity = acidityBounds(product);
     /* A low-caffeine coffee is offered next to decaf, never as a coffee with caffeine. */
@@ -464,7 +472,9 @@
     return (Number.isInteger(fixed) ? String(fixed) : fixed.toFixed(2).replace('.', ',')) + ' €';
   };
   const packOf = (product) => { const m = String(product.priceUnit || product.weights || product.name || '').match(/(\d+(?:[.,]\d+)?)\s*(kg|g)\b/i); return m ? Math.round(Number(m[1].replace(',', '.')) * (/kg/i.test(m[2]) ? 1000 : 1)) : null; };
-  const composition = (product) => { const text = `${product.name} ${product.line || ''}`; return /100\s*%\s*arabi/i.test(text) ? 'arabica' : /robust|\b\d{2}\s*\/\s*\d{2}\b/i.test(text) ? 'blend' : ''; };
+  // The robusta share the shop states ("Obsah robusty 30"), else what the name says.
+  const composition = (product) => { const r = product.robustaPercent; if (Number.isFinite(r)) return r === 0 ? 'arabica' : r === 100 ? 'robusta' : 'blend'; const text = `${product.name} ${product.line || ''}`; return /100\s*%\s*arabi/i.test(text) ? 'arabica' : /100\s*%\s*robust|canephora/i.test(text) ? 'robusta' : /robust|\bA\s*\/\s*R\b|\b\d{2}\s*\/\s*\d{2}\b/i.test(text) ? 'blend' : ''; };
+  const withRobusta = (product) => Number.isFinite(product.robustaPercent) ? product.robustaPercent > 0 : /robust|\bA\s*\/\s*R\b|canephora/i.test(`${product.name} ${product.line || ''}`);
   const baseName = (product) => String(product.name || '').toLowerCase().replace(/\(.*?\)|\d+(?:[.,]\d+)?\s*(?:kg|g)\b|\d+\s*\+\s*\d+|\d+\s*x\s*/g, '').replace(/[^a-záäčďéíĺľňóôŕšťúýž0-9]+/g, ' ').trim();
 
   /* One concrete pack: whole beans for an automatic machine, otherwise the smallest regular pack. */
@@ -504,7 +514,7 @@
     const a = answers;
     if (a.prep && (prepOf(product, a)[a.prep] ?? 0) >= 0.6) {
       const [sk, cs] = PREP_REASON[a.prep] || [];
-      if (sk) out.push([T(sk, cs), a.prep === 'automat' && product.automatDerived ? T('E-shop ju uvádza na espresso, ktoré pripravuje aj automat.', 'E-shop ji uvádí na espresso, které připravuje i automat.') : a.prep === 'automat' && variant?.grind === 'beans' ? T('Zrnková, akú automat potrebuje.', 'Zrnková, jakou automat potřebuje.') : product.prepQuote ? T('E-shop: „', 'E-shop: „') + product.prepQuote.replace(/\.$/, '') + '“' : T('Podľa popisu sa hodí na túto prípravu.', 'Podle popisu se hodí na tuto přípravu.')]);
+      if (sk) out.push([T(sk, cs), a.prep === 'automat' && product.automatDerived ? T('E-shop ju uvádza na espresso, ktoré pripravuje aj automat.', 'E-shop ji uvádí na espresso, které připravuje i automat.') : a.prep === 'automat' && variant?.grind === 'beans' ? T('Zrnková, akú automat potrebuje.', 'Zrnková, jakou automat potřebuje.') : product.prepQuote ? T('E-shop: „', 'E-shop: „') + product.prepQuote.replace(/\.$/, '') + '“' : product.bestFor ? T('E-shop ju uvádza na: ', 'E-shop ji uvádí na: ') + product.bestFor.split(' · ').map(x => x.toLowerCase()).join(', ') + '.' : T('Podľa popisu sa hodí na túto prípravu.', 'Podle popisu se hodí na tuto přípravu.')]);
     }
     if (a.taste && (product.taste?.[a.taste] ?? 0) >= 0.6 && product.notes?.length) {
       // A taste-family score is not evidence of a specific flavour note.
@@ -520,7 +530,8 @@
     if (out.length < 3) {
       const comp = composition(product);
       if (comp === 'arabica') out.push([T('100 % arabica', '100 % arabika'), T('Bez robusty, jemnejšia chuť.', 'Bez robusty, jemnější chuť.')]);
-      else if (comp === 'blend' && /robust/i.test(`${product.name} ${product.line || ''}`)) out.push([T('Arabica s robustou', 'Arabika s robustou'), T('Plnšia chuť a hustejšia crema.', 'Plnější chuť a hustší crema.')]);
+      else if (comp === 'robusta') out.push([T('100 % robusta', '100 % robusta'), T('Silná, horkejšia chuť a hustá crema.', 'Silná, hořčí chuť a hustá crema.')]);
+      else if (comp === 'blend' && withRobusta(product)) out.push([T('Arabica s robustou', 'Arabika s robustou'), T('Plnšia chuť a hustejšia crema.', 'Plnější chuť a hustší crema.')]);
     }
     return out.slice(0, 3);
   }
@@ -530,7 +541,7 @@
     const parts = [];
     const cm = composition(main), co = composition(other);
     if (co === 'arabica' && cm === 'blend') parts.push(T(`100 % arabica, oproti ${main.name} neobsahuje robustu`, `100 % arabika, oproti ${main.name} neobsahuje robustu`));
-    else if (co === 'blend' && cm === 'arabica' && /robust/i.test(`${other.name} ${other.line || ''}`)) parts.push(T('zmes s robustou, plnšia a silnejšia', 'směs s robustou, plnější a silnější'));
+    else if (co === 'blend' && cm === 'arabica' && withRobusta(other)) parts.push(T('zmes s robustou, plnšia a silnejšia', 'směs s robustou, plnější a silnější'));
     const fresh = (other.notes || []).filter((note) => !(main.notes || []).includes(note));
     if (fresh.length) parts.push(T('v chuti ', 'v chuti ') + (other.notes || []).slice(0, 3).join(', '));
     if (Number.isFinite(main.acidity) && Number.isFinite(other.acidity) && main.acidity !== other.acidity) parts.push(other.acidity > main.acidity ? T('viac kyslosti', 'více kyselosti') : T('menej kyslosti', 'méně kyselosti'));
@@ -580,7 +591,7 @@
     const accessory = accessoryFor(product, variant);
     const acidityLabel = (product.source?.acidityVerifiedAt && product.acidityNote) || (Number.isFinite(product.acidity)?acidityScale[product.acidity]:'Neuvedená');
     /* Only what the shop states is shown as a fact; an unknown acidity or preparation is left out. */
-    const roastFact = product.roastOptions?.length ? product.roastOptions.map((o) => o.replace(/\s*\(.*\)$/, '').replace(/ - full city$/, '')).join(' · ') : (product.intensitySource || '').match(/Spôsob praženia: ([^;]+)/)?.[1] || '';
+    const roastFact = product.roastOptions?.length ? product.roastOptions.map((o) => o.replace(/\s*\(.*\)$/, '').replace(/ - full city$/, '')).join(' · ') : (product.intensitySource || '').match(/Spôsob praženia: ([^;]+)/)?.[1] || product.roastText || '';
     const facts = [
       Number.isFinite(product.acidity) ? `<div class="fact"><b>${icons.drop} Acidita</b><span class="fact__value">${dots(product.acidity)} ${esc(acidityLabel)}</span></div>` : roastFact ? `<div class="fact"><b>${icons.bean} Praženie</b><span class="fact__value">${esc(roastFact)}</span></div>` : '',
       product.bestFor ? `<div class="fact"><b>${icons.cup} Príprava</b><span class="fact__value">${esc(product.bestFor)}</span></div>` : '',
