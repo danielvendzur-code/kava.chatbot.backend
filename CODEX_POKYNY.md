@@ -110,3 +110,24 @@ Opravené porovnávanie cien a odkazov, výpisy do troch produktov, presné náz
 ## Otvorené otázky po kontrole Codex
 
 Promovanie do produkcie ostáva majiteľovi. Vlasy (dixi), rastliny (plantizia), víno (skoupil), oba čaje sú verejne dostupné, ale testované produkcie používajú staré správanie/fallback. Vercel detaily ostatných projektov nie sú dostupné cez konektor (404/403). Dokončiť manuálne overenie variantov a dopravy a úplnú vizuálnu maticu; nejednoznačné katalógové údaje sa nemenili.
+
+## Odovzdané commity a Preview (18. 10. 2026)
+
+- kava.chatbot.backend: 01a3fe7911d1e88f32a547da9a1152c10b477e1a — claude/coffee-deep3-20261016
+- skincare: 67fa94859cc2baad49a6fd92992a2cc72a77dc67 — claude/nice-lovelace-k6lo35
+- vino: 13ea9684b2ac536d5e8e519346f69bb160387728 — claude/nice-lovelace-k6lo35
+- caj: d4a1601fcc623800fbf6bbc2ff5ef2febb7a3686 — claude/nice-lovelace-k6lo35
+
+Všetky Vercel kontroly týchto commitov sú úspešné. Káva a kozmetika: https://kava-chatbot-backend-7upzby7za-danielvendzur-codes-projects.vercel.app (READY, commit 01a3fe7). Štyri živé otázky bez fallbacku: 2928, 2550, 2305 a 2048 ms. Produkciu promuje majiteľ.
+
+Playwright v dostupnom vstavanom prehliadači s blokovaním /api/*: jedna úplná cesta Pražiarničky a návrat, obe otázky pri 320×568, 390×650, 560×600 a 1280×800 bez orezaných volieb a horizontálneho pretečenia; konzola bez chýb. Samostatné Chromium a lokálny server neboli dostupné z tohto prehliadača. Plná vizuálna matica ostatných ukážok, tmavý režim, klávesnica a všetky katalógové varianty ostávajú otvorené.
+
+### Odkazy na úspešné Vercel kontroly
+
+- [Vercel](https://vercel.com/danielvendzur-codes-projects/kava-chatbot-backend/CjZcfqso3aGS2nCs8AYRNRrVHWU1): success.
+- [Vercel – skincare-vlasy-nove](https://vercel.com/danielvendzur-codes-projects/skincare-vlasy-nove/EhZjeejUzTzcWteZu9V8MHepLAQL): success.
+- [Vercel – mojchatbot-kozmetika](https://vercel.com/danielvendzur-codes-projects/mojchatbot-kozmetika/AyUWiSeiV13rQAdHvxTwmRRtSef1): success.
+- [Vercel – mojchatbot-rastliny](https://vercel.com/danielvendzur-codes-projects/mojchatbot-rastliny/HWb4yU3ZhBLfATzQUyj3g9GFSKnE): success.
+- [Vercel – mojchatbot-vino](https://vercel.com/danielvendzur-codes-projects/mojchatbot-vino/CrRro9gCWvh1SWAskiuAaKnYFvtE): success.
+- [Vercel – mojchatbot-vino-nove](https://vercel.com/danielvendzur-codes-projects/mojchatbot-vino-nove/HhEG8haNwe1WCY4xWui6P2XZziCS): success.
+- [Vercel – mojchatbot-caj](https://vercel.com/danielvendzur-codes-projects/mojchatbot-caj/Gehn8bkepk2YqmGRwa7bvpvvqKTS): success.
