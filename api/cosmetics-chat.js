@@ -1,11 +1,7 @@
 import {legacyStockReply} from './legacy-stock-reply.js';
+import {aiAnswer} from './ai-chat.js';
 import { catalogueReply } from './catalogue-reply.js';
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
-const MODEL = process.env.CHAT_MODEL || 'claude-sonnet-5-5';
-// Claude Sonnet 5.5 and Haiku 5.5 take no temperature; thinking stays off for these two-sentence answers,
-// and Sonnet 5.5 hands a declined request to the fallback model instead of returning nothing.
-const MODEL_OPTIONS = /^claude-sonnet-5-5/.test(MODEL) ? {thinking: {type: 'between_tools'}, output_config: {effort: 'low'}, fallbacks: 'default'} : /^claude-haiku-5-5/.test(MODEL) ? {thinking: {type: 'disabled'}, output_config: {effort: 'low'}} : {temperature: 0};
-const MODEL_HEADERS = /^claude-sonnet-5-5/.test(MODEL) ? {'anthropic-beta': 'server-side-fallback-2026-07-01'} : {};
 
 const DEMOS = {
   monlevur:{"brand": "Monlevur", "web": "https://www.monlevur.cz/", "products": ["Tělový krém", "Krém proti vráskám", "Krém na ruce", "Pečující pleťový krém", "Sprchový krém", "Balzám na vlasy a bezoplachový krém", "Balzám na rty", "Blahodárná šumivka do koupele", "Šampuk pro jemné mytí", "Šampuk pro mastící se vlasy", "Srdce na dlani", "Krém proti vráskám a Sprchový krém", "Krém na ruce a Balzám na rty", "Pečující pleťový krém a Tělový krém", "Šampuk na mastící se vlasy a Balzám na vlasy a bezoplachový krém", "Šampuk na jemné mytí a Balzám na vlasy a bezoplachový krém", "Sprchový krém a 3x Blahodárná šumivka do koupele"], "fallback": {"default": "Produkty, balenia a ceny nájdete vo Výbere a Ponuke."}},
@@ -87,38 +83,20 @@ export default async function handler(req,res){
   while(messages[0]?.role==='assistant')messages.shift();
   while(messages.at(-1)?.role==='assistant')messages.pop();
   const latest=messages.filter(m=>m.role==='user').at(-1)?.content||'';if(!latest)return res.status(400).json({error:'Missing user message'});
-  const expandedReply=await catalogueReply(String(body.demoId||''),latest,messages);
-  if(expandedReply)return res.status(200).json({reply:expandedReply,fallback:true});
-  const stockReply=legacyStockReply(String(body.demoId||''),latest);
-  if(stockReply)return res.status(200).json({reply:stockReply,fallback:true});
-  const fallback=()=>res.status(200).json({reply:fallbackReply(demo,latest),fallback:true});
-  if(!ANTHROPIC_API_KEY){
-    if(body._upstreamHop)return fallback();
-    try {
-      const upstream=await fetch('https://jolka.mojchatbot.sk/api/cosmetics-chat',{
-        method:'POST',headers:{'content-type':'application/json'},
-        body:JSON.stringify({demoId:String(body.demoId),messages,_upstreamHop:true}),signal:AbortSignal.timeout(9000)
-      });
+  const slug=String(body.demoId||'');
+  // The catalogue rules draft a verified answer; Claude answers the customer in its own words from the same data.
+  const draft=(await catalogueReply(slug,latest,messages))||legacyStockReply(slug,latest)||fallbackReply(demo,latest);
+  const ai=await aiAnswer({family:'cosmetics',brand:demo.brand,web:demo.web,catalogue:globalThis.CX_CATALOGUES?.[slug]||{products:demo.products.map(name=>({name}))},messages,draft});
+  if(ai)return res.status(200).json({reply:ai});
+  // A deployment without its own key asks the live service, which answers with Claude.
+  if(!ANTHROPIC_API_KEY&&!body._upstreamHop){
+    try{
+      const upstream=await fetch('https://jolka.mojchatbot.sk/api/cosmetics-chat',{method:'POST',headers:{'content-type':'application/json'},
+        body:JSON.stringify({demoId:slug,messages,_upstreamHop:true}),signal:AbortSignal.timeout(9000)});
       if(upstream.ok){const result=await upstream.json();if(!result.fallback&&String(result.reply||'').trim())return res.status(200).json({reply:String(result.reply).trim()});}
-    } catch (_) { /* Keep the company-specific offline reply when the provider is unavailable. */ }
-    return fallback();
+    }catch(_){/* Keep the catalogue answer when the live service is unavailable. */}
   }
-  const system=[
-    `Ste stručný produktový poradca pre kozmetický e-shop ${demo.brand}.`,
-    /\.cz(\/|$)|\/cs\//.test(String(demo.web||''))?'Odpovídejte jednoduchou češtinou, i když jsou podklady níže slovensky, maximálně dvěma krátkými větami.':'Odpovedajte jednoduchou slovenčinou, maximálne dvoma krátkymi vetami.',
-    'Pomáhate s orientačným kozmetickým výberom podľa preferencií. Nerobte zdravotnú diagnózu, nesľubujte liečbu a nevymýšľajte medicínske tvrdenia.',
-    'Odporučiť môžete iba presný názov produktu zo zoznamu Overené produkty. Nevymýšľajte ceny, zloženie ani účinky, ktoré nie sú uvedené.',
-    'Pri výraznom, bolestivom alebo dlhodobom kožnom probléme odporučte konzultáciu s dermatológom alebo iným odborníkom.',
-    `Oficiálny e-shop: ${demo.web}`,
-    `Overené produkty:\n- ${demo.products.join('\n- ')}`
-  ].join('\n\n');
-  try{
-    const api=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'content-type':'application/json','x-api-key':ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01',...MODEL_HEADERS},body:JSON.stringify({model:MODEL,max_tokens:160,...MODEL_OPTIONS,system,messages})});
-    if(!api.ok){console.error('cosmetics Anthropic API error',api.status,await api.text());return fallback();}
-    const data=await api.json();const reply=Array.isArray(data.content)?data.content.filter(b=>b.type==='text').map(b=>b.text).join('').trim():'';
-    const clean=reply.replace(/[\u002a_\u0060#]/g,'').replace(/\s+/g,' ').trim();if(!clean)return fallback();
-    return res.status(200).json({reply:clean});
-  }catch(error){console.error('cosmetics chat provider error',error);return fallback();}
+  return res.status(200).json({reply:draft,fallback:true});
 }
 
 

@@ -890,7 +890,7 @@
     const currency = brand.currency || 'EUR';
     const tidy = fns.tidy || (s => s);
     const NON_MAIN = ['pots', 'substrates', 'accessories', 'terrariums'];
-    const products = brand.products.map(p => ({id: String(p.id), name: p.name, url: p.url, price: p.price, amount: Number.isFinite(p.priceValue) ? p.priceValue : null, currency: p.currency || currency, pack: '', available: p.available !== false, main: !NON_MAIN.includes(p.kind) && !/kliniec|klinec|\blist[auy]\b|lišt|fóli|foli[ae]\b|netkan|kolík|kolik|hadic|nožnic|noznic|rukavic|postrek|postřik/i.test(p.name), kind: p.kind, raw: p}));
+    const products = brand.products.map(p => ({id: String(p.id), name: p.name, url: p.url, price: p.price, amount: Number.isFinite(p.priceValue) ? p.priceValue : null, currency: p.currency || currency, pack: '', available: p.available !== false, main: !NON_MAIN.includes(p.kind) && !/kliniec|klinec|\blist[auy]\b|lišt|fóli|foli[ae]\b|netkan|kolík|kolik|hadic|nožnic|noznic|rukavic|postrek|postřik|such[ýy] zip|výhrevn|vyhrevn|heat pack|pumpičk|pumpick|prianie|venovanie|poukaz|mystery box/i.test(p.name), kind: p.kind, raw: p}));
     const byId = new Map(products.map(p => [p.id, p]));
     const kindOf = s => /semien|semink|\bsemena\b|\bsemeno\b|osivo/.test(s) && !/semenac/.test(s) ? 'seeds' : /odrez|\brizek\b|\brizky\b|zakorenit/.test(s) ? 'cuttings' : /masozrav/.test(s) ? 'carnivorous' : /kvetinac|crepnik|obal na kvet|\bobal\b|kaspo|truhlik/.test(s) ? 'pots' : /substrat|zemin|hlin\b|hlina|raselin/.test(s) ? 'substrates' : /hnojiv|postrek|postrik|opora|tyc|drziak|kvapkadl/.test(s) ? 'accessories' : /kaktus|cactus/.test(s) ? 'cacti' : /sukulent/.test(s) ? 'succulents' : /orchid/.test(s) ? 'orchids' : /terari/.test(s) ? 'terrariums' : /ovocn|jablon|hrusk|broskyn|ceresn|slivk/.test(s) ? 'fruits' : /trvalk|skalnick|zahrad|vonkajs|na zahon|na balkon/.test(s) ? 'outdoor' : null;
     function parse(pos, neg) {
@@ -945,6 +945,8 @@
     const pre = q => {
       const p0 = pets(q);
       if (p0 !== undefined) return p0;
+      // A sick plant (yellow leaves, rot, pests) is the advisor's care answer, not a product named "listy".
+      if (/zlt\w* list|list\w* zlt|zlout|hnij|hnil|hnit|chorob|skodc|skudc|mszic|msic|svilusk|plesn/.test(q)) return null;
       if (!/poliev|zaliev|zalev|ako casto|jak casto|starat|pestovat|presad|hnojit/.test(q)) return undefined;
       const stems = q.split(/[^a-z]+/).filter(w => w.length >= 5 && !/poliev|zaliev|zalev|casto|starat|pestov|presad|hnojit|rastlin|rostlin|kvetin/.test(w)).map(w => w.slice(0, 6));
       const hit = products.find(p => p.main && p.available && stems.some(st => norm(p.name).includes(st)));

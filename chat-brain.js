@@ -402,7 +402,9 @@
     if (!fit.length) {
       if (opts.other && opts.skip?.length) return t.noOther + (cond ? ' (' + cond + ')' : '') + ' ' + t.change + (ad.lang === 'cs' ? ', třeba rozpočet nebo typ.' : ', napríklad rozpočet alebo typ.');
       if (all.length && st.budget) {
-        const cheapest = all.slice().sort((a, b) => (priceOf(a, st).amount ?? 1e12) - (priceOf(b, st).amount ?? 1e12))[0];
+        // The cheapest product of the kind asked, never a nail or gift card when a plant was asked for.
+        const pool = all.filter(p => p.main !== false);
+        const cheapest = (pool.length ? pool : all).slice().sort((a, b) => (priceOf(a, st).amount ?? 1e12) - (priceOf(b, st).amount ?? 1e12))[0];
         const condNoBudget = conditionText(ad, {...st, budget: null, answers: {...st.answers, sort: undefined}});
         return `${t.noneUnder(money(st.budget.amount, st.budget.currency || ad.currency), condNoBudget)} ${t.cheapest(cheapest.name, priceOf(cheapest, st).label)}\n\n${line(ad, cheapest, st)}`;
       }
@@ -588,15 +590,17 @@
   }
 
   /* Personal pickup and the shop's own premises, in the shop's words. */
-  const PICKUP = /vyzdvihn|vyzdvihnut|osobn\w* (?:odber|prevzat|vyzdvih)|\bosobne\b|predajn|prevadzk|kamenn\w* obchod|otvaracie|oteviraci|kde (?:vas|ste|sidlite) |adresa (?:predajne|obchodu)/;
-  function pickupReply(ad) {
+  // Where the shop is ("Kde sídli vaša firma?") is answered from its pickup facts and pages too.
+  const PICKUP = /vyzdvihn|vyzdvihnut|osobn\w* (?:odber|prevzat|vyzdvih)|\bosobne\b|predajn|prevadzk|kamenn\w* obchod|otvaracie|oteviraci|kde (?:vas|ste|sidlite|sidli|sidlis|najdem|vas najdem|sa nachadza\w*)\b|\bsidl[oi]\w*|adresa (?:predajne|obchodu|firmy)|vasa adresa|vasu adresu/;
+  function pickupReply(ad, q = '') {
     const s = ad.shipping || {};
     const clauses = s.pickup?.length ? s.pickup.map(c => c.replace(/[.;,]+$/, '')) : uniq([...(s.lines || []), ...(s.delivery || []), ...(s.payment || [])].flatMap(l => l.split(/(?<=[.;])\s+|,\s+/)).filter(c => /osobn|odber|vyzdvih|predajn|prazia|pražia/i.test(c)).map(c => c.replace(/[.;,]+$/, '').replace(/^\w/, ch => ch.toUpperCase())));
     // Without the shop's facts in the demo nothing is claimed about its pages.
     if (!ad.shipping) return (ad.lang === 'cs' ? 'Osobní odběr v ukázce ověřený nemám. Aktuální možnosti jsou v e-shopu: ' : 'Osobný odber v ukážke overený nemám. Aktuálne možnosti sú v e-shope: ') + ad.source;
     if (!clauses.length) return (ad.lang === 'cs' ? 'Osobní odběr ani prodejnu e-shop na svých stránkách neuvádí. Aktuální možnosti jsou v e-shopu: ' : 'Osobný odber ani predajňu e-shop na svojej stránke neuvádza. Aktuálne možnosti sú v e-shope: ') + (s.termsUrl || s.url || ad.source);
     const more = s.pickup?.length ? (ad.lang === 'cs' ? 'Podrobnosti najdete v e-shopu: ' : 'Podrobnosti nájdete v e-shope: ') : (ad.lang === 'cs' ? 'Otevírací dobu a adresu najdete v e-shopu: ' : 'Otváracie hodiny a adresu nájdete v e-shope: ');
-    return [(ad.lang === 'cs' ? 'Osobní odběr podle e-shopu' : 'Osobný odber podľa e-shopu') + (s.checkedAt ? ' (' + s.checkedAt + ')' : '') + ':', clauses.join('. ') + '.', more + (s.pickup?.length ? s.url || s.termsUrl || '' : s.termsUrl || s.url || '')].join('\n');
+    const where = /sidl|najdem|nachadza|adres/.test(q);
+    return [(where ? (ad.lang === 'cs' ? 'Kde je obchod, podle e-shopu' : 'Kde je obchod, podľa e-shopu') : ad.lang === 'cs' ? 'Osobní odběr podle e-shopu' : 'Osobný odber podľa e-shopu') + (s.checkedAt ? ' (' + s.checkedAt + ')' : '') + ':', clauses.join('. ') + '.', more + (s.pickup?.length ? s.url || s.termsUrl || '' : s.termsUrl || s.url || '')].join('\n');
   }
 
   /* Payment methods and delivery time exactly as the shop's terms state them. */
@@ -629,7 +633,7 @@
     const notProduct = !/produkt|odporuc|doporuc|kav[auy]|vin[oa]|krem|caj|rastlin/.test(q.replace(/doprav\w*/g, '')) || /^(?:a\s+)?(?:posielate|posilate|zasielate|zasilate|dorucujete|odosielate|odesilate)\b/.test(q);
     if (DELIVERY.test(q) && notProduct) return termsReply(ad, 'delivery');
     if (PAYMENT.test(q) && !/doprav|postovn|poštovn/.test(q) && notProduct) return termsReply(ad, 'payment');
-    if (PICKUP.test(q) && (notProduct || /vyzdvihn|vyzvedn|osobn\w* (?:odber|odber|prevzat|prevzit)/.test(q)) && !/odporuc|doporuc|\bmate\b.*\bkav/.test(q)) return pickupReply(ad);
+    if (PICKUP.test(q) && (notProduct || /vyzdvihn|vyzvedn|osobn\w* (?:odber|odber|prevzat|prevzit)/.test(q)) && !/odporuc|doporuc|\bmate\b.*\bkav/.test(q)) return pickupReply(ad, q);
     if (SHIPPING.test(q) && notProduct) return shippingReply(ad, q);
     // "A do Česka?" right after a shipping answer is the same question for another country.
     const lastBot = [...messages].reverse().find(m => m.role === 'assistant')?.content || '';
@@ -761,7 +765,7 @@
     }
 
     // "Čo je produkt X?", "Ako použiť X?", "Porovnaj X a Y" about a name the shop does not sell.
-    if (!named.length && (/\bprodukt\s+\S+.*(?:\?|pre koho|pro koho)/.test(q) && DETAIL.test(q) || /^porovn\w*\s+\S/.test(q) || /\bpouzit\s+\S+.*\?/.test(q))) return t.unknownProduct;
+    if (!named.length && (/\bprodukt\s+\S+.*(?:\?|pre koho|pro koho)/.test(q) && DETAIL.test(q) || /^porovn\w*\s+\S/.test(q) && !(ad.parse && Object.keys(ad.parse(q, '', q).set || {}).length) || /\bpouzit\s+\S+.*\?/.test(q))) return t.unknownProduct;
     if (COMPARE.test(qi)) {
       // Two sides of "Porovnaj X a Y" / "rozdiel medzi X a Y" / "X alebo Y": the best product on each side.
       const body = norm(pol.pos || latestRaw).replace(/^.*?(?:porovn\w*|srovn\w*|rozdiel\w*\s+(?:medzi|mezi)?|rozdil\w*\s+(?:mezi)?|lisi\s+sa|lisi\s+se)\s+/, '').replace(/\.\s+(?:aky|aka|ake|ktory|ktora|ktore|co|cim|ako|jaky|jaka|jake|ktery|ktera|chcem|chci|ktor\w*)\b.*$/, '').replace(/[?!].*$/, '').replace(/\.\s*$/, '');
@@ -789,7 +793,8 @@
     const ownName = named.length ? norm(named[0].p.name) : '';
     const usageQ = named.length && USAGE.test(named[0].p.main === false ? qi.replace(BREWER, ' ') : qi.replace(BREWER, w => ownName.includes(w.slice(0, 5)) && ASK_NAME.test(q) ? ' ' : w));
     if (usageQ) return usageReply(ad, st, named[0], q);
-    if (ACCESSORY.test(qi) && ad.accessories) {
+    // "…, 7 cm květináč" in the product's own name is that product, not a request for a pot.
+    if (ACCESSORY.test(qi) && ad.accessories && !(named.length && ACCESSORY.test(ownName) && !ACCESSORY.test((' ' + words(q).join(' ') + ' ').replace(' ' + words(named[0].p.name).join(' ') + ' ', ' ')))) {
       const main = named[0] || (() => { const shown = shownProducts(ad, messages).filter(p => p.main); return shown.length ? {p: shown[0], all: [shown[0]]} : null; })();
       const wantsAcc = /doplnok|doplnk|doplnek|prislusenstv|k tomu|k nej\b|k nemu\b|co este|co jeste|\bdoz|vakuov|sitk|sítk|infuz|kvetinac|crepnik|obal|podmisk|misk|substrat|hnojiv|pohar|otvarac|vyvrtk|skladovan/.test(qi);
       if (wantsAcc) return accessoryReply(ad, st, main, q);

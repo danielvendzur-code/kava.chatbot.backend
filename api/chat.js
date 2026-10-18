@@ -1,11 +1,6 @@
-import {fullCoffeeReply,brainCoffeeReply} from './full-coffee-reply.js';
+import {fullCoffeeReply,brainCoffeeReply,coffeeCatalogue} from './full-coffee-reply.js';
+import {aiAnswer} from './ai-chat.js';
 import {verifiedCoffeeReply} from './verified-coffee-reply.js';
-const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
-const MODEL = process.env.CHAT_MODEL || 'claude-sonnet-5-5';
-// Claude Sonnet 5.5 and Haiku 5.5 take no temperature; thinking stays off for these two-sentence answers,
-// and Sonnet 5.5 hands a declined request to the fallback model instead of returning nothing.
-const MODEL_OPTIONS = /^claude-sonnet-5-5/.test(MODEL) ? {thinking: {type: 'between_tools'}, output_config: {effort: 'low'}, fallbacks: 'default'} : /^claude-haiku-5-5/.test(MODEL) ? {thinking: {type: 'disabled'}, output_config: {effort: 'low'}} : {temperature: 0};
-const MODEL_HEADERS = /^claude-sonnet-5-5/.test(MODEL) ? {'anthropic-beta': 'server-side-fallback-2026-07-01'} : {};
 
 const DEMOS = {
   praziarnicka: {
@@ -464,64 +459,11 @@ export default async function handler(req,res){
   while(messages.at(-1)?.role==='assistant')messages.pop();
   const latest=messages.filter((m)=>m.role==='user').at(-1)?.content||'';
   if(!latest) return res.status(400).json({error:'Missing user message'});
-  /* Questions about named products, comparisons, exclusions and changed conditions are answered
-     from the shop catalogue first; only general coffee questions continue below. */
-  const grounded=await brainCoffeeReply(String(body.demoId||''),latest,messages);if(grounded)return res.status(200).json({reply:grounded,fallback:true});
-  /* A general coffee question outside the prepared topics goes to the model, which may only
-     explain coffee in general: no products, prices, shop terms or health advice. */
-  const asked=globalThis.CXCoffeeReplyKind?.(latest);
-  if(asked?.kind==='general'&&!asked.topic&&ANTHROPIC_API_KEY){
-    const czech=/\.cz(\/|$)/.test(String(demo.web||''));
-    try{
-      const general=await fetch('https://api.anthropic.com/v1/messages',{
-        method:'POST',signal:AbortSignal.timeout(9000),
-        headers:{'content-type':'application/json','x-api-key':ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01',...MODEL_HEADERS},
-        body:JSON.stringify({model:MODEL,max_tokens:170,...MODEL_OPTIONS,system:[
-          czech?'Odpovídejte jednoduchou a gramaticky správnou češtinou, přesně dvěma krátkými větami.':'Odpovedajte jednoduchou a gramaticky správnou slovenčinou, presne dvoma krátkymi vetami.',
-          'Ste kávový poradca. Odpovedajte iba na všeobecné otázky o káve: druhy, spracovanie, praženie, príprava, mletie, skladovanie, chuť.',
-          'Nemenujte žiadne konkrétne produkty, značky, ceny ani podmienky obchodu. Neposudzujte zdravie. Používajte vykanie a odpoveď neukončujte otázkou.',
-          'Ak otázka nie je o káve alebo si odpoveďou nie ste istý, odpovedzte presne: NEVIEM'
-        ].join('\n'),messages:[{role:'user',content:latest}]})
-      });
-      if(general.ok){
-        const data=await general.json();
-        const text=(Array.isArray(data.content)?data.content.filter((b)=>b.type==='text').map((b)=>b.text).join(''):'').replace(/[\u002a_\u0060#]/g,'').replace(/\s+/g,' ').trim();
-        if(text&&!/NEVIEM/i.test(text)&&!/https?:|€|Kč/.test(text))return res.status(200).json({reply:text});
-      }else console.error('Anthropic API error',general.status);
-    }catch(error){console.error('coffee general answer error',error);}
-  }  const full=await fullCoffeeReply(String(body.demoId||''),latest,messages);if(full)return res.status(200).json({reply:full,fallback:true});
-  const verified=verifiedCoffeeReply(String(body.demoId||''),latest);if(verified)return res.status(200).json({reply:verified,fallback:true});
-  const fallback=()=>res.status(200).json({reply:deterministicReply(demo,latest),fallback:true});
-
-  if(!ANTHROPIC_API_KEY) return fallback();
-
-  const system=[
-    `Ste stručný online kávový poradca pre ${demo.brand}.`,
-    /\.cz(\/|$)/.test(String(demo.web||''))?'Odpovídejte jednoduchou a gramaticky správnou češtinou, i když jsou podklady níže slovensky. Napište přesně dvě krátké věty.':'Odpovedajte jednoduchou a gramaticky správnou slovenčinou. Napíšte presne dve krátke vety.',
-    'Používajte vykanie bez rodových tvarov. Odpoveď neukončujte otázkou ani výzvou na ďalšiu konverzáciu.',
-    'Odporučiť môžete iba presný názov produktu zo zoznamu Overené produkty. Nikdy nevymýšľajte názvy, fakty, ceny ani kontakty.',
-    'Vhodnosť na automat, espresso, filter, mlieko alebo bezkofeínovú voľbu spomeňte iba vtedy, keď je priamo uvedená pri produkte.',
-    'Ak otázku nemožno zodpovedať z údajov nižšie, povedzte to a odporučte chuťový výber alebo oficiálny e-shop.',
-    ...(demo.guidance||[]),
-    `Oficiálny e-shop: ${demo.web}`,
-    `Overené produkty:\n- ${demo.products.join('\n- ')}`,
-    ...(demo.notes?.length?[`Ďalšie overené informácie:\n- ${demo.notes.join('\n- ')}`]:[])
-  ].join('\n\n');
-
-  try{
-    const apiResponse=await fetch('https://api.anthropic.com/v1/messages',{
-      method:'POST',
-      headers:{'content-type':'application/json','x-api-key':ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01',...MODEL_HEADERS},
-      body:JSON.stringify({model:MODEL,max_tokens:170,...MODEL_OPTIONS,system,messages})
-    });
-    if(!apiResponse.ok){console.error('Anthropic API error',apiResponse.status,await apiResponse.text());return fallback();}
-    const data=await apiResponse.json();
-    const reply=Array.isArray(data.content)?data.content.filter((b)=>b.type==='text').map((b)=>b.text).join('').trim():'';
-    const clean=reply.replace(/[\u002a_\u0060#]/g,'').replace(/\s+/g,' ').trim();
-    if(!clean) return fallback();
-    return res.status(200).json({reply:clean});
-  }catch(error){
-    console.error('coffee chat provider error',error);
-    return fallback();
-  }
+  const slug=String(body.demoId||'');
+  /* The catalogue rules give a verified draft answer; Claude answers the customer in its own words
+     from that draft, the shop's catalogue and its shipping facts. Without the model, the draft is the answer. */
+  const draft=(await brainCoffeeReply(slug,latest,messages))||(await fullCoffeeReply(slug,latest,messages))||verifiedCoffeeReply(slug,latest)||deterministicReply(demo,latest);
+  const ai=await aiAnswer({family:'coffee',brand:demo.brand,web:demo.web,catalogue:await coffeeCatalogue(slug),messages,draft,
+    extra:[demo.notes?.length?'Ďalšie overené informácie:\n- '+demo.notes.join('\n- '):'',...(demo.guidance||[])]});
+  return res.status(200).json(ai?{reply:ai}:{reply:draft,fallback:true});
 }

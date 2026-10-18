@@ -7,3 +7,5 @@ async function catalogue(slug){if(!slugs.has(slug))return null;await import('../
 /* Conversation-aware answer (named products, comparisons, exclusions, budget changes); null when the question is general. */
 export async function brainCoffeeReply(slug,text,history=[]){const c=await catalogue(slug);if(!c)return null;if(!adapters.has(slug))adapters.set(slug,globalThis.CXChatBrain.adapters.coffee(c));return globalThis.CXChatBrain.reply(adapters.get(slug),text,history);}
 export async function fullCoffeeReply(slug,text,history=[]){const c=await catalogue(slug);if(!c)return null;return (await brainCoffeeReply(slug,text,history))||globalThis.CXCoffeeReplyCore(c,text,history);}
+/* The shop's catalogue, for the model's grounding. */
+export const coffeeCatalogue=catalogue;
