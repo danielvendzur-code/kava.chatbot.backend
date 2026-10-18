@@ -513,6 +513,9 @@
       const ns = stylesOf(neg); if (ns.length) not.style = uniq([...ns, ...(ns.includes('sweet') ? ['medium-sweet'] : [])]);
       if (/ovocn/.test(pos)) set.character = 'fruity'; else if (/\bpln|vyrazn|barrique|sudov|drev/.test(pos)) set.character = 'bold'; else if (/sviez|svez|lahk|lehk/.test(pos)) set.character = 'crisp';
       if (/ryb|hydin|drubez|kurac|kure|salat|morsk/.test(pos)) set.food = 'fish'; else if (/\bmas[oau]\b|steak|gril|divin|hovadz|hovez|bravc|veprov|jahnac/.test(pos)) set.food = 'meat'; else if (/syr|sýr|dezert|kolac|kolač|cokolad/.test(pos)) set.food = 'cheese';
+      if (/nealko|bez alkohol|alkohol.?free/.test(pos)) set.noAlcohol = true;
+      if (/darcek|darcek|darek|darcek|na darcek|ako darcek|jako darek/.test(pos)) set.gift = true;
+      if (/najlacn|nejlevn/.test(pos)) set.sort = 'cheap'; else if (/najdrah|nejdraz/.test(pos)) set.sort = 'expensive';
       return {set, not};
     }
     function rank(a = {}, not = {}, st = {}) {
@@ -522,8 +525,13 @@
       if (not.style?.length) list = list.filter(p => !not.style.includes(p.raw.wineFacts?.style));
       // "Štyri fľaše" means bottles: no cans, bag-in-box or 0,25 l formats.
       if (st.qty || /flas|flias|lahv|lahev/.test(st.lastQ || '')) list = list.filter(p => !/plechov|\bplech\b|bag.?in.?box|\bbib\b|\b0[,.]2\s*l|\b0[,.]25\s*l|\b0[,.]187|\b(?:187|200|250|330)\s*ml|\b[2-9]\s*l\b|litr|bez alkohol|nealko/.test(norm(p.name + ' ' + (p.pack || ''))));
+      const NONALC = /nealko|bez alkohol|alkohol.?free|0[,.]0\s*%/;
+      list = a.noAlcohol ? products.filter(p => p.available && NONALC.test(norm(p.name + ' ' + (p.raw.description || '')))) : list.filter(p => !NONALC.test(norm(p.name)));
+      // A gift: gift boxes and sets first, then bottles (no cans or bag-in-box).
+      if (a.gift) { const small = /plechov|bag.?in.?box|\bbib\b|\b0[,.]2\s*l|\b0[,.]25\s*l|\b0[,.]187|\b(?:187|200|250|330)\s*ml/; const boxed = products.filter(p => p.main && p.available && /darc|dark|kazet|\bbox\b|\bset\b|sada|balicek/.test(norm(p.name)) && !/poukaz|voucher/.test(norm(p.name))); list = uniq([...boxed, ...list.filter(p => !small.test(norm(p.name + ' ' + (p.pack || ''))))]); }
+      if (a.sort) list = list.filter(p => p.main && p.available && Number.isFinite(p.amount)).sort((x, y) => a.sort === 'cheap' ? x.amount - y.amount : y.amount - x.amount);
       const budget = st.budget?.amount;
-      if (budget && !st.qty) list = list.slice().sort((x, y) => (y.amount ?? -1) - (x.amount ?? -1));
+      if (budget && !st.qty && !a.sort) list = list.slice().sort((x, y) => (y.amount ?? -1) - (x.amount ?? -1));
       return list;
     }
     function facts(p) {
@@ -567,11 +575,16 @@
       if (a.style) out.push(STYLE[lang][a.style]);
       if (a.character) out.push(CHAR[lang][a.character]);
       if (a.food) out.push(FOOD[lang][a.food]);
+      if (a.noAlcohol) out.push(L(lang, 'nealkoholické', 'nealkoholické'));
+      if (a.gift) out.push(L(lang, 'ako darček', 'jako dárek'));
+      if (a.sort) out.push(a.sort === 'cheap' ? L(lang, 'od najlacnejšieho', 'od nejlevnějšího') : L(lang, 'od najdrahšieho', 'od nejdražšího'));
       if (not.style?.length) out.push(L(lang, 'nie ', 'ne ') + uniq(not.style.map(s => STYLE[lang][s])).join(L(lang, ' ani ', ' ani ')));
       if (not.color?.length) out.push(L(lang, 'nie ', 'ne ') + not.color.map(s => COLOR[lang][s]).join(', '));
       return out;
     };
-    return {family: 'wine', lang, currency, source: c.source, shipping: c.shipping || null, products, parse, rank, facts, attribute, usage, accessories, describe, relax: ['food', 'character', 'style'], reasonKeys: ['style', 'color', 'character', 'food', 'year', 'description'], similar: p => ({color: p.raw.wineFacts?.color || undefined})};
+    // "Máte Tokaj?": a wine the winery does not make, then what it does have.
+    const notSoldSuggest = parsed => ({head: L(lang, 'Z ponuky vinárstva:', 'Z nabídky vinařství:'), list: rank(parsed.set || {}, {}, {})});
+    return {family: 'wine', notSoldSuggest, lang, currency, source: c.source, shipping: c.shipping || null, products, parse, rank, facts, attribute, usage, accessories, describe, relax: ['food', 'character', 'style'], reasonKeys: ['style', 'color', 'character', 'food', 'year', 'description'], similar: p => ({color: p.raw.wineFacts?.color || undefined})};
   }
 
   /* ======================= COSMETICS AND HAIR ======================= */
@@ -838,6 +851,7 @@
       const t = typeOf(pos); if (t && set.category !== 'sets') set.type = t;
       const nt = []; for (const part of neg.split(/,|\bani\b|\ba\b|\bnebo\b|\balebo\b/)) { const x = typeOf(part); if (x) nt.push(x); }
       if (nt.length) not.type = uniq(nt);
+      if (/najlacn|nejlevn/.test(pos)) set.sort = 'cheap'; else if (/najdrah|nejdraz/.test(pos)) set.sort = 'expensive';
       return {set, not};
     }
     function rank(a = {}, not = {}, st = {}) {
@@ -846,8 +860,9 @@
       if (a.caffeine === 'no') list = list.filter(p => p.raw.caffeine === false || p.raw.type === 'set' && !/cier|cern|zelen|biel|bil/.test(norm(p.name)));
       // Gift sets: real gift packs first, then the fuller ones; a sampler is not a gift set.
       if (a.category === 'sets') list = list.slice().sort((x, y) => (/darkov|darcek|kazet|kolekc/.test(norm(y.name)) ? 1 : 0) - (/darkov|darcek|kazet|kolekc/.test(norm(x.name)) ? 1 : 0) || (y.amount ?? 0) - (x.amount ?? 0));
+      if (a.sort) list = list.filter(p => p.available && Number.isFinite(p.amount)).sort((x, y) => a.sort === 'cheap' ? x.amount - y.amount : y.amount - x.amount);
       const budget = st.budget?.amount;
-      if (budget) list = list.slice().sort((x, y) => (y.amount ?? -1) - (x.amount ?? -1));
+      if (budget && !a.sort) list = list.slice().sort((x, y) => (y.amount ?? -1) - (x.amount ?? -1));
       return list;
     }
     function facts(p) {
@@ -863,8 +878,10 @@
     const TEA_USE = {sk: {black: 'Čierny čaj: voda 95–100 °C, lúhovať 3–5 minút.', green: 'Zelený čaj: voda 70–80 °C, lúhovať 2–3 minúty.', white: 'Biely čaj: voda 75–85 °C, lúhovať 3–5 minút.', herbal: 'Bylinný čaj: vriaca voda, lúhovať 5–10 minút pod pokrievkou.', fruit: 'Ovocný čaj: vriaca voda, lúhovať 5–8 minút.', rooibos: 'Rooibos: vriaca voda, lúhovať 5–7 minút.'}, cs: {black: 'Černý čaj: voda 95–100 °C, louhovat 3–5 minut.', green: 'Zelený čaj: voda 70–80 °C, louhovat 2–3 minuty.', white: 'Bílý čaj: voda 75–85 °C, louhovat 3–5 minut.', herbal: 'Bylinný čaj: vroucí voda, louhovat 5–10 minut pod pokličkou.', fruit: 'Ovocný čaj: vroucí voda, louhovat 5–8 minut.', rooibos: 'Rooibos: vroucí voda, louhovat 5–7 minut.'}};
     const usage = p => (TEA_USE[lang][p.raw.type] || '') + L(lang, ' Množstvo: jedno vrecúško alebo približne 2 g sypaného čaju na 200–250 ml, ak výrobca neuvádza inak.', ' Množství: jeden sáček nebo přibližně 2 g sypaného čaje na 200–250 ml, pokud výrobce neuvádí jinak.');
     const accessories = () => products.filter(p => !p.main && p.available && /sitk|sitek|sítk|konvic|kanvic|hrnek|hrnc|infuz|caj(?:o|e)vn/.test(norm(p.name)));
-    const describe = (a = {}, not = {}) => { const out = []; if (a.category === 'sets') out.push(L(lang, 'darčeková sada', 'dárková sada')); if (a.type) out.push(TYPE[lang][a.type] + L(lang, ' čaj', ' čaj')); if (a.caffeine === 'no') out.push(L(lang, 'bez kofeínu', 'bez kofeinu')); if (a.caffeine === 'yes') out.push(L(lang, 's kofeínom', 's kofeinem')); if (not.type?.length) out.push(L(lang, 'nie ', 'ne ') + not.type.map(t => TYPE[lang][t]).join(L(lang, ' ani ', ' ani '))); return out; };
-    return {family: 'tea', lang, currency, source: catalogue.source || '', shipping: catalogue.shipping || null, products, parse, rank, facts, usage, accessories, describe, relax: ['type'], reasonKeys: ['type', 'caffeine', 'form'], similar: p => ({category: p.cat === 'sets' ? 'sets' : undefined})};
+    const describe = (a = {}, not = {}) => { const out = []; if (a.category === 'sets') out.push(L(lang, 'darčeková sada', 'dárková sada')); if (a.sort) out.push(a.sort === 'cheap' ? L(lang, 'od najlacnejšieho', 'od nejlevnějšího') : L(lang, 'od najdrahšieho', 'od nejdražšího')); if (a.type) out.push(TYPE[lang][a.type] + L(lang, ' čaj', ' čaj')); if (a.caffeine === 'no') out.push(L(lang, 'bez kofeínu', 'bez kofeinu')); if (a.caffeine === 'yes') out.push(L(lang, 's kofeínom', 's kofeinem')); if (not.type?.length) out.push(L(lang, 'nie ', 'ne ') + not.type.map(t => TYPE[lang][t]).join(L(lang, ' ani ', ' ani '))); return out; };
+    // "Máte Lipton?": a brand the shop does not sell, then its own teas.
+    const notSoldSuggest = parsed => ({head: L(lang, 'Z ponuky e-shopu:', 'Z nabídky e-shopu:'), list: rank(parsed.set || {}, {}, {})});
+    return {family: 'tea', notSoldSuggest, lang, currency, source: catalogue.source || '', shipping: catalogue.shipping || null, products, parse, rank, facts, usage, accessories, describe, relax: ['type'], reasonKeys: ['type', 'caffeine', 'form'], similar: p => ({category: p.cat === 'sets' ? 'sets' : undefined})};
   }
 
   /* ======================= PLANTS ======================= */

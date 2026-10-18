@@ -629,7 +629,7 @@
     const notProduct = !/produkt|odporuc|doporuc|kav[auy]|vin[oa]|krem|caj|rastlin/.test(q.replace(/doprav\w*/g, '')) || /^(?:a\s+)?(?:posielate|posilate|zasielate|zasilate|dorucujete|odosielate|odesilate)\b/.test(q);
     if (DELIVERY.test(q) && notProduct) return termsReply(ad, 'delivery');
     if (PAYMENT.test(q) && !/doprav|postovn|poštovn/.test(q) && notProduct) return termsReply(ad, 'payment');
-    if (PICKUP.test(q) && notProduct && !/odporuc|doporuc|\bmate\b.*\bkav/.test(q)) return pickupReply(ad);
+    if (PICKUP.test(q) && (notProduct || /vyzdvihn|vyzvedn|osobn\w* (?:odber|odber|prevzat|prevzit)/.test(q)) && !/odporuc|doporuc|\bmate\b.*\bkav/.test(q)) return pickupReply(ad);
     if (SHIPPING.test(q) && notProduct) return shippingReply(ad, q);
     // "A do Česka?" right after a shipping answer is the same question for another country.
     const lastBot = [...messages].reverse().find(m => m.role === 'assistant')?.content || '';
