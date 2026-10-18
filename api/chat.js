@@ -1,7 +1,11 @@
 import {fullCoffeeReply,brainCoffeeReply} from './full-coffee-reply.js';
 import {verifiedCoffeeReply} from './verified-coffee-reply.js';
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
-const MODEL = process.env.CHAT_MODEL || 'claude-haiku-4-5';
+const MODEL = process.env.CHAT_MODEL || 'claude-sonnet-5-5';
+// Claude Sonnet 5.5 and Haiku 5.5 take no temperature; thinking stays off for these two-sentence answers,
+// and Sonnet 5.5 hands a declined request to the fallback model instead of returning nothing.
+const MODEL_OPTIONS = /^claude-sonnet-5-5/.test(MODEL) ? {thinking: {type: 'between_tools'}, output_config: {effort: 'low'}, fallbacks: 'default'} : /^claude-haiku-5-5/.test(MODEL) ? {thinking: {type: 'disabled'}, output_config: {effort: 'low'}} : {temperature: 0};
+const MODEL_HEADERS = /^claude-sonnet-5-5/.test(MODEL) ? {'anthropic-beta': 'server-side-fallback-2026-07-01'} : {};
 
 const DEMOS = {
   praziarnicka: {
@@ -471,8 +475,8 @@ export default async function handler(req,res){
     try{
       const general=await fetch('https://api.anthropic.com/v1/messages',{
         method:'POST',signal:AbortSignal.timeout(9000),
-        headers:{'content-type':'application/json','x-api-key':ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01'},
-        body:JSON.stringify({model:MODEL,max_tokens:170,temperature:0,system:[
+        headers:{'content-type':'application/json','x-api-key':ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01',...MODEL_HEADERS},
+        body:JSON.stringify({model:MODEL,max_tokens:170,...MODEL_OPTIONS,system:[
           czech?'Odpovídejte jednoduchou a gramaticky správnou češtinou, přesně dvěma krátkými větami.':'Odpovedajte jednoduchou a gramaticky správnou slovenčinou, presne dvoma krátkymi vetami.',
           'Ste kávový poradca. Odpovedajte iba na všeobecné otázky o káve: druhy, spracovanie, praženie, príprava, mletie, skladovanie, chuť.',
           'Nemenujte žiadne konkrétne produkty, značky, ceny ani podmienky obchodu. Neposudzujte zdravie. Používajte vykanie a odpoveď neukončujte otázkou.',
@@ -507,8 +511,8 @@ export default async function handler(req,res){
   try{
     const apiResponse=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
-      headers:{'content-type':'application/json','x-api-key':ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01'},
-      body:JSON.stringify({model:MODEL,max_tokens:170,temperature:0,system,messages})
+      headers:{'content-type':'application/json','x-api-key':ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01',...MODEL_HEADERS},
+      body:JSON.stringify({model:MODEL,max_tokens:170,...MODEL_OPTIONS,system,messages})
     });
     if(!apiResponse.ok){console.error('Anthropic API error',apiResponse.status,await apiResponse.text());return fallback();}
     const data=await apiResponse.json();

@@ -1,7 +1,11 @@
 import {legacyStockReply} from './legacy-stock-reply.js';
 import { catalogueReply } from './catalogue-reply.js';
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
-const MODEL = process.env.CHAT_MODEL || 'claude-haiku-4-5';
+const MODEL = process.env.CHAT_MODEL || 'claude-sonnet-5-5';
+// Claude Sonnet 5.5 and Haiku 5.5 take no temperature; thinking stays off for these two-sentence answers,
+// and Sonnet 5.5 hands a declined request to the fallback model instead of returning nothing.
+const MODEL_OPTIONS = /^claude-sonnet-5-5/.test(MODEL) ? {thinking: {type: 'between_tools'}, output_config: {effort: 'low'}, fallbacks: 'default'} : /^claude-haiku-5-5/.test(MODEL) ? {thinking: {type: 'disabled'}, output_config: {effort: 'low'}} : {temperature: 0};
+const MODEL_HEADERS = /^claude-sonnet-5-5/.test(MODEL) ? {'anthropic-beta': 'server-side-fallback-2026-07-01'} : {};
 
 const DEMOS = {
   monlevur:{"brand": "Monlevur", "web": "https://www.monlevur.cz/", "products": ["Tělový krém", "Krém proti vráskám", "Krém na ruce", "Pečující pleťový krém", "Sprchový krém", "Balzám na vlasy a bezoplachový krém", "Balzám na rty", "Blahodárná šumivka do koupele", "Šampuk pro jemné mytí", "Šampuk pro mastící se vlasy", "Srdce na dlani", "Krém proti vráskám a Sprchový krém", "Krém na ruce a Balzám na rty", "Pečující pleťový krém a Tělový krém", "Šampuk na mastící se vlasy a Balzám na vlasy a bezoplachový krém", "Šampuk na jemné mytí a Balzám na vlasy a bezoplachový krém", "Sprchový krém a 3x Blahodárná šumivka do koupele"], "fallback": {"default": "Produkty, balenia a ceny nájdete vo Výbere a Ponuke."}},
@@ -109,7 +113,7 @@ export default async function handler(req,res){
     `Overené produkty:\n- ${demo.products.join('\n- ')}`
   ].join('\n\n');
   try{
-    const api=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'content-type':'application/json','x-api-key':ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01'},body:JSON.stringify({model:MODEL,max_tokens:160,temperature:0,system,messages})});
+    const api=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'content-type':'application/json','x-api-key':ANTHROPIC_API_KEY,'anthropic-version':'2023-06-01',...MODEL_HEADERS},body:JSON.stringify({model:MODEL,max_tokens:160,...MODEL_OPTIONS,system,messages})});
     if(!api.ok){console.error('cosmetics Anthropic API error',api.status,await api.text());return fallback();}
     const data=await api.json();const reply=Array.isArray(data.content)?data.content.filter(b=>b.type==='text').map(b=>b.text).join('').trim():'';
     const clean=reply.replace(/[\u002a_\u0060#]/g,'').replace(/\s+/g,' ').trim();if(!clean)return fallback();
