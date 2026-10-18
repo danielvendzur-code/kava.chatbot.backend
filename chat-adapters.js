@@ -423,7 +423,7 @@
       if (g && /mate|predavate|ponukate|da sa kupit|nabizite|prodavate|aj\b|tiez|i\b|hladam|chcem/.test(q)) {
         const all = products.filter(p => !p.main && g[1].test(norm(p.name)));
         const live = all.filter(p => p.available).sort((a, b) => (a.amount ?? 1e9) - (b.amount ?? 1e9));
-        if (live.length) return L(lang, 'Áno, z ponuky:', 'Ano, z nabídky:') + '\n\n' + live.slice(0, 4).map(lineOf).join('\n\n');
+        if (live.length) return L(lang, 'Áno, z ponuky:', 'Ano, z nabídky:') + '\n\n' + live.slice(0, 3).map(lineOf).join('\n\n');
         if (all.length) return L(lang, `${g[2]} e-shop v ponuke má, ale momentálne nie je skladom.`, `${g[2]} e-shop v nabídce má, ale momentálně není skladem.`) + '\n\n' + lineOf(all[0]);
         return L(lang, `${g[2]} v ponuke e-shopu nenachádzam.`, `${g[2]} v nabídce e-shopu nenacházím.`) + (home ? L(lang, ` Celú ponuku nájdete na ${home}`, ` Celou nabídku najdete na ${home}`) : '');
       }
@@ -433,11 +433,11 @@
       if (/zlav|akci[ae]|vypredaj|vyprodej|zlavov|kupon|kod na zlavu|sleva|slevu/.test(q)) return L(lang, 'Aktuálne zľavy a akcie v ukážke overené nemám; nájdete ich priamo v e-shope: ', 'Aktuální slevy a akce v ukázce ověřené nemám; najdete je přímo v e-shopu: ') + home;
       if (/\bbio\b|organic|organick|ekologick|certifik/.test(q) && /kav|mate|je |su /.test(q)) {
         const bio = products.filter(p => p.main && p.available && /\bbio\b|organic|organick/.test(norm(p.name + ' ' + (p.raw.line || '')))).sort((a, b) => multiPack(a) - multiPack(b));
-        return bio.length ? L(lang, 'Ako bio (organic) e-shop označuje tieto kávy:', 'Jako bio (organic) e-shop označuje tyto kávy:') + '\n\n' + bio.slice(0, 4).map(lineOf).join('\n\n') : L(lang, 'Bio (organic) certifikát e-shop pri kávach v ponuke neuvádza.', 'Bio (organic) certifikát e-shop u káv v nabídce neuvádí.');
+        return bio.length ? L(lang, 'Ako bio (organic) e-shop označuje tieto kávy:', 'Jako bio (organic) e-shop označuje tyto kávy:') + '\n\n' + bio.slice(0, 3).map(lineOf).join('\n\n') : L(lang, 'Bio (organic) certifikát e-shop pri kávach v ponuke neuvádza.', 'Bio (organic) certifikát e-shop u káv v nabídce neuvádí.');
       }
       if (/vzork|degust|ochutnav|ochutnavk|tasting|sampler|tester|ochutnat viac/.test(q)) {
         const sets = products.filter(p => p.available && /vzork|vzorek|degust|ochutn|tasting|sampler|tester/.test(norm(p.name)) && !/cokolad|caj\b|tea\b|cerisett/.test(norm(p.name)));
-        return sets.length ? L(lang, 'Z ponuky na ochutnanie:', 'Z nabídky na ochutnání:') + '\n\n' + sets.slice(0, 4).map(lineOf).join('\n\n') : L(lang, 'Vzorky ani degustačné sady e-shop v ponuke nemá.', 'Vzorky ani degustační sady e-shop v nabídce nemá.');
+        return sets.length ? L(lang, 'Z ponuky na ochutnanie:', 'Z nabídky na ochutnání:') + '\n\n' + sets.slice(0, 3).map(lineOf).join('\n\n') : L(lang, 'Vzorky ani degustačné sady e-shop v ponuke nemá.', 'Vzorky ani degustační sady e-shop v nabídce nemá.');
       }
       if (/najvacs\w* (?:balen|gramaz)|nejvets\w* (?:balen|gramaz)|najvacs\w* kav|velk\w* balen/.test(q) && !/do \d|\d+ ?(?:€|eur)/.test(q)) {
         const sizes = sizesOffered();
@@ -806,7 +806,7 @@
       }
       if (/vzork|vzorek|vzorky|tester|cestovn\w* balen|mini balen|\bminiatur/.test(q) && !/bez vzor|nie vzork|ne vzor/.test(q)) {
         const list = products.filter(p => p.available && (p.raw.isSample || /vzork|vzorek|tester|\bmini\b|cestovn/.test(norm(p.name + ' ' + p.kind))));
-        return list.length ? L(lang, 'Vzorky a menšie balenia z ponuky:', 'Vzorky a menší balení z nabídky:') + '\n\n' + list.sort((a, b) => (a.amount ?? 1e9) - (b.amount ?? 1e9)).slice(0, 4).map(lineOf).join('\n\n') : L(lang, 'Vzorky ani cestovné balenia e-shop v ponuke nemá.', 'Vzorky ani cestovní balení e-shop v nabídce nemá.');
+        return list.length ? L(lang, 'Vzorky a menšie balenia z ponuky:', 'Vzorky a menší balení z nabídky:') + '\n\n' + list.sort((a, b) => (a.amount ?? 1e9) - (b.amount ?? 1e9)).slice(0, 3).map(lineOf).join('\n\n') : L(lang, 'Vzorky ani cestovné balenia e-shop v ponuke nemá.', 'Vzorky ani cestovní balení e-shop v nabídce nemá.');
       }
       if (/zlav|akci[ae]\b|vypredaj|vyprodej|kupon|kod na zlavu|sleva|slevu|slevov/.test(q)) return L(lang, 'Aktuálne zľavy a akcie v ukážke overené nemám; nájdete ich priamo v e-shope: ', 'Aktuální slevy a akce v ukázce ověřené nemám; najdete je přímo v e-shopu: ') + catalogue.source;
       if (/minimaln\w* (?:objednav|hodnot|nakup|sum)/.test(q)) return L(lang, 'Minimálnu hodnotu objednávky e-shop v ukážke overenú nemám. Podmienky nájdete v e-shope: ', 'Minimální hodnotu objednávky v ukázce ověřenou nemám. Podmínky najdete v e-shopu: ') + (catalogue.shipping?.termsUrl || catalogue.source);

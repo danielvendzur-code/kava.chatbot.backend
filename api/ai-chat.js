@@ -39,15 +39,29 @@ function pickProducts(products, messages, draft) {
   return [...mentioned, ...rest].slice(0, 36);
 }
 
-/* Prices and links in the answer must come from the data the model was given. */
-function grounded(reply, data) {
-  const flat = norm(data).replace(/\s+/g, '');
-  for (const m of reply.matchAll(/(\d[\d\s.,]*\d|\d)\s*(?:€|eur\b|kč|kc\b|czk)/gi)) {
-    const n = m[1].replace(/\s+/g, '');
-    if (!flat.includes(norm(n)) && !flat.includes(norm(n.replace(',', '.'))) && !flat.includes(norm(n.replace('.', ',')))) return false;
+/* Compare whole monetary values, including currency. Formatting is not a new price:
+   12.9 €, 12,90 eur and 12.90 EUR are equal; 2.9 €, 12.9 Kč and a date are not. */
+function moneyKey(raw, currency) {
+  const value = raw.trim().replace(/[\u00a0\u202f]/g, ' ');
+  let whole, fraction = '';
+  if (/^\d+(?:[.,]\d{1,2})?$/.test(value)) [whole, fraction = ''] = value.split(/[.,]/);
+  else {
+    const grouped = value.match(/^(\d{1,3}(?: \d{3})+|\d{1,3}(?:\.\d{3})+|\d{1,3}(?:,\d{3})+)(?:([.,])(\d{1,2}))?$/);
+    if (!grouped || (grouped[2] && grouped[1].includes(grouped[2]))) return null;
+    whole = grouped[1].replace(/[ .,]/g, ''); fraction = grouped[3] || '';
   }
-  for (const u of reply.match(/https?:\/\/[^\s)]+/g) || []) if (!data.includes(u.replace(/[.,;]+$/, ''))) return false;
-  return true;
+  return (/^(?:€|eur)$/i.test(currency) ? 'EUR:' : 'CZK:') + whole.replace(/^0+(?=\d)/, '') + '.' + fraction.padEnd(2, '0');
+}
+const moneyTokens = text => [...String(text).matchAll(/(?<![\p{L}\p{N}.,])(\d[\d \u00a0\u202f.,]*?)\s*(€|(?:eur|kč|kc|czk)(?!\p{L}))/giu)];
+const links = text => (String(text).match(/https?:\/\/[^\s<>"')]+/g) || []).map(u => u.replace(/[.,;]+$/, ''));
+function grounded(reply, data) {
+  const prices = new Set(moneyTokens(data).map(m => moneyKey(m[1], m[2])).filter(Boolean));
+  for (const m of moneyTokens(reply)) {
+    const key = moneyKey(m[1], m[2]);
+    if (!key || !prices.has(key)) return false;
+  }
+  const allowedLinks = new Set(links(data));
+  return links(reply).every(u => allowedLinks.has(u));
 }
 
 export async function aiAnswer({family = 'coffee', brand, web, catalogue, messages, draft = '', extra = [], apiKey = API_KEY, fetchImpl = fetch}) {

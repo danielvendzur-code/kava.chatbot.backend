@@ -348,7 +348,7 @@
     const pr = priceOf(p, st);
     const pack = pr.variant ? pr.variant : p.pack ? p.pack : '';
     const label = p.name + (pack && !norm(p.name).replace(/\s+/g, '').includes(norm(pack).replace(/\s+/g, '')) ? ' (' + pack + ')' : '');
-    const tail = ad.family === 'plants' ? '' : ' ' + p.url;
+    const tail = ' ' + p.url;
     return `${label} — ${pr.label || ''}.${reason ? ' ' + reason : ''}${tail}`.replace(/\s+—\s+\./, '.').trim();
   }
   const capital = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : s;
@@ -520,7 +520,7 @@
       if ((x?.v || '') !== (y?.v || '')) diffs.push({k, x, y});
     }
     const pa = priceOf(a.p, st), pb = priceOf(b.p, st);
-    const desc = (m, f) => `${m.p.name} — ${priceOf(m.p, st).label}: ${f.filter(x => x.v).slice(0, 4).map(x => x.v).join(', ') || (ad.lang === 'cs' ? 'bez dalších údajů v e-shopu' : 'bez ďalších údajov v e-shope')}. ${ad.family === 'plants' ? '' : m.p.url}`.trim();
+    const desc = (m, f) => { if (ad._listed) ad._listed.push(m.p.id); return `${m.p.name} — ${priceOf(m.p, st).label}: ${f.filter(x => x.v).slice(0, 4).map(x => x.v).join(', ') || (ad.lang === 'cs' ? 'bez dalších údajů v e-shopu' : 'bez ďalších údajov v e-shope')}. ${m.p.url}`.trim(); };
     const out = [desc(a, fa), desc(b, fb)];
     const decisive = diffs.filter(d => d.x?.v && d.y?.v).slice(0, 3);
     if (decisive.length) out.push(t.diff + ': ' + decisive.map(d => `${d.x.v} vs. ${d.y.v}`).join('; ') + '.');
@@ -538,7 +538,8 @@
     const u = ad.usage ? ad.usage(m.p, q, st) : null;
     const out = [];
     if (u) out.push(norm(u).includes(norm(m.p.name).slice(0, 12)) ? u : m.p.name + ': ' + u.charAt(0).toLowerCase() + u.slice(1));
-    out.push(t.usageSource.replace(/:$/, '') + (ad.lang === 'cs' ? ' (' + m.p.name + '):' : ' (' + m.p.name + '):') + ' ' + (ad.family === 'plants' ? '' : m.p.url));
+    if (ad._listed) ad._listed.push(m.p.id);
+    out.push(t.usageSource.replace(/:$/, '') + (ad.lang === 'cs' ? ' (' + m.p.name + '):' : ' (' + m.p.name + '):') + ' ' + m.p.url);
     return out.join('\n\n');
   }
 
@@ -627,6 +628,9 @@
     const bare = q.replace(/[!?.,\s]+$/, '').trim();
     if (/^(?:ahoj|ahojte|dobry den|dobry vecer|dobre rano|zdravim|cau|cauko|hello|hi|hej|nazdar)(?: \w+)?$/.test(bare)) return ad.lang === 'cs' ? 'Dobrý den! Rád vám poradím s výběrem z nabídky. Napište, co hledáte.' : 'Dobrý deň! Rád vám poradím s výberom z ponuky. Napíšte, čo hľadáte.';
     if (/^(?:dakujem|dakujeme|dakujem pekne|dakujem vam|vdaka|velka vdaka|diky|dik|dekuji|dekujeme|dekuji moc|super dakujem|ok dakujem|dobre dakujem)$/.test(bare)) return ad.lang === 'cs' ? 'Rádo se stalo. Pokud budete chtít poradit s dalším výběrem, napište.' : 'Rado sa stalo. Ak budete chcieť poradiť s ďalším výberom, napíšte.';
+    if (/^(?:(?:ake|jake|jaky)\b.*(?:pocasie|pocasi)|(?:what|how)\b.*weather|predpoved pocasia|weather forecast)/.test(q)) return ad.lang === 'cs' ? 'Předpověď počasí nemám, ale rád vám pomohu s výběrem z nabídky e-shopu.' : 'Predpoveď počasia nemám, ale rád vám pomôžem s výberom z ponuky e-shopu.';
+    if (!messages.some(m => m.role === 'assistant') && /^(?:lacnejsi\w*|levnejsi\w*|drahsi\w*|drazsi\w*|nie tento|ne tento)$/.test(bare)) return ad.lang === 'cs' ? 'Který produkt chcete nahradit? Napište jeho název nebo svůj rozpočet a nabídnu jinou možnost.' : 'Ktorý produkt chcete nahradiť? Napíšte jeho názov alebo svoj rozpočet a ponúknem inú možnosť.';
+    if (ad.family === 'wine' && /^(?:(?:aky|jaky) )?rocnik$/.test(bare)) return ad.lang === 'cs' ? 'U kterého vína chcete ověřit ročník? Napište prosím jeho název.' : 'Pri ktorom víne chcete overiť ročník? Napíšte prosím jeho názov.';
     if (HEALTH.test(q)) return ad.health ? ad.health(q, messages) : null;
     const index = ad.index || (ad.index = buildIndex(ad.products));
     // "Posielate rastliny aj v zime?" asks about sending, even though it names the goods.
@@ -640,6 +644,10 @@
     if (lastBot.startsWith(T[ad.lang].shippingHead) && COUNTRY.some(([rx]) => rx.test(q)) && q.split(' ').length <= 6) return shippingReply(ad, q);
     if (ad.pre) { const early = ad.pre(q, messages); if (early !== undefined) return early; }
     const st = stateOf(ad, index, messages);
+    // An exact catalogue name is a detail request, including gift cards and accessories.
+    // Words like "výběr" or "darčeková" inside that name do not ask for recommendations.
+    const literal = ad.products.find(p => norm(p.name).replace(/[!?.,\s]+$/, '').trim() === bare);
+    if (literal) return detailReply(ad, st, {p: literal, all: [literal], exact: true}, q, '');
     const pol = polarity(latestRaw);
     // A short question or "Máte …?" names a product even by one distinctive word of its name.
     const loose = ASK_NAME.test(q) || words(q).length <= 3 && !OTHER.test(q) && !ASK_REC.test(q) && !COMPARE.test(q);
@@ -730,7 +738,7 @@
       if (shownLast.length === 1) named = [{p: shownLast[0], all: [shownLast[0]], exact: false, core: '', score: 10, pos: 0}];
       else if (prevHit) named = [{...prevHit, exact: false, score: 10, pos: 0}];
       // Several were shown: their prices side by side.
-      else if (shownLast.length > 1 && PRICE_Q.test(q)) return shownLast.slice(0, 4).map(p => line(ad, p, st)).join('\n\n');
+      else if (shownLast.length > 1 && PRICE_Q.test(q)) return shownLast.slice(0, 3).map(p => line(ad, p, st)).join('\n\n');
       // "Máte ju aj v kilovom balení?" after a list: the first coffee shown.
       else if (shownLast.length > 1 && PRONOUN.test(q)) named = [{p: shownLast[0], all: [shownLast[0]], exact: false, core: '', score: 10, pos: 0}];
     }
@@ -739,6 +747,7 @@
     const t = T[ad.lang];
     // Intent words inside a product's own name ("… na príslušenstvo") are not the customer's intent.
     const qi = named.filter(m => m.exact).reduce((text, m) => (' ' + text + ' ').split(' ' + words(m.core).join(' ') + ' ').join(' '), ' ' + words(q).join(' ') + ' ').trim();
+    if (!named.length && /^(?:mate|predavate|prodavate) znacku\s+\S/.test(q)) return ad.lang === 'cs' ? 'Tuto značku v ověřené nabídce nemám. Upřesněte prosím název produktu.' : 'Túto značku v overenej ponuke nemám. Upresnite prosím názov produktu.';
     // "Máte Lavazza Qualità Rossa?": a proper name the shop does not sell is said plainly, then what the shop has instead.
     if (!named.length && ASK_NAME.test(q) && ad.notSoldSuggest) {
       const body = String(latestRaw).replace(/^\s*(?:a\s+)?\S+\s+/i, '').replace(/[?!.\s]+$/, '').trim();
@@ -770,11 +779,12 @@
       // Two sides of "Porovnaj X a Y" / "rozdiel medzi X a Y" / "X alebo Y": the best product on each side.
       const body = norm(pol.pos || latestRaw).replace(/^.*?(?:porovn\w*|srovn\w*|rozdiel\w*\s+(?:medzi|mezi)?|rozdil\w*\s+(?:mezi)?|lisi\s+sa|lisi\s+se)\s+/, '').replace(/\.\s+(?:aky|aka|ake|ktory|ktora|ktore|co|cim|ako|jaky|jaka|jake|ktery|ktera|chcem|chci|ktor\w*)\b.*$/, '').replace(/[?!].*$/, '').replace(/\.\s*$/, '');
       let best = null;
+      const sideMatch = side => { const flat = s => norm(s).replace(/(\d)\.\s+(?=\d)/g, '$1.').trim(); const item = index.items.find(i => flat(i.p.name) === flat(side)); return item ? {p: item.p, all: [item.p], exact: true, core: item.core, score: 20, pos: 0} : mentions(index, side)[0]; };
       const cuts = [...body.matchAll(/\s(?:a|vs\.?|versus|alebo|nebo|oproti|od)\s/g)];
       for (const c of cuts) {
         const left = body.slice(0, c.index), right = body.slice(c.index + c[0].length);
-        const l = mentions(index, left)[0], r = mentions(index, right)[0];
-        if (!l || !r || l.core === r.core) continue;
+        const l = sideMatch(left), r = sideMatch(right);
+        if (!l || !r || l.p.id === r.p.id) continue;
         const score = l.score + r.score;
         if (!best || score > best.score) best = {score, l, r};
       }
@@ -827,6 +837,12 @@
     return null;
   }
 
-  scope.CXChatBrain = {reply, norm, words, parseBudget, parseQty, polarity, buildIndex, mentions, money, adapters: {}};
+  // Plain text in every handler, including catalogue names and footnotes containing stars.
+  // Preserve URLs byte for byte so formatting never changes a product link.
+  const plainReply = (...args) => {
+    const result = reply(...args);
+    return typeof result === 'string' ? result.split(/(https?:\/\/\S+)/).map((part, i) => i % 2 ? part : part.replace(/\*/g, '')).join('') : result;
+  };
+  scope.CXChatBrain = {reply: plainReply, norm, words, parseBudget, parseQty, polarity, buildIndex, mentions, money, adapters: {}};
   if (typeof module !== 'undefined' && module.exports) module.exports = scope.CXChatBrain;
 })(typeof globalThis !== 'undefined' ? globalThis : window);

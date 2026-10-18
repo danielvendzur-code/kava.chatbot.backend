@@ -102,3 +102,11 @@ Známe zlyhania deterministických pravidiel (oprav, ak sa dá bez rizika):
 
 - Promovanie `12d8209` do produkcie na Verceli robí majiteľ.
 - Kde sú živé vlasy, rastliny, víno a čaj — zistiť.
+
+## Hotovo (18. 10. 2026, Codex)
+
+Opravené porovnávanie cien a odkazov, výpisy do troch produktov, presné názvy a porovnania variantov, odkazy rastlín a formát odpovedí. Všetky zdieľané kópie sú rovnaké. Nová sada: 11312/11312 lokálne, 928/928 mock; PASS API, matica rastlín 1893 ciest bez chyby. Pôvodná sada 2866/2909 nebola v repozitároch nájdená. Podrobnosti, baseline, živé adresy a otvorené obmedzenia: [tools/overenie-2026-10-18.md](tools/overenie-2026-10-18.md). Commity a nové Preview sa doplnia po pushi.
+
+## Otvorené otázky po kontrole Codex
+
+Promovanie do produkcie ostáva majiteľovi. Vlasy (dixi), rastliny (plantizia), víno (skoupil), oba čaje sú verejne dostupné, ale testované produkcie používajú staré správanie/fallback. Vercel detaily ostatných projektov nie sú dostupné cez konektor (404/403). Dokončiť manuálne overenie variantov a dopravy a úplnú vizuálnu maticu; nejednoznačné katalógové údaje sa nemenili.
