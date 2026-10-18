@@ -801,7 +801,7 @@
     // A named product that is not excluded: detail, attribute or price check against the budget.
     if (named.length && !st.excluded.has(named[0].p.id)) {
       const m = named[0];
-      const inexact = (() => { const ws = words(pol.pos || latestRaw).filter(w => w.length >= 5 && !(index.df.get(stem(w))) && !/^(?:rozpoc|limit|chcem|teraz|stale|povod|plati|neplat|prosim|hladam|odpor|konkr|produk|vyber|dostup|moznos|zvys|nizsi|vyssi|porov|rozdi|lisi|ktory|ktora|ktore|preco|kupuj|chcel|chcela|kolko|kolik|stoji|stoja|cena|ceny|cenu|skladom|skladem|baleni|predav|prodav|mletu|mleta|zrnkov|kilov)/.test(w)); return ws; })();
+      const inexact = (() => { const ws = words(pol.pos || latestRaw).filter(w => w.length >= 5 && !(index.df.get(stem(w))) && !/^(?:nieco|neco|nejak|niekto|niekt|rozpoc|limit|chcem|teraz|stale|povod|plati|neplat|prosim|hladam|odpor|konkr|produk|vyber|dostup|moznos|zvys|nizsi|vyssi|porov|rozdi|lisi|ktory|ktora|ktore|preco|kupuj|chcel|chcela|kolko|kolik|stoji|stoja|cena|ceny|cenu|skladom|skladem|baleni|predav|prodav|mletu|mleta|zrnkov|kilov)/.test(w)); return ws; })();
       if (DETAIL.test(qi) || /\?$/.test(q.trim()) || asked) {
         const head = inexact.length && !m.exact && m.score < 5 ? t.notExact(capital(inexact.slice(0, 2).join(' ')), m.p.name) + '\n\n' : '';
         return head + detailReply(ad, st, m, q, qi);

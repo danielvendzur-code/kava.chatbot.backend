@@ -627,7 +627,10 @@
       if (FRAGRANCE_FREE.test(pos) || /parfum|vone|vune|eteric|esencial/.test(neg) || /alergi\w* na (?:parfum|vone|vune)/.test(pos)) set.fragranceFree = true;
       if (/tmav|cierne vlasy|cerne vlasy|hned|brunet|gastan|kastan/.test(pos)) set.hairColour = 'dark'; else if (/svetl|blond|plav|siv[eé] vlas|sediv/.test(pos)) set.hairColour = 'light';
       if (/plne balenie|velke balenie|velke plne|velk\w* baleni|plne baleni/.test(pos) || /vzork|vzorek|sample|tester/.test(neg)) set.noSample = true;
-      if (/vypad|rednut|ridnut|podpor\w* rast|podpor\w* rust/.test(pos)) set.hairNeed = 'growth'; else if (/lupin|lupy|lupu/.test(pos)) set.hairNeed = 'dandruff';
+      if (/vypad|rednut|ridnut|podpor\w* rast|podpor\w* rust|rast vlas|rust vlas/.test(pos)) set.hairNeed = 'growth'; else if (/lupin|lupy|lupu/.test(pos)) set.hairNeed = 'dandruff'; else if (/farb\w* na vlas|farb\w* vlas|barv\w* na vlas|barv\w* vlas|\bhenn?[auy]?\b|prirodn\w* farb|prirodn\w* barv/.test(pos)) set.hairNeed = 'colour';
+      if (set.hairNeed && !set.category) set.category = 'hair';
+      // "Šampón bez sulfátov": a description that says so.
+      if (/bez sulf|sulfat\w*.?free|bez sls|bez sles/.test(pos) || /sulf|\bsls\b|\bsles\b/.test(neg)) set.sulfateFree = true;
       if (/\bnocn|\bna noc\b|night/.test(pos)) set.time = 'night'; else if (/\bdenn\w* krem|\bna den\b|\bday\b/.test(pos)) set.time = 'day';
       const age = pos.match(/\b(30|40|45|50|55|60|65)\s*\+|\bpo (40|50|60)\b/); if (age) set.age = Number(age[1] || age[2]);
       if (/telov\w* mliek|telove mlieko|body lotion|telov\w* mlik|\bmlieko na telo/.test(pos)) set.lotion = true;
@@ -659,6 +662,9 @@
       if (a.noSample) list = list.filter(p => !p.raw.isSample && !/vzork|vzorek|sample|tester|cestovn|mini\b/.test(norm(p.name + ' ' + p.kind)));
       if (a.hairNeed === 'growth') list = list.filter(p => /vypad|rast|rust|growth|posiln|rednut|ridnut/.test(p.text) || (p.raw.features?.hairNeed === 'growth'));
       if (a.hairNeed === 'dandruff') list = list.filter(p => /lupin|lupy|dandruff/.test(p.text));
+      // A hair dye itself, not a shampoo for coloured hair or the cap for dyeing.
+      if (a.hairNeed === 'colour') list = list.filter(p => /farb|barv|\bhenn?[auy]?\b|indigo|kasi[ae]|cassia|\bcolou?r\b/.test(norm(p.name + ' ' + p.kind)) && !/sampon|kondicion|balzam|maska|\bolej|cepic|rukavic|stetec|stetc|miska|tubus|farben|barven/.test(norm(p.name))).sort((x, y) => (/vzor|sample/.test(norm(x.name)) ? 1 : 0) - (/vzor|sample/.test(norm(y.name)) ? 1 : 0));
+      if (a.sulfateFree) list = list.filter(p => /bez sulf|sulfat\w*.?free|bez sls|bez sles|neobsahuje\w* (?:ziadne )?sulf/.test(p.text));
       if (a.time) { const rx = a.time === 'night' ? /nocn|\bnoc\b|night/ : /\bdenn|\bday\b|\bden\b/; const timed = list.filter(p => p.raw.features?.time === a.time || rx.test(norm(p.name))); list = timed; }
       if (a.lotion) list = list.filter(p => /mlieko|mlicko|mleko|mlíko|lotion|emulz/.test(norm(p.name + ' ' + p.kind)) && !/mydl|soap/.test(norm(p.name + ' ' + p.kind)));
       if (a.form === 'cistenie') list = list.filter(p => !/mask/.test(norm(p.name + ' ' + p.kind)));
@@ -694,10 +700,12 @@
       const ev = Object.keys(r.source?.suitabilityEvidence || {});
       const profiles = ['dry', 'oily', 'sensitive'].filter(t => (r.tags || []).includes(t) && (ev.includes(t) || !r.source?.suitabilityEvidence));
       const hair = r.category === 'hair';
-      if (profiles.length) f.push({k: 'profile', v: L(lang, 'podľa popisu pre ', 'podle popisu pro ') + profiles.map(t => hair ? {dry: 'suché', oily: 'mastné', sensitive: 'citlivú pokožku'}[t] : PROFILE[lang][t]).join(L(lang, ' a ', ' a ')) + (hair ? L(lang, ' vlasy', ' vlasy') : L(lang, ' pleť', ' pleť')), hint: L(lang, 'ak máte ', 'pokud máte ') + profiles.map(t => hair ? {dry: 'suché vlasy', oily: 'mastné vlasy', sensitive: 'citlivú pokožku hlavy'}[t] : PROFILE[lang][t] + L(lang, ' pleť', ' pleť'))[0], who: L(lang, 'výrobca ho uvádza pre ', 'výrobce ho uvádí pro ') + profiles.map(t => hair ? {dry: 'suché vlasy', oily: 'mastné vlasy', sensitive: 'citlivú pokožku hlavy'}[t] : PROFILE[lang][t] + L(lang, ' pleť', ' pleť')).join(L(lang, ' a ', ' a '))});
+      const HAIR_FOR = {dry: L(lang, 'suché vlasy', 'suché vlasy'), oily: L(lang, 'mastné vlasy', 'mastné vlasy'), sensitive: L(lang, 'citlivú pokožku hlavy', 'citlivou pokožku hlavy')};
+      const forWhom = t => hair ? HAIR_FOR[t] : PROFILE[lang][t] + L(lang, ' pleť', ' pleť');
+      if (profiles.length) f.push({k: 'profile', v: L(lang, 'podľa popisu pre ', 'podle popisu pro ') + (hair ? profiles.map(forWhom).join(L(lang, ' a ', ' a ')) : profiles.map(t => PROFILE[lang][t]).join(L(lang, ' a ', ' a ')) + L(lang, ' pleť', ' pleť')), hint: L(lang, 'ak máte ', 'pokud máte ') + forWhom(profiles[0]), who: L(lang, 'výrobca ho uvádza pre ', 'výrobce ho uvádí pro ') + profiles.map(forWhom).join(L(lang, ' a ', ' a '))});
       else if (r.source?.allSkinTypes) f.push({k: 'profile', v: L(lang, 'výrobca uvádza pre všetky typy pleti', 'výrobce uvádí pro všechny typy pleti'), who: L(lang, 'výrobca ho uvádza pre všetky typy pleti', 'výrobce ho uvádí pro všechny typy pleti')});
-      // "Skin prone to oiliness" says nothing new about a shampoo already described as for oily hair.
-      const goals = (r.tags || []).filter(t => ['hydrate', 'calm', 'mature', 'balance'].includes(t) && !(hair && t === 'balance'));
+      // "Skin prone to oiliness" or "against wrinkles" says nothing about a shampoo.
+      const goals = (r.tags || []).filter(t => ['hydrate', 'calm', 'mature', 'balance'].includes(t) && !(hair && (t === 'balance' || t === 'mature')));
       if (goals.length) f.push({k: 'goal', v: goals.slice(0, 2).map(t => SIGNAL[lang][t]).join(', '), hint: L(lang, 'ak vám ide o ', 'pokud vám jde o ') + SIGNAL[lang][goals[0]]});
       const ft = r.features || {};
       if (ft.time === 'spf') f.push({k: 'time', v: L(lang, 's ochranným faktorom SPF', 's ochranným faktorem SPF')});
@@ -747,6 +755,8 @@
       if (a.profile) out.push(a.category === 'hair' ? L(lang, 'pre ', 'pro ') + {dry: L(lang, 'suché vlasy', 'suché vlasy'), oily: L(lang, 'mastné vlasy', 'mastné vlasy'), sensitive: L(lang, 'citlivú pokožku hlavy', 'citlivou pokožku hlavy')}[a.profile] : L(lang, 'pre ', 'pro ') + PROFILE[lang][a.profile] + L(lang, ' pleť', ' pleť'));
       if (a.goal) out.push({mature: L(lang, 'proti vráskam', 'proti vráskám'), hydrate: L(lang, 'hydratácia', 'hydratace'), clean: L(lang, 'čistenie', 'čištění'), calm: L(lang, 'upokojenie', 'zklidnění')}[a.goal]);
       if (a.form) out.push((lang === 'cs' ? FORM_LABEL_CS : FORM_LABEL)[a.form]);
+      if (a.hairNeed) out.push({growth: L(lang, 'proti vypadávaniu a na rast vlasov', 'proti vypadávání a na růst vlasů'), dandruff: L(lang, 'proti lupinám', 'proti lupům'), colour: L(lang, 'farba na vlasy', 'barva na vlasy')}[a.hairNeed]);
+      if (a.sulfateFree) out.push(L(lang, 'bez sulfátov (podľa popisu)', 'bez sulfátů (podle popisu)'));
       if (a.fragranceFree) out.push(L(lang, 'bez parfumácie (overené pri produkte)', 'bez parfemace (ověřené u produktu)'));
       if (a.hairColour) out.push(a.hairColour === 'dark' ? L(lang, 'na tmavé vlasy', 'na tmavé vlasy') : L(lang, 'na svetlé vlasy', 'na světlé vlasy'));
       if (a.noSample) out.push(L(lang, 'plné balenie', 'plné balení'));
