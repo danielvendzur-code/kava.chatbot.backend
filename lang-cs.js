@@ -95,7 +95,7 @@
     'Váš výber': 'Váš výběr', 'Toto vám odporúčam': 'Tohle vám doporučuji', 'Konkrétny produkt podľa vašich odpovedí.': 'Konkrétní produkt podle vašich odpovědí.', 'Prečo práve tento': 'Proč právě tento',
     'Ďalšia vhodná možnosť': 'Další vhodná možnost', 'Skryť ďalšie možnosti': 'Skrýt další možnosti', 'Cenu potvrdí e-shop': 'Cenu potvrdí e-shop',
     'Takúto kombináciu v ponuke nemáme': 'Takovou kombinaci v nabídce nemáme',
-    'Žiadny produkt nespĺňa všetky vaše odpovede naraz. Skúste upraviť rozpočet alebo sa vráťte o krok späť.': 'Žádný produkt nesplňuje všechny vaše odpovědi najednou. Zkuste upravit rozpočet nebo se vraťte o krok zpět.',
+    'Žiadny produkt nespĺňa všetky vaše odpovede naraz. Skúste upraviť rozpočet alebo sa vráťte o krok späť.': 'Žádný produkt nesplňuje všechny vaše odpovědi najednou. Zkuste upravit rozpočet nebo se vraťte o krok zpět.','Žiadny produkt nespĺňa všetky vaše odpovede naraz. Vráťte sa o krok späť a zvoľte inú možnosť.':'Žádný produkt nesplňuje všechny vaše odpovědi najednou. Vraťte se o krok zpět a zvolte jinou možnost.',
     'Je to jediný produkt v ponuke, ktorý spĺňa všetky vaše odpovede.': 'Je to jediný produkt v nabídce, který splňuje všechny vaše odpovědi.',
     'Z produktov, ktoré spĺňajú vaše odpovede, je cenovo najdostupnejší.': 'Z produktů, které splňují vaše odpovědi, je cenově nejdostupnější.',
     'Otázku liečby kožného ochorenia riešte s lekárom. Môžem vám ukázať kozmetické produkty a odkazy na ich úplné zloženie.': 'Otázku léčby kožního onemocnění řešte s lékařem. Mohu vám ukázat kosmetické produkty a odkazy na jejich úplné složení.',

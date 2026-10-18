@@ -249,7 +249,7 @@
   }
 
   /* ---------- conversation state ---------- */
-  const SHIPPING = /doprav|postovn|poštovn|dorucen|doruc|zasiel|zasilk|kurier|kuryr|balikov|packeta|zasielkov|gls|dpd|ppl\b|posta\b|osobn\w* odber|zadarmo od|zdarma od|platb|dobier|dobirk/;
+  const SHIPPING = /doprav|postovn|poštovn|dorucen|doruc|zasiel|zasilk|posielat|posielate|posilat|posilate|odosielat|odesilat|kurier|kuryr|balikov|packeta|zasielkov|gls|dpd|ppl\b|posta\b|osobn\w* odber|zadarmo od|zdarma od|platb|dobier|dobirk/;
   const HEALTH = /\bliec|vyliec|\blecb|\blecit|vylec|chorob|nemoc|ekzem|rosacea|dermatit|\bliek\b|\blek\b|tehot|dojc|kojen|alergick\w* reakc|diagnoz|zdravotn|cukrovk|diabet|hypertenz/;
   const OTHER = /\b(?:in[auyeoi]|inej|inu|jin[auyeoi]|jinou|dals\w*|dalsi\w*|nieco ine|neco jine|niekto ine|ukaz(?:te)? (?:mi )?(?:viac|vic|dalsi\w*|ine|inu|jine)|este (?:nieco|jednu|jeden|dalsi\w*|iny|inu|ine)|alternativ\w*|iba to\?|nic ine)\b/;
   const COMPARE = /porovn|srovn|rozdiel|rozdil|\blisi\b|\bliši\b|odlis|\bvs\.?\b|versus|lepsi[ae]?\b.*\balebo\b|\balebo\b.*\blepsi|ktor[aáyeý]\s.*\b(?:lepsi|vybrat|zvolit)/;
@@ -625,7 +625,8 @@
     if (/^(?:dakujem|dakujeme|dakujem pekne|dakujem vam|vdaka|velka vdaka|diky|dik|dekuji|dekujeme|dekuji moc|super dakujem|ok dakujem|dobre dakujem)$/.test(bare)) return ad.lang === 'cs' ? 'Rádo se stalo. Pokud budete chtít poradit s dalším výběrem, napište.' : 'Rado sa stalo. Ak budete chcieť poradiť s ďalším výberom, napíšte.';
     if (HEALTH.test(q)) return ad.health ? ad.health(q, messages) : null;
     const index = ad.index || (ad.index = buildIndex(ad.products));
-    const notProduct = !/produkt|odporuc|doporuc|kav[auy]|vin[oa]|krem|caj|rastlin/.test(q.replace(/doprav\w*/g, ''));
+    // "Posielate rastliny aj v zime?" asks about sending, even though it names the goods.
+    const notProduct = !/produkt|odporuc|doporuc|kav[auy]|vin[oa]|krem|caj|rastlin/.test(q.replace(/doprav\w*/g, '')) || /^(?:a\s+)?(?:posielate|posilate|zasielate|zasilate|dorucujete|odosielate|odesilate)\b/.test(q);
     if (DELIVERY.test(q) && notProduct) return termsReply(ad, 'delivery');
     if (PAYMENT.test(q) && !/doprav|postovn|poštovn/.test(q) && notProduct) return termsReply(ad, 'payment');
     if (PICKUP.test(q) && notProduct && !/odporuc|doporuc|\bmate\b.*\bkav/.test(q)) return pickupReply(ad);

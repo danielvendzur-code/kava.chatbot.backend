@@ -873,7 +873,7 @@
     const currency = brand.currency || 'EUR';
     const tidy = fns.tidy || (s => s);
     const NON_MAIN = ['pots', 'substrates', 'accessories', 'terrariums'];
-    const products = brand.products.map(p => ({id: String(p.id), name: p.name, url: p.url, price: p.price, amount: Number.isFinite(p.priceValue) ? p.priceValue : null, currency: p.currency || currency, pack: '', available: p.available !== false, main: !NON_MAIN.includes(p.kind), kind: p.kind, raw: p}));
+    const products = brand.products.map(p => ({id: String(p.id), name: p.name, url: p.url, price: p.price, amount: Number.isFinite(p.priceValue) ? p.priceValue : null, currency: p.currency || currency, pack: '', available: p.available !== false, main: !NON_MAIN.includes(p.kind) && !/kliniec|klinec|\blist[auy]\b|lišt|fóli|foli[ae]\b|netkan|kolík|kolik|hadic|nožnic|noznic|rukavic|postrek|postřik/i.test(p.name), kind: p.kind, raw: p}));
     const byId = new Map(products.map(p => [p.id, p]));
     const kindOf = s => /semien|semink|\bsemena\b|\bsemeno\b|osivo/.test(s) && !/semenac/.test(s) ? 'seeds' : /odrez|\brizek\b|\brizky\b|zakorenit/.test(s) ? 'cuttings' : /masozrav/.test(s) ? 'carnivorous' : /kvetinac|crepnik|obal na kvet|\bobal\b|kaspo|truhlik/.test(s) ? 'pots' : /substrat|zemin|hlin\b|hlina|raselin/.test(s) ? 'substrates' : /hnojiv|postrek|postrik|opora|tyc|drziak|kvapkadl/.test(s) ? 'accessories' : /kaktus|cactus/.test(s) ? 'cacti' : /sukulent/.test(s) ? 'succulents' : /orchid/.test(s) ? 'orchids' : /terari/.test(s) ? 'terrariums' : /ovocn|jablon|hrusk|broskyn|ceresn|slivk/.test(s) ? 'fruits' : /trvalk|skalnick|zahrad|vonkajs|na zahon|na balkon/.test(s) ? 'outdoor' : null;
     function parse(pos, neg) {
@@ -884,6 +884,8 @@
       if (/hotov|zakorenen|vzrastl|dospel/.test(pos)) set.grown = true;
       if (/polotien|polostin|menej svetla|malo svetla|do tien|tienist/.test(pos)) set.facet = 'low'; else if (/rozptylen|bez priameho|nie.*priame.*sln/.test(pos)) set.facet = 'bright'; else if (/priame slnko|slnecn|plne slnko|na slnko/.test(pos)) set.facet = 'sun';
       if (/nenaroc|zaciatoc|zacatec|lahk\w* starost|snadn/.test(pos)) set.priority = 'easy';
+      if (/najlacn|nejlevn/.test(pos)) set.sort = 'cheap'; else if (/najdrah|nejdraz/.test(pos)) set.sort = 'expensive';
+      if (/velk\w* (?:rastlin|rostlin|kus)|vysok\w* (?:rastlin|rostlin)|do obyvack|do obyvak/.test(pos)) set.size = 'large';
       return {set, not};
     }
     function rank(a = {}, not = {}, st = {}) {
@@ -893,8 +895,11 @@
       if (!a.kind) list = list.filter(p => p.main);
       if (a.grown) list = list.filter(p => !['seeds', 'cuttings', 'propagules'].includes(p.kind));
       if (not.kind?.length) list = list.filter(p => !not.kind.includes(p.kind));
+      // A large plant: grown in a large pot or at least 17 cm across, by the shop's own facts.
+      if (a.size === 'large') { const big = p => (p.raw.tags || []).includes('delivery-pot-large') || Number(p.raw.diameter) >= 17 || (p.raw.facts || []).some(x => { const m = norm(x).match(/(?:priemer|prumer|crepnik|velkost|vyska|vyska)[^0-9]{0,30}(\d{2,3})\s*cm/); return m && Number(m[1]) >= 17; }); list = list.filter(big); }
+      if (a.sort) list = list.filter(p => Number.isFinite(p.amount) && p.available).sort((x, y) => a.sort === 'cheap' ? x.amount - y.amount : y.amount - x.amount);
       const budget = st.budget?.amount;
-      if (budget) list = list.slice().sort((x, y) => (y.amount ?? -1) - (x.amount ?? -1));
+      if (budget && !a.sort) list = list.slice().sort((x, y) => (y.amount ?? -1) - (x.amount ?? -1));
       return list;
     }
     const LABELS = {seeds: L(lang, 'semená na výsev', 'semena k výsevu'), cuttings: L(lang, 'odrezok', 'řízek'), carnivorous: L(lang, 'mäsožravá rastlina', 'masožravá rostlina'), pots: L(lang, 'kvetináč alebo obal', 'květináč nebo obal'), substrates: L(lang, 'substrát', 'substrát'), accessories: L(lang, 'pomôcka alebo doplnok', 'pomůcka nebo doplněk'), cacti: L(lang, 'kaktus', 'kaktus'), succulents: L(lang, 'sukulent', 'sukulent'), orchids: L(lang, 'orchidea', 'orchidej'), fruits: L(lang, 'ovocná rastlina', 'ovocná rostlina'), outdoor: L(lang, 'vonkajšia rastlina', 'venkovní rostlina'), plants: L(lang, 'izbová rastlina', 'pokojová rostlina'), rareplants: L(lang, 'raritná rastlina', 'raritní rostlina')};
@@ -908,7 +913,8 @@
       }
       return f;
     }
-    const usage = p => { const care = (p.raw.facts || []).map(tidy).filter(x => /svetl|tien|slnk|poliev|zalev|vod|teplot|nenaroc/.test(norm(x))); return care.length ? care.join(' ') : L(lang, 'Konkrétne pokyny k pestovaniu tejto položky uvádza predajca pri produkte.', 'Konkrétní pokyny k pěstování této položky uvádí prodejce u produktu.'); };
+    // The shop's care facts once each ("Zaradenie: polotieň" repeats "Polotieň").
+    const usage = p => { const seen = new Set(); const care = (p.raw.facts || []).map(tidy).map(x => x.replace(/^Zaradenie:\s*/i, '')).map(x => x.charAt(0).toUpperCase() + x.slice(1)).filter(x => /svetl|tien|slnk|poliev|zalev|vod|teplot|nenaroc/.test(norm(x))).filter(x => { const k = norm(x).replace(/[^a-z]/g, ''); if (seen.has(k)) return false; seen.add(k); return true; }); return care.length ? care.join(' ') : L(lang, 'Konkrétne pokyny k pestovaniu tejto položky uvádza predajca pri produkte.', 'Konkrétní pokyny k pěstování této položky uvádí prodejce u produktu.'); };
     function accessories(main, q, st, opts = {}) {
       const kinds = /kvetinac|crepnik|obal/.test(q) ? ['pots'] : /substrat|zemin|hlin/.test(q) ? ['substrates'] : /hnojiv|vyziv/.test(q) ? ['accessories'] : /misk|podmisk|tanier|talir/.test(q) ? ['pots', 'accessories'] : ['pots', 'substrates'];
       let list = products.filter(p => (opts.all || p.available) && kinds.includes(p.kind));
@@ -916,8 +922,18 @@
       if (/hnojiv/.test(q)) list = list.filter(p => /hnojiv/.test(norm(p.name)));
       return list.sort((a, b) => (a.amount ?? 1e9) - (b.amount ?? 1e9));
     }
-    const describe = (a = {}, not = {}) => { const out = []; if (a.kind) out.push(LABELS[a.kind] || a.kind); if (a.facet) out.push({low: L(lang, 'polotieň', 'polostín'), bright: L(lang, 'svetlo bez priameho slnka', 'světlo bez přímého slunce'), sun: L(lang, 'priame slnko', 'přímé slunce')}[a.facet]); if (a.priority === 'easy') out.push(L(lang, 'nenáročná', 'nenáročná')); if (a.grown) out.push(L(lang, 'hotová rastlina', 'hotová rostlina')); if (not.kind?.length && not.kind.length < 4) out.push(L(lang, 'nie ', 'ne ') + not.kind.map(k => LABELS[k] || k).join(', ')); return out; };
-    const pre = q => /mack|macka|macky|kock|kocka|\bpes\b|\bpsa\b|psov|zvierat|zvirat|jedovat|toxick|morcat|kralik|papagaj/.test(q) ? null : undefined;
+    const describe = (a = {}, not = {}) => { const out = []; if (a.kind) out.push(LABELS[a.kind] || a.kind); if (a.facet) out.push({low: L(lang, 'polotieň', 'polostín'), bright: L(lang, 'svetlo bez priameho slnka', 'světlo bez přímého slunce'), sun: L(lang, 'priame slnko', 'přímé slunce')}[a.facet]); if (a.priority === 'easy') out.push(L(lang, 'nenáročná', 'nenáročná')); if (a.size === 'large') out.push(L(lang, 'väčšia rastlina', 'větší rostlina')); if (a.sort) out.push(a.sort === 'cheap' ? L(lang, 'od najlacnejšej', 'od nejlevnější') : L(lang, 'od najdrahšej', 'od nejdražší')); if (a.grown) out.push(L(lang, 'hotová rastlina', 'hotová rostlina')); if (not.kind?.length && not.kind.length < 4) out.push(L(lang, 'nie ', 'ne ') + not.kind.map(k => LABELS[k] || k).join(', ')); return out; };
+    const pets = q => /mack|macka|macky|kock|kocka|\bpes\b|\bpsa\b|psov|zvierat|zvirat|jedovat|toxick|morcat|kralik|papagaj/.test(q) ? null : undefined;
+    // Care questions: the shop's own care facts for the plant named, never general advice.
+    const pre = q => {
+      const p0 = pets(q);
+      if (p0 !== undefined) return p0;
+      if (!/poliev|zaliev|zalev|ako casto|jak casto|starat|pestovat|presad|hnojit/.test(q)) return undefined;
+      const stems = q.split(/[^a-z]+/).filter(w => w.length >= 5 && !/poliev|zaliev|zalev|casto|starat|pestov|presad|hnojit|rastlin|rostlin|kvetin/.test(w)).map(w => w.slice(0, 6));
+      const hit = products.find(p => p.main && p.available && stems.some(st => norm(p.name).includes(st)));
+      if (hit) return hit.name + ': ' + usage(hit);
+      return L(lang, 'Takúto rastlinu v ponuke nevidím. Pokyny k pestovaniu uvádza predajca pri každej rastline v e-shope: ', 'Takovou rostlinu v nabídce nevidím. Pokyny k pěstování uvádí prodejce u každé rostliny v e-shopu: ') + brand.website;
+    };
     return {family: 'plants', lang, currency, source: brand.website, shipping: brand.shipping || null, products, parse, rank, facts, usage, accessories, describe, relax: ['priority', 'facet'], reasonKeys: ['light', 'care', 'size', 'kind'], pre, similar: p => ({kind: p.kind})};
   }
 
