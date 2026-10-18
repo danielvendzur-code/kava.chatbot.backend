@@ -577,22 +577,40 @@
   /* ======================= COSMETICS AND HAIR ======================= */
   const AREA = {sk: {face: 'pleť', body: 'telo', hair: 'vlasy', eyes: 'okolie očí', lips: 'pery', baby: 'deti a mamičky', makeup: 'líčenie', beard: 'brada', sets: 'sady a darčeky', home: 'domácnosť', tea: 'čaje', wellness: 'doplnky výživy', other: 'ďalšia ponuka'}, cs: {face: 'pleť', body: 'tělo', hair: 'vlasy', eyes: 'oční okolí', lips: 'rty', baby: 'děti a maminky', makeup: 'líčení', beard: 'vousy', sets: 'sady a dárky', home: 'domácnost', tea: 'čaje', wellness: 'doplňky stravy', other: 'další nabídka'}};
   const PROFILE = {sk: {dry: 'suchú', oily: 'mastnú', sensitive: 'citlivú', balanced: 'normálnu'}, cs: {dry: 'suchou', oily: 'mastnou', sensitive: 'citlivou', balanced: 'normální'}};
-  const FORMS = [['krem', /krem|balzam|cream|mast\b|maslo|butter/], ['serum', /serum|sera\b|ampul|esenc/], ['olej', /olej|oil/], ['maska', /mask/], ['sampon', /sampon|sampuk|shampoo/], ['kondicioner', /kondicion|conditioner|balzam na vlasy/], ['tonikum', /tonik|hydrolat|kvetinov\w* vod|pletov\w* vod|toner/], ['mydlo', /mydl|soap/], ['peeling', /peeling|piling|scrub/], ['deodorant', /deodor|dezodor/], ['cistenie', /cistic|cistiac|odlicov|umyvac|myci|pena|foam|cleans|wash|gel na umyv|sprchov|sprch\w* gel/]];
+  const FORMS = [['krem', /krem|balzam|cream|mast\b|maslo|butter/], ['serum', /serum|sera\b|ampul|esenc/], ['olej', /olej|oil/], ['maska', /mask/], ['sampon', /sampon|sampuk|shampoo/], ['kondicioner', /kondicion|conditioner|balzam na vlasy/], ['tonikum', /tonik|hydrolat|kvetinov\w* vod|pletov\w* vod|toner/], ['mydlo', /mydl|soap/], ['peeling', /peeling|piling|scrub|exfoli/], ['deodorant', /deodor|dezodor/], ['cistenie', /cistic|cistiac|odlicov|umyvac|myci|pena|foam|cleans|wash|gel na umyv|sprchov|sprch\w* gel/]];
   const FORM_LABEL = {krem: 'krém', serum: 'sérum', olej: 'olej', maska: 'maska', sampon: 'šampón', kondicioner: 'kondicionér', tonikum: 'tonikum alebo hydrolát', mydlo: 'mydlo', peeling: 'peeling', deodorant: 'dezodorant', cistenie: 'čistenie a odličovanie'};
+  const FORM_LABEL_CS = {...FORM_LABEL, sampon: 'šampon', kondicioner: 'kondicionér', tonikum: 'tonikum nebo hydrolát', mydlo: 'mýdlo', deodorant: 'deodorant', cistenie: 'čištění a odličování'};
+  // Active ingredients a customer names; a product qualifies when its name or description names it.
+  const INGREDIENTS = [['vitc', /vitamin\w*\s*c\b|vit\.?\s*c\b|askorb|ascorb/, 'vitamín C'], ['retinol', /retinol|retinal|retinoid|hyretin/, 'retinol'], ['bakuchiol', /bakuchiol/, 'bakuchiol'], ['hyaluron', /hyaluron|hyaluron/, 'kyselina hyalurónová'], ['niacinamid', /niacinamid|niacinamide|vitamin b3/, 'niacínamid'], ['kolagen', /kolagen|collagen/, 'kolagén'], ['ceramid', /ceramid/, 'ceramidy'], ['peptid', /peptid/, 'peptidy'], ['q10', /\bq10\b|koenzym/, 'koenzým Q10'], ['urea', /\burea\b|mocovin|močovin/, 'urea'], ['aha', /\baha\b|glykol|glycol|kyselin\w* mlecn|lactic|mandlov\w* kyselin/, 'AHA kyseliny'], ['bha', /\bbha\b|salicyl/, 'kyselina salicylová'], ['azela', /azela/, 'kyselina azelaová'], ['cica', /\bcica\b|centell/, 'centella (cica)'], ['skvalan', /skvalan|squalan/, 'skvalán'], ['konope', /konop|\bcbd\b|hemp/, 'konope / CBD'], ['aloe', /\baloe\b|aloe vera/, 'aloe vera']];
+  const MEN = /\bmuz|\bmuzsk|\bpansk|\bpanov|\bmen\b|\bman\b|for him|holen|after ?shave|\bbrad|\bvous|\bfuz/;
   const FRAGRANCE_FREE = /bez parfem|bez parfum|bez vone|bez vune|bez vůně|bez vône|bez esencial|bez eteric|bez vonn|parfum.?free|perfume.?free|fragrance.?free|unscented|neparfum|bez arómy|bez aromy|bez aroma/;
   function cosmeticsAdapter(catalogue, opts = {}) {
     const family = opts.family || 'cosmetics';
     const lang = isCs(catalogue.source) ? 'cs' : 'sk';
     const core = scope.CXAdvisorCore;
-    const engine = core.create(catalogue.products);
+    // The skin type a product's own name states ("krém pre suchú pleť") counts even where the tags miss it.
+    const NAME_TAGS = [['dry', /\bsuch|dehydr|\bdry\b/], ['oily', /mastn|\bakne|problematic|nedokonal|\boily\b/], ['sensitive', /citliv|reaktiv|atopi|sensitive/], ['mature', /zrel|zral|vrask|anti.?age|anti.?aging|spevn/], ['hydrate', /hydrat/], ['calm', /upokoj|zklid/]];
+    // A product the catalogue files under "other" goes to the area its own name states ("Eye Contour Cream", "Deodorant CITRUS").
+    const AREA_NAME = [['eyes', /\boc[in]\w*|\boci\b|\beye/], ['lips', /\blips?\b|lip balm|\bpery\b|\brty\b|na pery|na rty/], ['hair', /vlas|\bhair|sampon|shampoo/], ['face', /plet|\btvar|\bface|facial/], ['body', /\btel[oa]\b|telov|\bbody|\bruk[yu]\b|\bruce\b|\bnoh[yu]\b|deodor|dezodor/]];
+    const lead = p => norm(String(p.description || '').split(/(?<=[.!?])\s/)[0]).slice(0, 160);
+    const areaOf = p => (!p.category || p.category === 'other' || (p.category === 'tea' && /deodor|dezodor/.test(norm(p.name)))) ? (AREA_NAME.find(([, rx]) => rx.test(norm(p.name))) || AREA_NAME.find(([, rx]) => rx.test(lead(p))))?.[0] : null;
+    const engine = core.create(catalogue.products.map(p => { const area = areaOf(p); if (area) p = {...p, category: area}; const n = norm(p.name); const extra = NAME_TAGS.filter(([t, rx]) => rx.test(n) && !(p.tags || []).includes(t)).map(([t]) => t); return extra.length ? {...p, tags: [...(p.tags || []), ...extra], source: {...(p.source || {}), suitabilityEvidence: {...(p.source?.suitabilityEvidence || {}), ...Object.fromEntries(extra.map(t => [t, true]))}}} : p; }));
     const currency = engine.products.find(p => p.currency)?.currency || 'EUR';
     const notMainKind = /^vzorky|darcekove poukazy|^doplnky$|dalsia ponuka|potraviny|doplnky vyzivy|^sviecky$|laky na nechty/;
+    const NOT_GOODS = /skoleni|kurz\b|kurzy|workshop|seminar|poukaz|voucher|postovne|doprava/;
+    // Tools and containers sold beside the cosmetics are not the product a customer asks about.
+    const TOOLS = /dozick|dozičk|nadobk|\btask[auy]\b|vreck|kefa|kefk|hreben|derma stamp|peciatk|valcek|roller|gua sha|hubk[ay]?\b|houbick|mistick|miska|stojan|obal\b|lahvick|flastick|\bsac[e]?k|\bsacky\b|stetec|stetc|polstar|kapesn/;
     const products = engine.products.map(p => ({
       id: String(p.id), name: p.name, url: p.url, price: p.price, amount: Number.isFinite(p.priceAmount) ? p.priceAmount : null, currency: p.currency || currency,
       pack: p.volume && !/balenie podla|baleni podle/.test(norm(p.volume)) ? p.volume : '', available: p.available !== false,
-      main: !['other', 'home', 'wellness', 'tea'].includes(p.category) && !notMainKind.test(norm(p.kind)) && !p.isSample, kind: p.kind, cat: p.category, raw: p,
-      text: norm([p.name, p.kind, p.description || ''].join(' '))
+      // Kinds like "Ďalšia ponuka" or "Doplnky" hold accessories, but also creams and deodorants whose name says what they are.
+      main: !['other', 'home', 'wellness', 'tea'].includes(p.category) && (!notMainKind.test(norm(p.kind)) || (/^doplnky$|dalsia ponuka/.test(norm(p.kind)) && FORMS.some(([, rx]) => rx.test(norm(p.name) + ' ' + lead(p))))) && !p.isSample && !NOT_GOODS.test(norm(p.name)) && !TOOLS.test(norm(p.name)), kind: p.kind, cat: p.category, raw: p,
+      text: norm([p.name, p.kind, p.description || ''].join(' ')),
+      // What the product is: its kind and name, or where they say nothing ("Sweater Weather"), the first sentence of its description.
+      what: FORMS.some(([, rx]) => rx.test(norm(p.kind + ' ' + p.name))) ? norm(p.kind + ' ' + p.name) : norm(p.kind + ' ' + p.name) + ' ' + lead(p)
     }));
+    // What a product contains or is, without the "bez parabénov / neobsahuje retinol" phrases that say the opposite.
+    for (const p of products) p.pos = p.text.replace(/\b(?:bez|neobsahuje|neobsahuju|nepouzivame|free of|free from)\s+[^.;:]{0,50}|\b\w+[- ]free\b/g, ' ');
     const byId = new Map(products.map(p => [p.id, p]));
     function parse(pos, neg) {
       const set = {}, not = {};
@@ -602,34 +620,75 @@
       if (/\btelo\b|\btela\b|telov/.test(neg) && !not.category?.includes('body')) not.category = [...(not.category || []), 'body'];
       if (/such|pnut|napjat|dehydr/.test(pos)) set.profile = 'dry'; else if (/mastn|mastic|maz\b|akne|nedokonal|lesk/.test(pos)) set.profile = 'oily'; else if (/citliv|reakt|podraz|zcervena/.test(pos)) set.profile = 'sensitive';
       if (/vrask|zrel|zral|anti.?ag|pevnost|spevn/.test(pos)) set.goal = 'mature'; else if (/hydrat/.test(pos)) set.goal = 'hydrate'; else if (/odlic|cisten|cistit|umyt|umyv/.test(pos) && !/cistiac|cistic/.test(pos)) set.goal = 'clean'; else if (/upokoj|zklid/.test(pos)) set.goal = 'calm';
-      const form = FORMS.find(([, rx]) => rx.test(pos)); if (form) set.form = form[0];
+      // "bez esenciálnych olejov" asks about scent, not for an oil or a serum.
+      const formText = pos.replace(/(?:esencial|eteric|essential)\w*\s+olej\w*|\besencial\w*|\beteric\w*/g, ' ');
+      const form = FORMS.find(([, rx]) => rx.test(formText)); if (form) set.form = form[0];
       const nform = FORMS.filter(([, rx]) => rx.test(neg)).map(([k]) => k); if (nform.length) not.form = nform;
       if (FRAGRANCE_FREE.test(pos) || /parfum|vone|vune|eteric|esencial/.test(neg) || /alergi\w* na (?:parfum|vone|vune)/.test(pos)) set.fragranceFree = true;
       if (/tmav|cierne vlasy|cerne vlasy|hned|brunet|gastan|kastan/.test(pos)) set.hairColour = 'dark'; else if (/svetl|blond|plav|siv[eé] vlas|sediv/.test(pos)) set.hairColour = 'light';
       if (/plne balenie|velke balenie|velke plne|velk\w* baleni|plne baleni/.test(pos) || /vzork|vzorek|sample|tester/.test(neg)) set.noSample = true;
       if (/vypad|rednut|ridnut|podpor\w* rast|podpor\w* rust/.test(pos)) set.hairNeed = 'growth'; else if (/lupin|lupy|lupu/.test(pos)) set.hairNeed = 'dandruff';
+      if (/\bnocn|\bna noc\b|night/.test(pos)) set.time = 'night'; else if (/\bdenn\w* krem|\bna den\b|\bday\b/.test(pos)) set.time = 'day';
+      const age = pos.match(/\b(30|40|45|50|55|60|65)\s*\+|\bpo (40|50|60)\b/); if (age) set.age = Number(age[1] || age[2]);
+      if (/telov\w* mliek|telove mlieko|body lotion|telov\w* mlik|\bmlieko na telo/.test(pos)) set.lotion = true;
+      if (/odlic|odlíč|make.?up remov|odstran\w* make/.test(pos)) { set.form = 'cistenie'; delete set.goal; if (!set.category) set.category = 'face'; }
+      if (/\b(?:mamu|mama|mamke|mamicke|zenu|zene|manzelku|priatelku|babku|babicke|sestru|kamaratku|dceru|svokru|pre nu|pro ni)\b/.test(pos)) set.forWhom = 'f'; else if (/\b(?:otca|tata|tatu|muza|manzela|priatela|deda|dedka|brata|syna|svokra|pre neho|pro nej)\b/.test(pos)) set.forWhom = 'm';
+      if (/\b(?:40|45|50|55|60|65)\s*\+|\bpo (?:40|50|60)\b|starn|starsi\w* plet|zral\w* plet/.test(pos) && !set.goal) set.goal = 'mature';
+      if (/\bspf\b|opalov|opaľ|ochran\w* (?:pred|proti|pred) sln|slnecn\w* ochran|sluncem|uv filtr|uv ochran/.test(pos)) set.spf = true;
+      if (/\bmuz|\bmuzsk|\bpansk|\bpanov|pre neho|pro neho|\bmen\b|holen|po holeni|after ?shave/.test(pos)) set.men = true;
+      if (/\bvegan/.test(pos)) set.vegan = true;
+      if (/\bbio\b|organick|organic|certifik/.test(pos)) set.bio = true;
+      if (/strij|strie\b|striam|strii\b/.test(pos)) set.marks = true;
+      if (/pigment|skvrn|flak|skvrny|tmav\w* fliack|rozjasn/.test(pos)) set.pigment = true;
+      const ing = INGREDIENTS.find(([, rx]) => rx.test(pos)); if (ing) set.ingredient = ing[0];
+      if (/najlacn|nejlevn|lacn\w* produkt|co najlacn/.test(pos)) set.sort = 'cheap'; else if (/najdrah|nejdraz/.test(pos)) set.sort = 'expensive';
       return {set, not};
     }
     function rank(a = {}, not = {}, st = {}) {
       let list = engine.recommend({category: a.category, profile: a.profile, goal: a.goal}).matches.map(p => byId.get(String(p.id))).filter(Boolean);
       const allowNonMain = ['other', 'home', 'wellness', 'tea'].includes(a.category);
       list = list.filter(p => p.main || allowNonMain);
-      if (a.form) { const rx = FORMS.find(([k]) => k === a.form)[1]; list = list.filter(p => rx.test(norm(p.kind + ' ' + p.name))); }
-      if (not.form?.length) list = list.filter(p => !not.form.some(k => FORMS.find(([kk]) => kk === k)[1].test(norm(p.kind + ' ' + p.name))));
+      // A lip balm is any lip care; the balms come first.
+      if (a.form && a.category === 'lips' && a.form === 'krem') { const rx = FORMS.find(([k]) => k === a.form)[1]; list = list.slice().sort((x, y) => (rx.test(y.what) ? 1 : 0) - (rx.test(x.what) ? 1 : 0)); }
+      else if (a.form) { const rx = FORMS.find(([k]) => k === a.form)[1]; list = list.filter(p => rx.test(p.what)); }
+      if (not.form?.length) list = list.filter(p => !not.form.some(k => FORMS.find(([kk]) => kk === k)[1].test(p.what)));
       if (not.category?.length) list = list.filter(p => !not.category.includes(p.cat) && !(not.category.includes('body') && /telov|\btelo\b|body|sprch|ruky|ruce|nohy/.test(norm(p.name))));
-      if (a.fragranceFree) list = list.filter(p => FRAGRANCE_FREE.test(p.text) || p.raw.source?.fragranceFree === true);
+      // Fragrance-free means without perfume and essential oils: a description that names essential oils it contains rules a product out.
+      if (a.fragranceFree) list = list.filter(p => (FRAGRANCE_FREE.test(p.text) || p.raw.source?.fragranceFree === true) && !ESSENTIAL.test(p.text.replace(ESSENTIAL_NONE, ' ')));
       if (a.hairColour) { const opposite = a.hairColour === 'dark' ? /svetl|blond|plav|sediv|\bsiv/ : /tmav|cern|ciern|hned|brunet/; const same = a.hairColour === 'dark' ? /tmav|cern|ciern|hned|brunet/ : /svetl|blond|plav/; list = list.filter(p => !opposite.test(norm(p.name))).sort((x, y) => (same.test(norm(y.name)) ? 1 : 0) - (same.test(norm(x.name)) ? 1 : 0)); }
       if (a.noSample) list = list.filter(p => !p.raw.isSample && !/vzork|vzorek|sample|tester|cestovn|mini\b/.test(norm(p.name + ' ' + p.kind)));
       if (a.hairNeed === 'growth') list = list.filter(p => /vypad|rast|rust|growth|posiln|rednut|ridnut/.test(p.text) || (p.raw.features?.hairNeed === 'growth'));
       if (a.hairNeed === 'dandruff') list = list.filter(p => /lupin|lupy|dandruff/.test(p.text));
+      if (a.time) { const rx = a.time === 'night' ? /nocn|\bnoc\b|night/ : /\bdenn|\bday\b|\bden\b/; const timed = list.filter(p => p.raw.features?.time === a.time || rx.test(norm(p.name))); list = timed; }
+      if (a.lotion) list = list.filter(p => /mlieko|mlicko|mleko|mlíko|lotion|emulz/.test(norm(p.name + ' ' + p.kind)) && !/mydl|soap/.test(norm(p.name + ' ' + p.kind)));
+      if (a.form === 'cistenie') list = list.filter(p => !/mask/.test(norm(p.name + ' ' + p.kind)));
+      if (a.forWhom === 'f') list = list.filter(p => !MEN.test(norm(p.name)));
+      if (a.forWhom === 'm') list = list.slice().sort((x, y) => (MEN.test(norm(y.name)) ? 1 : 0) - (MEN.test(norm(x.name)) ? 1 : 0));
+      // A gift is a full product, not a box of samples, unless nothing else fits.
+      if (a.category === 'sets') { const full = list.filter(p => !/vzor|sample|tester/.test(norm(p.name))); if (full.length) list = full; }
+      if (a.forWhom === 'm') list = list.filter(p => !/damsk|pre zen|pro zen|\bmam|mamick|zensk|lady|woman/.test(norm(p.name)));
+      if (a.age) list = list.slice().sort((x, y) => (new RegExp('\\b' + a.age + '\\s*\\+').test(norm(y.name)) ? 1 : 0) - (new RegExp('\\b' + a.age + '\\s*\\+').test(norm(x.name)) ? 1 : 0));
+      if (a.spf) list = list.filter(p => p.raw.features?.time === 'spf' || /\bspf\b|opalov|opaľ|uv filtr|ochran\w* (?:pred|proti) sln|sunscreen/.test(norm(p.name + ' ' + p.kind)));
+      if (a.men) list = list.filter(p => MEN.test(norm(p.name + ' ' + p.kind)) || p.cat === 'beard');
+      if (a.vegan) list = list.filter(p => /vegan/.test(p.pos) && !/(?:nie je|neni|nie su|nejsou) vegan/.test(p.text));
+      if (a.bio) list = list.filter(p => /\bbio\b|organic|organick|ecocert|cosmos|natrue/.test(p.pos));
+      if (a.marks) list = list.filter(p => /strij|strie|strii|striam|stretch/.test(p.pos));
+      if (a.pigment) list = list.filter(p => /pigment|skvrn|flak|rozjasn|brighten|vitamin c|niacinamid|azela/.test(p.pos));
+      if (a.ingredient) { const rx = INGREDIENTS.find(([k]) => k === a.ingredient)[1]; list = list.filter(p => rx.test(p.pos)); }
       const budget = st.budget?.amount;
-      if (budget) list = list.slice().sort((x, y) => (y.amount ?? -1) - (x.amount ?? -1));
+      if (a.sort) list = list.filter(p => Number.isFinite(p.amount) && !p.raw.isSample && !/vzork|tester|\bmini\b/.test(norm(p.name))).sort((x, y) => a.sort === 'cheap' ? x.amount - y.amount : y.amount - x.amount);
+      else if (budget) list = list.slice().sort((x, y) => (y.amount ?? -1) - (x.amount ?? -1));
       return list;
     }
+    const ESSENTIAL = /eteric|esencial|essential oil|\bsilic|esencie/;
+    const ESSENTIAL_NONE = /(?:\bbez|\bani|neobsahuj\w*|ziadn\w*|zadn\w*|free)\b[^.;]{0,30}(?:eteric|esencial|essential|silic)\w*/g;
+    const KIND_CS = {'Čistenie a umývanie': 'Čištění a mytí', 'Kúpeľové výrobky': 'Koupelové výrobky', 'Toniká a vody': 'Tonika a vody', 'Doplnky': 'Doplňky', 'Vône': 'Vůně', 'Sviečky': 'Svíčky', 'Krémy a balzamy': 'Krémy a balzámy', 'Darčekové sady': 'Dárkové sady', 'Náplasti a lokálna starostlivosť': 'Náplasti a lokální péče', 'Šampóny': 'Šampony', 'Darčekové poukazy': 'Dárkové poukazy', 'Mlieka a emulzie': 'Mléka a emulze', 'Líčenie': 'Líčení', 'Výživové doplnky': 'Výživové doplňky', 'Esencie a ampulky': 'Esence a ampulky', 'Dezodoranty': 'Deodoranty', 'Doplnky výživy': 'Doplňky stravy', 'Tinktúry': 'Tinktury', 'Laky na nechty': 'Laky na nehty'};
     const SIGNAL = {sk: {hydrate: 'hydratácia', calm: 'upokojenie', balance: 'pre pleť so sklonom k mastnote', mature: 'proti vráskam', clean: 'čistenie'}, cs: {hydrate: 'hydratace', calm: 'zklidnění', balance: 'pro pleť se sklonem k mastnotě', mature: 'proti vráskám', clean: 'čištění'}};
     function facts(p) {
       const r = p.raw, f = [];
-      f.push({k: 'kind', v: lc(r.kind)});
+      // "Ďalšia ponuka" and "Doplnky" (other goods) say nothing about the product; Czech shops show the kind in Czech.
+      const kind = String(r.kind || '').replace(/^Vzorky — /, '');
+      if (kind && !/^(?:Ďalšia ponuka|Doplnky)$/.test(kind)) f.push({k: 'kind', v: lc((r.kind !== kind ? L(lang, 'Vzorky — ', 'Vzorky — ') : '') + (lang === 'cs' ? KIND_CS[kind] || kind : kind))});
       if (r.category && AREA[lang][r.category] && !['other'].includes(r.category)) f.push({k: 'area', v: L(lang, 'oblasť: ', 'oblast: ') + AREA[lang][r.category]});
       if (p.pack) f.push({k: 'volume', v: p.pack});
       const ev = Object.keys(r.source?.suitabilityEvidence || {});
@@ -637,12 +696,14 @@
       const hair = r.category === 'hair';
       if (profiles.length) f.push({k: 'profile', v: L(lang, 'podľa popisu pre ', 'podle popisu pro ') + profiles.map(t => hair ? {dry: 'suché', oily: 'mastné', sensitive: 'citlivú pokožku'}[t] : PROFILE[lang][t]).join(L(lang, ' a ', ' a ')) + (hair ? L(lang, ' vlasy', ' vlasy') : L(lang, ' pleť', ' pleť')), hint: L(lang, 'ak máte ', 'pokud máte ') + profiles.map(t => hair ? {dry: 'suché vlasy', oily: 'mastné vlasy', sensitive: 'citlivú pokožku hlavy'}[t] : PROFILE[lang][t] + L(lang, ' pleť', ' pleť'))[0], who: L(lang, 'výrobca ho uvádza pre ', 'výrobce ho uvádí pro ') + profiles.map(t => hair ? {dry: 'suché vlasy', oily: 'mastné vlasy', sensitive: 'citlivú pokožku hlavy'}[t] : PROFILE[lang][t] + L(lang, ' pleť', ' pleť')).join(L(lang, ' a ', ' a '))});
       else if (r.source?.allSkinTypes) f.push({k: 'profile', v: L(lang, 'výrobca uvádza pre všetky typy pleti', 'výrobce uvádí pro všechny typy pleti'), who: L(lang, 'výrobca ho uvádza pre všetky typy pleti', 'výrobce ho uvádí pro všechny typy pleti')});
-      const goals = (r.tags || []).filter(t => ['hydrate', 'calm', 'mature', 'balance'].includes(t));
+      // "Skin prone to oiliness" says nothing new about a shampoo already described as for oily hair.
+      const goals = (r.tags || []).filter(t => ['hydrate', 'calm', 'mature', 'balance'].includes(t) && !(hair && t === 'balance'));
       if (goals.length) f.push({k: 'goal', v: goals.slice(0, 2).map(t => SIGNAL[lang][t]).join(', '), hint: L(lang, 'ak vám ide o ', 'pokud vám jde o ') + SIGNAL[lang][goals[0]]});
       const ft = r.features || {};
       if (ft.time === 'spf') f.push({k: 'time', v: L(lang, 's ochranným faktorom SPF', 's ochranným faktorem SPF')});
-      else if (ft.time === 'night') f.push({k: 'time', v: L(lang, 'na noc', 'na noc')});
-      else if (ft.time === 'day') f.push({k: 'time', v: L(lang, 'na deň', 'na den')});
+      // Day and night care is facial care; a soap called "Amber Nights" is no night cream.
+      else if (ft.time === 'night' && ['face', 'eyes'].includes(p.cat)) f.push({k: 'time', v: L(lang, 'na noc', 'na noc')});
+      else if (ft.time === 'day' && ['face', 'eyes'].includes(p.cat)) f.push({k: 'time', v: L(lang, 'na deň', 'na den')});
       if (FRAGRANCE_FREE.test(p.text)) f.push({k: 'fragrance', v: L(lang, 'bez parfumácie podľa názvu alebo popisu', 'bez parfemace podle názvu nebo popisu')});
       return f;
     }
@@ -683,18 +744,71 @@
     const describe = (a = {}, not = {}) => {
       const out = [];
       if (a.category) out.push(AREA[lang][a.category]);
-      if (a.profile) out.push(L(lang, 'pre ', 'pro ') + PROFILE[lang][a.profile] + (a.category === 'hair' ? '' : L(lang, ' pleť', ' pleť')));
+      if (a.profile) out.push(a.category === 'hair' ? L(lang, 'pre ', 'pro ') + {dry: L(lang, 'suché vlasy', 'suché vlasy'), oily: L(lang, 'mastné vlasy', 'mastné vlasy'), sensitive: L(lang, 'citlivú pokožku hlavy', 'citlivou pokožku hlavy')}[a.profile] : L(lang, 'pre ', 'pro ') + PROFILE[lang][a.profile] + L(lang, ' pleť', ' pleť'));
       if (a.goal) out.push({mature: L(lang, 'proti vráskam', 'proti vráskám'), hydrate: L(lang, 'hydratácia', 'hydratace'), clean: L(lang, 'čistenie', 'čištění'), calm: L(lang, 'upokojenie', 'zklidnění')}[a.goal]);
-      if (a.form) out.push(FORM_LABEL[a.form]);
+      if (a.form) out.push((lang === 'cs' ? FORM_LABEL_CS : FORM_LABEL)[a.form]);
       if (a.fragranceFree) out.push(L(lang, 'bez parfumácie (overené pri produkte)', 'bez parfemace (ověřené u produktu)'));
       if (a.hairColour) out.push(a.hairColour === 'dark' ? L(lang, 'na tmavé vlasy', 'na tmavé vlasy') : L(lang, 'na svetlé vlasy', 'na světlé vlasy'));
       if (a.noSample) out.push(L(lang, 'plné balenie', 'plné balení'));
+      if (a.spf) out.push(L(lang, 's ochranným faktorom SPF', 's ochranným faktorem SPF'));
+      if (a.time) out.push(a.time === 'night' ? L(lang, 'na noc', 'na noc') : L(lang, 'na deň', 'na den'));
+      if (a.lotion) out.push(L(lang, 'telové mlieko', 'tělové mléko'));
+      if (a.age) out.push(a.age + '+');
+      if (a.men) out.push(L(lang, 'pre mužov', 'pro muže'));
+      if (a.vegan) out.push(L(lang, 'vegánske', 'veganské'));
+      if (a.bio) out.push(L(lang, 'bio / organic', 'bio / organic'));
+      if (a.marks) out.push(L(lang, 'na strie', 'na strie'));
+      if (a.pigment) out.push(L(lang, 'na pigmentové škvrny a rozjasnenie', 'na pigmentové skvrny a rozjasnění'));
+      if (a.ingredient) out.push(L(lang, 's látkou: ', 's látkou: ') + INGREDIENTS.find(([k]) => k === a.ingredient)[2]);
+      if (a.sort) out.push(a.sort === 'cheap' ? L(lang, 'od najlacnejšieho', 'od nejlevnějšího') : L(lang, 'od najdrahšieho', 'od nejdražšího'));
       if (not.category?.length) out.push(L(lang, 'nie ', 'ne ') + not.category.map(k => AREA[lang][k]).join(', '));
-      if (not.form?.length) out.push(L(lang, 'nie ', 'ne ') + not.form.map(k => FORM_LABEL[k]).join(', '));
+      if (not.form?.length) out.push(L(lang, 'nie ', 'ne ') + not.form.map(k => (lang === 'cs' ? FORM_LABEL_CS : FORM_LABEL)[k]).join(', '));
       return out;
     };
-    const noMatchNote = a => a.fragranceFree ? L(lang, 'Produkt s overeným zložením bez parfumácie a éterických olejov v ukážke nemám, preto vám ho neodporučím. Úplné zloženie je uvedené pri každom produkte v e-shope.', 'Produkt s ověřeným složením bez parfemace a éterických olejů v ukázce nemám, proto vám ho nedoporučím. Úplné složení je uvedeno u každého produktu v e-shopu.') : '';
-    return {family, lang, currency, source: catalogue.source, shipping: catalogue.shipping || null, products, parse, rank, facts, attribute, usage, accessories, accessoryReason, describe, noMatchNote, relax: ['goal', 'profile', 'form'], reasonKeys: ['profile', 'goal', 'fragrance', 'time', 'kind', 'volume'], similar: p => ({category: p.cat})};
+    const featureNote = a => {
+      const what = a.spf ? L(lang, 'Produkt s ochranným faktorom SPF', 'Produkt s ochranným faktorem SPF') : a.men ? L(lang, 'Kozmetiku označenú výslovne pre mužov', 'Kosmetiku označenou výslovně pro muže') : a.vegan ? L(lang, 'Produkty označené ako vegánske', 'Produkty označené jako veganské') : a.bio ? L(lang, 'Produkty označené ako bio alebo organic', 'Produkty označené jako bio nebo organic') : a.marks ? L(lang, 'Produkt označený na strie', 'Produkt označený na strie') : a.pigment ? L(lang, 'Produkt označený na pigmentové škvrny', 'Produkt označený na pigmentové skvrny') : a.ingredient ? L(lang, 'Produkt s látkou ', 'Produkt s látkou ') + INGREDIENTS.find(([k]) => k === a.ingredient)[2] : '';
+      return what ? what + L(lang, ' e-shop v ponuke (v názve ani popise produktu) neuvádza. Celú ponuku nájdete v e-shope: ', ' e-shop v nabídce (v názvu ani popisu produktu) neuvádí. Celou nabídku najdete v e-shopu: ') + catalogue.source : '';
+    };
+    const noMatchNote = a => featureNote(a) || (a.fragranceFree ? L(lang, 'Produkt s overeným zložením bez parfumácie a éterických olejov v ukážke nemám, preto vám ho neodporučím. Úplné zloženie je uvedené pri každom produkte v e-shope.', 'Produkt s ověřeným složením bez parfemace a éterických olejů v ukázce nemám, proto vám ho nedoporučím. Úplné složení je uvedeno u každého produktu v e-shopu.') : '');
+    const lineOf = p => `${p.name}${p.pack && !norm(p.name).replace(/\s/g, '').includes(norm(p.pack).replace(/\s/g, '')) ? ' (' + p.pack + ')' : ''} — ${p.price}. ${p.url}`;
+    const formIn = q => FORMS.find(([, rx]) => rx.test(q))?.[0];
+    const namesProduct = q => { const qw = new Set(q.split(/[^a-z0-9]+/)); return products.some(p => { const ws = norm(p.name).split(/[^a-z0-9]+/).filter(w => w.length >= 2 && !/^(?:na|pre|pro|s|so|a|ml|g)$/.test(w)); return ws.length >= 2 && ws.filter(w => qw.has(w)).length / ws.length >= 0.6; }); };
+    /* Questions about the shop and the routine, answered before the product search. */
+    const pre = q => {
+      if (namesProduct(q)) return undefined;
+      // "Ako používať sérum?" without a product: how that kind of product is used, then two of them.
+      if (/\bako (?:sa )?(?:spravne )?(?:pouziva|pouzit|nanas|nanies|aplik)|\bjak (?:se )?(?:spravne )?(?:pouziva|pouzit|nanas|nanest|aplik)|\bpostup\b/.test(q)) {
+        const form = formIn(q);
+        if (form && KIND_USE[lang][form]) { const rx = FORMS.find(([k]) => k === form)[1]; const list = products.filter(p => p.main && p.available && rx.test(norm(p.kind + ' ' + p.name)) && (!['serum', 'krem', 'olej', 'maska', 'tonikum'].includes(form) || p.cat === 'face' || /vlas/.test(q))).slice(0, 2); return KIND_USE[lang][form] + L(lang, ' Presný postup uvádza výrobca pri produkte.', ' Přesný postup uvádí výrobce u produktu.') + (list.length ? '\n\n' + L(lang, 'Z ponuky:', 'Z nabídky:') + '\n\n' + list.map(lineOf).join('\n\n') : ''); }
+      }
+      if (/vzork|vzorek|vzorky|tester|cestovn\w* balen|mini balen|\bminiatur/.test(q) && !/bez vzor|nie vzork|ne vzor/.test(q)) {
+        const list = products.filter(p => p.available && (p.raw.isSample || /vzork|vzorek|tester|\bmini\b|cestovn/.test(norm(p.name + ' ' + p.kind))));
+        return list.length ? L(lang, 'Vzorky a menšie balenia z ponuky:', 'Vzorky a menší balení z nabídky:') + '\n\n' + list.sort((a, b) => (a.amount ?? 1e9) - (b.amount ?? 1e9)).slice(0, 4).map(lineOf).join('\n\n') : L(lang, 'Vzorky ani cestovné balenia e-shop v ponuke nemá.', 'Vzorky ani cestovní balení e-shop v nabídce nemá.');
+      }
+      if (/zlav|akci[ae]\b|vypredaj|vyprodej|kupon|kod na zlavu|sleva|slevu|slevov/.test(q)) return L(lang, 'Aktuálne zľavy a akcie v ukážke overené nemám; nájdete ich priamo v e-shope: ', 'Aktuální slevy a akce v ukázce ověřené nemám; najdete je přímo v e-shopu: ') + catalogue.source;
+      if (/minimaln\w* (?:objednav|hodnot|nakup|sum)/.test(q)) return L(lang, 'Minimálnu hodnotu objednávky e-shop v ukážke overenú nemám. Podmienky nájdete v e-shope: ', 'Minimální hodnotu objednávky v ukázce ověřenou nemám. Podmínky najdete v e-shopu: ') + (catalogue.shipping?.termsUrl || catalogue.source);
+      if (/pouzivate vy|pouzivas ty|tvoj\w* oblub|vas\w* oblub|co by ste si vybrali/.test(q)) return L(lang, 'Sám kozmetiku nepoužívam, ale rád vám vyberiem z ponuky. Napíšte, aký máte typ pleti alebo čo potrebujete.', 'Sám kosmetiku nepoužívám, ale rád vám vyberu z nabídky. Napište, jaký máte typ pleti nebo co potřebujete.');
+      return undefined;
+    };
+    /* Pregnancy, breastfeeding and skin conditions: no medical claims; products the shop itself names for it. */
+    const health = q => {
+      if (/\bliec|vyliec|\blecb|\blecit|vylec|chorob|nemoc|ekzem|rosacea|dermatit|\bliek\b|\blek\b|diagnoz/.test(q)) return L(lang, 'Otázku liečby kožného ochorenia riešte s lekárom. Môžem vám ukázať kozmetické produkty a odkazy na ich úplné zloženie.', 'Otázku léčby kožního onemocnění řešte s lékařem. Mohu vám ukázat kosmetické produkty a odkazy na jejich úplné složení.');
+      // A description that warns against use in pregnancy ("nevhodné pre tehotné") never puts a product on this list.
+      const PREG = /tehot|tehuln|strij|strie\b|strii|mamick|maminky|kojic|dojc|bruska|brusko/;
+      const WARN = /(?:ne(?:vhodn|doporuc|odporuc|pouziv|aplikuj)|nie je vhodn|neni vhodn|kontraindik|okrem|krome|vynimkou|vyjimkou|poradte sa|poradte se|konzultuj)[^.]{0,60}(?:tehot|tehuln|kojic|dojc)|(?:tehot|tehuln|kojic|dojc)[^.]{0,40}(?:nepouziv|neodporuc|nedoporuc|nevhodn|kontraindik|konzult|poradte)/;
+      const named = products.filter(p => p.main && p.available && (PREG.test(norm(p.name + ' ' + p.kind)) || (PREG.test(p.text) && !WARN.test(p.text))) && !WARN.test(p.text));
+      const marks = /strij|strie|strii/.test(q);
+      const list = marks ? named.filter(p => /strij|strie|strii/.test(p.text)) : named;
+      const head = L(lang, 'Vhodnosť počas tehotenstva a dojčenia posúdi lekár; ja ju neposudzujem.', 'Vhodnost během těhotenství a kojení posoudí lékař; já ji neposuzuji.');
+      return list.length ? head + ' ' + L(lang, 'E-shop pre toto obdobie výslovne ponúka:', 'E-shop pro toto období výslovně nabízí:') + '\n\n' + list.slice(0, 3).map(lineOf).join('\n\n') : head + ' ' + L(lang, 'Produkty určené výslovne pre tehotné e-shop v ponuke neuvádza; úplné zloženie je pri každom produkte.', 'Produkty určené výslovně pro těhotné e-shop v nabídce neuvádí; úplné složení je u každého produktu.');
+    };
+    /* A brand the shop does not sell: the same kind of product from this shop. */
+    const notSoldSuggest = (parsed = {}) => {
+      const a = parsed.set || {};
+      const list = rank({category: a.category, form: a.form}, {}, {}).filter(p => p.available);
+      return {head: L(lang, 'Z ponuky tohto e-shopu:', 'Z nabídky tohoto e-shopu:'), list};
+    };
+    return {family, pre, health, notSoldSuggest, notBrand: q => /\b(?:spf|bio|vegan|organic)\b/.test(q), lang, currency, source: catalogue.source, shipping: catalogue.shipping || null, products, parse, rank, facts, attribute, usage, accessories, accessoryReason, describe, noMatchNote, relax: ['goal', 'profile', 'time', 'form'], reasonKeys: ['profile', 'goal', 'fragrance', 'time', 'kind', 'volume'], similar: p => ({category: p.cat})};
   }
 
   /* ======================= TEA ======================= */
@@ -785,9 +899,9 @@
       return f;
     }
     const usage = p => { const care = (p.raw.facts || []).map(tidy).filter(x => /svetl|tien|slnk|poliev|zalev|vod|teplot|nenaroc/.test(norm(x))); return care.length ? care.join(' ') : L(lang, 'Konkrétne pokyny k pestovaniu tejto položky uvádza predajca pri produkte.', 'Konkrétní pokyny k pěstování této položky uvádí prodejce u produktu.'); };
-    function accessories(main, q) {
+    function accessories(main, q, st, opts = {}) {
       const kinds = /kvetinac|crepnik|obal/.test(q) ? ['pots'] : /substrat|zemin|hlin/.test(q) ? ['substrates'] : /hnojiv|vyziv/.test(q) ? ['accessories'] : /misk|podmisk|tanier|talir/.test(q) ? ['pots', 'accessories'] : ['pots', 'substrates'];
-      let list = products.filter(p => p.available && kinds.includes(p.kind));
+      let list = products.filter(p => (opts.all || p.available) && kinds.includes(p.kind));
       if (/misk|podmisk|tanier|talir/.test(q)) list = list.filter(p => /misk|podmisk|tanier|talir|talirek/.test(norm(p.name)));
       if (/hnojiv/.test(q)) list = list.filter(p => /hnojiv/.test(norm(p.name)));
       return list.sort((a, b) => (a.amount ?? 1e9) - (b.amount ?? 1e9));

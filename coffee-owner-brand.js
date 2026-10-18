@@ -516,14 +516,14 @@
 
     const refresh = document.createElement('link');
     refresh.rel = 'stylesheet';
-    refresh.href = '/coffee-refresh.css?v=20261015-mobile';
+    refresh.href = '/coffee-refresh.css?v=6da6246d';
     refresh.dataset.mcbRefreshStyle = 'true';
     refresh.dataset.mcOrder = '95';
     document.body.appendChild(refresh);
 
     if (!document.querySelector('script[data-owner-info]')) {
       const info = document.createElement('script');
-      info.src = '/owner-more-info.js?v=20261015-mobile';
+      info.src = '/owner-more-info.js?v=0cbb0cd0';
       info.dataset.ownerInfo = 'true';
       document.body.appendChild(info);
     }
@@ -593,7 +593,7 @@
   const usesCleanJolkaWidget = document.documentElement.dataset.coffeeReleaseReady === 'true';
   if (!usesCleanJolkaWidget && !document.querySelector('script[data-mcb-widget]')) {
     const polish = document.createElement('script');
-    polish.src = '/coffee-widget-polish.js?v=a6b2ac52';
+    polish.src = '/coffee-widget-polish.js?v=6a54d790';
     polish.dataset.mcbWidget = 'true';
     polish.async = false;
     document.body.appendChild(polish);

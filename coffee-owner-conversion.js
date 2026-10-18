@@ -12,7 +12,7 @@
   'use strict';
   if (document.querySelector('script[data-mcb-owner]')) return;
   const script = document.createElement('script');
-  script.src = '/coffee-owner-brand.js?v=20261014-final-audit-9';
+  script.src = '/coffee-owner-brand.js?v=8ac5b3a7';
   script.dataset.mcbOwner = 'true';
   script.async = false;
   document.body.appendChild(script);

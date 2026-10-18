@@ -34,7 +34,7 @@
     'Bez viazanosti, vypnete kedykoľvek. Preklik na produkt alebo napojenie na košík za príplatok.': 'Bez závazků, vypnete kdykoli. Proklik na produkt nebo napojení na košík za příplatek.',
     'prevádzka': 'provoz', 'Ozvite sa mi': 'Ozvěte se mi', 'Otvoriť poradcu': 'Otevřít poradce', 'Skúsiť chat': 'Zkusit chat', 'Vyskúšať výber': 'Vyzkoušet výběr', 'Viac info': 'Více info',
     'online poradca': 'online poradce', 'Späť': 'Zpět', '‹ Späť': '‹ Zpět', 'Výsledok': 'Výsledek', 'Zmeniť odpovede': 'Změnit odpovědi', 'Vybrať znova': 'Vybrat znovu',
-    'Odporúčam vám': 'Doporučuji vám', 'Otvoriť v e-shope': 'Otevřít v e-shopu', 'Pozrieť v e-shope ↗': 'Zobrazit v e-shopu ↗', 'Pozrieť produkt ↗': 'Zobrazit produkt ↗', 'Pozrieť produkt v e-shope ↗': 'Zobrazit produkt v e-shopu ↗',
+    'Odporúčam vám': 'Doporučuji vám', 'Otvoriť v e-shope': 'Otevřít v e-shopu', 'Pozrieť v e-shope ↗': 'Zobrazit v e-shopu ↗', 'Pozrieť produkt ↗': 'Zobrazit produkt ↗', 'Pozrieť produkt v e-shope ↗': 'Zobrazit produkt v e-shopu ↗', 'Otvoriť stránku e-shopu ↗': 'Otevřít stránku e-shopu ↗',
     'Zavrieť': 'Zavřít', 'Cena': 'Cena', 'Skryť pozvánku': 'Skrýt pozvánku', 'Začať odznova': 'Začít znovu', 'Zavrieť poradcu': 'Zavřít poradce', 'Režim poradcu': 'Režim poradce', 'Odoslať správu': 'Odeslat zprávu',
     'Zavrieť náhľad': 'Zavřít náhled', 'Otvoriť poradcu ': 'Otevřít poradce',
     // coffee

@@ -35,7 +35,7 @@ function stampFor(assetPath) {
    absolute URLs and anything generated at runtime are left alone. Any older
    ?v= value, hand-written dates included, is replaced by the hash. */
 function stamp(text) {
-  return text.replace(/(["'])(\/[A-Za-z0-9_\-./]+\.(?:js|css))(?:\?v=[0-9A-Za-z]+)?\1/g,
+  return text.replace(/(["'])(\/[A-Za-z0-9_\-./]+\.(?:js|css))(?:\?v=[0-9A-Za-z-]+)?\1/g,
     (whole, quote, assetPath) => {
       const hash = stampFor(assetPath);
       return hash ? `${quote}${assetPath}?v=${hash}${quote}` : whole;
@@ -71,9 +71,9 @@ const fingerprint = createHash('sha1')
 const release = [
   'Ukazky mojchatbot.sk',
   `verzia: ${fingerprint}`,
-  'cosmetics.js: ' + (stampFor('/cosmetics.js?v=20261014-final-audit-9') || '-'),
+  'cosmetics.js: ' + (stampFor('/cosmetics.js') || '-'),
   'skincare-refresh.css: ' + (stampFor('/skincare-refresh.css') || '-'),
-  'coffee-jolka-app.js: ' + (stampFor('/coffee-jolka-app.js?v=20261014-final-audit-9') || '-'),
+  'coffee-jolka-app.js: ' + (stampFor('/coffee-jolka-app.js') || '-'),
   'coffee-refresh.css: ' + (stampFor('/coffee-refresh.css') || '-'),
   ''
 ].join('\n');

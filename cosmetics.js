@@ -226,16 +226,20 @@
 
   function messageBody(text) {
     const linkedProducts=brand.catalogue || (slug==='modrapupava'?brand.products:null);
-    if(!linkedProducts)return esc(text);
+    // Lines stay lines; the shop's own pages (shipping, terms) open as links too.
+    const host=(u)=>{try{return new URL(u).hostname.replace(/^www\./,'');}catch(_){return '';}};
+    const shop=host((linkedProducts||[]).find(p=>p.url)?.url||brand.website||brand.url||'');
+    const lines=(value)=>esc(value).replace(/\n/g,'<br>');
     let cursor=0,html='';
     for(const match of text.matchAll(/https?:\/\/[^\s]+/g)) {
       const url=match[0].replace(/[.,;]+$/,'');
-      html+=esc(text.slice(cursor,match.index));
-      const known=linkedProducts.some(p=>p.url===url);
-      html+=known?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Pozrieť produkt v e-shope ↗</a>${esc(match[0].slice(url.length))}`:esc(match[0]);
+      html+=lines(text.slice(cursor,match.index));
+      const known=(linkedProducts||[]).some(p=>p.url===url);
+      const own=!known&&shop&&host(url).endsWith(shop.split('.').slice(-2).join('.'));
+      html+=known?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Pozrieť produkt v e-shope ↗</a>${esc(match[0].slice(url.length))}`:own?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Otvoriť stránku e-shopu ↗</a>${esc(match[0].slice(url.length))}`:esc(match[0]);
       cursor=match.index+match[0].length;
     }
-    return html+esc(text.slice(cursor));
+    return html+lines(text.slice(cursor));
   }
 
   function messageText(message){const text=esc(message.text).replace(/\n/g,'<br>');if(message.role!=='assistant')return text;const urls=new Set((brand.catalogue||brand.products||[]).map(p=>esc(p.url)));for(const url of [brand.website,brand.url])if(url)urls.add(esc(url));return text.replace(/https?:\/\/[^\s<>]+/g,value=>{let url=value;if(!urls.has(url))url=url.replace(/[.,;]+$/,'');return urls.has(url)?'<a href="'+url+'" target="_blank" rel="noopener noreferrer">Pozrieť v e-shope ↗</a>'+value.slice(url.length):value;});}
@@ -284,6 +288,15 @@
     return `Z ponuky ${brand.name} je dobrý začiatok ${brand.products[0].name}. Napíšte, ako sa pleť správa a čo chcete riešiť, alebo prejdite štyri krátke kroky vo Výbere — vyberiem jeden konkrétny produkt aj s dôvodom.`;
   }
 
+  function localReply(clean,history) {
+    try {
+      const brain=globalThis.CXChatBrain, catalogue=(globalThis.CX_CATALOGUES||{})[slug];
+      if(!brain||!catalogue?.products?.length||!globalThis.CXAdvisorCore)return null;
+      state.chatAdapter=state.chatAdapter||brain.adapters.cosmetics(catalogue,{family:'cosmetics'});
+      return brain.reply(state.chatAdapter,clean,history)||null;
+    } catch (_) { return null; }
+  }
+
   async function send(text) {
     const clean = String(text||'').trim().slice(0,500);
     if (!clean || state.busy) return;
@@ -296,14 +309,17 @@
     state.messages.push(answer);
     renderChat();
     // Keep the pending bubble neutral until a canonical response arrives.
+    // The pending bubble is not part of the conversation.
+    const history = state.messages.filter((m)=>m!==answer).map((m)=>({role:m.role,content:m.text}));
     const abort = new AbortController();
     const timer = setTimeout(() => abort.abort(), 12000);
     try {
-      const response = await fetch('/api/cosmetics-chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({demoId:slug,messages:state.messages.slice(-8).map((m)=>({role:m.role,content:m.text}))}),signal:abort.signal});
+      const response = await fetch('/api/cosmetics-chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({demoId:slug,messages:history.slice(-8)}),signal:abort.signal});
       if (response.ok) { const payload=await response.json(); if(String(payload.reply||'').trim()){answer.text=String(payload.reply).trim();replied=true;} }
     } catch (_) {} finally { clearTimeout(timer); }
     if(generation!==(state.generation||0))return;
-    if(!replied)answer.text=globalThis.CXCatalogueReplyCore?.(globalThis.CX_CATALOGUES||{},slug,clean,state.messages.map(m=>({role:m.role,content:m.text})))||(document.documentElement.lang==='cs'?'Odpověď se nyní nepodařilo načíst. Nabídku můžete projít ve Výběru.':'Odpoveď sa teraz nepodarilo načítať. Ponuku môžete prejsť vo Výbere.');
+    // Without the server (a static host), the same conversation rules answer in the browser.
+    if(!replied)answer.text=localReply(clean,history)||globalThis.CXCatalogueReplyCore?.(globalThis.CX_CATALOGUES||{},slug,clean,history)||(document.documentElement.lang==='cs'?'Odpověď se nyní nepodařilo načíst. Nabídku můžete projít ve Výběru.':'Odpoveď sa teraz nepodarilo načítať. Ponuku môžete prejsť vo Výbere.');
     state.busy = false;
     renderChat();
   }
