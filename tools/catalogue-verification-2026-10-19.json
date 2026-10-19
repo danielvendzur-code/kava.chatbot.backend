@@ -1,0 +1,986 @@
+{
+  "checkedAt": "2026-10-19",
+  "scope": "Mylo official product pages; prices include tax; variation IDs checked against exact URL attributes",
+  "products": [
+    {
+      "id": "refresh-1cd328259b66ce",
+      "name": "Ľanová kozmetická taška TÔŇA",
+      "url": "https://www.mylo.sk/doplnky/lanova-kozmeticka-taska-tona/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:01.574Z",
+      "displayedPrice": "25,00 € s DPH",
+      "variants": [],
+      "attributes": ""
+    },
+    {
+      "id": "refresh-d46f4b4ac1ef17",
+      "name": "Mydlovnička",
+      "url": "https://www.mylo.sk/doplnky/mydlovnicka/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:01.777Z",
+      "displayedPrice": "18,00 € Pôvodná cena bola: 18,00 €. 15,00 € Aktuálna cena je: 15,00 €. s DPH",
+      "variants": [],
+      "attributes": ""
+    },
+    {
+      "id": "refresh-3c0d890fe7f13a",
+      "name": "Ochranný krém pre športovkyne a športovcov VÉLO",
+      "url": "https://www.mylo.sk/pre-sportovcov/ochranny-krem-pre-sportovkyne-a-sportovcov-velo/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:01.779Z",
+      "displayedPrice": "19,51 € s DPH",
+      "variants": [],
+      "attributes": "size 100ml"
+    },
+    {
+      "id": "refresh-6a41f164dbd0d4",
+      "name": "LIPOVÉ MYDLO",
+      "url": "https://www.mylo.sk/lipova-kozmetika/lipove-mydlo/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:01.997Z",
+      "displayedPrice": "10,90 € s DPH",
+      "variants": [],
+      "attributes": "Objem 100g"
+    },
+    {
+      "id": "refresh-e1d069674513a7",
+      "name": "LIPOVÝ BALZAM",
+      "url": "https://www.mylo.sk/lipova-kozmetika/lipovy-balzam/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:02.189Z",
+      "displayedPrice": "13,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 5ml"
+    },
+    {
+      "id": "refresh-8557741a3fb1e0",
+      "name": "LIPOVÁ VODA",
+      "url": "https://www.mylo.sk/lipova-kozmetika/lipova-voda/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:02.390Z",
+      "displayedPrice": "20,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 100ml Typ pleti normálna až mastná, problematická pleť so sklonom k akné, suchá a citlivá, suchá pleť, všetky typy pleti, zmiešaná, T-zóna, zrelá pleť"
+    },
+    {
+      "id": "refresh-242ada882758c9",
+      "name": "Ceramidový krém s vitamínmi RADOSŤ",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/ceramidovy-krem-s-vitaminmi-radost/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:02.392Z",
+      "displayedPrice": "14,75 € s DPH",
+      "variants": [],
+      "attributes": "Objem 30ml Typ pleti dehydrovaná pleť, mdlá a unavená, všetky typy pleti"
+    },
+    {
+      "id": "refresh-f4d6189542c202",
+      "name": "Čistiaci gél HARMÓNIA",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/harmonia/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:02.589Z",
+      "displayedPrice": "18,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 100ml Typ pleti mastná pleť, normálna až mastná, problematická pleť so sklonom k akné"
+    },
+    {
+      "id": "refresh-9198d75fa91a3e",
+      "name": "Set na tvárovú masáž",
+      "url": "https://www.mylo.sk/zvyhodnene-sety-a-darcekove-poukazky/tvarova-masaz/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:02.815Z",
+      "displayedPrice": "41,00 € s DPH",
+      "variants": [
+        {
+          "id": "3932",
+          "attributes": {
+            "attribute_pa_dizajn-krabicky": "modra"
+          },
+          "price": 41,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "3933",
+          "attributes": {
+            "attribute_pa_dizajn-krabicky": "zelena"
+          },
+          "price": 41,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "3931",
+          "attributes": {
+            "attribute_pa_dizajn-krabicky": "hneda"
+          },
+          "price": 41,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Dizajn krabičky Hnedá, Modrá, Zelená"
+    },
+    {
+      "id": "refresh-cde93a3d091093",
+      "name": "Set na starostlivosť o problematickú, mastnú, aknóznu pleť a upchaté póry",
+      "url": "https://www.mylo.sk/zvyhodnene-sety-a-darcekove-poukazky/set-na-starostlivost-o-problematicku-plet/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:03.046Z",
+      "displayedPrice": "47,00 € s DPH",
+      "variants": [
+        {
+          "id": "3873",
+          "attributes": {
+            "attribute_pa_dizajn-krabicky": "zelena"
+          },
+          "price": 47,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "3870",
+          "attributes": {
+            "attribute_pa_dizajn-krabicky": "hneda"
+          },
+          "price": 47,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "3872",
+          "attributes": {
+            "attribute_pa_dizajn-krabicky": "modra"
+          },
+          "price": 47,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Dizajn krabičky Hnedá, Modrá, Zelená Typ pleti mastná pleť, problematická pleť so sklonom k akné"
+    },
+    {
+      "id": "refresh-1e87d5388094c3",
+      "name": "Set na starostlivosť o očné okolie",
+      "url": "https://www.mylo.sk/zvyhodnene-sety-a-darcekove-poukazky/set-na-starostlivost-o-ocne-okolie/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:03.048Z",
+      "displayedPrice": "44,00 € s DPH",
+      "variants": [
+        {
+          "id": "3861",
+          "attributes": {
+            "attribute_pa_dizajn-krabicky": "modra"
+          },
+          "price": 44,
+          "available": false,
+          "active": true
+        },
+        {
+          "id": "3864",
+          "attributes": {
+            "attribute_pa_dizajn-krabicky": "zelena"
+          },
+          "price": 44,
+          "available": false,
+          "active": true
+        },
+        {
+          "id": "3858",
+          "attributes": {
+            "attribute_pa_dizajn-krabicky": "hneda"
+          },
+          "price": 44,
+          "available": false,
+          "active": true
+        }
+      ],
+      "attributes": "Dizajn krabičky Hnedá, Modrá, Zelená"
+    },
+    {
+      "id": "refresh-82f6246b2c412e",
+      "name": "Očný krém RUŽA A ČEREŠŇA",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/ruza-a-ceresna/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:03.231Z",
+      "displayedPrice": "13,00 € &ndash; 34,00 € Price range: 13,00 € through 34,00 € s DPH",
+      "variants": [
+        {
+          "id": "3601",
+          "attributes": {
+            "attribute_pa_objem": "10ml"
+          },
+          "price": 13,
+          "available": false,
+          "active": true
+        },
+        {
+          "id": "3602",
+          "attributes": {
+            "attribute_pa_objem": "30ml"
+          },
+          "price": 34,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 10ml, 30ml Typ pleti dehydrovaná pleť, mdlá a unavená, normálna až mastná, problematická pleť so sklonom k akné, suchá pleť, zmiešaná, T-zóna, zrelá pleť"
+    },
+    {
+      "id": "refresh-a29ccf6d65a604",
+      "name": "Mydlá v darčekovej krabičke (váš výber)",
+      "url": "https://www.mylo.sk/starostlivost-o-telo/mydla-v-darcekovej-krabicke/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:03.234Z",
+      "displayedPrice": "15,00 € s DPH",
+      "variants": [
+        {
+          "id": "2782",
+          "attributes": {
+            "attribute_1-mydlo": "",
+            "attribute_2-mydlo": "",
+            "attribute_3-mydlo": ""
+          },
+          "price": 15,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": ""
+    },
+    {
+      "id": "refresh-516f389e9239d9",
+      "name": "Miska na masku a maska LÁVA",
+      "url": "https://www.mylo.sk/doplnky/miska-a-lava/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:03.448Z",
+      "displayedPrice": "31,00 € s DPH",
+      "variants": [],
+      "attributes": ""
+    },
+    {
+      "id": "refresh-5e945b1ab79406",
+      "name": "Ílové mydlo CÉDROVÁ RUŽA (bezobalové)",
+      "url": "https://www.mylo.sk/starostlivost-o-telo/cedrova-ruza/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:03.662Z",
+      "displayedPrice": "5,90 € s DPH",
+      "variants": [],
+      "attributes": "Objem 100g Obal Bez obalu"
+    },
+    {
+      "id": "refresh-d907dad5bbe9d6",
+      "name": "Pílingové mydlo ŽIENKA DOMÁCA (bezobalové)",
+      "url": "https://www.mylo.sk/starostlivost-o-telo/zienka-domaca/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:03.879Z",
+      "displayedPrice": "5,90 € s DPH",
+      "variants": [],
+      "attributes": "Objem 100g Obal Bez obalu"
+    },
+    {
+      "id": "refresh-8892006934c0dc",
+      "name": "Mydlo pre psíka DVE MALÉ BLCHY",
+      "url": "https://www.mylo.sk/kozmetika-pre-psov/dve-male-blchy/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:03.881Z",
+      "displayedPrice": "6,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 100g"
+    },
+    {
+      "id": "refresh-08b6a50f4cf4b0",
+      "name": "Odličovací gél HERBÁRIUM",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/prirodny-odlicovac/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:04.083Z",
+      "displayedPrice": "27,00 € &ndash; 28,00 € Price range: 27,00 € through 28,00 € s DPH",
+      "variants": [
+        {
+          "id": "7160",
+          "attributes": {
+            "attribute_pa_obal": "nahradne-balenie-bez-pumpicky"
+          },
+          "price": 27,
+          "available": false,
+          "active": true
+        },
+        {
+          "id": "7161",
+          "attributes": {
+            "attribute_pa_obal": "s-pumpickou"
+          },
+          "price": 28,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 150ml Typ pleti všetky typy pleti Obal Náhradné balenie bez pumpičky, S pumpičkou"
+    },
+    {
+      "id": "refresh-7932dbe52210ee",
+      "name": "Tuhý prírodný dezodorant MÄTOVÁ FIALKA",
+      "url": "https://www.mylo.sk/starostlivost-o-telo/matova-fialka/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:04.294Z",
+      "displayedPrice": "12,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 40g"
+    },
+    {
+      "id": "refresh-226504028bede9",
+      "name": "Olej na bradu TARAS BUĽBA",
+      "url": "https://www.mylo.sk/panska-kozmetika/taras-bulba/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:04.491Z",
+      "displayedPrice": "12,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 30ml"
+    },
+    {
+      "id": "refresh-e1db40febdebcb",
+      "name": "Ochranný pleťový olej AVA+",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/ava-plus/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:09.144Z",
+      "displayedPrice": "2,93 € &ndash; 26,34 € Price range: 2,93 € through 26,34 € s DPH",
+      "variants": [
+        {
+          "id": "968",
+          "attributes": {
+            "attribute_pa_objem": "2ml"
+          },
+          "price": 2.93,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "969",
+          "attributes": {
+            "attribute_pa_objem": "30ml"
+          },
+          "price": 26.34,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 2ml, 30ml Typ pleti všetky typy pleti"
+    },
+    {
+      "id": "refresh-b54e9b155ed381",
+      "name": "Hydratačné sérum INOVAŤ",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/inovat/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:09.333Z",
+      "displayedPrice": "19,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 20ml Typ pleti mastná pleť, problematická pleť so sklonom k akné, zmiešaná, T-zóna"
+    },
+    {
+      "id": "refresh-528236a91512e5",
+      "name": "Balzam na bradu KAPITÁN",
+      "url": "https://www.mylo.sk/panska-kozmetika/kapitan-balzam/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:09.509Z",
+      "displayedPrice": "11,41 € s DPH",
+      "variants": [],
+      "attributes": "Objem 30ml"
+    },
+    {
+      "id": "refresh-22126eed78ed9e",
+      "name": "Protizápalový pleťový olej OLIVÍN",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/olivin/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:09.728Z",
+      "displayedPrice": "2,90 € &ndash; 13,50 € Price range: 2,90 € through 13,50 € s DPH",
+      "variants": [
+        {
+          "id": "872",
+          "attributes": {
+            "attribute_pa_objem": "15ml"
+          },
+          "price": 13.5,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "873",
+          "attributes": {
+            "attribute_pa_objem": "2ml"
+          },
+          "price": 2.9,
+          "available": false,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 15ml, 2ml Typ pleti mastná pleť, problematická pleť so sklonom k akné, zrelá pleť"
+    },
+    {
+      "id": "refresh-7ee3cca8a68a3e",
+      "name": "Pleťový olej SVIEŽOSŤ",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/sviezost/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:09.930Z",
+      "displayedPrice": "2,90 € &ndash; 15,00 € Price range: 2,90 € through 15,00 € s DPH",
+      "variants": [
+        {
+          "id": "843",
+          "attributes": {
+            "attribute_pa_objem": "15ml"
+          },
+          "price": 15,
+          "available": false,
+          "active": true
+        },
+        {
+          "id": "844",
+          "attributes": {
+            "attribute_pa_objem": "2ml"
+          },
+          "price": 2.9,
+          "available": false,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 15ml, 2ml Typ pleti dehydrovaná pleť, všetky typy pleti, zrelá pleť"
+    },
+    {
+      "id": "refresh-6fa6de04ad223f",
+      "name": "Pleťový krém RUŽA A GRANÁTOVÉ JABLKO",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/ruza-a-granatove-jablko/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:09.932Z",
+      "displayedPrice": "3,22 € &ndash; 26,34 € Price range: 3,22 € through 26,34 € s DPH",
+      "variants": [
+        {
+          "id": "3733",
+          "attributes": {
+            "attribute_pa_objem": "50ml"
+          },
+          "price": 26.34,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "3732",
+          "attributes": {
+            "attribute_pa_objem": "5-ml"
+          },
+          "price": 3.22,
+          "available": false,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 5 ml, 50ml Typ pleti citlivá, dehydrovaná pleť, mdlá a unavená, suchá pleť"
+    },
+    {
+      "id": "refresh-b3e81dc62f4e53",
+      "name": "Olej na bradu KAPITÁN",
+      "url": "https://www.mylo.sk/panska-kozmetika/kapitan/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:10.104Z",
+      "displayedPrice": "2,50 € &ndash; 12,00 € Price range: 2,50 € through 12,00 € s DPH",
+      "variants": [
+        {
+          "id": "756",
+          "attributes": {
+            "attribute_pa_objem": "2ml"
+          },
+          "price": 2.5,
+          "available": false,
+          "active": true
+        },
+        {
+          "id": "757",
+          "attributes": {
+            "attribute_pa_objem": "30ml"
+          },
+          "price": 12,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 2ml, 30ml"
+    },
+    {
+      "id": "refresh-27e80172e1f236",
+      "name": "Olej na bradu LOKTIBRADA",
+      "url": "https://www.mylo.sk/panska-kozmetika/loktibrada/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:10.323Z",
+      "displayedPrice": "2,44 € &ndash; 11,71 € Price range: 2,44 € through 11,71 € s DPH",
+      "variants": [
+        {
+          "id": "749",
+          "attributes": {
+            "attribute_pa_objem": "2ml"
+          },
+          "price": 2.44,
+          "available": false,
+          "active": true
+        },
+        {
+          "id": "750",
+          "attributes": {
+            "attribute_pa_objem": "30ml"
+          },
+          "price": 11.71,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 2ml, 30ml"
+    },
+    {
+      "id": "refresh-144a7f65955efc",
+      "name": "Pleťový olej na mastnú a aknóznu pleť AKO VÁNOK",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/ako-vanok/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:10.547Z",
+      "displayedPrice": "2,50 € &ndash; 25,50 € Price range: 2,50 € through 25,50 € s DPH",
+      "variants": [
+        {
+          "id": "697",
+          "attributes": {
+            "attribute_pa_objem": "15ml"
+          },
+          "price": 12,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "698",
+          "attributes": {
+            "attribute_pa_objem": "2ml"
+          },
+          "price": 2.5,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "699",
+          "attributes": {
+            "attribute_pa_objem": "50ml"
+          },
+          "price": 25.5,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 15ml, 2ml, 50ml Typ pleti mastná pleť, problematická pleť so sklonom k akné"
+    },
+    {
+      "id": "refresh-71a18918b6b0a6",
+      "name": "Krém z bambuckého masla OH LA LA!",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/oh-la-la/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:10.728Z",
+      "displayedPrice": "9,50 € &ndash; 25,50 € Price range: 9,50 € through 25,50 € s DPH",
+      "variants": [
+        {
+          "id": "688",
+          "attributes": {
+            "attribute_pa_objem": "200ml"
+          },
+          "price": 25.5,
+          "available": false,
+          "active": true
+        },
+        {
+          "id": "689",
+          "attributes": {
+            "attribute_pa_objem": "60ml"
+          },
+          "price": 9.5,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 200ml, 60ml Typ pleti suchá pleť, všetky typy pleti"
+    },
+    {
+      "id": "refresh-03aa7bac7e582c",
+      "name": "Tuhý šampón VIETOR",
+      "url": "https://www.mylo.sk/starostlivost-o-vlasy/tuhy-sampon/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:10.922Z",
+      "displayedPrice": "10,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 60g"
+    },
+    {
+      "id": "refresh-fb78b94f2e3329",
+      "name": "Tuhý šampón VLNY_bez obalu",
+      "url": "https://www.mylo.sk/starostlivost-o-vlasy/vlny/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:11.113Z",
+      "displayedPrice": "10,00 € s DPH",
+      "variants": [],
+      "attributes": "Typ vlasov Farbené, Suché a poškodené, Vlnité Objem 60g"
+    },
+    {
+      "id": "refresh-d67d6fbb818c9e",
+      "name": "Pleťový olej PREBUDENIE",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/prebudenie/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:11.298Z",
+      "displayedPrice": "2,50 € &ndash; 24,00 € Price range: 2,50 € through 24,00 € s DPH",
+      "variants": [
+        {
+          "id": "574",
+          "attributes": {
+            "attribute_pa_objem": "50ml"
+          },
+          "price": 24,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "572",
+          "attributes": {
+            "attribute_pa_objem": "15ml"
+          },
+          "price": 12,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "573",
+          "attributes": {
+            "attribute_pa_objem": "2ml"
+          },
+          "price": 2.5,
+          "available": false,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 15ml, 2ml, 50ml Typ pleti dehydrovaná pleť, mdlá a unavená, zmiešaná, T-zóna"
+    },
+    {
+      "id": "refresh-4b10f43be285d4",
+      "name": "Pleťový olej FLÓRA",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/flora/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:11.462Z",
+      "displayedPrice": "2,50 € &ndash; 24,00 € Price range: 2,50 € through 24,00 € s DPH",
+      "variants": [
+        {
+          "id": "546",
+          "attributes": {
+            "attribute_pa_objem": "50ml"
+          },
+          "price": 24,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "544",
+          "attributes": {
+            "attribute_pa_objem": "15ml"
+          },
+          "price": 12,
+          "available": false,
+          "active": true
+        },
+        {
+          "id": "545",
+          "attributes": {
+            "attribute_pa_objem": "2ml"
+          },
+          "price": 2.5,
+          "available": false,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 15ml, 2ml, 50ml Typ pleti citlivá, suchá pleť"
+    },
+    {
+      "id": "refresh-301f33d3f6a004",
+      "name": "Čistiaca maska na mastnú pleť LÁVA",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/lava/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:11.664Z",
+      "displayedPrice": "16,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 50g Typ pleti mastná pleť, problematická pleť so sklonom k akné, zmiešaná, T-zóna"
+    },
+    {
+      "id": "refresh-0512527c594e0c",
+      "name": "Som tvoj",
+      "url": "https://www.mylo.sk/zvyhodnene-sety-a-darcekove-poukazky/som-tvoj/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:11.832Z",
+      "displayedPrice": "19,51 € s DPH",
+      "variants": [],
+      "attributes": ""
+    },
+    {
+      "id": "refresh-d5beed750e05b3",
+      "name": "Prírodný detský balzam na zapareniny LUNA",
+      "url": "https://www.mylo.sk/detska-kozmetika/luna/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:12.003Z",
+      "displayedPrice": "11,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 30ml"
+    },
+    {
+      "id": "refresh-d7cd8944d32988",
+      "name": "Krém pre psíka NA LABKY",
+      "url": "https://www.mylo.sk/kozmetika-pre-psov/na-labky/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:12.186Z",
+      "displayedPrice": "6,50 € s DPH",
+      "variants": [],
+      "attributes": "Objem 60ml"
+    },
+    {
+      "id": "refresh-1e3359016fcb48",
+      "name": "Krém na nohy NOHY BOSÉ",
+      "url": "https://www.mylo.sk/starostlivost-o-telo/nohy-bose/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:12.393Z",
+      "displayedPrice": "12,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 60ml"
+    },
+    {
+      "id": "refresh-8491952ea62111",
+      "name": "Krém z bambuckého masla TROJRUŽA",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/trojruza-2/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:12.575Z",
+      "displayedPrice": "9,50 € s DPH",
+      "variants": [],
+      "attributes": "Objem 60ml Typ pleti citlivá, dehydrovaná pleť, suchá pleť"
+    },
+    {
+      "id": "refresh-437d31bdb783d7",
+      "name": "Balzam na bradu ŠUHAJ",
+      "url": "https://www.mylo.sk/panska-kozmetika/suhaj/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:12.760Z",
+      "displayedPrice": "13,50 € s DPH",
+      "variants": [],
+      "attributes": "Objem 30ml"
+    },
+    {
+      "id": "refresh-7160f730d708bf",
+      "name": "Očné sérum s kofeínom AURA",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/aura/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:12.931Z",
+      "displayedPrice": "18,54 € s DPH",
+      "variants": [],
+      "attributes": "Objem 20ml Typ pleti citlivá, mastná pleť, problematická pleť so sklonom k akné, suchá pleť, všetky typy pleti, zmiešaná, T-zóna, zrelá pleť"
+    },
+    {
+      "id": "refresh-2da7a28358eec0",
+      "name": "Intímny umývací gél LADA",
+      "url": "https://www.mylo.sk/starostlivost-o-telo/lada/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:12.933Z",
+      "displayedPrice": "24,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 150ml"
+    },
+    {
+      "id": "refresh-0f64c7b2441a3a",
+      "name": "Masážny olej NEŽNOSŤ",
+      "url": "https://www.mylo.sk/starostlivost-o-telo/neznost/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:13.104Z",
+      "displayedPrice": "14,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 50ml"
+    },
+    {
+      "id": "refresh-c64c0434b9a494",
+      "name": "Prírodný dezodorant OSVIEŽENIE",
+      "url": "https://www.mylo.sk/starostlivost-o-telo/osviezenie/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:13.105Z",
+      "displayedPrice": "18,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 50ml"
+    },
+    {
+      "id": "refresh-6b1a74c40e6fc6",
+      "name": "Pleťová voda KVETOVÁ ROSA",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/kvetova-rosa/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:13.316Z",
+      "displayedPrice": "21,47 € s DPH",
+      "variants": [],
+      "attributes": "Objem 100ml Typ pleti citlivá, suchá pleť, všetky typy pleti, zrelá pleť"
+    },
+    {
+      "id": "refresh-d13758f9987aa9",
+      "name": "Odličovací olej BOTANIKA",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/botanika/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:13.501Z",
+      "displayedPrice": "20,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 100ml Typ pleti dehydrovaná pleť, suchá pleť, zrelá pleť"
+    },
+    {
+      "id": "refresh-5b24479275c055",
+      "name": "Čistiace a odličovacie mlieko MOISSANIT",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/moissanit/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:13.689Z",
+      "displayedPrice": "20,00 € s DPH",
+      "variants": [],
+      "attributes": "Objem 200ml Typ pleti citlivá, dehydrovaná pleť, mdlá a unavená, problematická pleť so sklonom k akné, všetky typy pleti, zmiešaná, T-zóna, zrelá pleť"
+    },
+    {
+      "id": "refresh-88548d0ed030d3",
+      "name": "Pílingové mydlo LEVANDUĽOVÁ VANILKA",
+      "url": "https://www.mylo.sk/starostlivost-o-telo/levandulova-vanilka/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:13.874Z",
+      "displayedPrice": "6,34 € &ndash; 7,02 € Price range: 6,34 € through 7,02 € s DPH",
+      "variants": [
+        {
+          "id": "683",
+          "attributes": {
+            "attribute_pa_obal": "bez-obalu"
+          },
+          "price": 6.34,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "684",
+          "attributes": {
+            "attribute_pa_obal": "recyklovany-papier"
+          },
+          "price": 7.02,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 100g Obal Bez obalu, Recyklovaný papier"
+    },
+    {
+      "id": "refresh-09464a14ce4e22",
+      "name": "Soľné mydlo SOĽ NAD ZLATO",
+      "url": "https://www.mylo.sk/starostlivost-o-telo/sol-nad-zlato/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:14.073Z",
+      "displayedPrice": "5,36 € &ndash; 6,34 € Price range: 5,36 € through 6,34 € s DPH",
+      "variants": [
+        {
+          "id": "736",
+          "attributes": {
+            "attribute_pa_obal": "bez-obalu"
+          },
+          "price": 5.36,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "737",
+          "attributes": {
+            "attribute_pa_obal": "recyklovany-papier"
+          },
+          "price": 6.34,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 100g Obal Bez obalu, Recyklovaný papier"
+    },
+    {
+      "id": "refresh-b74a1ff2600a1d",
+      "name": "Mydlo na citlivú pokožku AVOKÁDOVÁ OLIVA",
+      "url": "https://www.mylo.sk/starostlivost-o-telo/avokadova-oliva/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:14.075Z",
+      "displayedPrice": "5,00 € &ndash; 5,90 € Price range: 5,00 € through 5,90 € s DPH",
+      "variants": [
+        {
+          "id": "744",
+          "attributes": {
+            "attribute_pa_obal": "recyklovany-papier"
+          },
+          "price": 5.9,
+          "available": true,
+          "active": true
+        },
+        {
+          "id": "745",
+          "attributes": {
+            "attribute_pa_obal": "bez-obalu"
+          },
+          "price": 5,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 100g Typ pleti citlivá Obal Bez obalu, Recyklovaný papier"
+    },
+    {
+      "id": "refresh-0e332c57540930",
+      "name": "Nechtíkové mydlo na suchú pokožku SLNKO V SIETI",
+      "url": "https://www.mylo.sk/starostlivost-o-telo/slnko-v-sieti/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:14.296Z",
+      "displayedPrice": "5,00 € &ndash; 5,90 € Price range: 5,00 € through 5,90 € s DPH",
+      "variants": [
+        {
+          "id": "742",
+          "attributes": {
+            "attribute_pa_obal": "recyklovany-papier"
+          },
+          "price": 5.9,
+          "available": false,
+          "active": true
+        },
+        {
+          "id": "743",
+          "attributes": {
+            "attribute_pa_obal": "bez-obalu"
+          },
+          "price": 5,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 100g Obal Bez obalu, Recyklovaný papier Typ pleti citlivá, suchá pleť"
+    },
+    {
+      "id": "refresh-e0a27bc4594bb3",
+      "name": "Uhlíkové mydlo na mastnú pleť a akné ČIERNA OVCA",
+      "url": "https://www.mylo.sk/starostlivost-o-tvar/cierna-ovca/",
+      "status": 200,
+      "checkedAt": "2026-10-19T06:51:14.298Z",
+      "displayedPrice": "5,00 € &ndash; 5,90 € Price range: 5,00 € through 5,90 € s DPH",
+      "variants": [
+        {
+          "id": "738",
+          "attributes": {
+            "attribute_pa_obal": "recyklovany-papier"
+          },
+          "price": 5.9,
+          "available": false,
+          "active": true
+        },
+        {
+          "id": "739",
+          "attributes": {
+            "attribute_pa_obal": "bez-obalu"
+          },
+          "price": 5,
+          "available": true,
+          "active": true
+        }
+      ],
+      "attributes": "Objem 100g Obal Bez obalu, Recyklovaný papier Typ pleti mastná pleť, problematická pleť so sklonom k akné"
+    }
+  ],
+  "limitations": [
+    "Availability changes use the exact stock paragraph or variation stock, not price CSS classes.",
+    "This is not completion of the full 152-brand catalogue audit."
+  ]
+}

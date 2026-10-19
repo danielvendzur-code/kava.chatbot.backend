@@ -131,3 +131,11 @@ Playwright v dostupnom vstavanom prehliadači s blokovaním /api/*: jedna úpln�
 - [Vercel – mojchatbot-vino](https://vercel.com/danielvendzur-codes-projects/mojchatbot-vino/CrRro9gCWvh1SWAskiuAaKnYFvtE): success.
 - [Vercel – mojchatbot-vino-nove](https://vercel.com/danielvendzur-codes-projects/mojchatbot-vino-nove/HhEG8haNwe1WCY4xWui6P2XZziCS): success.
 - [Vercel – mojchatbot-caj](https://vercel.com/danielvendzur-codes-projects/mojchatbot-caj/Gehn8bkepk2YqmGRwa7bvpvvqKTS): success.
+
+## Pokračovanie (19. 10. 2026)
+
+53 produktov Mylo priamo overených; 22 záznamov opravených, dátumy pri produktoch, nové nástroje na úplné logické cesty poradcu. Regresie 11312/11312 a mock 928/928, PASS API. Podrobnosti: tools/overenie-2026-10-19.md. Aktuálna rastlinná matica odhalila rozdiel oproti historickému katalógu; jej nálezy a vizuálne kontroly sa ešte dokončujú.
+
+### Záväzné pravidlo nákladov od majiteľa
+
+Na moje testy nepoužívať Sonnet, iba Haiku. Uprednostniť lokálne pravidlá a mocky bez siete. Platené živé kontroly iba v minimálnej vzorke s vopred stanoveným počtom požiadaviek a na nasadení s potvrdeným Haiku. Preview CHAT_MODEL bol nastavený; existujúce Preview sa nesmie považovať za prepnuté bez nového nasadenia.
