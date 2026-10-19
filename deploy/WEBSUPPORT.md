@@ -115,5 +115,26 @@ WebAdmine a v GitHube. Čo zostáva urobiť mne.
 3. Actions → *Deploy demos to Websupport* → *Run workflow*:
    najprv `dry-run`, potom `upload`. Výsledok je v súhrne behu.
 
-AI chat (`/api/chat`) na Websupporte nebeží. Chat odpovedá pripravenými
-odpoveďami z katalógu každej ukážky.
+## Aktuálny balík (19. 10. 2026)
+
+Balík sa zostaví cez `node deploy/build-websupport.mjs` a overí cez
+`node tools/websupport-release-check.mjs`. Obsahuje iba sledované verejné
+súbory, bez serverového kódu, testov, tools a prostredia s kľúčmi.
+`websupport-release.json` eviduje zdrojový commit a SHA-256 každého súboru.
+
+Stránky a poradca sú statické a bežia na Websupporte. Pravidlo `.htaccess`
+presmeruje iba `/api/chat` a `/api/cosmetics-chat` stavom 307 na overené
+nemenné Preview `kava-chatbot-backend-cq4duhomz-danielvendzur-codes-projects.vercel.app`.
+Zachová sa POST telo a existujúca CORS kontrola povoľuje pôvodné subdomény
+mojchatbot.sk. Backend tohto nasadenia používa lacnejšie nastavenie potvrdené
+pred jeho zostavením. Kľúč zostáva na Verceli; v balíku nie je tajomstvo.
+Staré tvrdenie o výlučne pripravených odpovediach na Websupporte preto už
+neopisuje tento balík. Pri budúcej aktualizácii backendu treba spoločne
+zmeniť a otestovať pripnutý cieľ aj statické súbory.
+
+Pred zmenou DNS musí byť balík nahratý do samostatného priečinka kávových
+ukážok, overené HTTPS, verzia a súbory, a zachytené pôvodné DNS pre návrat.
+Zmena zahŕňa iba schválené kávové subdomény; hlavná doména, www, pošta
+a ukážky ostatných rodín sa pri tomto kroku nemenia. Žiadne platené modelové
+testy pri zostavovaní. Živý chat overiť až na pripravenom hostingu s malým
+výslovným limitom požiadaviek.

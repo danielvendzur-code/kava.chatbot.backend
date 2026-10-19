@@ -139,3 +139,27 @@ Playwright v dostupnom vstavanom prehliadači s blokovaním /api/*: jedna úpln�
 ### Záväzné pravidlo nákladov od majiteľa
 
 Na moje testy nepoužívať Sonnet, iba Haiku. Uprednostniť lokálne pravidlá a mocky bez siete. Platené živé kontroly iba v minimálnej vzorke s vopred stanoveným počtom požiadaviek a na nasadení s potvrdeným Haiku. Preview CHAT_MODEL bol nastavený; existujúce Preview sa nesmie považovať za prepnuté bez nového nasadenia.
+
+## Websupport: pripravený balík, hosting chýba (19. 10. 2026)
+
+Majiteľ po kontrole kávových Preview schválil skutočný presun na Websupport.
+Pre tento krok je pripravený statický balík 22 kávových ukážok, pôvodné adresy
+majú zostať zachované. Hlavná doména, www, pošta a ostatné rodiny sa nemenia.
+Presun ešte nebol vykonaný: v prihlásenej karte majiteľa Websupport uvádza
+mojchatbot.sk ako „Nepripojená k Hostingu“. V zozname služieb sú iba doména
+a Biznis Mail. Chýba webhosting, FTP prístup aj cieľ nahrávania. Žiadna služba
+sa nekúpila a DNS sa nemenilo.
+
+Pridaný kontrolovaný builder deploy/build-websupport.mjs a kontrola
+tools/websupport-release-check.mjs: 1 879 súborov, 22 stránok a 518 lokálnych
+referencií PASS. Súkromné prostredie, serverový kód, tools a testy sú vylúčené.
+.htaccess posiela iba dve existujúce chatové cesty na overený nemenný backend
+stavom 307, takže POST telo ostáva zachované. Pripravené odpovede a výber
+ostávajú aj pri výpadku siete; funkčné AI ostáva na existujúcom backende.
+
+Pred uložením zmien: regresie 3 918/3 918 bez straty oproti baseline, mock
+328/328, PASS API, syntax a stamp-assets --check. Sieťové overenie oboch
+chatových endpointov použilo iba OPTIONS a prázdne messages: 204 a očakávané
+400 Missing user message, korektné CORS pre pôvodné adresy. Nula platených
+modelových volaní. Pred prepnutím DNS treba overiť balík a HTTPS na cieľovom
+hostingu a uložiť pôvodné záznamy pre návrat.

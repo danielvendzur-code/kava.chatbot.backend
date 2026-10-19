@@ -60,7 +60,7 @@ jobs:
         run: node scripts/stamp-assets.mjs --check
 
       - name: Build upload folder
-        run: bash deploy/build-websupport.sh
+        run: node deploy/build-websupport.mjs
 
       - name: Install lftp
         if: inputs.mode != 'verify'
