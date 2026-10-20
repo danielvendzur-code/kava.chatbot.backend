@@ -11,3 +11,5 @@
 ## Follow-up verification
 
 All 14 Kvetu product prices and two Mylo set prices were confirmed against official visible product detail prices and matching structured offers; price receipts are in price-verification-2026-10-20.json. Stock and pack sizes are unchanged. Fytopharma loose children’s tea is now excluded from recommendations because its official product URL is HTTP 404. Physical stock remains NotConfirmed; do not describe it as sold out. Other-family sample checked 901 product/shipping rows: 253 structured matches, 634 manual review, two already excluded plant URLs 404, two shipping sources absent and ten transport failures at Valka. No speculative edits to those rows.
+
+Liqoil: the exact five-piece Melissa lip balm variant 53215450628360 is sold out according to the official selected-variant JSON and visible Vypredané. Excluded this variant and confirmed pack 5 ks; price unchanged. See liqoil-stock-verification-2026-10-20.json.
