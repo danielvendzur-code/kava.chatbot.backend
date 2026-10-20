@@ -4,7 +4,7 @@
  const norm=v=>String(v||'').normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase();
  function create(products,answers){
   const cs=products.some(p=>p.currency==='CZK')||products.some(p=>/^https?:\/\/[^/]*\.cz(?:\/|$)/.test(p.url)),t=(sk,cz)=>cs?cz:sk;
-  const role=p=>{const s=norm(p.kind+' '+p.name);if(/suchy sampon|dry shampoo/.test(s))return 'dryShampoo';if(/sampon|sampuk|shampoo/.test(s))return 'shampoo';if(/kondicion|conditioner|vlasov.*balzam/.test(s))return 'conditioner';if(/cisten|odlic|mydl|myci|umyv|cleanser|cleansing|soap/.test(s))return 'cleanser';if(/ser[au]|serum/.test(s))return 'serum';if(/krem|cream/.test(s))return 'cream';if(/olej|oil/.test(s))return 'oil';return 'other';};
+  const role=p=>{if(p.features?.packType==='shampooDuo')return 'set';const s=norm(p.kind+' '+p.name);if(/suchy sampon|dry shampoo/.test(s))return 'dryShampoo';if(/sampon|sampuk|shampoo/.test(s))return 'shampoo';if(/kondicion|conditioner|vlasov.*balzam/.test(s))return 'conditioner';if(/cisten|odlic|mydl|myci|umyv|cleanser|cleansing|soap/.test(s))return 'cleanser';if(/ser[au]|serum/.test(s))return 'serum';if(/krem|cream/.test(s))return 'cream';if(/olej|oil/.test(s))return 'oil';return 'other';};
   function description(p){const d=details[p.id];if(d?.url===p.url)return d.text;const r=role(p),care=['face','body','eyes','lips','hair','beard'].includes(p.category);if(!care)return '';
    return ({cleanser:t('Čistiaci krok vašej starostlivosti.','Čisticí krok vaší péče.'),serum:t('Sérum ako cielený krok starostlivosti.','Sérum jako cílený krok péče.'),cream:t('Krémový krok starostlivosti.','Krémový krok péče.'),oil:t('Starostlivosť s olejovým základom.','Péče s olejovým základem.'),shampoo:t('Na umývanie vlasov a pokožky hlavy.','Pro mytí vlasů a pokožky hlavy.'),conditioner:t('Starostlivosť o vlasy po umytí.','Péče o vlasy po umytí.'),dryShampoo:t('Suchý šampón na osvieženie vlasov medzi umytiami.','Suchý šampon pro osvěžení vlasů mezi mytím.')})[r]||'';
   }
@@ -16,14 +16,28 @@
    if(['serum','cream'].includes(r)&&p.category==='face')return t('Zaraďte ho do rutiny po čistení. Pri kombinovaní viacerých aktívnych produktov sa riaďte ich návodmi.','Zařaďte ho do rutiny po čištění. Při kombinování více aktivních produktů se řiďte jejich návody.');
    return '';
   }
-  function next(p,matches){const seen=new Set([p.id]),photos=new Set([String(p.photo).split('?')[0]]),eligible=x=>x.available!==false&&!x.isSample&&x.photo&&!seen.has(x.id)&&!photos.has(String(x.photo).split('?')[0])&&(!answers.budget||Number.isFinite(x.priceAmount)&&x.priceAmount<=Number(answers.budget)&&(!x.source?.priceFrom||Number.isFinite(x.source.priceMax)&&x.source.priceMax<=Number(answers.budget)));
-   const complementary={cleanser:['cream'],cream:['cleanser'],serum:['cream'],shampoo:['conditioner'],conditioner:['shampoo']},roles=complementary[role(p)]||[];
-   const safe=x=>!/(?:retin[oa]l|\baha\b|\bbha\b|peeling|kyselin|esencial|eterick)/.test(norm(x.name+' '+x.kind))&&(!answers.profile||answers.profile==='any'||x.signals?.includes(answers.profile)||x.source?.allSkinTypes===true);
-   const extra=products.filter(x=>eligible(x)&&x.category===p.category&&roles.includes(role(x))&&safe(x)).sort((a,b)=>(a.priceAmount??Infinity)-(b.priceAmount??Infinity))[0],items=[];
-   if(extra){items.push({product:extra,label:t('Doplňte svoju rutinu','Doplňte svou rutinu'),note:role(extra)==='cleanser'?t('Ako prvý krok: čistenie.','Jako první krok: čištění.'):role(extra)==='conditioner'?t('Po umytí: kondicionér.','Po umytí: kondicionér.'):role(extra)==='shampoo'?t('Na umývanie: šampón.','Pro mytí: šampon.'):t('Ako ďalší krok: krémová starostlivosť.','Jako další krok: krémová péče.')});seen.add(extra.id);photos.add(String(extra.photo).split('?')[0]);}
-   const alternative=matches.find(eligible);if(alternative)items.push({product:alternative,label:t('Ďalšia vhodná možnosť','Další vhodná možnost'),note:t('Ak si chcete porovnať inú možnosť s rovnakými požiadavkami.','Pokud si chcete porovnat jinou možnost se stejnými požadavky.')});return items;
+  const cost=p=>p.source?.priceFrom?(Number.isFinite(p.source.priceMax)?p.source.priceMax:Infinity):(Number.isFinite(p.priceAmount)?p.priceAmount:Infinity);
+  function total(p,items){
+   const bundle=[p,...items.filter(x=>x.type==='complement').map(x=>x.product)],amount=bundle.reduce((sum,x)=>sum+cost(x),0);
+   return Number.isFinite(amount)?{amount:Math.round(amount*100)/100,upperBound:bundle.some(x=>x.source?.priceFrom),currency:p.currency}:null;
   }
-  return {description,routine,next,t};
+  function next(p,matches){const seen=new Set([p.id]),photos=new Set([String(p.photo).split('?')[0]]),limit=Number(answers.budget)||Infinity,eligible=x=>x.available!==false&&!x.isSample&&x.currency===p.currency&&x.photo&&!seen.has(x.id)&&!photos.has(String(x.photo).split('?')[0])&&cost(x)<=limit;
+   const complementary={cleanser:['cream'],cream:['cleanser'],serum:['cream'],shampoo:['conditioner'],conditioner:['shampoo']},roles=complementary[role(p)]||[];
+   const safe=x=>!/(?:retin[oa]l|\baha\b|\bbha\b|peeling|kyselin|esencial|eterick)/.test(norm(x.name+' '+x.kind))&&(!answers.profile||answers.profile==='any'||x.signals?.includes(answers.profile)||x.source?.allSkinTypes===true)&&(answers.careVariant!=='withoutFragrance'||/bez vun|bez von|without fragrance|unscented/.test(norm(x.name+' '+(x.description||''))));
+   const extra=products.filter(x=>eligible(x)&&x.category===p.category&&roles.includes(role(x))&&safe(x)&&(!answers.budget||cost(p)+cost(x)<=limit)).sort((a,b)=>cost(a)-cost(b))[0],items=[];
+   if(extra){items.push({type:'complement',product:extra,label:t('Doplňte svoju rutinu','Doplňte svou rutinu'),note:role(extra)==='cleanser'?t('Ako prvý krok: čistenie.','Jako první krok: čištění.'):role(extra)==='conditioner'?t('Po umytí: kondicionér.','Po umytí: kondicionér.'):role(extra)==='shampoo'?t('Na umývanie: šampón.','Pro mytí: šampon.'):t('Ako ďalší krok: krémová starostlivosť.','Jako další krok: krémová péče.')});seen.add(extra.id);photos.add(String(extra.photo).split('?')[0]);}
+   const alternative=matches.find(x=>eligible(x)&&(!answers.budget||cost(x)+(extra?cost(extra):0)<=limit));
+   if(alternative)items.push({type:'alternative',product:alternative,label:t('Alternatíva k hlavnému produktu','Alternativa k hlavnímu produktu'),note:t('Môžete ho zvoliť namiesto hlavného odporúčania.','Můžete ho zvolit místo hlavního doporučení.')});
+   return items;
+  }
+
+  function budgetNote(p,items){
+   if(!answers.budget||items.some(x=>x.type==='complement'))return '';
+   const extra=create(products,{...answers,budget:''}).next(p,[]).find(x=>x.type==='complement');
+   if(!extra||!Number.isFinite(cost(p)+cost(extra.product))||cost(p)+cost(extra.product)<=Number(answers.budget))return '';
+   return t('Vhodný doplnok by prekročil váš rozpočet, preto odporúčam tento produkt samostatne.','Vhodný doplněk by překročil váš rozpočet, proto doporučuji tento produkt samostatně.');
+  }
+  return {description,routine,next,total,budgetNote,t};
  }
  scope.CXCareResultGuide={create};
 })(globalThis);

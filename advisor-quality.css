@@ -247,3 +247,20 @@ html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-
 html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question.is-budget>.cx-budget-options>.is-budget-answer>.cx-quality-copy{
  flex:1 1 0!important;min-width:0!important;align-self:center!important;padding:10px 12px!important;
 }
+
+/* Two areas of care read top to bottom, with enough room to recognize each scene. */
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question>.cx-catalogue-options.cx-category-pair{
+ grid-template-columns:minmax(0,1fr)!important;grid-template-rows:repeat(2,minmax(0,1fr))!important;grid-auto-rows:unset!important;gap:10px!important;
+}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question>.cx-category-pair>.cx-quality-option{
+ flex-direction:row!important;align-items:stretch!important;
+}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question>.cx-category-pair>.cx-quality-option>.cx-quality-photo{
+ flex:0 0 58%!important;height:100%!important;align-self:stretch!important;
+}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question>.cx-category-pair>.cx-quality-option>.cx-quality-copy{
+ flex:1 1 0!important;min-width:0!important;align-self:center!important;padding:12px!important;
+}
+
+
+.cx-bundle-total{padding:12px;border:1px solid var(--cx-line);border-radius:12px;background:#f5f6f4;color:var(--cx-ink)!important;}.cx-bundle-total b{font-size:14px;line-height:1.5;}.cx-bundle-total small{display:block;margin-top:4px;font-size:12px;}

@@ -15,6 +15,22 @@
     if(/\bspf\s*\d/.test(text))f.time='spf';else if(/\bnocn|night/.test(text))f.time='night';else if(/\bdenn|day cream/.test(text))f.time='day';
     for(const [key,rx]of [['hyaluron',/hyaluron/],['vitaminC',/vitamin\s*c\b|vitaminu\s*c\b/],['bakuchiol',/bakuchiol/],['retinol',/retin[oa]l/],['ceramides',/ceramid/],['rose',/ruzov|ruze|rose oil/],['almond',/mandl|almond/],['argan',/argan/],['shea',/bambuc|shea/]])if(rx.test(text)){f.ingredient=key;break;}
     if(p.category==='body'){for(const [key,rx]of [['hands',/\bru(?:ce|ky|k)\b|\bhand\b/],['feet',/chodidl|\bnohy\b|\bfoot\b|\bfeet\b/],['deodorant',/de[sz]odor/],['bath',/kupel|koupel|bath salt/],['shower',/sprch|\bmydl|\bsoap\b|shower/]])if(rx.test(text)){f.area=key;break;}}
+    // These differences come from product names and supplied product descriptions.
+    const description=norm(p.description||'');
+    if(p.category==='hair'&&/sampon|sampuk|shampoo/.test(text)){
+      if(/mastici|mastiace|mastne vlasy/.test(text))f.hairFocus='oilControl';
+      else if(/jemne myti|jemne umyvanie/.test(text))f.hairFocus='gentleWash';
+      f.packType=/(?:balzam|kondicion|conditioner)/.test(text)&&/(?:\s+a\s+|\+|sada|\bset\b|duo)/.test(text)?'shampooDuo':'shampooOnly';
+    }
+    if(p.category==='body'&&/balzam/.test(text)&&/\bru(?:ce|ky|k)\b|\bhand\b/.test(text)){
+      if(/bez vun|bez von|without fragrance|unscented/.test(description))f.careVariant='withoutFragrance';
+      else if(/levandul|lavender/.test(text))f.careVariant='lavenderVersion';
+      else if(/grapefruit/.test(text))f.careVariant='grapefruitVersion';
+    }
+    if(!f.ingredient&&/olej|oil/.test(text)){
+      if(/merunk|marhul|apricot/.test(text))f.ingredient='apricot';
+      else if(/hroznov|grape.?seed/.test(text))f.ingredient='grapeseed';
+    }
     const size=!p.source?.priceFrom&&String(p.volume||p.variantLabel||p.name).match(/\b(\d+(?:[.,]\d+)?)\s*(ml|g|kg|l)\b/i);if(size)f.size=size[1].replace(',','.')+' '+size[2].toLowerCase();
     return f;
   }
@@ -53,6 +69,9 @@
   }
   function create(source) {
     const products = prepare(source);
+    const routineRole=p=>{if(p.features?.packType==='shampooDuo')return 'set';const s=norm(p.kind+' '+p.name);if(/suchy sampon|dry shampoo/.test(s))return 'dryShampoo';if(/sampon|sampuk|shampoo/.test(s))return 'shampoo';if(/kondicion|conditioner|vlasov.*balzam/.test(s))return 'conditioner';if(/cisten|odlic|mydl|myci|umyv|cleanser|cleansing|soap/.test(s))return 'cleanser';if(/ser[au]|serum/.test(s))return 'serum';if(/krem|cream/.test(s))return 'cream';if(/olej|oil/.test(s))return 'oil';return 'other';};
+    const routineCost=p=>p.source?.priceFrom?(Number.isFinite(p.source.priceMax)?p.source.priceMax:Infinity):(Number.isFinite(p.priceAmount)?p.priceAmount:Infinity);
+    const complementary={cleanser:['cream'],cream:['cleanser'],serum:['cream'],shampoo:['conditioner'],conditioner:['shampoo']};
     const withinBudget=(p,n)=>Number.isFinite(p.priceAmount)&&p.priceAmount<=Number(n)&&(!p.source?.priceFrom||(Number.isFinite(p.source.priceMax)&&p.source.priceMax<=Number(n)));
     function categoryPool(answers = {}) {
       return products.filter(p => (!answers.category || p.category === answers.category) && (!answers.kind || answers.kind === 'any' || p.kind === answers.kind));
@@ -65,10 +84,10 @@
       if (answers.profile === 'sensitive') list = list.filter(p => p.signals.includes('sensitive') || p.signals.includes('calm') || !/retinol|retinal|aha|bha|peeling|kyselin/.test(norm(p.name + ' ' + p.kind)));
       if (answers.goal && answers.goal !== 'any') list = list.filter(p => p.signals.includes(answers.goal));
       if (answers.profile && answers.profile !== 'any') list = list.filter(p => p.signals.includes(answers.profile)||p.source?.allSkinTypes===true);
-      for(const key of ['area','time','ingredient','size'])if(answers[key]&&answers[key]!=='any')list=list.filter(p=>p.features[key]===answers[key]);
+      for(const key of ['hairNeed','hairUse','area','hairFocus','packType','careVariant','time','ingredient','size'])if(answers[key]&&answers[key]!=='any')list=list.filter(p=>p.features[key]===answers[key]);
       const rank = p => (p.signals.includes(answers.profile) ? 8 : 0) + (p.signals.includes(answers.goal) ? 12 : 0);
       const cost=p=>Number.isFinite(p.priceAmount)?p.priceAmount:Infinity;
-      list.sort((a, b) => rank(b) - rank(a) || (Number(answers.budget)>0?cost(b)-cost(a):cost(a)-cost(b)) || a.name.localeCompare(b.name, 'sk') || a.id.localeCompare(b.id));
+      list.sort((a, b) => rank(b) - rank(a) || (cost(a)-cost(b)) || a.name.localeCompare(b.name, 'sk') || a.id.localeCompare(b.id));
       const winner = list[0] || null;
       // An alternative must be a different real product, not a size variant of the winner.
       const alternative = winner ? list.find(p => p.url !== winner.url && norm(p.name) !== norm(winner.name)) || null : null;
@@ -88,20 +107,33 @@
       const formPool = pool.filter(p => (!answers.goal || answers.goal === 'any' || p.signals.includes(answers.goal)) && (!answers.profile || answers.profile === 'any' || p.signals.includes(answers.profile)||p.source?.allSkinTypes===true));
       const forms = [...new Set(formPool.map(p => p.kind))];
       if (forms.length > 1) result.push({key:'kind', options:[...forms, 'any']});
-      const priced = recommend({...answers, category, budget:''}).matches;
-      // Ask about a verifiable difference before revealing products. Never ask customers to rank SKUs.
-      const baseAnswered=result.every(s=>answers[s.key]!==undefined);
-      const facetPool=recommend({...answers,category,budget:'',area:'',time:'',ingredient:'',size:''}).matches;
-      if(baseAnswered&&result.length<5){for(const key of ['area','time','ingredient','size']){
-        const values=[...new Set(facetPool.map(p=>p.features[key]).filter(Boolean))];
-        if(key==='size')values.sort((a,b)=>parseFloat(a)-parseFloat(b));
-        /* Pack size is a real choice only between sizes of one and the same product. */
-        if(key==='size'&&(new Set(values.map(v=>v.split(' ')[1])).size>1||new Set(facetPool.map(p=>norm(p.name).replace(/\s*[–-]?\s*\d+(?:[.,]\d+)?\s*(ml|g|kg|l)\b.*$/,''))).size>1))continue;
+      const facetKeys=['hairNeed','hairUse','area','hairFocus','packType','careVariant','time','ingredient','size'];
+      const baseAnswers={...answers,category,budget:''};for(const key of facetKeys)delete baseAnswers[key];
+      const priced=recommend(baseAnswers).matches;
+      const bundlePrices=priced.flatMap(p=>products.filter(x=>x.available!==false&&!x.isSample&&x.id!==p.id&&x.category===p.category&&x.currency===p.currency&&x.photo&&String(x.photo).split('?')[0]!==String(p.photo).split('?')[0]&&(complementary[routineRole(p)]||[]).includes(routineRole(x))&&!/(?:retin[oa]l|\baha\b|\bbha\b|peeling|kyselin|esencial|eterick)/.test(norm(x.name+' '+x.kind))&&(!answers.profile||answers.profile==='any'||x.signals.includes(answers.profile)||x.source?.allSkinTypes===true)).map(x=>routineCost(p)+routineCost(x))).filter(Number.isFinite);
+      const limits=(priced[0]?.currency==='CZK'?[300,600,1000]:[10,25,50]).filter(n=>{const count=priced.filter(p=>withinBudget(p,n)).length;return count&&(count<priced.length||bundlePrices.some(price=>price>n));});
+      const baseAnswered=result.every(step=>answers[step.key]!==undefined);
+      if(limits.length)result.push({key:'budget',options:limits});
+      if(!baseAnswered||(limits.length&&answers.budget===undefined))return result;
+      // Ask about actual remaining differences, one decision at a time. No neutral body area.
+      const comparison={...answers,category};for(const key of facetKeys)delete comparison[key];
+      let remaining=recommend(comparison).matches;
+      for(const key of facetKeys){
+        if(remaining.length<2||result.length>=8)break;
+        if(remaining.some(p=>!p.features[key]))continue;
+        const values=[...new Set(remaining.map(p=>p.features[key]))];
         if(values.length<2||values.length>4)continue;
-        result.push({key,options:[...values,'any']});break;
-      }}
-      const limits=(priced[0]?.currency === 'CZK' ? [300,600,1000] : [10,25,50]).filter(n=>{const c=priced.filter(p=>withinBudget(p,n)).length;return c&&c<priced.length;});
-      if(priced.length>4&&limits.length&&result.length<5&&!result.some(s=>['area','time','ingredient','size'].includes(s.key)))result.push({key:'budget',options:limits});
+        if(key==='size'){
+          if(new Set(values.map(v=>v.split(' ')[1])).size>1)continue;
+          const canonical=p=>norm(p.name).replace(/\s*[–-]?\s*\d+(?:[.,]\d+)?\s*(ml|g|kg|l)\b.*$/,'');
+          if(new Set(remaining.map(canonical)).size>1)continue;
+          values.sort((a,b)=>parseFloat(a)-parseFloat(b));
+        }
+        result.push({key,options:values});
+        if(answers[key]===undefined)break;
+        comparison[key]=answers[key];remaining=recommend(comparison).matches;
+      }
+
       return result;
     }
     return {products, categoryPool, recommend, steps};
