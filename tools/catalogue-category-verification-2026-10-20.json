@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-20",
+  "source": "https://www.twocosmetics.sk/p/mydlo-balzam",
+  "httpStatus": 200,
+  "sourceEvidence": "Official product title and visible 8,50 € price; availability microdata LimitedAvailability.",
+  "changes": [
+    {
+      "root": "work/kava.chatbot.backend",
+      "id": "refresh-ee11c7054f4fc9",
+      "url": "https://www.twocosmetics.sk/p/mydlo-balzam",
+      "checkedAt": "2026-10-20",
+      "before": {
+        "category": "lips",
+        "kind": "Krémy a balzamy",
+        "volume": "Balenie podľa e-shopu"
+      },
+      "after": {
+        "category": "sets",
+        "kind": "Sady a darčeky",
+        "volume": "1 ks mydlo + 1 ks balzam"
+      },
+      "price": "8,5 €",
+      "availability": true
+    }
+  ]
+}

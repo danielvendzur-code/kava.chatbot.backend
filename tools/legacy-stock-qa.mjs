@@ -1,3 +1,4 @@
+import "./offline-api-guard.mjs";
 import {chromium} from '@playwright/test';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
@@ -7,7 +8,7 @@ const ledger=JSON.parse(await fs.readFile(root+'/research/legacy-stock-2026-10-1
 const b=await chromium.launch({args:['--no-sandbox']});await fs.mkdir(out,{recursive:true});const results=[];
 for(const vp of [{name:'desktop',width:1440,height:900},{name:'mobile',width:390,height:844},{name:'small',width:360,height:800}]){
  const p=await b.newPage({viewport:vp}),errors=[];p.on('pageerror',e=>errors.push(e.message));p.on('response',r=>{if(r.status()>=400&&!r.url().includes('/api/'))errors.push(r.status()+' '+r.url());});
- await p.route('**/api/cosmetics-chat',async route=>{let payload,status=200;await handler({method:'POST',headers:{origin:'http://127.0.0.1:8798'},body:route.request().postDataJSON()},{setHeader(){},status(s){status=s;return this},json(x){payload=x;return this},end(){}});await route.fulfill({status,contentType:'application/json',body:JSON.stringify(payload)});});
+ await p.route('**/api/cosmetics-chat',async route=>{let payload,status=200;await handler({method:'POST',headers:{origin:'http://127.0.0.1:8798'},body:{...route.request().postDataJSON(),_upstreamHop:true}},{setHeader(){},status(s){status=s;return this},json(x){payload=x;return this},end(){}});await route.fulfill({status,contentType:'application/json',body:JSON.stringify(payload)});});
  try{
   await p.goto(base+'/cosmetics.html?demo=modrapupava',{waitUntil:'networkidle'});
   assert.deepEqual(await p.evaluate(()=>window.COSMETICS_DEMOS.brands.modrapupava.products.map(x=>x.id)),ledger.products.map(x=>x.id));

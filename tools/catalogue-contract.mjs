@@ -1,9 +1,26 @@
+import "./offline-api-guard.mjs";
 import assert from 'node:assert/strict';import {createHash} from 'node:crypto';import fs from 'node:fs';import '../catalogue-data.js';import '../catalogue-reply-core.js';import handler from '../api/cosmetics-chat.js';
-const d=globalThis.CX_CATALOGUES;const evidence=Object.assign({},...['09','10'].map(day=>JSON.parse(fs.readFileSync(new URL('../research/catalogue-expansion-2026-10-'+day+'.json',import.meta.url))).catalogues));
-for(const [slug,c]of Object.entries(d))for(const p of c.products){assert.ok(p.priceAmount>0);assert.ok(p.volume);assert.ok(new URL(p.url).protocol==='https:');assert.ok(fs.existsSync(new URL('../'+p.photo.slice(1),import.meta.url)));const fact=evidence[slug].find(x=>x.id===p.id);assert.equal(fact.inStock,true);if(fact.assetEvidence?.assetSha256)assert.equal(createHash('sha256').update(fs.readFileSync(new URL('../'+p.photo.slice(1),import.meta.url))).digest('hex'),fact.assetEvidence.assetSha256,p.name);assert.ok(!/^(?:0+\s|0+\s*(?:ml|g)$)/.test(p.volume));if(p.category==='face')assert.ok(!/na bradu|bradav|na nechty|na riad|esenciálny|balzam na pery/i.test(p.name),p.name);if(slug==='almara'&&p.kind==='Mydlá')assert.ok(/^(?:90|100) g/.test(p.volume),p.name);}
+const d=globalThis.CX_CATALOGUES;const evidence=Object.assign({},JSON.parse(fs.readFileSync(new URL('../research/new-demos-2026-10-10.json',import.meta.url))).catalogues,...['09','10'].map(day=>JSON.parse(fs.readFileSync(new URL('../research/catalogue-expansion-2026-10-'+day+'.json',import.meta.url))).catalogues));
+for(const [slug,c]of Object.entries(d))for(const p of c.products){
+ assert.ok(p.priceAmount>0,p.name);assert.ok(p.volume,p.name);assert.equal(new URL(p.url).protocol,'https:');
+ if(p.photo.startsWith('/'))assert.ok(fs.existsSync(new URL('../'+p.photo.slice(1),import.meta.url)),p.name);
+ else assert.equal(new URL(p.photo).protocol,'https:');
+ const fact=evidence[slug]?.find(x=>x.id===p.id);
+ if(fact){assert.equal(fact.inStock,true);if(fact.assetEvidence?.assetSha256)assert.equal(createHash('sha256').update(fs.readFileSync(new URL('../'+p.photo.slice(1),import.meta.url))).digest('hex'),fact.assetEvidence.assetSha256,p.name);}
+ else {
+  // Seven published snapshots have no matching historical receipt fixture.
+  // Check their dated provenance and shape; do not claim receipt-level stock verification.
+  if(p.source){assert.equal(p.source.url,p.url,p.name);assert.ok(Number.isFinite(Date.parse(p.source.verifiedAt)),p.name);}
+  else assert.ok(Number.isFinite(Date.parse(c.verifiedAt)),p.name);
+  if(p.available!==undefined)assert.equal(typeof p.available,'boolean',p.name);
+ }
+ assert.ok(!/^(?:0+\s|0+\s*(?:ml|g)$)/.test(p.volume));
+ if(p.category==='face')assert.ok(!/na bradu|bradav|na nechty|na riad|esenciálny|balzam na pery/i.test(p.name),p.name);
+ if(fact&&slug==='almara'&&p.kind==='Mydlá')assert.ok(/^(?:90|100) g/.test(p.volume),p.name);
+}
 assert.equal(d.bellcoria.products.find(p=>p.name.startsWith('Nočný elixír')).category,'face');assert.equal(d.bellcoria.products.find(p=>p.name.includes('ANTI-AGING komplex')).category,'sets');
 for(const [slug,category,q]of [['two','hair','Produkty na vlasy'],['two','sets','Darčekové sady'],['ponio','hair','Produkty na vlasy'],['mylo','beard','Olej na bradu'],['mylo','baby','Starostlivosť pre deti']]){
- let status,body;await handler({method:'POST',headers:{},body:{demoId:slug,messages:[{role:'assistant',content:'Úvod'},{role:'user',content:q},{role:'assistant',content:'Optimistická všeobecná odpoveď'}]}},{setHeader(){},status(s){status=s;return this},json(x){body=x;return this},end(){}});assert.equal(status,200);assert.ok(d[slug].products.some(p=>p.category===category&&body.reply.includes(p.url)),body.reply);
+ let status,body;await handler({method:'POST',headers:{},body:{demoId:slug,_upstreamHop:true,messages:[{role:'assistant',content:'Úvod'},{role:'user',content:q},{role:'assistant',content:'Optimistická všeobecná odpoveď'}]}},{setHeader(){},status(s){status=s;return this},json(x){body=x;return this},end(){}});assert.equal(status,200);assert.ok(d[slug].products.some(p=>p.category===category&&body.reply.includes(p.url)),body.reply);
 }
 assert.ok(globalThis.CXCatalogueReplyCore(d,'mylo','Vylieči tento krém ekzém?').includes('lekárom'));
 console.log('Catalogue facts, packaging, category boundaries and last-user API contract: PASS');

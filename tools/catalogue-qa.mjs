@@ -1,3 +1,4 @@
+import "./offline-api-guard.mjs";
 import { chromium } from '@playwright/test';
 import fs from 'node:fs/promises';
 import assert from 'node:assert/strict';
@@ -11,7 +12,7 @@ for(const slug of slugs)for(const vp of [{name:'desktop',width:1440,height:900},
  const page=await browser.newPage({viewport:vp});const errors=[];page.on('pageerror',e=>errors.push(e.message));
  page.on('response',r=>{if(r.status()>=400&&!r.url().includes('/api/'))errors.push(r.status()+' '+r.url());});
  await page.route('**/api/cosmetics-chat',async route=>{
-  const req={method:'POST',headers:{origin:'http://127.0.0.1:8798'},body:route.request().postDataJSON()};let payload,status=200;
+  const req={method:'POST',headers:{origin:'http://127.0.0.1:8798'},body:{...route.request().postDataJSON(),_upstreamHop:true}};let payload,status=200;
   await handler(req,{setHeader(){},status(s){status=s;return this},json(v){payload=v;return this},end(){}});
   await route.fulfill({status,contentType:'application/json',body:JSON.stringify(payload)});
  });

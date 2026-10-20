@@ -163,3 +163,7 @@ chatových endpointov použilo iba OPTIONS a prázdne messages: 204 a očakávan
 400 Missing user message, korektné CORS pre pôvodné adresy. Nula platených
 modelových volaní. Pred prepnutím DNS treba overiť balík a HTTPS na cieľovom
 hostingu a uložiť pôvodné záznamy pre návrat.
+
+## Skincare pokračovanie (20. 10. 2026)
+
+Overené opravy TWO a Anela v oboch katalógových kópiách; podklady a otvorené body sú v tools/skincare-audit-2026-10-20.md. Katalógové offline testy majú blokovanie siete a produkčného upstreamu. Nové zmeny patria iba do určených Preview vetiev. Produkciu a jej model nemením.
