@@ -5,7 +5,15 @@
  function create(products,answers){
   const cs=products.some(p=>p.currency==='CZK')||products.some(p=>/^https?:\/\/[^/]*\.cz(?:\/|$)/.test(p.url)),t=(sk,cz)=>cs?cz:sk;
   const role=p=>{if(p.features?.packType==='shampooDuo')return 'set';const s=norm(p.kind+' '+p.name);if(/suchy sampon|dry shampoo/.test(s))return 'dryShampoo';if(/sampon|sampuk|shampoo/.test(s))return 'shampoo';if(/kondicion|conditioner|vlasov.*balzam/.test(s))return 'conditioner';if(/cisten|odlic|mydl|myci|umyv|cleanser|cleansing|soap/.test(s))return 'cleanser';if(/ser[au]|serum/.test(s))return 'serum';if(/krem|cream/.test(s))return 'cream';if(/olej|oil/.test(s))return 'oil';return 'other';};
-  function description(p){const d=details[p.id];if(d?.url===p.url)return d.text;const r=role(p),care=['face','body','eyes','lips','hair','beard'].includes(p.category);if(!care)return '';
+  function description(p){const d=details[p.id];if(d?.url===p.url)return d.text;
+   // Only reuse text collected from this exact official product page, never inferred category copy.
+   const verified=p.source?.url===p.url&&p.source?.verifiedAt&&/^official .*description$/.test(p.source?.suitabilitySource||'');
+   const text=String(p.description||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
+   if(verified&&text&&!/\/(?:de|pl|en)\//.test(new URL(p.url).pathname)){
+     const first=text.match(/^.*?[.!?](?=\s|$)/)?.[0]||text;
+     return first.length<=260?first:first.slice(0,257).replace(/\s+\S*$/,'')+'…';
+   }
+   const r=role(p),care=['face','body','eyes','lips','hair','beard'].includes(p.category);if(!care)return '';
    return ({cleanser:t('Čistiaci krok vašej starostlivosti.','Čisticí krok vaší péče.'),serum:t('Sérum ako cielený krok starostlivosti.','Sérum jako cílený krok péče.'),cream:t('Krémový krok starostlivosti.','Krémový krok péče.'),oil:t('Starostlivosť s olejovým základom.','Péče s olejovým základem.'),shampoo:t('Na umývanie vlasov a pokožky hlavy.','Pro mytí vlasů a pokožky hlavy.'),conditioner:t('Starostlivosť o vlasy po umytí.','Péče o vlasy po umytí.'),dryShampoo:t('Suchý šampón na osvieženie vlasov medzi umytiami.','Suchý šampon pro osvěžení vlasů mezi mytím.')})[r]||'';
   }
   function routine(p){const r=role(p);if(!['face','body','hair','eyes','lips','beard'].includes(p.category))return '';
