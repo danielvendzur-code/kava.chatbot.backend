@@ -8,6 +8,7 @@
     const brand = data.brands[slug];
     if (!brand) continue;
     if(['almara','bellcoria','dulcia','liqoil','modrapupava','monlevur','mujluj','mydlitto','mylo','noili','pimpinella','puaree','two','yemna'].includes(slug))brand.avatarIcon='/assets/catalogue/logos/'+slug+'-symbol.png';
+    if(catalogue.brandOverride)Object.assign(brand,catalogue.brandOverride);
     brand.catalogue = catalogue.products;
     brand.catalogueVerifiedAt = catalogue.verifiedAt;
     const face = catalogue.products.filter(p => p.category === 'face' && !p.isSample);

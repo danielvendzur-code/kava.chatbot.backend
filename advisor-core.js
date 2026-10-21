@@ -114,8 +114,22 @@
       const facetKeys=['hairNeed','hairUse','area','hairFocus','packType','careVariant','skinFocus','time','ingredient','size'];
       const baseAnswers={...answers,category,budget:''};for(const key of facetKeys)delete baseAnswers[key];
       const priced=recommend(baseAnswers).matches;
-      const bundlePrices=priced.flatMap(p=>products.filter(x=>x.available!==false&&!x.isSample&&x.id!==p.id&&x.category===p.category&&x.currency===p.currency&&x.photo&&String(x.photo).split('?')[0]!==String(p.photo).split('?')[0]&&(complementary[routineRole(p)]||[]).includes(routineRole(x))&&!/(?:retin[oa]l|\baha\b|\bbha\b|peeling|kyselin|esencial|eterick)/.test(norm(x.name+' '+x.kind))&&(!answers.profile||answers.profile==='any'||x.signals.includes(answers.profile)||x.source?.allSkinTypes===true)).map(x=>routineCost(p)+routineCost(x))).filter(Number.isFinite);
-      const limits=(priced[0]?.currency==='CZK'?[300,600,1000]:[10,25,50]).filter(n=>{const count=priced.filter(p=>withinBudget(p,n)).length;return count&&(count<priced.length||bundlePrices.some(price=>price>n));});
+      const buckets=new Map(),photoKey=p=>String(p.photo).split('?')[0],eligibleComplements=[],seenIds=new Set(),repeatedIds=new Set();
+      for(const p of products){if(seenIds.has(p.id))repeatedIds.add(p.id);seenIds.add(p.id);}
+      for(const x of products){
+        if(x.available===false||x.isSample||!x.photo||!Number.isFinite(routineCost(x))||/(?:retin[oa]l|\baha\b|\bbha\b|peeling|kyselin|esencial|eterick)/.test(norm(x.name+' '+x.kind))||answers.profile&&answers.profile!=='any'&&!x.signals.includes(answers.profile)&&x.source?.allSkinTypes!==true)continue;
+        eligibleComplements.push(x);
+        const key=JSON.stringify([x.category,x.currency,routineRole(x)]),photos=buckets.get(key)||new Map(),photo=photoKey(x),cost=routineCost(x);
+        if(!photos.has(photo)||photos.get(photo)<cost)photos.set(photo,cost);buckets.set(key,photos);
+      }
+      const tops=new Map([...buckets].map(([key,photos])=>[key,[...photos].sort((a,b)=>b[1]-a[1]).slice(0,2)]));
+      let maximumBundlePrice=-Infinity;
+      for(const p of priced){
+        if(!Number.isFinite(routineCost(p)))continue;
+        if(repeatedIds.has(p.id)){for(const x of eligibleComplements){if(x.id===p.id||x.category!==p.category||x.currency!==p.currency||photoKey(x)===photoKey(p)||!(complementary[routineRole(p)]||[]).includes(routineRole(x)))continue;const total=routineCost(p)+routineCost(x);if(Number.isFinite(total))maximumBundlePrice=Math.max(maximumBundlePrice,total);}continue;}
+        for(const role of complementary[routineRole(p)]||[]){const candidates=tops.get(JSON.stringify([p.category,p.currency,role]))||[];const extra=candidates.find(([photo])=>photo!==photoKey(p));if(extra){const total=routineCost(p)+extra[1];if(Number.isFinite(total))maximumBundlePrice=Math.max(maximumBundlePrice,total);}}
+      }
+      const limits=(priced[0]?.currency==='CZK'?[300,600,1000]:[10,25,50]).filter(n=>{const count=priced.filter(p=>withinBudget(p,n)).length;return count&&(count<priced.length||maximumBundlePrice>n);});
       const baseAnswered=result.every(step=>answers[step.key]!==undefined);
       if(limits.length)result.push({key:'budget',options:limits});
       if(!baseAnswered||(limits.length&&answers.budget===undefined))return result;
