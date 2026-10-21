@@ -17,6 +17,10 @@
     if(p.category==='body'){for(const [key,rx]of [['hands',/\bru(?:ce|ky|k)\b|\bhand\b/],['feet',/chodidl|\bnohy\b|\bfoot\b|\bfeet\b/],['deodorant',/de[sz]odor/],['bath',/kupel|koupel|bath salt/],['shower',/sprch|\bmydl|\bsoap\b|shower/]])if(rx.test(text)){f.area=key;break;}}
     // These differences come from product names and supplied product descriptions.
     const description=norm(p.description||'');
+    if(p.category==='face'&&/krem|cream/.test(text)){
+      if(/akne|acne|problematick/.test(text))f.skinFocus='blemishCare';
+      else if(/hydrat/.test(description))f.skinFocus='hydrationCare';
+    }
     if(p.category==='hair'&&/sampon|sampuk|shampoo/.test(text)){
       if(/mastici|mastiace|mastne vlasy/.test(text))f.hairFocus='oilControl';
       else if(/jemne myti|jemne umyvanie/.test(text))f.hairFocus='gentleWash';
@@ -84,7 +88,7 @@
       if (answers.profile === 'sensitive') list = list.filter(p => p.signals.includes('sensitive') || p.signals.includes('calm') || !/retinol|retinal|aha|bha|peeling|kyselin/.test(norm(p.name + ' ' + p.kind)));
       if (answers.goal && answers.goal !== 'any') list = list.filter(p => p.signals.includes(answers.goal));
       if (answers.profile && answers.profile !== 'any') list = list.filter(p => p.signals.includes(answers.profile)||p.source?.allSkinTypes===true);
-      for(const key of ['hairNeed','hairUse','area','hairFocus','packType','careVariant','time','ingredient','size'])if(answers[key]&&answers[key]!=='any')list=list.filter(p=>p.features[key]===answers[key]);
+      for(const key of ['hairNeed','hairUse','area','hairFocus','packType','careVariant','skinFocus','time','ingredient','size'])if(answers[key]&&answers[key]!=='any')list=list.filter(p=>p.features[key]===answers[key]);
       const rank = p => (p.signals.includes(answers.profile) ? 8 : 0) + (p.signals.includes(answers.goal) ? 12 : 0);
       const cost=p=>Number.isFinite(p.priceAmount)?p.priceAmount:Infinity;
       list.sort((a, b) => rank(b) - rank(a) || (cost(a)-cost(b)) || a.name.localeCompare(b.name, 'sk') || a.id.localeCompare(b.id));
@@ -107,7 +111,7 @@
       const formPool = pool.filter(p => (!answers.goal || answers.goal === 'any' || p.signals.includes(answers.goal)) && (!answers.profile || answers.profile === 'any' || p.signals.includes(answers.profile)||p.source?.allSkinTypes===true));
       const forms = [...new Set(formPool.map(p => p.kind))];
       if (forms.length > 1) result.push({key:'kind', options:[...forms, 'any']});
-      const facetKeys=['hairNeed','hairUse','area','hairFocus','packType','careVariant','time','ingredient','size'];
+      const facetKeys=['hairNeed','hairUse','area','hairFocus','packType','careVariant','skinFocus','time','ingredient','size'];
       const baseAnswers={...answers,category,budget:''};for(const key of facetKeys)delete baseAnswers[key];
       const priced=recommend(baseAnswers).matches;
       const bundlePrices=priced.flatMap(p=>products.filter(x=>x.available!==false&&!x.isSample&&x.id!==p.id&&x.category===p.category&&x.currency===p.currency&&x.photo&&String(x.photo).split('?')[0]!==String(p.photo).split('?')[0]&&(complementary[routineRole(p)]||[]).includes(routineRole(x))&&!/(?:retin[oa]l|\baha\b|\bbha\b|peeling|kyselin|esencial|eterick)/.test(norm(x.name+' '+x.kind))&&(!answers.profile||answers.profile==='any'||x.signals.includes(answers.profile)||x.source?.allSkinTypes===true)).map(x=>routineCost(p)+routineCost(x))).filter(Number.isFinite);
