@@ -26,7 +26,7 @@ body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-stage {padd
 .cx-quality-body{overflow:auto;min-height:0;padding:14px 14px 18px;overscroll-behavior:contain;scrollbar-width:thin;}
 .cx-quality-body>small{text-transform:uppercase;letter-spacing:.1em;color:#73787b;font-size:9px;font-weight:700;}.cx-quality-body>h2{font-family:inherit;font-weight:750;font-size:22px;letter-spacing:-.035em;line-height:1.2;margin:5px 0 6px;outline:none;}.cx-quality-intro{font-size:12px;line-height:1.4;color:#70777b;margin:0 0 14px;}
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-option{position:relative;display:grid!important;grid-template-rows:auto auto!important;text-align:left!important;align-items:stretch!important;min-width:0!important;margin:0!important;padding:0!important;border:1px solid #d5d7d9!important;border-radius:20px!important;overflow:hidden!important;box-shadow:none!important;background:white!important;color:var(--cx-ink)!important;outline:none;}
-body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-option:focus-visible{outline:2px solid var(--cx-accent)!important;outline-offset:2px!important;}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-option:focus-visible{outline:2px solid var(--cx-accent)!important;outline-offset:-3px!important;}
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-catalogue-option.cx-quality-option .cx-quality-photo{display:flex!important;justify-content:center!important;align-items:center!important;gap:0!important;width:100%!important;aspect-ratio:3/2;padding:0!important;overflow:hidden;background:#f7f7f5;border:0!important;}
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-catalogue-option.cx-quality-option .cx-quality-photo img{position:static!important;display:block!important;flex:1;min-width:0;width:100%!important;height:100%!important;max-width:100%!important;object-fit:contain!important;object-position:center!important;padding:0!important;margin:0!important;transform:none!important;border-radius:0!important;background:white!important;}
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-catalogue-option.cx-quality-option .cx-quality-photo.is-collage img{width:33.333%!important;height:100%!important;object-fit:contain!important;}
@@ -47,7 +47,7 @@ body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-option-photo img{di
 .cx-quality-rows{display:grid;gap:8px;margin:0 0 4px;}.cx-catalogue-options+.cx-quality-rows{margin-top:10px;}.cx-quality-rows:empty{display:none;}
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-option.cx-quality-row{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:10px!important;width:100%!important;border-radius:16px!important;padding:2px 14px 2px 4px!important;}
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-row .cx-quality-copy{padding:10px!important;}.cx-quality-row>i{font-style:normal;font-size:20px;line-height:1;color:#9aa0a4;}
-body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-option:hover{border-color:var(--cx-brand)!important;}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-option:hover{border-color:#d5d7d9!important;}
 body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-catalogue-option.cx-quality-option .cx-quality-photo{background:white!important;}
 .cx-quality-product-photo{background:white;}.cx-quality-product{align-items:stretch;}.cx-quality-other{display:grid;gap:0;}
 .cx-quality-product-copy a{margin-top:auto;}
@@ -152,8 +152,8 @@ html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-
 html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-options>.cx-quality-option:nth-child(3):last-child>.cx-quality-photo{flex:0 0 44%!important;height:auto!important;min-height:0!important;align-self:stretch!important;}
 html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question .cx-catalogue-options>.cx-quality-option:nth-child(3):last-child>.cx-quality-copy{flex:1 1 0!important;min-width:0!important;min-height:0!important;height:auto!important;align-self:center!important;}
 html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-option{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease!important;}
-html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-option:hover{transform:translateY(-2px)!important;box-shadow:0 14px 28px -20px rgba(20,20,20,.5)!important;}
-html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-option:active{transform:scale(.985)!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-option:hover{transform:none!important;box-shadow:none!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-option:active{transform:none!important;}
 @keyframes cx-polish-rise{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
 @media (prefers-reduced-motion:no-preference){
 html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body>h2,html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body>.cx-quality-intro{animation:cx-polish-rise .24s ease both;}
@@ -264,3 +264,12 @@ html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-
 
 
 .cx-bundle-total{padding:12px;border:1px solid var(--cx-line);border-radius:12px;background:#f5f6f4;color:var(--cx-ink)!important;}.cx-bundle-total b{font-size:14px;line-height:1.5;}.cx-bundle-total small{display:block;margin-top:4px;font-size:12px;}
+
+/* Verified product differences use equal horizontal cards; hover never clips the border. */
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question>.cx-benefit-options.cx-benefit-options.cx-benefit-options{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:repeat(var(--cx-choice-count),minmax(0,1fr))!important;gap:10px!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question>.cx-benefit-options.cx-benefit-options.cx-benefit-options>.cx-quality-option{grid-column:auto!important;flex-direction:row!important;align-items:stretch!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question>.cx-benefit-options.cx-benefit-options.cx-benefit-options>.cx-quality-option>.cx-quality-photo{flex:0 0 29%!important;height:100%!important;align-self:stretch!important;background:#fff!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question>.cx-benefit-options.cx-benefit-options.cx-benefit-options>.cx-quality-option>.cx-quality-photo>img{object-fit:contain!important;padding:8px!important;box-sizing:border-box!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question>.cx-benefit-options.cx-benefit-options.cx-benefit-options>.cx-quality-option>.cx-quality-copy{flex:1 1 0!important;min-width:0!important;align-self:center!important;padding:10px 12px!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-benefit-options.cx-benefit-options.cx-benefit-options .cx-quality-copy b{font-size:14px!important;line-height:1.25!important;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-benefit-options.cx-benefit-options.cx-benefit-options .cx-quality-copy small{font-size:12px!important;line-height:1.35!important;margin-top:5px!important;}
