@@ -1,0 +1,144 @@
+{
+  "checkedAt": "2026-10-22T06:56:20.977Z",
+  "instruction": "Only unsent demos and demos sent on 2026-10-21 may be changed. Older sent coffee demos are frozen.",
+  "baselineCommit": "47d5c9b6aa580469fa593a5d8c6e2bd8706db330",
+  "allowed": [
+    "donfranko",
+    "grain"
+  ],
+  "frozen": [
+    "praziarnicka",
+    "diamonds",
+    "kaffa",
+    "vitazov",
+    "concept",
+    "jolka",
+    "goriffee",
+    "readyafter",
+    "coffeesheep",
+    "zlatezrnko",
+    "becafe",
+    "simplecoffee",
+    "ebenica",
+    "casadelcaffe",
+    "coffeeveronia",
+    "grandroastery",
+    "coffeein",
+    "kavoholik",
+    "ajvencoffee",
+    "kavavra"
+  ],
+  "checks": [
+    {
+      "file": "coffee-jolka-app.js",
+      "sha256": "5dcb1e5d2206afe75be01ef04b870fef4d42849b33a99fe8ec84a17108554746",
+      "unchanged": true
+    },
+    {
+      "file": "coffee-quality.css",
+      "sha256": "35a60a8117e51cfbca8e73ba83044a7a6ff2ef20b3b426a9e8c032dff0b0704e",
+      "unchanged": true
+    },
+    {
+      "file": "praziarnicka.html",
+      "sha256": "e808e1ee8ccd1a30204934684d4609c395ed49a10550842cda83cdf98aacd346",
+      "unchanged": true
+    },
+    {
+      "file": "diamonds.html",
+      "sha256": "84d477dcb8e94a5de4f3c824c65d2fbc292c4c8b696420db4dec319e0a5b6b4e",
+      "unchanged": true
+    },
+    {
+      "file": "kaffa.html",
+      "sha256": "6f0fb6fd0f10316890e08db71e3789969cddd3bde500b855938926b126938d6c",
+      "unchanged": true
+    },
+    {
+      "file": "vitazov.html",
+      "sha256": "70742a76dfb57735f7262eb09c80b4a368f739859e6166688a5d520f24722ce2",
+      "unchanged": true
+    },
+    {
+      "file": "concept.html",
+      "sha256": "de7e4dd2694c1ab7174126d58303610792674533a67901cbdef98a7531cdd58e",
+      "unchanged": true
+    },
+    {
+      "file": "jolka.html",
+      "sha256": "dda50a0298236934e261481d34949d3463fef0211563d025ff71f9933b53c208",
+      "unchanged": true
+    },
+    {
+      "file": "goriffee.html",
+      "sha256": "d75dadcf40f7a597a3e1cebbb93f712d802f7bd3b828d10b27c585f58bf0098b",
+      "unchanged": true
+    },
+    {
+      "file": "readyafter.html",
+      "sha256": "c094d24a569a7532d17c3d14f97bc98d68c21b5995089a645490bc7ff2ba0b9c",
+      "unchanged": true
+    },
+    {
+      "file": "coffeesheep.html",
+      "sha256": "5d0d196a31589dd4bac2f320273e0b6167a58b72fbdb16d8cf78613f7515bc04",
+      "unchanged": true
+    },
+    {
+      "file": "zlatezrnko.html",
+      "sha256": "ebea11e484f10d54b740a88d13fca4158e083184374bb43972118c2ea02a56b2",
+      "unchanged": true
+    },
+    {
+      "file": "becafe.html",
+      "sha256": "bfa098adad2dc068b44b5db84a13bfab223dbdeeec2a91b0cef18bb230c19a2a",
+      "unchanged": true
+    },
+    {
+      "file": "simplecoffee.html",
+      "sha256": "4d508416e76c37142f91d6478ce4d38fdad5dc371cc0676c898b101fc4a24f29",
+      "unchanged": true
+    },
+    {
+      "file": "ebenica.html",
+      "sha256": "86ea562da16c2e7fe9f72f3086c7bca1f3a1c4e8e9fe599e708120b322d3ec98",
+      "unchanged": true
+    },
+    {
+      "file": "casadelcaffe.html",
+      "sha256": "6d4636ac0cf3eda682f1912cbc91ad330b84a37ed8202af6c0450616c0f16236",
+      "unchanged": true
+    },
+    {
+      "file": "coffeeveronia.html",
+      "sha256": "30cd2d6e66e8b56d6380b5d8ee12b5f0f52838e0ac77509e1d88719562b0a1f8",
+      "unchanged": true
+    },
+    {
+      "file": "grandroastery.html",
+      "sha256": "5b5da50c6ffdafb27df5ec252cd7356473a0a95b0038925e4dc568f3188270dd",
+      "unchanged": true
+    },
+    {
+      "file": "coffeein.html",
+      "sha256": "24d79ff4d91a26afa897b2a7e862d09c2f6e6b019f1bf0f32b663e5ba14a2804",
+      "unchanged": true
+    },
+    {
+      "file": "kavoholik.html",
+      "sha256": "35405f3ff8de7955b5fb3dca6d040b73085b8d1a4683d640af0b92e3ea762c64",
+      "unchanged": true
+    },
+    {
+      "file": "ajvencoffee.html",
+      "sha256": "9d95049ae0315dbf7dd4eaae86e88db5de58bdaac25ea9c9805852f4f77c72fb",
+      "unchanged": true
+    },
+    {
+      "file": "kavavra.html",
+      "sha256": "cbdda21363c36379e6f0b5cad664813caf65b7053213ec2c9ca29253abe1bc29",
+      "unchanged": true
+    }
+  ],
+  "paidAiCalls": 0
+}
