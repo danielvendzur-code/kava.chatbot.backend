@@ -3,6 +3,8 @@
 (function(scope){
   'use strict';
   const fold=s=>String(s||'').normalize('NFD').replace(/\p{Diacritic}/gu,'').toLowerCase();
+  const czechNotes={'bobuľové ovocie':'bobulové ovoce','bohatá pena':'bohatá pěna','horkosť':'hořkost','horká čokoláda':'hořká čokoláda','hutná pena':'hutná pěna','kvety':'květy','nízka acidita':'nízká acidita','orechy':'ořechy','slivky':'švestky','vyvážená chuť':'vyvážená chuť','zmes troch arabík':'směs tří arabik','čierne ríbezle':'černý rybíz'};
+  const labelNote=(note,cs=false)=>cs?(czechNotes[note]||note):note;
   const notes=p=>Array.isArray(p.notes)&&p.notes.length?[...new Set(p.notes.map(fold))].sort().join('|'):null;
   function composition(p){
     if(Number.isFinite(p.robustaPercent)&&p.robustaPercent>=0&&p.robustaPercent<=100)return String(p.robustaPercent);
@@ -23,7 +25,7 @@
       const groups=new Map();for(const p of pool){const v=value(p,key);if(!groups.has(v))groups.set(v,[]);groups.get(v).push(p);}
       if(groups.size<2||groups.size>4)continue;
       const options=[...groups].map(([v,items])=>{
-        const title=key==='detailNotes'?items[0].notes.join(' · '):v==='0'?t('Arabica bez robusty','Arabika bez robusty'):v==='100'?'100 % robusta':t('Arabica s ','Arabika s ')+v+' % robusty';
+        const title=key==='detailNotes'?items[0].notes.map(note=>labelNote(note,cs)).join(' · '):v==='0'?t('Arabica bez robusty','Arabika bez robusty'):v==='100'?'100 % robusta':t('Arabica s ','Arabika s ')+v+' % robusty';
         const detail=key==='detailNotes'?(items.length===1?items[0].name:items.length+t(' kávy s týmto profilom',' kávy s tímto profilem')):v==='0'?t('100 % arabica','100 % arabika'):v==='100'?t('Káva označená ako čistá robusta','Káva označená jako čistá robusta'):(100-Number(v))+' % '+t('arabica','arabika')+' · '+v+' % robusta';
         return {value:v,title,detail,textOnly:true};
       });
@@ -31,5 +33,5 @@
     }
     return null;
   }
-  scope.CXCoffeeDifferenceCore={next,matches,value};
+  scope.CXCoffeeDifferenceCore={next,matches,value,labelNote};
 })(typeof globalThis!=='undefined'?globalThis:window);

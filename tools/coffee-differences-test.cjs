@@ -10,3 +10,5 @@ const cuba=notes.options.find(o=>o.title.includes('tabak'));assert.ok(cuba);cons
 assert.equal(core.next([{name:'Nepomenovaná káva A',notes:[]},{name:'Nepomenovaná káva B',notes:[]}]),null,'Unknown facts cannot become a question');
 assert.equal(core.next([{name:'A',notes:['kakao','orechy']},{name:'B',notes:['orechy','kakao']}]),null,'Reordered identical notes are not a difference');
 assert.ok(notes.options.every(o=>o.textOnly&&o.title&&o.detail));console.log('PASS factual notes, composition, exact matching, unknown facts and identical note groups.');
+
+assert.equal(core.labelNote('orechy',true),'ořechy');assert.equal(core.labelNote('orechy',false),'orechy');

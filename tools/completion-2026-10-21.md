@@ -15,3 +15,5 @@ Dodatočná kontrola kávy našla chýbajúce rozhodnutie pri viacerých vhodný
 
 
 22. 10.: podľa novej požiadavky sú staršie odoslané ukážky zmrazené. Doplňujúce otázky sa načítajú iba v neodoslaných ukážkach Don Franko a Pražírna Brno cez samostatné coffee-jolka-app-current.js a coffee-quality-current.css. Pôvodných 20 HTML a pôvodné spoločné JS/CSS zostávajú po bajtoch zhodné s produkčným commitom 47d5c9b6aa580469fa593a5d8c6e2bd8706db330. Predchádzajúce testy Pražiarničky dokazujú logiku modulu, nejde o zmenu jej produkčnej stránky.
+
+22. 10., záverečná jazyková kontrola: chuťové tóny v dvoch českých neodoslaných ukážkach sa zobrazujú po česky aj v doplňujúcich otázkach, výsledku a rozbalenom zozname. Pôvodné chuťové hodnoty pre filtrovanie, názvy produktov a staršie ukážky sa nemenia.

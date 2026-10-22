@@ -23,6 +23,9 @@
     fallbacks = []
   } = DATA;
   const demo = DATA.demo;
+  const czechDemo=['donfranko','grain'].includes(window.COFFEE_DEMO_SLUG);
+  if(czechDemo){window.CX_FORCE_LANG='cs';window.CX_LANG='cs';}
+  const noteLabel=note=>window.CXCoffeeDifferenceCore?.labelNote(note,czechDemo||window.CX_LANG==='cs')??note;
   const baseStepCount=steps.length;
   const root = document.getElementById(demo.rootId);
 
@@ -199,7 +202,7 @@
           </div>
           <div class="showcase__card">
             <img src="${esc(heroProduct.photo)}" width="54" height="76" alt="" loading="lazy">
-            <div><small>Odporúčanie</small><b>${esc(heroProduct.name)}</b><span>${esc(heroProduct.notes.slice(0, 2).join(' · '))}</span></div>
+            <div><small>Odporúčanie</small><b>${esc(heroProduct.name)}</b><span>${esc(heroProduct.notes.slice(0, 2).map(noteLabel).join(' · '))}</span></div>
           </div>
         </aside>
       </section>
@@ -533,7 +536,7 @@
     }
     if (a.taste && (product.taste?.[a.taste] ?? 0) >= 0.6 && product.notes?.length) {
       // A taste-family score is not evidence of a specific flavour note.
-      out.push([T('Chuťový profil', 'Chuťový profil'), T('V chuti: ', 'V chuti: ') + product.notes.slice(0, 3).join(', ') + '.']);
+      out.push([T('Chuťový profil', 'Chuťový profil'), T('V chuti: ', 'V chuti: ') + product.notes.slice(0, 3).map(noteLabel).join(', ') + '.']);
     }
     if (a.caffeine === 'no' && product.decaf) out.push([T('Bez kofeínu', 'Bez kofeinu'), T('E-shop ju označuje ako bezkofeínovú.', 'E-shop ji označuje jako bezkofeinovou.')]);
     else if (a.caffeine === 'no' && product.lowCaffeine) out.push([T('Nízkokofeínová', 'Nízkokofeinová'), T('E-shop ju uvádza ako nízkokofeínovú, nie úplne bez kofeínu.', 'E-shop ji uvádí jako nízkokofeinovou, ne zcela bez kofeinu.')]);
@@ -558,7 +561,7 @@
     if (co === 'arabica' && cm === 'blend') parts.push(T(`100 % arabica, oproti ${main.name} neobsahuje robustu`, `100 % arabika, oproti ${main.name} neobsahuje robustu`));
     else if (co === 'blend' && cm === 'arabica' && withRobusta(other)) parts.push(T('zmes s robustou, plnšia a silnejšia', 'směs s robustou, plnější a silnější'));
     const fresh = (other.notes || []).filter((note) => !(main.notes || []).includes(note));
-    if (fresh.length) parts.push(T('v chuti ', 'v chuti ') + (other.notes || []).slice(0, 3).join(', '));
+    if (fresh.length) parts.push(T('v chuti ', 'v chuti ') + (other.notes || []).slice(0, 3).map(noteLabel).join(', '));
     if (Number.isFinite(main.acidity) && Number.isFinite(other.acidity) && main.acidity !== other.acidity) parts.push(other.acidity > main.acidity ? T('viac kyslosti', 'více kyselosti') : T('menej kyslosti', 'méně kyselosti'));
     if (other.decaf && !main.decaf) parts.push(T('bez kofeínu', 'bez kofeinu'));
     if (other.lowCaffeine && !other.decaf) parts.unshift(T('nízkokofeínová, nie úplne bez kofeínu', 'nízkokofeinová, ne zcela bez kofeinu'));
@@ -616,7 +619,7 @@
     const differences=current.unmet.map(key=>{
       const step=steps.find(step=>step.key===key),wanted=step?.options.find(option=>option.value===state.answers[key])?.title||'';
       const label={prep:'Príprava',caffeine:'Kofeín',taste:'Chuť',drink:'Spôsob pitia',acidity:'Acidita',intensity:'Intenzita'}[key]||key;
-      const offered=key==='intensity'?(product.intensitySource?product.intensitySource.replace(/^Kategórie e-shopu – |^Praženie na e-shope: /,''):'E-shop praženie neuvádza'):key==='prep'?product.bestFor||'Neuvedená':key==='taste'?product.notes.join(' · ')||'Neuvedená':key==='acidity'?acidityLabel:step?.options.filter(option=>(product[key]?.[option.value]??0)>=0.6).map(option=>option.title).join(' · ')||'Neuvedené';
+      const offered=key==='intensity'?(product.intensitySource?product.intensitySource.replace(/^Kategórie e-shopu – |^Praženie na e-shope: /,''):'E-shop praženie neuvádza'):key==='prep'?product.bestFor||'Neuvedená':key==='taste'?product.notes.map(noteLabel).join(' · ')||'Neuvedená':key==='acidity'?acidityLabel:step?.options.filter(option=>(product[key]?.[option.value]??0)>=0.6).map(option=>option.title).join(' · ')||'Neuvedené';
       return {label,wanted,offered};
     });
     const altPrice = alternative ? (alternative.variant ? alternative.variant.priceLabel || amountText(alternative.variant.price, alternative.entry.product.currency) : alternative.entry.product.price) : '';
@@ -629,7 +632,7 @@
           <div class="result__headline"><h2>${esc(product.name)}</h2>${product.line&&!variant?`<p>${esc(product.line)}</p>`:''}${variant?`<span class="result__variant">${esc(variant.label)}</span>`:''}<span class="result__price"><b>${esc(priceLabel)}</b>${!variant&&product.priceUnit?`<span>/ ${esc(product.priceUnit)}</span>`:''}</span>${variant?.ground?`<small class="result__weights">${esc(T('Predáva sa aj pomletá: ', 'Prodává se i mletá: ') + String(variant.ground.label || '').replace(/^\d+\s*g\s*·\s*/, '').toLowerCase() + ' · ' + (variant.ground.priceLabel || amountText(variant.ground.price, product.currency)))}</small>`:''}${product.roast ? `<small class="result__weights">${esc(product.roast)}</small>` : ''}</div>
         </div>
         <div class="result__body">
-          ${reasons.length ? `<ul class="result__reasons">${reasons.map(([title, text]) => `<li><b>${esc(title)}</b><span>${esc(text)}</span></li>`).join('')}</ul>` : `<div class="notes">${product.notes.map((note) => `<span>${esc(note)}</span>`).join('')}</div>`}
+          ${reasons.length ? `<ul class="result__reasons">${reasons.map(([title, text]) => `<li><b>${esc(title)}</b><span>${esc(text)}</span></li>`).join('')}</ul>` : `<div class="notes">${product.notes.map((note) => `<span>${esc(noteLabel(note))}</span>`).join('')}</div>`}
           ${whyText ? `<div class="why"><p>${esc(whyText)}</p></div>` : ''}
           ${facts.length ? `<div class="facts">${facts.join('')}</div>` : ''}
           ${differences.length?`<details class="result__differences"><summary>Rozdiely oproti vášmu výberu</summary><dl>${differences.map(item=>`<div><dt>${esc(item.label)}</dt><dd><small>Váš výber</small><span>${esc(item.wanted)}</span><small>Táto káva</small><span>${esc(item.offered)}</span></dd></div>`).join('')}</dl></details>`:''}
@@ -650,7 +653,7 @@
       const more=document.createElement('details');more.className='coffee-more-matches';
       const title=document.createElement('summary');title.textContent='Ďalšie kávy spĺňajúce váš výber ('+exact.filter(e=>e.product.id!==product.id).length+')';more.append(title);
       const list=document.createElement('div');let count=0;
-      function append(){const rows=exact.filter(e=>e.product.id!==product.id).slice(count,count+24);for(const row of rows){const p=row.product;const v=pickVariant(p,state.answers);const link=document.createElement('a');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.className='coffee-match-link';link.innerHTML='<img src="'+esc(p.photo)+'" alt="" loading="lazy"><span><b>'+esc(p.name)+'</b><small>'+esc(displayedPack(p,v))+'</small><small>'+esc(p.notes.join(' · '))+'</small><strong>'+esc(v ? v.priceLabel || amountText(v.price,p.currency) : p.price)+'</strong></span>';list.append(link);}count+=rows.length;}
+      function append(){const rows=exact.filter(e=>e.product.id!==product.id).slice(count,count+24);for(const row of rows){const p=row.product;const v=pickVariant(p,state.answers);const link=document.createElement('a');link.href=p.url;link.target='_blank';link.rel='noopener noreferrer';link.className='coffee-match-link';link.innerHTML='<img src="'+esc(p.photo)+'" alt="" loading="lazy"><span><b>'+esc(p.name)+'</b><small>'+esc(displayedPack(p,v))+'</small><small>'+esc(p.notes.map(noteLabel).join(' · '))+'</small><strong>'+esc(v ? v.priceLabel || amountText(v.price,p.currency) : p.price)+'</strong></span>';list.append(link);}count+=rows.length;}
       append();more.append(list);if(exact.filter(e=>e.product.id!==product.id).length>count){const next=document.createElement('button');next.className='ghost';next.type='button';next.textContent='Načítať ďalšie';next.addEventListener('click',()=>{append();if(count>=exact.filter(e=>e.product.id!==product.id).length)next.remove();});more.append(next);}advisor.append(more);
     }
     const alternativeButton = $('.alt__card', advisor);
