@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#111111">
+  <title>black. – kávový poradca</title>
+  <meta name="description" content="Ukážka kávového poradcu pripravená pre pražiareň black.">
+  <link rel="icon" href="https://www.black.sk/images/source/black-logo-b.png">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css?v=43ec8a95">
+  <link rel="stylesheet" href="/n447/coffee-advisor.css">
+</head>
+<body>
+  <div id="app"></div>
+  <noscript>Ukážka potrebuje zapnutý JavaScript.</noscript>
+  <script type="module">
+    import BLACK from '/n447/data/black.mjs';
+    import {mount} from '/n447/coffee-advisor.mjs';
+    window.__N447__ = mount(BLACK);
+  </script>
+</body>
+</html>

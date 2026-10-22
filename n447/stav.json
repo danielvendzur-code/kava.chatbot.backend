@@ -1,0 +1,47 @@
+{
+  "batch": "nove-ukazky-447-2026-10-22",
+  "price": {"setupEUR": 447, "monthlyEUR": 10, "freeTrial": false},
+  "updatedAt": "2026-10-22",
+  "companies": [
+    {
+      "slug": "black",
+      "name": "BLACK. (pražiareň black.)",
+      "aliases": ["black.", "pražiareň black.", "black caffe"],
+      "shop": "https://www.black.sk/sk/e-shop/kava",
+      "contact": "ahoj@black.sk",
+      "contactSource": "https://www.black.sk/sk/kontakt",
+      "otherContact": "roastery@black.sk (pražiareň)",
+      "checkedAt": "2026-10-22",
+      "deduplication": {"register152": "not present", "aliasesInRegister": "none", "mailHistory": "NOT_CHECKED_no_webmail_access_in_this_session"},
+      "scope": "15 zrnkových/mletých káv (všetky v kategórii káva) + drip bags drippin.; vylúčené: 3× kapsule, cascara, doplnky (prázdne), merch (prázdny)",
+      "sourceEvidence": "Každý z 16 produktových detailov prečítaný 2026-10-22 na www.black.sk (praženie, balenia, mletie, pôvod, chuť, rozsah ceny, og:image 1000×1000); recept V60 z https://www.black.sk/sk/hario-v60",
+      "knownLimits": [
+        "E-shop zobrazuje pri káve iba rozsah ceny; cena konkrétneho balenia sa načíta až po výbere v prehliadači. Ukážka preto uvádza iba 'od X €' a cenu balenia netvrdí.",
+        "Rozpočet je postavený na spodnej hranici ceny (najlacnejšia kombinácia), nie na cene konkrétneho balenia.",
+        "Doplnok (drip/príslušenstvo) sa ako povinný nákup neponúka: doplnky a merch sú v e-shope prázdne; drippin. je samostatná vetva 'bez pomôcok'. Spoločný súčet zostavy preto nevzniká.",
+        "black sheep má na e-shope akciovú cenu bez uvedeného dátumu konca; ukážka počíta s bežnou cenou 10,50 € a akciu spomína bez čísla.",
+        "Skladový stav e-shop na detaile neuvádza; ukážka netvrdí 'skladom'."
+      ],
+      "implementation": "READY_TO_REVIEW (lokálne overené); súbory black.html, n447/*, api/chat-447.js; staré súbory nezmenené",
+      "tests": {
+        "nodeEngine": "PASS – 72 ciest skutočným jadrom, max 5 otázok, 61 ciest s doplňujúcou otázkou na tóny, 31 ciest s rozpočtovým limitom, 0 prázdnych výsledkov",
+        "chatOffline": "PASS – 10 otázok vrátane doplňujúcej s kontextom",
+        "apiMock": "PASS – správna odpoveď prejde; vymyslená cena a cudzí odkaz odmietnuté; chyba 529 a chýbajúci kľúč = overená odpoveď; neznámy slug 400; 4 podvrhnuté volania, 0 platených",
+        "browser": "PASS – 320×568, 390×650, 560×600, 1280×800; 72 ciest × 4 = 288 priechodov, 1 644 obrazoviek; bez scrollu v otázkach, bez vodorovného scrollu, bez duplicitnej fotky, bez undefined/NaN; /api/** blokované; späť/reset/Escape/klávesnica; reload, ?demo=mylo a #grain stále black; localStorage prázdny",
+        "frozen": "PASS – tools/frozen-demo-check.cjs (20 starých káv + pôvodné spoločné JS/CSS)",
+        "screenshotSizes": ["320x568", "390x650", "560x600", "1280x800"]
+      },
+      "commit": null,
+      "branch": "claude/n447-black-20261022",
+      "preview": null,
+      "productionURL": null,
+      "routing": "Subdoména black.mojchatbot.sk ešte NIE je vo vercel.json; Preview je na ceste /black.html. Pridanie do rewrites je samostatný aditívny krok až pri schválení produkcie.",
+      "email": "DRAFT (n447/email-black.md) – neodoslaný, nenaplánovaný",
+      "openQuestions": [
+        "Vercel: konektor nemá prístup k tímu team_xJCHkDHUMXQ0lqpImtY3Fbvr (403); bez neho nevieme overiť stav Preview ani to, ktorá vetva je produkčná.",
+        "História pošty: deduplikácia v Odoslaných/konceptoch nie je overená (webmail v tejto relácii nie je dostupný)."
+      ],
+      "next": "Overiť Preview po sprístupnení tímu; potom Verticcio."
+    }
+  ]
+}

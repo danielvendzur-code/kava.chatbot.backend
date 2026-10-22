@@ -1,0 +1,132 @@
+/* Nová dávka ukážok (447 € + 10 €/mes.) – izolované štýly; nepoužívajú ich žiadne staršie ukážky. */
+:root{--ink:#111;--paper:#fff;--soft:#f4f2ef;--line:#e3e0db;--muted:#66625d;--accent:#111;--focus:#2b6cb0;--r:14px;
+  font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--paper)}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:var(--paper)}
+body.n447-open{overflow:hidden}
+button,input{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+
+/* Stránka pre majiteľa */
+.n447-page{max-width:1080px;margin:0 auto;padding:20px 16px 120px}
+.n447-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:4px 0 18px;border-bottom:1px solid var(--line)}
+.n447-top img{height:34px;width:auto;display:block}
+.n447-flag{font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:99px;padding:6px 10px;white-space:nowrap}
+.n447-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:32px;align-items:center;padding:40px 0}
+.n447-hero h1{font-size:clamp(28px,4.4vw,46px);line-height:1.08;margin:8px 0 14px;letter-spacing:-.02em}
+.n447-eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+.n447-lead{font-size:17px;line-height:1.55;color:#333;margin:0 0 22px;max-width:560px}
+.n447-cta{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:#fff;border:0;border-radius:99px;padding:14px 22px;font-weight:700;cursor:pointer}
+.n447-shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.n447-shots figure{margin:0;background:var(--soft);border-radius:var(--r);overflow:hidden;aspect-ratio:1}
+.n447-shots img{width:100%;height:100%;object-fit:cover;display:block}
+.n447-shots figcaption{position:absolute;left:-9999px}
+.n447-owner{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:8px 0 28px}
+.n447-owner article{border:1px solid var(--line);border-radius:var(--r);padding:16px}
+.n447-owner b{display:block;margin-bottom:6px}
+.n447-owner p{margin:0;color:#444;font-size:14px;line-height:1.5}
+.n447-offer{border:1px solid var(--ink);border-radius:var(--r);padding:18px;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline}
+.n447-offer strong{font-size:22px}
+.n447-offer span{color:#444;font-size:14px}
+.n447-by{font-size:12px;color:var(--muted);margin-top:18px}
+@media (max-width:760px){.n447-hero{grid-template-columns:1fr;padding:24px 0}.n447-owner{grid-template-columns:1fr}}
+
+/* Spúšťač */
+.n447-launcher{position:fixed;right:18px;bottom:18px;z-index:40;display:flex;align-items:center;gap:10px;background:var(--accent);color:#fff;border:0;border-radius:99px;padding:12px 18px 12px 14px;font-weight:700;box-shadow:0 10px 30px rgba(0,0,0,.18);cursor:pointer}
+.n447-launcher svg,.n447-cta svg{width:20px;height:20px;flex:0 0 20px}
+.n447-launcher[hidden]{display:none}
+
+/* Widget */
+.n447-w{position:fixed;z-index:50;right:18px;bottom:18px;width:400px;height:min(700px,calc(100dvh - 36px));background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:0 20px 60px rgba(0,0,0,.2);display:none;flex-direction:column;overflow:hidden}
+.n447-w.is-open{display:flex}
+@media (max-width:560px){.n447-w{inset:0;width:100%;height:100dvh;border-radius:0;border:0}}
+.n447-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px 10px 16px;border-bottom:1px solid var(--line);flex:0 0 auto}
+.n447-head .brand{display:flex;align-items:center;gap:10px;min-width:0}
+.n447-head .brand img{height:24px;width:auto}
+.n447-head .brand small{display:block;font-size:11px;color:var(--muted)}
+.n447-head .brand small i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#3a9a5b;margin-right:5px;vertical-align:1px}
+.n447-icons{display:flex;gap:6px}
+.n447-icon{width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--paper);display:grid;place-items:center;cursor:pointer}
+.n447-icon svg{width:18px;height:18px}
+.n447-tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;margin:8px 12px;padding:4px;background:var(--soft);border-radius:99px;flex:0 0 auto}
+.n447-tab{border:0;background:transparent;border-radius:99px;height:34px;font-weight:650;font-size:14px;color:var(--muted);cursor:pointer}
+.n447-tab[aria-selected="true"]{background:var(--accent);color:#fff}
+.n447-screen{flex:1 1 auto;min-height:0;display:flex;flex-direction:column}
+.n447-screen[hidden]{display:none}
+.n447-note{flex:0 0 auto;text-align:center;font-size:11px;color:var(--muted);padding:5px 0 7px;border-top:1px solid var(--line)}
+.n447-note a{text-decoration:none}
+
+/* Otázky */
+.n447-bar{display:flex;align-items:center;gap:10px;padding:2px 14px 8px;flex:0 0 auto}
+.n447-back{border:0;background:none;padding:6px 4px;color:var(--muted);cursor:pointer;font-size:13px;display:flex;align-items:center;gap:2px}
+.n447-back[disabled]{opacity:.35;cursor:default}
+.n447-back svg{width:16px;height:16px}
+.n447-prog{flex:1;height:4px;background:var(--soft);border-radius:4px;overflow:hidden}
+.n447-prog i{display:block;height:100%;background:var(--accent);transition:width .25s}
+.n447-step{font-size:12px;font-weight:700;white-space:nowrap}
+.n447-body{flex:1 1 auto;min-height:0;overflow:hidden;padding:4px 14px 12px;display:flex;flex-direction:column}
+.n447-body.is-result{overflow-y:auto}
+.n447-q{font-size:20px;line-height:1.25;margin:4px 0 4px;letter-spacing:-.01em}
+.n447-sub{font-size:12px;color:var(--muted);margin:0 0 10px}
+.n447-opts{display:flex;flex-direction:column;gap:8px;min-height:0}
+.n447-opt{display:flex;align-items:center;gap:12px;width:100%;text-align:left;border:1px solid var(--line);background:var(--paper);border-radius:var(--r);padding:8px;cursor:pointer;min-height:0;transition:border-color .15s,background .15s}
+.n447-opt:hover{border-color:#bdb8b1}
+.n447-opt[aria-pressed="true"]{border-color:var(--ink);background:var(--soft);box-shadow:inset 0 0 0 1px var(--ink)}
+.n447-opt .ph{flex:0 0 84px;width:84px;height:64px;border-radius:10px;overflow:hidden;background:var(--soft)}
+.n447-opt .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.n447-opt .ph.contain img{object-fit:contain;padding:4px}
+.n447-opt .tx{min-width:0;flex:1}
+.n447-opt b{display:block;font-size:15px;line-height:1.25}
+.n447-opt small{display:block;font-size:12.5px;line-height:1.35;color:var(--muted);margin-top:2px}
+.n447-opt.text{padding:11px 14px}
+.n447-pager{display:flex;justify-content:space-between;align-items:center;margin-top:8px;font-size:12px;color:var(--muted)}
+.n447-pager button{border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:7px 14px;font-weight:650;cursor:pointer}
+.n447-pager button[disabled]{opacity:.35;cursor:default}
+@media (max-height:620px){.n447-opt .ph{height:54px;flex-basis:72px;width:72px}.n447-q{font-size:18px}.n447-opt.text{padding:9px 12px}.n447-opts{gap:7px}}
+
+/* Výsledok */
+.n447-res .badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--soft);border-radius:99px;padding:5px 10px;margin:2px 0 10px}
+.n447-res .hero{display:grid;grid-template-columns:104px minmax(0,1fr);gap:14px;align-items:start}
+.n447-res .hero img{width:104px;height:104px;object-fit:contain;background:var(--soft);border-radius:12px}
+.n447-res h2{font-size:20px;line-height:1.2;margin:0 0 4px}
+.n447-res .origin{font-size:12.5px;color:var(--muted);margin:0 0 6px}
+.n447-res .price{font-size:18px;font-weight:800}
+.n447-res .price small{font-size:12px;font-weight:500;color:var(--muted);display:block}
+.n447-res p.sum{font-size:14px;line-height:1.5;margin:12px 0}
+.n447-res h3{font-size:13px;margin:14px 0 6px;text-transform:uppercase;letter-spacing:.06em}
+.n447-res ul.reasons{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+.n447-res ul.reasons li{border-left:3px solid var(--ink);padding:2px 0 2px 10px;font-size:13.5px;line-height:1.4}
+.n447-res ul.reasons b{display:block}
+.n447-res dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;margin:0;font-size:13px}
+.n447-res dt{color:var(--muted)}
+.n447-res dd{margin:0}
+.n447-res .order{background:var(--soft);border-radius:12px;padding:10px 12px}
+.n447-res .alt{display:flex;gap:10px;align-items:center;width:100%;text-align:left;border:1px solid var(--line);border-radius:12px;padding:8px;background:var(--paper);cursor:pointer}
+.n447-res .alt img{width:52px;height:52px;object-fit:contain;background:var(--soft);border-radius:8px;flex:0 0 52px}
+.n447-res .alt b{display:block;font-size:14px}
+.n447-res .alt small{display:block;font-size:12.5px;color:var(--muted)}
+.n447-res ol{margin:0;padding-left:18px;font-size:13.5px;line-height:1.5}
+.n447-res .more{font-size:13px;margin-top:6px}
+.n447-res .ship{font-size:12.5px;color:var(--muted);margin:12px 0 0}
+.n447-foot{flex:0 0 auto;padding:10px 14px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:8px}
+.n447-foot[hidden]{display:none}
+.n447-foot a{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;border-radius:99px;padding:12px;font-weight:700;text-decoration:none}
+.n447-foot svg{width:18px;height:18px;flex:0 0 18px}
+.n447-foot a,.n447-foot button{min-height:44px}
+.n447-foot button{border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:0 16px;font-weight:650;cursor:pointer}
+
+/* Chat */
+.n447-chat{flex:1 1 auto;min-height:0;overflow-y:auto;padding:8px 14px;display:flex;flex-direction:column;gap:8px}
+.n447-msg{max-width:88%;padding:9px 12px;border-radius:14px;font-size:14px;line-height:1.45;background:var(--soft);white-space:normal;overflow-wrap:anywhere}
+.n447-msg.me{align-self:flex-end;background:var(--ink);color:#fff}
+.n447-msg a{font-weight:700}
+.n447-msg.typing{color:var(--muted)}
+.n447-chips[hidden]{display:none}
+.n447-chips{display:flex;flex-wrap:wrap;gap:6px;padding:4px 14px;flex:0 0 auto}
+.n447-chips button{flex:0 0 auto;border:1px solid var(--line);background:var(--paper);border-radius:99px;padding:7px 12px;font-size:13px;cursor:pointer}
+.n447-form{display:flex;gap:8px;padding:8px 14px 10px;flex:0 0 auto}
+.n447-form input{flex:1;min-width:0;border:1px solid var(--line);border-radius:99px;padding:11px 14px;font-size:15px}
+.n447-form button{border:0;background:var(--accent);color:#fff;border-radius:99px;width:44px;flex:0 0 44px;display:grid;place-items:center;cursor:pointer}
+.n447-form button svg{width:18px;height:18px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
