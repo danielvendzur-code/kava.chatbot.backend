@@ -1,16 +1,17 @@
 /* Chat pre novú dávku ukážok (447 € + 10 €/mes.). Oddelený od api/chat.js, aby staré ukážky
    nedostali žiadnu vedľajšiu zmenu. Overený návrh odpovede pripraví n447/reply.js z dát pražiarne;
    nezmenený aiAnswer (produkčný model) ho môže prirodzene preformulovať a odmietne neoverenú cenu či odkaz. */
-import {createRequire} from 'node:module';
 import {aiAnswer} from './ai-chat.js';
+import ENG from '../n447/engine.js';
+import REPLY from '../n447/reply.js';
+import BLACK from '../n447/data/black.js';
+import VERTICCIO from '../n447/data/verticcio.js';
 
-const require = createRequire(import.meta.url);
-const ENG = require('../n447/engine.js');
-const {coffeeReply} = require('../n447/reply.js');
+const {coffeeReply} = REPLY;
 const euro = (v, c) => ENG.money(v, c).replace(/ /g, ' ');
 
 /* Iba firmy novej dávky; neznámy identifikátor dostane 400, nikdy cudziu firmu. */
-export const DEMOS = {black: require('../n447/data/black.js'), verticcio: require('../n447/data/verticcio.js')};
+export const DEMOS = {black: BLACK, verticcio: VERTICCIO};
 
 export function catalogueFor(data) {
   const products = data.products.filter((p) => p.available !== false).map((p) => ({
