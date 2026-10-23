@@ -1,0 +1,86 @@
+/* Overená odpoveď chatu pre novú dávku (447 € + 10 €/mes.). Odpovedá iba z dát konkrétnej pražiarne.
+   Používa ju izolovaný poradca (okamžitá odpoveď) aj API (návrh, ktorý AI môže preformulovať).
+   Cena konkrétneho balenia iba z overených variantov; inak výslovne „orientačne od“. */
+(function (g) {
+  'use strict';
+  const E = g.N447Engine || (typeof require === 'function' ? require('./engine.js') : null);
+  const money = (v, c) => E.money(v, c).replace(/ /g, ' ');
+  const fold = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+  const verified = (p) => (p.variants || []).filter((v) => v.verifiedAt && Number.isFinite(v.price));
+  const packText = (p) => verified(p).map((v) => E.grams(v.grams) + ' ' + v.roast + ' roast, ' + String(v.grind).toLowerCase() + ': ' + money(v.price, p.currency)).join('; ');
+  const priceShort = (p) => p.kind === 'drip' ? money(p.price, p.currency) : verified(p).length ? E.grams(verified(p)[0].grams) + ' za ' + money(verified(p)[0].price, p.currency) : 'orientačne od ' + money(p.priceFrom, p.currency);
+  const line = (p) => p.name + ' — ' + priceShort(p) + '\n' + p.url;
+  const tones = (p) => p.notes && p.notes.length ? p.notes.slice(0, 4).join(', ') : (p.profile || '');
+  const roastText = (p) => (p.roasts || []).join(' aj ');
+  const weights = (p) => (p.weights || []).map(E.grams).join(', ');
+
+  function keyWords(p) {
+    const tail = fold(p.name.split('•').pop()).replace(/\b(aa|ab|decaf)\b/g, '').trim();
+    return [tail].concat(tail.split(/\s+/).filter((w) => w.length >= 5));
+  }
+  function mentioned(data, text) {
+    const brand = fold(data.brand.name).replace(/[^a-z0-9]/g, '');
+    const q = fold(text).replace(/https?:\/\/\S+/g, ' ');
+    return data.products.concat(data.drip ? [data.drip] : []).map((p) => {
+      const idx = keyWords(p).filter((k) => k && k !== brand).map((k) => q.indexOf(k)).filter((i) => i >= 0);
+      if (p.kind === 'drip' && q.includes(fold(p.name).replace(/[^a-z]/g, ''))) idx.push(q.indexOf(fold(p.name).replace(/[^a-z]/g, '')));
+      return [idx.length ? Math.min.apply(null, idx) : Infinity, p];
+    }).filter((x) => Number.isFinite(x[0])).sort((a, b) => a[0] - b[0]).map((x) => x[1]);
+  }
+  function facts(p) {
+    if (p.kind === 'drip') return p.name + ' je balenie ' + p.pack + ' za ' + money(p.price, p.currency) + '. Vyberáte si kávu: ' + p.options.map((o) => o.title).join(' alebo ') + '.\n' + p.url;
+    const bits = [p.name + ':', p.summary, tones(p) ? 'V chuti: ' + tones(p) + '.' : '', 'Pôvod: ' + p.origin + (p.process ? ', spracovanie ' + p.process : '') + '.', 'Praženie: ' + roastText(p) + '; balenia ' + weights(p) + '.'];
+    return bits.filter(Boolean).join(' ') + (packText(p) ? '\nCeny: ' + packText(p) + '.' : '\nOrientačne od ' + money(p.priceFrom, p.currency) + '; presnú cenu balenia ukáže e-shop po výbere.') + '\n' + p.url;
+  }
+
+  function coffeeReply(data, text, history) {
+    history = history || [];
+    const q = fold(text);
+    const coffees = data.products.filter((p) => p.available !== false && p.kind === 'coffee');
+    const regular = coffees.filter((p) => !p.decaf);
+    const byTaste = (t, roast) => regular.filter((p) => p.taste === t && (!roast || p.roasts.includes(roast) || p.roasts.includes('omni'))).sort((a, b) => a.priceFrom - b.priceFrom).slice(0, 2);
+    let named = mentioned(data, text);
+    if (!named.length && /cen|stoj|kolko|balen|prazen|mlet|chut|povod|odkial|kysl/.test(q)) {
+      const last = history.slice().reverse().find((m) => m.role === 'assistant');
+      if (last) named = mentioned(data, last.content).slice(0, 1);
+    }
+    if (named.length >= 2 && /porovn|rozdiel|alebo|vs|lepsi|ktor/.test(q)) {
+      const desc = (p) => p.kind === 'drip' ? p.name + ': ' + p.pack : p.name + ': ' + tones(p) + '; ' + (p.process || '') + '; praženie ' + roastText(p);
+      return desc(named[0]) + '.\n' + desc(named[1]) + '.\n' + line(named[0]) + '\n' + line(named[1]);
+    }
+    if (named.length && /cen|stoj|kolko/.test(q) && named[0].kind !== 'drip') {
+      const p = named[0];
+      return packText(p) ? p.name + ': ' + packText(p) + '.\n' + p.url
+        : p.name + ' má v e-shope orientačnú cenu od ' + money(p.priceFrom, p.currency) + '; balenia ' + weights(p) + '. Presnú cenu konkrétneho balenia e-shop ukáže po výbere.\n' + p.url;
+    }
+    if (named.length) return facts(named[0]);
+    if (/bez ?kofe|decaf|vecer/.test(q)) {
+      const d = coffees.find((p) => p.decaf);
+      return d ? 'Bez kofeínu je ' + d.name + '. ' + d.summary + '\n' + line(d) : 'Kávu bez kofeínu v ponuke momentálne nevidím.';
+    }
+    if (/kapsul|nespresso/.test(q)) return 'Tento výber odporúča zrnkovú a mletú kávu. Kapsule nájdete v e-shope samostatne; kompatibilitu si overte priamo pri produkte.\n' + data.brand.shopUrl;
+    if (data.drip && /drip|vreck|vrecus|cest|kancel|bez kavovar|bez pomuc|hotel|chata/.test(q)) return 'Na cesty sa hodí ' + data.drip.name + ': ' + data.drip.pack + ', stačí šálka a horúca voda.\n' + line(data.drip);
+    if (/doprav|postovn|doruc|zasiel/.test(q)) return data.shop && data.shop.freeShipping ? data.shop.freeShipping + ' Ďalšie možnosti dopravy a platby nájdete pri objednávke v e-shope.' : 'Možnosti dopravy a platby nájdete pri objednávke v e-shope.\n' + data.brand.shopUrl;
+    if (/kontakt|mail|telef|adres/.test(q)) return data.brand.name + ' je k dispozícii na ' + data.brand.contact + '.';
+    if (/v60|hario|filtr|filter|aeropress|french|chemex|prekvap/.test(q)) {
+      const recs = byTaste('fresh', 'filter').concat(byTaste('fruitFull', 'filter')).slice(0, 2);
+      const recipe = /v60|hario/.test(q) && data.guides && data.guides.v60 ? '\nRecept pražiarne na V60: ' + data.guides.v60.steps[0] + ' ' + data.guides.v60.url : '';
+      return 'Na filter sa hodia kávy vo filter pražení, napríklad:\n' + recs.map(line).join('\n') + '\nPri objednávke zvoľte mletie podľa pomôcky alebo zrnkovú.' + recipe;
+    }
+    if (/cokol|karamel|orech|oriesk|horka|tmav|klasick|mliek|capp|latte|automat|pakov|espresso|moka/.test(q)) {
+      const recs = byTaste('choco', 'espresso');
+      return 'Ak chcete sladšiu, čokoládovú chuť do kávovaru, skúste:\n' + recs.map((p) => line(p) + '\n(V chuti: ' + tones(p) + '.)').join('\n') + '\nDo automatu zvoľte zrnkovú.';
+    }
+    if (/ovoc|bobul|visn|malin|cucori|tropic/.test(q)) return 'Plnú ovocnú chuť majú napríklad:\n' + byTaste('fruitFull').map((p) => line(p) + '\n(V chuti: ' + tones(p) + '.)').join('\n');
+    if (/kysl|sviez|citrus|ribez|caj|lahk|jemn/.test(q)) return 'Sviežu, šťavnatú chuť majú napríklad:\n' + byTaste('fresh').map((p) => line(p) + '\n(V chuti: ' + tones(p) + '.)').join('\n');
+    if (/cen|lacn|najlacn|stoj|kolko|rozpoc/.test(q)) {
+      const cheap = regular.slice().sort((a, b) => a.priceFrom - b.priceFrom).slice(0, 2);
+      return 'Najnižšie orientačné ceny v ponuke majú:\n' + cheap.map(line).join('\n') + '\nPresná cena závisí od balenia a mletia; e-shop ju ukáže po výbere.';
+    }
+    const start = byTaste('choco', 'espresso')[0] || regular[0];
+    return 'Rád pomôžem vybrať kávu z ponuky ' + data.brand.name + '. Napíšte, ako kávu pripravujete a akú chuť máte radi, alebo skúste krátky výber vo Výbere kávy. Na začiatok napríklad:\n' + line(start);
+  }
+  const api = {coffeeReply, mentioned};
+  g.N447Reply = api;
+  if (typeof module !== 'undefined' && module.exports) module.exports = api;
+})(typeof globalThis !== 'undefined' ? globalThis : window);

@@ -1,134 +1,115 @@
-"""Prehliadačová kontrola novej dávky (447 € + 10 €/mes.).
-Prejde všetky cesty v každom rozmere, /api/** je blokované (žiadne platené volania).
-python3 tools/n447_browser_check.py --slug=black --base=http://127.0.0.1:8947 --out=DIR
+"""Prehliadačová kontrola novej dávky v schválenom UI (izolovaná kópia coffee-jolka-app-current.js).
+Prejde všetky cesty skutočného jadra na 4 rozmeroch; /api/** je blokované (žiadne platené volania).
+python3 tools/n447_browser_check.py --slug=black --base=http://127.0.0.1:8947 --out=DIR [--compare=grain]
 """
-import json, sys, os, re
+import json, os, re, sys
+from urllib.parse import urlparse
 from playwright.sync_api import sync_playwright
 
-args = dict(a[2:].split('=', 1) for a in sys.argv[1:] if a.startswith('--') and '=' in a)
-SLUG, BASE, OUT = args.get('slug', 'black'), args.get('base', 'http://127.0.0.1:8947'), args.get('out', '.')
-FULL = args.get('full', '1') == '1'
-os.makedirs(OUT, exist_ok=True)
+A = dict(x[2:].split('=', 1) for x in sys.argv[1:] if x.startswith('--') and '=' in x)
+SLUG, BASE, OUT, COMPARE = A.get('slug', 'black'), A.get('base', 'http://127.0.0.1:8947'), A.get('out', '.'), A.get('compare')
 SIZES = [(320, 568), (390, 650), (560, 600), (1280, 800)]
+os.makedirs(OUT, exist_ok=True)
 
 PROBE = r"""() => {
-  const w=document.getElementById('w'), body=document.getElementById('body');
-  const q=!body.classList.contains('is-result');
-  const imgs=[...w.querySelectorAll('img')].filter(i=>i.offsetParent!==null);
-  const optImgs=[...body.querySelectorAll('.n447-opt img')].map(i=>i.getAttribute('src'));
-  const vis=[...w.querySelectorAll('.n447-opt,.n447-pager button,#cta,#again,#back')].filter(e=>e.offsetParent!==null);
-  const wr=w.getBoundingClientRect();
-  const clipped=vis.filter(e=>{const r=e.getBoundingClientRect();return r.bottom>wr.bottom+1||r.right>wr.right+1||r.left<wr.left-1;}).map(e=>e.textContent.trim().slice(0,30));
-  const text=w.innerText;
-  return {question:q, title:(body.querySelector('h2')||{}).textContent||'', step:document.getElementById('step').textContent,
-    bodyOverflow: q ? body.scrollHeight-body.clientHeight : 0,
-    hScroll: document.documentElement.scrollWidth-innerWidth, clipped,
-    dupPhotos: optImgs.length-new Set(optImgs).size, optCount: body.querySelectorAll('.n447-opt').length,
-    badText: /undefined|NaN|\bnull\b|fallback|katalógové skóre/.test(text),
-    links:[...w.querySelectorAll('a[href]')].map(a=>a.href),
-    imgs: imgs.map(i=>({src:i.getAttribute('src'),ok:i.complete&&i.naturalWidth>0,local:i.getAttribute('src').startsWith('/')}))};
+  const w = document.getElementById('widget'), adv = document.getElementById('advisor');
+  const q = adv.classList.contains('is-questions');
+  const opts = [...adv.querySelectorAll('.option')];
+  const srcs = opts.map(o => o.querySelector('img')?.getAttribute('src')).filter(Boolean);
+  const wr = w.getBoundingClientRect();
+  const clipped = [...w.querySelectorAll('.option,#back,#addToCart,#restart,.mode__button')].filter(e => e.offsetParent !== null)
+    .filter(e => { const r = e.getBoundingClientRect(); return r.bottom > wr.bottom + 1 || r.right > wr.right + 1 || r.left < wr.left - 1; }).map(e => e.textContent.trim().slice(0, 24));
+  const txt = w.innerText;
+  return {q, title: adv.querySelector('h2')?.textContent || '', values: opts.map(o => o.dataset.value),
+    overflow: q ? adv.scrollHeight - adv.clientHeight : 0, hscroll: document.documentElement.scrollWidth - innerWidth,
+    clipped, dup: srcs.length - new Set(srcs).size,
+    tallest: Math.max(0, ...opts.map(o => o.getBoundingClientRect().height)), widgetH: wr.height,
+    bad: /undefined|NaN|\bnull\b|fallback|katalógové skóre|informácie z e-shopu/.test(txt),
+    foreign: /Pražírna|Don Franko|grain|donfranko|247 €|zdarma/.test(document.body.innerText),
+    links: [...document.querySelectorAll('a[href]')].map(a => a.href),
+    broken: [...w.querySelectorAll('img')].filter(i => i.offsetParent !== null && i.complete && i.naturalWidth === 0).map(i => i.getAttribute('src'))};
 }"""
 
+def settle(pg):
+    try: pg.wait_for_function("[...document.querySelectorAll('#widget img')].filter(i=>i.offsetParent!==null).every(i=>i.complete)", timeout=6000)
+    except Exception: pass
+    pg.wait_for_timeout(80)
+
+def open_widget(pg):
+    pg.click('[data-release-open="advisor"]'); pg.wait_for_timeout(450)
+
+def choose(pg, value):
+    pg.click(f'#advisor .option[data-value="{value}"]'); pg.wait_for_timeout(620)
+
 def main():
-    from urllib.parse import urlparse
-    sys.path.insert(0, os.getcwd())
-    report = {'slug': SLUG, 'sizes': {}, 'apiCallsBlocked': 0, 'console': [], 'failedRequests': []}
+    report = {'slug': SLUG, 'sizes': {}, 'apiBlocked': 0, 'console': [], 'storage': None}
     with sync_playwright() as p:
         br = p.chromium.launch()
-        for (W, H) in SIZES:
+        paths = None
+        for W, H in SIZES:
             key = f'{W}x{H}'
-            ctx = br.new_context(viewport={'width': W, 'height': H}, device_scale_factor=1)
-            page = ctx.new_page()
-            def block(route):
-                report['apiCallsBlocked'] += 1
-                route.fulfill(status=503, body='{}')
-            page.route('**/api/**', block)
-            page.on('console', lambda m: m.type in ('error', 'warning') and report['console'].append(f'{key}: {m.text}'[:200]))
-            page.on('requestfailed', lambda r: report['failedRequests'].append(f'{key}: {r.url[:120]}'))
-            page.goto(f'{BASE}/{SLUG}.html', wait_until='networkidle')
-            page.wait_for_function("document.documentElement.dataset.ready==='true'")
-            assert page.evaluate("document.documentElement.scrollWidth<=innerWidth"), 'landing h-scroll'
-            page.screenshot(path=f'{OUT}/{key}-00-landing.png')
-            page.click('#launch')
-            page.wait_for_timeout(250)
-            paths = page.evaluate("""async()=>{const E=await import('/n447/coffee-engine.mjs');const D=(await import('/n447/data/%s.mjs')).default;return E.allPaths(D).map(p=>p.trail.map(s=>[s.key,s.value]));}""" % SLUG)
-            stats = {'paths': 0, 'screens': 0, 'issues': []}
-            shots = set()
-            todo = paths if FULL or W == 390 else paths[:: max(1, len(paths) // 8)]
-            for trail in todo:
-                page.click('#reset'); page.wait_for_timeout(60)
+            ctx = br.new_context(viewport={'width': W, 'height': H}); pg = ctx.new_page()
+            def block(r):
+                report['apiBlocked'] += 1; r.fulfill(status=503, body='{}')
+            pg.route('**/api/**', block)
+            pg.on('console', lambda m: m.type == 'error' and '503' not in m.text and report['console'].append(f'{key}: {m.text[:160]}'))
+            pg.on('pageerror', lambda e: report['console'].append(f'{key}: PAGEERROR {str(e)[:200]}'))
+            pg.goto(f'{BASE}/{SLUG}.html', wait_until='networkidle'); pg.wait_for_timeout(700)
+            if paths is None:
+                paths = pg.evaluate("() => N447Engine.allPaths(N447_DATA['%s']).map(p => p.trail.map(s => [s.key, s.value]))" % SLUG)
+            st = {'paths': 0, 'screens': 0, 'issues': [], 'maxOptionHeight': 0}
+            open_widget(pg)
+            for trail in paths:
+                pg.click('#reset'); pg.wait_for_timeout(250)
                 for i, (k, v) in enumerate(trail):
-                    settle(page)
-                    pr = page.evaluate(PROBE); stats['screens'] += 1
-                    check(pr, key, trail[:i], stats)
-                    kind = 'budget' if k == 'budget' else 'pick' if k == 'pick' else 'first' if i == 0 else None
-                    if kind and kind not in shots:
-                        shots.add(kind); page.wait_for_timeout(300); page.screenshot(path=f'{OUT}/{key}-{["first","budget","pick"].index(kind)+1:02d}-{kind}.png')
-                    for _ in range(6):
-                        if page.locator(f'.n447-opt[data-v="{v}"]').count(): break
-                        page.click('#next'); page.wait_for_timeout(30)
-                    page.click(f'.n447-opt[data-v="{v}"]'); page.wait_for_timeout(200)
-                settle(page)
-                pr = page.evaluate(PROBE); stats['screens'] += 1
-                check(pr, key, trail, stats, result=True)
+                    settle(pg); pr = pg.evaluate(PROBE); st['screens'] += 1
+                    check(pr, st, f'{key} {trail[:i]}')
+                    st['maxOptionHeight'] = max(st['maxOptionHeight'], pr['tallest'])
+                    choose(pg, v)
+                settle(pg); pr = pg.evaluate(PROBE); st['screens'] += 1
+                check(pr, st, f'{key} {trail}', result=True)
                 for l in pr['links']:
                     h = urlparse(l).hostname
-                    if h not in ('www.black.sk', 'mojchatbot.sk'): stats['issues'].append(f'foreign link {l}')
-                if 'result' not in shots:
-                    shots.add('result'); page.wait_for_timeout(300); page.screenshot(path=f'{OUT}/{key}-04-result.png', full_page=False)
-                    page.evaluate("document.getElementById('body').scrollTop=9999"); page.wait_for_timeout(100)
-                    page.screenshot(path=f'{OUT}/{key}-05-result-bottom.png')
-                stats['paths'] += 1
+                    if h not in ('www.black.sk', 'mojchatbot.sk', '127.0.0.1') and not h.endswith('.mojchatbot.sk'):
+                        st['issues'].append('foreign link ' + l)
+                st['paths'] += 1
             # späť a zmena odpovede
-            page.click('#reset'); page.wait_for_timeout(60)
-            page.click('.n447-opt[data-v="filter"]'); page.wait_for_timeout(200)
-            page.click('#back'); page.wait_for_timeout(100)
-            assert page.evaluate("JSON.stringify(window.__N447__.state.answers)") == '{}', 'back neruší odpoveď'
+            pg.click('#reset'); pg.wait_for_timeout(250); choose(pg, trail_first(paths)); pg.click('#back'); pg.wait_for_timeout(300)
+            if pg.evaluate("document.querySelector('#stepTitle').textContent").find('Krok 1') < 0: st['issues'].append('back')
             # chat
-            page.click('#tabC'); page.wait_for_timeout(100)
-            for qtext in ['Čo do automatu?', 'Povedz mi o gotiti', 'a koľko stojí?']:
-                page.fill('#input', qtext); page.press('#input', 'Enter')
-                page.wait_for_function("!window.__N447__.state.chatBusy", timeout=8000); page.wait_for_timeout(100)
-            chat = page.evaluate("[...document.querySelectorAll('#log .n447-msg')].map(m=>m.innerText)")
-            if 'gotiti' not in chat[-1].lower(): stats['issues'].append('chat context lost')
-            if any(re.search(r'undefined|NaN|null', c) for c in chat): stats['issues'].append('chat bad text')
-            if page.evaluate("document.getElementById('log').querySelectorAll('a').length") < 1: stats['issues'].append('chat no links')
-            page.screenshot(path=f'{OUT}/{key}-06-chat.png')
-            # zavretie a znovuotvorenie, klávesnica
-            page.keyboard.press('Escape'); page.wait_for_timeout(100)
-            assert not page.evaluate("document.getElementById('w').classList.contains('is-open')")
-            page.focus('#launch'); page.keyboard.press('Enter'); page.wait_for_timeout(200)
-            assert page.evaluate("document.getElementById('w').classList.contains('is-open')")
-            report['sizes'][key] = stats
+            pg.click('.mode__button[data-mode="chat"]'); pg.wait_for_timeout(200)
+            for t in ['Čo do automatu?', 'Povedz mi o gotiti', 'a koľko stojí?']:
+                pg.fill('#input', t); pg.press('#input', 'Enter'); pg.wait_for_timeout(5200)
+            msgs = pg.evaluate("[...document.querySelectorAll('#chat .msg:not(.msg--user) .bubble')].map(b=>b.innerText)")
+            if 'gotiti' not in msgs[-1].lower(): st['issues'].append('chat context')
+            if any(re.search(r'undefined|NaN|\bnull\b', m) for m in msgs): st['issues'].append('chat bad text')
+            pg.keyboard.press('Escape'); pg.wait_for_timeout(200)
+            if pg.evaluate("document.getElementById('widget').classList.contains('is-open')"): st['issues'].append('escape')
+            report['sizes'][key] = st
             ctx.close()
-        # reload / čisté úložisko / nesprávny parameter: stále tá istá firma
-        ctx = br.new_context(viewport={'width': 390, 'height': 650}); page = ctx.new_page(); page.route('**/api/**', lambda r: r.fulfill(status=503, body='{}'))
-        for url in [f'{BASE}/{SLUG}.html?demo=mylo', f'{BASE}/{SLUG}.html#grain']:
-            page.goto(url, wait_until='networkidle'); page.reload(wait_until='networkidle')
-            assert page.evaluate("document.documentElement.dataset.demo") == SLUG, 'iná firma pri ' + url
-        report['storageKeys'] = page.evaluate("Object.keys(localStorage).concat(Object.keys(sessionStorage))")
+        ctx = br.new_context(viewport={'width': 390, 'height': 650}); pg = ctx.new_page(); pg.route('**/api/**', lambda r: r.fulfill(status=503, body='{}'))
+        for url in [f'{BASE}/{SLUG}.html?demo=grain', f'{BASE}/{SLUG}.html#donfranko']:
+            pg.goto(url, wait_until='networkidle'); pg.reload(wait_until='networkidle')
+            assert pg.evaluate("window.COFFEE_DEMO_SLUG") == SLUG and pg.evaluate("document.body.dataset.coffeeDemo") == SLUG, url
+        report['storage'] = pg.evaluate("Object.keys(localStorage).concat(Object.keys(sessionStorage))")
         ctx.close(); br.close()
-    report['remoteImages'] = 'loaded' if not any('black.sk' in f for f in report['failedRequests']) else 'blocked-in-sandbox'
     json.dump(report, open(f'{OUT}/browser-report.json', 'w'), indent=2, ensure_ascii=False)
-    issues = sum(len(s['issues']) for s in report['sizes'].values())
-    print(json.dumps({k: {'paths': v['paths'], 'screens': v['screens'], 'issues': v['issues'][:5]} for k, v in report['sizes'].items()}, ensure_ascii=False))
-    print('apiBlocked', report['apiCallsBlocked'], 'console', report['console'][:5], 'storage', report['storageKeys'], 'remoteImages', report['remoteImages'])
-    sys.exit(1 if issues else 0)
+    print(json.dumps({k: {'paths': v['paths'], 'screens': v['screens'], 'maxOptionHeight': v['maxOptionHeight'], 'issues': v['issues'][:6]} for k, v in report['sizes'].items()}, ensure_ascii=False))
+    print('apiBlocked', report['apiBlocked'], 'console', report['console'][:5], 'storage', report['storage'])
+    sys.exit(1 if any(v['issues'] for v in report['sizes'].values()) or report['console'] else 0)
 
-def settle(page):
-    try: page.wait_for_function("[...document.querySelectorAll('#w img')].filter(i=>i.offsetParent!==null).every(i=>i.complete)", timeout=6000)
-    except Exception: pass
+def trail_first(paths): return paths[0][0][1]
 
-def check(pr, key, trail, stats, result=False):
-    where = f'{key} {trail}'
-    if pr['question'] and pr['bodyOverflow'] > 0: stats['issues'].append(f'scroll {pr["bodyOverflow"]}px in question {where}')
-    if pr['hScroll'] > 0: stats['issues'].append(f'h-scroll {where}')
-    if pr['clipped'] and pr['question']: stats['issues'].append(f'clipped {pr["clipped"]} {where}')
-    if pr['dupPhotos']: stats['issues'].append(f'dup photo {where}')
-    if pr['badText']: stats['issues'].append(f'bad text {where}')
-    for im in pr['imgs']:
-        if im['local'] and not im['ok']: stats['issues'].append(f'local image not loaded {im["src"]}')
-    if result and pr['question']: stats['issues'].append(f'expected result {where}')
+def check(pr, st, where, result=False):
+    if pr['q'] and pr['overflow'] > 0: st['issues'].append(f'question scroll {pr["overflow"]}px {where}')
+    if pr['hscroll'] > 0: st['issues'].append('h-scroll ' + where)
+    if pr['q'] and pr['clipped']: st['issues'].append(f'clipped {pr["clipped"]} {where}')
+    if pr['dup']: st['issues'].append('dup photo ' + where)
+    if pr['bad']: st['issues'].append('bad text ' + where)
+    if pr['foreign']: st['issues'].append('foreign brand/price ' + where)
+    if pr['broken']: st['issues'].append(f'broken img {pr["broken"]}')
+    if pr['q'] and pr['widgetH'] and pr['tallest'] > pr['widgetH'] * 0.5: st['issues'].append(f'option taller than half widget {where}')
+    if result and pr['q']: st['issues'].append('expected result ' + where)
 
 if __name__ == '__main__':
     main()

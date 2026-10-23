@@ -1,37 +1,43 @@
 /* Chat pre novú dávku ukážok (447 € + 10 €/mes.). Oddelený od api/chat.js, aby staré ukážky
-   nedostali žiadnu vedľajšiu zmenu. Overený návrh odpovede pripraví coffee-reply z dát pražiarne;
+   nedostali žiadnu vedľajšiu zmenu. Overený návrh odpovede pripraví n447/reply.js z dát pražiarne;
    nezmenený aiAnswer (produkčný model) ho môže prirodzene preformulovať a odmietne neoverenú cenu či odkaz. */
+import {createRequire} from 'node:module';
 import {aiAnswer} from './ai-chat.js';
-import {coffeeReply} from '../n447/coffee-reply.mjs';
-import {money} from '../n447/coffee-engine.mjs';
-import BLACK from '../n447/data/black.mjs';
 
-export const DEMOS = {black: BLACK};
+const require = createRequire(import.meta.url);
+const ENG = require('../n447/engine.js');
+const {coffeeReply} = require('../n447/reply.js');
+const euro = (v, c) => ENG.money(v, c).replace(/ /g, ' ');
+
+/* Iba firmy novej dávky; neznámy identifikátor dostane 400, nikdy cudziu firmu. */
+export const DEMOS = {black: require('../n447/data/black.js')};
 
 export function catalogueFor(data) {
   const products = data.products.filter((p) => p.available !== false).map((p) => ({
-    name: p.name, url: p.url, price: 'od ' + money(p.priceFrom, p.currency).replace(' ', ' '), kind: 'zrnková/mletá káva',
-    notes: p.notes?.length ? p.notes : [p.profile].filter(Boolean),
-    bestFor: 'praženie: ' + p.roasts.join(', ') + '; balenia: ' + p.weights.map((g) => g >= 1000 ? g / 1000 + ' kg' : g + ' g').join(', '),
+    name: p.name, url: p.url, price: 'orientačne od ' + euro(p.priceFrom, p.currency), kind: 'zrnková/mletá káva',
+    facts: (p.variants || []).filter((v) => v.verifiedAt && Number.isFinite(v.price)).map((v) => `Overená cena: ${ENG.grams(v.grams)}, ${v.roast} roast, ${String(v.grind).toLowerCase()} = ${euro(v.price, p.currency)}.`),
+    notes: p.notes && p.notes.length ? p.notes : [p.profile].filter(Boolean),
+    bestFor: 'praženie: ' + p.roasts.join(', ') + '; balenia: ' + p.weights.map(ENG.grams).join(', '),
     description: [p.summary, p.origin, p.process, p.decaf ? 'bez kofeínu' : ''].filter(Boolean).join('. ')
   }));
-  if (data.drip) products.push({name: data.drip.name, url: data.drip.url, price: money(data.drip.price, data.drip.currency).replace(' ', ' '), kind: 'drip vrecúška', weights: data.drip.pack, description: data.drip.summary});
-  return {source: data.brand.web, products, shipping: {lines: [data.shop.freeShipping], url: data.shop.freeShippingSource, checkedAt: data.checkedAt}};
+  if (data.drip) products.push({name: data.drip.name, url: data.drip.url, price: euro(data.drip.price, data.drip.currency), kind: 'drip vrecúška', weights: data.drip.pack, description: data.drip.summary});
+  const lines = data.shop && data.shop.freeShipping ? [data.shop.freeShipping] : [];
+  return {source: data.brand.web, products, shipping: {lines, url: data.shop && data.shop.freeShippingSource, checkedAt: data.checkedAt}};
 }
 
 export async function answer(body, {ai = aiAnswer} = {}) {
-  const data = DEMOS[String(body?.demoId || '')];
+  const data = Object.prototype.hasOwnProperty.call(DEMOS, String(body && body.demoId || '')) ? DEMOS[body.demoId] : null;
   if (!data) return {status: 400, json: {error: 'Unknown demo'}};
   const messages = (Array.isArray(body.messages) ? body.messages : [])
     .filter((m) => m && (m.role === 'user' || m.role === 'assistant')).slice(-10)
     .map((m) => ({role: m.role, content: String(m.content || '').slice(0, 700)})).filter((m) => m.content.trim());
-  while (messages[0]?.role === 'assistant') messages.shift();
-  while (messages.at(-1)?.role === 'assistant') messages.pop();
-  const latest = messages.filter((m) => m.role === 'user').at(-1)?.content || '';
+  while (messages[0] && messages[0].role === 'assistant') messages.shift();
+  while (messages.length && messages[messages.length - 1].role === 'assistant') messages.pop();
+  const latest = messages.filter((m) => m.role === 'user').pop();
   if (!latest) return {status: 400, json: {error: 'Missing user message'}};
-  const draft = coffeeReply(data, latest, messages.slice(0, -1));
+  const draft = coffeeReply(data, latest.content, messages.slice(0, -1));
   const reply = await ai({family: 'coffee', brand: data.brand.name, web: data.brand.web, catalogue: catalogueFor(data), messages, draft,
-    extra: ['Ceny v údajoch sú najnižšie ceny „od“; presnú cenu balenia a mletia ukáže e-shop. Netvrďte, že je produkt skladom.']});
+    extra: ['Cena „orientačne od“ je iba dolná hranica rozsahu, nie cena konkrétneho balenia; nikdy ju nepoužite na potvrdenie, že sa balenie zmestí do rozpočtu. Presnú cenu uvádzajte iba z riadkov „Overená cena“. Netvrďte, že je produkt skladom.']});
   return {status: 200, json: reply ? {reply} : {reply: draft, fallback: true}};
 }
 
