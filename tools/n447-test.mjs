@@ -26,10 +26,10 @@ for (const p of data.products) {
   assert.equal(new URL(p.url).hostname, host, 'cudzí odkaz ' + p.url);
   assert.ok(fs.existsSync(new URL('..' + p.photo, import.meta.url)), 'chýba fotka ' + p.photo);
   assert.ok(Number.isFinite(p.priceFrom) && p.priceFrom > 0 && p.priceTo >= p.priceFrom, 'cena ' + p.id);
-  assert.ok(p.roasts.length && p.weights.length && p.origin && p.summary, 'neúplné dáta ' + p.id);
+  assert.ok(((p.roasts && p.roasts.length) || (p.preps && p.preps.length)) && p.weights.length && p.origin && p.summary, 'neúplné dáta ' + p.id);
   assert.ok(p.notes.length || p.profile, 'chuť ' + p.id);
   const v = (p.variants || []).filter((x) => x.verifiedAt);
-  for (const x of v) { assert.ok(p.roasts.includes(x.roast) && p.weights.includes(x.grams) && Number.isFinite(x.price) && x.source, 'variant ' + p.id); }
+  for (const x of v) { assert.ok((!x.roast || p.roasts.includes(x.roast)) && p.weights.includes(x.grams) && Number.isFinite(x.price) && x.source, 'variant ' + p.id); if (x.url) assert.equal(new URL(x.url).hostname, host, 'cudzí odkaz balenia'); }
   verifiedVariants += v.length; if (v.length) productsWithVerified++;
 }
 assert.equal(new Set(data.products.map((p) => p.photo)).size, data.products.length, 'opakovaná fotka produktu');
@@ -52,10 +52,10 @@ for (const p of paths) {
   }
   if (r.kind === 'coffee') {
     assert.ok(E.pool(data, a).some((x) => x.id === r.product.id), 'výsledok nespĺňa odpovede');
-    assert.equal(!!r.product.decaf, a.caffeine === 'no');
+    assert.equal(!!r.product.decaf, a.taste === 'decaf');
     if (r.priceVerified) {
       verifiedResults++;
-      assert.ok(r.pack.verifiedAt && r.product.variants.includes(r.pack) && r.pack.roast === r.roast, 'overené balenie');
+      assert.ok(r.pack.verifiedAt && r.product.variants.includes(r.pack) && (!r.pack.roast || r.pack.roast === r.roast), 'overené balenie');
     } else assert.match(r.priceLabel, /^od /, 'neoverená cena musí byť iba orientačná');
     if (a.budget && a.budget !== 'any') {
       budgetPaths++;
@@ -71,32 +71,33 @@ for (const p of paths) {
     assert.ok(r.next.items.length, 'čo ďalej');
     if (a.prep === 'filter') {
       assert.ok(a.tool, 'filter bez otázky na pomôcku');
-      if (a.tool === 'v60') assert.match(steps, /V60/); else assert.doesNotMatch(steps, /V60|95 °C/, 'recept V60 pri ' + a.tool);
+      if (a.tool === 'v60' && data.guides && data.guides.v60) assert.match(steps, /V60/); else if (a.tool !== 'v60') assert.doesNotMatch(steps, /V60|95 °C/, 'recept V60 pri ' + a.tool);
+      if (!(data.guides && data.guides.v60)) assert.doesNotMatch(steps, /95 °C|300 g vody/, 'recept bez zdroja');
     } else assert.doesNotMatch(steps, /V60/);
     assert.ok(r.reasons.length >= 2 && r.reasons.every(([t, d]) => t && d && !/undefined|NaN|null/.test(t + d)), 'dôvody');
     assert.doesNotMatch(JSON.stringify(r.reasons) + r.packLabel + steps, /fallback|skóre|katalóg|informácie z e-shopu/i, 'žargón');
   }
 }
 /* Zmena skoršej odpovede ruší neskoršie */
-assert.deepEqual(E.answer({prep: 'espresso', caffeine: 'yes', taste: 'choco', pick: 'doce-citrus'}, 'prep', 'filter'), {prep: 'filter'});
+assert.deepEqual(E.answer({prep: 'espresso', taste: 'choco', pick: 'doce-citrus'}, 'prep', 'filter'), {prep: 'filter'});
 assert.equal(E.maxRemaining(data, {}), maxQ);
 assert.ok(maxQ <= 6, 'priveľa krokov ' + maxQ);
 report.checks.paths = {total: paths.length, maxQuestions: maxQ, followUpSteps: followUps, budgetPaths, verifiedPriceResults: verifiedResults};
 
 /* 3. Regresia z kontroly a hranice cien (rovnaké jadro, syntetické kópie dát) */
 {
-  const ref = {...data.products.find((p) => p.id === 'doce-citrus')};
+  const ref = {...(data.products.find((p) => p.id === 'doce-citrus') || data.products.find((p) => (p.preps || []).includes('espresso')))};
   if (slug === 'black') {
     const solo = {...data, products: [ref, {...data.products.find((p) => p.id === 'black-sheep'), variants: [{roast: 'espresso', grams: 200, grind: 'Zrnková', price: 11.9, verifiedAt: 'test', source: 'test'}]}]};
-    const q = E.nextQuestion(solo, {prep: 'espresso', caffeine: 'yes', taste: 'choco'});
+    const q = E.nextQuestion(solo, {prep: 'espresso', taste: 'choco'});
     assert.equal(q.key, 'budget', 'rozpočet sa má zobraziť, keď sú overené všetky kávy výberu');
-    const r = E.result(solo, {prep: 'espresso', caffeine: 'yes', taste: 'choco', budget: '10.5'});
+    const r = E.result(solo, {prep: 'espresso', taste: 'choco', budget: '10.5'});
     assert.equal(r.product.id, 'doce-citrus'); assert.equal(r.pack.grams, 200); assert.equal(r.total, 10.5);
     assert.deepEqual(r.packs.map((x) => [x.label, x.chosen, x.over]), [['200 g', true, false], ['500 g', false, true], ['1 kg', false, true]]);
     assert.ok(!r.packLabel.includes('500') && !r.packLabel.includes('1 kg'), 'v rozpočte 10,50 € sa nesmie ponúknuť 500 g/1 kg');
-    assert.equal(E.nextQuestion(data, {prep: 'espresso', caffeine: 'yes', taste: 'choco'}).key, 'pick', 'bez overených cien všetkých káv sa rozpočet nepýta');
+    assert.equal(E.nextQuestion(data, {prep: 'espresso', taste: 'choco'}).key, 'pick', 'bez overených cien všetkých káv sa rozpočet nepýta');
   }
-  const roast = ref.roasts[0], a = (b) => ({prep: 'espresso', budget: String(b)});
+  const roast = ref.roasts ? ref.roasts[0] : undefined, a = (b) => ({prep: 'espresso', budget: String(b)});
   const only = {...ref, id: 'syn', variants: [{roast, grams: 500, grind: 'Zrnková', price: 22.5, verifiedAt: 'x'}]};
   const syn = {...data, products: [only]};
   assert.ok(E.packFor(syn, only, a(22.5)), 'cena rovná limitu prejde');
@@ -110,8 +111,15 @@ report.checks.paths = {total: paths.length, maxQuestions: maxQ, followUpSteps: f
   assert.equal(E.packFor(withAddon, add, a(15.49)), null, 'káva + doplnok nad limit');
   assert.ok(E.packFor(withAddon, add, a(15.5)), 'káva + doplnok rovno limitu');
   assert.equal(E.result(withAddon, {...a(15.5), pick: 'add'}).total, 15.5);
-  const wrong = {...ref, id: 'wr', variants: [{roast: 'filter', grams: 200, grind: 'Zrnková', price: 1, verifiedAt: 'x'}]};
-  assert.equal(E.verifiedPacks(wrong, a(100)).length, 0, 'cena iného praženia');
+  if (ref.roasts) { const wrong = {...ref, id: 'wr', variants: [{roast: 'filter', grams: 200, grind: 'Zrnková', price: 1, verifiedAt: 'x'}]};
+  assert.equal(E.verifiedPacks(wrong, a(100)).length, 0, 'cena iného praženia'); }
+  if (slug === 'verticcio') {
+    /* Regresia Verticcio: limit 9,90 € pri čokoládovej chuti – iba balenia do 9,90 €, 1 kg nikdy. */
+    const r = E.result(data, {prep: 'espresso', taste: 'choco', budget: '9.9', detailProcess: 'region:blend', pick: 'korzo-blend'});
+    assert.equal(r.pack.grams, 200); assert.equal(r.total, 9.9); assert.ok(r.packs.find((x) => x.label === '1 kg').over);
+    assert.equal(r.pack.url, 'https://www.verticcio.sk/kava-verticcio/verticcio-korzo-blend-200g', 'CTA na konkrétne balenie');
+    assert.ok(!E.pool(data, {prep: 'espresso', taste: 'choco', budget: '9.89'}).some((p) => p.id === 'korzo-blend'), 'korzo 9,90 € nad limit 9,89 €');
+  }
   report.checks.budgetRegression = 'PASS (doce citrus 200 g 10,50 € / 500 g 22,50 € / 1 kg 39,00 €; hranica rovná/pod; neoverené; „od“; doplnok; iné praženie)';
 }
 

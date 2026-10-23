@@ -10,14 +10,14 @@ const {coffeeReply} = require('../n447/reply.js');
 const euro = (v, c) => ENG.money(v, c).replace(/ /g, ' ');
 
 /* Iba firmy novej dávky; neznámy identifikátor dostane 400, nikdy cudziu firmu. */
-export const DEMOS = {black: require('../n447/data/black.js')};
+export const DEMOS = {black: require('../n447/data/black.js'), verticcio: require('../n447/data/verticcio.js')};
 
 export function catalogueFor(data) {
   const products = data.products.filter((p) => p.available !== false).map((p) => ({
     name: p.name, url: p.url, price: 'orientačne od ' + euro(p.priceFrom, p.currency), kind: 'zrnková/mletá káva',
-    facts: (p.variants || []).filter((v) => v.verifiedAt && Number.isFinite(v.price)).map((v) => `Overená cena: ${ENG.grams(v.grams)}, ${v.roast} roast, ${String(v.grind).toLowerCase()} = ${euro(v.price, p.currency)}.`),
+    facts: (p.variants || []).filter((v) => v.verifiedAt && Number.isFinite(v.price)).map((v) => `Overená cena: ${ENG.grams(v.grams)}${v.roast ? ', ' + v.roast + ' roast' : ''}, ${String(v.grind).toLowerCase()} = ${euro(v.price, p.currency)}${v.url ? ' (' + v.url + ')' : ''}.`),
     notes: p.notes && p.notes.length ? p.notes : [p.profile].filter(Boolean),
-    bestFor: 'praženie: ' + p.roasts.join(', ') + '; balenia: ' + p.weights.map(ENG.grams).join(', '),
+    bestFor: (p.prepText ? 'príprava podľa e-shopu: ' + p.prepText : 'praženie: ' + p.roasts.join(', ')) + '; balenia: ' + p.weights.map(ENG.grams).join(', '),
     description: [p.summary, p.origin, p.process, p.decaf ? 'bez kofeínu' : ''].filter(Boolean).join('. ')
   }));
   if (data.drip) products.push({name: data.drip.name, url: data.drip.url, price: euro(data.drip.price, data.drip.currency), kind: 'drip vrecúška', weights: data.drip.pack, description: data.drip.summary});

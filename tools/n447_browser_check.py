@@ -25,7 +25,7 @@ PROBE = r"""() => {
     clipped, dup: srcs.length - new Set(srcs).size,
     tallest: Math.max(0, ...opts.map(o => o.getBoundingClientRect().height)), widgetH: wr.height,
     bad: /undefined|NaN|\bnull\b|fallback|katalógové skóre|informácie z e-shopu/.test(txt),
-    foreign: /Pražírna|Don Franko|grain|donfranko|247 €|zdarma/.test(document.body.innerText),
+    foreign: /Pražírna|Don Franko|donfranko|247 €|[Pp]rvý mesiac zdarma|30 dní zdarma/.test(document.body.innerText),
     links: [...document.querySelectorAll('a[href]')].map(a => a.href),
     broken: [...w.querySelectorAll('img')].filter(i => i.offsetParent !== null && i.complete && i.naturalWidth === 0).map(i => i.getAttribute('src'))};
 }"""
@@ -57,6 +57,8 @@ def main():
             pg.goto(f'{BASE}/{SLUG}.html', wait_until='networkidle'); pg.wait_for_timeout(700)
             if paths is None:
                 paths = pg.evaluate("() => N447Engine.allPaths(N447_DATA['%s']).map(p => p.trail.map(s => [s.key, s.value]))" % SLUG)
+                shop_host = pg.evaluate("new URL(N447_DATA['%s'].brand.web).hostname" % SLUG)
+                probe_name = pg.evaluate("N447_DATA['%s'].products.find(p => p.variants && p.variants.length).name.split('•').pop().trim()" % SLUG)
             st = {'paths': 0, 'screens': 0, 'issues': [], 'maxOptionHeight': 0}
             open_widget(pg)
             for trail in paths:
@@ -70,7 +72,7 @@ def main():
                 check(pr, st, f'{key} {trail}', result=True)
                 for l in pr['links']:
                     h = urlparse(l).hostname
-                    if h not in ('www.black.sk', 'mojchatbot.sk', '127.0.0.1') and not h.endswith('.mojchatbot.sk'):
+                    if h not in (shop_host, 'mojchatbot.sk', '127.0.0.1') and not h.endswith('.mojchatbot.sk'):
                         st['issues'].append('foreign link ' + l)
                 st['paths'] += 1
             # späť a zmena odpovede
@@ -78,17 +80,17 @@ def main():
             if pg.evaluate("document.querySelector('#stepTitle').textContent").find('Krok 1') < 0: st['issues'].append('back')
             # chat
             pg.click('.mode__button[data-mode="chat"]'); pg.wait_for_timeout(200)
-            for t in ['Čo do automatu?', 'Povedz mi o gotiti', 'a koľko stojí?']:
+            for t in ['Čo do automatu?', 'Povedz mi o ' + probe_name, 'a koľko stojí?']:
                 pg.fill('#input', t); pg.press('#input', 'Enter'); pg.wait_for_timeout(5200)
             msgs = pg.evaluate("[...document.querySelectorAll('#chat .msg:not(.msg--user) .bubble')].map(b=>b.innerText)")
-            if 'gotiti' not in msgs[-1].lower(): st['issues'].append('chat context')
+            if probe_name.lower() not in msgs[-1].lower(): st['issues'].append('chat context: ' + msgs[-1][:80])
             if any(re.search(r'undefined|NaN|\bnull\b', m) for m in msgs): st['issues'].append('chat bad text')
             pg.keyboard.press('Escape'); pg.wait_for_timeout(200)
             if pg.evaluate("document.getElementById('widget').classList.contains('is-open')"): st['issues'].append('escape')
             report['sizes'][key] = st
             ctx.close()
         ctx = br.new_context(viewport={'width': 390, 'height': 650}); pg = ctx.new_page(); pg.route('**/api/**', lambda r: r.fulfill(status=503, body='{}'))
-        for url in [f'{BASE}/{SLUG}.html?demo=grain', f'{BASE}/{SLUG}.html#donfranko']:
+        for url in [f'{BASE}/{SLUG}.html?demo=grain', f'{BASE}/{SLUG}.html#donfranko', f'{BASE}/{SLUG}.html?slug=black']:
             pg.goto(url, wait_until='networkidle'); pg.reload(wait_until='networkidle')
             assert pg.evaluate("window.COFFEE_DEMO_SLUG") == SLUG and pg.evaluate("document.body.dataset.coffeeDemo") == SLUG, url
         report['storage'] = pg.evaluate("Object.keys(localStorage).concat(Object.keys(sessionStorage))")

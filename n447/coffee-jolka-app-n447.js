@@ -21,7 +21,7 @@
       chat: N447.chat || {welcome: 'Dobrý deň. Vyberieme spolu kávu z ponuky ' + b.name + ' podľa vašej prípravy a chutí.', placeholder: 'Napíšte, akú kávu hľadáte…', chips: ['Káva do automatu', 'Káva na filter', 'Máte kávu bez kofeínu?']},
       fallbacks: [],
       demo: Object.assign({id: N447.slug, rootId: N447.slug + '-clean-root', pageClass: N447.slug + '-page', heroProductId: hero.id,
-        logoInk: b.logo, logoBadge: b.logo, logoHeader: b.logo, logoAvatar: b.logo, productOptionPhotos: true,
+        logoInk: b.logo, logoBadge: b.logoLight || b.logo, logoHeader: b.logoLight || b.logo, logoAvatar: b.logoLight || b.logo, productOptionPhotos: true,
         heroImage: b.hero, entryImage: b.hero, heroImageAlt: b.name + ' – produktová prezentácia', eyebrow: 'Pre tím ' + b.name,
         heroTitle: 'Vitajte vo vašom návrhu kávového poradcu pre ' + b.name + '.', heroLead: 'Poradca odporučí konkrétnu kávu podľa prípravy a chuti.',
         heroHint: '', ownerCredit: 'ukážka pre ' + b.name, teaserTitle: 'Nájdite svoju kávu', teaserText: 'Krátky výber · jedno odporúčanie',
@@ -646,10 +646,23 @@
       </div>`;
     advisorFoot.hidden = false;
     advisorFoot.innerHTML = `<button class="cta" type="button" id="addToCart">${T('Otvoriť v e-shope', 'Otevřít v e-shopu')} ${icons.shop}</button><div class="foot-row"><button class="ghost" type="button" id="restart">${T('Zmeniť odpovede', 'Změnit odpovědi')}</button></div>`;
-    $('#addToCart').addEventListener('click', () => window.open(p.url || brand.shopUrl, '_blank', 'noopener,noreferrer'));
+    $('#addToCart').addEventListener('click', () => window.open((r.pack && r.pack.url) || p.url || brand.shopUrl, '_blank', 'noopener,noreferrer'));
     $('#restart').addEventListener('click', resetAdvisor);
     const altButton = $('.alt__card', advisor);
     if (altButton) altButton.addEventListener('click', () => { state.chosen = altButton.dataset.product || null; renderResult(); advisor.scrollTop = 0; });
+    /* Rovnaký rozbaľovací zoznam ako v schválenom výsledku: ďalšie kávy, ktoré spĺňajú tie isté odpovede. */
+    const others = drip ? [] : ENG.pool(N447, state.answers, 'pick').filter((x) => x.id !== p.id);
+    if (others.length) {
+      const more = document.createElement('details'); more.className = 'coffee-more-matches';
+      const title = document.createElement('summary'); title.textContent = T('Ďalšie kávy spĺňajúce váš výber (', 'Další kávy splňující váš výběr (') + others.length + ')'; more.append(title);
+      const list = document.createElement('div');
+      for (const o of others) {
+        const link = document.createElement('a'); link.href = o.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.className = 'coffee-match-link';
+        link.innerHTML = '<img src="' + esc(o.photo) + '" alt="" loading="lazy"><span><b>' + esc(o.name) + '</b><small>' + esc((o.notes && o.notes.length ? o.notes : [o.profile]).filter(Boolean).slice(0, 4).join(' · ')) + '</small><strong>' + esc(ENG.priceLine(N447, o, state.answers)) + '</strong></span>';
+        list.append(link);
+      }
+      more.append(list); advisor.append(more);
+    }
   }
 
   function renderResultApproved() {

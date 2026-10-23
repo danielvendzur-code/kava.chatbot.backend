@@ -94,7 +94,7 @@
         origin: 'sezónny blend (zložky sa menia podľa sezóny)', process: 'washed kávy s malým podielom natural',
         summary: 'Sezónny filtrový blend na každý deň: ovocné washed kávy doplnené natural zložkou pre telo a sladkosť.'}),
       coffee({id: 'popayan-decaf', region: 'americas', slug: 'colombia-popayan-decaf', name: 'colombia • popayán decaf', photo: 'black-decaf.jpg', priceFrom: 13.5, priceTo: 52,
-        roasts: ['omni'], taste: 'fresh', decaf: true, notes: ['pomarančový džús', 'broskyňa', 'žlté kôstkové ovocie', 'červené jablko', 'mandle'],
+        roasts: ['omni'], taste: 'fresh', decaf: true, decafNote: 'Kofeín sa odstraňuje šetrne, etylacetátom z cukrovej trstiny.', notes: ['pomarančový džús', 'broskyňa', 'žlté kôstkové ovocie', 'červené jablko', 'mandle'],
         origin: 'Kolumbia · Popayán (Cauca)', farm: 'Cofinet, približne 65 pestovateľov', variety: 'Colombia, Castillo, Caturra', process: 'washed, bez kofeínu metódou z cukrovej trstiny', altitude: '1500–2070 m n. m.',
         summary: 'Bezkofeínová káva; kofeín sa odstraňuje etylacetátom z cukrovej trstiny. Sladká a sirupová s mandľovým záverom.'})
     ],
