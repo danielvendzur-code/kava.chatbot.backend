@@ -21,7 +21,7 @@
       chat: N447.chat || {welcome: 'Dobrý deň. Vyberieme spolu kávu z ponuky ' + b.name + ' podľa vašej prípravy a chutí.', placeholder: 'Napíšte, akú kávu hľadáte…', chips: ['Káva do automatu', 'Káva na filter', 'Máte kávu bez kofeínu?']},
       fallbacks: [],
       demo: Object.assign({id: N447.slug, rootId: N447.slug + '-clean-root', pageClass: N447.slug + '-page', heroProductId: hero.id,
-        logoInk: b.logo, logoBadge: b.logoLight || b.logo, logoHeader: b.logoLight || b.logo, logoAvatar: b.logoLight || b.logo, productOptionPhotos: true,
+        logoInk: b.logo, logoBadge: b.logoMark || b.logoLight || b.logo, logoHeader: b.logoLight || b.logo, logoAvatar: b.logoMark || b.logoLight || b.logo, productOptionPhotos: true,
         heroImage: b.hero, entryImage: b.hero, heroImageAlt: b.name + ' – produktová prezentácia', eyebrow: 'Pre tím ' + b.name,
         heroTitle: 'Vitajte vo vašom návrhu kávového poradcu pre ' + b.name + '.', heroLead: 'Poradca odporučí konkrétnu kávu podľa prípravy a chuti.',
         heroHint: '', ownerCredit: 'ukážka pre ' + b.name, teaserTitle: 'Nájdite svoju kávu', teaserText: 'Krátky výber · jedno odporúčanie',
