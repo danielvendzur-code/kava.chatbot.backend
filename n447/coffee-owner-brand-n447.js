@@ -21,6 +21,10 @@
   ).replace('-v13', '');
 
 
+  /* Nové texty ponuky po česky pre české firmy (ostatné preloží schválený lang-cs.js). */
+  const CS = ((window.N447_DATA || {})[slug] || {}).lang === 'cs';
+  const L = (sk, cs) => CS ? cs : sk;
+
   const esc = (value = '') =>
     String(value).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -50,16 +54,16 @@
     ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
     ['Pozná vašu ponuku', 'pracuje s vašimi kávami a cenami'],
     ['Výber podľa vašich potrieb', 'na konci jedna konkrétna káva'],
-    ['Rozpočet na celý nákup', 'odporučí balenie s overenou cenou']
+    [L('Rozpočet na celý nákup', 'Rozpočet na celý nákup'), L('odporučí balenie s overenou cenou', 'doporučí balení s ověřenou cenou')]
   ];
 
   const PRICING = {
     sums: [
-      ['447', 'jednorazovo', 'nastavenie, overenie vašich káv a vloženie na web'],
+      ['447', 'jednorazovo', L('nastavenie, overenie vašich káv a vloženie na web', 'nastavení, ověření vašich káv a vložení na web')],
       ['10', 'mesačne', 'prevádzka']
     ],
-    trial: 'Nastavenie pre vašu značku',
-    note: 'Otázky podľa skutočných rozdielov vašich káv a úplné odporúčanie s odkazom na produkt.',
+    trial: L('Nastavenie pre vašu značku', 'Nastavení pro vaši značku'),
+    note: L('Otázky podľa skutočných rozdielov vašich káv a úplné odporúčanie s odkazom na produkt.', 'Otázky podle skutečných rozdílů vašich káv a úplné doporučení s odkazem na produkt.'),
     // Only in the sheet: the strip stays short enough to read at a glance.
     addon: 'Preklik na produkt alebo napojenie na košík za príplatok.',
     // The sheet behind "Mám záujem" is the long version of the same offer.
@@ -68,7 +72,7 @@
       ['Odpovedá aj o polnoci', 'Pôvod, praženie, príprava aj porovnanie dvoch káv.'],
       ['Výber podľa vašich potrieb', 'Chuť, príprava, nápoj a kofeín — na konci jedna konkrétna káva.'],
 
-      ['Rozpočet na celý nákup', 'Odporučí konkrétne balenie s overenou cenou.']
+      [L('Rozpočet na celý nákup', 'Rozpočet na celý nákup'), L('Odporučí konkrétne balenie s overenou cenou.', 'Doporučí konkrétní balení s ověřenou cenou.')]
     ]
   };
 
@@ -95,8 +99,9 @@
      a sentence about the shop's catalogue, which took two lines to say what
      the visitor cannot tell apart and never got round to the chatbot. */
   const HEADING = 'Poradí zákazníkovi kávu a odpovie mu na otázky.';
-  const LEAD = 'Chatbot odpovie zákazníkovi na otázky o vašich kávach. Krátkym výberom podľa jeho potrieb ' +
-    'mu odporučí tú, ktorá mu sadne. Predáte aj vtedy, keď pri tom nie ste.';
+  const LEAD = L('Chatbot odpovie zákazníkovi na otázky o vašich kávach. Krátkym výberom podľa jeho potrieb ' +
+    'mu odporučí tú, ktorá mu sadne. Predáte aj vtedy, keď pri tom nie ste.', 'Chatbot odpoví zákazníkovi na otázky o vašich kávách. Krátkým výběrem podle jeho potřeb ' +
+    'mu doporučí tu, která mu sedne. Prodáte i tehdy, když u toho nejste.');
 
   /* The brand table is the only list of roasteries this file keeps. A slug it
      does not know belongs to some other page, and the claim below must not be
@@ -193,7 +198,7 @@
 
     <footer class="mcb-foot">
       <a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk ${icons.arrow}</a>
-      <span>Ukážka riešenia pre ${esc(brand.name)}</span>
+      <span>${L('Ukážka riešenia pre ', 'Ukázka řešení pro ')}${esc(brand.name)}</span>
     </footer>`;
   };
 

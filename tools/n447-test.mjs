@@ -108,9 +108,10 @@ report.checks.paths = {total: paths.length, maxQuestions: maxQ, followUpSteps: f
   assert.equal(E.pool({...data, products: [from]}, a(5)).length, 0, '„od“ nesmie splniť limit');
   const add = {...ref, id: 'add', variants: [{roast, grams: 200, grind: 'Zrnková', price: 10.5, verifiedAt: 'x'}]};
   const withAddon = {...data, products: [add], addonFor: () => ({product: {name: 'doplnok', url: data.brand.web}, price: 5})};
-  assert.equal(E.packFor(withAddon, add, a(15.49)), null, 'káva + doplnok nad limit');
-  assert.ok(E.packFor(withAddon, add, a(15.5)), 'káva + doplnok rovno limitu');
-  assert.equal(E.result(withAddon, {...a(15.5), pick: 'add'}).total, 15.5);
+  const r155 = E.result(withAddon, {...a(15.5), pick: 'add'}), r1549 = E.result(withAddon, {...a(15.49), pick: 'add'});
+  assert.ok(r155.addon && r155.total === 15.5, 'káva + doplnok rovno limitu: doplnok ostáva');
+  assert.ok(!r1549.addon && r1549.total === 10.5, 'káva + doplnok nad limit: doplnok sa vynechá, káva ostáva');
+  assert.equal(E.result(withAddon, {...a(10.49), pick: 'add'}), null, 'samotná káva nad limit');
   if (ref.roasts) { const wrong = {...ref, id: 'wr', variants: [{roast: 'filter', grams: 200, grind: 'Zrnková', price: 1, verifiedAt: 'x'}]};
   assert.equal(E.verifiedPacks(wrong, a(100)).length, 0, 'cena iného praženia'); }
   if (slug === 'verticcio') {
@@ -124,8 +125,8 @@ report.checks.paths = {total: paths.length, maxQuestions: maxQ, followUpSteps: f
 }
 
 /* 4. Chat offline */
-const chat = [['Čo do automatu?', /espresso|automat/i], ['Káva na V60', /V60|filter/i], ['Máte kávu bez kofeínu?', /decaf|kofeín/i],
-  ['Aká je doprava?', /40 €|doprav/i], ['Povedz mi o gotiti', /gotiti/i], ['porovnaj black sheep a doce citrus', /black sheep[\s\S]*doce citrus/i],
+const chat = [['Čo do automatu?', /espresso|automat/i], ['Káva na V60', /V60|filt/i], ['Máte kávu bez kofeínu?', /decaf|kofe/i],
+  ['Aká je doprava?', /40 €|doprav|poštovn/i], ['Povedz mi o gotiti', /gotiti/i], ['porovnaj black sheep a doce citrus', /black sheep[\s\S]*doce citrus/i],
   ['niečo na cesty', /drippin/], ['máte kapsule?', /kapsul/i], ['ahoj', /black\./]];
 for (const [q, re] of (slug === 'black' ? chat : chat.slice(0, 4))) {
   const out = coffeeReply(data, q, []);
@@ -136,8 +137,8 @@ for (const [q, re] of (slug === 'black' ? chat : chat.slice(0, 4))) {
 for (const p of data.products) {
   const txt = coffeeReply(data, 'koľko stojí ' + p.name.split('•').pop().trim(), []);
   const v = (p.variants || []).filter((x) => x.verifiedAt);
-  if (v.length) for (const x of v) assert.ok(txt.includes(x.price.toFixed(2).replace('.', ',')), 'chat bez overenej ceny ' + p.id);
-  else assert.match(txt, /orientačn/, 'chat neoznačil orientačnú cenu ' + p.id);
+  if (v.length) for (const x of v) assert.ok(txt.includes(E.money(x.price, p.currency).replace(/\u00a0/g, ' ')), 'chat bez overenej ceny ' + p.id);
+  else assert.match(txt, /orientačn|orientační/, 'chat neoznačil orientačnú cenu ' + p.id);
 }
 if (slug === 'black') assert.match(coffeeReply(data, 'a koľko stojí?', [{role: 'user', content: 'gotiti?'}, {role: 'assistant', content: coffeeReply(data, 'gotiti', [])}]), /gotiti/i, 'kontext');
 report.checks.chatOffline = 'PASS';

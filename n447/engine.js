@@ -49,7 +49,53 @@
         moka: ['Kávu pomeľte jemnejšie než na filter, no hrubšie než na espresso.', 'Zomieľajte tesne pred prípravou, aby ostala čerstvá.'],
         v60: ['Kávu pomeľte stredne jemne tesne pred prípravou.', 'Papierový filter pred nasypaním kávy prepláchnite horúcou vodou.'],
         aeropress: ['Kávu pomeľte stredne jemne tesne pred prípravou.', 'Zrnkovú kávu skladujte v uzavretej nádobe, mimo svetla.'],
-        frenchpress: ['Kávu pomeľte nahrubo tesne pred prípravou.', 'Zrnkovú kávu skladujte v uzavretej nádobe, mimo svetla.']}
+        frenchpress: ['Kávu pomeľte nahrubo tesne pred prípravou.', 'Zrnkovú kávu skladujte v uzavretej nádobe, mimo svetla.']},
+      /* E-shop melie zadarmo podľa voľby (data.grindLabels = presné názvy možností v košíku). */
+      nextGround: {espresso: (g) => ['Do automatu vyberte zrnkovú, automat si ju zomelie sám.', 'Na pákový kávovar bez mlynčeka zvoľte „' + g + '“.'],
+        moka: (g) => ['V e-shope zvoľte „' + g + '“.', 'Ak máte vlastný mlynček, zrnková vydrží po otvorení dlhšie čerstvá.'],
+        v60: (g) => ['V e-shope zvoľte „' + g + '“.', 'Papierový filter pred nasypaním kávy prepláchnite horúcou vodou.'],
+        aeropress: (g) => ['V e-shope zvoľte „' + g + '“.', 'Ak meliete doma, vyberte zrnkovú a pomeľte tesne pred prípravou.'],
+        frenchpress: (g) => ['V e-shope zvoľte „' + g + '“.', 'Ak meliete doma, vyberte zrnkovú a pomeľte tesne pred prípravou.']},
+      orderPick: ' Pri objednávke zvoľte ', listed: 'E-shop ju uvádza na: ', decaf: 'Bez kofeínu', decafFlag: 'E-shop ju označuje ako bezkofeínovú.',
+      tones: 'Chuťové tóny', inTaste: 'V chuti: ', taste1: 'Chuť', inBudget: 'V rozpočte', together: ' spolu ', yourLimit: '; váš limit ',
+      fOrigin: 'Pôvod', fProcess: 'Spracovanie', fRoast: 'Praženie', fComp: 'Zloženie', nextTitle: 'Čo ďalej', nextV60: 'Čo ďalej: príprava na V60',
+      priceInfo: 'Orientačná cena; presnú cenu balenia ukáže e-shop po výbere', approxFrom: 'orientačne od ', from: 'od ', upTo: 'Do ',
+      nInBudget: (n) => n + ' káv v balení do tejto sumy', allFit: (n) => 'Všetky vhodné kávy (' + n + ')', diffTaste: 'v chuti ',
+      dripReason: ['Bez pomôcok', 'Vrecúško zavesíte na šálku a prelejete horúcou vodou.'], dripChosen: 'Vybraná káva', dripNext: 'Ako ju pripraviť',
+      beansWord: 'zrnková'
+    },
+    cs: {
+      prepQ: 'Jak si připravujete kávu?', prepName: 'Příprava',
+      prep: {espresso: ['Kávovar nebo automat', 'Espresso, cappuccino, latte'], moka: ['Moka konvička', 'Příprava na sporáku'],
+        filter: ['Filtr a ruční příprava', 'V60, AeroPress, French press'], drip: ['Bez pomůcek, na cesty', 'Stačí šálek a horká voda']},
+      toolQ: 'Jakou pomůcku na filtr máte?', toolName: 'Pomůcka',
+      tool: {v60: ['V60 nebo jiný překapávač', 'Papírový filtr, přelévání'], aeropress: ['AeroPress', 'Louhování a protlačení'], frenchpress: ['French press', 'Louhování s pístem']},
+      dripQ: 'Kterou kávu v sáčcích chcete?', dripName: 'Káva',
+      tasteQ: 'Jaká chuť vám sedí nejvíc?', tasteName: 'Chuť',
+      taste: {choco: ['Čokoládová a karamelová', 'Sladká, plná, s oříšky'], fruitFull: ['Plná a ovocná', 'Višně, bobule, tmavé ovoce'], fresh: ['Svěží a šťavnatá', 'Rybíz, citrus, čajové tóny'], decaf: ['Bez kofeinu', 'Káva i na večer']},
+      budgetQ: 'Kolik chcete dát za balení?', budgetName: 'Rozpočet', budgetAny: 'Na ceně až tak nezáleží',
+      processQ: 'Jaké zpracování kávy je vám bližší?', processName: 'Zpracování',
+      regionQ: 'Odkud má káva pocházet?', regionName: 'Původ', region: {africa: 'Afrika', asia: 'Asie', americas: 'Střední a Jižní Amerika', blend: 'Směs více zemí'},
+      blendQ: 'Jaké složení upřednostníte?', blendName: 'Složení', blend: {arabica: '100 % arabika', robusta: 'S podílem robusty'},
+      pickQ: 'Které chutě vám víc sedí?', pickName: 'Chuťové tóny',
+      roast: {espresso: 'espresso roast', filter: 'filter roast', omni: 'omni roast'},
+      grindText: {espresso: 'zrnkovou do automatu nebo k vlastnímu mlýnku', moka: 'mletí pro moka konvičku', v60: 'mletí pro V60', aeropress: 'mletí pro AeroPress', frenchpress: 'mletí pro french press'},
+      reasonPrep: {espresso: ['Na espresso i do automatu', (r) => r === 'omni' ? 'Pražírna ji nabízí v „omni“ pražení, vhodném na espresso i filtr.' : 'Pražírna ji nabízí v espresso pražení.'],
+        moka: ['Do moka konvičky', (r) => (r === 'omni' ? 'Má „omni“ pražení' : 'Má espresso pražení') + ' a e-shop ji nabízí i namletou pro moka konvičku.'],
+        filter: ['Na filtr', (r) => r === 'omni' ? 'Má „omni“ pražení, které pražírna nabízí na espresso i filtr.' : 'Pražírna ji nabízí ve filtrovém pražení.']},
+      next: {}, grindPriceNote: '', beansGrind: {}, nextBeans: {},
+      nextGround: {espresso: (g) => ['Do automatu vyberte zrnkovou, automat si ji namele sám.', 'Na pákový kávovar bez mlýnku zvolte „' + g + '“.'],
+        moka: (g) => ['V e-shopu zvolte „' + g + '“.', 'Máte-li vlastní mlýnek, zrnková káva vydrží po otevření déle čerstvá.'],
+        v60: (g) => ['V e-shopu zvolte „' + g + '“.', 'Papírový filtr před nasypáním kávy propláchněte horkou vodou.'],
+        aeropress: (g) => ['V e-shopu zvolte „' + g + '“.', 'Pokud melete doma, vyberte zrnkovou a umelte ji těsně před přípravou.'],
+        frenchpress: (g) => ['V e-shopu zvolte „' + g + '“.', 'Pokud melete doma, vyberte zrnkovou a umelte ji těsně před přípravou.']},
+      orderPick: ' Při objednávce zvolte ', listed: 'E-shop ji uvádí na: ', decaf: 'Bez kofeinu', decafFlag: 'E-shop ji označuje jako bezkofeinovou.',
+      tones: 'Chuťové tóny', inTaste: 'V chuti: ', taste1: 'Chuť', inBudget: 'V rozpočtu', together: ' celkem ', yourLimit: '; váš limit ',
+      fOrigin: 'Původ', fProcess: 'Zpracování', fRoast: 'Pražení', fComp: 'Složení', nextTitle: 'Co dál', nextV60: 'Co dál: příprava na V60',
+      priceInfo: 'Orientační cena; přesnou cenu balení ukáže e-shop po výběru', approxFrom: 'orientačně od ', from: 'od ', upTo: 'Do ',
+      nInBudget: (n) => n + ' káv v balení do této částky', allFit: (n) => 'Všechny vhodné kávy (' + n + ')', diffTaste: 'v chuti ',
+      dripReason: ['Bez pomůcek', 'Sáček zavěsíte na šálek a přelijete horkou vodou.'], dripChosen: 'Vybraná káva', dripNext: 'Jak ji připravit',
+      beansWord: 'zrnková'
     }
   };
   const L = (data) => TXT[data.lang] || TXT.sk;
@@ -72,12 +118,20 @@
     return (p.variants || []).filter((v) => (!v.roast || v.roast === roast) && Number.isFinite(v.price) && v.verifiedAt && v.available !== false)
       .slice().sort((x, y) => x.grams - y.grams || x.price - y.price);
   }
-  const addonFor = (data, p, a) => typeof data.addonFor === 'function' ? data.addonFor(p, a) : null;
+  /* Doplnok k pomôcke z vlastného e-shopu (data.addons[tool]); voliteľný – ak sa s kávou nezmestí
+     do rozpočtu, vynechá sa a káva ostáva. */
+  const addonFor = (data, p, a) => typeof data.addonFor === 'function' ? data.addonFor(p, a) : (data.addons && a.tool && data.addons[a.tool]) || null;
   const total = (data, p, a, v) => v.price + (addonFor(data, p, a)?.price || 0);
   function packFor(data, p, a) {
     const packs = verifiedPacks(p, a);
     if (!a.budget || a.budget === 'any') return packs[0] || null;
-    return packs.find((v) => total(data, p, a, v) <= Number(a.budget) + EPS) || null;
+    return packs.find((v) => v.price <= Number(a.budget) + EPS) || null;
+  }
+  /* Doplnok iba vtedy, keď sa celá zostava zmestí do limitu. */
+  function addonFits(data, p, a, v) {
+    const ad = addonFor(data, p, a);
+    if (!ad || !v) return null;
+    return !a.budget || a.budget === 'any' || v.price + ad.price <= Number(a.budget) + EPS ? ad : null;
   }
 
   const processGroup = (p) => { const x = String(p.process || '').toLowerCase();
@@ -125,7 +179,7 @@
     const base = {prep: a.prep, tool: a.tool, taste: a.taste};
     p = pool(data, base);
     if (!a.budget) {
-      const cheapest = p.map((x) => { const v = verifiedPacks(x, base)[0]; return v ? {x, v, sum: total(data, x, base, v)} : null; });
+      const cheapest = p.map((x) => { const v = verifiedPacks(x, base)[0]; return v ? {x, v, sum: v.price} : null; });
       if (cheapest.length > 1 && cheapest.every(Boolean)) {
         const prices = [...new Set(cheapest.map((c) => c.sum))].sort((m, n) => m - n);
         const limits = prices.filter((x) => cheapest.filter((c) => c.sum <= x + EPS).length < p.length);
@@ -135,8 +189,8 @@
         const chosen = [...new Set([low, limits[limits.length - 1]].filter((x) => x !== undefined))];
         if (chosen.length) {
           const cur = p[0].currency;
-          const options = chosen.map((x) => { const fit = cheapest.filter((c) => c.sum <= x + EPS); return text(String(x), 'Do ' + money(x, cur), fit.length <= 3 ? fit.map((c) => c.x.name + ' ' + grams(c.v.grams)).join(', ') : fit.length + ' káv v balení do tejto sumy'); });
-          options.push(text('any', t.budgetAny, 'Všetky vhodné kávy (' + p.length + ')'));
+          const options = chosen.map((x) => { const fit = cheapest.filter((c) => c.sum <= x + EPS); return text(String(x), t.upTo + money(x, cur), fit.length <= 3 ? fit.map((c) => c.x.name + ' ' + grams(c.v.grams)).join(', ') : t.nInBudget(fit.length)); });
+          options.push(text('any', t.budgetAny, t.allFit(p.length)));
           return {key: 'budget', name: t.budgetName, title: t.budgetQ, textOnly: true, options};
         }
       }
@@ -171,12 +225,12 @@
   }
   function priceLine(data, p, a) {
     const v = packFor(data, p, a);
-    return v ? grams(v.grams) + ' · ' + money(v.price, p.currency) : 'orientačne od ' + money(p.priceFrom, p.currency);
+    return v ? grams(v.grams) + ' · ' + money(v.price, p.currency) : L(data).approxFrom + money(p.priceFrom, p.currency);
   }
   function differences(data, main, other, a) {
     const parts = [];
     const fresh = (other.notes || []).filter((n) => !(main.notes || []).includes(n));
-    if (fresh.length) parts.push('v chuti ' + fresh.slice(0, 3).join(', '));
+    if (fresh.length) parts.push(L(data).diffTaste + fresh.slice(0, 3).join(', '));
     else if (!(other.notes || []).length && other.profile) parts.push(other.profile);
     if (other.process && other.process !== main.process) parts.push(other.process);
     return parts;
@@ -188,38 +242,40 @@
       const d = data.drip, opt = d.options.find((o) => o.id === a.dripPick) || d.options[0];
       return {kind: 'drip', product: d, option: opt, pack: {label: d.pack, price: d.price, verifiedAt: d.checkedAt}, priceVerified: true, total: d.price, limit: null,
         priceLabel: money(d.price, d.currency), packLabel: d.pack + ' · ' + opt.title, packs: [], addon: null, alternative: null, facts: [],
-        reasons: [['Bez pomôcok', 'Vrecúško zavesíte na šálku a prelejete horúcou vodou.'], ['Vybraná káva', opt.title + ': ' + opt.detail + '.']],
-        next: {title: 'Ako ju pripraviť', items: d.brew, link: null}, shipping: data.shop && data.shop.freeShipping || ''};
+        reasons: [t.dripReason, [t.dripChosen, opt.title + ': ' + opt.detail + '.']],
+        next: {title: t.dripNext, items: d.brew, link: null}, shipping: data.shop && data.shop.freeShipping || ''};
     }
     const product = pool(data, a)[0];
     if (!product) return null;
     const roast = roastFor(product, a.prep);
     const pack = packFor(data, product, a);
-    const addon = pack ? addonFor(data, product, a) : null;
+    /* Najmenšie balenie v limite; ak sa s doplnkom zmestí aj iné balenie, ostáva najmenšie. */
+    const addon = addonFits(data, product, a, pack);
     const limit = a.budget && a.budget !== 'any' ? Number(a.budget) : null;
     const sum = pack ? pack.price + (addon ? addon.price : 0) : null;
     if (limit !== null && !(pack && sum <= limit + EPS)) throw new Error('n447 budget invariant: ' + product.id);
     const gk = grindKey(a), beans = !!data.beansOnly;
     const roastLabel = roast ? t.roast[roast] : (product.roastLabel || '');
     const tasteLabels = Object.assign({}, t.taste, data.tasteLabels || {});
-    const reasons = [[t.reasonPrep[a.prep][0], product.prepText ? 'E-shop ju uvádza na: ' + product.prepText + '.' : t.reasonPrep[a.prep][1](roast)]];
-    if (a.tool) reasons[0][1] += beans ? ' ' + t.beansGrind[gk] : ' Pri objednávke zvoľte ' + t.grindText[gk] + '.';
-    if (product.decaf) reasons.push(['Bez kofeínu', product.decafNote || 'E-shop ju označuje ako bezkofeínovú.']);
-    if ((a.taste && a.taste !== 'decaf') || a.pick) reasons.push([a.taste && a.taste !== 'decaf' ? tasteLabels[a.taste][0] : 'Chuťové tóny', 'V chuti: ' + ((product.notes || []).slice(0, 4).join(', ') || product.profile) + '.']);
-    else if ((product.notes || []).length) reasons.push(['Chuť', 'V chuti: ' + product.notes.slice(0, 4).join(', ') + '.']);
-    if (limit !== null) reasons.push(['V rozpočte', grams(pack.grams) + (addon ? ' + ' + addon.product.name : '') + ' spolu ' + money(sum, product.currency) + '; váš limit ' + money(limit, product.currency) + '.']);
+    const grindLabel = (data.grindLabels || {})[gk];
+    const reasons = [[t.reasonPrep[a.prep][0], product.prepText ? t.listed + product.prepText + '.' : t.reasonPrep[a.prep][1](roast)]];
+    if (a.tool) reasons[0][1] += beans ? ' ' + t.beansGrind[gk] : t.orderPick + (grindLabel ? '„' + grindLabel + '“' : t.grindText[gk]) + '.';
+    if (product.decaf) reasons.push([t.decaf, product.decafNote || t.decafFlag]);
+    if ((a.taste && a.taste !== 'decaf') || a.pick) reasons.push([a.taste && a.taste !== 'decaf' ? tasteLabels[a.taste][0] : t.tones, t.inTaste + ((product.notes || []).slice(0, 4).join(', ') || product.profile) + '.']);
+    else if ((product.notes || []).length) reasons.push([t.taste1, t.inTaste + product.notes.slice(0, 4).join(', ') + '.']);
+    if (limit !== null) reasons.push([t.inBudget, grams(pack.grams) + (addon ? ' + ' + addon.product.name : '') + t.together + money(sum, product.currency) + t.yourLimit + money(limit, product.currency) + '.']);
     const packs = verifiedPacks(product, a).map((v) => ({label: grams(v.grams), price: money(v.price, product.currency), chosen: v === pack, over: limit !== null && v.price + (addon ? addon.price : 0) > limit + EPS}));
-    const facts = [['Pôvod', product.origin], ['Spracovanie', product.process], ['Praženie', roastLabel], ['Zloženie', product.compositionText]].filter((x) => x[1]);
+    const facts = [[t.fOrigin, product.origin, 'origin'], [t.fProcess, product.process, 'process'], [t.fRoast, roastLabel, 'roast'], [t.fComp, product.compositionText, 'comp']].filter((x) => x[1]);
     const same = pool(data, a, 'pick').filter((p) => p.id !== product.id);
     const alt = same[0] || null;
     const alternative = alt ? {product: alt, diff: differences(data, product, alt, a), price: priceLine(data, alt, a)} : null;
     const next = a.prep === 'filter' && a.tool === 'v60' && data.guides && data.guides.v60
-      ? {title: 'Čo ďalej: príprava na V60', items: data.guides.v60.steps, link: {href: data.guides.v60.url, label: data.guides.v60.title}}
-      : {title: 'Čo ďalej', items: (beans ? t.nextBeans[gk] : t.next[gk]) || [], link: null};
+      ? {title: t.nextV60, items: data.guides.v60.steps, link: {href: data.guides.v60.url, label: data.guides.v60.title}}
+      : {title: t.nextTitle, items: ((beans ? t.nextBeans[gk] : grindLabel ? t.nextGround[gk](grindLabel) : t.next[gk]) || []).concat(a.tool === 'v60' && data.notes && data.notes.v60Filters ? [data.notes.v60Filters] : []), link: null};
     return {kind: 'coffee', product, roast, pack, addon, total: sum, limit, packs, facts, reasons, alternative, next,
-      priceVerified: !!pack, priceLabel: pack ? money(pack.price, product.currency) : 'od ' + money(product.priceFrom, product.currency),
-      packLabel: pack ? [grams(pack.grams), roastLabel, String(pack.grind || 'Zrnková').toLowerCase()].filter(Boolean).join(' · ') : 'Orientačná cena; presnú cenu balenia ukáže e-shop po výbere',
-      grindNote: pack && !beans && GRIND_FOR[gk] !== 'Zrnková' ? t.grindPriceNote : '',
+      priceVerified: !!pack, priceLabel: pack ? money(pack.price, product.currency) : t.from + money(product.priceFrom, product.currency),
+      packLabel: pack ? [grams(pack.grams), roastLabel, String(pack.grind || t.beansWord).toLowerCase()].filter(Boolean).join(' · ') : t.priceInfo,
+      grindNote: pack && !beans && !data.grindFree && GRIND_FOR[gk] !== 'Zrnková' ? t.grindPriceNote : '',
       promoNote: product.promoNote || '', shipping: data.shop && data.shop.freeShipping || ''};
   }
   function allPaths(data, a, trail) {

@@ -27,11 +27,12 @@ PROBE = r"""() => {
     bad: /undefined|NaN|\bnull\b|fallback|katalógové skóre|informácie z e-shopu/.test(txt),
     foreign: /Pražírna|Don Franko|donfranko|247 €|[Pp]rvý mesiac zdarma|30 dní zdarma/.test(document.body.innerText),
     links: [...document.querySelectorAll('a[href]')].map(a => a.href),
-    broken: [...w.querySelectorAll('img')].filter(i => i.offsetParent !== null && i.complete && i.naturalWidth === 0).map(i => i.getAttribute('src'))};
+    broken: [...w.querySelectorAll('img')].filter(i => i.offsetParent !== null && i.complete && i.naturalWidth === 0 && i.getAttribute('loading') !== 'lazy').map(i => i.getAttribute('src'))};
 }"""
 
 def settle(pg):
-    try: pg.wait_for_function("[...document.querySelectorAll('#widget img')].filter(i=>i.offsetParent!==null).every(i=>i.complete)", timeout=6000)
+    # Iba obrázky vo viditeľnej ploche widgetu; lenivo načítané mimo pohľadu sa nečakajú.
+    try: pg.wait_for_function("[...document.querySelectorAll('#widget img')].filter(i=>{const r=i.getBoundingClientRect();return i.offsetParent!==null&&r.bottom>0&&r.top<innerHeight}).every(i=>i.complete)", timeout=6000)
     except Exception: pass
     pg.wait_for_timeout(80)
 
