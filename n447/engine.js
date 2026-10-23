@@ -142,6 +142,8 @@
     return !a.budget || a.budget === 'any' || v.price + ad.price <= Number(a.budget) + EPS ? ad : null;
   }
 
+  /* Recept pražiarne: p.recipes[prípravu] (len pre danú prípravu) alebo spoločný p.recipe. */
+  const recipeOf = (p, gk) => p.recipes ? p.recipes[gk] || null : p.recipe || null;
   const processGroup = (p) => { const x = String(p.process || '').toLowerCase();
     if (/honey/.test(x)) return 'honey'; if (/semi/.test(x)) return 'semi';
     if (/natural|anaerob/.test(x) && !/washed/.test(x)) return 'natural'; if (/washed/.test(x) && !/natural/.test(x)) return 'washed'; return null; };
@@ -282,7 +284,7 @@
     const alternative = alt ? {product: alt, diff: differences(data, product, alt, a), price: priceLine(data, alt, a)} : null;
     const next = a.prep === 'filter' && a.tool === 'v60' && data.guides && data.guides.v60
       ? {title: t.nextV60, items: data.guides.v60.steps, link: {href: data.guides.v60.url, label: data.guides.v60.title}}
-      : product.recipe ? {title: t.nextRecipe, items: [product.recipe].concat(beans ? [t.beansGrind[gk]] : []).filter(Boolean), link: product.recipeLink || null}
+      : recipeOf(product, gk) ? {title: t.nextRecipe, items: [recipeOf(product, gk)].concat(beans ? [t.beansGrind[gk]] : []).filter(Boolean), link: product.recipeLink || null}
       : {title: t.nextTitle, items: ((beans ? t.nextBeans[gk] : grindLabel ? t.nextGround[gk](grindLabel) : t.next[gk]) || []).concat(a.tool === 'v60' && data.notes && data.notes.v60Filters ? [data.notes.v60Filters] : []), link: null};
     return {kind: 'coffee', product, roast, pack, addon, total: sum, limit, packs, facts, reasons, alternative, next,
       priceVerified: !!pack, priceLabel: pack ? money(pack.price, product.currency) : t.from + money(product.priceFrom, product.currency),

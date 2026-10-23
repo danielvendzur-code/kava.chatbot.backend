@@ -9,12 +9,13 @@ import VERTICCIO from '../n447/data/verticcio.js';
 import REBELBEAN from '../n447/data/rebelbean.js';
 import DOUBLESHOT from '../n447/data/doubleshot.js';
 import FATHERS from '../n447/data/fathers.js';
+import NORDBEANS from '../n447/data/nordbeans.js';
 
 const {coffeeReply} = REPLY;
 const euro = (v, c) => ENG.money(v, c).replace(/ /g, ' ');
 
 /* Iba firmy novej dávky; neznámy identifikátor dostane 400, nikdy cudziu firmu. */
-export const DEMOS = {black: BLACK, verticcio: VERTICCIO, rebelbean: REBELBEAN, doubleshot: DOUBLESHOT, fathers: FATHERS};
+export const DEMOS = {black: BLACK, verticcio: VERTICCIO, rebelbean: REBELBEAN, doubleshot: DOUBLESHOT, fathers: FATHERS, nordbeans: NORDBEANS};
 
 export function catalogueFor(data) {
   const products = data.products.filter((p) => p.available !== false).map((p) => ({
