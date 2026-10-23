@@ -7,12 +7,13 @@ import REPLY from '../n447/reply.js';
 import BLACK from '../n447/data/black.js';
 import VERTICCIO from '../n447/data/verticcio.js';
 import REBELBEAN from '../n447/data/rebelbean.js';
+import DOUBLESHOT from '../n447/data/doubleshot.js';
 
 const {coffeeReply} = REPLY;
 const euro = (v, c) => ENG.money(v, c).replace(/ /g, ' ');
 
 /* Iba firmy novej dávky; neznámy identifikátor dostane 400, nikdy cudziu firmu. */
-export const DEMOS = {black: BLACK, verticcio: VERTICCIO, rebelbean: REBELBEAN};
+export const DEMOS = {black: BLACK, verticcio: VERTICCIO, rebelbean: REBELBEAN, doubleshot: DOUBLESHOT};
 
 export function catalogueFor(data) {
   const products = data.products.filter((p) => p.available !== false).map((p) => ({

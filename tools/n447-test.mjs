@@ -86,7 +86,7 @@ report.checks.paths = {total: paths.length, maxQuestions: maxQ, followUpSteps: f
 
 /* 3. Regresia z kontroly a hranice cien (rovnaké jadro, syntetické kópie dát) */
 {
-  const ref = {...(data.products.find((p) => p.id === 'doce-citrus') || data.products.find((p) => (p.preps || []).includes('espresso')))};
+  const ref = {...(data.products.find((p) => p.id === 'doce-citrus') || data.products.find((p) => !p.decaf && E.suits(p, 'espresso')))};
   if (slug === 'black') {
     const solo = {...data, products: [ref, {...data.products.find((p) => p.id === 'black-sheep'), variants: [{roast: 'espresso', grams: 200, grind: 'Zrnková', price: 11.9, verifiedAt: 'test', source: 'test'}]}]};
     const q = E.nextQuestion(solo, {prep: 'espresso', taste: 'choco'});
@@ -121,7 +121,7 @@ report.checks.paths = {total: paths.length, maxQuestions: maxQ, followUpSteps: f
     assert.equal(r.pack.url, 'https://www.verticcio.sk/kava-verticcio/verticcio-korzo-blend-200g', 'CTA na konkrétne balenie');
     assert.ok(!E.pool(data, {prep: 'espresso', taste: 'choco', budget: '9.89'}).some((p) => p.id === 'korzo-blend'), 'korzo 9,90 € nad limit 9,89 €');
   }
-  report.checks.budgetRegression = 'PASS (doce citrus 200 g 10,50 € / 500 g 22,50 € / 1 kg 39,00 €; hranica rovná/pod; neoverené; „od“; doplnok; iné praženie)';
+  report.checks.budgetRegression = 'PASS (' + (slug === 'black' ? 'doce citrus 200 g 10,50 € / 500 g 22,50 € / 1 kg 39,00 €; ' : slug === 'verticcio' ? 'Korzo 200 g 9,90 € pri limite 9,90 €, 1 kg nad limit, CTA na balenie; ' : '') + 'hranica rovná/pod; neoverené; „od“; doplnok rovno/nad limit; iné praženie)';
 }
 
 /* 4. Chat offline */
