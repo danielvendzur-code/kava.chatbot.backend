@@ -49,7 +49,7 @@ for (const p of paths) {
     assert.equal(new Set(o.map((x) => x.value)).size, o.length);
     const photos = o.map((x) => x.photo).filter(Boolean);
     assert.equal(new Set(photos).size, photos.length, 'rovnaká fotka v otázke ' + s.key);
-    if (s.key === 'pick' || s.key === 'detailProcess') followUps++;
+    if (/^pick|^detail/.test(s.key)) followUps++;
   }
   if (r.kind === 'coffee') {
     assert.ok(E.pool(data, a).some((x) => x.id === r.product.id), 'výsledok nespĺňa odpovede');
@@ -90,6 +90,23 @@ if (data.lang === 'cs') for (const p of paths) {
   const m = txt.match(/[^"]{0,30}[äôľĺŕÄÔĽĹŔ][^"]{0,30}/);
   assert.ok(!m, 'slovenský text v českej ukážke: ' + (m && m[0]));
 }
+/* Regresia (Codex, d032700): pri rovnocenných kávach sa žiadna nesmie potichu vynechať; každá ponúknutá káva je
+   v niektorej otázke výberu a pri budget=any rozhoduje skutočný rozdiel alebo stránkovanie v poradí e-shopu, nie cena. */
+for (const p of paths) {
+  const picks = p.trail.filter((s) => /^pick/.test(s.key));
+  if (!picks.length) continue;
+  const a = {}; for (const s of p.trail) { if (s.key === picks[0].key) break; a[s.key] = s.value; }
+  const offered = new Set(picks.flatMap((s) => s.question.options.map((o) => o.value)));
+  const all = E.pool(data, a);
+  if (picks.every((s) => s.question.options.some((o) => String(o.value).startsWith('more:')) || s === picks[picks.length - 1]))
+    for (const x of all) if (!offered.has(x.id) && !p.trail.some((s) => String(s.value).startsWith('more:'))) {
+      const reach = paths.some((q) => JSON.stringify(q.trail.slice(0, p.trail.indexOf(picks[0])).map((s) => [s.key, s.value])) === JSON.stringify(p.trail.slice(0, p.trail.indexOf(picks[0])).map((s) => [s.key, s.value])) && q.result.product.id === x.id);
+      assert.ok(reach, 'káva ' + x.id + ' je vo vetve ' + JSON.stringify(a) + ' nedostupná');
+    }
+}
+const branch = (a, id) => paths.some((p) => Object.entries(a).every(([k, v]) => p.answers[k] === v) && p.result.product.id === id);
+if (slug === 'nordbeans') assert.ok(branch({prep: 'espresso', taste: 'choco', budget: 'any'}, 'brazilie'), 'Nordbeans espresso/choco/any: Brazílie 250 Kč musí byť dostupná');
+if (slug === 'fathers') assert.ok(branch({prep: 'espresso', taste: 'choco', budget: 'any'}, 'brazilie-cafeina'), "Father's espresso/choco/any: Cafeina 300 Kč musí byť dostupná");
 const reached = new Set(paths.map((p) => p.result.product.id));
 const unreachable = data.products.filter((p) => p.available !== false && !reached.has(p.id)).map((p) => p.id);
 assert.deepEqual(unreachable, [], 'kávy, ku ktorým nevedie žiadna cesta: ' + unreachable.join(', '));
