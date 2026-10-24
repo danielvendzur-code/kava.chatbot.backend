@@ -241,7 +241,7 @@
           .map(([k, keys]) => [k, Math.max(...keys.map((v) => list.filter((x) => SPLITS[k[0]](x) === v).length))]).sort((m, n) => m[1] - n[1])[0];
         if (!best) return null;
         const [kind, labels, title, name] = best[0], keyOf = SPLITS[kind], keys = [...new Set(list.map(keyOf))];
-        return {key, name, title, textOnly: true, options: keys.map((k) => { const l = list.filter((x) => keyOf(x) === k); return text(kind + ':' + k, labels[k] || (String(k).charAt(0).toUpperCase() + String(k).slice(1)), l.length <= 2 ? names(l) : t.nCoffees(l.length)); })};
+        return {key, name, title, textOnly: true, options: keys.map((k) => { const l = list.filter((x) => keyOf(x) === k); return text(kind + ':' + k, labels[k] || (String(k).charAt(0).toUpperCase() + String(k).slice(1)), l.length === 1 && l[0].name.length <= 28 ? l[0].name : t.nCoffees(l.length)); })};
       }
       for (const [kind, labels, title, name] of kinds) {
         if (used.includes(kind)) continue;
@@ -249,7 +249,7 @@
         const keys = [...new Set(list.map(keyOf))];
         const groups = keys.map((k) => [k, list.filter((x) => keyOf(x) === k)]);
         if (keys.length > 1 && keys.length <= MAX_TEXT && !keys.includes(null) && !keys.includes(undefined) && (!strict || groups.every(([, l]) => l.length <= MAX_PHOTO)))
-          return {key, name, title, textOnly: true, options: groups.map(([k, l]) => text(kind + ':' + k, labels[k] || (String(k).charAt(0).toUpperCase() + String(k).slice(1)), l.length <= 2 ? names(l) : t.nCoffees(l.length)))};
+          return {key, name, title, textOnly: true, options: groups.map(([k, l]) => text(kind + ':' + k, labels[k] || (String(k).charAt(0).toUpperCase() + String(k).slice(1)), l.length === 1 && l[0].name.length <= 28 ? l[0].name : t.nCoffees(l.length)))};
       }
       return null;
     };
