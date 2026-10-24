@@ -89,7 +89,7 @@
         roasts: ['filter', 'espresso'], taste: 'fresh', notes: ['jahody', 'bergamot', 'broskyňový ľadový čaj', 'biely čaj'],
         origin: 'Etiópia · Gedeb (Gedeo)', farm: 'stanica Eva Gotiti', variety: '74110, 74112', process: 'washed', altitude: '2000–2100 m n. m.',
         summary: 'Ľahká, ale zložitá washed káva od malých pestovateľov; v závere biely čaj.'}),
-      coffee({id: 'juicy-pussy', slug: 'juicy-pussy', name: 'blend • juicy pussy', photo: 'blend-juicy-pussy.jpg', priceFrom: 13.5, priceTo: 55,
+      coffee({id: 'juicy-pussy', region: 'blend', slug: 'juicy-pussy', name: 'blend • juicy pussy', photo: 'blend-juicy-pussy.jpg', priceFrom: 13.5, priceTo: 55,
         roasts: ['filter'], taste: 'fresh', notes: [], profile: 'šťavnatá, sladká a svieža',
         origin: 'sezónny blend (zložky sa menia podľa sezóny)', process: 'washed kávy s malým podielom natural',
         summary: 'Sezónny filtrový blend na každý deň: ovocné washed kávy doplnené natural zložkou pre telo a sladkosť.'}),

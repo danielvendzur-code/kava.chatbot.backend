@@ -318,7 +318,7 @@
   }
 
   function findRoot() {
-    return document.querySelector(`.page.${slug}-page`) ||
+    return document.querySelector(`.page.${CSS.escape(slug + "-page")}`) ||
       document.querySelector(brand.root) ||
       document.querySelector('[data-owner-page="true"]') ||
       document.querySelector('.mc-owner') ||

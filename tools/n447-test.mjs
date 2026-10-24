@@ -44,7 +44,8 @@ for (const p of paths) {
   maxQ = Math.max(maxQ, p.trail.length);
   for (const s of p.trail) {
     const o = s.question.options;
-    assert.ok(o.length >= 2 && o.length <= 5, 'počet možností ' + s.key + ' ' + o.length);
+    /* Schválené UI na 320 × 568 bez posúvania: fotky 2 × 2 (≤ 4), textové karty ≤ 3. */
+    assert.ok(o.length >= 2 && o.length <= (s.question.textOnly ? 3 : 4), 'počet možností ' + s.key + ' ' + o.length);
     assert.equal(new Set(o.map((x) => x.value)).size, o.length);
     const photos = o.map((x) => x.photo).filter(Boolean);
     assert.equal(new Set(photos).size, photos.length, 'rovnaká fotka v otázke ' + s.key);
@@ -82,6 +83,16 @@ for (const p of paths) {
 assert.deepEqual(E.answer({prep: 'espresso', taste: 'choco', pick: 'doce-citrus'}, 'prep', 'filter'), {prep: 'filter'});
 assert.equal(E.maxRemaining(data, {}), maxQ);
 assert.ok(maxQ <= 6, 'priveľa krokov ' + maxQ);
+/* Česká firma: žiadne slovenské písmená (ä ô ľ ĺ ŕ) v otázkach ani vo výsledku. */
+if (data.lang === 'cs') for (const p of paths) {
+  const txt = JSON.stringify([p.trail.map((s) => [s.question.title, s.question.name, s.question.options.map((o) => [o.title, o.detail])]),
+    p.result.reasons, p.result.facts, p.result.next, p.result.packLabel, p.result.priceLabel, p.result.alternative && p.result.alternative.diff]);
+  const m = txt.match(/[^"]{0,30}[äôľĺŕÄÔĽĹŔ][^"]{0,30}/);
+  assert.ok(!m, 'slovenský text v českej ukážke: ' + (m && m[0]));
+}
+const reached = new Set(paths.map((p) => p.result.product.id));
+const unreachable = data.products.filter((p) => p.available !== false && !reached.has(p.id)).map((p) => p.id);
+assert.deepEqual(unreachable, [], 'kávy, ku ktorým nevedie žiadna cesta: ' + unreachable.join(', '));
 report.checks.paths = {total: paths.length, maxQuestions: maxQ, followUpSteps: followUps, budgetPaths, verifiedPriceResults: verifiedResults};
 
 /* 3. Regresia z kontroly a hranice cien (rovnaké jadro, syntetické kópie dát) */
