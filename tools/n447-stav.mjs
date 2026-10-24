@@ -18,7 +18,7 @@ const STATUS = {
   verticcio: {name: 'Verticcio', country: 'SK', family: 'coffee', state: 'READY_FOR_REVIEW', open: ['kontakt marketing@verticcio.sk zo zadania – kontaktná stránka za WAF (466), znovu neoverovaný']},
   rebelbean: {name: 'Rebelbean', country: 'CZ', family: 'coffee', state: 'READY_FOR_REVIEW', open: []},
   nordbeans: {name: 'Nordbeans', country: 'CZ', family: 'coffee', state: 'READY_FOR_REVIEW_PARTIAL',
-    reason: '5 produktových stránok vrátilo 403 aj po jednom pomalom opakovaní – tieto kávy nie sú vo výbere.', open: ['5 káv nezahrnutých (403)', 'chat s AI: zdieľaný ai-chat.js maže „_“ z odkazov, odkazy Nordbeans (…_z123/) preto vždy padnú na overenú odpoveď z katalógu']},
+    reason: 'Z 5 pôvodne blokovaných stránok 3 doplnené pri pomalom opakovaní 24. 10. (18 káv); cocondo-natural_z10 (connection reset) a vara-blanca-honey_z3964 (403) nie sú vo výbere, ďalšie pokusy sa nerobia.', open: ['2 kávy nezahrnuté (Cocondo Natural, Vara Blanca Honey)', 'chat s AI: zdieľaný ai-chat.js maže „_“ z odkazov, odkazy Nordbeans (…_z123/) preto vždy padnú na overenú odpoveď z katalógu']},
   doubleshot: {name: 'doubleshot', country: 'CZ', family: 'coffee', state: 'READY_FOR_REVIEW', open: ['Farm • Bule Hora vyradená (rozpor gramáže 300 g vs 350 g)']},
   fathers: {name: "Father's Coffee Roastery", country: 'CZ', family: 'coffee', state: 'READY_FOR_REVIEW',
     open: ['ceny 1 kg / 2 kg z dát e-shopu (s DPH pre ČR, zaokrúhlené nahor podľa zobrazených 250 g cien); priamo zobrazená je iba cena 250 g', 'Zebigi a Inzá (espresso) vyradené – kategória Espresso, popis uvádza filter']},
