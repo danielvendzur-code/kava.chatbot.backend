@@ -53,7 +53,12 @@ const companies = Object.entries(STATUS).map(([slug, s]) => {
     const r = JSON.parse(fs.readFileSync(`${qaDir}/${slug}/browser-report.json`, 'utf8'));
     c.browserCheck = {sizes: Object.keys(r.sizes), testedPaths: r.testedPaths, allPaths: r.allPaths, issues: Object.values(r.sizes).reduce((n, v) => n + v.issues.length, 0),
       firstIssues: Object.values(r.sizes).flatMap((v) => v.issues).slice(0, 3), console: r.console.length, storage: r.storage};
-  } else if (s.family === 'coffee' && c.page) c.browserCheck = {state: 'NOT_FINISHED', note: 'beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom'};
+  } else if (arg('cxqa') && fs.existsSync(`${arg('cxqa')}/${slug}/cx-browser-report.json`)) {
+    const r = JSON.parse(fs.readFileSync(`${arg('cxqa')}/${slug}/cx-browser-report.json`, 'utf8'));
+    const v = Object.values(r.sizes);
+    c.browserCheck = {sizes: Object.keys(r.sizes), testedPaths: v.reduce((n, x) => n + x.walks, 0), allPaths: 'priechody s rôznymi odpoveďami', budgetChecks: v.reduce((n, x) => n + x.budgetChecks, 0),
+      issues: v.reduce((n, x) => n + x.issues.length, 0), firstIssues: v.flatMap((x) => x.issues).slice(0, 3), console: r.console.length};
+  } else if (c.page) c.browserCheck = {state: 'NOT_FINISHED', note: 'beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom'};
   return c;
 });
 const engineCommit = lastCommit(['n447/engine.js', 'n447/reply.js', 'n447/coffee-jolka-app-n447.js', 'n447/kozmetika/cosmetics-n447.js', 'api/chat-447.js', 'api/cosmetics-chat-447.js']);
