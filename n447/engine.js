@@ -78,7 +78,7 @@
       regionQ: 'Odkud má káva pocházet?', regionName: 'Původ', region: {africa: 'Afrika', asia: 'Asie', americas: 'Střední a Jižní Amerika', blend: 'Směs více zemí'},
       blendQ: 'Jaké složení upřednostníte?', blendName: 'Složení', blend: {arabica: '100 % arabika', robusta: 'S podílem robusty'},
       pickQ: 'Které chutě vám víc sedí?', pickName: 'Chuťové tóny',
-      roast: {espresso: 'espresso roast', filter: 'filter roast', omni: 'omni roast'},
+      roast: {espresso: 'pražení na espresso', filter: 'pražení na filtr', omni: 'omni pražení (espresso i filtr)'},
       grindText: {espresso: 'zrnkovou do automatu nebo k vlastnímu mlýnku', moka: 'mletí pro moka konvičku', v60: 'mletí pro V60', aeropress: 'mletí pro AeroPress', frenchpress: 'mletí pro french press'},
       reasonPrep: {espresso: ['Na espresso i do automatu', (r) => r === 'omni' ? 'Pražírna ji nabízí v „omni“ pražení, vhodném na espresso i filtr.' : 'Pražírna ji nabízí v espresso pražení.'],
         moka: ['Do moka konvičky', (r) => (r === 'omni' ? 'Má „omni“ pražení' : 'Má espresso pražení') + ' a e-shop ji nabízí i namletou pro moka konvičku.'],
