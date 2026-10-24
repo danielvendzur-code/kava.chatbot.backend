@@ -51,7 +51,7 @@
  "scope": "Zrnkové kávy z kategorie Káva, jejichž produktové stránky šlo načíst. Kapsle, rozpustná káva, čaje, předplatné, sady a vybavení nejsou ve výběru.",
  "excluded": [
   "Jizerky: na stránce není uvedena gramáž balení – vyřazeno",
-  "Neověřeno – e-shop vrátil 403 (Access Denied), požadavky zastaveny: chelbesa-washed, el-cambalache-natural, keramo-natural, cocondo-natural, vara-blanca-honey",
+  "Neověřeno – e-shop vrátil 403 (Access Denied), požadavky zastaveny: cocondo-natural, vara-blanca-honey",
   "kapsle (3), rozpustná káva, čtyřbalení (sada)",
   "balení 2000 g ve vratném obalu (velkoobchod)"
  ],
@@ -252,6 +252,134 @@
    "recipes": {
     "espresso": "Espresso podle pražírny: káva 16 g, voda 45 ml, poměr 1:2,8, čas 26 sec."
    }
+  },
+  {
+   "id": "chelbesa-washed",
+   "kind": "coffee",
+   "name": "Chelbesa Washed",
+   "url": "https://www.nordbeans.cz/chelbesa-washed_z4053/",
+   "photo": "/assets/nordbeans/chelbesa-washed.jpg",
+   "currency": "CZK",
+   "available": true,
+   "decaf": false,
+   "preps": [
+    "filter"
+   ],
+   "tools": [
+    "v60",
+    "aeropress",
+    "frenchpress"
+   ],
+   "roastLabel": "světlé pražení, řada Nordbeans",
+   "prepText": "Pražírna ji doporučuje na: filtr, AeroPress, frenchpress, chemex, batch brew",
+   "taste": "fruitFull",
+   "tastes": [
+    "fruitFull"
+   ],
+   "acidityLabel": "Vyšší",
+   "notes": [
+    "meruňky",
+    "citrusy",
+    "květiny"
+   ],
+   "origin": "Etiopie · Yirgacheffe",
+   "region": "africa",
+   "process": "Promyté (washed)",
+   "variety": "Heirloom",
+   "summary": "Pokud máte na filtru rádi lehkost čaje a vůni květin, Chelbesa je káva pro vás. Tahle promytá Etiopie z Yirgacheffe chutná čistě, s tóny lesního ovoce a citrusů.",
+   "priceFrom": 375,
+   "priceTo": 1363,
+   "weights": [
+    250,
+    1000
+   ],
+   "variants": [
+    {
+     "grams": 250,
+     "grind": "zrnková",
+     "price": 375,
+     "url": "https://www.nordbeans.cz/chelbesa-washed_z4053/",
+     "sku": "4053_1519",
+     "available": true,
+     "verifiedAt": "2026-10-23",
+     "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
+    },
+    {
+     "grams": 1000,
+     "grind": "zrnková",
+     "price": 1363,
+     "url": "https://www.nordbeans.cz/chelbesa-washed_z4053/",
+     "sku": "4053_1520",
+     "available": true,
+     "verifiedAt": "2026-10-23",
+     "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
+    }
+   ],
+   "checkedAt": "2026-10-23"
+  },
+  {
+   "id": "el-cambalache-natural",
+   "kind": "coffee",
+   "name": "El Cambalache Natural",
+   "url": "https://www.nordbeans.cz/el-cambalache-natural_z4012/",
+   "photo": "/assets/nordbeans/el-cambalache-natural.jpg",
+   "currency": "CZK",
+   "available": true,
+   "decaf": false,
+   "preps": [
+    "filter"
+   ],
+   "tools": [
+    "v60",
+    "aeropress",
+    "frenchpress"
+   ],
+   "roastLabel": "světlé pražení, řada Nordbeans",
+   "prepText": "Pražírna ji doporučuje na: filtr, AeroPress, frenchpress, chemex, batch brew",
+   "taste": "fruitFull",
+   "tastes": [
+    "fruitFull"
+   ],
+   "acidityLabel": "Vyšší",
+   "notes": [
+    "červené jablko",
+    "rum",
+    "cukrová třtina"
+   ],
+   "origin": "Nikaragua · Dipilto",
+   "region": "americas",
+   "process": "Natural",
+   "variety": "Maracaturra",
+   "summary": "\"Máme radost, že vám můžeme představit naturálně zpracovanou Maracaturru z farmy Finca El Cambalache. Samuel Zavala patří k nejvýraznějším tvářím současné nikaragujské scény a jeho kávy nám každý rok znovu potvrzují, proč se k němu vracíme.\"",
+   "priceFrom": 375,
+   "priceTo": 1363,
+   "weights": [
+    250,
+    1000
+   ],
+   "variants": [
+    {
+     "grams": 250,
+     "grind": "zrnková",
+     "price": 375,
+     "url": "https://www.nordbeans.cz/el-cambalache-natural_z4012/",
+     "sku": "4012_1492",
+     "available": true,
+     "verifiedAt": "2026-10-23",
+     "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
+    },
+    {
+     "grams": 1000,
+     "grind": "zrnková",
+     "price": 1363,
+     "url": "https://www.nordbeans.cz/el-cambalache-natural_z4012/",
+     "sku": "4012_1482",
+     "available": true,
+     "verifiedAt": "2026-10-23",
+     "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
+    }
+   ],
+   "checkedAt": "2026-10-23"
   },
   {
    "id": "fearless-lynx-etiopie",
@@ -583,6 +711,69 @@
    "recipes": {
     "espresso": "Espresso podle pražírny: káva 16 g, voda 45 ml, poměr 1:2,8, čas 26 sec."
    }
+  },
+  {
+   "id": "keramo-natural",
+   "kind": "coffee",
+   "name": "Keramo Natural",
+   "url": "https://www.nordbeans.cz/keramo-natural_z7/",
+   "photo": "/assets/nordbeans/keramo-natural.jpg",
+   "currency": "CZK",
+   "available": true,
+   "decaf": false,
+   "preps": [
+    "filter"
+   ],
+   "tools": [
+    "v60",
+    "aeropress"
+   ],
+   "roastLabel": "světlé pražení, řada Nordbeans",
+   "prepText": "Pražírna ji doporučuje na: filtr, AeroPress, chemex, batch brew",
+   "taste": "fruitFull",
+   "tastes": [
+    "fruitFull"
+   ],
+   "acidityLabel": "Vyšší",
+   "notes": [
+    "meruňky",
+    "mango",
+    "čaj"
+   ],
+   "origin": "Etiopie",
+   "region": "africa",
+   "process": "Natural",
+   "variety": "Heirloom",
+   "summary": "Máme neuvěřitelnou radost, že vám můžeme představit další sklizeň naturálně zpracované kávy z vesnice Keramo. Každoročně nám dokazuje, že jsme si před lety nemohli vybrat lépe a vždy patří k nejlepším kávám sezony.",
+   "priceFrom": 375,
+   "priceTo": 1363,
+   "weights": [
+    250,
+    1000
+   ],
+   "variants": [
+    {
+     "grams": 250,
+     "grind": "zrnková",
+     "price": 375,
+     "url": "https://www.nordbeans.cz/keramo-natural_z7/",
+     "sku": "7_379",
+     "available": true,
+     "verifiedAt": "2026-10-23",
+     "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
+    },
+    {
+     "grams": 1000,
+     "grind": "zrnková",
+     "price": 1363,
+     "url": "https://www.nordbeans.cz/keramo-natural_z7/",
+     "sku": "7_380",
+     "available": true,
+     "verifiedAt": "2026-10-23",
+     "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
+    }
+   ],
+   "checkedAt": "2026-10-23"
   },
   {
    "id": "limited-nanolot-odako-natural",
