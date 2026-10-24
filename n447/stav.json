@@ -1,17 +1,17 @@
 {
   "batch": "nove-ukazky-447-2026-10-22",
-  "engineCommit": "3f1136f",
+  "engineCommit": "a9a790f",
   "price": {
     "setupEUR": 447,
     "monthlyEUR": 10,
     "freeTrial": false
   },
   "updatedAt": "2026-10-24",
-  "headCommit": "3f1136f",
+  "headCommit": "a9a790f",
   "branch": "claude/n447-black-20261022",
   "preview": {
-    "url": "https://kava-chatbot-backend-7jd6yjbet-danielvendzur-codes-projects.vercel.app",
-    "sha": "3f1136f",
+    "url": "https://kava-chatbot-backend-505gn1nku-danielvendzur-codes-projects.vercel.app",
+    "sha": "a9a790f",
     "note": "Interný Preview (Vercel, vetva). Zelený build nie je overená produkcia; produkcia ani zákaznícke subdomény nie sú nasadené."
   },
   "rules": {
@@ -69,8 +69,18 @@
       ],
       "commit": "d032700",
       "browserCheck": {
-        "state": "NOT_FINISHED",
-        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
+        "sizes": [
+          "320x568",
+          "390x650",
+          "560x600",
+          "1280x800"
+        ],
+        "testedPaths": 26,
+        "allPaths": 63,
+        "issues": 0,
+        "firstIssues": [],
+        "console": 0,
+        "storage": []
       }
     },
     {
@@ -103,8 +113,18 @@
       ],
       "commit": "db8243c",
       "browserCheck": {
-        "state": "NOT_FINISHED",
-        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
+        "sizes": [
+          "320x568",
+          "390x650",
+          "560x600",
+          "1280x800"
+        ],
+        "testedPaths": 52,
+        "allPaths": 190,
+        "issues": 0,
+        "firstIssues": [],
+        "console": 0,
+        "storage": []
       }
     },
     {
@@ -132,8 +152,18 @@
       ],
       "commit": "4745e87",
       "browserCheck": {
-        "state": "NOT_FINISHED",
-        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
+        "sizes": [
+          "320x568",
+          "390x650",
+          "560x600",
+          "1280x800"
+        ],
+        "testedPaths": 25,
+        "allPaths": 94,
+        "issues": 0,
+        "firstIssues": [],
+        "console": 0,
+        "storage": []
       }
     },
     {
@@ -168,8 +198,18 @@
       ],
       "commit": "9016a7b",
       "browserCheck": {
-        "state": "NOT_FINISHED",
-        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
+        "sizes": [
+          "320x568",
+          "390x650",
+          "560x600",
+          "1280x800"
+        ],
+        "testedPaths": 39,
+        "allPaths": 85,
+        "issues": 0,
+        "firstIssues": [],
+        "console": 0,
+        "storage": []
       }
     },
     {
@@ -202,8 +242,18 @@
       ],
       "commit": "0fa76b6",
       "browserCheck": {
-        "state": "NOT_FINISHED",
-        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
+        "sizes": [
+          "320x568",
+          "390x650",
+          "560x600",
+          "1280x800"
+        ],
+        "testedPaths": 25,
+        "allPaths": 52,
+        "issues": 0,
+        "firstIssues": [],
+        "console": 0,
+        "storage": []
       }
     },
     {
@@ -239,8 +289,18 @@
       ],
       "commit": "3f1136f",
       "browserCheck": {
-        "state": "NOT_FINISHED",
-        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
+        "sizes": [
+          "320x568",
+          "390x650",
+          "560x600",
+          "1280x800"
+        ],
+        "testedPaths": 59,
+        "allPaths": 150,
+        "issues": 0,
+        "firstIssues": [],
+        "console": 0,
+        "storage": []
       }
     },
     {
@@ -273,8 +333,18 @@
       ],
       "commit": "b103455",
       "browserCheck": {
-        "state": "NOT_FINISHED",
-        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
+        "sizes": [
+          "320x568",
+          "390x650",
+          "560x600",
+          "1280x800"
+        ],
+        "testedPaths": 21,
+        "allPaths": 33,
+        "issues": 0,
+        "firstIssues": [],
+        "console": 0,
+        "storage": []
       }
     },
     {
@@ -311,8 +381,18 @@
       ],
       "commit": "3f1136f",
       "browserCheck": {
-        "state": "NOT_FINISHED",
-        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
+        "sizes": [
+          "320x568",
+          "390x650",
+          "560x600",
+          "1280x800"
+        ],
+        "testedPaths": 72,
+        "allPaths": 191,
+        "issues": 0,
+        "firstIssues": [],
+        "console": 0,
+        "storage": []
       }
     },
     {
@@ -320,11 +400,64 @@
       "name": "Renovality",
       "country": "CZ",
       "family": "cosmetics",
-      "state": "IN_PROGRESS",
-      "reason": "Shoptet vrátil 403 po 8 požiadavkách; jedno pomalé opakovanie (8 s) po 20 min pauze.",
-      "open": [],
-      "page": null,
-      "customerLink": "https://renovality.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)"
+      "state": "READY_FOR_REVIEW",
+      "open": [
+        "Shoptet vrátil 403 po 8 požiadavkách; stiahnuté jedným pomalým opakovaním po pauze",
+        "doprava v ukážke neoverená (stránka dopravy nenájdená) – chat odkáže na e-shop",
+        "kontakt info@renovality.cz zo zadania"
+      ],
+      "page": "/renovality.html",
+      "customerLink": "https://renovality.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)",
+      "lang": "cs",
+      "currency": "CZK",
+      "shop": "https://www.renovality.cz/plet/",
+      "contact": "info@renovality.cz",
+      "contactSource": "https://www.renovality.cz/kontakty/ (zo zadania)",
+      "checkedAt": "2026-10-24",
+      "products": 54,
+      "categories": [
+        "face",
+        "eyes",
+        "body"
+      ],
+      "verifiedPacks": 54,
+      "excluded": [
+        "Konjaková houba zelený čaj – doplněk k čištění, ne kosmetika",
+        "Konjaková houba bambusové uhlí – doplněk k čištění, ne kosmetika",
+        "Odličovací tamponky 16 kusů – doplněk k čištění, ne kosmetika",
+        "Řasenka k naplnění 10 ml – prázdný obal",
+        "Dotek slunce - samoopalovací mlha – samoopalovací přípravek",
+        "Hyaluronové sérum 50 ml - náhradní balení – náhradní balení (stejný produkt jako s pumpičkou)",
+        "Meruňkový olej 100 ml - náhradní balení – náhradní balení (stejný produkt jako s pumpičkou)",
+        "Moringový olej 100 ml - náhradní balení – náhradní balení (stejný produkt jako s pumpičkou)",
+        "Arganový olej 100 ml - náhradní balení – náhradní balení (stejný produkt jako s pumpičkou)",
+        "Ricinový olej 100 ml - náhradní balení – náhradní balení (stejný produkt jako s pumpičkou)",
+        "Hroznový olej 100 ml - náhradní balení – náhradní balení (stejný produkt jako s pumpičkou)",
+        "Jojobový olej 100 ml - náhradní balení – náhradní balení (stejný produkt jako s pumpičkou)",
+        "Renohair 100 ml - náhradní balení – náhradní balení (stejný produkt jako s pumpičkou)",
+        "Švestkový olej 50 ml - náhradní balení – náhradní balení (stejný produkt jako s pumpičkou)",
+        "Makový olej 50 ml - náhradní balení – náhradní balení (stejný produkt jako s pumpičkou)",
+        "Tea Tree 20 ml s kapátkem – éterický olej",
+        "Balíček Renoaftersun&Renobronze Renoaftersun, Renobronze – balíček více produktů",
+        "RENOBRONZE 200 ml – samoopalovací přípravek",
+        "Renohair 100 ml s pipetkou – vlasová péče",
+        "doplňky stravy, káva a čaj, vůně, svíčky a domácnost (mimo kosmetiku)"
+      ],
+      "commit": "d0b8f9e",
+      "browserCheck": {
+        "sizes": [
+          "320x568",
+          "390x650",
+          "560x600",
+          "1280x800"
+        ],
+        "testedPaths": 56,
+        "allPaths": "priechody s rôznymi odpoveďami",
+        "budgetChecks": 16,
+        "issues": 0,
+        "firstIssues": [],
+        "console": 0
+      }
     },
     {
       "slug": "saloos",
@@ -334,7 +467,7 @@
       "state": "READY_FOR_REVIEW",
       "open": [
         "overená je cena predvoleného balenia z výpisu; iné veľkosti sa načítajú až po výbere",
-        "prehliadačová kontrola kozmetiky: ručný priechod (pleť, telo); automatická sada pre kozmetiku zatiaľ nie je"
+        "prehliadačová kontrola kozmetiky: tools/n447_cx_browser_check.py"
       ],
       "page": "/saloos.html",
       "customerLink": "https://saloos.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)",
@@ -368,27 +501,137 @@
         "ostatní velikosti balení (cena až po výběru varianty)",
         "tělové produkty vedené pod zdravotními kategoriemi menu (děti, těhotenství, intimní hygiena, akné)"
       ],
-      "commit": "b593f86"
+      "commit": "b593f86",
+      "browserCheck": {
+        "sizes": [
+          "320x568",
+          "390x650",
+          "560x600",
+          "1280x800"
+        ],
+        "testedPaths": 56,
+        "allPaths": "priechody s rôznymi odpoveďami",
+        "budgetChecks": 12,
+        "issues": 0,
+        "firstIssues": [],
+        "console": 0
+      }
     },
     {
       "slug": "nobilistilia",
       "name": "Nobilis Tilia",
       "country": "CZ",
       "family": "cosmetics",
-      "state": "NOT_STARTED",
-      "open": [],
-      "page": null,
-      "customerLink": "https://nobilistilia.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)"
+      "state": "READY_FOR_REVIEW",
+      "open": [
+        "ceny viacvariantných produktov z vlastných stránok variantov (vzorky 2 ml vynechané, cena „od“ sa nepoužíva)",
+        "doprava v ukážke neoverená – chat odkáže na e-shop",
+        "kontakt nobilis@nobilis.cz zo zadania"
+      ],
+      "page": "/nobilistilia.html",
+      "customerLink": "https://nobilistilia.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)",
+      "lang": "cs",
+      "currency": "CZK",
+      "shop": "https://www.nobilis.cz/kategorie/plet/",
+      "contact": "nobilis@nobilis.cz",
+      "contactSource": "https://www.nobilis.cz/kontakt/ (zo zadania)",
+      "checkedAt": "2026-10-24",
+      "products": 150,
+      "categories": [
+        "face",
+        "eyes",
+        "body"
+      ],
+      "verifiedPacks": 150,
+      "excluded": [
+        "Dvoufázové čištění Akné – sada dvou produktů",
+        "Dvoufázové čištění Levandule – sada dvou produktů",
+        "Exkluzivní remodelační sada pro zralou pleť – sada",
+        "Vzorek v sáčku Pro-Age Exosome - sérum a krém 2 ml – vzorek",
+        "Prémiová sada pro viditelné omlazení pleti – sada",
+        "Sada pro rozzářenou pleť – sada",
+        "Luxusní liftingová sada pro zralou pleť – sada",
+        "Pro ni a pro něj – sada dvou produktů",
+        "Voňavá sada pro každý den – sada",
+        "Balzám po holení pro muže – péče při holení",
+        "Holicí krém pro muže – péče při holení",
+        "Dětský sprchový krém Anička 200 ml – těhotenství a děti",
+        "Dětský sprchový krém Anička 500 ml – těhotenství a děti",
+        "Dětský sprchový gel Vendelín 200 ml – těhotenství a děti",
+        "Dětský sprchový gel Vendelín 500 ml – těhotenství a děti",
+        "těhotenství, matka a dítě, éterické oleje a aromaterapie, doplňky stravy, bylinková lékárna, ekzém, celulitida, intimní hygiena (mimo běžnou kosmetickou péči)"
+      ],
+      "commit": "f83aa12",
+      "browserCheck": {
+        "sizes": [
+          "320x568",
+          "390x650",
+          "560x600",
+          "1280x800"
+        ],
+        "testedPaths": 56,
+        "allPaths": "priechody s rôznymi odpoveďami",
+        "budgetChecks": 28,
+        "issues": 0,
+        "firstIssues": [],
+        "console": 0
+      }
     },
     {
       "slug": "manufaktura",
       "name": "Manufaktura",
       "country": "CZ",
       "family": "cosmetics",
-      "state": "NOT_STARTED",
-      "open": [],
-      "page": null,
-      "customerLink": "https://manufaktura.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)"
+      "state": "READY_FOR_REVIEW",
+      "open": [
+        "ohraničený rozsah: iba pleťová rutina a okolie očí (telo, vlasy, vône, líčenie a sady mimo)",
+        "obrázkový server data.manufaktura.cz raz vrátil 403; logo a fotky overené po pauze",
+        "chat s AI: zdieľaný ai-chat.js maže „_“ z odkazov (…_z123/), preto chat vždy použije overenú odpoveď katalógu",
+        "e-shop má vlastný chat – ukážka ho dopĺňa, nenahrádza",
+        "kontakt info@manufaktura.cz zo zadania"
+      ],
+      "page": "/manufaktura.html",
+      "customerLink": "https://manufaktura.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)",
+      "lang": "cs",
+      "currency": "CZK",
+      "shop": "https://manufaktura.cz/plet/",
+      "contact": "info@manufaktura.cz",
+      "contactSource": "https://manufaktura.cz/kontakt/ (zo zadania)",
+      "checkedAt": "2026-10-24",
+      "products": 36,
+      "categories": [
+        "face",
+        "eyes"
+      ],
+      "verifiedPacks": 36,
+      "excluded": [
+        "After Sun hydratační & regenerační pleťový sorbet MÁK – péče po opalování",
+        "Zklidňující, hydratační a omlazující pleťový krém SEDMIKRÁSKA – EKO náplň – náplň (stejný produkt)",
+        "Pleťový elixír - protivráskový & liftingový krém pro zralou pleť RŮŽE – EKO náplň – náplň (stejný produkt)",
+        "Ochranná & hydratační minerální tyčinka SPF 30 – mimo vybrané typy pleťové rutiny",
+        "Anti-pollution & Anti-aging sérum na rty LOUKA – mimo vybrané typy pleťové rutiny",
+        "Exkluzivní sada Anti-age komplexní péče o pleť RŮŽE – sada",
+        "Samoopalovací pleťový & tělový fluid MERUŇKA – samoopalovací přípravek",
+        "Intenzivní zklidňující SOS tyčinka ATOPIQ pro pokožku se sklonem k atopii – mimo vybrané typy pleťové rutiny",
+        "Pečující balzám na rty SEDMIKRÁSKA – mimo vybrané typy pleťové rutiny",
+        "Přírodní multifunkční SOS balzám na pokožku REGENERACE & VÝŽIVA – mimo vybrané typy pleťové rutiny",
+        "tělo, vlasy, vůně, líčení, UV ochrana, balzámy na rty, multifunkční tyčinky a dárkové sady – mimo ohraničenou pleťovou rutinu této ukázky"
+      ],
+      "commit": "c69ebe2",
+      "browserCheck": {
+        "sizes": [
+          "320x568",
+          "390x650",
+          "560x600",
+          "1280x800"
+        ],
+        "testedPaths": 56,
+        "allPaths": "priechody s rôznymi odpoveďami",
+        "budgetChecks": 16,
+        "issues": 0,
+        "firstIssues": [],
+        "console": 0
+      }
     }
   ]
 }
