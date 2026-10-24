@@ -26,9 +26,9 @@ const STATUS = {
   '9gramscoffee': {name: '9 Grams Coffee (e-shop coffeeart.me)', country: 'SK', family: 'coffee', state: 'READY_FOR_REVIEW',
     open: ['jedna obchodná ukážka pre prevádzkovateľa 9 Grams Coffee s.r.o. (CoffeeArt/Costadoro sa neoslovujú zvlášť)', 'e-shop dočasne vrátil 403, stiahnuté po pauze; obrázky z CDN tiež po pauze']},
   renovality: {name: 'Renovality', country: 'CZ', family: 'cosmetics', state: 'READY_FOR_REVIEW', open: ['Shoptet vrátil 403 po 8 požiadavkách; stiahnuté jedným pomalým opakovaním po pauze', 'doprava v ukážke neoverená (stránka dopravy nenájdená) – chat odkáže na e-shop', 'kontakt info@renovality.cz zo zadania']},
-  saloos: {name: 'Saloos', country: 'CZ', family: 'cosmetics', state: 'READY_FOR_REVIEW', open: ['overená je cena predvoleného balenia z výpisu; iné veľkosti sa načítajú až po výbere', 'prehliadačová kontrola kozmetiky: ručný priechod (pleť, telo); automatická sada pre kozmetiku zatiaľ nie je']},
+  saloos: {name: 'Saloos', country: 'CZ', family: 'cosmetics', state: 'READY_FOR_REVIEW', open: ['overená je cena predvoleného balenia z výpisu; iné veľkosti sa načítajú až po výbere', 'prehliadačová kontrola kozmetiky: tools/n447_cx_browser_check.py']},
   nobilistilia: {name: 'Nobilis Tilia', country: 'CZ', family: 'cosmetics', state: 'READY_FOR_REVIEW', open: ['ceny viacvariantných produktov z vlastných stránok variantov (vzorky 2 ml vynechané, cena „od“ sa nepoužíva)', 'doprava v ukážke neoverená – chat odkáže na e-shop', 'kontakt nobilis@nobilis.cz zo zadania']},
-  manufaktura: {name: 'Manufaktura', country: 'CZ', family: 'cosmetics', state: 'NOT_STARTED', open: []}
+  manufaktura: {name: 'Manufaktura', country: 'CZ', family: 'cosmetics', state: 'READY_FOR_REVIEW', open: ['ohraničený rozsah: iba pleťová rutina a okolie očí (telo, vlasy, vône, líčenie a sady mimo)', 'obrázkový server data.manufaktura.cz raz vrátil 403; logo a fotky overené po pauze', 'chat s AI: zdieľaný ai-chat.js maže „_“ z odkazov (…_z123/), preto chat vždy použije overenú odpoveď katalógu', 'e-shop má vlastný chat – ukážka ho dopĺňa, nenahrádza', 'kontakt info@manufaktura.cz zo zadania']}
 };
 const qaDir = arg('qa');
 const companies = Object.entries(STATUS).map(([slug, s]) => {
