@@ -7,11 +7,11 @@
     "freeTrial": false
   },
   "updatedAt": "2026-10-24",
-  "headCommit": "a9a790f",
+  "headCommit": "5013c35",
   "branch": "claude/n447-black-20261022",
   "preview": {
-    "url": "https://kava-chatbot-backend-505gn1nku-danielvendzur-codes-projects.vercel.app",
-    "sha": "a9a790f",
+    "url": "https://kava-chatbot-backend-ma4jzim9a-danielvendzur-codes-projects.vercel.app",
+    "sha": "5013c35",
     "note": "Interný Preview (Vercel, vetva). Zelený build nie je overená produkcia; produkcia ani zákaznícke subdomény nie sú nasadené."
   },
   "rules": {
@@ -172,9 +172,9 @@
       "country": "CZ",
       "family": "coffee",
       "state": "READY_FOR_REVIEW_PARTIAL",
-      "reason": "5 produktových stránok vrátilo 403 aj po jednom pomalom opakovaní – tieto kávy nie sú vo výbere.",
+      "reason": "Z 5 pôvodne blokovaných stránok 3 doplnené pri pomalom opakovaní 24. 10. (18 káv); cocondo-natural_z10 (connection reset) a vara-blanca-honey_z3964 (403) nie sú vo výbere, ďalšie pokusy sa nerobia.",
       "open": [
-        "5 káv nezahrnutých (403)",
+        "2 kávy nezahrnuté (Cocondo Natural, Vara Blanca Honey)",
         "chat s AI: zdieľaný ai-chat.js maže „_“ z odkazov, odkazy Nordbeans (…_z123/) preto vždy padnú na overenú odpoveď z katalógu"
       ],
       "page": "/nordbeans.html",
@@ -186,17 +186,17 @@
       "contactSource": "https://www.nordbeans.cz/ (hlavička a údaje výrobce na stránce produktu)",
       "checkedAt": "2026-10-23",
       "scope": "Zrnkové kávy z kategorie Káva, jejichž produktové stránky šlo načíst. Kapsle, rozpustná káva, čaje, předplatné, sady a vybavení nejsou ve výběru.",
-      "products": 15,
+      "products": 18,
       "drip": false,
-      "verifiedPacks": 30,
-      "productsWithVerifiedPack": 15,
+      "verifiedPacks": 36,
+      "productsWithVerifiedPack": 18,
       "excluded": [
         "Jizerky: na stránce není uvedena gramáž balení – vyřazeno",
-        "Neověřeno – e-shop vrátil 403 (Access Denied), požadavky zastaveny: chelbesa-washed, el-cambalache-natural, keramo-natural, cocondo-natural, vara-blanca-honey",
+        "Neověřeno – e-shop vrátil 403 (Access Denied), požadavky zastaveny: cocondo-natural, vara-blanca-honey",
         "kapsle (3), rozpustná káva, čtyřbalení (sada)",
         "balení 2000 g ve vratném obalu (velkoobchod)"
       ],
-      "commit": "9016a7b",
+      "commit": "b175f41",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -204,8 +204,8 @@
           "560x600",
           "1280x800"
         ],
-        "testedPaths": 39,
-        "allPaths": 85,
+        "testedPaths": 49,
+        "allPaths": 111,
         "issues": 0,
         "firstIssues": [],
         "console": 0,
