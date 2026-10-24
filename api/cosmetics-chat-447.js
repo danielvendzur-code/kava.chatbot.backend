@@ -7,12 +7,14 @@ import '../chat-adapters.js';
 import '../n447/kozmetika/catalogues/saloos.js';
 import '../n447/kozmetika/catalogues/renovality.js';
 import '../n447/kozmetika/catalogues/nobilistilia.js';
+import '../n447/kozmetika/catalogues/manufaktura.js';
 import {aiAnswer} from './ai-chat.js';
 
 const BRANDS = {
   saloos: {brand: 'Saloos', web: 'https://www.saloos.cz/'},
   renovality: {brand: 'Renovality', web: 'https://www.renovality.cz/'},
-  nobilistilia: {brand: 'Nobilis Tilia', web: 'https://www.nobilis.cz/'}
+  nobilistilia: {brand: 'Nobilis Tilia', web: 'https://www.nobilis.cz/'},
+  manufaktura: {brand: 'Manufaktura', web: 'https://manufaktura.cz/'}
 };
 const adapters = new Map();
 
