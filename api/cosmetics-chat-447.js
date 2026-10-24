@@ -5,10 +5,12 @@ import '../catalogue-reply-core.js';
 import '../chat-brain.js';
 import '../chat-adapters.js';
 import '../n447/kozmetika/catalogues/saloos.js';
+import '../n447/kozmetika/catalogues/renovality.js';
 import {aiAnswer} from './ai-chat.js';
 
 const BRANDS = {
-  saloos: {brand: 'Saloos', web: 'https://www.saloos.cz/'}
+  saloos: {brand: 'Saloos', web: 'https://www.saloos.cz/'},
+  renovality: {brand: 'Renovality', web: 'https://www.renovality.cz/'}
 };
 const adapters = new Map();
 

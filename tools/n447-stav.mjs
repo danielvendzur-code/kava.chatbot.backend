@@ -25,7 +25,7 @@ const STATUS = {
   candycane: {name: 'Candycane coffee', country: 'CZ', family: 'coffee', state: 'READY_FOR_REVIEW', open: ['overená je iba cena predvoleného balenia; ceny 1 kg / 2,5 kg stránka bez práce s košíkom neukazuje']},
   '9gramscoffee': {name: '9 Grams Coffee (e-shop coffeeart.me)', country: 'SK', family: 'coffee', state: 'READY_FOR_REVIEW',
     open: ['jedna obchodná ukážka pre prevádzkovateľa 9 Grams Coffee s.r.o. (CoffeeArt/Costadoro sa neoslovujú zvlášť)', 'e-shop dočasne vrátil 403, stiahnuté po pauze; obrázky z CDN tiež po pauze']},
-  renovality: {name: 'Renovality', country: 'CZ', family: 'cosmetics', state: 'IN_PROGRESS', reason: 'Shoptet vrátil 403 po 8 požiadavkách; jedno pomalé opakovanie (8 s) po 20 min pauze.', open: []},
+  renovality: {name: 'Renovality', country: 'CZ', family: 'cosmetics', state: 'READY_FOR_REVIEW', open: ['Shoptet vrátil 403 po 8 požiadavkách; stiahnuté jedným pomalým opakovaním po pauze', 'doprava v ukážke neoverená (stránka dopravy nenájdená) – chat odkáže na e-shop', 'kontakt info@renovality.cz zo zadania']},
   saloos: {name: 'Saloos', country: 'CZ', family: 'cosmetics', state: 'READY_FOR_REVIEW', open: ['overená je cena predvoleného balenia z výpisu; iné veľkosti sa načítajú až po výbere', 'prehliadačová kontrola kozmetiky: ručný priechod (pleť, telo); automatická sada pre kozmetiku zatiaľ nie je']},
   nobilistilia: {name: 'Nobilis Tilia', country: 'CZ', family: 'cosmetics', state: 'NOT_STARTED', open: []},
   manufaktura: {name: 'Manufaktura', country: 'CZ', family: 'cosmetics', state: 'NOT_STARTED', open: []}
