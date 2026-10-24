@@ -243,7 +243,7 @@
   {
    "id": "kolumbie-chapata-esp",
    "kind": "coffee",
-   "name": "Kolumbie – Chapata",
+   "name": "Kolumbie – Chapata · espresso",
    "url": "https://fathers.cz/kava/espresso/kolumbie-chapata-esp",
    "photo": "/assets/fathers/kolumbie-chapata-esp.jpg",
    "currency": "CZK",
@@ -312,7 +312,7 @@
   {
    "id": "kolumbie-chapata",
    "kind": "coffee",
-   "name": "Kolumbie – Chapata",
+   "name": "Kolumbie – Chapata · filtr",
    "url": "https://fathers.cz/kava/filtr/kolumbie-chapata",
    "photo": "/assets/fathers/kolumbie-chapata.jpg",
    "currency": "CZK",
@@ -381,7 +381,7 @@
   {
    "id": "etiopie-bensa-ayla-filter",
    "kind": "coffee",
-   "name": "Etiopie – Bensa Ayla",
+   "name": "Etiopie – Bensa Ayla · filtr",
    "url": "https://fathers.cz/kava/filtr/etiopie-bensa-ayla-filter",
    "photo": "/assets/fathers/etiopie-bensa-ayla-filter.jpg",
    "currency": "CZK",
@@ -450,7 +450,7 @@
   {
    "id": "etiopie-bensa-ayla",
    "kind": "coffee",
-   "name": "Etiopie – Bensa Ayla",
+   "name": "Etiopie – Bensa Ayla · espresso",
    "url": "https://fathers.cz/kava/espresso/etiopie-bensa-ayla",
    "photo": "/assets/fathers/etiopie-bensa-ayla.jpg",
    "currency": "CZK",
@@ -519,7 +519,7 @@
   {
    "id": "uganda-namugowa",
    "kind": "coffee",
-   "name": "Uganda – Namugowa",
+   "name": "Uganda – Namugowa · filtr",
    "url": "https://fathers.cz/kava/filtr/uganda-namugowa",
    "photo": "/assets/fathers/uganda-namugowa.jpg",
    "currency": "CZK",
@@ -588,7 +588,7 @@
   {
    "id": "espnamugowa",
    "kind": "coffee",
-   "name": "Uganda – Namugowa",
+   "name": "Uganda – Namugowa · espresso",
    "url": "https://fathers.cz/kava/espresso/espnamugowa",
    "photo": "/assets/fathers/espnamugowa.jpg",
    "currency": "CZK",
@@ -774,7 +774,7 @@
   {
    "id": "etiopie-kabira",
    "kind": "coffee",
-   "name": "Etiopie – Kabira",
+   "name": "Etiopie – Kabira · filtr",
    "url": "https://fathers.cz/kava/filtr/etiopie-kabira",
    "photo": "/assets/fathers/etiopie-kabira.jpg",
    "currency": "CZK",
@@ -844,7 +844,7 @@
   {
    "id": "kabira",
    "kind": "coffee",
-   "name": "Etiopie – Kabira",
+   "name": "Etiopie – Kabira · espresso",
    "url": "https://fathers.cz/kava/espresso/kabira",
    "photo": "/assets/fathers/kabira.jpg",
    "currency": "CZK",
@@ -914,7 +914,7 @@
   {
    "id": "guatemala-granada",
    "kind": "coffee",
-   "name": "Guatemala – Granada",
+   "name": "Guatemala – Granada · filtr",
    "url": "https://fathers.cz/kava/filtr/guatemala-granada",
    "photo": "/assets/fathers/guatemala-granada.jpg",
    "currency": "CZK",
@@ -983,7 +983,7 @@
   {
    "id": "granada",
    "kind": "coffee",
-   "name": "Guatemala – Granada",
+   "name": "Guatemala – Granada · espresso",
    "url": "https://fathers.cz/kava/espresso/granada",
    "photo": "/assets/fathers/granada.jpg",
    "currency": "CZK",
@@ -1190,7 +1190,7 @@
   {
    "id": "brazilie-julia-campos",
    "kind": "coffee",
-   "name": "Brazílie – Julia Campos",
+   "name": "Brazílie – Julia Campos · filtr",
    "url": "https://fathers.cz/kava/filtr/brazilie-julia-campos",
    "photo": "/assets/fathers/brazilie-julia-campos.jpg",
    "currency": "CZK",
@@ -1259,7 +1259,7 @@
   {
    "id": "brazilie-juliacampos-espresso",
    "kind": "coffee",
-   "name": "Brazílie – Julia Campos",
+   "name": "Brazílie – Julia Campos · espresso",
    "url": "https://fathers.cz/kava/espresso/brazilie-juliacampos-espresso",
    "photo": "/assets/fathers/brazilie-juliacampos-espresso.jpg",
    "currency": "CZK",
@@ -1328,7 +1328,7 @@
   {
    "id": "etiopie-chelbesa-espresso",
    "kind": "coffee",
-   "name": "Etiopie – Chelbesa",
+   "name": "Etiopie – Chelbesa · espresso",
    "url": "https://fathers.cz/kava/espresso/etiopie-chelbesa",
    "photo": "/assets/fathers/etiopie-chelbesa-espresso.jpg",
    "currency": "CZK",
@@ -1398,7 +1398,7 @@
   {
    "id": "etiopie-chelbesa-filtr",
    "kind": "coffee",
-   "name": "Etiopie – Chelbesa",
+   "name": "Etiopie – Chelbesa · filtr",
    "url": "https://fathers.cz/kava/filtr/etiopie-chelbesa",
    "photo": "/assets/fathers/etiopie-chelbesa-filtr.jpg",
    "currency": "CZK",
@@ -1514,7 +1514,7 @@
   {
    "id": "etiopie-beshasha",
    "kind": "coffee",
-   "name": "Etiopie – Beshasha",
+   "name": "Etiopie – Beshasha · filtr",
    "url": "https://fathers.cz/kava/filtr/etiopie-beshasha",
    "photo": "/assets/fathers/etiopie-beshasha.jpg",
    "currency": "CZK",
@@ -1583,7 +1583,7 @@
   {
    "id": "etiopie-beshasha-espresso",
    "kind": "coffee",
-   "name": "Etiopie – Beshasha",
+   "name": "Etiopie – Beshasha · espresso",
    "url": "https://fathers.cz/kava/espresso/etiopie-beshasha-espresso",
    "photo": "/assets/fathers/etiopie-beshasha-espresso.jpg",
    "currency": "CZK",
@@ -1860,7 +1860,7 @@
   {
    "id": "decaf-atunkaa-kolumbie-espresso",
    "kind": "coffee",
-   "name": "DECAF Atunkaa – Kolumbie",
+   "name": "DECAF Atunkaa – Kolumbie · espresso",
    "url": "https://fathers.cz/kava/espresso/decaf-atunkaa-kolumbie",
    "photo": "/assets/fathers/decaf-atunkaa-kolumbie-espresso.jpg",
    "currency": "CZK",
@@ -1930,7 +1930,7 @@
   {
    "id": "decaf-atunkaa-kolumbie-filtr",
    "kind": "coffee",
-   "name": "DECAF Atunkaa – Kolumbie",
+   "name": "DECAF Atunkaa – Kolumbie · filtr",
    "url": "https://fathers.cz/kava/filtr/decaf-atunkaa-kolumbie",
    "photo": "/assets/fathers/decaf-atunkaa-kolumbie-filtr.jpg",
    "currency": "CZK",
@@ -2000,7 +2000,7 @@
   {
    "id": "nikaragua-tierra-linda",
    "kind": "coffee",
-   "name": "Nikaragua – Tierra Linda",
+   "name": "Nikaragua – Tierra Linda · espresso",
    "url": "https://fathers.cz/kava/espresso/nikaragua-tierra-linda",
    "photo": "/assets/fathers/nikaragua-tierra-linda.jpg",
    "currency": "CZK",
@@ -2138,7 +2138,7 @@
   {
    "id": "tierralinda",
    "kind": "coffee",
-   "name": "Nikaragua – Tierra Linda",
+   "name": "Nikaragua – Tierra Linda · filtr",
    "url": "https://fathers.cz/kava/filtr/tierralinda",
    "photo": "/assets/fathers/tierralinda.jpg",
    "currency": "CZK",

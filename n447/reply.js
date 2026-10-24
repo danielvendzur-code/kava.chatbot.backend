@@ -46,8 +46,16 @@
     const byTaste = (t, prep) => regular.filter((p) => p.taste === t && (!prep || E.suits(p, prep))).sort((a, b) => a.priceFrom - b.priceFrom).slice(0, 2);
     let named = mentioned(data, text);
     if (!named.length && /cen|stoj|kolko|kolik|balen|prazen|mlet|chut|povod|puvod|odkial|odkud|kysl|kysel/.test(q)) {
+      /* Najprv produkt, na ktorý sa zákazník naposledy pýtal; inak ten, ktorým sa začína posledná odpoveď
+         (nie produkt spomenutý iba v popise inej kávy). */
+      const prevUser = history.slice().reverse().find((m) => m.role === 'user' && mentioned(data, m.content).length);
       const last = history.slice().reverse().find((m) => m.role === 'assistant');
-      if (last) named = mentioned(data, last.content).slice(0, 1);
+      if (prevUser) named = mentioned(data, prevUser.content).slice(0, 1);
+      else if (last) {
+        const lead = fold(last.content);
+        named = mentioned(data, last.content).map((p) => [lead.indexOf(fold(p.name).split(/[^a-z0-9]+/).filter(Boolean)[0] || '~'), p])
+          .filter((x) => x[0] >= 0).sort((m, n) => m[0] - n[0]).map((x) => x[1]).slice(0, 1);
+      }
     }
     if (named.length >= 2 && /porovn|rozdiel|rozdil|alebo|nebo|vs|lepsi|ktor|ktera|kterou/.test(q)) {
       const desc = (p) => p.kind === 'drip' ? p.name + ': ' + p.pack : p.name + ': ' + tones(p) + '; ' + (p.process || '') + T('; praženie ', '; pražení ') + roastText(p, cs);

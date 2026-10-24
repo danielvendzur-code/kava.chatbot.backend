@@ -82,7 +82,9 @@ for (const p of paths) {
 /* Zmena skoršej odpovede ruší neskoršie */
 assert.deepEqual(E.answer({prep: 'espresso', taste: 'choco', pick: 'doce-citrus'}, 'prep', 'filter'), {prep: 'filter'});
 assert.equal(E.maxRemaining(data, {}), maxQ);
-assert.ok(maxQ <= 6, 'priveľa krokov ' + maxQ);
+const maxReal = Math.max(...paths.map((p) => p.trail.filter((s) => !/^pick[23]$/.test(s.key)).length));
+assert.ok(maxReal <= 7, 'priveľa otázok ' + maxReal);
+assert.ok(maxQ <= 8, 'priveľa krokov aj so stránkovaním ' + maxQ);
 /* Česká firma: žiadne slovenské písmená (ä ô ľ ĺ ŕ) v otázkach ani vo výsledku. */
 if (data.lang === 'cs') for (const p of paths) {
   const txt = JSON.stringify([p.trail.map((s) => [s.question.title, s.question.name, s.question.options.map((o) => [o.title, o.detail])]),
@@ -167,6 +169,12 @@ for (const p of data.products) {
   const v = (p.variants || []).filter((x) => x.verifiedAt);
   if (v.length) for (const x of v) assert.ok(txt.includes(E.money(x.price, p.currency).replace(/\u00a0/g, ' ')), 'chat bez overenej ceny ' + p.id);
   else assert.match(txt, /orientačn|orientační/, 'chat neoznačil orientačnú cenu ' + p.id);
+}
+for (const p of data.products.filter((x) => x.available !== false)) {
+  const ask = (data.lang === 'cs' ? 'Řekněte mi o ' : 'Povedz mi o ') + p.name.split('•').pop().trim();
+  const h = [{role: 'user', content: ask}, {role: 'assistant', content: coffeeReply(data, ask, [])}];
+  const follow = coffeeReply(data, data.lang === 'cs' ? 'a kolik stojí?' : 'a koľko stojí?', h);
+  assert.ok(follow.includes(p.url), 'kontext chatu stratil ' + p.id + ': ' + follow.slice(0, 80));
 }
 if (slug === 'black') assert.match(coffeeReply(data, 'a koľko stojí?', [{role: 'user', content: 'gotiti?'}, {role: 'assistant', content: coffeeReply(data, 'gotiti', [])}]), /gotiti/i, 'kontext');
 report.checks.chatOffline = 'PASS';

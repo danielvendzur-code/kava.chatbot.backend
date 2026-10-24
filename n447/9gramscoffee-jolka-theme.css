@@ -1,0 +1,7 @@
+/* 9 Grams Coffee – značkové tokeny na schválenom Jolka systéme (rovnaká štruktúra ako grain-jolka-theme.css).
+   Trieda začína číslicou, preto atribútový selektor namiesto .9gramscoffee-clean. */
+:root{--ink:#3c3c3b;--ink-2:#2f2f2e;--ink-3:#5a5a58;--paper:#ffffff;--surface:#fff;--surface-2:#f3f6f6;--line:#dfe6e6;--line-strong:#c9d3d3;--kraft:#20bdbe;--kraft-deep:#169c9d;--kraft-tint:#dcf4f4;--text:#2f2f2e;--text-2:#555553;--text-3:#83837f;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body[class~="9gramscoffee-clean"] :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
+body[class~="9gramscoffee-clean"] .widget__brand>img{width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important}
+body[class~="9gramscoffee-clean"] .msg__avatar img{width:30px!important;height:30px!important}
+body[class~="9gramscoffee-clean"] .launcher__button img{width:46px!important;height:46px!important}

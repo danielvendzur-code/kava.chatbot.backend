@@ -63,9 +63,9 @@
       fOrigin: 'Pôvod', fProcess: 'Spracovanie', fRoast: 'Praženie', fComp: 'Zloženie', nextTitle: 'Čo ďalej', nextV60: 'Čo ďalej: príprava na V60',
       priceInfo: 'Orientačná cena; presnú cenu balenia ukáže e-shop po výbere', approxFrom: 'orientačne od ', from: 'od ', upTo: 'Do ',
       roastQ: 'Aké praženie vám viac vyhovuje?', moreTitle: 'Ďalšie vhodné kávy', pickMoreQ: 'Ďalšie rovnako vhodné kávy',
-      procLabels: {natural: 'Natural spracovanie', washed: 'Washed spracovanie', honey: 'Honey spracovanie', semi: 'Semi-washed spracovanie'},
+      procLabels: {natural: 'Natural spracovanie', washed: 'Washed spracovanie', honey: 'Honey spracovanie', semi: 'Semi-washed spracovanie', mix: 'Kombinácia natural a washed'},
       nCoffees: (n) => n + (n >= 2 && n <= 4 ? ' kávy' : ' káv'),
-      nInBudget: (n) => n + ' káv v balení do tejto sumy', allFit: (n) => 'Všetky vhodné kávy (' + n + ')', diffTaste: 'v chuti ',
+      nInBudget: (n) => n + (n >= 2 && n <= 4 ? ' kávy' : ' káv') + ' v balení do tejto sumy', allFit: (n) => 'Všetky vhodné kávy (' + n + ')', diffTaste: 'v chuti ',
       dripReason: ['Bez pomôcok', 'Vrecúško zavesíte na šálku a prelejete horúcou vodou.'], dripChosen: 'Vybraná káva', dripNext: 'Ako ju pripraviť',
       beansWord: 'zrnková', nextRecipe: 'Čo ďalej: postup pražiarne'
     },
@@ -106,9 +106,9 @@
       fOrigin: 'Původ', fProcess: 'Zpracování', fRoast: 'Pražení', fComp: 'Složení', nextTitle: 'Co dál', nextV60: 'Co dál: příprava na V60',
       priceInfo: 'Orientační cena; přesnou cenu balení ukáže e-shop po výběru', approxFrom: 'orientačně od ', from: 'od ', upTo: 'Do ',
       roastQ: 'Jaké pražení vám víc vyhovuje?', moreTitle: 'Další vhodné kávy', pickMoreQ: 'Další stejně vhodné kávy',
-      procLabels: {natural: 'Natural zpracování', washed: 'Washed zpracování', honey: 'Honey zpracování', semi: 'Semi-washed zpracování'},
+      procLabels: {natural: 'Natural zpracování', washed: 'Washed zpracování', honey: 'Honey zpracování', semi: 'Semi-washed zpracování', mix: 'Kombinace natural a washed'},
       nCoffees: (n) => n + (n >= 2 && n <= 4 ? ' kávy' : ' káv'),
-      nInBudget: (n) => n + ' káv v balení do této částky', allFit: (n) => 'Všechny vhodné kávy (' + n + ')', diffTaste: 'v chuti ',
+      nInBudget: (n) => n + (n >= 2 && n <= 4 ? ' kávy' : ' káv') + ' v balení do této částky', allFit: (n) => 'Všechny vhodné kávy (' + n + ')', diffTaste: 'v chuti ',
       dripReason: ['Bez pomůcek', 'Sáček zavěsíte na šálek a přelijete horkou vodou.'], dripChosen: 'Vybraná káva', dripNext: 'Jak ji připravit',
       beansWord: 'zrnková'
     }
@@ -154,7 +154,8 @@
   const recipeOf = (p, gk) => p.recipes ? p.recipes[gk] || null : p.recipe || null;
   const processGroup = (p) => { const x = String(p.process || '').toLowerCase();
     if (/honey/.test(x)) return 'honey'; if (/semi/.test(x)) return 'semi';
-    if (/natural|anaerob/.test(x) && !/washed/.test(x)) return 'natural'; if (/washed/.test(x) && !/natural/.test(x)) return 'washed'; return null; };
+    if (/natural|anaerob/.test(x) && !/washed/.test(x)) return 'natural'; if (/washed/.test(x) && !/natural/.test(x)) return 'washed';
+    if (/natural/.test(x) && /washed/.test(x)) return 'mix'; return null; };
 
   const SPLITS = {process: processGroup, region: (p) => p.region || null, blend: (p) => p.blend || null, roast: (p) => p.roastLabel ? String(p.roastLabel).split(',')[0].trim() : null};
   const detailOf = (p, v) => { const [kind, k] = String(v).split(':'); return SPLITS[kind] ? SPLITS[kind](p) === k : false; };
@@ -220,7 +221,7 @@
         const chosen = [...new Set([low, limits[limits.length - 1]].filter((x) => x !== undefined))];
         if (chosen.length) {
           const cur = p[0].currency;
-          const options = chosen.map((x) => { const fit = cheapest.filter((c) => c.sum <= x + EPS); return text(String(x), t.upTo + money(x, cur), fit.length <= 2 && fit.map((c) => c.x.name).join(', ').length <= 44 ? fit.map((c) => c.x.name + ' ' + grams(c.v.grams)).join(', ') : t.nInBudget(fit.length)); });
+          const options = chosen.map((x) => { const fit = cheapest.filter((c) => c.sum <= x + EPS); return text(String(x), t.upTo + money(x, cur), fit.length === 1 && fit[0].x.name.length <= 28 ? fit[0].x.name + ' ' + grams(fit[0].v.grams) : t.nInBudget(fit.length)); });
           options.push(text('any', t.budgetAny, t.allFit(p.length)));
           return {key: 'budget', name: t.budgetName, title: t.budgetQ, textOnly: true, options};
         }
@@ -233,6 +234,15 @@
     const kinds = [['process', t.procLabels, t.processQ, t.processName], ['roast', {}, t.roastQ, t.fRoast],
       ['region', t.region, t.regionQ, t.regionName], ['blend', t.blend, t.blendQ, t.blendName]];
     const split = (list, key, used, strict) => {
+      /* Voľnejšie rozdelenie: to s najmenšou najväčšou skupinou (najviac pomôže ďalšiemu kroku). */
+      if (!strict) {
+        const best = kinds.filter(([kind]) => !used.includes(kind)).map((k) => [k, [...new Set(list.map(SPLITS[k[0]]))]])
+          .filter(([, keys]) => keys.length > 1 && keys.length <= MAX_TEXT && !keys.includes(null) && !keys.includes(undefined))
+          .map(([k, keys]) => [k, Math.max(...keys.map((v) => list.filter((x) => SPLITS[k[0]](x) === v).length))]).sort((m, n) => m[1] - n[1])[0];
+        if (!best) return null;
+        const [kind, labels, title, name] = best[0], keyOf = SPLITS[kind], keys = [...new Set(list.map(keyOf))];
+        return {key, name, title, textOnly: true, options: keys.map((k) => { const l = list.filter((x) => keyOf(x) === k); return text(kind + ':' + k, labels[k] || (String(k).charAt(0).toUpperCase() + String(k).slice(1)), l.length <= 2 ? names(l) : t.nCoffees(l.length)); })};
+      }
       for (const [kind, labels, title, name] of kinds) {
         if (used.includes(kind)) continue;
         const keyOf = SPLITS[kind];
@@ -249,7 +259,8 @@
     }
     p = pool(data, Object.assign({}, base, {budget: a.budget, detailProcess: a.detailProcess}));
     if (a.detailProcess && !a.detailMore && p.length > MAX_PHOTO) {
-      const q = split(p, 'detailMore', [String(a.detailProcess).split(':')[0]], true);
+      const used = [String(a.detailProcess).split(':')[0]];
+      const q = split(p, 'detailMore', used, true) || split(p, 'detailMore', used, false);
       if (q) return q;
     }
     p = pool(data, Object.assign({}, base, {budget: a.budget, detailProcess: a.detailProcess, detailMore: a.detailMore}));
