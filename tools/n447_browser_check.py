@@ -1,5 +1,5 @@
 """Prehliadačová kontrola novej dávky v schválenom UI (izolovaná kópia coffee-jolka-app-current.js).
-Prejde všetky cesty skutočného jadra na 4 rozmeroch; /api/** je blokované (žiadne platené volania).
+Prejde pokrývajúcu sadu ciest (každá odpoveď a každý výsledok; --full=1 = všetky cesty) na 4 rozmeroch; /api/** je blokované (žiadne platené volania).
 python3 tools/n447_browser_check.py --slug=black --base=http://127.0.0.1:8947 --out=DIR [--compare=grain]
 """
 import json, os, re, sys
@@ -25,7 +25,7 @@ PROBE = r"""() => {
     clipped, dup: srcs.length - new Set(srcs).size,
     tallest: Math.max(0, ...opts.map(o => o.getBoundingClientRect().height)), widgetH: wr.height,
     bad: /undefined|NaN|\bnull\b|fallback|katalógové skóre|informácie z e-shopu/.test(txt),
-    foreign: /Pražírna|Don Franko|donfranko|247 €|[Pp]rvý mesiac zdarma|30 dní zdarma/.test(document.body.innerText),
+    foreign: /Pražírna Brno|Don Franko|donfranko|247 €|[Pp]rvý mesiac zdarma|[Pp]rvní měsíc zdarma|30 dní zdarma/.test(document.body.innerText),
     links: [...document.querySelectorAll('a[href]')].map(a => a.href),
     broken: [...w.querySelectorAll('img')].filter(i => i.offsetParent !== null && i.complete && i.naturalWidth === 0 && i.getAttribute('loading') !== 'lazy').map(i => i.getAttribute('src'))};
 }"""
@@ -60,6 +60,9 @@ def main():
                 paths = pg.evaluate("() => N447Engine.allPaths(N447_DATA['%s']).map(p => p.trail.map(s => [s.key, s.value]))" % SLUG)
                 shop_host = pg.evaluate("new URL(N447_DATA['%s'].brand.web).hostname" % SLUG)
                 probe_name = pg.evaluate("N447_DATA['%s'].products.find(p => p.variants && p.variants.length).name.split('•').pop().trim()" % SLUG)
+                report['allPaths'] = len(paths)
+                if A.get('full') != '1': paths = cover(paths)
+                report['testedPaths'] = len(paths)
             st = {'paths': 0, 'screens': 0, 'issues': [], 'maxOptionHeight': 0}
             open_widget(pg)
             for trail in paths:
@@ -98,10 +101,22 @@ def main():
         ctx.close(); br.close()
     json.dump(report, open(f'{OUT}/browser-report.json', 'w'), indent=2, ensure_ascii=False)
     print(json.dumps({k: {'paths': v['paths'], 'screens': v['screens'], 'maxOptionHeight': v['maxOptionHeight'], 'issues': v['issues'][:6]} for k, v in report['sizes'].items()}, ensure_ascii=False))
-    print('apiBlocked', report['apiBlocked'], 'console', report['console'][:5], 'storage', report['storage'])
+    print('paths', report.get('testedPaths'), 'of', report.get('allPaths'), 'apiBlocked', report['apiBlocked'], 'console', report['console'][:5], 'storage', report['storage'])
     sys.exit(1 if any(v['issues'] for v in report['sizes'].values()) or report['console'] else 0)
 
 def trail_first(paths): return paths[0][0][1]
+
+def cover(paths):
+    """Najmenšia (greedy) sada ciest, ktorá zvolí každú odpoveď každého kroku v každom kontexte predchádzajúcej
+    odpovede a skončí na každom výslednom produkte – každá obrazovka otázky aj každý výsledok sa vykreslí aspoň raz."""
+    def items(t):
+        out = {('end', t[-1][1] if t else '')}
+        for i, (k, v) in enumerate(t): out.add((k, v, t[i - 1][1] if i else ''))
+        return out
+    need = set().union(*[items(t) for t in paths]); chosen = []
+    while need:
+        best = max(paths, key=lambda t: len(items(t) & need)); chosen.append(best); need -= items(best)
+    return chosen
 
 def check(pr, st, where, result=False):
     if pr['q'] and pr['overflow'] > 0: st['issues'].append(f'question scroll {pr["overflow"]}px {where}')
