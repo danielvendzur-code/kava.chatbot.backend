@@ -285,7 +285,7 @@
 
     if (!document.querySelector('script[data-owner-info]')) {
       const info = document.createElement('script');
-      info.src = '/n447/owner-more-info-n447.js';
+      info.src = '/n447c/owner-more-info-n447.js';
       info.dataset.ownerInfo = 'true';
       document.body.appendChild(info);
     }
