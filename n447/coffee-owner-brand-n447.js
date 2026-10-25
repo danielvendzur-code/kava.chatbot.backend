@@ -63,7 +63,7 @@
       ['10', 'mesačne', 'prevádzka']
     ],
     trial: L('Nastavenie pre vašu značku', 'Nastavení pro vaši značku'),
-    note: L('Otázky podľa skutočných rozdielov vašich káv a úplné odporúčanie s odkazom na produkt.', 'Otázky podle skutečných rozdílů vašich káv a úplné doporučení s odkazem na produkt.'),
+    note: L('Otázky podľa skutočných rozdielov vašich káv a výber konkrétnej kávy priamo vo vašom e-shope.', 'Otázky podle skutečných rozdílů vašich káv a výběr konkrétní kávy přímo ve vašem e-shopu.'),
     // Only in the sheet: the strip stays short enough to read at a glance.
     addon: 'Preklik na produkt alebo napojenie na košík za príplatok.',
     // The sheet behind "Mám záujem" is the long version of the same offer.
