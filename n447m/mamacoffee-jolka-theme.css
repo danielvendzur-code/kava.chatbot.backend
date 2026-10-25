@@ -1,0 +1,10 @@
+/* mamacoffee. – značkové tokeny na schválenom Jolka systéme (rovnaká štruktúra ako grain-jolka-theme.css). */
+:root{--ink:#141414;--ink-2:#141414;--ink-3:#3a3836;--paper:#ffffff;--surface:#fff;--surface-2:#f3f1ee;--line:#e4e1dc;--line-strong:#d6d2cc;--kraft:#141414;--kraft-deep:#141414;--kraft-tint:#f3f1ee;--text:#141414;--text-2:#55524e;--text-3:#86827d;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.mamacoffee-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.mamacoffee-clean .widget__brand>img{width:128px!important;min-width:128px!important;max-width:128px!important;height:40px!important}
+body.mamacoffee-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.mamacoffee-clean .launcher__button img{width:54px!important;height:54px!important}
+
+body.mamacoffee-clean .mcb-lockup{width:160px;height:32px;flex:none}body.mamacoffee-clean .mcb-lockup img{width:160px;height:32px;object-fit:contain}
+
+body.mamacoffee-clean .mcb-lockup img{filter:brightness(0)}
