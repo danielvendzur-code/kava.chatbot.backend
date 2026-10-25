@@ -1,0 +1,28 @@
+/* Scoped to this review. The approved shell stays; choice cards get readable content. */
+body.mamacoffee-clean #widget#widget#widget#widget#widget .options:is(.is-illustrated,.is-product-choices){display:grid!important;grid-template-columns:1fr!important;grid-auto-rows:auto!important;gap:10px!important;align-content:start!important;height:auto!important;flex:none!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .options:is(.is-illustrated,.is-product-choices) .option{display:flex!important;flex-direction:row!important;align-items:center!important;justify-content:flex-start!important;gap:16px!important;min-height:104px!important;height:auto!important;max-height:none!important;padding:14px 42px 14px 16px!important;border-radius:18px!important;text-align:left!important;box-shadow:none!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .options:is(.is-illustrated,.is-product-choices) .option__copy{display:block!important;min-height:0!important;height:auto!important;padding:0!important;flex:1!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .options:is(.is-illustrated,.is-product-choices) .option__copy b{display:block!important;font-size:17px!important;line-height:1.35!important;font-weight:650!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .options:is(.is-illustrated,.is-product-choices) .option__copy small{display:block!important;margin-top:5px!important;font-size:14px!important;line-height:1.45!important;color:#585858!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .option__art{position:relative!important;display:grid!important;place-items:center!important;flex:0 0 76px!important;width:76px!important;height:76px!important;background:#f5f4f1!important;border-radius:14px!important;color:#292929!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .option__art svg{width:64px!important;height:64px!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .option__art b{position:absolute!important;top:38px!important;font-family:Arial,sans-serif!important;font-size:12px!important;font-weight:700!important;line-height:1!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .is-product-choices .option__visual{flex:0 0 76px!important;width:76px!important;height:86px!important;max-height:none!important;aspect-ratio:auto!important;background:white!important;border:0!important;border-radius:8px!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .is-product-choices .option__visual img{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .question__hint{margin:8px 0 12px!important;font-size:13px!important;line-height:1.5!important;color:#606060!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .result__description{display:block!important;margin:16px 0!important;padding:0!important;border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;font-size:15px!important;line-height:1.6!important;color:#383838!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .progress{display:flex!important;align-items:center!important;gap:6px!important;height:8px!important;overflow:hidden!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .progress>i{display:block!important;position:relative!important;flex:1 1 0!important;min-width:0!important;height:8px!important;padding:0!important;margin:0!important;border:0!important;border-radius:999px!important;overflow:hidden!important;background:#e3e3e6!important;line-height:0!important;transform:none!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .progress>i.is-done{background:#292929!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .progress>i::before{content:none!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .progress>i.is-active::after{content:""!important;position:absolute!important;inset:0 auto 0 0!important;width:62%!important;height:100%!important;margin:0!important;border:0!important;border-radius:inherit!important;background:#292929!important;animation:none!important;transform:none!important;}
+@media(max-width:600px),(max-height:650px){
+body.mamacoffee-clean #widget#widget#widget#widget#widget .options:is(.is-illustrated,.is-product-choices){gap:8px!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .options:is(.is-illustrated,.is-product-choices) .option{gap:12px!important;min-height:88px!important;padding:10px 32px 10px 12px!important;border-radius:16px!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .options:is(.is-illustrated,.is-product-choices) .option__copy b{font-size:16px!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .options:is(.is-illustrated,.is-product-choices) .option__copy small{font-size:13px!important;margin-top:3px!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .option__art{flex-basis:58px!important;width:58px!important;height:64px!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .option__art svg{width:54px!important;height:54px!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .option__art b{top:33px!important;font-size:10px!important;}
+body.mamacoffee-clean #widget#widget#widget#widget#widget .is-product-choices .option__visual{flex-basis:58px!important;width:58px!important;height:74px!important;}
+}

@@ -7,8 +7,8 @@
     sk: {
       more: 'Viac info', title: 'Čo ešte dostanete', cta: 'Chcem to na svoj web', close: 'Zavrieť',
       items: [
-        ['Preklik priamo na produkt', 'Po odporúčaní zákazník pokračuje rovno na konkrétny produkt vo vašom e-shope.'],
-        ['Vloženie jedným riadkom kódu', 'Pridá sa do existujúceho webu, nič netreba prerábať.'],
+        ['Vaše kávy priamo na vašom webe', 'Zákazník vyberá z vašej ponuky a vybranú kávu nájde vo vašom e-shope.'],
+        ['Nasadenie na váš e-shop', 'Poradcu vložíme do vášho existujúceho webu. Spôsob napojenia prispôsobíme vášmu e-shopu.'],
         ['Funguje aj mimo pracovného času', 'Zákazník dostane odpoveď a pomoc s výberom aj večer či cez víkend.'],
         ['Priebežné úpravy', 'Sortiment, ceny aj odpovede sa dajú kedykoľvek aktualizovať.'],
         ['Ďalšie funkcie podľa vašej firmy', 'Neskôr sa dá doplniť napríklad košík, formulár, rezervácia, zber kontaktov alebo iný typ výberu.']
@@ -17,8 +17,8 @@
     cs: {
       more: 'Více info', title: 'Co ještě dostanete', cta: 'Chci to na svůj web', close: 'Zavřít',
       items: [
-        ['Proklik přímo na produkt', 'Po doporučení zákazník pokračuje rovnou na konkrétní produkt ve vašem e-shopu.'],
-        ['Vložení jedním řádkem kódu', 'Přidá se do stávajícího webu, nic není třeba předělávat.'],
+        ['Vaše kávy přímo na vašem webu', 'Zákazník vybírá z vaší nabídky a vybranou kávu najde ve vašem e-shopu.'],
+        ['Nasazení na váš e-shop', 'Poradce vložíme do vašeho stávajícího webu. Způsob napojení přizpůsobíme vašemu e-shopu.'],
         ['Funguje i mimo pracovní dobu', 'Zákazník dostane odpověď a pomoc s výběrem i večer nebo o víkendu.'],
         ['Průběžné úpravy', 'Sortiment, ceny i odpovědi lze kdykoli aktualizovat.'],
         ['Další funkce podle vaší firmy', 'Později lze doplnit například košík, formulář, rezervaci, sběr kontaktů nebo jiný typ výběru.']

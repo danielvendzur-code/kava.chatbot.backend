@@ -59,13 +59,13 @@
 
   const PRICING = {
     sums: [
-      ['447', 'jednorazovo', L('nastavenie, overenie vašich káv a vloženie na web', 'nastavení, ověření vašich káv a vložení na web')],
+      ['447', 'jednorazovo', L('príprava poradcu pre vašu ponuku a nasadenie na web', 'příprava poradce pro vaši nabídku a nasazení na web')],
       ['10', 'mesačne', 'prevádzka']
     ],
     trial: L('Nastavenie pre vašu značku', 'Nastavení pro vaši značku'),
-    note: L('Otázky podľa skutočných rozdielov vašich káv a úplné odporúčanie s odkazom na produkt.', 'Otázky podle skutečných rozdílů vašich káv a úplné doporučení s odkazem na produkt.'),
+    note: L('Otázky podľa skutočných rozdielov vašich káv a výber konkrétnej kávy priamo vo vašom e-shope.', 'Otázky podle skutečných rozdílů vašich káv a výběr konkrétní kávy přímo ve vašem e-shopu.'),
     // Only in the sheet: the strip stays short enough to read at a glance.
-    addon: 'Preklik na produkt je zahrnutý. Napojenie na košík sa nacení samostatne.',
+    addon: 'Poradca pracuje priamo vo vašom e-shope. Prípadné napojenie na košík sa nacení samostatne.',
     // The sheet behind "Mám záujem" is the long version of the same offer.
     included: [
       ['Chatbot s vašimi kávami', 'Vaše kávy a ceny, nie všeobecné odpovede.'],
@@ -135,8 +135,8 @@
      and the one place on the page where the owner can answer. */
   /* "Viac info": the same approved wording as on the other demos; price is already on the page. */
   const MORE = [
-    ['Preklik priamo na produkt', 'Po odporúčaní zákazník pokračuje rovno na konkrétny produkt vo vašom e-shope.'],
-    ['Vloženie jedným riadkom kódu', 'Pridá sa do existujúceho webu, nič netreba prerábať.'],
+    ['Vaše kávy priamo na vašom webe', 'Zákazník vyberá z vašej ponuky a vybranú kávu nájde vo vašom e-shope.'],
+    ['Nasadenie na váš e-shop', 'Poradcu vložíme do vášho existujúceho webu. Spôsob napojenia prispôsobíme vášmu e-shopu.'],
     ['Funguje aj mimo pracovného času', 'Zákazník dostane odpoveď a pomoc s výberom aj večer či cez víkend.'],
     ['Priebežné úpravy', 'Sortiment, ceny aj odpovede sa dajú kedykoľvek aktualizovať.'],
     ['Ďalšie funkcie podľa vašej firmy', 'Neskôr sa dá doplniť napríklad košík, formulár, rezervácia, zber kontaktov alebo iný typ výberu.']

@@ -2,6 +2,8 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
 const root=path.resolve(__dirname,'..');
 const E=require(path.join(root,'n447m/engine.js')),d=require(path.join(root,'n447m/data/mamacoffee.js')),R=require(path.join(root,'n447m/reply.js'));
 global.fetch=()=>{throw Error('No network or paid tests allowed')};
+assert.equal(d.chat.chips.length,4,'Chat must offer four quick questions');
+assert.equal(new Set(d.chat.chips).size,4,'Quick questions must differ');
 const paths=E.allPaths(d),coverage=new Set();
 for(const {answers:a,trail,result:r}of paths){
  assert(r,'Empty path');
@@ -9,6 +11,7 @@ for(const {answers:a,trail,result:r}of paths){
  if(r.kind==='drip'){assert.equal(r.total,45);continue}
  assert.equal(r.pack.grams,Number(a.pack));assert.equal(r.pack.grind,a.grind);
  assert(r.product.preps.includes(a.prep));if(a.tool)assert(r.product.tools.includes(a.tool));
+ if(a.caffeine)assert.equal(r.product.decaf,a.caffeine==='decaf','Caffeine choice must be honoured independently of flavour');
  assert(fs.existsSync(path.join(root,r.pack.photo)),'Missing pack photo');
  assert(r.pack.photo.endsWith('-'+a.pack+'.jpg'),'Wrong weight photo');
  if(r.limit!==null)assert(r.total<=r.limit+1e-9,'Whole-set budget breached');

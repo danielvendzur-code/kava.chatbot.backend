@@ -1,4 +1,4 @@
-/* Official UI: 9 coffees × 3 weights × 5 grinds checked 25 Oct 2026. */
+/* Official sources and variant prices checked 25 Oct 2026. */
 (function(g){const d={
   "slug": "mamacoffee",
   "lang": "cs",
@@ -44,6 +44,7 @@
     "chips": [
       "Jakou kávu na filtr?",
       "Máte bezkofeinovou?",
+      "Zrnkovou, nebo namletou?",
       "Kolik stojí 250 g?"
     ]
   },
@@ -71,7 +72,7 @@
       "processKey": "washed",
       "roastLabel": null,
       "prepText": "Hodí se na espresso a pro přípravu v moka konvičce.",
-      "summary": "Smetanové tělo a nízká sladká acidita.",
+      "summary": "Krémová káva s čokoládou, tmavým medem a meruňkami. Má nízkou kyselost.",
       "compositionText": "100 % arabika",
       "blend": "arabica",
       "weights": [
@@ -279,7 +280,8 @@
           "url": "https://www.mamacoffee.cz/nicaragua-chavarria/",
           "photo": "/assets/mamacoffee/chavarria-1000.jpg"
         }
-      ]
+      ],
+      "flavourFamily": "fruitChocolate"
     },
     {
       "id": "women",
@@ -304,7 +306,7 @@
       "processKey": "washed",
       "roastLabel": "střední",
       "prepText": "Hodí se na espresso a pro přípravu v moka konvičce.",
-      "summary": "Střední tělo, nízká sladká acidita a projekt podporující producentky kávy.",
+      "summary": "Mléčná čokoláda, badyán a červená jablka. Nízká kyselost a středně plná chuť.",
       "compositionText": "100 % arabika",
       "blend": "arabica",
       "weights": [
@@ -512,7 +514,8 @@
           "url": "https://www.mamacoffee.cz/nicaragua-women-s-project-3/",
           "photo": "/assets/mamacoffee/women-1000.jpg"
         }
-      ]
+      ],
+      "flavourFamily": "fruitChocolate"
     },
     {
       "id": "progreso",
@@ -541,7 +544,7 @@
       "processKey": "natural",
       "roastLabel": "světlé",
       "prepText": "Hodí se na alternativní způsoby přípravy.",
-      "summary": "Plné kulaté tělo a živá ovocná acidita.",
+      "summary": "Výrazně ovocná káva s chuťovými tóny rumu, nugátu a fermentované hrušky.",
       "compositionText": "100 % arabika",
       "blend": "arabica",
       "weights": [
@@ -778,7 +781,7 @@
       "processKey": "washed",
       "roastLabel": "světlé",
       "prepText": "Hodí se na alternativní přípravu, například V60 nebo AeroPress.",
-      "summary": "Střední smetanové tělo a živá ovocná acidita.",
+      "summary": "Med, maliny, sladké citrusy a mandle. Svěží ovocná kyselost.",
       "compositionText": "100 % arabika",
       "blend": "arabica",
       "weights": [
@@ -1014,7 +1017,7 @@
       "processKey": "natural",
       "roastLabel": "světlé",
       "prepText": "Hodí se na alternativní přípravu, například V60 nebo AeroPress.",
-      "summary": "Plné kulaté tělo a ovocná sladká acidita.",
+      "summary": "Karamel, nugát a zralá třešeň. Plná chuť se sladce ovocnou kyselostí.",
       "compositionText": "100 % arabika",
       "blend": "arabica",
       "weights": [
@@ -1247,7 +1250,7 @@
       "processKey": "natural",
       "roastLabel": null,
       "prepText": "Hodí se na espresso a pro přípravu v moka konvičce.",
-      "summary": "Plné krémové tělo a nízká acidita.",
+      "summary": "Čokoláda a melasový cukr doplněné citrusovými tóny. Plná, krémová a málo kyselá.",
       "compositionText": "100 % arabika",
       "blend": "arabica",
       "weights": [
@@ -1455,7 +1458,8 @@
           "url": "https://www.mamacoffee.cz/brasil-mogiana/",
           "photo": "/assets/mamacoffee/mogiana-1000.jpg"
         }
-      ]
+      ],
+      "flavourFamily": "fruitChocolate"
     },
     {
       "id": "dejavu",
@@ -1481,7 +1485,7 @@
       "processKey": "mix",
       "roastLabel": "středně tmavé",
       "prepText": "Hodí se na espresso a pro přípravu v moka konvičce.",
-      "summary": "Směs arabik, plné krémové tělo a nízká sladká acidita.",
+      "summary": "Arabiky z Nikaraguy a Brazílie. Mléčná čokoláda, anýz, lískové oříšky a rozinky; nízká kyselost.",
       "compositionText": "100 % arabika",
       "blend": "arabica",
       "weights": [
@@ -1689,7 +1693,8 @@
           "url": "https://www.mamacoffee.cz/espresso-smes-dejavu/",
           "photo": "/assets/mamacoffee/dejavu-1000.jpg"
         }
-      ]
+      ],
+      "flavourFamily": "nutChocolate"
     },
     {
       "id": "peru",
@@ -1714,7 +1719,7 @@
       "processKey": "washed",
       "roastLabel": "středně tmavé",
       "prepText": "Hodí se na espresso a pro přípravu v moka konvičce.",
-      "summary": "BIO káva, plné krémové tělo a nízká sladká acidita.",
+      "summary": "BIO arabika s mléčnou čokoládou, medovou sladkostí a tóny toffifee. Plná a krémová, s nízkou kyselostí.",
       "compositionText": "100 % arabika",
       "blend": "arabica",
       "weights": [
@@ -1922,7 +1927,8 @@
           "url": "https://www.mamacoffee.cz/bio-peru-moyobamba/",
           "photo": "/assets/mamacoffee/peru-1000.jpg"
         }
-      ]
+      ],
+      "flavourFamily": "nutChocolate"
     },
     {
       "id": "colombia",
@@ -1948,7 +1954,7 @@
       "processKey": "washed",
       "roastLabel": "střední",
       "prepText": "Hodí se na espresso a pro přípravu v moka konvičce.",
-      "summary": "Bezkofeinová káva s plným smetanovým tělem a sladkou aciditou.",
+      "summary": "Bezkofeinová káva s chutí jablka, mléčné čokolády a marcipánu. Plná a krémová.",
       "weights": [
         100,
         250,

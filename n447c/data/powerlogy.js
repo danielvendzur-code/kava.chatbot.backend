@@ -37,7 +37,8 @@
     "chips": [
       "Aký je rozdiel medzi kávami?",
       "Koľko stojí 900 g?",
-      "Ktorá je na filter?"
+      "Ktorá je na filter?",
+      "Máte aj bezkofeínovú?"
     ]
   },
   "products": [
