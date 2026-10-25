@@ -1,17 +1,17 @@
 {
   "batch": "nove-ukazky-447-2026-10-22",
-  "engineCommit": "a9a790f",
+  "engineCommit": "ce15ca3",
   "price": {
     "setupEUR": 447,
     "monthlyEUR": 10,
     "freeTrial": false
   },
   "updatedAt": "2026-10-25",
-  "headCommit": "f2001a1",
+  "headCommit": "3bd8445",
   "branch": "claude/n447-black-20261022",
   "preview": {
-    "url": "https://kava-chatbot-backend-oj2fqfm8c-danielvendzur-codes-projects.vercel.app",
-    "sha": "f2001a1",
+    "url": "https://kava-chatbot-backend-hf60uyrqq-danielvendzur-codes-projects.vercel.app",
+    "sha": "3bd8445",
     "note": "Interný Preview (Vercel, vetva). Zelený build nie je overená produkcia; produkcia ani zákaznícke subdomény nie sú nasadené."
   },
   "rules": {
@@ -67,7 +67,7 @@
           "reason": "Kapsule."
         }
       ],
-      "commit": "d032700",
+      "commit": "ce15ca3",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -114,7 +114,7 @@
         "darčekové balenia (2)",
         "akcie 3+1 zdarma (6)"
       ],
-      "commit": "2297753",
+      "commit": "ce15ca3",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -130,11 +130,11 @@
         "storage": []
       },
       "handoffBundle": {
-        "builtFrom": "e5e32d3",
+        "builtFrom": "ce15ca3",
         "manifest": "n447/bundles/verticcio.manifest.json",
         "qa": "n447/bundles/verticcio-bundle-qa.json",
-        "files": 84,
-        "bytes": 3800000,
+        "files": 112,
+        "bytes": 3833649,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -165,7 +165,7 @@
       "excluded": [
         "Degustační set 4 × 50 g (vzorky)"
       ],
-      "commit": "4745e87",
+      "commit": "ce15ca3",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -173,7 +173,7 @@
           "560x600",
           "1280x800"
         ],
-        "testedPaths": 25,
+        "testedPaths": 21,
         "allPaths": 94,
         "issues": 0,
         "firstIssues": [],
@@ -181,11 +181,11 @@
         "storage": []
       },
       "handoffBundle": {
-        "builtFrom": "e5e32d3",
+        "builtFrom": "ce15ca3",
         "manifest": "n447/bundles/rebelbean.manifest.json",
         "qa": "n447/bundles/rebelbean-bundle-qa.json",
-        "files": 74,
-        "bytes": 3608426,
+        "files": 102,
+        "bytes": 3642075,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -223,7 +223,7 @@
         "kapsle (3), rozpustná káva, čtyřbalení (sada)",
         "balení 2000 g ve vratném obalu (velkoobchod)"
       ],
-      "commit": "b175f41",
+      "commit": "ce15ca3",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -231,7 +231,7 @@
           "560x600",
           "1280x800"
         ],
-        "testedPaths": 49,
+        "testedPaths": 48,
         "allPaths": 111,
         "issues": 0,
         "firstIssues": [],
@@ -270,7 +270,7 @@
         "dárkový poukaz",
         "předplatné (jen jednorázové ceny)"
       ],
-      "commit": "0fa76b6",
+      "commit": "ce15ca3",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -278,7 +278,7 @@
           "560x600",
           "1280x800"
         ],
-        "testedPaths": 25,
+        "testedPaths": 21,
         "allPaths": 52,
         "issues": 0,
         "firstIssues": [],
@@ -286,11 +286,11 @@
         "storage": []
       },
       "handoffBundle": {
-        "builtFrom": "e5e32d3",
+        "builtFrom": "ce15ca3",
         "manifest": "n447/bundles/doubleshot.manifest.json",
         "qa": "n447/bundles/doubleshot-bundle-qa.json",
-        "files": 74,
-        "bytes": 3187252,
+        "files": 102,
+        "bytes": 3220901,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -329,7 +329,7 @@
         "etiopie-edn-pineapple: e-shop ukazuje balení „100g“ (v datech hmotnost 250 g) – použito 100 g podle webu",
         "Kolumbie – Inzá (espresso): v kategorii Espresso, ale popis uvádí přípravu filtrované kávy – vyřazeno, dokud se neověří."
       ],
-      "commit": "3f1136f",
+      "commit": "ce15ca3",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -345,11 +345,11 @@
         "storage": []
       },
       "handoffBundle": {
-        "builtFrom": "e5e32d3",
+        "builtFrom": "ce15ca3",
         "manifest": "n447/bundles/fathers.manifest.json",
         "qa": "n447/bundles/fathers-bundle-qa.json",
-        "files": 97,
-        "bytes": 3593084,
+        "files": 125,
+        "bytes": 3626733,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -385,7 +385,7 @@
         "Candybar a kávová zrna v čokoládě Ajala",
         "ceny balení 1 kg a 2,5 kg (stránka je bez práce s košíkem nezobrazuje)"
       ],
-      "commit": "b103455",
+      "commit": "ce15ca3",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -393,7 +393,7 @@
           "560x600",
           "1280x800"
         ],
-        "testedPaths": 21,
+        "testedPaths": 15,
         "allPaths": 33,
         "issues": 0,
         "firstIssues": [],
@@ -401,11 +401,11 @@
         "storage": []
       },
       "handoffBundle": {
-        "builtFrom": "e5e32d3",
+        "builtFrom": "ce15ca3",
         "manifest": "n447/bundles/candycane.manifest.json",
         "qa": "n447/bundles/candycane-bundle-qa.json",
-        "files": 75,
-        "bytes": 2825086,
+        "files": 103,
+        "bytes": 2858735,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -445,7 +445,7 @@
         "vypredané varianty a produkty bez dostupného zrnkového balenia",
         "balenia NEHERA (osobitná edícia)"
       ],
-      "commit": "3f1136f",
+      "commit": "ce15ca3",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -453,19 +453,19 @@
           "560x600",
           "1280x800"
         ],
-        "testedPaths": 72,
-        "allPaths": 191,
+        "testedPaths": 74,
+        "allPaths": 189,
         "issues": 0,
         "firstIssues": [],
         "console": 0,
         "storage": []
       },
       "handoffBundle": {
-        "builtFrom": "e5e32d3",
+        "builtFrom": "ce15ca3",
         "manifest": "n447/bundles/9gramscoffee.manifest.json",
         "qa": "n447/bundles/9gramscoffee-bundle-qa.json",
-        "files": 93,
-        "bytes": 3873139,
+        "files": 121,
+        "bytes": 3906788,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -539,11 +539,11 @@
         "console": 0
       },
       "handoffBundle": {
-        "builtFrom": "e5e32d3",
+        "builtFrom": "ce15ca3",
         "manifest": "n447/bundles/renovality.manifest.json",
         "qa": "n447/bundles/renovality-bundle-qa.json",
         "files": 84,
-        "bytes": 3336157,
+        "bytes": 3336788,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -610,11 +610,11 @@
         "console": 0
       },
       "handoffBundle": {
-        "builtFrom": "e5e32d3",
+        "builtFrom": "ce15ca3",
         "manifest": "n447/bundles/saloos.manifest.json",
         "qa": "n447/bundles/saloos-bundle-qa.json",
         "files": 84,
-        "bytes": 3505509,
+        "bytes": 3506140,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -685,11 +685,11 @@
         "console": 0
       },
       "handoffBundle": {
-        "builtFrom": "e5e32d3",
+        "builtFrom": "ce15ca3",
         "manifest": "n447/bundles/nobilistilia.manifest.json",
         "qa": "n447/bundles/nobilistilia-bundle-qa.json",
         "files": 84,
-        "bytes": 3564221,
+        "bytes": 3564852,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -755,11 +755,11 @@
         "console": 0
       },
       "handoffBundle": {
-        "builtFrom": "e5e32d3",
+        "builtFrom": "ce15ca3",
         "manifest": "n447/bundles/manufaktura.manifest.json",
         "qa": "n447/bundles/manufaktura-bundle-qa.json",
         "files": 84,
-        "bytes": 3296270,
+        "bytes": 3296901,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
