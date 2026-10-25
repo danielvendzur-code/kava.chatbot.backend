@@ -1,4 +1,4 @@
-/* Father's – značkové tokeny na schválenom Jolka systéme (rovnaká štruktúra ako grain-jolka-theme.css). */
+/* Father's – značkové tokeny na schválenom Jolka systéme. */
 :root{--ink:#332d2b;--ink-2:#232323;--ink-3:#4a4240;--paper:#ffffff;--surface:#fff;--surface-2:#f3efeb;--line:#e7e0d9;--line-strong:#d6ccc3;--kraft:#b38c7a;--kraft-deep:#96705f;--kraft-tint:#f1e8e3;--text:#232323;--text-2:#55504d;--text-3:#86807c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
 body.fathers-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
 body.fathers-clean .widget__brand>img{width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important}

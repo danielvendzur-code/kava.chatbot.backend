@@ -1,4 +1,4 @@
-/* Candycane coffee – značkové tokeny na schválenom Jolka systéme (rovnaká štruktúra ako grain-jolka-theme.css). */
+/* Candycane coffee – značkové tokeny na schválenom Jolka systéme. */
 :root{--ink:#1a1a1a;--ink-2:#1a1a1a;--ink-3:#3a3a3a;--paper:#ffffff;--surface:#fff;--surface-2:#f6f4f1;--line:#e6e2dc;--line-strong:#d4cec6;--kraft:#dc2626;--kraft-deep:#b91c1c;--kraft-tint:#fde8e8;--text:#1a1a1a;--text-2:#4f4f4f;--text-3:#808080;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
 body.candycane-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
 body.candycane-clean .widget__brand>img{width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important}

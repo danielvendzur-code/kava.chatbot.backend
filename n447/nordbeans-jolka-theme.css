@@ -1,4 +1,4 @@
-/* Nordbeans – značkové tokeny na schválenom Jolka systéme (rovnaká štruktúra ako grain-jolka-theme.css). */
+/* Nordbeans – značkové tokeny na schválenom Jolka systéme. */
 :root{--ink:#1c1c1c;--ink-2:#1c1c1c;--ink-3:#3a3a3a;--paper:#ffffff;--surface:#fff;--surface-2:#f4f1ec;--line:#e5e0d8;--line-strong:#d3ccc1;--kraft:#5fae9c;--kraft-deep:#3f8f7d;--kraft-tint:#e3f2ee;--text:#1c1c1c;--text-2:#4f4f4f;--text-3:#808080;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
 body.nordbeans-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
 body.nordbeans-clean .widget__brand>img{width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important}

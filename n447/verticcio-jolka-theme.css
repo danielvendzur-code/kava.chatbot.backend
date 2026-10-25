@@ -1,4 +1,4 @@
-/* Verticcio – značkové tokeny na schválenom Jolka systéme (rovnaká štruktúra ako grain-jolka-theme.css). */
+/* Verticcio – značkové tokeny na schválenom Jolka systéme. */
 :root{--ink:#0f3f41;--ink-2:#0f3f41;--ink-3:#2f6b6c;--paper:#ffffff;--surface:#fff;--surface-2:#e9f4f3;--line:#d3e6e4;--line-strong:#bcd9d6;--kraft:#5fb3ae;--kraft-deep:#2f8f8a;--kraft-tint:#e9f4f3;--text:#123334;--text-2:#4b5f60;--text-3:#7a8c8c;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
 body.verticcio-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
 body.verticcio-clean .widget__brand>img{width:80px!important;min-width:80px!important;max-width:80px!important;height:40px!important}

@@ -1,4 +1,4 @@
-/* Rebelbean – značkové tokeny na schválenom Jolka systéme (rovnaká štruktúra ako grain-jolka-theme.css). */
+/* Rebelbean – značkové tokeny na schválenom Jolka systéme. */
 :root{--ink:#161616;--ink-2:#161616;--ink-3:#e7000e;--paper:#ffffff;--surface:#fff;--surface-2:#f6f2f1;--line:#ece4e2;--line-strong:#e0d4d1;--kraft:#e7000e;--kraft-deep:#b8000b;--kraft-tint:#fdeceb;--text:#161616;--text-2:#55504e;--text-3:#86807d;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
 body.rebelbean-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
 body.rebelbean-clean .widget__brand>img{width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important}

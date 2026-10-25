@@ -1,4 +1,4 @@
-/* doubleshot – značkové tokeny na schválenom Jolka systéme (rovnaká štruktúra ako grain-jolka-theme.css). */
+/* doubleshot – značkové tokeny na schválenom Jolka systéme. */
 :root{--ink:#1e272f;--ink-2:#1e272f;--ink-3:#3a4752;--paper:#ffffff;--surface:#fff;--surface-2:#f6f3ea;--line:#e6e1d4;--line-strong:#d8d1bf;--kraft:#f2c230;--kraft-deep:#d9a90f;--kraft-tint:#fbf1cf;--text:#1e272f;--text-2:#4f5a63;--text-3:#7f8992;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
 body.doubleshot-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
 body.doubleshot-clean .widget__brand>img{width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important}
