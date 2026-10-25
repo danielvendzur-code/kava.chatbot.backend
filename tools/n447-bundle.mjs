@@ -62,6 +62,7 @@ function scan(rel, text = fs.readFileSync(path.join(ROOT, rel), 'utf8')) {
     const dir = path.join(ROOT, clean(m[1]));
     if (!fs.existsSync(dir)) continue;
     for (const f of fs.readdirSync(dir)) {
+      if (clean(m[1]).startsWith('assets/n447/')) { refs.add(m[1] + f); continue; }  // vlastné ilustrácie novej dávky: mená sa skladajú v kóde ('tool-' + k)
       const base = f.replace(/\.[^.]+$/, '');
       if (new RegExp(`["'\`]${base.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}["'\`]`).test(text)) refs.add(m[1] + f);
     }

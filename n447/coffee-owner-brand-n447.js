@@ -54,12 +54,12 @@
     ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
     ['Pozná vašu ponuku', 'pracuje s vašimi kávami a cenami'],
     ['Výber podľa vašich potrieb', 'na konci jedna konkrétna káva'],
-    [L('Rozpočet na celý nákup', 'Rozpočet na celý nákup'), L('odporučí balenie s overenou cenou', 'doporučí balení s ověřenou cenou')]
+    [L('Rozpočet na celý nákup', 'Rozpočet na celý nákup'), L('káva aj doplnok spolu v rámci sumy', 'káva i doplněk dohromady v rámci částky')]
   ];
 
   const PRICING = {
     sums: [
-      ['447', 'jednorazovo', L('nastavenie, overenie vašich káv a vloženie na web', 'nastavení, ověření vašich káv a vložení na web')],
+      ['447', 'jednorazovo', L('príprava poradcu pre váš sortiment a nasadenie na e-shop', 'příprava poradce pro váš sortiment a nasazení na e-shop')],
       ['10', 'mesačne', 'prevádzka']
     ],
     trial: L('Nastavenie pre vašu značku', 'Nastavení pro vaši značku'),
@@ -70,9 +70,9 @@
     included: [
       ['Chatbot s vašimi kávami', 'Vaše kávy a ceny, nie všeobecné odpovede.'],
       ['Odpovedá aj o polnoci', 'Pôvod, praženie, príprava aj porovnanie dvoch káv.'],
-      ['Výber podľa vašich potrieb', 'Chuť, príprava, nápoj a kofeín — na konci jedna konkrétna káva.'],
+      ['Výber podľa vašich potrieb', L('Príprava, chuť a skutočné rozdiely vašich káv — na konci jedna konkrétna káva.', 'Příprava, chuť a skutečné rozdíly vašich káv — na konci jedna konkrétní káva.')],
 
-      [L('Rozpočet na celý nákup', 'Rozpočet na celý nákup'), L('Odporučí konkrétne balenie s overenou cenou.', 'Doporučí konkrétní balení s ověřenou cenou.')]
+      [L('Rozpočet na celý nákup', 'Rozpočet na celý nákup'), L('Celá zostava vrátane doplnku sa zmestí do zvolenej sumy.', 'Celá sestava včetně doplňku se vejde do zvolené částky.')]
     ]
   };
 
@@ -136,7 +136,7 @@
   /* "Viac info": the same approved wording as on the other demos; price is already on the page. */
   const MORE = [
     ['Preklik priamo na produkt', 'Po odporúčaní zákazník pokračuje rovno na konkrétny produkt vo vašom e-shope.'],
-    ['Vloženie jedným riadkom kódu', 'Pridá sa do existujúceho webu, nič netreba prerábať.'],
+    [L('Nasadenie na váš e-shop', 'Nasazení na váš e-shop'), L('Spôsob vloženia pripravíme podľa vášho e-shopu a pred spustením ho vyskúšame.', 'Způsob vložení připravíme podle vašeho e-shopu a před spuštěním ho vyzkoušíme.')],
     ['Funguje aj mimo pracovného času', 'Zákazník dostane odpoveď a pomoc s výberom aj večer či cez víkend.'],
     ['Priebežné úpravy', 'Sortiment, ceny aj odpovede sa dajú kedykoľvek aktualizovať.'],
     ['Ďalšie funkcie podľa vašej firmy', 'Neskôr sa dá doplniť napríklad košík, formulár, rezervácia, zber kontaktov alebo iný typ výberu.']

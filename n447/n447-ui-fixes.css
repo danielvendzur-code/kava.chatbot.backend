@@ -1,0 +1,22 @@
+/* n447 – cielené opravy majiteľa (25. 10.) iba pre nové ukážky; schválené zdieľané štýly ostávajú nezmenené.
+   1) Ukazovateľ postupu: aktívny úsek má svetlú dráhu a tmavú výplň priamo v pozadí úseku (žiadny prvok navrchu,
+      ktorý by mohol presahovať); úsek je orezaný na zaoblený tvar. */
+html body #widget#widget .progress { align-items: center; }
+html body #widget#widget .progress i {
+  height: 8px; overflow: hidden; isolation: isolate; clip-path: inset(0 round 999px); border-radius: 999px;
+}
+html body #widget#widget .progress i.is-active {
+  background: linear-gradient(var(--ink, #1f2a2c), var(--ink, #1f2a2c)) left center / 62% 100% no-repeat #e1e3e6 !important;
+}
+html body #widget#widget .progress i.is-active::after,
+html body #widget#widget .progress i.is-active::before { content: none !important; display: none !important; animation: none !important; }
+
+/* 5) Opis výsledku: jasný odsek bez nepravidelného oblého ľavého rámika. */
+html body #widget#widget .n447-about {
+  margin: 14px 0 4px; padding: 0; border: 0; border-radius: 0; background: none; box-shadow: none;
+  font-size: 15px; line-height: 1.55; color: inherit; font-style: normal;
+}
+html body #widget#widget .n447-about::before, html body #widget#widget .n447-about::after { content: none; }
+
+/* 6) Hlavné CTA je odkaz na detail kávy v rovnakej karte – vzhľad tlačidla zostáva. */
+html body #widget#widget a.cta.n447-cta { display: flex; align-items: center; justify-content: center; text-decoration: none; text-align: center; }

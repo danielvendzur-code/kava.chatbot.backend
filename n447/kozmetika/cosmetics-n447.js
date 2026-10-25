@@ -80,7 +80,7 @@
      buys. The coffee pages read the same words. */
   const PRICE = {
     sums: [
-      ['447', 'jednorazovo', L('nastavenie, overenie vašich produktov a vloženie na web', 'nastavení, ověření vašich produktů a vložení na web')],
+      ['447', 'jednorazovo', L('príprava poradcu pre váš sortiment a nasadenie na e-shop', 'příprava poradce pro váš sortiment a nasazení na e-shop')],
       ['10', 'mesačne', 'prevádzka']
     ],
     trial: L('Nastavenie pre vašu značku', 'Nastavení pro vaši značku'),
@@ -115,12 +115,14 @@
 
   const catalogue=hasCatalogue?brand.catalogue:brand.products||[];
   const chipChoices=[
-    ['face','Mám suchú pleť'],['hair','Produkty na vlasy'],['body','Starostlivosť o telo'],['sets','Darčekové sady'],
-    ['eyes','Starostlivosť o okolie očí'],['lips','Starostlivosť o pery'],['makeup','Produkty na líčenie'],
-    ['wellness','Doplnky výživy'],['home','Vône do domácnosti'],['baby','Starostlivosť pre deti']
+    ['face',L('Mám suchú pleť','Mám suchou pleť')],['hair',L('Produkty na vlasy','Produkty na vlasy')],['body',L('Starostlivosť o telo','Péče o tělo')],['sets',L('Darčekové sady','Dárkové sady')],
+    ['eyes',L('Starostlivosť o okolie očí','Péče o oční okolí')],['lips',L('Starostlivosť o pery','Péče o rty')],['makeup',L('Produkty na líčenie','Produkty na líčení')],
+    ['wellness',L('Doplnky výživy','Doplňky stravy')],['home',L('Vône do domácnosti','Vůně do domácnosti')],['baby',L('Starostlivosť pre deti','Péče o děti')]
   ];
   const CHIPS=chipChoices.filter(([category])=>catalogue.some(p=>p.category===category&&p.available!==false)).map(([,title])=>title);
-  for(const title of ['Pomôžte mi vybrať','Aké produkty máte?','Ako používať vaše produkty?','Chcem jednoduchú rutinu'])if(CHIPS.length<4&&!CHIPS.includes(title))CHIPS.push(title);
+  /* Doplnenie na 4 zmysluplné voľby podľa potrieb, ktoré sortiment naozaj pokrýva (rôzne odpovede, nie ten istý zoznam). */
+  const hasTag=(t)=>catalogue.some(p=>p.available!==false&&(p.tags||[]).includes(t));
+  for(const [ok,title] of [[hasTag('sensitive'),L('Mám citlivú pleť','Mám citlivou pleť')],[hasTag('oily'),L('Pleť sa mi mastí','Pleť se mi mastí')],[hasTag('mature'),L('Čo na vrásky?','Co na vrásky?')],[true,L('Pomôžte mi vybrať','Pomozte mi vybrat')]])if(ok&&CHIPS.length<4&&!CHIPS.includes(title))CHIPS.push(title);
   CHIPS.splice(4);
 
   const ownerFigures = '';

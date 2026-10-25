@@ -50,10 +50,16 @@ for (const p of paths) {
     const photos = o.map((x) => x.photo).filter(Boolean);
     assert.equal(new Set(photos).size, photos.length, 'rovnaká fotka v otázke ' + s.key);
     if (/^pick|^detail/.test(s.key)) followUps++;
+    /* Majiteľ 25. 10.: každá voľba má fotku alebo ilustráciu; „Bez kofeínu“ nie je odpoveď na chuť. */
+    assert.ok(o.every((x) => x.photo), 'voľba bez obrázka ' + s.key);
+    if (s.key === 'taste') assert.ok(!o.some((x) => x.value === 'decaf'), 'bez kofeínu v otázke na chuť');
+    if (s.key === 'caffeine') { const pl = E.pool(data, {prep: a.prep, tool: a.tool}); assert.ok(pl.some((x) => x.decaf) && pl.some((x) => !x.decaf), 'otázka na kofeín bez reálneho výberu'); }
   }
   if (r.kind === 'coffee') {
     assert.ok(E.pool(data, a).some((x) => x.id === r.product.id), 'výsledok nespĺňa odpovede');
-    assert.equal(!!r.product.decaf, a.taste === 'decaf');
+    /* Kofeín: samostatná otázka iba pri skutočnom výbere; bez nej je bezkofeínová len vtedy, keď iná vhodná káva nie je. */
+    if (a.caffeine) assert.equal(!!r.product.decaf, a.caffeine === 'no', 'kofeín nesedí s odpoveďou');
+    else assert.equal(!!r.product.decaf, E.pool(data, {prep: a.prep, tool: a.tool}).every((x) => x.decaf), 'bezkofeínová bez otázky');
     if (r.priceVerified) {
       verifiedResults++;
       assert.ok(r.pack.verifiedAt && r.product.variants.includes(r.pack) && (!r.pack.roast || r.pack.roast === r.roast), 'overené balenie');
@@ -125,7 +131,7 @@ report.checks.paths = {total: paths.length, maxQuestions: maxQ, followUpSteps: f
     assert.equal(r.product.id, 'doce-citrus'); assert.equal(r.pack.grams, 200); assert.equal(r.total, 10.5);
     assert.deepEqual(r.packs.map((x) => [x.label, x.chosen, x.over]), [['200 g', true, false], ['500 g', false, true], ['1 kg', false, true]]);
     assert.ok(!r.packLabel.includes('500') && !r.packLabel.includes('1 kg'), 'v rozpočte 10,50 € sa nesmie ponúknuť 500 g/1 kg');
-    assert.equal(E.nextQuestion(data, {prep: 'espresso', taste: 'choco'}).key, 'pick', 'bez overených cien všetkých káv sa rozpočet nepýta');
+    assert.equal(E.nextQuestion(data, {prep: 'espresso', caffeine: 'yes', taste: 'choco'}).key, 'pick', 'bez overených cien všetkých káv sa rozpočet nepýta');
   }
   const roast = ref.roasts ? ref.roasts[0] : undefined, a = (b) => ({prep: 'espresso', budget: String(b)});
   const only = {...ref, id: 'syn', variants: [{roast, grams: 500, grind: 'Zrnková', price: 22.5, verifiedAt: 'x'}]};

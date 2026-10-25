@@ -9,12 +9,17 @@
 (function (g) {
   'use strict';
   const EPS = 1e-9;
-  const KEYS = ['prep', 'dripPick', 'tool', 'taste', 'budget', 'detailProcess', 'detailMore', 'pick', 'pick2', 'pick3'];
+  const KEYS = ['prep', 'dripPick', 'tool', 'caffeine', 'taste', 'budget', 'detailProcess', 'detailMore', 'pick', 'pick2', 'pick3'];
   /* Zvolená káva: posledný výber, ktorý nie je „ďalšie vhodné kávy“ (more:N). */
   const chosen = (a) => [a.pick3, a.pick2, a.pick].find((v) => v && !String(v).startsWith('more:')) || null;
   const PREP_ROASTS = {espresso: ['espresso', 'omni'], moka: ['espresso', 'omni'], filter: ['filter', 'omni']};
   const PREP_PHOTO = {espresso: '/assets/scenes/coffee-espresso.jpg', moka: '/assets/scenes/coffee-moka.jpg', filter: '/assets/scenes/coffee-filter.jpg'};
   const TASTE_PHOTO = {choco: '/assets/scenes/coffee-caramel.jpg', fruitFull: '/assets/scenes/coffee-berries.jpg', fresh: '/assets/scenes/coffee-acidity-bright.jpg', decaf: '/assets/scenes/coffee-decaf-cup.jpg'};
+  const CAF_PHOTO = {yes: '/assets/scenes/coffee-beans.jpg', no: '/assets/scenes/coffee-decaf-cup.jpg'};
+  /* Jednoduché ilustrácie pre voľby, ktoré nemajú vhodnú fotku (pomôcka, spracovanie, pôvod, praženie, zloženie, rozpočet, drip). */
+  const IL = (n) => '/assets/n447/ilustracie/' + n + '.svg';
+  const roastClass = (label) => { const x = String(label).toLowerCase();
+    if (/dark|tmav/.test(x)) return 'dark'; if (/light|svetl|světl/.test(x)) return 'light'; if (/medium|stred|střed/.test(x)) return 'medium'; return null; };
   const GRIND_FOR = {espresso: 'Zrnková', moka: 'Mletá moka konvička', v60: 'Mletá drip', aeropress: 'Mletá aeropress', frenchpress: 'Mletá french press'};
 
   const TXT = {
@@ -25,11 +30,15 @@
       toolQ: 'Akú pomôcku na filter máte?', toolName: 'Pomôcka',
       tool: {v60: ['V60 alebo iný prelievaný filter', 'Papierový filter, prelievanie'], aeropress: ['AeroPress', 'Lúhovanie a pretlačenie'], frenchpress: ['French press', 'Lúhovanie s piestom']},
       dripQ: 'Ktorú kávu vo vrecúškach chcete?', dripName: 'Káva',
-      cafQ: 'Má káva obsahovať kofeín?', cafName: 'Kofeín', caf: {yes: ['S kofeínom', 'Bežná káva z ponuky'], no: ['Bez kofeínu', 'Aj na večer']},
+      cafQ: 'Chcete kávu s kofeínom, alebo bez neho?', cafName: 'Kofeín', caf: {yes: ['S kofeínom', 'Bežná káva'], no: ['Bez kofeínu', 'Aj na večer']},
       tasteQ: 'Aká chuť vám sedí najviac?', tasteName: 'Chuť',
       taste: {choco: ['Čokoládová a karamelová', 'Sladká, plná, s orieškom či toffee'], fruitFull: ['Plná a ovocná', 'Višne, bobule, tmavé ovocie'], fresh: ['Svieža a šťavnatá', 'Ríbezle, citrus, čajové tóny'], decaf: ['Bez kofeínu', 'Káva aj na večer']},
       budgetQ: 'Koľko chcete dať za balenie?', budgetName: 'Rozpočet', budgetAny: 'Na cene až tak nezáleží',
-      processQ: 'Aké spracovanie kávy vám je bližšie?', processName: 'Spracovanie',
+      processQ: 'Aký štýl chuti vám je bližší?', processName: 'Štýl chuti',
+      procPlain: {washed: ['Čistejšia, svieža chuť', 'premývaná (washed)'], natural: ['Ovocnejšia, sladšia chuť', 'sušená v plode (natural)'],
+        honey: ['Sladká, plná chuť', 'spracovanie honey'], semi: ['Vyvážená chuť', 'spracovanie semi-washed'], mix: ['Kombinácia oboch štýlov', 'natural aj washed']},
+      blendPlain: {arabica: 'jemnejšia, menej horká', robusta: 'výraznejšia, viac kofeínu'},
+      roastPlain: {light: 'Svetlejšie praženie', medium: 'Stredné praženie', dark: 'Tmavšie praženie'},
       regionQ: 'Odkiaľ má káva pochádzať?', regionName: 'Pôvod', region: {africa: 'Afrika', asia: 'Ázia', americas: 'Stredná a Južná Amerika', blend: 'Zmes viacerých krajín'},
       blendQ: 'Aké zloženie uprednostníte?', blendName: 'Zloženie', blend: {arabica: '100 % arabika', robusta: 'S podielom robusty'},
       pickQ: 'Ktoré chute vám viac sedia?', pickName: 'Chuťové tóny',
@@ -76,10 +85,15 @@
       toolQ: 'Jakou pomůcku na filtr máte?', toolName: 'Pomůcka',
       tool: {v60: ['V60 nebo jiný překapávač', 'Papírový filtr, přelévání'], aeropress: ['AeroPress', 'Louhování a protlačení'], frenchpress: ['French press', 'Louhování s pístem']},
       dripQ: 'Kterou kávu v sáčcích chcete?', dripName: 'Káva',
+      cafQ: 'Chcete kávu s kofeinem, nebo bez něj?', cafName: 'Kofein', caf: {yes: ['S kofeinem', 'Běžná káva'], no: ['Bez kofeinu', 'I na večer']},
       tasteQ: 'Jaká chuť vám sedí nejvíc?', tasteName: 'Chuť',
       taste: {choco: ['Čokoládová a karamelová', 'Sladká, plná, s oříšky'], fruitFull: ['Plná a ovocná', 'Višně, bobule, tmavé ovoce'], fresh: ['Svěží a šťavnatá', 'Rybíz, citrus, čajové tóny'], decaf: ['Bez kofeinu', 'Káva i na večer']},
       budgetQ: 'Kolik chcete dát za balení?', budgetName: 'Rozpočet', budgetAny: 'Na ceně až tak nezáleží',
-      processQ: 'Jaké zpracování kávy je vám bližší?', processName: 'Zpracování',
+      processQ: 'Jaký styl chuti je vám bližší?', processName: 'Styl chuti',
+      procPlain: {washed: ['Čistší, svěží chuť', 'praná (washed)'], natural: ['Ovocnější, sladší chuť', 'sušená v plodu (natural)'],
+        honey: ['Sladká, plná chuť', 'zpracování honey'], semi: ['Vyvážená chuť', 'zpracování semi-washed'], mix: ['Kombinace obou stylů', 'natural i washed']},
+      blendPlain: {arabica: 'jemnější, méně hořká', robusta: 'výraznější, více kofeinu'},
+      roastPlain: {light: 'Světlejší pražení', medium: 'Střední pražení', dark: 'Tmavší pražení'},
       regionQ: 'Odkud má káva pocházet?', regionName: 'Původ', region: {africa: 'Afrika', asia: 'Asie', americas: 'Střední a Jižní Amerika', blend: 'Směs více zemí'},
       blendQ: 'Jaké složení upřednostníte?', blendName: 'Složení', blend: {arabica: '100 % arabika', robusta: 'S podílem robusty'},
       pickQ: 'Které chutě vám víc sedí?', pickName: 'Chuťové tóny',
@@ -163,7 +177,8 @@
     return data.products.filter((p) => p.available !== false && p.kind === 'coffee')
       .filter((p) => !a.prep || a.prep === 'drip' || suits(p, a.prep))
       .filter((p) => toolOk(p, a.tool))
-      .filter((p) => except === 'taste' || !a.taste || (a.taste === 'decaf' ? !!p.decaf : !p.decaf && tastesOf(p).includes(a.taste)))
+      .filter((p) => !a.caffeine || (a.caffeine === 'no' ? !!p.decaf : !p.decaf))
+      .filter((p) => except === 'taste' || !a.taste || (a.taste === 'decaf' ? !!p.decaf : (!!a.caffeine || !p.decaf) && tastesOf(p).includes(a.taste)))
       .filter((p) => except === 'budget' || !a.budget || a.budget === 'any' || !!packFor(data, p, a))
       .filter((p) => except === 'detailProcess' || !a.detailProcess || detailOf(p, a.detailProcess))
       .filter((p) => except === 'detailMore' || !a.detailMore || detailOf(p, a.detailMore))
@@ -174,7 +189,7 @@
   const tones = (p) => p.notes && p.notes.length ? p.notes.slice(0, 2).join(' · ') : (p.profile || '');
   /* Limity schváleného UI na 320 × 568 bez posúvania: fotky 2 × 2 (najviac 4), textové karty najviac 3. */
   const MAX_PHOTO = 4, MAX_TEXT = 3;
-  const text = (value, title, detail) => ({value, title, detail, textOnly: true});
+  const text = (value, title, detail, photo) => ({value, title, detail, photo});
 
   /* Viac než štyri rovnocenné kávy bez ďalšieho overeného rozdielu: výber po stránkach v poradí e-shopu (3 kávy +
      „Ďalšie vhodné kávy“, posledná stránka až 4). Všetky kávy sú dostupné, cena ani iné skryté poradie nerozhoduje. */
@@ -194,21 +209,28 @@
     }
     if (a.prep === 'drip') {
       const o = data.drip.options || [];
-      return o.length > 1 && !a.dripPick ? {key: 'dripPick', name: t.dripName, title: data.drip.question || t.dripQ, textOnly: true, options: o.map((x) => text(x.id, x.title, x.detail))} : null;
+      return o.length > 1 && !a.dripPick ? {key: 'dripPick', name: t.dripName, title: data.drip.question || t.dripQ, options: o.map((x, i) => text(x.id, x.title, x.detail,
+        x.photo || (/(^|\D)10\s*s/.test(x.title) ? IL('drip-10') : /(^|\D)5\s*s/.test(x.title) ? IL('drip-5') : IL(i ? 'drip-b' : 'drip-a'))))} : null;
     }
     if (a.prep === 'filter' && !a.tool) {
       const tools = Object.keys(t.tool).filter((k) => pool(data, {prep: 'filter', tool: k}).length);
-      if (tools.length > 1) return {key: 'tool', name: t.toolName, title: t.toolQ, textOnly: true, options: tools.map((k) => text(k, t.tool[k][0], t.tool[k][1]))};
+      if (tools.length > 1) return {key: 'tool', name: t.toolName, title: t.toolQ, options: tools.map((k) => text(k, t.tool[k][0], t.tool[k][1], IL('tool-' + k)))};
     }
     let p = pool(data, {prep: a.prep, tool: a.tool});
-    /* Chuť a kofeín v jednej otázke: bezkofeínová káva je samostatná karta, nie ďalší krok. */
+    /* Kofeín je samostatná otázka iba vtedy, keď sú medzi vhodnými kávami bezkofeínové aj s kofeínom. */
+    if (!a.caffeine && p.some((x) => x.decaf) && p.some((x) => !x.decaf)) {
+      const cafT = t.caf || TXT.sk.caf;
+      return {key: 'caffeine', name: t.cafName, title: t.cafQ, options: ['yes', 'no'].map((k) => ({value: k, title: cafT[k][0],
+        detail: cafT[k][1] + ' · ' + t.nCoffees(p.filter((x) => !!x.decaf === (k === 'no')).length), photo: CAF_PHOTO[k]}))};
+    }
+    p = pool(data, {prep: a.prep, tool: a.tool, caffeine: a.caffeine});
+    /* Chuť iba medzi zostávajúcimi kávami a iba ak sa naozaj líšia. */
     if (!a.taste) {
       const labels = Object.assign({}, t.taste, data.tasteLabels || {});
-      const groups = ['choco', 'fruitFull', 'fresh'].filter((k) => p.some((x) => !x.decaf && tastesOf(x).includes(k)));
-      if (p.some((x) => x.decaf)) groups.push('decaf');
+      const groups = ['choco', 'fruitFull', 'fresh'].filter((k) => p.some((x) => (!!a.caffeine || !x.decaf) && tastesOf(x).includes(k)));
       if (groups.length > 1) return {key: 'taste', name: t.tasteName, title: t.tasteQ, options: groups.map((k) => ({value: k, title: labels[k][0], detail: labels[k][1], photo: TASTE_PHOTO[k]}))};
     }
-    const base = {prep: a.prep, tool: a.tool, taste: a.taste};
+    const base = {prep: a.prep, tool: a.tool, caffeine: a.caffeine, taste: a.taste};
     p = pool(data, base);
     if (!a.budget) {
       const cheapest = p.map((x) => { const v = verifiedPacks(x, base)[0]; return v ? {x, v, sum: v.price} : null; });
@@ -221,9 +243,9 @@
         const chosen = [...new Set([low, limits[limits.length - 1]].filter((x) => x !== undefined))];
         if (chosen.length) {
           const cur = p[0].currency;
-          const options = chosen.map((x) => { const fit = cheapest.filter((c) => c.sum <= x + EPS); return text(String(x), t.upTo + money(x, cur), fit.length === 1 && fit[0].x.name.length <= 28 ? fit[0].x.name + ' ' + grams(fit[0].v.grams) : t.nInBudget(fit.length)); });
-          options.push(text('any', t.budgetAny, t.allFit(p.length)));
-          return {key: 'budget', name: t.budgetName, title: t.budgetQ, textOnly: true, options};
+          const options = chosen.map((x, i) => { const fit = cheapest.filter((c) => c.sum <= x + EPS); return text(String(x), t.upTo + money(x, cur), fit.length === 1 && fit[0].x.name.length <= 28 ? fit[0].x.name + ' ' + grams(fit[0].v.grams) : t.nInBudget(fit.length), IL('budget-' + (i + 1))); });
+          options.push(text('any', t.budgetAny, t.allFit(p.length), IL('budget-any')));
+          return {key: 'budget', name: t.budgetName, title: t.budgetQ, options};
         }
       }
     }
@@ -231,6 +253,20 @@
     /* Viac než štyri rovnocenné kávy: overený rozdiel v spracovaní, pôvode alebo zložení (najviac 3 textové možnosti).
        Najprv rozdelenie, kde má každá skupina najviac 4 kávy; ak také nie je, väčšiu skupinu rozdelí druhé upresnenie. */
     const names = (l) => l.map((x) => x.name).join(', ');
+    /* Voľba upresnenia: bežný jazyk v názve, odborný pojem a počet káv v popise, ilustrácia namiesto holého textu. */
+    const detailOption = (kind, k, l, labels, keys) => {
+      const count = l.length === 1 && l[0].name.length <= 28 ? l[0].name : t.nCoffees(l.length);
+      const cap = (v) => String(v).charAt(0).toUpperCase() + String(v).slice(1);
+      if (kind === 'process') { const pl = (t.procPlain || {})[k]; return text(kind + ':' + k, pl ? pl[0] : labels[k] || cap(k), pl ? cap(pl[1]) + ' · ' + count : count, IL('proc-' + (pl ? k : 'mix'))); }
+      if (kind === 'blend') return text(kind + ':' + k, labels[k] || cap(k), ((t.blendPlain || {})[k] ? cap(t.blendPlain[k]) + ' · ' : '') + count, IL('blend-' + (k === 'robusta' ? 'robusta' : 'arabica')));
+      if (kind === 'region') return text(kind + ':' + k, labels[k] || cap(k), count, IL('region-' + (['africa', 'asia', 'americas'].includes(k) ? k : 'blend')));
+      if (kind === 'roast') {
+        const cls = keys.map(roastClass), mine = roastClass(k), distinct = !cls.includes(null) && new Set(cls).size === cls.length;
+        return distinct ? text(kind + ':' + k, t.roastPlain[mine], cap(k) + ' · ' + count, IL('roast-' + mine))
+          : text(kind + ':' + k, cap(k), count, IL('roast-' + (keys.indexOf(k) % 3 + 1)));
+      }
+      return text(kind + ':' + k, labels[k] || cap(k), count, IL('roast-1'));
+    };
     const kinds = [['process', t.procLabels, t.processQ, t.processName], ['roast', {}, t.roastQ, t.fRoast],
       ['region', t.region, t.regionQ, t.regionName], ['blend', t.blend, t.blendQ, t.blendName]];
     const split = (list, key, used, strict) => {
@@ -241,7 +277,7 @@
           .map(([k, keys]) => [k, Math.max(...keys.map((v) => list.filter((x) => SPLITS[k[0]](x) === v).length))]).sort((m, n) => m[1] - n[1])[0];
         if (!best) return null;
         const [kind, labels, title, name] = best[0], keyOf = SPLITS[kind], keys = [...new Set(list.map(keyOf))];
-        return {key, name, title, textOnly: true, options: keys.map((k) => { const l = list.filter((x) => keyOf(x) === k); return text(kind + ':' + k, labels[k] || (String(k).charAt(0).toUpperCase() + String(k).slice(1)), l.length === 1 && l[0].name.length <= 28 ? l[0].name : t.nCoffees(l.length)); })};
+        return {key, name, title, options: keys.map((k) => detailOption(kind, k, list.filter((x) => keyOf(x) === k), labels, keys))};
       }
       for (const [kind, labels, title, name] of kinds) {
         if (used.includes(kind)) continue;
@@ -249,16 +285,18 @@
         const keys = [...new Set(list.map(keyOf))];
         const groups = keys.map((k) => [k, list.filter((x) => keyOf(x) === k)]);
         if (keys.length > 1 && keys.length <= MAX_TEXT && !keys.includes(null) && !keys.includes(undefined) && (!strict || groups.every(([, l]) => l.length <= MAX_PHOTO)))
-          return {key, name, title, textOnly: true, options: groups.map(([k, l]) => text(kind + ':' + k, labels[k] || (String(k).charAt(0).toUpperCase() + String(k).slice(1)), l.length === 1 && l[0].name.length <= 28 ? l[0].name : t.nCoffees(l.length)))};
+          return {key, name, title, options: groups.map(([k, l]) => detailOption(kind, k, l, labels, keys))};
       }
       return null;
     };
-    if (!a.detailProcess && p.length > MAX_PHOTO) {
+    /* Najviac 7 skutočných otázok: upresnenie sa pýta, iba keď po ňom ostane miesto na výber kávy; inak transparentné stránkovanie. */
+    const asked = ['prep', 'tool', 'caffeine', 'taste', 'budget', 'detailProcess'].filter((k) => a[k] !== undefined).length;
+    if (!a.detailProcess && p.length > MAX_PHOTO && asked + 2 <= 7) {
       const q = split(p, 'detailProcess', [], true) || split(p, 'detailProcess', [], false);
       if (q) return q;
     }
     p = pool(data, Object.assign({}, base, {budget: a.budget, detailProcess: a.detailProcess}));
-    if (a.detailProcess && !a.detailMore && p.length > MAX_PHOTO) {
+    if (a.detailProcess && !a.detailMore && p.length > MAX_PHOTO && asked + 2 <= 7) {
       const used = [String(a.detailProcess).split(':')[0]];
       const q = split(p, 'detailMore', used, true) || split(p, 'detailMore', used, false);
       if (q) return q;

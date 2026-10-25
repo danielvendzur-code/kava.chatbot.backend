@@ -18,7 +18,7 @@
       brand: {name: b.name, place: b.place, shopUrl: b.shopUrl, storyUrl: b.web, author: 'mojchatbot.sk'},
       products: N447.products.map((p) => ({...p, notes: p.notes && p.notes.length ? p.notes : [p.profile].filter(Boolean), price: 'od ' + ENG.money(p.priceFrom, p.currency), why: p.summary})),
       steps: [ENG.nextQuestion(N447, {})],
-      chat: N447.chat || {welcome: 'Dobrý deň. Vyberieme spolu kávu z ponuky ' + b.name + ' podľa vašej prípravy a chutí.', placeholder: 'Napíšte, akú kávu hľadáte…', chips: ['Káva do automatu', 'Káva na filter', 'Máte kávu bez kofeínu?']},
+      chat: N447.chat || {welcome: 'Dobrý deň. Vyberieme spolu kávu z ponuky ' + b.name + ' podľa vašej prípravy a chutí.', placeholder: 'Napíšte, akú kávu hľadáte…', chips: chatChips(N447)},
       fallbacks: [],
       demo: Object.assign({id: N447.slug, rootId: N447.slug + '-clean-root', pageClass: N447.slug + '-page', heroProductId: hero.id,
         logoInk: b.logo, logoBadge: b.logoMark || b.logoLight || b.logo, logoHeader: b.logoLight || b.logo, logoAvatar: b.logoMark || b.logoLight || b.logo, productOptionPhotos: true,
@@ -48,6 +48,22 @@
     fallbacks = []
   } = DATA;
   const demo = DATA.demo;
+  /* Štyri rýchle voľby chatu podľa sortimentu firmy: každá vedie na odpoveď z jej vlastných káv. */
+  function chatChips(d) {
+    const cs = d.lang === 'cs', preps = ENG.nextQuestion(d, {}).options.map((o) => o.value);
+    const coffees = d.products.filter((p) => p.available !== false && p.kind === 'coffee');
+    const has = (t) => coffees.some((p) => !p.decaf && (Array.isArray(p.tastes) && p.tastes.length ? p.tastes : [p.taste]).includes(t));
+    const all = [
+      [preps.includes('espresso'), 'Káva do automatu', 'Káva do automatu'],
+      [preps.includes('filter'), 'Káva na filter', 'Káva na filtr'],
+      [has('fruitFull') || has('fresh'), 'Máte ovocnú kávu?', 'Máte ovocnou kávu?'],
+      [coffees.some((p) => p.decaf), 'Máte kávu bez kofeínu?', 'Máte kávu bez kofeinu?'],
+      [!!d.drip, 'Máte drip vrecúška na cesty?', 'Máte drip sáčky na cesty?'],
+      [preps.includes('moka'), 'Káva do moka kanvičky', 'Káva do moka konvičky'],
+      [has('choco'), 'Čokoládová káva s nízkou kyslosťou', 'Čokoládová káva s nízkou kyselostí']
+    ];
+    return all.filter((x) => x[0]).map((x) => cs ? x[2] : x[1]).slice(0, 4);
+  }
   const czechDemo=N447.lang==='cs';
   if(czechDemo){window.CX_FORCE_LANG='cs';window.CX_LANG='cs';}
   const noteLabel=note=>window.CXCoffeeDifferenceCore?.labelNote(note,czechDemo||window.CX_LANG==='cs')??note;
@@ -454,7 +470,7 @@
     advisor.classList.remove('is-result');
     advisor.innerHTML = `
       <div class="question"><h2>${esc(step.title)}</h2></div>
-      <div class="options${step.key.startsWith('detail')||step.textOnly?' is-difference':''}" role="group" aria-label="${esc(step.title)}">
+      <div class="options${step.textOnly?' is-difference':''}" role="group" aria-label="${esc(step.title)}">
         ${step.options.map((option, index) => {
           const isSelected = selected === option.value;
           return `<button class="option${isSelected ? ' is-selected' : ''}" type="button" data-value="${esc(option.value)}" aria-pressed="${isSelected}" style="--reveal:${index * 70}ms">
@@ -635,7 +651,7 @@
         </div>
         <div class="result__body">
           <ul class="result__reasons">${r.reasons.map(([title, text]) => `<li><b>${esc(title)}</b><span>${esc(text)}</span></li>`).join('')}</ul>
-          ${p.summary ? `<div class="why"><p>${esc(p.summary)}</p></div>` : ''}
+          ${p.summary ? `<p class="n447-about">${esc(p.summary)}</p>` : ''}
           ${r.facts.length ? `<div class="facts">${r.facts.map(([k, v, kind]) => fact(kind === 'roast' ? icons.bean : kind === 'origin' ? icons.drop : icons.cup, k, v)).join('')}</div>` : ''}
           ${r.promoNote ? `<div class="bulk"><b>${esc(T('Akcia v e-shope', 'Akce v e-shopu'))}</b><span>${esc(r.promoNote)}</span></div>` : ''}
           ${r.alternative && !r.chosenAlt ? `<div class="alt"><span>${T('Ak by ste chceli inú', 'Pokud byste chtěli jinou')}</span><button class="alt__card" type="button" data-product="${esc(r.alternative.product.id)}"><img src="${esc(r.alternative.product.photo)}" alt="" loading="lazy" width="42" height="58"><div><b>${esc(r.alternative.product.name)}</b>${r.alternative.diff.length ? `<small>${esc(r.alternative.diff.join('; ').replace(/^./, (c) => c.toUpperCase()))}.</small>` : ''}<strong class="alt__price">${esc(r.alternative.price)}</strong></div>${icons.arrow}</button></div>` : ''}
@@ -645,8 +661,9 @@
         </div>
       </div>`;
     advisorFoot.hidden = false;
-    advisorFoot.innerHTML = `<button class="cta" type="button" id="addToCart">${T('Otvoriť v e-shope', 'Otevřít v e-shopu')} ${icons.shop}</button><div class="foot-row"><button class="ghost" type="button" id="restart">${T('Zmeniť odpovede', 'Změnit odpovědi')}</button></div>`;
-    $('#addToCart').addEventListener('click', () => window.open((r.pack && r.pack.url) || p.url || brand.shopUrl, '_blank', 'noopener,noreferrer'));
+    /* Hlavné CTA otvorí detail konkrétnej kávy v rovnakej karte (bez košíka a bez vysvetľovania odkazu). */
+    const detailUrl = (r.pack && r.pack.url) || p.url || brand.shopUrl;
+    advisorFoot.innerHTML = `<a class="cta n447-cta" id="addToCart" href="${esc(detailUrl)}">${drip ? T('Zobraziť tento produkt', 'Zobrazit tento produkt') : T('Zobraziť túto kávu', 'Zobrazit tuto kávu')}</a><div class="foot-row"><button class="ghost" type="button" id="restart">${T('Zmeniť odpovede', 'Změnit odpovědi')}</button></div>`;
     $('#restart').addEventListener('click', resetAdvisor);
     const altButton = $('.alt__card', advisor);
     if (altButton) altButton.addEventListener('click', () => { state.chosen = altButton.dataset.product || null; renderResult(); advisor.scrollTop = 0; });
@@ -717,10 +734,7 @@
       </div>`;
 
     advisorFoot.hidden = false;
-    advisorFoot.innerHTML = `<button class="cta" type="button" id="addToCart">Otvoriť v e-shope ${icons.shop}</button><div class="foot-row"><button class="ghost" type="button" id="restart">Zmeniť odpovede</button></div>`;
-
-    const addButton = $('#addToCart');
-    addButton.addEventListener('click', () => window.open(product.url || brand.shopUrl, '_blank', 'noopener,noreferrer'));
+    advisorFoot.innerHTML = `<a class="cta n447-cta" id="addToCart" href="${esc(product.url || brand.shopUrl)}">${T('Zobraziť túto kávu', 'Zobrazit tuto kávu')}</a><div class="foot-row"><button class="ghost" type="button" id="restart">${T('Zmeniť odpovede', 'Změnit odpovědi')}</button></div>`;
     $('#restart').addEventListener('click', resetAdvisor);
     const exact=ranked.filter(e=>!e.unmet.length);
     if(exact.filter(e=>e.product.id!==product.id).length){

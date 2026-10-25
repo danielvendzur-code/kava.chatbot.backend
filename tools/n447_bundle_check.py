@@ -146,8 +146,13 @@ try:
                     o = pg.query_selector('#advisor .option'); r['trail'].append((o.inner_text() or '').split('\n')[0][:30]); o.click(); pg.wait_for_timeout(650)
                 r['resultShown'] = not pg.evaluate("document.getElementById('advisor').classList.contains('is-questions')")
                 r['result'] = pg.inner_text('#advisor')[:400]
+                cta = pg.evaluate("(() => { const a = document.getElementById('addToCart'); return a ? {tag: a.tagName, target: a.getAttribute('target'), href: a.href, text: a.innerText.trim()} : null; })()")
+                r['cta'] = cta
+                if not cta or cta['tag'] != 'A' or cta['target'] or not re.match(r'Zobraziť túto kávu|Zobrazit tuto kávu|Zobraziť tento produkt|Zobrazit tento produkt', cta['text']) or '.'.join(host(cta['href']).split('.')[-2:]) not in own_root:
+                    fail(f'{key}: hlavné CTA {cta}')
                 pg.screenshot(path=os.path.join(OUT, f'{SLUG}-{key}-vysledok.png'))
                 pg.click('.mode__button[data-mode="chat"]'); pg.wait_for_timeout(500)
+                r['chips'] = [c.inner_text() for c in pg.query_selector_all('#chips .chip') if c.is_visible()]
                 n0 = pg.evaluate("document.querySelectorAll('#chat .bubble:not(.typing)').length")
                 pg.fill('#input', 'Jakou kávu na espresso doporučíte?' if 'Kč' in r['result'] else 'Akú kávu na espresso odporúčate?'); pg.click('#composer .send')
                 pg.wait_for_function(f"document.querySelectorAll('#chat .bubble:not(.typing)').length >= {n0 + 2}", timeout=15000)
@@ -165,6 +170,7 @@ try:
                 if ask: ask.click()
                 else: pg.click('.cx-mode button[data-mode="chat"]')
                 pg.wait_for_timeout(500)
+                r['chips'] = [c.inner_text() for c in pg.query_selector_all('.cx-chip') if c.is_visible()]
                 n0 = pg.evaluate("document.querySelectorAll('.cx-message').length")
                 pg.fill('#cx-input', 'Co doporučíte na suchou pleť?' if 'Kč' in r['result'] else 'Čo odporúčate na suchú pleť?'); pg.press('#cx-input', 'Enter')
                 pg.wait_for_function(f"document.querySelectorAll('.cx-message').length >= {n0 + 2} && !document.querySelector('.cx-typing,.is-typing')", timeout=15000)
@@ -175,7 +181,8 @@ try:
             low = body.lower()
             for nm in sorted(set(re.findall(r'"name": ?"([^"]+)"', texts.get(data_file, ''))), key=len, reverse=True): low = low.replace(nm.lower(), ' ')
             r['foreignInText'] = sorted({t for t in FOREIGN + ['don franko', 'pražírna brno', 'modrá púpava', 'barbora lori'] if t not in OWN_ALIASES and re.search(rf'(?<![a-z0-9]){re.escape(t)}(?![a-z0-9])', low)})
-            r['oldOffer'] = bool(re.search(r'247\s*€|mesiac zdarma|měsíc zdarma|30 dní zdarma', body))
+            r['oldOffer'] = bool(re.search(r'247\s*€|mesiac zdarma|měsíc zdarma|30 dní zdarma|riadkom kódu|řádkem kódu|overenie vašich|ověření vašich', body))
+            if len(r.get('chips', [])) != 4: fail(f'{key}: rýchle voľby chatu {r.get("chips")}')
             r['has447'] = '447' in body
             ext = sorted(hh for hh in r['hosts'] if hh and hh != '127.0.0.1')
             r['externalHosts'] = ext
