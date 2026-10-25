@@ -1,0 +1,510 @@
+{
+ "slug": "renovality",
+ "family": "cosmetics",
+ "builtFrom": "e5e32d3",
+ "entry": "renovality.html",
+ "files": [
+  {
+   "path": "advisor-core.js",
+   "bytes": 15173,
+   "sha256": "0732fe5e00ed69239fb2d00560ee8990b0c6de1429f2574be1e5ed158f7fa4f8"
+  },
+  {
+   "path": "advisor-quality.css",
+   "bytes": 45092,
+   "sha256": "25c9e18616e5b329b6e8668350cc1a565176d47a2700d279bd71b00c2a430a5e"
+  },
+  {
+   "path": "advisor-visuals.css",
+   "bytes": 3251,
+   "sha256": "e614db8eef785d3ecb9966dff5375691c2fdd7b1a871d34b8ff72d8e340d3eb2"
+  },
+  {
+   "path": "all-demo-white.css",
+   "bytes": 6867,
+   "sha256": "3f735730175c338356d509d175e6d5ffb4ca8e902f1da04a936bced2c023f09a"
+  },
+  {
+   "path": "api/ai-chat.js",
+   "bytes": 9365,
+   "sha256": "881bc961158a1ad528f8fe88d892ad9cc0348eb69cc2f7da56e71f2d77323dbc"
+  },
+  {
+   "path": "api/cosmetics-chat-447.js",
+   "bytes": 3415,
+   "sha256": "3faba10451c4f9fc89f78db47c31a7711492d33721e2e428988baa038ffd89e2",
+   "generated": "zúžené pre firmu"
+  },
+  {
+   "path": "assets/cosmetics/choice-balanced.webp",
+   "bytes": 35090,
+   "sha256": "42ecb2adc83f57cccac3acd8de4a341d9df98fc6e4cf39ef385b5e55e80c049a"
+  },
+  {
+   "path": "assets/cosmetics/choice-calm.webp",
+   "bytes": 63486,
+   "sha256": "00190a5f2c5491a9fffc25294bdf207627cd0915a140dbf31ec63207b5c25ce8"
+  },
+  {
+   "path": "assets/cosmetics/choice-dry.webp",
+   "bytes": 168034,
+   "sha256": "fe53782e2dfb0118e9a5cbaa0b17bcef44bcfc565246b1f76efc23236413e25d"
+  },
+  {
+   "path": "assets/cosmetics/choice-hydrate.webp",
+   "bytes": 28580,
+   "sha256": "7e2908c71124bd2918c95cea74c4d70e9e524455532da1898791ed2603b022a1"
+  },
+  {
+   "path": "assets/cosmetics/choice-mature.webp",
+   "bytes": 51170,
+   "sha256": "921c91daf12584e1380528ffdbcc5d00a34b10febfc493d4f3817ae8c9fa607e"
+  },
+  {
+   "path": "assets/fonts/dmsans-002a94d0.woff2",
+   "bytes": 36932,
+   "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543"
+  },
+  {
+   "path": "assets/fonts/dmsans-850928f5.woff2",
+   "bytes": 18228,
+   "sha256": "a5d38fe99f930275684999b462c7123faa063d9e44e73b4b241723d884aa0f49"
+  },
+  {
+   "path": "assets/fonts/fonts.css",
+   "bytes": 8298,
+   "sha256": "a54f2593d04e6d3405869026a33a850b72bf73427998e3d1477d12d3cbfc856d"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-0bc96cd0.woff2",
+   "bytes": 14888,
+   "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-116b2e58.woff2",
+   "bytes": 9352,
+   "sha256": "2b05a8695c7f9f4abd7178b279646a3b005a8ce57546bef6fd145f25d131e0aa"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-1b581b15.woff2",
+   "bytes": 15620,
+   "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-758b9f95.woff2",
+   "bytes": 8460,
+   "sha256": "1d89462e86cb8e87e7e9d6f6635605bd7c3081baca6caaecee84916bf7b60edc"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-93cfae71.woff2",
+   "bytes": 13432,
+   "sha256": "6bb06407c97584b0867a959e05e8874693bfeb8c317de190811c51598f2d99ea"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-9e4ef71e.woff2",
+   "bytes": 7692,
+   "sha256": "83109cdd4f8665b475dfc11d61bd44da328bf7e6eab3d3953d39c49b1b9f6015"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-a7353317.woff2",
+   "bytes": 14328,
+   "sha256": "32057cf50dd14bdb21a2c93766c4a2c43e4abe688ea3922df3203cac7751a98b"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-baf63ee9.woff2",
+   "bytes": 6040,
+   "sha256": "781633d95de88040fb77141d1e65d928c87c0144691fbc74da5a64d137a7e910"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-da78b4b3.woff2",
+   "bytes": 6972,
+   "sha256": "3febe5c7f22e4b07b4552738673c3dbe8bced2dc5f48b866edf7ccd9552d109a"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-e8c66a4c.woff2",
+   "bytes": 6932,
+   "sha256": "51b74d53e106ba8a26dd33464b231a562069be2a234b923c115beb622e6f6bc6"
+  },
+  {
+   "path": "assets/jolka/fonts/playfair-latin-ext.woff2",
+   "bytes": 21140,
+   "sha256": "42898ad49a6b23f32b109243e1df596edf831015ed685f429e4dafbb181d599d"
+  },
+  {
+   "path": "assets/jolka/fonts/playfair-latin.woff2",
+   "bytes": 38404,
+   "sha256": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2"
+  },
+  {
+   "path": "assets/n447-kozmetika/renovality/logo.png",
+   "bytes": 12669,
+   "sha256": "919e54245fe282fbafa926727846abcf76bf16ff73d329838f4d4f3a3ed3402d"
+  },
+  {
+   "path": "assets/quality-product-placeholder.svg",
+   "bytes": 270,
+   "sha256": "692d449f48b2c6e7d7588a47fe8a3895b826b702d67c96aa8885ff292b98d2e9"
+  },
+  {
+   "path": "assets/scenes/beard-care.jpg",
+   "bytes": 227199,
+   "sha256": "b9cb59442b5c2a3dee192d8aef3f1f7e63adc70539fd49050b3a4d6be8bf8598"
+  },
+  {
+   "path": "assets/scenes/cream-texture.jpg",
+   "bytes": 72920,
+   "sha256": "23d816ba71380443029b7175ae3fd88c048b6e2104d52337b20f027f41c6183f"
+  },
+  {
+   "path": "assets/scenes/daily-care.jpg",
+   "bytes": 31539,
+   "sha256": "295eef6c541b45d767406ee2403fb7b0f6082084653c7413557700053a328301"
+  },
+  {
+   "path": "assets/scenes/face-clean-pad.jpg",
+   "bytes": 86036,
+   "sha256": "7826d2667b903dd7984c6445059b627c19001f20ab51ffd8ce2f05ef6f14cbfc"
+  },
+  {
+   "path": "assets/scenes/gift-care.jpg",
+   "bytes": 117275,
+   "sha256": "b4a7122eec4404c904896e7bdb8d20f5368f613d48d09899b68d1dd9041761ca"
+  },
+  {
+   "path": "assets/scenes/hair-brush.jpg",
+   "bytes": 215661,
+   "sha256": "c63fccfe50fbb7ca6664d6b28409515bf9b7f4e92fcfb611b49bcf88e9e6a266"
+  },
+  {
+   "path": "assets/scenes/hair-natural.jpg",
+   "bytes": 285313,
+   "sha256": "c3520398030adaf7b14d94ee5645f323607ce730b6a6053f4b7264066eb3d189"
+  },
+  {
+   "path": "assets/scenes/hair-shampoo.jpg",
+   "bytes": 141763,
+   "sha256": "b22f6bd93bd9da6556d4ecfc0b15d709cca98c2887f7b4b9c08d9cf181dd18cc"
+  },
+  {
+   "path": "assets/scenes/hair-wash.jpg",
+   "bytes": 258984,
+   "sha256": "059130da3e0bb778911dfa5d5a86fd180c8d8bd6859eed7990cfbc662b0f5d1e"
+  },
+  {
+   "path": "assets/scenes/hands-cream.jpg",
+   "bytes": 73222,
+   "sha256": "25de5ca5d9e8f644134c0a9b78988d09ecce292845da2cac1a0ebd9c78f32511"
+  },
+  {
+   "path": "assets/scenes/lip-care.jpg",
+   "bytes": 34185,
+   "sha256": "d68bd20a7dce9c6a759600a865039be2394af32b51908249586d76251f993480"
+  },
+  {
+   "path": "assets/scenes/makeup-brush.jpg",
+   "bytes": 177316,
+   "sha256": "0678e5d8247feda1c681745c29e2a84d1883a89a40cb926a5968c5f9a9602995"
+  },
+  {
+   "path": "assets/scenes/oil-palm.jpg",
+   "bytes": 131919,
+   "sha256": "124d0b47aff3730cde822f28e96e2623cfcf28d9a46d846cefe5f2184cf76b09"
+  },
+  {
+   "path": "assets/scenes/serum-drop.jpg",
+   "bytes": 57456,
+   "sha256": "c8accbb1da87d0a0a9e7832891db37361eab4cb04b27694b5dd9a690bcb30506"
+  },
+  {
+   "path": "care-result-guide.js",
+   "bytes": 6622,
+   "sha256": "cce9f55e535445a3428bca97d1c508c75b83a66d6ada0ef679b2b5dd863bcaea",
+   "generated": "zúžené pre firmu"
+  },
+  {
+   "path": "catalogue-advisor.css",
+   "bytes": 6560,
+   "sha256": "d85f3b8b9aab63dc38cb12a12d2fcd5ba43d8f586bfc833a1d8399cc7fc4bd13"
+  },
+  {
+   "path": "catalogue-advisor.js",
+   "bytes": 32366,
+   "sha256": "05505c67c0605fc278fb10e78d1c3b0557066001b152f7deb6f4a50f9d9b5f23"
+  },
+  {
+   "path": "catalogue-config.js",
+   "bytes": 1042,
+   "sha256": "7556de3b2892e59e7f5a050b0e8c92e852869fdfbca12e85a743ea238169400f"
+  },
+  {
+   "path": "catalogue-reply-core.js",
+   "bytes": 5975,
+   "sha256": "64efb65f1b9b2e1a2dfa626e28010676a8799f33444f4f3fc1340745562f2d85"
+  },
+  {
+   "path": "chat-adapters.js",
+   "bytes": 139984,
+   "sha256": "d16ca79626695edd47b6ff596d126ea347f1877ea3ff5e09b3f3c1e178e8cbbb"
+  },
+  {
+   "path": "chat-brain.js",
+   "bytes": 73372,
+   "sha256": "40a653cfdb46dc744c59c18e5d230d2bbd03624993f4dfd8f3d642dca1f2a70f"
+  },
+  {
+   "path": "cosmetics-brand-facts.js",
+   "bytes": 1539,
+   "sha256": "01134a882dd24a21ea49eb33b2957d511f4d86b516bfdc915ad708ccf28b806c",
+   "generated": "zúžené pre firmu"
+  },
+  {
+   "path": "cosmetics-config.js",
+   "bytes": 3517,
+   "sha256": "e30031a31cb089a6f645768db1a84e23403d4b78b42129809f8f97d92314c316",
+   "generated": "zúžené pre firmu"
+  },
+  {
+   "path": "cosmetics-polish.css",
+   "bytes": 9225,
+   "sha256": "c87148674bcec1b7b691eca2f77049dc427425dbad5606e74b62311ba27bf8ad"
+  },
+  {
+   "path": "cosmetics.css",
+   "bytes": 25072,
+   "sha256": "177fa48fbbe1684e9874b0db191cdf860a4ff152a3ee33ab0af9f9f084267c6e"
+  },
+  {
+   "path": "demo-motion.css",
+   "bytes": 1650,
+   "sha256": "f73e175d408e00e7ba701b4aeb32cbb8aa4c6bc2917f61d1a33e18125dcf2eee"
+  },
+  {
+   "path": "kvitok-brand-mark-preload.js",
+   "bytes": 676,
+   "sha256": "03607111edc167da32229369e045c0a551ec752d3885a415031d3dc25ffeaaba"
+  },
+  {
+   "path": "kvitok-direct-logo.css",
+   "bytes": 3218,
+   "sha256": "0274c1a18c0e409a51eb708260ca20343f77bc9ff5dec4cd9bc1e31de16ff6e4"
+  },
+  {
+   "path": "kvitok-logo-final-fix.js",
+   "bytes": 3546,
+   "sha256": "be84ccc9e06ca6e273373ceaba120902525ca8f997a4e3864e4a64bd7ca9199d"
+  },
+  {
+   "path": "launcher-finish.js",
+   "bytes": 11579,
+   "sha256": "1634b8b47bb96447c7c6f3139835271378a8eecffd2021a6f8fdfafb0a7fe2f4"
+  },
+  {
+   "path": "n447/kozmetika/advisor-boot-n447.js",
+   "bytes": 1794,
+   "sha256": "7e4ff721a32df17c6b5283deaa1eae8a5a1030b67bd91301b08bff88b6fff81a"
+  },
+  {
+   "path": "n447/kozmetika/brands/renovality.js",
+   "bytes": 70179,
+   "sha256": "5ff1a5e8d2afe4050a7eb9dc80c46577cd01d80b1023a7a0da847dcc239b4182"
+  },
+  {
+   "path": "n447/kozmetika/catalogues/renovality.js",
+   "bytes": 98360,
+   "sha256": "05dd46f84683570c3201fecb3c9b12c6db1a718a228d3162ce39e15818fc43fc"
+  },
+  {
+   "path": "n447/kozmetika/cosmetics-n447.js",
+   "bytes": 30947,
+   "sha256": "b85efd5331aba6ab5e1f7ad55d5df47eb1f4ff3109243011d20df7392ef5d9dc"
+  },
+  {
+   "path": "n447/owner-more-info-n447.js",
+   "bytes": 6238,
+   "sha256": "d4f22b255b6e1c588d818524678ea3fc623a3d1edd8f6d9334699607f9672ba4"
+  },
+  {
+   "path": "nove-znacky.css",
+   "bytes": 4731,
+   "sha256": "ea75b0913bbf14b6fbe2fc930c8944ab48c62e5c3c93e00534bb6bbfddce2752"
+  },
+  {
+   "path": "nove-znacky.js",
+   "bytes": 2493,
+   "sha256": "961c2140f0463220150432c47f054ef07065e049c3b62f428570b7782eefe3e3"
+  },
+  {
+   "path": "package.json",
+   "bytes": 73,
+   "sha256": "0ec265814e6f0119cee12599a66e8dcf466810ad2faed77ebf34d5033ac5cad7",
+   "generated": "zúžené pre firmu"
+  },
+  {
+   "path": "renovality.html",
+   "bytes": 2392,
+   "sha256": "1ec14fb23f58b7ce28a74fc117d9f2f5bbf4dfe2ad7756874ff6211c60650b23"
+  },
+  {
+   "path": "skincare-avatar-round-fix.css",
+   "bytes": 2041,
+   "sha256": "c737190af29b4d500c434e1b6a002fac0e217ab7452a6a17237dd47584b19e26"
+  },
+  {
+   "path": "skincare-final-brand-marks.js",
+   "bytes": 4811,
+   "sha256": "dcf93c547b00a14ca2deabf8f160e62e0691204393303cf4ec38a30745bd850e"
+  },
+  {
+   "path": "skincare-final-brand-overrides.css",
+   "bytes": 9744,
+   "sha256": "e8ea3c48c91a48ff282dda25be1fdccdb6da084f226ac0a144d6769728bcf146"
+  },
+  {
+   "path": "skincare-final-fix.css",
+   "bytes": 8642,
+   "sha256": "21fc8a1ee1e65217a7996289f6ac45f6b4a01d0d6a6d1c6f9c5016dafb412381"
+  },
+  {
+   "path": "skincare-final-fix.js",
+   "bytes": 10799,
+   "sha256": "777f6001ab6f54d4fec82529757ac17a2917edd7c01cec42541548d6c9330464"
+  },
+  {
+   "path": "skincare-final-logo-qa.css",
+   "bytes": 7277,
+   "sha256": "da1c19b08394a5f01d8bceafac7322e1de28ad182af7a3c3c4e5f0c153fc294a"
+  },
+  {
+   "path": "skincare-final-logo-qa.js",
+   "bytes": 20399,
+   "sha256": "b78eb84a42b6a29a575c66b9596d4e5849ab4a65bb5a9c79b1aec46a5686a983"
+  },
+  {
+   "path": "skincare-lang-cs.js",
+   "bytes": 46848,
+   "sha256": "f12e37339a8bf7155b8c65a2368deca52042a835c1570c1c0924e289bf450c1e"
+  },
+  {
+   "path": "skincare-launcher-logo-fix.js",
+   "bytes": 2768,
+   "sha256": "0c2ed2523980cc0a6a967493eb78ab62d1ef6bdbf8d51a19643d4e6628353f38"
+  },
+  {
+   "path": "skincare-refresh.css",
+   "bytes": 72933,
+   "sha256": "2f954f364788f5c22de060732ce5149437c9399c5a83727bb742c64c4427343b"
+  },
+  {
+   "path": "skincare-review-fixes-20260914.css",
+   "bytes": 4446,
+   "sha256": "7cd03aa60031cecd7888b13ff0a91890fcb66d35aea37c4657ffe9ea69a75dfa"
+  },
+  {
+   "path": "skincare-review-fixes-20260914.js",
+   "bytes": 1174,
+   "sha256": "01ab1dfebe2356dd01254d68543a3da6e7fa5e36b3e05b2998f681527eaf2fed"
+  },
+  {
+   "path": "skincare-routine-enhancer.js",
+   "bytes": 8577,
+   "sha256": "884e3094f8cdf00381c21ae1cb51c986cf0fb89c43057937b395d1cfabeca334"
+  },
+  {
+   "path": "skincare-routine-polish.css",
+   "bytes": 5308,
+   "sha256": "9225d10d053f261ba0732847cd3e10901a778bc1f3d9c4c88e8d8fc56ce7f493"
+  },
+  {
+   "path": "skincare-targeted-hotfix.css",
+   "bytes": 3940,
+   "sha256": "734608104844b64b14bb502b537949b6191463592d73ccf68118203774f1b1e4"
+  },
+  {
+   "path": "vercel.json",
+   "bytes": 940,
+   "sha256": "911b090c20bb5b9eab31a9c2cb2ab8b8ac6e4c58c9cba22aefa10ab9526e5858",
+   "generated": "zúžené pre firmu"
+  },
+  {
+   "path": "index.html",
+   "bytes": 2392,
+   "sha256": "1ec14fb23f58b7ce28a74fc117d9f2f5bbf4dfe2ad7756874ff6211c60650b23",
+   "copyOf": "renovality.html"
+  }
+ ],
+ "externalOwnShop": [
+  "cdn.myshoptet.com",
+  "mojchatbot.sk"
+ ],
+ "note": "Balík obsahuje iba stránku firmy, jej dáta, API pre túto firmu a ich závislosti. Zdieľané viacznačkové dáta sú zúžené. Bez .env, poverení, registra a e-mailových konceptov.",
+ "externalCount": 55,
+ "missing": [],
+ "excludedForeignAssets": [
+  "assets/catalogue/logos/modrapupava-symbol.png",
+  "assets/cosmetics/barboralori-logo.png",
+  "assets/cosmetics/cyprianus-logo.svg",
+  "assets/cosmetics/kvitok-logo.png",
+  "assets/cosmetics/modrapupava-logo.png"
+ ],
+ "foreignTokens": [
+  "9gramscoffee",
+  "ajvencoffee",
+  "almara",
+  "anemone",
+  "barboralori",
+  "becafe",
+  "bellcoria",
+  "bellmedi",
+  "biofy",
+  "candycane",
+  "casadelcaffe",
+  "coffeein",
+  "coffeesheep",
+  "coffeeveronia",
+  "concept",
+  "cyprianus",
+  "diamonds",
+  "donfranko",
+  "doubleshot",
+  "dulcia",
+  "ebenica",
+  "facederma",
+  "fathers",
+  "fytopharma",
+  "goriffee",
+  "grain",
+  "grandroastery",
+  "kaffa",
+  "kavavra",
+  "kavoholik",
+  "kvitok",
+  "lavelin",
+  "liqoil",
+  "manufaktura",
+  "modrapupava",
+  "monlevur",
+  "mujluj",
+  "mydlitto",
+  "mylo",
+  "natureal",
+  "nobilistilia",
+  "noili",
+  "nordbeans",
+  "panakeia",
+  "pimpinella",
+  "ponio",
+  "praziarnicka",
+  "puaree",
+  "readyafter",
+  "rebelbean",
+  "saloos",
+  "simplecoffee",
+  "soaphoria",
+  "syncare",
+  "verticcio",
+  "vitazov",
+  "yemna",
+  "zlatezrnko"
+ ],
+ "totalBytes": 3336157
+}

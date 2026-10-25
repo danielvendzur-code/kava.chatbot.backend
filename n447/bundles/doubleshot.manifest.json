@@ -1,0 +1,450 @@
+{
+ "slug": "doubleshot",
+ "family": "coffee",
+ "builtFrom": "e5e32d3",
+ "entry": "doubleshot.html",
+ "files": [
+  {
+   "path": "api/ai-chat.js",
+   "bytes": 9365,
+   "sha256": "881bc961158a1ad528f8fe88d892ad9cc0348eb69cc2f7da56e71f2d77323dbc"
+  },
+  {
+   "path": "api/chat-447.js",
+   "bytes": 4440,
+   "sha256": "818477121749e68a89ef1cedbdc83361126140e4a9ebebd42816238c17755b5d",
+   "generated": "zúžené pre firmu"
+  },
+  {
+   "path": "assets/doubleshot/decaf-espresso.jpg",
+   "bytes": 51735,
+   "sha256": "117d4952b975e280b8e6b52a18ce4a89f86ad5ee69fc4bb4a38addb940180b5d"
+  },
+  {
+   "path": "assets/doubleshot/decaf-filtr.jpg",
+   "bytes": 50651,
+   "sha256": "ac5c89a8526e805ec8feb4f3e26cebc013ba2f5551aa73afe3f9c3495faa01a7"
+  },
+  {
+   "path": "assets/doubleshot/era-espresso.jpg",
+   "bytes": 59593,
+   "sha256": "1db6c94e0334a762372a9332a4876ac2b55f7aaa5b2a0a05df7215e24d20e6b6"
+  },
+  {
+   "path": "assets/doubleshot/extra-espresso.jpg",
+   "bytes": 55054,
+   "sha256": "571f0e0609b49f2bb7936cdbcabd18b0b9de16a4266d5fb6cae24c94ca1174dc"
+  },
+  {
+   "path": "assets/doubleshot/flirt-sackova-kava.jpg",
+   "bytes": 47191,
+   "sha256": "de791277e166c29bb7e805cd3bab7c4cbeea7373a89ef65007df914cff6cd405"
+  },
+  {
+   "path": "assets/doubleshot/flirt.jpg",
+   "bytes": 38601,
+   "sha256": "d05b6899add99604155add4a9f47f71e7b3b6066dc84fc235fbf7c1cd4b73abc"
+  },
+  {
+   "path": "assets/doubleshot/kena-gachami.jpg",
+   "bytes": 62952,
+   "sha256": "bb9453f16db8a6753fae56cac97c42bedff40cd7686f2ef4f834234fbf85e1b2"
+  },
+  {
+   "path": "assets/doubleshot/kolumbie-imbachi.jpg",
+   "bytes": 67409,
+   "sha256": "cb6545d51fd9c9d7f8aa4a1849c229131f0d8c99652a63967d0eefa22d3a43a7"
+  },
+  {
+   "path": "assets/doubleshot/kostarika-don-oscar-bourbon-sidra-honey.jpg",
+   "bytes": 68353,
+   "sha256": "56c1f4c7b3e9a8b50f7e40ea6781c6092ca63ff829b3fb9aecfee9a5c23c6974"
+  },
+  {
+   "path": "assets/doubleshot/logo-light.png",
+   "bytes": 11754,
+   "sha256": "a84990f4379eb82fdb218ee8fc64079c1d32bd371a3b386f73e16a64f83f6414"
+  },
+  {
+   "path": "assets/doubleshot/logo.png",
+   "bytes": 15579,
+   "sha256": "9c41f896cf68b3b6f63bbca3caea9aaf89b23231767fc4e3f583fc7d04f99458"
+  },
+  {
+   "path": "assets/doubleshot/nikaragua-finca-massif.jpg",
+   "bytes": 63263,
+   "sha256": "c3c63d1d019515b5b3dd4116bc9456d2d85d247cd280fcbca74c9f31bee434ed"
+  },
+  {
+   "path": "assets/doubleshot/panama-finca-momoto-geisha-natural.jpg",
+   "bytes": 32716,
+   "sha256": "b2add23e0e2fae744e82b0c7efee58dfcde927e0c9931571905bac84ea7e25cc"
+  },
+  {
+   "path": "assets/doubleshot/start-espresso.jpg",
+   "bytes": 56323,
+   "sha256": "7f7499f402c0ee4e8878d7c5fbbbf681fba28a06b6d70e1fb3ffbdd2928b306b"
+  },
+  {
+   "path": "assets/fonts/dmsans-002a94d0.woff2",
+   "bytes": 36932,
+   "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543"
+  },
+  {
+   "path": "assets/fonts/dmsans-850928f5.woff2",
+   "bytes": 18228,
+   "sha256": "a5d38fe99f930275684999b462c7123faa063d9e44e73b4b241723d884aa0f49"
+  },
+  {
+   "path": "assets/fonts/fonts.css",
+   "bytes": 8298,
+   "sha256": "a54f2593d04e6d3405869026a33a850b72bf73427998e3d1477d12d3cbfc856d"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-0bc96cd0.woff2",
+   "bytes": 14888,
+   "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-116b2e58.woff2",
+   "bytes": 9352,
+   "sha256": "2b05a8695c7f9f4abd7178b279646a3b005a8ce57546bef6fd145f25d131e0aa"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-1b581b15.woff2",
+   "bytes": 15620,
+   "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-758b9f95.woff2",
+   "bytes": 8460,
+   "sha256": "1d89462e86cb8e87e7e9d6f6635605bd7c3081baca6caaecee84916bf7b60edc"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-93cfae71.woff2",
+   "bytes": 13432,
+   "sha256": "6bb06407c97584b0867a959e05e8874693bfeb8c317de190811c51598f2d99ea"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-9e4ef71e.woff2",
+   "bytes": 7692,
+   "sha256": "83109cdd4f8665b475dfc11d61bd44da328bf7e6eab3d3953d39c49b1b9f6015"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-a7353317.woff2",
+   "bytes": 14328,
+   "sha256": "32057cf50dd14bdb21a2c93766c4a2c43e4abe688ea3922df3203cac7751a98b"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-baf63ee9.woff2",
+   "bytes": 6040,
+   "sha256": "781633d95de88040fb77141d1e65d928c87c0144691fbc74da5a64d137a7e910"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-da78b4b3.woff2",
+   "bytes": 6972,
+   "sha256": "3febe5c7f22e4b07b4552738673c3dbe8bced2dc5f48b866edf7ccd9552d109a"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-e8c66a4c.woff2",
+   "bytes": 6932,
+   "sha256": "51b74d53e106ba8a26dd33464b231a562069be2a234b923c115beb622e6f6bc6"
+  },
+  {
+   "path": "assets/jolka/fonts/inter-latin-ext.woff2",
+   "bytes": 85068,
+   "sha256": "34b9c504cab7a73e37b746343a449132e56cf7b5481af2cb81dc74dcff25c956"
+  },
+  {
+   "path": "assets/jolka/fonts/inter-latin.woff2",
+   "bytes": 48256,
+   "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+  },
+  {
+   "path": "assets/jolka/fonts/playfair-latin-ext.woff2",
+   "bytes": 21140,
+   "sha256": "42898ad49a6b23f32b109243e1df596edf831015ed685f429e4dafbb181d599d"
+  },
+  {
+   "path": "assets/jolka/fonts/playfair-latin.woff2",
+   "bytes": 38404,
+   "sha256": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2"
+  },
+  {
+   "path": "assets/scenes/coffee-acidity-bright.jpg",
+   "bytes": 97968,
+   "sha256": "2818b65da36f50ac8fe13f9e306f2b883e6cc21f3bc9c92dcb4617c1e88244b7"
+  },
+  {
+   "path": "assets/scenes/coffee-acidity-mild.jpg",
+   "bytes": 98184,
+   "sha256": "676769964db010ffb19dd31e42f6d0f1c55b27092be5e6c53a21a6ca6b87d026"
+  },
+  {
+   "path": "assets/scenes/coffee-automatic-brew.jpg",
+   "bytes": 111245,
+   "sha256": "e0740c701fbcbfc4b4718ae2597ccf7fcbff5bd08d881c7144b252940b5e5f5a"
+  },
+  {
+   "path": "assets/scenes/coffee-beans.jpg",
+   "bytes": 94453,
+   "sha256": "004314bf01a5c96faba4101cf07bdaeac33b0600dd100b3c48edec5821d16483"
+  },
+  {
+   "path": "assets/scenes/coffee-berries.jpg",
+   "bytes": 185367,
+   "sha256": "b3d79ce987b7e8c283dd475ffea9d8ff28d244a639b88cddbbd518643025208b"
+  },
+  {
+   "path": "assets/scenes/coffee-black.jpg",
+   "bytes": 109496,
+   "sha256": "fba946ecd63d2bb293f752f3dcdf48cd3404a8ca7504ec2bfe322cb57adc4922"
+  },
+  {
+   "path": "assets/scenes/coffee-both.jpg",
+   "bytes": 63281,
+   "sha256": "93d3bb17d7962d859fa1e076869521fe8103d0a2256227970c50ec7f3e3f3d0b"
+  },
+  {
+   "path": "assets/scenes/coffee-caramel.jpg",
+   "bytes": 71612,
+   "sha256": "cdf3db42ea78b937bfc6800133e2b02c1764e3895bdd27348e7db6583b6ce2f1"
+  },
+  {
+   "path": "assets/scenes/coffee-chocolate.jpg",
+   "bytes": 219200,
+   "sha256": "ad74a116af88fc5be6b08d73748061588fde44926272b9f24605709488efc910"
+  },
+  {
+   "path": "assets/scenes/coffee-decaf-cup.jpg",
+   "bytes": 61130,
+   "sha256": "40cd67b2b0312c8bb26443118d90792b39368f0c11afd813e4fc454258ae5688"
+  },
+  {
+   "path": "assets/scenes/coffee-espresso.jpg",
+   "bytes": 182761,
+   "sha256": "94962146411f64cc6d73cbd09fb64a2bed5b6153a2a73baee1e84164e0a278f7"
+  },
+  {
+   "path": "assets/scenes/coffee-explore.jpg",
+   "bytes": 24368,
+   "sha256": "d361a32ac8b70b238fa27d8a6147f0b61ffcb3d2af1e78b330b8bcc8ee6b9c4f"
+  },
+  {
+   "path": "assets/scenes/coffee-filter.jpg",
+   "bytes": 64272,
+   "sha256": "e8e07f29ef697f86827f6bbfb673a1b57b53ea5db4ecb611d226a682728d67ff"
+  },
+  {
+   "path": "assets/scenes/coffee-milk.jpg",
+   "bytes": 92166,
+   "sha256": "c296115f4f7f8d87fa20a0d159d1b64146d7e2bee9693177f75067ae44f226f5"
+  },
+  {
+   "path": "assets/scenes/coffee-moka.jpg",
+   "bytes": 131413,
+   "sha256": "e98104bed5e2420f88d1c55eecf493fa7cc4802ba74fcef0482fd0fcda49c799"
+  },
+  {
+   "path": "assets/scenes/coffee-nuts.jpg",
+   "bytes": 158529,
+   "sha256": "1295efa1e9f490c80930066b980c735fb98a346447538283cde0765ec4666687"
+  },
+  {
+   "path": "coffee-header-cleanup.css",
+   "bytes": 7079,
+   "sha256": "133b15bd6e8f391c537e9221e60a85712975bedb9af27a89f4b3d2b2ee412bba"
+  },
+  {
+   "path": "coffee-jolka-shell.css",
+   "bytes": 10420,
+   "sha256": "63283e6276c14d8ff08395f53ff1f70fa733ce7a021e2ccbe4804a1751fc7089"
+  },
+  {
+   "path": "coffee-local-api.js",
+   "bytes": 307,
+   "sha256": "514ff4c87c14fcf3d437ca7e33b6fdaf06e9166e7ccd9271a8f1d25b1f8888e1"
+  },
+  {
+   "path": "coffee-offer.js",
+   "bytes": 2147,
+   "sha256": "97c79fdfea66a30d78bd3605672b28f148731f300183698e444727b94088d25e"
+  },
+  {
+   "path": "coffee-owner-brand.css",
+   "bytes": 13446,
+   "sha256": "8f6f53f589e510f0cfbd9f2afc8ec70b7b81217fc9a21fb4db13575b7657150d"
+  },
+  {
+   "path": "coffee-owner-sales-polish.css",
+   "bytes": 87,
+   "sha256": "aa7be8797a4e0b5bed8f034bc821f591cbb93a1ac9f287793ffc4f51dce17594"
+  },
+  {
+   "path": "coffee-quality-current.css",
+   "bytes": 20778,
+   "sha256": "b7578d0a66434f46d580a3d21cffb2a87e84a0c30400c35ef3174c8f9810fba7"
+  },
+  {
+   "path": "coffee-quality.js",
+   "bytes": 9987,
+   "sha256": "b119dea662a9fb565b3e25d6b0704831b10e6fb4812b59c1f6802adbdbcef657"
+  },
+  {
+   "path": "coffee-refresh.css",
+   "bytes": 32503,
+   "sha256": "a890d5d59d33325dab77cf114f718a1d4faff792e3fdc38a0ecf05b971c3aad2"
+  },
+  {
+   "path": "coffee-widget-polish.css",
+   "bytes": 13308,
+   "sha256": "12086367475ea976970d9ada53a4368f49a872a23d809241a6e95c0938cf8741"
+  },
+  {
+   "path": "coffee-widget-polish.js",
+   "bytes": 11764,
+   "sha256": "960a2723c5bd136ef015517a69bb66429bd4ee3ecc9284b5ad3f1ee753e3d447"
+  },
+  {
+   "path": "demo-motion.css",
+   "bytes": 1650,
+   "sha256": "f73e175d408e00e7ba701b4aeb32cbb8aa4c6bc2917f61d1a33e18125dcf2eee"
+  },
+  {
+   "path": "doubleshot.html",
+   "bytes": 2138,
+   "sha256": "c8eb331b53c5b7436ddac558a60a26554c3b615508b3bdd0e8ab9a10cafd1a1c"
+  },
+  {
+   "path": "jolka/jolka.css",
+   "bytes": 37880,
+   "sha256": "a335304d1f437880087d2f712c63c30a11e8749958dada227778c7fb12a2e253"
+  },
+  {
+   "path": "lang-cs.js",
+   "bytes": 47946,
+   "sha256": "9efb2cb687e433e67966224e57fb80ac472cf792113f281e680e738bbb9434f9"
+  },
+  {
+   "path": "n447/coffee-jolka-app-n447.js",
+   "bytes": 65542,
+   "sha256": "182977727a905e05f688ecbe873ef277bc912ba8c72bd56463467357ea642444"
+  },
+  {
+   "path": "n447/coffee-owner-brand-n447.js",
+   "bytes": 16975,
+   "sha256": "778c4164dda27bdeffa89df778e30ff5392aa85d3663cc4aca850c9ea3a552b8"
+  },
+  {
+   "path": "n447/data/doubleshot.js",
+   "bytes": 19757,
+   "sha256": "bcf605b2652adf42198ab1cec4b18a9dd97973ce0f2a360a4bcd41cca8f507f1"
+  },
+  {
+   "path": "n447/doubleshot-jolka-theme.css",
+   "bytes": 776,
+   "sha256": "ecf3ec0b890d2412c260499b5716f3ae0c65ff7697031a6babf57353150dd238"
+  },
+  {
+   "path": "n447/engine.js",
+   "bytes": 32101,
+   "sha256": "c1c644496b36bbd93b32512ca2bd48bf4622a94158b2bfff2bb434939b3f22f4"
+  },
+  {
+   "path": "n447/owner-more-info-n447.js",
+   "bytes": 6238,
+   "sha256": "d4f22b255b6e1c588d818524678ea3fc623a3d1edd8f6d9334699607f9672ba4"
+  },
+  {
+   "path": "n447/reply.js",
+   "bytes": 10806,
+   "sha256": "50c0fcaf68be253996a1d9820658cb6aced71693bb4d7b1c5622f20e0cf1347b"
+  },
+  {
+   "path": "package.json",
+   "bytes": 73,
+   "sha256": "f1ef66cf2ba26560e133bcb8cab67b3276c8317e7ee0d6d694a3ebc44dad8a62",
+   "generated": "zúžené pre firmu"
+  },
+  {
+   "path": "vercel.json",
+   "bytes": 940,
+   "sha256": "911b090c20bb5b9eab31a9c2cb2ab8b8ac6e4c58c9cba22aefa10ab9526e5858",
+   "generated": "zúžené pre firmu"
+  },
+  {
+   "path": "index.html",
+   "bytes": 2138,
+   "sha256": "c8eb331b53c5b7436ddac558a60a26554c3b615508b3bdd0e8ab9a10cafd1a1c",
+   "copyOf": "doubleshot.html"
+  }
+ ],
+ "externalOwnShop": [
+  "mojchatbot.sk"
+ ],
+ "note": "Balík obsahuje iba stránku firmy, jej dáta, API pre túto firmu a ich závislosti. Zdieľané viacznačkové dáta sú zúžené. Bez .env, poverení, registra a e-mailových konceptov.",
+ "externalCount": 1,
+ "missing": [],
+ "excludedForeignAssets": [],
+ "foreignTokens": [
+  "9gramscoffee",
+  "ajvencoffee",
+  "almara",
+  "anemone",
+  "barboralori",
+  "becafe",
+  "bellcoria",
+  "bellmedi",
+  "biofy",
+  "candycane",
+  "casadelcaffe",
+  "coffeein",
+  "coffeesheep",
+  "coffeeveronia",
+  "concept",
+  "cyprianus",
+  "diamonds",
+  "donfranko",
+  "dulcia",
+  "ebenica",
+  "facederma",
+  "fathers",
+  "fytopharma",
+  "goriffee",
+  "grain",
+  "grandroastery",
+  "kaffa",
+  "kavavra",
+  "kavoholik",
+  "kvitok",
+  "lavelin",
+  "liqoil",
+  "manufaktura",
+  "modrapupava",
+  "monlevur",
+  "mujluj",
+  "mydlitto",
+  "mylo",
+  "natureal",
+  "nobilistilia",
+  "noili",
+  "nordbeans",
+  "panakeia",
+  "pimpinella",
+  "ponio",
+  "praziarnicka",
+  "puaree",
+  "readyafter",
+  "rebelbean",
+  "renovality",
+  "saloos",
+  "simplecoffee",
+  "soaphoria",
+  "syncare",
+  "verticcio",
+  "vitazov",
+  "yemna",
+  "zlatezrnko"
+ ],
+ "totalBytes": 3187252
+}

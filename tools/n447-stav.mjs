@@ -59,6 +59,13 @@ const companies = Object.entries(STATUS).map(([slug, s]) => {
     c.browserCheck = {sizes: Object.keys(r.sizes), testedPaths: v.reduce((n, x) => n + x.walks, 0), allPaths: 'priechody s rôznymi odpoveďami', budgetChecks: v.reduce((n, x) => n + x.budgetChecks, 0),
       issues: v.reduce((n, x) => n + x.issues.length, 0), firstIssues: v.flatMap((x) => x.issues).slice(0, 3), console: r.console.length};
   } else if (c.page) c.browserCheck = {state: 'NOT_FINISHED', note: 'beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom'};
+  if (fs.existsSync('n447/bundles/index.json')) {
+    const bi = JSON.parse(fs.readFileSync('n447/bundles/index.json', 'utf8'));
+    const b = bi.firms[slug];
+    c.handoffBundle = b ? {builtFrom: bi.builtFrom, manifest: `n447/bundles/${slug}.manifest.json`, qa: `n447/bundles/${slug}-bundle-qa.json`, files: b.files, bytes: b.bytes,
+      localQa: Object.values(b.browser).every((x) => x.result && x.chat && !x.jsErrors && !x.failedLocal) && !b.fail.length ? 'PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)' : 'FAIL',
+      foreignPaths404: b.probes404, otherDemoIdsRejected: b.otherDemoIdsRejected, paidCalls: 0, note: 'príprava, nie produkčné nasadenie'} : (bi.excluded[slug] ? {skipped: bi.excluded[slug]} : null);
+  }
   return c;
 });
 const engineCommit = lastCommit(['n447/engine.js', 'n447/reply.js', 'n447/coffee-jolka-app-n447.js', 'n447/kozmetika/cosmetics-n447.js', 'api/chat-447.js', 'api/cosmetics-chat-447.js']);
@@ -72,13 +79,13 @@ const out = {batch: 'nove-ukazky-447-2026-10-22', engineCommit, price: {setupEUR
     tests: 'Node: tools/n447-test.mjs (všetky cesty, rozpočtové hranice, dosiahnuteľnosť každej kávy, regresie Codexu, jazyk CS, chat offline, API mock 0 platených volaní); kozmetika tools/n447-cx-test.mjs; prehliadač tools/n447_browser_check.py (pokrývajúca sada ciest na 320×568, 390×650, 560×600, 1280×800).'},
   companies};
 fs.writeFileSync('n447/stav.json', JSON.stringify(out, null, 2) + '\n');
-const row = (c) => `| ${c.name} | ${c.state} | ${c.page || '–'} | ${c.products ?? '–'}${c.verifiedPacks != null ? ` / ${c.verifiedPacks} overených balení` : ''} | ${c.browserCheck ? (c.browserCheck.state || (typeof c.browserCheck.allPaths === 'number' ? `${c.browserCheck.testedPaths}/${c.browserCheck.allPaths} ciest (pokrytie), 4 rozmery, nálezy ${c.browserCheck.issues}` : `${c.browserCheck.testedPaths} priechodov, 4 rozmery, kontroly rozpočtu ${c.browserCheck.budgetChecks}, nálezy ${c.browserCheck.issues}`)) : '–'} | ${c.commit || '–'} | ${[c.reason, ...(c.open || [])].filter(Boolean).join('; ') || '–'} |`;
+const row = (c) => `| ${c.name} | ${c.state} | ${c.page || '–'} | ${c.products ?? '–'}${c.verifiedPacks != null ? ` / ${c.verifiedPacks} overených balení` : ''} | ${c.browserCheck ? (c.browserCheck.state || (typeof c.browserCheck.allPaths === 'number' ? `${c.browserCheck.testedPaths}/${c.browserCheck.allPaths} ciest (pokrytie), 4 rozmery, nálezy ${c.browserCheck.issues}` : `${c.browserCheck.testedPaths} priechodov, 4 rozmery, kontroly rozpočtu ${c.browserCheck.budgetChecks}, nálezy ${c.browserCheck.issues}`)) : '–'} | ${c.handoffBundle ? (c.handoffBundle.skipped ? 'nie – ' + c.handoffBundle.skipped : `${c.handoffBundle.files} súborov, lokálne QA ${c.handoffBundle.localQa.split(' ')[0]}`) : '–'} | ${c.commit || '–'} | ${[c.reason, ...(c.open || [])].filter(Boolean).join('; ') || '–'} |`;
 fs.writeFileSync('n447/stav.md', `# Nové ukážky 447 € + 10 €/mes. bez trialu – stav (${today})
 
 Vetva \`${out.branch}\`, HEAD \`${head}\`, spoločné jadro a API naposledy zmenené v \`${engineCommit}\` (stĺpec Commit = posledná zmena vlastných súborov firmy). Interný Preview: ${out.preview.url || '–'} (commit ${out.preview.sha || '–'}). ${out.preview.note}
 
-| Firma | Stav | Stránka (Preview) | Produkty / overené balenia | Prehliadač | Commit | Poznámky |
-|---|---|---|---|---|---|---|
+| Firma | Stav | Stránka (Preview) | Produkty / overené balenia | Prehliadač | Odovzdávací balík | Commit | Poznámky |
+|---|---|---|---|---|---|---|---|
 ${companies.map(row).join('\n')}
 
 Pravidlá: ${out.rules.budget} ${out.rules.choices}

@@ -1,0 +1,249 @@
+{
+ "slug": "saloos",
+ "family": "cosmetics",
+ "builtFrom": "e5e32d3",
+ "static": {
+  "otherHosts": {
+   "catalogue-advisor.js": [
+    "www.kvetu.cz"
+   ]
+  },
+  "sharedCodeIdentifiers": {
+   "skincare-refresh.css": [
+    "anemone",
+    "barboralori",
+    "bellcoria",
+    "concept",
+    "mylo",
+    "ponio"
+   ],
+   "skincare-review-fixes-20260914.css": [
+    "anemone",
+    "barboralori",
+    "bellcoria",
+    "biofy",
+    "cyprianus",
+    "mylo",
+    "panakeia",
+    "ponio"
+   ],
+   "skincare-final-logo-qa.css": [
+    "bellmedi",
+    "biofy",
+    "cyprianus",
+    "facederma",
+    "fytopharma",
+    "kvitok",
+    "lavelin",
+    "modrapupava",
+    "natureal",
+    "panakeia",
+    "ponio",
+    "soaphoria",
+    "syncare"
+   ],
+   "nove-znacky.css": [
+    "monlevur",
+    "mydlitto",
+    "pimpinella",
+    "yemna"
+   ],
+   "index.html": [
+    "kvitok"
+   ],
+   "kvitok-brand-mark-preload.js": [
+    "kvitok"
+   ],
+   "catalogue-config.js": [
+    "almara",
+    "bellcoria",
+    "dulcia",
+    "liqoil",
+    "modrapupava",
+    "monlevur",
+    "mujluj",
+    "mydlitto",
+    "mylo",
+    "noili",
+    "pimpinella",
+    "puaree",
+    "yemna"
+   ],
+   "launcher-finish.js": [
+    "almara",
+    "cyprianus"
+   ],
+   "catalogue-advisor.css": [
+    "ponio"
+   ],
+   "advisor-quality.css": [
+    "mylo"
+   ],
+   "skincare-launcher-logo-fix.js": [
+    "cyprianus",
+    "syncare"
+   ],
+   "kvitok-direct-logo.css": [
+    "kvitok"
+   ],
+   "skincare-final-fix.css": [
+    "barboralori",
+    "syncare"
+   ],
+   "skincare-final-brand-marks.js": [
+    "barboralori",
+    "cyprianus",
+    "facederma",
+    "modrapupava"
+   ],
+   "skincare-targeted-hotfix.css": [
+    "biofy",
+    "facederma",
+    "fytopharma",
+    "kvitok",
+    "lavelin",
+    "natureal",
+    "ponio",
+    "syncare"
+   ],
+   "skincare-final-logo-qa.js": [
+    "cyprianus",
+    "fytopharma",
+    "kvitok",
+    "modrapupava",
+    "mylo",
+    "ponio"
+   ],
+   "skincare-final-fix.js": [
+    "modrapupava",
+    "syncare"
+   ],
+   "n447/kozmetika/advisor-boot-n447.js": [
+    "kvitok"
+   ],
+   "cosmetics-polish.css": [
+    "anemone",
+    "bellcoria",
+    "mylo"
+   ],
+   "nove-znacky.js": [
+    "cyprianus"
+   ],
+   "kvitok-logo-final-fix.js": [
+    "kvitok"
+   ],
+   "n447/kozmetika/cosmetics-n447.js": [
+    "modrapupava",
+    "mylo"
+   ],
+   "skincare-review-fixes-20260914.js": [
+    "cyprianus"
+   ],
+   "skincare-avatar-round-fix.css": [
+    "syncare"
+   ],
+   "cosmetics.css": [
+    "anemone",
+    "bellcoria",
+    "biofy",
+    "mylo",
+    "ponio"
+   ],
+   "skincare-final-brand-overrides.css": [
+    "anemone",
+    "barboralori",
+    "bellcoria",
+    "cyprianus",
+    "facederma",
+    "kvitok",
+    "modrapupava",
+    "natureal",
+    "panakeia",
+    "syncare"
+   ]
+  },
+  "files": 84,
+  "bytes": 3505509,
+  "excludedForeignAssets": [
+   "assets/catalogue/logos/modrapupava-symbol.png",
+   "assets/cosmetics/barboralori-logo.png",
+   "assets/cosmetics/cyprianus-logo.svg",
+   "assets/cosmetics/kvitok-logo.png",
+   "assets/cosmetics/modrapupava-logo.png"
+  ]
+ },
+ "http": {
+  "/": 200,
+  "/saloos.html": 200,
+  "probes": 133,
+  "notBlocked": {},
+  "POST /api/chat": 404,
+  "POST /api/cosmetics-chat": 404,
+  "POST /api/ai-chat": 404,
+  "POST /api/chat-447": 404,
+  "otherDemoIdsRejected": 15,
+  "ownApi": 200
+ },
+ "browser": {
+  "390x844": {
+   "requests": 62,
+   "hosts": [
+    "127.0.0.1",
+    "www.saloos.cz"
+   ],
+   "failed": [],
+   "errors": [],
+   "trail": [
+    "Pleť",
+    "Suchá a napjatá",
+    "Jemná péče",
+    "Oleje",
+    "Do 300 Kč"
+   ],
+   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nBio Sojový olej\n\n50 ml\n\nPleť\nOleje\nJemná péče\nSuchá a napjatá\ndo 300 Kč\n104 Kč\nZobrazit produkt ↗\n\nPéče s olejovým základem.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Z vhodných možností má tento produkt nižší cenu. Cena je v rámci vašeho limi",
+   "resultShown": true,
+   "chatReply": "Z nabídky vybírám (pleť, pro suchou pleť):\n\nLněný olej (50 ml) — 99 Kč. Podle popisu pro suchou pleť, hydratace. Zobrazit produkt v e-shopu ↗\n\nBio Sojový olej (50 ml) — 104 Kč. Podle popisu pro suchou a citlivou pleť, proti vráskám, zklidnění. Zobrazit produkt v e-shopu ↗\n\nBio Sezamový olej (50 ml) ",
+   "foreignInText": [],
+   "oldOffer": false,
+   "has447": true,
+   "externalHosts": [
+    "www.saloos.cz"
+   ]
+  },
+  "1280x800": {
+   "requests": 62,
+   "hosts": [
+    "127.0.0.1",
+    "www.saloos.cz"
+   ],
+   "failed": [],
+   "errors": [],
+   "trail": [
+    "Pleť",
+    "Suchá a napjatá",
+    "Jemná péče",
+    "Oleje",
+    "Do 300 Kč"
+   ],
+   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nBio Sojový olej\n\n50 ml\n\nPleť\nOleje\nJemná péče\nSuchá a napjatá\ndo 300 Kč\n104 Kč\nZobrazit produkt ↗\n\nPéče s olejovým základem.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Z vhodných možností má tento produkt nižší cenu. Cena je v rámci vašeho limi",
+   "resultShown": true,
+   "chatReply": "Z nabídky vybírám (pleť, pro suchou pleť):\n\nLněný olej (50 ml) — 99 Kč. Podle popisu pro suchou pleť, hydratace. Zobrazit produkt v e-shopu ↗\n\nBio Sojový olej (50 ml) — 104 Kč. Podle popisu pro suchou a citlivou pleť, proti vráskám, zklidnění. Zobrazit produkt v e-shopu ↗\n\nBio Sezamový olej (50 ml) ",
+   "foreignInText": [],
+   "oldOffer": false,
+   "has447": true,
+   "externalHosts": [
+    "www.saloos.cz"
+   ]
+  }
+ },
+ "fail": [],
+ "server": {
+  "apiCalls": 20,
+  "outboundBlocked": 0,
+  "outboundHosts": [],
+  "served": 119,
+  "notFound": 135
+ },
+ "paidCalls": 0,
+ "checkedContentIdenticalTo": "e5e32d3"
+}

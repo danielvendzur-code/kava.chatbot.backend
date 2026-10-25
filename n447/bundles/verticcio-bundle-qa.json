@@ -1,0 +1,103 @@
+{
+ "slug": "verticcio",
+ "family": "coffee",
+ "builtFrom": "e5e32d3",
+ "static": {
+  "otherHosts": {},
+  "sharedCodeIdentifiers": {
+   "coffee-quality.js": [
+    "mylo"
+   ],
+   "coffee-widget-polish.js": [
+    "kaffa",
+    "praziarnicka"
+   ],
+   "coffee-header-cleanup.css": [
+    "casadelcaffe",
+    "coffeesheep",
+    "praziarnicka",
+    "zlatezrnko"
+   ],
+   "coffee-widget-polish.css": [
+    "concept",
+    "kaffa"
+   ],
+   "n447/coffee-owner-brand-n447.js": [
+    "concept",
+    "diamonds",
+    "kaffa",
+    "praziarnicka",
+    "vitazov"
+   ]
+  },
+  "files": 84,
+  "bytes": 3800000,
+  "excludedForeignAssets": []
+ },
+ "http": {
+  "/": 200,
+  "/verticcio.html": 200,
+  "probes": 133,
+  "notBlocked": {},
+  "POST /api/chat": 404,
+  "POST /api/cosmetics-chat": 404,
+  "POST /api/ai-chat": 404,
+  "POST /api/cosmetics-chat-447": 404,
+  "otherDemoIdsRejected": 15,
+  "ownApi": 200
+ },
+ "browser": {
+  "390x844": {
+   "requests": 42,
+   "hosts": [
+    "127.0.0.1"
+   ],
+   "failed": [],
+   "errors": [],
+   "trail": [
+    "Kávovar alebo automat",
+    "Čokoládová a oriešková",
+    "Do 9,50 €",
+    "javorový sirup · mandľa"
+   ],
+   "resultShown": true,
+   "result": "METROPOLA blend\n\nJužná Amerika, Afrika\n\n200 g · medium (stredné) · zrnková\n9,50 €\nĎalšie balenia: 1 kg 39,50 € (nad rozpočet)\nNa espresso aj do automatuE-shop ju uvádza na: Espresso, Automatický kávovar, Moka / Koťogo, French Press.\nČokoládová a orieškováV chuti: javorový sirup, mandľa, mliečna čokoláda.\nV rozpočte200 g spolu 9,50 €; váš limit 9,50 €.\n\nEspresso zmes arabík a robusty (80/20); e-sho",
+   "chatReply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nUGANDA Sucafina — 200 g za 8,00 €\nPozrieť v e-shope ↗\n(V chuti: horká čokoláda, lieskový orech.)\nOFFICE blend — 200 g za 9,30 €\nPozrieť v e-shope ↗\n(V chuti: grapefruit, horká čokoláda, lieskový orech.)",
+   "foreignInText": [],
+   "oldOffer": false,
+   "has447": true,
+   "externalHosts": []
+  },
+  "1280x800": {
+   "requests": 42,
+   "hosts": [
+    "127.0.0.1"
+   ],
+   "failed": [],
+   "errors": [],
+   "trail": [
+    "Kávovar alebo automat",
+    "Čokoládová a oriešková",
+    "Do 9,50 €",
+    "javorový sirup · mandľa"
+   ],
+   "resultShown": true,
+   "result": "METROPOLA blend\n\nJužná Amerika, Afrika\n\n200 g · medium (stredné) · zrnková\n9,50 €\nĎalšie balenia: 1 kg 39,50 € (nad rozpočet)\nNa espresso aj do automatuE-shop ju uvádza na: Espresso, Automatický kávovar, Moka / Koťogo, French Press.\nČokoládová a orieškováV chuti: javorový sirup, mandľa, mliečna čokoláda.\nV rozpočte200 g spolu 9,50 €; váš limit 9,50 €.\n\nEspresso zmes arabík a robusty (80/20); e-sho",
+   "chatReply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nUGANDA Sucafina — 200 g za 8,00 €\nPozrieť v e-shope ↗\n(V chuti: horká čokoláda, lieskový orech.)\nOFFICE blend — 200 g za 9,30 €\nPozrieť v e-shope ↗\n(V chuti: grapefruit, horká čokoláda, lieskový orech.)",
+   "foreignInText": [],
+   "oldOffer": false,
+   "has447": true,
+   "externalHosts": []
+  }
+ },
+ "fail": [],
+ "server": {
+  "apiCalls": 20,
+  "outboundBlocked": 0,
+  "outboundHosts": [],
+  "served": 87,
+  "notFound": 135
+ },
+ "paidCalls": 0,
+ "checkedContentIdenticalTo": "e5e32d3"
+}
