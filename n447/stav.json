@@ -1,17 +1,17 @@
 {
   "batch": "nove-ukazky-447-2026-10-22",
-  "engineCommit": "ce15ca3",
+  "engineCommit": "a9f8559",
   "price": {
     "setupEUR": 447,
     "monthlyEUR": 10,
     "freeTrial": false
   },
   "updatedAt": "2026-10-25",
-  "headCommit": "3bd8445",
+  "headCommit": "c20b692",
   "branch": "claude/n447-black-20261022",
   "preview": {
-    "url": "https://kava-chatbot-backend-hf60uyrqq-danielvendzur-codes-projects.vercel.app",
-    "sha": "3bd8445",
+    "url": "https://kava-chatbot-backend-mgmu5r4kg-danielvendzur-codes-projects.vercel.app",
+    "sha": "c20b692",
     "note": "Interný Preview (Vercel, vetva). Zelený build nie je overená produkcia; produkcia ani zákaznícke subdomény nie sú nasadené."
   },
   "rules": {
@@ -130,11 +130,11 @@
         "storage": []
       },
       "handoffBundle": {
-        "builtFrom": "ce15ca3",
+        "builtFrom": "a9f8559",
         "manifest": "n447/bundles/verticcio.manifest.json",
         "qa": "n447/bundles/verticcio-bundle-qa.json",
         "files": 112,
-        "bytes": 3833649,
+        "bytes": 3833760,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -181,11 +181,11 @@
         "storage": []
       },
       "handoffBundle": {
-        "builtFrom": "ce15ca3",
+        "builtFrom": "a9f8559",
         "manifest": "n447/bundles/rebelbean.manifest.json",
         "qa": "n447/bundles/rebelbean-bundle-qa.json",
         "files": 102,
-        "bytes": 3642075,
+        "bytes": 3642186,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -286,11 +286,11 @@
         "storage": []
       },
       "handoffBundle": {
-        "builtFrom": "ce15ca3",
+        "builtFrom": "a9f8559",
         "manifest": "n447/bundles/doubleshot.manifest.json",
         "qa": "n447/bundles/doubleshot-bundle-qa.json",
         "files": 102,
-        "bytes": 3220901,
+        "bytes": 3221012,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -345,11 +345,11 @@
         "storage": []
       },
       "handoffBundle": {
-        "builtFrom": "ce15ca3",
+        "builtFrom": "a9f8559",
         "manifest": "n447/bundles/fathers.manifest.json",
         "qa": "n447/bundles/fathers-bundle-qa.json",
         "files": 125,
-        "bytes": 3626733,
+        "bytes": 3626844,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -401,11 +401,11 @@
         "storage": []
       },
       "handoffBundle": {
-        "builtFrom": "ce15ca3",
+        "builtFrom": "a9f8559",
         "manifest": "n447/bundles/candycane.manifest.json",
         "qa": "n447/bundles/candycane-bundle-qa.json",
         "files": 103,
-        "bytes": 2858735,
+        "bytes": 2858846,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -461,11 +461,11 @@
         "storage": []
       },
       "handoffBundle": {
-        "builtFrom": "ce15ca3",
+        "builtFrom": "a9f8559",
         "manifest": "n447/bundles/9gramscoffee.manifest.json",
         "qa": "n447/bundles/9gramscoffee-bundle-qa.json",
         "files": 121,
-        "bytes": 3906788,
+        "bytes": 3906899,
         "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
         "foreignPaths404": 133,
         "otherDemoIdsRejected": 15,
@@ -539,7 +539,7 @@
         "console": 0
       },
       "handoffBundle": {
-        "builtFrom": "ce15ca3",
+        "builtFrom": "a9f8559",
         "manifest": "n447/bundles/renovality.manifest.json",
         "qa": "n447/bundles/renovality-bundle-qa.json",
         "files": 84,
@@ -610,7 +610,7 @@
         "console": 0
       },
       "handoffBundle": {
-        "builtFrom": "ce15ca3",
+        "builtFrom": "a9f8559",
         "manifest": "n447/bundles/saloos.manifest.json",
         "qa": "n447/bundles/saloos-bundle-qa.json",
         "files": 84,
@@ -685,7 +685,7 @@
         "console": 0
       },
       "handoffBundle": {
-        "builtFrom": "ce15ca3",
+        "builtFrom": "a9f8559",
         "manifest": "n447/bundles/nobilistilia.manifest.json",
         "qa": "n447/bundles/nobilistilia-bundle-qa.json",
         "files": 84,
@@ -755,7 +755,7 @@
         "console": 0
       },
       "handoffBundle": {
-        "builtFrom": "ce15ca3",
+        "builtFrom": "a9f8559",
         "manifest": "n447/bundles/manufaktura.manifest.json",
         "qa": "n447/bundles/manufaktura-bundle-qa.json",
         "files": 84,

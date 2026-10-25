@@ -1,6 +1,6 @@
 # Nové ukážky 447 € + 10 €/mes. bez trialu – stav (2026-10-25)
 
-Vetva `claude/n447-black-20261022`, HEAD `3bd8445`, spoločné jadro a API naposledy zmenené v `ce15ca3` (stĺpec Commit = posledná zmena vlastných súborov firmy). Interný Preview: https://kava-chatbot-backend-hf60uyrqq-danielvendzur-codes-projects.vercel.app (commit 3bd8445). Interný Preview (Vercel, vetva). Zelený build nie je overená produkcia; produkcia ani zákaznícke subdomény nie sú nasadené.
+Vetva `claude/n447-black-20261022`, HEAD `c20b692`, spoločné jadro a API naposledy zmenené v `a9f8559` (stĺpec Commit = posledná zmena vlastných súborov firmy). Interný Preview: https://kava-chatbot-backend-mgmu5r4kg-danielvendzur-codes-projects.vercel.app (commit c20b692). Interný Preview (Vercel, vetva). Zelený build nie je overená produkcia; produkcia ani zákaznícke subdomény nie sú nasadené.
 
 | Firma | Stav | Stránka (Preview) | Produkty / overené balenia | Prehliadač | Odovzdávací balík | Commit | Poznámky |
 |---|---|---|---|---|---|---|---|
