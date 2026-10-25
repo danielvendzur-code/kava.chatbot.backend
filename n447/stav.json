@@ -6,12 +6,12 @@
     "monthlyEUR": 10,
     "freeTrial": false
   },
-  "updatedAt": "2026-10-24",
-  "headCommit": "5013c35",
+  "updatedAt": "2026-10-25",
+  "headCommit": "fbb90a9",
   "branch": "claude/n447-black-20261022",
   "preview": {
-    "url": "https://kava-chatbot-backend-ma4jzim9a-danielvendzur-codes-projects.vercel.app",
-    "sha": "5013c35",
+    "url": "https://kava-chatbot-backend-6fbvbcde0-danielvendzur-codes-projects.vercel.app",
+    "sha": "fbb90a9",
     "note": "Interný Preview (Vercel, vetva). Zelený build nie je overená produkcia; produkcia ani zákaznícke subdomény nie sú nasadené."
   },
   "rules": {
@@ -90,7 +90,7 @@
       "family": "coffee",
       "state": "READY_FOR_REVIEW",
       "open": [
-        "kontakt marketing@verticcio.sk zo zadania – kontaktná stránka za WAF (466), znovu neoverovaný"
+        "kontakt marketing@verticcio.sk overený 2026-10-25 na https://www.verticcio.sk/info/kontakt (sekcia Centrála), bez zmeny"
       ],
       "page": "/verticcio.html",
       "customerLink": "https://verticcio.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)",
@@ -98,7 +98,7 @@
       "currency": "EUR",
       "shop": "https://www.verticcio.sk/kava/kava-verticcio",
       "contact": "marketing@verticcio.sk",
-      "contactSource": "https://www.verticcio.sk/info/kontakt (zo zadania, 2026-10-23 neoverené znova – WAF)",
+      "contactSource": "https://www.verticcio.sk/info/kontakt – sekcia Centrála (popri info@verticcio.sk); overené priamo na oficiálnej stránke 2026-10-25, bez zmeny",
       "checkedAt": "2026-10-23",
       "scope": "Všetky dostupné kávy z kategórie Káva Verticcio (21 káv, 39 balení). Darčekové balenia, akcie 3+1, kávovary, mlynčeky a príslušenstvo nie sú vo výbere.",
       "products": 21,
@@ -111,7 +111,7 @@
         "darčekové balenia (2)",
         "akcie 3+1 zdarma (6)"
       ],
-      "commit": "db8243c",
+      "commit": "2297753",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -404,7 +404,9 @@
       "open": [
         "Shoptet vrátil 403 po 8 požiadavkách; stiahnuté jedným pomalým opakovaním po pauze",
         "doprava v ukážke neoverená (stránka dopravy nenájdená) – chat odkáže na e-shop",
-        "kontakt info@renovality.cz zo zadania"
+        "kontakt info@renovality.cz overený 2026-10-25 na https://www.renovality.cz/kontakty/, bez zmeny",
+        "ceny: 54/54 doložené na karte produktu vo výpise; odkazy 54/54 živo 200 bez presmerovania (2026-10-25)",
+        "veľkosť balenia neoverená pri 9 produktoch (karta ju neuvádza; 4 tuhé deodoranty, 5 produktov s objemom iba v adrese) – cena je jediná cena produktu"
       ],
       "page": "/renovality.html",
       "customerLink": "https://renovality.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)",
@@ -412,7 +414,7 @@
       "currency": "CZK",
       "shop": "https://www.renovality.cz/plet/",
       "contact": "info@renovality.cz",
-      "contactSource": "https://www.renovality.cz/kontakty/ (zo zadania)",
+      "contactSource": "https://www.renovality.cz/kontakty/ – „Máte na nás nějaké jiné dotazy?“; overené priamo na oficiálnej stránke 2026-10-25, bez zmeny",
       "checkedAt": "2026-10-24",
       "products": 54,
       "categories": [
@@ -443,7 +445,7 @@
         "Renohair 100 ml s pipetkou – vlasová péče",
         "doplňky stravy, káva a čaj, vůně, svíčky a domácnost (mimo kosmetiku)"
       ],
-      "commit": "d0b8f9e",
+      "commit": "2297753",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -467,7 +469,8 @@
       "state": "READY_FOR_REVIEW",
       "open": [
         "overená je cena predvoleného balenia z výpisu; iné veľkosti sa načítajú až po výbere",
-        "prehliadačová kontrola kozmetiky: tools/n447_cx_browser_check.py"
+        "prehliadačová kontrola kozmetiky: tools/n447_cx_browser_check.py",
+        "ceny: 124/124 doložené na karte výpisu (predvolené balenie); odkazy 124/124 živo 200 bez presmerovania (2026-10-25)"
       ],
       "page": "/saloos.html",
       "customerLink": "https://saloos.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)",
@@ -526,7 +529,10 @@
       "open": [
         "ceny viacvariantných produktov z vlastných stránok variantov (vzorky 2 ml vynechané, cena „od“ sa nepoužíva)",
         "doprava v ukážke neoverená – chat odkáže na e-shop",
-        "kontakt nobilis@nobilis.cz zo zadania"
+        "kontakt nobilis@nobilis.cz overený 2026-10-25 na https://www.nobilis.cz/kontakt/, bez zmeny",
+        "ceny: 150/150 doložené (68 stránka varianty, 82 karta výpisu); odkazy: 74 živo 200, 76 odkazov kariet presmerovalo 301 na konkrétnu stránku produktu s veľkosťou → nahradené cieľom (200, cena v JSON-LD zhodná), 2026-10-25",
+        "Biofáze séra a pro-kolagénová maska opravené na balenie 3 × 20 ml a 6 × 25 g (cena za celé balenie)",
+        "veľkosť balenia neoverená pri 1 produkte (Bioaktivní liftingové sérum)"
       ],
       "page": "/nobilistilia.html",
       "customerLink": "https://nobilistilia.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)",
@@ -534,7 +540,7 @@
       "currency": "CZK",
       "shop": "https://www.nobilis.cz/kategorie/plet/",
       "contact": "nobilis@nobilis.cz",
-      "contactSource": "https://www.nobilis.cz/kontakt/ (zo zadania)",
+      "contactSource": "https://www.nobilis.cz/kontakt/ – Zákaznický servis; overené priamo na oficiálnej stránke 2026-10-25, bez zmeny",
       "checkedAt": "2026-10-24",
       "products": 150,
       "categories": [
@@ -561,7 +567,7 @@
         "Dětský sprchový gel Vendelín 500 ml – těhotenství a děti",
         "těhotenství, matka a dítě, éterické oleje a aromaterapie, doplňky stravy, bylinková lékárna, ekzém, celulitida, intimní hygiena (mimo běžnou kosmetickou péči)"
       ],
-      "commit": "f83aa12",
+      "commit": "fbb90a9",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -588,7 +594,9 @@
         "obrázkový server data.manufaktura.cz raz vrátil 403; logo a fotky overené po pauze",
         "chat s AI: zdieľaný ai-chat.js maže „_“ z odkazov (…_z123/), preto chat vždy použije overenú odpoveď katalógu",
         "e-shop má vlastný chat – ukážka ho dopĺňa, nenahrádza",
-        "kontakt info@manufaktura.cz zo zadania"
+        "kontakt info@manufaktura.cz overený 2026-10-25 na https://manufaktura.cz/kontakt/ („Kontakt na sídlo firmy“; objednávky eshop@manufaktura.cz), bez zmeny",
+        "ceny: 36/36 doložené v štruktúrovaných dátach a na karte výpisu; odkazy 36/36 živo 200 bez presmerovania (2026-10-25)",
+        "2 produkty sú mini balenia predávané ako samostatný produkt (odličovacie mlieko 30 ml, pleťová voda 80 ml) – cena platí pre to balenie"
       ],
       "page": "/manufaktura.html",
       "customerLink": "https://manufaktura.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)",
@@ -596,7 +604,7 @@
       "currency": "CZK",
       "shop": "https://manufaktura.cz/plet/",
       "contact": "info@manufaktura.cz",
-      "contactSource": "https://manufaktura.cz/kontakt/ (zo zadania)",
+      "contactSource": "https://manufaktura.cz/kontakt/ – „Kontakt na sídlo firmy“ (objednávky: eshop@manufaktura.cz); overené priamo na oficiálnej stránke 2026-10-25, bez zmeny",
       "checkedAt": "2026-10-24",
       "products": 36,
       "categories": [
@@ -617,7 +625,7 @@
         "Přírodní multifunkční SOS balzám na pokožku REGENERACE & VÝŽIVA – mimo vybrané typy pleťové rutiny",
         "tělo, vlasy, vůně, líčení, UV ochrana, balzámy na rty, multifunkční tyčinky a dárkové sady – mimo ohraničenou pleťovou rutinu této ukázky"
       ],
-      "commit": "c69ebe2",
+      "commit": "2297753",
       "browserCheck": {
         "sizes": [
           "320x568",
