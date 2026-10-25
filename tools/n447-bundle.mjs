@@ -37,7 +37,8 @@ const FOREIGN = (() => {
   return [...t].filter((x) => x.length > 2).sort();
 })();
 const OTHER = [...COFFEE, ...COSMETICS].filter((x) => x !== SLUG);
-const foreignAsset = (rel) => OTHER.some((o) => rel.startsWith(`assets/${o}/`) || rel.startsWith(`assets/n447-kozmetika/${o}/`)) || /\.(png|jpe?g|webp|svg|gif|avif|mp4)$/i.test(rel) && FOREIGN.some((t) => new RegExp(`(^|[/_.-])${t}([/_.-]|$)`, 'i').test(rel));
+const ownAsset = (rel) => rel.startsWith(`assets/${SLUG}/`) || rel.startsWith(`assets/n447-kozmetika/${SLUG}/`);
+const foreignAsset = (rel) => !ownAsset(rel) && (OTHER.some((o) => rel.startsWith(`assets/${o}/`) || rel.startsWith(`assets/n447-kozmetika/${o}/`)) || /\.(png|jpe?g|webp|svg|gif|avif|mp4)$/i.test(rel) && FOREIGN.some((t) => new RegExp(`(^|[/_.-])${t}([/_.-]|$)`, 'i').test(rel)));
 
 const clean = (p) => p.split('?')[0].split('#')[0].replace(/^\/+/, '');
 function add(rel, from) {

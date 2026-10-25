@@ -63,10 +63,11 @@ if known_shop_hosts: fail(f'URL cudzieho obchodu v balíku: {sorted(set(known_sh
 for p, t in texts.items():
     for u in re.findall(r'https?://cdn\.myshoptet\.com/usr/([^/"\']+)/', t):
         if '.'.join(u.split('.')[-2:]) not in own_root: fail(f'CDN cudzieho Shoptet obchodu {u} v {p}')
-foreign_img = [p for p in actual if re.search(r'\.(png|jpe?g|webp|svg|gif|avif)$', p) and (any(p.startswith(f'assets/{o}/') or p.startswith(f'assets/n447-kozmetika/{o}/') for o in OTHERS)
+foreign_img = [p for p in actual if re.search(r'\.(png|jpe?g|webp|svg|gif|avif)$', p) and not p.startswith(f'assets/{SLUG}/') and not p.startswith(f'assets/n447-kozmetika/{SLUG}/') and (any(p.startswith(f'assets/{o}/') or p.startswith(f'assets/n447-kozmetika/{o}/') for o in OTHERS)
                or any(re.search(rf'(^|[/_.-]){re.escape(t)}([/_.-]|$)', p, re.I) for t in FOREIGN))]
 if foreign_img: fail(f'obrázky cudzích značiek: {foreign_img[:6]}')
-own_files = [data_file, f'{SLUG}.html'] + ([brand_file] if brand_file else []) + ([f'n447/{SLUG}-jolka-theme.css'] if FAM == 'coffee' else [])
+own_files = [f'{SLUG}.html']  # dáta firmy: názvy jej produktov sa môžu zhodovať so slovom (napr. „Yellow Diamonds“); cudzie obchody v nich stráži kontrola URL
+own_files += ([brand_file] if brand_file else []) + ([f'n447/{SLUG}-jolka-theme.css'] if FAM == 'coffee' else [])
 residue = {}
 for p, t in texts.items():
     low = t.lower()
@@ -172,6 +173,7 @@ try:
             pg.screenshot(path=os.path.join(OUT, f'{SLUG}-{key}-chat.png'))
             body = pg.inner_text('body')
             low = body.lower()
+            for nm in sorted(set(re.findall(r'"name": ?"([^"]+)"', texts.get(data_file, ''))), key=len, reverse=True): low = low.replace(nm.lower(), ' ')
             r['foreignInText'] = sorted({t for t in FOREIGN + ['don franko', 'pražírna brno', 'modrá púpava', 'barbora lori'] if t not in OWN_ALIASES and re.search(rf'(?<![a-z0-9]){re.escape(t)}(?![a-z0-9])', low)})
             r['oldOffer'] = bool(re.search(r'247\s*€|mesiac zdarma|měsíc zdarma|30 dní zdarma', body))
             r['has447'] = '447' in body
