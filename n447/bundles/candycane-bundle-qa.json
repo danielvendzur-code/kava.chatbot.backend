@@ -1,14 +1,10 @@
 {
  "slug": "candycane",
  "family": "coffee",
- "builtFrom": "ce15ca3",
+ "builtFrom": "a9f8559",
  "static": {
   "otherHosts": {},
   "sharedCodeIdentifiers": {
-   "coffee-widget-polish.js": [
-    "kaffa",
-    "praziarnicka"
-   ],
    "n447/coffee-owner-brand-n447.js": [
     "concept",
     "diamonds",
@@ -28,10 +24,14 @@
    ],
    "coffee-quality.js": [
     "mylo"
+   ],
+   "coffee-widget-polish.js": [
+    "kaffa",
+    "praziarnicka"
    ]
   },
   "files": 103,
-  "bytes": 2858735,
+  "bytes": 2858846,
   "excludedForeignAssets": []
  },
  "http": {

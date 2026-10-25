@@ -1,5 +1,5 @@
 {
- "builtFrom": "ce15ca3",
+ "builtFrom": "a9f8559",
  "note": "Odovzdávacie balíky pre 10 firiem READY_FOR_REVIEW. Balík = vlastná stránka, dáta, API iba pre firmu a ich závislosti; zostaví sa príkazom node tools/n447-bundle.mjs --slug=<firma> --out=DIR (deterministicky, hashe v manifeste). Lokálne QA: python3 tools/n447_bundle_check.py. Nie je to produkčné nasadenie; projekty ani domény nevytvorené.",
  "excluded": {
   "black": "BLOCKED_PRICES",
@@ -8,7 +8,7 @@
  "firms": {
   "verticcio": {
    "files": 112,
-   "bytes": 3833649,
+   "bytes": 3833760,
    "externalOwnShopHosts": [],
    "excludedForeignAssets": 0,
    "probes404": 133,
@@ -60,7 +60,7 @@
   },
   "rebelbean": {
    "files": 102,
-   "bytes": 3642075,
+   "bytes": 3642186,
    "externalOwnShopHosts": [],
    "excludedForeignAssets": 0,
    "probes404": 133,
@@ -112,7 +112,7 @@
   },
   "doubleshot": {
    "files": 102,
-   "bytes": 3220901,
+   "bytes": 3221012,
    "externalOwnShopHosts": [],
    "excludedForeignAssets": 0,
    "probes404": 133,
@@ -164,7 +164,7 @@
   },
   "fathers": {
    "files": 125,
-   "bytes": 3626733,
+   "bytes": 3626844,
    "externalOwnShopHosts": [],
    "excludedForeignAssets": 0,
    "probes404": 133,
@@ -216,7 +216,7 @@
   },
   "candycane": {
    "files": 103,
-   "bytes": 2858735,
+   "bytes": 2858846,
    "externalOwnShopHosts": [],
    "excludedForeignAssets": 0,
    "probes404": 133,
@@ -268,7 +268,7 @@
   },
   "9gramscoffee": {
    "files": 121,
-   "bytes": 3906788,
+   "bytes": 3906899,
    "externalOwnShopHosts": [],
    "excludedForeignAssets": 0,
    "probes404": 133,

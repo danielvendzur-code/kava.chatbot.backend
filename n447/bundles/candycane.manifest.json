@@ -1,7 +1,7 @@
 {
  "slug": "candycane",
  "family": "coffee",
- "builtFrom": "ce15ca3",
+ "builtFrom": "a9f8559",
  "entry": "candycane.html",
  "files": [
   {
@@ -477,8 +477,8 @@
   },
   {
    "path": "n447/coffee-owner-brand-n447.js",
-   "bytes": 17286,
-   "sha256": "865a5158ab05c31630557e681b53babdbc80ddc88a68ac2beaf2d3f7f8f04d71"
+   "bytes": 17303,
+   "sha256": "df43e805a7e119363698bfb8214568a9cdbd0c44ce39abb2772a2f1d8bafdc17"
   },
   {
    "path": "n447/data/candycane.js",
@@ -487,8 +487,8 @@
   },
   {
    "path": "n447/engine.js",
-   "bytes": 36046,
-   "sha256": "2b134bd5c1b5701c34b646900796a5f20b1b99bd51dbaef5433b76f84ebce388"
+   "bytes": 36140,
+   "sha256": "0ee809b337e863f9f4a3754ca9ac888d148f5c60e5d5b34e49afe01656e1e0f8"
   },
   {
    "path": "n447/n447-ui-fixes.css",
@@ -591,5 +591,5 @@
   "yemna",
   "zlatezrnko"
  ],
- "totalBytes": 2858735
+ "totalBytes": 2858846
 }

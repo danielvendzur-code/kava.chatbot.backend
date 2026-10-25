@@ -1,12 +1,23 @@
 {
  "slug": "rebelbean",
  "family": "coffee",
- "builtFrom": "ce15ca3",
+ "builtFrom": "a9f8559",
  "static": {
   "otherHosts": {},
   "sharedCodeIdentifiers": {
    "coffee-quality.js": [
     "mylo"
+   ],
+   "n447/coffee-owner-brand-n447.js": [
+    "concept",
+    "diamonds",
+    "kaffa",
+    "praziarnicka",
+    "vitazov"
+   ],
+   "coffee-widget-polish.js": [
+    "kaffa",
+    "praziarnicka"
    ],
    "coffee-widget-polish.css": [
     "concept",
@@ -17,21 +28,10 @@
     "coffeesheep",
     "praziarnicka",
     "zlatezrnko"
-   ],
-   "coffee-widget-polish.js": [
-    "kaffa",
-    "praziarnicka"
-   ],
-   "n447/coffee-owner-brand-n447.js": [
-    "concept",
-    "diamonds",
-    "kaffa",
-    "praziarnicka",
-    "vitazov"
    ]
   },
   "files": 102,
-  "bytes": 3642075,
+  "bytes": 3642186,
   "excludedForeignAssets": []
  },
  "http": {

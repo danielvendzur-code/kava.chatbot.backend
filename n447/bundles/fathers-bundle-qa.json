@@ -1,13 +1,16 @@
 {
  "slug": "fathers",
  "family": "coffee",
- "builtFrom": "ce15ca3",
+ "builtFrom": "a9f8559",
  "static": {
   "otherHosts": {},
   "sharedCodeIdentifiers": {
-   "coffee-widget-polish.css": [
+   "n447/coffee-owner-brand-n447.js": [
     "concept",
-    "kaffa"
+    "diamonds",
+    "kaffa",
+    "praziarnicka",
+    "vitazov"
    ],
    "coffee-quality.js": [
     "mylo"
@@ -18,12 +21,9 @@
     "praziarnicka",
     "zlatezrnko"
    ],
-   "n447/coffee-owner-brand-n447.js": [
+   "coffee-widget-polish.css": [
     "concept",
-    "diamonds",
-    "kaffa",
-    "praziarnicka",
-    "vitazov"
+    "kaffa"
    ],
    "coffee-widget-polish.js": [
     "kaffa",
@@ -31,7 +31,7 @@
    ]
   },
   "files": 125,
-  "bytes": 3626733,
+  "bytes": 3626844,
   "excludedForeignAssets": []
  },
  "http": {
