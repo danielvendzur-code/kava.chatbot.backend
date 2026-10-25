@@ -7,11 +7,11 @@
     "freeTrial": false
   },
   "updatedAt": "2026-10-25",
-  "headCommit": "fbb90a9",
+  "headCommit": "f2001a1",
   "branch": "claude/n447-black-20261022",
   "preview": {
-    "url": "https://kava-chatbot-backend-6fbvbcde0-danielvendzur-codes-projects.vercel.app",
-    "sha": "fbb90a9",
+    "url": "https://kava-chatbot-backend-oj2fqfm8c-danielvendzur-codes-projects.vercel.app",
+    "sha": "f2001a1",
     "note": "Interný Preview (Vercel, vetva). Zelený build nie je overená produkcia; produkcia ani zákaznícke subdomény nie sú nasadené."
   },
   "rules": {
@@ -81,6 +81,9 @@
         "firstIssues": [],
         "console": 0,
         "storage": []
+      },
+      "handoffBundle": {
+        "skipped": "BLOCKED_PRICES"
       }
     },
     {
@@ -125,6 +128,18 @@
         "firstIssues": [],
         "console": 0,
         "storage": []
+      },
+      "handoffBundle": {
+        "builtFrom": "e5e32d3",
+        "manifest": "n447/bundles/verticcio.manifest.json",
+        "qa": "n447/bundles/verticcio-bundle-qa.json",
+        "files": 84,
+        "bytes": 3800000,
+        "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
+        "foreignPaths404": 133,
+        "otherDemoIdsRejected": 15,
+        "paidCalls": 0,
+        "note": "príprava, nie produkčné nasadenie"
       }
     },
     {
@@ -164,6 +179,18 @@
         "firstIssues": [],
         "console": 0,
         "storage": []
+      },
+      "handoffBundle": {
+        "builtFrom": "e5e32d3",
+        "manifest": "n447/bundles/rebelbean.manifest.json",
+        "qa": "n447/bundles/rebelbean-bundle-qa.json",
+        "files": 74,
+        "bytes": 3608426,
+        "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
+        "foreignPaths404": 133,
+        "otherDemoIdsRejected": 15,
+        "paidCalls": 0,
+        "note": "príprava, nie produkčné nasadenie"
       }
     },
     {
@@ -210,6 +237,9 @@
         "firstIssues": [],
         "console": 0,
         "storage": []
+      },
+      "handoffBundle": {
+        "skipped": "READY_FOR_REVIEW_PARTIAL (2 kávy blokované)"
       }
     },
     {
@@ -254,6 +284,18 @@
         "firstIssues": [],
         "console": 0,
         "storage": []
+      },
+      "handoffBundle": {
+        "builtFrom": "e5e32d3",
+        "manifest": "n447/bundles/doubleshot.manifest.json",
+        "qa": "n447/bundles/doubleshot-bundle-qa.json",
+        "files": 74,
+        "bytes": 3187252,
+        "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
+        "foreignPaths404": 133,
+        "otherDemoIdsRejected": 15,
+        "paidCalls": 0,
+        "note": "príprava, nie produkčné nasadenie"
       }
     },
     {
@@ -301,6 +343,18 @@
         "firstIssues": [],
         "console": 0,
         "storage": []
+      },
+      "handoffBundle": {
+        "builtFrom": "e5e32d3",
+        "manifest": "n447/bundles/fathers.manifest.json",
+        "qa": "n447/bundles/fathers-bundle-qa.json",
+        "files": 97,
+        "bytes": 3593084,
+        "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
+        "foreignPaths404": 133,
+        "otherDemoIdsRejected": 15,
+        "paidCalls": 0,
+        "note": "príprava, nie produkčné nasadenie"
       }
     },
     {
@@ -345,6 +399,18 @@
         "firstIssues": [],
         "console": 0,
         "storage": []
+      },
+      "handoffBundle": {
+        "builtFrom": "e5e32d3",
+        "manifest": "n447/bundles/candycane.manifest.json",
+        "qa": "n447/bundles/candycane-bundle-qa.json",
+        "files": 75,
+        "bytes": 2825086,
+        "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
+        "foreignPaths404": 133,
+        "otherDemoIdsRejected": 15,
+        "paidCalls": 0,
+        "note": "príprava, nie produkčné nasadenie"
       }
     },
     {
@@ -393,6 +459,18 @@
         "firstIssues": [],
         "console": 0,
         "storage": []
+      },
+      "handoffBundle": {
+        "builtFrom": "e5e32d3",
+        "manifest": "n447/bundles/9gramscoffee.manifest.json",
+        "qa": "n447/bundles/9gramscoffee-bundle-qa.json",
+        "files": 93,
+        "bytes": 3873139,
+        "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
+        "foreignPaths404": 133,
+        "otherDemoIdsRejected": 15,
+        "paidCalls": 0,
+        "note": "príprava, nie produkčné nasadenie"
       }
     },
     {
@@ -406,7 +484,7 @@
         "doprava v ukážke neoverená (stránka dopravy nenájdená) – chat odkáže na e-shop",
         "kontakt info@renovality.cz overený 2026-10-25 na https://www.renovality.cz/kontakty/, bez zmeny",
         "ceny: 54/54 doložené na karte produktu vo výpise; odkazy 54/54 živo 200 bez presmerovania (2026-10-25)",
-        "veľkosť balenia neoverená pri 9 produktoch (karta ju neuvádza; 4 tuhé deodoranty, 5 produktov s objemom iba v adrese) – cena je jediná cena produktu"
+        "veľkosť balenia NEOVERENÁ pri 9 produktoch (karta ju neuvádza; 4 tuhé deodoranty, 5 produktov s objemom iba v adrese) – v ukážke zobrazené „Velikost balení neověřena“, source.packVerified=false; cena je jediná cena produktu"
       ],
       "page": "/renovality.html",
       "customerLink": "https://renovality.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)",
@@ -445,7 +523,7 @@
         "Renohair 100 ml s pipetkou – vlasová péče",
         "doplňky stravy, káva a čaj, vůně, svíčky a domácnost (mimo kosmetiku)"
       ],
-      "commit": "2297753",
+      "commit": "110a5e7",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -459,6 +537,18 @@
         "issues": 0,
         "firstIssues": [],
         "console": 0
+      },
+      "handoffBundle": {
+        "builtFrom": "e5e32d3",
+        "manifest": "n447/bundles/renovality.manifest.json",
+        "qa": "n447/bundles/renovality-bundle-qa.json",
+        "files": 84,
+        "bytes": 3336157,
+        "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
+        "foreignPaths404": 133,
+        "otherDemoIdsRejected": 15,
+        "paidCalls": 0,
+        "note": "príprava, nie produkčné nasadenie"
       }
     },
     {
@@ -504,7 +594,7 @@
         "ostatní velikosti balení (cena až po výběru varianty)",
         "tělové produkty vedené pod zdravotními kategoriemi menu (děti, těhotenství, intimní hygiena, akné)"
       ],
-      "commit": "b593f86",
+      "commit": "110a5e7",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -518,6 +608,18 @@
         "issues": 0,
         "firstIssues": [],
         "console": 0
+      },
+      "handoffBundle": {
+        "builtFrom": "e5e32d3",
+        "manifest": "n447/bundles/saloos.manifest.json",
+        "qa": "n447/bundles/saloos-bundle-qa.json",
+        "files": 84,
+        "bytes": 3505509,
+        "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
+        "foreignPaths404": 133,
+        "otherDemoIdsRejected": 15,
+        "paidCalls": 0,
+        "note": "príprava, nie produkčné nasadenie"
       }
     },
     {
@@ -532,7 +634,7 @@
         "kontakt nobilis@nobilis.cz overený 2026-10-25 na https://www.nobilis.cz/kontakt/, bez zmeny",
         "ceny: 150/150 doložené (68 stránka varianty, 82 karta výpisu); odkazy: 74 živo 200, 76 odkazov kariet presmerovalo 301 na konkrétnu stránku produktu s veľkosťou → nahradené cieľom (200, cena v JSON-LD zhodná), 2026-10-25",
         "Biofáze séra a pro-kolagénová maska opravené na balenie 3 × 20 ml a 6 × 25 g (cena za celé balenie)",
-        "veľkosť balenia neoverená pri 1 produkte (Bioaktivní liftingové sérum)"
+        "veľkosť balenia NEOVERENÁ pri 1 produkte (Bioaktivní liftingové sérum) – v ukážke „Velikost balení neověřena“, source.packVerified=false"
       ],
       "page": "/nobilistilia.html",
       "customerLink": "https://nobilistilia.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)",
@@ -567,7 +669,7 @@
         "Dětský sprchový gel Vendelín 500 ml – těhotenství a děti",
         "těhotenství, matka a dítě, éterické oleje a aromaterapie, doplňky stravy, bylinková lékárna, ekzém, celulitida, intimní hygiena (mimo běžnou kosmetickou péči)"
       ],
-      "commit": "fbb90a9",
+      "commit": "110a5e7",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -581,6 +683,18 @@
         "issues": 0,
         "firstIssues": [],
         "console": 0
+      },
+      "handoffBundle": {
+        "builtFrom": "e5e32d3",
+        "manifest": "n447/bundles/nobilistilia.manifest.json",
+        "qa": "n447/bundles/nobilistilia-bundle-qa.json",
+        "files": 84,
+        "bytes": 3564221,
+        "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
+        "foreignPaths404": 133,
+        "otherDemoIdsRejected": 15,
+        "paidCalls": 0,
+        "note": "príprava, nie produkčné nasadenie"
       }
     },
     {
@@ -596,7 +710,7 @@
         "e-shop má vlastný chat – ukážka ho dopĺňa, nenahrádza",
         "kontakt info@manufaktura.cz overený 2026-10-25 na https://manufaktura.cz/kontakt/ („Kontakt na sídlo firmy“; objednávky eshop@manufaktura.cz), bez zmeny",
         "ceny: 36/36 doložené v štruktúrovaných dátach a na karte výpisu; odkazy 36/36 živo 200 bez presmerovania (2026-10-25)",
-        "2 produkty sú mini balenia predávané ako samostatný produkt (odličovacie mlieko 30 ml, pleťová voda 80 ml) – cena platí pre to balenie"
+        "2 mini balenia predávané ako samostatný produkt – v ukážke zobrazené „mini balení · 30 ml“ a „mini balení · 80 ml“ (source.packType=mini), nie ako štandardné balenie; cena platí pre mini balenie"
       ],
       "page": "/manufaktura.html",
       "customerLink": "https://manufaktura.mojchatbot.sk/ (až po schválení produkcie; dnes neexistuje)",
@@ -625,7 +739,7 @@
         "Přírodní multifunkční SOS balzám na pokožku REGENERACE & VÝŽIVA – mimo vybrané typy pleťové rutiny",
         "tělo, vlasy, vůně, líčení, UV ochrana, balzámy na rty, multifunkční tyčinky a dárkové sady – mimo ohraničenou pleťovou rutinu této ukázky"
       ],
-      "commit": "2297753",
+      "commit": "110a5e7",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -639,6 +753,18 @@
         "issues": 0,
         "firstIssues": [],
         "console": 0
+      },
+      "handoffBundle": {
+        "builtFrom": "e5e32d3",
+        "manifest": "n447/bundles/manufaktura.manifest.json",
+        "qa": "n447/bundles/manufaktura-bundle-qa.json",
+        "files": 84,
+        "bytes": 3296270,
+        "localQa": "PASS (lokálne, 390×844 a 1280×800, jeden priechod + simulovaný chat)",
+        "foreignPaths404": 133,
+        "otherDemoIdsRejected": 15,
+        "paidCalls": 0,
+        "note": "príprava, nie produkčné nasadenie"
       }
     }
   ]
