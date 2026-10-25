@@ -1,16 +1,10 @@
 {
  "slug": "9gramscoffee",
  "family": "coffee",
- "builtFrom": "e5e32d3",
+ "builtFrom": "ce15ca3",
  "static": {
   "otherHosts": {},
   "sharedCodeIdentifiers": {
-   "coffee-quality.js": [
-    "mylo"
-   ],
-   "n447/data/9gramscoffee.js": [
-    "diamonds"
-   ],
    "coffee-header-cleanup.css": [
     "casadelcaffe",
     "coffeesheep",
@@ -21,6 +15,13 @@
     "concept",
     "kaffa"
    ],
+   "coffee-quality.js": [
+    "mylo"
+   ],
+   "coffee-widget-polish.js": [
+    "kaffa",
+    "praziarnicka"
+   ],
    "n447/coffee-owner-brand-n447.js": [
     "concept",
     "diamonds",
@@ -28,13 +29,12 @@
     "praziarnicka",
     "vitazov"
    ],
-   "coffee-widget-polish.js": [
-    "kaffa",
-    "praziarnicka"
+   "n447/data/9gramscoffee.js": [
+    "diamonds"
    ]
   },
-  "files": 93,
-  "bytes": 3873139,
+  "files": 121,
+  "bytes": 3906788,
   "excludedForeignAssets": []
  },
  "http": {
@@ -51,7 +51,7 @@
  },
  "browser": {
   "390x844": {
-   "requests": 41,
+   "requests": 49,
    "hosts": [
     "127.0.0.1"
    ],
@@ -59,13 +59,26 @@
    "errors": [],
    "trail": [
     "Kávovar alebo automat",
+    "S kofeínom",
     "Čokoláda a orechy",
     "Do 9,90 €",
-    "Natural + washed",
+    "Kombinácia oboch štýlov",
     "kakao · čokoláda"
    ],
    "resultShown": true,
    "result": "Baristocrat blend\n\nzmes viacerých krajín\n\n250 g · medium dark praženie · zrnková\n9,90 €\nĎalšie balenia: 1 kg 31,90 € (nad rozpočet)\nNa espresso aj do automatuE-shop ju uvádza na: e-shop uvádza vhodnosť na: espresso, moka kanvičku, zalievanú kávu, french press.\nČokoláda a orechyV chuti: kakao, čokoláda, lieskové orechy, toast.\nV rozpočte250 g spolu 9,90 €; váš limit 9,90 €.\n\nEspresso blend · 55 % A",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.coffeeart.me/9-grams-coffee-baristocrat-blend/",
+    "text": "Zobraziť túto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filter",
+    "Máte ovocnú kávu?",
+    "Máte kávu bez kofeínu?"
+   ],
    "chatReply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nBrazil Alta Mogiana Natural — 250 g za 8,90 €\nPozrieť v e-shope ↗\n(V chuti: lieskový orech, horká čokoláda, karamel.)\nCuba Caracolilo Robusta Peaberry — 250 g za 9,00 €\nPozrieť v e-shope ↗\n(V chuti: lieskový orech, karamel, tabak.)",
    "foreignInText": [],
    "oldOffer": false,
@@ -73,7 +86,7 @@
    "externalHosts": []
   },
   "1280x800": {
-   "requests": 41,
+   "requests": 49,
    "hosts": [
     "127.0.0.1"
    ],
@@ -81,13 +94,26 @@
    "errors": [],
    "trail": [
     "Kávovar alebo automat",
+    "S kofeínom",
     "Čokoláda a orechy",
     "Do 9,90 €",
-    "Natural + washed",
+    "Kombinácia oboch štýlov",
     "kakao · čokoláda"
    ],
    "resultShown": true,
    "result": "Baristocrat blend\n\nzmes viacerých krajín\n\n250 g · medium dark praženie · zrnková\n9,90 €\nĎalšie balenia: 1 kg 31,90 € (nad rozpočet)\nNa espresso aj do automatuE-shop ju uvádza na: e-shop uvádza vhodnosť na: espresso, moka kanvičku, zalievanú kávu, french press.\nČokoláda a orechyV chuti: kakao, čokoláda, lieskové orechy, toast.\nV rozpočte250 g spolu 9,90 €; váš limit 9,90 €.\n\nEspresso blend · 55 % A",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.coffeeart.me/9-grams-coffee-baristocrat-blend/",
+    "text": "Zobraziť túto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filter",
+    "Máte ovocnú kávu?",
+    "Máte kávu bez kofeínu?"
+   ],
    "chatReply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nBrazil Alta Mogiana Natural — 250 g za 8,90 €\nPozrieť v e-shope ↗\n(V chuti: lieskový orech, horká čokoláda, karamel.)\nCuba Caracolilo Robusta Peaberry — 250 g za 9,00 €\nPozrieť v e-shope ↗\n(V chuti: lieskový orech, karamel, tabak.)",
    "foreignInText": [],
    "oldOffer": false,
@@ -100,9 +126,8 @@
   "apiCalls": 20,
   "outboundBlocked": 0,
   "outboundHosts": [],
-  "served": 85,
+  "served": 101,
   "notFound": 135
  },
- "paidCalls": 0,
- "checkedContentIdenticalTo": "e5e32d3"
+ "paidCalls": 0
 }

@@ -1,7 +1,7 @@
 {
  "slug": "renovality",
  "family": "cosmetics",
- "builtFrom": "e5e32d3",
+ "builtFrom": "ce15ca3",
  "static": {
   "otherHosts": {
    "catalogue-advisor.js": [
@@ -9,8 +9,26 @@
    ]
   },
   "sharedCodeIdentifiers": {
+   "index.html": [
+    "kvitok"
+   ],
+   "nove-znacky.css": [
+    "monlevur",
+    "mydlitto",
+    "pimpinella",
+    "yemna"
+   ],
    "n447/kozmetika/cosmetics-n447.js": [
     "modrapupava",
+    "mylo"
+   ],
+   "skincare-final-fix.js": [
+    "modrapupava",
+    "syncare"
+   ],
+   "cosmetics-polish.css": [
+    "anemone",
+    "bellcoria",
     "mylo"
    ],
    "skincare-targeted-hotfix.css": [
@@ -23,64 +41,7 @@
     "ponio",
     "syncare"
    ],
-   "cosmetics.css": [
-    "anemone",
-    "bellcoria",
-    "biofy",
-    "mylo",
-    "ponio"
-   ],
-   "skincare-final-brand-marks.js": [
-    "barboralori",
-    "cyprianus",
-    "facederma",
-    "modrapupava"
-   ],
-   "skincare-final-fix.js": [
-    "modrapupava",
-    "syncare"
-   ],
-   "kvitok-brand-mark-preload.js": [
-    "kvitok"
-   ],
-   "cosmetics-polish.css": [
-    "anemone",
-    "bellcoria",
-    "mylo"
-   ],
-   "skincare-final-fix.css": [
-    "barboralori",
-    "syncare"
-   ],
-   "advisor-quality.css": [
-    "mylo"
-   ],
-   "skincare-refresh.css": [
-    "anemone",
-    "barboralori",
-    "bellcoria",
-    "concept",
-    "mylo",
-    "ponio"
-   ],
-   "catalogue-advisor.css": [
-    "ponio"
-   ],
-   "n447/kozmetika/advisor-boot-n447.js": [
-    "kvitok"
-   ],
-   "index.html": [
-    "kvitok"
-   ],
-   "skincare-final-logo-qa.js": [
-    "cyprianus",
-    "fytopharma",
-    "kvitok",
-    "modrapupava",
-    "mylo",
-    "ponio"
-   ],
-   "skincare-review-fixes-20260914.js": [
+   "nove-znacky.js": [
     "cyprianus"
    ],
    "catalogue-config.js": [
@@ -98,25 +59,19 @@
     "puaree",
     "yemna"
    ],
-   "skincare-avatar-round-fix.css": [
-    "syncare"
-   ],
-   "skincare-launcher-logo-fix.js": [
-    "cyprianus",
+   "skincare-final-fix.css": [
+    "barboralori",
     "syncare"
    ],
    "launcher-finish.js": [
     "almara",
     "cyprianus"
    ],
-   "skincare-review-fixes-20260914.css": [
+   "cosmetics.css": [
     "anemone",
-    "barboralori",
     "bellcoria",
     "biofy",
-    "cyprianus",
     "mylo",
-    "panakeia",
     "ponio"
    ],
    "skincare-final-logo-qa.css": [
@@ -134,20 +89,29 @@
     "soaphoria",
     "syncare"
    ],
-   "nove-znacky.js": [
-    "cyprianus"
+   "skincare-avatar-round-fix.css": [
+    "syncare"
+   ],
+   "skincare-review-fixes-20260914.css": [
+    "anemone",
+    "barboralori",
+    "bellcoria",
+    "biofy",
+    "cyprianus",
+    "mylo",
+    "panakeia",
+    "ponio"
    ],
    "kvitok-logo-final-fix.js": [
     "kvitok"
    ],
-   "kvitok-direct-logo.css": [
-    "kvitok"
-   ],
-   "nove-znacky.css": [
-    "monlevur",
-    "mydlitto",
-    "pimpinella",
-    "yemna"
+   "skincare-refresh.css": [
+    "anemone",
+    "barboralori",
+    "bellcoria",
+    "concept",
+    "mylo",
+    "ponio"
    ],
    "skincare-final-brand-overrides.css": [
     "anemone",
@@ -160,10 +124,46 @@
     "natureal",
     "panakeia",
     "syncare"
+   ],
+   "advisor-quality.css": [
+    "mylo"
+   ],
+   "catalogue-advisor.css": [
+    "ponio"
+   ],
+   "skincare-final-logo-qa.js": [
+    "cyprianus",
+    "fytopharma",
+    "kvitok",
+    "modrapupava",
+    "mylo",
+    "ponio"
+   ],
+   "skincare-review-fixes-20260914.js": [
+    "cyprianus"
+   ],
+   "kvitok-brand-mark-preload.js": [
+    "kvitok"
+   ],
+   "skincare-launcher-logo-fix.js": [
+    "cyprianus",
+    "syncare"
+   ],
+   "n447/kozmetika/advisor-boot-n447.js": [
+    "kvitok"
+   ],
+   "kvitok-direct-logo.css": [
+    "kvitok"
+   ],
+   "skincare-final-brand-marks.js": [
+    "barboralori",
+    "cyprianus",
+    "facederma",
+    "modrapupava"
    ]
   },
   "files": 84,
-  "bytes": 3336157,
+  "bytes": 3336788,
   "excludedForeignAssets": [
    "assets/catalogue/logos/modrapupava-symbol.png",
    "assets/cosmetics/barboralori-logo.png",
@@ -202,6 +202,12 @@
    ],
    "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nHyaluronové sérum 30 ml airless\n\n30 ml\n\nPleť\nSéra\nJemná péče\nSuchá a napjatá\ndo 300 Kč\n255 Kč\nZobrazit produkt ↗\n\nSérum jako cílený krok péče.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Cena je v rámci vašeho limitu 300 Kč.\n\nCo doporučuji dál\n\n",
    "resultShown": true,
+   "chips": [
+    "Mám suchou pleť",
+    "Péče o tělo",
+    "Péče o oční okolí",
+    "Mám citlivou pleť"
+   ],
    "chatReply": "Z nabídky vybírám (pleť, pro suchou pleť):\n\nHeřmánková voda 100ml — 177 Kč. Podle popisu pro suchou a mastnou a citlivou pleť, pro pleť se sklonem k mastnotě, zklidnění. Zobrazit produkt v e-shopu ↗\n\nRůžová voda 100 ml — 177 Kč. Podle popisu pro suchou a mastnou a citlivou pleť, pro pleť se sklonem ",
    "foreignInText": [],
    "oldOffer": false,
@@ -227,6 +233,12 @@
    ],
    "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nHyaluronové sérum 30 ml airless\n\n30 ml\n\nPleť\nSéra\nJemná péče\nSuchá a napjatá\ndo 300 Kč\n255 Kč\nZobrazit produkt ↗\n\nSérum jako cílený krok péče.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Cena je v rámci vašeho limitu 300 Kč.\n\nCo doporučuji dál\n\n",
    "resultShown": true,
+   "chips": [
+    "Mám suchou pleť",
+    "Péče o tělo",
+    "Péče o oční okolí",
+    "Mám citlivou pleť"
+   ],
    "chatReply": "Z nabídky vybírám (pleť, pro suchou pleť):\n\nHeřmánková voda 100ml — 177 Kč. Podle popisu pro suchou a mastnou a citlivou pleť, pro pleť se sklonem k mastnotě, zklidnění. Zobrazit produkt v e-shopu ↗\n\nRůžová voda 100 ml — 177 Kč. Podle popisu pro suchou a mastnou a citlivou pleť, pro pleť se sklonem ",
    "foreignInText": [],
    "oldOffer": false,
@@ -244,6 +256,5 @@
   "served": 119,
   "notFound": 135
  },
- "paidCalls": 0,
- "checkedContentIdenticalTo": "e5e32d3"
+ "paidCalls": 0
 }

@@ -1,7 +1,7 @@
 {
  "slug": "fathers",
  "family": "coffee",
- "builtFrom": "e5e32d3",
+ "builtFrom": "ce15ca3",
  "entry": "fathers.html",
  "files": [
   {
@@ -286,6 +286,141 @@
    "sha256": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2"
   },
   {
+   "path": "assets/n447/ilustracie/blend-arabica.svg",
+   "bytes": 428,
+   "sha256": "4800aa834054225702ca49ffad879b0973db7c510337b32ddcc22b8e012bc3a9"
+  },
+  {
+   "path": "assets/n447/ilustracie/blend-robusta.svg",
+   "bytes": 636,
+   "sha256": "013ee90f393469637dabca85110c462de3fc3648ca831e08fbdba1adf45bdc14"
+  },
+  {
+   "path": "assets/n447/ilustracie/budget-1.svg",
+   "bytes": 617,
+   "sha256": "89ed7bac13d703c5d75f22e95d371cb571ae50d3f8fbe3e5e818ae14085f7f89"
+  },
+  {
+   "path": "assets/n447/ilustracie/budget-2.svg",
+   "bytes": 803,
+   "sha256": "c779f47a2b63e021334c43c9ba6585f0b9c11431aed7c59263acd361c6978f0c"
+  },
+  {
+   "path": "assets/n447/ilustracie/budget-any.svg",
+   "bytes": 936,
+   "sha256": "c501628d5feebd3d8a1340c49746640a9f14a984aaf64f5abd1ff6e38b161f8b"
+  },
+  {
+   "path": "assets/n447/ilustracie/drip-10.svg",
+   "bytes": 3119,
+   "sha256": "2ce1da7f8abdf03cfd0132cd35d885c59ce25cd85143fab21765b4d03b5d8349"
+  },
+  {
+   "path": "assets/n447/ilustracie/drip-5.svg",
+   "bytes": 1625,
+   "sha256": "d74ab6cf9575225dd4148f936f84323a7d7040ddedeefbd00c61392094e7e4e3"
+  },
+  {
+   "path": "assets/n447/ilustracie/drip-a.svg",
+   "bytes": 784,
+   "sha256": "0b8f0808a4944e6de503b0f1e2c423f3fba1c1ba2d45b4c4948490d10cec3783"
+  },
+  {
+   "path": "assets/n447/ilustracie/drip-b.svg",
+   "bytes": 784,
+   "sha256": "770932b77db1dd58819f502e2bcf116da80b81dc803dd9cd0305a9c6c2d0b2e7"
+  },
+  {
+   "path": "assets/n447/ilustracie/proc-honey.svg",
+   "bytes": 648,
+   "sha256": "cd8c72a585b1ca922a0c71af8c6433d40281565a8a7a8f514057b3af47cef185"
+  },
+  {
+   "path": "assets/n447/ilustracie/proc-mix.svg",
+   "bytes": 845,
+   "sha256": "4f566fec624e67db2fd6c7ab55810fd4ce2ebc6b6e55298f00cf611adb36b204"
+  },
+  {
+   "path": "assets/n447/ilustracie/proc-natural.svg",
+   "bytes": 1638,
+   "sha256": "a0391891868e36b681f32ba0d3d8f98ee388c041275681a42e9e2c7d5442ee5e"
+  },
+  {
+   "path": "assets/n447/ilustracie/proc-semi.svg",
+   "bytes": 751,
+   "sha256": "86f63146d94a56e558a0ae56a5c92f3bdb9204e90d4d5c20fd06fd3b28720b8e"
+  },
+  {
+   "path": "assets/n447/ilustracie/proc-washed.svg",
+   "bytes": 932,
+   "sha256": "160968a823bbd9abea5d9cf46af1f2b4d81e9a69cdaa9fa66d2b3682b1be6d65"
+  },
+  {
+   "path": "assets/n447/ilustracie/region-africa.svg",
+   "bytes": 1062,
+   "sha256": "7984902ee60849e7314ea0e21c2ab320b0c19a9666d22ce37e4cc37595043bc3"
+  },
+  {
+   "path": "assets/n447/ilustracie/region-americas.svg",
+   "bytes": 1062,
+   "sha256": "63b6c9c7b3b2b8884e41a6b3f6983d5d584bd4e9627bc4ce54d089c98b5dd464"
+  },
+  {
+   "path": "assets/n447/ilustracie/region-asia.svg",
+   "bytes": 1062,
+   "sha256": "ce9edf354c196527c24111f0b5eb276071b0719d80cf85dfd465df559f1eeb2c"
+  },
+  {
+   "path": "assets/n447/ilustracie/region-blend.svg",
+   "bytes": 1482,
+   "sha256": "fc42896c13dd9dc8c771ee841eded9429757614857db1ce4d6b49b44723f8987"
+  },
+  {
+   "path": "assets/n447/ilustracie/roast-1.svg",
+   "bytes": 660,
+   "sha256": "a2692de2ab9984a3dbe01fd74b0838a6df3092afb4aa1a6ddcc648b6a4b6f6a3"
+  },
+  {
+   "path": "assets/n447/ilustracie/roast-2.svg",
+   "bytes": 660,
+   "sha256": "1e2652421b81346763ea14a880f3c101d2b105f2aa00774fdc8568122e0f1971"
+  },
+  {
+   "path": "assets/n447/ilustracie/roast-3.svg",
+   "bytes": 376,
+   "sha256": "827f955f6959e2cdd3b3cbf01192c655432d75e9e0466235e1c48d0aea10f697"
+  },
+  {
+   "path": "assets/n447/ilustracie/roast-dark.svg",
+   "bytes": 992,
+   "sha256": "431561875bae3ce82a0381c0f4ba98c00754cb8cd2c61aa83b55c139f6150a73"
+  },
+  {
+   "path": "assets/n447/ilustracie/roast-light.svg",
+   "bytes": 992,
+   "sha256": "e9c427496736e832875916f3c9314cd631af51139af92f8195da84fc7a1d4541"
+  },
+  {
+   "path": "assets/n447/ilustracie/roast-medium.svg",
+   "bytes": 992,
+   "sha256": "44bf455f17c4daad7e88489005f4ba4951b16bb91cea7f520cb4aa3000ccd831"
+  },
+  {
+   "path": "assets/n447/ilustracie/tool-aeropress.svg",
+   "bytes": 957,
+   "sha256": "e6cc95c5b4fab1d919556e95b7f2a9b891cac7a00c4829bf59ed8c1dfd796c8b"
+  },
+  {
+   "path": "assets/n447/ilustracie/tool-frenchpress.svg",
+   "bytes": 738,
+   "sha256": "96bafebd48afdfda3efb57d296717d7a05bf16d96a3c3cc33885ce68cc2e762d"
+  },
+  {
+   "path": "assets/n447/ilustracie/tool-v60.svg",
+   "bytes": 997,
+   "sha256": "0860eb963603ccaaf3554e4815b36b88c2b7cd4defc772654fe2b17310879a0b"
+  },
+  {
    "path": "assets/scenes/coffee-acidity-bright.jpg",
    "bytes": 97968,
    "sha256": "2818b65da36f50ac8fe13f9e306f2b883e6cc21f3bc9c92dcb4617c1e88244b7"
@@ -427,8 +562,8 @@
   },
   {
    "path": "fathers.html",
-   "bytes": 2129,
-   "sha256": "41dfabdc2d7fc442e560ba8e3a5a39439070be33716d34747e46fcac120d69df"
+   "bytes": 2184,
+   "sha256": "b8c027189ed2a80fa879afe0fdba038825aac01e0062face0fefc07657b29dcc"
   },
   {
    "path": "jolka/jolka.css",
@@ -442,13 +577,13 @@
   },
   {
    "path": "n447/coffee-jolka-app-n447.js",
-   "bytes": 65542,
-   "sha256": "182977727a905e05f688ecbe873ef277bc912ba8c72bd56463467357ea642444"
+   "bytes": 66648,
+   "sha256": "db9586e5b0977b7b6b43f351a8bf48d1c9187c3541cddbf577b0bc067544f23d"
   },
   {
    "path": "n447/coffee-owner-brand-n447.js",
-   "bytes": 16975,
-   "sha256": "778c4164dda27bdeffa89df778e30ff5392aa85d3663cc4aca850c9ea3a552b8"
+   "bytes": 17286,
+   "sha256": "865a5158ab05c31630557e681b53babdbc80ddc88a68ac2beaf2d3f7f8f04d71"
   },
   {
    "path": "n447/data/fathers.js",
@@ -457,8 +592,8 @@
   },
   {
    "path": "n447/engine.js",
-   "bytes": 32101,
-   "sha256": "c1c644496b36bbd93b32512ca2bd48bf4622a94158b2bfff2bb434939b3f22f4"
+   "bytes": 36046,
+   "sha256": "2b134bd5c1b5701c34b646900796a5f20b1b99bd51dbaef5433b76f84ebce388"
   },
   {
    "path": "n447/fathers-jolka-theme.css",
@@ -466,9 +601,14 @@
    "sha256": "0e8b05161275bc9c6febb3f5898ed12e378a720aec29414f5bfe172c5d53c5cc"
   },
   {
+   "path": "n447/n447-ui-fixes.css",
+   "bytes": 1559,
+   "sha256": "273a5f929db47818514b15e5a9df2e4a8f5b336c73f0725a36fee2326d6b7ba6"
+  },
+  {
    "path": "n447/owner-more-info-n447.js",
-   "bytes": 6238,
-   "sha256": "d4f22b255b6e1c588d818524678ea3fc623a3d1edd8f6d9334699607f9672ba4"
+   "bytes": 6278,
+   "sha256": "1692538e1e00286712a9a057a9c64b1ae66126f836e8bfabaebc2a4d0fa1b95e"
   },
   {
    "path": "n447/reply.js",
@@ -489,8 +629,8 @@
   },
   {
    "path": "index.html",
-   "bytes": 2129,
-   "sha256": "41dfabdc2d7fc442e560ba8e3a5a39439070be33716d34747e46fcac120d69df",
+   "bytes": 2184,
+   "sha256": "b8c027189ed2a80fa879afe0fdba038825aac01e0062face0fefc07657b29dcc",
    "copyOf": "fathers.html"
   }
  ],
@@ -561,5 +701,5 @@
   "yemna",
   "zlatezrnko"
  ],
- "totalBytes": 3593084
+ "totalBytes": 3626733
 }

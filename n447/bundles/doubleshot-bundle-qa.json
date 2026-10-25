@@ -1,10 +1,17 @@
 {
  "slug": "doubleshot",
  "family": "coffee",
- "builtFrom": "e5e32d3",
+ "builtFrom": "ce15ca3",
  "static": {
   "otherHosts": {},
   "sharedCodeIdentifiers": {
+   "coffee-quality.js": [
+    "mylo"
+   ],
+   "coffee-widget-polish.js": [
+    "kaffa",
+    "praziarnicka"
+   ],
    "n447/coffee-owner-brand-n447.js": [
     "concept",
     "diamonds",
@@ -12,26 +19,19 @@
     "praziarnicka",
     "vitazov"
    ],
-   "coffee-quality.js": [
-    "mylo"
+   "coffee-widget-polish.css": [
+    "concept",
+    "kaffa"
    ],
    "coffee-header-cleanup.css": [
     "casadelcaffe",
     "coffeesheep",
     "praziarnicka",
     "zlatezrnko"
-   ],
-   "coffee-widget-polish.js": [
-    "kaffa",
-    "praziarnicka"
-   ],
-   "coffee-widget-polish.css": [
-    "concept",
-    "kaffa"
    ]
   },
-  "files": 74,
-  "bytes": 3187252,
+  "files": 102,
+  "bytes": 3220901,
   "excludedForeignAssets": []
  },
  "http": {
@@ -48,7 +48,7 @@
  },
  "browser": {
   "390x844": {
-   "requests": 40,
+   "requests": 42,
    "hosts": [
     "127.0.0.1"
    ],
@@ -56,10 +56,23 @@
    "errors": [],
    "trail": [
     "Kávovar nebo automat",
+    "S kofeinem",
     "Sladké a krémové"
    ],
    "resultShown": true,
    "result": "Start\n\nBrazílie (Bobolink, Caconde) – směs\n\n300 g · pražení na espresso · zrnková\n335 Kč\nDalší balení: 1 kg 1 095 Kč\nNa espresso i do automatuPražírna ji nabízí v espresso pražení.\nSladké a krémovéV chuti: pražené oříšky, čokoláda, karamel.\n\nSladké a krémové espresso na doma; základní směs pražírny pro automatické a domácí kávovary, tmavší pražení než Era.\n\nPŮVOD\nBrazílie (Bobolink, Caconde) – smě",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.doubleshot.cz/cs/products/start-espresso",
+    "text": "Zobrazit tuto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filtr",
+    "Máte ovocnou kávu?",
+    "Máte kávu bez kofeinu?"
+   ],
    "chatReply": "Decaf Espresso: Espresso bez kofeinu, ovocné a elegantní; klidně odpoledne i večer. V chuti: karamel, sušená jablka, jemná acidita. Původ: Kostarika · Tarrazu, farma Don Oscar, zpracování white honey, bez kofeinu. Pražení: espresso; balení 300 g, 1 kg.\nCeny: 300 g, zrnková: 365 Kč; 1 kg, zrnková: 1 ",
    "foreignInText": [],
    "oldOffer": false,
@@ -67,7 +80,7 @@
    "externalHosts": []
   },
   "1280x800": {
-   "requests": 40,
+   "requests": 42,
    "hosts": [
     "127.0.0.1"
    ],
@@ -75,10 +88,23 @@
    "errors": [],
    "trail": [
     "Kávovar nebo automat",
+    "S kofeinem",
     "Sladké a krémové"
    ],
    "resultShown": true,
    "result": "Start\n\nBrazílie (Bobolink, Caconde) – směs\n\n300 g · pražení na espresso · zrnková\n335 Kč\nDalší balení: 1 kg 1 095 Kč\nNa espresso i do automatuPražírna ji nabízí v espresso pražení.\nSladké a krémovéV chuti: pražené oříšky, čokoláda, karamel.\n\nSladké a krémové espresso na doma; základní směs pražírny pro automatické a domácí kávovary, tmavší pražení než Era.\n\nPŮVOD\nBrazílie (Bobolink, Caconde) – smě",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.doubleshot.cz/cs/products/start-espresso",
+    "text": "Zobrazit tuto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filtr",
+    "Máte ovocnou kávu?",
+    "Máte kávu bez kofeinu?"
+   ],
    "chatReply": "Decaf Espresso: Espresso bez kofeinu, ovocné a elegantní; klidně odpoledne i večer. V chuti: karamel, sušená jablka, jemná acidita. Původ: Kostarika · Tarrazu, farma Don Oscar, zpracování white honey, bez kofeinu. Pražení: espresso; balení 300 g, 1 kg.\nCeny: 300 g, zrnková: 365 Kč; 1 kg, zrnková: 1 ",
    "foreignInText": [],
    "oldOffer": false,
@@ -91,9 +117,8 @@
   "apiCalls": 20,
   "outboundBlocked": 0,
   "outboundHosts": [],
-  "served": 83,
+  "served": 87,
   "notFound": 135
  },
- "paidCalls": 0,
- "checkedContentIdenticalTo": "e5e32d3"
+ "paidCalls": 0
 }

@@ -1,22 +1,13 @@
 {
  "slug": "verticcio",
  "family": "coffee",
- "builtFrom": "e5e32d3",
+ "builtFrom": "ce15ca3",
  "static": {
   "otherHosts": {},
   "sharedCodeIdentifiers": {
-   "coffee-quality.js": [
-    "mylo"
-   ],
    "coffee-widget-polish.js": [
     "kaffa",
     "praziarnicka"
-   ],
-   "coffee-header-cleanup.css": [
-    "casadelcaffe",
-    "coffeesheep",
-    "praziarnicka",
-    "zlatezrnko"
    ],
    "coffee-widget-polish.css": [
     "concept",
@@ -28,10 +19,19 @@
     "kaffa",
     "praziarnicka",
     "vitazov"
+   ],
+   "coffee-quality.js": [
+    "mylo"
+   ],
+   "coffee-header-cleanup.css": [
+    "casadelcaffe",
+    "coffeesheep",
+    "praziarnicka",
+    "zlatezrnko"
    ]
   },
-  "files": 84,
-  "bytes": 3800000,
+  "files": 112,
+  "bytes": 3833649,
   "excludedForeignAssets": []
  },
  "http": {
@@ -48,7 +48,7 @@
  },
  "browser": {
   "390x844": {
-   "requests": 42,
+   "requests": 47,
    "hosts": [
     "127.0.0.1"
    ],
@@ -56,12 +56,25 @@
    "errors": [],
    "trail": [
     "Kávovar alebo automat",
+    "S kofeínom",
     "Čokoládová a oriešková",
     "Do 9,50 €",
     "javorový sirup · mandľa"
    ],
    "resultShown": true,
    "result": "METROPOLA blend\n\nJužná Amerika, Afrika\n\n200 g · medium (stredné) · zrnková\n9,50 €\nĎalšie balenia: 1 kg 39,50 € (nad rozpočet)\nNa espresso aj do automatuE-shop ju uvádza na: Espresso, Automatický kávovar, Moka / Koťogo, French Press.\nČokoládová a orieškováV chuti: javorový sirup, mandľa, mliečna čokoláda.\nV rozpočte200 g spolu 9,50 €; váš limit 9,50 €.\n\nEspresso zmes arabík a robusty (80/20); e-sho",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.verticcio.sk/kava/verticcio-metropola-blend-200g",
+    "text": "Zobraziť túto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filter",
+    "Máte ovocnú kávu?",
+    "Máte kávu bez kofeínu?"
+   ],
    "chatReply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nUGANDA Sucafina — 200 g za 8,00 €\nPozrieť v e-shope ↗\n(V chuti: horká čokoláda, lieskový orech.)\nOFFICE blend — 200 g za 9,30 €\nPozrieť v e-shope ↗\n(V chuti: grapefruit, horká čokoláda, lieskový orech.)",
    "foreignInText": [],
    "oldOffer": false,
@@ -69,7 +82,7 @@
    "externalHosts": []
   },
   "1280x800": {
-   "requests": 42,
+   "requests": 47,
    "hosts": [
     "127.0.0.1"
    ],
@@ -77,12 +90,25 @@
    "errors": [],
    "trail": [
     "Kávovar alebo automat",
+    "S kofeínom",
     "Čokoládová a oriešková",
     "Do 9,50 €",
     "javorový sirup · mandľa"
    ],
    "resultShown": true,
    "result": "METROPOLA blend\n\nJužná Amerika, Afrika\n\n200 g · medium (stredné) · zrnková\n9,50 €\nĎalšie balenia: 1 kg 39,50 € (nad rozpočet)\nNa espresso aj do automatuE-shop ju uvádza na: Espresso, Automatický kávovar, Moka / Koťogo, French Press.\nČokoládová a orieškováV chuti: javorový sirup, mandľa, mliečna čokoláda.\nV rozpočte200 g spolu 9,50 €; váš limit 9,50 €.\n\nEspresso zmes arabík a robusty (80/20); e-sho",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.verticcio.sk/kava/verticcio-metropola-blend-200g",
+    "text": "Zobraziť túto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filter",
+    "Máte ovocnú kávu?",
+    "Máte kávu bez kofeínu?"
+   ],
    "chatReply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nUGANDA Sucafina — 200 g za 8,00 €\nPozrieť v e-shope ↗\n(V chuti: horká čokoláda, lieskový orech.)\nOFFICE blend — 200 g za 9,30 €\nPozrieť v e-shope ↗\n(V chuti: grapefruit, horká čokoláda, lieskový orech.)",
    "foreignInText": [],
    "oldOffer": false,
@@ -95,9 +121,8 @@
   "apiCalls": 20,
   "outboundBlocked": 0,
   "outboundHosts": [],
-  "served": 87,
+  "served": 97,
   "notFound": 135
  },
- "paidCalls": 0,
- "checkedContentIdenticalTo": "e5e32d3"
+ "paidCalls": 0
 }

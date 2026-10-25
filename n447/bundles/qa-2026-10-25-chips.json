@@ -1,0 +1,419 @@
+{
+ "checkedAt": "2026-10-25",
+ "mockedModelCalls": 48,
+ "paidCalls": 0,
+ "chips": {
+  "black": [
+   {
+    "chip": "Káva do automatu",
+    "named": [
+     "blend • black sheep",
+     "brazil • doce citrus"
+    ],
+    "reply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nblend • black sheep — orientačne od 10,50 €\nhttps://www.black.sk/sk/blend-black-sheep\n(V chuti: horká čokoláda, lesné ovocie, sušené kôstkové ovocie.)\nb"
+   },
+   {
+    "chip": "Káva na filter",
+    "named": [
+     "rwanda • gitega",
+     "blend • juicy pussy"
+    ],
+    "reply": "Na filter sa hodia kávy vo filter pražení, napríklad:\nblend • juicy pussy — orientačne od 13,50 €\nhttps://www.black.sk/sk/juicy-pussy\nrwanda • gitega — orientačne od 14,00 €\nhttps://www.black.sk/sk/rwanda-gitega\nPri obje"
+   },
+   {
+    "chip": "Máte ovocnú kávu?",
+    "named": [
+     "india • gundikhan",
+     "honduras • el paraíso"
+    ],
+    "reply": "Plnú ovocnú chuť majú napríklad:\nhonduras • el paraíso — orientačne od 14,00 €\nhttps://www.black.sk/sk/honduras-el-paraiso\n(V chuti: ibištek, ostružiny, papája, červené ríbezle.)\nindia • gundikhan — orientačne od 15,00 €"
+   },
+   {
+    "chip": "Máte kávu bez kofeínu?",
+    "named": [
+     "colombia • popayán decaf"
+    ],
+    "reply": "Bez kofeínu je colombia • popayán decaf. Bezkofeínová káva; kofeín sa odstraňuje etylacetátom z cukrovej trstiny. Sladká a sirupová s mandľovým záverom.\ncolombia • popayán decaf — orientačne od 13,50 €\nhttps://www.black."
+   }
+  ],
+  "verticcio": [
+   {
+    "chip": "Káva do automatu",
+    "named": [
+     "OFFICE blend",
+     "UGANDA Sucafina"
+    ],
+    "reply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nUGANDA Sucafina — 200 g za 8,00 €\nhttps://www.verticcio.sk/kava/verticcio-uganda-sucafina-200g\n(V chuti: horká čokoláda, lieskový orech.)\nOFFICE blend —"
+   },
+   {
+    "chip": "Káva na filter",
+    "named": [
+     "KENYA Kibugu",
+     "UGANDA Rwenzori"
+    ],
+    "reply": "Na filter sa podľa e-shopu hodia napríklad:\nKENYA Kibugu — 200 g za 12,10 €\nhttps://www.verticcio.sk/kava/verticcio-kenya-kibugu-200g\nUGANDA Rwenzori — 200 g za 12,20 €\nhttps://www.verticcio.sk/kava/verticcio-uganda-rwen"
+   },
+   {
+    "chip": "Máte ovocnú kávu?",
+    "named": [
+     "BULVAR blend",
+     "PERU San Martin SHG G1"
+    ],
+    "reply": "Plnú ovocnú chuť majú napríklad:\nBULVAR blend — 200 g za 9,70 €\nhttps://www.verticcio.sk/kava/verticcio-bulvar-blend-200g\n(V chuti: vanilka, marhuľa, med, limetka.)\nPERU San Martin SHG G1 — 200 g za 10,20 €\nhttps://www.v"
+   },
+   {
+    "chip": "Máte kávu bez kofeínu?",
+    "named": [
+     "MAMA COFFEE DECAF"
+    ],
+    "reply": "Bez kofeínu je MAMA COFFEE DECAF. Bezkofeínová 100 % arabika; kofeín sa odstraňuje metódou CO2.\nMAMA COFFEE DECAF — 200 g za 12,80 €\nhttps://www.verticcio.sk/kava-verticcio/verticcio-mama-coffee-decaf-200g"
+   }
+  ],
+  "rebelbean": [
+   {
+    "chip": "Káva do automatu",
+    "named": [
+     "Push The Button",
+     "The Underdog"
+    ],
+    "reply": "Čokoládovou a oříškovou chuť do automatu či kávovaru mají například:\nPush The Button — 250 g za 310 Kč\nhttps://www.rebelbean.cz/push-the-button/\n(V chuti: sladká čokoláda, lískové ořechy.)\nThe Underdog — 250 g za 310 Kč\n"
+   },
+   {
+    "chip": "Káva na filtr",
+    "named": [
+     "Bolivia Aljiri",
+     "Kenya Gatomboya"
+    ],
+    "reply": "Na filtr se podle e-shopu hodí například:\nKenya Gatomboya — 250 g za 390 Kč\nhttps://www.rebelbean.cz/kenya-gatomboya/\nBolivia Aljiri — 250 g za 370 Kč\nhttps://www.rebelbean.cz/bolivia-aljiri/\nPři objednávce zvolte mletí "
+   },
+   {
+    "chip": "Máte ovocnou kávu?",
+    "named": [
+     "Bolivia Aljiri",
+     "My Daily Mix"
+    ],
+    "reply": "Plnou ovocnou chuť mají například:\nBolivia Aljiri — 250 g za 370 Kč\nhttps://www.rebelbean.cz/bolivia-aljiri/\n(V chuti: meruňky, karamel, melasa, bezový květ.)\nMy Daily Mix — 250 g za 370 Kč\nhttps://www.rebelbean.cz/my-da"
+   },
+   {
+    "chip": "Máte kávu bez kofeinu?",
+    "named": [
+     "Uganda Lunar Coffee (decaf)"
+    ],
+    "reply": "Bez kofeinu je Uganda Lunar Coffee (decaf). Bezkofeinová káva se sladkým a čistým šálkem; kofein se odstraňuje metodou sugar cane.\nUganda Lunar Coffee (decaf) — 250 g za 370 Kč\nhttps://www.rebelbean.cz/decaf/"
+   }
+  ],
+  "nordbeans": [
+   {
+    "chip": "Káva do automatu",
+    "named": [
+     "House Blend",
+     "Market Blend"
+    ],
+    "reply": "Čokoládovou a oříškovou chuť do automatu či kávovaru mají například:\nMarket Blend — 250 g za 240 Kč\nhttps://www.nordbeans.cz/market-blend_z24/\n(V chuti: hořká čokoláda, sušené ovoce, arašídy.)\nHouse Blend — 250 g za 246 "
+   },
+   {
+    "chip": "Káva na filtr",
+    "named": [
+     "Brazílie",
+     "FEARLESS LYNX - Etiopie",
+     "WILD FOX ESPRESSO - Brazílie"
+    ],
+    "reply": "Na filtr se podle e-shopu hodí například:\nWILD FOX ESPRESSO - Brazílie — 250 g za 300 Kč\nhttps://www.nordbeans.cz/wild-fox-espresso-brazilie_z4054/\nFEARLESS LYNX - Etiopie — 250 g za 400 Kč\nhttps://www.nordbeans.cz/fearl"
+   },
+   {
+    "chip": "Máte ovocnou kávu?",
+    "named": [
+     "BOLD DEER",
+     "Uganda"
+    ],
+    "reply": "Plnou ovocnou chuť mají například:\nUganda — 250 g za 300 Kč\nhttps://www.nordbeans.cz/uganda_z3670/\n(V chuti: sladká, citrusová, čokoládová.)\nBOLD DEER — 250 g za 375 Kč\nhttps://www.nordbeans.cz/bold-deer_z3626/\n(V chuti:"
+   },
+   {
+    "chip": "Máte kávu bez kofeinu?",
+    "named": [
+     "SLEEPY SHEEP"
+    ],
+    "reply": "Bez kofeinu je SLEEPY SHEEP. Atunkaa je káva, která přináší nejen skvělý chuťový zážitek bez kofeinu, ale také silný příběh. Pochází z oblasti Argelia v jihozápadní části departementu Cauca v Kolumbii.\nSLEEPY SHEEP — 250"
+   }
+  ],
+  "doubleshot": [
+   {
+    "chip": "Káva do automatu",
+    "named": [
+     "Start"
+    ],
+    "reply": "Čokoládovou a oříškovou chuť do automatu či kávovaru mají například:\nStart — 300 g za 335 Kč\nhttps://www.doubleshot.cz/cs/products/start-espresso\n(V chuti: pražené oříšky, čokoláda, karamel.)"
+   },
+   {
+    "chip": "Káva na filtr",
+    "named": [
+     "Decaf Filtr"
+    ],
+    "reply": "Decaf Filtr: Filtrovaná káva bez kofeinu, ovocná a elegantní; klidně odpoledne i večer. V chuti: karamel, sušená jablka, jemná acidita. Původ: Kostarika · Tarrazu, farma Don Oscar, zpracování white honey, bez kofeinu. Pr"
+   },
+   {
+    "chip": "Máte ovocnou kávu?",
+    "named": [
+     "Era",
+     "Farm • Imbachi"
+    ],
+    "reply": "Plnou ovocnou chuť mají například:\nEra — 300 g za 365 Kč\nhttps://www.doubleshot.cz/cs/products/era-espresso\n(V chuti: žluté ovoce, med, karamel, květinová aromatika.)\nFarm • Imbachi — 300 g za 375 Kč\nhttps://www.doublesh"
+   },
+   {
+    "chip": "Máte kávu bez kofeinu?",
+    "named": [
+     "Decaf Espresso"
+    ],
+    "reply": "Bez kofeinu je Decaf Espresso. Espresso bez kofeinu, ovocné a elegantní; klidně odpoledne i večer.\nDecaf Espresso — 300 g za 365 Kč\nhttps://www.doubleshot.cz/cs/products/decaf-espresso"
+   }
+  ],
+  "fathers": [
+   {
+    "chip": "Káva do automatu",
+    "named": [
+     "Brazílie – Minas",
+     "Brazílie – Cafeina"
+    ],
+    "reply": "Čokoládovou a oříškovou chuť do automatu či kávovaru mají například:\nBrazílie – Minas — 250 g za 300 Kč\nhttps://fathers.cz/kava/espresso/minas\n(V chuti: mandle, višně, tmavá čokoláda, sladký tabák.)\nBrazílie – Cafeina — "
+   },
+   {
+    "chip": "Káva na filtr",
+    "named": [
+     "Kolumbie – Chapata · filtr"
+    ],
+    "reply": "Kolumbie – Chapata · filtr: Káva Chapata si u nás v pražírně i u vás doma našla své místo velmi rychle. Je to ten typ kávy, kterou chcete pít každý den. V chuti: kandovaný pomeranč, badyán, kakao. Původ: Kolumbie · Anser"
+   },
+   {
+    "chip": "Máte ovocnou kávu?",
+    "named": [
+     "Kolumbie – El Diviso – Geisha",
+     "Etiopie – Edn Pineapple"
+    ],
+    "reply": "Plnou ovocnou chuť mají například:\nEtiopie – Edn Pineapple — 100 g za 301 Kč\nhttps://fathers.cz/kava/filtr/etiopie-edn-pineapple\n(V chuti: pečený ananas, borůvkový cheescake.)\nKolumbie – El Diviso – Geisha — 100 g za 343"
+   },
+   {
+    "chip": "Máte kávu bez kofeinu?",
+    "named": [
+     "DECAF Atunkaa – Kolumbie · espresso"
+    ],
+    "reply": "Bez kofeinu je DECAF Atunkaa – Kolumbie · espresso. Káva bez kofeinu z Kolumbie, zbavená kofeinu přírodní metodou sugar cane; název Atunkaa znamená „spánek a ospalé sny“.\nDECAF Atunkaa – Kolumbie · espresso — 250 g za 40"
+   }
+  ],
+  "candycane": [
+   {
+    "chip": "Káva do automatu",
+    "named": [
+     "Home Office"
+    ],
+    "reply": "Čokoládovou a oříškovou chuť do automatu či kávovaru mají například:\nHome Office — 250 g za 335 Kč\nhttps://www.candycane.coffee/produkty/home-office\n(V chuti: lískové ořechy, hořká čokoláda, kandované ovoce.)"
+   },
+   {
+    "chip": "Káva na filtr",
+    "named": [
+     "Bombe #1 – Etiopie",
+     "Thirikwa Gakuyu-ini PB – Keňa"
+    ],
+    "reply": "Na filtr se podle e-shopu hodí například:\nThirikwa Gakuyu-ini PB – Keňa — 250 g za 400 Kč\nhttps://www.candycane.coffee/produkty/thirikwa-gakuyu-ini-pb-kena\nBombe #1 – Etiopie — 250 g za 425 Kč\nhttps://www.candycane.coffe"
+   },
+   {
+    "chip": "Máte ovocnou kávu?",
+    "named": [
+     "El Recuerdo – Salvador",
+     "Salaverria Buena Vista – Salvador"
+    ],
+    "reply": "Plnou ovocnou chuť mají například:\nEl Recuerdo – Salvador — 250 g za 380 Kč\nhttps://www.candycane.coffee/produkty/el-recuerdo-salvador\n(V chuti: hrušky, jablka, karamel.)\nSalaverria Buena Vista – Salvador — 250 g za 390 "
+   },
+   {
+    "chip": "Máte kávu bez kofeinu?",
+    "named": [
+     "Decaf de Caña – Kolumbie"
+    ],
+    "reply": "Bez kofeinu je Decaf de Caña – Kolumbie. Bezkofeinová káva z Kolumbie pražená na espresso; kofein odstraněn metodou sugarcane (EA).\nDecaf de Caña – Kolumbie — 250 g za 370 Kč\nhttps://www.candycane.coffee/produkty/decaf-d"
+   }
+  ],
+  "9gramscoffee": [
+   {
+    "chip": "Káva do automatu",
+    "named": [
+     "Brazil Alta Mogiana Natural",
+     "Cuba Caracolilo Robusta Peaberry"
+    ],
+    "reply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nBrazil Alta Mogiana Natural — 250 g za 8,90 €\nhttps://www.coffeeart.me/9-grams-coffee-brazil-alta-mogiana-gc-ny-3--4-natural/\n(V chuti: lieskový orech, "
+   },
+   {
+    "chip": "Káva na filter",
+    "named": [
+     "Ethiopia Konga Natural",
+     "Ethiopia Shantawene Natural"
+    ],
+    "reply": "Na filter sa podľa e-shopu hodia napríklad:\nEthiopia Shantawene Natural — 250 g za 12,00 €\nhttps://www.coffeeart.me/9-grams-coffee-ethiopia-shantawene-gr1-natural/\nEthiopia Konga Natural — 250 g za 13,80 €\nhttps://www.co"
+   },
+   {
+    "chip": "Máte ovocnú kávu?",
+    "named": [
+     "Ethiopia Djimmah Natural",
+     "Ethiopia Shakiso Natural"
+    ],
+    "reply": "Plnú ovocnú chuť majú napríklad:\nEthiopia Djimmah Natural — 250 g za 9,90 €\nhttps://www.coffeeart.me/9-grams-coffee-ethiopia-djimmah-gr5-natural/\n(V chuti: ovocie, karamel, kvety.)\nEthiopia Shakiso Natural — 250 g za 9,9"
+   },
+   {
+    "chip": "Máte kávu bez kofeínu?",
+    "named": [
+     "Brazil Santos Decaf CO2"
+    ],
+    "reply": "Bez kofeínu je Brazil Santos Decaf CO2. Brazília · natural (suché) · Arabica + bez kofeínu · acidita podľa e-shopu: bez acidity, nízka.\nBrazil Santos Decaf CO2 — 250 g za 9,90 €\nhttps://www.coffeeart.me/9-grams-coffee-br"
+   }
+  ],
+  "saloos": [
+   {
+    "chip": "Mám suchou pleť",
+    "named": [
+     "Bio Sojový olej",
+     "Bio Sezamový olej",
+     "Lněný olej"
+    ],
+    "reply": "Z nabídky vybírám (pleť, pro suchou pleť):\n\nLněný olej (50 ml) — 99 Kč. Podle popisu pro suchou pleť, hydratace. https://www.saloos.cz/c/rostlinne-a-bio-oleje/lneny-olej\n\nBio Sojový olej (50 ml) — 104 Kč. Podle popisu pr"
+   },
+   {
+    "chip": "Péče o tělo",
+    "named": [
+     "Tělový a masážní olej Celulinie",
+     "Tělový a masážní olej Neutrální",
+     "Tělový a masážní olej Body fit"
+    ],
+    "reply": "Z nabídky vybírám (tělo):\n\nTělový a masážní olej Neutrální (50 ml) — 130 Kč. Oleje, 50 ml. https://www.saloos.cz/c/bio-telove-a-masazni-oleje/neutralni-2\n\nTělový a masážní olej Body fit (50 ml) — 139 Kč. Oleje, 50 ml. ht"
+   },
+   {
+    "chip": "Mám citlivou pleť",
+    "named": [
+     "Bio Konopný olej",
+     "Bio Sojový olej",
+     "Odličovací olej Neutrální"
+    ],
+    "reply": "Z nabídky vybírám (pleť, pro citlivou pleť):\n\nBio Sojový olej (50 ml) — 104 Kč. Podle popisu pro suchou a citlivou pleť, proti vráskám, zklidnění. https://www.saloos.cz/c/rostlinne-a-bio-oleje/bio-sojovy-olej\n\nOdličovací"
+   },
+   {
+    "chip": "Pleť se mi mastí",
+    "named": [
+     "Olej z kukuřičných klíčků",
+     "BioKarité balzám Na rty",
+     "Lněný olej"
+    ],
+    "reply": "Z nabídky vybírám (pleť):\n\nOlej z kukuřičných klíčků (50 ml) — 96 Kč. Podle popisu pro mastnou pleť, pro pleť se sklonem k mastnotě. https://www.saloos.cz/c/rostlinne-a-bio-oleje/olej-z-kukuricnych-klicku\n\nLněný olej (50"
+   }
+  ],
+  "renovality": [
+   {
+    "chip": "Mám suchou pleť",
+    "named": [
+     "Hyaluronové sérum 30 ml airless",
+     "Růžová voda 100 ml",
+     "Heřmánková voda 100ml"
+    ],
+    "reply": "Z nabídky vybírám (pleť, pro suchou pleť):\n\nHeřmánková voda 100ml — 177 Kč. Podle popisu pro suchou a mastnou a citlivou pleť, pro pleť se sklonem k mastnotě, zklidnění. https://www.renovality.cz/hermankova-voda-100ml/\n\n"
+   },
+   {
+    "chip": "Péče o tělo",
+    "named": [
+     "Ricinový olej za studena lisovaný 100ml s pumpičkou",
+     "Přírodní tuhý deodorant – Bergamot",
+     "Přírodní tuhý deodorant – Lesní ovoce"
+    ],
+    "reply": "Z nabídky vybírám (tělo):\n\nRicinový olej za studena lisovaný 100ml s pumpičkou — 203 Kč. Oleje, 100ml. https://www.renovality.cz/ricinovy-olej-za-studena-lisovany-100ml-s-pumpickou/\n\nPřírodní tuhý deodorant – Bergamot (V"
+   },
+   {
+    "chip": "Péče o oční okolí",
+    "named": [
+     "Oční krém – rozjasňující 15 ml",
+     "Hydratační noční krém s retinolem 30 ml",
+     "Eye Cream REVITALIZACE OČNÍHO OKOLÍ květový komplex"
+    ],
+    "reply": "Z nabídky vybírám (oční okolí):\n\nOční krém – rozjasňující 15 ml — 219 Kč. Krémy a balzámy, 15 ml. https://www.renovality.cz/ocni-krem---rozjasnujici-15-ml/\n\nHydratační noční krém s retinolem 30 ml — 339 Kč. Podle popisu "
+   },
+   {
+    "chip": "Mám citlivou pleť",
+    "named": [
+     "Růžová voda 100 ml",
+     "Levandulová voda 100 ml",
+     "Heřmánková voda 100ml"
+    ],
+    "reply": "Z nabídky vybírám (pleť, pro citlivou pleť):\n\nHeřmánková voda 100ml — 177 Kč. Podle popisu pro suchou a mastnou a citlivou pleť, pro pleť se sklonem k mastnotě, zklidnění. https://www.renovality.cz/hermankova-voda-100ml/"
+   }
+  ],
+  "nobilistilia": [
+   {
+    "chip": "Mám suchou pleť",
+    "named": [
+     "Květová voda BIO Růže 50 ml",
+     "Květová voda BIO Levandule 50 ml",
+     "Květová voda BIO Heřmánek 50 ml"
+    ],
+    "reply": "Z nabídky vybírám (pleť, pro suchou pleť):\n\nKvětová voda BIO Heřmánek 50 ml — 179 Kč. Podle popisu pro suchou a mastnou a citlivou pleť, zklidnění, proti vráskám. https://www.nobilis.cz/produkt/kvetova-voda-bio-hermanek-"
+   },
+   {
+    "chip": "Péče o tělo",
+    "named": [
+     "Přírodní mycí krém Mandarinka 200 ml",
+     "Tělový balzám Bambucká fantazie 50 ml",
+     "Tělový a masážní olej Ricinový 20 ml"
+    ],
+    "reply": "Z nabídky vybírám (tělo):\n\nTělový balzám Bambucká fantazie 50 ml — 159 Kč. Mléka a emulze, 50 ml. https://www.nobilis.cz/produkt/telovy-balzam-bambucka-fantazie-50-ml/\n\nTělový a masážní olej Ricinový 20 ml — 179 Kč. Olej"
+   },
+   {
+    "chip": "Péče o oční okolí",
+    "named": [
+     "Jemný odličovač očí",
+     "Zjemňující oční krém Argan",
+     "Bioaktivní oční krém"
+    ],
+    "reply": "Z nabídky vybírám (oční okolí):\n\nJemný odličovač očí (100 ml) — 259 Kč. Podle popisu pro suchou a mastnou a citlivou pleť, zklidnění, proti vráskám. https://www.nobilis.cz/produkt/jemny-odlicovac-oci-100-ml/\n\nZjemňující "
+   },
+   {
+    "chip": "Mám citlivou pleť",
+    "named": [
+     "Květová voda BIO Růže 50 ml",
+     "Květová voda BIO Levandule 50 ml",
+     "Květová voda BIO Heřmánek 50 ml"
+    ],
+    "reply": "Z nabídky vybírám (pleť, pro citlivou pleť):\n\nKvětová voda BIO Heřmánek 50 ml — 179 Kč. Podle popisu pro suchou a mastnou a citlivou pleť, zklidnění, proti vráskám. https://www.nobilis.cz/produkt/kvetova-voda-bio-hermane"
+   }
+  ],
+  "manufaktura": [
+   {
+    "chip": "Mám suchou pleť",
+    "named": [
+     "Zklidňující pleťová voda SEDMIKRÁSKA pro citlivou pleť",
+     "Odličovací mléko pro citlivou pleť RŮŽE & SEDMIKRÁSKA",
+     "Odličovací mléko pro citlivou pleť RŮŽE & SEDMIKRÁSKA – mini"
+    ],
+    "reply": "Z nabídky vybírám (pleť, pro suchou pleť):\n\nOdličovací mléko pro citlivou pleť RŮŽE & SEDMIKRÁSKA – mini (mini balení · 30 ml) — 149 Kč. Podle popisu pro suchou a citlivou pleť, hydratace, zklidnění. https://manufaktura."
+   },
+   {
+    "chip": "Péče o oční okolí",
+    "named": [
+     "Jemný noční omlazující pleťový krém Mrtvé moře",
+     "Liftingové oční sérum Růže 3v1 – víčka, kruhy & váčky"
+    ],
+    "reply": "Z nabídky vybírám (oční okolí):\n\nJemný noční omlazující pleťový krém Mrtvé moře (50 ml) — 369 Kč. Podle popisu pro suchou a mastnou a citlivou pleť, proti vráskám, hydratace. https://manufaktura.cz/jemny-nocni-omlazujici"
+   },
+   {
+    "chip": "Mám citlivou pleť",
+    "named": [
+     "Zklidňující pleťová voda SEDMIKRÁSKA pro citlivou pleť",
+     "Odličovací mléko pro citlivou pleť RŮŽE & SEDMIKRÁSKA",
+     "Odličovací mléko pro citlivou pleť RŮŽE & SEDMIKRÁSKA – mini"
+    ],
+    "reply": "Z nabídky vybírám (pleť, pro citlivou pleť):\n\nOdličovací mléko pro citlivou pleť RŮŽE & SEDMIKRÁSKA – mini (mini balení · 30 ml) — 149 Kč. Podle popisu pro suchou a citlivou pleť, hydratace, zklidnění. https://manufaktur"
+   },
+   {
+    "chip": "Pleť se mi mastí",
+    "named": [
+     "Zklidňující pleťová voda SEDMIKRÁSKA pro citlivou pleť",
+     "Odličovací mléko pro citlivou pleť RŮŽE & SEDMIKRÁSKA",
+     "Odličovací mléko pro citlivou pleť RŮŽE & SEDMIKRÁSKA – mini"
+    ],
+    "reply": "Z nabídky vybírám (pleť):\n\nOdličovací mléko pro citlivou pleť RŮŽE & SEDMIKRÁSKA – mini (mini balení · 30 ml) — 149 Kč. Podle popisu pro suchou a citlivou pleť, hydratace, zklidnění. https://manufaktura.cz/odlicovaci-mle"
+   }
+  ]
+ }
+}

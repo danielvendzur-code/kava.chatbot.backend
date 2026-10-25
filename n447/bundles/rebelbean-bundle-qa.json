@@ -1,20 +1,16 @@
 {
  "slug": "rebelbean",
  "family": "coffee",
- "builtFrom": "e5e32d3",
+ "builtFrom": "ce15ca3",
  "static": {
   "otherHosts": {},
   "sharedCodeIdentifiers": {
+   "coffee-quality.js": [
+    "mylo"
+   ],
    "coffee-widget-polish.css": [
     "concept",
     "kaffa"
-   ],
-   "n447/coffee-owner-brand-n447.js": [
-    "concept",
-    "diamonds",
-    "kaffa",
-    "praziarnicka",
-    "vitazov"
    ],
    "coffee-header-cleanup.css": [
     "casadelcaffe",
@@ -26,12 +22,16 @@
     "kaffa",
     "praziarnicka"
    ],
-   "coffee-quality.js": [
-    "mylo"
+   "n447/coffee-owner-brand-n447.js": [
+    "concept",
+    "diamonds",
+    "kaffa",
+    "praziarnicka",
+    "vitazov"
    ]
   },
-  "files": 74,
-  "bytes": 3608426,
+  "files": 102,
+  "bytes": 3642075,
   "excludedForeignAssets": []
  },
  "http": {
@@ -48,7 +48,7 @@
  },
  "browser": {
   "390x844": {
-   "requests": 40,
+   "requests": 44,
    "hosts": [
     "127.0.0.1"
    ],
@@ -56,12 +56,25 @@
    "errors": [],
    "trail": [
     "Kávovar nebo automat",
+    "S kofeinem",
     "Čokoládová a oříšková",
     "Do 310 Kč",
     "sladká čokoláda · lískové ořec"
    ],
    "resultShown": true,
    "result": "Push The Button\n\nBrazílie · Nova Resende, Minas Gerais\n\n250 g · tmavé, pro automatické kávovary · zrnková\n310 Kč\nDalší balení: 1 kg 1 060 Kč (nad rozpočet)\nNa espresso i do automatuPražírna ji nabízí v espresso pražení.\nČokoládová a oříškováV chuti: sladká čokoláda, lískové ořechy.\nV rozpočtu250 g celkem 310 Kč; váš limit 310 Kč.\n\nKáva stvořená pro automat: speciální pražení a vysoká rozpustnost p",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.rebelbean.cz/push-the-button/",
+    "text": "Zobrazit tuto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filtr",
+    "Máte ovocnou kávu?",
+    "Máte kávu bez kofeinu?"
+   ],
    "chatReply": "Čokoládovou a oříškovou chuť do automatu či kávovaru mají například:\nPush The Button — 250 g za 310 Kč\nZobrazit v e-shopu ↗\n(V chuti: sladká čokoláda, lískové ořechy.)\nThe Underdog — 250 g za 310 Kč\nZobrazit v e-shopu ↗\n(V chuti: tmavá čokoláda, karamel, pražené ořechy.)\nDo automatu zvolte zrnkovou.",
    "foreignInText": [],
    "oldOffer": false,
@@ -69,7 +82,7 @@
    "externalHosts": []
   },
   "1280x800": {
-   "requests": 40,
+   "requests": 44,
    "hosts": [
     "127.0.0.1"
    ],
@@ -77,12 +90,25 @@
    "errors": [],
    "trail": [
     "Kávovar nebo automat",
+    "S kofeinem",
     "Čokoládová a oříšková",
     "Do 310 Kč",
     "sladká čokoláda · lískové ořec"
    ],
    "resultShown": true,
    "result": "Push The Button\n\nBrazílie · Nova Resende, Minas Gerais\n\n250 g · tmavé, pro automatické kávovary · zrnková\n310 Kč\nDalší balení: 1 kg 1 060 Kč (nad rozpočet)\nNa espresso i do automatuPražírna ji nabízí v espresso pražení.\nČokoládová a oříškováV chuti: sladká čokoláda, lískové ořechy.\nV rozpočtu250 g celkem 310 Kč; váš limit 310 Kč.\n\nKáva stvořená pro automat: speciální pražení a vysoká rozpustnost p",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.rebelbean.cz/push-the-button/",
+    "text": "Zobrazit tuto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filtr",
+    "Máte ovocnou kávu?",
+    "Máte kávu bez kofeinu?"
+   ],
    "chatReply": "Čokoládovou a oříškovou chuť do automatu či kávovaru mají například:\nPush The Button — 250 g za 310 Kč\nZobrazit v e-shopu ↗\n(V chuti: sladká čokoláda, lískové ořechy.)\nThe Underdog — 250 g za 310 Kč\nZobrazit v e-shopu ↗\n(V chuti: tmavá čokoláda, karamel, pražené ořechy.)\nDo automatu zvolte zrnkovou.",
    "foreignInText": [],
    "oldOffer": false,
@@ -95,9 +121,8 @@
   "apiCalls": 20,
   "outboundBlocked": 0,
   "outboundHosts": [],
-  "served": 83,
+  "served": 91,
   "notFound": 135
  },
- "paidCalls": 0,
- "checkedContentIdenticalTo": "e5e32d3"
+ "paidCalls": 0
 }

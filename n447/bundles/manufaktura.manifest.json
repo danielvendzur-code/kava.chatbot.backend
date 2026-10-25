@@ -1,7 +1,7 @@
 {
  "slug": "manufaktura",
  "family": "cosmetics",
- "builtFrom": "e5e32d3",
+ "builtFrom": "ce15ca3",
  "entry": "manufaktura.html",
  "files": [
   {
@@ -320,13 +320,13 @@
   },
   {
    "path": "n447/kozmetika/cosmetics-n447.js",
-   "bytes": 30947,
-   "sha256": "b85efd5331aba6ab5e1f7ad55d5df47eb1f4ff3109243011d20df7392ef5d9dc"
+   "bytes": 31538,
+   "sha256": "188cb6c79bf18fddadad48df0c69d7f9ef116d09d679c157d526ee1913420c3c"
   },
   {
    "path": "n447/owner-more-info-n447.js",
-   "bytes": 6238,
-   "sha256": "d4f22b255b6e1c588d818524678ea3fc623a3d1edd8f6d9334699607f9672ba4"
+   "bytes": 6278,
+   "sha256": "1692538e1e00286712a9a057a9c64b1ae66126f836e8bfabaebc2a4d0fa1b95e"
   },
   {
    "path": "nove-znacky.css",
@@ -506,5 +506,5 @@
   "yemna",
   "zlatezrnko"
  ],
- "totalBytes": 3296270
+ "totalBytes": 3296901
 }

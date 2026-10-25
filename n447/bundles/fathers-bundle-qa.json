@@ -1,7 +1,7 @@
 {
  "slug": "fathers",
  "family": "coffee",
- "builtFrom": "e5e32d3",
+ "builtFrom": "ce15ca3",
  "static": {
   "otherHosts": {},
   "sharedCodeIdentifiers": {
@@ -9,9 +9,8 @@
     "concept",
     "kaffa"
    ],
-   "coffee-widget-polish.js": [
-    "kaffa",
-    "praziarnicka"
+   "coffee-quality.js": [
+    "mylo"
    ],
    "coffee-header-cleanup.css": [
     "casadelcaffe",
@@ -19,19 +18,20 @@
     "praziarnicka",
     "zlatezrnko"
    ],
-   "coffee-quality.js": [
-    "mylo"
-   ],
    "n447/coffee-owner-brand-n447.js": [
     "concept",
     "diamonds",
     "kaffa",
     "praziarnicka",
     "vitazov"
+   ],
+   "coffee-widget-polish.js": [
+    "kaffa",
+    "praziarnicka"
    ]
   },
-  "files": 97,
-  "bytes": 3593084,
+  "files": 125,
+  "bytes": 3626733,
   "excludedForeignAssets": []
  },
  "http": {
@@ -48,7 +48,7 @@
  },
  "browser": {
   "390x844": {
-   "requests": 43,
+   "requests": 48,
    "hosts": [
     "127.0.0.1"
    ],
@@ -56,12 +56,25 @@
    "errors": [],
    "trail": [
     "Kávovar nebo automat",
+    "S kofeinem",
     "Čokoláda a ořechy",
     "Do 325 Kč",
     "mandle · višně"
    ],
    "resultShown": true,
    "result": "Brazílie – Minas\n\nBrazílie · Carmo De Cachoeira, Sul De Minas\n\n250 g · pražení na espresso · zrnková\n300 Kč\nDalší balení: 1 kg 1 043 Kč (nad rozpočet) · 2 kg 2 086 Kč (nad rozpočet)\nNa espresso i do automatuE-shop ji uvádí na: Tuto kávu pražíme na espresso. Je vhodná především do automatických kávovarů, ale skvěle funguje i v pákových espresso kávovarech a pro domácí přípravu..\nČokoláda a ořechyV ",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://fathers.cz/kava/espresso/minas",
+    "text": "Zobrazit tuto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filtr",
+    "Máte ovocnou kávu?",
+    "Máte kávu bez kofeinu?"
+   ],
    "chatReply": "Kolumbie – Chapata · espresso: Káva Chapata si u nás v pražírně i u vás doma našla své místo velmi rychle. Je to ten typ kávy, kterou chcete pít každý den. V chuti: kandovaný pomeranč, badyán, kakao. Původ: Kolumbie · Anserma, Caldas, zpracování suché (natural) s prodlouženou fermentací. Pražení: es",
    "foreignInText": [],
    "oldOffer": false,
@@ -69,7 +82,7 @@
    "externalHosts": []
   },
   "1280x800": {
-   "requests": 43,
+   "requests": 48,
    "hosts": [
     "127.0.0.1"
    ],
@@ -77,12 +90,25 @@
    "errors": [],
    "trail": [
     "Kávovar nebo automat",
+    "S kofeinem",
     "Čokoláda a ořechy",
     "Do 325 Kč",
     "mandle · višně"
    ],
    "resultShown": true,
    "result": "Brazílie – Minas\n\nBrazílie · Carmo De Cachoeira, Sul De Minas\n\n250 g · pražení na espresso · zrnková\n300 Kč\nDalší balení: 1 kg 1 043 Kč (nad rozpočet) · 2 kg 2 086 Kč (nad rozpočet)\nNa espresso i do automatuE-shop ji uvádí na: Tuto kávu pražíme na espresso. Je vhodná především do automatických kávovarů, ale skvěle funguje i v pákových espresso kávovarech a pro domácí přípravu..\nČokoláda a ořechyV ",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://fathers.cz/kava/espresso/minas",
+    "text": "Zobrazit tuto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filtr",
+    "Máte ovocnou kávu?",
+    "Máte kávu bez kofeinu?"
+   ],
    "chatReply": "Kolumbie – Chapata · espresso: Káva Chapata si u nás v pražírně i u vás doma našla své místo velmi rychle. Je to ten typ kávy, kterou chcete pít každý den. V chuti: kandovaný pomeranč, badyán, kakao. Původ: Kolumbie · Anserma, Caldas, zpracování suché (natural) s prodlouženou fermentací. Pražení: es",
    "foreignInText": [],
    "oldOffer": false,
@@ -95,9 +121,8 @@
   "apiCalls": 20,
   "outboundBlocked": 0,
   "outboundHosts": [],
-  "served": 89,
+  "served": 99,
   "notFound": 135
  },
- "paidCalls": 0,
- "checkedContentIdenticalTo": "e5e32d3"
+ "paidCalls": 0
 }

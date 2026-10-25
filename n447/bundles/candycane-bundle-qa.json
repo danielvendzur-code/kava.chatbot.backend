@@ -1,7 +1,7 @@
 {
  "slug": "candycane",
  "family": "coffee",
- "builtFrom": "e5e32d3",
+ "builtFrom": "ce15ca3",
  "static": {
   "otherHosts": {},
   "sharedCodeIdentifiers": {
@@ -16,22 +16,22 @@
     "praziarnicka",
     "vitazov"
    ],
+   "coffee-widget-polish.css": [
+    "concept",
+    "kaffa"
+   ],
    "coffee-header-cleanup.css": [
     "casadelcaffe",
     "coffeesheep",
     "praziarnicka",
     "zlatezrnko"
    ],
-   "coffee-widget-polish.css": [
-    "concept",
-    "kaffa"
-   ],
    "coffee-quality.js": [
     "mylo"
    ]
   },
-  "files": 75,
-  "bytes": 2825086,
+  "files": 103,
+  "bytes": 2858735,
   "excludedForeignAssets": []
  },
  "http": {
@@ -48,7 +48,7 @@
  },
  "browser": {
   "390x844": {
-   "requests": 40,
+   "requests": 42,
    "hosts": [
     "127.0.0.1"
    ],
@@ -56,10 +56,23 @@
    "errors": [],
    "trail": [
     "Kávovar nebo automat",
+    "S kofeinem",
     "Čokoláda a karamel"
    ],
    "resultShown": true,
    "result": "Home Office\n\nBrazílie · Sul de Minas · 1 200 m n. m.\n\n250 g · pražení na espresso · zrnková\n335 Kč\nDalší balení: 1 kg 1 150 Kč\nNa espresso i do automatuPražírna ji nabízí v espresso pražení.\nČokoláda a karamelV chuti: lískové ořechy, hořká čokoláda, kandované ovoce.\n\nEspresso pro domácí kancelář – brazilský natural od Muzambinho Collective. Stejnou kávu prodává pražírna v 1 kg balení pod názvem KA",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.candycane.coffee/produkty/home-office",
+    "text": "Zobrazit tuto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filtr",
+    "Máte ovocnou kávu?",
+    "Máte kávu bez kofeinu?"
+   ],
    "chatReply": "Čokoládovou a oříškovou chuť do automatu či kávovaru mají například:\nHome Office — 250 g za 335 Kč\nZobrazit v e-shopu ↗\n(V chuti: lískové ořechy, hořká čokoláda, kandované ovoce.)",
    "foreignInText": [],
    "oldOffer": false,
@@ -67,7 +80,7 @@
    "externalHosts": []
   },
   "1280x800": {
-   "requests": 40,
+   "requests": 42,
    "hosts": [
     "127.0.0.1"
    ],
@@ -75,10 +88,23 @@
    "errors": [],
    "trail": [
     "Kávovar nebo automat",
+    "S kofeinem",
     "Čokoláda a karamel"
    ],
    "resultShown": true,
    "result": "Home Office\n\nBrazílie · Sul de Minas · 1 200 m n. m.\n\n250 g · pražení na espresso · zrnková\n335 Kč\nDalší balení: 1 kg 1 150 Kč\nNa espresso i do automatuPražírna ji nabízí v espresso pražení.\nČokoláda a karamelV chuti: lískové ořechy, hořká čokoláda, kandované ovoce.\n\nEspresso pro domácí kancelář – brazilský natural od Muzambinho Collective. Stejnou kávu prodává pražírna v 1 kg balení pod názvem KA",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.candycane.coffee/produkty/home-office",
+    "text": "Zobrazit tuto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filtr",
+    "Máte ovocnou kávu?",
+    "Máte kávu bez kofeinu?"
+   ],
    "chatReply": "Čokoládovou a oříškovou chuť do automatu či kávovaru mají například:\nHome Office — 250 g za 335 Kč\nZobrazit v e-shopu ↗\n(V chuti: lískové ořechy, hořká čokoláda, kandované ovoce.)",
    "foreignInText": [],
    "oldOffer": false,
@@ -91,9 +117,8 @@
   "apiCalls": 20,
   "outboundBlocked": 0,
   "outboundHosts": [],
-  "served": 83,
+  "served": 87,
   "notFound": 135
  },
- "paidCalls": 0,
- "checkedContentIdenticalTo": "e5e32d3"
+ "paidCalls": 0
 }

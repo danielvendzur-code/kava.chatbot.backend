@@ -1,7 +1,7 @@
 {
  "slug": "manufaktura",
  "family": "cosmetics",
- "builtFrom": "e5e32d3",
+ "builtFrom": "ce15ca3",
  "static": {
   "otherHosts": {
    "catalogue-advisor.js": [
@@ -9,104 +9,19 @@
    ]
   },
   "sharedCodeIdentifiers": {
-   "nove-znacky.js": [
-    "cyprianus"
-   ],
-   "skincare-refresh.css": [
-    "anemone",
-    "barboralori",
-    "bellcoria",
-    "concept",
-    "mylo",
-    "ponio"
-   ],
-   "cosmetics-polish.css": [
-    "anemone",
-    "bellcoria",
-    "mylo"
-   ],
-   "skincare-targeted-hotfix.css": [
-    "biofy",
-    "facederma",
-    "fytopharma",
-    "kvitok",
-    "lavelin",
-    "natureal",
-    "ponio",
-    "syncare"
-   ],
-   "skincare-review-fixes-20260914.js": [
-    "cyprianus"
-   ],
-   "index.html": [
-    "kvitok"
-   ],
-   "advisor-quality.css": [
-    "mylo"
-   ],
-   "skincare-final-brand-marks.js": [
-    "barboralori",
-    "cyprianus",
-    "facederma",
-    "modrapupava"
-   ],
-   "kvitok-brand-mark-preload.js": [
-    "kvitok"
-   ],
-   "launcher-finish.js": [
-    "almara",
-    "cyprianus"
-   ],
-   "catalogue-config.js": [
-    "almara",
-    "bellcoria",
-    "dulcia",
-    "liqoil",
-    "modrapupava",
-    "monlevur",
-    "mujluj",
-    "mydlitto",
-    "mylo",
-    "noili",
-    "pimpinella",
-    "puaree",
-    "yemna"
-   ],
    "skincare-final-fix.js": [
     "modrapupava",
     "syncare"
    ],
-   "skincare-avatar-round-fix.css": [
-    "syncare"
-   ],
-   "kvitok-logo-final-fix.js": [
-    "kvitok"
-   ],
-   "skincare-launcher-logo-fix.js": [
-    "cyprianus",
-    "syncare"
-   ],
-   "catalogue-advisor.css": [
-    "ponio"
-   ],
-   "skincare-final-brand-overrides.css": [
-    "anemone",
-    "barboralori",
-    "bellcoria",
-    "cyprianus",
-    "facederma",
-    "kvitok",
-    "modrapupava",
-    "natureal",
-    "panakeia",
-    "syncare"
-   ],
-   "kvitok-direct-logo.css": [
+   "kvitok-brand-mark-preload.js": [
     "kvitok"
    ],
    "skincare-final-fix.css": [
     "barboralori",
     "syncare"
+   ],
+   "advisor-quality.css": [
+    "mylo"
    ],
    "skincare-final-logo-qa.css": [
     "bellmedi",
@@ -123,19 +38,40 @@
     "soaphoria",
     "syncare"
    ],
-   "cosmetics.css": [
-    "anemone",
-    "bellcoria",
+   "skincare-targeted-hotfix.css": [
     "biofy",
+    "facederma",
+    "fytopharma",
+    "kvitok",
+    "lavelin",
+    "natureal",
+    "ponio",
+    "syncare"
+   ],
+   "skincare-refresh.css": [
+    "anemone",
+    "barboralori",
+    "bellcoria",
+    "concept",
     "mylo",
     "ponio"
    ],
-   "n447/kozmetika/cosmetics-n447.js": [
+   "skincare-final-logo-qa.js": [
+    "cyprianus",
+    "fytopharma",
+    "kvitok",
     "modrapupava",
-    "mylo"
+    "mylo",
+    "ponio"
    ],
    "n447/kozmetika/advisor-boot-n447.js": [
     "kvitok"
+   ],
+   "skincare-review-fixes-20260914.js": [
+    "cyprianus"
+   ],
+   "catalogue-advisor.css": [
+    "ponio"
    ],
    "nove-znacky.css": [
     "monlevur",
@@ -153,17 +89,81 @@
     "panakeia",
     "ponio"
    ],
-   "skincare-final-logo-qa.js": [
+   "cosmetics-polish.css": [
+    "anemone",
+    "bellcoria",
+    "mylo"
+   ],
+   "launcher-finish.js": [
+    "almara",
+    "cyprianus"
+   ],
+   "skincare-final-brand-overrides.css": [
+    "anemone",
+    "barboralori",
+    "bellcoria",
     "cyprianus",
-    "fytopharma",
+    "facederma",
     "kvitok",
     "modrapupava",
+    "natureal",
+    "panakeia",
+    "syncare"
+   ],
+   "cosmetics.css": [
+    "anemone",
+    "bellcoria",
+    "biofy",
     "mylo",
     "ponio"
+   ],
+   "nove-znacky.js": [
+    "cyprianus"
+   ],
+   "skincare-final-brand-marks.js": [
+    "barboralori",
+    "cyprianus",
+    "facederma",
+    "modrapupava"
+   ],
+   "index.html": [
+    "kvitok"
+   ],
+   "catalogue-config.js": [
+    "almara",
+    "bellcoria",
+    "dulcia",
+    "liqoil",
+    "modrapupava",
+    "monlevur",
+    "mujluj",
+    "mydlitto",
+    "mylo",
+    "noili",
+    "pimpinella",
+    "puaree",
+    "yemna"
+   ],
+   "skincare-launcher-logo-fix.js": [
+    "cyprianus",
+    "syncare"
+   ],
+   "kvitok-direct-logo.css": [
+    "kvitok"
+   ],
+   "skincare-avatar-round-fix.css": [
+    "syncare"
+   ],
+   "n447/kozmetika/cosmetics-n447.js": [
+    "modrapupava",
+    "mylo"
+   ],
+   "kvitok-logo-final-fix.js": [
+    "kvitok"
    ]
   },
   "files": 84,
-  "bytes": 3296270,
+  "bytes": 3296901,
   "excludedForeignAssets": [
    "assets/catalogue/logos/modrapupava-symbol.png",
    "assets/cosmetics/barboralori-logo.png",
@@ -202,6 +202,12 @@
    ],
    "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nIntenzivní multifunkční balzám na obličej ANTI-AGING & HYDRATACE\n\n15 ml\n\nPleť\nSéra\nJemná péče\nSuchá a napjatá\ndo 600 Kč\n389 Kč\nZobrazit produkt ↗\n\nSérum jako cílený krok péče.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Z vhodných možností má te",
    "resultShown": true,
+   "chips": [
+    "Mám suchou pleť",
+    "Péče o oční okolí",
+    "Mám citlivou pleť",
+    "Pleť se mi mastí"
+   ],
    "chatReply": "Z nabídky vybírám (pleť, pro suchou pleť):\n\nOdličovací mléko pro citlivou pleť RŮŽE & SEDMIKRÁSKA – mini (mini balení · 30 ml) — 149 Kč. Podle popisu pro suchou a citlivou pleť, hydratace, zklidnění. Zobrazit produkt v e-shopu ↗\n\nZklidňující pleťová voda SEDMIKRÁSKA pro citlivou pleť – mini (mini ba",
    "foreignInText": [],
    "oldOffer": false,
@@ -227,6 +233,12 @@
    ],
    "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nIntenzivní multifunkční balzám na obličej ANTI-AGING & HYDRATACE\n\n15 ml\n\nPleť\nSéra\nJemná péče\nSuchá a napjatá\ndo 600 Kč\n389 Kč\nZobrazit produkt ↗\n\nSérum jako cílený krok péče.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Z vhodných možností má te",
    "resultShown": true,
+   "chips": [
+    "Mám suchou pleť",
+    "Péče o oční okolí",
+    "Mám citlivou pleť",
+    "Pleť se mi mastí"
+   ],
    "chatReply": "Z nabídky vybírám (pleť, pro suchou pleť):\n\nOdličovací mléko pro citlivou pleť RŮŽE & SEDMIKRÁSKA – mini (mini balení · 30 ml) — 149 Kč. Podle popisu pro suchou a citlivou pleť, hydratace, zklidnění. Zobrazit produkt v e-shopu ↗\n\nZklidňující pleťová voda SEDMIKRÁSKA pro citlivou pleť – mini (mini ba",
    "foreignInText": [],
    "oldOffer": false,
@@ -244,6 +256,5 @@
   "served": 117,
   "notFound": 135
  },
- "paidCalls": 0,
- "checkedContentIdenticalTo": "e5e32d3"
+ "paidCalls": 0
 }
