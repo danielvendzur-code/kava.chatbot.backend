@@ -1,6 +1,7 @@
 # Koncept e-mailu – Renovality (iba DRAFT, neodoslať ani neplánovať)
 
 Komu: info@renovality.cz
+Zdroj kontaktu: https://www.renovality.cz/kontakty/ („Máte na nás nějaké jiné dotazy?“), overené 2026-10-25, kontakt bez zmeny
 Predmet: Výber starostlivosti priamo pre Renovality
 
 Dobrý deň,

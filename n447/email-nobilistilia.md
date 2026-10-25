@@ -1,6 +1,7 @@
 # Koncept e-mailu – Nobilis Tilia (iba DRAFT, neodoslať ani neplánovať)
 
 Komu: nobilis@nobilis.cz
+Zdroj kontaktu: https://www.nobilis.cz/kontakt/ (Zákaznický servis), overené 2026-10-25, kontakt bez zmeny
 Predmet: Výber starostlivosti priamo pre Nobilis Tilia
 
 Dobrý deň,

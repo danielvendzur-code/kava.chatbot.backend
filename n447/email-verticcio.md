@@ -1,6 +1,7 @@
 # Koncept e-mailu – Verticcio (iba DRAFT, neodoslať ani neplánovať)
 
 Komu: marketing@verticcio.sk
+Zdroj kontaktu: https://www.verticcio.sk/info/kontakt (sekcia Centrála (popri info@verticcio.sk)), overené 2026-10-25, kontakt bez zmeny
 Predmet: Výber kávy priamo pre Verticcio
 
 Dobrý deň,

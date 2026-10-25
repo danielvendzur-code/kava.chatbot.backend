@@ -1,6 +1,7 @@
 # Koncept e-mailu – Manufaktura (iba DRAFT, neodoslať ani neplánovať)
 
 Komu: info@manufaktura.cz
+Zdroj kontaktu: https://manufaktura.cz/kontakt/ („Kontakt na sídlo firmy“ (objednávky: eshop@manufaktura.cz)), overené 2026-10-25, kontakt bez zmeny
 Predmet: Výber pleťovej starostlivosti pre Manufaktura
 
 Dobrý deň,

@@ -23,7 +23,7 @@
   "logoLight": "/assets/verticcio/logo-light.png",
   "hero": "/assets/verticcio/hero.jpg",
   "contact": "marketing@verticcio.sk",
-  "contactSource": "https://www.verticcio.sk/info/kontakt (zo zadania, 2026-10-23 neoverené znova – WAF)",
+  "contactSource": "https://www.verticcio.sk/info/kontakt – sekcia Centrála (popri info@verticcio.sk); overené priamo na oficiálnej stránke 2026-10-25, bez zmeny",
   "theme": {
    "ink": "#0f3f41",
    "brand": "#0f3f41",
