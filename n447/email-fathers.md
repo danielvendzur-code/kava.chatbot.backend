@@ -1,15 +1,18 @@
-# Koncept e-mailu – Father's Coffee Roastery (iba DRAFT, neodoslať ani neplánovať)
+# Koncept e-mailu – Father's Coffee Roastery (DRAFT, neodoslané)
 
 Komu: info@fathers.cz
-Predmet: Výber kávy priamo pre Father's
+Zdroj kontaktu: https://fathers.cz/kontakt
+Predmet: Ukázka chatbota pro Father's Coffee Roastery
 
-Dobrý deň,
+Dobrý den,
 
-pripravil som pre Father's Coffee Roastery ukážku poradcu a chatu nad vašou ponukou 32 káv (espresso aj filter) a drip bagov, celá v češtine a s cenami v Kč. Zákazník s kávovarom, ktorý chce čokoládu a orechy do 325 Kč, porovná Minas (mandle, višne, tmavá čokoláda) s Cafeinou (lieskovoorieškové maslo, višne, čokoláda), obe za 300 Kč, s odkazom priamo na správnu verziu praženia.
+na odkazu najdete ukázku chatbota a průvodce výběrem kávy, kterou jsem si dovolil připravit pro váš e-shop. Chatbot odpovídá na dotazy zákazníků a průvodce jim v několika krocích doporučí vhodnou kávu z vaší nabídky.
 
-[overený odkaz na ukážku na vlastnej subdoméne mojchatbot.sk – doplniť po schválení produkcie]
+https://fathers.mojchatbot.sk/
 
-Nasadenie stojí 447 € jednorazovo a prevádzka 10 € mesačne. Ak vám riešenie dáva zmysel, rád s vami prejdem jeho fungovanie a dohodneme vloženie na váš web.
+Pokud se vám řešení líbí, rád vám ho nasadím na web – jednorázově 447 € a provoz 10 € měsíčně. Klidně mi napište nebo zavolejte – domluvíme úpravy podle vašich představ a doplníme potřebné informace o firmě.
 
-S pozdravom
+S pozdravem
 Vendžúr
+
+https://mojchatbot.sk

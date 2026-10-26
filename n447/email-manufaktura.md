@@ -1,16 +1,18 @@
-# Koncept e-mailu – Manufaktura (iba DRAFT, neodoslať ani neplánovať)
+# Koncept e-mailu – Manufaktura (DRAFT, neodoslané)
 
 Komu: info@manufaktura.cz
-Zdroj kontaktu: https://manufaktura.cz/kontakt/ („Kontakt na sídlo firmy“ (objednávky: eshop@manufaktura.cz)), overené 2026-10-25, kontakt bez zmeny
-Predmet: Výber pleťovej starostlivosti pre Manufaktura
+Zdroj kontaktu: https://manufaktura.cz/kontakt/ – „Kontakt na sídlo firmy“ (objednávky: eshop@manufaktura.cz); overené priamo na oficiálnej stránke 2026-10-25, bez zmeny
+Predmet: Ukázka chatbota pro Manufaktura
 
-Dobrý deň,
+Dobrý den,
 
-pripravil som pre Manufaktura ukážku produktového poradcu nad vašou pleťovou rutinou (séra a oleje, krémy, pleťové vody a odličovače, masky a okolie očí), celú v češtine a s cenami v Kč. Váš existujúci chat nenahrádza – dopĺňa ho o krátky výber: zákazníčka s mastnou alebo zmiešanou pleťou si zvolí prioritu, typ produktu a rozpočet na celú zostavu a dostane napríklad Pleťový krém CLEAR & HAPPY 50 ml za 309 Kč s odkazom priamo do e-shopu. Potreby pleti berie z vašich vlastných kategórií, nič si nedomýšľa.
+na odkazu najdete ukázku chatbota a průvodce výběrem kosmetiky, kterou jsem si dovolil připravit pro váš e-shop. Chatbot odpovídá na dotazy zákazníků a průvodce jim v několika krocích doporučí vhodný produkt z vaší nabídky.
 
-[overený odkaz na ukážku na vlastnej subdoméne mojchatbot.sk – doplniť po schválení produkcie]
+https://manufaktura.mojchatbot.sk/
 
-Nasadenie stojí 447 € jednorazovo a prevádzka 10 € mesačne. Ak vám doplnkový výber dáva zmysel, rád s vami prejdem jeho fungovanie.
+Pokud se vám řešení líbí, rád vám ho nasadím na web – jednorázově 447 € a provoz 10 € měsíčně. Klidně mi napište nebo zavolejte – domluvíme úpravy podle vašich představ a doplníme potřebné informace o firmě.
 
-S pozdravom
+S pozdravem
 Vendžúr
+
+https://mojchatbot.sk

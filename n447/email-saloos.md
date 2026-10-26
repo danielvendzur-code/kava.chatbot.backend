@@ -1,15 +1,18 @@
-# Koncept e-mailu – Saloos (iba DRAFT, neodoslať ani neplánovať)
+# Koncept e-mailu – Saloos (DRAFT, neodoslané)
 
 Komu: marketing@saloos.cz
-Predmet: Výber starostlivosti priamo pre Saloos
+Zdroj kontaktu: https://www.saloos.cz/p/kontakt
+Predmet: Ukázka chatbota pro Saloos
 
-Dobrý deň,
+Dobrý den,
 
-pripravil som pre Saloos ukážku poradcu a chatu nad vašou pleťovou a telovou starostlivosťou, celú v češtine a s cenami v Kč. Zákazníčka so suchou pleťou si vyberie prioritu (napríklad jemnú starostlivosť) a typ produktu a dostane konkrétny produkt s cenou balenia, napríklad Bio Sójový olej 50 ml za 104 Kč, s odkazom priamo do e-shopu a s rozpočtom na celú zostavu. Typ pleti poradca berie z vašich vlastných kategórií, nič si nedomýšľa.
+na odkazu najdete ukázku chatbota a průvodce výběrem kosmetiky, kterou jsem si dovolil připravit pro váš e-shop. Chatbot odpovídá na dotazy zákazníků a průvodce jim v několika krocích doporučí vhodný produkt z vaší nabídky.
 
-[overený odkaz na ukážku na vlastnej subdoméne mojchatbot.sk – doplniť po schválení produkcie]
+https://saloos.mojchatbot.sk/
 
-Nasadenie stojí 447 € jednorazovo a prevádzka 10 € mesačne. Ak vám riešenie dáva zmysel, rád s vami prejdem jeho fungovanie a dohodneme vloženie na váš web.
+Pokud se vám řešení líbí, rád vám ho nasadím na web – jednorázově 447 € a provoz 10 € měsíčně. Klidně mi napište nebo zavolejte – domluvíme úpravy podle vašich představ a doplníme potřebné informace o firmě.
 
-S pozdravom
+S pozdravem
 Vendžúr
+
+https://mojchatbot.sk

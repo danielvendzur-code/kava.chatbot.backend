@@ -1,15 +1,18 @@
-# Koncept e-mailu – Rebelbean (iba DRAFT, neodoslať ani neplánovať)
+# Koncept e-mailu – Rebelbean (DRAFT, neodoslané)
 
 Komu: shop@rebelbean.cz
-Predmet: Výber kávy priamo pre Rebelbean
+Zdroj kontaktu: https://www.rebelbean.cz/ (patička) a https://www.rebelbean.cz/obchodni-podminky/
+Predmet: Ukázka chatbota pro Rebelbean
 
-Dobrý deň,
+Dobrý den,
 
-pripravil som pre Rebelbean ukážku poradcu a chatu nad vašou aktuálnou ponukou 11 káv, celá v češtine a s cenami v Kč. Zákazník s kávovarom, ktorý chce čokoládovú chuť do 310 Kč, sa pri dvoch rovnako vhodných kávach dozvie, že Push The Button má sladkú čokoládu a lieskové orechy a je pražená pre automaty, kým The Underdog ponúka tmavú čokoládu, karamel a pražené orechy. Pri AeroPresse ponúkne aj vaše filtre, iba ak sa zmestia do rozpočtu.
+na odkazu najdete ukázku chatbota a průvodce výběrem kávy, kterou jsem si dovolil připravit pro váš e-shop. Chatbot odpovídá na dotazy zákazníků a průvodce jim v několika krocích doporučí vhodnou kávu z vaší nabídky.
 
-[overený odkaz na ukážku na vlastnej subdoméne mojchatbot.sk – doplniť po schválení produkcie]
+https://rebelbean.mojchatbot.sk/
 
-Nasadenie stojí 447 € jednorazovo a prevádzka 10 € mesačne. Ak vám riešenie dáva zmysel, rád s vami prejdem jeho fungovanie a dohodneme vloženie na váš web.
+Pokud se vám řešení líbí, rád vám ho nasadím na web – jednorázově 447 € a provoz 10 € měsíčně. Klidně mi napište nebo zavolejte – domluvíme úpravy podle vašich představ a doplníme potřebné informace o firmě.
 
-S pozdravom
+S pozdravem
 Vendžúr
+
+https://mojchatbot.sk
