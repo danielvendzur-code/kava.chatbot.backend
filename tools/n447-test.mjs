@@ -124,7 +124,8 @@ report.checks.paths = {total: paths.length, maxQuestions: maxQ, followUpSteps: f
 {
   const ref = {...(data.products.find((p) => p.id === 'doce-citrus') || data.products.find((p) => !p.decaf && E.suits(p, 'espresso')))};
   if (slug === 'black') {
-    const solo = {...data, products: [ref, {...data.products.find((p) => p.id === 'black-sheep'), variants: [{roast: 'espresso', grams: 200, grind: 'Zrnková', price: 11.9, verifiedAt: 'test', source: 'test'}]}]};
+    const solo = {...data, products: [ref, {...data.products.find((p) => p.id === 'black-sheep'), variants: [{roast: 'espresso', grams: 200, grind: 'Zrnková', price: 13.9, verifiedAt: 'test', source: 'test'}]},
+      ...[17.9, 21.9].map((price, i) => ({...data.products.find((p) => p.id === 'black-sheep'), id: 'syn-' + i, variants: [{roast: 'espresso', grams: 200, grind: 'Zrnková', price, verifiedAt: 'test', source: 'test'}]}))]};
     const q = E.nextQuestion(solo, {prep: 'espresso', taste: 'choco'});
     assert.equal(q.key, 'budget', 'rozpočet sa má zobraziť, keď sú overené všetky kávy výberu');
     const r = E.result(solo, {prep: 'espresso', taste: 'choco', budget: '10.5'});

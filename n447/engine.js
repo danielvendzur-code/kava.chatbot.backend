@@ -18,6 +18,8 @@
   const CAF_PHOTO = {yes: '/assets/scenes/coffee-beans.jpg', no: '/assets/scenes/coffee-decaf-cup.jpg'};
   /* Jednoduché ilustrácie pre voľby, ktoré nemajú vhodnú fotku (pomôcka, spracovanie, pôvod, praženie, zloženie, rozpočet, drip). */
   const IL = (n) => '/assets/n447/ilustracie/' + n + '.svg';
+  /* Praženie: skutočné fotky zŕn (Pexels, zdroje v assets/n447/foto/sources.json). */
+  const FOTO = (n) => '/assets/n447/foto/' + n + '.jpg';
   const roastClass = (label) => { const x = String(label).toLowerCase();
     if (/dark|tmav/.test(x)) return 'dark'; if (/light|svetl|světl/.test(x)) return 'light'; if (/medium|stred|střed/.test(x)) return 'medium'; return null; };
   const GRIND_FOR = {espresso: 'Zrnková', moka: 'Mletá moka konvička', v60: 'Mletá drip', aeropress: 'Mletá aeropress', frenchpress: 'Mletá french press'};
@@ -236,12 +238,17 @@
       const cheapest = p.map((x) => { const v = verifiedPacks(x, base)[0]; return v ? {x, v, sum: v.price} : null; });
       if (cheapest.length > 1 && cheapest.every(Boolean)) {
         const prices = [...new Set(cheapest.map((c) => c.sum))].sort((m, n) => m - n);
+        /* Rozpočet sa pýta, iba keď sa ceny vhodných káv naozaj líšia (aspoň o 20 % a 2 € / 50 Kč);
+           pri malom rozdiele nasleduje otázka na skutočný rozdiel medzi kávami. */
+        const lo = prices[0], hi = prices[prices.length - 1], minGap = p[0].currency === 'CZK' ? 50 : 2;
+        const meaningful = hi - lo >= minGap && hi >= lo * 1.2;
         const limits = prices.filter((x) => cheapest.filter((c) => c.sum <= x + EPS).length < p.length);
         /* Spodný limit zahrnie aspoň tretinu vhodných káv (najmenej dve), horný všetky okrem najdrahších. */
         const need = Math.max(2, Math.ceil(p.length / 3));
         const low = limits.find((x) => cheapest.filter((c) => c.sum <= x + EPS).length >= need);
-        const chosen = [...new Set([low, limits[limits.length - 1]].filter((x) => x !== undefined))];
-        if (chosen.length) {
+        let chosen = [...new Set([low, limits[limits.length - 1]].filter((x) => x !== undefined))];
+        if (chosen.length === 2 && chosen[1] < chosen[0] * 1.15) chosen = [chosen[0]];
+        if (meaningful && chosen.length === 2) {
           const cur = p[0].currency;
           const options = chosen.map((x, i) => { const fit = cheapest.filter((c) => c.sum <= x + EPS); return text(String(x), t.upTo + money(x, cur), fit.length === 1 && fit[0].x.name.length <= 28 ? fit[0].x.name + ' ' + grams(fit[0].v.grams) : t.nInBudget(fit.length), IL('budget-' + (i + 1))); });
           options.push(text('any', t.budgetAny, t.allFit(p.length), IL('budget-any')));
@@ -262,10 +269,10 @@
       if (kind === 'region') return text(kind + ':' + k, labels[k] || cap(k), count, IL('region-' + (['africa', 'asia', 'americas'].includes(k) ? k : 'blend')));
       if (kind === 'roast') {
         const cls = keys.map(roastClass), mine = roastClass(k), distinct = !cls.includes(null) && new Set(cls).size === cls.length;
-        return distinct ? text(kind + ':' + k, t.roastPlain[mine], cap(k) + ' · ' + count, IL('roast-' + mine))
-          : text(kind + ':' + k, cap(k), count, IL('roast-' + (keys.indexOf(k) % 3 + 1)));
+        return distinct ? text(kind + ':' + k, t.roastPlain[mine], cap(k) + ' · ' + count, FOTO('roast-' + mine))
+          : text(kind + ':' + k, cap(k), count, FOTO('roast-' + (keys.indexOf(k) % 3 + 1)));
       }
-      return text(kind + ':' + k, labels[k] || cap(k), count, IL('roast-1'));
+      return text(kind + ':' + k, labels[k] || cap(k), count, FOTO('roast-1'));
     };
     const kinds = [['process', t.procLabels, t.processQ, t.processName], ['roast', {}, t.roastQ, t.fRoast],
       ['region', t.region, t.regionQ, t.regionName], ['blend', t.blend, t.blendQ, t.blendName]];
