@@ -216,7 +216,15 @@
     }
     if (a.prep === 'filter' && !a.tool) {
       const tools = Object.keys(t.tool).filter((k) => pool(data, {prep: 'filter', tool: k}).length);
-      if (tools.length > 1) return {key: 'tool', name: t.toolName, title: t.toolQ, options: tools.map((k) => text(k, t.tool[k][0], t.tool[k][1], IL('tool-' + k)))};
+      /* Pomôcky, ktoré vedú k úplne rovnakému výsledku (káva, balenie, mletie aj postup), sa spoja do jednej voľby. */
+      const sigOf = (r) => r ? JSON.stringify([r.product && r.product.id, r.pack && r.pack.grams, r.pack && r.pack.price, r.next && r.next.items, r.packLabel, (r.reasons || []).map((x) => x[0])]) : 'none';
+      const reach = (x) => { const q = nextQuestion(data, x); if (!q) return [sigOf(result(data, x))];
+        return [...new Set(q.options.flatMap((o) => reach(answer(x, q.key, o.value))))]; };
+      const groups = [];
+      for (const k of tools) { const sg = reach(answer(a, 'tool', k)).sort().join('|'); const g = groups.find((x) => x.sg === sg); if (g) g.keys.push(k); else groups.push({sg, keys: [k]}); }
+      const or = data.lang === 'cs' ? ' nebo ' : ' alebo ';
+      if (groups.length > 1) return {key: 'tool', name: t.toolName, title: t.toolQ, options: groups.map((g) => text(g.keys[0], g.keys.length > 1 ? g.keys.map((k) => ({v60: 'V60', aeropress: 'AeroPress', frenchpress: 'French press'})[k]).join(or) : t.tool[g.keys[0]][0],
+        g.keys.length > 1 ? (data.lang === 'cs' ? 'Stejná káva, mletí i postup' : 'Rovnaká káva, mletie aj postup') : t.tool[g.keys[0]][1], IL('tool-' + g.keys[0])))};
     }
     let p = pool(data, {prep: a.prep, tool: a.tool});
     /* Kofeín je samostatná otázka iba vtedy, keď sú medzi vhodnými kávami bezkofeínové aj s kofeínom. */
