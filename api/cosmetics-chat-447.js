@@ -1,6 +1,6 @@
 /* n447 – chat kozmetických ukážok novej dávky (447 € + 10 €/mes.). Izolované od /api/cosmetics-chat: pozná iba firmy
    novej dávky, katalógy načíta staticky (Vercel), bez presmerovania na iný server. Neznáma firma = 400, nikdy cudzia. */
-import '../advisor-core.js';
+import '../n447/kozmetika/advisor-core-n447.js';
 import '../catalogue-reply-core.js';
 import '../chat-brain.js';
 import '../chat-adapters.js';

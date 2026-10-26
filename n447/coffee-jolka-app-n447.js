@@ -64,6 +64,7 @@
     ];
     return all.filter((x) => x[0]).map((x) => cs ? x[2] : x[1]).slice(0, 4);
   }
+  let FIXED_STEPS = 0;
   const czechDemo=N447.lang==='cs';
   if(czechDemo){window.CX_FORCE_LANG='cs';window.CX_LANG='cs';}
   const noteLabel=note=>window.CXCoffeeDifferenceCore?.labelNote(note,czechDemo||window.CX_LANG==='cs')??note;
@@ -410,12 +411,14 @@
   function answersBefore(index) { const a = {}; steps.slice(0, index).forEach((s) => { if (state.answers[s.key] !== undefined) a[s.key] = state.answers[s.key]; }); return a; }
   function updateProgress() {
     const done = state.stage !== 'questions';
-    const total = done ? steps.length : state.step + ENG.maxRemaining(N447, answersBefore(state.step));
-    $('#stepTitle').textContent = done ? T('Vaša káva', 'Vaše káva') : T(`Krok ${state.step + 1} zo ${total}`, `Krok ${state.step + 1} ze ${total}`);
+    /* Počet úsekov pásika je pevný pre celú firmu (najdlhšia cesta) a text nepíše „zo N“ – počet sa počas výberu nemení. */
+    const fixedTotal = (FIXED_STEPS ||= Math.max(1, ENG.maxRemaining(N447, {})));
+    const total = done ? Math.max(fixedTotal, steps.length) : Math.max(fixedTotal, state.step + 1);
+    $('#stepTitle').textContent = done ? T('Vaša káva', 'Vaše káva') : T(`Krok ${state.step + 1}`, `Krok ${state.step + 1}`);
     $('#stepName').textContent = done ? T('Osobné odporúčanie', 'Osobní doporučení') : steps[state.step].name;
     $('#back').disabled = state.stage === 'questions' && state.step === 0;
-    const bar = steps.slice(0, done ? steps.length : state.step + 1).concat(Array.from({length: Math.max(0, total - state.step - 1)}, () => ({name: ''})));
-    $('#progress').innerHTML = (done ? steps : bar).map((step, index) => {
+    const bar = steps.slice(0, done ? steps.length : state.step + 1).concat(Array.from({length: Math.max(0, total - (done ? steps.length : state.step + 1))}, () => ({name: ''})));
+    $('#progress').innerHTML = bar.map((step, index) => {
       const className = done || index < state.step ? 'is-done' : index === state.step ? 'is-active' : '';
       return `<i class="${className}"><b>${esc(step.name)}</b></i>`;
     }).join('');
