@@ -6,16 +6,6 @@
       "has": [
         {
           "type": "host",
-          "value": "^(?<sub>verticcio|rebelbean|doubleshot|fathers|candycane|9gramscoffee|saloos|renovality|nobilistilia|manufaktura)\\.mojchatbot\\.sk$"
-        }
-      ],
-      "destination": "/:sub.html"
-    },
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
           "value": "^(?<sub>praziarnicka|diamonds|kaffa|vitazov|concept|jolka|goriffee|readyafter|coffeesheep|zlatezrnko|becafe|simplecoffee|ebenica|casadelcaffe|coffeeveronia|grandroastery|coffeein|kavoholik|donfranko|ajvencoffee|kavavra|grain)\\.mojchatbot\\.sk$"
         }
       ],
@@ -163,5 +153,18 @@
     "api/cosmetics-chat.js": {
       "includeFiles": "{catalogues/*-refresh.js,advisor-core.js,catalogue-reply-core.js,catalogue-data.js,chat-brain.js,chat-adapters.js}"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "^(?<sub>verticcio|rebelbean|doubleshot|fathers|candycane|9gramscoffee|saloos|renovality|nobilistilia|manufaktura)\\.mojchatbot\\.sk$"
+        }
+      ],
+      "destination": "/:sub.html",
+      "permanent": false
+    }
+  ]
 }
