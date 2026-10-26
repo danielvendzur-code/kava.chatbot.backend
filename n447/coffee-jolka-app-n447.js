@@ -411,10 +411,11 @@
   function answersBefore(index) { const a = {}; steps.slice(0, index).forEach((s) => { if (state.answers[s.key] !== undefined) a[s.key] = state.answers[s.key]; }); return a; }
   function updateProgress() {
     const done = state.stage !== 'questions';
-    /* Počet úsekov pásika je pevný pre celú firmu (najdlhšia cesta) a text nepíše „zo N“ – počet sa počas výberu nemení. */
-    const fixedTotal = (FIXED_STEPS ||= Math.max(1, ENG.maxRemaining(N447, {})));
-    const total = done ? Math.max(fixedTotal, steps.length) : Math.max(fixedTotal, state.step + 1);
-    $('#stepTitle').textContent = done ? T('Vaša káva', 'Vaše káva') : T(`Krok ${state.step + 1}`, `Krok ${state.step + 1}`);
+    /* Počet krokov = zaokrúhlený priemer všetkých ciest firmy; počas výberu sa nemení. Dlhší výber pokračuje bez „zo N“. */
+    if (!FIXED_STEPS) { const lens = ENG.allPaths(N447).map((x) => x.trail.length); FIXED_STEPS = Math.max(1, Math.round(lens.reduce((m, n) => m + n, 0) / lens.length)); }
+    const fixedTotal = FIXED_STEPS, n = state.step + 1;
+    const total = done ? Math.max(fixedTotal, steps.length) : Math.max(fixedTotal, n);
+    $('#stepTitle').textContent = done ? T('Vaša káva', 'Vaše káva') : n <= fixedTotal ? T(`Krok ${n} zo ${fixedTotal}`, `Krok ${n} ze ${fixedTotal}`) : T(`Krok ${n}`, `Krok ${n}`);
     $('#stepName').textContent = done ? T('Osobné odporúčanie', 'Osobní doporučení') : steps[state.step].name;
     $('#back').disabled = state.stage === 'questions' && state.step === 0;
     const bar = steps.slice(0, done ? steps.length : state.step + 1).concat(Array.from({length: Math.max(0, total - (done ? steps.length : state.step + 1))}, () => ({name: ''})));
