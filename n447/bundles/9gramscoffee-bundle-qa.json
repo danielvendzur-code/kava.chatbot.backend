@@ -1,26 +1,27 @@
 {
  "slug": "9gramscoffee",
  "family": "coffee",
- "builtFrom": "a9f8559",
+ "builtFrom": "f78a77e",
  "static": {
-  "otherHosts": {},
+  "otherHosts": {
+   "assets/n447/foto/sources.json": [
+    "www.pexels.com"
+   ]
+  },
   "sharedCodeIdentifiers": {
+   "coffee-quality.js": [
+    "mylo"
+   ],
    "coffee-widget-polish.css": [
     "concept",
     "kaffa"
    ],
-   "coffee-header-cleanup.css": [
-    "casadelcaffe",
-    "coffeesheep",
-    "praziarnicka",
-    "zlatezrnko"
+   "assets/n447/foto/sources.json": [
+    "grain"
    ],
    "coffee-widget-polish.js": [
     "kaffa",
     "praziarnicka"
-   ],
-   "coffee-quality.js": [
-    "mylo"
    ],
    "n447/coffee-owner-brand-n447.js": [
     "concept",
@@ -31,10 +32,16 @@
    ],
    "n447/data/9gramscoffee.js": [
     "diamonds"
+   ],
+   "coffee-header-cleanup.css": [
+    "casadelcaffe",
+    "coffeesheep",
+    "praziarnicka",
+    "zlatezrnko"
    ]
   },
-  "files": 121,
-  "bytes": 3906899,
+  "files": 122,
+  "bytes": 4283889,
   "excludedForeignAssets": []
  },
  "http": {

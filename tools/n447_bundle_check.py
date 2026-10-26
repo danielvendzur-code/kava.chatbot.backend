@@ -143,7 +143,9 @@ try:
                 pg.click('[data-release-open="advisor"]'); pg.wait_for_timeout(500)
                 for _ in range(14):
                     if not pg.evaluate("document.getElementById('advisor').classList.contains('is-questions')"): break
-                    o = pg.query_selector('#advisor .option'); r['trail'].append((o.inner_text() or '').split('\n')[0][:30]); o.click(); pg.wait_for_timeout(650)
+                    o = pg.query_selector('#advisor .option')
+                    if not o: pg.wait_for_timeout(600); continue  # prechod medzi obrazovkami
+                    r['trail'].append((o.inner_text() or '').split('\n')[0][:30]); o.click(); pg.wait_for_timeout(650)
                 r['resultShown'] = not pg.evaluate("document.getElementById('advisor').classList.contains('is-questions')")
                 r['result'] = pg.inner_text('#advisor')[:400]
                 cta = pg.evaluate("(() => { const a = document.getElementById('addToCart'); return a ? {tag: a.tagName, target: a.getAttribute('target'), href: a.href, text: a.innerText.trim()} : null; })()")

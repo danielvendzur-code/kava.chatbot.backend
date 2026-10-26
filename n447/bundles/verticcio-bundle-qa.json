@@ -1,10 +1,24 @@
 {
  "slug": "verticcio",
  "family": "coffee",
- "builtFrom": "a9f8559",
+ "builtFrom": "f78a77e",
  "static": {
-  "otherHosts": {},
+  "otherHosts": {
+   "assets/n447/foto/sources.json": [
+    "www.pexels.com"
+   ]
+  },
   "sharedCodeIdentifiers": {
+   "n447/coffee-owner-brand-n447.js": [
+    "concept",
+    "diamonds",
+    "kaffa",
+    "praziarnicka",
+    "vitazov"
+   ],
+   "assets/n447/foto/sources.json": [
+    "grain"
+   ],
    "coffee-header-cleanup.css": [
     "casadelcaffe",
     "coffeesheep",
@@ -14,24 +28,17 @@
    "coffee-quality.js": [
     "mylo"
    ],
-   "n447/coffee-owner-brand-n447.js": [
+   "coffee-widget-polish.css": [
     "concept",
-    "diamonds",
-    "kaffa",
-    "praziarnicka",
-    "vitazov"
+    "kaffa"
    ],
    "coffee-widget-polish.js": [
     "kaffa",
     "praziarnicka"
-   ],
-   "coffee-widget-polish.css": [
-    "concept",
-    "kaffa"
    ]
   },
-  "files": 112,
-  "bytes": 3833760,
+  "files": 113,
+  "bytes": 4210750,
   "excludedForeignAssets": []
  },
  "http": {

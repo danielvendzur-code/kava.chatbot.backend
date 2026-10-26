@@ -1,10 +1,18 @@
 {
  "slug": "fathers",
  "family": "coffee",
- "builtFrom": "a9f8559",
+ "builtFrom": "f78a77e",
  "static": {
-  "otherHosts": {},
+  "otherHosts": {
+   "assets/n447/foto/sources.json": [
+    "www.pexels.com"
+   ]
+  },
   "sharedCodeIdentifiers": {
+   "coffee-widget-polish.js": [
+    "kaffa",
+    "praziarnicka"
+   ],
    "n447/coffee-owner-brand-n447.js": [
     "concept",
     "diamonds",
@@ -12,26 +20,25 @@
     "praziarnicka",
     "vitazov"
    ],
+   "coffee-widget-polish.css": [
+    "concept",
+    "kaffa"
+   ],
    "coffee-quality.js": [
     "mylo"
+   ],
+   "assets/n447/foto/sources.json": [
+    "grain"
    ],
    "coffee-header-cleanup.css": [
     "casadelcaffe",
     "coffeesheep",
     "praziarnicka",
     "zlatezrnko"
-   ],
-   "coffee-widget-polish.css": [
-    "concept",
-    "kaffa"
-   ],
-   "coffee-widget-polish.js": [
-    "kaffa",
-    "praziarnicka"
    ]
   },
-  "files": 125,
-  "bytes": 3626844,
+  "files": 126,
+  "bytes": 4003834,
   "excludedForeignAssets": []
  },
  "http": {

@@ -1,12 +1,29 @@
 {
  "slug": "rebelbean",
  "family": "coffee",
- "builtFrom": "a9f8559",
+ "builtFrom": "f78a77e",
  "static": {
-  "otherHosts": {},
+  "otherHosts": {
+   "assets/n447/foto/sources.json": [
+    "www.pexels.com"
+   ]
+  },
   "sharedCodeIdentifiers": {
+   "assets/n447/foto/sources.json": [
+    "grain"
+   ],
    "coffee-quality.js": [
     "mylo"
+   ],
+   "coffee-widget-polish.css": [
+    "concept",
+    "kaffa"
+   ],
+   "coffee-header-cleanup.css": [
+    "casadelcaffe",
+    "coffeesheep",
+    "praziarnicka",
+    "zlatezrnko"
    ],
    "n447/coffee-owner-brand-n447.js": [
     "concept",
@@ -18,20 +35,10 @@
    "coffee-widget-polish.js": [
     "kaffa",
     "praziarnicka"
-   ],
-   "coffee-widget-polish.css": [
-    "concept",
-    "kaffa"
-   ],
-   "coffee-header-cleanup.css": [
-    "casadelcaffe",
-    "coffeesheep",
-    "praziarnicka",
-    "zlatezrnko"
    ]
   },
-  "files": 102,
-  "bytes": 3642186,
+  "files": 103,
+  "bytes": 4019176,
   "excludedForeignAssets": []
  },
  "http": {
@@ -48,7 +55,7 @@
  },
  "browser": {
   "390x844": {
-   "requests": 44,
+   "requests": 42,
    "hosts": [
     "127.0.0.1"
    ],
@@ -58,15 +65,14 @@
     "Kávovar nebo automat",
     "S kofeinem",
     "Čokoládová a oříšková",
-    "Do 310 Kč",
-    "sladká čokoláda · lískové ořec"
+    "čokoláda · para ořechy"
    ],
    "resultShown": true,
-   "result": "Push The Button\n\nBrazílie · Nova Resende, Minas Gerais\n\n250 g · tmavé, pro automatické kávovary · zrnková\n310 Kč\nDalší balení: 1 kg 1 060 Kč (nad rozpočet)\nNa espresso i do automatuPražírna ji nabízí v espresso pražení.\nČokoládová a oříškováV chuti: sladká čokoláda, lískové ořechy.\nV rozpočtu250 g celkem 310 Kč; váš limit 310 Kč.\n\nKáva stvořená pro automat: speciální pražení a vysoká rozpustnost p",
+   "result": "Brazil Fazenda do Cruzeiro\n\nBrazílie · Campo das Vertentes\n\n250 g · omni pražení (espresso i filtr) · zrnková\n370 Kč\nDalší balení: 1 kg 1 270 Kč\nNa espresso i do automatuPražírna ji nabízí v „omni“ pražení, vhodném na espresso i filtr.\nČokoládová a oříškováV chuti: čokoláda, para ořechy, karamel.\n\nHutná a sladká Brazílie s plným tělem a nízkou aciditou; pražírna ji uvádí na filtr i espresso.\n\nPŮVO",
    "cta": {
     "tag": "A",
     "target": null,
-    "href": "https://www.rebelbean.cz/push-the-button/",
+    "href": "https://www.rebelbean.cz/brazil-fazenda-cruzeiro/",
     "text": "Zobrazit tuto kávu"
    },
    "chips": [
@@ -82,7 +88,7 @@
    "externalHosts": []
   },
   "1280x800": {
-   "requests": 44,
+   "requests": 42,
    "hosts": [
     "127.0.0.1"
    ],
@@ -92,15 +98,14 @@
     "Kávovar nebo automat",
     "S kofeinem",
     "Čokoládová a oříšková",
-    "Do 310 Kč",
-    "sladká čokoláda · lískové ořec"
+    "čokoláda · para ořechy"
    ],
    "resultShown": true,
-   "result": "Push The Button\n\nBrazílie · Nova Resende, Minas Gerais\n\n250 g · tmavé, pro automatické kávovary · zrnková\n310 Kč\nDalší balení: 1 kg 1 060 Kč (nad rozpočet)\nNa espresso i do automatuPražírna ji nabízí v espresso pražení.\nČokoládová a oříškováV chuti: sladká čokoláda, lískové ořechy.\nV rozpočtu250 g celkem 310 Kč; váš limit 310 Kč.\n\nKáva stvořená pro automat: speciální pražení a vysoká rozpustnost p",
+   "result": "Brazil Fazenda do Cruzeiro\n\nBrazílie · Campo das Vertentes\n\n250 g · omni pražení (espresso i filtr) · zrnková\n370 Kč\nDalší balení: 1 kg 1 270 Kč\nNa espresso i do automatuPražírna ji nabízí v „omni“ pražení, vhodném na espresso i filtr.\nČokoládová a oříškováV chuti: čokoláda, para ořechy, karamel.\n\nHutná a sladká Brazílie s plným tělem a nízkou aciditou; pražírna ji uvádí na filtr i espresso.\n\nPŮVO",
    "cta": {
     "tag": "A",
     "target": null,
-    "href": "https://www.rebelbean.cz/push-the-button/",
+    "href": "https://www.rebelbean.cz/brazil-fazenda-cruzeiro/",
     "text": "Zobrazit tuto kávu"
    },
    "chips": [
@@ -121,7 +126,7 @@
   "apiCalls": 20,
   "outboundBlocked": 0,
   "outboundHosts": [],
-  "served": 91,
+  "served": 87,
   "notFound": 135
  },
  "paidCalls": 0

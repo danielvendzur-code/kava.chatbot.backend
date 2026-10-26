@@ -1,9 +1,13 @@
 {
  "slug": "candycane",
  "family": "coffee",
- "builtFrom": "a9f8559",
+ "builtFrom": "f78a77e",
  "static": {
-  "otherHosts": {},
+  "otherHosts": {
+   "assets/n447/foto/sources.json": [
+    "www.pexels.com"
+   ]
+  },
   "sharedCodeIdentifiers": {
    "n447/coffee-owner-brand-n447.js": [
     "concept",
@@ -12,9 +16,12 @@
     "praziarnicka",
     "vitazov"
    ],
-   "coffee-widget-polish.css": [
-    "concept",
-    "kaffa"
+   "coffee-widget-polish.js": [
+    "kaffa",
+    "praziarnicka"
+   ],
+   "assets/n447/foto/sources.json": [
+    "grain"
    ],
    "coffee-header-cleanup.css": [
     "casadelcaffe",
@@ -25,13 +32,13 @@
    "coffee-quality.js": [
     "mylo"
    ],
-   "coffee-widget-polish.js": [
-    "kaffa",
-    "praziarnicka"
+   "coffee-widget-polish.css": [
+    "concept",
+    "kaffa"
    ]
   },
-  "files": 103,
-  "bytes": 2858846,
+  "files": 104,
+  "bytes": 3235836,
   "excludedForeignAssets": []
  },
  "http": {

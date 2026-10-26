@@ -1,17 +1,23 @@
 {
  "slug": "doubleshot",
  "family": "coffee",
- "builtFrom": "a9f8559",
+ "builtFrom": "f78a77e",
  "static": {
-  "otherHosts": {},
+  "otherHosts": {
+   "assets/n447/foto/sources.json": [
+    "www.pexels.com"
+   ]
+  },
   "sharedCodeIdentifiers": {
+   "coffee-header-cleanup.css": [
+    "casadelcaffe",
+    "coffeesheep",
+    "praziarnicka",
+    "zlatezrnko"
+   ],
    "coffee-widget-polish.js": [
     "kaffa",
     "praziarnicka"
-   ],
-   "coffee-widget-polish.css": [
-    "concept",
-    "kaffa"
    ],
    "n447/coffee-owner-brand-n447.js": [
     "concept",
@@ -20,18 +26,19 @@
     "praziarnicka",
     "vitazov"
    ],
-   "coffee-header-cleanup.css": [
-    "casadelcaffe",
-    "coffeesheep",
-    "praziarnicka",
-    "zlatezrnko"
-   ],
    "coffee-quality.js": [
     "mylo"
+   ],
+   "assets/n447/foto/sources.json": [
+    "grain"
+   ],
+   "coffee-widget-polish.css": [
+    "concept",
+    "kaffa"
    ]
   },
-  "files": 102,
-  "bytes": 3221012,
+  "files": 103,
+  "bytes": 3598002,
   "excludedForeignAssets": []
  },
  "http": {

@@ -1,7 +1,7 @@
 {
  "slug": "rebelbean",
  "family": "coffee",
- "builtFrom": "a9f8559",
+ "builtFrom": "f78a77e",
  "entry": "rebelbean.html",
  "files": [
   {
@@ -101,6 +101,41 @@
    "sha256": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2"
   },
   {
+   "path": "assets/n447/foto/roast-1.jpg",
+   "bytes": 50279,
+   "sha256": "ec8c8961c114b9a643d6f5814d5236d70d494f634d1ad6aa6fb20b74e5ffd01d"
+  },
+  {
+   "path": "assets/n447/foto/roast-2.jpg",
+   "bytes": 55926,
+   "sha256": "e2acb9da870a31dd5434e61ea0cea941b604ccb0c00f2452b8a6d44455280e06"
+  },
+  {
+   "path": "assets/n447/foto/roast-3.jpg",
+   "bytes": 62625,
+   "sha256": "d75a3b1cacd0ec022c0724e3cf7df176b66d476117f2c0b9f14dafa877c46aa8"
+  },
+  {
+   "path": "assets/n447/foto/roast-dark.jpg",
+   "bytes": 80304,
+   "sha256": "a833a6cea90e247ddfe6c209ce458e33d9fed331877b30c3f6cb023d7b75e4de"
+  },
+  {
+   "path": "assets/n447/foto/roast-light.jpg",
+   "bytes": 75666,
+   "sha256": "43da811d9c5fb8f10e8db9c06c97ab72361082a0339ab8877a4c37ffe56d6acd"
+  },
+  {
+   "path": "assets/n447/foto/roast-medium.jpg",
+   "bytes": 55050,
+   "sha256": "0d1d1dc39b09cc50bbe7bb83758b419d7b92a1f4e24ef94eb717c6f69b5b132f"
+  },
+  {
+   "path": "assets/n447/foto/sources.json",
+   "bytes": 1184,
+   "sha256": "3ce7db49514e9fc60e50c8e07502b64dacd9e4920bf392c686f04a42cc6b60f0"
+  },
+  {
    "path": "assets/n447/ilustracie/blend-arabica.svg",
    "bytes": 428,
    "sha256": "4800aa834054225702ca49ffad879b0973db7c510337b32ddcc22b8e012bc3a9"
@@ -189,36 +224,6 @@
    "path": "assets/n447/ilustracie/region-blend.svg",
    "bytes": 1482,
    "sha256": "fc42896c13dd9dc8c771ee841eded9429757614857db1ce4d6b49b44723f8987"
-  },
-  {
-   "path": "assets/n447/ilustracie/roast-1.svg",
-   "bytes": 660,
-   "sha256": "a2692de2ab9984a3dbe01fd74b0838a6df3092afb4aa1a6ddcc648b6a4b6f6a3"
-  },
-  {
-   "path": "assets/n447/ilustracie/roast-2.svg",
-   "bytes": 660,
-   "sha256": "1e2652421b81346763ea14a880f3c101d2b105f2aa00774fdc8568122e0f1971"
-  },
-  {
-   "path": "assets/n447/ilustracie/roast-3.svg",
-   "bytes": 376,
-   "sha256": "827f955f6959e2cdd3b3cbf01192c655432d75e9e0466235e1c48d0aea10f697"
-  },
-  {
-   "path": "assets/n447/ilustracie/roast-dark.svg",
-   "bytes": 992,
-   "sha256": "431561875bae3ce82a0381c0f4ba98c00754cb8cd2c61aa83b55c139f6150a73"
-  },
-  {
-   "path": "assets/n447/ilustracie/roast-light.svg",
-   "bytes": 992,
-   "sha256": "e9c427496736e832875916f3c9314cd631af51139af92f8195da84fc7a1d4541"
-  },
-  {
-   "path": "assets/n447/ilustracie/roast-medium.svg",
-   "bytes": 992,
-   "sha256": "44bf455f17c4daad7e88489005f4ba4951b16bb91cea7f520cb4aa3000ccd831"
   },
   {
    "path": "assets/n447/ilustracie/tool-aeropress.svg",
@@ -472,8 +477,8 @@
   },
   {
    "path": "n447/engine.js",
-   "bytes": 36140,
-   "sha256": "0ee809b337e863f9f4a3754ca9ac888d148f5c60e5d5b34e49afe01656e1e0f8"
+   "bytes": 36768,
+   "sha256": "80d94e6da936e1de199532bbd5b64b6c379fd9042f74ffc3a8e4c98a436f6a64"
   },
   {
    "path": "n447/n447-ui-fixes.css",
@@ -586,5 +591,5 @@
   "yemna",
   "zlatezrnko"
  ],
- "totalBytes": 3642186
+ "totalBytes": 4019176
 }
