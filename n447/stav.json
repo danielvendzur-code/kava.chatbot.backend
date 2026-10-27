@@ -7,11 +7,11 @@
     "freeTrial": false
   },
   "updatedAt": "2026-10-27",
-  "headCommit": "c0f95bd",
+  "headCommit": "b998879",
   "branch": "claude/n447-black-20261022",
   "preview": {
-    "url": "https://kava-chatbot-backend-5kvprjdlw-danielvendzur-codes-projects.vercel.app",
-    "sha": "7b6e7d0",
+    "url": "https://kava-chatbot-backend-fpz8ni5mi-danielvendzur-codes-projects.vercel.app",
+    "sha": "ba4e300",
     "note": "Interný Preview (Vercel, vetva). Zelený build nie je overená produkcia; produkcia ani zákaznícke subdomény nie sú nasadené."
   },
   "rules": {
@@ -27,9 +27,11 @@
       "country": "SK",
       "family": "coffee",
       "state": "READY_FOR_REVIEW_PARTIAL",
-      "reason": "Dokončené z dostupných overených údajov (27. 10.): 16 káv + drip (nová colombia • diego bermudez z detailu 27. 10.; chuťová skupina „svieža“ odvodená z opisu e-shopu), výber podľa prípravy, kofeínu, chuti a tónov. Cena konkrétneho balenia je overená iba pri doce citrus; pri ostatných ukážka zobrazí „od X €“ s poznámkou „Orientačná cena; presnú cenu balenia ukáže e-shop po výbere“ a otázku na rozpočet neponúka. Prekážka: e-shop cenu balenia načíta až interakciou, priame POST blokuje WAF (Access Denied), Playwright dostal 429 – neobchádzané.",
+      "reason": "Dokončené z dostupných overených údajov (27. 10.): 16 káv + drip (nová colombia • diego bermudez z detailu 27. 10.; chuťová skupina „svieža“ odvodená z opisu e-shopu), výber podľa prípravy, kofeínu, chuti a tónov. Od 27. 10. výsledok pri všetkých 16 kávach výslovne zobrazuje iba „od X €“ s poznámkou „Orientačná cena; presnú cenu balenia ukáže e-shop po výbere“ – cena sa neviaže na zvolené balenie, nepočíta sa súčet ani doplnok a otázka na rozpočet sa nezobrazuje. Kombinácie doce citrus (kontrola Codex 22. 10.) sú HOLD, kým sa nedajú doložiť bežným prístupom; oficiálny web black.sk nie je z tejto relácie dostupný (mimo povoleného zoznamu) – neobchádzané. Prekážka: e-shop cenu balenia načíta až interakciou, priame POST blokuje WAF (Access Denied), Playwright dostal 429 – neobchádzané.",
       "open": [
-        "ceny balení 15 zo 16 káv neoverené (orientačné „od“, nesľubujú sa) → rozpočet sa nepýta",
+        "HOLD presná cena a zostava: žiadna kombinácia praženie × gramáž × mletie nie je k 27. 10. doložená (doce citrus 200/500/1000 g z 22. 10. odložené ako heldVariants) → iba „od X €“, bez súčtu a bez rozpočtu",
+        "drip drippin. 12 € (8 × 13 g) – jediné balenie, cena zo stránky 22. 10.; dnes neprečítaná znova",
+        "Vyskladať zostavu: pri káve sa nevynucuje; overené doplnky BLACK nie sú v katalógu → nezobrazuje sa",
         "akcie 27. 10. (black sheep, gundikhan, honduras el paraíso) iba ako poznámka „Akcia v e-shope“ – bez dátumu konca, ukážka počíta s bežnou cenou",
         "deduplikácia pošty neoverená (bez prístupu k webmailu)",
         "produkcia/doména nepriradená – odovzdané Codexu na nezávislé overenie"
@@ -42,11 +44,11 @@
       "contact": "ahoj@black.sk",
       "contactSource": "https://www.black.sk/sk/kontakt",
       "checkedAt": "2026-10-22",
-      "scope": "Všetkých 15 zrnkových/mletých káv z kategórie káva a drip vrecúška drippin. Kapsule, cascara, doplnky a merch nie sú vo výbere.",
+      "scope": "Všetkých 16 zrnkových/mletých káv z kategórie káva a drip vrecúška drippin. Kapsule, cascara, doplnky a merch nie sú vo výbere.",
       "products": 16,
       "drip": true,
-      "verifiedPacks": 3,
-      "productsWithVerifiedPack": 1,
+      "verifiedPacks": 0,
+      "productsWithVerifiedPack": 0,
       "excluded": [
         {
           "name": "cascara • costa rica las lajas",
@@ -69,7 +71,15 @@
           "reason": "Kapsule."
         }
       ],
-      "commit": "c0f95bd",
+      "hold": [
+        {
+          "product": "brazil • doce citrus",
+          "url": "https://www.black.sk/sk/brazil-doce-citrus",
+          "reason": "presná cena balenia HOLD – 3 kombinácie z 2026-10-22 (živé UI e-shopu, výber gramáže (kontrola Codex)) dnes nedoložené bežným prístupom; výsledok ukazuje iba „od“",
+          "lastVerified": "2026-10-22"
+        }
+      ],
+      "commit": "b998879",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -125,20 +135,11 @@
         "darčekové balenia (2)",
         "akcie 3+1 zdarma (6)"
       ],
+      "hold": [],
       "commit": "ce15ca3",
       "browserCheck": {
-        "sizes": [
-          "320x568",
-          "390x650",
-          "560x600",
-          "1280x800"
-        ],
-        "testedPaths": 43,
-        "allPaths": 163,
-        "issues": 0,
-        "firstIssues": [],
-        "console": 0,
-        "storage": []
+        "state": "NOT_FINISHED",
+        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
       },
       "handoffBundle": {
         "builtFrom": "7b6e7d0",
@@ -176,20 +177,11 @@
       "excluded": [
         "Degustační set 4 × 50 g (vzorky)"
       ],
+      "hold": [],
       "commit": "ce15ca3",
       "browserCheck": {
-        "sizes": [
-          "320x568",
-          "390x650",
-          "560x600",
-          "1280x800"
-        ],
-        "testedPaths": 15,
-        "allPaths": 52,
-        "issues": 0,
-        "firstIssues": [],
-        "console": 0,
-        "storage": []
+        "state": "NOT_FINISHED",
+        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
       },
       "handoffBundle": {
         "builtFrom": "7b6e7d0",
@@ -212,8 +204,9 @@
       "state": "READY_FOR_REVIEW_PARTIAL",
       "reason": "Z 5 pôvodne blokovaných stránok 3 doplnené pri pomalom opakovaní 24. 10. (18 káv); cocondo-natural_z10 (connection reset) a vara-blanca-honey_z3964 (403) nie sú vo výbere, ďalšie pokusy sa nerobia.",
       "open": [
-        "2 kávy nezahrnuté (Cocondo Natural, Vara Blanca Honey) – výber dokončený z 18 overených káv, ďalšie pokusy sa nerobia",
-        "aktualizácia 27. 10.: výpis /kava/ 200, ale produktová stránka (bold-deer) aj kategória /espresso/ vrátili 403 → zastavené; ceny a varianty ostávajú overené k 23.–24. 10.; Bold Deer a Honduras dnes chýbajú na 1. strane výpisu (stav nevieme overiť – v ukážke ostávajú s overenými údajmi z 23. 10.)",
+        "2 kávy nezahrnuté (Cocondo Natural, Vara Blanca Honey) – ďalšie pokusy sa nerobia",
+        "HOLD 27. 10.: BOLD DEER a Honduras dočasne vyradené z odporúčania (DATA.held) – dnes chýbajú na 1. strane výpisu /kava/ (200) a produktová stránka bold-deer_z3626 aj kategória /espresso/ vrátili 403, takže aktuálnu dostupnosť nevieme doložiť; NIE sú označené ako vypredané, údaje z 23. 10. ostávajú uložené na návrat",
+        "výber teraz zo 16 káv s cenami a variantmi overenými 23.–24. 10.; úvodný produkt zmenený z Honduras na House Blend",
         "produkcia/doména nepriradená – odovzdané Codexu na nezávislé overenie",
         "chat s AI: zdieľaný ai-chat.js maže „_“ z odkazov, odkazy Nordbeans (…_z123/) preto vždy padnú na overenú odpoveď z katalógu"
       ],
@@ -226,17 +219,32 @@
       "contactSource": "https://www.nordbeans.cz/ (hlavička a údaje výrobce na stránce produktu)",
       "checkedAt": "2026-10-23",
       "scope": "Zrnkové kávy z kategorie Káva, jejichž produktové stránky šlo načíst. Kapsle, rozpustná káva, čaje, předplatné, sady a vybavení nejsou ve výběru.",
-      "products": 18,
+      "products": 16,
       "drip": false,
-      "verifiedPacks": 36,
-      "productsWithVerifiedPack": 18,
+      "verifiedPacks": 32,
+      "productsWithVerifiedPack": 16,
       "excluded": [
         "Jizerky: na stránce není uvedena gramáž balení – vyřazeno",
         "Neověřeno – e-shop vrátil 403 (Access Denied), požadavky zastaveny: cocondo-natural, vara-blanca-honey",
         "kapsle (3), rozpustná káva, čtyřbalení (sada)",
-        "balení 2000 g ve vratném obalu (velkoobchod)"
+        "balení 2000 g ve vratném obalu (velkoobchod)",
+        "Dočasně mimo výběr (HOLD 27. 10.): BOLD DEER, Honduras – dnes nejsou na 1. straně výpisu a detail/kategorie vrací 403, aktuální dostupnost nelze doložit"
       ],
-      "commit": "ce15ca3",
+      "hold": [
+        {
+          "product": "BOLD DEER",
+          "url": "https://www.nordbeans.cz/bold-deer_z3626/",
+          "reason": "HOLD 27. 10.: dnes chýba na 1. strane výpisu https://www.nordbeans.cz/kava/ (200); produktová stránka (bold-deer_z3626) aj kategória /espresso/ vrátili 403 → aktuálnu dostupnosť nevieme doložiť. Nie je to označenie „vypredané“; po overení bežným prístupom sa vráti do výberu s údajmi z 23. 10.",
+          "lastVerified": "2026-10-23"
+        },
+        {
+          "product": "Honduras",
+          "url": "https://www.nordbeans.cz/honduras_z3564/",
+          "reason": "HOLD 27. 10.: dnes chýba na 1. strane výpisu https://www.nordbeans.cz/kava/ (200); produktová stránka (bold-deer_z3626) aj kategória /espresso/ vrátili 403 → aktuálnu dostupnosť nevieme doložiť. Nie je to označenie „vypredané“; po overení bežným prístupom sa vráti do výberu s údajmi z 23. 10.",
+          "lastVerified": "2026-10-23"
+        }
+      ],
+      "commit": "b998879",
       "browserCheck": {
         "sizes": [
           "320x568",
@@ -244,8 +252,8 @@
           "560x600",
           "1280x800"
         ],
-        "testedPaths": 44,
-        "allPaths": 104,
+        "testedPaths": 40,
+        "allPaths": 98,
         "issues": 0,
         "firstIssues": [],
         "console": 0,
@@ -292,20 +300,11 @@
         "dárkový poukaz",
         "předplatné (jen jednorázové ceny)"
       ],
+      "hold": [],
       "commit": "ce15ca3",
       "browserCheck": {
-        "sizes": [
-          "320x568",
-          "390x650",
-          "560x600",
-          "1280x800"
-        ],
-        "testedPaths": 17,
-        "allPaths": 28,
-        "issues": 0,
-        "firstIssues": [],
-        "console": 0,
-        "storage": []
+        "state": "NOT_FINISHED",
+        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
       },
       "handoffBundle": {
         "builtFrom": "7b6e7d0",
@@ -351,20 +350,11 @@
         "etiopie-edn-pineapple: e-shop ukazuje balení „100g“ (v datech hmotnost 250 g) – použito 100 g podle webu",
         "Kolumbie – Inzá (espresso): v kategorii Espresso, ale popis uvádí přípravu filtrované kávy – vyřazeno, dokud se neověří."
       ],
+      "hold": [],
       "commit": "ce15ca3",
       "browserCheck": {
-        "sizes": [
-          "320x568",
-          "390x650",
-          "560x600",
-          "1280x800"
-        ],
-        "testedPaths": 41,
-        "allPaths": 101,
-        "issues": 0,
-        "firstIssues": [],
-        "console": 0,
-        "storage": []
+        "state": "NOT_FINISHED",
+        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
       },
       "handoffBundle": {
         "builtFrom": "7b6e7d0",
@@ -407,20 +397,11 @@
         "Candybar a kávová zrna v čokoládě Ajala",
         "ceny balení 1 kg a 2,5 kg (stránka je bez práce s košíkem nezobrazuje)"
       ],
+      "hold": [],
       "commit": "ce15ca3",
       "browserCheck": {
-        "sizes": [
-          "320x568",
-          "390x650",
-          "560x600",
-          "1280x800"
-        ],
-        "testedPaths": 13,
-        "allPaths": 27,
-        "issues": 0,
-        "firstIssues": [],
-        "console": 0,
-        "storage": []
+        "state": "NOT_FINISHED",
+        "note": "beh prehliadačovej kontroly neskončil alebo bol ukončený časovým limitom"
       },
       "handoffBundle": {
         "builtFrom": "7b6e7d0",
@@ -467,6 +448,7 @@
         "vypredané varianty a produkty bez dostupného zrnkového balenia",
         "balenia NEHERA (osobitná edícia)"
       ],
+      "hold": [],
       "commit": "ce15ca3",
       "browserCheck": {
         "state": "NOT_FINISHED",
