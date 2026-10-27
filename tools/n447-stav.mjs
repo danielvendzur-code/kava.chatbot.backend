@@ -12,13 +12,13 @@ const head = git('rev-parse --short HEAD');
 const today = new Date().toISOString().slice(0, 10);
 
 const STATUS = {
-  black: {name: 'BLACK. (pražiareň black.)', country: 'SK', family: 'coffee', state: 'BLOCKED_PRICES',
-    reason: 'E-shop ukazuje pri káve iba rozsah ceny; cenu konkrétneho balenia načíta až interakciou. Overené iba doce citrus (Codex). Priame POST požiadavky blokuje WAF (Access Denied), Playwright dostal 429 – požiadavky zastavené, neobchádzané.',
-    open: ['ceny balení 14 z 15 káv neoverené → otázka rozpočtu sa neponúka', 'deduplikácia pošty neoverená (bez prístupu k webmailu)']},
+  black: {name: 'BLACK. (pražiareň black.)', country: 'SK', family: 'coffee', state: 'READY_FOR_REVIEW_PARTIAL',
+    reason: 'Dokončené z dostupných overených údajov (27. 10.): 15 káv + drip, výber podľa prípravy, kofeínu, chuti a tónov. Cena konkrétneho balenia je overená iba pri doce citrus; pri ostatných ukážka zobrazí „od X €“ s poznámkou „Orientačná cena; presnú cenu balenia ukáže e-shop po výbere“ a otázku na rozpočet neponúka. Prekážka: e-shop cenu balenia načíta až interakciou, priame POST blokuje WAF (Access Denied), Playwright dostal 429 – neobchádzané.',
+    open: ['ceny balení 14 z 15 káv neoverené (orientačné „od“, nesľubujú sa) → rozpočet sa nepýta', 'deduplikácia pošty neoverená (bez prístupu k webmailu)', 'produkcia/doména nepriradená – odovzdané Codexu na nezávislé overenie']},
   verticcio: {name: 'Verticcio', country: 'SK', family: 'coffee', state: 'READY_FOR_REVIEW', open: ['kontakt marketing@verticcio.sk overený 2026-10-25 na https://www.verticcio.sk/info/kontakt (sekcia Centrála), bez zmeny']},
   rebelbean: {name: 'Rebelbean', country: 'CZ', family: 'coffee', state: 'READY_FOR_REVIEW', open: []},
   nordbeans: {name: 'Nordbeans', country: 'CZ', family: 'coffee', state: 'READY_FOR_REVIEW_PARTIAL',
-    reason: 'Z 5 pôvodne blokovaných stránok 3 doplnené pri pomalom opakovaní 24. 10. (18 káv); cocondo-natural_z10 (connection reset) a vara-blanca-honey_z3964 (403) nie sú vo výbere, ďalšie pokusy sa nerobia.', open: ['2 kávy nezahrnuté (Cocondo Natural, Vara Blanca Honey)', 'chat s AI: zdieľaný ai-chat.js maže „_“ z odkazov, odkazy Nordbeans (…_z123/) preto vždy padnú na overenú odpoveď z katalógu']},
+    reason: 'Z 5 pôvodne blokovaných stránok 3 doplnené pri pomalom opakovaní 24. 10. (18 káv); cocondo-natural_z10 (connection reset) a vara-blanca-honey_z3964 (403) nie sú vo výbere, ďalšie pokusy sa nerobia.', open: ['2 kávy nezahrnuté (Cocondo Natural, Vara Blanca Honey) – výber dokončený z 18 overených káv, ďalšie pokusy sa nerobia', 'produkcia/doména nepriradená – odovzdané Codexu na nezávislé overenie', 'chat s AI: zdieľaný ai-chat.js maže „_“ z odkazov, odkazy Nordbeans (…_z123/) preto vždy padnú na overenú odpoveď z katalógu']},
   doubleshot: {name: 'doubleshot', country: 'CZ', family: 'coffee', state: 'READY_FOR_REVIEW', open: ['Farm • Bule Hora vyradená (rozpor gramáže 300 g vs 350 g)']},
   fathers: {name: "Father's Coffee Roastery", country: 'CZ', family: 'coffee', state: 'READY_FOR_REVIEW',
     open: ['ceny 1 kg / 2 kg z dát e-shopu (s DPH pre ČR, zaokrúhlené nahor podľa zobrazených 250 g cien); priamo zobrazená je iba cena 250 g', 'Zebigi a Inzá (espresso) vyradené – kategória Espresso, popis uvádza filter']},

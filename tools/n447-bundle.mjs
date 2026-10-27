@@ -138,6 +138,8 @@ if (family === 'coffee') {
   const d = w.N447_DATA[SLUG];
   for (const p of d.products) { for (const k of ['photo', 'image']) if (p[k]) (/^https?:/.test(p[k]) ? external.add(p[k]) : add(p[k], 'dáta')); }
   if (d.drip && d.drip.photo) add(d.drip.photo, 'dáta');
+  /* obrázky značky (hero, logá) – v dátach často skladané z cesty, preto z vyhodnoteného objektu */
+  for (const v of Object.values(d.brand || {})) if (typeof v === 'string' && /^\/assets\/.+\.(png|jpe?g|webp|svg)$/i.test(v)) add(v, 'značka');
 } else {
   const w = sandbox(`n447/kozmetika/catalogues/${SLUG}.js`);
   for (const p of w.CX_CATALOGUES[SLUG].products) (/^https?:/.test(p.photo) ? external.add(p.photo) : add(p.photo, 'katalóg'));
