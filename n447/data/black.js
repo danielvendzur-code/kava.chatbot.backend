@@ -1,5 +1,5 @@
 /* BLACK. (pražiareň black., Bratislava) – overený katalóg novej dávky (447 € + 10 €/mes., bez trialu).
-   Zdroj: https://www.black.sk/sk/e-shop/kava, každý detail produktu prečítaný 2026-10-22.
+   Zdroj: https://www.black.sk/sk/e-shop/kava, každý detail produktu prečítaný 2026-10-22; výpis znova 2026-10-27 (akcie, nová káva diego bermudez).
    CENY: detail kávy ukazuje iba rozsah „od – do“; cena konkrétnej kombinácie (praženie × gramáž × mletie)
    sa zobrazí až po výbere v e-shope. `variants` obsahuje IBA kombinácie overené v živom UI e-shopu.
    priceFrom je informatívna dolná hranica rozsahu a nikdy nesplní rozpočet.
@@ -36,7 +36,7 @@
       steps: ['20 g kávy a približne 300 g vody s teplotou okolo 95 °C.', 'Papierový filter prepláchnite horúcou vodou a vodu vylejte.', 'Najprv 60–80 g vody na 20–40 sekúnd, potom zvyšok pomaly v krúžkoch.', 'Celé lúhovanie najviac približne 2,5 minúty.']}},
     products: [
       coffee({id: 'black-sheep', slug: 'blend-black-sheep', name: 'blend • black sheep', photo: 'blend-black-sheep.jpg', priceFrom: 10.5, priceTo: 90,
-        promoNote: 'V e-shope je teraz uvedená aj nižšia akciová cena bez dátumu konca; ukážka ju nepoužíva.',
+        promoNote: 'Akcia v e-shope 27. 10.: od 10,00 € (pôvodne od 10,50 €), bez dátumu konca; ukážka počíta s bežnou cenou.',
         weights: [200, 500, 1000, 2500], roasts: ['espresso'], taste: 'choco', notes: ['horká čokoláda', 'lesné ovocie', 'sušené kôstkové ovocie'],
         origin: 'Brazília (Cerrado Mineiro) & Etiópia (Guji)', variety: 'Yellow Bourbon & heirloom', process: 'pulped natural & natural', altitude: '1150–1950 m n. m.',
         summary: 'Sladký a plný blend pre tých, ktorí sú zvyknutí skôr na tmavšie kávy; spája sladkosť brazílskej kávy s ovocnosťou etiópskej natural.'}),
@@ -50,6 +50,7 @@
         origin: 'Kolumbia · Huila', variety: 'Caturra', process: 'washed', altitude: '1300–1900 m n. m.',
         summary: 'Sladká, sirupová káva z kolumbijskej Huily; pražiareň ju uvádza ako dobrý pomer ceny a chuti do domáceho kávovaru.'}),
       coffee({id: 'gundikhan', region: 'asia', slug: 'india-gundikhan', name: 'india • gundikhan', photo: 'india-gundikhan.jpg', priceFrom: 15, priceTo: 58,
+        promoNote: 'Akcia v e-shope 27. 10.: od 13,50 € (pôvodne od 15,00 €), bez dátumu konca; ukážka počíta s bežnou cenou.',
         roasts: ['espresso'], taste: 'fruitFull', notes: ['višne', 'purpurové hrozno', 'biela broskyňa', 'mliečna čokoláda'],
         origin: 'India · Karnataka (Chikkamagalur)', variety: 'Chandragiri', process: 'washed', altitude: '1400 m n. m.',
         summary: 'Sladká a plná washed káva z rodinnej farmy, ktorá pestuje v tieni pôvodných stromov pri rezervácii Bhadra.'}),
@@ -62,6 +63,7 @@
         origin: 'Etiópia · Hambela Wamena', farm: 'farma Esayasa Berisa', variety: '74158', process: 'natural', altitude: '2350 m n. m.',
         summary: 'Krémová a tropická natural káva z vysoko položenej farmy; bobule sa sušia na vyvýšených lôžkach.'}),
       coffee({id: 'el-paraiso', region: 'americas', slug: 'honduras-el-paraiso', name: 'honduras • el paraíso', photo: 'honduras-el-paraiso.jpg', priceFrom: 14, priceTo: 49,
+        promoNote: 'Akcia v e-shope 27. 10.: od 12,60 € (pôvodne od 14,00 €), bez dátumu konca; ukážka počíta s bežnou cenou.',
         roasts: ['filter', 'espresso'], taste: 'fruitFull', notes: ['ibištek', 'ostružiny', 'papája', 'červené ríbezle', 'slivka'],
         origin: 'Honduras · Santa Rosa de Copán', farm: 'El Paraíso', variety: 'Parainema', process: 'natural anaerobic', altitude: 'približne 1600 m n. m.',
         summary: 'Sladká a sirupová káva s krémovým telom; anaeróbne natural spracovanie z farmy El Paraíso.'}),
@@ -96,7 +98,11 @@
       coffee({id: 'popayan-decaf', region: 'americas', slug: 'colombia-popayan-decaf', name: 'colombia • popayán decaf', photo: 'black-decaf.jpg', priceFrom: 13.5, priceTo: 52,
         roasts: ['omni'], taste: 'fresh', decaf: true, decafNote: 'Kofeín sa odstraňuje šetrne, etylacetátom z cukrovej trstiny.', notes: ['pomarančový džús', 'broskyňa', 'žlté kôstkové ovocie', 'červené jablko', 'mandle'],
         origin: 'Kolumbia · Popayán (Cauca)', farm: 'Cofinet, približne 65 pestovateľov', variety: 'Colombia, Castillo, Caturra', process: 'washed, bez kofeínu metódou z cukrovej trstiny', altitude: '1500–2070 m n. m.',
-        summary: 'Bezkofeínová káva; kofeín sa odstraňuje etylacetátom z cukrovej trstiny. Sladká a sirupová s mandľovým záverom.'})
+        summary: 'Bezkofeínová káva; kofeín sa odstraňuje etylacetátom z cukrovej trstiny. Sladká a sirupová s mandľovým záverom.'}),
+      coffee({id: 'diego-bermudez', region: 'americas', slug: 'colombia-diego-bermudez', name: 'colombia • diego bermudez', photo: 'colombia-diego-bermudez.jpg', priceFrom: 18, priceTo: 48,
+        checkedAt: '2026-10-27', weights: [150, 500, 1000], roasts: ['filter'], taste: 'fresh', notes: ['kardamóm', 'jablkové crumble', 'vanilka', 'pistácie'],
+        origin: 'Kolumbia · Cauca (Piendamó)', farm: 'Finca El Paraíso', variety: 'Castillo', process: 'double anaerobic washed', altitude: '1960 m n. m.',
+        summary: 'Sladká a dezertná káva s tónmi kardamómu, jablkového crumble a vanilky, citrusovou aciditou a dochuťou pistácií (novinka, prečítané 27. 10.).'}),
     ],
     drip: {
       id: 'drippin', kind: 'drip', name: 'drippin.', url: P + 'drippin', photo: A + 'drippin-hlavna-foto.jpg',
