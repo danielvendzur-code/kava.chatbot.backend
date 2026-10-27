@@ -1,7 +1,7 @@
 {
  "slug": "nordbeans",
  "family": "coffee",
- "builtFrom": "c0f95bd",
+ "builtFrom": null,
  "entry": "nordbeans.html",
  "files": [
   {
@@ -552,8 +552,8 @@
   },
   {
    "path": "n447/data/nordbeans.js",
-   "bytes": 35038,
-   "sha256": "2770fe8db222337f72a9920b99bf389566c137884d831e52d2a593e875660cab"
+   "bytes": 36525,
+   "sha256": "155d6019a0f2e7e6d49c8d714ea26fa3b1635298817a11980a8ac8d3af37ff3d"
   },
   {
    "path": "n447/engine.js",
@@ -671,5 +671,5 @@
   "yemna",
   "zlatezrnko"
  ],
- "totalBytes": 3769341
+ "totalBytes": 3770828
 }

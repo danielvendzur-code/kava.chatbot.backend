@@ -1,6 +1,8 @@
 /* Nordbeans – ověřený katalog nové dávky (447 € + 10 €/měs., bez trialu). Zdroj: https://www.nordbeans.cz/kava/ a produktové
    stránky (JSON-LD ceny 250 g / 1000 g, blok Detaily: příprava, chuť, intenzita kyselosti, původ), staženo 2026-10-23.
-   5 stránek e-shop zablokoval (403) – tyto kávy ve výběru nejsou. Chuťová skupina podle intenzity kyselosti od pražírny. */
+   5 stránek e-shop zablokoval (403) – tyto kávy ve výběru nejsou. Chuťová skupina podle intenzity kyselosti od pražírny.
+   27. 10.: Bold Deer a Honduras dočasně mimo výběr (DATA.held) – dostupnost dnes nedoložena (výpis bez nich, detail/kategorie 403).
+*/
 (function (g) {
   'use strict';
   const DATA = {
@@ -9,7 +11,7 @@
  "checkedAt": "2026-10-23",
  "beansOnly": true,
  "demo": {
-  "heroProductId": "honduras"
+  "heroProductId": "house-blend"
  },
  "brand": {
   "name": "Nordbeans",
@@ -19,7 +21,7 @@
   "web": "https://www.nordbeans.cz/",
   "logo": "/assets/nordbeans/logo.png",
   "logoLight": "/assets/nordbeans/logo-light.png",
-  "hero": "/assets/nordbeans/honduras.jpg",
+  "hero": "/assets/nordbeans/house-blend.jpg",
   "contact": "info@nordbeans.cz",
   "contactSource": "https://www.nordbeans.cz/ (hlavička a údaje výrobce na stránce produktu)",
   "theme": {
@@ -53,7 +55,8 @@
   "Jizerky: na stránce není uvedena gramáž balení – vyřazeno",
   "Neověřeno – e-shop vrátil 403 (Access Denied), požadavky zastaveny: cocondo-natural, vara-blanca-honey",
   "kapsle (3), rozpustná káva, čtyřbalení (sada)",
-  "balení 2000 g ve vratném obalu (velkoobchod)"
+  "balení 2000 g ve vratném obalu (velkoobchod)",
+  "Dočasně mimo výběr (HOLD 27. 10.): BOLD DEER, Honduras – dnes nejsou na 1. straně výpisu a detail/kategorie vrací 403, aktuální dostupnost nelze doložit"
  ],
  "shop": {
   "freeShipping": "",
@@ -61,68 +64,6 @@
   "freeShippingSource": "https://www.nordbeans.cz/"
  },
  "products": [
-  {
-   "id": "bold-deer",
-   "kind": "coffee",
-   "name": "BOLD DEER",
-   "url": "https://www.nordbeans.cz/bold-deer_z3626/",
-   "photo": "/assets/nordbeans/bold-deer.jpg",
-   "currency": "CZK",
-   "available": true,
-   "decaf": false,
-   "preps": [
-    "espresso"
-   ],
-   "roastLabel": "světlé pražení, řada Nordbeans",
-   "prepText": "Pražírna ji doporučuje na: espresso",
-   "taste": "fruitFull",
-   "tastes": [
-    "fruitFull"
-   ],
-   "acidityLabel": "Střední",
-   "notes": [
-    "marcipán",
-    "maliny",
-    "švestky"
-   ],
-   "origin": "Uganda",
-   "region": "africa",
-   "process": "Anaerobní Natural",
-   "variety": "SL28, SL14, Catimor",
-   "summary": "Mohutné tělo, přirozená sladkost a plná chuť, která se nebojí zůstat v paměti. Stejně jako jelen – hrdý a vyrovnaný, je i tohle espresso symbolem síly a vnitřního klidu.",
-   "priceFrom": 375,
-   "priceTo": 1363,
-   "weights": [
-    250,
-    1000
-   ],
-   "variants": [
-    {
-     "grams": 250,
-     "grind": "zrnková",
-     "price": 375,
-     "url": "https://www.nordbeans.cz/bold-deer_z3626/",
-     "sku": "3626_1116",
-     "available": true,
-     "verifiedAt": "2026-10-23",
-     "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
-    },
-    {
-     "grams": 1000,
-     "grind": "zrnková",
-     "price": 1363,
-     "url": "https://www.nordbeans.cz/bold-deer_z3626/",
-     "sku": "3626_1117",
-     "available": true,
-     "verifiedAt": "2026-10-23",
-     "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
-    }
-   ],
-   "checkedAt": "2026-10-23",
-   "recipes": {
-    "espresso": "Espresso podle pražírny: káva 18 g, voda 40 ml, poměr 1:2,7, čas 27 sec."
-   }
-  },
   {
    "id": "brazilie",
    "kind": "coffee",
@@ -509,73 +450,6 @@
    "checkedAt": "2026-10-23",
    "recipes": {
     "espresso": "Espresso podle pražírny: káva 16 g, voda 45 ml, poměr 1:2,8, čas 26 sec."
-   }
-  },
-  {
-   "id": "honduras",
-   "kind": "coffee",
-   "name": "Honduras",
-   "url": "https://www.nordbeans.cz/honduras_z3564/",
-   "photo": "/assets/nordbeans/honduras.jpg",
-   "currency": "CZK",
-   "available": true,
-   "decaf": false,
-   "preps": [
-    "espresso",
-    "moka",
-    "filter"
-   ],
-   "tools": [
-    "aeropress"
-   ],
-   "roastLabel": "střední pražení, řada Nový Standard",
-   "prepText": "Pražírna ji doporučuje na: moka konvička, AeroPress, automatický kávovar",
-   "taste": "choco",
-   "tastes": [
-    "choco"
-   ],
-   "acidityLabel": "Nízká",
-   "notes": [
-    "sladká",
-    "čokoládová",
-    "oříšková"
-   ],
-   "origin": "Honduras",
-   "region": "americas",
-   "process": "Promyté (washed)",
-   "variety": "Catuaí, Pacas, Paraneima",
-   "summary": "Honduras je káva, která propojuje tradiční espresso se světem výběrové kávy. Smetanově oříšková chuť, jemné krémové tělo a nízká acidita dělají z této kávy dokonalý vstupní bod pro každého, kdo chce objevit kvalitu a čistotu výběrové produkce.",
-   "priceFrom": 351,
-   "priceTo": 1201,
-   "weights": [
-    250,
-    1000
-   ],
-   "variants": [
-    {
-     "grams": 250,
-     "grind": "zrnková",
-     "price": 351,
-     "url": "https://www.nordbeans.cz/honduras_z3564/",
-     "sku": "3564_1107",
-     "available": true,
-     "verifiedAt": "2026-10-23",
-     "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
-    },
-    {
-     "grams": 1000,
-     "grind": "zrnková",
-     "price": 1201,
-     "url": "https://www.nordbeans.cz/honduras_z3564/",
-     "sku": "3564_1108",
-     "available": true,
-     "verifiedAt": "2026-10-23",
-     "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
-    }
-   ],
-   "checkedAt": "2026-10-23",
-   "recipes": {
-    "espresso": "Espresso podle pražírny: káva 15 g, voda 45 ml, poměr 1:3, čas 30 sec."
    }
   },
   {
@@ -1236,6 +1110,153 @@
    "checkedAt": "2026-10-23",
    "recipes": {
     "espresso": "Espresso podle pražírny: káva 17 g, voda 42 ml, poměr 1:2,4, čas 28 sec."
+   }
+  }
+ ],
+ "held": [
+  {
+   "id": "bold-deer",
+   "name": "BOLD DEER",
+   "url": "https://www.nordbeans.cz/bold-deer_z3626/",
+   "reason": "HOLD 27. 10.: dnes chýba na 1. strane výpisu https://www.nordbeans.cz/kava/ (200); produktová stránka (bold-deer_z3626) aj kategória /espresso/ vrátili 403 → aktuálnu dostupnosť nevieme doložiť. Nie je to označenie „vypredané“; po overení bežným prístupom sa vráti do výberu s údajmi z 23. 10.",
+   "heldAt": "2026-10-27",
+   "lastVerified": "2026-10-23",
+   "product": {
+    "id": "bold-deer",
+    "kind": "coffee",
+    "name": "BOLD DEER",
+    "url": "https://www.nordbeans.cz/bold-deer_z3626/",
+    "photo": "/assets/nordbeans/bold-deer.jpg",
+    "currency": "CZK",
+    "available": true,
+    "decaf": false,
+    "preps": [
+     "espresso"
+    ],
+    "roastLabel": "světlé pražení, řada Nordbeans",
+    "prepText": "Pražírna ji doporučuje na: espresso",
+    "taste": "fruitFull",
+    "tastes": [
+     "fruitFull"
+    ],
+    "acidityLabel": "Střední",
+    "notes": [
+     "marcipán",
+     "maliny",
+     "švestky"
+    ],
+    "origin": "Uganda",
+    "region": "africa",
+    "process": "Anaerobní Natural",
+    "variety": "SL28, SL14, Catimor",
+    "summary": "Mohutné tělo, přirozená sladkost a plná chuť, která se nebojí zůstat v paměti. Stejně jako jelen – hrdý a vyrovnaný, je i tohle espresso symbolem síly a vnitřního klidu.",
+    "priceFrom": 375,
+    "priceTo": 1363,
+    "weights": [
+     250,
+     1000
+    ],
+    "variants": [
+     {
+      "grams": 250,
+      "grind": "zrnková",
+      "price": 375,
+      "url": "https://www.nordbeans.cz/bold-deer_z3626/",
+      "sku": "3626_1116",
+      "available": true,
+      "verifiedAt": "2026-10-23",
+      "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
+     },
+     {
+      "grams": 1000,
+      "grind": "zrnková",
+      "price": 1363,
+      "url": "https://www.nordbeans.cz/bold-deer_z3626/",
+      "sku": "3626_1117",
+      "available": true,
+      "verifiedAt": "2026-10-23",
+      "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
+     }
+    ],
+    "checkedAt": "2026-10-23",
+    "recipes": {
+     "espresso": "Espresso podle pražírny: káva 18 g, voda 40 ml, poměr 1:2,7, čas 27 sec."
+    }
+   }
+  },
+  {
+   "id": "honduras",
+   "name": "Honduras",
+   "url": "https://www.nordbeans.cz/honduras_z3564/",
+   "reason": "HOLD 27. 10.: dnes chýba na 1. strane výpisu https://www.nordbeans.cz/kava/ (200); produktová stránka (bold-deer_z3626) aj kategória /espresso/ vrátili 403 → aktuálnu dostupnosť nevieme doložiť. Nie je to označenie „vypredané“; po overení bežným prístupom sa vráti do výberu s údajmi z 23. 10.",
+   "heldAt": "2026-10-27",
+   "lastVerified": "2026-10-23",
+   "product": {
+    "id": "honduras",
+    "kind": "coffee",
+    "name": "Honduras",
+    "url": "https://www.nordbeans.cz/honduras_z3564/",
+    "photo": "/assets/nordbeans/honduras.jpg",
+    "currency": "CZK",
+    "available": true,
+    "decaf": false,
+    "preps": [
+     "espresso",
+     "moka",
+     "filter"
+    ],
+    "tools": [
+     "aeropress"
+    ],
+    "roastLabel": "střední pražení, řada Nový Standard",
+    "prepText": "Pražírna ji doporučuje na: moka konvička, AeroPress, automatický kávovar",
+    "taste": "choco",
+    "tastes": [
+     "choco"
+    ],
+    "acidityLabel": "Nízká",
+    "notes": [
+     "sladká",
+     "čokoládová",
+     "oříšková"
+    ],
+    "origin": "Honduras",
+    "region": "americas",
+    "process": "Promyté (washed)",
+    "variety": "Catuaí, Pacas, Paraneima",
+    "summary": "Honduras je káva, která propojuje tradiční espresso se světem výběrové kávy. Smetanově oříšková chuť, jemné krémové tělo a nízká acidita dělají z této kávy dokonalý vstupní bod pro každého, kdo chce objevit kvalitu a čistotu výběrové produkce.",
+    "priceFrom": 351,
+    "priceTo": 1201,
+    "weights": [
+     250,
+     1000
+    ],
+    "variants": [
+     {
+      "grams": 250,
+      "grind": "zrnková",
+      "price": 351,
+      "url": "https://www.nordbeans.cz/honduras_z3564/",
+      "sku": "3564_1107",
+      "available": true,
+      "verifiedAt": "2026-10-23",
+      "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
+     },
+     {
+      "grams": 1000,
+      "grind": "zrnková",
+      "price": 1201,
+      "url": "https://www.nordbeans.cz/honduras_z3564/",
+      "sku": "3564_1108",
+      "available": true,
+      "verifiedAt": "2026-10-23",
+      "source": "cena varianty ze stránky produktu (strukturovaná data e-shopu)"
+     }
+    ],
+    "checkedAt": "2026-10-23",
+    "recipes": {
+     "espresso": "Espresso podle pražírny: káva 15 g, voda 45 ml, poměr 1:3, čas 30 sec."
+    }
    }
   }
  ]

@@ -1,25 +1,19 @@
 {
  "slug": "black",
  "family": "coffee",
- "builtFrom": "c0f95bd",
+ "builtFrom": null,
  "static": {
   "otherHosts": {
-   "assets/n447/foto/sources.json": [
+   "assets/n447/tones/sources.json": [
     "www.pexels.com"
    ],
-   "assets/n447/tones/sources.json": [
+   "assets/n447/foto/sources.json": [
     "www.pexels.com"
    ]
   },
   "sharedCodeIdentifiers": {
-   "assets/n447/foto/sources.json": [
-    "grain"
-   ],
-   "coffee-header-cleanup.css": [
-    "casadelcaffe",
-    "coffeesheep",
-    "praziarnicka",
-    "zlatezrnko"
+   "coffee-quality.js": [
+    "mylo"
    ],
    "n447/coffee-owner-brand-n447.js": [
     "concept",
@@ -28,20 +22,26 @@
     "praziarnicka",
     "vitazov"
    ],
-   "coffee-widget-polish.js": [
-    "kaffa",
-    "praziarnicka"
+   "coffee-header-cleanup.css": [
+    "casadelcaffe",
+    "coffeesheep",
+    "praziarnicka",
+    "zlatezrnko"
    ],
    "coffee-widget-polish.css": [
     "concept",
     "kaffa"
    ],
-   "coffee-quality.js": [
-    "mylo"
+   "assets/n447/foto/sources.json": [
+    "grain"
+   ],
+   "coffee-widget-polish.js": [
+    "kaffa",
+    "praziarnicka"
    ]
   },
   "files": 118,
-  "bytes": 4003066,
+  "bytes": 4003442,
   "excludedForeignAssets": []
  },
  "http": {
@@ -84,7 +84,7 @@
     "Máte ovocnú kávu?",
     "Máte kávu bez kofeínu?"
    ],
-   "chatReply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nblend • black sheep — orientačne od 10,50 €\nPozrieť v e-shope ↗\n(V chuti: horká čokoláda, lesné ovocie, sušené kôstkové ovocie.)\nbrazil • doce citrus — 200 g za 10,50 €\nPozrieť v e-shope ↗\n(V chuti: marhuľa, hrozienka, karamel, hork",
+   "chatReply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nblend • black sheep — orientačne od 10,50 €\nPozrieť v e-shope ↗\n(V chuti: horká čokoláda, lesné ovocie, sušené kôstkové ovocie.)\nbrazil • doce citrus — orientačne od 10,50 €\nPozrieť v e-shope ↗\n(V chuti: marhuľa, hrozienka, karamel,",
    "foreignInText": [],
    "oldOffer": false,
    "has447": true,
@@ -117,7 +117,7 @@
     "Máte ovocnú kávu?",
     "Máte kávu bez kofeínu?"
    ],
-   "chatReply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nblend • black sheep — orientačne od 10,50 €\nPozrieť v e-shope ↗\n(V chuti: horká čokoláda, lesné ovocie, sušené kôstkové ovocie.)\nbrazil • doce citrus — 200 g za 10,50 €\nPozrieť v e-shope ↗\n(V chuti: marhuľa, hrozienka, karamel, hork",
+   "chatReply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nblend • black sheep — orientačne od 10,50 €\nPozrieť v e-shope ↗\n(V chuti: horká čokoláda, lesné ovocie, sušené kôstkové ovocie.)\nbrazil • doce citrus — orientačne od 10,50 €\nPozrieť v e-shope ↗\n(V chuti: marhuľa, hrozienka, karamel,",
    "foreignInText": [],
    "oldOffer": false,
    "has447": true,

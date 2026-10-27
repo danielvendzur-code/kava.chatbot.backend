@@ -1,7 +1,7 @@
 {
  "slug": "black",
  "family": "coffee",
- "builtFrom": "c0f95bd",
+ "builtFrom": null,
  "entry": "black.html",
  "files": [
   {
@@ -557,8 +557,8 @@
   },
   {
    "path": "n447/data/black.js",
-   "bytes": 14359,
-   "sha256": "d855486ff1d5967877e97d1e993f1a2e52658f207e3cd1544432bebe8e9400f8"
+   "bytes": 14735,
+   "sha256": "75de20875b878c3756eb04801effce17dc8400d828e73762ddc45da8ab19eae5"
   },
   {
    "path": "n447/engine.js",
@@ -667,5 +667,5 @@
   "yemna",
   "zlatezrnko"
  ],
- "totalBytes": 4003066
+ "totalBytes": 4003442
 }

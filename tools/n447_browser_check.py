@@ -59,7 +59,7 @@ def main():
             if paths is None:
                 paths = pg.evaluate("() => N447Engine.allPaths(N447_DATA['%s']).map(p => p.trail.map(s => [s.key, s.value]))" % SLUG)
                 shop_host = pg.evaluate("new URL(N447_DATA['%s'].brand.web).hostname" % SLUG)
-                probe_name = pg.evaluate("N447_DATA['%s'].products.find(p => p.variants && p.variants.length).name.split('•').pop().trim()" % SLUG)
+                probe_name = pg.evaluate("(N447_DATA['%s'].products.find(p => p.variants && p.variants.length) || N447_DATA['%s'].products[0]).name.split('•').pop().trim()" % (SLUG, SLUG))
                 report['allPaths'] = len(paths)
                 if A.get('full') != '1': paths = cover(paths)
                 report['testedPaths'] = len(paths)

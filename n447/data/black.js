@@ -3,8 +3,9 @@
    CENY: detail kávy ukazuje iba rozsah „od – do“; cena konkrétnej kombinácie (praženie × gramáž × mletie)
    sa zobrazí až po výbere v e-shope. `variants` obsahuje IBA kombinácie overené v živom UI e-shopu.
    priceFrom je informatívna dolná hranica rozsahu a nikdy nesplní rozpočet.
-   Stav overenia variantov: iba brazil • doce citrus (kontrola Codex v živom UI 2026-10-22). Ostatné kávy
-   čakajú; e-shop blokuje automatické čítanie (WAF/429), preto sa rozpočtová otázka zatiaľ nezobrazí. */
+   Stav overenia variantov (27. 10.): žiadna kombinácia nie je dnes doložená → všetky kávy ukazujú iba „od X €“,
+   cena sa neviaže na balenie a nepočíta sa súčet. brazil • doce citrus (kontrola Codex 22. 10.) je v heldVariants
+   ako HOLD; e-shop blokuje automatické čítanie (WAF/429), rozpočtová otázka sa nezobrazí. */
 (function (g) {
   'use strict';
   const CHECKED = '2026-10-22';
@@ -24,7 +25,7 @@
       logo: A + 'logo.png', hero: A + 'hero.jpg', contact: 'ahoj@black.sk', contactSource: 'https://www.black.sk/sk/kontakt',
       theme: {ink: '#141414', brand: '#141414', accent: '#141414', soft: '#f3f1ee', paper: '#ffffff'}
     },
-    scope: 'Všetkých 15 zrnkových/mletých káv z kategórie káva a drip vrecúška drippin. Kapsule, cascara, doplnky a merch nie sú vo výbere.',
+    scope: 'Všetkých 16 zrnkových/mletých káv z kategórie káva a drip vrecúška drippin. Kapsule, cascara, doplnky a merch nie sú vo výbere.',
     excluded: [
       {name: 'cascara • costa rica las lajas', url: P + 'cascara', reason: 'Čaj zo sušenej kávovej čerešne, nie káva.'},
       {name: 'kapsule • black sheep', url: P + 'kapsule-black-sheep', reason: 'Kapsule.'},
@@ -44,7 +45,9 @@
         roasts: ['espresso'], taste: 'choco', notes: ['marhuľa', 'hrozienka', 'karamel', 'horká čokoláda', 'lieskový oriešok'],
         origin: 'Brazília · Monte Carmelo', farm: 'Cosme e Damião', variety: 'Obatã, Acaiá, Arara', process: 'natural', altitude: '835 m n. m.',
         summary: 'Sladká a krémová káva, ktorú pražiareň predstavuje ako klasickú voľbu do kávovaru aj na domácu prípravu.',
-        variants: [codex('espresso', 200, 10.5), codex('espresso', 500, 22.5), codex('espresso', 1000, 39)]}),
+        /* HOLD 27. 10.: kombinácie z kontroly Codex 22. 10. sa dnes nedali znova doložiť bežným prístupom
+           (oficiálny web nie je z tejto relácie dostupný) → výsledok ukazuje iba „od 10,50 €“, bez balenia a súčtu. */
+        heldVariants: [codex('espresso', 200, 10.5), codex('espresso', 500, 22.5), codex('espresso', 1000, 39)]}),
       coffee({id: 'los-hibiscos', region: 'americas', slug: 'colombia-los-hibiscos', name: 'colombia • los hibiscos', photo: 'colombia-los-hibiscos.jpg', priceFrom: 11, priceTo: 42,
         roasts: ['espresso'], taste: 'choco', notes: ['toffee', 'lesné ovocie', 'červené jablko', 'mliečna čokoláda'],
         origin: 'Kolumbia · Huila', variety: 'Caturra', process: 'washed', altitude: '1300–1900 m n. m.',

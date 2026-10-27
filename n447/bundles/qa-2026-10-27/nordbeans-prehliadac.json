@@ -2,33 +2,33 @@
   "slug": "nordbeans",
   "sizes": {
     "320x568": {
-      "paths": 44,
-      "screens": 272,
+      "paths": 40,
+      "screens": 249,
       "issues": [],
-      "maxOptionHeight": 126.71875
+      "maxOptionHeight": 126.70901489257812
     },
     "390x650": {
-      "paths": 44,
-      "screens": 272,
+      "paths": 40,
+      "screens": 249,
       "issues": [],
       "maxOptionHeight": 167.71875
     },
     "560x600": {
-      "paths": 44,
-      "screens": 272,
+      "paths": 40,
+      "screens": 249,
       "issues": [],
-      "maxOptionHeight": 142.71875
+      "maxOptionHeight": 142.71737670898438
     },
     "1280x800": {
-      "paths": 44,
-      "screens": 272,
+      "paths": 40,
+      "screens": 249,
       "issues": [],
-      "maxOptionHeight": 222.8829345703125
+      "maxOptionHeight": 222.88839721679688
     }
   },
   "apiBlocked": 12,
   "console": [],
   "storage": [],
-  "allPaths": 104,
-  "testedPaths": 44
+  "allPaths": 98,
+  "testedPaths": 40
 }
