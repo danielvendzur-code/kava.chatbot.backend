@@ -1,0 +1,34 @@
+{
+  "slug": "black",
+  "sizes": {
+    "320x568": {
+      "paths": 27,
+      "screens": 142,
+      "issues": [],
+      "maxOptionHeight": 126.71875
+    },
+    "390x650": {
+      "paths": 27,
+      "screens": 142,
+      "issues": [],
+      "maxOptionHeight": 167.71710205078125
+    },
+    "560x600": {
+      "paths": 27,
+      "screens": 142,
+      "issues": [],
+      "maxOptionHeight": 142.71380615234375
+    },
+    "1280x800": {
+      "paths": 27,
+      "screens": 142,
+      "issues": [],
+      "maxOptionHeight": 222.87350463867188
+    }
+  },
+  "apiBlocked": 12,
+  "console": [],
+  "storage": [],
+  "allPaths": 66,
+  "testedPaths": 27
+}

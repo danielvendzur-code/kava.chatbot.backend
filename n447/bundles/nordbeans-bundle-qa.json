@@ -1,7 +1,7 @@
 {
  "slug": "nordbeans",
  "family": "coffee",
- "builtFrom": "7b6e7d0",
+ "builtFrom": "c0f95bd",
  "static": {
   "otherHosts": {
    "assets/n447/tones/sources.json": [
@@ -12,13 +12,19 @@
    ]
   },
   "sharedCodeIdentifiers": {
-   "coffee-widget-polish.css": [
+   "n447/coffee-owner-brand-n447.js": [
     "concept",
-    "kaffa"
+    "diamonds",
+    "kaffa",
+    "praziarnicka",
+    "vitazov"
    ],
    "coffee-widget-polish.js": [
     "kaffa",
     "praziarnicka"
+   ],
+   "coffee-quality.js": [
+    "mylo"
    ],
    "coffee-header-cleanup.css": [
     "casadelcaffe",
@@ -26,18 +32,12 @@
     "praziarnicka",
     "zlatezrnko"
    ],
-   "coffee-quality.js": [
-    "mylo"
+   "coffee-widget-polish.css": [
+    "concept",
+    "kaffa"
    ],
    "assets/n447/foto/sources.json": [
     "grain"
-   ],
-   "n447/coffee-owner-brand-n447.js": [
-    "concept",
-    "diamonds",
-    "kaffa",
-    "praziarnicka",
-    "vitazov"
    ]
   },
   "files": 119,
@@ -58,7 +58,7 @@
  },
  "browser": {
   "390x844": {
-   "requests": 49,
+   "requests": 48,
    "hosts": [
     "127.0.0.1"
    ],
@@ -92,7 +92,7 @@
    "externalHosts": []
   },
   "1280x800": {
-   "requests": 49,
+   "requests": 48,
    "hosts": [
     "127.0.0.1"
    ],
@@ -131,7 +131,7 @@
   "apiCalls": 20,
   "outboundBlocked": 0,
   "outboundHosts": [],
-  "served": 101,
+  "served": 99,
   "notFound": 135
  },
  "paidCalls": 0

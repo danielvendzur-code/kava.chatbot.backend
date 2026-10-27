@@ -1,7 +1,7 @@
 {
  "slug": "black",
  "family": "coffee",
- "builtFrom": "66c9266",
+ "builtFrom": "c0f95bd",
  "entry": "black.html",
  "files": [
   {
@@ -34,6 +34,11 @@
    "path": "assets/black/brazil-doce-citrus.jpg",
    "bytes": 40602,
    "sha256": "32ee5ed042aefbd5eecda1785a6f145e813c812aa1e2943d3328851e4b4d6d96"
+  },
+  {
+   "path": "assets/black/colombia-diego-bermudez.jpg",
+   "bytes": 42249,
+   "sha256": "359b7c6f8477b2065cd12db4ebfbbeb79003dc9f36a7eaef59ddec6d416b00ce"
   },
   {
    "path": "assets/black/colombia-los-hibiscos.jpg",
@@ -552,8 +557,8 @@
   },
   {
    "path": "n447/data/black.js",
-   "bytes": 13310,
-   "sha256": "6d47a40a5a229cf672a1e2ec84ea607d91e9bde74d67f019f20fc4382572134c"
+   "bytes": 14359,
+   "sha256": "d855486ff1d5967877e97d1e993f1a2e52658f207e3cd1544432bebe8e9400f8"
   },
   {
    "path": "n447/engine.js",
@@ -662,5 +667,5 @@
   "yemna",
   "zlatezrnko"
  ],
- "totalBytes": 3959768
+ "totalBytes": 4003066
 }
