@@ -136,7 +136,7 @@
   root.innerHTML = `
     <main class="cx-owner">
       <header class="cx-owner-head">
-        <a class="cx-owner-brand" href="${brand.website}" target="_blank" rel="noreferrer">${brand.wordmark}</a>
+        <a class="cx-owner-brand" href="${brand.website}" rel="noreferrer">${brand.wordmark}</a>
         <a class="cx-owner-contact" href="${esc(contactHref())}" target="_blank" rel="noopener noreferrer">Chcem to na svoj web ${icons.arrow}</a>
       </header>
       <section class="cx-owner-hero">
@@ -241,13 +241,13 @@
       html+=lines(text.slice(cursor,match.index));
       const known=(linkedProducts||[]).some(p=>p.url===url);
       const own=!known&&shop&&host(url).endsWith(shop.split('.').slice(-2).join('.'));
-      html+=known?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Pozrieť produkt v e-shope ↗</a>${esc(match[0].slice(url.length))}`:own?`<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">Otvoriť stránku e-shopu ↗</a>${esc(match[0].slice(url.length))}`:esc(match[0]);
+      html+=known?`<a href="${esc(url)}" rel="noopener noreferrer">Pozrieť produkt v e-shope ↗</a>${esc(match[0].slice(url.length))}`:own?`<a href="${esc(url)}" rel="noopener noreferrer">Otvoriť stránku e-shopu ↗</a>${esc(match[0].slice(url.length))}`:esc(match[0]);
       cursor=match.index+match[0].length;
     }
     return html+lines(text.slice(cursor));
   }
 
-  function messageText(message){const text=esc(message.text).replace(/\n/g,'<br>');if(message.role!=='assistant')return text;const urls=new Set((brand.catalogue||brand.products||[]).map(p=>esc(p.url)));for(const url of [brand.website,brand.url])if(url)urls.add(esc(url));return text.replace(/https?:\/\/[^\s<>]+/g,value=>{let url=value;if(!urls.has(url))url=url.replace(/[.,;]+$/,'');return urls.has(url)?'<a href="'+url+'" target="_blank" rel="noopener noreferrer">Pozrieť v e-shope ↗</a>'+value.slice(url.length):value;});}
+  function messageText(message){const text=esc(message.text).replace(/\n/g,'<br>');if(message.role!=='assistant')return text;const urls=new Set((brand.catalogue||brand.products||[]).map(p=>esc(p.url)));for(const url of [brand.website,brand.url])if(url)urls.add(esc(url));return text.replace(/https?:\/\/[^\s<>]+/g,value=>{let url=value;if(!urls.has(url))url=url.replace(/[.,;]+$/,'');return urls.has(url)?'<a href="'+url+'" rel="noopener noreferrer">Pozrieť v e-shope ↗</a>'+value.slice(url.length):value;});}
   function messageMarkup(message) {
     const avatar = message.role === 'assistant' ? `<span class="cx-message-avatar${avatarUsesRawImageLogo ? ' is-image-logo' : ''}">${avatarMarkup}</span>` : '';
     return `<div class="cx-message cx-message--${message.role}">${avatar}<div class="cx-bubble">${messageBody(message.text)}</div></div>`;
@@ -430,9 +430,9 @@
         <header class="cx-progress"><button id="cx-result-back" type="button">${icons.back}<span>Späť</span></button><div>${questions.map(()=>'<i class="is-on"></i>').join('')}</div><b>Výsledok</b></header>
         <div class="cx-result-body">
           <span class="cx-kicker">Váš smer</span>
-          <article class="cx-product"><div class="cx-product-photo"><img src="${product.photo || brand.hero}" alt="${esc(product.name)}" referrerpolicy="no-referrer" onerror="this.closest('.cx-product-photo')?.setAttribute('data-image-failed','true')"></div><div class="cx-product-copy"><small>${esc(brand.name)}</small><h2>${esc(product.name)}</h2>${matchedLabels(product).length?`<div class="cx-product-tags">${matchedLabels(product).map((label)=>`<span>${esc(label)}</span>`).join('')}</div>`:''}<div class="cx-product-price"><strong>${esc(product.price)}</strong><a href="${product.url}" target="_blank" rel="noreferrer">Pozrieť produkt ${icons.arrow}</a></div></div></article>
+          <article class="cx-product"><div class="cx-product-photo"><img src="${product.photo || brand.hero}" alt="${esc(product.name)}" referrerpolicy="no-referrer" onerror="this.closest('.cx-product-photo')?.setAttribute('data-image-failed','true')"></div><div class="cx-product-copy"><small>${esc(brand.name)}</small><h2>${esc(product.name)}</h2>${matchedLabels(product).length?`<div class="cx-product-tags">${matchedLabels(product).map((label)=>`<span>${esc(label)}</span>`).join('')}</div>`:''}<div class="cx-product-price"><strong>${esc(product.price)}</strong><a href="${product.url}" rel="noreferrer">Pozrieť produkt ${icons.arrow}</a></div></div></article>
           <section class="cx-why"><small>Prečo práve toto</small><p>${esc(product.reason)}</p></section>
-          ${alt && alt.id!==product.id ? `<article class="cx-alt"><span>${icons.leaf}</span><div><small>Alternatíva</small><b>${esc(alt.name)}</b></div><a href="${alt.url}" target="_blank" rel="noreferrer" aria-label="Pozrieť alternatívu">${icons.arrow}</a></article>`:''}
+          ${alt && alt.id!==product.id ? `<article class="cx-alt"><span>${icons.leaf}</span><div><small>Alternatíva</small><b>${esc(alt.name)}</b></div><a href="${alt.url}" rel="noreferrer" aria-label="Pozrieť alternatívu">${icons.arrow}</a></article>`:''}
           <p class="cx-result-note">Výber je orientačný podľa preferencií, nie zdravotná diagnóza.</p>
           <button class="cx-restart" id="cx-restart" type="button">Vybrať znova</button>
         </div>

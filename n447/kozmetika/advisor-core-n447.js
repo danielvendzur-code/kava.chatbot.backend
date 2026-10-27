@@ -132,8 +132,8 @@
       }
       const limits=(priced[0]?.currency==='CZK'?[300,600,1000]:[10,25,50]).filter(n=>{const count=priced.filter(p=>withinBudget(p,n)).length;if(!count||count>=priced.length)return false;const free=recommend({...answers,category,budget:''}).winner,capped=recommend({...answers,category,budget:n}).winner;return !!capped&&capped.id!==free?.id;});/* n447: hranica iba keď naozaj vyradí produkt – inak by každá odpoveď viedla k tomu istému výsledku */
       const baseAnswered=result.every(step=>answers[step.key]!==undefined);
-      if(limits.length)result.push({key:'budget',options:limits});
-      if(!baseAnswered||(limits.length&&answers.budget===undefined))return result;
+      /* n447: rozpočet až na konci, po upresneniach vlastností */
+      if(!baseAnswered)return result.concat(limits.length?[{key:'budget',options:limits}]:[]);
       // Ask about actual remaining differences, one decision at a time. No neutral body area.
       const comparison={...answers,category};for(const key of facetKeys)delete comparison[key];
       let remaining=recommend(comparison).matches;
@@ -152,10 +152,33 @@
         if(answers[key]===undefined)break;
         comparison[key]=answers[key];remaining=recommend(comparison).matches;
       }
-
+      if(limits.length)result.push({key:'budget',options:limits});
       return result;
     }
-    return {products, categoryPool, recommend, steps};
+    /* n447: otázka sa položí, iba ak jej odpovede vedú k rôznym MNOŽINÁM konečných hlavných produktov (celý strom ďalších
+       otázok, rovnako ako rozhranie: filter použiteľných odpovedí, pri rozpočte aj „Bez limitu“ = ''). Odpovede s rovnakým
+       výsledkom sa zlúčia (zostane konkrétna, nie „any“); otázka s jedinou rôznou možnosťou sa vynechá. */
+    const valueOf=v=>v&&typeof v==='object'?v.value:v;
+    const usable=(a,s)=>(s.options||[]).filter(v=>{const x=valueOf(v);return x==='any'||!!recommend({...a,[s.key]:x}).winner;});
+    const memoFinals=new Map(),memoSteps=new Map();
+    function finals(a){const k=JSON.stringify(a);if(memoFinals.has(k))return memoFinals.get(k);
+      const list=prunedSteps(a),s=list.find(x=>a[x.key]===undefined);let out;
+      if(!s){const w=recommend(a).winner;out=w?w.id:'none';}
+      else{const vals=s.options.map(valueOf);if(s.key==='budget')vals.push('');out=[...new Set(vals.flatMap(v=>finals({...a,[s.key]:v}).split('|')))].sort().join('|');}
+      memoFinals.set(k,out);return out;}
+    function prunedSteps(a){const k=JSON.stringify(a);if(memoSteps.has(k))return memoSteps.get(k);
+      let list=steps(a);
+      for(;;){const i=list.findIndex(x=>a[x.key]===undefined);if(i<0)break;const s=list[i];
+        const vals=usable(a,s).map(valueOf);const all=s.key==='budget'?[...vals,'']:vals;const sig=new Map();
+        for(const v of all){const f=finals({...a,[s.key]:v});if(!sig.has(f))sig.set(f,[]);sig.get(f).push(v);}
+        const keep=[...sig.values()].map(g=>g.find(v=>v!=='any'&&v!=='')??g[0]).filter(v=>v!=='');
+        const distinct=sig.size;
+        if(distinct<2){list=list.slice(0,i).concat(list.slice(i+1).filter(x=>x.key!==s.key));
+          /* vynechaná otázka: ďalšie kroky sa počítajú bez nej (rovnako ako „any“) */
+          const implied=all.includes('any')?'any':all[0];const rest=(implied===undefined?[]:steps({...a,[s.key]:implied})).filter(x=>x.key!==s.key&&!list.some(y=>y.key===x.key));list=list.concat(rest);continue;}
+        list=list.slice(0,i).concat([{...s,options:s.options.filter(v=>keep.includes(valueOf(v)))}],list.slice(i+1));break;}
+      memoSteps.set(k,list);return list;}
+    return {products, categoryPool, recommend, steps:prunedSteps};
   }
   scope.CXAdvisorCore = {create, prepare, norm, detailLabels};
   if (typeof module !== 'undefined' && module.exports) module.exports = scope.CXAdvisorCore;

@@ -15,6 +15,26 @@
   const PREP_ROASTS = {espresso: ['espresso', 'omni'], moka: ['espresso', 'omni'], filter: ['filter', 'omni']};
   const PREP_PHOTO = {espresso: '/assets/scenes/coffee-espresso.jpg', moka: '/assets/scenes/coffee-moka.jpg', filter: '/assets/scenes/coffee-filter.jpg'};
   const TASTE_PHOTO = {choco: '/assets/scenes/coffee-caramel.jpg', fruitFull: '/assets/scenes/coffee-berries.jpg', fresh: '/assets/scenes/coffee-acidity-bright.jpg', decaf: '/assets/scenes/coffee-decaf-cup.jpg'};
+  /* Výber kávy: fotka opisuje chuťový tón odpovede (nie vrecúško). V jednom kroku sa fotka neopakuje. */
+  const TONE = (n) => '/assets/n447/tones/' + n + '.jpg', SC = (n) => '/assets/scenes/' + n + '.jpg';
+  const TONES = [[/cokol|kakao|nugat|pralink|baileys/, SC('coffee-chocolate')], [/karamel|cukor|cukr|sirup|melas|panela|toffee|vanil/, SC('coffee-caramel')],
+    [/orech|oriesk|orisk|lieskov|liskov|mandl|kesu|arasid/, SC('coffee-nuts')], [/\bmed\b|medov/, TONE('honey')],
+    [/malin|ostruzin|ribez|rybiz|jahod|cucoried|boruvk|bobul|brusnic|cernic|lesne ovoc/, SC('coffee-berries')], [/visn|cerese|cerezn|tresn|cherry|granatov/, TONE('cherries')],
+    [/broskv|broskyn|marhul|merunk|nektar|slivk|svestk|blumy/, TONE('stone-fruit')], [/citr|limet|bergamot|pomaranc|pomeranc|grapefruit|pomelo/, SC('coffee-acidity-bright')],
+    [/jablk|hrusk/, TONE('apples')], [/mango|ananas|papaj|papay|marakuj|tropic|lici|hrozn/, TONE('tropical')], [/kvet|jasmin|ruz|ibist|fialk|maces|bezov/, TONE('flowers')],
+    [/caj/, TONE('tea')], [/datl|fig|rozink|hrozienk|susen/, TONE('dried-fruit')], [/skoric|badyan|koren|pernik|tabak/, TONE('spice')]];
+  const foldT = (x) => String(x || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  function tonePhotos(list) {
+    const used = new Set(), out = new Map();
+    for (const x of list) {
+      const notes = (x.notes && x.notes.length ? x.notes : [x.profile]).map(foldT);
+      let photo = null;
+      for (const n of notes) { const hit = TONES.find(([rx, ph]) => rx.test(n) && !used.has(ph)); if (hit) { photo = hit[1]; break; } }
+      if (!photo) photo = [SC('coffee-explore'), SC('coffee-black'), SC('coffee-both')].find((ph) => !used.has(ph)) || null;
+      if (photo) used.add(photo); out.set(x.id, photo);
+    }
+    return out;
+  }
   const CAF_PHOTO = {yes: '/assets/scenes/coffee-beans.jpg', no: '/assets/scenes/coffee-decaf-cup.jpg'};
   /* Jednoduché ilustrácie pre voľby, ktoré nemajú vhodnú fotku (pomôcka, spracovanie, pôvod, praženie, zloženie, rozpočet, drip). */
   const IL = (n) => '/assets/n447/ilustracie/' + n + '.svg';
@@ -206,7 +226,7 @@
     if (!a.prep) {
       const options = Object.keys(PREP_ROASTS).filter((k) => pool(data, {prep: k}).length)
         .map((k) => ({value: k, title: t.prep[k][0], detail: t.prep[k][1], photo: PREP_PHOTO[k]}));
-      if (data.drip) options.push({value: 'drip', title: t.prep.drip[0], detail: t.prep.drip[1], photo: data.drip.photo});
+      if (data.drip) options.push({value: 'drip', title: t.prep.drip[0], detail: t.prep.drip[1], photo: SC('coffee-black')});
       return {key: 'prep', name: t.prepName, title: t.prepQ, options};
     }
     if (a.prep === 'drip') {
@@ -319,10 +339,11 @@
     p = pool(data, Object.assign({}, base, {budget: a.budget, detailProcess: a.detailProcess, detailMore: a.detailMore}));
     if (!chosen(a) && p.length > 1) {
       const pages = pickPages(p), idx = a.pick2 ? 2 : a.pick ? 1 : 0, key = ['pick', 'pick2', 'pick3'][idx];
-      const options = pages[idx].map((x) => ({value: x.id, title: tones(x), detail: x.name, photo: x.photo, product: x.id}));
+      const tp = tonePhotos(pages[idx]);
+      const options = pages[idx].map((x) => ({value: x.id, title: tones(x), detail: x.name, photo: tp.get(x.id), product: x.id}));
       if (idx < pages.length - 1) {
         const later = pages.slice(idx + 1).flat();
-        options.push({value: 'more:' + (idx + 1), title: t.moreTitle, detail: later.length <= 2 ? later.map((x) => x.name).join(', ') : t.nCoffees(later.length), photo: later[0].photo});
+        options.push({value: 'more:' + (idx + 1), title: t.moreTitle, detail: later.length <= 2 ? later.map((x) => x.name).join(', ') : t.nCoffees(later.length), photo: SC('coffee-beans')});
       }
       return {key, name: t.pickName, title: idx ? t.pickMoreQ : t.pickQ, options};
     }
