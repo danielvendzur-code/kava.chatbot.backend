@@ -1,70 +1,15 @@
 {
  "slug": "renovality",
  "family": "cosmetics",
- "builtFrom": "ce15ca3",
+ "builtFrom": "7b6e7d0",
  "static": {
   "otherHosts": {
-   "catalogue-advisor.js": [
+   "n447/kozmetika/catalogue-advisor-n447.js": [
     "www.kvetu.cz"
    ]
   },
   "sharedCodeIdentifiers": {
-   "index.html": [
-    "kvitok"
-   ],
-   "nove-znacky.css": [
-    "monlevur",
-    "mydlitto",
-    "pimpinella",
-    "yemna"
-   ],
-   "n447/kozmetika/cosmetics-n447.js": [
-    "modrapupava",
-    "mylo"
-   ],
-   "skincare-final-fix.js": [
-    "modrapupava",
-    "syncare"
-   ],
-   "cosmetics-polish.css": [
-    "anemone",
-    "bellcoria",
-    "mylo"
-   ],
-   "skincare-targeted-hotfix.css": [
-    "biofy",
-    "facederma",
-    "fytopharma",
-    "kvitok",
-    "lavelin",
-    "natureal",
-    "ponio",
-    "syncare"
-   ],
    "nove-znacky.js": [
-    "cyprianus"
-   ],
-   "catalogue-config.js": [
-    "almara",
-    "bellcoria",
-    "dulcia",
-    "liqoil",
-    "modrapupava",
-    "monlevur",
-    "mujluj",
-    "mydlitto",
-    "mylo",
-    "noili",
-    "pimpinella",
-    "puaree",
-    "yemna"
-   ],
-   "skincare-final-fix.css": [
-    "barboralori",
-    "syncare"
-   ],
-   "launcher-finish.js": [
-    "almara",
     "cyprianus"
    ],
    "cosmetics.css": [
@@ -73,6 +18,16 @@
     "biofy",
     "mylo",
     "ponio"
+   ],
+   "launcher-finish.js": [
+    "almara",
+    "cyprianus"
+   ],
+   "skincare-review-fixes-20260914.js": [
+    "cyprianus"
+   ],
+   "kvitok-direct-logo.css": [
+    "kvitok"
    ],
    "skincare-final-logo-qa.css": [
     "bellmedi",
@@ -89,8 +44,63 @@
     "soaphoria",
     "syncare"
    ],
-   "skincare-avatar-round-fix.css": [
+   "n447/kozmetika/advisor-boot-n447.js": [
+    "kvitok"
+   ],
+   "skincare-final-fix.css": [
+    "barboralori",
     "syncare"
+   ],
+   "catalogue-config.js": [
+    "almara",
+    "bellcoria",
+    "dulcia",
+    "liqoil",
+    "modrapupava",
+    "monlevur",
+    "mujluj",
+    "mydlitto",
+    "mylo",
+    "noili",
+    "pimpinella",
+    "puaree",
+    "yemna"
+   ],
+   "skincare-refresh.css": [
+    "anemone",
+    "barboralori",
+    "bellcoria",
+    "concept",
+    "mylo",
+    "ponio"
+   ],
+   "advisor-quality.css": [
+    "mylo"
+   ],
+   "n447/kozmetika/cosmetics-n447.js": [
+    "modrapupava",
+    "mylo"
+   ],
+   "index.html": [
+    "kvitok"
+   ],
+   "skincare-final-logo-qa.js": [
+    "cyprianus",
+    "fytopharma",
+    "kvitok",
+    "modrapupava",
+    "mylo",
+    "ponio"
+   ],
+   "skincare-final-fix.js": [
+    "modrapupava",
+    "syncare"
+   ],
+   "skincare-final-brand-marks.js": [
+    "barboralori",
+    "cyprianus",
+    "facederma",
+    "modrapupava"
    ],
    "skincare-review-fixes-20260914.css": [
     "anemone",
@@ -102,16 +112,38 @@
     "panakeia",
     "ponio"
    ],
+   "skincare-avatar-round-fix.css": [
+    "syncare"
+   ],
+   "nove-znacky.css": [
+    "monlevur",
+    "mydlitto",
+    "pimpinella",
+    "yemna"
+   ],
    "kvitok-logo-final-fix.js": [
     "kvitok"
    ],
-   "skincare-refresh.css": [
-    "anemone",
-    "barboralori",
-    "bellcoria",
-    "concept",
-    "mylo",
+   "kvitok-brand-mark-preload.js": [
+    "kvitok"
+   ],
+   "catalogue-advisor.css": [
     "ponio"
+   ],
+   "cosmetics-polish.css": [
+    "anemone",
+    "bellcoria",
+    "mylo"
+   ],
+   "skincare-targeted-hotfix.css": [
+    "biofy",
+    "facederma",
+    "fytopharma",
+    "kvitok",
+    "lavelin",
+    "natureal",
+    "ponio",
+    "syncare"
    ],
    "skincare-final-brand-overrides.css": [
     "anemone",
@@ -125,45 +157,13 @@
     "panakeia",
     "syncare"
    ],
-   "advisor-quality.css": [
-    "mylo"
-   ],
-   "catalogue-advisor.css": [
-    "ponio"
-   ],
-   "skincare-final-logo-qa.js": [
-    "cyprianus",
-    "fytopharma",
-    "kvitok",
-    "modrapupava",
-    "mylo",
-    "ponio"
-   ],
-   "skincare-review-fixes-20260914.js": [
-    "cyprianus"
-   ],
-   "kvitok-brand-mark-preload.js": [
-    "kvitok"
-   ],
    "skincare-launcher-logo-fix.js": [
     "cyprianus",
     "syncare"
-   ],
-   "n447/kozmetika/advisor-boot-n447.js": [
-    "kvitok"
-   ],
-   "kvitok-direct-logo.css": [
-    "kvitok"
-   ],
-   "skincare-final-brand-marks.js": [
-    "barboralori",
-    "cyprianus",
-    "facederma",
-    "modrapupava"
    ]
   },
-  "files": 84,
-  "bytes": 3336788,
+  "files": 92,
+  "bytes": 3674851,
   "excludedForeignAssets": [
    "assets/catalogue/logos/modrapupava-symbol.png",
    "assets/cosmetics/barboralori-logo.png",
@@ -186,7 +186,7 @@
  },
  "browser": {
   "390x844": {
-   "requests": 63,
+   "requests": 64,
    "hosts": [
     "127.0.0.1",
     "cdn.myshoptet.com"
@@ -197,10 +197,9 @@
     "Pleť",
     "Suchá a napjatá",
     "Jemná péče",
-    "Séra",
-    "Do 300 Kč"
+    "Séra"
    ],
-   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nHyaluronové sérum 30 ml airless\n\n30 ml\n\nPleť\nSéra\nJemná péče\nSuchá a napjatá\ndo 300 Kč\n255 Kč\nZobrazit produkt ↗\n\nSérum jako cílený krok péče.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Cena je v rámci vašeho limitu 300 Kč.\n\nCo doporučuji dál\n\n",
+   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nHyaluronové sérum 30 ml airless\n\n30 ml\n\nPleť\nSéra\nJemná péče\nSuchá a napjatá\n255 Kč\nZobrazit produkt\n\nSérum jako cílený krok péče.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Z vhodných možností má tento produkt nižší cenu.\n\nPorovnat další vhodn",
    "resultShown": true,
    "chips": [
     "Mám suchou pleť",
@@ -217,7 +216,7 @@
    ]
   },
   "1280x800": {
-   "requests": 63,
+   "requests": 64,
    "hosts": [
     "127.0.0.1",
     "cdn.myshoptet.com"
@@ -228,10 +227,9 @@
     "Pleť",
     "Suchá a napjatá",
     "Jemná péče",
-    "Séra",
-    "Do 300 Kč"
+    "Séra"
    ],
-   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nHyaluronové sérum 30 ml airless\n\n30 ml\n\nPleť\nSéra\nJemná péče\nSuchá a napjatá\ndo 300 Kč\n255 Kč\nZobrazit produkt ↗\n\nSérum jako cílený krok péče.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Cena je v rámci vašeho limitu 300 Kč.\n\nCo doporučuji dál\n\n",
+   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nHyaluronové sérum 30 ml airless\n\n30 ml\n\nPleť\nSéra\nJemná péče\nSuchá a napjatá\n255 Kč\nZobrazit produkt\n\nSérum jako cílený krok péče.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Z vhodných možností má tento produkt nižší cenu.\n\nPorovnat další vhodn",
    "resultShown": true,
    "chips": [
     "Mám suchou pleť",
@@ -253,9 +251,8 @@
   "apiCalls": 20,
   "outboundBlocked": 0,
   "outboundHosts": [],
-  "served": 119,
+  "served": 123,
   "notFound": 135
  },
- "paidCalls": 0,
- "checkedContentIdenticalTo": "a9f8559"
+ "paidCalls": 0
 }

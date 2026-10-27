@@ -1,0 +1,138 @@
+{
+ "slug": "nordbeans",
+ "family": "coffee",
+ "builtFrom": "7b6e7d0",
+ "static": {
+  "otherHosts": {
+   "assets/n447/tones/sources.json": [
+    "www.pexels.com"
+   ],
+   "assets/n447/foto/sources.json": [
+    "www.pexels.com"
+   ]
+  },
+  "sharedCodeIdentifiers": {
+   "coffee-widget-polish.css": [
+    "concept",
+    "kaffa"
+   ],
+   "coffee-widget-polish.js": [
+    "kaffa",
+    "praziarnicka"
+   ],
+   "coffee-header-cleanup.css": [
+    "casadelcaffe",
+    "coffeesheep",
+    "praziarnicka",
+    "zlatezrnko"
+   ],
+   "coffee-quality.js": [
+    "mylo"
+   ],
+   "assets/n447/foto/sources.json": [
+    "grain"
+   ],
+   "n447/coffee-owner-brand-n447.js": [
+    "concept",
+    "diamonds",
+    "kaffa",
+    "praziarnicka",
+    "vitazov"
+   ]
+  },
+  "files": 119,
+  "bytes": 3769341,
+  "excludedForeignAssets": []
+ },
+ "http": {
+  "/": 200,
+  "/nordbeans.html": 200,
+  "probes": 133,
+  "notBlocked": {},
+  "POST /api/chat": 404,
+  "POST /api/cosmetics-chat": 404,
+  "POST /api/ai-chat": 404,
+  "POST /api/cosmetics-chat-447": 404,
+  "otherDemoIdsRejected": 15,
+  "ownApi": 200
+ },
+ "browser": {
+  "390x844": {
+   "requests": 49,
+   "hosts": [
+    "127.0.0.1"
+   ],
+   "failed": [],
+   "errors": [],
+   "trail": [
+    "Kávovar nebo automat",
+    "S kofeinem",
+    "Čokoládová a oříšková",
+    "Do 250 Kč",
+    "čokoláda · sušené ovoce"
+   ],
+   "resultShown": true,
+   "result": "Brazílie\n\nSantos Brazílie\n\n250 g · tmavé pražení, řada Sweet City · zrnková\n250 Kč\nDalší balení: 1 kg 846 Kč (nad rozpočet)\nNa espresso i do automatuE-shop ji uvádí na: Pražírna ji doporučuje na: espresso, moka konvička, AeroPress, frenchpress, automatický kávovar.\nČokoládová a oříškováV chuti: čokoláda, sušené ovoce, arašídy.\nV rozpočtu250 g celkem 250 Kč; váš limit 250 Kč.\n\nObjevte lahodnou chuť",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.nordbeans.cz/brazilie_z22/",
+    "text": "Zobrazit tuto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filtr",
+    "Máte ovocnou kávu?",
+    "Máte kávu bez kofeinu?"
+   ],
+   "chatReply": "WILD FOX ESPRESSO - Brazílie: Liška má novou stopu. Vede do Brazílie k Otáviu Reisovi a voní po mandlích, jahodách a čokoládě. V chuti: mandle, jahody, čokoláda. Původ: Brazílie · Sul de Minas, zpracování Anaerobní Natural. Pražení: světlé pražení, řada Nordbeans; balení 250 g, 1 kg.\nCeny: 250 g, zr",
+   "foreignInText": [],
+   "oldOffer": false,
+   "has447": true,
+   "externalHosts": []
+  },
+  "1280x800": {
+   "requests": 49,
+   "hosts": [
+    "127.0.0.1"
+   ],
+   "failed": [],
+   "errors": [],
+   "trail": [
+    "Kávovar nebo automat",
+    "S kofeinem",
+    "Čokoládová a oříšková",
+    "Do 250 Kč",
+    "čokoláda · sušené ovoce"
+   ],
+   "resultShown": true,
+   "result": "Brazílie\n\nSantos Brazílie\n\n250 g · tmavé pražení, řada Sweet City · zrnková\n250 Kč\nDalší balení: 1 kg 846 Kč (nad rozpočet)\nNa espresso i do automatuE-shop ji uvádí na: Pražírna ji doporučuje na: espresso, moka konvička, AeroPress, frenchpress, automatický kávovar.\nČokoládová a oříškováV chuti: čokoláda, sušené ovoce, arašídy.\nV rozpočtu250 g celkem 250 Kč; váš limit 250 Kč.\n\nObjevte lahodnou chuť",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.nordbeans.cz/brazilie_z22/",
+    "text": "Zobrazit tuto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filtr",
+    "Máte ovocnou kávu?",
+    "Máte kávu bez kofeinu?"
+   ],
+   "chatReply": "WILD FOX ESPRESSO - Brazílie: Liška má novou stopu. Vede do Brazílie k Otáviu Reisovi a voní po mandlích, jahodách a čokoládě. V chuti: mandle, jahody, čokoláda. Původ: Brazílie · Sul de Minas, zpracování Anaerobní Natural. Pražení: světlé pražení, řada Nordbeans; balení 250 g, 1 kg.\nCeny: 250 g, zr",
+   "foreignInText": [],
+   "oldOffer": false,
+   "has447": true,
+   "externalHosts": []
+  }
+ },
+ "fail": [],
+ "server": {
+  "apiCalls": 20,
+  "outboundBlocked": 0,
+  "outboundHosts": [],
+  "served": 101,
+  "notFound": 135
+ },
+ "paidCalls": 0
+}

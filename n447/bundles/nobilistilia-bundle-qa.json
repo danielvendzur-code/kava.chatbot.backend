@@ -1,14 +1,24 @@
 {
  "slug": "nobilistilia",
  "family": "cosmetics",
- "builtFrom": "ce15ca3",
+ "builtFrom": "7b6e7d0",
  "static": {
   "otherHosts": {
-   "catalogue-advisor.js": [
+   "n447/kozmetika/catalogue-advisor-n447.js": [
     "www.kvetu.cz"
    ]
   },
   "sharedCodeIdentifiers": {
+   "n447/kozmetika/cosmetics-n447.js": [
+    "modrapupava",
+    "mylo"
+   ],
+   "nove-znacky.css": [
+    "monlevur",
+    "mydlitto",
+    "pimpinella",
+    "yemna"
+   ],
    "skincare-review-fixes-20260914.css": [
     "anemone",
     "barboralori",
@@ -19,51 +29,17 @@
     "panakeia",
     "ponio"
    ],
-   "kvitok-logo-final-fix.js": [
+   "kvitok-direct-logo.css": [
     "kvitok"
    ],
-   "nove-znacky.js": [
-    "cyprianus"
-   ],
-   "cosmetics.css": [
-    "anemone",
-    "bellcoria",
-    "biofy",
-    "mylo",
-    "ponio"
+   "skincare-launcher-logo-fix.js": [
+    "cyprianus",
+    "syncare"
    ],
    "cosmetics-polish.css": [
     "anemone",
     "bellcoria",
     "mylo"
-   ],
-   "n447/kozmetika/cosmetics-n447.js": [
-    "modrapupava",
-    "mylo"
-   ],
-   "skincare-refresh.css": [
-    "anemone",
-    "barboralori",
-    "bellcoria",
-    "concept",
-    "mylo",
-    "ponio"
-   ],
-   "skincare-final-brand-marks.js": [
-    "barboralori",
-    "cyprianus",
-    "facederma",
-    "modrapupava"
-   ],
-   "skincare-final-fix.js": [
-    "modrapupava",
-    "syncare"
-   ],
-   "skincare-avatar-round-fix.css": [
-    "syncare"
-   ],
-   "kvitok-brand-mark-preload.js": [
-    "kvitok"
    ],
    "skincare-final-brand-overrides.css": [
     "anemone",
@@ -77,32 +53,20 @@
     "panakeia",
     "syncare"
    ],
-   "skincare-targeted-hotfix.css": [
-    "biofy",
-    "facederma",
+   "skincare-final-logo-qa.js": [
+    "cyprianus",
     "fytopharma",
     "kvitok",
-    "lavelin",
-    "natureal",
-    "ponio",
-    "syncare"
-   ],
-   "launcher-finish.js": [
-    "almara",
-    "cyprianus"
-   ],
-   "n447/kozmetika/advisor-boot-n447.js": [
-    "kvitok"
-   ],
-   "advisor-quality.css": [
-    "mylo"
-   ],
-   "catalogue-advisor.css": [
+    "modrapupava",
+    "mylo",
     "ponio"
    ],
-   "skincare-final-fix.css": [
-    "barboralori",
-    "syncare"
+   "cosmetics.css": [
+    "anemone",
+    "bellcoria",
+    "biofy",
+    "mylo",
+    "ponio"
    ],
    "catalogue-config.js": [
     "almara",
@@ -119,32 +83,8 @@
     "puaree",
     "yemna"
    ],
-   "skincare-review-fixes-20260914.js": [
-    "cyprianus"
-   ],
-   "nove-znacky.css": [
-    "monlevur",
-    "mydlitto",
-    "pimpinella",
-    "yemna"
-   ],
-   "kvitok-direct-logo.css": [
-    "kvitok"
-   ],
-   "skincare-launcher-logo-fix.js": [
-    "cyprianus",
-    "syncare"
-   ],
-   "skincare-final-logo-qa.js": [
-    "cyprianus",
-    "fytopharma",
-    "kvitok",
-    "modrapupava",
-    "mylo",
-    "ponio"
-   ],
-   "index.html": [
-    "kvitok"
+   "advisor-quality.css": [
+    "mylo"
    ],
    "skincare-final-logo-qa.css": [
     "bellmedi",
@@ -160,10 +100,70 @@
     "ponio",
     "soaphoria",
     "syncare"
+   ],
+   "skincare-final-fix.css": [
+    "barboralori",
+    "syncare"
+   ],
+   "skincare-final-fix.js": [
+    "modrapupava",
+    "syncare"
+   ],
+   "skincare-refresh.css": [
+    "anemone",
+    "barboralori",
+    "bellcoria",
+    "concept",
+    "mylo",
+    "ponio"
+   ],
+   "catalogue-advisor.css": [
+    "ponio"
+   ],
+   "skincare-final-brand-marks.js": [
+    "barboralori",
+    "cyprianus",
+    "facederma",
+    "modrapupava"
+   ],
+   "launcher-finish.js": [
+    "almara",
+    "cyprianus"
+   ],
+   "nove-znacky.js": [
+    "cyprianus"
+   ],
+   "skincare-avatar-round-fix.css": [
+    "syncare"
+   ],
+   "skincare-targeted-hotfix.css": [
+    "biofy",
+    "facederma",
+    "fytopharma",
+    "kvitok",
+    "lavelin",
+    "natureal",
+    "ponio",
+    "syncare"
+   ],
+   "n447/kozmetika/advisor-boot-n447.js": [
+    "kvitok"
+   ],
+   "index.html": [
+    "kvitok"
+   ],
+   "kvitok-logo-final-fix.js": [
+    "kvitok"
+   ],
+   "kvitok-brand-mark-preload.js": [
+    "kvitok"
+   ],
+   "skincare-review-fixes-20260914.js": [
+    "cyprianus"
    ]
   },
-  "files": 84,
-  "bytes": 3564852,
+  "files": 92,
+  "bytes": 3902915,
   "excludedForeignAssets": [
    "assets/catalogue/logos/modrapupava-symbol.png",
    "assets/cosmetics/barboralori-logo.png",
@@ -196,11 +196,10 @@
    "trail": [
     "Pleť",
     "Suchá a napjatá",
-    "Pružnost a zralá pleť",
-    "Oleje",
-    "Do 300 Kč"
+    "Každodenní péče",
+    "Tonika a vody"
    ],
-   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nPěsticí BIO olej jojobový 20 ml fialové sklo\n\n20 ml\n\nPleť\nOleje\nPružnost a zralá pleť\nSuchá a napjatá\ndo 300 Kč\n189 Kč\nZobrazit produkt ↗\n\nPéče s olejovým základem.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: pružnost a zralá pleť. Z vhodných možností má te",
+   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nKvětová voda BIO Heřmánek 50 ml\n\n50 ml\n\nPleť\nTonika a vody\nKaždodenní péče\nSuchá a napjatá\n179 Kč\nZobrazit produkt\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: každodenní péče. Z vhodných možností má tento produkt nižší cenu.\n\nPorovnat další vhodné možnosti (",
    "resultShown": true,
    "chips": [
     "Mám suchou pleť",
@@ -227,11 +226,10 @@
    "trail": [
     "Pleť",
     "Suchá a napjatá",
-    "Pružnost a zralá pleť",
-    "Oleje",
-    "Do 300 Kč"
+    "Každodenní péče",
+    "Tonika a vody"
    ],
-   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nPěsticí BIO olej jojobový 20 ml fialové sklo\n\n20 ml\n\nPleť\nOleje\nPružnost a zralá pleť\nSuchá a napjatá\ndo 300 Kč\n189 Kč\nZobrazit produkt ↗\n\nPéče s olejovým základem.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: pružnost a zralá pleť. Z vhodných možností má te",
+   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nKvětová voda BIO Heřmánek 50 ml\n\n50 ml\n\nPleť\nTonika a vody\nKaždodenní péče\nSuchá a napjatá\n179 Kč\nZobrazit produkt\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: každodenní péče. Z vhodných možností má tento produkt nižší cenu.\n\nPorovnat další vhodné možnosti (",
    "resultShown": true,
    "chips": [
     "Mám suchou pleť",
@@ -253,9 +251,8 @@
   "apiCalls": 20,
   "outboundBlocked": 0,
   "outboundHosts": [],
-  "served": 119,
+  "served": 123,
   "notFound": 135
  },
- "paidCalls": 0,
- "checkedContentIdenticalTo": "a9f8559"
+ "paidCalls": 0
 }

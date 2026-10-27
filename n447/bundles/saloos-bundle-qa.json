@@ -1,26 +1,14 @@
 {
  "slug": "saloos",
  "family": "cosmetics",
- "builtFrom": "ce15ca3",
+ "builtFrom": "7b6e7d0",
  "static": {
   "otherHosts": {
-   "catalogue-advisor.js": [
+   "n447/kozmetika/catalogue-advisor-n447.js": [
     "www.kvetu.cz"
    ]
   },
   "sharedCodeIdentifiers": {
-   "kvitok-direct-logo.css": [
-    "kvitok"
-   ],
-   "kvitok-brand-mark-preload.js": [
-    "kvitok"
-   ],
-   "n447/kozmetika/advisor-boot-n447.js": [
-    "kvitok"
-   ],
-   "nove-znacky.js": [
-    "cyprianus"
-   ],
    "skincare-targeted-hotfix.css": [
     "biofy",
     "facederma",
@@ -30,106 +18,6 @@
     "natureal",
     "ponio",
     "syncare"
-   ],
-   "skincare-final-fix.css": [
-    "barboralori",
-    "syncare"
-   ],
-   "skincare-final-brand-marks.js": [
-    "barboralori",
-    "cyprianus",
-    "facederma",
-    "modrapupava"
-   ],
-   "skincare-final-logo-qa.css": [
-    "bellmedi",
-    "biofy",
-    "cyprianus",
-    "facederma",
-    "fytopharma",
-    "kvitok",
-    "lavelin",
-    "modrapupava",
-    "natureal",
-    "panakeia",
-    "ponio",
-    "soaphoria",
-    "syncare"
-   ],
-   "cosmetics-polish.css": [
-    "anemone",
-    "bellcoria",
-    "mylo"
-   ],
-   "skincare-final-logo-qa.js": [
-    "cyprianus",
-    "fytopharma",
-    "kvitok",
-    "modrapupava",
-    "mylo",
-    "ponio"
-   ],
-   "skincare-review-fixes-20260914.css": [
-    "anemone",
-    "barboralori",
-    "bellcoria",
-    "biofy",
-    "cyprianus",
-    "mylo",
-    "panakeia",
-    "ponio"
-   ],
-   "skincare-refresh.css": [
-    "anemone",
-    "barboralori",
-    "bellcoria",
-    "concept",
-    "mylo",
-    "ponio"
-   ],
-   "skincare-avatar-round-fix.css": [
-    "syncare"
-   ],
-   "cosmetics.css": [
-    "anemone",
-    "bellcoria",
-    "biofy",
-    "mylo",
-    "ponio"
-   ],
-   "catalogue-advisor.css": [
-    "ponio"
-   ],
-   "index.html": [
-    "kvitok"
-   ],
-   "n447/kozmetika/cosmetics-n447.js": [
-    "modrapupava",
-    "mylo"
-   ],
-   "nove-znacky.css": [
-    "monlevur",
-    "mydlitto",
-    "pimpinella",
-    "yemna"
-   ],
-   "kvitok-logo-final-fix.js": [
-    "kvitok"
-   ],
-   "skincare-launcher-logo-fix.js": [
-    "cyprianus",
-    "syncare"
-   ],
-   "skincare-review-fixes-20260914.js": [
-    "cyprianus"
-   ],
-   "skincare-final-fix.js": [
-    "modrapupava",
-    "syncare"
-   ],
-   "launcher-finish.js": [
-    "almara",
-    "cyprianus"
    ],
    "skincare-final-brand-overrides.css": [
     "anemone",
@@ -158,12 +46,124 @@
     "puaree",
     "yemna"
    ],
+   "skincare-final-fix.css": [
+    "barboralori",
+    "syncare"
+   ],
+   "launcher-finish.js": [
+    "almara",
+    "cyprianus"
+   ],
+   "skincare-review-fixes-20260914.js": [
+    "cyprianus"
+   ],
    "advisor-quality.css": [
     "mylo"
+   ],
+   "skincare-avatar-round-fix.css": [
+    "syncare"
+   ],
+   "cosmetics-polish.css": [
+    "anemone",
+    "bellcoria",
+    "mylo"
+   ],
+   "cosmetics.css": [
+    "anemone",
+    "bellcoria",
+    "biofy",
+    "mylo",
+    "ponio"
+   ],
+   "skincare-launcher-logo-fix.js": [
+    "cyprianus",
+    "syncare"
+   ],
+   "n447/kozmetika/cosmetics-n447.js": [
+    "modrapupava",
+    "mylo"
+   ],
+   "skincare-final-logo-qa.css": [
+    "bellmedi",
+    "biofy",
+    "cyprianus",
+    "facederma",
+    "fytopharma",
+    "kvitok",
+    "lavelin",
+    "modrapupava",
+    "natureal",
+    "panakeia",
+    "ponio",
+    "soaphoria",
+    "syncare"
+   ],
+   "nove-znacky.js": [
+    "cyprianus"
+   ],
+   "skincare-final-fix.js": [
+    "modrapupava",
+    "syncare"
+   ],
+   "kvitok-logo-final-fix.js": [
+    "kvitok"
+   ],
+   "n447/kozmetika/advisor-boot-n447.js": [
+    "kvitok"
+   ],
+   "nove-znacky.css": [
+    "monlevur",
+    "mydlitto",
+    "pimpinella",
+    "yemna"
+   ],
+   "kvitok-brand-mark-preload.js": [
+    "kvitok"
+   ],
+   "catalogue-advisor.css": [
+    "ponio"
+   ],
+   "skincare-review-fixes-20260914.css": [
+    "anemone",
+    "barboralori",
+    "bellcoria",
+    "biofy",
+    "cyprianus",
+    "mylo",
+    "panakeia",
+    "ponio"
+   ],
+   "skincare-refresh.css": [
+    "anemone",
+    "barboralori",
+    "bellcoria",
+    "concept",
+    "mylo",
+    "ponio"
+   ],
+   "skincare-final-brand-marks.js": [
+    "barboralori",
+    "cyprianus",
+    "facederma",
+    "modrapupava"
+   ],
+   "skincare-final-logo-qa.js": [
+    "cyprianus",
+    "fytopharma",
+    "kvitok",
+    "modrapupava",
+    "mylo",
+    "ponio"
+   ],
+   "index.html": [
+    "kvitok"
+   ],
+   "kvitok-direct-logo.css": [
+    "kvitok"
    ]
   },
-  "files": 84,
-  "bytes": 3506140,
+  "files": 92,
+  "bytes": 3844203,
   "excludedForeignAssets": [
    "assets/catalogue/logos/modrapupava-symbol.png",
    "assets/cosmetics/barboralori-logo.png",
@@ -197,10 +197,9 @@
     "Pleť",
     "Suchá a napjatá",
     "Jemná péče",
-    "Oleje",
-    "Do 300 Kč"
+    "Oleje"
    ],
-   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nBio Sojový olej\n\n50 ml\n\nPleť\nOleje\nJemná péče\nSuchá a napjatá\ndo 300 Kč\n104 Kč\nZobrazit produkt ↗\n\nPéče s olejovým základem.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Z vhodných možností má tento produkt nižší cenu. Cena je v rámci vašeho limi",
+   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nBio Sojový olej\n\n50 ml\n\nPleť\nOleje\nJemná péče\nSuchá a napjatá\n104 Kč\nZobrazit produkt\n\nPéče s olejovým základem.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Z vhodných možností má tento produkt nižší cenu.\n\nPorovnat další vhodné možnosti (23)\nCo",
    "resultShown": true,
    "chips": [
     "Mám suchou pleť",
@@ -228,10 +227,9 @@
     "Pleť",
     "Suchá a napjatá",
     "Jemná péče",
-    "Oleje",
-    "Do 300 Kč"
+    "Oleje"
    ],
-   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nBio Sojový olej\n\n50 ml\n\nPleť\nOleje\nJemná péče\nSuchá a napjatá\ndo 300 Kč\n104 Kč\nZobrazit produkt ↗\n\nPéče s olejovým základem.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Z vhodných možností má tento produkt nižší cenu. Cena je v rámci vašeho limi",
+   "result": "‹ Zpět\nVýsledek\nVÁŠ VÝBĚR\nTohle vám doporučuji\n\nKonkrétní produkt podle vašich odpovědí.\n\nDOPORUČUJI VÁM\nBio Sojový olej\n\n50 ml\n\nPleť\nOleje\nJemná péče\nSuchá a napjatá\n104 Kč\nZobrazit produkt\n\nPéče s olejovým základem.\n\nProč právě tento\n\nVyhovuje vašemu požadavku na suchou pokožku. Zvolená priorita: jemná péče. Z vhodných možností má tento produkt nižší cenu.\n\nPorovnat další vhodné možnosti (23)\nCo",
    "resultShown": true,
    "chips": [
     "Mám suchou pleť",
@@ -253,9 +251,8 @@
   "apiCalls": 20,
   "outboundBlocked": 0,
   "outboundHosts": [],
-  "served": 119,
+  "served": 121,
   "notFound": 135
  },
- "paidCalls": 0,
- "checkedContentIdenticalTo": "a9f8559"
+ "paidCalls": 0
 }

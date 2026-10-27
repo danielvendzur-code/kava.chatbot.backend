@@ -1,17 +1,22 @@
 {
  "slug": "fathers",
  "family": "coffee",
- "builtFrom": "f78a77e",
+ "builtFrom": "7b6e7d0",
  "static": {
   "otherHosts": {
+   "assets/n447/tones/sources.json": [
+    "www.pexels.com"
+   ],
    "assets/n447/foto/sources.json": [
     "www.pexels.com"
    ]
   },
   "sharedCodeIdentifiers": {
-   "coffee-widget-polish.js": [
-    "kaffa",
-    "praziarnicka"
+   "coffee-header-cleanup.css": [
+    "casadelcaffe",
+    "coffeesheep",
+    "praziarnicka",
+    "zlatezrnko"
    ],
    "n447/coffee-owner-brand-n447.js": [
     "concept",
@@ -20,25 +25,23 @@
     "praziarnicka",
     "vitazov"
    ],
-   "coffee-widget-polish.css": [
-    "concept",
-    "kaffa"
+   "coffee-widget-polish.js": [
+    "kaffa",
+    "praziarnicka"
    ],
    "coffee-quality.js": [
     "mylo"
    ],
+   "coffee-widget-polish.css": [
+    "concept",
+    "kaffa"
+   ],
    "assets/n447/foto/sources.json": [
     "grain"
-   ],
-   "coffee-header-cleanup.css": [
-    "casadelcaffe",
-    "coffeesheep",
-    "praziarnicka",
-    "zlatezrnko"
    ]
   },
-  "files": 126,
-  "bytes": 4003834,
+  "files": 136,
+  "bytes": 4337088,
   "excludedForeignAssets": []
  },
  "http": {
@@ -55,7 +58,7 @@
  },
  "browser": {
   "390x844": {
-   "requests": 48,
+   "requests": 51,
    "hosts": [
     "127.0.0.1"
    ],
@@ -89,7 +92,7 @@
    "externalHosts": []
   },
   "1280x800": {
-   "requests": 48,
+   "requests": 51,
    "hosts": [
     "127.0.0.1"
    ],
@@ -128,7 +131,7 @@
   "apiCalls": 20,
   "outboundBlocked": 0,
   "outboundHosts": [],
-  "served": 99,
+  "served": 105,
   "notFound": 135
  },
  "paidCalls": 0

@@ -1,14 +1,13 @@
 {
- "builtFrom": "f78a77e",
+ "builtFrom": "7b6e7d0",
  "note": "Odovzdávacie balíky pre 10 firiem READY_FOR_REVIEW. Balík = vlastná stránka, dáta, API iba pre firmu a ich závislosti; zostaví sa príkazom node tools/n447-bundle.mjs --slug=<firma> --out=DIR (deterministicky, hashe v manifeste). Lokálne QA: python3 tools/n447_bundle_check.py. Nie je to produkčné nasadenie; projekty ani domény nevytvorené.",
  "excluded": {
-  "black": "BLOCKED_PRICES",
-  "nordbeans": "READY_FOR_REVIEW_PARTIAL (2 kávy blokované)"
+  "manufaktura": "samostatný projekt Codexu mojchatbot-manufaktura-447 – nemení sa"
  },
  "firms": {
   "verticcio": {
-   "files": 113,
-   "bytes": 4210750,
+   "files": 123,
+   "bytes": 4544004,
    "externalOwnShopHosts": [],
    "excludedForeignAssets": 0,
    "probes404": 133,
@@ -45,29 +44,18 @@
    },
    "outboundCalls": 0,
    "paidCalls": 0,
-   "fail": [],
-   "sharedCodeIdentifierResidue": [
-    "casadelcaffe",
-    "coffeesheep",
-    "concept",
-    "diamonds",
-    "kaffa",
-    "mylo",
-    "praziarnicka",
-    "vitazov",
-    "zlatezrnko"
-   ]
+   "fail": []
   },
   "rebelbean": {
-   "files": 103,
-   "bytes": 4019176,
+   "files": 113,
+   "bytes": 4352430,
    "externalOwnShopHosts": [],
    "excludedForeignAssets": 0,
    "probes404": 133,
    "otherDemoIdsRejected": 15,
    "browser": {
     "390x844": {
-     "steps": 5,
+     "steps": 4,
      "result": true,
      "chat": true,
      "chips": [
@@ -81,7 +69,7 @@
      "failedLocal": 0
     },
     "1280x800": {
-     "steps": 5,
+     "steps": 4,
      "result": true,
      "chat": true,
      "chips": [
@@ -97,22 +85,11 @@
    },
    "outboundCalls": 0,
    "paidCalls": 0,
-   "fail": [],
-   "sharedCodeIdentifierResidue": [
-    "casadelcaffe",
-    "coffeesheep",
-    "concept",
-    "diamonds",
-    "kaffa",
-    "mylo",
-    "praziarnicka",
-    "vitazov",
-    "zlatezrnko"
-   ]
+   "fail": []
   },
   "doubleshot": {
-   "files": 103,
-   "bytes": 3598002,
+   "files": 113,
+   "bytes": 3931256,
    "externalOwnShopHosts": [],
    "excludedForeignAssets": 0,
    "probes404": 133,
@@ -149,22 +126,11 @@
    },
    "outboundCalls": 0,
    "paidCalls": 0,
-   "fail": [],
-   "sharedCodeIdentifierResidue": [
-    "casadelcaffe",
-    "coffeesheep",
-    "concept",
-    "diamonds",
-    "kaffa",
-    "mylo",
-    "praziarnicka",
-    "vitazov",
-    "zlatezrnko"
-   ]
+   "fail": []
   },
   "fathers": {
-   "files": 126,
-   "bytes": 4003834,
+   "files": 136,
+   "bytes": 4337088,
    "externalOwnShopHosts": [],
    "excludedForeignAssets": 0,
    "probes404": 133,
@@ -201,22 +167,11 @@
    },
    "outboundCalls": 0,
    "paidCalls": 0,
-   "fail": [],
-   "sharedCodeIdentifierResidue": [
-    "casadelcaffe",
-    "coffeesheep",
-    "concept",
-    "diamonds",
-    "kaffa",
-    "mylo",
-    "praziarnicka",
-    "vitazov",
-    "zlatezrnko"
-   ]
+   "fail": []
   },
   "candycane": {
-   "files": 104,
-   "bytes": 3235836,
+   "files": 114,
+   "bytes": 3569090,
    "externalOwnShopHosts": [],
    "excludedForeignAssets": 0,
    "probes404": 133,
@@ -253,22 +208,11 @@
    },
    "outboundCalls": 0,
    "paidCalls": 0,
-   "fail": [],
-   "sharedCodeIdentifierResidue": [
-    "casadelcaffe",
-    "coffeesheep",
-    "concept",
-    "diamonds",
-    "kaffa",
-    "mylo",
-    "praziarnicka",
-    "vitazov",
-    "zlatezrnko"
-   ]
+   "fail": []
   },
   "9gramscoffee": {
-   "files": 122,
-   "bytes": 4283889,
+   "files": 132,
+   "bytes": 4617143,
    "externalOwnShopHosts": [],
    "excludedForeignAssets": 0,
    "probes404": 133,
@@ -305,22 +249,11 @@
    },
    "outboundCalls": 0,
    "paidCalls": 0,
-   "fail": [],
-   "sharedCodeIdentifierResidue": [
-    "casadelcaffe",
-    "coffeesheep",
-    "concept",
-    "diamonds",
-    "kaffa",
-    "mylo",
-    "praziarnicka",
-    "vitazov",
-    "zlatezrnko"
-   ]
+   "fail": []
   },
   "saloos": {
-   "files": 84,
-   "bytes": 3506140,
+   "files": 92,
+   "bytes": 3844203,
    "externalOwnShopHosts": [
     "www.saloos.cz"
    ],
@@ -329,7 +262,7 @@
    "otherDemoIdsRejected": 15,
    "browser": {
     "390x844": {
-     "steps": 5,
+     "steps": 4,
      "result": true,
      "chat": true,
      "chips": [
@@ -343,7 +276,7 @@
      "failedLocal": 0
     },
     "1280x800": {
-     "steps": 5,
+     "steps": 4,
      "result": true,
      "chat": true,
      "chips": [
@@ -359,41 +292,11 @@
    },
    "outboundCalls": 0,
    "paidCalls": 0,
-   "fail": [],
-   "sharedCodeIdentifierResidue": [
-    "almara",
-    "anemone",
-    "barboralori",
-    "bellcoria",
-    "bellmedi",
-    "biofy",
-    "concept",
-    "cyprianus",
-    "dulcia",
-    "facederma",
-    "fytopharma",
-    "kvitok",
-    "lavelin",
-    "liqoil",
-    "modrapupava",
-    "monlevur",
-    "mujluj",
-    "mydlitto",
-    "mylo",
-    "natureal",
-    "noili",
-    "panakeia",
-    "pimpinella",
-    "ponio",
-    "puaree",
-    "soaphoria",
-    "syncare",
-    "yemna"
-   ]
+   "fail": []
   },
   "renovality": {
-   "files": 84,
-   "bytes": 3336788,
+   "files": 92,
+   "bytes": 3674851,
    "externalOwnShopHosts": [
     "cdn.myshoptet.com"
    ],
@@ -402,7 +305,7 @@
    "otherDemoIdsRejected": 15,
    "browser": {
     "390x844": {
-     "steps": 5,
+     "steps": 4,
      "result": true,
      "chat": true,
      "chips": [
@@ -416,7 +319,7 @@
      "failedLocal": 0
     },
     "1280x800": {
-     "steps": 5,
+     "steps": 4,
      "result": true,
      "chat": true,
      "chips": [
@@ -432,41 +335,11 @@
    },
    "outboundCalls": 0,
    "paidCalls": 0,
-   "fail": [],
-   "sharedCodeIdentifierResidue": [
-    "almara",
-    "anemone",
-    "barboralori",
-    "bellcoria",
-    "bellmedi",
-    "biofy",
-    "concept",
-    "cyprianus",
-    "dulcia",
-    "facederma",
-    "fytopharma",
-    "kvitok",
-    "lavelin",
-    "liqoil",
-    "modrapupava",
-    "monlevur",
-    "mujluj",
-    "mydlitto",
-    "mylo",
-    "natureal",
-    "noili",
-    "panakeia",
-    "pimpinella",
-    "ponio",
-    "puaree",
-    "soaphoria",
-    "syncare",
-    "yemna"
-   ]
+   "fail": []
   },
   "nobilistilia": {
-   "files": 84,
-   "bytes": 3564852,
+   "files": 92,
+   "bytes": 3902915,
    "externalOwnShopHosts": [
     "www.nobilis.cz"
    ],
@@ -475,7 +348,7 @@
    "otherDemoIdsRejected": 15,
    "browser": {
     "390x844": {
-     "steps": 5,
+     "steps": 4,
      "result": true,
      "chat": true,
      "chips": [
@@ -489,7 +362,7 @@
      "failedLocal": 0
     },
     "1280x800": {
-     "steps": 5,
+     "steps": 4,
      "result": true,
      "chat": true,
      "chips": [
@@ -505,45 +378,54 @@
    },
    "outboundCalls": 0,
    "paidCalls": 0,
-   "fail": [],
-   "sharedCodeIdentifierResidue": [
-    "almara",
-    "anemone",
-    "barboralori",
-    "bellcoria",
-    "bellmedi",
-    "biofy",
-    "concept",
-    "cyprianus",
-    "dulcia",
-    "facederma",
-    "fytopharma",
-    "kvitok",
-    "lavelin",
-    "liqoil",
-    "modrapupava",
-    "monlevur",
-    "mujluj",
-    "mydlitto",
-    "mylo",
-    "natureal",
-    "noili",
-    "panakeia",
-    "pimpinella",
-    "ponio",
-    "puaree",
-    "soaphoria",
-    "syncare",
-    "yemna"
-   ]
+   "fail": []
   },
-  "manufaktura": {
-   "files": 84,
-   "bytes": 3296901,
-   "externalOwnShopHosts": [
-    "data.manufaktura.cz"
-   ],
-   "excludedForeignAssets": 5,
+  "black": {
+   "files": 117,
+   "bytes": 3959768,
+   "externalOwnShopHosts": [],
+   "excludedForeignAssets": 0,
+   "probes404": 133,
+   "otherDemoIdsRejected": 15,
+   "browser": {
+    "390x844": {
+     "steps": 4,
+     "result": true,
+     "chat": true,
+     "chips": [
+      "Káva do automatu",
+      "Káva na filter",
+      "Máte ovocnú kávu?",
+      "Máte kávu bez kofeínu?"
+     ],
+     "cta": "Zobraziť túto kávu",
+     "jsErrors": 0,
+     "failedLocal": 0
+    },
+    "1280x800": {
+     "steps": 4,
+     "result": true,
+     "chat": true,
+     "chips": [
+      "Káva do automatu",
+      "Káva na filter",
+      "Máte ovocnú kávu?",
+      "Máte kávu bez kofeínu?"
+     ],
+     "cta": "Zobraziť túto kávu",
+     "jsErrors": 0,
+     "failedLocal": 0
+    }
+   },
+   "outboundCalls": 0,
+   "paidCalls": 0,
+   "fail": []
+  },
+  "nordbeans": {
+   "files": 119,
+   "bytes": 3769341,
+   "externalOwnShopHosts": [],
+   "excludedForeignAssets": 0,
    "probes404": 133,
    "otherDemoIdsRejected": 15,
    "browser": {
@@ -552,12 +434,12 @@
      "result": true,
      "chat": true,
      "chips": [
-      "Mám suchou pleť",
-      "Péče o oční okolí",
-      "Mám citlivou pleť",
-      "Pleť se mi mastí"
+      "Káva do automatu",
+      "Káva na filtr",
+      "Máte ovocnou kávu?",
+      "Máte kávu bez kofeinu?"
      ],
-     "cta": null,
+     "cta": "Zobrazit tuto kávu",
      "jsErrors": 0,
      "failedLocal": 0
     },
@@ -566,49 +448,19 @@
      "result": true,
      "chat": true,
      "chips": [
-      "Mám suchou pleť",
-      "Péče o oční okolí",
-      "Mám citlivou pleť",
-      "Pleť se mi mastí"
+      "Káva do automatu",
+      "Káva na filtr",
+      "Máte ovocnou kávu?",
+      "Máte kávu bez kofeinu?"
      ],
-     "cta": null,
+     "cta": "Zobrazit tuto kávu",
      "jsErrors": 0,
      "failedLocal": 0
     }
    },
    "outboundCalls": 0,
    "paidCalls": 0,
-   "fail": [],
-   "sharedCodeIdentifierResidue": [
-    "almara",
-    "anemone",
-    "barboralori",
-    "bellcoria",
-    "bellmedi",
-    "biofy",
-    "concept",
-    "cyprianus",
-    "dulcia",
-    "facederma",
-    "fytopharma",
-    "kvitok",
-    "lavelin",
-    "liqoil",
-    "modrapupava",
-    "monlevur",
-    "mujluj",
-    "mydlitto",
-    "mylo",
-    "natureal",
-    "noili",
-    "panakeia",
-    "pimpinella",
-    "ponio",
-    "puaree",
-    "soaphoria",
-    "syncare",
-    "yemna"
-   ]
+   "fail": []
   }
  }
 }

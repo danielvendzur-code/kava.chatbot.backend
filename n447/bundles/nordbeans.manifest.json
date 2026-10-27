@@ -1,0 +1,675 @@
+{
+ "slug": "nordbeans",
+ "family": "coffee",
+ "builtFrom": "66c9266",
+ "entry": "nordbeans.html",
+ "files": [
+  {
+   "path": "api/ai-chat.js",
+   "bytes": 9365,
+   "sha256": "881bc961158a1ad528f8fe88d892ad9cc0348eb69cc2f7da56e71f2d77323dbc"
+  },
+  {
+   "path": "api/chat-447.js",
+   "bytes": 4436,
+   "sha256": "bedbbef5615d4140e995a4b866df57b67705ee84e82af7646ec8641acb4af189",
+   "generated": "zúžené pre firmu"
+  },
+  {
+   "path": "assets/fonts/dmsans-002a94d0.woff2",
+   "bytes": 36932,
+   "sha256": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543"
+  },
+  {
+   "path": "assets/fonts/dmsans-850928f5.woff2",
+   "bytes": 18228,
+   "sha256": "a5d38fe99f930275684999b462c7123faa063d9e44e73b4b241723d884aa0f49"
+  },
+  {
+   "path": "assets/fonts/fonts.css",
+   "bytes": 8298,
+   "sha256": "a54f2593d04e6d3405869026a33a850b72bf73427998e3d1477d12d3cbfc856d"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-0bc96cd0.woff2",
+   "bytes": 14888,
+   "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-116b2e58.woff2",
+   "bytes": 9352,
+   "sha256": "2b05a8695c7f9f4abd7178b279646a3b005a8ce57546bef6fd145f25d131e0aa"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-1b581b15.woff2",
+   "bytes": 15620,
+   "sha256": "0d1f0b8d0722224e32e9f28261bdc86c79115be73444ae5eceb73976a1bcdf83"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-758b9f95.woff2",
+   "bytes": 8460,
+   "sha256": "1d89462e86cb8e87e7e9d6f6635605bd7c3081baca6caaecee84916bf7b60edc"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-93cfae71.woff2",
+   "bytes": 13432,
+   "sha256": "6bb06407c97584b0867a959e05e8874693bfeb8c317de190811c51598f2d99ea"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-9e4ef71e.woff2",
+   "bytes": 7692,
+   "sha256": "83109cdd4f8665b475dfc11d61bd44da328bf7e6eab3d3953d39c49b1b9f6015"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-a7353317.woff2",
+   "bytes": 14328,
+   "sha256": "32057cf50dd14bdb21a2c93766c4a2c43e4abe688ea3922df3203cac7751a98b"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-baf63ee9.woff2",
+   "bytes": 6040,
+   "sha256": "781633d95de88040fb77141d1e65d928c87c0144691fbc74da5a64d137a7e910"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-da78b4b3.woff2",
+   "bytes": 6972,
+   "sha256": "3febe5c7f22e4b07b4552738673c3dbe8bced2dc5f48b866edf7ccd9552d109a"
+  },
+  {
+   "path": "assets/fonts/ibmplexmono-e8c66a4c.woff2",
+   "bytes": 6932,
+   "sha256": "51b74d53e106ba8a26dd33464b231a562069be2a234b923c115beb622e6f6bc6"
+  },
+  {
+   "path": "assets/jolka/fonts/inter-latin-ext.woff2",
+   "bytes": 85068,
+   "sha256": "34b9c504cab7a73e37b746343a449132e56cf7b5481af2cb81dc74dcff25c956"
+  },
+  {
+   "path": "assets/jolka/fonts/inter-latin.woff2",
+   "bytes": 48256,
+   "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+  },
+  {
+   "path": "assets/jolka/fonts/playfair-latin-ext.woff2",
+   "bytes": 21140,
+   "sha256": "42898ad49a6b23f32b109243e1df596edf831015ed685f429e4dafbb181d599d"
+  },
+  {
+   "path": "assets/jolka/fonts/playfair-latin.woff2",
+   "bytes": 38404,
+   "sha256": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2"
+  },
+  {
+   "path": "assets/n447/foto/roast-1.jpg",
+   "bytes": 50279,
+   "sha256": "ec8c8961c114b9a643d6f5814d5236d70d494f634d1ad6aa6fb20b74e5ffd01d"
+  },
+  {
+   "path": "assets/n447/foto/roast-2.jpg",
+   "bytes": 55926,
+   "sha256": "e2acb9da870a31dd5434e61ea0cea941b604ccb0c00f2452b8a6d44455280e06"
+  },
+  {
+   "path": "assets/n447/foto/roast-3.jpg",
+   "bytes": 62625,
+   "sha256": "d75a3b1cacd0ec022c0724e3cf7df176b66d476117f2c0b9f14dafa877c46aa8"
+  },
+  {
+   "path": "assets/n447/foto/roast-dark.jpg",
+   "bytes": 80304,
+   "sha256": "a833a6cea90e247ddfe6c209ce458e33d9fed331877b30c3f6cb023d7b75e4de"
+  },
+  {
+   "path": "assets/n447/foto/roast-light.jpg",
+   "bytes": 75666,
+   "sha256": "43da811d9c5fb8f10e8db9c06c97ab72361082a0339ab8877a4c37ffe56d6acd"
+  },
+  {
+   "path": "assets/n447/foto/roast-medium.jpg",
+   "bytes": 55050,
+   "sha256": "0d1d1dc39b09cc50bbe7bb83758b419d7b92a1f4e24ef94eb717c6f69b5b132f"
+  },
+  {
+   "path": "assets/n447/foto/sources.json",
+   "bytes": 1184,
+   "sha256": "3ce7db49514e9fc60e50c8e07502b64dacd9e4920bf392c686f04a42cc6b60f0"
+  },
+  {
+   "path": "assets/n447/ilustracie/blend-arabica.svg",
+   "bytes": 428,
+   "sha256": "4800aa834054225702ca49ffad879b0973db7c510337b32ddcc22b8e012bc3a9"
+  },
+  {
+   "path": "assets/n447/ilustracie/blend-robusta.svg",
+   "bytes": 636,
+   "sha256": "013ee90f393469637dabca85110c462de3fc3648ca831e08fbdba1adf45bdc14"
+  },
+  {
+   "path": "assets/n447/ilustracie/budget-1.svg",
+   "bytes": 617,
+   "sha256": "89ed7bac13d703c5d75f22e95d371cb571ae50d3f8fbe3e5e818ae14085f7f89"
+  },
+  {
+   "path": "assets/n447/ilustracie/budget-2.svg",
+   "bytes": 803,
+   "sha256": "c779f47a2b63e021334c43c9ba6585f0b9c11431aed7c59263acd361c6978f0c"
+  },
+  {
+   "path": "assets/n447/ilustracie/budget-any.svg",
+   "bytes": 936,
+   "sha256": "c501628d5feebd3d8a1340c49746640a9f14a984aaf64f5abd1ff6e38b161f8b"
+  },
+  {
+   "path": "assets/n447/ilustracie/drip-10.svg",
+   "bytes": 3119,
+   "sha256": "2ce1da7f8abdf03cfd0132cd35d885c59ce25cd85143fab21765b4d03b5d8349"
+  },
+  {
+   "path": "assets/n447/ilustracie/drip-5.svg",
+   "bytes": 1625,
+   "sha256": "d74ab6cf9575225dd4148f936f84323a7d7040ddedeefbd00c61392094e7e4e3"
+  },
+  {
+   "path": "assets/n447/ilustracie/drip-a.svg",
+   "bytes": 784,
+   "sha256": "0b8f0808a4944e6de503b0f1e2c423f3fba1c1ba2d45b4c4948490d10cec3783"
+  },
+  {
+   "path": "assets/n447/ilustracie/drip-b.svg",
+   "bytes": 784,
+   "sha256": "770932b77db1dd58819f502e2bcf116da80b81dc803dd9cd0305a9c6c2d0b2e7"
+  },
+  {
+   "path": "assets/n447/ilustracie/proc-honey.svg",
+   "bytes": 648,
+   "sha256": "cd8c72a585b1ca922a0c71af8c6433d40281565a8a7a8f514057b3af47cef185"
+  },
+  {
+   "path": "assets/n447/ilustracie/proc-mix.svg",
+   "bytes": 845,
+   "sha256": "4f566fec624e67db2fd6c7ab55810fd4ce2ebc6b6e55298f00cf611adb36b204"
+  },
+  {
+   "path": "assets/n447/ilustracie/proc-natural.svg",
+   "bytes": 1638,
+   "sha256": "a0391891868e36b681f32ba0d3d8f98ee388c041275681a42e9e2c7d5442ee5e"
+  },
+  {
+   "path": "assets/n447/ilustracie/proc-semi.svg",
+   "bytes": 751,
+   "sha256": "86f63146d94a56e558a0ae56a5c92f3bdb9204e90d4d5c20fd06fd3b28720b8e"
+  },
+  {
+   "path": "assets/n447/ilustracie/proc-washed.svg",
+   "bytes": 932,
+   "sha256": "160968a823bbd9abea5d9cf46af1f2b4d81e9a69cdaa9fa66d2b3682b1be6d65"
+  },
+  {
+   "path": "assets/n447/ilustracie/region-africa.svg",
+   "bytes": 1062,
+   "sha256": "7984902ee60849e7314ea0e21c2ab320b0c19a9666d22ce37e4cc37595043bc3"
+  },
+  {
+   "path": "assets/n447/ilustracie/region-americas.svg",
+   "bytes": 1062,
+   "sha256": "63b6c9c7b3b2b8884e41a6b3f6983d5d584bd4e9627bc4ce54d089c98b5dd464"
+  },
+  {
+   "path": "assets/n447/ilustracie/region-asia.svg",
+   "bytes": 1062,
+   "sha256": "ce9edf354c196527c24111f0b5eb276071b0719d80cf85dfd465df559f1eeb2c"
+  },
+  {
+   "path": "assets/n447/ilustracie/region-blend.svg",
+   "bytes": 1482,
+   "sha256": "fc42896c13dd9dc8c771ee841eded9429757614857db1ce4d6b49b44723f8987"
+  },
+  {
+   "path": "assets/n447/ilustracie/tool-aeropress.svg",
+   "bytes": 957,
+   "sha256": "e6cc95c5b4fab1d919556e95b7f2a9b891cac7a00c4829bf59ed8c1dfd796c8b"
+  },
+  {
+   "path": "assets/n447/ilustracie/tool-frenchpress.svg",
+   "bytes": 738,
+   "sha256": "96bafebd48afdfda3efb57d296717d7a05bf16d96a3c3cc33885ce68cc2e762d"
+  },
+  {
+   "path": "assets/n447/ilustracie/tool-v60.svg",
+   "bytes": 997,
+   "sha256": "0860eb963603ccaaf3554e4815b36b88c2b7cd4defc772654fe2b17310879a0b"
+  },
+  {
+   "path": "assets/n447/tones/apples.jpg",
+   "bytes": 36738,
+   "sha256": "f415535c0d92b396e7cb0ac28b84d21fd0194b0a74ac4963e3c7b1df2e5b37ae"
+  },
+  {
+   "path": "assets/n447/tones/cherries.jpg",
+   "bytes": 29309,
+   "sha256": "048ab8fc10a201269013b66ea3ab10e8baeb8580d2d2bdc955b0a962a1e71a61"
+  },
+  {
+   "path": "assets/n447/tones/dried-fruit.jpg",
+   "bytes": 40780,
+   "sha256": "8282400f7ef57f7c9862b4dbe6b1943fd15e1e9e98487156d00b7bf15e4467a8"
+  },
+  {
+   "path": "assets/n447/tones/flowers.jpg",
+   "bytes": 38184,
+   "sha256": "8f54973e0bed14dabc9c08f00d79420a27579dfa5712c98cc7044406457582a5"
+  },
+  {
+   "path": "assets/n447/tones/honey.jpg",
+   "bytes": 24786,
+   "sha256": "0205ad1e75140163ca75ce8173aa0a871e7863699498ec448ce3e7de453afaa6"
+  },
+  {
+   "path": "assets/n447/tones/sources.json",
+   "bytes": 1721,
+   "sha256": "a551858b1e2973c49597c184464d4344f5d8484f8609c884b3a9a977ed0ec2e0"
+  },
+  {
+   "path": "assets/n447/tones/spice.jpg",
+   "bytes": 31979,
+   "sha256": "ded23289a43d16db8ab4e4eac051ae4e5899bf44b83416c0ad25dad48cd6ff67"
+  },
+  {
+   "path": "assets/n447/tones/stone-fruit.jpg",
+   "bytes": 40608,
+   "sha256": "91f635fd068aa9da132e89632cbccbcb17c8a5ec45be0a9db49f88c400c839a8"
+  },
+  {
+   "path": "assets/n447/tones/tea.jpg",
+   "bytes": 51375,
+   "sha256": "eeb1d061495c368f0792cbc76baedf1d9adb33dea54d94c8d161525d9e337083"
+  },
+  {
+   "path": "assets/n447/tones/tropical.jpg",
+   "bytes": 34419,
+   "sha256": "428be55e4c63b9e8f6d78260371f83128fc17420f28d3f27687ab12917d2646b"
+  },
+  {
+   "path": "assets/nordbeans/bold-deer.jpg",
+   "bytes": 24568,
+   "sha256": "2ecee1543c907971c5f34309bd94a1ddf392af933eef4b374687f4ebe62eb014"
+  },
+  {
+   "path": "assets/nordbeans/brazilie.jpg",
+   "bytes": 30304,
+   "sha256": "e1536ec75c9523ebd32ab78184051cb25e1f4b3370050b1974320e0254a9a40f"
+  },
+  {
+   "path": "assets/nordbeans/buena-vista.jpg",
+   "bytes": 31945,
+   "sha256": "d2fd0d6f51890d6830d7f64a227cc693be1835b970a26f31919c1ca31b463c76"
+  },
+  {
+   "path": "assets/nordbeans/chelbesa-washed.jpg",
+   "bytes": 25901,
+   "sha256": "ef64b17f2faac22bec5d8e2e1599c8b3c7bb51ac466d948f6ca41b1f1028e945"
+  },
+  {
+   "path": "assets/nordbeans/el-cambalache-natural.jpg",
+   "bytes": 28737,
+   "sha256": "40ca4861549152dfbc1fa0fa605e38f5ea46c71d938925ca9d45794e3252a8a6"
+  },
+  {
+   "path": "assets/nordbeans/fearless-lynx-etiopie.jpg",
+   "bytes": 24042,
+   "sha256": "3ef1e4c7b14b4bad39e2b8227dbd6512fcdcfe7dd05861fa9a85f6c61fa985ec"
+  },
+  {
+   "path": "assets/nordbeans/guatemala-washed.jpg",
+   "bytes": 22975,
+   "sha256": "928d51bc45bc2a1fa6ed805f80570ccb6917b4de81c583c66d4b530810b8c039"
+  },
+  {
+   "path": "assets/nordbeans/honduras.jpg",
+   "bytes": 20514,
+   "sha256": "0174ec922a3fb3b065318110150e00e0a7fe47225368f8a18f6548fa8d11b559"
+  },
+  {
+   "path": "assets/nordbeans/horizont.jpg",
+   "bytes": 20854,
+   "sha256": "e4ce969533cac9f5a27031d8b8557a049fa6acf1e6891a8312a2ae9099c9e8de"
+  },
+  {
+   "path": "assets/nordbeans/house-blend.jpg",
+   "bytes": 31910,
+   "sha256": "0d05a07f9a27d1c3bf3eaf4d53d30fdcf6dfae4449fcc90fd60d219171809a2e"
+  },
+  {
+   "path": "assets/nordbeans/keramo-natural.jpg",
+   "bytes": 22912,
+   "sha256": "9dfbeedb900fb113e224a8f45e0b56c6ca794cf807af8faa7fa9cb5340414ba9"
+  },
+  {
+   "path": "assets/nordbeans/limited-nanolot-odako-natural.jpg",
+   "bytes": 25999,
+   "sha256": "7e43e39ce49c37c803f4c52705ff036722dea7b3e65b4707b0b2f73c6b31e3dd"
+  },
+  {
+   "path": "assets/nordbeans/limited-nanolot-rumu-damo-washed.jpg",
+   "bytes": 28228,
+   "sha256": "42682abc1d7c04fd0e03e04755cd66b6d068f2583da3338961d97a5ce3b7c78c"
+  },
+  {
+   "path": "assets/nordbeans/logo-light.png",
+   "bytes": 7099,
+   "sha256": "c804f697984a50005aafe5078fbc6cd4f517f23790fbd61881e7cce460e99170"
+  },
+  {
+   "path": "assets/nordbeans/logo.png",
+   "bytes": 8903,
+   "sha256": "f7e4369796be7124bf2bb3a938feca0423f62009a3ebaa878cdffee179d6f056"
+  },
+  {
+   "path": "assets/nordbeans/market-blend.jpg",
+   "bytes": 32095,
+   "sha256": "8ca6ed342465b6a1513742f29f1925cd8a14049532d3e56fba518ab225f74d28"
+  },
+  {
+   "path": "assets/nordbeans/pamet-naroda-sametova.jpg",
+   "bytes": 49170,
+   "sha256": "cade62b7ba7efdbd2b1900455a79881110e7dd8d13067688ea4b9308aaed7162"
+  },
+  {
+   "path": "assets/nordbeans/sleepy-sheep.jpg",
+   "bytes": 23012,
+   "sha256": "e221fa11211e421dfb15c74582a1e258551bed28654f7b55c8cd24ca5c1b0b4f"
+  },
+  {
+   "path": "assets/nordbeans/uganda.jpg",
+   "bytes": 22742,
+   "sha256": "7f643979538de5a09bd068a921ef909a4cbeac3c9cb93f3437bbc28afd4ef096"
+  },
+  {
+   "path": "assets/nordbeans/wild-fox-espresso-brazilie.jpg",
+   "bytes": 22096,
+   "sha256": "3bbe3bc3e0400d6c8f52b67e59855a104c4b23ddcd6bafa3f6defd3a7a9012da"
+  },
+  {
+   "path": "assets/scenes/coffee-acidity-bright.jpg",
+   "bytes": 97968,
+   "sha256": "2818b65da36f50ac8fe13f9e306f2b883e6cc21f3bc9c92dcb4617c1e88244b7"
+  },
+  {
+   "path": "assets/scenes/coffee-acidity-mild.jpg",
+   "bytes": 98184,
+   "sha256": "676769964db010ffb19dd31e42f6d0f1c55b27092be5e6c53a21a6ca6b87d026"
+  },
+  {
+   "path": "assets/scenes/coffee-automatic-brew.jpg",
+   "bytes": 111245,
+   "sha256": "e0740c701fbcbfc4b4718ae2597ccf7fcbff5bd08d881c7144b252940b5e5f5a"
+  },
+  {
+   "path": "assets/scenes/coffee-beans.jpg",
+   "bytes": 94453,
+   "sha256": "004314bf01a5c96faba4101cf07bdaeac33b0600dd100b3c48edec5821d16483"
+  },
+  {
+   "path": "assets/scenes/coffee-berries.jpg",
+   "bytes": 185367,
+   "sha256": "b3d79ce987b7e8c283dd475ffea9d8ff28d244a639b88cddbbd518643025208b"
+  },
+  {
+   "path": "assets/scenes/coffee-black.jpg",
+   "bytes": 109496,
+   "sha256": "fba946ecd63d2bb293f752f3dcdf48cd3404a8ca7504ec2bfe322cb57adc4922"
+  },
+  {
+   "path": "assets/scenes/coffee-both.jpg",
+   "bytes": 63281,
+   "sha256": "93d3bb17d7962d859fa1e076869521fe8103d0a2256227970c50ec7f3e3f3d0b"
+  },
+  {
+   "path": "assets/scenes/coffee-caramel.jpg",
+   "bytes": 71612,
+   "sha256": "cdf3db42ea78b937bfc6800133e2b02c1764e3895bdd27348e7db6583b6ce2f1"
+  },
+  {
+   "path": "assets/scenes/coffee-chocolate.jpg",
+   "bytes": 219200,
+   "sha256": "ad74a116af88fc5be6b08d73748061588fde44926272b9f24605709488efc910"
+  },
+  {
+   "path": "assets/scenes/coffee-decaf-cup.jpg",
+   "bytes": 61130,
+   "sha256": "40cd67b2b0312c8bb26443118d90792b39368f0c11afd813e4fc454258ae5688"
+  },
+  {
+   "path": "assets/scenes/coffee-espresso.jpg",
+   "bytes": 182761,
+   "sha256": "94962146411f64cc6d73cbd09fb64a2bed5b6153a2a73baee1e84164e0a278f7"
+  },
+  {
+   "path": "assets/scenes/coffee-explore.jpg",
+   "bytes": 24368,
+   "sha256": "d361a32ac8b70b238fa27d8a6147f0b61ffcb3d2af1e78b330b8bcc8ee6b9c4f"
+  },
+  {
+   "path": "assets/scenes/coffee-filter.jpg",
+   "bytes": 64272,
+   "sha256": "e8e07f29ef697f86827f6bbfb673a1b57b53ea5db4ecb611d226a682728d67ff"
+  },
+  {
+   "path": "assets/scenes/coffee-milk.jpg",
+   "bytes": 92166,
+   "sha256": "c296115f4f7f8d87fa20a0d159d1b64146d7e2bee9693177f75067ae44f226f5"
+  },
+  {
+   "path": "assets/scenes/coffee-moka.jpg",
+   "bytes": 131413,
+   "sha256": "e98104bed5e2420f88d1c55eecf493fa7cc4802ba74fcef0482fd0fcda49c799"
+  },
+  {
+   "path": "assets/scenes/coffee-nuts.jpg",
+   "bytes": 158529,
+   "sha256": "1295efa1e9f490c80930066b980c735fb98a346447538283cde0765ec4666687"
+  },
+  {
+   "path": "coffee-header-cleanup.css",
+   "bytes": 7079,
+   "sha256": "133b15bd6e8f391c537e9221e60a85712975bedb9af27a89f4b3d2b2ee412bba"
+  },
+  {
+   "path": "coffee-jolka-shell.css",
+   "bytes": 10420,
+   "sha256": "63283e6276c14d8ff08395f53ff1f70fa733ce7a021e2ccbe4804a1751fc7089"
+  },
+  {
+   "path": "coffee-local-api.js",
+   "bytes": 307,
+   "sha256": "514ff4c87c14fcf3d437ca7e33b6fdaf06e9166e7ccd9271a8f1d25b1f8888e1"
+  },
+  {
+   "path": "coffee-offer.js",
+   "bytes": 2147,
+   "sha256": "97c79fdfea66a30d78bd3605672b28f148731f300183698e444727b94088d25e"
+  },
+  {
+   "path": "coffee-owner-brand.css",
+   "bytes": 13446,
+   "sha256": "8f6f53f589e510f0cfbd9f2afc8ec70b7b81217fc9a21fb4db13575b7657150d"
+  },
+  {
+   "path": "coffee-owner-sales-polish.css",
+   "bytes": 87,
+   "sha256": "aa7be8797a4e0b5bed8f034bc821f591cbb93a1ac9f287793ffc4f51dce17594"
+  },
+  {
+   "path": "coffee-quality-current.css",
+   "bytes": 20778,
+   "sha256": "b7578d0a66434f46d580a3d21cffb2a87e84a0c30400c35ef3174c8f9810fba7"
+  },
+  {
+   "path": "coffee-quality.js",
+   "bytes": 9987,
+   "sha256": "b119dea662a9fb565b3e25d6b0704831b10e6fb4812b59c1f6802adbdbcef657"
+  },
+  {
+   "path": "coffee-refresh.css",
+   "bytes": 32503,
+   "sha256": "a890d5d59d33325dab77cf114f718a1d4faff792e3fdc38a0ecf05b971c3aad2"
+  },
+  {
+   "path": "coffee-widget-polish.css",
+   "bytes": 13308,
+   "sha256": "12086367475ea976970d9ada53a4368f49a872a23d809241a6e95c0938cf8741"
+  },
+  {
+   "path": "coffee-widget-polish.js",
+   "bytes": 11764,
+   "sha256": "960a2723c5bd136ef015517a69bb66429bd4ee3ecc9284b5ad3f1ee753e3d447"
+  },
+  {
+   "path": "demo-motion.css",
+   "bytes": 1650,
+   "sha256": "f73e175d408e00e7ba701b4aeb32cbb8aa4c6bc2917f61d1a33e18125dcf2eee"
+  },
+  {
+   "path": "jolka/jolka.css",
+   "bytes": 37880,
+   "sha256": "a335304d1f437880087d2f712c63c30a11e8749958dada227778c7fb12a2e253"
+  },
+  {
+   "path": "lang-cs.js",
+   "bytes": 47946,
+   "sha256": "9efb2cb687e433e67966224e57fb80ac472cf792113f281e680e738bbb9434f9"
+  },
+  {
+   "path": "n447/coffee-jolka-app-n447.js",
+   "bytes": 67062,
+   "sha256": "22b145e7860bc6b518ad18875bc958d04f146f1c9cb09edf66d963a2a5b35cd1"
+  },
+  {
+   "path": "n447/coffee-owner-brand-n447.js",
+   "bytes": 17303,
+   "sha256": "df43e805a7e119363698bfb8214568a9cdbd0c44ce39abb2772a2f1d8bafdc17"
+  },
+  {
+   "path": "n447/data/nordbeans.js",
+   "bytes": 35038,
+   "sha256": "2770fe8db222337f72a9920b99bf389566c137884d831e52d2a593e875660cab"
+  },
+  {
+   "path": "n447/engine.js",
+   "bytes": 39709,
+   "sha256": "b25cd42275e593e5789a048b920f08ed2602b268f1d47463af4c8f6b41ee76b5"
+  },
+  {
+   "path": "n447/n447-ui-fixes.css",
+   "bytes": 1559,
+   "sha256": "273a5f929db47818514b15e5a9df2e4a8f5b336c73f0725a36fee2326d6b7ba6"
+  },
+  {
+   "path": "n447/nordbeans-jolka-theme.css",
+   "bytes": 771,
+   "sha256": "891f1b1cbb42854c81dcd55156afbda59a19da2028f9ac447f2eefa97280683a"
+  },
+  {
+   "path": "n447/owner-more-info-n447.js",
+   "bytes": 6278,
+   "sha256": "1692538e1e00286712a9a057a9c64b1ae66126f836e8bfabaebc2a4d0fa1b95e"
+  },
+  {
+   "path": "n447/reply.js",
+   "bytes": 10806,
+   "sha256": "50c0fcaf68be253996a1d9820658cb6aced71693bb4d7b1c5622f20e0cf1347b"
+  },
+  {
+   "path": "nordbeans.html",
+   "bytes": 2184,
+   "sha256": "442186c7e6f7bea22b4297425fe8e379f5c03d72ce9de173d9f14cfb012119d9"
+  },
+  {
+   "path": "package.json",
+   "bytes": 72,
+   "sha256": "3a3b772610f829161652a736eb274953e9eb492e4921193feaab9bed494115e3",
+   "generated": "zúžené pre firmu"
+  },
+  {
+   "path": "vercel.json",
+   "bytes": 940,
+   "sha256": "911b090c20bb5b9eab31a9c2cb2ab8b8ac6e4c58c9cba22aefa10ab9526e5858",
+   "generated": "zúžené pre firmu"
+  },
+  {
+   "path": "index.html",
+   "bytes": 2184,
+   "sha256": "442186c7e6f7bea22b4297425fe8e379f5c03d72ce9de173d9f14cfb012119d9",
+   "copyOf": "nordbeans.html"
+  }
+ ],
+ "externalOwnShop": [
+  "mojchatbot.sk"
+ ],
+ "note": "Balík obsahuje iba stránku firmy, jej dáta, API pre túto firmu a ich závislosti. Zdieľané viacznačkové dáta sú zúžené. Bez .env, poverení, registra a e-mailových konceptov.",
+ "externalCount": 1,
+ "missing": [],
+ "excludedForeignAssets": [],
+ "foreignTokens": [
+  "9gramscoffee",
+  "ajvencoffee",
+  "almara",
+  "anemone",
+  "barboralori",
+  "becafe",
+  "bellcoria",
+  "bellmedi",
+  "biofy",
+  "candycane",
+  "casadelcaffe",
+  "coffeein",
+  "coffeesheep",
+  "coffeeveronia",
+  "concept",
+  "cyprianus",
+  "diamonds",
+  "donfranko",
+  "doubleshot",
+  "dulcia",
+  "ebenica",
+  "facederma",
+  "fathers",
+  "fytopharma",
+  "goriffee",
+  "grain",
+  "grandroastery",
+  "kaffa",
+  "kavavra",
+  "kavoholik",
+  "kvitok",
+  "lavelin",
+  "liqoil",
+  "manufaktura",
+  "modrapupava",
+  "monlevur",
+  "mujluj",
+  "mydlitto",
+  "mylo",
+  "natureal",
+  "nobilistilia",
+  "noili",
+  "panakeia",
+  "pimpinella",
+  "ponio",
+  "praziarnicka",
+  "puaree",
+  "readyafter",
+  "rebelbean",
+  "renovality",
+  "saloos",
+  "simplecoffee",
+  "soaphoria",
+  "syncare",
+  "verticcio",
+  "vitazov",
+  "yemna",
+  "zlatezrnko"
+ ],
+ "totalBytes": 3769341
+}

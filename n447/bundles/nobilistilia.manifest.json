@@ -1,14 +1,9 @@
 {
  "slug": "nobilistilia",
  "family": "cosmetics",
- "builtFrom": "a9f8559",
+ "builtFrom": "66c9266",
  "entry": "nobilistilia.html",
  "files": [
-  {
-   "path": "advisor-core.js",
-   "bytes": 15173,
-   "sha256": "0732fe5e00ed69239fb2d00560ee8990b0c6de1429f2574be1e5ed158f7fa4f8"
-  },
   {
    "path": "advisor-quality.css",
    "bytes": 45092,
@@ -31,8 +26,8 @@
   },
   {
    "path": "api/cosmetics-chat-447.js",
-   "bytes": 3419,
-   "sha256": "570be1870706560013733cc2de494b84d01e36a9bd695c65870e209dcd710383",
+   "bytes": 3439,
+   "sha256": "c7b4321d202c7eb231009fba2195dfffda78c22db86652d40c58f731dcbe51d6",
    "generated": "zúžené pre firmu"
   },
   {
@@ -141,6 +136,36 @@
    "sha256": "399730be770bab52616132c80066005bf269e4deb17b615e17d69dd69132bb65"
   },
   {
+   "path": "assets/n447/scenes/body-lotion.jpg",
+   "bytes": 37350,
+   "sha256": "ecf2749190b40d73eb09d3257124f5126ba1d74e226b1ac26d21a5787ad357eb"
+  },
+  {
+   "path": "assets/n447/scenes/calm-chamomile.jpg",
+   "bytes": 19651,
+   "sha256": "92a9adf76003403b3b44729bd448f18bd2ec426f7cba690e07d55f0721c41fb2"
+  },
+  {
+   "path": "assets/n447/scenes/feet-care.jpg",
+   "bytes": 33898,
+   "sha256": "d3f9aca62a2bec2f5834d971bf60557276899c47ff98ee771003e123599785da"
+  },
+  {
+   "path": "assets/n447/scenes/hands-care.jpg",
+   "bytes": 30710,
+   "sha256": "b885ff760414d74787a974c3a288d03891daa6a2631e9fd25f121ac51cf7f4ea"
+  },
+  {
+   "path": "assets/n447/scenes/skin-mask.jpg",
+   "bytes": 33515,
+   "sha256": "ad824cfbd3301e9ea28848c1de939cb40d11a72e0d33b038470f71952fa55ccf"
+  },
+  {
+   "path": "assets/n447/scenes/skin-peeling.jpg",
+   "bytes": 30441,
+   "sha256": "6c253012e26d7a59b7c12f05d2b2a0628d3a943bc74e502c839bd8560601b93a"
+  },
+  {
    "path": "assets/quality-product-placeholder.svg",
    "bytes": 270,
    "sha256": "692d449f48b2c6e7d7588a47fe8a3895b826b702d67c96aa8885ff292b98d2e9"
@@ -149,6 +174,11 @@
    "path": "assets/scenes/beard-care.jpg",
    "bytes": 227199,
    "sha256": "b9cb59442b5c2a3dee192d8aef3f1f7e63adc70539fd49050b3a4d6be8bf8598"
+  },
+  {
+   "path": "assets/scenes/cotton-care.jpg",
+   "bytes": 84345,
+   "sha256": "ccf205b38f8f0afd054bb8a5592ecbaa12e440a06ce0c0312b28168eb8a39cc2"
   },
   {
    "path": "assets/scenes/cream-texture.jpg",
@@ -164,6 +194,11 @@
    "path": "assets/scenes/face-clean-pad.jpg",
    "bytes": 86036,
    "sha256": "7826d2667b903dd7984c6445059b627c19001f20ab51ffd8ce2f05ef6f14cbfc"
+  },
+  {
+   "path": "assets/scenes/face-water.jpg",
+   "bytes": 64887,
+   "sha256": "1b36929d88c2ff0a4e101087697d6b5e668f9dbcc5e83e5f2e7331034412ed5e"
   },
   {
    "path": "assets/scenes/gift-care.jpg",
@@ -225,11 +260,6 @@
    "path": "catalogue-advisor.css",
    "bytes": 6560,
    "sha256": "d85f3b8b9aab63dc38cb12a12d2fcd5ba43d8f586bfc833a1d8399cc7fc4bd13"
-  },
-  {
-   "path": "catalogue-advisor.js",
-   "bytes": 32366,
-   "sha256": "05505c67c0605fc278fb10e78d1c3b0557066001b152f7deb6f4a50f9d9b5f23"
   },
   {
    "path": "catalogue-config.js",
@@ -300,13 +330,23 @@
   },
   {
    "path": "n447/kozmetika/advisor-boot-n447.js",
-   "bytes": 1794,
-   "sha256": "7e4ff721a32df17c6b5283deaa1eae8a5a1030b67bd91301b08bff88b6fff81a"
+   "bytes": 1812,
+   "sha256": "dab3f5043c2b3300b6d624a38eba663badcf7ff7e9508cd0452811984a21a18f"
+  },
+  {
+   "path": "n447/kozmetika/advisor-core-n447.js",
+   "bytes": 17883,
+   "sha256": "f65d20a722ac2c27d5d34f9f5a4b8e94e4a542f4e8a1ddae60a2f88546ec3fe0"
   },
   {
    "path": "n447/kozmetika/brands/nobilistilia.js",
    "bytes": 149078,
    "sha256": "2286842f817b14d784fb274a4df05d9e96a991e4b88bde1e9d4f97f2111e6d3b"
+  },
+  {
+   "path": "n447/kozmetika/catalogue-advisor-n447.js",
+   "bytes": 32980,
+   "sha256": "3afab3920ab0b24b1eed68d7643f1609eceb4ffd81f5d0f00babb4a58497bd3e"
   },
   {
    "path": "n447/kozmetika/catalogues/nobilistilia.js",
@@ -315,8 +355,8 @@
   },
   {
    "path": "n447/kozmetika/cosmetics-n447.js",
-   "bytes": 31538,
-   "sha256": "188cb6c79bf18fddadad48df0c69d7f9ef116d09d679c157d526ee1913420c3c"
+   "bytes": 31442,
+   "sha256": "0817d86fbd1f43625dd3548b2a3075e4e99b757af20c3cec4d8cf37745197496"
   },
   {
    "path": "n447/owner-more-info-n447.js",
@@ -506,5 +546,5 @@
   "yemna",
   "zlatezrnko"
  ],
- "totalBytes": 3564852
+ "totalBytes": 3902915
 }

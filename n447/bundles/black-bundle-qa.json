@@ -1,0 +1,136 @@
+{
+ "slug": "black",
+ "family": "coffee",
+ "builtFrom": "7b6e7d0",
+ "static": {
+  "otherHosts": {
+   "assets/n447/tones/sources.json": [
+    "www.pexels.com"
+   ],
+   "assets/n447/foto/sources.json": [
+    "www.pexels.com"
+   ]
+  },
+  "sharedCodeIdentifiers": {
+   "coffee-quality.js": [
+    "mylo"
+   ],
+   "coffee-widget-polish.css": [
+    "concept",
+    "kaffa"
+   ],
+   "coffee-header-cleanup.css": [
+    "casadelcaffe",
+    "coffeesheep",
+    "praziarnicka",
+    "zlatezrnko"
+   ],
+   "n447/coffee-owner-brand-n447.js": [
+    "concept",
+    "diamonds",
+    "kaffa",
+    "praziarnicka",
+    "vitazov"
+   ],
+   "coffee-widget-polish.js": [
+    "kaffa",
+    "praziarnicka"
+   ],
+   "assets/n447/foto/sources.json": [
+    "grain"
+   ]
+  },
+  "files": 117,
+  "bytes": 3959768,
+  "excludedForeignAssets": []
+ },
+ "http": {
+  "/": 200,
+  "/black.html": 200,
+  "probes": 133,
+  "notBlocked": {},
+  "POST /api/chat": 404,
+  "POST /api/cosmetics-chat": 404,
+  "POST /api/ai-chat": 404,
+  "POST /api/cosmetics-chat-447": 404,
+  "otherDemoIdsRejected": 15,
+  "ownApi": 200
+ },
+ "browser": {
+  "390x844": {
+   "requests": 44,
+   "hosts": [
+    "127.0.0.1"
+   ],
+   "failed": [],
+   "errors": [],
+   "trail": [
+    "Kávovar alebo automat",
+    "S kofeínom",
+    "Čokoládová a karamelová",
+    "horká čokoláda · lesné ovocie"
+   ],
+   "resultShown": true,
+   "result": "blend • black sheep\n\nBrazília (Cerrado Mineiro) & Etiópia (Guji)\n\nOrientačná cena; presnú cenu balenia ukáže e-shop po výbere\nod 10,50 €\norientačne\nNa espresso aj do automatuPražiareň ju ponúka v espresso pražení.\nČokoládová a karamelováV chuti: horká čokoláda, lesné ovocie, sušené kôstkové ovocie.\n\nSladký a plný blend pre tých, ktorí sú zvyknutí skôr na tmavšie kávy; spája sladkosť brazílskej káv",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.black.sk/sk/blend-black-sheep",
+    "text": "Zobraziť túto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filter",
+    "Máte ovocnú kávu?",
+    "Máte kávu bez kofeínu?"
+   ],
+   "chatReply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nblend • black sheep — orientačne od 10,50 €\nPozrieť v e-shope ↗\n(V chuti: horká čokoláda, lesné ovocie, sušené kôstkové ovocie.)\nbrazil • doce citrus — 200 g za 10,50 €\nPozrieť v e-shope ↗\n(V chuti: marhuľa, hrozienka, karamel, hork",
+   "foreignInText": [],
+   "oldOffer": false,
+   "has447": true,
+   "externalHosts": []
+  },
+  "1280x800": {
+   "requests": 44,
+   "hosts": [
+    "127.0.0.1"
+   ],
+   "failed": [],
+   "errors": [],
+   "trail": [
+    "Kávovar alebo automat",
+    "S kofeínom",
+    "Čokoládová a karamelová",
+    "horká čokoláda · lesné ovocie"
+   ],
+   "resultShown": true,
+   "result": "blend • black sheep\n\nBrazília (Cerrado Mineiro) & Etiópia (Guji)\n\nOrientačná cena; presnú cenu balenia ukáže e-shop po výbere\nod 10,50 €\norientačne\nNa espresso aj do automatuPražiareň ju ponúka v espresso pražení.\nČokoládová a karamelováV chuti: horká čokoláda, lesné ovocie, sušené kôstkové ovocie.\n\nSladký a plný blend pre tých, ktorí sú zvyknutí skôr na tmavšie kávy; spája sladkosť brazílskej káv",
+   "cta": {
+    "tag": "A",
+    "target": null,
+    "href": "https://www.black.sk/sk/blend-black-sheep",
+    "text": "Zobraziť túto kávu"
+   },
+   "chips": [
+    "Káva do automatu",
+    "Káva na filter",
+    "Máte ovocnú kávu?",
+    "Máte kávu bez kofeínu?"
+   ],
+   "chatReply": "Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\nblend • black sheep — orientačne od 10,50 €\nPozrieť v e-shope ↗\n(V chuti: horká čokoláda, lesné ovocie, sušené kôstkové ovocie.)\nbrazil • doce citrus — 200 g za 10,50 €\nPozrieť v e-shope ↗\n(V chuti: marhuľa, hrozienka, karamel, hork",
+   "foreignInText": [],
+   "oldOffer": false,
+   "has447": true,
+   "externalHosts": []
+  }
+ },
+ "fail": [],
+ "server": {
+  "apiCalls": 20,
+  "outboundBlocked": 0,
+  "outboundHosts": [],
+  "served": 91,
+  "notFound": 135
+ },
+ "paidCalls": 0
+}

@@ -1,7 +1,7 @@
 {
  "slug": "fathers",
  "family": "coffee",
- "builtFrom": "f78a77e",
+ "builtFrom": "66c9266",
  "entry": "fathers.html",
  "files": [
   {
@@ -426,6 +426,56 @@
    "sha256": "0860eb963603ccaaf3554e4815b36b88c2b7cd4defc772654fe2b17310879a0b"
   },
   {
+   "path": "assets/n447/tones/apples.jpg",
+   "bytes": 36738,
+   "sha256": "f415535c0d92b396e7cb0ac28b84d21fd0194b0a74ac4963e3c7b1df2e5b37ae"
+  },
+  {
+   "path": "assets/n447/tones/cherries.jpg",
+   "bytes": 29309,
+   "sha256": "048ab8fc10a201269013b66ea3ab10e8baeb8580d2d2bdc955b0a962a1e71a61"
+  },
+  {
+   "path": "assets/n447/tones/dried-fruit.jpg",
+   "bytes": 40780,
+   "sha256": "8282400f7ef57f7c9862b4dbe6b1943fd15e1e9e98487156d00b7bf15e4467a8"
+  },
+  {
+   "path": "assets/n447/tones/flowers.jpg",
+   "bytes": 38184,
+   "sha256": "8f54973e0bed14dabc9c08f00d79420a27579dfa5712c98cc7044406457582a5"
+  },
+  {
+   "path": "assets/n447/tones/honey.jpg",
+   "bytes": 24786,
+   "sha256": "0205ad1e75140163ca75ce8173aa0a871e7863699498ec448ce3e7de453afaa6"
+  },
+  {
+   "path": "assets/n447/tones/sources.json",
+   "bytes": 1721,
+   "sha256": "a551858b1e2973c49597c184464d4344f5d8484f8609c884b3a9a977ed0ec2e0"
+  },
+  {
+   "path": "assets/n447/tones/spice.jpg",
+   "bytes": 31979,
+   "sha256": "ded23289a43d16db8ab4e4eac051ae4e5899bf44b83416c0ad25dad48cd6ff67"
+  },
+  {
+   "path": "assets/n447/tones/stone-fruit.jpg",
+   "bytes": 40608,
+   "sha256": "91f635fd068aa9da132e89632cbccbcb17c8a5ec45be0a9db49f88c400c839a8"
+  },
+  {
+   "path": "assets/n447/tones/tea.jpg",
+   "bytes": 51375,
+   "sha256": "eeb1d061495c368f0792cbc76baedf1d9adb33dea54d94c8d161525d9e337083"
+  },
+  {
+   "path": "assets/n447/tones/tropical.jpg",
+   "bytes": 34419,
+   "sha256": "428be55e4c63b9e8f6d78260371f83128fc17420f28d3f27687ab12917d2646b"
+  },
+  {
    "path": "assets/scenes/coffee-acidity-bright.jpg",
    "bytes": 97968,
    "sha256": "2818b65da36f50ac8fe13f9e306f2b883e6cc21f3bc9c92dcb4617c1e88244b7"
@@ -582,8 +632,8 @@
   },
   {
    "path": "n447/coffee-jolka-app-n447.js",
-   "bytes": 66648,
-   "sha256": "db9586e5b0977b7b6b43f351a8bf48d1c9187c3541cddbf577b0bc067544f23d"
+   "bytes": 67062,
+   "sha256": "22b145e7860bc6b518ad18875bc958d04f146f1c9cb09edf66d963a2a5b35cd1"
   },
   {
    "path": "n447/coffee-owner-brand-n447.js",
@@ -597,8 +647,8 @@
   },
   {
    "path": "n447/engine.js",
-   "bytes": 36768,
-   "sha256": "80d94e6da936e1de199532bbd5b64b6c379fd9042f74ffc3a8e4c98a436f6a64"
+   "bytes": 39709,
+   "sha256": "b25cd42275e593e5789a048b920f08ed2602b268f1d47463af4c8f6b41ee76b5"
   },
   {
    "path": "n447/fathers-jolka-theme.css",
@@ -706,5 +756,5 @@
   "yemna",
   "zlatezrnko"
  ],
- "totalBytes": 4003834
+ "totalBytes": 4337088
 }
