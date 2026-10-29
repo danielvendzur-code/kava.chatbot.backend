@@ -40,6 +40,8 @@
       if(/merunk|marhul|apricot/.test(text))f.ingredient='apricot';
       else if(/hroznov|grape.?seed/.test(text))f.ingredient='grapeseed';
     }
+    /* k2: keď firma produkt rozlišuje vlastným „focus“, automaticky odvodené detaily (zložka, oblasť…) by pýtali tú istú otázku druhýkrát. */
+    if(p.facets?.focus)for(const k of ['ingredient','area','hairFocus','careVariant','time','size'])delete f[k];
     if(p.facets)for(const [k,v] of Object.entries(p.facets))if(v!=null&&v!=='')f[k]=v;
     const size=!p.source?.priceFrom&&String(p.volume||p.variantLabel||p.name).match(/\b(\d+(?:[.,]\d+)?)\s*(ml|g|kg|l)\b/i);if(size)f.size=size[1].replace(',','.')+' '+size[2].toLowerCase();
     return f;

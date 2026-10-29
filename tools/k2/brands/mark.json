@@ -1,0 +1,559 @@
+{
+ "slug": "mark",
+ "lang": "sk",
+ "name": "MARK face & body",
+ "domain": "markscrub.com",
+ "website": "https://www.markscrub.com/",
+ "shopUrl": "https://www.markscrub.com/collections/all",
+ "theme": {
+  "brand": "#24120d",
+  "accent": "#e88c8c",
+  "soft": "#f3eeea",
+  "paper": "#ffffff",
+  "ink": "#202223",
+  "line": "#e8dcd0"
+ },
+ "logo": "/assets/n447-kozmetika2/mark/logo.png",
+ "heroProductId": "mark-mark-coconut",
+ "contact": "info@markscrub.com",
+ "contactSource": "https://www.markscrub.com/ (päta stránky)",
+ "ownerNote": "Kávové a cukrové peelingy, pleťové rady podľa typu pleti, vlasy aj sety — výber podľa toho, čo potrebujete.",
+ "benefit": [
+  "Výber z konkrétnych produktov a setov",
+  "Zloženie setov a pôvodné ceny z e-shopu",
+  "Otázky aj mimo otváracích hodín"
+ ],
+ "noProfileGoal": true,
+ "chatTags": {
+  "skin": {
+   "sensitive": [
+    "sensitive"
+   ],
+   "mature": [
+    "mature"
+   ],
+   "normal": [
+    "balanced"
+   ]
+  },
+  "hairNeed": {
+   "oily": [
+    "oily"
+   ],
+   "dry": [
+    "dry"
+   ]
+  }
+ },
+ "chips": [
+  "Mám citlivú pleť",
+  "Vypadávajú mi vlasy",
+  "Mám mastné vlasy",
+  "Aké máte sady?"
+ ],
+ "labels": {
+  "face": "Pleť",
+  "body": "Telo",
+  "hair": "Vlasy",
+  "men": "Pre mužov",
+  "lips": "Pery",
+  "skin": "Typ pleti",
+  "hairNeed": "Vaše vlasy",
+  "scope": "Rutina alebo produkt",
+  "setType": "Zloženie sady",
+  "focus": "Vôňa a zložka"
+ },
+ "excluded": [
+  "Wooden Spoon (deodoranty, opaľovacia kozmetika) a Natuty (pranie) – iné značky v e-shope",
+  "hodvábne obliečky, darčekové poukážky, darček zadarmo a vzorky",
+  "produkty so skrátenou exspiráciou (duplicitné výpredajové položky)",
+  "MARK PROBLEMATIC sety, coffee scrub Original a Nougat – momentálne nedostupné",
+  "coffee scrub Cherry Cocktail (v e-shope označený HOLD)",
+  "gél na intímnu hygienu – nedostupný"
+ ],
+ "facetDefs": [
+  {
+   "key": "skin",
+   "early": true,
+   "sk": [
+    "Aký typ pleti máte?",
+    "Podľa pleťových rád MARK: All skin, Sensitive, Problematic a Age therapy."
+   ],
+   "values": {
+    "normal": {
+     "sk": [
+      "Bežná pleť",
+      "Rada pre všetky typy pleti"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-normal.jpg",
+      "position": "50% 30%"
+     }
+    },
+    "sensitive": {
+     "sk": [
+      "Citlivá pleť",
+      "Aj ekzém a rosacea"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/skin-sensitive.jpg"
+    },
+    "blemish": {
+     "sk": [
+      "Problematická pleť",
+      "Akné a nečistoty"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-blemish.jpg",
+      "position": "50% 35%"
+     }
+    },
+    "mature": {
+     "sk": [
+      "Suchá a zrelá pleť",
+      "Rada Age therapy"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-mature.jpg",
+      "position": "50% 30%"
+     }
+    }
+   }
+  },
+  {
+   "key": "hairNeed",
+   "early": true,
+   "sk": [
+    "Čo vaše vlasy potrebujú?",
+    "Podľa toho, pre aké vlasy MARK produkt určuje."
+   ],
+   "values": {
+    "oily": {
+     "sk": [
+      "Rýchlo sa mastia",
+      "Normálne a mastné vlasy"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/hair-roots.jpg",
+      "position": "60% 30%"
+     }
+    },
+    "loss": {
+     "sk": [
+      "Vypadávajú",
+      "Podpora rastu vlasov"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-loss-brush.jpg"
+    },
+    "sensitive": {
+     "sk": [
+      "Citlivá pokožka hlavy",
+      "Svrbí alebo sa podráždi"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/scalp-hands.jpg",
+      "position": "50% 20%"
+     }
+    },
+    "dry": {
+     "sk": [
+      "Suché a poškodené",
+      "Potrebujú výživu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-ends-dry.jpg"
+    },
+    "normal": {
+     "sk": [
+      "Normálne a jemné",
+      "Bez objemu, ľahká starostlivosť"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-light.jpg"
+    },
+    "kids": {
+     "sk": [
+      "Detské vlasy",
+      "Jemný detský šampón"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/kid-suds.jpg"
+    }
+   }
+  },
+  {
+   "key": "scope",
+   "early": true,
+   "sk": [
+    "Celú rutinu, alebo jeden produkt?",
+    "Hotový set MARK alebo konkrétny produkt."
+   ],
+   "values": {
+    "set": {
+     "sk": [
+      "Celú rutinu",
+      "Hotový set MARK"
+     ],
+     "photo": "/assets/scenes/gift-care.jpg"
+    },
+    "single": {
+     "sk": [
+      "Jeden produkt",
+      "Vyberiem konkrétny krok"
+     ],
+     "photo": "/assets/scenes/serum-drop.jpg"
+    }
+   }
+  },
+  {
+   "key": "setType",
+   "sk": [
+    "Čo má sada obsahovať?",
+    "Sety sa líšia počtom krokov."
+   ],
+   "values": {
+    "cleanCream": {
+     "sk": [
+      "Čistenie a krém",
+      "Dva kroky"
+     ],
+     "photo": "/assets/scenes/cream-texture.jpg"
+    },
+    "cleanSerum": {
+     "sk": [
+      "Čistenie a sérum",
+      "Dva kroky s hyalurónom"
+     ],
+     "photo": "/assets/scenes/serum-drop.jpg"
+    },
+    "trio": {
+     "sk": [
+      "Čistenie, sérum aj krém",
+      "Kompletná trojkroková rutina"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/face-routine.jpg"
+    },
+    "sponge": {
+     "sk": [
+      "S konjakovou hubkou",
+      "Čistenie s prírodnou hubkou"
+     ],
+     "photo": "/assets/scenes/face-cleanse.jpg"
+    },
+    "serumOil": {
+     "sk": [
+      "Sérum a pleťový olej",
+      "Intenzívna hydratácia"
+     ],
+     "photo": "/assets/scenes/oil-palm.jpg"
+    },
+    "premium": {
+     "sk": [
+      "S maskou z ružového ílu",
+      "Prémiová starostlivosť"
+     ],
+     "photo": "/assets/n447/scenes/skin-mask.jpg"
+    },
+    "normalCond": {
+     "sk": [
+      "Šampón a kondicionér pre normálne vlasy",
+      "Broccoli oil & prebiotic"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-light.jpg"
+    },
+    "dryCond": {
+     "sk": [
+      "Šampón a kondicionér pre suché vlasy",
+      "Vegan keratin & murumuru"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-touch.jpg"
+    },
+    "complete": {
+     "sk": [
+      "Kompletná rutina s maskou",
+      "Šampón, kondicionér a maska"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/hair-turban.jpg",
+      "position": "50% 20%"
+     }
+    }
+   }
+  },
+  {
+   "key": "focus",
+   "sk": [
+    "Ktorá vôňa alebo zložka vás láka?",
+    "Podľa názvu produktu v e-shope MARK."
+   ],
+   "values": {
+    "coconut": {
+     "sk": [
+      "Kokos",
+      "Coffee scrub Coconut"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/coconut.jpg"
+    },
+    "peppermint": {
+     "sk": [
+      "Mäta pieporná",
+      "S chladivým účinkom"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
+    },
+    "citrus": {
+     "sk": [
+      "Citrusy",
+      "Citrón, mandarínka a pomaranč"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/citrus.jpg"
+    },
+    "cinnamon": {
+     "sk": [
+      "Škorica",
+      "Hrejivá vôňa"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cinnamon.jpg"
+    },
+    "golden": {
+     "sk": [
+      "Golden Shine",
+      "So zlatými trblietkami"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/gold-glitter.jpg"
+    },
+    "cocoa": {
+     "sk": [
+      "Kakao",
+      "Cocoa scrub MARK & Simpl Therapy"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cocoa.jpg"
+    },
+    "nougat": {
+     "sk": [
+      "Nugát",
+      "Mandle a lieskové oriešky"
+     ],
+     "photo": "/assets/scenes/coffee-nuts.jpg"
+    },
+    "cherry": {
+     "sk": [
+      "Čerešňové kvety",
+      "Kvetinovo-ovocná vôňa"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cherry-blossom.jpg"
+    },
+    "honey": {
+     "sk": [
+      "Mlieko a med",
+      "Sladká vôňa medu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/honey.jpg"
+    },
+    "feet": {
+     "sk": [
+      "Na chodidlá",
+      "Neem a tea tree"
+     ],
+     "photo": "/assets/n447/scenes/feet-care.jpg"
+    },
+    "orangeCoffee": {
+     "sk": [
+      "Pomaranč a káva",
+      "S kávovými zrniečkami"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/orange-slices.jpg"
+    },
+    "cellulite": {
+     "sk": [
+      "Proti celulitíde",
+      "Spevňujúci olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/leg-massage.jpg"
+    },
+    "argan": {
+     "sk": [
+      "Arganový olej",
+      "Na pokožku aj vlasy"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/argan-tree.jpg"
+    },
+    "coffee": {
+     "sk": [
+      "Káva",
+      "Peelingové mydlo"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/coffee-beans.jpg"
+    },
+    "calendula": {
+     "sk": [
+      "Nechtík",
+      "Jemné mydlo aj pre deti od 3 rokov"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/calendula.jpg"
+    },
+    "charcoal": {
+     "sk": [
+      "Aktívne uhlie",
+      "Na problematickú pokožku"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/charcoal.jpg"
+    },
+    "glow": {
+     "sk": [
+      "Body Glow",
+      "Magnéziová soľ a Mŕtve more"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sea-salt.jpg"
+    },
+    "relax": {
+     "sk": [
+      "Body Relax",
+      "Epsomská soľ a kvety"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/roses-water.jpg"
+    },
+    "love": {
+     "sk": [
+      "Body Love",
+      "Levanduľa, šalvia a ruža"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose-bath.jpg"
+    },
+    "shower": {
+     "sk": [
+      "Sprchový puding",
+      "S aktívnym uhlím"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/man-face.jpg"
+    },
+    "beardOil": {
+     "sk": [
+      "Olej na bradu",
+      "Argan, jojoba a ricín"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/man-beard-oil.jpg"
+    },
+    "beardWax": {
+     "sk": [
+      "Vosk na bradu",
+      "S miernou fixáciou"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/man-beard-comb.jpg"
+    },
+    "beardHair": {
+     "sk": [
+      "Telo, vlasy aj brada",
+      "Set pre NEHO"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/man-hair-wash.jpg"
+    },
+    "beardBody": {
+     "sk": [
+      "Telo a brada",
+      "Men Skin & Body Care"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/man-towel.jpg"
+    },
+    "lemongrass": {
+     "sk": [
+      "Citrónová tráva",
+      "Marhuľový a hroznový olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/citrus.jpg"
+    },
+    "coffeeOil": {
+     "sk": [
+      "Káva a argan",
+      "Arganový a jojobový olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/coffee-beans.jpg"
+    },
+    "lavender": {
+     "sk": [
+      "Levanduľa",
+      "Upokojenie pleti"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "rose": {
+     "sk": [
+      "Damašská ruža",
+      "S antiage efektom"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose.jpg"
+    },
+    "mint": {
+     "sk": [
+      "Mäta",
+      "Osviežujúce tonikum"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
+    }
+   }
+  }
+ ],
+ "scenes": {
+  "category:face": "/assets/n447-kozmetika2/scenes/face-routine.jpg",
+  "category:body": "/assets/n447-kozmetika2/scenes/coffee-scrub-leg.jpg",
+  "category:hair": "/assets/scenes/hair-wash.jpg",
+  "category:men": "/assets/scenes/beard-care.jpg",
+  "category:lips": "/assets/scenes/lip-care.jpg",
+  "face|scope:single": "/assets/scenes/cream-texture.jpg",
+  "hair|scope:set": {
+   "photo": "/assets/n447-kozmetika2/scenes/hair-turban.jpg",
+   "position": "50% 20%"
+  },
+  "hair|scope:single": "/assets/n447-kozmetika2/scenes/hair-shampoo-foam.jpg",
+  "men|scope:set": "/assets/n447-kozmetika2/scenes/man-towel.jpg",
+  "men|scope:single": "/assets/n447-kozmetika2/scenes/man-beard-oil.jpg",
+  "lips|scope:set": "/assets/n447-kozmetika2/scenes/lip-balm.jpg",
+  "lips|scope:single": "/assets/scenes/lip-care.jpg",
+  "body|scope:single": "/assets/n447/scenes/body-lotion.jpg",
+  "kind:Čistiace gély": "/assets/scenes/face-clean-pad.jpg",
+  "kind:Séra": "/assets/scenes/serum-drop.jpg",
+  "kind:Krémy": "/assets/n447/scenes/hands-care.jpg",
+  "kind:Pleťové oleje": "/assets/scenes/oil-palm.jpg",
+  "kind:Pleťové vody": "/assets/scenes/face-water.jpg",
+  "kind:Masky a peelingy": "/assets/n447/scenes/skin-mask.jpg",
+  "kind:Kávové peelingy": "/assets/n447-kozmetika2/scenes/coffee-scrub-leg.jpg",
+  "kind:Cukrové peelingy": "/assets/n447-kozmetika2/scenes/sugar.jpg",
+  "kind:Telové maslá": "/assets/n447/scenes/body-lotion.jpg",
+  "kind:Sprchové pudingy": "/assets/n447-kozmetika2/scenes/body-shower.jpg",
+  "kind:Telové oleje": "/assets/scenes/oil-palm.jpg",
+  "kind:Mydlá": "/assets/n447-kozmetika2/scenes/hand-wash.jpg",
+  "kind:Kúpeľové soli": "/assets/n447-kozmetika2/scenes/rose-bath.jpg",
+  "kind:Šampóny": "/assets/n447-kozmetika2/scenes/hair-shampoo-foam.jpg",
+  "kind:Kondicionéry a masky": "/assets/n447-kozmetika2/scenes/hair-mask-salon.jpg",
+  "kind:Oleje na vlasy": "/assets/n447-kozmetika2/scenes/hair-oil.jpg",
+  "kind:Brada a fúzy": "/assets/scenes/beard-care.jpg",
+  "men|kind:Sprchové pudingy": "/assets/n447-kozmetika2/scenes/man-face.jpg",
+  "kind:Balzamy na pery": "/assets/scenes/lip-care.jpg",
+  "kind:Peelingy na pery": "/assets/n447-kozmetika2/scenes/sugar.jpg"
+ },
+ "addons": [
+  {
+   "categories": [
+    "face"
+   ],
+   "ids": [
+    "mark-mark-hubka-na-tvar-zo-zeleneho-caju",
+    "mark-mark-hubka-na-tvar-s-aktivnym-uhlim"
+   ],
+   "sk": "Z ponuky MARK: konjaková hubka na tvár k čisteniu pleti.",
+   "kinds": [
+    "Čistiace gély"
+   ]
+  },
+  {
+   "categories": [
+    "body"
+   ],
+   "ids": [
+    "mark-mark-hubka-na-telo-s-extraktom-zo-zeleneho-caju-1",
+    "mark-mark-velka-hubka-na-telo-s-aktivnym-uhlim"
+   ],
+   "sk": "Z ponuky MARK: prírodná hubka na telo.",
+   "kinds": [
+    "Sprchové pudingy",
+    "Mydlá"
+   ]
+  }
+ ]
+}
