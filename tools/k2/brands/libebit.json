@@ -1,0 +1,533 @@
+{
+ "slug": "libebit",
+ "lang": "cs",
+ "name": "libebit",
+ "domain": "libebit.cz",
+ "website": "https://www.libebit.cz/",
+ "shopUrl": "https://www.libebit.cz/",
+ "theme": {
+  "brand": "#184737",
+  "accent": "#e8501f",
+  "soft": "#f4f6f1",
+  "paper": "#ffffff",
+  "ink": "#1f2a24",
+  "line": "#dfe5dd"
+ },
+ "logo": "/assets/n447-kozmetika2/libebit/logo.png",
+ "heroProductId": "libebit-penivy-pudr-ylang-ylang",
+ "contact": "info@libebit.cz",
+ "contactSource": "https://www.libebit.cz/ (údaje obchodu na webu)",
+ "ownerNote": "Pleť podle typu, tuhé šampony podle vlasů, tělo i deodoranty — ručně vyráběná česká kosmetika libebit.",
+ "benefit": [
+  "Výběr z konkrétních produktů a balíčků",
+  "Typ pleti a vlasů podle kategorií e-shopu",
+  "Dotazy i mimo otevírací dobu"
+ ],
+ "noProfileGoal": true,
+ "chatTags": {
+  "skin": {
+   "dry": [
+    "dry",
+    "sensitive"
+   ],
+   "oily": [
+    "oily"
+   ]
+  },
+  "hairNeed": {
+   "oily": [
+    "oily"
+   ],
+   "dry": [
+    "dry"
+   ]
+  }
+ },
+ "chips": [
+  "Mám suchou pleť",
+  "Mám mastnou pleť",
+  "Hledám tuhý šampon",
+  "Jaké máte sady?"
+ ],
+ "labels": {
+  "face": "Pleť",
+  "body": "Tělo",
+  "hair": "Vlasy",
+  "skin": "Typ pleti",
+  "hairNeed": "Vaše vlasy",
+  "scope": "Balíček nebo produkt",
+  "focus": "Složení a vůně",
+  "deoType": "Druh deodorantu"
+ },
+ "excluded": [
+  "menší a velká balení stejného produktu (ve výběru je běžná velikost; mini se ukazují jen jako součást balíčků)",
+  "organzové sáčky a dárkové krabičky"
+ ],
+ "facetDefs": [
+  {
+   "key": "skin",
+   "early": true,
+   "cs": [
+    "Jakou máte pleť?",
+    "Podle kategorií e-shopu libebit."
+   ],
+   "values": {
+    "dry": {
+     "cs": [
+      "Sušší, citlivá pleť",
+      "Suchá, reaktivní nebo citlivá"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/skin-dry.jpg"
+    },
+    "oily": {
+     "cs": [
+      "Smíšená až mastná pleť",
+      "Normální, mastnější, problematická"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-oily.jpg",
+      "position": "50% 35%"
+     }
+    }
+   }
+  },
+  {
+   "key": "hairNeed",
+   "early": true,
+   "cs": [
+    "Co vaše vlasy potřebují?",
+    "Podle kategorií e-shopu libebit."
+   ],
+   "values": {
+    "oily": {
+     "cs": [
+      "Rychle se mastí",
+      "Jemné, bez objemu"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/hair-roots.jpg",
+      "position": "60% 30%"
+     }
+    },
+    "dandruff": {
+     "cs": [
+      "Lupy nebo svědění",
+      "Pokožka hlavy"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/scalp-hands.jpg",
+      "position": "50% 20%"
+     }
+    },
+    "dry": {
+     "cs": [
+      "Suché, barvené, vlnité",
+      "Potřebují výživu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-ends-dry.jpg"
+    }
+   }
+  },
+  {
+   "key": "scope",
+   "early": true,
+   "cs": [
+    "Celou rutinu, nebo jeden produkt?",
+    "Balíček pleťové péče je o 15 % levnější než jednotlivé produkty."
+   ],
+   "values": {
+    "set": {
+     "cs": [
+      "Celou rutinu",
+      "Balíček pleťové péče"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/face-routine.jpg"
+    },
+    "single": {
+     "cs": [
+      "Jeden produkt",
+      "Konkrétní krok péče"
+     ],
+     "photo": "/assets/scenes/cream-texture.jpg"
+    }
+   }
+  },
+  {
+   "key": "deoType",
+   "cs": [
+    "Jaký deodorant?",
+    "Tuhý bez sody, nebo krémový."
+   ],
+   "values": {
+    "solid": {
+     "cs": [
+      "Tuhý",
+      "Bez sody"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/eucalyptus.jpg"
+    },
+    "cream": {
+     "cs": [
+      "Krémový",
+      "Nanáší se prsty"
+     ],
+     "photo": "/assets/scenes/cream-texture.jpg"
+    }
+   }
+  },
+  {
+   "key": "focus",
+   "cs": [
+    "Co vás láká?",
+    "Podle hlavní složky nebo vůně v názvu produktu."
+   ],
+   "values": {
+    "mistSila": {
+     "cs": [
+      "SÍLA",
+      "Růže, lípa, vanilka, geranium"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose.jpg"
+    },
+    "mistPohyb": {
+     "cs": [
+      "POHYB",
+      "Máta, chrpa, růže – chladí"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
+    },
+    "mistKlid": {
+     "cs": [
+      "KLID",
+      "Růže, neroli, měsíček"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/calendula.jpg"
+    },
+    "kids": {
+     "cs": [
+      "Dětský krém",
+      "Pro děti a miminka"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/kids-towel.jpg"
+    },
+    "gentle": {
+     "cs": [
+      "JEMNÝ",
+      "Lykopen a arganový olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/tomatoes.jpg"
+    },
+    "fresh": {
+     "cs": [
+      "SVĚŽÍ",
+      "Lykopen a arganový olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/tomatoes.jpg"
+    },
+    "hemp": {
+     "cs": [
+      "Konopí",
+      "Konopný olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hemp.jpg"
+    },
+    "rosemary": {
+     "cs": [
+      "Rozmarýn",
+      "Bylinná vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rosemary.jpg"
+    },
+    "ylang": {
+     "cs": [
+      "Ylang-ylang",
+      "Květinová vůně"
+     ],
+     "photo": "/assets/scenes/oil-palm.jpg"
+    },
+    "lemongrass": {
+     "cs": [
+      "Citronová tráva",
+      "Svěží vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lemongrass.jpg"
+    },
+    "lavender": {
+     "cs": [
+      "Levandule",
+      "Pro každou pleť"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "teatree": {
+     "cs": [
+      "Tea tree",
+      "Pro normální až mastnou pleť"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/tea-tree.jpg"
+    },
+    "geranium": {
+     "cs": [
+      "Geranium",
+      "Pro suchou pleť"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/geranium.jpg"
+    },
+    "pinkClay": {
+     "cs": [
+      "Růžový jíl",
+      "S arganovým olejem"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clay-mask.jpg"
+    },
+    "greenClay": {
+     "cs": [
+      "Zelený jíl",
+      "S arganovým olejem a rozmarýnem"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rosemary.jpg"
+    },
+    "blueClay": {
+     "cs": [
+      "Modrý jíl",
+      "S mandlovým olejem"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clays.jpg"
+    },
+    "oatNeem": {
+     "cs": [
+      "Oves a neem",
+      "S meduňkou"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/oats.jpg"
+    },
+    "whey": {
+     "cs": [
+      "Konopí a syrovátka",
+      "Konopné mýdlo"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hemp.jpg"
+    },
+    "charcoal": {
+     "cs": [
+      "Aktivní uhlí",
+      "Hloubkové čištění"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/charcoal.jpg"
+    },
+    "simmon": {
+     "cs": [
+      "SIMMON",
+      "Citronová tráva a eukalyptus"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/eucalyptus.jpg"
+    },
+    "linum": {
+     "cs": [
+      "LINUM",
+      "Levandule a pačuli"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "mint": {
+     "cs": [
+      "MINT",
+      "Máta, chladivý"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
+    },
+    "festive": {
+     "cs": [
+      "SVÁTEČNÍ",
+      "Hřejivá vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/xmas-spices.jpg"
+    },
+    "amla": {
+     "cs": [
+      "AMLA",
+      "Normální až suché vlasy"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/amla.jpg"
+    },
+    "neem": {
+     "cs": [
+      "NEEM",
+      "Mastné vlasy, citlivá pokožka"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/neem.jpg"
+    },
+    "reetha": {
+     "cs": [
+      "REETHA",
+      "Všechny typy vlasů"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-shampoo-foam.jpg"
+    },
+    "shikakai": {
+     "cs": [
+      "SHIKAKAI",
+      "Citlivá pokožka, všechny vlasy"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-wet.jpg"
+    },
+    "aloe": {
+     "cs": [
+      "ALOE",
+      "Aloe vera"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/aloe.jpg"
+    },
+    "tulsi": {
+     "cs": [
+      "TULSI",
+      "Bazalka posvátná"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/tulsi.jpg"
+    },
+    "moringa": {
+     "cs": [
+      "MORINGA",
+      "Moringa olejodárná"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/moringa.jpg"
+    },
+    "hibiscus": {
+     "cs": [
+      "IBIŠEK",
+      "Výživa kořínků"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hibiscus.jpg"
+    },
+    "patchouli": {
+     "cs": [
+      "AVENA pačuli",
+      "Tuhý kondicionér"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/oats.jpg"
+    },
+    "melissa": {
+     "cs": [
+      "Meduňka",
+      "Tekuté mýdlo"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lemon-balm.jpg"
+    },
+    "davao": {
+     "cs": [
+      "DAVAO",
+      "Eukalyptus, citron, tea tree"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/eucalyptus.jpg"
+    },
+    "yunnan": {
+     "cs": [
+      "YUNNAN",
+      "Litsea cubeba"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lemon-tree.jpg"
+    },
+    "harare": {
+     "cs": [
+      "HARARE",
+      "Geranium s citronem"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/geranium.jpg"
+    },
+    "unisex": {
+     "cs": [
+      "UNISEX",
+      "Citronová tráva"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lemongrass.jpg"
+    },
+    "men": {
+     "cs": [
+      "Pro muže",
+      "Pánská varianta"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/man-towel.jpg"
+    },
+    "women": {
+     "cs": [
+      "Pro ženy",
+      "Dámská varianta"
+     ],
+     "photo": "/assets/n447/scenes/body-lotion.jpg"
+    },
+    "butter": {
+     "cs": [
+      "Přírodní máslo",
+      "Na tělo a ruce"
+     ],
+     "photo": "/assets/scenes/hands-cream.jpg"
+    },
+    "hempBalm": {
+     "cs": [
+      "Konopný balzám",
+      "Konopný olej a měsíček"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hemp.jpg"
+    },
+    "litsea": {
+     "cs": [
+      "Litsea cubeba",
+      "Citrusová vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lemon-tree.jpg"
+    },
+    "herbs": {
+     "cs": [
+      "Bylinky",
+      "Bylinná vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/thyme.jpg"
+    },
+    "cinnamon": {
+     "cs": [
+      "Skořice",
+      "Hřejivá vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cinnamon.jpg"
+    }
+   }
+  }
+ ],
+ "scenes": {
+  "category:face": "/assets/n447-kozmetika2/scenes/face-routine.jpg",
+  "category:hair": "/assets/scenes/hair-wash.jpg",
+  "category:body": "/assets/n447-kozmetika2/scenes/body-shower.jpg",
+  "kind:Pleťové mlhy": "/assets/scenes/face-water.jpg",
+  "kind:Pleťové krémy": "/assets/scenes/cream-texture.jpg",
+  "kind:Pěsticí oleje": "/assets/scenes/oil-palm.jpg",
+  "kind:Balzámy na rty": "/assets/scenes/lip-care.jpg",
+  "kind:Bylinné šampony": "/assets/n447-kozmetika2/scenes/hair-shampoo-foam.jpg",
+  "kind:Sprchové šampony na tělo i vlasy": "/assets/n447-kozmetika2/scenes/body-shower.jpg",
+  "kind:Kondicionéry": "/assets/n447-kozmetika2/scenes/hair-touch.jpg",
+  "kind:Tekutá mýdla": "/assets/n447-kozmetika2/scenes/hand-wash.jpg",
+  "kind:Deodoranty": "/assets/scenes/daily-care.jpg",
+  "kind:Másla a balzámy": "/assets/scenes/hands-cream.jpg",
+  "kind:Peelingové kondicionéry": "/assets/n447-kozmetika2/scenes/sugar.jpg",
+  "kind:Po holení": "/assets/scenes/beard-care.jpg",
+  "kind:Čisticí pudry a oleje": "/assets/scenes/face-cleanse.jpg",
+  "kind:Mýdla": "/assets/n447-kozmetika2/scenes/hand-wash.jpg"
+ },
+ "addons": [
+  {
+   "categories": [
+    "hair"
+   ],
+   "kinds": [
+    "Bylinné šampony",
+    "Sprchové šampony na tělo i vlasy",
+    "Kondicionéry"
+   ],
+   "ids": [
+    "libebit-lufa-kolecko-v-sacku2"
+   ],
+   "sk": "K tuhému šampónu: podložka z lufy.",
+   "cs": "K tuhému šamponu: podložka z lufy, aby šampon rychle oschl."
+  }
+ ],
+ "chatTagsSpecificOnly": true
+}

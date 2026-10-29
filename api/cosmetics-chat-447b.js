@@ -8,10 +8,12 @@ import '../n447/kozmetika2/catalogues/andreine.js';
 import '../n447/kozmetika2/catalogues/malinna.js';
 import '../n447/kozmetika2/catalogues/mark.js';
 import '../n447/kozmetika2/catalogues/akh.js';
+import '../n447/kozmetika2/catalogues/libebit.js';
 import {aiAnswer} from './ai-chat.js';
 
 const BRANDS = {
   /* K2_BRANDS */
+  libebit: {brand: "libebit", web: "https://www.libebit.cz/"},
   akh: {brand: "AKH aromaterapie", web: "https://www.aromakh.cz/"},
   mark: {brand: "MARK face & body", web: "https://www.markscrub.com/"},
   malinna: {brand: "MALINNA°", web: "https://malinna.com/"},

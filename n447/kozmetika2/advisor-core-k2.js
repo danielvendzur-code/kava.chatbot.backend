@@ -130,7 +130,7 @@
       const formPool = earlyPool.filter(p => (!answers.goal || answers.goal === 'any' || p.signals.includes(answers.goal)) && (!answers.profile || answers.profile === 'any' || p.signals.includes(answers.profile)||p.source?.allSkinTypes===true));
       const forms = [...new Set(formPool.map(p => p.kind))];
       if (forms.length > 1) result.push({key:'kind', options:opts.noProfileGoal?forms:[...forms, 'any']});/* k2: bez „Nechám si poradiť“ pri type – zameranie by miešalo typy */
-      const facetKeys=['hairNeed','hairUse','area','hairFocus','packType','careVariant','skinFocus','time','ingredient','size',...lateKeys];
+      const facetKeys=['hairNeed','hairUse','area','hairFocus','packType','careVariant','skinFocus','time','ingredient','size',...lateKeys].filter(k=>!earlyKeys.includes(k));/* k2: early odpoveď sa nepýta druhýkrát */
       const baseAnswers={...answers,category,budget:''};for(const key of facetKeys)delete baseAnswers[key];/* k2: early odpovede ostávajú */
       const priced=recommend(baseAnswers).matches;
       const buckets=new Map(),photoKey=p=>String(p.photo).split('?')[0],eligibleComplements=[],seenIds=new Set(),repeatedIds=new Set();

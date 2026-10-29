@@ -25,6 +25,9 @@ def for_chat(p):
     tags, ev = set(q.get('tags') or []), {}
     for key, mapping in (cfg.get('chatTags') or {}).items():
         vals = (q.get('facets') or {}).get(key)
+        allv = [d for d in cfg.get('facetDefs', []) if d['key'] == key]
+        if cfg.get('chatTagsSpecificOnly') and isinstance(vals, list) and allv and set(allv[0]['values']) <= set(vals):
+            continue  # produkt pre všetky typy – netvrdíme v chate konkrétny typ
         for v in (vals if isinstance(vals, list) else [vals] if vals else []):
             for t in mapping.get(v, []):
                 tags.add(t); ev[t] = (q['source'].get('suitabilityEvidence') or key + '=' + v)
