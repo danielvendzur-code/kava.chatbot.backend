@@ -1,0 +1,493 @@
+{
+ "slug": "akh",
+ "lang": "cs",
+ "name": "AKH aromaterapie",
+ "domain": "aromakh.cz",
+ "website": "https://www.aromakh.cz/",
+ "shopUrl": "https://www.aromakh.cz/",
+ "theme": {
+  "brand": "#275B47",
+  "accent": "#EC6608",
+  "soft": "#f3f6f3",
+  "paper": "#ffffff",
+  "ink": "#1D1D1B",
+  "line": "#dbe3de"
+ },
+ "logo": "/assets/n447-kozmetika2/akh/logo.svg",
+ "heroProductId": "akh-ruzova-pletova-voda-200-ml",
+ "contact": "poradna@aromakh.cz",
+ "contactSource": "https://www.aromakh.cz/ (záhlaví a patička webu)",
+ "ownerNote": "Pleťová péče podle typu pleti, sprchové a koupelové oleje podle vůně a dárkové sady — přírodní kosmetika AKH.",
+ "benefit": [
+  "Výběr z konkrétních produktů a sad",
+  "Typ pleti podle kategorií e-shopu AKH",
+  "Dotazy i mimo otevírací dobu"
+ ],
+ "noProfileGoal": true,
+ "chatTags": {
+  "skin": {
+   "dry": [
+    "dry"
+   ],
+   "oily": [
+    "oily"
+   ],
+   "normal": [
+    "balanced"
+   ]
+  }
+ },
+ "chips": [
+  "Mám suchou pleť",
+  "Mám mastnou pleť",
+  "Hledám pleťové sérum",
+  "Jaké máte sady?"
+ ],
+ "labels": {
+  "face": "Pleť",
+  "body": "Tělo",
+  "sets": "Dárkové sady",
+  "skin": "Typ pleti",
+  "family": "Vůně",
+  "focus": "Konkrétní vůně",
+  "spf": "Ochrana",
+  "setFor": "Sada pro"
+ },
+ "excluded": [
+  "pleťové produkty, které AKH nezařazuje do kategorií podle typu pleti",
+  "masážní, intimní a speciální přípravky (ekzém, hormonální změny, plísně) – zdravotní tvrzení mimo výběr",
+  "kosmetika pro muže, vlasy, deodoranty, aromaterapie, doplňky stravy, potraviny a domácnost",
+  "sady s potravinami, úklidem a doplňky stravy"
+ ],
+ "facetDefs": [
+  {
+   "key": "skin",
+   "early": true,
+   "cs": [
+    "Jakou máte pleť?",
+    "Podle kategorií e-shopu AKH „Dle typu pleti“."
+   ],
+   "values": {
+    "dry": {
+     "cs": [
+      "Suchá pleť",
+      "Napjatá, potřebuje výživu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/skin-dry.jpg"
+    },
+    "normal": {
+     "cs": [
+      "Normální pleť",
+      "Bez větších potíží"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-normal.jpg",
+      "position": "50% 30%"
+     }
+    },
+    "combination": {
+     "cs": [
+      "Smíšená pleť",
+      "Mastná T-zóna, jinde normální"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-combination.jpg",
+      "position": "50% 30%"
+     }
+    },
+    "oily": {
+     "cs": [
+      "Mastná pleť",
+      "Lesk a sklon k nečistotám"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-oily.jpg",
+      "position": "50% 35%"
+     }
+    }
+   }
+  },
+  {
+   "key": "scope",
+   "early": true,
+   "cs": [
+    "Celou rutinu, nebo jeden produkt?",
+    "Sada AKH nebo konkrétní produkt."
+   ],
+   "values": {
+    "single": {
+     "cs": [
+      "Jeden produkt",
+      "Konkrétní krok péče"
+     ],
+     "photo": "/assets/scenes/serum-drop.jpg"
+    }
+   }
+  },
+  {
+   "key": "setFor",
+   "early": true,
+   "cs": [
+    "Pro koho nebo na co je sada?",
+    "Dárkové sady AKH s kosmetikou."
+   ],
+   "values": {
+    "face": {
+     "cs": [
+      "Péče o pleť",
+      "Odličovací olej, tonikum a krém nebo sérum"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/face-routine.jpg"
+    },
+    "body": {
+     "cs": [
+      "Péče o tělo",
+      "Sprchovací olej a tělové mléko"
+     ],
+     "photo": "/assets/n447/scenes/body-lotion.jpg"
+    },
+    "shower": {
+     "cs": [
+      "Sprchové oleje",
+      "Objevovací sada vůní"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/body-shower.jpg"
+    },
+    "bath": {
+     "cs": [
+      "Koupel",
+      "Koupelové oleje"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose-bath.jpg"
+    },
+    "travel": {
+     "cs": [
+      "Na cesty",
+      "Mini balení po 15 ml"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/travel-kit.jpg"
+    }
+   }
+  },
+  {
+   "key": "family",
+   "cs": [
+    "Jakou vůni máte rádi?",
+    "Vůně podle esenciálních olejů v názvu produktu."
+   ],
+   "values": {
+    "citrus": {
+     "cs": [
+      "Citrusová",
+      "Citron, grapefruit, mandarinka"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/citrus.jpg"
+    },
+    "herbal": {
+     "cs": [
+      "Bylinná",
+      "Meduňka, rozmarýn, šalvěj, tymián"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/thyme.jpg"
+    },
+    "forest": {
+     "cs": [
+      "Lesní a dřevitá",
+      "Borovice, jalovec, santal"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/pine.jpg"
+    },
+    "floral": {
+     "cs": [
+      "Květinová",
+      "Levandule, ylang, citronová růže"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "xmas": {
+     "cs": [
+      "Vánoční",
+      "Kořeněná zimní vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/xmas-spices.jpg"
+    },
+    "neutral": {
+     "cs": [
+      "Bez vůně",
+      "Bez přidaných éterických olejů"
+     ],
+     "photo": "/assets/scenes/face-water.jpg"
+    }
+   }
+  },
+  {
+   "key": "focus",
+   "cs": [
+    "Kterou vůni vyberete?",
+    "Podle názvu produktu v e-shopu AKH."
+   ],
+   "values": {
+    "citron": {
+     "cs": [
+      "Citron",
+      "Svěží a povzbuzující"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lemon-tree.jpg"
+    },
+    "grapefruit": {
+     "cs": [
+      "Grapefruit",
+      "Svěží citrus"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/grapefruit.jpg"
+    },
+    "mandarin": {
+     "cs": [
+      "Mandarinka",
+      "Sladší citrus"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mandarin.jpg"
+    },
+    "citronCamphor": {
+     "cs": [
+      "Citron a kafr",
+      "Osvěžující koupel"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/citrus.jpg"
+    },
+    "juniper": {
+     "cs": [
+      "Jalovec",
+      "Lesní vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/juniper.jpg"
+    },
+    "pine": {
+     "cs": [
+      "Borovice",
+      "Vůně jehličí"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/pine.jpg"
+    },
+    "sandal": {
+     "cs": [
+      "Santal",
+      "Dřevitá vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sandalwood.jpg"
+    },
+    "patchouli": {
+     "cs": [
+      "Pačuli",
+      "Zemitá vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/incense.jpg"
+    },
+    "lavender": {
+     "cs": [
+      "Levandule",
+      "Zklidňující vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "ylang": {
+     "cs": [
+      "Ylang-ylang",
+      "Exotická květinová vůně"
+     ],
+     "photo": "/assets/scenes/oil-palm.jpg"
+    },
+    "roseGeranium": {
+     "cs": [
+      "Citronová růže",
+      "Citrusově-květinová vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/geranium.jpg"
+    },
+    "rose": {
+     "cs": [
+      "Růže",
+      "Jemná květinová vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose.jpg"
+    },
+    "melissa": {
+     "cs": [
+      "Meduňka",
+      "Zklidňující bylina"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lemon-balm.jpg"
+    },
+    "rosemary": {
+     "cs": [
+      "Rozmarýn",
+      "Povzbuzující bylina"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rosemary.jpg"
+    },
+    "teatree": {
+     "cs": [
+      "Čajovník",
+      "Čisticí bylinná vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/tea-tree.jpg"
+    },
+    "sage": {
+     "cs": [
+      "Šalvěj",
+      "Bylinná vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clary-sage.jpg"
+    },
+    "thyme": {
+     "cs": [
+      "Tymián",
+      "Hřejivá bylina"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/thyme.jpg"
+    },
+    "eucalyptus": {
+     "cs": [
+      "Eukalyptus a tymián",
+      "Uvolňující koupel"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/eucalyptus.jpg"
+    },
+    "mint": {
+     "cs": [
+      "Máta a eukalyptus",
+      "FRISCH – ledové osvěžení"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
+    },
+    "cellu": {
+     "cs": [
+      "Jalovec, rozmarýn a skořice",
+      "CELLU-THERAP"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/leg-massage.jpg"
+    },
+    "xmas": {
+     "cs": [
+      "Vánoční",
+      "Kořeněná vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/xmas-spices.jpg"
+    },
+    "calendula": {
+     "cs": [
+      "Měsíček",
+      "Bylinné tonikum"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/calendula.jpg"
+    },
+    "tansy": {
+     "cs": [
+      "Vratič",
+      "Bylinná pleťová voda"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/tansy.jpg"
+    },
+    "propolis": {
+     "cs": [
+      "Eleutherococc a propolis",
+      "Bylinné tonikum"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/honey.jpg"
+    },
+    "neutral": {
+     "cs": [
+      "Neutrální",
+      "Bez výrazné vůně"
+     ],
+     "photo": "/assets/scenes/face-water.jpg"
+    },
+    "gentle": {
+     "cs": [
+      "Jemný peeling",
+      "OLEOSOL BAL"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sea-salt.jpg"
+    },
+    "feet": {
+     "cs": [
+      "Na chodidla",
+      "OLEOSOL PEDI"
+     ],
+     "photo": "/assets/n447/scenes/feet-care.jpg"
+    },
+    "rosewood": {
+     "cs": [
+      "Růžové dřevo",
+      "Dřevitě-květinová vůně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sandalwood.jpg"
+    },
+    "celluPeel": {
+     "cs": [
+      "OLEOSOL CELLU",
+      "Prohřívací solný peeling"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/leg-massage.jpg"
+    }
+   }
+  },
+  {
+   "key": "spf",
+   "cs": [
+    "Chcete ochranný faktor?",
+    "Některé produkty AKH mají variantu s SPF 6."
+   ],
+   "values": {
+    "spf": {
+     "cs": [
+      "S SPF 6",
+      "Na den"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sunscreen.jpg"
+    },
+    "none": {
+     "cs": [
+      "Bez SPF",
+      "Na den i na noc"
+     ],
+     "photo": "/assets/scenes/cream-texture.jpg"
+    }
+   }
+  }
+ ],
+ "scenes": {
+  "category:face": "/assets/n447-kozmetika2/scenes/face-routine.jpg",
+  "category:body": "/assets/n447-kozmetika2/scenes/body-shower.jpg",
+  "category:sets": "/assets/scenes/gift-care.jpg",
+  "kind:Odličovací oleje": "/assets/scenes/face-cleanse.jpg",
+  "kind:Pleťové vody": "/assets/scenes/face-water.jpg",
+  "kind:Pleťová tonika": "/assets/scenes/face-clean-pad.jpg",
+  "kind:Séra": "/assets/scenes/serum-drop.jpg",
+  "kind:Pleťové oleje": "/assets/scenes/oil-palm.jpg",
+  "kind:Krémy": "/assets/scenes/cream-texture.jpg",
+  "kind:Oční krém": "/assets/n447-kozmetika2/scenes/eye-patches.jpg",
+  "kind:Sprchové oleje": "/assets/n447-kozmetika2/scenes/body-shower.jpg",
+  "kind:Koupelové oleje": "/assets/n447-kozmetika2/scenes/rose-bath.jpg",
+  "kind:Tělová mléka": "/assets/n447/scenes/body-lotion.jpg",
+  "kind:Solné peelingy": "/assets/n447-kozmetika2/scenes/sea-salt.jpg",
+  "kind:Tělová mléka|focus:citron": "/assets/n447-kozmetika2/scenes/lemon-tree.jpg"
+ },
+ "addons": [
+  {
+   "categories": [
+    "body"
+   ],
+   "kinds": [
+    "Sprchové oleje",
+    "Koupelové oleje",
+    "Solné peelingy"
+   ],
+   "ids": [
+    "akh-lecitinia-body-balm-lecitinovy-telovy-balzam-100-ml"
+   ],
+   "sk": "Po sprche alebo kúpeli: telové mlieko AKH.",
+   "cs": "Po sprše nebo koupeli: tělové mléko AKH pro každý typ pokožky."
+  }
+ ]
+}

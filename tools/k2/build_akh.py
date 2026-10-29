@@ -14,7 +14,7 @@ BAD = re.compile(r'balení \d+ ?ml je dodáváno|dávkovač|objednáv|vzork|dopr
 
 
 def first(t):
-    sents = [x.strip() for x in re.split(r'(?<=[.!?])\s+', t or '') if x.strip()]
+    sents = [x.strip().lstrip('✨ ').strip() for x in re.split(r'(?<=[.!?])\s+', t or '') if x.strip()]
     good = [x for x in sents if 50 <= len(x) <= 280 and not BAD.search(x)]
     return good[0] if good else (sents[0][:280] if sents else '')
 
@@ -27,7 +27,7 @@ def row(u, cat, kind, facets, evidence='bez tvrzení o typu pleti'):
             'volume': vol, 'variantLabel': '', 'category': cat, 'kind': kind, 'tags': [], 'photo': p.get('image') or p.get('ogImage'),
             'available': o.get('availability') == 'InStock', 'isSample': False, 'description': desc, 'reason': desc, 'facets': facets,
             'source': {'url': u, 'verifiedAt': CHECKED, 'category': ' > '.join((p.get('breadcrumb') or [])[1:-1]), 'stock': o.get('availability'), 'priceFrom': False,
-                       'imageUrl': p.get('image'), 'suitabilityEvidence': evidence, 'suitabilitySource': 'kategorie e-shopu AKH „Dle typu pleti“'}}
+                       'imageUrl': p.get('image'), 'suitabilityEvidence': evidence, 'suitabilitySource': 'official product page description'}}
 
 
 rows = {}
@@ -49,7 +49,7 @@ def face_kind(n):
     return 'Krémy'
 
 
-SCENT = [('citron', 'citron'), ('jalovc', 'juniper'), ('levandul', 'lavender'), ('růž', 'rose'), ('ylang', 'ylang'), ('rozmarýn', 'rosemary'),
+SCENT = [('růžového dřeva', 'rosewood'), ('citron', 'citron'), ('jalovc', 'juniper'), ('levandul', 'lavender'), ('růž', 'rose'), ('ylang', 'ylang'), ('rozmarýn', 'rosemary'),
          ('čajovník', 'teatree'), ('měsíčk', 'calendula'), ('vratič', 'tansy'), ('propolis', 'propolis'), ('santal', 'sandal'), ('make-up', 'neutral')]
 
 
@@ -90,7 +90,7 @@ for u in body_cat:
     elif re.search(r'GRAPESIA|LECITINIA BODY BALM|ARMONIA', n) and not n.startswith('SADA'):
         rows[u] = row(u, 'body', 'Tělová mléka', {'scope': 'single', 'focus': 'grapefruit' if 'GRAPESIA' in n else 'citron' if 'ARMONIA' in n else 'neutral'})
     elif n.startswith(('Tělový solno-olejový peeling', 'Solno-olejový peeling na nohy')):
-        rows[u] = row(u, 'body', 'Solné peelingy', {'scope': 'single', 'focus': {'BAL': 'gentle', 'CELLU': 'cellu', 'JAGR': 'grapefruit', 'PEDI': 'feet'}[n.split()[-1]]})
+        rows[u] = row(u, 'body', 'Solné peelingy', {'scope': 'single', 'focus': {'BAL': 'gentle', 'CELLU': 'celluPeel', 'JAGR': 'grapefruit', 'PEDI': 'feet'}[n.split()[-1]]})
 
 # ---- Sady (len kozmetika; obsah zo stránky sady) ----
 U = 'https://www.aromakh.cz/'

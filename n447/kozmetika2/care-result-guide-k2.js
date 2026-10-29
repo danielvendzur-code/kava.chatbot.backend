@@ -33,7 +33,7 @@
   }
   function next(p,matches){const seen=new Set([p.id]),photos=new Set([String(p.photo).split('?')[0]]),limit=Number(answers.budget)||Infinity,eligible=x=>x.available!==false&&!x.isSample&&x.currency===p.currency&&x.photo&&!seen.has(x.id)&&!photos.has(String(x.photo).split('?')[0])&&cost(x)<=limit;
    const complementary={cleanser:['cream'],cream:['cleanser'],serum:['cream'],shampoo:['conditioner'],conditioner:['shampoo']},roles=complementary[role(p)]||[];
-   const facetOk=x=>(opts.facetKeys||[]).every(k=>!answers[k]||answers[k]==='any'||['scope','focus'].includes(k)||(Array.isArray(x.features?.[k])?x.features[k].includes(answers[k]):x.features?.[k]===answers[k]));
+   const facetOk=x=>(opts.facetKeys||[]).every(k=>!answers[k]||answers[k]==='any'||['scope','focus'].includes(k)||x.features?.[k]==null||(Array.isArray(x.features?.[k])?x.features[k].includes(answers[k]):x.features?.[k]===answers[k]));
    const safe=x=>facetOk(x)&&!/(?:retin[oa]l|\baha\b|\bbha\b|peeling|kyselin|esencial|eterick)/.test(norm(x.name+' '+x.kind))&&(!answers.profile||answers.profile==='any'||x.signals?.includes(answers.profile)||x.source?.allSkinTypes===true)&&(answers.careVariant!=='withoutFragrance'||/bez vun|bez von|without fragrance|unscented/.test(norm(x.name+' '+(x.description||''))));
    const extra=products.filter(x=>eligible(x)&&x.category===p.category&&roles.includes(role(x))&&safe(x)&&(!answers.budget||cost(p)+cost(x)<=limit)).sort((a,b)=>cost(a)-cost(b))[0],items=[];
    /* k2: doplnok firmy do zostavy (mydelnička, hrebeň, konjac…) podľa pravidiel značky */
