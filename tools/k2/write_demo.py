@@ -31,6 +31,19 @@ def for_chat(p):
         for v in (vals if isinstance(vals, list) else [vals] if vals else []):
             for t in mapping.get(v, []):
                 tags.add(t); ev[t] = (q['source'].get('suitabilityEvidence') or key + '=' + v)
+    # k2Terms: overené zaradenie (popis voľby „focus“, obsah sady) – aby chat našiel zložku/vôňu aj keď nie je v prvej vete popisu
+    lang = 'cs' if cs else 'sk'
+    words = []
+    for d in cfg.get('facetDefs', []):
+        if d['key'] != 'focus' and not d.get('early'): continue
+        if d['key'] == 'scope': continue
+        vals = (q.get('facets') or {}).get(d['key'])
+        for v in (vals if isinstance(vals, list) else [vals] if vals else []):
+            lab = (d['values'].get(v) or {})
+            words += lab.get(lang) or lab.get('sk') or lab.get('cs') or []
+    words += (q.get('set') or {}).get('containsNames') or []
+    if words:
+        q['k2Terms'] = ' | '.join(words)
     if tags:
         q['tags'] = sorted(tags); q['source']['suitabilityEvidence'] = ev or {t: True for t in tags}
     return q

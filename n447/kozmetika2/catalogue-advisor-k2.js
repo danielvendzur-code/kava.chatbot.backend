@@ -121,7 +121,7 @@
 .cx-widget-brand{transform:translateY(3px)}
 `+(brand.k2Css||'');document.head.append(st);})();
   /* Hotová sada firmy: najprv sada, ktorá obsahuje odporúčaný produkt; zloženie a bežná cena z e-shopu. */
-  function readySet(p){if(p.set)return null;const sets=engine.products.filter(x=>x.set&&x.available!==false&&(x.set.contains||[]).includes(p.id));
+  function readySet(p){if(p.set)return null;const cap=Number(state.answers.budget);const sets=engine.products.filter(x=>x.set&&x.available!==false&&(x.set.contains||[]).includes(p.id)&&(!cap||(Number.isFinite(x.priceAmount)&&x.priceAmount<=cap)));/* k2: hotová sada musí zostať v rozpočte */
     const fit=sets.filter(x=>Object.entries(x.features||{}).every(([k,v])=>k==='scope'||(x.set.ignoreKeys||[]).includes(k)||!state.answers[k]||state.answers[k]==='any'||(Array.isArray(v)?v.includes(state.answers[k]):v===state.answers[k])));
     return fit.sort((a,b)=>(a.priceAmount??Infinity)-(b.priceAmount??Infinity))[0]||null;}
   function setBlock(x,headline){const s=x.set||{},save=Number.isFinite(s.regularPrice)&&s.regularPrice>x.priceAmount?Math.round((s.regularPrice-x.priceAmount)*100)/100:0;
