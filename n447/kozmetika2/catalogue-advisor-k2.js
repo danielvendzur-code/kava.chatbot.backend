@@ -122,7 +122,7 @@
 `+(brand.k2Css||'');document.head.append(st);})();
   /* Hotová sada firmy: najprv sada, ktorá obsahuje odporúčaný produkt; zloženie a bežná cena z e-shopu. */
   function readySet(p){if(p.set)return null;const sets=engine.products.filter(x=>x.set&&x.available!==false&&(x.set.contains||[]).includes(p.id));
-    const fit=sets.filter(x=>Object.entries(x.features||{}).every(([k,v])=>k==='scope'||!state.answers[k]||state.answers[k]==='any'||(Array.isArray(v)?v.includes(state.answers[k]):v===state.answers[k])));
+    const fit=sets.filter(x=>Object.entries(x.features||{}).every(([k,v])=>k==='scope'||(x.set.ignoreKeys||[]).includes(k)||!state.answers[k]||state.answers[k]==='any'||(Array.isArray(v)?v.includes(state.answers[k]):v===state.answers[k])));
     return fit.sort((a,b)=>(a.priceAmount??Infinity)-(b.priceAmount??Infinity))[0]||null;}
   function setBlock(x,headline){const s=x.set||{},save=Number.isFinite(s.regularPrice)&&s.regularPrice>x.priceAmount?Math.round((s.regularPrice-x.priceAmount)*100)/100:0;
     return '<section class="cx-result-set"><h3>'+esc(headline)+'</h3>'+card(x,false,{matches:[x]},L('Hotová sada od '+brand.name,'Hotová sada od '+brand.name))+(s.containsNames?.length?setList(s.containsNames):'')+(save?saveLine(s.regularPrice,save,x.currency):'')+'</section>';}

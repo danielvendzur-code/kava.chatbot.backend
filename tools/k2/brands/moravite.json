@@ -1,0 +1,294 @@
+{
+ "slug": "moravite",
+ "lang": "cs",
+ "name": "Moravité",
+ "domain": "moravite.cz",
+ "website": "https://moravite.cz/",
+ "shopUrl": "https://moravite.cz/produkty/",
+ "theme": {
+  "brand": "#1f1f1f",
+  "accent": "#8a6f4d",
+  "soft": "#f6f1ea",
+  "paper": "#ffffff",
+  "ink": "#1d1d1d",
+  "line": "#e7dfd4"
+ },
+ "logo": "/assets/n447-kozmetika2/moravite/logo.png",
+ "heroProductId": "moravite-pletove-serum-s-kyselinou-hyaluronovou-a-opuncii",
+ "contact": "moravite@seznam.cz",
+ "contactSource": "https://moravite.cz/kontakt/",
+ "ownerNote": "Ručně dělaná mýdla, pěstící oleje, koupelové soli a masážní pomůcky z růženínu — výběr podle toho, co má péče dělat.",
+ "benefit": [
+  "Výběr z mýdel, olejů, krémů a koupelových solí Moravité",
+  "Hotové sady i vlastní sestava s gua sha, válečkem a mýdlenkou",
+  "Dotazy i mimo otevírací dobu"
+ ],
+ "noProfileGoal": true,
+ "chatTags": {},
+ "chips": [
+  "Máte pleťový olej?",
+  "Máte krém na ruce?",
+  "Máte koupelovou sůl?",
+  "Hledám dárek pro muže"
+ ],
+ "labels": {
+  "face": "Pleť a masáž",
+  "soap": "Mýdla",
+  "body": "Ruce a tělo",
+  "bath": "Koupel",
+  "family": "Typ mýdla",
+  "focus": "Složení a vůně",
+  "scope": "Produkt"
+ },
+ "excluded": [
+  "dřevěné motýlky, šperky, jehlice, klíčenky, hračky a interiérové doplňky",
+  "hřebeny, vykuřovadla, difuzéry a řasokoule",
+  "dárkové poukazy",
+  "aktuálně nedostupné produkty (např. pleťový krém s kyselinou hyaluronovou, tělové mléko, část mýdel)"
+ ],
+ "facetDefs": [
+  {
+   "key": "family",
+   "cs": [
+    "Jaké mýdlo hledáte?",
+    "Podle složení a popisu mýdla na e-shopu."
+   ],
+   "values": {
+    "deep": {
+     "cs": [
+      "Hloubkové čištění",
+      "Aktivní uhlí, jíl a sůl"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clays.jpg"
+    },
+    "gentle": {
+     "cs": [
+      "Jemné a zklidňující",
+      "Měsíček, jogurt, syrovátka, med"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/oats.jpg"
+    }
+   }
+  },
+  {
+   "key": "focus",
+   "cs": [
+    "Které vyberete?",
+    "Podle hlavní složky nebo vůně v názvu produktu."
+   ],
+   "values": {
+    "hyaluron": {
+     "cs": [
+      "Kyselina hyaluronová a opuncie",
+      "Hydratace a výživa"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/opuntia.jpg"
+    },
+    "vitamin": {
+     "cs": [
+      "Vitamínový",
+      "Lehký, s vitamíny a měsíčkem"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/calendula.jpg"
+    },
+    "opuntia": {
+     "cs": [
+      "Opuncie",
+      "Čistý olej bez parfemace"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/opuntia.jpg"
+    },
+    "vanilla": {
+     "cs": [
+      "Vanilkový rituál",
+      "Směs olejů s vanilkou"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/vanilla.jpg"
+    },
+    "oilSet": {
+     "cs": [
+      "Oba oleje v sadě",
+      "Opuncie + Vanilkový rituál"
+     ],
+     "photo": "/assets/scenes/oil-palm.jpg"
+    },
+    "small": {
+     "cs": [
+      "Masážní sada malá",
+      "Oba oleje + váleček z růženínu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/face-massage.jpg"
+    },
+    "large": {
+     "cs": [
+      "Masážní sada velká",
+      "Oleje, váleček, špice a gua sha"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/gua-sha.jpg"
+    },
+    "guasha": {
+     "cs": [
+      "Dřevěná gua sha",
+      "Samotný masážní nástroj z jasanu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/oak.jpg"
+    },
+    "charcoal": {
+     "cs": [
+      "Aktivní uhlí",
+      "Detoxikační, do hloubky pórů"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/charcoal.jpg"
+    },
+    "saltBuckthorn": {
+     "cs": [
+      "Himálajská sůl a rakytník",
+      "S červeným jílem"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sea-buckthorn.jpg"
+    },
+    "men": {
+     "cs": [
+      "Dárek pro muže",
+      "Mýdlo s uhlím a pačuli + olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/man-towel.jpg"
+    },
+    "calendula": {
+     "cs": [
+      "Měsíček lékařský",
+      "Zklidňuje a zjemňuje"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/calendula.jpg"
+    },
+    "yogurt": {
+     "cs": [
+      "Probiotický jogurt",
+      "Jogurt se syrovátkou"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/yogurt.jpg"
+    },
+    "honey": {
+     "cs": [
+      "Extra syrovátka a med",
+      "Med zjemňuje pokožku"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/honey.jpg"
+    },
+    "whey": {
+     "cs": [
+      "Syrovátka",
+      "Na každodenní mytí"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/milk.jpg"
+    },
+    "citrus": {
+     "cs": [
+      "Citrus",
+      "Sprchový gel a šampon 2v1"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/citrus.jpg"
+    },
+    "flowers": {
+     "cs": [
+      "Květinová",
+      "Levandule, ylang ylang, šeřík"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "calendulaMandarin": {
+     "cs": [
+      "Měsíček a mandarinka",
+      "Zklidnění a dobrá nálada"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mandarin.jpg"
+    },
+    "punch": {
+     "cs": [
+      "Punč",
+      "Skořice, hřebíček, pomeranč"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/xmas-spices.jpg"
+    },
+    "matcha": {
+     "cs": [
+      "Matcha a grep",
+      "Na regeneraci po náročném dni"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/matcha.jpg"
+    }
+   }
+  }
+ ],
+ "scenes": {
+  "category:face": "/assets/n447-kozmetika2/scenes/face-routine.jpg",
+  "category:soap": "/assets/n447-kozmetika2/scenes/hand-wash.jpg",
+  "category:body": "/assets/scenes/hands-cream.jpg",
+  "category:bath": "/assets/n447-kozmetika2/scenes/sea-salt.jpg",
+  "kind:Séra a krémy": "/assets/scenes/serum-drop.jpg",
+  "kind:Pěstící oleje": "/assets/scenes/oil-palm.jpg",
+  "kind:Masážní rituál": "/assets/n447-kozmetika2/scenes/face-massage.jpg",
+  "kind:Krémy na ruce": "/assets/scenes/hands-cream.jpg",
+  "kind:Sprchový gel a šampon": "/assets/n447-kozmetika2/scenes/body-shower.jpg"
+ },
+ "addons": [
+  {
+   "categories": [
+    "face"
+   ],
+   "kinds": [
+    "Pěstící oleje",
+    "Séra a krémy"
+   ],
+   "ids": [
+    "moravite-gua-sha-ruzenin",
+    "moravite-masazni-valecek-ruzenin"
+   ],
+   "sk": "K masáži: gua sha alebo valček z ruženínu.",
+   "cs": "K masáži pleti: gua sha nebo váleček z růženínu."
+  },
+  {
+   "categories": [
+    "face"
+   ],
+   "kinds": [
+    "Séra a krémy",
+    "Pěstící oleje"
+   ],
+   "ids": [
+    "moravite-konjac-houbicka-pletova"
+   ],
+   "sk": "K čisteniu: konjaková hubka.",
+   "cs": "Před aplikací: konjac houbička na pleť."
+  },
+  {
+   "categories": [
+    "face"
+   ],
+   "kinds": [
+    "Masážní rituál"
+   ],
+   "ids": [
+    "moravite-pestici-olej-opuncie",
+    "moravite-masazni-spice"
+   ],
+   "sk": "K masáži: olej alebo špica.",
+   "cs": "K masáži: pěstící olej Opuncie nebo špice z růženínu."
+  },
+  {
+   "categories": [
+    "soap"
+   ],
+   "kinds": [
+    "Mýdla"
+   ],
+   "ids": [
+    "moravite-drevena-mydlenka-kopirovat",
+    "moravite-keramicka-mydlenka"
+   ],
+   "sk": "K mydlu: mydelnička.",
+   "cs": "K mýdlu: dřevěná nebo keramická mýdlenka, aby mýdlo vydrželo déle."
+  }
+ ],
+ "k2Css": "html body #cosmetics-root#cosmetics-root#cosmetics-root .cx-widget-brand img.cx-logo{filter:invert(1)!important;height:40px!important;width:auto!important}html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-open .cx-company-message-logo{filter:invert(1)!important;width:62px!important;height:62px!important}"
+}

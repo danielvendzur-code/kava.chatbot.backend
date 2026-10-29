@@ -11,10 +11,12 @@ import '../n447/kozmetika2/catalogues/akh.js';
 import '../n447/kozmetika2/catalogues/libebit.js';
 import '../n447/kozmetika2/catalogues/naturinka.js';
 import '../n447/kozmetika2/catalogues/goodie.js';
+import '../n447/kozmetika2/catalogues/moravite.js';
 import {aiAnswer} from './ai-chat.js';
 
 const BRANDS = {
   /* K2_BRANDS */
+  moravite: {brand: "Moravité", web: "https://moravite.cz/"},
   goodie: {brand: "Goodie", web: "https://www.goodie.cz/"},
   naturinka: {brand: "NATURINKA", web: "https://www.naturinka.cz/"},
   libebit: {brand: "libebit", web: "https://www.libebit.cz/"},
