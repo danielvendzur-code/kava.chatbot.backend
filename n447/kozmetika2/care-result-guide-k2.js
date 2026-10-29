@@ -19,6 +19,7 @@
    return ({cleanser:t('Čistiaci krok vašej starostlivosti.','Čisticí krok vaší péče.'),serum:t('Sérum ako cielený krok starostlivosti.','Sérum jako cílený krok péče.'),cream:t('Krémový krok starostlivosti.','Krémový krok péče.'),oil:t('Starostlivosť s olejovým základom.','Péče s olejovým základem.'),shampoo:t('Na umývanie vlasov a pokožky hlavy.','Pro mytí vlasů a pokožky hlavy.'),conditioner:t('Starostlivosť o vlasy po umytí.','Péče o vlasy po umytí.'),dryShampoo:t('Suchý šampón na osvieženie vlasov medzi umytiami.','Suchý šampon pro osvěžení vlasů mezi mytím.')})[r]||'';
   }
   function routine(p){const r=role(p);if(!['face','body','hair','eyes','lips','beard'].includes(p.category))return '';
+   if(r==='shampoo'&&!(opts.all||products).some(x=>x.available!==false&&role(x)==='conditioner'))return '';/* k2: kondicionér spomenúť iba keď ho e-shop predáva */
    if(r==='shampoo')return t('Po umytí môžete starostlivosť doplniť kondicionérom podľa potrieb vlasov.','Po umytí můžete péči doplnit kondicionérem podle potřeb vlasů.');
    if(r==='conditioner')return t('Kondicionér patrí do starostlivosti po umytí vlasov. Rozsah použitia a oplachovanie sa riaďte návodom konkrétneho produktu.','Kondicionér patří do péče po umytí vlasů. Rozsah použití a oplachování se řídí návodem konkrétního produktu.');
    if(r==='dryShampoo')return t('Používajte ho medzi umytiami podľa návodu. Suchý šampón nenahrádza bežné umývanie.','Používejte ho mezi mytím podle návodu. Suchý šampon nenahrazuje běžné mytí.');

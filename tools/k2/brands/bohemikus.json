@@ -1,0 +1,285 @@
+{
+ "slug": "bohemikus",
+ "lang": "cs",
+ "name": "Bohemikus",
+ "domain": "bohemikus.cz",
+ "website": "https://bohemikus.cz/",
+ "shopUrl": "https://bohemikus.cz/",
+ "theme": {
+  "brand": "#2f2a3a",
+  "accent": "#8e3a8e",
+  "soft": "#f5ebdf",
+  "paper": "#ffffff",
+  "ink": "#1f1b24",
+  "line": "#e9dccb"
+ },
+ "logo": "/assets/n447-kozmetika2/bohemikus/logo.png",
+ "heroProductId": "bohemikus-jogurtove-mydlo-vzacna-divoska",
+ "contact": "info@bohemikus.cz",
+ "contactSource": "https://bohemikus.cz/ (patička webu)",
+ "ownerNote": "Ručně vařená mýdla bez palmového oleje a tuhé šampony — výběr podle toho, co pokožka potřebuje, i hotové dárkové sady.",
+ "benefit": [
+  "Výběr ze solných, jogurtových a přírodních mýdel Bohemikus",
+  "Hotové sady i vlastní sestava mýdlo + šampon",
+  "Dotazy i mimo otevírací dobu"
+ ],
+ "noProfileGoal": true,
+ "chatTags": {},
+ "chips": [
+  "Máte jogurtové mýdlo?",
+  "Hledám tuhý šampon",
+  "Máte mýdlo s aktivním uhlím?",
+  "Máte dárkovou sadu?"
+ ],
+ "labels": {
+  "soap": "Mýdla",
+  "hair": "Tuhé šampony",
+  "family": "Co má mýdlo umět",
+  "focus": "Složení a vůně",
+  "scope": "Produkt"
+ },
+ "excluded": [
+  "masti z Domácí lékárny (bambucké máslo s kostivalem, se zinkem, s měsíčkem) – zdravotní použití mimo výběr",
+  "poloviční mýdla 40 g a šampony 32 g",
+  "EkoDomácnost, deodoranty a dárkové poukazy",
+  "aktuálně nedostupné produkty (např. Skořicové mýdlo)"
+ ],
+ "facetDefs": [
+  {
+   "key": "family",
+   "cs": [
+    "Co má mýdlo umět?",
+    "Podle popisu mýdla na e-shopu Bohemikus."
+   ],
+   "values": {
+    "gentle": {
+     "cs": [
+      "Jemné pro citlivou pokožku",
+      "Jogurt, med, neparfémované"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/skin-sensitive.jpg"
+    },
+    "problem": {
+     "cs": [
+      "Na problematickou pleť",
+      "Aktivní uhlí, santal, patchouli"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-blemish.jpg",
+      "position": "50% 35%"
+     }
+    },
+    "lavender": {
+     "cs": [
+      "Levandulová vůně",
+      "Mýdla i levandulové sady"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender-bunch.jpg"
+    },
+    "care": {
+     "cs": [
+      "Výživa a jemný peeling",
+      "Růžové dřevo, mletá káva"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/coffee-beans.jpg"
+    },
+    "sets": {
+     "cs": [
+      "Sady na vyzkoušení a dárky",
+      "Všechna solná nebo jogurtová mýdla"
+     ],
+     "photo": "/assets/scenes/gift-care.jpg"
+    }
+   }
+  },
+  {
+   "key": "focus",
+   "cs": [
+    "Které vyberete?",
+    "Podle hlavní složky nebo vůně mýdla."
+   ],
+   "values": {
+    "yogurt": {
+     "cs": [
+      "Jogurtové – čisté",
+      "Neparfémované, i pro extra citlivou pokožku"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/yogurt.jpg"
+    },
+    "honey": {
+     "cs": [
+      "Medová princezna",
+      "Med, mandlový a jojobový olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/honey.jpg"
+    },
+    "unscented": {
+     "cs": [
+      "Bílá paní",
+      "Solné, neparfémované, kakaové máslo"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cocoa.jpg"
+    },
+    "almond": {
+     "cs": [
+      "Vzácná divoška",
+      "Jogurt, ylang-ylang a mandlový olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/almonds.jpg"
+    },
+    "charcoal": {
+     "cs": [
+      "Černá perla",
+      "Aktivní uhlí a tea tree"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/charcoal.jpg"
+    },
+    "sandal": {
+     "cs": [
+      "Santalový divoch",
+      "Santalový prášek a vavřínový olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sandalwood.jpg"
+    },
+    "dragon": {
+     "cs": [
+      "Dračí bojovnice",
+      "Patchouli, cedr a dračí krev"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/incense.jpg"
+    },
+    "provence": {
+     "cs": [
+      "Lady Provence",
+      "Levandule a olivový olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "south": {
+     "cs": [
+      "Královna jihu",
+      "Solné, levandule a bergamot"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sea-salt.jpg"
+    },
+    "lavSyrup": {
+     "cs": [
+      "Levandulová sada se sirupem",
+      "Dvě mýdla + levandulový sirup"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender-field.jpg"
+    },
+    "lavXXL": {
+     "cs": [
+      "Levandulová sada XXL",
+      "Mýdla, sirup, máslo, sušená levandule"
+     ],
+     "photo": "/assets/scenes/gift-care.jpg"
+    },
+    "rose": {
+     "cs": [
+      "Královna růží",
+      "Solné, olej z růžového dřeva"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose.jpg"
+    },
+    "coffee": {
+     "cs": [
+      "Lady Mocca",
+      "Mletá káva a kakaové máslo"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/coffee-scrub-leg.jpg"
+    },
+    "coffeeSet": {
+     "cs": [
+      "Kávová sada",
+      "Lady Mocca + káva z Ústecké pražírny"
+     ],
+     "photo": "/assets/scenes/coffee-beans.jpg"
+    },
+    "saltTrio": {
+     "cs": [
+      "Sada solných mýdel",
+      "Všechna tři solná, menší kusy"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sea-salt.jpg"
+    },
+    "yogurtFour": {
+     "cs": [
+      "Sada jogurtových mýdel",
+      "Čtyři malá jogurtová mýdla"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/yogurt.jpg"
+    },
+    "yogurtGift": {
+     "cs": [
+      "Dárková jogurtová malá",
+      "Čtyři mýdla v dárkové krabičce"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/milk.jpg"
+    },
+    "queens": {
+     "cs": [
+      "Dárková sada Královny",
+      "Tři velká solná mýdla"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose-bath.jpg"
+    },
+    "nettle": {
+     "cs": [
+      "Kopřiva a ovesné hedvábí",
+      "Pomáhá s mastnými vlasy"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/nettle.jpg"
+    },
+    "chamomile": {
+     "cs": [
+      "Heřmánek a ovesné hedvábí",
+      "Normální a mastné vlasy"
+     ],
+     "photo": "/assets/n447/scenes/calm-chamomile.jpg"
+    },
+    "neemMint": {
+     "cs": [
+      "Neem a máta",
+      "Normální a mastné vlasy, svěží"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
+    }
+   }
+  }
+ ],
+ "scenes": {
+  "category:soap": "/assets/n447-kozmetika2/scenes/hand-wash.jpg",
+  "category:hair": "/assets/n447-kozmetika2/scenes/hair-shampoo-foam.jpg"
+ },
+ "addons": [
+  {
+   "categories": [
+    "soap"
+   ],
+   "kinds": [
+    "Mýdla"
+   ],
+   "ids": [
+    "bohemikus-tuhy-sampon-s-koprivou-a-ovesnym-hedvabim"
+   ],
+   "sk": "K mydlu: tuhý šampón z rovnakej mydlárne.",
+   "cs": "Do koupelny k mýdlu: tuhý šampon ze stejné mydlárny."
+  },
+  {
+   "categories": [
+    "hair"
+   ],
+   "kinds": [
+    "Tuhé šampony"
+   ],
+   "ids": [
+    "bohemikus-jogurtove-mydlo-ciste"
+   ],
+   "sk": "K šampónu: jemné jogurtové mydlo.",
+   "cs": "K šamponu: jemné jogurtové mýdlo na tělo."
+  }
+ ],
+ "k2Css": "html body #cosmetics-root#cosmetics-root#cosmetics-root .cx-widget-brand img.cx-logo{background:#fff!important;filter:none!important;border-radius:9px!important;padding:4px 7px!important;height:38px!important;width:auto!important;box-sizing:border-box!important}"
+}

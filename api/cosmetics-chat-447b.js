@@ -12,10 +12,12 @@ import '../n447/kozmetika2/catalogues/libebit.js';
 import '../n447/kozmetika2/catalogues/naturinka.js';
 import '../n447/kozmetika2/catalogues/goodie.js';
 import '../n447/kozmetika2/catalogues/moravite.js';
+import '../n447/kozmetika2/catalogues/bohemikus.js';
 import {aiAnswer} from './ai-chat.js';
 
 const BRANDS = {
   /* K2_BRANDS */
+  bohemikus: {brand: "Mydlárna Bohemikus", web: "https://bohemikus.cz/"},
   moravite: {brand: "Moravité", web: "https://moravite.cz/"},
   goodie: {brand: "Goodie", web: "https://www.goodie.cz/"},
   naturinka: {brand: "NATURINKA", web: "https://www.naturinka.cz/"},
