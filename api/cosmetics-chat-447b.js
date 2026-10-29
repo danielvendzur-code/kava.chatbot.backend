@@ -14,10 +14,12 @@ import '../n447/kozmetika2/catalogues/goodie.js';
 import '../n447/kozmetika2/catalogues/moravite.js';
 import '../n447/kozmetika2/catalogues/bohemikus.js';
 import '../n447/kozmetika2/chat-guard-k2.js';
+import '../n447/kozmetika2/catalogues/musk.js';
 import {aiAnswer} from './ai-chat.js';
 
 const BRANDS = {
   /* K2_BRANDS */
+  musk: {brand: "MusK", web: "https://www.musk.sk/sk"},
   bohemikus: {brand: "Bohemikus", web: "https://bohemikus.cz/"},
   moravite: {brand: "Moravité", web: "https://moravite.cz/"},
   goodie: {brand: "Goodie", web: "https://www.goodie.cz/"},
@@ -46,6 +48,7 @@ export function draftReply(slug, text, history = []) {
 function draft(slug, catalogue, text, history) {
   const g = globalThis.CXK2ChatGuard?.guard(catalogue, text, BRANDS[slug]?.brand || slug);
   if (g) {
+    if (g.products.length && g.deterministic) return {text: g.draft, guard: g, sub: {...catalogue, products: g.products}};
     if (g.products.length) {
       const sub = {...catalogue, products: g.products};
       const reply = brainReply(slug + '|' + g.products.map((p) => p.id).join(','), sub, text, history);

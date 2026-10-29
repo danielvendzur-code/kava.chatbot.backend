@@ -9,51 +9,51 @@
 
   // Zložky a vône: kľúč, popis (sk, cs), regex nad normalizovaným textom.
   const TERMS = [
-    ['lavender', 'levanduľa', 'levandule', /\blevandul|\blavend/],
+    ['lavender', 'levanduľa', 'levandule', /\blevandul|\blavend|\blavandul/],
     ['calendula', 'nechtík (měsíček)', 'měsíček', /\bmesic(ek|k)|\bnechtik|\bcalendul/],
-    ['rose', 'ruža', 'růže', /\bruz(e|i|a|ou|emi)\b|\bruzov|\bruzi\b|\brose\b|\broses\b/],
+    ['rose', 'ruža', 'růže', /\bruz(e|i|a|ou|emi)\b|\bruzov|\bruzi\b|\brose\b|\broses\b|\brosa (damascena|centifolia|alba|gallica)/],
     ['coffee', 'káva', 'káva', /\bkav(a|y|u|ou|e|ov\w*)\b|\bcoffee/],
-    ['coconut', 'kokos', 'kokos', /\bkokos|\bcoconut/],
+    ['coconut', 'kokos', 'kokos', /\bkokos|\bcoconut|\bcocos nucifera/],
     ['vanilla', 'vanilka', 'vanilka', /\bvanil/],
-    ['honey', 'med', 'med', /\bmed(u|em|ov[aey]|ovy|ova|ove)?\b|\bhoney/],
-    ['lemonBalm', 'medovka', 'meduňka', /\bmedovk|\bmedunk|\blemon ?balm/],
+    ['honey', 'med', 'med', /\bmed(u|em|ov[aey]|ovy|ova|ove)?\b|\bhoney|\bmel\b/],
+    ['lemonBalm', 'medovka', 'meduňka', /\bmedovk|\bmedunk|\blemon ?balm|\bmelissa/],
     ['yogurt', 'jogurt', 'jogurt', /\bjogurt|\byogh?urt/],
     ['whey', 'srvátka', 'syrovátka', /\bsyrovat|\bsrvatk/],
     ['charcoal', 'aktívne uhlie', 'aktivní uhlí', /\buhli(e|m)?\b|\bcharcoal/],
     ['salt', 'soľ', 'sůl', /\bsoln|\bsul\b|\bsol\b|\bsoli\b|\bsalt/],
     ['citrus', 'citrus', 'citrus', /\bcitrus|\bcitron(?!ov\w* trav)/],
-    ['orange', 'pomaranč', 'pomeranč', /\bpomer?anc|\bpomaranc|\borange/],
-    ['mandarin', 'mandarínka', 'mandarinka', /\bmandarin/],
-    ['grapefruit', 'grep', 'grep', /\bgrep|\bgrapefruit/],
+    ['orange', 'pomaranč', 'pomeranč', /\bpomer?anc|\bpomaranc|\borange|\bcitrus aurantium dulcis|\bcitrus sinensis/],
+    ['mandarin', 'mandarínka', 'mandarinka', /\bmandarin|\bcitrus reticulata/],
+    ['grapefruit', 'grep', 'grep', /\bgrep|\bgrapefruit|\bcitrus paradisi/],
     ['matcha', 'matcha', 'matcha', /\bmatch/],
     ['opuntia', 'opuncia', 'opuncie', /\bopunc|\bopunti/],
     ['buckthorn', 'rakytník', 'rakytník', /\brakytn|\bbuckthorn/],
     ['nettle', 'žihľava', 'kopřiva', /\bkopriv|\bzihlav|\bnettle/],
-    ['chamomile', 'harmanček', 'heřmánek', /\bhermank|\bhermanek|\bharmanc|\bchamomil/],
-    ['mint', 'mäta', 'máta', /\bmat(a|ou|y|u)\b|\bmatov|\bmint/],
+    ['chamomile', 'harmanček', 'heřmánek', /\bhermank|\bhermanek|\bharmanc|\bchamomil|\bchamomilla|\bmatricaria/],
+    ['mint', 'mäta', 'máta', /\bmat(a|ou|y|u)\b|\bmatov|\bmint|\bmentha/],
     ['neem', 'neem', 'neem', /\bneem/],
     ['sandal', 'santal', 'santal', /\bsantal|\bsandal/],
     ['eucalyptus', 'eukalyptus', 'eukalyptus', /\beukalypt|\beucalypt/],
-    ['rosemary', 'rozmarín', 'rozmarýn', /\brozmar|\brosemar/],
-    ['teatree', 'čajovník', 'čajovník', /\bcajovn|\btea.?tree/],
+    ['rosemary', 'rozmarín', 'rozmarýn', /\brozmar|\brosemar|\brosmarin/],
+    ['teatree', 'čajovník', 'čajovník', /\bcajovn|\btea.?tree|\bmelaleuca/],
     ['aloe', 'aloe', 'aloe', /\baloe/],
     ['argan', 'argan', 'argan', /\bargan/],
-    ['jojoba', 'jojoba', 'jojoba', /\bjojob/],
-    ['shea', 'bambucké maslo', 'bambucké máslo', /\bbambuck|\bshea\b|\bkarite/],
-    ['cocoa', 'kakao', 'kakao', /\bkakao|\bkakaov|\bcocoa/],
+    ['jojoba', 'jojoba', 'jojoba', /\bjojob|\bsimmondsia/],
+    ['shea', 'bambucké maslo', 'bambucké máslo', /\bbambuck|\bshea\b|\bkarite|\bbutyrospermum/],
+    ['cocoa', 'kakao', 'kakao', /\bkakao|\bkakaov|\bcocoa|\btheobroma/],
     ['chocolate', 'čokoláda', 'čokoláda', /\bcokolad|\bchoco/],
     ['cinnamon', 'škorica', 'skořice', /\bskoric|\bcinnamon/],
     ['clove', 'klinček', 'hřebíček', /\bhrebic|\bklinc|\bclove/],
-    ['ylang', 'ylang-ylang', 'ylang-ylang', /\bylang/],
-    ['patchouli', 'pačuli', 'pačuli', /\bpacul|\bpatchoul/],
+    ['ylang', 'ylang-ylang', 'ylang-ylang', /\bylang|\bcananga/],
+    ['patchouli', 'pačuli', 'pačuli', /\bpacul|\bpatchoul|\bpogostemon/],
     ['clay', 'íl', 'jíl', /\bjil(u|em|y|ov\w*)?\b|\bil(u|om|y)?\b|\bclay/],
-    ['hemp', 'konope', 'konopí', /\bkonop|\bhemp|\bcbd\b/],
-    ['rosehip', 'šípky', 'šípek', /\bsipk|\bsipek|\brosehip/],
-    ['avocado', 'avokádo', 'avokádo', /\bavokad|\bavocad/],
+    ['hemp', 'konope', 'konopí', /\bkonop|\bhemp|\bcbd\b|\bcannabis/],
+    ['rosehip', 'šípky', 'šípek', /\bsipk|\bsipek|\brosehip|\brosa canina|\brosa moschata/],
+    ['avocado', 'avokádo', 'avokádo', /\bavokad|\bavocad|\bpersea/],
     ['turmeric', 'kurkuma', 'kurkuma', /\bkurkum|\bturmeric/],
     ['ginger', 'zázvor', 'zázvor', /\bzazvor|\bginger/],
-    ['bergamot', 'bergamot', 'bergamot', /\bbergamot/],
-    ['lemongrass', 'citrónová tráva', 'citronová tráva', /\bcitronov\w* trav|\blemongrass|\blemon grass/],
+    ['bergamot', 'bergamot', 'bergamot', /\bbergamot|\bcitrus aurantium bergamia|\bcitrus bergamia/],
+    ['lemongrass', 'citrónová tráva', 'citronová tráva', /\bcitronov\w* trav|\blemongrass|\blemon grass|\bcymbopogon/],
     ['oat', 'ovos', 'oves', /\bovos|\bovs|\boves|\bovesn|\boat/],
     ['goat', 'kozie mlieko', 'kozí mléko', /\bkoz(i|ie)\b|\bgoat/],
     ['milk', 'mlieko', 'mléko', /\bmlek|\bmliek|\bmilk/],
@@ -70,7 +70,7 @@
     ['seaweed', 'riasa', 'řasa', /\bras(a|y|ou)\b|\brias(a|y|ou)\b|\bspirulin|\bseaweed/],
     ['jasmine', 'jazmín', 'jasmín', /\bjasmin|\bjazmin/],
     ['cedar', 'céder', 'cedr', /\bcedr|\bceder/],
-    ['almond', 'mandľa', 'mandle', /\bmandl|\bmandel|\balmond/],
+    ['almond', 'mandľa', 'mandle', /\bmandl|\bmandel|\balmond|\bprunus amygdalus/],
     ['apricot', 'marhuľa', 'meruňka', /\bmarhul|\bmerunk|\bapricot/],
     ['immortelle', 'slamiha', 'smil', /\bslamih|\bsmil\b|\bimmortel/],
     ['men', 'pre mužov', 'pro muže', /\bmuz(i|um|ov|om)\b|\bmuzsk|\bpr[oe] muz|\bpansk|\bpro pany|\bpre panov|\bgentlem|\bfor men\b/],
@@ -119,7 +119,7 @@
   }
 
   const TAGWORDS = {oily: 'mastne oily', dry: 'suche dry', sensitive: 'citlive sensitive', acne: 'akne problematicka', mature: 'zrala zrela mature', normal: 'normalni normalne', combination: 'smisena zmiesana'};
-  const hay = (p) => norm([p.name, p.description, p.reason, p.kind, p.variantLabel, p.k2Terms, (p.tags || []).map((t) => TAGWORDS[t] || t).join(' ')].join(' | '));
+  const hay = (p) => norm([p.name, p.description, p.reason, p.kind, p.variantLabel, p.k2Terms, p.k2Inci, (p.tags || []).map((t) => TAGWORDS[t] || t).join(' ')].join(' | '));
   const typeHay = (p) => norm([p.name, p.kind, p.category === 'sets' ? 'sada' : ''].join(' | '));
   const typeOk = (p, types) => !types.length || types.some((t) => t.re.test(typeHay(p)) || (t.key === 'set' && p.category === 'sets'));
   const termsOk = (p, terms) => terms.every((t) => t.re.test(hay(p)));
@@ -146,7 +146,11 @@
     const withTerms = matched;
     const withType = withTerms.filter((p) => typeOk(p, types));
     const fit = best(withType.filter((p) => budget == null || (Number.isFinite(p.priceAmount) && p.priceAmount <= budget)));
-    const score = (p) => terms.reduce((s, t) => s + (t.re.test(norm(p.name)) ? 2 : 1), 0) + (p.category === 'sets' && !types.some((t) => t.key === 'set') ? -1 : 0);
+    // poradie: zložka v názve > v titulku overeného zaradenia > na začiatku popisu > inde; sady až za jednotlivými produktmi
+    const at = (re, text) => { const m = norm(text).match(re); return m ? m.index : -1; };
+    const near = (re, text, w) => { const i = at(re, text); return i < 0 ? 0 : Math.max(0.2, 1 - i / w); };
+    const score = (p) => terms.reduce((s, t) => s + (t.re.test(norm(p.name)) ? 6 : 0) + 4 * near(t.re, String(p.k2Terms || '').split('|').slice(0, 2).join(' '), 60)
+      + 3 * near(t.re, p.description, 140) + (t.re.test(hay(p)) ? 1 : 0), 0) + (p.category === 'sets' && !types.some((t) => t.key === 'set') ? -3 : 0);
     const ranked = fit.slice().sort((a, b) => score(b) - score(a) || (a.priceAmount ?? 1e9) - (b.priceAmount ?? 1e9));
     const asked = [label(terms), label(rawTypes), budget != null ? L('do ', 'do ') + budget + (cs ? ' Kč' : ' €') : ''].filter(Boolean).join(', ');
 
@@ -157,7 +161,7 @@
     if (ranked.length) {
       const top = ranked.slice(0, 3);
       const more = ranked.length - top.length;
-      return {products: ranked, draft: L(`Z ponuky ${brand} vašej požiadavke (${asked}) zodpovedá: `, `Z nabídky ${brand} vaší poptávce (${asked}) odpovídá: `)
+      return {products: ranked, deterministic: terms.length > 0, draft: L(`Z ponuky ${brand} vašej požiadavke (${asked}) zodpovedá: `, `Z nabídky ${brand} vaší poptávce (${asked}) odpovídá: `)
         + top.map(line).join(' ') + (more > 0 ? L(` Ďalšie vhodné: ${more}.`, ` Další vhodné: ${more}.`) : ''), strict: true};
     }
     // Nič presne nevyhovuje – povieme to a nič iné nepodstrčíme. Môžeme uviesť, kde zložka JE (rovnaká požiadavka, iný typ).

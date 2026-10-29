@@ -34,7 +34,7 @@ def for_chat(p):
     # k2Terms: overené zaradenie (popis voľby „focus“, obsah sady) – aby chat našiel zložku/vôňu aj keď nie je v prvej vete popisu
     lang = 'cs' if cs else 'sk'
     words = []
-    for d in cfg.get('facetDefs', []):
+    for d in sorted(cfg.get('facetDefs', []), key=lambda d: d['key'] != 'focus'):  # konkrétna voľba (focus) ako prvá
         if d['key'] != 'focus' and not d.get('early'): continue
         if d['key'] == 'scope': continue
         vals = (q.get('facets') or {}).get(d['key'])
@@ -44,6 +44,8 @@ def for_chat(p):
     words += (q.get('set') or {}).get('containsNames') or []
     if words:
         q['k2Terms'] = ' | '.join(words)
+    if q.get('inci'):
+        q['k2Inci'] = q.pop('inci')
     if tags:
         q['tags'] = sorted(tags); q['source']['suitabilityEvidence'] = ev or {t: True for t in tags}
     return q

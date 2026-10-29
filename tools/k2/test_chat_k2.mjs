@@ -28,6 +28,12 @@ const CASES = [
   {slug: 'goodie', q: 'Máte něco s matchou?', must: ['Matcha']},
   {slug: 'goodie', q: 'Hledám koupelovou sůl s eukalyptem', must: ['Epsomská sůl s eukalyptem'], not: ['Bath bomb']},
   {slug: 'akh', q: 'Máte něco s levandulí?', must: ['LEVANDUL|Levandul']},
+  {slug: 'musk', q: 'Máte levanduľové mydlo?', must: ['VÔŇA PROVENCE|SOĽNÝ KVET'], not: ['ČIERNE ZLATO', 'DŽENTLMEN']},
+  {slug: 'musk', q: 'Máte mydlo bez vône?', must: ['AŽ NA KOŽU|NEŽNÝ DOTYK'], not: ['VÔŇA PROVENCE', 'ČIERNE ZLATO']},
+  {slug: 'musk', q: 'Hľadám šampón na mastné vlasy', must: ['SVIEŽE RÁNO'], not: ['KAPITÁN', 'LÁSKYKVET']},
+  {slug: 'musk', q: 'Hľadám olej na suchú pleť', must: ['AVOKÁDOVÝ|BORÁKOVÝ|ŠÍPKOVÝ'], not: ['KONOPNÝ', 'JOJOBOVÝ']},
+  {slug: 'musk', q: 'Máte mydlo s mätou do 5 €?', maxPrice: 5, not: ['VÔŇA PROVENCE']},
+  {slug: 'musk', q: 'Máte niečo s kokosovým mliekom a vanilkou?', none: true},
   // bez konkrétnej požiadavky sa strážca nezapína (zdieľaný mozog odpovedá ako doteraz)
   {slug: 'moravite', q: 'Může mi poradit, jak vypadá doprava zdarma do 1399 Kč?', guard: false},
   {slug: 'andreine447', q: 'Vypadávajú mi vlasy', must: ['rast vlasov']},
