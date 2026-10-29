@@ -1,0 +1,68 @@
+{
+ "slug": "andreine", "lang": "sk", "name": "Andreine", "domain": "andreine.com", "website": "https://andreine.com/",
+ "shopUrl": "https://andreine.com/collections/all",
+ "theme": {"brand": "#404436", "accent": "#FF6F50", "soft": "#fcf8f5", "paper": "#ffffff", "ink": "#282828", "line": "#e9e1d8"},
+ "logo": "/assets/n447-kozmetika2/andreine/logo-darkgreen.svg",
+ "heroProductId": "andreine-growth-shampoo-1",
+ "contact": "eshop@andreine.com", "contactSource": "https://andreine.com/policies/contact-information",
+ "ownerNote": "Šampóny, toniká, masky, styling aj hotové sady — výber podľa toho, čo vlasy trápi.",
+ "benefit": ["Výber z konkrétnych produktov a sád", "Fotografie, zloženie sád a ceny z e-shopu", "Otázky aj mimo otváracích hodín"],
+ "noProfileGoal": true,
+ "chatTags": {"hairNeed": {"oily": ["oily"], "dryScalp": ["dry"]}},
+ "chips": ["Vypadávajú mi vlasy", "Mám mastné vlasy", "Mám kučeravé vlasy", "Aké máte sady?"],
+ "labels": {"hair": "Vlasy", "body": "Telo a sprcha", "baby": "Pre deti", "men": "Pre mužov", "hairNeed": "Vaše vlasy", "scope": "Rutina alebo produkt", "focus": "Zameranie"},
+ "excluded": ["darčekové poukazy a trichologické vyšetrenie (nie produkt)", "doplnky stravy (Daily Ritual, Gray be gone) – nie kozmetika", "vzorky 5–7 ml a darčeky zadarmo", "náhradné filtre do sprchovej hlavice", "90 day hair challenge (program)"],
+ "facetDefs": [
+  {"key": "hairNeed", "early": true, "sk": ["Čo vás na vlasoch najviac trápi?", "Vyberte to najdôležitejšie – podľa kolekcií Andreine."],
+   "values": {
+    "loss": {"sk": ["Vypadávanie a rednutie", "Vlasy padajú alebo rednú"], "photo": "/assets/n447-kozmetika2/scenes/hair-loss-brush.jpg"},
+    "oily": {"sk": ["Rýchlo sa mastia", "Mastná pokožka hlavy"], "photo": {"photo": "/assets/n447-kozmetika2/scenes/hair-roots.jpg", "position": "60% 30%"}},
+    "dryScalp": {"sk": ["Suchá alebo svrbiaca pokožka hlavy", "Aj suchá seborea"], "photo": {"photo": "/assets/n447-kozmetika2/scenes/scalp-hands.jpg", "position": "50% 20%"}},
+    "damaged": {"sk": ["Poškodené alebo farbené vlasy", "Suché, namáhané dĺžky"], "photo": "/assets/n447-kozmetika2/scenes/hair-ends-dry.jpg"},
+    "fine": {"sk": ["Jemné vlasy bez objemu", "Chýba im objem a sila"], "photo": {"photo": "/assets/n447-kozmetika2/scenes/hair-fine.jpg", "position": "50% 25%"}},
+    "curly": {"sk": ["Kučeravé vlasy", "Hydratácia a tvar kučier"], "photo": "/assets/n447-kozmetika2/scenes/hair-curly.jpg"},
+    "styling": {"sk": ["Styling a úprava", "Fixácia, uhladenie, ochrana pred teplom"], "photo": "/assets/n447-kozmetika2/scenes/hair-styling.jpg"}
+   }},
+  {"key": "scope", "early": true, "sk": ["Celú rutinu, alebo jeden produkt?", "Hotová sada od Andreine alebo konkrétny krok starostlivosti."],
+   "values": {
+    "set": {"sk": ["Celú rutinu", "Hotová sada od Andreine"], "photo": {"photo": "/assets/n447-kozmetika2/scenes/hair-turban.jpg", "position": "50% 20%"}},
+    "single": {"sk": ["Jeden produkt", "Vyberiem konkrétny krok"], "photo": "/assets/n447-kozmetika2/scenes/hair-serum-dropper.jpg"}
+   }},
+  {"key": "focus", "sk": ["Čo má produkt hlavne robiť?", "Podľa toho, na čo ho Andreine určuje v názve."],
+   "values": {
+    "growth": {"sk": ["Podpora rastu vlasov", "Produkt „na rast vlasov“"], "photo": {"photo": "/assets/n447-kozmetika2/scenes/hair-long.jpg", "position": "50% 40%"}},
+    "volume": {"sk": ["Objem vlasov", "Šampón na objem"], "photo": "/assets/n447-kozmetika2/scenes/hair-volume.jpg"},
+    "scalp": {"sk": ["Pokožka hlavy", "Revitalizácia a problematická pokožka hlavy"], "photo": "/assets/n447-kozmetika2/scenes/scalp-massage.jpg"},
+    "hydration": {"sk": ["Hydratácia", "Hydratačný produkt"], "photo": "/assets/n447-kozmetika2/scenes/hair-wet.jpg"},
+    "repair": {"sk": ["Poškodené a farbené vlasy", "Obnova namáhaných vlasov"], "photo": "/assets/n447-kozmetika2/scenes/hair-ends-trim.jpg"},
+    "nutrition": {"sk": ["Výživa suchých vlasov", "Vyživujúca starostlivosť"], "photo": "/assets/n447-kozmetika2/scenes/hair-touch.jpg"},
+    "strength": {"sk": ["Oslabené vlasy", "Proteínová starostlivosť"], "photo": "/assets/n447-kozmetika2/scenes/hair-braid.jpg"},
+    "light": {"sk": ["Jemné a elektrizujúce vlasy", "Ľahká starostlivosť"], "photo": "/assets/n447-kozmetika2/scenes/hair-light.jpg"},
+    "smooth": {"sk": ["Nepoddajné vlasy", "Uhladenie"], "photo": "/assets/n447-kozmetika2/scenes/hair-smooth.jpg"},
+    "dry": {"sk": ["Suché vlasy", "Starostlivosť o suché dĺžky"], "photo": "/assets/n447-kozmetika2/scenes/hair-ends-dry.jpg"},
+    "oilControl": {"sk": ["Rýchlo sa mastiaca pokožka", "Tonikum na rýchlo mastiacu sa pokožku"], "photo": {"photo": "/assets/n447-kozmetika2/scenes/hair-roots.jpg", "position": "60% 30%"}},
+    "hairSkin": {"sk": ["Olej na vlasy aj pleť", "Viacúčelový olej"], "photo": "/assets/n447-kozmetika2/scenes/hair-oil.jpg"},
+    "silk": {"sk": ["Hodvábny olej", "Silk Oil"], "photo": "/assets/n447-kozmetika2/scenes/hair-silk.jpg"},
+    "hold": {"sk": ["Fixácia účesu", "Sprej alebo gél"], "photo": "/assets/n447-kozmetika2/scenes/hair-spray.jpg"},
+    "heat": {"sk": ["Ochrana pred teplom", "Pred fénom a žehličkou"], "photo": "/assets/n447-kozmetika2/scenes/hair-iron.jpg"},
+    "curls": {"sk": ["Tvarovanie kučier", "Krém na kučery"], "photo": "/assets/n447-kozmetika2/scenes/hair-curls-mirror.jpg"},
+    "dryShampoo": {"sk": ["Suchý šampón", "Medzi umytiami"], "photo": {"photo": "/assets/n447-kozmetika2/scenes/hair-roots.jpg", "position": "60% 30%"}}
+   }}
+ ],
+ "scenes": {
+  "category:hair": "/assets/scenes/hair-wash.jpg", "category:body": "/assets/n447/scenes/body-lotion.jpg",
+  "category:baby": "/assets/n447-kozmetika2/scenes/kid-bath.jpg", "category:men": "/assets/scenes/beard-care.jpg",
+  "men|scope:set": "/assets/n447-kozmetika2/scenes/man-towel.jpg", "men|scope:single": "/assets/n447-kozmetika2/scenes/man-beard-oil.jpg",
+  "kind:Šampóny": "/assets/n447-kozmetika2/scenes/hair-shampoo-foam.jpg", "kind:Kondicionéry": "/assets/n447-kozmetika2/scenes/hair-leavein-spray.jpg",
+  "kind:Masky na vlasy": "/assets/n447-kozmetika2/scenes/hair-mask-salon.jpg", "kind:Toniká na vlasy": "/assets/n447-kozmetika2/scenes/hair-tonic-dropper.jpg",
+  "kind:Oleje na vlasy": "/assets/n447-kozmetika2/scenes/hair-oil.jpg", "kind:Styling": "/assets/n447-kozmetika2/scenes/hair-styling.jpg",
+  "kind:Suché šampóny": {"photo": "/assets/n447-kozmetika2/scenes/hair-roots.jpg", "position": "60% 30%"},
+  "kind:Sprchové gély": "/assets/n447-kozmetika2/scenes/body-shower.jpg", "kind:Telové mlieka a krémy": "/assets/n447/scenes/body-lotion.jpg",
+  "baby|kind:Šampóny": "/assets/n447-kozmetika2/scenes/kid-suds.jpg", "baby|kind:Telové mlieka a krémy": "/assets/n447-kozmetika2/scenes/kids-towel.jpg",
+  "men|kind:Šampóny": "/assets/n447-kozmetika2/scenes/man-hair-wash.jpg", "men|kind:Oleje na vlasy": "/assets/n447-kozmetika2/scenes/man-beard-oil.jpg",
+  "men|kind:Čistiaca pena": "/assets/n447-kozmetika2/scenes/man-face.jpg", "men|kind:Balzam na bradu": "/assets/n447-kozmetika2/scenes/man-beard-comb.jpg"
+ },
+ "addons": [
+  {"categories": ["hair"], "ids": ["andreine-dreveny-hreben", "andreine-drevena-kefa-na-vlasy-andreine"], "sk": "Z ponuky Andreine: drevený hrebeň k vlasovej starostlivosti."}
+ ]
+}

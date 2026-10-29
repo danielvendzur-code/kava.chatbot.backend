@@ -4,10 +4,12 @@ import '../n447/kozmetika2/advisor-core-k2.js';
 import '../catalogue-reply-core.js';
 import '../chat-brain.js';
 import '../chat-adapters.js';
+import '../n447/kozmetika2/catalogues/andreine.js';
 import {aiAnswer} from './ai-chat.js';
 
 const BRANDS = {
   /* K2_BRANDS */
+  andreine: {brand: "Andreine", web: "https://andreine.com/"},
 };
 const adapters = new Map();
 

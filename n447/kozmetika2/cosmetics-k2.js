@@ -110,7 +110,7 @@
     ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
     ['Pozná váš katalóg', 'pracuje s vašimi produktmi a cenami'],
     ['Výber podľa vašich potrieb', 'na konci konkrétny produkt'],
-    [L('Rozpočet na celú zostavu', 'Rozpočet na celou sestavu'), L('produkt aj doplnok v rámci limitu', 'produkt i doplněk v rámci limitu')]
+    [L('Hotové sady a zostavy', 'Hotové sady a sestavy'), L('celá rutina alebo vlastná zostava so súčtom', 'celá rutina nebo vlastní sestava se součtem')]
   ];
 
   const catalogue=hasCatalogue?brand.catalogue:brand.products||[];
@@ -123,6 +123,8 @@
   /* Doplnenie na 4 zmysluplné voľby podľa potrieb, ktoré sortiment naozaj pokrýva (rôzne odpovede, nie ten istý zoznam). */
   const hasTag=(t)=>catalogue.some(p=>p.available!==false&&(p.tags||[]).includes(t));
   for(const [ok,title] of [[hasTag('sensitive'),L('Mám citlivú pleť','Mám citlivou pleť')],[hasTag('oily'),L('Pleť sa mi mastí','Pleť se mi mastí')],[hasTag('mature'),L('Čo na vrásky?','Co na vrásky?')],[true,L('Pomôžte mi vybrať','Pomozte mi vybrat')]])if(ok&&CHIPS.length<4&&!CHIPS.includes(title))CHIPS.push(title);
+  /* k2: vlastné 4 voľby firmy (overené proti katalógu testom chips) */
+  if(Array.isArray(brand.chips)&&brand.chips.length===4)CHIPS.splice(0,CHIPS.length,...brand.chips);
   CHIPS.splice(4);
 
   const ownerFigures = '';
