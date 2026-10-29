@@ -5,10 +5,12 @@ import '../catalogue-reply-core.js';
 import '../chat-brain.js';
 import '../chat-adapters.js';
 import '../n447/kozmetika2/catalogues/andreine.js';
+import '../n447/kozmetika2/catalogues/malinna.js';
 import {aiAnswer} from './ai-chat.js';
 
 const BRANDS = {
   /* K2_BRANDS */
+  malinna: {brand: "MALINNA°", web: "https://malinna.com/"},
   andreine: {brand: "Andreine", web: "https://andreine.com/"},
 };
 const adapters = new Map();

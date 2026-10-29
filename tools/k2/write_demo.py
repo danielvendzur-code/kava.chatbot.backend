@@ -46,7 +46,7 @@ brand = {'name': cfg['name'], 'domain': cfg['domain'], 'website': cfg['website']
          'contact': cfg['contact'], 'contactSource': cfg['contactSource'], 'ownerNote': cfg['ownerNote'], 'benefit': cfg['benefit'],
          'catalogueMinGroupSize': 3, 'n447': True, 'k2': True, 'noProfileGoal': bool(cfg.get('noProfileGoal')), 'chips': cfg['chips'],
          'labels': cfg.get('labels', {}), 'facetDefs': cfg.get('facetDefs', []), 'scenes': cfg.get('scenes', {}), 'addons': cfg.get('addons', []),
-         'products': products}
+         'products': products, 'k2Products': products}
 open(f'{ROOT}/n447/kozmetika2/brands/{slug}.js', 'w').write(
     f"/* n447 dávka 2 – značka {cfg['name']} v tvare cosmetics-config.js; načíta ju iba stránka {slug}.html. */\n(() => {{\n  'use strict';\n"
     f"  const data = window.COSMETICS_DEMOS;\n  if (!data) return;\n  data.brands[{json.dumps(slug)}] = {json.dumps(brand, ensure_ascii=False)};\n}})();\n")

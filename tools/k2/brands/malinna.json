@@ -1,0 +1,303 @@
+{
+ "slug": "malinna",
+ "lang": "sk",
+ "name": "MALINNA°",
+ "domain": "malinna.com",
+ "website": "https://malinna.com/",
+ "shopUrl": "https://malinna.com/collections/all",
+ "theme": {
+  "brand": "#303030",
+  "accent": "#ab8c52",
+  "soft": "#f5f2ec",
+  "paper": "#ffffff",
+  "ink": "#212121",
+  "line": "#e7e1d6"
+ },
+ "logo": "/assets/n447-kozmetika2/malinna/logo.png",
+ "heroProductId": "malinna-rose-repairing-cream",
+ "contact": "info@malinna.com",
+ "contactSource": "https://malinna.com/policies/contact-information",
+ "ownerNote": "Pleť, telo aj detská pokožka — výber podľa typu pleti, s hotovými setmi MALINNA°.",
+ "benefit": [
+  "Výber z konkrétnych produktov a setov",
+  "Zloženie setov a bežné ceny z e-shopu",
+  "Otázky aj mimo otváracích hodín"
+ ],
+ "noProfileGoal": true,
+ "chatTags": {
+  "skin": {
+   "sensitive": [
+    "sensitive"
+   ],
+   "dry": [
+    "dry"
+   ],
+   "normal": [
+    "balanced"
+   ]
+  }
+ },
+ "chips": [
+  "Mám citlivú pleť",
+  "Mám suchú pleť",
+  "Čo máte pre deti?",
+  "Aké máte sady?"
+ ],
+ "labels": {
+  "face": "Pleť",
+  "body": "Telo, ruky a vlasy",
+  "baby": "Pre deti",
+  "skin": "Typ pleti",
+  "scope": "Rutina alebo produkt",
+  "cleanse": "Čistenie",
+  "focus": "Zameranie"
+ },
+ "excluded": [
+  "výživové doplnky, oral care a domácnosť (nie kozmetika pleti a tela)",
+  "refill balenia (náhradné náplne)"
+ ],
+ "facetDefs": [
+  {
+   "key": "skin",
+   "early": true,
+   "sk": [
+    "Aký typ pleti máte?",
+    "Podľa kolekcií MALINNA° a toho, pre akú pleť produkt výslovne určuje."
+   ],
+   "values": {
+    "sensitive": {
+     "sk": [
+      "Citlivá pleť",
+      "Ľahko sa začervená alebo reaguje"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/skin-sensitive.jpg"
+    },
+    "blemish": {
+     "sk": [
+      "Problematická pleť",
+      "Akné a nedokonalosti"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-blemish.jpg",
+      "position": "50% 35%"
+     }
+    },
+    "dry": {
+     "sk": [
+      "Suchá pleť",
+      "Napätá, šúpe sa"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/skin-dry.jpg"
+    },
+    "mature": {
+     "sk": [
+      "Zrelá pleť",
+      "Vrásky a strata pružnosti"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-mature.jpg",
+      "position": "50% 30%"
+     }
+    },
+    "normal": {
+     "sk": [
+      "Normálna pleť",
+      "Bez väčších ťažkostí"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-normal.jpg",
+      "position": "50% 30%"
+     }
+    }
+   }
+  },
+  {
+   "key": "scope",
+   "early": true,
+   "sk": [
+    "Celú rutinu, alebo jeden produkt?",
+    "Hotový set MALINNA° alebo konkrétny krok starostlivosti."
+   ],
+   "values": {
+    "set": {
+     "sk": [
+      "Celú rutinu",
+      "Hotový set MALINNA°"
+     ],
+     "photo": "/assets/scenes/gift-care.jpg"
+    },
+    "single": {
+     "sk": [
+      "Jeden produkt",
+      "Vyberiem konkrétny krok"
+     ],
+     "photo": "/assets/scenes/cream-texture.jpg"
+    }
+   }
+  },
+  {
+   "key": "cleanse",
+   "sk": [
+    "Ako chcete pleť čistiť?",
+    "Set obsahuje jemnú penu alebo koncentrovaný čistiaci gél."
+   ],
+   "values": {
+    "gentle": {
+     "sk": [
+      "Jemnou penou",
+      "Cleansing Foam – každodenné čistenie bez vysušovania"
+     ],
+     "photo": "/assets/scenes/face-cleanse.jpg"
+    },
+    "deep": {
+     "sk": [
+      "Čistiacim gélom",
+      "Face Wash – koncentrované čistiace sérum"
+     ],
+     "photo": "/assets/scenes/face-water.jpg"
+    }
+   }
+  },
+  {
+   "key": "focus",
+   "sk": [
+    "Ktorý variant vás láka?",
+    "Varianty sa líšia hlavnou zložkou alebo vôňou."
+   ],
+   "values": {
+    "gentle": {
+     "sk": [
+      "Jemná pena",
+      "Cleansing Foam – aj na telo"
+     ],
+     "photo": "/assets/scenes/face-cleanse.jpg"
+    },
+    "deep": {
+     "sk": [
+      "Čistiaci gél",
+      "Face Wash – koncentrované sérum"
+     ],
+     "photo": "/assets/scenes/face-water.jpg"
+    },
+    "rose": {
+     "sk": [
+      "Ruža",
+      "Rose Repairing Cream – obnova pleti"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose.jpg"
+    },
+    "immortelle": {
+     "sk": [
+      "Slamienka (immortelle)",
+      "Immortelle Anti-Aging Cream"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/immortelle.jpg"
+    },
+    "lavender": {
+     "sk": [
+      "Levanduľa",
+      "Lavender Sensitive Cream"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "duo": {
+     "sk": [
+      "Bez krému",
+      "Čistenie a tonikum"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sea-salt.jpg"
+    },
+    "neroli": {
+     "sk": [
+      "Neroli",
+      "Kvet pomarančovníka"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/neroli-blossom.jpg"
+    },
+    "geranium": {
+     "sk": [
+      "Geránium",
+      "Kvetinová vôňa"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/geranium.jpg"
+    },
+    "mintLemon": {
+     "sk": [
+      "Mäta, citrón a rozmarín",
+      "Svieža bylinková vôňa"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
+    },
+    "cedarCinnamon": {
+     "sk": [
+      "Céder a škorica",
+      "Hrejivá drevitá vôňa"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cinnamon.jpg"
+    },
+    "tiliaPine": {
+     "sk": [
+      "Lipa a borovica",
+      "Kvetinovo-lesná vôňa"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/linden-blossom.jpg"
+    },
+    "bergamotVanilla": {
+     "sk": [
+      "Bergamot a vanilka",
+      "Sladšia vôňa"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/vanilla.jpg"
+    },
+    "bodyScalp": {
+     "sk": [
+      "Telo aj pokožka hlavy",
+      "Body Serum Neroli a šampón so šalviou"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clary-sage-dark.jpg"
+    },
+    "trio": {
+     "sk": [
+      "Tri sprchové séra",
+      "100 ml balenia na cesty"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/body-shower.jpg"
+    },
+    "hands": {
+     "sk": [
+      "Na ruky",
+      "Bambucké maslo a nechtík"
+     ],
+     "photo": "/assets/n447/scenes/hands-care.jpg"
+    },
+    "feet": {
+     "sk": [
+      "Na chodidlá",
+      "Regeneračný krém s oreganom"
+     ],
+     "photo": "/assets/n447/scenes/feet-care.jpg"
+    }
+   }
+  }
+ ],
+ "scenes": {
+  "category:face": "/assets/n447-kozmetika2/scenes/face-routine.jpg",
+  "category:body": "/assets/n447-kozmetika2/scenes/body-shower.jpg",
+  "category:baby": "/assets/n447-kozmetika2/scenes/kid-bath.jpg",
+  "baby|scope:set": "/assets/n447-kozmetika2/scenes/kids-towel.jpg",
+  "baby|scope:single": "/assets/n447-kozmetika2/scenes/kid-suds.jpg",
+  "face|scope:single": "/assets/scenes/face-clean-pad.jpg",
+  "body|scope:set": "/assets/scenes/gift-care.jpg",
+  "body|scope:single": "/assets/n447/scenes/body-lotion.jpg",
+  "kind:Čistenie pleti": "/assets/scenes/face-cleanse.jpg",
+  "kind:Toniká": "/assets/n447-kozmetika2/scenes/sea-salt.jpg",
+  "kind:Pleťové krémy": "/assets/scenes/cream-texture.jpg",
+  "kind:Sprchové séra": "/assets/n447-kozmetika2/scenes/body-shower.jpg",
+  "kind:Mydlá na ruky": "/assets/n447-kozmetika2/scenes/hand-wash.jpg",
+  "kind:Krémy na ruky a nohy": "/assets/scenes/hands-cream.jpg",
+  "kind:Šampóny": "/assets/n447-kozmetika2/scenes/clary-sage.jpg",
+  "kind:Detská pena": "/assets/n447-kozmetika2/scenes/mandarin.jpg",
+  "kind:Detský balzam": "/assets/n447-kozmetika2/scenes/kids-towel.jpg"
+ },
+ "addons": []
+}
