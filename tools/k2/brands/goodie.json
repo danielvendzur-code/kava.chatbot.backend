@@ -1,0 +1,815 @@
+{
+ "slug": "goodie",
+ "lang": "cs",
+ "name": "Goodie",
+ "domain": "goodie.cz",
+ "website": "https://www.goodie.cz/",
+ "shopUrl": "https://www.goodie.cz/",
+ "theme": {
+  "brand": "#222222",
+  "accent": "#c9a27c",
+  "soft": "#f6f3ef",
+  "paper": "#ffffff",
+  "ink": "#1d1d1d",
+  "line": "#e8e1d8"
+ },
+ "logo": "/assets/n447-kozmetika2/goodie/logo.svg",
+ "heroProductId": "goodie-hyaluron-5-acid-serum-30-ml",
+ "contact": "info@goodie.cz",
+ "contactSource": "https://www.goodie.cz/ (patička webu)",
+ "ownerNote": "Séra, krémy, masky, mýdla, peelingy i šumivé koule vlastní značky Goodie — výběr podle toho, co chcete řešit.",
+ "benefit": [
+  "Výběr z produktů vlastní značky Goodie",
+  "Konjac houbičky a lufa do sestavy",
+  "Dotazy i mimo otevírací dobu"
+ ],
+ "noProfileGoal": true,
+ "chatTags": {},
+ "chips": [
+  "Hledám sérum s vitaminem C",
+  "Máte hyaluronové sérum?",
+  "Hledám jílovou masku",
+  "Hledám tělový peeling"
+ ],
+ "labels": {
+  "face": "Pleť",
+  "body": "Tělo",
+  "bath": "Koupel",
+  "hair": "Vlasy",
+  "family": "Zaměření",
+  "focus": "Složení a vůně"
+ },
+ "excluded": [
+  "produkty jiných značek v e-shopu Goodie",
+  "doplňky stravy, zdraví, potraviny, domácnost a intimní péče",
+  "LED masky a čepice, taštičky, čelenky a ručníky",
+  "vzorky a mini balení (kromě doplňků)",
+  "aktuálně nedostupné produkty"
+ ],
+ "facetDefs": [
+  {
+   "key": "family",
+   "cs": [
+    "Co má produkt hlavně dělat?",
+    "Podle názvu a popisu produktu Goodie."
+   ],
+   "values": {
+    "foam": {
+     "cs": [
+      "Čisticí pěna",
+      "Na každodenní mytí pleti"
+     ],
+     "photo": "/assets/scenes/face-cleanse.jpg"
+    },
+    "balmOil": {
+     "cs": [
+      "Odličovací balzám nebo olej",
+      "Odstraní make-up"
+     ],
+     "photo": "/assets/scenes/face-clean-pad.jpg"
+    },
+    "acids": {
+     "cs": [
+      "Póry a nedokonalosti",
+      "AHA + BHA, niacinamid"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-blemish.jpg",
+      "position": "50% 35%"
+     }
+    },
+    "hydration": {
+     "cs": [
+      "Hydratace",
+      "Kyselina hyaluronová"
+     ],
+     "photo": "/assets/scenes/face-water.jpg"
+    },
+    "vitamin": {
+     "cs": [
+      "Jas a vitamíny",
+      "Vitamin C, bakuchiol, booster"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/citrus.jpg"
+    },
+    "sheetCream": {
+     "cs": [
+      "Plátýnková nebo krémová",
+      "Vitamin C, hyaluron, kurkuma"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/turmeric.jpg"
+    },
+    "clay": {
+     "cs": [
+      "Jílová maska",
+      "Barevné jíly"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clays.jpg"
+    },
+    "tonic": {
+     "cs": [
+      "Tonikum",
+      "Borůvka, mango, okurka"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cucumber.jpg"
+    },
+    "floral": {
+     "cs": [
+      "Květová voda",
+      "Růže, levandule, heřmánek"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose.jpg"
+    },
+    "fresh": {
+     "cs": [
+      "Svěží voda",
+      "Máta, pomeranč, aloe, kokos"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
+    },
+    "mineral": {
+     "cs": [
+      "Minerální a bylinná",
+      "Mrtvé moře, oceán, uhlí, bylinky"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/ocean-wave.jpg"
+    },
+    "sweet": {
+     "cs": [
+      "Sladká a kořeněná",
+      "Skořice, čokoláda, kakao"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/chocolate.jpg"
+    },
+    "fruity": {
+     "cs": [
+      "Ovocná",
+      "Mango, hroznové víno, pomeranč"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mango.jpg"
+    },
+    "relax": {
+     "cs": [
+      "Na relax",
+      "Levandule a růže"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "herbal": {
+     "cs": [
+      "Bylinná",
+      "Eukalyptus, matcha"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/eucalyptus.jpg"
+    },
+    "fun": {
+     "cs": [
+      "Barevná a zábavná",
+      "Překvapení ve vaně"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/pastel-swirl.jpg"
+    }
+   }
+  },
+  {
+   "key": "focus",
+   "cs": [
+    "Které vyberete?",
+    "Podle hlavní složky nebo vůně v názvu produktu."
+   ],
+   "values": {
+    "acne": {
+     "cs": [
+      "Pro problematickou pleť",
+      "S manukou a aloe vera"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-blemish.jpg",
+      "position": "50% 35%"
+     }
+    },
+    "mango": {
+     "cs": [
+      "Mango",
+      "Vitamínová"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mango.jpg"
+    },
+    "blueberry": {
+     "cs": [
+      "Lesní borůvka",
+      "Vyvažující"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/blueberries.jpg"
+    },
+    "unscented": {
+     "cs": [
+      "Bez parfemace",
+      "Pro citlivou pleť"
+     ],
+     "photo": "/assets/scenes/face-water.jpg"
+    },
+    "mangoApricot": {
+     "cs": [
+      "Mango a meruňka",
+      "Odličovací balzám"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/apricots.jpg"
+    },
+    "natural": {
+     "cs": [
+      "Natural",
+      "Odličovací olej BIO"
+     ],
+     "photo": "/assets/scenes/oil-palm.jpg"
+    },
+    "mandarin": {
+     "cs": [
+      "Mandarinka",
+      "Odličovací olej BIO"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mandarin.jpg"
+    },
+    "ahabha": {
+     "cs": [
+      "AHA + BHA",
+      "Kyselina glykolová, vrbová kůra"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/birch.jpg"
+    },
+    "niacinamide": {
+     "cs": [
+      "Niacinamid 10 %",
+      "S panthenolem a zinkem"
+     ],
+     "photo": "/assets/scenes/serum-drop.jpg"
+    },
+    "malachite": {
+     "cs": [
+      "Hyaluron s malachitem",
+      "Hydratační sérum"
+     ],
+     "photo": "/assets/scenes/face-water.jpg"
+    },
+    "ectoin": {
+     "cs": [
+      "Hyaluron 5M s ectoinem",
+      "S aloe vera"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/aloe.jpg"
+    },
+    "vitc15": {
+     "cs": [
+      "Vitamin C 15 %",
+      "Tón pleti a skvrny"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/orange-slices.jpg"
+    },
+    "vitc5": {
+     "cs": [
+      "Vitamin C 5 %",
+      "Jemnější koncentrace"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/citrus.jpg"
+    },
+    "bakuchiol": {
+     "cs": [
+      "Bakuchiol a Q10",
+      "Vitaminové sérum"
+     ],
+     "photo": "/assets/scenes/serum-drop.jpg"
+    },
+    "booster": {
+     "cs": [
+      "Wild Blueberry booster",
+      "Dvoufázový"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/blueberries.jpg"
+    },
+    "buckthorn": {
+     "cs": [
+      "Rakytník",
+      "S kurkumou"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sea-buckthorn.jpg"
+    },
+    "aloe": {
+     "cs": [
+      "Aloe vera",
+      "Prebiotický denní krém"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/aloe.jpg"
+    },
+    "night": {
+     "cs": [
+      "Noční krém",
+      "S avokádovým olejem"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/avocado.jpg"
+    },
+    "cbd": {
+     "cs": [
+      "Gel-krém s CBD",
+      "Podpora kožní bariéry"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hemp.jpg"
+    },
+    "eye": {
+     "cs": [
+      "Oční krém",
+      "Spilanthes a astaxanthin"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/eye-patches.jpg"
+    },
+    "vitcMask": {
+     "cs": [
+      "Vitamin C",
+      "Rozjasňující plátýnková"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/orange-slices.jpg"
+    },
+    "hyalMask": {
+     "cs": [
+      "Hyaluron",
+      "Hydratační plátýnková"
+     ],
+     "photo": "/assets/scenes/face-water.jpg"
+    },
+    "turmeric": {
+     "cs": [
+      "Kurkuma a med 25 ml",
+      "Krémová maska"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/turmeric.jpg"
+    },
+    "turmeric2": {
+     "cs": [
+      "Kurkuma a med 25 g",
+      "Pleťová maska"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/honey.jpg"
+    },
+    "purple": {
+     "cs": [
+      "PURPLE",
+      "Jílová maska by Kamu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "pink": {
+     "cs": [
+      "PINK",
+      "Růžový jíl"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clay-mask.jpg"
+    },
+    "green": {
+     "cs": [
+      "GREEN",
+      "Zelený jíl"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/matcha.jpg"
+    },
+    "black": {
+     "cs": [
+      "BLACK",
+      "Černý jíl"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/charcoal.jpg"
+    },
+    "cucumber": {
+     "cs": [
+      "Okurka",
+      "Celulární okurková voda"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cucumber.jpg"
+    },
+    "rose": {
+     "cs": [
+      "Damašská růže",
+      "Růžová"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose.jpg"
+    },
+    "roseAlba": {
+     "cs": [
+      "Růže Alba",
+      "Bílá růže"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/jasmine.jpg"
+    },
+    "lavender": {
+     "cs": [
+      "Levandule",
+      "Zklidňující"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "chamomile": {
+     "cs": [
+      "Heřmánek",
+      "Jemná"
+     ],
+     "photo": "/assets/n447/scenes/calm-chamomile.jpg"
+    },
+    "jasmine": {
+     "cs": [
+      "Jasmín",
+      "Květová voda"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/jasmine.jpg"
+    },
+    "mint": {
+     "cs": [
+      "Máta",
+      "Svěží"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
+    },
+    "orange": {
+     "cs": [
+      "Pomeranč",
+      "Svěží citrus"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/orange-slices.jpg"
+    },
+    "coconut": {
+     "cs": [
+      "Kokos",
+      "Kokosová"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/coconut.jpg"
+    },
+    "jojoba": {
+     "cs": [
+      "Jojoba",
+      "BIO olej"
+     ],
+     "photo": "/assets/scenes/oil-palm.jpg"
+    },
+    "avocado": {
+     "cs": [
+      "Avokádo",
+      "BIO, RAW"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/avocado.jpg"
+    },
+    "rosehip": {
+     "cs": [
+      "Šípek",
+      "BIO, RAW"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rosehip.jpg"
+    },
+    "argan": {
+     "cs": [
+      "Argan",
+      "BIO, RAW"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/argan-tree.jpg"
+    },
+    "primrose": {
+     "cs": [
+      "Pupalka",
+      "BIO olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/calendula.jpg"
+    },
+    "coffee": {
+     "cs": [
+      "Káva",
+      "Ze zelených zrn"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/coffee-beans.jpg"
+    },
+    "deadsea": {
+     "cs": [
+      "Mrtvé moře",
+      "S bahnem z Mrtvého moře"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sea-salt.jpg"
+    },
+    "ocean": {
+     "cs": [
+      "Blue ocean",
+      "Svěží"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/ocean-wave.jpg"
+    },
+    "charcoal": {
+     "cs": [
+      "Aktivní uhlí",
+      "S tea tree"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/charcoal.jpg"
+    },
+    "herbs": {
+     "cs": [
+      "Fresh herbs",
+      "Bylinky"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/thyme.jpg"
+    },
+    "cinnamonOrange": {
+     "cs": [
+      "Skořice a pomeranč",
+      "Hřejivá"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cinnamon.jpg"
+    },
+    "chocolate": {
+     "cs": [
+      "Čokoláda",
+      "Sladká"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/chocolate.jpg"
+    },
+    "sandal": {
+     "cs": [
+      "Santal",
+      "Dřevitá"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sandalwood.jpg"
+    },
+    "dragon": {
+     "cs": [
+      "Dračí krev",
+      "Dragon's Blood"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/incense.jpg"
+    },
+    "berry": {
+     "cs": [
+      "Berry sweet dream",
+      "Lesní plody"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/blueberries.jpg"
+    },
+    "cocoVanilla": {
+     "cs": [
+      "Kokos a vanilka",
+      "CocoVanilla"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/vanilla.jpg"
+    },
+    "matcha": {
+     "cs": [
+      "Matcha",
+      "Svěží"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/matcha.jpg"
+    },
+    "bergamot": {
+     "cs": [
+      "Bergamot",
+      "Šlehané máslo"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lemon-tree.jpg"
+    },
+    "vanillaCoconut": {
+     "cs": [
+      "Vanilka a kokos",
+      "Tělové máslo"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/coconut.jpg"
+    },
+    "shea": {
+     "cs": [
+      "Bambucké máslo",
+      "BIO"
+     ],
+     "photo": "/assets/scenes/hands-cream.jpg"
+    },
+    "shimmer": {
+     "cs": [
+      "Shimmer oil",
+      "Rozjasňující suchý olej"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/gold-glitter.jpg"
+    },
+    "stretch": {
+     "cs": [
+      "Proti striím",
+      "Anti-Stretch Mark Oil"
+     ],
+     "photo": "/assets/n447/scenes/body-lotion.jpg"
+    },
+    "grape": {
+     "cs": [
+      "Hroznové víno",
+      "Crazy Grape"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/grapes.jpg"
+    },
+    "lemonLavender": {
+     "cs": [
+      "Citron a levandule",
+      "Lemon Lavender"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lemon-tree.jpg"
+    },
+    "goodNight": {
+     "cs": [
+      "Good Night",
+      "Na večer"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/bath-bomb.jpg"
+    },
+    "eucalyptus": {
+     "cs": [
+      "Eukalyptus",
+      "Svěží"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/eucalyptus.jpg"
+    },
+    "anise": {
+     "cs": [
+      "Anýz a skořice",
+      "Kořeněná"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/xmas-spices.jpg"
+    },
+    "choco": {
+     "cs": [
+      "Čokoláda a karamel",
+      "Sladká"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/chocolate.jpg"
+    },
+    "galaxy": {
+     "cs": [
+      "Galaxy",
+      "Barvy vesmíru"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/stars.jpg"
+    },
+    "unicorn": {
+     "cs": [
+      "Unicorn",
+      "Pastelové barvy"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/pastel-swirl.jpg"
+    },
+    "mermaid": {
+     "cs": [
+      "Mermaid Pearl",
+      "Perleťová"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/pearls.jpg"
+    },
+    "starburst": {
+     "cs": [
+      "Starburst",
+      "Jiskřivá"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sparkler.jpg"
+    },
+    "winter": {
+     "cs": [
+      "Winter Glow",
+      "Zimní"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/snowy-branch.jpg"
+    },
+    "lemongrass": {
+     "cs": [
+      "Lemongrass",
+      "Koupelová sůl 500 g"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lemongrass.jpg"
+    },
+    "flowers": {
+     "cs": [
+      "Flower garden",
+      "Květinová"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose-bath.jpg"
+    },
+    "pumpkin": {
+     "cs": [
+      "Pumpkin spice",
+      "Podzimní koření"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cinnamon.jpg"
+    },
+    "lavenderMelissa": {
+     "cs": [
+      "Levandule a meduňka",
+      "Tuhý šampon"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "spirulina": {
+     "cs": [
+      "Minty Spirulina",
+      "Svěží"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
+    },
+    "pinkClay": {
+     "cs": [
+      "Pink clay",
+      "Růžový jíl"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clay-mask.jpg"
+    },
+    "quinine": {
+     "cs": [
+      "Chinin",
+      "Z kůry chinovníku"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/oak.jpg"
+    },
+    "keratin": {
+     "cs": [
+      "Tuhý kondicionér",
+      "S keratinem"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-touch.jpg"
+    },
+    "hairfood": {
+     "cs": [
+      "Hair Food",
+      "Bergamot a brokolice"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-mask-salon.jpg"
+    },
+    "scalpPeel": {
+     "cs": [
+      "Peeling vlasové pokožky",
+      "AHA a BHA"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/scalp-hands.jpg",
+      "position": "50% 20%"
+     }
+    }
+   }
+  }
+ ],
+ "scenes": {
+  "category:face": "/assets/n447-kozmetika2/scenes/face-routine.jpg",
+  "category:body": "/assets/n447-kozmetika2/scenes/coffee-scrub-leg.jpg",
+  "category:bath": "/assets/n447-kozmetika2/scenes/bath-milky.jpg",
+  "category:hair": "/assets/n447-kozmetika2/scenes/hair-shampoo-foam.jpg",
+  "kind:Čištění a odličování": "/assets/scenes/face-cleanse.jpg",
+  "kind:Séra": "/assets/scenes/serum-drop.jpg",
+  "kind:Krémy": "/assets/scenes/cream-texture.jpg",
+  "kind:Masky": "/assets/n447/scenes/skin-mask.jpg",
+  "kind:Tonika a květové vody": "/assets/scenes/face-water.jpg",
+  "kind:Pleťové oleje": "/assets/scenes/oil-palm.jpg",
+  "kind:Přírodní mýdla": "/assets/n447-kozmetika2/scenes/hand-wash.jpg",
+  "kind:Tělové peelingy": "/assets/n447-kozmetika2/scenes/coffee-scrub-leg.jpg",
+  "kind:Tělová másla a krémy": "/assets/n447/scenes/body-lotion.jpg",
+  "kind:Tělové oleje": "/assets/n447-kozmetika2/scenes/gold-glitter.jpg",
+  "kind:Šumivé koule": "/assets/n447-kozmetika2/scenes/bath-bomb.jpg",
+  "kind:Koupelové soli": "/assets/n447-kozmetika2/scenes/sea-salt.jpg",
+  "kind:Tuhé šampony": "/assets/n447-kozmetika2/scenes/hair-shampoo-foam.jpg",
+  "kind:Kondicionéry a péče": "/assets/n447-kozmetika2/scenes/hair-touch.jpg"
+ },
+ "addons": [
+  {
+   "categories": [
+    "face"
+   ],
+   "kinds": [
+    "Čištění a odličování"
+   ],
+   "ids": [
+    "goodie-konjac-houbicka-natural",
+    "goodie-konjac-houbicka-zeleny-caj"
+   ],
+   "sk": "Ku čisteniu: konjaková hubka.",
+   "cs": "K čištění: konjac houbička Goodie."
+  },
+  {
+   "categories": [
+    "face"
+   ],
+   "kinds": [
+    "Krémy",
+    "Masky"
+   ],
+   "ids": [
+    "goodie-cream-spatula-1-pc"
+   ],
+   "sk": "Špachtľa na krém.",
+   "cs": "Hygienická špachtle na krém."
+  },
+  {
+   "categories": [
+    "body"
+   ],
+   "kinds": [
+    "Přírodní mýdla",
+    "Tělové peelingy"
+   ],
+   "ids": [
+    "goodie-lufa-s-provazkem",
+    "goodie-exfoliacni-rukavice-z-bio-konopneho-vlakna"
+   ],
+   "sk": "K umývaniu: lufa.",
+   "cs": "K mytí: přírodní lufa nebo exfoliační rukavice."
+  }
+ ]
+}
