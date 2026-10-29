@@ -1,0 +1,9 @@
+/* n447 dávka 2 (kozmetika2) – kópia advisor-boot-n447.js, načíta kópie jadra, rozhrania a chatu dávky 2. */
+/* Load only this brand's refreshed catalogue, then the established widget scripts. */
+(async()=>{const loadingRoot=document.getElementById('cosmetics-root');if(loadingRoot){loadingRoot.inert=true;loadingRoot.setAttribute('aria-busy','true');}
+ const manifest={};
+ /* n447: iba firma tejto stránky; katalóg je už načítaný stránkou, neznámy slug = žiadny cudzí fallback. */
+ const slug=String(window.N447_COSMETICS_SLUG||'');
+ if(!window.COSMETICS_DEMOS?.brands?.[slug]?.n447)throw new Error('Unknown demo');
+ for(const url of ["/catalogue-config.js?v=49bbaedc","/n447/kozmetika2/cosmetics-k2.js","/skincare-final-fix.js?v=ff9bd7fc","/skincare-launcher-logo-fix.js?v=4e19b5d8","/skincare-routine-enhancer.js?v=72edaafa","/kvitok-logo-final-fix.js?v=1e07706b","/skincare-final-brand-marks.js?v=e45e4efd","/skincare-review-fixes-20260914.js?v=f836f886","/nove-znacky.js?v=f639ec01","/n447/kozmetika2/advisor-core-k2.js","/chat-brain.js?v=f25514a3","/chat-adapters.js?v=84a23635","/care-result-guide.js?v=2b7b2b46","/n447/kozmetika2/catalogue-advisor-k2.js","/skincare-final-logo-qa.js?v=ddc0a8c6","/skincare-lang-cs.js?v=94e7e507"])await new Promise((resolve,reject)=>{const script=document.createElement('script');script.src=url;script.onload=resolve;script.onerror=()=>reject(new Error('Widget asset unavailable'));document.body.append(script);});
+})().catch(()=>{const root=document.querySelector('#cosmetics-root');if(root&&!root.textContent.trim()){const message=document.createElement('p');message.textContent='Poradcu sa nepodarilo načítať. Skúste obnoviť stránku.';root.append(message);}}).finally(()=>{const root=document.getElementById('cosmetics-root');if(root){root.inert=false;root.removeAttribute('aria-busy');}});
