@@ -1,22 +1,22 @@
 # Kozmetika2 – oprava podľa nezávislého auditu (stav 2026-10-30)
 
-Vetva `claude/n447-kozmetika2-20261029`. Audit Codexu sa týkal SHA `8161db9`; táto oprava nadväzuje na `6bffa0c`. SHA a Preview sú uvedené v odovzdávacej správe.
+Vetva `claude/n447-kozmetika2-20261029`. Audit Codexu sa týkal SHA `8161db9`; táto oprava nadväzuje na `6bffa0c`. Kód: commit `207e9c5`, Preview https://kava-chatbot-backend-71nk9dg62-danielvendzur-codes-projects.vercel.app (/musk.html, /bohemikus.html …).
 Ponuka 447 € jednorazovo + 10 €/mes., bez trialu. Produkcia, aliasy, zákaznícke subdomény, e-maily, modely ani odoslané ukážky sa nemenili.
 Andreine 447 ostáva izolovaná ako `andreine447` a doménu `andreine.mojchatbot.sk` nemá.
 Register sa nenasadzuje (`.vercelignore`).
 
 | Firma | Stav | Stránka | Produkty (výber / chat) | Zloženie v chate | Strom výberu | Prehliadač (DFS všetkých ciest) |
 |---|---|---|---|---|---|---|
-| MusK | READY_FOR_REVIEW | /musk.html | 93 / 84 | 74 produktov (INCI zo stránky) | 30 obrazoviek otázok, 84 ciest | 4 rozmery |
-| Bohemikus | READY_FOR_REVIEW | /bohemikus.html | 21 / 21 | 10 mydiel („Složení“ zo stránky) | 8 / 21 | 4 rozmery |
-| AKH | READY_FOR_REVIEW | /akh.html | 100 / 100 | – | 40 / 98 | 390×650 |
-| Andreine 447 | READY_FOR_REVIEW | /andreine447.html | 53 / 47 | – | 33 / 61 | 390×650 |
-| Goodie | READY_FOR_REVIEW | /goodie.html | 106 / 97 | – | 37 / 97 | 390×650 |
-| libebit | READY_FOR_REVIEW | /libebit.html | 63 / 52 | – | 33 / 65 | 390×650 |
-| MALINNA° | READY_FOR_REVIEW | /malinna.html | 31 / 31 | – | 31 / 54 | 390×650 |
-| MARK | READY_FOR_REVIEW | /mark.html | 90 / 84 | – | 37 / 86 | 390×650 |
-| Moravité | READY_FOR_REVIEW | /moravite.html | 28 / 22 | – | 11 / 22 | 390×650 |
-| NATURINKA | READY_FOR_REVIEW | /naturinka.html | 95 / 94 | – | 31 / 95 | 390×650 |
+| MusK | READY_FOR_REVIEW | /musk.html | 93 / 84 | 74 produktov (INCI zo stránky) | 30 obrazoviek otázok, 84 ciest | 4 rozmery × 198 obrazoviek / 84 výsledkov, nálezy 0 |
+| Bohemikus | READY_FOR_REVIEW | /bohemikus.html | 21 / 21 | 10 mydiel („Složení“ zo stránky) | 8 / 21 | 4 rozmery × 50 / 21, nálezy 0 |
+| AKH | READY_FOR_REVIEW | /akh.html | 100 / 100 | – | 40 / 98 | 390×650, nálezy 0 |
+| Andreine 447 | READY_FOR_REVIEW | /andreine447.html | 53 / 47 | – | 33 / 61 | 390×650, nálezy 0 |
+| Goodie | READY_FOR_REVIEW | /goodie.html | 106 / 97 | – | 37 / 97 | 390×650, nálezy 0 |
+| libebit | READY_FOR_REVIEW | /libebit.html | 63 / 52 | – | 33 / 65 | 390×650, nálezy 0 |
+| MALINNA° | READY_FOR_REVIEW | /malinna.html | 31 / 31 | – | 31 / 54 | 390×650, nálezy 0 |
+| MARK | READY_FOR_REVIEW | /mark.html | 90 / 84 | – | 37 / 86 | 390×650, nálezy 0 |
+| Moravité | READY_FOR_REVIEW | /moravite.html | 28 / 22 | – | 11 / 22 | 390×650, nálezy 0 |
+| NATURINKA | READY_FOR_REVIEW | /naturinka.html | 95 / 94 | – | 31 / 95 | 390×650, nálezy 0 |
 
 ## Opravené nálezy auditu
 1. **Zápor v chate** (`n447/kozmetika2/chat-guard-k2.js`)
