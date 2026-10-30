@@ -145,7 +145,10 @@
     const best = (list) => { const m = Math.min(9, ...list.map(level)); return list.filter((p) => level(p) === m); };
     const withTerms = matched;
     const withType = withTerms.filter((p) => typeOk(p, types));
-    const fit = best(withType.filter((p) => budget == null || (Number.isFinite(p.priceAmount) && p.priceAmount <= budget)));
+    /* produkt pomenovaný pre opačnú potrebu (napr. „maska na suché vlasy“ pri mastných) sa nevyberá, ak názov nespomína aj požadovanú */
+    const OPP = {oily: /\b(na|pre|pro) such/, dry: /\b(na|pre|pro) mastn/};
+    const clash = (p) => terms.some((t) => OPP[t.key] && OPP[t.key].test(norm(p.name)) && !t.re.test(norm(p.name)));
+    const fit = best(withType.filter((p) => !clash(p) && (budget == null || (Number.isFinite(p.priceAmount) && p.priceAmount <= budget))));
     // poradie: zložka v názve > v titulku overeného zaradenia > na začiatku popisu > inde; sady až za jednotlivými produktmi
     const at = (re, text) => { const m = norm(text).match(re); return m ? m.index : -1; };
     const near = (re, text, w) => { const i = at(re, text); return i < 0 ? 0 : Math.max(0.2, 1 - i / w); };

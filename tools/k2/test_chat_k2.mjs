@@ -37,6 +37,7 @@ const CASES = [
   // bez konkrétnej požiadavky sa strážca nezapína (zdieľaný mozog odpovedá ako doteraz)
   {slug: 'moravite', q: 'Může mi poradit, jak vypadá doprava zdarma do 1399 Kč?', guard: false},
   {slug: 'andreine447', q: 'Vypadávajú mi vlasy', must: ['rast vlasov']},
+  {slug: 'andreine447', q: 'Mám mastné vlasy', not: ['na suché vlasy']},
   {slug: 'mark', q: 'Hľadám šampón na mastné vlasy', must: ['mastné vlasy'], not: ['ROSEMARY']},
   {slug: 'mark', q: 'Máte niečo s kávou?', must: ['COFFEE|Coffee|káv']},
 ];

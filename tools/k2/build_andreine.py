@@ -118,6 +118,10 @@ for h, p in by.items():
         if h in {'heat-protection-tepelna-ochrana-na-vlasy', 'fixing-gel-fixacny-gel', 'curly-cream-krem-na-podporu-a-tvarovanie-kucier',
                  'anti-frizz-uhladzujuci-krem-na-vlasy', 'sos-powder', 'fixacny-sprej-na-vlasy-s-prirodnym-zlozenim-fixing-spray'}:
             needs = sorted(set(needs) | {'styling'})
+        # produkt, ktorý v názve cieli „na suché vlasy“, sa pri mastných vlasoch neponúka sám (kolekcia e-shopu ho tam má pre suché dĺžky;
+        # tú kombináciu vysvetľuje sada „na rýchlo mastiacu sa pokožku a suché dĺžky“)
+        if 'oily' in needs and re.search(r'na such|pre such', p['title'].lower()) and not re.search(r'mast', p['title'].lower()):
+            needs = [n for n in needs if n != 'oily']
         if not needs:
             raise SystemExit('chýba potreba: ' + h)
         facets['hairNeed'] = needs
