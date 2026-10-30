@@ -174,8 +174,8 @@
   {
    "key": "focus",
    "cs": [
-    "Které vyberete?",
-    "Podle hlavní složky nebo vůně v názvu produktu."
+    "Co vás láká nejvíc?",
+    "Podle hlavní složky nebo vůně v popisu produktu."
    ],
    "values": {
     "acne": {
@@ -218,8 +218,8 @@
     },
     "natural": {
      "cs": [
-      "Natural",
-      "Odličovací olej BIO"
+      "Čisté BIO oleje",
+      "Odličovací olej lisovaný za studena"
      ],
      "photo": "/assets/scenes/oil-palm.jpg"
     },
@@ -281,8 +281,8 @@
     },
     "booster": {
      "cs": [
-      "Wild Blueberry booster",
-      "Dvoufázový"
+      "Borůvkový, dvoufázový",
+      "Hydratace a výživa"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/blueberries.jpg"
     },
@@ -351,29 +351,29 @@
     },
     "purple": {
      "cs": [
-      "PURPLE",
-      "Jílová maska by Kamu"
+      "Růžový jíl s vitamínem B3",
+      "S výtažky z ovoce"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
     },
     "pink": {
      "cs": [
-      "PINK",
-      "Růžový jíl"
+      "Růžový jíl",
+      "Prášková maska bez vody"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/clay-mask.jpg"
     },
     "green": {
      "cs": [
-      "GREEN",
-      "Zelený jíl"
+      "Zelený jíl",
+      "Prášková maska bez vody"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/matcha.jpg"
     },
     "black": {
      "cs": [
-      "BLACK",
-      "Černý jíl"
+      "Černá",
+      "Černý jíl nebo černě zbarvená koupel"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/charcoal.jpg"
     },
@@ -491,8 +491,8 @@
     },
     "ocean": {
      "cs": [
-      "Blue ocean",
-      "Svěží"
+      "Svěží",
+      "Bambucké máslo, ricinový a kokosový olej"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/ocean-wave.jpg"
     },
@@ -505,8 +505,8 @@
     },
     "herbs": {
      "cs": [
-      "Fresh herbs",
-      "Bylinky"
+      "Bylinky a jíl",
+      "Bílý a růžový jíl, jemná exfoliace"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/thyme.jpg"
     },
@@ -534,21 +534,21 @@
     "dragon": {
      "cs": [
       "Dračí krev",
-      "Dragon's Blood"
+      "Pryskyřice z Amazonie"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/incense.jpg"
     },
     "berry": {
      "cs": [
-      "Berry sweet dream",
-      "Lesní plody"
+      "Lesní plody",
+      "Tělový peeling"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/blueberries.jpg"
     },
     "cocoVanilla": {
      "cs": [
       "Kokos a vanilka",
-      "CocoVanilla"
+      "Tělový peeling"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/vanilla.jpg"
     },
@@ -582,36 +582,36 @@
     },
     "shimmer": {
      "cs": [
-      "Shimmer oil",
-      "Rozjasňující suchý olej"
+      "Se zlatavým odleskem",
+      "Suchý olej na pokožku i vlasy"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/gold-glitter.jpg"
     },
     "stretch": {
      "cs": [
       "Proti striím",
-      "Anti-Stretch Mark Oil"
+      "Olej při těhotenství a přibírání"
      ],
      "photo": "/assets/n447/scenes/body-lotion.jpg"
     },
     "grape": {
      "cs": [
-      "Hroznové víno",
-      "Crazy Grape"
+      "Grapefruit",
+      "Svěží citrusová vůně"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/grapes.jpg"
     },
     "lemonLavender": {
      "cs": [
       "Citron a levandule",
-      "Lemon Lavender"
+      "Šumivka do koupele"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/lemon-tree.jpg"
     },
     "goodNight": {
      "cs": [
-      "Good Night",
-      "Na večer"
+      "Na večer",
+      "Relax před spaním"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/bath-bomb.jpg"
     },
@@ -638,57 +638,57 @@
     },
     "galaxy": {
      "cs": [
-      "Galaxy",
-      "Barvy vesmíru"
+      "Barvy vesmíru",
+      "S epsomskou solí"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/stars.jpg"
     },
     "unicorn": {
      "cs": [
-      "Unicorn",
-      "Pastelové barvy"
+      "Pastelové barvy",
+      "Šumivka do koupele"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/pastel-swirl.jpg"
     },
     "mermaid": {
      "cs": [
-      "Mermaid Pearl",
-      "Perleťová"
+      "Perleťová",
+      "Šumivka do koupele"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/pearls.jpg"
     },
     "starburst": {
      "cs": [
-      "Starburst",
-      "Jiskřivá"
+      "Jiskřivá",
+      "Šumivka do koupele"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/sparkler.jpg"
     },
     "winter": {
      "cs": [
-      "Winter Glow",
-      "Zimní"
+      "Zimní",
+      "Šumivka do koupele"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/snowy-branch.jpg"
     },
     "lemongrass": {
      "cs": [
-      "Lemongrass",
+      "Citronová tráva",
       "Koupelová sůl 500 g"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/lemongrass.jpg"
     },
     "flowers": {
      "cs": [
-      "Flower garden",
-      "Květinová"
+      "Květinová",
+      "Koupelová sůl 450 g"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/rose-bath.jpg"
     },
     "pumpkin": {
      "cs": [
-      "Pumpkin spice",
-      "Podzimní koření"
+      "Dýňové koření",
+      "Podzimní vůně"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/cinnamon.jpg"
     },
@@ -701,15 +701,15 @@
     },
     "spirulina": {
      "cs": [
-      "Minty Spirulina",
-      "Svěží"
+      "Máta a spirulina",
+      "pH 5, péče 2v1"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
     },
     "pinkClay": {
      "cs": [
-      "Pink clay",
-      "Růžový jíl"
+      "Růžový jíl",
+      "Tuhý šampon"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/clay-mask.jpg"
     },
@@ -729,8 +729,8 @@
     },
     "hairfood": {
      "cs": [
-      "Hair Food",
-      "Bergamot a brokolice"
+      "Bergamot a brokolice",
+      "Výživa vlasů"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/hair-mask-salon.jpg"
     },

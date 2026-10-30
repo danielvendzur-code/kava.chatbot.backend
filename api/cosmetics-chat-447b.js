@@ -46,7 +46,7 @@ export function draftReply(slug, text, history = []) {
 }
 
 function draft(slug, catalogue, text, history) {
-  const g = globalThis.CXK2ChatGuard?.guard(catalogue, text, BRANDS[slug]?.brand || slug);
+  const g = globalThis.CXK2ChatGuard?.guard(catalogue, text, BRANDS[slug]?.brand || slug, history);
   if (g) {
     if (g.products.length && g.deterministic) return {text: g.draft, guard: g, sub: {...catalogue, products: g.products}};
     if (g.products.length) {
@@ -78,6 +78,11 @@ export async function answer(body, {ai = aiAnswer} = {}) {
   const d = draft(slug, globalThis.CX_CATALOGUES[slug], latest, messages);
   const extra = ['Cena platí pro uvedené balení; jiné velikosti balení mají jinou cenu, kterou v údajích nemáme. Neslibujte léčbu ani zdravotní účinky.'];
   if (d.guard) extra.push('Zákazník chce konkrétní věc. Doporučujte výhradně produkty z přiloženého katalogu (splňují požadavek). Pokud je katalog prázdný, řekněte, že takový produkt v nabídce není, a zeptejte se, s čím jiným pomoci. Nikdy nenabízejte levnější nebo jiný nesouvisející produkt jako náhradu.');
+  const sm = d.guard?.summary;
+  if (sm) {
+    extra.push('Platné požadavky zákazníka z celé konverzace (pozdější zpráva je mění jen výslovně): ' + sm.asked + '. Odpověď je musí dodržet všechny současně – typ, rozpočet i vyloučené složky.');
+    if (sm.excluded.length) extra.push('Zákazník výslovně NECHCE: ' + sm.excluded.join(', ') + '. Nedoporučujte produkt, který to obsahuje. Nepřítomnost tvrďte jen u produktů z přiloženého katalogu (mají ji doloženou ve složení); jinak ji neslibujte a zeptejte se.');
+  }
   const reply = await ai({family: 'cosmetics', brand: demo.brand, web: demo.web, catalogue: d.sub || globalThis.CX_CATALOGUES[slug], messages, draft: d.text, extra});
   return {status: 200, json: reply ? {reply} : {reply: d.text, fallback: true}};
 }

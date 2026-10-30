@@ -37,6 +37,9 @@ def put(slug, cat, kind, facets, name=None, vol='80 g', role=None, set_=None, ev
          'available': 'Dostupnost: Skladem' in t, 'isSample': False, 'description': d, 'reason': d, 'facets': {'scope': 'set' if set_ else 'single', **facets},
          'source': {'url': p['url'], 'verifiedAt': CHECKED, 'category': kind, 'stock': 'InStock' if 'Dostupnost: Skladem' in t else 'OutOfStock', 'priceFrom': False,
                     'imageUrl': p.get('ogImage'), 'suitabilityEvidence': evidence, 'suitabilitySource': 'official product page description'}}
+    # zloženie zo stránky produktu („Složení: …“) – chat podľa neho overuje požadované aj vylúčené zložky
+    m = re.search(r'Složení:\s*(.+?)\s*(?:Cena za|Hmotnost:|Další produkty)', t)
+    if m and not m.group(1).lower().startswith('viz'): r['inci'] = m.group(1).strip().rstrip(',').strip()
     if role: r['role'] = role
     if set_: r['set'] = set_
     rows[slug] = r

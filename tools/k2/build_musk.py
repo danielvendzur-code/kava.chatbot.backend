@@ -59,11 +59,11 @@ for s in ['carbicka', 'farbicka', 'tucniak']:
 HAIR = [('jemny-dotyk-tuhy-sampon-na-citlivu-pokozku', ['sensitive']), ('kapitan-pansky-tuhy-sampon-na-podporu-rastu-vlasov', ['growth']),
         ('povzbudenie-tuhy-sampon-pre-podporu-rastu-vlasov', ['growth']), ('laskykvet-tuhy-sampon-na-jemne-vlasy', ['fine']),
         ('nezbednik-tuhy-sampon-proti-lupinam', ['dandruff']), ('svieze-rano-tuhy-sampon-na-mastne-vlasy', ['oily']),
-        ('vazna-znamost-tuhy-sampon-na-normalne-vlasy', ['normal']), ('vona-vianoc-tuhy-sampon-s-vianocnou-vonou-2', ['xmas'])]
+        ('vazna-znamost-tuhy-sampon-na-normalne-vlasy', ['normal']), ('vona-vianoc-tuhy-sampon-s-vianocnou-vonou-2', ['general'])]
 for s, need in HAIR:
     nm = re.split(r'\s*-\s*', by[s]['name'], maxsplit=1)
-    put(s, 'hair', 'Tuhé šampóny', {'hairNeed': need, 'focus': s}, evidence='názov a popis: ' + (nm[1] if len(nm) > 1 else 'vianočná vôňa'))
-put('vkondicioner-na-denne-pouzitie', 'hair', 'Kondicionéry', {'hairNeed': ['normal'], 'focus': 'condDaily'}, evidence='názov: na denné použitie')
+    put(s, 'hair', 'Tuhé šampóny', {'hairNeed': need, 'focus': s}, evidence=('názov a popis: ' + nm[1]) if len(nm) > 1 else 'typ vlasov e-shop neuvádza')
+put('vkondicioner-na-denne-pouzitie', 'hair', 'Kondicionéry', {'hairNeed': ['general'], 'focus': 'condDaily'}, evidence='názov: na denné použitie')
 put('kondicioner-na-suche-a-poskodene-vlasy', 'hair', 'Kondicionéry', {'hairNeed': ['dry'], 'focus': 'condDry'}, evidence='názov: na suché a poškodené vlasy')
 
 # ---- Pleť ----

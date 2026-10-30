@@ -50,7 +50,7 @@
   "hairNeed": "Vaše vlasy",
   "family": "Čo hľadáte",
   "forWhom": "Pre koho",
-  "focus": "Konkrétny produkt",
+  "focus": "Zloženie a vôňa",
   "scope": "Produkt"
  },
  "excluded": [
@@ -178,12 +178,12 @@
      ],
      "photo": "/assets/n447-kozmetika2/scenes/hair-loss-brush.jpg"
     },
-    "xmas": {
+    "general": {
      "sk": [
-      "Vianočná vôňa",
-      "Šampón ako darček"
+      "Bez konkrétneho problému",
+      "Bežné umývanie a starostlivosť"
      ],
-     "photo": "/assets/n447-kozmetika2/scenes/xmas-spices.jpg"
+     "photo": "/assets/n447-kozmetika2/scenes/hair-touch.jpg"
     }
    }
   },
@@ -292,329 +292,355 @@
   {
    "key": "focus",
    "sk": [
-    "Ktorý vyberiete?",
-    "Podľa vône a zloženia v popise produktu."
+    "Čo vám vyhovuje viac?",
+    "Podľa zloženia a popisu produktu na e-shope MusK."
    ],
+   "byCategory": {
+    "soap": {
+     "sk": [
+      "Čo vám na mydle vyhovuje?",
+      "Rozdiely podľa zloženia a popisu mydla MusK."
+     ]
+    },
+    "kids": {
+     "sk": [
+      "Ktoré detské mydlo?",
+      "Rozdiely podľa tvaru a zloženia z popisu MusK."
+     ]
+    },
+    "hair": {
+     "sk": [
+      "Čo má šampón alebo kondicionér obsahovať?",
+      "Podľa zloženia z popisu MusK."
+     ]
+    },
+    "gift": {
+     "sk": [
+      "Čo má byť v sade?",
+      "Podľa obsahu sady na e-shope MusK."
+     ]
+    }
+   },
    "values": {
     "az-na-kozu": {
      "sk": [
-      "Až na kožu",
-      "Bez vône a farbív, včelí vosk"
+      "S včelím voskom",
+      "Bez vône a farbív, reliéf plástov"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/honey.jpg"
     },
     "nezny-dotyk": {
      "sk": [
-      "Nežný dotyk",
-      "Bez vône, aloe vera"
+      "S aloe vera",
+      "Bez vône, aj pre citlivú pokožku"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/aloe.jpg"
     },
     "vona-provence": {
      "sk": [
-      "Vôňa Provence",
-      "Levanduľa, sušené kvety"
+      "So sušenými levanduľovými kvetmi",
+      "Levanduľová silica a včelí vosk"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/lavender-bunch.jpg"
     },
     "solny-kvet-2": {
      "sk": [
-      "Soľný kvet",
-      "Levanduľa a morská soľ"
+      "S morskou soľou a levanduľou",
+      "Jediná silica, krémová pena"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/lavender-field.jpg"
     },
     "ruzova-alej": {
      "sk": [
-      "Ružová alej",
-      "Lupene ruže, palmaruža, geránium"
+      "S lupeňmi ruže",
+      "Levanduľa, palmaruža a geránium"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/rose.jpg"
     },
     "rozkvitnuta-luka": {
      "sk": [
-      "Rozkvitnutá lúka",
-      "Levanduľa, palmaruža, geránium"
+      "Pestrofarebný kvetinový vzor",
+      "Levanduľa, palmaruža a geránium"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/poppy.jpg"
     },
     "mozaika": {
      "sk": [
-      "Mozaika",
-      "Levanduľa, palmarosa, geránium"
+      "S farebnými odrezkami mydiel",
+      "Levanduľa, palmarosa a geránium"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/geranium.jpg"
     },
     "solna-krasa": {
      "sk": [
-      "Soľná krása",
-      "Levanduľa, muškát, ylang-ylang"
+      "S morskou soľou a ylang-ylang",
+      "Levanduľa a muškát, vegánske"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/sea-salt.jpg"
     },
     "mliecna-draha": {
      "sk": [
-      "Mliečna dráha",
-      "Kozie mlieko, bergamot"
+      "S kozím mliekom",
+      "Bergamot, ho wood a citrónová tráva"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/goat.jpg"
     },
     "solny-dotyk": {
      "sk": [
-      "Soľný dotyk",
-      "Bergamot, litsea, citrónová tráva"
+      "S morskou soľou a bergamotom",
+      "Litsea a citrónová tráva"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/lemongrass.jpg"
     },
     "solna-krystal": {
      "sk": [
-      "Soľný kryštál",
-      "Koriander, limetka, zelený íl"
+      "So zeleným ílom a morskou soľou",
+      "Koriander a limetka"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/clays.jpg"
     },
     "maly-princ": {
      "sk": [
-      "Malý princ",
-      "Koriander, grep, levanduľa"
+      "S koriandrom a grepom",
+      "Litsea a levanduľa, kreslený motív"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/grapefruit.jpg"
     },
     "tiene": {
      "sk": [
-      "Tiene",
-      "Bergamot, litsea, citrónová tráva"
+      "S čiernymi odrezkami mydiel",
+      "Bergamot, litsea a citrónová tráva"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/lemon-tree.jpg"
     },
     "na-vlnach": {
      "sk": [
-      "Na vlnách",
-      "Levanduľa s litseou, včelí vosk"
+      "Levanduľa s litseou",
+      "Včelí vosk, farby západu slnka"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/ocean-wave.jpg"
     },
     "pokoj-v-dusi": {
      "sk": [
-      "Pokoj v duši",
-      "Medovka, citronela"
+      "S medovkou a ríbezľou",
+      "Citronela, bylinkový posyp"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/lemon-balm.jpg"
     },
     "sladke-spomienky": {
      "sk": [
-      "Sladké spomienky",
-      "Rozmarín, šalvia, tymian"
+      "S jemným pílingom",
+      "Rozmarín, majorán, šalvia a tymian"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/thyme.jpg"
     },
     "zeleny-poklad": {
      "sk": [
-      "Zelený poklad",
-      "Konopný olej, limetka, jedľa"
+      "S konopným olejom a pemzou",
+      "Limetka, jedľa a majorán, vegánske"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/hemp.jpg"
     },
     "krivan": {
      "sk": [
-      "Kriváň",
-      "Aktívne uhlie, borovica, mäta"
+      "S aktívnym uhlím",
+      "Šalvia, borovica a mäta"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/pine.jpg"
     },
     "kolaz": {
      "sk": [
-      "Koláž",
-      "Borovica, mäta, šalvia"
+      "S hnedými odrezkami mydiel",
+      "Borovica, mäta a šalvia"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/clary-sage.jpg"
     },
     "solny-vavrin": {
      "sk": [
-      "Soľný vavrín",
-      "Vavrín a morská soľ"
+      "S vavrínom a morskou soľou",
+      "Zelená riasa chlorela"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/bay-salt.jpg"
     },
     "pomarancova-sviezost": {
      "sk": [
-      "Pomarančová sviežosť",
-      "Pomaranč, mäta, eukalyptus"
+      "Pomaranč s mätou",
+      "Bergamot a eukalyptus"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/orange-slices.jpg"
     },
     "9-3-4": {
      "sk": [
-      "9 ¾",
-      "Mandarínka, levanduľa, mäta"
+      "Mandarínka a citrónová tráva",
+      "Levanduľa a mäta, vegánske"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/mandarin.jpg"
     },
     "priliv": {
      "sk": [
-      "Príliv",
-      "Citrón, mäta, pačuli"
+      "Citrón, mäta a pačuli",
+      "S modrými odrezkami mydiel"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
     },
     "s-lucmi-slnka": {
      "sk": [
-      "S lúčmi slnka",
-      "Nechtík, citrón, rozmarín"
+      "S kvetmi nechtíka",
+      "Citrón, levanduľa, rozmarín, včelí vosk"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/calendula.jpg"
     },
     "macko": {
      "sk": [
-      "Macko",
-      "Citrón s levanduľou"
+      "Citrón s levanduľou",
+      "Vegánske, karamelová farba"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/citrus.jpg"
     },
     "liska": {
      "sk": [
-      "Líška",
-      "Litsea cubeba s levanduľou"
+      "Litsea cubeba s levanduľou",
+      "Vegánske, ryšavá farba"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
     },
     "dzentlmen": {
      "sk": [
-      "Džentlmen",
-      "Céder a santal"
+      "Céder a santal",
+      "Tmavé s krémovými pierkami"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/sandalwood.jpg"
     },
     "pan-bozsky": {
      "sk": [
-      "Pán Božský",
-      "Pačuli, mäta, citrón"
+      "Pačuli, mäta a citrón",
+      "Svieža a mužná vôňa"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/incense.jpg"
     },
     "zeleny-haj": {
      "sk": [
-      "Zelený háj",
-      "Kajeput a pačuli"
+      "Kajeput a pačuli",
+      "Biely mramor s tmavou žilkou"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/tea-tree.jpg"
     },
     "strbske-pleso": {
      "sk": [
-      "Štrbské pleso",
-      "Céder, cyprus, tea tree"
+      "Céder, cyprus a tea tree",
+      "S bergamotom, horský motív"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/cypress.jpg"
     },
     "sachmat": {
      "sk": [
-      "Šachmat",
-      "Céder a amyris"
+      "Céder a amyris",
+      "S čiernymi a sivými odrezkami"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/oak.jpg"
     },
     "cierne-zlato": {
      "sk": [
-      "Čierne zlato",
-      "Aktívne uhlie a tea tree"
+      "S aktívnym uhlím a tea tree",
+      "Včelí vosk proti vysušeniu"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/charcoal.jpg"
     },
     "carbicka": {
      "sk": [
-      "Čarbička",
-      "Ceruzka, citrusová vôňa"
+      "Ceruzka so žltým telom",
+      "Citrusová vôňa, modrá guma"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/kid-suds.jpg"
     },
     "farbicka": {
      "sk": [
-      "Farbička",
-      "Ceruzka, citrusová vôňa"
+      "Ceruzka s ružovou gumou",
+      "Citrusová vôňa, grafitový hrot"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/kid-bath.jpg"
     },
     "tucniak": {
      "sk": [
-      "Tučniak",
+      "Zvieratko s červeným šálom",
       "Bambucké maslo, citrusy a kvety"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/kids-towel.jpg"
     },
     "setKids": {
      "sk": [
-      "Sada Pre najmenších",
-      "Tri mydlá + mydelnička lienka"
+      "Tri detské mydlá",
+      "S mydelničkou lienkou, hotová sada"
      ],
      "photo": "/assets/scenes/gift-care.jpg"
     },
     "jemny-dotyk-tuhy-sampon-na-citlivu-pokozku": {
      "sk": [
-      "Jemný dotyk",
-      "Bez vône a farbív"
+      "Bez vône a farbív",
+      "Na citlivú pokožku hlavy"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/scalp-hands.jpg"
     },
     "kapitan-pansky-tuhy-sampon-na-podporu-rastu-vlasov": {
      "sk": [
-      "Kapitán (pánsky)",
-      "Kofeín, kajeput a pačuli"
+      "Pánsky s kofeínom",
+      "Kajeput a pačuli"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/man-hair-wash.jpg"
     },
     "povzbudenie-tuhy-sampon-pre-podporu-rastu-vlasov": {
      "sk": [
-      "Povzbudenie",
-      "Kofeín, arganový olej, mäta"
+      "S kofeínom a arganovým olejom",
+      "Mäta"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/coffee-beans.jpg"
     },
     "laskykvet-tuhy-sampon-na-jemne-vlasy": {
      "sk": [
-      "Láskykvet",
-      "Ylang-ylang, pantenol"
+      "S pantenolom",
+      "Ylang-ylang, na jemné vlasy"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/hair-fine.jpg"
     },
     "nezbednik-tuhy-sampon-proti-lupinam": {
      "sk": [
-      "Nezbedník",
-      "Tea tree, citrón, santal"
+      "S tea tree",
+      "Citrón a santal, proti lupinám"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/tea-tree.jpg"
     },
     "svieze-rano-tuhy-sampon-na-mastne-vlasy": {
      "sk": [
-      "Svieže ráno",
-      "Šalvia a citronela"
+      "So šalviou a citronelou",
+      "Na mastné vlasy"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/clary-sage.jpg"
     },
     "vazna-znamost-tuhy-sampon-na-normalne-vlasy": {
      "sk": [
-      "Tuhý šampón Vážna známosť",
-      "Levanduľa a céder"
+      "Levanduľa a céder",
+      "Kukui maslo, na normálne vlasy"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
     },
     "vona-vianoc-tuhy-sampon-s-vianocnou-vonou-2": {
      "sk": [
-      "Vôňa Vianoc",
-      "Škorica, jedľa, badián"
+      "Škorica, jedľa a badián",
+      "Typ vlasov e-shop neuvádza"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/xmas-spices.jpg"
     },
     "condDaily": {
      "sk": [
-      "Kondicionér na denné použitie",
-      "Ľahký, ylang-ylang a grep"
+      "Ľahký na denné použitie",
+      "Ylang-ylang, grep a ruža"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/hair-touch.jpg"
     },
     "condDry": {
      "sk": [
-      "Kondicionér na suché vlasy",
-      "Ricínový olej, ovos"
+      "Na suché a poškodené vlasy",
+      "Ricínový olej a ovos"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/hair-ends-dry.jpg"
     },
@@ -767,8 +793,8 @@
     },
     "balzam-na-pery-prirodny": {
      "sk": [
-      "Prírodný",
-      "Bez vône a farbív"
+      "Bez vône a farbív",
+      "Prírodný balzam"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/honey.jpg"
     },
@@ -802,85 +828,85 @@
     },
     "osviezujuci-kupel": {
      "sk": [
-      "Osviežujúci kúpeľ",
-      "Levanduľa a eukalyptus"
+      "Levanduľa a eukalyptus",
+      "Osviežujúca soľ do kúpeľa"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/eucalyptus.jpg"
     },
     "upokojujuci-kupel": {
      "sk": [
-      "Upokojujúci kúpeľ",
-      "Levanduľa"
+      "Levanduľa",
+      "Upokojujúca soľ do kúpeľa"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/lavender-field.jpg"
     },
     "sol-do-kupela-vianoce-vo-vani-600g": {
      "sk": [
-      "Vianoce vo vani",
-      "Jedľa, pomaranč, škorica"
+      "Jedľa, pomaranč a škorica",
+      "Vianočná soľ do kúpeľa 600 g"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/xmas-spices.jpg"
     },
     "setHer3": {
      "sk": [
-      "Si úžasná",
-      "Tri dámske kvetinové mydlá"
+      "Tri kvetinové mydlá",
+      "Dámske mydlá v sade"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/poppy.jpg"
     },
     "setArgan": {
      "sk": [
-      "Si nádherná",
-      "Mydlá, šampón a arganový olej"
+      "Mydlá, šampón a arganový olej",
+      "Darčeková sada pre ňu"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/argan-tree.jpg"
     },
     "setLavender": {
      "sk": [
-      "Pre teba",
-      "Levanduľové mydlo, šampón, mydelnička"
+      "Levanduľové mydlo a šampón",
+      "S mydelničkou"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/lavender-bunch.jpg"
     },
     "setMen": {
      "sk": [
-      "Pánska sila",
-      "Tri pánske mydlá"
+      "Tri pánske mydlá",
+      "Darčeková sada pre neho"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/man-towel.jpg"
     },
     "setFamily": {
      "sk": [
-      "Rodinné mydlá",
-      "Päť mydiel pre celú rodinu"
+      "Päť mydiel pre celú rodinu",
+      "Od detského po tmavé"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/kid-bath.jpg"
     },
     "setHerbal": {
      "sk": [
-      "Bylinné mydlá",
-      "Päť bylinných mydiel"
+      "Päť bylinných mydiel",
+      "Darčeková sada"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/rosemary.jpg"
     },
     "setDesign": {
      "sk": [
-      "Dizajnové mydlá",
-      "Kriváň, Štrbské pleso, Malý princ…"
+      "Mydlá s motívmi",
+      "Hory, pleso a kreslené postavičky"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/pine.jpg"
     },
     "setNatural": {
      "sk": [
-      "Prírodné mydlá",
-      "Päť mydiel v zemitých tónoch"
+      "Päť mydiel v zemitých tónoch",
+      "Darčeková sada"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/olives.jpg"
     },
     "setFav": {
      "sk": [
-      "Naše obľúbené",
-      "Dve mydlá + keramická mydelnička"
+      "Dve mydlá s keramickou mydelničkou",
+      "Darčeková sada"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/calendula.jpg"
     }

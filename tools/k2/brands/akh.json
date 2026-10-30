@@ -49,7 +49,7 @@
   "sets": "Dárkové sady",
   "skin": "Typ pleti",
   "family": "Vůně",
-  "focus": "Konkrétní vůně",
+  "focus": "Vůně a složení",
   "spf": "Ochrana",
   "setFor": "Sada pro"
  },
@@ -224,7 +224,7 @@
    "key": "focus",
    "cs": [
     "Kterou vůni vyberete?",
-    "Podle názvu produktu v e-shopu AKH."
+    "Podle esenciálních olejů v popisu produktu."
    ],
    "values": {
     "citron": {
@@ -356,14 +356,14 @@
     "mint": {
      "cs": [
       "Máta a eukalyptus",
-      "FRISCH – ledové osvěžení"
+      "Výrazně osvěžující sprchový olej"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
     },
     "cellu": {
      "cs": [
       "Jalovec, rozmarýn a skořice",
-      "CELLU-THERAP"
+      "Sprchový nebo koupelový olej"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/leg-massage.jpg"
     },
@@ -404,15 +404,15 @@
     },
     "gentle": {
      "cs": [
-      "Jemný peeling",
-      "OLEOSOL BAL"
+      "Šetrný solno-olejový peeling",
+      "Na celé tělo"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/sea-salt.jpg"
     },
     "feet": {
      "cs": [
       "Na chodidla",
-      "OLEOSOL PEDI"
+      "Sůl a bambucké máslo na ztvrdlou kůži"
      ],
      "photo": "/assets/n447/scenes/feet-care.jpg"
     },
@@ -425,8 +425,8 @@
     },
     "celluPeel": {
      "cs": [
-      "OLEOSOL CELLU",
-      "Prohřívací solný peeling"
+      "Prohřívací solný peeling",
+      "Na prokrvení pokožky"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/leg-massage.jpg"
     }

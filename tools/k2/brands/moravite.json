@@ -73,8 +73,8 @@
   {
    "key": "focus",
    "cs": [
-    "Které vyberete?",
-    "Podle hlavní složky nebo vůně v názvu produktu."
+    "Co vás láká nejvíc?",
+    "Podle hlavní složky nebo vůně v popisu produktu."
    ],
    "values": {
     "hyaluron": {
@@ -100,15 +100,15 @@
     },
     "vanilla": {
      "cs": [
-      "Vanilkový rituál",
-      "Směs olejů s vanilkou"
+      "S vanilkou",
+      "Směs olejů, i pro citlivou pokožku"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/vanilla.jpg"
     },
     "oilSet": {
      "cs": [
       "Oba oleje v sadě",
-      "Opuncie + Vanilkový rituál"
+      "Opuncie a olej s vanilkou"
      ],
      "photo": "/assets/scenes/oil-palm.jpg"
     },
@@ -205,8 +205,8 @@
     },
     "punch": {
      "cs": [
-      "Punč",
-      "Skořice, hřebíček, pomeranč"
+      "Skořice, hřebíček, pomeranč",
+      "Hřejivá koupel"
      ],
      "photo": "/assets/n447-kozmetika2/scenes/xmas-spices.jpg"
     },
