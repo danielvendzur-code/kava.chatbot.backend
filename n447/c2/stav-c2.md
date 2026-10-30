@@ -1,6 +1,6 @@
 # BLACK a Nordbeans – c2 z primárnych údajov (stav 2026-10-30)
 
-Vetva `claude/n447-coffee-primary-20261030` (z `claude/n447-black-20261022`). Izolované kópie: `n447/c2/` (jadro, chat, poradca, dáta, štýly) a `api/chat-447c2.js`.
+Vetva `claude/n447-coffee-primary-20261030` (z `claude/n447-black-20261022`), commit `8395a53`, Preview https://kava-chatbot-backend-dnqb8ogcn-danielvendzur-codes-projects.vercel.app (/black.html, /nordbeans.html). Izolované kópie: `n447/c2/` (jadro, chat, poradca, dáta, štýly) a `api/chat-447c2.js`.
 Odoslané ukážky (n447/engine.js, n447/reply.js, api/chat-447.js, ich dáta a stránky) sa nemenia. Cena služby 447 € + 10 €/mes., bez trialu.
 Produkcia, aliasy, zákaznícke subdomény ani e-maily nie sú nasadené ani odoslané.
 
