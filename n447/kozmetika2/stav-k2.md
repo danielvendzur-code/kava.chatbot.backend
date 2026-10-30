@@ -9,14 +9,14 @@ Register sa nenasadzuje (`.vercelignore`).
 |---|---|---|---|---|---|---|
 | MusK | READY_FOR_REVIEW | /musk.html | 93 / 84 | 74 produktov (INCI zo stránky) | 30 obrazoviek otázok, 84 ciest | 4 rozmery × 198 obrazoviek / 84 výsledkov, nálezy 0 |
 | Bohemikus | READY_FOR_REVIEW | /bohemikus.html | 21 / 21 | 10 mydiel („Složení“ zo stránky) | 8 / 21 | 4 rozmery × 50 / 21, nálezy 0 |
-| AKH | READY_FOR_REVIEW | /akh.html | 100 / 100 | – | 40 / 98 | 390×650, nálezy 0 |
-| Andreine 447 | READY_FOR_REVIEW | /andreine447.html | 53 / 47 | – | 33 / 61 | 390×650, nálezy 0 |
-| Goodie | READY_FOR_REVIEW | /goodie.html | 106 / 97 | – | 37 / 97 | 390×650, nálezy 0 |
-| libebit | READY_FOR_REVIEW | /libebit.html | 63 / 52 | – | 33 / 65 | 390×650, nálezy 0 |
-| MALINNA° | READY_FOR_REVIEW | /malinna.html | 31 / 31 | – | 31 / 54 | 390×650, nálezy 0 |
-| MARK | READY_FOR_REVIEW | /mark.html | 90 / 84 | – | 37 / 86 | 390×650, nálezy 0 |
-| Moravité | READY_FOR_REVIEW | /moravite.html | 28 / 22 | – | 11 / 22 | 390×650, nálezy 0 |
-| NATURINKA | READY_FOR_REVIEW | /naturinka.html | 95 / 94 | – | 31 / 95 | 390×650, nálezy 0 |
+| AKH | READY_FOR_REVIEW | /akh.html | 100 / 100 | – | 40 / 98 | 4 rozmery, nálezy 0 |
+| Andreine 447 | READY_FOR_REVIEW | /andreine447.html | 53 / 47 | – | 33 / 61 | 4 rozmery, nálezy 0 |
+| Goodie | READY_FOR_REVIEW | /goodie.html | 106 / 97 | – | 37 / 97 | 4 rozmery, nálezy 0 |
+| libebit | READY_FOR_REVIEW | /libebit.html | 63 / 52 | – | 33 / 65 | 4 rozmery, nálezy 0 |
+| MALINNA° | READY_FOR_REVIEW | /malinna.html | 31 / 31 | – | 31 / 54 | 4 rozmery, nálezy 0 |
+| MARK | READY_FOR_REVIEW | /mark.html | 90 / 84 | – | 37 / 86 | 4 rozmery, nálezy 0 |
+| Moravité | READY_FOR_REVIEW | /moravite.html | 28 / 22 | – | 11 / 22 | 4 rozmery, nálezy 0 |
+| NATURINKA | READY_FOR_REVIEW | /naturinka.html | 95 / 94 | – | 31 / 95 | 4 rozmery, nálezy 0 |
 
 ## Opravené nálezy auditu
 1. **Zápor v chate** (`n447/kozmetika2/chat-guard-k2.js`)
@@ -51,6 +51,7 @@ Register sa nenasadzuje (`.vercelignore`).
    - Do SVG sú doplnené iba atribúty `width/height`, aby sa logo na úvodnej stránke nezobrazovalo s nulovou veľkosťou. Krivky sú nezmenené.
 
 ## Testy (bez siete, bez Sonnet/plateného API)
+Dôkazy (výstupy behov 30. 10.): `n447/kozmetika2/dokazy-2026-10-30/` – `chat-43.txt`, `audit-7.txt`, `tree.txt`, `chips.txt`, `browser-dfs.txt` (MusK, Bohemikus 4 rozmery; ostatných 8 pri 390×650) a `dfs-SLUG.txt` (ostatných 8 pri 320×568, 560×600, 1280×800). Všetkých 10 ukážok × 4 rozmery: nálezy 0, chyby JS 0.
 - `node tools/k2/test_chat_k2.mjs`: 43/43. Obsahuje pôvodných 28 prípadov a nové prípady:
   - zápor (SK/CZ, alergia, „nemám rada“, kokos);
   - história (rozpočet, typ, zápor, výslovná zmena limitu, doprava);
