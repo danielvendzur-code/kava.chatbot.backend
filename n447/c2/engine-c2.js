@@ -351,7 +351,7 @@
       const pages = pickPages(p), idx = a.pick2 ? 2 : a.pick ? 1 : 0, key = ['pick', 'pick2', 'pick3'][idx];
       const tp = tonePhotos(pages[idx]);
       /* c2: názov kávy (SKU) sa vo voľbe neukazuje – rozhodujú chuťové tóny; v podtitule pôvod a spracovanie. */
-      const sub = (x) => [String(x.origin || '').split(/[·(]/)[0].trim(), x.process ? String(x.process).split(',')[0].trim() : ''].filter(Boolean).join(' · ') || (x.profile || '');
+      const sub = (x) => [String(x.origin || '').replace(/\s*\([^)]*\)/g, '').split('·')[0].trim(), x.process ? String(x.process).split(',')[0].trim() : ''].filter(Boolean).join(' · ') || (x.profile || '');
       const options = pages[idx].map((x) => ({value: x.id, title: tones(x), detail: sub(x), photo: tp.get(x.id), product: x.id}));
       if (idx < pages.length - 1) {
         const later = pages.slice(idx + 1).flat();

@@ -54,7 +54,7 @@
     ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
     ['Pozná vašu ponuku', 'pracuje s vašimi kávami a cenami'],
     ['Výber podľa vašich potrieb', 'na konci jedna konkrétna káva'],
-    [L('Rozpočet na celý nákup', 'Rozpočet na celý nákup'), L('káva aj doplnok spolu v rámci sumy', 'káva i doplněk dohromady v rámci částky')]
+    [L('Konkrétne balenie a cena', 'Konkrétní balení a cena'), L('viete, aké balenie vyberáte a koľko stojí', 'víte, jaké balení vybíráte a kolik stojí')]
   ];
 
   const PRICING = {
@@ -72,7 +72,7 @@
       ['Odpovedá aj o polnoci', 'Pôvod, praženie, príprava aj porovnanie dvoch káv.'],
       ['Výber podľa vašich potrieb', L('Príprava, chuť a skutočné rozdiely vašich káv — na konci jedna konkrétna káva.', 'Příprava, chuť a skutečné rozdíly vašich káv — na konci jedna konkrétní káva.')],
 
-      [L('Rozpočet na celý nákup', 'Rozpočet na celý nákup'), L('Celá zostava vrátane doplnku sa zmestí do zvolenej sumy.', 'Celá sestava včetně doplňku se vejde do zvolené částky.')]
+      [L('Konkrétne balenie a cena', 'Konkrétní balení a cena'), L('Výsledok uvádza presnú cenu overeného balenia. Pri zadanom rozpočte sa kontroluje celý odporúčaný nákup.', 'Výsledek uvádí přesnou cenu ověřeného balení. Při zadaném rozpočtu se kontroluje celý doporučený nákup.')]
     ]
   };
 

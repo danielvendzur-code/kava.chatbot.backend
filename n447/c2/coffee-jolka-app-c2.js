@@ -677,7 +677,7 @@
     const others = drip ? [] : ENG.pool(N447, state.answers, 'pick').filter((x) => x.id !== p.id);
     if (others.length) {
       const more = document.createElement('details'); more.className = 'coffee-more-matches';
-      const title = document.createElement('summary'); title.textContent = T('Ďalšie kávy spĺňajúce váš výber (', 'Další kávy splňující váš výběr (') + others.length + ')'; more.append(title);
+      const title = document.createElement('summary'); title.textContent = T('Ďalšie kávy s podobnou chuťou (', 'Další kávy s podobnou chutí (') + others.length + ')'; more.append(title);
       const list = document.createElement('div');
       for (const o of others) {
         const link = document.createElement('a'); link.href = o.url; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.className = 'coffee-match-link';
