@@ -1,0 +1,19 @@
+/* c2 – BLACK a Nordbeans: väčšie a čitateľnejšie voľby (fotka scény/tónu, nie vrecúško), orezaný ukazovateľ postupu.
+   Načítava sa iba na black.html a nordbeans.html; schválené zdieľané štýly ostávajú nezmenené. */
+html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget .progress{display:flex!important;align-items:center!important;gap:6px!important;height:8px!important;overflow:hidden!important;}
+html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget .progress>i{flex:1 1 0!important;min-width:0!important;height:8px!important;margin:0!important;border-radius:999px!important;overflow:hidden!important;clip-path:inset(0 round 999px);transform:none!important;}
+html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget .option__copy b{font-size:15.5px!important;line-height:1.25!important;}
+html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget .option__copy small{font-size:13px!important;line-height:1.35!important;color:#4d4d4d!important;opacity:1!important;}
+html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget .option__visual{height:104px!important;min-height:0!important;flex:0 0 auto!important;overflow:hidden!important;}
+html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget .option__visual img{width:100%!important;height:100%!important;object-fit:cover!important;}
+html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget .c2-set .addon__card small{display:block;margin-top:2px;font-size:13px;line-height:1.35;color:#4d4d4d;}
+@media (max-height:700px){
+  html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget .option__visual{height:76px!important;}
+  html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget #advisor h2{font-size:21px!important;line-height:1.18!important;}
+}
+@media (max-height:600px){
+  html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget .option__visual{height:auto!important;}
+  html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget #advisor h2{font-size:19px!important;margin-bottom:8px!important;}
+  html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget .option__copy b{font-size:14.5px!important;}
+  html body:is(.black-clean,.nordbeans-clean) #widget#widget#widget .option__copy small{font-size:12.5px!important;}
+}
