@@ -45,6 +45,8 @@
  const baseIconFor=iconFor;
  function descriptiveIcon(key,value,category){const n=norm(value);if(n==='unwrappedpack')return 'leaf';if(n==='wrappedpack')return 'gift';if(key==='budget'&&!value)return 'infinity';if(n==='targetedcare')return 'target';if(n==='specificarea')return 'hand';if(n==='dailycare')return 'smile';if(key==='profile'&&category==='body')return /dry|hydr|oily/.test(n)?'drop':'hand';return baseIconFor(key,value,category);}
  function resolve({key,value,category,title},used=new Set()){
+  /* séria 3: popisné fotky volieb iného segmentu (napr. čaj); bez CX_CHOICE_PHOTOS ostáva výber Andreine */
+  const own=window.CX_CHOICE_PHOTOS;if(own){const list=[].concat(own[key+':'+value]||own[value]||[],own['*']||[]);for(const c of list){const src=Array.isArray(c)?c[0]:c;if(src&&!used.has(src)){used.add(src);return {photo:src,position:Array.isArray(c)&&c[1]||'50% 50%',symbol:false,meaning:String(value)};}}}
   const n=norm(value+' '+(title||'')),hair=category==='hair'||/hair|vlas|sampon|kondicion|scalp|curl/.test(n);
   let pool;
   if(hair)pool=/wash|umy|sampon|oily|mast/.test(n)?['hair-shampoo','hair-wash','hair-natural','hair-brush']:['hair-natural','hair-brush','hair-wash','hair-shampoo'];
@@ -280,7 +282,10 @@
       if(step.key==='careVariant'&&state.answers.category==='makeup')heading=resultGuide().t('Aký odtieň hľadáte?','Jaký odstín hledáte?');
       if(step.key==='budget'){heading=resultGuide().t('Aký je rozpočet na celú zostavu?','Jaký je rozpočet na celou sestavu?');note=resultGuide().t('Hlavný produkt aj odporúčaný doplnok spolu.','Hlavní produkt i doporučený doplněk dohromady.');const matches=engine.recommend({...state.answers,budget:''}).matches,currency=matches[0]?.currency||'EUR',unit=currency==='CZK'?'Kč':'€',within=n=>matches.filter(p=>Number.isFinite(p.priceAmount)&&p.priceAmount<=n&&(!p.source?.priceFrom||(Number.isFinite(p.source.priceMax)&&p.source.priceMax<=n))&&(!p.source?.priceFrom||(Number.isFinite(p.source.priceMax)&&p.source.priceMax<=n))).length,viable=step.options;content=options([...viable.map(n=>({value:String(n),title:`Do ${n} ${unit}`,note:resultGuide().t('Vrátane odporúčaného doplnku','Včetně doporučeného doplňku'),products:matches.filter(p=>Number.isFinite(p.priceAmount)&&p.priceAmount<=n&&(!p.source?.priceFrom||Number.isFinite(p.source.priceMax)&&p.source.priceMax<=n))})),{value:'',title:'Bez limitu',note:resultGuide().t('Bez cenového obmedzenia','Bez cenového omezení'),products:matches}]);}
     }
-    panel.innerHTML=progress+`<div class="cx-quality-body"><small>${step?readable(step.key):'Váš výber'}</small><h2 tabindex="-1">${esc(heading)}</h2><p class="cx-quality-intro">${esc(note)}</p>${content}</div>`;
+    /* séria 3: otázky a texty iného segmentu (napr. čaj) – bez CX_STEP_COPY / CX_PANEL_TEXT ostáva text Andreine */
+    const stepCopy=step&&window.CX_STEP_COPY&&window.CX_STEP_COPY[step.key];if(stepCopy){heading=stepCopy[0];note=stepCopy[1];}
+    panel.innerHTML=progress+`<div class="cx-quality-body"><small>${step?(stepCopy&&stepCopy[2]||readable(step.key)):'Váš výber'}</small><h2 tabindex="-1">${esc(heading)}</h2><p class="cx-quality-intro">${esc(note)}</p>${content}</div>`;
+    if(window.CX_PANEL_TEXT){let h=panel.innerHTML;for(const [a,b] of window.CX_PANEL_TEXT)h=h.split(a).join(b);panel.innerHTML=h;}
     panel.querySelector('.cx-quality-body').classList.toggle('is-question',!!step);panel.querySelector('.cx-quality-body').classList.toggle('is-budget',step?.key==='budget');framePhotos();requestAnimationFrame(settle);panel.querySelector('.cx-quality-body').scrollTop=0;panel.querySelector('.cx-quality-body>h2')?.focus({preventScroll:true});
   }
   function mode(){panel.hidden=false;widget.classList.add('cx-catalogue-active');nav.querySelectorAll('button').forEach(b=>{const active=b.dataset.mode==='advisor';b.classList.toggle('is-active',active);b.setAttribute('aria-pressed',String(active));});render();}

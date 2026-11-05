@@ -27,21 +27,17 @@
   const OFFER = (cs) => ({price: '447', trial: cs ? 'Bez zkušebního období' : 'Bez skúšobného obdobia', noTrial: true});
 
   /* Logá: úvod (biely podklad) vo farbách firmy; hlavička a bublina (tmavé) iba priehľadný tvar; kruh správy biely s logom vo farbách. */
-  const LOGOS = {
-    beansmiths: {landing: '/assets/s3/beansmiths/wordmark.png', header: '/assets/s3/beansmiths/wordmark.png', avatar: '/assets/s3/beansmiths/logo.png'},
-    merrybeans: {landing: '/assets/s3/merrybeans/wordmark.png', header: '/assets/s3/merrybeans/wordmark-line.png', avatar: '/assets/s3/merrybeans/logo.png', cover: true},
-    typika: {landing: '/assets/s3/typika/logo.png', header: '/assets/s3/typika/logo.png', avatar: '/assets/s3/typika/logo.png'},
-    mlsnacava: {landing: '/assets/s3/mlsnacava/logo.png', header: '/assets/s3/mlsnacava/logo-mark.png', avatar: '/assets/s3/mlsnacava/logo.png', cover: true},
-    tarani: {avatar: '/assets/s3/tarani/logo.png'}
-  };
+  const REG = (window.S3_REG && window.S3_REG.demos) || {};
+  const LOGOS = Object.fromEntries(Object.entries(REG).map(([k, v]) => [k, v.logos || {}]));
   if (LOGOS[slug]) window.CX_S3_MARK = {avatar: LOGOS[slug].avatar, cover: !!LOGOS[slug].cover};
   const N = window.N447_DATA && window.N447_DATA[slug];
   if (N) {
     const E = window.N447Engine, b = N.brand, cs = N.lang === 'cs';
     const products = N.products.filter((p) => p.available !== false && p.kind === 'coffee');
-    const priceOf = (p) => { const v = E.verifiedPacks(p, {})[0]; return v ? E.grams(v.grams) + ' · ' + E.money(v.price, p.currency) : ''; };
+    const cheapest = (p) => (p.variants || []).filter((v) => v.verifiedAt && Number.isFinite(v.price) && v.available !== false).sort((m, n) => m.price - n.price || m.grams - n.grams)[0];
+    const priceOf = (p) => { const v = cheapest(p); return v ? E.grams(v.grams) + ' · ' + E.money(v.price, p.currency) : ''; };
     const catalogue = products.map((p) => ({id: p.id, name: p.name, url: p.url, photo: p.photo, available: true, price: priceOf(p),
-      priceAmount: (E.verifiedPacks(p, {})[0] || {}).price, currency: p.currency, kind: cs ? 'Káva' : 'Káva', category: 'coffee', tags: [],
+      priceAmount: (cheapest(p) || {}).price, currency: p.currency, kind: cs ? 'Káva' : 'Káva', category: 'coffee', tags: [],
       reason: (p.notes || []).slice(0, 3).join(', '), description: p.summary || ''}));
     const hero = N.products.find((p) => p.id === (N.demo || {}).heroProductId);
     data.brands[slug] = {
@@ -64,37 +60,20 @@
     return;
   }
 
-  const BRANDS = {
-    tarani: {name: 'TARANI', fullName: 'TARANI', domain: 'tarani.cz', website: 'https://www.tarani.cz/', url: 'https://www.tarani.cz/kosmetika-pece-o-plet/',
-      theme: {brand: '#2b2622', accent: '#b98a3a', soft: '#f7f2ea', paper: '#ffffff', ink: '#231f1c', line: '#e8dfd1'},
-      wordmark: wordmark('/assets/s3/tarani/wordmark.png', 'TARANI'), mark: '/assets/s3/tarani/logo.png',
-      hero: '/assets/s3/tarani/24-gold-37-herbs-ultra-elixir-krem.jpg',
-      ownerNote: 'Ájurvédská kosmetika z Himálají — výběr podle typu pleti a účinku.',
-      quickChips: ['Mám citlivou pleť', 'Mám mastnou pleť', 'Máte něco proti vráskám?', 'Hledám čisticí gel'], lang: 'cs',
-      greeting: 'Dobrý den. Napište, jakou máte pleť a co chcete řešit. Pomůžu vám vybrat z nabídky.'}
-  };
-  /* TARANI: druh starostlivosti (podľa e-shopu) a účinok (kategória „Pleť dle problematiky“) – texty volieb natívneho poradcu. */
-  window.CX_TRAIT_COPY = {
-    s3Cleanse: ['Čistenie a odlíčenie', 'Umývacie gély, odličovače', 'Čištění a odlíčení', 'Mycí gely, odličovače'],
-    s3Tone: ['Tonikum', 'Po umytí, pred sérom alebo krémom', 'Tonikum', 'Po umytí, před sérem nebo krémem'],
-    s3Serum: ['Sérum alebo olej', 'Koncentrovaná starostlivosť', 'Sérum nebo olej', 'Koncentrovaná péče'],
-    s3Gel: ['Ľahká emulzia alebo gél', 'Ľahká textúra na deň', 'Lehká emulze nebo gel', 'Lehká textura na den'],
-    s3Cream: ['Pleťový krém', 'Bohatšia denná alebo nočná starostlivosť', 'Pleťový krém', 'Bohatší denní nebo noční péče'],
-    s3Mask: ['Maska alebo peeling', 'Doplnková starostlivosť raz za čas', 'Maska nebo peeling', 'Doplňková péče jednou za čas'],
-    s3Calm: ['Upokojenie a začervenanie', 'Citlivá, podráždená pleť', 'Zklidnění a zarudnutí', 'Citlivá, podrážděná pleť'],
-    s3Hydrate: ['Hydratácia', 'Suchá, napätá pleť', 'Hydratace', 'Suchá, napjatá pleť'],
-    s3Antiage: ['Vrásky a pevnosť', 'Zrelá pleť', 'Vrásky a pevnost', 'Zralá pleť'],
-    s3Detox: ['Čistá pleť a póry', 'Mastná, problematická pleť', 'Čistá pleť a póry', 'Mastná, problematická pleť'],
-    s3Nourish: ['Výživa', 'Unavená, oslabená pleť', 'Výživa', 'Unavená, oslabená pleť'],
-    s3Bright: ['Rozjasnenie a pigmentové škvrny', 'Matná pleť, nerovnomerný tón', 'Rozjasnění a pigmentové skvrny', 'Matná pleť, nerovnoměrný tón']
-  };
+  const BRANDS = Object.fromEntries(Object.entries(REG).filter(([, v]) => v.type === 'cosmetics').map(([k, v]) => [k, Object.assign({}, v.brand, {wordmark: wordmark(v.brand.logo, v.brand.name)})]));
+  if (REG[slug] && REG[slug].traitCopy) window.CX_TRAIT_COPY = REG[slug].traitCopy;
   const brand = BRANDS[slug];
   const cat = globalThis.CX_CATALOGUES && globalThis.CX_CATALOGUES[slug];
   if (!brand || !cat) return;
   brand.products = cat.products.map((p) => ({...p, tags: p.tags || []}));
   brand.catalogue = cat.products;
   data.brands[slug] = brand;
-  window.CX_SEGMENT = Object.assign({greeting: brand.greeting}, OFFER(brand.lang === 'cs'));
+  window.CX_SEGMENT = Object.assign({greeting: brand.greeting}, OFFER(brand.lang === 'cs'), REG[slug].segmentText || {});
+  if (REG[slug].stepCopy) window.CX_STEP_COPY = REG[slug].stepCopy;
+  if (REG[slug].panelText) window.CX_PANEL_TEXT = REG[slug].panelText;
+  if (REG[slug].choicePhotos) window.CX_CHOICE_PHOTOS = REG[slug].choicePhotos;
+  if (REG[slug].segment === 'tea' && window.S3TeaReply) window.CX_LOCAL_REPLY = (text, history) => window.S3TeaReply.teaReply(cat, text, (history || []).map((m) => ({role: m.role, content: m.content})));
+  if (!brand.hero) brand.hero = (cat.products.find((p) => p.photo) || {}).photo;
   if (brand.lang === 'cs') window.CX_FORCE_LANG = 'cs';
   window.N447_COSMETICS_SLUG = slug;
 })();

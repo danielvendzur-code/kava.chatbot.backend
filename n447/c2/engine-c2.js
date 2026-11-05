@@ -244,7 +244,8 @@
       const tools = Object.keys(t.tool).filter((k) => pool(data, {prep: 'filter', tool: k}).length);
       /* Pomôcky, ktoré vedú k úplne rovnakému výsledku (káva, balenie, mletie aj postup), sa spoja do jednej voľby. */
       /* c2: pomôcka sa pýta, iba keď vedie k inej káve alebo balení; rozdiel len v mletí/postupe sa ukáže až vo výsledku. */
-      const sigOf = (r) => r ? JSON.stringify([r.product && r.product.id, r.pack && r.pack.grams, r.pack && r.pack.price]) : 'none';
+      /* s3a: doplnok k pomôcke (napr. filtre V60) je skutočný rozdiel výsledku – pomôcka sa potom pýta. */
+      const sigOf = (r) => r ? JSON.stringify([r.product && r.product.id, r.pack && r.pack.grams, r.pack && r.pack.price, r.addon && r.addon.product && r.addon.product.id]) : 'none';
       const reach = (x) => { const q = nextQuestion(data, x); if (!q) return [sigOf(result(data, x))];
         return [...new Set(q.options.flatMap((o) => reach(answer(x, q.key, o.value))))]; };
       const groups = [];

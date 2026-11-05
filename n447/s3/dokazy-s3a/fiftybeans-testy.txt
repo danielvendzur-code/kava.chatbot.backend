@@ -1,0 +1,60 @@
+fiftybeans 320x568,390x800,1280x800: 62 ciest, 1296 obrazoviek, dosiahnuteľné kávy 23/23, nálezy 239
+1280x800 [["prep","espresso"],["caffeine","yes"],["taste","fresh"],["detailProcess","roast:filtr"],["detailMore","process:natural"],["pick","vanilla-crumble"]] výsledok: rozbitý obrázok /assets/quality-product-placeholder.svg
+1280x800 [["prep","espresso"],["caffeine","yes"],["taste","fresh"],["detailProcess","roast:filtr"],["detailMore","process:natural"],["pick","wild-fusion"]] @caffeine: opakovaná fotka, rozbitý obrázok /assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg
+1280x800 [["prep","espresso"],["caffeine","yes"],["taste","fresh"],["detailProcess","roast:filtr"],["detailMore","process:natural"],["pick","wild-fusion"]] @taste: opakovaná fotka, rozbitý obrázok /assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg
+1280x800 [["prep","espresso"],["caffeine","yes"],["taste","fresh"],["detailProcess","roast:filtr"],["detailMore","process:natural"],["pick","wild-fusion"]] @detailProcess: opakovaná fotka, rozbitý obrázok /assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg
+1280x800 [["prep","espresso"],["caffeine","yes"],["taste","fresh"],["detailProcess","roast:filtr"],["detailMore","process:natural"],["pick","wild-fusion"]] @detailMore: opakovaná fotka, rozbitý obrázok /assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg
+1280x800 [["prep","espresso"],["caffeine","yes"],["taste","fresh"],["detailProcess","roast:filtr"],["detailMore","process:natural"],["pick","wild-fusion"]] @pick: opakovaná fotka, rozbitý obrázok /assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg
+1280x800 [["prep","espresso"],["caffeine","yes"],["taste","fresh"],["detailProcess","roast:filtr"],["detailMore","process:natural"],["pick","wild-fusion"]] výsledok: rozbitý obrázok /assets/quality-product-placeholder.svg
+1280x800 [["prep","espresso"],["caffeine","yes"],["taste","fresh"],["detailProcess","roast:filtr"],["detailMore","process:honey"]] @caffeine: opakovaná fotka, rozbitý obrázok /assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg
+1280x800 [["prep","espresso"],["caffeine","yes"],["taste","fresh"],["detailProcess","roast:filtr"],["detailMore","process:honey"]] @taste: opakovaná fotka, rozbitý obrázok /assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg
+1280x800 [["prep","espresso"],["caffeine","yes"],["taste","fresh"],["detailProcess","roast:filtr"],["detailMore","process:honey"]] @detailProcess: opakovaná fotka, rozbitý obrázok /assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg
+1280x800 [["prep","espresso"],["caffeine","yes"],["taste","fresh"],["detailProcess","roast:filtr"],["detailMore","process:honey"]] @detailMore: opakovaná fotka, rozbitý obrázok /assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg,/assets/quality-product-placeholder.svg
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8997/cosmetics.html?demo=fiftybeans
+Call log:
+[2m  - navigating to "http://127.0.0.1:8997/cosmetics.html?demo=fiftybeans", waiting until "networkidle"[22m
+
+    at /home/claude/wt-s3a/tools/s3a/dfs-coffee.mjs:24:11 {
+  log: [
+    '  - navigating to "http://127.0.0.1:8997/cosmetics.html?demo=fiftybeans", waiting until "networkidle"'
+  ],
+  name: 'Error'
+}
+
+Node.js v22.22.0
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8997/cosmetics.html?demo=fiftybeans
+Call log:
+[2m  - navigating to "http://127.0.0.1:8997/cosmetics.html?demo=fiftybeans", waiting until "networkidle"[22m
+
+    at /home/claude/wt-s3a/tools/s3a/chips-avatar.mjs:12:11 {
+  log: [
+    '  - navigating to "http://127.0.0.1:8997/cosmetics.html?demo=fiftybeans", waiting until "networkidle"'
+  ],
+  name: 'Error'
+}
+
+Node.js v22.22.0
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:8997/cosmetics.html?demo=fiftybeans
+Call log:
+[2m  - navigating to "http://127.0.0.1:8997/cosmetics.html?demo=fiftybeans", waiting until "networkidle"[22m
+
+    at /home/claude/wt-s3a/tools/s3a/chat-mock.mjs:13:11 {
+  log: [
+    '  - navigating to "http://127.0.0.1:8997/cosmetics.html?demo=fiftybeans", waiting until "networkidle"'
+  ],
+  name: 'Error'
+}
+
+Node.js v22.22.0

@@ -1,0 +1,436 @@
+{
+ "note": "Séria 3 (Andreine): jediný zoznam firiem. Po zmene spustiť python3 -I tools/s3a/register.py.",
+ "demos": {
+  "beansmiths": {
+   "type": "coffee",
+   "name": "Beansmith's",
+   "country": "CZ",
+   "logos": {
+    "landing": "/assets/s3/beansmiths/wordmark.png",
+    "header": "/assets/s3/beansmiths/wordmark.png",
+    "avatar": "/assets/s3/beansmiths/logo.png"
+   }
+  },
+  "merrybeans": {
+   "type": "coffee",
+   "name": "Merrybeans",
+   "country": "CZ",
+   "logos": {
+    "landing": "/assets/s3/merrybeans/wordmark.png",
+    "header": "/assets/s3/merrybeans/wordmark-line.png",
+    "avatar": "/assets/s3/merrybeans/logo.png",
+    "cover": true
+   }
+  },
+  "typika": {
+   "type": "coffee",
+   "name": "TYPIKA",
+   "country": "CZ",
+   "logos": {
+    "landing": "/assets/s3/typika/logo.png",
+    "header": "/assets/s3/typika/logo.png",
+    "avatar": "/assets/s3/typika/logo.png"
+   }
+  },
+  "mlsnacava": {
+   "type": "coffee",
+   "name": "MLSNACAVA",
+   "country": "SK",
+   "logos": {
+    "landing": "/assets/s3/mlsnacava/logo.png",
+    "header": "/assets/s3/mlsnacava/logo-mark.png",
+    "avatar": "/assets/s3/mlsnacava/logo.png",
+    "cover": true
+   }
+  },
+  "tarani": {
+   "type": "cosmetics",
+   "name": "TARANI",
+   "country": "CZ",
+   "logos": {
+    "avatar": "/assets/s3/tarani/logo.png"
+   },
+   "brand": {
+    "name": "TARANI",
+    "fullName": "TARANI",
+    "domain": "tarani.cz",
+    "website": "https://www.tarani.cz/",
+    "url": "https://www.tarani.cz/kosmetika-pece-o-plet/",
+    "theme": {
+     "brand": "#2b2622",
+     "accent": "#b98a3a",
+     "soft": "#f7f2ea",
+     "paper": "#ffffff",
+     "ink": "#231f1c",
+     "line": "#e8dfd1"
+    },
+    "logo": "/assets/s3/tarani/wordmark.png",
+    "mark": "/assets/s3/tarani/logo.png",
+    "hero": "/assets/s3/tarani/24-gold-37-herbs-ultra-elixir-krem.jpg",
+    "ownerNote": "Ájurvédská kosmetika z Himálají — výběr podle typu pleti a účinku.",
+    "quickChips": [
+     "Mám citlivou pleť",
+     "Mám mastnou pleť",
+     "Máte něco proti vráskám?",
+     "Hledám čisticí gel"
+    ],
+    "lang": "cs",
+    "greeting": "Dobrý den. Napište, jakou máte pleť a co chcete řešit. Pomůžu vám vybrat z nabídky."
+   },
+   "traitCopy": {
+    "s3Cleanse": [
+     "Čistenie a odlíčenie",
+     "Umývacie gély, odličovače",
+     "Čištění a odlíčení",
+     "Mycí gely, odličovače"
+    ],
+    "s3Tone": [
+     "Tonikum",
+     "Po umytí, pred sérom alebo krémom",
+     "Tonikum",
+     "Po umytí, před sérem nebo krémem"
+    ],
+    "s3Serum": [
+     "Sérum alebo olej",
+     "Koncentrovaná starostlivosť",
+     "Sérum nebo olej",
+     "Koncentrovaná péče"
+    ],
+    "s3Gel": [
+     "Ľahká emulzia alebo gél",
+     "Ľahká textúra na deň",
+     "Lehká emulze nebo gel",
+     "Lehká textura na den"
+    ],
+    "s3Cream": [
+     "Pleťový krém",
+     "Bohatšia denná alebo nočná starostlivosť",
+     "Pleťový krém",
+     "Bohatší denní nebo noční péče"
+    ],
+    "s3Mask": [
+     "Maska alebo peeling",
+     "Doplnková starostlivosť raz za čas",
+     "Maska nebo peeling",
+     "Doplňková péče jednou za čas"
+    ],
+    "s3Calm": [
+     "Upokojenie a začervenanie",
+     "Citlivá, podráždená pleť",
+     "Zklidnění a zarudnutí",
+     "Citlivá, podrážděná pleť"
+    ],
+    "s3Hydrate": [
+     "Hydratácia",
+     "Suchá, napätá pleť",
+     "Hydratace",
+     "Suchá, napjatá pleť"
+    ],
+    "s3Antiage": [
+     "Vrásky a pevnosť",
+     "Zrelá pleť",
+     "Vrásky a pevnost",
+     "Zralá pleť"
+    ],
+    "s3Detox": [
+     "Čistá pleť a póry",
+     "Mastná, problematická pleť",
+     "Čistá pleť a póry",
+     "Mastná, problematická pleť"
+    ],
+    "s3Nourish": [
+     "Výživa",
+     "Unavená, oslabená pleť",
+     "Výživa",
+     "Unavená, oslabená pleť"
+    ],
+    "s3Bright": [
+     "Rozjasnenie a pigmentové škvrny",
+     "Matná pleť, nerovnomerný tón",
+     "Rozjasnění a pigmentové skvrny",
+     "Matná pleť, nerovnoměrný tón"
+    ]
+   }
+  },
+  "coffeesource": {
+   "type": "coffee",
+   "name": "Coffee Source",
+   "country": "CZ",
+   "logos": {
+    "landing": "/assets/s3/coffeesource/logo.svg",
+    "header": "/assets/s3/coffeesource/logo-white.svg",
+    "avatar": "/assets/s3/coffeesource/mark.svg"
+   }
+  },
+  "fiftybeans": {
+   "type": "coffee",
+   "name": "Fiftybeans",
+   "country": "CZ",
+   "logos": {
+    "landing": "/assets/s3/fiftybeans/logo.svg",
+    "header": "/assets/s3/fiftybeans/logo.svg",
+    "avatar": "/assets/s3/fiftybeans/mark.png"
+   }
+  },
+  "dosmundos": {
+   "type": "coffee",
+   "name": "DOS MUNDOS",
+   "country": "CZ",
+   "logos": {
+    "landing": "/assets/s3/dosmundos/logo.png",
+    "header": "/assets/s3/dosmundos/logo.png",
+    "avatar": "/assets/s3/dosmundos/mark.png"
+   }
+  },
+  "illimite": {
+   "type": "coffee",
+   "name": "Illimité",
+   "country": "SK",
+   "logos": {
+    "landing": "/assets/s3/illimite/logo.svg",
+    "header": "/assets/s3/illimite/logo-white.svg",
+    "avatar": "/assets/s3/illimite/mark.png"
+   }
+  },
+  "teamountain": {
+   "type": "cosmetics",
+   "segment": "tea",
+   "name": "Tea Mountain",
+   "country": "CZ",
+   "logos": {
+    "avatar": "/assets/s3/teamountain/mark.png"
+   },
+   "brand": {
+    "name": "Tea Mountain",
+    "fullName": "Tea Mountain",
+    "domain": "teamountain.cz",
+    "website": "https://www.teamountain.cz/",
+    "url": "https://www.teamountain.cz/",
+    "theme": {
+     "brand": "#2a2523",
+     "accent": "#d0202e",
+     "soft": "#f6f1ec",
+     "paper": "#ffffff",
+     "ink": "#2a2523",
+     "line": "#e7dfd6"
+    },
+    "logo": "/assets/s3/teamountain/logo.png",
+    "mark": "/assets/s3/teamountain/mark.png",
+    "hero": "",
+    "quickChips": [
+     "Hledám zelený čaj",
+     "Něco méně povzbudivého",
+     "Doporučte oolong",
+     "Čaj na dárek do 300 Kč"
+    ],
+    "lang": "cs",
+    "greeting": "Dobrý den. Napište, jaký čaj máte rádi nebo k čemu ho hledáte. Pomůžu vám vybrat z naší nabídky."
+   },
+   "segmentText": {
+    "titleSuffix": "výběr čaje",
+    "source": "caj-demo-",
+    "includedChat": "Druh čaje, chuť, příprava i porovnání dvou čajů.",
+    "includedAdvisor": "Druh, charakter a rozpočet — na konci konkrétní čaj.",
+    "heading": "Poradí zákazníkovi čaj a odpoví mu na otázky.",
+    "lead": "Chatbot odpoví zákazníkovi na otázky o vašich čajích. Přes pár krátkých otázek mu vybere ten, který sedí jeho chuti. Prodáte i tehdy, když u toho nejste.",
+    "keepsAdvisor": "na konci konkrétní čaj",
+    "teaserTitle": "Pomoct s výběrem čaje?",
+    "teaserNote": "Krátký výběr · konkrétní čaj",
+    "advisorName": "Poradce při výběru čaje",
+    "tab": "Výběr čaje",
+    "entrySmall": "VÝBĚR ČAJE",
+    "entryTitle": "Najít vhodný čaj",
+    "entryNote": "Druh · charakter · rozpočet",
+    "placeholder": "Zeptejte se na čaj…"
+   },
+   "stepCopy": {
+    "careUse": [
+     "Jaký druh čaje máte rádi?",
+     "Podle kategorie čaje v e-shopu.",
+     "Druh čaje"
+    ],
+    "skinFocus": [
+     "Jaký charakter má čaj mít?",
+     "Podle vlastností, které uvádí Tea Mountain.",
+     "Charakter"
+    ],
+    "budget": [
+     "Do jaké částky vybíráme?",
+     "Cena nejmenšího dostupného balení.",
+     "Rozpočet"
+    ]
+   },
+   "panelText": [
+    [
+     "Prečo práve tento",
+     "Proč právě tento"
+    ],
+    [
+     "Konkrétny produkt podľa vašich odpovedí.",
+     "Konkrétní čaj podle vašich odpovědí."
+    ],
+    [
+     "Chcete doladiť rutinu alebo sa opýtať na produkt? Pokračujte v chate.",
+     "Chcete se zeptat na přípravu nebo porovnat čaje? Pokračujte v chatu."
+    ],
+    [
+     "Chcete doladit rutinu nebo se zeptat na produkt? Pokračujte v chatu.",
+     "Chcete se zeptat na přípravu nebo porovnat čaje? Pokračujte v chatu."
+    ],
+    [
+     "Ako produkt používať",
+     "Jak čaj připravit"
+    ],
+    [
+     "Cena vybraného produktu",
+     "Cena vybraného čaje"
+    ]
+   ],
+   "traitCopy": {
+    "s3Black": [
+     "Čierny čaj",
+     "Plnšia chuť, viac povzbudí",
+     "Černý čaj",
+     "Plnější chuť, více povzbudí"
+    ],
+    "s3Green": [
+     "Zelený čaj",
+     "Svieža, bylinná chuť",
+     "Zelený čaj",
+     "Svěží, travnatá chuť"
+    ],
+    "s3Oolong": [
+     "Polozelený čaj (oolong)",
+     "Medzi zeleným a čiernym",
+     "Polozelený čaj (oolong)",
+     "Mezi zeleným a černým"
+    ],
+    "s3Puerh": [
+     "Pu-erh a Hei-cha",
+     "Zrejúce, zemité čaje",
+     "Pu-erh a Hei-cha",
+     "Zrající, zemité čaje"
+    ],
+    "s3White": [
+     "Biely čaj",
+     "Jemný a sladký",
+     "Bílý čaj",
+     "Jemný a sladký"
+    ],
+    "s3LowCaf": [
+     "Menej povzbudivý",
+     "Aj na večer",
+     "Méně povzbudivý",
+     "I na večer"
+    ],
+    "s3Roasted": [
+     "Pečený",
+     "Hrejivé, opražené tóny",
+     "Pečený",
+     "Hřejivé, opražené tóny"
+    ],
+    "s3Dark": [
+     "Tmavý",
+     "Plná, hlboká chuť",
+     "Tmavý",
+     "Plná, hluboká chuť"
+    ],
+    "s3Spring": [
+     "Jarný zber (first flush)",
+     "Svieži a kvetinový",
+     "Jarní sběr (first flush)",
+     "Svěží a květinový"
+    ],
+    "s3Summer": [
+     "Letný zber (second flush)",
+     "Plnší, ovocný",
+     "Letní sběr (second flush)",
+     "Plnější, ovocný"
+    ],
+    "s3Autumn": [
+     "Jesenný zber",
+     "Jemný a zaoblený",
+     "Podzimní sběr",
+     "Jemný a zaoblený"
+    ],
+    "s3Light": [
+     "Svetlý",
+     "Jemný, kvetinový",
+     "Světlý",
+     "Jemný, květinový"
+    ],
+    "s3Wild": [
+     "Divoké čajovníky",
+     "Divoko rastúce kríky",
+     "Divoké čajovníky",
+     "Divoce rostoucí keře"
+    ],
+    "s3Old": [
+     "Staré čajovníky",
+     "Staré kríky, hlboká chuť",
+     "Staré čajovníky",
+     "Staré keře, hluboká chuť"
+    ],
+    "s3High": [
+     "Vysokohorský",
+     "Záhrady vo veľkej výške",
+     "Vysokohorský",
+     "Zahrady ve velké výšce"
+    ]
+   },
+   "choicePhotos": {
+    "s3Black": [
+     "/assets/s3/tea/s3Black.jpg"
+    ],
+    "s3Green": [
+     "/assets/s3/tea/s3Green.jpg"
+    ],
+    "s3Oolong": [
+     "/assets/s3/tea/s3Oolong.jpg"
+    ],
+    "s3Puerh": [
+     "/assets/s3/tea/s3Puerh.jpg"
+    ],
+    "s3White": [
+     "/assets/s3/tea/s3White.jpg"
+    ],
+    "s3LowCaf": [
+     "/assets/s3/tea/s3LowCaf.jpg"
+    ],
+    "s3Roasted": [
+     "/assets/s3/tea/s3Roasted.jpg"
+    ],
+    "s3Dark": [
+     "/assets/s3/tea/s3Dark.jpg"
+    ],
+    "s3Spring": [
+     "/assets/s3/tea/s3Spring.jpg"
+    ],
+    "s3Summer": [
+     "/assets/s3/tea/s3Summer.jpg"
+    ],
+    "s3Autumn": [
+     "/assets/s3/tea/s3Autumn.jpg"
+    ],
+    "s3Light": [
+     "/assets/s3/tea/s3Light.jpg"
+    ],
+    "s3Wild": [
+     "/assets/s3/tea/s3Wild.jpg"
+    ],
+    "s3Old": [
+     "/assets/s3/tea/s3Old.jpg"
+    ],
+    "s3High": [
+     "/assets/s3/tea/s3High.jpg"
+    ],
+    "*": [
+     "/assets/s3/tea/any1.jpg",
+     "/assets/s3/tea/any2.jpg",
+     "/assets/s3/tea/any3.jpg",
+     "/assets/s3/tea/any4.jpg"
+    ]
+   }
+  }
+ }
+}
