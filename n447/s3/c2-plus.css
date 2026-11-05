@@ -27,3 +27,6 @@
 @media (prefers-reduced-motion: reduce) { .msg.lg-fresh, .bubble a.lg-wine-card { animation: none !important; transition: none !important; } }
 .bubble .lg-wine-foot { flex-wrap: wrap; }
 .bubble .lg-wine-foot strong.is-offer { white-space: normal; font-size: 13px; line-height: 1.3; }
+/* séria 3: rýchle voľby chatu rovnako veľké (rovnaká šírka aj výška aj pri zalomení textu) */
+html body #widget#widget .chips{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-auto-rows:1fr!important;align-items:stretch!important}
+html body #widget#widget .chips .chip{width:100%!important;height:100%!important;min-height:44px!important;margin:0!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;white-space:normal!important}

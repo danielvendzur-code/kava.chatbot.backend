@@ -145,3 +145,6 @@ html[data-plus-launcher="mark"] body #cx-open#cx-open .cx-company-message-logo {
 html[data-plus-avatar="light"] body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-message-avatar {
   background: #fff var(--plus-avatar) center / 86% auto no-repeat !important; box-shadow: inset 0 0 0 1px rgb(0 0 0 / .1) !important;
 }
+/* séria 3: rýchle voľby chatu rovnako veľké (rovnaká šírka aj výška aj pri zalomení textu) */
+html body #cx-widget .cx-chips{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-auto-rows:1fr!important;align-items:stretch!important}
+html body #cx-widget .cx-chips .cx-chip{width:100%!important;height:100%!important;min-height:44px!important;margin:0!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;white-space:normal!important}
