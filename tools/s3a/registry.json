@@ -966,6 +966,205 @@
      "Péče pro rovné vlasy"
     ]
    }
+  },
+  "pureharmony": {
+   "type": "cosmetics",
+   "segment": "cosmetics",
+   "name": "Pure Harmony",
+   "country": "CZ",
+   "logos": {
+    "avatar": "/assets/s3/pureharmony/mark.png"
+   },
+   "brand": {
+    "name": "Pure Harmony",
+    "fullName": "Pure Harmony",
+    "domain": "pureharmony.cz",
+    "website": "https://www.pureharmony.cz/",
+    "url": "https://www.pureharmony.cz/",
+    "theme": {
+     "brand": "#3c3a38",
+     "accent": "#b08a6e",
+     "soft": "#f6f1ed",
+     "paper": "#ffffff",
+     "ink": "#2e2c2a",
+     "line": "#e7dfd8"
+    },
+    "logo": "/assets/s3/pureharmony/logo.png",
+    "mark": "/assets/s3/pureharmony/mark.png",
+    "hero": "",
+    "quickChips": [
+     "Něco s vůní levandule",
+     "Hledám tělové máslo",
+     "Tuhý šampon",
+     "Dárek do 300 Kč"
+    ],
+    "lang": "cs",
+    "greeting": "Dobrý den. Napište, jakou péči hledáte a jaká vůně vám sedí. Pomůžu vám vybrat z nabídky Pure Harmony."
+   },
+   "segmentText": {
+    "includedChat": "Druh péče, vůně, složení i porovnání dvou produktů.",
+    "includedAdvisor": "Druh péče a vonná řada — na konci konkrétní produkt.",
+    "placeholder": "Zeptejte se na tělovou péči…"
+   },
+   "stepCopy": {
+    "careUse": [
+     "Jakou péči hledáte?",
+     "Podle druhu produktu v nabídce Pure Harmony.",
+     "Druh péče"
+    ],
+    "skinFocus": [
+     "Jaká vůně vám sedí?",
+     "Vonné řady Pure Harmony.",
+     "Vonná řada"
+    ],
+    "budget": [
+     "Do jaké částky vybíráme?",
+     "Cena za vybraný produkt.",
+     "Rozpočet"
+    ]
+   },
+   "panelText": [
+    [
+     "Prečo práve tento",
+     "Proč právě tento"
+    ]
+   ],
+   "choicePhotos": {
+    "s3Shower": [
+     "/assets/s3/scenes-k2/body-shower.jpg"
+    ],
+    "s3Peel": [
+     "/assets/s3/scenes-k2/coffee-scrub-leg.jpg"
+    ],
+    "s3Butter": [
+     "/assets/scenes/cream-texture.jpg"
+    ],
+    "s3Hair": [
+     "/assets/s3/scenes-k2/hair-shampoo-foam.jpg"
+    ],
+    "s3Deo": [
+     "/assets/scenes/daily-care.jpg"
+    ],
+    "s3Bath": [
+     "/assets/s3/scenes-k2/bath-bomb.jpg"
+    ],
+    "s3Soap": [
+     "/assets/s3/scenes-k2/hand-wash.jpg"
+    ],
+    "s3Water": [
+     "/assets/s3/scenes-k2/roses-water.jpg"
+    ],
+    "s3Oil": [
+     "/assets/scenes/oil-palm.jpg"
+    ],
+    "s3Rose": [
+     "/assets/s3/scenes-k2/rose.jpg"
+    ],
+    "s3Lavender": [
+     "/assets/s3/scenes-k2/lavender-bunch.jpg"
+    ],
+    "s3Apricot": [
+     "/assets/s3/scenes-k2/apricots.jpg"
+    ],
+    "s3Rosemary": [
+     "/assets/s3/scenes-k2/rosemary.jpg"
+    ],
+    "s3Ginger": [
+     "/assets/s3/scenes-k2/xmas-spices.jpg"
+    ],
+    "*": [
+     "/assets/s3/scenes-k2/face-routine.jpg",
+     "/assets/scenes/gift-care.jpg",
+     "/assets/s3/scenes-k2/bath-milky.jpg",
+     "/assets/scenes/hands-cream.jpg"
+    ]
+   },
+   "traitCopy": {
+    "s3Shower": [
+     "Sprchové sérum",
+     "Multi-olejová sprcha",
+     "Sprchové sérum",
+     "Multi-olejová sprcha"
+    ],
+    "s3Peel": [
+     "Telový peeling",
+     "Hladká pokožka",
+     "Tělový peeling",
+     "Hladká pokožka"
+    ],
+    "s3Butter": [
+     "Šľahané telové maslo",
+     "Výživa po sprche",
+     "Šlehané tělové máslo",
+     "Výživa po sprše"
+    ],
+    "s3Hair": [
+     "Tuhá vlasová starostlivosť",
+     "Šampón alebo kondicionér",
+     "Tuhá vlasová péče",
+     "Šampon nebo kondicionér"
+    ],
+    "s3Deo": [
+     "Dezodorant",
+     "Prírodný, tuhý",
+     "Deodorant",
+     "Přírodní"
+    ],
+    "s3Bath": [
+     "Do kúpeľa",
+     "Šumivá bomba",
+     "Do koupele",
+     "Šumivá bomba"
+    ],
+    "s3Soap": [
+     "Tuhé mydlo",
+     "Na ruky aj telo",
+     "Tuhé mýdlo",
+     "Na ruce i tělo"
+    ],
+    "s3Water": [
+     "Kvetová voda",
+     "Tonikum na pleť",
+     "Květová voda",
+     "Tonikum na pleť"
+    ],
+    "s3Oil": [
+     "Telový olej",
+     "Výživa pokožky",
+     "Tělový olej",
+     "Výživa pokožky"
+    ],
+    "s3Rose": [
+     "Ruža",
+     "Harmonizujúca vôňa",
+     "Růže",
+     "Harmonizující vůně"
+    ],
+    "s3Lavender": [
+     "Levanduľa",
+     "Relaxačná vôňa",
+     "Levandule",
+     "Relaxační vůně"
+    ],
+    "s3Apricot": [
+     "Marhuľa",
+     "Hydratačná řada",
+     "Meruňka",
+     "Hydratační řada"
+    ],
+    "s3Rosemary": [
+     "Rozmarín",
+     "Energizujúca vôňa",
+     "Rozmarýn",
+     "Energizující vůně"
+    ],
+    "s3Ginger": [
+     "Perníček",
+     "Sviatočná vôňa",
+     "Perníček",
+     "Sváteční vůně"
+    ]
+   }
   }
  }
 }

@@ -47,3 +47,11 @@ Duplicity (vyradené bez ďalšej kontroly – už v predošlých dávkach alebo
 | 35 | AROMEDICA | aromaterapia CZ | https://www.aromedica.cz/ | ODLOŽENÉ | ~24 kozmetických produktov vrátane intímnej hygieny; treba overiť typ pleti pri každom produkte |
 
 Kontrola duplicity dávky 2: názvy a domény vo všetkých 86 vetvách `kava.chatbot.backend`, vo `vino`, `vino-plus`, `langr-chatbot` a v subdoménach *.mojchatbot.sk projektov kava-chatbot-backend, mojchatbot-manufaktura-447, mojchatbot-kozmetika, skincare-vlasy-nove, mojchatbot-caj a mojchatbot-rastliny (Vercel, 5. 11. 2026) – bez zhody.
+
+## Doplnené kandidáty (dávka 3, 5. 11. 2026)
+| # | Kandidát | Segment | Oficiálny zdroj | Výsledok | Dôvod |
+|---|---|---|---|---|---|
+| 36 | Vitellaria | vlasová kozmetika CZ | https://www.vitellaria.cz/ | **PRIJATÉ – dávka 3** | vlastný e-shop (Shoptet); 19 vlasových produktov skladom (druh × potreba podľa názvu a krátkeho popisu), najmenšie balenie skladom; bez kvízu/poradcu na stránkach; názov ani doména v pôvodných registroch nie sú (zhoda iba latinský názov bambuckého masla v katalógu Goodie) |
+| 37 | Ethia | pleť a vlasy CZ | https://ethia.cz/ | **PRIJATÉ – dávka 3** | prevádzkovateľ ethi beauty s.r.o. (IČO 09229230); vlastný e-shop (WooCommerce); 16 produktov s kategóriami problémov pleti a typu vlasov; bez kvízu; bez zhody názvu, domény ani IČO |
+| 38 | Pure Harmony | prírodná telová a vlasová péče CZ | https://www.pureharmony.cz/ | **PRIJATÉ – dávka 3** | prevádzkovateľ Lilacosta s.r.o.; vlastný e-shop (Shoptet); 25 produktov skladom = druh produktu × vonná řada e-shopu (sviečky, sirupy a sady nepreberané); bez kvízu; bez zhody |
+| 39 | BeButter | kozmetika CZ | – | VYRADENÉ | iba 7 produktov – málo odlišných výsledkov |
