@@ -1,0 +1,6 @@
+/* Beansmith's – značkové tokeny na schválenom Jolka systéme (séria 3). */
+:root{--ink:#1d1d1b;--ink-2:#1d1d1b;--ink-3:#464644;--paper:#ffffff;--surface:#fff;--surface-2:#f2ebe1;--line:#e5e0d8;--line-strong:#d3ccc1;--kraft:#b3432f;--kraft-deep:#b3432f;--kraft-tint:#f4e5e2;--text:#1d1d1b;--text-2:#4f4f4f;--text-3:#808080;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.beansmiths-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.beansmiths-clean .widget__brand>img{width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important}
+body.beansmiths-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.beansmiths-clean .launcher__button img{width:46px!important;height:46px!important}

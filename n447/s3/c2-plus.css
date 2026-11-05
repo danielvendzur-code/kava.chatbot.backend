@@ -1,0 +1,29 @@
+/* Káva PLUS (black., Nordbeans) – chat podľa Langr: nová správa sa jemne vysunie, kávy z odpovede ako karty. */
+.msg.lg-fresh { animation: lg-rise .32s cubic-bezier(.2,.8,.2,1) both; }
+@keyframes lg-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+.msg.lg-has-wines .bubble { max-width: min(100%, 340px) !important; width: 100%; }
+.bubble .lg-text { display: block; }
+.bubble .lg-text + .lg-wine-list, .bubble .lg-wine-list + .lg-text { margin-top: 10px; }
+.bubble .lg-wine-list { display: grid; gap: 8px; margin-top: 10px; }
+.bubble .lg-wine-list:first-child { margin-top: 0; }
+.bubble a.lg-wine-card {
+  display: grid !important; grid-template-columns: 64px 1fr; gap: 10px; align-items: stretch;
+  padding: 8px !important; border-radius: 14px; background: #fff; border: 1px solid rgb(0 0 0 / .1);
+  color: inherit !important; text-decoration: none !important; box-shadow: 0 1px 2px rgb(0 0 0 / .04);
+  animation: lg-rise .38s cubic-bezier(.2,.8,.2,1) both; animation-delay: calc(var(--lg-i, 0) * 90ms);
+  transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+.bubble a.lg-wine-card:hover { border-color: var(--ink); box-shadow: 0 6px 16px rgb(0 0 0 / .08); transform: translateY(-1px); }
+.bubble a.lg-wine-card:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.bubble .lg-wine-photo { display: grid; place-items: center; border-radius: 10px; min-height: 84px; background: #f4f1ec; overflow: hidden; }
+.bubble .lg-wine-photo img { width: 100%; height: 84px; object-fit: cover; }
+.bubble .lg-wine-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; text-align: left; }
+.bubble .lg-wine-copy b { font-size: 14px; line-height: 1.25; font-weight: 700; }
+.bubble .lg-wine-copy small { font-size: 12px; line-height: 1.35; opacity: .7; }
+.bubble .lg-wine-copy em { font-style: normal; font-size: 12px; line-height: 1.35; opacity: .8; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.bubble .lg-wine-foot { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-top: auto; padding-top: 4px; }
+.bubble .lg-wine-foot strong { font-size: 14px; white-space: nowrap; }
+.bubble .lg-wine-go { font-size: 12px; font-weight: 700; white-space: nowrap; text-decoration: underline; text-underline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .msg.lg-fresh, .bubble a.lg-wine-card { animation: none !important; transition: none !important; } }
+.bubble .lg-wine-foot { flex-wrap: wrap; }
+.bubble .lg-wine-foot strong.is-offer { white-space: normal; font-size: 13px; line-height: 1.3; }

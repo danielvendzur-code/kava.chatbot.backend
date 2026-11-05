@@ -1,0 +1,147 @@
+/* Kozmetika PLUS (MusK, Bohemikus, MALINNA°) – dizajnové vylepšenia podľa Langr (chat, prechody krokov, výsledok). Iba vzhľad a pohyb, logika výberu sa nemení.
+   Pri „obmedziť pohyb“ (prefers-reduced-motion) sa animácie vypnú. */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget {
+  --lg-ease: cubic-bezier(.2, .8, .2, 1);
+  --lg-soft: color-mix(in srgb, var(--cx-brand, #963807) 7%, #fff);
+  --lg-line: color-mix(in srgb, var(--cx-brand, #963807) 16%, #e8e2dc);
+}
+
+/* ---------- Chat ---------- */
+/* písanie: tri bodky */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-typing {
+  display: inline-flex; gap: 5px; align-items: center; height: 20px; padding: 0 2px;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-typing i {
+  width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: .35;
+  animation: lg-dot 1.1s infinite ease-in-out;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-typing i:nth-child(2) { animation-delay: .15s; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-typing i:nth-child(3) { animation-delay: .3s; }
+@keyframes lg-dot { 0%, 80%, 100% { opacity: .25; transform: translateY(0); } 40% { opacity: .85; transform: translateY(-3px); } }
+
+/* nová správa sa jemne vysunie */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-message.lg-fresh { animation: lg-rise .32s var(--lg-ease) both; }
+@keyframes lg-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* odpoveď s vínami má širšiu bublinu */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-message.lg-has-wines .cx-bubble { max-width: min(100%, 340px) !important; width: 100%; }
+
+/* karty vín v chate */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-list { display: grid; gap: 8px; margin-top: 10px; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget a.lg-wine-card {
+  display: grid !important; grid-template-columns: 64px 1fr; gap: 10px; align-items: stretch;
+  padding: 8px !important; border-radius: 14px; background: #fff; border: 1px solid var(--lg-line);
+  color: inherit !important; text-decoration: none !important; box-shadow: 0 1px 2px rgb(0 0 0 / .04);
+  animation: lg-rise .38s var(--lg-ease) both; animation-delay: calc(var(--lg-i, 0) * 90ms);
+  transition: border-color .16s ease, box-shadow .16s ease, transform .16s ease;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget a.lg-wine-card:hover {
+  border-color: var(--cx-brand); box-shadow: 0 6px 16px rgb(0 0 0 / .08); transform: translateY(-1px);
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget a.lg-wine-card:focus-visible { outline: 2px solid var(--cx-brand); outline-offset: 2px; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-photo {
+  display: grid; place-items: center; border-radius: 10px; min-height: 84px; background: var(--lg-soft);
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-photo img {
+  width: 100%; height: 84px; object-fit: contain; mix-blend-mode: multiply; transform: scale(1.3);
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-photo { overflow: hidden; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-copy { display: flex; flex-direction: column; gap: 2px; min-width: 0; text-align: left; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-copy b { font-size: 14px; line-height: 1.25; font-weight: 700; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-copy small { font-size: 12px; opacity: .7; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-copy em {
+  font-style: normal; font-size: 12px; line-height: 1.35; opacity: .8;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-foot { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin-top: auto; padding-top: 4px; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-foot strong { font-size: 14px; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-go { font-size: 12px; font-weight: 700; color: var(--cx-brand); white-space: nowrap; }
+
+/* ---------- Výber: plynulé prechody ---------- */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body > h2 { animation: lg-rise .3s var(--lg-ease) both; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-quality-option { animation: lg-rise .34s var(--lg-ease) both; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-quality-option:nth-child(2) { animation-delay: 50ms; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-quality-option:nth-child(3) { animation-delay: 100ms; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body.is-question .cx-quality-option:nth-child(4) { animation-delay: 150ms; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-progress span { transition: background-color .3s ease; }
+
+/* ---------- Výsledok ---------- */
+/* hlavné víno: väčšia fľaša na teplom pozadí, odznak a výraznejšia cena */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body:not(.is-question) > .cx-quality-product {
+  animation: lg-rise .4s var(--lg-ease) both;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body:not(.is-question) > .cx-quality-product:nth-of-type(2) { animation-delay: 80ms; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body:not(.is-question) > .cx-quality-product:nth-of-type(3) { animation-delay: 160ms; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body:not(.is-question) > .cx-quality-product:nth-of-type(4) { animation-delay: 240ms; }
+
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body:not(.is-question) > .cx-quality-product:first-of-type {
+  border-color: var(--lg-line) !important;
+  box-shadow: 0 10px 28px rgb(60 30 10 / .08) !important;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body:not(.is-question) > .cx-quality-product .cx-quality-product-photo {
+  background: var(--lg-soft) !important;
+  border-radius: 14px !important;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body:not(.is-question) > .cx-quality-product .cx-quality-product-photo { overflow: hidden !important; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body:not(.is-question) > .cx-quality-product .cx-quality-product-photo img {
+  mix-blend-mode: multiply !important; transform: scale(1.3); transform-origin: 50% 50%;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body:not(.is-question) > .cx-quality-product:first-of-type .cx-quality-product-copy > small {
+  display: inline-flex !important; align-items: center; gap: 5px; width: max-content; max-width: 100%;
+  padding: 3px 9px; border-radius: 999px; background: var(--lg-soft); color: var(--cx-brand) !important;
+  font-weight: 700; letter-spacing: .04em;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body:not(.is-question) > .cx-quality-product:first-of-type .cx-quality-product-copy > small::before { content: "★"; font-size: 11px; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body:not(.is-question) > .cx-quality-product .cx-quality-product-copy > strong { font-size: 22px !important; letter-spacing: -.01em; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-body:not(.is-question) > .cx-quality-product .cx-quality-tags span::before { content: "✓ "; color: var(--cx-brand); font-weight: 700; }
+
+/* „Proč tento výběr“ ako zvýraznený blok */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-why {
+  background: var(--lg-soft) !important; border-left: 3px solid var(--cx-brand) !important;
+  border-radius: 12px !important; padding: 12px 14px !important; animation: lg-rise .4s var(--lg-ease) .12s both;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-why p { color: inherit !important; opacity: .85; }
+
+/* „Co doporučuji dál“ – kompaktné karty */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-result-next { animation: lg-rise .4s var(--lg-ease) .2s both; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-result-next .cx-quality-product { box-shadow: none !important; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-result-next .cx-quality-product-photo {
+  background: var(--lg-soft) !important; border-radius: 12px !important;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-result-next .cx-quality-product-photo img { mix-blend-mode: multiply !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  body #cosmetics-root#cosmetics-root #cx-widget#cx-widget :is(.lg-typing i, .cx-message.lg-fresh, a.lg-wine-card, .cx-quality-body > h2, .cx-quality-option, .cx-quality-product, .cx-quality-why, .cx-result-next) {
+    animation: none !important; transition: none !important;
+  }
+}
+
+
+/* text odpovede medzi kartami */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-text { display: block; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-text + .lg-wine-list { margin-top: 10px; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-list + .lg-text { margin-top: 10px; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-list:first-child { margin-top: 0; }
+/* fotka sa nenačítala: ostane jemný podklad so symbolom fľaše, nie rozbitý obrázok */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-photo[data-image-failed] img { display: none; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-photo[data-image-failed]::before { content: ""; width: 26px; height: 26px; border-radius: 50%; background: var(--cx-brand); opacity: .18; }
+
+/* výber: okraj karty pri prejdení/aktívnej voľbe celý (aj hore), nie orezaný */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-option:is(:hover,:active,[aria-pressed="true"])::after {
+  content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: inset 0 0 0 2px var(--cx-brand); pointer-events: none; z-index: 2;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-quality-option:focus-visible { outline: 2px solid var(--cx-accent) !important; outline-offset: -3px !important; }
+
+/* kruh poradcu: znak vinárstva */
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-message-avatar {
+  background: var(--cx-brand) var(--plus-avatar) center / 60% auto no-repeat !important; overflow: hidden !important;
+}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-message-avatar > * { visibility: hidden !important; }
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-foot strong { white-space: nowrap; }
+
+/* bublina v rohu so znakom vinárstva (Vican, Vajbar, Šabata): znak namiesto celého slova; farby a prechod ostávajú */
+html[data-plus-launcher="mark"] body #cx-open#cx-open .cx-company-message-logo { --cx-company-message-art: var(--plus-mark) !important; transform: scale(.82); }
+
+html[data-plus-avatar="light"] body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-message-avatar {
+  background: #fff var(--plus-avatar) center / 86% auto no-repeat !important; box-shadow: inset 0 0 0 1px rgb(0 0 0 / .1) !important;
+}

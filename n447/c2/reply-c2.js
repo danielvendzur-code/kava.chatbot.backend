@@ -39,7 +39,7 @@
     const packText = (p) => verified(p).map((v) => E.grams(v.grams) + (v.roast ? ' ' + v.roast + ' roast' : '') + ', ' + T(String(v.grind || 'zrnková').toLowerCase(), 'zrnková') + ': ' + money(v.price, p.currency) + promo(v, p.currency, cs)).join('; ');
     const priceShort = (p) => p.kind === 'drip' ? money(p.price, p.currency) : best(p).length ? E.grams(best(p)[0].grams) + T(' za ', ' za ') + money(best(p)[0].price, p.currency) + promo(best(p)[0], p.currency, cs) : T('orientačne od ', 'orientačně od ') + money(p.priceFrom, p.currency);
     const line = (p) => p.name + ' — ' + priceShort(p) + '\n' + p.url;
-    const withTones = (p) => line(p) + '\n(' + T('V chuti: ', 'V chuti: ') + tones(p) + '.)';
+    const withTones = (p) => line(p) + (tones(p) ? '\n(' + T('V chuti: ', 'V chuti: ') + tones(p) + '.)' : ''); /* s3: bez prázdneho „V chuti: .“ */
     const facts = (p) => {
       if (p.kind === 'drip') return p.name + T(' je balenie ', ' je balení ') + p.pack + ' za ' + money(p.price, p.currency) + '. ' + T('Vyberáte si kávu: ', 'Vybíráte si kávu: ') + p.options.map((o) => o.title).join(T(' alebo ', ' nebo ')) + '.\n' + p.url;
       const bits = [p.name + ':', p.summary, tones(p) ? T('V chuti: ', 'V chuti: ') + tones(p) + '.' : '', T('Pôvod: ', 'Původ: ') + p.origin + (p.process ? T(', spracovanie ', ', zpracování ') + p.process : '') + '.', T('Praženie: ', 'Pražení: ') + roastText(p, cs) + T('; balenia ', '; balení ') + weights(p) + '.'];
@@ -104,7 +104,12 @@
     }
     if (/cokol|karamel|orech|oriesk|horka|tmav|klasick|mliek|mlek|capp|latte|automat|pakov|espresso|moka/.test(q)) {
       const recs = byTaste('choco', 'espresso');
-      return T('Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\n', 'Čokoládovou a oříškovou chuť do automatu či kávovaru mají například:\n') + recs.map(withTones).join('\n') + (data.beansOnly ? '' : T('\nDo automatu zvoľte zrnkovú.', '\nDo automatu zvolte zrnkovou.'));
+      /* s3: názov chuťovej skupiny z dát pražiarne, ak ho má (inak pôvodný text) */ return (data.tasteLabels && data.tasteLabels.choco && data.slug !== 'nordbeans' ? T('Chuť „', 'Chuť „') + data.tasteLabels.choco[0].toLowerCase() + T('“ do automatu či kávovaru majú napríklad:\n', '“ do automatu či kávovaru mají například:\n') : T('Čokoládovú a orieškovú chuť do automatu či kávovaru majú napríklad:\n', 'Čokoládovou a oříškovou chuť do automatu či kávovaru mají například:\n')) + recs.map(withTones).join('\n') + (data.beansOnly ? '' : T('\nDo automatu zvoľte zrnkovú.', '\nDo automatu zvolte zrnkovou.'));
+    }
+    /* s3: „menej kyslá / nízka kyslosť“ = skupina s nízkou kyslosťou, nie svieža */
+    if (/(menej|mene|malo|nizk|nizs|jemn|slab)\w*\s+kysl|(menej|mene|malo|nizk|nizs)\w*\s+kysel|bez kysel|nekysel|nekysl/.test(q)) {
+      const low = byTaste('choco');
+      if (low.length) return T('Nižšiu kyslosť majú podľa pražiarne napríklad:\n', 'Nižší kyselost mají podle pražírny například:\n') + low.map(withTones).join('\n');
     }
     if (/ovoc|bobul|visn|malin|cucori|boruv|tropic/.test(q)) return T('Plnú ovocnú chuť majú napríklad:\n', 'Plnou ovocnou chuť mají například:\n') + byTaste('fruitFull').map(withTones).join('\n');
     if (/kysl|kysel|sviez|svez|citrus|ribez|rybiz|caj|lahk|lehk|jemn/.test(q)) return T('Sviežu, šťavnatú chuť majú napríklad:\n', 'Svěží, šťavnatou chuť mají například:\n') + (byTaste('fresh').length ? byTaste('fresh') : byTaste('fruitFull')).map(withTones).join('\n');

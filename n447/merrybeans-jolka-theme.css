@@ -1,0 +1,6 @@
+/* Merrybeans – značkové tokeny na schválenom Jolka systéme (séria 3). */
+:root{--ink:#274249;--ink-2:#274249;--ink-3:#4e646a;--paper:#ffffff;--surface:#fff;--surface-2:#f6f1e4;--line:#e5e0d8;--line-strong:#d3ccc1;--kraft:#c2930a;--kraft-deep:#c2930a;--kraft-tint:#f6f0dd;--text:#274249;--text-2:#4f4f4f;--text-3:#808080;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.merrybeans-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
+body.merrybeans-clean .widget__brand>img{width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important}
+body.merrybeans-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.merrybeans-clean .launcher__button img{width:46px!important;height:46px!important}
