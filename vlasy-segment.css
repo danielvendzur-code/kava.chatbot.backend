@@ -1,0 +1,25 @@
+/* Hair segment: the four advisor steps show hair photographs (Unsplash
+   License, see ZDROJE.md) instead of the skincare ones. The id outranks the
+   skincare rules in skincare-routine-polish.css. */
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="dry"] .cx-option-photo { background-image:url('/assets/vlasy/choice-dry.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="oily"] .cx-option-photo { background-image:url('/assets/vlasy/choice-oily.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="sensitive"] .cx-option-photo { background-image:url('/assets/vlasy/choice-sensitive.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="balanced"] .cx-option-photo { background-image:url('/assets/vlasy/choice-balanced.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="hydrate"] .cx-option-photo { background-image:url('/assets/vlasy/choice-hydrate.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="calm"] .cx-option-photo { background-image:url('/assets/vlasy/choice-calm.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="clarity"] .cx-option-photo { background-image:url('/assets/vlasy/choice-clarity.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="mature"] .cx-option-photo { background-image:url('/assets/vlasy/choice-mature.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="simple"] .cx-option-photo { background-image:url('/assets/vlasy/choice-simple.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="basic"] .cx-option-photo { background-image:url('/assets/vlasy/choice-basic.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="full"] .cx-option-photo { background-image:url('/assets/vlasy/choice-full.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="target"] .cx-option-photo { background-image:url('/assets/vlasy/choice-target.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="cream"] .cx-option-photo { background-image:url('/assets/vlasy/choice-cream.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="serum"] .cx-option-photo { background-image:url('/assets/vlasy/choice-serum.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="oil"] .cx-option-photo { background-image:url('/assets/vlasy/choice-oil.jpg') !important; }
+body[data-cosmetics-demo] #cx-stage .cx-option[data-value="any"] .cx-option-photo { background-image:url('/assets/vlasy/choice-any.jpg') !important; }
+
+/* Answer cards show the real product photograph across the whole photo area.
+   The generic skincare scene backgrounds do not apply to hair care and left the cards blank. */
+html body[data-cosmetics-demo] #cosmetics-root #cx-widget .cx-option .cx-option-photo{background:#fff none!important;background-image:none!important;padding:0!important;border:0!important;overflow:hidden!important;}
+html body[data-cosmetics-demo] #cosmetics-root #cx-widget .cx-option .cx-option-photo>img{display:block!important;opacity:1!important;visibility:visible!important;position:static!important;width:100%!important;height:100%!important;max-width:none!important;margin:0!important;padding:0!important;object-fit:contain!important;object-position:center!important;transform:none!important;}
+html body[data-cosmetics-demo] #cosmetics-root #cx-widget .cx-option{border:1px solid #d5d7d9!important;box-shadow:none!important;outline:none!important;}

@@ -1,0 +1,101 @@
+/* Narrow follow-up: only Barbora Lori, Cyprianus and Panakeia. */
+
+/* Barbora Lori — strong contrast in the closed preview bubble. */
+body[data-cosmetics-demo="barboralori"] #cx-open.cx-launcher-button {
+  background-color: var(--cx-accent) !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+body[data-cosmetics-demo="barboralori"] #cx-open img,
+body[data-cosmetics-demo="barboralori"] #cx-open .cx-launcher-real-logo,
+body[data-cosmetics-demo="barboralori"] #cx-open .cx-final-trimmed-launcher {
+  opacity: 1 !important;
+  filter: brightness(0) invert(1) !important;
+  mix-blend-mode: normal !important;
+}
+body[data-cosmetics-demo="barboralori"] #cx-open .cx-barbora-monogram,
+body[data-cosmetics-demo="barboralori"] #cx-open .cx-barbora-letter::before {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="barboralori"] #cx-open.cx-launcher-button:hover {
+    background-color: var(--cx-brand) !important;
+  }
+}
+
+/* Cyprianus — force the official left-hand emblem at the CSS layer too.
+   This does not depend on any JS replacement: all launcher/avatar children are
+   hidden and the first 35x35 part of the real 150x35 SVG is painted directly. */
+body[data-cosmetics-demo="cyprianus"] #cx-open.cx-launcher-button {
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  font-size: 0 !important;
+  color: transparent !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+body[data-cosmetics-demo="cyprianus"] #cx-open.cx-launcher-button > * {
+  display: none !important;
+}
+body[data-cosmetics-demo="cyprianus"] #cx-open.cx-launcher-button::before {
+  content: "" !important;
+  display: block !important;
+  width: 48px !important;
+  height: 48px !important;
+  background-image: url('/assets/cosmetics/cyprianus-logo.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: 205.714px 48px !important;
+  filter: brightness(0) invert(1) !important;
+  transform: none !important;
+}
+body[data-cosmetics-demo="cyprianus"] .cx-message-avatar {
+  position: relative !important;
+  display: grid !important;
+  place-items: center !important;
+  overflow: hidden !important;
+  font-size: 0 !important;
+  color: transparent !important;
+}
+body[data-cosmetics-demo="cyprianus"] .cx-message-avatar > * {
+  display: none !important;
+}
+body[data-cosmetics-demo="cyprianus"] .cx-message-avatar::before {
+  content: "" !important;
+  display: block !important;
+  width: 29px !important;
+  height: 29px !important;
+  background-image: url('/assets/cosmetics/cyprianus-logo.svg') !important;
+  background-repeat: no-repeat !important;
+  background-position: left center !important;
+  background-size: 124.286px 29px !important;
+  filter: brightness(0) invert(1) !important;
+  transform: none !important;
+}
+
+/* Panakeia — keep the approved fill states; only make the hover logo lighter. */
+body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button,
+body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button.cx-launcher-has-image-logo {
+  background-image: none !important;
+  background-color: var(--cx-brand) !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+body[data-cosmetics-demo="panakeia"] #cx-open .cx-launcher-real-logo {
+  filter: brightness(0) invert(1) !important;
+  mix-blend-mode: normal !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button:hover,
+  body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button.cx-launcher-has-image-logo:hover {
+    background-color: var(--cx-accent) !important;
+  }
+  body[data-cosmetics-demo="panakeia"] #cx-open:hover .cx-launcher-real-logo,
+  body[data-cosmetics-demo="panakeia"] #cx-open.cx-launcher-button:hover img {
+    filter: brightness(0) invert(1) !important;
+    opacity: .94 !important;
+    mix-blend-mode: normal !important;
+  }
+}

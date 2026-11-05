@@ -1,0 +1,428 @@
+(() => {
+  'use strict';
+
+  const root = document.querySelector('#cosmetics-root');
+  const data = window.COSMETICS_DEMOS;
+  if (!root || !data) return;
+
+  /* The subdomain decides the brand. A path or ?demo= naming another brand
+     goes to that brand's own subdomain, so one company's demo never renders
+     under another company's address. */
+  const known = (value) => Object.prototype.hasOwnProperty.call(data.brands, value);
+  const host = location.hostname.toLowerCase();
+  const hostSlug = host.endsWith('.mojchatbot.sk') ? host.split('.')[0] : '';
+  const asked = String(location.pathname.match(/\/kozmetika\/([a-z0-9-]+)/i)?.[1] || new URLSearchParams(location.search).get('demo') || '').toLowerCase();
+  if (known(hostSlug) && asked && asked !== hostSlug && known(asked)) { location.replace(`/cosmetics.html?demo=${encodeURIComponent(hostSlug)}`); return; }
+  if (hostSlug && !known(hostSlug)) { root.textContent = 'Ukážka sa nenašla.'; return; }
+  const slug = known(hostSlug) ? hostSlug : known(asked) ? asked : 'dixi';
+  const brand = data.brands[slug];
+  const isMylo = slug === 'mylo';
+  const hasImageLogo = /class=["'][^"']*cx-logo/.test(brand.wordmark);
+  const launcherMarkup = brand.launcherMark || brand.wordmark;
+  const avatarMarkup = brand.avatarMark || brand.launcherMark || brand.wordmark;
+  const launcherUsesRawImageLogo = hasImageLogo && !brand.launcherMark;
+  const avatarUsesRawImageLogo = hasImageLogo && !brand.avatarMark && !brand.launcherMark;
+  const questions = data.questions;
+  /* séria 3: texty segmentu (káva, kozmetika) – bez CX_SEGMENT ostáva text schválenej ukážky Andreine. */
+  const SEG = window.CX_SEGMENT || {};
+
+  document.body.dataset.cosmeticsDemo = slug;
+  document.body.dataset.benefitStyle = 'lines';
+  document.title = `${brand.name} – ${SEG.titleSuffix || 'výber starostlivosti'}`;
+  for (const [key,value] of Object.entries(brand.theme)) document.documentElement.style.setProperty(`--cx-${key}`, value);
+
+  const esc = (value='') => String(value).replace(/[&<>"']/g, (ch) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+  const svg = (body) => `<svg viewBox="0 0 24 24" fill="none" aria-hidden="true">${body}</svg>`;
+  const path = (d) => `<path d="${d}" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>`;
+  const icons = {
+    arrow:svg(path('M5 12h13m-5-6 6 6-6 6')),
+    close:svg(path('m6 6 12 12M18 6 6 18')),
+    reset:svg(path('M20 11a8 8 0 1 0-2.3 5.7M20 5v6h-6')),
+    back:svg(path('m15 18-6-6 6-6')),
+    chat:svg(path('M5 5h14v10H9l-4 4V5Z')),
+    spark:svg(path('M12 3l1.4 5.4L19 10l-5.6 1.6L12 17l-1.4-5.4L5 10l5.6-1.6L12 3Z')),
+    check:svg(path('m5 12 4 4L19 6')),
+    dot:'<svg viewBox="0 0 8 8" aria-hidden="true"><circle cx="4" cy="4" r="3" fill="currentColor"/></svg>',
+    send:svg(path('m4 4 16 8-16 8 3-8-3-8Zm3 8h13')),
+    bag:svg(path('M6 8h12l-1 12H7L6 8Zm3 0V6a3 3 0 0 1 6 0v2')),
+    leaf:svg(path('M19 4C11 4 5 8 5 14c0 3 2 5 5 5 6 0 9-7 9-15ZM8 17c2-4 5-7 9-9'))
+  };
+
+  const state = {
+    open:false, mode:'chat', step:0, answers:{}, result:null, alternative:null,
+    interacted:false, busy:false, transitioning:false,
+    messages:[{role:'assistant',text:SEG.greeting || 'Dobrý deň. Napíšte, čo od starostlivosti očakávate alebo ako sa vaša pleť správa. Pomôžem vám zúžiť výber.'}]
+  };
+
+  // What the advisor answers, how long it takes, what comes out of it. This is
+  // the block the hero used to spend on a product photograph, and it is the
+  // same one the coffee pages carry.
+  /* The contact links carried no context, so an owner arriving from a demo had
+     to type in who they were. The coffee pages already pass this. */
+  const contactHref = () => `https://mojchatbot.sk/kontakt?${new URLSearchParams({
+    source: `${SEG.source || 'skincare-demo-'}${slug}`,
+    company: brand.fullName || brand.name,
+    web: brand.website,
+    demo: location.href
+  })}`;
+
+  /* One offer, written the way it is quoted on the phone: each sum says what it
+     buys. The coffee pages read the same words. */
+  const PRICE = {
+    sums: [
+      [SEG.price || '247', 'jednorazovo', 'nastavenie a naplnenie vašimi produktmi'],
+      ['10', 'mesačne', 'prevádzka']
+    ],
+    trial: SEG.trial || 'Prvý mesiac zdarma',
+    note: 'Bez viazanosti, vypnete kedykoľvek.',
+    addon: 'Preklik na produkt alebo napojenie na košík za príplatok.'
+  };
+
+  /* "Chcem to na svoj web" used to jump straight to a contact form, which asked
+     for a decision before saying what the decision was about. */
+  /* "Viac info": only what the owner cannot see on the demo itself (no price,
+     no "your brand" — both are in plain view). Approved wording. */
+  const MORE = [
+    ...(SEG.noTrial ? [] : [['Prvý mesiac zdarma', 'Vyskúšate ho naostro na vlastnom webe.']]),
+    ['Preklik priamo na produkt', 'Po odporúčaní zákazník pokračuje rovno na konkrétny produkt vo vašom e-shope.'],
+    ['Vloženie jedným riadkom kódu', 'Pridá sa do existujúceho webu, nič netreba prerábať.'],
+    ['Funguje aj mimo pracovného času', 'Zákazník dostane odpoveď a pomoc s výberom aj večer či cez víkend.'],
+    ['História správ', 'Vidíte, na čo sa zákazníci pýtajú, a zistíte, čo im na stránke chýba alebo čomu nerozumejú.'],
+    ['Priebežné úpravy', 'Sortiment, ceny aj odpovede sa dajú kedykoľvek aktualizovať.'],
+    ['Ďalšie funkcie podľa vašej firmy', 'Neskôr sa dá doplniť napríklad košík, formulár, rezervácia, zber kontaktov alebo iný typ výberu.']
+  ];
+
+  const INCLUDED = [
+    ['Chatbot s vaším katalógom', 'Vaše produkty a ceny, nie všeobecné odpovede.'],
+    ['Odpovedá aj o polnoci', SEG.includedChat || 'Zloženie, typ pleti, rutina aj porovnanie dvoch produktov.'],
+    ['Výber podľa vašich potrieb', SEG.includedAdvisor || 'Pleť, priorita, rutina a textúra — na konci jeden konkrétny produkt.'],
+    ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.']
+  ];
+
+  /* Headline and lead are the same on every page; the coffee pages read the
+     same words. */
+  const HEADING = SEG.heading || 'Poradí zákazníkovi starostlivosť a odpovie mu na otázky.';
+  const LEAD = SEG.lead || 'Chatbot odpovie zákazníkovi na otázky o vašich produktoch. Cez štyri otázky ' +
+    'mu vyberie ten, ktorý sadne jeho pleti. Predáte aj vtedy, keď pri tom nie ste.';
+
+  /* The sheet behind "Chcem to na svoj web" listed what the owner gets, but the
+     page itself said none of it — the conversation history among it. Four of
+     them sit under the buttons instead. The coffee pages carry the same four. */
+  const KEEPS = [
+    ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
+    ['Pozná váš katalóg', 'pracuje s vašimi produktmi a cenami'],
+    ['Výber podľa vašich potrieb', SEG.keepsAdvisor || 'na konci jeden konkrétny produkt'],
+    ['História konverzácií', 'vidíte, na čo sa zákazníci pýtajú']
+  ];
+
+  const CHIPS = brand.quickChips?.length===4?brand.quickChips:['Mám suché vlasy', 'Vlasy sa mi rýchlo mastia', 'Svrbí ma pokožka hlavy', 'Vypadávajú mi vlasy'];
+
+  const ownerFigures = '';
+
+  const keepsMarkup = (side = false) => `
+    <ul class="cx-keeps${side ? ' cx-keeps--side' : ''}">
+      ${KEEPS.map(([title, note]) => `
+        <li>${side ? '' : icons.dot}<span><b>${esc(title)}</b><small>${esc(note)}</small></span></li>`).join('')}
+    </ul>`;
+
+  root.innerHTML = `
+    <main class="cx-owner">
+      <header class="cx-owner-head">
+        <a class="cx-owner-brand" href="${brand.website}" target="_blank" rel="noreferrer">${brand.wordmark}</a>
+        <a class="cx-owner-contact" href="${esc(contactHref())}" target="_blank" rel="noreferrer">Chcem to na svoj web ${icons.arrow}</a>
+      </header>
+      <section class="cx-owner-hero">
+        <div class="cx-owner-copy">
+          <span class="cx-owner-kicker">Chatbot pre váš e-shop</span>
+          <h1>${esc(HEADING)}</h1>
+          <div class="cx-owner-actions">
+            <button type="button" data-open="advisor">Vyskúšať výber ${icons.arrow}</button>
+            <button type="button" data-open="chat" class="is-secondary">Skúsiť chat ${icons.chat}</button>
+          </div>
+        </div>
+        <div class="cx-owner-frame">
+          ${ownerFigures}
+          <div class="cx-owner-visual">
+            <img src="${brand.hero}" alt="${esc(brand.name)} – produktová prezentácia" referrerpolicy="no-referrer" onerror="this.closest('.cx-owner-visual')?.setAttribute('data-image-failed','true')">
+          </div>
+          ${keepsMarkup(true)}
+        </div>
+      </section>
+      <section class="cx-owner-offer" aria-label="Cena">
+        <article class="cx-price">
+          ${PRICE.sums.map(([sum, term, buys]) => `
+            <div class="cx-price-sum"><b>${esc(sum)}&nbsp;€</b><span>${esc(term)}</span><small>${esc(buys)}</small></div>`).join('')}
+          <div class="cx-price-terms">
+            <b>${esc(PRICE.trial)}</b>
+            <p>${esc(PRICE.note)}</p>
+            <a href="${esc(contactHref())}" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a>
+          </div>
+        </article>
+      </section>
+      <footer class="cx-owner-foot"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a><span>Ukážka riešenia pre ${esc(brand.name)}</span></footer>
+    </main>
+
+    <div class="cx-launcher" id="cx-launcher">
+      <button class="cx-teaser" id="cx-teaser" type="button"><b>${esc(SEG.teaserTitle || 'Pomôcť s výberom?')}</b><span>${esc(SEG.teaserNote || 'Krátky výber · konkrétny produkt')}</span></button>
+      <button class="cx-launcher-button${launcherUsesRawImageLogo ? ' is-image-logo' : ''}" id="cx-open" type="button" aria-label="Otvoriť poradcu" aria-expanded="false">${launcherMarkup}</button>
+    </div>
+    <div class="cx-backdrop" id="cx-backdrop" hidden></div>
+    <section class="cx-widget" id="cx-widget" role="dialog" aria-modal="true" aria-label="${esc(SEG.advisorName || 'Poradca starostlivosti')} ${esc(brand.name)}" aria-hidden="true">
+      <header class="cx-widget-head">
+        <div class="cx-widget-brand">${brand.wordmark}<span class="cx-status"><i></i> online</span></div>
+        <div class="cx-widget-actions"><button id="cx-reset" type="button" aria-label="Začať odznova">${icons.reset}</button><button id="cx-close" type="button" aria-label="Zavrieť">${icons.close}</button></div>
+      </header>
+      <nav class="cx-mode" aria-label="Režim poradcu">
+        <span class="cx-mode-thumb"></span>
+        <button type="button" data-mode="advisor" aria-pressed="false">${icons.spark}<b>${esc(SEG.tab || 'Výber starostlivosti')}</b></button>
+        <button type="button" data-mode="chat" class="is-active" aria-pressed="true">${icons.chat}<b>Chat</b></button>
+      </nav>
+      <div class="cx-stage" id="cx-stage"></div>
+      <p class="cx-widget-note"><a href="https://mojchatbot.sk" target="_blank" rel="noreferrer">mojchatbot.sk</a></p>
+    </section>`;
+
+  const widget = root.querySelector('#cx-widget');
+  const stage = root.querySelector('#cx-stage');
+  const launcher = root.querySelector('#cx-launcher');
+  const backdrop = root.querySelector('#cx-backdrop');
+  const mode = root.querySelector('.cx-mode');
+  const modeButtons = [...root.querySelectorAll('.cx-mode button')];
+
+  function openWidget(next='chat') {
+    state.open = true;
+    widget.classList.add('is-open');
+    widget.setAttribute('aria-hidden','false');
+    launcher.classList.add('is-hidden');
+    backdrop.hidden = false;
+    requestAnimationFrame(() => backdrop.classList.add('is-visible'));
+    document.documentElement.classList.add('cx-lock');
+    setMode(next);
+    requestAnimationFrame(() => root.querySelector('#cx-close')?.focus());
+  }
+
+  function closeWidget() {
+    state.open = false;
+    widget.classList.remove('is-open');
+    widget.setAttribute('aria-hidden','true');
+    launcher.classList.remove('is-hidden');
+    backdrop.classList.remove('is-visible');
+    setTimeout(() => { backdrop.hidden = true; }, 160);
+    document.documentElement.classList.remove('cx-lock');
+  }
+
+  function setMode(next) {
+    state.mode = next;
+    mode.classList.toggle('is-advisor', next === 'advisor');
+    modeButtons.forEach((button) => {
+      const active = button.dataset.mode === next;
+      button.classList.toggle('is-active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+    if (next === 'advisor') renderAdvisor(); else renderChat();
+  }
+
+  function messageText(message){const text=esc(message.text).replace(/\n/g,'<br>');if(message.role!=='assistant')return text;const catalogue=globalThis.CX_CATALOGUES?.[slug]?.products||brand.catalogue||brand.products||[];const products=globalThis.CXAdvisorCore?.prepare?globalThis.CXAdvisorCore.prepare(catalogue):catalogue;const urls=new Set(products.filter(p=>!p.source?.recommendationHold).map(p=>esc(p.url)));if(slug==='kapyderm')urls.add('https://www.kapyderm.sk/kontakty');for(const url of [brand.website,brand.url])if(url)urls.add(esc(url));return text.replace(/https?:\/\/[^\s<>]+/g,value=>{let url=value;if(!urls.has(url))url=url.replace(/[.,;]+$/,'');return urls.has(url)?'<a href="'+url+'">Pozrieť produkt</a>'+value.slice(url.length):value;});}
+  function messageMarkup(message) {
+    const avatar = message.role === 'assistant' ? `<span class="cx-message-avatar${avatarUsesRawImageLogo ? ' is-image-logo' : ''}">${avatarMarkup}</span>` : '';
+    return `<div class="cx-message cx-message--${message.role}">${avatar}<div class="cx-bubble">${messageText(message)}</div></div>`;
+  }
+
+  function renderChat() {
+    stage.innerHTML = `
+      <section class="cx-chat">
+        <div class="cx-chat-messages" id="cx-messages">
+          ${!state.interacted ? `<button class="cx-advisor-entry" id="cx-advisor-entry" type="button"><span class="cx-advisor-entry-photo"><img src="${brand.hero}" alt="" referrerpolicy="no-referrer" onerror="this.closest('.cx-advisor-entry-photo')?.setAttribute('data-image-failed','true')"></span><div><small>${esc(SEG.entrySmall || 'VÝBER STAROSTLIVOSTI')}</small><b>${esc(SEG.entryTitle || 'Nájsť vhodný produkt')}</b><em>${esc(SEG.entryNote || 'Pleť · priorita · rutina · textúra')}</em></div>${icons.arrow}</button>` : ''}
+          ${state.messages.map(messageMarkup).join('')}
+        </div>
+        <div class="cx-chat-bottom">
+          ${!state.interacted ? `<div class="cx-chips">${CHIPS.map((chip) => `<button class="cx-chip" type="button">${esc(chip)}</button>`).join('')}</div>` : ''}
+          <form class="cx-composer" id="cx-form"><input id="cx-input" maxlength="500" autocomplete="off" placeholder="${esc(SEG.placeholder || 'Opýtajte sa na starostlivosť…')}" aria-label="Otázka"><button type="submit" aria-label="Odoslať" ${state.busy?'disabled':''}>${icons.send}</button></form>
+        </div>
+      </section>`;
+    stage.querySelector('#cx-advisor-entry')?.addEventListener('click', () => setMode('advisor'));
+    stage.querySelectorAll('.cx-chip').forEach((button) => button.addEventListener('click', () => send(button.textContent)));
+    stage.querySelector('#cx-form').addEventListener('submit', (event) => { event.preventDefault(); const input=stage.querySelector('#cx-input'); const value=input.value; input.value=''; send(value); });
+    requestAnimationFrame(() => { const messages=stage.querySelector('#cx-messages'); if(messages) messages.scrollTop=messages.scrollHeight; });
+  }
+
+  function localReply(text) {
+    const q = String(text||'').toLocaleLowerCase('sk');
+    if (/such|pnut|dehyd/.test(q)) return `Pri suchej alebo napnutej pleti by som začal produktom ${brand.products.find(p=>p.tags.includes('dry'))?.name || brand.products[0].name}. Cez Výber starostlivosti ešte zohľadníme, či chcete krém, sérum alebo olej.`;
+    if (/mast|lesk|nedokonal|akné/.test(q)) return `Pri vyššej tvorbe mazu sa oplatí pozrieť na ${brand.products.find(p=>p.tags.includes('oily'))?.name || brand.products[0].name}. Výber starostlivosti vám pomôže zúžiť výsledok bez skúšania naslepo.`;
+    if (/citliv|reakt|štíp|podráž/.test(q)) return `Pri citlivejšej pleti by som volil jednoduchšiu starostlivosť a začal produktom ${brand.products.find(p=>p.tags.includes('sensitive'))?.name || brand.products[0].name}. Ak pokožka výrazne reaguje, vhodnosť produktu je lepšie konzultovať s odborníkom.`;
+    if (/zrel|vrásk|pruž/.test(q)) return `Pre zrelšiu pleť je z ponuky vhodný smer ${brand.products.find(p=>p.tags.includes('mature'))?.name || brand.products[0].name}. Krátky výber ešte zohľadní, ako komplexnú rutinu chcete.`;
+    // Everything else used to answer without naming anything, which reads as if
+    // the advisor knows only the four chips. It answers from this brand's own
+    // catalogue instead.
+    if (/odkia|zložen|zlozen|obsahuj|ingredien|prísad|prisad/.test(q)) {
+      const first = brand.products[0];
+      return `Zloženie je uvedené pri každom produkte na webe ${brand.name}. Napríklad ${first.name}: ${first.reason} Napíšte, ako sa pleť správa, a vyberiem jeden konkrétny.`;
+    }
+    if (/cena|ceny|cenu|koľko|kolko|stoj|draho|lacn/.test(q)) {
+      const first = brand.products[0];
+      return `Ceny sú uvedené pri produktoch — ${first.name} je ${first.price}. Cez štyri krátke kroky vo Výbere vyberiem ten, ktorý vám sadne, aj s cenou.`;
+    }
+    return `Z ponuky ${brand.name} je dobrý začiatok ${brand.products[0].name}. Napíšte, ako sa pleť správa a čo chcete riešiť, alebo prejdite štyri krátke kroky vo Výbere — vyberiem jeden konkrétny produkt aj s dôvodom.`;
+  }
+
+  function localReply(clean,history) {
+    try {
+      const brain=globalThis.CXChatBrain, catalogue=(globalThis.CX_CATALOGUES||{})[slug];
+      if(!brain||!catalogue?.products?.length||!globalThis.CXAdvisorCore)return null;
+      state.chatAdapter=state.chatAdapter||brain.adapters.cosmetics(catalogue,{family:'hair'});
+      return brain.reply(state.chatAdapter,clean,history)||null;
+    } catch (_) { return null; }
+  }
+
+  async function send(text) {
+    const clean = String(text||'').trim().slice(0,500);
+    if (!clean || state.busy) return;
+    state.interacted = true;
+    state.busy = true;
+    state.messages.push({role:'user',text:clean});
+    const generation=state.generation||0;
+    let replied=false;
+    const answer = {role:'assistant',text:document.documentElement.lang==='cs'?'Ověřuji odpověď v nabídce…':'Overujem odpoveď v ponuke…'};
+    state.messages.push(answer);
+    renderChat();
+    // Keep the pending bubble neutral until a canonical response arrives.
+    // The pending bubble is not part of the conversation.
+    const history = state.messages.filter((m)=>m!==answer).map((m)=>({role:m.role,content:m.text}));
+    const abort = new AbortController();
+    const timer = setTimeout(() => abort.abort(), 12000);
+    try {
+      const response = await fetch('/api/cosmetics-chat',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({demoId:slug,messages:history.slice(-8)}),signal:abort.signal});
+      if (response.ok) { const payload=await response.json(); if(String(payload.reply||'').trim()){answer.text=String(payload.reply).trim();replied=true;} }
+    } catch (_) {} finally { clearTimeout(timer); }
+    if(generation!==(state.generation||0))return;
+    // Without the server (a static host), the same conversation rules answer in the browser.
+    if(!replied)answer.text=(window.CX_LOCAL_REPLY?.(clean,history))||localReply(clean,history)||globalThis.CXCatalogueReplyCore?.(globalThis.CX_CATALOGUES||{},slug,clean,history)||(document.documentElement.lang==='cs'?'Odpověď se nyní nepodařilo načíst. Nabídku můžete projít ve Výběru.':'Odpoveď sa teraz nepodarilo načítať. Ponuku môžete prejsť vo Výbere.');
+    state.busy = false;
+    renderChat();
+  }
+
+  function score(product) {
+    const weights={skin:9,goal:11,routine:5,texture:6};
+    return questions.reduce((total,q) => {
+      const answer=state.answers[q.key];
+      if(!answer || answer==='any') return total;
+      return total + (product.tags.includes(answer) ? weights[q.key] : -1);
+    },0);
+  }
+
+  function chooseResult() {
+    const ranked=brand.products.map((product,index)=>({product,index,score:score(product)})).sort((a,b)=>b.score-a.score || a.index-b.index);
+    state.result=ranked[0].product;
+    state.alternative=(ranked.find((item)=>item.product.id!==state.result.id)||ranked[1]||ranked[0]).product;
+  }
+
+  /* Only five photographs exist for sixteen answers, so the last two steps were
+     showing pictures from the first two — a jar of cream for "olej", a face for
+     "2-3 kroky". How many steps a routine has, and what a product feels like,
+     are not things a stock photograph states. These are drawn, take the brand's
+     own accent through currentColor, and repeat nothing. */
+  const bottle = (x, h, w = 9) =>
+    `<rect x="${x}" y="${34 - h}" width="${w}" height="${h}" rx="2.4"/><rect x="${x + w / 2 - 1.6}" y="${30 - h}" width="3.2" height="4" rx="1"/>`;
+  const mark = (body) =>
+    `<svg class="cx-mark" viewBox="0 0 48 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${body}</svg>`;
+
+  const optionMarks = {
+    simple: mark(bottle(19, 17, 10)),
+    basic: mark(bottle(11, 15) + bottle(23.5, 19) + bottle(36, 13, 7)),
+    full: mark(bottle(5, 13, 7) + bottle(15, 18) + bottle(26, 15) + bottle(37, 11, 6)),
+    target: mark(bottle(12, 15) + bottle(24, 12, 7) + '<path d="M38 13v8M34 17h8"/>'),
+    cream: mark('<rect x="14" y="16" width="20" height="14" rx="3.4"/><rect x="18" y="11" width="12" height="5" rx="1.8"/><path d="M18 23h12"/>'),
+    serum: mark('<rect x="17" y="15" width="14" height="16" rx="3"/><rect x="20.5" y="8" width="7" height="7" rx="2"/><path d="M24 20v6"/>'),
+    oil: mark('<path d="M24 9c5 6 8 9.6 8 13a8 8 0 1 1-16 0c0-3.4 3-7 8-13Z"/><path d="M20.5 22.5a3.5 3.5 0 0 0 3.5 3.5"/>'),
+    any: mark('<circle cx="24" cy="20" r="10"/><path d="M24 15v10M19 20h10"/>')
+  };
+
+  function renderAdvisor() {
+    if (state.result) return renderResult();
+    const question=questions[state.step];
+    const selected=state.answers[question.key];
+    stage.innerHTML = `
+      <section class="cx-advisor">
+        <header class="cx-progress"><button id="cx-back" type="button" ${state.step===0?'disabled':''}>${icons.back}<span>Späť</span></button><div>${questions.map((_,index)=>`<i class="${index<=state.step?'is-on':''}"></i>`).join('')}</div><b>${state.step+1}/4</b></header>
+        <div class="cx-advisor-body">
+          <span class="cx-kicker">${esc(question.kicker)}</span><h2>${esc(question.title)}</h2>
+          <div class="cx-options">${question.options.map((option,index)=>`<button style="--cx-reveal:${index*70}ms" class="cx-option ${selected===option.value?'is-selected':''}" data-value="${option.value}" type="button" aria-pressed="${selected===option.value}"><span class="cx-option-photo${optionMarks[option.value]?' cx-option-photo--mark':''}">${optionMarks[option.value] || `<img src="${option.image}" alt="" referrerpolicy="no-referrer" loading="lazy" onerror="this.closest('.cx-option-photo')?.setAttribute('data-image-failed','true')">`}</span><span class="cx-option-copy"><b>${esc(option.title)}</b><small>${esc(option.text)}</small></span><i>${icons.check}</i></button>`).join('')}</div>
+        </div>
+      </section>`;
+    stage.querySelector('#cx-back')?.addEventListener('click',()=>{
+      if(state.step===0||state.transitioning) return;
+      state.transitioning=true;
+      stage.querySelector('.cx-advisor-body')?.classList.add('is-leaving');
+      setTimeout(()=>{state.step-=1;state.transitioning=false;renderAdvisor();},190);
+    });
+    stage.querySelectorAll('.cx-option').forEach((button)=>button.addEventListener('click',()=>{
+      if(state.transitioning) return;
+      state.transitioning=true;
+      state.answers[question.key]=button.dataset.value;
+      stage.querySelectorAll('.cx-option').forEach((item)=>{const on=item===button;item.classList.toggle('is-selected',on);item.setAttribute('aria-pressed',String(on));item.disabled=true;});
+      // Hold on the confirmed answer, then leave and enter. Replacing the
+      // markup outright is what made a step look like it jumped.
+      setTimeout(()=>{
+        stage.querySelector('.cx-advisor-body')?.classList.add('is-leaving');
+        setTimeout(()=>{
+          if(state.step<questions.length-1){state.step+=1;state.transitioning=false;renderAdvisor();}
+          else {chooseResult();state.transitioning=false;renderResult();}
+        },190);
+      },340);
+    }));
+  }
+
+  /* The answers are stored as tokens because that is what scoring needs. The
+     result says which of them this product actually matched, the way the coffee
+     result names the notes it was picked for. */
+  const ANSWER_LABELS = {
+    dry:'suchá pleť', oily:'mastenie', sensitive:'citlivá pleť', balanced:'zmiešaná pleť',
+    hydrate:'hydratácia', calm:'upokojenie', clarity:'nedokonalosti', mature:'zrelá pleť',
+    simple:'jeden krok', basic:'2–3 kroky', full:'celá rutina', target:'cielený krok',
+    cream:'krém', serum:'sérum', oil:'olej'
+  };
+
+  const matchedLabels = (product) => questions
+    .map((question) => state.answers[question.key])
+    .filter((answer) => answer && answer !== 'any' && product.tags.includes(answer))
+    .map((answer) => ANSWER_LABELS[answer])
+    .filter(Boolean);
+
+  /* The card used to show the same brand photograph whatever the advisor
+     picked, so the recommendation never looked like the thing you would buy.
+     A brand that ships its own packshots names one per product. */
+  function renderResult() {
+    const product=state.result;
+    const alt=state.alternative;
+    stage.innerHTML=`
+      <section class="cx-result">
+        <header class="cx-progress"><button id="cx-result-back" type="button">${icons.back}<span>Späť</span></button><div>${questions.map(()=>'<i class="is-on"></i>').join('')}</div><b>Výsledok</b></header>
+        <div class="cx-result-body">
+          <span class="cx-kicker">Váš smer</span>
+          <article class="cx-product"><div class="cx-product-photo"><img src="${product.photo || brand.hero}" alt="${esc(product.name)}" referrerpolicy="no-referrer" onerror="this.closest('.cx-product-photo')?.setAttribute('data-image-failed','true')"></div><div class="cx-product-copy"><small>${esc(brand.name)}</small><h2>${esc(product.name)}</h2>${matchedLabels(product).length?`<div class="cx-product-tags">${matchedLabels(product).map((label)=>`<span>${esc(label)}</span>`).join('')}</div>`:''}<div class="cx-product-price"><strong>${esc(product.price)}</strong><a href="${product.url}" target="_blank" rel="noreferrer">Pozrieť produkt ${icons.arrow}</a></div></div></article>
+          <section class="cx-why"><small>Prečo práve toto</small><p>${esc(product.reason)}</p></section>
+          ${alt && alt.id!==product.id ? `<article class="cx-alt"><span>${icons.leaf}</span><div><small>Alternatíva</small><b>${esc(alt.name)}</b></div><a href="${alt.url}" target="_blank" rel="noreferrer" aria-label="Pozrieť alternatívu">${icons.arrow}</a></article>`:''}
+          <p class="cx-result-note">Výber je orientačný podľa preferencií, nie zdravotná diagnóza.</p>
+          <button class="cx-restart" id="cx-restart" type="button">Vybrať znova</button>
+        </div>
+      </section>`;
+    stage.querySelector('#cx-result-back').addEventListener('click',()=>{state.result=null;state.alternative=null;state.step=3;renderAdvisor();});
+    stage.querySelector('#cx-restart').addEventListener('click',resetAdvisor);
+  }
+
+  function resetAdvisor(){state.step=0;state.answers={};state.result=null;state.alternative=null;state.transitioning=false;renderAdvisor();}
+  function resetAll(){state.generation=(state.generation||0)+1;state.step=0;state.answers={};state.result=null;state.alternative=null;state.interacted=false;state.busy=false;state.transitioning=false;state.messages=[{role:'assistant',text:document.documentElement.lang==='cs'?'Dobrý den. Vybírejte z nabídky '+brand.name+'. Napište, jaký produkt hledáte, nebo otevřete Výběr.':'Dobrý deň. Vyberajte z ponuky '+brand.name+'. Napíšte, aký produkt hľadáte, alebo otvorte Výber.'}];setMode('chat');}
+
+  root.querySelectorAll('[data-open]').forEach((button)=>button.addEventListener('click',()=>openWidget(button.dataset.open)));
+
+  root.querySelector('#cx-open').addEventListener('click',()=>openWidget('chat'));
+  root.querySelector('#cx-teaser').addEventListener('click',()=>openWidget('advisor'));
+  root.querySelector('#cx-close').addEventListener('click',closeWidget);
+  root.querySelector('#cx-reset').addEventListener('click',resetAll);
+  backdrop.addEventListener('click',closeWidget);
+  modeButtons.forEach((button)=>button.addEventListener('click',()=>setMode(button.dataset.mode)));
+  document.addEventListener('keydown',(event)=>{if(event.key==='Escape'&&state.open)closeWidget();});
+
+  document.documentElement.dataset.cosmeticsReady='true';
+  renderChat();
+})();

@@ -1,0 +1,223 @@
+/* Last layer, shared by the wine, skincare and hair demos (same file in every
+   project). Contrast and state fixes from the October review: nothing here
+   changes products, scoring or links. Loaded after every older layer. */
+
+/* ---------- Owner page ---------- */
+a.cx-owner-contact { text-decoration: none; }
+.cx-owner-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 4px 2px;
+  border: 0;
+  background: none;
+  color: var(--cx-ink);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -.005em;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--cx-ink) 30%, transparent);
+  text-underline-offset: 4px;
+  cursor: pointer;
+  transition: text-decoration-color .15s ease, color .15s ease;
+}
+.cx-owner-more svg { width: 14px; height: 14px; transition: transform .15s ease; }
+.cx-owner-more:hover { text-decoration-color: currentColor; }
+.cx-owner-more:hover svg { transform: translateX(2px); }
+.cx-owner-more:focus-visible { outline: 2px solid var(--cx-accent); outline-offset: 3px; border-radius: 4px; }
+
+/* "Viac info" sheet: the old offer shell, a list without the price block. */
+.cx-more .cx-offer-card ul { margin-bottom: 22px; }
+.cx-more .cx-offer-card li b { font-size: 13.5px; }
+.cx-more .cx-offer-card li small { font-size: 12px; line-height: 1.45; }
+.cx-more .cx-offer-card li svg {
+  flex: 0 0 auto;
+  color: #fff;
+  background: var(--cx-accent);
+  border-radius: 50%;
+}
+.cx-more .cx-offer-cta { text-decoration: none; }
+
+/* One readable photograph instead of four thumbnails. */
+body[data-cx-hero-single] .cx-owner-visual {
+  background: var(--cx-hero-bg, #fff) !important;
+}
+body[data-cx-hero-single] .cx-owner-visual img {
+  object-fit: contain !important;
+  object-position: center !important;
+  padding: 3% !important;
+  background: var(--cx-hero-bg, #fff) !important;
+  box-sizing: border-box;
+}
+body[data-cx-hero-single][data-cx-hero-fill] .cx-owner-visual img {
+  object-fit: cover !important;
+  padding: 0 !important;
+}
+
+/* ---------- Launcher ----------
+   Never pale at rest. The hover colour is set per brand by ukazky-final.js
+   (another brand colour, or a deeper shade of the rest colour). */
+body[data-cx-launch] #cx-open#cx-open.cx-launcher-button {
+  background-color: var(--cx-l-bg) !important;
+  background-image: none !important;
+  box-shadow: 0 10px 26px -10px color-mix(in srgb, var(--cx-l-bg) 70%, #000), 0 2px 6px rgba(0, 0, 0, .08) !important;
+}
+body[data-cx-launch] #cx-open#cx-open.cx-launcher-button .cx-new-mark--color {
+  background-image: var(--cx-l-img) !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  body[data-cx-launch] #cx-open#cx-open.cx-launcher-button:hover {
+    background-color: var(--cx-l-hover) !important;
+  }
+  body[data-cx-launch] #cx-open#cx-open.cx-launcher-button:hover .cx-new-mark--color {
+    background-image: var(--cx-l-img-hover, var(--cx-l-img)) !important;
+  }
+}
+/* Brand symbol replaced by a chat bubble or by the full short name. */
+body[data-cx-launch] #cx-open#cx-open .cx-new-mark.cx-mark-swap,
+body[data-cx-launch] .cx-message-avatar .cx-new-mark.cx-mark-swap {
+  background-color: var(--cx-l-fg, #fff) !important;
+  -webkit-mask: var(--cx-mark) center / contain no-repeat !important;
+  mask: var(--cx-mark) center / contain no-repeat !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  body[data-cx-launch] #cx-open#cx-open:hover .cx-new-mark.cx-mark-swap {
+    background-color: var(--cx-l-fg-hover, var(--cx-l-fg, #fff)) !important;
+  }
+}
+body[data-cx-launch] #cx-open#cx-open .cx-new-mark.cx-mark-swap--wide {
+  width: 44px !important;
+  height: 24px !important;
+}
+body[data-cx-launch] .cx-message-avatar .cx-new-mark.cx-mark-swap--wide {
+  width: 22px !important;
+  height: 12px !important;
+}
+body[data-cx-launch][data-cx-mark-swap] #cosmetics-root .cx-message-avatar {
+  background: var(--cx-l-bg) !important;
+}
+
+/* ---------- Chat ----------
+   A quiet single tint per side, so a message never reads as background. */
+#cosmetics-root .cx-message--assistant .cx-bubble {
+  background: color-mix(in srgb, var(--cx-accent) 6%, #fff) !important;
+  border: 1px solid color-mix(in srgb, var(--cx-accent) 17%, var(--cx-line)) !important;
+  color: var(--cx-ink) !important;
+  box-shadow: none !important;
+}
+#cosmetics-root .cx-message--user .cx-bubble {
+  background: color-mix(in srgb, var(--cx-brand) 11%, #fff) !important;
+  border: 1px solid color-mix(in srgb, var(--cx-brand) 22%, transparent) !important;
+  color: var(--cx-ink) !important;
+  box-shadow: none !important;
+}
+
+/* ---------- Advisor options ----------
+   Hover: a clear brand border. Selected: tinted card, brand border drawn
+   inside (no size change, no glow) and a filled check. */
+#cosmetics-root .cx-option {
+  border-color: color-mix(in srgb, var(--cx-ink) 13%, var(--cx-line)) !important;
+  box-shadow: none !important;
+  transition: border-color .15s ease, background-color .15s ease, transform .15s ease !important;
+}
+@media (hover: hover) and (pointer: fine) {
+  #cosmetics-root .cx-option:not(.is-selected):not(:disabled):hover {
+    border-color: color-mix(in srgb, var(--cx-brand) 55%, var(--cx-line)) !important;
+    transform: translateY(-1px);
+  }
+}
+#cosmetics-root .cx-option.is-selected {
+  border-color: var(--cx-accent) !important;
+  background: color-mix(in srgb, var(--cx-accent) 9%, #fff) !important;
+  box-shadow: inset 0 0 0 1px var(--cx-accent) !important;
+  transform: none !important;
+}
+#cosmetics-root .cx-option.is-selected .cx-option-copy {
+  background: transparent !important;
+}
+#cosmetics-root .cx-option.is-selected .cx-option-copy b { color: var(--cx-ink) !important; }
+#cosmetics-root .cx-option.is-selected > i {
+  background: var(--cx-accent) !important;
+  color: #fff !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .18) !important;
+}
+#cosmetics-root .cx-option:focus-visible {
+  outline: 2px solid var(--cx-accent) !important;
+  outline-offset: 2px;
+}
+/* Same photo height on every card of a step, whatever the caption length. */
+#cosmetics-root .cx-option .cx-option-copy { min-height: var(--cx-copy-h, 0px); box-sizing: border-box; }
+
+/* ---------- Result ---------- */
+#cosmetics-root .cx-product,
+#cosmetics-root .cx-routine-card,
+#cosmetics-root .cx-alt {
+  border: 1px solid color-mix(in srgb, var(--cx-accent) 26%, var(--cx-line)) !important;
+}
+#cosmetics-root .cx-product-price strong {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 11px;
+  border: 1px solid color-mix(in srgb, var(--cx-accent) 34%, var(--cx-line));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--cx-accent) 6%, #fff);
+  color: var(--cx-ink) !important;
+}
+#cosmetics-root .cx-product-tags span {
+  border-color: color-mix(in srgb, var(--cx-ink) 18%, var(--cx-line)) !important;
+}
+#cosmetics-root .cx-alt > a,
+#cosmetics-root .cx-routine-card a {
+  border: 1px solid color-mix(in srgb, var(--cx-ink) 14%, var(--cx-line)) !important;
+}
+#cosmetics-root .cx-restart {
+  border: 1px solid color-mix(in srgb, var(--cx-ink) 14%, var(--cx-line)) !important;
+}
+#cosmetics-root .cx-composer {
+  border-color: color-mix(in srgb, var(--cx-ink) 18%, var(--cx-line)) !important;
+}
+
+/* ---------- Phone owner page ----------
+   The frame and the launcher were hidden below 760px, which left an empty
+   band between the buttons and the price. One product photograph fills it,
+   and the launcher is visible the way it would be on the client's own shop
+   (without the teaser bubble, which would cover the price card). */
+@media (max-width: 760px) {
+  body[data-cx-hero-single] .cx-owner-hero {
+    grid-template-rows: auto minmax(0, 1fr) !important;
+    min-height: 0 !important;
+  }
+  body[data-cx-hero-single] .cx-owner-frame {
+    display: block !important;
+    min-height: 0 !important;
+    height: 100% !important;
+    padding: 0 0 12px !important;
+    box-sizing: border-box !important;
+  }
+  body[data-cx-hero-single] .cx-owner-frame .cx-keeps { display: none !important; }
+  body[data-cx-hero-single] .cx-owner-visual {
+    height: 100% !important;
+    min-height: 120px !important;
+    max-height: 300px !important;
+    border-radius: 20px !important;
+  }
+  body[data-cosmetics-demo] .cx-launcher { display: block !important; }
+  body[data-cosmetics-demo] .cx-launcher .cx-teaser { display: none !important; }
+}
+body.cx-offer-open .cx-launcher { visibility: hidden !important; }
+
+/* Keyboard focus: a visible ring on every control of the page and widget. */
+#cosmetics-root :is(button, a, input):focus-visible {
+  outline: 2px solid var(--cx-accent) !important;
+  outline-offset: 2px !important;
+}
+body[data-cosmetics-demo] #cx-open#cx-open:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--cx-l-bg, var(--cx-accent)) 55%, #fff) !important;
+  outline-offset: 3px !important;
+}
+
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-option.cx-option .cx-option-photo[data-use-photo]{padding:0!important;}
+body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-option.cx-option .cx-option-photo[data-use-photo] img{object-fit:cover!important;padding:0!important;width:100%!important;height:100%!important;transform:none!important;}

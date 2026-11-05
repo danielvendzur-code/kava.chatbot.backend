@@ -1,0 +1,13 @@
+/* Gentle interaction feedback, with no layout or selection timing changes. */
+@media(prefers-reduced-motion:no-preference){
+ :is(.cx-option,.cx-quality-product,.cx-product,[role="dialog"] .option){transition:border-color 160ms ease,box-shadow 160ms ease,background-color 160ms ease!important}
+ :is(.cx-option-photo img,.cx-quality-product-photo img){transition:transform 220ms ease-out!important}
+ :is(.cx-mode button,[role="dialog"] button,.cx-primary,.cx-secondary){transition:background-color 160ms ease,color 160ms ease,box-shadow 160ms ease!important}
+ @media(hover:hover) and (pointer:fine){
+  :is(.cx-option,[role="dialog"] .option):hover{box-shadow:0 3px 10px rgb(0 0 0 / .07)!important}
+  .cx-option:hover .cx-option-photo img{transform:scale(1.015)!important}
+ }
+}
+@media(prefers-reduced-motion:reduce){
+ :is(.cx-option,.cx-quality-product,.cx-product,.cx-option-photo img,.cx-quality-product-photo img,.cx-mode button,[role="dialog"] .option){transition:none!important;animation:none!important}
+}

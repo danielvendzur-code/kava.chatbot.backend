@@ -1,0 +1,3 @@
+(()=>{const data=window.COSMETICS_DEMOS;for(const [slug,c]of Object.entries(globalThis.CX_CATALOGUES||{})){const b=data?.brands?.[slug];if(b){if(c.brandOverride)Object.assign(b,c.brandOverride);b.catalogue=c.products;b.catalogueVerifiedAt=c.verifiedAt;}}window.CX_CATALOGUE_REPLY=(slug,text,history=[])=>globalThis.CXCatalogueReplyCore?.(globalThis.CX_CATALOGUES||{},slug,text,history)||'';})();
+
+(()=>{const previous=window.CX_CATALOGUE_REPLY;window.CX_CATALOGUE_REPLY=(slug,text,history=[])=>["andreine"].includes(slug)?globalThis.CXHeldReply(globalThis.CX_CATALOGUES[slug],text,history).text:previous?.(slug,text,history);})();

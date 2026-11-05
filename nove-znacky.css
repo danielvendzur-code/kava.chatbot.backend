@@ -1,0 +1,69 @@
+/* New demos: brand symbol in the launcher and chat avatars (see nove-znacky.js). */
+body[data-cx-new-mark] .cx-launcher-button.cx-launcher-has-new-mark {
+  border: 0 !important;
+  outline: 0 !important;
+  background-image: none !important;
+  background-color: var(--cx-brand) !important;
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cx-new-mark] .cx-launcher-button.cx-launcher-has-new-mark:hover {
+    background-color: var(--cx-accent) !important;
+  }
+}
+body[data-cx-new-mark] .cx-new-mark {
+  display: block !important;
+  width: 40px !important;
+  height: 40px !important;
+  margin: auto !important;
+  background-color: #fff !important;
+  -webkit-mask: var(--cx-mark) center / contain no-repeat;
+  mask: var(--cx-mark) center / contain no-repeat;
+}
+body[data-cx-new-mark] .cx-message-avatar .cx-new-mark {
+  width: 22px !important;
+  height: 22px !important;
+}
+/* Multi-colour symbol (Biorythme mandala): own colours on a light launcher,
+   reversed colours on a dark one while hovered. */
+body[data-cx-new-mark-color] #cx-open .cx-new-mark--color {
+  width: 46px !important;
+  height: 46px !important;
+}
+body[data-cx-new-mark-color] .cx-new-mark--color {
+  background: var(--cx-mark) center / contain no-repeat !important;
+  -webkit-mask: none;
+  mask: none;
+}
+/* The id outranks the older per-demo launcher colour rules. */
+body[data-cx-new-mark-color] #cx-open.cx-launcher-button.cx-launcher-has-new-mark {
+  background-color: var(--cx-mark-bg) !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .16), inset 0 0 0 1px rgba(0, 0, 0, .06) !important;
+  transition: background-color .2s ease;
+}
+body[data-cx-new-mark-color] #cosmetics-root .cx-message-avatar {
+  background: var(--cx-mark-bg) !important;
+  box-shadow: inset 0 0 0 1px var(--cx-line);
+}
+@media (hover:hover) and (pointer:fine) {
+  body[data-cx-new-mark-color] #cx-open.cx-launcher-button.cx-launcher-has-new-mark:hover {
+    background-color: var(--cx-mark-bg-hover) !important;
+  }
+  body[data-cx-new-mark-color] #cx-open.cx-launcher-has-new-mark:hover .cx-new-mark--color {
+    background-image: var(--cx-mark-reverse) !important;
+  }
+}
+/* Brands whose logo is a word, not a symbol: the whole word, sized to width. */
+body[data-cx-new-mark] .cx-new-mark--wide {
+  width: 50px !important;
+  height: 26px !important;
+}
+body[data-cx-new-mark] .cx-message-avatar .cx-new-mark--wide {
+  width: 25px !important;
+  height: 14px !important;
+}
+
+/* Per-brand logo sizes for the hair demos. */
+/* Medarek: thin script with the bee to the right; reads small at the default height. */
+body[data-cosmetics-demo="medarek"] .cx-owner-brand .cx-logo {
+  max-height: 52px !important;
+}
