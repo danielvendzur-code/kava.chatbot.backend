@@ -1165,6 +1165,36 @@
      "Sváteční vůně"
     ]
    }
+  },
+  "mamacoffee": {
+   "type": "coffee",
+   "name": "mamacoffee",
+   "country": "CZ",
+   "logos": {
+    "landing": "/assets/s3/mamacoffee/logo.png",
+    "header": "/assets/s3/mamacoffee/logo-header.png",
+    "avatar": "/assets/s3/mamacoffee/mark.png"
+   }
+  },
+  "voznice": {
+   "type": "coffee",
+   "name": "Pražírna Voznice",
+   "country": "CZ",
+   "logos": {
+    "landing": "/assets/s3/voznice/logo.png",
+    "header": "/assets/s3/voznice/logo.png",
+    "avatar": "/assets/s3/voznice/mark.png"
+   }
+  },
+  "ceskava": {
+   "type": "coffee",
+   "name": "Českáva",
+   "country": "CZ",
+   "logos": {
+    "landing": "/assets/s3/ceskava/logo.png",
+    "header": "/assets/s3/ceskava/logo.png",
+    "avatar": "/assets/s3/ceskava/mark.png"
+   }
   }
  }
 }
