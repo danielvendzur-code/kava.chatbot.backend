@@ -6,6 +6,7 @@
  "lang": "cs",
  "checkedAt": "2026-11-05",
  "beansOnly": true,
+ "altFallback": true,
  "demo": {
   "heroProductId": "baseline-coffee"
  },

@@ -42,11 +42,13 @@ for p in ps:
         'prepText': ', '.join(sorted(cats & {'Moderné espresso', 'Tradičné zmesi', 'Filtrovaná káva'})), 'taste': taste, 'tastes': [taste],
         'tasteSource': 'odvodené z chuťového profilu e-shopu', 'notes': notes, 'origin': origin, 'region': 'blend' if blend else REG.get(country),
         'process': process_label(' / '.join(dict.fromkeys(x.strip() for x in f('Spracovanie').split('/')))), 'variety': f('Odroda') or None,
-        'summary': sentences(txt(p['short_description'] or p['description']), 2) or (name + ': ' + ', '.join(notes) + '.'), 'priceFrom': vs[0]['price'], 'priceTo': vs[-1]['price'],
+        'summary': sentences(txt(p['short_description'] or p['description']), 2) or ' '.join(x for x in [
+            (f('Krajina pôvodu') + '.') if f('Krajina pôvodu') else '', ('Odroda ' + f('Odroda') + '.') if f('Odroda') else '',
+            ('Spracovanie: ' + f('Spracovanie').lower() + '.') if f('Spracovanie') else '', ('Cupping skóre ' + f('Cupping skóre') + '.') if f('Cupping skóre') else ''] if x), 'priceFrom': vs[0]['price'], 'priceTo': vs[-1]['price'],
         'weights': [v['grams'] for v in vs], 'variants': vs, 'checkedAt': CHECKED,
         'source': {'url': p['permalink'], 'verifiedAt': CHECKED, 'facts': 'Krajina pôvodu, Odroda, Spracovanie, Praženie, Chuťový profil (produktová stránka); kategórie e-shopu'}})
     if decaf: products[-1]['decafNote'] = 'Bezkofeínová káva podľa pražiarne.'
-DATA = {'slug': SLUG, 'lang': 'sk', 'checkedAt': CHECKED, 'beansOnly': True, 'demo': {'heroProductId': products[0]['id']},
+DATA = {'slug': SLUG, 'lang': 'sk', 'checkedAt': CHECKED, 'beansOnly': True, 'altFallback': True, 'demo': {'heroProductId': products[0]['id']},
   'brand': {'name': 'MLSNACAVA', 'legal': 'STACOMB, s.r.o.', 'place': 'MLSNACAVA · pražiareň výberovej kávy, Banská Bystrica', 'shopUrl': 'https://mlsnacava.sk/obchod/',
             'web': 'https://mlsnacava.sk/', 'logo': '/assets/s3/mlsnacava/logo.png', 'hero': products[0]['photo'], 'contact': 'support@stacomb.sk', 'contactSource': 'https://mlsnacava.sk/kontakt/',
             'theme': {'ink': '#1b1b1b', 'brand': '#1b1b1b', 'accent': '#f26357', 'soft': '#f6f1ec', 'paper': '#ffffff'}},

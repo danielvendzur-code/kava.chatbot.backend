@@ -6,6 +6,7 @@
  "lang": "cs",
  "checkedAt": "2026-11-05",
  "beansOnly": true,
+ "altFallback": true,
  "demo": {
   "heroProductId": "core-of-espresso"
  },
@@ -564,7 +565,8 @@
     "url": "https://beansmiths.com/produkt/holy-esko/",
     "verifiedAt": "2026-11-05",
     "facts": "Acidita, Chutě, Země původu (atributy e-shopu); Oblast, Odrůda, Metoda zpracování, Chuťový profil, Doporučená příprava (krátky popis produktu)"
-   }
+   },
+   "profile": "čokoládová, ovocná (chutě podle e-shopu)"
   },
   {
    "id": "pe-de-cedro",

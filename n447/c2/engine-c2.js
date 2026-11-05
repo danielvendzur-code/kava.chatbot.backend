@@ -415,7 +415,11 @@
     const packs = verifiedPacks(product, a).map((v) => ({label: grams(v.grams), price: money(v.price, product.currency), chosen: v === pack, over: limit !== null && v.price + (addon ? addon.price : 0) > limit + EPS}));
     const facts = [[t.fOrigin, product.origin, 'origin'], [t.fProcess, product.process, 'process'], [t.fRoast, roastLabel, 'roast'], [t.fComp, product.compositionText, 'comp']].filter((x) => x[1]);
     const same = pool(data, a, 'pick').filter((p) => p.id !== product.id);
-    const alt = same[0] || null;
+    /* s3 (iba dáta s altFallback): keď je káva pre odpovede jediná, ukáže sa najbližšia vhodná pre rovnakú prípravu a kofeín;
+       BLACK a Nordbeans príznak nemajú, ich výsledok sa nemení. */
+    const relaxed = !same.length && data.altFallback ? pool(data, {prep: a.prep, tool: a.tool, caffeine: a.caffeine}).filter((p) => p.id !== product.id)
+      .sort((x, y) => (tastesOf(y).includes(a.taste) ? 1 : 0) - (tastesOf(x).includes(a.taste) ? 1 : 0)) : [];
+    const alt = same[0] || relaxed[0] || null;
     const alternative = alt ? {product: alt, diff: differences(data, product, alt, a), price: priceLine(data, alt, a)} : null;
     const filterAll = a.prep === 'filter' && !a.tool ? (data.lang === 'cs'
       ? {title: 'Co dál: mletí podle pomůcky', items: ['V60 a jiný překapávač: ' + (beans ? 'umelte středně jemně' : '„' + ((data.grindLabels || {}).v60 || 'mletá drip') + '“') + '.', 'AeroPress: ' + (beans ? 'umelte středně jemně' : '„' + ((data.grindLabels || {}).aeropress || 'mletá aeropress') + '“') + '.', 'French press: ' + (beans ? 'umelte nahrubo' : '„' + ((data.grindLabels || {}).frenchpress || 'mletá french press') + '“') + '.'], link: data.guides && data.guides.v60 ? {href: data.guides.v60.url, label: data.guides.v60.title} : null}

@@ -50,10 +50,11 @@ for p in ps:
             'priceFrom': min(v['price'] for v in variants), 'priceTo': max(v['price'] for v in variants), 'weights': [v['grams'] for v in variants],
             'variants': variants, 'checkedAt': CHECKED,
             'source': {'url': p['permalink'], 'verifiedAt': CHECKED, 'facts': 'Acidita, Chutě, Země původu (atributy e-shopu); Oblast, Odrůda, Metoda zpracování, Chuťový profil, Doporučená příprava (krátky popis produktu)'}}
+    if not notes and attrs.get('Chutě'): prod['profile'] = ', '.join(attrs['Chutě']).lower() + ' (chutě podle e-shopu)'
     if decaf: prod['decafNote'] = 'Bez kofeinu podle pražírny (' + field(sd, 'Metoda zpracování') + ').'
     if automat: prod['packNote'] = 'Pražírna ji praží tak, aby se dobře vyextrahovala i v automatickém kávovaru.'
     products.append(prod)
-DATA = {'slug': SLUG, 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'demo': {'heroProductId': 'core-of-espresso'},
+DATA = {'slug': SLUG, 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'altFallback': True, 'demo': {'heroProductId': 'core-of-espresso'},
   'brand': {'name': "Beansmith's", 'legal': "Beansmith's", 'place': "Beansmith's · pražírna výběrové kávy", 'shopUrl': 'https://beansmiths.com/kategorie-produktu/kava/',
             'web': 'https://beansmiths.com/', 'logo': '/assets/s3/beansmiths/logo.png', 'hero': '/assets/s3/beansmiths/core-of-espresso.jpg',
             'contact': 'roastery@beansmiths.com', 'contactSource': 'https://beansmiths.com/kontakt/',

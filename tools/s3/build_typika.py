@@ -33,7 +33,7 @@ for p in ps:
         'process': process_label(f('ZPRACOVÁNÍ')) if not blend else 'Brazílie suché zpracování, Guatemala promyté (natural / washed)', 'variety': f('ODRŮDA') or None,
         'summary': sentences(desc, 2), 'priceFrom': min(v['price'] for v in vs), 'priceTo': max(v['price'] for v in vs), 'weights': [v['grams'] for v in vs], 'variants': vs, 'checkedAt': CHECKED,
         'source': {'url': f"{WEB}/products/{p['handle']}", 'verifiedAt': CHECKED, 'facts': 'Chuťový profil, zpracování, region, odrůda (popis produktu); pražení podle názvu (FILTER / ESPRESSO Roast)'}})
-DATA = {'slug': SLUG, 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'demo': {'heroProductId': 'baseline-coffee'},
+DATA = {'slug': SLUG, 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'altFallback': True, 'demo': {'heroProductId': 'baseline-coffee'},
   'brand': {'name': 'TYPIKA', 'legal': 'TYPIKA', 'place': 'TYPIKA · výběrová káva Praha', 'shopUrl': 'https://typika.coffee/collections/all', 'web': 'https://typika.coffee/',
             'logo': '/assets/s3/typika/logo.png', 'hero': '/assets/s3/typika/baseline-coffee.jpg', 'contact': 'info@typika.coffee', 'contactSource': 'https://typika.coffee/pages/kontakt',
             'theme': {'ink': '#1a1a1a', 'brand': '#1a1a1a', 'accent': '#1a1a1a', 'soft': '#f3f0ea', 'paper': '#ffffff'}},

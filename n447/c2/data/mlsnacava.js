@@ -6,6 +6,7 @@
  "lang": "sk",
  "checkedAt": "2026-11-05",
  "beansOnly": true,
+ "altFallback": true,
  "demo": {
   "heroProductId": "espresso-rwanda-impinga-550"
  },
@@ -94,7 +95,7 @@
    "region": "africa",
    "process": "Mokré (washed)",
    "variety": "Red Bourbon",
-   "summary": "Espresso: Rwanda Impinga 550: pomaranč, citrón, mandle, hnedý cukor, kakao.",
+   "summary": "Rusizi, West Rwanda. Odroda Red Bourbon. Spracovanie: mokré. Cupping skóre 85,25.",
    "priceFrom": 14.0,
    "priceTo": 47.0,
    "weights": [
@@ -158,7 +159,7 @@
    "region": "americas",
    "process": "Naturálne (natural)",
    "variety": "Castillo",
-   "summary": "Decaff: Colombia Atunkaa – bezkofeínová káva: čierny čaj, čučoriedky, tmavá čokoláda.",
+   "summary": "Argelia, Cauca, Kolumbia. Odroda Castillo. Spracovanie: naturálne. Cupping skóre 84,5.",
    "priceFrom": 16.0,
    "priceTo": 58.0,
    "weights": [
@@ -224,7 +225,7 @@
    "region": "americas",
    "process": "Naturálne (natural)",
    "variety": "Caturra",
-   "summary": "Filter: Peru Jose Elmer Tineo Mendoza: broskyňa, karamel, čokoláda, mango, mandarinka.",
+   "summary": "El Diamante, Jaen, Peru. Odroda Caturra. Spracovanie: naturálne. Cupping skóre 85,75.",
    "priceFrom": 17.0,
    "priceTo": 62.0,
    "weights": [
@@ -290,7 +291,7 @@
    "region": "africa",
    "process": "Mokré (washed)",
    "variety": "74110, 74112",
-   "summary": "Espresso: Ethiopia Gotiti: jahoda, černica, marhuľa, pomarančová kôra, med, jazmín.",
+   "summary": "Etiópia, G1 Gotiti, South Region. Odroda 74110, 74112. Spracovanie: mokré. Cupping skóre 87,25.",
    "priceFrom": 16.0,
    "priceTo": 56.0,
    "weights": [
@@ -353,7 +354,7 @@
    "region": "americas",
    "process": "Naturálne (natural)",
    "variety": "Acaiá",
-   "summary": "Espresso: Brazil Monteiro Lobato: karamel, lieskovce, mliečna čokoláda.",
+   "summary": "Brazília. Odroda Acaiá. Spracovanie: naturálne. Cupping skóre 83,5.",
    "priceFrom": 12.0,
    "priceTo": 42.0,
    "weights": [
@@ -418,7 +419,7 @@
    "region": "africa",
    "process": "Mokré (washed)",
    "variety": "74110, 74112",
-   "summary": "Filter: Ethiopia Gotiti: jahoda, černica, pomarančová kôra, marhuľa, jazmín.",
+   "summary": "Etiópia, G1 Gotiti, South Region. Odroda 74110, 74112. Spracovanie: mokré. Cupping skóre 87,25.",
    "priceFrom": 16.0,
    "priceTo": 56.0,
    "weights": [
@@ -482,7 +483,7 @@
    "region": "americas",
    "process": "Mokré (washed)",
    "variety": "Bourbon, Caturra",
-   "summary": "Espresso: Guatemala La Bolsa: kiwi, zelené jablko, karamel, čierny čaj.",
+   "summary": "La Libertad, Guatemala. Odroda Bourbon, Caturra. Spracovanie: mokré. Cupping skóre 85.",
    "priceFrom": 12.0,
    "priceTo": 42.0,
    "weights": [
@@ -546,7 +547,7 @@
    "region": "africa",
    "process": "Naturálne (natural)",
    "variety": "SL14, SL28 & Nyasaland",
-   "summary": "Espresso: Uganda Norman Boozy: čerešne, slivky, čierny čaj, karamel.",
+   "summary": "Upper Bukyabo, Uganda. Odroda SL14, SL28 & Nyasaland. Spracovanie: naturálne. Cupping skóre 84.",
    "priceFrom": 15.0,
    "priceTo": 53.0,
    "weights": [

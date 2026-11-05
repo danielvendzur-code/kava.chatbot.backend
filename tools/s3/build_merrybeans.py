@@ -44,7 +44,7 @@ for slug in sorted((cat['espresso'] | cat['filtr']) - {'merry-kapsle'}):
     products.append({'id': slug, 'kind': 'coffee', 'name': name, 'url': BASE + slug, 'photo': photo(SLUG, og and og.group(1), slug), 'photoRemote': False, 'currency': 'CZK',
         'available': True, 'decaf': decaf, 'preps': preps,
         'roastLabel': 'pražení na espresso i filtr' if len(preps) == 2 else 'pražení na espresso' if preps == ['espresso'] else 'pražení na filtr',
-        'prepText': (prip.group(1).strip() if prip else ', '.join(('espresso' if 'espresso' in p else 'filtr') for p in preps)), 'taste': taste, 'tastes': [taste],
+        'prepText': ' a '.join(('espresso' if p == 'espresso' else 'filtr') for p in preps) + ' (kategorie e-shopu)', 'prepNote': sentences(prip.group(1).strip(), 1, 200) if prip else '', 'taste': taste, 'tastes': [taste],
         'tasteSource': 'odvozeno z chuťového profilu e-shopu (pražírna kyselost neuvádí)', 'notes': notes,
         'origin': ' · '.join(x for x in [country, par.get('Farmář')] if x), 'region': 'blend' if not country else region_of([country]),
         'process': process_label(par.get('Metoda zpracování')), 'variety': par.get('Odrůda kávovníku'),
@@ -52,7 +52,7 @@ for slug in sorted((cat['espresso'] | cat['filtr']) - {'merry-kapsle'}):
         'weights': [v['grams'] for v in variants], 'variants': variants, 'checkedAt': CHECKED,
         'source': {'url': BASE + slug, 'verifiedAt': CHECKED, 'facts': 'Parametry (odrůda, zpracování, chuťový profil), Popis, Příprava; kategorie Káva na espresso / Káva na filtr'}})
     if decaf: products[-1]['decafNote'] = 'Bez kofeinu podle pražírny.'
-DATA = {'slug': SLUG, 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'demo': {'heroProductId': 'espresso-blend'},
+DATA = {'slug': SLUG, 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'altFallback': True, 'demo': {'heroProductId': 'espresso-blend'},
   'brand': {'name': 'Merrybeans', 'legal': 'Merrybeans s.r.o.', 'place': 'Merrybeans · pražírna výběrové kávy', 'shopUrl': 'https://www.merrybeans.cz/espresso',
             'web': 'https://www.merrybeans.cz/', 'logo': '/assets/s3/merrybeans/logo.png', 'hero': '/assets/s3/merrybeans/espresso-blend.jpg',
             'contact': 'info@merrybeans.cz', 'contactSource': 'https://www.merrybeans.cz/ (patička e-shopu)',

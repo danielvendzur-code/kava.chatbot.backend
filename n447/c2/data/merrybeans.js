@@ -6,6 +6,7 @@
  "lang": "cs",
  "checkedAt": "2026-11-05",
  "beansOnly": true,
+ "altFallback": true,
  "demo": {
   "heroProductId": "espresso-blend"
  },
@@ -78,7 +79,8 @@
     "espresso"
    ],
    "roastLabel": "pražení na espresso",
-   "prepText": "Pokud hledáte zcela neovocnou kávu, zvolte náš Espresso Blend. Pokud vám ale nějaká ovocnost v kávě vyhovuje, ale nechcete žádné super acidní džusíky, tohle je ta pravá volba!",
+   "prepText": "espresso (kategorie e-shopu)",
+   "prepNote": "Pokud hledáte zcela neovocnou kávu, zvolte náš Espresso Blend.",
    "taste": "fruitFull",
    "tastes": [
     "fruitFull"
@@ -143,7 +145,8 @@
     "espresso"
    ],
    "roastLabel": "pražení na espresso",
-   "prepText": "Vhodný na espresso v domácím i profi kávovaru, ideální pro milovníky kávy bez acidity. Jeho plná chuť vynikne jak čistě na espressu, tak v mléčných nápojích. Pro dosažení plné chuti je vhodné dodržení vyššího času extrakce, okolo 30 sekund. Doporučujeme připravovat minimálně 1 - 2 týdny od data pražení pro ty nejlepší chuťové vlastnosti.",
+   "prepText": "espresso (kategorie e-shopu)",
+   "prepNote": "Vhodný na espresso v domácím i profi kávovaru, ideální pro milovníky kávy bez acidity.",
    "taste": "choco",
    "tastes": [
     "choco"
@@ -209,7 +212,8 @@
     "filter"
    ],
    "roastLabel": "pražení na espresso i filtr",
-   "prepText": "Kávové třešně se po sklizni pečlivě třídí a zbavují dužiny. Zrna následně fermentují 36–48 hodin, poté se promývají čistou vodou a suší na vyvýšených afrických postelích. Promyté zpracování nechává vyniknout čistotě a jemným nuancím samotné kávy. V šálku vás čeká výrazná sladkost, šťavnaté maliny, květinové aroma a elegantní dochuť černého čaje. Káva, která je zároveň výrazná i jemná a jejíž sladkost se neztrácí ani vedle svěží ovocnosti.",
+   "prepText": "espresso a filtr (kategorie e-shopu)",
+   "prepNote": "Kávové třešně se po sklizni pečlivě třídí a zbavují dužiny.",
    "taste": "fresh",
    "tastes": [
     "fresh"
@@ -275,7 +279,8 @@
     "filter"
    ],
    "roastLabel": "pražení na filtr",
-   "prepText": "Šťavnatá káva s čistým čajovitým tělem, příjemnou aciditou a florálním podkresem.",
+   "prepText": "filtr (kategorie e-shopu)",
+   "prepNote": "Šťavnatá káva s čistým čajovitým tělem, příjemnou aciditou a florálním podkresem.",
    "taste": "fresh",
    "tastes": [
     "fresh"
@@ -342,7 +347,8 @@
     "filter"
    ],
    "roastLabel": "pražení na espresso i filtr",
-   "prepText": "Divoký filtr, divoký espresso, divoký všechno! Jen opatrně na přeextrahování, může pak hořknout.",
+   "prepText": "espresso a filtr (kategorie e-shopu)",
+   "prepNote": "Divoký filtr, divoký espresso, divoký všechno!",
    "taste": "fruitFull",
    "tastes": [
     "fruitFull"
@@ -407,7 +413,8 @@
     "espresso"
    ],
    "roastLabel": "pražení na espresso",
-   "prepText": "espresso",
+   "prepText": "espresso (kategorie e-shopu)",
+   "prepNote": "",
    "taste": "fruitFull",
    "tastes": [
     "fruitFull"
@@ -474,7 +481,8 @@
     "filter"
    ],
    "roastLabel": "pražení na espresso i filtr",
-   "prepText": "V šálku se potkává šťavnatost brusinek se sladkostí karamelových sušenek. Ovocnost dodává kávě příjemnou svěžest, zatímco sladký, sušenkový charakter ji krásně zakulacuje. Díky vyváženému chuťovému profilu si ji užiješ jak na filtru, tak i na espressu, které nabídne plnější šálek.",
+   "prepText": "espresso a filtr (kategorie e-shopu)",
+   "prepNote": "V šálku se potkává šťavnatost brusinek se sladkostí karamelových sušenek.",
    "taste": "fruitFull",
    "tastes": [
     "fruitFull"
@@ -538,7 +546,8 @@
     "filter"
    ],
    "roastLabel": "pražení na filtr",
-   "prepText": "Jednozačně na filtr, na espresso už by to bylo moc. A na filtru je to taky pořádně ulítlý, tak s tím počítejte. Ale jak jsme psali nahoře, je to k našim 3. narozkám, my jsme Merry a tohle kafe je taky pořádně merry!",
+   "prepText": "filtr (kategorie e-shopu)",
+   "prepNote": "Jednozačně na filtr, na espresso už by to bylo moc.",
    "taste": "fruitFull",
    "tastes": [
     "fruitFull"
@@ -592,7 +601,8 @@
     "espresso"
    ],
    "roastLabel": "pražení na espresso",
-   "prepText": "Šťavnaté a čisté espresso nebo prima mokka konvička. Na filtr bychom tohle kafíčko úplně nedoporučili.",
+   "prepText": "espresso (kategorie e-shopu)",
+   "prepNote": "Šťavnaté a čisté espresso nebo prima mokka konvička.",
    "taste": "fruitFull",
    "tastes": [
     "fruitFull"
@@ -657,7 +667,8 @@
     "filter"
    ],
    "roastLabel": "pražení na filtr",
-   "prepText": "Výsledkem je káva, která si zaslouží pomalejší přípravu a trochu pozornosti navíc. Doporučujeme filtr, například V60, případně jinou metodu, která nechá vyniknout jemné aromatice a vrstevnatosti šálku. Pracujte s kvalitní vodou (Aqua Bella vrt je fajn, mají např. Tescu či Kauflandu), čerstvě namletými zrny a klidně si dopřejte několik minut navíc na vychutnání, jak se káva s klesající teplotou proměňuje. U takového kousku totiž nejde jen o kofein, ale hlavně o zážitek. |V chuti se potkávají jemné tóny květin a sladkého ovoce, které doplňuje svěží citrusová acidita. Smetanová hebkost pak celý šálek příjemně zakulacuje. Elegantní a komplexní Geisha, u které stojí za to dát si na přípravě záležet a vychutnat si každý doušek.|Máme pro vás i dva recepty, co nám sedí nejvíc. Máme je vyladěné na Origami/V60 styl. Je lepší použít rychle tekoucí filtry, např. od Cafec, než klasické „V60“.|Recept 1 je sladší a plnější:|16,5 gramů kávy mleté spíše trochu hruběji. Na Comandante mlýnku cca 30 „kliků“, teplota vody 95°|60g bloom do 0:30|0:30 pour 140g (swirl) do celkové váhy 200g a času 1:50|1:50 dolít 50g do celkové váhy 240g a času 2:35|Recept 2 je víc \"bright\", acidnější a herbálnější: |16g kávy mleté na cca 28 \"kliků\" (comandante), teplota vody 95°|50g blom do 0:40, swirl (takové jemné zatočení dripperem)|+ 200g pour do 250 celkem, swirl a nechat prokapat do celkového času 2:20.|A kdybyste si nevěděli rady, klidně nám napište, rádi poradíme",
+   "prepText": "filtr (kategorie e-shopu)",
+   "prepNote": "Výsledkem je káva, která si zaslouží pomalejší přípravu a trochu pozornosti navíc.",
    "taste": "fresh",
    "tastes": [
     "fresh"
@@ -711,7 +722,8 @@
     "espresso"
    ],
    "roastLabel": "pražení na espresso",
-   "prepText": "Příjemné sladké espresso s fermentovanými tóny.",
+   "prepText": "espresso (kategorie e-shopu)",
+   "prepNote": "Příjemné sladké espresso s fermentovanými tóny.",
    "taste": "fruitFull",
    "tastes": [
     "fruitFull"
