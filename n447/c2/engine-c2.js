@@ -227,8 +227,17 @@
     pages.push(rest);
     return pages;
   }
+  /* s3a: ak e-shop ponúka kávy iba na jednu prípravu (napr. len espresso), otázka na prípravu by mala jedinú voľbu –
+     preskočí sa a príprava sa doplní automaticky (rovnaký výsledok, menej krokov). */
+  function onlyPrep(data) {
+    if (data.drip) return null;
+    const ks = Object.keys(PREP_ROASTS).filter((k) => pool(data, {prep: k}).length);
+    return ks.length === 1 ? ks[0] : null;
+  }
+  const withPrep = (data, a) => (!a.prep && onlyPrep(data)) ? Object.assign({}, a, {prep: onlyPrep(data)}) : a;
   function nextQuestion(data, a) {
     const t = L(data);
+    a = withPrep(data, a);
     if (!a.prep) {
       const options = Object.keys(PREP_ROASTS).filter((k) => pool(data, {prep: k}).length)
         .map((k) => ({value: k, title: t.prep[k][0], detail: t.prep[k][1], photo: PREP_PHOTO[k]}));
@@ -385,6 +394,7 @@
   }
 
   function result(data, a) {
+    a = withPrep(data, a);
     const t = L(data);
     if (a.prep === 'drip') {
       const d = data.drip, opt = d.options.find((o) => o.id === a.dripPick) || d.options[0];
