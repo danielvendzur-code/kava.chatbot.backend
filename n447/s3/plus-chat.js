@@ -14,7 +14,7 @@
   /* --- znak značky (kozmetika) --- */
   /* znaky sú uložené pri tomto skripte (rovnaký priečinok), nie na stránke firmy */
   const BASE = new URL('.', document.currentScript?.src || location.href).href;
-  const MARKS = {musk: {mark: BASE + 'marks/musk-mark.svg'}, malinna: {mark: BASE + 'marks/malinna-mark.png'}, bohemikus: {mark: BASE + 'marks/bohemikus-mark.png', avatar: BASE + 'marks/bohemikus-flower.png'}};
+  const MARKS = {tarani: {mark: '/assets/s3/tarani/logo.png'}, musk: {mark: BASE + 'marks/musk-mark.svg'}, malinna: {mark: BASE + 'marks/malinna-mark.png'}, bohemikus: {mark: BASE + 'marks/bohemikus-mark.png', avatar: BASE + 'marks/bohemikus-flower.png'}};
   const cosmeticSlug = String(window.N447_COSMETICS_SLUG || '');
   if (MARKS[cosmeticSlug]) {
     const m = MARKS[cosmeticSlug];

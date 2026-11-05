@@ -1,0 +1,6 @@
+/* TYPIKA – značkové tokeny na schválenom Jolka systéme (séria 3). */
+:root{--ink:#1a1a1a;--ink-2:#1a1a1a;--ink-3:#434343;--paper:#ffffff;--surface:#fff;--surface-2:#f3f0ea;--line:#e5e0d8;--line-strong:#d3ccc1;--kraft:#1a1a1a;--kraft-deep:#1a1a1a;--kraft-tint:#dfdfdf;--text:#1a1a1a;--text-2:#4f4f4f;--text-3:#808080;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.typika-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain;filter:brightness(0) invert(1)}
+body.typika-clean .widget__brand>img{width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important}
+body.typika-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.typika-clean .launcher__button img{width:46px!important;height:46px!important}

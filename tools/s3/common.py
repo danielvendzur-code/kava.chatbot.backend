@@ -54,8 +54,20 @@ def process_label(x):
     s = (x or '').strip(); l = s.lower()
     if not s: return None
     if re.search(r'honey', l): return s if 'honey' in l else s + ' (honey)'
-    nat = bool(re.search(r'natur|anaerob|carbonic|macer|fermen', l)); was = bool(re.search(r'promyt|praná|prané|washed|mytá', l))
+    nat = bool(re.search(r'natur|anaerob|carbonic|macer|fermen', l)); was = bool(re.search(r'promyt|premyt|mokr|praná|prané|washed|mytá', l))
     if nat and was: return s + ' (natural / washed)'
     if nat: return s if 'natural' in l else s + ' (natural)'
     if was: return s if 'washed' in l else s + ' (washed)'
     return s
+
+# Chuťová skupina z chuťového profilu e-shopu (keď pražiareň neuvádza kyslosť): rozhoduje prvý (hlavný) tón;
+# „čokoládová“ len keď čokoládové/orieškové tóny tvoria aspoň polovicu profilu.
+FRESH_RX = r'citr|limet|grep|grapefr|rybíz|ríbezl|ibiš|šíp|čaj|oolong|bergam|jasmín|květ|kvet|pomeranč|pomaranč|angrešt|egreš|broskev|broskyň|meruň|marhuľ|zelené jabl'
+CHOCO_RX = r'čokol|oříš|orieš|ořech|oriech|kakao|karamel|med\b|mandl|marcip|lískov|lieskov|melas|panel|sušenk|cukr'
+def taste_from_notes(notes):
+    if not notes: return None
+    first = notes[0].lower()
+    nch = sum(bool(re.search(CHOCO_RX, n.lower())) for n in notes)
+    if re.search(FRESH_RX, first): return 'fresh'
+    if re.search(CHOCO_RX, first) and nch * 2 >= len(notes): return 'choco'
+    return 'fruitFull'

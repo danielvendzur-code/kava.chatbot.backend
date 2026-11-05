@@ -1,0 +1,6 @@
+/* MLSNACAVA – značkové tokeny na schválenom Jolka systéme (séria 3). */
+:root{--ink:#1b1b1b;--ink-2:#1b1b1b;--ink-3:#444444;--paper:#ffffff;--surface:#fff;--surface-2:#f6f1ec;--line:#e5e0d8;--line-strong:#d3ccc1;--kraft:#f26357;--kraft-deep:#f26357;--kraft-tint:#fde9e7;--text:#1b1b1b;--text-2:#4f4f4f;--text-3:#808080;--on-ink:#fff;--on-ink-2:rgba(255,255,255,.74)}
+body.mlsnacava-clean :is(.widget__brand>img,.msg__avatar img,.launcher__button img){object-fit:contain}
+body.mlsnacava-clean .widget__brand>img{width:40px!important;min-width:40px!important;max-width:40px!important;height:40px!important}
+body.mlsnacava-clean .msg__avatar img{width:30px!important;height:30px!important}
+body.mlsnacava-clean .launcher__button img{width:46px!important;height:46px!important}

@@ -15,10 +15,12 @@ import '../n447/kozmetika2/catalogues/moravite.js';
 import '../n447/kozmetika2/catalogues/bohemikus.js';
 import '../n447/kozmetika2/chat-guard-k2.js';
 import '../n447/kozmetika2/catalogues/musk.js';
+import '../n447/kozmetika2/catalogues/tarani.js';
 import {aiAnswer} from './ai-chat.js';
 
 const BRANDS = {
   /* K2_BRANDS */
+  tarani: {brand: "TARANI", web: "https://www.tarani.cz/"},
   musk: {brand: "MusK", web: "https://www.musk.sk/sk"},
   bohemikus: {brand: "Bohemikus", web: "https://bohemikus.cz/"},
   moravite: {brand: "Moravité", web: "https://moravite.cz/"},

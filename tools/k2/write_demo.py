@@ -60,7 +60,7 @@ open(f'{ROOT}/n447/kozmetika2/catalogues/{slug}.js', 'w').write(
 
 logo = cfg['logo']
 brand = {'name': cfg['name'], 'domain': cfg['domain'], 'website': cfg['website'], 'shopUrl': cfg['shopUrl'], 'theme': cfg['theme'],
-         'wordmark': f'<img class="cx-wordmark cx-logo" src="{logo}" alt="{cfg["name"]}">', 'hero': hero['photo'], 'mark': logo,
+         'wordmark': f'<img class="cx-wordmark cx-logo" src="{logo}" alt="{cfg["name"]}">', 'hero': hero['photo'], 'mark': cfg.get('mark', logo),  # s3: voliteľný samostatný znak (inak logo)
          'contact': cfg['contact'], 'contactSource': cfg['contactSource'], 'ownerNote': cfg['ownerNote'], 'benefit': cfg['benefit'],
          'catalogueMinGroupSize': 3, 'n447': True, 'k2': True, 'noProfileGoal': bool(cfg.get('noProfileGoal')), 'chips': cfg['chips'],
          'labels': cfg.get('labels', {}), 'facetDefs': cfg.get('facetDefs', []), 'scenes': cfg.get('scenes', {}), 'addons': cfg.get('addons', []),

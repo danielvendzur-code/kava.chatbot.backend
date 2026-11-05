@@ -1,0 +1,535 @@
+{
+ "slug": "tarani",
+ "lang": "cs",
+ "name": "TARANI",
+ "domain": "tarani.cz",
+ "website": "https://www.tarani.cz/",
+ "shopUrl": "https://www.tarani.cz/kosmetika-pece-o-plet/",
+ "theme": {
+  "brand": "#2b2622",
+  "accent": "#b98a3a",
+  "soft": "#f7f2ea",
+  "paper": "#ffffff",
+  "ink": "#231f1c",
+  "line": "#e8dfd1"
+ },
+ "logo": "/assets/s3/tarani/wordmark.png",
+ "heroProductId": "tarani-24-gold-37-herbs-ultra-elixir-krem",
+ "contact": "tarani@tarani.cz",
+ "contactSource": "https://www.tarani.cz/kontakty/",
+ "ownerNote": "Ajurvédská kosmetika z Himálají — výběr podle typu pleti, účinku a hlavních bylin.",
+ "benefit": [
+  "Výběr z konkrétních krémů, emulzí, sér a šamponů",
+  "Typ pleti a problematika podle kategorií e-shopu",
+  "Dotazy i mimo otevírací dobu"
+ ],
+ "noProfileGoal": true,
+ "verifiedAt": "2026-11-05T08:00:00Z",
+ "collectionMethod": "kategorie e-shopu (Pleť dle typu / dle problematiky) a produktové stránky s variantami (5. 11. 2026)",
+ "chatTags": {
+  "skin": {
+   "sensitive": [
+    "sensitive"
+   ],
+   "blemish": [
+    "blemish"
+   ],
+   "dry": [
+    "dry"
+   ],
+   "mature": [
+    "mature"
+   ]
+  },
+  "hairNeed": {
+   "dandruff": [
+    "dandruff"
+   ],
+   "oily": [
+    "oily"
+   ],
+   "sensitive": [
+    "sensitive"
+   ]
+  }
+ },
+ "chatTagsSpecificOnly": true,
+ "chips": [
+  "Mám citlivou pleť",
+  "Mám problematickou pleť",
+  "Máte něco proti vráskám?",
+  "Máte něco na lupy?"
+ ],
+ "labels": {
+  "face": "Pleť",
+  "body": "Tělo",
+  "hair": "Vlasy",
+  "skin": "Typ pleti",
+  "effect": "Účinek",
+  "focus": "Hlavní složky",
+  "hairNeed": "Vaše vlasy"
+ },
+ "excluded": [
+  "bylinné koncentráty (doplňky stravy) – mimo kosmetiku",
+  "dávkovače a pumpičky",
+  "produkty momentálně nedostupné nebo vyprodané"
+ ],
+ "facetDefs": [
+  {
+   "key": "skin",
+   "early": true,
+   "cs": [
+    "Jakou máte pleť?",
+    "Podle kategorií TARANI „Pleť dle typu“ a „dle problematiky“."
+   ],
+   "values": {
+    "sensitive": {
+     "cs": [
+      "Citlivá pleť",
+      "Zarudnutí, alergie, žilky"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/skin-sensitive.jpg"
+    },
+    "blemish": {
+     "cs": [
+      "Mastná a problematická",
+      "Akné, smíšená pleť"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-blemish.jpg",
+      "position": "50% 35%"
+     }
+    },
+    "dry": {
+     "cs": [
+      "Suchá pleť",
+      "Napjatá, šupinatá"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/skin-dry.jpg"
+    },
+    "mature": {
+     "cs": [
+      "Zralá pleť",
+      "Vrásky a pigmentace"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-mature.jpg",
+      "position": "50% 30%"
+     }
+    },
+    "all": {
+     "cs": [
+      "Bez konkrétního problému",
+      "Péče pro každý den"
+     ],
+     "photo": {
+      "photo": "/assets/n447-kozmetika2/scenes/skin-normal.jpg",
+      "position": "50% 30%"
+     }
+    }
+   }
+  },
+  {
+   "key": "hairNeed",
+   "early": true,
+   "cs": [
+    "Co vaše vlasy potřebují?",
+    "Podle kategorií TARANI ve Vlasech."
+   ],
+   "values": {
+    "loss": {
+     "cs": [
+      "Vypadávání vlasů",
+      "Posílení a růst"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-loss-brush.jpg"
+    },
+    "dandruff": {
+     "cs": [
+      "Lupy",
+      "Péče o pokožku hlavy"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/scalp-massage.jpg"
+    },
+    "oily": {
+     "cs": [
+      "Mastná pokožka hlavy",
+      "Rychle se mastí"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-roots.jpg"
+    },
+    "damaged": {
+     "cs": [
+      "Poškozené a barvené",
+      "Regenerace délek"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-ends-dry.jpg"
+    },
+    "sensitive": {
+     "cs": [
+      "Jemné vlasy, citlivá pokožka",
+      "Šetrná péče"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-fine.jpg"
+    },
+    "all": {
+     "cs": [
+      "Bez konkrétního problému",
+      "Každodenní péče"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hair-touch.jpg"
+    }
+   }
+  },
+  {
+   "key": "effect",
+   "cs": [
+    "Co má péče hlavně dělat?",
+    "Podle účinku uvedeného v názvu produktu."
+   ],
+   "values": {
+    "calm": {
+     "cs": [
+      "Zklidnit",
+      "Zarudnutí a podráždění"
+     ],
+     "photo": "/assets/n447/scenes/calm-chamomile.jpg"
+    },
+    "antiage": {
+     "cs": [
+      "Omladit a zpevnit",
+      "Vrásky, pružnost"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/face-massage.jpg"
+    },
+    "nourish": {
+     "cs": [
+      "Vyživit a regenerovat",
+      "Antioxidanty, výživa"
+     ],
+     "photo": "/assets/scenes/serum-drop.jpg"
+    },
+    "detox": {
+     "cs": [
+      "Detoxikovat a osvěžit",
+      "Čistá, svěží pleť"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clay-mask.jpg"
+    },
+    "hydrate": {
+     "cs": [
+      "Hydratovat",
+      "Dodat vláhu"
+     ],
+     "photo": "/assets/scenes/face-water.jpg"
+    },
+    "bright": {
+     "cs": [
+      "Rozjasnit",
+      "Pigmentace, unavená pleť"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/citrus.jpg"
+    }
+   }
+  },
+  {
+   "key": "focus",
+   "cs": [
+    "Které byliny vás lákají?",
+    "Hlavní složky z názvu produktu."
+   ],
+   "values": {
+    "Aloe & Med": {
+     "cs": [
+      "Aloe & Med",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/honey.jpg"
+    },
+    "Aloe & Máta": {
+     "cs": [
+      "Aloe & Máta",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
+    },
+    "Aloe Vera": {
+     "cs": [
+      "Aloe Vera",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/aloe.jpg"
+    },
+    "Bhangra": {
+     "cs": [
+      "Bhangra",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/hemp.jpg"
+    },
+    "Citron": {
+     "cs": [
+      "Citron",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/citrus.jpg"
+    },
+    "Citron & Bergamot": {
+     "cs": [
+      "Citron & Bergamot",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lemon-tree.jpg"
+    },
+    "Citron & Grep": {
+     "cs": [
+      "Citron & Grep",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/grapefruit.jpg"
+    },
+    "Divoký Zázvor": {
+     "cs": [
+      "Divoký Zázvor",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cinnamon.jpg"
+    },
+    "Embelika": {
+     "cs": [
+      "Embelika",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/amla.jpg"
+    },
+    "Grep & Fenykl": {
+     "cs": [
+      "Grep & Fenykl",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/grapes.jpg"
+    },
+    "Henna & Lékořice": {
+     "cs": [
+      "Henna & Lékořice",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clary-sage.jpg"
+    },
+    "Himalájské Byliny": {
+     "cs": [
+      "Himalájské Byliny",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/tulsi.jpg"
+    },
+    "Levandule & Bazalka": {
+     "cs": [
+      "Levandule & Bazalka",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "Limetka": {
+     "cs": [
+      "Limetka",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lemongrass.jpg"
+    },
+    "Lékořice & Aloe": {
+     "cs": [
+      "Lékořice & Aloe",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clary-sage.jpg"
+    },
+    "Mandle": {
+     "cs": [
+      "Mandle",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/almonds.jpg"
+    },
+    "Margosa": {
+     "cs": [
+      "Margosa",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/neem.jpg"
+    },
+    "Meloun": {
+     "cs": [
+      "Meloun",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cucumber.jpg"
+    },
+    "Meruňka": {
+     "cs": [
+      "Meruňka",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/apricots.jpg"
+    },
+    "Mojito": {
+     "cs": [
+      "Mojito",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mint-herbs.jpg"
+    },
+    "Muškát & Koriandr": {
+     "cs": [
+      "Muškát & Koriandr",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cloves.jpg"
+    },
+    "Máta & Rozmarýna": {
+     "cs": [
+      "Máta & Rozmarýna",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rosemary.jpg"
+    },
+    "Neem & Brahmi": {
+     "cs": [
+      "Neem & Brahmi",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/moringa.jpg"
+    },
+    "Ostružina": {
+     "cs": [
+      "Ostružina",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/raspberries.jpg"
+    },
+    "Papája": {
+     "cs": [
+      "Papája",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/mango.jpg"
+    },
+    "Pomeranč": {
+     "cs": [
+      "Pomeranč",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/orange-slices.jpg"
+    },
+    "Růže": {
+     "cs": [
+      "Růže",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose.jpg"
+    },
+    "Růže & Levandule": {
+     "cs": [
+      "Růže & Levandule",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/lavender.jpg"
+    },
+    "Růže & Limetka": {
+     "cs": [
+      "Růže & Limetka",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/rose-bath.jpg"
+    },
+    "Růže & Okurka": {
+     "cs": [
+      "Růže & Okurka",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/cucumber.jpg"
+    },
+    "Růže & Vanilka": {
+     "cs": [
+      "Růže & Vanilka",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/vanilla.jpg"
+    },
+    "Santal & Jasmín": {
+     "cs": [
+      "Santal & Jasmín",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/jasmine.jpg"
+    },
+    "Santal & Kurkuma": {
+     "cs": [
+      "Santal & Kurkuma",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/turmeric.jpg"
+    },
+    "Santal & Máta": {
+     "cs": [
+      "Santal & Máta",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/sandalwood.jpg"
+    },
+    "Zinek": {
+     "cs": [
+      "Zinek",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clays.jpg"
+    },
+    "Zinek & Baby": {
+     "cs": [
+      "Zinek & Baby",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/kids-towel.jpg"
+    },
+    "Zinek & Tarafit": {
+     "cs": [
+      "Zinek & Tarafit",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/clays.jpg"
+    },
+    "Černý Rybíz": {
+     "cs": [
+      "Černý Rybíz",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/blueberries.jpg"
+    },
+    "Šest Bylin": {
+     "cs": [
+      "Šest Bylin",
+      "Hlavní složky podle názvu produktu"
+     ],
+     "photo": "/assets/n447-kozmetika2/scenes/thyme.jpg"
+    }
+   }
+  }
+ ],
+ "scenes": {
+  "category:face": "/assets/n447-kozmetika2/scenes/face-routine.jpg",
+  "category:body": "/assets/n447-kozmetika2/scenes/body-shower.jpg",
+  "category:hair": "/assets/n447-kozmetika2/scenes/hair-shampoo-foam.jpg",
+  "kind:Krémy": "/assets/scenes/cream-texture.jpg",
+  "kind:Emulze a gely": "/assets/n447-kozmetika2/scenes/aloe.jpg",
+  "kind:Masky a peelingy": "/assets/n447-kozmetika2/scenes/clay-mask.jpg",
+  "kind:Čištění a odličování": "/assets/scenes/face-cleanse.jpg",
+  "kind:Séra a oleje": "/assets/scenes/oil-palm.jpg",
+  "kind:Tonika a pleťové vody": "/assets/scenes/face-water.jpg",
+  "kind:Koupelové soli": "/assets/n447-kozmetika2/scenes/sea-salt.jpg",
+  "kind:Šampony": "/assets/scenes/hair-wash.jpg",
+  "kind:Kondicionéry": "/assets/n447-kozmetika2/scenes/hair-touch.jpg",
+  "kind:Vlasová séra a gely": "/assets/n447-kozmetika2/scenes/hair-serum-dropper.jpg"
+ },
+ "addons": [],
+ "mark": "/assets/s3/tarani/logo.png"
+}

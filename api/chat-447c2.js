@@ -7,6 +7,8 @@ import ENG from '../n447/c2/engine-c2.js';
 import REPLY from '../n447/c2/reply-c2.js';
 import BLACK from '../n447/c2/data/black.js';
 import NORDBEANS from '../n447/c2/data/nordbeans.js';
+import MLSNACAVA from '../n447/c2/data/mlsnacava.js';
+import TYPIKA from '../n447/c2/data/typika.js';
 import MERRYBEANS from '../n447/c2/data/merrybeans.js';
 import BEANSMITHS from '../n447/c2/data/beansmiths.js';
 
@@ -14,7 +16,7 @@ const {coffeeReply} = REPLY;
 const euro = (v, c) => ENG.money(v, c).replace(/ /g, ' ');
 
 /* Iba firmy novej dávky; neznámy identifikátor dostane 400, nikdy cudziu firmu. */
-export const DEMOS = {black: BLACK, nordbeans: NORDBEANS, beansmiths: BEANSMITHS, merrybeans: MERRYBEANS};
+export const DEMOS = {black: BLACK, nordbeans: NORDBEANS, beansmiths: BEANSMITHS, merrybeans: MERRYBEANS, typika: TYPIKA, mlsnacava: MLSNACAVA};
 
 export function catalogueFor(data) {
   const products = data.products.filter((p) => p.available !== false).map((p) => ({
