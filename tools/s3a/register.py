@@ -20,7 +20,7 @@ s = re.sub(r'export const BRANDS = \{.*?\};', 'export const BRANDS = {' + ', '.j
 open(p, 'w').write(s)
 # vercel.json
 V = json.load(open(f'{ROOT}/vercel.json'))
-V['rewrites'][0]['has'][0]['value'] = '^(' + '|'.join(D) + ')\\.mojchatbot\\.sk$'
+V['rewrites'][0]['has'][0]['value'] = '^(' + '|'.join(D) + ')(\\.mojchatbot\\.sk|-mojchatbot\\.vercel\\.app)$'
 json.dump(V, open(f'{ROOT}/vercel.json', 'w'), ensure_ascii=False, indent=2)
 # index.html
 seg = {'coffee': 'káva', 'cosmetics': 'kozmetika', 'tea': 'čaj', 'hair': 'vlasová kozmetika'}

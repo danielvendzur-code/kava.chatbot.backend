@@ -4,7 +4,7 @@
   'use strict';
   const data = window.COSMETICS_DEMOS;
   if (!data) return;
-  const host = location.hostname.endsWith('.mojchatbot.sk') ? location.hostname.split('.')[0] : '';
+  const host = location.hostname.endsWith('.mojchatbot.sk') ? location.hostname.split('.')[0] : (location.hostname.match(/^([a-z0-9]+)-mojchatbot\.vercel\.app$/) || [])[1] || '';
   const slug = host || new URLSearchParams(location.search).get('demo') || '';
   const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
   const wordmark = (src, name) => `<img class="cx-wordmark cx-logo" src="${esc(src)}" alt="${esc(name)}">`;

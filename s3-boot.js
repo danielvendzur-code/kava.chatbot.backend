@@ -8,7 +8,7 @@
   const COSMETICS = Object.fromEntries(Object.keys(REG).filter((k) => REG[k].type === 'cosmetics').map((k) => [k, '/catalogues/' + k + '.js']));
   const root = document.getElementById('cosmetics-root');
   if (root) { root.inert = true; root.setAttribute('aria-busy', 'true'); }
-  const host = location.hostname.endsWith('.mojchatbot.sk') ? location.hostname.split('.')[0] : '';
+  const host = location.hostname.endsWith('.mojchatbot.sk') ? location.hostname.split('.')[0] : (location.hostname.match(/^([a-z0-9]+)-mojchatbot\.vercel\.app$/) || [])[1] || '';
   const slug = host || new URLSearchParams(location.search).get('demo') || '';
   const coffee = COFFEE.includes(slug);
   if (!coffee && !COSMETICS[slug]) throw Error('Unknown demo');

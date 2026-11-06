@@ -10,7 +10,7 @@
      under another company's address. */
   const known = (value) => Object.prototype.hasOwnProperty.call(data.brands, value);
   const host = location.hostname.toLowerCase();
-  const hostSlug = host.endsWith('.mojchatbot.sk') ? host.split('.')[0] : '';
+  const hostSlug = host.endsWith('.mojchatbot.sk') ? host.split('.')[0] : (host.match(/^([a-z0-9]+)-mojchatbot\.vercel\.app$/) || [])[1] || '';
   const asked = String(location.pathname.match(/\/kozmetika\/([a-z0-9-]+)/i)?.[1] || new URLSearchParams(location.search).get('demo') || '').toLowerCase();
   if (known(hostSlug) && asked && asked !== hostSlug && known(asked)) { location.replace(`/cosmetics.html?demo=${encodeURIComponent(hostSlug)}`); return; }
   if (hostSlug && !known(hostSlug)) { root.textContent = 'Ukážka sa nenašla.'; return; }

@@ -7,7 +7,7 @@
       "has": [
         {
           "type": "host",
-          "value": "^(beansmiths|merrybeans|typika|mlsnacava|tarani|coffeesource|fiftybeans|dosmundos|illimite|teamountain|vitellaria|ethia|pureharmony|voznice|ceskava|kamikava|laprazirna|mydlozfarmy|kafeprosebe|poppybeans)\\.mojchatbot\\.sk$"
+          "value": "^(beansmiths|merrybeans|typika|mlsnacava|tarani|coffeesource|fiftybeans|dosmundos|illimite|teamountain|vitellaria|ethia|pureharmony|voznice|ceskava|kamikava|laprazirna|mydlozfarmy|kafeprosebe|poppybeans)(\\.mojchatbot\\.sk|-mojchatbot\\.vercel\\.app)$"
         }
       ],
       "destination": "/cosmetics.html"

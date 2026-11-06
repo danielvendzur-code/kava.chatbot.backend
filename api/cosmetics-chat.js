@@ -18,7 +18,7 @@ export default async function handler(req, res) {
   const slug = String(body.demoId || '');
   /* Každá adresa iba svoju firmu: na <firma>.mojchatbot.sk nič iné. */
   const host = String(req.headers.host || '').split(':')[0].toLowerCase();
-  if (host.endsWith('.mojchatbot.sk') && host !== slug + '.mojchatbot.sk') return res.status(400).json({error: 'Host company mismatch'});
+  if ((host.endsWith('.mojchatbot.sk') && host !== slug + '.mojchatbot.sk') || (/-mojchatbot\.vercel\.app$/.test(host) && host !== slug + '-mojchatbot.vercel.app')) return res.status(400).json({error: 'Host company mismatch'});
   const mod = Object.prototype.hasOwnProperty.call(coffee.DEMOS, slug) ? coffee : Object.prototype.hasOwnProperty.call(cosmetics.BRANDS, slug) ? cosmetics : null;
   if (!mod) return res.status(400).json({error: 'Unknown demo'});
   const out = await mod.answer(body);
