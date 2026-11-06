@@ -3,6 +3,8 @@
 Ponuka 447 € jednorazovo + 10 €/mes., bez skúšobného obdobia – iba v tejto novej sérii. Vetva `claude/n447-s3a-20261105` (samostatná, bez spoločnej histórie s pôvodnými ukážkami).
 Základ: zdrojové súbory schválenej ukážky Andreine (nasadenie `dpl_GBL4YxYNrimfow7U7NJodUUvqdh6`). Súbory, aliasy a koncepty Codexu (pôvodné ukážky a osmička Šabata, Plenér, Purity, Noili, LIQOIL, SMYSSLY, Andreine, LucyLab) sa nemenili.
 
+Opravu Beansmith's a reportované testy nezávisle preveruje Codex – zatiaľ nie sú nezávisle overené.
+
 **Nič nie je nasadené do produkcie, žiadne DNS, žiadne zákaznícke e-maily, žiadne platené volania modelu.** Preview slúži iba na internú kontrolu – nie je to overená produkcia. Klientske adresy `<firma>.mojchatbot.sk` čakajú na schválenie.
 
 ## Stav: 20 firiem – ukážka pripravená na internú kontrolu (nie odoslaná, nie nasadená)
@@ -21,13 +23,15 @@ Základ: zdrojové súbory schválenej ukážky Andreine (nasadenie `dpl_GBL4YxY
 | Vitellaria | vlasy CZ | https://www.vitellaria.cz/ | 19 | 3 | 57 výsledkov · víťazi 19/19 · nálezy 0 | `?demo=vitellaria` |
 | Ethia | kozmetika CZ | https://ethia.cz/ | 16 | 3 | 48 výsledkov · víťazi 16/16 · nálezy 0 | `?demo=ethia` |
 | Pure Harmony | kozmetika CZ | https://www.pureharmony.cz/ | 25 | 3 | 75 výsledkov · víťazi 25/25 · nálezy 0 | `?demo=pureharmony` |
-| mamacoffee | káva CZ | https://www.mamacoffee.cz/kava/ | 8 | 3 | 12 ciest · víťazi 8/8 · nálezy 0 | `?demo=mamacoffee` |
 | Pražírna Voznice | káva CZ | https://www.prazirnavoznice.cz/cerstve-prazena-vyberova-kava-prazirna-vozniceva-kava | 13 | 3 | 23 ciest · víťazi 13/13 · nálezy 0 | `?demo=voznice` |
 | Českáva | káva CZ | https://www.ceskava.cz/kava | 13 | 3 | 31 ciest · víťazi 13/13 · nálezy 0 | `?demo=ceskava` |
 | KAMIKAVA | káva CZ | https://www.kamikava.cz/vyberova-kava | 17 | 3 | 34 ciest · víťazi 17/17 · nálezy 0 | `?demo=kamikava` |
 | LaPrazirna | káva CZ | https://www.laprazirna.cz/e-shop/kava | 12 | 3 | 12 ciest · víťazi 12/12 · nálezy 0 | `?demo=laprazirna` |
 | Mydlo z farmy | kozmetika SK | https://www.mydlozfarmy.sk/ | 25 | 3 | 75 výsledkov · víťazi 25/25 · nálezy 0 | `?demo=mydlozfarmy` |
 | Kafe pro sebe | káva CZ | https://www.kafeprosebe.cz/cerstve-prazena-kava | 25 | 3 | 43 ciest · víťazi 25/25 · nálezy 0 | `?demo=kafeprosebe` |
+| Poppy Beans | káva CZ | https://www.poppybeans.cz/collections/all | 13 | 3 | 28 ciest · víťazi 13/13 · nálezy 0 | `?demo=poppybeans` |
+
+**HOLD_DUPLICATE – mamacoffee:** rezervované Codexu (existujúca ukážka a obchodná história vo vetve `origin/codex/new-content-20261024`). Moja kópia sa nezverejňuje: nie je v `s3-registry.js`, chate, `vercel.json` ani v zozname; `?demo=mamacoffee` zobrazí „Ukážka sa nenašla“. Ponuka sa neposiela (koncept premenovaný na `HOLD_DUPLICATE-email-mamacoffee.md`), existujúca verzia ani alias Codexu sa nemenili. Príčina: kontrola duplicít prehľadávala iba lokálne vetvy – teraz po `git fetch` aj `refs/remotes` (90 vetiev). Náhrada: **Poppy Beans** (Poppy Beans s.r.o., IČO 09074112, Brno). Ostatných 19 firiem prešlo rovnakou kontrolou vrátane vzdialených vetiev – zhoda iba s mojou staršou vetvou `claude/n447-seria3-20261105` (rovnaký autor) a pri Vitellarii latinský názov bambuckého masla v katalógu Goodie.
 
 Každá ukážka: najviac 25 dostupných produktov s overenou cenou, fotkou a presným odkazom (otvára sa v tej istej karte); otázky na skutočné vlastnosti podľa e-shopu (príprava, kofeín, chuť/kyslosť, druh, charakter, zložka); rozpočet = celá zostava vrátane doplnku; popisné fotky volieb bez opakovania v jednej otázke; 4 rýchle voľby 40 px rovnakej veľkosti; logo v bielom kruhu správy načítané. Kandidáti, vyradení a odložení s dôvodmi (vrátane opravy Fiftybeans / DOS MUNDOS – vlastné e-shopy): `n447/s3/kandidati.md`. Koncepty e-mailov (päta mojchatbot.sk, neodoslané): `n447/s3/email-<firma>.md`.
 
@@ -141,13 +145,6 @@ pureharmony 390px chipy OK [[183,40,""],[183,40,""],[183,40,""],[183,40,""]] · 
 pureharmony offline: OK bodky=true karty=3 volania=1 nová karta=false · Z nabídky vybírám: AROMA CARE deodorant Růže s Vanilla Chai Deodoranty Výrobce
 pureharmony mock: OK bodky=true karty=1 volania=1 nová karta=false · Odporúčam AROMA CARE deodorant Růže s Vanilla Chai – 329 Kč. AROMA CARE deodorant
 pureharmony (cosmetics) teaser „Otevřít výběr péče“ · OK
-mamacoffee 320x568,390x800,1280x800: 12 ciest, 165 obrazoviek, dosiahnuteľné kávy 8/8, nálezy 0
-mamacoffee 390x800 bez fotiek: 12 ciest, 55 obrazoviek, dosiahnuteľné kávy 8/8, nálezy 0
-mamacoffee 390px chipy OK [[183,40,""],[183,40,""],[183,40,""],[183,40,""]] · avatar OK pozadie rgb(255, 255, 255) mark.png
-mamacoffee offline: OK bodky=true karty=2 volania=1 nová karta=false · Chuť „čokoládová a sladká“ do automatu či kávovaru mají například: Espresso smě
-mamacoffee mock: OK bodky=true karty=1 volania=1 nová karta=false · Odporúčam Bio Peru Moyobamba – 100 g · 155 Kč. Bio Peru Moyobamba Káva 100 g · 155
-mamacoffee (coffee) teaser „Otevřít výběr kávy“ · OK
-mamacoffee: 12 ciest, významovo rovnaké / jednomožnostné otázky 0
 voznice 320x568,390x800,1280x800: 23 ciest, 345 obrazoviek, dosiahnuteľné kávy 13/13, nálezy 0
 voznice 390x800 bez fotiek: 23 ciest, 115 obrazoviek, dosiahnuteľné kávy 13/13, nálezy 0
 voznice 390px chipy OK [[183,40,""],[183,40,""],[183,40,""],[183,40,""]] · avatar OK pozadie rgb(255, 255, 255) mark.png
@@ -189,6 +186,13 @@ kafeprosebe offline: OK bodky=true karty=2 volania=1 nová karta=false · Chuť 
 kafeprosebe mock: OK bodky=true karty=1 volania=1 nová karta=false · Odporúčam Brazílie - Black Diamond – 250 g · 198 Kč. Brazílie - Black Diamond Káv
 kafeprosebe (coffee) teaser „Otevřít výběr kávy“ · OK
 kafeprosebe: 43 ciest, významovo rovnaké / jednomožnostné otázky 0
+poppybeans 320x568,390x800,1280x800: 28 ciest, 447 obrazoviek, dosiahnuteľné kávy 13/13, nálezy 0
+poppybeans 390x800 bez fotiek: 28 ciest, 149 obrazoviek, dosiahnuteľné kávy 13/13, nálezy 0
+poppybeans 390px chipy OK [[183,40,""],[183,40,""],[183,40,""],[183,40,""]] · avatar OK pozadie rgb(255, 255, 255) mark.png
+poppybeans offline: OK bodky=true karty=2 volania=1 nová karta=false · Chuť „čokoládová a sladká“ do automatu či kávovaru mají například: Rwanda Inzov
+poppybeans mock: OK bodky=true karty=1 volania=1 nová karta=false · Odporúčam Ethiopia Rumudamo natural – 250 g · 439 Kč. Ethiopia Rumudamo natural Ká
+poppybeans (coffee) teaser „Otevřít výběr kávy“ · OK
+poppybeans: 28 ciest, významovo rovnaké / jednomožnostné otázky 0
 ```
 Poznámka: jeden beh Beansmith's bez fotiek počas dvoch súbežných testov hlásil 9× „rozbitý obrázok“ (časovanie náhradného obrázka); samostatné opakovanie 0 nálezov – v registri je opakovaný beh.
 

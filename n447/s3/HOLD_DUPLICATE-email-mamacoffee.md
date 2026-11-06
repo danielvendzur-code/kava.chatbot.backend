@@ -1,4 +1,4 @@
-# Koncept e-mailu – mamacoffee (iba DRAFT, neodoslať ani neplánovať)
+# HOLD_DUPLICATE – mamacoffee je rezervovaná Codexu. NEPOSIELAŤ. (pôvodný koncept ponechaný iba ako záznam)
 
 Komu: [kontakt z https://www.mamacoffee.cz/ – doplniť]
 Predmet: Výběr kávy pro zákazníky mamacoffee

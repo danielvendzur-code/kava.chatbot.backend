@@ -3,7 +3,9 @@ python3 -I tools/s3a/register.py"""
 import json, os, re
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 R = json.load(open(f'{ROOT}/tools/s3a/registry.json'))
-D = R['demos']
+HOLD = {k: v for k, v in R['demos'].items() if v.get('status', '').startswith('HOLD')}
+# HOLD_* (napr. HOLD_DUPLICATE): firma sa nezverejňuje – nie je v prehliadači, chate, subdoménach ani v zozname
+D = {k: v for k, v in R['demos'].items() if k not in HOLD}
 open(f'{ROOT}/s3-registry.js', 'w').write('/* Séria 3: zoznam firiem (generované z tools/s3a/registry.json – neupravovať ručne). */\nwindow.S3_REG = ' + json.dumps({'demos': D}, ensure_ascii=False) + ';\n')
 cof = [k for k, v in D.items() if v['type'] == 'coffee']; cos = [k for k, v in D.items() if v['type'] == 'cosmetics']
 # lib/coffee-chat.js
@@ -26,4 +28,4 @@ links = '\n'.join(f'<a href="/cosmetics.html?demo={k}">{v["name"]} <small>· {se
 p = f'{ROOT}/index.html'; s = open(p).read()
 s = re.sub(r'(<p><small>Interný náhľad[^\n]*\n)(?:<a [^\n]*\n)*', lambda m: m.group(1) + links + '\n', s)
 open(p, 'w').write(s)
-print(len(D), 'firiem:', ', '.join(D))
+print(len(D), 'firiem:', ', '.join(D)); print('HOLD:', ', '.join(f"{k} ({v['status']})" for k, v in HOLD.items()) or '–')

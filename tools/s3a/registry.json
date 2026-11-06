@@ -1175,7 +1175,9 @@
     "landing": "/assets/s3/mamacoffee/logo.png",
     "header": "/assets/s3/mamacoffee/logo-header.png",
     "avatar": "/assets/s3/mamacoffee/mark.png"
-   }
+   },
+   "status": "HOLD_DUPLICATE",
+   "statusNote": "Rezervované Codexu (existujúca ukážka mamacoffee a obchodná história, vetva origin/codex/new-content-20261024). Kópia v tejto vetve sa nezverejňuje, ponuka sa neposiela; existujúca verzia ani alias sa nemenia."
   },
   "voznice": {
    "type": "coffee",
@@ -1605,6 +1607,16 @@
     "landing": "/assets/s3/kafeprosebe/logo.png",
     "header": "/assets/s3/kafeprosebe/logo.png",
     "avatar": "/assets/s3/kafeprosebe/mark.png"
+   }
+  },
+  "poppybeans": {
+   "type": "coffee",
+   "name": "Poppy Beans",
+   "country": "CZ",
+   "logos": {
+    "landing": "/assets/s3/poppybeans/logo.png",
+    "header": "/assets/s3/poppybeans/logo.png",
+    "avatar": "/assets/s3/poppybeans/mark.png"
    }
   }
  }
