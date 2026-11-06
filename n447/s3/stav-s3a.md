@@ -197,9 +197,9 @@ poppybeans: 28 ciest, významovo rovnaké / jednomožnostné otázky 0
 Poznámka: jeden beh Beansmith's bez fotiek počas dvoch súbežných testov hlásil 9× „rozbitý obrázok“ (časovanie náhradného obrázka); samostatné opakovanie 0 nálezov – v registri je opakovaný beh.
 
 ## Preview a SHA
-- SHA testovanej verzie: `57405fc` (vetva `claude/n447-s3a-20261105`), Preview READY: https://kava-chatbot-backend-qrfprnjpy-danielvendzur-codes-projects.vercel.app/ (Vercel ochrana; zoznam ukážok, každá `/cosmetics.html?demo=<firma>`). Iba interná kontrola.
+- SHA testovanej verzie: `2575f1a` (vetva `claude/n447-s3a-20261105`), Preview READY: https://kava-chatbot-backend-kz5dwk30a-danielvendzur-codes-projects.vercel.app/ – overené: zoznam 20 firiem vrátane Poppy Beans, `/n447/c2/data/poppybeans.js` 200, `/n447/c2/data/mamacoffee.js` 404 (HOLD sa nenasadzuje). Nasledujúci commit mení iba popisky v zozname a tento register. (Vercel ochrana; zoznam ukážok, každá `/cosmetics.html?demo=<firma>`). Iba interná kontrola.
 - Na Preview neboli volané chaty (išli by do produkčného modelu) – chat overený lokálne cez mock.
-- Predchádzajúce: dávka 1 `8ab2982` / register `8fed03a` / Preview `5qc540k8j`.
+- Predchádzajúce: `57405fc` / Preview `qrfprnjpy` (20 firiem vrátane mamacoffee – nahradené); dávka 1 `8ab2982` / register `8fed03a` / Preview `5qc540k8j`.
 
 ## Prekážky
 - Počítač LAPTOP-NSU02PK6: „Asleep or app closed“. Práca a testy bežali v cloudovom prostredí relácie (vetva a lokálny server tu); na počítači sa nič nespúšťalo ani neukladalo.

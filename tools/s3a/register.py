@@ -23,8 +23,8 @@ V = json.load(open(f'{ROOT}/vercel.json'))
 V['rewrites'][0]['has'][0]['value'] = '^(' + '|'.join(D) + ')\\.mojchatbot\\.sk$'
 json.dump(V, open(f'{ROOT}/vercel.json', 'w'), ensure_ascii=False, indent=2)
 # index.html
-seg = {'coffee': 'káva', 'cosmetics': 'kozmetika', 'tea': 'čaj'}
-links = '\n'.join(f'<a href="/cosmetics.html?demo={k}">{v["name"]} <small>· {seg.get(v["type"], v["type"])} · {v["country"]}</small></a>' for k, v in D.items())
+seg = {'coffee': 'káva', 'cosmetics': 'kozmetika', 'tea': 'čaj', 'hair': 'vlasová kozmetika'}
+links = '\n'.join(f'<a href="/cosmetics.html?demo={k}">{v["name"]} <small>· {seg.get(v.get("segment", v["type"]), v["type"])} · {v["country"]}</small></a>' for k, v in D.items())
 p = f'{ROOT}/index.html'; s = open(p).read()
 s = re.sub(r'(<p><small>Interný náhľad[^\n]*\n)(?:<a [^\n]*\n)*', lambda m: m.group(1) + links + '\n', s)
 open(p, 'w').write(s)
