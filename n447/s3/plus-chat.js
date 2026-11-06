@@ -94,12 +94,17 @@
     return shopHost && host && host.endsWith(shopHost.split('.').slice(-2).join('.')) ? `<a href="${url}">${cs() ? 'Více informací ↗' : 'Viac informácií ↗'}</a>${tail}` : raw;
   }).replace(/\n/g, '<br>');
 
+  const firstSentence = (t) => { const x = String(t || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim(); const m = [...x.matchAll(/[.!?](?=\s|$)/g)].find((m) => m.index > 25); return (m ? x.slice(0, m.index + 1) : x).slice(0, 160); };
   function card(p, note, header, i) {
-    const meta = p.coffee
+    let meta = p.coffee
       ? [p.origin, /chuti|chuť/i.test(note || '') ? '' : (p.notes || []).slice(0, 3).join(', ')].filter(Boolean).join(' · ')
       : [p.kind, [p.volume, p.variantLabel].filter((v, k, all) => v && all.indexOf(v) === k).join(' · ')].filter(Boolean).join(' · ');
     const price = header || p.price || '';
-    return `<a class="lg-wine-card" style="--lg-i:${i}" href="${esc(p.url)}"><span class="lg-wine-photo"><img src="${esc(p.photo || '')}" alt="" loading="eager" decoding="async" onerror="${p.coffee ? "this.onerror=null;this.src='/assets/scenes/coffee-beans.jpg'" : "this.parentNode.setAttribute('data-image-failed','true')"}"></span><span class="lg-wine-copy"><b>${esc(p.name)}</b>${meta ? `<small>${esc(meta)}</small>` : ''}${note ? `<em>${esc(note)}</em>` : ''}<span class="lg-wine-foot"><strong${header ? ' class="is-offer"' : ''}>${esc(price)}</strong><span class="lg-wine-go">${cs() ? 'Zobrazit ↗' : 'Zobraziť ↗'}</span></span></span></a>`;
+    /* s3a: ako v Langr – riadok typu, krátky popis (chuť alebo prvá veta z e-shopu) a „Zobrazit … →“ vo farbe firmy */
+    if (p.chatMeta) meta = p.chatMeta;
+    if (!note) note = p.chatNote || firstSentence(p.description);
+    const go = p.chatGo || (cs() ? 'Zobrazit produkt →' : 'Zobraziť produkt →');
+    return `<a class="lg-wine-card" style="--lg-i:${i}" href="${esc(p.url)}"><span class="lg-wine-photo"><img src="${esc(p.photo || '')}" alt="" loading="eager" decoding="async" onerror="${p.coffee ? "this.onerror=null;this.src='/assets/scenes/coffee-beans.jpg'" : "this.parentNode.setAttribute('data-image-failed','true')"}"></span><span class="lg-wine-copy"><b>${esc(p.name)}</b>${meta ? `<small>${esc(meta)}</small>` : ''}${note ? `<em>${esc(note)}</em>` : ''}<span class="lg-wine-foot"><strong${header ? ' class="is-offer"' : ''}>${esc(price)}</strong><span class="lg-wine-go">${esc(go)}</span></span></span></a>`;
   }
 
   function render(list) {

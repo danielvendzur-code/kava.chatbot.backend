@@ -38,7 +38,10 @@
     const priceOf = (p) => { const v = cheapest(p); return v ? E.grams(v.grams) + ' · ' + E.money(v.price, p.currency) : ''; };
     const catalogue = products.map((p) => ({id: p.id, name: p.name, url: p.url, photo: p.photo, available: true, price: priceOf(p),
       priceAmount: (cheapest(p) || {}).price, currency: p.currency, kind: cs ? 'Káva' : 'Káva', category: 'coffee', tags: [],
-      reason: (p.notes || []).slice(0, 3).join(', '), description: p.summary || ''}));
+      reason: (p.notes || []).slice(0, 3).join(', '), description: p.summary || '',
+      /* s3a: karta v chate (podľa Langr) – pôvod a spracovanie, chuťové tóny */
+      chatMeta: [String(p.origin || '').split(/[·(]/)[0].trim(), p.process ? String(p.process).split(/[,(]/)[0].trim() : ''].filter(Boolean).join(' · ') || (cs ? 'Káva' : 'Káva'),
+      chatNote: (p.notes || []).length ? (cs ? 'V chuti ' : 'V chuti ') + p.notes.slice(0, 3).join(', ') + '.' : '', chatGo: cs ? 'Zobrazit kávu →' : 'Zobraziť kávu →'}));
     const hero = N.products.find((p) => p.id === (N.demo || {}).heroProductId);
     data.brands[slug] = {
       name: b.name, fullName: b.legal || b.name, domain: new URL(b.web).hostname.replace(/^www\./, ''), website: b.web, url: b.web, shopUrl: b.shopUrl,

@@ -55,8 +55,9 @@
     const used = new Set();
     const list = q.options.map((o) => ({o, photo: photoFor(q, o, used)}));
     const budget = q.key === 'budget';
-    const card = ({o, photo}) => '<button type="button" class="cx-catalogue-option cx-quality-option' + (budget ? ' is-budget-answer' : '') + (String(o.value).startsWith('more:') ? ' is-navigation' : '') + '" data-choice="' + esc(o.value) + '"><span class="cx-quality-photo' + (budget ? ' is-budget-photo' : ' is-scene') + '"><img src="' + esc(photo) + '" alt="" loading="eager" onerror="this.onerror=null;this.src=\'/assets/quality-product-placeholder.svg\'"></span><span class="cx-quality-copy"><b>' + esc(o.title) + '</b><small>' + esc(o.detail || '') + '</small></span></button>';
-    return '<div style="--cx-choice-count:' + list.length + '" class="cx-catalogue-options' + (budget ? ' cx-budget-options' : '') + (!budget && list.length === 2 ? ' cx-category-pair' : '') + '" data-count="' + list.length + '">' + list.map(card).join('') + '</div>';
+    /* s3a: rozpočet má rovnaké veľké karty ako ostatné kroky (vyplnia priestor); fotka = káva, ktorú za sumu dostanete. */
+    const card = ({o, photo}) => '<button type="button" class="cx-catalogue-option cx-quality-option' + (String(o.value).startsWith('more:') ? ' is-navigation' : '') + '" data-choice="' + esc(o.value) + '"><span class="cx-quality-photo' + (budget ? ' s3-pack-photo' : ' is-scene') + '"><img src="' + esc(photo) + '" alt="" loading="eager" onerror="this.onerror=null;this.src=\'/assets/quality-product-placeholder.svg\'"></span><span class="cx-quality-copy"><b>' + esc(o.title) + '</b><small>' + esc(o.detail || '') + '</small></span></button>';
+    return '<div style="--cx-choice-count:' + list.length + '" class="cx-catalogue-options' + (list.length === 2 ? ' cx-category-pair' : '') + '" data-count="' + list.length + '">' + list.map(card).join('') + '</div>';
   }
 
   const shopLink = (u) => '<a href="' + esc(u) + '">' + esc(T('Pozrieť produkt', 'Zobrazit produkt')) + '</a>';
@@ -64,26 +65,34 @@
     return '<article class="cx-quality-product' + (primary ? ' is-primary' : '') + '" data-product-id="' + esc(p.id || '') + '"><div class="cx-quality-product-photo"><img src="' + esc(p.photo || '/assets/quality-product-placeholder.svg') + '" alt="' + esc(p.name) + '" loading="eager" onerror="this.onerror=null;this.src=\'/assets/quality-product-placeholder.svg\'"></div><div class="cx-quality-product-copy"><small>' + esc(label) + '</small><h2>' + esc(p.name) + '</h2>' + (packLabel ? '<p>' + esc(packLabel) + '</p>' : '') + (tags && tags.length ? '<div class="cx-quality-tags">' + tags.map((x) => '<span>' + esc(x) + '</span>').join('') + '</div>' : '') + '<strong>' + esc(priceLabel || T('Cenu potvrdí e-shop', 'Cenu potvrdí e-shop')) + '</strong>' + shopLink(p.url) + '</div>' + (description ? '<p class="cx-product-description">' + esc(description) + '</p>' : '') + '</article>';
   }
   const money = (v, c) => E.money(v, c);
+  /* s3a: výsledok – veľká fotka, chuť (tóny, škály pražiarne), pôvod a spracovanie; pod ním „Hodí se k tomu“ (upsell). */
+  const up = (href, photo, label, name, detail, price) => '<a class="s3-up" href="' + esc(href) + '"><span class="s3-up-photo"><img src="' + esc(photo || '/assets/quality-product-placeholder.svg') + '" alt="" loading="eager" onerror="this.onerror=null;this.src=\'/assets/quality-product-placeholder.svg\'"></span><span class="s3-up-copy"><small>' + esc(label) + '</small><b>' + esc(name) + '</b>' + (detail ? '<em>' + esc(detail) + '</em>' : '') + '</span><span class="s3-up-side"><strong>' + esc(price) + '</strong><span class="s3-up-go">' + esc(T('Zobraziť →', 'Zobrazit →')) + '</span></span></a>';
+  function hero(r) {
+    const p = r.product;
+    const meta = (r.facts || []).map((f) => f[1]).filter(Boolean).map((x) => String(x).split('·')[0].trim()).filter((x, i, all) => x && all.indexOf(x) === i).slice(0, 3).join(' · ');
+    const notes = (p.notes || []).slice(0, 4);
+    const scales = (r.scales || []).map((x) => '<span class="s3-scale"><i>' + esc(x.name) + '</i><span class="s3-scale-bar" style="--s3-v:' + (x.value / x.max) + '"></span><b>' + esc(x.value + '/' + x.max) + '</b></span>').join('');
+    const taste = notes.length || scales ? '<div class="s3-taste"><span class="s3-taste-head">' + esc(r.tasteLabel ? T('Chuť: ', 'Chuť: ') + r.tasteLabel : T('Chuť', 'Chuť')) + '</span>' + (notes.length ? '<div class="cx-quality-tags s3-notes">' + notes.map((x) => '<span>' + esc(x) + '</span>').join('') + '</div>' : '') + (scales ? '<div class="s3-scales">' + scales + '</div>' : '') + '</div>' : '';
+    const desc = r.kind === 'drip' ? (r.option && r.option.detail) : p.summary;
+    return '<article class="cx-quality-product is-primary s3-hero" data-product-id="' + esc(p.id || '') + '"><div class="cx-quality-product-photo s3-hero-photo"><img src="' + esc(p.photo || '/assets/quality-product-placeholder.svg') + '" alt="' + esc(p.name) + '" loading="eager" onerror="this.onerror=null;this.src=\'/assets/quality-product-placeholder.svg\'"></div><div class="cx-quality-product-copy"><small>' + esc(T('Odporúčam vám', 'Doporučuji vám')) + '</small><h2>' + esc(p.name) + '</h2>' + (meta ? '<p class="s3-meta">' + esc(meta) + '</p>' : '') + taste + '<div class="s3-buy"><span><strong>' + esc(r.priceLabel || T('Cenu potvrdí e-shop', 'Cenu potvrdí e-shop')) + '</strong>' + (r.packLabel ? '<small>' + esc(r.packLabel) + '</small>' : '') + '</span>' + shopLink(p.url) + '</div></div>' + (desc ? '<p class="cx-product-description">' + esc(desc) + '</p>' : '') + '</article>';
+  }
   function result() {
     const r = E.result(D, state.answers);
     if (!r) return {heading: T('Takúto kombináciu v ponuke nemáme', 'Takovou kombinaci v nabídce nemáme'), note: T('Vráťte sa o krok späť a zvoľte inú možnosť.', 'Vraťte se o krok zpět a zvolte jinou možnost.'), content: ''};
     const p = r.product;
-    const tags = (r.facts || []).map((f) => f[1]).filter(Boolean).slice(0, 3);
-    let content = productCard(p, T('Odporúčam vám', 'Doporučuji vám'), r.priceLabel, r.packLabel, tags, r.kind === 'drip' ? (r.option && r.option.detail) : p.summary, true);
+    let content = hero(r);
+    /* upsell: väčšie balenie, doplnok, set firmy a druhá káva na ochutnanie – všetko z overených údajov e-shopu */
+    const ups = [];
+    if (r.upPack) ups.push(up(r.upPack.url, p.photo, T('Väčšie balenie vyjde výhodnejšie', 'Větší balení vyjde výhodněji'), p.name + ' · ' + r.upPack.label, r.upPack.per100 + T(' za 100 g namiesto ', ' za 100 g místo ') + r.upPack.basePer100 + ' (−' + r.upPack.save + ' %)', r.upPack.priceLabel));
+    if (r.addon) ups.push(up(r.addon.product.url, r.addon.product.photo, T('Doplnok · hodí sa k nákupu', 'Doplněk · hodí se k nákupu'), r.addon.product.name, r.addon.note || '', money(r.addon.price, p.currency)));
+    if (r.set) ups.push(up(r.set.product.url, r.set.product.photo, T('Hotový set od ', 'Hotový set od ') + D.brand.name, r.set.product.name, r.set.product.summary || '', r.set.priceLabel));
+    if (r.alternative) { const alt = r.alternative; ups.push(up(alt.product.url, alt.product.photo, T('Alternatíva · na ochutnanie k tomu', 'Alternativa · na ochutnání k tomu'), alt.product.name, alt.diff && alt.diff.length ? alt.diff.join(' · ') : (alt.product.notes || []).slice(0, 3).join(', '), alt.price)); }
+    if (ups.length) content += '<section class="s3-ups"><h3>' + esc(T('Hodí sa k tomu', 'Hodí se k tomu')) + '</h3>' + ups.join('') + (r.addon && r.total != null ? '<p class="cx-bundle-total"><b>' + esc(T('Spolu za odporúčanú zostavu', 'Celkem za doporučenou sestavu')) + ': ' + esc(money(r.total, p.currency)) + '</b>' + (r.limit != null ? '<small>' + esc(T('V rámci vášho rozpočtu.', 'V rámci vašeho rozpočtu.')) + '</small>' : '') + '</p>' : '') + '</section>';
     const why = (r.reasons || []).map(([t, x]) => '<p><b>' + esc(t) + ':</b> ' + esc(x) + '</p>').join('');
     const notes = [r.promoNote, r.grindNote, r.packNote].filter(Boolean).map((x) => '<p class="cx-quality-note">' + esc(x) + '</p>').join('');
     content += '<div class="cx-quality-why"><b>' + esc(T('Prečo práve táto', 'Proč právě tahle')) + '</b>' + why + notes + '</div>';
     let next = '';
     if (r.next && r.next.items && r.next.items.length) next += '<h3>' + esc(r.next.title) + '</h3>' + r.next.items.map((x) => '<p>' + esc(x) + '</p>').join('') + (r.next.link ? '<p><a href="' + esc(r.next.link.href) + '">' + esc(r.next.link.label) + '</a></p>' : '');
-    if (r.addon) {
-      next += '<p>' + esc(T('Hodí sa k nákupu · voliteľné', 'Hodí se k nákupu · volitelné')) + '</p>' + productCard(r.addon.product, T('Doplnok', 'Doplněk'), money(r.addon.price, p.currency), '', [], r.addon.note || '', false);
-      if (r.total != null) next += '<p class="cx-bundle-total"><b>' + esc(T('Spolu za odporúčanú zostavu', 'Celkem za doporučenou sestavu')) + ': ' + esc(money(r.total, p.currency)) + '</b>' + (r.limit != null ? '<small>' + esc(T('V rámci vášho rozpočtu.', 'V rámci vašeho rozpočtu.')) + '</small>' : '') + '</p>';
-    }
-    if (r.set) next += '<p>' + esc(T('Hotový set od ', 'Hotový set od ') + D.brand.name) + '</p>' + productCard(r.set.product, T('Set s touto kávou', 'Set s touto kávou'), r.set.priceLabel, '', [], r.set.product.summary || '', false);
-    if (r.alternative) {
-      const alt = r.alternative;
-      next += '<p>' + esc(T('Ak by ste chceli inú', 'Pokud byste chtěli jinou')) + (alt.diff && alt.diff.length ? ': ' + esc(alt.diff.join(' · ')) : '') + '</p>' + productCard(alt.product, T('Alternatíva', 'Alternativa'), alt.price, '', [], '', false);
-    }
     if (r.shipping) next += '<p>' + esc(r.shipping) + '</p>';
     next += '<p>' + esc(T('Chcete sa opýtať na mletie, chuť alebo porovnať kávy? Pokračujte v chate.', 'Chcete se zeptat na mletí, chuť nebo porovnat kávy? Pokračujte v chatu.')) + '</p><button type="button" class="cx-quality-more" data-result-chat>' + esc(T('Spýtať sa poradcu', 'Zeptat se poradce')) + '</button>';
     content += '<section class="cx-result-next">' + next + '</section><button type="button" class="cx-quality-more" data-restart>' + esc(T('Vybrať znova', 'Vybrat znovu')) + '</button>';
@@ -100,7 +109,7 @@
     else { const r = result(); small = T('Váš výber', 'Váš výběr'); heading = r.heading; note = r.note; content = r.content; }
     panel.innerHTML = progress + '<div class="cx-quality-body"><small>' + esc(small) + '</small><h2 tabindex="-1">' + esc(heading) + '</h2>' + (note ? '<p class="cx-quality-intro">' + esc(note) + '</p>' : '') + content + '</div>';
     const body = panel.querySelector('.cx-quality-body');
-    body.classList.toggle('is-question', !!q); body.classList.toggle('is-budget', !!q && q.key === 'budget');
+    body.classList.toggle('is-question', !!q); body.classList.toggle('s3-budget', !!q && q.key === 'budget');
     body.scrollTop = 0; requestAnimationFrame(settle); body.querySelector('h2')?.focus({preventScroll: true});
   }
   function mode() { panel.hidden = false; widget.classList.add('cx-catalogue-active'); nav.querySelectorAll('button').forEach((b) => { const on = b.dataset.mode === 'advisor'; b.classList.toggle('is-active', on); b.setAttribute('aria-pressed', String(on)); }); render(); }

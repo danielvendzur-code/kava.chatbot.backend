@@ -13,7 +13,7 @@
 (function (g) {
   'use strict';
   const EPS = 1e-9;
-  const KEYS = ['prep', 'dripPick', 'tool', 'caffeine', 'taste', 'budget', 'detailProcess', 'detailMore', 'machine', 'pick', 'pick2', 'pick3'];
+  const KEYS = ['prep', 'machine', 'dripPick', 'tool', 'caffeine', 'taste', 'budget', 'detailProcess', 'detailMore', 'pick', 'pick2', 'pick3'];
   /* Zvolená káva: posledný výber, ktorý nie je „ďalšie vhodné kávy“ (more:N). */
   const chosen = (a) => [a.pick3, a.pick2, a.pick].find((v) => v && !String(v).startsWith('more:')) || null;
   const PREP_ROASTS = {espresso: ['espresso', 'omni'], moka: ['espresso', 'omni'], filter: ['filter', 'omni']};
@@ -59,7 +59,7 @@
       cafQ: 'Chcete kávu s kofeínom, alebo bez neho?', cafName: 'Kofeín', caf: {yes: ['S kofeínom', 'Bežná káva'], no: ['Bez kofeínu', 'Aj na večer']},
       tasteQ: 'Aká chuť vám sedí najviac?', tasteName: 'Chuť',
       taste: {choco: ['Čokoládová a karamelová', 'Sladká, plná, s orieškom či toffee'], fruitFull: ['Plná a ovocná', 'Višne, bobule, tmavé ovocie'], fresh: ['Svieža a šťavnatá', 'Ríbezle, citrus, čajové tóny'], decaf: ['Bez kofeínu', 'Káva aj na večer']},
-      budgetQ: 'Koľko chcete dať za celý nákup?', budgetName: 'Rozpočet', budgetAny: 'Na cene až tak nezáleží',
+      prepMachine: {auto: 'Plnoautomat na zrnkovú kávu', lever: 'Espresso, cappuccino, latte'}, budgetQ: 'Koľko chcete dať za celý nákup?', budgetName: 'Rozpočet', budgetAny: 'Na cene až tak nezáleží',
       processQ: 'Aký štýl chuti vám je bližší?', processName: 'Štýl chuti',
       procPlain: {washed: ['Čistejšia, svieža chuť', 'premývaná (washed)'], natural: ['Ovocnejšia, sladšia chuť', 'sušená v plode (natural)'],
         honey: ['Sladká, plná chuť', 'spracovanie honey'], semi: ['Vyvážená chuť', 'spracovanie semi-washed'], mix: ['Kombinácia oboch štýlov', 'natural aj washed']},
@@ -115,7 +115,7 @@
       cafQ: 'Chcete kávu s kofeinem, nebo bez něj?', cafName: 'Kofein', caf: {yes: ['S kofeinem', 'Běžná káva'], no: ['Bez kofeinu', 'I na večer']},
       tasteQ: 'Jaká chuť vám sedí nejvíc?', tasteName: 'Chuť',
       taste: {choco: ['Čokoládová a karamelová', 'Sladká, plná, s oříšky'], fruitFull: ['Plná a ovocná', 'Višně, bobule, tmavé ovoce'], fresh: ['Svěží a šťavnatá', 'Rybíz, citrus, čajové tóny'], decaf: ['Bez kofeinu', 'Káva i na večer']},
-      budgetQ: 'Kolik chcete dát za celý nákup?', budgetName: 'Rozpočet', budgetAny: 'Na ceně až tak nezáleží',
+      prepMachine: {auto: 'Plnoautomat na zrnkovou kávu', lever: 'Espresso, cappuccino, latte'}, budgetQ: 'Kolik chcete dát za celý nákup?', budgetName: 'Rozpočet', budgetAny: 'Na ceně až tak nezáleží',
       processQ: 'Jaký styl chuti je vám bližší?', processName: 'Styl chuti',
       procPlain: {washed: ['Čistší, svěží chuť', 'praná (washed)'], natural: ['Ovocnější, sladší chuť', 'sušená v plodu (natural)'],
         honey: ['Sladká, plná chuť', 'zpracování honey'], semi: ['Vyvážená chuť', 'zpracování semi-washed'], mix: ['Kombinace obou stylů', 'natural i washed']},
@@ -247,8 +247,15 @@
     const t = L(data);
     a = withPrep(data, a);
     if (!a.prep) {
+      /* s3a: ak e-shop pri espresso kávach uvádza rozdielny kávovar (automat / pákový), je to súčasť prípravy –
+         jedna otázka namiesto dvoch podobných krokov („Kávovar alebo automat“ a potom „Aký kávovar“). */
+      const esp = pool(data, {prep: 'espresso'}), ms = new Set(esp.map(machineOf));
+      const split = ms.has('auto') && ms.has('lever');
+      const mt = t.machine || TXT.sk.machine;
       const options = Object.keys(PREP_ROASTS).filter((k) => pool(data, {prep: k}).length)
-        .map((k) => ({value: k, title: t.prep[k][0], detail: t.prep[k][1], photo: PREP_PHOTO[k]}));
+        .flatMap((k) => k === 'espresso' && split
+          ? ['auto', 'lever'].map((m) => ({value: 'espresso~' + m, title: mt[m][0], detail: t.prepMachine[m], photo: m === 'auto' ? SC('coffee-automatic-brew') : '/assets/s3/coffee/machine-lever.jpg'}))
+          : [{value: k, title: t.prep[k][0], detail: t.prep[k][1], photo: PREP_PHOTO[k]}]);
       if (data.drip) options.push({value: 'drip', title: t.prep.drip[0], detail: t.prep.drip[1], photo: SC('coffee-black')});
       return {key: 'prep', name: t.prepName, title: t.prepQ, options};
     }
@@ -271,21 +278,21 @@
       if (groups.length > 1) return {key: 'tool', name: t.toolName, title: t.toolQ, options: groups.map((g) => text(g.keys[0], g.keys.length > 1 ? g.keys.map((k) => ({v60: 'V60', aeropress: 'AeroPress', frenchpress: 'French press'})[k]).join(or) : t.tool[g.keys[0]][0],
         g.keys.length > 1 ? (data.lang === 'cs' ? 'Stejná káva, mletí i postup' : 'Rovnaká káva, mletie aj postup') : t.tool[g.keys[0]][1], IL('tool-' + g.keys[0])))};
     }
-    let p = pool(data, {prep: a.prep, tool: a.tool});
+    let p = pool(data, {prep: a.prep, tool: a.tool, machine: a.machine});
     /* Kofeín je samostatná otázka iba vtedy, keď sú medzi vhodnými kávami bezkofeínové aj s kofeínom. */
     if (!a.caffeine && p.some((x) => x.decaf) && p.some((x) => !x.decaf)) {
       const cafT = t.caf || TXT.sk.caf;
       return {key: 'caffeine', name: t.cafName, title: t.cafQ, options: ['yes', 'no'].map((k) => ({value: k, title: cafT[k][0],
         detail: cafT[k][1] + ' · ' + t.nCoffees(p.filter((x) => !!x.decaf === (k === 'no')).length), photo: CAF_PHOTO[k]}))};
     }
-    p = pool(data, {prep: a.prep, tool: a.tool, caffeine: a.caffeine});
+    p = pool(data, {prep: a.prep, tool: a.tool, caffeine: a.caffeine, machine: a.machine});
     /* Chuť iba medzi zostávajúcimi kávami a iba ak sa naozaj líšia. */
     if (!a.taste) {
       const labels = Object.assign({}, t.taste, data.tasteLabels || {});
       const groups = ['choco', 'fruitFull', 'fresh'].filter((k) => p.some((x) => (!!a.caffeine || !x.decaf) && tastesOf(x).includes(k)));
       if (groups.length > 1) return {key: 'taste', name: t.tasteName, title: t.tasteQ, options: groups.map((k) => ({value: k, title: labels[k][0], detail: labels[k][1], photo: TASTE_PHOTO[k]}))};
     }
-    const base = {prep: a.prep, tool: a.tool, caffeine: a.caffeine, taste: a.taste};
+    const base = {prep: a.prep, tool: a.tool, caffeine: a.caffeine, taste: a.taste, machine: a.machine};
     p = pool(data, base);
     if (!a.budget) {
       const cheapest = p.map((x) => { const v = verifiedPacks(x, base)[0]; return v ? {x, v, sum: v.price} : null; });
@@ -406,6 +413,7 @@
   function answer(a, key, value) {
     const out = {};
     for (const k of KEYS) { if (k === key) { out[k] = value; break; } if (a[k] !== undefined) out[k] = a[k]; }
+    if (key === 'prep' && /~/.test(String(value))) { const [pr, m] = String(value).split('~'); out.prep = pr; out.machine = m; }
     return out;
   }
   function maxRemaining(data, a) {
@@ -456,11 +464,20 @@
     else if ((product.notes || []).length) reasons.push([t.taste1, t.inTaste + product.notes.slice(0, 4).join(', ') + '.']);
     if (limit !== null) reasons.push([t.inBudget, grams(pack.grams) + (addon ? ' + ' + addon.product.name : '') + t.together + money(sum, product.currency) + t.yourLimit + money(limit, product.currency) + '.']);
     const packs = verifiedPacks(product, a).map((v) => ({label: grams(v.grams), price: money(v.price, product.currency), chosen: v === pack, over: limit !== null && v.price + (addon ? addon.price : 0) > limit + EPS}));
+    /* s3a upsell: väčšie overené balenie tej istej kávy s nižšou cenou za 100 g – iba ak sa (s doplnkom) zmestí do limitu. */
+    const per100 = (v) => v.price / v.grams * 100;
+    const bigger = pack ? verifiedPacks(product, a).filter((v) => v.grams > pack.grams && per100(v) <= per100(pack) * 0.95 && (limit === null || v.price + (addon ? addon.price : 0) <= limit + EPS)).sort((x, y) => x.grams - y.grams)[0] : null;
+    const upPack = bigger ? {grams: bigger.grams, label: grams(bigger.grams), price: bigger.price, priceLabel: money(bigger.price, product.currency), url: bigger.url || product.url,
+      per100: money(Math.round(per100(bigger)), product.currency), basePer100: money(Math.round(per100(pack)), product.currency), save: Math.round((1 - per100(bigger) / per100(pack)) * 100)} : null;
+    /* s3a: číselné škály chuti, ako ich uvádza pražiareň (napr. „kyselost 4/5“, „škály (1–10): hořkost 6“). */
+    const src = String(product.tasteSource || ''), scaleMax = /1[–-]10/.test(src) ? 10 : 5;
+    const scales = [...src.matchAll(/(kyselost|hořkost|sladkost|tělo|kyslosť|horkosť|sladkosť|telo|acidita)\s*(\d+(?:[.,]\d+)?)(?:\s*\/\s*(\d+))?/gi)]
+      .map((m) => ({name: m[1].charAt(0).toUpperCase() + m[1].slice(1), value: Number(m[2].replace(',', '.')), max: Number(m[3] || scaleMax)})).filter((x) => x.value <= x.max);
     const facts = [[t.fOrigin, product.origin, 'origin'], [t.fProcess, product.process, 'process'], [t.fRoast, roastLabel, 'roast'], [t.fComp, product.compositionText, 'comp']].filter((x) => x[1]);
     const same = pool(data, a, 'pick').filter((p) => p.id !== product.id);
     /* s3 (iba dáta s altFallback): keď je káva pre odpovede jediná, ukáže sa najbližšia vhodná pre rovnakú prípravu a kofeín;
        BLACK a Nordbeans príznak nemajú, ich výsledok sa nemení. */
-    const relaxed = !same.length && data.altFallback ? pool(data, {prep: a.prep, tool: a.tool, caffeine: a.caffeine}).filter((p) => p.id !== product.id)
+    const relaxed = !same.length && data.altFallback ? pool(data, {prep: a.prep, tool: a.tool, caffeine: a.caffeine, machine: a.machine}).filter((p) => p.id !== product.id)
       .sort((x, y) => (tastesOf(y).includes(a.taste) ? 1 : 0) - (tastesOf(x).includes(a.taste) ? 1 : 0)) : [];
     const alt = same[0] || relaxed[0] || null;
     const alternative = alt ? {product: alt, diff: differences(data, product, alt, a), price: priceLine(data, alt, a)} : null;
@@ -471,7 +488,7 @@
       ? {title: t.nextV60, items: data.guides.v60.steps, link: {href: data.guides.v60.url, label: data.guides.v60.title}}
       : recipeOf(product, gk) ? {title: t.nextRecipe, items: [recipeOf(product, gk)].concat(beans ? [t.beansGrind[gk]] : []).filter(Boolean), link: product.recipeLink || null}
       : {title: t.nextTitle, items: ((beans ? t.nextBeans[gk] : grindLabel ? t.nextGround[gk](grindLabel) : t.next[gk]) || []).concat(a.tool === 'v60' && data.notes && data.notes.v60Filters ? [data.notes.v60Filters] : []), link: null};
-    return {kind: 'coffee', product, roast, pack, addon, total: sum, limit, packs, facts, reasons, alternative, next,
+    return {kind: 'coffee', product, roast, pack, addon, total: sum, limit, packs, facts, reasons, alternative, next, upPack, scales, tasteLabel: a.taste && a.taste !== 'decaf' && tasteLabels[a.taste] ? tasteLabels[a.taste][0] : (tasteLabels[(tastesOf(product)[0])] || [''])[0],
       priceVerified: !!pack, priceLabel: pack ? money(pack.price, product.currency) : t.from + money(product.priceFrom, product.currency),
       packLabel: pack ? [grams(pack.grams), roastLabel, String(pack.grind || t.beansWord).toLowerCase()].filter(Boolean).join(' · ') : t.priceInfo,
       grindNote: pack && !beans && !data.grindFree ? t.grindPriceNote : '', /* c2: cena overená iba pre zrnkovú (aj pri espresse, kde e-shop ponúka „mletá espresso“) */
