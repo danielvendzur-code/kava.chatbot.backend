@@ -149,7 +149,7 @@
     if (bubble.dataset.plusDone === bubble.innerHTML.length + ':' + bubble.textContent.slice(0, 40)) return;
     const text = bubble.textContent.trim();
     if (PENDING.test(text)) { bubble.innerHTML = TYPING(); bubble.dataset.plusDone = bubble.innerHTML.length + ':' + bubble.textContent.slice(0, 40); return; }
-    if (bubble.classList.contains('typing') || bubble.querySelector('.lg-typing, .lg-wine-card')) return;
+    if (bubble.classList.contains('typing') || bubble.querySelector('.lg-typing, .lg-wine-card, .s3-cmp, .s3-cmp-pick')) return;
     const list = parts(plainLines(bubble));
     const row = bubble.closest('.cx-message, .msg');
     if (list) { bubble.innerHTML = render(list); row?.classList.add('lg-has-wines'); }

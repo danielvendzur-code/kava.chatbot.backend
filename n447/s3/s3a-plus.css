@@ -133,3 +133,36 @@ html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-
 html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-up-go{font-size:12px;font-weight:700;color:var(--cx-brand);white-space:nowrap;}
 html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-ups .cx-bundle-total{margin:4px 0 0!important;}
 @media (max-width:360px){html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget a.s3-up{grid-template-columns:52px minmax(0,1fr) auto;}html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-up-photo{width:52px;height:52px;}html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-buy strong{font-size:19px!important;}}
+/* doprava zdarma: jeden riadok a tenký pásik */
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-ship{margin:10px 2px 0!important;display:grid;gap:6px;font-size:12.5px;line-height:1.35;color:#454b48;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-ship i{display:block;height:5px;border-radius:99px;background:color-mix(in srgb,var(--cx-brand,#333) 12%,#ece9e4);position:relative;overflow:hidden;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-ship i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--s3-ship);border-radius:inherit;background:var(--cx-brand);}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-ship.is-free span::before{content:"✓ ";font-weight:700;color:var(--cx-brand);}
+/* zhrnutie odpovedí nad výsledkom – nenápadné, jeden riadok */
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-picked{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-pick{all:unset;box-sizing:border-box;cursor:pointer;font-size:11.5px;line-height:1;padding:6px 9px;border-radius:99px;background:color-mix(in srgb,var(--cx-brand,#333) 7%,#fff);border:1px solid color-mix(in srgb,var(--cx-brand,#333) 14%,#e6e2dc);color:#3e4441;white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:ellipsis;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-pick:hover{border-color:var(--cx-brand);}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-pick:focus-visible{outline:2px solid var(--cx-brand);outline-offset:1px;}
+/* chat: porovnanie dvoch káv */
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-message:has(.s3-cmp,.s3-cmp-pick) .cx-bubble{max-width:min(100%,360px)!important;width:100%;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-pick,html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp{display:block;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin-top:10px;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-tile{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:5px;padding:6px;border-radius:12px;background:#fff;border:1px solid var(--lg-line);text-align:center;font-size:11.5px;line-height:1.2;font-weight:600;transition:border-color .16s ease,box-shadow .16s ease;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-tile img{width:100%;aspect-ratio:1;object-fit:contain;border-radius:8px;background:var(--lg-soft);mix-blend-mode:multiply;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-tile span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-tile:hover{border-color:var(--cx-brand);}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-tile[aria-pressed="true"]{border-color:var(--cx-brand);box-shadow:inset 0 0 0 1px var(--cx-brand);}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-tile:focus-visible{outline:2px solid var(--cx-brand);outline-offset:2px;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:10px;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-col{display:flex;flex-direction:column;gap:5px;padding:8px;border-radius:14px;background:#fff;border:1px solid var(--lg-line);min-width:0;font-size:12px;line-height:1.3;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-photo{display:block;border-radius:10px;background:var(--lg-soft);overflow:hidden;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-photo img{display:block;width:100%;height:96px;object-fit:contain;mix-blend-mode:multiply;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-col>b{font-size:13px;line-height:1.25;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-row{display:flex;flex-direction:column;gap:1px;}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget .s3-cmp-row i{font-style:normal;font-size:10.5px;opacity:.6;text-transform:uppercase;letter-spacing:.03em;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-cmp .s3-scale{display:grid;grid-template-columns:52px 1fr;gap:6px;font-size:11px;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-cmp .s3-scale i{font-style:normal;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-cmp .s3-scale b{display:none;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-cmp .s3-scale-bar{height:5px;border-radius:99px;background:color-mix(in srgb,var(--cx-brand,#333) 12%,#ece9e4);position:relative;overflow:hidden;}
+html body #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s3-cmp .s3-scale-bar::after{content:"";position:absolute;inset:0 auto 0 0;width:calc(var(--s3-v) * 100%);border-radius:inherit;background:var(--cx-brand);}
+html body #cosmetics-root#cosmetics-root #cx-widget#cx-widget a.s3-cmp-go{margin-top:auto;padding-top:4px;font-weight:700;color:var(--cx-brand)!important;text-decoration:none!important;font-size:12px;}

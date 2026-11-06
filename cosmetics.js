@@ -221,7 +221,7 @@
     if (next === 'advisor') renderAdvisor(); else renderChat();
   }
 
-  function messageText(message){const text=esc(message.text).replace(/\n/g,'<br>');if(message.role!=='assistant')return text;const catalogue=globalThis.CX_CATALOGUES?.[slug]?.products||brand.catalogue||brand.products||[];const products=globalThis.CXAdvisorCore?.prepare?globalThis.CXAdvisorCore.prepare(catalogue):catalogue;const urls=new Set(products.filter(p=>!p.source?.recommendationHold).map(p=>esc(p.url)));if(slug==='kapyderm')urls.add('https://www.kapyderm.sk/kontakty');for(const url of [brand.website,brand.url])if(url)urls.add(esc(url));return text.replace(/https?:\/\/[^\s<>]+/g,value=>{let url=value;if(!urls.has(url))url=url.replace(/[.,;]+$/,'');return urls.has(url)?'<a href="'+url+'">Pozrieť produkt</a>'+value.slice(url.length):value;});}
+  function messageText(message){if(message.html)return message.html;const text=esc(message.text).replace(/\n/g,'<br>');if(message.role!=='assistant')return text;const catalogue=globalThis.CX_CATALOGUES?.[slug]?.products||brand.catalogue||brand.products||[];const products=globalThis.CXAdvisorCore?.prepare?globalThis.CXAdvisorCore.prepare(catalogue):catalogue;const urls=new Set(products.filter(p=>!p.source?.recommendationHold).map(p=>esc(p.url)));if(slug==='kapyderm')urls.add('https://www.kapyderm.sk/kontakty');for(const url of [brand.website,brand.url])if(url)urls.add(esc(url));return text.replace(/https?:\/\/[^\s<>]+/g,value=>{let url=value;if(!urls.has(url))url=url.replace(/[.,;]+$/,'');return urls.has(url)?'<a href="'+url+'">Pozrieť produkt</a>'+value.slice(url.length):value;});}
   function messageMarkup(message) {
     const avatar = message.role === 'assistant' ? `<span class="cx-message-avatar${avatarUsesRawImageLogo ? ' is-image-logo' : ''}">${avatarMarkup}</span>` : '';
     return `<div class="cx-message cx-message--${message.role}">${avatar}<div class="cx-bubble">${messageText(message)}</div></div>`;
@@ -235,16 +235,18 @@
           ${state.messages.map(messageMarkup).join('')}
         </div>
         <div class="cx-chat-bottom">
-          ${!state.interacted ? `<div class="cx-chips">${CHIPS.map((chip) => `<button class="cx-chip" type="button">${esc(chip)}</button>`).join('')}</div>` : ''}
+          ${!state.interacted ? `<div class="cx-chips">${(window.CX_S3_CHIPS ? window.CX_S3_CHIPS(CHIPS) : CHIPS).map((chip) => typeof chip === 'object' ? `<button class="cx-chip" type="button" data-s3-action="${esc(chip.action)}">${esc(chip.label)}</button>` : `<button class="cx-chip" type="button">${esc(chip)}</button>`).join('')}</div>` : ''}
           <form class="cx-composer" id="cx-form"><input id="cx-input" maxlength="500" autocomplete="off" placeholder="${esc(SEG.placeholder || 'Opýtajte sa na starostlivosť…')}" aria-label="Otázka"><button type="submit" aria-label="Odoslať" ${state.busy?'disabled':''}>${icons.send}</button></form>
         </div>
       </section>`;
     stage.querySelector('#cx-advisor-entry')?.addEventListener('click', () => setMode('advisor'));
-    stage.querySelectorAll('.cx-chip').forEach((button) => button.addEventListener('click', () => send(button.textContent)));
+    stage.querySelectorAll('.cx-chip').forEach((button) => button.addEventListener('click', () => button.dataset.s3Action && window.CX_S3_CHIP_ACTION ? window.CX_S3_CHIP_ACTION(button.dataset.s3Action, button.textContent) : send(button.textContent)));
     stage.querySelector('#cx-form').addEventListener('submit', (event) => { event.preventDefault(); const input=stage.querySelector('#cx-input'); const value=input.value; input.value=''; send(value); });
     requestAnimationFrame(() => { const messages=stage.querySelector('#cx-messages'); if(messages) messages.scrollTop=messages.scrollHeight; });
   }
 
+  /* séria 3: rozhranie pre doplnky chatu (porovnanie káv, nadviazanie na výber) – správy pridáva iba overené jadro v prehliadači. */
+  window.CX_CHAT_API = {state, render: () => renderChat(), send: (t) => send(t)};
   function localReply(text) {
     const q = String(text||'').toLocaleLowerCase('sk');
     if (/such|pnut|dehyd/.test(q)) return `Pri suchej alebo napnutej pleti by som začal produktom ${brand.products.find(p=>p.tags.includes('dry'))?.name || brand.products[0].name}. Cez Výber starostlivosti ešte zohľadníme, či chcete krém, sérum alebo olej.`;

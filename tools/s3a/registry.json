@@ -9,6 +9,12 @@
     "landing": "/assets/s3/beansmiths/wordmark.png",
     "header": "/assets/s3/beansmiths/wordmark.png",
     "avatar": "/assets/s3/beansmiths/logo.png"
+   },
+   "freeShip": {
+    "from": 500,
+    "note": "Poštovné zdarma nad 500 Kč",
+    "source": "https://beansmiths.com/",
+    "checkedAt": "2026-11-06"
    }
   },
   "merrybeans": {
@@ -20,6 +26,12 @@
     "header": "/assets/s3/merrybeans/wordmark-line.png",
     "avatar": "/assets/s3/merrybeans/logo.png",
     "cover": true
+   },
+   "freeShip": {
+    "from": 950,
+    "note": "Doprava zdarma nad 950 Kč",
+    "source": "https://www.merrybeans.cz/",
+    "checkedAt": "2026-11-06"
    }
   },
   "typika": {
@@ -30,6 +42,12 @@
     "landing": "/assets/s3/typika/logo.png",
     "header": "/assets/s3/typika/logo.png",
     "avatar": "/assets/s3/typika/logo.png"
+   },
+   "freeShip": {
+    "from": 1500,
+    "note": "Doprava zdarma na všechny objednávky nad 1 500 Kč",
+    "source": "https://typika.coffee/",
+    "checkedAt": "2026-11-06"
    }
   },
   "mlsnacava": {
@@ -194,6 +212,12 @@
      "/assets/scenes/cotton-care.jpg",
      "/assets/s3/scenes-k2/skin-normal.jpg"
     ]
+   },
+   "freeShip": {
+    "from": 1000,
+    "note": "Doprava zdarma při nákupu nad 1 000 Kč",
+    "source": "https://www.tarani.cz/",
+    "checkedAt": "2026-11-06"
    }
   },
   "coffeesource": {
@@ -204,6 +228,12 @@
     "landing": "/assets/s3/coffeesource/logo.svg",
     "header": "/assets/s3/coffeesource/logo-white.svg",
     "avatar": "/assets/s3/coffeesource/mark.svg"
+   },
+   "freeShip": {
+    "from": 900,
+    "note": "Doprava po ČR zdarma od 900 Kč",
+    "source": "https://coffeesource.eu/",
+    "checkedAt": "2026-11-06"
    }
   },
   "fiftybeans": {
@@ -224,6 +254,12 @@
     "landing": "/assets/s3/dosmundos/logo.png",
     "header": "/assets/s3/dosmundos/logo.png",
     "avatar": "/assets/s3/dosmundos/mark.png"
+   },
+   "freeShip": {
+    "from": 1200,
+    "note": "Vybraná doprava zdarma při objednávce nad 1 200 Kč",
+    "source": "https://www.dos-mundos.cz/dopravaaplatba/",
+    "checkedAt": "2026-11-06"
    }
   },
   "illimite": {
@@ -234,6 +270,12 @@
     "landing": "/assets/s3/illimite/logo.svg",
     "header": "/assets/s3/illimite/logo-white.svg",
     "avatar": "/assets/s3/illimite/mark.png"
+   },
+   "freeShip": {
+    "from": 100,
+    "note": "Doprava zadarmo pri kúpe nad 100 €",
+    "source": "https://illimite.sk/",
+    "checkedAt": "2026-11-06"
    }
   },
   "teamountain": {
@@ -475,6 +517,12 @@
      "/assets/s3/tea/any3.jpg",
      "/assets/s3/tea/any4.jpg"
     ]
+   },
+   "freeShip": {
+    "from": 2500,
+    "note": "Poštovné zdarma od 2 500 Kč",
+    "source": "https://www.teamountain.cz/doprava-a-platba/",
+    "checkedAt": "2026-11-06"
    }
   },
   "vitellaria": {
@@ -966,6 +1014,12 @@
      "Rovné a lehce vlnité",
      "Péče pro rovné vlasy"
     ]
+   },
+   "freeShip": {
+    "from": 1399,
+    "note": "PPL výdejní místo zdarma při nákupu od 1 399 Kč",
+    "source": "https://ethia.cz/doprava-a-platba/",
+    "checkedAt": "2026-11-06"
    }
   },
   "pureharmony": {
@@ -1187,6 +1241,12 @@
     "landing": "/assets/s3/voznice/logo.png",
     "header": "/assets/s3/voznice/logo.png",
     "avatar": "/assets/s3/voznice/mark.png"
+   },
+   "freeShip": {
+    "from": 1500,
+    "note": "Objednávky odesílají zdarma nad 1 500 Kč",
+    "source": "https://www.prazirnavoznice.cz/doprava-a-platba",
+    "checkedAt": "2026-11-06"
    }
   },
   "ceskava": {
@@ -1197,6 +1257,12 @@
     "landing": "/assets/s3/ceskava/logo.png",
     "header": "/assets/s3/ceskava/logo.png",
     "avatar": "/assets/s3/ceskava/mark.png"
+   },
+   "freeShip": {
+    "from": 1500,
+    "note": "Uloženka a Zásilkovna zdarma od 1 500 Kč",
+    "source": "https://www.ceskava.cz/a/doprava-a-platby",
+    "checkedAt": "2026-11-06"
    }
   },
   "kamikava": {
@@ -1607,6 +1673,12 @@
     "landing": "/assets/s3/kafeprosebe/logo.png",
     "header": "/assets/s3/kafeprosebe/logo.png",
     "avatar": "/assets/s3/kafeprosebe/mark.png"
+   },
+   "freeShip": {
+    "from": 1000,
+    "note": "Doprava zdarma při nákupu nad 1 000 Kč",
+    "source": "https://www.kafeprosebe.cz/",
+    "checkedAt": "2026-11-06"
    }
   },
   "poppybeans": {

@@ -76,11 +76,24 @@
     const desc = r.kind === 'drip' ? (r.option && r.option.detail) : p.summary;
     return '<article class="cx-quality-product is-primary s3-hero" data-product-id="' + esc(p.id || '') + '"><div class="cx-quality-product-photo s3-hero-photo"><img src="' + esc(p.photo || '/assets/quality-product-placeholder.svg') + '" alt="' + esc(p.name) + '" loading="eager" onerror="this.onerror=null;this.src=\'/assets/quality-product-placeholder.svg\'"></div><div class="cx-quality-product-copy"><small>' + esc(T('Odporúčam vám', 'Doporučuji vám')) + '</small><h2>' + esc(p.name) + '</h2>' + (meta ? '<p class="s3-meta">' + esc(meta) + '</p>' : '') + taste + '<div class="s3-buy"><span><strong>' + esc(r.priceLabel || T('Cenu potvrdí e-shop', 'Cenu potvrdí e-shop')) + '</strong>' + (r.packLabel ? '<small>' + esc(r.packLabel) + '</small>' : '') + '</span>' + shopLink(p.url) + '</div></div>' + (desc ? '<p class="cx-product-description">' + esc(desc) + '</p>' : '') + '</article>';
   }
+  /* s3a: doprava zdarma podľa e-shopu (overený prah v registri) – jeden riadok s pásikom; nikdy nepreplní výsledok. */
+  const FS = (window.S3_REG && window.S3_REG.demos && window.S3_REG.demos[slug] || {}).freeShip;
+  function freeShip(sum, cur, closer) {
+    if (!FS || !Number.isFinite(sum)) return '';
+    const left = FS.from - sum, pct = Math.max(4, Math.min(100, sum / FS.from * 100));
+    const txt = left <= 0.001 ? FS.note
+      : T('Do dopravy zdarma vám chýba ', 'Do dopravy zdarma vám chybí ') + money(Math.ceil(left), cur) + (closer && closer >= left ? T(' – väčšie balenie ju dorovná', ' – větší balení ji dorovná') : '');
+    return '<p class="s3-ship' + (left <= 0.001 ? ' is-free' : '') + '" style="--s3-ship:' + pct.toFixed(1) + '%"><span>' + esc(txt) + '</span><i></i></p>';
+  }
   function result() {
     const r = E.result(D, state.answers);
     if (!r) return {heading: T('Takúto kombináciu v ponuke nemáme', 'Takovou kombinaci v nabídce nemáme'), note: T('Vráťte sa o krok späť a zvoľte inú možnosť.', 'Vraťte se o krok zpět a zvolte jinou možnost.'), content: ''};
     const p = r.product;
-    let content = hero(r);
+    /* s3a: zhrnutie odpovedí – malé štítky v jednom riadku; ťuknutie vráti k tomu kroku (bez výberu konkrétnej kávy). */
+    const picked = state.trail.map((a, i) => { const q = E.nextQuestion(D, a), nx = state.trail[i + 1] || state.answers; if (!q || /^pick/.test(q.key)) return null; const o = q.options.find((x) => E.answer(a, q.key, x.value)[q.key] === nx[q.key] && (q.key !== 'prep' || E.answer(a, q.key, x.value).machine === nx.machine)); return o ? '<button type="button" class="s3-pick" data-jump="' + i + '">' + esc(o.title) + '</button>' : null; }).filter(Boolean).slice(0, 4);
+    let content = picked.length > 1 ? '<div class="s3-picked" aria-label="' + esc(T('Vaše odpovede', 'Vaše odpovědi')) + '">' + picked.join('') + '</div>' : '';
+    content += hero(r);
+    if (r.kind !== 'drip') content += freeShip(r.total != null ? r.total : (r.pack && r.pack.price), p.currency, r.upPack && r.pack ? r.upPack.price - r.pack.price : 0);
     /* upsell: väčšie balenie, doplnok, set firmy a druhá káva na ochutnanie – všetko z overených údajov e-shopu */
     const ups = [];
     if (r.upPack) ups.push(up(r.upPack.url, p.photo, T('Väčšie balenie vyjde výhodnejšie', 'Větší balení vyjde výhodněji'), p.name + ' · ' + r.upPack.label, r.upPack.per100 + T(' za 100 g namiesto ', ' za 100 g místo ') + r.upPack.basePer100 + ' (−' + r.upPack.save + ' %)', r.upPack.priceLabel));
@@ -124,6 +137,7 @@
     if (!b.closest('.cx-quality-stage')) return;
     if (b.hasAttribute('data-result-chat')) { nav.querySelector('[data-mode="chat"]')?.click(); return; }
     if (b.hasAttribute('data-choice')) { const q = E.nextQuestion(D, state.answers); if (!q) return; state.trail.push(state.answers); state.answers = E.answer(state.answers, q.key, b.dataset.choice); render(); return; }
+    if (b.hasAttribute('data-jump')) { const i = Number(b.dataset.jump); if (state.trail[i]) { state.answers = state.trail[i]; state.trail = state.trail.slice(0, i); render(); } return; }
     if (b.hasAttribute('data-back') && state.trail.length) { state.answers = state.trail.pop(); render(); return; }
     if (b.hasAttribute('data-restart')) restart();
   }, true);
