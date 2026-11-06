@@ -23,7 +23,7 @@ for (const size of SIZES.split(',')) {
     const imgs = opts.map((o) => o.querySelector('img')?.getAttribute('src')?.split('?')[0]).filter(Boolean);
     const hs = opts.map((c) => Math.round(c.getBoundingClientRect().height));
     const txt = panel.innerText, main = panel.querySelector('.cx-quality-product.is-primary');
-    return {h2: panel.querySelector('.cx-quality-body > h2')?.textContent || '', choices: opts.filter((o) => o.dataset.choice !== undefined).map((o) => o.dataset.choice), more: !!panel.querySelector('[data-page-next]'),
+    return {same: (() => { const k = opts.filter((o) => o.dataset.choice !== undefined && !/^more:/.test(o.dataset.choice)).map((o) => [...o.querySelectorAll('b, small, span, p')].map((e) => e.textContent).join(' ').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()); return k.filter((x, i) => x && k.indexOf(x) !== i); })(), h2: panel.querySelector('.cx-quality-body > h2')?.textContent || '', choices: opts.filter((o) => o.dataset.choice !== undefined).map((o) => o.dataset.choice), more: !!panel.querySelector('[data-page-next]'),
       hscroll: document.documentElement.scrollWidth > vw + 1, out: opts.some((e) => { const x = e.getBoundingClientRect(); return x.right > pr.right + 1 || x.left < pr.left - 1; }),
       dup: imgs.length !== new Set(imgs).size, broken: [...panel.querySelectorAll('img')].filter((i) => i.complete && i.naturalWidth === 0).length,
       unequal: hs.length > 1 && Math.max(...hs) - Math.min(...hs) > 1, bad: /undefined|NaN|\[object/.test(txt), emptyTitle: opts.some((o) => !o.querySelector('b')?.textContent.trim()),
@@ -41,7 +41,7 @@ for (const size of SIZES.split(',')) {
       if (s.hscroll || s.bad || (s.broken && !NOIMG)) fails.push(label + ': výsledok ' + JSON.stringify({h: s.hscroll, bad: s.bad, broken: s.broken}));
       return;
     }
-    const bad = [s.hscroll && 'hscroll', s.out && 'mimo panela', s.dup && !NOIMG && 'opakovaná fotka', s.broken && !NOIMG && 'rozbitý obrázok', s.unequal && 'nerovnaká výška', s.bad && 'undefined/NaN', s.emptyTitle && 'prázdny názov'].filter(Boolean);
+    const bad = [s.hscroll && 'hscroll', s.out && 'mimo panela', s.dup && !NOIMG && 'opakovaná fotka', s.broken && !NOIMG && 'rozbitý obrázok', s.unequal && 'nerovnaká výška', s.bad && 'undefined/NaN', s.emptyTitle && 'prázdny názov', s.same && s.same.length && 'významovo rovnaké odpovede: ' + s.same.join(' / ')].filter(Boolean);
     if (bad.length) fails.push(label + ' [' + s.h2 + ']: ' + bad.join(', '));
     for (const v of s.choices) {
       await p.click(`.cx-quality-stage [data-choice="${v}"]`); await p.waitForTimeout(30);

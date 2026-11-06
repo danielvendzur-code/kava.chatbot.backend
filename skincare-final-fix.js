@@ -29,9 +29,12 @@
     const teaser = document.createElement('div');
     teaser.id = 'cx-teaser';
     teaser.className = 'cx-teaser';
+    /* s3a: texty a prístupný názov podľa segmentu (káva, čaj) – nie „výber starostlivosti“ pri káve. */
+    const SEG = window.CX_SEGMENT || {};
+    const tesc = (v) => String(v).replace(/[&<>"]/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'})[c]);
     teaser.innerHTML = `
-      <button class="cx-teaser-open" type="button" aria-label="Otvoriť výber starostlivosti">
-        <b>Pomôcť s výberom?</b><span>Krátky výber · konkrétny produkt</span>
+      <button class="cx-teaser-open" type="button" aria-label="${tesc(SEG.teaserAria || 'Otvoriť výber starostlivosti')}">
+        <b>${tesc(SEG.teaserTitle || 'Pomôcť s výberom?')}</b><span>${tesc(SEG.teaserNote || 'Krátky výber · konkrétny produkt')}</span>
       </button>
       <button class="cx-teaser-close" type="button" aria-label="Zavrieť náhľad">×</button>`;
     originalTeaser.replaceWith(teaser);

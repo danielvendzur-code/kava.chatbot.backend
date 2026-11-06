@@ -285,7 +285,8 @@
     "entrySmall": "VÝBĚR ČAJE",
     "entryTitle": "Najít vhodný čaj",
     "entryNote": "Druh · charakter · rozpočet",
-    "placeholder": "Zeptejte se na čaj…"
+    "placeholder": "Zeptejte se na čaj…",
+    "teaserAria": "Otevřít výběr čaje"
    },
    "stepCopy": {
     "careUse": [
@@ -1214,6 +1215,386 @@
     "landing": "/assets/s3/laprazirna/logo.png",
     "header": "/assets/s3/laprazirna/logo-header.png",
     "avatar": "/assets/s3/laprazirna/mark.png"
+   }
+  },
+  "mydlozfarmy": {
+   "type": "cosmetics",
+   "segment": "cosmetics",
+   "name": "Mydlo z farmy",
+   "country": "SK",
+   "logos": {
+    "avatar": "/assets/s3/mydlozfarmy/mark.png"
+   },
+   "brand": {
+    "name": "Mydlo z farmy",
+    "fullName": "Mydlo z farmy",
+    "domain": "mydlozfarmy.sk",
+    "website": "https://www.mydlozfarmy.sk/",
+    "url": "https://www.mydlozfarmy.sk/",
+    "theme": {
+     "brand": "#3a3330",
+     "accent": "#8e3a8c",
+     "soft": "#f6f1f4",
+     "paper": "#ffffff",
+     "ink": "#2b2624",
+     "line": "#e6dce3"
+    },
+    "logo": "/assets/s3/mydlozfarmy/logo.png",
+    "mark": "/assets/s3/mydlozfarmy/mark.png",
+    "hero": "",
+    "quickChips": [
+     "Jemné mydlo pre citlivú pokožku",
+     "Niečo pánske",
+     "Tuhý šampón",
+     "Darček do 15 €"
+    ],
+    "lang": "sk",
+    "greeting": "Dobrý deň. Napíšte, aké mydlo alebo starostlivosť hľadáte a akú vôňu máte radi. Pomôžem vám vybrať z ponuky Mydlo z farmy."
+   },
+   "segmentText": {
+    "includedChat": "Druh produktu, charakter mydla, zloženie aj porovnanie dvoch produktov.",
+    "includedAdvisor": "Druh produktu a charakter mydla — na konci konkrétny produkt.",
+    "placeholder": "Opýtajte sa na mydlá…"
+   },
+   "stepCopy": {
+    "careUse": [
+     "Čo hľadáte?",
+     "Mydlá podľa kategórií e-shopu alebo iný druh produktu.",
+     "Druh produktu"
+    ],
+    "skinFocus": [
+     "Ktorá hlavná zložka vám sedí?",
+     "Podľa názvu a zloženia mydla v e-shope.",
+     "Hlavná zložka"
+    ],
+    "budget": [
+     "Do akej sumy vyberáme?",
+     "Cena za vybraný produkt.",
+     "Rozpočet"
+    ]
+   },
+   "panelText": [],
+   "choicePhotos": {
+    "s3Gentle": [
+     "/assets/s3/scenes-k2/oats.jpg"
+    ],
+    "s3Spicy": [
+     "/assets/s3/scenes-k2/cinnamon.jpg"
+    ],
+    "s3Fresh": [
+     "/assets/s3/scenes-k2/mandarin.jpg"
+    ],
+    "s3Herbal": [
+     "/assets/s3/scenes-k2/lavender-bunch.jpg"
+    ],
+    "s3Women": [
+     "/assets/s3/scenes-k2/poppy.jpg"
+    ],
+    "s3Men": [
+     "/assets/s3/scenes-k2/man-towel.jpg"
+    ],
+    "s3Hair": [
+     "/assets/s3/scenes-k2/hair-shampoo-foam.jpg"
+    ],
+    "s3Butter": [
+     "/assets/scenes/cream-texture.jpg"
+    ],
+    "s3Lips": [
+     "/assets/s3/scenes-k2/lip-balm.jpg"
+    ],
+    "s3LavSage": [
+     "/assets/s3/scenes-k2/clary-sage.jpg"
+    ],
+    "s3Lavender": [
+     "/assets/s3/scenes-k2/lavender-field.jpg"
+    ],
+    "s3Mint": [
+     "/assets/s3/scenes-k2/mint-herbs.jpg"
+    ],
+    "s3Nettle": [
+     "/assets/s3/scenes-k2/nettle.jpg"
+    ],
+    "s3Poppy": [
+     "/assets/s3/scenes-k2/poppy.jpg"
+    ],
+    "s3Geranium": [
+     "/assets/s3/scenes-k2/geranium.jpg"
+    ],
+    "s3LavRosemary": [
+     "/assets/s3/scenes-k2/rosemary.jpg"
+    ],
+    "s3Argan": [
+     "/assets/s3/scenes-k2/argan-tree.jpg"
+    ],
+    "s3Olive": [
+     "/assets/s3/scenes-k2/olives.jpg"
+    ],
+    "s3Hemp": [
+     "/assets/s3/scenes-k2/hemp.jpg"
+    ],
+    "s3Carrot": [
+     "/assets/s3/scenes-k2/carrots.jpg"
+    ],
+    "s3Buckthorn": [
+     "/assets/s3/scenes-k2/sea-buckthorn.jpg"
+    ],
+    "s3Oats": [
+     "/assets/s3/scenes-k2/oats.jpg"
+    ],
+    "s3Coffee": [
+     "/assets/s3/scenes-k2/coffee-beans.jpg"
+    ],
+    "s3Dragon": [
+     "/assets/s3/scenes-k2/incense.jpg"
+    ],
+    "s3Citrus": [
+     "/assets/s3/scenes-k2/citrus.jpg"
+    ],
+    "s3Lemonbalm": [
+     "/assets/s3/scenes-k2/lemon-balm.jpg"
+    ],
+    "s3Mandarin": [
+     "/assets/s3/scenes-k2/mandarin.jpg"
+    ],
+    "s3Cedar": [
+     "/assets/s3/scenes-k2/cypress.jpg"
+    ],
+    "s3SeaSalt": [
+     "/assets/s3/scenes-k2/sea-salt.jpg"
+    ],
+    "s3Rosemary": [
+     "/assets/s3/scenes-k2/rosemary.jpg"
+    ],
+    "s3Cinnamon": [
+     "/assets/s3/scenes-k2/cinnamon.jpg"
+    ],
+    "s3HairWash": [
+     "/assets/s3/scenes-k2/hemp.jpg"
+    ],
+    "s3BodyCare": [
+     "/assets/scenes/hands-cream.jpg"
+    ],
+    "s3LipCare": [
+     "/assets/s3/scenes-k2/vanilla.jpg"
+    ],
+    "*": [
+     "/assets/s3/scenes-k2/hand-wash.jpg",
+     "/assets/scenes/gift-care.jpg",
+     "/assets/s3/scenes-k2/milk.jpg",
+     "/assets/s3/scenes-k2/body-shower.jpg"
+    ]
+   },
+   "traitCopy": {
+    "s3Soap": [
+     "Mydlo",
+     "Ručne robené, s kozím mliekom",
+     "Mýdlo",
+     "Ručně dělané, s kozím mlékem"
+    ],
+    "s3Hair": [
+     "Tuhý šampuk",
+     "Šampón v tuhej forme",
+     "Tuhý šampon",
+     "Šampon v tuhé formě"
+    ],
+    "s3Butter": [
+     "Telové maslo",
+     "Bambucké maslo",
+     "Tělové máslo",
+     "Bambucké máslo"
+    ],
+    "s3Lips": [
+     "Balzam na pery",
+     "Starostlivosť o pery",
+     "Balzám na rty",
+     "Péče o rty"
+    ],
+    "s3Gentle": [
+     "Jemné mydlá",
+     "Pre citlivú pokožku",
+     "Jemná mýdla",
+     "Pro citlivou pokožku"
+    ],
+    "s3Spicy": [
+     "Korenisté mydlá",
+     "Káva, škorica, céder",
+     "Kořeněná mýdla",
+     "Káva, skořice, cedr"
+    ],
+    "s3Fresh": [
+     "Svieže mydlá",
+     "Citrusy, mäta",
+     "Svěží mýdla",
+     "Citrusy, máta"
+    ],
+    "s3Herbal": [
+     "Bylinkové mydlá",
+     "Levanduľa, šalvia, žihľava",
+     "Bylinková mýdla",
+     "Levandule, šalvěj, kopřiva"
+    ],
+    "s3Women": [
+     "Dámske mydlá",
+     "Kvetinové vône",
+     "Dámská mýdla",
+     "Květinové vůně"
+    ],
+    "s3Men": [
+     "Pánske mydlá",
+     "Rozmarín, céder, škorica",
+     "Pánská mýdla",
+     "Rozmarýn, cedr, skořice"
+    ],
+    "s3HairWash": [
+     "Tuhý šampuk",
+     "Konopný",
+     "Tuhý šampon",
+     "Konopný"
+    ],
+    "s3BodyCare": [
+     "Bambucké maslo",
+     "Nerafinované",
+     "Bambucké máslo",
+     "Nerafinované"
+    ],
+    "s3LipCare": [
+     "Balzam na pery",
+     "Vanilkový",
+     "Balzám na rty",
+     "Vanilkový"
+    ],
+    "s3LavSage": [
+     "Levanduľa a šalvia",
+     "Esenciálne oleje",
+     "Levandule a šalvěj",
+     "Esenciální oleje"
+    ],
+    "s3Lavender": [
+     "Levanduľa",
+     "Levanduľový olej",
+     "Levandule",
+     "Levandulový olej"
+    ],
+    "s3Mint": [
+     "Mäta",
+     "Mätový olej",
+     "Máta",
+     "Mátový olej"
+    ],
+    "s3Nettle": [
+     "Žihľava",
+     "S čajovníkovým olejom",
+     "Kopřiva",
+     "S čajovníkovým olejem"
+    ],
+    "s3Poppy": [
+     "Mak",
+     "Makový olej, kvetinová vôňa",
+     "Mák",
+     "Makový olej, květinová vůně"
+    ],
+    "s3Geranium": [
+     "Levanduľa a geránium",
+     "Kvetinová vôňa",
+     "Levandule a geránie",
+     "Květinová vůně"
+    ],
+    "s3LavRosemary": [
+     "Levanduľa a rozmarín",
+     "Esenciálne oleje",
+     "Levandule a rozmarýn",
+     "Esenciální oleje"
+    ],
+    "s3Argan": [
+     "Argánový olej",
+     "S vôňou geránia",
+     "Arganový olej",
+     "S vůní geránie"
+    ],
+    "s3Olive": [
+     "Olivový olej",
+     "Pre citlivú a detskú pokožku",
+     "Olivový olej",
+     "Pro citlivou a dětskou pokožku"
+    ],
+    "s3Hemp": [
+     "Konopný olej",
+     "S kozím mliekom",
+     "Konopný olej",
+     "S kozím mlékem"
+    ],
+    "s3Carrot": [
+     "Mrkva",
+     "Čerstvá mrkvová šťava",
+     "Mrkev",
+     "Čerstvá mrkvová šťáva"
+    ],
+    "s3Buckthorn": [
+     "Rakytník",
+     "Rakytníkový olej",
+     "Rakytník",
+     "Rakytníkový olej"
+    ],
+    "s3Oats": [
+     "Ovsené vločky",
+     "Jemné vločkové mydlo",
+     "Ovesné vločky",
+     "Jemné vločkové mýdlo"
+    ],
+    "s3Coffee": [
+     "Káva",
+     "Brazílska káva",
+     "Káva",
+     "Brazilská káva"
+    ],
+    "s3Dragon": [
+     "Dračia krv",
+     "Živica dračej krvi",
+     "Dračí krev",
+     "Pryskyřice dračí krve"
+    ],
+    "s3Citrus": [
+     "Byliny a citrusy",
+     "Zmes esenciálnych olejov",
+     "Byliny a citrusy",
+     "Směs esenciálních olejů"
+    ],
+    "s3Lemonbalm": [
+     "Medovka a citronela",
+     "Esenciálne oleje",
+     "Meduňka a citronela",
+     "Esenciální oleje"
+    ],
+    "s3Mandarin": [
+     "Mandarínka",
+     "Mandarínkový olej",
+     "Mandarinka",
+     "Mandarinkový olej"
+    ],
+    "s3Cedar": [
+     "Céder a henna",
+     "Cédrový olej",
+     "Cedr a henna",
+     "Cedrový olej"
+    ],
+    "s3SeaSalt": [
+     "Kokos a morská soľ",
+     "S morskou soľou",
+     "Kokos a mořská sůl",
+     "S mořskou solí"
+    ],
+    "s3Rosemary": [
+     "Rozmarín",
+     "Rozmarínový olej",
+     "Rozmarýn",
+     "Rozmarýnový olej"
+    ],
+    "s3Cinnamon": [
+     "Škorica",
+     "Korenistá vôňa",
+     "Skořice",
+     "Kořeněná vůně"
+    ]
    }
   }
  }

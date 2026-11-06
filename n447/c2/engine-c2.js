@@ -13,7 +13,7 @@
 (function (g) {
   'use strict';
   const EPS = 1e-9;
-  const KEYS = ['prep', 'dripPick', 'tool', 'caffeine', 'taste', 'budget', 'detailProcess', 'detailMore', 'pick', 'pick2', 'pick3'];
+  const KEYS = ['prep', 'dripPick', 'tool', 'caffeine', 'taste', 'budget', 'detailProcess', 'detailMore', 'machine', 'pick', 'pick2', 'pick3'];
   /* Zvolená káva: posledný výber, ktorý nie je „ďalšie vhodné kávy“ (more:N). */
   const chosen = (a) => [a.pick3, a.pick2, a.pick].find((v) => v && !String(v).startsWith('more:')) || null;
   const PREP_ROASTS = {espresso: ['espresso', 'omni'], moka: ['espresso', 'omni'], filter: ['filter', 'omni']};
@@ -68,6 +68,7 @@
       regionQ: 'Odkiaľ má káva pochádzať?', regionName: 'Pôvod', region: {africa: 'Afrika', asia: 'Ázia', americas: 'Stredná a Južná Amerika', blend: 'Zmes viacerých krajín'},
       blendQ: 'Aké zloženie uprednostníte?', blendName: 'Zloženie', blend: {arabica: '100 % arabika', robusta: 'S podielom robusty'},
       pickQ: 'Ktoré chute vám viac sedia?', pickName: 'Chuťové tóny',
+      machineQ: 'Aký kávovar používate?', machineName: 'Kávovar', machine: {auto: ['Automatický kávovar', 'Odporúčaná príprava: automatický kávovar'], lever: ['Pákový kávovar', 'Odporúčaná príprava: espresso']},
       roast: {espresso: 'espresso roast', filter: 'filter roast', omni: 'omni roast'},
       grindText: {espresso: 'zrnková do automatu alebo k vlastnému mlynčeku; na pákový kávovar bez mlynčeka „mletá espresso“',
         moka: 'mletá moka konvička', v60: 'mletá drip', aeropress: 'mletá aeropress', frenchpress: 'mletá french press'},
@@ -123,6 +124,7 @@
       regionQ: 'Odkud má káva pocházet?', regionName: 'Původ', region: {africa: 'Afrika', asia: 'Asie', americas: 'Střední a Jižní Amerika', blend: 'Směs více zemí'},
       blendQ: 'Jaké složení upřednostníte?', blendName: 'Složení', blend: {arabica: '100 % arabika', robusta: 'S podílem robusty'},
       pickQ: 'Které chutě vám víc sedí?', pickName: 'Chuťové tóny',
+      machineQ: 'Jaký kávovar používáte?', machineName: 'Kávovar', machine: {auto: ['Automatický kávovar', 'Doporučená příprava: automatický kávovar'], lever: ['Pákový kávovar', 'Doporučená příprava: espresso']},
       roast: {espresso: 'pražení na espresso', filter: 'pražení na filtr', omni: 'omni pražení (espresso i filtr)'},
       grindText: {espresso: 'zrnkovou do automatu nebo k vlastnímu mlýnku', moka: 'mletí pro moka konvičku', v60: 'mletí pro V60', aeropress: 'mletí pro AeroPress', frenchpress: 'mletí pro french press'},
       reasonPrep: {espresso: ['Na espresso i do automatu', (r) => r === 'omni' ? 'Pražírna ji nabízí v „omni“ pražení, vhodném na espresso i filtr.' : 'Pražírna ji nabízí v espresso pražení.'],
@@ -201,6 +203,11 @@
 
   const SPLITS = {process: processGroup, region: (p) => p.region || null, blend: (p) => p.blend || null, roast: (p) => p.roastLabel ? String(p.roastLabel).split(',')[0].trim() : null};
   const detailOf = (p, v) => { const [kind, k] = String(v).split(':'); return SPLITS[kind] ? SPLITS[kind](p) === k : false; };
+  /* s3a: e-shop uvádza pri káve „Doporučená příprava: Automatický kávovar“ alebo „Espresso“ – overený rozdiel medzi inak rovnakými kávami. */
+  const machineOf = (p) => { const x = String(p.prepText || '') + ' ' + String(p.roastLabel || '');
+    if (/automat/i.test(x)) return 'auto'; if (Array.isArray(p.preps) && p.preps.includes('espresso') && /espresso/i.test(String(p.prepText || ''))) return 'lever'; return null; };
+  /* Významovo rovnaké odpovede: rovnaký text po odstránení diakritiky, veľkosti písmen a interpunkcie. */
+  const sameKey = (o) => [o.title, o.detail].map((x) => String(x || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()).join('|');
   function pool(data, a, except) {
     return data.products.filter((p) => p.available !== false && p.kind === 'coffee')
       .filter((p) => !a.prep || a.prep === 'drip' || suits(p, a.prep))
@@ -210,6 +217,7 @@
       .filter((p) => except === 'budget' || !a.budget || a.budget === 'any' || !!packFor(data, p, a))
       .filter((p) => except === 'detailProcess' || !a.detailProcess || detailOf(p, a.detailProcess))
       .filter((p) => except === 'detailMore' || !a.detailMore || detailOf(p, a.detailMore))
+      .filter((p) => except === 'machine' || !a.machine || !machineOf(p) || machineOf(p) === a.machine)
       .filter((p) => except === 'pick' || !chosen(a) || p.id === chosen(a));
   }
   /* Káva môže patriť do viacerých chuťových skupín e-shopu (p.tastes). */
@@ -356,13 +364,30 @@
       const q = split(p, 'detailMore', used, true) || split(p, 'detailMore', used, false);
       if (q) return q;
     }
-    p = pool(data, Object.assign({}, base, {budget: a.budget, detailProcess: a.detailProcess, detailMore: a.detailMore}));
+    p = pool(data, Object.assign({}, base, {budget: a.budget, detailProcess: a.detailProcess, detailMore: a.detailMore, machine: a.machine}));
     if (!chosen(a) && p.length > 1) {
       const pages = pickPages(p), idx = a.pick2 ? 2 : a.pick ? 1 : 0, key = ['pick', 'pick2', 'pick3'][idx];
       const tp = tonePhotos(pages[idx]);
       /* c2: názov kávy (SKU) sa vo voľbe neukazuje – rozhodujú chuťové tóny; v podtitule pôvod a spracovanie. */
       const sub = (x) => [String(x.origin || '').split(/[·(]/)[0].trim(), x.process ? String(x.process).split(',')[0].trim() : ''].filter(Boolean).join(' · ') || (x.profile || '');
       const options = pages[idx].map((x) => ({value: x.id, title: tones(x), detail: sub(x), photo: tp.get(x.id), product: x.id}));
+      /* s3a: dve odpovede s rovnakým významom nie sú rozlišujúca otázka. Ak sa takéto kávy líšia doporučeným kávovarom
+         (údaj e-shopu), pýta sa najprv kávovar; inak sa rovnaká odpoveď zlúči a rozhodne poradie e-shopu. */
+      const dupKeys = options.filter((o, i) => o.product && options.findIndex((x) => sameKey(x) === sameKey(o)) !== i).map(sameKey);
+      if (dupKeys.length && !a.machine && idx === 0) {
+        const dup = p.filter((x) => dupKeys.includes(sameKey({title: tones(x), detail: sub(x)})));
+        const ms = [...new Set(dup.map(machineOf))];
+        if (ms.includes('auto') && ms.includes('lever')) {
+          const mt = t.machine || TXT.sk.machine;
+          return {key: 'machine', name: t.machineName, title: t.machineQ, options: ['auto', 'lever'].map((k) => ({value: k, title: mt[k][0],
+            detail: mt[k][1] + ' · ' + t.nCoffees(p.filter((x) => !machineOf(x) || machineOf(x) === k).length), photo: k === 'auto' ? SC('coffee-automatic-brew') : '/assets/s3/coffee/machine-lever.jpg'}))};
+        }
+      }
+      for (let i = options.length - 1; i >= 0; i--) if (options[i].product && options.findIndex((x) => sameKey(x) === sameKey(options[i])) !== i) options.splice(i, 1);
+      if (options.filter((o) => o.product).length < 2 && idx === 0 && !options.some((o) => String(o.value).startsWith('more:'))) {
+        /* po zlúčení ostala jediná káva – otázka by nemala zmysel, rozhodne prvá káva v poradí e-shopu */
+        return null;
+      }
       if (idx < pages.length - 1) {
         const later = pages.slice(idx + 1).flat();
         options.push({value: 'more:' + (idx + 1), title: t.moreTitle, detail: t.nCoffees(later.length), photo: SC('coffee-beans')});

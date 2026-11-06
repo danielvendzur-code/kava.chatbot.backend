@@ -32,7 +32,7 @@ for (const size of SIZES.split(',')) {
     const hs = [...panel.querySelectorAll('.cx-catalogue-options .cx-catalogue-option')].map((c) => Math.round(c.getBoundingClientRect().height));
     const txt = panel.innerText;
     const main = panel.querySelector('.cx-quality-product.is-primary');
-    return {question: opts.length > 0, n: opts.length, hscroll: document.documentElement.scrollWidth > vw + 1, out, dup: imgs.length !== new Set(imgs).size, imgs, broken,
+    return {same: (() => { const k = opts.filter((o) => o.dataset.choice !== undefined && !/^more:/.test(o.dataset.choice)).map((o) => [...o.querySelectorAll('b, small, span, p')].map((e) => e.textContent).join(' ').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim()); return k.filter((x, i) => x && k.indexOf(x) !== i); })(), question: opts.length > 0, n: opts.length, hscroll: document.documentElement.scrollWidth > vw + 1, out, dup: imgs.length !== new Set(imgs).size, imgs, broken,
       unequal: hs.length > 1 && Math.max(...hs) - Math.min(...hs) > 1, bad: /undefined|NaN|\[object|null/.test(txt), emptyTitle: opts.some((o) => !o.querySelector('b')?.textContent.trim()),
       name: main?.querySelector('h2')?.textContent || '', price: main?.querySelector('strong')?.textContent || '', href: main?.querySelector('a')?.getAttribute('href') || '',
       target: [...panel.querySelectorAll('a')].some((a) => a.target && a.target !== '_self'), alt: /Alternatíva|Alternativa/i.test(txt), addon: /Doplnok|Doplněk/i.test(txt),
@@ -48,7 +48,7 @@ for (const size of SIZES.split(',')) {
     for (const [k, v] of path.seq) {
       const s = await probe(); screens++;
       if (!s.question) { fails.push(label + ' chýba otázka ' + k); break; }
-      const bad = [s.hscroll && 'hscroll', s.out.length && 'mimo:' + s.out, s.dup && !NOIMG && 'opakovaná fotka', s.broken.length && 'rozbitý obrázok ' + s.broken, s.unequal && 'nerovnaká výška kariet', s.bad && 'undefined/NaN', s.emptyTitle && 'prázdny názov'].filter(Boolean);
+      const bad = [s.hscroll && 'hscroll', s.out.length && 'mimo:' + s.out, s.dup && !NOIMG && 'opakovaná fotka', s.broken.length && 'rozbitý obrázok ' + s.broken, s.unequal && 'nerovnaká výška kariet', s.bad && 'undefined/NaN', s.emptyTitle && 'prázdny názov', s.same.length && 'významovo rovnaké odpovede: ' + s.same.join(' / ')].filter(Boolean);
       if (bad.length) fails.push(label + ' @' + k + ': ' + bad.join(', '));
       if (SHOTS && shot < 6 && size.startsWith('390')) { await p.screenshot({path: `${SHOTS}/${SLUG}-${size}-q${shot}.png`}); shot++; }
       prevH2 = s.h2;

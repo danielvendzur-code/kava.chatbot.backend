@@ -14,12 +14,12 @@
       sk: {titleSuffix: 'výber kávy', greeting: 'Dobrý deň. Napíšte, ako kávu pripravujete a akú chuť máte radi. Pomôžem vám vybrať z našej ponuky.', source: 'kava-demo-',
         includedChat: 'Príprava, chuť, mletie aj porovnanie dvoch káv.', includedAdvisor: 'Príprava, chuť a rozpočet — na konci konkrétna káva.',
         heading: 'Poradí zákazníkovi kávu a odpovie mu na otázky.', lead: 'Chatbot odpovie zákazníkovi na otázky o vašej káve. Cez pár krátkych otázok mu vyberie tú, ktorá sedí jeho príprave a chuti. Predáte aj vtedy, keď pri tom nie ste.',
-        keepsAdvisor: 'na konci konkrétna káva', teaserTitle: 'Pomôcť s výberom kávy?', teaserNote: 'Krátky výber · konkrétna káva', advisorName: 'Poradca pri výbere kávy',
+        keepsAdvisor: 'na konci konkrétna káva', teaserTitle: 'Pomôcť s výberom kávy?', teaserAria: 'Otvoriť výber kávy', teaserNote: 'Krátky výber · konkrétna káva', advisorName: 'Poradca pri výbere kávy',
         tab: 'Výber kávy', entrySmall: 'VÝBER KÁVY', entryTitle: 'Nájsť vhodnú kávu', entryNote: 'Príprava · chuť · rozpočet', placeholder: 'Opýtajte sa na kávu…'},
       cs: {titleSuffix: 'výběr kávy', greeting: 'Dobrý den. Napište, jak kávu připravujete a jakou chuť máte rádi. Pomůžu vám vybrat z naší nabídky.', source: 'kava-demo-',
         includedChat: 'Příprava, chuť, mletí i porovnání dvou káv.', includedAdvisor: 'Příprava, chuť a rozpočet — na konci konkrétní káva.',
         heading: 'Poradí zákazníkovi kávu a odpoví mu na otázky.', lead: 'Chatbot odpoví zákazníkovi na otázky o vaší kávě. Přes pár krátkých otázek mu vybere tu, která sedí jeho přípravě a chuti. Prodáte i tehdy, když u toho nejste.',
-        keepsAdvisor: 'na konci konkrétní káva', teaserTitle: 'Pomoct s výběrem kávy?', teaserNote: 'Krátký výběr · konkrétní káva', advisorName: 'Poradce při výběru kávy',
+        keepsAdvisor: 'na konci konkrétní káva', teaserTitle: 'Pomoct s výběrem kávy?', teaserAria: 'Otevřít výběr kávy', teaserNote: 'Krátký výběr · konkrétní káva', advisorName: 'Poradce při výběru kávy',
         tab: 'Výběr kávy', entrySmall: 'VÝBĚR KÁVY', entryTitle: 'Najít vhodnou kávu', entryNote: 'Příprava · chuť · rozpočet', placeholder: 'Zeptejte se na kávu…'}
     }
   };
