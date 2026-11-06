@@ -383,6 +383,13 @@
             detail: mt[k][1] + ' · ' + t.nCoffees(p.filter((x) => !machineOf(x) || machineOf(x) === k).length), photo: k === 'auto' ? SC('coffee-automatic-brew') : '/assets/s3/coffee/machine-lever.jpg'}))};
         }
       }
+      /* Inak sa rovnaké odpovede doplnia o overený rozdiel zo škál pražiarne (napr. hořkost, tělo) – iba časti, ktoré sa medzi nimi líšia. */
+      const parts = (x) => String(x.tasteSource || '').split(':').slice(1).join(':').split(',').map((v) => v.trim()).filter((v) => /\d/.test(v));
+      for (const k of [...new Set(dupKeys)]) {
+        const grp = options.filter((o) => o.product && sameKey(o) === k), prods = grp.map((o) => p.find((x) => x.id === o.product));
+        const diff = prods.map((x) => parts(x).filter((v) => prods.some((y) => !parts(y).includes(v))).slice(0, 2));
+        if (diff.every((d) => d.length)) grp.forEach((o, i) => { o.detail = [o.detail, diff[i].map((v) => /\/\d/.test(v) || !/\d$/.test(v) ? v : v + (/1–10|1-10/.test(prods[i].tasteSource) ? '/10' : /\/5|0–5/.test(prods[i].tasteSource) ? '/5' : '')).join(', ')].filter(Boolean).join(' · '); });
+      }
       for (let i = options.length - 1; i >= 0; i--) if (options[i].product && options.findIndex((x) => sameKey(x) === sameKey(options[i])) !== i) options.splice(i, 1);
       if (options.filter((o) => o.product).length < 2 && idx === 0 && !options.some((o) => String(o.value).startsWith('more:'))) {
         /* po zlúčení ostala jediná káva – otázka by nemala zmysel, rozhodne prvá káva v poradí e-shopu */

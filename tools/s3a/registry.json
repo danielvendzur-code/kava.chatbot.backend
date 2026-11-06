@@ -1596,6 +1596,16 @@
      "Kořeněná vůně"
     ]
    }
+  },
+  "kafeprosebe": {
+   "type": "coffee",
+   "name": "Kafe pro sebe",
+   "country": "CZ",
+   "logos": {
+    "landing": "/assets/s3/kafeprosebe/logo.png",
+    "header": "/assets/s3/kafeprosebe/logo.png",
+    "avatar": "/assets/s3/kafeprosebe/mark.png"
+   }
   }
  }
 }
