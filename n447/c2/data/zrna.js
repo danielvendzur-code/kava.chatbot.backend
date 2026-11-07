@@ -95,7 +95,7 @@
    "tastes": [
     "fresh"
    ],
-   "tasteSource": "parametry e-shopu: acidita vyšší; chuťový profil květinové tóny , jahodový ledový čaj , červené ovoce",
+   "tasteSource": "parametry e-shopu: acidita vyšší; chuťový profil květinové tóny, jahodový ledový čaj, červené ovoce",
    "tasteProfile": [
     {
      "name": "Acidita",
@@ -182,7 +182,7 @@
    "tastes": [
     "fresh"
    ],
-   "tasteSource": "parametry e-shopu: acidita vyšší; chuťový profil citron , zelený čaj , citronová tráva",
+   "tasteSource": "parametry e-shopu: acidita vyšší; chuťový profil citron, zelený čaj, citronová tráva",
    "tasteProfile": [
     {
      "name": "Acidita",
@@ -269,7 +269,7 @@
    "tastes": [
     "fresh"
    ],
-   "tasteSource": "parametry e-shopu: acidita vyšší; chuťový profil lesní plody , burizóny v čokoládě , makový závin s rozinkami",
+   "tasteSource": "parametry e-shopu: acidita vyšší; chuťový profil lesní plody, burizóny v čokoládě, makový závin s rozinkami",
    "tasteProfile": [
     {
      "name": "Acidita",
@@ -356,7 +356,7 @@
    "tastes": [
     "fruitFull"
    ],
-   "tasteSource": "parametry e-shopu: acidita střední; chuťový profil pomeranč , čokoláda , papaya",
+   "tasteSource": "parametry e-shopu: acidita střední; chuťový profil pomeranč, čokoláda, papaya",
    "tasteProfile": [
     {
      "name": "Acidita",
@@ -444,7 +444,7 @@
    "tastes": [
     "fresh"
    ],
-   "tasteSource": "parametry e-shopu: acidita vyšší; chuťový profil pomerančový džus , pomerančová čokoláda , švestková povidla",
+   "tasteSource": "parametry e-shopu: acidita vyšší; chuťový profil pomerančový džus, pomerančová čokoláda, švestková povidla",
    "tasteProfile": [
     {
      "name": "Acidita",
@@ -531,7 +531,7 @@
    "tastes": [
     "choco"
    ],
-   "tasteSource": "parametry e-shopu: acidita nízká; chuťový profil čokoláda , marcipán , arašídy v cukru",
+   "tasteSource": "parametry e-shopu: acidita nízká; chuťový profil čokoláda, marcipán, arašídy v cukru",
    "tasteProfile": [
     {
      "name": "Acidita",
@@ -618,7 +618,7 @@
    "tastes": [
     "fruitFull"
    ],
-   "tasteSource": "parametry e-shopu: acidita střední; chuťový profil černý rybíz , karamel , maliny , ovocná , medová , tóny likéru",
+   "tasteSource": "parametry e-shopu: acidita střední; chuťový profil černý rybíz, karamel, maliny, ovocná, medová, tóny likéru",
    "tasteProfile": [
     {
      "name": "Acidita",
@@ -706,7 +706,7 @@
    "tastes": [
     "fresh"
    ],
-   "tasteSource": "parametry e-shopu: acidita vyšší; chuťový profil třešně , meruňky , černý čaj s citronem",
+   "tasteSource": "parametry e-shopu: acidita vyšší; chuťový profil třešně, meruňky, černý čaj s citronem",
    "tasteProfile": [
     {
      "name": "Acidita",
@@ -793,7 +793,7 @@
    "tastes": [
     "fruitFull"
    ],
-   "tasteSource": "parametry e-shopu: acidita střední; chuťový profil ovocný čaj , griliášové vlnky , toffee , sušené ovoce",
+   "tasteSource": "parametry e-shopu: acidita střední; chuťový profil ovocný čaj, griliášové vlnky, toffee, sušené ovoce",
    "tasteProfile": [
     {
      "name": "Acidita",
@@ -881,7 +881,7 @@
    "tastes": [
     "fresh"
    ],
-   "tasteSource": "parametry e-shopu: acidita vyšší; chuťový profil květinové tóny , jahody , brusinky , bylinkové tóny",
+   "tasteSource": "parametry e-shopu: acidita vyšší; chuťový profil květinové tóny, jahody, brusinky, bylinkové tóny",
    "tasteProfile": [
     {
      "name": "Acidita",

@@ -30,7 +30,7 @@ for p in P:
                           'source': f"Shoptet varianta {v.get('sku')} (prazirnazrna.cz, {CHECKED}): {g} g, {v['avail']}"})
     vs = sorted(by.values(), key=lambda v: v['grams'])
     if not vs: print('VYRADENÉ (žiadne dostupné balenie)', p['name']); continue
-    tones = pr.get('Chuťový profil', '')
+    tones = re.sub(r'\s*,\s*', ', ', pr.get('Chuťový profil', ''))
     notes = [n.strip() for n in tones.split(',') if n.strip() and n.strip() not in ('ovocná', 'medová')][:4]
     ac = pr.get('Acidita', '').lower()
     taste = {'nízká': 'choco', 'střední': 'fruitFull', 'vyšší': 'fresh'}.get(ac, 'fruitFull')
