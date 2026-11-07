@@ -92,6 +92,9 @@
     const pickedMarkup = picked.length > 1 ? '<div class="s3-picked" aria-label="' + esc(T('Vaše odpovede', 'Vaše odpovědi')) + '">' + picked.join('') + '</div>' : '';
     let content = hero(r);
     if (r.kind !== 'drip') content += freeShip(r.total != null ? r.total : (r.pack && r.pack.price), p.currency, r.upPack && r.pack ? r.upPack.price - r.pack.price : 0);
+    /* séria 4 (pokyn majiteľa 7. 11.): škály chuti pražiarne viditeľne hneď pod cenou – len keď ich e-shop uvádza */
+    const scaleRows = (r.scales || []).map((x) => '<span class="s3-scale"><i>' + esc(x.name) + '</i><span class="s3-scale-bar" style="--s3-v:' + (x.value / x.max) + '"></span><b>' + esc(x.value + '/' + x.max) + '</b></span>').join('');
+    if (scaleRows) content += '<section class="s4-profile" aria-label="' + esc(T('Chuťový profil podľa pražiarne', 'Chuťový profil podle pražírny')) + '"><h3>' + esc(T('Chuťový profil podľa pražiarne', 'Chuťový profil podle pražírny')) + '</h3><div class="s3-scales">' + scaleRows + '</div></section>';
     /* upsell: väčšie balenie, doplnok, set firmy a druhá káva na ochutnanie – všetko z overených údajov e-shopu */
     const ups = [];
     if (r.upPack) ups.push(up(r.upPack.url, p.photo, T('Väčšie balenie vyjde výhodnejšie', 'Větší balení vyjde výhodněji'), p.name + ' · ' + r.upPack.label, r.upPack.per100 + T(' za 100 g namiesto ', ' za 100 g místo ') + r.upPack.basePer100 + ' (−' + r.upPack.save + ' %)', r.upPack.priceLabel));
@@ -103,7 +106,7 @@
     const notes = [r.promoNote, r.grindNote, r.packNote].filter(Boolean).map((x) => '<p class="cx-quality-note">' + esc(x) + '</p>').join('');
     const description = r.kind === 'drip' ? r.option && r.option.detail : p.summary;
     const scales = (r.scales || []).map((x) => '<span class="s3-scale"><i>' + esc(x.name) + '</i><span class="s3-scale-bar" style="--s3-v:' + (x.value / x.max) + '"></span><b>' + esc(x.value + '/' + x.max) + '</b></span>').join('');
-    content += '<details class="s3-result-details"><summary>' + esc(T('Prečo táto káva a ako ju pripraviť', 'Proč tahle káva a jak ji připravit')) + '</summary>' + (description ? '<p class="s3-long-description">' + esc(description) + '</p>' : '') + (scales ? '<div class="s3-scales">' + scales + '</div>' : '') + '<div class="cx-quality-why">' + why + notes + '</div>' + pickedMarkup;
+    content += '<details class="s3-result-details"><summary>' + esc(T('Prečo táto káva a ako ju pripraviť', 'Proč tahle káva a jak ji připravit')) + '</summary>' + (description ? '<p class="s3-long-description">' + esc(description) + '</p>' : '') + '' + '<div class="cx-quality-why">' + why + notes + '</div>' + pickedMarkup;
     let next = '';
     if (r.next && r.next.items && r.next.items.length) next += '<h3>' + esc(r.next.title) + '</h3>' + r.next.items.map((x) => '<p>' + esc(x) + '</p>').join('') + (r.next.link ? '<p><a href="' + esc(r.next.link.href) + '">' + esc(r.next.link.label) + '</a></p>' : '');
     if (r.shipping) next += '<p>' + esc(r.shipping) + '</p>';

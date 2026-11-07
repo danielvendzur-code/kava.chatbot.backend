@@ -1692,6 +1692,23 @@
     "header": "/assets/s3/poppybeans/logo.png",
     "avatar": "/assets/s3/poppybeans/mark.png"
    }
+  },
+  "mohaji": {
+   "type": "coffee",
+   "name": "Mohaji",
+   "country": "CZ",
+   "series": "s4",
+   "logos": {
+    "landing": "/assets/s3/mohaji/logo.png",
+    "header": "/assets/s3/mohaji/logo.png",
+    "avatar": "/assets/s3/mohaji/mark.png"
+   },
+   "freeShip": {
+    "from": 1200,
+    "note": "Doprava zdarma při nákupu nad 1 200 Kč (Zásilkovna, GLS)",
+    "source": "https://www.mohaji.cz/doprava-a-platba/",
+    "checkedAt": "2026-11-07"
+   }
   }
  }
 }
