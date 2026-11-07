@@ -1350,7 +1350,7 @@
    "tastes": [
     "choco"
    ],
-   "tasteSource": "parametry e-shopu: kyselost žádná, hořkost žádná; chuťový profil neuveden",
+   "tasteSource": "parametry e-shopu: kyselost žádná, hořkost žádná; chuťový profil podle popisu čokoláda, oříšek, nugát, karamel",
    "tasteProfile": [
     {
      "name": "Kyselost",
@@ -1361,7 +1361,12 @@
      "text": "žádná"
     }
    ],
-   "notes": [],
+   "notes": [
+    "čokoláda",
+    "oříšek",
+    "nugát",
+    "karamel"
+   ],
    "origin": "směs",
    "region": "blend",
    "process": null,

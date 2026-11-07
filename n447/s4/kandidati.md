@@ -1,0 +1,58 @@
+# Séria 4 – register kandidátov (stav 7. 11. 2026)
+
+Stavy: **kandidát** → **zdroje overené** → **implementované** → **lokálna kontrola** → **Preview overené**; **HOLD** = vyradené s dôvodom.
+Duplicity preverené proti `existing-slugs.txt` (201 záznamov), všetkým vetvám repozitára (doména aj IČO) a medzi kandidátmi navzájom (rovnaký prevádzkovateľ = jedna firma).
+Cena v ponuke: 447 € jednorazovo + 10 €/mesiac, bez skúšobného obdobia.
+
+## Hotové (prvých 5)
+
+| Firma | Web | Prevádzkovateľ / IČO | Kontakt (zdroj) | Produkty | Stav |
+|---|---|---|---|---|---|
+| Mohaji | mohaji.cz | MOHAJI s.r.o., 03924424 | kava@mohaji.cz (/kontakty/) | 16 zrnkových káv | lokálna kontrola (nálezy 0) |
+| Ambere | ambere.cz | Ambere s.r.o., 08256519 | obchod.ambere@seznam.cz (/doprava-a-platba/) | 20 zrnkových káv | lokálna kontrola |
+| MýdLenka | mydlenka.cz | Lenka Sojková, 72218533 | info@mydlenka.cz (obchodné podmienky) | 25 produktov (pleť, vlasy, deo, telo) | lokálna kontrola |
+| ZRNA (Pražírna Kyjov) | prazirnazrna.cz | Vysněno s.r.o., 09270850 (prevádzka Pražírna Kyjov s.r.o.) | info@prazirnazrna.cz (/kontakty/) | 10 zrnkových káv | lokálna kontrola |
+| Johnny Coffee | johnnycoffee.cz | CONSO MED s.r.o., 04543220 | info@johnnycoffee.cz (/kontakt/, parametre produktov) | 20 zrnkových káv | lokálna kontrola |
+
+Preview: po pushnutí vetvy `claude/n447-s4-20261107` (bez aliasov, nasadenie rieši Codex).
+
+## Overené zdroje, pripravené na ďalšiu dávku
+
+| Firma | Segment | Web | Prevádzkovateľ / IČO | Kontakt | Poznámka |
+|---|---|---|---|---|---|
+| Lázeňská káva | káva | eshop.lazenskakava.cz | Lazenskakava.cz s.r.o., 05825580 | chutna@lazenskakava.cz | nie Shoptet – treba vlastný zber |
+| Longberry | káva | longberry.cz | LONGBERRY s.r.o., 08208361 | info@longberry.cz | WooCommerce |
+| BARZZUZ (kafe.sk) | káva | kafe.sk | BARZZUZ s.r.o., 36647951 | info@kafe.sk | |
+| 25coffee | káva | 25coffee.sk | (overiť v OP) | info@25coffee.sk | WooCommerce |
+| Fabbrica | káva | fabbricacafe.sk | (overiť v OP) | info@fabbricacafe.sk | |
+| co-bean | káva | co-bean.cz | co-bean, s.r.o., 04720776 | info@co-bean.cz | Shopify; overiť, či nejde o veľkoobchod |
+| Valašská pražírna | káva | valasska-prazirna.cz | Valašská pražírna s.r.o., 09396527 | info@valasskaprazirna.cz | slabé údaje o chuti |
+| Mystická mýdlárna | kozmetika | prirodnimydla.cz | Mystická mýdlárna s.r.o., 26834774 | info@prirodnimydla.cz | |
+| Levandulový dům | kozmetika | levandulovydum.cz | IČO 74995448 | info@lavender.cz | |
+| Mija | kozmetika | mijasoap.cz | Michaela Balášová, 08204471 | vasdotaz@mijasoap.cz | |
+| RaE | kozmetika | raekosmetika.cz | PCsupport.cz s.r.o. | info@raekosmetika.com | |
+| Nutt | kozmetika | nutt.cz | (overiť) | radost@nutt.cz | |
+| Mydlove | kozmetika | mydlove.eu | Thermae s.r.o. | info@mydlove.com | |
+| Koukol | kozmetika | mydlarnakoukol.cz | Koukol v obilí, z.s., 22740988 | mydlarnakoukol@seznam.cz | spolok – overiť vhodnosť |
+| tee.sk | čaj | tee.sk | GREEN GOLD s.r.o., 47373971 | info@tee.sk | |
+| e-tea | čaj | e-tea.eu | Čajovňa dobrých ľudí, 36526568 | (overiť) | |
+| Sypané čaje | čaj | sypanecaje.sk | Peter Jurkovič, 43112269 | info@sypanecaje.sk | |
+| Čarovňa | čaj | obchod.carovna.sk | IČO 40368696 | obchod@carovna.sk | |
+| Dobrá čajovna Olomouc | čaj | dobracajovnaol.cz | Adam Křiva, 03508510 | info@dobracajovnaol.cz | |
+
+## HOLD
+
+| Firma | Dôvod |
+|---|---|
+| Abuamo (abuamo.com, Axneo s.r.o., 04564448) | e-shop má iba packshoty sáčkov (rovnaký kraftový sáčok), žiadne kvalitné fotky na voľby; schválené čajové scény sú len 3 → nedá sa splniť „bez opakovania v jednej otázke“. Možný návrat, ak sa schvália ďalšie čajové fotografie. |
+| LOBEY | vlastná Diagnostika pleti (porovnateľný poradca) |
+| Čajový dýchánek, Zelený Drak | vlastný „Čajový průvodce“ |
+| Čajový krámek | Albi s.r.o. – veľká firma |
+| Happy Hair | sieť salónov, multi-brand |
+| Rusty Nails | nemá vlastný e-shop (iba predajcovia) |
+| DI roastery | duplicita (už existujúca ukážka diamonds) |
+| ecajovna.sk + cajovydom.sk | jeden prevádzkovateľ (Tea Trade Slovakia) – ponechať najviac jednu |
+| Industra, Natural Factory, Alma, Ethic Routine | web nedostupný pri kontrole |
+| Karel Hadek | 403 pri kontrole |
+| Ladatha | web nefunkčný |
+| Mamacoffee | HOLD_DUPLICATE (pôvodná séria) |

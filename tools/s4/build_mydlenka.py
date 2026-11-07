@@ -42,10 +42,11 @@ for p in P:
     first = next((s for s in first if s and not re.search(CLAIM, s, re.I) and len(s) < 220), '')
     base = {'s4Face': 'Pleťová péče MýdLenka', 's4Hair': 'Vlasová péče MýdLenka', 's4Deo': 'Přírodní deodorant bez sody a bez hliníku', 's4Body': 'Tělová péče MýdLenka'}[use]
     if 'Kompletní péče' in n: base = 'Sada péče sestavená e-shopem pro tento typ pleti; cena sady ' + p['params'].get('#cena-sada ', '').strip() + ' místo ' + p['params'].get('#cena-produkty ', '').strip() + ' za produkty jednotlivě'
+    if not re.search(r'\d', vol or ''): vol = ''
     desc = (base + '. ' + first).strip()
     pid = p['url'].rstrip('/').split('/')[-1]
     out.append({'id': pid, 'name': n, 'url': p['url'], 'priceAmount': price, 'currency': 'CZK', 'price': f'{price:.0f} Kč', 'volume': vol, 'variantLabel': v['name'] or '',
-        'category': 'body', 'kind': 'Sada péče o pleť' if 'Kompletní péče' in n else KIND[use], 'tags': ['sensitive'] if focus in ('s4Sensitive', 's4AllSkin') else [],
+        'category': {'s4Face': 'face', 's4Hair': 'hair'}.get(use, 'body'), 'kind': 'Sada péče o pleť' if 'Kompletní péče' in n else KIND[use], 'tags': (['sensitive'] if focus in ('s4Sensitive', 's4AllSkin') else ['dry'] if focus in ('s4Dry', 's4HairDry') else ['oily'] if focus == 's4HairOily' else []),
         'photo': photo(SLUG, p['img'].replace('&amp;', '&'), pid), 'available': True, 'isSample': False, 'description': desc, 'reason': desc,
         'source': {'url': p['url'], 'verifiedAt': CHECKED, 'stock': 'InStock', 'categoryLocked': True, 'priceFrom': len(vs) > 1, 'variants': [{'label': x['name'], 'price': x['price']} for x in vs],
                    'selectionTraits': {'careUse': use, 'purpose': use, 'skinFocus': focus},

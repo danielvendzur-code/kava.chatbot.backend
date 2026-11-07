@@ -2035,6 +2035,449 @@
     ],
     "s4Deo": []
    }
+  },
+  "zrna": {
+   "type": "coffee",
+   "name": "ZRNA",
+   "country": "CZ",
+   "series": "s4",
+   "logos": {
+    "landing": "/assets/s3/zrna/logo.png",
+    "header": "/assets/s3/zrna/logo.png",
+    "avatar": "/assets/s3/zrna/mark.png"
+   },
+   "freeShip": {
+    "from": 2000,
+    "note": "Doprava zdarma při objednávce nad 2 000 Kč",
+    "source": "https://www.prazirnazrna.cz/doprava-a-platby/",
+    "checkedAt": "2026-11-07"
+   }
+  },
+  "johnnycoffee": {
+   "type": "coffee",
+   "name": "Johnny Coffee",
+   "country": "CZ",
+   "series": "s4",
+   "logos": {
+    "landing": "/assets/s3/johnnycoffee/logo.png",
+    "header": "/assets/s3/johnnycoffee/wordmark.png",
+    "avatar": "/assets/s3/johnnycoffee/mark.png"
+   },
+   "freeShip": {
+    "from": 990,
+    "note": "Doprava zdarma při nákupu nad 990 Kč",
+    "source": "https://www.johnnycoffee.cz/doprava-zdarma-na-kavu/",
+    "checkedAt": "2026-11-07"
+   }
+  },
+  "mydlove": {
+   "type": "cosmetics",
+   "segment": "cosmetics",
+   "name": "MYDLOVE",
+   "country": "SK",
+   "series": "s4",
+   "logos": {
+    "avatar": "/assets/s3/mydlove/mark.png"
+   },
+   "brand": {
+    "name": "MYDLOVE",
+    "fullName": "MYDLOVE – prírodná kozmetika z Trenčianskych Teplíc",
+    "domain": "mydlove.com",
+    "website": "https://www.mydlove.com/",
+    "url": "https://www.mydlove.com/",
+    "theme": {
+     "brand": "#2c3a33",
+     "accent": "#a88b62",
+     "soft": "#f3f0ea",
+     "paper": "#ffffff",
+     "ink": "#2c3a33",
+     "line": "#e3ddd2"
+    },
+    "logo": "/assets/s3/mydlove/logo.png",
+    "mark": "/assets/s3/mydlove/mark.png",
+    "hero": "",
+    "quickChips": [
+     "Šampón na suché vlasy",
+     "Čistenie pleti",
+     "Náplň do dezodorantu",
+     "Porovnať dva produkty"
+    ],
+    "lang": "sk",
+    "greeting": "Dobrý deň. Napíšte, akú starostlivosť hľadáte – na vlasy, pleť alebo telo – a aký máte typ vlasov či pleti. Pomôžem vám vybrať z ponuky MYDLOVE."
+   },
+   "segmentText": {
+    "includedChat": "Typ vlasov, čistenie pleti, vône dezodorantov a telových masiel aj porovnanie dvoch produktov.",
+    "includedAdvisor": "Oblasť, druh produktu a typ vlasov či vôňa — na konci konkrétny produkt.",
+    "placeholder": "Opýtajte sa na starostlivosť…"
+   },
+   "stepCopy": {
+    "careUse": [
+     "Čo hľadáte?",
+     "Podľa kategórií e-shopu MYDLOVE.",
+     "Oblasť starostlivosti"
+    ],
+    "skinFocus": [
+     "Čo má starostlivosť zohľadniť?",
+     "Typ vlasov, druh čistenia alebo vôňa podľa e-shopu.",
+     "Typ a zameranie"
+    ],
+    "budget": [
+     "Do akej sumy vyberáme?",
+     "Cena celej odporúčanej starostlivosti.",
+     "Rozpočet"
+    ]
+   },
+   "panelText": [],
+   "traitCopy": {
+    "s4Face": [
+     "Pleť",
+     "Čistenie, toniká, sérum, masky",
+     "Pleť",
+     "Čistenie, toniká, sérum, masky"
+    ],
+    "s4Hair": [
+     "Vlasy",
+     "Tuhé šampóny a kondicionéry",
+     "Vlasy",
+     "Tuhé šampóny a kondicionéry"
+    ],
+    "s4Body": [
+     "Telo",
+     "Telové maslá",
+     "Telo",
+     "Telové maslá"
+    ],
+    "s4Deo": [
+     "Dezodorant",
+     "Náplne tuhého dezodorantu",
+     "Dezodorant",
+     "Náplne tuhého dezodorantu"
+    ],
+    "s4HFine": [
+     "Jemné vlasy",
+     "Citrus a borovica",
+     "Jemné vlasy",
+     "Citrus a borovica"
+    ],
+    "s4HOily": [
+     "Mastné vlasy",
+     "S aktívnym uhlím",
+     "Mastné vlasy",
+     "S aktívnym uhlím"
+    ],
+    "s4HDry": [
+     "Suché vlasy",
+     "S mätou a aloe vera",
+     "Suché vlasy",
+     "S mätou a aloe vera"
+    ],
+    "s4HScalp": [
+     "Lupiny / seborea",
+     "So sírou a levanduľovým olejom",
+     "Lupiny / seborea",
+     "So sírou a levanduľovým olejom"
+    ],
+    "s4HCaffeine": [
+     "S kofeínom a ílom",
+     "Jemné, mastné aj normálne vlasy",
+     "S kofeínom a ílom",
+     "Jemné, mastné aj normálne vlasy"
+    ],
+    "s4CFine": [
+     "Jemné vlasy",
+     "Levanduľa",
+     "Jemné vlasy",
+     "Levanduľa"
+    ],
+    "s4CDry": [
+     "Suché a farbené vlasy",
+     "Gerániová ruža",
+     "Suché a farbené vlasy",
+     "Gerániová ruža"
+    ],
+    "s4CleanGentle": [
+     "Jemné čistenie",
+     "Oil-to-milk gél",
+     "Jemné čistenie",
+     "Oil-to-milk gél"
+    ],
+    "s4CleanSulfur": [
+     "So sírou",
+     "Oil-to-milk gél",
+     "So sírou",
+     "Oil-to-milk gél"
+    ],
+    "s4CleanExfo": [
+     "Exfoliačné",
+     "Oil-to-milk gél",
+     "Exfoliačné",
+     "Oil-to-milk gél"
+    ],
+    "s4TonOryza": [
+     "ORYZA",
+     "Jemné hydratačné tonikum",
+     "ORYZA",
+     "Jemné hydratačné tonikum"
+    ],
+    "s4TonKombucha": [
+     "KOMBUCHA GLOW",
+     "Tonikum s kombuchou",
+     "KOMBUCHA GLOW",
+     "Tonikum s kombuchou"
+    ],
+    "s4Serum": [
+     "Sérum PEAT",
+     "S rašelinou a niacínamidom",
+     "Sérum PEAT",
+     "S rašelinou a niacínamidom"
+    ],
+    "s4FaceOil": [
+     "Olej ESPLANADE",
+     "So šípkovým olejom",
+     "Olej ESPLANADE",
+     "So šípkovým olejom"
+    ],
+    "s4MaskPeat": [
+     "PEAT",
+     "Maska s rašelinou",
+     "PEAT",
+     "Maska s rašelinou"
+    ],
+    "s4MaskSulfur": [
+     "SINA",
+     "Maska so sírou",
+     "SINA",
+     "Maska so sírou"
+    ],
+    "s4BShea": [
+     "Bambucké maslo",
+     "Nerafinované, BIO",
+     "Bambucké maslo",
+     "Nerafinované, BIO"
+    ],
+    "s4BLemon": [
+     "Fresh lemon",
+     "Citrusová vôňa",
+     "Fresh lemon",
+     "Citrusová vôňa"
+    ],
+    "s4BVanilla": [
+     "Vanilla bean",
+     "Sladká vôňa",
+     "Vanilla bean",
+     "Sladká vôňa"
+    ],
+    "s4BFloral": [
+     "Sakura bloom",
+     "Kvetinová vôňa",
+     "Sakura bloom",
+     "Kvetinová vôňa"
+    ],
+    "s4BSpice": [
+     "Pomaranč a škorica",
+     "Korenistá vôňa",
+     "Pomaranč a škorica",
+     "Korenistá vôňa"
+    ],
+    "s4DCitrus": [
+     "Citrus a borovica",
+     "Výrazná citrusová vôňa",
+     "Citrus a borovica",
+     "Výrazná citrusová vôňa"
+    ],
+    "s4DGeranium": [
+     "Gerániová ruža",
+     "Kvetinová vôňa",
+     "Gerániová ruža",
+     "Kvetinová vôňa"
+    ],
+    "s4DMint": [
+     "Jemná mäta",
+     "Bylinková vôňa",
+     "Jemná mäta",
+     "Bylinková vôňa"
+    ],
+    "s4DNeutral": [
+     "Neutral",
+     "Verzia neutral",
+     "Neutral",
+     "Verzia neutral"
+    ]
+   },
+   "choicePhotos": {
+    "s4Face": [
+     "/assets/s3/scenes-k2/face-massage.jpg"
+    ],
+    "s4Hair": [
+     "/assets/s3/scenes-k2/hair-long.jpg"
+    ],
+    "s4Body": [
+     "/assets/s3/scenes-k2/leg-massage.jpg"
+    ],
+    "s4Deo": [
+     "/assets/s3/scenes-k2/body-shower.jpg"
+    ],
+    "kind:Tuhý šampón": [
+     "/assets/s3/scenes-k2/hair-shampoo-foam.jpg"
+    ],
+    "kind:Tuhý kondicionér": [
+     "/assets/s3/scenes-k2/hair-silk.jpg"
+    ],
+    "kind:Čistenie pleti": [
+     "/assets/scenes/face-cleanse.jpg"
+    ],
+    "kind:Pleťové tonikum": [
+     "/assets/scenes/face-water.jpg"
+    ],
+    "kind:Sérum a olej": [
+     "/assets/scenes/serum-drop.jpg"
+    ],
+    "kind:Zlupovacia maska": [
+     "/assets/s3/scenes-k2/clay-mask.jpg"
+    ],
+    "kind:Bambucké maslo": [
+     "/assets/scenes/cream-texture.jpg"
+    ],
+    "kind:Šľahané telové maslo": [
+     "/assets/s3/scenes-k2/bath-milky.jpg"
+    ],
+    "s4HFine": [
+     "/assets/s3/scenes-k2/hair-fine.jpg"
+    ],
+    "s4HOily": [
+     "/assets/s3/scenes-k2/hair-roots.jpg"
+    ],
+    "s4HDry": [
+     "/assets/s3/scenes-k2/hair-ends-dry.jpg"
+    ],
+    "s4HScalp": [
+     "/assets/s3/scenes-k2/scalp-massage.jpg"
+    ],
+    "s4HCaffeine": [
+     "/assets/s3/scenes-k2/coffee-beans.jpg"
+    ],
+    "s4CFine": [
+     "/assets/s3/scenes-k2/lavender.jpg"
+    ],
+    "s4CDry": [
+     "/assets/s3/scenes-k2/geranium.jpg"
+    ],
+    "s4CleanGentle": [
+     "/assets/s3/scenes-k2/milk.jpg"
+    ],
+    "s4CleanSulfur": [
+     "/assets/s3/scenes-k2/clays.jpg"
+    ],
+    "s4CleanExfo": [
+     "/assets/s3/scenes-k2/sugar.jpg"
+    ],
+    "s4TonOryza": [
+     "/assets/scenes/face-water.jpg"
+    ],
+    "s4TonKombucha": [
+     "/assets/s3/scenes-k2/black-tea.jpg"
+    ],
+    "s4Serum": [
+     "/assets/scenes/serum-drop.jpg"
+    ],
+    "s4FaceOil": [
+     "/assets/s3/scenes-k2/rosehip.jpg"
+    ],
+    "s4MaskPeat": [
+     "/assets/s3/scenes-k2/clay-mask.jpg"
+    ],
+    "s4MaskSulfur": [
+     "/assets/s3/scenes-k2/clays.jpg"
+    ],
+    "s4BShea": [
+     "/assets/scenes/cream-texture.jpg"
+    ],
+    "s4BLemon": [
+     "/assets/s3/scenes-k2/citrus.jpg"
+    ],
+    "s4BVanilla": [
+     "/assets/s3/scenes-k2/vanilla.jpg"
+    ],
+    "s4BFloral": [
+     "/assets/s3/scenes-k2/cherry-blossom.jpg"
+    ],
+    "s4BSpice": [
+     "/assets/s3/scenes-k2/cinnamon.jpg"
+    ],
+    "s4DCitrus": [
+     "/assets/s3/scenes-k2/pine.jpg"
+    ],
+    "s4DGeranium": [
+     "/assets/s3/scenes-k2/geranium.jpg"
+    ],
+    "s4DMint": [
+     "/assets/s3/scenes-k2/mint-herbs.jpg"
+    ],
+    "s4DNeutral": [
+     "/assets/scenes/cotton-care.jpg"
+    ]
+   },
+   "freeShip": {
+    "from": 45,
+    "note": "Doprava zadarmo pri objednávkach nad 45 € v SR",
+    "source": "https://www.mydlove.com/",
+    "checkedAt": "2026-11-07"
+   },
+   "upsellFocus": {
+    "s4HFine": [
+     "s4CFine"
+    ],
+    "s4HOily": [
+     "s4CFine"
+    ],
+    "s4HCaffeine": [
+     "s4CFine"
+    ],
+    "s4HDry": [
+     "s4CDry"
+    ],
+    "s4HScalp": [],
+    "s4CFine": [
+     "s4HFine"
+    ],
+    "s4CDry": [
+     "s4HDry"
+    ],
+    "s4CleanGentle": [
+     "s4TonOryza"
+    ],
+    "s4CleanSulfur": [
+     "s4TonKombucha"
+    ],
+    "s4CleanExfo": [
+     "s4TonOryza"
+    ],
+    "s4TonOryza": [
+     "s4Serum"
+    ],
+    "s4TonKombucha": [
+     "s4FaceOil"
+    ],
+    "s4Serum": [
+     "s4TonOryza"
+    ],
+    "s4FaceOil": [
+     "s4CleanGentle"
+    ],
+    "s4MaskPeat": [
+     "s4CleanGentle"
+    ],
+    "s4MaskSulfur": [
+     "s4CleanSulfur"
+    ],
+    "s4BShea": [
+     "s4BVanilla"
+    ],
+    "s4Body": [
+     "s4BShea"
+    ],
+    "s4Deo": []
+   }
   }
  }
 }

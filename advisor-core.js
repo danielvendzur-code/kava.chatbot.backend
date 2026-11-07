@@ -129,7 +129,7 @@
       else if(/levandul/.test(text)&&/rozmar/.test(text))f.careVariant='lavenderRosemary';
     }
     if(role==='toner'&&!f.ingredient){for(const [key,rx]of [['chamomile',/herman|harmancek|chamomile/],['rosemary',/rozmar|rosemary/],['rooibos',/rooibos/],['orangeBlossom',/pomerancov.*kvet/]])if(rx.test(text)){f.ingredient=key;break;}}
-    if(p.category==='hair'&&role==='shampoo'){
+    if(p.category==='hair'&&role==='shampoo'&&!p.source?.kindLocked){/* séria 4: kindLocked = druh a zameranie z e-shopu, bez odvodzovania z názvu */
       f.hairNeed=/silver/.test(text)?'silverCare':/vlnite|kucerave|kudrnate/.test(text)?'curlCare':/caste umyv|kazdodenni/.test(text)?'frequentWash':/normalizacni|normalizacny/.test(text)?'normalisingWash':/lup|dandruff/.test(text)?'dandruffCare':/citliv|zklid|upokoj/.test(text)?'scalpComfort':/mastn/.test(text)?'oilyHair':/objem|jemne vlasy/.test(text)?'volumeCare':/suche/.test(text)?'dryHair':/lamave|poskoz|poskod|krepat|uhlaz/.test(text)?'damagedHair':/barvene|farbene|color/.test(text)?'colouredHair':/vypad|rust vlas|rast vlas/.test(text)?'hairGrowth':'hairWashing';
     }
     if(p.category==='hair'&&role==='conditioner'){
@@ -176,7 +176,7 @@
       if (['face','body','hair','eyes','lips','beard'].includes(category) && ['Ďalšia ponuka','Doplnky','Starostlivosť'].includes(kind)) {
         kind = {serum:'Séra',cream:'Krémy a balzamy',oil:'Oleje',cleanser:'Čistenie a umývanie',shampoo:'Šampóny',conditioner:'Kondicionéry'}[routineRole({...p,kind})] || kind;
       }
-      if (['face','body','hair','eyes','lips','beard','baby','samples'].includes(category)) {
+      if (['face','body','hair','eyes','lips','beard','baby','samples'].includes(category) && !p.source?.kindLocked) {
         const actualRole=routineRole({...p,kind});
         if(actualRole==='targeted')kind='Cielená starostlivosť';
         else if(actualRole==='cleanser')kind='Čistenie a umývanie';
