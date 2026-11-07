@@ -47,7 +47,7 @@ for p in P:
     products.append({'id': pid, 'kind': 'coffee', 'name': nice(p['name']), 'url': p['url'], 'photo': photo(SLUG, p['img'].replace('&amp;', '&'), pid), 'photoRemote': False,
         'currency': 'CZK', 'available': True, 'decaf': False, 'preps': preps, 'roastLabel': re.sub(r'^\d\s*[•\-]\s*', '', roast).strip().lower() or None, 'prepText': pr.get('Způsob přípravy'),
         'taste': taste, 'tastes': [taste], 'tasteSource': 'parametry e-shopu: kyselost ' + (kys or 'neuvedena') + (', tělo ' + pr['Tělo'].lower() if pr.get('Tělo') else '') + (', hořkost ' + pr['Hořkost'].lower() if pr.get('Hořkost') else '') + '; chuťový profil ' + (tones or 'neuveden'),
-        'profile': profile, 'notes': notes, 'origin': 'směs' if blend else co[0], 'region': 'blend' if blend else co[1], 'process': None, 'variety': None, 'summary': sentences(p['short'], 2),
+        'tasteProfile': profile, 'notes': notes, 'origin': 'směs' if blend else co[0], 'region': 'blend' if blend else co[1], 'process': None, 'variety': None, 'summary': sentences(p['short'], 2),
         'priceFrom': vs[0]['price'], 'priceTo': max(v['price'] for v in vs), 'weights': [v['grams'] for v in vs], 'variants': vs, 'checkedAt': CHECKED,
         'source': {'url': p['url'], 'verifiedAt': CHECKED, 'facts': 'parametry produktu (kyselost, tělo, hořkost, profil pražení, chuťový profil, způsob přípravy), krátký popis; ceny a sklad zrnkových variant'}})
 products = [p for p in products if p['photo']][:25]

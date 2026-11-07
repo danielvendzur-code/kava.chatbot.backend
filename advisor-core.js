@@ -158,7 +158,8 @@
       const text = norm([p.name, p.kind, p.reason].join(' '));
       let category = p.category || 'face';
       const productName=norm(p.name);
-      if(/tvarenk|kremovy korektor/.test(productName))category='makeup';
+      if(p.source?.categoryLocked);/* séria 4: kategória overená z e-shopu sa neprepisuje podľa názvu (napr. „Bez parfemace“ nie je parfum) */
+      else if(/tvarenk|kremovy korektor/.test(productName))category='makeup';
       else if(category==='makeup'&&/odlic|dlicov/.test(productName))category='face';
       else if(/\bpro psy\b|\bpro psa\b|\bpsa\b|tlapky|pro psy a kocky/.test(productName))category='pets';
       else if(/betonov|doza|podtacek|\bmiska\b|\bvaza\b|\bpemza\b/.test(productName))category='other';

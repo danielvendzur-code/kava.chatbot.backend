@@ -1726,6 +1726,315 @@
     "source": "https://www.ambere.cz/doprava-a-platba/",
     "checkedAt": "2026-11-07"
    }
+  },
+  "mydlenka": {
+   "type": "cosmetics",
+   "segment": "cosmetics",
+   "name": "MýdLenka",
+   "country": "CZ",
+   "series": "s4",
+   "logos": {
+    "avatar": "/assets/s3/mydlenka/mark.png"
+   },
+   "brand": {
+    "name": "MýdLenka",
+    "fullName": "MýdLenka – přírodní kosmetika ze Šumavy",
+    "domain": "mydlenka.cz",
+    "website": "https://www.mydlenka.cz/",
+    "url": "https://www.mydlenka.cz/",
+    "theme": {
+     "brand": "#2b2a28",
+     "accent": "#b08a5a",
+     "soft": "#f5f0ea",
+     "paper": "#ffffff",
+     "ink": "#2b2a28",
+     "line": "#e6ddd2"
+    },
+    "logo": "/assets/s3/mydlenka/logo.png",
+    "mark": "/assets/s3/mydlenka/mark.png",
+    "hero": "",
+    "quickChips": [
+     "Péče na citlivou pleť",
+     "Šampon na mastné vlasy",
+     "Deodorant bez parfemace",
+     "Porovnat dva produkty"
+    ],
+    "lang": "cs",
+    "greeting": "Dobrý den. Napište, jakou péči hledáte – pro pleť, vlasy nebo tělo – a jaký máte typ pleti či vlasů. Pomůžu vám vybrat z nabídky MýdLenky."
+   },
+   "segmentText": {
+    "includedChat": "Typ pleti a vlasů, vůně deodorantů, složení i porovnání dvou produktů.",
+    "includedAdvisor": "Oblast péče a typ pleti nebo vlasů — na konci konkrétní produkt.",
+    "placeholder": "Zeptejte se na péči…"
+   },
+   "stepCopy": {
+    "careUse": [
+     "Co hledáte?",
+     "Podle kategorií e-shopu MýdLenka.",
+     "Oblast péče"
+    ],
+    "skinFocus": [
+     "Co má péče zohlednit?",
+     "Typ pleti či vlasů, vůni nebo druh péče podle e-shopu.",
+     "Typ a zaměření"
+    ],
+    "budget": [
+     "Do jaké částky vybíráme?",
+     "Cena celé doporučené péče.",
+     "Rozpočet"
+    ]
+   },
+   "panelText": [],
+   "traitCopy": {
+    "s4Face": [
+     "Pleť",
+     "Séra, odličovač, sady",
+     "Pleť",
+     "Séra, odličovač, sady"
+    ],
+    "s4Hair": [
+     "Vlasy",
+     "Tuhé šampóny a kondicionér",
+     "Vlasy",
+     "Tuhé šampony a kondicionér"
+    ],
+    "s4Deo": [
+     "Deodorant",
+     "Bez sódy a bez hliníka",
+     "Deodorant",
+     "Bez sody a bez hliníku"
+    ],
+    "s4Body": [
+     "Telo a ruky",
+     "Krém, balzam, peeling",
+     "Tělo a ruce",
+     "Krém, balzám, peeling"
+    ],
+    "s4Normal": [
+     "Normálna pleť",
+     "Kategória Péče o normální pleť",
+     "Normální pleť",
+     "Kategorie Péče o normální pleť"
+    ],
+    "s4Sensitive": [
+     "Citlivá pleť",
+     "Kategória Péče o citlivou pleť",
+     "Citlivá pleť",
+     "Kategorie Péče o citlivou pleť"
+    ],
+    "s4Dry": [
+     "Suchá pleť",
+     "Kategória Péče o suchou pleť",
+     "Suchá pleť",
+     "Kategorie Péče o suchou pleť"
+    ],
+    "s4Problem": [
+     "Problematická pleť",
+     "Kategória Péče o problematickou pleť",
+     "Problematická pleť",
+     "Kategorie Péče o problematickou pleť"
+    ],
+    "s4AllSkin": [
+     "Pre všetky typy pleti",
+     "Vo všetkých štyroch kategóriách",
+     "Pro všechny typy pleti",
+     "Ve všech čtyřech kategoriích"
+    ],
+    "s4HairFine": [
+     "Jemné vlasy",
+     "Šampón Vlásek",
+     "Jemné vlasy",
+     "Šampon Vlásek"
+    ],
+    "s4HairOily": [
+     "Mastné vlasy",
+     "Šampón Kopřiva",
+     "Mastné vlasy",
+     "Šampon Kopřiva"
+    ],
+    "s4HairNormal": [
+     "Normálne vlasy",
+     "Šampón Klasik",
+     "Normální vlasy",
+     "Šampon Klasik"
+    ],
+    "s4HairDry": [
+     "Suché vlasy",
+     "Šampón Brahmi",
+     "Suché vlasy",
+     "Šampon Brahmi"
+    ],
+    "s4HairScalp": [
+     "Lupiny",
+     "Šampón Lu(m)pík",
+     "Lupy",
+     "Šampon Lu(m)pík"
+    ],
+    "s4HairCond": [
+     "Kondicionér",
+     "Pre všetky typy vlasov",
+     "Kondicionér",
+     "Pro všechny typy vlasů"
+    ],
+    "s4DeoBalm": [
+     "Medovka",
+     "Bylinková, s citrusom",
+     "Meduňka",
+     "Bylinková, s citrusem"
+    ],
+    "s4DeoOrange": [
+     "Pomaranč",
+     "Sladká citrusová",
+     "Pomeranč",
+     "Sladká citrusová"
+    ],
+    "s4DeoLemongrass": [
+     "Citrónová tráva",
+     "Svieža, unisex",
+     "Lemongrass",
+     "Svěží, unisex"
+    ],
+    "s4DeoFloral": [
+     "Harmonie",
+     "Jemná kvetinová",
+     "Harmonie",
+     "Jemná květinová"
+    ],
+    "s4DeoFree": [
+     "Bez parfumácie",
+     "Bez pridanej vône",
+     "Bez parfemace",
+     "Bez přidané vůně"
+    ],
+    "s4Hands": [
+     "Krém na ruky",
+     "Nechtíkový",
+     "Krém na ruce",
+     "Měsíčkový"
+    ],
+    "s4Balm": [
+     "Tuhý telový balzam",
+     "Ruky, päty, lakte",
+     "Tuhý tělový balzám",
+     "Ruce, paty, lokty"
+    ],
+    "s4Scrub": [
+     "Telový peeling",
+     "S kofeínom",
+     "Tělový peeling",
+     "S kofeinem"
+    ],
+    "s4MakeupOff": [
+     "Odličovač",
+     "Make-up a nečistoty dňa",
+     "Odličovač",
+     "Make-up a nečistoty dne"
+    ],
+    "s4CleanBar": [
+     "Pleťové mydlo",
+     "S aktívnym uhlím, bez parfumácie",
+     "Pleťové mýdlo",
+     "S aktivním uhlím, bez parfemace"
+    ]
+   },
+   "choicePhotos": {
+    "s4Face": [
+     "/assets/s3/scenes-k2/face-massage.jpg"
+    ],
+    "s4Hair": [
+     "/assets/s3/scenes-k2/hair-long.jpg"
+    ],
+    "s4Deo": [
+     "/assets/s3/scenes-k2/body-shower.jpg"
+    ],
+    "s4Body": [
+     "/assets/scenes/hands-cream.jpg"
+    ],
+    "s4Normal": [
+     "/assets/s3/scenes-k2/skin-normal.jpg"
+    ],
+    "s4Sensitive": [
+     "/assets/s3/scenes-k2/skin-sensitive.jpg"
+    ],
+    "s4Dry": [
+     "/assets/s3/scenes-k2/skin-dry.jpg"
+    ],
+    "s4Problem": [
+     "/assets/s3/scenes-k2/skin-blemish.jpg"
+    ],
+    "s4AllSkin": [
+     "/assets/s3/scenes-k2/face-routine.jpg"
+    ],
+    "s4HairFine": [
+     "/assets/s3/scenes-k2/hair-fine.jpg"
+    ],
+    "s4HairOily": [
+     "/assets/s3/scenes-k2/hair-roots.jpg"
+    ],
+    "s4HairNormal": [
+     "/assets/s3/scenes-k2/hair-shampoo-foam.jpg"
+    ],
+    "s4HairDry": [
+     "/assets/s3/scenes-k2/hair-ends-dry.jpg"
+    ],
+    "s4HairScalp": [
+     "/assets/s3/scenes-k2/scalp-massage.jpg"
+    ],
+    "s4HairCond": [
+     "/assets/s3/scenes-k2/hair-silk.jpg"
+    ],
+    "s4DeoBalm": [
+     "/assets/s3/scenes-k2/lemon-balm.jpg"
+    ],
+    "s4DeoOrange": [
+     "/assets/s3/scenes-k2/orange-slices.jpg"
+    ],
+    "s4DeoLemongrass": [
+     "/assets/s3/scenes-k2/lemongrass.jpg"
+    ],
+    "s4DeoFloral": [
+     "/assets/s3/scenes-k2/jasmine.jpg"
+    ],
+    "s4DeoFree": [
+     "/assets/scenes/cotton-care.jpg"
+    ],
+    "s4Hands": [
+     "/assets/s3/scenes-k2/calendula.jpg"
+    ],
+    "s4Balm": [
+     "/assets/scenes/cream-texture.jpg"
+    ],
+    "s4Scrub": [
+     "/assets/s3/scenes-k2/coffee-scrub-leg.jpg"
+    ],
+    "s4MakeupOff": [
+     "/assets/scenes/face-clean-pad.jpg"
+    ],
+    "s4CleanBar": [
+     "/assets/s3/scenes-k2/charcoal.jpg"
+    ]
+   },
+   "freeShip": {
+    "from": 1800,
+    "note": "Doprava nad 1 800 Kč je zdarma",
+    "source": "https://www.mydlenka.cz/doprava-a-platba/",
+    "checkedAt": "2026-11-07"
+   },
+   "upsellFocus": {
+    "s4Hair": [
+     "s4HairCond"
+    ],
+    "s4Face": [
+     "s4MakeupOff",
+     "s4AllSkin"
+    ],
+    "s4Body": [
+     "s4Hands",
+     "s4Balm",
+     "s4Scrub"
+    ],
+    "s4Deo": []
+   }
   }
  }
 }

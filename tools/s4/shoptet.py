@@ -14,7 +14,8 @@ for c in cats:
         new=0
         for f in found:
             f=f if f.startswith('http') else base+f
-            if f not in links: links[f]=c;new+=1
+            if f not in links: links[f]=[c];new+=1
+            elif c not in links[f]: links[f].append(c)
         if not new: break
 print('produkty',len(links),file=sys.stderr)
 res=[]
@@ -52,6 +53,6 @@ for u,c in links.items():
         offs=p.get('offers');offs=offs if isinstance(offs,list) else [offs] if offs else []
         for o in offs:
             variants.append({'name':p.get('name'),'sku':p.get('sku'),'price':o.get('price'),'cur':o.get('priceCurrency'),'avail':str(o.get('availability','')).split('/')[-1],'url':o.get('url')})
-    res.append({'url':u,'cat':c,'name':name,'img':img,'params':params,'short':short,'desc':desc,'variants':variants})
+    res.append({'url':u,'cat':c[0],'cats':c,'name':name,'img':img,'params':params,'short':short,'desc':desc,'variants':variants})
 json.dump(res,open(f'{out}/products.json','w'),ensure_ascii=False,indent=1)
 print('ok',len(res),file=sys.stderr)

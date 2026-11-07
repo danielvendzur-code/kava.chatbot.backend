@@ -94,7 +94,7 @@
     if (r.kind !== 'drip') content += freeShip(r.total != null ? r.total : (r.pack && r.pack.price), p.currency, r.upPack && r.pack ? r.upPack.price - r.pack.price : 0);
     /* séria 4 (pokyn majiteľa 7. 11.): škály chuti pražiarne viditeľne hneď pod cenou – len keď ich e-shop uvádza */
     const scaleRows = (r.scales || []).map((x) => '<span class="s3-scale"><i>' + esc(x.name) + '</i><span class="s3-scale-bar" style="--s3-v:' + (x.value / x.max) + '"></span><b>' + esc(x.value + '/' + x.max) + '</b></span>').join('');
-    const profRows = !scaleRows && (p.profile || []).length ? p.profile.map((x) => '<span class="s3-scale s4-word"><i>' + esc(x.name) + '</i><b>' + esc(x.text) + '</b></span>').join('') : '';
+    const profRows = !scaleRows && (p.tasteProfile || []).length ? p.tasteProfile.map((x) => '<span class="s3-scale s4-word"><i>' + esc(x.name) + '</i><b>' + esc(x.text) + '</b></span>').join('') : '';
     if (profRows) content += '<section class="s4-profile" aria-label="' + esc(T('Chuťový profil podľa pražiarne', 'Chuťový profil podle pražírny')) + '"><h3>' + esc(T('Chuťový profil podľa pražiarne', 'Chuťový profil podle pražírny')) + '</h3><div class="s3-scales">' + profRows + '</div></section>';
     if (scaleRows) content += '<section class="s4-profile" aria-label="' + esc(T('Chuťový profil podľa pražiarne', 'Chuťový profil podle pražírny')) + '"><h3>' + esc(T('Chuťový profil podľa pražiarne', 'Chuťový profil podle pražírny')) + '</h3><div class="s3-scales">' + scaleRows + '</div></section>';
     /* upsell: väčšie balenie, doplnok, set firmy a druhá káva na ochutnanie – všetko z overených údajov e-shopu */

@@ -257,7 +257,10 @@
   const s3ship=(sum,cur)=>{const FS=(window.S3_REG?.demos?.[document.body.dataset.cosmeticsDemo]||{}).freeShip;if(!FS||!Number.isFinite(sum))return '';const g=resultGuide(),left=FS.from-sum,pct=Math.max(4,Math.min(100,sum/FS.from*100)),fmt=n=>new Intl.NumberFormat(cur==='CZK'?'cs-CZ':'sk-SK',{maximumFractionDigits:0}).format(n)+' '+(cur==='CZK'?'Kč':'€');const txt=left<=0.001?FS.note:g.t('Do dopravy zdarma vám chýba ','Do dopravy zdarma vám chybí ')+fmt(Math.ceil(left));return '<p class="s3-ship'+(left<=0.001?' is-free':'')+'" style="--s3-ship:'+pct.toFixed(1)+'%"><span>'+esc(txt)+'</span><i></i></p>';};
   /* s3a upsell: ak Andreine nenašla doplnok, ponúkne sa najviac 2 produkty inej formy z tej istej oblasti, dostupné a spolu v rozpočte. */
   const s3up=(p,next)=>{if(next.some(i=>i.type==='complement'))return '';const g=resultGuide(),limit=Number(state.answers.budget)||Infinity,cost=x=>Number.isFinite(x.priceAmount)?x.priceAmount:Infinity,ph=new Set([String(p.photo).split('?')[0],...next.map(i=>String(i.product.photo).split('?')[0])]),ids=new Set([p.id,...next.map(i=>i.product.id)]);
-    const list=engine.products.filter(x=>x.available!==false&&!x.isSample&&x.currency===p.currency&&x.photo&&!ids.has(x.id)&&!ph.has(String(x.photo).split('?')[0])&&x.category===p.category&&x.kind!==p.kind&&cost(p)+cost(x)<=limit);
+    /* séria 4: firma môže v registri určiť, čo k čomu ponúknuť (upsellFocus: oblasť → zameranie doplnku; prázdne = nič) */
+    const UF=window.S3_REG?.demos?.[document.body.dataset.cosmeticsDemo]?.upsellFocus,tr=x=>x.source?.selectionTraits||{};
+    const list=UF?(UF[tr(p).careUse]||[]).flatMap(fk=>engine.products.filter(x=>tr(x).careUse===tr(p).careUse&&tr(x).skinFocus===fk&&tr(x).skinFocus!==tr(p).skinFocus&&x.available!==false&&!x.isSample&&x.photo&&!ids.has(x.id)&&cost(p)+cost(x)<=limit))
+      :engine.products.filter(x=>x.available!==false&&!x.isSample&&x.currency===p.currency&&x.photo&&!ids.has(x.id)&&!ph.has(String(x.photo).split('?')[0])&&x.category===p.category&&x.kind!==p.kind&&cost(p)+cost(x)<=limit);
     const pick=[];for(const x of list){if(pick.length>=2)break;if(pick.some(y=>y.kind===x.kind))continue;pick.push(x);}
     if(!pick.length)return '';
     const brand=window.COSMETICS_DEMOS?.brands?.[document.body.dataset.cosmeticsDemo]?.name||'';

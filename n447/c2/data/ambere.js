@@ -86,7 +86,7 @@
     "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, tělo plné, hořkost mírná; chuťový profil Čokoláda, kakao a mandle",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
@@ -184,7 +184,7 @@
     "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, tělo střední, hořkost nízká; chuťový profil Čokoláda, karamel,ořísky",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
@@ -282,7 +282,7 @@
     "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, tělo plné, hořkost nízká; chuťový profil Mléčná čokoláda, kakao",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
@@ -379,7 +379,7 @@
     "fruitFull"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, tělo plné, hořkost střední; chuťový profil Mléčná čokoláda, nugát, mandarinky",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
@@ -477,7 +477,7 @@
     "fruitFull"
    ],
    "tasteSource": "parametry e-shopu: kyselost nízká, tělo střední, hořkost střední; chuťový profil Nugát, citrus, pomeranč",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "nízká"
@@ -575,7 +575,7 @@
     "fruitFull"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, tělo plné, hořkost nízká; chuťový profil Hořká čokoláda, oříšek, brownie, rozinky",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
@@ -664,7 +664,7 @@
     "fresh"
    ],
    "tasteSource": "parametry e-shopu: kyselost vyšší, hořkost nízká; chuťový profil Broskev, květinová, bergamotový čaj, ostružiny",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "vyšší"
@@ -749,7 +749,7 @@
     "fruitFull"
    ],
    "tasteSource": "parametry e-shopu: kyselost nízká, tělo plné, hořkost nízká; chuťový profil čokoláda, třtinový cukr a hrozny",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "nízká"
@@ -837,7 +837,7 @@
     "fruitFull"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, hořkost nižší; chuťový profil nugát, lískový oříšek, fík, rozinky",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
@@ -922,7 +922,7 @@
     "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, tělo jemné, hořkost nízká; chuťový profil Mléčná čokoláda, koření, zelená paprika",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
@@ -1010,7 +1010,7 @@
     "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, hořkost vyšší; chuťový profil Karamel, čokoláda, lískový oříšek",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
@@ -1093,7 +1093,7 @@
     "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, tělo jemné, hořkost střední; chuťový profil Koření, cedrové dřevo, tabák a hořká čokoláda",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
@@ -1182,7 +1182,7 @@
     "fruitFull"
    ],
    "tasteSource": "parametry e-shopu: kyselost nízká, tělo plné, hořkost nižší; chuťový profil Mléčná čokoláda, javorový sirup, hrozny",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "nízká"
@@ -1270,7 +1270,7 @@
     "fresh"
    ],
    "tasteSource": "parametry e-shopu: kyselost vyšší; chuťový profil sladká, citronová, hladká, sametová, černý čaj, černý rybíz",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "vyšší"
@@ -1351,7 +1351,7 @@
     "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, hořkost žádná; chuťový profil neuveden",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
@@ -1430,7 +1430,7 @@
     "fresh"
    ],
    "tasteSource": "parametry e-shopu: kyselost střední, tělo plné, hořkost nízká; chuťový profil čokoláda, višeň, angrešt",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "střední"
@@ -1518,7 +1518,7 @@
     "fruitFull"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, hořkost nízká; chuťový profil Hořká čokoláda • Nugát • Citronová kůra",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
@@ -1602,7 +1602,7 @@
     "fresh"
    ],
    "tasteSource": "parametry e-shopu: kyselost vyšší, tělo plné; chuťový profil černý čaj, citrusy",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "vyšší"
@@ -1685,7 +1685,7 @@
     "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, tělo plné, hořkost vyšší; chuťový profil lískový oříšek, karamel",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
@@ -1762,7 +1762,7 @@
     "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, tělo plné, hořkost střední; chuťový profil Čokoláda, kakao",
-   "profile": [
+   "tasteProfile": [
     {
      "name": "Kyselost",
      "text": "žádná"
