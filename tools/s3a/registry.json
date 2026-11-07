@@ -1709,6 +1709,23 @@
     "source": "https://www.mohaji.cz/doprava-a-platba/",
     "checkedAt": "2026-11-07"
    }
+  },
+  "ambere": {
+   "type": "coffee",
+   "name": "Ambere",
+   "country": "CZ",
+   "series": "s4",
+   "logos": {
+    "landing": "/assets/s3/ambere/logo.png",
+    "header": "/assets/s3/ambere/logo.png",
+    "avatar": "/assets/s3/ambere/mark.png"
+   },
+   "freeShip": {
+    "from": 800,
+    "note": "Doprava zdarma při objednávce nad 800 Kč",
+    "source": "https://www.ambere.cz/doprava-a-platba/",
+    "checkedAt": "2026-11-07"
+   }
   }
  }
 }

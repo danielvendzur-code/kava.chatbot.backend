@@ -43,6 +43,7 @@
         + (p.origin ? '<span class="s3-cmp-row"><i>' + esc(T('Pôvod', 'Původ')) + '</i>' + esc(String(p.origin).split(/[·(]/)[0].trim()) + '</span>' : '')
         + (p.process ? '<span class="s3-cmp-row"><i>' + esc(T('Spracovanie', 'Zpracování')) + '</i>' + esc(String(p.process).split(/[,(]/)[0].trim()) + '</span>' : '')
         + ((p.notes || []).length ? '<span class="s3-cmp-row"><i>' + esc(T('Chuť', 'Chuť')) + '</i>' + esc(p.notes.slice(0, 3).join(', ')) + '</span>' : '')
+        + (!sc.length ? (p.profile || []).map((x) => '<span class="s3-cmp-row"><i>' + esc(x.name) + '</i>' + esc(x.text) + '</span>').join('') : '')
         + sc.map((x) => '<span class="s3-scale"><i>' + esc(x.name) + '</i><span class="s3-scale-bar" style="--s3-v:' + (x.value / x.max) + '"></span><b>' + esc(x.value + '/' + x.max) + '</b></span>').join('')
         + '<a class="s3-cmp-go" href="' + esc(p.url) + '">' + esc(T('Zobraziť kávu →', 'Zobrazit kávu →')) + '</a></span>'; };
     return {role: 'assistant', text: T('Porovnanie: ', 'Porovnání: ') + a.name + ' / ' + b.name, html: '<span class="s3-cmp"><span class="lg-text">' + esc(T('Porovnanie podľa údajov e-shopu:', 'Porovnání podle údajů e-shopu:')) + '</span><span class="s3-cmp-cols">' + col(a) + col(b) + '</span></span>'};
