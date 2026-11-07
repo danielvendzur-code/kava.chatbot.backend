@@ -13,6 +13,8 @@
 
   /* Whole text nodes. */
   const exact = {
+    'Konkrétne odporúčania': 'Konkrétní doporučení',
+    'Fotografie, ceny a odkazy na produkty vo vašom e-shope.': 'Fotografie, ceny a odkazy na produkty ve vašem e-shopu.',
     'Pokračovať vo výbere':'Pokračovat ve výběru',
     'Pri rovnakej vhodnosti uprednostňujem produkt bližšie k vášmu rozpočtu.':'Při stejné vhodnosti upřednostňuji produkt blíže vašemu rozpočtu.',
     'Kúpeľové výrobky':'Koupelové výrobky',

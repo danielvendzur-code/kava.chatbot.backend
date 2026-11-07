@@ -20,12 +20,10 @@ s = re.sub(r'export const BRANDS = \{.*?\};', 'export const BRANDS = {' + ', '.j
 open(p, 'w').write(s)
 # vercel.json
 V = json.load(open(f'{ROOT}/vercel.json'))
-V['rewrites'][0]['has'][0]['value'] = '^(' + '|'.join(D) + ')(\\.mojchatbot\\.sk|-mojchatbot\\.vercel\\.app)$'
+for rw in V['rewrites']:
+    rw['has'][0]['value'] = '^(' + '|'.join(D) + ')(\\.mojchatbot\\.sk|-mojchatbot\\.vercel\\.app)$'
 json.dump(V, open(f'{ROOT}/vercel.json', 'w'), ensure_ascii=False, indent=2)
 # index.html
 seg = {'coffee': 'káva', 'cosmetics': 'kozmetika', 'tea': 'čaj', 'hair': 'vlasová kozmetika'}
-links = '\n'.join(f'<a href="/cosmetics.html?demo={k}">{v["name"]} <small>· {seg.get(v.get("segment", v["type"]), v["type"])} · {v["country"]}</small></a>' for k, v in D.items())
-p = f'{ROOT}/index.html'; s = open(p).read()
-s = re.sub(r'(<p><small>Interný náhľad[^\n]*\n)(?:<a [^\n]*\n)*', lambda m: m.group(1) + links + '\n', s)
-open(p, 'w').write(s)
+# index.html: schválená jednoduchá stránka bez zoznamu firiem (klient vidí iba svoju značku) – negeneruje sa
 print(len(D), 'firiem:', ', '.join(D)); print('HOLD:', ', '.join(f"{k} ({v['status']})" for k, v in HOLD.items()) or '–')

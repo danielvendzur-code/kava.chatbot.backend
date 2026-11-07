@@ -87,7 +87,7 @@
     ['Preklik priamo na produkt', 'Po odporúčaní zákazník pokračuje rovno na konkrétny produkt vo vašom e-shope.'],
     ['Vloženie jedným riadkom kódu', 'Pridá sa do existujúceho webu, nič netreba prerábať.'],
     ['Funguje aj mimo pracovného času', 'Zákazník dostane odpoveď a pomoc s výberom aj večer či cez víkend.'],
-    ['História správ', 'Vidíte, na čo sa zákazníci pýtajú, a zistíte, čo im na stránke chýba alebo čomu nerozumejú.'],
+    ['Konkrétne odporúčania', 'Fotografie, ceny a odkazy na produkty vo vašom e-shope.'],
     ['Priebežné úpravy', 'Sortiment, ceny aj odpovede sa dajú kedykoľvek aktualizovať.'],
     ['Ďalšie funkcie podľa vašej firmy', 'Neskôr sa dá doplniť napríklad košík, formulár, rezervácia, zber kontaktov alebo iný typ výberu.']
   ];
@@ -96,7 +96,7 @@
     ['Chatbot s vaším katalógom', 'Vaše produkty a ceny, nie všeobecné odpovede.'],
     ['Odpovedá aj o polnoci', SEG.includedChat || 'Zloženie, typ pleti, rutina aj porovnanie dvoch produktov.'],
     ['Výber podľa vašich potrieb', SEG.includedAdvisor || 'Pleť, priorita, rutina a textúra — na konci jeden konkrétny produkt.'],
-    ['Vidíte, na čo sa pýtajú', 'História konverzácií, aj otázky, na ktoré ponuka neodpovedá.']
+    ['Konkrétne odporúčania', 'Fotografie, ceny a odkazy na produkty vo vašom e-shope.']
   ];
 
   /* Headline and lead are the same on every page; the coffee pages read the
@@ -112,7 +112,7 @@
     ['Odpovedá aj o polnoci', 'aj cez víkend, bez vás'],
     ['Pozná váš katalóg', 'pracuje s vašimi produktmi a cenami'],
     ['Výber podľa vašich potrieb', SEG.keepsAdvisor || 'na konci jeden konkrétny produkt'],
-    ['História konverzácií', 'vidíte, na čo sa zákazníci pýtajú']
+    ['Konkrétne odporúčania', 'produkty, ceny a odkazy na váš e-shop']
   ];
 
   const CHIPS = brand.quickChips?.length===4?brand.quickChips:['Mám suché vlasy', 'Vlasy sa mi rýchlo mastia', 'Svrbí ma pokožka hlavy', 'Vypadávajú mi vlasy'];

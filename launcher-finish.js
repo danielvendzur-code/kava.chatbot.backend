@@ -27,6 +27,11 @@
     ID + '.cx-lf-ring{transition:box-shadow .16s!important;}',
     ID + '.cx-lf-ring:hover,' + ID + '.cx-lf-ring:focus-visible{box-shadow:0 0 0 3px var(--lf-bg,#141414),0 14px 30px -16px rgba(20,20,20,.55)!important;outline:none!important;transform:none!important;}'
   ].join('');
+  if (window.S3_REG) {
+    const iconMask = 'url("data:image/svg+xml,' + encodeURIComponent(ICON.replace('<svg ', '<svg xmlns="http://www.w3.org/2000/svg" ')) + '")';
+    const bubble = ID + '#cx-open.cx-lf-chat';
+    style.textContent += bubble + '>*{display:none!important;}' + bubble + '::after{content:""!important;display:block!important;position:static!important;width:56%!important;height:56%!important;margin:0!important;background:currentColor!important;mask:' + iconMask + ' center / contain no-repeat!important;-webkit-mask:' + iconMask + ' center / contain no-repeat!important;pointer-events:none!important;opacity:1!important;}';
+  }
   document.head.append(style);
 
   const rgb = (value) => { const m = String(value || '').match(/[\d.]+/g); return m && m.length >= 3 ? m.slice(0, 4).map(Number) : null; };
@@ -121,6 +126,7 @@
   async function finish() {
     const button = document.querySelector('#cx-open');
     if (!button || busy) return;
+    if (window.S3_REG) { mode = 'chat'; hold(button); return; }
     if (mode) return hold(button);
     busy = true;
     try {
