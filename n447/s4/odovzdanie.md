@@ -195,3 +195,46 @@ Pokračujem ďalšími kandidátmi z `kandidati.md` do 20 firiem. Ďalšie na ra
   3. kávovar → bez kofeínu.
 - **Testy:** všetky cesty 320/390/1280, bez fotiek, chipy, avatar, chat offline/mock, rovnaký význam – nálezy 0.
 - **Neoverené:** R2Decaf má praženie „Omni“ (svetlé aj moderné espresso); zaradené do „Moderné espresso“ a príprava je espresso aj filter podľa oboch kategórií e-shopu.
+
+## Dávka 4 (8. 11. 2026)
+
+SHA `43281d7` · Preview `kava-chatbot-backend-3rnb8fhhd-danielvendzur-codes-projects.vercel.app/cosmetics.html?demo=vaanok` (READY, bez aliasu).
+
+### 9. VAANOK – vaanok.sk (pleťová kozmetika, SK)
+- **Prevádzkovateľ:** VAAN, s. r. o., IČO 35 920 581, Turbínova 1, Bratislava; výroba v Senci (obchodné podmienky).
+- **Veľkosť firmy:** čistý obrat 2025: 55 182 € (2024: 1 454 €) – účtovná závierka v registeruz.sk. Malá, rastúca značka.
+- **Kontakt:** info@vaanok.sk (/kontakt/); objednávky objednavky@vaanok.sk.
+- **Vlastný poradca:** nie. „Poradňa“ sú iba články, kvíz ani diagnostika pleti nie je.
+- **Zdroje (8. 11.):**
+  - WooCommerce Store API e-shopu: názov, cena a sklad každej veľkosti, kategórie, fotka;
+  - typ pleti = kategórie e-shopu (citlivá, mastná, mdlá a unavená, suchá, zmiešaná, zrelá, Všetky typy pleti).
+- **Produkty:** 20.
+  - 5 pleťových sér a 2 pleťové balzamy;
+  - 2 čistiace oleje a 4 hydroláty;
+  - 3 ílové masky;
+  - 2 telové oleje a 2 telové balzamy.
+  - Nepreberajú sa: sady, sviečky, soli do kúpeľa, detský olej a telový olej Večernica (zdravotné tvrdenia v popise).
+- **Pravdivosť:**
+  - Pri každom produkte sú uvedené presne tie typy pleti, do ktorých ho e-shop zaraďuje.
+  - „Všetky typy pleti“ sa uvádza iba vtedy, keď je produkt v kategórii „Všetky typy pleti“ a zároveň vo všetkých šiestich typoch. Napríklad Rozjasňujúce sérum v mastnej pleti nie je, preto sa uvádza zoznam piatich typov.
+  - Popisy sú neutrálne vety zo zložiek uvedených e-shopom.
+  - 10 ml cestovné veľkosti nie sú hlavná ponuka, uvádzajú sa pri produkte („Ďalšie veľkosti: 10 ml za 16,00 €“).
+- **Porovnanie:** riadok „Podľa e-shopu“ ukazuje typy pleti z kategórií e-shopu. Zapína ho nový prepínač `compareTrait: 'line'` v registri; ostatné firmy sa nemenia.
+- **Doplnok v rozpočte** (v rovnakej skupine):
+  - sérum ↔ pleťový balzam;
+  - čistiaci olej ↔ hydrolát;
+  - telový olej ↔ telový balzam;
+  - masky bez doplnku.
+- **Doprava zdarma:** e-shop hranicu nikde neuvádza (stránka Možnosti doručenia je prázdna), preto sa neuvádza.
+- **Cesty** (snímky `dokazy/odovzdanie/vaanok-cesta{1,2,3}-{320,390,1280}.png`):
+  1. Pleť → Séra a balzamy → Suchá → Pleťové sérum → Rozjasňujúce sérum (+ Nechtík & Manuka, spolu 64 €);
+  2. Pleť → Čistenie a hydroláty → Hydrolát → Lipa (+ Súmrak & Úsvit);
+  3. Telo → Telový olej → Pod lipou.
+- **Testy:**
+  - 78 výsledkov 320/390/1280, aj bez fotiek;
+  - chipy 4 × 40 px, avatar;
+  - chat offline/mock;
+  - porovnanie 2 produktov;
+  - nadväzujúca veta.
+  - Nálezy 0.
+- **Poznámka:** krok „Aká je vaša pleť?“ (Suchá / Mastná alebo zmiešaná / Citlivá) tvorí spoločný engine z kategórií e-shopu. Produkty, ktoré sú iba v „zmiešanej“ a nie v „mastnej“ pleti, sa pri voľbe „Mastná alebo zmiešaná“ neponúknu. Je to neúplné, nie nepravdivé.

@@ -13,6 +13,7 @@ Cena v ponuke: 447 € jednorazovo + 10 €/mesiac, bez skúšobného obdobia.
 | MýdLenka | mydlenka.cz | Lenka Sojková, 72218533 | info@mydlenka.cz (obchodné podmienky) | 25 produktov (pleť, vlasy, deo, telo) | lokálna kontrola |
 | ZRNA (Pražírna Kyjov) | prazirnazrna.cz | Vysněno s.r.o., 09270850 (prevádzka Pražírna Kyjov s.r.o.) | info@prazirnazrna.cz (/kontakty/) | 10 zrnkových káv | lokálna kontrola |
 | Johnny Coffee | johnnycoffee.cz | CONSO MED s.r.o., 04543220 | info@johnnycoffee.cz (/kontakt/, parametre produktov) | 20 zrnkových káv | lokálna kontrola |
+| VAANOK | vaanok.sk | VAAN, s. r. o., 35920581 (obrat 2025: 55 182 €) | info@vaanok.sk (/kontakt/) | 20 produktov (séra, balzamy, čistenie, hydroláty, masky, telo) | Preview overené (43281d7) |
 
 Preview: po pushnutí vetvy `claude/n447-s4-20261107` (bez aliasov, nasadenie rieši Codex).
 
@@ -85,3 +86,27 @@ Preview: po pushnutí vetvy `claude/n447-s4-20261107` (bez aliasov, nasadenie ri
 
 ## Na rozhodnutie majiteľa (nie HOLD, ale sporné)
 - Lázeňská káva (eshop.lazenskakava.cz, Lazenskakava.cz s.r.o., 05825580): dobré podklady (káva „espresso“ / „filtr“ v názve). Má však „Online konzultaci zdarma“ (ľudská poradňa) a silný B2B profil (kávovary, HACCP, e-book pre kaviarne). Ak ľudská konzultácia nevadí, je to vhodný kandidát.
+
+## Hľadanie cez Google + tržby (8. 11.) – vyradené
+Duplicity sa odteraz overujú podľa **domény** v `firmy.json`, `STAV_152.json`, `existing-slugs.txt` a vo všetkých vetvách (nie iba podľa slugu – TWO cosmetics má slug `two`).
+
+| Firma | Dôvod |
+|---|---|
+| TWO cosmetics (twocosmetics.sk) | duplicita – existuje ako `two` |
+| a-ORIGINAL | obchod s viacerými značkami, živnostník |
+| Ina Essentials | zdravotné tvrdenia |
+| NATAVA (UC TRADE CZ) | obrat 100–200 mil. Kč – veľká firma |
+| Mony Key, KS Prírodné mydlá | živnostník / veľmi malé (KS ~11 tis. €), takmer iba mydlá |
+| Queenstar / QS Cosmetics / JFenzi | dekoratívna kozmetika a parfémy |
+| Herb-Pharma, Eco Rovnak | farmácia / veľkoobchod |
+| benigma | = Cyprianus (existuje) |
+| Boemi (Cosmetica Bohemica, 27888665) | najmä kúpeľová a darčeková telová kozmetika, tržby nezistené |
+| NaomiBioCosmetics | iba 8 produktov |
+| Bioregal, Biokrása, Dotek slunce, Wereco, Dalora, Sashe | obchody s viacerými značkami / marketplace |
+| Protože JSI | kozmetika „na ekzém“ – zdravotné tvrdenia |
+| SiSi (sisikosmetika.cz) | ~9 produktov (zvyšok mini/maxi/testery), všetko pre citlivú a zrelú pleť – málo podkladov na voľby |
+| deNatura | cieli na obrat 150 mil. Kč, séra na riasy |
+| Henep | web nefunkčný |
+| Panakeia, Kvitok, Modrá púpava, Barbora Lori, Lavelin, Soaphoria, Natureal, Dr. Sandra, Klara Rott, Anela, Manufaktura, Renovality, Purity, Malinna, Naturinka, Goodie, Libebit, Bellcoria, Dulcia, Kvetu, Puaree, LucyLab, Yemna, Facederma, Iuvenio, Noili, Saloos, Nobilis | duplicita (už existujú) |
+
+Muši (musiprirodne.sk, Zuzkoris s.r.o., 54529514): tržby 2025 19 544 €, ~13 vlastných produktov (mydlá podľa typu pleti, tuhé šampóny, maslá) – možný kandidát, ale tenký sortiment.
