@@ -56,3 +56,10 @@ Preview: po pushnutí vetvy `claude/n447-s4-20261107` (bez aliasov, nasadenie ri
 | Karel Hadek | 403 pri kontrole |
 | Ladatha | web nefunkčný |
 | Mamacoffee | HOLD_DUPLICATE (pôvodná séria) |
+| Levandulový dům | e-shop bez parametrov (typ pleti/vlasov, vôňa) – iba názvy; mýdla a deo kategórie prázdne pri zbere |
+| Mija | najmä sviečky, prostorové parfémy, saunové esencie a veľkoobchodný cenník – nie je to výber starostlivosti |
+| COFFEESPOT | vlastný „Průvodce výběrem kávy“ (porovnateľný poradca), väčšia firma s pobočkami |
+| Latino Café (kava-arabica.cz) | veľká sieť s pobočkami, vlastné menu „Co od své kávy očekáváte?“ |
+| 25coffee | e-shop neuvádza prípravu (espresso / filter) – výber by si musel vymýšľať |
+| Longberry | longberry.cz vracia chorvátsky sortiment (zahraničný reťazec) |
+| BARZZUZ | vlastná platforma bez štruktúrovaných údajov, predáva aj kávovary La Pavoni a pražiace stroje – odložené |
