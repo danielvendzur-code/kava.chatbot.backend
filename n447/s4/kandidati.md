@@ -56,6 +56,13 @@ Preview: po pushnutí vetvy `claude/n447-s4-20261107` (bez aliasov, nasadenie ri
 | Karel Hadek | 403 pri kontrole |
 | Ladatha | web nefunkčný |
 | Mamacoffee | HOLD_DUPLICATE (pôvodná séria) |
+| Pražírna Brno (prazirnabrno.cz) | duplicita – už spracovaná ako ukážka „black“ (vetvy n447-black, coffee-deep3) |
+| Pražírna Mikulov | sporné podklady: parameter „Země původu“ uvádza Ethiopia pri Venezuele, Brazílii aj Kostarike; príprava neuvedená |
+| Crazy beans | príprava (espresso/filter) pri väčšine káv neuvedená |
+| Zicoffee | bez chuťových parametrov, široký veľkoobchodný sortiment |
+| Mystická mýdlárna | prevažne mydlá, darčekové koše a veľkoobchodné 800 g bloky – nie výber starostlivosti |
+| Ave NATURA | web blokuje automatický prístup (466) – podklady nedostupné |
+| King's Coffee, Café Monte Cintu | iba 4–6 káv |
 | Levandulový dům | e-shop bez parametrov (typ pleti/vlasov, vôňa) – iba názvy; mýdla a deo kategórie prázdne pri zbere |
 | Mija | najmä sviečky, prostorové parfémy, saunové esencie a veľkoobchodný cenník – nie je to výber starostlivosti |
 | COFFEESPOT | vlastný „Průvodce výběrem kávy“ (porovnateľný poradca), väčšia firma s pobočkami |

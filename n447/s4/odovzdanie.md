@@ -143,3 +143,31 @@ Kontrola starších ukážok po úpravách jadra: mydlozfarmy 25/25 a teamountai
 Pokračujem ďalšími kandidátmi z `kandidati.md` do 20 firiem. Ďalšie na rade:
 - Mystická mýdlárna, Levandulový dům, BARZZUZ, 25coffee, co-bean, Sypané čaje;
 - čajové firmy až po vyriešení fotiek.
+
+## Dávka 2 (8. 11. 2026)
+
+### 7. RaE – raekosmetika.cz (kozmetika, CZ)
+- **Prevádzkovateľ:** KULISH RADOMÍR s.r.o., IČO 28569725, Návsí.
+- **Kontakt:** info@raekosmetika.cz (/kontakt). Pätička e-shopu uvádza „by PCsupport.cz s.r.o.“ (tvorca webu).
+- **Zdroje (8. 11.):** WooCommerce Store API e-shopu (názov, cena, sklad, kategórie, varianty 30/50 a 100/250).
+- **Produkty:** 18 – tuhé deodoranty so sódou a bez sódy (podľa kategórie e-shopu), bambucké telové maslá, hydratačné mlieka. Vôňa je vždy z názvu produktu.
+- **Doprava zdarma:** od 2 000 Kč (hlavička webu).
+- **Cesty:**
+  1. deodorant → tuhý → levanduľa;
+  2. deodorant → bez sódy → vanilka a orchidea;
+  3. telo → bambucké maslo → konopný olej (doplnok: mlieko bylinky).
+- **Vyradené:**
+  - parfémy s vlastnými názvami vôní;
+  - testery, sady, náplne;
+  - vône bez pravdivej fotky (indický lotos, cashmere, papaya, divoká višňa);
+  - balzamy na pery – e-shop má každý dvakrát s rôznou cenou 125 a 160 Kč, cena nie je jednoznačná.
+- **Neoverené:** jednotka variant masiel „obsah 30/50“ nie je v e-shope uvedená (ml/g), preto sa nezobrazuje. V hlavičke je iba ďatelina z loga, lebo celé logo je na tmavom pozadí nečitateľné.
+
+### Opravy prvej šestice (8. 11.)
+- **Mohaji:** sporný pôvod Nicaragua/Colombia vynechaný.
+  - Chuťová voľba je iba podľa škály kyselosti pražiarne (0–2 / 3 / 4–5 z 5).
+  - Narozeninová limitka s kyselosťou 3/5 už nie je označená ako „vyššia kyselosť“.
+- **Ambere, ZRNA, Johnny Coffee:** popisy chuťových volieb opisujú iba kyselosť/aciditu, ako ju uvádza pražiareň. Žiadne zovšeobecnené tóny.
+- **MýdLenka:** produkty v štyroch kategóriách pleti sú uvedené ako „Normální, citlivá, suchá i problematická“, nie „pro všechny typy pleti“; `allSkinTypes` = false.
+- **Cena za 100 g (nové kópie s4):** `Math.round(cena/gramy*10000)/100`, pri EUR bez zaokrúhlenia na celé eurá. Staršie ukážky bez zmeny.
+- **Chat kozmetiky s4:** po „Zeptat se poradce“ jedna krátka nadväzujúca veta k vybranému produktu.
