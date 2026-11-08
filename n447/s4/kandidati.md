@@ -63,6 +63,12 @@ Preview: po pushnutí vetvy `claude/n447-s4-20261107` (bez aliasov, nasadenie ri
 | Mystická mýdlárna | prevažne mydlá, darčekové koše a veľkoobchodné 800 g bloky – nie výber starostlivosti |
 | Ave NATURA | web blokuje automatický prístup (466) – podklady nedostupné |
 | King's Coffee, Café Monte Cintu | iba 4–6 káv |
+| co-bean | distribútor viacerých značiek (BlackStar, Charisma, Ronnefeldt) a profesionálnych kávovarov – nie vlastná ponuka jednej firmy |
+| Lexa coffee | 9 káv bez uvedenej prípravy a bez kyselosti |
+| Zrnka z Hrnka | produktové fotky sú generované AI (názov súboru „Gemini_Generated_Image“), príprava neuvedená |
+| JAMAI CAFE | vlastný kvíz výberu kávy |
+| GP káva | veľký obchod (kávovary, čaje, stovky kategórií), vlastné návody výberu |
+| Valašská pražírna | chuť iba „Nekyselé / Lehce ovocité / Výrazné“, príprava len pri niektorých – slabé podklady |
 | Levandulový dům | e-shop bez parametrov (typ pleti/vlasov, vôňa) – iba názvy; mýdla a deo kategórie prázdne pri zbere |
 | Mija | najmä sviečky, prostorové parfémy, saunové esencie a veľkoobchodný cenník – nie je to výber starostlivosti |
 | COFFEESPOT | vlastný „Průvodce výběrem kávy“ (porovnateľný poradca), väčšia firma s pobočkami |
@@ -70,3 +76,6 @@ Preview: po pushnutí vetvy `claude/n447-s4-20261107` (bez aliasov, nasadenie ri
 | 25coffee | e-shop neuvádza prípravu (espresso / filter) – výber by si musel vymýšľať |
 | Longberry | longberry.cz vracia chorvátsky sortiment (zahraničný reťazec) |
 | BARZZUZ | vlastná platforma bez štruktúrovaných údajov, predáva aj kávovary La Pavoni a pražiace stroje – odložené |
+
+## Na rozhodnutie majiteľa (nie HOLD, ale sporné)
+- Lázeňská káva (eshop.lazenskakava.cz, Lazenskakava.cz s.r.o., 05825580): dobré podklady (káva „espresso“ / „filtr“ v názve). Má však „Online konzultaci zdarma“ (ľudská poradňa) a silný B2B profil (kávovary, HACCP, e-book pre kaviarne). Ak ľudská konzultácia nevadí, je to vhodný kandidát.
