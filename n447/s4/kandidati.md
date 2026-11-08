@@ -72,6 +72,8 @@ Preview: po pushnutí vetvy `claude/n447-s4-20261107` (bez aliasov, nasadenie ri
 | Zelená alchymie, BeButter | obchod s viacerými značkami; BeButter má vlastný dotazník |
 | Mýdlovar | popisy typov pokožky plné zdravotných tvrdení (ekzém, akné, lupienka) – nedá sa pravdivo ponúknuť bez nich |
 | Fraela, Stabla, Cannor | dekoratívna kozmetika / CBD (Cannor má vlastného „průvodce“) – mimo zamerania |
+| Melody fine roastery | iba 8 káv, z toho 2 vypredané; názvy variant chýbajú |
+| Liberecká pražírna | chuť a príprava iba vo všeobecnom texte („vhodná pro všechny způsoby přípravy“), bez parametrov |
 | Valašská pražírna | chuť iba „Nekyselé / Lehce ovocité / Výrazné“, príprava len pri niektorých – slabé podklady |
 | Levandulový dům | e-shop bez parametrov (typ pleti/vlasov, vôňa) – iba názvy; mýdla a deo kategórie prázdne pri zbere |
 | Mija | najmä sviečky, prostorové parfémy, saunové esencie a veľkoobchodný cenník – nie je to výber starostlivosti |
