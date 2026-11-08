@@ -13,6 +13,8 @@
   const byId = new Map(list.map((p) => [String(p.id), p]));
   const tr = (p) => (p.source && p.source.selectionTraits) || {};
   const label = (k) => { const c = (REG.traitCopy || {})[k]; return c ? (cs ? c[2] : c[0]) : ''; };
+  /* compareTrait 'line': pri produkte sa namiesto názvu voľby ukáže jej podnadpis (napr. typy pleti, do ktorých produkt zaraďuje e-shop) */
+  const focusText = (k) => { const c = (REG.traitCopy || {})[k]; return c && REG.compareTrait === 'line' ? (cs ? c[3] : c[1]) : label(k); };
   /* Ponuka: produkty jednej oblasti (najpočetnejšej – napr. pleť), rovnaký druh pri sebe, v poradí e-shopu; najviac 6. */
   function candidates() {
     const n = (k, f) => list.filter((p) => f(p) === k).length, use = (p) => tr(p).careUse || p.category;
@@ -35,7 +37,7 @@
         + row(T('Cena', 'Cena'), (p.source && p.source.priceFrom ? T('od ', 'od ') : '') + p.price)
         + row(T('Balenie', 'Balení'), pack)
         + row(T('Druh', 'Druh'), p.kind)
-        + row(T('Podľa e-shopu', 'Podle e-shopu'), [label(t.careUse), label(t.skinFocus)].filter(Boolean).join(' · '))
+        + row(T('Podľa e-shopu', 'Podle e-shopu'), [label(t.careUse), focusText(t.skinFocus)].filter(Boolean).join(' · '))
         + '<a class="s3-cmp-go" href="' + esc(p.url) + '">' + esc(T('Zobraziť produkt →', 'Zobrazit produkt →')) + '</a></span>';
     };
     return {role: 'assistant', text: T('Porovnanie: ', 'Porovnání: ') + a.name + ' / ' + b.name,

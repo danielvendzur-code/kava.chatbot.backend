@@ -2,7 +2,7 @@
    sú zo schválenej ukážky Andreine (cosmetics.html + jej vrstvy); mení sa iba obsah, otázky, fotky, farby a logo.
    Káva: c2 jadro (n447/c2) v paneli Andreine (full-coffee-advisor.js). Kozmetika: katalóg v natívnom poradcovi Andreine. */
 (async () => {
-  const V = 's4-20261108-2';
+  const V = 's4-20261108-3';
   const REG = (window.S3_REG && window.S3_REG.demos) || {};
   const COFFEE = Object.keys(REG).filter((k) => REG[k].type === 'coffee');
   const COSMETICS = Object.fromEntries(Object.keys(REG).filter((k) => REG[k].type === 'cosmetics').map((k) => [k, '/catalogues/' + k + '.js']));

@@ -2777,6 +2777,342 @@
     "source": "https://www.padmeroastery.sk/doprava-a-platba/",
     "checkedAt": "2026-11-08"
    }
+  },
+  "vaanok": {
+   "type": "cosmetics",
+   "segment": "cosmetics",
+   "name": "VAANOK",
+   "country": "SK",
+   "series": "s4",
+   "logos": {
+    "avatar": "/assets/s3/vaanok/mark.png"
+   },
+   "brand": {
+    "name": "VAANOK",
+    "fullName": "VAANOK – prírodné laboratórium",
+    "domain": "vaanok.sk",
+    "website": "https://vaanok.sk/",
+    "url": "https://vaanok.sk/",
+    "theme": {
+     "brand": "#2e323c",
+     "accent": "#9a8466",
+     "soft": "#f3f1ee",
+     "paper": "#ffffff",
+     "ink": "#2e323c",
+     "line": "#e2ddd6"
+    },
+    "logo": "/assets/s3/vaanok/logo.png",
+    "mark": "/assets/s3/vaanok/mark.png",
+    "hero": "",
+    "quickChips": [
+     "Sérum na suchú pleť",
+     "Čistiaci olej",
+     "Ktorý hydrolát?",
+     "Porovnať dva produkty"
+    ],
+    "lang": "sk",
+    "greeting": "Dobrý deň. Napíšte, akú starostlivosť hľadáte – sérum, čistenie, masku alebo telo – a aký máte typ pleti. Pomôžem vám vybrať z ponuky VAANOK."
+   },
+   "segmentText": {
+    "includedChat": "Séra a balzamy podľa typu pleti, čistiace oleje, hydroláty, ílové masky, telová starostlivosť aj porovnanie dvoch produktov.",
+    "includedAdvisor": "Skupina starostlivosti a konkrétny produkt s typmi pleti podľa e-shopu — na konci odporúčanie v rozpočte.",
+    "placeholder": "Opýtajte sa na starostlivosť o pleť…"
+   },
+   "stepCopy": {
+    "careUse": [
+     "Čo hľadáte?",
+     "Podľa kategórií e-shopu VAANOK.",
+     "Starostlivosť"
+    ],
+    "skinFocus": [
+     "Ktorý produkt vás zaujíma?",
+     "Pri každom uvádzame typy pleti, do ktorých ho e-shop zaraďuje.",
+     "Produkt a typ pleti"
+    ],
+    "budget": [
+     "Do akej sumy vyberáme?",
+     "Cena celej odporúčanej starostlivosti.",
+     "Rozpočet"
+    ]
+   },
+   "panelText": [],
+   "traitCopy": {
+    "s4FaceCare": [
+     "Séra a balzamy",
+     "Pleťové séra a pleťové balzamy",
+     "Séra a balzamy",
+     "Pleťové séra a pleťové balzamy"
+    ],
+    "s4Cleanse": [
+     "Čistenie a hydroláty",
+     "Čistiace oleje a kvetové vody",
+     "Čistenie a hydroláty",
+     "Čistiace oleje a kvetové vody"
+    ],
+    "s4Mask": [
+     "Ílové masky",
+     "Tri pleťové masky z ílu",
+     "Ílové masky",
+     "Tri pleťové masky z ílu"
+    ],
+    "s4Body": [
+     "Telo",
+     "Telové oleje a balzamy",
+     "Telo",
+     "Telové oleje a balzamy"
+    ],
+    "s4Carokvet": [
+     "Čarokvet",
+     "Pleť citlivá, mdlá a unavená, suchá, zrelá podľa e-shopu",
+     "Čarokvet",
+     "Pleť citlivá, mdlá a unavená, suchá, zrelá podľa e-shopu"
+    ],
+    "s4Rozjas": [
+     "Rozjasňujúce sérum",
+     "Pleť citlivá, mdlá a unavená, suchá, zmiešaná, zrelá podľa e-shopu",
+     "Rozjasňujúce sérum",
+     "Pleť citlivá, mdlá a unavená, suchá, zmiešaná, zrelá podľa e-shopu"
+    ],
+    "s4Harmon": [
+     "Harmonizačné sérum",
+     "Pleť mastná, mdlá a unavená, zmiešaná podľa e-shopu",
+     "Harmonizačné sérum",
+     "Pleť mastná, mdlá a unavená, zmiešaná podľa e-shopu"
+    ],
+    "s4Bobule": [
+     "Bobule",
+     "Všetky typy pleti podľa e-shopu",
+     "Bobule",
+     "Všetky typy pleti podľa e-shopu"
+    ],
+    "s4Men": [
+     "Sérum pre mužov",
+     "Pleť citlivá, mdlá a unavená, zrelá podľa e-shopu",
+     "Sérum pre mužov",
+     "Pleť citlivá, mdlá a unavená, zrelá podľa e-shopu"
+    ],
+    "s4BalmManuka": [
+     "Nechtík & Manuka",
+     "Pleť citlivá, mdlá a unavená, suchá podľa e-shopu",
+     "Nechtík & Manuka",
+     "Pleť citlivá, mdlá a unavená, suchá podľa e-shopu"
+    ],
+    "s4BalmPropolis": [
+     "Propolis & Nechtík",
+     "Pleť mastná, zmiešaná podľa e-shopu",
+     "Propolis & Nechtík",
+     "Pleť mastná, zmiešaná podľa e-shopu"
+    ],
+    "s4CleanPremena": [
+     "Premena",
+     "Všetky typy pleti podľa e-shopu",
+     "Premena",
+     "Všetky typy pleti podľa e-shopu"
+    ],
+    "s4CleanSumrak": [
+     "Súmrak & Úsvit",
+     "Všetky typy pleti podľa e-shopu",
+     "Súmrak & Úsvit",
+     "Všetky typy pleti podľa e-shopu"
+    ],
+    "s4HydRuza": [
+     "Ruža damašská",
+     "Všetky typy pleti podľa e-shopu",
+     "Ruža damašská",
+     "Všetky typy pleti podľa e-shopu"
+    ],
+    "s4HydLipa": [
+     "Lipa",
+     "Všetky typy pleti podľa e-shopu",
+     "Lipa",
+     "Všetky typy pleti podľa e-shopu"
+    ],
+    "s4HydNeroli": [
+     "Neroli",
+     "Všetky typy pleti podľa e-shopu",
+     "Neroli",
+     "Všetky typy pleti podľa e-shopu"
+    ],
+    "s4HydHarman": [
+     "Harmanček pravý",
+     "Všetky typy pleti podľa e-shopu",
+     "Harmanček pravý",
+     "Všetky typy pleti podľa e-shopu"
+    ],
+    "s4MaskPink": [
+     "Ružová ílová",
+     "Pleť mdlá a unavená, suchá, zrelá podľa e-shopu",
+     "Ružová ílová",
+     "Pleť mdlá a unavená, suchá, zrelá podľa e-shopu"
+    ],
+    "s4MaskGreen": [
+     "Zelená ílová",
+     "Pleť mastná, zmiešaná podľa e-shopu",
+     "Zelená ílová",
+     "Pleť mastná, zmiešaná podľa e-shopu"
+    ],
+    "s4MaskWhite": [
+     "Biela ílová",
+     "Pleť citlivá, mdlá a unavená, suchá, zmiešaná, zrelá podľa e-shopu",
+     "Biela ílová",
+     "Pleť citlivá, mdlá a unavená, suchá, zmiešaná, zrelá podľa e-shopu"
+    ],
+    "s4BodyLipa": [
+     "Pod lipou",
+     "Telový olej s nechtíkom a brusnicou",
+     "Pod lipou",
+     "Telový olej s nechtíkom a brusnicou"
+    ],
+    "s4BodyIris": [
+     "Tajomný iris",
+     "Telový olej z botanických extraktov",
+     "Tajomný iris",
+     "Telový olej z botanických extraktov"
+    ],
+    "s4BodyMimoza": [
+     "Dotyk mimózy",
+     "Telový balzam bez vody a konzervantov",
+     "Dotyk mimózy",
+     "Telový balzam bez vody a konzervantov"
+    ],
+    "s4BodyArnika": [
+     "Arnika & Kostihoj",
+     "Telový balzam, drevito-bylinná vôňa",
+     "Arnika & Kostihoj",
+     "Telový balzam, drevito-bylinná vôňa"
+    ]
+   },
+   "choicePhotos": {
+    "s4FaceCare": [
+     "/assets/s3/scenes-k2/face-massage.jpg"
+    ],
+    "s4Cleanse": [
+     "/assets/scenes/face-water.jpg"
+    ],
+    "s4Mask": [
+     "/assets/s3/scenes-k2/clay-mask.jpg"
+    ],
+    "s4Body": [
+     "/assets/s3/scenes-k2/leg-massage.jpg"
+    ],
+    "s4Carokvet": [
+     "/assets/s3/scenes-k2/cherry-blossom.jpg"
+    ],
+    "s4Rozjas": [
+     "/assets/scenes/serum-drop.jpg"
+    ],
+    "s4Harmon": [
+     "/assets/s3/scenes-k2/skin-combination.jpg"
+    ],
+    "s4Bobule": [
+     "/assets/s3/scenes-k2/blueberries.jpg"
+    ],
+    "s4Men": [
+     "/assets/s3/scenes-k2/man-face.jpg"
+    ],
+    "s4BalmManuka": [
+     "/assets/s3/scenes-k2/calendula.jpg"
+    ],
+    "s4BalmPropolis": [
+     "/assets/s3/scenes-k2/honey.jpg"
+    ],
+    "s4CleanPremena": [
+     "/assets/s3/scenes-k2/milk.jpg"
+    ],
+    "s4CleanSumrak": [
+     "/assets/scenes/face-cleanse.jpg"
+    ],
+    "s4HydRuza": [
+     "/assets/s3/scenes-k2/roses-water.jpg"
+    ],
+    "s4HydLipa": [
+     "/assets/s3/scenes-k2/linden-blossom.jpg"
+    ],
+    "s4HydNeroli": [
+     "/assets/s3/scenes-k2/neroli-blossom.jpg"
+    ],
+    "s4HydHarman": [
+     "/assets/scenes/face-clean-pad.jpg"
+    ],
+    "s4MaskPink": [
+     "/assets/s3/scenes-k2/hibiscus.jpg"
+    ],
+    "s4MaskGreen": [
+     "/assets/s3/scenes-k2/matcha.jpg"
+    ],
+    "s4MaskWhite": [
+     "/assets/s3/scenes-k2/coconut.jpg"
+    ],
+    "s4BodyLipa": [
+     "/assets/s3/scenes-k2/linden-blossom.jpg"
+    ],
+    "s4BodyIris": [
+     "/assets/s3/scenes-k2/body-shower.jpg"
+    ],
+    "s4BodyMimoza": [
+     "/assets/scenes/cream-texture.jpg"
+    ],
+    "s4BodyArnika": [
+     "/assets/s3/scenes-k2/leg-massage.jpg"
+    ]
+   },
+   "upsellFocus": {
+    "s4Carokvet": [
+     "s4BalmManuka"
+    ],
+    "s4Rozjas": [
+     "s4BalmManuka"
+    ],
+    "s4Harmon": [
+     "s4BalmPropolis"
+    ],
+    "s4Bobule": [
+     "s4BalmManuka"
+    ],
+    "s4Men": [
+     "s4BalmManuka"
+    ],
+    "s4BalmManuka": [
+     "s4Carokvet"
+    ],
+    "s4BalmPropolis": [
+     "s4Harmon"
+    ],
+    "s4CleanPremena": [
+     "s4HydRuza"
+    ],
+    "s4CleanSumrak": [
+     "s4HydLipa"
+    ],
+    "s4HydRuza": [
+     "s4CleanSumrak"
+    ],
+    "s4HydLipa": [
+     "s4CleanSumrak"
+    ],
+    "s4HydNeroli": [
+     "s4CleanPremena"
+    ],
+    "s4HydHarman": [
+     "s4CleanSumrak"
+    ],
+    "s4MaskPink": [],
+    "s4MaskGreen": [],
+    "s4MaskWhite": [],
+    "s4BodyLipa": [
+     "s4BodyMimoza"
+    ],
+    "s4BodyIris": [
+     "s4BodyMimoza"
+    ],
+    "s4BodyMimoza": [
+     "s4BodyLipa"
+    ],
+    "s4BodyArnika": [
+     "s4BodyIris"
+    ]
+   },
+   "compareTrait": "line"
   }
  }
 }
