@@ -52,7 +52,7 @@ for p in P:
         'priceFrom': vs[0]['price'], 'priceTo': max(v['price'] for v in vs), 'weights': [v['grams'] for v in vs], 'variants': vs, 'checkedAt': CHECKED,
         'source': {'url': p['url'], 'verifiedAt': CHECKED, 'facts': 'parametry produktu (kyselost, tělo, hořkost, profil pražení, chuťový profil, způsob přípravy), krátký popis; ceny a sklad zrnkových variant'}})
 products = [p for p in products if p['photo']][:25]
-DATA = {'slug': SLUG, 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'altFallback': True, 'demo': {'heroProductId': products[0]['id']},
+DATA = {'slug': SLUG, 'price100': 'cents', 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'altFallback': True, 'demo': {'heroProductId': products[0]['id']},
   'brand': {'name': 'Ambere', 'legal': 'Ambere s.r.o.', 'place': 'Ambere · pražírna výběrové kávy', 'shopUrl': WEB + '/kava-ambere/', 'web': WEB + '/',
             'logo': '/assets/s3/ambere/logo.png', 'hero': products[0]['photo'], 'contact': 'obchod.ambere@seznam.cz', 'contactSource': WEB + '/doprava-a-platba/',
             'theme': {'ink': '#3a2e28', 'brand': '#3a2e28', 'accent': '#b59a6a', 'soft': '#f6f1e9', 'paper': '#ffffff'}},

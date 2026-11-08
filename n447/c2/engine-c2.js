@@ -466,9 +466,11 @@
     const packs = verifiedPacks(product, a).map((v) => ({label: grams(v.grams), price: money(v.price, product.currency), chosen: v === pack, over: limit !== null && v.price + (addon ? addon.price : 0) > limit + EPS}));
     /* s3a upsell: väčšie overené balenie tej istej kávy s nižšou cenou za 100 g – iba ak sa (s doplnkom) zmestí do limitu. */
     const per100 = (v) => v.price / v.grams * 100;
+    /* séria 4 (data.price100 === 'cents'): cena za 100 g na centy, Math.round(cena/gramy*10000)/100 (12,95 €/250 g = 5,18 €); staršie ukážky bez zmeny */
+    const r100 = (x) => data.price100 === 'cents' ? Math.round(x * 100) / 100 : Math.round(x);
     const bigger = pack ? verifiedPacks(product, a).filter((v) => v.grams > pack.grams && per100(v) <= per100(pack) * 0.95 && (limit === null || v.price + (addon ? addon.price : 0) <= limit + EPS)).sort((x, y) => x.grams - y.grams)[0] : null;
     const upPack = bigger ? {grams: bigger.grams, label: grams(bigger.grams), price: bigger.price, priceLabel: money(bigger.price, product.currency), url: bigger.url || product.url,
-      per100: money(Math.round(per100(bigger)), product.currency), basePer100: money(Math.round(per100(pack)), product.currency), save: Math.round((1 - per100(bigger) / per100(pack)) * 100)} : null;
+      per100: money(r100(per100(bigger)), product.currency), basePer100: money(r100(per100(pack)), product.currency), save: Math.round((1 - per100(bigger) / per100(pack)) * 100)} : null;
     /* s3a: číselné škály chuti, ako ich uvádza pražiareň (napr. „kyselost 4/5“, „škály (1–10): hořkost 6“). */
     const src = String(product.tasteSource || ''), scaleMax = /1[–-]10/.test(src) ? 10 : 5;
     const scales = [...src.matchAll(/(kyselost|hořkost|sladkost|tělo|kyslosť|horkosť|sladkosť|telo|acidita)\s*(\d+(?:[.,]\d+)?)(?:\s*\/\s*(\d+))?/gi)]

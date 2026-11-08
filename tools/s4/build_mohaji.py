@@ -63,7 +63,7 @@ for p in P:
 products = [p for p in products if p['photo']][:25]
 ADD = {'v60': {'price': 79.0, 'note': 'Papírové filtry pro dripper V60-02 (40 ks).', 'product': {'id': 'papirove-filtry-hario-v60-02-40-ks', 'name': 'Papírové filtry Hario V60-02 40 ks',
        'url': WEB + '/papirove-filtry-hario-v60-02-40-ks/', 'photo': '/assets/s3/mohaji/filtry-v60-02.jpg'}}}  # cena a sklad overené 2026-11-07
-DATA = {'slug': SLUG, 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'altFallback': True, 'demo': {'heroProductId': products[0]['id']},
+DATA = {'slug': SLUG, 'price100': 'cents', 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'altFallback': True, 'demo': {'heroProductId': products[0]['id']},
   'brand': {'name': 'Mohaji', 'legal': 'MOHAJI s.r.o.', 'place': 'Mohaji · pražírna výběrové kávy', 'shopUrl': WEB + '/nase-kavy/', 'web': WEB + '/',
             'logo': '/assets/s3/mohaji/logo.png', 'hero': products[0]['photo'], 'contact': 'kava@mohaji.cz', 'contactSource': WEB + '/kontakty/',
             'theme': {'ink': '#1f1a17', 'brand': '#1f1a17', 'accent': '#b8873b', 'soft': '#f6f1ea', 'paper': '#ffffff'}},

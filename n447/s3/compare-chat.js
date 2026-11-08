@@ -39,7 +39,7 @@
     const col = (p) => { const v = cheapest(p), sc = scalesOf(p);
       return '<span class="s3-cmp-col"><span class="s3-cmp-photo"><img src="' + esc(p.photo) + '" alt="" loading="eager"></span><b>' + esc(p.name) + '</b>'
         + '<span class="s3-cmp-row"><i>' + esc(T('Cena', 'Cena')) + '</i>' + esc(v ? E.grams(v.grams) + ' · ' + E.money(v.price, p.currency) : '') + '</span>'
-        + (v && v.grams !== 100 ? '<span class="s3-cmp-row"><i>' + esc(T('Za 100 g', 'Za 100 g')) + '</i>' + esc(E.money(Math.round(v.price / v.grams * 100), p.currency)) + '</span>' : '')
+        + (v && v.grams !== 100 ? '<span class="s3-cmp-row"><i>' + esc(T('Za 100 g', 'Za 100 g')) + '</i>' + esc(E.money(D.price100 === 'cents' ? Math.round(v.price / v.grams * 10000) / 100 : Math.round(v.price / v.grams * 100), p.currency)) + '</span>' : '')
         + (p.origin ? '<span class="s3-cmp-row"><i>' + esc(T('Pôvod', 'Původ')) + '</i>' + esc(String(p.origin).split(/[·(]/)[0].trim()) + '</span>' : '')
         + (p.process ? '<span class="s3-cmp-row"><i>' + esc(T('Spracovanie', 'Zpracování')) + '</i>' + esc(String(p.process).split(/[,(]/)[0].trim()) + '</span>' : '')
         + ((p.notes || []).length ? '<span class="s3-cmp-row"><i>' + esc(T('Chuť', 'Chuť')) + '</i>' + esc(p.notes.slice(0, 3).join(', ')) + '</span>' : '')

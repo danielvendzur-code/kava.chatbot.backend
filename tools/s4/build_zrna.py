@@ -48,7 +48,7 @@ for p in P:
 products = [p for p in products if p['photo']][:25]
 ADD = {'v60': {'price': 140.0, 'note': 'Papírové filtry pro dripper V60-02 (bělené).', 'product': {'id': 'papirove-filtry-hario-v60-02-belene', 'name': 'Papírové filtry Hario V60-02 bělené',
        'url': WEB + '/zbozi/papirove-filtry-hario-v60-02-belene/', 'photo': '/assets/s3/zrna/filtry-v60-02.jpg'}}}  # cena a sklad overené 2026-11-07
-DATA = {'slug': SLUG, 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'altFallback': True, 'demo': {'heroProductId': products[0]['id']},
+DATA = {'slug': SLUG, 'price100': 'cents', 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'altFallback': True, 'demo': {'heroProductId': products[0]['id']},
   'brand': {'name': 'ZRNA', 'legal': 'Vysněno s.r.o. (Pražírna Kyjov)', 'place': 'ZRNA · pražírna výběrové kávy v Kyjově', 'shopUrl': WEB + '/kategorie/zrnkova-kava/', 'web': WEB + '/',
             'logo': '/assets/s3/zrna/logo.png', 'hero': products[0]['photo'], 'contact': 'info@prazirnazrna.cz', 'contactSource': WEB + '/kontakty/',
             'theme': {'ink': '#1d1d1b', 'brand': '#1d1d1b', 'accent': '#a8794a', 'soft': '#f5f1eb', 'paper': '#ffffff'}},

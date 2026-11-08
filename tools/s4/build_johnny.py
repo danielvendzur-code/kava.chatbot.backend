@@ -53,7 +53,7 @@ for p in P:
         'priceFrom': vs[0]['price'], 'priceTo': max(v['price'] for v in vs), 'weights': [v['grams'] for v in vs], 'variants': vs, 'checkedAt': CHECKED,
         'source': {'url': p['url'], 'verifiedAt': CHECKED, 'facts': 'parametry produktu (doporučená příprava, kyselost, hořkost, chuťový profil, stupeň pražení, země původu, zpracování, obsah kofeinu); ceny a sklad balení'}})
 products = [p for p in products if p['photo']][:25]
-DATA = {'slug': SLUG, 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'altFallback': True, 'demo': {'heroProductId': products[0]['id']},
+DATA = {'slug': SLUG, 'price100': 'cents', 'lang': 'cs', 'checkedAt': CHECKED, 'beansOnly': True, 'altFallback': True, 'demo': {'heroProductId': products[0]['id']},
   'brand': {'name': 'Johnny Coffee', 'legal': 'CONSO MED s.r.o.', 'place': 'Johnny Coffee · pražírna v Moravském Krumlově', 'shopUrl': WEB + '/espresso-100--arabica/', 'web': WEB + '/',
             'logo': '/assets/s3/johnnycoffee/logo.png', 'hero': products[0]['photo'], 'contact': 'info@johnnycoffee.cz', 'contactSource': WEB + '/kontakt/',
             'theme': {'ink': '#231f20', 'brand': '#231f20', 'accent': '#c08a3e', 'soft': '#f6f1ea', 'paper': '#ffffff'}},

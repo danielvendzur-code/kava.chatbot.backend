@@ -3,6 +3,7 @@
   'use strict';
   const DATA = {
  "slug": "zrna",
+ "price100": "cents",
  "lang": "cs",
  "checkedAt": "2026-11-07",
  "beansOnly": true,

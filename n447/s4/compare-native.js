@@ -60,4 +60,12 @@
       if (i >= 0) msgs.splice(i, 1);
       setTimeout(() => say(compareMessage(a, b)), 60); }
   });
+  /* Nadviazanie na výber: po „Spýtať sa poradcu“ jedna krátka veta k vybranému produktu, raz pre každý výsledok. */
+  let announced = '';
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest('[data-result-chat]'); if (!b) return;
+    const names = [...document.querySelectorAll('.cx-quality-stage h2')].map((h) => h.textContent.trim());
+    const p = list.find((x) => names.includes(x.name)); if (!p || announced === p.id) return; announced = p.id;
+    setTimeout(() => { API.state.messages.push({role: 'assistant', text: T('K vybranému produktu ' + p.name + ' sa môžete opýtať na použitie, zloženie alebo ho porovnať s iným.', 'K vybranému produktu ' + p.name + ' se můžete zeptat na použití, složení nebo ho porovnat s jiným.')}); API.render(); }, 60);
+  }, true);
 })();
