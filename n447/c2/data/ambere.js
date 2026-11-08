@@ -31,16 +31,16 @@
  },
  "tasteLabels": {
   "choco": [
-   "Čokoládová, bez kyselosti",
-   "Čokoláda, oříšky, karamel"
+   "Bez kyselosti",
+   "Kyselost podle pražírny: žádná"
   ],
   "fruitFull": [
-   "Čokoláda s ovocem",
-   "Nízká kyselost, ovocný tón"
+   "Nízká kyselost",
+   "Kyselost podle pražírny: nízká"
   ],
   "fresh": [
-   "Svěží a ovocná",
-   "Výraznější kyselost, ovoce, čaj"
+   "Střední až vyšší kyselost",
+   "Kyselost podle pražírny: střední nebo vyšší"
   ],
   "decaf": [
    "Bez kofeinu",
@@ -375,9 +375,9 @@
    ],
    "roastLabel": "střední pražení",
    "prepText": "Filtr, French press, espresso, kávové automaty",
-   "taste": "fruitFull",
+   "taste": "choco",
    "tastes": [
-    "fruitFull"
+    "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, tělo plné, hořkost střední; chuťový profil Mléčná čokoláda, nugát, mandarinky",
    "tasteProfile": [
@@ -571,9 +571,9 @@
    ],
    "roastLabel": "střední pražení",
    "prepText": "Automatický kávovar, Espresso, French Press, Turecká káva",
-   "taste": "fruitFull",
+   "taste": "choco",
    "tastes": [
-    "fruitFull"
+    "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, tělo plné, hořkost nízká; chuťový profil Hořká čokoláda, oříšek, brownie, rozinky",
    "tasteProfile": [
@@ -833,9 +833,9 @@
    ],
    "roastLabel": "střední pražení",
    "prepText": "Espresso, French Press, Turecká káva, Automatické kávovary, Moka",
-   "taste": "fruitFull",
+   "taste": "choco",
    "tastes": [
-    "fruitFull"
+    "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, hořkost nižší; chuťový profil nugát, lískový oříšek, fík, rozinky",
    "tasteProfile": [
@@ -1519,9 +1519,9 @@
    ],
    "roastLabel": "střední pražení",
    "prepText": "Automatické kávovary, Filtr, French press, espresso, Moka",
-   "taste": "fruitFull",
+   "taste": "choco",
    "tastes": [
-    "fruitFull"
+    "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost žádná, hořkost nízká; chuťový profil Hořká čokoláda • Nugát • Citronová kůra",
    "tasteProfile": [

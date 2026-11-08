@@ -31,16 +31,16 @@
  },
  "tasteLabels": {
   "choco": [
-   "Čokoládová, nízká kyselost",
-   "Čokoláda, oříšky, plné tělo"
+   "Nízká kyselost",
+   "Kyselost 0–2 z 5 podle pražírny"
   ],
   "fruitFull": [
-   "Ovocná i čokoládová",
-   "Ovoce s čokoládou, vyvážená"
+   "Střední kyselost",
+   "Kyselost 3 z 5 podle pražírny"
   ],
   "fresh": [
-   "Svěží a ovocná",
-   "Vyšší kyselost, ovoce, květy"
+   "Vyšší kyselost",
+   "Kyselost 4–5 z 5 podle pražírny"
   ],
   "decaf": [
    "Bez kofeinu",
@@ -597,9 +597,9 @@
    ],
    "roastLabel": "Střední (na filtr)",
    "prepText": "Espresso, Moka konvička, French press, Turek, Filtr (V60, překapávač), AeroPress",
-   "taste": "fruitFull",
+   "taste": "choco",
    "tastes": [
-    "fruitFull"
+    "choco"
    ],
    "tasteSource": "parametry e-shopu: kyselost 2/5; charakteristika Ovoce, Plná intenzivní chuť, Čokoláda",
    "notes": [
@@ -971,8 +971,8 @@
     "čokoláda",
     "vanilka"
    ],
-   "origin": "Nikaragua",
-   "region": "americas",
+   "origin": "",
+   "region": null,
    "process": null,
    "variety": null,
    "summary": "Svěží výběrová káva z Nicaraguy s tóny malin a ananasu, doplněná jemnou čokoládou a vanilkou v dochuti. Ovocně sladký šálek, který nejlépe vynikne na filtru.",
@@ -1160,9 +1160,9 @@
    ],
    "roastLabel": "Střední (na espresso)",
    "prepText": null,
-   "taste": "fresh",
+   "taste": "fruitFull",
    "tastes": [
-    "fresh"
+    "fruitFull"
    ],
    "tasteSource": "parametry e-shopu: kyselost 3/5; charakteristika Ovoce, Sladší chuť, Květiny, Čokoláda",
    "notes": [

@@ -46,12 +46,12 @@ for p in P:
     desc = (base + '. ' + first).strip()
     pid = p['url'].rstrip('/').split('/')[-1]
     out.append({'id': pid, 'name': n, 'url': p['url'], 'priceAmount': price, 'currency': 'CZK', 'price': f'{price:.0f} Kč', 'volume': vol, 'variantLabel': v['name'] or '',
-        'category': {'s4Face': 'face', 's4Hair': 'hair'}.get(use, 'body'), 'kind': 'Sada péče o pleť' if 'Kompletní péče' in n else KIND[use], 'tags': (['sensitive'] if focus in ('s4Sensitive', 's4AllSkin') else ['dry'] if focus in ('s4Dry', 's4HairDry') else ['oily'] if focus == 's4HairOily' else []),
+        'category': {'s4Face': 'face', 's4Hair': 'hair'}.get(use, 'body'), 'kind': 'Sada péče o pleť' if 'Kompletní péče' in n else KIND[use], 'tags': (['sensitive', 'dry'] if focus == 's4AllSkin' else ['sensitive'] if focus == 's4Sensitive' else ['dry'] if focus in ('s4Dry', 's4HairDry') else ['oily'] if focus == 's4HairOily' else []),
         'photo': photo(SLUG, p['img'].replace('&amp;', '&'), pid), 'available': True, 'isSample': False, 'description': desc, 'reason': desc,
         'source': {'url': p['url'], 'verifiedAt': CHECKED, 'stock': 'InStock', 'categoryLocked': True, 'priceFrom': len(vs) > 1, 'variants': [{'label': x['name'], 'price': x['price']} for x in vs],
                    'selectionTraits': {'careUse': use, 'purpose': use, 'skinFocus': focus},
                    'selectionTraitsEvidence': 'kategorie e-shopu mydlenka.cz: ' + ', '.join(c.strip('/') for c in cats),
-                   'suitabilitySource': 'kategorie e-shopu (typ pleti / vlasy / deodoranty / péče o tělo)', 'descriptionSource': 'neutrální věta z názvu a kategorie + první věta e-shopu bez zdravotních tvrzení', 'allSkinTypes': focus == 's4AllSkin'}})
+                   'suitabilitySource': 'kategorie e-shopu (typ pleti / vlasy / deodoranty / péče o tělo)', 'descriptionSource': 'neutrální věta z názvu a kategorie + první věta e-shopu bez zdravotních tvrzení', 'allSkinTypes': False, 'skinTypesListed': [{'s4Normal': 'normální', 's4Sensitive': 'citlivá', 's4Dry': 'suchá', 's4Problem': 'problematická'}[c] for c in [SKIN[x] for x in cats if x in SKIN]]}})
 out = [p for p in out if p['photo']][:25]
 cat = {'verifiedAt': CHECKED + 'T09:00:00Z', 'source': WEB + '/', 'collectionMethod': 'kategorie Péče o pleť (podle typu pleti), Vlasy, Deodoranty, Péče o tělo e-shopu mydlenka.cz (Shoptet), ' + CHECKED,
        'excluded': ['mýdla a soli do koupele', 'dárkové poukazy, textil a cestovní obaly', 'péče o rty a dětská řada MimiLenka'], 'products': out}

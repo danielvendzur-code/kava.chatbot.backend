@@ -32,15 +32,15 @@
  "tasteLabels": {
   "choco": [
    "Nízká acidita",
-   "Čokoláda, marcipán, oříšky"
+   "Acidita podle pražírny: nízká"
   ],
   "fruitFull": [
    "Střední acidita",
-   "Ovoce s karamelem či čokoládou"
+   "Acidita podle pražírny: střední"
   ],
   "fresh": [
    "Vyšší acidita",
-   "Květy, citrus, červené ovoce"
+   "Acidita podle pražírny: vyšší"
   ],
   "decaf": [
    "Bez kofeinu",

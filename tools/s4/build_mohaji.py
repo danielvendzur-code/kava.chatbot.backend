@@ -41,15 +41,18 @@ for p in P:
     char = [c.strip() for c in pr.get('Charakteristika', '').split(',') if c.strip()]
     cl = [c.lower() for c in char]
     kys = scales.get('Kyselost', 0)
-    taste = 'fresh' if ('květiny' in cl or kys >= 4) else 'fruitFull' if 'ovoce' in cl else 'choco'
+    # chuťová voľba = iba škála kyselosti pražírne (0–5), bez odvodzovania z iných slov
+    taste = 'fresh' if kys >= 4 else 'fruitFull' if kys == 3 else 'choco'
     t = p['short']
     nk = next((k for k in NOTES if k.lower() in p['name'].lower()), None)
     notes = NOTES.get(nk, [])
     cs_ = [CO.get(c.strip(), c.strip()).replace('Indie - Robusta', 'Indie (robusta)') for c in pr.get('Země původu', '').split(',') if c.strip()]
     NAME_CO = {'Nicaragua': 'Nikaragua', 'Kenya': 'Keňa', 'Honduras': 'Honduras', 'Brazil': 'Brazílie', 'Colombia': 'Kolumbie', 'Papua': 'Papua-Nová Guinea'}
     nm = next((v for k, v in NAME_CO.items() if re.search(r'\b' + k, p['name'])), None)
-    if nm and len(cs_) == 1 and cs_[0] != nm: print('POZOR: země v parametru', cs_, '≠ název', p['name'], '→ podle názvu'); cs_ = [nm]
-    blend = len(cs_) > 1 or (bool(re.search(r'blend|směs|probuzení', p['name'], re.I)) and not cs_)
+    # Rozpor medzi parametrom „Země původu“ a názvom/popisom e-shopu sa neodvodzuje: pôvod tejto kávy sa vynechá (Nicaragua Santa Maria: parameter Colombia, popis Nicaragua).
+    disputed = bool(nm and len(cs_) == 1 and cs_[0] != nm)
+    if disputed: print('SPORNÝ PÔVOD – vynechaný:', p['name'], 'parameter', cs_, '≠ názov', nm); cs_ = []
+    blend = not disputed and (len(cs_) > 1 or (bool(re.search(r'blend|směs|probuzení', p['name'], re.I)) and not cs_))
     country = ('směs: ' + ', '.join(cs_) if cs_ else 'směs') if blend else (cs_[0] if cs_ else '')
     decaf = bool(re.search(r'decaf|bez kofeinu', p['name'] + cat, re.I)) or pr.get('Obsah kofeinu (arabica/robusta)', '').startswith('○○○')
     sc = ', '.join(f'{k.lower()} {v}/5' for k, v in scales.items())
@@ -57,7 +60,7 @@ for p in P:
     products.append({'id': pid, 'kind': 'coffee', 'name': re.sub(r'^Káva ', '', p['name']), 'url': p['url'], 'photo': photo(SLUG, p['img'], pid), 'photoRemote': False,
         'currency': 'CZK', 'available': True, 'decaf': decaf, 'preps': preps, 'roastLabel': roast.split(',')[0].split(' - ')[-1].strip(), 'prepText': pr.get('Způsoby přípravy'),
         'taste': taste, 'tastes': [taste], 'tasteSource': 'parametry e-shopu: ' + (sc + '; ' if sc else '') + 'charakteristika ' + (', '.join(char) or 'neuvedena'),
-        'notes': notes, 'origin': country, 'region': 'blend' if blend else REG.get(country), 'process': None, 'variety': None, 'summary': sentences(t, 2),
+        'notes': notes, 'origin': country, 'region': 'blend' if blend else (REG.get(country) if country else None), 'process': None, 'variety': None, 'summary': sentences(t, 2),
         'priceFrom': vs[0]['price'], 'priceTo': max(v['price'] for v in vs), 'weights': [v['grams'] for v in vs], 'variants': vs, 'checkedAt': CHECKED,
         'source': {'url': p['url'], 'verifiedAt': CHECKED, 'facts': 'parametry produktu (kyselost, hořkost, sladkost, stupeň pražení, země původu, charakteristika), krátký popis; ceny a sklad variant'}})
 products = [p for p in products if p['photo']][:25]
@@ -67,8 +70,8 @@ DATA = {'slug': SLUG, 'price100': 'cents', 'lang': 'cs', 'checkedAt': CHECKED, '
   'brand': {'name': 'Mohaji', 'legal': 'MOHAJI s.r.o.', 'place': 'Mohaji · pražírna výběrové kávy', 'shopUrl': WEB + '/nase-kavy/', 'web': WEB + '/',
             'logo': '/assets/s3/mohaji/logo.png', 'hero': products[0]['photo'], 'contact': 'kava@mohaji.cz', 'contactSource': WEB + '/kontakty/',
             'theme': {'ink': '#1f1a17', 'brand': '#1f1a17', 'accent': '#b8873b', 'soft': '#f6f1ea', 'paper': '#ffffff'}},
-  'tasteLabels': {'choco': ['Čokoládová, nízká kyselost', 'Čokoláda, oříšky, plné tělo'], 'fruitFull': ['Ovocná i čokoládová', 'Ovoce s čokoládou, vyvážená'],
-                  'fresh': ['Svěží a ovocná', 'Vyšší kyselost, ovoce, květy'], 'decaf': ['Bez kofeinu', 'Káva i na večer']},
+  'tasteLabels': {'choco': ['Nízká kyselost', 'Kyselost 0–2 z 5 podle pražírny'], 'fruitFull': ['Střední kyselost', 'Kyselost 3 z 5 podle pražírny'],
+                  'fresh': ['Vyšší kyselost', 'Kyselost 4–5 z 5 podle pražírny'], 'decaf': ['Bez kofeinu', 'Káva i na večer']},
   'scope': f'{len(products)} zrnkových káv z e-shopu mohaji.cz ({CHECKED}), ceny a sklad přesných balení.',
   'excluded': ['kávy v dárkovém balení (Babička, Dědeček…), dárkové a degustační sety', 'multibalení 3× a 6× 1 kg', 'vyprodaná balení'],
   'addons': ADD, 'shop': {'freeShipping': 'Doprava zdarma při nákupu nad 1 200 Kč (Zásilkovna, GLS).', 'shippingNote': '', 'freeShippingSource': WEB + '/doprava-a-platba/'},

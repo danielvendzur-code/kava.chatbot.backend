@@ -1,6 +1,6 @@
 # Séria 4 – odovzdanie prvých 6 firiem (7. 11. 2026)
 
-Vetva `claude/n447-s4-20261107`. Preview vznikol automaticky z pushu vetvy, bez aliasov a bez zmeny produkcie:
+Vetva `claude/n447-s4-20261107`. Preview vznikol automaticky z pushu vetvy, bez aliasov a bez zmeny produkcie. Stav: lokálne overenie + Preview, nie produkcia:
 `kava-chatbot-backend-7jkcs6dyk-danielvendzur-codes-projects.vercel.app` (dpl_2ond9v14uZYNncVVWbwwjidJ8V6A, SHA 48e65ce, stav READY).
 Ukážka firmy na Preview: `/cosmetics.html?demo=<slug>`. Ostrú adresu `<slug>.mojchatbot.sk` nastavuje Codex až po kontrole.
 
@@ -59,7 +59,7 @@ Kontrola starších ukážok po úpravách jadra: mydlozfarmy 25/25 a teamountai
   1. kávovar → s kofeínom → čokoládová → espresso;
   2. filter → V60 → svieža;
   3. kávovar → bez kofeínu.
-- **Neoverené:** chuťové tóny sú prepísané do 1. pádu z popisu (`NOTES` v build skripte). Krajina Nicaragua sa berie podľa názvu, lebo parameter e-shopu uvádza Colombia.
+- **Neoverené:** chuťové tóny sú prepísané do 1. pádu z popisu (`NOTES` v build skripte). Káva Nicaragua Santa Maria má v parametri „Země původu“ Colombia, ale v názve a popise Nicaragua. Pôvod sa neodvodzuje a pri tejto káve sa nezobrazuje (opravené 8. 11.).
 
 ### 2. Ambere – ambere.cz (káva, CZ)
 - **Prevádzkovateľ:** Ambere s.r.o., IČO 08256519.
@@ -80,7 +80,7 @@ Kontrola starších ukážok po úpravách jadra: mydlozfarmy 25/25 a teamountai
 - **Kontakt:** info@mydlenka.cz (obchodné podmienky).
 - **Zdroje:**
   - kategórie Péče o normální / citlivou / suchou / problematickou pleť, Vlasy, Deodoranty, Péče o tělo;
-  - typ pleti z kategórie (produkt vo všetkých štyroch = „Pro všechny typy pleti“);
+  - typ pleti presne podľa kategórií e-shopu; produkt zaradený do všetkých štyroch kategórií sa zobrazuje ako „Normální, citlivá, suchá i problematická“, nie „pro všechny typy pleti“ (opravené 8. 11.; produktový zdroj „všetky typy“ výslovne neuvádza);
   - typ vlasov z názvu šampónu.
 - **Produkty:** 25 (séra, sady, odličovač, šampóny, kondicionér, deodoranty, telo). Mini varianty sa nepreberajú.
 - **Doprava zdarma:** od 1 800 Kč.

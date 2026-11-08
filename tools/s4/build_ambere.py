@@ -39,7 +39,8 @@ for p in P:
     notes = [n.replace('čokláda', 'čokoláda').replace('ořísky', 'oříšky') for n in notes if len(n) <= 26][:4]
     if not notes and 'rodinna-smes' in p['url']: notes = ['čokoláda', 'oříšek', 'nugát', 'karamel']  # krátký popis na kartě produktu (2026-11-07)
     kys = pr.get('Kyselost', '').lower()
-    taste = 'fresh' if re.search(r'vyšší|střední', kys) else 'fruitFull' if re.search(FRUIT, tones.lower()) else 'choco'
+    # chuťová voľba = iba slovná kyselosť pražírne
+    taste = 'fresh' if re.search(r'vyšší|střední', kys) else 'fruitFull' if re.search(r'nízk', kys) else 'choco'
     first = p['name'].split()[0].upper().strip(',:')
     co = CO.get(first)
     blend = not co
@@ -56,8 +57,8 @@ DATA = {'slug': SLUG, 'price100': 'cents', 'lang': 'cs', 'checkedAt': CHECKED, '
   'brand': {'name': 'Ambere', 'legal': 'Ambere s.r.o.', 'place': 'Ambere · pražírna výběrové kávy', 'shopUrl': WEB + '/kava-ambere/', 'web': WEB + '/',
             'logo': '/assets/s3/ambere/logo.png', 'hero': products[0]['photo'], 'contact': 'obchod.ambere@seznam.cz', 'contactSource': WEB + '/doprava-a-platba/',
             'theme': {'ink': '#3a2e28', 'brand': '#3a2e28', 'accent': '#b59a6a', 'soft': '#f6f1e9', 'paper': '#ffffff'}},
-  'tasteLabels': {'choco': ['Čokoládová, bez kyselosti', 'Čokoláda, oříšky, karamel'], 'fruitFull': ['Čokoláda s ovocem', 'Nízká kyselost, ovocný tón'],
-                  'fresh': ['Svěží a ovocná', 'Výraznější kyselost, ovoce, čaj'], 'decaf': ['Bez kofeinu', 'Káva i na večer']},
+  'tasteLabels': {'choco': ['Bez kyselosti', 'Kyselost podle pražírny: žádná'], 'fruitFull': ['Nízká kyselost', 'Kyselost podle pražírny: nízká'],
+                  'fresh': ['Střední až vyšší kyselost', 'Kyselost podle pražírny: střední nebo vyšší'], 'decaf': ['Bez kofeinu', 'Káva i na večer']},
   'scope': f'{len(products)} zrnkových káv z e-shopu ambere.cz ({CHECKED}), ceny a sklad přesných balení.',
   'excluded': ['zvýhodněné balíčky více káv', 'kávy, které nejsou skladem (Objednáno)', 'mletá káva (doporučuje se zrnková)'],
   'addons': {}, 'shop': {'freeShipping': 'Doprava zdarma při objednávce nad 800 Kč.', 'shippingNote': '', 'freeShippingSource': WEB + '/doprava-a-platba/'},

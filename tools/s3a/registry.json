@@ -1835,10 +1835,10 @@
      "Kategorie Péče o problematickou pleť"
     ],
     "s4AllSkin": [
-     "Pre všetky typy pleti",
-     "Vo všetkých štyroch kategóriách",
-     "Pro všechny typy pleti",
-     "Ve všech čtyřech kategoriích"
+     "Normálna, citlivá, suchá aj problematická",
+     "E-shop ho radí do týchto štyroch typov pleti",
+     "Normální, citlivá, suchá i problematická",
+     "E-shop ho řadí do těchto čtyř typů pleti"
     ],
     "s4HairFine": [
      "Jemné vlasy",
@@ -2475,6 +2475,288 @@
     ],
     "s4Body": [
      "s4BShea"
+    ],
+    "s4Deo": []
+   }
+  },
+  "rae": {
+   "type": "cosmetics",
+   "segment": "cosmetics",
+   "name": "RaE",
+   "country": "CZ",
+   "series": "s4",
+   "logos": {
+    "avatar": "/assets/s3/rae/mark.png"
+   },
+   "brand": {
+    "name": "RaE",
+    "fullName": "RaE – přírodní kosmetika",
+    "domain": "raekosmetika.cz",
+    "website": "https://www.raekosmetika.cz/",
+    "url": "https://www.raekosmetika.cz/",
+    "theme": {
+     "brand": "#3b2f2c",
+     "accent": "#a07f62",
+     "soft": "#f6f5f1",
+     "paper": "#ffffff",
+     "ink": "#3b2f2c",
+     "line": "#e5dfd6"
+    },
+    "logo": "/assets/s3/rae/logo.png",
+    "mark": "/assets/s3/rae/mark.png",
+    "hero": "",
+    "quickChips": [
+     "Deodorant bez sody",
+     "Deodorant bez parfemace",
+     "Bambucké tělové máslo",
+     "Porovnat dva produkty"
+    ],
+    "lang": "cs",
+    "greeting": "Dobrý den. Napište, jaký deodorant nebo péči o tělo hledáte a jakou vůni máte rádi. Pomůžu vám vybrat z nabídky RaE."
+   },
+   "segmentText": {
+    "includedChat": "Deodoranty bez sody i se sodou, vůně, bambucká másla a mléka a porovnání dvou produktů.",
+    "includedAdvisor": "Deodorant nebo tělo, druh a vůně — na konci konkrétní produkt.",
+    "placeholder": "Zeptejte se na deodorant nebo péči…"
+   },
+   "stepCopy": {
+    "careUse": [
+     "Co hledáte?",
+     "Podle kategorií e-shopu RaE.",
+     "Oblast péče"
+    ],
+    "skinFocus": [
+     "Jakou vůni nebo složku chcete?",
+     "Podle názvu produktu v e-shopu.",
+     "Vůně a složení"
+    ],
+    "budget": [
+     "Do jaké částky vybíráme?",
+     "Cena celé doporučené péče.",
+     "Rozpočet"
+    ]
+   },
+   "panelText": [],
+   "traitCopy": {
+    "s4Deo": [
+     "Dezodorant",
+     "Tuhé dezodoranty",
+     "Deodorant",
+     "Tuhé deodoranty"
+    ],
+    "s4Body": [
+     "Telo",
+     "Bambucké maslá a mlieka",
+     "Tělo",
+     "Bambucká másla a mléka"
+    ],
+    "s4DSantal": [
+     "Santalové drevo",
+     "Drevitá vôňa",
+     "Santalové dřevo",
+     "Dřevitá vůně"
+    ],
+    "s4DVanilla": [
+     "Vanilka a orchidea",
+     "Sladká vôňa",
+     "Vanilka a orchidej",
+     "Sladká vůně"
+    ],
+    "s4DLemongrass": [
+     "Citrónová tráva",
+     "Svieža vôňa",
+     "Citronová tráva",
+     "Svěží vůně"
+    ],
+    "s4DHerbs": [
+     "Bylinky",
+     "Bylinková vôňa",
+     "Bylinky",
+     "Bylinková vůně"
+    ],
+    "s4DAloe": [
+     "Aloe vera",
+     "S aloe vera",
+     "Aloe vera",
+     "S aloe vera"
+    ],
+    "s4DLavender": [
+     "Levanduľa",
+     "Kvetinová vôňa",
+     "Levandule",
+     "Květinová vůně"
+    ],
+    "s4DJasmine": [
+     "Jazmín",
+     "Kvetinová vôňa",
+     "Jasmín",
+     "Květinová vůně"
+    ],
+    "s4DGrapefruit": [
+     "Grep",
+     "Citrusová vôňa",
+     "Grep",
+     "Citrusová vůně"
+    ],
+    "s4DCoconut": [
+     "Kokos a vanilka",
+     "Sladká vôňa",
+     "Kokos a vanilka",
+     "Sladká vůně"
+    ],
+    "s4DSage": [
+     "Šalvia",
+     "Bylinková vôňa",
+     "Šalvěj",
+     "Bylinková vůně"
+    ],
+    "s4DFree": [
+     "Bez parfumácie",
+     "Podľa e-shopu bez parfumácie",
+     "Bez parfemace",
+     "Podle e-shopu bez parfemace"
+    ],
+    "s4DLemongrass2": [
+     "Citrónová tráva",
+     "Svieža vôňa",
+     "Citronová tráva",
+     "Svěží vůně"
+    ],
+    "s4BHerbs": [
+     "Bylinky",
+     "Bylinková vôňa",
+     "Bylinky",
+     "Bylinková vůně"
+    ],
+    "s4BLavender": [
+     "Levanduľa",
+     "S levanduľou",
+     "Levandule",
+     "S levandulí"
+    ],
+    "s4BHemp": [
+     "Konopný olej",
+     "S konopným olejom",
+     "Konopný olej",
+     "S konopným olejem"
+    ],
+    "s4BVanilla": [
+     "Vanilka a orchidea",
+     "Sladká vôňa",
+     "Vanilka a orchidej",
+     "Sladká vůně"
+    ],
+    "s4MLemongrass": [
+     "Citrónová tráva",
+     "Svieža vôňa",
+     "Citronová tráva",
+     "Svěží vůně"
+    ],
+    "s4MHerbs": [
+     "Bylinky",
+     "Bylinková vôňa",
+     "Bylinky",
+     "Bylinková vůně"
+    ]
+   },
+   "choicePhotos": {
+    "s4Deo": [
+     "/assets/s3/scenes-k2/body-shower.jpg"
+    ],
+    "s4Body": [
+     "/assets/scenes/cream-texture.jpg"
+    ],
+    "kind:Tuhý deodorant bez sody": [
+     "/assets/scenes/cotton-care.jpg"
+    ],
+    "kind:Tuhý deodorant": [
+     "/assets/s3/scenes-k2/body-shower.jpg"
+    ],
+    "kind:Bambucké tělové máslo": [
+     "/assets/s3/scenes-k2/coconut.jpg"
+    ],
+    "kind:Hydratační mléko na pleť a tělo": [
+     "/assets/s3/scenes-k2/milk.jpg"
+    ],
+    "s4DSantal": [
+     "/assets/s3/scenes-k2/sandalwood.jpg"
+    ],
+    "s4DVanilla": [
+     "/assets/s3/scenes-k2/vanilla.jpg"
+    ],
+    "s4DLemongrass": [
+     "/assets/s3/scenes-k2/lemongrass.jpg"
+    ],
+    "s4DHerbs": [
+     "/assets/s3/scenes-k2/mint-herbs.jpg"
+    ],
+    "s4DAloe": [
+     "/assets/s3/scenes-k2/aloe.jpg"
+    ],
+    "s4DLavender": [
+     "/assets/s3/scenes-k2/lavender.jpg"
+    ],
+    "s4DJasmine": [
+     "/assets/s3/scenes-k2/jasmine.jpg"
+    ],
+    "s4DGrapefruit": [
+     "/assets/s3/scenes-k2/grapefruit.jpg"
+    ],
+    "s4DCoconut": [
+     "/assets/s3/scenes-k2/coconut.jpg"
+    ],
+    "s4DSage": [
+     "/assets/s3/scenes-k2/clary-sage.jpg"
+    ],
+    "s4DFree": [
+     "/assets/scenes/cotton-care.jpg"
+    ],
+    "s4DLemongrass2": [
+     "/assets/s3/scenes-k2/lemongrass.jpg"
+    ],
+    "s4BHerbs": [
+     "/assets/s3/scenes-k2/thyme.jpg"
+    ],
+    "s4BLavender": [
+     "/assets/s3/scenes-k2/lavender-bunch.jpg"
+    ],
+    "s4BHemp": [
+     "/assets/s3/scenes-k2/hemp.jpg"
+    ],
+    "s4BVanilla": [
+     "/assets/s3/scenes-k2/vanilla.jpg"
+    ],
+    "s4MLemongrass": [
+     "/assets/s3/scenes-k2/lemongrass.jpg"
+    ],
+    "s4MHerbs": [
+     "/assets/s3/scenes-k2/rosemary.jpg"
+    ]
+   },
+   "freeShip": {
+    "from": 2000,
+    "note": "Doprava zdarma od 2 000 Kč",
+    "source": "https://www.raekosmetika.cz/",
+    "checkedAt": "2026-11-08"
+   },
+   "upsellFocus": {
+    "s4BHerbs": [
+     "s4MHerbs"
+    ],
+    "s4BLavender": [
+     "s4MHerbs"
+    ],
+    "s4BHemp": [
+     "s4MHerbs"
+    ],
+    "s4BVanilla": [
+     "s4MLemongrass"
+    ],
+    "s4MHerbs": [
+     "s4BHerbs"
+    ],
+    "s4MLemongrass": [
+     "s4BVanilla"
     ],
     "s4Deo": []
    }

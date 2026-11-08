@@ -32,15 +32,15 @@
  "tasteLabels": {
   "choco": [
    "Bez kyselosti",
-   "Čokoláda, ořechy, kakao"
+   "Podle pražírny bez kyselosti či téměř neznatelná"
   ],
   "fruitFull": [
    "Jemná svěžest",
-   "Ovoce i ořechy, vyvážená"
+   "Kyselost podle pražírny: jemná svěžest"
   ],
   "fresh": [
    "Příjemně živá kyselost",
-   "Ryngle, citrusy, fondán"
+   "Kyselost podle pražírny: příjemně živá"
   ],
   "decaf": [
    "Bez kofeinu",
