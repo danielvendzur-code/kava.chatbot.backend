@@ -171,3 +171,27 @@ Pokračujem ďalšími kandidátmi z `kandidati.md` do 20 firiem. Ďalšie na ra
 - **MýdLenka:** produkty v štyroch kategóriách pleti sú uvedené ako „Normální, citlivá, suchá i problematická“, nie „pro všechny typy pleti“; `allSkinTypes` = false.
 - **Cena za 100 g (nové kópie s4):** `Math.round(cena/gramy*10000)/100`, pri EUR bez zaokrúhlenia na celé eurá. Staršie ukážky bez zmeny.
 - **Chat kozmetiky s4:** po „Zeptat se poradce“ jedna krátka nadväzujúca veta k vybranému produktu.
+
+## Dávka 3 (8. 11. 2026)
+
+### 8. Padmé Roastery – padmeroastery.sk (káva, SK)
+- **Prevádzkovateľ:** Padmé Roastery, s.r.o., IČO 55 346 740, Rožňava (vlastná kaviareň Padmé Caffé v Betliari).
+- **Kontakt:** padme.roastery@gmail.com (/kontakt/).
+- **Zdroje (8. 11.):**
+  - kategórie Káva na espresso / Káva na filter / Bezkofeínová (príprava = kategória e-shopu);
+  - karta produktu: Praženie, Chuťový profil, Oblasť/Krajina, spracovanie, Odporúčaná príprava;
+  - ceny a sklad variant z dát varianty na karte (250 g, 1000 g; Lemongrass 200 g).
+- **Produkty:** 12 zrnkových káv. Sety (duo, trio, four pack, box, tasting) sa nepreberajú.
+- **Chuťová voľba** = štýl praženia podľa pražiarne:
+  - Old School Espresso = „Klasické espresso“;
+  - Espresso / New Wave roast = „Moderné espresso“;
+  - Filter / Light = „Svetlé praženie“.
+  - Kyselosť ani percentá sa nevymýšľajú. Číselné škály (Acidita 1/5, Telo 4/5) má iba India a zobrazujú sa iba pri nej.
+- **Doprava zdarma:** nad 60 € (/doprava-a-platba/).
+- **Cena za 100 g** na centy: Betliarsky poklad 1 kg 3,30 €/100 g namiesto 4,40 €.
+- **Cesty:**
+  1. kávovar → s kofeínom → klasické espresso;
+  2. filter → s kofeínom;
+  3. kávovar → bez kofeínu.
+- **Testy:** všetky cesty 320/390/1280, bez fotiek, chipy, avatar, chat offline/mock, rovnaký význam – nálezy 0.
+- **Neoverené:** R2Decaf má praženie „Omni“ (svetlé aj moderné espresso); zaradené do „Moderné espresso“ a príprava je espresso aj filter podľa oboch kategórií e-shopu.

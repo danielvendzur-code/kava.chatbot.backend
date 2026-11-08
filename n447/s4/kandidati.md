@@ -68,6 +68,10 @@ Preview: po pushnutí vetvy `claude/n447-s4-20261107` (bez aliasov, nasadenie ri
 | Zrnka z Hrnka | produktové fotky sú generované AI (názov súboru „Gemini_Generated_Image“), príprava neuvedená |
 | JAMAI CAFE | vlastný kvíz výberu kávy |
 | GP káva | veľký obchod (kávovary, čaje, stovky kategórií), vlastné návody výberu |
+| AV Coffee | predáva La Marzocco, komerčné pražičky a veľkoobchod – väčšia firma |
+| Zelená alchymie, BeButter | obchod s viacerými značkami; BeButter má vlastný dotazník |
+| Mýdlovar | popisy typov pokožky plné zdravotných tvrdení (ekzém, akné, lupienka) – nedá sa pravdivo ponúknuť bez nich |
+| Fraela, Stabla, Cannor | dekoratívna kozmetika / CBD (Cannor má vlastného „průvodce“) – mimo zamerania |
 | Valašská pražírna | chuť iba „Nekyselé / Lehce ovocité / Výrazné“, príprava len pri niektorých – slabé podklady |
 | Levandulový dům | e-shop bez parametrov (typ pleti/vlasov, vôňa) – iba názvy; mýdla a deo kategórie prázdne pri zbere |
 | Mija | najmä sviečky, prostorové parfémy, saunové esencie a veľkoobchodný cenník – nie je to výber starostlivosti |

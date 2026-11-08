@@ -2760,6 +2760,23 @@
     ],
     "s4Deo": []
    }
+  },
+  "padme": {
+   "type": "coffee",
+   "name": "Padmé Roastery",
+   "country": "SK",
+   "series": "s4",
+   "logos": {
+    "landing": "/assets/s3/padme/logo.png",
+    "header": "/assets/s3/padme/logo.png",
+    "avatar": "/assets/s3/padme/mark.png"
+   },
+   "freeShip": {
+    "from": 60,
+    "note": "Doprava zdarma nad 60 €",
+    "source": "https://www.padmeroastery.sk/doprava-a-platba/",
+    "checkedAt": "2026-11-08"
+   }
   }
  }
 }
