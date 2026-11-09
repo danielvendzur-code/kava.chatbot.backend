@@ -1,0 +1,121 @@
+{
+  "updatedAt": "2026-11-09T12:36:37.722184+00:00",
+  "branch": "codex/s5-solo-20261109",
+  "codeSha": "2fe18852b36ce0904df2b29dbfd65fdc2b0f2809",
+  "firmsByDomain": {
+    "musiprirodne.sk": {
+      "domain": "musiprirodne.sk",
+      "operator": "Zuzkoris s.r.o.",
+      "ico": "54529514",
+      "status": "HOLD_EXISTING_PRODUCT_CHAT",
+      "evidence": [
+        "https://www.musiprirodne.sk/pages/contact",
+        "https://www.musiprirodne.sk/products.json?limit=250"
+      ],
+      "notes": "Controller independently observed Storekick product chat on home: greeting Vitaj u nás ♥︎ Radi Ti poradíme s výberom vhodného produktu., product cards Levanduvláska and V náruči Jemnosti, input Opýtajte sa čokoľvek…, Stop generation. No message sent. Own navigation check missed widget.",
+      "controllerEvidence": {
+        "url": "https://www.musiprirodne.sk/",
+        "reportedAt": "2026-11-09T12:10:16.603351+00:00",
+        "type": "user/controller browser observation",
+        "independentOfWorker": true
+      }
+    },
+    "nutt.cz": {
+      "domain": "nutt.cz",
+      "operator": "Petr Bartoš",
+      "status": "preview_verified",
+      "evidence": [
+        "https://www.nutt.cz/",
+        "https://www.nutt.cz/obchodni-podminky"
+      ],
+      "notes": "body butters; no quiz seen on home; IČO and variant prices need verification",
+      "ico": "76374939",
+      "revenue": "NEOVERENÉ",
+      "products": 9,
+      "contact": "radost@nutt.cz",
+      "contactSource": "https://www.nutt.cz/",
+      "operatorSource": "https://www.nutt.cz/obchodni-podminky",
+      "ownAdvisorCheck": {
+        "method": "worker live browser: Smartsupp opened, no text entered",
+        "observed": "Zavolejte nám na 775010550 / Děkujeme!, empty chat log; no product cards or generated response controls observed",
+        "limit": "does not prove every possible chatbot mode absent"
+      },
+      "sourceCheckedAt": "2026-11-09T12:26:38.079901+00:00",
+      "controllerReview": "PENDING",
+      "production": "NOT_DEPLOYED",
+      "emailDraft": "NOT_READY",
+      "sha": "2fe18852b36ce0904df2b29dbfd65fdc2b0f2809",
+      "preview": {
+        "url": "https://kava-chatbot-backend-lujb9ubli-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt",
+        "deploymentId": "dpl_Gmyr8hoxKPdNu7f48Yf32jtAgGzN",
+        "state": "READY",
+        "workerCheckedAt": "2026-11-09T12:36:37.722003+00:00",
+        "scope": "one live selection route; no paid model request"
+      }
+    },
+    "jared.cz": {
+      "domain": "jared.cz",
+      "operator": "Jared Cosmetic s.r.o.",
+      "ico": "05384435",
+      "status": "HOLD",
+      "evidence": [
+        "https://www.jared.cz/"
+      ],
+      "notes": "current menu primarily private-label manufacturing; no suitable active consumer catalogue verified"
+    },
+    "pleva.cz": {
+      "domain": "pleva.cz",
+      "operator": "Pleva s.r.o.",
+      "ico": "48153061",
+      "status": "candidate",
+      "evidence": [
+        "https://www.pleva.cz/",
+        "https://www.pleva.cz/obchodni-podminky-pleva"
+      ],
+      "notes": "broad catalogue; size/revenue and Rádce require further check; do not assume article is quiz"
+    },
+    "liptavia.sk": {
+      "domain": "liptavia.sk",
+      "status": "HOLD",
+      "evidence": [
+        "https://www.liptavia.sk/"
+      ],
+      "notes": "web retrieval inaccessible, canonical e-shop not confirmed"
+    },
+    "amazinc.cz": {
+      "domain": "amazinc.cz",
+      "status": "HOLD",
+      "evidence": [
+        "https://www.amazinc.cz/"
+      ],
+      "notes": "web retrieval inaccessible, canonical e-shop not confirmed"
+    },
+    "flore.cz": {
+      "domain": "flore.cz",
+      "status": "HOLD",
+      "evidence": [
+        "https://www.flore.cz/"
+      ],
+      "notes": "web retrieval inaccessible, canonical e-shop not confirmed"
+    },
+    "oncle.cz": {
+      "domain": "oncle.cz",
+      "status": "PRICING_REVIEW",
+      "operator": "Melitrade a.s.",
+      "ico": "27750141",
+      "evidence": [
+        "https://www.oncle.cz/user/related_files/katalog_oncl___biorganic_2021-4.pdf",
+        "https://www.chytryrejstrik.cz/ico-27750141/melitrade-a-s"
+      ],
+      "notes": "large operator; no independent price increase; not selected"
+    },
+    "forlifemadaga.com": {
+      "domain": "forlifemadaga.com",
+      "status": "HOLD_EXISTING_ADVISOR",
+      "evidence": [
+        "https://www.forlifemadaga.com/sk/eshop"
+      ],
+      "notes": "menu Sprievodca výberom kozmetiky; not reserved"
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 Pracovná vetva `codex/s5-solo-20261109`; východisko `6568fc1380a3fae796f4413256c4b61fd5647e99`. Predchádzajúci vzdialený checkpoint `e8556dd6bd7349fc973a3ea35b323681d35196a6`. Pracuje jeden worker, bez subagentov. Bežný git push nemá credential; zápisy cez GitHub konektor, bez force, main/master a PR.
 
-## NUTT – nutt.cz – local_verified, Preview čaká
+## NUTT – nutt.cz – preview_verified, odovzdané na controller_review
 - Prevádzkovateľ **Petr Bartoš, IČO 76374939**, https://www.nutt.cz/obchodni-podminky. Starý vyhľadávací výsledok s Patriciou Votíkovou nebol použitý.
 - Kontakt **radost@nutt.cz**, verejná pätička https://www.nutt.cz/ . Tržby/rok: **NEOVERENÉ** (živnostník; žiadny odhad).
 - Rezervácia: `claims.md` v autoritatívnej vetve `coord/s5-claims`, SHA `18b574908c6207f90e2090e313e8fe6b57b88da3`. Snapshot bude aj v `coord/s5-claims/claims.md` pracovnej vetvy.
@@ -34,7 +34,9 @@ Doména musiprirodne.sk, Zuzkoris s.r.o. / 54529514. Nezávislý nález kontrol�
 90 dostupných vzdialených vetiev prehľadaných podľa domény, mena a dostupných IČO; prílohy a registre prečítané. NUTT nájdený iba ako starý kandidát. Vercel konektor: 1 dostupný tím/projekt, 50 domén, next null – **nie globálna kontrola všetkých účtov/projektov**. Kontrolór hlási 201 Odoslaných, 27 Rozpísaných a 0 výsledkov domény Muši; to nie je úplná kontrola prevádzkovateľa ani NUTT. NUTT Odoslané/Nepísať: **PENDING_CONTROLLER**.
 
 ## Preview, produkcia, schválenie
-Preview cieľ: nový deployment pracovnej vetvy existujúceho projektu, bez produkčných aliasov. Produkcia: **NOT_DEPLOYED**. Nová subdoména na návrh: `nutt.mojchatbot.sk`; DNS/nameservery a aliasy nezmenené. Kontrolór: **PENDING**; majiteľ: **PENDING**. Vzdialený build a URL budú doplnené po ich skutočnom zistení.
+Preview cieľ: nový deployment pracovnej vetvy existujúceho projektu, bez produkčných aliasov. Produkcia: **NOT_DEPLOYED**. Nová subdoména na návrh: `nutt.mojchatbot.sk`; DNS/nameservery a aliasy nezmenené. Kontrolór: **PENDING**; majiteľ: **PENDING**. Vzdialený kód a dôkazy: **2fe18852b36ce0904df2b29dbfd65fdc2b0f2809**. Preview **READY**, deployment **dpl_Gmyr8hoxKPdNu7f48Yf32jtAgGzN**:
+https://kava-chatbot-backend-lujb9ubli-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt
+Pracovník ho otvoril v pripojenom prehliadači a prešiel forma → Tea tree a limetka → správny produkt 70 g/445 Kč + konkrétne CTA. Ochrana sa nemenila ani neobchádzala. Chat sa na Preview neodosielal; model overený iba mockom. Nie je to nezávislé overenie kontrolórom ani produkcia.
 
 ## Koncept e-mailu – NOT_READY, neodoslané, nenaplánované
 Kontakt: radost@nutt.cz. Predmet: Výběr bambuckého másla přímo pro NUTT
@@ -49,3 +51,6 @@ https://mojchatbot.sk
 
 ## Presný ďalší krok
 Uložiť otestovaný zdroj a dôkazy na pracovnú vetvu; overiť nový Preview na konkrétnom SHA bez obchádzania ochrany. Pri blokovanej ochrane označiť iba Preview HOLD a pokračovať lokálnou prácou. Ďalší kandidát Pleva (pleva.cz / 48153061): zatiaľ nerezervovaný, treba živý widget/poradcu, veľkosť a zdroje; Onclé PRICING_REVIEW (veľký prevádzkovateľ Melitrade), FOR LIFE & MADAGA HOLD (sprievodca výberom).
+
+## Kontrolór – nezávislý čiastočný nález (nie schválenie)
+Kontrolór potvrdil READY `dpl_Gmyr8hoxKPdNu7f48Yf32jtAgGzN`, SHA `2fe18852b36ce0904df2b29dbfd65fdc2b0f2809`. Bez prihlasovania/bypassu prešiel 390×800 kelímek → bergamot/kakao → 385 Kč/50 ml, fotografia a produktový odkaz načítané; úvodná konzola bez JS chýb. Toto je jedna nezávislá cesta, nie úplné schválenie. Požadovaná oprava: odlišné opisy prvých kariet. Nové texty + zdroje: `sources/nutt/first-step-evidence.json`.

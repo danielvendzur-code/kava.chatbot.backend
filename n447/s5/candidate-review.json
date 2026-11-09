@@ -47,7 +47,7 @@
     {
       "domain": "nutt.cz",
       "operator": "Petr Bartoš",
-      "status": "local_verified",
+      "status": "preview_verified",
       "evidence": [
         "https://www.nutt.cz/",
         "https://www.nutt.cz/obchodni-podminky"
@@ -65,9 +65,24 @@
         "limit": "does not prove every possible chatbot mode absent"
       },
       "sourceCheckedAt": "2026-11-09T12:26:38.079901+00:00",
-      "controllerReview": "PENDING",
+      "controllerReview": {
+        "status": "PARTIAL_NOT_APPROVAL",
+        "deploymentReadyConfirmed": true,
+        "sha": "2fe18852b36ce0904df2b29dbfd65fdc2b0f2809",
+        "path": "390x800: kelímek -> bergamot/kakao -> 385 Kč/50 ml, photo and product URL loaded",
+        "console": "no JS errors on initial load reported by controller",
+        "requestedFix": "replace repeated first-step notes with documented differences"
+      },
       "production": "NOT_DEPLOYED",
-      "emailDraft": "NOT_READY"
+      "emailDraft": "NOT_READY",
+      "sha": "2fe18852b36ce0904df2b29dbfd65fdc2b0f2809",
+      "preview": {
+        "url": "https://kava-chatbot-backend-lujb9ubli-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt",
+        "deploymentId": "dpl_Gmyr8hoxKPdNu7f48Yf32jtAgGzN",
+        "state": "READY",
+        "workerCheckedAt": "2026-11-09T12:36:37.722003+00:00",
+        "scope": "one live selection route; no paid model request"
+      }
     },
     {
       "domain": "jared.cz",
