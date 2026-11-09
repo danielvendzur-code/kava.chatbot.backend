@@ -7,7 +7,7 @@ const types = {'.html':'text/html; charset=utf-8','.js':'text/javascript','.mjs'
 const mods = {};
 http.createServer(async (req, res) => {
   const u = new URL(req.url, 'http://x');
-  if(process.env.S5_QA==='1' && u.pathname==='/cosmetics.html' && ['nutt','pleva'].includes(u.searchParams.get('demo')))u.pathname='/s5.html'; // QA alias for unchanged legacy scripts
+  if(process.env.S5_QA==='1' && u.pathname==='/cosmetics.html' && ['nutt','pleva','jagaia'].includes(u.searchParams.get('demo')))u.pathname='/s5.html'; // QA alias for unchanged legacy scripts
   const m = u.pathname.match(/^\/api\/([\w-]+)$/);
   if (m) {
     const f = path.join(root, 'api', m[1] + '.js');

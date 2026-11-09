@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T13:08:40.636786+00:00",
+  "updatedAt": "2026-11-09T13:21:15.003397+00:00",
   "branch": "codex/s5-solo-20261109",
   "codeSha": "9bb671eb81385353f46c8afb776af37a9203aac8",
   "firmsByDomain": {
@@ -149,6 +149,68 @@
         "https://www.forlifemadaga.com/sk/eshop"
       ],
       "notes": "menu Sprievodca výberom kozmetiky; not reserved"
+    },
+    "jagaia.cz": {
+      "domain": "jagaia.cz",
+      "operator": "JAGAIA s.r.o.",
+      "ico": "10863907",
+      "operatorSource": "https://www.jagaia.cz/obchodni-podminky/",
+      "contact": "info@jagaia.cz",
+      "contactSource": "https://www.jagaia.cz/obchodni-podminky/",
+      "revenue": "NEOVERENÉ",
+      "status": "local_verified",
+      "products": 8,
+      "claimSha": "7a493ed37967223d350a9a0fb6cd10dc8746fb76",
+      "production": "NOT_DEPLOYED",
+      "emailDraft": "NOT_READY",
+      "mailDuplicateCheck": "PENDING_CONTROLLER",
+      "ownAdvisorCheck": {
+        "url": "https://www.jagaia.cz/",
+        "productUrl": "https://www.jagaia.cz/breathe-in-cistici-pletovy-gel/",
+        "observed": "Live home and product page, screenshots/DOM: no chat launcher or product chat observed, only 15% newsletter ANO/NE offer; skin-type category navigation is static",
+        "limit": "Only necessary cookies enabled; this is not proof of absence under every cookie/session mode. No message typed or sent."
+      },
+      "duplicateCheck": {
+        "remoteRefs": 91,
+        "patterns": [
+          "jagaia",
+          "10863907",
+          "info@jagaia.cz"
+        ],
+        "matches": 0,
+        "attachments": "no match",
+        "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM"
+      },
+      "qa": {
+        "leaves": 19,
+        "results": 57,
+        "screens": 87,
+        "widths": [
+          320,
+          390,
+          1280
+        ],
+        "findings": 0,
+        "paidCalls": 0
+      }
+    },
+    "lobey.cz": {
+      "domain": "lobey.cz",
+      "status": "HOLD_EXISTING_ADVISOR",
+      "source": "https://www.lobey.cz/skinlab/",
+      "notes": "Official Skinlab explicitly provides AI skin analysis and tailored LOBEY product selection. Not reserved or customer-tested."
+    },
+    "krasnapani.cz": {
+      "domain": "krasnapani.cz",
+      "status": "HOLD_OUT_OF_SEGMENT",
+      "source": "https://www.krasnapani.cz/",
+      "notes": "Current shop is calendars/books, not the intended skincare catalogue."
+    },
+    "bioaromakosmetika.cz": {
+      "domain": "bioaromakosmetika.cz",
+      "status": "HOLD_POSSIBLE_OPERATOR_DUPLICATE",
+      "source": "https://velkoobchod.omorfia.care/Obchodni-podminky-a3_0.htm",
+      "notes": "Search shows historic Bioaroma under Omorfia wholesale terms; Omorfia already exists, do not reserve without canonical/operator resolution."
     }
   }
 }

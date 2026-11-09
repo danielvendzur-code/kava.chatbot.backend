@@ -97,3 +97,28 @@ Pleva: https://kava-chatbot-backend-hwlejxu75-danielvendzur-codes-projects.verce
 Vlastné živé QA na tomto SHA: **9/9 NUTT + 12/12 Pleva** výsledkov, správne ceny/balenia/produktové odkazy, všetky fotografie complete/naturalWidth > 0, stránkovanie a reset, bez horizontálneho overflow pri skutočnom viewport 1363×936. Pleva: doplnok predvolene vypnutý, 187 → 450 → 187 Kč. Žiadny platený chat test. Mobilné úplné stromy a mock chat sú overené lokálne na 320/390, nie vydávané za živé mobilné QA. Zachytené chyby rozšírenia chrome-extension nie sú chyby aplikácie. Doklad `dokazy/batch-preview-qa.json`.
 
 Nie je to schválenie majiteľom/kontrolórom ani produkcia. Obe firmy email NOT_READY; žiadna správa odoslaná alebo naplánovaná. Doteraz sú pripravené 2 nové ukážky, cieľ 20 denne nie je splnený. Ďalší výber musí znovu prejsť živými widgetmi, doménou aj prevádzkovateľom pred rezerváciou.
+
+
+## JAGAIA – tretia nová firma, local_verified
+Doména jagaia.cz, JAGAIA s.r.o., IČO 10863907; verejný kontakt info@jagaia.cz a prevádzkovateľ z https://www.jagaia.cz/obchodni-podminky/ . Tržby/rok NEOVERENÉ. Rezervácia pred kódom, coord/s5-claims SHA 7a493ed37967223d350a9a0fb6cd10dc8746fb76. Kontrola 91 vetiev podľa domény/IČO/kontaktu a historických príloh bez zhody. Vercel mimo pripojeného tímu a pošta/Nepísať PENDING_CONTROLLER.
+
+Pred rezerváciou živá home aj stránka BREATHE IN: v DOM a snímkach žiadny chat launcher ani produktový chat nepozorovaný, iba zľavová newsletter ponuka ANO/NE. Navigácia podľa typu pleti sú kategórie, nie pozorovaný interaktívny poradca. Povolené iba nevyhnutné cookies; neprítomnosť vo všetkých iných cookie/session režimoch nie je dokázaná. Žiadne správy ani formuláre odoslané.
+
+8 produktov: 1 oplachový gel, 3 séra (konkrétny dostupný variant 33 ml), 4 pleťové oleje po 15 ml. Ceny z presného variant option a Product microdata, bez ceny „od“. Samostatné vzorky 1/1,5 ml sa nenahrádzajú za bežné balenie; očný roll-on vynechaný pre neistý objem. BREATHE IN živým výberom variantu 33 ml potvrdil 1 360 Kč. Oficiálny web používa aj pre zvolený bežný variant historický sample/size alt a názov obrázka; v skutočnosti fotografia zobrazuje fľašu produktu. Tento nesúlad je zaznamenaný v dátach, veľkosť sa neodvodzuje z obrázka. Všetkých 8 oficiálnych fotografií vizuálne prezretých. Zdroj `sources/jagaia/verified-products.json`.
+
+Žiadne vlastné medicínske tvrdenia, percentá účinnosti alebo odvodená ochrana SPF. Typy pleti len z explicitného tvrdenia o celom produkte. Doplnok vynechaný: existujúce jadro kvalifikuje čistenie/krém a sérum/krém, nie tento sérum/olej systém. Olej sa nepreznačuje na krém. Celková cena je jedna položka. Hranica dopravy nie je pridaná bez overenia podmienok dopravy.
+
+QA: 19 listov, 8/8 produktov, 57 výsledkov/87 obrazoviek pri 320×568, 390×800, 1280×800; 0 nálezov. Bez fotiek 19 výsledkov/29 obrazoviek, 0 nálezov. 4×40 px čipy, logo; všetky 4 čipy offline, relevantné karty; dvojproduktové porovnanie. `jagaia-qa.cjs` držaný mock pending/error, reduced motion, hover bez pohybu na všetkých šírkach; `jagaia-extra.cjs` správny progress, CTA, reset, follow iba raz, súčet a úmyselné nepridanie nevhodného doplnku. Backend 3 mock odpovede, 0 platených volaní. `jagaia-recheck-3.json`: nové HTTP 200, zodpovedajúce ceny a sklad pri troch oficiálnych produktoch. Všetkých 9 finálnych výsledkových snímok ručne prezretých; opravené zdvojené balenie (33 ml · 33 ml) z redundantného variantLabel. Testy najprv odhalili nesprávne očakávanie doplnku a nesprávny predpoklad poradia porovnania; opravené podľa skutočných rolí produktov a vybraných položiek, nie pridaním falošného doplnku.
+
+## JAGAIA – koncept NOT_READY
+Kontakt info@jagaia.cz. Predmet: Výběr pleťové péče přímo pro JAGAIA
+
+Dobrý den,
+připravil jsem pro JAGAIA ukázku průvodce a chatbota, který pomůže vybrat čisticí gel, sérum nebo pleťový olej podle typu pleti a preferovaného složení. Dva produkty lze také porovnat vedle sebe.
+[ŽIVÝ FIREMNÍ ODKAZ doplnit až po ověření; Preview není zákaznický odkaz.]
+Nasazení stojí 447 € jednorázově a provoz 10 € měsíčně, bez zkušebního období. Měli byste zájem ukázku projít?
+S pozdravem
+Vendžúr
+https://mojchatbot.sk
+
+Neodesláno a nenaplánováno; produkce, pošta a schválení PENDING.

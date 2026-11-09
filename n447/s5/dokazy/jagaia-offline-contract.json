@@ -1,0 +1,176 @@
+{
+  "products": 8,
+  "questions": 10,
+  "leaves": 19,
+  "reachable": 8,
+  "paidCalls": 0,
+  "paths": [
+    {
+      "answers": {
+        "careUse": "cleansingCare"
+      },
+      "id": "breathe-in-cistici-pletovy-gel"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "kind": "Sérum",
+        "careVariant": "jHyaluron"
+      },
+      "id": "rosa-serum-s-kyselinou-hyaluronovou"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "kind": "Sérum",
+        "careVariant": "jBakuchiol"
+      },
+      "id": "zen-serum-s-bakuchiolem"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "kind": "Pleťový olej",
+        "careVariant": "jCucumber"
+      },
+      "id": "just-me-ozivujici-pletovy-olej"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "kind": "Pleťový olej",
+        "careVariant": "jPeony"
+      },
+      "id": "beloved-vyhlazujici-a-vyzivujici-pletovy-olej"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "kind": "Pleťový olej",
+        "careVariant": "jCornflower"
+      },
+      "id": "lumina-rozjasnujici-pletovy-olej"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "kind": "Pleťový olej",
+        "careVariant": "jAutumn"
+      },
+      "id": "skin-elixir-omlazujici-a-pecujici-pletovy-olej"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "kind": "Sérum"
+      },
+      "id": "zen-serum-s-bakuchiolem"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "kind": "Pleťový olej",
+        "careVariant": "jCucumber"
+      },
+      "id": "just-me-ozivujici-pletovy-olej"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "kind": "Pleťový olej",
+        "careVariant": "jPeony"
+      },
+      "id": "beloved-vyhlazujici-a-vyzivujici-pletovy-olej"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "kind": "Pleťový olej",
+        "careVariant": "jCornflower"
+      },
+      "id": "lumina-rozjasnujici-pletovy-olej"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "kind": "Pleťový olej",
+        "careVariant": "jAutumn"
+      },
+      "id": "skin-elixir-omlazujici-a-pecujici-pletovy-olej"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "kind": "Sérum",
+        "careVariant": "jHyaluron"
+      },
+      "id": "rosa-serum-s-kyselinou-hyaluronovou"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "kind": "Sérum",
+        "careVariant": "jBakuchiol"
+      },
+      "id": "zen-serum-s-bakuchiolem"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "kind": "Sérum",
+        "careVariant": "jMature"
+      },
+      "id": "h-boost-ozivujici-serum"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "kind": "Pleťový olej",
+        "careVariant": "jCucumber"
+      },
+      "id": "just-me-ozivujici-pletovy-olej"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "kind": "Pleťový olej",
+        "careVariant": "jPeony"
+      },
+      "id": "beloved-vyhlazujici-a-vyzivujici-pletovy-olej"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "kind": "Pleťový olej",
+        "careVariant": "jCornflower"
+      },
+      "id": "lumina-rozjasnujici-pletovy-olej"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "kind": "Pleťový olej",
+        "careVariant": "jAutumn"
+      },
+      "id": "skin-elixir-omlazujici-a-pecujici-pletovy-olej"
+    }
+  ]
+}

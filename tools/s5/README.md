@@ -32,3 +32,5 @@ The native engine remains shared. New results/progress/reply rules are gated to 
 Screenshots are WebP copies of the local PNG captures, reviewed at 320/390/1280 widths. Read `n447/s5/odovzdanie-SOLO.md` for exact status, holds, mail and deployment boundaries.
 
 Pleva: `python tools/s5/build_pleva.py`, `node tools/s5/offline-contract.cjs pleva`, `node tools/s5/pleva-extra.cjs`, and the same test-firm/shots3 workflow with slug pleva. Both builders are offline. Progress shows the maximum remaining branch depth, not an impossible flat count.
+
+JAGAIA: `build_jagaia.py`, `offline-contract.cjs jagaia`, `jagaia-extra.cjs` and `jagaia-qa.cjs`; test-firm uses the same S5_QA alias. 8 standard products; serum/oil complements intentionally omitted because current core does not qualify that pair. Historic sample alt labels on official product photos are documented, not used to infer pack size.
