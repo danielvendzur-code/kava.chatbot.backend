@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T17:38:40.110Z",
+  "updatedAt": "2026-11-09T19:00:10.213436+00:00",
   "branch": "codex/s5-solo-20261109",
   "codeSha": "da47ce26de45c59f03b2a96bfc0cfa82e5bba4ff",
   "firmsByDomain": {
@@ -354,7 +354,7 @@
       "contact": "info@botanico.cz",
       "contactSource": "https://www.botanico.cz/",
       "revenue": "NEOVERENÉ",
-      "status": "local_verified",
+      "status": "preview_verified",
       "claimSha": "cbdb08ea5dc07fba38798e1111a7da7c464ce634",
       "ownAdvisorCheck": {
         "observed": "Live home and hand cream: no product chat observed, ordinary contact form with CAPTCHA; nothing filled or sent.",
@@ -406,17 +406,16 @@
       "preview": {
         "url": "https://kava-chatbot-backend-q31t7hn8b-danielvendzur-codes-projects.vercel.app/s5.html?demo=botanico",
         "deploymentId": "dpl_Fsrv2jE3StxAhTTgRP9SEaud5C4Q",
-        "state": "READY",
-        "workerQa": "PARTIAL_BLOCKED_ENVIRONMENT_UNAVAILABLE",
-        "observed": {
-          "product": "Denní pleťový krém – Mrtvé moře",
-          "price": "96,68 Kč",
-          "pack": "75 ml",
-          "href": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da/",
-          "photoLoadVerified": false
+        "checkedAt": "2026-11-09T19:00:10.213436+00:00",
+        "workerPathsVerified": 10,
+        "imagesCompleteNaturalWidthPositive": 10,
+        "viewport": {
+          "width": 1363,
+          "height": 936
         },
-        "fullPreviewQa": false,
-        "paidCalls": 0
+        "modelRequests": 0,
+        "previousPartial": "dokazy/botanico-preview-partial.json",
+        "fullPreviewQa": true
       }
     },
     "bodybe.cz": {
@@ -459,11 +458,16 @@
     "note": "No reset retried; old index/worktree preserved. Explicit connector commits only."
   },
   "environment": {
-    "state": "unavailable",
-    "browserError": "exec-server transport disconnected; failed to resume exec-server session: recovery timed out after 45s",
-    "terminalError": "No usable execution environment is available. Wait for an environment to become available before using this tool.",
-    "lastLocalWorkingDirectory": "/workspace/scratch/3ddc5ee91f7a/s5-next",
-    "processes": "Local test sessions finished. No known server left running; cleanup trap was present. Browser no longer accessible.",
-    "nextStep": "When environment returns, open exact Botanico READY Preview and finish all 10 product results/photos/reset. Do not count partial Preview as verified. Then implement already-reserved Janine from research-checkpoint.json, verify assets/variant URLs, full offline QA and Preview."
+    "state": "available",
+    "checkedAt": "2026-11-09T19:00:10.213436+00:00",
+    "terminal": "pwd and existing checkout read succeeded",
+    "browser": "Chrome/CDP restored; all10Botanico results actually completed",
+    "activeCheckout": "/workspace/scratch/3ddc5ee91f7a/s5-resumed",
+    "head": "cf46b65bf54bc995074393154ae26c58e3336107",
+    "preservedCheckouts": [
+      "repo",
+      "s5-next"
+    ],
+    "nextStep": "Implement reserved Janine from preserved current sources. No HOLD firms resumed."
   }
 }

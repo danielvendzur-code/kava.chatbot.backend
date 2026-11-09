@@ -1,0 +1,113 @@
+{
+  "checkedAt": "2026-11-09T19:00:10.213436+00:00",
+  "sha": "da47ce26de45c59f03b2a96bfc0cfa82e5bba4ff",
+  "deploymentId": "dpl_Fsrv2jE3StxAhTTgRP9SEaud5C4Q",
+  "url": "https://kava-chatbot-backend-q31t7hn8b-danielvendzur-codes-projects.vercel.app/s5.html?demo=botanico",
+  "method": "Worker CUA live UI: traversed all ten exact results, read product text/href, confirmed each image complete/naturalWidth500 in later call before reset. No chat messages.",
+  "viewport": {
+    "width": 1363,
+    "height": 936
+  },
+  "lang": "cs",
+  "horizontalOverflow": false,
+  "resetChoices": [
+    "Pleť7 produktů",
+    "Ruce3 produkty"
+  ],
+  "sameTabCta": true,
+  "paidCalls": 0,
+  "rows": [
+    {
+      "id": "pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da",
+      "name": "Denní pleťový krém – Mrtvé moře",
+      "price": "96,68 Kč",
+      "volume": "75 ml",
+      "href": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da/",
+      "imageComplete": true,
+      "imageNaturalWidth": 500
+    },
+    {
+      "id": "pletovy-krem-nocni-omlazovaci-50ml-complexion-cream-night",
+      "name": "Noční pleťový krém – Mrtvé moře",
+      "price": "96,68 Kč",
+      "volume": "75 ml",
+      "href": "https://www.botanico.cz/produkt/pletovy-krem-nocni-omlazovaci-50ml-complexion-cream-night/",
+      "imageComplete": true,
+      "imageNaturalWidth": 500
+    },
+    {
+      "id": "denni-krem-s-kozim-mlekem-a-medem-50-g",
+      "name": "Denní krém s kozím mlékem a medem",
+      "price": "99,22 Kč",
+      "volume": "75 ml",
+      "href": "https://www.botanico.cz/produkt/denni-krem-s-kozim-mlekem-a-medem-50-g/",
+      "imageComplete": true,
+      "imageNaturalWidth": 500
+    },
+    {
+      "id": "nocni-krem-s-kozim-mlekem-a-medem-50-ml",
+      "name": "Noční krém s kozím mlékem a medem",
+      "price": "99,22 Kč",
+      "volume": "75 ml",
+      "href": "https://www.botanico.cz/produkt/nocni-krem-s-kozim-mlekem-a-medem-50-ml/",
+      "imageComplete": true,
+      "imageNaturalWidth": 500
+    },
+    {
+      "id": "pletovy-krem-denni-hydratacni-vyzivny-oliva-50-ml",
+      "name": "Denní pleťový krém Oliva",
+      "price": "96,68 Kč",
+      "volume": "75 ml",
+      "href": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-oliva-50-ml/",
+      "imageComplete": true,
+      "imageNaturalWidth": 500
+    },
+    {
+      "id": "pletovy-krem-nocni-omlazujici-oliva-50-ml",
+      "name": "Noční pleťový krém Oliva",
+      "price": "96,68 Kč",
+      "volume": "75 ml",
+      "href": "https://www.botanico.cz/produkt/pletovy-krem-nocni-omlazujici-oliva-50-ml/",
+      "imageComplete": true,
+      "imageNaturalWidth": 500
+    },
+    {
+      "id": "krem-na-ruce-vyzivny-50ml-cream-for-hands",
+      "name": "Krém na ruce – Mrtvé moře",
+      "price": "96,68 Kč",
+      "volume": "75 ml",
+      "href": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml-cream-for-hands/",
+      "imageComplete": true,
+      "imageNaturalWidth": 500
+    },
+    {
+      "id": "krem-na-ruce-vyzivny-50ml",
+      "name": "Krém na ruce Levandule",
+      "price": "96,68 Kč",
+      "volume": "75 ml",
+      "href": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml/",
+      "imageComplete": true,
+      "imageNaturalWidth": 500
+    },
+    {
+      "id": "krem-na-ruce-vyzivny-ruze-50ml",
+      "name": "Krém na ruce Růže",
+      "price": "96,68 Kč",
+      "volume": "75 ml",
+      "href": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-ruze-50ml/",
+      "imageComplete": true,
+      "imageNaturalWidth": 500
+    },
+    {
+      "id": "pletova-maska-s-kozim-mlekem-a-medem-100-ml",
+      "name": "Pleťová maska s kozím mlékem a medem",
+      "price": "198,44 Kč",
+      "volume": "100 ml",
+      "href": "https://www.botanico.cz/produkt/pletova-maska-s-kozim-mlekem-a-medem-100-ml/",
+      "imageComplete": true,
+      "imageNaturalWidth": 500
+    }
+  ],
+  "console": "Captured errors were chrome-extension metadata sender only. No application error observed in captured sample.",
+  "limits": "Worker QA, not independent controller approval. Full mobile QA remains local/mock. No production/model answer tested."
+}
