@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T17:08:03.919824+00:00",
+  "updatedAt": "2026-11-09T17:20:45.153880+00:00",
   "branch": "codex/s5-solo-20261109",
   "codeSha": "d54217a148b3204de27edac05a0debe70e27aa93",
   "firmsByDomain": {
@@ -321,7 +321,7 @@
       "contact": "eshop@aromatica.cz",
       "contactSource": "https://www.aromatica.cz/",
       "revenue": "NEOVERENÉ",
-      "status": "reserved",
+      "status": "HOLD_HISTORICAL_BEBUTTER_RELATED",
       "claimSha": "d3b1d69999a0ccf2006bfd7abee3d355f5228f87",
       "ownAdvisorCheck": {
         "method": "worker live home + Ectoin product + Dotazník page before reservation",
@@ -341,13 +341,45 @@
       },
       "emailDraft": "NOT_READY",
       "mailDuplicateCheck": "PENDING_CONTROLLER",
+      "production": "NOT_DEPLOYED",
+      "notes": "Official /bebutter/ category proves brand relationship. Binding assignment explicitly excludes BeButter pending controller decision. Domain/ICO-only scan missed this brand link. Local 7-product WIP excluded from runtime and counts; no Preview created.",
+      "qaWip": "7 products x 3 widths result tests and chips/comparison passed; full shots interrupted after removal of own registration, later selector timeout. Not local_verified."
+    },
+    "botanico.cz": {
+      "domain": "botanico.cz",
+      "slug": "botanico",
+      "operator": "Botanico s.r.o.",
+      "ico": "04280156",
+      "operatorSource": "https://www.botanico.cz/obchodni-podminky/",
+      "contact": "info@botanico.cz",
+      "contactSource": "https://www.botanico.cz/",
+      "revenue": "NEOVERENÉ",
+      "status": "reserved",
+      "claimSha": "cbdb08ea5dc07fba38798e1111a7da7c464ce634",
+      "ownAdvisorCheck": {
+        "observed": "Live home and hand cream: no product chat observed, ordinary contact form with CAPTCHA; nothing filled or sent.",
+        "limit": "Other cookie/session modes unproven."
+      },
+      "duplicateCheck": {
+        "refs": 91,
+        "patterns": [
+          "botanico.cz",
+          "04280156",
+          "Botanico s.r.o."
+        ],
+        "fileMatches": 0,
+        "attachments": "no match",
+        "evidence": "dokazy/botanico-duplicates.json"
+      },
+      "mailDuplicateCheck": "PENDING_CONTROLLER",
+      "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
+      "emailDraft": "NOT_READY",
       "production": "NOT_DEPLOYED"
     }
   },
   "localGit": {
-    "head": "ef249f346d70d3b941bf25b80606cfc2c3b54c62",
-    "remoteCheckpoint": "d54217a148b3204de27edac05a0debe70e27aa93",
-    "indexChangesObserved": false,
-    "note": "Auto-review rejected git reset --mixed FETCH_HEAD as potentially discarding staged work. Not retried or bypassed. Worktree kept; remote writes use GitHub connector and expected SHA."
+    "activeCheckout": "s5-next detached from e83112e612141733203628384f1a7f0938e07e80",
+    "preservedOriginalCheckout": "repo at ef249f346d70d3b941bf25b80606cfc2c3b54c62",
+    "note": "No reset retried; old index/worktree preserved. Explicit connector commits only."
   }
 }
