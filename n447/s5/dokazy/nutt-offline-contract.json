@@ -1,0 +1,72 @@
+{
+  "products": 9,
+  "questions": 3,
+  "leaves": 9,
+  "reachable": 9,
+  "paidCalls": 0,
+  "paths": [
+    {
+      "answers": {
+        "kind": "Bambucké máslo v kelímku",
+        "careVariant": "s5Bergamot"
+      },
+      "id": "bambucke-maslo-bergamot-kakao"
+    },
+    {
+      "answers": {
+        "kind": "Bambucké máslo v kelímku",
+        "careVariant": "s5Cinnamon"
+      },
+      "id": "bambucke-maslo-skorice-santalove-drevo"
+    },
+    {
+      "answers": {
+        "kind": "Bambucké máslo v kelímku",
+        "careVariant": "s5HempNeem"
+      },
+      "id": "bambucke-maslo-s-konopnym-olejem-neem-mesicek-lekarsky"
+    },
+    {
+      "answers": {
+        "kind": "Bambucké máslo v kelímku",
+        "careVariant": "s5LavenderVanilla"
+      },
+      "id": "bambucke-maslo-levandule-vanilka"
+    },
+    {
+      "answers": {
+        "kind": "Bambucké máslo v kelímku",
+        "careVariant": "s5Masala"
+      },
+      "id": "bambucke-maslo-masala-koreni-hrenicek-kardamon-vanilka"
+    },
+    {
+      "answers": {
+        "kind": "Bambucké máslo v kelímku",
+        "careVariant": "s5Coconut"
+      },
+      "id": "organicke-bambucke-maslo-s-kokosovym-olejem"
+    },
+    {
+      "answers": {
+        "kind": "Bambucké máslo v kelímku",
+        "careVariant": "s5Neroli"
+      },
+      "id": "bambucke-maslo-mandarinka-neroli"
+    },
+    {
+      "answers": {
+        "kind": "Tuhé sprchové máslo",
+        "careVariant": "s5Neroli"
+      },
+      "id": "sprchove-tuhe-bambucke-maslo-tangerine-neroli"
+    },
+    {
+      "answers": {
+        "kind": "Tuhé sprchové máslo",
+        "careVariant": "s5TeaLime"
+      },
+      "id": "sprchove-tuhe-bambucke-maslo-teatree-lime"
+    }
+  ]
+}

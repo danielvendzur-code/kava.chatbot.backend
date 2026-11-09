@@ -46,13 +46,28 @@
     },
     {
       "domain": "nutt.cz",
-      "operator": "Patricie Votíková",
-      "status": "researched",
+      "operator": "Petr Bartoš",
+      "status": "local_verified",
       "evidence": [
         "https://www.nutt.cz/",
         "https://www.nutt.cz/obchodni-podminky"
       ],
-      "notes": "body butters; no quiz seen on home; IČO and variant prices need verification"
+      "notes": "body butters; no quiz seen on home; IČO and variant prices need verification",
+      "ico": "76374939",
+      "revenue": "NEOVERENÉ",
+      "products": 9,
+      "contact": "radost@nutt.cz",
+      "contactSource": "https://www.nutt.cz/",
+      "operatorSource": "https://www.nutt.cz/obchodni-podminky",
+      "ownAdvisorCheck": {
+        "method": "worker live browser: Smartsupp opened, no text entered",
+        "observed": "Zavolejte nám na 775010550 / Děkujeme!, empty chat log; no product cards or generated response controls observed",
+        "limit": "does not prove every possible chatbot mode absent"
+      },
+      "sourceCheckedAt": "2026-11-09T12:26:38.079901+00:00",
+      "controllerReview": "PENDING",
+      "production": "NOT_DEPLOYED",
+      "emailDraft": "NOT_READY"
     },
     {
       "domain": "jared.cz",
@@ -98,6 +113,25 @@
         "https://www.flore.cz/"
       ],
       "notes": "web retrieval inaccessible, canonical e-shop not confirmed"
+    },
+    {
+      "domain": "oncle.cz",
+      "status": "PRICING_REVIEW",
+      "operator": "Melitrade a.s.",
+      "ico": "27750141",
+      "evidence": [
+        "https://www.oncle.cz/user/related_files/katalog_oncl___biorganic_2021-4.pdf",
+        "https://www.chytryrejstrik.cz/ico-27750141/melitrade-a-s"
+      ],
+      "notes": "large operator; no independent price increase; not selected"
+    },
+    {
+      "domain": "forlifemadaga.com",
+      "status": "HOLD_EXISTING_ADVISOR",
+      "evidence": [
+        "https://www.forlifemadaga.com/sk/eshop"
+      ],
+      "notes": "menu Sprievodca výberom kozmetiky; not reserved"
     }
   ]
 }

@@ -1,0 +1,2 @@
+// Optional environment-owned Chromium executable, no changes to browser security or remote protection.
+if(process.env.S5_CHROMIUM){const {chromium}=require('playwright'),launch=chromium.launch.bind(chromium);chromium.launch=opts=>launch({...opts,...(process.env.HTTPS_PROXY?{proxy:{server:process.env.HTTPS_PROXY,bypass:'127.0.0.1,localhost'}}:{}),executablePath:process.env.S5_CHROMIUM,args:[...(opts?.args||[]),'--no-sandbox','--no-zygote','--disable-dev-shm-usage']});}

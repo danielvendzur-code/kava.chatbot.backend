@@ -1,0 +1,80 @@
+{
+  "ok": true,
+  "paidCalls": 0,
+  "offlineChips": [
+    {
+      "width": 320,
+      "chip": 1,
+      "hrefs": [
+        "https://www.nutt.cz/organicke-bambucke-maslo-s-kokosovym-olejem"
+      ]
+    },
+    {
+      "width": 320,
+      "chip": 2,
+      "hrefs": [
+        "https://www.nutt.cz/bambucke-maslo-levandule-vanilka"
+      ]
+    },
+    {
+      "width": 320,
+      "chip": 3,
+      "hrefs": [
+        "https://www.nutt.cz/sprchove-tuhe-bambucke-maslo-tangerine-neroli",
+        "https://www.nutt.cz/sprchove-tuhe-bambucke-maslo-teatree-lime"
+      ]
+    },
+    {
+      "width": 390,
+      "chip": 1,
+      "hrefs": [
+        "https://www.nutt.cz/organicke-bambucke-maslo-s-kokosovym-olejem"
+      ]
+    },
+    {
+      "width": 390,
+      "chip": 2,
+      "hrefs": [
+        "https://www.nutt.cz/bambucke-maslo-levandule-vanilka"
+      ]
+    },
+    {
+      "width": 390,
+      "chip": 3,
+      "hrefs": [
+        "https://www.nutt.cz/sprchove-tuhe-bambucke-maslo-tangerine-neroli",
+        "https://www.nutt.cz/sprchove-tuhe-bambucke-maslo-teatree-lime"
+      ]
+    },
+    {
+      "width": 1280,
+      "chip": 1,
+      "hrefs": [
+        "https://www.nutt.cz/organicke-bambucke-maslo-s-kokosovym-olejem"
+      ]
+    },
+    {
+      "width": 1280,
+      "chip": 2,
+      "hrefs": [
+        "https://www.nutt.cz/bambucke-maslo-levandule-vanilka"
+      ]
+    },
+    {
+      "width": 1280,
+      "chip": 3,
+      "hrefs": [
+        "https://www.nutt.cz/sprchove-tuhe-bambucke-maslo-tangerine-neroli",
+        "https://www.nutt.cz/sprchove-tuhe-bambucke-maslo-teatree-lime"
+      ]
+    }
+  ],
+  "hover": "no movement; visible color/border change at 320/390/1280",
+  "comparison": "2 distinct products, exact price and size at all widths",
+  "pending": "visible only until mock error response",
+  "reducedMotion": "static indicator",
+  "follow": "once per product",
+  "reset": true,
+  "cta": "same-tab exact product",
+  "addon": "omitted: no suitable complementary catalogue product"
+}

@@ -1,0 +1,25 @@
+{
+  "mockOnly": true,
+  "paidCalls": 0,
+  "mockAiCalls": 3,
+  "rows": [
+    {
+      "query": "Máslo s kokosovým olejem",
+      "status": 200,
+      "expected": "SHEA & COCONUT",
+      "matched": true
+    },
+    {
+      "query": "Levandule a vanilka",
+      "status": 200,
+      "expected": "LAVENDER & VANILLA",
+      "matched": true
+    },
+    {
+      "query": "Tuhé máslo do sprchy",
+      "status": 200,
+      "expected": "Tuhé bambucké máslo",
+      "matched": true
+    }
+  ]
+}

@@ -6,7 +6,7 @@
   const slug = document.body.dataset.cosmeticsDemo;
   const REG = window.S3_REG && window.S3_REG.demos && window.S3_REG.demos[slug];
   const cat = (window.CX_CATALOGUES || {})[slug], API = window.CX_CHAT_API;
-  if (!REG || REG.series !== 's4' || !cat || !API) return;
+  if (!REG || !['s4','s5'].includes(REG.series) || !cat || !API) return;
   const cs = (REG.brand && REG.brand.lang) === 'cs', T = (sk, c) => cs ? c : sk;
   const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
   const list = (cat.products || []).filter((p) => p.available !== false && !p.isSample && p.photo);
@@ -37,7 +37,8 @@
         + row(T('Cena', 'Cena'), (p.source && p.source.priceFrom ? T('od ', 'od ') : '') + p.price)
         + row(T('Balenie', 'Balení'), pack)
         + row(T('Druh', 'Druh'), p.kind)
-        + row(T('Podľa e-shopu', 'Podle e-shopu'), [label(t.careUse), focusText(t.skinFocus)].filter(Boolean).join(' · '))
+        + (REG.series === 's5' ? row(T('Vôňa', 'Vůně'), p.source?.scent) : '')
+        + row(REG.series === 's5' ? T('Typ pokožky','Typ pokožky') : T('Podľa e-shopu', 'Podle e-shopu'), REG.series === 's5' ? (p.source?.skinTypesListed || []).join(', ') : [label(t.careUse), focusText(t.skinFocus)].filter(Boolean).join(' · '))
         + '<a class="s3-cmp-go" href="' + esc(p.url) + '">' + esc(T('Zobraziť produkt →', 'Zobrazit produkt →')) + '</a></span>';
     };
     return {role: 'assistant', text: T('Porovnanie: ', 'Porovnání: ') + a.name + ' / ' + b.name,

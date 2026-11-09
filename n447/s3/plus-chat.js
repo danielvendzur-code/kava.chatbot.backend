@@ -121,6 +121,7 @@
 
   /* postupné vypísanie prvého textu bubliny (asi 0,9 s), karty sa potom vysunú */
   function reveal(bubble) {
+    if (window.CX_S5) return; // S5: complete response, no simulated streaming.
     const lead = bubble.querySelector('.lg-text') || (bubble.children.length ? null : bubble);
     if (!lead || reduced()) return;
     const full = lead.innerHTML;
