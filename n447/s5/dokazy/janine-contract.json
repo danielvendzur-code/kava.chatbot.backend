@@ -1,0 +1,75 @@
+{
+  "products": 6,
+  "questions": 6,
+  "leaves": 8,
+  "reachable": 6,
+  "paidCalls": 0,
+  "paths": [
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "kind": "Krémy"
+      },
+      "id": "pletovy-krem"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "kind": "Sérum"
+      },
+      "id": "pletove-serum"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "cleansingCare",
+        "profile": "oily",
+        "careVariant": "jFreshHerbal"
+      },
+      "id": "kvetova-voda-hamamel"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "cleansingCare",
+        "profile": "oily",
+        "careVariant": "jFloral"
+      },
+      "id": "kvetova-voda-geranium"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "cleansingCare",
+        "profile": "sensitive",
+        "careVariant": "jFloral"
+      },
+      "id": "kvetova-voda-geranium"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "cleansingCare",
+        "profile": "sensitive",
+        "careVariant": "jHoneyHerbal"
+      },
+      "id": "kvetova-voda-slamienka"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "cleansingCare",
+        "profile": "balanced"
+      },
+      "id": "kvetova-voda-geranium"
+    },
+    {
+      "answers": {
+        "category": "body"
+      },
+      "id": "telovy-krem"
+    }
+  ]
+}

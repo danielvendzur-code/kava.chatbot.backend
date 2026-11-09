@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T19:00:10.213436+00:00",
+  "updatedAt": "2026-11-09T19:09:29.178421+00:00",
   "branch": "codex/s5-solo-20261109",
   "codeSha": "da47ce26de45c59f03b2a96bfc0cfa82e5bba4ff",
   "firmsByDomain": {
@@ -433,7 +433,7 @@
       "contact": "janinekozmetika@gmail.com",
       "contactSource": "https://janinekozmetika.sk/obchodne-podmienky/",
       "revenue": "NEOVERENÉ",
-      "status": "reserved",
+      "status": "local_verified",
       "claimSha": "132dc90192c31e0947861397e90ff6724a9af86d",
       "ownAdvisorCheck": {
         "observed": "Live home and cream product inspected before reservation. No chat/quiz observed, newsletter and standard variant selector only. No messages/cart action.",
@@ -449,7 +449,51 @@
       "mailDuplicateCheck": "PENDING_CONTROLLER",
       "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
       "production": "NOT_DEPLOYED",
-      "sourceCheckpoint": "sources/janine/research-checkpoint.json"
+      "sourceCheckpoint": "sources/janine/research-checkpoint.json",
+      "products": 6,
+      "sha": "PENDING_CODE_COMMIT",
+      "source": "sources/janine/verified-products.json",
+      "miniPacks": {
+        "mainCream": {
+          "volume": "50 ml",
+          "price": 14.3
+        },
+        "lowerDetail": [
+          {
+            "volume": "15 ml",
+            "price": 8.2
+          },
+          {
+            "volume": "30 ml",
+            "price": 10.9
+          }
+        ],
+        "noSilentSubstitution": true
+      },
+      "localQa": {
+        "leaves": 8,
+        "results": 24,
+        "screens": 42,
+        "widths": [
+          320,
+          390,
+          1280
+        ],
+        "findings": 0,
+        "noImagesResults": 8,
+        "noImagesScreens": 14,
+        "mockBackendCalls": 3,
+        "paidCalls": 0,
+        "all6ProductPhotosAt3Widths": true,
+        "mini3Widths": true,
+        "finalManualScreens": 9,
+        "addon": "omitted: shared compatibility guard excludes acid-containing cream candidate",
+        "waterCropsReviewed": 9,
+        "miniExactSameTabUrls": true,
+        "introMatchesActualQuestions": true
+      },
+      "preview": "PENDING_CODE_DEPLOYMENT",
+      "coverageEvidence": "dokazy/janine-needs-coverage.json"
     }
   },
   "localGit": {

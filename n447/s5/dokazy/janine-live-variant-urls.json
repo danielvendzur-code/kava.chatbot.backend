@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-09",
+  "method": "Worker CUA direct product UI, no cart/message",
+  "rows": [
+    {
+      "product": "pletovy-krem",
+      "url": "https://janinekozmetika.sk/produkt/pletovy-krem/?attribute_pa_velkost=50-ml",
+      "selectedAttributes": {
+        "attribute_pa_velkost": "50-ml"
+      },
+      "selectionObservedLive": true,
+      "variationPriceObservedLive": null,
+      "note": "Blank variation price at immediate inspection for other pages is not treated as a price check. Constant water price is shown in parent price; source variation prices separately rechecked."
+    },
+    {
+      "product": "pletove-serum",
+      "url": "https://janinekozmetika.sk/produkt/pletove-serum/?attribute_pa_velkost=50-ml&attribute_pa_uzaver=davkovac",
+      "selectedAttributes": {
+        "attribute_pa_velkost": "50-ml",
+        "attribute_pa_uzaver": "davkovac"
+      },
+      "selectionObservedLive": true,
+      "variationPriceObservedLive": 14.3,
+      "note": "Blank variation price at immediate inspection for other pages is not treated as a price check. Constant water price is shown in parent price; source variation prices separately rechecked."
+    },
+    {
+      "product": "kvetova-voda-hamamel",
+      "url": "https://janinekozmetika.sk/produkt/kvetova-voda-hamamel/?attribute_pa_uzaver=rozprasovac",
+      "selectedAttributes": {
+        "attribute_pa_uzaver": "rozprasovac"
+      },
+      "selectionObservedLive": true,
+      "variationPriceObservedLive": null,
+      "note": "Blank variation price at immediate inspection for other pages is not treated as a price check. Constant water price is shown in parent price; source variation prices separately rechecked."
+    },
+    {
+      "product": "kvetova-voda-geranium",
+      "url": "https://janinekozmetika.sk/produkt/kvetova-voda-geranium/?attribute_pa_uzaver=rozprasovac",
+      "selectedAttributes": {
+        "attribute_pa_uzaver": "rozprasovac"
+      },
+      "selectionObservedLive": true,
+      "variationPriceObservedLive": null,
+      "note": "Blank variation price at immediate inspection for other pages is not treated as a price check. Constant water price is shown in parent price; source variation prices separately rechecked."
+    },
+    {
+      "product": "kvetova-voda-slamienka",
+      "url": "https://janinekozmetika.sk/produkt/kvetova-voda-slamienka/?attribute_pa_uzaver=rozprasovac",
+      "selectedAttributes": {
+        "attribute_pa_uzaver": "rozprasovac"
+      },
+      "selectionObservedLive": true,
+      "variationPriceObservedLive": null,
+      "note": "Blank variation price at immediate inspection for other pages is not treated as a price check. Constant water price is shown in parent price; source variation prices separately rechecked."
+    },
+    {
+      "product": "telovy-krem",
+      "url": "https://janinekozmetika.sk/produkt/telovy-krem/?attribute_pa_velkost=50-ml",
+      "selectedAttributes": {
+        "attribute_pa_velkost": "50-ml"
+      },
+      "selectionObservedLive": true,
+      "variationPriceObservedLive": null,
+      "note": "Blank variation price at immediate inspection for other pages is not treated as a price check. Constant water price is shown in parent price; source variation prices separately rechecked."
+    }
+  ],
+  "additionalObservedPrices": [
+    {
+      "product": "pletovy-krem",
+      "size": "15 ml",
+      "price": 8.2,
+      "selected": "15-ml"
+    },
+    {
+      "product": "kvetova-voda-hamamel",
+      "price": 4.9,
+      "parentPrice": true
+    }
+  ],
+  "paidCalls": 0
+}

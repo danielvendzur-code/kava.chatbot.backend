@@ -1,0 +1,42 @@
+{
+  "rows": [
+    {
+      "url": "https://janinekozmetika.sk/produkt/pletovy-krem/?attribute_pa_velkost=50-ml",
+      "http": 200,
+      "variationId": 94,
+      "selectedAttributes": {
+        "attribute_pa_velkost": "50-ml"
+      },
+      "price": 14.3,
+      "currency": "EUR",
+      "stock": true,
+      "checkedAt": "2026-11-09T19:05:59.306236+00:00"
+    },
+    {
+      "url": "https://janinekozmetika.sk/produkt/pletove-serum/?attribute_pa_velkost=50-ml&attribute_pa_uzaver=davkovac",
+      "http": 200,
+      "variationId": 62,
+      "selectedAttributes": {
+        "attribute_pa_velkost": "50-ml",
+        "attribute_pa_uzaver": "davkovac"
+      },
+      "price": 14.3,
+      "currency": "EUR",
+      "stock": true,
+      "checkedAt": "2026-11-09T19:06:00.000732+00:00"
+    },
+    {
+      "url": "https://janinekozmetika.sk/produkt/kvetova-voda-hamamel/?attribute_pa_uzaver=rozprasovac",
+      "http": 200,
+      "variationId": 3151,
+      "selectedAttributes": {
+        "attribute_pa_uzaver": "rozprasovac"
+      },
+      "price": 4.9,
+      "currency": "EUR",
+      "stock": true,
+      "checkedAt": "2026-11-09T19:06:00.050786+00:00"
+    }
+  ],
+  "paidCalls": 0
+}

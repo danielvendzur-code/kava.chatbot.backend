@@ -221,3 +221,31 @@ Existujúci terminál aj Chrome/CDP sú späť. Fresh git ls-remote potvrdil naj
 Botanico vlastné živé QA dokončené na kóde **da47ce26de45c59f03b2a96bfc0cfa82e5bba4ff**, READY **dpl_Fsrv2jE3StxAhTTgRP9SEaud5C4Q**. Presný link ostáva https://kava-chatbot-backend-q31t7hn8b-danielvendzur-codes-projects.vercel.app/s5.html?demo=botanico . Skutočne prejdených všetkých 10 výsledkov, ceny/balenia/href zodpovedajú zdrojom; všetkých 10 fotografií complete=true/naturalWidth=500 potvrdené až po načítaní pred resetom. Reset vrátil Pleť/Ruce, CTA v rovnakej karte. Viewport 1363×936, bez horizontálneho overflow, čeština. Zachytené chyby iba chrome-extension metadata sender; žiadna aplikácie v zachytenej vzorke, nie úplný runtime audit. Žiadny chat/košík/model request/login/bypass/produkcia. Doklad botanico-preview-qa.json; pôvodný partial sa zachováva ako história. Mobilné QA bolo lokálne/mock.
 
 Stav Botanico preview_verified, vlastné overenie NIE schválenie kontrolórom ani produkcia. Počet plne vlastne Preview overených nových ukážok je teraz 5. Ďalší krok už vykonávaný: rezervovaná Janine, zachované dáta; bežné balenie prednostne 50 ml, zmysluplné 15/30 ml veľkosti sa nevyraďujú, uvedú sa s presnou cenou vo vhodnom detaile. Cena447+10 a NOT_READY emaily zachované. Muši/Aromatica/BeButter HOLD bez zmeny.
+
+
+## Janine – implementácia a lokálne testy
+Janine, s.r.o. / 46689605, janinekozmetika.sk, janinekozmetika@gmail.com z OP. Tržby NEOVERENÉ. Rezervácia 132dc90192c31e0947861397e90ff6724a9af86d pred kódom, 91 refs a prílohy bez zhody; živé home+krém bez pozorovaného poradcu/chatu, newsletter/produktové varianty, iné cookie režimy neisté.
+
+6 rozličných produktov: denný krém Slamienka Kyselina ferulová 50 ml/14,30 €, olejové sérum 50 ml s dávkovačom/14,30 €, 3 kvetové vody s rozprašovačom po 50 ml/4,90 €, telový krém Q10 50 ml/10,60 €. Menšie balenia sa nevyraďujú: krém 15 ml/8,20 € a 30 ml/10,90 €, sérum 30 ml s dávkovačom/10,90 € v nižšom detaile; hlavný výsledok prednostne bežných 50 ml. Mini sa nepočíta ako ďalšia receptúra ani ticho nenahrádza bežné balenie. 30 ml sérum s kvapátkom vynechané pre nesúlad oficiálnej fotografie. Všetky zvolené fotky zodpovedajú 50 ml a boli ručne prezreté.
+
+Exact variant query URL používa attribute_pa_velkost/attribute_pa_uzaver podľa skutočného Woo exportu. Všetkých 6 odkazov skutočne otvorených: select vybral správne parametre. Sérum 50 ml/dávkovač potvrdilo cenu 14,30 €; mini krém 15 ml/8,20 € a Hamamel parent price4,90 € tiež priamo DOM. Prázdne okamžité variation-price pri ďalších produktoch sa nepovažujú za cenový dôkaz; 3 reprezentatívne aktuálne varianty nezávisle HTTP/stock/cena/atribúty rechecked. Doklady janine-live-variant-urls.json, janine-recheck-3.json. Nič pridané do košíka ani odoslané.
+
+Offline strom 8 listov/6 produktov, test-firm 24 výsledkov/42 obrazoviek na 3 šírkach, 0 nálezov; bez obrázkov8/14, 0. Každý konkrétny produkt pri každej šírke overený vrátane fotografie, ceny, packu, presného CTA, resetu a follow raz. 4čipy 40px, relevantné karty, porovnanie2odlišných produktov/cena/balenie, hover bez posunu, pending/error/reduced motion. Mini detail pri3šírkach zachová hlavný50ml14,30 €, zobrazuje15ml8,20 a30ml10,90. Backend3mock/0platených. Doplnok nie je vynútený: spoločný core odmietne ako doplnok krém s kyselinou; názov/rola sa kvôli tomu nemenia. Geranium má doložené všetky typy pleti, preto umožňuje aj Bez výrazného problému; údaj nie je odvodený z kategórie. Medicínske/SPF tvrdenia a neoverená doprava vynechané.
+
+Pri ručnej kontrole iba CSS zobrazovanie troch kvetových vôd zväčšené1,8× v pevnom rámiku, orežú sa široké biele okraje, nie produkt; originálne obrázky sa nemenili. Finálne snímky po fade sa zachytávajú znova, Preview zatiaľ PENDING.
+
+Koncept NOT_READY, kontakt janinekozmetika@gmail.com. Predmet: Sprievodca výberom starostlivosti Janine
+Dobrý deň,
+pripravil som pre Janine ukážku sprievodcu a chatbota, ktorý pomôže vybrať pleťový krém, olejové sérum, kvetovú vodu alebo telový krém z vašej ponuky. Umožňuje aj porovnať dva produkty a pozrieť dostupné menšie balenia.
+[ŽIVÝ FIREMNÝ ODKAZ až po overení; Preview nie je zákaznícky odkaz.]
+Nasadenie stojí 447 € jednorazovo a prevádzka 10 € mesačne, bez skúšobného obdobia. Mali by ste záujem ukážku prejsť?
+S pozdravom
+Vendžúr
+https://mojchatbot.sk
+
+Žiadny email odoslaný/plánovaný. Odoslané/Nepísať/globálny Vercel PENDING, produkcia NOT_DEPLOYED. Nová subdoména iba návrh pre kontrolóra: janine.mojchatbot.sk, bez DNS/alias zmeny.
+
+
+Janine finálna lokálna kontrola: 9 výsledkových snímok + 9 kontrol orezov kvetových vôd a mini3šírky ručne prezreté. Pôvodný menej špecifický CSS zoom prekrývalo transform:none; opravená špecificita iba pre tri Janine vody, vypočítaná matica1.8 potvrdená9×. Produkt sa neorezal. Jediná snímková cesta vôd znovu zachytená v plnej výške podľa štandardného shots3 postupu; nezmenené všeobecné testy sa neopakovali. Mini detail má teraz aj presné odkazy15/30ml, v rovnakej karte; priame30mlURL na živom e-shope potvrdilo30-ml/10,90€. Mini15ml8,20€ overené predtým. Focused janine-mini.cjs overil ceny/URL/no silent substitution a pravdivý úvod na3šírkach.
+
+Pokrytie potrieb doložené v janine-needs-coverage.json: krém vs olejové sérum, odlišné vody podľa pleti/vône, samostatná telová starostlivosť. Šesť receptúr, nie nafúknuté varianty. Konkrétny úvod Pleť a telo · typ starostlivosti · vôňa nesľubuje rozpočet, na ktorý sa tento výber nepýta. S5-only rešpektovanie nakonfigurovaného úvodu ponecháva pôvodný fallback starým sériám. Janine je local_verified, Preview zatiaľ PENDING.

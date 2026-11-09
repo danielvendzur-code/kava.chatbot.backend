@@ -23,7 +23,7 @@
   ${profile(p)?`<dl class="s5-profile">${profile(p)}</dl>`:''}
   ${add?`<section class="s5-addon"><h3>${t('Voliteľne k tomu','Volitelně k tomu')}</h3><label><input type="checkbox" data-s5-addon><span><b>${esc(add.name)}</b><small>${t('Umývanie a následná starostlivosť o pokožku.','Mytí a následná péče o pokožku.')}</small><strong>+ ${esc(add.price)}</strong></span></label><a href="${esc(add.url)}">${t('Pozrieť doplnok','Zobrazit doplněk')}</a></section>`:''}
   <div class="s5-total" aria-live="polite"><span>${t('Spolu za zvolené produkty','Celkem za zvolené produkty')}</span><strong data-s5-total>${esc(p.price)}</strong></div><div data-s5-shipping>${ship(p.priceAmount,p)}</div>
-  ${variants.length?`<details class="s5-details"><summary>${t('Ďalšie varianty','Další varianty')}</summary>${variants.map(v=>`<p>${esc(v.label)} · ${money(v.price,p.currency)}</p>`).join('')}</details>`:''}
+  ${variants.length?`<details class="s5-details"><summary>${t('Ďalšie varianty','Další varianty')}</summary>${variants.map(v=>`<p>${esc(v.label)} · ${money(v.price,p.currency)}${v.url?' · <a href="'+esc(v.url)+'">'+t('Pozrieť balenie','Zobrazit balení')+'</a>':''}</p>`).join('')}</details>`:''}
   <button type="button" class="cx-quality-more" data-result-chat>${t('Spýtať sa poradcu','Zeptat se poradce')}</button>`;
  }};
  document.addEventListener('change',e=>{if(!e.target.matches('[data-s5-addon]')||!current)return;current.selected=e.target.checked;const {p,add}=current;const sum=Math.round((p.priceAmount+(current.selected?add.priceAmount:0))*100)/100;document.querySelector('[data-s5-total]').textContent=money(sum,p.currency);document.querySelector('[data-s5-shipping]').innerHTML=ship(sum,p);});

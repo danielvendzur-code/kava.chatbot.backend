@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "paidCalls": 0,
+  "rows": [
+    {
+      "width": 320,
+      "defaultPack": "50 ml",
+      "defaultPrice": 14.3,
+      "availableSmallerPacks": [
+        {
+          "size": "15 ml",
+          "price": 8.2
+        },
+        {
+          "size": "30 ml",
+          "price": 10.9
+        }
+      ],
+      "currency": "EUR",
+      "noSilentSubstitution": true
+    },
+    {
+      "width": 390,
+      "defaultPack": "50 ml",
+      "defaultPrice": 14.3,
+      "availableSmallerPacks": [
+        {
+          "size": "15 ml",
+          "price": 8.2
+        },
+        {
+          "size": "30 ml",
+          "price": 10.9
+        }
+      ],
+      "currency": "EUR",
+      "noSilentSubstitution": true
+    },
+    {
+      "width": 1280,
+      "defaultPack": "50 ml",
+      "defaultPrice": 14.3,
+      "availableSmallerPacks": [
+        {
+          "size": "15 ml",
+          "price": 8.2
+        },
+        {
+          "size": "30 ml",
+          "price": 10.9
+        }
+      ],
+      "currency": "EUR",
+      "noSilentSubstitution": true
+    }
+  ]
+}

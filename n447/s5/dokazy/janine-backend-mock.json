@@ -1,0 +1,21 @@
+{
+  "paidCalls": 0,
+  "mockAiCalls": 3,
+  "rows": [
+    {
+      "q": "Pleťový krém so slamienkou",
+      "expected": "Pleťový krém Slamienka",
+      "matched": true
+    },
+    {
+      "q": "Kvetová voda pre mastnú pleť",
+      "expected": "Kvetová voda Hamamel",
+      "matched": true
+    },
+    {
+      "q": "Telový krém s Q10",
+      "expected": "Telový krém Koenzým Q10",
+      "matched": true
+    }
+  ]
+}

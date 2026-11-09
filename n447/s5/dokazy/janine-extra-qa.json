@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "paidCalls": 0,
+  "offlineChips": [
+    {
+      "width": 320,
+      "chip": 1,
+      "hrefs": [
+        "https://janinekozmetika.sk/produkt/pletovy-krem/?attribute_pa_velkost=50-ml"
+      ]
+    },
+    {
+      "width": 320,
+      "chip": 2,
+      "hrefs": [
+        "https://janinekozmetika.sk/produkt/kvetova-voda-hamamel/?attribute_pa_uzaver=rozprasovac"
+      ]
+    },
+    {
+      "width": 320,
+      "chip": 3,
+      "hrefs": [
+        "https://janinekozmetika.sk/produkt/telovy-krem/?attribute_pa_velkost=50-ml"
+      ]
+    },
+    {
+      "width": 390,
+      "chip": 1,
+      "hrefs": [
+        "https://janinekozmetika.sk/produkt/pletovy-krem/?attribute_pa_velkost=50-ml"
+      ]
+    },
+    {
+      "width": 390,
+      "chip": 2,
+      "hrefs": [
+        "https://janinekozmetika.sk/produkt/kvetova-voda-hamamel/?attribute_pa_uzaver=rozprasovac"
+      ]
+    },
+    {
+      "width": 390,
+      "chip": 3,
+      "hrefs": [
+        "https://janinekozmetika.sk/produkt/telovy-krem/?attribute_pa_velkost=50-ml"
+      ]
+    },
+    {
+      "width": 1280,
+      "chip": 1,
+      "hrefs": [
+        "https://janinekozmetika.sk/produkt/pletovy-krem/?attribute_pa_velkost=50-ml"
+      ]
+    },
+    {
+      "width": 1280,
+      "chip": 2,
+      "hrefs": [
+        "https://janinekozmetika.sk/produkt/kvetova-voda-hamamel/?attribute_pa_uzaver=rozprasovac"
+      ]
+    },
+    {
+      "width": 1280,
+      "chip": 3,
+      "hrefs": [
+        "https://janinekozmetika.sk/produkt/telovy-krem/?attribute_pa_velkost=50-ml"
+      ]
+    }
+  ],
+  "hover": "no movement; visible color/border change at 320/390/1280",
+  "comparison": "2 distinct products, exact price and size at all widths",
+  "pending": "visible only until mock error response",
+  "reducedMotion": "static indicator",
+  "follow": "once per product",
+  "reset": true,
+  "cta": "same-tab exact product",
+  "addon": "omitted; no compatible cleanser/cream pair"
+}

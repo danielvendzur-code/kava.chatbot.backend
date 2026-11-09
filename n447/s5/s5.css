@@ -52,3 +52,8 @@ body[data-series=s5][data-cosmetics-demo=capri] #cosmetics-root#cosmetics-root#c
 body[data-series=s5][data-cosmetics-demo=capri] #cx-widget .s3-cmp-photo img{transform:scale(1.4)!important}
 
 body[data-series="s5"][data-cosmetics-demo="botanico"] #cx-widget .cx-widget-brand > img.cx-logo{filter:none!important}
+
+body[data-series="s5"][data-cosmetics-demo="janine"] #cx-widget .cx-widget-brand > img.cx-logo{filter:none!important}
+/* Official Janine water packshots have large white margins. Only presentation crops those margins. */
+body[data-series=s5][data-cosmetics-demo=janine] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s5-product[data-product-id^="kvetova-voda-"] .cx-quality-product-photo{overflow:hidden!important}
+body[data-series=s5][data-cosmetics-demo=janine] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s5-product[data-product-id^="kvetova-voda-"] img{transform:scale(1.8)!important}

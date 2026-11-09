@@ -1,0 +1,36 @@
+{
+  "products": 6,
+  "formulasNotVariants": true,
+  "leaves": 8,
+  "needs": [
+    {
+      "need": "Tvár, každodenná starostlivosť",
+      "difference": "Krém so slamienkou/ferulovou kyselinou najlepšie cez deň versus olejové sérum najlepšie na noc.",
+      "ids": [
+        "pletovy-krem",
+        "pletove-serum"
+      ]
+    },
+    {
+      "need": "Kvetová voda podľa pleti a vône",
+      "difference": "Hamamel pre mastnú/zmiešanú, Slamienka pre citlivú/zrelú, Geranium pre všetky typy; pri dvoch vhodných vodách ďalšia pravdivá otázka na vôňu.",
+      "ids": [
+        "kvetova-voda-hamamel",
+        "kvetova-voda-geranium",
+        "kvetova-voda-slamienka"
+      ]
+    },
+    {
+      "need": "Telo po umytí",
+      "difference": "Jediný reprezentatívny telový krém Q10; po voľbe tela bez nadbytočnej otázky.",
+      "ids": [
+        "telovy-krem"
+      ]
+    }
+  ],
+  "intro": "Pleť a telo · typ starostlivosti · vôňa",
+  "doesNotPromiseBudgetQuestion": true,
+  "minis": "Same formula, lower size detail with exact price/URL; not counted as new products.",
+  "noEmptyQuestions": true,
+  "verification": "All8leaves reviewed from offline contract; all6products reachable. 3×3source/result screenshots manually reviewed. Water crops9cases proved computed1.8scale and full bottle reviewed."
+}
