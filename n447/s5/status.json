@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-09T21:51:50.826942+00:00",
+  "updatedAt": "2026-11-09T22:10:16.309949+00:00",
   "branch": "codex/s5-solo-20261109",
-  "codeSha": "4359f12f994aa6d864f8bef2d22deaf9537b1719",
+  "codeSha": "3de371af82ab788b21d02b9d0f1afe1d9dd2903a",
   "firmsByDomain": {
     "musiprirodne.sk": {
       "domain": "musiprirodne.sk",
@@ -518,7 +518,7 @@
     },
     "eone.cz": {
       "checkedAt": "2026-11-09T22:00:00Z",
-      "status": "local_verified",
+      "status": "preview_verified",
       "claimSha": "76e95bbff70cb7a6623b620748ed8303bc206fbe",
       "domain": "eone.cz",
       "operator": "Eoné kosmetika s.r.o.",
@@ -540,7 +540,7 @@
       "mailDuplicateCheck": "PENDING_CONTROLLER",
       "emailDraft": "NOT_READY",
       "production": "NOT_DEPLOYED",
-      "next": "Preview build and actual live QA of all9 results; not yet Preview verified.",
+      "next": "Independent approval and production remain PENDING; continue reserved Nafigate.",
       "products": 9,
       "source": "sources/eone/verified-products.json",
       "localQa": {
@@ -557,6 +557,19 @@
         "paidCalls": 0,
         "photoPresentation": "27 final photo captures at 320/390/1280; three CSS white-margin crops, avatar contrast",
         "mockBackendCalls": 3
+      },
+      "sha": "3de371af82ab788b21d02b9d0f1afe1d9dd2903a",
+      "preview": {
+        "url": "https://kava-chatbot-backend-49qrdrxkw-danielvendzur-codes-projects.vercel.app/s5.html?demo=eone",
+        "deploymentId": "dpl_Ek2q5CDfsKxN6CV45UYXqzEegh9v",
+        "checkedAt": "2026-11-09T22:10:16.309949+00:00",
+        "viewport": {
+          "width": 1363,
+          "height": 936
+        },
+        "paidCalls": 0,
+        "workerPathsVerified": 9,
+        "imagesCompleteNaturalWidthPositive": 9
       }
     },
     "nafigatecosmetics.cz": {
@@ -601,14 +614,14 @@
       "repo",
       "s5-next"
     ],
-    "nextStep": "Reserved Eoné: collecting official product facts; Aromedica blocked and HOLD. Janine all six Preview results completed."
+    "nextStep": "Collect and implement reserved Nafigate from current available representative products; Eoné live QA9/9 completed."
   },
   "autonomousBacklog": {
     "source": "BACKLOG-DLHODOBE-20261109.md",
     "minimumMilestone": 20,
     "nextMilestone": 40,
     "stopAtMilestone": false,
-    "previewVerifiedCount": 6,
+    "previewVerifiedCount": 7,
     "oneWorker": true,
     "emailSendingForbidden": true,
     "productionForbidden": true

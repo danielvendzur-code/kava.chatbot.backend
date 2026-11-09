@@ -1,0 +1,227 @@
+{
+  "products": 9,
+  "questions": 18,
+  "leaves": 23,
+  "reachable": 9,
+  "paidCalls": 0,
+  "paths": [
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "kind": "Pleťový olej",
+        "careVariant": "eRoseOil"
+      },
+      "id": "ruzovy-olej"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "kind": "Pleťový olej",
+        "careVariant": "eResinOil"
+      },
+      "id": "olibanum"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "kind": "Krémy",
+        "careVariant": "eRoseCream"
+      },
+      "id": "rosa-feminne"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "kind": "Krémy",
+        "careVariant": "eLightCitrus"
+      },
+      "id": "krem-na-dobre-rano"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "kind": "Pleťový olej"
+      },
+      "id": "levandulovy-olej"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "kind": "Krémy",
+        "careVariant": "eRoseCream"
+      },
+      "id": "rosa-feminne"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "kind": "Krémy",
+        "careVariant": "eLightCitrus"
+      },
+      "id": "krem-na-dobre-rano"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "kind": "Pleťový olej"
+      },
+      "id": "ruzovy-olej"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "kind": "Krémy",
+        "careVariant": "eRoseCream"
+      },
+      "id": "rosa-feminne"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "kind": "Krémy",
+        "careVariant": "eLightCitrus"
+      },
+      "id": "krem-na-dobre-rano"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "balanced",
+        "kind": "Pleťový olej",
+        "careVariant": "eRoseOil"
+      },
+      "id": "ruzovy-olej"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "balanced",
+        "kind": "Pleťový olej",
+        "careVariant": "eLavenderOil"
+      },
+      "id": "levandulovy-olej"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "balanced",
+        "kind": "Krémy",
+        "careVariant": "eRoseCream"
+      },
+      "id": "rosa-feminne"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "balanced",
+        "kind": "Krémy",
+        "careVariant": "eLightCitrus"
+      },
+      "id": "krem-na-dobre-rano"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "any",
+        "kind": "Krémy",
+        "careVariant": "eRoseCream"
+      },
+      "id": "rosa-feminne"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "any",
+        "kind": "Krémy",
+        "careVariant": "eLightCitrus"
+      },
+      "id": "krem-na-dobre-rano"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "any",
+        "kind": "Pleťový olej",
+        "careVariant": "eRoseOil"
+      },
+      "id": "ruzovy-olej"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "any",
+        "kind": "Pleťový olej",
+        "careVariant": "eResinOil"
+      },
+      "id": "olibanum"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "any",
+        "kind": "Pleťový olej",
+        "careVariant": "eLavenderOil"
+      },
+      "id": "levandulovy-olej"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "cleansingCare",
+        "purpose": "toning"
+      },
+      "id": "pletova-voda-ruze"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "cleansingCare",
+        "purpose": "makeupRemoval"
+      },
+      "id": "neutralni-hydrofilni-olej"
+    },
+    {
+      "answers": {
+        "category": "hair",
+        "careUse": "eHairWash"
+      },
+      "id": "ligia"
+    },
+    {
+      "answers": {
+        "category": "hair",
+        "careUse": "eHairAfter"
+      },
+      "id": "lia"
+    }
+  ]
+}

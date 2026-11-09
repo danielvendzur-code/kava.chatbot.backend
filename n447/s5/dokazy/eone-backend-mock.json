@@ -1,0 +1,24 @@
+{
+  "paidCalls": 0,
+  "mockCalls": 3,
+  "rows": [
+    {
+      "query": "Lehký citrusový krém",
+      "id": "krem-na-dobre-rano",
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "query": "Olej bez přídavku silic na odlíčení",
+      "id": "neutralni-hydrofilni-olej",
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "query": "Jemný mycí balzám na vlasy",
+      "id": "ligia",
+      "status": 200,
+      "exactUrlAndPrice": true
+    }
+  ]
+}
