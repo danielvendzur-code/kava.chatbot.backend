@@ -1,0 +1,75 @@
+{
+  "products": 8,
+  "questions": 5,
+  "leaves": 8,
+  "reachable": 8,
+  "paidCalls": 0,
+  "paths": [
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "kind": "Krémy"
+      },
+      "id": "hyaluron-night-cream-50-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "kind": "Sérum",
+        "careVariant": "nHydrate25"
+      },
+      "id": "hyaluron-essential-20-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "kind": "Sérum",
+        "careVariant": "nDryCare"
+      },
+      "id": "skin-restore-serum-15-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "kind": "Sérum",
+        "careVariant": "nMature40"
+      },
+      "id": "hyaluron-anti-aging-15-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "kind": "Sérum",
+        "careVariant": "nMature50"
+      },
+      "id": "skin-recovery-serum-15-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "cleansingCare",
+        "purpose": "washing"
+      },
+      "id": "cleansing-gel"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "cleansingCare",
+        "purpose": "makeupRemoval"
+      },
+      "id": "cleansing-oil-200-ml"
+    },
+    {
+      "answers": {
+        "category": "eyes"
+      },
+      "id": "hyaluron-eye-serum-10-ml"
+    }
+  ]
+}

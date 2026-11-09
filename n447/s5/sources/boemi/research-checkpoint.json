@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-09T22:25:37.820070+00:00",
+  "status": "reserved",
+  "domain": "boemi.cz",
+  "shop": "https://www.boemi.cz/e-shop/",
+  "operator": "Cosmetica Bohemica s.r.o.",
+  "ico": "27888665",
+  "contact": "info@boemi.cz",
+  "contactSource": "https://www.boemi.cz/kontakty/",
+  "operatorSource": "https://www.boemi.cz/e-shop/obchodni-podminky/",
+  "relatedDomains": {
+    "obchod-boemi.cz": "Official OP name legacy shop; current redirect not verified. Public retrieval unavailable, not proof of ownership change.",
+    "boemikozmetika.sk": "Official contacts list Slovak representation VIRIDIA – Alexandra Tkáčová,47046635. Related brand even though separate operator."
+  },
+  "duplicateEvidence": "../../dokazy/boemi-duplicates.json",
+  "liveCheck": {
+    "home": "https://www.boemi.cz/",
+    "product": "https://www.boemi.cz/produkt/krem-na-ruce-bambucke-maslo-150ml/",
+    "observed": "Home and product screenshots inspected after Odmítnout. No product-chat/interactive-advisor launcher observed. Ordinary collection/type/colour filters and cart, no message/cart action.",
+    "limit": "Necessary-cookie session only; other modes remain unproven."
+  },
+  "revenue": "NEOVERENÉ",
+  "emailDraft": "NOT_READY",
+  "mailDuplicateCheck": "PENDING_CONTROLLER",
+  "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
+  "production": "NOT_DEPLOYED",
+  "next": "Collect representative active skin/body/hair products, exact retail VAT prices, pack and stock; no inflated gift/scent pack variants."
+}

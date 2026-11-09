@@ -1,0 +1,28 @@
+{
+  "paidCalls": 0,
+  "ok": true,
+  "rows": [
+    {
+      "width": 320,
+      "nightAge30": true,
+      "kindNoteNotTruncated": true,
+      "comparisonPricesPacksFocus": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "nightAge30": true,
+      "kindNoteNotTruncated": true,
+      "comparisonPricesPacksFocus": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "nightAge30": true,
+      "kindNoteNotTruncated": true,
+      "comparisonPricesPacksFocus": true,
+      "noOverflow": true
+    }
+  ],
+  "scope": "age caption, shortened choice note and opt-in meaningful comparison field; earlier full DFS not repeated"
+}

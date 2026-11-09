@@ -1,0 +1,17 @@
+{
+  "products": 8,
+  "formulaCountExcludesPackVariants": true,
+  "areas": ["face", "eyes"],
+  "meaningfulNeeds": {
+    "cleansing": ["rinse-off gel with glycerin", "two-phase oil for waterproof makeup"],
+    "dailyForm": ["night cream 30+", "serum after cleansing"],
+    "serumFocus": ["basic hyaluronic serum 25+", "very dry and stressed skin with ginseng", "mature skin 40+ with Bulbine extract", "mature skin 50+"]
+  },
+  "ageLabels": "Official recommended age groups, not exclusive eligibility or inferred safety limits.",
+  "intro": "Face/eye area, care step, form and focus only; no promised budget or unimplemented age filter.",
+  "all8Reachable": true,
+  "rawEngineLeaves": 8,
+  "sourceCautions": ["Peptide15ml conflicts with100ml short pack; excluded", "unavailable positive quantity products excluded", "acute/cyclic acne care excluded", "medical/UV/dermal-penetration/collagen efficacy claims omitted"],
+  "addon": "Not inferred across differing source age/use contexts; no preselected extra product.",
+  "photos": "Shared approved skincare scenes differ by question; official product packshots reserved for results. White margins cropped only by CSS."
+}

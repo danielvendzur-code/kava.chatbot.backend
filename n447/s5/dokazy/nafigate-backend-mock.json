@@ -1,0 +1,24 @@
+{
+  "paidCalls": 0,
+  "mockCalls": 3,
+  "rows": [
+    {
+      "query": "Odlíčení voděodolného make-upu",
+      "id": "cleansing-oil-200-ml",
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "query": "Sérum pro velmi suchou pleť",
+      "id": "skin-restore-serum-15-ml",
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "query": "Péče o oční okolí",
+      "id": "hyaluron-eye-serum-10-ml",
+      "status": 200,
+      "exactUrlAndPrice": true
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T22:10:16.309949+00:00",
+  "updatedAt": "2026-11-09T22:26:23.067831+00:00",
   "branch": "codex/s5-solo-20261109",
   "codeSha": "3de371af82ab788b21d02b9d0f1afe1d9dd2903a",
   "firmsByDomain": {
@@ -574,7 +574,7 @@
     },
     "nafigatecosmetics.cz": {
       "checkedAt": "2026-11-09T22:03:37.915335+00:00",
-      "status": "reserved",
+      "status": "local_verified",
       "claimSha": "79ba67de42653b7aa2b15deb7048bc879f773c7f",
       "domain": "nafigatecosmetics.cz",
       "operator": "NAFIGATE Cosmetics, a.s.",
@@ -595,7 +595,57 @@
       "mailDuplicateCheck": "PENDING_CONTROLLER",
       "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
       "production": "NOT_DEPLOYED",
-      "next": "Collect currently available representative products; omit out-of-stock creams/sets, medical and unsupported efficacy claims."
+      "next": "Create Preview and actually verify all eight results; not yet counted as Preview verified.",
+      "products": 8,
+      "source": "sources/nafigate/verified-products.json",
+      "coverageEvidence": "dokazy/nafigate-needs-coverage.json",
+      "localQa": {
+        "leaves": 8,
+        "results": 24,
+        "screens": 39,
+        "widths": [
+          320,
+          390,
+          1280
+        ],
+        "findings": 0,
+        "noimgResults": 8,
+        "noimgScreens": 13,
+        "all8PhotosPricesPacksCtaReset": true,
+        "mockBackendCalls": 3,
+        "paidCalls": 0,
+        "focusedFinalNotesAndComparison": true,
+        "addon": "omitted across differing age/use contexts; not inferred"
+      }
+    },
+    "boemi.cz": {
+      "checkedAt": "2026-11-09T22:25:37.820070+00:00",
+      "status": "reserved",
+      "domain": "boemi.cz",
+      "shop": "https://www.boemi.cz/e-shop/",
+      "operator": "Cosmetica Bohemica s.r.o.",
+      "ico": "27888665",
+      "contact": "info@boemi.cz",
+      "contactSource": "https://www.boemi.cz/kontakty/",
+      "operatorSource": "https://www.boemi.cz/e-shop/obchodni-podminky/",
+      "relatedDomains": {
+        "obchod-boemi.cz": "Official OP name legacy shop; current redirect not verified. Public retrieval unavailable, not proof of ownership change.",
+        "boemikozmetika.sk": "Official contacts list Slovak representation VIRIDIA – Alexandra Tkáčová,47046635. Related brand even though separate operator."
+      },
+      "duplicateEvidence": "../../dokazy/boemi-duplicates.json",
+      "liveCheck": {
+        "home": "https://www.boemi.cz/",
+        "product": "https://www.boemi.cz/produkt/krem-na-ruce-bambucke-maslo-150ml/",
+        "observed": "Home and product screenshots inspected after Odmítnout. No product-chat/interactive-advisor launcher observed. Ordinary collection/type/colour filters and cart, no message/cart action.",
+        "limit": "Necessary-cookie session only; other modes remain unproven."
+      },
+      "revenue": "NEOVERENÉ",
+      "emailDraft": "NOT_READY",
+      "mailDuplicateCheck": "PENDING_CONTROLLER",
+      "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
+      "production": "NOT_DEPLOYED",
+      "next": "Collect representative active skin/body/hair products, exact retail VAT prices, pack and stock; no inflated gift/scent pack variants.",
+      "claimSha": "450e030cf1cc866514395a034fcf16a30010b939"
     }
   },
   "localGit": {
@@ -614,7 +664,7 @@
       "repo",
       "s5-next"
     ],
-    "nextStep": "Collect and implement reserved Nafigate from current available representative products; Eoné live QA9/9 completed."
+    "nextStep": "Publish Nafigate Preview, verify eight results; reserved Boemi source collection next."
   },
   "autonomousBacklog": {
     "source": "BACKLOG-DLHODOBE-20261109.md",

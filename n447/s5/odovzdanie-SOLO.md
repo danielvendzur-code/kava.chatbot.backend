@@ -278,3 +278,16 @@ UI DFS54 výsledkov/99 obrazoviek,9/9 hlavných odporúčaní na320/390/1280,0 n
 ## Eoné Preview skutočne overený – 2026-11-09T22:10:16.309949+00:00
 
 Kód3de371af82ab788b21d02b9d0f1afe1d9dd2903a, READY dpl_Ek2q5CDfsKxN6CV45UYXqzEegh9v. https://kava-chatbot-backend-49qrdrxkw-danielvendzur-codes-projects.vercel.app/s5.html?demo=eone . Vlastné živé QA9/9 výsledkov, každá fotografia po načítaní complete/naturalWidth800, ceny/balenia/presné variantné CTA bez novej karty, reset medzi výsledkami;1363×936,cs,bez horizontálneho pretečenia. Doplnok nezaškrtnutý193→587→193Kč. Posledných10 konzolových chýb je chrome-extension metadata, nie aplikačné chyby; vzorka nie globálna záruka.0modelových volaní. Záznam dokazy/eone-preview-qa.json. Séria má7 vlastne Preview overených, nie schválenú produkciu. Ďalej rezervovaná Nafigate, claim79ba67de42653b7aa2b15deb7048bc879f773c7f.
+
+
+## Nafigate – lokálna kontrola dokončená, Preview ešte PENDING
+
+NAFIGATE Cosmetics, a.s., IČO 04244061, nafigatecosmetics.cz, info@nafigatecosmetics.cz z aktuálnych OP. Aktuálne tržby NEOVERENÉ; správa z roku 2018 nie je aktuálny obrat. Živá domovská stránka a Hyaluron Essential: po odmietnutí cookies bez pozorovaného produktového chatu; „Zeptat se“ otvorí Dotaz na prodejce s kontaktnými poľami a CAPTCHA. Nič nevyplnené ani odoslané. Iné režimy zostávajú neisté.
+
+Osem rôznych produktov má osem koncových ciest. Čistenie odlišuje oplachový gel od oleja na vodoodolný make-up; naväzujúca starostlivosť odlišuje nočný krém od séra. Štyri séra majú doložené odlišné zameranie: základná hyalurónová starostlivosť 25+, veľmi suchá pleť so ženšenom, zrelá pleť 40+ s Bulbine a zrelá pleť 50+. Úvod nesľubuje rozpočet. Nezaradené: vypredané položky aj pri kladnom počte kusov, Peptide s rozporom 15/100 ml, akútne cyklické acne prípravky, ihly a sady.
+
+Lokálne: 24 výsledkov / 39 obrazoviek na 320/390/1280 px, 8/8 hlavných odporúčaní, 0 nálezov. Bez fotografií 8/13, 0 nálezov. Každý produkt má samostatne overenú cenu, balenie, načítanú fotografiu, presné CTA bez novej karty, reset a nadviazanie. Čipy sú štyri, všetky 40 px; hover bez posunu, čakací indikátor a chyba len cez mock, reduced motion, 3 backend mock volania / 0 platených.
+
+Vizuálna kontrola odhalila skrátený opis nočného krému pri voľbe a príliš všeobecné porovnanie sér. Krátky opis teraz jasne uvádza nočnú starostlivosť 50 ml od 30 rokov. Len pre Nafigate je porovnanie opt-in: namiesto rovnakého „všetky typy pleti“ ukazuje konkrétne zameranie z overeného opisu. Ceny a balenia zostávajú v tej istej karte. Následná cielená kontrola prešla na troch šírkach, nezmenený celý strom sa neopakoval. CSS zväčšuje iba biele okraje pôvodných packshotov; originály sa nemenili.
+
+Preview ešte nie je overený. E-mail NOT_READY, produkcia NOT_DEPLOYED. Ďalšia rezervácia: Boemi, Cosmetica Bohemica s.r.o. / 27888665, aj súvisiace SK zastúpenie boemikozmetika.sk / 47046635 skontrolované v 91 refs. Výrobca je iba historický kandidát, nie existujúca ukážka.

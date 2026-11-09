@@ -38,7 +38,7 @@
         + row(T('Balenie', 'Balení'), pack)
         + row(T('Druh', 'Druh'), p.kind)
         + (REG.series === 's5' ? row(T('Vôňa', 'Vůně'), p.source?.scent) : '')
-        + row(REG.series === 's5' ? T('Typ pokožky','Typ pokožky') : T('Podľa e-shopu', 'Podle e-shopu'), REG.series === 's5' ? (p.source?.skinTypesListed || []).join(', ') : [label(t.careUse), focusText(t.skinFocus)].filter(Boolean).join(' · '))
+        + (REG.series === 's5' && REG.compareFocus ? row(T('Zameranie','Zaměření'), p.description) : row(REG.series === 's5' ? T('Typ pokožky','Typ pokožky') : T('Podľa e-shopu', 'Podle e-shopu'), REG.series === 's5' ? (p.source?.skinTypesListed || []).join(', ') : [label(t.careUse), focusText(t.skinFocus)].filter(Boolean).join(' · ')))
         + '<a class="s3-cmp-go" href="' + esc(p.url) + '">' + esc(T('Zobraziť produkt →', 'Zobrazit produkt →')) + '</a></span>';
     };
     return {role: 'assistant', text: T('Porovnanie: ', 'Porovnání: ') + a.name + ' / ' + b.name,
