@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-11-09T22:00:00Z",
+  "status": "reserved",
+  "claimSha": "76e95bbff70cb7a6623b620748ed8303bc206fbe",
+  "domain": "eone.cz",
+  "operator": "Eoné kosmetika s.r.o.",
+  "ico": "27321151",
+  "operatorSource": "https://eone.cz/cs/content/14-kontakty",
+  "contact": "eone@eone.cz",
+  "contactSource": "https://eone.cz/cs/content/14-kontakty",
+  "revenue": "NEOVERENÉ",
+  "duplicateEvidence": "../../dokazy/next-pair-duplicates.json",
+  "liveCheck": {
+    "home": "https://eone.cz/cs/",
+    "product": "https://eone.cz/cs/balzamy-na-myti-vlasu/223-441-ligia-myci-balzam-na-vlasy.html#/3-objem-100_ml",
+    "observed": "Home and LIGIA product visually inspected after necessary cookies. No product-chat launcher observed. Generic chat label belongs to Komentáře (0) product reviews, not a chatbot. Poradna Eoné explicitly offers founder's individual advice by email; no interactive advisor observed.",
+    "adviceSource": "https://eone.cz/cs/content/69-poradna-eone",
+    "limit": "Only observed necessary-cookie session, not proof of all possible modes. No message, review, form or cart submission.",
+    "perfumeCategory": "https://eone.cz/cs/167-vlastni-parfem is a static catalogue with a DIY blog link, not an observed interactive selector."
+  },
+  "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
+  "mailDuplicateCheck": "PENDING_CONTROLLER",
+  "emailDraft": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "next": "Collect representative adult face/hair/body products with exact VAT-inclusive variant prices and photos; omit medical, mystical and unsupported SPF claims."
+}

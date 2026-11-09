@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-11-09T22:03:37.915335+00:00",
+  "status": "reserved",
+  "claimSha": "79ba67de42653b7aa2b15deb7048bc879f773c7f",
+  "domain": "nafigatecosmetics.cz",
+  "operator": "NAFIGATE Cosmetics, a.s.",
+  "ico": "04244061",
+  "operatorSource": "https://www.nafigatecosmetics.cz/obchodni-podminky/",
+  "contact": "info@nafigatecosmetics.cz",
+  "contactSource": "https://www.nafigatecosmetics.cz/",
+  "revenue": "NEOVERENÉ",
+  "historicRevenueNote": "BusinessInfo report2018 mentions8millionCZK; not current revenue or current size clearance.",
+  "liveCheck": {
+    "home": "https://www.nafigatecosmetics.cz/",
+    "product": "https://www.nafigatecosmetics.cz/hyaluron-essential-20-ml/",
+    "observed": "Home and product visually inspected after Odmítnout cookies. No product chat observed. Zeptat se opens Dotaz na prodejce with email/phone/message/CAPTCHA; no field filled or sent.",
+    "limit": "Other session/cookie modes remain unproven."
+  },
+  "duplicateEvidence": "../../dokazy/next-after-eone-duplicates.json",
+  "emailDraft": "NOT_READY",
+  "mailDuplicateCheck": "PENDING_CONTROLLER",
+  "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
+  "production": "NOT_DEPLOYED",
+  "next": "Collect currently available representative products; omit out-of-stock creams/sets, medical and unsupported efficacy claims."
+}

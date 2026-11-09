@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T21:44:26.104414+00:00",
+  "updatedAt": "2026-11-09T21:51:50.826942+00:00",
   "branch": "codex/s5-solo-20261109",
   "codeSha": "4359f12f994aa6d864f8bef2d22deaf9537b1719",
   "firmsByDomain": {
@@ -506,10 +506,87 @@
         "miniExactUrlsVerified": true
       },
       "coverageEvidence": "dokazy/janine-needs-coverage.json"
+    },
+    "aromedica.cz": {
+      "domain": "aromedica.cz",
+      "operator": "AROMEDICA s.r.o.",
+      "ico": "25126059",
+      "status": "HOLD_SOURCE_ACCESS_BLOCKED",
+      "source": "https://www.aromedica.cz/obchodni-podminky/",
+      "liveCheck": "Home displayed Access temporarily blocked due to suspicious activity. Live widget check incomplete; no alternate route/client or bypass attempted. No demo reserved or coded.",
+      "claimSha": "76e95bbff70cb7a6623b620748ed8303bc206fbe"
+    },
+    "eone.cz": {
+      "checkedAt": "2026-11-09T22:00:00Z",
+      "status": "local_verified",
+      "claimSha": "76e95bbff70cb7a6623b620748ed8303bc206fbe",
+      "domain": "eone.cz",
+      "operator": "Eoné kosmetika s.r.o.",
+      "ico": "27321151",
+      "operatorSource": "https://eone.cz/cs/content/14-kontakty",
+      "contact": "eone@eone.cz",
+      "contactSource": "https://eone.cz/cs/content/14-kontakty",
+      "revenue": "NEOVERENÉ",
+      "duplicateEvidence": "../../dokazy/next-pair-duplicates.json",
+      "liveCheck": {
+        "home": "https://eone.cz/cs/",
+        "product": "https://eone.cz/cs/balzamy-na-myti-vlasu/223-441-ligia-myci-balzam-na-vlasy.html#/3-objem-100_ml",
+        "observed": "Home and LIGIA product visually inspected after necessary cookies. No product-chat launcher observed. Generic chat label belongs to Komentáře (0) product reviews, not a chatbot. Poradna Eoné explicitly offers founder's individual advice by email; no interactive advisor observed.",
+        "adviceSource": "https://eone.cz/cs/content/69-poradna-eone",
+        "limit": "Only observed necessary-cookie session, not proof of all possible modes. No message, review, form or cart submission.",
+        "perfumeCategory": "https://eone.cz/cs/167-vlastni-parfem is a static catalogue with a DIY blog link, not an observed interactive selector."
+      },
+      "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
+      "mailDuplicateCheck": "PENDING_CONTROLLER",
+      "emailDraft": "NOT_READY",
+      "production": "NOT_DEPLOYED",
+      "next": "Preview build and actual live QA of all9 results; not yet Preview verified.",
+      "products": 9,
+      "source": "sources/eone/verified-products.json",
+      "localQa": {
+        "dfsResults": 54,
+        "dfsScreens": 99,
+        "widths": [
+          320,
+          390,
+          1280
+        ],
+        "findings": 0,
+        "noImageResults": 18,
+        "noImageScreens": 33,
+        "paidCalls": 0,
+        "photoPresentation": "27 final photo captures at 320/390/1280; three CSS white-margin crops, avatar contrast",
+        "mockBackendCalls": 3
+      }
+    },
+    "nafigatecosmetics.cz": {
+      "checkedAt": "2026-11-09T22:03:37.915335+00:00",
+      "status": "reserved",
+      "claimSha": "79ba67de42653b7aa2b15deb7048bc879f773c7f",
+      "domain": "nafigatecosmetics.cz",
+      "operator": "NAFIGATE Cosmetics, a.s.",
+      "ico": "04244061",
+      "operatorSource": "https://www.nafigatecosmetics.cz/obchodni-podminky/",
+      "contact": "info@nafigatecosmetics.cz",
+      "contactSource": "https://www.nafigatecosmetics.cz/",
+      "revenue": "NEOVERENÉ",
+      "historicRevenueNote": "BusinessInfo report2018 mentions8millionCZK; not current revenue or current size clearance.",
+      "liveCheck": {
+        "home": "https://www.nafigatecosmetics.cz/",
+        "product": "https://www.nafigatecosmetics.cz/hyaluron-essential-20-ml/",
+        "observed": "Home and product visually inspected after Odmítnout cookies. No product chat observed. Zeptat se opens Dotaz na prodejce with email/phone/message/CAPTCHA; no field filled or sent.",
+        "limit": "Other session/cookie modes remain unproven."
+      },
+      "duplicateEvidence": "../../dokazy/next-after-eone-duplicates.json",
+      "emailDraft": "NOT_READY",
+      "mailDuplicateCheck": "PENDING_CONTROLLER",
+      "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
+      "production": "NOT_DEPLOYED",
+      "next": "Collect currently available representative products; omit out-of-stock creams/sets, medical and unsupported efficacy claims."
     }
   },
   "localGit": {
-    "activeCheckout": "s5-next detached from e83112e612141733203628384f1a7f0938e07e80",
+    "activeCheckout": "s5-resumed detached at cf46b65bf54bc995074393154ae26c58e3336107; local WIP preserved; remote d983e0a22ae515936d77f89045a09ffe439ef587 authoritative",
     "preservedOriginalCheckout": "repo at ef249f346d70d3b941bf25b80606cfc2c3b54c62",
     "note": "No reset retried; old index/worktree preserved. Explicit connector commits only."
   },
@@ -524,7 +601,7 @@
       "repo",
       "s5-next"
     ],
-    "nextStep": "Implement reserved Janine from preserved current sources. No HOLD firms resumed."
+    "nextStep": "Reserved Eoné: collecting official product facts; Aromedica blocked and HOLD. Janine all six Preview results completed."
   },
   "autonomousBacklog": {
     "source": "BACKLOG-DLHODOBE-20261109.md",

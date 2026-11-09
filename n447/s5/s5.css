@@ -57,3 +57,9 @@ body[data-series="s5"][data-cosmetics-demo="janine"] #cx-widget .cx-widget-brand
 /* Official Janine water packshots have large white margins. Only presentation crops those margins. */
 body[data-series=s5][data-cosmetics-demo=janine] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s5-product[data-product-id^="kvetova-voda-"] .cx-quality-product-photo{overflow:hidden!important}
 body[data-series=s5][data-cosmetics-demo=janine] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s5-product[data-product-id^="kvetova-voda-"] img{transform:scale(1.8)!important}
+/* Eoné: present the original white-margin packshots at readable scale, without altering source files. */
+body[data-series=s5][data-cosmetics-demo=eone] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s5-product:is([data-product-id=krem-na-dobre-rano],[data-product-id=lia],[data-product-id=pletova-voda-ruze]) .cx-quality-product-photo{overflow:hidden!important}
+body[data-series=s5][data-cosmetics-demo=eone] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s5-product:is([data-product-id=krem-na-dobre-rano],[data-product-id=lia]) img{transform:scale(1.55)!important}
+body[data-series=s5][data-cosmetics-demo=eone] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s5-product[data-product-id=pletova-voda-ruze] img{transform:scale(1.3)!important}
+/* Darken the pale original logo only in the small chat avatar; header remains the approved white mark. */
+body[data-series=s5][data-cosmetics-demo=eone] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-message-avatar{filter:grayscale(1) brightness(.65) contrast(4)!important}

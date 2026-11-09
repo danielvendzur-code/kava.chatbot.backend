@@ -1,0 +1,4 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {answer} from '../../lib/cosmetics-chat.js';
+const rows=[];for(const [q,id]of [['Lehký citrusový krém','krem-na-dobre-rano'],['Olej bez přídavku silic na odlíčení','neutralni-hydrofilni-olej'],['Jemný mycí balzám na vlasy','ligia']]){let calls=0;const r=await answer({demoId:'eone',messages:[{role:'user',content:q}]},{ai:async a=>{calls++;assert.equal(a.brand,'Eoné');assert.equal(a.catalogue.products.length,9);return ''}});assert.equal(r.status,200);const f=globalThis.CX_CATALOGUES.eone.products.find(x=>x.id===id);assert(r.json.reply.includes(f.url)&&r.json.reply.includes(f.price));assert.equal(calls,1);rows.push({query:q,id,status:r.status,exactUrlAndPrice:true})}fs.writeFileSync('n447/s5/dokazy/eone-backend-mock.json',JSON.stringify({paidCalls:0,mockCalls:3,rows},null,2));console.log('Eoné backend 3 mocked calls, paid 0');

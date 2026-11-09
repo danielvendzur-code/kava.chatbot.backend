@@ -257,3 +257,19 @@ https://kava-chatbot-backend-12c7fw998-danielvendzur-codes-projects.vercel.app/s
 Pracovník skutočne prešiel všetkých6výsledkov, ceny/50ml/produktové href vrátane konkrétnych atribútov sedia; všetkých6fotografií complete=true/naturalWidth600. Mini detail15ml8,20€/30ml10,90€ a oba presné same-tabURL tiež skutočne prečítané v Preview. Úvod presne Pleť a telo · typ starostlivosti · vôňa, bez sľubu otázky na rozpočet. Reset vrátil Pleť/Telo. Viewport1363×936, langsk, bez horizontálneho overflow. V zachytených logoch iba chrome-extension metadata sender chyby, nie aplikácia; nejde o úplný runtime audit. Žiadny chatový model request/košík/login/bypass/email/produkcia. Mobilné úplnéQA je lokálne/mock. Dôkaz janine-preview-qa.json;23finálnych WebP dôkazov priložených k checkpointu. Nie je to nezávislé schválenie ani approved_live.
 
 Vlastne Preview overených6: NUTT,Pleva,JAGAIA,Capri,Botanico,Janine. Majiteľov nový dlhodobý pokyn je uložený v BACKLOG-DLHODOBE-20261109.md: najmenej20, potom zásoba smerom40 a ďalej pri dostupnej kapacite; nekončiť pri odovzdaní. Jeden pracovník, cena447+10, emailyNOT_READY/žiadne odoslanie ani plánovanie, produkciazakázaná. Ďalší vykonávaný krok Aromedica/Eoné, zatiaľ nerezerované: Aromedica sa našla v starom kandidati.md (treba prečítať dôvod), Eoné doména/názov bez91refzhody, treba doplniť IČO27321151 a prezrieť živú home/produkt/poradňu. Nevydávať ich vhodnosť za schválenú.
+
+
+## Ďalšia firma po šiestich Preview – 2026-11-09T21:51:50.826942+00:00
+
+Eoné rezervovaná v coord/s5-claims commit76e95bbff70cb7a6623b620748ed8303bc206fbe po 91-ref kontrole domény/prevádzkovateľa/IČO a živej home + LIGIA + Poradna kontrole. Poradna je osobná e-mailová rada; chat pri Komentáře je ikona recenzií. Nevyhnutné cookies; iné režimy nepreukázané. Zdroje sa zbierajú, ukážka zatiaľ nie hotová.
+
+Aromedica HOLD_SOURCE_ACCESS_BLOCKED: domovská stránka zobrazila Access temporarily blocked pre suspicious activity; žiadna kompletná kontrola widgetu, žiadne obchádzanie ani kód. Oficiálne OP: AROMEDICA s.r.o./25126059; historický kandidát, nezapočítaná ukážka.
+
+Posledný kompletný vzdialený checkpoint d983e0a22ae515936d77f89045a09ffe439ef587: 6 vlastne Preview overených, Janine kód4359f12f994aa6d864f8bef2d22deaf9537b1719 / dpl_4d7i7iXYPj8LTLQvnWVMU4dbqCQZ a23snímok. Pokračovať Eoné a ďalšími firmami, nie zastaviť pri odovzdaní.
+
+
+## Eoné – lokálne overená, Preview ešte PENDING
+
+9 rôznych receptúr: 2 krémy30ml,3 pleťové oleje20ml, ružová voda30ml, hydrofilný olej50ml, mycí balzám100ml a kondicionér100ml. Uvádzaná dostupnosť z oficiálnych stránok:8× Vyrábíme čerstvé (MadeToOrder, nie InStock), LIA posledné kusy. 50ml čistič3v1 nedostupný, vyradený bez náhrady iným balením. Žiadne zdravotné/SPF/psychické tvrdenia.
+
+UI DFS54 výsledkov/99 obrazoviek,9/9 hlavných odporúčaní na320/390/1280,0 nálezov; bezfotiek18/33,0. Priamy engine kontrakt23 listov/9 produktov; UI33 obrazoviek našírku má18 listov. Samostatné ceny/balenie/CTA/obrázok/reset/follow:9 produktov×3 šírky. Prvý320 beh prešiel výsledkami, zastavil sa na predčasnom hover-meraní počas otváracej animácie; následné320 interakcie a390/1280 výsledky prešli. Medzera Kč normalizovaná v teste po rovnakom číselnom súčte; bez zmeny ceny. Ružová voda+krém dobrovoľne193→587→193Kč. Žiadny doplnok vopred zvolený.4 čipy40px,2 rôzne produkty v porovnaní,3 backendmock/0platených. Finálne27 snímok produktov a9 otázkových stavov;3 CSS orezy iba bielych okrajov, avatar s kontrastnejším pôvodným logom. A11y po doplnení QAregistra prešla. Preview ešte neoverený; e-mail NOT_READY, produkcia NOT_DEPLOYED. Pokračovať živým QA, potom rezervovaná Nafigate.
