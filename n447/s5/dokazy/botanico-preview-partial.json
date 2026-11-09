@@ -1,0 +1,37 @@
+{
+  "checkedAt": "2026-11-09T17:38:40.110Z",
+  "codeSha": "da47ce26de45c59f03b2a96bfc0cfa82e5bba4ff",
+  "deploymentId": "dpl_Fsrv2jE3StxAhTTgRP9SEaud5C4Q",
+  "url": "https://kava-chatbot-backend-q31t7hn8b-danielvendzur-codes-projects.vercel.app/s5.html?demo=botanico",
+  "state": "READY",
+  "status": "PARTIAL_BLOCKED_ENVIRONMENT_UNAVAILABLE",
+  "workerObserved": {
+    "product": "Denní pleťový krém – Mrtvé moře",
+    "price": "96,68 Kč",
+    "pack": "75 ml",
+    "href": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da/",
+    "photoLoadVerified": false
+  },
+  "viewport": {
+    "width": 1363,
+    "height": 936
+  },
+  "initialBoot": "Initial shell was Slovak while scripts loaded/inert; after completion main heading and controls were Czech. First early open click had no visible effect; clicking visible Vyzkoušet výběr after readiness opened category step Krok 1 z 5.",
+  "path": [
+    "face",
+    "dailyCare",
+    "any",
+    "bSea",
+    "day"
+  ],
+  "resultText": "VÁŠ VÝBĚR\nDenní pleťový krém – Mrtvé moře\n75 ml\n96,68 Kč\nDenní pleťový krém s minerály Mrtvého moře.\nZobrazit produkt",
+  "console": "Only chrome-extension metadata sender error observed in captured logs; no application error seen in that sample. Not a complete runtime scan.",
+  "failure": "exec-server transport disconnected; failed to resume exec-server session: recovery timed out after 45s",
+  "limits": [
+    "No photo naturalWidth confirmed before disconnect",
+    "Remaining 9 products not traversed on Preview",
+    "No full Preview verification",
+    "No messages, paid model calls, cart, login, bypass or production deployment"
+  ],
+  "resume": "When environment returns, open exact Botanico READY Preview and finish all 10 product results/photos/reset. Do not count partial Preview as verified. Then implement already-reserved Janine from research-checkpoint.json, verify assets/variant URLs, full offline QA and Preview."
+}

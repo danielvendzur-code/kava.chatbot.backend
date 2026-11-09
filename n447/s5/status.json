@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-09T17:32:35.595178+00:00",
+  "updatedAt": "2026-11-09T17:38:40.110Z",
   "branch": "codex/s5-solo-20261109",
-  "codeSha": "d54217a148b3204de27edac05a0debe70e27aa93",
+  "codeSha": "da47ce26de45c59f03b2a96bfc0cfa82e5bba4ff",
   "firmsByDomain": {
     "musiprirodne.sk": {
       "domain": "musiprirodne.sk",
@@ -376,7 +376,7 @@
       "emailDraft": "NOT_READY",
       "production": "NOT_DEPLOYED",
       "products": 10,
-      "sha": "PENDING_CODE_COMMIT",
+      "sha": "da47ce26de45c59f03b2a96bfc0cfa82e5bba4ff",
       "localQa": {
         "leaves": 22,
         "results": 66,
@@ -403,7 +403,21 @@
         "Olive night: only dry skin retained; conflicting oily attribute omitted.",
         "Display names shortened, originalTitle retained."
       ],
-      "preview": "PENDING_DEPLOYMENT"
+      "preview": {
+        "url": "https://kava-chatbot-backend-q31t7hn8b-danielvendzur-codes-projects.vercel.app/s5.html?demo=botanico",
+        "deploymentId": "dpl_Fsrv2jE3StxAhTTgRP9SEaud5C4Q",
+        "state": "READY",
+        "workerQa": "PARTIAL_BLOCKED_ENVIRONMENT_UNAVAILABLE",
+        "observed": {
+          "product": "Denní pleťový krém – Mrtvé moře",
+          "price": "96,68 Kč",
+          "pack": "75 ml",
+          "href": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da/",
+          "photoLoadVerified": false
+        },
+        "fullPreviewQa": false,
+        "paidCalls": 0
+      }
     },
     "bodybe.cz": {
       "domain": "bodybe.cz",
@@ -435,12 +449,21 @@
       "emailDraft": "NOT_READY",
       "mailDuplicateCheck": "PENDING_CONTROLLER",
       "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
-      "production": "NOT_DEPLOYED"
+      "production": "NOT_DEPLOYED",
+      "sourceCheckpoint": "sources/janine/research-checkpoint.json"
     }
   },
   "localGit": {
     "activeCheckout": "s5-next detached from e83112e612141733203628384f1a7f0938e07e80",
     "preservedOriginalCheckout": "repo at ef249f346d70d3b941bf25b80606cfc2c3b54c62",
     "note": "No reset retried; old index/worktree preserved. Explicit connector commits only."
+  },
+  "environment": {
+    "state": "unavailable",
+    "browserError": "exec-server transport disconnected; failed to resume exec-server session: recovery timed out after 45s",
+    "terminalError": "No usable execution environment is available. Wait for an environment to become available before using this tool.",
+    "lastLocalWorkingDirectory": "/workspace/scratch/3ddc5ee91f7a/s5-next",
+    "processes": "Local test sessions finished. No known server left running; cleanup trap was present. Browser no longer accessible.",
+    "nextStep": "When environment returns, open exact Botanico READY Preview and finish all 10 product results/photos/reset. Do not count partial Preview as verified. Then implement already-reserved Janine from research-checkpoint.json, verify assets/variant URLs, full offline QA and Preview."
   }
 }

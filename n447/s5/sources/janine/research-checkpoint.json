@@ -1,0 +1,254 @@
+{
+  "status": "RESEARCH_CHECKPOINT_ONLY_NOT_IMPLEMENTED",
+  "observedDate": "2026-11-09",
+  "operator": "Janine, s.r.o.",
+  "ico": "46689605",
+  "operatorSource": "https://janinekozmetika.sk/obchodne-podmienky/",
+  "contact": "janinekozmetika@gmail.com",
+  "contactSource": "https://janinekozmetika.sk/obchodne-podmienky/",
+  "revenue": "NEOVERENÉ",
+  "claimSha": "132dc90192c31e0947861397e90ff6724a9af86d",
+  "duplicates": {
+    "remoteRefs": 91,
+    "patterns": [
+      "janinekozmetika.sk",
+      "46689605",
+      "janinekozmetika@gmail.com"
+    ],
+    "fileMatches": 0,
+    "attachments": "No match; brand also checked."
+  },
+  "liveWidgetCheck": {
+    "pages": [
+      "https://janinekozmetika.sk/",
+      "https://janinekozmetika.sk/produkt/pletovy-krem/"
+    ],
+    "observed": "No chat or product advisor observed. Newsletter, normal product information and variation selector. Screenshots and DOM inspected before reservation.",
+    "limit": "Other cookie/session modes unproven.",
+    "messagesSent": 0,
+    "cartActions": 0
+  },
+  "exactVariantLiveCheck": {
+    "url": "https://janinekozmetika.sk/produkt/pletovy-krem/?attribute_pa_velkost=50-ml",
+    "observedSelected": "50-ml",
+    "observedVariationPrice": "14,30 €",
+    "observedPhotoAlt": "Pleťový krém 50 ml",
+    "otherVariantUrlsLiveChecked": false
+  },
+  "products": [
+    {
+      "slug": "pletovy-krem",
+      "name": "Pleťový krém Slamienka Kyselina ferulová",
+      "price": 14.3,
+      "variationId": 94,
+      "attrs": {
+        "attribute_pa_velkost": "50-ml"
+      },
+      "photo": "https://janinekozmetika.sk/wp-content/uploads/2019/10/Pleťový-krém-50-ml-1-600x800.jpg",
+      "category": "face",
+      "kind": "Krémy",
+      "skin": [
+        "všetky typy pleti",
+        "zrelá pleť"
+      ],
+      "use": "Nanášanie na čistú tvár, krk a dekolt, prednostne cez deň.",
+      "description": "Pleťový krém so slamienkou a kyselinou ferulovou, s vôňou geránia.",
+      "variants": [
+        {
+          "label": "15 ml",
+          "price": 8.2,
+          "variationId": 92,
+          "available": true
+        },
+        {
+          "label": "30 ml",
+          "price": 10.9,
+          "variationId": 93,
+          "available": true
+        },
+        {
+          "label": "50 ml",
+          "price": 14.3,
+          "variationId": 94,
+          "available": true
+        }
+      ],
+      "sourceUrl": "https://janinekozmetika.sk/produkt/pletovy-krem/",
+      "proposedExactVariantUrl": "https://janinekozmetika.sk/produkt/pletovy-krem/?attribute_pa_velkost=50-ml",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "inStock": true,
+      "priceSource": "Captured public WooCommerce variation JSON display_price for exact attributes; is_in_stock=true. Waters pack50 additionally in product information table.",
+      "propertiesSource": "https://janinekozmetika.sk/produkt/pletovy-krem/",
+      "photoDownloadedAndVisuallyReviewed": false
+    },
+    {
+      "slug": "pletove-serum",
+      "name": "Pleťové sérum",
+      "price": 14.3,
+      "variationId": 62,
+      "attrs": {
+        "attribute_pa_velkost": "50-ml",
+        "attribute_pa_uzaver": "davkovac"
+      },
+      "photo": "https://janinekozmetika.sk/wp-content/uploads/2019/10/Pleťové-sérum-50-ml-3-600x800.jpg",
+      "category": "face",
+      "kind": "Sérum",
+      "skin": [
+        "všetky typy pleti"
+      ],
+      "use": "Malé množstvo na čistú tvár, krk a dekolt, prednostne na noc.",
+      "description": "Olejové sérum zo šiestich za studena lisovaných olejov, s vitamínom E.",
+      "variants": [
+        {
+          "label": "30 ml s dávkovačom",
+          "price": 10.9,
+          "variationId": 61,
+          "available": true
+        },
+        {
+          "label": "50 ml s dávkovačom",
+          "price": 14.3,
+          "variationId": 62,
+          "available": true
+        }
+      ],
+      "excludedVariant": {
+        "variationId": 3445,
+        "reason": "30 ml s kvapátkom má v exporte fotografiu 50 ml s dávkovačom; nepoužiť túto fotku na menšie balenie."
+      },
+      "sourceUrl": "https://janinekozmetika.sk/produkt/pletove-serum/",
+      "proposedExactVariantUrl": "https://janinekozmetika.sk/produkt/pletove-serum/?attribute_pa_velkost=50-ml&attribute_pa_uzaver=davkovac",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "inStock": true,
+      "priceSource": "Captured public WooCommerce variation JSON display_price for exact attributes; is_in_stock=true. Waters pack50 additionally in product information table.",
+      "propertiesSource": "https://janinekozmetika.sk/produkt/pletove-serum/",
+      "photoDownloadedAndVisuallyReviewed": false
+    },
+    {
+      "slug": "kvetova-voda-hamamel",
+      "name": "Kvetová voda Hamamel",
+      "price": 4.9,
+      "variationId": 3151,
+      "attrs": {
+        "attribute_pa_uzaver": "rozprasovac"
+      },
+      "photo": "https://janinekozmetika.sk/wp-content/uploads/2020/06/kvetova-voda-hamamel-50-ml-600x400.jpg",
+      "category": "face",
+      "kind": "Toniká a vody",
+      "skin": [
+        "zmiešaná a mastná pleť",
+        "zrelá pleť"
+      ],
+      "scent": "svieža citrónová a bylinná",
+      "use": "Na kozmetický tampón na čistenie tváre/krku/dekoltu alebo malé množstvo na osvieženie pleti.",
+      "description": "Hamamelová kvetová voda s rozprašovačom.",
+      "sourceUrl": "https://janinekozmetika.sk/produkt/kvetova-voda-hamamel/",
+      "proposedExactVariantUrl": "https://janinekozmetika.sk/produkt/kvetova-voda-hamamel/?attribute_pa_uzaver=rozprasovac",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "inStock": true,
+      "priceSource": "Captured public WooCommerce variation JSON display_price for exact attributes; is_in_stock=true. Waters pack50 additionally in product information table.",
+      "propertiesSource": "https://janinekozmetika.sk/produkt/kvetova-voda-hamamel/",
+      "photoDownloadedAndVisuallyReviewed": false
+    },
+    {
+      "slug": "kvetova-voda-geranium",
+      "name": "Kvetová voda Geranium",
+      "price": 4.9,
+      "variationId": 3154,
+      "attrs": {
+        "attribute_pa_uzaver": "rozprasovac"
+      },
+      "photo": "https://janinekozmetika.sk/wp-content/uploads/2019/10/Kvetová-voda-Geranium-50-ml-600x400.jpg",
+      "category": "face",
+      "kind": "Toniká a vody",
+      "skin": [
+        "všetky typy pleti vrátane mastnej, zmiešanej a citlivej"
+      ],
+      "scent": "sladká kvetinová a osviežujúca",
+      "use": "Na kozmetický tampón na čistenie tváre/krku/dekoltu alebo malé množstvo na osvieženie pleti.",
+      "description": "Gerániová kvetová voda s rozprašovačom.",
+      "sourceUrl": "https://janinekozmetika.sk/produkt/kvetova-voda-geranium/",
+      "proposedExactVariantUrl": "https://janinekozmetika.sk/produkt/kvetova-voda-geranium/?attribute_pa_uzaver=rozprasovac",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "inStock": true,
+      "priceSource": "Captured public WooCommerce variation JSON display_price for exact attributes; is_in_stock=true. Waters pack50 additionally in product information table.",
+      "propertiesSource": "https://janinekozmetika.sk/produkt/kvetova-voda-geranium/",
+      "photoDownloadedAndVisuallyReviewed": false
+    },
+    {
+      "slug": "kvetova-voda-slamienka",
+      "name": "Kvetová voda Slamienka",
+      "price": 4.9,
+      "variationId": 3145,
+      "attrs": {
+        "attribute_pa_uzaver": "rozprasovac"
+      },
+      "photo": "https://janinekozmetika.sk/wp-content/uploads/2020/07/Kvetová-voda-Slamienka-50-ml-600x411.jpg",
+      "category": "face",
+      "kind": "Toniká a vody",
+      "skin": [
+        "citlivá a zrelá pleť"
+      ],
+      "scent": "medovo-bylinná korenistá",
+      "use": "Na kozmetický tampón na čistenie tváre/krku/dekoltu alebo malé množstvo na osvieženie pleti.",
+      "description": "Slamienková kvetová voda s rozprašovačom.",
+      "sourceUrl": "https://janinekozmetika.sk/produkt/kvetova-voda-slamienka/",
+      "proposedExactVariantUrl": "https://janinekozmetika.sk/produkt/kvetova-voda-slamienka/?attribute_pa_uzaver=rozprasovac",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "inStock": true,
+      "priceSource": "Captured public WooCommerce variation JSON display_price for exact attributes; is_in_stock=true. Waters pack50 additionally in product information table.",
+      "propertiesSource": "https://janinekozmetika.sk/produkt/kvetova-voda-slamienka/",
+      "photoDownloadedAndVisuallyReviewed": false
+    },
+    {
+      "slug": "telovy-krem",
+      "name": "Telový krém Koenzým Q10",
+      "price": 10.6,
+      "variationId": 464,
+      "attrs": {
+        "attribute_pa_velkost": "50-ml"
+      },
+      "photo": "https://janinekozmetika.sk/wp-content/uploads/2019/10/Telový-krém-50-ml-1-600x600.jpg",
+      "category": "body",
+      "kind": "Telový krém",
+      "skin": [
+        "všetky typy pokožky"
+      ],
+      "scent": "citrónová tráva a pačuli",
+      "use": "Malé množstvo na pokožku tela po umytí.",
+      "description": "Telový krém z bambuckého masla, kokosového a marhuľového oleja, s koenzýmom Q10.",
+      "sourceUrl": "https://janinekozmetika.sk/produkt/telovy-krem/",
+      "proposedExactVariantUrl": "https://janinekozmetika.sk/produkt/telovy-krem/?attribute_pa_velkost=50-ml",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "inStock": true,
+      "priceSource": "Captured public WooCommerce variation JSON display_price for exact attributes; is_in_stock=true. Waters pack50 additionally in product information table.",
+      "propertiesSource": "https://janinekozmetika.sk/produkt/telovy-krem/",
+      "photoDownloadedAndVisuallyReviewed": false
+    }
+  ],
+  "exclusions": [
+    "CBD eye serum",
+    "gift sets with unspecified contents",
+    "gift vouchers and accessories",
+    "unverified medical/clinical/SPF claims",
+    "unverified shipping"
+  ],
+  "implementationNotes": [
+    "6 distinct core products; do not count 15/30/50 ml variants as distinct formulas.",
+    "Default to standard 50 ml cream/serum. Smaller available cream sizes may go in lower details; no silent mini substitution.",
+    "Use exact query attributes and actual 50 ml photos. Verify every proposed URL before release.",
+    "Source body cream uses 50 ml as its only available pack; no invented larger pack.",
+    "Potential optional water + cream pair: verify core and compatible URLs, don't change careUse to force an upsell. If offered, copy should say cleaning with a cotton pad followed by cream, not falsely imply a rinse cleanser. 4.90+14.30=19.20 EUR, unchecked by default.",
+    "Do not label oil serum as water-based. Do not repeat ingredient-only medicinal claims as product efficacy.",
+    "Existing common scenes include geranium.jpg, honey.jpg, lemongrass.jpg; keep scenes accurate to actual question.",
+    "Download/review assets; offline builder/contract/all routes/3 paths x3 widths/manual screenshots/4 chips/comparison/pending-error-reduced-motion/addon/reset/CTA/follow/backend mocks, then real Preview. None of this implementation QA is completed yet."
+  ],
+  "environment": "Unavailable; source capture-review.json/raw HTML remained in scratch. This file preserves reviewed facts for recovery; it is not a finished runtime catalogue.",
+  "emailDraft": "NOT_READY"
+}
