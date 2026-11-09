@@ -8,4 +8,4 @@ Stavy: rezervované → postavené → otestované → nasadené (doména) | HOL
 | doména | slug | Codex | dátum čas | stav / dôvod |
 |---|---|---|---|---|
 | vaanok.sk | vaanok | séria 4 (Claude) | 2026-11-08 | hotové – nebrať |
-| musiprirodne.sk | musi | S5-SOLO | 2026-11-09T12:03:25.350678+00:00 | reserved – Shopify aktuálne dostupný; Zuzkoris s.r.o. / 54529514; duplicity 90 vetiev: iba historický kandidát; Odoslané PENDING |
+| musiprirodne.sk | musi | S5-SOLO | 2026-11-09T12:03:25.350678+00:00 | HOLD_EXISTING_PRODUCT_CHAT – kontrolór: Storekick, uvítanie výberu produktu, produktové karty, input a Stop generation na https://www.musiprirodne.sk/; nič neodoslané; 2026-11-09
