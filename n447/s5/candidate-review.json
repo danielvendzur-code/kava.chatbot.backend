@@ -1,0 +1,103 @@
+{
+  "checkedAt": "2026-11-09T12:05:27.187321+00:00",
+  "github": {
+    "baseSha": "6568fc1380a3fae796f4413256c4b61fd5647e99",
+    "refsSearched": 90,
+    "patterns": "domain + legal name + IČO where known",
+    "matches": [
+      "s4 historical candidate note",
+      "coord candidate note"
+    ]
+  },
+  "vercel": {
+    "teams": 1,
+    "projects": 1,
+    "project": "prj_wCzamTfbYrn2asWAU0agL3yoF7nD",
+    "domainsReturned": 50,
+    "next": null,
+    "scope": "only connected team/project; NOT a global duplicate check"
+  },
+  "sentMail": {
+    "status": "PENDING_FULL_CONTROLLER",
+    "controllerSnapshot": {
+      "sent": 201,
+      "drafts": 27,
+      "musiprirodneSearchResults": 0
+    },
+    "limits": "domain-only query; operator/contact not fully checked"
+  },
+  "candidates": [
+    {
+      "domain": "musiprirodne.sk",
+      "operator": "Zuzkoris s.r.o.",
+      "ico": "54529514",
+      "status": "HOLD_EXISTING_PRODUCT_CHAT",
+      "evidence": [
+        "https://www.musiprirodne.sk/pages/contact",
+        "https://www.musiprirodne.sk/products.json?limit=250"
+      ],
+      "notes": "Controller independently observed Storekick product chat on home: greeting Vitaj u nás ♥︎ Radi Ti poradíme s výberom vhodného produktu., product cards Levanduvláska and V náruči Jemnosti, input Opýtajte sa čokoľvek…, Stop generation. No message sent. Own navigation check missed widget.",
+      "controllerEvidence": {
+        "url": "https://www.musiprirodne.sk/",
+        "reportedAt": "2026-11-09T12:10:16.603351+00:00",
+        "type": "user/controller browser observation",
+        "independentOfWorker": true
+      }
+    },
+    {
+      "domain": "nutt.cz",
+      "operator": "Patricie Votíková",
+      "status": "researched",
+      "evidence": [
+        "https://www.nutt.cz/",
+        "https://www.nutt.cz/obchodni-podminky"
+      ],
+      "notes": "body butters; no quiz seen on home; IČO and variant prices need verification"
+    },
+    {
+      "domain": "jared.cz",
+      "operator": "Jared Cosmetic s.r.o.",
+      "ico": "05384435",
+      "status": "HOLD",
+      "evidence": [
+        "https://www.jared.cz/"
+      ],
+      "notes": "current menu primarily private-label manufacturing; no suitable active consumer catalogue verified"
+    },
+    {
+      "domain": "pleva.cz",
+      "operator": "Pleva s.r.o.",
+      "ico": "48153061",
+      "status": "candidate",
+      "evidence": [
+        "https://www.pleva.cz/",
+        "https://www.pleva.cz/obchodni-podminky-pleva"
+      ],
+      "notes": "broad catalogue; size/revenue and Rádce require further check; do not assume article is quiz"
+    },
+    {
+      "domain": "liptavia.sk",
+      "status": "HOLD",
+      "evidence": [
+        "https://www.liptavia.sk/"
+      ],
+      "notes": "web retrieval inaccessible, canonical e-shop not confirmed"
+    },
+    {
+      "domain": "amazinc.cz",
+      "status": "HOLD",
+      "evidence": [
+        "https://www.amazinc.cz/"
+      ],
+      "notes": "web retrieval inaccessible, canonical e-shop not confirmed"
+    },
+    {
+      "domain": "flore.cz",
+      "status": "HOLD",
+      "evidence": [
+        "https://www.flore.cz/"
+      ],
+      "notes": "web retrieval inaccessible, canonical e-shop not confirmed"
+    }
+  ]
+}
