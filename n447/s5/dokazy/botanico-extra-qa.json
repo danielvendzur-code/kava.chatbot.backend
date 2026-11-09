@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "paidCalls": 0,
+  "offlineChips": [
+    {
+      "width": 320,
+      "chip": 1,
+      "hrefs": [
+        "https://www.botanico.cz/produkt/denni-krem-s-kozim-mlekem-a-medem-50-g/"
+      ]
+    },
+    {
+      "width": 320,
+      "chip": 2,
+      "hrefs": [
+        "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml/"
+      ]
+    },
+    {
+      "width": 320,
+      "chip": 3,
+      "hrefs": [
+        "https://www.botanico.cz/produkt/pletova-maska-s-kozim-mlekem-a-medem-100-ml/"
+      ]
+    },
+    {
+      "width": 390,
+      "chip": 1,
+      "hrefs": [
+        "https://www.botanico.cz/produkt/denni-krem-s-kozim-mlekem-a-medem-50-g/"
+      ]
+    },
+    {
+      "width": 390,
+      "chip": 2,
+      "hrefs": [
+        "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml/"
+      ]
+    },
+    {
+      "width": 390,
+      "chip": 3,
+      "hrefs": [
+        "https://www.botanico.cz/produkt/pletova-maska-s-kozim-mlekem-a-medem-100-ml/"
+      ]
+    },
+    {
+      "width": 1280,
+      "chip": 1,
+      "hrefs": [
+        "https://www.botanico.cz/produkt/denni-krem-s-kozim-mlekem-a-medem-50-g/"
+      ]
+    },
+    {
+      "width": 1280,
+      "chip": 2,
+      "hrefs": [
+        "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml/"
+      ]
+    },
+    {
+      "width": 1280,
+      "chip": 3,
+      "hrefs": [
+        "https://www.botanico.cz/produkt/pletova-maska-s-kozim-mlekem-a-medem-100-ml/"
+      ]
+    }
+  ],
+  "hover": "no movement; visible color/border change at 320/390/1280",
+  "comparison": "2 distinct products, exact price and size at all widths",
+  "pending": "visible only until mock error response",
+  "reducedMotion": "static indicator",
+  "follow": "once per product",
+  "reset": true,
+  "cta": "same-tab exact product",
+  "addon": "omitted; no compatible cleanser/cream pair"
+}

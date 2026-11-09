@@ -50,3 +50,5 @@ body[data-series=s5][data-cosmetics-demo=capri] #cosmetics-root#cosmetics-root#c
 body[data-series=s5][data-cosmetics-demo=capri] #cx-widget .s3-cmp-photo{overflow:hidden!important}
 body[data-series=s5][data-cosmetics-demo=capri] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s5-product img,
 body[data-series=s5][data-cosmetics-demo=capri] #cx-widget .s3-cmp-photo img{transform:scale(1.4)!important}
+
+body[data-series="s5"][data-cosmetics-demo="botanico"] #cx-widget .cx-widget-brand > img.cx-logo{filter:none!important}

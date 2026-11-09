@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T17:20:45.153880+00:00",
+  "updatedAt": "2026-11-09T17:32:35.595178+00:00",
   "branch": "codex/s5-solo-20261109",
   "codeSha": "d54217a148b3204de27edac05a0debe70e27aa93",
   "firmsByDomain": {
@@ -354,7 +354,7 @@
       "contact": "info@botanico.cz",
       "contactSource": "https://www.botanico.cz/",
       "revenue": "NEOVERENÉ",
-      "status": "reserved",
+      "status": "local_verified",
       "claimSha": "cbdb08ea5dc07fba38798e1111a7da7c464ce634",
       "ownAdvisorCheck": {
         "observed": "Live home and hand cream: no product chat observed, ordinary contact form with CAPTCHA; nothing filled or sent.",
@@ -374,6 +374,67 @@
       "mailDuplicateCheck": "PENDING_CONTROLLER",
       "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
       "emailDraft": "NOT_READY",
+      "production": "NOT_DEPLOYED",
+      "products": 10,
+      "sha": "PENDING_CODE_COMMIT",
+      "localQa": {
+        "leaves": 22,
+        "results": 66,
+        "screens": 111,
+        "widths": [
+          320,
+          390,
+          1280
+        ],
+        "findings": 0,
+        "noimgResults": 22,
+        "noimgScreens": 37,
+        "all10ProductPhotosAt3Widths": true,
+        "mockBackendCalls": 3,
+        "paidCalls": 0,
+        "manualResultScreens": 9,
+        "maxSteps": 5,
+        "addon": "omitted: no compatible cleanser/cream pair"
+      },
+      "sourceNotes": [
+        "Visible retail price including VAT; schema net price excluded.",
+        "9 creams 75 ml, mask 100 ml; current titles/descriptions override historic 50ml URLs.",
+        "Chocolate mask omitted: sensitive attribute conflicts with redness warning.",
+        "Olive night: only dry skin retained; conflicting oily attribute omitted.",
+        "Display names shortened, originalTitle retained."
+      ],
+      "preview": "PENDING_DEPLOYMENT"
+    },
+    "bodybe.cz": {
+      "domain": "bodybe.cz",
+      "status": "HOLD_EXISTING_ADVISOR",
+      "source": "https://www.bodybe.cz/",
+      "evidence": "Current home Smart Beauty Quiz: selects skin/body/hair area and states three questions leading to a recommended routine. Not filled or tested."
+    },
+    "janinekozmetika.sk": {
+      "domain": "janinekozmetika.sk",
+      "slug": "janine",
+      "operator": "Janine, s.r.o.",
+      "ico": "46689605",
+      "operatorSource": "https://janinekozmetika.sk/obchodne-podmienky/",
+      "contact": "janinekozmetika@gmail.com",
+      "contactSource": "https://janinekozmetika.sk/obchodne-podmienky/",
+      "revenue": "NEOVERENÉ",
+      "status": "reserved",
+      "claimSha": "132dc90192c31e0947861397e90ff6724a9af86d",
+      "ownAdvisorCheck": {
+        "observed": "Live home and cream product inspected before reservation. No chat/quiz observed, newsletter and standard variant selector only. No messages/cart action.",
+        "limit": "Other cookie/session modes unproven."
+      },
+      "duplicateCheck": {
+        "refs": 91,
+        "fileMatches": 0,
+        "attachments": "no match",
+        "evidence": "dokazy/janine-duplicates.json"
+      },
+      "emailDraft": "NOT_READY",
+      "mailDuplicateCheck": "PENDING_CONTROLLER",
+      "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
       "production": "NOT_DEPLOYED"
     }
   },

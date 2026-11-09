@@ -184,3 +184,20 @@ Pri opätovnom prečítaní celého záväzného zadania sa zachytila výslovná
 Lokálne WIP dáta/fotografie a testy zachované; 7/7 výsledkov pri troch šírkach a osobitné čipy/porovnanie prešli, ale úplné snímky boli prerušené po odstránení vlastnej runtime registrácie (následný timeout data-open advisor). Žiadny Preview ani piaty hotový kus. V tomto checkpointe sa runtime nemení. Súčet zostáva štyri Preview overené firmy.
 
 Botanico.cz bolo následne rezervované pred kódom: Botanico s.r.o., IČO 04280156, aktuálne oficiálne obchodné podmienky; info@botanico.cz z pätičky, tržby NEOVERENÉ. 91 refs bez domény/IČO/názvu, dodané registre bez zhody, živé home + produkt bez pozorovaného chatu, iba kontaktný formulár s CAPTCHA, nič vyplnené ani odoslané. Iné session/cookie režimy neisté. Doklad botanico-duplicates.json. Rezervačný commit koordinačnej vetvy cbdb08ea5dc07fba38798e1111a7da7c464ce634. Ďalší krok: overiť reprezentatívny kozmetický výber, pričom starý URL parameter 50ml pri kréme nezodpovedá aktuálnemu baleniu 75 ml; rozhoduje aktuálny názov/opis. Všetky emaily NOT_READY, Odoslané/Nepísať a globálny Vercel PENDING.
+
+
+## Botanico – lokálne overené, Preview zatiaľ PENDING
+Botanico s.r.o. / 04280156, kanonická botanico.cz, info@botanico.cz. 10 reprezentatívnych produktov: 6 pleťových krémov, 3 krémy na ruky, 1 maska. Deväť krémov 75 ml a maska 100 ml; staré URL 50ml sa nepoužívajú ako zdroj balenia. Ceny vrátane DPH 96,68 / 99,22 / 198,44 Kč z viditeľnej zákazníckej ceny; JSON-LD má ceny BEZ DPH, nepoužité v odporúčaní. Pôvodné názvy v source.originalTitle, skrátené zobrazované názvy bez zdvojenia balenia/anglického prekladu. Všetky oficiálne fotografie prezreté. Čokoládová maska vynechaná pre rozpor citlivej pleti a upozornenia na začervenanie; mandľový krém pre nejasné zloženie. Nočná oliva iba suchá pleť, nie rozporný mastný atribút. Medicínske tvrdenia a neoverená maloobchodná doprava vynechané.
+
+Offline strom 22 listov/10 dosiahnuteľných produktov. Kompletný test-firm: 66 výsledkov/111 obrazoviek na 320×568,390×800,1280×800, 0 nálezov; bez obrázkov 22 výsledkov/37 obrazoviek, 0. Všetkých 10 konkrétnych výsledkov/fotografií/CTA/reset/follow samostatne pri troch šírkach. 4 čipy 40 px/relevantné karty, porovnanie 2 odlišných produktov s presnou cenou a balením, hover bez posunu, pending/error/reduced-motion, backend 3 mock/0 platených. Doplnok vynechaný, nie je vhodný pár čistenie/krém. Najdlhšia zmysluplná cesta má 5 krokov a vysvetlené maximum. Tri cesty × tri šírky finálne znova zachytené a ručne prezreté po skrátení názvov. 3 oficiálne produkty znovu overené pri odovzdaní. S5-only porovnanie má krátke Porovnání produktů; stará S4 vetva ostáva pôvodná.
+
+Koncept NOT_READY, kontakt info@botanico.cz. Predmet: Průvodce pleťovou péčí pro Botanico
+Dobrý den,
+připravil jsem pro Botanico ukázku průvodce a chatbota pro výběr denního či nočního krému, péče o ruce nebo pleťové masky. Zákazník může také porovnat dva produkty.
+[ŽIVÝ FIREMNÍ ODKAZ až po ověření; Preview není zákaznický odkaz.]
+Nasazení stojí 447 € jednorázově a provoz 10 € měsíčně, bez zkušebního období. Měli byste zájem ukázku projít?
+S pozdravem
+Vendžúr
+https://mojchatbot.sk
+
+Janine, s.r.o. / 46689605 rezervovaná pred kódom koordinačným SHA 132dc90192c31e0947861397e90ff6724a9af86d. Živá home + krém bez pozorovaného poradcu/chatu; iné režimy neisté. 91 refs a prílohy bez zhody. Zdroj OP/contact v status.json. Šesť základných kozmetických produktov má aktuálne varianty; bežný 50 ml krém stojí 14,30 €, konkrétny query attribute_pa_velkost=50-ml bol skutočne otvorený a DOM potvrdil 50 ml/14,30 €, bez košíka. Mini 15 ml/8,20 € je dostupné, ale nebude ticho nahrádzať bežné balenie; prípadne iba v nižšom detaile s presnou cenou. Zatiaľ nejde o hotovú ukážku. BODYBE vyradené pre vlastný Smart Beauty Quiz priamo na aktuálnej home, konkrétny dôkaz v registri.

@@ -1,0 +1,21 @@
+{
+  "paidCalls": 0,
+  "mockAiCalls": 3,
+  "rows": [
+    {
+      "q": "Denní krém s kozím mlékem",
+      "expected": "Denní krém s kozím mlékem",
+      "matched": true
+    },
+    {
+      "q": "Levandulový krém na ruce",
+      "expected": "Krém na ruce Levandule",
+      "matched": true
+    },
+    {
+      "q": "Maska s kozím mlékem a medem",
+      "expected": "Pleťová maska s kozím mlékem",
+      "matched": true
+    }
+  ]
+}

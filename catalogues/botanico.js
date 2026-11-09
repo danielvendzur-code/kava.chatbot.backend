@@ -1,0 +1,661 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.botanico = {
+ "verifiedAt": "2026-11-09T17:23:27.709734+00:00",
+ "source": "https://www.botanico.cz/kategorie-produktu/kosmetika/",
+ "collectionMethod": "Reviewed current official product titles/descriptions, explicit skin facts, visible customer VAT-inclusive prices and schema InStock. Net schema amounts are documented separately.",
+ "excluded": [
+  "chocolate mask: warning of possible redness conflicts with sensitive-skin attribute; do not recommend",
+  "almond hand cream: ingredient list and ingredient attribute unclear",
+  "medical/pain products",
+  "third party wine/food",
+  "unverified minis",
+  "shipping: wholesale free-shipping banner has insufficient retail context"
+ ],
+ "notes": [
+  "Olive night: dry supported by narrative and table; oily table attribute omitted because narrative targets dry.",
+  "No inferred scent, efficacy, SPF or age claims.",
+  "Display names shortened without changing product identity; exact official title retained in source.originalTitle and packEvidence."
+ ],
+ "products": [
+  {
+   "id": "pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da",
+   "name": "Denní pleťový krém – Mrtvé moře",
+   "url": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da/",
+   "priceAmount": 96.68,
+   "price": "96,68 Kč",
+   "currency": "CZK",
+   "volume": "75 ml",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Denní pleťový krém s minerály Mrtvého moře.",
+   "reason": "Denní pleťový krém s minerály Mrtvého moře.",
+   "photo": "/assets/s3/botanico/pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da/",
+    "verifiedAt": "2026-11-09T17:23:27.709734+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "priceEvidence": {
+     "visibleCustomerPrice": "96,68 Kč (vč. DPH)",
+     "schemaPriceExcludesVat": "79.90",
+     "rule": "Use visible retail including VAT, not schema net price."
+    },
+    "photoUrl": "https://www.botanico.cz/wp-content/uploads/2018/04/DSC_0532.jpg",
+    "packEvidence": "Pleťový krém denní hydratační výživný / Complexion day cream 75 ml",
+    "packNote": "Current title/description is authoritative; historical URL contains 50ml.",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "bSea",
+     "time": "day"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da/",
+     "facts": {
+      "kind": "Krémy",
+      "use": "dailyCare",
+      "difference": "bSea",
+      "time": "day",
+      "description": "Denní pleťový krém s minerály Mrtvého moře."
+     }
+    },
+    "allSkinTypes": true,
+    "skinTypesListed": [
+     "všechny typy pokožky"
+    ],
+    "suitabilityEvidence": {
+     "all": {
+      "url": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da/",
+      "text": "typ pleti všechny",
+      "checkedAt": "2026-11-09T17:23:27.709734+00:00"
+     }
+    },
+    "originalTitle": "Pleťový krém denní hydratační výživný / Complexion day cream 75 ml"
+   }
+  },
+  {
+   "id": "pletovy-krem-nocni-omlazovaci-50ml-complexion-cream-night",
+   "name": "Noční pleťový krém – Mrtvé moře",
+   "url": "https://www.botanico.cz/produkt/pletovy-krem-nocni-omlazovaci-50ml-complexion-cream-night/",
+   "priceAmount": 96.68,
+   "price": "96,68 Kč",
+   "currency": "CZK",
+   "volume": "75 ml",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Noční pleťový krém s minerály Mrtvého moře.",
+   "reason": "Noční pleťový krém s minerály Mrtvého moře.",
+   "photo": "/assets/s3/botanico/pletovy-krem-nocni-omlazovaci-50ml-complexion-cream-night.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.botanico.cz/produkt/pletovy-krem-nocni-omlazovaci-50ml-complexion-cream-night/",
+    "verifiedAt": "2026-11-09T17:23:27.709734+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "priceEvidence": {
+     "visibleCustomerPrice": "96,68 Kč (vč. DPH)",
+     "schemaPriceExcludesVat": "79.90",
+     "rule": "Use visible retail including VAT, not schema net price."
+    },
+    "photoUrl": "https://www.botanico.cz/wp-content/uploads/2018/04/90007-1.jpg",
+    "packEvidence": "Pleťový krém noční Mrtvé moře / 75 ml",
+    "packNote": "Current title/description is authoritative; historical URL contains 50ml.",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "bSea",
+     "time": "night"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.botanico.cz/produkt/pletovy-krem-nocni-omlazovaci-50ml-complexion-cream-night/",
+     "facts": {
+      "kind": "Krémy",
+      "use": "dailyCare",
+      "difference": "bSea",
+      "time": "night",
+      "description": "Noční pleťový krém s minerály Mrtvého moře."
+     }
+    },
+    "allSkinTypes": true,
+    "skinTypesListed": [
+     "všechny typy pokožky"
+    ],
+    "suitabilityEvidence": {
+     "all": {
+      "url": "https://www.botanico.cz/produkt/pletovy-krem-nocni-omlazovaci-50ml-complexion-cream-night/",
+      "text": "typ pleti všechny",
+      "checkedAt": "2026-11-09T17:23:27.709734+00:00"
+     }
+    },
+    "originalTitle": "Pleťový krém noční Mrtvé moře / 75 ml"
+   }
+  },
+  {
+   "id": "denni-krem-s-kozim-mlekem-a-medem-50-g",
+   "name": "Denní krém s kozím mlékem a medem",
+   "url": "https://www.botanico.cz/produkt/denni-krem-s-kozim-mlekem-a-medem-50-g/",
+   "priceAmount": 99.22,
+   "price": "99,22 Kč",
+   "currency": "CZK",
+   "volume": "75 ml",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [
+    "oily"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Denní pleťový krém s kozím mlékem a medem.",
+   "reason": "Denní pleťový krém s kozím mlékem a medem.",
+   "photo": "/assets/s3/botanico/denni-krem-s-kozim-mlekem-a-medem-50-g.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.botanico.cz/produkt/denni-krem-s-kozim-mlekem-a-medem-50-g/",
+    "verifiedAt": "2026-11-09T17:23:27.709734+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "priceEvidence": {
+     "visibleCustomerPrice": "99,22 Kč (vč. DPH)",
+     "schemaPriceExcludesVat": "82.00",
+     "rule": "Use visible retail including VAT, not schema net price."
+    },
+    "photoUrl": "https://www.botanico.cz/wp-content/uploads/2018/04/DSC_1844.jpg",
+    "packEvidence": "Denní krém s kozím mlékem a medem / 75 ml",
+    "packNote": "Current title/description is authoritative; historical URL contains 50ml.",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "bMilk",
+     "time": "day"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.botanico.cz/produkt/denni-krem-s-kozim-mlekem-a-medem-50-g/",
+     "facts": {
+      "kind": "Krémy",
+      "use": "dailyCare",
+      "difference": "bMilk",
+      "time": "day",
+      "description": "Denní pleťový krém s kozím mlékem a medem."
+     }
+    },
+    "allSkinTypes": false,
+    "skinTypesListed": [
+     "mastná pokožka"
+    ],
+    "suitabilityEvidence": {
+     "oily": {
+      "url": "https://www.botanico.cz/produkt/denni-krem-s-kozim-mlekem-a-medem-50-g/",
+      "text": "typ pleti mastná pokožka",
+      "checkedAt": "2026-11-09T17:23:27.709734+00:00"
+     }
+    },
+    "originalTitle": "Denní krém s kozím mlékem a medem / 75 ml"
+   }
+  },
+  {
+   "id": "nocni-krem-s-kozim-mlekem-a-medem-50-ml",
+   "name": "Noční krém s kozím mlékem a medem",
+   "url": "https://www.botanico.cz/produkt/nocni-krem-s-kozim-mlekem-a-medem-50-ml/",
+   "priceAmount": 99.22,
+   "price": "99,22 Kč",
+   "currency": "CZK",
+   "volume": "75 ml",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [
+    "sensitive"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Noční pleťový krém s kozím mlékem a medem.",
+   "reason": "Noční pleťový krém s kozím mlékem a medem.",
+   "photo": "/assets/s3/botanico/nocni-krem-s-kozim-mlekem-a-medem-50-ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.botanico.cz/produkt/nocni-krem-s-kozim-mlekem-a-medem-50-ml/",
+    "verifiedAt": "2026-11-09T17:23:27.709734+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "priceEvidence": {
+     "visibleCustomerPrice": "99,22 Kč (vč. DPH)",
+     "schemaPriceExcludesVat": "82.00",
+     "rule": "Use visible retail including VAT, not schema net price."
+    },
+    "photoUrl": "https://www.botanico.cz/wp-content/uploads/2018/04/DSC_1843.jpg",
+    "packEvidence": "Noční krém s kozím mlékem a medem / 75 ml",
+    "packNote": "Current title/description is authoritative; historical URL contains 50ml.",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "bMilk",
+     "time": "night"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.botanico.cz/produkt/nocni-krem-s-kozim-mlekem-a-medem-50-ml/",
+     "facts": {
+      "kind": "Krémy",
+      "use": "dailyCare",
+      "difference": "bMilk",
+      "time": "night",
+      "description": "Noční pleťový krém s kozím mlékem a medem."
+     }
+    },
+    "allSkinTypes": false,
+    "skinTypesListed": [
+     "citlivá pokožka"
+    ],
+    "suitabilityEvidence": {
+     "sensitive": {
+      "url": "https://www.botanico.cz/produkt/nocni-krem-s-kozim-mlekem-a-medem-50-ml/",
+      "text": "typ pleti citlivá pokožka",
+      "checkedAt": "2026-11-09T17:23:27.709734+00:00"
+     }
+    },
+    "originalTitle": "Noční krém s kozím mlékem a medem / 75 ml"
+   }
+  },
+  {
+   "id": "pletovy-krem-denni-hydratacni-vyzivny-oliva-50-ml",
+   "name": "Denní pleťový krém Oliva",
+   "url": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-oliva-50-ml/",
+   "priceAmount": 96.68,
+   "price": "96,68 Kč",
+   "currency": "CZK",
+   "volume": "75 ml",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Denní pleťový krém s olivovým olejem.",
+   "reason": "Denní pleťový krém s olivovým olejem.",
+   "photo": "/assets/s3/botanico/pletovy-krem-denni-hydratacni-vyzivny-oliva-50-ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-oliva-50-ml/",
+    "verifiedAt": "2026-11-09T17:23:27.709734+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "priceEvidence": {
+     "visibleCustomerPrice": "96,68 Kč (vč. DPH)",
+     "schemaPriceExcludesVat": "79.90",
+     "rule": "Use visible retail including VAT, not schema net price."
+    },
+    "photoUrl": "https://www.botanico.cz/wp-content/uploads/2018/04/96107.jpg",
+    "packEvidence": "Pleťový krém denní Oliva / 75 ml",
+    "packNote": "Current title/description is authoritative; historical URL contains 50ml.",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "bOlive",
+     "time": "day"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-oliva-50-ml/",
+     "facts": {
+      "kind": "Krémy",
+      "use": "dailyCare",
+      "difference": "bOlive",
+      "time": "day",
+      "description": "Denní pleťový krém s olivovým olejem."
+     }
+    },
+    "allSkinTypes": true,
+    "skinTypesListed": [
+     "všechny typy pokožky"
+    ],
+    "suitabilityEvidence": {
+     "all": {
+      "url": "https://www.botanico.cz/produkt/pletovy-krem-denni-hydratacni-vyzivny-oliva-50-ml/",
+      "text": "typ pleti všechny",
+      "checkedAt": "2026-11-09T17:23:27.709734+00:00"
+     }
+    },
+    "originalTitle": "Pleťový krém denní Oliva / 75 ml"
+   }
+  },
+  {
+   "id": "pletovy-krem-nocni-omlazujici-oliva-50-ml",
+   "name": "Noční pleťový krém Oliva",
+   "url": "https://www.botanico.cz/produkt/pletovy-krem-nocni-omlazujici-oliva-50-ml/",
+   "priceAmount": 96.68,
+   "price": "96,68 Kč",
+   "currency": "CZK",
+   "volume": "75 ml",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [
+    "dry"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Noční výživný pleťový krém s olivovým olejem.",
+   "reason": "Noční výživný pleťový krém s olivovým olejem.",
+   "photo": "/assets/s3/botanico/pletovy-krem-nocni-omlazujici-oliva-50-ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.botanico.cz/produkt/pletovy-krem-nocni-omlazujici-oliva-50-ml/",
+    "verifiedAt": "2026-11-09T17:23:27.709734+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "priceEvidence": {
+     "visibleCustomerPrice": "96,68 Kč (vč. DPH)",
+     "schemaPriceExcludesVat": "79.90",
+     "rule": "Use visible retail including VAT, not schema net price."
+    },
+    "photoUrl": "https://www.botanico.cz/wp-content/uploads/2018/04/DSC_0518.jpg",
+    "packEvidence": "Pleťový krém noční omlazující oliva 75 ml",
+    "packNote": "Current title/description is authoritative; historical URL contains 50ml.",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "bOlive",
+     "time": "night"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.botanico.cz/produkt/pletovy-krem-nocni-omlazujici-oliva-50-ml/",
+     "facts": {
+      "kind": "Krémy",
+      "use": "dailyCare",
+      "difference": "bOlive",
+      "time": "night",
+      "description": "Noční výživný pleťový krém s olivovým olejem."
+     }
+    },
+    "allSkinTypes": false,
+    "skinTypesListed": [
+     "suchá pleť"
+    ],
+    "suitabilityEvidence": {
+     "dry": {
+      "url": "https://www.botanico.cz/produkt/pletovy-krem-nocni-omlazujici-oliva-50-ml/",
+      "text": "Určen pro suchou pleť.",
+      "checkedAt": "2026-11-09T17:23:27.709734+00:00"
+     }
+    },
+    "originalTitle": "Pleťový krém noční omlazující oliva 75 ml"
+   }
+  },
+  {
+   "id": "krem-na-ruce-vyzivny-50ml-cream-for-hands",
+   "name": "Krém na ruce – Mrtvé moře",
+   "url": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml-cream-for-hands/",
+   "priceAmount": 96.68,
+   "price": "96,68 Kč",
+   "currency": "CZK",
+   "volume": "75 ml",
+   "variantLabel": "",
+   "category": "body",
+   "kind": "Krém na ruce",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Krém na ruce s minerály Mrtvého moře.",
+   "reason": "Krém na ruce s minerály Mrtvého moře.",
+   "photo": "/assets/s3/botanico/krem-na-ruce-vyzivny-50ml-cream-for-hands.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml-cream-for-hands/",
+    "verifiedAt": "2026-11-09T17:23:27.709734+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "priceEvidence": {
+     "visibleCustomerPrice": "96,68 Kč (vč. DPH)",
+     "schemaPriceExcludesVat": "79.90",
+     "rule": "Use visible retail including VAT, not schema net price."
+    },
+    "photoUrl": "https://www.botanico.cz/wp-content/uploads/2018/04/DSC_0535.jpg",
+    "packEvidence": "Krém na ruce výživný se solí Mrtvého moře 75ml / Cream for hands",
+    "packNote": "Current title/description is authoritative; historical URL contains 50ml.",
+    "selectionTraits": {
+     "careUse": "specificArea",
+     "purpose": "handCare",
+     "careVariant": "bSea"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml-cream-for-hands/",
+     "facts": {
+      "kind": "Krém na ruce",
+      "use": "specificArea",
+      "difference": "bSea",
+      "time": null,
+      "description": "Krém na ruce s minerály Mrtvého moře."
+     }
+    },
+    "allSkinTypes": true,
+    "skinTypesListed": [
+     "všechny typy pokožky"
+    ],
+    "suitabilityEvidence": {
+     "all": {
+      "url": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml-cream-for-hands/",
+      "text": "typ pleti všechny",
+      "checkedAt": "2026-11-09T17:23:27.709734+00:00"
+     }
+    },
+    "originalTitle": "Krém na ruce výživný se solí Mrtvého moře 75ml / Cream for hands"
+   }
+  },
+  {
+   "id": "krem-na-ruce-vyzivny-50ml",
+   "name": "Krém na ruce Levandule",
+   "url": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml/",
+   "priceAmount": 96.68,
+   "price": "96,68 Kč",
+   "currency": "CZK",
+   "volume": "75 ml",
+   "variantLabel": "",
+   "category": "body",
+   "kind": "Krém na ruce",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Krém na namáhané ruce s levandulí.",
+   "reason": "Krém na namáhané ruce s levandulí.",
+   "photo": "/assets/s3/botanico/krem-na-ruce-vyzivny-50ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml/",
+    "verifiedAt": "2026-11-09T17:23:27.709734+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "priceEvidence": {
+     "visibleCustomerPrice": "96,68 Kč (vč. DPH)",
+     "schemaPriceExcludesVat": "79.90",
+     "rule": "Use visible retail including VAT, not schema net price."
+    },
+    "photoUrl": "https://www.botanico.cz/wp-content/uploads/2018/04/DSC_0528.jpg",
+    "packEvidence": "Krém na ruce výživný / Levandule 75 ml / Nové ekonomické balení",
+    "packNote": "Current title/description is authoritative; historical URL contains 50ml.",
+    "selectionTraits": {
+     "careUse": "specificArea",
+     "purpose": "handCare",
+     "careVariant": "bLavender"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml/",
+     "facts": {
+      "kind": "Krém na ruce",
+      "use": "specificArea",
+      "difference": "bLavender",
+      "time": null,
+      "description": "Krém na namáhané ruce s levandulí."
+     }
+    },
+    "allSkinTypes": false,
+    "skinTypesListed": [
+     "namáhaná pokožka"
+    ],
+    "suitabilityEvidence": {
+     "listed": {
+      "url": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-50ml/",
+      "text": "typ pleti namáhaná pokožka",
+      "checkedAt": "2026-11-09T17:23:27.709734+00:00"
+     }
+    },
+    "originalTitle": "Krém na ruce výživný / Levandule 75 ml / Nové ekonomické balení"
+   }
+  },
+  {
+   "id": "krem-na-ruce-vyzivny-ruze-50ml",
+   "name": "Krém na ruce Růže",
+   "url": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-ruze-50ml/",
+   "priceAmount": 96.68,
+   "price": "96,68 Kč",
+   "currency": "CZK",
+   "volume": "75 ml",
+   "variantLabel": "",
+   "category": "body",
+   "kind": "Krém na ruce",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Krém na namáhané ruce ve variantě Růže.",
+   "reason": "Krém na namáhané ruce ve variantě Růže.",
+   "photo": "/assets/s3/botanico/krem-na-ruce-vyzivny-ruze-50ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-ruze-50ml/",
+    "verifiedAt": "2026-11-09T17:23:27.709734+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "priceEvidence": {
+     "visibleCustomerPrice": "96,68 Kč (vč. DPH)",
+     "schemaPriceExcludesVat": "79.90",
+     "rule": "Use visible retail including VAT, not schema net price."
+    },
+    "photoUrl": "https://www.botanico.cz/wp-content/uploads/2018/04/96140_RŮŽE_KRÉM-NA-RUCE.jpg",
+    "packEvidence": "Krém na ruce výživný / růže 75 ml",
+    "packNote": "Current title/description is authoritative; historical URL contains 50ml.",
+    "selectionTraits": {
+     "careUse": "specificArea",
+     "purpose": "handCare",
+     "careVariant": "bRose"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-ruze-50ml/",
+     "facts": {
+      "kind": "Krém na ruce",
+      "use": "specificArea",
+      "difference": "bRose",
+      "time": null,
+      "description": "Krém na namáhané ruce ve variantě Růže."
+     }
+    },
+    "allSkinTypes": false,
+    "skinTypesListed": [
+     "namáhaná pokožka"
+    ],
+    "suitabilityEvidence": {
+     "listed": {
+      "url": "https://www.botanico.cz/produkt/krem-na-ruce-vyzivny-ruze-50ml/",
+      "text": "typ pleti namáhaná pokožka",
+      "checkedAt": "2026-11-09T17:23:27.709734+00:00"
+     }
+    },
+    "originalTitle": "Krém na ruce výživný / růže 75 ml"
+   }
+  },
+  {
+   "id": "pletova-maska-s-kozim-mlekem-a-medem-100-ml",
+   "name": "Pleťová maska s kozím mlékem a medem",
+   "url": "https://www.botanico.cz/produkt/pletova-maska-s-kozim-mlekem-a-medem-100-ml/",
+   "priceAmount": 198.44,
+   "price": "198,44 Kč",
+   "currency": "CZK",
+   "volume": "100 ml",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Masky",
+   "tags": [
+    "dry",
+    "sensitive"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Pleťová maska s kozím mlékem a medem, pro doplňkovou péči.",
+   "reason": "Pleťová maska s kozím mlékem a medem, pro doplňkovou péči.",
+   "photo": "/assets/s3/botanico/pletova-maska-s-kozim-mlekem-a-medem-100-ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.botanico.cz/produkt/pletova-maska-s-kozim-mlekem-a-medem-100-ml/",
+    "verifiedAt": "2026-11-09T17:23:27.709734+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "priceEvidence": {
+     "visibleCustomerPrice": "198,44 Kč (vč. DPH)",
+     "schemaPriceExcludesVat": "164.00",
+     "rule": "Use visible retail including VAT, not schema net price."
+    },
+    "photoUrl": "https://www.botanico.cz/wp-content/uploads/2018/04/DSC_1842.jpg",
+    "packEvidence": "Pleťová maska s kozím mlékem a medem / 100 ml",
+    "packNote": "Current title/description is authoritative; historical URL contains 50ml.",
+    "selectionTraits": {
+     "careUse": "occasionalCare",
+     "purpose": "occasionalCare",
+     "careVariant": "bMilk"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.botanico.cz/produkt/pletova-maska-s-kozim-mlekem-a-medem-100-ml/",
+     "facts": {
+      "kind": "Masky",
+      "use": "occasionalCare",
+      "difference": "bMilk",
+      "time": null,
+      "description": "Pleťová maska s kozím mlékem a medem, pro doplňkovou péči."
+     }
+    },
+    "allSkinTypes": true,
+    "skinTypesListed": [
+     "všechny typy pleti, zvláště citlivá a dehydratovaná"
+    ],
+    "suitabilityEvidence": {
+     "dry": {
+      "url": "https://www.botanico.cz/produkt/pletova-maska-s-kozim-mlekem-a-medem-100-ml/",
+      "text": "Vhodná pro všechny typy pleti, zvláště pro citlivou a dehydratovanou.",
+      "checkedAt": "2026-11-09T17:23:27.709734+00:00"
+     },
+     "sensitive": {
+      "url": "https://www.botanico.cz/produkt/pletova-maska-s-kozim-mlekem-a-medem-100-ml/",
+      "text": "Vhodná pro všechny typy pleti, zvláště pro citlivou a dehydratovanou.",
+      "checkedAt": "2026-11-09T17:23:27.709734+00:00"
+     }
+    },
+    "originalTitle": "Pleťová maska s kozím mlékem a medem / 100 ml"
+   }
+  }
+ ]
+};

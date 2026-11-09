@@ -1,0 +1,213 @@
+{
+  "products": 10,
+  "questions": 15,
+  "leaves": 22,
+  "reachable": 10,
+  "paidCalls": 0,
+  "paths": [
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "bOlive",
+        "time": "night"
+      },
+      "id": "pletovy-krem-nocni-omlazujici-oliva-50-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "bOlive",
+        "time": "day"
+      },
+      "id": "pletovy-krem-denni-hydratacni-vyzivny-oliva-50-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "bSea",
+        "time": "day"
+      },
+      "id": "pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "bSea",
+        "time": "night"
+      },
+      "id": "pletovy-krem-nocni-omlazovaci-50ml-complexion-cream-night"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "careVariant": "bMilk"
+      },
+      "id": "denni-krem-s-kozim-mlekem-a-medem-50-g"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "careVariant": "bSea",
+        "time": "day"
+      },
+      "id": "pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "careVariant": "bSea",
+        "time": "night"
+      },
+      "id": "pletovy-krem-nocni-omlazovaci-50ml-complexion-cream-night"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "careVariant": "bOlive"
+      },
+      "id": "pletovy-krem-denni-hydratacni-vyzivny-oliva-50-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "careVariant": "bMilk"
+      },
+      "id": "nocni-krem-s-kozim-mlekem-a-medem-50-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "careVariant": "bSea",
+        "time": "day"
+      },
+      "id": "pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "careVariant": "bSea",
+        "time": "night"
+      },
+      "id": "pletovy-krem-nocni-omlazovaci-50ml-complexion-cream-night"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "careVariant": "bOlive"
+      },
+      "id": "pletovy-krem-denni-hydratacni-vyzivny-oliva-50-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "any",
+        "careVariant": "bSea",
+        "time": "day"
+      },
+      "id": "pletovy-krem-denni-hydratacni-vyzivny-50ml-complexion-cream-da"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "any",
+        "careVariant": "bSea",
+        "time": "night"
+      },
+      "id": "pletovy-krem-nocni-omlazovaci-50ml-complexion-cream-night"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "any",
+        "careVariant": "bMilk",
+        "time": "day"
+      },
+      "id": "denni-krem-s-kozim-mlekem-a-medem-50-g"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "any",
+        "careVariant": "bMilk",
+        "time": "night"
+      },
+      "id": "nocni-krem-s-kozim-mlekem-a-medem-50-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "any",
+        "careVariant": "bOlive",
+        "time": "day"
+      },
+      "id": "pletovy-krem-denni-hydratacni-vyzivny-oliva-50-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "any",
+        "careVariant": "bOlive",
+        "time": "night"
+      },
+      "id": "pletovy-krem-nocni-omlazujici-oliva-50-ml"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "occasionalCare"
+      },
+      "id": "pletova-maska-s-kozim-mlekem-a-medem-100-ml"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careVariant": "bSea"
+      },
+      "id": "krem-na-ruce-vyzivny-50ml-cream-for-hands"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careVariant": "bLavender"
+      },
+      "id": "krem-na-ruce-vyzivny-50ml"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careVariant": "bRose"
+      },
+      "id": "krem-na-ruce-vyzivny-ruze-50ml"
+    }
+  ]
+}

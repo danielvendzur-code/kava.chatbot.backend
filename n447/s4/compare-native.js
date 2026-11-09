@@ -42,7 +42,7 @@
         + '<a class="s3-cmp-go" href="' + esc(p.url) + '">' + esc(T('Zobraziť produkt →', 'Zobrazit produkt →')) + '</a></span>';
     };
     return {role: 'assistant', text: T('Porovnanie: ', 'Porovnání: ') + a.name + ' / ' + b.name,
-      html: '<span class="s3-cmp"><span class="lg-text">' + esc(T('Porovnanie podľa údajov e-shopu:', 'Porovnání podle údajů e-shopu:')) + '</span><span class="s3-cmp-cols">' + col(a) + col(b) + '</span></span>'};
+      html: '<span class="s3-cmp"><span class="lg-text">' + esc(document.body.dataset.series==='s5'?T('Porovnanie produktov:', 'Porovnání produktů:'):T('Porovnanie podľa údajov e-shopu:', 'Porovnání podle údajů e-shopu:')) + '</span><span class="s3-cmp-cols">' + col(a) + col(b) + '</span></span>'};
   }
   const isCmp = (c) => /^porovn/i.test(typeof c === 'object' ? c.label : String(c));
   window.CX_S3_CHIPS = (chips) => chips.map((c) => isCmp(c) ? {label: typeof c === 'object' ? c.label : c, action: 'compare'} : c);
