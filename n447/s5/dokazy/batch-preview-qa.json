@@ -1,0 +1,44 @@
+{
+  "codeSha": "9bb671eb81385353f46c8afb776af37a9203aac8",
+  "deploymentId": "dpl_8uJD1BBJUKRvPi2VFo84LtaxHaiF",
+  "deploymentState": "READY",
+  "checkedAt": "2026-11-09T13:08:40.636786+00:00",
+  "workerOwnCheck": true,
+  "independentApproval": false,
+  "viewport": {
+    "width": 1363,
+    "height": 936
+  },
+  "paidCalls": 0,
+  "chatMessagesSent": 0,
+  "securityBypass": false,
+  "firms": {
+    "nutt": {
+      "url": "https://kava-chatbot-backend-hwlejxu75-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt",
+      "productsVerified": 9,
+      "imageCompleteNaturalWidthPositive": 9,
+      "pricesSizesAndLinksMatchReviewedFacts": true,
+      "formNotesDistinct": true,
+      "paginationAndReset": true,
+      "horizontalOverflow": false
+    },
+    "pleva": {
+      "url": "https://kava-chatbot-backend-hwlejxu75-danielvendzur-codes-projects.vercel.app/s5.html?demo=pleva",
+      "productsVerified": 12,
+      "imageCompleteNaturalWidthPositive": 12,
+      "pricesSizesAndLinksMatchReviewedFacts": true,
+      "creamPaginationAndReset": true,
+      "addon": {
+        "uncheckedDefault": true,
+        "base": 187,
+        "withAddon": 450,
+        "afterUncheck": 187,
+        "currency": "CZK"
+      },
+      "horizontalOverflow": false
+    }
+  },
+  "console": "Captured errors came from chrome-extension metadata sender; no app error observed. This is not a claim about every production runtime path.",
+  "toolIssue": "One reset locator attempted while question was shown; no matching result reset. Used visible header Začít znovu and continued successfully. No app defect inferred.",
+  "scope": "All product results on deployed Preview at actual desktop viewport. Mobile complete tree and mock chat verified locally at 320/390. No paid Preview chat tests."
+}

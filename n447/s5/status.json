@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-09T12:58:37.892213+00:00",
+  "updatedAt": "2026-11-09T13:08:40.636786+00:00",
   "branch": "codex/s5-solo-20261109",
-  "codeSha": "59395937ead6802ca0027182ca144c893cf28a3f",
+  "codeSha": "9bb671eb81385353f46c8afb776af37a9203aac8",
   "firmsByDomain": {
     "musiprirodne.sk": {
       "domain": "musiprirodne.sk",
@@ -51,16 +51,16 @@
       },
       "production": "NOT_DEPLOYED",
       "emailDraft": "NOT_READY",
-      "sha": "59395937ead6802ca0027182ca144c893cf28a3f",
+      "sha": "9bb671eb81385353f46c8afb776af37a9203aac8",
       "preview": {
-        "url": "https://kava-chatbot-backend-lxcg94i9a-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt",
-        "deploymentId": "dpl_A8XfYhDqLkTrDT1pzQFUcjreQqru",
-        "checkedAt": "2026-11-09T12:47:19.437183+00:00",
+        "url": "https://kava-chatbot-backend-hwlejxu75-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt",
+        "deploymentId": "dpl_8uJD1BBJUKRvPi2VFo84LtaxHaiF",
+        "checkedAt": "2026-11-09T13:08:40.636786+00:00",
+        "workerPathsVerified": 9,
         "viewport": {
           "width": 1363,
           "height": 936
         },
-        "workerPathsVerified": 9,
         "modelRequests": 0
       }
     },
@@ -78,7 +78,7 @@
       "domain": "pleva.cz",
       "operator": "Pleva s.r.o.",
       "ico": "48153061",
-      "status": "tested_local_preview_pending",
+      "status": "preview_verified",
       "evidence": [
         "https://www.pleva.cz/",
         "https://www.pleva.cz/s/conditions",
@@ -93,7 +93,19 @@
       "emailDraft": "NOT_READY",
       "production": "NOT_DEPLOYED",
       "controllerReview": "PENDING",
-      "mailDuplicateCheck": "PENDING_CONTROLLER"
+      "mailDuplicateCheck": "PENDING_CONTROLLER",
+      "sha": "9bb671eb81385353f46c8afb776af37a9203aac8",
+      "preview": {
+        "url": "https://kava-chatbot-backend-hwlejxu75-danielvendzur-codes-projects.vercel.app/s5.html?demo=pleva",
+        "deploymentId": "dpl_8uJD1BBJUKRvPi2VFo84LtaxHaiF",
+        "checkedAt": "2026-11-09T13:08:40.636786+00:00",
+        "workerPathsVerified": 12,
+        "viewport": {
+          "width": 1363,
+          "height": 936
+        },
+        "modelRequests": 0
+      }
     },
     "liptavia.sk": {
       "domain": "liptavia.sk",

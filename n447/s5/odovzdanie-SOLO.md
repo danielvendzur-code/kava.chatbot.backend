@@ -61,7 +61,7 @@ Pracovník prešiel **všetkých 9 výsledkov**, vrátane stránkovania 7 kelím
 Rezervované pred kódom v `coord/s5-claims`, SHA `e493750bcc8863af7d21d88a0096b77d28e25c17`. Pleva s.r.o., IČO 48153061 potvrdené z aktuálnych `/s/conditions`; kontakt obchod@pleva.cz z pätičky. Živý SupportBox otvorený pred rezerváciou: „Momentálně tu nejsme“, pracovníčky Zuzána, Lucie, Markéta a kontaktný formulár. Bez správy. `/advisor` sú články, konkrétny sprievodca typmi pleti je statický publikovaný článok; netvrdíme, že to vylučuje každý iný režim webu. Zdrojové dáta 14 pleťových produktov (cena/variant/hmotnosť/sklad/fotka/typ pleti) už zozbierané; nie je to hotová ukážka.
 
 
-## Pleva – lokálne QA dokončené, Preview sa pripravuje
+## Pleva – lokálne aj vlastné Preview QA dokončené
 12 overených dostupných produktov, samostatné cesty pre krémy, čistenie, masky/peeling a očné okolie. Nie je to celý obchod. Dve zachytené odličovacie mlieka sú zámerne mimo reprezentatívneho výberu. Výrobca výslovne nazýva Elixír mládí krémom; automaticky sa nemení na sérum.
 
 Zdroje: `sources/pleva/verified-products.json`, aktuálne oficiálne produktové stránky s cenou/variantom/hmotnosťou, explicitnými typmi pleti, fotkou, skladom a časom. Tržby NEOVERENÉ. Doprava podľa https://www.pleva.cz/doprava-a-platba iba pre ČR, koncového zákazníka, striktne nad 2 300 Kč; príplatky zvlášť. Žiadny vymyslený údaj o doprave ani záruka účinkov.
@@ -87,3 +87,13 @@ Vendžúr
 https://mojchatbot.sk
 
 Nic odesláno ani naplánováno. Finální schválení majitele chybí.
+
+
+## Dávka – aktuálny overený Preview checkpoint
+Kód **9bb671eb81385353f46c8afb776af37a9203aac8**, READY **dpl_8uJD1BBJUKRvPi2VFo84LtaxHaiF**.
+NUTT: https://kava-chatbot-backend-hwlejxu75-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt
+Pleva: https://kava-chatbot-backend-hwlejxu75-danielvendzur-codes-projects.vercel.app/s5.html?demo=pleva
+
+Vlastné živé QA na tomto SHA: **9/9 NUTT + 12/12 Pleva** výsledkov, správne ceny/balenia/produktové odkazy, všetky fotografie complete/naturalWidth > 0, stránkovanie a reset, bez horizontálneho overflow pri skutočnom viewport 1363×936. Pleva: doplnok predvolene vypnutý, 187 → 450 → 187 Kč. Žiadny platený chat test. Mobilné úplné stromy a mock chat sú overené lokálne na 320/390, nie vydávané za živé mobilné QA. Zachytené chyby rozšírenia chrome-extension nie sú chyby aplikácie. Doklad `dokazy/batch-preview-qa.json`.
+
+Nie je to schválenie majiteľom/kontrolórom ani produkcia. Obe firmy email NOT_READY; žiadna správa odoslaná alebo naplánovaná. Doteraz sú pripravené 2 nové ukážky, cieľ 20 denne nie je splnený. Ďalší výber musí znovu prejsť živými widgetmi, doménou aj prevádzkovateľom pred rezerváciou.
