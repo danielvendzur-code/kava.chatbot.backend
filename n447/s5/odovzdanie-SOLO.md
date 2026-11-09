@@ -1,4 +1,6 @@
-# S5-SOLO – dávka NUTT + Pleva na kontrolu
+# S5-SOLO – NUTT, Pleva a JAGAIA na kontrolu
+
+Aktuálne sú pripravené **3 nové ukážky na vlastne overenom Preview**, nie 20. Produkcia, kontrola pošty a schválenie majiteľa sú otvorené; všetky koncepty NOT_READY. Presné SHA/deployment a rozsah QA sú pri každej firme nižšie.
 
 Pracovná vetva `codex/s5-solo-20261109`; východisko `6568fc1380a3fae796f4413256c4b61fd5647e99`. Predchádzajúci vzdialený checkpoint `e8556dd6bd7349fc973a3ea35b323681d35196a6`. Pracuje jeden worker, bez subagentov. Bežný git push nemá credential; zápisy cez GitHub konektor, bez force, main/master a PR.
 
@@ -58,7 +60,7 @@ https://kava-chatbot-backend-lxcg94i9a-danielvendzur-codes-projects.vercel.app/s
 Pracovník prešiel **všetkých 9 výsledkov**, vrátane stránkovania 7 kelímkov, 2 tuhých masiel a resetu. Overené ceny, produktové odkazy, načítané fotografie a nulový horizontálny overflow pri skutočnom viewport 1363×936. Obidva rozdielne opisy prvého kroku viditeľné. Doklad `dokazy/nutt-preview-qa.json`. Skoré kontroly obrázkov zachytili ešte prebiehajúce načítanie; následne všetky 9 fotografie potvrdené complete/naturalWidth > 0. Nástrojový DOM wrapper nemá metódu img.decode, preto sa načítanie overilo pozorovaním skutočnej snímky a DOM rozmerov. V zachytenom logu boli chyby rozšírenia chrome-extension pri posielaní metadát; žiadnu z nich neoznačujeme ako chybu aplikácie. Žiadna správa v Preview chate, 0 platených volaní, žiadny bypass. Nezávislý kontrolór overil zatiaľ iba svoju jednu cestu staršieho SHA. Produkcia a e-mail naďalej NOT_READY.
 
 ## Ďalšia firma – Pleva, reálna práca začatá
-Rezervované pred kódom v `coord/s5-claims`, SHA `e493750bcc8863af7d21d88a0096b77d28e25c17`. Pleva s.r.o., IČO 48153061 potvrdené z aktuálnych `/s/conditions`; kontakt obchod@pleva.cz z pätičky. Živý SupportBox otvorený pred rezerváciou: „Momentálně tu nejsme“, pracovníčky Zuzána, Lucie, Markéta a kontaktný formulár. Bez správy. `/advisor` sú články, konkrétny sprievodca typmi pleti je statický publikovaný článok; netvrdíme, že to vylučuje každý iný režim webu. Zdrojové dáta 14 pleťových produktov (cena/variant/hmotnosť/sklad/fotka/typ pleti) už zozbierané; nie je to hotová ukážka.
+Rezervované pred kódom v `coord/s5-claims`, SHA `e493750bcc8863af7d21d88a0096b77d28e25c17`. Pleva s.r.o., IČO 48153061 potvrdené z aktuálnych `/s/conditions`; kontakt obchod@pleva.cz z pätičky. Živý SupportBox otvorený pred rezerváciou: „Momentálně tu nejsme“, pracovníčky Zuzána, Lucie, Markéta a kontaktný formulár. Bez správy. `/advisor` sú články, konkrétny sprievodca typmi pleti je statický publikovaný článok; netvrdíme, že to vylučuje každý iný režim webu. Zdrojové dáta 14 pleťových produktov zozbierané; do hotovej ukážky vybratých 12, QA a Preview nižšie.
 
 
 ## Pleva – lokálne aj vlastné Preview QA dokončené
@@ -122,3 +124,9 @@ Vendžúr
 https://mojchatbot.sk
 
 Neodesláno a nenaplánováno; produkce, pošta a schválení PENDING.
+
+
+## JAGAIA – Preview overený
+Kód **fa37d0d6c9cb7c3f6d42841eac4cc0ce0baf6495**, READY **dpl_HxLY8ZJzNuL71TCDqyNvYYDxwnab**.
+https://kava-chatbot-backend-pagjqfnko-danielvendzur-codes-projects.vercel.app/s5.html?demo=jagaia
+Všetkých 8/8 výsledkov pracovník skutočne prešiel na tomto deployment, vrátane správnych cien/balení/produktových URL, fotografií complete/naturalWidth > 0, resetu a bez horizontálneho overflow pri viewport 1363×936. `dokazy/jagaia-preview-qa.json`. Žiadna Preview chat správa, 0 platených volaní, bez prihlásenia/bypassu. Log chyby rozšírenia chrome-extension sa neprezentujú ako chyba aplikácie; vlastné overenie nie je nezávislé schválenie. Celá mobilná QA zostáva označená lokálne/mock.

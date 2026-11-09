@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-09T13:21:15.003397+00:00",
+  "updatedAt": "2026-11-09T13:28:28.469263+00:00",
   "branch": "codex/s5-solo-20261109",
-  "codeSha": "9bb671eb81385353f46c8afb776af37a9203aac8",
+  "codeSha": "fa37d0d6c9cb7c3f6d42841eac4cc0ce0baf6495",
   "firmsByDomain": {
     "musiprirodne.sk": {
       "domain": "musiprirodne.sk",
@@ -158,7 +158,7 @@
       "contact": "info@jagaia.cz",
       "contactSource": "https://www.jagaia.cz/obchodni-podminky/",
       "revenue": "NEOVERENÉ",
-      "status": "local_verified",
+      "status": "preview_verified",
       "products": 8,
       "claimSha": "7a493ed37967223d350a9a0fb6cd10dc8746fb76",
       "production": "NOT_DEPLOYED",
@@ -192,6 +192,18 @@
         ],
         "findings": 0,
         "paidCalls": 0
+      },
+      "sha": "fa37d0d6c9cb7c3f6d42841eac4cc0ce0baf6495",
+      "preview": {
+        "url": "https://kava-chatbot-backend-pagjqfnko-danielvendzur-codes-projects.vercel.app/s5.html?demo=jagaia",
+        "deploymentId": "dpl_HxLY8ZJzNuL71TCDqyNvYYDxwnab",
+        "checkedAt": "2026-11-09T13:28:28.469263+00:00",
+        "workerPathsVerified": 8,
+        "viewport": {
+          "width": 1363,
+          "height": 936
+        },
+        "modelRequests": 0
       }
     },
     "lobey.cz": {

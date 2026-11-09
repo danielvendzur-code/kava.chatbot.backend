@@ -1,20 +1,20 @@
 {
-  "mockAiCalls": 3,
   "paidCalls": 0,
+  "mockAiCalls": 3,
   "rows": [
     {
       "q": "Oplachový čisticí gel",
-      "id": "BREATHE IN",
+      "expected": "BREATHE IN",
       "matched": true
     },
     {
       "q": "Sérum s kyselinou hyaluronovou",
-      "id": "ROSA",
+      "expected": "ROSA",
       "matched": true
     },
     {
       "q": "Olej s plátky chrpy",
-      "id": "LUMINA",
+      "expected": "LUMINA",
       "matched": true
     }
   ]
