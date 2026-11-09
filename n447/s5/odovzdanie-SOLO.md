@@ -1,6 +1,6 @@
-# S5-SOLO – NUTT, Pleva a JAGAIA na kontrolu
+# S5-SOLO – NUTT, Pleva, JAGAIA a Capri na kontrolu
 
-Aktuálne sú pripravené **3 nové ukážky na vlastne overenom Preview**, nie 20. Produkcia, kontrola pošty a schválenie majiteľa sú otvorené; všetky koncepty NOT_READY. Presné SHA/deployment a rozsah QA sú pri každej firme nižšie.
+Aktuálne sú pripravené **4 nové ukážky na vlastne overenom Preview**, nie 20. Produkcia, kontrola pošty a schválenie majiteľa sú otvorené; všetky koncepty NOT_READY. Presné SHA/deployment a rozsah QA sú pri každej firme nižšie.
 
 Pracovná vetva `codex/s5-solo-20261109`; východisko `6568fc1380a3fae796f4413256c4b61fd5647e99`. Predchádzajúci vzdialený checkpoint `e8556dd6bd7349fc973a3ea35b323681d35196a6`. Pracuje jeden worker, bez subagentov. Bežný git push nemá credential; zápisy cez GitHub konektor, bez force, main/master a PR.
 
@@ -166,3 +166,13 @@ Nic odesláno ani naplánováno. Produkce, pošta a schválení PENDING.
 AROMATICA CZ s.r.o. / 26963523, aktuálne čerstvo načítané OP https://www.aromatica.cz/obchodni-podminky/ . eshop@aromatica.cz zo živej pätičky; tržby NEOVERENÉ. Rezervácia SHA d3b1d69999a0ccf2006bfd7abee3d355f5228f87 pred kódom. 91 vzdialených refs bez domény/IČO, prílohy bez zhody. Živá home a Ectoin produkt bez pozorovaného chatu; produktové ZEPTAT SE otvorí obyčajný Dotaz na prodejce (e-mail/telefón/správa/CAPTCHA), nič vyplnené. Dotazník je podľa vlastnej vstupnej stránky marketingový prieskum preferencií so zľavou; Google Forms neotvorený/nevyplnený. Pozorovaný stav nie je dôkaz všetkých cookie/session režimov. Prednosť dostane bežná kozmetika, nie zdravotné tvrdenia doplnkov stravy. Najprv dokončiť Capri Preview.
 
 Botanica Slavica je HOLD_DUPLICATE_OPERATOR_AND_DOMAIN: historická botanica má priamo botanicaslavica.eu; aktuálny prevádzkovateľ je Soaphoria.sk s. r. o. / 56351747 a Soaphoria je tiež existujúca firma. Nenahrádzať to novým slugom. Botanico.cz má zatiaľ iba doménovú kontrolu; prevádzkovateľ a živé widgety sa musia doplniť pred prípadnou rezerváciou.
+
+
+## Capri – vlastné Preview QA dokončené
+Overený kód **d54217a148b3204de27edac05a0debe70e27aa93**, READY **dpl_FJXnRVWyra3vE2JyPr4vrVdCf2FC**.
+https://kava-chatbot-backend-1s9a0b997-danielvendzur-codes-projects.vercel.app/s5.html?demo=capri
+Pracovník skutočne prešiel všetkých 9/9 výsledkov na tomto deployment: 5 krémov, 2 masky, 2 čistiace formy. Ceny, balenia a produktové href zodpovedajú overeným dátam. Všetkých 9 fotografií potvrdených complete/naturalWidth=900; pôvodne pending obrázky boli samostatne znovu otvorené a skontrolované až po načítaní. Doplnok predvolene nezaškrtnutý, 385 → 881 → 385 Kč. Reset, bez horizontálneho overflow pri skutočnom viewport 1363×936. capri-preview-qa.json.
+
+Úvodné networkidle čakanie skončilo timeoutom počas bootu; neskôr skutočný DOM potvrdil html lang=cs a českú celú stránku. Zachytené chyby rozšírenia chrome-extension nie sú označované ako chyby aplikácie; žiadna aplikácie nebola pozorovaná v zachytených logoch. Žiadny platený chat test, bez prihlasovania/bypassu. Mobilné úplné QA zostáva lokálne/mock. Nie je to nezávislé schválenie ani produkcia.
+
+Nové subdomény iba ako návrh na schválenie: nutt.mojchatbot.sk, pleva.mojchatbot.sk, jagaia.mojchatbot.sk, capri.mojchatbot.sk. Žiadne DNS/produkčné aliasy priradené. Ďalší krok: Aromatica je už bezpečne rezervovaná; spracovať iba overenú bežnú kozmetiku a zopakovať plné QA.

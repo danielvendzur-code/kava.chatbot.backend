@@ -1,0 +1,68 @@
+{
+  "sha": "d54217a148b3204de27edac05a0debe70e27aa93",
+  "deploymentId": "dpl_FJXnRVWyra3vE2JyPr4vrVdCf2FC",
+  "url": "https://kava-chatbot-backend-1s9a0b997-danielvendzur-codes-projects.vercel.app/s5.html?demo=capri",
+  "state": "READY",
+  "checkedAt": "2026-11-09T17:08:03.919824+00:00",
+  "workerOwnCheck": true,
+  "independentApproval": false,
+  "resultsVerified": 9,
+  "imageChecks": {
+    "milkDay": {
+      "complete": true,
+      "naturalWidth": 900
+    },
+    "milkNight": {
+      "complete": true,
+      "naturalWidth": 900
+    },
+    "roseDay": {
+      "complete": true,
+      "naturalWidth": 900
+    },
+    "roseNight": {
+      "complete": true,
+      "naturalWidth": 900
+    },
+    "curdDay": {
+      "complete": true,
+      "naturalWidth": 900
+    },
+    "creamMask": {
+      "complete": true,
+      "naturalWidth": 900
+    },
+    "sheetMask": {
+      "complete": true,
+      "naturalWidth": 900
+    },
+    "foam": {
+      "complete": true,
+      "naturalWidth": 900
+    },
+    "water": {
+      "complete": true,
+      "naturalWidth": 900
+    }
+  },
+  "pricesSizesAndHrefsMatchReviewedFacts": true,
+  "addon": {
+    "defaultChecked": false,
+    "base": 385,
+    "checked": 881,
+    "unchecked": 385,
+    "currency": "CZK"
+  },
+  "reset": true,
+  "horizontalOverflow": false,
+  "viewport": {
+    "width": 1363,
+    "height": 936
+  },
+  "paidCalls": 0,
+  "previewChatMessagesSent": 0,
+  "securityBypass": false,
+  "console": "Captured errors were chrome-extension browser metadata sender; no application error observed in captured logs.",
+  "loadingScope": "Initial networkidle wait timed out while boot was still loading; initial Slovak shell later fully translated, html lang cs and Czech heading confirmed. Fast result traversal observed pending images; results were revisited and each actual complete/naturalWidth>0 confirmed separately. No pending photo was counted as a passed load.",
+  "scope": "Deployed desktop Preview all 9 products. Full mobile trees/chips/comparison/pending/error/reduced motion verified locally offline/mock at 320/390, not represented as live mobile or production model tests."
+}
