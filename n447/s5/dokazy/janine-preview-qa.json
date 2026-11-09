@@ -1,0 +1,97 @@
+{
+  "checkedAt": "2026-11-09T21:44:26.104414+00:00",
+  "sha": "4359f12f994aa6d864f8bef2d22deaf9537b1719",
+  "deploymentId": "dpl_4d7i7iXYPj8LTLQvnWVMU4dbqCQZ",
+  "url": "https://kava-chatbot-backend-12c7fw998-danielvendzur-codes-projects.vercel.app/s5.html?demo=janine",
+  "method": "Worker CUA live UI: traversed6distinctresults; read text/hrefs, confirmed each image complete/naturalWidth600 before reset.",
+  "rows": [
+    {
+      "id": "pletovy-krem",
+      "name": "Pleťový krém Slamienka Kyselina ferulová",
+      "price": "14,30 €",
+      "volume": "50 ml",
+      "href": "https://janinekozmetika.sk/produkt/pletovy-krem/?attribute_pa_velkost=50-ml",
+      "target": null,
+      "imageComplete": true,
+      "imageNaturalWidth": 600
+    },
+    {
+      "id": "pletove-serum",
+      "name": "Pleťové sérum",
+      "price": "14,30 €",
+      "volume": "50 ml",
+      "href": "https://janinekozmetika.sk/produkt/pletove-serum/?attribute_pa_velkost=50-ml&attribute_pa_uzaver=davkovac",
+      "target": null,
+      "imageComplete": true,
+      "imageNaturalWidth": 600
+    },
+    {
+      "id": "kvetova-voda-hamamel",
+      "name": "Kvetová voda Hamamel",
+      "price": "4,90 €",
+      "volume": "50 ml",
+      "href": "https://janinekozmetika.sk/produkt/kvetova-voda-hamamel/?attribute_pa_uzaver=rozprasovac",
+      "target": null,
+      "imageComplete": true,
+      "imageNaturalWidth": 600
+    },
+    {
+      "id": "kvetova-voda-geranium",
+      "name": "Kvetová voda Geranium",
+      "price": "4,90 €",
+      "volume": "50 ml",
+      "href": "https://janinekozmetika.sk/produkt/kvetova-voda-geranium/?attribute_pa_uzaver=rozprasovac",
+      "target": null,
+      "imageComplete": true,
+      "imageNaturalWidth": 600
+    },
+    {
+      "id": "kvetova-voda-slamienka",
+      "name": "Kvetová voda Slamienka",
+      "price": "4,90 €",
+      "volume": "50 ml",
+      "href": "https://janinekozmetika.sk/produkt/kvetova-voda-slamienka/?attribute_pa_uzaver=rozprasovac",
+      "target": null,
+      "imageComplete": true,
+      "imageNaturalWidth": 600
+    },
+    {
+      "id": "telovy-krem",
+      "name": "Telový krém Koenzým Q10",
+      "price": "10,60 €",
+      "volume": "50 ml",
+      "href": "https://janinekozmetika.sk/produkt/telovy-krem/?attribute_pa_velkost=50-ml",
+      "target": null,
+      "imageComplete": true,
+      "imageNaturalWidth": 600
+    }
+  ],
+  "viewport": {
+    "width": 1363,
+    "height": 936
+  },
+  "lang": "sk",
+  "horizontalOverflow": false,
+  "intro": "Pleť a telo · typ starostlivosti · vôňa",
+  "reset": [
+    "Pleť5 produktov",
+    "Telo1 produkt"
+  ],
+  "miniDetails": [
+    {
+      "label": "15 ml",
+      "price": 8.2,
+      "url": "https://janinekozmetika.sk/produkt/pletovy-krem/?attribute_pa_velkost=15-ml",
+      "target": null
+    },
+    {
+      "label": "30 ml",
+      "price": 10.9,
+      "url": "https://janinekozmetika.sk/produkt/pletovy-krem/?attribute_pa_velkost=30-ml",
+      "target": null
+    }
+  ],
+  "paidCalls": 0,
+  "console": "Only chrome-extension metadata sender errors in captured sample; no app error observed in sample.",
+  "limits": "Worker QA, not controller/owner approval; full mobile QA local/mock, no model answers tested or production."
+}

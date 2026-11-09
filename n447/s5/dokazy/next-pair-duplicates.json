@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-09T21:38:29.817759+00:00",
+  "firms": {
+    "aromedica": {
+      "patterns": [
+        "aromedica.cz",
+        "25126059",
+        "Aromedica s.r.o."
+      ],
+      "refs": 91,
+      "matches": [
+        "refs/remotes/origin/claude/n447-s3a-20261105:n447/s3/kandidati.md",
+        "refs/remotes/origin/claude/n447-s4-20261107:n447/s3/kandidati.md",
+        "refs/remotes/origin/claude/n447-seria3-20261105:n447/s3/kandidati.md",
+        "refs/remotes/origin/codex/s5-solo-20261109:n447/s3/kandidati.md"
+      ]
+    },
+    "eone": {
+      "patterns": [
+        "eone.cz",
+        "Eoné kosmetika",
+        "Eone kosmetika"
+      ],
+      "refs": 91,
+      "matches": []
+    }
+  }
+}

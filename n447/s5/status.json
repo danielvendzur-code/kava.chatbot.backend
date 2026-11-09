@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-09T19:09:29.178421+00:00",
+  "updatedAt": "2026-11-09T21:44:26.104414+00:00",
   "branch": "codex/s5-solo-20261109",
-  "codeSha": "da47ce26de45c59f03b2a96bfc0cfa82e5bba4ff",
+  "codeSha": "4359f12f994aa6d864f8bef2d22deaf9537b1719",
   "firmsByDomain": {
     "musiprirodne.sk": {
       "domain": "musiprirodne.sk",
@@ -433,7 +433,7 @@
       "contact": "janinekozmetika@gmail.com",
       "contactSource": "https://janinekozmetika.sk/obchodne-podmienky/",
       "revenue": "NEOVERENÉ",
-      "status": "local_verified",
+      "status": "preview_verified",
       "claimSha": "132dc90192c31e0947861397e90ff6724a9af86d",
       "ownAdvisorCheck": {
         "observed": "Live home and cream product inspected before reservation. No chat/quiz observed, newsletter and standard variant selector only. No messages/cart action.",
@@ -451,7 +451,7 @@
       "production": "NOT_DEPLOYED",
       "sourceCheckpoint": "sources/janine/research-checkpoint.json",
       "products": 6,
-      "sha": "PENDING_CODE_COMMIT",
+      "sha": "4359f12f994aa6d864f8bef2d22deaf9537b1719",
       "source": "sources/janine/verified-products.json",
       "miniPacks": {
         "mainCream": {
@@ -492,7 +492,19 @@
         "miniExactSameTabUrls": true,
         "introMatchesActualQuestions": true
       },
-      "preview": "PENDING_CODE_DEPLOYMENT",
+      "preview": {
+        "url": "https://kava-chatbot-backend-12c7fw998-danielvendzur-codes-projects.vercel.app/s5.html?demo=janine",
+        "deploymentId": "dpl_4d7i7iXYPj8LTLQvnWVMU4dbqCQZ",
+        "checkedAt": "2026-11-09T21:44:26.104414+00:00",
+        "workerPathsVerified": 6,
+        "imagesCompleteNaturalWidthPositive": 6,
+        "viewport": {
+          "width": 1363,
+          "height": 936
+        },
+        "modelRequests": 0,
+        "miniExactUrlsVerified": true
+      },
       "coverageEvidence": "dokazy/janine-needs-coverage.json"
     }
   },
@@ -513,5 +525,15 @@
       "s5-next"
     ],
     "nextStep": "Implement reserved Janine from preserved current sources. No HOLD firms resumed."
+  },
+  "autonomousBacklog": {
+    "source": "BACKLOG-DLHODOBE-20261109.md",
+    "minimumMilestone": 20,
+    "nextMilestone": 40,
+    "stopAtMilestone": false,
+    "previewVerifiedCount": 6,
+    "oneWorker": true,
+    "emailSendingForbidden": true,
+    "productionForbidden": true
   }
 }
