@@ -1,0 +1,192 @@
+{
+  "products": 12,
+  "questions": 9,
+  "leaves": 21,
+  "reachable": 12,
+  "paidCalls": 0,
+  "paths": [
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "pNutrition"
+      },
+      "id": "vyzivny-krem-s-materi-kasickou-4v1-pleva"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "pDay"
+      },
+      "id": "pletovy-krem-s-medem-denni"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "pNight"
+      },
+      "id": "pletovy-krem-s-medem-nocni"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "pFirstLines"
+      },
+      "id": "pletovy-krem-s-materi-kasickou"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "pMature30"
+      },
+      "id": "pletovy-krem-proti-vraskam"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "pYoung"
+      },
+      "id": "pohodovy-krem-pro-pohodovou-mladou-plet"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "pMature45"
+      },
+      "id": "elixir-mladi-s-materi-kasickou"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "careVariant": "pNutrition"
+      },
+      "id": "vyzivny-krem-s-materi-kasickou-4v1-pleva"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "careVariant": "pMature30"
+      },
+      "id": "pletovy-krem-proti-vraskam"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "careVariant": "pYoung"
+      },
+      "id": "pohodovy-krem-pro-pohodovou-mladou-plet"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "careVariant": "pMature45"
+      },
+      "id": "elixir-mladi-s-materi-kasickou"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "careVariant": "pNutrition"
+      },
+      "id": "vyzivny-krem-s-materi-kasickou-4v1-pleva"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "careVariant": "pYoung"
+      },
+      "id": "pohodovy-krem-pro-pohodovou-mladou-plet"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "profile": "sensitive",
+        "careVariant": "pMature45"
+      },
+      "id": "elixir-mladi-s-materi-kasickou"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "cleansingCare"
+      },
+      "id": "pletovy-cistici-gel-s-medem-a-propolisem"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "occasionalCare",
+        "profile": "dry",
+        "kind": "Masky"
+      },
+      "id": "pletova-maska-se-vcelimi-produkty-pleva"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "occasionalCare",
+        "profile": "dry",
+        "kind": "Peelingy"
+      },
+      "id": "vitaminovy-enzymaticky-peeling-na-plet"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "occasionalCare",
+        "profile": "oily",
+        "kind": "Masky"
+      },
+      "id": "cistici-a-regeneracni-pletova-maska-s-medem-propolisem-a-ruzovym-jilem"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "occasionalCare",
+        "profile": "oily",
+        "kind": "Peelingy"
+      },
+      "id": "vitaminovy-enzymaticky-peeling-na-plet"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "occasionalCare",
+        "profile": "sensitive"
+      },
+      "id": "vitaminovy-enzymaticky-peeling-na-plet"
+    },
+    {
+      "answers": {
+        "category": "eyes"
+      },
+      "id": "medovy-ocni-krem"
+    }
+  ]
+}

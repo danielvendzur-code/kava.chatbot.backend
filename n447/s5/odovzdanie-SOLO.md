@@ -1,4 +1,4 @@
-# S5-SOLO – prvá nová ukážka na kontrolu
+# S5-SOLO – dávka NUTT + Pleva na kontrolu
 
 Pracovná vetva `codex/s5-solo-20261109`; východisko `6568fc1380a3fae796f4413256c4b61fd5647e99`. Predchádzajúci vzdialený checkpoint `e8556dd6bd7349fc973a3ea35b323681d35196a6`. Pracuje jeden worker, bez subagentov. Bežný git push nemá credential; zápisy cez GitHub konektor, bez force, main/master a PR.
 
@@ -49,8 +49,41 @@ S pozdravem
 Vendžúr
 https://mojchatbot.sk
 
-## Presný ďalší krok
-Uložiť otestovaný zdroj a dôkazy na pracovnú vetvu; overiť nový Preview na konkrétnom SHA bez obchádzania ochrany. Pri blokovanej ochrane označiť iba Preview HOLD a pokračovať lokálnou prácou. Ďalší kandidát Pleva (pleva.cz / 48153061): zatiaľ nerezervovaný, treba živý widget/poradcu, veľkosť a zdroje; Onclé PRICING_REVIEW (veľký prevádzkovateľ Melitrade), FOR LIFE & MADAGA HOLD (sprievodca výberom).
-
 ## Kontrolór – nezávislý čiastočný nález (nie schválenie)
 Kontrolór potvrdil READY `dpl_Gmyr8hoxKPdNu7f48Yf32jtAgGzN`, SHA `2fe18852b36ce0904df2b29dbfd65fdc2b0f2809`. Bez prihlasovania/bypassu prešiel 390×800 kelímek → bergamot/kakao → 385 Kč/50 ml, fotografia a produktový odkaz načítané; úvodná konzola bez JS chýb. Toto je jedna nezávislá cesta, nie úplné schválenie. Požadovaná oprava: odlišné opisy prvých kariet. Nové texty + zdroje: `sources/nutt/first-step-evidence.json`.
+
+## NUTT – oprava a skutočné Preview QA dokončené
+Aktuálny kód **59395937ead6802ca0027182ca144c893cf28a3f**, deployment **dpl_A8XfYhDqLkTrDT1pzQFUcjreQqru**, READY.
+https://kava-chatbot-backend-lxcg94i9a-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt
+Pracovník prešiel **všetkých 9 výsledkov**, vrátane stránkovania 7 kelímkov, 2 tuhých masiel a resetu. Overené ceny, produktové odkazy, načítané fotografie a nulový horizontálny overflow pri skutočnom viewport 1363×936. Obidva rozdielne opisy prvého kroku viditeľné. Doklad `dokazy/nutt-preview-qa.json`. Skoré kontroly obrázkov zachytili ešte prebiehajúce načítanie; následne všetky 9 fotografie potvrdené complete/naturalWidth > 0. Nástrojový DOM wrapper nemá metódu img.decode, preto sa načítanie overilo pozorovaním skutočnej snímky a DOM rozmerov. V zachytenom logu boli chyby rozšírenia chrome-extension pri posielaní metadát; žiadnu z nich neoznačujeme ako chybu aplikácie. Žiadna správa v Preview chate, 0 platených volaní, žiadny bypass. Nezávislý kontrolór overil zatiaľ iba svoju jednu cestu staršieho SHA. Produkcia a e-mail naďalej NOT_READY.
+
+## Ďalšia firma – Pleva, reálna práca začatá
+Rezervované pred kódom v `coord/s5-claims`, SHA `e493750bcc8863af7d21d88a0096b77d28e25c17`. Pleva s.r.o., IČO 48153061 potvrdené z aktuálnych `/s/conditions`; kontakt obchod@pleva.cz z pätičky. Živý SupportBox otvorený pred rezerváciou: „Momentálně tu nejsme“, pracovníčky Zuzána, Lucie, Markéta a kontaktný formulár. Bez správy. `/advisor` sú články, konkrétny sprievodca typmi pleti je statický publikovaný článok; netvrdíme, že to vylučuje každý iný režim webu. Zdrojové dáta 14 pleťových produktov (cena/variant/hmotnosť/sklad/fotka/typ pleti) už zozbierané; nie je to hotová ukážka.
+
+
+## Pleva – lokálne QA dokončené, Preview sa pripravuje
+12 overených dostupných produktov, samostatné cesty pre krémy, čistenie, masky/peeling a očné okolie. Nie je to celý obchod. Dve zachytené odličovacie mlieka sú zámerne mimo reprezentatívneho výberu. Výrobca výslovne nazýva Elixír mládí krémom; automaticky sa nemení na sérum.
+
+Zdroje: `sources/pleva/verified-products.json`, aktuálne oficiálne produktové stránky s cenou/variantom/hmotnosťou, explicitnými typmi pleti, fotkou, skladom a časom. Tržby NEOVERENÉ. Doprava podľa https://www.pleva.cz/doprava-a-platba iba pre ČR, koncového zákazníka, striktne nad 2 300 Kč; príplatky zvlášť. Žiadny vymyslený údaj o doprave ani záruka účinkov.
+
+- Úplný strom: 21 listov, 12/12 produktov. 63 výsledkov a 93 obrazoviek pri 320×568, 390×800, 1280×800; 0 nálezov. Bez fotografií 21 výsledkov/31 obrazoviek, 0 nálezov.
+- Prvé tri čipy majú relevantné produkty, štvrtý porovnanie; 4×40 px, načítaný kontrastný avatar, offline/mock karty, odkazy v rovnakej karte, bez plateného modelu.
+- `pleva-extra-qa.json`: hover bez posunu, správny maximálny počet krokov podľa vetvenia (4 pre krém, 2 pre čistenie), CTA, reset, nadväzujúca veta raz. Doplnok je nepovinný a nezaškrtnutý; gel 187 Kč + denný krém 263 Kč = 450 Kč; odškrtnutie vráti pôvodný súčet. Kompatibilitu stále vyhodnocuje spoločné jadro. Nejde o pridanie do košíka e-shopu.
+- `pleva-backend-mock.json`: 3 relevantné odpovede, 3 mock volania, 0 platených volaní.
+- 3 rôzne cesty × 3 šírky, vizuálne prezreté. Pri kontrole opravený biely ovál namiesto oficiálneho loga a interný tag face → Pleť. Finálne snímky sú v `dokazy/pleva-cesta*.webp`; checkbox, hover a porovnanie samostatne.
+- Oba buildery sú offline reprodukovateľné z overených dát; kompletné HTML ani recenzie sa nepublikujú.
+
+Produkcia NOT_DEPLOYED. Kontrolór a majiteľ PENDING. Globálne duplicity mimo pripojeného tímu a úplná pošta/Nepísať PENDING_CONTROLLER. Pozorovaný SupportBox je ľudský kontaktný stav; iné režimy nie sú vylúčené. Statické poradenské články sú výslovne zaznamenané.
+
+## Pleva – koncept e-mailu NOT_READY
+Kontakt obchod@pleva.cz. Predmet: Průvodce pleťovou péčí pro Pleva
+
+Dobrý den,
+připravil jsem pro Pleva ukázku průvodce a chatbota pro výběr pleťové péče. Zákazník projde podle druhu péče a typu pleti ke konkrétnímu produktu, porovná dvě možnosti a může si zvolit vhodný doplněk.
+[ŽIVÝ FIREMNÍ ODKAZ doplnit až po ověření; Preview není zákaznický odkaz.]
+Nasazení stojí 447 € jednorázově a provoz 10 € měsíčně, bez zkušebního období. Měli byste zájem ukázku projít?
+S pozdravem
+Vendžúr
+https://mojchatbot.sk
+
+Nic odesláno ani naplánováno. Finální schválení majitele chybí.

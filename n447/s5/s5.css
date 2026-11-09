@@ -39,3 +39,6 @@ html body[data-series=s5] #cosmetics-root#cosmetics-root#cosmetics-root#cosmetic
 html body[data-series=s5] #cosmetics-root#cosmetics-root#cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget#cx-widget#cx-widget .s5-path-note{grid-column:1/-1;font-size:9px!important;line-height:1.2!important;margin:0!important;color:#68616b}
 html body[data-series=s5],html body[data-series=s5] #cosmetics-root{background:#fff!important}
 html body[data-series=s5] #cosmetics-root#cosmetics-root#cosmetics-root .cx-owner{background:#fff!important}
+
+/* Preserve the official coloured oval and its white wordmark. */
+body[data-series="s5"][data-cosmetics-demo="pleva"] #cx-widget .cx-widget-brand > img.cx-logo { filter:none !important; }

@@ -1,0 +1,21 @@
+{
+  "paidCalls": 0,
+  "mockAiCalls": 3,
+  "rows": [
+    {
+      "q": "Denní krém s medem",
+      "expected": "Pleťový krém s medem denní",
+      "matched": true
+    },
+    {
+      "q": "Čisticí gel s propolisem",
+      "expected": "Pleťový čisticí gel",
+      "matched": true
+    },
+    {
+      "q": "Maska pro suchou pleť",
+      "expected": "Výživná pleťová maska",
+      "matched": true
+    }
+  ]
+}

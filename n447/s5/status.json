@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-09T12:36:37.722184+00:00",
+  "updatedAt": "2026-11-09T12:58:37.892213+00:00",
   "branch": "codex/s5-solo-20261109",
-  "codeSha": "2fe18852b36ce0904df2b29dbfd65fdc2b0f2809",
+  "codeSha": "59395937ead6802ca0027182ca144c893cf28a3f",
   "firmsByDomain": {
     "musiprirodne.sk": {
       "domain": "musiprirodne.sk",
@@ -28,7 +28,7 @@
         "https://www.nutt.cz/",
         "https://www.nutt.cz/obchodni-podminky"
       ],
-      "notes": "body butters; no quiz seen on home; IČO and variant prices need verification",
+      "notes": "9 verified products, current operator verified; human contact widget observed, other modes uncertain",
       "ico": "76374939",
       "revenue": "NEOVERENÉ",
       "products": 9,
@@ -41,16 +41,27 @@
         "limit": "does not prove every possible chatbot mode absent"
       },
       "sourceCheckedAt": "2026-11-09T12:26:38.079901+00:00",
-      "controllerReview": "PENDING",
+      "controllerReview": {
+        "status": "PARTIAL_NOT_APPROVAL",
+        "deploymentReadyConfirmed": true,
+        "sha": "2fe18852b36ce0904df2b29dbfd65fdc2b0f2809",
+        "path": "390x800: kelímek -> bergamot/kakao -> 385 Kč/50 ml, photo and product URL loaded",
+        "console": "no JS errors on initial load reported by controller",
+        "requestedFix": "replace repeated first-step notes with documented differences"
+      },
       "production": "NOT_DEPLOYED",
       "emailDraft": "NOT_READY",
-      "sha": "2fe18852b36ce0904df2b29dbfd65fdc2b0f2809",
+      "sha": "59395937ead6802ca0027182ca144c893cf28a3f",
       "preview": {
-        "url": "https://kava-chatbot-backend-lujb9ubli-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt",
-        "deploymentId": "dpl_Gmyr8hoxKPdNu7f48Yf32jtAgGzN",
-        "state": "READY",
-        "workerCheckedAt": "2026-11-09T12:36:37.722003+00:00",
-        "scope": "one live selection route; no paid model request"
+        "url": "https://kava-chatbot-backend-lxcg94i9a-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt",
+        "deploymentId": "dpl_A8XfYhDqLkTrDT1pzQFUcjreQqru",
+        "checkedAt": "2026-11-09T12:47:19.437183+00:00",
+        "viewport": {
+          "width": 1363,
+          "height": 936
+        },
+        "workerPathsVerified": 9,
+        "modelRequests": 0
       }
     },
     "jared.cz": {
@@ -67,12 +78,22 @@
       "domain": "pleva.cz",
       "operator": "Pleva s.r.o.",
       "ico": "48153061",
-      "status": "candidate",
+      "status": "tested_local_preview_pending",
       "evidence": [
         "https://www.pleva.cz/",
-        "https://www.pleva.cz/obchodni-podminky-pleva"
+        "https://www.pleva.cz/s/conditions",
+        "https://www.pleva.cz/advisor"
       ],
-      "notes": "broad catalogue; size/revenue and Rádce require further check; do not assume article is quiz"
+      "notes": "12 reviewed face products; 21 leaves / 63 results / 93 screens across 3 widths, 0 findings. SupportBox live human contact state observed before reservation; other modes uncertain. Static skincare articles documented. No message submitted.",
+      "revenue": "NEOVERENÉ",
+      "contact": "obchod@pleva.cz",
+      "contactSource": "https://www.pleva.cz/",
+      "operatorSource": "https://www.pleva.cz/s/conditions",
+      "products": 12,
+      "emailDraft": "NOT_READY",
+      "production": "NOT_DEPLOYED",
+      "controllerReview": "PENDING",
+      "mailDuplicateCheck": "PENDING_CONTROLLER"
     },
     "liptavia.sk": {
       "domain": "liptavia.sk",

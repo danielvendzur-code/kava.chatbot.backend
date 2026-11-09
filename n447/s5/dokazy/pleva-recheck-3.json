@@ -1,0 +1,29 @@
+[
+  {
+    "url": "https://www.pleva.cz/p/pletovy-krem-s-medem-denni",
+    "status": 200,
+    "expectedPrice": 263.0,
+    "pricePresent": true,
+    "stockInPage": true,
+    "checkedAt": "2026-11-09T12:57:48.124742+00:00",
+    "stockUri": "http://schema.org/InStock"
+  },
+  {
+    "url": "https://www.pleva.cz/p/pletovy-cistici-gel-s-medem-a-propolisem",
+    "status": 200,
+    "expectedPrice": 187.0,
+    "pricePresent": true,
+    "stockInPage": true,
+    "checkedAt": "2026-11-09T12:57:54.668102+00:00",
+    "stockUri": "http://schema.org/InStock"
+  },
+  {
+    "url": "https://www.pleva.cz/p/pletova-maska-se-vcelimi-produkty-pleva",
+    "status": 200,
+    "expectedPrice": 494.0,
+    "pricePresent": true,
+    "stockInPage": true,
+    "checkedAt": "2026-11-09T12:58:01.510449+00:00",
+    "stockUri": "http://schema.org/InStock"
+  }
+]

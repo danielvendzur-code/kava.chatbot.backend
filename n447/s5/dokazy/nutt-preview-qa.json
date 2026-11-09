@@ -1,0 +1,92 @@
+{
+  "sha": "59395937ead6802ca0027182ca144c893cf28a3f",
+  "deploymentId": "dpl_A8XfYhDqLkTrDT1pzQFUcjreQqru",
+  "url": "https://kava-chatbot-backend-lxcg94i9a-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt",
+  "checkedAt": "2026-11-09T12:47:19.437183+00:00",
+  "workerOwnCheck": true,
+  "viewport": {
+    "width": 1363,
+    "height": 936
+  },
+  "results": [
+    {
+      "id": "bambucke-maslo-bergamot-kakao",
+      "priceCZK": 385,
+      "size": "50 ml",
+      "productUrl": "https://www.nutt.cz/bambucke-maslo-bergamot-kakao",
+      "photoLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "id": "bambucke-maslo-skorice-santalove-drevo",
+      "priceCZK": 385,
+      "size": "50 ml",
+      "productUrl": "https://www.nutt.cz/bambucke-maslo-skorice-santalove-drevo",
+      "photoLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "id": "bambucke-maslo-s-konopnym-olejem-neem-mesicek-lekarsky",
+      "priceCZK": 365,
+      "size": "50 ml",
+      "productUrl": "https://www.nutt.cz/bambucke-maslo-s-konopnym-olejem-neem-mesicek-lekarsky",
+      "photoLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "id": "bambucke-maslo-levandule-vanilka",
+      "priceCZK": 385,
+      "size": "50 ml",
+      "productUrl": "https://www.nutt.cz/bambucke-maslo-levandule-vanilka",
+      "photoLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "id": "bambucke-maslo-masala-koreni-hrenicek-kardamon-vanilka",
+      "priceCZK": 385,
+      "size": "50 ml",
+      "productUrl": "https://www.nutt.cz/bambucke-maslo-masala-koreni-hrenicek-kardamon-vanilka",
+      "photoLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "id": "organicke-bambucke-maslo-s-kokosovym-olejem",
+      "priceCZK": 355,
+      "size": "50 ml",
+      "productUrl": "https://www.nutt.cz/organicke-bambucke-maslo-s-kokosovym-olejem",
+      "photoLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "id": "bambucke-maslo-mandarinka-neroli",
+      "priceCZK": 385,
+      "size": "50 ml",
+      "productUrl": "https://www.nutt.cz/bambucke-maslo-mandarinka-neroli",
+      "photoLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "id": "sprchove-tuhe-bambucke-maslo-tangerine-neroli",
+      "priceCZK": 445,
+      "size": "70 g",
+      "productUrl": "https://www.nutt.cz/sprchove-tuhe-bambucke-maslo-tangerine-neroli",
+      "photoLoaded": true,
+      "horizontalOverflow": false
+    },
+    {
+      "id": "sprchove-tuhe-bambucke-maslo-teatree-lime",
+      "priceCZK": 445,
+      "size": "70 g",
+      "productUrl": "https://www.nutt.cz/sprchove-tuhe-bambucke-maslo-teatree-lime",
+      "photoLoaded": true,
+      "horizontalOverflow": false
+    }
+  ],
+  "pagination": "all 7 jar choices across pages + 2 shower choices; reset between paths",
+  "firstStepNotes": "both sourced distinct notes visible on fixed deployment",
+  "paidModelCalls": 0,
+  "chat": "not sent on Preview; local/mock QA only",
+  "console": "captured errors were chrome-extension metadata errors, no application-origin JS error observed in returned log",
+  "timingNotes": "early synchronous image probes saw pending downloads; each was subsequently observed complete/naturalWidth > 0; not classified as 404",
+  "controllerScope": "independent controller one 390x800 path on prior 2fe18852; not full approval"
+}

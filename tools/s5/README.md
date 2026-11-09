@@ -27,6 +27,8 @@ Playwright is supplied by the environment. If its Chromium executable is missing
 
 ## Isolation and limitations
 
-The native engine remains shared. New results/progress/reply rules are gated to S5; old entries do not load `support.js`. Model implementation and keys remain unchanged. Production model answers were not tested. NUTT has no suitable complementary product, so its demo omits the optional add-on. The reusable add-on UI exists but is not yet accepted as tested for future firms with add-ons. Coffee/wine/tea S5 results have not yet been qualified; do not batch-copy them on this evidence alone.
+The native engine remains shared. New results/progress/reply rules are gated to S5; old entries do not load `support.js`. Model implementation and keys remain unchanged. Production model answers were not tested. NUTT has no suitable complementary product, so its demo omits the optional add-on. Pleva verifies the optional unchecked compatible add-on, total, deselection, shipping context and same-tab links at all three widths. Coffee/wine/tea S5 results have not yet been qualified; do not batch-copy them on this evidence alone.
 
 Screenshots are WebP copies of the local PNG captures, reviewed at 320/390/1280 widths. Read `n447/s5/odovzdanie-SOLO.md` for exact status, holds, mail and deployment boundaries.
+
+Pleva: `python tools/s5/build_pleva.py`, `node tools/s5/offline-contract.cjs pleva`, `node tools/s5/pleva-extra.cjs`, and the same test-firm/shots3 workflow with slug pleva. Both builders are offline. Progress shows the maximum remaining branch depth, not an impossible flat count.

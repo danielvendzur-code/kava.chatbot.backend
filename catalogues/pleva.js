@@ -1,0 +1,851 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.pleva = {
+ "verifiedAt": "2026-11-09T12:39:47.028970+00:00",
+ "source": "https://www.pleva.cz/pece-o-plet",
+ "collectionMethod": "Own official product pages: Product microdata, exact 50 g variant where in title, explicit skin text and usage; reviewed neutral copy",
+ "excluded": [
+  "bee-venom cream",
+  "lip/body products outside this face selection",
+  "unverified variants",
+  "therapeutic claims and ingredient efficacy percentages",
+  "two captured cleansing milks not included in this representative first release"
+ ],
+ "products": [
+  {
+   "id": "vyzivny-krem-s-materi-kasickou-4v1-pleva",
+   "name": "Výživný krém s mateří kašičkou 4v1",
+   "url": "https://www.pleva.cz/p/vyzivny-krem-s-materi-kasickou-4v1-pleva",
+   "priceAmount": 344.0,
+   "price": "344 Kč",
+   "currency": "CZK",
+   "volume": "50 g",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [
+    "dry",
+    "oily",
+    "sensitive",
+    "balanced"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Krém s mateří kašičkou a hroznovým, slunečnicovým a olivovým olejem.",
+   "reason": "Krém s mateří kašičkou a hroznovým, slunečnicovým a olivovým olejem.",
+   "photo": "/assets/s3/pleva/vyzivny-krem-s-materi-kasickou-4v1-pleva.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.pleva.cz/p/vyzivny-krem-s-materi-kasickou-4v1-pleva",
+    "verifiedAt": "2026-11-09T12:39:46.992282+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "photoUrl": "https://pleva.s6.cdn-upgates.com/_cache/2/7/271546d494d1e8bfcb66ec9d22fb4226-15-2-vyzivne-krem-s-mk-4v1-1-spolecna.jpg",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "pNutrition"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.pleva.cz/p/vyzivny-krem-s-materi-kasickou-4v1-pleva",
+     "checkedAt": "2026-11-09T12:39:46.992282+00:00",
+     "facts": {
+      "form": "Krémy",
+      "use": "dailyCare",
+      "difference": "pNutrition",
+      "description": "Krém s mateří kašičkou a hroznovým, slunečnicovým a olivovým olejem."
+     }
+    },
+    "suitabilityEvidence": {
+     "dry": {
+      "url": "https://www.pleva.cz/p/vyzivny-krem-s-materi-kasickou-4v1-pleva",
+      "text": "Vhodný pro všechny druhy pleti i pro pleť velmi citlivou.",
+      "checkedAt": "2026-11-09T12:39:46.992282+00:00"
+     },
+     "oily": {
+      "url": "https://www.pleva.cz/p/vyzivny-krem-s-materi-kasickou-4v1-pleva",
+      "text": "Vhodný pro všechny druhy pleti i pro pleť velmi citlivou.",
+      "checkedAt": "2026-11-09T12:39:46.992282+00:00"
+     },
+     "sensitive": {
+      "url": "https://www.pleva.cz/p/vyzivny-krem-s-materi-kasickou-4v1-pleva",
+      "text": "Vhodný pro všechny druhy pleti i pro pleť velmi citlivou.",
+      "checkedAt": "2026-11-09T12:39:46.992282+00:00"
+     },
+     "balanced": {
+      "url": "https://www.pleva.cz/p/vyzivny-krem-s-materi-kasickou-4v1-pleva",
+      "text": "Vhodný pro všechny druhy pleti i pro pleť velmi citlivou.",
+      "checkedAt": "2026-11-09T12:39:46.992282+00:00"
+     }
+    },
+    "allSkinTypes": true,
+    "skinTypesListed": [
+     "všechny druhy pleti i pro pleť velmi citlivou"
+    ],
+    "complementForProductUrls": [
+     "https://www.pleva.cz/p/pletovy-cistici-gel-s-medem-a-propolisem"
+    ]
+   }
+  },
+  {
+   "id": "pletovy-krem-s-medem-denni",
+   "name": "Pleťový krém s medem denní",
+   "url": "https://www.pleva.cz/p/pletovy-krem-s-medem-denni",
+   "priceAmount": 263.0,
+   "price": "263 Kč",
+   "currency": "CZK",
+   "volume": "50 g",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [
+    "balanced",
+    "dry"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Denní krém s medem, bambuckým máslem a makadamiovým olejem.",
+   "reason": "Denní krém s medem, bambuckým máslem a makadamiovým olejem.",
+   "photo": "/assets/s3/pleva/pletovy-krem-s-medem-denni.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.pleva.cz/p/pletovy-krem-s-medem-denni",
+    "verifiedAt": "2026-11-09T12:39:40.376492+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "photoUrl": "https://pleva.s6.cdn-upgates.com/_cache/4/3/43afe583ee9cdc08aaf5cd857828d629-3-4-pletovy-krem-s-medem-50g-14-spolecna.jpg",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "pDay"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.pleva.cz/p/pletovy-krem-s-medem-denni",
+     "checkedAt": "2026-11-09T12:39:40.376492+00:00",
+     "facts": {
+      "form": "Krémy",
+      "use": "dailyCare",
+      "difference": "pDay",
+      "description": "Denní krém s medem, bambuckým máslem a makadamiovým olejem."
+     }
+    },
+    "suitabilityEvidence": {
+     "balanced": {
+      "url": "https://www.pleva.cz/p/pletovy-krem-s-medem-denni",
+      "text": "Vhodný pro normální, smíšenou, nebo sušší pleť.",
+      "checkedAt": "2026-11-09T12:39:40.376492+00:00"
+     },
+     "dry": {
+      "url": "https://www.pleva.cz/p/pletovy-krem-s-medem-denni",
+      "text": "Vhodný pro normální, smíšenou, nebo sušší pleť.",
+      "checkedAt": "2026-11-09T12:39:40.376492+00:00"
+     }
+    },
+    "allSkinTypes": false,
+    "skinTypesListed": [
+     "normální, smíšenou, nebo sušší pleť"
+    ],
+    "complementForProductUrls": [
+     "https://www.pleva.cz/p/pletovy-cistici-gel-s-medem-a-propolisem"
+    ]
+   }
+  },
+  {
+   "id": "pletovy-krem-s-medem-nocni",
+   "name": "Pleťový krém s medem noční",
+   "url": "https://www.pleva.cz/p/pletovy-krem-s-medem-nocni",
+   "priceAmount": 267.0,
+   "price": "267 Kč",
+   "currency": "CZK",
+   "volume": "50 g",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [
+    "balanced",
+    "dry"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Noční krém s medem, mandlovým olejem a skvalanem.",
+   "reason": "Noční krém s medem, mandlovým olejem a skvalanem.",
+   "photo": "/assets/s3/pleva/pletovy-krem-s-medem-nocni.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.pleva.cz/p/pletovy-krem-s-medem-nocni",
+    "verifiedAt": "2026-11-09T12:39:40.775183+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "photoUrl": "https://pleva.s6.cdn-upgates.com/_cache/b/f/bf0420a9c0fa129ea78896df2558cef4-3-5-pletovy-krem-s-medem-nocni-stan-00b-spolecna.jpg",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "pNight"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.pleva.cz/p/pletovy-krem-s-medem-nocni",
+     "checkedAt": "2026-11-09T12:39:40.775183+00:00",
+     "facts": {
+      "form": "Krémy",
+      "use": "dailyCare",
+      "difference": "pNight",
+      "description": "Noční krém s medem, mandlovým olejem a skvalanem."
+     }
+    },
+    "suitabilityEvidence": {
+     "balanced": {
+      "url": "https://www.pleva.cz/p/pletovy-krem-s-medem-nocni",
+      "text": "Vhodný na noc pro normální a sušší pleť.",
+      "checkedAt": "2026-11-09T12:39:40.775183+00:00"
+     },
+     "dry": {
+      "url": "https://www.pleva.cz/p/pletovy-krem-s-medem-nocni",
+      "text": "Vhodný na noc pro normální a sušší pleť.",
+      "checkedAt": "2026-11-09T12:39:40.775183+00:00"
+     }
+    },
+    "allSkinTypes": false,
+    "skinTypesListed": [
+     "Vhodný na noc pro normální a sušší pleť"
+    ],
+    "complementForProductUrls": [
+     "https://www.pleva.cz/p/pletovy-cistici-gel-s-medem-a-propolisem"
+    ]
+   }
+  },
+  {
+   "id": "pletovy-krem-s-materi-kasickou",
+   "name": "Pleťový krém s mateří kašičkou",
+   "url": "https://www.pleva.cz/p/pletovy-krem-s-materi-kasickou",
+   "priceAmount": 310.0,
+   "price": "310 Kč",
+   "currency": "CZK",
+   "volume": "50 g",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [
+    "balanced",
+    "dry"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Denní krém s mateří kašičkou, v balení s pumpičkou.",
+   "reason": "Denní krém s mateří kašičkou, v balení s pumpičkou.",
+   "photo": "/assets/s3/pleva/pletovy-krem-s-materi-kasickou.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.pleva.cz/p/pletovy-krem-s-materi-kasickou",
+    "verifiedAt": "2026-11-09T12:39:40.552247+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "photoUrl": "https://pleva.s6.cdn-upgates.com/_cache/2/e/2e37725419b98012035421a68d74e807-3-2-pletovy-krem-s-materi-kasickou-stan-spolecna-00.jpg",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "pFirstLines"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.pleva.cz/p/pletovy-krem-s-materi-kasickou",
+     "checkedAt": "2026-11-09T12:39:40.552247+00:00",
+     "facts": {
+      "form": "Krémy",
+      "use": "dailyCare",
+      "difference": "pFirstLines",
+      "description": "Denní krém s mateří kašičkou, v balení s pumpičkou."
+     }
+    },
+    "suitabilityEvidence": {
+     "balanced": {
+      "url": "https://www.pleva.cz/p/pletovy-krem-s-materi-kasickou",
+      "text": "Vhodný pro normální a sušší pleť a věk 25-40 let.",
+      "checkedAt": "2026-11-09T12:39:40.552247+00:00"
+     },
+     "dry": {
+      "url": "https://www.pleva.cz/p/pletovy-krem-s-materi-kasickou",
+      "text": "Vhodný pro normální a sušší pleť a věk 25-40 let.",
+      "checkedAt": "2026-11-09T12:39:40.552247+00:00"
+     }
+    },
+    "allSkinTypes": false,
+    "skinTypesListed": [
+     "normální a sušší pleť a věk 25-40 let"
+    ],
+    "complementForProductUrls": [
+     "https://www.pleva.cz/p/pletovy-cistici-gel-s-medem-a-propolisem"
+    ],
+    "ageEvidence": "Vhodný pro normální a sušší pleť a věk 25-40 let."
+   }
+  },
+  {
+   "id": "pletovy-krem-proti-vraskam",
+   "name": "Pleťový krém proti vráskám",
+   "url": "https://www.pleva.cz/p/pletovy-krem-proti-vraskam",
+   "priceAmount": 352.0,
+   "price": "352 Kč",
+   "currency": "CZK",
+   "volume": "50 g",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [
+    "dry",
+    "balanced",
+    "oily"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Krém s mořskými řasami, kyselinou hyaluronovou a mateří kašičkou.",
+   "reason": "Krém s mořskými řasami, kyselinou hyaluronovou a mateří kašičkou.",
+   "photo": "/assets/s3/pleva/pletovy-krem-proti-vraskam.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.pleva.cz/p/pletovy-krem-proti-vraskam",
+    "verifiedAt": "2026-11-09T12:39:34.523667+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "photoUrl": "https://pleva.s6.cdn-upgates.com/_cache/4/7/478874acc4c46cc0c4f953a60d127321-3-7-pletovy-krem-proti-vraskam-0-spolecna-kopie.jpg",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "pMature30"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.pleva.cz/p/pletovy-krem-proti-vraskam",
+     "checkedAt": "2026-11-09T12:39:34.523667+00:00",
+     "facts": {
+      "form": "Krémy",
+      "use": "dailyCare",
+      "difference": "pMature30",
+      "description": "Krém s mořskými řasami, kyselinou hyaluronovou a mateří kašičkou."
+     }
+    },
+    "suitabilityEvidence": {
+     "dry": {
+      "url": "https://www.pleva.cz/p/pletovy-krem-proti-vraskam",
+      "text": "Vhodný pro sušší, normální a mastnější pleť od 30 let.",
+      "checkedAt": "2026-11-09T12:39:34.523667+00:00"
+     },
+     "balanced": {
+      "url": "https://www.pleva.cz/p/pletovy-krem-proti-vraskam",
+      "text": "Vhodný pro sušší, normální a mastnější pleť od 30 let.",
+      "checkedAt": "2026-11-09T12:39:34.523667+00:00"
+     },
+     "oily": {
+      "url": "https://www.pleva.cz/p/pletovy-krem-proti-vraskam",
+      "text": "Vhodný pro sušší, normální a mastnější pleť od 30 let.",
+      "checkedAt": "2026-11-09T12:39:34.523667+00:00"
+     }
+    },
+    "allSkinTypes": false,
+    "skinTypesListed": [
+     "sušší, normální a mastnější pleť od 30 let"
+    ],
+    "complementForProductUrls": [
+     "https://www.pleva.cz/p/pletovy-cistici-gel-s-medem-a-propolisem"
+    ],
+    "ageEvidence": "Vhodný pro sušší, normální a mastnější pleť od 30 let."
+   }
+  },
+  {
+   "id": "pohodovy-krem-pro-pohodovou-mladou-plet",
+   "name": "Pohodový krém pro pohodovou mladou pleť",
+   "url": "https://www.pleva.cz/p/pohodovy-krem-pro-pohodovou-mladou-plet",
+   "priceAmount": 360.0,
+   "price": "360 Kč",
+   "currency": "CZK",
+   "volume": "50 g",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [
+    "dry",
+    "oily",
+    "sensitive",
+    "balanced"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Lehký krém s mateří kašičkou, Fucogelem a kyselinou hyaluronovou.",
+   "reason": "Lehký krém s mateří kašičkou, Fucogelem a kyselinou hyaluronovou.",
+   "photo": "/assets/s3/pleva/pohodovy-krem-pro-pohodovou-mladou-plet.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.pleva.cz/p/pohodovy-krem-pro-pohodovou-mladou-plet",
+    "verifiedAt": "2026-11-09T12:39:40.394189+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "photoUrl": "https://pleva.s6.cdn-upgates.com/_cache/2/7/27888bf29e241eac8fa658aa3b90eef6-3-14-pohodovy-krem-final-dohromady.jpg",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "pYoung"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.pleva.cz/p/pohodovy-krem-pro-pohodovou-mladou-plet",
+     "checkedAt": "2026-11-09T12:39:40.394189+00:00",
+     "facts": {
+      "form": "Krémy",
+      "use": "dailyCare",
+      "difference": "pYoung",
+      "description": "Lehký krém s mateří kašičkou, Fucogelem a kyselinou hyaluronovou."
+     }
+    },
+    "suitabilityEvidence": {
+     "dry": {
+      "url": "https://www.pleva.cz/p/pohodovy-krem-pro-pohodovou-mladou-plet",
+      "text": "Vhodný pro všechny druhy pleti od 20 let, i pro pleť citlivou.",
+      "checkedAt": "2026-11-09T12:39:40.394189+00:00"
+     },
+     "oily": {
+      "url": "https://www.pleva.cz/p/pohodovy-krem-pro-pohodovou-mladou-plet",
+      "text": "Vhodný pro všechny druhy pleti od 20 let, i pro pleť citlivou.",
+      "checkedAt": "2026-11-09T12:39:40.394189+00:00"
+     },
+     "sensitive": {
+      "url": "https://www.pleva.cz/p/pohodovy-krem-pro-pohodovou-mladou-plet",
+      "text": "Vhodný pro všechny druhy pleti od 20 let, i pro pleť citlivou.",
+      "checkedAt": "2026-11-09T12:39:40.394189+00:00"
+     },
+     "balanced": {
+      "url": "https://www.pleva.cz/p/pohodovy-krem-pro-pohodovou-mladou-plet",
+      "text": "Vhodný pro všechny druhy pleti od 20 let, i pro pleť citlivou.",
+      "checkedAt": "2026-11-09T12:39:40.394189+00:00"
+     }
+    },
+    "allSkinTypes": true,
+    "skinTypesListed": [
+     "všechny druhy pleti od 20 let, i pro pleť citlivou"
+    ],
+    "complementForProductUrls": [
+     "https://www.pleva.cz/p/pletovy-cistici-gel-s-medem-a-propolisem"
+    ],
+    "ageEvidence": "Vhodný pro všechny druhy pleti od 20 let, i pro pleť citlivou."
+   }
+  },
+  {
+   "id": "elixir-mladi-s-materi-kasickou",
+   "name": "Elixír mládí s mateří kašičkou",
+   "url": "https://www.pleva.cz/p/elixir-mladi-s-materi-kasickou",
+   "priceAmount": 455.0,
+   "price": "455 Kč",
+   "currency": "CZK",
+   "volume": "30 g",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Krémy",
+   "tags": [
+    "dry",
+    "oily",
+    "sensitive",
+    "balanced"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Krém s mateří kašičkou, ceramidy a rostlinnými složkami, určený od 45 let.",
+   "reason": "Krém s mateří kašičkou, ceramidy a rostlinnými složkami, určený od 45 let.",
+   "photo": "/assets/s3/pleva/elixir-mladi-s-materi-kasickou.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.pleva.cz/p/elixir-mladi-s-materi-kasickou",
+    "verifiedAt": "2026-11-09T12:39:28.662080+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "photoUrl": "https://pleva.s6.cdn-upgates.com/_cache/3/f/3f3f5a790efcc7f0c6318199a8b97c4d-15-6-elixim-mladi-fotostan04.jpg",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "pMature45"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.pleva.cz/p/elixir-mladi-s-materi-kasickou",
+     "checkedAt": "2026-11-09T12:39:28.662080+00:00",
+     "facts": {
+      "form": "Krémy",
+      "use": "dailyCare",
+      "difference": "pMature45",
+      "description": "Krém s mateří kašičkou, ceramidy a rostlinnými složkami, určený od 45 let."
+     }
+    },
+    "suitabilityEvidence": {
+     "dry": {
+      "url": "https://www.pleva.cz/p/elixir-mladi-s-materi-kasickou",
+      "text": "Vhodný pro všechny druhy pleti od 45 let.",
+      "checkedAt": "2026-11-09T12:39:28.662080+00:00"
+     },
+     "oily": {
+      "url": "https://www.pleva.cz/p/elixir-mladi-s-materi-kasickou",
+      "text": "Vhodný pro všechny druhy pleti od 45 let.",
+      "checkedAt": "2026-11-09T12:39:28.662080+00:00"
+     },
+     "sensitive": {
+      "url": "https://www.pleva.cz/p/elixir-mladi-s-materi-kasickou",
+      "text": "Vhodný pro všechny druhy pleti od 45 let.",
+      "checkedAt": "2026-11-09T12:39:28.662080+00:00"
+     },
+     "balanced": {
+      "url": "https://www.pleva.cz/p/elixir-mladi-s-materi-kasickou",
+      "text": "Vhodný pro všechny druhy pleti od 45 let.",
+      "checkedAt": "2026-11-09T12:39:28.662080+00:00"
+     }
+    },
+    "allSkinTypes": true,
+    "skinTypesListed": [
+     "všechny druhy pleti od 45 let"
+    ],
+    "complementForProductUrls": [
+     "https://www.pleva.cz/p/pletovy-cistici-gel-s-medem-a-propolisem"
+    ],
+    "ageEvidence": "Vhodný pro všechny druhy pleti od 45 let."
+   }
+  },
+  {
+   "id": "pletovy-cistici-gel-s-medem-a-propolisem",
+   "name": "Pleťový čisticí gel s medem a propolisem",
+   "url": "https://www.pleva.cz/p/pletovy-cistici-gel-s-medem-a-propolisem",
+   "priceAmount": 187.0,
+   "price": "187 Kč",
+   "currency": "CZK",
+   "volume": "200 g",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Čistenie a umývanie",
+   "tags": [
+    "sensitive"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Čisticí gel s medem, propolisem, pantenolem a aloe vera; oplachuje se vodou.",
+   "reason": "Čisticí gel s medem, propolisem, pantenolem a aloe vera; oplachuje se vodou.",
+   "photo": "/assets/s3/pleva/pletovy-cistici-gel-s-medem-a-propolisem.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.pleva.cz/p/pletovy-cistici-gel-s-medem-a-propolisem",
+    "verifiedAt": "2026-11-09T12:39:34.188501+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "photoUrl": "https://pleva.s6.cdn-upgates.com/_cache/3/3/33bf9086d2a04ea530c79e41540932b8-4-12-pletovy-cistici-gel-s-medem-a-propolisem-fotostan-1.jpg",
+    "selectionTraits": {
+     "careUse": "cleansingCare",
+     "purpose": "cleansingCare",
+     "careVariant": "pGel"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.pleva.cz/p/pletovy-cistici-gel-s-medem-a-propolisem",
+     "checkedAt": "2026-11-09T12:39:34.188501+00:00",
+     "facts": {
+      "form": "Čistenie a umývanie",
+      "use": "cleansingCare",
+      "difference": "pGel",
+      "description": "Čisticí gel s medem, propolisem, pantenolem a aloe vera; oplachuje se vodou."
+     }
+    },
+    "suitabilityEvidence": {
+     "sensitive": {
+      "url": "https://www.pleva.cz/p/pletovy-cistici-gel-s-medem-a-propolisem",
+      "text": "Produktový popis uvádí i velmi citlivou pokožku.",
+      "checkedAt": "2026-11-09T12:39:34.188501+00:00"
+     }
+    },
+    "allSkinTypes": false,
+    "skinTypesListed": [
+     "Produktový popis uvádí i velmi citlivou pokožku"
+    ],
+    "complementForProductUrls": [
+     "https://www.pleva.cz/p/vyzivny-krem-s-materi-kasickou-4v1-pleva",
+     "https://www.pleva.cz/p/pletovy-krem-s-medem-denni",
+     "https://www.pleva.cz/p/pletovy-krem-s-medem-nocni",
+     "https://www.pleva.cz/p/pletovy-krem-s-materi-kasickou",
+     "https://www.pleva.cz/p/pletovy-krem-proti-vraskam",
+     "https://www.pleva.cz/p/pohodovy-krem-pro-pohodovou-mladou-plet",
+     "https://www.pleva.cz/p/elixir-mladi-s-materi-kasickou"
+    ]
+   }
+  },
+  {
+   "id": "cistici-a-regeneracni-pletova-maska-s-medem-propolisem-a-ruzovym-jilem",
+   "name": "Čisticí a regenerační pleťová maska s medem, propolisem a růžovým jílem",
+   "url": "https://www.pleva.cz/p/cistici-a-regeneracni-pletova-maska-s-medem-propolisem-a-ruzovym-jilem",
+   "priceAmount": 344.0,
+   "price": "344 Kč",
+   "currency": "CZK",
+   "volume": "100 g",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Masky",
+   "tags": [
+    "oily"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Pleťová maska s medem, propolisem a růžovým jílem. Není určena pro suchou pleť.",
+   "reason": "Pleťová maska s medem, propolisem a růžovým jílem. Není určena pro suchou pleť.",
+   "photo": "/assets/s3/pleva/cistici-a-regeneracni-pletova-maska-s-medem-propolisem-a-ruzovym-jilem.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.pleva.cz/p/cistici-a-regeneracni-pletova-maska-s-medem-propolisem-a-ruzovym-jilem",
+    "verifiedAt": "2026-11-09T12:39:28.071339+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "photoUrl": "https://pleva.s6.cdn-upgates.com/_cache/4/7/47e1f79db0476fc2891be91ba8d884d2-3-15-cistici-a-regeneracni-pletova-maska-s-medem-propolisem-a-ruzovym-jilem-0-spolecna.jpg",
+    "selectionTraits": {
+     "careUse": "occasionalCare",
+     "purpose": "occasionalCare",
+     "careVariant": "pClayMask"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.pleva.cz/p/cistici-a-regeneracni-pletova-maska-s-medem-propolisem-a-ruzovym-jilem",
+     "checkedAt": "2026-11-09T12:39:28.071339+00:00",
+     "facts": {
+      "form": "Masky",
+      "use": "occasionalCare",
+      "difference": "pClayMask",
+      "description": "Pleťová maska s medem, propolisem a růžovým jílem. Není určena pro suchou pleť."
+     }
+    },
+    "suitabilityEvidence": {
+     "oily": {
+      "url": "https://www.pleva.cz/p/cistici-a-regeneracni-pletova-maska-s-medem-propolisem-a-ruzovym-jilem",
+      "text": "Vhodná pro pleť mastnou, smíšenou a se sklony k akné. Nevhodná pro pleť suchou.",
+      "checkedAt": "2026-11-09T12:39:28.071339+00:00"
+     }
+    },
+    "allSkinTypes": false,
+    "skinTypesListed": [
+     "pleť mastnou, smíšenou a se sklony k akné"
+    ],
+    "complementForProductUrls": []
+   }
+  },
+  {
+   "id": "pletova-maska-se-vcelimi-produkty-pleva",
+   "name": "Výživná pleťová maska se včelími produkty a NovoRetinem",
+   "url": "https://www.pleva.cz/p/pletova-maska-se-vcelimi-produkty-pleva",
+   "priceAmount": 494.0,
+   "price": "494 Kč",
+   "currency": "CZK",
+   "volume": "100 g",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Masky",
+   "tags": [
+    "balanced",
+    "dry"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Pleťová maska se včelími produkty, NovoRetinem, skvalanem a kyselinou hyaluronovou. Není určena pro mastnou pleť.",
+   "reason": "Pleťová maska se včelími produkty, NovoRetinem, skvalanem a kyselinou hyaluronovou. Není určena pro mastnou pleť.",
+   "photo": "/assets/s3/pleva/pletova-maska-se-vcelimi-produkty-pleva.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.pleva.cz/p/pletova-maska-se-vcelimi-produkty-pleva",
+    "verifiedAt": "2026-11-09T12:39:28.312224+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "photoUrl": "https://pleva.s6.cdn-upgates.com/_cache/4/9/49fd77a2cd29b757b114fdbd7b214e4d-3-9-vyzivna-pletova-maska-se-vcelimi-produkty-0-spolecna-kopie.jpg",
+    "selectionTraits": {
+     "careUse": "occasionalCare",
+     "purpose": "occasionalCare",
+     "careVariant": "pNourishMask"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.pleva.cz/p/pletova-maska-se-vcelimi-produkty-pleva",
+     "checkedAt": "2026-11-09T12:39:28.312224+00:00",
+     "facts": {
+      "form": "Masky",
+      "use": "occasionalCare",
+      "difference": "pNourishMask",
+      "description": "Pleťová maska se včelími produkty, NovoRetinem, skvalanem a kyselinou hyaluronovou. Není určena pro mastnou pleť."
+     }
+    },
+    "suitabilityEvidence": {
+     "balanced": {
+      "url": "https://www.pleva.cz/p/pletova-maska-se-vcelimi-produkty-pleva",
+      "text": "Vhodná pro normální, suchou i problematickou pleť. Nevhodná pro pleť mastnou.",
+      "checkedAt": "2026-11-09T12:39:28.312224+00:00"
+     },
+     "dry": {
+      "url": "https://www.pleva.cz/p/pletova-maska-se-vcelimi-produkty-pleva",
+      "text": "Vhodná pro normální, suchou i problematickou pleť. Nevhodná pro pleť mastnou.",
+      "checkedAt": "2026-11-09T12:39:28.312224+00:00"
+     }
+    },
+    "allSkinTypes": false,
+    "skinTypesListed": [
+     "normální, suchou i problematickou pleť"
+    ],
+    "complementForProductUrls": []
+   }
+  },
+  {
+   "id": "vitaminovy-enzymaticky-peeling-na-plet",
+   "name": "Vitamínový enzymatický peeling na pleť",
+   "url": "https://www.pleva.cz/p/vitaminovy-enzymaticky-peeling-na-plet",
+   "priceAmount": 315.0,
+   "price": "315 Kč",
+   "currency": "CZK",
+   "volume": "50 g",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Peelingy",
+   "tags": [
+    "dry",
+    "oily",
+    "sensitive",
+    "balanced"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Enzymatický peeling s extraktem z kakadu švestek, bez mechanického drhnutí.",
+   "reason": "Enzymatický peeling s extraktem z kakadu švestek, bez mechanického drhnutí.",
+   "photo": "/assets/s3/pleva/vitaminovy-enzymaticky-peeling-na-plet.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.pleva.cz/p/vitaminovy-enzymaticky-peeling-na-plet",
+    "verifiedAt": "2026-11-09T12:39:47.028970+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "photoUrl": "https://pleva.s6.cdn-upgates.com/_cache/c/c/ccfbfef3d8b3823aea463d722730e7a4-3-13-vitaminovy-enzymaticky-peeling-na-plet-spolecna-fotostan.jpg",
+    "selectionTraits": {
+     "careUse": "occasionalCare",
+     "purpose": "occasionalCare",
+     "careVariant": "pEnzyme"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.pleva.cz/p/vitaminovy-enzymaticky-peeling-na-plet",
+     "checkedAt": "2026-11-09T12:39:47.028970+00:00",
+     "facts": {
+      "form": "Peelingy",
+      "use": "occasionalCare",
+      "difference": "pEnzyme",
+      "description": "Enzymatický peeling s extraktem z kakadu švestek, bez mechanického drhnutí."
+     }
+    },
+    "suitabilityEvidence": {
+     "dry": {
+      "url": "https://www.pleva.cz/p/vitaminovy-enzymaticky-peeling-na-plet",
+      "text": "Vhodný pro všechny typy pleti i pro pleť citlivou, zralou, problematickou nebo s výskytem akné.",
+      "checkedAt": "2026-11-09T12:39:47.028970+00:00"
+     },
+     "oily": {
+      "url": "https://www.pleva.cz/p/vitaminovy-enzymaticky-peeling-na-plet",
+      "text": "Vhodný pro všechny typy pleti i pro pleť citlivou, zralou, problematickou nebo s výskytem akné.",
+      "checkedAt": "2026-11-09T12:39:47.028970+00:00"
+     },
+     "sensitive": {
+      "url": "https://www.pleva.cz/p/vitaminovy-enzymaticky-peeling-na-plet",
+      "text": "Vhodný pro všechny typy pleti i pro pleť citlivou, zralou, problematickou nebo s výskytem akné.",
+      "checkedAt": "2026-11-09T12:39:47.028970+00:00"
+     },
+     "balanced": {
+      "url": "https://www.pleva.cz/p/vitaminovy-enzymaticky-peeling-na-plet",
+      "text": "Vhodný pro všechny typy pleti i pro pleť citlivou, zralou, problematickou nebo s výskytem akné.",
+      "checkedAt": "2026-11-09T12:39:47.028970+00:00"
+     }
+    },
+    "allSkinTypes": true,
+    "skinTypesListed": [
+     "všechny typy pleti i pro pleť citlivou, zralou, problematickou nebo s výskytem akné"
+    ],
+    "complementForProductUrls": []
+   }
+  },
+  {
+   "id": "medovy-ocni-krem",
+   "name": "Medový oční krém",
+   "url": "https://www.pleva.cz/p/medovy-ocni-krem",
+   "priceAmount": 160.0,
+   "price": "160 Kč",
+   "currency": "CZK",
+   "volume": "15 g",
+   "variantLabel": "",
+   "category": "eyes",
+   "kind": "Očný krém",
+   "tags": [
+    "dry",
+    "oily",
+    "sensitive",
+    "balanced"
+   ],
+   "available": true,
+   "isSample": false,
+   "description": "Oční krém s medem, skvalanem a meruňkovým olejem.",
+   "reason": "Oční krém s medem, skvalanem a meruňkovým olejem.",
+   "photo": "/assets/s3/pleva/medovy-ocni-krem.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.pleva.cz/p/medovy-ocni-krem",
+    "verifiedAt": "2026-11-09T12:39:28.150311+00:00",
+    "stock": "InStock",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "priceFrom": false,
+    "photoUrl": "https://pleva.s6.cdn-upgates.com/_cache/e/4/e4181d2da6f6aa336c7224495c936451-3-3-medovy-ocni-krem-fotostan-1.jpg",
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "dailyCare",
+     "careVariant": "pEye"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.pleva.cz/p/medovy-ocni-krem",
+     "checkedAt": "2026-11-09T12:39:28.150311+00:00",
+     "facts": {
+      "form": "Očný krém",
+      "use": "dailyCare",
+      "difference": "pEye",
+      "description": "Oční krém s medem, skvalanem a meruňkovým olejem."
+     }
+    },
+    "suitabilityEvidence": {
+     "dry": {
+      "url": "https://www.pleva.cz/p/medovy-ocni-krem",
+      "text": "Vhodný pro všechny druhy pleti i pro citlivou.",
+      "checkedAt": "2026-11-09T12:39:28.150311+00:00"
+     },
+     "oily": {
+      "url": "https://www.pleva.cz/p/medovy-ocni-krem",
+      "text": "Vhodný pro všechny druhy pleti i pro citlivou.",
+      "checkedAt": "2026-11-09T12:39:28.150311+00:00"
+     },
+     "sensitive": {
+      "url": "https://www.pleva.cz/p/medovy-ocni-krem",
+      "text": "Vhodný pro všechny druhy pleti i pro citlivou.",
+      "checkedAt": "2026-11-09T12:39:28.150311+00:00"
+     },
+     "balanced": {
+      "url": "https://www.pleva.cz/p/medovy-ocni-krem",
+      "text": "Vhodný pro všechny druhy pleti i pro citlivou.",
+      "checkedAt": "2026-11-09T12:39:28.150311+00:00"
+     }
+    },
+    "allSkinTypes": true,
+    "skinTypesListed": [
+     "všechny druhy pleti i pro citlivou"
+    ],
+    "complementForProductUrls": []
+   }
+  }
+ ]
+};
