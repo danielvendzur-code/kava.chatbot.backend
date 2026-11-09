@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-09",
+  "oldExecutable": "/tmp/chromium",
+  "missingAfterEnvironmentRestore": true,
+  "restoredFrom": "official npm @sparticuz/chromium 153.0.0, installed outside checkout",
+  "playwright": "1.62.1",
+  "secondError": "FATAL SkFontMgr_FontConfigInterface.cpp:163 Not implemented: Lambda fonts.conf points to unavailable /tmp/fonts",
+  "resolution": "Use FONTCONFIG_PATH=/etc/fonts and FONTCONFIG_FILE=/etc/fonts/fonts.conf; no OS font config modified",
+  "paidCalls": 0,
+  "capriFullQaAfterRecovery": "33 results / 57 screens, 9/9 products, 0 findings; extra QA passed"
+}

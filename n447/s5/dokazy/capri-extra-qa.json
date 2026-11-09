@@ -1,0 +1,77 @@
+{
+  "ok": true,
+  "paidCalls": 0,
+  "offlineChips": [
+    {
+      "width": 320,
+      "chip": 1,
+      "hrefs": [
+        "https://www.kosmetikacapri.cz/kremy/regeneracni-denni-krem/"
+      ]
+    },
+    {
+      "width": 320,
+      "chip": 2,
+      "hrefs": [
+        "https://www.kosmetikacapri.cz/cistici-voda/cistici-pletova-voda-sensitiv/"
+      ]
+    },
+    {
+      "width": 320,
+      "chip": 3,
+      "hrefs": [
+        "https://www.kosmetikacapri.cz/masky/hydratacni-pletova-maska/"
+      ]
+    },
+    {
+      "width": 390,
+      "chip": 1,
+      "hrefs": [
+        "https://www.kosmetikacapri.cz/kremy/regeneracni-denni-krem/"
+      ]
+    },
+    {
+      "width": 390,
+      "chip": 2,
+      "hrefs": [
+        "https://www.kosmetikacapri.cz/cistici-voda/cistici-pletova-voda-sensitiv/"
+      ]
+    },
+    {
+      "width": 390,
+      "chip": 3,
+      "hrefs": [
+        "https://www.kosmetikacapri.cz/masky/hydratacni-pletova-maska/"
+      ]
+    },
+    {
+      "width": 1280,
+      "chip": 1,
+      "hrefs": [
+        "https://www.kosmetikacapri.cz/kremy/regeneracni-denni-krem/"
+      ]
+    },
+    {
+      "width": 1280,
+      "chip": 2,
+      "hrefs": [
+        "https://www.kosmetikacapri.cz/cistici-voda/cistici-pletova-voda-sensitiv/"
+      ]
+    },
+    {
+      "width": 1280,
+      "chip": 3,
+      "hrefs": [
+        "https://www.kosmetikacapri.cz/masky/hydratacni-pletova-maska/"
+      ]
+    }
+  ],
+  "hover": "no movement; visible color/border change at 320/390/1280",
+  "comparison": "2 distinct products, exact price and size at all widths",
+  "pending": "visible only until mock error response",
+  "reducedMotion": "static indicator",
+  "follow": "once per product",
+  "reset": true,
+  "cta": "same-tab exact product",
+  "addon": "tested separately in capri-extra.cjs"
+}

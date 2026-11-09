@@ -1,0 +1,21 @@
+{
+  "paidCalls": 0,
+  "mockAiCalls": 3,
+  "rows": [
+    {
+      "q": "Denní krém pro suchou pleť",
+      "expected": "REGENERAČNÍ DENNÍ KRÉM",
+      "matched": true
+    },
+    {
+      "q": "Čisticí pleťová voda",
+      "expected": "ČISTICÍ PLEŤOVÁ VODA SENSITIV",
+      "matched": true
+    },
+    {
+      "q": "Hydratační krémová maska",
+      "expected": "HYDRATAČNÍ PLEŤOVÁ MASKA",
+      "matched": true
+    }
+  ]
+}

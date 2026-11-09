@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://www.kosmetikacapri.cz/kremy/regeneracni-denni-krem/",
+    "checkedAt": "2026-11-09T16:35:40.968681+00:00",
+    "status": 200,
+    "expectedPrice": 523.0,
+    "expectedPack": "50 g",
+    "priceMatch": true,
+    "stockInPage": true,
+    "packFromReviewedDescription": "Obsah : 50g"
+  },
+  {
+    "url": "https://www.kosmetikacapri.cz/masky/hydratacni-a-zklidnujici-pletova-maska-s-ruzi/",
+    "checkedAt": "2026-11-09T16:35:41.055902+00:00",
+    "status": 200,
+    "expectedPrice": 141.0,
+    "expectedPack": "10 g",
+    "priceMatch": true,
+    "stockInPage": true,
+    "packFromReviewedDescription": "Obsah : 10g"
+  },
+  {
+    "url": "https://www.kosmetikacapri.cz/cistici-voda/cistici-pletova-voda-sensitiv/",
+    "checkedAt": "2026-11-09T16:35:40.906576+00:00",
+    "status": 200,
+    "expectedPrice": 385.0,
+    "expectedPack": "200 ml",
+    "priceMatch": true,
+    "stockInPage": true,
+    "packFromReviewedDescription": "Obsah: 200ml"
+  }
+]

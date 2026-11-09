@@ -130,3 +130,39 @@ Neodesláno a nenaplánováno; produkce, pošta a schválení PENDING.
 Kód **fa37d0d6c9cb7c3f6d42841eac4cc0ce0baf6495**, READY **dpl_HxLY8ZJzNuL71TCDqyNvYYDxwnab**.
 https://kava-chatbot-backend-pagjqfnko-danielvendzur-codes-projects.vercel.app/s5.html?demo=jagaia
 Všetkých 8/8 výsledkov pracovník skutočne prešiel na tomto deployment, vrátane správnych cien/balení/produktových URL, fotografií complete/naturalWidth > 0, resetu a bez horizontálneho overflow pri viewport 1363×936. `dokazy/jagaia-preview-qa.json`. Žiadna Preview chat správa, 0 platených volaní, bez prihlásenia/bypassu. Log chyby rozšírenia chrome-extension sa neprezentujú ako chyba aplikácie; vlastné overenie nie je nezávislé schválenie. Celá mobilná QA zostáva označená lokálne/mock.
+
+
+## Capri – zarezervované a implementované, QA zatiaľ otvorené
+Kanonický obchod kosmetikacapri.cz, alias lachevre.cz; Kosmetika CAPRI spol. s r.o., IČO 62910566; info@kosmetikacapri.cz z aktuálnych https://www.kosmetikacapri.cz/informace/kontakty/ . Tržby NEOVERENÉ. Rezervácia pred kódom SHA 8aa407126c841a1212c5f67819028d894bcb38af. 91 vetiev preverovaných podľa domén, prevádzkovateľa, IČO a kontaktov, bez zhody; prílohy bez zhody. Živé widgety pred rezerváciou: home + produkt bez pozorovaného chatu, Zeptat se je Dotaz na prodejce s e-mailom/telefónom/správou/CAPTCHA; nič vyplnené ani odoslané. Tipy a rady sú 3 statické články. Iné cookie/session režimy nie sú vylúčené.
+
+9 overených produktov: 5 krémov po 50 g, krémová maska 100 g, pláténková maska na jedno použitie 10 g, čistiaca pena 150 ml a voda 200 ml. Presné balenie pochádza z Obsah v opise, nie zo všeobecného parametra Objem ani prepravnej hmotnosti. UV/SPF/medicínske tvrdenia vynechané; rozpor veku 25+/35+ pri dennom ružovom kréme sa nepoužíva. Všetky oficiálne produktové fotografie vizuálne prezreté. Offline strom 11 listov / 9 produktov dosiahnuteľných; bez platených volaní. Browser QA sa nespustila: /tmp/chromium po obnove prostredia neexistuje; konkrétny log capri-qa-environment-error.txt. Runtime sa obnovuje z verejného npm @sparticuz/chromium mimo repozitára. Nie je to hotová ani overená ukážka.
+
+## Lokálny Git – bezpečný pokračovací postup
+Automatická kontrola odmietla git reset --mixed FETCH_HEAD pre možnú stratu zmien v indexe. Akcia nebola zopakovaná ani obídená. Read-only kontrola ukázala prázdny index, lokálny HEAD ef249f346d70d3b941bf25b80606cfc2c3b54c62 a zachované worktree súbory; JAGAIA je už uložená vo vzdialenom f4a329e8b8b5ab97e42941eca145f80c2f9feeb1. Pokračovať cez explicitné súbory/GitHub connector s expected SHA, bez resetu, force alebo plošného add. Nepribaliť Muši WIP, raw HTML, dva vynechané Pleva produkty ani dočasné runtime súbory.
+
+
+## Capri – lokálne QA dokončené po oprave prostredia
+Chýbajúci /tmp/chromium bol obnovený z oficiálneho npm @sparticuz/chromium 153.0.0 mimo checkout. Následný SkFontMgr fatal bol konfiguráciou Lambda fontov; systémové /etc/fonts obnovili funkčné vykresľovanie bez zmeny systémových súborov, certifikátov alebo ochrany webu. qa-environment-recovery.json a restore-browser.cjs zachytávajú presný postup.
+
+Finálne QA: 33 výsledkov / 57 obrazoviek pri 320×568, 390×800, 1280×800; 9/9 produktov, 0 nálezov. Bez fotiek 11 výsledkov/19 obrazoviek, 0 nálezov. 4 čipy offline relevantné, 40 px, logo kontrastné; mock karty a odkazy bez novej karty. capri-qa.cjs overil hover bez posunu, porovnanie dvoch odlišných produktov s cenou/balením, pending/error/reduced motion. capri-extra.cjs overil progress, CTA/reset, follow raz a voliteľný doplnok: voda 385 Kč + krém 496 Kč = 881 Kč, predvolene nezaškrtnutý a po odškrtnutí znovu 385 Kč. Samostatný doklad capri-addon-qa.json. Backend 3 mock volania / 0 platených. Tri oficiálne produkty znovu HTTP 200/cena/sklad (capri-recheck-3.json).
+
+Všetkých 9 finálnych výsledkových snímok ručne prezretých v pásoch. Capri fotografie mali široké biele okraje; iba CSS zobrazenie vo fixnom rámiku je zväčšené 1,4×, samotné oficiálne obrázky sa nemenili. Osobitne skontrolovaná aj pláténková maska. Spoločný S5 progress má opravené české/slovenské skloňovanie počtu krokov; pravidlá výberu sa nemenili. JAGAIA výsledkové QA znova prešlo a má samostatný jagaia-result-qa.json.
+
+## Capri – koncept NOT_READY
+Kontakt info@kosmetikacapri.cz. Predmet: Průvodce pleťovou péčí pro Kosmetiku Capri
+
+Dobrý den,
+připravil jsem pro Kosmetiku Capri ukázku průvodce a chatbota, který pomůže vybrat denní či noční krém, čisticí péči nebo masku z vaší nabídky. Dva produkty také porovná a u vhodné kombinace nabídne volitelný doplněk s celkovou cenou.
+[ŽIVÝ FIREMNÍ ODKAZ až po ověření; Preview není zákaznický odkaz.]
+Nasazení stojí 447 € jednorázově a provoz 10 € měsíčně, bez zkušebního období. Měli byste zájem ukázku projít?
+S pozdravem
+Vendžúr
+https://mojchatbot.sk
+
+Nic odesláno ani naplánováno. Produkce, pošta a schválení PENDING.
+
+
+## Ďalší kandidát pripravený na prácu – Aromatica
+AROMATICA CZ s.r.o. / 26963523, aktuálne čerstvo načítané OP https://www.aromatica.cz/obchodni-podminky/ . eshop@aromatica.cz zo živej pätičky; tržby NEOVERENÉ. Rezervácia SHA d3b1d69999a0ccf2006bfd7abee3d355f5228f87 pred kódom. 91 vzdialených refs bez domény/IČO, prílohy bez zhody. Živá home a Ectoin produkt bez pozorovaného chatu; produktové ZEPTAT SE otvorí obyčajný Dotaz na prodejce (e-mail/telefón/správa/CAPTCHA), nič vyplnené. Dotazník je podľa vlastnej vstupnej stránky marketingový prieskum preferencií so zľavou; Google Forms neotvorený/nevyplnený. Pozorovaný stav nie je dôkaz všetkých cookie/session režimov. Prednosť dostane bežná kozmetika, nie zdravotné tvrdenia doplnkov stravy. Najprv dokončiť Capri Preview.
+
+Botanica Slavica je HOLD_DUPLICATE_OPERATOR_AND_DOMAIN: historická botanica má priamo botanicaslavica.eu; aktuálny prevádzkovateľ je Soaphoria.sk s. r. o. / 56351747 a Soaphoria je tiež existujúca firma. Nenahrádzať to novým slugom. Botanico.cz má zatiaľ iba doménovú kontrolu; prevádzkovateľ a živé widgety sa musia doplniť pred prípadnou rezerváciou.

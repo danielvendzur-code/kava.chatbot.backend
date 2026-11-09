@@ -1,0 +1,65 @@
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+browserType.launch: Failed to launch chromium because executable doesn't exist at /tmp/chromium
+    at chromium.launch (/workspace/scratch/3ddc5ee91f7a/repo/tools/s5/browser.cjs:2:128)
+    at /workspace/scratch/3ddc5ee91f7a/repo/tools/s3a/dfs-native.mjs:11:26
+    at async node:internal/modules/esm/loader:647:26 {
+  log: [],
+  name: 'Error'
+}
+
+Node.js v24.22.1
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+browserType.launch: Failed to launch chromium because executable doesn't exist at /tmp/chromium
+    at chromium.launch (/workspace/scratch/3ddc5ee91f7a/repo/tools/s5/browser.cjs:2:128)
+    at /workspace/scratch/3ddc5ee91f7a/repo/tools/s3a/dfs-native.mjs:11:26
+    at async node:internal/modules/esm/loader:647:26 {
+  log: [],
+  name: 'Error'
+}
+
+Node.js v24.22.1
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+browserType.launch: Failed to launch chromium because executable doesn't exist at /tmp/chromium
+    at chromium.launch (/workspace/scratch/3ddc5ee91f7a/repo/tools/s5/browser.cjs:2:128)
+    at /workspace/scratch/3ddc5ee91f7a/repo/tools/s3a/chips-avatar.mjs:8:26
+    at async node:internal/modules/esm/loader:647:26 {
+  log: [],
+  name: 'Error'
+}
+
+Node.js v24.22.1
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+browserType.launch: Failed to launch chromium because executable doesn't exist at /tmp/chromium
+    at chromium.launch (/workspace/scratch/3ddc5ee91f7a/repo/tools/s5/browser.cjs:2:128)
+    at /workspace/scratch/3ddc5ee91f7a/repo/tools/s3a/chat-mock.mjs:8:26
+    at async node:internal/modules/esm/loader:647:26 {
+  log: [],
+  name: 'Error'
+}
+
+Node.js v24.22.1
+node:internal/modules/run_main:107
+    triggerUncaughtException(
+    ^
+
+browserType.launch: Failed to launch chromium because executable doesn't exist at /tmp/chromium
+    at chromium.launch (/workspace/scratch/3ddc5ee91f7a/repo/tools/s5/browser.cjs:2:128)
+    at /workspace/scratch/3ddc5ee91f7a/repo/tools/s3a/a11y-names.mjs:9:26
+    at async node:internal/modules/esm/loader:647:26 {
+  log: [],
+  name: 'Error'
+}
+
+Node.js v24.22.1

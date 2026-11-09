@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T13:28:28.469263+00:00",
+  "updatedAt": "2026-11-09T16:47:59.958002+00:00",
   "branch": "codex/s5-solo-20261109",
   "codeSha": "fa37d0d6c9cb7c3f6d42841eac4cc0ce0baf6495",
   "firmsByDomain": {
@@ -223,6 +223,118 @@
       "status": "HOLD_POSSIBLE_OPERATOR_DUPLICATE",
       "source": "https://velkoobchod.omorfia.care/Obchodni-podminky-a3_0.htm",
       "notes": "Search shows historic Bioaroma under Omorfia wholesale terms; Omorfia already exists, do not reserve without canonical/operator resolution."
+    },
+    "kosmetikacapri.cz": {
+      "domain": "kosmetikacapri.cz",
+      "slug": "capri",
+      "aliases": [
+        "lachevre.cz"
+      ],
+      "operator": "Kosmetika CAPRI spol. s r.o.",
+      "ico": "62910566",
+      "operatorSource": "https://www.kosmetikacapri.cz/informace/kontakty/",
+      "contact": "info@kosmetikacapri.cz",
+      "contactSource": "https://www.kosmetikacapri.cz/informace/kontakty/",
+      "revenue": "NEOVERENÉ",
+      "status": "local_verified",
+      "products": 9,
+      "claimSha": "8aa407126c841a1212c5f67819028d894bcb38af",
+      "ownAdvisorCheck": {
+        "method": "worker live browser, home + product + Tipy a rady, only necessary cookies",
+        "observed": "No chat launcher/product chat observed. Zeptat se opened Dotaz na prodejce with email, phone, message and CAPTCHA. Nothing filled or sent. Tipy a rady lists 3 static articles.",
+        "limit": "Other cookie/session modes not proven absent."
+      },
+      "duplicateCheck": {
+        "remoteRefs": 91,
+        "patterns": [
+          "kosmetikacapri",
+          "lachevre",
+          "lechaton",
+          "Kosmetika Capri",
+          "62910566",
+          "info@kosmetikacapri.cz"
+        ],
+        "matches": 0,
+        "attachments": "no match",
+        "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM"
+      },
+      "offlineContract": {
+        "products": 9,
+        "leaves": 11,
+        "reachable": 9,
+        "paidCalls": 0
+      },
+      "browserQa": "PASSED",
+      "production": "NOT_DEPLOYED",
+      "emailDraft": "NOT_READY",
+      "mailDuplicateCheck": "PENDING_CONTROLLER",
+      "qa": {
+        "products": 9,
+        "leaves": 11,
+        "results": 33,
+        "screens": 57,
+        "noImagesResults": 11,
+        "noImagesScreens": 19,
+        "widths": [
+          320,
+          390,
+          1280
+        ],
+        "findings": 0,
+        "paidCalls": 0,
+        "addon": {
+          "main": 385,
+          "checkedTotal": 881,
+          "uncheckRestores": 385,
+          "currency": "CZK",
+          "defaultChecked": false
+        }
+      }
+    },
+    "botanicaslavica.eu": {
+      "domain": "botanicaslavica.eu",
+      "status": "HOLD_DUPLICATE_OPERATOR_AND_DOMAIN",
+      "operator": "Soaphoria.sk s. r. o.",
+      "ico": "56351747",
+      "operatorSource": "https://www.botanicaslavica.eu/kontakt",
+      "notes": "Current contact identifies Soaphoria.sk operator; both Soaphoria and Botanica already in historical slugs. Historical nove-znacky-config.js on claude/great-curie-m9eu2c names Botanica Slavica and exact botanicaslavica.eu. Do not reserve/rebuild."
+    },
+    "aromatica.cz": {
+      "domain": "aromatica.cz",
+      "slug": "aromatica",
+      "operator": "AROMATICA CZ s.r.o.",
+      "ico": "26963523",
+      "operatorSource": "https://www.aromatica.cz/obchodni-podminky/",
+      "contact": "eshop@aromatica.cz",
+      "contactSource": "https://www.aromatica.cz/",
+      "revenue": "NEOVERENÉ",
+      "status": "reserved",
+      "claimSha": "d3b1d69999a0ccf2006bfd7abee3d355f5228f87",
+      "ownAdvisorCheck": {
+        "method": "worker live home + Ectoin product + Dotazník page before reservation",
+        "observed": "No product chat observed. ZEptat se na produkt opens Dotaz na prodejce with email/phone/message/CAPTCHA. Dotazník page advertises a marketing preferences survey and 10% thank-you code via Google Forms; no form opened or filled.",
+        "limit": "Only observed states; other cookie/session modes remain unproven."
+      },
+      "duplicateCheck": {
+        "remoteRefs": 91,
+        "patterns": [
+          "aromatica.cz",
+          "26963523"
+        ],
+        "fileMatches": 0,
+        "attachments": "no match",
+        "evidence": "dokazy/next-candidate-duplicates.json",
+        "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM"
+      },
+      "emailDraft": "NOT_READY",
+      "mailDuplicateCheck": "PENDING_CONTROLLER",
+      "production": "NOT_DEPLOYED"
     }
+  },
+  "localGit": {
+    "head": "ef249f346d70d3b941bf25b80606cfc2c3b54c62",
+    "remoteCheckpoint": "f4a329e8b8b5ab97e42941eca145f80c2f9feeb1",
+    "indexChangesObserved": false,
+    "note": "Auto-review rejected git reset --mixed FETCH_HEAD as potentially discarding staged work. Not retried or bypassed. Worktree kept; remote writes use GitHub connector and expected SHA."
   }
 }

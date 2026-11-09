@@ -42,3 +42,11 @@ html body[data-series=s5] #cosmetics-root#cosmetics-root#cosmetics-root .cx-owne
 
 /* Preserve the official coloured oval and its white wordmark. */
 body[data-series="s5"][data-cosmetics-demo="pleva"] #cx-widget .cx-widget-brand > img.cx-logo { filter:none !important; }
+
+body[data-series="s5"][data-cosmetics-demo="capri"] #cx-widget .cx-widget-brand > img.cx-logo {filter:none !important;}
+/* Official Capri photos include wide white margins. Present the product larger,
+   clipping only that surrounding whitespace inside the existing fixed frame. */
+body[data-series=s5][data-cosmetics-demo=capri] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s5-product .cx-quality-product-photo,
+body[data-series=s5][data-cosmetics-demo=capri] #cx-widget .s3-cmp-photo{overflow:hidden!important}
+body[data-series=s5][data-cosmetics-demo=capri] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .s5-product img,
+body[data-series=s5][data-cosmetics-demo=capri] #cx-widget .s3-cmp-photo img{transform:scale(1.4)!important}

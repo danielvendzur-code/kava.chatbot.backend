@@ -1,0 +1,97 @@
+{
+  "products": 9,
+  "questions": 8,
+  "leaves": 11,
+  "reachable": 9,
+  "paidCalls": 0,
+  "paths": [
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "cMilkWax",
+        "time": "day"
+      },
+      "id": "regeneracni-denni-krem"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "cMilkWax",
+        "time": "night"
+      },
+      "id": "regeneracni-nocni-krem"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "cRose",
+        "time": "day"
+      },
+      "id": "denni-omlazujici-krem-s-ruzovym-olejem"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "cRose",
+        "time": "night"
+      },
+      "id": "nocni-regeneracni-krem-s-ruzovym-olejem"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "dry",
+        "careVariant": "cCurd"
+      },
+      "id": "denni-hydratacni-krem-s-tvarohem"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "careVariant": "cRose"
+      },
+      "id": "denni-omlazujici-krem-s-ruzovym-olejem"
+    },
+    {
+      "answers": {
+        "careUse": "dailyCare",
+        "profile": "oily",
+        "careVariant": "cCurd"
+      },
+      "id": "denni-hydratacni-krem-s-tvarohem"
+    },
+    {
+      "answers": {
+        "careUse": "occasionalCare",
+        "careVariant": "cCreamMask"
+      },
+      "id": "hydratacni-pletova-maska"
+    },
+    {
+      "answers": {
+        "careUse": "occasionalCare",
+        "careVariant": "cSheetMask"
+      },
+      "id": "hydratacni-a-zklidnujici-pletova-maska-s-ruzi"
+    },
+    {
+      "answers": {
+        "careUse": "cleansingCare",
+        "careVariant": "cFoam"
+      },
+      "id": "cistici-pletova-pena-s-kouzelnou-liskou-150ml"
+    },
+    {
+      "answers": {
+        "careUse": "cleansingCare",
+        "careVariant": "cWater"
+      },
+      "id": "cistici-pletova-voda-sensitiv"
+    }
+  ]
+}
