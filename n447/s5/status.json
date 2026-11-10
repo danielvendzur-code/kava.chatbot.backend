@@ -907,7 +907,7 @@
       "domain": "adoraniche.sk",
       "operator": "kano beauty s. r. o.",
       "ico": "57226717",
-      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "status": "PREVIEW_QA_VERIFIED_EVIDENCE_UPLOAD_BLOCKED",
       "products": 12,
       "owner": "PERFUME_WORKER sources / MAIN_WORKER integration",
       "sourceSha": "9c5cf23924a29e0a25961b5e37087297fc3d17bc",
@@ -925,14 +925,22 @@
       "emailDraft": "NOT_READY",
       "mailDuplicateCheck": "PENDING_CONTROLLER",
       "production": "NOT_DEPLOYED",
-      "preview": "PENDING_NEW_RUNTIME_SHA",
-      "evidence": "n447/s5/odovzdanie-20261110-parfumerie.md"
+      "preview": {
+        "url": "https://kava-chatbot-backend-6t8icfcrt-danielvendzur-codes-projects.vercel.app/s5.html?demo=adoraniche",
+        "deploymentId": "dpl_paMQ9MR5Mb6JK1uwvLhnaDG9yUfg",
+        "workerPathsVerified": 12,
+        "paidCalls": 0
+      },
+      "evidence": "n447/s5/odovzdanie-20261110-parfumerie.md",
+      "runtimeSha": "8a1bb74685d6b3b67fcc817d7c7c5515816360aa",
+      "evidenceArchiveUpload": "BLOCKED_AUTO_REVIEW: internal screenshot archives to GitHub denied twice;153 local+6live preserved, explicit owner clarification required. No workaround.",
+      "smallCopyDelta": "teaser aria/wording local6 checks passed; final new Preview delta PENDING"
     },
     "nicheandglow.cz": {
       "domain": "nicheandglow.cz",
       "operator": "Ing. Eliška Ostroborodova",
       "ico": "23099259",
-      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "status": "PREVIEW_QA_VERIFIED_EVIDENCE_UPLOAD_BLOCKED",
       "products": 12,
       "owner": "PERFUME_WORKER sources / MAIN_WORKER integration",
       "sourceSha": "9c5cf23924a29e0a25961b5e37087297fc3d17bc",
@@ -950,8 +958,16 @@
       "emailDraft": "NOT_READY",
       "mailDuplicateCheck": "PENDING_CONTROLLER",
       "production": "NOT_DEPLOYED",
-      "preview": "PENDING_NEW_RUNTIME_SHA",
-      "evidence": "n447/s5/odovzdanie-20261110-parfumerie.md"
+      "preview": {
+        "url": "https://kava-chatbot-backend-6t8icfcrt-danielvendzur-codes-projects.vercel.app/s5.html?demo=nicheandglow",
+        "deploymentId": "dpl_paMQ9MR5Mb6JK1uwvLhnaDG9yUfg",
+        "workerPathsVerified": 12,
+        "paidCalls": 0
+      },
+      "evidence": "n447/s5/odovzdanie-20261110-parfumerie.md",
+      "runtimeSha": "8a1bb74685d6b3b67fcc817d7c7c5515816360aa",
+      "evidenceArchiveUpload": "BLOCKED_AUTO_REVIEW: internal screenshot archives to GitHub denied twice;153 local+6live preserved, explicit owner clarification required. No workaround.",
+      "smallCopyDelta": "teaser aria/wording local6 checks passed; final new Preview delta PENDING"
     }
   },
   "localGit": {
@@ -983,6 +999,6 @@
     "productionForbidden": true,
     "coordination": "Owner authorized existing browser Codex colleague; isolated branches, shared engine owner main worker. No internal subagents."
   },
-  "previewVerifiedCount": 11,
-  "nextAction": "Save perfume runtime checkpoint; own live12+12 Preview QA; count remains11 until verified. Existing colleague browser empty after maintenance; source Git preserved."
+  "previewVerifiedCount": 13,
+  "nextAction": "Publish tiny perfume teaser wording delta and verify live; preserve all local153+6 screenshots while Git archive upload blocked by automatic review. Existing colleague chat empty after browser maintenance; Git source branch preserved with Scentisimo prepared."
 }
