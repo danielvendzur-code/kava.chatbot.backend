@@ -10,11 +10,22 @@
   ],
   "observation": "Home and product rendered and visually inspected by coordinator. No product chat/advisor/launcher observed. Dotaz k produktu opened normal Dotaz na prodejce email/telephone/message/CAPTCHA form; nothing entered/sent, CAPTCHA not solved, no cart. Eau de la Couronne 50 ml / 1990 CZK / Skladem 2 ks; photo loaded.",
   "limits": "Only these URLs and this cookie/session mode; others unknown.",
-  "evidenceBytes": "PENDING_COORDINATOR_CHECKPOINT",
+  "evidenceBytes": {
+    "status": "RETRIEVED_AND_VISUALLY_REVIEWED",
+    "sourceCommit": "8a1bb74685d6b3b67fcc817d7c7c5515816360aa",
+    "sourceJson": "n447/s5/dokazy/scentisimo-live-eligibility-20261110.json",
+    "screenshots": [
+      "n447/s5/dokazy/scentisimo-live-home-20261110.webp",
+      "n447/s5/dokazy/scentisimo-live-product-20261110.webp",
+      "n447/s5/dokazy/scentisimo-live-question-20261110.webp"
+    ],
+    "reviewedAt": "2026-11-10T17:41:55.829103+00:00",
+    "reviewType": "Static review of MAIN_WORKER_CUA bytes; not own live merchant QA"
+  },
   "screenshots": [
-    "scentisimo-live-home-20261110.png",
-    "scentisimo-live-product-20261110.png",
-    "scentisimo-live-question-20261110.png"
+    "scentisimo-live-home-20261110.webp",
+    "scentisimo-live-product-20261110.webp",
+    "scentisimo-live-question-20261110.webp"
   ],
   "duplicateCheck": {
     "checkedAt": "2026-11-10T13:31:55.398397+00:00",

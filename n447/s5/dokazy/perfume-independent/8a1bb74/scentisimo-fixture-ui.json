@@ -1,0 +1,864 @@
+{
+  "commit": "8a1bb74685d6b3b67fcc817d7c7c5515816360aa",
+  "at": "2026-11-10T17:17:52.625622+00:00",
+  "qaType": "Isolated local Scentisimo data/config fixture on unchanged coordinator core; API responses mocked from source IDs. NOT registered/shared backend/live/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "id": "eau-de-la-couronne",
+      "pack": "50 ml",
+      "price": "1990 Kč",
+      "url": "https://www.scentisimo.cz/eau-de-la-couronne/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-eau-de-la-couronne-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "id": "josephine",
+      "pack": "100 ml",
+      "price": "3290 Kč",
+      "url": "https://www.scentisimo.cz/josephine/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-josephine-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "id": "boheme",
+      "pack": "100 ml",
+      "price": "1890 Kč",
+      "url": "https://www.scentisimo.cz/boheme/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-boheme-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "id": "golden-age",
+      "pack": "100 ml",
+      "price": "990 Kč",
+      "url": "https://www.scentisimo.cz/golden-age/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-golden-age-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "id": "vanille-sauvage-de-madagascar",
+      "pack": "100 ml",
+      "price": "1990 Kč",
+      "url": "https://www.scentisimo.cz/vanille-sauvage-de-madagascar/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-vanille-sauvage-de-madagascar-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "id": "nuit-patchouli",
+      "pack": "100 ml",
+      "price": "1990 Kč",
+      "url": "https://www.scentisimo.cz/nuit-patchouli/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-nuit-patchouli-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "id": "frangipane-e-cocco",
+      "pack": "100 ml",
+      "price": "1690 Kč",
+      "url": "https://www.scentisimo.cz/frangipane-e-cocco/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-frangipane-e-cocco-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "id": "acqua-mirabile-odorosa-di-firenze",
+      "pack": "100 ml",
+      "price": "1690 Kč",
+      "url": "https://www.scentisimo.cz/acqua-mirabile-odorosa-di-firenze/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-acqua-mirabile-odorosa-di-firenze-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "id": "body-mist-sea-mist",
+      "pack": "250 ml",
+      "price": "150 Kč",
+      "url": "https://www.scentisimo.cz/body-mist-sea-mist/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-body-mist-sea-mist-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "id": "menta-sui-navigli",
+      "pack": "150 ml",
+      "price": "490 Kč",
+      "url": "https://www.scentisimo.cz/menta-sui-navigli/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-menta-sui-navigli-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "id": "oud-himalayen",
+      "pack": "100 ml",
+      "price": "1890 Kč",
+      "url": "https://www.scentisimo.cz/oud-himalayen/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-oud-himalayen-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "id": "le-roi-empereur",
+      "pack": "50 ml",
+      "price": "2290 Kč",
+      "url": "https://www.scentisimo.cz/le-roi-empereur/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-le-roi-empereur-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "id": "eau-de-la-couronne",
+      "pack": "50 ml",
+      "price": "1990 Kč",
+      "url": "https://www.scentisimo.cz/eau-de-la-couronne/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-eau-de-la-couronne-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "id": "josephine",
+      "pack": "100 ml",
+      "price": "3290 Kč",
+      "url": "https://www.scentisimo.cz/josephine/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-josephine-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "id": "boheme",
+      "pack": "100 ml",
+      "price": "1890 Kč",
+      "url": "https://www.scentisimo.cz/boheme/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-boheme-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "id": "golden-age",
+      "pack": "100 ml",
+      "price": "990 Kč",
+      "url": "https://www.scentisimo.cz/golden-age/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-golden-age-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "id": "vanille-sauvage-de-madagascar",
+      "pack": "100 ml",
+      "price": "1990 Kč",
+      "url": "https://www.scentisimo.cz/vanille-sauvage-de-madagascar/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-vanille-sauvage-de-madagascar-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "id": "nuit-patchouli",
+      "pack": "100 ml",
+      "price": "1990 Kč",
+      "url": "https://www.scentisimo.cz/nuit-patchouli/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-nuit-patchouli-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "id": "frangipane-e-cocco",
+      "pack": "100 ml",
+      "price": "1690 Kč",
+      "url": "https://www.scentisimo.cz/frangipane-e-cocco/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-frangipane-e-cocco-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "id": "acqua-mirabile-odorosa-di-firenze",
+      "pack": "100 ml",
+      "price": "1690 Kč",
+      "url": "https://www.scentisimo.cz/acqua-mirabile-odorosa-di-firenze/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-acqua-mirabile-odorosa-di-firenze-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "id": "body-mist-sea-mist",
+      "pack": "250 ml",
+      "price": "150 Kč",
+      "url": "https://www.scentisimo.cz/body-mist-sea-mist/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-body-mist-sea-mist-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "id": "menta-sui-navigli",
+      "pack": "150 ml",
+      "price": "490 Kč",
+      "url": "https://www.scentisimo.cz/menta-sui-navigli/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-menta-sui-navigli-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "id": "oud-himalayen",
+      "pack": "100 ml",
+      "price": "1890 Kč",
+      "url": "https://www.scentisimo.cz/oud-himalayen/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-oud-himalayen-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "id": "le-roi-empereur",
+      "pack": "50 ml",
+      "price": "2290 Kč",
+      "url": "https://www.scentisimo.cz/le-roi-empereur/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-le-roi-empereur-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "eau-de-la-couronne",
+      "pack": "50 ml",
+      "price": "1990 Kč",
+      "url": "https://www.scentisimo.cz/eau-de-la-couronne/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-eau-de-la-couronne-1280.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "josephine",
+      "pack": "100 ml",
+      "price": "3290 Kč",
+      "url": "https://www.scentisimo.cz/josephine/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-josephine-1280.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "boheme",
+      "pack": "100 ml",
+      "price": "1890 Kč",
+      "url": "https://www.scentisimo.cz/boheme/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-boheme-1280.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "golden-age",
+      "pack": "100 ml",
+      "price": "990 Kč",
+      "url": "https://www.scentisimo.cz/golden-age/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-golden-age-1280.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "vanille-sauvage-de-madagascar",
+      "pack": "100 ml",
+      "price": "1990 Kč",
+      "url": "https://www.scentisimo.cz/vanille-sauvage-de-madagascar/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-vanille-sauvage-de-madagascar-1280.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "nuit-patchouli",
+      "pack": "100 ml",
+      "price": "1990 Kč",
+      "url": "https://www.scentisimo.cz/nuit-patchouli/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-nuit-patchouli-1280.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "frangipane-e-cocco",
+      "pack": "100 ml",
+      "price": "1690 Kč",
+      "url": "https://www.scentisimo.cz/frangipane-e-cocco/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-frangipane-e-cocco-1280.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "acqua-mirabile-odorosa-di-firenze",
+      "pack": "100 ml",
+      "price": "1690 Kč",
+      "url": "https://www.scentisimo.cz/acqua-mirabile-odorosa-di-firenze/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-acqua-mirabile-odorosa-di-firenze-1280.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "body-mist-sea-mist",
+      "pack": "250 ml",
+      "price": "150 Kč",
+      "url": "https://www.scentisimo.cz/body-mist-sea-mist/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-body-mist-sea-mist-1280.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "menta-sui-navigli",
+      "pack": "150 ml",
+      "price": "490 Kč",
+      "url": "https://www.scentisimo.cz/menta-sui-navigli/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-menta-sui-navigli-1280.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "oud-himalayen",
+      "pack": "100 ml",
+      "price": "1890 Kč",
+      "url": "https://www.scentisimo.cz/oud-himalayen/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-oud-himalayen-1280.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "le-roi-empereur",
+      "pack": "50 ml",
+      "price": "2290 Kč",
+      "url": "https://www.scentisimo.cz/le-roi-empereur/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scentisimo-result-le-roi-empereur-1280.webp"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-1-320.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "eau-de-la-couronne",
+          "photo": "/assets/s5/scentisimo/eau-de-la-couronne.webp"
+        },
+        {
+          "id": "josephine",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "boheme",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        },
+        {
+          "id": "golden-age",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-2-320.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "vanille-sauvage-de-madagascar",
+          "photo": "/assets/s3/scenes-k2/lavender.jpg"
+        },
+        {
+          "id": "nuit-patchouli",
+          "photo": "/assets/s3/scenes-k2/raspberries.jpg"
+        },
+        {
+          "id": "frangipane-e-cocco",
+          "photo": "/assets/s3/scenes-k2/coconut.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-3-320.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "acqua-mirabile-odorosa-di-firenze",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "body-mist-sea-mist",
+          "photo": "/assets/s5/scentisimo/body-mist-sea-mist.webp"
+        },
+        {
+          "id": "menta-sui-navigli",
+          "photo": "/assets/s3/scenes-k2/mint-herbs.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-4-320.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "oud-himalayen",
+          "photo": "/assets/s3/scenes-k2/almonds.jpg"
+        },
+        {
+          "id": "le-roi-empereur",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-5-320.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-1-390.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "eau-de-la-couronne",
+          "photo": "/assets/s5/scentisimo/eau-de-la-couronne.webp"
+        },
+        {
+          "id": "josephine",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "boheme",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        },
+        {
+          "id": "golden-age",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-2-390.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "vanille-sauvage-de-madagascar",
+          "photo": "/assets/s3/scenes-k2/lavender.jpg"
+        },
+        {
+          "id": "nuit-patchouli",
+          "photo": "/assets/s3/scenes-k2/raspberries.jpg"
+        },
+        {
+          "id": "frangipane-e-cocco",
+          "photo": "/assets/s3/scenes-k2/coconut.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-3-390.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "acqua-mirabile-odorosa-di-firenze",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "body-mist-sea-mist",
+          "photo": "/assets/s5/scentisimo/body-mist-sea-mist.webp"
+        },
+        {
+          "id": "menta-sui-navigli",
+          "photo": "/assets/s3/scenes-k2/mint-herbs.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-4-390.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "oud-himalayen",
+          "photo": "/assets/s3/scenes-k2/almonds.jpg"
+        },
+        {
+          "id": "le-roi-empereur",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-5-390.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-1-1280.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "eau-de-la-couronne",
+          "photo": "/assets/s5/scentisimo/eau-de-la-couronne.webp"
+        },
+        {
+          "id": "josephine",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "boheme",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        },
+        {
+          "id": "golden-age",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-2-1280.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "vanille-sauvage-de-madagascar",
+          "photo": "/assets/s3/scenes-k2/lavender.jpg"
+        },
+        {
+          "id": "nuit-patchouli",
+          "photo": "/assets/s3/scenes-k2/raspberries.jpg"
+        },
+        {
+          "id": "frangipane-e-cocco",
+          "photo": "/assets/s3/scenes-k2/coconut.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-3-1280.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "acqua-mirabile-odorosa-di-firenze",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "body-mist-sea-mist",
+          "photo": "/assets/s5/scentisimo/body-mist-sea-mist.webp"
+        },
+        {
+          "id": "menta-sui-navigli",
+          "photo": "/assets/s3/scenes-k2/mint-herbs.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-4-1280.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "oud-himalayen",
+          "photo": "/assets/s3/scenes-k2/almonds.jpg"
+        },
+        {
+          "id": "le-roi-empereur",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        }
+      ],
+      "screenshot": "scentisimo-question-5-1280.webp",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "scentisimo",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "eau-de-la-couronne",
+        "menta-sui-navigli"
+      ],
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "scentisimo-compare-320.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "eau-de-la-couronne",
+        "menta-sui-navigli"
+      ],
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "scentisimo-compare-390.webp"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "eau-de-la-couronne",
+        "menta-sui-navigli"
+      ],
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "scentisimo-compare-1280.webp"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true
+}

@@ -1,0 +1,6 @@
+/* Review-only company fragment. Not imported by any registered demo. */
+/* Extends the coordinator's existing perfume-card layout only to this new firm. */
+body[data-series=s5][data-cosmetics-demo=scentisimo] #cosmetics-root#cosmetics-root #cx-widget#cx-widget a.lg-wine-card{grid-template-columns:64px minmax(0,1fr)!important;min-width:0!important}
+body[data-series=s5][data-cosmetics-demo=scentisimo] #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-foot{flex-wrap:wrap!important;gap:5px!important}
+body[data-series=s5][data-cosmetics-demo=scentisimo] #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-foot strong{flex-basis:100%;white-space:normal;overflow-wrap:anywhere}
+body[data-series=s5][data-cosmetics-demo=scentisimo] #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-go{flex-basis:100%;text-align:center;white-space:normal!important}

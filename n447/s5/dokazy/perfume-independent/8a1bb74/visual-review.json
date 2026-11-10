@@ -1,0 +1,22 @@
+{
+  "reviewedAt": "2026-11-10T18:41:55.826106+01:00",
+  "observer": "PERFUME_WORKER",
+  "scope": "19 generated audit sheets visually reviewed: all 72 registered snapshot results + 36 isolated Scentisimo fixture results at 320/390/1280, all question pages at 390, mobile mock cards and comparisons. Complete raw screenshots remain local; compact derivatives prepared locally, not uploaded.",
+  "findings": [
+    {
+      "company": "nicheandglow",
+      "finding": "Small pink wordmark avatar has low visual contrast on white in coordinator 8a1bb74.",
+      "resolution": "Official square N favicon located and preserved unchanged. Proposed two-field registry override verified locally on 320/390/1280.",
+      "mainStatus": "NOT_APPLIED_BY_THIS_WORKER",
+      "reviewFile": "../../../perfume-fragments/nicheandglow.avatar-review.json"
+    }
+  ],
+  "resultCardReview": "All shown product photos, names, packs, prices and CTA labels are consistent; no empty result or unsupported add-on observed. Longer desktop content can scroll in the widget.",
+  "preview": "NOT_COMPLETED_ERR_CERT_AUTHORITY_INVALID",
+  "sourcePriceStockPackRefresh": "36/36 official pages match captured prices/packs/availability; product-specific pack scope or exact variant row recorded.",
+  "paidModelCalls": 0,
+  "completedDemoCountIncrease": 0,
+  "scentisimoChatMockContract": "Final focused fixture replies use unchanged S5 text contract: product name — pack za price, newline exact URL. An earlier mock format included redundant description in the price label; its local screenshots are preserved outside the final local proof set.",
+  "avatarFixVisualReview": "Official N mark verified visually at 320/390/1280; original main avatar remains an owner follow-up.",
+  "screenshotUpload": "LOCAL_ONLY. Coordinator7926 reports automatic-review rejection of QA screenshot/archive upload. No alternative upload path used."
+}

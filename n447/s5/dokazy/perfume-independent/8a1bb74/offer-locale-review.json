@@ -1,0 +1,71 @@
+{
+  "scope": "Read-only local coordinator snapshot/fixture copy observation; no shared edit.",
+  "rows": [
+    {
+      "slug": "nicheandglow",
+      "initial": {
+        "lang": "cs",
+        "labels": [
+          {
+            "tag": "SPAN",
+            "cls": "",
+            "text": "jednorázově"
+          },
+          {
+            "tag": "SPAN",
+            "cls": "",
+            "text": "měsíčně"
+          }
+        ]
+      },
+      "afterMockChat": {
+        "lang": "cs",
+        "labels": [
+          {
+            "tag": "SPAN",
+            "cls": "",
+            "text": "jednorázově"
+          },
+          {
+            "tag": "SPAN",
+            "cls": "",
+            "text": "měsíčně"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "scentisimo",
+      "initial": {
+        "lang": "cs",
+        "labels": [
+          {
+            "tag": "SPAN",
+            "cls": "",
+            "text": "jednorázově"
+          },
+          {
+            "tag": "SPAN",
+            "cls": "",
+            "text": "měsíčně"
+          }
+        ]
+      },
+      "afterMockChat": {
+        "lang": "cs",
+        "labels": [
+          {
+            "tag": "SPAN",
+            "cls": "",
+            "text": "jednorázově"
+          },
+          {
+            "tag": "SPAN",
+            "cls": "",
+            "text": "měsíčně"
+          }
+        ]
+      }
+    }
+  ]
+}

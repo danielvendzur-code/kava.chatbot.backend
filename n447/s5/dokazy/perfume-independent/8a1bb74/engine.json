@@ -1,0 +1,502 @@
+{
+  "commit": "8a1bb74685d6b3b67fcc817d7c7c5515816360aa",
+  "scope": "Independent offline use of coordinator core. No runtime registration, browser or Preview claim.",
+  "paidModelCalls": 0,
+  "companies": {
+    "adoraniche": {
+      "status": "ENGINE_TREE_PASS",
+      "source": "Coordinator integrated catalogue vs own source facts",
+      "formulaCount": 12,
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "clean",
+              "gourmand",
+              "green",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "clean"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "adam",
+              "paper-soap",
+              "cloud"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "roasted-tea",
+              "bain",
+              "chai",
+              "blond",
+              "maamoul"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "nature",
+              "nel",
+              "swim"
+            ]
+          }
+        }
+      ],
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "clean",
+            "fragranceProfile": "adam"
+          },
+          "id": "adam",
+          "url": "https://www.adoraniche.sk/imperial-parfums-adam-extrait-de-parfum-100ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "clean",
+            "fragranceProfile": "paper-soap"
+          },
+          "id": "paper-soap",
+          "url": "https://www.adoraniche.sk/j-scent-paper-soap-eau-de-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "clean",
+            "fragranceProfile": "cloud"
+          },
+          "id": "cloud",
+          "url": "https://www.adoraniche.sk/neydo-cloud-essence-28-08-eau-de-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "roasted-tea"
+          },
+          "id": "roasted-tea",
+          "url": "https://www.adoraniche.sk/j-scent-roasted-green-tea-eau-de-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "bain"
+          },
+          "id": "bain",
+          "url": "https://www.adoraniche.sk/maison-matine-bain-de-midi-eau-de-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "chai"
+          },
+          "id": "chai",
+          "url": "https://www.adoraniche.sk/baruti-chai-eau-de-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "blond"
+          },
+          "id": "blond",
+          "url": "https://www.adoraniche.sk/neydo-blond-redhead-16-11-eau-de-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "maamoul"
+          },
+          "id": "maamoul",
+          "url": "https://www.adoraniche.sk/ideo-parfumeurs-maamoul-mon-amour/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "nature"
+          },
+          "id": "nature",
+          "url": "https://www.adoraniche.sk/maison-matine-nature-insolente-eau-de-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "nel"
+          },
+          "id": "nel",
+          "url": "https://www.adoraniche.sk/kinetic-perfumes-nel-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "swim"
+          },
+          "id": "swim",
+          "url": "https://www.adoraniche.sk/gabar-03-swim-eau-de-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "id": "nucleus",
+          "url": "https://www.adoraniche.sk/baruti-nucleus-eau-de-parfum/"
+        }
+      ]
+    },
+    "nicheandglow": {
+      "status": "ENGINE_TREE_PASS",
+      "source": "Coordinator integrated catalogue vs own source facts",
+      "formulaCount": 12,
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "wood",
+              "green",
+              "gourmand",
+              "floral"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "mio",
+              "santalist",
+              "skin-fetish",
+              "ground",
+              "vetiver"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "helenist",
+              "nectarina",
+              "matcha"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "crispy",
+              "croissant"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "pivoine",
+              "float"
+            ]
+          }
+        }
+      ],
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "mio"
+          },
+          "id": "mio",
+          "url": "https://www.nicheandglow.cz/zbozi/mio-dio/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "santalist"
+          },
+          "id": "santalist",
+          "url": "https://www.nicheandglow.cz/zbozi/oraculum-santalist/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "skin-fetish"
+          },
+          "id": "skin-fetish",
+          "url": "https://www.nicheandglow.cz/zbozi/ourte-skin-fetish/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "ground"
+          },
+          "id": "ground",
+          "url": "https://www.nicheandglow.cz/zbozi/gabar-02-ground/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "vetiver"
+          },
+          "id": "vetiver",
+          "url": "https://www.nicheandglow.cz/zbozi/so-slow-eau-de-cologne-vetiver/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "helenist"
+          },
+          "id": "helenist",
+          "url": "https://www.nicheandglow.cz/zbozi/oraculum-helenist/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "nectarina"
+          },
+          "id": "nectarina",
+          "url": "https://www.nicheandglow.cz/zbozi/bergamoss-nettarina-frizzante/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "matcha"
+          },
+          "id": "matcha",
+          "url": "https://www.nicheandglow.cz/zbozi/versatile-paris-it-s-a-match-a/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "crispy"
+          },
+          "id": "crispy",
+          "url": "https://www.nicheandglow.cz/zbozi/ourte-crispy-porn/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "croissant"
+          },
+          "id": "croissant",
+          "url": "https://www.nicheandglow.cz/zbozi/croissant-cafe-spray/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "pivoine"
+          },
+          "id": "pivoine",
+          "url": "https://www.nicheandglow.cz/zbozi/bergamoss-pivoine-de-malen/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "float"
+          },
+          "id": "float",
+          "url": "https://www.nicheandglow.cz/zbozi/gabar-01-float/"
+        }
+      ]
+    },
+    "scentisimo": {
+      "status": "ENGINE_TREE_PASS",
+      "source": "Own reserved source facts on coordinator core; not integrated registry",
+      "formulaCount": 12,
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "floral",
+              "gourmand",
+              "fresh",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "eau-de-la-couronne",
+              "josephine",
+              "boheme",
+              "golden-age"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "vanille-sauvage-de-madagascar",
+              "nuit-patchouli",
+              "frangipane-e-cocco"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "acqua-mirabile-odorosa-di-firenze",
+              "body-mist-sea-mist",
+              "menta-sui-navigli"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "oud-himalayen",
+              "le-roi-empereur"
+            ]
+          }
+        }
+      ],
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "eau-de-la-couronne"
+          },
+          "id": "eau-de-la-couronne",
+          "url": "https://www.scentisimo.cz/eau-de-la-couronne/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "josephine"
+          },
+          "id": "josephine",
+          "url": "https://www.scentisimo.cz/josephine/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "boheme"
+          },
+          "id": "boheme",
+          "url": "https://www.scentisimo.cz/boheme/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "golden-age"
+          },
+          "id": "golden-age",
+          "url": "https://www.scentisimo.cz/golden-age/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "vanille-sauvage-de-madagascar"
+          },
+          "id": "vanille-sauvage-de-madagascar",
+          "url": "https://www.scentisimo.cz/vanille-sauvage-de-madagascar/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "nuit-patchouli"
+          },
+          "id": "nuit-patchouli",
+          "url": "https://www.scentisimo.cz/nuit-patchouli/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "frangipane-e-cocco"
+          },
+          "id": "frangipane-e-cocco",
+          "url": "https://www.scentisimo.cz/frangipane-e-cocco/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "acqua-mirabile-odorosa-di-firenze"
+          },
+          "id": "acqua-mirabile-odorosa-di-firenze",
+          "url": "https://www.scentisimo.cz/acqua-mirabile-odorosa-di-firenze/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "body-mist-sea-mist"
+          },
+          "id": "body-mist-sea-mist",
+          "url": "https://www.scentisimo.cz/body-mist-sea-mist/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "menta-sui-navigli"
+          },
+          "id": "menta-sui-navigli",
+          "url": "https://www.scentisimo.cz/menta-sui-navigli/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "oud-himalayen"
+          },
+          "id": "oud-himalayen",
+          "url": "https://www.scentisimo.cz/oud-himalayen/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "le-roi-empereur"
+          },
+          "id": "le-roi-empereur",
+          "url": "https://www.scentisimo.cz/le-roi-empereur/"
+        }
+      ]
+    }
+  }
+}

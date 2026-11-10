@@ -9,7 +9,7 @@ globalThis.S5_PERFUME_FRAGMENTS.nicheandglow = {
  "logos": {
   "landing": "/assets/s5/nicheandglow/logo.webp",
   "header": "/assets/s5/nicheandglow/logo.webp",
-  "avatar": "/assets/s5/nicheandglow/logo.webp"
+  "avatar": "/assets/s5/nicheandglow/mark.png"
  },
  "brand": {
   "name": "Niche & Glow",
@@ -27,7 +27,7 @@ globalThis.S5_PERFUME_FRAGMENTS.nicheandglow = {
   "fullName": "Niche & Glow",
   "url": "https://www.nicheandglow.cz/",
   "logo": "/assets/s5/nicheandglow/logo.webp",
-  "mark": "/assets/s5/nicheandglow/logo.webp",
+  "mark": "/assets/s5/nicheandglow/mark.png",
   "greeting": "Vyberte si parfém podle doložených tónů. Dva různé parfémy si můžete porovnat.",
   "quickChips": [
    "Fíkový list a kokos",

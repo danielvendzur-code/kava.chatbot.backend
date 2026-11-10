@@ -9,7 +9,15 @@
     "name": "Scentisimo",
     "domain": "scentisimo.cz",
     "website": "https://www.scentisimo.cz/",
-    "lang": "cs"
+    "lang": "cs",
+    "theme": {
+      "brand": "#2f2921",
+      "accent": "#2f2921",
+      "soft": "#f7f4ee",
+      "paper": "#ffffff",
+      "ink": "#28231d",
+      "line": "#e6dfd2"
+    }
   },
   "requiredEngineContract": "s5-fragrance-direction-profile-v1",
   "stepCopy": {
@@ -123,7 +131,7 @@
   "budgetQuestion": false,
   "introAfterIntegrationOnly": "Vyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.",
   "sceneStatus": "STATIC_MAP_REVIEWED_UI_QA_PENDING",
-  "logoStatus": "PENDING_AVATAR_VISUAL_QA",
+  "logoStatus": "OFFICIAL_WORDMARK_AND_SQUARE_FAVICON_REVIEWED_UI_PENDING",
   "enableRuntime": false,
   "liveEligibilityEvidence": "/n447/s5/dokazy/perfume-worker/coordinator-live-eligibility.json",
   "logos": {

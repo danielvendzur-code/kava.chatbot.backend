@@ -17,7 +17,8 @@
       "paper": "#ffffff",
       "ink": "#242024",
       "line": "#e8e1e5"
-    }
+    },
+    "mark": "/assets/s5/nicheandglow/mark.png"
   },
   "requiredEngineContract": "s5-fragrance-direction-profile-v1",
   "stepCopy": {
@@ -222,5 +223,6 @@
     "vetiver": [
       "/assets/s5/nicheandglow/so-slow-eau-de-cologne-vetiver.webp"
     ]
-  }
+  },
+  "avatarReview": "nicheandglow.avatar-review.json"
 }

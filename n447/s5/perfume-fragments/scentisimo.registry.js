@@ -9,7 +9,7 @@ globalThis.S5_PERFUME_FRAGMENTS.scentisimo = {
  "logos": {
   "landing": "/assets/s5/scentisimo/logo.webp",
   "header": "/assets/s5/scentisimo/logo.webp",
-  "avatar": "/assets/s5/scentisimo/logo.webp"
+  "avatar": "/assets/s5/scentisimo/mark.png"
  },
  "brand": {
   "name": "Scentisimo",
@@ -19,7 +19,7 @@ globalThis.S5_PERFUME_FRAGMENTS.scentisimo = {
   "fullName": "Scentisimo",
   "url": "https://www.scentisimo.cz/",
   "logo": "/assets/s5/scentisimo/logo.webp",
-  "mark": "/assets/s5/scentisimo/logo.webp",
+  "mark": "/assets/s5/scentisimo/mark.png",
   "greeting": "Vyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.",
   "quickChips": [
    "Frézie a kosatec",
@@ -28,12 +28,12 @@ globalThis.S5_PERFUME_FRAGMENTS.scentisimo = {
    "Porovnat dvě vůně"
   ],
   "theme": {
-   "brand": "#326976",
-   "accent": "#326976",
-   "soft": "#f2f6f5",
+   "brand": "#2f2921",
+   "accent": "#2f2921",
+   "soft": "#f7f4ee",
    "paper": "#ffffff",
-   "ink": "#202a2c",
-   "line": "#dbe5e5"
+   "ink": "#28231d",
+   "line": "#e6dfd2"
   }
  },
  "traitCopy": {

@@ -1,0 +1,61 @@
+{
+  "at": "2026-11-10T17:33:23.044534+00:00",
+  "coordinatorCommit": "8a1bb74685d6b3b67fcc817d7c7c5515816360aa",
+  "scope": "Local config-only fixture changes brand.mark and logos.avatar. NOT applied to shared main or live Preview.",
+  "sourceMarkContrastRatio": 4.261252481220109,
+  "sourceMarkDominantColors": [
+    [
+      23,
+      65,
+      55
+    ],
+    [
+      221,
+      129,
+      180
+    ]
+  ],
+  "rows": [
+    {
+      "width": 320,
+      "officialMark200": true,
+      "headerWordmarkUnchanged": true,
+      "sameProductReply": true,
+      "avatarBox": {
+        "x": 14,
+        "y": 291.75,
+        "width": 36,
+        "height": 36
+      },
+      "screenshot": "niche-avatar-fixed-320.webp"
+    },
+    {
+      "width": 390,
+      "officialMark200": true,
+      "headerWordmarkUnchanged": true,
+      "sameProductReply": true,
+      "avatarBox": {
+        "x": 14,
+        "y": 291.75,
+        "width": 36,
+        "height": 36
+      },
+      "screenshot": "niche-avatar-fixed-390.webp"
+    },
+    {
+      "width": 1280,
+      "officialMark200": true,
+      "headerWordmarkUnchanged": true,
+      "sameProductReply": true,
+      "avatarBox": {
+        "x": 721,
+        "y": 389.0625,
+        "width": 36,
+        "height": 36
+      },
+      "screenshot": "niche-avatar-fixed-1280.webp"
+    }
+  ],
+  "paidModelCalls": 0,
+  "complete": true
+}
