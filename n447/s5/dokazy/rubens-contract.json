@@ -1,0 +1,99 @@
+{
+  "products": 12,
+  "questions": 7,
+  "leaves": 12,
+  "reachable": 12,
+  "paidCalls": 0,
+  "paths": [
+    {
+      "answers": {
+        "category": "hair",
+        "careUse": "cleansingCare",
+        "hairNeed": "rDryHair"
+      },
+      "id": "shampoo-nettle"
+    },
+    {
+      "answers": {
+        "category": "hair",
+        "careUse": "cleansingCare",
+        "hairNeed": "rDamagedHair"
+      },
+      "id": "shampoo-seabuckthorn"
+    },
+    {
+      "answers": {
+        "category": "hair",
+        "careUse": "cleansingCare",
+        "hairNeed": "rOilyHair"
+      },
+      "id": "shampoo-rosemary"
+    },
+    {
+      "answers": {
+        "category": "hair",
+        "careUse": "rHairAfterWash"
+      },
+      "id": "conditioner"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careVariant": "rFaceUniversal"
+      },
+      "id": "face-tea"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careVariant": "rFaceFresh"
+      },
+      "id": "face-cucumber"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careVariant": "rFaceDry"
+      },
+      "id": "face-rose"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "dailyCare",
+        "careVariant": "rTropical"
+      },
+      "id": "body-tropical"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "dailyCare",
+        "careVariant": "withoutFragrance"
+      },
+      "id": "body-unscented"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "occasionalCare",
+        "careVariant": "rSoftHerbal"
+      },
+      "id": "scrub-chamomile"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "occasionalCare",
+        "careVariant": "rFreshMint"
+      },
+      "id": "scrub-mint"
+    },
+    {
+      "answers": {
+        "category": "lips"
+      },
+      "id": "lip-rollon"
+    }
+  ]
+}

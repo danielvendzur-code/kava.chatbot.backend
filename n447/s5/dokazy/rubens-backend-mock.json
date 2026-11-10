@@ -1,0 +1,24 @@
+{
+  "paidCalls": 0,
+  "mockCalls": 3,
+  "rows": [
+    {
+      "query": "Šampon na mastné vlasy",
+      "id": "shampoo-rosemary",
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "query": "Tělová péče bez vůně",
+      "id": "body-unscented",
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "query": "Olej pro suchou pleť",
+      "id": "face-rose",
+      "status": 200,
+      "exactUrlAndPrice": true
+    }
+  ]
+}

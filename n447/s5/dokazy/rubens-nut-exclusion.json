@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "paidCalls": 0,
+  "rows": [
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": "Nechci ořechové oleje, poraď balzám na rty."
+        }
+      ],
+      "reply": "V této ukázce nemám doloženou vhodnou variantu pro požadavek bez ořechových olejů. Balzám 7Vit roll-on je obsahuje, proto jej pro tento požadavek nedoporučím. Úplné složení konkrétního výrobku si prosím ověřte před výběrem.",
+      "mockCalls": 1
+    },
+    {
+      "messages": [
+        {
+          "role": "user",
+          "content": "Mám alergii na ořechy."
+        },
+        {
+          "role": "assistant",
+          "content": "Rozumím."
+        },
+        {
+          "role": "user",
+          "content": "Chci balzám v roll-on."
+        }
+      ],
+      "reply": "V této ukázce nemám doloženou vhodnou variantu pro požadavek bez ořechových olejů. Balzám 7Vit roll-on je obsahuje, proto jej pro tento požadavek nedoporučím. Úplné složení konkrétního výrobku si prosím ověřte před výběrem.",
+      "mockCalls": 1
+    }
+  ]
+}

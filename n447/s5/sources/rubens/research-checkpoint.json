@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-10T07:39:03.305415+00:00",
+  "status": "local_verified",
+  "claimSha": "a50a7366410911084b8808b06a4f9e9fb438c3ef",
+  "domain": "mydlarnarubens.cz",
+  "relatedDomain": "rubensherbar.cz",
+  "relatedDomainLimit": "Officially linked herbarium, own retrieval unavailable; no browser fallback or bypass attempted. Included in duplicate scan.",
+  "operator": "Miloslava Hrachovcová",
+  "ico": "69282749",
+  "operatorSource": "https://www.mydlarnarubens.cz/obchodni-podminky/",
+  "contact": "info@mydlarnarubens.cz",
+  "contactSource": "https://www.mydlarnarubens.cz/kontakty/",
+  "duplicates": "../../dokazy/rubens-duplicates.json",
+  "liveCheck": {
+    "home": "https://www.mydlarnarubens.cz/",
+    "product": "https://www.mydlarnarubens.cz/bylinkovy-sampon-rozmaryn-a-hermanek/",
+    "observed": "Own browser after Odmítnout, home and product screenshots inspected: no product-chat launcher observed. Zeptat se opens Dotaz na prodejce with email/phone/message fields and submit button. No entry or submission. Cílená péče nav contains static categories (lavender/sensitive/antibacterial), not observed interactive advisor.",
+    "limit": "Necessary-cookie session; other modes unproven."
+  },
+  "revenue": "NEOVERENÉ",
+  "emailDraft": "NOT_READY",
+  "mailDuplicateCheck": "PENDING_CONTROLLER",
+  "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
+  "production": "NOT_DEPLOYED",
+  "notes": [
+    "13 candidate source pages captured, final representative selection pending source/visual review.",
+    "Skip allergy-labelled lip version; no allergy-free/medical/SPF claims. Normal roll-on contains nut oils: material manufacturer restriction must remain factual.",
+    "15/45ml face oils,140/350g fats,90/190g scrub are sizes only, never extra formulas. Rose45ml OutOfStock excluded.",
+    "No shipping threshold displayed until verified visible official source.",
+    "Official delivery modal HTML independently retrieved: PPL114Kč,Parcelshop79Kč,pickup free,empty-order free-shipping threshold3000Kč; choices can change with items."
+  ],
+  "next": "Persist reviewed runtime/evidence, then own live12/12 Preview QA.",
+  "updatedAt": "2026-11-10T07:56:40.031083+00:00",
+  "products": 12,
+  "qa": {
+    "results": 36,
+    "screens": 57,
+    "widths": [
+      320,
+      390,
+      1280
+    ],
+    "noimgResults": 12,
+    "noimgScreens": 19,
+    "reachable": 12,
+    "questions": 7,
+    "paidCalls": 0,
+    "backendMockCalls": 5,
+    "sourceVariants": "110g hygienic-sack shampoo150Kč,15ml face oils262.50Kč,140g fats277.60Kč,90g scrubs295Kč,conditioner100g189.10Kč,lip9g157.50Kč",
+    "optionalAddon": "Conditioner189.10 only after shampoo150 =339.10Kč; unchecked. No forced shampoo after conditioner.",
+    "visualReview": "12result views at3widths plus7question nodes; hair-afterwash/bodycream/herbalbath scenes corrected by configuration. Focused affected-path/scene checks3widths; transient screenshots recaptured with reduced motion.",
+    "nutExclusion": "Initial offline counterexample recommended nut-oil balm; Rubens-only rule now blocks known-nut-oil suggestion and unverified allergy-safe alternatives, direct and followup tested backend and actual offline UI."
+  }
+}

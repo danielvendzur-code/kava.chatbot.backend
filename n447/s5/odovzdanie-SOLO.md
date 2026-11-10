@@ -325,3 +325,27 @@ Vlastný cloud browser prešiel všetkých12koncových ciest s resetom medzi nim
 Séria má deväť vlastne Preview overených ukážok. Žiadna produkcia ani zákaznícke schválenie; textové návrhyNOT_READY, poštaPENDING_CONTROLLER a bez zmien.
 
 Ďalšia previerka: Big Blond Coffee / Beskydská pražírna kávy s.r.o./08181241 je HOLD_EXISTING_INTERACTIVE_ADVISOR. Vlastný browser otvoril home→Chci poradit→Jak připravujete kávu(6príprav)→espresso→Jaké preferujete chutě(3chute, odkazy na filtrované produkty). Nie je iba ľudský kontakt; už má výberový poradca. Bez rezervácie/kódu/správy. Pokračovať ďalšou vhodnou firmou, neobnovovať HOLD.
+
+
+## Pokračovanie po deviatich Preview – Rubens rezervovaný
+
+Najnovší úplný checkpoint1d2adf0013b1e13b99080db3499cfacd4e2ac775, Boemi kód922cbf3/dpl_9fLJ4vgUyvQopJmTwC69EZtTyXBe.56WebP snímok uložených v8samostatných archívoch(každý<250KB) s manifestmi a4priamymi Preview WebP. Žiadne čakanie na metadata-only build.
+
+RaE a MYDLOVE sú existujúce ukážky vo vzdialenej sérii4 podľa domény aj prevádzkovateľa, preto HOLD_DUPLICATE; ich kód sa nemenil. Fresh91ref audit rae-mydlove-duplicates.json. RaE aktuálny prevádzkovateľ KULISH RADOMÍR/28569725; PCsupport.cz je tvorca webu.
+
+Nový Rubens/mydlarnarubens.cz rezervovaný v coord/s5-claims a50a7366410911084b8808b06a4f9e9fb438c3ef po kontrole91refs aj rubensherbar.cz a Miloslavy Hrachovcovej/69282749. Živá home+šampón, cookies odmietnuté, Zeptat se otvoril Dotaz na prodejce; bez vyplnenia. Iné widgetové režimy nepreukázané. Aktuálne12receptúr zo13prezretých zdrojov:3šampóny,kondicionér,3pleťové oleje,2telové tuky,2peelingy,1roll-onbalzam. Všetky oficiálne fotografie vizuálne prezreté; webové WebP zachovávajú obsah originálnych PNG, iba znižujú veľkosť. Varianty15/45ml,140/350g a obaly nie sú ďalšie receptúry; ružový45mlvypredaný sa neponúka. Verzia balzamu označená pre alergikov nezaradená; normálny9gobsahuje ořechovéoleje a ponecháva konkrétne obmedzenie výrobcu. Bez SPF,liečenia či rastu vlasov.
+
+Rubens kód zatiaľ lokálny WIP,12/12dosiahnuteľnosť potvrdenáoffline; QA3šírok beží a výsledok ešte nie je odovzdaný. PreviewPENDING. Ďalší krok: vyhodnotiť výsledok procesu,vizuálne prezrieť otázky/výsledky,uložiťruntime a skutočne overiť12Preview ciest.
+
+
+## Rubens – lokálne QA dokončené, Preview PENDING
+
+12/12hlavných výsledkov,7otázkových uzlov;36výsledkov/57obrazoviek na320/390/1280px,bezfotografií12/19,0nálezov. Ceny,bellenia,CTA,načítané fotografie,reset,nepredvolený kondicionér339,10Kčdokopy,porovnanie,čipy4×40px,kontrastnýoficiálnyavatar,hover,čakanie/reducedmotion a mockchat prešli.3základnébackendmock +2vylúčenieorechov,0platených.
+
+Vizuálne prezreté12výsledkovna3šírkach a7otázok. Konfigurácia opravila nevhodnú fotku telovéhooleja pri kondicionéri na rozčesávanie, telovútextúru a čajovélístky pri heřmánku na kúpeľ. Zmenené kroky sa overili cielene3šírky, celý nezmenenýDFS sa neopakoval. Prechodové snímky boli znovu zachytené bez animácie.
+
+Konkrétny nový QA nález: dotaz Nechci ořechové oleje, poraď balzám na rty predtým odporučil9g7Vit s orechovými olejmi. Pravidlo iba Rubens v S5reply teraz takýprodukt neodporúča a neponúka neoverenú alternatívu ako vhodnú pri alergii; prešlo priame aj nadväzujúce zadanie v backend mock a v skutočnom offlineUI. Spoločný engine a staréfirmy bez zmeny.
+
+Úvod bez sľubu rozpočtu; hlavné varianty presne označené, bez vymyslených predvolených variantovýchURL (e-shop vyžaduje vlastný výber obalu/objemu). Žiadna výroba histórie,SPF,liečenia,rastu vlasov či hypoalergénnych garancií. Zdroj dopravy je aktuálne načítaný oficiálny modal: PPL114/Parcelshop79,od3000Kčzdarma; UI uvádza zostávajúcu sumu a podmienky e-shopu.
+
+Email je iba textovýNOT_READY447+10sinfo@mydlarnarubens.cz z kontaktov. Pošta bez zmien, produkciaNOT_DEPLOYED. Preview zatiaľPENDING; počet stáledeväť.

@@ -1,0 +1,28 @@
+{
+  "ok": true,
+  "rows": [
+    {
+      "width": 320,
+      "conditioner": true,
+      "photosLoaded": true,
+      "correctScenes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "conditioner": true,
+      "photosLoaded": true,
+      "correctScenes": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "conditioner": true,
+      "photosLoaded": true,
+      "correctScenes": true,
+      "noOverflow": true
+    }
+  ],
+  "paidCalls": 0,
+  "scope": "only changed conditioner path and body/scrub scenes; original full DFS not repeated"
+}
