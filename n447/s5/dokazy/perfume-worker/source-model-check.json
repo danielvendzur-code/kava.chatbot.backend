@@ -1,0 +1,201 @@
+{
+  "checkedAt": "2026-11-10T13:05:20.098889+00:00",
+  "scope": "Reviewed source facts + proposed declarative tree; not shared-engine or browser UI QA",
+  "reports": [
+    {
+      "slug": "adoraniche",
+      "sourceRecords": 12,
+      "uniqueFormulaRoutes": 12,
+      "loadedLocalPhotos": 12,
+      "paths": [
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "nature"
+          },
+          "productId": "nature"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "nel"
+          },
+          "productId": "nel"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "swim"
+          },
+          "productId": "swim"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "clean",
+            "fragranceProfile": "adam"
+          },
+          "productId": "adam"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "clean",
+            "fragranceProfile": "paper-soap"
+          },
+          "productId": "paper-soap"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "clean",
+            "fragranceProfile": "cloud"
+          },
+          "productId": "cloud"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "roasted-tea"
+          },
+          "productId": "roasted-tea"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "bain"
+          },
+          "productId": "bain"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "chai"
+          },
+          "productId": "chai"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "blond"
+          },
+          "productId": "blond"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "maamoul"
+          },
+          "productId": "maamoul"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "productId": "nucleus"
+        }
+      ],
+      "priceStockPackUrlChecks": "PASS",
+      "treeModelChecks": "PASS",
+      "uiQA": "NOT_RUN_ENGINE_PENDING",
+      "liveWidgetQA": "PENDING",
+      "previewQA": "NOT_RUN",
+      "paidModelCalls": 0
+    },
+    {
+      "slug": "nicheandglow",
+      "sourceRecords": 12,
+      "uniqueFormulaRoutes": 12,
+      "loadedLocalPhotos": 12,
+      "paths": [
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "helenist"
+          },
+          "productId": "helenist"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "nectarina"
+          },
+          "productId": "nectarina"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "matcha"
+          },
+          "productId": "matcha"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "pivoine"
+          },
+          "productId": "pivoine"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "float"
+          },
+          "productId": "float"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "crispy"
+          },
+          "productId": "crispy"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "croissant"
+          },
+          "productId": "croissant"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "mio"
+          },
+          "productId": "mio"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "santalist"
+          },
+          "productId": "santalist"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "skin-fetish"
+          },
+          "productId": "skin-fetish"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "ground"
+          },
+          "productId": "ground"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "vetiver"
+          },
+          "productId": "vetiver"
+        }
+      ],
+      "priceStockPackUrlChecks": "PASS",
+      "treeModelChecks": "PASS",
+      "uiQA": "NOT_RUN_ENGINE_PENDING",
+      "liveWidgetQA": "PENDING",
+      "previewQA": "NOT_RUN",
+      "paidModelCalls": 0
+    }
+  ]
+}

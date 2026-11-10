@@ -1,0 +1,16 @@
+{
+  "type": "EXISTING_ENGINE_GAP_CONFIRMED",
+  "fixturesOnly": true,
+  "modelCalls": 0,
+  "steps": [],
+  "answers": {
+    "fragranceDirection": "wood",
+    "fragranceProfile": "sandalwood"
+  },
+  "actualMatches": [
+    "citrus-fixture",
+    "woody-fixture"
+  ],
+  "actualWinner": "citrus-fixture",
+  "required": "Opt-in fragranceDirection/fragranceProfile filtering and questions from source-evidenced note preferences. No skincare field relabeling."
+}

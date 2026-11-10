@@ -1,0 +1,1136 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.adoraniche = {
+ "brand": "Adora Niche",
+ "domain": "adoraniche.sk",
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "sk",
+ "country": "SK",
+ "currency": "EUR",
+ "products": [
+  {
+   "id": "adam",
+   "name": "Imperial Parfums Adam Extrait de Parfum 100ml",
+   "url": "https://www.adoraniche.sk/imperial-parfums-adam-extrait-de-parfum-100ml/",
+   "priceAmount": 199.0,
+   "price": "199,00 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Ruža, jazmín a vanilka s ambrou a sladkým pižmom.",
+   "reason": "Ruža, jazmín a vanilka s ambrou a sladkým pižmom.",
+   "photo": "/assets/s5/adoraniche/imperial-parfums-adam-extrait-de-parfum-100ml.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.adoraniche.sk/imperial-parfums-adam-extrait-de-parfum-100ml/",
+    "verifiedAt": "2026-11-10T12:53:17.741576+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": [
+      "Skladom"
+     ],
+     "schema": "https://schema.org/InStock"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 199.0,
+     "visiblePrice": "199 €",
+     "schemaAmount": "199.00",
+     "currency": "EUR",
+     "vatSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+     "vatEvidence": "OP bod 4.1: všetky ceny vrátane DPH v EUR."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sourceText": "adkého pižma, ktoré vás sprevádza ako tajomstvo. Top Notes : Pomaranč, turecká ruža, bergamot Heart Notes : Egyptský jazmín, madagaskarská vanilka, drevitý akord Base Notes : Ambra, intenzívne sladké pižmo Objem : 100 ml"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/533_adam.png?ff=1&x=1024&y=768&q=85&ts=6aae6e71&sg=161563f2",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/533_adam.png?ff=1&x=1024&y=768&q=85&ts=6aae6e71&sg=161563f2",
+     "localPath": "/assets/s5/adoraniche/imperial-parfums-adam-extrait-de-parfum-100ml.webp",
+     "width": 1024,
+     "height": 768,
+     "downloadedAt": "2026-11-10T12:53:20.666099+00:00",
+     "sha256": "1792b535c3393f824039883b5098f8e4c172115a72291d34b1567f7fbfcda3a5",
+     "visualReview": "Product contact sheet manually inspected by PERFUME_WORKER; no browser UI claim."
+    },
+    "scent": "Ruža, jazmín a vanilka s ambrou a sladkým pižmom.",
+    "selectionTraits": {
+     "fragranceDirection": "clean",
+     "fragranceProfile": "adam"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.adoraniche.sk/imperial-parfums-adam-extrait-de-parfum-100ml/",
+     "navigationLabel": "Ruža a vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true,
+     "noteEvidence": "Imperial Parfums Adam je skrytým pokladom nebeského chrámu, tam kde prší ruže a čas sa spomaľuje. Pomaranč a bergamot sa spájajú s tureckou ružou, egyptským jazmínom a madagaskarskou vanilkou, kompozícia sa uzatvára hrejivým základom z ambry a intenzívneho sladkého pižma."
+    },
+    "fragrance": {
+     "notes": [
+      "turecká ruža",
+      "madagaskarská vanilka",
+      "pomaranč",
+      "bergamot"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum"
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical effects",
+     "allergy-free or skin-safety promise",
+     "guaranteed longevity or projection",
+     "integration with merchant cart",
+     "concentration implies intensity"
+    ]
+   }
+  },
+  {
+   "id": "paper-soap",
+   "name": "J-Scent Paper Soap Eau de Parfum 50ml",
+   "url": "https://www.adoraniche.sk/j-scent-paper-soap-eau-de-parfum/",
+   "priceAmount": 122.0,
+   "price": "122,00 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Mydlový dojem s aldehydmi, kvetinovým srdcom a pižmom.",
+   "reason": "Mydlový dojem s aldehydmi, kvetinovým srdcom a pižmom.",
+   "photo": "/assets/s5/adoraniche/j-scent-paper-soap-eau-de-parfum.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.adoraniche.sk/j-scent-paper-soap-eau-de-parfum/",
+    "verifiedAt": "2026-11-10T12:53:17.742417+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": [
+      "Skladom"
+     ],
+     "schema": "https://schema.org/InStock"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 122.0,
+     "visiblePrice": "122 €",
+     "schemaAmount": "122.00",
+     "currency": "EUR",
+     "vatSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+     "vatEvidence": "OP bod 4.1: všetky ceny vrátane DPH v EUR."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "jšie rituály môžu byť plné krásy. Top notes : aldehydy Middle notes : ruža, geránium, konvalinka, levanduľa Base notes : pižmo, jazmín Zloženie : ALCOHOL, PARFUM (FRAGRANCE), CITRONELLOL, GERANIOL, LINALOOL Objem : 50 ml"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/295_edp-w05.jpg?ff=1&x=1024&y=768&q=85&ts=6a47babc&sg=161563f2",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/295_edp-w05.jpg?ff=1&x=1024&y=768&q=85&ts=6a47babc&sg=161563f2",
+     "localPath": "/assets/s5/adoraniche/j-scent-paper-soap-eau-de-parfum.webp",
+     "width": 1024,
+     "height": 768,
+     "downloadedAt": "2026-11-10T12:53:20.228322+00:00",
+     "sha256": "c0f34471b8fbafe300e0fe7a072658f097c86724d4921ec9a98acdcf80c0afd2",
+     "visualReview": "Product contact sheet manually inspected by PERFUME_WORKER; no browser UI claim."
+    },
+    "scent": "Mydlový dojem s aldehydmi, kvetinovým srdcom a pižmom.",
+    "selectionTraits": {
+     "fragranceDirection": "clean",
+     "fragranceProfile": "paper-soap"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.adoraniche.sk/j-scent-paper-soap-eau-de-parfum/",
+     "navigationLabel": "Mydlový dojem s aldehydmi",
+     "navigationGroupingIsNotOfficialFragranceFamily": true,
+     "noteEvidence": "Paper Soap je nostalgická mydlová vôňa so sviežim nádychom a krémovou sladkosťou. Otvára sa aldehydom, prechádza do srdca z ruže, geránia, konvalinky a levandule a uzatvára sa jemným základom z pižma a jazmínu. Je to pocit čistej, čerstvo umytej pokožky."
+    },
+    "fragrance": {
+     "notes": [
+      "aldehydy",
+      "ruža",
+      "geránium",
+      "konvalinka",
+      "levanduľa",
+      "pižmo",
+      "jazmín"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical effects",
+     "allergy-free or skin-safety promise",
+     "guaranteed longevity or projection",
+     "integration with merchant cart",
+     "concentration implies intensity"
+    ]
+   }
+  },
+  {
+   "id": "roasted-tea",
+   "name": "J-Scent Roasted Green Tea Eau de Parfum 50ml",
+   "url": "https://www.adoraniche.sk/j-scent-roasted-green-tea-eau-de-parfum/",
+   "priceAmount": 122.0,
+   "price": "122,00 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Interpretácia praženého zeleného čaju hojicha s kokosom, arašidmi a morskými riasami.",
+   "reason": "Interpretácia praženého zeleného čaju hojicha s kokosom, arašidmi a morskými riasami.",
+   "photo": "/assets/s5/adoraniche/j-scent-roasted-green-tea-eau-de-parfum.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.adoraniche.sk/j-scent-roasted-green-tea-eau-de-parfum/",
+    "verifiedAt": "2026-11-10T12:53:17.744002+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": [
+      "Skladom"
+     ],
+     "schema": "https://schema.org/InStock"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 122.0,
+     "visiblePrice": "122 €",
+     "schemaAmount": "122.00",
+     "currency": "EUR",
+     "vatSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+     "vatEvidence": "OP bod 4.1: všetky ceny vrátane DPH v EUR."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": ": kokos, arašidy, morské riasy Middle notes : jazmín, mäta, zimozeleň Base notes : kosatec, cédrové drevo, vanilka, ďatelina Zloženie : ALCOHOL, PARFUM (FRAGRANCE), BENZYL BENZOATE, GERANIOL, HEXYL CINNAMAL Objem : 50 ml"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/283_edp-w01.jpg?ff=1&x=1024&y=768&q=85&ts=6a479482&sg=161563f2",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/283_edp-w01.jpg?ff=1&x=1024&y=768&q=85&ts=6a479482&sg=161563f2",
+     "localPath": "/assets/s5/adoraniche/j-scent-roasted-green-tea-eau-de-parfum.webp",
+     "width": 1024,
+     "height": 768,
+     "downloadedAt": "2026-11-10T12:53:20.144658+00:00",
+     "sha256": "e26fc33a1cb46caebab36ce04d2ef13f09c79870cf42685f7380c67e4de89aa8",
+     "visualReview": "Product contact sheet manually inspected by PERFUME_WORKER; no browser UI claim."
+    },
+    "scent": "Interpretácia praženého zeleného čaju hojicha s kokosom, arašidmi a morskými riasami.",
+    "selectionTraits": {
+     "fragranceDirection": "gourmand",
+     "fragranceProfile": "roasted-tea"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.adoraniche.sk/j-scent-roasted-green-tea-eau-de-parfum/",
+     "navigationLabel": "Pražený zelený čaj",
+     "navigationGroupingIsNotOfficialFragranceFamily": true,
+     "noteEvidence": "Roasted Green Tea je vôňa čerstvo pripraveného hojicha, praženého japonského zeleného čaju obľúbeného po celom Japonsku. Otvára sa kokosom, arašidmi a morskými riasami, prechádza do srdca z jazmínu, mäty a zimozelene a uzatvára sa teplým základom z kosatca, cédra, vanilky a ďateliny. Je to šálka čaju premenená na parfum."
+    },
+    "fragrance": {
+     "notes": [
+      "kokos",
+      "arašidy",
+      "morské riasy",
+      "jazmín",
+      "mäta",
+      "zimozeleň",
+      "kosatec",
+      "cédrové drevo",
+      "vanilka",
+      "ďatelina"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical effects",
+     "allergy-free or skin-safety promise",
+     "guaranteed longevity or projection",
+     "integration with merchant cart",
+     "concentration implies intensity"
+    ]
+   }
+  },
+  {
+   "id": "nature",
+   "name": "Maison Matine Nature Insolente Eau de Parfum 50ml",
+   "url": "https://www.adoraniche.sk/maison-matine-nature-insolente-eau-de-parfum/",
+   "priceAmount": 65.0,
+   "price": "65,00 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Citrusový úvod, mäta a medový melón nad vetiverom a cédrom.",
+   "reason": "Citrusový úvod, mäta a medový melón nad vetiverom a cédrom.",
+   "photo": "/assets/s5/adoraniche/maison-matine-nature-insolente-eau-de-parfum.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.adoraniche.sk/maison-matine-nature-insolente-eau-de-parfum/",
+    "verifiedAt": "2026-11-10T12:53:17.744810+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": [
+      "Skladom"
+     ],
+     "schema": "https://schema.org/InStock"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 65.0,
+     "visiblePrice": "65 €",
+     "schemaAmount": "65.00",
+     "currency": "EUR",
+     "vatSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+     "vatEvidence": "OP bod 4.1: všetky ceny vrátane DPH v EUR."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "tmi a nechať prírodu, nech si vezme späť, čo jej patrí. Top notes : pomaranč, citrón, bergamot Middle notes : konvalinka, mäta, medový melón Base notes : vetiver, cédr, pižmo Parfumér : Philippine Courtière Objem : 50 ml"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/325_nature-in.png?ff=1&x=1024&y=768&q=85&ts=6a4d1686&sg=161563f2",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/325_nature-in.png?ff=1&x=1024&y=768&q=85&ts=6a4d1686&sg=161563f2",
+     "localPath": "/assets/s5/adoraniche/maison-matine-nature-insolente-eau-de-parfum.webp",
+     "width": 1024,
+     "height": 768,
+     "downloadedAt": "2026-11-10T12:53:20.416331+00:00",
+     "sha256": "71c0e5f041764241b0bcaeedcec31b1c3ae86b4ab2ac24ff71481a311be4b5ff",
+     "visualReview": "Product contact sheet manually inspected by PERFUME_WORKER; no browser UI claim."
+    },
+    "scent": "Citrusový úvod, mäta a medový melón nad vetiverom a cédrom.",
+    "selectionTraits": {
+     "fragranceDirection": "green",
+     "fragranceProfile": "nature"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.adoraniche.sk/maison-matine-nature-insolente-eau-de-parfum/",
+     "navigationLabel": "Citrón a mäta",
+     "navigationGroupingIsNotOfficialFragranceFamily": true,
+     "noteEvidence": "Nature Insolente je letná a ostrá svieža vôňa, v ktorej si príroda vracia svoje práva. Otvára sa pomarančom, citrónom a bergamotom, prechádza do srdca z konvalinky, mäty a medového melónu a uzatvára sa základom z vetiveru, cédra a pižma. Je to návrat k prirodzeným inštinktom."
+    },
+    "fragrance": {
+     "notes": [
+      "pomaranč",
+      "citrón",
+      "bergamot",
+      "konvalinka",
+      "mäta",
+      "medový melón",
+      "vetiver",
+      "cédr",
+      "pižmo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical effects",
+     "allergy-free or skin-safety promise",
+     "guaranteed longevity or projection",
+     "integration with merchant cart",
+     "concentration implies intensity"
+    ]
+   }
+  },
+  {
+   "id": "bain",
+   "name": "Maison Matine Bain De Midi Eau de Parfum 50ml",
+   "url": "https://www.adoraniche.sk/maison-matine-bain-de-midi-eau-de-parfum/",
+   "priceAmount": 65.0,
+   "price": "65,00 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Kokos a bergamot s kvetom tiaré, ylang ylangom a vanilkou.",
+   "reason": "Kokos a bergamot s kvetom tiaré, ylang ylangom a vanilkou.",
+   "photo": "/assets/s5/adoraniche/maison-matine-bain-de-midi-eau-de-parfum.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.adoraniche.sk/maison-matine-bain-de-midi-eau-de-parfum/",
+    "verifiedAt": "2026-11-10T12:53:20.147069+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": [
+      "Skladom"
+     ],
+     "schema": "https://schema.org/InStock"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 65.0,
+     "visiblePrice": "65 €",
+     "schemaAmount": "65.00",
+     "currency": "EUR",
+     "vatSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+     "vatEvidence": "OP bod 4.1: všetky ceny vrátane DPH v EUR."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "tešiť sa z nových vecí a nechať sa unášať jednoduchosťou letného dňa. Top notes : bergamot, kokos Middle notes : kvet tiaré, ylang ylang, gardénia Base notes : vanilka, pižmo Parfumér : Philippine Courtière Objem : 50 ml"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/319_bain.png?ff=1&x=1024&y=768&q=85&ts=6a4d1031&sg=161563f2",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/319_bain.png?ff=1&x=1024&y=768&q=85&ts=6a4d1031&sg=161563f2",
+     "localPath": "/assets/s5/adoraniche/maison-matine-bain-de-midi-eau-de-parfum.webp",
+     "width": 1024,
+     "height": 768,
+     "downloadedAt": "2026-11-10T12:53:22.765692+00:00",
+     "sha256": "720f00470b13bdad1a190064b6420ada557ce25793058ce105bd784fd30f090f",
+     "visualReview": "Product contact sheet manually inspected by PERFUME_WORKER; no browser UI claim."
+    },
+    "scent": "Kokos a bergamot s kvetom tiaré, ylang ylangom a vanilkou.",
+    "selectionTraits": {
+     "fragranceDirection": "gourmand",
+     "fragranceProfile": "bain"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.adoraniche.sk/maison-matine-bain-de-midi-eau-de-parfum/",
+     "navigationLabel": "Kokos a kvet tiaré",
+     "navigationGroupingIsNotOfficialFragranceFamily": true,
+     "noteEvidence": "Bain De Midi je veselá a hladká kompozícia, ktorá pozýva žiť naplno, jednoducho a s ľahkosťou. Otvára sa bergamotom a kokosom, prechádza do srdca z kvetu tiaré, ylang ylangu a gardénie a uzatvára sa teplým základom z vanilky a pižma. Je to pocit slnečného dňa pri mori."
+    },
+    "fragrance": {
+     "notes": [
+      "bergamot",
+      "kokos",
+      "kvet tiaré",
+      "ylang ylang",
+      "gardénia",
+      "vanilka",
+      "pižmo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical effects",
+     "allergy-free or skin-safety promise",
+     "guaranteed longevity or projection",
+     "integration with merchant cart",
+     "concentration implies intensity"
+    ]
+   }
+  },
+  {
+   "id": "chai",
+   "name": "Baruti Chai Eau de Parfum 50ml",
+   "url": "https://www.adoraniche.sk/baruti-chai-eau-de-parfum/",
+   "priceAmount": 160.0,
+   "price": "160,00 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Masala chai: čierny čaj, koreniny a napenené mlieko s kakaom a vanilkou.",
+   "reason": "Masala chai: čierny čaj, koreniny a napenené mlieko s kakaom a vanilkou.",
+   "photo": "/assets/s5/adoraniche/baruti-chai-eau-de-parfum.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.adoraniche.sk/baruti-chai-eau-de-parfum/",
+    "verifiedAt": "2026-11-10T12:53:20.229709+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": [
+      "Skladom"
+     ],
+     "schema": "https://schema.org/InStock"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 160.0,
+     "visiblePrice": "160 €",
+     "schemaAmount": "160.00",
+     "currency": "EUR",
+     "vatSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+     "vatEvidence": "OP bod 4.1: všetky ceny vrátane DPH v EUR."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "e. Základ z kakaa, ruží, vanilky, pižma a kože zanecháva sladkú, hrejivú a zmyselnú stopu. Tóny : Škorica, klinčeky, zázvor, kardamón, korenie, čierny čaj, napenené mlieko, kakao, ruže, vanilka, pižmo, koža Objem : 50 ml"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/340_chai-50ml-1-square.jpg?ff=1&x=1024&y=768&q=85&ts=6a4e6123&sg=161563f2",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/340_chai-50ml-1-square.jpg?ff=1&x=1024&y=768&q=85&ts=6a4e6123&sg=161563f2",
+     "localPath": "/assets/s5/adoraniche/baruti-chai-eau-de-parfum.webp",
+     "width": 1024,
+     "height": 768,
+     "downloadedAt": "2026-11-10T12:53:22.374377+00:00",
+     "sha256": "4588fe51c00e0004a603b1613a48f7535abe09acce05c026040408e8fc4a9777",
+     "visualReview": "Product contact sheet manually inspected by PERFUME_WORKER; no browser UI claim."
+    },
+    "scent": "Masala chai: čierny čaj, koreniny a napenené mlieko s kakaom a vanilkou.",
+    "selectionTraits": {
+     "fragranceDirection": "gourmand",
+     "fragranceProfile": "chai"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.adoraniche.sk/baruti-chai-eau-de-parfum/",
+     "navigationLabel": "Čierny čaj a koreniny",
+     "navigationGroupingIsNotOfficialFragranceFamily": true,
+     "noteEvidence": "Baruti Chai je bohatá masala chai, návykový gurmánsky zážitok stvorený pre potešenie. Škorica, klinčeky, zázvor a kardamón sa spájajú s korenistým čiernym čajom a napeneným mliekom, kompozícia sa uzatvára hrejivým základom z kakaa, ruží, vanilky, pižma a kože."
+    },
+    "fragrance": {
+     "notes": [
+      "škorica",
+      "klinčeky",
+      "zázvor",
+      "kardamón",
+      "korenie",
+      "čierny čaj",
+      "napenené mlieko",
+      "kakao",
+      "ruže",
+      "vanilka",
+      "pižmo",
+      "koža"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical effects",
+     "allergy-free or skin-safety promise",
+     "guaranteed longevity or projection",
+     "integration with merchant cart",
+     "concentration implies intensity"
+    ]
+   }
+  },
+  {
+   "id": "nucleus",
+   "name": "Baruti Nucleus Eau de Parfum 50ml",
+   "url": "https://www.adoraniche.sk/baruti-nucleus-eau-de-parfum/",
+   "priceAmount": 160.0,
+   "price": "160,00 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Kompozícia sústredená na suchý oud s drevitým, zemitým a mierne koženým charakterom.",
+   "reason": "Kompozícia sústredená na suchý oud s drevitým, zemitým a mierne koženým charakterom.",
+   "photo": "/assets/s5/adoraniche/baruti-nucleus-eau-de-parfum.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.adoraniche.sk/baruti-nucleus-eau-de-parfum/",
+    "verifiedAt": "2026-11-10T12:53:20.417884+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": [
+      "Skladom"
+     ],
+     "schema": "https://schema.org/InStock"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 160.0,
+     "visiblePrice": "160 €",
+     "schemaAmount": "160.00",
+     "currency": "EUR",
+     "vatSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+     "vatEvidence": "OP bod 4.1: všetky ceny vrátane DPH v EUR."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": ", ktorý odhaľuje jeho drevitý, zemitý a mierne kožený charakter v celej svojej čistote. Minimalistický prístup robí z tejto vône priamočiary hold jednej z najvzácnejších surovín parfumérie. Tóny : Suchý oud Objem : 50 ml"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/346_nucleus-50ml-1-square.jpg?ff=1&x=1024&y=768&q=85&ts=6a4e6215&sg=161563f2",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/346_nucleus-50ml-1-square.jpg?ff=1&x=1024&y=768&q=85&ts=6a4e6215&sg=161563f2",
+     "localPath": "/assets/s5/adoraniche/baruti-nucleus-eau-de-parfum.webp",
+     "width": 1024,
+     "height": 768,
+     "downloadedAt": "2026-11-10T12:53:21.921129+00:00",
+     "sha256": "5961964c65557db35d50aa1e16b12b4944954e26de39f88d80553978dd7ccfb1",
+     "visualReview": "Product contact sheet manually inspected by PERFUME_WORKER; no browser UI claim."
+    },
+    "scent": "Kompozícia sústredená na suchý oud s drevitým, zemitým a mierne koženým charakterom.",
+    "selectionTraits": {
+     "fragranceDirection": "wood",
+     "fragranceProfile": "nucleus"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.adoraniche.sk/baruti-nucleus-eau-de-parfum/",
+     "navigationLabel": "Suchý oud",
+     "navigationGroupingIsNotOfficialFragranceFamily": true,
+     "noteEvidence": "Baruti Nucleus je opulentná a sexy vôňa, presne ako samotný oud. Kompozícia je postavená na jedinej, no o to výraznejšej surovine, suchom oude."
+    },
+    "fragrance": {
+     "notes": [
+      "suchý oud"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical effects",
+     "allergy-free or skin-safety promise",
+     "guaranteed longevity or projection",
+     "integration with merchant cart",
+     "concentration implies intensity"
+    ]
+   }
+  },
+  {
+   "id": "nel",
+   "name": "Kinetic Perfumes Nel Parfum 100ml",
+   "url": "https://www.adoraniche.sk/kinetic-perfumes-nel-parfum/",
+   "priceAmount": 199.0,
+   "price": "199,00 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Liči, jablko a rebarbora s ružou, jazmínom, magnóliou a ambrou.",
+   "reason": "Liči, jablko a rebarbora s ružou, jazmínom, magnóliou a ambrou.",
+   "photo": "/assets/s5/adoraniche/kinetic-perfumes-nel-parfum.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.adoraniche.sk/kinetic-perfumes-nel-parfum/",
+    "verifiedAt": "2026-11-10T12:53:33.118951+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": [
+      "Skladom"
+     ],
+     "schema": "https://schema.org/InStock"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 199.0,
+     "visiblePrice": "199 €",
+     "schemaAmount": "199.00",
+     "currency": "EUR",
+     "vatSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+     "vatEvidence": "OP bod 4.1: všetky ceny vrátane DPH v EUR."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sourceText": "vanilka, ambra, cédrové drevo Zloženie : Alcohol Denat., Parfum, Aqua, Geraniol, Hexyl Cinnamal, Limonene, Linalool, Amyl Cinnamal, Benzyl Alcohol, Benzyl Salicylate, Citral, Citronellol, Eugenol, Farnesol Objem : 100 ml"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/172-4_nel.jpg?ff=1&x=1024&y=768&q=85&ts=6a34f6e6&sg=161563f2",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/172-4_nel.jpg?ff=1&x=1024&y=768&q=85&ts=6a34f6e6&sg=161563f2",
+     "localPath": "/assets/s5/adoraniche/kinetic-perfumes-nel-parfum.webp",
+     "width": 1024,
+     "height": 768,
+     "downloadedAt": "2026-11-10T12:53:34.069318+00:00",
+     "sha256": "e413e2ce5aa46bd72ea27cb9e4159110c13cb653bd810fb04848d7f24cd0019a",
+     "visualReview": "Product contact sheet manually inspected by PERFUME_WORKER; no browser UI claim."
+    },
+    "scent": "Liči, jablko a rebarbora s ružou, jazmínom, magnóliou a ambrou.",
+    "selectionTraits": {
+     "fragranceDirection": "green",
+     "fragranceProfile": "nel"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.adoraniche.sk/kinetic-perfumes-nel-parfum/",
+     "navigationLabel": "Liči a rebarbora",
+     "navigationGroupingIsNotOfficialFragranceFamily": true,
+     "noteEvidence": "Hravá a zmyselná vôňa s nečakanou hĺbkou. Chrumkavé tóny lychee, jablka a rebarbory sa prelínajú s divokými kvetovými akordmi ruže, jazmínu a magnólie. Zmyselná ambra dodáva celej kompozícii teplý a karnálny podtón. Vôňa, ktorá vás prekvapí a nepustí."
+    },
+    "fragrance": {
+     "notes": [
+      "liči",
+      "jablko",
+      "pelargónia",
+      "rebarbora",
+      "nechtík",
+      "ruža",
+      "jazmín z Grasse",
+      "ostružina",
+      "magnólia",
+      "dubový mach",
+      "vanilka",
+      "ambra",
+      "cédrové drevo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum"
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical effects",
+     "allergy-free or skin-safety promise",
+     "guaranteed longevity or projection",
+     "integration with merchant cart",
+     "concentration implies intensity"
+    ]
+   }
+  },
+  {
+   "id": "swim",
+   "name": "Gabar 03 Swim Eau de Parfum 50ml",
+   "url": "https://www.adoraniche.sk/gabar-03-swim-eau-de-parfum/",
+   "priceAmount": 140.0,
+   "price": "140,00 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Figa a zelený čaj s púčikom čiernych ríbezlí, cédrom a ambrou.",
+   "reason": "Figa a zelený čaj s púčikom čiernych ríbezlí, cédrom a ambrou.",
+   "photo": "/assets/s5/adoraniche/gabar-03-swim-eau-de-parfum.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.adoraniche.sk/gabar-03-swim-eau-de-parfum/",
+    "verifiedAt": "2026-11-10T12:53:21.384274+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": [
+      "Skladom"
+     ],
+     "schema": "https://schema.org/InStock"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 140.0,
+     "visiblePrice": "140 €",
+     "schemaAmount": "140.00",
+     "currency": "EUR",
+     "vatSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+     "vatEvidence": "OP bod 4.1: všetky ceny vrátane DPH v EUR."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "poruje kreativitu a tok. Parfumér : Ruth Mastenbroek Top notes : Púčik čiernych ríbezlí, galbanum Middle notes : Divoká figa, zelený čaj, orris, jazmín Base notes : Cédrové drevo, tonka fazuľa, ambra, pižmo Objem : 50 ml"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/229-1_swim-bottle.jpg?ff=1&x=1024&y=768&q=85&ts=6a361db6&sg=161563f2",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/229-1_swim-bottle.jpg?ff=1&x=1024&y=768&q=85&ts=6a361db6&sg=161563f2",
+     "localPath": "/assets/s5/adoraniche/gabar-03-swim-eau-de-parfum.webp",
+     "width": 1024,
+     "height": 768,
+     "downloadedAt": "2026-11-10T12:53:22.997810+00:00",
+     "sha256": "3f77524e3d0ca2d4dd4a27d4032613918c83bbb4971546e02765b208d1a90799",
+     "visualReview": "Product contact sheet manually inspected by PERFUME_WORKER; no browser UI claim."
+    },
+    "scent": "Figa a zelený čaj s púčikom čiernych ríbezlí, cédrom a ambrou.",
+    "selectionTraits": {
+     "fragranceDirection": "green",
+     "fragranceProfile": "swim"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.adoraniche.sk/gabar-03-swim-eau-de-parfum/",
+     "navigationLabel": "Figa a zelený čaj",
+     "navigationGroupingIsNotOfficialFragranceFamily": true,
+     "noteEvidence": "Bujná a návyková vôňa zameraná na figu. Narodená v džungliach mjanmarského Hpa-An, kde živé tóny púčikov čiernych ríbezlí, divokej figy a zeleného čaja sa stretávajú s machovým základom z cédrového dreva a ambry. Návykovo silná vôňa, ktorá vás vtiahne do plnej prítomnosti."
+    },
+    "fragrance": {
+     "notes": [
+      "púčik čiernych ríbezlí",
+      "galbanum",
+      "divoká figa",
+      "zelený čaj",
+      "orris",
+      "jazmín",
+      "cédrové drevo",
+      "tonka fazuľa",
+      "ambra",
+      "pižmo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical effects",
+     "allergy-free or skin-safety promise",
+     "guaranteed longevity or projection",
+     "integration with merchant cart",
+     "concentration implies intensity"
+    ]
+   }
+  },
+  {
+   "id": "cloud",
+   "name": "Neydo Cloud Essence 28.08 Eau de Parfum 50ml",
+   "url": "https://www.adoraniche.sk/neydo-cloud-essence-28-08-eau-de-parfum/",
+   "priceAmount": 86.0,
+   "price": "86,00 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Mlieko, ryžový púder a mimóza so santalovým drevom a vanilkou.",
+   "reason": "Mlieko, ryžový púder a mimóza so santalovým drevom a vanilkou.",
+   "photo": "/assets/s5/adoraniche/neydo-cloud-essence-28-08-eau-de-parfum.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.adoraniche.sk/neydo-cloud-essence-28-08-eau-de-parfum/",
+    "verifiedAt": "2026-11-10T12:53:21.922649+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": [
+      "Skladom"
+     ],
+     "schema": "https://schema.org/InStock"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 86.0,
+     "visiblePrice": "86 €",
+     "schemaAmount": "86.00",
+     "currency": "EUR",
+     "vatSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+     "vatEvidence": "OP bod 4.1: všetky ceny vrátane DPH v EUR."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "ndanopyran, PEG-60 Hydrogenated Castor Oil, Hydroxycitronellal, Anise Alcohol, Santalum Album Oil, Santalol, Linalool, Benzaldehyde, Pinene, Citronellol, Limonene, Camphor, Geraniol, Citral, Geranyl Acetate Objem : 50 ml"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/220_neydo-cloud-essence-28-08-eau-de-parfum-50ml.png?ff=1&x=1024&y=768&q=85&ts=6a36bc91&sg=161563f2",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/220_neydo-cloud-essence-28-08-eau-de-parfum-50ml.png?ff=1&x=1024&y=768&q=85&ts=6a36bc91&sg=161563f2",
+     "localPath": "/assets/s5/adoraniche/neydo-cloud-essence-28-08-eau-de-parfum.webp",
+     "width": 1024,
+     "height": 768,
+     "downloadedAt": "2026-11-10T12:53:23.457374+00:00",
+     "sha256": "df15a1c869442d78d6e394b3e25239de80b4578242322209ca1c56372abf7559",
+     "visualReview": "Product contact sheet manually inspected by PERFUME_WORKER; no browser UI claim."
+    },
+    "scent": "Mlieko, ryžový púder a mimóza so santalovým drevom a vanilkou.",
+    "selectionTraits": {
+     "fragranceDirection": "clean",
+     "fragranceProfile": "cloud"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.adoraniche.sk/neydo-cloud-essence-28-08-eau-de-parfum/",
+     "navigationLabel": "Mlieko a ryžový púder",
+     "navigationGroupingIsNotOfficialFragranceFamily": true,
+     "noteEvidence": "Krémová a pudrovú vôňa inšpirovaná snom o pastelovo sfarbenej oblohe a lese utkánom zo sladkosti. Koriander s mliekom, ryžový púder a mimóza otvárajú kompozíciu jemne a snovo. Základ zo santalového dreva, vanilky a pižma zanecháva teplú, krémovú stopu ako uspávanka, ktorá pretrváva dlho po prebudení."
+    },
+    "fragrance": {
+     "notes": [
+      "koriander",
+      "mlieko",
+      "ryžový púder",
+      "mimóza",
+      "pižmo",
+      "santalové drevo",
+      "vanilka"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical effects",
+     "allergy-free or skin-safety promise",
+     "guaranteed longevity or projection",
+     "integration with merchant cart",
+     "concentration implies intensity"
+    ]
+   }
+  },
+  {
+   "id": "blond",
+   "name": "Neydo Blond Redhead 16.11 Eau de Parfum 50ml",
+   "url": "https://www.adoraniche.sk/neydo-blond-redhead-16-11-eau-de-parfum/",
+   "priceAmount": 86.0,
+   "price": "86,00 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Gurmánsky a kvetinový profil s vanilkou, čokoládou, figovým mliekom a blond tabakom.",
+   "reason": "Gurmánsky a kvetinový profil s vanilkou, čokoládou, figovým mliekom a blond tabakom.",
+   "photo": "/assets/s5/adoraniche/neydo-blond-redhead-16-11-eau-de-parfum.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.adoraniche.sk/neydo-blond-redhead-16-11-eau-de-parfum/",
+    "verifiedAt": "2026-11-10T12:53:22.376424+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": [
+      "Skladom"
+     ],
+     "schema": "https://schema.org/InStock"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 86.0,
+     "visiblePrice": "86 €",
+     "schemaAmount": "86.00",
+     "currency": "EUR",
+     "vatSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+     "vatEvidence": "OP bod 4.1: všetky ceny vrátane DPH v EUR."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": ": Alcohol Denat., Fragrance, Water, Butylene Glycol, PEG-60 Hydrogenated Castor Oil, Coumarin, Limonene, Citronellol, Benzyl Alcohol, Evernia Prunastri Extract, Citral, Cinnamal, Geraniol, Linalool, Eugenol Objem : 50 ml"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/202_neydo-blond-redhead-16-11-eau-de-parfum-50ml.png?ff=1&x=1024&y=768&q=85&ts=6a36bc76&sg=161563f2",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/202_neydo-blond-redhead-16-11-eau-de-parfum-50ml.png?ff=1&x=1024&y=768&q=85&ts=6a36bc76&sg=161563f2",
+     "localPath": "/assets/s5/adoraniche/neydo-blond-redhead-16-11-eau-de-parfum.webp",
+     "width": 1024,
+     "height": 768,
+     "downloadedAt": "2026-11-10T12:53:23.350767+00:00",
+     "sha256": "6422e35aa5e457afc86e6e83325df6e78ba5bd16fa08f87b7ecea198b4e037cd",
+     "visualReview": "Product contact sheet manually inspected by PERFUME_WORKER; no browser UI claim."
+    },
+    "scent": "Gurmánsky a kvetinový profil s vanilkou, čokoládou, figovým mliekom a blond tabakom.",
+    "selectionTraits": {
+     "fragranceDirection": "gourmand",
+     "fragranceProfile": "blond"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.adoraniche.sk/neydo-blond-redhead-16-11-eau-de-parfum/",
+     "navigationLabel": "Vanilka a čokoláda",
+     "navigationGroupingIsNotOfficialFragranceFamily": true,
+     "noteEvidence": "Gurmánska a kvetinová vôňa inšpirovaná snom o nezabudnuteľnom stretnutí v parížskej pekárni. Šafran, limetka a pomaranč otvárajú kompozíciu svieže a zmyselne. Srdce z ruže, frézií a figového mlieka je sladké a lákavé. Základ z vanilky, čokolády a blond tabaku zanecháva omamnú, gurmánsku stopu."
+    },
+    "fragrance": {
+     "notes": [
+      "šafran",
+      "limetka",
+      "pomaranč",
+      "ruža",
+      "frézia",
+      "figové mlieko",
+      "ďatľa",
+      "vanilka",
+      "čokoláda",
+      "myrha",
+      "suché drevo",
+      "blond tabak"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical effects",
+     "allergy-free or skin-safety promise",
+     "guaranteed longevity or projection",
+     "integration with merchant cart",
+     "concentration implies intensity"
+    ]
+   }
+  },
+  {
+   "id": "maamoul",
+   "name": "Ideo Parfumeurs Maamoul Mon Amour 100ml",
+   "url": "https://www.adoraniche.sk/ideo-parfumeurs-maamoul-mon-amour/",
+   "priceAmount": 130.0,
+   "price": "130,00 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Datle, pistácie a orechy s čiernym sezamom, drevitým základom a karamelom.",
+   "reason": "Datle, pistácie a orechy s čiernym sezamom, drevitým základom a karamelom.",
+   "photo": "/assets/s5/adoraniche/ideo-parfumeurs-maamoul-mon-amour.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.adoraniche.sk/ideo-parfumeurs-maamoul-mon-amour/",
+    "verifiedAt": "2026-11-10T12:53:22.767379+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": [
+      "Skladom"
+     ],
+     "schema": "https://schema.org/InStock"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "retailIncludingTaxes": 130.0,
+     "visiblePrice": "130 €",
+     "schemaAmount": "130.00",
+     "currency": "EUR",
+     "vatSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+     "vatEvidence": "OP bod 4.1: všetky ceny vrátane DPH v EUR."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sourceText": "kt z čierneho sezamu, piri piri, esencie muškátového orieška Base notes : guajakové drevo, biele pižmá, amyrisová esencia, vetiver, karamel Objem : 100 ml ZLOŽENIE (INCI): ALCOHOL DENAT., PARFUM (FRAGRANCE), AQUA (WATER)"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "suitabilityEvidence": {},
+    "skinTypesListed": [],
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/253_maam.png?ff=1&x=1024&y=768&q=85&ts=6a3bdd52&sg=161563f2",
+    "photoEvidence": {
+     "url": "https://cdn.myshoptet.com/usr/www.adoraniche.sk/user/shop/big/253_maam.png?ff=1&x=1024&y=768&q=85&ts=6a3bdd52&sg=161563f2",
+     "localPath": "/assets/s5/adoraniche/ideo-parfumeurs-maamoul-mon-amour.webp",
+     "width": 1024,
+     "height": 768,
+     "downloadedAt": "2026-11-10T12:53:23.712964+00:00",
+     "sha256": "8d6de77e0715ddf33e58d91ac68a85ad943a549a3e6c26bdde8f329f9e1fae23",
+     "visualReview": "Product contact sheet manually inspected by PERFUME_WORKER; no browser UI claim."
+    },
+    "scent": "Datle, pistácie a orechy s čiernym sezamom, drevitým základom a karamelom.",
+    "selectionTraits": {
+     "fragranceDirection": "gourmand",
+     "fragranceProfile": "maamoul"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.adoraniche.sk/ideo-parfumeurs-maamoul-mon-amour/",
+     "navigationLabel": "Datle a orechy",
+     "navigationGroupingIsNotOfficialFragranceFamily": true,
+     "noteEvidence": "Gurmánska a drevitá vôňa inšpirovaná libanonským pečivom maamoul, plneným datľami a pistáciami. Otvára sa datľami a pistáciami, v srdci ponúka orechy, čierny sezam, piri piri a muškátový oriešok a uzatvára sa teplým základom z guajakového dreva, bieleho pižma, amyrisu, vetiveru a karamelu."
+    },
+    "fragrance": {
+     "notes": [
+      "ďatle",
+      "pistácie",
+      "orechy",
+      "extrakt z čierneho sezamu",
+      "piri piri",
+      "muškátový oriešok",
+      "guajakové drevo",
+      "biele pižmo",
+      "amyris",
+      "vetiver",
+      "karamel"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical effects",
+     "allergy-free or skin-safety promise",
+     "guaranteed longevity or projection",
+     "integration with merchant cart",
+     "concentration implies intensity"
+    ]
+   }
+  }
+ ],
+ "operator": {
+  "operator": "kano beauty s. r. o.",
+  "ico": "57226717",
+  "operatorSource": "https://www.adoraniche.sk/obchodne-podmienky/",
+  "contact": "info@adoraniche.sk"
+ },
+ "status": "RESERVED_SOURCE_REVIEWED_ENGINE_PENDING",
+ "revenue": "UNKNOWN",
+ "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+ "notes": [
+  "12 distinct fragrance formulas; no sample/size inflation.",
+  "Representative perfume selection, not the entire shop.",
+  "Source facts and photos reviewed; this is not live widget or Preview QA.",
+  "No intensity/occasion question without complete source evidence.",
+  "No budget, bundle, layering or complementary-product promise.",
+  "Shared files unchanged; integration by shared S5 owner only."
+ ],
+ "owner": "PERFUME_WORKER",
+ "reservation": {
+  "branch": "coord/s5-claims",
+  "sha": "15934802508ebcdaccdb40221967de598c619323",
+  "workerBranch": "codex/s5-perfume-20261110",
+  "baseSha": "2466a399f99d72180d52fa205212296d59f79d1f"
+ },
+ "liveEligibilityEvidence": "/n447/s5/dokazy/perfume-worker/coordinator-live-eligibility.json"
+};
