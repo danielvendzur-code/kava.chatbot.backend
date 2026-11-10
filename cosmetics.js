@@ -153,7 +153,7 @@
           ${PRICE.sums.map(([sum, term, buys]) => `
             <div class="cx-price-sum"><b>${esc(sum)}&nbsp;€</b><span>${esc(term)}</span><small>${esc(buys)}</small></div>`).join('')}
           <div class="cx-price-terms">
-            <b>${esc(PRICE.trial)}</b>
+            ${document.body.dataset.series === 's5' ? '' : `<b>${esc(PRICE.trial)}</b>`}
             <p>${esc(PRICE.note)}</p>
             <a href="${esc(contactHref())}" target="_blank" rel="noreferrer">Ozvite sa mi ${icons.arrow}</a>
           </div>

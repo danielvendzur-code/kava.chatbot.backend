@@ -1,0 +1,24 @@
+{
+  "checkedAt": "2026-11-10T08:15:38.052746+00:00",
+  "status": "reserved",
+  "claimSha": "3619670ff03fcdd22d925d885fb4fe2889ef40e1",
+  "domain": "mydlarnasafran.cz",
+  "operator": "Klára Šafránková",
+  "ico": "76267334",
+  "operatorSource": "https://www.mydlarnasafran.cz/kontakty",
+  "contact": "info@mydlarnasafran.cz",
+  "contactSource": "https://www.mydlarnasafran.cz/kontakty",
+  "duplicateEvidence": "../../dokazy/safran-duplicates.json",
+  "liveCheck": {
+    "home": "https://www.mydlarnasafran.cz/",
+    "product": "https://www.mydlarnasafran.cz/sampuk-na-vlasy-s-ruzovym-jilem-a-geraniem",
+    "observed": "Own browser after Přijmout nezbytné: home/product screenshots inspected. No product-chat/advisor launcher observed. Header Klára/Jsem tu pro vás/telephone with tel link; left Ověřeno zákazníky review tab. Ordinary product weight selector and related items; no entry/cart/form/message.",
+    "limit": "Necessary-cookie mode only; other modes unproven."
+  },
+  "revenue": "NEOVERENÉ",
+  "mailDuplicateCheck": "PENDING_CONTROLLER",
+  "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
+  "production": "NOT_DEPLOYED",
+  "emailDraft": "NOT_READY",
+  "next": "Review representative public category list, capture <=25 suitable product facts with exact standard/mini variants, pictures and stock."
+}
