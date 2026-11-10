@@ -1,0 +1,323 @@
+{
+  "checkedAt": "2026-11-10 18:32:10 UTC",
+  "scope": "Manual source-note review of all proposed second-step labels, on already captured official source excerpts. Distinct from engine execution and not a new merchant-origin fetch or browser QA.",
+  "sourceCommit": "e88fe06e63225b09f960e9b8570d8bcf02bc6ab6",
+  "sourceBlobs": {
+    "preflight": "7b647013b2481a50345e6c29e6e860437677bc05",
+    "models": "e734adbc95ed8fc0f936968f58e5915d3e6e7720",
+    "furiosa": "84812135c764c7a0665b2e68fc1c6b23c993ae8d",
+    "scentium": "a188568a096258ea812b9618efbc6d705321296c"
+  },
+  "interpretation": "First-step groups are editorial entry points, not official fragrance-family taxonomy. Second-step text lists officially recorded notes, not product names. Technical profile IDs are internal routing values.",
+  "translationNotes": [
+    {
+      "source": "Cognac",
+      "label": "koňak",
+      "scope": "TAOM standard translation"
+    },
+    {
+      "source": "Olibanum",
+      "label": "kadidlo",
+      "scope": "KRUCIFIST standard material synonym"
+    },
+    {
+      "source": "Jalovcová bobule",
+      "label": "jalovec",
+      "scope": "CARNAL shortened note label"
+    },
+    {
+      "source": "Vavřínový list",
+      "label": "vavřín",
+      "scope": "TEMPO shortened note label"
+    }
+  ],
+  "excluded": [
+    "Unsupported intensity/occasion/longevity facts",
+    "Gender stereotypes",
+    "Therapeutic or emotional efficacy claims",
+    "Budget guarantees",
+    "Layering or compatibility claims"
+  ],
+  "rows": [
+    {
+      "domain": "kintsugiperfumes.com",
+      "status": "ALL_PROPOSED_PROFILE_NOTES_SUPPORTED_BY_RECORDED_SOURCE",
+      "formulaCount": 12,
+      "choices": [
+        {
+          "direction": "fresh",
+          "profile": "taom-eau-de-parfum",
+          "label": "Grapefruit, mořská sůl a koňak",
+          "sourceUrl": "https://kintsugiperfumes.com/products/taom-eau-de-parfum"
+        },
+        {
+          "direction": "fresh",
+          "profile": "kaigan-eau-de-parfum",
+          "label": "Fík, bazalka a mořské akordy",
+          "sourceUrl": "https://kintsugiperfumes.com/products/kaigan-eau-de-parfum"
+        },
+        {
+          "direction": "fresh",
+          "profile": "hanzo-eau-de-parfum",
+          "label": "Yuzu, borovice a kadidlo",
+          "sourceUrl": "https://kintsugiperfumes.com/products/hanzo-eau-de-parfum"
+        },
+        {
+          "direction": "fresh",
+          "profile": "tempo-eau-de-parfum",
+          "label": "Fík, vavřín a zázvor",
+          "sourceUrl": "https://www.kintsugiperfumes.com/products/tempo-eau-de-parfum"
+        },
+        {
+          "direction": "floral",
+          "profile": "muza-eau-de-parfum",
+          "label": "Broskev a jasmínový čaj",
+          "sourceUrl": "https://kintsugiperfumes.com/products/muza-eau-de-parfum"
+        },
+        {
+          "direction": "floral",
+          "profile": "carnal-eau-de-parfum",
+          "label": "Černý rybíz, růže a jalovec",
+          "sourceUrl": "https://kintsugiperfumes.com/products/carnal-eau-de-parfum"
+        },
+        {
+          "direction": "gourmand",
+          "profile": "luna-eau-de-parfum",
+          "label": "Pomerančový květ a cukrová vata",
+          "sourceUrl": "https://kintsugiperfumes.com/products/luna-eau-de-parfum"
+        },
+        {
+          "direction": "gourmand",
+          "profile": "ambre-extrait-de-parfum",
+          "label": "Kakao, rum a švestka",
+          "sourceUrl": "https://kintsugiperfumes.com/products/ambre-extrait-de-parfum"
+        },
+        {
+          "direction": "wood",
+          "profile": "santal-eau-de-parfum",
+          "label": "Santal, malina a kůže",
+          "sourceUrl": "https://kintsugiperfumes.com/products/santal-eau-de-parfum"
+        },
+        {
+          "direction": "wood",
+          "profile": "deus-eau-de-parfum",
+          "label": "Zázvor, pepř a oud",
+          "sourceUrl": "https://kintsugiperfumes.com/products/deus-eau-de-parfum"
+        },
+        {
+          "direction": "wood",
+          "profile": "phenix-eau-de-parfum",
+          "label": "Káva, tabák a kůže",
+          "sourceUrl": "https://kintsugiperfumes.com/products/phenix-eau-de-parfum"
+        },
+        {
+          "direction": "wood",
+          "profile": "ambre-oud-extrait-de-parfum",
+          "label": "Mango, med a oud",
+          "sourceUrl": "https://kintsugiperfumes.com/products/ambre-oud-extrait-de-parfum"
+        }
+      ],
+      "caveats": [
+        "TEMPO is one Eau de Parfum formula, pack 2 × 8 ml, not a car fragrance or two formulas."
+      ]
+    },
+    {
+      "domain": "oraculum.store",
+      "status": "ALL_PROPOSED_PROFILE_NOTES_SUPPORTED_BY_RECORDED_SOURCE",
+      "formulaCount": 6,
+      "choices": [
+        {
+          "direction": "fig",
+          "profile": "helenist",
+          "label": "Fíkový list a kokos",
+          "sourceUrl": "https://oraculum.store/products/helenist"
+        },
+        {
+          "direction": "fig",
+          "profile": "arabesque",
+          "label": "Fík, mrkvová semena a kosatec",
+          "sourceUrl": "https://oraculum.store/products/arabesque"
+        },
+        {
+          "direction": "wood",
+          "profile": "santalist",
+          "label": "Santal, okurka a kardamom",
+          "sourceUrl": "https://oraculum.store/products/santalist"
+        },
+        {
+          "direction": "wood",
+          "profile": "krucifist",
+          "label": "Pepř, levandule a kadidlo",
+          "sourceUrl": "https://oraculum.store/products/krucifist"
+        },
+        {
+          "direction": "wood",
+          "profile": "katarzist",
+          "label": "Tabák, růže a oud",
+          "sourceUrl": "https://oraculum.store/products/katarzist"
+        },
+        {
+          "direction": "wood",
+          "profile": "mio-dio",
+          "label": "Marakuja, oud a kůže",
+          "sourceUrl": "https://oraculum.store/products/mio-dio"
+        }
+      ],
+      "caveats": []
+    },
+    {
+      "domain": "furiosa.cz",
+      "status": "ALL_PROPOSED_PROFILE_NOTES_SUPPORTED_BY_RECORDED_SOURCE",
+      "formulaCount": 10,
+      "choices": [
+        {
+          "direction": "green",
+          "profile": "furiosa®-matcha-date",
+          "label": "Matcha, citronová tráva a kokos",
+          "sourceUrl": "https://furiosa.cz/products/furiosa%c2%ae-matcha-date"
+        },
+        {
+          "direction": "green",
+          "profile": "furiosa®-fizz",
+          "label": "Hruška, meloun a frézie",
+          "sourceUrl": "https://furiosa.cz/products/furiosa%c2%ae-fizz"
+        },
+        {
+          "direction": "green",
+          "profile": "furiosa®-nude",
+          "label": "Fík, kosatec a květ máku",
+          "sourceUrl": "https://furiosa.cz/products/furiosa%c2%ae-nude"
+        },
+        {
+          "direction": "floral",
+          "profile": "furiosa®-burlesque",
+          "label": "Ylang, růže a meruňka",
+          "sourceUrl": "https://furiosa.cz/products/furiosa%c2%ae-burlesque"
+        },
+        {
+          "direction": "floral",
+          "profile": "furiosa®-blush",
+          "label": "Růže, magnólie a grapefruit",
+          "sourceUrl": "https://furiosa.cz/products/furiosa%c2%ae-blush"
+        },
+        {
+          "direction": "wood",
+          "profile": "furiosa®-old-money",
+          "label": "Zázvor, pepř a oud",
+          "sourceUrl": "https://furiosa.cz/products/furiosa%c2%ae-old-money"
+        },
+        {
+          "direction": "wood",
+          "profile": "furiosa®-kashmir",
+          "label": "Kadidlo, santal a vanilka",
+          "sourceUrl": "https://furiosa.cz/products/furiosa%c2%ae-kashmir"
+        },
+        {
+          "direction": "cherrySweet",
+          "profile": "furiosa-cherry-affair",
+          "label": "Třešeň, červené víno a kadidlo",
+          "sourceUrl": "https://furiosa.cz/products/furiosa-cherry-affair"
+        },
+        {
+          "direction": "cherrySweet",
+          "profile": "furiosa®-sex",
+          "label": "Třešňový likér a marcipán",
+          "sourceUrl": "https://furiosa.cz/products/furiosa%c2%ae-sex"
+        },
+        {
+          "direction": "cherrySweet",
+          "profile": "furiosa-candy-as-fck",
+          "label": "Cukrová vata a marshmallow",
+          "sourceUrl": "https://furiosa.cz/products/furiosa-candy-as-fck"
+        }
+      ],
+      "caveats": []
+    },
+    {
+      "domain": "scentium.cz",
+      "status": "ALL_PROPOSED_PROFILE_NOTES_SUPPORTED_BY_RECORDED_SOURCE",
+      "formulaCount": 12,
+      "choices": [
+        {
+          "direction": "fresh",
+          "profile": "farniente",
+          "label": "Citron, mořské akordy a fíkovník",
+          "sourceUrl": "https://scentium.cz/products/farniente"
+        },
+        {
+          "direction": "fresh",
+          "profile": "ginger-tonic-fr-2018",
+          "label": "Grapefruit, gin a zázvor",
+          "sourceUrl": "https://scentium.cz/products/ginger-tonic-fr-2018"
+        },
+        {
+          "direction": "floral",
+          "profile": "salt",
+          "label": "Ylang-ylang, tiaré a magnólie",
+          "sourceUrl": "https://scentium.cz/products/salt"
+        },
+        {
+          "direction": "floral",
+          "profile": "neroli-poet-100-ml",
+          "label": "Máta, neroli a rozmarýn",
+          "sourceUrl": "https://scentium.cz/products/neroli-poet-100-ml"
+        },
+        {
+          "direction": "floral",
+          "profile": "butterfly-mind",
+          "label": "Bílý čaj, sakura a feijoa",
+          "sourceUrl": "https://scentium.cz/products/butterfly-mind"
+        },
+        {
+          "direction": "wood",
+          "profile": "kyoto",
+          "label": "Grapefruit, cedr a kadidlo",
+          "sourceUrl": "https://scentium.cz/products/kyoto"
+        },
+        {
+          "direction": "wood",
+          "profile": "blanc-sesame",
+          "label": "Kokos, santal a mořská sůl",
+          "sourceUrl": "https://scentium.cz/products/blanc-sesame"
+        },
+        {
+          "direction": "wood",
+          "profile": "malkhut-109",
+          "label": "Yzop, myrta a kosatec",
+          "sourceUrl": "https://scentium.cz/products/malkhut-109"
+        },
+        {
+          "direction": "gourmand",
+          "profile": "vanilla-milk",
+          "label": "Mléko, dvě vanilky a kakaové skořápky",
+          "sourceUrl": "https://scentium.cz/products/vanilla-milk"
+        },
+        {
+          "direction": "gourmand",
+          "profile": "blanc-sesame-1",
+          "label": "Sezam, neroli a káva",
+          "sourceUrl": "https://scentium.cz/products/blanc-sesame-1"
+        },
+        {
+          "direction": "gourmand",
+          "profile": "tropical-dance",
+          "label": "Tonka, vanilka a karamelizovaný pomeranč",
+          "sourceUrl": "https://scentium.cz/products/tropical-dance"
+        },
+        {
+          "direction": "gourmand",
+          "profile": "fanfarone-italiano",
+          "label": "Káva, čokoláda a koňak",
+          "sourceUrl": "https://scentium.cz/products/fanfarone-italiano"
+        }
+      ],
+      "caveats": [
+        "SALT uses only final merchant pyramid; narrative not merged.",
+        "Tropical Dance label reflects tonka/vanilla/caramelized orange, not an inference of tropical fruit."
+      ]
+    }
+  ],
+  "liveQa": false,
+  "registered": false,
+  "claimsAdded": 0
+}

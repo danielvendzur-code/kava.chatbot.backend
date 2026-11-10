@@ -1,0 +1,357 @@
+{
+  "retrievedAt": "2026-11-10 18:28:15 UTC",
+  "mode": "Supported web connector extracted official HTML. The connector reports crawl ages; retrieval time is not proof of a fresh direct origin fetch. No live browser/cookie/widget observation.",
+  "status": "SUPPLEMENTAL_SOURCE_RESEARCH_NOT_RESERVED_NOT_RUNTIME",
+  "rows": [
+    {
+      "domain": "essentique.sk",
+      "operator": "MOKK",
+      "ico": "57198756",
+      "country": "SK",
+      "operatorSource": "https://www.essentique.sk/obchodne-podmienky/",
+      "operatorSourceCrawl": "today",
+      "taxEvidence": "Official terms point 1.4/price section: total price includes VAT.",
+      "contact": "info@essentique.sk",
+      "home": "https://www.essentique.sk/",
+      "assortment": "Decants/samples of niche perfume compositions, including 2/3/5/10/20/30 ml choices. Different volumes are variants, not new formulas.",
+      "product": {
+        "name": "Bois Imperial",
+        "url": "https://www.essentique.sk/bois-imperial/",
+        "officialVariantLink": "https://www.essentique.sk/bois-imperial/?parameterValueId=14",
+        "variantLinkLabel": "2 ml",
+        "productSourceCrawl": "2 weeks ago; 2 ml link 3 weeks ago",
+        "exactRuntimePrice": null,
+        "pricePackStatus": "UNRESOLVED: extracted product HTML contains six price values and both choose-variant and unavailable-variant strings. No exact pack-price-stock pairing asserted from ordering alone.",
+        "concentration": "Eau de Parfum",
+        "notePyramid": {
+          "top": [
+            "Thajská bazalka",
+            "Nepalské Timut korenie"
+          ],
+          "heart": [
+            "Haitský vetiver",
+            "Pačuli",
+            "Petalia"
+          ],
+          "base": [
+            "Akigalawood",
+            "Ambrofix",
+            "Georgywood"
+          ]
+        },
+        "declaredFamilies": [
+          "Drevitá",
+          "Aromatická",
+          "Korenistá"
+        ],
+        "performanceEvidence": "Merchant publishes longevity/sillage ratings. These are merchant assertions, not independently measured outcomes; not used as purchase guarantee.",
+        "photo": "NOT_CAPTURED_BY_EXTRACTOR",
+        "runtimeReady": false
+      },
+      "advisorNeed": "Potential note-based matching among compositions; choose a verified decant size independently. Existing detailed merchant filters/descriptions reduce the incremental value of repeating static data.",
+      "widget": "UNKNOWN_LIVE_QA_PENDING",
+      "revenue": "UNKNOWN",
+      "size": "UNKNOWN",
+      "interest": "NOT_ESTABLISHED",
+      "decision": "SOURCE_CANDIDATE_ONLY; exact variant facts and live/duplicate gates remain pending"
+    },
+    {
+      "domain": "fragrancesamples.cz",
+      "operator": "MiroLi Parfums s.r.o.",
+      "ico": "29615984",
+      "country": "CZ",
+      "operatorSource": "https://www.fragrancesamples.cz/obchodni-podminky/",
+      "operatorSourceCrawl": "Connector initial result 2 months ago; subsequent find result reports today. Do not present it as independently fresh direct HTTPS fetch.",
+      "contact": "info@fragrancesamples.cz",
+      "taxEvidence": "Official terms: final prices; seller is not a VAT payer. Do not label this as charging VAT.",
+      "home": "https://www.fragrancesamples.cz/",
+      "assortment": "Designer/niche/Arabian perfume samples and sample sets; sizes 1/2/5 ml for the reviewed perfume are variants.",
+      "product": {
+        "name": "Mancera French Riviera vzorek parfému",
+        "url": "https://www.fragrancesamples.cz/mancera-french-riviera/",
+        "productSourceCrawl": "last month",
+        "listedVariantCodes": [
+          "204/1ML",
+          "204/2ML",
+          "204/5ML"
+        ],
+        "exactRuntimePrice": null,
+        "pricePackStatus": "Extractor lists 65/139/329 CZK and stock >5 for variants, but explicit pack-to-price mapping has not been checked in the variant row. Not ready for runtime.",
+        "officialDescribedAccords": [
+          "citrus",
+          "marine notes",
+          "white flowers",
+          "musk"
+        ],
+        "notePyramid": null,
+        "photo": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/mceclip0-112.png?1781806536=",
+        "photoStatus": "Official product-linked image URL resolved by web connector; file bytes and visual suitability not reviewed here.",
+        "performanceEvidence": "Merchant narrative gives projection and longevity estimates; not independently verified and not used as a guarantee.",
+        "runtimeReady": false
+      },
+      "relatedDomainReview": {
+        "mentionedEmailDomain": "krasyorientu.cz",
+        "mentionSource": "https://www.fragrancesamples.cz/obchodni-podminky/",
+        "counterSource": "https://www.krasyorientu.cz/obchodni-podminky/",
+        "counterSourceCrawl": "3 weeks ago",
+        "counterOperator": "Smilargan, s.r.o.",
+        "counterIco": "03789454",
+        "conclusion": "Different officially declared IČO. The copied/related contact email alone does not establish an alias or common operator.",
+        "otherSuspiciousLink": "Terms label a privacy link as fragrancesamples.cz but its target is czechfragranceclub.cz; earlier audit recorded a different operator. Keep as discrepancy, not confirmed alias."
+      },
+      "advisorNeed": "Potential guide to distinct compositions, then explicit sample size; do not treat a reseller sample as an original manufacturer's full retail bottle or claim merchant decant authenticity was independently verified.",
+      "widget": "UNKNOWN_LIVE_QA_PENDING",
+      "revenue": "UNKNOWN",
+      "size": "UNKNOWN",
+      "interest": "NOT_ESTABLISHED",
+      "decision": "SOURCE_CANDIDATE_ONLY; exact variant facts and live/duplicate gates remain pending"
+    },
+    {
+      "domain": "leparfumlechic.sk",
+      "operator": "Lukáš Roth – Le Parfum & Le Chic",
+      "ico": "51786796",
+      "country": "SK",
+      "operatorSource": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+      "operatorSourceCrawl": "initial last week; later find reports today",
+      "contact": "Not recopied from an unverified address; official contact page remains the source",
+      "home": "https://www.leparfumlechic.sk/",
+      "taxEvidence": "Official terms explicitly state all e-shop prices are final including VAT.",
+      "assortment": "Multi-brand niche retail perfumes; reviewed page sells a full 100 ml fragrance.",
+      "product": {
+        "name": "Matiere Premiere Metal Lavender",
+        "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/",
+        "productSourceCrawl": "today",
+        "pack": "100 ml",
+        "priceAmount": 250,
+        "currency": "EUR",
+        "concentration": "Eau de Parfum",
+        "officialMainNote": "Organic lavandin oil from Grasse",
+        "notePyramid": null,
+        "stock": "UNKNOWN: add-to-cart button is present in extracted HTML; explicit in-stock statement not observed. No cart action performed.",
+        "photo": "https://www.leparfumlechic.sk/wp-content/uploads/2026/10/3760428941435-600x600.webp",
+        "photoStatus": "Official product-linked image URL resolved; visual suitability and decoded dimensions not inspected here.",
+        "runtimeReady": false
+      },
+      "operatorHistorySource": "candidate-registry-followup-20261110.json",
+      "advisorNeed": "Potential note-based comparison of different niche formulas. Reviewed description documents only a main note, so it must not be expanded into an invented complete pyramid.",
+      "widget": "UNKNOWN_LIVE_QA_PENDING",
+      "revenue": "UNKNOWN",
+      "size": "UNKNOWN",
+      "interest": "NOT_ESTABLISHED",
+      "decision": "SOURCE_CANDIDATE_ONLY; stock/full representative sample and live/duplicate gates pending"
+    },
+    {
+      "domain": "vune.alchymika.cz",
+      "operator": "VIVAHOME s.r.o.",
+      "ico": "01685732",
+      "country": "CZ",
+      "operatorSource": "https://vune.alchymika.cz/obchodni-podminky/",
+      "operatorSourceCrawl": "1.2 years ago per connector; earlier direct official/ARES audit exists separately. This reread does not freshly establish active status.",
+      "home": "https://vune.alchymika.cz/",
+      "contact": "vune@alchymika.cz",
+      "observedRelatedDomain": "alchymika.cz",
+      "taxEvidence": "Official terms state total price includes VAT, but the connector terms copy is stale.",
+      "assortment": "Niche perfumes, 10 ml minis and hair fragrances. Same composition's 10 ml/100 ml packs do not add formulas.",
+      "product": {
+        "name": "ARKANO DEL SOLE extrakt parfému 10 ml",
+        "url": "https://vune.alchymika.cz/arkano-del-sole-extrakt-parfemu-10-ml/",
+        "productSourceCrawl": "today",
+        "pack": "10 ml",
+        "priceAmount": 630,
+        "currency": "CZK",
+        "stockText": "Skladem (>5 ks)",
+        "concentration": "Extrakt parfému",
+        "declaredFamily": "Gurmánská",
+        "listedNotes": [
+          "šípek",
+          "šafrán",
+          "jasmín",
+          "kůže",
+          "pačuli",
+          "ambra",
+          "pižmo"
+        ],
+        "notePyramid": null,
+        "photo": "NOT_CAPTURED_BY_EXTRACTOR",
+        "runtimeReady": false
+      },
+      "adviceSources": [
+        "https://vune.alchymika.cz/najdeme-vuni-spolu/",
+        "https://vune.alchymika.cz/vyber-vune-podle-pocitu/"
+      ],
+      "widget": "HTML discloses Smartsupp, but live mode is UNKNOWN. Personal advice page directs visitor to human chat/email/telephone. Feelings page contains four static collection links; no interactive questionnaire is established by that extracted page.",
+      "advisorNeed": "Potential factual note comparison; merchant's own positioning prioritizes feelings and personal guidance. Incremental fit needs care: do not promise emotional or therapeutic outcomes from fragrance.",
+      "revenue": "UNKNOWN",
+      "size": "UNKNOWN",
+      "interest": "NOT_ESTABLISHED",
+      "decision": "HOLD_WIDGET_REVIEW until actual Smartsupp mode and duplicate gates checked. Human contact alone is not automatic exclusion.",
+      "excludedClaims": "Emotional/therapeutic marketing narrative is not imported as efficacy or medical fact."
+    },
+    {
+      "domain": "1907perfumeries.sk",
+      "operator": "1907 s.r.o.",
+      "ico": "45303487",
+      "country": "SK",
+      "operatorSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky",
+      "operatorSourceCrawl": "yesterday",
+      "contact": "obchod@1907.sk",
+      "home": "https://www.1907perfumeries.sk/",
+      "relatedDomain": "1907.sk",
+      "relatedDomainEvidence": "Official shop navigation links to 1907.sk; matching company/contact on official store locator https://www.1907.sk/Contact.aspx.",
+      "assortment": "Multi-brand niche perfume shop plus own 1907 lines. No total unique-product count is claimed from navigation links.",
+      "product": {
+        "name": "BeauFort London Fathom V",
+        "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/42-1-BEAUFORT-LONDON/0/5/218-Fathom-V",
+        "productSourceCrawl": "Search snippet last week; opened page reports 2 months ago",
+        "pack": "50 ml",
+        "priceAmount": 150,
+        "currency": "EUR",
+        "tax": "Product explicitly labels 23% VAT included",
+        "stockText": "skladom",
+        "concentration": "Eau de Parfum",
+        "notePyramid": {
+          "top": [
+            "borievky",
+            "tangerínka",
+            "čierne ríbezle",
+            "zelené tóny",
+            "zemité tóny"
+          ],
+          "heart": [
+            "tymián",
+            "ľalia",
+            "jazmín",
+            "ylang-ylang",
+            "zázvor",
+            "rasca",
+            "čierne korenie",
+            "mimóza"
+          ],
+          "base": [
+            "pačuli",
+            "vetiver",
+            "dubový mach",
+            "soľ",
+            "kadidlo",
+            "céder",
+            "ambra"
+          ]
+        },
+        "photo": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_218fathom-v.jpg",
+        "photoStatus": "Official product image URL resolved; bytes/decoded dimensions/visual suitability not verified here.",
+        "runtimeReady": false
+      },
+      "widget": "UNKNOWN_LIVE_QA_PENDING. Cookie-information table mentions __zlcmid and live chat, but that boilerplate is not proof of an active installed widget or its mode. No cookie consent was clicked in this HTML-only review.",
+      "advisorNeed": "Potential comparison among genuinely different niche formulas using source notes. Existing retailer/expert brand must be assessed for incremental value; worldwide stockist listings are not evidence of company revenue or size.",
+      "revenue": "UNKNOWN",
+      "size": "UNKNOWN",
+      "interest": "NOT_ESTABLISHED",
+      "decision": "SOURCE_CANDIDATE_ONLY, NOT an approved replacement. Live merchant widget and fresh all-remote operator/domain/alias/claims gates remain pending."
+    },
+    {
+      "domain": "renierperfumes.com",
+      "canonicalHome": "https://www.renierperfumes.com/en/",
+      "operator": "FRAGRANZA PRO s.r.o.",
+      "ico": "28175751",
+      "country": "CZ",
+      "operatorSource": "https://www.renierperfumes.com/en/",
+      "operatorSourceCrawl": "today; connector labels homepage as rewritten summary",
+      "terms": "https://www.renierperfumes.com/en/terms",
+      "termsSourceCrawl": "9 months ago",
+      "contact": "renierperfumes@gmail.com",
+      "assortment": "Own perfume collections Rain/Taino/Special Editions/Caprichos plus samples/discovery sets and paintings. Paintings and sample sizes do not add perfume formulas.",
+      "product": {
+        "name": "Incense Rain",
+        "url": "https://www.renierperfumes.com/en/perfume/Incense-Rain",
+        "priceAmount": 145,
+        "currency": "EUR",
+        "pack": null,
+        "stock": null,
+        "priceTaxStatus": "UNKNOWN for this price",
+        "productSourceCrawl": "last week initially; later find reports today",
+        "notePyramid": {
+          "top": [
+            "Red fruits",
+            "Black currant",
+            "Plum",
+            "Juniper berries",
+            "Pink pepper"
+          ],
+          "heart": [
+            "Neroli",
+            "jasmine",
+            "Patchouli",
+            "Cedarwood",
+            "Violet",
+            "Rain notes"
+          ],
+          "base": [
+            "Guaiac Wood",
+            "Sandalwood",
+            "Musk",
+            "Vanilla",
+            "Frankincense",
+            "Castoreum",
+            "Oakmoss"
+          ]
+        },
+        "runtimeReady": false
+      },
+      "identityCaveat": "Footer IČO is 28175751, but footer DIC CZ8175751 and terms DIC CZ2817575 are inconsistent. Keep IČO identity separate; do not silently correct tax IDs or infer tax treatment.",
+      "advisorNeed": "Potential note comparison within artist-led own compositions. Do not convert inspirational narrative into therapeutic effects, and do not treat a listed price without volume as an exact purchasable pack.",
+      "widget": "UNKNOWN_LIVE_QA_PENDING",
+      "revenue": "UNKNOWN",
+      "size": "UNKNOWN",
+      "interest": "NOT_ESTABLISHED",
+      "decision": "SOURCE_CANDIDATE_ONLY; pack/stock/tax, live widget and fresh duplicate gates pending"
+    },
+    {
+      "domain": "flakon.sk",
+      "home": "https://www.flakon.sk/",
+      "operator": "Reality group, s.r.o.",
+      "ico": "51695201",
+      "country": "SK",
+      "operatorSource": "https://www.flakon.sk/informacie-2/vseobecne-obchodne-podmienky-pre-e-shopy/",
+      "operatorStatus": "Exact company name and IČO found in official terms by supported web connector.",
+      "contact": "obchod@flakon.sk",
+      "assortment": "Shop explicitly offers decants of niche fragrances; different volumes are variants. Layering bundles visible but are not an independently proven compatible add-on for this proposed demo.",
+      "product": {
+        "name": "Matiere Premiere – Encens Suave",
+        "url": "https://www.flakon.sk/matiere-premiere---encens-suave/",
+        "productSourceCrawl": "Initial opened copy 11 months ago; later find returns today with different 156-line extraction",
+        "pack": null,
+        "priceAmount": null,
+        "pricePackStatus": "UNRESOLVED: current extraction has four price/stock values and a variant select; no exact pack mapping asserted.",
+        "notePyramid": {
+          "top": [
+            "kardamóm"
+          ],
+          "heart": [
+            "kadidlo"
+          ],
+          "base": [
+            "káva",
+            "vanilka",
+            "benzoin"
+          ]
+        },
+        "noteSourceScope": "Merchant-specific pyramid; not independently verified manufacturer formula.",
+        "runtimeReady": false
+      },
+      "adviceSource": "https://www.flakon.sk/ako-si-vybrat-svoju-vonu/",
+      "adviceMode": "Extracted page is a static educational article with family/occasion examples, not evidence of an interactive product advisor.",
+      "advisorNeed": "Potential interactive comparison of distinct compositions beyond the static guide. Keep exact decant pack explicit and refrain from guaranteeing blind-purchase satisfaction.",
+      "widget": "UNKNOWN_LIVE_QA_PENDING",
+      "revenue": "UNKNOWN",
+      "size": "UNKNOWN",
+      "interest": "NOT_ESTABLISHED",
+      "decision": "SOURCE_CANDIDATE_ONLY; variant/stock/photo, live widget and duplicate gates pending",
+      "operatorSourceCrawl": "initial 5 days ago; follow-up today",
+      "taxEvidence": "Official terms state final total price includes VAT."
+    }
+  ],
+  "paidModelCalls": 0,
+  "newClaims": 0,
+  "sharedFilesChanged": false,
+  "lastRetrievedAt": "2026-11-10 18:32:10 UTC"
+}
