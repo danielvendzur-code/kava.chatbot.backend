@@ -1,0 +1,421 @@
+{
+  "paidCalls": 0,
+  "fragrance": {
+    "adoraniche": {
+      "products": 12,
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "clean",
+              "gourmand",
+              "green",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "clean"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "adam",
+              "paper-soap",
+              "cloud"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "roasted-tea",
+              "bain",
+              "chai",
+              "blond",
+              "maamoul"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "nature",
+              "nel",
+              "swim"
+            ]
+          }
+        }
+      ],
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "clean",
+            "fragranceProfile": "adam"
+          },
+          "winner": "adam",
+          "matches": [
+            "adam"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "clean",
+            "fragranceProfile": "paper-soap"
+          },
+          "winner": "paper-soap",
+          "matches": [
+            "paper-soap"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "clean",
+            "fragranceProfile": "cloud"
+          },
+          "winner": "cloud",
+          "matches": [
+            "cloud"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "roasted-tea"
+          },
+          "winner": "roasted-tea",
+          "matches": [
+            "roasted-tea"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "bain"
+          },
+          "winner": "bain",
+          "matches": [
+            "bain"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "chai"
+          },
+          "winner": "chai",
+          "matches": [
+            "chai"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "blond"
+          },
+          "winner": "blond",
+          "matches": [
+            "blond"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "maamoul"
+          },
+          "winner": "maamoul",
+          "matches": [
+            "maamoul"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "nature"
+          },
+          "winner": "nature",
+          "matches": [
+            "nature"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "nel"
+          },
+          "winner": "nel",
+          "matches": [
+            "nel"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "swim"
+          },
+          "winner": "swim",
+          "matches": [
+            "swim"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "winner": "nucleus",
+          "matches": [
+            "nucleus"
+          ]
+        }
+      ]
+    },
+    "nicheandglow": {
+      "products": 12,
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "wood",
+              "green",
+              "gourmand",
+              "floral"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "mio",
+              "santalist",
+              "skin-fetish",
+              "ground",
+              "vetiver"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "helenist",
+              "nectarina",
+              "matcha"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "crispy",
+              "croissant"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "pivoine",
+              "float"
+            ]
+          }
+        }
+      ],
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "mio"
+          },
+          "winner": "mio",
+          "matches": [
+            "mio"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "santalist"
+          },
+          "winner": "santalist",
+          "matches": [
+            "santalist"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "skin-fetish"
+          },
+          "winner": "skin-fetish",
+          "matches": [
+            "skin-fetish"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "ground"
+          },
+          "winner": "ground",
+          "matches": [
+            "ground"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "vetiver"
+          },
+          "winner": "vetiver",
+          "matches": [
+            "vetiver"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "helenist"
+          },
+          "winner": "helenist",
+          "matches": [
+            "helenist"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "nectarina"
+          },
+          "winner": "nectarina",
+          "matches": [
+            "nectarina"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "matcha"
+          },
+          "winner": "matcha",
+          "matches": [
+            "matcha"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "crispy"
+          },
+          "winner": "crispy",
+          "matches": [
+            "crispy"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "croissant"
+          },
+          "winner": "croissant",
+          "matches": [
+            "croissant"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "pivoine"
+          },
+          "winner": "pivoine",
+          "matches": [
+            "pivoine"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "float"
+          },
+          "winner": "float",
+          "matches": [
+            "float"
+          ]
+        }
+      ]
+    }
+  },
+  "unchanged": {
+    "nutt": {
+      "questions": 3,
+      "leaves": 9
+    },
+    "pleva": {
+      "questions": 9,
+      "leaves": 21
+    },
+    "jagaia": {
+      "questions": 10,
+      "leaves": 19
+    },
+    "capri": {
+      "questions": 8,
+      "leaves": 11
+    },
+    "botanico": {
+      "questions": 15,
+      "leaves": 22
+    },
+    "janine": {
+      "questions": 6,
+      "leaves": 8
+    },
+    "eone": {
+      "questions": 18,
+      "leaves": 23
+    },
+    "nafigate": {
+      "questions": 5,
+      "leaves": 8
+    },
+    "boemi": {
+      "questions": 8,
+      "leaves": 12
+    },
+    "rubens": {
+      "questions": 7,
+      "leaves": 12
+    },
+    "safran": {
+      "questions": 8,
+      "leaves": 11
+    }
+  }
+}

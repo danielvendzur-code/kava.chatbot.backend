@@ -1,0 +1,220 @@
+{
+  "series": "s5",
+  "type": "cosmetics",
+  "segment": "fragrance",
+  "name": "Niche & Glow",
+  "country": "CZ",
+  "logos": {
+    "landing": "/assets/s5/nicheandglow/logo.webp",
+    "header": "/assets/s5/nicheandglow/logo.webp",
+    "avatar": "/assets/s5/nicheandglow/logo.webp"
+  },
+  "brand": {
+    "name": "Niche & Glow",
+    "domain": "nicheandglow.cz",
+    "website": "https://www.nicheandglow.cz/",
+    "lang": "cs",
+    "theme": {
+      "brand": "#793b61",
+      "accent": "#793b61",
+      "soft": "#f7f3f5",
+      "paper": "#ffffff",
+      "ink": "#242024",
+      "line": "#e8e1e5"
+    },
+    "fullName": "Niche & Glow",
+    "url": "https://www.nicheandglow.cz/",
+    "logo": "/assets/s5/nicheandglow/logo.webp",
+    "mark": "/assets/s5/nicheandglow/logo.webp",
+    "greeting": "Vyberte si parfém podle doložených tónů. Dva různé parfémy si můžete porovnat.",
+    "quickChips": [
+      "Fíkový list a kokos",
+      "Káva a tonka",
+      "Kolínská s vetiverem",
+      "Porovnat dva parfémy"
+    ]
+  },
+  "traitCopy": {
+    "green": [
+      "Fík, ovoce nebo matcha",
+      "Fíkové, ovocné nebo čajové akordy.",
+      "Fík, ovoce nebo matcha",
+      "Fíkové, ovocné nebo čajové akordy."
+    ],
+    "floral": [
+      "Pivoňka nebo bílé květy",
+      "Pivoňka, jasmín a pomerančový květ.",
+      "Pivoňka nebo bílé květy",
+      "Pivoňka, jasmín a pomerančový květ."
+    ],
+    "gourmand": [
+      "Káva a sladké tóny",
+      "Kávové akordy s kokosem nebo tonkou.",
+      "Káva a sladké tóny",
+      "Kávové akordy s kokosem nebo tonkou."
+    ],
+    "wood": [
+      "Dřevo, vetiver nebo pryskyřice",
+      "Od santalu přes vetiver až po oud.",
+      "Dřevo, vetiver nebo pryskyřice",
+      "Od santalu přes vetiver až po oud."
+    ],
+    "mio": [
+      "Marakuja, oud a kůže",
+      "Marakuja a šafrán s oudem, kůží a hřejivými pryskyřicemi.",
+      "Marakuja, oud a kůže",
+      "Marakuja a šafrán s oudem, kůží a hřejivými pryskyřicemi."
+    ],
+    "santalist": [
+      "Santal a okurka",
+      "Krémové santalové tóny se svěží okurkou, kardamomem a kosatcem.",
+      "Santal a okurka",
+      "Krémové santalové tóny se svěží okurkou, kardamomem a kosatcem."
+    ],
+    "helenist": [
+      "Fíkový list a kokos",
+      "Fíkový list, bílé květy a kokos nad dřevitým základem.",
+      "Fíkový list a kokos",
+      "Fíkový list, bílé květy a kokos nad dřevitým základem."
+    ],
+    "crispy": [
+      "Kokos, káva a oříšky",
+      "Kokos, káva a oříšky s vanilkou, rumem a karamelem.",
+      "Kokos, káva a oříšky",
+      "Kokos, káva a oříšky s vanilkou, rumem a karamelem."
+    ],
+    "skin-fetish": [
+      "Černé třešně a kadidlo",
+      "Černé třešně a hruška s oudem, růží, kadidlem a benzoinem.",
+      "Černé třešně a kadidlo",
+      "Černé třešně a hruška s oudem, růží, kadidlem a benzoinem."
+    ],
+    "nectarina": [
+      "Nektarinka a Prosecco",
+      "Ovocný profil s nektarinkou, Proseccem, hroznovým vínem a pomerančovým květem.",
+      "Nektarinka a Prosecco",
+      "Ovocný profil s nektarinkou, Proseccem, hroznovým vínem a pomerančovým květem."
+    ],
+    "pivoine": [
+      "Růžová pivoňka",
+      "Růžová pivoňka a satén s pelargonií, bergamotem a bílými mošusy.",
+      "Růžová pivoňka",
+      "Růžová pivoňka a satén s pelargonií, bergamotem a bílými mošusy."
+    ],
+    "ground": [
+      "Oud a kořeněné dřevo",
+      "Dřevitá kompozice s oudem, santalem a cedrem; šafrán, zázvor a růžový pepř v úvodu.",
+      "Oud a kořeněné dřevo",
+      "Dřevitá kompozice s oudem, santalem a cedrem; šafrán, zázvor a růžový pepř v úvodu."
+    ],
+    "float": [
+      "Jasmín a pomerančový květ",
+      "Bylinný úvod s citronovou trávou a bazalkou, následovaný jasmínem a pomerančovým květem.",
+      "Jasmín a pomerančový květ",
+      "Bylinný úvod s citronovou trávou a bazalkou, následovaný jasmínem a pomerančovým květem."
+    ],
+    "vetiver": [
+      "Zemitý vetiver",
+      "Kolínská voda s vetiverem a zemitými, dřevitými a jemně sladkými tóny.",
+      "Zemitý vetiver",
+      "Kolínská voda s vetiverem a zemitými, dřevitými a jemně sladkými tóny."
+    ],
+    "matcha": [
+      "Matcha a borůvky",
+      "Matcha s vanilkovými a borůvkovými tóny a svěžím nádechem pistácií. Bezalkoholový roll-on.",
+      "Matcha a borůvky",
+      "Matcha s vanilkovými a borůvkovými tóny a svěžím nádechem pistácií. Bezalkoholový roll-on."
+    ],
+    "croissant": [
+      "Káva a tonka",
+      "Kávový profil s cappuccinem, karamelem, vanilkou, mlékem a tonkou. Sprej s uvedenou koncentrací 25 %.",
+      "Káva a tonka",
+      "Kávový profil s cappuccinem, karamelem, vanilkou, mlékem a tonkou. Sprej s uvedenou koncentrací 25 %."
+    ]
+  },
+  "stepCopy": {
+    "fragranceDirection": [
+      "Jaké tóny chcete objevovat?",
+      "Vyberte podle doložených tónů.",
+      "Tóny vůně"
+    ],
+    "fragranceProfile": [
+      "Které tóny vás lákají?",
+      "Vyberte jeden profil.",
+      "Tóny vůně"
+    ]
+  },
+  "compareFocus": true,
+  "upsellFocus": {},
+  "choicePhotos": {
+    "green": [
+      "/assets/s3/scenes-k2/matcha.jpg"
+    ],
+    "floral": [
+      "/assets/s3/scenes-k2/jasmine.jpg"
+    ],
+    "gourmand": [
+      "/assets/s3/scenes-k2/coffee-beans.jpg"
+    ],
+    "wood": [
+      "/assets/s3/scenes-k2/sandalwood.jpg"
+    ],
+    "santalist": [
+      "/assets/s3/scenes-k2/sandalwood.jpg"
+    ],
+    "helenist": [
+      "/assets/s3/scenes-k2/coconut.jpg"
+    ],
+    "crispy": [
+      "/assets/s3/scenes-k2/coconut.jpg"
+    ],
+    "skin-fetish": [
+      "/assets/s3/scenes-k2/incense.jpg"
+    ],
+    "nectarina": [
+      "/assets/s3/scenes-k2/grapes.jpg"
+    ],
+    "float": [
+      "/assets/s3/scenes-k2/jasmine.jpg"
+    ],
+    "matcha": [
+      "/assets/s3/scenes-k2/matcha.jpg"
+    ],
+    "croissant": [
+      "/assets/s3/scenes-k2/coffee-beans.jpg"
+    ],
+    "mio": [
+      "/assets/s5/nicheandglow/mio-dio.webp"
+    ],
+    "pivoine": [
+      "/assets/s5/nicheandglow/bergamoss-pivoine-de-malen.webp"
+    ],
+    "ground": [
+      "/assets/s5/nicheandglow/gabar-02-ground.webp"
+    ],
+    "vetiver": [
+      "/assets/s5/nicheandglow/so-slow-eau-de-cologne-vetiver.webp"
+    ],
+    "navigation:more": [
+      "/assets/s5/nicheandglow/gabar-02-ground.webp"
+    ]
+  },
+  "compareProductIds": [
+    "helenist",
+    "croissant"
+  ],
+  "segmentText": {
+    "entryNote": "Tóny vůně · konkrétní profil · porovnání",
+    "titleSuffix": "výběr parfému",
+    "tab": "Výběr parfému",
+    "advisorName": "Parfémový poradce",
+    "entrySmall": "VÝBĚR PARFÉMU",
+    "entryTitle": "Najít vůni podle tónů",
+    "placeholder": "Zeptejte se na vůni nebo balení…",
+    "heading": "Pomozte zákazníkovi najít vůni podle jeho vkusu.",
+    "lead": "Zákazník si vybere podle tónů vůně a prohlédne si konkrétní parfém s cenou, balením a odkazem. Dva odlišné parfémy si může porovnat.",
+    "includedChat": "Tóny vůně, balení, ceny a porovnání dvou parfémů.",
+    "includedAdvisor": "Preferované tóny a konkrétní profil vůně — na konci konkrétní parfém.",
+    "greeting": "Vyberte si parfém podle doložených tónů. Dva různé parfémy si můžete porovnat."
+  }
+}

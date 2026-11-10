@@ -226,6 +226,7 @@
   }
   function create(source) {
     const products = prepare(source.filter(p=>!p.source?.advisorExcludedReason));
+    const fragranceProduct=p=>p.category==='fragrance'&&p.source?.series==='s5'&&p.source?.selectionTraitsEvidence&&p.features.fragranceDirection&&p.features.fragranceProfile;
     const withinBudget=(p,n)=>Number.isFinite(p.priceAmount)&&p.priceAmount<=Number(n)&&(!p.source?.priceFrom||(Number.isFinite(p.source.priceMax)&&p.source.priceMax<=Number(n)));
     function categoryPool(answers = {}) {
       return products.filter(p => (!answers.category || p.category === answers.category) && (!answers.kind || answers.kind === 'any' || p.kind === answers.kind));
@@ -241,6 +242,7 @@
       if (answers.profile && answers.profile !== 'any') list = list.filter(p => p.signals.includes(answers.profile)||p.source?.allSkinTypes===true);
       if (answers.product) list = list.filter(p => p.id === answers.product);
       for(const key of ['careUse','purpose','texture','hairNeed','hairUse','area','hairFocus','packType','careVariant','skinFocus','time','ingredient','size'])if(answers[key]&&answers[key]!=='any')list=list.filter(p=>p.features[key]===answers[key]);
+      for(const key of ['fragranceDirection','fragranceProfile'])if(answers[key]&&answers[key]!=='any')list=list.filter(p=>!fragranceProduct(p)||p.features[key]===answers[key]);
       const rank = p => (p.signals.includes(answers.profile) ? 8 : 0) + (p.signals.includes(answers.goal) ? 12 : 0);
       list.sort((a, b) => rank(b) - rank(a) || a.catalogueOrder-b.catalogueOrder);
       const winner = list[0] || null;
@@ -276,6 +278,11 @@
         if(remaining.length<2||remaining.some(p=>!p.features[key]))return;
         const values=[...new Set(remaining.map(p=>p.features[key]))];
         if(values.length>1)ask(key,values);
+      }
+      // Source-reviewed fragrance notes use their own preference questions.
+      // No skin-type, concentration-as-intensity, occasion or budget inference.
+      if(remaining.length&&remaining.every(fragranceProduct)){
+        feature('fragranceDirection');feature('fragranceProfile');return result;
       }
       // Purpose first: distinguish sun care, washing and targeted needs before price.
       feature('careUse');feature('purpose');

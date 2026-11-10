@@ -902,6 +902,56 @@
           "proof": "n447/s5/dokazy/safran-preview-qa.json"
         }
       }
+    },
+    "adoraniche.sk": {
+      "domain": "adoraniche.sk",
+      "operator": "kano beauty s. r. o.",
+      "ico": "57226717",
+      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "products": 12,
+      "owner": "PERFUME_WORKER sources / MAIN_WORKER integration",
+      "sourceSha": "9c5cf23924a29e0a25961b5e37087297fc3d17bc",
+      "qa": {
+        "widths": [
+          320,
+          390,
+          1280
+        ],
+        "resultPaths": 12,
+        "resultScreens": 36,
+        "engineReachable": 12,
+        "paidCalls": 0
+      },
+      "emailDraft": "NOT_READY",
+      "mailDuplicateCheck": "PENDING_CONTROLLER",
+      "production": "NOT_DEPLOYED",
+      "preview": "PENDING_NEW_RUNTIME_SHA",
+      "evidence": "n447/s5/odovzdanie-20261110-parfumerie.md"
+    },
+    "nicheandglow.cz": {
+      "domain": "nicheandglow.cz",
+      "operator": "Ing. Eliška Ostroborodova",
+      "ico": "23099259",
+      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "products": 12,
+      "owner": "PERFUME_WORKER sources / MAIN_WORKER integration",
+      "sourceSha": "9c5cf23924a29e0a25961b5e37087297fc3d17bc",
+      "qa": {
+        "widths": [
+          320,
+          390,
+          1280
+        ],
+        "resultPaths": 12,
+        "resultScreens": 36,
+        "engineReachable": 12,
+        "paidCalls": 0
+      },
+      "emailDraft": "NOT_READY",
+      "mailDuplicateCheck": "PENDING_CONTROLLER",
+      "production": "NOT_DEPLOYED",
+      "preview": "PENDING_NEW_RUNTIME_SHA",
+      "evidence": "n447/s5/odovzdanie-20261110-parfumerie.md"
     }
   },
   "localGit": {
@@ -932,5 +982,7 @@
     "emailSendingForbidden": true,
     "productionForbidden": true,
     "coordination": "Owner authorized existing browser Codex colleague; isolated branches, shared engine owner main worker. No internal subagents."
-  }
+  },
+  "previewVerifiedCount": 11,
+  "nextAction": "Save perfume runtime checkpoint; own live12+12 Preview QA; count remains11 until verified. Existing colleague browser empty after maintenance; source Git preserved."
 }

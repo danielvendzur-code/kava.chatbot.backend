@@ -12,3 +12,10 @@
 /**/*.txt
 /.env*
 /.git/
+
+# S5 internal source reviews, proof archives and integration fragments stay in Git.
+# Runtime uses catalogues, registry, CSS and assets; these paths are not customer UI.
+/n447/s5/dokazy/
+/n447/s5/sources/
+/n447/s5/perfume-fragments/
+/n447/s5/status.json

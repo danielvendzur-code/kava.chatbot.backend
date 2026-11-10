@@ -1,0 +1,91 @@
+{
+  "status": "PROPOSED_MODEL_NOT_ACTIVE",
+  "key": "fragranceDirection",
+  "question": "Aké tóny chcete objavovať?",
+  "options": [
+    {
+      "value": "green",
+      "label": "Citrusy, figa alebo šťavnaté ovocie",
+      "question": "Ktoré tóny vás lákajú?",
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "value": "nature",
+          "label": "Citrón a mäta",
+          "productId": "nature"
+        },
+        {
+          "value": "nel",
+          "label": "Liči a rebarbora",
+          "productId": "nel"
+        },
+        {
+          "value": "swim",
+          "label": "Figa a zelený čaj",
+          "productId": "swim"
+        }
+      ]
+    },
+    {
+      "value": "clean",
+      "label": "Mydlové, pudrové alebo ružové tóny",
+      "question": "Ktoré tóny vás lákajú?",
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "value": "adam",
+          "label": "Ruža a vanilka",
+          "productId": "adam"
+        },
+        {
+          "value": "paper-soap",
+          "label": "Mydlový dojem s aldehydmi",
+          "productId": "paper-soap"
+        },
+        {
+          "value": "cloud",
+          "label": "Mlieko a ryžový púder",
+          "productId": "cloud"
+        }
+      ]
+    },
+    {
+      "value": "gourmand",
+      "label": "Čaj, kokos alebo sladké tóny",
+      "question": "Ktoré tóny vás lákajú?",
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "value": "roasted-tea",
+          "label": "Pražený zelený čaj",
+          "productId": "roasted-tea"
+        },
+        {
+          "value": "bain",
+          "label": "Kokos a kvet tiaré",
+          "productId": "bain"
+        },
+        {
+          "value": "chai",
+          "label": "Čierny čaj a koreniny",
+          "productId": "chai"
+        },
+        {
+          "value": "blond",
+          "label": "Vanilka a čokoláda",
+          "productId": "blond"
+        },
+        {
+          "value": "maamoul",
+          "label": "Datle a orechy",
+          "productId": "maamoul"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Suchý oud",
+      "productId": "nucleus"
+    }
+  ]
+}

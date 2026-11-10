@@ -1,0 +1,37 @@
+{
+  "reportedBy": "MAIN_WORKER_CUA",
+  "receivedVia": "Coordinator reply in this conversation",
+  "observedAt": "2026-11-10T12:59:49.134Z",
+  "reportedLocalWindow": "2026-11-10 13:55–13:59 Europe/Prague",
+  "cookieMode": "Reject cookies",
+  "ownWorkerBrowserQA": false,
+  "limits": "Only reported home and named product in this cookie/session mode; other modes/subpages unknown.",
+  "evidenceBytes": "PENDING_COORDINATOR_REMOTE_CHECKPOINT",
+  "observations": [
+    {
+      "domain": "adoraniche.sk",
+      "urls": [
+        "https://www.adoraniche.sk/",
+        "https://www.adoraniche.sk/imperial-parfums-adam-extrait-de-parfum-100ml/"
+      ],
+      "observed": "Home and Adam visually inspected. No product-chat/advisor launcher observed. Poradíme vám osobne refers to a physical shop. Opýtať sa opened a normal seller-contact form: email, telephone, message, submit. No data entered/sent. Adam 100 ml / 199 EUR / Skladom.",
+      "screenshots": [
+        "adora-live-home-20261110.png",
+        "adora-live-product-20261110.png",
+        "adora-live-question-20261110.png"
+      ]
+    },
+    {
+      "domain": "nicheandglow.cz",
+      "urls": [
+        "https://www.nicheandglow.cz/",
+        "https://www.nicheandglow.cz/zbozi/mio-dio/"
+      ],
+      "observed": "Home and Mio Dio visually inspected. No product-chat/advisor/quiz launcher observed. Static personal-advice text, telephone and email. Mio Dio 30 ml / 3890 CZK / Skladem; photo and note pyramid loaded. Nothing sent/cart.",
+      "screenshots": [
+        "nicheglow-live-home-20261110.png",
+        "nicheglow-live-product-20261110.png"
+      ]
+    }
+  ]
+}

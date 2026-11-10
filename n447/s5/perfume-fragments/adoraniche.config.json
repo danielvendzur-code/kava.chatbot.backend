@@ -1,0 +1,176 @@
+{
+  "slug": "adoraniche",
+  "series": "s5",
+  "segment": "fragrance",
+  "owner": "PERFUME_WORKER",
+  "status": "RESERVED_NOT_REGISTERED_ENGINE_PENDING",
+  "catalogue": "/catalogues/adoraniche.js",
+  "brand": {
+    "name": "Adora Niche",
+    "domain": "adoraniche.sk",
+    "website": "https://www.adoraniche.sk/",
+    "lang": "sk",
+    "theme": {
+      "brand": "#372c31",
+      "accent": "#372c31",
+      "soft": "#f7f3f5",
+      "paper": "#ffffff",
+      "ink": "#242024",
+      "line": "#e8e1e5"
+    }
+  },
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "stepCopy": {
+    "fragranceDirection": [
+      "Aké tóny chcete objavovať?",
+      "Vyberte podľa doložených tónov."
+    ],
+    "fragranceProfile": [
+      "Ktoré tóny vás lákajú?",
+      "Vyberte jeden profil."
+    ]
+  },
+  "traitCopy": {
+    "green": [
+      "Citrusy, figa alebo šťavnaté ovocie",
+      "Preferenčná skupina tónov; nie klasifikácia rodiny.",
+      "Citrusy, figa alebo šťavnaté ovocie",
+      "Preferenčná skupina tónov; nie klasifikácia rodiny."
+    ],
+    "clean": [
+      "Mydlové, pudrové alebo ružové tóny",
+      "Preferenčná skupina tónov; nie klasifikácia rodiny.",
+      "Mydlové, pudrové alebo ružové tóny",
+      "Preferenčná skupina tónov; nie klasifikácia rodiny."
+    ],
+    "gourmand": [
+      "Čaj, kokos alebo sladké tóny",
+      "Preferenčná skupina tónov; nie klasifikácia rodiny.",
+      "Čaj, kokos alebo sladké tóny",
+      "Preferenčná skupina tónov; nie klasifikácia rodiny."
+    ],
+    "wood": [
+      "Suchý oud",
+      "Preferenčná skupina tónov; nie klasifikácia rodiny.",
+      "Suchý oud",
+      "Preferenčná skupina tónov; nie klasifikácia rodiny."
+    ],
+    "adam": [
+      "Ruža a vanilka",
+      "Ruža, jazmín a vanilka s ambrou a sladkým pižmom.",
+      "Ruža a vanilka",
+      "Ruža, jazmín a vanilka s ambrou a sladkým pižmom."
+    ],
+    "paper-soap": [
+      "Mydlový dojem s aldehydmi",
+      "Mydlový dojem s aldehydmi, kvetinovým srdcom a pižmom.",
+      "Mydlový dojem s aldehydmi",
+      "Mydlový dojem s aldehydmi, kvetinovým srdcom a pižmom."
+    ],
+    "roasted-tea": [
+      "Pražený zelený čaj",
+      "Interpretácia praženého zeleného čaju hojicha s kokosom, arašidmi a morskými riasami.",
+      "Pražený zelený čaj",
+      "Interpretácia praženého zeleného čaju hojicha s kokosom, arašidmi a morskými riasami."
+    ],
+    "nature": [
+      "Citrón a mäta",
+      "Citrusový úvod, mäta a medový melón nad vetiverom a cédrom.",
+      "Citrón a mäta",
+      "Citrusový úvod, mäta a medový melón nad vetiverom a cédrom."
+    ],
+    "bain": [
+      "Kokos a kvet tiaré",
+      "Kokos a bergamot s kvetom tiaré, ylang ylangom a vanilkou.",
+      "Kokos a kvet tiaré",
+      "Kokos a bergamot s kvetom tiaré, ylang ylangom a vanilkou."
+    ],
+    "chai": [
+      "Čierny čaj a koreniny",
+      "Masala chai: čierny čaj, koreniny a napenené mlieko s kakaom a vanilkou.",
+      "Čierny čaj a koreniny",
+      "Masala chai: čierny čaj, koreniny a napenené mlieko s kakaom a vanilkou."
+    ],
+    "nucleus": [
+      "Suchý oud",
+      "Kompozícia sústredená na suchý oud s drevitým, zemitým a mierne koženým charakterom.",
+      "Suchý oud",
+      "Kompozícia sústredená na suchý oud s drevitým, zemitým a mierne koženým charakterom."
+    ],
+    "nel": [
+      "Liči a rebarbora",
+      "Liči, jablko a rebarbora s ružou, jazmínom, magnóliou a ambrou.",
+      "Liči a rebarbora",
+      "Liči, jablko a rebarbora s ružou, jazmínom, magnóliou a ambrou."
+    ],
+    "swim": [
+      "Figa a zelený čaj",
+      "Figa a zelený čaj s púčikom čiernych ríbezlí, cédrom a ambrou.",
+      "Figa a zelený čaj",
+      "Figa a zelený čaj s púčikom čiernych ríbezlí, cédrom a ambrou."
+    ],
+    "cloud": [
+      "Mlieko a ryžový púder",
+      "Mlieko, ryžový púder a mimóza so santalovým drevom a vanilkou.",
+      "Mlieko a ryžový púder",
+      "Mlieko, ryžový púder a mimóza so santalovým drevom a vanilkou."
+    ],
+    "blond": [
+      "Vanilka a čokoláda",
+      "Gurmánsky a kvetinový profil s vanilkou, čokoládou, figovým mliekom a blond tabakom.",
+      "Vanilka a čokoláda",
+      "Gurmánsky a kvetinový profil s vanilkou, čokoládou, figovým mliekom a blond tabakom."
+    ],
+    "maamoul": [
+      "Datle a orechy",
+      "Datle, pistácie a orechy s čiernym sezamom, drevitým základom a karamelom.",
+      "Datle a orechy",
+      "Datle, pistácie a orechy s čiernym sezamom, drevitým základom a karamelom."
+    ]
+  },
+  "quickChips": [
+    "Citrusy a mäta",
+    "Čierny čaj a koreniny",
+    "Suchý oud",
+    "Porovnať dva parfumy"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Citrusy a mäta",
+      "productIds": [
+        "nature"
+      ]
+    },
+    {
+      "chip": "Čierny čaj a koreniny",
+      "productIds": [
+        "chai"
+      ]
+    },
+    {
+      "chip": "Suchý oud",
+      "productIds": [
+        "nucleus"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "nature",
+    "chai"
+  ],
+  "addon": null,
+  "addonReason": "No source-verified complementary routine role; no forced second perfume.",
+  "budgetQuestion": false,
+  "introAfterIntegrationOnly": "Vyberte si parfum podľa doložených tónov. Dva rôzne parfumy si môžete porovnať.",
+  "sceneStatus": "PENDING_SHARED_SCENE_MAPPING_AND_VISUAL_UI_QA",
+  "logoStatus": "PENDING_AVATAR_VISUAL_QA",
+  "enableRuntime": false,
+  "liveEligibilityEvidence": "/n447/s5/dokazy/perfume-worker/coordinator-live-eligibility.json",
+  "logos": {
+    "landing": "/assets/s5/adoraniche/logo.webp",
+    "header": "/assets/s5/adoraniche/logo.webp",
+    "avatar": "/assets/s5/adoraniche/logo.webp"
+  },
+  "compareFocus": true,
+  "avatarSurfaceRequirement": "Official logo on dark, contrasting surface; verify actual 40px avatar. No logo filter or crop assumed."
+}

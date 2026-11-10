@@ -1,0 +1,99 @@
+{
+  "status": "PROPOSED_MODEL_NOT_ACTIVE",
+  "key": "fragranceDirection",
+  "question": "Jaké tóny chcete objevovat?",
+  "options": [
+    {
+      "value": "green",
+      "label": "Fík, ovoce nebo matcha",
+      "question": "Které tóny vás lákají?",
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "value": "helenist",
+          "label": "Fíkový list a kokos",
+          "productId": "helenist"
+        },
+        {
+          "value": "nectarina",
+          "label": "Nektarinka a Prosecco",
+          "productId": "nectarina"
+        },
+        {
+          "value": "matcha",
+          "label": "Matcha a borůvky",
+          "productId": "matcha"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Pivoňka nebo bílé květy",
+      "question": "Které tóny vás lákají?",
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "value": "pivoine",
+          "label": "Růžová pivoňka",
+          "productId": "pivoine"
+        },
+        {
+          "value": "float",
+          "label": "Jasmín a pomerančový květ",
+          "productId": "float"
+        }
+      ]
+    },
+    {
+      "value": "gourmand",
+      "label": "Káva a sladké tóny",
+      "question": "Které tóny vás lákají?",
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "value": "crispy",
+          "label": "Kokos, káva a oříšky",
+          "productId": "crispy"
+        },
+        {
+          "value": "croissant",
+          "label": "Káva a tonka",
+          "productId": "croissant"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Dřevo, vetiver nebo pryskyřice",
+      "question": "Které tóny vás lákají?",
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "value": "mio",
+          "label": "Marakuja, oud a kůže",
+          "productId": "mio"
+        },
+        {
+          "value": "santalist",
+          "label": "Santal a okurka",
+          "productId": "santalist"
+        },
+        {
+          "value": "skin-fetish",
+          "label": "Černé třešně a kadidlo",
+          "productId": "skin-fetish"
+        },
+        {
+          "value": "ground",
+          "label": "Oud a kořeněné dřevo",
+          "productId": "ground"
+        },
+        {
+          "value": "vetiver",
+          "label": "Zemitý vetiver",
+          "productId": "vetiver"
+        }
+      ]
+    }
+  ]
+}

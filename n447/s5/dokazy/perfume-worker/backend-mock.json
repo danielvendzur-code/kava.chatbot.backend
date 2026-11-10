@@ -1,0 +1,60 @@
+{
+  "paidCalls": 0,
+  "mockCalls": 6,
+  "rows": [
+    {
+      "slug": "adoraniche",
+      "query": "Citrusy a mäta",
+      "ids": [
+        "nature"
+      ],
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "slug": "adoraniche",
+      "query": "Čierny čaj a koreniny",
+      "ids": [
+        "chai"
+      ],
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "slug": "adoraniche",
+      "query": "Suchý oud",
+      "ids": [
+        "nucleus"
+      ],
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "slug": "nicheandglow",
+      "query": "Fíkový list a kokos",
+      "ids": [
+        "helenist"
+      ],
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "slug": "nicheandglow",
+      "query": "Káva a tonka",
+      "ids": [
+        "croissant"
+      ],
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "slug": "nicheandglow",
+      "query": "Kolínská s vetiverem",
+      "ids": [
+        "vetiver"
+      ],
+      "status": 200,
+      "exactUrlAndPrice": true
+    }
+  ]
+}

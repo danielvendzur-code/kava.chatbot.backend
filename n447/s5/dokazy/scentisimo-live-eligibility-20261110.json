@@ -1,0 +1,38 @@
+{
+  "company": "Scentisimo",
+  "domain": "scentisimo.cz",
+  "operator": "La Graciosa Fashion s.r.o.",
+  "ico": "22067906",
+  "observer": "MAIN_WORKER_CUA",
+  "checkedAt": "2026-11-10T13:24:36.055Z",
+  "home": "https://www.scentisimo.cz/",
+  "product": "https://www.scentisimo.cz/eau-de-la-couronne/",
+  "cookies": "Odmítnout cookies clicked on home",
+  "observed": "Rendered home and product visually inspected; no product-chat/advisor launcher observed in this mode. Ordinary tel contact. Opened Dotaz k produktu -> Dotaz na prodejce, blank email/phone/message, captcha and submit. No input, captcha interaction, submission or cart.",
+  "limit": "Other cookie/session modes and unvisited pages not proven absent. Eligibility only; fresh domain/operator duplicate and claims required by PERFUME_WORKER before reservation.",
+  "productObservation": {
+    "name": "Eau de la Couronne",
+    "volume": "50 ml",
+    "priceCZK": 1990,
+    "stock": "Skladem (2 ks)",
+    "photo": "Loaded and visually inspected"
+  },
+  "proof": [
+    {
+      "path": "n447/s5/dokazy/scentisimo-live-home-20261110.webp",
+      "sha256": "73564935a681b95a69f7c755dac3d2e936dd47922eeda27bf9f316363681bfc2",
+      "bytes": 83748
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo-live-product-20261110.webp",
+      "sha256": "f1e10ddaf9c28402fbf1b89f273fa9cc5a8d8ea1b4f9e6c494dbb1ff8211471c",
+      "bytes": 48496
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo-live-question-20261110.webp",
+      "sha256": "34730656f6301c50b1f2cd5f6e6e3014a6cdab59cec8dabbbf2085d25bd89baf",
+      "bytes": 34070
+    }
+  ],
+  "messagesSent": 0
+}
