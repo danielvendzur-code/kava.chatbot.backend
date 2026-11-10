@@ -1,0 +1,11 @@
+{
+  "domain": "oraculum.store",
+  "officialTerms": "https://oraculum.store/policies/terms-of-service",
+  "termsCapturedAt": "2026-11-10T13:39:29.018960+00:00",
+  "termsStatement": "Prodávající není plátcem daně z přidané hodnoty. Fakturu vystaví prodávající kupujícímu po uhrazení ceny zboží",
+  "aresSource": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/10905081",
+  "aresField": "seznamRegistraci.stavZdrojeDph=AKTIVNI",
+  "interpretationLimit": "That ARES source-state flag alone is insufficient to independently establish current VAT-payer status. Do not present it as a verified contradiction or silently infer tax treatment. Earlier commentary calling it active VAT registration was stronger than the recorded evidence.",
+  "requiredDataTreatment": "Retain official final displayed retail prices, explicitly record merchant non-payer statement and tax-status review. Do not invent an included VAT rate/amount or purchase guarantee.",
+  "runtimeChanged": false
+}

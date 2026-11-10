@@ -1,0 +1,226 @@
+{
+  "checkedAt": "2026-11-10T18:52:21.625046+00:00",
+  "formulaCount": 3,
+  "variantCount": 13,
+  "sampleVolumesAreNotSeparateFormulas": true,
+  "rows": [
+    {
+      "key": "essentique",
+      "url": "https://www.essentique.sk/bois-imperial/",
+      "fetchedAt": "2026-11-10T18:47:53.278162+00:00",
+      "status": 200,
+      "mode": "Direct verified HTTPS HTML/embedded official variant JSON. Not rendered/live widget QA.",
+      "variants": [
+        {
+          "sku": "47/2ML",
+          "pack": "2ml",
+          "priceAmount": 7.0,
+          "currency": "EUR",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": {
+            "variantId": 50,
+            "pack": "2ml",
+            "visibleVariantPrice": "€7",
+            "priceUnformatted": 7,
+            "available": true,
+            "parameterKey": "17-14",
+            "photo": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/47-2_chatgpt-image-jul-15--2026--09-12-32-pm.png?ff=1&x=1024&y=768&q=85&ts=6a57dba9&sg=161563f2"
+          },
+          "matchingMethod": "Exact official variant code joins select parameter key and variant JSON to microdata offer"
+        },
+        {
+          "sku": "47/3ML",
+          "pack": "3ml",
+          "priceAmount": 9.0,
+          "currency": "EUR",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": {
+            "variantId": 53,
+            "pack": "3ml",
+            "visibleVariantPrice": "€9",
+            "priceUnformatted": 9,
+            "available": true,
+            "parameterKey": "17-17",
+            "photo": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/47-2_chatgpt-image-jul-15--2026--09-12-32-pm.png?ff=1&x=1024&y=768&q=85&ts=6a57dba9&sg=161563f2"
+          },
+          "matchingMethod": "Exact official variant code joins select parameter key and variant JSON to microdata offer"
+        },
+        {
+          "sku": "47/5ML",
+          "pack": "5ml",
+          "priceAmount": 14.0,
+          "currency": "EUR",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": {
+            "variantId": 56,
+            "pack": "5ml",
+            "visibleVariantPrice": "€14",
+            "priceUnformatted": 14,
+            "available": true,
+            "parameterKey": "17-20",
+            "photo": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/47-2_chatgpt-image-jul-15--2026--09-12-32-pm.png?ff=1&x=1024&y=768&q=85&ts=6a57dba9&sg=161563f2"
+          },
+          "matchingMethod": "Exact official variant code joins select parameter key and variant JSON to microdata offer"
+        },
+        {
+          "sku": "47/10M",
+          "pack": "10ml",
+          "priceAmount": 25.0,
+          "currency": "EUR",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": {
+            "variantId": 59,
+            "pack": "10ml",
+            "visibleVariantPrice": "€25",
+            "priceUnformatted": 25,
+            "available": true,
+            "parameterKey": "17-23",
+            "photo": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/47-2_chatgpt-image-jul-15--2026--09-12-32-pm.png?ff=1&x=1024&y=768&q=85&ts=6a57dba9&sg=161563f2"
+          },
+          "matchingMethod": "Exact official variant code joins select parameter key and variant JSON to microdata offer"
+        },
+        {
+          "sku": "47/20M",
+          "pack": "20ml",
+          "priceAmount": 43.0,
+          "currency": "EUR",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": {
+            "variantId": 321,
+            "pack": "20ml",
+            "visibleVariantPrice": "€43",
+            "priceUnformatted": 43,
+            "available": true,
+            "parameterKey": "17-24",
+            "photo": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/47-2_chatgpt-image-jul-15--2026--09-12-32-pm.png?ff=1&x=1024&y=768&q=85&ts=6a57dba9&sg=161563f2"
+          },
+          "matchingMethod": "Exact official variant code joins select parameter key and variant JSON to microdata offer"
+        },
+        {
+          "sku": "47/30M",
+          "pack": "30ml",
+          "priceAmount": 57.0,
+          "currency": "EUR",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": {
+            "variantId": 1066,
+            "pack": "30ml",
+            "visibleVariantPrice": "€57",
+            "priceUnformatted": 57,
+            "available": true,
+            "parameterKey": "17-163",
+            "photo": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/47-2_chatgpt-image-jul-15--2026--09-12-32-pm.png?ff=1&x=1024&y=768&q=85&ts=6a57dba9&sg=161563f2"
+          },
+          "matchingMethod": "Exact official variant code joins select parameter key and variant JSON to microdata offer"
+        }
+      ]
+    },
+    {
+      "key": "fragrancesamples",
+      "url": "https://www.fragrancesamples.cz/mancera-french-riviera/",
+      "fetchedAt": "2026-11-10T18:47:53.279529+00:00",
+      "status": 200,
+      "mode": "Direct verified HTTPS HTML/embedded official variant JSON. Not rendered/live widget QA.",
+      "variants": [
+        {
+          "sku": "204/1ML",
+          "pack": "1ml",
+          "priceAmount": 65.0,
+          "currency": "CZK",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": {
+            "variantId": 783,
+            "pack": "1ml",
+            "visibleVariantPrice": "65 Kč",
+            "priceUnformatted": 65,
+            "available": true,
+            "parameterKey": "16-16",
+            "photo": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/204_e74d20ec-6395-4a82-ae42-af11a648bc9e.png?ff=1&x=1024&y=768&q=85&ts=6a3436ff&sg=161563f2"
+          },
+          "matchingMethod": "Exact official variant code joins select parameter key and variant JSON to microdata offer"
+        },
+        {
+          "sku": "204/2ML",
+          "pack": "2ml",
+          "priceAmount": 139.0,
+          "currency": "CZK",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": {
+            "variantId": 786,
+            "pack": "2ml",
+            "visibleVariantPrice": "139 Kč",
+            "priceUnformatted": 139,
+            "available": true,
+            "parameterKey": "16-19",
+            "photo": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/204_e74d20ec-6395-4a82-ae42-af11a648bc9e.png?ff=1&x=1024&y=768&q=85&ts=6a3436ff&sg=161563f2"
+          },
+          "matchingMethod": "Exact official variant code joins select parameter key and variant JSON to microdata offer"
+        },
+        {
+          "sku": "204/5ML",
+          "pack": "5ml",
+          "priceAmount": 329.0,
+          "currency": "CZK",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": {
+            "variantId": 789,
+            "pack": "5ml",
+            "visibleVariantPrice": "329 Kč",
+            "priceUnformatted": 329,
+            "available": true,
+            "parameterKey": "16-22",
+            "photo": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/204_e74d20ec-6395-4a82-ae42-af11a648bc9e.png?ff=1&x=1024&y=768&q=85&ts=6a3436ff&sg=161563f2"
+          },
+          "matchingMethod": "Exact official variant code joins select parameter key and variant JSON to microdata offer"
+        }
+      ]
+    },
+    {
+      "key": "flakon",
+      "url": "https://www.flakon.sk/matiere-premiere---encens-suave/",
+      "fetchedAt": "2026-11-10T18:47:53.281245+00:00",
+      "status": 200,
+      "mode": "Direct verified HTTPS HTML/embedded official variant JSON. Not rendered/live widget QA.",
+      "variants": [
+        {
+          "sku": "194/1ML",
+          "pack": "1ml",
+          "priceAmount": 5.0,
+          "currency": "EUR",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": null,
+          "matchingMethod": "Explicit ml pack in exact official SKU, price and stock in same microdata offer"
+        },
+        {
+          "sku": "194/2ML",
+          "pack": "2ml",
+          "priceAmount": 9.5,
+          "currency": "EUR",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": null,
+          "matchingMethod": "Explicit ml pack in exact official SKU, price and stock in same microdata offer"
+        },
+        {
+          "sku": "194/3ML",
+          "pack": "3ml",
+          "priceAmount": 13.5,
+          "currency": "EUR",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": null,
+          "matchingMethod": "Explicit ml pack in exact official SKU, price and stock in same microdata offer"
+        },
+        {
+          "sku": "194/5ML",
+          "pack": "5ml",
+          "priceAmount": 22.0,
+          "currency": "EUR",
+          "stockSchema": "https://schema.org/InStock",
+          "sourceVariantData": null,
+          "matchingMethod": "Explicit ml pack in exact official SKU, price and stock in same microdata offer"
+        }
+      ]
+    }
+  ],
+  "newClaims": 0,
+  "paidModelCalls": 0
+}

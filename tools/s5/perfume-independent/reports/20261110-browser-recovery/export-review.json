@@ -1,0 +1,29 @@
+{
+  "preparedAt": "2026-11-10T22:24:00.338897+00:00",
+  "ownBranch": "codex/s5-perfume-20261110",
+  "sourceParent": "9d7563705e0fe087e3c69b30cc435056d2aaac34",
+  "repo": "danielvendzur-code/kava.chatbot.backend",
+  "proposedImageFiles": [
+    "live-b3-proof-01.zip",
+    "live-b3-proof-02.zip",
+    "live-b3-proof-03.zip",
+    "live-b3-proof-04.zip",
+    "live-b3-proof-05.zip",
+    "live-b3-proof-06.zip",
+    "live-b3-proof-07.zip",
+    "live-b3-proof-08.zip",
+    "live-b3-proof-09.zip",
+    "live-b3-proof-10.zip",
+    "live-b3-proof-11.zip",
+    "live-b3-proof-12.zip"
+  ],
+  "imageCount": 70,
+  "archiveCount": 12,
+  "archiveBytes": 4867952,
+  "imageBytesUploadedByWorker": 0,
+  "textReportLocation": "tools/s5/perfume-independent/reports/20261110-browser-recovery",
+  "deploymentExclusion": "Existing own-branch .vercelignore excludes /tools/ and Markdown. This checkpoint uses those existing exclusions, without editing shared deployment configuration.",
+  "sourceImagesAndRawPngs": "Preserved locally; no deletion.",
+  "sensitiveCredentialsInArchives": false,
+  "previewPages": "Scentisimo demo content only, no customer messages/account pages/secret values."
+}

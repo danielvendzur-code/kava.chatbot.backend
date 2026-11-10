@@ -1,0 +1,47 @@
+{
+  "at": "2026-11-10T22:13:47.674476+00:00",
+  "commit": "b3efd6189cc4d1e757cc4c4516971796e2476b02",
+  "scope": "Live unique Vercel Preview on exact supplied commit; API replies mocked/offline only. No live merchant messages or paid model calls.",
+  "cards": [
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "menta-sui-navigli",
+      "price": "490 Kč",
+      "pack": "150 ml",
+      "url": "https://www.scentisimo.cz/menta-sui-navigli/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "scentisimo-card-1-1280.png"
+    },
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "id": "oud-himalayen",
+      "price": "1890 Kč",
+      "pack": "100 ml",
+      "url": "https://www.scentisimo.cz/oud-himalayen/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "scentisimo-card-2-1280.png"
+    }
+  ],
+  "viewports": [
+    {
+      "slug": "scentisimo",
+      "width": 1280,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": false
+    }
+  ],
+  "errors": [],
+  "paidModelCalls": 0,
+  "complete": true,
+  "deploymentId": "dpl_sWu3FzappC5KthTJsqLhuppp4yHP",
+  "baseUrl": "https://kava-chatbot-backend-nmrab6xsh-danielvendzur-codes-projects.vercel.app",
+  "browser": "webkit",
+  "tlsVerification": true,
+  "qaType": "Live unique Vercel Preview on exact supplied commit; API replies mocked/offline only. No live merchant messages or paid model calls."
+}

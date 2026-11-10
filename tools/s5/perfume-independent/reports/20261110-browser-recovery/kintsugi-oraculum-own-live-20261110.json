@@ -1,0 +1,165 @@
+{
+  "scope": "Actual live rendered home/product followed by visual screenshot review, not HTML-only evidence. No chat/form/cart/checkout input or submission.",
+  "rows": [
+    {
+      "domain": "kintsugiperfumes.com",
+      "operator": "KINTSUGI Labs s.r.o.",
+      "ico": "11879653",
+      "liveObserver": "PERFUME_WORKER_PLAYWRIGHT_WEBKIT",
+      "checkedPages": [
+        {
+          "url": "https://www.kintsugiperfumes.com/",
+          "at": "2026-11-10T18:56:50.286394+00:00",
+          "httpStatus": 200,
+          "purchaseButtonEnabled": null,
+          "localScreenshots": [
+            "kintsugi-home-dismissed-top.png",
+            "kintsugi-home-dismissed-bottom.png"
+          ]
+        },
+        {
+          "url": "https://www.kintsugiperfumes.com/products/luna-eau-de-parfum",
+          "at": "2026-11-10T18:57:05.475589+00:00",
+          "httpStatus": 200,
+          "purchaseButtonEnabled": true,
+          "localScreenshots": [
+            "kintsugi-product-dismissed-top.png",
+            "kintsugi-product-price-no-click.png",
+            "kintsugi-product-dismissed-bottom.png"
+          ]
+        }
+      ],
+      "cookieMode": "Fresh default context. No cookie consent control was observed or clicked. Newsletter popup dismissed using its actual visible close control. Other cookie/session regimes remain unverified.",
+      "newsletterDismissals": [
+        {
+          "page": "home",
+          "control": "Close dialog",
+          "purpose": "Dismiss observed newsletter popup"
+        }
+      ],
+      "widgetFinding": "No visible product chat/advisor launcher observed on these actual home/product pages before/after dismissing newsletter. Not an absolute absence claim.",
+      "otherUiObserved": "Kintsugi retains a black discount-newsletter teaser; it is not a product advisor. Oraculum has ordinary newsletter and human-contact links.",
+      "screenshotsVisuallyReviewedByWorker": true,
+      "imageBytesLocation": "LOCAL_ONLY preserved scratch/live-eligibility-webkit; no new screenshot/archive bytes in this checkpoint.",
+      "registryRefresh": {
+        "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/11879653",
+        "at": "2026-11-10T18:55:11.124890+00:00",
+        "status": 200,
+        "ico": "11879653",
+        "name": "KINTSUGI Labs s.r.o.",
+        "incorporated": "2021-09-27",
+        "dissolved": null,
+        "registrationStates": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        }
+      },
+      "revenue": "UNKNOWN",
+      "size": "UNKNOWN",
+      "commercialInterest": "NOT_ESTABLISHED",
+      "ownership": "MAIN_WORKER reserved this domain on coord/s5-claims97bab0b. This worker does not overwrite or create another claim."
+    },
+    {
+      "domain": "oraculum.store",
+      "operator": "ORACULUM Company s.r.o.",
+      "ico": "10905081",
+      "liveObserver": "PERFUME_WORKER_PLAYWRIGHT_WEBKIT",
+      "checkedPages": [
+        {
+          "url": "https://oraculum.store/",
+          "at": "2026-11-10T18:57:19.523445+00:00",
+          "httpStatus": 200,
+          "purchaseButtonEnabled": null,
+          "localScreenshots": [
+            "oraculum-home-dismissed-top.png",
+            "oraculum-home-dismissed-bottom.png"
+          ]
+        },
+        {
+          "url": "https://oraculum.store/products/mio-dio",
+          "at": "2026-11-10T18:57:34.242423+00:00",
+          "httpStatus": 200,
+          "purchaseButtonEnabled": true,
+          "localScreenshots": [
+            "oraculum-product-dismissed-top.png",
+            "oraculum-product-price-no-click.png",
+            "oraculum-product-dismissed-bottom.png"
+          ]
+        }
+      ],
+      "cookieMode": "Fresh default context. No cookie consent control was observed or clicked. Newsletter popup dismissed using its actual visible close control. Other cookie/session regimes remain unverified.",
+      "newsletterDismissals": [
+        {
+          "page": "home",
+          "control": "Zavřít",
+          "purpose": "Dismiss observed newsletter popup"
+        }
+      ],
+      "widgetFinding": "No visible product chat/advisor launcher observed on these actual home/product pages before/after dismissing newsletter. Not an absolute absence claim.",
+      "otherUiObserved": "Kintsugi retains a black discount-newsletter teaser; it is not a product advisor. Oraculum has ordinary newsletter and human-contact links.",
+      "screenshotsVisuallyReviewedByWorker": true,
+      "imageBytesLocation": "LOCAL_ONLY preserved scratch/live-eligibility-webkit; no new screenshot/archive bytes in this checkpoint.",
+      "registryRefresh": {
+        "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/10905081",
+        "at": "2026-11-10T18:55:12.269939+00:00",
+        "status": 200,
+        "ico": "10905081",
+        "name": "ORACULUM Company s.r.o.",
+        "incorporated": "2021-05-31",
+        "dissolved": null,
+        "registrationStates": {
+          "stavZdrojeRos": "AKTIVNI",
+          "stavZdrojeVr": "AKTIVNI",
+          "stavZdrojeRes": "AKTIVNI",
+          "stavZdrojeRzp": "AKTIVNI",
+          "stavZdrojeNrpzs": "NEEXISTUJICI",
+          "stavZdrojeRpsh": "NEEXISTUJICI",
+          "stavZdrojeRcns": "NEEXISTUJICI",
+          "stavZdrojeSzr": "NEEXISTUJICI",
+          "stavZdrojeDph": "AKTIVNI",
+          "stavZdrojeSkDph": "NEEXISTUJICI",
+          "stavZdrojeSd": "NEEXISTUJICI",
+          "stavZdrojeIr": "NEEXISTUJICI",
+          "stavZdrojeCeu": "NEEXISTUJICI",
+          "stavZdrojeRs": "NEEXISTUJICI",
+          "stavZdrojeRed": "NEEXISTUJICI",
+          "stavZdrojeMonitor": "NEEXISTUJICI"
+        }
+      },
+      "revenue": "UNKNOWN",
+      "size": "UNKNOWN",
+      "commercialInterest": "NOT_ESTABLISHED",
+      "ownership": "MAIN_WORKER reserved this domain on coord/s5-claims97bab0b. This worker does not overwrite or create another claim."
+    }
+  ],
+  "allRemoteScanBeforeNewMainClaims": {
+    "at": "2026-11-10T19:00:17.000366+00:00",
+    "refs": 92,
+    "uniqueTextBlobs": 2200,
+    "termCount": 86,
+    "positiveControls": 29,
+    "heads": {
+      "refs/remotes/origin/codex/s5-perfume-20261110": "9d7563705e0fe087e3c69b30cc435056d2aaac34",
+      "refs/remotes/origin/codex/s5-solo-20261109": "7926f09c7ec8cca3e3792456916b911626190753",
+      "refs/remotes/origin/coord/s5-claims": "8c8012c2cc68936e16c03f47e651f2c5bd60d727"
+    },
+    "additionalAlias": "oraculum-store.myshopify.com checked with no pre-existing text match. Earlier positive hits are own research/assignment. This scan predates main claims97bab0b and main integrationb3efd61; their new claims supersede any earlier unreserved status.",
+    "limits": "Eligible text only; no OCR/global Vercel or mail audit."
+  },
+  "paidModelCalls": 0,
+  "claimsAddedByThisWorker": 0
+}
