@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-11-10T07:39:03.305415+00:00",
-  "status": "local_verified",
+  "status": "preview_verified",
   "claimSha": "a50a7366410911084b8808b06a4f9e9fb438c3ef",
   "domain": "mydlarnarubens.cz",
   "relatedDomain": "rubensherbar.cz",
@@ -29,7 +29,7 @@
     "No shipping threshold displayed until verified visible official source.",
     "Official delivery modal HTML independently retrieved: PPL114Kč,Parcelshop79Kč,pickup free,empty-order free-shipping threshold3000Kč; choices can change with items."
   ],
-  "next": "Persist reviewed runtime/evidence, then own live12/12 Preview QA.",
+  "next": "Persist complete evidence checkpoint and continue next eligible company.",
   "updatedAt": "2026-11-10T07:56:40.031083+00:00",
   "products": 12,
   "qa": {
@@ -50,5 +50,17 @@
     "optionalAddon": "Conditioner189.10 only after shampoo150 =339.10Kč; unchecked. No forced shampoo after conditioner.",
     "visualReview": "12result views at3widths plus7question nodes; hair-afterwash/bodycream/herbalbath scenes corrected by configuration. Focused affected-path/scene checks3widths; transient screenshots recaptured with reduced motion.",
     "nutExclusion": "Initial offline counterexample recommended nut-oil balm; Rubens-only rule now blocks known-nut-oil suggestion and unverified allergy-safe alternatives, direct and followup tested backend and actual offline UI."
+  },
+  "sha": "02fb9b27dd0571367bcb3409720b8d2be2d7868c",
+  "preview": {
+    "url": "https://kava-chatbot-backend-7klg6aubb-danielvendzur-codes-projects.vercel.app/s5.html?demo=rubens",
+    "deploymentId": "dpl_8WtE4FoJJwsouyj54FQyMdUJsCHV",
+    "workerPathsVerified": 12,
+    "viewport": {
+      "width": 1363,
+      "height": 936
+    },
+    "checkedAt": "2026-11-10T08:03:35.999977+00:00",
+    "modelRequests": 0
   }
 }

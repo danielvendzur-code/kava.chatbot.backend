@@ -349,3 +349,14 @@ Konkrétny nový QA nález: dotaz Nechci ořechové oleje, poraď balzám na rty
 Úvod bez sľubu rozpočtu; hlavné varianty presne označené, bez vymyslených predvolených variantovýchURL (e-shop vyžaduje vlastný výber obalu/objemu). Žiadna výroba histórie,SPF,liečenia,rastu vlasov či hypoalergénnych garancií. Zdroj dopravy je aktuálne načítaný oficiálny modal: PPL114/Parcelshop79,od3000Kčzdarma; UI uvádza zostávajúcu sumu a podmienky e-shopu.
 
 Email je iba textovýNOT_READY447+10sinfo@mydlarnarubens.cz z kontaktov. Pošta bez zmien, produkciaNOT_DEPLOYED. Preview zatiaľPENDING; počet stáledeväť.
+
+
+## Rubens – vlastné živé Preview12/12 (2026-11-10T08:03:35.999977+00:00)
+
+Runtime02fb9b27dd0571367bcb3409720b8d2be2d7868c / READYdpl_8WtE4FoJJwsouyj54FQyMdUJsCHV. Preview: https://kava-chatbot-backend-7klg6aubb-danielvendzur-codes-projects.vercel.app/s5.html?demo=rubens
+
+Vlastný browser1363×936 prešiel12/12koncových výsledkov, všetkyfotografiecomplete/naturalWidth1024, presné ceny,belenia aCTA vtejistejkarte. Reset medzi všetkými výsledkami a nakoniec4oblasti. Doplnok nezaškrtnutý,150→339,10→150Kč. Porovnanie dvoch odlišných receptúr telového tuku(Tropiqueovocná vôňa vs rakytníkbezvône),277,60Kč/140gobidva,s konkrétnym opisom,nie rovnakými všeobecnými vlastnosťami. Čipy4×40px,čeština,bez pretečenia.0modelovýchvolaní. Obmedzenie orechov sa živým modelom netestovalo, ibaoffline/mock.
+
+Séria má desať vlastne Preview overených ukážok. Žiadna produkcia ani zákaznícke schválenie. Samostatné WebPPreview aJSONobsahujú aktuálne overené výsledky; všetkých63lokálnych WebP je pripravených v9samostatných malých archívoch s manifestom, ich upload sa potvrdzuje jednotlivo. Ďalej preveriť Alchymistky a Mýdlárna Šafrán, bez rezervácie pred živou kontrolou widgetov a prevádzkovateľov.
+
+Uloženie Rubens dôkazov: všetkých9samostatných archívov(63WebP) a4priame PreviewWebP majú potvrdené GitHub blob SHA. rubens-proof-upload-progress.json a manifest archívov ukladajú presné cesty/SHA256.
