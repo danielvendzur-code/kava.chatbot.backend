@@ -1,0 +1,1162 @@
+{
+  "brand": "Scentisimo",
+  "domain": "scentisimo.cz",
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "cs",
+  "country": "CZ",
+  "currency": "CZK",
+  "products": [
+    {
+      "id": "eau-de-la-couronne",
+      "name": "Eau de la Couronne",
+      "url": "https://www.scentisimo.cz/eau-de-la-couronne/",
+      "priceAmount": 1990,
+      "price": "1990 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Toilette",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Frézie a kosatec s jablkem, rybízem a citronem.",
+      "reason": "Frézie a kosatec s jablkem, rybízem a citronem.",
+      "photo": "/assets/s5/scentisimo/eau-de-la-couronne.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.scentisimo.cz/eau-de-la-couronne/",
+        "verifiedAt": "2026-11-10T13:22:30.149189+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": [
+            "Objem: 50ml Skladem (2 ks) 2 490 Kč 1 990 Kč Množství + − Do košíku"
+          ],
+          "schema": "https://schema.org/InStock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 1990,
+          "visiblePrice": "1 990 Kč",
+          "schemaAmount": "1990.00",
+          "currency": "CZK",
+          "vatSource": "https://www.scentisimo.cz/obchodni-podminky/",
+          "vatEvidence": "OP 3.2: ceny včetně DPH a všech souvisejících poplatků.",
+          "variantRow": "Objem: 50ml Skladem (2 ks) 2 490 Kč 1 990 Kč Množství + − Do košíku"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Objem: 50ml Skladem (2 ks) 2 490 Kč 1 990 Kč Množství + − Do košíku"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page; multiple-pack rows require selecting the displayed pack on merchant site.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/659_courone.png?ff=1&x=1024&y=768&q=85&ts=68fb8617&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/659_courone.png?ff=1&x=1024&y=768&q=85&ts=68fb8617&sg=161563f2",
+          "localPath": "/assets/s5/scentisimo/eau-de-la-couronne.webp",
+          "width": 1024,
+          "height": 768,
+          "downloadedAt": "2026-11-10T13:22:34.305836+00:00",
+          "sha256": "10c30bfdfa36ca73ccd3f5682f23b6ac800fec5699e1d48278408364d0dae323",
+          "visualReview": "Official product contact sheet visually inspected by PERFUME_WORKER; not browser UI QA."
+        },
+        "scent": "Frézie a kosatec s jablkem, rybízem a citronem.",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "eau-de-la-couronne"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.scentisimo.cz/eau-de-la-couronne/",
+          "navigationLabel": "Frézie a kosatec",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": "E au de Toilette pro milovnice frézie. Detailní popis produktu Přívětivé tóny citronu a jablka se snoubí v dokonalé harmonii s květinovými a dřevitými nuancemi. Jantar a pižmo obohacují vůni o zajímavou smyslnost. Hlava: Jablko, rybíz, citron Srdce: Frézie, kosatec Základ: Ambra, cedrové dřevo, pižmo"
+        },
+        "fragrance": {
+          "notes": [
+            "jablko",
+            "rybíz",
+            "citron",
+            "frézie",
+            "kosatec",
+            "ambra",
+            "cedrové dřevo",
+            "pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Toilette"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed longevity or projection",
+          "medical or allergy-safety claim",
+          "concentration implies intensity",
+          "merchant cart integration",
+          "layering compatibility"
+        ]
+      }
+    },
+    {
+      "id": "josephine",
+      "name": "Joséphine",
+      "url": "https://www.scentisimo.cz/josephine/",
+      "priceAmount": 3290,
+      "price": "3290 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Růže a fialka s červeným rybízem, vanilkovým květem a kadidlem.",
+      "reason": "Růže a fialka s červeným rybízem, vanilkovým květem a kadidlem.",
+      "photo": "/assets/s5/scentisimo/josephine.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.scentisimo.cz/josephine/",
+        "verifiedAt": "2026-11-10T13:22:30.150122+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": [
+            "Objem: 100ml Skladem (3 ks) 4 290 Kč 3 290 Kč Množství + − Do košíku"
+          ],
+          "schema": "https://schema.org/InStock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3290,
+          "visiblePrice": "3 290 Kč",
+          "schemaAmount": "3290.00",
+          "currency": "CZK",
+          "vatSource": "https://www.scentisimo.cz/obchodni-podminky/",
+          "vatEvidence": "OP 3.2: ceny včetně DPH a všech souvisejících poplatků.",
+          "variantRow": "Objem: 100ml Skladem (3 ks) 4 290 Kč 3 290 Kč Množství + − Do košíku"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "Objem: 100ml Skladem (3 ks) 4 290 Kč 3 290 Kč Množství + − Do košíku"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page; multiple-pack rows require selecting the displayed pack on merchant site.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/86-1_rance-1795-josephine-edp-100-ml.png?ff=1&x=1024&y=768&q=85&ts=683447a5&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/86-1_rance-1795-josephine-edp-100-ml.png?ff=1&x=1024&y=768&q=85&ts=683447a5&sg=161563f2",
+          "localPath": "/assets/s5/scentisimo/josephine.webp",
+          "width": 1024,
+          "height": 768,
+          "downloadedAt": "2026-11-10T13:22:34.872791+00:00",
+          "sha256": "fe4bc9b775eb8b659b6e186b259d7e34b9acc7ee5209c9499fc1d853a1bdaf0b",
+          "visualReview": "Official product contact sheet visually inspected by PERFUME_WORKER; not browser UI QA."
+        },
+        "scent": "Růže a fialka s červeným rybízem, vanilkovým květem a kadidlem.",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "josephine"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.scentisimo.cz/josephine/",
+          "navigationLabel": "Růže a fialka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": "Květiově pudrový Eau de Parfum. K zakoupenému vzorku získáte slevu 100Kč na pozdější nákup parfémů. Detailní popis produktu Josephine de Beauharnais (1763 - 1810) první a nejmilovanější manželka Napoleona Bonaparte. Smyslnost a věčná elegance Joséphine – ženy, která byla Napoleonovou největší láskou – ožívá v těchto hřejivých, tajemných a vášnivých tónech, jež jí François Rancé věnoval jako poctu. Výrazné jarní květy, exotické esence a svůdný soulad ovocných a dřevitých akordů se prolínají v jedinečné kompozici, která vybízí k prožitku smyslnosti zahalené do závoje noblesy. Parfém vznikl jako hold mimořádné ženě, která dokázala okouzlit samotného císaře. Joséphine dnes znovu ožívá – v podobě květinové, intimní a tajemné vůně. Úvodní tóny vás pohladí nasládlou bulharskou růží, která se ladně snoubí s něžnou fialkou a svěžím červeným rybízem, tvořícím podmanivou květinovou kytici. Srdce vůně rozkvétá sametově hebkým vanilkovým květem, jehož hřejivost se prolíná s exotickým opoponaxem a růžovým pepřem do smyslně pikantní, lehce zemité harmonie. Základ uchvátí jemností mechu, prohřátou dřevitými a pryskyřičnými tóny vzácného ománského kadidla. Joséphine – ztělesněná energie, šarm a překvapivá vitalita ženy, která zůstává inspirací i dnes. Eau de Parfum. Hlavní tóny: květinové, pudrové, svěže pikantní májová růže, jasmín, ylang-ylang, hyacint, pivoňka, šeřík, hloh, bergamot, kosatec, fialkové lístky, pelargónie, černý rybíz, bílá broskev, hřebíček, galbanum, santal, bourbonská vanilka, eben, pravá ambra, bílé pižmo"
+        },
+        "fragrance": {
+          "notes": [
+            "růže",
+            "fialka",
+            "červený rybíz",
+            "vanilkový květ",
+            "opoponax",
+            "růžový pepř",
+            "mech",
+            "kadidlo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed longevity or projection",
+          "medical or allergy-safety claim",
+          "concentration implies intensity",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "sourceCaveat": "Official prose and final note list differ. Selected notes are from prose only, no invented combined pyramid."
+      }
+    },
+    {
+      "id": "vanille-sauvage-de-madagascar",
+      "name": "Vanille Sauvage de Madagascar",
+      "url": "https://www.scentisimo.cz/vanille-sauvage-de-madagascar/",
+      "priceAmount": 1990,
+      "price": "1990 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Vanilka s levandulí, koriandrem, santalem a kadidlem.",
+      "reason": "Vanilka s levandulí, koriandrem, santalem a kadidlem.",
+      "photo": "/assets/s5/scentisimo/vanille-sauvage-de-madagascar.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.scentisimo.cz/vanille-sauvage-de-madagascar/",
+        "verifiedAt": "2026-11-10T13:22:30.150645+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": [
+            "Objem: 100ml Skladem (1 ks) EAN: 3542770000424 2 290 Kč 1 990 Kč Množství + − Do košíku"
+          ],
+          "schema": "https://schema.org/InStock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 1990,
+          "visiblePrice": "1 990 Kč",
+          "schemaAmount": "1990.00",
+          "currency": "CZK",
+          "vatSource": "https://www.scentisimo.cz/obchodni-podminky/",
+          "vatEvidence": "OP 3.2: ceny včetně DPH a všech souvisejících poplatků.",
+          "variantRow": "Objem: 100ml Skladem (1 ks) EAN: 3542770000424 2 290 Kč 1 990 Kč Množství + − Do košíku"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "Objem: 100ml Skladem (1 ks) EAN: 3542770000424 2 290 Kč 1 990 Kč Množství + − Do košíku"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page; multiple-pack rows require selecting the displayed pack on merchant site.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/125-4_vanille-sauvage-de-madagascar-100-ml-edp-mdv.png?ff=1&x=1024&y=768&q=85&ts=683d7b81&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/125-4_vanille-sauvage-de-madagascar-100-ml-edp-mdv.png?ff=1&x=1024&y=768&q=85&ts=683d7b81&sg=161563f2",
+          "localPath": "/assets/s5/scentisimo/vanille-sauvage-de-madagascar.webp",
+          "width": 1024,
+          "height": 768,
+          "downloadedAt": "2026-11-10T13:22:34.526532+00:00",
+          "sha256": "83017c5d0babf4a687b39715152b45ceefe59c4c39d96c08bc7ac4d0f053ac34",
+          "visualReview": "Official product contact sheet visually inspected by PERFUME_WORKER; not browser UI QA."
+        },
+        "scent": "Vanilka s levandulí, koriandrem, santalem a kadidlem.",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "vanille-sauvage-de-madagascar"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.scentisimo.cz/vanille-sauvage-de-madagascar/",
+          "navigationLabel": "Vanilka, levandule a kadidlo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": "Vanille Sauvage de Madagascar Eau de Parfum. Detailní popis produktu Divoká vanilka z Madagaskaru vás unese přímo do srdce deštného pralesa – do chvíle, kdy déšť skončil a mezi korunami stromů prosvítá první světlo. Vůně začína svěží levandulí, která se vznáší jako jemná mlha po ranní túře ostrovem. V srdci kompozice na vás čeká překvapivé spojení: koriandr, pelargónie a cistus tvoří zářivou vegetaci, kde se svěžest mísí se zemitostí. Tato rostlinná harmonie, zároveň surová i vytříbená, zachycuje autentickou duši Madagaskaru – jeho barevnost, vitalitu a sluncem prozářenou bohatost. A pak přichází vanilka! Ale není sladká ani gurmánská. Je dřevitá, téměř mystická. Se santalem a kadidlem vytváří pryskyřičnou, duchovní atmosféru. Tahle vanilka je divoká, zakořeněná ve vulkanické půdě Rudého ostrova. Vanille Sauvage de Madagascar je oslavou nezkrotné přírody, vůní svobody a tiché síly. Vypráví příběh o syrové kráse skutečného rostlinného světa, prodchnutého tajemstvím a světlem. Hlava: Levandule Srdce: Koriandr, pelargónie, cistus Základ: Vanilka, santalové dřevo, kadidlo Objem: 40 ml / 100 ml Vyrobeno ve Francii. "
+        },
+        "fragrance": {
+          "notes": [
+            "levandule",
+            "koriandr",
+            "pelargónie",
+            "cistus",
+            "vanilka",
+            "santalové dřevo",
+            "kadidlo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed longevity or projection",
+          "medical or allergy-safety claim",
+          "concentration implies intensity",
+          "merchant cart integration",
+          "layering compatibility"
+        ]
+      }
+    },
+    {
+      "id": "nuit-patchouli",
+      "name": "Nuit Patchouli",
+      "url": "https://www.scentisimo.cz/nuit-patchouli/",
+      "priceAmount": 1990,
+      "price": "1990 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Malina a vanilkový krém s pačuli, fialkou a karamelem.",
+      "reason": "Malina a vanilkový krém s pačuli, fialkou a karamelem.",
+      "photo": "/assets/s5/scentisimo/nuit-patchouli.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.scentisimo.cz/nuit-patchouli/",
+        "verifiedAt": "2026-11-10T13:22:30.151315+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": [
+            "Objem: 100ml Skladem (2 ks) EAN: 3542770000509 2 290 Kč 1 990 Kč Množství + − Do košíku"
+          ],
+          "schema": "https://schema.org/InStock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 1990,
+          "visiblePrice": "1 990 Kč",
+          "schemaAmount": "1990.00",
+          "currency": "CZK",
+          "vatSource": "https://www.scentisimo.cz/obchodni-podminky/",
+          "vatEvidence": "OP 3.2: ceny včetně DPH a všech souvisejících poplatků.",
+          "variantRow": "Objem: 100ml Skladem (2 ks) EAN: 3542770000509 2 290 Kč 1 990 Kč Množství + − Do košíku"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "Objem: 100ml Skladem (2 ks) EAN: 3542770000509 2 290 Kč 1 990 Kč Množství + − Do košíku"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page; multiple-pack rows require selecting the displayed pack on merchant site.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/820-2_nuit-patchouli-edp-100-ml.jpg?ff=1&x=1024&y=768&q=85&ts=68dbaeff&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/820-2_nuit-patchouli-edp-100-ml.jpg?ff=1&x=1024&y=768&q=85&ts=68dbaeff&sg=161563f2",
+          "localPath": "/assets/s5/scentisimo/nuit-patchouli.webp",
+          "width": 1024,
+          "height": 768,
+          "downloadedAt": "2026-11-10T13:22:33.747300+00:00",
+          "sha256": "a964e9f3b53f15f89e91bea4bb5aca8e6724489c53653f16ec5036fa2e28bca1",
+          "visualReview": "Official product contact sheet visually inspected by PERFUME_WORKER; not browser UI QA."
+        },
+        "scent": "Malina a vanilkový krém s pačuli, fialkou a karamelem.",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "nuit-patchouli"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.scentisimo.cz/nuit-patchouli/",
+          "navigationLabel": "Malina, pačuli a karamel",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": "Nuit Patchouli Eau de Parfum Detailní popis produktu Nuit Patchouli je rozhovorem mezi divokou energií země a něžností vanilky. Hned na začátku vás pohladí hebký vanilkový krém a záblesk malinové šťavnatosti, zahalený do svěží zelené pačuli. Už od prvního nádechu cítíte příjemné, skoro hmatatelné teplo. Uprostřed skladby se rozehrává fialka s mimózou – jejich květinový nádech přináší poezii nad zemitým základem. Zjemňují sílu pačuli, ale zároveň jí dodávají novou hloubku. Jako kdybyste stáli v hustém lese pod hvězdnou oblohou, kde se mísí tajemno se sladkostí. Ve finále se uvolní gurmánská smyslnost: vanilka s karamelovým tónem vytváří návykovou kombinaci, která dokonale ladí se zaoblenými tóny pačuli. Nuit Patchouli je objímající a uklidňující vůně s hluboce lidským a nadčasovým charakterem. Hlava: Vanilkový krém, Malina, Listy pačuli Srdce: Mimosa, fialka Základ: Karamel, pačuli, vanilka Objem: 40 ml / 100 ml Vyrobeno ve Francii. "
+        },
+        "fragrance": {
+          "notes": [
+            "vanilkový krém",
+            "malina",
+            "listy pačuli",
+            "mimosa",
+            "fialka",
+            "karamel",
+            "pačuli",
+            "vanilka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed longevity or projection",
+          "medical or allergy-safety claim",
+          "concentration implies intensity",
+          "merchant cart integration",
+          "layering compatibility"
+        ]
+      }
+    },
+    {
+      "id": "acqua-mirabile-odorosa-di-firenze",
+      "name": "Acqua mirabile odorosa di Firenze",
+      "url": "https://www.scentisimo.cz/acqua-mirabile-odorosa-di-firenze/",
+      "priceAmount": 1690,
+      "price": "1690 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Citron a bergamot s růží, jasmínem, fialkou a vetiverem.",
+      "reason": "Citron a bergamot s růží, jasmínem, fialkou a vetiverem.",
+      "photo": "/assets/s5/scentisimo/acqua-mirabile-odorosa-di-firenze.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.scentisimo.cz/acqua-mirabile-odorosa-di-firenze/",
+        "verifiedAt": "2026-11-10T13:22:33.749436+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": [
+            "Akce Objem: 100ml Skladem (2 ks) 3 590 Kč 1 690 Kč Množství + − Do košíku"
+          ],
+          "schema": "https://schema.org/InStock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 1690,
+          "visiblePrice": "1 690 Kč",
+          "schemaAmount": "1690.00",
+          "currency": "CZK",
+          "vatSource": "https://www.scentisimo.cz/obchodni-podminky/",
+          "vatEvidence": "OP 3.2: ceny včetně DPH a všech souvisejících poplatků.",
+          "variantRow": "Akce Objem: 100ml Skladem (2 ks) 3 590 Kč 1 690 Kč Množství + − Do košíku"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "Akce Objem: 100ml Skladem (2 ks) 3 590 Kč 1 690 Kč Množství + − Do košíku"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page; multiple-pack rows require selecting the displayed pack on merchant site.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/924_acqua-mirabile-odorosa-di-firenze.png?ff=1&x=1024&y=768&q=85&ts=6a579743&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/924_acqua-mirabile-odorosa-di-firenze.png?ff=1&x=1024&y=768&q=85&ts=6a579743&sg=161563f2",
+          "localPath": "/assets/s5/scentisimo/acqua-mirabile-odorosa-di-firenze.webp",
+          "width": 1024,
+          "height": 768,
+          "downloadedAt": "2026-11-10T13:22:35.655108+00:00",
+          "sha256": "24ed8ee632f098c2561b8f97c4d594d0f58597b9e0ada0590ef63ea851fa4b49",
+          "visualReview": "Official product contact sheet visually inspected by PERFUME_WORKER; not browser UI QA."
+        },
+        "scent": "Citron a bergamot s růží, jasmínem, fialkou a vetiverem.",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "acqua-mirabile-odorosa-di-firenze"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.scentisimo.cz/acqua-mirabile-odorosa-di-firenze/",
+          "navigationLabel": "Citron, bergamot a růže",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": "Eau de Parfume Hlavní tóny: citron, bergamot, růže, jasmín, geránium, fialka, labdano, vetiver, pacthouli Detailní popis produktu Přirozená svěžest tohoto parfému připomíná čas znovuzrození a rozkvětu. Nádech citronu objímá něhu růže a poddává se jaru. Jeho elegance je povznesena podmanivou vůní lilie. Tradičně je symbolem vznešené lásky a panenské čistoty. Tato přívětivá vůně připomíná květnové dny, kdy se čeká na červnové teplo a zároveň se těší z jarního chladu. Jedinečné vyznění jí dodává fialka ruku v ruce s pačuli. Jak je u značky i Profumi di Firenze obvyklé, parfém je dokonale vyvážený, jemný, sofistikovaný a okouzlující stejně, jako jarní Florencie. Vůně je označovaná jako UNISEX. Nám se spíše pozdává jako DÁMSKÁ."
+        },
+        "fragrance": {
+          "notes": [
+            "citron",
+            "bergamot",
+            "růže",
+            "jasmín",
+            "geránium",
+            "fialka",
+            "labdano",
+            "vetiver",
+            "pačuli"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed longevity or projection",
+          "medical or allergy-safety claim",
+          "concentration implies intensity",
+          "merchant cart integration",
+          "layering compatibility"
+        ]
+      }
+    },
+    {
+      "id": "frangipane-e-cocco",
+      "name": "Frangipane e cocco",
+      "url": "https://www.scentisimo.cz/frangipane-e-cocco/",
+      "priceAmount": 1690,
+      "price": "1690 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Květy frangipani a tahitský kokos s pomerančem, rýží a pačuli.",
+      "reason": "Květy frangipani a tahitský kokos s pomerančem, rýží a pačuli.",
+      "photo": "/assets/s5/scentisimo/frangipane-e-cocco.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.scentisimo.cz/frangipane-e-cocco/",
+        "verifiedAt": "2026-11-10T13:22:34.307451+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": [
+            "Akce Objem: 100ml Skladem (2 ks) 3 590 Kč 1 690 Kč Množství + − Do košíku"
+          ],
+          "schema": "https://schema.org/InStock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 1690,
+          "visiblePrice": "1 690 Kč",
+          "schemaAmount": "1690.00",
+          "currency": "CZK",
+          "vatSource": "https://www.scentisimo.cz/obchodni-podminky/",
+          "vatEvidence": "OP 3.2: ceny včetně DPH a všech souvisejících poplatků.",
+          "variantRow": "Akce Objem: 100ml Skladem (2 ks) 3 590 Kč 1 690 Kč Množství + − Do košíku"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "Akce Objem: 100ml Skladem (2 ks) 3 590 Kč 1 690 Kč Množství + − Do košíku"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page; multiple-pack rows require selecting the displayed pack on merchant site.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/933_frangipane-e-cocco-edp.png?ff=1&x=1024&y=768&q=85&ts=6a579744&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/933_frangipane-e-cocco-edp.png?ff=1&x=1024&y=768&q=85&ts=6a579744&sg=161563f2",
+          "localPath": "/assets/s5/scentisimo/frangipane-e-cocco.webp",
+          "width": 1024,
+          "height": 768,
+          "downloadedAt": "2026-11-10T13:22:38.146470+00:00",
+          "sha256": "e3fa9d477d4f476e4fb115678865d9c2a81223463f021ebc1628e515f26a53a8",
+          "visualReview": "Official product contact sheet visually inspected by PERFUME_WORKER; not browser UI QA."
+        },
+        "scent": "Květy frangipani a tahitský kokos s pomerančem, rýží a pačuli.",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "frangipane-e-cocco"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.scentisimo.cz/frangipane-e-cocco/",
+          "navigationLabel": "Frangipani a kokos",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": "Eau de Parfume Hlavní tóny: květinový a ovocný pomeranč, tahitský kokos, frangipani (plumérie neboli havajská květina), geranium, rýže, pačuli, labdanum Detailní popis produktu Květy frangipani, které najdete v Americe, Mexiku i Austrálii, jsou proslulé svou výraznou a smyslnou vůní – opojnou, jemnou a překvapivě rafinovanou. Skvěle ladí s růžovými tóny geránia a v této kompozici rozvíjejí nepopsatelně svěží zážitek, jenž okouzlí všechny vaše smysly. V úvodu vás přivítá zářivá vitalita květů frangipani, která se nenápadně proplétá s krémovou nótou tahitského kokosu. Sladkost tohoto okamžiku postupně ustupuje, a do popředí vystupuje hluboké, nezaměnitelné objetí pačuli, kadidla a hřejivého labdanového dřeva – fascinující a dlouhotrvající závěr. Zavřete oči a nechte se přenést do pomerančového háje, kde opojná hořkost citrusů splývá s lehkostí bílých plátků frangipani, chráněných osvěžujícím stínem před žárem rovníkového slunce. Tato vůně je ztělesněním ženskosti – smyslná, originální a nezapomenutelná."
+        },
+        "fragrance": {
+          "notes": [
+            "pomeranč",
+            "tahitský kokos",
+            "frangipani",
+            "geranium",
+            "rýže",
+            "pačuli",
+            "labdanum"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed longevity or projection",
+          "medical or allergy-safety claim",
+          "concentration implies intensity",
+          "merchant cart integration",
+          "layering compatibility"
+        ]
+      }
+    },
+    {
+      "id": "boheme",
+      "name": "Bohéme",
+      "url": "https://www.scentisimo.cz/boheme/",
+      "priceAmount": 1890,
+      "price": "1890 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Neroli a kosatec s květem pomeranče, mlékem a santalem.",
+      "reason": "Neroli a kosatec s květem pomeranče, mlékem a santalem.",
+      "photo": "/assets/s5/scentisimo/boheme.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.scentisimo.cz/boheme/",
+        "verifiedAt": "2026-11-10T13:19:24.613506+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": [
+            "Akce Pánský Francouzský Značka: Routine Paris 3 890 Kč –51 % 3 890 Kč –51 % 1 890 Kč Měrná cena: Skladem (2 ks) Množství + − Přidat do košíku Luxusní dámský parfém s vůní neroli, květu pomeranče a ambrette. Detailní informace Tisk Zeptat se Sdílet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); i"
+          ],
+          "schema": "https://schema.org/InStock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 1890,
+          "visiblePrice": "1 890 Kč",
+          "schemaAmount": "1890.00",
+          "currency": "CZK",
+          "vatSource": "https://www.scentisimo.cz/obchodni-podminky/",
+          "vatEvidence": "OP 3.2: ceny včetně DPH a všech souvisejících poplatků.",
+          "variantRow": "Akce Pánský Francouzský Značka: Routine Paris 3 890 Kč –51 % 3 890 Kč –51 % 1 890 Kč Měrná cena: Skladem (2 ks) Množství + − Přidat do košíku Luxusní dámský parfém s vůní neroli, květu pomeranče a ambrette. Detailní informace Tisk Zeptat se Sdílet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); i"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "Detailní popis produktu Tento výjimečný parfém ztělesňuje podstatu pařížské elegance. Vůně se otevírá ušlechtilým akordem neroli a ambrette, které se umně proplétají s mistrovskými tóny kosatce, pomeranče a růží. Tento čichový zážitek se rozvine do hřejivého, lákavého základu mléka, santalového dřeva a bílého jantaru. Bohéme je sofistikovaným ponořením do srdce Paříže, ideální pro moderního muže, který ve své vůni oceňuje nadčasový půvab a hloubku. Hlava: Bílé pižmo, ambrette (ibiškovec pižmový), neroli Srdce: Kosatec, květ pomeranče, růže Základ: Mléko, santalové dřevo, bílá ambra Objem: 100ml Vyrobeno ve Francii. Složení: ALCOHOL DENAT., PARFUM, AQUA, ETHYLHEXYL SALICYLATE, ALPHA-ISOMETHYL"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Single pack in capture.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/909_boheme-edp-routine-paris.png?ff=1&x=1024&y=768&q=85&ts=6a578816&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/909_boheme-edp-routine-paris.png?ff=1&x=1024&y=768&q=85&ts=6a578816&sg=161563f2",
+          "localPath": "/assets/s5/scentisimo/boheme.webp",
+          "width": 1024,
+          "height": 768,
+          "downloadedAt": "2026-11-10T13:19:26.479427+00:00",
+          "sha256": "08a3f8a7c37cf0b94c9f10b554054578a9f483419a6da60a2a0e95aa262e5d66",
+          "visualReview": "Official product contact sheet visually inspected by PERFUME_WORKER; not browser UI QA."
+        },
+        "scent": "Neroli a kosatec s květem pomeranče, mlékem a santalem.",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "boheme"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.scentisimo.cz/boheme/",
+          "navigationLabel": "Neroli, kosatec a mléko",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": "Luxusní dámský parfém s vůní neroli, květu pomeranče a ambrette. Detailní popis produktu Tento výjimečný parfém ztělesňuje podstatu pařížské elegance. Vůně se otevírá ušlechtilým akordem neroli a ambrette, které se umně proplétají s mistrovskými tóny kosatce, pomeranče a růží. Tento čichový zážitek se rozvine do hřejivého, lákavého základu mléka, santalového dřeva a bílého jantaru. Bohéme je sofistikovaným ponořením do srdce Paříže, ideální pro moderního muže, který ve své vůni oceňuje nadčasový půvab a hloubku. Hlava: Bílé pižmo, ambrette (ibiškovec pižmový), neroli Srdce: Kosatec, květ pomeranče, růže Základ: Mléko, santalové dřevo, bílá ambra Objem: 100ml Vyrobeno ve Francii. "
+        },
+        "fragrance": {
+          "notes": [
+            "bílé pižmo",
+            "ambrette",
+            "neroli",
+            "kosatec",
+            "květ pomeranče",
+            "růže",
+            "mléko",
+            "santalové dřevo",
+            "bílá ambra"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfém"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed longevity or projection",
+          "medical or allergy-safety claim",
+          "concentration implies intensity",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "sourceCaveat": "Short description says women, prose says modern man; no gender filter and no inferred concentration."
+      }
+    },
+    {
+      "id": "oud-himalayen",
+      "name": "Oud Himalayen",
+      "url": "https://www.scentisimo.cz/oud-himalayen/",
+      "priceAmount": 1890,
+      "price": "1890 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Mandle a malina s cedrem, santalem, oudem a vanilkou.",
+      "reason": "Mandle a malina s cedrem, santalem, oudem a vanilkou.",
+      "photo": "/assets/s5/scentisimo/oud-himalayen.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.scentisimo.cz/oud-himalayen/",
+        "verifiedAt": "2026-11-10T13:19:24.628864+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": [
+            "Akce Eau de Parfum Unisex Francouzský Značka: Routine Paris 3 890 Kč –51 % 3 890 Kč –51 % 1 890 Kč Měrná cena: Skladem (2 ks) Množství + − Přidat do košíku Luxusní unisexový parfém s vůní exotickou sladko dřevitou vůní. Detailní informace Tisk Zeptat se Sdílet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-sh"
+          ],
+          "schema": "https://schema.org/InStock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 1890,
+          "visiblePrice": "1 890 Kč",
+          "schemaAmount": "1890.00",
+          "currency": "CZK",
+          "vatSource": "https://www.scentisimo.cz/obchodni-podminky/",
+          "vatEvidence": "OP 3.2: ceny včetně DPH a všech souvisejících poplatků.",
+          "variantRow": "Akce Eau de Parfum Unisex Francouzský Značka: Routine Paris 3 890 Kč –51 % 3 890 Kč –51 % 1 890 Kč Měrná cena: Skladem (2 ks) Množství + − Přidat do košíku Luxusní unisexový parfém s vůní exotickou sladko dřevitou vůní. Detailní informace Tisk Zeptat se Sdílet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-sh"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "Detailní popis produktu Oud Himalayen vyniká svou kulatou a jemnou vůní. Vůně se otevírá jemnou sladkostí mandlí a malin, zdůrazněnou duhovým leskem cedru a santalového dřeva. V pozadí odhaluje vzácné tóny, které vrcholí intenzivním zvířecím akordem oudu a vanilky. Tato vůně ztělesňuje moderní západní verzi oudu a nabízí vytříbenou a moderní interpretaci. Hlava: Mandle, malina Srdce: Cedrové dřevo, santalové dřevo Základ: Oud, vanilka Objem: 100ml Vyrobeno ve Francii. Složení: ALCOHOL DENAT., PARFUM, TETRAMETHYL ACETYLOCTAHYDRONAPHTHALENES, VANILLIN, HEXAMETHYLINDANOPYRAN, ACETYLCEDRENE, AQUA, ETHYLHEXYL SALICYLATE, CEDRUS ATLANTICA OIL/EXTRACT, BENZALDEHYDE, PINENE, CINNAMAL, COUMARIN, CITR"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Single pack in capture.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/915_oud-himalayen.png?ff=1&x=1024&y=768&q=85&ts=6a578a3e&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/915_oud-himalayen.png?ff=1&x=1024&y=768&q=85&ts=6a578a3e&sg=161563f2",
+          "localPath": "/assets/s5/scentisimo/oud-himalayen.webp",
+          "width": 1024,
+          "height": 768,
+          "downloadedAt": "2026-11-10T13:19:26.891967+00:00",
+          "sha256": "93f6a4095f7186394779077543261bfe418753d7d715c0900049935b6b8d0337",
+          "visualReview": "Official product contact sheet visually inspected by PERFUME_WORKER; not browser UI QA."
+        },
+        "scent": "Mandle a malina s cedrem, santalem, oudem a vanilkou.",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "oud-himalayen"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.scentisimo.cz/oud-himalayen/",
+          "navigationLabel": "Mandle, malina a oud",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": "Luxusní unisexový parfém s vůní exotickou sladko dřevitou vůní. Detailní popis produktu Oud Himalayen vyniká svou kulatou a jemnou vůní. Vůně se otevírá jemnou sladkostí mandlí a malin, zdůrazněnou duhovým leskem cedru a santalového dřeva. V pozadí odhaluje vzácné tóny, které vrcholí intenzivním zvířecím akordem oudu a vanilky. Tato vůně ztělesňuje moderní západní verzi oudu a nabízí vytříbenou a moderní interpretaci. Hlava: Mandle, malina Srdce: Cedrové dřevo, santalové dřevo Základ: Oud, vanilka Objem: 100ml Vyrobeno ve Francii. "
+        },
+        "fragrance": {
+          "notes": [
+            "mandle",
+            "malina",
+            "cedrové dřevo",
+            "santalové dřevo",
+            "oud",
+            "vanilka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfém"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed longevity or projection",
+          "medical or allergy-safety claim",
+          "concentration implies intensity",
+          "merchant cart integration",
+          "layering compatibility"
+        ]
+      }
+    },
+    {
+      "id": "golden-age",
+      "name": "Golden Age",
+      "url": "https://www.scentisimo.cz/golden-age/",
+      "priceAmount": 990,
+      "price": "990 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Extrait de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Ananas a pomeranč s jasmínem, ylang-ylangem, pačuli a vanilkou.",
+      "reason": "Ananas a pomeranč s jasmínem, ylang-ylangem, pačuli a vanilkou.",
+      "photo": "/assets/s5/scentisimo/golden-age.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.scentisimo.cz/golden-age/",
+        "verifiedAt": "2026-11-10T13:19:26.361283+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": [
+            "Akce Značka: MAD Parfumeur 2 190 Kč –54 % 2 190 Kč –54 % 990 Kč Měrná cena: Skladem (2 ks) Množství + − Přidat do košíku Extrait de Parfum dámský 100 ml. Niche series. Detailní informace Tisk Zeptat se Sdílet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })("
+          ],
+          "schema": "https://schema.org/InStock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 990,
+          "visiblePrice": "990 Kč",
+          "schemaAmount": "990.00",
+          "currency": "CZK",
+          "vatSource": "https://www.scentisimo.cz/obchodni-podminky/",
+          "vatEvidence": "OP 3.2: ceny včetně DPH a všech souvisejících poplatků.",
+          "variantRow": "Akce Značka: MAD Parfumeur 2 190 Kč –54 % 2 190 Kč –54 % 990 Kč Měrná cena: Skladem (2 ks) Množství + − Přidat do košíku Extrait de Parfum dámský 100 ml. Niche series. Detailní informace Tisk Zeptat se Sdílet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })("
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "Extrait de Parfum dámský 100 ml. Niche series."
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Single pack in capture.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/644_golden-age-parfem.jpg?ff=1&x=1024&y=768&q=85&ts=6891ec5f&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/644_golden-age-parfem.jpg?ff=1&x=1024&y=768&q=85&ts=6891ec5f&sg=161563f2",
+          "localPath": "/assets/s5/scentisimo/golden-age.webp",
+          "width": 1024,
+          "height": 768,
+          "downloadedAt": "2026-11-10T13:19:27.452182+00:00",
+          "sha256": "8c16416c41c64ddb7cf4a2de50161a521db13fb0c4200af597d3b5cbaaebc09e",
+          "visualReview": "Official product contact sheet visually inspected by PERFUME_WORKER; not browser UI QA."
+        },
+        "scent": "Ananas a pomeranč s jasmínem, ylang-ylangem, pačuli a vanilkou.",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "golden-age"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.scentisimo.cz/golden-age/",
+          "navigationLabel": "Ananas, jasmín a ylang-ylang",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": "Extrait de Parfum dámský 100 ml. Niche series. Detailní popis produktu Dámský niche parfém s vůní jasmínu, růže, pačuli a pižma. Orientální košík plný květin a ovoce. Otevírá se pozvolna svěží ovocnou vůní pomeranče s nádechem ananasu, která záhy ustupuje doslova náloži jasmínu a ylang-ylang, doprovázených fialkou a méně výraznou růží. Zvýraznění všech tónů díky pačuli funguje perfektně a tak si \"ve druhé sloce\" můžete užít všechny květinové a ovocné tóny v harmonii doplněné labdanem, které přidá trochu tajemnosti. V závěru se rozvíjí teplé tóny vanilky, santalu, ambry a pižma, které Vás budou provázet celým dnem aniž by Vás rušily. Díky koncentraci Extrait de Parfum Vám tato vůně vydrží, stejně jako ostatní vůně od MAD Parfumeur, po celý den bez nutnosti další aplikace. <!-- td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;} --> Hlava: A nanas, pomeranč, hyacint, mořské tóny Srdce: J asmín, ylang-ylang, fialka, růže, pačuli, labdanum Základ: Ambra, pižmo, vanilka, santalové dřevo Objem: 100ml Vyrobeno v Turecku "
+        },
+        "fragrance": {
+          "notes": [
+            "ananas",
+            "pomeranč",
+            "hyacint",
+            "mořské tóny",
+            "jasmín",
+            "ylang-ylang",
+            "fialka",
+            "růže",
+            "pačuli",
+            "labdanum",
+            "ambra",
+            "pižmo",
+            "vanilka",
+            "santalové dřevo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Extrait de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed longevity or projection",
+          "medical or allergy-safety claim",
+          "concentration implies intensity",
+          "merchant cart integration",
+          "layering compatibility"
+        ]
+      }
+    },
+    {
+      "id": "body-mist-sea-mist",
+      "name": "Body Mist Sea Mist",
+      "url": "https://www.scentisimo.cz/body-mist-sea-mist/",
+      "priceAmount": 150,
+      "price": "150 Kč",
+      "currency": "CZK",
+      "volume": "250 ml",
+      "category": "fragrance",
+      "kind": "Tělová mlha",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Tělová mlha s bergamotem, citronem, magnolií a dřevitým základem.",
+      "reason": "Tělová mlha s bergamotem, citronem, magnolií a dřevitým základem.",
+      "photo": "/assets/s5/scentisimo/body-mist-sea-mist.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.scentisimo.cz/body-mist-sea-mist/",
+        "verifiedAt": "2026-11-10T13:19:26.959417+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": [
+            "Akce Značka: MAD Parfumeur 350 Kč –57 % 350 Kč –57 % 150 Kč Měrná cena: Skladem (3 ks) Množství + − Přidat do košíku Sea Mist Body mist 250 ml Detailní informace Tisk Zeptat se Sdílet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít"
+          ],
+          "schema": "https://schema.org/InStock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 150,
+          "visiblePrice": "150 Kč",
+          "schemaAmount": "150.00",
+          "currency": "CZK",
+          "vatSource": "https://www.scentisimo.cz/obchodni-podminky/",
+          "vatEvidence": "OP 3.2: ceny včetně DPH a všech souvisejících poplatků.",
+          "variantRow": "Akce Značka: MAD Parfumeur 350 Kč –57 % 350 Kč –57 % 150 Kč Měrná cena: Skladem (3 ks) Množství + − Přidat do košíku Sea Mist Body mist 250 ml Detailní informace Tisk Zeptat se Sdílet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít"
+        },
+        "packEvidence": {
+          "pack": "250 ml",
+          "sourceText": "Sea Mist Body mist 250 ml"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Single pack in capture.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/954_707-body-mist-sea-mist.png?ff=1&x=1024&y=768&q=85&ts=6a579b39&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/954_707-body-mist-sea-mist.png?ff=1&x=1024&y=768&q=85&ts=6a579b39&sg=161563f2",
+          "localPath": "/assets/s5/scentisimo/body-mist-sea-mist.webp",
+          "width": 1024,
+          "height": 768,
+          "downloadedAt": "2026-11-10T13:19:28.545954+00:00",
+          "sha256": "56074100e73a612cce8759d18083751c7cf798ec58494a412a4020f8866c190b",
+          "visualReview": "Official product contact sheet visually inspected by PERFUME_WORKER; not browser UI QA."
+        },
+        "scent": "Tělová mlha s bergamotem, citronem, magnolií a dřevitým základem.",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "body-mist-sea-mist"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.scentisimo.cz/body-mist-sea-mist/",
+          "navigationLabel": "Bergamot, citron a magnolie",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": "Sea Mist Body mist 250 ml Detailní popis produktu Sea Mist je tělová mlha, která přináší zážitek čerstvého mořského vzduchu a čisté elegance na dosah ruky. V úvodu vás okouzlí svěží tóny bergamotu, zářivého citronu a zeleného ovoce , jejichž jiskřivá vitalita navozuje pocit ranní procházky podél pobřeží, kde se sluneční paprsky odrážejí na hladině moře. V srdci této vůně se skrývá něžná magnolie , která vnese do každého dne jemný květinový akcent, připomínající lehký dotek mořského vánku, jenž ševelí mezi květy na pobřežních útesech. Základ vůně tvoří dřevité tóny , sladká vanilka a smyslné pižmo, které společně vytvářejí harmonii čistoty, hřejivosti a hebkosti, jež ulpívá na pokožce jako vzpomínka na osvěžující mořskou koupel. Sea Mist je jako elektrizující polibek mořského vánku, který vás zahalí do chladivého, přitom však příjemně hřejivého závoje. Je to ideální volba pro každého, kdo touží po autentickém pocitu svěžesti, čistoty a svobody, která vychází z nekonečného modrého horizontu oceánu. Tato tělová mlha byla navržena s inspirací z okouzlujících vůní přírody. Byla speciálně vytvořena pro všechny ženy, které se rády kdykoli osvěží svou jedinečnou vůní a chtějí mít vždy pocit svěžesti. Hlava: Bergamot, citron, zelené ovoce Srdce: Magnolie, sladké květinové tóny Základ: Dřevo, vanilka, pižmo Tělové mlhy můžete aplikovat na celé tělo. Vůně obvykle vydrží kratší dobu než je tomu u parfémů (v závislosti na podmínkách 2-4 hodiny), ale jsou cenově dostupnější a zejména v horkých letních dnech Vám díky opakované aplikaci pomohou udržet celý den pocit svěžesti. Objem: 250ml Vyrobeno v Turecku <!-- td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;} --> "
+        },
+        "fragrance": {
+          "notes": [
+            "bergamot",
+            "citron",
+            "zelené ovoce",
+            "magnolie",
+            "sladké květinové tóny",
+            "dřevo",
+            "vanilka",
+            "pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Tělová mlha"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed longevity or projection",
+          "medical or allergy-safety claim",
+          "concentration implies intensity",
+          "merchant cart integration",
+          "layering compatibility"
+        ]
+      }
+    },
+    {
+      "id": "menta-sui-navigli",
+      "name": "Menta sui Navigli",
+      "url": "https://www.scentisimo.cz/menta-sui-navigli/",
+      "priceAmount": 490,
+      "price": "490 Kč",
+      "currency": "CZK",
+      "volume": "150 ml",
+      "category": "fragrance",
+      "kind": "Vůně na tělo a vlasy",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Vůně na tělo a vlasy s mátovými listy, malinami a vodním melounem.",
+      "reason": "Vůně na tělo a vlasy s mátovými listy, malinami a vodním melounem.",
+      "photo": "/assets/s5/scentisimo/menta-sui-navigli.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.scentisimo.cz/menta-sui-navigli/",
+        "verifiedAt": "2026-11-10T13:27:40.733769+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": [
+            "Akce Značka: Step Aboard 1 490 Kč –67 % 1 490 Kč –67 % 490 Kč Měrná cena: Skladem (>5 ks) Množství + − Přidat do košíku Body and hair perfume150mlHlavní tóny: svěží, ovocné, sladkéInspirace parfému: Veselý západ slunce, půvab, koktejly, cinkající svěžest, bezstarostnost, sklenice, led, povídání, hudba.mátové listy, maliny, červený rybíz, vodní meloun, bílé pižmo Detailní informace Tisk Zeptat se S"
+          ],
+          "schema": "https://schema.org/InStock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 490,
+          "visiblePrice": "490 Kč",
+          "schemaAmount": "490.00",
+          "currency": "CZK",
+          "vatSource": "https://www.scentisimo.cz/obchodni-podminky/",
+          "vatEvidence": "OP 3.2: ceny včetně DPH a všech souvisejících poplatků.",
+          "variantRow": "Akce Značka: Step Aboard 1 490 Kč –67 % 1 490 Kč –67 % 490 Kč Měrná cena: Skladem (>5 ks) Množství + − Přidat do košíku Body and hair perfume150mlHlavní tóny: svěží, ovocné, sladkéInspirace parfému: Veselý západ slunce, půvab, koktejly, cinkající svěžest, bezstarostnost, sklenice, led, povídání, hudba.mátové listy, maliny, červený rybíz, vodní meloun, bílé pižmo Detailní informace Tisk Zeptat se S"
+        },
+        "packEvidence": {
+          "pack": "150 ml",
+          "sourceText": "Body and hair perfume 150ml Hlavní tóny: svěží, ovocné, sladké Inspirace parfému: Veselý západ slunce, půvab, koktejly, cinkající svěžest, bezstarostnost, sklenice, led, povídání, hudba. mátové listy, maliny, červený rybíz, vodní meloun, bílé pižmo"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Single pack in capture.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/999_113-menta-sui-navigli.png?ff=1&x=1024&y=768&q=85&ts=6a57a1c0&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/999_113-menta-sui-navigli.png?ff=1&x=1024&y=768&q=85&ts=6a57a1c0&sg=161563f2",
+          "localPath": "/assets/s5/scentisimo/menta-sui-navigli.webp",
+          "width": 1024,
+          "height": 768,
+          "downloadedAt": "2026-11-10T13:27:43.765355+00:00",
+          "sha256": "fc830f670c27c13b02c0e9244d114177071d2d913b1eb84dfdd8fc594d517afb",
+          "visualReview": "Official product contact sheet visually inspected by PERFUME_WORKER; not browser UI QA."
+        },
+        "scent": "Vůně na tělo a vlasy s mátovými listy, malinami a vodním melounem.",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "menta-sui-navigli"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.scentisimo.cz/menta-sui-navigli/",
+          "navigationLabel": "Máta, malina a meloun",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": "Body and hair perfume 150ml Hlavní tóny: svěží, ovocné, sladké Inspirace parfému: Veselý západ slunce, půvab, koktejly, cinkající svěžest, bezstarostnost, sklenice, led, povídání, hudba. mátové listy, maliny, červený rybíz, vodní meloun, bílé pižmo Detailní popis produktu MÁTA ROZTANČÍ ČERVENÉ TÓNY NOVĚ ZAČÍNAJÍCÍHO VEČERA. Tato vůně je poctou jedinečné atmosféře milánských barů na Navigli – místům, kde pestré, voňavé koktejly odrážejí radost života a letní energie. Směs svěžích aromat, červeného ovoce a šťavnatých bylin osvěžuje rozpálené večery a vnáší do nich mladistvý šarm a nenucenost. Každý tón připomíná chvíle, kdy se tempo velkoměsta na okamžik zastaví a obrazy i zvuky zpomalí pod vlahým přítmím. Teprve s cinkáním lahví a smíchem propleteným s vůní máty ožívá noc naplno. První doušky otevírají večer jako úvodní melodie a svěží intenzita máty podtrhuje originální charakter těchto nezapomenutelných momentů. Parfém je opojný jako koktejl, který si chcete znovu objednat."
+        },
+        "fragrance": {
+          "notes": [
+            "mátové listy",
+            "maliny",
+            "červený rybíz",
+            "vodní meloun",
+            "bílé pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Vůně na tělo a vlasy"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed longevity or projection",
+          "medical or allergy-safety claim",
+          "concentration implies intensity",
+          "merchant cart integration",
+          "layering compatibility"
+        ]
+      }
+    },
+    {
+      "id": "le-roi-empereur",
+      "name": "Le Roi Empereur",
+      "url": "https://www.scentisimo.cz/le-roi-empereur/",
+      "priceAmount": 2290,
+      "price": "2290 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Kardamom a levandule s růží, skořicovou kůrou, vanilkou a bílým pižmem.",
+      "reason": "Kardamom a levandule s růží, skořicovou kůrou, vanilkou a bílým pižmem.",
+      "photo": "/assets/s5/scentisimo/le-roi-empereur.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.scentisimo.cz/le-roi-empereur/",
+        "verifiedAt": "2026-11-10T13:27:40.734463+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": [
+            "Objem: 50ml Skladem (1 ks) 2 990 Kč 2 290 Kč Množství + − Do košíku"
+          ],
+          "schema": "https://schema.org/InStock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 2290,
+          "visiblePrice": "2 290 Kč",
+          "schemaAmount": "2290.00",
+          "currency": "CZK",
+          "vatSource": "https://www.scentisimo.cz/obchodni-podminky/",
+          "vatEvidence": "OP 3.2: ceny včetně DPH a všech souvisejících poplatků.",
+          "variantRow": "Objem: 50ml Skladem (1 ks) 2 990 Kč 2 290 Kč Množství + − Do košíku"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Objem: 50ml Skladem (1 ks) 2 990 Kč 2 290 Kč Množství + − Do košíku"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page; multiple-pack rows require selecting the displayed pack on merchant site.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/62-4_le-roi-empereur-edp-100-ml.png?ff=1&x=1024&y=768&q=85&ts=68343495&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.scentisimo.cz/user/shop/big/62-4_le-roi-empereur-edp-100-ml.png?ff=1&x=1024&y=768&q=85&ts=68343495&sg=161563f2",
+          "localPath": "/assets/s5/scentisimo/le-roi-empereur.webp",
+          "width": 1024,
+          "height": 768,
+          "downloadedAt": "2026-11-10T13:27:45.222533+00:00",
+          "sha256": "c78011cd1f45454831dc8e88fdf4a3249b8ffb4fc4acec2a5c1fc32eb11b14e2",
+          "visualReview": "Official product contact sheet visually inspected by PERFUME_WORKER; not browser UI QA."
+        },
+        "scent": "Kardamom a levandule s růží, skořicovou kůrou, vanilkou a bílým pižmem.",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "le-roi-empereur"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.scentisimo.cz/le-roi-empereur/",
+          "navigationLabel": "Kardamom, levandule a skořice",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": "Pikantní a svěží Eau de Parfum pro muže. K zakoupenému vzorku získáte slevu 100Kč na pozdější nákup parfémů. Detailní popis produktu Hloubka koření podtrhuje smyslný rozměr úspěchu, zatímco opojné akordy propůjčují této kompozici neodolatelné, živé kouzlo. François Rancé vzdal těmito vzácnými tóny hold Napoleonově korunovaci italským králem. Ve světě, jehož rytmus se stále zrychluje, se Le Roi Empereur představuje jako mnohovrstevnaté mistrovské dílo, které v sobě nese silnou symboliku moci a elegance. Vůně okamžitě zaujme prvotními tóny kardamomu a levandule, které pozvolna přecházejí do bohatého srdce plného květin — v dokonale vyvážené harmonii zde zaznívá turecká růže spolu s kosatcovým dřevem. Základ této kompozice je kořeněný a balzamický, protkán smyslnými, sametovými doteky bílého pižma a lahodné vanilky. Elegantní design — vzácný papír etikety a kombinace červené se zlatou — dokonale odráží vytříbený charakter vůně a její nezaměnitelný styl. Probuďte v sobě vnitřního krále s parfémem, který v konkurenci plné křiklavých pozlátek a falešné slávy ztělesňuje eleganci, vytříbenost a vkus. Eau de Parfum. Hlavní znaky: kořeněný, květinový, pudrový, pikantní, svěží, živočišný Anýz, kardamom, levandule, pomerančový květ, kosatec, růže, fialka, ambra, skořicová kůra, dřevěný mech, vanilka, bílé pižmo"
+        },
+        "fragrance": {
+          "notes": [
+            "anýz",
+            "kardamom",
+            "levandule",
+            "pomerančový květ",
+            "kosatec",
+            "růže",
+            "fialka",
+            "ambra",
+            "skořicová kůra",
+            "dřevěný mech",
+            "vanilka",
+            "bílé pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed longevity or projection",
+          "medical or allergy-safety claim",
+          "concentration implies intensity",
+          "merchant cart integration",
+          "layering compatibility"
+        ]
+      }
+    }
+  ],
+  "operator": {
+    "operator": "La Graciosa Fashion s.r.o.",
+    "ico": "22067906",
+    "operatorSource": "https://www.scentisimo.cz/obchodni-podminky/",
+    "contact": "mail@scentisimo.cz"
+  },
+  "status": "RESERVED_SOURCE_REVIEWED_ENGINE_PENDING",
+  "revenue": "UNKNOWN",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "notes": [
+    "12 unique formulas, six perfume brands; sizes/samples not counted separately.",
+    "Representative personal-fragrance selection, not entire shop.",
+    "No budget, intensity, occasion or gender filter; no complementary product or layering promise.",
+    "Canonical product URLs: displayed pack must be selected on merchant site when several rows exist.",
+    "Live eligibility is coordinator evidence; own browser UI and Preview QA not performed."
+  ]
+}

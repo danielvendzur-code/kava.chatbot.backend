@@ -1,0 +1,99 @@
+{
+  "status": "PROPOSED_MODEL_NOT_ACTIVE",
+  "key": "fragranceDirection",
+  "question": "Jaké tóny chcete objevovat?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy, máta nebo magnolie",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "acqua-mirabile-odorosa-di-firenze",
+          "label": "Citron, bergamot a růže",
+          "productId": "acqua-mirabile-odorosa-di-firenze"
+        },
+        {
+          "value": "body-mist-sea-mist",
+          "label": "Bergamot, citron a magnolie",
+          "productId": "body-mist-sea-mist"
+        },
+        {
+          "value": "menta-sui-navigli",
+          "label": "Máta, malina a meloun",
+          "productId": "menta-sui-navigli"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Frézie, růže nebo bílé květy",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "eau-de-la-couronne",
+          "label": "Frézie a kosatec",
+          "productId": "eau-de-la-couronne"
+        },
+        {
+          "value": "josephine",
+          "label": "Růže a fialka",
+          "productId": "josephine"
+        },
+        {
+          "value": "boheme",
+          "label": "Neroli, kosatec a mléko",
+          "productId": "boheme"
+        },
+        {
+          "value": "golden-age",
+          "label": "Ananas, jasmín a ylang-ylang",
+          "productId": "golden-age"
+        }
+      ]
+    },
+    {
+      "value": "gourmand",
+      "label": "Vanilka, kokos nebo karamel",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "vanille-sauvage-de-madagascar",
+          "label": "Vanilka, levandule a kadidlo",
+          "productId": "vanille-sauvage-de-madagascar"
+        },
+        {
+          "value": "nuit-patchouli",
+          "label": "Malina, pačuli a karamel",
+          "productId": "nuit-patchouli"
+        },
+        {
+          "value": "frangipane-e-cocco",
+          "label": "Frangipani a kokos",
+          "productId": "frangipane-e-cocco"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Oud nebo koření",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "oud-himalayen",
+          "label": "Mandle, malina a oud",
+          "productId": "oud-himalayen"
+        },
+        {
+          "value": "le-roi-empereur",
+          "label": "Kardamom, levandule a skořice",
+          "productId": "le-roi-empereur"
+        }
+      ]
+    }
+  ]
+}

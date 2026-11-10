@@ -1,0 +1,39 @@
+{
+  "reportedBy": "MAIN_WORKER_CUA",
+  "receivedVia": "Coordinator reply in this conversation",
+  "observedAt": "2026-11-10T13:24:36.055Z",
+  "cookieMode": "Odmítnout cookies",
+  "ownWorkerBrowserQA": false,
+  "urls": [
+    "https://www.scentisimo.cz/",
+    "https://www.scentisimo.cz/eau-de-la-couronne/"
+  ],
+  "observation": "Home and product rendered and visually inspected by coordinator. No product chat/advisor/launcher observed. Dotaz k produktu opened normal Dotaz na prodejce email/telephone/message/CAPTCHA form; nothing entered/sent, CAPTCHA not solved, no cart. Eau de la Couronne 50 ml / 1990 CZK / Skladem 2 ks; photo loaded.",
+  "limits": "Only these URLs and this cookie/session mode; others unknown.",
+  "evidenceBytes": "PENDING_COORDINATOR_CHECKPOINT",
+  "screenshots": [
+    "scentisimo-live-home-20261110.png",
+    "scentisimo-live-product-20261110.png",
+    "scentisimo-live-question-20261110.png"
+  ],
+  "duplicateCheck": {
+    "checkedAt": "2026-11-10T13:31:55.398397+00:00",
+    "remoteBranchCount": 92,
+    "textBlobs": 2125,
+    "positiveControls": 29,
+    "mainHead": "32462ed45d646996d31147f5e8827c8fb726521c",
+    "domainOperatorIcoMatches": "Only initial assignment; no existing demo.",
+    "relatedContactDomain": "la-graciosa.cz",
+    "relatedDomainScanRefs": 92,
+    "relatedDomainTextBlobs": 1910,
+    "relatedDomainHits": 0,
+    "globalVercel": "PENDING",
+    "mail": "PENDING_NO_APP_ACCESS"
+  },
+  "operatorSources": [
+    "https://www.scentisimo.cz/obchodni-podminky/",
+    "https://www.scentisimo.cz/kontakty/",
+    "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22067906"
+  ],
+  "revenue": "UNKNOWN"
+}

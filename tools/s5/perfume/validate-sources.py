@@ -1,9 +1,11 @@
 """Source and declarative-tree integrity checks. These are NOT UI/engine/live QA."""
-import pathlib,json,hashlib,re,datetime,collections
+import pathlib,json,hashlib,re,datetime,collections,sys
 from PIL import Image
 root=pathlib.Path(__file__).resolve().parents[3]
 reports=[]
-for slug in ['adoraniche','nicheandglow']:
+slugs=sys.argv[1:] or ['adoraniche','nicheandglow']
+assert set(slugs)<= {'adoraniche','nicheandglow','scentisimo'}
+for slug in slugs:
  data=json.loads((root/f'n447/s5/sources/{slug}/verified-products.json').read_text())
  products=data['products'];ids={p['id'] for p in products};assert len(ids)==len(products)<=25
  assert len({p['url'] for p in products})==len(products)
@@ -40,5 +42,6 @@ for slug in ['adoraniche','nicheandglow']:
  assert len(set(fragment['compareProductIds']))==2 and set(fragment['compareProductIds'])<=ids
  reports.append({'slug':slug,'sourceRecords':len(products),'uniqueFormulaRoutes':len(paths),'loadedLocalPhotos':len(hashes),'paths':paths,'priceStockPackUrlChecks':'PASS','treeModelChecks':'PASS','uiQA':'NOT_RUN_ENGINE_PENDING','liveWidgetQA':'PENDING','previewQA':'NOT_RUN','paidModelCalls':0})
 out={'checkedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'Reviewed source facts + proposed declarative tree; not shared-engine or browser UI QA','reports':reports}
-(root/'n447/s5/dokazy/perfume-worker/source-model-check.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+filename='source-model-check-'+slugs[0]+'.json' if len(slugs)==1 else 'source-model-check.json'
+(root/'n447/s5/dokazy/perfume-worker'/filename).write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(out,ensure_ascii=False))
