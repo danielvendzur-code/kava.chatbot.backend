@@ -314,3 +314,14 @@ Hlavný krém na ruky Shea150ml147Kč;70ml110Kč iba rozbaliteľný variant s pr
 Pri obsahu sa našla heuristická zámena bambuckého krému/gélu za maslo. Dvojriadkový opt-in routineRoleVerified v jadre akceptuje iba explicitne uzamknuté overené S5 role. Boemi má doloženú rolu aj textúru; fingerprinty pripravených rolí/vlastností všetkých ôsmich starších katalógov sa nezmenili (verified-role-compatibility.json). Staré UI testy sa neopakovali.
 
 Cosmetica Bohemica s.r.o./27888665, súvisiace obchod-boemi.cz a SK zastúpenie boemikozmetika.sk/47046635 skontrolované v91refs; bežné filtre, žiadny produktový chat pozorovaný pri home+produkt kontrole, iné režimy neisté. Doprava zdarma iba nad1200Kč podľa CZ maloobchodných OP. Kontakt info@boemi.cz z oficiálnych kontaktov; textový návrh NOT_READY447+10, pošta PENDING_CONTROLLER. Preview zatiaľ PENDING, nezapočítavať do ôsmich živých.
+
+
+## Boemi – vlastné živé Preview12/12 (2026-11-10T07:24:59.127805+00:00)
+
+Kód922cbf3a121faba3ed622c4a28d7cadb171b5411 / READY dpl_9fLJ4vgUyvQopJmTwC69EZtTyXBe. Preview: https://kava-chatbot-backend-qczt6lhux-danielvendzur-codes-projects.vercel.app/s5.html?demo=boemi
+
+Vlastný cloud browser prešiel všetkých12koncových ciest s resetom medzi nimi,1363×936,čeština,bez horizontálneho pretečenia. Všetky fotografie po skutočnom načítaní800px(okrem Levandule1500px), presná cena/balenie/CTA v rovnakej karte. Overený variant70ml110Kč, doplnok pôvodne nezaškrtnutý220→365→220Kč, porovnanie mlieko127Kč150ml vs maslo220Kč130ml a štyri40pxčipy.0modelových volaní. JSON boemi-preview-qa.json obsahuje12skutočných DOM výsledkov overených proti oficiálnym faktom. Snímky Preview zachované aj ako samostatné WebP; lokálne všetkých12PNG. Celý lokálny56WebP dôkazový balík má manifest a viac samostatných archívov pod250KB, aby sa neopakoval veľký visiací upload.
+
+Séria má deväť vlastne Preview overených ukážok. Žiadna produkcia ani zákaznícke schválenie; textové návrhyNOT_READY, poštaPENDING_CONTROLLER a bez zmien.
+
+Ďalšia previerka: Big Blond Coffee / Beskydská pražírna kávy s.r.o./08181241 je HOLD_EXISTING_INTERACTIVE_ADVISOR. Vlastný browser otvoril home→Chci poradit→Jak připravujete kávu(6príprav)→espresso→Jaké preferujete chutě(3chute, odkazy na filtrované produkty). Nie je iba ľudský kontakt; už má výberový poradca. Bez rezervácie/kódu/správy. Pokračovať ďalšou vhodnou firmou, neobnovovať HOLD.
