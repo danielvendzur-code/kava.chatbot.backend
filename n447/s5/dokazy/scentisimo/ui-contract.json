@@ -1,0 +1,158 @@
+{
+  "fragrance": {
+    "scentisimo": {
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "floral",
+              "gourmand",
+              "fresh",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "eau-de-la-couronne",
+              "josephine",
+              "boheme",
+              "golden-age"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "vanille-sauvage-de-madagascar",
+              "nuit-patchouli",
+              "frangipane-e-cocco"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "acqua-mirabile-odorosa-di-firenze",
+              "body-mist-sea-mist",
+              "menta-sui-navigli"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "oud-himalayen",
+              "le-roi-empereur"
+            ]
+          }
+        }
+      ],
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "eau-de-la-couronne"
+          },
+          "winner": "eau-de-la-couronne"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "josephine"
+          },
+          "winner": "josephine"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "boheme"
+          },
+          "winner": "boheme"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "golden-age"
+          },
+          "winner": "golden-age"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "vanille-sauvage-de-madagascar"
+          },
+          "winner": "vanille-sauvage-de-madagascar"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "nuit-patchouli"
+          },
+          "winner": "nuit-patchouli"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "frangipane-e-cocco"
+          },
+          "winner": "frangipane-e-cocco"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "acqua-mirabile-odorosa-di-firenze"
+          },
+          "winner": "acqua-mirabile-odorosa-di-firenze"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "body-mist-sea-mist"
+          },
+          "winner": "body-mist-sea-mist"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "menta-sui-navigli"
+          },
+          "winner": "menta-sui-navigli"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "oud-himalayen"
+          },
+          "winner": "oud-himalayen"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "le-roi-empereur"
+          },
+          "winner": "le-roi-empereur"
+        }
+      ]
+    }
+  }
+}

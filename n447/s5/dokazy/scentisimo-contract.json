@@ -1,0 +1,93 @@
+{
+  "products": 12,
+  "questions": 5,
+  "leaves": 12,
+  "reachable": 12,
+  "paidCalls": 0,
+  "paths": [
+    {
+      "answers": {
+        "fragranceDirection": "floral",
+        "fragranceProfile": "eau-de-la-couronne"
+      },
+      "id": "eau-de-la-couronne"
+    },
+    {
+      "answers": {
+        "fragranceDirection": "floral",
+        "fragranceProfile": "josephine"
+      },
+      "id": "josephine"
+    },
+    {
+      "answers": {
+        "fragranceDirection": "floral",
+        "fragranceProfile": "boheme"
+      },
+      "id": "boheme"
+    },
+    {
+      "answers": {
+        "fragranceDirection": "floral",
+        "fragranceProfile": "golden-age"
+      },
+      "id": "golden-age"
+    },
+    {
+      "answers": {
+        "fragranceDirection": "gourmand",
+        "fragranceProfile": "vanille-sauvage-de-madagascar"
+      },
+      "id": "vanille-sauvage-de-madagascar"
+    },
+    {
+      "answers": {
+        "fragranceDirection": "gourmand",
+        "fragranceProfile": "nuit-patchouli"
+      },
+      "id": "nuit-patchouli"
+    },
+    {
+      "answers": {
+        "fragranceDirection": "gourmand",
+        "fragranceProfile": "frangipane-e-cocco"
+      },
+      "id": "frangipane-e-cocco"
+    },
+    {
+      "answers": {
+        "fragranceDirection": "fresh",
+        "fragranceProfile": "acqua-mirabile-odorosa-di-firenze"
+      },
+      "id": "acqua-mirabile-odorosa-di-firenze"
+    },
+    {
+      "answers": {
+        "fragranceDirection": "fresh",
+        "fragranceProfile": "body-mist-sea-mist"
+      },
+      "id": "body-mist-sea-mist"
+    },
+    {
+      "answers": {
+        "fragranceDirection": "fresh",
+        "fragranceProfile": "menta-sui-navigli"
+      },
+      "id": "menta-sui-navigli"
+    },
+    {
+      "answers": {
+        "fragranceDirection": "wood",
+        "fragranceProfile": "oud-himalayen"
+      },
+      "id": "oud-himalayen"
+    },
+    {
+      "answers": {
+        "fragranceDirection": "wood",
+        "fragranceProfile": "le-roi-empereur"
+      },
+      "id": "le-roi-empereur"
+    }
+  ]
+}

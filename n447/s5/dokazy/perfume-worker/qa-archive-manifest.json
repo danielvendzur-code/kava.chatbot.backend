@@ -1,0 +1,1209 @@
+{
+  "createdAt": "2026-11-10T18:52:39.937841+00:00",
+  "scope": "Recovered baseline screenshots plus actual recaptured chat cards; Scentisimo current local integrated QA. Archives excluded from Vercel. Original lost full live raw report is not reconstructed or claimed recovered.",
+  "files": [
+    {
+      "source": "adoraniche-chat-card-final-0-1280.png",
+      "entry": "adoraniche-chat-card-final-0-1280.webp",
+      "archive": "qa-recovered-01.zip",
+      "sha256": "3bfdf91ceb59e6f5b53a181f9951246271ed9be923391b1056788cdc3ff499ee",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "adoraniche-chat-card-final-0-320.png",
+      "entry": "adoraniche-chat-card-final-0-320.webp",
+      "archive": "qa-recovered-01.zip",
+      "sha256": "4bf86eeaad1c299225e9321a5fbee327d3c9379b75478866b0624ff73fae808a",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "adoraniche-chat-card-final-0-390.png",
+      "entry": "adoraniche-chat-card-final-0-390.webp",
+      "archive": "qa-recovered-01.zip",
+      "sha256": "d89c7ccc81806c1d592bf22c8499e0781d06e63804a25a6584d5815c4f002d32",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "adoraniche-chat-card-final-1-1280.png",
+      "entry": "adoraniche-chat-card-final-1-1280.webp",
+      "archive": "qa-recovered-01.zip",
+      "sha256": "d5e643f2a1c5e999833a212695f33c74beeff8b7a9634224edd879bc1ea8df04",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "adoraniche-chat-card-final-1-320.png",
+      "entry": "adoraniche-chat-card-final-1-320.webp",
+      "archive": "qa-recovered-01.zip",
+      "sha256": "a313cca7ddf7842f399e091e4c95d32afdb743e62b88279ab4cf34eb09b6f729",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "adoraniche-chat-card-final-1-390.png",
+      "entry": "adoraniche-chat-card-final-1-390.webp",
+      "archive": "qa-recovered-01.zip",
+      "sha256": "7b244f19f64ed0d7d7a9cf321ef8db685dfd706b19e2155d50847fd831ce2da1",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "adoraniche-chat-card-final-2-1280.png",
+      "entry": "adoraniche-chat-card-final-2-1280.webp",
+      "archive": "qa-recovered-01.zip",
+      "sha256": "338c9b0903331ff5d7b1cf5a26e50bb3577097826955e4ea70ce09926aae73e9",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "adoraniche-chat-card-final-2-320.png",
+      "entry": "adoraniche-chat-card-final-2-320.webp",
+      "archive": "qa-recovered-01.zip",
+      "sha256": "e4188d89b5c41b05d2c168e3cb91d55275115634b638f551f3208b392e8845fc",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "adoraniche-chat-card-final-2-390.png",
+      "entry": "adoraniche-chat-card-final-2-390.webp",
+      "archive": "qa-recovered-02.zip",
+      "sha256": "98efcb7c42e37db44c1d2fc8af7436ab0aa57525110fb4680ceb310b6241fc7a",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "adoraniche-chat-final-1280.png",
+      "entry": "adoraniche-chat-final-1280.webp",
+      "archive": "qa-recovered-02.zip",
+      "sha256": "1622fd03cdb8cc18a4cfa83c019869929568aef68a58800f3a2f33e24b06f3b7",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-chat-final-320.png",
+      "entry": "adoraniche-chat-final-320.webp",
+      "archive": "qa-recovered-02.zip",
+      "sha256": "d8aeff2b44869cff755811f7d5a82343949b868d2dd7efc9922a2a6a3482065a",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-chat-final-390.png",
+      "entry": "adoraniche-chat-final-390.webp",
+      "archive": "qa-recovered-02.zip",
+      "sha256": "afbcea6eb38fa4e0b9f77d7c0e3f6d67e3747729e68b3ac8e0c800043b856233",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-chat-pending-final-1280.png",
+      "entry": "adoraniche-chat-pending-final-1280.webp",
+      "archive": "qa-recovered-02.zip",
+      "sha256": "4fd27b6bc3071ca49d303ca03454ac83c964ddff6973e561786fd076826721df",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-chat-pending-final-320.png",
+      "entry": "adoraniche-chat-pending-final-320.webp",
+      "archive": "qa-recovered-02.zip",
+      "sha256": "a13b8fc8032b33954901caf8f6156ec98166e9479e5aab920f103cd7f7b2fb97",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-chat-pending-final-390.png",
+      "entry": "adoraniche-chat-pending-final-390.webp",
+      "archive": "qa-recovered-02.zip",
+      "sha256": "3a18862dcc1e767e32d226ad7d2ba1b31d5b099b523af4db401b963b03fad278",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-compare-1280.png",
+      "entry": "adoraniche-compare-1280.webp",
+      "archive": "qa-recovered-02.zip",
+      "sha256": "55e721f4ff813454af82d11723c4414d02bdb1ee3548345750c2afb8e4f9d171",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-compare-320.png",
+      "entry": "adoraniche-compare-320.webp",
+      "archive": "qa-recovered-03.zip",
+      "sha256": "74cfef5ca472a7c0543678544af48e42d6b559736ae606fb59b9ba6dd5083d5a",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-compare-390.png",
+      "entry": "adoraniche-compare-390.webp",
+      "archive": "qa-recovered-03.zip",
+      "sha256": "ed2bbe291a18e5ff9bbb7017a3cbd8a555b90bd5c4b6d76c241326f52868ccbf",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceDirection--0-1280.png",
+      "entry": "adoraniche-final-fragranceDirection--0-1280.webp",
+      "archive": "qa-recovered-03.zip",
+      "sha256": "18563be5ccf34fb4a048739e6e91a80f28491e58706ec687a51111e786f09bc4",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceDirection--0-320.png",
+      "entry": "adoraniche-final-fragranceDirection--0-320.webp",
+      "archive": "qa-recovered-03.zip",
+      "sha256": "a8a0d318bf8637aa6f4148c5e742f8f7091201b695cd29a83417c97efd0b9182",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceDirection--0-390.png",
+      "entry": "adoraniche-final-fragranceDirection--0-390.webp",
+      "archive": "qa-recovered-04.zip",
+      "sha256": "b409fc1f76f6f19750b55e96408b80a3a662c69be8223dc3138a5531402559e3",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceProfile-clean-0-1280.png",
+      "entry": "adoraniche-final-fragranceProfile-clean-0-1280.webp",
+      "archive": "qa-recovered-04.zip",
+      "sha256": "af2bacb79c272d8955daa791e659491260f80fbf32f21fd43c4affeba3479f46",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceProfile-clean-0-320.png",
+      "entry": "adoraniche-final-fragranceProfile-clean-0-320.webp",
+      "archive": "qa-recovered-04.zip",
+      "sha256": "93617c69a271a20e2c4504156812a1be9a39f20877cda35f0c5c7e032170e9f5",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceProfile-clean-0-390.png",
+      "entry": "adoraniche-final-fragranceProfile-clean-0-390.webp",
+      "archive": "qa-recovered-04.zip",
+      "sha256": "eb628ecf8f18a1ad659e9e9561655f4788ac28b341ad675f21c3d3f4d9b19543",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceProfile-gourmand-0-1280.png",
+      "entry": "adoraniche-final-fragranceProfile-gourmand-0-1280.webp",
+      "archive": "qa-recovered-05.zip",
+      "sha256": "3457ef31a219cfc578e0411f80649916a8f2be1745f3b25ee666cb9468c6e477",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceProfile-gourmand-0-320.png",
+      "entry": "adoraniche-final-fragranceProfile-gourmand-0-320.webp",
+      "archive": "qa-recovered-05.zip",
+      "sha256": "8eb1259818e6c2380e6afa1f30d6180665bff4c8049ea427ef7bbdbe3f6bac3f",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceProfile-gourmand-0-390.png",
+      "entry": "adoraniche-final-fragranceProfile-gourmand-0-390.webp",
+      "archive": "qa-recovered-05.zip",
+      "sha256": "ce263c4fb984014611f390ac210f9fc482916663462f016b51bd578e8fec0b3c",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceProfile-gourmand-1-1280.png",
+      "entry": "adoraniche-final-fragranceProfile-gourmand-1-1280.webp",
+      "archive": "qa-recovered-05.zip",
+      "sha256": "a7fda90698e6667feed9cbbe07f1372495e8580a9bcb1ba4e4b1d5ea7c226939",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceProfile-gourmand-1-320.png",
+      "entry": "adoraniche-final-fragranceProfile-gourmand-1-320.webp",
+      "archive": "qa-recovered-06.zip",
+      "sha256": "a250e51e17b2c14da4b929985e0293ef9f70252c22a6750b59e300356b989062",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceProfile-gourmand-1-390.png",
+      "entry": "adoraniche-final-fragranceProfile-gourmand-1-390.webp",
+      "archive": "qa-recovered-06.zip",
+      "sha256": "94ea1b755ac9984471c1b43ba220adf9e37a807137c5df993e097dbe3bf4d762",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceProfile-green-0-1280.png",
+      "entry": "adoraniche-final-fragranceProfile-green-0-1280.webp",
+      "archive": "qa-recovered-06.zip",
+      "sha256": "dbfc9b7ad88361273e3678aa7a3fa2541a2971e75ea78b5477ab2b135828a1c9",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceProfile-green-0-320.png",
+      "entry": "adoraniche-final-fragranceProfile-green-0-320.webp",
+      "archive": "qa-recovered-06.zip",
+      "sha256": "72d590375b05d1ef9d59a62e7dc27999c7812c23d742c8147c0c0e21a459f62d",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-final-fragranceProfile-green-0-390.png",
+      "entry": "adoraniche-final-fragranceProfile-green-0-390.webp",
+      "archive": "qa-recovered-06.zip",
+      "sha256": "f60a59aba672fe322721ba90c9e4bfd61d84ece50fe9424e198b9de5e6b416fe",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-hover-1280.png",
+      "entry": "adoraniche-hover-1280.webp",
+      "archive": "qa-recovered-07.zip",
+      "sha256": "a04c2ebc808fb943536cb753f7533553d13270415fb1f3e947cfe955c5080a0f",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-hover-320.png",
+      "entry": "adoraniche-hover-320.webp",
+      "archive": "qa-recovered-07.zip",
+      "sha256": "0fc54be68902fe825b31a6c05c8abcc1dba57ea124340813a7d394d38cfd2db9",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-hover-390.png",
+      "entry": "adoraniche-hover-390.webp",
+      "archive": "qa-recovered-07.zip",
+      "sha256": "fc9fea18b5478854d41f0f9f6c2034c2c1e0f4659d1aa35757b899958f342df5",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-offer-final-1280.png",
+      "entry": "adoraniche-offer-final-1280.webp",
+      "archive": "qa-recovered-08.zip",
+      "sha256": "7a630803b721ba1ef7b72ed065804d171c9fd1be47824ba19cef69ab940fa792",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-offer-final-320.png",
+      "entry": "adoraniche-offer-final-320.webp",
+      "archive": "qa-recovered-08.zip",
+      "sha256": "f2dbdf382a037eda3a77fff4b59fbc7bc0604db38c8b7888ae5ac891fcd7937a",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-offer-final-390.png",
+      "entry": "adoraniche-offer-final-390.webp",
+      "archive": "qa-recovered-08.zip",
+      "sha256": "cb2847fcf55e1ec686e386d519a9bda06d918361e6216aefca72bdf81f6ae8d4",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-adam-1280.png",
+      "entry": "adoraniche-result-adam-1280.webp",
+      "archive": "qa-recovered-08.zip",
+      "sha256": "0f8d8549e4ac6f53b2322686c272a7f1ef21df0d6dcce8ae93ee3833f8b808e5",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-adam-320.png",
+      "entry": "adoraniche-result-adam-320.webp",
+      "archive": "qa-recovered-08.zip",
+      "sha256": "9cda56d559d49368704c22aef3c64ce932569474092b8e1600dcbd0d8bcfb705",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-adam-390.png",
+      "entry": "adoraniche-result-adam-390.webp",
+      "archive": "qa-recovered-08.zip",
+      "sha256": "913629755b117ad8fbc6e17f23b98b5a675441a68ea4930252599b300e707f28",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-bain-1280.png",
+      "entry": "adoraniche-result-bain-1280.webp",
+      "archive": "qa-recovered-09.zip",
+      "sha256": "26d8e6b8cf5a5c7a30f34d60eef15f28e74f0da658b8b36c00dbcdc5f4312ebf",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-bain-320.png",
+      "entry": "adoraniche-result-bain-320.webp",
+      "archive": "qa-recovered-09.zip",
+      "sha256": "af810485df5f2e97f01a14c8358568bbf03508c678ca4db481cad2496cea2c48",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-bain-390.png",
+      "entry": "adoraniche-result-bain-390.webp",
+      "archive": "qa-recovered-09.zip",
+      "sha256": "991b90a435806c5103eb2c662477b68dd5e807da6e7807607c570b710b2aeab7",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-blond-1280.png",
+      "entry": "adoraniche-result-blond-1280.webp",
+      "archive": "qa-recovered-09.zip",
+      "sha256": "2ccc207b6d9631fc6a4e01b1a3fc72ba5d7e8167142b5920723395042b3a5da9",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-blond-320.png",
+      "entry": "adoraniche-result-blond-320.webp",
+      "archive": "qa-recovered-09.zip",
+      "sha256": "2870f132e7fa4074d7f35ee4c3c8f4129ab6c787c7c91e3130d2e668f0b7b61f",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-blond-390.png",
+      "entry": "adoraniche-result-blond-390.webp",
+      "archive": "qa-recovered-09.zip",
+      "sha256": "3b6691fed6ef9fe00f0446dc2c409664c9b4fde670ea28090c0dd2b57963bb9c",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-chai-1280.png",
+      "entry": "adoraniche-result-chai-1280.webp",
+      "archive": "qa-recovered-10.zip",
+      "sha256": "0b957aca0b2b2c0c17284a71c46642bc4d23305828896e85d4b07f9d5a0e30ff",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-chai-320.png",
+      "entry": "adoraniche-result-chai-320.webp",
+      "archive": "qa-recovered-10.zip",
+      "sha256": "a3c9dd6a40628a6de2d47800e4cf24f4565c3873ee7f398193bdf0f5816c4d0b",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-chai-390.png",
+      "entry": "adoraniche-result-chai-390.webp",
+      "archive": "qa-recovered-10.zip",
+      "sha256": "1fe5b3c430a6d7dc78beb2b28bac26a7cee3a9618a4639ff6650223ebbd396ac",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-cloud-1280.png",
+      "entry": "adoraniche-result-cloud-1280.webp",
+      "archive": "qa-recovered-10.zip",
+      "sha256": "13bd932821b849cfb52236e95ba768d5c19ca86335b5579211b5db4f87c35afb",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-cloud-320.png",
+      "entry": "adoraniche-result-cloud-320.webp",
+      "archive": "qa-recovered-10.zip",
+      "sha256": "4377dd61828c454bd79054024e0b3957b58ba3349a9db0c84c9fa5c48ca3f9a0",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-cloud-390.png",
+      "entry": "adoraniche-result-cloud-390.webp",
+      "archive": "qa-recovered-10.zip",
+      "sha256": "df6052ea961ca868ed75d4807ad71decc0df6b1568fb2479d9ee91093f447cc6",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-maamoul-1280.png",
+      "entry": "adoraniche-result-maamoul-1280.webp",
+      "archive": "qa-recovered-11.zip",
+      "sha256": "3ef2dc92af077cc9925c26ed0c188de718fa45db49782d9d26277b1ddf9c0b3e",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-maamoul-320.png",
+      "entry": "adoraniche-result-maamoul-320.webp",
+      "archive": "qa-recovered-11.zip",
+      "sha256": "0426c0385795605cae800bceda1005f002a9b9fdbb9829faacc61b2127579f27",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-maamoul-390.png",
+      "entry": "adoraniche-result-maamoul-390.webp",
+      "archive": "qa-recovered-11.zip",
+      "sha256": "7f14ff50ab5fab3216b059395726347ee3df7da6fa6a0a5e103e727b589d7dc1",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-nature-1280.png",
+      "entry": "adoraniche-result-nature-1280.webp",
+      "archive": "qa-recovered-11.zip",
+      "sha256": "9ef56f5152f7465422f8edd920d02b7229bad4db497adc1fd3a9d1fdd23d6c21",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-nature-320.png",
+      "entry": "adoraniche-result-nature-320.webp",
+      "archive": "qa-recovered-11.zip",
+      "sha256": "4604f0c4d55c7d65cd6f1e743a822d1d20308e6a171f89b38e1499fb2ce72751",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-nature-390.png",
+      "entry": "adoraniche-result-nature-390.webp",
+      "archive": "qa-recovered-11.zip",
+      "sha256": "bd91fdc7b41ad2ab3c656c9308c960cb72cef544a52b64ee91b6affa9662285b",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-nel-1280.png",
+      "entry": "adoraniche-result-nel-1280.webp",
+      "archive": "qa-recovered-12.zip",
+      "sha256": "33cac0abafe227c973e803679291207aa6af0a83875d22d4f91f27acb73a9373",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-nel-320.png",
+      "entry": "adoraniche-result-nel-320.webp",
+      "archive": "qa-recovered-12.zip",
+      "sha256": "fb45a45fd8a0ae31e3e1323db497b3c7d948893080d0e1afc8e4f316f28af623",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-nel-390.png",
+      "entry": "adoraniche-result-nel-390.webp",
+      "archive": "qa-recovered-12.zip",
+      "sha256": "57b5c36b2635083af0d24fa3b9c46fcdd57feed3af035cc03112002cf5407dbf",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-nucleus-1280.png",
+      "entry": "adoraniche-result-nucleus-1280.webp",
+      "archive": "qa-recovered-12.zip",
+      "sha256": "1a11bc95e1f795f474c472b2dc83af0a83e6677a29263e6e7e6b18b814e0b102",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-nucleus-320.png",
+      "entry": "adoraniche-result-nucleus-320.webp",
+      "archive": "qa-recovered-12.zip",
+      "sha256": "3963977f356e58e2c1982a411e6f39fec9b8c4844cdc9d469f5d6587709dd848",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-nucleus-390.png",
+      "entry": "adoraniche-result-nucleus-390.webp",
+      "archive": "qa-recovered-12.zip",
+      "sha256": "e6e4759ee30fdbc326153d7a8033a96568764df9afa267ba337feabd38dcf7ce",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-paper-soap-1280.png",
+      "entry": "adoraniche-result-paper-soap-1280.webp",
+      "archive": "qa-recovered-13.zip",
+      "sha256": "eb15ba76c5601c1e87dc22eb0581a6bf8bb2aa77cb501bb857dce30004ecba75",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-paper-soap-320.png",
+      "entry": "adoraniche-result-paper-soap-320.webp",
+      "archive": "qa-recovered-13.zip",
+      "sha256": "c6f17313449a41971f438ee06966c9c58832dec5e85fe02327627f638d9ce2b0",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-paper-soap-390.png",
+      "entry": "adoraniche-result-paper-soap-390.webp",
+      "archive": "qa-recovered-13.zip",
+      "sha256": "420c46a00a3ee3e6044545b4b9bc4526a79cce1ceee19d3d78bf4d87a02abff5",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-roasted-tea-1280.png",
+      "entry": "adoraniche-result-roasted-tea-1280.webp",
+      "archive": "qa-recovered-13.zip",
+      "sha256": "c4f21cf4090993832d05bd6078cdc6cf7fe47ed356323c45b9415520f7cf38f4",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-roasted-tea-320.png",
+      "entry": "adoraniche-result-roasted-tea-320.webp",
+      "archive": "qa-recovered-13.zip",
+      "sha256": "98726647ef878c5af486e7e27146fc16b949089200a08bb38b9a98cb48a58506",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-roasted-tea-390.png",
+      "entry": "adoraniche-result-roasted-tea-390.webp",
+      "archive": "qa-recovered-13.zip",
+      "sha256": "885401de8d1d94b4fc11b8599dce276a4bdebe6d764ff659816c84b74e1111e4",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-swim-1280.png",
+      "entry": "adoraniche-result-swim-1280.webp",
+      "archive": "qa-recovered-14.zip",
+      "sha256": "ac26c95432686023d7c9033093df37ea8c3c0c157eda12d0f71fd1006e0749c6",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-swim-320.png",
+      "entry": "adoraniche-result-swim-320.webp",
+      "archive": "qa-recovered-14.zip",
+      "sha256": "ed0c208b35079dc12852bffaa580d24ca1de6ec82342df281431c38fe1c51248",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "adoraniche-result-swim-390.png",
+      "entry": "adoraniche-result-swim-390.webp",
+      "archive": "qa-recovered-14.zip",
+      "sha256": "25e0469ab9550a72a1d377a1fc6b73e969ca62b08dcd3cb074e6993f88610e5d",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-chat-card-final-0-1280.png",
+      "entry": "nicheandglow-chat-card-final-0-1280.webp",
+      "archive": "qa-recovered-14.zip",
+      "sha256": "8b9ee960711b3d01ea8211c66501d69208259adfb84f5ec24106c34ebe0681e1",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "nicheandglow-chat-card-final-0-320.png",
+      "entry": "nicheandglow-chat-card-final-0-320.webp",
+      "archive": "qa-recovered-14.zip",
+      "sha256": "e292acd6f910c59537cf116cb9cd7abebe2c85e2733c93ac577fc3509ca1927d",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "nicheandglow-chat-card-final-0-390.png",
+      "entry": "nicheandglow-chat-card-final-0-390.webp",
+      "archive": "qa-recovered-14.zip",
+      "sha256": "8c51cd9feb3f7bcac248dc9771d9b1c075f800c8e7dc4f9b69c33cf4c0e30ccb",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "nicheandglow-chat-card-final-1-1280.png",
+      "entry": "nicheandglow-chat-card-final-1-1280.webp",
+      "archive": "qa-recovered-14.zip",
+      "sha256": "6ffba123b27509f81967ef3cdcf863a673a8ff860f9b51ca71844f0d77bee764",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "nicheandglow-chat-card-final-1-320.png",
+      "entry": "nicheandglow-chat-card-final-1-320.webp",
+      "archive": "qa-recovered-14.zip",
+      "sha256": "0e4d33e4b456837556d6abcc345ad050ba4525bed9b5d580f558f9f5bcb72310",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "nicheandglow-chat-card-final-1-390.png",
+      "entry": "nicheandglow-chat-card-final-1-390.webp",
+      "archive": "qa-recovered-15.zip",
+      "sha256": "df01d74b713b33fe910647b46a3765dbc9f7b354ecdcb30b71a9a9d3b6f62c61",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "nicheandglow-chat-card-final-2-1280.png",
+      "entry": "nicheandglow-chat-card-final-2-1280.webp",
+      "archive": "qa-recovered-15.zip",
+      "sha256": "c33d9f2a8d36428e92493db57b1197da290de17244e114dc555b7a7a3bab614b",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "nicheandglow-chat-card-final-2-320.png",
+      "entry": "nicheandglow-chat-card-final-2-320.webp",
+      "archive": "qa-recovered-15.zip",
+      "sha256": "13513147b3988fda99618cdee57e3d91c3cd4341c71b1b3d7fd6763d06f6577b",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "nicheandglow-chat-card-final-2-390.png",
+      "entry": "nicheandglow-chat-card-final-2-390.webp",
+      "archive": "qa-recovered-15.zip",
+      "sha256": "66254a74dac17f5a6cfc0d1b42d982051d2d5a0a5a349a28ce749d2189f70285",
+      "scope": "recaptured-chat-20261110"
+    },
+    {
+      "source": "nicheandglow-chat-final-1280.png",
+      "entry": "nicheandglow-chat-final-1280.webp",
+      "archive": "qa-recovered-15.zip",
+      "sha256": "771395ba24e0987f00702224e3132a167adadc8ec2cbeae98e52a0fa61b804ce",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-chat-final-320.png",
+      "entry": "nicheandglow-chat-final-320.webp",
+      "archive": "qa-recovered-15.zip",
+      "sha256": "edf3185ec4efb8b02f34b99a7970dd358c44027dde35f8e10b1ebe5ea870cc38",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-chat-final-390.png",
+      "entry": "nicheandglow-chat-final-390.webp",
+      "archive": "qa-recovered-15.zip",
+      "sha256": "6f2f64dceb633b2cbaed09a691495f375d56ebb58d58c30f4e6be6304bcf0592",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-chat-pending-final-1280.png",
+      "entry": "nicheandglow-chat-pending-final-1280.webp",
+      "archive": "qa-recovered-15.zip",
+      "sha256": "60fe71363ff553b8a40fb7c1eca9e95d4f75e0bb2b17b51ce673de4bcfd67ff8",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-chat-pending-final-320.png",
+      "entry": "nicheandglow-chat-pending-final-320.webp",
+      "archive": "qa-recovered-15.zip",
+      "sha256": "81095e46e6381ee4a2d3f2df154e18bbcfe289e579c85b3888b661bbb4ace230",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-chat-pending-final-390.png",
+      "entry": "nicheandglow-chat-pending-final-390.webp",
+      "archive": "qa-recovered-16.zip",
+      "sha256": "88a943d4184104bfd4f1c6272ac77e474fe001cab794ca8657121aaab83939cf",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-compare-1280.png",
+      "entry": "nicheandglow-compare-1280.webp",
+      "archive": "qa-recovered-16.zip",
+      "sha256": "01b0db10647e5440e5d081984df65880d3726e009c014694a0bfd89fac974545",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-compare-320.png",
+      "entry": "nicheandglow-compare-320.webp",
+      "archive": "qa-recovered-16.zip",
+      "sha256": "6c44bb060d1d9774ea819df916ba737bb43fa9c688aa93fea7a345719a8ad25c",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-compare-390.png",
+      "entry": "nicheandglow-compare-390.webp",
+      "archive": "qa-recovered-16.zip",
+      "sha256": "67627d03271ac088e23d14a9b7c0b2262764de3e30b2c0e4e9b093f6a1c32a77",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceDirection--0-1280.png",
+      "entry": "nicheandglow-final-fragranceDirection--0-1280.webp",
+      "archive": "qa-recovered-16.zip",
+      "sha256": "273606d71ac26422b25074c2c7d23ee67925bbee4f89af30a686433bc2a84d38",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceDirection--0-320.png",
+      "entry": "nicheandglow-final-fragranceDirection--0-320.webp",
+      "archive": "qa-recovered-17.zip",
+      "sha256": "3ff914022783070d95824cfd30f5dfe3b3e42793104fba082def8a206ec10c67",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceDirection--0-390.png",
+      "entry": "nicheandglow-final-fragranceDirection--0-390.webp",
+      "archive": "qa-recovered-17.zip",
+      "sha256": "03257008ed7e8afbccad40721a7acff5f0f07e52a40e58135328228e036ce9cd",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-floral-0-1280.png",
+      "entry": "nicheandglow-final-fragranceProfile-floral-0-1280.webp",
+      "archive": "qa-recovered-17.zip",
+      "sha256": "18a909b56d61871952be67718965d17265d79c2a088ba8166c8f258c6b97b2b6",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-floral-0-320.png",
+      "entry": "nicheandglow-final-fragranceProfile-floral-0-320.webp",
+      "archive": "qa-recovered-17.zip",
+      "sha256": "8ad8b05d25d22c59939501a3a7486d6bf4ebe18bdde8ccade3a5f5ba95d5ddd1",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-floral-0-390.png",
+      "entry": "nicheandglow-final-fragranceProfile-floral-0-390.webp",
+      "archive": "qa-recovered-17.zip",
+      "sha256": "afd8d09e67f4700b3197428b05bf94b3ef75900ce4bd865e824af031fcdd9d5d",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-gourmand-0-1280.png",
+      "entry": "nicheandglow-final-fragranceProfile-gourmand-0-1280.webp",
+      "archive": "qa-recovered-18.zip",
+      "sha256": "ae88d2ba63b4ed351f188bfdd2102ebb243abded8b8f463c71d49c3e8e469760",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-gourmand-0-320.png",
+      "entry": "nicheandglow-final-fragranceProfile-gourmand-0-320.webp",
+      "archive": "qa-recovered-18.zip",
+      "sha256": "482da80a7168c6f6997bafc3f4313b0ede8dcc6e099992b118ba148c19c18857",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-gourmand-0-390.png",
+      "entry": "nicheandglow-final-fragranceProfile-gourmand-0-390.webp",
+      "archive": "qa-recovered-18.zip",
+      "sha256": "fecd1c9d39bfed144f9c3dc27b3339da38cf8ad615146a42041a4747d4c1704c",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-green-0-1280.png",
+      "entry": "nicheandglow-final-fragranceProfile-green-0-1280.webp",
+      "archive": "qa-recovered-18.zip",
+      "sha256": "873fcc680c92ead46b650bc876872dd03a417019e6a5d0138a004238bf1e4795",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-green-0-320.png",
+      "entry": "nicheandglow-final-fragranceProfile-green-0-320.webp",
+      "archive": "qa-recovered-19.zip",
+      "sha256": "c0f725bbc6df4b9b1728a2c61c154f8c490c9f63750bc6e1fa365d57744e1a0f",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-green-0-390.png",
+      "entry": "nicheandglow-final-fragranceProfile-green-0-390.webp",
+      "archive": "qa-recovered-19.zip",
+      "sha256": "c2303a97de8d1c0b52e6d7803933427b65b1afacda95728c0d1a0370bc120d5c",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-wood-0-1280.png",
+      "entry": "nicheandglow-final-fragranceProfile-wood-0-1280.webp",
+      "archive": "qa-recovered-19.zip",
+      "sha256": "2306399742a0943610916ca1b32c56034d90faa07dfaebffca7c6daca20b2ca4",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-wood-0-320.png",
+      "entry": "nicheandglow-final-fragranceProfile-wood-0-320.webp",
+      "archive": "qa-recovered-19.zip",
+      "sha256": "f6e91f820b9624b4ae45cc1dbbc4c38069bccc8db61a31a10153270b9a3d5d99",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-wood-0-390.png",
+      "entry": "nicheandglow-final-fragranceProfile-wood-0-390.webp",
+      "archive": "qa-recovered-19.zip",
+      "sha256": "e7118e513d56ba4963169a39732757c620c96e6cda73c709317c696fc5b9255b",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-wood-1-1280.png",
+      "entry": "nicheandglow-final-fragranceProfile-wood-1-1280.webp",
+      "archive": "qa-recovered-20.zip",
+      "sha256": "486a2a401bf2b6002a947303f157c6660ff89432b49e7889bec09809705db44f",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-wood-1-320.png",
+      "entry": "nicheandglow-final-fragranceProfile-wood-1-320.webp",
+      "archive": "qa-recovered-20.zip",
+      "sha256": "d5018242672cbdfcfe2dcccf2a971f9eeaaff6d221fb4f1aa1510adf50e7e2f5",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-final-fragranceProfile-wood-1-390.png",
+      "entry": "nicheandglow-final-fragranceProfile-wood-1-390.webp",
+      "archive": "qa-recovered-20.zip",
+      "sha256": "f17c9ce308c3305f460fd0c5d7078bdfef5a26b2880c099a9c8b6f20ccf2677e",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-hover-1280.png",
+      "entry": "nicheandglow-hover-1280.webp",
+      "archive": "qa-recovered-20.zip",
+      "sha256": "02061278d4abbfeaeffcb72ad1e056e1797f361751035044e7aa9e938bb27bb1",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-hover-320.png",
+      "entry": "nicheandglow-hover-320.webp",
+      "archive": "qa-recovered-21.zip",
+      "sha256": "36214dd34732211a7cb68f52d22b594de9d97d8bf233126ac0dc836ba63b4f50",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-hover-390.png",
+      "entry": "nicheandglow-hover-390.webp",
+      "archive": "qa-recovered-21.zip",
+      "sha256": "4fc9190c7bb80d4b512bdbb6fd9b3e9db9e35de341d5182150e6e74b21edb125",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-offer-final-1280.png",
+      "entry": "nicheandglow-offer-final-1280.webp",
+      "archive": "qa-recovered-21.zip",
+      "sha256": "760d508b5cde9692a880d7f36aef80ccb7cf5f79fb0285519237acc5af344d8d",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-offer-final-320.png",
+      "entry": "nicheandglow-offer-final-320.webp",
+      "archive": "qa-recovered-21.zip",
+      "sha256": "d9ebe4cd275592d215e10e5c7f2d4a8d6598e4cfdedcafe896ad10e5684caefb",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-offer-final-390.png",
+      "entry": "nicheandglow-offer-final-390.webp",
+      "archive": "qa-recovered-21.zip",
+      "sha256": "731cbea883c4f932da6d1744bdccbfb156ed8b5a50cac914a3740f937e0ebd31",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-crispy-1280.png",
+      "entry": "nicheandglow-result-crispy-1280.webp",
+      "archive": "qa-recovered-21.zip",
+      "sha256": "c815d5e2dadc891a3a6ea850d6221bdeb4da6503a01136570c54cc2886087ec8",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-crispy-320.png",
+      "entry": "nicheandglow-result-crispy-320.webp",
+      "archive": "qa-recovered-22.zip",
+      "sha256": "6c8ccd664df9625844f446c62cd505a071ce04119f2f07d5661a4b6e481887f3",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-crispy-390.png",
+      "entry": "nicheandglow-result-crispy-390.webp",
+      "archive": "qa-recovered-22.zip",
+      "sha256": "a2e9106ddf0d0a16755b7cc09e13ce66cb4b4135bb10d975a31f0cca327401d9",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-croissant-1280.png",
+      "entry": "nicheandglow-result-croissant-1280.webp",
+      "archive": "qa-recovered-22.zip",
+      "sha256": "7efea76081aedb2e9da8de7fc37e3f2a19bf0a429b9b12cf796987496cf8ca85",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-croissant-320.png",
+      "entry": "nicheandglow-result-croissant-320.webp",
+      "archive": "qa-recovered-22.zip",
+      "sha256": "d899149b7040a3d5f9f69b537dab0afbf25cb8f59926edab995d0b6740f8306b",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-croissant-390.png",
+      "entry": "nicheandglow-result-croissant-390.webp",
+      "archive": "qa-recovered-22.zip",
+      "sha256": "5bc65e01f1c362be272856ad779cc862419e25bbae2c00d5855de896e54b97da",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-float-1280.png",
+      "entry": "nicheandglow-result-float-1280.webp",
+      "archive": "qa-recovered-22.zip",
+      "sha256": "58d4587746a5f55da7098e9e5b12f7e03fd90ee26b3cdb1d0b6b32d0b0aef83b",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-float-320.png",
+      "entry": "nicheandglow-result-float-320.webp",
+      "archive": "qa-recovered-22.zip",
+      "sha256": "3bfdb1869c2fa6d5dcfded1d58bd609cdbb4c95a254823d874b02edf9e74f67c",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-float-390.png",
+      "entry": "nicheandglow-result-float-390.webp",
+      "archive": "qa-recovered-23.zip",
+      "sha256": "c544a644ad6dfaaa80c10dcb21c0147a3fbf10bfb9ca41a6350c4a6c01ec833e",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-ground-1280.png",
+      "entry": "nicheandglow-result-ground-1280.webp",
+      "archive": "qa-recovered-23.zip",
+      "sha256": "75b042d7a39064fb32deb81bca5d8760cdf96dc3dfc9aa9adca508d42dafffa9",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-ground-320.png",
+      "entry": "nicheandglow-result-ground-320.webp",
+      "archive": "qa-recovered-23.zip",
+      "sha256": "3f1184df7f13647f166f88aeedf0d4f167862c2a733f9b6d676df097c6890f4d",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-ground-390.png",
+      "entry": "nicheandglow-result-ground-390.webp",
+      "archive": "qa-recovered-23.zip",
+      "sha256": "b67c13892a91040e043e2a9b6b4d96e2e15b09b8dec2eba50009a174792c4a22",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-helenist-1280.png",
+      "entry": "nicheandglow-result-helenist-1280.webp",
+      "archive": "qa-recovered-23.zip",
+      "sha256": "929a2e1a4ce4246af34a779b20428e9082352f6e949d685ac8fd51ceb8a92b4d",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-helenist-320.png",
+      "entry": "nicheandglow-result-helenist-320.webp",
+      "archive": "qa-recovered-23.zip",
+      "sha256": "c0ba16b567c6b47cdf0d06116ede9e1e49e5ba4b8aae64f448eeb3e81355838c",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-helenist-390.png",
+      "entry": "nicheandglow-result-helenist-390.webp",
+      "archive": "qa-recovered-23.zip",
+      "sha256": "adc0791639470353ce1b38dca4a06c3cfc137d03de1e42a375a51d30e59619f8",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-matcha-1280.png",
+      "entry": "nicheandglow-result-matcha-1280.webp",
+      "archive": "qa-recovered-24.zip",
+      "sha256": "a2d1ae119f856f55de15e875a3c849c4873c1fe6d91ffab4b076ed6bcd927fde",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-matcha-320.png",
+      "entry": "nicheandglow-result-matcha-320.webp",
+      "archive": "qa-recovered-24.zip",
+      "sha256": "56cd0663d7f617ca0b2e37b763a3209d61b3966ed5cf92005a3c565421959404",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-matcha-390.png",
+      "entry": "nicheandglow-result-matcha-390.webp",
+      "archive": "qa-recovered-24.zip",
+      "sha256": "d92f40ea64a14dc00db9bb7c0804cae92045ec6166d6658f11c8199fd837fb46",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-mio-1280.png",
+      "entry": "nicheandglow-result-mio-1280.webp",
+      "archive": "qa-recovered-24.zip",
+      "sha256": "5711fd7ebfd6192b2b10d5f4d0db36ef7c3b20c47f75a736c864cf61a760f2ce",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-mio-320.png",
+      "entry": "nicheandglow-result-mio-320.webp",
+      "archive": "qa-recovered-24.zip",
+      "sha256": "a1cbec1567bd2498864353e67aaaf58e67c4efca7b0f24bccd07fb8d3fe5cf62",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-mio-390.png",
+      "entry": "nicheandglow-result-mio-390.webp",
+      "archive": "qa-recovered-24.zip",
+      "sha256": "724d89db6a9efe798e8f6b7f92c49c3812937b915579e692803ff66b2625ec53",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-nectarina-1280.png",
+      "entry": "nicheandglow-result-nectarina-1280.webp",
+      "archive": "qa-recovered-24.zip",
+      "sha256": "d72f18ac2ae001f547677bb9cec0eb71b27aadc4d286fefe0118aa6f5ce28091",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-nectarina-320.png",
+      "entry": "nicheandglow-result-nectarina-320.webp",
+      "archive": "qa-recovered-25.zip",
+      "sha256": "a73c310d31f7014f889ba086f4d20e7fcbe349d392fb822c18adf4481c168686",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-nectarina-390.png",
+      "entry": "nicheandglow-result-nectarina-390.webp",
+      "archive": "qa-recovered-25.zip",
+      "sha256": "3cf1a8d4f9b41d1a39c1427e97e6deda648aa1dca9220f4192c907986a5f5fd3",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-pivoine-1280.png",
+      "entry": "nicheandglow-result-pivoine-1280.webp",
+      "archive": "qa-recovered-25.zip",
+      "sha256": "932c2935ece7838f6ab04b80c422ee8dc5b24b178aeafb754bf81eb042ec5198",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-pivoine-320.png",
+      "entry": "nicheandglow-result-pivoine-320.webp",
+      "archive": "qa-recovered-25.zip",
+      "sha256": "e7aa35554486697bfc95b7db14ef28017de9767b28538946a22fc6f8e490289b",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-pivoine-390.png",
+      "entry": "nicheandglow-result-pivoine-390.webp",
+      "archive": "qa-recovered-25.zip",
+      "sha256": "895f66631f935dbc82fd1d1ec08358fb113cf9897f07241cb505a809d2a59ec4",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-santalist-1280.png",
+      "entry": "nicheandglow-result-santalist-1280.webp",
+      "archive": "qa-recovered-25.zip",
+      "sha256": "f1e64203bf7d9a2d80ed637c513b84e395e1ba6abeece7c68f8e44a01ca0f84d",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-santalist-320.png",
+      "entry": "nicheandglow-result-santalist-320.webp",
+      "archive": "qa-recovered-25.zip",
+      "sha256": "da2abd7bf3b810553ed2dee352f9428e53ce59cba8b021dd484598cab956c8e2",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-santalist-390.png",
+      "entry": "nicheandglow-result-santalist-390.webp",
+      "archive": "qa-recovered-25.zip",
+      "sha256": "0cb244b13593cd78e3dd5c6c7a62dc28418902d13850ebe19a427d26d26fc77a",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-skin-fetish-1280.png",
+      "entry": "nicheandglow-result-skin-fetish-1280.webp",
+      "archive": "qa-recovered-26.zip",
+      "sha256": "cc4d170adc3d685607f18e250272f7b86d0a62305959f27152d0549a4b8b474c",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-skin-fetish-320.png",
+      "entry": "nicheandglow-result-skin-fetish-320.webp",
+      "archive": "qa-recovered-26.zip",
+      "sha256": "975347389622ea4dc14e340aaca7804f3224c4975d687db3a0fbdf2e6460b8be",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-skin-fetish-390.png",
+      "entry": "nicheandglow-result-skin-fetish-390.webp",
+      "archive": "qa-recovered-26.zip",
+      "sha256": "9b39d603071af06ce18817c37d977ebad3cebc4239ddbe262ec6f0d7590d3c30",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-vetiver-1280.png",
+      "entry": "nicheandglow-result-vetiver-1280.webp",
+      "archive": "qa-recovered-26.zip",
+      "sha256": "0ccd4e885f375a0aa81d7e1e596dd47711c8dd13f9c945d9882aee5874b3ce63",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-vetiver-320.png",
+      "entry": "nicheandglow-result-vetiver-320.webp",
+      "archive": "qa-recovered-26.zip",
+      "sha256": "9ce7ebbeae64d19cbf406a526640009205e6b729ff5b3f0fbe41b9cfe3e4f94e",
+      "scope": "preserved-previous-local"
+    },
+    {
+      "source": "nicheandglow-result-vetiver-390.png",
+      "entry": "nicheandglow-result-vetiver-390.webp",
+      "archive": "qa-recovered-26.zip",
+      "sha256": "be3c996a181dab915e612a300018db12b5eb2cf742badb8286c60f858c560719",
+      "scope": "preserved-previous-local"
+    }
+  ],
+  "archives": [
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-01.zip",
+      "bytes": 202006,
+      "sha256": "2c1da1f0d866723cfcad91d75d40eeb7477fbed5fde1232fd8803daed36f6b59"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-02.zip",
+      "bytes": 191689,
+      "sha256": "46bee713b2214c994840ca93be9cf69ae08e6ec843f9b72a1542730cce799e89"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-03.zip",
+      "bytes": 193239,
+      "sha256": "03e65c7e86d3020d48366b64c712693a3ee546dc5dfcef4fd84cc145c55e0a29"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-04.zip",
+      "bytes": 191610,
+      "sha256": "3998956fc1d079fc5d25dfe7d575e0943f293451bb4ae10114340a43a21e1d59"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-05.zip",
+      "bytes": 187487,
+      "sha256": "d10db93abbf9ede3c9d7731417518497b61468cb57bd98eb8cd8506cb73acddc"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-06.zip",
+      "bytes": 144166,
+      "sha256": "50405ae2964419224194ae8799b71efd521c21837a36f6170523b20ecca1e971"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-07.zip",
+      "bytes": 186417,
+      "sha256": "94f060d6149090a04c9a51108ee444afad5d0f730b3a70a886fe8197a60472d9"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-08.zip",
+      "bytes": 162908,
+      "sha256": "df3153465cb35ae3eef8f3f21ad4880e96db996683297d6aaeff9a2e46c05769"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-09.zip",
+      "bytes": 178377,
+      "sha256": "daf01e56de0c9be8d8872440730839e69b27007c811ac65f5d19767b7ff23d8f"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-10.zip",
+      "bytes": 175422,
+      "sha256": "0fba0a9735eab2b19971bfaa5ba528079fe96720b80ddaf1c6b026b1e062e7e7"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-11.zip",
+      "bytes": 179314,
+      "sha256": "7d3dfef2104a0d06931017165bb2c2a875f4acbf6c027cf002888fc341ed82ca"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-12.zip",
+      "bytes": 172642,
+      "sha256": "031aa0410495dc0b89cfdca097a774c5a6666a5735b8b6571d3aa72e53994399"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-13.zip",
+      "bytes": 177892,
+      "sha256": "42d800386bb7238ef7320d93b0a2fc661c0ab53a468f12999128aff9f43053b0"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-14.zip",
+      "bytes": 201271,
+      "sha256": "2265bdc96ec9e8e343e47d17d5c1b5913731854b65ea3476d39b1d8371dd3976"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-15.zip",
+      "bytes": 192060,
+      "sha256": "267d8a0d7dca5bca81327ba7404aaace046b9c1cd09053b52d370766bd9b112d"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-16.zip",
+      "bytes": 182575,
+      "sha256": "252a3610ef473e292b5466ff800f47759f6151fdf63b61c6c2ee7db1236ea60a"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-17.zip",
+      "bytes": 166203,
+      "sha256": "2b4967368d7631f67c2ebfe5a51d027323992644a1c257ec4bfe9aeb0931e317"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-18.zip",
+      "bytes": 180314,
+      "sha256": "cd65c05314b62e68c7f150556d8f8e13cb9dab4b2fc402735eedf5ee57c59bb3"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-19.zip",
+      "bytes": 198400,
+      "sha256": "e1bc25ec410e5f1d2c732194af4bb57d92d82298057e74979daf50e5c247401a"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-20.zip",
+      "bytes": 166375,
+      "sha256": "46a9abe5300d70c7102ba5ec7311b25ce4746a60096335bc1e52856292e179b6"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-21.zip",
+      "bytes": 199129,
+      "sha256": "61245be408c7bd1f48d1c1a6926bcb670ea9be492878faf1f8a98bebc121f9d2"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-22.zip",
+      "bytes": 185465,
+      "sha256": "74b514d8d1877397b31cf3db97d61d5a15b2b272a9e8a4e014471a46ff523398"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-23.zip",
+      "bytes": 180522,
+      "sha256": "d800d5f81f9b87d210d4fa06d0993c61d27ae991b821ed45886408df4ee7cf99"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-24.zip",
+      "bytes": 201587,
+      "sha256": "338cb201b1620f5b9734185502f0e44150605791664fb7adc2b58ce7fd52daf7"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-25.zip",
+      "bytes": 203595,
+      "sha256": "50aa639604891e986d0beb747ba3329ec617d1e00a4e9dbb91b4a4a681145db8"
+    },
+    {
+      "path": "n447/s5/dokazy/perfume-worker/qa-recovered-26.zip",
+      "bytes": 159333,
+      "sha256": "6998e05537e60f37b6acdabe80d859d1bfe9299b1d9be129378cdbffbc874514"
+    }
+  ]
+}

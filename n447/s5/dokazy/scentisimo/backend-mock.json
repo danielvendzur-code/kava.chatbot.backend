@@ -1,0 +1,33 @@
+{
+  "paidCalls": 0,
+  "mockCalls": 3,
+  "rows": [
+    {
+      "slug": "scentisimo",
+      "query": "Frézie a kosatec",
+      "ids": [
+        "eau-de-la-couronne"
+      ],
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "slug": "scentisimo",
+      "query": "Máta a meloun",
+      "ids": [
+        "menta-sui-navigli"
+      ],
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "slug": "scentisimo",
+      "query": "Mandle a oud",
+      "ids": [
+        "oud-himalayen"
+      ],
+      "status": 200,
+      "exactUrlAndPrice": true
+    }
+  ]
+}

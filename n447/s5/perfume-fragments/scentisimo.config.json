@@ -1,0 +1,195 @@
+{
+  "slug": "scentisimo",
+  "series": "s5",
+  "segment": "fragrance",
+  "owner": "PERFUME_WORKER",
+  "status": "RESERVED_NOT_REGISTERED_ENGINE_PENDING",
+  "catalogue": "/catalogues/scentisimo.js",
+  "brand": {
+    "name": "Scentisimo",
+    "domain": "scentisimo.cz",
+    "website": "https://www.scentisimo.cz/",
+    "lang": "cs",
+    "theme": {
+      "brand": "#2f2921",
+      "accent": "#2f2921",
+      "soft": "#f7f4ee",
+      "paper": "#ffffff",
+      "ink": "#28231d",
+      "line": "#e6dfd2"
+    }
+  },
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "stepCopy": {
+    "fragranceDirection": [
+      "Jaké tóny chcete objevovat?",
+      "Vyberte podle doložených tónů."
+    ],
+    "fragranceProfile": [
+      "Které tóny vás lákají?",
+      "Vyberte jeden profil."
+    ]
+  },
+  "traitCopy": {
+    "fresh": {
+      "title": "Citrusy, máta nebo magnolie",
+      "note": "Citron s růží, máta s melounem nebo bergamot s magnolií."
+    },
+    "floral": {
+      "title": "Frézie, růže nebo bílé květy",
+      "note": "Frézie a kosatec, růže a fialka, neroli či jasmín s ylang-ylangem."
+    },
+    "gourmand": {
+      "title": "Vanilka, kokos nebo karamel",
+      "note": "Vanilka s kadidlem, malina s karamelem nebo kokos s frangipani."
+    },
+    "wood": {
+      "title": "Oud nebo koření",
+      "note": "Mandlově ovocný oud nebo kardamom, levandule a skořice."
+    },
+    "eau-de-la-couronne": {
+      "title": "Frézie a kosatec",
+      "note": "Frézie a kosatec s jablkem, rybízem a citronem."
+    },
+    "josephine": {
+      "title": "Růže a fialka",
+      "note": "Růže a fialka s červeným rybízem, vanilkovým květem a kadidlem."
+    },
+    "vanille-sauvage-de-madagascar": {
+      "title": "Vanilka, levandule a kadidlo",
+      "note": "Vanilka s levandulí, koriandrem, santalem a kadidlem."
+    },
+    "nuit-patchouli": {
+      "title": "Malina, pačuli a karamel",
+      "note": "Malina a vanilkový krém s pačuli, fialkou a karamelem."
+    },
+    "acqua-mirabile-odorosa-di-firenze": {
+      "title": "Citron, bergamot a růže",
+      "note": "Citron a bergamot s růží, jasmínem, fialkou a vetiverem."
+    },
+    "frangipane-e-cocco": {
+      "title": "Frangipani a kokos",
+      "note": "Květy frangipani a tahitský kokos s pomerančem, rýží a pačuli."
+    },
+    "boheme": {
+      "title": "Neroli, kosatec a mléko",
+      "note": "Neroli a kosatec s květem pomeranče, mlékem a santalem."
+    },
+    "oud-himalayen": {
+      "title": "Mandle, malina a oud",
+      "note": "Mandle a malina s cedrem, santalem, oudem a vanilkou."
+    },
+    "golden-age": {
+      "title": "Ananas, jasmín a ylang-ylang",
+      "note": "Ananas a pomeranč s jasmínem, ylang-ylangem, pačuli a vanilkou."
+    },
+    "body-mist-sea-mist": {
+      "title": "Bergamot, citron a magnolie",
+      "note": "Tělová mlha s bergamotem, citronem, magnolií a dřevitým základem."
+    },
+    "menta-sui-navigli": {
+      "title": "Máta, malina a meloun",
+      "note": "Vůně na tělo a vlasy s mátovými listy, malinami a vodním melounem."
+    },
+    "le-roi-empereur": {
+      "title": "Kardamom, levandule a skořice",
+      "note": "Kardamom a levandule s růží, skořicovou kůrou, vanilkou a bílým pižmem."
+    }
+  },
+  "quickChips": [
+    "Frézie a kosatec",
+    "Máta a meloun",
+    "Mandle a oud",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Frézie a kosatec",
+      "productIds": [
+        "eau-de-la-couronne"
+      ]
+    },
+    {
+      "chip": "Máta a meloun",
+      "productIds": [
+        "menta-sui-navigli"
+      ]
+    },
+    {
+      "chip": "Mandle a oud",
+      "productIds": [
+        "oud-himalayen"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "eau-de-la-couronne",
+    "menta-sui-navigli"
+  ],
+  "addon": null,
+  "addonReason": "No source-verified complementary routine role; no forced second perfume.",
+  "budgetQuestion": false,
+  "introAfterIntegrationOnly": "Vyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.",
+  "sceneStatus": "STATIC_MAP_REVIEWED_UI_QA_PENDING",
+  "logoStatus": "OFFICIAL_WORDMARK_AND_SQUARE_FAVICON_REVIEWED_UI_PENDING",
+  "enableRuntime": false,
+  "liveEligibilityEvidence": "/n447/s5/dokazy/perfume-worker/coordinator-live-eligibility.json",
+  "logos": {
+    "landing": "/assets/s5/nicheandglow/logo.webp",
+    "header": "/assets/s5/nicheandglow/logo.webp",
+    "avatar": "/assets/s5/nicheandglow/logo.webp"
+  },
+  "compareFocus": true,
+  "avatarSurfaceRequirement": "Official logo on dark, contrasting surface; verify actual 40px avatar. No logo filter or crop assumed.",
+  "merchantVariantCtaRequirement": "Show exact pack/price and canonical product link; do not claim a query parameter preselects a variant.",
+  "choicePhotos": {
+    "fresh": [
+      "/assets/s3/scenes-k2/citrus.jpg"
+    ],
+    "floral": [
+      "/assets/s3/scenes-k2/rose.jpg"
+    ],
+    "gourmand": [
+      "/assets/s3/scenes-k2/vanilla.jpg"
+    ],
+    "wood": [
+      "/assets/s3/scenes-k2/cinnamon.jpg"
+    ],
+    "eau-de-la-couronne": [
+      "/assets/s5/scentisimo/eau-de-la-couronne.webp"
+    ],
+    "josephine": [
+      "/assets/s3/scenes-k2/rose.jpg"
+    ],
+    "boheme": [
+      "/assets/s3/scenes-k2/neroli-blossom.jpg"
+    ],
+    "golden-age": [
+      "/assets/s3/scenes-k2/jasmine.jpg"
+    ],
+    "acqua-mirabile-odorosa-di-firenze": [
+      "/assets/s3/scenes-k2/lemon-tree.jpg"
+    ],
+    "body-mist-sea-mist": [
+      "/assets/s5/scentisimo/body-mist-sea-mist.webp"
+    ],
+    "menta-sui-navigli": [
+      "/assets/s3/scenes-k2/mint-herbs.jpg"
+    ],
+    "vanille-sauvage-de-madagascar": [
+      "/assets/s3/scenes-k2/lavender.jpg"
+    ],
+    "nuit-patchouli": [
+      "/assets/s3/scenes-k2/raspberries.jpg"
+    ],
+    "frangipane-e-cocco": [
+      "/assets/s3/scenes-k2/coconut.jpg"
+    ],
+    "oud-himalayen": [
+      "/assets/s3/scenes-k2/almonds.jpg"
+    ],
+    "le-roi-empereur": [
+      "/assets/s3/scenes-k2/cinnamon.jpg"
+    ]
+  }
+}

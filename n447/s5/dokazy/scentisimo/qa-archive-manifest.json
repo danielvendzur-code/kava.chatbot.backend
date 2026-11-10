@@ -1,0 +1,530 @@
+{
+  "createdAt": "2026-11-10T18:52:42.715017+00:00",
+  "scope": "Recovered baseline screenshots plus actual recaptured chat cards; Scentisimo current local integrated QA. Archives excluded from Vercel. Original lost full live raw report is not reconstructed or claimed recovered.",
+  "files": [
+    {
+      "source": "scentisimo-chat-final-1280.png",
+      "entry": "scentisimo-chat-final-1280.webp",
+      "archive": "qa-local-01.zip",
+      "sha256": "41068f344488051cb08083781edd89a52aea481396524ce37e26623077118423",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-chat-final-320.png",
+      "entry": "scentisimo-chat-final-320.webp",
+      "archive": "qa-local-01.zip",
+      "sha256": "2a7c601407b9be972bf13db89b2010ed29b6494b744846f24c7137fd4f6a5d39",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-chat-final-390.png",
+      "entry": "scentisimo-chat-final-390.webp",
+      "archive": "qa-local-01.zip",
+      "sha256": "1cb9891499a8864ce0f7ade98ea3214c2d1d5eef05161fbe18faf81b69426ff1",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-chat-pending-final-1280.png",
+      "entry": "scentisimo-chat-pending-final-1280.webp",
+      "archive": "qa-local-01.zip",
+      "sha256": "b0b003850c66d551e6ea7ce72ba8b5e03c0233eaba5fd413401e6c214c1ca15e",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-chat-pending-final-320.png",
+      "entry": "scentisimo-chat-pending-final-320.webp",
+      "archive": "qa-local-01.zip",
+      "sha256": "3cca734994c273b7d41a78b9980bdebacf78286329b58a03ee6c2fee8aaed687",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-chat-pending-final-390.png",
+      "entry": "scentisimo-chat-pending-final-390.webp",
+      "archive": "qa-local-01.zip",
+      "sha256": "d648b5bfe2ef2da928fde5ea04a7ae0843fcfdee3422ab94fe0eb6f12538e8a4",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-compare-1280.png",
+      "entry": "scentisimo-compare-1280.webp",
+      "archive": "qa-local-01.zip",
+      "sha256": "8624e5fabaf041eb454ef0e5ee8da92bf8671c327e5246fdcec44439093aac1b",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-compare-320.png",
+      "entry": "scentisimo-compare-320.webp",
+      "archive": "qa-local-01.zip",
+      "sha256": "037d822600d6cb45cb645a4f50a119c0e419feb54353cf2dfcaaf2d4a83adc80",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-compare-390.png",
+      "entry": "scentisimo-compare-390.webp",
+      "archive": "qa-local-02.zip",
+      "sha256": "578ebd125cbf3444f78edb3c3865118353abd9b7a2f9984ba339417b6ff28357",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceDirection--0-1280.png",
+      "entry": "scentisimo-final-fragranceDirection--0-1280.webp",
+      "archive": "qa-local-02.zip",
+      "sha256": "fcf8897449b0fd69919a0a647dfe5d82b6452882891ee50c737c96ed4cf32131",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceDirection--0-320.png",
+      "entry": "scentisimo-final-fragranceDirection--0-320.webp",
+      "archive": "qa-local-02.zip",
+      "sha256": "954aff9546a4423ad38b90c0bb2b6347d505d6d862ac673e4fa2f2f452a787e4",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceDirection--0-390.png",
+      "entry": "scentisimo-final-fragranceDirection--0-390.webp",
+      "archive": "qa-local-02.zip",
+      "sha256": "706494989cb7082f88d8796bf6bdca799563bbc768197c8aa5cbd35f51c9d628",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceProfile-floral-0-1280.png",
+      "entry": "scentisimo-final-fragranceProfile-floral-0-1280.webp",
+      "archive": "qa-local-03.zip",
+      "sha256": "60b146b4ed6979a694078a974dbb859517afade54d61e0d3f9eb0339334b51c1",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceProfile-floral-0-320.png",
+      "entry": "scentisimo-final-fragranceProfile-floral-0-320.webp",
+      "archive": "qa-local-03.zip",
+      "sha256": "9f4063de0c2c77e0bd3623a7a7303e2e230b5b1d9fb1325cbd5b7894ece56605",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceProfile-floral-0-390.png",
+      "entry": "scentisimo-final-fragranceProfile-floral-0-390.webp",
+      "archive": "qa-local-03.zip",
+      "sha256": "eae6903ef41b08d9e62eae940566155d5f49ac0d086ec9344a20432b8e09507e",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceProfile-fresh-0-1280.png",
+      "entry": "scentisimo-final-fragranceProfile-fresh-0-1280.webp",
+      "archive": "qa-local-03.zip",
+      "sha256": "1acd1c58fbf002addfee4e97e8bd03cf12ddcb18fb5cc999e0597e0c0ae5d15b",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceProfile-fresh-0-320.png",
+      "entry": "scentisimo-final-fragranceProfile-fresh-0-320.webp",
+      "archive": "qa-local-04.zip",
+      "sha256": "ca2eb5ab9da532eccbb37c33849648ed96b2e8c2a4abeabd6084ae408d6158db",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceProfile-fresh-0-390.png",
+      "entry": "scentisimo-final-fragranceProfile-fresh-0-390.webp",
+      "archive": "qa-local-04.zip",
+      "sha256": "32d5f87765818f3a4069b985ac9a441e7094f2466c265e1c13618f77bfb4db7d",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceProfile-gourmand-0-1280.png",
+      "entry": "scentisimo-final-fragranceProfile-gourmand-0-1280.webp",
+      "archive": "qa-local-04.zip",
+      "sha256": "aeae73a45007b5103c13df89ebd72793cd7f74962c48719676fbd9fd79a6b1c7",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceProfile-gourmand-0-320.png",
+      "entry": "scentisimo-final-fragranceProfile-gourmand-0-320.webp",
+      "archive": "qa-local-04.zip",
+      "sha256": "c958c9860c0569980ee6bf9d7a9097284495a1143345b59ac0e3fad62281b133",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceProfile-gourmand-0-390.png",
+      "entry": "scentisimo-final-fragranceProfile-gourmand-0-390.webp",
+      "archive": "qa-local-05.zip",
+      "sha256": "3e24794987601fbfd65b2e573cb7f0645249143913d84e5818e867905784d841",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceProfile-wood-0-1280.png",
+      "entry": "scentisimo-final-fragranceProfile-wood-0-1280.webp",
+      "archive": "qa-local-05.zip",
+      "sha256": "83deac099f84c86087a099233f49e7887363a7ac07371fc525eb514ceca6c4a0",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceProfile-wood-0-320.png",
+      "entry": "scentisimo-final-fragranceProfile-wood-0-320.webp",
+      "archive": "qa-local-05.zip",
+      "sha256": "aa058d9afd84a1357ed7181c72c37ffbb218aacce71e7ce1f0d0b879f06aeb05",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-final-fragranceProfile-wood-0-390.png",
+      "entry": "scentisimo-final-fragranceProfile-wood-0-390.webp",
+      "archive": "qa-local-05.zip",
+      "sha256": "83778b4f4fb5513b0552a0c23990d2c2d04315b081b2d3a1bd71069ceccd049a",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-hover-1280.png",
+      "entry": "scentisimo-hover-1280.webp",
+      "archive": "qa-local-06.zip",
+      "sha256": "a1e9f53160ed1ed948658a24e9045374f5c28a6694636e0ef03abd2c4641759c",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-hover-320.png",
+      "entry": "scentisimo-hover-320.webp",
+      "archive": "qa-local-06.zip",
+      "sha256": "375b452e1e35ddf6b6fca437dc0da4c97c160928b1778c1989971bfec73826c1",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-hover-390.png",
+      "entry": "scentisimo-hover-390.webp",
+      "archive": "qa-local-06.zip",
+      "sha256": "1b2f1a9c130ff72ba11e9b9bd987036b359dc56aeb2015302d6d384a8098dd3e",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-offer-final-1280.png",
+      "entry": "scentisimo-offer-final-1280.webp",
+      "archive": "qa-local-06.zip",
+      "sha256": "cc3dbcc56f0f36e5b467b8a54bfe53fd8d068b6f964e0bbceb9f12afdaf4ad9d",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-offer-final-320.png",
+      "entry": "scentisimo-offer-final-320.webp",
+      "archive": "qa-local-07.zip",
+      "sha256": "71a66cb7231291d47efdbdfd764b4028ba373359b9fc78f80d54b484c066a0c4",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-offer-final-390.png",
+      "entry": "scentisimo-offer-final-390.webp",
+      "archive": "qa-local-07.zip",
+      "sha256": "1cb5229468760c99f7656c9b10881a24b42ae5f3e7136dca17411716dbdfcfbc",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-acqua-mirabile-odorosa-di-firenze-1280.png",
+      "entry": "scentisimo-result-acqua-mirabile-odorosa-di-firenze-1280.webp",
+      "archive": "qa-local-07.zip",
+      "sha256": "80b97ac2af0d6f24c1812a4b2d462d9ebb6d29de25fcb6dff1994dd1056a43a6",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-acqua-mirabile-odorosa-di-firenze-320.png",
+      "entry": "scentisimo-result-acqua-mirabile-odorosa-di-firenze-320.webp",
+      "archive": "qa-local-07.zip",
+      "sha256": "e6fe55f082551579cda879b73057a680fe970f9dc33c217991d838f394e9dec0",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-acqua-mirabile-odorosa-di-firenze-390.png",
+      "entry": "scentisimo-result-acqua-mirabile-odorosa-di-firenze-390.webp",
+      "archive": "qa-local-07.zip",
+      "sha256": "f054f34050597b3d5e891b702c6cf3a903890602ef5857c6b29a2633a496ebbb",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-body-mist-sea-mist-1280.png",
+      "entry": "scentisimo-result-body-mist-sea-mist-1280.webp",
+      "archive": "qa-local-07.zip",
+      "sha256": "a7b281e6dce361023dd22ba7a0826758343d8c62de958b56a44fafcef0917dce",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-body-mist-sea-mist-320.png",
+      "entry": "scentisimo-result-body-mist-sea-mist-320.webp",
+      "archive": "qa-local-07.zip",
+      "sha256": "3fcca2c11fa940fad071d47d2a714b303323ca5e39e72bc379b0b8e04fa79df4",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-body-mist-sea-mist-390.png",
+      "entry": "scentisimo-result-body-mist-sea-mist-390.webp",
+      "archive": "qa-local-08.zip",
+      "sha256": "f7f7825f2862751556c92e100c4d9b05adfbcb6de94e4b3a90e3c94fda84815d",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-boheme-1280.png",
+      "entry": "scentisimo-result-boheme-1280.webp",
+      "archive": "qa-local-08.zip",
+      "sha256": "b188da543ed0f5d3b3c2700f3f008c60f935cbf45b3997eeef8fb08e9d130aa7",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-boheme-320.png",
+      "entry": "scentisimo-result-boheme-320.webp",
+      "archive": "qa-local-08.zip",
+      "sha256": "d62a653d461ec40875ebaf659e9ddbd10aeea7c63a6a661521feebfb52559913",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-boheme-390.png",
+      "entry": "scentisimo-result-boheme-390.webp",
+      "archive": "qa-local-08.zip",
+      "sha256": "84c804048a0929bc6b089725f52529112536404a29a496a36a438bd94f4a8c44",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-eau-de-la-couronne-1280.png",
+      "entry": "scentisimo-result-eau-de-la-couronne-1280.webp",
+      "archive": "qa-local-08.zip",
+      "sha256": "369ea7f1bf0ad7f1b77a69a9322f380e8c6208ec4a27a62cb7e01fc7cca0a8c8",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-eau-de-la-couronne-320.png",
+      "entry": "scentisimo-result-eau-de-la-couronne-320.webp",
+      "archive": "qa-local-08.zip",
+      "sha256": "cd0c0b0ffc64dcb1b7ac996915c02df1cd0f5e02115e6024ca7413fa55dce0c1",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-eau-de-la-couronne-390.png",
+      "entry": "scentisimo-result-eau-de-la-couronne-390.webp",
+      "archive": "qa-local-08.zip",
+      "sha256": "4018ea9d65f3b0e996d807ba737037fd5500ca748020920aa299c06e2a4c756e",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-frangipane-e-cocco-1280.png",
+      "entry": "scentisimo-result-frangipane-e-cocco-1280.webp",
+      "archive": "qa-local-09.zip",
+      "sha256": "4226ba3938f63c0301283c2968dac693b734a96582b13dbd2cd850d1263d2580",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-frangipane-e-cocco-320.png",
+      "entry": "scentisimo-result-frangipane-e-cocco-320.webp",
+      "archive": "qa-local-09.zip",
+      "sha256": "1511b13481208bc38b1322267e1b8c18f5be61bd9d3e38b0ce7a8c735a8432cb",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-frangipane-e-cocco-390.png",
+      "entry": "scentisimo-result-frangipane-e-cocco-390.webp",
+      "archive": "qa-local-09.zip",
+      "sha256": "dad4419a0027b74272298444de365f2d4c2aaf99aff740b7331e762062b51ec5",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-golden-age-1280.png",
+      "entry": "scentisimo-result-golden-age-1280.webp",
+      "archive": "qa-local-09.zip",
+      "sha256": "d82938d19c4e5dcbc7e376440f79ecf976f33d6756d55697358982c4b572b37d",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-golden-age-320.png",
+      "entry": "scentisimo-result-golden-age-320.webp",
+      "archive": "qa-local-09.zip",
+      "sha256": "e81c7f93a0cc1e065ed8ce25f137a548e393420d26428c2e36970c8f3bd153ee",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-golden-age-390.png",
+      "entry": "scentisimo-result-golden-age-390.webp",
+      "archive": "qa-local-09.zip",
+      "sha256": "8879fd2f15caa3db1b4b5a0f94129ac85ae99d522b8a65843dd6e7bb39f3fea6",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-josephine-1280.png",
+      "entry": "scentisimo-result-josephine-1280.webp",
+      "archive": "qa-local-09.zip",
+      "sha256": "8e50712d9f37a2f6cc5330657c1fc0f91b6e9c082bc20c3656ab50ec83243f05",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-josephine-320.png",
+      "entry": "scentisimo-result-josephine-320.webp",
+      "archive": "qa-local-10.zip",
+      "sha256": "5969e2bf38e45f844d677ad0dcd16c18579a4f456db46de21b85849ad0c3ff33",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-josephine-390.png",
+      "entry": "scentisimo-result-josephine-390.webp",
+      "archive": "qa-local-10.zip",
+      "sha256": "6647329d883796ecec4eb46c6555aa03be5f92e254da61ecb9a0fd28dc0807d0",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-le-roi-empereur-1280.png",
+      "entry": "scentisimo-result-le-roi-empereur-1280.webp",
+      "archive": "qa-local-10.zip",
+      "sha256": "e2ae22384349c3546ef0780cba5b3be50c4bacd6cce823dda7e9a22cb662b28a",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-le-roi-empereur-320.png",
+      "entry": "scentisimo-result-le-roi-empereur-320.webp",
+      "archive": "qa-local-10.zip",
+      "sha256": "d975d66658333b674d0982823d40af4b4819e413275f83011ccc1c41aa827161",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-le-roi-empereur-390.png",
+      "entry": "scentisimo-result-le-roi-empereur-390.webp",
+      "archive": "qa-local-10.zip",
+      "sha256": "e077600a78700a263ec7835e9523a5d469b808b7d0ad1ad29f020e3a23723e1f",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-menta-sui-navigli-1280.png",
+      "entry": "scentisimo-result-menta-sui-navigli-1280.webp",
+      "archive": "qa-local-10.zip",
+      "sha256": "ec8d2c96d81e3adad40367d697ef20268165c0bf70f074d37cc0eef97958216a",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-menta-sui-navigli-320.png",
+      "entry": "scentisimo-result-menta-sui-navigli-320.webp",
+      "archive": "qa-local-10.zip",
+      "sha256": "a8f5d91188e757514201b91bf3793b7071a5f2a56e093698273bada733dda53b",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-menta-sui-navigli-390.png",
+      "entry": "scentisimo-result-menta-sui-navigli-390.webp",
+      "archive": "qa-local-11.zip",
+      "sha256": "6e60dc55fbb1b98d1490411f2c313e0cfe0d7207d7b5505eead33184316cd261",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-nuit-patchouli-1280.png",
+      "entry": "scentisimo-result-nuit-patchouli-1280.webp",
+      "archive": "qa-local-11.zip",
+      "sha256": "95a0daab8ba4f8a1da4606677a3088facfa7fec38b14dbc714df091c9ea427f9",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-nuit-patchouli-320.png",
+      "entry": "scentisimo-result-nuit-patchouli-320.webp",
+      "archive": "qa-local-11.zip",
+      "sha256": "0ba85e634f76807f923960fa6afdcaeb1d6627994c5f42bd9bab9ad43da5aa1b",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-nuit-patchouli-390.png",
+      "entry": "scentisimo-result-nuit-patchouli-390.webp",
+      "archive": "qa-local-11.zip",
+      "sha256": "01261f2e3b4a58ef5163713f06385871c3598c751a4c7098c3e187f148612343",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-oud-himalayen-1280.png",
+      "entry": "scentisimo-result-oud-himalayen-1280.webp",
+      "archive": "qa-local-11.zip",
+      "sha256": "721b7f8e704185d75a3f86e02d0622dd03c0d6e9de15df922ffe18912ac0c844",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-oud-himalayen-320.png",
+      "entry": "scentisimo-result-oud-himalayen-320.webp",
+      "archive": "qa-local-11.zip",
+      "sha256": "2e9697dc3a6d1792a9828f876425d914dd4a4f2a2920b6b7525ae2ca8f732914",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-oud-himalayen-390.png",
+      "entry": "scentisimo-result-oud-himalayen-390.webp",
+      "archive": "qa-local-11.zip",
+      "sha256": "6dbd38f53db4b1e8866dac8fd6a39350386d632b8f5a830255454d4d9133bac2",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-vanille-sauvage-de-madagascar-1280.png",
+      "entry": "scentisimo-result-vanille-sauvage-de-madagascar-1280.webp",
+      "archive": "qa-local-12.zip",
+      "sha256": "1b04d750a35537d62ccc43351ba97a155f355c06d596b8b6ab6f2c53f01db0c5",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-vanille-sauvage-de-madagascar-320.png",
+      "entry": "scentisimo-result-vanille-sauvage-de-madagascar-320.webp",
+      "archive": "qa-local-12.zip",
+      "sha256": "4562ceafb7ac724e27db799a56f3eb72be25523d832c9d8367ebf8bc97a26d74",
+      "scope": "current-scentisimo-local"
+    },
+    {
+      "source": "scentisimo-result-vanille-sauvage-de-madagascar-390.png",
+      "entry": "scentisimo-result-vanille-sauvage-de-madagascar-390.webp",
+      "archive": "qa-local-12.zip",
+      "sha256": "6b3da30c87d64176a6a1bc351e75204fc673858080280f73daf9a5359a939c7a",
+      "scope": "current-scentisimo-local"
+    }
+  ],
+  "archives": [
+    {
+      "path": "n447/s5/dokazy/scentisimo/qa-local-01.zip",
+      "bytes": 183728,
+      "sha256": "2fb060b2b4ef36217a2da3678833924416464692ebb8e9cbc04fefae66f603cc"
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo/qa-local-02.zip",
+      "bytes": 189689,
+      "sha256": "0c5e3168915f33205c6475270a27e31d63fb300d758230c4e780d0fb9e38f714"
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo/qa-local-03.zip",
+      "bytes": 189091,
+      "sha256": "cc489a55e60ababa8ce2092e880882dfcba5810b5480e6185395acfb16a18cfe"
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo/qa-local-04.zip",
+      "bytes": 171694,
+      "sha256": "b6c403031321d72e7c762d32f1db7a57a882de1b6e86ba9932c02083c70731a6"
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo/qa-local-05.zip",
+      "bytes": 157450,
+      "sha256": "a75cf29d5c71fb1cc1792c490c07e5c749b729bf747984216f10b7e1cf9cc660"
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo/qa-local-06.zip",
+      "bytes": 194354,
+      "sha256": "028144af3ff962e29b4e93ef4b98127889180cc19e0ec74c84e51a3b5e6f4233"
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo/qa-local-07.zip",
+      "bytes": 188287,
+      "sha256": "003740d8406f210881fb29ac6405659395c031aeea4f06041baee2d37a7649ba"
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo/qa-local-08.zip",
+      "bytes": 175807,
+      "sha256": "ac6af5eaa9f645b92067141fbbdf7847a03baa11f055d3b1d0b61348bf30113b"
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo/qa-local-09.zip",
+      "bytes": 203106,
+      "sha256": "b5b92df7d826ba0afce43c76821ca23c5ee2ca37ce2e050fd74a87595d5c3fec"
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo/qa-local-10.zip",
+      "bytes": 184831,
+      "sha256": "62d5bcd91739a0da742c52ee15b8791f7442843bcdb019e662c41dec5b166b5e"
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo/qa-local-11.zip",
+      "bytes": 174753,
+      "sha256": "7f456dbc4d70b6a9b6c86e9189e01532fd3d34e04e42e2513d544e253ca6bac3"
+    },
+    {
+      "path": "n447/s5/dokazy/scentisimo/qa-local-12.zip",
+      "bytes": 81312,
+      "sha256": "d29f1ed4dc7234cdc681ca03867862d096747be2e8832d17a5d1e5693d2e63c2"
+    }
+  ]
+}
