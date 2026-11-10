@@ -291,3 +291,15 @@ Lokálne: 24 výsledkov / 39 obrazoviek na 320/390/1280 px, 8/8 hlavných odpor�
 Vizuálna kontrola odhalila skrátený opis nočného krému pri voľbe a príliš všeobecné porovnanie sér. Krátky opis teraz jasne uvádza nočnú starostlivosť 50 ml od 30 rokov. Len pre Nafigate je porovnanie opt-in: namiesto rovnakého „všetky typy pleti“ ukazuje konkrétne zameranie z overeného opisu. Ceny a balenia zostávajú v tej istej karte. Následná cielená kontrola prešla na troch šírkach, nezmenený celý strom sa neopakoval. CSS zväčšuje iba biele okraje pôvodných packshotov; originály sa nemenili.
 
 Preview ešte nie je overený. E-mail NOT_READY, produkcia NOT_DEPLOYED. Ďalšia rezervácia: Boemi, Cosmetica Bohemica s.r.o. / 27888665, aj súvisiace SK zastúpenie boemikozmetika.sk / 47046635 skontrolované v 91 refs. Výrobca je iba historický kandidát, nie existujúca ukážka.
+
+
+## Ranná obnova 10. 11. – Nafigate Preview 8/8
+
+Fresh vzdialená vetva je 06495078636f3dc16050aea332db1c2c9cdf9291. Kód, aktuálne zdroje, JSON QA a šesť priamych WebP dôkazov už sú v tomto commite. Deployment dpl_8DJcVDGp6LB2SxmbDUMtmdPKr7q7 je READY: https://kava-chatbot-backend-9twzo7mu9-danielvendzur-codes-projects.vercel.app/s5.html?demo=nafigate .
+
+Dnes vlastné živé QA všetkých ôsmich koncových výsledkov: správna cena, balenie, konkrétne CTA v rovnakej karte, fotografie po skutočnom načítaní complete/naturalWidth1024. Reset použitý medzi všetkými výsledkami, čeština, viewport1363×936, bez horizontálneho pretečenia. Živé porovnanie Hyaluron Essential399Kč/20ml a Skin Restore614Kč/15ml ukazuje aj konkrétne odlišné zameranie. V posledných10 zachytených konzolových chybách iba chrome-extension metadata sender; nejde o úplný audit logov.0 modelových volaní. Dôkaz nafigate-preview-qa.json. Séria má osem vlastne Preview overených, stále bez nezávislého schválenia a produkcie.
+
+Presný blok pred obnovením: pokus create_blob pre nafigate-screenshots.zip (1 180 231 B, očakávaný Git blob ae1793ce800a766a503c1cea784ebb6f6d759391) nedal výsledok a bol prerušený. Ranné read-only fetch_blob vrátilo404, teda archív nie je doložený ako uložený. Neriešim to opakovaním veľkého zápisu; originálny zip aj40 WebP sú zachované lokálne, menšie priame súbory sa uložia samostatne. Žiadne bežiace ref update sa neprepisuje. Poštu vôbec neotváram ani nemením; ranných19 správ je vec kontrolóra. Duben-Kaktus HOLD zostáva mimo tejto práce.
+
+
+Uloženie dôkazov po obnove: všetkých chýbajúcich 34 menších WebP má potvrdený GitHub blob SHA; spolu so šiestimi už uloženými ide o všetkých 40 snímok z manifestu. Priebežný zoznam SHA je v nafigate-upload-progress.json. Archív zip sa nepovažuje za uložený; jednotlivé súbory sú plnohodnotné dôkazy a zachovávajú originálny manifest SHA256.

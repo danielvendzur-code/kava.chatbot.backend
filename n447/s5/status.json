@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-09T22:26:23.067831+00:00",
+  "updatedAt": "2026-11-10T06:43:05.653980+00:00",
   "branch": "codex/s5-solo-20261109",
-  "codeSha": "3de371af82ab788b21d02b9d0f1afe1d9dd2903a",
+  "codeSha": "06495078636f3dc16050aea332db1c2c9cdf9291",
   "firmsByDomain": {
     "musiprirodne.sk": {
       "domain": "musiprirodne.sk",
@@ -574,7 +574,7 @@
     },
     "nafigatecosmetics.cz": {
       "checkedAt": "2026-11-09T22:03:37.915335+00:00",
-      "status": "local_verified",
+      "status": "preview_verified",
       "claimSha": "79ba67de42653b7aa2b15deb7048bc879f773c7f",
       "domain": "nafigatecosmetics.cz",
       "operator": "NAFIGATE Cosmetics, a.s.",
@@ -595,7 +595,7 @@
       "mailDuplicateCheck": "PENDING_CONTROLLER",
       "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
       "production": "NOT_DEPLOYED",
-      "next": "Create Preview and actually verify all eight results; not yet counted as Preview verified.",
+      "next": "Persist remaining screenshot evidence; continue reserved Boemi.",
       "products": 8,
       "source": "sources/nafigate/verified-products.json",
       "coverageEvidence": "dokazy/nafigate-needs-coverage.json",
@@ -616,6 +616,25 @@
         "paidCalls": 0,
         "focusedFinalNotesAndComparison": true,
         "addon": "omitted across differing age/use contexts; not inferred"
+      },
+      "sha": "06495078636f3dc16050aea332db1c2c9cdf9291",
+      "preview": {
+        "url": "https://kava-chatbot-backend-9twzo7mu9-danielvendzur-codes-projects.vercel.app/s5.html?demo=nafigate",
+        "deploymentId": "dpl_8DJcVDGp6LB2SxmbDUMtmdPKr7q7",
+        "checkedAt": "2026-11-10T06:43:05.653980+00:00",
+        "viewport": {
+          "width": 1363,
+          "height": 936
+        },
+        "paidCalls": 0,
+        "workerPathsVerified": 8,
+        "imagesCompleteNaturalWidthPositive": 8
+      },
+      "evidenceUpload": {
+        "files": 40,
+        "previouslyCommitted": 6,
+        "newConfirmedBlobs": 34,
+        "giantZip": "not uploaded; original preserved locally; use individual WebP proof files"
       }
     },
     "boemi.cz": {
@@ -664,14 +683,14 @@
       "repo",
       "s5-next"
     ],
-    "nextStep": "Publish Nafigate Preview, verify eight results; reserved Boemi source collection next."
+    "nextStep": "Nafigate actual Preview8/8 complete. Persist remaining40-image proof (giant zip upload aborted, exact blob404), then reserved Boemi."
   },
   "autonomousBacklog": {
     "source": "BACKLOG-DLHODOBE-20261109.md",
     "minimumMilestone": 20,
     "nextMilestone": 40,
     "stopAtMilestone": false,
-    "previewVerifiedCount": 7,
+    "previewVerifiedCount": 8,
     "oneWorker": true,
     "emailSendingForbidden": true,
     "productionForbidden": true
