@@ -145,5 +145,55 @@ globalThis.S5_PERFUME_FRAGMENTS.scentisimo = {
   ]
  },
  "compareFocus": true,
- "upsellFocus": {}
+ "upsellFocus": {},
+ "choicePhotos": {
+  "fresh": [
+   "/assets/s3/scenes-k2/citrus.jpg"
+  ],
+  "floral": [
+   "/assets/s3/scenes-k2/rose.jpg"
+  ],
+  "gourmand": [
+   "/assets/s3/scenes-k2/vanilla.jpg"
+  ],
+  "wood": [
+   "/assets/s3/scenes-k2/cinnamon.jpg"
+  ],
+  "eau-de-la-couronne": [
+   "/assets/s5/scentisimo/eau-de-la-couronne.webp"
+  ],
+  "josephine": [
+   "/assets/s3/scenes-k2/rose.jpg"
+  ],
+  "boheme": [
+   "/assets/s3/scenes-k2/neroli-blossom.jpg"
+  ],
+  "golden-age": [
+   "/assets/s3/scenes-k2/jasmine.jpg"
+  ],
+  "acqua-mirabile-odorosa-di-firenze": [
+   "/assets/s3/scenes-k2/lemon-tree.jpg"
+  ],
+  "body-mist-sea-mist": [
+   "/assets/s5/scentisimo/body-mist-sea-mist.webp"
+  ],
+  "menta-sui-navigli": [
+   "/assets/s3/scenes-k2/mint-herbs.jpg"
+  ],
+  "vanille-sauvage-de-madagascar": [
+   "/assets/s3/scenes-k2/lavender.jpg"
+  ],
+  "nuit-patchouli": [
+   "/assets/s3/scenes-k2/raspberries.jpg"
+  ],
+  "frangipane-e-cocco": [
+   "/assets/s3/scenes-k2/coconut.jpg"
+  ],
+  "oud-himalayen": [
+   "/assets/s3/scenes-k2/almonds.jpg"
+  ],
+  "le-roi-empereur": [
+   "/assets/s3/scenes-k2/cinnamon.jpg"
+  ]
+ }
 };

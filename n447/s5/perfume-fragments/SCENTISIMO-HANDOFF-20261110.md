@@ -20,6 +20,6 @@ Fresh 92 remote branches, 2125 unique text blobs: scentisimo.cz only assignment;
 
 ## Validation scope
 
-`python tools/s5/perfume/build-catalogue.py scentisimo` and `python tools/s5/perfume/validate-sources.py scentisimo`: source prices/packs/stock/URLs, distinct decodable official images, all 12 proposed leaves reachable once, no empty or one-choice step, four chips and two distinct comparison IDs. Source photo sheet visually reviewed. This validates source data and a declarative model only.
+`python tools/s5/perfume/build-catalogue.py scentisimo` and `python tools/s5/perfume/validate-sources.py scentisimo`: source prices/packs/stock/URLs, distinct decodable official images, all 12 proposed leaves reachable once, no empty or one-choice step, four chips and two distinct comparison IDs. Source photo sheet visually reviewed. Choice photos now supplied in both fragments: shared segment scenes plus official product images, static coverage and distinct image bytes per question checked; all 32 shared/official choice images visually reviewed in `choice-photo-review.webp`. Integrated crop/loaded-state UI QA remains pending. This validates source data and a declarative model only.
 
 Shared engine/renderer, full UI at 320/390/1280, reset/progress/hover/reduced-motion/avatar/chips/compare and live Preview outcomes **NOT RUN**. No runtime registration or deployment; completed-demo count 0. Shared files unchanged. Price 447 EUR + 10 EUR/month. Paid model calls 0; email NOT_READY; production NOT_DEPLOYED.

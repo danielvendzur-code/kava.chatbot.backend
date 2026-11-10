@@ -122,7 +122,7 @@
   "addonReason": "No source-verified complementary routine role; no forced second perfume.",
   "budgetQuestion": false,
   "introAfterIntegrationOnly": "Vyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.",
-  "sceneStatus": "PENDING_SHARED_SCENE_MAPPING_AND_VISUAL_UI_QA",
+  "sceneStatus": "STATIC_MAP_REVIEWED_UI_QA_PENDING",
   "logoStatus": "PENDING_AVATAR_VISUAL_QA",
   "enableRuntime": false,
   "liveEligibilityEvidence": "/n447/s5/dokazy/perfume-worker/coordinator-live-eligibility.json",
@@ -133,5 +133,55 @@
   },
   "compareFocus": true,
   "avatarSurfaceRequirement": "Official logo on dark, contrasting surface; verify actual 40px avatar. No logo filter or crop assumed.",
-  "merchantVariantCtaRequirement": "Show exact pack/price and canonical product link; do not claim a query parameter preselects a variant."
+  "merchantVariantCtaRequirement": "Show exact pack/price and canonical product link; do not claim a query parameter preselects a variant.",
+  "choicePhotos": {
+    "fresh": [
+      "/assets/s3/scenes-k2/citrus.jpg"
+    ],
+    "floral": [
+      "/assets/s3/scenes-k2/rose.jpg"
+    ],
+    "gourmand": [
+      "/assets/s3/scenes-k2/vanilla.jpg"
+    ],
+    "wood": [
+      "/assets/s3/scenes-k2/cinnamon.jpg"
+    ],
+    "eau-de-la-couronne": [
+      "/assets/s5/scentisimo/eau-de-la-couronne.webp"
+    ],
+    "josephine": [
+      "/assets/s3/scenes-k2/rose.jpg"
+    ],
+    "boheme": [
+      "/assets/s3/scenes-k2/neroli-blossom.jpg"
+    ],
+    "golden-age": [
+      "/assets/s3/scenes-k2/jasmine.jpg"
+    ],
+    "acqua-mirabile-odorosa-di-firenze": [
+      "/assets/s3/scenes-k2/lemon-tree.jpg"
+    ],
+    "body-mist-sea-mist": [
+      "/assets/s5/scentisimo/body-mist-sea-mist.webp"
+    ],
+    "menta-sui-navigli": [
+      "/assets/s3/scenes-k2/mint-herbs.jpg"
+    ],
+    "vanille-sauvage-de-madagascar": [
+      "/assets/s3/scenes-k2/lavender.jpg"
+    ],
+    "nuit-patchouli": [
+      "/assets/s3/scenes-k2/raspberries.jpg"
+    ],
+    "frangipane-e-cocco": [
+      "/assets/s3/scenes-k2/coconut.jpg"
+    ],
+    "oud-himalayen": [
+      "/assets/s3/scenes-k2/almonds.jpg"
+    ],
+    "le-roi-empereur": [
+      "/assets/s3/scenes-k2/cinnamon.jpg"
+    ]
+  }
 }

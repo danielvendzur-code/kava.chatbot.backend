@@ -145,5 +145,55 @@ globalThis.S5_PERFUME_FRAGMENTS.nicheandglow = {
   ]
  },
  "compareFocus": true,
- "upsellFocus": {}
+ "upsellFocus": {},
+ "choicePhotos": {
+  "green": [
+   "/assets/s3/scenes-k2/matcha.jpg"
+  ],
+  "floral": [
+   "/assets/s3/scenes-k2/jasmine.jpg"
+  ],
+  "gourmand": [
+   "/assets/s3/scenes-k2/coffee-beans.jpg"
+  ],
+  "wood": [
+   "/assets/s3/scenes-k2/sandalwood.jpg"
+  ],
+  "helenist": [
+   "/assets/s5/nicheandglow/oraculum-helenist.webp"
+  ],
+  "nectarina": [
+   "/assets/s3/scenes-k2/grapes.jpg"
+  ],
+  "matcha": [
+   "/assets/s3/scenes-k2/matcha.jpg"
+  ],
+  "pivoine": [
+   "/assets/s5/nicheandglow/bergamoss-pivoine-de-malen.webp"
+  ],
+  "float": [
+   "/assets/s3/scenes-k2/neroli-blossom.jpg"
+  ],
+  "crispy": [
+   "/assets/s3/scenes-k2/coconut.jpg"
+  ],
+  "croissant": [
+   "/assets/s3/scenes-k2/coffee-beans.jpg"
+  ],
+  "mio": [
+   "/assets/s5/nicheandglow/mio-dio.webp"
+  ],
+  "santalist": [
+   "/assets/s3/scenes-k2/cucumber.jpg"
+  ],
+  "skin-fetish": [
+   "/assets/s3/scenes-k2/incense.jpg"
+  ],
+  "ground": [
+   "/assets/s3/scenes-k2/sandalwood.jpg"
+  ],
+  "vetiver": [
+   "/assets/s5/nicheandglow/so-slow-eau-de-cologne-vetiver.webp"
+  ]
+ }
 };

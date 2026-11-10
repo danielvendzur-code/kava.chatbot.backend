@@ -145,5 +145,55 @@ globalThis.S5_PERFUME_FRAGMENTS.adoraniche = {
   ]
  },
  "compareFocus": true,
- "upsellFocus": {}
+ "upsellFocus": {},
+ "choicePhotos": {
+  "green": [
+   "/assets/s3/scenes-k2/citrus.jpg"
+  ],
+  "clean": [
+   "/assets/s3/scenes-k2/white-rose.jpg"
+  ],
+  "gourmand": [
+   "/assets/s3/scenes-k2/black-tea.jpg"
+  ],
+  "wood": [
+   "/assets/s5/adoraniche/baruti-nucleus-eau-de-parfum.webp"
+  ],
+  "adam": [
+   "/assets/s3/scenes-k2/rose.jpg"
+  ],
+  "paper-soap": [
+   "/assets/s3/scenes-k2/lavender.jpg"
+  ],
+  "cloud": [
+   "/assets/s3/scenes-k2/milk.jpg"
+  ],
+  "nature": [
+   "/assets/s3/scenes-k2/mint-herbs.jpg"
+  ],
+  "nel": [
+   "/assets/s5/adoraniche/kinetic-perfumes-nel-parfum.webp"
+  ],
+  "swim": [
+   "/assets/scenes/tea-leaves-approved.jpg"
+  ],
+  "roasted-tea": [
+   "/assets/scenes/tea-leaves-approved.jpg"
+  ],
+  "bain": [
+   "/assets/s3/scenes-k2/coconut.jpg"
+  ],
+  "chai": [
+   "/assets/s3/scenes-k2/black-tea.jpg"
+  ],
+  "blond": [
+   "/assets/s3/scenes-k2/chocolate.jpg"
+  ],
+  "maamoul": [
+   "/assets/s5/adoraniche/ideo-parfumeurs-maamoul-mon-amour.webp"
+  ],
+  "nucleus": [
+   "/assets/s5/adoraniche/baruti-nucleus-eau-de-parfum.webp"
+  ]
+ }
 };

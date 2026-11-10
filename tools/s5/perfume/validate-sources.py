@@ -1,5 +1,5 @@
 """Source and declarative-tree integrity checks. These are NOT UI/engine/live QA."""
-import pathlib,json,hashlib,re,datetime,collections,sys
+import pathlib,json,hashlib,re,datetime,collections,sys,subprocess
 from PIL import Image
 root=pathlib.Path(__file__).resolve().parents[3]
 reports=[]
@@ -40,7 +40,17 @@ for slug in slugs:
  assert not fragment['enableRuntime'] and fragment['addon'] is None and not fragment['budgetQuestion']
  assert len(fragment['quickChips'])==4 and len(set(fragment['quickChips']))==4
  assert len(set(fragment['compareProductIds']))==2 and set(fragment['compareProductIds'])<=ids
- reports.append({'slug':slug,'sourceRecords':len(products),'uniqueFormulaRoutes':len(paths),'loadedLocalPhotos':len(hashes),'paths':paths,'priceStockPackUrlChecks':'PASS','treeModelChecks':'PASS','uiQA':'NOT_RUN_ENGINE_PENDING','liveWidgetQA':'PENDING','previewQA':'NOT_RUN','paidModelCalls':0})
+ coverage=json.loads((root/'n447/s5/dokazy/perfume-worker/choice-photo-coverage.json').read_text())
+ assert fragment['choicePhotos']==coverage['companies'][slug]['choicePhotos']
+ for question in coverage['companies'][slug]['allQuestions']:
+  photo_hashes=[]
+  for value in question['values']:
+   path=fragment['choicePhotos'][value][0];asset=coverage['assets'][path];assert min(asset['width'],asset['height'])>=500
+   local=root/path.lstrip('/')
+   raw=local.read_bytes() if local.exists() else subprocess.check_output(['git','show','HEAD:'+path.lstrip('/')],cwd=root)
+   digest=hashlib.sha256(raw).hexdigest();assert digest==asset['sha256'];photo_hashes.append(digest)
+  assert len(set(photo_hashes))==len(photo_hashes),'Repeated image within a question'
+ reports.append({'slug':slug,'sourceRecords':len(products),'uniqueFormulaRoutes':len(paths),'loadedLocalPhotos':len(hashes),'paths':paths,'priceStockPackUrlChecks':'PASS','treeModelChecks':'PASS','staticChoicePhotoCoverage':'PASS','uiQA':'NOT_RUN_ENGINE_PENDING','liveWidgetQA':'PENDING_OWN_BROWSER_QA','previewQA':'NOT_RUN','paidModelCalls':0})
 out={'checkedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'scope':'Reviewed source facts + proposed declarative tree; not shared-engine or browser UI QA','reports':reports}
 filename='source-model-check-'+slugs[0]+'.json' if len(slugs)==1 else 'source-model-check.json'
 (root/'n447/s5/dokazy/perfume-worker'/filename).write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')

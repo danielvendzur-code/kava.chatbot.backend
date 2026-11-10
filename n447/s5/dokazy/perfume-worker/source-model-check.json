@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-10T13:05:20.098889+00:00",
+  "checkedAt": "2026-11-10T13:51:32.955769+00:00",
   "scope": "Reviewed source facts + proposed declarative tree; not shared-engine or browser UI QA",
   "reports": [
     {
@@ -94,8 +94,9 @@
       ],
       "priceStockPackUrlChecks": "PASS",
       "treeModelChecks": "PASS",
+      "staticChoicePhotoCoverage": "PASS",
       "uiQA": "NOT_RUN_ENGINE_PENDING",
-      "liveWidgetQA": "PENDING",
+      "liveWidgetQA": "PENDING_OWN_BROWSER_QA",
       "previewQA": "NOT_RUN",
       "paidModelCalls": 0
     },
@@ -192,8 +193,108 @@
       ],
       "priceStockPackUrlChecks": "PASS",
       "treeModelChecks": "PASS",
+      "staticChoicePhotoCoverage": "PASS",
       "uiQA": "NOT_RUN_ENGINE_PENDING",
-      "liveWidgetQA": "PENDING",
+      "liveWidgetQA": "PENDING_OWN_BROWSER_QA",
+      "previewQA": "NOT_RUN",
+      "paidModelCalls": 0
+    },
+    {
+      "slug": "scentisimo",
+      "sourceRecords": 12,
+      "uniqueFormulaRoutes": 12,
+      "loadedLocalPhotos": 12,
+      "paths": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "acqua-mirabile-odorosa-di-firenze"
+          },
+          "productId": "acqua-mirabile-odorosa-di-firenze"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "body-mist-sea-mist"
+          },
+          "productId": "body-mist-sea-mist"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "menta-sui-navigli"
+          },
+          "productId": "menta-sui-navigli"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "eau-de-la-couronne"
+          },
+          "productId": "eau-de-la-couronne"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "josephine"
+          },
+          "productId": "josephine"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "boheme"
+          },
+          "productId": "boheme"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "golden-age"
+          },
+          "productId": "golden-age"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "vanille-sauvage-de-madagascar"
+          },
+          "productId": "vanille-sauvage-de-madagascar"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "nuit-patchouli"
+          },
+          "productId": "nuit-patchouli"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "frangipane-e-cocco"
+          },
+          "productId": "frangipane-e-cocco"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "oud-himalayen"
+          },
+          "productId": "oud-himalayen"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "le-roi-empereur"
+          },
+          "productId": "le-roi-empereur"
+        }
+      ],
+      "priceStockPackUrlChecks": "PASS",
+      "treeModelChecks": "PASS",
+      "staticChoicePhotoCoverage": "PASS",
+      "uiQA": "NOT_RUN_ENGINE_PENDING",
+      "liveWidgetQA": "PENDING_OWN_BROWSER_QA",
       "previewQA": "NOT_RUN",
       "paidModelCalls": 0
     }

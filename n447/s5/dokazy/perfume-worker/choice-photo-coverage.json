@@ -1,0 +1,540 @@
+{
+  "status": "STATIC_PHOTO_MAP_VISUALLY_REVIEWED_UI_QA_PENDING",
+  "sourceCommitForExistingScenes": "32462ed45d646996d31147f5e8827c8fb726521c",
+  "meaning": "Ingredient scenes illustrate one explicitly listed note, not a full pyramid or a claim about ingredients in the formula. Product photos are used where no suitable reviewed scene exists.",
+  "scope": "Static coverage and image review only; shared renderer and browser UI not tested.",
+  "companies": {
+    "adoraniche": {
+      "choicePhotos": {
+        "green": [
+          "/assets/s3/scenes-k2/citrus.jpg"
+        ],
+        "clean": [
+          "/assets/s3/scenes-k2/white-rose.jpg"
+        ],
+        "gourmand": [
+          "/assets/s3/scenes-k2/black-tea.jpg"
+        ],
+        "wood": [
+          "/assets/s5/adoraniche/baruti-nucleus-eau-de-parfum.webp"
+        ],
+        "adam": [
+          "/assets/s3/scenes-k2/rose.jpg"
+        ],
+        "paper-soap": [
+          "/assets/s3/scenes-k2/lavender.jpg"
+        ],
+        "cloud": [
+          "/assets/s3/scenes-k2/milk.jpg"
+        ],
+        "nature": [
+          "/assets/s3/scenes-k2/mint-herbs.jpg"
+        ],
+        "nel": [
+          "/assets/s5/adoraniche/kinetic-perfumes-nel-parfum.webp"
+        ],
+        "swim": [
+          "/assets/scenes/tea-leaves-approved.jpg"
+        ],
+        "roasted-tea": [
+          "/assets/scenes/tea-leaves-approved.jpg"
+        ],
+        "bain": [
+          "/assets/s3/scenes-k2/coconut.jpg"
+        ],
+        "chai": [
+          "/assets/s3/scenes-k2/black-tea.jpg"
+        ],
+        "blond": [
+          "/assets/s3/scenes-k2/chocolate.jpg"
+        ],
+        "maamoul": [
+          "/assets/s5/adoraniche/ideo-parfumeurs-maamoul-mon-amour.webp"
+        ],
+        "nucleus": [
+          "/assets/s5/adoraniche/baruti-nucleus-eau-de-parfum.webp"
+        ]
+      },
+      "allQuestions": [
+        {
+          "key": "fragranceDirection",
+          "values": [
+            "green",
+            "clean",
+            "gourmand",
+            "wood"
+          ],
+          "images": [
+            "/assets/s3/scenes-k2/citrus.jpg",
+            "/assets/s3/scenes-k2/white-rose.jpg",
+            "/assets/s3/scenes-k2/black-tea.jpg",
+            "/assets/s5/adoraniche/baruti-nucleus-eau-de-parfum.webp"
+          ],
+          "differentPhotoBytes": true
+        },
+        {
+          "key": "fragranceProfile",
+          "values": [
+            "nature",
+            "nel",
+            "swim"
+          ],
+          "images": [
+            "/assets/s3/scenes-k2/mint-herbs.jpg",
+            "/assets/s5/adoraniche/kinetic-perfumes-nel-parfum.webp",
+            "/assets/scenes/tea-leaves-approved.jpg"
+          ],
+          "differentPhotoBytes": true
+        },
+        {
+          "key": "fragranceProfile",
+          "values": [
+            "adam",
+            "paper-soap",
+            "cloud"
+          ],
+          "images": [
+            "/assets/s3/scenes-k2/rose.jpg",
+            "/assets/s3/scenes-k2/lavender.jpg",
+            "/assets/s3/scenes-k2/milk.jpg"
+          ],
+          "differentPhotoBytes": true
+        },
+        {
+          "key": "fragranceProfile",
+          "values": [
+            "roasted-tea",
+            "bain",
+            "chai",
+            "blond",
+            "maamoul"
+          ],
+          "images": [
+            "/assets/scenes/tea-leaves-approved.jpg",
+            "/assets/s3/scenes-k2/coconut.jpg",
+            "/assets/s3/scenes-k2/black-tea.jpg",
+            "/assets/s3/scenes-k2/chocolate.jpg",
+            "/assets/s5/adoraniche/ideo-parfumeurs-maamoul-mon-amour.webp"
+          ],
+          "differentPhotoBytes": true
+        }
+      ]
+    },
+    "nicheandglow": {
+      "choicePhotos": {
+        "green": [
+          "/assets/s3/scenes-k2/matcha.jpg"
+        ],
+        "floral": [
+          "/assets/s3/scenes-k2/jasmine.jpg"
+        ],
+        "gourmand": [
+          "/assets/s3/scenes-k2/coffee-beans.jpg"
+        ],
+        "wood": [
+          "/assets/s3/scenes-k2/sandalwood.jpg"
+        ],
+        "helenist": [
+          "/assets/s5/nicheandglow/oraculum-helenist.webp"
+        ],
+        "nectarina": [
+          "/assets/s3/scenes-k2/grapes.jpg"
+        ],
+        "matcha": [
+          "/assets/s3/scenes-k2/matcha.jpg"
+        ],
+        "pivoine": [
+          "/assets/s5/nicheandglow/bergamoss-pivoine-de-malen.webp"
+        ],
+        "float": [
+          "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        ],
+        "crispy": [
+          "/assets/s3/scenes-k2/coconut.jpg"
+        ],
+        "croissant": [
+          "/assets/s3/scenes-k2/coffee-beans.jpg"
+        ],
+        "mio": [
+          "/assets/s5/nicheandglow/mio-dio.webp"
+        ],
+        "santalist": [
+          "/assets/s3/scenes-k2/cucumber.jpg"
+        ],
+        "skin-fetish": [
+          "/assets/s3/scenes-k2/incense.jpg"
+        ],
+        "ground": [
+          "/assets/s3/scenes-k2/sandalwood.jpg"
+        ],
+        "vetiver": [
+          "/assets/s5/nicheandglow/so-slow-eau-de-cologne-vetiver.webp"
+        ]
+      },
+      "allQuestions": [
+        {
+          "key": "fragranceDirection",
+          "values": [
+            "green",
+            "floral",
+            "gourmand",
+            "wood"
+          ],
+          "images": [
+            "/assets/s3/scenes-k2/matcha.jpg",
+            "/assets/s3/scenes-k2/jasmine.jpg",
+            "/assets/s3/scenes-k2/coffee-beans.jpg",
+            "/assets/s3/scenes-k2/sandalwood.jpg"
+          ],
+          "differentPhotoBytes": true
+        },
+        {
+          "key": "fragranceProfile",
+          "values": [
+            "helenist",
+            "nectarina",
+            "matcha"
+          ],
+          "images": [
+            "/assets/s5/nicheandglow/oraculum-helenist.webp",
+            "/assets/s3/scenes-k2/grapes.jpg",
+            "/assets/s3/scenes-k2/matcha.jpg"
+          ],
+          "differentPhotoBytes": true
+        },
+        {
+          "key": "fragranceProfile",
+          "values": [
+            "pivoine",
+            "float"
+          ],
+          "images": [
+            "/assets/s5/nicheandglow/bergamoss-pivoine-de-malen.webp",
+            "/assets/s3/scenes-k2/neroli-blossom.jpg"
+          ],
+          "differentPhotoBytes": true
+        },
+        {
+          "key": "fragranceProfile",
+          "values": [
+            "crispy",
+            "croissant"
+          ],
+          "images": [
+            "/assets/s3/scenes-k2/coconut.jpg",
+            "/assets/s3/scenes-k2/coffee-beans.jpg"
+          ],
+          "differentPhotoBytes": true
+        },
+        {
+          "key": "fragranceProfile",
+          "values": [
+            "mio",
+            "santalist",
+            "skin-fetish",
+            "ground",
+            "vetiver"
+          ],
+          "images": [
+            "/assets/s5/nicheandglow/mio-dio.webp",
+            "/assets/s3/scenes-k2/cucumber.jpg",
+            "/assets/s3/scenes-k2/incense.jpg",
+            "/assets/s3/scenes-k2/sandalwood.jpg",
+            "/assets/s5/nicheandglow/so-slow-eau-de-cologne-vetiver.webp"
+          ],
+          "differentPhotoBytes": true
+        }
+      ]
+    },
+    "scentisimo": {
+      "choicePhotos": {
+        "fresh": [
+          "/assets/s3/scenes-k2/citrus.jpg"
+        ],
+        "floral": [
+          "/assets/s3/scenes-k2/rose.jpg"
+        ],
+        "gourmand": [
+          "/assets/s3/scenes-k2/vanilla.jpg"
+        ],
+        "wood": [
+          "/assets/s3/scenes-k2/cinnamon.jpg"
+        ],
+        "eau-de-la-couronne": [
+          "/assets/s5/scentisimo/eau-de-la-couronne.webp"
+        ],
+        "josephine": [
+          "/assets/s3/scenes-k2/rose.jpg"
+        ],
+        "boheme": [
+          "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        ],
+        "golden-age": [
+          "/assets/s3/scenes-k2/jasmine.jpg"
+        ],
+        "acqua-mirabile-odorosa-di-firenze": [
+          "/assets/s3/scenes-k2/lemon-tree.jpg"
+        ],
+        "body-mist-sea-mist": [
+          "/assets/s5/scentisimo/body-mist-sea-mist.webp"
+        ],
+        "menta-sui-navigli": [
+          "/assets/s3/scenes-k2/mint-herbs.jpg"
+        ],
+        "vanille-sauvage-de-madagascar": [
+          "/assets/s3/scenes-k2/lavender.jpg"
+        ],
+        "nuit-patchouli": [
+          "/assets/s3/scenes-k2/raspberries.jpg"
+        ],
+        "frangipane-e-cocco": [
+          "/assets/s3/scenes-k2/coconut.jpg"
+        ],
+        "oud-himalayen": [
+          "/assets/s3/scenes-k2/almonds.jpg"
+        ],
+        "le-roi-empereur": [
+          "/assets/s3/scenes-k2/cinnamon.jpg"
+        ]
+      },
+      "allQuestions": [
+        {
+          "key": "fragranceDirection",
+          "values": [
+            "fresh",
+            "floral",
+            "gourmand",
+            "wood"
+          ],
+          "images": [
+            "/assets/s3/scenes-k2/citrus.jpg",
+            "/assets/s3/scenes-k2/rose.jpg",
+            "/assets/s3/scenes-k2/vanilla.jpg",
+            "/assets/s3/scenes-k2/cinnamon.jpg"
+          ],
+          "differentPhotoBytes": true
+        },
+        {
+          "key": "fragranceProfile",
+          "values": [
+            "acqua-mirabile-odorosa-di-firenze",
+            "body-mist-sea-mist",
+            "menta-sui-navigli"
+          ],
+          "images": [
+            "/assets/s3/scenes-k2/lemon-tree.jpg",
+            "/assets/s5/scentisimo/body-mist-sea-mist.webp",
+            "/assets/s3/scenes-k2/mint-herbs.jpg"
+          ],
+          "differentPhotoBytes": true
+        },
+        {
+          "key": "fragranceProfile",
+          "values": [
+            "eau-de-la-couronne",
+            "josephine",
+            "boheme",
+            "golden-age"
+          ],
+          "images": [
+            "/assets/s5/scentisimo/eau-de-la-couronne.webp",
+            "/assets/s3/scenes-k2/rose.jpg",
+            "/assets/s3/scenes-k2/neroli-blossom.jpg",
+            "/assets/s3/scenes-k2/jasmine.jpg"
+          ],
+          "differentPhotoBytes": true
+        },
+        {
+          "key": "fragranceProfile",
+          "values": [
+            "vanille-sauvage-de-madagascar",
+            "nuit-patchouli",
+            "frangipane-e-cocco"
+          ],
+          "images": [
+            "/assets/s3/scenes-k2/lavender.jpg",
+            "/assets/s3/scenes-k2/raspberries.jpg",
+            "/assets/s3/scenes-k2/coconut.jpg"
+          ],
+          "differentPhotoBytes": true
+        },
+        {
+          "key": "fragranceProfile",
+          "values": [
+            "oud-himalayen",
+            "le-roi-empereur"
+          ],
+          "images": [
+            "/assets/s3/scenes-k2/almonds.jpg",
+            "/assets/s3/scenes-k2/cinnamon.jpg"
+          ],
+          "differentPhotoBytes": true
+        }
+      ]
+    }
+  },
+  "assets": {
+    "/assets/s3/scenes-k2/citrus.jpg": {
+      "sha256": "128102622c9018c394ae1483e15d35cce99c180c218c335aa3110a8767d2517b",
+      "width": 1000,
+      "height": 667
+    },
+    "/assets/s3/scenes-k2/white-rose.jpg": {
+      "sha256": "ab2f84cd9e32541ed694758bbe995571a5ccd688e0b7ea7f9f6d968be42b4cc2",
+      "width": 900,
+      "height": 600
+    },
+    "/assets/s3/scenes-k2/black-tea.jpg": {
+      "sha256": "90f98c3bd2e680753191bf6f7e42b4699c9381519a2cef9642418c8ba5474921",
+      "width": 1000,
+      "height": 667
+    },
+    "/assets/s5/adoraniche/baruti-nucleus-eau-de-parfum.webp": {
+      "sha256": "5961964c65557db35d50aa1e16b12b4944954e26de39f88d80553978dd7ccfb1",
+      "width": 1024,
+      "height": 768
+    },
+    "/assets/s3/scenes-k2/rose.jpg": {
+      "sha256": "3b896a53c9d08b656b6cf31ef7aac4711488cabf3a53572e7a1f72f54455450c",
+      "width": 1000,
+      "height": 1333
+    },
+    "/assets/s3/scenes-k2/lavender.jpg": {
+      "sha256": "226aa94215c1d295df8d7d97afbe81a13c5745e817785b8bd6fb733e5ca81bc6",
+      "width": 1000,
+      "height": 1500
+    },
+    "/assets/s3/scenes-k2/milk.jpg": {
+      "sha256": "75c5140e199656f18a10fa691cad718c26adf283ca712886fda6184e862e7a38",
+      "width": 900,
+      "height": 600
+    },
+    "/assets/s3/scenes-k2/mint-herbs.jpg": {
+      "sha256": "31b61e900fec7e1ce3d27f2a2e758de12f4838250dbe743724f3408607b63dd7",
+      "width": 1000,
+      "height": 659
+    },
+    "/assets/s5/adoraniche/kinetic-perfumes-nel-parfum.webp": {
+      "sha256": "e413e2ce5aa46bd72ea27cb9e4159110c13cb653bd810fb04848d7f24cd0019a",
+      "width": 1024,
+      "height": 768
+    },
+    "/assets/scenes/tea-leaves-approved.jpg": {
+      "sha256": "cbdfdc9096ae228fd75e2cba56efcf87075152f676b113d759cf0849e2efd408",
+      "width": 1200,
+      "height": 1800
+    },
+    "/assets/s3/scenes-k2/coconut.jpg": {
+      "sha256": "57fb9648e7f3340c81115ecae3a2418560ef3229f7822a3cce6e89f3d0be4b18",
+      "width": 1000,
+      "height": 1500
+    },
+    "/assets/s3/scenes-k2/chocolate.jpg": {
+      "sha256": "5b8bd473fd7c3f138393f3c98f06e9bbfe558b86defb1403877aaedc52b4bb03",
+      "width": 1000,
+      "height": 1500
+    },
+    "/assets/s5/adoraniche/ideo-parfumeurs-maamoul-mon-amour.webp": {
+      "sha256": "8d6de77e0715ddf33e58d91ac68a85ad943a549a3e6c26bdde8f329f9e1fae23",
+      "width": 1024,
+      "height": 768
+    },
+    "/assets/s3/scenes-k2/matcha.jpg": {
+      "sha256": "6df0772a9a01b6d930e7c924701801d11c2a9853bc1e4116d5e0be9b7930f2cd",
+      "width": 1000,
+      "height": 1333
+    },
+    "/assets/s3/scenes-k2/jasmine.jpg": {
+      "sha256": "086dce672d29e32924d2b032694bf3dda48aab1cb821d6e68904b241c83e81c8",
+      "width": 1000,
+      "height": 1333
+    },
+    "/assets/s3/scenes-k2/coffee-beans.jpg": {
+      "sha256": "b8d671ccdd58d79a9db0fccfc72a706391b85fadeaddb706c9a22b4e05d7ca00",
+      "width": 1000,
+      "height": 662
+    },
+    "/assets/s3/scenes-k2/sandalwood.jpg": {
+      "sha256": "13ece78a576c12b1c55fef9774d60f71a477decb899cefbbec920939069ff444",
+      "width": 1000,
+      "height": 1500
+    },
+    "/assets/s5/nicheandglow/oraculum-helenist.webp": {
+      "sha256": "df524d2e854a7730cf3da260acad0f9fcae9cbe1e8bc77d3ea128fa9fcaa7c55",
+      "width": 1024,
+      "height": 768
+    },
+    "/assets/s3/scenes-k2/grapes.jpg": {
+      "sha256": "c26500491d58ecf8b9e13708935b4f24d0840a0d151a5b7f9f92a0131bab15fa",
+      "width": 1000,
+      "height": 667
+    },
+    "/assets/s5/nicheandglow/bergamoss-pivoine-de-malen.webp": {
+      "sha256": "b93bae7d0099729a94b35a5238eb6aed967413f3a6a2e3d03d4bbf83bcecc646",
+      "width": 1024,
+      "height": 768
+    },
+    "/assets/s3/scenes-k2/neroli-blossom.jpg": {
+      "sha256": "009b2fbb0b2bbd9b05888832eb0da0d14092597f097d13ce663dbcc46fa8105d",
+      "width": 1000,
+      "height": 1500
+    },
+    "/assets/s5/nicheandglow/mio-dio.webp": {
+      "sha256": "4980b941f9575e19091cbf2f4bbce379821d0d137bc1f911bbe9f18a01dc1613",
+      "width": 1024,
+      "height": 768
+    },
+    "/assets/s3/scenes-k2/cucumber.jpg": {
+      "sha256": "b4e8d87e2f21ed3c6757861f71daff27b873a1402059318a189e67bd07d3560e",
+      "width": 1000,
+      "height": 1500
+    },
+    "/assets/s3/scenes-k2/incense.jpg": {
+      "sha256": "9ed760d5521a5daadc7c060842aca389beaae0c541ac0fec119b174ccc615c1f",
+      "width": 1000,
+      "height": 1500
+    },
+    "/assets/s5/nicheandglow/so-slow-eau-de-cologne-vetiver.webp": {
+      "sha256": "97b886e24d09d4390ef1aeefe4016fda4a91a1e980ebcf0b28e125d2a8adc568",
+      "width": 1024,
+      "height": 768
+    },
+    "/assets/s3/scenes-k2/vanilla.jpg": {
+      "sha256": "f5669a1e1040814e314f6b4599170355de3d099c521deb23f07424d100501cae",
+      "width": 1000,
+      "height": 1250
+    },
+    "/assets/s3/scenes-k2/cinnamon.jpg": {
+      "sha256": "578ba1ea559a49a7ea954dd8abb594873ac85e9b16af6486e2319743e1f7e300",
+      "width": 1000,
+      "height": 1332
+    },
+    "/assets/s5/scentisimo/eau-de-la-couronne.webp": {
+      "sha256": "10c30bfdfa36ca73ccd3f5682f23b6ac800fec5699e1d48278408364d0dae323",
+      "width": 1024,
+      "height": 768
+    },
+    "/assets/s3/scenes-k2/lemon-tree.jpg": {
+      "sha256": "76ceb2e74877ae3daed133218ad2334acc5c86e7721ea7933a895fa8fd5a785e",
+      "width": 1000,
+      "height": 1778
+    },
+    "/assets/s5/scentisimo/body-mist-sea-mist.webp": {
+      "sha256": "56074100e73a612cce8759d18083751c7cf798ec58494a412a4020f8866c190b",
+      "width": 1024,
+      "height": 768
+    },
+    "/assets/s3/scenes-k2/raspberries.jpg": {
+      "sha256": "82ae38b183b2f8f19094b9ab90f866cf907a28e31a7ce7e92abef71a12f19e87",
+      "width": 900,
+      "height": 508
+    },
+    "/assets/s3/scenes-k2/almonds.jpg": {
+      "sha256": "b414cc695682623378ffa7f7f9790386484dfc870d96c960abd3236cfa83d4da",
+      "width": 900,
+      "height": 600
+    }
+  },
+  "reviewedAt": "2026-11-10T13:51:00.243311+00:00",
+  "visualReview": "32 source images visually inspected on contact sheet; source note relevance reviewed. Not live UI screenshots."
+}

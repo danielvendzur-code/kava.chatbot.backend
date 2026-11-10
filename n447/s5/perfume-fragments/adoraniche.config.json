@@ -162,7 +162,7 @@
   "addonReason": "No source-verified complementary routine role; no forced second perfume.",
   "budgetQuestion": false,
   "introAfterIntegrationOnly": "Vyberte si parfum podľa doložených tónov. Dva rôzne parfumy si môžete porovnať.",
-  "sceneStatus": "PENDING_SHARED_SCENE_MAPPING_AND_VISUAL_UI_QA",
+  "sceneStatus": "STATIC_MAP_REVIEWED_UI_QA_PENDING",
   "logoStatus": "PENDING_AVATAR_VISUAL_QA",
   "enableRuntime": false,
   "liveEligibilityEvidence": "/n447/s5/dokazy/perfume-worker/coordinator-live-eligibility.json",
@@ -172,5 +172,55 @@
     "avatar": "/assets/s5/adoraniche/logo.webp"
   },
   "compareFocus": true,
-  "avatarSurfaceRequirement": "Official logo on dark, contrasting surface; verify actual 40px avatar. No logo filter or crop assumed."
+  "avatarSurfaceRequirement": "Official logo on dark, contrasting surface; verify actual 40px avatar. No logo filter or crop assumed.",
+  "choicePhotos": {
+    "green": [
+      "/assets/s3/scenes-k2/citrus.jpg"
+    ],
+    "clean": [
+      "/assets/s3/scenes-k2/white-rose.jpg"
+    ],
+    "gourmand": [
+      "/assets/s3/scenes-k2/black-tea.jpg"
+    ],
+    "wood": [
+      "/assets/s5/adoraniche/baruti-nucleus-eau-de-parfum.webp"
+    ],
+    "adam": [
+      "/assets/s3/scenes-k2/rose.jpg"
+    ],
+    "paper-soap": [
+      "/assets/s3/scenes-k2/lavender.jpg"
+    ],
+    "cloud": [
+      "/assets/s3/scenes-k2/milk.jpg"
+    ],
+    "nature": [
+      "/assets/s3/scenes-k2/mint-herbs.jpg"
+    ],
+    "nel": [
+      "/assets/s5/adoraniche/kinetic-perfumes-nel-parfum.webp"
+    ],
+    "swim": [
+      "/assets/scenes/tea-leaves-approved.jpg"
+    ],
+    "roasted-tea": [
+      "/assets/scenes/tea-leaves-approved.jpg"
+    ],
+    "bain": [
+      "/assets/s3/scenes-k2/coconut.jpg"
+    ],
+    "chai": [
+      "/assets/s3/scenes-k2/black-tea.jpg"
+    ],
+    "blond": [
+      "/assets/s3/scenes-k2/chocolate.jpg"
+    ],
+    "maamoul": [
+      "/assets/s5/adoraniche/ideo-parfumeurs-maamoul-mon-amour.webp"
+    ],
+    "nucleus": [
+      "/assets/s5/adoraniche/baruti-nucleus-eau-de-parfum.webp"
+    ]
+  }
 }
