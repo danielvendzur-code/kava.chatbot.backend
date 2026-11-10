@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-10T12:53:59.828353+00:00",
+  "updatedAt": "2026-11-10T13:15:50.351680+00:00",
   "branch": "codex/s5-solo-20261109",
-  "codeSha": "2466a399f99d72180d52fa205212296d59f79d1f",
+  "codeSha": "2205d09478a99c988f134dc71a2be461d76b450e",
   "firmsByDomain": {
     "musiprirodne.sk": {
       "domain": "musiprirodne.sk",
@@ -836,7 +836,7 @@
     },
     "mydlarnasafran.cz": {
       "checkedAt": "2026-11-10T08:15:38.052746+00:00",
-      "status": "LOCAL_QA_VERIFIED_PREVIEW_PENDING",
+      "status": "PREVIEW_QA_VERIFIED_NOT_PRODUCTION",
       "claimSha": "3619670ff03fcdd22d925d885fb4fe2889ef40e1",
       "domain": "mydlarnasafran.cz",
       "operator": "Klára Šafránková",
@@ -856,8 +856,8 @@
       "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
       "production": "NOT_DEPLOYED",
       "emailDraft": "NOT_READY",
-      "next": "Commit selected reviewed runtime/data/proofs, inspect exact deployment, then own live all11 results and loaded photos.",
-      "state": "LOCAL_QA_VERIFIED_PREVIEW_PENDING",
+      "next": "Persist remaining57 local screenshots in8 small independent ZIPs and5 actual live screenshots; continue next eligible independent firm and integrate perfume proposal after review.",
+      "state": "PREVIEW_QA_VERIFIED_NOT_PRODUCTION",
       "products": 11,
       "sourceFacts": "n447/s5/sources/safran/verified-products.json",
       "sourceVariantPriceCheck": "14 exact official pages:11 standard+3 smaller variants, VAT-inclusive prices and stock agree",
@@ -878,7 +878,30 @@
         "fullReport": "n447/s5/dokazy/safran-result-qa.json",
         "focusedReport": "n447/s5/dokazy/safran-focused-qa.json"
       },
-      "preview": "PENDING_RUNTIME_CHECKPOINT"
+      "preview": {
+        "deployment": "dpl_9kwZ1rYSMwoFqvLPvredsQGR4MQU",
+        "sha": "2205d09478a99c988f134dc71a2be461d76b450e",
+        "url": "https://kava-chatbot-backend-qc9ixwf4l-danielvendzur-codes-projects.vercel.app/s5.html?demo=safran",
+        "state": "READY",
+        "ownLiveQA": {
+          "results": 11,
+          "unique": 11,
+          "questionNodes": 8,
+          "allPhotosLoaded": true,
+          "width": 1363,
+          "smallerVariants": 3,
+          "addon": "162+447=609, unchecked and restored162",
+          "comparison": "4 facial candidates,2 selected with exact price/pack/CTA",
+          "consoleAudit": {
+            "sampleCount": 200,
+            "extensionErrors": 200,
+            "nonExtensionErrors": [],
+            "scope": "Captured browser console errors returned by tool, maximum200; extension metadata errors retained, not silenced."
+          },
+          "paidModelCalls": 0,
+          "proof": "n447/s5/dokazy/safran-preview-qa.json"
+        }
+      }
     }
   },
   "localGit": {
@@ -897,14 +920,14 @@
       "repo",
       "s5-next"
     ],
-    "nextStep": "Safran runtime checkpoint then actual live11-result Preview QA."
+    "nextStep": "Persist remaining57 local screenshots in8 small independent ZIPs and5 actual live screenshots; continue next eligible independent firm and integrate perfume proposal after review."
   },
   "autonomousBacklog": {
     "source": "BACKLOG-DLHODOBE-20261109.md",
     "minimumMilestone": 20,
     "nextMilestone": 40,
     "stopAtMilestone": false,
-    "previewVerifiedCount": 10,
+    "previewVerifiedCount": 11,
     "oneWorker": false,
     "emailSendingForbidden": true,
     "productionForbidden": true,

@@ -25,9 +25,19 @@ Porovnanie má4 explicitné odlišné pleťové prípravky. Nový malý opt-in R
 - Pôvodný test mal chybný predpoklad ml pri porovnaní mydiel; opravený na jednotky konkrétnych zvolených výrobkov, už prejdených11 výsledkov320px zachovaných. Druhá konkrétna chyba bola pevne zvolená telová dvojica mimo aktuálneho pickera; obsahový výber opravený explicitným pleťovým zoznamom.
 - Výsledkové snímky33 a otázky vizuálne prezreté; desktop review koláže sú len výrezy pravého widgetu, pôvodné plné browser snímky sa zachovávajú.
 
-Runtime/checkpoint SHA a presný Preview budú doplnené po uložení. LIVE PREVIEW QA SAFRAN ZATIAĽ PENDING; počet vlastne Preview overených zostáva10. Textová e-mailová ponuka NOT_READY. Žiadna produkcia, alias/DNS, pošta ani platený model.
+Historický stav pred runtime uploadom: Preview bolo PENDING. Aktuálny dokončený stav je nižšie (11/11, séria11). Textová e-mailová ponuka NOT_READY. Žiadna produkcia, alias/DNS, pošta ani platený model.
 
 ## Súbežná práca
 Nižší browser kolega po obnove prihlásenia prijal pokračovanie Adora Niche/Niche & Glow. Môže vlastnú izolovanú codex/s5-perfume-20261110, rezervácie až po živom home/product/widget a fresh domain/operator kontrole, claims s lease. Len vlastné katalógy/fakty/asset/config fragmenty, spoločné súbory vlastní tento pracovník. Muschio/Perfumia a všetky HOLD zachované. Storage zoznam odovzdaný majiteľovi pre najvyšší Codex; skutočné mazanie/poklesGB zatiaľ nepotvrdené.
 
 Copy: ponuka bez explicitného textu o skúšobnom období už vlastne overená na READY dpl_DKBD55LqTS6rcifAscXEeVzBXpFC /2466a399f99d72180d52fa205212296d59f79d1f, iba živý offer-scope. Dôkaz s5-offer-preview-20261110.json/webp. Cena447+10 zostáva.
+
+
+## Vlastné živé Preview dokončené
+Runtime SHA2205d09478a99c988f134dc71a2be461d76b450e, READY dpl_9kwZ1rYSMwoFqvLPvredsQGR4MQU.
+https://kava-chatbot-backend-qc9ixwf4l-danielvendzur-codes-projects.vercel.app/s5.html?demo=safran
+Vlastné živé11/11 výsledkov, ceny/balenia/konkrétne CTA, skutočné naturalWidth800 až2327, optimalizovaný nechtový roll-on1024. Všetkých8 otázkových uzlov s načítanými obrázkami, progress a4 root voľby po resete.3 menšie varianty presné ceny/URL, doplnok162→609→162,4x40px čipy, explicitný pleťový picker a odlíčenie vs pleťové mydlo s načítanými fotografiami/cenami/balením/popisom/odkazmi. Žiadna živá modelová otázka ani platené volanie. Preview šírka1363, lokálne320/390/1280.5 živých snímok vizuálne prezretých.
+Počiatočné predčasné čítanie obrázka sa nepočítalo, kým v ďalšom reálnom browser kroku nemal kladnú naturalWidth. Konzolový nález: v posledných200 zachytených error záznamoch všetky pochádzali z chrome-extension content-script a hlásili Error sending browser metadata to extension. V tejto obmedzenej vzorke žiadna aplikačná chyba; nejde o tvrdenie absolútne čistej celej konzoly. Rozšírenie/ochrana sa nemenili. Lokálne pageerror testy0.
+Počet vlastne Preview overených teraz11. Nie produkcia ani schválenie majiteľom; návrh e-mailu stáleNOT_READY, pošta/NepísaťPENDING_CONTROLLER.
+
+Plné dôkazy:57 finálnych lokálnych browser snímok v8 samostatných ZIPoch každý<250KB plus5 živých PreviewWebP. Manifest obsahuje SHA256 súborov/archívov. Všetkých13 binárnych objektov (8 samostatných ZIPov +5 živých WebP) úspešne uložených cez GitHub create_blob; manifest sa prikladá do tohto proof checkpointu. Zmena iba dôkazov/stavu, runtime2205 ostáva rozsahom živého QA. Žiadne opakovanie nezmenených testov.
