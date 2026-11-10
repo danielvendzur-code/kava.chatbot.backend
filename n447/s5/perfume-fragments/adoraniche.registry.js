@@ -39,27 +39,27 @@ globalThis.S5_PERFUME_FRAGMENTS.adoraniche = {
  "traitCopy": {
   "green": [
    "Citrusy, figa alebo šťavnaté ovocie",
-   "Preferenčná skupina tónov; nie klasifikácia rodiny.",
+   "Citrón s mätou, figa so zeleným čajom alebo liči s rebarborou.",
    "Citrusy, figa alebo šťavnaté ovocie",
-   "Preferenčná skupina tónov; nie klasifikácia rodiny."
+   "Citrón s mätou, figa so zeleným čajom alebo liči s rebarborou."
   ],
   "clean": [
    "Mydlové, pudrové alebo ružové tóny",
-   "Preferenčná skupina tónov; nie klasifikácia rodiny.",
+   "Od mydlového dojmu po ružu s vanilkou a mlieko s ryžovým púdrom.",
    "Mydlové, pudrové alebo ružové tóny",
-   "Preferenčná skupina tónov; nie klasifikácia rodiny."
+   "Od mydlového dojmu po ružu s vanilkou a mlieko s ryžovým púdrom."
   ],
   "gourmand": [
    "Čaj, kokos alebo sladké tóny",
-   "Preferenčná skupina tónov; nie klasifikácia rodiny.",
+   "Pražený čaj, korenistý chai, kokos, čokoláda či datle s orechmi.",
    "Čaj, kokos alebo sladké tóny",
-   "Preferenčná skupina tónov; nie klasifikácia rodiny."
+   "Pražený čaj, korenistý chai, kokos, čokoláda či datle s orechmi."
   ],
   "wood": [
    "Suchý oud",
-   "Preferenčná skupina tónov; nie klasifikácia rodiny.",
+   "Suchý oud s drevitým a zemitým charakterom.",
    "Suchý oud",
-   "Preferenčná skupina tónov; nie klasifikácia rodiny."
+   "Suchý oud s drevitým a zemitým charakterom."
   ],
   "adam": [
    "Ruža a vanilka",

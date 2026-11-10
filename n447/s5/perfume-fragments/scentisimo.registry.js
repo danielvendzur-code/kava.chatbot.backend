@@ -39,27 +39,27 @@ globalThis.S5_PERFUME_FRAGMENTS.scentisimo = {
  "traitCopy": {
   "fresh": [
    "Citrusy, máta nebo magnolie",
-   "Skupina pro orientaci podle uvedených tónů.",
+   "Citron s růží, máta s melounem nebo bergamot s magnolií.",
    "Citrusy, máta nebo magnolie",
-   "Skupina pro orientaci podle uvedených tónů."
+   "Citron s růží, máta s melounem nebo bergamot s magnolií."
   ],
   "floral": [
    "Frézie, růže nebo bílé květy",
-   "Skupina pro orientaci podle uvedených tónů.",
+   "Frézie a kosatec, růže a fialka, neroli či jasmín s ylang-ylangem.",
    "Frézie, růže nebo bílé květy",
-   "Skupina pro orientaci podle uvedených tónů."
+   "Frézie a kosatec, růže a fialka, neroli či jasmín s ylang-ylangem."
   ],
   "gourmand": [
    "Vanilka, kokos nebo karamel",
-   "Skupina pro orientaci podle uvedených tónů.",
+   "Vanilka s kadidlem, malina s karamelem nebo kokos s frangipani.",
    "Vanilka, kokos nebo karamel",
-   "Skupina pro orientaci podle uvedených tónů."
+   "Vanilka s kadidlem, malina s karamelem nebo kokos s frangipani."
   ],
   "wood": [
    "Oud nebo koření",
-   "Skupina pro orientaci podle uvedených tónů.",
+   "Mandlově ovocný oud nebo kardamom, levandule a skořice.",
    "Oud nebo koření",
-   "Skupina pro orientaci podle uvedených tónů."
+   "Mandlově ovocný oud nebo kardamom, levandule a skořice."
   ],
   "eau-de-la-couronne": [
    "Frézie a kosatec",

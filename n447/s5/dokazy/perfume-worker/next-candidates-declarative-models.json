@@ -1,0 +1,236 @@
+{
+  "checkedAt": "2026-11-10T13:57:11.570034+00:00",
+  "scope": "Declarative offline preparation only. No new company reservation, runtime integration or active demo.",
+  "reports": [
+    {
+      "domain": "kintsugiperfumes.com",
+      "status": "PROPOSED_DATA_MODEL_NOT_RESERVED_NOT_RUNTIME",
+      "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+      "sourceFacts": "next-candidates-source-preflight.json",
+      "groupingMeaning": "Editorial preference groups using officially listed notes; not asserted official fragrance families.",
+      "model": {
+        "key": "fragranceDirection",
+        "question": "Jaké tóny chcete objevovat?",
+        "options": [
+          {
+            "value": "fresh",
+            "label": "Citrusy, moře nebo jehličí",
+            "key": "fragranceProfile",
+            "question": "Které tóny vás lákají?",
+            "options": [
+              {
+                "value": "taom-eau-de-parfum",
+                "label": "Grapefruit, mořská sůl a koňak",
+                "productId": "taom-eau-de-parfum",
+                "sourceUrl": "https://kintsugiperfumes.com/products/taom-eau-de-parfum"
+              },
+              {
+                "value": "kaigan-eau-de-parfum",
+                "label": "Fík, bazalka a mořské akordy",
+                "productId": "kaigan-eau-de-parfum",
+                "sourceUrl": "https://kintsugiperfumes.com/products/kaigan-eau-de-parfum"
+              },
+              {
+                "value": "hanzo-eau-de-parfum",
+                "label": "Yuzu, borovice a kadidlo",
+                "productId": "hanzo-eau-de-parfum",
+                "sourceUrl": "https://kintsugiperfumes.com/products/hanzo-eau-de-parfum"
+              },
+              {
+                "value": "tempo-eau-de-parfum",
+                "label": "Fík, vavřín a zázvor",
+                "productId": "tempo-eau-de-parfum",
+                "sourceUrl": "https://www.kintsugiperfumes.com/products/tempo-eau-de-parfum"
+              }
+            ]
+          },
+          {
+            "value": "floral",
+            "label": "Květy, čaj nebo černý rybíz",
+            "key": "fragranceProfile",
+            "question": "Které tóny vás lákají?",
+            "options": [
+              {
+                "value": "muza-eau-de-parfum",
+                "label": "Broskev a jasmínový čaj",
+                "productId": "muza-eau-de-parfum",
+                "sourceUrl": "https://kintsugiperfumes.com/products/muza-eau-de-parfum"
+              },
+              {
+                "value": "carnal-eau-de-parfum",
+                "label": "Černý rybíz, růže a jalovec",
+                "productId": "carnal-eau-de-parfum",
+                "sourceUrl": "https://kintsugiperfumes.com/products/carnal-eau-de-parfum"
+              }
+            ]
+          },
+          {
+            "value": "gourmand",
+            "label": "Cukrová vata nebo kakao s rumem",
+            "key": "fragranceProfile",
+            "question": "Které tóny vás lákají?",
+            "options": [
+              {
+                "value": "luna-eau-de-parfum",
+                "label": "Pomerančový květ a cukrová vata",
+                "productId": "luna-eau-de-parfum",
+                "sourceUrl": "https://kintsugiperfumes.com/products/luna-eau-de-parfum"
+              },
+              {
+                "value": "ambre-extrait-de-parfum",
+                "label": "Kakao, rum a švestka",
+                "productId": "ambre-extrait-de-parfum",
+                "sourceUrl": "https://kintsugiperfumes.com/products/ambre-extrait-de-parfum"
+              }
+            ]
+          },
+          {
+            "value": "wood",
+            "label": "Dřevo, koření nebo kouř",
+            "key": "fragranceProfile",
+            "question": "Které tóny vás lákají?",
+            "options": [
+              {
+                "value": "santal-eau-de-parfum",
+                "label": "Santal, malina a kůže",
+                "productId": "santal-eau-de-parfum",
+                "sourceUrl": "https://kintsugiperfumes.com/products/santal-eau-de-parfum"
+              },
+              {
+                "value": "deus-eau-de-parfum",
+                "label": "Zázvor, pepř a oud",
+                "productId": "deus-eau-de-parfum",
+                "sourceUrl": "https://kintsugiperfumes.com/products/deus-eau-de-parfum"
+              },
+              {
+                "value": "phenix-eau-de-parfum",
+                "label": "Káva, tabák a kůže",
+                "productId": "phenix-eau-de-parfum",
+                "sourceUrl": "https://kintsugiperfumes.com/products/phenix-eau-de-parfum"
+              },
+              {
+                "value": "ambre-oud-extrait-de-parfum",
+                "label": "Mango, med a oud",
+                "productId": "ambre-oud-extrait-de-parfum",
+                "sourceUrl": "https://kintsugiperfumes.com/products/ambre-oud-extrait-de-parfum"
+              }
+            ]
+          }
+        ]
+      },
+      "validation": {
+        "allSourceProductsReachableOnce": true,
+        "noEmptyOrSingleOptionQuestions": true,
+        "formulaCount": 12,
+        "modelOnly": "PASS",
+        "engine": "NOT_RUN_SHARED_OWNER_REQUIRED",
+        "ui": "NOT_RUN",
+        "liveWidget": "NOT_RUN_OWN_BROWSER",
+        "preview": "NOT_RUN",
+        "paidModelCalls": 0
+      },
+      "compareProductIds": [
+        "ambre-extrait-de-parfum",
+        "tempo-eau-de-parfum"
+      ],
+      "questionsExcluded": [
+        "intensity",
+        "occasion",
+        "gender",
+        "skin/hair type",
+        "budget",
+        "layering/add-on"
+      ],
+      "runtimeEnabled": false
+    },
+    {
+      "domain": "oraculum.store",
+      "status": "PROPOSED_DATA_MODEL_NOT_RESERVED_NOT_RUNTIME",
+      "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+      "sourceFacts": "next-candidates-source-preflight.json",
+      "groupingMeaning": "Editorial preference groups using officially listed notes; not asserted official fragrance families.",
+      "model": {
+        "key": "fragranceDirection",
+        "question": "Jaké tóny chcete objevovat?",
+        "options": [
+          {
+            "value": "fig",
+            "label": "Fík a rostlinné tóny",
+            "key": "fragranceProfile",
+            "question": "Které tóny vás lákají?",
+            "options": [
+              {
+                "value": "helenist",
+                "label": "Fíkový list a kokos",
+                "productId": "helenist",
+                "sourceUrl": "https://oraculum.store/products/helenist"
+              },
+              {
+                "value": "arabesque",
+                "label": "Fík, mrkvová semena a kosatec",
+                "productId": "arabesque",
+                "sourceUrl": "https://oraculum.store/products/arabesque"
+              }
+            ]
+          },
+          {
+            "value": "wood",
+            "label": "Dřevo, koření nebo pryskyřice",
+            "key": "fragranceProfile",
+            "question": "Které tóny vás lákají?",
+            "options": [
+              {
+                "value": "santalist",
+                "label": "Santal, okurka a kardamom",
+                "productId": "santalist",
+                "sourceUrl": "https://oraculum.store/products/santalist"
+              },
+              {
+                "value": "krucifist",
+                "label": "Pepř, levandule a kadidlo",
+                "productId": "krucifist",
+                "sourceUrl": "https://oraculum.store/products/krucifist"
+              },
+              {
+                "value": "katarzist",
+                "label": "Tabák, růže a oud",
+                "productId": "katarzist",
+                "sourceUrl": "https://oraculum.store/products/katarzist"
+              },
+              {
+                "value": "mio-dio",
+                "label": "Marakuja, oud a kůže",
+                "productId": "mio-dio",
+                "sourceUrl": "https://oraculum.store/products/mio-dio"
+              }
+            ]
+          }
+        ]
+      },
+      "validation": {
+        "allSourceProductsReachableOnce": true,
+        "noEmptyOrSingleOptionQuestions": true,
+        "formulaCount": 6,
+        "modelOnly": "PASS",
+        "engine": "NOT_RUN_SHARED_OWNER_REQUIRED",
+        "ui": "NOT_RUN",
+        "liveWidget": "NOT_RUN_OWN_BROWSER",
+        "preview": "NOT_RUN",
+        "paidModelCalls": 0
+      },
+      "compareProductIds": [
+        "helenist",
+        "mio-dio"
+      ],
+      "questionsExcluded": [
+        "intensity",
+        "occasion",
+        "gender",
+        "skin/hair type",
+        "budget",
+        "layering/add-on"
+      ],
+      "runtimeEnabled": false
+    }
+  ]
+}

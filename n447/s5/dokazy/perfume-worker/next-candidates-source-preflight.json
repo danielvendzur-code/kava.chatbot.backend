@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-10T13:40:59.886108+00:00",
+  "checkedAt": "2026-11-10T13:56:03.203331+00:00",
   "scope": "Official HTTPS HTML + public official catalogue JSON. No live widget QA, reservation, runtime registration or finished demo.",
   "revenue": "UNKNOWN",
   "beforeAnyReservation": "MAIN_WORKER_CUA home+product+widget report and fresh all-remote domain/operator/aliases/claims check required.",
@@ -11,7 +11,6 @@
       "country": "CZ",
       "status": "SOURCE_PREFLIGHT_NOT_RESERVED_LIVE_QA_PENDING",
       "officialListingCount": 29,
-      "distinctAvailablePersonalFragrances": 11,
       "products": [
         {
           "name": "AMBRÉ OUD Extrait de Parfum",
@@ -199,6 +198,23 @@
           "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Taom.png?v=1772208498",
           "intensity": null,
           "occasion": null
+        },
+        {
+          "name": "TEMPO Eau de Parfum + extra náplň",
+          "url": "https://www.kintsugiperfumes.com/products/tempo-eau-de-parfum",
+          "verifiedAt": "2026-11-10T13:55:15.417907+00:00",
+          "pack": "2 × 8 ml",
+          "priceAmount": 1190,
+          "currency": "CZK",
+          "priceEvidence": "Official page: 1,190 Kč; official variant price 1190.00; page Včetně daní.",
+          "stockEvidence": {
+            "officialVariantAvailable": true,
+            "visibleLiveState": "NOT_VERIFIED_BY_THIS_WORKER"
+          },
+          "notesExcerpt": "Noty parfému\nHlava: Bergamot, Fík, Vavřínový list, Mandarinka, Kardamom\nSrdce: Šalvěj, Neroli, Hinoki, Zázvor\nZáklad: Santalové dřevo, Pižmo, Kadidlo",
+          "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/tempo_0054.jpg?v=1747372413",
+          "intensity": null,
+          "occasion": null
         }
       ],
       "revenue": "UNKNOWN",
@@ -233,10 +249,19 @@
       ],
       "excludedFromFormulaCount": [
         "Samples/discovery set/gift vouchers",
-        "TEMPO car fragrance and refill",
+        "TEMPO replacement refill is the same formula as TEMPO and not counted separately",
         "KINGDOM COME official variant unavailable"
       ],
-      "stockCaveat": "Raw HTML contains generic sold-out text; DOM styling and live stock state require browser inspection. Public official variants available=true for listed 11."
+      "stockCaveat": "Raw HTML contains generic sold-out text; DOM styling and live stock state require browser inspection. Public official variants available=true for listed 12.",
+      "reviewedAvailablePersonalFragrances": 12,
+      "entireAssortmentFullyClassified": false,
+      "correction": {
+        "at": "2026-11-10T13:56:03.203315+00:00",
+        "previousIncorrectClassification": "TEMPO car fragrance",
+        "correctOfficialSourceFact": "TEMPO Eau de Parfum + extra náplň; 2 x 8 ml, 1190 CZK.",
+        "source": "https://www.kintsugiperfumes.com/products/tempo-eau-de-parfum",
+        "effect": "Twelve reviewed available formulas, with TEMPO/refill counted once."
+      }
     },
     {
       "domain": "oraculum.store",
@@ -245,7 +270,6 @@
       "country": "CZ",
       "status": "SOURCE_PREFLIGHT_NOT_RESERVED_LIVE_QA_PENDING",
       "officialListingCount": 32,
-      "distinctAvailablePersonalFragrances": 6,
       "products": [
         {
           "name": "MIO DIO",
@@ -376,7 +400,10 @@
         "Sets and bundles",
         "Home incense and stands"
       ],
-      "selectionNeed": "Distinguish six source-backed note profiles; sample/size is a later variant decision, not a new formula."
+      "selectionNeed": "Distinguish six source-backed note profiles; sample/size is a later variant decision, not a new formula.",
+      "reviewedAvailablePersonalFragrances": 6,
+      "entireAssortmentFullyClassified": false
     }
-  ]
+  ],
+  "retrievalMethod": "Verified HTTPS using inherited CA trust; official HTML and public official Shopify JSON, not rendered browser QA."
 }

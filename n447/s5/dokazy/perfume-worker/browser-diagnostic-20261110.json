@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-10T13:47:49.468558+00:00",
+  "scope": "Default Chromium navigation diagnostic; no certificate bypass, no cookie/form/cart actions.",
+  "results": [
+    {
+      "url": "https://kintsugiperfumes.com/",
+      "error": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://kintsugiperfumes.com/\nCall log:\n  - navigating to \"https://kintsugiperfumes.com/\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "url": "https://kintsugiperfumes.com/products/luna-eau-de-parfum",
+      "error": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://kintsugiperfumes.com/products/luna-eau-de-parfum\nCall log:\n  - navigating to \"https://kintsugiperfumes.com/products/luna-eau-de-parfum\", waiting until \"domcontentloaded\"\n"
+    }
+  ],
+  "callableInterfaces": "No control-browser js, CUA cua_repl.js or shared Chrome tool offered in discovered tools this turn.",
+  "environmentStatus": {
+    "connectivity": "connected",
+    "networkPolicy": "unrestricted/enforced",
+    "observationsCurrent": true,
+    "remoteDesktopEnabled": true,
+    "remoteDesktopState": "unknown"
+  },
+  "interpretation": "Worker browser trust/interface blocker; NOT evidence that either website is down. Ordinary verified HTTPS fetched both official URLs successfully.",
+  "safety": "No certificate bypass or trust configuration change; no added rights; no cookies/forms/cart actions."
+}
