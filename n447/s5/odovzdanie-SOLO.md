@@ -303,3 +303,14 @@ Presný blok pred obnovením: pokus create_blob pre nafigate-screenshots.zip (1 
 
 
 Uloženie dôkazov po obnove: všetkých chýbajúcich 34 menších WebP má potvrdený GitHub blob SHA; spolu so šiestimi už uloženými ide o všetkých 40 snímok z manifestu. Priebežný zoznam SHA je v nafigate-upload-progress.json. Archív zip sa nepovažuje za uložený; jednotlivé súbory sú plnohodnotné dôkazy a zachovávajú originálny manifest SHA256.
+
+
+## Boemi – lokálne overené, Preview PENDING (10. 11.)
+
+12 rôznych receptúr / 12 dosiahnuteľných výsledkov, osem otázkových uzlov. Lokálne 36 výsledkov /60 obrazoviek na320/390/1280px, bez fotografií12/20,0nálezov. Každý výsledok má načítanú oficiálnu fotografiu, presnú cenu/balenie/CTA, reset a nadviazanie. Štyri čipy40px, hover bez posunu, porovnanie dvoch odlišných výrobkov s opisom, mock čakanie a reduced motion.3backend mock volania,0platených. Vizuálne prezreté všetky výsledky na troch šírkach a osem otázok. Drobný široký avatar sa nahrádza oficiálnym faviconom; následná cielená kontrola je osobitný dôkaz.
+
+Hlavný krém na ruky Shea150ml147Kč;70ml110Kč iba rozbaliteľný variant s presnou URL. Tělové máslo130ml220Kč a peeling150g250Kč používajú aktuálne oficiálne balenia aj keď staré URL obsahujú150ml/180g. Citrusový sprchový gél250ml140Kč má staré240ml v URL. Dobrovoľný nezvolený doplnok iba maslo220 + sprchový gél145=365Kč, rozpočet300 ho v jadre vylúči. Úvod rozpočet nesľubuje.
+
+Pri obsahu sa našla heuristická zámena bambuckého krému/gélu za maslo. Dvojriadkový opt-in routineRoleVerified v jadre akceptuje iba explicitne uzamknuté overené S5 role. Boemi má doloženú rolu aj textúru; fingerprinty pripravených rolí/vlastností všetkých ôsmich starších katalógov sa nezmenili (verified-role-compatibility.json). Staré UI testy sa neopakovali.
+
+Cosmetica Bohemica s.r.o./27888665, súvisiace obchod-boemi.cz a SK zastúpenie boemikozmetika.sk/47046635 skontrolované v91refs; bežné filtre, žiadny produktový chat pozorovaný pri home+produkt kontrole, iné režimy neisté. Doprava zdarma iba nad1200Kč podľa CZ maloobchodných OP. Kontakt info@boemi.cz z oficiálnych kontaktov; textový návrh NOT_READY447+10, pošta PENDING_CONTROLLER. Preview zatiaľ PENDING, nezapočítavať do ôsmich živých.

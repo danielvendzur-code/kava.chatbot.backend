@@ -1,0 +1,24 @@
+{
+  "paidCalls": 0,
+  "mockCalls": 3,
+  "rows": [
+    {
+      "query": "Krém na suché ruce",
+      "id": "hand-seabuckthorn",
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "query": "Šampon pro suchou pokožku hlavy",
+      "id": "hair-dead-sea",
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "query": "Cukrový peeling do sprchy",
+      "id": "body-scrub",
+      "status": 200,
+      "exactUrlAndPrice": true
+    }
+  ]
+}

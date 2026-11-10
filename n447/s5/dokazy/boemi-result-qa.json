@@ -1,0 +1,431 @@
+{
+  "ok": true,
+  "paidCalls": 0,
+  "rows": [
+    {
+      "width": 320,
+      "id": "lip-pear",
+      "price": "94 Kč",
+      "pack": "15 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/balzam-na-rty-hruska-15ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "id": "hair-dead-sea",
+      "price": "139 Kč",
+      "pack": "275 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/vlasovy-sampon-mrtve-more-275ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "id": "hair-lavender",
+      "price": "135 Kč",
+      "pack": "250 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/vlasovy-sampon-magistra-levandule-250ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "id": "shower-citrus",
+      "price": "140 Kč",
+      "pack": "250 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/sprchovy-gel-s-vitaminovymi-kulickami-mandarinka-a-zeleny-caj-240ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "id": "shower-shea",
+      "price": "145 Kč",
+      "pack": "275 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/sprchovy-gel-bambucke-maslo-275ml/",
+      "addon": {
+        "base": "145 Kč",
+        "total": "365 Kč",
+        "restored": true
+      },
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "id": "body-scrub",
+      "price": "250 Kč",
+      "pack": "150 g",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/telovy-peeling-shea-butter-180g/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "id": "body-milk-citrus",
+      "price": "127 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/telove-mleko-mandarinka-a-zel-caj-150ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "id": "body-milk-grape",
+      "price": "127 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/telove-mleko-cerne-hrozno-m-150ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "id": "body-butter",
+      "price": "220 Kč",
+      "pack": "130 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/telove-maslo-shea-butter-150-ml/",
+      "addon": {
+        "base": "220 Kč",
+        "total": "365 Kč",
+        "restored": true
+      },
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "id": "foot-herbal",
+      "price": "136 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/bylinny-krem-na-nohy-150ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "id": "hand-seabuckthorn",
+      "price": "136 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/krem-na-ruce-s-rakytnikovym-olejem/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 320,
+      "id": "hand-shea",
+      "price": "147 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/krem-na-ruce-bambucke-maslo-150ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "id": "lip-pear",
+      "price": "94 Kč",
+      "pack": "15 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/balzam-na-rty-hruska-15ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "id": "hair-dead-sea",
+      "price": "139 Kč",
+      "pack": "275 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/vlasovy-sampon-mrtve-more-275ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "id": "hair-lavender",
+      "price": "135 Kč",
+      "pack": "250 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/vlasovy-sampon-magistra-levandule-250ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "id": "shower-citrus",
+      "price": "140 Kč",
+      "pack": "250 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/sprchovy-gel-s-vitaminovymi-kulickami-mandarinka-a-zeleny-caj-240ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "id": "shower-shea",
+      "price": "145 Kč",
+      "pack": "275 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/sprchovy-gel-bambucke-maslo-275ml/",
+      "addon": {
+        "base": "145 Kč",
+        "total": "365 Kč",
+        "restored": true
+      },
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "id": "body-scrub",
+      "price": "250 Kč",
+      "pack": "150 g",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/telovy-peeling-shea-butter-180g/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "id": "body-milk-citrus",
+      "price": "127 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/telove-mleko-mandarinka-a-zel-caj-150ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "id": "body-milk-grape",
+      "price": "127 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/telove-mleko-cerne-hrozno-m-150ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "id": "body-butter",
+      "price": "220 Kč",
+      "pack": "130 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/telove-maslo-shea-butter-150-ml/",
+      "addon": {
+        "base": "220 Kč",
+        "total": "365 Kč",
+        "restored": true
+      },
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "id": "foot-herbal",
+      "price": "136 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/bylinny-krem-na-nohy-150ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "id": "hand-seabuckthorn",
+      "price": "136 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/krem-na-ruce-s-rakytnikovym-olejem/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "id": "hand-shea",
+      "price": "147 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/krem-na-ruce-bambucke-maslo-150ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "id": "lip-pear",
+      "price": "94 Kč",
+      "pack": "15 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/balzam-na-rty-hruska-15ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "id": "hair-dead-sea",
+      "price": "139 Kč",
+      "pack": "275 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/vlasovy-sampon-mrtve-more-275ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "id": "hair-lavender",
+      "price": "135 Kč",
+      "pack": "250 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/vlasovy-sampon-magistra-levandule-250ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "id": "shower-citrus",
+      "price": "140 Kč",
+      "pack": "250 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/sprchovy-gel-s-vitaminovymi-kulickami-mandarinka-a-zeleny-caj-240ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "id": "shower-shea",
+      "price": "145 Kč",
+      "pack": "275 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/sprchovy-gel-bambucke-maslo-275ml/",
+      "addon": {
+        "base": "145 Kč",
+        "total": "365 Kč",
+        "restored": true
+      },
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "id": "body-scrub",
+      "price": "250 Kč",
+      "pack": "150 g",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/telovy-peeling-shea-butter-180g/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "id": "body-milk-citrus",
+      "price": "127 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/telove-mleko-mandarinka-a-zel-caj-150ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "id": "body-milk-grape",
+      "price": "127 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/telove-mleko-cerne-hrozno-m-150ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "id": "body-butter",
+      "price": "220 Kč",
+      "pack": "130 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/telove-maslo-shea-butter-150-ml/",
+      "addon": {
+        "base": "220 Kč",
+        "total": "365 Kč",
+        "restored": true
+      },
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "id": "foot-herbal",
+      "price": "136 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/bylinny-krem-na-nohy-150ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "id": "hand-seabuckthorn",
+      "price": "136 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/krem-na-ruce-s-rakytnikovym-olejem/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1280,
+      "id": "hand-shea",
+      "price": "147 Kč",
+      "pack": "150 ml",
+      "photoLoaded": true,
+      "cta": "https://www.boemi.cz/produkt/krem-na-ruce-bambucke-maslo-150ml/",
+      "addon": null,
+      "reset": true,
+      "noOverflow": true
+    }
+  ],
+  "hover": "no movement, border changes",
+  "chips": "4x40px, exact relevant product links",
+  "comparison": "two distinct products, prices and pack sizes",
+  "pendingReduced": "static until mock response",
+  "applicationErrors": []
+}

@@ -1,0 +1,104 @@
+{
+  "products": 12,
+  "questions": 8,
+  "leaves": 12,
+  "reachable": 12,
+  "paidCalls": 0,
+  "paths": [
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "specificArea",
+        "purpose": "handCare",
+        "careVariant": "bHandShea"
+      },
+      "id": "hand-shea"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "specificArea",
+        "purpose": "handCare",
+        "careVariant": "bHandCucumber"
+      },
+      "id": "hand-seabuckthorn"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "specificArea",
+        "purpose": "footCare"
+      },
+      "id": "foot-herbal"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "dailyCare",
+        "kind": "Tělové máslo"
+      },
+      "id": "body-butter"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "dailyCare",
+        "kind": "Tělové mléko",
+        "careVariant": "bGrape"
+      },
+      "id": "body-milk-grape"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "dailyCare",
+        "kind": "Tělové mléko",
+        "careVariant": "bCitrus"
+      },
+      "id": "body-milk-citrus"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "occasionalCare"
+      },
+      "id": "body-scrub"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "cleansingCare",
+        "careVariant": "bShowerShea"
+      },
+      "id": "shower-shea"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "cleansingCare",
+        "careVariant": "bShowerCitrus"
+      },
+      "id": "shower-citrus"
+    },
+    {
+      "answers": {
+        "category": "hair",
+        "hairNeed": "bNormalHair"
+      },
+      "id": "hair-lavender"
+    },
+    {
+      "answers": {
+        "category": "hair",
+        "hairNeed": "bDryScalp"
+      },
+      "id": "hair-dead-sea"
+    },
+    {
+      "answers": {
+        "category": "lips"
+      },
+      "id": "lip-pear"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "rows": [
+    {
+      "width": 320,
+      "avatar": {
+        "src": "url(\"http://127.0.0.1:8997/assets/s3/boemi/avatar.png\")",
+        "rect": {
+          "x": 14,
+          "y": 246,
+          "width": 36,
+          "height": 36,
+          "top": 246,
+          "right": 50,
+          "bottom": 282,
+          "left": 14
+        }
+      },
+      "chips": "4x40px"
+    },
+    {
+      "width": 390,
+      "avatar": {
+        "src": "url(\"http://127.0.0.1:8997/assets/s3/boemi/avatar.png\")",
+        "rect": {
+          "x": 14,
+          "y": 231,
+          "width": 36,
+          "height": 36,
+          "top": 231,
+          "right": 50,
+          "bottom": 267,
+          "left": 14
+        }
+      },
+      "chips": "4x40px"
+    },
+    {
+      "width": 1280,
+      "avatar": {
+        "src": "url(\"http://127.0.0.1:8997/assets/s3/boemi/avatar.png\")",
+        "rect": {
+          "x": 723.921875,
+          "y": 254,
+          "width": 36,
+          "height": 36,
+          "top": 254,
+          "right": 759.921875,
+          "bottom": 290,
+          "left": 723.921875
+        }
+      },
+      "chips": "4x40px"
+    }
+  ],
+  "paidCalls": 0
+}

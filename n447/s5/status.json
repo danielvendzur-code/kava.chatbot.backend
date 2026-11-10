@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-10T06:43:05.653980+00:00",
+  "updatedAt": "2026-11-10T07:12:50.645996+00:00",
   "branch": "codex/s5-solo-20261109",
-  "codeSha": "06495078636f3dc16050aea332db1c2c9cdf9291",
+  "codeSha": "b876c47abab6f6efdf2ad5ff51ddf40411349763",
   "firmsByDomain": {
     "musiprirodne.sk": {
       "domain": "musiprirodne.sk",
@@ -639,7 +639,7 @@
     },
     "boemi.cz": {
       "checkedAt": "2026-11-09T22:25:37.820070+00:00",
-      "status": "reserved",
+      "status": "local_verified",
       "domain": "boemi.cz",
       "shop": "https://www.boemi.cz/e-shop/",
       "operator": "Cosmetica Bohemica s.r.o.",
@@ -663,7 +663,32 @@
       "mailDuplicateCheck": "PENDING_CONTROLLER",
       "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
       "production": "NOT_DEPLOYED",
-      "next": "Collect representative active skin/body/hair products, exact retail VAT prices, pack and stock; no inflated gift/scent pack variants.",
+      "next": "Persist code and reviewed screenshot evidence, obtain branch Preview, perform own live 12/12 QA.",
+      "avatarSource": {
+        "url": "https://www.boemi.cz/favicon.ico",
+        "checkedAt": "2026-11-10",
+        "note": "Official square favicon replaces unreadably wide wordmark only in small chat avatar; original retained."
+      },
+      "updatedAt": "2026-11-10T07:12:50.645996+00:00",
+      "products": 12,
+      "qa": {
+        "results": 36,
+        "screens": 60,
+        "widths": [
+          320,
+          390,
+          1280
+        ],
+        "leaves": 12,
+        "reachable": 12,
+        "noimgResults": 12,
+        "noimgScreens": 20,
+        "paidCalls": 0,
+        "mini": "70 ml / 110 Kč variant of main 150 ml / 147 Kč, separate exact official URL",
+        "addon": "Only body butter + shea shower gel, 365 Kč combined, unchecked; budget300 excludes addon",
+        "roleSafety": "Verified source routineRole opt-in only Boemi; eight prior catalogue fingerprints unchanged",
+        "visualReview": "All 12 results at three widths, eight questions, compare; avatar wordmark replaced with official favicon after review."
+      },
       "claimSha": "450e030cf1cc866514395a034fcf16a30010b939"
     }
   },

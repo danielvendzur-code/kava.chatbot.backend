@@ -10,6 +10,8 @@
   // In particular, blemish correctors were imported under face cleansing.
   function routineRole(p) {
     if(p.category==='other')return 'other';
+    // New S5 source-verified role overrides are explicit and opt-in; old catalogues are unchanged.
+    if(p.source?.series==='s5'&&p.source?.routineRoleVerified===true&&p.source?.kindLocked&&p.source?.categoryLocked&&['cleanser','cream','serum','oil','toner','shampoo','conditioner'].includes(p.source.routineRole))return p.source.routineRole;
     if(['conditioner','leaveInCare','styling'].includes(p.source?.routineRole))return p.source.routineRole;
     if(/predsampon|predumyvac/.test(norm(p.name+' '+p.kind)))return 'preWash';
     if (p.features?.packType === 'shampooDuo') return 'set';
