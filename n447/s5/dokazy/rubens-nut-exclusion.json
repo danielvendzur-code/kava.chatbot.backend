@@ -1,6 +1,7 @@
 {
   "ok": true,
   "paidCalls": 0,
+  "normalMockCalls": 1,
   "rows": [
     {
       "messages": [
@@ -10,7 +11,8 @@
         }
       ],
       "reply": "V této ukázce nemám doloženou vhodnou variantu pro požadavek bez ořechových olejů. Balzám 7Vit roll-on je obsahuje, proto jej pro tento požadavek nedoporučím. Úplné složení konkrétního výrobku si prosím ověřte před výběrem.",
-      "mockCalls": 1
+      "mockCalls": 0,
+      "modelCannotOverride": true
     },
     {
       "messages": [
@@ -28,7 +30,8 @@
         }
       ],
       "reply": "V této ukázce nemám doloženou vhodnou variantu pro požadavek bez ořechových olejů. Balzám 7Vit roll-on je obsahuje, proto jej pro tento požadavek nedoporučím. Úplné složení konkrétního výrobku si prosím ověřte před výběrem.",
-      "mockCalls": 1
+      "mockCalls": 0,
+      "modelCannotOverride": true
     }
   ]
 }

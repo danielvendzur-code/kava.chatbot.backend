@@ -795,7 +795,9 @@
         "sourceVariants": "110g hygienic-sack shampoo150Kč,15ml face oils262.50Kč,140g fats277.60Kč,90g scrubs295Kč,conditioner100g189.10Kč,lip9g157.50Kč",
         "optionalAddon": "Conditioner189.10 only after shampoo150 =339.10Kč; unchecked. No forced shampoo after conditioner.",
         "visualReview": "12result views at3widths plus7question nodes; hair-afterwash/bodycream/herbalbath scenes corrected by configuration. Focused affected-path/scene checks3widths; transient screenshots recaptured with reduced motion.",
-        "nutExclusion": "Initial offline counterexample recommended nut-oil balm; Rubens-only rule now blocks known-nut-oil suggestion and unverified allergy-safe alternatives, direct and followup tested backend and actual offline UI."
+        "nutExclusion": "Initial offline counterexample recommended nut-oil balm; Rubens-only rule now blocks known-nut-oil suggestion and unverified allergy-safe alternatives, direct and followup tested backend and actual offline UI.",
+        "exclusionModelCalls": 0,
+        "normalRegressionMockCalls": 1
       },
       "sha": "02fb9b27dd0571367bcb3409720b8d2be2d7868c",
       "preview": {
@@ -809,6 +811,19 @@
         "checkedAt": "2026-11-10T08:03:35.999977+00:00",
         "modelRequests": 0
       }
+    },
+    "alchymistky.cz": {
+      "domain": "alchymistky.cz",
+      "operator": "Alchemix laboratory s.r.o.",
+      "ico": "06542433",
+      "status": "PENDING_LIVE_WIDGET_CHECK_NOT_RESERVED",
+      "evidence": [
+        "https://www.alchymistky.cz/cs/",
+        "https://www.alchymistky.cz/cs/kontakt"
+      ],
+      "browserAttempt": "Page.navigate timed out, then Page.getFrameTree timed out on new blank tab8. No observed target-site block/challenge. No reservation or code.",
+      "duplicateNote": "91refs: only generic alchymistky word in Pimpinella ALCHYMISTKA aromatherapykit description; no domain/operator/ICO hit. Related SK organization still to verify.",
+      "next": "Complete supported live home+product inspection before reservation."
     }
   },
   "localGit": {

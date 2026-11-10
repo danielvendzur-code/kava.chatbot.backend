@@ -360,3 +360,10 @@ Vlastný browser1363×936 prešiel12/12koncových výsledkov, všetkyfotografiec
 Séria má desať vlastne Preview overených ukážok. Žiadna produkcia ani zákaznícke schválenie. Samostatné WebPPreview aJSONobsahujú aktuálne overené výsledky; všetkých63lokálnych WebP je pripravených v9samostatných malých archívoch s manifestom, ich upload sa potvrdzuje jednotlivo. Ďalej preveriť Alchymistky a Mýdlárna Šafrán, bez rezervácie pred živou kontrolou widgetov a prevádzkovateľov.
 
 Uloženie Rubens dôkazov: všetkých9samostatných archívov(63WebP) a4priame PreviewWebP majú potvrdené GitHub blob SHA. rubens-proof-upload-progress.json a manifest archívov ukladajú presné cesty/SHA256.
+
+
+## Rubens – deterministické vylúčenie pred modelom
+
+Dodatočné spevnenie: samotný správny lokálny draft ešte umožňoval jeho preformulovanie poskytovateľom. Vylúčenie orechových olejov Rubens sa preto teraz vracia priamo pred volaním modelu. Významový test dáva modelovému mocku zámerne vyhodiť chybu, ak by bol oslovený: priamy aj nadväzujúci dotaz prešli s0volaniami; bežný dotaz zostáva1mockvolanie. Žiadne platenétesty a súbor api/ai-chat.js/model/kľúče bez zmeny. OfflineUI oboch správ po úprave prešlo. Zmena iba S5exclusion helper a jeho backend spotreba;12produktov,strom,fotky arozhranie bez zmeny. Kompletné živé12/12 dokázané na02fb9b27/dpl_8WtE4FoJJwsouyj54FQyMdUJsCHV; nový backendovýdelta sa odovzdáva s vlastnýmSHA, bez predstierania ďalšieho plného PreviewQA.
+
+Alchymistky zatiaľ NEREZERVOVANÉ: aktuálny officialweb bol úspešne získanýwebretrievalom; prehliadka vlastného widgetu však skončila Page.navigate timedout a následne Page.getFrameTree timedout na novej about:blankkarte8. Nie je to dôkazbota ani nefunkčnostiwebu. Pred kódom treba dokončiť živúhome+produkt kontrolu. Predbežný91refaudit domény/IČO06542433/Alchemix bez zhody; slovo alchymistky v7starýchrefs je iba opis produktuALCHYMISTKA(pimpinella.co/alchymistka/), nie táto značka ani operátor. Šafrán predbežne bez domény/menaoperátora; IČO76267334 ešte doplniťdoauditu a živúkontrolu.
