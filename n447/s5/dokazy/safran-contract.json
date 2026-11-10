@@ -1,0 +1,95 @@
+{
+  "products": 11,
+  "questions": 8,
+  "leaves": 11,
+  "reachable": 11,
+  "paidCalls": 0,
+  "paths": [
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "cleansingCare",
+        "purpose": "makeupRemoval"
+      },
+      "id": "face-remover"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "cleansingCare",
+        "purpose": "washing"
+      },
+      "id": "face-soap"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "careVariant": "sVersatile"
+      },
+      "id": "face-argan"
+    },
+    {
+      "answers": {
+        "category": "face",
+        "careUse": "dailyCare",
+        "careVariant": "sMature"
+      },
+      "id": "face-rosehip"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "sBodyWash",
+        "careVariant": "sFresh"
+      },
+      "id": "body-teatree"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "sBodyWash",
+        "careVariant": "withoutFragrance"
+      },
+      "id": "body-olive"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "specificArea",
+        "purpose": "handCare"
+      },
+      "id": "hand-cuticle"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "specificArea",
+        "purpose": "footCare",
+        "kind": "Balzám na paty"
+      },
+      "id": "foot-balm"
+    },
+    {
+      "answers": {
+        "category": "body",
+        "careUse": "specificArea",
+        "purpose": "footCare",
+        "kind": "Peelingové mýdlo"
+      },
+      "id": "foot-soap"
+    },
+    {
+      "answers": {
+        "category": "hair"
+      },
+      "id": "hair-geranium"
+    },
+    {
+      "answers": {
+        "category": "lips"
+      },
+      "id": "lip-seabuckthorn"
+    }
+  ]
+}

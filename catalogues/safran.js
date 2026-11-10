@@ -1,0 +1,1056 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.safran = {
+ "verifiedAt": "2026-11-10T12:43:16.736271+00:00",
+ "source": "https://www.mydlarnasafran.cz/",
+ "collectionMethod": "Reviewed official Eshop-rychle product HTML and exact InStock variant schema links, VAT-inclusive retail prices. No cart/contact/model requests.",
+ "notes": [
+  "11 representative formulas; rosehip face peeling OutOfStock excluded.",
+  "15g shampoo and smaller45g heel/50ml remover are linked variants, not extra formulas.",
+  "All soap packaging variants except unwrapped are OutOfStock; use exact unwrapped URL/photo.",
+  "Claim times, pain/eczema/healing/SPF guarantees excluded.",
+  "All11 primary and3 smaller variant visible VAT-inclusive prices/stock confirmed on exact official variant page.",
+  "Official11 packshots visually reviewed as contact sheet. Lip pack is approx10g from description, not inferred from unit price per ml.",
+  "Question-photo review: body washing uses dedicated hand-washing scene; face oil choices use oil application and mature face. Foot soap form question uses its exact official packshot instead of an unrelated upper-body shower scene."
+ ],
+ "products": [
+  {
+   "id": "face-remover",
+   "name": "Dvoufázový odličovač",
+   "url": "https://www.mydlarnasafran.cz/prirodni-dvoufazovy-odlicovac-2-varianty",
+   "priceAmount": 269.0,
+   "price": "269 Kč",
+   "currency": "CZK",
+   "volume": "100 ml",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Dvoufázový odličovač",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Růžová voda, arganový a mandlový olej pro odlíčení pleti a očního okolí.",
+   "reason": "Růžová voda, arganový a mandlový olej pro odlíčení pleti a očního okolí.",
+   "photo": "/assets/s3/safran/face-remover.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mydlarnasafran.cz/prirodni-dvoufazovy-odlicovac",
+    "verifiedAt": "2026-11-10T12:39:24.239299+00:00",
+    "captureDate": "2026-11-10",
+    "stock": "InStock",
+    "priceFrom": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "routineRoleVerified": true,
+    "routineRole": "cleanser",
+    "routineRoleEvidence": {
+     "url": "https://www.mydlarnasafran.cz/prirodni-dvoufazovy-odlicovac",
+     "form": "Dvoufázový odličovač"
+    },
+    "selectionTraits": {
+     "careUse": "cleansingCare",
+     "purpose": "makeupRemoval"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mydlarnasafran.cz/prirodni-dvoufazovy-odlicovac",
+     "facts": "Růžová voda, arganový a mandlový olej pro odlíčení pleti a očního okolí."
+    },
+    "skinTypesListed": [],
+    "focus": "Růžová voda, arganový a mandlový olej",
+    "photoUrl": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_74_Mydlarna-Safran_Prirodni-odlicovac_2-800-oba-z.jpg",
+    "priceEvidence": {
+     "retailIncludingVAT": 269.0,
+     "officialVariant": {
+      "name": "Přírodní dvoufázový odličovač - 2 varianty - 100ml",
+      "price": "269",
+      "available": "InStock",
+      "url": "https://www.mydlarnasafran.cz/prirodni-dvoufazovy-odlicovac-2-varianty",
+      "props": [
+       {
+        "@type": "PropertyValue",
+        "name": "Obsah",
+        "value": "100ml"
+       }
+      ],
+      "image": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_74_Mydlarna-Safran_Prirodni-odlicovac_2-800-oba-z.jpg"
+     },
+     "visibleRetailPriceCheck": {
+      "id": "face-remover",
+      "priceIncludingVAT": 269.0,
+      "stockText": "Dostupnost Skladem 4 ks Měrná cena 2,69 Kč / ml ObsahVyberte 100ml 50ml 269 Kč / ks 222 Kč bez DPH Přidat do košíku ",
+      "url": "https://www.mydlarnasafran.cz/prirodni-dvoufazovy-odlicovac-2-varianty",
+      "ok": true
+     }
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "officialVariantProperties": [
+      {
+       "@type": "PropertyValue",
+       "name": "Obsah",
+       "value": "100ml"
+      }
+     ],
+     "excerpts": [
+      "ičovač - 2 varianty - 100ml\",\"sku\":\"074-1\",\"offers\":{\"@type\":\"",
+      "ame\":\"Obsah\",\"value\":\"100ml\"}],\"isVariantOf\":{\"@id\":\"https://w",
+      "ičovač - 2 varianty - 50ml\",\"sku\":\"074-2\",\"offers\":{\"@type\":\"",
+      "ame\":\"Obsah\",\"value\":\"50ml\"}],\"isVariantOf\":{\"@id\":\"https://w",
+      "m > 5 ks ObsahVyberte 100ml 50ml cena od 169 Kč / ks od 140 Kč",
+      " informace📦 Objem50 a 100 ml🧴 BaleníSkleněná hnědá lahvička s p"
+     ]
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical/healing",
+     "specific days until effect",
+     "SPF protection",
+     "allergy-safe guarantee",
+     "arbitrary skin type inference"
+    ],
+    "variants": [
+     {
+      "label": "50 ml",
+      "price": 169.0,
+      "url": "https://www.mydlarnasafran.cz/prirodni-dvoufazovy-odlicovac-2-varianty2",
+      "available": true,
+      "source": "https://www.mydlarnasafran.cz/prirodni-dvoufazovy-odlicovac"
+     }
+    ]
+   }
+  },
+  {
+   "id": "face-soap",
+   "name": "Pleťové mýdlo s arganovým olejem a hedvábím",
+   "url": "https://www.mydlarnasafran.cz/prirodni-pletove-mydlo-s-arganovym-olejem-a-hedvabim-bez-obalu",
+   "priceAmount": 168.0,
+   "price": "168 Kč",
+   "currency": "CZK",
+   "volume": "cca 90 g ± 5 % · bez obalu",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Pleťové mýdlo",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Tuhé mýdlo na mytí pleti s arganovým olejem a hedvábím, bez parfemace a esenciálních olejů.",
+   "reason": "Tuhé mýdlo na mytí pleti s arganovým olejem a hedvábím, bez parfemace a esenciálních olejů.",
+   "photo": "/assets/s3/safran/face-soap.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mydlarnasafran.cz/prirodni-pletove-mydlo-s-arganovym-olejem-a-hedvabim",
+    "verifiedAt": "2026-11-10T12:39:24.240177+00:00",
+    "captureDate": "2026-11-10",
+    "stock": "InStock",
+    "priceFrom": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "routineRoleVerified": true,
+    "routineRole": "cleanser",
+    "routineRoleEvidence": {
+     "url": "https://www.mydlarnasafran.cz/prirodni-pletove-mydlo-s-arganovym-olejem-a-hedvabim",
+     "form": "Pleťové mýdlo"
+    },
+    "selectionTraits": {
+     "careUse": "cleansingCare",
+     "purpose": "washing"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mydlarnasafran.cz/prirodni-pletove-mydlo-s-arganovym-olejem-a-hedvabim",
+     "facts": "Tuhé mýdlo na mytí pleti s arganovým olejem a hedvábím, bez parfemace a esenciálních olejů."
+    },
+    "skinTypesListed": [],
+    "focus": "Bez parfemace, arganový olej a hedvábí",
+    "photoUrl": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_7_1049478080_Prirodni-mydlo-s-arganem-a-hedvabim_Mydlarna-Safran_1-800.jpg",
+    "priceEvidence": {
+     "retailIncludingVAT": 168.0,
+     "officialVariant": {
+      "name": "Přírodní pleťové mýdlo s arganovým olejem a hedvábím - bezobalové",
+      "price": "168",
+      "available": "InStock",
+      "url": "https://www.mydlarnasafran.cz/prirodni-pletove-mydlo-s-arganovym-olejem-a-hedvabim-bez-obalu",
+      "props": [
+       {
+        "@type": "PropertyValue",
+        "name": "Balení",
+        "value": "bezobalové"
+       }
+      ],
+      "image": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_7_1049478080_Prirodni-mydlo-s-arganem-a-hedvabim_Mydlarna-Safran_1-800.jpg"
+     },
+     "visibleRetailPriceCheck": {
+      "id": "face-soap",
+      "priceIncludingVAT": 168.0,
+      "stockText": "Dostupnost Skladem > 5 ks Měrná cena 1,87 Kč / g BaleníVyberte bezobalové barevné s mašličkou 168 Kč / ks 139 Kč bez DPH Přidat do košíku ",
+      "url": "https://www.mydlarnasafran.cz/prirodni-pletove-mydlo-s-arganovym-olejem-a-hedvabim-bez-obalu",
+      "ok": true
+     }
+    },
+    "packEvidence": {
+     "pack": "cca 90 g ± 5 % · bez obalu",
+     "officialVariantProperties": [
+      {
+       "@type": "PropertyValue",
+       "name": "Balení",
+       "value": "bezobalové"
+      }
+     ],
+     "excerpts": [
+      "kostka váží přibližně 90 g ± 5 %.Protože jde o ruční výrobu, "
+     ]
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical/healing",
+     "specific days until effect",
+     "SPF protection",
+     "allergy-safe guarantee",
+     "arbitrary skin type inference"
+    ],
+    "variants": []
+   }
+  },
+  {
+   "id": "face-argan",
+   "name": "BIO arganový olej",
+   "url": "https://www.mydlarnasafran.cz/arganovy-olej-50-ml",
+   "priceAmount": 279.0,
+   "price": "279 Kč",
+   "currency": "CZK",
+   "volume": "50 ml · pipeta",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Pleťový olej",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Jednodruhový arganový olej na pleť, nehtové okolí i vlasové délky; balení s pipetou.",
+   "reason": "Jednodruhový arganový olej na pleť, nehtové okolí i vlasové délky; balení s pipetou.",
+   "photo": "/assets/s3/safran/face-argan.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mydlarnasafran.cz/arganovy-olej",
+    "verifiedAt": "2026-11-10T12:39:29.853979+00:00",
+    "captureDate": "2026-11-10",
+    "stock": "InStock",
+    "priceFrom": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "routineRoleVerified": true,
+    "routineRole": "oil",
+    "routineRoleEvidence": {
+     "url": "https://www.mydlarnasafran.cz/arganovy-olej",
+     "form": "Pleťový olej"
+    },
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "moisturise",
+     "careVariant": "sVersatile"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mydlarnasafran.cz/arganovy-olej",
+     "facts": "Jednodruhový arganový olej na pleť, nehtové okolí i vlasové délky; balení s pipetou."
+    },
+    "skinTypesListed": [],
+    "focus": "Pleť, nehtové okolí a vlasové délky",
+    "photoUrl": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_483_1555763208_Mydlarna-Safran_Arganovy-olej_3-800-50_ml-O-z.jpg",
+    "priceEvidence": {
+     "retailIncludingVAT": 279.0,
+     "officialVariant": {
+      "name": "Arganový olej BIO lisovaný za studena - 50ml",
+      "price": "279",
+      "available": "InStock",
+      "url": "https://www.mydlarnasafran.cz/arganovy-olej-50-ml",
+      "props": [
+       {
+        "@type": "PropertyValue",
+        "name": "Obsah",
+        "value": "50ml"
+       }
+      ],
+      "image": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_483_1555763208_Mydlarna-Safran_Arganovy-olej_3-800-50_ml-O-z.jpg"
+     },
+     "visibleRetailPriceCheck": {
+      "id": "face-argan",
+      "priceIncludingVAT": 279.0,
+      "stockText": "Dostupnost Skladem 3 ks Měrná cena 5,58 Kč / ml ObsahVyberte 100ml 50ml 279 Kč / ks 231 Kč bez DPH Přidat do košíku ",
+      "url": "https://www.mydlarnasafran.cz/arganovy-olej-50-ml",
+      "ok": true
+     }
+    },
+    "packEvidence": {
+     "pack": "50 ml · pipeta",
+     "officialVariantProperties": [
+      {
+       "@type": "PropertyValue",
+       "name": "Obsah",
+       "value": "50ml"
+      }
+     ],
+     "excerpts": [
+      "lisovaný za studena - 100ml\",\"sku\":\"999-100\",\"offers\":{\"@type\"",
+      "ame\":\"Obsah\",\"value\":\"100ml\"}],\"isVariantOf\":{\"@id\":\"https://w",
+      "lisovaný za studena - 50ml\",\"sku\":\"999-2\",\"offers\":{\"@type\":\"",
+      "ame\":\"Obsah\",\"value\":\"50ml\"}],\"isVariantOf\":{\"@id\":\"https://w",
+      "m > 5 ks ObsahVyberte 100ml 50ml cena od 279 Kč / ks od 231 Kč",
+      " na co olej používáte:50 ml - ideální na pleť, ruce, nehty a k",
+      "aždodenní péči.100 ml - výhodné větší balení pro pravide",
+      " přizpůsobený použití:50 ml - skleněná pipetaPro přesné dávkov",
+      "ty nebo konečky vlasů.100 ml - pumpičkaPohodlná volba pro větší"
+     ]
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical/healing",
+     "specific days until effect",
+     "SPF protection",
+     "allergy-safe guarantee",
+     "arbitrary skin type inference"
+    ],
+    "variants": []
+   }
+  },
+  {
+   "id": "face-rosehip",
+   "name": "BIO šípkový olej",
+   "url": "https://www.mydlarnasafran.cz/bio-sipkovy-olej-lisovany-za-studena",
+   "priceAmount": 229.0,
+   "price": "229 Kč",
+   "currency": "CZK",
+   "volume": "30 ml · pumpička",
+   "variantLabel": "",
+   "category": "face",
+   "kind": "Pleťový olej",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Za studena lisovaný šípkový olej pro zjemnění suché a zralé pleti; balení s pumpičkou.",
+   "reason": "Za studena lisovaný šípkový olej pro zjemnění suché a zralé pleti; balení s pumpičkou.",
+   "photo": "/assets/s3/safran/face-rosehip.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mydlarnasafran.cz/bio-sipkovy-olej-lisovany-za-studena",
+    "verifiedAt": "2026-11-10T12:39:29.986872+00:00",
+    "captureDate": "2026-11-10",
+    "stock": "InStock",
+    "priceFrom": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "routineRoleVerified": true,
+    "routineRole": "oil",
+    "routineRoleEvidence": {
+     "url": "https://www.mydlarnasafran.cz/bio-sipkovy-olej-lisovany-za-studena",
+     "form": "Pleťový olej"
+    },
+    "selectionTraits": {
+     "careUse": "dailyCare",
+     "purpose": "moisturise",
+     "careVariant": "sMature"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mydlarnasafran.cz/bio-sipkovy-olej-lisovany-za-studena",
+     "facts": "Za studena lisovaný šípkový olej pro zjemnění suché a zralé pleti; balení s pumpičkou."
+    },
+    "skinTypesListed": [],
+    "focus": "Jednodruhový olej pro suchou a zralou pleť",
+    "photoUrl": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_584_IMG_20261009_134823-2.jpg",
+    "priceEvidence": {
+     "retailIncludingVAT": 229.0,
+     "officialVariant": {
+      "name": "BIO Šípkový olej lisovaný za studena",
+      "price": "229",
+      "available": "InStock",
+      "url": "https://www.mydlarnasafran.cz/bio-sipkovy-olej-lisovany-za-studena",
+      "props": [],
+      "image": [
+       "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_584_IMG_20261009_134823-2.jpg"
+      ]
+     },
+     "visibleRetailPriceCheck": {
+      "id": "face-rosehip",
+      "priceIncludingVAT": 229.0,
+      "stockText": "Dostupnost Skladem 4 ks Měrná cena 7,63 Kč / ml 229 Kč / ks 189 Kč bez DPH Přidat do košíku ",
+      "url": "https://www.mydlarnasafran.cz/bio-sipkovy-olej-lisovany-za-studena",
+      "ok": true
+     }
+    },
+    "packEvidence": {
+     "pack": "30 ml · pumpička",
+     "officialVariantProperties": [],
+     "excerpts": [
+      "její vláčnost. Balení 30 ml s pumpičkou.\",\"brand\":null,\"imageU",
+      " šípkový olej na pleť 30 ml | Mýdlárna Šafrán !function(f,b,e,",
+      "její vláčnost. Balení 30 ml s pumpičkou.\",\"sku\":\"OLEJ-ŠÍP\",\"it"
+     ]
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical/healing",
+     "specific days until effect",
+     "SPF protection",
+     "allergy-safe guarantee",
+     "arbitrary skin type inference"
+    ],
+    "variants": []
+   }
+  },
+  {
+   "id": "body-teatree",
+   "name": "Mýdlo se zeleným jílem a aktivním uhlím",
+   "url": "https://www.mydlarnasafran.cz/prirodni-mydlo-se-zelenym-jilem-a-aktivnim-uhlim-bez-obalu",
+   "priceAmount": 168.0,
+   "price": "168 Kč",
+   "currency": "CZK",
+   "volume": "cca 90 g ± 5 % · bez obalu",
+   "variantLabel": "",
+   "category": "body",
+   "kind": "Tuhé mýdlo",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Mýdlo na ruce i tělo se zeleným jílem, aktivním uhlím a svěží bylinnou vůní tea tree.",
+   "reason": "Mýdlo na ruce i tělo se zeleným jílem, aktivním uhlím a svěží bylinnou vůní tea tree.",
+   "photo": "/assets/s3/safran/body-teatree.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mydlarnasafran.cz/prirodni-mydlo-se-zelenym-jilem-a-aktivnim-uhlim",
+    "verifiedAt": "2026-11-10T08:18:20.573493+00:00",
+    "captureDate": "2026-11-10",
+    "stock": "InStock",
+    "priceFrom": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "routineRoleVerified": true,
+    "routineRole": "cleanser",
+    "routineRoleEvidence": {
+     "url": "https://www.mydlarnasafran.cz/prirodni-mydlo-se-zelenym-jilem-a-aktivnim-uhlim",
+     "form": "Tuhé mýdlo"
+    },
+    "selectionTraits": {
+     "careUse": "sBodyWash",
+     "purpose": "washing",
+     "careVariant": "sFresh"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mydlarnasafran.cz/prirodni-mydlo-se-zelenym-jilem-a-aktivnim-uhlim",
+     "facts": "Mýdlo na ruce i tělo se zeleným jílem, aktivním uhlím a svěží bylinnou vůní tea tree."
+    },
+    "skinTypesListed": [],
+    "focus": "Bylinná vůně tea tree",
+    "photoUrl": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_6_1049478138_Mydlo-se-zelenym-jilem-a-aktivnim-uhlim_1-800.jpg",
+    "priceEvidence": {
+     "retailIncludingVAT": 168.0,
+     "officialVariant": {
+      "name": "Přírodní mýdlo se zeleným jílem a aktivním uhlím",
+      "price": "168",
+      "available": "InStock",
+      "url": "https://www.mydlarnasafran.cz/prirodni-mydlo-se-zelenym-jilem-a-aktivnim-uhlim-bez-obalu",
+      "props": [
+       {
+        "@type": "PropertyValue",
+        "name": "Balení",
+        "value": "bezobalové"
+       }
+      ],
+      "image": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_6_1049478138_Mydlo-se-zelenym-jilem-a-aktivnim-uhlim_1-800.jpg"
+     },
+     "visibleRetailPriceCheck": {
+      "id": "body-teatree",
+      "priceIncludingVAT": 168.0,
+      "stockText": "Dostupnost Skladem > 5 ks Měrná cena 1,87 Kč / g BaleníVyberte bezobalové barevné s mašličkou 168 Kč / ks 139 Kč bez DPH Přidat do košíku ",
+      "url": "https://www.mydlarnasafran.cz/prirodni-mydlo-se-zelenym-jilem-a-aktivnim-uhlim-bez-obalu",
+      "ok": true
+     }
+    },
+    "packEvidence": {
+     "pack": "cca 90 g ± 5 % · bez obalu",
+     "officialVariantProperties": [
+      {
+       "@type": "PropertyValue",
+       "name": "Balení",
+       "value": "bezobalové"
+      }
+     ],
+     "excerpts": [
+      "kostka váží přibližně 90 g ± 5 %.Protože jde o ruční výrobu, "
+     ]
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical/healing",
+     "specific days until effect",
+     "SPF protection",
+     "allergy-safe guarantee",
+     "arbitrary skin type inference"
+    ],
+    "variants": []
+   }
+  },
+  {
+   "id": "body-olive",
+   "name": "100% olivové mýdlo",
+   "url": "https://www.mydlarnasafran.cz/prirodni-100-olivove-mydlo-bez-obalu",
+   "priceAmount": 155.0,
+   "price": "155 Kč",
+   "currency": "CZK",
+   "volume": "cca 90 g ± 5 % · bez obalu",
+   "variantLabel": "",
+   "category": "body",
+   "kind": "Tuhé mýdlo",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Jednoduché olivové mýdlo pro mytí rukou i těla, bez parfemace a barviv.",
+   "reason": "Jednoduché olivové mýdlo pro mytí rukou i těla, bez parfemace a barviv.",
+   "photo": "/assets/s3/safran/body-olive.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mydlarnasafran.cz/prirodni-100-olivove-mydlo",
+    "verifiedAt": "2026-11-10T12:39:40.203655+00:00",
+    "captureDate": "2026-11-10",
+    "stock": "InStock",
+    "priceFrom": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "routineRoleVerified": true,
+    "routineRole": "cleanser",
+    "routineRoleEvidence": {
+     "url": "https://www.mydlarnasafran.cz/prirodni-100-olivove-mydlo",
+     "form": "Tuhé mýdlo"
+    },
+    "selectionTraits": {
+     "careUse": "sBodyWash",
+     "purpose": "washing",
+     "careVariant": "withoutFragrance"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mydlarnasafran.cz/prirodni-100-olivove-mydlo",
+     "facts": "Jednoduché olivové mýdlo pro mytí rukou i těla, bez parfemace a barviv."
+    },
+    "skinTypesListed": [],
+    "focus": "Bez parfemace a barviv",
+    "photoUrl": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_5_1049482949_Olivove-mydlo_Mydlarna-Safran_1-800.jpg",
+    "priceEvidence": {
+     "retailIncludingVAT": 155.0,
+     "officialVariant": {
+      "name": "Přírodní 100% olivové mýdlo - bezobalové",
+      "price": "155",
+      "available": "InStock",
+      "url": "https://www.mydlarnasafran.cz/prirodni-100-olivove-mydlo-bez-obalu",
+      "props": [
+       {
+        "@type": "PropertyValue",
+        "name": "Balení",
+        "value": "bezobalové"
+       }
+      ],
+      "image": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_5_1049482949_Olivove-mydlo_Mydlarna-Safran_1-800.jpg"
+     },
+     "visibleRetailPriceCheck": {
+      "id": "body-olive",
+      "priceIncludingVAT": 155.0,
+      "stockText": "Dostupnost Skladem > 5 ks Měrná cena 1,72 Kč / g BaleníVyberte bezobalové barevné s mašličkou 155 Kč / ks 128 Kč bez DPH Přidat do košíku ",
+      "url": "https://www.mydlarnasafran.cz/prirodni-100-olivove-mydlo-bez-obalu",
+      "ok": true
+     }
+    },
+    "packEvidence": {
+     "pack": "cca 90 g ± 5 % · bez obalu",
+     "officialVariantProperties": [
+      {
+       "@type": "PropertyValue",
+       "name": "Balení",
+       "value": "bezobalové"
+      }
+     ],
+     "excerpts": [
+      "kostka váží přibližně 90 g ± 5 %. Vyrábíme ji ručně v České r"
+     ]
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical/healing",
+     "specific days until effect",
+     "SPF protection",
+     "allergy-safe guarantee",
+     "arbitrary skin type inference"
+    ],
+    "variants": []
+   }
+  },
+  {
+   "id": "hand-cuticle",
+   "name": "SOS olej na nehtovou kůžičku",
+   "url": "https://www.mydlarnasafran.cz/sos-olej-na-zadery",
+   "priceAmount": 175.0,
+   "price": "175 Kč",
+   "currency": "CZK",
+   "volume": "5 ml · roll-on",
+   "variantLabel": "",
+   "category": "body",
+   "kind": "Olej na nehtovou kůžičku",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Olejová péče o suchou kůžičku kolem nehtů, v malém roll-on balení.",
+   "reason": "Olejová péče o suchou kůžičku kolem nehtů, v malém roll-on balení.",
+   "photo": "/assets/s3/safran/hand-cuticle.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mydlarnasafran.cz/sos-olej-na-zadery",
+    "verifiedAt": "2026-11-10T12:39:30.006181+00:00",
+    "captureDate": "2026-11-10",
+    "stock": "InStock",
+    "priceFrom": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "routineRoleVerified": true,
+    "routineRole": "oil",
+    "routineRoleEvidence": {
+     "url": "https://www.mydlarnasafran.cz/sos-olej-na-zadery",
+     "form": "Olej na nehtovou kůžičku"
+    },
+    "selectionTraits": {
+     "careUse": "specificArea",
+     "purpose": "handCare"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mydlarnasafran.cz/sos-olej-na-zadery",
+     "facts": "Olejová péče o suchou kůžičku kolem nehtů, v malém roll-on balení."
+    },
+    "skinTypesListed": [],
+    "focus": "Cílená péče o nehtové okolí",
+    "photoUrl": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_560_SOS-olej-na-zadery.jpg",
+    "priceEvidence": {
+     "retailIncludingVAT": 175.0,
+     "officialVariant": {
+      "name": "SOS Olej na záděry",
+      "price": "175",
+      "available": "InStock",
+      "url": "https://www.mydlarnasafran.cz/sos-olej-na-zadery",
+      "props": [],
+      "image": [
+       "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_560_SOS-olej-na-zadery.jpg",
+       "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyrp11_560SOS-olej-na-zadery-v-praxi.jpg",
+       "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyrp12_560SOS-olej-na-zadery-kulicka.jpg"
+      ]
+     },
+     "visibleRetailPriceCheck": {
+      "id": "hand-cuticle",
+      "priceIncludingVAT": 175.0,
+      "stockText": "Dostupnost Skladem > 5 ks 175 Kč / ks 145 Kč bez DPH Přidat do košíku ",
+      "url": "https://www.mydlarnasafran.cz/sos-olej-na-zadery",
+      "ok": true
+     }
+    },
+    "packEvidence": {
+     "pack": "5 ml · roll-on",
+     "officialVariantProperties": [],
+     "excerpts": [
+      ",\"productNumber\":\"SOS-5ml\",\"ean\":\"8594212330861\",\"name\":\"SOS",
+      " pár dní.\",\"sku\":\"SOS-5ml\",\"itemCondition\":\"https://schema.o",
+      "ej na záděry má obsah 5 ml. Praktické malé balení se pohodlně"
+     ]
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical/healing",
+     "specific days until effect",
+     "SPF protection",
+     "allergy-safe guarantee",
+     "arbitrary skin type inference"
+    ],
+    "variants": []
+   }
+  },
+  {
+   "id": "foot-balm",
+   "name": "Zjemňující balzám na paty",
+   "url": "https://www.mydlarnasafran.cz/zjemnujici-balzam-na-paty-90-g",
+   "priceAmount": 447.0,
+   "price": "447 Kč",
+   "currency": "CZK",
+   "volume": "90 g",
+   "variantLabel": "",
+   "category": "body",
+   "kind": "Balzám na paty",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Balzám pro zjemnění suché a zrohovatělé pokožky pat.",
+   "reason": "Balzám pro zjemnění suché a zrohovatělé pokožky pat.",
+   "photo": "/assets/s3/safran/foot-balm.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mydlarnasafran.cz/zjemnujici-balzam-na-ztvrdlou-kuzi",
+    "verifiedAt": "2026-11-10T12:39:35.184197+00:00",
+    "captureDate": "2026-11-10",
+    "stock": "InStock",
+    "priceFrom": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "routineRoleVerified": true,
+    "routineRole": "cream",
+    "routineRoleEvidence": {
+     "url": "https://www.mydlarnasafran.cz/zjemnujici-balzam-na-ztvrdlou-kuzi",
+     "form": "Balzám na paty"
+    },
+    "selectionTraits": {
+     "careUse": "specificArea",
+     "purpose": "footCare",
+     "careVariant": "sFootSoften",
+     "texture": "creamTexture"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mydlarnasafran.cz/zjemnujici-balzam-na-ztvrdlou-kuzi",
+     "facts": "Balzám pro zjemnění suché a zrohovatělé pokožky pat."
+    },
+    "skinTypesListed": [],
+    "focus": "Zjemnění suché pokožky pat",
+    "photoUrl": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_477_1055745311_MydlarnaSafran_Zjemnujici-balzam-na-ztvrdlou-kuzi_7-800.jpg",
+    "priceEvidence": {
+     "retailIncludingVAT": 447.0,
+     "officialVariant": {
+      "name": "Zjemňující balzám na ztvrdlou kůži 90 g",
+      "price": "447",
+      "available": "InStock",
+      "url": "https://www.mydlarnasafran.cz/zjemnujici-balzam-na-paty-90-g",
+      "props": [
+       {
+        "@type": "PropertyValue",
+        "name": "Paťák",
+        "value": "90 g"
+       }
+      ],
+      "image": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_477_1055745311_MydlarnaSafran_Zjemnujici-balzam-na-ztvrdlou-kuzi_7-800.jpg"
+     },
+     "visibleRetailPriceCheck": {
+      "id": "foot-balm",
+      "priceIncludingVAT": 447.0,
+      "stockText": "Dostupnost Skladem > 5 ks Měrná cena 4,97 Kč / g PaťákVyberte 1 + 1 mix výhodná sada 1 + 1 výhodná sada 45 g 90 g 447 Kč / ks 369 Kč bez DPH Přidat do košíku ",
+      "url": "https://www.mydlarnasafran.cz/zjemnujici-balzam-na-paty-90-g",
+      "ok": true
+     }
+    },
+    "packEvidence": {
+     "pack": "90 g",
+     "officialVariantProperties": [
+      {
+       "@type": "PropertyValue",
+       "name": "Paťák",
+       "value": "90 g"
+      }
+     ],
+     "excerpts": [
+      "lzám na ztvrdlou kůži 90 g + 90 g balení\",\"sku\":\"404-3\",\"offe",
+      "lzám na ztvrdlou kůži 45 g\",\"sku\":\"404-1\",\"offers\":{\"@type\":\"",
+      "ame\":\"Paťák\",\"value\":\"45 g\"}],\"isVariantOf\":{\"@id\":\"https://w",
+      "lzám na ztvrdlou kůži 90 g\",\"sku\":\"404-2\",\"offers\":{\"@type\":\"",
+      "ame\":\"Paťák\",\"value\":\"90 g\"}],\"isVariantOf\":{\"@id\":\"https://w",
+      "da 1 + 1 výhodná sada 45 g 90 g cena od 289 Kč / ks od 239 Kč",
+      "ktických velikostech: 45 g – ideální menší balení na vyzkouše",
+      " po návštěvě bazénu). 90 g – větší výhodné balení pro dlouhod",
+      "květů ajowanuHmotnost:45 g ± 5%90 g ± 5% Související zboží 5 "
+     ]
+    },
+    "complementForProductUrls": [
+     "https://www.mydlarnasafran.cz/prirodni-peelingove-mydlo-s-pemzou-a-salveji-bez-obalu"
+    ],
+    "excludedClaims": [
+     "medical/healing",
+     "specific days until effect",
+     "SPF protection",
+     "allergy-safe guarantee",
+     "arbitrary skin type inference"
+    ],
+    "variants": [
+     {
+      "label": "45 g",
+      "price": 289.0,
+      "url": "https://www.mydlarnasafran.cz/zjemnujici-balzam-na-paty-45-g",
+      "available": true,
+      "source": "https://www.mydlarnasafran.cz/zjemnujici-balzam-na-ztvrdlou-kuzi"
+     }
+    ]
+   }
+  },
+  {
+   "id": "foot-soap",
+   "name": "Peelingové mýdlo s pemzou a šalvějí",
+   "url": "https://www.mydlarnasafran.cz/prirodni-peelingove-mydlo-s-pemzou-a-salveji-bez-obalu",
+   "priceAmount": 162.0,
+   "price": "162 Kč",
+   "currency": "CZK",
+   "volume": "cca 90 g ± 5 % · bez obalu",
+   "variantLabel": "",
+   "category": "body",
+   "kind": "Peelingové mýdlo",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Mýdlo pro důkladné mytí chodidel, s pemzou a šalvějí.",
+   "reason": "Mýdlo pro důkladné mytí chodidel, s pemzou a šalvějí.",
+   "photo": "/assets/s3/safran/foot-soap.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mydlarnasafran.cz/prirodni-peelingove-mydlo-s-pemzou-a-salveji",
+    "verifiedAt": "2026-11-10T12:39:35.206822+00:00",
+    "captureDate": "2026-11-10",
+    "stock": "InStock",
+    "priceFrom": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "routineRoleVerified": true,
+    "routineRole": "cleanser",
+    "routineRoleEvidence": {
+     "url": "https://www.mydlarnasafran.cz/prirodni-peelingove-mydlo-s-pemzou-a-salveji",
+     "form": "Peelingové mýdlo"
+    },
+    "selectionTraits": {
+     "careUse": "specificArea",
+     "purpose": "footCare",
+     "careVariant": "sFootWash"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mydlarnasafran.cz/prirodni-peelingove-mydlo-s-pemzou-a-salveji",
+     "facts": "Mýdlo pro důkladné mytí chodidel, s pemzou a šalvějí."
+    },
+    "skinTypesListed": [],
+    "focus": "Mytí chodidel s pemzou a šalvějí",
+    "photoUrl": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_480_1555754505_Salvejove-mydlo-2-800.jpg",
+    "priceEvidence": {
+     "retailIncludingVAT": 162.0,
+     "officialVariant": {
+      "name": "Přírodní peelingové mýdlo s pemzou a šalvějí - bezobalové",
+      "price": "162",
+      "available": "InStock",
+      "url": "https://www.mydlarnasafran.cz/prirodni-peelingove-mydlo-s-pemzou-a-salveji-bez-obalu",
+      "props": [
+       {
+        "@type": "PropertyValue",
+        "name": "Balení",
+        "value": "bezobalové"
+       }
+      ],
+      "image": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_480_1555754505_Salvejove-mydlo-2-800.jpg"
+     },
+     "visibleRetailPriceCheck": {
+      "id": "foot-soap",
+      "priceIncludingVAT": 162.0,
+      "stockText": "Dostupnost Skladem > 5 ks BaleníVyberte bezobalové barevné s mašličkou 162 Kč / ks 134 Kč bez DPH Přidat do košíku ",
+      "url": "https://www.mydlarnasafran.cz/prirodni-peelingove-mydlo-s-pemzou-a-salveji-bez-obalu",
+      "ok": true
+     }
+    },
+    "packEvidence": {
+     "pack": "cca 90 g ± 5 % · bez obalu",
+     "officialVariantProperties": [
+      {
+       "@type": "PropertyValue",
+       "name": "Balení",
+       "value": "bezobalové"
+      }
+     ],
+     "excerpts": [
+      "kostka váží přibližně 90 g ± 5 %.Protože jde o ruční výrobu, "
+     ]
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical/healing",
+     "specific days until effect",
+     "SPF protection",
+     "allergy-safe guarantee",
+     "arbitrary skin type inference"
+    ],
+    "variants": []
+   }
+  },
+  {
+   "id": "hair-geranium",
+   "name": "Šampuk s růžovým jílem a geraniem",
+   "url": "https://www.mydlarnasafran.cz/sampuk-na-vlasy-s-ruzovym-jilem-a-geraniem-60-oval",
+   "priceAmount": 223.0,
+   "price": "223 Kč",
+   "currency": "CZK",
+   "volume": "60 g · ovál",
+   "variantLabel": "",
+   "category": "hair",
+   "kind": "Tuhý šampon",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Tuhý šampon s růžovým jílem, geraniem, keratinem a rýžovým proteinem pro mytí vlasů.",
+   "reason": "Tuhý šampon s růžovým jílem, geraniem, keratinem a rýžovým proteinem pro mytí vlasů.",
+   "photo": "/assets/s3/safran/hair-geranium.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mydlarnasafran.cz/sampuk-na-vlasy-s-ruzovym-jilem-a-geraniem",
+    "verifiedAt": "2026-11-10T12:39:35.208728+00:00",
+    "captureDate": "2026-11-10",
+    "stock": "InStock",
+    "priceFrom": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "routineRoleVerified": true,
+    "routineRole": "shampoo",
+    "routineRoleEvidence": {
+     "url": "https://www.mydlarnasafran.cz/sampuk-na-vlasy-s-ruzovym-jilem-a-geraniem",
+     "form": "Tuhý šampon"
+    },
+    "selectionTraits": {
+     "careUse": "cleansingCare",
+     "purpose": "hairWashing"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.mydlarnasafran.cz/sampuk-na-vlasy-s-ruzovym-jilem-a-geraniem",
+     "facts": "Tuhý šampon s růžovým jílem, geraniem, keratinem a rýžovým proteinem pro mytí vlasů."
+    },
+    "skinTypesListed": [],
+    "focus": "Růžový jíl, geranium a rýžový protein",
+    "photoUrl": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_43_1053874849_Sampuk-na-vlasy-s-ruzovym-jilem-a-geraniem_Mydlarna-Safran_3-800.jpg",
+    "priceEvidence": {
+     "retailIncludingVAT": 223.0,
+     "officialVariant": {
+      "name": "Šampuk na vlasy s růžovým jílem a geraniem - ovál",
+      "price": "223",
+      "available": "InStock",
+      "url": "https://www.mydlarnasafran.cz/sampuk-na-vlasy-s-ruzovym-jilem-a-geraniem-60-oval",
+      "props": [
+       {
+        "@type": "PropertyValue",
+        "name": "Hmotnost",
+        "value": "60 g ovál"
+       }
+      ],
+      "image": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_43_1053874849_Sampuk-na-vlasy-s-ruzovym-jilem-a-geraniem_Mydlarna-Safran_3-800.jpg"
+     },
+     "visibleRetailPriceCheck": {
+      "id": "hair-geranium",
+      "priceIncludingVAT": 223.0,
+      "stockText": "Dostupnost Skladem 1 ks HmotnostVyberte 15 g 30 g 60 g ovál 60 g srdce 223 Kč / ks 184 Kč bez DPH Přidat do košíku ",
+      "url": "https://www.mydlarnasafran.cz/sampuk-na-vlasy-s-ruzovym-jilem-a-geraniem-60-oval",
+      "ok": true
+     }
+    },
+    "packEvidence": {
+     "pack": "60 g · ovál",
+     "officialVariantProperties": [
+      {
+       "@type": "PropertyValue",
+       "name": "Hmotnost",
+       "value": "60 g ovál"
+      }
+     ],
+     "excerpts": [
+      "ovým jílem a geraniem 15g\",\"sku\":\"043\",\"offers\":{\"@type\":\"Of",
+      "_43_1040069685_sampuk-15g-800x800.jpg\",\"additionalProperty\":",
+      "\":\"Hmotnost\",\"value\":\"15 g\"}],\"isVariantOf\":{\"@id\":\"https://w",
+      "ovým jílem a geraniem 30g\",\"sku\":\"043\",\"offers\":{\"@type\":\"Of",
+      "\":\"Hmotnost\",\"value\":\"30 g\"}],\"isVariantOf\":{\"@id\":\"https://w",
+      "\":\"Hmotnost\",\"value\":\"60 g ovál\"}],\"isVariantOf\":{\"@id\":\"http",
+      "\":\"Hmotnost\",\"value\":\"60 g srdce\"}],\"isVariantOf\":{\"@id\":\"htt",
+      " 5 ks HmotnostVyberte 15 g 30 g 60 g ovál 60 g srdce cena od ",
+      "e třech velikostech - 15 g, 30 g a 60 g, takže si můžete vybr"
+     ]
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical/healing",
+     "specific days until effect",
+     "SPF protection",
+     "allergy-safe guarantee",
+     "arbitrary skin type inference"
+    ],
+    "variants": [
+     {
+      "label": "15 g",
+      "price": 84.0,
+      "url": "https://www.mydlarnasafran.cz/sampuk-na-vlasy-s-ruzovym-jilem-a-geraniem-15",
+      "available": true,
+      "source": "https://www.mydlarnasafran.cz/sampuk-na-vlasy-s-ruzovym-jilem-a-geraniem"
+     }
+    ]
+   }
+  },
+  {
+   "id": "lip-seabuckthorn",
+   "name": "Balzám na rty s rakytníkem",
+   "url": "https://www.mydlarnasafran.cz/prirodni-balzam-na-rty-s-rakytnikem",
+   "priceAmount": 146.0,
+   "price": "146 Kč",
+   "currency": "CZK",
+   "volume": "cca 10 g",
+   "variantLabel": "",
+   "category": "lips",
+   "kind": "Balzám na rty",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Balzám s rostlinnými másly, oleji a včelím voskem pro péči o rty.",
+   "reason": "Balzám s rostlinnými másly, oleji a včelím voskem pro péči o rty.",
+   "photo": "/assets/s3/safran/lip-seabuckthorn.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.mydlarnasafran.cz/prirodni-balzam-na-rty-s-rakytnikem",
+    "verifiedAt": "2026-11-10T12:39:39.955004+00:00",
+    "captureDate": "2026-11-10",
+    "stock": "InStock",
+    "priceFrom": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "routineRoleVerified": true,
+    "routineRole": "cream",
+    "routineRoleEvidence": {
+     "url": "https://www.mydlarnasafran.cz/prirodni-balzam-na-rty-s-rakytnikem",
+     "form": "Balzám na rty"
+    },
+    "selectionTraits": {},
+    "selectionTraitsEvidence": {
+     "url": "https://www.mydlarnasafran.cz/prirodni-balzam-na-rty-s-rakytnikem",
+     "facts": "Balzám s rostlinnými másly, oleji a včelím voskem pro péči o rty."
+    },
+    "skinTypesListed": [],
+    "focus": "Rakytník, rostlinná másla a včelí vosk",
+    "photoUrl": "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_310_Prirodni-balzam-na-rty-s-rakytnikem_Mydlarna-Safran_1-800.jpg",
+    "priceEvidence": {
+     "retailIncludingVAT": 146.0,
+     "officialVariant": {
+      "name": "Přírodní balzám na rty s rakytníkem",
+      "price": "146",
+      "available": "InStock",
+      "url": "https://www.mydlarnasafran.cz/prirodni-balzam-na-rty-s-rakytnikem",
+      "props": [],
+      "image": [
+       "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyr_310_Prirodni-balzam-na-rty-s-rakytnikem_Mydlarna-Safran_1-800.jpg",
+       "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyrp11_310Prirodni-balzam-na-rty-s-rakytnikem_Mydlarna-Safran_2-800.jpg",
+       "https://www.mydlarnasafran.cz/fotky82417/fotos/1695566361Prirodni_balzam_na_rty_s_rakytnikovym_olejem_slozeni_Mydlarna_Safran.png",
+       "https://www.mydlarnasafran.cz/fotky82417/fotos/_vyrp13_310Balzam_na_rty_s_rakytnikem_barva_Mydlarna_Safran.webp"
+      ]
+     },
+     "visibleRetailPriceCheck": {
+      "id": "lip-seabuckthorn",
+      "priceIncludingVAT": 146.0,
+      "stockText": "Dostupnost Skladem > 5 ks Měrná cena 15,37 Kč / ml 146 Kč / ks 121 Kč bez DPH Přidat do košíku ",
+      "url": "https://www.mydlarnasafran.cz/prirodni-balzam-na-rty-s-rakytnikem",
+      "ok": true
+     }
+    },
+    "packEvidence": {
+     "pack": "cca 10 g",
+     "officialVariantProperties": [],
+     "excerpts": [
+      "ostObsah balzámu: cca 10 g.Protože jde o ruční výrobu, může s"
+     ]
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "medical/healing",
+     "specific days until effect",
+     "SPF protection",
+     "allergy-safe guarantee",
+     "arbitrary skin type inference"
+    ],
+    "variants": []
+   }
+  }
+ ]
+};

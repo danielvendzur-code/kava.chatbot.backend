@@ -17,6 +17,10 @@
   const focusText = (k) => { const c = (REG.traitCopy || {})[k]; return c && REG.compareTrait === 'line' ? (cs ? c[3] : c[1]) : label(k); };
   /* Ponuka: produkty jednej oblasti (najpočetnejšej – napr. pleť), rovnaký druh pri sebe, v poradí e-shopu; najviac 6. */
   function candidates() {
+    if (REG.series === 's5' && Array.isArray(REG.compareProductIds)) {
+      const explicit = REG.compareProductIds.map((id) => byId.get(String(id))).filter(Boolean);
+      if (explicit.length >= 2) return explicit.slice(0, 6);
+    }
     const n = (k, f) => list.filter((p) => f(p) === k).length, use = (p) => tr(p).careUse || p.category;
     const top = [...new Set(list.map(use))].sort((x, y) => n(y, use) - n(x, use))[0];
     const g = list.filter((p) => use(p) === top), kinds = [...new Set(g.map((p) => p.kind))].sort((x, y) => n(y, (p) => p.kind) - n(x, (p) => p.kind));

@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-10T08:03:35.999977+00:00",
+  "updatedAt": "2026-11-10T12:53:59.828353+00:00",
   "branch": "codex/s5-solo-20261109",
-  "codeSha": "02fb9b27dd0571367bcb3409720b8d2be2d7868c",
+  "codeSha": "2466a399f99d72180d52fa205212296d59f79d1f",
   "firmsByDomain": {
     "musiprirodne.sk": {
       "domain": "musiprirodne.sk",
@@ -836,7 +836,7 @@
     },
     "mydlarnasafran.cz": {
       "checkedAt": "2026-11-10T08:15:38.052746+00:00",
-      "status": "reserved",
+      "status": "LOCAL_QA_VERIFIED_PREVIEW_PENDING",
       "claimSha": "3619670ff03fcdd22d925d885fb4fe2889ef40e1",
       "domain": "mydlarnasafran.cz",
       "operator": "Klára Šafránková",
@@ -856,35 +856,58 @@
       "globalVercel": "PENDING_OUTSIDE_CONNECTED_TEAM",
       "production": "NOT_DEPLOYED",
       "emailDraft": "NOT_READY",
-      "next": "Review representative public category list, capture <=25 suitable product facts with exact standard/mini variants, pictures and stock."
+      "next": "Commit selected reviewed runtime/data/proofs, inspect exact deployment, then own live all11 results and loaded photos.",
+      "state": "LOCAL_QA_VERIFIED_PREVIEW_PENDING",
+      "products": 11,
+      "sourceFacts": "n447/s5/sources/safran/verified-products.json",
+      "sourceVariantPriceCheck": "14 exact official pages:11 standard+3 smaller variants, VAT-inclusive prices and stock agree",
+      "localQA": {
+        "results": 33,
+        "widths": [
+          320,
+          390,
+          1280
+        ],
+        "reachable": 11,
+        "leaves": 11,
+        "questions": 8,
+        "changedBodyPathsIncremental": 6,
+        "smallerVariants": 3,
+        "comparison": "explicit4 distinct facial products; same-area comparison",
+        "paidCalls": 0,
+        "fullReport": "n447/s5/dokazy/safran-result-qa.json",
+        "focusedReport": "n447/s5/dokazy/safran-focused-qa.json"
+      },
+      "preview": "PENDING_RUNTIME_CHECKPOINT"
     }
   },
   "localGit": {
-    "activeCheckout": "s5-resumed detached at cf46b65bf54bc995074393154ae26c58e3336107; local WIP preserved; remote d983e0a22ae515936d77f89045a09ffe439ef587 authoritative",
+    "activeCheckout": "s5-resumed detached at cf46b65; newer local WIP retained; remote2466a399 authoritative; connector lease writes only.",
     "preservedOriginalCheckout": "repo at ef249f346d70d3b941bf25b80606cfc2c3b54c62",
     "note": "No reset retried; old index/worktree preserved. Explicit connector commits only."
   },
   "environment": {
     "state": "available",
-    "checkedAt": "2026-11-09T19:00:10.213436+00:00",
+    "checkedAt": "2026-11-10T12:53:59.828353+00:00",
     "terminal": "pwd and existing checkout read succeeded",
-    "browser": "Chrome/CDP restored; all10Botanico results actually completed",
+    "browser": "CUA restored existing colleague after owner login; public Preview offer checked. No new credentials/rights.",
     "activeCheckout": "/workspace/scratch/3ddc5ee91f7a/s5-resumed",
     "head": "cf46b65bf54bc995074393154ae26c58e3336107",
     "preservedCheckouts": [
       "repo",
       "s5-next"
     ],
-    "nextStep": "Nafigate actual Preview8/8 complete. Persist remaining40-image proof (giant zip upload aborted, exact blob404), then reserved Boemi."
+    "nextStep": "Safran runtime checkpoint then actual live11-result Preview QA."
   },
   "autonomousBacklog": {
     "source": "BACKLOG-DLHODOBE-20261109.md",
     "minimumMilestone": 20,
     "nextMilestone": 40,
     "stopAtMilestone": false,
-    "previewVerifiedCount": 8,
-    "oneWorker": true,
+    "previewVerifiedCount": 10,
+    "oneWorker": false,
     "emailSendingForbidden": true,
-    "productionForbidden": true
+    "productionForbidden": true,
+    "coordination": "Owner authorized existing browser Codex colleague; isolated branches, shared engine owner main worker. No internal subagents."
   }
 }

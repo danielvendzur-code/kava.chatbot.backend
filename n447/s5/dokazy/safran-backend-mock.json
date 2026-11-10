@@ -1,0 +1,24 @@
+{
+  "paidCalls": 0,
+  "mockCalls": 3,
+  "rows": [
+    {
+      "query": "Dvoufázové odlíčení",
+      "id": "face-remover",
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "query": "Balzám na suché paty",
+      "id": "foot-balm",
+      "status": 200,
+      "exactUrlAndPrice": true
+    },
+    {
+      "query": "Tuhý šampon s geraniem",
+      "id": "hair-geranium",
+      "status": 200,
+      "exactUrlAndPrice": true
+    }
+  ]
+}

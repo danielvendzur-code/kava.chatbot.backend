@@ -1,0 +1,4 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {answer} from '../../lib/cosmetics-chat.js';
+const rows=[];for(const [q,id]of [['Dvoufázové odlíčení','face-remover'],['Balzám na suché paty','foot-balm'],['Tuhý šampon s geraniem','hair-geranium']]){let calls=0;const r=await answer({demoId:'safran',messages:[{role:'user',content:q}]},{ai:async a=>{calls++;assert.equal(a.brand,'Mýdlárna Šafrán');assert.equal(a.catalogue.products.length,11);return ''}});assert.equal(r.status,200);const f=globalThis.CX_CATALOGUES.safran.products.find(x=>x.id===id);assert(r.json.reply.includes(f.url)&&r.json.reply.includes(f.price));assert.equal(calls,1);rows.push({query:q,id,status:r.status,exactUrlAndPrice:true})}fs.writeFileSync('n447/s5/dokazy/safran-backend-mock.json',JSON.stringify({paidCalls:0,mockCalls:3,rows},null,2));console.log('Safran backend 3 mocked calls, paid 0');

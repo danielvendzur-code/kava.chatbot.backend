@@ -1,0 +1,164 @@
+{
+  "ok": true,
+  "rows": [
+    {
+      "width": 320,
+      "scene": "body-use",
+      "loadedDistinctPhotos": [
+        "/assets/s3/scenes-k2/hand-wash.jpg",
+        "/assets/scenes/hands-cream.jpg"
+      ]
+    },
+    {
+      "width": 320,
+      "scene": "face-oil",
+      "loadedDistinctPhotos": [
+        "/assets/scenes/oil-palm.jpg",
+        "/assets/s3/scenes-k2/skin-mature.jpg"
+      ]
+    },
+    {
+      "width": 320,
+      "scene": "foot-form",
+      "loadedDistinctPhotos": [
+        "/assets/s3/scenes-k2/leg-massage.jpg",
+        "/assets/s3/safran/foot-soap.webp"
+      ]
+    },
+    {
+      "width": 320,
+      "id": "body-olive",
+      "currentPath": {
+        "category": "body",
+        "careUse": "sBodyWash",
+        "careVariant": "withoutFragrance"
+      },
+      "priceAndCTA": true
+    },
+    {
+      "width": 320,
+      "id": "body-teatree",
+      "currentPath": {
+        "category": "body",
+        "careUse": "sBodyWash",
+        "careVariant": "sFresh"
+      },
+      "priceAndCTA": true
+    },
+    {
+      "width": 320,
+      "comparison": "makeup removal versus unperfumed face washing; actual ml/g packs, prices/focus"
+    },
+    {
+      "width": 390,
+      "scene": "body-use",
+      "loadedDistinctPhotos": [
+        "/assets/s3/scenes-k2/hand-wash.jpg",
+        "/assets/scenes/hands-cream.jpg"
+      ]
+    },
+    {
+      "width": 390,
+      "scene": "face-oil",
+      "loadedDistinctPhotos": [
+        "/assets/scenes/oil-palm.jpg",
+        "/assets/s3/scenes-k2/skin-mature.jpg"
+      ]
+    },
+    {
+      "width": 390,
+      "scene": "foot-form",
+      "loadedDistinctPhotos": [
+        "/assets/s3/scenes-k2/leg-massage.jpg",
+        "/assets/s3/safran/foot-soap.webp"
+      ]
+    },
+    {
+      "width": 390,
+      "id": "body-olive",
+      "currentPath": {
+        "category": "body",
+        "careUse": "sBodyWash",
+        "careVariant": "withoutFragrance"
+      },
+      "priceAndCTA": true
+    },
+    {
+      "width": 390,
+      "id": "body-teatree",
+      "currentPath": {
+        "category": "body",
+        "careUse": "sBodyWash",
+        "careVariant": "sFresh"
+      },
+      "priceAndCTA": true
+    },
+    {
+      "width": 390,
+      "mini": "face-remover",
+      "label": "50 ml",
+      "price": 169,
+      "url": "https://www.mydlarnasafran.cz/prirodni-dvoufazovy-odlicovac-2-varianty2"
+    },
+    {
+      "width": 390,
+      "mini": "foot-balm",
+      "label": "45 g",
+      "price": 289,
+      "url": "https://www.mydlarnasafran.cz/zjemnujici-balzam-na-paty-45-g"
+    },
+    {
+      "width": 390,
+      "mini": "hair-geranium",
+      "label": "15 g",
+      "price": 84,
+      "url": "https://www.mydlarnasafran.cz/sampuk-na-vlasy-s-ruzovym-jilem-a-geraniem-15"
+    },
+    {
+      "width": 1280,
+      "scene": "body-use",
+      "loadedDistinctPhotos": [
+        "/assets/s3/scenes-k2/hand-wash.jpg",
+        "/assets/scenes/hands-cream.jpg"
+      ]
+    },
+    {
+      "width": 1280,
+      "scene": "face-oil",
+      "loadedDistinctPhotos": [
+        "/assets/scenes/oil-palm.jpg",
+        "/assets/s3/scenes-k2/skin-mature.jpg"
+      ]
+    },
+    {
+      "width": 1280,
+      "scene": "foot-form",
+      "loadedDistinctPhotos": [
+        "/assets/s3/scenes-k2/leg-massage.jpg",
+        "/assets/s3/safran/foot-soap.webp"
+      ]
+    },
+    {
+      "width": 1280,
+      "id": "body-olive",
+      "currentPath": {
+        "category": "body",
+        "careUse": "sBodyWash",
+        "careVariant": "withoutFragrance"
+      },
+      "priceAndCTA": true
+    },
+    {
+      "width": 1280,
+      "id": "body-teatree",
+      "currentPath": {
+        "category": "body",
+        "careUse": "sBodyWash",
+        "careVariant": "sFresh"
+      },
+      "priceAndCTA": true
+    }
+  ],
+  "paidCalls": 0,
+  "scope": "Changed scenes and2 body paths only, exact3 smaller linked packs, previously interrupted320 comparison"
+}

@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-11-10T12:59:49.134Z",
+  "timezone": "Europe/Warsaw",
+  "observer": "MAIN_WORKER_CUA",
+  "formsSubmitted": 0,
+  "cartsChanged": 0,
+  "messagesSentToCompanies": 0,
+  "sites": [
+    {
+      "domain": "adoraniche.sk",
+      "home": "https://www.adoraniche.sk/",
+      "product": "https://www.adoraniche.sk/imperial-parfums-adam-extrait-de-parfum-100ml/",
+      "cookieMode": "Odmietnuť cookies",
+      "observed": "Home and actual Adam product rendered, screenshots visually inspected. No product-chat/advisor launcher observed in this mode. Product Opýtať sa opens ordinary Otázka na predajcu with Váš e-mail, Telefón, Správa, ODOSLAŤ; all fields left empty, no submission. Home Poradíme vám osobne describes store assistance. Adam100ml199EUR Skladom.",
+      "limits": "Other cookie/session modes and unvisited pages not proven.",
+      "screenshots": [
+        "n447/s5/dokazy/adora-live-home-20261110.webp",
+        "n447/s5/dokazy/adora-live-product-20261110.webp",
+        "n447/s5/dokazy/adora-live-question-20261110.webp"
+      ]
+    },
+    {
+      "domain": "nicheandglow.cz",
+      "home": "https://www.nicheandglow.cz/",
+      "product": "https://www.nicheandglow.cz/zbozi/mio-dio/",
+      "cookieMode": "Odmítnout cookies",
+      "observed": "Home and actual Mio Dio product rendered, screenshots visually inspected. No product-chat/advisor launcher observed in this mode. Static store personal advice text, ordinary contact telephone/email. Mio Dio30ml3890CZK Skladem, visible notes head passionfruit/saffron/Turkish rose, heart oud/benzoin/patchouli, base leather/Akigalawood/amber/vanilla/labdanum. No cart/form/chat interaction.",
+      "limits": "Other cookie/session modes and unvisited pages not proven.",
+      "screenshots": [
+        "n447/s5/dokazy/nicheglow-live-home-20261110.webp",
+        "n447/s5/dokazy/nicheglow-live-product-20261110.webp"
+      ]
+    }
+  ]
+}
