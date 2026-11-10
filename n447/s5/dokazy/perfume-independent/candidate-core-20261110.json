@@ -1,0 +1,711 @@
+{
+  "checkedAt": "2026-11-10 18:24:15 UTC",
+  "scope": "Actual execution of unchanged shared core on declarative official-source candidate data in isolated JavaScript; no UI, registry, claim or live browser QA.",
+  "coreCommit": "7926f09c7ec8cca3e3792456916b911626190753",
+  "coreBlob": "f1a4fc262bded8e9b5af347a9ba7921b262c934f",
+  "sourceCommit": "e88fe06e63225b09f960e9b8570d8bcf02bc6ab6",
+  "sourceBlobs": {
+    "preflight": "7b647013b2481a50345e6c29e6e860437677bc05",
+    "models": "e734adbc95ed8fc0f936968f58e5915d3e6e7720",
+    "furiosa": "84812135c764c7a0665b2e68fc1c6b23c993ae8d",
+    "scentium": "a188568a096258ea812b9618efbc6d705321296c"
+  },
+  "paidModelCalls": 0,
+  "totalReachable": 40,
+  "reports": [
+    {
+      "domain": "kintsugiperfumes.com",
+      "status": "PASS_EXISTING_CORE_DATA_ONLY",
+      "formulas": 12,
+      "questionCount": 5,
+      "questions": [
+        {
+          "answers": {},
+          "key": "fragranceDirection",
+          "options": [
+            "fresh",
+            "floral",
+            "gourmand",
+            "wood"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "taom-eau-de-parfum",
+            "kaigan-eau-de-parfum",
+            "hanzo-eau-de-parfum",
+            "tempo-eau-de-parfum"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "muza-eau-de-parfum",
+            "carnal-eau-de-parfum"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "luna-eau-de-parfum",
+            "ambre-extrait-de-parfum"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "santal-eau-de-parfum",
+            "deus-eau-de-parfum",
+            "phenix-eau-de-parfum",
+            "ambre-oud-extrait-de-parfum"
+          ]
+        }
+      ],
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "taom-eau-de-parfum"
+          },
+          "id": "taom-eau-de-parfum",
+          "url": "https://kintsugiperfumes.com/products/taom-eau-de-parfum",
+          "pack": "50 ml",
+          "priceAmount": 3590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "kaigan-eau-de-parfum"
+          },
+          "id": "kaigan-eau-de-parfum",
+          "url": "https://kintsugiperfumes.com/products/kaigan-eau-de-parfum",
+          "pack": "50 ml",
+          "priceAmount": 3590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "hanzo-eau-de-parfum"
+          },
+          "id": "hanzo-eau-de-parfum",
+          "url": "https://kintsugiperfumes.com/products/hanzo-eau-de-parfum",
+          "pack": "50 ml",
+          "priceAmount": 3590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "tempo-eau-de-parfum"
+          },
+          "id": "tempo-eau-de-parfum",
+          "url": "https://www.kintsugiperfumes.com/products/tempo-eau-de-parfum",
+          "pack": "2 × 8 ml",
+          "priceAmount": 1190,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "muza-eau-de-parfum"
+          },
+          "id": "muza-eau-de-parfum",
+          "url": "https://kintsugiperfumes.com/products/muza-eau-de-parfum",
+          "pack": "50 ml",
+          "priceAmount": 3590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "carnal-eau-de-parfum"
+          },
+          "id": "carnal-eau-de-parfum",
+          "url": "https://kintsugiperfumes.com/products/carnal-eau-de-parfum",
+          "pack": "50 ml",
+          "priceAmount": 3590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "luna-eau-de-parfum"
+          },
+          "id": "luna-eau-de-parfum",
+          "url": "https://kintsugiperfumes.com/products/luna-eau-de-parfum",
+          "pack": "50 ml",
+          "priceAmount": 3590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "ambre-extrait-de-parfum"
+          },
+          "id": "ambre-extrait-de-parfum",
+          "url": "https://kintsugiperfumes.com/products/ambre-extrait-de-parfum",
+          "pack": "50 ml",
+          "priceAmount": 4390,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "santal-eau-de-parfum"
+          },
+          "id": "santal-eau-de-parfum",
+          "url": "https://kintsugiperfumes.com/products/santal-eau-de-parfum",
+          "pack": "50 ml",
+          "priceAmount": 3590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "deus-eau-de-parfum"
+          },
+          "id": "deus-eau-de-parfum",
+          "url": "https://kintsugiperfumes.com/products/deus-eau-de-parfum",
+          "pack": "50 ml",
+          "priceAmount": 3590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "phenix-eau-de-parfum"
+          },
+          "id": "phenix-eau-de-parfum",
+          "url": "https://kintsugiperfumes.com/products/phenix-eau-de-parfum",
+          "pack": "50 ml",
+          "priceAmount": 3590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "ambre-oud-extrait-de-parfum"
+          },
+          "id": "ambre-oud-extrait-de-parfum",
+          "url": "https://kintsugiperfumes.com/products/ambre-oud-extrait-de-parfum",
+          "pack": "50 ml",
+          "priceAmount": 4390,
+          "currency": "CZK"
+        }
+      ],
+      "allProductsReachableExactlyOnce": true,
+      "noEmptyOrSingleChoiceQuestion": true,
+      "onlyFragranceQuestions": true,
+      "optionalAddon": null,
+      "registryChanged": false,
+      "liveQa": false
+    },
+    {
+      "domain": "oraculum.store",
+      "status": "PASS_EXISTING_CORE_DATA_ONLY",
+      "formulas": 6,
+      "questionCount": 3,
+      "questions": [
+        {
+          "answers": {},
+          "key": "fragranceDirection",
+          "options": [
+            "fig",
+            "wood"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fig"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "helenist",
+            "arabesque"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "santalist",
+            "krucifist",
+            "katarzist",
+            "mio-dio"
+          ]
+        }
+      ],
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fig",
+            "fragranceProfile": "helenist"
+          },
+          "id": "helenist",
+          "url": "https://oraculum.store/products/helenist",
+          "pack": "50 ml",
+          "priceAmount": 3590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fig",
+            "fragranceProfile": "arabesque"
+          },
+          "id": "arabesque",
+          "url": "https://oraculum.store/products/arabesque",
+          "pack": "50 ml",
+          "priceAmount": 3590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "santalist"
+          },
+          "id": "santalist",
+          "url": "https://oraculum.store/products/santalist",
+          "pack": "50 ml",
+          "priceAmount": 3890,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "krucifist"
+          },
+          "id": "krucifist",
+          "url": "https://oraculum.store/products/krucifist",
+          "pack": "50 ml",
+          "priceAmount": 3890,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "katarzist"
+          },
+          "id": "katarzist",
+          "url": "https://oraculum.store/products/katarzist",
+          "pack": "50 ml",
+          "priceAmount": 3590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "mio-dio"
+          },
+          "id": "mio-dio",
+          "url": "https://oraculum.store/products/mio-dio",
+          "pack": "30 ml",
+          "priceAmount": 3890,
+          "currency": "CZK"
+        }
+      ],
+      "allProductsReachableExactlyOnce": true,
+      "noEmptyOrSingleChoiceQuestion": true,
+      "onlyFragranceQuestions": true,
+      "optionalAddon": null,
+      "registryChanged": false,
+      "liveQa": false
+    },
+    {
+      "domain": "furiosa.cz",
+      "status": "PASS_EXISTING_CORE_DATA_ONLY",
+      "formulas": 10,
+      "questionCount": 5,
+      "questions": [
+        {
+          "answers": {},
+          "key": "fragranceDirection",
+          "options": [
+            "green",
+            "floral",
+            "wood",
+            "cherrySweet"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "furiosa®-matcha-date",
+            "furiosa®-fizz",
+            "furiosa®-nude"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "furiosa®-burlesque",
+            "furiosa®-blush"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "furiosa®-old-money",
+            "furiosa®-kashmir"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "cherrySweet"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "furiosa-cherry-affair",
+            "furiosa®-sex",
+            "furiosa-candy-as-fck"
+          ]
+        }
+      ],
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "furiosa®-matcha-date"
+          },
+          "id": "furiosa®-matcha-date",
+          "url": "https://furiosa.cz/products/furiosa%c2%ae-matcha-date",
+          "pack": "50 ml",
+          "priceAmount": 2990,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "furiosa®-fizz"
+          },
+          "id": "furiosa®-fizz",
+          "url": "https://furiosa.cz/products/furiosa%c2%ae-fizz",
+          "pack": "50 ml",
+          "priceAmount": 1990,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "green",
+            "fragranceProfile": "furiosa®-nude"
+          },
+          "id": "furiosa®-nude",
+          "url": "https://furiosa.cz/products/furiosa%c2%ae-nude",
+          "pack": "50 ml",
+          "priceAmount": 1990,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "furiosa®-burlesque"
+          },
+          "id": "furiosa®-burlesque",
+          "url": "https://furiosa.cz/products/furiosa%c2%ae-burlesque",
+          "pack": "50 ml",
+          "priceAmount": 2490,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "furiosa®-blush"
+          },
+          "id": "furiosa®-blush",
+          "url": "https://furiosa.cz/products/furiosa%c2%ae-blush",
+          "pack": "50 ml",
+          "priceAmount": 2490,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "furiosa®-old-money"
+          },
+          "id": "furiosa®-old-money",
+          "url": "https://furiosa.cz/products/furiosa%c2%ae-old-money",
+          "pack": "50 ml",
+          "priceAmount": 2490,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "furiosa®-kashmir"
+          },
+          "id": "furiosa®-kashmir",
+          "url": "https://furiosa.cz/products/furiosa%c2%ae-kashmir",
+          "pack": "50 ml",
+          "priceAmount": 2490,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "cherrySweet",
+            "fragranceProfile": "furiosa-cherry-affair"
+          },
+          "id": "furiosa-cherry-affair",
+          "url": "https://furiosa.cz/products/furiosa-cherry-affair",
+          "pack": "50 ml",
+          "priceAmount": 2990,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "cherrySweet",
+            "fragranceProfile": "furiosa®-sex"
+          },
+          "id": "furiosa®-sex",
+          "url": "https://furiosa.cz/products/furiosa%c2%ae-sex",
+          "pack": "50 ml",
+          "priceAmount": 2490,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "cherrySweet",
+            "fragranceProfile": "furiosa-candy-as-fck"
+          },
+          "id": "furiosa-candy-as-fck",
+          "url": "https://furiosa.cz/products/furiosa-candy-as-fck",
+          "pack": "50 ml",
+          "priceAmount": 2990,
+          "currency": "CZK"
+        }
+      ],
+      "allProductsReachableExactlyOnce": true,
+      "noEmptyOrSingleChoiceQuestion": true,
+      "onlyFragranceQuestions": true,
+      "optionalAddon": null,
+      "registryChanged": false,
+      "liveQa": false
+    },
+    {
+      "domain": "scentium.cz",
+      "status": "PASS_EXISTING_CORE_DATA_ONLY",
+      "formulas": 12,
+      "questionCount": 5,
+      "questions": [
+        {
+          "answers": {},
+          "key": "fragranceDirection",
+          "options": [
+            "fresh",
+            "floral",
+            "wood",
+            "gourmand"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "farniente",
+            "ginger-tonic-fr-2018"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "salt",
+            "neroli-poet-100-ml",
+            "butterfly-mind"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "kyoto",
+            "blanc-sesame",
+            "malkhut-109"
+          ]
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "key": "fragranceProfile",
+          "options": [
+            "vanilla-milk",
+            "blanc-sesame-1",
+            "tropical-dance",
+            "fanfarone-italiano"
+          ]
+        }
+      ],
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "farniente"
+          },
+          "id": "farniente",
+          "url": "https://scentium.cz/products/farniente",
+          "pack": "50 ml",
+          "priceAmount": 2190,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "ginger-tonic-fr-2018"
+          },
+          "id": "ginger-tonic-fr-2018",
+          "url": "https://scentium.cz/products/ginger-tonic-fr-2018",
+          "pack": "50 ml",
+          "priceAmount": 3290,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "salt"
+          },
+          "id": "salt",
+          "url": "https://scentium.cz/products/salt",
+          "pack": "50 ml",
+          "priceAmount": 3690,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "neroli-poet-100-ml"
+          },
+          "id": "neroli-poet-100-ml",
+          "url": "https://scentium.cz/products/neroli-poet-100-ml",
+          "pack": "100 ml",
+          "priceAmount": 2190,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "butterfly-mind"
+          },
+          "id": "butterfly-mind",
+          "url": "https://scentium.cz/products/butterfly-mind",
+          "pack": "100 ml",
+          "priceAmount": 6290,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "kyoto"
+          },
+          "id": "kyoto",
+          "url": "https://scentium.cz/products/kyoto",
+          "pack": "50 ml",
+          "priceAmount": 1290,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "blanc-sesame"
+          },
+          "id": "blanc-sesame",
+          "url": "https://scentium.cz/products/blanc-sesame",
+          "pack": "50 ml",
+          "priceAmount": 2990,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "malkhut-109"
+          },
+          "id": "malkhut-109",
+          "url": "https://scentium.cz/products/malkhut-109",
+          "pack": "50 ml",
+          "priceAmount": 1390,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "vanilla-milk"
+          },
+          "id": "vanilla-milk",
+          "url": "https://scentium.cz/products/vanilla-milk",
+          "pack": "50 ml",
+          "priceAmount": 3690,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "blanc-sesame-1"
+          },
+          "id": "blanc-sesame-1",
+          "url": "https://scentium.cz/products/blanc-sesame-1",
+          "pack": "75 ml",
+          "priceAmount": 2590,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "tropical-dance"
+          },
+          "id": "tropical-dance",
+          "url": "https://scentium.cz/products/tropical-dance",
+          "pack": "50 ml",
+          "priceAmount": 2690,
+          "currency": "CZK"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "fanfarone-italiano"
+          },
+          "id": "fanfarone-italiano",
+          "url": "https://scentium.cz/products/fanfarone-italiano",
+          "pack": "100 ml",
+          "priceAmount": 6290,
+          "currency": "CZK"
+        }
+      ],
+      "allProductsReachableExactlyOnce": true,
+      "noEmptyOrSingleChoiceQuestion": true,
+      "onlyFragranceQuestions": true,
+      "optionalAddon": null,
+      "registryChanged": false,
+      "liveQa": false
+    }
+  ]
+}

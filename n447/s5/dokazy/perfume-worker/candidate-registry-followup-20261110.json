@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-11-10 18:25:34 UTC",
+  "scope": "Selected factual follow-up from previously successful direct official HTTPS reads before execution environment became unavailable. Connector RPO retry later failed; no new live browser QA.",
+  "operatorHistory": {
+    "domain": "leparfumlechic.sk",
+    "ico": "51786796",
+    "source": "https://api.statistics.sk/rpo/v1/search?identifier=51786796",
+    "observedAt": "2026-11-10T18:09:04.093062+00:00",
+    "httpStatus": 200,
+    "organizationId": 9617606,
+    "currentRegisteredName": "Lukáš Roth - Le Parfum & Le Chic",
+    "currentNameSince": "2018-07-24",
+    "historicalRegisteredName": "Mgr.art. Lukáš Roth - Fineluxart",
+    "historicalNameFrom": "2018-06-11",
+    "historicalNameTo": "2018-07-23",
+    "establishment": "2018-06-11",
+    "country": "SK",
+    "duplicateSearchTerms": [
+      "51786796",
+      "Lukáš Roth",
+      "Le Parfum & Le Chic",
+      "Fineluxart"
+    ],
+    "activity": "Search identity/history verified. Organization-detail active/termination state not verified.",
+    "revenue": "UNKNOWN",
+    "privacy": "Unneeded sole-trader address and personal data omitted."
+  },
+  "additionalPlatformAliases": [
+    {
+      "domain": "furiosa.cz",
+      "alias": "furiosa-store.myshopify.com",
+      "source": "https://furiosa.cz/",
+      "observedAt": "2026-11-10T18:09:00Z",
+      "timePrecision": "Approximate minute; exact original capture timestamp remains in preserved local file",
+      "mode": "Official homepage Shopify bootstrap HTML, not live widget QA"
+    },
+    {
+      "domain": "scentium.cz",
+      "alias": "ir0ufv-18.myshopify.com",
+      "source": "https://scentium.cz/",
+      "observedAt": "2026-11-10T18:09:00Z",
+      "timePrecision": "Approximate minute; exact original capture timestamp remains in preserved local file",
+      "mode": "Official homepage Shopify bootstrap HTML, not live widget QA"
+    }
+  ],
+  "duplicateLimit": "92 remote refs / 2193 unique eligible text blobs were scanned before environment loss. New aliases and historical name were included in an extra scan, but its detailed hit locations could not be reread after transport loss. No new all-remote duplicate clearance is asserted; fresh domain/operator/ICO/alias/claims checks still required before any reservation.",
+  "registryReadLimits": [
+    {
+      "url": "https://www.zrsr.sk/zr_ico.aspx?ICO=51786796",
+      "result": "HTTP 503 on earlier direct HTTPS read; no bypass"
+    },
+    {
+      "url": "https://api.statistics.sk/rpo/v1/organizations/9617606",
+      "result": "Detail request was unfinished at execution transport loss; later supported web connector returned inaccessible. Not verified."
+    }
+  ],
+  "newClaims": 0,
+  "paidModelCalls": 0
+}
