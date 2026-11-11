@@ -1,0 +1,110 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aké tóny chcete objavovať?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy, čaj alebo ovocie",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "xerjoff-torino21",
+          "label": "Citrusy, mäta a zelený čaj",
+          "productId": "xerjoff-torino21",
+          "sourceUrl": "https://www.flakon.sk/xerjoff-torino21/"
+        },
+        {
+          "value": "vilhelm-parfumerie-mango-skin",
+          "label": "Mango, pomaranč a černice",
+          "productId": "vilhelm-parfumerie-mango-skin",
+          "sourceUrl": "https://www.flakon.sk/vilhelm-parfumerie-mango-skin/"
+        },
+        {
+          "value": "ex-nihilo---blue-talisman",
+          "label": "Hruška, zázvor a pomarančový kvet",
+          "productId": "ex-nihilo---blue-talisman",
+          "sourceUrl": "https://www.flakon.sk/ex-nihilo---blue-talisman/"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Kvety alebo mliečne akordy",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "xerjoff-casamorati---gran-ballo",
+          "label": "Jazmín, gardénia a karamel",
+          "productId": "xerjoff-casamorati---gran-ballo",
+          "sourceUrl": "https://www.flakon.sk/xerjoff-casamorati---gran-ballo/"
+        },
+        {
+          "value": "lush-vanillary-rose-oudh",
+          "label": "Ruža, vanilka a oudh",
+          "productId": "lush-vanillary-rose-oudh",
+          "sourceUrl": "https://www.flakon.sk/lush-vanillary-rose-oudh/"
+        },
+        {
+          "value": "scentologia-lacton-ic-",
+          "label": "Mliečne akordy a pižmo",
+          "productId": "scentologia-lacton-ic-",
+          "sourceUrl": "https://www.flakon.sk/scentologia-lacton-ic-/"
+        }
+      ]
+    },
+    {
+      "value": "gourmand",
+      "label": "Káva, mandle alebo amaretto",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "parfums-dusita---mocha-absolu",
+          "label": "Káva, čokoláda a mlieko",
+          "productId": "parfums-dusita---mocha-absolu",
+          "sourceUrl": "https://www.flakon.sk/parfums-dusita---mocha-absolu/"
+        },
+        {
+          "value": "bdk-parfums-velvet-tonka",
+          "label": "Mandľa, vanilka a tonka",
+          "productId": "bdk-parfums-velvet-tonka",
+          "sourceUrl": "https://www.flakon.sk/bdk-parfums-velvet-tonka/"
+        },
+        {
+          "value": "toskovat-amaretto-in-the-melting-room",
+          "label": "Amaretto, tabak a medový plást",
+          "productId": "toskovat-amaretto-in-the-melting-room",
+          "sourceUrl": "https://www.flakon.sk/toskovat-amaretto-in-the-melting-room/"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Kadidlo, drevo alebo ambra",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "matiere-premiere---encens-suave",
+          "label": "Kadidlo, káva a benzoin",
+          "productId": "matiere-premiere---encens-suave",
+          "sourceUrl": "https://www.flakon.sk/matiere-premiere---encens-suave/"
+        },
+        {
+          "value": "byredo-vanille-antique",
+          "label": "Vanilka, dymové a drevité tóny",
+          "productId": "byredo-vanille-antique",
+          "sourceUrl": "https://www.flakon.sk/byredo-vanille-antique/"
+        },
+        {
+          "value": "penhaligon-s-halfeti-amber",
+          "label": "Šafran, semiš a ambra",
+          "productId": "penhaligon-s-halfeti-amber",
+          "sourceUrl": "https://www.flakon.sk/penhaligon-s-halfeti-amber/"
+        }
+      ]
+    }
+  ]
+}

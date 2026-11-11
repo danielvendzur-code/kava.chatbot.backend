@@ -1,0 +1,29 @@
+# Alexmonhart + Flakon — PERFUME_WORKER isolated handoff
+
+Reserved after actual TLS-verified WebKit merchant home/product inspection, official operator/register checks and fresh all-remote domain/operator/ICO/alias scan. Claim commit c2c2767c66c92691888c837c04f5201fc102db85; readback two own rows. Own branch codex/s5-perfume-20261110. Safran and other workers' firms untouched.
+
+## Exact integration inputs (MAIN_WORKER owns integration)
+
+- `tools/s5/perfume-independent/candidate-packages/alexmonhart/`: 7 genuinely different core compositions, each exact available50ml variant3790CZK including tax. Discovery/trio/personal sets,100/20/2ml sizes and Blasphemer art packaging are not extra formulas. Two collaborations excluded because pack or note evidence is incomplete. Canonical THE DREAMER handle really is `the-avantgardist-copy`; do not rename its merchant URL. Each CTA has its official Shopify50ml variant ID. Official photos depict two sizes of the same composition; this is not a two-bottle bundle.
+- `tools/s5/perfume-independent/candidate-packages/flakon/`: 12 genuinely different2ml decants, exact Shoptet option IDs/data-customerprice/stock. No from-price substituted. Full bottle photographs are explicitly illustrative. Mango Skin2ml11EUR replaces a source-reviewed450x450 Matcha Date illustration; formula count remains12. Mocha Absolu uses its official560x560 original instead of padded CDN output. Original photo dimensions are preserved separately; CDN dimensions are not claimed as original capture resolution.
+- Each package contains `verified-products.json`, `catalogue.js`, `selection-model.json`, `config.json`, `integration-review.json`, `ui-review.css`, `brand-source.json`, `assets/`, `README.md`.
+- Copy targets: verified-products → `n447/s5/sources/SLUG/verified-products.json`; catalogue → `catalogues/SLUG.js`; assets → `assets/s5/SLUG/`. Add exactly one catalogue import/registryObject and backend brand per firm using integration-review.json. Three explicit offline rules per firm are supplied. Company CSS stays scoped by data-cosmetics-demo. Do not merge any other local WIP or old candidate packages.
+- Same immutable core base c9e4da04e19339492a4ffe91428e8ac960b866b6, no second advisor-core fix. Flakon truthfully keeps `isSample:true` and `source.sampleSegment:fragrance`. No skincare mapping or name-based product selection. No compatible addon asserted, no budget/intensity/occasion/efficacy/longevity or cart-integration promises.
+
+## Gate evidence
+
+`reports/alexmonhart-flakon-20261111/operators.json`, `merchant-live-eligibility.json`, `duplicates.json`, `reservation.json`, exact source captures and original-photo audit contain URLs/times. Current fresh scan92remote heads/2302unique text blobs/missing0; Alex only current assignment, Flakon only assignment and own historical unreserved source/variant research. No existing demo/claim found. Global Vercel and mail history remain PENDING_CONTROLLER, never claimed checked.
+
+Alexmonhart s.r.o./05910510 CZ, current official ARES; merchant contact info@alexmonhart.com; Shopify alias ywxmda-v4.myshopify.com scanned. Actual home/PDP fresh default session, no consent clicked: no product chat/advisor observed. Green heart is wishlist. Veeform script alone is not a visible quiz; visible embeds on visited pages absent. Other pages/session/cookie modes uncertain. Stock is official selected variant available=true, no physical unit count asserted. Revenue/size UNKNOWN. Broader fashion/perfume brand and flagship justify owner review of commercial fit/scale, without asserting turnover or increasing447+10.
+
+Flakon Reality group,s.r.o./51695201 SK, current official ORSR extract dated11.11.2026/data10.11; a later redundant fetch timed out, original successful bytes retained. Contact obchod@flakon.sk; final prices includeVAT per official terms, no tax rate inferred. Actual home/PDP with rejected cookies; exact Encens Suave2ml9.50EUR stock5. `Opýtať sa` fully loaded empty email/phone/message/captcha seller form, nothing completed/submitted. No product chat/advisor observed in this mode; other modes/pages uncertain. Notes are explicitly this merchant's statements, not independently manufacturer-verified formulae. Revenue/size UNKNOWN.
+
+## Actual local QA, integration limits
+
+Baseline on c9e4da0: all19engine leaves and57result viewports320/390/1280;27question views with decoded unique photos,18focused offline chat cards,6offer/waiting viewports,4equal40px chips,hover/reset/progress/CTA/price/pack/no-overflow,reduced-motion,paid0. Source/photo delta reused30unchanged Flakon results and recaptured6changed results; no inflated count.
+
+Alexmonhart native comparison passes two different formulas at all3widths. Flakon native comparison was actually opened at390:0choices because shared `n447/s4/compare-native.js` filters samples. MAIN alone should apply the existing SAMPLE-COMPARE-OPT-IN-20261111.md explicit S5-fragrance-samples proposal and then test this new brand as well. Do not clear isSample. Comparison wording in proposed fragments is conditional on that integration; package not registered/published while this flow is unresolved.
+
+Final presentation polish (readable140px Alex header wordmark and shorter literal note labels) is being verified separately. Final evidence report will distinguish baseline from actual delta. Not integrated/backend-registered/deployed or live Preview verified. Finished count+0. Current source/config package is reviewable; MAIN integration/Preview remains required.
+
+Price447EUR+10EUR/month unchanged. No trial copy. No mail operation, production/DNS/account/rights/API changes or paid calls. Existing Scentisimo archives preserved. All proposed packages/reports are under `/tools/`, already excluded from Vercel; shared ignore/runtime files untouched.

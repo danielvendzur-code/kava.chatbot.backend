@@ -1,0 +1,257 @@
+{
+  "status": "SOURCE_AND_LOCAL_RESULTS_VERIFIED_MAIN_COMPARISON_INTEGRATION_PENDING",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Flakon",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/flakon/logo.png",
+      "header": "/assets/s5/flakon/logo.png",
+      "avatar": "/assets/s5/flakon/avatar.svg"
+    },
+    "brand": {
+      "name": "Flakon",
+      "domain": "flakon.sk",
+      "website": "https://www.flakon.sk/",
+      "lang": "sk",
+      "fullName": "Flakon",
+      "url": "https://www.flakon.sk/",
+      "logo": "/assets/s5/flakon/logo.png",
+      "mark": "/assets/s5/flakon/avatar.svg",
+      "greeting": "Vyberte si 2 ml odstrek podľa doložených tónov a porovnajte dve rôzne kompozície.",
+      "quickChips": [
+        "Citrusy a mäta",
+        "Káva a čokoláda",
+        "Ruža a vanilka",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#554a37",
+        "accent": "#554a37",
+        "soft": "#f6f1e7",
+        "paper": "#ffffff",
+        "ink": "#24231f",
+        "line": "#e1ddd2"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, čaj alebo ovocie",
+        "Vyberte podľa uvedených tónov.",
+        "Citrusy, čaj alebo ovocie",
+        ""
+      ],
+      "xerjoff-torino21": [
+        "Citrusy, mäta a zelený čaj",
+        "Citrusy, mäta a zelený čaj.",
+        "Citrusy, mäta a zelený čaj",
+        "Citrusy, mäta a zelený čaj."
+      ],
+      "vilhelm-parfumerie-mango-skin": [
+        "Mango, pomaranč a černice",
+        "Mango, pomaranč a černice.",
+        "Mango, pomaranč a černice",
+        "Mango, pomaranč a černice."
+      ],
+      "ex-nihilo---blue-talisman": [
+        "Hruška, zázvor a pomarančový kvet",
+        "Hruška, zázvor a pomarančový kvet.",
+        "Hruška, zázvor a pomarančový kvet",
+        "Hruška, zázvor a pomarančový kvet."
+      ],
+      "floral": [
+        "Kvety alebo mliečne akordy",
+        "Vyberte podľa uvedených tónov.",
+        "Kvety alebo mliečne akordy",
+        ""
+      ],
+      "xerjoff-casamorati---gran-ballo": [
+        "Jazmín, gardénia a karamel",
+        "Jazmín, gardénia a karamel.",
+        "Jazmín, gardénia a karamel",
+        "Jazmín, gardénia a karamel."
+      ],
+      "lush-vanillary-rose-oudh": [
+        "Ruža, vanilka a oudh",
+        "Ruža, vanilka a oudh.",
+        "Ruža, vanilka a oudh",
+        "Ruža, vanilka a oudh."
+      ],
+      "scentologia-lacton-ic-": [
+        "Mliečne akordy a pižmo",
+        "Mliečne akordy a pižmo.",
+        "Mliečne akordy a pižmo",
+        "Mliečne akordy a pižmo."
+      ],
+      "gourmand": [
+        "Káva, mandle alebo amaretto",
+        "Vyberte podľa uvedených tónov.",
+        "Káva, mandle alebo amaretto",
+        ""
+      ],
+      "parfums-dusita---mocha-absolu": [
+        "Káva, čokoláda a mlieko",
+        "Káva, čokoláda a mlieko.",
+        "Káva, čokoláda a mlieko",
+        "Káva, čokoláda a mlieko."
+      ],
+      "bdk-parfums-velvet-tonka": [
+        "Mandľa, vanilka a tonka",
+        "Mandľa, vanilka a tonka.",
+        "Mandľa, vanilka a tonka",
+        "Mandľa, vanilka a tonka."
+      ],
+      "toskovat-amaretto-in-the-melting-room": [
+        "Amaretto, tabak a medový plást",
+        "Amaretto, tabak a medový plást.",
+        "Amaretto, tabak a medový plást",
+        "Amaretto, tabak a medový plást."
+      ],
+      "wood": [
+        "Kadidlo, drevo alebo ambra",
+        "Vyberte podľa uvedených tónov.",
+        "Kadidlo, drevo alebo ambra",
+        ""
+      ],
+      "matiere-premiere---encens-suave": [
+        "Kadidlo, káva a benzoin",
+        "Kadidlo, káva a benzoin.",
+        "Kadidlo, káva a benzoin",
+        "Kadidlo, káva a benzoin."
+      ],
+      "byredo-vanille-antique": [
+        "Vanilka, dymové a drevité tóny",
+        "Vanilka, dymové a drevité tóny.",
+        "Vanilka, dymové a drevité tóny",
+        "Vanilka, dymové a drevité tóny."
+      ],
+      "penhaligon-s-halfeti-amber": [
+        "Šafran, semiš a ambra",
+        "Šafran, semiš a ambra.",
+        "Šafran, semiš a ambra",
+        "Šafran, semiš a ambra."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aké tóny chcete objavovať?",
+        "Vyberte podľa doložených tónov.",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktoré tóny vás lákajú?",
+        "Vyberte jeden profil.",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "xerjoff-torino21": [
+        "/assets/s3/scenes-k2/mint-herbs.jpg"
+      ],
+      "vilhelm-parfumerie-mango-skin": [
+        "/assets/s3/scenes-k2/mango.jpg"
+      ],
+      "ex-nihilo---blue-talisman": [
+        "/assets/s3/scenes-k2/neroli-blossom.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "xerjoff-casamorati---gran-ballo": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "lush-vanillary-rose-oudh": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "scentologia-lacton-ic-": [
+        "/assets/s3/scenes-k2/milk.jpg"
+      ],
+      "gourmand": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "parfums-dusita---mocha-absolu": [
+        "/assets/s3/scenes-k2/coffee-beans.jpg"
+      ],
+      "bdk-parfums-velvet-tonka": [
+        "/assets/s3/scenes-k2/almonds.jpg"
+      ],
+      "toskovat-amaretto-in-the-melting-room": [
+        "/assets/s3/scenes-k2/honey.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "matiere-premiere---encens-suave": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "byredo-vanille-antique": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "penhaligon-s-halfeti-amber": [
+        "/assets/s5/flakon/penhaligon-s-halfeti-amber.webp"
+      ],
+      "navigation:more": [
+        "/assets/s5/flakon/xerjoff-torino21.webp"
+      ]
+    },
+    "compareProductIds": [
+      "xerjoff-torino21",
+      "penhaligon-s-halfeti-amber"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vône · vzorky · porovnanie",
+      "titleSuffix": "výber vzorky vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vzorku podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi vybrať vzorku vône podľa jeho vkusu.",
+      "lead": "Zákazník si vyberie podľa doložených tónov a pozrie si konkrétny 2 ml odstrek s cenou a odkazom. Dve odlišné kompozície si môže porovnať.",
+      "includedChat": "Tóny vône, konkrétne vzorky, ceny a porovnanie.",
+      "includedAdvisor": "Preferované tóny a konkrétny profil vône — na konci 2 ml odstrek.",
+      "greeting": "Vyberte si 2 ml odstrek podľa doložených tónov a porovnajte dve rôzne kompozície.",
+      "teaserTitle": "Vyberte si vzorku vône podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vzorky vône",
+      "source": "perfume-demo-"
+    }
+  },
+  "catalogueImport": "/catalogues/flakon.js",
+  "backendBrand": "flakon",
+  "offlineRules": [
+    {
+      "match": "citrus.*mat",
+      "ids": [
+        "xerjoff-torino21"
+      ]
+    },
+    {
+      "match": "kav.*cokolad",
+      "ids": [
+        "parfums-dusita---mocha-absolu"
+      ]
+    },
+    {
+      "match": "ruz.*vanilk",
+      "ids": [
+        "lush-vanillary-rose-oudh"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "nativeComparison": "MAIN sample opt-in fix pending",
+  "runtimeEnabled": false,
+  "ownerOnlyChanges": [
+    "Import isolated catalogue/register one brand; add explicit offline rules.",
+    "Copy isolated assets and scope CSS once; no parallel shared-runtime edits."
+  ],
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6"
+}

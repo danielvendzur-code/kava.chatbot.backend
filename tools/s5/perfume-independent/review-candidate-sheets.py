@@ -18,7 +18,7 @@ u=json.load(open(base/a.ui/'independent-ui.json'));c=json.load(open(base/a.chat/
 for slug in a.slugs:
  for width in [320,390,1280]:
   rs=[r for r in u['results'] if r['slug']==slug and r['width']==width]
-  if len(rs)==12:sheet(slug+'-results-'+str(width),rs,base/a.ui)
+  if rs:sheet(slug+'-results-'+str(width),rs,base/a.ui)
   sheet(slug+'-questions-'+str(width),[r for r in u['questionPages'] if r['slug']==slug and r['width']==width],base/a.ui)
   sheet(slug+'-chat-'+str(width),[r for r in c['cards'] if r['slug']==slug and r['width']==width],base/a.chat)
 (out/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n');print(len(manifest),'sheets')

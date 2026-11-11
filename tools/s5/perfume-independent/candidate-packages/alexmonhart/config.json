@@ -1,0 +1,217 @@
+{
+  "slug": "alexmonhart",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "c2c2767c66c92691888c837c04f5201fc102db85",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_AND_LOCAL_ALL_FLOWS_VERIFIED_MAIN_INTEGRATION_PREVIEW_PENDING",
+  "catalogue": "/catalogues/alexmonhart.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Grapefruit a santal",
+    "Mandle a bílé květy",
+    "Oudové dřevo a kůže",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Grapefruit a santal",
+      "match": "grapefruit.*santal",
+      "productIds": [
+        "the-thinker"
+      ]
+    },
+    {
+      "chip": "Mandle a bílé květy",
+      "match": "mandl.*bil.*kvet",
+      "productIds": [
+        "the-minimalist"
+      ]
+    },
+    {
+      "chip": "Oudové dřevo a kůže",
+      "match": "oud.*drev.*kuz",
+      "productIds": [
+        "the-blasphemer"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "the-thinker",
+    "the-avantgardist"
+  ],
+  "addon": null,
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "ALEXMONHART",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/alexmonhart/logo.svg",
+      "header": "/assets/s5/alexmonhart/logo.svg",
+      "avatar": "/assets/s5/alexmonhart/avatar.svg"
+    },
+    "brand": {
+      "name": "ALEXMONHART",
+      "domain": "alexmonhart.com",
+      "website": "https://www.alexmonhart.com/",
+      "lang": "cs",
+      "fullName": "ALEXMONHART",
+      "url": "https://www.alexmonhart.com/",
+      "logo": "/assets/s5/alexmonhart/logo.svg",
+      "mark": "/assets/s5/alexmonhart/avatar.svg",
+      "greeting": "Vyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.",
+      "quickChips": [
+        "Grapefruit a santal",
+        "Mandle a bílé květy",
+        "Oudové dřevo a kůže",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#171714",
+        "accent": "#171714",
+        "soft": "#f4f3ee",
+        "paper": "#ffffff",
+        "ink": "#24231f",
+        "line": "#e1ddd2"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy a ovoce se dřevem",
+        "Vyberte podle uvedených tónů.",
+        "Citrusy a ovoce se dřevem",
+        ""
+      ],
+      "the-thinker": [
+        "Grapefruit, vetiver a santal",
+        "Grapefruit, vetiver a santal.",
+        "Grapefruit, vetiver a santal",
+        "Grapefruit, vetiver a santal."
+      ],
+      "the-avantgardist-copy": [
+        "Ananas, lotos a dřevité tóny",
+        "Ananas, lotos a dřevité tóny.",
+        "Ananas, lotos a dřevité tóny",
+        "Ananas, lotos a dřevité tóny."
+      ],
+      "floral": [
+        "Květy s mandlí nebo dřevem",
+        "Vyberte podle uvedených tónů.",
+        "Květy s mandlí nebo dřevem",
+        ""
+      ],
+      "the-minimalist": [
+        "Bílé květy, mandle a tonka",
+        "Bílé květy, mandle a tonka.",
+        "Bílé květy, mandle a tonka",
+        "Bílé květy, mandle a tonka."
+      ],
+      "the-ritualist": [
+        "Pomerančový květ a Palo Santo",
+        "Pomerančový květ a Palo Santo.",
+        "Pomerančový květ a Palo Santo",
+        "Pomerančový květ a Palo Santo."
+      ],
+      "wood": [
+        "Kůže, tabák nebo pryskyřice",
+        "Vyberte podle uvedených tónů.",
+        "Kůže, tabák nebo pryskyřice",
+        ""
+      ],
+      "the-blasphemer": [
+        "Oudové dřevo a kůže",
+        "Oudové dřevo a kůže.",
+        "Oudové dřevo a kůže",
+        "Oudové dřevo a kůže."
+      ],
+      "the-raver": [
+        "Pryskyřice, cedr a kůže",
+        "Pryskyřice, cedr a kůže.",
+        "Pryskyřice, cedr a kůže",
+        "Pryskyřice, cedr a kůže."
+      ],
+      "the-avantgardist": [
+        "Tabák, koňak a jasmín",
+        "Tabák, koňak a jasmín.",
+        "Tabák, koňak a jasmín",
+        "Tabák, koňak a jasmín."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaké tóny chcete objevovat?",
+        "Vyberte podle doložených tónů.",
+        "Tóny vůně"
+      ],
+      "fragranceProfile": [
+        "Které tóny vás lákají?",
+        "Vyberte jeden profil.",
+        "Tóny vůně"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/grapefruit.jpg"
+      ],
+      "the-thinker": [
+        "/assets/s3/scenes-k2/grapefruit.jpg"
+      ],
+      "the-avantgardist-copy": [
+        "/assets/s5/alexmonhart/the-avantgardist-copy.webp"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/almonds.jpg"
+      ],
+      "the-minimalist": [
+        "/assets/s3/scenes-k2/almonds.jpg"
+      ],
+      "the-ritualist": [
+        "/assets/s3/scenes-k2/neroli-blossom.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "the-blasphemer": [
+        "/assets/s5/alexmonhart/the-blasphemer.webp"
+      ],
+      "the-raver": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "the-avantgardist": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "navigation:more": [
+        "/assets/s5/alexmonhart/the-thinker.webp"
+      ]
+    },
+    "compareProductIds": [
+      "the-thinker",
+      "the-avantgardist"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vůně · balení · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce vůní",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi vybrat vůni podle jeho vkusu.",
+      "lead": "Zákazník si vybere podle doložených tónů a prohlédne si konkrétní vůni s cenou, balením a odkazem. Dvě odlišné kompozice si může porovnat.",
+      "includedChat": "Tóny vůně, balení, ceny a porovnání dvou vůní.",
+      "includedAdvisor": "Preferované tóny a konkrétní profil vůně — na konci konkrétní produkt.",
+      "greeting": "Vyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít poradce pro výběr vůně",
+      "source": "perfume-demo-"
+    }
+  }
+}

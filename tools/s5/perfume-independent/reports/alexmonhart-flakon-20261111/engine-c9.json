@@ -1,0 +1,287 @@
+{
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Unchanged coordinator core with isolated candidate data; not registered or Preview QA",
+  "companies": {
+    "alexmonhart": {
+      "formulaCount": 7,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "the-thinker"
+          },
+          "id": "the-thinker",
+          "url": "https://www.alexmonhart.com/products/the-thinker?variant=54346006331716"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "the-avantgardist-copy"
+          },
+          "id": "the-avantgardist-copy",
+          "url": "https://www.alexmonhart.com/products/the-avantgardist-copy?variant=54347544265028"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "the-minimalist"
+          },
+          "id": "the-minimalist",
+          "url": "https://www.alexmonhart.com/products/the-minimalist?variant=54347398447428"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "the-ritualist"
+          },
+          "id": "the-ritualist",
+          "url": "https://www.alexmonhart.com/products/the-ritualist?variant=54346206478660"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "the-blasphemer"
+          },
+          "id": "the-blasphemer",
+          "url": "https://www.alexmonhart.com/products/the-blasphemer?variant=55714966274372"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "the-raver"
+          },
+          "id": "the-raver",
+          "url": "https://www.alexmonhart.com/products/the-raver?variant=54347562549572"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "the-avantgardist"
+          },
+          "id": "the-avantgardist",
+          "url": "https://www.alexmonhart.com/products/the-avantgardist?variant=54347438948676"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "the-thinker",
+              "the-avantgardist-copy"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "the-minimalist",
+              "the-ritualist"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "the-blasphemer",
+              "the-raver",
+              "the-avantgardist"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "flakon": {
+      "formulaCount": 12,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "xerjoff-torino21"
+          },
+          "id": "xerjoff-torino21",
+          "url": "https://www.flakon.sk/xerjoff-torino21/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "vilhelm-parfumerie-mango-skin"
+          },
+          "id": "vilhelm-parfumerie-mango-skin",
+          "url": "https://www.flakon.sk/vilhelm-parfumerie-mango-skin/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "ex-nihilo---blue-talisman"
+          },
+          "id": "ex-nihilo---blue-talisman",
+          "url": "https://www.flakon.sk/ex-nihilo---blue-talisman/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "xerjoff-casamorati---gran-ballo"
+          },
+          "id": "xerjoff-casamorati---gran-ballo",
+          "url": "https://www.flakon.sk/xerjoff-casamorati---gran-ballo/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "lush-vanillary-rose-oudh"
+          },
+          "id": "lush-vanillary-rose-oudh",
+          "url": "https://www.flakon.sk/lush-vanillary-rose-oudh/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "scentologia-lacton-ic-"
+          },
+          "id": "scentologia-lacton-ic-",
+          "url": "https://www.flakon.sk/scentologia-lacton-ic-/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "parfums-dusita---mocha-absolu"
+          },
+          "id": "parfums-dusita---mocha-absolu",
+          "url": "https://www.flakon.sk/parfums-dusita---mocha-absolu/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "bdk-parfums-velvet-tonka"
+          },
+          "id": "bdk-parfums-velvet-tonka",
+          "url": "https://www.flakon.sk/bdk-parfums-velvet-tonka/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "toskovat-amaretto-in-the-melting-room"
+          },
+          "id": "toskovat-amaretto-in-the-melting-room",
+          "url": "https://www.flakon.sk/toskovat-amaretto-in-the-melting-room/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "matiere-premiere---encens-suave"
+          },
+          "id": "matiere-premiere---encens-suave",
+          "url": "https://www.flakon.sk/matiere-premiere---encens-suave/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "byredo-vanille-antique"
+          },
+          "id": "byredo-vanille-antique",
+          "url": "https://www.flakon.sk/byredo-vanille-antique/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "penhaligon-s-halfeti-amber"
+          },
+          "id": "penhaligon-s-halfeti-amber",
+          "url": "https://www.flakon.sk/penhaligon-s-halfeti-amber/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "gourmand",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "xerjoff-torino21",
+              "vilhelm-parfumerie-mango-skin",
+              "ex-nihilo---blue-talisman"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "xerjoff-casamorati---gran-ballo",
+              "lush-vanillary-rose-oudh",
+              "scentologia-lacton-ic-"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "parfums-dusita---mocha-absolu",
+              "bdk-parfums-velvet-tonka",
+              "toskovat-amaretto-in-the-melting-room"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "matiere-premiere---encens-suave",
+              "byredo-vanille-antique",
+              "penhaligon-s-halfeti-amber"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    }
+  },
+  "paidModelCalls": 0
+}
