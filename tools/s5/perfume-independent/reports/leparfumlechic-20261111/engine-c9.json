@@ -1,0 +1,175 @@
+{
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Unchanged coordinator core with isolated candidate data; not registered or Preview QA",
+  "companies": {
+    "leparfumlechic": {
+      "formulaCount": 12,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "herbal",
+            "fragranceProfile": "metal"
+          },
+          "id": "metal",
+          "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbal",
+            "fragranceProfile": "vodka"
+          },
+          "id": "vodka",
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-vodka-on-the-rocks/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbal",
+            "fragranceProfile": "olimpo"
+          },
+          "id": "olimpo",
+          "url": "https://www.leparfumlechic.sk/product/agatho-mytho-olimpoverde/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "velvet"
+          },
+          "id": "velvet",
+          "url": "https://www.leparfumlechic.sk/product/essential-parfums-velvet-iris/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "rolling"
+          },
+          "id": "rolling",
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-rolling-in-love/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "rosso"
+          },
+          "id": "rosso",
+          "url": "https://www.leparfumlechic.sk/product/agatho-parfum-rossopompeiano/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "divine"
+          },
+          "id": "divine",
+          "url": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "phantom"
+          },
+          "id": "phantom",
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "angels"
+          },
+          "id": "angels",
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-angels-share/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "bois"
+          },
+          "id": "bois",
+          "url": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "giardino"
+          },
+          "id": "giardino",
+          "url": "https://www.leparfumlechic.sk/product/agatho-parfum-giardinodiercole/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "afgano"
+          },
+          "id": "afgano",
+          "url": "https://www.leparfumlechic.sk/product/black-afgano/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "herbal",
+              "floral",
+              "gourmand",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbal"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "metal",
+              "vodka",
+              "olimpo"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "velvet",
+              "rolling",
+              "rosso"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "divine",
+              "phantom",
+              "angels"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "bois",
+              "giardino",
+              "afgano"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    }
+  },
+  "paidModelCalls": 0
+}

@@ -3,7 +3,7 @@ import argparse,asyncio,json,pathlib,datetime,re
 from playwright.async_api import async_playwright
 import os
 from urllib.parse import urlsplit
-p=argparse.ArgumentParser();p.add_argument('--engine-report',required=True);p.add_argument('--output',required=True);p.add_argument('--base',default='http://127.0.0.1:8911');p.add_argument('--slugs',nargs='+',default=['adoraniche','nicheandglow']);p.add_argument('--fixture-scentisimo',action='store_true');p.add_argument('--package-root');p.add_argument('--skip-compare',action='store_true');p.add_argument('--resume-report');p.add_argument('--leaf-ids',nargs='+');p.add_argument('--skip-interactions',action='store_true');p.add_argument('--browser',choices=['chromium','webkit'],default='chromium');p.add_argument('--browser-executable');p.add_argument('--commit',default='8a1bb74685d6b3b67fcc817d7c7c5515816360aa');p.add_argument('--deployment-id');p.add_argument('--widths',type=int,nargs='+',default=[320,390,1280]);a=p.parse_args();image_format='png' if a.browser=='webkit' else 'webp';shot_options={'type':'png'} if a.browser=='webkit' else {'type':'webp','quality':82};
+p=argparse.ArgumentParser();p.add_argument('--engine-report',required=True);p.add_argument('--output',required=True);p.add_argument('--base',default='http://127.0.0.1:8911');p.add_argument('--slugs',nargs='+',default=['adoraniche','nicheandglow']);p.add_argument('--fixture-scentisimo',action='store_true');p.add_argument('--package-root');p.add_argument('--skip-compare',action='store_true');p.add_argument('--resume-report');p.add_argument('--leaf-ids',nargs='+');p.add_argument('--skip-interactions',action='store_true');p.add_argument('--result-extras-review',action='store_true');p.add_argument('--browser',choices=['chromium','webkit'],default='chromium');p.add_argument('--browser-executable');p.add_argument('--commit',default='8a1bb74685d6b3b67fcc817d7c7c5515816360aa');p.add_argument('--deployment-id');p.add_argument('--widths',type=int,nargs='+',default=[320,390,1280]);a=p.parse_args();image_format='png' if a.browser=='webkit' else 'webp';shot_options={'type':'png'} if a.browser=='webkit' else {'type':'webp','quality':82};
 root=pathlib.Path(__file__).resolve().parents[3];out=pathlib.Path(a.output);out.mkdir(parents=True,exist_ok=True);engine=json.loads(pathlib.Path(a.engine_report).read_text())
 report={'commit':engine['commit'],'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'qaType':'PERFUME_WORKER independent local snapshot browser QA; not live merchant or Preview QA','paidModelCalls':0,'results':[],'questionPages':[],'interactions':[],'errors':[],'blockedExternalHosts':[],'complete':False}
 if a.fixture_scentisimo:report['qaType']='Isolated local Scentisimo data/config fixture on unchanged coordinator core; API responses mocked from source IDs. NOT registered/shared backend/live/Preview QA.'
@@ -75,6 +75,22 @@ async def run():
      assert cta['y']>=bounds['y']-1 and cta['y']+cta['height']<=bounds['y']+bounds['height']+1
      progress=await page.locator('.cx-quality-progress').inner_text();assert re.search('Výsledok|Výsledek',progress)
      file=f'{slug}-result-{f["id"]}-{width}.{image_format}';await page.screenshot(path=str(out/file),**shot_options)
+     if a.result_extras_review:
+      assert await page.locator('[data-fragrance-result="enhanced"]').count()==1
+      row={'slug':slug,'width':width,'id':f['id'],'defaultScreenshot':file,'defaultUnchecked':True}
+      extra=page.locator('[data-fragrance-extra]');variants=f['source'].get('upsellVariants',[]);assert await extra.count()==int(bool(variants))
+      def amount(s):return float(re.sub(r'[^0-9,.]','',s).replace(',','.'))
+      if variants:
+       v=variants[0];assert not await extra.is_checked();assert await page.locator('.fr-extra-pack a').get_attribute('href')==v['url']
+       if await page.locator('.fr-extra-pack-photo').count():await page.locator('.fr-extra-pack-photo').evaluate('(i)=>i.decode()')
+       await extra.check();assert amount(await page.locator('[data-s5-total]').inner_text())==f['priceAmount']+v['priceAmount'];row['checkedTotal']=await page.locator('[data-s5-total]').inner_text();await page.locator('.fr-extra-pack').scroll_into_view_if_needed();selected=f'{slug}-selected-{f["id"]}-{width}.{image_format}';await page.screenshot(path=str(out/selected),**shot_options);row['selectedScreenshot']=selected;await extra.uncheck();assert amount(await page.locator('[data-s5-total]').inner_text())==f['priceAmount'];row['uncheckRestoresBase']=True
+      notes=page.locator('.fr-extra-notes')
+      if await notes.count():
+       await notes.locator('summary').click();assert await notes.locator('dd').count()==3;await notes.scroll_into_view_if_needed();note=f'{slug}-notes-{f["id"]}-{width}.{image_format}';await page.screenshot(path=str(out/note),**shot_options);row['notesScreenshot']=note;await notes.locator('summary').click()
+      cmp=page.locator('.fr-extra-compare');await cmp.locator('summary').click();ids=await page.locator('[data-fragrance-compare-id]').evaluate_all('(es)=>es.map(e=>e.dataset.fragranceCompareId)');assert len(ids)==2 and ids[0]==f['id'] and ids[0]!=ids[1] and ids[1]==config['registryObject']['fragranceResultExtras']['alternatives'][f['id']]
+      for x in ids:
+       col=page.locator('[data-fragrance-compare-id="'+x+'"]');assert facts[x]['price'] in await col.inner_text() and facts[x]['volume'] in await col.inner_text();assert await col.locator('a').get_attribute('href')==facts[x]['url']
+      await cmp.scroll_into_view_if_needed();pair=f'{slug}-pair-{f["id"]}-{width}.{image_format}';await page.screenshot(path=str(out/pair),**shot_options);row['compareScreenshot']=pair;row['comparisonIds']=ids;report.setdefault('enrichedStates',[]).append(row)
      await page.locator('[data-restart]').click();assert await page.locator('[data-choice]').count()==min(4,len(engine['companies'][slug]['questions'][0]['step']['options']))
      report['results'].append({'slug':slug,'width':width,'id':f['id'],'pack':f['volume'],'price':f['price'],'url':f['url'],'photoLoaded':True,'ctaInsideCard':True,'reset':True,'progress':progress,'screenshot':file});save()
     if a.skip_interactions:await page.close();continue

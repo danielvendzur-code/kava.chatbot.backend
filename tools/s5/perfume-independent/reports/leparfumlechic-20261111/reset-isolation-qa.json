@@ -1,0 +1,69 @@
+{
+  "checkedAt": "2026-11-11T19:50:05.232016+00:00",
+  "scope": "Offline opt-in renderer proposal, selected→reset actual browser check; immutable c9 core",
+  "results": [
+    {
+      "slug": "myskino",
+      "width": 320,
+      "id": "nice",
+      "selectedTotalBeforeReset": "2 950 Kč",
+      "baseTotalAfterReset": "2 350 Kč",
+      "uncheckedAfterReset": true,
+      "screenshot": "myskino-reset-nice-320.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "nice",
+      "selectedTotalBeforeReset": "2 950 Kč",
+      "baseTotalAfterReset": "2 350 Kč",
+      "uncheckedAfterReset": true,
+      "screenshot": "myskino-reset-nice-390.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 1280,
+      "id": "nice",
+      "selectedTotalBeforeReset": "2 950 Kč",
+      "baseTotalAfterReset": "2 350 Kč",
+      "uncheckedAfterReset": true,
+      "screenshot": "myskino-reset-nice-1280.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 320,
+      "id": "bois",
+      "selectedTotalBeforeReset": "124 €",
+      "baseTotalAfterReset": "98 €",
+      "uncheckedAfterReset": true,
+      "screenshot": "leparfumlechic-reset-bois-320.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 390,
+      "id": "bois",
+      "selectedTotalBeforeReset": "124 €",
+      "baseTotalAfterReset": "98 €",
+      "uncheckedAfterReset": true,
+      "screenshot": "leparfumlechic-reset-bois-390.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 1280,
+      "id": "bois",
+      "selectedTotalBeforeReset": "124 €",
+      "baseTotalAfterReset": "98 €",
+      "uncheckedAfterReset": true,
+      "screenshot": "leparfumlechic-reset-bois-1280.png"
+    }
+  ],
+  "errors": [],
+  "paidModelCalls": 0,
+  "complete": true,
+  "noOptInControl": {
+    "slug": "orion",
+    "width": 390,
+    "moduleNotLoaded": true,
+    "coreNotChanged": true
+  }
+}

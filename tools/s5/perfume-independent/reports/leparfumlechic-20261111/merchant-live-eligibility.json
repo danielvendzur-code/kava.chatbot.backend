@@ -1,0 +1,25 @@
+{
+  "observer": "PERFUME_WORKER actual TLS-verified WebKit26.5",
+  "pages": [
+    {
+      "mode": "home",
+      "url": "https://www.leparfumlechic.sk/",
+      "checkedAt": "2026-11-11T17:24:11.727625+00:00",
+      "newsletterDismissedWithoutInput": true,
+      "cookieMode": "Only notice/Ok shown, left untouched; no consent given",
+      "visibleStockText": []
+    },
+    {
+      "mode": "product",
+      "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/",
+      "checkedAt": "2026-11-11T17:24:19.596854+00:00",
+      "newsletterDismissedWithoutInput": false,
+      "cookieMode": "Only notice/Ok shown, left untouched; no consent given",
+      "visibleStockText": []
+    }
+  ],
+  "screenshotsActuallyVisuallyReviewed": true,
+  "observedWidgetMode": "No visible product-chat/advisor launcher on visited home/PDP in this default-cookie regime after dismissing newsletter; ordinary WooCompare button present, not opened. Other pages and consent modes unverified.",
+  "noMessagesFormsCartOrCaptcha": true,
+  "paidModelCalls": 0
+}

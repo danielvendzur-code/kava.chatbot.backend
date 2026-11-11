@@ -1,0 +1,1298 @@
+{
+  "at": "2026-11-11T20:07:34.105042+00:00",
+  "scope": "Actual LOCAL QA only; MAIN corec9e4da0. Not live Preview or a complete comparison claim.",
+  "authorization": "Owner explicitly permits GitHub QA screenshots/ZIPs, excluded from Vercel under /tools/.",
+  "format": "Lossless WebP verified byte-identical RGBA pixel buffers to original PNG. All original PNGs preserved locally.",
+  "images": [
+    {
+      "sourcePng": "canonical-final/leparfumlechic-card-0-1280.png",
+      "sourcePngSha256": "b4ccb449638064778e2ae422ffbaaa53759c6ec093b0adb5ffee4d27604ff0c3",
+      "archiveFile": "leparfumlechic-card-0-1280.webp",
+      "webpSha256": "96a1b34261765715185ce4509c73c76cc3bc5a5c79d49f39fc503ea02ba16e70",
+      "rgbaPixelsSha256": "2b329627a05971fcfedaf14c8dc15fba497bdd21ff9ba81b86eb941572cff066",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-card-0-320.png",
+      "sourcePngSha256": "151dd34469674b8007f83b0dbdfa2d39c2c2b61fd5dff1bd13d161831348bf7a",
+      "archiveFile": "leparfumlechic-card-0-320.webp",
+      "webpSha256": "2047b5b5893e57b506f24282c67fa023970e922b3fc586db3140d6fb5faafe9f",
+      "rgbaPixelsSha256": "46f94ca77e6a6876a5f985cd719805b6bb076e89dad84d91aa09fca77db6b4f6",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-card-0-390.png",
+      "sourcePngSha256": "ce575a88a8e98bdbcfc6e240fa4fb5eb51fcd71dfef3d531f227141d92f17101",
+      "archiveFile": "leparfumlechic-card-0-390.webp",
+      "webpSha256": "b6b36d42e8ea4e377920f3ede2cef5c63a4e438a263403deb0c5c9c52a6be585",
+      "rgbaPixelsSha256": "e99ce583cbc30ef992c0884f0aca8137f34666ff6c103a95007ddaff0b17873a",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-card-1-1280.png",
+      "sourcePngSha256": "fa074e37230c35a6fecf262279c1bbcc85023d9566695d8999ca30b2eb2b68d9",
+      "archiveFile": "leparfumlechic-card-1-1280.webp",
+      "webpSha256": "6edae259b848e17c1a6544b451087a613a378793bdc083551851d48f1648da43",
+      "rgbaPixelsSha256": "be20a183694c290f8404602e2b9047adfe1f3d68383e0ca287ebd914b0dadf07",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-card-1-320.png",
+      "sourcePngSha256": "a4ad456c70a5a19ca948df244071bdca94842fe03bf3855fa3e62d4a93300147",
+      "archiveFile": "leparfumlechic-card-1-320.webp",
+      "webpSha256": "428fef61d05a67c9bee578fa4a64782298797b7addb98297ace8df5e732a09f4",
+      "rgbaPixelsSha256": "c440124f26704c4f60899268618ccb97adcd69cedb375fabdbe537e15a86e117",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-card-1-390.png",
+      "sourcePngSha256": "c34110c84a533c46929fdf59cedefd2f75bb0ecdd27547287d8bb37e72c3c878",
+      "archiveFile": "leparfumlechic-card-1-390.webp",
+      "webpSha256": "6e1badef70f4373c6b2f729b480384909838252ae66f9d4c5be55fa249e8cadf",
+      "rgbaPixelsSha256": "7f7cd0cac8b182431869f7ca0e7d22c1d4150e9b153caf8bc87a6fc6dfda5d5a",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-card-2-1280.png",
+      "sourcePngSha256": "2ab3e2e24f545a221e054325bf698a4c29504453b9c37bd61642dd9da9986d95",
+      "archiveFile": "leparfumlechic-card-2-1280.webp",
+      "webpSha256": "91a4f05805a02ff537e4a3bc94b745750e79b65e5a49296b3680a1e9a97bcc81",
+      "rgbaPixelsSha256": "42445609264fb2eba07d49f5b1813321121ddb6b2320b44dd5ddd2aa962a8ecc",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-card-2-320.png",
+      "sourcePngSha256": "b0fd13a9d64778adfa5c5db0a6191b15a8e94be3d406c090fc3ebf2ab2bb6da2",
+      "archiveFile": "leparfumlechic-card-2-320.webp",
+      "webpSha256": "ba3919b06a6dcc036b633d232db03e460bf69638ef4353b604b1efd7707c9f5b",
+      "rgbaPixelsSha256": "899f792306aed85a0d358fadc3f5e7b01eff2a2510df802a6052a1129f51c2e4",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-card-2-390.png",
+      "sourcePngSha256": "ee2c066f619b8c344dd325233ad7c883d092e316987c408e1216775961d2fca1",
+      "archiveFile": "leparfumlechic-card-2-390.webp",
+      "webpSha256": "7ae07f537051bf4749dc186032fe2e79e380a7bc11c0354cc6f2515ca11b28a3",
+      "rgbaPixelsSha256": "d35abdb637689743ef423caf9ab54ecd450aa4cc56a50d2aeae9f17807edc912",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-compare-1280.png",
+      "sourcePngSha256": "cdee470a554ef6148f480100cccd75b390229fadf90a8211490141bf02107c2f",
+      "archiveFile": "leparfumlechic-compare-1280.webp",
+      "webpSha256": "ce9b30c2bd868febfd31f2e7feda0a35a2c4fe12d3de72a5248f5e5638c7705c",
+      "rgbaPixelsSha256": "24a299ab8ebd343b6c6324a7032d04e5018e9e59e7e35652f760430eeb3f793f",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-compare-320.png",
+      "sourcePngSha256": "5f8cf5f42728450cfd4efb4b7cfc92ac89486c9e0c00da015dc3273c7e691608",
+      "archiveFile": "leparfumlechic-compare-320.webp",
+      "webpSha256": "27ce5d1ad9a17cdea7ac9f40959c0c2f36d2ca923ebdf45485015f0f857d7755",
+      "rgbaPixelsSha256": "38f3308a842df5dc75580c278e348d6ed6c738b38723568c8eb3171f2976ecc3",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-compare-390.png",
+      "sourcePngSha256": "6856a77aea23a218e75b202978e8c91051cc09ce5f58995f4ac0256bcc81a172",
+      "archiveFile": "leparfumlechic-compare-390.webp",
+      "webpSha256": "1e46cb34319b36287bd0e16dceebc2af4faaed3dfaaa1c28e57c53f25bd4bf3e",
+      "rgbaPixelsSha256": "4af3a777a3226841430af62c55a30ee703b04e9dc40cc49634bfdad2623b54ba",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-angels-1280.png",
+      "sourcePngSha256": "9695c07962531f43d4eb8e9e76121278c36cbe8227d5359d6e555d1a22e2b08c",
+      "archiveFile": "leparfumlechic-notes-angels-1280.webp",
+      "webpSha256": "0154341c4f8260801f6fad18384215671d72a51b24f1f05b18a19c155f7ed976",
+      "rgbaPixelsSha256": "31527e0525c0f00e5933dbd321982a0ba37ec876061c8415c7a42a87ec56cbd9",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-angels-320.png",
+      "sourcePngSha256": "a92399af54984d1742e90ea8efd35b7873b396863ecbc926760feb42d91146f1",
+      "archiveFile": "leparfumlechic-notes-angels-320.webp",
+      "webpSha256": "c0ec68a1760cf26d54597c7d4e45de65443c7bbac83c83c26df7a363582fda90",
+      "rgbaPixelsSha256": "37e036222a6f86b1c59833d3c6fe0d2a20080fcf91dedd2ddf80c1e6c2ce244a",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-angels-390.png",
+      "sourcePngSha256": "ff08bc39650f1e0cbd9279a0bfa055264fe849c82e88a547e6791a7fd6f5678d",
+      "archiveFile": "leparfumlechic-notes-angels-390.webp",
+      "webpSha256": "152ee218226d8352f3175e9dbe16c1694c247d3b34e7d16c4b9c95fb47461af0",
+      "rgbaPixelsSha256": "12bbf8d7d0dd2d55908481e3146be56ed7bfadcfc8182b51b6f2acb83c53e7a1",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-giardino-1280.png",
+      "sourcePngSha256": "6280d87233cdb411b15df449c56a21ba646fb4f7c405a4691ade6fc5bb051cd8",
+      "archiveFile": "leparfumlechic-notes-giardino-1280.webp",
+      "webpSha256": "70d5a3aedce9c8acd688e768626004b5c9c27e47839c77512ad879962a232061",
+      "rgbaPixelsSha256": "840e893b419ebaf87bf03c6cac5017f84f74070ab0b183cd3a57ac3969ff4fd2",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-giardino-320.png",
+      "sourcePngSha256": "3bbcc37072f87628c2e9258b8ceb4aebe33a89bb8d39dad76a4086215bc802bb",
+      "archiveFile": "leparfumlechic-notes-giardino-320.webp",
+      "webpSha256": "a8f6c720fc6eeba71ebf896fe1692f7155158cd94585c7567561acb6ccc238d7",
+      "rgbaPixelsSha256": "56a3c3d00c957a154e793dc50fa6d5eb7f685b41df6d3617b051d3b89cc84fdc",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-giardino-390.png",
+      "sourcePngSha256": "47e4dc98c1f45db5f71de2d0647171258e9ef1d35cd5d4d8fc887ec526e27dfd",
+      "archiveFile": "leparfumlechic-notes-giardino-390.webp",
+      "webpSha256": "b25b37a97a122aea16967032158d92abd0b3ad4dc0b36c5ddb4110beba4baa96",
+      "rgbaPixelsSha256": "981b87e2d2a7ec0fd69cdb12640f95d32ecafb7e239f145d9c16e5f1ae4ed062",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-olimpo-1280.png",
+      "sourcePngSha256": "25d9e4e234bb7dac4cef2c6a771bb24e3f5e1b4bd06d30eeae7ec13728fa302e",
+      "archiveFile": "leparfumlechic-notes-olimpo-1280.webp",
+      "webpSha256": "ae5e054dbb1c38da33c6c724c5c62fc582fc65254444344217e03c68f7e244eb",
+      "rgbaPixelsSha256": "f67064fab8023ec718c661d643a6c44375b5622a31d2c22612b73550415a57c9",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-olimpo-320.png",
+      "sourcePngSha256": "602dc8628e87785b0c49991aee2715139b5d84ddfe4c1b526eefea424fbf9281",
+      "archiveFile": "leparfumlechic-notes-olimpo-320.webp",
+      "webpSha256": "19eebd000ce8b38dafe239779a89c61646dc09667440e91e3ba0dbcadcc1d185",
+      "rgbaPixelsSha256": "3ada6fab99a7bdd2b2d6e6efd0cb3a6a06d781e9403ec2ecf14c1cfece79a87b",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-olimpo-390.png",
+      "sourcePngSha256": "2075ce0348b0861943dd4a32a80bc2040183a26bf3575fb4136fbeab45cb8e31",
+      "archiveFile": "leparfumlechic-notes-olimpo-390.webp",
+      "webpSha256": "b620eb383111bbb6861fc0fcb1639febd928ae0833ad9ff265187bfa310163f3",
+      "rgbaPixelsSha256": "1dc067548556a1b39c32316dcfaec611a3892cae0579f1e4440d78bb24dd08f2",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-rolling-1280.png",
+      "sourcePngSha256": "744c62df2d48994ccea07d2a0eff151ad84c42a1b7b918a66f1f4ae3e00c1e53",
+      "archiveFile": "leparfumlechic-notes-rolling-1280.webp",
+      "webpSha256": "1e3e6bfcb6a2bad08242153a5dfc07199040bf429325be01ea809d37000eaf20",
+      "rgbaPixelsSha256": "1c512e82aa91ea46c551532ab6497dfea3e2d2d96772a401bbd93f91b5508bf9",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-rolling-320.png",
+      "sourcePngSha256": "2c3c995ecdaa77cfca46e10b3fe6af58e354a5fc7f6cd7956eb52238ec37d0cf",
+      "archiveFile": "leparfumlechic-notes-rolling-320.webp",
+      "webpSha256": "f37259b62c8260593c1fcad535da065c6f0a9a07fae183876d4a12510d487583",
+      "rgbaPixelsSha256": "5003745c219a0a0bbd41c9464f332c2ccdd9c9977c56cfd61873c743390b1be8",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-rolling-390.png",
+      "sourcePngSha256": "3117a06301fe01ceb451e85b31e4c89c017676882b95aba41a3d1ca9afb599e7",
+      "archiveFile": "leparfumlechic-notes-rolling-390.webp",
+      "webpSha256": "e61613acb504b279a5ad2532726d29d63b4f8cbacb8c676a6378f96a3b6cab1a",
+      "rgbaPixelsSha256": "3d7f78027021be0a817f4fbe16e28d857a4bc2fc6452a9481ea344df0330c0c7",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-rosso-1280.png",
+      "sourcePngSha256": "a6bc3030e92f2a27ee145034c7ca226662cc7ef96fce2468ac0e5c8b33e33c57",
+      "archiveFile": "leparfumlechic-notes-rosso-1280.webp",
+      "webpSha256": "ffff6cf045db7f5ead9ae9af237096694975ae01887ef864e975a58f5016abcc",
+      "rgbaPixelsSha256": "13bca2ac4b04376333dca441f8d37069a139bb78ff995ef87ec5b4c25be5cb9a",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-rosso-320.png",
+      "sourcePngSha256": "af7dbe961ecf6120b10f1e23d56571e2d1cf50c29a7ca87cd3c704c4f9f798c9",
+      "archiveFile": "leparfumlechic-notes-rosso-320.webp",
+      "webpSha256": "a7e8b69a14aa713611333d86b50530de20429a0d573a695871fac9d84c3760f5",
+      "rgbaPixelsSha256": "b93390bbed99cb1d6f70603316a149d2989eec5588e43da8398e2d707018aa62",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-rosso-390.png",
+      "sourcePngSha256": "527354942c9fe82b7d316906bcee2312dcc084829301ab6145e8d2aed08ada70",
+      "archiveFile": "leparfumlechic-notes-rosso-390.webp",
+      "webpSha256": "a0fff37044facb15db390c5ea983ba427ba92673b74194634a3e9911da930346",
+      "rgbaPixelsSha256": "7be280f8e1de905645ba4e00e7a57634031bc1ccece253d5f98557d4152f7a37",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-vodka-1280.png",
+      "sourcePngSha256": "fe850f4560391536350734ec1242ebcfb5212583442f45e5588b101d88c74efc",
+      "archiveFile": "leparfumlechic-notes-vodka-1280.webp",
+      "webpSha256": "19115190fc075fec5e83ee496c03c5980f43c37bc1cdbcd050655f4c59c1f1d7",
+      "rgbaPixelsSha256": "b41ae8b9cfb3f0e12b60fdfad6f5fb832fce3c5d751cb7066c7f6de2142543b1",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-vodka-320.png",
+      "sourcePngSha256": "7f63ff275ae697c21df4ca0dc5ca5b21c8aee96b5ce7e23c65a17c4e2f16db61",
+      "archiveFile": "leparfumlechic-notes-vodka-320.webp",
+      "webpSha256": "71b7a1a3468c58d919fa31d088aa348c55e605abe318fa1bea4ce357a2c52d3f",
+      "rgbaPixelsSha256": "f6422159e3de01d31abfbf3012f8ad3ac4e9ae2d18842bda9e52b66dbcfb446c",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-notes-vodka-390.png",
+      "sourcePngSha256": "4f7ec6259f845254341672331582200bbf1dc2206534f5d808cf985f32a19624",
+      "archiveFile": "leparfumlechic-notes-vodka-390.webp",
+      "webpSha256": "e831cb124110fc6218ec62a3027209e7e46e6bbd3d5d157b28eaf59bcfbcba24",
+      "rgbaPixelsSha256": "30d442edc1f29fd4efbc1e0d84107d429ae25e0077887043482d66a901332100",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-offer-1280.png",
+      "sourcePngSha256": "9c4e4b3e8fb9292656d285c882132e399464cfb5510fd2aa78fbf5279af21c58",
+      "archiveFile": "leparfumlechic-offer-1280.webp",
+      "webpSha256": "49ca7444a9154b03271b999f8cb2e4014e6fd6210b9cd996c99a948519b34c11",
+      "rgbaPixelsSha256": "ac8139e5bd4e2efaf4901cf26f7df02293f398c3ddb09beb102d227c93ae43a4",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-offer-320.png",
+      "sourcePngSha256": "b00458ef6b136ba652c72eb6965dede65bf173002a80e58e46c1087acf12f9f1",
+      "archiveFile": "leparfumlechic-offer-320.webp",
+      "webpSha256": "74bc7f17c2b3634d8f3e9079647436f20618d1c9d3c016a1e481750d1ce38901",
+      "rgbaPixelsSha256": "58039947faa05cb6297a860e8a41525f8464eb1acb4be64d15b8c89994b6761c",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-offer-390.png",
+      "sourcePngSha256": "879548f9aa7080842def2b1f24efc5313cfaea284188f9fa26ff842f1b158566",
+      "archiveFile": "leparfumlechic-offer-390.webp",
+      "webpSha256": "6cb83fbecf45a8b06e51ba13821084f13c3e21a8298b9cb09cfd8320b841a62c",
+      "rgbaPixelsSha256": "cd0fb088df5628c2380dd373114497ac165757d0f29da107f7e03c4b917c0f8e",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-afgano-1280.png",
+      "sourcePngSha256": "42acbb69a3839e613fb78b90684f334be1ba3593b66b896944f2645f7f74500c",
+      "archiveFile": "leparfumlechic-pair-afgano-1280.webp",
+      "webpSha256": "acaefd9811c4ac5d482380f9db2336ecefec551c6acfc0d2b225def3810e74ff",
+      "rgbaPixelsSha256": "0564ae210efea46166acca4e0ab580fa15d94f6f789c1a582db9dd41e63d0cc8",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-afgano-320.png",
+      "sourcePngSha256": "d94cd9adc19e431ec18841be97edc02329f617d9e4bb2e5f54ac829c7720bdad",
+      "archiveFile": "leparfumlechic-pair-afgano-320.webp",
+      "webpSha256": "93b0a70cc291a6bf73870ed6c9a650394a9560a4269ce38bc533e354d92fe80a",
+      "rgbaPixelsSha256": "d4bab681d9cee7b5055bf3056c27d7c08198a3c0539f07a3f911d44b724a7fd2",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-afgano-390.png",
+      "sourcePngSha256": "3e88fb8bec17815c1b618913d7cda24bf81b45a81ccd6f975e7ece168396e6f2",
+      "archiveFile": "leparfumlechic-pair-afgano-390.webp",
+      "webpSha256": "8b81017b7d79fcdabc3c935fa08c640dea38c3802ab92d4473e271ac664ac2f5",
+      "rgbaPixelsSha256": "31323538acbf39ac020a4a31655b814849a2f93775230d4462847ec913f0db40",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-angels-1280.png",
+      "sourcePngSha256": "eb9bd39f39f268d2c60719c54177ce38055e47ec06e4201ba5a97ca59b5866c7",
+      "archiveFile": "leparfumlechic-pair-angels-1280.webp",
+      "webpSha256": "ea0fbaa29aa2af5ed9b9d00134e554d703a55b7e1a6b858531498159174dcc4b",
+      "rgbaPixelsSha256": "477c96e404476509d233bcb4c31f0f07ff05507bb300aa8115424207f7165829",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-angels-320.png",
+      "sourcePngSha256": "64e0cfd47e390ca775a567770808597c6bea35958dc52c8741d89b9086593fd2",
+      "archiveFile": "leparfumlechic-pair-angels-320.webp",
+      "webpSha256": "9bb85771dc005ea944b22218bf355b68173c12f3cb3d9201092fc8d0eb42cf09",
+      "rgbaPixelsSha256": "77f1e4bbf5a0098e190f3f71038d321f8e6036402336b31d93e9aa5717deaf39",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-angels-390.png",
+      "sourcePngSha256": "b10841704e40db7fb7a7260b1395fd94561aadfeff0d4bba42571d3ab6cdb04a",
+      "archiveFile": "leparfumlechic-pair-angels-390.webp",
+      "webpSha256": "335ff13e8ae12e1f03dc112bd4aeb70bc581fec5226dcaf9c944b624cd5031b9",
+      "rgbaPixelsSha256": "c0e3da85a46d232c5b891ae70c7f7f57c0dbd1fae9bf37e06cea80cdbc67f2a6",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-bois-1280.png",
+      "sourcePngSha256": "474357581c8adbf5f563efc989cf9e6562e0c5bc3b6aa7aa85ebacfdc89fb0d7",
+      "archiveFile": "leparfumlechic-pair-bois-1280.webp",
+      "webpSha256": "8de3fde2244fefbdbc59ead60bcb1c12e2115fed6129f0efbb648ac56ebe6428",
+      "rgbaPixelsSha256": "68f158af29f0d54f6ca95890c61b63693e5a2697bfe9b531fe8fd9eb903ee305",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-bois-320.png",
+      "sourcePngSha256": "cdde40362806fcb88819a05e08583c2ca97cc3dc9f892785934e711c3750d611",
+      "archiveFile": "leparfumlechic-pair-bois-320.webp",
+      "webpSha256": "e77fb6ca6106a599cc5e557a9ea6befd28c6d588f0ba28df7baee0ab9fe1d0a1",
+      "rgbaPixelsSha256": "6850b0b2b356066079bae56c5a61cb93b4bef0a4dcde93869661a3abab9fbace",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-bois-390.png",
+      "sourcePngSha256": "3564f5643acac943b8e166cb970c8e2ed39c7b342f9859d297c3b6d33111dca4",
+      "archiveFile": "leparfumlechic-pair-bois-390.webp",
+      "webpSha256": "e47d003ae995781a353220a15dad338c9246b7e94cfc4698314d83e6f742856d",
+      "rgbaPixelsSha256": "255cbf111586f9bbd76b31875dd204091d2ad5342cc75fb94fded9e846b322cf",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-divine-1280.png",
+      "sourcePngSha256": "645241f0f3c9b533ae24ccef0f2c7f2d7113488676fe1450e0c10ed06bea62b9",
+      "archiveFile": "leparfumlechic-pair-divine-1280.webp",
+      "webpSha256": "da1ac7857a698b32f30bc50ca91b25915e771081693ee4bb5fd114ecbf35839c",
+      "rgbaPixelsSha256": "c760b3f0e4e599b0fb6f7305dcbc529932159e74583eddf48fedd8acc6bab2c9",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-divine-320.png",
+      "sourcePngSha256": "130eee1c4d3412eeec2b6c185260dfd80341811240f567f01ac075069b7555fb",
+      "archiveFile": "leparfumlechic-pair-divine-320.webp",
+      "webpSha256": "19f07d512f74830e73f72007c8a68f7d5b40ebe4165ed935c33cc88c6f8c10d5",
+      "rgbaPixelsSha256": "b9766f47364be9842514fa155416f3b8f5cad133f304044074c352586c41647b",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-divine-390.png",
+      "sourcePngSha256": "5d8a5b3182b6164dfb40f1dacbfefc018d86b36fb5d0f1343586353c4a22537a",
+      "archiveFile": "leparfumlechic-pair-divine-390.webp",
+      "webpSha256": "2f4241f92015ad539511f98b9d923a49d7a64c143db94280500064a852dfa4b3",
+      "rgbaPixelsSha256": "f194fbc34af25e68e795d530ef196911009a568100572fe1b15c821f65df20a9",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-giardino-1280.png",
+      "sourcePngSha256": "83f1e5242402b4a6f10cba1a38020deda249764f1a6837fca7a39a70784a6dfb",
+      "archiveFile": "leparfumlechic-pair-giardino-1280.webp",
+      "webpSha256": "6eab74df4ce946a08557461077cb43437f1380bb5ae2bf495bd594d9faad85a0",
+      "rgbaPixelsSha256": "ff994900c990a3fb1e83bdef80331834ea8bdde4c10751086673bc5f8a1085c6",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-giardino-320.png",
+      "sourcePngSha256": "31296c81169444aaa6345d5ad051cd823709f572d04b4478b471fa70e38d8602",
+      "archiveFile": "leparfumlechic-pair-giardino-320.webp",
+      "webpSha256": "4f670271cec02b0c7433399eea43835d5bd06089cc7bda7383837310d83c8d96",
+      "rgbaPixelsSha256": "9a1b42a54388fc718d870c6a17b396621d84310624551824f2b6f9c08c9ecf5c",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-giardino-390.png",
+      "sourcePngSha256": "ddf92d0f9c5c4f823363c64dc63c6b6ef83e8099996273080eb7704687b21e8f",
+      "archiveFile": "leparfumlechic-pair-giardino-390.webp",
+      "webpSha256": "2114b4043a699792839eb970ed333cf8631b37be29a40892ff75ac75f500d88f",
+      "rgbaPixelsSha256": "3c5245ee3c7db53c3a4d3680aeb42fce13e1dcd717a6f6c14ee3f9f5d5d3b282",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-metal-1280.png",
+      "sourcePngSha256": "6af1b8c334b771d248b0e23bc0d3d869d11bdd2b1a17efe7cd6a390359c7f7c0",
+      "archiveFile": "leparfumlechic-pair-metal-1280.webp",
+      "webpSha256": "d294e44aff7ca1a2a8110f4e2feaaaed403937436b8acbe18b8c543a8bef7f6e",
+      "rgbaPixelsSha256": "d91256cc016241a94bf95c5f114a28348534f022949d8e8af7124e2e29bc606b",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-metal-320.png",
+      "sourcePngSha256": "9b1a975ea1c39b3ed97b345d123eac1ad2611967dca0f140b447db9a764616c7",
+      "archiveFile": "leparfumlechic-pair-metal-320.webp",
+      "webpSha256": "5640dcedbc3a3f9e0be5446aa831ac9096f78005b98cec1ebaf00578bdfd91ce",
+      "rgbaPixelsSha256": "45ad2eff5361998e8bb903be8eb956a5b2730b4bce113b30c560b854f3111213",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-metal-390.png",
+      "sourcePngSha256": "83a7ffcf2ccb5e46345dcfae3e69a8ee7683fdd8822353629241f54d17520010",
+      "archiveFile": "leparfumlechic-pair-metal-390.webp",
+      "webpSha256": "174389f2dd7b1bfe20c77731eb5854e6e1a344ec3f72682b5b6eee17015230bf",
+      "rgbaPixelsSha256": "9e6f55a44fcf639bc7cbbf30dea07393198ec4ec8a50e65fcefa72f536632e77",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-olimpo-1280.png",
+      "sourcePngSha256": "9175d7ef289f03cdf1096e563161f8d77a21a628c5536e9d961456a2f2fee73f",
+      "archiveFile": "leparfumlechic-pair-olimpo-1280.webp",
+      "webpSha256": "c011098c38328e1945b38806a25ff89ed6436cd6c2b4256f03c8205e509dc627",
+      "rgbaPixelsSha256": "a7ceeaf9747a417b972bac19d526dae5ef0fb2369a8d8776452019481f8f20af",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-olimpo-320.png",
+      "sourcePngSha256": "bd50a70577ef7de231e5c791c6e59d2806d4b0389f301b46f634683c9ccdae5a",
+      "archiveFile": "leparfumlechic-pair-olimpo-320.webp",
+      "webpSha256": "f94ef4640056b5be24aada91abed98dea6bb8b0c849c192cfa9b7ed5d7e23a24",
+      "rgbaPixelsSha256": "aa61d331b156d29a9361dccf2a0485a38291a4bfcfce45763c4e8ed6054a352a",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-olimpo-390.png",
+      "sourcePngSha256": "4812cb537ba4bcb8ffe4c3af45bcab12e97f20346b57217ca2617ff60deb916b",
+      "archiveFile": "leparfumlechic-pair-olimpo-390.webp",
+      "webpSha256": "71bd8319a87fff5dafbef600dcf78fa8e86e78181f46e203dc920c5aad62f596",
+      "rgbaPixelsSha256": "aed78288092b270ff4ea0b81fdf95f1c3bb012b3395a536fbd40eefed91caab6",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-phantom-1280.png",
+      "sourcePngSha256": "8c4cc7eb35e3d70a67cce6bb7fc7834881a4e1c71bbaf081f89f1c91975c172c",
+      "archiveFile": "leparfumlechic-pair-phantom-1280.webp",
+      "webpSha256": "53fbb1cfd97addd68d5b0a7a5a646bd8105b3a38b81d97ff4f5e9aed94cbe302",
+      "rgbaPixelsSha256": "8ec5d3fe874e66142f426443851f5c9e3b6b46ccf6f4fcf2f7e74a6fca02a0f2",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-phantom-320.png",
+      "sourcePngSha256": "017fa0922456443be6df74990eb4abbea0f5aa428713c48fcf50ddf46e38e74e",
+      "archiveFile": "leparfumlechic-pair-phantom-320.webp",
+      "webpSha256": "925ef941b129a5e669cb91dec263b99e692189ff5464f2b43380e97ec7cd80ab",
+      "rgbaPixelsSha256": "80cfa9b5747477e7be6fc032a9dc6ac05c08281d3d0f6dbe4549c42cabb5a5a6",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-phantom-390.png",
+      "sourcePngSha256": "d83e39569001bdbf8f454210ba394cb7a6ac2b171e5bf0c1a262b1abe15d1d46",
+      "archiveFile": "leparfumlechic-pair-phantom-390.webp",
+      "webpSha256": "3f766f2910c25bbb7232abfbee8076a49b094f756d6ceeedf5f158d8a6c9d959",
+      "rgbaPixelsSha256": "8efe6cd62f51134f9ae6a297cd977b670c084f2cc640b3e478f56389fc5204de",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-rolling-1280.png",
+      "sourcePngSha256": "0268b52b17043362bbf13b39e1f7af8154d5118dd0bb368b7ad06bc0c25e78cc",
+      "archiveFile": "leparfumlechic-pair-rolling-1280.webp",
+      "webpSha256": "d22d4d3d23e7565986a1db1936bd8b2b6a847352bf66cf07177cebc489858411",
+      "rgbaPixelsSha256": "2de162b80c600bad15b31356cba500abc51b3692eadef873d624ebcc6d2e8e3e",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-rolling-320.png",
+      "sourcePngSha256": "0a02680e8fc984ed4257230ba0e7b45b7c505dd4abf37824d37062ec88585c57",
+      "archiveFile": "leparfumlechic-pair-rolling-320.webp",
+      "webpSha256": "4eaf1b6664f7143b22d4096f26ff156cee21bce0a4430e5d88f63776fba027d8",
+      "rgbaPixelsSha256": "18f8e7e752d4d08f6df15759d50dd6051f88ba4889e7270a23f464f79145df25",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-rolling-390.png",
+      "sourcePngSha256": "5053a8a461d665bff371b10b0725d25565805a1e4acd406db8523186313f42f0",
+      "archiveFile": "leparfumlechic-pair-rolling-390.webp",
+      "webpSha256": "db87cc4f4a5d61df7f84438f0b8ecb0e53327d1fc4a627379489873dbe0b7d56",
+      "rgbaPixelsSha256": "7545f34ba8c84c3f1a8a906ad432e7224b67ecde5bbfd315f3df45f9d1113289",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-rosso-1280.png",
+      "sourcePngSha256": "d6dbe28a13555c874200d7d523d5ab487a5bb8a75661b7d91def07292576296f",
+      "archiveFile": "leparfumlechic-pair-rosso-1280.webp",
+      "webpSha256": "cb5120926c155b4662f694774a4c2cacf8a91e3e077462fdcf05b9b00f2e6448",
+      "rgbaPixelsSha256": "00045b6628427874af29723a75c678f9c9796bb9503cfa9e3215d3b913518b70",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-rosso-320.png",
+      "sourcePngSha256": "58b934f622aa733e3ea4bb2b696e3f3ff166613c411f9c15547e6269ea5b055e",
+      "archiveFile": "leparfumlechic-pair-rosso-320.webp",
+      "webpSha256": "7f6d8336079b4f0bcf468e1d1137e1ed0583901e3f86b4ef2f319c2269853ce2",
+      "rgbaPixelsSha256": "05d1b6ca756f16cb274b4c2c2113a5d7fadcd46126d9749a4fb226599548a7e3",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-rosso-390.png",
+      "sourcePngSha256": "3e3a1bcceb01671aa883941d8a730cc7150039e77062977d2e76908dd21ba79d",
+      "archiveFile": "leparfumlechic-pair-rosso-390.webp",
+      "webpSha256": "c65c52590a9f62f25d818568b382f4b5b7093f02aaff33e39ee7ce0265ba6ee5",
+      "rgbaPixelsSha256": "5a88eca4a39a1943312e2bb36846207736c217c6ba0ede06519bda48ae622464",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-velvet-1280.png",
+      "sourcePngSha256": "d0a30d2dab33089e4cb01c1757b595e4a0a3dcf1d9c16f5fb62729f171003643",
+      "archiveFile": "leparfumlechic-pair-velvet-1280.webp",
+      "webpSha256": "a413363cba84820460232c35c4ae90c3f33038ff569c329bf602eaa54a42166a",
+      "rgbaPixelsSha256": "c2bce81068ac0d68f8d7cb783e2811fe2b4320765a9a67413e36815b6e93c033",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-velvet-320.png",
+      "sourcePngSha256": "26e4a8c2600fd3c3ad379c21e91aa1c9b97408ea876f06f24a73e3f3a718fc33",
+      "archiveFile": "leparfumlechic-pair-velvet-320.webp",
+      "webpSha256": "366dcd78efead6e782b7d36f21d4e801974d79ed41f4cef61a6e9b27158c4d0d",
+      "rgbaPixelsSha256": "a79ba835230c09ca8b274fe69d65cc09b0f1488e645e0c79afce3685ec4934ec",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-velvet-390.png",
+      "sourcePngSha256": "e61a17822f1cc2e6a2a29e81afdf10e07f1bab1df68ebe357985ec2687412909",
+      "archiveFile": "leparfumlechic-pair-velvet-390.webp",
+      "webpSha256": "3cb2a1a8f70ebeb368d8847087a943b407088cd317521ab182694a4f85ec3ac2",
+      "rgbaPixelsSha256": "eaec031ca1891a3530abf440cbf24258174de6b969a3ac52c3fc4a2f99a534e4",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-vodka-1280.png",
+      "sourcePngSha256": "ed59e842f63a882bde80429225f07888e4af28389a1608a4a1f2716cce130b51",
+      "archiveFile": "leparfumlechic-pair-vodka-1280.webp",
+      "webpSha256": "e124908fdc366b8f9f91165b4e310cbe7a8d28f43822c9e2e525cd34cc33f36a",
+      "rgbaPixelsSha256": "d2686c0d482f03128f3a2c170d23cfd60858717bbf54e615f98653d2bcacd646",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-vodka-320.png",
+      "sourcePngSha256": "160bee2b58e8a5b6b54b843e71e6660a4fc75be924d4b73063636e544df93d89",
+      "archiveFile": "leparfumlechic-pair-vodka-320.webp",
+      "webpSha256": "e52866a4125930e8cc90cf6d70f5de418a1075c0e19016826ff4cc991f329361",
+      "rgbaPixelsSha256": "70e84cbe9bbabf62aa7fb7909cd93d2b4ef275b009481ed5710d32fa5560102d",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-pair-vodka-390.png",
+      "sourcePngSha256": "cd89ec401c23bc83cd4846c1b74a5817adca27cbabc30ddc4d7fe644e9b8a836",
+      "archiveFile": "leparfumlechic-pair-vodka-390.webp",
+      "webpSha256": "6837ff25a5841baaeb9ab1ea7b40603009ed53193ec016d7af4bfafb6222aef1",
+      "rgbaPixelsSha256": "dd786950a4f23b8dce741770003f8b35c4999085f78e297a5b010a9fd26e2dd6",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-1-1280.png",
+      "sourcePngSha256": "0d927090e565f38e049e3e01c1c65bb4e8affef575bf948a607fca0023ad8242",
+      "archiveFile": "leparfumlechic-question-1-1280.webp",
+      "webpSha256": "d0a023df3e66823c6a541fa2c8f8a855f433784b7db143c384c7b08eb9ca4363",
+      "rgbaPixelsSha256": "87b32aa63db708a540c6a4e89ccb0d6deadaf203982f02d82ef47aa87eed03c7",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-1-320.png",
+      "sourcePngSha256": "1d85a2a82c938b82a18e230fb0416e14e56e955a62b5218bf6c3be0e84668b2a",
+      "archiveFile": "leparfumlechic-question-1-320.webp",
+      "webpSha256": "3ed80aaa0e77cec374ed18b2279da2f5a32a6ef12f4cd420b51cdfd82cb5035b",
+      "rgbaPixelsSha256": "08197320dea2cac47ec26581eac0d2089e57ced9ae3f5c9316a2b19359f6ca0c",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-1-390.png",
+      "sourcePngSha256": "87681d69d25770845376d7624c325223526e3939549aee50b2d551e622795acf",
+      "archiveFile": "leparfumlechic-question-1-390.webp",
+      "webpSha256": "b490abe6dad916b9168367e422fe687d5fc914133a6974b278bdc69ca211a565",
+      "rgbaPixelsSha256": "7dc0085881c1c43ce4ab48814aada698bea67a24b397968378dee13093964b8e",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-2-1280.png",
+      "sourcePngSha256": "126a8bdae27e3d4e6d729d5a4582e5e2fda25845a185616a32daf8ce4f4f39cf",
+      "archiveFile": "leparfumlechic-question-2-1280.webp",
+      "webpSha256": "76e3bee6cabaf4fd0367a4746acd01a9a91a0adaa1c553dac05228612febc5fc",
+      "rgbaPixelsSha256": "0c8f2fd9b8574d537cca55c8c79c7ec995474db8290b4735fc8a45d391cd27cd",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-2-320.png",
+      "sourcePngSha256": "5c6a5b21a01239b006759ee9a6cc74fa955b9049f2f7fddef6553d7ddc601312",
+      "archiveFile": "leparfumlechic-question-2-320.webp",
+      "webpSha256": "8ae6023fb9a16a7eb070d0944ea0e447cf31c04eab028a25b21661e0a7b054d2",
+      "rgbaPixelsSha256": "670b896af692accdda22ff863461c7d4db85512821762ded0b2fee6581e0a712",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-2-390.png",
+      "sourcePngSha256": "bc0ec415f83a72474b3d70dfdc990cfc78a944e8d86f9e6f9f71afc9160e6646",
+      "archiveFile": "leparfumlechic-question-2-390.webp",
+      "webpSha256": "dc129db2d7a86eacce399a45eb95d5463aadce39efd3e7c49c088c00299c2755",
+      "rgbaPixelsSha256": "23494624c108307feb91bf2ec164703ddf01ebe2ac292e9d82c4639ce550c037",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-3-1280.png",
+      "sourcePngSha256": "854959c46b641f0dd10b73392629da474e629ab8c5adedbe1d14cda369ea8b39",
+      "archiveFile": "leparfumlechic-question-3-1280.webp",
+      "webpSha256": "7c4efd029d6ce541a78362252a9be999707a3b08e04c1472e83c753be9984cd1",
+      "rgbaPixelsSha256": "f8c1e794ca63856af7183b67e1a511e6ca1ec053d99b8210fef7da6a888dc904",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-3-320.png",
+      "sourcePngSha256": "ae21322925b8d77fa013d1b6577e1561d8d711046365f617719922051f333314",
+      "archiveFile": "leparfumlechic-question-3-320.webp",
+      "webpSha256": "f92f84003b6b6c03ee88a99af2a95f4b6dec193ab6408beec916dab3445294eb",
+      "rgbaPixelsSha256": "7108e04c3912580726986f71d31d1de65a70c76f4bfd7c0f67dc483d5c5768d6",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-3-390.png",
+      "sourcePngSha256": "115d1848c1483060dd892f6c43e1e672c633cb419b4e24f1926b3a8851d5f46e",
+      "archiveFile": "leparfumlechic-question-3-390.webp",
+      "webpSha256": "0074c58946da53fd4caae17979f9d9b1ff17ce50b434ae8619c53e39254f2e25",
+      "rgbaPixelsSha256": "b8c67b9f90558b6bc128646790ce2ee43d856ef3da6583c3a33eb8abe1196bd7",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-4-1280.png",
+      "sourcePngSha256": "80f60cfa4bb296be4b43ade2b51fec7b283076757fb3d74cb4df9db4da8c88c6",
+      "archiveFile": "leparfumlechic-question-4-1280.webp",
+      "webpSha256": "d6694ee63be414d57688d5e3559f7bd057f47431cdac6a75c3fe6d80b09d0e2d",
+      "rgbaPixelsSha256": "dca5f0586c4d7c476352c5303b206e3c379cdf5ab5afb749941f941b2bb4edc8",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-4-320.png",
+      "sourcePngSha256": "2b1a3d36cad3775909722e9dc07de6c9e13f7c23f08b26bcbfcd93cbad4f17ec",
+      "archiveFile": "leparfumlechic-question-4-320.webp",
+      "webpSha256": "b7f7778398708263bfc668ee14ba123bb8a07f889228abaf913cdcab72766bcd",
+      "rgbaPixelsSha256": "35102ffdb42d63ce851549573646d0b93f081793aabd42777c517e1be8db62e3",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-4-390.png",
+      "sourcePngSha256": "c26c93167f0fd8b159372fc66443cef826cbdeee6ee60eca68eb301707c9e4f8",
+      "archiveFile": "leparfumlechic-question-4-390.webp",
+      "webpSha256": "123eeed121f1dee6b01df2d0567044a28fdc7a1cbb64403756073a8a8fcf0e92",
+      "rgbaPixelsSha256": "6cf3eff61605e13f05026c3508328f6fc8e4bac165cd64353504989e3bba15ef",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-5-1280.png",
+      "sourcePngSha256": "b9a80329abeef35e1f73ccb8d3e8f25e9a36d35ac3e7714043220493e404eac8",
+      "archiveFile": "leparfumlechic-question-5-1280.webp",
+      "webpSha256": "4a26c4b72d57f74811b1a73768ad01150470d6e4406b3b1f361e1de7d829b4ec",
+      "rgbaPixelsSha256": "15035e765baf8dee6f8fda74023d1058e80af05f916c591661ee33083fa15e94",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-5-320.png",
+      "sourcePngSha256": "a7ab637050ffc250d1e7851295c3f6c2bde2f17523ab93685a7a00785b5b38db",
+      "archiveFile": "leparfumlechic-question-5-320.webp",
+      "webpSha256": "1550dc5e04a4cec0ef344439de4883a6693e49406a89e1bda343c65c7bdaa55a",
+      "rgbaPixelsSha256": "ec75e53735e37617441824e3734c89855d2c97fcdd0ac503c88ca6981b27c04d",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-question-5-390.png",
+      "sourcePngSha256": "cd77c6df63358370d550ceea4b023f2681b60cac6f7f1f50c79ac52e2f3c80cb",
+      "archiveFile": "leparfumlechic-question-5-390.webp",
+      "webpSha256": "11df85e388b8e9e000f0fbf775e43370d5ec02541ea84b180a93f0e0197ddaa2",
+      "rgbaPixelsSha256": "294211c5ac014b1b2a4b0efb9caf2abf1f0488089cd893bf9c4622fb09a05fe3",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-afgano-1280.png",
+      "sourcePngSha256": "d6ccbb005fba4631e082d2e971514362fb024698824af896e77e5ba588291316",
+      "archiveFile": "leparfumlechic-result-afgano-1280.webp",
+      "webpSha256": "433b2da64e4799325545d6a056eadb88c1fd52b3f065297c9ccde2e1b8eb6075",
+      "rgbaPixelsSha256": "f73dc414a357ddcb54737c688ac65431249c7e0c0b574e4e8b056b9a72b3bddd",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-afgano-320.png",
+      "sourcePngSha256": "eca2b2ffe8d696dae50641cc5d3fdec07c57afceeb12547521d65be27bc7d6ff",
+      "archiveFile": "leparfumlechic-result-afgano-320.webp",
+      "webpSha256": "07e3801fe9af9fe2beb9a07d0b6d121e4948d83c604b7b1ba3a318cb737cc0bb",
+      "rgbaPixelsSha256": "234714ecdcac06096178d1d496f56b0d63968b85318eb12c834993543fc7f68a",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-afgano-390.png",
+      "sourcePngSha256": "0ffdb85c5931f3f007387edac5b42e7188ac387734da15e0459fec1b30533739",
+      "archiveFile": "leparfumlechic-result-afgano-390.webp",
+      "webpSha256": "333ee09c00c00fb776fa2126d6036ec0e88d6f69f48008d798ad94e396cd48e4",
+      "rgbaPixelsSha256": "6db971d4b38959b8b66274becc227921ec48c93cc2c317b3a2b1285f8739b052",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-angels-1280.png",
+      "sourcePngSha256": "a677b2d4462abc6b281afb880bfa87ed92c756f5619be5203c3a512168c6fd69",
+      "archiveFile": "leparfumlechic-result-angels-1280.webp",
+      "webpSha256": "d80f1e3ada91cc4c3f88541f95f221c2fdef11084c2d4c7af1ed369e54699b0d",
+      "rgbaPixelsSha256": "bb7a0d58abc0a8d2fbe7dc9ce962e9e92f983e7c84176d8051b7425f732f2a90",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-angels-320.png",
+      "sourcePngSha256": "0587bdf85a2b19e161a330c332b81eb0ca8257b7449190229d7123c1cb4182d5",
+      "archiveFile": "leparfumlechic-result-angels-320.webp",
+      "webpSha256": "c199e7c952618fbfd12fd08fbc6aac2312e7008474ccadd8f7bac92a544fe476",
+      "rgbaPixelsSha256": "1735d424698ba4f7ed0b6dfba300ef18a9dee3b02d4b8927fd96de8dd3f948dd",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-angels-390.png",
+      "sourcePngSha256": "c537ccd4f64d3aebf9d7bdb80a85dc90d56715e051af244ca7e56dba0a53f1d4",
+      "archiveFile": "leparfumlechic-result-angels-390.webp",
+      "webpSha256": "b4d3e06ca97ce61b81f2f0d1166b8daa1e4e7afe06fa2e691c95ba7ecc113fe2",
+      "rgbaPixelsSha256": "0b5dc4ceefab409574ec89164c7c862343c365f1672b1ad99dd7e63b028ea45f",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-bois-1280.png",
+      "sourcePngSha256": "6225e730b302a9f6e3b982b70a8dfe1e4c2a9ed1cce3516dc0feadbceb1dc0da",
+      "archiveFile": "leparfumlechic-result-bois-1280.webp",
+      "webpSha256": "4b1669a98e3ca503608cb1e7822a1d1069adcd1f5ee9abc03e89203abb8bd1a5",
+      "rgbaPixelsSha256": "a35fcded98fb097a3d2b13f6352c64282e320c3fc7133da3af03eb47cf78543a",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-bois-320.png",
+      "sourcePngSha256": "153063f20075a9a52fcdf822fc1c7206a7857e942eb5c3910f631e45f5fb6742",
+      "archiveFile": "leparfumlechic-result-bois-320.webp",
+      "webpSha256": "397c98150f1a7feb47da5819f4de68750a3cdd5367c8f32d37357cf4b7ded6c7",
+      "rgbaPixelsSha256": "7a144bd9e1e019acdc01b84012fb13f86cf4af632dbb0c49d4dcd326e01f1b46",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-bois-390.png",
+      "sourcePngSha256": "13542a00b33c20a0cd82deefd9b3d5dcf7cda47b628765fdf991a44fdeb17def",
+      "archiveFile": "leparfumlechic-result-bois-390.webp",
+      "webpSha256": "bc2230676f8224e0b4dbac6a6d4d217f6cbe6925e5abc1ec9b14a67e295de7c1",
+      "rgbaPixelsSha256": "236258ff9611dbbc91bc4a6cd83e09bdae38a8ae714792ccb6040538e1059559",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-divine-1280.png",
+      "sourcePngSha256": "f2f22e084a238bc2c169447f5adbedc35a45e96e7606f1280cae233934cdd17b",
+      "archiveFile": "leparfumlechic-result-divine-1280.webp",
+      "webpSha256": "823676544cf2927b6a3074010cc8ff6e68449ead4224893dc383f1f7420df166",
+      "rgbaPixelsSha256": "91ac4fb563b015860f2c2013bbc9982e9d0f0113b5825c2e2cdf4d0ded395f9a",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-divine-320.png",
+      "sourcePngSha256": "f13afe256f3251a0dc530fa1a8d4754ed3f9153c5e259f664596c60a7527bb35",
+      "archiveFile": "leparfumlechic-result-divine-320.webp",
+      "webpSha256": "7f78a2a00f68d488ff1ddb584a900a2637b6d83a332365ef70d4e3e2b099b555",
+      "rgbaPixelsSha256": "b4a7db6620b034f541c72a9e631254108240e2cee5799d86e44345b38ca9b019",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-divine-390.png",
+      "sourcePngSha256": "4b866f227ccd00cbccfbbc1eb02560f34b955db5cd9521631c37e754c619783d",
+      "archiveFile": "leparfumlechic-result-divine-390.webp",
+      "webpSha256": "39500a894b8fb7c6e7b8b10b5c9da0e3dc5250635c35a34789529d8b6a83915f",
+      "rgbaPixelsSha256": "28f20ef880eb550e9475a478b3fd360ec063d13ae8d3759d7f9f5ce45e9d2eef",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-giardino-1280.png",
+      "sourcePngSha256": "253f109443df708d4d5f84feddb032b41052de8f4704ea28412b36cb2669ff65",
+      "archiveFile": "leparfumlechic-result-giardino-1280.webp",
+      "webpSha256": "44170349d2d0248e7fbe8f31f0c529e56bcc9feff693dc2bc7fbad895bb16704",
+      "rgbaPixelsSha256": "319560c4aeb1acc0e40ad8bee26a8746954ca524ef6d48423fca4414d694007e",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-giardino-320.png",
+      "sourcePngSha256": "85fbf9e1e5f70a848fc643e4c2c38c4047bb060833a4a27c37e8b849ddac86bc",
+      "archiveFile": "leparfumlechic-result-giardino-320.webp",
+      "webpSha256": "046283fe1ca2bc0acf3aa261ffc5976be089cec86c95a51740263a37842dd5af",
+      "rgbaPixelsSha256": "18066e324580aead174a4e42e611152395f45c9c6271550084f2b10046ab96e7",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-giardino-390.png",
+      "sourcePngSha256": "50a5981065f348fde294ad7690340088d05dc6a3597a6d00a35e061257810b73",
+      "archiveFile": "leparfumlechic-result-giardino-390.webp",
+      "webpSha256": "58b26866a74f47ccfbc329b45a8ed5335f546600cf24e473765b6b018ec9ade9",
+      "rgbaPixelsSha256": "74bb0eac57535768d8cd4df36f28da1ed33d8963568ab527cb2cf38c83dd666d",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-metal-1280.png",
+      "sourcePngSha256": "dfd7b7b473ab7abaf82203b571a3d68a3c25cd47fc6c5825dfcb7481535fdc6c",
+      "archiveFile": "leparfumlechic-result-metal-1280.webp",
+      "webpSha256": "75fea342f7070cfcc525a15116ffad9ffedb41be66e13550b1dc7eae9bd7f3b8",
+      "rgbaPixelsSha256": "1abda32154ce5f565c22086871dd4d443a85689f93d22902d1988b2882f435be",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-metal-320.png",
+      "sourcePngSha256": "2f5157d5ea7e1ad52293e1104941578703568d98c8c03e6c3904ebec5e4e8c83",
+      "archiveFile": "leparfumlechic-result-metal-320.webp",
+      "webpSha256": "cb6a7efda630a5f764e70b363afbb02551103164adfa55974e973f4d76aaa89d",
+      "rgbaPixelsSha256": "ee6b252803298e38b016997638395c64faece9d3b13eb58f36eb6d266bd6f06b",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-metal-390.png",
+      "sourcePngSha256": "bf781fbed8abd0e09fd9a3c506d005e350acd11ef999fa9fa1cdc1ec3872f6bc",
+      "archiveFile": "leparfumlechic-result-metal-390.webp",
+      "webpSha256": "90733ca1135ae358c4e698762d559dbe51ad4a687909b893ae317ce2a1c12c6f",
+      "rgbaPixelsSha256": "70746539856e3c69ddba178ddfc3dccc967225942a0a3eab2a816d61fd8d5013",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-olimpo-1280.png",
+      "sourcePngSha256": "928a394a92c2df8344719c2c55774f503d7708e8fc5209788fe2b3e51ef1c194",
+      "archiveFile": "leparfumlechic-result-olimpo-1280.webp",
+      "webpSha256": "287343e2a9ca829e70a3f33015d976112796f5d18b009d0549bf976835ef2224",
+      "rgbaPixelsSha256": "753673627447208c8c0ee18882ca74f54a6964213c8351779919132bdf8e45c5",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-olimpo-320.png",
+      "sourcePngSha256": "c2b787dee97fa635b0294e4c7eec01597dec7b11d14c7d4d1b3bd2f85ed84cd4",
+      "archiveFile": "leparfumlechic-result-olimpo-320.webp",
+      "webpSha256": "d351e3865743852c25b1e443ca6a539e6f038f081c16464941231d7f919e2d53",
+      "rgbaPixelsSha256": "77ec121aec5a8e014a958e156bf5ffa703136c70e557fb480517fccab7b890f0",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-olimpo-390.png",
+      "sourcePngSha256": "8aec7b90a115a7fe6bf2a212efdc20cdc8f32a245a45ee9b34bded6928ea38c8",
+      "archiveFile": "leparfumlechic-result-olimpo-390.webp",
+      "webpSha256": "75fdf30a1458efbfb6e31492b1f360b68deb761834224ca6d73928f94c5846c7",
+      "rgbaPixelsSha256": "a0d05b1cd8ae0e145be6e35de5cad1bbd81eb9eeaee56d08c2828409fb2d9e1a",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-phantom-1280.png",
+      "sourcePngSha256": "ca6f3eea64e5d64a29c73bc8616fcceede845f6cc8b166b8755d20015c31b702",
+      "archiveFile": "leparfumlechic-result-phantom-1280.webp",
+      "webpSha256": "b0ab789d6dd072913746905f0898b24612bcb464dc7cd68f79c221c9003125c0",
+      "rgbaPixelsSha256": "90ce944d155668886ec5ded42c0d5fa0580fc688755c703a8243228b9b48fef6",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-phantom-320.png",
+      "sourcePngSha256": "371c24f2e84b030b3a09057cb43801fe7267c89ad6025e669de619081af69059",
+      "archiveFile": "leparfumlechic-result-phantom-320.webp",
+      "webpSha256": "6eb45c0ef90cd4f9a41fe87aca8d2b37b9ee12b019dc7a293661d7d3e677f263",
+      "rgbaPixelsSha256": "792c5200ab9f47ee3f6891ccaefb89dda4d096fa70d6df6dbb65eb98e9765f41",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-phantom-390.png",
+      "sourcePngSha256": "d695156cf9d58b92409948962d10f98eddb7adb04740b7f7d4f888fa789b4bbe",
+      "archiveFile": "leparfumlechic-result-phantom-390.webp",
+      "webpSha256": "ef74ad39a1d9a65852d041947fee78c677791b24869c761ef732762d1900c160",
+      "rgbaPixelsSha256": "9723bd52a99f7245f3301c2ffc19a77ae7bb17c6619ca0a1565a32caca91635b",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-rolling-1280.png",
+      "sourcePngSha256": "01978e74d2d7868024c06b19f439d5e0cf374f28685052fcecfb09acbd704677",
+      "archiveFile": "leparfumlechic-result-rolling-1280.webp",
+      "webpSha256": "c24e12af54f76a478c201b2d8e343f02e47dd9ab7eeb54a471138c5f01b5468c",
+      "rgbaPixelsSha256": "18cfc8d0982ca8329261646e07c51850f8dcef0334abbc671d8f1dfe7c906a05",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-rolling-320.png",
+      "sourcePngSha256": "47b818ea61d693555d648efa4f460ae7ee8da2a02a4b5d106adaee91ac791607",
+      "archiveFile": "leparfumlechic-result-rolling-320.webp",
+      "webpSha256": "256cdf0d9a3c4bc7d6939bf8e67c631fcfc98585d16b1398ad0938d8b3bf3e1d",
+      "rgbaPixelsSha256": "ac3f42d55cf649dd8575254714c6ec00e42cd559dc5addeb25fc4928f1c043ef",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-rolling-390.png",
+      "sourcePngSha256": "ec16bc149a431441aad2423c28eeb1a66f2bd18e0da0c93aead293a9f371d3e0",
+      "archiveFile": "leparfumlechic-result-rolling-390.webp",
+      "webpSha256": "2ebd5b4460cd40b9bd4a0f734711263063f636a523436db20ce6d11f5e664d09",
+      "rgbaPixelsSha256": "1caaab845e15540fa278193ad1fb049e9ccd1592d2c10183b827f7e587c0e58e",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-rosso-1280.png",
+      "sourcePngSha256": "aee38eddd5f4ebcc8ff67860065fa5d589b94d2f4f73b40bdaa4c4b063b01b31",
+      "archiveFile": "leparfumlechic-result-rosso-1280.webp",
+      "webpSha256": "893867b06168c746cc316ada32f226082e9146593652a9438cbdf2b46d50d42d",
+      "rgbaPixelsSha256": "7048a28f23dceb248193bb5493078850e73529011da1b3b4b9bbe1c2b7aa5de2",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-rosso-320.png",
+      "sourcePngSha256": "6098ee33375347bf76db87a776054f0daa95129508b82b5888df86bd452e3e81",
+      "archiveFile": "leparfumlechic-result-rosso-320.webp",
+      "webpSha256": "e33db46d0f9257a24bd6708877558b19883fe9a055a479b246903a64f9fce3fe",
+      "rgbaPixelsSha256": "ccf11d72c375aabbb23d77d091871d83025edc3f7034b070ab797fd12b24d60d",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-rosso-390.png",
+      "sourcePngSha256": "7ba25b531e3c1b258fd8c07a770a77d0d76f91f085b9d4dc82afd5f7e094bd99",
+      "archiveFile": "leparfumlechic-result-rosso-390.webp",
+      "webpSha256": "3f0d217a6f950502c670a4ca820c7337119c5c361dfeeacb37e6defd58db934b",
+      "rgbaPixelsSha256": "63e360f76e63315bae3d9e2e9901a908945141e1b7a53700e563272f32f288f8",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-velvet-1280.png",
+      "sourcePngSha256": "718935ee0663044e6e20909edeb8fca22209f2baaef5e176ff2b2b7d919e56b3",
+      "archiveFile": "leparfumlechic-result-velvet-1280.webp",
+      "webpSha256": "e32ad46f80b0ee81f5bc8e4558148fa67f5c46d6a2a0bd2ff91bc0d13a908728",
+      "rgbaPixelsSha256": "767274f94efed58c0356fdd76bd08f6c036930502c83d0f1e3227064339229ed",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-velvet-320.png",
+      "sourcePngSha256": "3ae38acef1433673c262c5f1d483038b5294747434b66b08d164b16a89f609b7",
+      "archiveFile": "leparfumlechic-result-velvet-320.webp",
+      "webpSha256": "a37b595f9c2330fb70654d53dc2872059cf1f2b2c717027ad1738181ae072874",
+      "rgbaPixelsSha256": "c43af866a0c5a5415ae2246679cd16c2db0c6b16dd927293d2a3e5e46cdd29dc",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-velvet-390.png",
+      "sourcePngSha256": "f83126f675f648b750178e6210007945f50e725bfa701dc92e88eac10fbf9db4",
+      "archiveFile": "leparfumlechic-result-velvet-390.webp",
+      "webpSha256": "a935e9d6b08257d857b31338d65eb086f446b19aaf2a55746e7c0ba5fcb0fd79",
+      "rgbaPixelsSha256": "ef2589d8ed35d4c725661cc89f5ea91457529c59c1a2edc4327014d17fa7ffab",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-vodka-1280.png",
+      "sourcePngSha256": "74b29eb68b63e2e06fcd65366e986b45d9548bf18f9cc8fee61a3c9b231998c9",
+      "archiveFile": "leparfumlechic-result-vodka-1280.webp",
+      "webpSha256": "6c78469cb4169d044b1a3729a89f340f221f807783b55ec06d490c85e8898654",
+      "rgbaPixelsSha256": "d87a0f2308494eb923aa63f58c53d1f6c760b3ae09d6879093cf953d00f8facc",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-vodka-320.png",
+      "sourcePngSha256": "5c4598aecd80db0e29b5848b39a27082b198e348f019d2fce3df688c80de708d",
+      "archiveFile": "leparfumlechic-result-vodka-320.webp",
+      "webpSha256": "6a6da5353bd657725b4a2cd50a590b02b88748d8f3161f6ef267b3e461dfeae7",
+      "rgbaPixelsSha256": "930aee7efe3c22d0c07225a487118b0ded74435eb53b3496c12311cf7205662f",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-result-vodka-390.png",
+      "sourcePngSha256": "36e90721910116bbd03889d48864cf61a3a9b7b64bde6f7c0edc2209f7526225",
+      "archiveFile": "leparfumlechic-result-vodka-390.webp",
+      "webpSha256": "d9c937d1bd3b3962b5811759a5dd295880e850fc816377965b1c2b074ef140fd",
+      "rgbaPixelsSha256": "7800dc832629ff842203712db3b572edfce11cb057c6e807edc0640eaa7d155a",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-selected-bois-1280.png",
+      "sourcePngSha256": "e6f39203b8b048c28d6d6252b27c674c555f4e0e3b6f38ac2e2894c6a7f4cf89",
+      "archiveFile": "leparfumlechic-selected-bois-1280.webp",
+      "webpSha256": "4b77bdbcfd0118b2842a18b0a2a6d0b02797d47f32f5d400dc9a01f7a1832760",
+      "rgbaPixelsSha256": "754a97ef016d828e10bba2cfa5d752029dbad611de0110fbadb9220c6cd6e39a",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-selected-bois-320.png",
+      "sourcePngSha256": "834d073dd6f9004a9577679d34fc7bd534794b6f461a7361dc5432d675bf87f1",
+      "archiveFile": "leparfumlechic-selected-bois-320.webp",
+      "webpSha256": "80058ff19fe8681a4c96ceefa98b93194b5970a6bffc0f6ebead34f28950252b",
+      "rgbaPixelsSha256": "d5824a9384909c5ab49d3d9eacb775cc054d896e9328fbe97c016a3342d19986",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-selected-bois-390.png",
+      "sourcePngSha256": "c7be22af465e279893d2535ade44b9bc0b3730fd827be1b497c0bba9df4b39cd",
+      "archiveFile": "leparfumlechic-selected-bois-390.webp",
+      "webpSha256": "ecc1068d7f92f0a837932cc916725732f17280fa58ec24634d6529c63bc2ee59",
+      "rgbaPixelsSha256": "72fb07bbd1bcd1e3caaef572518b7177d218bb81f57172c6aae0af27f63f70b1",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-waiting-1280.png",
+      "sourcePngSha256": "835d744434992344e367d78128045293f50deca97f214dcf230de82b8cdd4169",
+      "archiveFile": "leparfumlechic-waiting-1280.webp",
+      "webpSha256": "042ccbacbe8845c21c4f4ea3bb3111ca5ca13d5d4e3168e5da139755037b685e",
+      "rgbaPixelsSha256": "d8a55b1f48e8e42ec238edc0aa47b8e3b9b052b84b8568b341cdfd61eb97d66a",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-waiting-320.png",
+      "sourcePngSha256": "9a0697a9eef42ada196a42cd78ca8c7546a070aa0b64780c1cba26d7aaeb8797",
+      "archiveFile": "leparfumlechic-waiting-320.webp",
+      "webpSha256": "fad1b72e21614ece74375379a0dc9cbbfada5fba05b94c6609273650ba35e10e",
+      "rgbaPixelsSha256": "c8a435981a37c0ff4839fd4bb8307f335a0e16c3ce3a1a21933f5183256209ee",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/leparfumlechic-waiting-390.png",
+      "sourcePngSha256": "892f3022a848d4b7799e87ab49c07507a2741649ffceaed35d3d488aa06f66cb",
+      "archiveFile": "leparfumlechic-waiting-390.webp",
+      "webpSha256": "1b78396826763d29c63189797302b6bdf4fcc97c7c7c3dae794fff91e5504340",
+      "rgbaPixelsSha256": "1f19def06762856abf73438cd5d8d81a58b13ce09ff23d82d27ff46d9c065dee",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    }
+  ],
+  "archives": [
+    {
+      "path": "tools/s5/perfume-independent/reports/leparfumlechic-20261111/archives/local-leparfumlechic-1280.zip",
+      "bytes": 4423792,
+      "sha256": "a4ae7174b539ab2eafb4a72f2e1b48d1ec56ba4251738c04a64740cfd635efb4",
+      "originalScreenshotCount": 42,
+      "derivedReviewSheets": 7
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/leparfumlechic-20261111/archives/local-leparfumlechic-320.zip",
+      "bytes": 4454139,
+      "sha256": "40ad4421a4936f1e9260f7658e8ad84772833fff698cf11a0db2ada7545e68ec",
+      "originalScreenshotCount": 42,
+      "derivedReviewSheets": 7
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/leparfumlechic-20261111/archives/local-leparfumlechic-390.zip",
+      "bytes": 4167309,
+      "sha256": "7bb23d8bc1714fadfbaea5e3ba982e48668d944b9337e3568ab867cbdb75c96a",
+      "originalScreenshotCount": 42,
+      "derivedReviewSheets": 7
+    },
+    {
+      "path": "/workspace/work/perfume-worker/tools/s5/perfume-independent/reports/leparfumlechic-20261111/archives/merchant-leparfumlechic.zip",
+      "bytes": 879894,
+      "sha256": "5d194303889e783aa3ce27d69841035d7e0463a25cacacca2e72db302cb11e6a",
+      "originalScreenshotCount": 4,
+      "scope": "merchant source live browser, not demo Preview"
+    }
+  ]
+}

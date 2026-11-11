@@ -20,6 +20,15 @@ if '--alex-flakon' in sys.argv:
 if '--orion-inspirovane' in sys.argv:
  terms={'orion':['parfumeria-orion.sk','ATM Consulting','ATMConsulting','45723991','info@parfumeria-orion.sk'],'inspirovane':['inspirovaneparfemy.cz','556869.myshoptet.com','Zdeňka Babková','Zdenka Babkova','75575434','Lanoir','info@inspirovaneparfemy.cz']}
  OUT=ROOT/'tools/s5/perfume-independent/reports/orion-inspirovane-20261111/duplicates.json'
+if '--myskino' in sys.argv:
+ terms={'myskino':['myskino.cz','myskino.com','Col de Bonte','ColdeBonte','29413184','info@myskino.cz']}
+ OUT=ROOT/'tools/s5/perfume-independent/reports/myskino-20261111/duplicates.json'
+if '--leparfum' in sys.argv:
+ terms={'leparfumlechic':['leparfumlechic.sk','Le Parfum & Le Chic','Lukáš Roth','Lukas Roth','Fineluxart','51786796','SK1080976490','info@leparfumlechic.sk']}
+ OUT=ROOT/'tools/s5/perfume-independent/reports/leparfumlechic-20261111/duplicates.json'
+if '--replacement-pair' in sys.argv:
+ terms={'vavavoom':['vava-voom.cz','vava-voom.sk','94f410-de.myshopify.com','VAVAVOOM','04930941','info@vava-voom.cz'],'rafinad':['rafinadparfumerie.com','RAFINAD','01413911','info@rafinadparfumerie.com'],'vzorky-parfemu':['vzorky-parfemu.cz','KB Parfums','23937564','mek.krista@gmail.com']}
+ OUT=ROOT/'tools/s5/perfume-independent/reports/replacements-20261111/duplicates.json'
 patterns={slug:[(term,re.compile(r'\s*'.join(term) if term.isdigit() else re.escape(term),re.I)) for term in ts] for slug,ts in terms.items()}
 proc=subprocess.Popen(['git','-C',str(ROOT),'cat-file','--batch'],stdin=subprocess.PIPE,stdout=subprocess.PIPE);hits=collections.defaultdict(list);missing=[];controls=0
 for sha,loc in objects.items():

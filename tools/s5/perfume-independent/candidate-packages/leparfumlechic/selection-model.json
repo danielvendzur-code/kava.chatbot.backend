@@ -1,0 +1,110 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aké tóny chcete objavovať?",
+  "options": [
+    {
+      "value": "herbal",
+      "label": "Byliny a svieže korenie",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "metal",
+          "label": "Lavandin z Grasse",
+          "productId": "metal",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/"
+        },
+        {
+          "value": "vodka",
+          "label": "Kardamóm, konvalinka a mach",
+          "productId": "vodka",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/by-kilian-vodka-on-the-rocks/"
+        },
+        {
+          "value": "olimpo",
+          "label": "Pomaranč, tymian a oud",
+          "productId": "olimpo",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/agatho-mytho-olimpoverde/"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Kvety a krémové akordy",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "velvet",
+          "label": "Kosatec, santal a kožené tóny",
+          "productId": "velvet",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/essential-parfums-velvet-iris/"
+        },
+        {
+          "value": "rolling",
+          "label": "Mandľové mlieko, kosatec a pižmo",
+          "productId": "rolling",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/by-kilian-rolling-in-love/"
+        },
+        {
+          "value": "rosso",
+          "label": "Ruža, jazmín a mandle",
+          "productId": "rosso",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/agatho-parfum-rossopompeiano/"
+        }
+      ]
+    },
+    {
+      "value": "gourmand",
+      "label": "Vanilka, rum alebo koňak",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "divine",
+          "label": "Vanilka, škorica a tonka",
+          "productId": "divine",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/"
+        },
+        {
+          "value": "phantom",
+          "label": "Rum, karamel a káva",
+          "productId": "phantom",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/"
+        },
+        {
+          "value": "angels",
+          "label": "Koňak, škorica a dub",
+          "productId": "angels",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/by-kilian-angels-share/"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Drevo či hašišový akord",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "bois",
+          "label": "Bazalka, timutské korenie a vetiver",
+          "productId": "bois",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/"
+        },
+        {
+          "value": "giardino",
+          "label": "Kadidlo, šafrán a cédrové drevo",
+          "productId": "giardino",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/agatho-parfum-giardinodiercole/"
+        },
+        {
+          "value": "afgano",
+          "label": "Hašišový vonný akord",
+          "productId": "afgano",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/black-afgano/"
+        }
+      ]
+    }
+  ]
+}

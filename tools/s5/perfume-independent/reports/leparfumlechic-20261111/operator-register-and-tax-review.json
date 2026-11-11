@@ -1,0 +1,58 @@
+{
+  "name": "Lukáš Roth – Le Parfum & Le Chic",
+  "ico": "51786796",
+  "vatId": "SK1080976490",
+  "contact": "info@leparfumlechic.sk",
+  "contactSource": "https://www.leparfumlechic.sk/kontakt/",
+  "termsSource": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+  "termsCheckedAt": "2026-11-11T19:15:40.866578+00:00",
+  "vatEvidence": "Terms explicitly final prices incl VAT; inspected product metadata false conflicts; MAIN review required. No VAT rate or price recalculation.",
+  "latestAvailableOfficialRegister": {
+    "url": "https://api.statistics.sk/rpo/v1/search?identifier=51786796",
+    "checkedAt": "2026-11-10T18:09:04.093062+00:00",
+    "selectedBusinessFields": {
+      "id": 9617606,
+      "identifiers": [
+        {
+          "value": "51786796",
+          "validFrom": "2018-06-11"
+        }
+      ],
+      "fullNames": [
+        {
+          "value": "Lukáš Roth - Le Parfum & Le Chic",
+          "validFrom": "2018-07-24"
+        },
+        {
+          "value": "Mgr.art. Lukáš Roth - Fineluxart",
+          "validFrom": "2018-06-11",
+          "validTo": "2018-07-23"
+        }
+      ],
+      "establishment": "2018-06-11",
+      "termination": null,
+      "dbModificationDate": "2025-08-01"
+    },
+    "scope": "Latest available official search record; not a new current active-register assertion."
+  },
+  "freshRegistryRefresh": [
+    {
+      "url": "https://www.zrsr.sk/zr_ico.aspx?ICO=51786796",
+      "checkedAt": "2026-11-11T19:24:47.569450+00:00",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "url": "https://api.statistics.sk/rpo/v1/organizations/9617606",
+      "checkedAt": "2026-11-11T19:24:48.453076+00:00",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "key": "rpo",
+      "url": "https://api.statistics.sk/rpo/v1/search?identifier=51786796",
+      "error": "HTTP Error 503: Service Unavailable",
+      "checkedAt": "2026-11-11T19:15:42.416537+00:00"
+    }
+  ],
+  "revenue": "UNKNOWN",
+  "size": "UNKNOWN"
+}

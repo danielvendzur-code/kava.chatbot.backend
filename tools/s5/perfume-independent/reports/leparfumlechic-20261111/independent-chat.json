@@ -1,0 +1,137 @@
+{
+  "at": "2026-11-11T19:57:46.321914+00:00",
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Local isolated candidate fixture only.",
+  "cards": [
+    {
+      "slug": "leparfumlechic",
+      "width": 320,
+      "id": "metal",
+      "price": "250 €",
+      "pack": "100 ml",
+      "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "leparfumlechic-card-0-320.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 320,
+      "id": "divine",
+      "price": "98 €",
+      "pack": "100 ml",
+      "url": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "leparfumlechic-card-1-320.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 320,
+      "id": "phantom",
+      "price": "260 €",
+      "pack": "50 ml",
+      "url": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "leparfumlechic-card-2-320.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 390,
+      "id": "metal",
+      "price": "250 €",
+      "pack": "100 ml",
+      "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "leparfumlechic-card-0-390.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 390,
+      "id": "divine",
+      "price": "98 €",
+      "pack": "100 ml",
+      "url": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "leparfumlechic-card-1-390.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 390,
+      "id": "phantom",
+      "price": "260 €",
+      "pack": "50 ml",
+      "url": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "leparfumlechic-card-2-390.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 1280,
+      "id": "metal",
+      "price": "250 €",
+      "pack": "100 ml",
+      "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "leparfumlechic-card-0-1280.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 1280,
+      "id": "divine",
+      "price": "98 €",
+      "pack": "100 ml",
+      "url": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "leparfumlechic-card-1-1280.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 1280,
+      "id": "phantom",
+      "price": "260 €",
+      "pack": "50 ml",
+      "url": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "leparfumlechic-card-2-1280.png"
+    }
+  ],
+  "viewports": [
+    {
+      "slug": "leparfumlechic",
+      "width": 320,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 390,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 1280,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    }
+  ],
+  "errors": [],
+  "paidModelCalls": 0,
+  "complete": true,
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "browser": "webkit"
+}

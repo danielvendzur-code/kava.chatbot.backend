@@ -1,0 +1,1171 @@
+{
+  "brand": "Le Parfum & Le Chic",
+  "domain": "leparfumlechic.sk",
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "sk",
+  "country": "SK",
+  "currency": "EUR",
+  "operator": {
+    "name": "Lukáš Roth – Le Parfum & Le Chic",
+    "ico": "51786796",
+    "vatId": "SK1080976490",
+    "historicalName": "Mgr.art. Lukáš Roth – Fineluxart"
+  },
+  "products": [
+    {
+      "id": "metal",
+      "name": "Matière Première – Metal Lavender",
+      "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/",
+      "priceAmount": 250.0,
+      "price": "250 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Lavandin z Grasse.",
+      "reason": "Lavandin z Grasse.",
+      "photo": "/assets/s5/leparfumlechic/metal.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/",
+        "verifiedAt": "2026-11-11T19:17:51.400940+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": null,
+          "scope": "Official public WooCommerce instock CSS class and structured InStock, not buy-button or unit-count inference",
+          "publicProductId": "9864",
+          "structuredAvailability": [
+            "http://schema.org/InStock"
+          ],
+          "class": "instock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 250.0,
+          "currency": "EUR",
+          "exactProductId": "9864",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/",
+          "vatEvidence": "Merchant official terms explicitly final prices incl VAT. Product schema valueAddedTaxIncluded=false CONFLICT retained for MAIN review; no VAT rate/recalculation invented.",
+          "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+          "schemaVatFlags": [
+            "false"
+          ]
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/",
+          "publicProductId": "9864",
+          "scope": "Explicit ml statement in official product description; no ambiguous variable/from-price offer."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.leparfumlechic.sk/wp-content/uploads/2026/10/3760428941435.webp",
+        "photoMeaning": "Official selected-product illustration; decorative props/box are not extra products or ingredient evidence.",
+        "scent": "Lavandin z Grasse.",
+        "officialProductTitle": "Matiere Premiere Metal Lavender",
+        "selectionTraits": {
+          "fragranceDirection": "herbal",
+          "fragranceProfile": "metal"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/",
+          "navigationLabel": "Lavandin z Grasse",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/",
+            "sourceText": "Hlavná vonná zložka: levanduľový olej z Grasse (Lavandin).",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/",
+            "sourceText": "Hlavná vonná zložka: levanduľový olej z Grasse (Lavandin).",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumovaná voda"
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "80a2268a8a091d106428a77a832e44b475211a92b62b0e3658d3883b30d3c204",
+        "photoEvidence": {
+          "url": "https://www.leparfumlechic.sk/wp-content/uploads/2026/10/3760428941435.webp",
+          "width": 680,
+          "height": 680,
+          "sha256": "5d1941fc9fb3585b3006735b7a0703c30a372595c1a4b388434af07596f46315",
+          "checkedAt": "2026-11-11T19:37:30.608896+00:00",
+          "visualReview": "PERFUME_WORKER actually viewed source-product photo sheets; exact formula identities/bottles distinct, not size/set inflation."
+        }
+      }
+    },
+    {
+      "id": "vodka",
+      "name": "Kilian – Vodka on the Rocks",
+      "url": "https://www.leparfumlechic.sk/product/by-kilian-vodka-on-the-rocks/",
+      "priceAmount": 260.0,
+      "price": "260 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfumovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Kardamóm, konvalinka a mach.",
+      "reason": "Kardamóm, konvalinka a mach.",
+      "photo": "/assets/s5/leparfumlechic/vodka.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.leparfumlechic.sk/product/by-kilian-vodka-on-the-rocks/",
+        "verifiedAt": "2026-11-11T19:17:52.698888+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": null,
+          "scope": "Official public WooCommerce instock CSS class and structured InStock, not buy-button or unit-count inference",
+          "publicProductId": "9857",
+          "structuredAvailability": [
+            "http://schema.org/InStock"
+          ],
+          "class": "instock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 260.0,
+          "currency": "EUR",
+          "exactProductId": "9857",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/by-kilian-vodka-on-the-rocks/",
+          "vatEvidence": "Merchant official terms explicitly final prices incl VAT. Product schema valueAddedTaxIncluded=false CONFLICT retained for MAIN review; no VAT rate/recalculation invented.",
+          "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+          "schemaVatFlags": [
+            "false"
+          ]
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/by-kilian-vodka-on-the-rocks/",
+          "publicProductId": "9857",
+          "scope": "Explicit ml statement in official product description; no ambiguous variable/from-price offer."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.leparfumlechic.sk/wp-content/uploads/2026/10/vodka-on-the-rocks.png",
+        "photoMeaning": "Official selected-product illustration; decorative props/box are not extra products or ingredient evidence.",
+        "scent": "Kardamóm, konvalinka a mach.",
+        "officialProductTitle": "By KIlian Vodka on the Rocks",
+        "selectionTraits": {
+          "fragranceDirection": "herbal",
+          "fragranceProfile": "vodka"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-vodka-on-the-rocks/",
+          "navigationLabel": "Kardamóm, konvalinka a mach",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/by-kilian-vodka-on-the-rocks/",
+            "sourceText": "Vrchné tóny: akord On the Rocks, kardamóm; Srdce: konvalinka, ruža; Základ: dubový mach, santalové drevo.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/by-kilian-vodka-on-the-rocks/",
+            "sourceText": "Vrchné tóny: akord On the Rocks, kardamóm; Srdce: konvalinka, ruža; Základ: dubový mach, santalové drevo.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumovaná voda"
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "9daffd09fd45d6a663c7df9685459d9c9563e1a456c58b0f24e36693ee51b749",
+        "photoEvidence": {
+          "url": "https://www.leparfumlechic.sk/wp-content/uploads/2026/10/vodka-on-the-rocks.png",
+          "width": 800,
+          "height": 800,
+          "sha256": "5cdddebbe1ef0313905ca65402135e087086a48388f277ca35d5ab8a4b5158e4",
+          "checkedAt": "2026-11-11T19:37:30.609772+00:00",
+          "visualReview": "PERFUME_WORKER actually viewed source-product photo sheets; exact formula identities/bottles distinct, not size/set inflation."
+        }
+      }
+    },
+    {
+      "id": "olimpo",
+      "name": "Agatho – Olimpoverde",
+      "url": "https://www.leparfumlechic.sk/product/agatho-mytho-olimpoverde/",
+      "priceAmount": 210.0,
+      "price": "210 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfumový extrakt",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Pomaranč, tymian a oud.",
+      "reason": "Pomaranč, tymian a oud.",
+      "photo": "/assets/s5/leparfumlechic/olimpo.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.leparfumlechic.sk/product/agatho-mytho-olimpoverde/",
+        "verifiedAt": "2026-11-11T19:17:54.789213+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": null,
+          "scope": "Official public WooCommerce instock CSS class and structured InStock, not buy-button or unit-count inference",
+          "publicProductId": "9267",
+          "structuredAvailability": [
+            "http://schema.org/InStock"
+          ],
+          "class": "instock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 210.0,
+          "currency": "EUR",
+          "exactProductId": "9267",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/agatho-mytho-olimpoverde/",
+          "vatEvidence": "Merchant official terms explicitly final prices incl VAT. Product schema valueAddedTaxIncluded=false CONFLICT retained for MAIN review; no VAT rate/recalculation invented.",
+          "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+          "schemaVatFlags": [
+            "false"
+          ]
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/agatho-mytho-olimpoverde/",
+          "publicProductId": "9267",
+          "scope": "Explicit ml statement in official product description; no ambiguous variable/from-price offer."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.leparfumlechic.sk/wp-content/uploads/2025/07/olimpoverde.webp",
+        "photoMeaning": "Official selected-product illustration; decorative props/box are not extra products or ingredient evidence.",
+        "scent": "Pomaranč, tymian a oud.",
+        "officialProductTitle": "AGATHO MYTHO OLIMPOVERDE",
+        "selectionTraits": {
+          "fragranceDirection": "herbal",
+          "fragranceProfile": "olimpo"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.leparfumlechic.sk/product/agatho-mytho-olimpoverde/",
+          "navigationLabel": "Pomaranč, tymian a oud",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/agatho-mytho-olimpoverde/",
+            "sourceText": "Hlava: sladký pomaranč, calamondin, neroli, myrta; Srdce: červený tymian, akord chinotto, papyrus, jazmín; Základ: oud, tonkový bôb, akord costus, priezračné pižmá.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/agatho-mytho-olimpoverde/",
+            "sourceText": "Hlava: sladký pomaranč, calamondin, neroli, myrta; Srdce: červený tymian, akord chinotto, papyrus, jazmín; Základ: oud, tonkový bôb, akord costus, priezračné pižmá.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumový extrakt"
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "bbcfafb5facf191113d25e0bd8e497ff8a5bacb5cf825f75527f5ecafc137c10",
+        "photoEvidence": {
+          "url": "https://www.leparfumlechic.sk/wp-content/uploads/2025/07/olimpoverde.webp",
+          "width": 800,
+          "height": 800,
+          "sha256": "3f6215af307cd7bf02b760dcc0ea4dad7e1540ee4a6ff17b56d8066ab6c036f0",
+          "checkedAt": "2026-11-11T19:37:30.610490+00:00",
+          "visualReview": "PERFUME_WORKER actually viewed source-product photo sheets; exact formula identities/bottles distinct, not size/set inflation."
+        }
+      }
+    },
+    {
+      "id": "velvet",
+      "name": "Essential Parfums – Velvet Iris",
+      "url": "https://www.leparfumlechic.sk/product/essential-parfums-velvet-iris/",
+      "priceAmount": 98.0,
+      "price": "98 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Kosatec, santal a kožené tóny.",
+      "reason": "Kosatec, santal a kožené tóny.",
+      "photo": "/assets/s5/leparfumlechic/velvet.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.leparfumlechic.sk/product/essential-parfums-velvet-iris/",
+        "verifiedAt": "2026-11-11T19:17:51.392555+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": null,
+          "scope": "Official public WooCommerce instock CSS class and structured InStock, not buy-button or unit-count inference",
+          "publicProductId": "9160",
+          "structuredAvailability": [
+            "http://schema.org/InStock"
+          ],
+          "class": "instock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 98.0,
+          "currency": "EUR",
+          "exactProductId": "9160",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/essential-parfums-velvet-iris/",
+          "vatEvidence": "Merchant official terms explicitly final prices incl VAT. Product schema valueAddedTaxIncluded=false CONFLICT retained for MAIN review; no VAT rate/recalculation invented.",
+          "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+          "schemaVatFlags": [
+            "false"
+          ]
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/essential-parfums-velvet-iris/",
+          "publicProductId": "9160",
+          "scope": "Explicit ml statement in official product description; no ambiguous variable/from-price offer."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.leparfumlechic.sk/wp-content/uploads/2025/05/IRIS_100ML_FACE.jpg.webp",
+        "photoMeaning": "Official selected-product illustration; decorative props/box are not extra products or ingredient evidence.",
+        "scent": "Kosatec, santal a kožené tóny.",
+        "officialProductTitle": "Essential Parfums Velvet Iris",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "velvet"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.leparfumlechic.sk/product/essential-parfums-velvet-iris/",
+          "navigationLabel": "Kosatec, santal a kožené tóny",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/essential-parfums-velvet-iris/",
+            "sourceText": "Vonné tóny podľa popisu: ružové korenie, list kurkumy, buchu, galbanum, lentisk, kosatec, santalové drevo, labdanum a Saffiano (kožené a semišové nuansy).",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/essential-parfums-velvet-iris/",
+            "sourceText": "Vonné tóny podľa popisu: ružové korenie, list kurkumy, buchu, galbanum, lentisk, kosatec, santalové drevo, labdanum a Saffiano (kožené a semišové nuansy).",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumovaná voda"
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "ff2d029774e42fb8fa5bb70b6be6efcece69c06f5ca046f7d80e7cbf0828b1a4",
+        "photoEvidence": {
+          "url": "https://www.leparfumlechic.sk/wp-content/uploads/2025/05/IRIS_100ML_FACE.jpg.webp",
+          "width": 960,
+          "height": 960,
+          "sha256": "523851c77048382c6914f708915b19780e1a1fb6321598632185f062090ff7a8",
+          "checkedAt": "2026-11-11T19:37:30.611352+00:00",
+          "visualReview": "PERFUME_WORKER actually viewed source-product photo sheets; exact formula identities/bottles distinct, not size/set inflation."
+        }
+      }
+    },
+    {
+      "id": "rolling",
+      "name": "Kilian – Rolling in Love",
+      "url": "https://www.leparfumlechic.sk/product/by-kilian-rolling-in-love/",
+      "priceAmount": 260.0,
+      "price": "260 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfumovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Mandľové mlieko, kosatec a pižmo.",
+      "reason": "Mandľové mlieko, kosatec a pižmo.",
+      "photo": "/assets/s5/leparfumlechic/rolling.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.leparfumlechic.sk/product/by-kilian-rolling-in-love/",
+        "verifiedAt": "2026-11-11T19:17:52.695116+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": null,
+          "scope": "Official public WooCommerce instock CSS class and structured InStock, not buy-button or unit-count inference",
+          "publicProductId": "9853",
+          "structuredAvailability": [
+            "http://schema.org/InStock"
+          ],
+          "class": "instock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 260.0,
+          "currency": "EUR",
+          "exactProductId": "9853",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/by-kilian-rolling-in-love/",
+          "vatEvidence": "Merchant official terms explicitly final prices incl VAT. Product schema valueAddedTaxIncluded=false CONFLICT retained for MAIN review; no VAT rate/recalculation invented.",
+          "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+          "schemaVatFlags": [
+            "false"
+          ]
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/by-kilian-rolling-in-love/",
+          "publicProductId": "9853",
+          "scope": "Explicit ml statement in official product description; no ambiguous variable/from-price offer."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.leparfumlechic.sk/wp-content/uploads/2026/10/images-2.jpeg",
+        "photoMeaning": "Official selected-product illustration; decorative props/box are not extra products or ingredient evidence.",
+        "scent": "Mandľové mlieko, kosatec a pižmo.",
+        "officialProductTitle": "By Kilian Rolling in Love",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "rolling"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-rolling-in-love/",
+          "navigationLabel": "Mandľové mlieko, kosatec a pižmo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/by-kilian-rolling-in-love/",
+            "sourceText": "Vrchné tóny: mandľové mlieko, semená ambrette; Srdce: kosatec, frézia; Základ: pižmo, fazuľa tonka, tuberóza.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/by-kilian-rolling-in-love/",
+            "sourceText": "Vrchné tóny: mandľové mlieko, semená ambrette; Srdce: kosatec, frézia; Základ: pižmo, fazuľa tonka, tuberóza.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumovaná voda"
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "2ff1a7b58a785a3fe72c51b8b205b4fb42b7325d006a47bb83f78dd1eb600a20",
+        "photoEvidence": {
+          "url": "https://www.leparfumlechic.sk/wp-content/uploads/2026/10/images-2.jpeg",
+          "width": 554,
+          "height": 554,
+          "sha256": "a925f9bc516933bc765be7271b63fae8a8852fe589d664f0f9591a70e46aa9da",
+          "checkedAt": "2026-11-11T19:37:30.612944+00:00",
+          "visualReview": "PERFUME_WORKER actually viewed source-product photo sheets; exact formula identities/bottles distinct, not size/set inflation."
+        }
+      }
+    },
+    {
+      "id": "rosso",
+      "name": "Agatho – Rossopompeiano",
+      "url": "https://www.leparfumlechic.sk/product/agatho-parfum-rossopompeiano/",
+      "priceAmount": 341.0,
+      "price": "341 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Ruža, jazmín a mandle.",
+      "reason": "Ruža, jazmín a mandle.",
+      "photo": "/assets/s5/leparfumlechic/rosso.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.leparfumlechic.sk/product/agatho-parfum-rossopompeiano/",
+        "verifiedAt": "2026-11-11T19:17:56.846948+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": null,
+          "scope": "Official public WooCommerce instock CSS class and structured InStock, not buy-button or unit-count inference",
+          "publicProductId": "5818",
+          "structuredAvailability": [
+            "http://schema.org/InStock"
+          ],
+          "class": "instock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 341.0,
+          "currency": "EUR",
+          "exactProductId": "5818",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/agatho-parfum-rossopompeiano/",
+          "vatEvidence": "Merchant official terms explicitly final prices incl VAT. Product schema valueAddedTaxIncluded=false CONFLICT retained for MAIN review; no VAT rate/recalculation invented.",
+          "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+          "schemaVatFlags": [
+            "false"
+          ]
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/agatho-parfum-rossopompeiano/",
+          "publicProductId": "5818",
+          "scope": "Explicit ml statement in official product description; no ambiguous variable/from-price offer."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.leparfumlechic.sk/wp-content/uploads/2019/09/Rosso-Pompeiano-Agatho-Parfum.jpg",
+        "photoMeaning": "Official selected-product illustration; decorative props/box are not extra products or ingredient evidence.",
+        "scent": "Ruža, jazmín a mandle.",
+        "officialProductTitle": "Agatho Parfum Rossopompeiano",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "rosso"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.leparfumlechic.sk/product/agatho-parfum-rossopompeiano/",
+          "navigationLabel": "Ruža, jazmín a mandle",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/agatho-parfum-rossopompeiano/",
+            "sourceText": "Hlava: mandarinka, galbanum, mandle; Srdce: pomarančové kvety, Damašská ruža, ylang ylang, jazmín, heliotrop; Základ: pačula, labdanum, santalové drevo, kašmír, ambra, vanilka, mošus.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/agatho-parfum-rossopompeiano/",
+            "sourceText": "Hlava: mandarinka, galbanum, mandle; Srdce: pomarančové kvety, Damašská ruža, ylang ylang, jazmín, heliotrop; Základ: pačula, labdanum, santalové drevo, kašmír, ambra, vanilka, mošus.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumovaná voda"
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "23d2e99f1a87060c3a68c9eb42569c5b2928b19fe30ce8e067f34d53643d2751",
+        "photoEvidence": {
+          "url": "https://www.leparfumlechic.sk/wp-content/uploads/2019/09/Rosso-Pompeiano-Agatho-Parfum.jpg",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "f036c051e507feaf76fd1a63b26fe33402fb9f0d7b47d1e6e6e2d30f50e611e4",
+          "checkedAt": "2026-11-11T19:37:30.616644+00:00",
+          "visualReview": "PERFUME_WORKER actually viewed source-product photo sheets; exact formula identities/bottles distinct, not size/set inflation."
+        }
+      }
+    },
+    {
+      "id": "divine",
+      "name": "Essential Parfums – Divine Vanille",
+      "url": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/",
+      "priceAmount": 98.0,
+      "price": "98 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Vanilka, škorica a tonka.",
+      "reason": "Vanilka, škorica a tonka.",
+      "photo": "/assets/s5/leparfumlechic/divine.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/",
+        "verifiedAt": "2026-11-11T19:31:42.083080+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": null,
+          "scope": "Official public WooCommerce instock CSS class and structured InStock, not buy-button or unit-count inference",
+          "publicProductId": "6790",
+          "structuredAvailability": [
+            "http://schema.org/InStock"
+          ],
+          "class": "instock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 98.0,
+          "currency": "EUR",
+          "exactProductId": "6790",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/",
+          "vatEvidence": "Merchant official terms explicitly final prices incl VAT. Product schema valueAddedTaxIncluded=false CONFLICT retained for MAIN review; no VAT rate/recalculation invented.",
+          "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+          "schemaVatFlags": [
+            "false"
+          ]
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/",
+          "publicProductId": "6790",
+          "scope": "Explicit ml statement in official product description; no ambiguous variable/from-price offer."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.leparfumlechic.sk/wp-content/uploads/2020/09/26-2.jpg",
+        "photoMeaning": "Official selected-product illustration; decorative props/box are not extra products or ingredient evidence.",
+        "scent": "Vanilka, škorica a tonka.",
+        "officialProductTitle": "Essential Parfums Divine Vanille",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "divine"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/",
+          "navigationLabel": "Vanilka, škorica a tonka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/",
+            "sourceText": "šalvia, škorica, čierne korenie, osmanthus, kadidlo, pomarose, vanilka, tonka, cédrové drevo, benzoin, mošus, pačula.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/",
+            "sourceText": "šalvia, škorica, čierne korenie, osmanthus, kadidlo, pomarose, vanilka, tonka, cédrové drevo, benzoin, mošus, pačula.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumovaná voda"
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "342f2a5b0cb827a594d2db384ad3567e4f474d383655de69c145563336f05063",
+        "photoEvidence": {
+          "url": "https://www.leparfumlechic.sk/wp-content/uploads/2020/09/26-2.jpg",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "0053dcd030a5dc446bd5952c0e0ef340850e2e706703256fc83a32c9f43d364b",
+          "checkedAt": "2026-11-11T19:37:30.617763+00:00",
+          "visualReview": "PERFUME_WORKER actually viewed source-product photo sheets; exact formula identities/bottles distinct, not size/set inflation."
+        }
+      }
+    },
+    {
+      "id": "phantom",
+      "name": "Kilian – Black Phantom",
+      "url": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/",
+      "priceAmount": 260.0,
+      "price": "260 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfumovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Rum, karamel a káva.",
+      "reason": "Rum, karamel a káva.",
+      "photo": "/assets/s5/leparfumlechic/phantom.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/",
+        "verifiedAt": "2026-11-11T19:17:52.518798+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": null,
+          "scope": "Official public WooCommerce instock CSS class and structured InStock, not buy-button or unit-count inference",
+          "publicProductId": "9855",
+          "structuredAvailability": [
+            "http://schema.org/InStock"
+          ],
+          "class": "instock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 260.0,
+          "currency": "EUR",
+          "exactProductId": "9855",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/",
+          "vatEvidence": "Merchant official terms explicitly final prices incl VAT. Product schema valueAddedTaxIncluded=false CONFLICT retained for MAIN review; no VAT rate/recalculation invented.",
+          "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+          "schemaVatFlags": [
+            "false"
+          ]
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/",
+          "publicProductId": "9855",
+          "scope": "Explicit ml statement in official product description; no ambiguous variable/from-price offer."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.leparfumlechic.sk/wp-content/uploads/2026/10/6b8570c8d5032248936e26dcdde411b9.jpg.webp",
+        "photoMeaning": "Official selected-product illustration; decorative props/box are not extra products or ingredient evidence.",
+        "scent": "Rum, karamel a káva.",
+        "officialProductTitle": "By Kilian Black Phantom – „Memento Mori“",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "phantom"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/",
+          "navigationLabel": "Rum, karamel a káva",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/",
+            "sourceText": "Vybrané vonné tóny uvedené v popise: rum, karamel, káva, cukrová trstina.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/",
+            "sourceText": "Vybrané vonné tóny uvedené v popise: rum, karamel, káva, cukrová trstina.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumovaná voda"
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "72c86bf3ffc1174807de9c77c4a1388d8e7674a4974ba54c1eccea6f902187ff",
+        "photoEvidence": {
+          "url": "https://www.leparfumlechic.sk/wp-content/uploads/2026/10/6b8570c8d5032248936e26dcdde411b9.jpg.webp",
+          "width": 922,
+          "height": 1048,
+          "sha256": "11ab720100e8fabf383c97399c98fc4bc62d469a716f387d6f1b001e124f9287",
+          "checkedAt": "2026-11-11T19:37:30.629405+00:00",
+          "visualReview": "PERFUME_WORKER actually viewed source-product photo sheets; exact formula identities/bottles distinct, not size/set inflation."
+        }
+      }
+    },
+    {
+      "id": "angels",
+      "name": "Kilian – Angels’ Share",
+      "url": "https://www.leparfumlechic.sk/product/by-kilian-angels-share/",
+      "priceAmount": 240.0,
+      "price": "240 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfumovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Koňak, škorica a dub.",
+      "reason": "Koňak, škorica a dub.",
+      "photo": "/assets/s5/leparfumlechic/angels.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.leparfumlechic.sk/product/by-kilian-angels-share/",
+        "verifiedAt": "2026-11-11T19:17:53.655378+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": null,
+          "scope": "Official public WooCommerce instock CSS class and structured InStock, not buy-button or unit-count inference",
+          "publicProductId": "9852",
+          "structuredAvailability": [
+            "http://schema.org/InStock"
+          ],
+          "class": "instock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 240.0,
+          "currency": "EUR",
+          "exactProductId": "9852",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/by-kilian-angels-share/",
+          "vatEvidence": "Merchant official terms explicitly final prices incl VAT. Product schema valueAddedTaxIncluded=false CONFLICT retained for MAIN review; no VAT rate/recalculation invented.",
+          "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+          "schemaVatFlags": [
+            "false"
+          ]
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/by-kilian-angels-share/",
+          "publicProductId": "9852",
+          "scope": "Explicit ml statement in official product description; no ambiguous variable/from-price offer."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.leparfumlechic.sk/wp-content/uploads/2026/10/4-kl_sku_N36E01_833x968_0.jpg",
+        "photoMeaning": "Official selected-product illustration; decorative props/box are not extra products or ingredient evidence.",
+        "scent": "Koňak, škorica a dub.",
+        "officialProductTitle": "By Kilian Angels‘ Share",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "angels"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-angels-share/",
+          "navigationLabel": "Koňak, škorica a dub",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/by-kilian-angels-share/",
+            "sourceText": "Vrchné tóny: koňak; Srdce: dub, škorica; Základ: fazuľa tonka, santalové drevo.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/by-kilian-angels-share/",
+            "sourceText": "Vrchné tóny: koňak; Srdce: dub, škorica; Základ: fazuľa tonka, santalové drevo.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumovaná voda"
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "8c1635d3bddee8ea206f958871c4c3f3bd06602a53a28b0497e269297eaeaee8",
+        "photoEvidence": {
+          "url": "https://www.leparfumlechic.sk/wp-content/uploads/2026/10/4-kl_sku_N36E01_833x968_0.jpg",
+          "width": 833,
+          "height": 968,
+          "sha256": "0ef56d78d73ad2ea6ffc19050281cf8c908c06cbc147b8b46cebc74e5dc9bcdc",
+          "checkedAt": "2026-11-11T19:37:30.634972+00:00",
+          "visualReview": "PERFUME_WORKER actually viewed source-product photo sheets; exact formula identities/bottles distinct, not size/set inflation."
+        }
+      }
+    },
+    {
+      "id": "bois",
+      "name": "Essential Parfums – Bois Impérial",
+      "url": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/",
+      "priceAmount": 98.0,
+      "price": "98 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Bazalka, timutské korenie a vetiver.",
+      "reason": "Bazalka, timutské korenie a vetiver.",
+      "photo": "/assets/s5/leparfumlechic/bois.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/",
+        "verifiedAt": "2026-11-11T19:31:42.078240+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": null,
+          "scope": "Official public WooCommerce instock CSS class and structured InStock, not buy-button or unit-count inference",
+          "publicProductId": "9071",
+          "structuredAvailability": [
+            "http://schema.org/InStock"
+          ],
+          "class": "instock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 98.0,
+          "currency": "EUR",
+          "exactProductId": "9071",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/",
+          "vatEvidence": "Merchant official terms explicitly final prices incl VAT. Product schema valueAddedTaxIncluded=false CONFLICT retained for MAIN review; no VAT rate/recalculation invented.",
+          "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+          "schemaVatFlags": [
+            "false"
+          ]
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/",
+          "publicProductId": "9071",
+          "scope": "Explicit ml statement in official product description; no ambiguous variable/from-price offer."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.leparfumlechic.sk/wp-content/uploads/2025/03/img_0004.jpeg",
+        "photoMeaning": "Official selected-product illustration; decorative props/box are not extra products or ingredient evidence.",
+        "scent": "Bazalka, timutské korenie a vetiver.",
+        "officialProductTitle": "Essential Parfums Bois Impérial",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "bois"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/",
+          "navigationLabel": "Bazalka, timutské korenie a vetiver",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/",
+            "sourceText": "Tóny podľa popisu: thajská bazalka, korenie Timut, vetiver, Georgywood (cédrové tóny), Petalia, Akigalawood, pačuli, Ambrofix.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/",
+            "sourceText": "Tóny podľa popisu: thajská bazalka, korenie Timut, vetiver, Georgywood (cédrové tóny), Petalia, Akigalawood, pačuli, Ambrofix.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumovaná voda"
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "f7810b8844ef6940adeafd56dd6cfd1f7f29a3eb4f759279bc22aaf4d8edf93b",
+        "photoEvidence": {
+          "url": "https://www.leparfumlechic.sk/wp-content/uploads/2025/03/img_0004.jpeg",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "ed9a11a0c3e40eb1d465425cb9cf35bc40e421e6b856fa17386944765a8fa37f",
+          "checkedAt": "2026-11-11T19:37:30.643117+00:00",
+          "visualReview": "PERFUME_WORKER actually viewed source-product photo sheets; exact formula identities/bottles distinct, not size/set inflation."
+        },
+        "upsellVariants": [
+          {
+            "id": "7985",
+            "parentProductId": "bois",
+            "name": "Essential Parfums – Bois Impérial",
+            "volume": "10 ml",
+            "priceAmount": 26,
+            "price": "26 €",
+            "currency": "EUR",
+            "url": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial-10ml/",
+            "available": true,
+            "sameFormula": true,
+            "variantSelectionRequired": false,
+            "photo": "/assets/s5/leparfumlechic/bois-10ml.webp",
+            "photoEvidence": {
+              "url": "https://www.leparfumlechic.sk/wp-content/uploads/2022/10/Bois-imperial-essential-parfums-10ml.jpg",
+              "selectedPack": "10 ml",
+              "checkedAt": "2026-11-11T19:31:42.070252+00:00",
+              "visualReview": "Actual original photograph visually inspected, packaging visibly10ML; distinct from parent100ml image."
+            },
+            "evidence": {
+              "scope": "WooCommerceProductPublicAvailability",
+              "sourceUrl": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial-10ml/",
+              "parentProductUrl": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/",
+              "sameCompositionTitle": "ESSENTIAL PARFUMS BOIS IMPERIAL 10ml",
+              "sameCompositionParentTitle": "Essential Parfums – Bois Impérial",
+              "exactVariantId": "7985",
+              "stock": "InStock",
+              "stockClass": "instock",
+              "availabilityUrl": "http://schema.org/InStock",
+              "checkedAt": "2026-11-11T19:31:42.070252+00:00",
+              "sourceSha256": "119e9a2e3d3557283f9f47ae191292f6deb91c410bfde0812609cc1469376cea",
+              "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+              "schemaVatFlags": [
+                "false"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "giardino",
+      "name": "Agatho – Giardinodiercole",
+      "url": "https://www.leparfumlechic.sk/product/agatho-parfum-giardinodiercole/",
+      "priceAmount": 341.0,
+      "price": "341 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Kadidlo, šafrán a cédrové drevo.",
+      "reason": "Kadidlo, šafrán a cédrové drevo.",
+      "photo": "/assets/s5/leparfumlechic/giardino.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.leparfumlechic.sk/product/agatho-parfum-giardinodiercole/",
+        "verifiedAt": "2026-11-11T19:17:56.055835+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": null,
+          "scope": "Official public WooCommerce instock CSS class and structured InStock, not buy-button or unit-count inference",
+          "publicProductId": "5824",
+          "structuredAvailability": [
+            "http://schema.org/InStock"
+          ],
+          "class": "instock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 341.0,
+          "currency": "EUR",
+          "exactProductId": "5824",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/agatho-parfum-giardinodiercole/",
+          "vatEvidence": "Merchant official terms explicitly final prices incl VAT. Product schema valueAddedTaxIncluded=false CONFLICT retained for MAIN review; no VAT rate/recalculation invented.",
+          "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+          "schemaVatFlags": [
+            "false"
+          ]
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/agatho-parfum-giardinodiercole/",
+          "publicProductId": "5824",
+          "scope": "Explicit ml statement in official product description; no ambiguous variable/from-price offer."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.leparfumlechic.sk/wp-content/uploads/2019/09/Giardino-di-Ercole-Agatho-Parfum.jpg",
+        "photoMeaning": "Official selected-product illustration; decorative props/box are not extra products or ingredient evidence.",
+        "scent": "Kadidlo, šafrán a cédrové drevo.",
+        "officialProductTitle": "Agatho Parfum Giardinodiercole",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "giardino"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.leparfumlechic.sk/product/agatho-parfum-giardinodiercole/",
+          "navigationLabel": "Kadidlo, šafrán a cédrové drevo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/agatho-parfum-giardinodiercole/",
+            "sourceText": "Hlava: bergamot, labdanum, levanduľa, rebarbora, borievky; Srdce: kadidlo, pimento, šafrán, čierne korenie, šalvia; Základ: pačula, santalové drevo, cédrové drevo, kašmeran, labdanum, ambra, mošus.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/agatho-parfum-giardinodiercole/",
+            "sourceText": "Hlava: bergamot, labdanum, levanduľa, rebarbora, borievky; Srdce: kadidlo, pimento, šafrán, čierne korenie, šalvia; Základ: pačula, santalové drevo, cédrové drevo, kašmeran, labdanum, ambra, mošus.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumovaná voda"
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "9dc8c67a944a0ac3ffbb02d3bc432995cae7b39e67926620b04a9ae058c594c3",
+        "photoEvidence": {
+          "url": "https://www.leparfumlechic.sk/wp-content/uploads/2019/09/Giardino-di-Ercole-Agatho-Parfum.jpg",
+          "width": 1024,
+          "height": 1024,
+          "sha256": "70dee3929e957f3b023f275bee19d0162843bc81af5183f1063a5861bb8b5607",
+          "checkedAt": "2026-11-11T19:37:30.672666+00:00",
+          "visualReview": "PERFUME_WORKER actually viewed source-product photo sheets; exact formula identities/bottles distinct, not size/set inflation."
+        }
+      }
+    },
+    {
+      "id": "afgano",
+      "name": "Nasomatto – Black Afgano",
+      "url": "https://www.leparfumlechic.sk/product/black-afgano/",
+      "priceAmount": 152.0,
+      "price": "152 €",
+      "currency": "EUR",
+      "volume": "30 ml",
+      "category": "fragrance",
+      "kind": "Parfumový extrakt",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Hašišový vonný akord.",
+      "reason": "Hašišový vonný akord.",
+      "photo": "/assets/s5/leparfumlechic/afgano.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.leparfumlechic.sk/product/black-afgano/",
+        "verifiedAt": "2026-11-11T19:19:59.498042+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": null,
+          "scope": "Official public WooCommerce instock CSS class and structured InStock, not buy-button or unit-count inference",
+          "publicProductId": "4392",
+          "structuredAvailability": [
+            "http://schema.org/InStock"
+          ],
+          "class": "instock"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 152.0,
+          "currency": "EUR",
+          "exactProductId": "4392",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/black-afgano/",
+          "vatEvidence": "Merchant official terms explicitly final prices incl VAT. Product schema valueAddedTaxIncluded=false CONFLICT retained for MAIN review; no VAT rate/recalculation invented.",
+          "vatSourceUrl": "https://www.leparfumlechic.sk/obchodne-podmienky/",
+          "schemaVatFlags": [
+            "false"
+          ]
+        },
+        "packEvidence": {
+          "pack": "30 ml",
+          "sourceUrl": "https://www.leparfumlechic.sk/product/black-afgano/",
+          "publicProductId": "4392",
+          "scope": "Explicit ml statement in official product description; no ambiguous variable/from-price offer."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.leparfumlechic.sk/wp-content/uploads/2018/09/Nasomatto-Product_BlackAfgano.jpg",
+        "photoMeaning": "Official selected-product illustration; decorative props/box are not extra products or ingredient evidence.",
+        "scent": "Hašišový vonný akord.",
+        "officialProductTitle": "Nasomatto Black Afgano",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "afgano"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.leparfumlechic.sk/product/black-afgano/",
+          "navigationLabel": "Hašišový vonný akord",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/black-afgano/",
+            "sourceText": "Vôňa hašišu podľa popisu e-shopu. Vonný profil, nie tvrdenie o chemických zložkách alebo účinkoch.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.leparfumlechic.sk/product/black-afgano/",
+            "sourceText": "Vôňa hašišu podľa popisu e-shopu. Vonný profil, nie tvrdenie o chemických zložkách alebo účinkoch.",
+            "scope": "Factual merchant-declared note passage/selected factual note list. Not ingredient analysis, intensity, occasion, health or manufacturer verification. Editorial navigation grouping is not an official family."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumový extrakt"
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "e156c6bde2ea7f1b4b477408d1a61c70dd7a5a9c0e1396a9aba9952d8bb0f00b",
+        "photoEvidence": {
+          "url": "https://www.leparfumlechic.sk/wp-content/uploads/2018/09/Nasomatto-Product_BlackAfgano.jpg",
+          "width": 500,
+          "height": 750,
+          "sha256": "e70c6883c3363aed4a73e6a758ecd14ff12fd03821985c691adab8ba3bc066ee",
+          "checkedAt": "2026-11-11T19:37:30.674277+00:00",
+          "visualReview": "PERFUME_WORKER actually viewed source-product photo sheets; exact formula identities/bottles distinct, not size/set inflation."
+        }
+      }
+    }
+  ],
+  "revenue": "UNKNOWN",
+  "size": "UNKNOWN",
+  "status": "LOCAL_QA_PASS_PENDING_MAIN_SOURCE_REVIEW_AND_LIVE_PREVIEW",
+  "notes": [
+    "12distinct formulas plus one additional10ml Bois pack, not13formulas.",
+    "Original title/prose mismatch Voulez-vous/DoYouLoveMe and1969description115ml/photo120ml excluded.",
+    "1969bodycare/mini kit explicitly OutOfStock; not offered as upsell.",
+    "Latest available official RPO search10Nov18:09Z, current refresh503/ZRSR503/detail404 retained, no current active-registry assertion.",
+    "Official terms say prices final inclVAT; schema false conflicting metadata remains MAIN_REVIEW; no recalculation/tax rate.",
+    "No occasion/intensity/health/longevity/cart/sales/interest guarantees; no budget question."
+  ]
+}

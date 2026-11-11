@@ -8,16 +8,24 @@
  if(window.CX_S5.fragranceExtrasInstalled)return;
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const cs=reg.brand.lang==='cs',t=(sk,cz)=>cs?cz:sk;
- const money=(n,c)=>new Intl.NumberFormat(cs?'cs-CZ':'sk-SK',{style:'currency',currency:c,minimumFractionDigits:c==='CZK'?0:2,maximumFractionDigits:2}).format(n);
+ const money=(n,c)=>new Intl.NumberFormat(cs?'cs-CZ':'sk-SK',{style:'currency',currency:c,minimumFractionDigits:Number.isInteger(n)?0:2,maximumFractionDigits:2}).format(n);
  const safeUrl=u=>{try{return /^https:$/.test(new URL(u).protocol);}catch{return false;}};
  const eligible=p=>p?.source?.series==='s5'&&p.category==='fragrance'&&p.available!==false&&Number.isFinite(p.priceAmount)&&safeUrl(p.url);
+ function exactPackSource(v,p){
+  if(!safeUrl(v.url)||new URL(v.url).origin!==new URL(p.url).origin)return false;
+  const knownStock=v.evidence?.isNotSoldOut===true||(
+   v.evidence?.scope==='WooCommerceProductPublicAvailability'&&v.evidence.stockClass==='instock'&&/\/InStock$/.test(v.evidence.availabilityUrl||''));
+  if(!knownStock)return false;
+  if(v.url===p.url)return v.variantSelectionRequired===true;
+  return v.variantSelectionRequired===false&&v.evidence?.parentProductUrl===p.url&&v.evidence.sourceUrl===v.url&&v.evidence.sameCompositionTitle&&v.evidence.sameCompositionParentTitle===p.name;
+ }
  function extraFor(p,answers){
   if(!eligible(p))return null;
-  return (p.source.upsellVariants||[]).find(v=>v.sameFormula===true&&v.parentProductId===p.id&&v.available===true&&v.currency===p.currency&&v.url===p.url&&v.variantSelectionRequired===true&&v.evidence?.exactVariantId&&v.evidence?.sourceSha256&&v.evidence?.stock==='Skladem'&&v.evidence?.isNotSoldOut===true&&v.volume!==p.volume&&Number.isFinite(v.priceAmount)&&v.priceAmount>0&&(!answers.budget||p.priceAmount+v.priceAmount<=Number(answers.budget)))||null;
+  return (p.source.upsellVariants||[]).find(v=>v.sameFormula===true&&v.parentProductId===p.id&&v.available===true&&v.currency===p.currency&&exactPackSource(v,p)&&v.evidence?.exactVariantId&&v.evidence?.sourceSha256&&['Skladem','Skladom','InStock'].includes(v.evidence?.stock)&&v.volume!==p.volume&&Number.isFinite(v.priceAmount)&&v.priceAmount>0&&(!answers.budget||p.priceAmount+v.priceAmount<=Number(answers.budget)))||null;
  }
  const sourceNotes=p=>p?.source?.fragrance?.notesEvidence?.sourceText||'';
  function pyramid(p){
-  const text=sourceNotes(p),m=text.match(/Hlava:\s*(.*?)\s*;?\s*Srdce:\s*(.*?)\s*;?\s*Základ:\s*([\s\S]*)/i);
+  const text=sourceNotes(p),m=text.match(/(?:Hlava|Vrchné tóny|Vrchní tóny):\s*(.*?)\s*;?\s*Srdce:\s*(.*?)\s*;?\s*Základ:\s*([\s\S]*)/i);
   if(!m)return '';
   return `<details class="fr-extra-notes"><summary>${t('Ako sa vôňa rozvíja','Jak se vůně rozvíjí')}</summary><dl>${m.slice(1).map((x,i)=>`<div><dt>${['Hlava','Srdce','Základ'][i]}</dt><dd>${esc(x.replace(/;\s*$/,'').trim())}</dd></div>`).join('')}</dl></details>`;
  }
@@ -30,12 +38,12 @@
   const view=document.createElement('template');view.innerHTML=result;
   view.content.querySelectorAll('.s5-profile').forEach(e=>e.remove());
   const primary=view.content.querySelector('.s5-product');primary?.setAttribute('data-fragrance-result','enhanced');
-  const description=primary?.querySelector('.s5-description');if(description)description.textContent=p.reason||p.source.scent||p.description;
+  const description=primary?.querySelector('.s5-description');if(description&&!p.isSample&&!p.source.identityDisclosure&&!/tester/i.test(p.volume||''))description.textContent=p.reason||p.source.scent||p.description;
   const total=view.content.querySelector('.s5-total');
   if(!primary||!total)return result;
   total.setAttribute('data-fragrance-selection',p.id);
   const extra=document.createElement('section');extra.className='fr-result-extras';extra.setAttribute('aria-label',t('Doplnenie výberu','Doplnění výběru'));
-  extra.innerHTML=pyramid(p)+(addon?`<section class="fr-extra-pack"><div class="fr-extra-kicker">${t('Dobrovoľne navyše','Dobrovolně navíc')}</div><label><input type="checkbox" data-fragrance-extra="${esc(p.id)}"><span><b>${t('Pridať aj','Přidat i')} ${esc(addon.volume)} ${t('balenie','balení')}</b><small>${esc(p.name)} · ${t('rovnaká vôňa','stejná vůně')}</small><strong>+ ${esc(addon.price)}</strong></span></label><a href="${esc(addon.url)}">${t('Pozrieť','Zobrazit')} ${esc(addon.volume)} ${t('na e-shope','na e-shopu')} →</a><small class="fr-extra-caveat">${t('Objem vyberte na e-shope. Výber nič nevkladá do košíka.','Objem vyberte na e-shopu. Výběr nic nevkládá do košíku.')}</small></section>`:'');
+  extra.innerHTML=pyramid(p)+(addon?`<section class="fr-extra-pack"><div class="fr-extra-kicker">${t('Dobrovoľne navyše','Dobrovolně navíc')}</div><label><input type="checkbox" data-fragrance-extra="${esc(p.id)}">${addon.photo?.startsWith("/assets/s5/"+slug+"/")&&addon.photoEvidence?.selectedPack===addon.volume?`<img class="fr-extra-pack-photo" src="${esc(addon.photo)}" alt="${esc(addon.name)} · ${esc(addon.volume)}">`:""}<span><b>${t('Pridať aj','Přidat i')} ${esc(addon.volume)} ${t('balenie','balení')}</b><small>${esc(p.name)} · ${t('rovnaká vôňa','stejná vůně')}</small><strong>+ ${esc(addon.price)}</strong></span></label><a href="${esc(addon.url)}">${t('Pozrieť','Zobrazit')} ${esc(addon.volume)} ${t('na e-shope','na e-shopu')} →</a><small class="fr-extra-caveat">${addon.variantSelectionRequired?t('Objem vyberte na e-shope. Výber nič nevkladá do košíka.','Objem vyberte na e-shopu. Výběr nic nevkládá do košíku.'):t('Odkaz vedie priamo na menšie balenie. Výber nič nevkladá do košíka.','Odkaz vede přímo na menší balení. Výběr nic nevkládá do košíku.')}</small></section>`:'');
   total.before(extra);
   if(alt){
    const related=document.createElement('section');related.className='fr-extra-related';related.innerHTML=`<h3>${t('Ďalšia vôňa na porovnanie','Další vůně na porovnání')}</h3><div class="fr-related-card" data-fragrance-alternative="${esc(alt.id)}"><img src="${esc(alt.photo)}" alt="${esc(alt.name)}"><div><b>${esc(alt.name)}</b><small>${esc(alt.volume)} · <strong>${esc(alt.price)}</strong></small><p>${esc(alt.source.scent||alt.reason)}</p><a href="${esc(alt.url)}">${t('Pozrieť vôňu','Zobrazit vůni')} →</a></div></div><details class="fr-extra-compare"><summary>${t('Porovnať tieto dve vône','Porovnat tyto dvě vůně')}</summary><div class="fr-compare-cols">${[p,alt].map(x=>`<article data-fragrance-compare-id="${esc(x.id)}"><b>${esc(x.name)}</b><small>${esc(x.volume)} · ${esc(x.price)}</small><p>${esc(x.source.scent||x.reason)}</p><a href="${esc(x.url)}">${t('Pozrieť produkt','Zobrazit produkt')} →</a></article>`).join('')}</div></details><small class="fr-extra-caveat">${t('Samostatná alternatíva. Nie je započítaná do výberu.','Samostatná alternativa. Není započítaná do výběru.')}</small>`;

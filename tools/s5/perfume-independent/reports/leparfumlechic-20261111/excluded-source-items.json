@@ -1,0 +1,28 @@
+{
+  "excluded": [
+    {
+      "url": "https://www.leparfumlechic.sk/product/by-kilian-voulez-vous-coucher-avec-moi/",
+      "reason": "Heading/photograph Voulez-vous but description DoYouLoveMe; identity mismatch."
+    },
+    {
+      "url": "https://www.leparfumlechic.sk/product/histoires-de-parfums-1969/",
+      "reason": "Description115ml vs actual visibly120ML photo, pack mismatch."
+    },
+    {
+      "url": "https://www.leparfumlechic.sk/product/agatho-adone/",
+      "reason": "Official CSS outofstock + structured OutOfStock."
+    },
+    {
+      "url": "https://www.leparfumlechic.sk/product/1969-body-lotion-telovy-krem/",
+      "reason": "Official product CSS outofstock + structured OutOfStock; never an upsell."
+    },
+    {
+      "url": "https://www.leparfumlechic.sk/product/1969-shower-gel-sprchovy-gel/",
+      "reason": "Official product CSS outofstock + structured OutOfStock; never an upsell."
+    },
+    {
+      "url": "https://www.leparfumlechic.sk/product/1969-shower-gel-body-lotion-cestovne-balenie/",
+      "reason": "Official product CSS outofstock + structured OutOfStock; never an upsell."
+    }
+  ]
+}
