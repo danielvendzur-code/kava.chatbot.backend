@@ -1,0 +1,27 @@
+{
+  "base": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Local Chromium QA of a temporary integration. Both catalogues and all assets are copied from n447/s5/sources/<slug>/draft to the corresponding runtime paths for the test. Apply runtime.patch to the working tree only when ready to integrate.",
+  "widths": [
+    320,
+    390,
+    1280
+  ],
+  "furiosa": {
+    "results": 30,
+    "alternatePackChecks": 21,
+    "backendMockAnswers": 3
+  },
+  "scentium": {
+    "results": 36,
+    "alternatePackChecks": 18,
+    "backendMockAnswers": 3
+  },
+  "checks": [
+    "Exact available pack, price, image and product link",
+    "No horizontal overflow",
+    "Four 40 px chips and photo comparison at each width",
+    "Unavailable alternatives excluded"
+  ],
+  "paidModelCalls": 0,
+  "livePreview": false
+}
