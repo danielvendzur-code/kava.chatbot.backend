@@ -1,0 +1,1765 @@
+{
+  "scope": "Official HTTPS HTML exact embedded Shoptet variant and label mapping after reservation. Merchant stock statements, not a cart verification. One2ml sample per distinct formula.",
+  "claimCommit": "d0be27da162949b45960ae76085e8f2f527fe356",
+  "paidModelCalls": 0,
+  "companies": {
+    "essentique": [
+      {
+        "id": "bois-imperial",
+        "url": "https://www.essentique.sk/bois-imperial/",
+        "checkedAt": "2026-11-11T06:44:11.691510+00:00",
+        "status": 200,
+        "finalUrl": "https://www.essentique.sk/bois-imperial/",
+        "name": "Bois Imperial",
+        "priceAmount": 7,
+        "priceDisplay": "€7",
+        "currency": "EUR",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladom",
+        "variantKey": "17-14",
+        "variantId": 50,
+        "variantCode": "47/2ML",
+        "variantOptionValue": "14",
+        "merchantVariantParameter": "17",
+        "canonicalUrl": "https://www.essentique.sk/bois-imperial/",
+        "sourceSha256": "b2b33b4891cde0cc3d9575514215bf04d4a1dd6ab52a9a3847659e8037df1a06",
+        "shortDescription": "Essential Parfums Bois Impérial je ostrá drevitá vôňa so zeleným, korenistým pulzom. Pôsobí čisto, moderne a sebavedomo bez zbytočnej sladkosti.",
+        "description": "Podrobný popis Bois Impérial od Essential Parfums je vôňa s jasným, vzdušným drevitým charakterom. Nepôsobí ťažko ani klasicky hrejivo; skôr pripomína hladké, suché drevo s chladnejším zeleným okrajom a pikantnou iskrou. Jej sila je v kontraste medzi čistotou, korenistou sviežosťou a modernou drevitou stopou. Vôňa má elegantný, upravený dojem, ktorý sa hodí na denné nosenie aj do práce, no stále má dosť osobitosti, aby nepôsobila obyčajne. Bois Impérial sadne najmä tým, ktorí hľadajú výraznú, ale nositeľnú niche vôňu bez sladkého základu. Je priamočiara, sebavedomá a veľmi ľahko zapamätateľná.",
+        "parameters": {
+          "Kategória": "Niche",
+          "Typ vône": "Drevitá, Aromatická, Korenistá",
+          "Výdrž": "Dlhá (6–10h)",
+          "Príležitosť": "Denná, Večer",
+          "Pohlavie": "Unisex",
+          "Ročné obdobie": "Celoročná",
+          "Koncentrácia": "Eau de Parfum",
+          "Hlava": "Thajská bazalka, Nepalské Timut korenie",
+          "Srdce": "Haitský vetiver, Pačuli, Petalia",
+          "Základ": "Akigalawood, Ambrofix, Georgywood",
+          "Výdrž (1-10)": "9",
+          "Sillage (1-10)": "8",
+          "Rok vydania": "2020",
+          "Parfumér": "Quentin Bisch"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/47-2_chatgpt-image-jul-15--2026--09-12-32-pm.png?ff=1&x=1024&y=768&q=85&ts=6a57dba9&sg=161563f2",
+        "descriptionImages": [],
+        "otherVariants": [
+          {
+            "key": "17-14",
+            "id": 50,
+            "code": "47/2ML",
+            "price": 7,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-17",
+            "id": 53,
+            "code": "47/3ML",
+            "price": 9,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-20",
+            "id": 56,
+            "code": "47/5ML",
+            "price": 14,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-23",
+            "id": 59,
+            "code": "47/10M",
+            "price": 25,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-24",
+            "id": 321,
+            "code": "47/20M",
+            "price": 43,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-163",
+            "id": 1066,
+            "code": "47/30M",
+            "price": 57,
+            "stock": "Skladom",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "ganymede",
+        "url": "https://www.essentique.sk/ganymede/",
+        "checkedAt": "2026-11-11T06:44:11.694263+00:00",
+        "status": 200,
+        "finalUrl": "https://www.essentique.sk/ganymede/",
+        "name": "Ganymede",
+        "priceAmount": 12,
+        "priceDisplay": "€12",
+        "currency": "EUR",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladom",
+        "variantKey": "17-14",
+        "variantId": 1193,
+        "variantCode": "239/2ML",
+        "variantOptionValue": "14",
+        "merchantVariantParameter": "17",
+        "canonicalUrl": "https://www.essentique.sk/ganymede/",
+        "sourceSha256": "828cb606427d6324b0ec9cf38911f16d95ae3a22eb790046be0055fadcf33a5f",
+        "shortDescription": "Marc-Antoine Barrois Ganymede je minerálne-drevitá vôňa so šafranom, mandarínkou a hladkým semišom. Pôsobí chladne, čisto a futuristicky, no stále elegantne.",
+        "description": "Podrobný popis Ganymede od Marc-Antoine Barrois je vôňa s veľmi moderným, takmer kovovo-minerálnym charakterom. Nepôsobí klasicky sviežo ani tradične drevito – skôr ako hladký materiál, čistý vzduch a jemne slaná koža na teplej pokožke. Mandarínka jej dodáva jas, šafran a slamienka zvláštnu suchú hrejivosť, zatiaľ čo semišový a minerálny dojem ju posúvajú do netypickej, futuristickej elegancie. Je to parfum, ktorý nevonia bežne a môže pôsobiť až návykovo neuchopiteľne. Sadne najmä tým, ktorí hľadajú výrazný niche podpis mimo sladkých, citrusových alebo klasicky ambrových vôní. Ganymede je čistý, zvláštny, uhladený a veľmi zapamätateľný.",
+        "parameters": {
+          "Kategória": "Niche",
+          "Typ vône": "Drevitá, Korenistá, Minerálna",
+          "Výdrž": "Extrémna (10+ h)",
+          "Príležitosť": "Špeciálne príležitosti, Večer",
+          "Pohlavie": "Unisex",
+          "Ročné obdobie": "Celoročná",
+          "Koncentrácia": "Eau de Parfum",
+          "Hlava": "Šafran, talianska mandarínka",
+          "Srdce": "Čínsky osmanthus, slamienka (Immortelle), list fialky",
+          "Základ": "Minerálne tóny, semiš, Akigalawood, céder, pižmo, pačuli",
+          "Výdrž (1-10)": "10",
+          "Sillage (1-10)": "8",
+          "Rok vydania": "2019",
+          "Parfumér": "Quentin Bisch"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/239_vyr-5832203-marc-antoine-barrois-ganymede-100ml-o-kopia.jpg?ff=1&x=1024&y=768&q=85&ts=6a494105&sg=161563f2",
+        "descriptionImages": [],
+        "otherVariants": [
+          {
+            "key": "17-14",
+            "id": 1193,
+            "code": "239/2ML",
+            "price": 12,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-17",
+            "id": 1196,
+            "code": "239/3ML",
+            "price": 17,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-20",
+            "id": 1199,
+            "code": "239/5ML",
+            "price": 26,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-23",
+            "id": 1202,
+            "code": "239/10M",
+            "price": 49,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-24",
+            "id": 1205,
+            "code": "239/20M",
+            "price": 92,
+            "stock": "Skladom",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "guidance",
+        "url": "https://www.essentique.sk/guidance/",
+        "checkedAt": "2026-11-11T06:44:11.699314+00:00",
+        "status": 200,
+        "finalUrl": "https://www.essentique.sk/guidance/",
+        "name": "Guidance",
+        "priceAmount": 17,
+        "priceDisplay": "€17",
+        "currency": "EUR",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladom",
+        "variantKey": "17-14",
+        "variantId": 979,
+        "variantCode": "211/2ML",
+        "variantOptionValue": "14",
+        "merchantVariantParameter": "17",
+        "canonicalUrl": "https://www.essentique.sk/guidance/",
+        "sourceSha256": "92b95cd7d40f3c0685431d0def5aa6ff178183de5c3ea6aee62c6b328b92fcde",
+        "shortDescription": "Amouage Guidance je hrejivá ovocno-kvetinová vôňa s hruškou, kadidlom a krémovým drevitým základom. Pôsobí mäkko, zmyselne a elegantne netradične.",
+        "description": "Podrobný popis Guidance od Amouage je vôňa s bohatou, krémovou a mierne tajomnou náladou. Úvod pôsobí šťavnato a hebko – hruška s lieskovým orechom vytvára jemne sladký dojem, ktorý kadidlo hneď posúva do dospelejšej, menej prvoplánovej polohy. V srdci sa objaví kvetinová vrstva s ružou, jazmínom a osmanthusom. Nepôsobí ako ľahká kvetinová vôňa; je skôr oblá, teplá a zamatová, s jemne korenistým šafranovým napätím. Základ je hladký, drevitý a ambrovo-vanilkový. Guidance sadne tým, ktorí hľadajú výraznú niche vôňu s ženskou mäkkosťou, no nechcú nič príliš jednoduché ani bežne sladké.",
+        "parameters": {
+          "Kategória": "Niche",
+          "Typ vône": "Orientálna, Kvetinová, Ambrová",
+          "Výdrž": "Dlhá (6–10h)",
+          "Príležitosť": "Denná, Večer",
+          "Pohlavie": "Unisex",
+          "Ročné obdobie": "Celoročná",
+          "Koncentrácia": "Eau de Parfum",
+          "Hlava": "Hruška, Kadidlo, Lieskový orech, Ružová voda, Ružové korenie",
+          "Srdce": "Šafran, Ruža, Jazmín Sambac, Osmanthus",
+          "Základ": "Santalové drevo, Akigalawood, Vanilka, Ambra, Labdanum",
+          "Výdrž (1-10)": "9",
+          "Sillage (1-10)": "9",
+          "Rok vydania": "2023",
+          "Parfumér": "Quentin Bisch"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/211_amouage-guidance-woman-eau-de-parfum-100-ml-2674-127-0100-1.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8df&sg=161563f2",
+        "descriptionImages": [],
+        "otherVariants": [
+          {
+            "key": "17-14",
+            "id": 979,
+            "code": "211/2ML",
+            "price": 17,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-17",
+            "id": 982,
+            "code": "211/3ML",
+            "price": 23,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-20",
+            "id": 985,
+            "code": "211/5ML",
+            "price": 36,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-23",
+            "id": 988,
+            "code": "211/10M",
+            "price": 65,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-24",
+            "id": 991,
+            "code": "211/20M",
+            "price": 107,
+            "stock": "Skladom",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "angels-share",
+        "url": "https://www.essentique.sk/angels-share/",
+        "checkedAt": "2026-11-11T06:44:11.700943+00:00",
+        "status": 200,
+        "finalUrl": "https://www.essentique.sk/angels-share/",
+        "name": "Angels’ Share",
+        "priceAmount": 15,
+        "priceDisplay": "€15",
+        "currency": "EUR",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladom",
+        "variantKey": "17-14",
+        "variantId": 540,
+        "variantCode": "138/2ML",
+        "variantOptionValue": "14",
+        "merchantVariantParameter": "17",
+        "canonicalUrl": "https://www.essentique.sk/angels-share/",
+        "sourceSha256": "bd59c6f1beccc94fb52722e427fab96394900a945f887b65fa356fdc03078263",
+        "shortDescription": "Angels’ Share je ikonická gurmánska vôňa plná tepla, sladkosti a luxusu. Otvára sa bohatým tónom cognacu, ktorý sa mieša so škoricou, tonkou a jemným dubovým akordom. V základe sa rozvíja krémová vanilka, praliné a hladké santalové drevo, ktoré vytvárajú zmyselnú, hrejivú a návykovú stopu. Dokonalá vôňa pre milovníkov sladkých, boozy a elegantných kompozícií.",
+        "description": "Podrobný popis Kilian Angels’ Share pôsobí hrejivo, hladko a gurmánsky, no nie prvoplánovo sladko. Koňakový úvod má tmavší, jantárový charakter a postupne sa mieša s korenistou škoricou, drevom a mäkkou tonka fazuľou. Vôňa má atmosféru elegantného večera – je zamatová, mierne opulentná a zanecháva dojem sladkého likéru, vanilky a dreveného dozvuku. Nepôsobí ľahko ani športovo; skôr sadne tým, ktorí hľadajú výraznejší parfum s teplým, zvodným charakterom. Najlepšie vynikne večer a pri špeciálnych príležitostiach, najmä v chladnejšom období, keď jej sladko-korenistá hĺbka pôsobí najprirodzenejšie.",
+        "parameters": {
+          "Kategória": "Niche",
+          "Typ vône": "Orientálna, Gurmánska, Korenistá",
+          "Výdrž": "Dlhá (6–10h)",
+          "Príležitosť": "Špeciálne príležitosti, Večer",
+          "Pohlavie": "Unisex",
+          "Ročné obdobie": "Jeseň, Zima",
+          "Koncentrácia": "Eau de Parfum",
+          "Hlava": "Koňak",
+          "Srdce": "Škorica, Fazuľa Tonka, Dub, Hedione",
+          "Základ": "Vanilka, Praliné, Santalové drevo, Kandizované mandle",
+          "Výdrž (1-10)": "9",
+          "Sillage (1-10)": "8",
+          "Rok vydania": "2020",
+          "Parfumér": "Benoist Lapouza"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/138_angels--share--objem-10ml.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8de&sg=161563f2",
+        "descriptionImages": [],
+        "otherVariants": [
+          {
+            "key": "17-14",
+            "id": 540,
+            "code": "138/2ML",
+            "price": 15,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-17",
+            "id": 543,
+            "code": "138/3ML",
+            "price": 20,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-20",
+            "id": 546,
+            "code": "138/5ML",
+            "price": 31,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-23",
+            "id": 549,
+            "code": "138/10M",
+            "price": 55,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-24",
+            "id": 1075,
+            "code": "138/20M",
+            "price": 111,
+            "stock": "Skladom",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "delina-exclusif",
+        "url": "https://www.essentique.sk/delina-exclusif/",
+        "checkedAt": "2026-11-11T06:44:13.824468+00:00",
+        "status": 200,
+        "finalUrl": "https://www.essentique.sk/delina-exclusif/",
+        "name": "Delina Exclusif",
+        "priceAmount": 15,
+        "priceDisplay": "€15",
+        "currency": "EUR",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladom",
+        "variantKey": "17-14",
+        "variantId": 1232,
+        "variantCode": "245/2ML",
+        "variantOptionValue": "14",
+        "merchantVariantParameter": "17",
+        "canonicalUrl": "https://www.essentique.sk/delina-exclusif/",
+        "sourceSha256": "6abfaea9b26cded5fc20b7fc6b02d12e99d5b8de75340c5493c5cafea86ead2e",
+        "shortDescription": "Parfums de Marly Delina Exclusif je sýta ružová vôňa s ovocnou iskrou, krémovou sladkosťou a dymovým tieňom kadidla. Pôsobí žensky, opulentne a sebavedomo.",
+        "description": "Podrobný popis Delina Exclusif od Parfums de Marly pôsobí ako ruža po zotmení – sýta, zamatová a zahalená do sladkého ovocného lesku. Úvod je šťavnatý a iskrivý, no vôňa sa rýchlo zaoblí do krémovej, púdrovej podoby s jemne dymovým tieňom. Je výrazne ženská, uhladená a zmyselná, bez ľahkosti bežnej dennej ruže. Sladkosť nepôsobí cukríkovo; skôr pripomína ružový dezert podávaný v elegantnom salóne, kde vanilkové teplo vyvažuje tmavšia drevitá hĺbka. Najlepšie vynikne večer a počas chladnejších dní, keď sa jej bohatý charakter rozvinie naplno. Sadne najmä žene, ktorá má rada nápadné ružové vône a hľadá parfum pre slávnostný outfit aj sebavedomú náladu.",
+        "parameters": {
+          "Kategória": "Niche",
+          "Typ vône": "Kvetinová, Ovocná, Ambrová",
+          "Výdrž": "Extrémna (10+ h)",
+          "Príležitosť": "Špeciálne príležitosti, Večer",
+          "Pohlavie": "Dámska",
+          "Ročné obdobie": "Jeseň, Zima",
+          "Koncentrácia": "Parfum",
+          "Hlava": "Liči, hruška, bergamot, ružové korenie, grapefruit",
+          "Srdce": "Turecká ruža, oud, kadidlo",
+          "Základ": "Vanilka, ambra, drevité tóny, pižmo, vetiver, Evernyl",
+          "Výdrž (1-10)": "10",
+          "Sillage (1-10)": "8",
+          "Rok vydania": "2018",
+          "Parfumér": "Quentin Bisch"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/245_parfums-de-marly-delina-exclusiv-75ml-edp-od-konju9-stav-balenia-originalne.jpg?ff=1&x=1024&y=768&q=85&ts=6a5e3c26&sg=161563f2",
+        "descriptionImages": [],
+        "otherVariants": [
+          {
+            "key": "17-14",
+            "id": 1232,
+            "code": "245/2ML",
+            "price": 15,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-17",
+            "id": 1235,
+            "code": "245/3ML",
+            "price": 21,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-20",
+            "id": 1238,
+            "code": "245/5ML",
+            "price": 31,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-23",
+            "id": 1241,
+            "code": "245/10M",
+            "price": 56,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-24",
+            "id": 1244,
+            "code": "245/20M",
+            "price": 100,
+            "stock": "Skladom",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "not-a-perfume",
+        "url": "https://www.essentique.sk/not-a-perfume/",
+        "checkedAt": "2026-11-11T06:44:13.902668+00:00",
+        "status": 200,
+        "finalUrl": "https://www.essentique.sk/not-a-perfume/",
+        "name": "Not a Perfume",
+        "priceAmount": 6,
+        "priceDisplay": "€6",
+        "currency": "EUR",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladom",
+        "variantKey": "17-14",
+        "variantId": 80,
+        "variantCode": "53/2ML",
+        "variantOptionValue": "14",
+        "merchantVariantParameter": "17",
+        "canonicalUrl": "https://www.essentique.sk/not-a-perfume/",
+        "sourceSha256": "0bf2058a52b2e7a73f3395d57d936c1d0ea17e54a809460696c5d46cb08f57ed",
+        "shortDescription": "Juliette Has A Gun Not a Perfume je čistá pižmovo-ambrová vôňa postavená na Cetaloxe. Pôsobí minimalisticky, mäkko a veľmi osobne – ako vôňa čistej pokožky.",
+        "description": "Podrobný popis Not a Perfume od Juliette Has A Gun je vôňa pre tých, ktorí nehľadajú klasický parfumový oblak, ale skôr čistý, moderný podpis na pokožke. Je minimalistická, priesvitná a mení sa podľa toho, ako sa spojí s prirodzenou vôňou tela. Jej charakter je drevito-pižmový, jemne ambrový a uhladený. Nepôsobí sladko, kvetinovo ani ťažko; skôr ako čistá košeľa, teplá pokožka a nenápadná elegancia. Práve v tejto jednoduchosti je jej sila. Not a Perfume sadne tým, ktorí chcú vôňu na každý deň, do práce alebo ako tichý základ na vrstvenie s inými parfumami. Je decentná, moderná a veľmi ľahko nositeľná.",
+        "parameters": {
+          "Kategória": "Niche",
+          "Typ vône": "Pižmová",
+          "Výdrž": "Stredná (4–6h)",
+          "Príležitosť": "Denná",
+          "Pohlavie": "Unisex",
+          "Ročné obdobie": "Celoročná",
+          "Koncentrácia": "Eau de Parfum",
+          "Hlava": "Cetalox (Ambroxan)",
+          "Srdce": "Cetalox",
+          "Základ": "Cetalox – drevité, pižmové, pižmové",
+          "Výdrž (1-10)": "5",
+          "Sillage (1-10)": "4",
+          "Rok vydania": "2010",
+          "Parfumér": "Romano Ricci"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/53-1_juliette-has-a-gun-not-a-perfume-edp-1458013120190621140030.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8e0&sg=161563f2",
+        "descriptionImages": [],
+        "otherVariants": [
+          {
+            "key": "17-14",
+            "id": 80,
+            "code": "53/2ML",
+            "price": 6,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-17",
+            "id": 83,
+            "code": "53/3ML",
+            "price": 8,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-20",
+            "id": 86,
+            "code": "53/5ML",
+            "price": 12,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-23",
+            "id": 89,
+            "code": "53/10M",
+            "price": 21,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-24",
+            "id": 345,
+            "code": "53/20M",
+            "price": 37,
+            "stock": "Skladom",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "the-ghost-in-the-shell",
+        "url": "https://www.essentique.sk/the-ghost-in-the-shell/",
+        "checkedAt": "2026-11-11T06:44:14.027733+00:00",
+        "status": 200,
+        "finalUrl": "https://www.essentique.sk/the-ghost-in-the-shell/",
+        "name": "The Ghost In The Shell",
+        "priceAmount": 7,
+        "priceDisplay": "€7",
+        "currency": "EUR",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladom",
+        "variantKey": "17-14",
+        "variantId": 1304,
+        "variantCode": "257/2ML",
+        "variantOptionValue": "14",
+        "merchantVariantParameter": "17",
+        "canonicalUrl": "https://www.essentique.sk/the-ghost-in-the-shell/",
+        "sourceSha256": "d7f47af54a10d1b37f0d593c203cc1c982025651f7553fc9cb5992df50c6fc10",
+        "shortDescription": "Etat Libre d'Orange The Ghost In The Shell je futuristická vôňa, ktorá prepája svieže citrusové akordy s krémovým efektom čistej pokožky. Pôsobí minimalisticky, moderne a zároveň nečakane príťažlivo.",
+        "description": "Podrobný popis The Ghost In The Shell od Etat Libre d'Orange prináša originálnu interpretáciu spojenia človeka a technológií prostredníctvom parfumu. Svieži yuzu a moderné aromatické molekuly vytvárajú čistý úvod, ktorý sa postupne mení na jemný mliečny akord a hebký jazmín. Celá kompozícia pôsobí hladko, vzdušne a neobyčajne súčasne. V závere sa rozvíjajú drevité a machové tóny doplnené modernými syntetickými molekulami, ktoré vôni dodávajú jedinečný charakter. Je vhodná pre tých, ktorí hľadajú nekonvenčný parfum s čistým, elegantným prejavom a radi objavujú vône, ktoré sa vymykajú tradičným kategóriám. Výborne sa nosí počas dňa a zaujme svojou nenápadnou originalitou.",
+        "parameters": {
+          "Kategória": "Niche",
+          "Typ vône": "Kvetinová, Pižmová, Citrusová",
+          "Výdrž": "Dlhá (6–10h)",
+          "Príležitosť": "Každý deň",
+          "Pohlavie": "Unisex",
+          "Ročné obdobie": "Celoročná",
+          "Koncentrácia": "Eau de Parfum",
+          "Hlava": "Aqual™, Yuzu, Hexyl Acetate",
+          "Srdce": "Mliečny akord, Akord pokožky, Jazmín, Mugane™",
+          "Základ": "Machový akord, Vinyl Guaiacol, Orcanox™",
+          "Výdrž (1-10)": "8",
+          "Sillage (1-10)": "5",
+          "Rok vydania": "2021"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/257_f15af902-f57a-5562-8b15-44fbdffc0a25.jpg?ff=1&x=1024&y=768&q=85&ts=6a68b22d&sg=161563f2",
+        "descriptionImages": [],
+        "otherVariants": [
+          {
+            "key": "17-14",
+            "id": 1304,
+            "code": "257/2ML",
+            "price": 7,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-17",
+            "id": 1307,
+            "code": "257/3ML",
+            "price": 9,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-20",
+            "id": 1310,
+            "code": "257/5ML",
+            "price": 14,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-23",
+            "id": 1313,
+            "code": "257/10M",
+            "price": 25,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-24",
+            "id": 1316,
+            "code": "257/20M",
+            "price": 47,
+            "stock": "Skladom",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "orange-x-santal",
+        "url": "https://www.essentique.sk/orange-x-santal/",
+        "checkedAt": "2026-11-11T06:44:14.028994+00:00",
+        "status": 200,
+        "finalUrl": "https://www.essentique.sk/orange-x-santal/",
+        "name": "Orange X Santal",
+        "priceAmount": 7,
+        "priceDisplay": "€7",
+        "currency": "EUR",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladom",
+        "variantKey": "17-14",
+        "variantId": 1738,
+        "variantCode": "331/2ML",
+        "variantOptionValue": "14",
+        "merchantVariantParameter": "17",
+        "canonicalUrl": "https://www.essentique.sk/orange-x-santal/",
+        "sourceSha256": "5754a743ae12dedb2f5b75187f12540cff6fc5f893187fc57362c3128599fc3b",
+        "shortDescription": "Essential Parfums Orange X Santal spája iskrivý horký pomaranč s krémovým austrálskym santalovým drevom a zelenými tónmi. Svieža, čistá vôňa s pokojne drevitým dozvukom.",
+        "description": "Podrobný popis Orange X Santal od Essential Parfums otvára svieži, mierne horký pomaranč. Jeho citrusová iskra nepôsobí presladene a postupne sa zjemňuje do hladkého, krémového santalu. Bazalka, cyprus a dubový mach dodávajú kompozícii zelený, aromatický charakter. Výsledkom je čistá citrusovo-drevitá vôňa, ktorá pôsobí uvoľnene a prirodzene. Hodí sa na bežné denné nosenie, najmä keď hľadáš sviežosť s jemne hrejivým drevitým pozadím. Vytvorila ju parfumérka Natalie Gracia-Cetto; ide o unisex parfumovanú vodu.",
+        "parameters": {
+          "Kategória": "Parfémy",
+          "Typ vône": "Drevitá, Aromatická, Citrusová",
+          "Výdrž": "Stredná (4–6h)",
+          "Príležitosť": "Každý deň",
+          "Pohlavie": "Unisex",
+          "Ročné obdobie": "Jar, Leto",
+          "Koncentrácia": "Eau de Parfum",
+          "Hlava": "Horký pomaranč, taliansky pomaranč",
+          "Srdce": "Bazalka",
+          "Základ": "Austrálske santalové drevo, cyprus, dubový mach",
+          "Výdrž (1-10)": "6",
+          "Sillage (1-10)": "5",
+          "Rok vydania": "2018",
+          "Parfumér": "Natalie Gracia-Cetto"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/331_parfum-100ml-orangexsantal-01.webp?ff=1&x=1024&y=768&q=85&ts=6ace3ffb&sg=161563f2",
+        "descriptionImages": [],
+        "otherVariants": [
+          {
+            "key": "17-14",
+            "id": 1738,
+            "code": "331/2ML",
+            "price": 7,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-17",
+            "id": 1741,
+            "code": "331/3ML",
+            "price": 9,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-20",
+            "id": 1744,
+            "code": "331/5ML",
+            "price": 14,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-23",
+            "id": 1747,
+            "code": "331/10M",
+            "price": 25,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-24",
+            "id": 1750,
+            "code": "331/20M",
+            "price": 43,
+            "stock": "Skladom",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "hundred-silent-ways",
+        "url": "https://www.essentique.sk/hundred-silent-ways/",
+        "checkedAt": "2026-11-11T06:44:14.661689+00:00",
+        "status": 200,
+        "finalUrl": "https://www.essentique.sk/hundred-silent-ways/",
+        "name": "Hundred Silent Ways",
+        "priceAmount": 10,
+        "priceDisplay": "€10",
+        "currency": "EUR",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladom",
+        "variantKey": "17-14",
+        "variantId": 835,
+        "variantCode": "187/2ML",
+        "variantOptionValue": "14",
+        "merchantVariantParameter": "17",
+        "canonicalUrl": "https://www.essentique.sk/hundred-silent-ways/",
+        "sourceSha256": "4c4c8a1711665a1c9570b32ecf75b1ddaea6a845e1188dbeb29425e933b2aab1",
+        "shortDescription": "Nishane Hundred Silent Ways je krémová bielo-kvetinová vôňa s broskyňou, tuberózou a mäkkou vanilkou. Pôsobí hladko, nežne sladko a elegantne zvodne.",
+        "description": "Podrobný popis Hundred Silent Ways od Nishane pôsobí ako hebký závoj bielych kvetov, sladkého ovocia a krémovej vanilky. Úvod je jasný a príjemne šťavnatý, no rýchlo sa zaoblí do mäkkej, ženskejšie ladenej kvetinovej polohy. Tuberóza, jazmín a gardénia vytvárajú hladký, zamatový dojem bez ostrej zelenej hrany. Vôňa má sladkosť, ale nie je detská; vanilka so santalovým drevom jej dodáva teplo, jemnosť a upravený, príťažlivý dozvuk. Sadne tým, ktorí hľadajú elegantnú kvetinovo-gurmánsku vôňu s príjemnou krémovosťou a čistým, mäkkým podpisom. Hundred Silent Ways je uhladená, zmyselná a veľmi ľahko obľúbiteľná.",
+        "parameters": {
+          "Kategória": "Parfémy",
+          "Typ vône": "Kvetinová, Pižmová, Ovocná",
+          "Výdrž": "Dlhá (6–10h)",
+          "Príležitosť": "Denná, Večer",
+          "Pohlavie": "Unisex",
+          "Ročné obdobie": "Jar, Jeseň",
+          "Koncentrácia": "Extrait de Parfum",
+          "Hlava": "Tuberóza, Broskyňa, Mandarínka",
+          "Srdce": "Gardénia, Jazmín, Iris",
+          "Základ": "Vanilka, Santalové drevo, Vetiver",
+          "Výdrž (1-10)": "8",
+          "Sillage (1-10)": "7",
+          "Rok vydania": "2016",
+          "Parfumér": "—"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/187_hundred-silent-ways--objem-10ml.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8df&sg=161563f2",
+        "descriptionImages": [],
+        "otherVariants": [
+          {
+            "key": "17-14",
+            "id": 835,
+            "code": "187/2ML",
+            "price": 10,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-17",
+            "id": 838,
+            "code": "187/3ML",
+            "price": 14,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-20",
+            "id": 841,
+            "code": "187/5ML",
+            "price": 21,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-23",
+            "id": 844,
+            "code": "187/10M",
+            "price": 36,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-24",
+            "id": 847,
+            "code": "187/20M",
+            "price": 62,
+            "stock": "Skladom",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "divine-vanille",
+        "url": "https://www.essentique.sk/divine-vanille/",
+        "checkedAt": "2026-11-11T06:44:14.975507+00:00",
+        "status": 200,
+        "finalUrl": "https://www.essentique.sk/divine-vanille/",
+        "name": "Divine Vanille",
+        "priceAmount": 7,
+        "priceDisplay": "€7",
+        "currency": "EUR",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladom",
+        "variantKey": "17-14",
+        "variantId": 1211,
+        "variantCode": "242/2ML",
+        "variantOptionValue": "14",
+        "merchantVariantParameter": "17",
+        "canonicalUrl": "https://www.essentique.sk/divine-vanille/",
+        "sourceSha256": "d4e2e8c5c5da1adefc3d86e8377aeead83c3b909b0b9b265fd383be10e1560d9",
+        "shortDescription": "Essential Parfums Divine Vanille je mäkká, korenistá vanilka s kadidlovým tieňom. Pôsobí hrejivo, intímne a elegantne, bez prehnanej cukrovej sladkosti.",
+        "description": "Podrobný popis Divine Vanille od Essential Parfums je vanilková vôňa s dospelejším, korenisto-balzamickým charakterom. Nepôsobí ako prvoplánový dezert; vanilka je tu mäkká, hebká a zahalená do škorice, korenia a jemne dymového nádychu. Vôňa má príjemnú hĺbku, no zároveň si drží uhladenosť. Kadidlo a pačuli jej dodávajú tichú temnosť, zatiaľ čo tonka fazuľa a benzoín ju zjemňujú do krémového, takmer kašmírového dozvuku. Sadne tým, ktorí hľadajú vanilku bez presladenej ťažkosti – skôr elegantnú, unisex a blízku pokožke. Divine Vanille sa nosí nenútene, s pokojnou zmyselnosťou a veľmi príjemným osobným charakterom.",
+        "parameters": {
+          "Kategória": "Niche",
+          "Typ vône": "Gurmánska, Vanilková, Korenistá",
+          "Výdrž": "Dlhá (6–10h)",
+          "Príležitosť": "Denná, Večer",
+          "Pohlavie": "Unisex",
+          "Ročné obdobie": "Jeseň, Zima",
+          "Koncentrácia": "Eau de Parfum",
+          "Hlava": "Šalvia muškátová, škorica, čierne korenie",
+          "Srdce": "Osmanthus, kadidlo, Pomarose®",
+          "Základ": "Madagaskarská vanilka, tonka fazuľa, siamský benzoin, texaský céder, pižmo, pačuli",
+          "Výdrž (1-10)": "8",
+          "Sillage (1-10)": "5",
+          "Rok vydania": "2019",
+          "Parfumér": "Olivier Pescheux"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/242_o-57088.jpg?ff=1&x=1024&y=768&q=85&ts=6a4944a0&sg=161563f2",
+        "descriptionImages": [],
+        "otherVariants": [
+          {
+            "key": "17-14",
+            "id": 1211,
+            "code": "242/2ML",
+            "price": 7,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-17",
+            "id": 1214,
+            "code": "242/3ML",
+            "price": 9,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-20",
+            "id": 1217,
+            "code": "242/5ML",
+            "price": 14,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-23",
+            "id": 1220,
+            "code": "242/10M",
+            "price": 25,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-24",
+            "id": 1223,
+            "code": "242/20M",
+            "price": 43,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-163",
+            "id": 1226,
+            "code": "242/30M",
+            "price": 57,
+            "stock": "Skladom",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "cherry-ink",
+        "url": "https://www.essentique.sk/cherry-ink/",
+        "checkedAt": "2026-11-11T06:44:15.064012+00:00",
+        "status": 200,
+        "finalUrl": "https://www.essentique.sk/cherry-ink/",
+        "name": "Cherry Ink",
+        "priceAmount": 13,
+        "priceDisplay": "€13",
+        "currency": "EUR",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladom",
+        "variantKey": "17-14",
+        "variantId": 1274,
+        "variantCode": "254/2ML",
+        "variantOptionValue": "14",
+        "merchantVariantParameter": "17",
+        "canonicalUrl": "https://www.essentique.sk/cherry-ink/",
+        "sourceSha256": "4e0f96a5b7101dd86233f983618c86cdbe62b5cbbd0215cf3a6dec83427f73f0",
+        "shortDescription": "Lorenzo Pazzaglia Cherry Ink spája šťavnatú čerešňu s temnými tónmi atramentu, rumu a drevín. Výsledkom je odvážna vôňa s výrazným charakterom, ktorá zanechá nezameniteľný dojem.",
+        "description": "Podrobný popis Cherry Ink od Lorenzo Pazzaglia je unisex parfum pre tých, ktorí hľadajú netradičné spracovanie čerešňovej vône. Ovocná sladkosť tu nepôsobí hravo ani cukríkovo – dopĺňajú ju akordy rumu, červeného vína a atramentu, ktoré vytvárajú hlbokú, tajomnú atmosféru. Počas nosenia sa vôňa mení z výrazne ovocného úvodu do hrejivého drevito-ambrového základu s jemne koženým a orientálnym nádychom. Vynikne najmä večer a pri výnimočných príležitostiach, keď chcete siahnuť po parfume s osobitým charakterom. Cherry Ink je originálna interpretácia čerešne, ktorá sa odlišuje od bežne sladkých gourmand kompozícií.",
+        "parameters": {
+          "Kategória": "Niche",
+          "Typ vône": "Drevitá, Ovocná, Ambrová",
+          "Výdrž": "Extrémna (10+ h)",
+          "Príležitosť": "Špeciálne príležitosti, Večer",
+          "Pohlavie": "Unisex",
+          "Ročné obdobie": "Jeseň, Zima",
+          "Koncentrácia": "Extrait de Parfum",
+          "Hlava": "Čerešňa, Višňa, Mandľa, Rum, Čierne korenie, Bergamot",
+          "Srdce": "Atrament, Červené víno, Damašská ruža, Myrha, Škorica, Mimóza, Konvalinka, Jazmín",
+          "Základ": "Tonka fazuľa, Vanilka, Vzácne dreviny, Ambra, Pižmo, Benzoín, Pačuli, Oud",
+          "Výdrž (1-10)": "10",
+          "Sillage (1-10)": "10",
+          "Parfumér": "Lorenzo Pazzaglia"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/254_lorenzo-pazzaglia-cherry-ink-extrait-de-parfum-1.webp?ff=1&x=1024&y=768&q=85&ts=6a68a811&sg=161563f2",
+        "descriptionImages": [],
+        "otherVariants": [
+          {
+            "key": "17-14",
+            "id": 1274,
+            "code": "254/2ML",
+            "price": 13,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-17",
+            "id": 1277,
+            "code": "254/3ML",
+            "price": 18,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-20",
+            "id": 1280,
+            "code": "254/5ML",
+            "price": 27,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-23",
+            "id": 1283,
+            "code": "254/10M",
+            "price": 51,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-24",
+            "id": 1286,
+            "code": "254/20M",
+            "price": 95,
+            "stock": "Skladom",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "eilish-no-2",
+        "url": "https://www.essentique.sk/eilish-no-2/",
+        "checkedAt": "2026-11-11T06:44:15.561098+00:00",
+        "status": 200,
+        "finalUrl": "https://www.essentique.sk/eilish-no-2/",
+        "name": "Eilish No 2",
+        "priceAmount": 4.5,
+        "priceDisplay": "€4,50",
+        "currency": "EUR",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladom",
+        "variantKey": "17-14",
+        "variantId": 366,
+        "variantCode": "108/2ML",
+        "variantOptionValue": "14",
+        "merchantVariantParameter": "17",
+        "canonicalUrl": "https://www.essentique.sk/eilish-no-2/",
+        "sourceSha256": "a55ba51729dcf5769ebc384891c6f4cc89c40e4546240d2df87d7747ce9a1af9",
+        "shortDescription": "Billie Eilish Eilish No. 2 je tmavá drevito-korenistá vôňa s kadidlovým tieňom. Pôsobí chladne, zemitým dojmom a má výrazne náladový charakter.",
+        "description": "Podrobný popis Eilish No. 2 od Billie Eilish je odklon od sladkej, mäkkej vanilkovej nálady prvej vône. Pôsobí temnejšie, suchšie a viac drevito – ako chladný vzduch, vlhké drevo a jemný dym kadidla na pokožke. Úvod má sviežejší citrusovo-kvetinový záblesk, no rýchlo sa posúva do korenistej, zemitšej polohy. Čierne korenie, papyrus a palo santo jej dávajú výrazný, trochu tajomný charakter, ktorý nepôsobí bežne ani prvoplánovo žensky. Je to vôňa pre tých, ktorí majú radi unisex parfumy s tmavším, lesným a mierne dymovým dojmom. Najlepšie vynikne večer a v chladnejšom počasí, keď jej drevitá stránka pôsobí prirodzenejšie.",
+        "parameters": {
+          "Kategória": "Parfémy",
+          "Typ vône": "Drevitá, Pižmová, Korenistá",
+          "Výdrž": "Dlhá (6–10h)",
+          "Príležitosť": "Špeciálne príležitosti, Večer",
+          "Pohlavie": "Unisex",
+          "Ročné obdobie": "Jeseň, Zima",
+          "Koncentrácia": "Eau de Parfum",
+          "Hlava": "Taliansky bergamot, jabloňový kvet, kadidlo",
+          "Srdce": "Papyrus, čierne korenie, divý mokrý makový kvet",
+          "Základ": "Palo Santo, ebenové drevo, pižmo",
+          "Výdrž (1-10)": "7",
+          "Sillage (1-10)": "6",
+          "Rok vydania": "2022",
+          "Parfumér": "Catherine Selig"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/108_eilish-no-2--objem-10ml.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8de&sg=161563f2",
+        "descriptionImages": [],
+        "otherVariants": [
+          {
+            "key": "17-14",
+            "id": 366,
+            "code": "108/2ML",
+            "price": 4.5,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-17",
+            "id": 369,
+            "code": "108/3ML",
+            "price": 6,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-20",
+            "id": 372,
+            "code": "108/5ML",
+            "price": 9,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-23",
+            "id": 375,
+            "code": "108/10M",
+            "price": 16.5,
+            "stock": "Skladom",
+            "available": true
+          },
+          {
+            "key": "17-24",
+            "id": 378,
+            "code": "108/20M",
+            "price": 30,
+            "stock": "Skladom",
+            "available": true
+          }
+        ]
+      }
+    ],
+    "fragrancesamples": [
+      {
+        "id": "mancera-french-riviera",
+        "url": "https://www.fragrancesamples.cz/mancera-french-riviera/",
+        "checkedAt": "2026-11-11T06:44:15.565732+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fragrancesamples.cz/mancera-french-riviera/",
+        "name": "Mancera French Riviera vzorek parfému",
+        "priceAmount": 139,
+        "priceDisplay": "139 Kč",
+        "currency": "CZK",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladem",
+        "variantKey": "16-19",
+        "variantId": 786,
+        "variantCode": "204/2ML",
+        "variantOptionValue": "19",
+        "merchantVariantParameter": "16",
+        "canonicalUrl": "https://www.fragrancesamples.cz/mancera-french-riviera/",
+        "sourceSha256": "d87904ca5947b96249126f6c414d6bf39ea8bd8095a4f803223f6b2a56b0180c",
+        "shortDescription": "Objevte Mancera French Riviera, jednu z nejlepších letních niche vůní posledních let. Inspirací se stalo francouzské Azurové pobřeží – slunce, moře, slaný vzduch a bezstarostná atmosféra dovolené. Vůně kombinuje citrusovou svěžest s mořskými tóny a elegantním pižmovým základem.",
+        "description": "Moje doporučení: Vhodné období: Jaro, léto a teplé podzimní dny. Perfektní na dovolenou, denní nošení, procházky u moře i letní večerní posezení. Výdrž: Velmi dobrá až výborná, přibližně 8–10 hodin na pokožce, na oblečení často vydrží déle. Projekce: Střední až silná, nejvýraznější během prvních 2–4 hodin po aplikaci. Vůně působí luxusně, svěže a energicky díky kombinaci citrusů, mořských tónů, bílých květin a jemného pižmového základu, který evokuje atmosféru Francouzské riviéry. Kompletní složení: ALCOHOL DENAT, PARFUM / FRAGRANCE, BENZYL SALICYLATE, AQUA / WATER, LIMONENE, LINALOOL, CITRONELLOL, GERANIOL, COUMARIN, CITRAL, ALPHA-ISOMETHYL IONONE, HEXYL CINNAMAL, ANISIC ALCOHOL, HYDROXYCITRONELLAL, BENZYL ALCOHOL, EUGENOL, BENZYL BENZOATE, CINNAMAL, FARNESOL.",
+        "parameters": {
+          "Objem": "Zvolte variantu1ml2ml5ml",
+          "Kategorie": "NICHE"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/204_e74d20ec-6395-4a82-ae42-af11a648bc9e.png?ff=1&x=1024&y=768&q=85&ts=6a3436ff&sg=161563f2",
+        "descriptionImages": [
+          [
+            "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/mceclip0-112.png?1781806536",
+            null
+          ]
+        ],
+        "otherVariants": [
+          {
+            "key": "16-16",
+            "id": 783,
+            "code": "204/1ML",
+            "price": 65,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-19",
+            "id": 786,
+            "code": "204/2ML",
+            "price": 139,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-22",
+            "id": 789,
+            "code": "204/5ML",
+            "price": 329,
+            "stock": "Skladem",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "note-de-yuzu",
+        "url": "https://www.fragrancesamples.cz/note-de-yuzu/",
+        "checkedAt": "2026-11-11T06:44:15.575706+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fragrancesamples.cz/note-de-yuzu/",
+        "name": "Note de Yuzu",
+        "priceAmount": 249,
+        "priceDisplay": "249 Kč",
+        "currency": "CZK",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladem",
+        "variantKey": "16-19",
+        "variantId": 1461,
+        "variantCode": "399/2ML",
+        "variantOptionValue": "19",
+        "merchantVariantParameter": "16",
+        "canonicalUrl": "https://www.fragrancesamples.cz/note-de-yuzu/",
+        "sourceSha256": "9ece2a7a7f1fbf7809849eff1a5a8b1bcd40dfdd9d635ce05a92ccfe23efe2d7",
+        "shortDescription": "Objevte Note de Yuzu, svěží unisex vůni vytvořenou ve spolupráci Heeley a Maison Kitsuné. Japonské yuzu, citron a mandarinka přinášejí jasný citrusový úvod, který postupně přechází do vodních a mořských tónů se slaným nádechem. Vetiver a bílé pižmo vůni zjemňují a dodávají jí čistý, elegantní závěr. Heeley Praktický parfémový vzorek vám umožní vůni vyzkoušet před výběrem celého flakonu. Zvolte si 1 ml, 2 ml nebo 5 ml. Vonná kompozice",
+        "description": "Moje doporučení Vhodné období: Jaro, léto a teplejší podzimní dny. Skvěle se hodí na běžné denní nošení, dovolenou i chvíle u moře. Výdrž: Střední, přibližně 4–6 hodin. Výsledek se může lišit podle pokožky a podmínek nošení. Notes, Performance & Rating Projekce: Lehká až střední. Vůně je po aplikaci svěže znatelná, později se drží blíže u pokožky. Kompletní složení INCI: Alcohol Denat., Parfum (Fragrance), Aqua (Water), Limonene, Benzyl Salicylate, Hydroxycitronellal, Citral, Linalool, Eugenol, Evernia Prunastri Extract, Geraniol, Citronellol. Note de Yuzu – Les Senteurs",
+        "parameters": {
+          "Objem": "Zvolte variantu1ml2ml5ml",
+          "Kategorie": "NICHE"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/399_unknown-15.png?ff=1&x=1024&y=768&q=85&ts=6ae62725&sg=161563f2",
+        "descriptionImages": [
+          [
+            "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/blobid0-4.png?1793468357",
+            "Vygenerovaný obrázek 1"
+          ]
+        ],
+        "otherVariants": [
+          {
+            "key": "16-16",
+            "id": 1458,
+            "code": "399/1ML",
+            "price": 149,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-19",
+            "id": 1461,
+            "code": "399/2ML",
+            "price": 249,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-22",
+            "id": 1464,
+            "code": "399/5ML",
+            "price": 549,
+            "stock": "Skladem",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "parfums-de-marly-percival-edp",
+        "url": "https://www.fragrancesamples.cz/parfums-de-marly-percival-edp/",
+        "checkedAt": "2026-11-11T06:44:16.053285+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fragrancesamples.cz/parfums-de-marly-percival-edp/",
+        "name": "Parfums de Marly Percival EDP vzorek parfému",
+        "priceAmount": 249,
+        "priceDisplay": "249 Kč",
+        "currency": "CZK",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladem",
+        "variantKey": "16-19",
+        "variantId": 562,
+        "variantCode": "154/2ML",
+        "variantOptionValue": "19",
+        "merchantVariantParameter": "16",
+        "canonicalUrl": "https://www.fragrancesamples.cz/parfums-de-marly-percival-edp/",
+        "sourceSha256": "ff84315643db60b7d41c3539f85bbb84a67da016c1ffbbc3292dc9c0c5d3dcf8",
+        "shortDescription": "Objevte luxusní niche vůni Parfums De Marly Percival, která spojuje svěží citrusové tóny, aromatickou levanduli a moderní dřevitý základ. Percival patří mezi nejuniverzálnější vůně značky Parfums de Marly a často bývá označován jako „luxusní clean gentleman“ parfém. Percival kombinuje bergamot, mandarinku, levanduli a ambrox, díky čemuž působí extrémně čistě, elegantně a přitažlivě. Je svěží, ale zároveň má hloubku a luxusní niche charakter.",
+        "description": "Moje doporučení: Vhodné období: Jaro, léto a teplejší podzimní dny. Ideální pro každodenní nošení, do práce, na schůzky i společenské akce, kde chcete působit upraveně a sebevědomě. Výdrž: Velmi dobrá, přibližně 7–10 hodin na pokožce, na oblečení často vydrží déle. Projekce: Střední až silná, nejvýraznější během prvních 2–3 hodin po aplikaci. Vůně působí svěže, čistě a elegantně s luxusním a velmi univerzálním charakterem. Kompletní složení: ALCOHOL DENAT., PARFUM (FRAGRANCE), AQUA (WATER), LIMONENE, LINALOOL, CITRONELLOL, COUMARIN, CITRAL, GERANIOL, ISOEUGENOL, CINNAMAL, EUGENOL",
+        "parameters": {
+          "Objem": "Zvolte variantu1ml2ml5ml",
+          "Kategorie": "NICHE"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/154_chatgpt-image-24--5--2026-12-14-55.png?ff=1&x=1024&y=768&q=85&ts=6a12cfbd&sg=161563f2",
+        "descriptionImages": [
+          [
+            "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/mceclip0-35.png?1780497373",
+            null
+          ]
+        ],
+        "otherVariants": [
+          {
+            "key": "16-16",
+            "id": 559,
+            "code": "154/1ML",
+            "price": 129,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-19",
+            "id": 562,
+            "code": "154/2ML",
+            "price": 249,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-22",
+            "id": 565,
+            "code": "154/5ML",
+            "price": 599,
+            "stock": "Skladem",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "mancera-cedrat-boise",
+        "url": "https://www.fragrancesamples.cz/mancera-cedrat-boise/",
+        "checkedAt": "2026-11-11T06:44:16.145609+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fragrancesamples.cz/mancera-cedrat-boise/",
+        "name": "Mancera Cedrat Boise vzorek parfému",
+        "priceAmount": 145,
+        "priceDisplay": "145 Kč",
+        "currency": "CZK",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladem",
+        "variantKey": "16-19",
+        "variantId": 777,
+        "variantCode": "207/2ML",
+        "variantOptionValue": "19",
+        "merchantVariantParameter": "16",
+        "canonicalUrl": "https://www.fragrancesamples.cz/mancera-cedrat-boise/",
+        "sourceSha256": "abeb3d49b4d298bdbd5b5b11a87f9a91d541adca1a08cb20ce91aa28ad4c260e",
+        "shortDescription": "Objevte ikonickou niche vůni Mancera Cedrat Boise, která patří mezi nejprodávanější a nejchválenější parfémy značky Mancera. Je známá svou perfektní kombinací svěžích citrusů, ovocných tónů a elegantního dřevitě-koženého základu. Mnoho milovníků parfémů ji považuje za jednu z nejuniverzálnějších niche vůní vůbec.",
+        "description": "Moje doporučení: Vhodné období: Celoročně, nejlépe však na jaře, na podzim a během chladnějších letních večerů. Skvěle se hodí do práce, na schůzky, společenské akce i běžné denní nošení. Výdrž: Výborná, přibližně 8–12 hodin na pokožce, na oblečení často vydrží i déle než 24 hodin. Projekce: Střední až silná, nejvýraznější během prvních 2–4 hodin po aplikaci. Vůně kombinuje svěží citrusy, ovocné tóny a dřevitý základ s jemnou vanilkou, díky čemuž působí elegantně, luxusně a velmi univerzálně. Kompletní složení: ALCOHOL, PARFUM / FRAGRANCE, AQUA / WATER / EAU, DIPROPYLENE GLYCOL, LIMONENE, LINALOOL, BENZYL SALICYLATE, BENZYL ALCOHOL, BUTYL METHOXYDIBENZOYLMETHANE, HYDROXYCITRONELLAL, METHYL ANTHRANILATE, CITRONELLOL, ALPHA-ISOMETHYL IONONE, COUMARIN, GERANIOL, ISOEUGENOL, BENZYL BENZOATE, CITRAL, TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE, EUGENOL, FARNESOL, CI 60730 / EXT. VIOLET 2, CI 17200 / RED 33.",
+        "parameters": {
+          "Objem": "Zvolte variantu1ml2ml5ml",
+          "Kategorie": "NICHE"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/207_9e41e5fd-a3aa-4dec-89cd-5b85d1de6a48.png?ff=1&x=1024&y=768&q=85&ts=6a3439a2&sg=161563f2",
+        "descriptionImages": [
+          [
+            "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/mceclip1-12.png?1781807409",
+            null
+          ]
+        ],
+        "otherVariants": [
+          {
+            "key": "16-16",
+            "id": 774,
+            "code": "207/1ML",
+            "price": 69,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-19",
+            "id": 777,
+            "code": "207/2ML",
+            "price": 145,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-22",
+            "id": 780,
+            "code": "207/5ML",
+            "price": 339,
+            "stock": "Skladem",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "spicebomb-extreme-od-viktor-rolf",
+        "url": "https://www.fragrancesamples.cz/spicebomb-extreme-od-viktor-rolf/",
+        "checkedAt": "2026-11-11T06:44:17.634660+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fragrancesamples.cz/spicebomb-extreme-od-viktor-rolf/",
+        "name": "Spicebomb Extrême",
+        "priceAmount": 149,
+        "priceDisplay": "149 Kč",
+        "currency": "CZK",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladem",
+        "variantKey": "16-19",
+        "variantId": 1497,
+        "variantCode": "417/2ML",
+        "variantOptionValue": "19",
+        "merchantVariantParameter": "16",
+        "canonicalUrl": "https://www.fragrancesamples.cz/spicebomb-extreme-od-viktor-rolf/",
+        "sourceSha256": "8435c3ec8aafd380fa54860d78ae5b64652c81147ee34ac797e7a667824eaf03",
+        "shortDescription": "Objevte intenzivní a smyslnou vůni Viktor & Rolf Spicebomb Extrême, která propojuje výrazné koření s hřejivou sladkostí vanilky. Její bohatý charakter vynikne během podzimu, zimy i při večerních příležitostech. Spicebomb Extrême spojuje aromatickou levanduli, černý pepř a šafrán s hlubokými tabákovými tóny a hebkou vanilkou. Kořenitý úvod postupně přechází do sladce hřejivého základu, který vůni dodává podmanivý a elegantní charakter.",
+        "description": "Moje doporučení Vhodné obdobíNejlépe vynikne na podzim a v zimě. Hřejivá kombinace koření, tabáku a vanilky se hodí na večerní nošení, rande i společenské příležitosti. VýdržDlouhá, vhodná pro celodenní i večerní nošení. Konkrétní výdrž se liší podle pokožky, dávkování a okolních podmínek. ProjekceVýrazná zejména během prvních hodin po aplikaci. Postupně se zjemňuje a přibližuje k pokožce. Kompletní složení INCIALCOHOL, PARFUM / FRAGRANCE, AQUA / WATER / EAU, LIMONENE, BUTYL METHOXYDIBENZOYLMETHANE, COUMARIN, LINALOOL, ETHYLHEXYL SALICYLATE, EUGENOL, ALPHA-ISOMETHYL IONONE, METHYL ANTHRANILATE, PENTAERYTHRITYL TETRA-DI-T-BUTYL HYDROXYHYDROCINNAMATE, CITRAL, CITRONELLOL, BENZYL BENZOATE, GERANIOL, BENZYL ALCOHOL, ISOEUGENOL, CI 60730 / EXT. VIOLET 2.",
+        "parameters": {
+          "Objem": "Zvolte variantu1ml2ml5ml",
+          "Kategorie": "DESIGNER"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/417_unknown-25.png?ff=1&x=1024&y=768&q=85&ts=6aec7892&sg=161563f2",
+        "descriptionImages": [
+          [
+            "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/blobid0-6.png?1793882934",
+            "Vygenerovaný obrázek 1"
+          ]
+        ],
+        "otherVariants": [
+          {
+            "key": "16-16",
+            "id": 1494,
+            "code": "417/1ML",
+            "price": 89,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-19",
+            "id": 1497,
+            "code": "417/2ML",
+            "price": 149,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-22",
+            "id": 1500,
+            "code": "417/5ML",
+            "price": 309,
+            "stock": "Skladem",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "zimaya-sharaf-blend-edp",
+        "url": "https://www.fragrancesamples.cz/zimaya-sharaf-blend-edp/",
+        "checkedAt": "2026-11-11T06:44:17.664297+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fragrancesamples.cz/zimaya-sharaf-blend-edp/",
+        "name": "ZIMAYA Sharaf Blend EdP",
+        "priceAmount": 89,
+        "priceDisplay": "89 Kč",
+        "currency": "CZK",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladem",
+        "variantKey": "16-19",
+        "variantId": 1425,
+        "variantCode": "390/2ML",
+        "variantOptionValue": "19",
+        "merchantVariantParameter": "16",
+        "canonicalUrl": "https://www.fragrancesamples.cz/zimaya-sharaf-blend-edp/",
+        "sourceSha256": "197445230d0b468990b8f54f8eeb4408b80a2a23ce05343da18eea98a799b137",
+        "shortDescription": "Zimaya Sharaf Blend – hřejivá vůně datlí, vanilky a koření Zimaya Sharaf Blend je bohatá unisex vůně, která potěší milovníky sladkých, kořeněných a gurmánských parfémů. Spojuje lahodnou sladkost datlí s jemně pikantním muškátovým oříškem a šafránem. Působí hřejivě, smyslně a elegantně.",
+        "description": "Zimaya Sharaf Blend je bohatá unisex vůně, která potěší milovníky sladkých, kořeněných a gurmánských parfémů. Spojuje lahodnou sladkost datlí s jemně pikantním muškátovým oříškem a šafránem. Působí hřejivě, smyslně a elegantně.",
+        "parameters": {
+          "Objem": "Zvolte variantu1ml2ml5ml",
+          "Kategorie": "Arabské parfémové vzorky"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/390-1_273627dd-df17-4df4-8e34-03279d2fe00c.png?ff=1&x=1024&y=768&q=85&ts=6ae222b1&sg=161563f2",
+        "descriptionImages": [
+          [
+            "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/mceclip0-207.png?1793205147",
+            null
+          ]
+        ],
+        "otherVariants": [
+          {
+            "key": "16-16",
+            "id": 1422,
+            "code": "390/1ML",
+            "price": 49,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-19",
+            "id": 1425,
+            "code": "390/2ML",
+            "price": 89,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-22",
+            "id": 1428,
+            "code": "390/5ML",
+            "price": 199,
+            "stock": "Skladem",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "versace-bright-crystal-absolu",
+        "url": "https://www.fragrancesamples.cz/versace-bright-crystal-absolu/",
+        "checkedAt": "2026-11-11T06:44:17.735193+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fragrancesamples.cz/versace-bright-crystal-absolu/",
+        "name": "Versace Bright Crystal Absolu vzorek parfému",
+        "priceAmount": 149,
+        "priceDisplay": "149 Kč",
+        "currency": "CZK",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladem",
+        "variantKey": "16-19",
+        "variantId": 1218,
+        "variantCode": "330/2ML",
+        "variantOptionValue": "19",
+        "merchantVariantParameter": "16",
+        "canonicalUrl": "https://www.fragrancesamples.cz/versace-bright-crystal-absolu/",
+        "sourceSha256": "9fa387e3549e9b28d2a3cff771ff17316af3ff53ea293968dacfc196d9733db8",
+        "shortDescription": "Objevte zářivou a elegantní vůni Versace Bright Crystal Absolu, která je intenzivnější verzí oblíbeného Bright Crystal. Tato vůně okouzlí svou svěžestí, ovocnými tóny a bohatým květinovým srdcem. Je symbolem ženskosti, jemnosti a přirozené elegance.",
+        "description": "Kompletní složení : ALCOHOL DENAT. (SD Alcohol 39-C.), PARFUM (FRAGRANCE), AQUA (WATER), ETHYLHEXYL, METHOXYCINNAMATE, LINALOOL, CITRONELLOL, ETHYLHEXYL SALICYLATE, BUTYL METHOXYDIBENZOYLMETHANE, LIMONENE Moje doporučení: Vhodné období: Jaro, léto a teplé podzimní dny. Ideální na každodenní nošení, do práce, na schůzky i romantické příležitosti. Výdrž: Velmi dobrá, přibližně 7–10 hodin na pokožce, na oblečení často vydrží déle. Projekce: Střední až silná, nejvýraznější během prvních 2–3 hodin po aplikaci. Vůně zanechává elegantní květinově-ovocnou stopu a díky kombinaci granátového jablka, pivoňky, magnólie a pižma působí svěže, luxusně a velmi ženským dojmem.",
+        "parameters": {
+          "Objem": "Zvolte variantu1ml2ml5ml",
+          "Kategorie": "Dámské parfémové vzorky"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/330_8cf1ff4f-4d85-4a97-b760-6b48f23c9b97.png?ff=1&x=1024&y=768&q=85&ts=6a6cc8ed&sg=161563f2",
+        "descriptionImages": [
+          [
+            "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/mceclip0-175.png?1785513382",
+            null
+          ]
+        ],
+        "otherVariants": [
+          {
+            "key": "16-16",
+            "id": 1215,
+            "code": "330/1ML",
+            "price": 89,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-19",
+            "id": 1218,
+            "code": "330/2ML",
+            "price": 149,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-22",
+            "id": 1221,
+            "code": "330/5ML",
+            "price": 309,
+            "stock": "Skladem",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "jean-paul-gaultier-scandal-eau-de-parfum",
+        "url": "https://www.fragrancesamples.cz/jean-paul-gaultier-scandal-eau-de-parfum/",
+        "checkedAt": "2026-11-11T06:44:17.834112+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fragrancesamples.cz/jean-paul-gaultier-scandal-eau-de-parfum/",
+        "name": "Jean Paul Gaultier Scandal Eau de Parfum vzorek parfému",
+        "priceAmount": 155,
+        "priceDisplay": "155 Kč",
+        "currency": "CZK",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladem",
+        "variantKey": "16-19",
+        "variantId": 1197,
+        "variantCode": "327/2ML",
+        "variantOptionValue": "19",
+        "merchantVariantParameter": "16",
+        "canonicalUrl": "https://www.fragrancesamples.cz/jean-paul-gaultier-scandal-eau-de-parfum/",
+        "sourceSha256": "30a47e79afa944fbc8b263c3f1b13c69f6a6d19698325cf3e544a89ee1739743",
+        "shortDescription": "Objevte ikonickou dámskou vůni Jean Paul Gaultier Scandal Eau de Parfum, která ztělesňuje ženskou eleganci, smyslnost a sebevědomí. Tato vůně okouzlí svou sladkou medovou kompozicí doplněnou o bílé květy a hřejivé tóny, které vytvářejí nezapomenutelný a luxusní dojem.",
+        "description": "Moje doporučení: Vhodné období: Podzim, zima a chladnější jarní večery. Ideální na večerní nošení, rande, společenské akce i chvíle, kdy chcete působit elegantně a svůdně. Výdrž: Výborná, přibližně 8–12 hodin na pokožce, na oblečení často vydrží déle než 24 hodin. Projekce: Silná, nejvýraznější během prvních 2–4 hodin po aplikaci. Vůně zanechává výraznou stopu a díky kombinaci medu, gardénie a pačuli působí luxusně, smyslně a velmi ženským dojmem. Kompletní složení: Alcohol Denat., Aqua (Water), Parfum (Fragrance), Ethylhexylglycerin, Linalool, Limonene, Geraniol, Hydroxycitronellal, Citronellol, Benzyl Salicylate, Hexyl Cinnamal, Coumarin, Citral, Eugenol.",
+        "parameters": {
+          "Objem": "Zvolte variantu1ml2ml5ml",
+          "Kategorie": "Dámské parfémové vzorky"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/327-1_a9b51cc3-5091-4f10-841e-2661a45daaaf.png?ff=1&x=1024&y=768&q=85&ts=6a6cba1c&sg=161563f2",
+        "descriptionImages": [
+          [
+            "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/mceclip0-174.png?1785509877",
+            null
+          ]
+        ],
+        "otherVariants": [
+          {
+            "key": "16-16",
+            "id": 1194,
+            "code": "327/1ML",
+            "price": 85,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-19",
+            "id": 1197,
+            "code": "327/2ML",
+            "price": 155,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-22",
+            "id": 1200,
+            "code": "327/5ML",
+            "price": 329,
+            "stock": "Skladem",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "lancome-la-vie-est-belle",
+        "url": "https://www.fragrancesamples.cz/lancome-la-vie-est-belle/",
+        "checkedAt": "2026-11-11T06:44:18.269471+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fragrancesamples.cz/lancome-la-vie-est-belle/",
+        "name": "Lancôme La Vie Est Belle vzorek parfému",
+        "priceAmount": 165,
+        "priceDisplay": "165 Kč",
+        "currency": "CZK",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladem",
+        "variantKey": "16-19",
+        "variantId": 1152,
+        "variantCode": "321/2ML",
+        "variantOptionValue": "19",
+        "merchantVariantParameter": "16",
+        "canonicalUrl": "https://www.fragrancesamples.cz/lancome-la-vie-est-belle/",
+        "sourceSha256": "721317104619cf8d126fcc547cb662d07c24892598175bdf7dabd1240626e40d",
+        "shortDescription": "Objevte ikonickou dámskou vůni Lancôme La Vie Est Belle, která se stala symbolem radosti, elegance a svobody. Tato celosvětově oblíbená vůně oslavuje krásu života prostřednictvím neodolatelné kombinace sladké vanilky, pralinky a vzácného kosatce. Je jednou z nejprodávanějších dámských vůní všech dob.",
+        "description": "Moje doporučení: Vhodné období: Podzim, zima a chladnější jarní dny. Ideální na každodenní nošení, rande, společenské akce i večerní příležitosti. Výdrž: Výborná, přibližně 8–12 hodin na pokožce, na oblečení často vydrží déle. Projekce: Střední až silná, nejvýraznější během prvních 2–4 hodin po aplikaci. Vůně působí sladce, elegantně a velmi žensky díky kombinaci kosatce, jasmínu, vanilky a pralinky. Kompletní složení: ALCOHOL, PARFUM / FRAGRANCE, AQUA / WATER, LINALOOL, BENZYL SALICYLATE, LIMONENE, METHYL ANTHRANILATE, TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE, ETHYLHEXYL SALICYLATE, BUTYL METHOXYDIBENZOYLMETHANE, CI 14700 / RED 4, CI 17200 / RED 33, GERANIOL, ALPHA-ISOMETHYL IONONE, COUMARIN, FARNESOL, CITRAL, CITRONELLOL, BENZYL ALCOHOL, BENZYL BENZOATE.",
+        "parameters": {
+          "Objem": "Zvolte variantu1ml2ml5ml",
+          "Kategorie": "Lancôme"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/321_624e4379-8b13-496b-a201-5ef2d0cfd643.png?ff=1&x=1024&y=768&q=85&ts=6a59e204&sg=161563f2",
+        "descriptionImages": [
+          [
+            "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/mceclip0-169.png?1784275624",
+            null
+          ]
+        ],
+        "otherVariants": [
+          {
+            "key": "16-16",
+            "id": 1149,
+            "code": "321/1ML",
+            "price": 85,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-19",
+            "id": 1152,
+            "code": "321/2ML",
+            "price": 165,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-22",
+            "id": 1155,
+            "code": "321/5ML",
+            "price": 339,
+            "stock": "Skladem",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "ysl-libre",
+        "url": "https://www.fragrancesamples.cz/ysl-libre/",
+        "checkedAt": "2026-11-11T06:44:18.452894+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fragrancesamples.cz/ysl-libre/",
+        "name": "Yves Saint Laurent Libre vzorek parfému",
+        "priceAmount": 179,
+        "priceDisplay": "179 Kč",
+        "currency": "CZK",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladem",
+        "variantKey": "16-19",
+        "variantId": 646,
+        "variantCode": "175/2ML",
+        "variantOptionValue": "19",
+        "merchantVariantParameter": "16",
+        "canonicalUrl": "https://www.fragrancesamples.cz/ysl-libre/",
+        "sourceSha256": "f47d48fbf13dfacf5209067641460c12ce0a255d1d32e61413d51eef57c20a24",
+        "shortDescription": "Objevte ikonickou vůni YSL Libre, která ztělesňuje svobodu, sebevědomí a moderní ženskost. Libre je jednou z nejúspěšnějších dámských vůní posledních let a díky unikátnímu spojení levandule a vanilky nabízí elegantní, smyslný a nezaměnitelný charakter. YSL Libre kombinuje svěží mandarinku, aromatickou francouzskou levanduli, pomerančový květ a hřejivou madagaskarskou vanilku, díky čemuž vytváří luxusní, ženskou a velmi přitažlivou vůni. Je elegantní, moderní a perfektně vyvážená mezi svěžestí a smyslností.",
+        "description": "Složení vůně: Hlava: mandarinka, levandule, černý rybíz, petitgrain Srdce: pomerančový květ, jasmín sambac Základ: madagaskarská vanilka, cedrové dřevo, ambra, pižmo Moje doporučení: Vhodné období: Celoročně, nejlépe však na jaře, na podzim a během chladnějších letních večerů. Skvěle se hodí do práce, na schůzky, každodenní nošení i elegantní večerní příležitosti. Výdrž: Velmi dobrá až výborná, přibližně 8–10 hodin na pokožce, na oblečení často vydrží déle. Projekce: Střední až silná, nejvýraznější během prvních 2–3 hodin po aplikaci. Vůně působí moderně, elegantně a sebevědomě díky spojení levandule, pomerančového květu a jemné vanilky. Kompletní složení: ALCOHOL, PARFUM / FRAGRANCE, AQUA / WATER, LIMONENE, LINALOOL, BENZYL SALICYLATE, HYDROXYCITRONELLAL, BENZYL ALCOHOL, ETHYLHEXYL SALICYLATE, BUTYL METHOXYDIBENZOYLMETHANE, COUMARIN, GERANIOL, METHYL ANTHRANILATE, CITRONELLOL, CITRAL, ISOEUGENOL, ALPHA-ISOMETHYL IONONE, FARNESOL, CI 14700 / RED 4, CI 19140 / YELLOW 5, CI 60730 / EXT. VIOLET 2.",
+        "parameters": {
+          "Objem": "Zvolte variantu1ml2ml5ml",
+          "Kategorie": "Parfémové vzorky"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/175_e7869564-9dec-48b0-8833-d0455ad7e785.png?ff=1&x=1024&y=768&q=85&ts=6a1fe880&sg=161563f2",
+        "descriptionImages": [
+          [
+            "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/mceclip0-20.png?1780495132",
+            null
+          ]
+        ],
+        "otherVariants": [
+          {
+            "key": "16-16",
+            "id": 643,
+            "code": "175/1ML",
+            "price": 99,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-19",
+            "id": 646,
+            "code": "175/2ML",
+            "price": 179,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-22",
+            "id": 649,
+            "code": "175/5ML",
+            "price": 379,
+            "stock": "Skladem",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "burberry-goddess-intense",
+        "url": "https://www.fragrancesamples.cz/burberry-goddess-intense/",
+        "checkedAt": "2026-11-11T06:44:18.554500+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fragrancesamples.cz/burberry-goddess-intense/",
+        "name": "Burberry Goddess EDP Intense vzorek parfému",
+        "priceAmount": 169,
+        "priceDisplay": "169 Kč",
+        "currency": "CZK",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladem",
+        "variantKey": "16-19",
+        "variantId": 634,
+        "variantCode": "172/2ML",
+        "variantOptionValue": "19",
+        "merchantVariantParameter": "16",
+        "canonicalUrl": "https://www.fragrancesamples.cz/burberry-goddess-intense/",
+        "sourceSha256": "30e5a10b88581b463a7e1327a657a0f73760be5c8b68c890b4398ecff22b2667",
+        "shortDescription": "Objevte Burberry Goddess Intense, smyslnější a bohatší verzi oblíbené vůně Burberry Goddess. Tato intenzivní interpretace staví na ikonické vanilkové DNA původní vůně, ale přidává hlubší, hřejivější a ještě návykovější charakter. Burberry Goddess Intense kombinuje aromatickou levanduli, vanilku Absolute a kouřové dřevité tóny, díky čemuž vytváří luxusní, krémovou a velmi ženskou vůni s výjimečnou výdrží. Je elegantní, smyslná a perfektní pro ženy, které milují vanilkové parfémy.",
+        "description": "Moje doporučení: Vhodné období: Podzim, zima a chladnější jarní večery. Ideální na večerní nošení, rande, společenské akce i chvíle, kdy chcete působit výrazně a luxusně. Výdrž: Výborná až extrémní, přibližně 10–14 hodin na pokožce, na oblečení často vydrží i několik dní. Projekce: Silná až velmi silná, nejvýraznější během prvních 3–5 hodin po aplikaci. Vůně zanechává výraznou stopu a díky intenzivní vanilce, ambrovým a dřevitým tónům působí mimořádně smyslně a elegantně. Kompletní složení: ALCOHOL DENAT., PARFUM/FRAGRANCE, AQUA/WATER/EAU, LINALOOL, BENZYL SALICYLATE, LIMONENE, HYDROXYCITRONELLAL, COUMARIN, ALPHA-ISOMETHYL IONONE, CITRONELLOL, BUTYL METHOXYDIBENZOYLMETHANE, GERANIOL, ALCOHOL, CITRAL, TRIS(TETRAMETHYLHYDROXYPIPERIDINOL) CITRATE, CINNAMAL, BENZYL CINNAMATE, BENZYL BENZOATE, EUGENOL, ANISE ALCOHOL, YELLOW 5 (CI 19140), RED 4 (CI 14700), EXT. VIOLET 2 (CI 60730).",
+        "parameters": {
+          "Objem": "Zvolte variantu1ml2ml5ml",
+          "Kategorie": "Parfémové vzorky"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/172_burberr.png?ff=1&x=1024&y=768&q=85&ts=6a1fe5c9&sg=161563f2",
+        "descriptionImages": [
+          [
+            "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/mceclip0-21.png?1780495241",
+            null
+          ]
+        ],
+        "otherVariants": [
+          {
+            "key": "16-16",
+            "id": 631,
+            "code": "172/1ML",
+            "price": 89,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-19",
+            "id": 634,
+            "code": "172/2ML",
+            "price": 169,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-22",
+            "id": 637,
+            "code": "172/5ML",
+            "price": 399,
+            "stock": "Skladem",
+            "available": true
+          }
+        ]
+      },
+      {
+        "id": "prada-candy-eau-de-parfum",
+        "url": "https://www.fragrancesamples.cz/prada-candy-eau-de-parfum/",
+        "checkedAt": "2026-11-11T06:44:18.739401+00:00",
+        "status": 200,
+        "finalUrl": "https://www.fragrancesamples.cz/prada-candy-eau-de-parfum/",
+        "name": "Prada Candy Eau de Parfum vzorek parfému",
+        "priceAmount": 189,
+        "priceDisplay": "189 Kč",
+        "currency": "CZK",
+        "pack": "2 ml",
+        "sample": true,
+        "available": true,
+        "stock": "Skladem",
+        "variantKey": "16-19",
+        "variantId": 1161,
+        "variantCode": "318/2ML",
+        "variantOptionValue": "19",
+        "merchantVariantParameter": "16",
+        "canonicalUrl": "https://www.fragrancesamples.cz/prada-candy-eau-de-parfum/",
+        "sourceSha256": "5d56c271abd84f3510d6fec159a659342fd7c78f4fad53d3c422e047791f2560",
+        "shortDescription": "Objevte ikonickou vůni Prada Candy Eau de Parfum, která oslavuje ženskost, hravost a eleganci. Tato legendární gourmand vůně si získala oblibu po celém světě díky své jedinečné kombinaci hebkého pižma, hřejivého benzoinu a návykového karamelu. Výsledkem je luxusní, smyslná a nezaměnitelná vůně, která zanechá dojem při každém setkání.",
+        "description": "Moje doporučení: Vhodné období: Podzim, zima a chladnější jarní dny. Ideální na každodenní nošení, rande, večerní posezení i chvíle, kdy chcete působit sladce, elegantně a žensky. Výdrž: Dobrá až velmi dobrá, přibližně 6–8 hodin na pokožce, na oblečení často vydrží déle. Projekce: Střední, nejvýraznější během prvních 1–2 hodin po aplikaci. Vůně působí sladce, pudrově a hřejivě díky spojení karamelu, vanilky, pižma a jemných květinových tónů. Kompletní složení : ALCOHOL DENAT, FRAGRANCE, WATER, BUTYL METHOXYDIBENZOYLMETHANE, BENZOPHENONE-3, LINALOOL, ALPHA-ISOMETHYL IONONE, BHT, BENZYL BENZOATE, HYDROXYCITRONELLAL, COUMARIN, ISOEUGENOL, LIMONENE, BENZYL ALCOHOL, CI 14700 (RED 4)",
+        "parameters": {
+          "Objem": "Zvolte variantu1ml2ml5ml",
+          "Kategorie": "Prada"
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/318_chatgpt-image-17--7--2026-09-58-51.png?ff=1&x=1024&y=768&q=85&ts=6a59e0cb&sg=161563f2",
+        "descriptionImages": [
+          [
+            "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/documents/upload/mceclip0-168.png?1784275225",
+            null
+          ]
+        ],
+        "otherVariants": [
+          {
+            "key": "16-16",
+            "id": 1158,
+            "code": "318/1ML",
+            "price": 95,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-19",
+            "id": 1161,
+            "code": "318/2ML",
+            "price": 189,
+            "stock": "Skladem",
+            "available": true
+          },
+          {
+            "key": "16-22",
+            "id": 1164,
+            "code": "318/5ML",
+            "price": 439,
+            "stock": "Skladem",
+            "available": true
+          }
+        ]
+      }
+    ]
+  }
+}

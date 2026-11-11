@@ -3,9 +3,10 @@ import argparse,asyncio,json,pathlib,datetime,re,unicodedata
 from playwright.async_api import async_playwright
 import os
 from urllib.parse import urlsplit
-p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--base',default='http://127.0.0.1:8911');p.add_argument('--slugs',nargs='+',default=['adoraniche','nicheandglow']);p.add_argument('--fixture-scentisimo',action='store_true');p.add_argument('--browser',choices=['chromium','webkit'],default='chromium');p.add_argument('--browser-executable');p.add_argument('--commit',default='8a1bb74685d6b3b67fcc817d7c7c5515816360aa');p.add_argument('--deployment-id');p.add_argument('--widths',type=int,nargs='+',default=[320,390,1280]);p.add_argument('--indexes',type=int,nargs='+',default=[0,1,2]);a=p.parse_args();image_format='png' if a.browser=='webkit' else 'webp';shot_options={'type':'png'} if a.browser=='webkit' else {'type':'webp','quality':82};root=pathlib.Path(__file__).resolve().parents[3];out=pathlib.Path(a.output);out.mkdir(parents=True,exist_ok=True)
+p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('--base',default='http://127.0.0.1:8911');p.add_argument('--slugs',nargs='+',default=['adoraniche','nicheandglow']);p.add_argument('--fixture-scentisimo',action='store_true');p.add_argument('--package-root');p.add_argument('--browser',choices=['chromium','webkit'],default='chromium');p.add_argument('--browser-executable');p.add_argument('--commit',default='8a1bb74685d6b3b67fcc817d7c7c5515816360aa');p.add_argument('--deployment-id');p.add_argument('--widths',type=int,nargs='+',default=[320,390,1280]);p.add_argument('--indexes',type=int,nargs='+',default=[0,1,2]);a=p.parse_args();image_format='png' if a.browser=='webkit' else 'webp';shot_options={'type':'png'} if a.browser=='webkit' else {'type':'webp','quality':82};root=pathlib.Path(__file__).resolve().parents[3];out=pathlib.Path(a.output);out.mkdir(parents=True,exist_ok=True)
 report={'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'commit':'8a1bb74685d6b3b67fcc817d7c7c5515816360aa','scope':'Independent local snapshot focused mock-chat verification; not live Preview QA.','cards':[],'viewports':[],'errors':[],'paidModelCalls':0,'complete':False}
 if a.fixture_scentisimo:report['scope']='Isolated Scentisimo data/config fixture; source-ID mock responses, NOT registered/shared backend/live Preview QA.'
+if a.package_root:report.update({'commit':a.commit,'qaType':'Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.','scope':'Local isolated candidate fixture only.','browser':a.browser})
 if a.base.startswith('https://'):
  report.update({'commit':a.commit,'deploymentId':a.deployment_id,'baseUrl':a.base,'browser':a.browser,'tlsVerification':True,'scope':'Live unique Vercel Preview on exact supplied commit; API replies mocked/offline only. No live merchant messages or paid model calls.','qaType':'Live unique Vercel Preview on exact supplied commit; API replies mocked/offline only. No live merchant messages or paid model calls.'})
 def save():(out/'independent-chat.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
@@ -19,13 +20,13 @@ async def run():
    if proxy.hostname:launch['proxy']={'server':f'{proxy.scheme}://{proxy.hostname}:{proxy.port}'}
   browser=await getattr(pw,a.browser).launch(**launch)
   for slug in a.slugs:
-   products=json.loads((root/f'n447/s5/sources/{slug}/verified-products.json').read_text())['products'];facts={p['id']:p for p in products};config=json.loads((root/f'n447/s5/perfume-fragments/{slug}.config.json').read_text())
+   source=json.loads((pathlib.Path(a.package_root)/slug/'verified-products.json' if a.package_root else root/f'n447/s5/sources/{slug}/verified-products.json').read_text());facts={p['id']:p for p in source['products']};config=json.loads((pathlib.Path(a.package_root)/slug/'config.json' if a.package_root else root/f'n447/s5/perfume-fragments/{slug}.config.json').read_text())
    for width in a.widths:
     page=await browser.new_page(ignore_https_errors=False,viewport={'width':width,'height':900},reduced_motion='reduce');page.on('pageerror',lambda e:report['errors'].append(str(e)));release=asyncio.Event();hold=False
     async def network(route):
      if '/api/' in route.request.url:
       if hold:await release.wait()
-      if a.fixture_scentisimo and slug=='scentisimo':
+      if a.package_root or (a.fixture_scentisimo and slug=='scentisimo'):
        body=json.loads(route.request.post_data or '{}');query=body.get('messages',[{}])[-1].get('content','');rule=next((r for r in config['offlineReplyRequirements'] if r['chip']==query),None)
        if rule:
         text='\n\n'.join(f"{facts[pid]['name']} — {facts[pid]['volume']} za {facts[pid]['price']}.\n{facts[pid]['url']}" for pid in rule['productIds']);await route.fulfill(status=200,content_type='application/json',body=json.dumps({'reply':text},ensure_ascii=False));return
@@ -33,7 +34,7 @@ async def run():
      elif route.request.url.startswith(a.base+'/'):await route.continue_()
      else:await route.abort()
     await page.route('**/*',network)
-    path='/__perfume_fixture/scentisimo.html' if a.fixture_scentisimo and slug=='scentisimo' else '/s5.html';url=a.base+path+'?demo='+slug
+    path=f'/__candidate/{slug}.html' if a.package_root else ('/__perfume_fixture/scentisimo.html' if a.fixture_scentisimo and slug=='scentisimo' else '/s5.html');url=a.base+path+'?demo='+slug
     await page.goto(url,wait_until='domcontentloaded');await page.wait_for_function('()=>document.querySelector("#cosmetics-root")?.getAttribute("aria-busy")!=="true"&&document.querySelector("[data-open=chat]")');landing=await page.locator('body').inner_text();plain=''.join(c for c in unicodedata.normalize('NFD',landing) if unicodedata.category(c)!='Mn')
     assert re.search(r'447\s*€',landing) and re.search(r'10\s*€',landing);assert not re.search('skusobn|zkusebn|mesiac zdarma|mesic zdarma',plain,re.I)
     await page.screenshot(path=str(out/f'{slug}-offer-{width}.{image_format}'),**shot_options)

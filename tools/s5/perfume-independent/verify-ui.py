@@ -3,10 +3,11 @@ import argparse,asyncio,json,pathlib,datetime,re
 from playwright.async_api import async_playwright
 import os
 from urllib.parse import urlsplit
-p=argparse.ArgumentParser();p.add_argument('--engine-report',required=True);p.add_argument('--output',required=True);p.add_argument('--base',default='http://127.0.0.1:8911');p.add_argument('--slugs',nargs='+',default=['adoraniche','nicheandglow']);p.add_argument('--fixture-scentisimo',action='store_true');p.add_argument('--browser',choices=['chromium','webkit'],default='chromium');p.add_argument('--browser-executable');p.add_argument('--commit',default='8a1bb74685d6b3b67fcc817d7c7c5515816360aa');p.add_argument('--deployment-id');p.add_argument('--widths',type=int,nargs='+',default=[320,390,1280]);a=p.parse_args();image_format='png' if a.browser=='webkit' else 'webp';shot_options={'type':'png'} if a.browser=='webkit' else {'type':'webp','quality':82};
+p=argparse.ArgumentParser();p.add_argument('--engine-report',required=True);p.add_argument('--output',required=True);p.add_argument('--base',default='http://127.0.0.1:8911');p.add_argument('--slugs',nargs='+',default=['adoraniche','nicheandglow']);p.add_argument('--fixture-scentisimo',action='store_true');p.add_argument('--package-root');p.add_argument('--browser',choices=['chromium','webkit'],default='chromium');p.add_argument('--browser-executable');p.add_argument('--commit',default='8a1bb74685d6b3b67fcc817d7c7c5515816360aa');p.add_argument('--deployment-id');p.add_argument('--widths',type=int,nargs='+',default=[320,390,1280]);a=p.parse_args();image_format='png' if a.browser=='webkit' else 'webp';shot_options={'type':'png'} if a.browser=='webkit' else {'type':'webp','quality':82};
 root=pathlib.Path(__file__).resolve().parents[3];out=pathlib.Path(a.output);out.mkdir(parents=True,exist_ok=True);engine=json.loads(pathlib.Path(a.engine_report).read_text())
 report={'commit':engine['commit'],'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'qaType':'PERFUME_WORKER independent local snapshot browser QA; not live merchant or Preview QA','paidModelCalls':0,'results':[],'questionPages':[],'interactions':[],'errors':[],'blockedExternalHosts':[],'complete':False}
 if a.fixture_scentisimo:report['qaType']='Isolated local Scentisimo data/config fixture on unchanged coordinator core; API responses mocked from source IDs. NOT registered/shared backend/live/Preview QA.'
+if a.package_root:report.update({'commit':a.commit,'qaType':'Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.','scope':'Local isolated candidate fixture only.','browser':a.browser})
 if a.base.startswith('https://'):
  report.update({'commit':a.commit,'deploymentId':a.deployment_id,'baseUrl':a.base,'browser':a.browser,'tlsVerification':True,'scope':'Live unique Vercel Preview on exact supplied commit; API replies mocked/offline only. No live merchant messages or paid model calls.','qaType':'Live unique Vercel Preview on exact supplied commit; API replies mocked/offline only. No live merchant messages or paid model calls.'})
 def save():(out/'independent-ui.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
@@ -20,14 +21,14 @@ async def run():
    if proxy.hostname:launch['proxy']={'server':f'{proxy.scheme}://{proxy.hostname}:{proxy.port}'}
   browser=await getattr(pw,a.browser).launch(**launch)
   for slug in a.slugs:
-   source=json.loads((root/f'n447/s5/sources/{slug}/verified-products.json').read_text());facts={p['id']:p for p in source['products']};config=json.loads((root/f'n447/s5/perfume-fragments/{slug}.config.json').read_text())
+   source=json.loads((pathlib.Path(a.package_root)/slug/'verified-products.json' if a.package_root else root/f'n447/s5/sources/{slug}/verified-products.json').read_text());facts={p['id']:p for p in source['products']};config=json.loads((pathlib.Path(a.package_root)/slug/'config.json' if a.package_root else root/f'n447/s5/perfume-fragments/{slug}.config.json').read_text())
    for width in a.widths:
     page=await browser.new_page(ignore_https_errors=False,viewport={'width':width,'height':900},reduced_motion='reduce')
     page.on('pageerror',lambda error:report['errors'].append(str(error)))
     async def network(route):
      u=route.request.url
      if '/api/' in u:
-      if a.fixture_scentisimo and slug=='scentisimo':
+      if a.package_root or (a.fixture_scentisimo and slug=='scentisimo'):
        body=json.loads(route.request.post_data or '{}');query=body.get('messages',[{}])[-1].get('content','');rule=next((r for r in config['offlineReplyRequirements'] if r['chip']==query),None)
        if rule:
         text='\n\n'.join(f"{facts[pid]['name']} — {facts[pid]['volume']} za {facts[pid]['price']}.\n{facts[pid]['url']}" for pid in rule['productIds']);await route.fulfill(status=200,content_type='application/json',body=json.dumps({'reply':text},ensure_ascii=False));return
@@ -40,7 +41,7 @@ async def run():
       await route.abort()
     await page.route('**/*',network)
     async def open_mode(mode='advisor'):
-     path='/__perfume_fixture/scentisimo.html' if a.fixture_scentisimo and slug=='scentisimo' else '/s5.html'
+     path=f'/__candidate/{slug}.html' if a.package_root else ('/__perfume_fixture/scentisimo.html' if a.fixture_scentisimo and slug=='scentisimo' else '/s5.html')
      await page.goto(a.base+path+'?demo='+slug,wait_until='domcontentloaded');await page.wait_for_function('()=>document.querySelector("#cosmetics-root")?.getAttribute("aria-busy")!=="true"&&document.querySelector("[data-open=chat]")');await page.locator('[data-open="'+mode+'"]').click()
     seen=set()
     for leaf in engine['companies'][slug]['leaves']:
@@ -69,7 +70,7 @@ async def run():
      assert cta['y']>=bounds['y']-1 and cta['y']+cta['height']<=bounds['y']+bounds['height']+1
      progress=await page.locator('.cx-quality-progress').inner_text();assert re.search('Výsledok|Výsledek',progress)
      file=f'{slug}-result-{f["id"]}-{width}.{image_format}';await page.screenshot(path=str(out/file),**shot_options)
-     await page.locator('[data-restart]').click();assert await page.locator('[data-choice]').count()==4
+     await page.locator('[data-restart]').click();assert await page.locator('[data-choice]').count()==min(4,len(engine['companies'][slug]['questions'][0]['step']['options']))
      report['results'].append({'slug':slug,'width':width,'id':f['id'],'pack':f['volume'],'price':f['price'],'url':f['url'],'photoLoaded':True,'ctaInsideCard':True,'reset':True,'progress':progress,'screenshot':file});save()
     # Hover geometry and every offline chip; no merchant CTA is clicked.
     first=page.locator('.cx-quality-option').first;await page.mouse.move(0,0);before=await first.bounding_box();color=await first.evaluate('(e)=>getComputedStyle(e).borderColor');await first.hover();await page.wait_for_timeout(150);after=await first.bounding_box();assert abs(before['y']-after['y'])<1;assert color!=await first.evaluate('(e)=>getComputedStyle(e).borderColor')

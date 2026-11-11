@@ -1,0 +1,485 @@
+{
+  "checkedAt": "2026-11-11T06:36:19.732939+00:00",
+  "observer": "PERFUME_WORKER actual automated WebKit26.5, screenshots pending visual review",
+  "tlsVerification": true,
+  "scope": "Observed home/product session only; no absolute no-chatbot claim. No merchant submission/cart/chat.",
+  "paidModelCalls": 0,
+  "companies": {
+    "essentique": {
+      "pages": [
+        {
+          "mode": "home",
+          "requestedUrl": "https://www.essentique.sk/",
+          "finalUrl": "https://www.essentique.sk/",
+          "checkedAt": "2026-11-11T06:36:21.319293+00:00",
+          "httpStatus": 200,
+          "cookieMode": "Clicked Odmietnuť cookies",
+          "title": "Luxusné niche parfumy – odstreky a vzorky parfémov | Essentique",
+          "screenshot": "essentique-home.png",
+          "widgetLikeElements": [],
+          "iframes": [],
+          "selects": [],
+          "scriptSources": [
+            "https://www.googletagmanager.com/gtag/js?id=AW-18320643405&cx=c&gtm=4e6b91",
+            "https://www.googletagmanager.com/gtag/js?id=G-DBTW88K5SD&cx=c&gtm=4e6b91",
+            "https://connect.facebook.net/sk_SK/bundle/sdk.js/",
+            "https://cdn.myshoptet.com/prj/dist/master/shop/dist/main-3g-header.js.27c4444ba5dd6be3416d.js",
+            "https://cdn.myshoptet.com/usr/honzabartos.myshoptet.com/user/documents/completion.js?v=3",
+            "https://cdn.myshoptet.com/usr/honzabartos.myshoptet.com/user/documents/script.js?v=538",
+            "https://cdn.myshoptet.com/usr/honzabartos.myshoptet.com/user/documents/cart.js?v=55",
+            "https://www.googletagmanager.com/gtag/js?id=18320643405",
+            "https://connect.facebook.net/sk_SK/sdk.js#xfbml=1&version=v24.0",
+            "https://cdn.myshoptet.com/prj/dist/master/cms/libs/jquery/jquery-1.11.3-sec1.min.js",
+            "https://cdn.myshoptet.com/prj/dist/master/shop/dist/main-3g.js.bb0a0c30b0435607f3b5.js",
+            "https://cdn.myshoptet.com/prj/dist/master/cms/templates/frontend_templates/shared/js/jqueryui/i18n/datepicker-sk.js",
+            "https://cdn.myshoptet.com/usr/honzabartos.myshoptet.com/user/documents/theme.js?v=16",
+            "https://www.essentique.sk/user/documents/flakon.js?v=7",
+            "https://www.essentique.sk/user/documents/parametre.js"
+          ],
+          "bottomScreenshot": "essentique-home-bottom.png",
+          "relatedAdviceLinks": [
+            {
+              "text": "Ganymede vs. Aldebaran: ktorý parfum Marc-Antoine Barrois si vybrať?\nGanymede alebo Aldebaran? Dva unisex niche parfémy značky Marc-Antoine Barrois vytvoril rovnaký parfumér Quentin Bisch, no každý vonia úplne inak. Ganymede je minerálny, suchý a...\nČítať článok",
+              "url": "https://www.essentique.sk/blog/ganymede-vs--aldebaran--ktory-parfum-marc-antoine-barrois-si-vybrat-/"
+            },
+            {
+              "text": "Parfém na dovolenku: čo si pribaliť namiesto celého flakónu\nNa dovolenku si nemusíte brať celý flakón parfému. Oveľa praktickejšie je vybrať si menšie odstreky podľa toho, ako chcete voňať počas cesty, cez deň a večer. Ušetríte miesto v...\nČítať článok",
+              "url": "https://www.essentique.sk/blog/parfem-na-dovolenku--co-si-pribalit-namiesto-celeho-flakonu/"
+            }
+          ]
+        },
+        {
+          "mode": "product",
+          "requestedUrl": "https://www.essentique.sk/bois-imperial/",
+          "finalUrl": "https://www.essentique.sk/bois-imperial/",
+          "checkedAt": "2026-11-11T06:36:33.693456+00:00",
+          "httpStatus": 200,
+          "cookieMode": "Same context after home cookie action",
+          "title": "Bois Imperial – odstrek parfému (vzorka) | Essentique",
+          "screenshot": "essentique-product.png",
+          "widgetLikeElements": [
+            {
+              "tag": "A",
+              "id": "",
+              "cls": "link-icon chat",
+              "text": "Opýtať sa",
+              "visible": true
+            }
+          ],
+          "iframes": [
+            {
+              "src": "https://platform.twitter.com/widgets/tweet_button.1227a5674072e080ffb1ba14ac0c1079.sk.html#dnt=false&id=twitter-widget-0&lang=sk&original_referer=https%3A%2F%2Fwww.essentique.sk%2Fbois-imperial%2F&size=m&text=Bois%20Imperial%20%E2%80%93%20odstrek%20parf%C3%A9mu%20(vzorka)%20%7C%20Essentique&time=1794378995895&type=share&url=https%3A%2F%2Fwww.essentique.sk%2Fbois-imperial%2F",
+              "title": "X Post Button",
+              "id": "twitter-widget-0"
+            },
+            {
+              "src": "https://www.facebook.com/v24.0/plugins/share_button.php?app_id=&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df9e3eb6601c76168e%26domain%3Dwww.essentique.sk%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.essentique.sk%252Ff6c8fe222cbc36b50%26relation%3Dparent.parent&container_width=0&href=https%3A%2F%2Fwww.essentique.sk%2Fbois-imperial%2F&layout=button&locale=sk_SK&sdk=joey",
+              "title": "fb:share_button Facebook Social Plugin",
+              "id": ""
+            },
+            {
+              "src": "https://platform.twitter.com/widgets/widget_iframe.1227a5674072e080ffb1ba14ac0c1079.html?origin=https%3A%2F%2Fwww.essentique.sk",
+              "title": "Twitter settings iframe",
+              "id": ""
+            },
+            {
+              "src": "",
+              "title": "Twitter analytics iframe",
+              "id": "rufous-sandbox"
+            }
+          ],
+          "selects": [
+            {
+              "id": "parameter-id-17",
+              "name": "parameterValueId[17]",
+              "options": [
+                {
+                  "value": "",
+                  "label": "Zvoľte variant",
+                  "selected": true
+                },
+                {
+                  "value": "14",
+                  "label": "2ml",
+                  "selected": false
+                },
+                {
+                  "value": "17",
+                  "label": "3ml",
+                  "selected": false
+                },
+                {
+                  "value": "20",
+                  "label": "5ml",
+                  "selected": false
+                },
+                {
+                  "value": "23",
+                  "label": "10ml",
+                  "selected": false
+                },
+                {
+                  "value": "24",
+                  "label": "20ml",
+                  "selected": false
+                },
+                {
+                  "value": "163",
+                  "label": "30ml",
+                  "selected": false
+                }
+              ]
+            },
+            {
+              "id": "",
+              "name": "",
+              "options": [
+                {
+                  "value": "251/2ML",
+                  "label": "Objem: 2ml",
+                  "selected": false
+                },
+                {
+                  "value": "251/3ML",
+                  "label": "Objem: 3ml",
+                  "selected": true
+                },
+                {
+                  "value": "251/5ML",
+                  "label": "Objem: 5ml",
+                  "selected": false
+                },
+                {
+                  "value": "251/10M",
+                  "label": "Objem: 10ml",
+                  "selected": false
+                },
+                {
+                  "value": "251/20M",
+                  "label": "Objem: 20ml",
+                  "selected": false
+                }
+              ]
+            },
+            {
+              "id": "",
+              "name": "",
+              "options": [
+                {
+                  "value": "72/2ML",
+                  "label": "Objem: 2ml",
+                  "selected": false
+                },
+                {
+                  "value": "72/3ML",
+                  "label": "Objem: 3ml",
+                  "selected": true
+                },
+                {
+                  "value": "72/5ML",
+                  "label": "Objem: 5ml",
+                  "selected": false
+                },
+                {
+                  "value": "72/10M",
+                  "label": "Objem: 10ml",
+                  "selected": false
+                },
+                {
+                  "value": "72/20M",
+                  "label": "Objem: 20ml",
+                  "selected": false
+                }
+              ]
+            },
+            {
+              "id": "",
+              "name": "",
+              "options": [
+                {
+                  "value": "239/2ML",
+                  "label": "Objem: 2ml",
+                  "selected": false
+                },
+                {
+                  "value": "239/3ML",
+                  "label": "Objem: 3ml",
+                  "selected": true
+                },
+                {
+                  "value": "239/5ML",
+                  "label": "Objem: 5ml",
+                  "selected": false
+                },
+                {
+                  "value": "239/10M",
+                  "label": "Objem: 10ml",
+                  "selected": false
+                },
+                {
+                  "value": "239/20M",
+                  "label": "Objem: 20ml",
+                  "selected": false
+                }
+              ]
+            }
+          ],
+          "scriptSources": [
+            "https://www.googletagmanager.com/gtag/js?id=AW-18320643405&cx=c&gtm=4e6b91",
+            "https://www.googletagmanager.com/gtag/js?id=G-DBTW88K5SD&cx=c&gtm=4e6b91",
+            "https://connect.facebook.net/sk_SK/bundle/sdk.js/",
+            "https://platform.twitter.com/widgets.js",
+            "https://cdn.myshoptet.com/prj/dist/master/shop/dist/main-3g-header.js.27c4444ba5dd6be3416d.js",
+            "https://cdn.myshoptet.com/usr/honzabartos.myshoptet.com/user/documents/completion.js?v=3",
+            "https://cdn.myshoptet.com/usr/honzabartos.myshoptet.com/user/documents/script.js?v=538",
+            "https://cdn.myshoptet.com/usr/honzabartos.myshoptet.com/user/documents/cart.js?v=55",
+            "https://www.googletagmanager.com/gtag/js?id=18320643405",
+            "https://platform.twitter.com/js/button.2276a045429f6681b56da5eb1dcfa53c.js",
+            "https://connect.facebook.net/sk_SK/sdk.js#xfbml=1&version=v24.0",
+            "https://cdn.myshoptet.com/prj/dist/master/cms/libs/jquery/jquery-1.11.3-sec1.min.js",
+            "https://cdn.myshoptet.com/prj/dist/master/shop/dist/main-3g.js.bb0a0c30b0435607f3b5.js",
+            "https://cdn.myshoptet.com/prj/dist/master/cms/templates/frontend_templates/shared/js/jqueryui/i18n/datepicker-sk.js",
+            "https://cdn.myshoptet.com/usr/honzabartos.myshoptet.com/user/documents/theme.js?v=16",
+            "https://www.essentique.sk/user/documents/flakon.js?v=7",
+            "https://www.essentique.sk/user/documents/parametre.js"
+          ],
+          "productImages": [
+            {
+              "src": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/47-2_chatgpt-image-jul-15--2026--09-12-32-pm.png?ff=1&x=1024&y=768&q=85&ts=6a57dba9&sg=161563f2",
+              "width": 1024,
+              "height": 768,
+              "loaded": true
+            },
+            {
+              "src": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/related/47-2_chatgpt-image-jul-15--2026--09-12-32-pm.png?ff=1&x=100&y=100&q=85&ts=6a57dba9&sg=8dda0505",
+              "width": 100,
+              "height": 100,
+              "loaded": true
+            },
+            {
+              "src": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/related/47-1_chatgpt-image-jul-10--2026--09-28-51-am.png?ff=1&x=100&y=100&q=85&ts=6a509f41&sg=8dda0505",
+              "width": 100,
+              "height": 100,
+              "loaded": true
+            },
+            {
+              "src": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/related/47_bois-imperial--objem-10ml.png?ff=1&x=100&y=100&q=85&ts=6a0dd8de&sg=8dda0505",
+              "width": 100,
+              "height": 100,
+              "loaded": true
+            }
+          ],
+          "selectedVariant": {
+            "option": {
+              "value": "14",
+              "text": "2ml",
+              "disabled": false
+            },
+            "select": "parameter-id-17"
+          },
+          "selectedVariantScreenshot": "essentique-product-2ml.png",
+          "contactScreenshot": "essentique-question.png",
+          "bottomScreenshot": "essentique-product-bottom.png",
+          "relatedAdviceLinks": []
+        }
+      ],
+      "blockedNonReadRequests": [],
+      "uncertainty": "Only this cookie/session and visited pages inspected; third-party behavior in other consent modes remains unverified.",
+      "visualReview": "PERFUME_WORKER visually inspected rendered home, selected product and loaded seller-question modal screenshots; only this reject-cookie session.",
+      "conclusion": "No product chatbot/advisor launcher observed in this session. Ordinary seller-contact form with email/phone/message/captcha; no fields completed, no submission.",
+      "variant": {
+        "url": "https://www.essentique.sk/bois-imperial/",
+        "checkedAt": "2026-11-11T06:38:35.881714+00:00",
+        "selectedOption": "2ml",
+        "visiblePrice": "€7"
+      },
+      "staticVolumeHelp": {
+        "observedOpened": true,
+        "inputs": 0,
+        "description": "Static explanatory volume table 2/3/5/10/20/30 ml, close/understand buttons only. No branching quiz or product matching observed."
+      }
+    },
+    "fragrancesamples": {
+      "pages": [
+        {
+          "mode": "home",
+          "requestedUrl": "https://www.fragrancesamples.cz/",
+          "finalUrl": "https://www.fragrancesamples.cz/",
+          "checkedAt": "2026-11-11T06:36:44.079976+00:00",
+          "httpStatus": 200,
+          "cookieMode": "Clicked Odmítnout cookies",
+          "title": "Homepage - Fragrance Samples",
+          "screenshot": "fragrancesamples-home.png",
+          "widgetLikeElements": [],
+          "iframes": [],
+          "selects": [],
+          "scriptSources": [
+            "https://www.googletagmanager.com/gtag/js?id=AW-4080802115&cx=c&gtm=4e6b91",
+            "https://connect.facebook.net/cs_CZ/bundle/sdk.js/",
+            "https://cdn.myshoptet.com/prj/dist/master/shop/dist/main-3g-header.js.27c4444ba5dd6be3416d.js",
+            "https://www.googletagmanager.com/gtag/js?id=G-6X27NGW9T1",
+            "https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v24.0",
+            "https://cdn.myshoptet.com/prj/dist/master/cms/libs/jquery/jquery-1.11.3-sec1.min.js",
+            "https://cdn.myshoptet.com/prj/dist/master/shop/dist/main-3g.js.bb0a0c30b0435607f3b5.js",
+            "https://cdn.myshoptet.com/prj/dist/master/cms/templates/frontend_templates/shared/js/jqueryui/i18n/datepicker-cs.js"
+          ],
+          "bottomScreenshot": "fragrancesamples-home-bottom.png",
+          "relatedAdviceLinks": [
+            {
+              "text": "Příručka parfémů",
+              "url": "https://www.fragrancesamples.cz/prirucka-parfemu/"
+            },
+            {
+              "text": "Příručka parfémů",
+              "url": "https://www.fragrancesamples.cz/prirucka-parfemu/"
+            }
+          ]
+        },
+        {
+          "mode": "product",
+          "requestedUrl": "https://www.fragrancesamples.cz/mancera-french-riviera/",
+          "finalUrl": "https://www.fragrancesamples.cz/mancera-french-riviera/",
+          "checkedAt": "2026-11-11T06:36:56.188888+00:00",
+          "httpStatus": 200,
+          "cookieMode": "Same context after home cookie action",
+          "title": "Mancera French Riviera vzorek parfému - Fragrance Samples",
+          "screenshot": "fragrancesamples-product.png",
+          "widgetLikeElements": [
+            {
+              "tag": "A",
+              "id": "",
+              "cls": "link-icon chat",
+              "text": "Zeptat se",
+              "visible": true
+            }
+          ],
+          "iframes": [
+            {
+              "src": "https://platform.twitter.com/widgets/tweet_button.1227a5674072e080ffb1ba14ac0c1079.cs.html#dnt=false&id=twitter-widget-0&lang=cs&original_referer=https%3A%2F%2Fwww.fragrancesamples.cz%2Fmancera-french-riviera%2F&size=m&text=Mancera%20French%20Riviera%20vzorek%20parf%C3%A9mu%20-%20Fragrance%20Samples&time=1794379018619&type=share&url=https%3A%2F%2Fwww.fragrancesamples.cz%2Fmancera-french-riviera%2F",
+              "title": "X Post Button",
+              "id": "twitter-widget-0"
+            },
+            {
+              "src": "https://www.facebook.com/v24.0/plugins/share_button.php?app_id=&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df6e229cf16009ad67%26domain%3Dwww.fragrancesamples.cz%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.fragrancesamples.cz%252Ffae5ad8357a6dc330%26relation%3Dparent.parent&container_width=0&href=https%3A%2F%2Fwww.fragrancesamples.cz%2Fmancera-french-riviera%2F&layout=button&locale=cs_CZ&sdk=joey",
+              "title": "fb:share_button Facebook Social Plugin",
+              "id": ""
+            },
+            {
+              "src": "https://platform.twitter.com/widgets/widget_iframe.1227a5674072e080ffb1ba14ac0c1079.html?origin=https%3A%2F%2Fwww.fragrancesamples.cz",
+              "title": "Twitter settings iframe",
+              "id": ""
+            },
+            {
+              "src": "",
+              "title": "Twitter analytics iframe",
+              "id": "rufous-sandbox"
+            }
+          ],
+          "selects": [
+            {
+              "id": "parameter-id-16",
+              "name": "parameterValueId[16]",
+              "options": [
+                {
+                  "value": "",
+                  "label": "Zvolte variantu",
+                  "selected": true
+                },
+                {
+                  "value": "16",
+                  "label": "1ml",
+                  "selected": false
+                },
+                {
+                  "value": "19",
+                  "label": "2ml",
+                  "selected": false
+                },
+                {
+                  "value": "22",
+                  "label": "5ml",
+                  "selected": false
+                }
+              ]
+            }
+          ],
+          "scriptSources": [
+            "https://www.googletagmanager.com/gtag/js?id=AW-4080802115&cx=c&gtm=4e6b91",
+            "https://connect.facebook.net/cs_CZ/bundle/sdk.js/",
+            "https://platform.twitter.com/widgets.js",
+            "https://www.heureka.cz/ocm/sdk.js?source=shoptet&version=2&page=product_detail",
+            "https://cdn.myshoptet.com/prj/dist/master/shop/dist/main-3g-header.js.27c4444ba5dd6be3416d.js",
+            "https://www.googletagmanager.com/gtag/js?id=G-6X27NGW9T1",
+            "https://platform.twitter.com/js/button.2276a045429f6681b56da5eb1dcfa53c.js",
+            "https://connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v24.0",
+            "https://cdn.myshoptet.com/prj/dist/master/cms/libs/jquery/jquery-1.11.3-sec1.min.js",
+            "https://cdn.myshoptet.com/prj/dist/master/shop/dist/main-3g.js.bb0a0c30b0435607f3b5.js",
+            "https://cdn.myshoptet.com/prj/dist/master/cms/templates/frontend_templates/shared/js/jqueryui/i18n/datepicker-cs.js"
+          ],
+          "productImages": [
+            {
+              "src": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/204_e74d20ec-6395-4a82-ae42-af11a648bc9e.png?ff=1&x=1024&y=768&q=85&ts=6a3436ff&sg=161563f2",
+              "width": 1024,
+              "height": 768,
+              "loaded": true
+            },
+            {
+              "src": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/related/204_e74d20ec-6395-4a82-ae42-af11a648bc9e.png?ff=1&x=100&y=100&q=85&ts=6a3436ff&sg=8dda0505",
+              "width": 100,
+              "height": 100,
+              "loaded": true
+            },
+            {
+              "src": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/related/204-1_b297e34f-02af-4a0e-8970-cede3ac5a5e8.png?ff=1&x=100&y=100&q=85&ts=6a34372d&sg=8dda0505",
+              "width": 100,
+              "height": 100,
+              "loaded": true
+            },
+            {
+              "src": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/related/204-2_unknown-18.png?ff=1&x=100&y=100&q=85&ts=6aeb7da1&sg=8dda0505",
+              "width": 100,
+              "height": 100,
+              "loaded": true
+            }
+          ],
+          "selectedVariant": {
+            "option": {
+              "value": "19",
+              "text": "2ml",
+              "disabled": false
+            },
+            "select": "parameter-id-16"
+          },
+          "selectedVariantScreenshot": "fragrancesamples-product-2ml.png",
+          "contactScreenshot": "fragrancesamples-question.png",
+          "bottomScreenshot": "fragrancesamples-product-bottom.png",
+          "relatedAdviceLinks": [
+            {
+              "text": "Příručka parfémů",
+              "url": "https://www.fragrancesamples.cz/prirucka-parfemu/"
+            },
+            {
+              "text": "Příručka parfémů",
+              "url": "https://www.fragrancesamples.cz/prirucka-parfemu/"
+            }
+          ]
+        }
+      ],
+      "blockedNonReadRequests": [],
+      "uncertainty": "Only this cookie/session and visited pages inspected; third-party behavior in other consent modes remains unverified.",
+      "visualReview": "PERFUME_WORKER visually inspected rendered home, selected product and loaded seller-question modal screenshots; only this reject-cookie session.",
+      "conclusion": "No product chatbot/advisor launcher observed in this session. Ordinary seller-contact form with email/phone/message/captcha; no fields completed, no submission.",
+      "variant": {
+        "url": "https://www.fragrancesamples.cz/mancera-french-riviera/",
+        "checkedAt": "2026-11-11T06:38:42.542476+00:00",
+        "selectedOption": "2ml",
+        "visiblePrice": "139 Kč"
+      },
+      "staticPerfumeGuide": {
+        "url": "https://www.fragrancesamples.cz/prirucka-parfemu/",
+        "observedOpened": true,
+        "description": "Article with headings and prose; no interactive scent quiz observed."
+      }
+    }
+  }
+}

@@ -1,0 +1,3170 @@
+{
+  "checkedAt": "2026-11-11T06:40:47.385951+00:00",
+  "scope": "All locally fetched remote branch heads; official domains, aliases, operators and ICO, not slug-only. No reservation made.",
+  "remoteHeads": {
+    "refs/remotes/origin/agent/coffee-advisor-full-quality-pass": "c5cfe9727f5cb5a60bf643a960b3191e1a08c91f",
+    "refs/remotes/origin/agent/coffee-advisor-soul-rebuild": "e65fb8b60dbdd8109ecc5d0811e99c144aa135a2",
+    "refs/remotes/origin/agent/coffee-advisor-ux-upgrade": "501415ab7aca6a728f4795b8ebe9d4c4962de564",
+    "refs/remotes/origin/agent/coffee-client-ready-final": "22675bcdd7f4f3d1af7c026a86413394e547f926",
+    "refs/remotes/origin/agent/coffee-final-director-pass": "d9a10f9f9299d586f7f8d2773da9596ffdb53b8a",
+    "refs/remotes/origin/agent/coffee-final-integration": "eaf0a6ea33c6f377550021b63dd2ae640b00ef1b",
+    "refs/remotes/origin/agent/coffee-final-mobile-polish": "ae91a796ccf6a5c66503c7b0bb08c3dcf68d6773",
+    "refs/remotes/origin/agent/coffee-final-polish-2026-08-27": "429d012db267a7c177fc6fbddd9cdc171e9bcd0c",
+    "refs/remotes/origin/agent/coffee-owner-conversion-polish": "733ab119cc6e4f29de9033adf292df2dbf30226b",
+    "refs/remotes/origin/agent/coffee-owner-minimal": "59abd5f95633bbac8ac9a07103ead5bb6e771182",
+    "refs/remotes/origin/agent/coffee-owner-sales-polish-2026-08-25": "7ae1fd075f470220a04f176e0daa7cccf20dae70",
+    "refs/remotes/origin/agent/coffee-release-repair-2026-08-26": "602ab696a3c99bc0c8d8072f72a04af65374ee70",
+    "refs/remotes/origin/agent/competition-grade-v6": "4f9e9017675f7f4d853933c9b059e138643387b2",
+    "refs/remotes/origin/agent/concept-seasonal-editorial": "c2dba1e5e0766652ebb9feea4c641769c79236f3",
+    "refs/remotes/origin/agent/cosmetics-six-demos": "b61ed4fc1fd82086acaa6340feb35c0ef3ef0454",
+    "refs/remotes/origin/agent/derat-structure-rebuild": "1bc86b1f0d8495d67e13237a91611b5436dd8dde",
+    "refs/remotes/origin/agent/diamonds-premium-refinement": "675374cbc755361cb7490075d071ef48203ac4dc",
+    "refs/remotes/origin/agent/final-coffee-integration": "86a16027e70e21f0e6e4c6fc0f41c82b66fd9ac7",
+    "refs/remotes/origin/agent/final-coffee-usability-release": "72e1bdb56d8d2c6a1f0a619f52f13d9c3c5131fc",
+    "refs/remotes/origin/agent/jolka-modern-craft": "176f91a20449575ab9e4e024abe99416f07d3350",
+    "refs/remotes/origin/agent/jolka-parity-final": "4f1f066e684cec35183683aedf8528452333d5d9",
+    "refs/remotes/origin/agent/jolka-praziarnicka-chat-cleanup": "df8af50560938582346eb03b47b44323eddb050f",
+    "refs/remotes/origin/agent/jolka-premium-reference": "69022ce3a3952c65f09d84039d9b843315629fbc",
+    "refs/remotes/origin/agent/kaffa-editorial-specialty": "ca998db98f8fc168fd83a7c03b249b33f28ffa40",
+    "refs/remotes/origin/agent/modern-round-coffee-advisor": "97d56b8b3d14ff06649ee5a5a6c594c717edbb56",
+    "refs/remotes/origin/agent/mojchatbot-public-routes": "de63e107357949446e48c9cb4a24df6eb7ccdc6a",
+    "refs/remotes/origin/agent/praziarnicka-clean-rebuild": "21faae4bf81478331d11d12b96b2a941a7a86ac2",
+    "refs/remotes/origin/agent/praziarnicka-live-fix-v14": "1f438333c906b5bd3bbd15705de1d74791888a5b",
+    "refs/remotes/origin/agent/praziarnicka-premium-v9": "a250c064ce3f564f9673a6bb81fcd6348e8cb8b1",
+    "refs/remotes/origin/agent/premium-praziarnicka-sales-demo": "6d2f86da6dbdbb0d7066d6a19458004a9d4a3464",
+    "refs/remotes/origin/agent/remove-beano-refine-motion": "44d7a42883918cd49edb9a7c439d397110ea2e2f",
+    "refs/remotes/origin/agent/vitazov-conversion-system": "1d9c5e0263f2483fed95b992da3ac84dfacaa42a",
+    "refs/remotes/origin/archive/coffee-final-v1": "b0c7ba6380a2c70a1730ad17f2ec76d0b5ba50f5",
+    "refs/remotes/origin/archive/coffee-final-v2": "e8a49dae1f5da9f4144fea804dd6a42de666437c",
+    "refs/remotes/origin/archive/coffee-final-v3": "adf0e555ad4e2fa21c1e9bef1c0a4ecd1c4586df",
+    "refs/remotes/origin/archive/coffee-final-v4": "e2ecfb21e604722af4db04d02c5ff63516147058",
+    "refs/remotes/origin/archive/coffee-final-v5": "fc63ec452b8714bca21afca55066dd8f3abb7ece",
+    "refs/remotes/origin/archive/coffee-migration-v1-current": "773af687f547c4d705a3cec8a3f5312dbd880f77",
+    "refs/remotes/origin/archive/coffee-migration-v2": "4e8ea18b05f674fa86be5415c2eb8c7e45a23c95",
+    "refs/remotes/origin/archive/coffee-migration-v3": "c6f4cf7ed3c8a6fde18b68eb5cad78515d5f26f8",
+    "refs/remotes/origin/archive/coffee-migration-v4": "c26319c10372f2f50f006ed28350b00e15cd5e8e",
+    "refs/remotes/origin/archive/coffee-migration-v5": "73dc96e6e06d2bd6708583f626f71c83a80e6735",
+    "refs/remotes/origin/audit/owner-100-20260909": "20309af2ee9080e9fbf6f24d84c700aaaf4396ef",
+    "refs/remotes/origin/backup/before-codex-restore-2026-09-02-1135": "83d9ca025f8221026707b7464e145214ac6ce953",
+    "refs/remotes/origin/backup/pre-codex-full-restore-2026-09-02": "fd99e5a39312cb68802ccb1941190b461d101593",
+    "refs/remotes/origin/claude/chatbot-audit-improvement-1cavsl": "f45f3ce216befa0397b65100b6d2a527fd900311",
+    "refs/remotes/origin/claude/coffee-deep3-20261016": "0cf9b9ceee8573a0398c4d2b2de60850aee566db",
+    "refs/remotes/origin/claude/cool-mendel-hu8atk": "db54b8694f02dcd8928ae0073de7152dee2734a6",
+    "refs/remotes/origin/claude/elegant-euler-peigpv": "bf6bf79d8e261ffca5dc4d52e040c7379a9856a8",
+    "refs/remotes/origin/claude/eshop-design-fixes-7s4bhx": "7f809ad44ff068e2069a1c4ae16ddf3f3e94d65b",
+    "refs/remotes/origin/claude/gifted-euler-c9ikbq": "427590509a1268600486d50471dd2dfba9758039",
+    "refs/remotes/origin/claude/great-curie-m9eu2c": "bfdfcbc3fa2acaa039ca1d7e9d29107c496651c5",
+    "refs/remotes/origin/claude/iba-jolka-projekt-oa0ykf": "3eaa723ea271c5cb2d27dcc98f9642ec25b3e772",
+    "refs/remotes/origin/claude/jolka-audit-modernization-2wjn4m": "314c7c3f5571402d43433bff7c8ab6ba8c7de2fd",
+    "refs/remotes/origin/claude/jolka-chat-and-advisor-polish": "21769e646b258d8c4bd84326668c070a2ae6a9f1",
+    "refs/remotes/origin/claude/n447-black-20261022": "07a3e0081b84f65927932bb89785964744f60f12",
+    "refs/remotes/origin/claude/n447-coffee-primary-20261030": "59b2f978380020c1f8fff3d28707c82409a0102b",
+    "refs/remotes/origin/claude/n447-kozmetika2-20261029": "ff33a9a394d5574a7d134c90ddc844e96e0e72a6",
+    "refs/remotes/origin/claude/n447-s3a-20261105": "f418fb3b6dca6d9b57c1f1b8d7b93aae9ce93ab8",
+    "refs/remotes/origin/claude/n447-s4-20261107": "6568fc1380a3fae796f4413256c4b61fd5647e99",
+    "refs/remotes/origin/claude/n447-seria3-20261105": "fc4c4dcc8f96a425d83fa3238e6455c7b9560d0b",
+    "refs/remotes/origin/claude/nice-lovelace-k6lo35": "092e3e63755530b401a49d7d1d6576c2cc6619e1",
+    "refs/remotes/origin/codex/coffee-final-20261030": "5591161b63c4851ce91a34b804f6e7a9659495bd",
+    "refs/remotes/origin/codex/new-content-20261024": "3d89260dbb8b41c9e0eb89a582a053de7c59b556",
+    "refs/remotes/origin/codex/rozsirene-katalogy-20261009": "16c0e2433bc5034c291fa3dd3095a021e91b8113",
+    "refs/remotes/origin/codex/s5-perfume-20261110": "7ea625d912b9ceea02387f189bd9810056250d2d",
+    "refs/remotes/origin/codex/s5-solo-20261109": "954837a51905ae2997d97a090ed5172602b69020",
+    "refs/remotes/origin/coord/s5-claims": "97bab0bcdca7ca1bf3944a109d69ab259f75c92b",
+    "refs/remotes/origin/design/five-layout-proposals-20260912": "773af687f547c4d705a3cec8a3f5312dbd880f77",
+    "refs/remotes/origin/fix/all-white-surfaces-20261004": "d824b3d00f35ca271797e64edb95a4757c85f976",
+    "refs/remotes/origin/fix/chat-user-history-20261006": "b93f04f9759f2bbbbd5b1ab832eec3475ca2f590",
+    "refs/remotes/origin/fix/coffee-last-mile-2026-08-28": "530c08327cbe8d7c0b6b8c75ed0308e447c74741",
+    "refs/remotes/origin/fix/coffee-recommendations-20261016": "2ec3bd2f24524d6b710050060c8a3713a21c0c8f",
+    "refs/remotes/origin/fix/company-catalog-ai-20261006": "cd6bd5061e485a28cc516e55446f0ddf8c2dc8b8",
+    "refs/remotes/origin/fix/final-coffee-skincare-demos-20260913": "3fde12d36276b8cb5676c0e9836fb4747c601760",
+    "refs/remotes/origin/fix/rounded-question-scenes-20261011": "27708f8c7b7774dcc05a79b69680821b6d80249a",
+    "refs/remotes/origin/fix/two-advisor-tabs-20261011": "dae2aa6b7ee659fcd5b64f3644b06ebe574abed0",
+    "refs/remotes/origin/fix/visible-configurator-20261011": "f9be000f1c1c0a3f5e9a906e7fd9c9866d04dc48",
+    "refs/remotes/origin/main": "c933c8bdb4e143bc016dee82f2d14ea1e41a111d",
+    "refs/remotes/origin/migration/coffee-only-final-20260913": "82c1639a1eda4da742598d5f068b5f39e5cc96dd",
+    "refs/remotes/origin/migration/coffee-only-source-20260913": "4e6f56043daa748fab621c794b670770f062051d",
+    "refs/remotes/origin/oprava/noindex-ukazky-20261001": "4800f51c72ae87c831b97abf06441275c9579898",
+    "refs/remotes/origin/ops/vercel-all-demos-20260915": "53b65631ada5d6506c722bb62c1e4eb2a4aaa9a5",
+    "refs/remotes/origin/ops/vercel-domains-cleanup-20260915": "6a2fca60dfca1b8d8625e4f963b7b8c81fb9ba23",
+    "refs/remotes/origin/ops/websupport-subdomains-20260915": "e43cbb0ea2057fd081d506a768f59e8f8bae211b",
+    "refs/remotes/origin/preview/majersky-v13-live-20260906": "b5dc2050849cad78daffdbd3b426f1a256a1b688",
+    "refs/remotes/origin/repair/mobile-coffee-20261015": "b5e38a185091b7acc61fda9fb862551fa705592a",
+    "refs/remotes/origin/repair/quality-20261012": "bbe44b7797c0b1c586639cbc62acde791bc7bc38",
+    "refs/remotes/origin/tmp/coffee-jolka-build-safety": "0d7bb2552da7be9dce4f2b885ddf4a37f4dedaab",
+    "refs/remotes/origin/tmp/coffee-skincare-quality-2026-09-02": "fd99e5a39312cb68802ccb1941190b461d101593",
+    "refs/remotes/origin/tmp/cosmetics-polish-2026-09-02": "5f305f0619b8d505c6668ea8c179ab8a6cb62e59",
+    "refs/remotes/origin/work/coffee-jolka-standardization": "a1b327a4f56a67be7cc49fa26e937cc58a154f87"
+  },
+  "remoteCount": 92,
+  "uniqueTextBlobs": 2243,
+  "missingBlobs": [],
+  "positiveControlBlobs": 30,
+  "terms": {
+    "essentique": [
+      "essentique.sk",
+      "MOKK",
+      "57198756"
+    ],
+    "fragrancesamples": [
+      "fragrancesamples.cz",
+      "MiroLi Parfums",
+      "29615984",
+      "czechfragranceclub.cz",
+      "krasyorientu.cz"
+    ]
+  },
+  "hits": {
+    "essentique": [
+      {
+        "blob": "f01cefa1969d97a7ba503a10f570ccfee763a42c",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-client-ready-final",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-mobile-polish",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-polish-2026-08-27",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-conversion-polish",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-minimal",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-sales-polish-2026-08-25",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-release-repair-2026-08-26",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/concept-seasonal-editorial",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/cosmetics-six-demos",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/diamonds-premium-refinement",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/final-coffee-usability-release",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-premium-reference",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/kaffa-editorial-specialty",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-premium-v9",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/vitazov-conversion-system",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v1",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v2",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v3",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v4",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v5",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v1-current",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v2",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v3",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v4",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v5",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/audit/owner-100-20260909",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/before-codex-restore-2026-09-02-1135",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/pre-codex-full-restore-2026-09-02",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/chatbot-audit-improvement-1cavsl",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/coffee-deep3-20261016",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/cool-mendel-hu8atk",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/elegant-euler-peigpv",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/eshop-design-fixes-7s4bhx",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/great-curie-m9eu2c",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/iba-jolka-projekt-oa0ykf",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-black-20261022",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-coffee-primary-20261030",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-kozmetika2-20261029",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-seria3-20261105",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/nice-lovelace-k6lo35",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/coffee-final-20261030",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/new-content-20261024",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/rozsirene-katalogy-20261009",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/design/five-layout-proposals-20260912",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/all-white-surfaces-20261004",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/chat-user-history-20261006",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-last-mile-2026-08-28",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-recommendations-20261016",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/company-catalog-ai-20261006",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/final-coffee-skincare-demos-20260913",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/rounded-question-scenes-20261011",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/two-advisor-tabs-20261011",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/visible-configurator-20261011",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/main",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-final-20260913",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-source-20260913",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/oprava/noindex-ukazky-20261001",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-all-demos-20260915",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-domains-cleanup-20260915",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/websupport-subdomains-20260915",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/preview/majersky-v13-live-20260906",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/mobile-coffee-20261015",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/quality-20261012",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-jolka-build-safety",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-skincare-quality-2026-09-02",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/cosmetics-polish-2026-09-02",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          },
+          {
+            "ref": "refs/remotes/origin/work/coffee-jolka-standardization",
+            "path": "PARITY_WITH_JOLKA_AUDIT.md"
+          }
+        ]
+      },
+      {
+        "blob": "6e60feb51a9e9eee5eea8280863b7d4f9d45eef2",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-client-ready-final",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-mobile-polish",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-conversion-polish",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-minimal",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-sales-polish-2026-08-25",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-release-repair-2026-08-26",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/concept-seasonal-editorial",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/cosmetics-six-demos",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/diamonds-premium-refinement",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/final-coffee-usability-release",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-parity-final",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-praziarnicka-chat-cleanup",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-premium-reference",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/kaffa-editorial-specialty",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-clean-rebuild",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-live-fix-v14",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-premium-v9",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/vitazov-conversion-system",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/before-codex-restore-2026-09-02-1135",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/pre-codex-full-restore-2026-09-02",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/chatbot-audit-improvement-1cavsl",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/iba-jolka-projekt-oa0ykf",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-last-mile-2026-08-28",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-jolka-build-safety",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-skincare-quality-2026-09-02",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/cosmetics-polish-2026-09-02",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/work/coffee-jolka-standardization",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "54a7e02e37473580419ac484fa0925bda939868e",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-client-ready-final",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-mobile-polish",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-conversion-polish",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-minimal",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/concept-seasonal-editorial",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/cosmetics-six-demos",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/diamonds-premium-refinement",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/final-coffee-usability-release",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-parity-final",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-praziarnicka-chat-cleanup",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-premium-reference",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/kaffa-editorial-specialty",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-clean-rebuild",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-live-fix-v14",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-premium-v9",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/vitazov-conversion-system",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/iba-jolka-projekt-oa0ykf",
+            "path": "coffee-api-route.js"
+          }
+        ]
+      },
+      {
+        "blob": "9b7ad5589d30a796024b7d29ae6a66862de5349a",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-client-ready-final",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-mobile-polish",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-polish-2026-08-27",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-conversion-polish",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-minimal",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-sales-polish-2026-08-25",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-release-repair-2026-08-26",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/concept-seasonal-editorial",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/cosmetics-six-demos",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/diamonds-premium-refinement",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/final-coffee-integration",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/final-coffee-usability-release",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-parity-final",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-praziarnicka-chat-cleanup",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-premium-reference",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/kaffa-editorial-specialty",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-clean-rebuild",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-live-fix-v14",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-premium-v9",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/vitazov-conversion-system",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v1",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v2",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v3",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v4",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v5",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v1-current",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v2",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v3",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v4",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v5",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/audit/owner-100-20260909",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/before-codex-restore-2026-09-02-1135",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/pre-codex-full-restore-2026-09-02",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/chatbot-audit-improvement-1cavsl",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/coffee-deep3-20261016",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/cool-mendel-hu8atk",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/elegant-euler-peigpv",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/eshop-design-fixes-7s4bhx",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/great-curie-m9eu2c",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/iba-jolka-projekt-oa0ykf",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-black-20261022",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-coffee-primary-20261030",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-kozmetika2-20261029",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-seria3-20261105",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/nice-lovelace-k6lo35",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/coffee-final-20261030",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/new-content-20261024",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/rozsirene-katalogy-20261009",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/design/five-layout-proposals-20260912",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/all-white-surfaces-20261004",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/chat-user-history-20261006",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-last-mile-2026-08-28",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-recommendations-20261016",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/company-catalog-ai-20261006",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/final-coffee-skincare-demos-20260913",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/rounded-question-scenes-20261011",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/two-advisor-tabs-20261011",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/visible-configurator-20261011",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/main",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-final-20260913",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-source-20260913",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/oprava/noindex-ukazky-20261001",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-all-demos-20260915",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-domains-cleanup-20260915",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/websupport-subdomains-20260915",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/preview/majersky-v13-live-20260906",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/mobile-coffee-20261015",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/quality-20261012",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-jolka-build-safety",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-skincare-quality-2026-09-02",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/cosmetics-polish-2026-09-02",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/work/coffee-jolka-standardization",
+            "path": "coffee-configs.js"
+          }
+        ]
+      },
+      {
+        "blob": "a7f6ad1968192cc1fe5c8b6e024a1d6efd1addb1",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-client-ready-final",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-mobile-polish",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-conversion-polish",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-minimal",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/concept-seasonal-editorial",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/cosmetics-six-demos",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/diamonds-premium-refinement",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/final-coffee-usability-release",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-premium-reference",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/kaffa-editorial-specialty",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-premium-v9",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/vitazov-conversion-system",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/iba-jolka-projekt-oa0ykf",
+            "path": "coffee-owner-page.js"
+          }
+        ]
+      },
+      {
+        "blob": "7581cef16c1caeba0359c11b11d24116a869beb1",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-client-ready-final",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-mobile-polish",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-polish-2026-08-27",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-conversion-polish",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-minimal",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-sales-polish-2026-08-25",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-release-repair-2026-08-26",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/concept-seasonal-editorial",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/cosmetics-six-demos",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/diamonds-premium-refinement",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/final-coffee-integration",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/final-coffee-usability-release",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-parity-final",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-praziarnicka-chat-cleanup",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-premium-reference",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/kaffa-editorial-specialty",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-clean-rebuild",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-live-fix-v14",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-premium-v9",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/vitazov-conversion-system",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v1",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v2",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v3",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v4",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v5",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v1-current",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v2",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v3",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v4",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v5",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/audit/owner-100-20260909",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/before-codex-restore-2026-09-02-1135",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/pre-codex-full-restore-2026-09-02",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/chatbot-audit-improvement-1cavsl",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/coffee-deep3-20261016",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/cool-mendel-hu8atk",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/elegant-euler-peigpv",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/eshop-design-fixes-7s4bhx",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/great-curie-m9eu2c",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/iba-jolka-projekt-oa0ykf",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-black-20261022",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-coffee-primary-20261030",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-kozmetika2-20261029",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-seria3-20261105",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/nice-lovelace-k6lo35",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/coffee-final-20261030",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/new-content-20261024",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/rozsirene-katalogy-20261009",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/design/five-layout-proposals-20260912",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/all-white-surfaces-20261004",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/chat-user-history-20261006",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-last-mile-2026-08-28",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-recommendations-20261016",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/company-catalog-ai-20261006",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/final-coffee-skincare-demos-20260913",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/rounded-question-scenes-20261011",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/two-advisor-tabs-20261011",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/visible-configurator-20261011",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/main",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-final-20260913",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-source-20260913",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/oprava/noindex-ukazky-20261001",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-all-demos-20260915",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-domains-cleanup-20260915",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/websupport-subdomains-20260915",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/preview/majersky-v13-live-20260906",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/mobile-coffee-20261015",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/quality-20261012",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-jolka-build-safety",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-skincare-quality-2026-09-02",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/cosmetics-polish-2026-09-02",
+            "path": "kaffa-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/work/coffee-jolka-standardization",
+            "path": "kaffa-data.js"
+          }
+        ]
+      },
+      {
+        "blob": "c781db3362cc1498709caf8c09d3eaa861455074",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-client-ready-final",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-mobile-polish",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-polish-2026-08-27",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-conversion-polish",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-minimal",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-sales-polish-2026-08-25",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-release-repair-2026-08-26",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/concept-seasonal-editorial",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/cosmetics-six-demos",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/diamonds-premium-refinement",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/final-coffee-integration",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/final-coffee-usability-release",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-parity-final",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-praziarnicka-chat-cleanup",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-premium-reference",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/kaffa-editorial-specialty",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-clean-rebuild",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-live-fix-v14",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/praziarnicka-premium-v9",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/vitazov-conversion-system",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v1",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v2",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v3",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v4",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v5",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v1-current",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v2",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v3",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v4",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v5",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/audit/owner-100-20260909",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/before-codex-restore-2026-09-02-1135",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/pre-codex-full-restore-2026-09-02",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/chatbot-audit-improvement-1cavsl",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/coffee-deep3-20261016",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/cool-mendel-hu8atk",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/elegant-euler-peigpv",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/eshop-design-fixes-7s4bhx",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/great-curie-m9eu2c",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/iba-jolka-projekt-oa0ykf",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-black-20261022",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-coffee-primary-20261030",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-kozmetika2-20261029",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-seria3-20261105",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/nice-lovelace-k6lo35",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/coffee-final-20261030",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/new-content-20261024",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/rozsirene-katalogy-20261009",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/design/five-layout-proposals-20260912",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/all-white-surfaces-20261004",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/chat-user-history-20261006",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-last-mile-2026-08-28",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-recommendations-20261016",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/company-catalog-ai-20261006",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/final-coffee-skincare-demos-20260913",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/rounded-question-scenes-20261011",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/two-advisor-tabs-20261011",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/visible-configurator-20261011",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/main",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-final-20260913",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-source-20260913",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/oprava/noindex-ukazky-20261001",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-all-demos-20260915",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-domains-cleanup-20260915",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/websupport-subdomains-20260915",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/preview/majersky-v13-live-20260906",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/mobile-coffee-20261015",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/quality-20261012",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-jolka-build-safety",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-skincare-quality-2026-09-02",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/cosmetics-polish-2026-09-02",
+            "path": "kaffa-editorial.js"
+          },
+          {
+            "ref": "refs/remotes/origin/work/coffee-jolka-standardization",
+            "path": "kaffa-editorial.js"
+          }
+        ]
+      },
+      {
+        "blob": "854ea64f68ecae5b8f93e52655208c65ea56e136",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-client-ready-final",
+            "path": "tests/kaffa-client-ready.spec.mjs"
+          }
+        ]
+      },
+      {
+        "blob": "a7f1d1999d2320b1b9cbd5bb49bc5a4e2a1f79c5",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-director-pass",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-integration",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-modern-craft",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/modern-round-coffee-advisor",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/mojchatbot-public-routes",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "2028080e5be663111c77f372d4f89a4d2436a0cf",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-director-pass",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/jolka-modern-craft",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/modern-round-coffee-advisor",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/mojchatbot-public-routes",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/jolka-audit-modernization-2wjn4m",
+            "path": "coffee-configs.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/jolka-chat-and-advisor-polish",
+            "path": "coffee-configs.js"
+          }
+        ]
+      },
+      {
+        "blob": "762e3bf7b7383533bf46b3b8ef9d679aad0afc66",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-integration",
+            "path": "coffee-configs.js"
+          }
+        ]
+      },
+      {
+        "blob": "f9d5bfc447326965594756316b77aadbeea2c8e1",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-integration",
+            "path": "kaffa-data.js"
+          }
+        ]
+      },
+      {
+        "blob": "a3366851aa80d0a2ec6d348a1fe7f40c1d180b28",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-integration",
+            "path": "kaffa-editorial.js"
+          }
+        ]
+      },
+      {
+        "blob": "dcfad94390badf7e02cf5e15df1ef701eeaef281",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-polish-2026-08-27",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "740f2d0da5fc2e7f6235ac05e6c8e6795f7addd5",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-polish-2026-08-27",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-sales-polish-2026-08-25",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-release-repair-2026-08-26",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/before-codex-restore-2026-09-02-1135",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/pre-codex-full-restore-2026-09-02",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/chatbot-audit-improvement-1cavsl",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-last-mile-2026-08-28",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-jolka-build-safety",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-skincare-quality-2026-09-02",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/cosmetics-polish-2026-09-02",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/work/coffee-jolka-standardization",
+            "path": "coffee-api-route.js"
+          }
+        ]
+      },
+      {
+        "blob": "9024e83b255ef483b89bc0dda9dd457199cbaac8",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-polish-2026-08-27",
+            "path": "coffee-final-polish-2026-08-27.js"
+          }
+        ]
+      },
+      {
+        "blob": "324637c3727be1d135b9406183e46e61709872f5",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/coffee-final-polish-2026-08-27",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-owner-sales-polish-2026-08-25",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/agent/coffee-release-repair-2026-08-26",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/before-codex-restore-2026-09-02-1135",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/pre-codex-full-restore-2026-09-02",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/chatbot-audit-improvement-1cavsl",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-last-mile-2026-08-28",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-jolka-build-safety",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-skincare-quality-2026-09-02",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/cosmetics-polish-2026-09-02",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/work/coffee-jolka-standardization",
+            "path": "coffee-owner-page.js"
+          }
+        ]
+      },
+      {
+        "blob": "6e2aa79569b4aae3d300b5539ecf6d3a455f0584",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/agent/final-coffee-integration",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "7fc640d34efb29faa39fb8c57304d5d1f2cd9feb",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v1",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v2",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v3",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v4",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v5",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v1-current",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v2",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v3",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v4",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v5",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/audit/owner-100-20260909",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/cool-mendel-hu8atk",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/elegant-euler-peigpv",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/eshop-design-fixes-7s4bhx",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/design/five-layout-proposals-20260912",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/all-white-surfaces-20261004",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/company-catalog-ai-20261006",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/final-coffee-skincare-demos-20260913",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-final-20260913",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-source-20260913",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/oprava/noindex-ukazky-20261001",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-all-demos-20260915",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-domains-cleanup-20260915",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/websupport-subdomains-20260915",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/preview/majersky-v13-live-20260906",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "34a909c10b99635a2bf7b3f11ccd6f9dc41cd065",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v1",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v2",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v3",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v4",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v5",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v1-current",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v2",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v3",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v4",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v5",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/audit/owner-100-20260909",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/cool-mendel-hu8atk",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/eshop-design-fixes-7s4bhx",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/rozsirene-katalogy-20261009",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/design/five-layout-proposals-20260912",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/all-white-surfaces-20261004",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/chat-user-history-20261006",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-recommendations-20261016",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/company-catalog-ai-20261006",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/final-coffee-skincare-demos-20260913",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/rounded-question-scenes-20261011",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/two-advisor-tabs-20261011",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/visible-configurator-20261011",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/main",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-final-20260913",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-source-20260913",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/oprava/noindex-ukazky-20261001",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-all-demos-20260915",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-domains-cleanup-20260915",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/websupport-subdomains-20260915",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/preview/majersky-v13-live-20260906",
+            "path": "coffee-api-route.js"
+          }
+        ]
+      },
+      {
+        "blob": "0e0830895efa0a94a10b0d38cd1fbdd4e3880364",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v1",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v2",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v3",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v4",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v5",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v1-current",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v2",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v3",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v4",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v5",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/audit/owner-100-20260909",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/design/five-layout-proposals-20260912",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/final-coffee-skincare-demos-20260913",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-final-20260913",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-source-20260913",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-all-demos-20260915",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-domains-cleanup-20260915",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/websupport-subdomains-20260915",
+            "path": "coffee-owner-brand.js"
+          }
+        ]
+      },
+      {
+        "blob": "f1dc3a1fa4d3190f2e4d17c5207007dd6fecca7d",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v1",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v2",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v3",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v4",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v5",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v1-current",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v2",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v3",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v4",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v5",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/audit/owner-100-20260909",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/coffee-deep3-20261016",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/cool-mendel-hu8atk",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/elegant-euler-peigpv",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/eshop-design-fixes-7s4bhx",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/great-curie-m9eu2c",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-black-20261022",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-coffee-primary-20261030",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-kozmetika2-20261029",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-seria3-20261105",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/nice-lovelace-k6lo35",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/coffee-final-20261030",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/new-content-20261024",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/rozsirene-katalogy-20261009",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/design/five-layout-proposals-20260912",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/all-white-surfaces-20261004",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/chat-user-history-20261006",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-recommendations-20261016",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/company-catalog-ai-20261006",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/final-coffee-skincare-demos-20260913",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/rounded-question-scenes-20261011",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/two-advisor-tabs-20261011",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/visible-configurator-20261011",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/main",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-final-20260913",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-source-20260913",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/oprava/noindex-ukazky-20261001",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-all-demos-20260915",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-domains-cleanup-20260915",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/websupport-subdomains-20260915",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/preview/majersky-v13-live-20260906",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/mobile-coffee-20261015",
+            "path": "coffee-owner-page.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/quality-20261012",
+            "path": "coffee-owner-page.js"
+          }
+        ]
+      },
+      {
+        "blob": "02f01863503d1250cb08c78e81d9ff5013a7779a",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v1",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v2",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v3",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v4",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-final-v5",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v1-current",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v2",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v3",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v4",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/archive/coffee-migration-v5",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/audit/owner-100-20260909",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/before-codex-restore-2026-09-02-1135",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/backup/pre-codex-full-restore-2026-09-02",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/cool-mendel-hu8atk",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/elegant-euler-peigpv",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/eshop-design-fixes-7s4bhx",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/rozsirene-katalogy-20261009",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/design/five-layout-proposals-20260912",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/all-white-surfaces-20261004",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/chat-user-history-20261006",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/coffee-recommendations-20261016",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/company-catalog-ai-20261006",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/final-coffee-skincare-demos-20260913",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/rounded-question-scenes-20261011",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/two-advisor-tabs-20261011",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/visible-configurator-20261011",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/main",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-final-20260913",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/migration/coffee-only-source-20260913",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/oprava/noindex-ukazky-20261001",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-all-demos-20260915",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/vercel-domains-cleanup-20260915",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/ops/websupport-subdomains-20260915",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/preview/majersky-v13-live-20260906",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-jolka-build-safety",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/coffee-skincare-quality-2026-09-02",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/tmp/cosmetics-polish-2026-09-02",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/work/coffee-jolka-standardization",
+            "path": "kaffa-jolka-data.js"
+          }
+        ]
+      },
+      {
+        "blob": "e20eceacfde7669610c4f4592c94d053260d18d8",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/coffee-deep3-20261016",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-black-20261022",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-coffee-primary-20261030",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-kozmetika2-20261029",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-seria3-20261105",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/coffee-final-20261030",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/new-content-20261024",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "0904d523cf26668a689303eb7b32d8cba5619b20",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/coffee-deep3-20261016",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-black-20261022",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-coffee-primary-20261030",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-kozmetika2-20261029",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-seria3-20261105",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/coffee-final-20261030",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/new-content-20261024",
+            "path": "coffee-api-route.js"
+          }
+        ]
+      },
+      {
+        "blob": "b13f5bc5bd3edc2b1658a29384477f3dc528bae7",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/coffee-deep3-20261016",
+            "path": "coffee-catalogues/kaffa.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-black-20261022",
+            "path": "coffee-catalogues/kaffa.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-coffee-primary-20261030",
+            "path": "coffee-catalogues/kaffa.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-kozmetika2-20261029",
+            "path": "coffee-catalogues/kaffa.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-seria3-20261105",
+            "path": "coffee-catalogues/kaffa.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/nice-lovelace-k6lo35",
+            "path": "coffee-catalogues/kaffa.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/coffee-final-20261030",
+            "path": "coffee-catalogues/kaffa.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/new-content-20261024",
+            "path": "coffee-catalogues/kaffa.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/mobile-coffee-20261015",
+            "path": "coffee-catalogues/kaffa.js"
+          }
+        ]
+      },
+      {
+        "blob": "ea6bec1bd98f47f926966a658e38c75126d42b66",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/coffee-deep3-20261016",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-black-20261022",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-coffee-primary-20261030",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-kozmetika2-20261029",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-seria3-20261105",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/coffee-final-20261030",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/new-content-20261024",
+            "path": "coffee-owner-brand.js"
+          }
+        ]
+      },
+      {
+        "blob": "6cecb91753be7f726db011a81b6e419ff5eb7f88",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/coffee-deep3-20261016",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/great-curie-m9eu2c",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-black-20261022",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-coffee-primary-20261030",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-kozmetika2-20261029",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-seria3-20261105",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/nice-lovelace-k6lo35",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/coffee-final-20261030",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/new-content-20261024",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/mobile-coffee-20261015",
+            "path": "kaffa-jolka-data.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/quality-20261012",
+            "path": "kaffa-jolka-data.js"
+          }
+        ]
+      },
+      {
+        "blob": "a3549282d16fac45abf02ec53825d008e75f334c",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/cool-mendel-hu8atk",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/all-white-surfaces-20261004",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/chat-user-history-20261006",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/company-catalog-ai-20261006",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/main",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/oprava/noindex-ukazky-20261001",
+            "path": "coffee-owner-brand.js"
+          }
+        ]
+      },
+      {
+        "blob": "99774f80cdd4cba3d2c25dea05c2103abee61e03",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/elegant-euler-peigpv",
+            "path": "coffee-api-route.js"
+          }
+        ]
+      },
+      {
+        "blob": "f8798c4eca8a1ce3302975ac7e9e491f118e6f9b",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/elegant-euler-peigpv",
+            "path": "coffee-owner-brand.js"
+          }
+        ]
+      },
+      {
+        "blob": "c454de435533cb452b19b1dae233490f31bc12ad",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/eshop-design-fixes-7s4bhx",
+            "path": "coffee-owner-brand.js"
+          }
+        ]
+      },
+      {
+        "blob": "ecd65f9e3b8d5d1581f748ec01f980f6b72f3cf0",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/great-curie-m9eu2c",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "d4da543c50385d3a01715e3b0a126479e4b28372",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/great-curie-m9eu2c",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/nice-lovelace-k6lo35",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/mobile-coffee-20261015",
+            "path": "coffee-api-route.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/quality-20261012",
+            "path": "coffee-api-route.js"
+          }
+        ]
+      },
+      {
+        "blob": "02c281a7d39c92edecb20d31c8ed7bb27464377c",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/great-curie-m9eu2c",
+            "path": "coffee-catalogues/kaffa.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/quality-20261012",
+            "path": "coffee-catalogues/kaffa.js"
+          }
+        ]
+      },
+      {
+        "blob": "f2b4e9a186a65a895f06afd518322699317046c9",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/great-curie-m9eu2c",
+            "path": "coffee-owner-brand.js"
+          }
+        ]
+      },
+      {
+        "blob": "42f1302de99f6296dae3629210ed35bfa333d4fe",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/jolka-audit-modernization-2wjn4m",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/jolka-chat-and-advisor-polish",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "05a1c3075b92457408454a924284ecf478e27ab7",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/n447-s3a-20261105",
+            "path": "n447/c2/data/merrybeans.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-s4-20261107",
+            "path": "n447/c2/data/merrybeans.js"
+          },
+          {
+            "ref": "refs/remotes/origin/claude/n447-seria3-20261105",
+            "path": "n447/c2/data/merrybeans.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-20261110",
+            "path": "n447/c2/data/merrybeans.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-solo-20261109",
+            "path": "n447/c2/data/merrybeans.js"
+          }
+        ]
+      },
+      {
+        "blob": "38f03688c0edcee0c7322b0498e5a316c827ebcd",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/nice-lovelace-k6lo35",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/mobile-coffee-20261015",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "236c858e2259304677c48f791b5c7793434af799",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/claude/nice-lovelace-k6lo35",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/repair/mobile-coffee-20261015",
+            "path": "coffee-owner-brand.js"
+          }
+        ]
+      },
+      {
+        "blob": "54c121f50e6fd947b20f8c69292cb8cd67c0965a",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/rozsirene-katalogy-20261009",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/rounded-question-scenes-20261011",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/two-advisor-tabs-20261011",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/visible-configurator-20261011",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "383675ad7cffc136e52dd1dfe228a41de74144a9",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/rozsirene-katalogy-20261009",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/rounded-question-scenes-20261011",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/two-advisor-tabs-20261011",
+            "path": "coffee-owner-brand.js"
+          },
+          {
+            "ref": "refs/remotes/origin/fix/visible-configurator-20261011",
+            "path": "coffee-owner-brand.js"
+          }
+        ]
+      },
+      {
+        "blob": "d2dee89c67ce591661cb4041877c3f1b428da32a",
+        "terms": [
+          "essentique.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-20261110",
+            "path": "n447/s5/SPOLUPRACA-20261110.md"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-solo-20261109",
+            "path": "n447/s5/SPOLUPRACA-20261110.md"
+          }
+        ]
+      },
+      {
+        "blob": "5a260d0b96a65538bba41936beee807961e5109e",
+        "terms": [
+          "essentique.sk",
+          "MOKK",
+          "57198756"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-20261110",
+            "path": "n447/s5/dokazy/perfume-worker/supplementary-source-review-20261110.json"
+          }
+        ]
+      },
+      {
+        "blob": "893023c2f8f27a7b3c4336b6d8f80eb93a8e02ad",
+        "terms": [
+          "MOKK",
+          "57198756"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-20261110",
+            "path": "n447/s5/perfume-fragments/SUPPLEMENTARY-SOURCE-REVIEW-20261110.md"
+          }
+        ]
+      },
+      {
+        "blob": "dba2b99bb24afacd7c92a9eb72e1ef774069034d",
+        "terms": [
+          "essentique.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-20261110",
+            "path": "tools/s5/perfume-independent/reports/20261110-browser-recovery/shoptet-variant-source-resolved-20261110.json"
+          }
+        ]
+      },
+      {
+        "blob": "e0fef93ceabcd03d99c8e0b6577fdef8e14d9ecc",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/fix/chat-user-history-20261006",
+            "path": "api/chat.js"
+          },
+          {
+            "ref": "refs/remotes/origin/main",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "b0052fdec909b1dfddd36888992379a80c2fcc39",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/fix/coffee-recommendations-20261016",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "b44c111b348124d7219ef073116da33c645a4cdd",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/fix/coffee-recommendations-20261016",
+            "path": "coffee-owner-brand.js"
+          }
+        ]
+      },
+      {
+        "blob": "1dc57122df4280cbe39a6ff336bd676fce573245",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/fix/coffee-recommendations-20261016",
+            "path": "tests/coffee-recommendations.test.cjs"
+          }
+        ]
+      },
+      {
+        "blob": "760e21d73d37a28aadd7932d69244e1bd51a0c20",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/preview/majersky-v13-live-20260906",
+            "path": "coffee-owner-brand.js"
+          }
+        ]
+      },
+      {
+        "blob": "84991da780a157fd7d6d56255d797828c94c4ca0",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/repair/quality-20261012",
+            "path": "api/chat.js"
+          }
+        ]
+      },
+      {
+        "blob": "391bd7658608f6c8acc69e65cc4cac75334b8abc",
+        "terms": [
+          "MOKK"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/repair/quality-20261012",
+            "path": "coffee-owner-brand.js"
+          }
+        ]
+      }
+    ],
+    "fragrancesamples": [
+      {
+        "blob": "d2dee89c67ce591661cb4041877c3f1b428da32a",
+        "terms": [
+          "fragrancesamples.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-20261110",
+            "path": "n447/s5/SPOLUPRACA-20261110.md"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-solo-20261109",
+            "path": "n447/s5/SPOLUPRACA-20261110.md"
+          }
+        ]
+      },
+      {
+        "blob": "5a260d0b96a65538bba41936beee807961e5109e",
+        "terms": [
+          "fragrancesamples.cz",
+          "MiroLi Parfums",
+          "29615984",
+          "czechfragranceclub.cz",
+          "krasyorientu.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-20261110",
+            "path": "n447/s5/dokazy/perfume-worker/supplementary-source-review-20261110.json"
+          }
+        ]
+      },
+      {
+        "blob": "893023c2f8f27a7b3c4336b6d8f80eb93a8e02ad",
+        "terms": [
+          "MiroLi Parfums",
+          "29615984",
+          "czechfragranceclub.cz",
+          "krasyorientu.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-20261110",
+            "path": "n447/s5/perfume-fragments/SUPPLEMENTARY-SOURCE-REVIEW-20261110.md"
+          }
+        ]
+      },
+      {
+        "blob": "dba2b99bb24afacd7c92a9eb72e1ef774069034d",
+        "terms": [
+          "fragrancesamples.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-20261110",
+            "path": "tools/s5/perfume-independent/reports/20261110-browser-recovery/shoptet-variant-source-resolved-20261110.json"
+          }
+        ]
+      }
+    ]
+  },
+  "claimOwnership": {
+    "essentique": "NOT_CHANGED_BY_THIS_AUDIT",
+    "fragrancesamples": "NOT_CHANGED_BY_THIS_AUDIT"
+  },
+  "manualReview": {
+    "essentiqueIdentityMatchingBlobs": 4,
+    "coffeeSubstringOnlyBlobs": [
+      "f01cefa1969d97a7ba503a10f570ccfee763a42c",
+      "6e60feb51a9e9eee5eea8280863b7d4f9d45eef2",
+      "54a7e02e37473580419ac484fa0925bda939868e",
+      "9b7ad5589d30a796024b7d29ae6a66862de5349a",
+      "a7f6ad1968192cc1fe5c8b6e024a1d6efd1addb1",
+      "7581cef16c1caeba0359c11b11d24116a869beb1",
+      "c781db3362cc1498709caf8c09d3eaa861455074",
+      "854ea64f68ecae5b8f93e52655208c65ea56e136",
+      "a7f1d1999d2320b1b9cbd5bb49bc5a4e2a1f79c5",
+      "2028080e5be663111c77f372d4f89a4d2436a0cf",
+      "762e3bf7b7383533bf46b3b8ef9d679aad0afc66",
+      "f9d5bfc447326965594756316b77aadbeea2c8e1",
+      "a3366851aa80d0a2ec6d348a1fe7f40c1d180b28",
+      "dcfad94390badf7e02cf5e15df1ef701eeaef281",
+      "740f2d0da5fc2e7f6235ac05e6c8e6795f7addd5",
+      "9024e83b255ef483b89bc0dda9dd457199cbaac8",
+      "324637c3727be1d135b9406183e46e61709872f5",
+      "6e2aa79569b4aae3d300b5539ecf6d3a455f0584",
+      "7fc640d34efb29faa39fb8c57304d5d1f2cd9feb",
+      "34a909c10b99635a2bf7b3f11ccd6f9dc41cd065",
+      "0e0830895efa0a94a10b0d38cd1fbdd4e3880364",
+      "f1dc3a1fa4d3190f2e4d17c5207007dd6fecca7d",
+      "02f01863503d1250cb08c78e81d9ff5013a7779a",
+      "e20eceacfde7669610c4f4592c94d053260d18d8",
+      "0904d523cf26668a689303eb7b32d8cba5619b20",
+      "b13f5bc5bd3edc2b1658a29384477f3dc528bae7",
+      "ea6bec1bd98f47f926966a658e38c75126d42b66",
+      "6cecb91753be7f726db011a81b6e419ff5eb7f88",
+      "a3549282d16fac45abf02ec53825d008e75f334c",
+      "99774f80cdd4cba3d2c25dea05c2103abee61e03",
+      "f8798c4eca8a1ce3302975ac7e9e491f118e6f9b",
+      "c454de435533cb452b19b1dae233490f31bc12ad",
+      "ecd65f9e3b8d5d1581f748ec01f980f6b72f3cf0",
+      "d4da543c50385d3a01715e3b0a126479e4b28372",
+      "02c281a7d39c92edecb20d31c8ed7bb27464377c",
+      "f2b4e9a186a65a895f06afd518322699317046c9",
+      "42f1302de99f6296dae3629210ed35bfa333d4fe",
+      "05a1c3075b92457408454a924284ecf478e27ab7",
+      "38f03688c0edcee0c7322b0498e5a316c827ebcd",
+      "236c858e2259304677c48f791b5c7793434af799",
+      "54c121f50e6fd947b20f8c69292cb8cd67c0965a",
+      "383675ad7cffc136e52dd1dfe228a41de74144a9",
+      "e0fef93ceabcd03d99c8e0b6577fdef8e14d9ecc",
+      "b0052fdec909b1dfddd36888992379a80c2fcc39",
+      "b44c111b348124d7219ef073116da33c645a4cdd",
+      "1dc57122df4280cbe39a6ff336bd676fce573245",
+      "760e21d73d37a28aadd7932d69244e1bd51a0c20",
+      "84991da780a157fd7d6d56255d797828c94c4ca0",
+      "391bd7658608f6c8acc69e65cc4cac75334b8abc"
+    ],
+    "coffeeMeaning": "Mokka coffee terms; whole-word MOKK not present. Not a legal-operator duplicate.",
+    "matchedPreparationOnly": true,
+    "decision": "No historical registered demo/domain/operator duplicate found in available remote heads. Current preparatory source/assignment documents retained as expected matches.",
+    "relatedDomains": "Terms links to krasyorientu.cz and czechfragranceclub.cz scanned conservatively; common ownership not established."
+  }
+}
