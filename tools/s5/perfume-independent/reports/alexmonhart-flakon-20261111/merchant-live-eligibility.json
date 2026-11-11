@@ -1,0 +1,99 @@
+{
+  "checkedAt": "2026-11-11T11:42:18.761832+00:00",
+  "observer": "PERFUME_WORKER real Playwright WebKit26.5; screenshots visually inspected",
+  "tlsVerification": true,
+  "pages": [
+    {
+      "mode": "home",
+      "requestedUrl": "https://www.alexmonhart.com/",
+      "finalUrl": "https://www.alexmonhart.com/",
+      "checkedAt": "2026-11-11T11:31:00.539829+00:00",
+      "httpStatus": 200,
+      "cookieMode": "Fresh session; no consent click yet",
+      "title": "ALEXMONHART | Permanent Articles of Your Being",
+      "screenshot": "alexmonhart-home.png"
+    },
+    {
+      "mode": "product",
+      "requestedUrl": "https://www.alexmonhart.com/products/the-thinker",
+      "finalUrl": "https://www.alexmonhart.com/products/the-thinker",
+      "checkedAt": "2026-11-11T11:31:14.136330+00:00",
+      "httpStatus": 200,
+      "cookieMode": "Same fresh default session; no consent control clicked on home.",
+      "title": "ALEXMONHART | THE THINKER",
+      "screenshot": "alexmonhart-product.png"
+    },
+    {
+      "mode": "home",
+      "requestedUrl": "https://www.flakon.sk/",
+      "finalUrl": "https://www.flakon.sk/",
+      "checkedAt": "2026-11-11T11:31:29.358762+00:00",
+      "httpStatus": 200,
+      "cookieMode": "Clicked Odmietnuť cookies",
+      "title": "Vitaj v eshope Flakon – tvoj svet výnimočných vôní. - flakon.sk",
+      "screenshot": "flakon-home.png"
+    },
+    {
+      "mode": "product",
+      "requestedUrl": "https://www.flakon.sk/matiere-premiere---encens-suave/",
+      "finalUrl": "https://www.flakon.sk/matiere-premiere---encens-suave/",
+      "checkedAt": "2026-11-11T11:31:40.977164+00:00",
+      "httpStatus": 200,
+      "cookieMode": "Same context after home cookie action",
+      "title": "Matiere Premiere – Encens Suave - flakon.sk",
+      "screenshot": "flakon-product.png"
+    }
+  ],
+  "followupAt": "2026-11-11T11:39:44.568199+00:00",
+  "alexmonhart": {
+    "selectedPack": "50 ml",
+    "priceAmount": 3790,
+    "currency": "CZK",
+    "tax": "Daň zahrnuta",
+    "selectedVisibleRadio": true,
+    "widget": "No product chat/advisor launcher observed on visited home/PDP in this fresh default session. Green heart is wishlist; Veeform script present but no visible embed/quiz on these pages.",
+    "cookieMode": "Fresh default session; no consent control clicked.",
+    "photosLoaded": true
+  },
+  "flakon": {
+    "selectedPack": "2 ml",
+    "variantOption": "857",
+    "priceAmount": 9.5,
+    "currency": "EUR",
+    "stock": "Skladom5ks",
+    "cookieMode": "Odmietnuť cookies clicked on home, same session product; followup repeated rejection.",
+    "widget": "Fully loaded ordinary Otázka na predajcu form, empty email/phone/message/captcha; no submission or captcha solving. No product chat/advisor launcher observed in this cookie/session mode.",
+    "contactFields": [
+      {
+        "name": "email",
+        "type": "email",
+        "empty": true
+      },
+      {
+        "name": "surname",
+        "type": "text",
+        "empty": true
+      },
+      {
+        "name": "phone",
+        "type": "text",
+        "empty": true
+      },
+      {
+        "name": "message",
+        "type": "textarea",
+        "empty": true
+      },
+      {
+        "name": "captcha",
+        "type": "text",
+        "empty": true
+      }
+    ],
+    "photosLoaded": true
+  },
+  "scope": "Merchant eligibility only, not our demo Preview QA. Other cookie/session modes and unvisited pages unverified.",
+  "paidCalls": 0,
+  "noExplicitMerchantSubmissions": true,
+  "visualEvidenceLocalRoot": "/workspace/work/perfume-audit/alexmonhart-flakon-20261111/live"
+}

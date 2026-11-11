@@ -14,6 +14,9 @@ for row in refs:
 if '--next-pair' in sys.argv:
  terms={'essentique':['essentique.sk','MOKK','57198756'],'fragrancesamples':['fragrancesamples.cz','MiroLi Parfums','29615984','czechfragranceclub.cz','krasyorientu.cz']}
  OUT=OUT.with_name('essentique-fragrancesamples-duplicates.json')
+if '--alex-flakon' in sys.argv:
+ terms={'alexmonhart':['alexmonhart.com','ywxmda-v4.myshopify.com','Alexmonhart','05910510','info@alexmonhart.com'],'flakon':['flakon.sk','Realitygroup','Reality group','51695201','obchod@flakon.sk']}
+ OUT=ROOT/'tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/duplicates.json'
 patterns={slug:[(term,re.compile(r'\s*'.join(term) if term.isdigit() else re.escape(term),re.I)) for term in ts] for slug,ts in terms.items()}
 proc=subprocess.Popen(['git','-C',str(ROOT),'cat-file','--batch'],stdin=subprocess.PIPE,stdout=subprocess.PIPE);hits=collections.defaultdict(list);missing=[];controls=0
 for sha,loc in objects.items():

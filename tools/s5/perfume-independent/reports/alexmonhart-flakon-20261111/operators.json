@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-11-11T11:42:18.761832+00:00",
+  "companies": {
+    "alexmonhart": {
+      "operator": "Alexmonhart s.r.o.",
+      "ico": "05910510",
+      "country": "CZ",
+      "incorporated": "2017-03-14",
+      "dissolved": null,
+      "operatorSource": "https://www.alexmonhart.com/pages/shipping-return",
+      "registerSource": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05910510",
+      "contact": "info@alexmonhart.com",
+      "alias": "ywxmda-v4.myshopify.com",
+      "revenue": "UNKNOWN",
+      "size": "UNKNOWN"
+    },
+    "flakon": {
+      "operator": "Reality group, s.r.o.",
+      "ico": "51695201",
+      "country": "SK",
+      "incorporated": "2018-05-04",
+      "registerSource": "https://www.orsr.sk/vypis.asp?ID=430260&SID=5&P=0",
+      "registerStatus": "Current extract retrieved normally with HTTPS; document11.11.2026, data updated10.11.2026. Later redundant retrieval timed out; original successful bytes preserved.",
+      "operatorSource": "https://www.flakon.sk/informacie-2/vseobecne-obchodne-podmienky-pre-e-shopy/",
+      "contact": "obchod@flakon.sk",
+      "tax": "Terms explicitly total final price includes VAT; no rate asserted.",
+      "aliases": [
+        "www.flakon.sk"
+      ],
+      "revenue": "UNKNOWN",
+      "size": "UNKNOWN"
+    }
+  }
+}
