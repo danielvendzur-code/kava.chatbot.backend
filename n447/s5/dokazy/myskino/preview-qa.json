@@ -1,0 +1,74 @@
+{
+  "slug": "myskino",
+  "commit": "90b11e80a073a77ffad10c151422d3e136df1d88",
+  "deploymentId": "dpl_FirWJDaSaxP83M239Wo4LrP2pnms",
+  "preview": "https://kava-chatbot-backend-ozhickavv-danielvendzur-codes-projects.vercel.app/s5.html?demo=myskino",
+  "liveBrowser": {
+    "results": [
+      {
+        "id": "nice",
+        "price": "2 350 Kč",
+        "volume": "100 ml",
+        "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/",
+        "photoLoaded": true
+      },
+      {
+        "id": "riviera",
+        "price": "4 375 Kč",
+        "volume": "100 ml",
+        "url": "https://www.myskino.cz/bon-parfumeur-005-riviera-absolue-niche-parfem/",
+        "photoLoaded": true
+      },
+      {
+        "id": "gozo",
+        "price": "7 000 Kč",
+        "volume": "100 ml",
+        "url": "https://www.myskino.cz/jeroboam-gozo-niche-parfem/",
+        "photoLoaded": true
+      },
+      {
+        "id": "kokoa",
+        "price": "2 500 Kč",
+        "volume": "50 ml",
+        "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/",
+        "photoLoaded": true
+      },
+      {
+        "id": "saint",
+        "price": "5 250 Kč",
+        "volume": "100 ml",
+        "url": "https://www.myskino.cz/nicola-saint-honore-niche-parfem/",
+        "photoLoaded": true
+      },
+      {
+        "id": "fire",
+        "price": "4 000 Kč",
+        "volume": "75 ml",
+        "url": "https://www.myskino.cz/jovoy-fire-at-will-niche-parfem/",
+        "photoLoaded": true
+      },
+      {
+        "id": "ambrelatte",
+        "price": "2 350 Kč",
+        "volume": "100 ml",
+        "url": "https://www.myskino.cz/essential-parfums-ambre-latte-niche-parfem/",
+        "photoLoaded": true
+      }
+    ],
+    "compare": [
+      "nice",
+      "kokoa"
+    ],
+    "comparePhotosLoaded": true,
+    "chipHeightsPx": [
+      40,
+      40,
+      40,
+      40
+    ]
+  },
+  "local": {
+    "backendMockAnswers": 3
+  },
+  "paidModelCalls": 0
+}
