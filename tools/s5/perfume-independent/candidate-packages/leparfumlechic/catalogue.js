@@ -1160,7 +1160,7 @@ globalThis.CX_CATALOGUES.leparfumlechic = {
  ],
  "revenue": "UNKNOWN",
  "size": "UNKNOWN",
- "status": "RESERVED_SOURCE_LOCAL_QA_PENDING_MAIN_REGISTRY_AND_VAT_METADATA_REVIEW",
+ "status": "LOCAL_QA_PASS_PENDING_MAIN_SOURCE_REVIEW_AND_LIVE_PREVIEW",
  "notes": [
   "12distinct formulas plus one additional10ml Bois pack, not13formulas.",
   "Original title/prose mismatch Voulez-vous/DoYouLoveMe and1969description115ml/photo120ml excluded.",

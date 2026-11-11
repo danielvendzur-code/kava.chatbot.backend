@@ -1,0 +1,78 @@
+{
+  "observer": "PERFUME_WORKER actual TLS-verified WebKit",
+  "noMessagesFormsCartOrCaptcha": true,
+  "paidModelCalls": 0,
+  "pages": [
+    {
+      "mode": "home",
+      "url": "https://www.vava-voom.cz/",
+      "checkedAt": "2026-11-11T19:48:38.823000+00:00",
+      "status": 200,
+      "cookieMode": "Fresh default; no consent action yet",
+      "widgetElements": [],
+      "visibleRelevantButtons": [],
+      "iframes": [
+        {
+          "origin": "https://www.vava-voom.cz",
+          "scope": "Shopify public web-pixel sandbox; not observed chat"
+        },
+        {
+          "origin": "https://www.vava-voom.cz",
+          "scope": "Shopify public web-pixel sandbox; not observed chat"
+        }
+      ],
+      "selectedVariant": null,
+      "trackingParameterValuesOmitted": [
+        "_su_rec",
+        "_su_rec_id"
+      ]
+    },
+    {
+      "mode": "product",
+      "url": "https://www.vava-voom.cz/products/vanilla-powder?variant=49790093787464",
+      "checkedAt": "2026-11-11T19:48:51.405711+00:00",
+      "status": 200,
+      "cookieMode": "Fresh default; no consent action yet",
+      "widgetElements": [],
+      "visibleRelevantButtons": [],
+      "iframes": [
+        {
+          "origin": "https://www.vava-voom.cz",
+          "scope": "Shopify public web-pixel sandbox; not observed chat"
+        },
+        {
+          "origin": "https://www.vava-voom.cz",
+          "scope": "Shopify public web-pixel sandbox; not observed chat"
+        }
+      ],
+      "selectedVariant": {
+        "id": 49790093787464,
+        "title": "100 ml",
+        "available": true,
+        "price": 625000
+      },
+      "trackingParameterValuesOmitted": [
+        "_su_rec",
+        "_su_rec_id"
+      ]
+    }
+  ],
+  "actualVisualReview": "Initial clear home/PDP, initial newsletter-reappeared bottoms and followup clear bottoms actually visually reviewed. Ordinary left Heureka Ověřeno zákazníky tab at PDP bottom is reviews, not a product advisor.",
+  "observedWidgetMode": "No visible product-chat, advisor or quiz launcher on these visited pages/default-cookie regime; ordinary samples collection link, other pages/session modes unknown.",
+  "newsletter": "Dismissed explicit visible type=button Close without input/submit",
+  "siteToast": "Home ordinary The ids field is required toast observed after close, no user form filled/submitted; not evidence of an AI widget.",
+  "bottomFollowup": [
+    {
+      "mode": "home",
+      "bottomCheckedAt": "2026-11-11T20:26:02.271227+00:00",
+      "bottomNewsletterDismissedWithoutInput": true,
+      "visibleBottomChatAdvisorButtons": []
+    },
+    {
+      "mode": "product",
+      "bottomCheckedAt": "2026-11-11T20:26:11.824039+00:00",
+      "bottomNewsletterDismissedWithoutInput": true,
+      "visibleBottomChatAdvisorButtons": []
+    }
+  ]
+}

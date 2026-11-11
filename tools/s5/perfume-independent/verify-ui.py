@@ -78,7 +78,7 @@ async def run():
      if a.result_extras_review:
       assert await page.locator('[data-fragrance-result="enhanced"]').count()==1
       row={'slug':slug,'width':width,'id':f['id'],'defaultScreenshot':file,'defaultUnchecked':True}
-      extra=page.locator('[data-fragrance-extra]');variants=f['source'].get('upsellVariants',[]);assert await extra.count()==int(bool(variants))
+      extra=page.locator('[data-fragrance-extra]');variants=f['source'].get('upsellVariants',[]);supplement_id=config['registryObject'].get('fragranceResultExtras',{}).get('addonProductIdsByParent',{}).get(f['id']);variants=([facts[supplement_id]] if supplement_id else variants);assert await extra.count()==int(bool(variants))
       def amount(s):return float(re.sub(r'[^0-9,.]','',s).replace(',','.'))
       if variants:
        v=variants[0];assert not await extra.is_checked();assert await page.locator('.fr-extra-pack a').get_attribute('href')==v['url']

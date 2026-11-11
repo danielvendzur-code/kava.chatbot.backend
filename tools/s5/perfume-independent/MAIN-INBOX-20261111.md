@@ -1,3 +1,15 @@
+# MAIN Codex — latest integration checkpoint
+
+Read VAVAVOOM-HANDOFF-20261111.md first. Latest own branch codex/s5-perfume-20261110 contains complete VAVAVOOM12fragrance+1optional body product package,15assets and four authorized proof ZIPs14,454,000B (144local+6merchant frames). All sources/320/390/1280 local checks pass; final live Preview remains pending MAIN integration. No shared runtime/backend/registry edits or worker deployment.
+
+Import the NEW result-extras/fragrance-result-extras.js proposal ONCE, per result-extras/MAIN-HANDOFF-20261111.md. Supports MYSKINO verified smaller variants, Le exact smaller SKU and VAVAVOOM honest body supplement. Existing corec9 unchanged, no second sample/core fix. MAIN owns optional loader/registry/backend integration. Final9actual checked→reset regression checks across3brands plus non-opt-in Orion pass. Main MYSKINO baseline7Preview results85ed8bc do not cover this new module.
+
+Le Parfum12fragrances/15assets/126local proof frames at preceding07609ce5 is SOURCE_REVIEW: VAT metadata contradiction and failed fresh register refresh; do not send yet. This checkpoint synchronizes its catalogue/facts/config metadata status; prices/products untouched. Exact LEPARFUM-HANDOFF-20261111.md.
+
+Seven additional isolated source companies now carry74distinct fragrance formulas in total, plus one honest body supplement; this is NOT a new finished/live-Preview count. Alexmonhart/Flakon and Orion/Inspirované prior exact handoffs below remain current. Original Scentisimo/Essentique/FragranceSamples archives preserved; Safran and other MAIN-owned firms untouched.447+10 unchanged; all outreach plain NOT_READY, no mail app changes.
+
+---
+
 # MAIN Codex — concrete integration inbox
 
 Newest result improvement checkpoint425ee713dbb6f0e3c615df39506ac4f625a547d2 on codex/s5-perfume-20261110. Main90b11e80a073a77ffad10c151422d3e136df1d88 already integrated the original MYSKINO source, NOT the new opt-in result module. No shared runtime/core/registry/backend edited by PERFUME_WORKER.
@@ -20,3 +32,5 @@ Original Essentique/FragranceSamples packages and Scentisimo archives are unchan
 For tomorrow12Nov2026: own complete live Preview all-result QA of the actual final integrated version is still required. READY alone is not QA; source-only or old-layout checks do not establish the new module's live result. Outreach files are plain NOT_READY text drafts only, no mail app operation, no queued/sent messages. Orion/MYSKINO PRICING_REVIEW; revenueUNKNOWN, no guaranteed interest or sale.
 
 Newest additional package: Le Parfum & Le Chic12fragrances/15assets/126local frames, `LEPARFUM-HANDOFF-20261111.md`. Explicit SOURCE_REVIEW for VAT metadata contradiction and failed fresh register refresh; do not send outreach yet. Updated result module validates separate exact same-formula smaller SKU (Bois10ml26€), original MYSKINO regression and reset/isolation checks pass. MAIN baseline MYSKINO7Preview checks85ed8bc do not cover this new module.
+
+Newest VAVAVOOM package: VAVAVOOM-HANDOFF-20261111.md,12fragrances+one honest optional300mlbody product/15assets/144local states+6merchant frames. MAIN imports proposed result module once, flag is explicit; body supplement leaves originalc9tree12leaves unchanged.9reset/regression checks plus non-opt-in control PASS. FourQA ZIPs stored under /tools. No Preview/production/email claim. Le metadata status synchronization included, VAT/register reviews remain.

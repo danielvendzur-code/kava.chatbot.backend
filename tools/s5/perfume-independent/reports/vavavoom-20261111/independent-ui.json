@@ -1,0 +1,1443 @@
+{
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "at": "2026-11-11T20:17:10.866917+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "lime",
+      "pack": "100 ml",
+      "price": "4 500 Kč",
+      "url": "https://www.vava-voom.cz/products/bohemian-lime?variant=54228820230472",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-lime-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "ginger",
+      "pack": "100 ml",
+      "price": "4 500 Kč",
+      "url": "https://www.vava-voom.cz/products/ingenious-ginger?variant=54228825997640",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-ginger-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "metal",
+      "pack": "100 ml",
+      "price": "6 250 Kč",
+      "url": "https://www.vava-voom.cz/products/metal-lavender?variant=52960624050504",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-metal-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "portrait",
+      "pack": "50 ml",
+      "price": "6 350 Kč",
+      "url": "https://www.vava-voom.cz/products/portrait-of-a-lady-2?variant=51510624878920",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-portrait-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "santal",
+      "pack": "100 ml",
+      "price": "6 250 Kč",
+      "url": "https://www.vava-voom.cz/products/santal-austral?variant=50066858410312",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-santal-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "shade",
+      "pack": "100 ml",
+      "price": "3 990 Kč",
+      "url": "https://www.vava-voom.cz/products/shade-of-blue?variant=54027698438472",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-shade-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "vanilla",
+      "pack": "100 ml",
+      "price": "6 250 Kč",
+      "url": "https://www.vava-voom.cz/products/vanilla-powder?variant=49790093787464",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-vanilla-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "silky",
+      "pack": "100 ml",
+      "price": "5 950 Kč",
+      "url": "https://www.vava-voom.cz/products/silky-woods?variant=54228828881224",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-silky-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "northern",
+      "pack": "100 ml",
+      "price": "8 800 Kč",
+      "url": "https://www.vava-voom.cz/products/northern-love?variant=53936386638152",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-northern-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "spicy",
+      "pack": "100 ml",
+      "price": "3 990 Kč",
+      "url": "https://www.vava-voom.cz/products/spicy-road?variant=52960493666632",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-spicy-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "rudis",
+      "pack": "75 ml",
+      "price": "5 750 Kč",
+      "url": "https://www.vava-voom.cz/products/rudis?variant=50423378084168",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-rudis-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "east",
+      "pack": "100 ml",
+      "price": "3 850 Kč",
+      "url": "https://www.vava-voom.cz/products/east?variant=52409386959176",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-east-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "lime",
+      "pack": "100 ml",
+      "price": "4 500 Kč",
+      "url": "https://www.vava-voom.cz/products/bohemian-lime?variant=54228820230472",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-lime-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "ginger",
+      "pack": "100 ml",
+      "price": "4 500 Kč",
+      "url": "https://www.vava-voom.cz/products/ingenious-ginger?variant=54228825997640",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-ginger-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "metal",
+      "pack": "100 ml",
+      "price": "6 250 Kč",
+      "url": "https://www.vava-voom.cz/products/metal-lavender?variant=52960624050504",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-metal-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "portrait",
+      "pack": "50 ml",
+      "price": "6 350 Kč",
+      "url": "https://www.vava-voom.cz/products/portrait-of-a-lady-2?variant=51510624878920",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-portrait-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "santal",
+      "pack": "100 ml",
+      "price": "6 250 Kč",
+      "url": "https://www.vava-voom.cz/products/santal-austral?variant=50066858410312",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-santal-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "shade",
+      "pack": "100 ml",
+      "price": "3 990 Kč",
+      "url": "https://www.vava-voom.cz/products/shade-of-blue?variant=54027698438472",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-shade-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "vanilla",
+      "pack": "100 ml",
+      "price": "6 250 Kč",
+      "url": "https://www.vava-voom.cz/products/vanilla-powder?variant=49790093787464",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-vanilla-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "silky",
+      "pack": "100 ml",
+      "price": "5 950 Kč",
+      "url": "https://www.vava-voom.cz/products/silky-woods?variant=54228828881224",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-silky-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "northern",
+      "pack": "100 ml",
+      "price": "8 800 Kč",
+      "url": "https://www.vava-voom.cz/products/northern-love?variant=53936386638152",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-northern-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "spicy",
+      "pack": "100 ml",
+      "price": "3 990 Kč",
+      "url": "https://www.vava-voom.cz/products/spicy-road?variant=52960493666632",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-spicy-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "rudis",
+      "pack": "75 ml",
+      "price": "5 750 Kč",
+      "url": "https://www.vava-voom.cz/products/rudis?variant=50423378084168",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-rudis-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "east",
+      "pack": "100 ml",
+      "price": "3 850 Kč",
+      "url": "https://www.vava-voom.cz/products/east?variant=52409386959176",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-east-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "lime",
+      "pack": "100 ml",
+      "price": "4 500 Kč",
+      "url": "https://www.vava-voom.cz/products/bohemian-lime?variant=54228820230472",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-lime-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "ginger",
+      "pack": "100 ml",
+      "price": "4 500 Kč",
+      "url": "https://www.vava-voom.cz/products/ingenious-ginger?variant=54228825997640",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-ginger-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "metal",
+      "pack": "100 ml",
+      "price": "6 250 Kč",
+      "url": "https://www.vava-voom.cz/products/metal-lavender?variant=52960624050504",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-metal-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "portrait",
+      "pack": "50 ml",
+      "price": "6 350 Kč",
+      "url": "https://www.vava-voom.cz/products/portrait-of-a-lady-2?variant=51510624878920",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-portrait-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "santal",
+      "pack": "100 ml",
+      "price": "6 250 Kč",
+      "url": "https://www.vava-voom.cz/products/santal-austral?variant=50066858410312",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-santal-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "shade",
+      "pack": "100 ml",
+      "price": "3 990 Kč",
+      "url": "https://www.vava-voom.cz/products/shade-of-blue?variant=54027698438472",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-shade-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "vanilla",
+      "pack": "100 ml",
+      "price": "6 250 Kč",
+      "url": "https://www.vava-voom.cz/products/vanilla-powder?variant=49790093787464",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-vanilla-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "silky",
+      "pack": "100 ml",
+      "price": "5 950 Kč",
+      "url": "https://www.vava-voom.cz/products/silky-woods?variant=54228828881224",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-silky-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "northern",
+      "pack": "100 ml",
+      "price": "8 800 Kč",
+      "url": "https://www.vava-voom.cz/products/northern-love?variant=53936386638152",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-northern-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "spicy",
+      "pack": "100 ml",
+      "price": "3 990 Kč",
+      "url": "https://www.vava-voom.cz/products/spicy-road?variant=52960493666632",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-spicy-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "rudis",
+      "pack": "75 ml",
+      "price": "5 750 Kč",
+      "url": "https://www.vava-voom.cz/products/rudis?variant=50423378084168",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-rudis-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "east",
+      "pack": "100 ml",
+      "price": "3 850 Kč",
+      "url": "https://www.vava-voom.cz/products/east?variant=52409386959176",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-east-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy a levandule",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Květy a jemná dřeva",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Vanilka a sladké akordy",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "dark",
+          "text": "Koření, kůže a oud",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-0-320.png",
+      "presentationDeltaAt": "2026-11-11T20:22:03.618552+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "lime",
+          "text": "Limeta, koriandr a vetiver\nLimeta, koriandr a vetiver.",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "ginger",
+          "text": "Zázvorový květ, mandarinka a magnólie\nZázvorový květ, mandarinka a magnólie.",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        },
+        {
+          "id": "metal",
+          "text": "Levandule, pižmo a kašmeran\nLevandule, pižmo a kašmeran.",
+          "photo": "/assets/s3/scenes-k2/lavender-bunch.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-1-320.png",
+      "presentationDeltaAt": "2026-11-11T20:22:06.075731+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "portrait",
+          "text": "Růže, malina a pačuli\nRůže, malina a pačuli.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "santal",
+          "text": "Kosatec, santal a tonka\nKosatec, santal a tonka.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "shade",
+          "text": "Levandule, myrha a karamel\nLevandule, myrha a karamel.",
+          "photo": "/assets/s5/vavavoom/shade.webp"
+        }
+      ],
+      "screenshot": "vavavoom-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-2-320.png",
+      "presentationDeltaAt": "2026-11-11T20:22:08.416494+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "vanilla",
+          "text": "Kokosový pudr, vanilka a palo santo\nKokosový pudr, vanilka a palo santo.",
+          "photo": "/assets/s3/scenes-k2/coconut.jpg"
+        },
+        {
+          "id": "silky",
+          "text": "Vanilka, tabák a agarové dřevo\nVanilka, tabák a agarové dřevo.",
+          "photo": "/assets/s5/vavavoom/silky.webp"
+        },
+        {
+          "id": "northern",
+          "text": "Speculoos, vanilka a jasmín\nSpeculoos, vanilka a jasmín.",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-3-320.png",
+      "presentationDeltaAt": "2026-11-11T20:22:10.973736+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "spicy",
+          "text": "Pepř, kadidlo a cedr\nPepř, kadidlo a cedr.",
+          "photo": "/assets/s5/vavavoom/spicy.webp"
+        },
+        {
+          "id": "rudis",
+          "text": "Hroznové víno, šafrán a kůže\nHroznové víno, šafrán a kůže.",
+          "photo": "/assets/s3/scenes-k2/grapes.jpg"
+        },
+        {
+          "id": "east",
+          "text": "Maliny, oud a kůže\nMaliny, oud a kůže.",
+          "photo": "/assets/s3/scenes-k2/raspberries.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-5-320.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-4-320.png",
+      "presentationDeltaAt": "2026-11-11T20:22:13.047556+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy a levandule",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Květy a jemná dřeva",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Vanilka a sladké akordy",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "dark",
+          "text": "Koření, kůže a oud",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-0-390.png",
+      "presentationDeltaAt": "2026-11-11T20:22:15.977321+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "lime",
+          "text": "Limeta, koriandr a vetiver\nLimeta, koriandr a vetiver.",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "ginger",
+          "text": "Zázvorový květ, mandarinka a magnólie\nZázvorový květ, mandarinka a magnólie.",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        },
+        {
+          "id": "metal",
+          "text": "Levandule, pižmo a kašmeran\nLevandule, pižmo a kašmeran.",
+          "photo": "/assets/s3/scenes-k2/lavender-bunch.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-1-390.png",
+      "presentationDeltaAt": "2026-11-11T20:22:19.032237+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "portrait",
+          "text": "Růže, malina a pačuli\nRůže, malina a pačuli.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "santal",
+          "text": "Kosatec, santal a tonka\nKosatec, santal a tonka.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "shade",
+          "text": "Levandule, myrha a karamel\nLevandule, myrha a karamel.",
+          "photo": "/assets/s5/vavavoom/shade.webp"
+        }
+      ],
+      "screenshot": "vavavoom-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-2-390.png",
+      "presentationDeltaAt": "2026-11-11T20:22:21.502646+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "vanilla",
+          "text": "Kokosový pudr, vanilka a palo santo\nKokosový pudr, vanilka a palo santo.",
+          "photo": "/assets/s3/scenes-k2/coconut.jpg"
+        },
+        {
+          "id": "silky",
+          "text": "Vanilka, tabák a agarové dřevo\nVanilka, tabák a agarové dřevo.",
+          "photo": "/assets/s5/vavavoom/silky.webp"
+        },
+        {
+          "id": "northern",
+          "text": "Speculoos, vanilka a jasmín\nSpeculoos, vanilka a jasmín.",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-3-390.png",
+      "presentationDeltaAt": "2026-11-11T20:22:24.907535+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "spicy",
+          "text": "Pepř, kadidlo a cedr\nPepř, kadidlo a cedr.",
+          "photo": "/assets/s5/vavavoom/spicy.webp"
+        },
+        {
+          "id": "rudis",
+          "text": "Hroznové víno, šafrán a kůže\nHroznové víno, šafrán a kůže.",
+          "photo": "/assets/s3/scenes-k2/grapes.jpg"
+        },
+        {
+          "id": "east",
+          "text": "Maliny, oud a kůže\nMaliny, oud a kůže.",
+          "photo": "/assets/s3/scenes-k2/raspberries.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-5-390.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-4-390.png",
+      "presentationDeltaAt": "2026-11-11T20:22:27.381950+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy a levandule",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Květy a jemná dřeva",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Vanilka a sladké akordy",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "dark",
+          "text": "Koření, kůže a oud",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-0-1280.png",
+      "presentationDeltaAt": "2026-11-11T20:22:32.422522+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "lime",
+          "text": "Limeta, koriandr a vetiver\nLimeta, koriandr a vetiver.",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "ginger",
+          "text": "Zázvorový květ, mandarinka a magnólie\nZázvorový květ, mandarinka a magnólie.",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        },
+        {
+          "id": "metal",
+          "text": "Levandule, pižmo a kašmeran\nLevandule, pižmo a kašmeran.",
+          "photo": "/assets/s3/scenes-k2/lavender-bunch.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-1-1280.png",
+      "presentationDeltaAt": "2026-11-11T20:22:34.505923+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "portrait",
+          "text": "Růže, malina a pačuli\nRůže, malina a pačuli.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "santal",
+          "text": "Kosatec, santal a tonka\nKosatec, santal a tonka.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "shade",
+          "text": "Levandule, myrha a karamel\nLevandule, myrha a karamel.",
+          "photo": "/assets/s5/vavavoom/shade.webp"
+        }
+      ],
+      "screenshot": "vavavoom-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-2-1280.png",
+      "presentationDeltaAt": "2026-11-11T20:22:37.701555+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "vanilla",
+          "text": "Kokosový pudr, vanilka a palo santo\nKokosový pudr, vanilka a palo santo.",
+          "photo": "/assets/s3/scenes-k2/coconut.jpg"
+        },
+        {
+          "id": "silky",
+          "text": "Vanilka, tabák a agarové dřevo\nVanilka, tabák a agarové dřevo.",
+          "photo": "/assets/s5/vavavoom/silky.webp"
+        },
+        {
+          "id": "northern",
+          "text": "Speculoos, vanilka a jasmín\nSpeculoos, vanilka a jasmín.",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-3-1280.png",
+      "presentationDeltaAt": "2026-11-11T20:22:41.015688+00:00",
+      "language": "cs"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "spicy",
+          "text": "Pepř, kadidlo a cedr\nPepř, kadidlo a cedr.",
+          "photo": "/assets/s5/vavavoom/spicy.webp"
+        },
+        {
+          "id": "rudis",
+          "text": "Hroznové víno, šafrán a kůže\nHroznové víno, šafrán a kůže.",
+          "photo": "/assets/s3/scenes-k2/grapes.jpg"
+        },
+        {
+          "id": "east",
+          "text": "Maliny, oud a kůže\nMaliny, oud a kůže.",
+          "photo": "/assets/s3/scenes-k2/raspberries.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-5-1280.png",
+      "loaded": true,
+      "noPageOverflow": true,
+      "presentationDeltaSource": "vavavoom-question-delta-4-1280.png",
+      "presentationDeltaAt": "2026-11-11T20:22:43.888260+00:00",
+      "language": "cs"
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "metal",
+        "spicy"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "vavavoom-compare-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "metal",
+        "spicy"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "vavavoom-compare-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "metal",
+        "spicy"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "vavavoom-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "enrichedStates": [
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "lime",
+      "defaultScreenshot": "vavavoom-result-lime-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-lime-320.png",
+      "compareScreenshot": "vavavoom-pair-lime-320.png",
+      "comparisonIds": [
+        "lime",
+        "ginger"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "ginger",
+      "defaultScreenshot": "vavavoom-result-ginger-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-ginger-320.png",
+      "compareScreenshot": "vavavoom-pair-ginger-320.png",
+      "comparisonIds": [
+        "ginger",
+        "metal"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "metal",
+      "defaultScreenshot": "vavavoom-result-metal-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-metal-320.png",
+      "compareScreenshot": "vavavoom-pair-metal-320.png",
+      "comparisonIds": [
+        "metal",
+        "lime"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "portrait",
+      "defaultScreenshot": "vavavoom-result-portrait-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-portrait-320.png",
+      "compareScreenshot": "vavavoom-pair-portrait-320.png",
+      "comparisonIds": [
+        "portrait",
+        "santal"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "santal",
+      "defaultScreenshot": "vavavoom-result-santal-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-santal-320.png",
+      "compareScreenshot": "vavavoom-pair-santal-320.png",
+      "comparisonIds": [
+        "santal",
+        "shade"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "shade",
+      "defaultScreenshot": "vavavoom-result-shade-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-shade-320.png",
+      "compareScreenshot": "vavavoom-pair-shade-320.png",
+      "comparisonIds": [
+        "shade",
+        "portrait"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "vanilla",
+      "defaultScreenshot": "vavavoom-result-vanilla-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "7 750 Kč",
+      "selectedScreenshot": "vavavoom-selected-vanilla-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vavavoom-notes-vanilla-320.png",
+      "compareScreenshot": "vavavoom-pair-vanilla-320.png",
+      "comparisonIds": [
+        "vanilla",
+        "silky"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "silky",
+      "defaultScreenshot": "vavavoom-result-silky-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-silky-320.png",
+      "compareScreenshot": "vavavoom-pair-silky-320.png",
+      "comparisonIds": [
+        "silky",
+        "northern"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "northern",
+      "defaultScreenshot": "vavavoom-result-northern-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-northern-320.png",
+      "compareScreenshot": "vavavoom-pair-northern-320.png",
+      "comparisonIds": [
+        "northern",
+        "vanilla"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "spicy",
+      "defaultScreenshot": "vavavoom-result-spicy-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-spicy-320.png",
+      "compareScreenshot": "vavavoom-pair-spicy-320.png",
+      "comparisonIds": [
+        "spicy",
+        "rudis"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "rudis",
+      "defaultScreenshot": "vavavoom-result-rudis-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-rudis-320.png",
+      "compareScreenshot": "vavavoom-pair-rudis-320.png",
+      "comparisonIds": [
+        "rudis",
+        "east"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "east",
+      "defaultScreenshot": "vavavoom-result-east-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-east-320.png",
+      "compareScreenshot": "vavavoom-pair-east-320.png",
+      "comparisonIds": [
+        "east",
+        "spicy"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "lime",
+      "defaultScreenshot": "vavavoom-result-lime-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-lime-390.png",
+      "compareScreenshot": "vavavoom-pair-lime-390.png",
+      "comparisonIds": [
+        "lime",
+        "ginger"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "ginger",
+      "defaultScreenshot": "vavavoom-result-ginger-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-ginger-390.png",
+      "compareScreenshot": "vavavoom-pair-ginger-390.png",
+      "comparisonIds": [
+        "ginger",
+        "metal"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "metal",
+      "defaultScreenshot": "vavavoom-result-metal-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-metal-390.png",
+      "compareScreenshot": "vavavoom-pair-metal-390.png",
+      "comparisonIds": [
+        "metal",
+        "lime"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "portrait",
+      "defaultScreenshot": "vavavoom-result-portrait-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-portrait-390.png",
+      "compareScreenshot": "vavavoom-pair-portrait-390.png",
+      "comparisonIds": [
+        "portrait",
+        "santal"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "santal",
+      "defaultScreenshot": "vavavoom-result-santal-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-santal-390.png",
+      "compareScreenshot": "vavavoom-pair-santal-390.png",
+      "comparisonIds": [
+        "santal",
+        "shade"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "shade",
+      "defaultScreenshot": "vavavoom-result-shade-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-shade-390.png",
+      "compareScreenshot": "vavavoom-pair-shade-390.png",
+      "comparisonIds": [
+        "shade",
+        "portrait"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "vanilla",
+      "defaultScreenshot": "vavavoom-result-vanilla-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "7 750 Kč",
+      "selectedScreenshot": "vavavoom-selected-vanilla-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vavavoom-notes-vanilla-390.png",
+      "compareScreenshot": "vavavoom-pair-vanilla-390.png",
+      "comparisonIds": [
+        "vanilla",
+        "silky"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "silky",
+      "defaultScreenshot": "vavavoom-result-silky-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-silky-390.png",
+      "compareScreenshot": "vavavoom-pair-silky-390.png",
+      "comparisonIds": [
+        "silky",
+        "northern"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "northern",
+      "defaultScreenshot": "vavavoom-result-northern-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-northern-390.png",
+      "compareScreenshot": "vavavoom-pair-northern-390.png",
+      "comparisonIds": [
+        "northern",
+        "vanilla"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "spicy",
+      "defaultScreenshot": "vavavoom-result-spicy-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-spicy-390.png",
+      "compareScreenshot": "vavavoom-pair-spicy-390.png",
+      "comparisonIds": [
+        "spicy",
+        "rudis"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "rudis",
+      "defaultScreenshot": "vavavoom-result-rudis-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-rudis-390.png",
+      "compareScreenshot": "vavavoom-pair-rudis-390.png",
+      "comparisonIds": [
+        "rudis",
+        "east"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "east",
+      "defaultScreenshot": "vavavoom-result-east-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-east-390.png",
+      "compareScreenshot": "vavavoom-pair-east-390.png",
+      "comparisonIds": [
+        "east",
+        "spicy"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "lime",
+      "defaultScreenshot": "vavavoom-result-lime-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-lime-1280.png",
+      "compareScreenshot": "vavavoom-pair-lime-1280.png",
+      "comparisonIds": [
+        "lime",
+        "ginger"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "ginger",
+      "defaultScreenshot": "vavavoom-result-ginger-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-ginger-1280.png",
+      "compareScreenshot": "vavavoom-pair-ginger-1280.png",
+      "comparisonIds": [
+        "ginger",
+        "metal"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "metal",
+      "defaultScreenshot": "vavavoom-result-metal-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-metal-1280.png",
+      "compareScreenshot": "vavavoom-pair-metal-1280.png",
+      "comparisonIds": [
+        "metal",
+        "lime"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "portrait",
+      "defaultScreenshot": "vavavoom-result-portrait-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-portrait-1280.png",
+      "compareScreenshot": "vavavoom-pair-portrait-1280.png",
+      "comparisonIds": [
+        "portrait",
+        "santal"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "santal",
+      "defaultScreenshot": "vavavoom-result-santal-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-santal-1280.png",
+      "compareScreenshot": "vavavoom-pair-santal-1280.png",
+      "comparisonIds": [
+        "santal",
+        "shade"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "shade",
+      "defaultScreenshot": "vavavoom-result-shade-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-shade-1280.png",
+      "compareScreenshot": "vavavoom-pair-shade-1280.png",
+      "comparisonIds": [
+        "shade",
+        "portrait"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "vanilla",
+      "defaultScreenshot": "vavavoom-result-vanilla-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "7 750 Kč",
+      "selectedScreenshot": "vavavoom-selected-vanilla-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vavavoom-notes-vanilla-1280.png",
+      "compareScreenshot": "vavavoom-pair-vanilla-1280.png",
+      "comparisonIds": [
+        "vanilla",
+        "silky"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "silky",
+      "defaultScreenshot": "vavavoom-result-silky-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-silky-1280.png",
+      "compareScreenshot": "vavavoom-pair-silky-1280.png",
+      "comparisonIds": [
+        "silky",
+        "northern"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "northern",
+      "defaultScreenshot": "vavavoom-result-northern-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-northern-1280.png",
+      "compareScreenshot": "vavavoom-pair-northern-1280.png",
+      "comparisonIds": [
+        "northern",
+        "vanilla"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "spicy",
+      "defaultScreenshot": "vavavoom-result-spicy-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-spicy-1280.png",
+      "compareScreenshot": "vavavoom-pair-spicy-1280.png",
+      "comparisonIds": [
+        "spicy",
+        "rudis"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "rudis",
+      "defaultScreenshot": "vavavoom-result-rudis-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-rudis-1280.png",
+      "compareScreenshot": "vavavoom-pair-rudis-1280.png",
+      "comparisonIds": [
+        "rudis",
+        "east"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "east",
+      "defaultScreenshot": "vavavoom-result-east-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-east-1280.png",
+      "compareScreenshot": "vavavoom-pair-east-1280.png",
+      "comparisonIds": [
+        "east",
+        "spicy"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true,
+  "questionLocalizationDelta": "Actual15new Czech question renders, unchanged data/tree/result semantics"
+}

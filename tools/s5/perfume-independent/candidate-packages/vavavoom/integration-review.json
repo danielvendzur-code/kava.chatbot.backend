@@ -1,0 +1,275 @@
+{
+  "status": "LOCAL_QA_PASS_PENDING_MAIN_INTEGRATION_AND_LIVE_PREVIEW",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "VAVAVOOM Perfumery",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/vavavoom/logo.svg",
+      "header": "/assets/s5/vavavoom/logo.svg",
+      "avatar": "/assets/s5/vavavoom/avatar.svg"
+    },
+    "brand": {
+      "name": "VAVAVOOM",
+      "domain": "vava-voom.cz",
+      "website": "https://www.vava-voom.cz/",
+      "lang": "cs",
+      "fullName": "VAVAVOOM Perfumery",
+      "url": "https://www.vava-voom.cz/",
+      "logo": "/assets/s5/vavavoom/logo.svg",
+      "mark": "/assets/s5/vavavoom/avatar.svg",
+      "greeting": "Objevte vůni podle doložených tónů. Ukážu konkrétní balení, cenu a porovnání dvou různých kompozic.",
+      "quickChips": [
+        "Levandule a pižmo",
+        "Vanilka a kokos",
+        "Pepř a kadidlo",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#513649",
+        "accent": "#513649",
+        "soft": "#faf4f7",
+        "paper": "#ffffff",
+        "ink": "#29202a",
+        "line": "#e9dce5"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy a levandule",
+        "Vyberte podle doložených tónů.",
+        "Citrusy a levandule",
+        ""
+      ],
+      "lime": [
+        "Limeta, koriandr a vetiver",
+        "Limeta, koriandr a vetiver.",
+        "Limeta, koriandr a vetiver",
+        "Limeta, koriandr a vetiver."
+      ],
+      "ginger": [
+        "Zázvorový květ, mandarinka a magnólie",
+        "Zázvorový květ, mandarinka a magnólie.",
+        "Zázvorový květ, mandarinka a magnólie",
+        "Zázvorový květ, mandarinka a magnólie."
+      ],
+      "metal": [
+        "Levandule, pižmo a kašmeran",
+        "Levandule, pižmo a kašmeran.",
+        "Levandule, pižmo a kašmeran",
+        "Levandule, pižmo a kašmeran."
+      ],
+      "floral": [
+        "Květy a jemná dřeva",
+        "Vyberte podle doložených tónů.",
+        "Květy a jemná dřeva",
+        ""
+      ],
+      "portrait": [
+        "Růže, malina a pačuli",
+        "Růže, malina a pačuli.",
+        "Růže, malina a pačuli",
+        "Růže, malina a pačuli."
+      ],
+      "santal": [
+        "Kosatec, santal a tonka",
+        "Kosatec, santal a tonka.",
+        "Kosatec, santal a tonka",
+        "Kosatec, santal a tonka."
+      ],
+      "shade": [
+        "Levandule, myrha a karamel",
+        "Levandule, myrha a karamel.",
+        "Levandule, myrha a karamel",
+        "Levandule, myrha a karamel."
+      ],
+      "gourmand": [
+        "Vanilka a sladké akordy",
+        "Vyberte podle doložených tónů.",
+        "Vanilka a sladké akordy",
+        ""
+      ],
+      "vanilla": [
+        "Kokosový pudr, vanilka a palo santo",
+        "Kokosový pudr, vanilka a palo santo.",
+        "Kokosový pudr, vanilka a palo santo",
+        "Kokosový pudr, vanilka a palo santo."
+      ],
+      "silky": [
+        "Vanilka, tabák a agarové dřevo",
+        "Vanilka, tabák a agarové dřevo.",
+        "Vanilka, tabák a agarové dřevo",
+        "Vanilka, tabák a agarové dřevo."
+      ],
+      "northern": [
+        "Speculoos, vanilka a jasmín",
+        "Speculoos, vanilka a jasmín.",
+        "Speculoos, vanilka a jasmín",
+        "Speculoos, vanilka a jasmín."
+      ],
+      "dark": [
+        "Koření, kůže a oud",
+        "Vyberte podle doložených tónů.",
+        "Koření, kůže a oud",
+        ""
+      ],
+      "spicy": [
+        "Pepř, kadidlo a cedr",
+        "Pepř, kadidlo a cedr.",
+        "Pepř, kadidlo a cedr",
+        "Pepř, kadidlo a cedr."
+      ],
+      "rudis": [
+        "Hroznové víno, šafrán a kůže",
+        "Hroznové víno, šafrán a kůže.",
+        "Hroznové víno, šafrán a kůže",
+        "Hroznové víno, šafrán a kůže."
+      ],
+      "east": [
+        "Maliny, oud a kůže",
+        "Maliny, oud a kůže.",
+        "Maliny, oud a kůže",
+        "Maliny, oud a kůže."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Které tóny chcete objevovat?",
+        "Vyberte podle doložených tónů.",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Které spojení tónů vás láká?",
+        "Vyberte jeden konkrétní profil.",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "lime": [
+        "/assets/s3/scenes-k2/lemon-tree.jpg"
+      ],
+      "ginger": [
+        "/assets/s3/scenes-k2/mandarin.jpg"
+      ],
+      "metal": [
+        "/assets/s3/scenes-k2/lavender-bunch.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "portrait": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "santal": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "shade": [
+        "/assets/s5/vavavoom/shade.webp"
+      ],
+      "gourmand": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "vanilla": [
+        "/assets/s3/scenes-k2/coconut.jpg"
+      ],
+      "silky": [
+        "/assets/s5/vavavoom/silky.webp"
+      ],
+      "northern": [
+        "/assets/s3/scenes-k2/cinnamon.jpg"
+      ],
+      "dark": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "spicy": [
+        "/assets/s5/vavavoom/spicy.webp"
+      ],
+      "rudis": [
+        "/assets/s3/scenes-k2/grapes.jpg"
+      ],
+      "east": [
+        "/assets/s3/scenes-k2/raspberries.jpg"
+      ],
+      "navigation:more": [
+        "/assets/s5/vavavoom/lime.webp"
+      ]
+    },
+    "compareProductIds": [
+      "metal",
+      "spicy"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní profil · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce pro výběr vůně",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi najít vůni podle jeho vkusu.",
+      "lead": "Výběr podle doložených tónů vede ke konkrétnímu flakónu s cenou a odkazem. U Vanilla Powder lze dobrovolně přidat tělové mléko stejné vonné řady.",
+      "includedChat": "Doložené tóny, přesná balení, ceny a porovnání dvou vůní.",
+      "includedAdvisor": "Vonné tóny a konkrétní profil — na konci konkrétní kompozice.",
+      "greeting": "Objevte vůni podle doložených tónů. Ukážu konkrétní balení, cenu a porovnání dvou různých kompozic.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít výběr vůně",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "lime": "ginger",
+        "ginger": "metal",
+        "metal": "lime",
+        "portrait": "santal",
+        "santal": "shade",
+        "shade": "portrait",
+        "vanilla": "silky",
+        "silky": "northern",
+        "northern": "vanilla",
+        "spicy": "rudis",
+        "rudis": "east",
+        "east": "spicy"
+      },
+      "addonProductIdsByParent": {
+        "vanilla": "vanilla-lotion"
+      }
+    }
+  },
+  "catalogueImport": "/catalogues/vavavoom.js",
+  "backendBrand": "vavavoom",
+  "offlineRules": [
+    {
+      "match": "levandul.*pizmo",
+      "ids": [
+        "metal"
+      ]
+    },
+    {
+      "match": "vanilk.*kokos",
+      "ids": [
+        "vanilla"
+      ]
+    },
+    {
+      "match": "pepr.*kadidlo",
+      "ids": [
+        "spicy"
+      ]
+    }
+  ],
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "noCoreLogicChangeRequired": true,
+  "runtimeEnabled": false,
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "supplementContract": "Raw catalogue contains13honest products; existing core excludes advisorExcludedReason,12fragrance leaves. Module explicitly fetches allowed body supplement without skincare mapping. MAIN backend facts should retain body record."
+}

@@ -1,0 +1,790 @@
+{
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Unchanged coordinator core with isolated candidate data; not registered or Preview QA",
+  "companies": {
+    "vavavoom": {
+      "formulaCount": 12,
+      "supplementCount": 1,
+      "physicalProductRecords": 13,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "lime"
+          },
+          "id": "lime",
+          "url": "https://www.vava-voom.cz/products/bohemian-lime?variant=54228820230472"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "ginger"
+          },
+          "id": "ginger",
+          "url": "https://www.vava-voom.cz/products/ingenious-ginger?variant=54228825997640"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "metal"
+          },
+          "id": "metal",
+          "url": "https://www.vava-voom.cz/products/metal-lavender?variant=52960624050504"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "portrait"
+          },
+          "id": "portrait",
+          "url": "https://www.vava-voom.cz/products/portrait-of-a-lady-2?variant=51510624878920"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "santal"
+          },
+          "id": "santal",
+          "url": "https://www.vava-voom.cz/products/santal-austral?variant=50066858410312"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "shade"
+          },
+          "id": "shade",
+          "url": "https://www.vava-voom.cz/products/shade-of-blue?variant=54027698438472"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "vanilla"
+          },
+          "id": "vanilla",
+          "url": "https://www.vava-voom.cz/products/vanilla-powder?variant=49790093787464"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "silky"
+          },
+          "id": "silky",
+          "url": "https://www.vava-voom.cz/products/silky-woods?variant=54228828881224"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "northern"
+          },
+          "id": "northern",
+          "url": "https://www.vava-voom.cz/products/northern-love?variant=53936386638152"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "dark",
+            "fragranceProfile": "spicy"
+          },
+          "id": "spicy",
+          "url": "https://www.vava-voom.cz/products/spicy-road?variant=52960493666632"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "dark",
+            "fragranceProfile": "rudis"
+          },
+          "id": "rudis",
+          "url": "https://www.vava-voom.cz/products/rudis?variant=50423378084168"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "dark",
+            "fragranceProfile": "east"
+          },
+          "id": "east",
+          "url": "https://www.vava-voom.cz/products/east?variant=52409386959176"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "gourmand",
+              "dark"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "lime",
+              "ginger",
+              "metal"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "portrait",
+              "santal",
+              "shade"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "vanilla",
+              "silky",
+              "northern"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "dark"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "spicy",
+              "rudis",
+              "east"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "myskino": {
+      "formulaCount": 7,
+      "supplementCount": 0,
+      "physicalProductRecords": 7,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "nice"
+          },
+          "id": "nice",
+          "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "riviera"
+          },
+          "id": "riviera",
+          "url": "https://www.myskino.cz/bon-parfumeur-005-riviera-absolue-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "gozo"
+          },
+          "id": "gozo",
+          "url": "https://www.myskino.cz/jeroboam-gozo-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "kokoa"
+          },
+          "id": "kokoa",
+          "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "saint"
+          },
+          "id": "saint",
+          "url": "https://www.myskino.cz/nicola-saint-honore-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "fire"
+          },
+          "id": "fire",
+          "url": "https://www.myskino.cz/jovoy-fire-at-will-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "ambrelatte"
+          },
+          "id": "ambrelatte",
+          "url": "https://www.myskino.cz/essential-parfums-ambre-latte-niche-parfem/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "citrus",
+              "sweet"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "nice",
+              "riviera",
+              "gozo"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "kokoa",
+              "saint",
+              "fire",
+              "ambrelatte"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "leparfumlechic": {
+      "formulaCount": 12,
+      "supplementCount": 0,
+      "physicalProductRecords": 12,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "herbal",
+            "fragranceProfile": "metal"
+          },
+          "id": "metal",
+          "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbal",
+            "fragranceProfile": "vodka"
+          },
+          "id": "vodka",
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-vodka-on-the-rocks/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbal",
+            "fragranceProfile": "olimpo"
+          },
+          "id": "olimpo",
+          "url": "https://www.leparfumlechic.sk/product/agatho-mytho-olimpoverde/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "velvet"
+          },
+          "id": "velvet",
+          "url": "https://www.leparfumlechic.sk/product/essential-parfums-velvet-iris/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "rolling"
+          },
+          "id": "rolling",
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-rolling-in-love/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "rosso"
+          },
+          "id": "rosso",
+          "url": "https://www.leparfumlechic.sk/product/agatho-parfum-rossopompeiano/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "divine"
+          },
+          "id": "divine",
+          "url": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "phantom"
+          },
+          "id": "phantom",
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "angels"
+          },
+          "id": "angels",
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-angels-share/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "bois"
+          },
+          "id": "bois",
+          "url": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "giardino"
+          },
+          "id": "giardino",
+          "url": "https://www.leparfumlechic.sk/product/agatho-parfum-giardinodiercole/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "afgano"
+          },
+          "id": "afgano",
+          "url": "https://www.leparfumlechic.sk/product/black-afgano/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "herbal",
+              "floral",
+              "gourmand",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbal"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "metal",
+              "vodka",
+              "olimpo"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "velvet",
+              "rolling",
+              "rosso"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "divine",
+              "phantom",
+              "angels"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "bois",
+              "giardino",
+              "afgano"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "orion": {
+      "formulaCount": 12,
+      "supplementCount": 0,
+      "physicalProductRecords": 12,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "p137008"
+          },
+          "id": "p137008",
+          "url": "https://parfumeria-orion.sk/le-labo-bergamote-22-100-ml-tester-parfumovana-voda-u/p137008"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "p129062"
+          },
+          "id": "p129062",
+          "url": "https://parfumeria-orion.sk/armaf-scentasy-matcha-magix-u-100-ml-parfumovana-voda/p129062"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "p132310"
+          },
+          "id": "p132310",
+          "url": "https://parfumeria-orion.sk/dkny-be-delicious-fresh-blossom-w-100-ml-parfumovana-voda/p132310"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "p67840"
+          },
+          "id": "p67840",
+          "url": "https://parfumeria-orion.sk/acqua-di-parma-signatures-of-the-sun-sakura-u-100-ml-tester-parfumovana-voda/p67840"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "p122810"
+          },
+          "id": "p122810",
+          "url": "https://parfumeria-orion.sk/chloe-nomade-jasmin-naturel-w-75-ml-tester-parfumovana-voda/p122810"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "p127072"
+          },
+          "id": "p127072",
+          "url": "https://parfumeria-orion.sk/parfums-de-marly-palatine-w-75-ml-parfumovana-voda/p127072"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "p125061"
+          },
+          "id": "p125061",
+          "url": "https://parfumeria-orion.sk/kilian-angels-share-u-250-ml-parfumovana-voda/p125061"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "p115189"
+          },
+          "id": "p115189",
+          "url": "https://parfumeria-orion.sk/lattafa-khamrah-u-100-ml-parfumovana-voda/p115189"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "p133760"
+          },
+          "id": "p133760",
+          "url": "https://parfumeria-orion.sk/lattafa-pride-eternal-vanille-u-100ml-parfumovana-voda/p133760"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "p360"
+          },
+          "id": "p360",
+          "url": "https://parfumeria-orion.sk/acqua-di-parma-signatures-of-the-sun-oud-u-100-ml-tester-parfumovana-voda/p360"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "p18465"
+          },
+          "id": "p18465",
+          "url": "https://parfumeria-orion.sk/prada-olfactories-double-dare-100-ml-tester-parfumovana-voda-u/p18465"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "p118584"
+          },
+          "id": "p118584",
+          "url": "https://parfumeria-orion.sk/the-lab-the-dusk-100-ml-parfumovana-voda-u/p118584"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "gourmand",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "p137008",
+              "p129062",
+              "p132310"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "p67840",
+              "p122810",
+              "p127072"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "p125061",
+              "p115189",
+              "p133760"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "p360",
+              "p18465",
+              "p118584"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "inspirovane": {
+      "formulaCount": 12,
+      "supplementCount": 0,
+      "physicalProductRecords": 12,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "lanoir-h137-mens-parfum"
+          },
+          "id": "lanoir-h137-mens-parfum",
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-h137-mens-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "lanoir-h136-mens-parfum"
+          },
+          "id": "lanoir-h136-mens-parfum",
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-h136-mens-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "lanoir-h109-mens-parfum"
+          },
+          "id": "lanoir-h109-mens-parfum",
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-h109-mens-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "lanoir-f040-womens-parfum"
+          },
+          "id": "lanoir-f040-womens-parfum",
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-f040-womens-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "lanoir-f047-womens-parfum"
+          },
+          "id": "lanoir-f047-womens-parfum",
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-f047-womens-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "lanoir-f023-womens-parfum"
+          },
+          "id": "lanoir-f023-womens-parfum",
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-f023-womens-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "lanoir-u083-unisex-parfum"
+          },
+          "id": "lanoir-u083-unisex-parfum",
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-u083-unisex-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "lanoir-f036-womens-parfum"
+          },
+          "id": "lanoir-f036-womens-parfum",
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-f036-womens-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "lanoir-u093-unisex-parfum"
+          },
+          "id": "lanoir-u093-unisex-parfum",
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-u093-unisex-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "lanoir-u089-unisex-parfum"
+          },
+          "id": "lanoir-u089-unisex-parfum",
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-u089-unisex-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "lanoir-u084-unisex-parfum"
+          },
+          "id": "lanoir-u084-unisex-parfum",
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-u084-unisex-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "lanoir-u079-unisex-parfum"
+          },
+          "id": "lanoir-u079-unisex-parfum",
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-u079-unisex-parfum/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "gourmand",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "lanoir-h137-mens-parfum",
+              "lanoir-h136-mens-parfum",
+              "lanoir-h109-mens-parfum"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "lanoir-f040-womens-parfum",
+              "lanoir-f047-womens-parfum",
+              "lanoir-f023-womens-parfum"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "lanoir-u083-unisex-parfum",
+              "lanoir-f036-womens-parfum"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "lanoir-u093-unisex-parfum",
+              "lanoir-u089-unisex-parfum",
+              "lanoir-u084-unisex-parfum",
+              "lanoir-u079-unisex-parfum"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    }
+  },
+  "paidModelCalls": 0
+}

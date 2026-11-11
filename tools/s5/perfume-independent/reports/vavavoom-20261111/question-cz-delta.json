@@ -1,0 +1,423 @@
+{
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Local question/photo/label presentation delta only, unchanged shared core, no Preview claim.",
+  "paidModelCalls": 0,
+  "questionPages": [
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy a levandule",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Květy a jemná dřeva",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Vanilka a sladké akordy",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "dark",
+          "text": "Koření, kůže a oud",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-0-320.png",
+      "at": "2026-11-11T20:22:03.618552+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "lime",
+          "text": "Limeta, koriandr a vetiver\nLimeta, koriandr a vetiver.",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "ginger",
+          "text": "Zázvorový květ, mandarinka a magnólie\nZázvorový květ, mandarinka a magnólie.",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        },
+        {
+          "id": "metal",
+          "text": "Levandule, pižmo a kašmeran\nLevandule, pižmo a kašmeran.",
+          "photo": "/assets/s3/scenes-k2/lavender-bunch.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-1-320.png",
+      "at": "2026-11-11T20:22:06.075731+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "portrait",
+          "text": "Růže, malina a pačuli\nRůže, malina a pačuli.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "santal",
+          "text": "Kosatec, santal a tonka\nKosatec, santal a tonka.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "shade",
+          "text": "Levandule, myrha a karamel\nLevandule, myrha a karamel.",
+          "photo": "/assets/s5/vavavoom/shade.webp"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-2-320.png",
+      "at": "2026-11-11T20:22:08.416494+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "gourmand"
+      },
+      "options": [
+        {
+          "id": "vanilla",
+          "text": "Kokosový pudr, vanilka a palo santo\nKokosový pudr, vanilka a palo santo.",
+          "photo": "/assets/s3/scenes-k2/coconut.jpg"
+        },
+        {
+          "id": "silky",
+          "text": "Vanilka, tabák a agarové dřevo\nVanilka, tabák a agarové dřevo.",
+          "photo": "/assets/s5/vavavoom/silky.webp"
+        },
+        {
+          "id": "northern",
+          "text": "Speculoos, vanilka a jasmín\nSpeculoos, vanilka a jasmín.",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-3-320.png",
+      "at": "2026-11-11T20:22:10.973736+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "dark"
+      },
+      "options": [
+        {
+          "id": "spicy",
+          "text": "Pepř, kadidlo a cedr\nPepř, kadidlo a cedr.",
+          "photo": "/assets/s5/vavavoom/spicy.webp"
+        },
+        {
+          "id": "rudis",
+          "text": "Hroznové víno, šafrán a kůže\nHroznové víno, šafrán a kůže.",
+          "photo": "/assets/s3/scenes-k2/grapes.jpg"
+        },
+        {
+          "id": "east",
+          "text": "Maliny, oud a kůže\nMaliny, oud a kůže.",
+          "photo": "/assets/s3/scenes-k2/raspberries.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-4-320.png",
+      "at": "2026-11-11T20:22:13.047556+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy a levandule",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Květy a jemná dřeva",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Vanilka a sladké akordy",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "dark",
+          "text": "Koření, kůže a oud",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-0-390.png",
+      "at": "2026-11-11T20:22:15.977321+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "lime",
+          "text": "Limeta, koriandr a vetiver\nLimeta, koriandr a vetiver.",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "ginger",
+          "text": "Zázvorový květ, mandarinka a magnólie\nZázvorový květ, mandarinka a magnólie.",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        },
+        {
+          "id": "metal",
+          "text": "Levandule, pižmo a kašmeran\nLevandule, pižmo a kašmeran.",
+          "photo": "/assets/s3/scenes-k2/lavender-bunch.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-1-390.png",
+      "at": "2026-11-11T20:22:19.032237+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "portrait",
+          "text": "Růže, malina a pačuli\nRůže, malina a pačuli.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "santal",
+          "text": "Kosatec, santal a tonka\nKosatec, santal a tonka.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "shade",
+          "text": "Levandule, myrha a karamel\nLevandule, myrha a karamel.",
+          "photo": "/assets/s5/vavavoom/shade.webp"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-2-390.png",
+      "at": "2026-11-11T20:22:21.502646+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "gourmand"
+      },
+      "options": [
+        {
+          "id": "vanilla",
+          "text": "Kokosový pudr, vanilka a palo santo\nKokosový pudr, vanilka a palo santo.",
+          "photo": "/assets/s3/scenes-k2/coconut.jpg"
+        },
+        {
+          "id": "silky",
+          "text": "Vanilka, tabák a agarové dřevo\nVanilka, tabák a agarové dřevo.",
+          "photo": "/assets/s5/vavavoom/silky.webp"
+        },
+        {
+          "id": "northern",
+          "text": "Speculoos, vanilka a jasmín\nSpeculoos, vanilka a jasmín.",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-3-390.png",
+      "at": "2026-11-11T20:22:24.907535+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "dark"
+      },
+      "options": [
+        {
+          "id": "spicy",
+          "text": "Pepř, kadidlo a cedr\nPepř, kadidlo a cedr.",
+          "photo": "/assets/s5/vavavoom/spicy.webp"
+        },
+        {
+          "id": "rudis",
+          "text": "Hroznové víno, šafrán a kůže\nHroznové víno, šafrán a kůže.",
+          "photo": "/assets/s3/scenes-k2/grapes.jpg"
+        },
+        {
+          "id": "east",
+          "text": "Maliny, oud a kůže\nMaliny, oud a kůže.",
+          "photo": "/assets/s3/scenes-k2/raspberries.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-4-390.png",
+      "at": "2026-11-11T20:22:27.381950+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy a levandule",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Květy a jemná dřeva",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Vanilka a sladké akordy",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "dark",
+          "text": "Koření, kůže a oud",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-0-1280.png",
+      "at": "2026-11-11T20:22:32.422522+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "lime",
+          "text": "Limeta, koriandr a vetiver\nLimeta, koriandr a vetiver.",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "ginger",
+          "text": "Zázvorový květ, mandarinka a magnólie\nZázvorový květ, mandarinka a magnólie.",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        },
+        {
+          "id": "metal",
+          "text": "Levandule, pižmo a kašmeran\nLevandule, pižmo a kašmeran.",
+          "photo": "/assets/s3/scenes-k2/lavender-bunch.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-1-1280.png",
+      "at": "2026-11-11T20:22:34.505923+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "portrait",
+          "text": "Růže, malina a pačuli\nRůže, malina a pačuli.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "santal",
+          "text": "Kosatec, santal a tonka\nKosatec, santal a tonka.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "shade",
+          "text": "Levandule, myrha a karamel\nLevandule, myrha a karamel.",
+          "photo": "/assets/s5/vavavoom/shade.webp"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-2-1280.png",
+      "at": "2026-11-11T20:22:37.701555+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "gourmand"
+      },
+      "options": [
+        {
+          "id": "vanilla",
+          "text": "Kokosový pudr, vanilka a palo santo\nKokosový pudr, vanilka a palo santo.",
+          "photo": "/assets/s3/scenes-k2/coconut.jpg"
+        },
+        {
+          "id": "silky",
+          "text": "Vanilka, tabák a agarové dřevo\nVanilka, tabák a agarové dřevo.",
+          "photo": "/assets/s5/vavavoom/silky.webp"
+        },
+        {
+          "id": "northern",
+          "text": "Speculoos, vanilka a jasmín\nSpeculoos, vanilka a jasmín.",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-3-1280.png",
+      "at": "2026-11-11T20:22:41.015688+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "dark"
+      },
+      "options": [
+        {
+          "id": "spicy",
+          "text": "Pepř, kadidlo a cedr\nPepř, kadidlo a cedr.",
+          "photo": "/assets/s5/vavavoom/spicy.webp"
+        },
+        {
+          "id": "rudis",
+          "text": "Hroznové víno, šafrán a kůže\nHroznové víno, šafrán a kůže.",
+          "photo": "/assets/s3/scenes-k2/grapes.jpg"
+        },
+        {
+          "id": "east",
+          "text": "Maliny, oud a kůže\nMaliny, oud a kůže.",
+          "photo": "/assets/s3/scenes-k2/raspberries.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-delta-4-1280.png",
+      "at": "2026-11-11T20:22:43.888260+00:00"
+    }
+  ],
+  "errors": [],
+  "complete": true
+}

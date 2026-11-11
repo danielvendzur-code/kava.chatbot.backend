@@ -19,3 +19,5 @@ Earlier Essentique/FragranceSamples retained: ESSENTIQUE-FRAGRANCESAMPLES-HANDOF
 Independent Le Parfum & Le Chic source followup: price250EUR100ml with explicit VAT source conflict; Renier Incense Rain145EUR with pack/stock/tax gaps; neither newly reserved/packaged. Existing HOLDs preserved, no merchant messages/forms/cart submissions, no mail/production/deletion/paid calls. Model preferences unchanged.
 
 Le Parfum & Le Chic: sixth additional source package,12 distinct fragrances;15assets,126local presentation frames, MAIN source review required for VAT/register; no new final Preview count. New result module supports explicit sourced same-formula exact smaller SKU and retains old variant behavior. Exact handoff LEPARFUM-HANDOFF-20261111.md.
+
+VAVAVOOM: seventh additional isolated source company,12distinct primary fragrances +1honest optional body product;15assets,144local states/6merchant evidence frames; VAVAVOOM-HANDOFF-20261111.md exact integration. Local source/body extras PASS; MAIN integration/final Preview still pending, finished count+0.

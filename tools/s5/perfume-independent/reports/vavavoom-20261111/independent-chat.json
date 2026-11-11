@@ -1,0 +1,137 @@
+{
+  "at": "2026-11-11T20:22:00.266441+00:00",
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Local isolated candidate fixture only.",
+  "cards": [
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "metal",
+      "price": "6 250 Kč",
+      "pack": "100 ml",
+      "url": "https://www.vava-voom.cz/products/metal-lavender?variant=52960624050504",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "vavavoom-card-0-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "vanilla",
+      "price": "6 250 Kč",
+      "pack": "100 ml",
+      "url": "https://www.vava-voom.cz/products/vanilla-powder?variant=49790093787464",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "vavavoom-card-1-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "id": "spicy",
+      "price": "3 990 Kč",
+      "pack": "100 ml",
+      "url": "https://www.vava-voom.cz/products/spicy-road?variant=52960493666632",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "vavavoom-card-2-320.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "metal",
+      "price": "6 250 Kč",
+      "pack": "100 ml",
+      "url": "https://www.vava-voom.cz/products/metal-lavender?variant=52960624050504",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "vavavoom-card-0-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "vanilla",
+      "price": "6 250 Kč",
+      "pack": "100 ml",
+      "url": "https://www.vava-voom.cz/products/vanilla-powder?variant=49790093787464",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "vavavoom-card-1-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "spicy",
+      "price": "3 990 Kč",
+      "pack": "100 ml",
+      "url": "https://www.vava-voom.cz/products/spicy-road?variant=52960493666632",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "vavavoom-card-2-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "metal",
+      "price": "6 250 Kč",
+      "pack": "100 ml",
+      "url": "https://www.vava-voom.cz/products/metal-lavender?variant=52960624050504",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "vavavoom-card-0-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "vanilla",
+      "price": "6 250 Kč",
+      "pack": "100 ml",
+      "url": "https://www.vava-voom.cz/products/vanilla-powder?variant=49790093787464",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "vavavoom-card-1-1280.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "id": "spicy",
+      "price": "3 990 Kč",
+      "pack": "100 ml",
+      "url": "https://www.vava-voom.cz/products/spicy-road?variant=52960493666632",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "vavavoom-card-2-1280.png"
+    }
+  ],
+  "viewports": [
+    {
+      "slug": "vavavoom",
+      "width": 320,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    },
+    {
+      "slug": "vavavoom",
+      "width": 1280,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    }
+  ],
+  "errors": [],
+  "paidModelCalls": 0,
+  "complete": true,
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "browser": "webkit"
+}
