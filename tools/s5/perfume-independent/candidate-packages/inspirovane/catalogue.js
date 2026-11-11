@@ -1069,7 +1069,7 @@ globalThis.CX_CATALOGUES.inspirovane = {
    }
   }
  ],
- "status": "RESERVED_ISOLATED_SOURCE_PACKAGE_LOCAL_QA_PENDING",
+ "status": "SOURCE_AND_LOCAL_ALL_FLOWS_VERIFIED_MAIN_INTEGRATION_PREVIEW_PENDING",
  "revenue": "UNKNOWN",
  "size": "UNKNOWN",
  "pricingReview": "SIZE_UNKNOWN",

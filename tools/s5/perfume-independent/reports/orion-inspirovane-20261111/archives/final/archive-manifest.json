@@ -1,0 +1,1439 @@
+{
+  "at": "2026-11-11T12:36:44.820628+00:00",
+  "scope": "Actual LOCAL QA only; MAIN corec9e4da0. Not live Preview or a complete comparison claim.",
+  "authorization": "Owner explicitly permits GitHub QA screenshots/ZIPs, excluded from Vercel under /tools/.",
+  "format": "Lossless WebP verified byte-identical RGBA pixel buffers to original PNG. All original PNGs preserved locally.",
+  "images": [
+    {
+      "sourcePng": "canonical-final/inspirovane-card-0-1280.png",
+      "sourcePngSha256": "b0ea584cd4e2c5e329fb26d4cde94ec9bc096fe8f90ba5fa5ae8baf2b9de9cf7",
+      "archiveFile": "inspirovane-card-0-1280.webp",
+      "webpSha256": "a39959310bb3089a6fb84a95e4a69e2ab340ef506dedf7f851615097ed1ef8aa",
+      "rgbaPixelsSha256": "9b8d29a9aee3b1cfe45c6575cd82923e0d8d3e0d28437f988edb18f21ed7ba0e",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-card-0-320.png",
+      "sourcePngSha256": "ed8b49fe4187e92ad915fcd20b39cce12144029f7c25c38aab8caa11a60246cb",
+      "archiveFile": "inspirovane-card-0-320.webp",
+      "webpSha256": "30af612f079661103e45064032e75944c7414cf1974d9805753540f09e0aa1bd",
+      "rgbaPixelsSha256": "8de6532c9968c9ca0f88dec4a04aa266b341d2023928c60630c3bee8a371f05a",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-card-0-390.png",
+      "sourcePngSha256": "be3c1ee7a1f6ba6ac381c18265b4703c0f8c478b959615925b3a3b7a37a86098",
+      "archiveFile": "inspirovane-card-0-390.webp",
+      "webpSha256": "8ca8c682b391cb5efbcc6d20984339ea60497ad2eb1185ec574f3aac82250187",
+      "rgbaPixelsSha256": "7666d5873344408eea4fcecfebd0f721b7ab783a995c0801473995748e15f549",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-card-1-1280.png",
+      "sourcePngSha256": "71e89b2a01aa24edc230b222b925e403ff78d87b8f2c857719699a10c61b4dad",
+      "archiveFile": "inspirovane-card-1-1280.webp",
+      "webpSha256": "5c6f56908a334c47d6fe24e73c45dfa147fcbb3d452d589dcb2cb4c1658f75ba",
+      "rgbaPixelsSha256": "346e2b812fdfe94c7006fb3c8fa3c4db57fc725221f5cd9dc1806c147a009a1c",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-card-1-320.png",
+      "sourcePngSha256": "436c27b8b5b9de46de13a9470d8d0b4e31e2276da6d5d87b87a132e0dafeaf59",
+      "archiveFile": "inspirovane-card-1-320.webp",
+      "webpSha256": "43fb47c586472a4329df63a15ef7066ef4f8ce2e854df182f9bd69f283161c15",
+      "rgbaPixelsSha256": "4c8794a0a28be6b8cbb3ab27158a081ee301c0c7157d06f13f7b9b5b4c26217c",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-card-1-390.png",
+      "sourcePngSha256": "6baad724a81134e7eaa737b33a3a90db044bbcaebd8700c1fbd1c252513f8092",
+      "archiveFile": "inspirovane-card-1-390.webp",
+      "webpSha256": "18a377bd1d1d753035692274e1b3f40dac74a782f1a030c5487ff466ddfd867b",
+      "rgbaPixelsSha256": "8fb5c4e573d520518b5b91e61df53e43206659bca52acd6e9cd801fcd67c5f13",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-card-2-1280.png",
+      "sourcePngSha256": "714a091cdc03da0684c0b234ee9870dff4f56562c628af762696740d96a58503",
+      "archiveFile": "inspirovane-card-2-1280.webp",
+      "webpSha256": "cd10d5949b3bec1933206aa5f40339348c1fa3bdb51f78158bd35a78c7c111a3",
+      "rgbaPixelsSha256": "8417406266e0f2f986d22f9b6b58da2d9407f334c332e43282762b59f62867eb",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-card-2-320.png",
+      "sourcePngSha256": "c564fb1451d5ad60f0cc3ee66365fb2bb84139f358667d2e788bee4e012652b4",
+      "archiveFile": "inspirovane-card-2-320.webp",
+      "webpSha256": "49051e8dcfee1c41c799700a6ebf98966604f8a96f63d686cbb1c9e88958216d",
+      "rgbaPixelsSha256": "949ff7cb1a154cf5e2a86611872a95d91420bfed13ccc0a9b2c860eb149403b4",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-card-2-390.png",
+      "sourcePngSha256": "954322506681c34e441a018e4535ee2dc30f2408d1743b6c129b18cfa18bc860",
+      "archiveFile": "inspirovane-card-2-390.webp",
+      "webpSha256": "0a8b3419e3266ccb449268aa670a41dfb201b123b43416427f1c887b4cb0e946",
+      "rgbaPixelsSha256": "d95d0a4ba76b1514bfa122a85ffd91591d3949799c3a30612e5e828411809583",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-compare-1280.png",
+      "sourcePngSha256": "557b46879e3ea8190ab964261b4c332dd364135021d7278862d6c337fc5578cb",
+      "archiveFile": "inspirovane-compare-1280.webp",
+      "webpSha256": "ca4fd7e6a88662dfe36b3999d6825410313debba53d49b9f0ad7b66642010d63",
+      "rgbaPixelsSha256": "d487b75fb2e3ddc80c887d4c6661bf2ffeb5de0930f7efbe71b66db3725c43f5",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-compare-320.png",
+      "sourcePngSha256": "098de55741da2228e19a1d1687d1d5cf0ddcd7ce5e5b95ceff356a5b39e0c65b",
+      "archiveFile": "inspirovane-compare-320.webp",
+      "webpSha256": "0039de4d6502ad5359feef71e10b523348cecdbe42de724c6279f7a590e36a76",
+      "rgbaPixelsSha256": "3f295723f6c5f7d671b827614209bb5345aa6c742c9ae319f9485342c8a39e4b",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-compare-390.png",
+      "sourcePngSha256": "3f286aaaf7b62a52842b56481577775f47084cc9918e57ad09e39f76547f2a51",
+      "archiveFile": "inspirovane-compare-390.webp",
+      "webpSha256": "e1d275f1aeb2f7a30db727938c86c633af3091ab47bd6bebb0263b845db5c741",
+      "rgbaPixelsSha256": "3da4d404b3d336d075916e57754d9e0ff89a950dc20e17381cef23ba529f1a80",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-offer-1280.png",
+      "sourcePngSha256": "400654f51f4aeb2b3a803f34e96fe26d6f5b2e1acf53a594bd861452a16c9641",
+      "archiveFile": "inspirovane-offer-1280.webp",
+      "webpSha256": "b7d8da46f551c3a4aca772144d7689dd8c6c5bbf195885881a38410076fc62b7",
+      "rgbaPixelsSha256": "2bec999221e90f35efe3f07ef21e7de8bc73e7ee7fbdc00be602d6a096dcb070",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-offer-320.png",
+      "sourcePngSha256": "f1fb19a790a68cd051e4711ab27e562427b7ccc53aa4454e8d2b4ab8f8adf66c",
+      "archiveFile": "inspirovane-offer-320.webp",
+      "webpSha256": "bfb8e1c0c3af59d21abbdc80aa89b22d1931b44792e9dc70b6b4c39468d2f36d",
+      "rgbaPixelsSha256": "eb98e675a3c33b31f63b63c49cac642db59dc61e5fb3bfd8351875a3eaf9e976",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-offer-390.png",
+      "sourcePngSha256": "c43a58423e156299f99a6b913f8641d1b1d0b8709bc6543c1b0d693b041fa099",
+      "archiveFile": "inspirovane-offer-390.webp",
+      "webpSha256": "36ce1064e7073c1ad78753349c810a632a66cfb5cfc59ccb85669ebf5492cff2",
+      "rgbaPixelsSha256": "3adb85831efec64d94feaee2d4b86210bea57edb4c6aee7d18c121c277097dd4",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-1-1280.png",
+      "sourcePngSha256": "61112fa896ce1d37b5bbd509c38df337d9ce4e633f800b094755335f20b80b47",
+      "archiveFile": "inspirovane-question-1-1280.webp",
+      "webpSha256": "c516895ae61eb0ce3dfc8613abc424ea7f13a61ed3f4d241292d537ec9f1e2d0",
+      "rgbaPixelsSha256": "5a6d2c3005dc2cdf8cdbb7e22fdbdb412aa9d17bd0b45feafbd1c0720c80377d",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-1-320.png",
+      "sourcePngSha256": "2914008e5e79a09692c58861165771fd33325ea7af4d882e630d636dbd1b4033",
+      "archiveFile": "inspirovane-question-1-320.webp",
+      "webpSha256": "48ee32928bd0c7dbac3372509507121ed4613f5c35b56232c4eef4cf3dac157e",
+      "rgbaPixelsSha256": "82958248aac7dca7a11b38eaedbf6f5c9d5179ea856e13fc28bb4a3494ff4ad8",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-1-390.png",
+      "sourcePngSha256": "5b45e6a61cc3e656ad7d9867ca11714b83daf679bf1bf3c4bcf45f954a30567b",
+      "archiveFile": "inspirovane-question-1-390.webp",
+      "webpSha256": "f8f96187839b2640e153b0fc8583c6f9da469fd5187b204c12795f575a2b9959",
+      "rgbaPixelsSha256": "83e9caba5c0824bd3c72dbaa0983bd9e166c7601c20372c200bdabce72ea98f0",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-2-1280.png",
+      "sourcePngSha256": "747cc8a08cce43e4e170bf5c97abc3fb631a71b02c2ead0e299bbc26b5770a6e",
+      "archiveFile": "inspirovane-question-2-1280.webp",
+      "webpSha256": "f0fb8d5e27c07713340b0f74efcfcfca120228c9b32eb44417f5ede0d30479a0",
+      "rgbaPixelsSha256": "c7d74e99766c6b6ddcebdcc5c0663741ad375198db62b498cbc162e1c2ddc245",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-2-320.png",
+      "sourcePngSha256": "43edbdd31467679f293fc1b491de45a964712d1b2c1b45224a5b108bd8a8461a",
+      "archiveFile": "inspirovane-question-2-320.webp",
+      "webpSha256": "671ea74af0e72f292b0054305befa5df659523863db09f27fc397fe35c5533ac",
+      "rgbaPixelsSha256": "00491e230feff5743c430a93c2a3ced9826547c30f62babc94d787f01c2c9383",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-2-390.png",
+      "sourcePngSha256": "75ed0e58dbaeb5bc5d7a39dfb5512ad499100f2149731c3bc80d18a2ee6b1571",
+      "archiveFile": "inspirovane-question-2-390.webp",
+      "webpSha256": "8924fa68575481eeccd0136986fda16dd1b604a6be1fe178a5b7494c892a3d75",
+      "rgbaPixelsSha256": "5d787460ec1b330f3f257ab6b2780216080217b657c411f602a6a74e4e55bf42",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-3-1280.png",
+      "sourcePngSha256": "f647480bfeb36f0acb71d3e0f3a14a2638057f09ff2906f0dfd3d5894b6b5e89",
+      "archiveFile": "inspirovane-question-3-1280.webp",
+      "webpSha256": "d9019c2af92bfa602655d73dbc5b41300a1a53312859d7cd9ab1c2c2b189cbf7",
+      "rgbaPixelsSha256": "3f8ac8ca690ffa559cb37c87f6c2cc4f5eebb030a7048573d1d941b8df4e05ff",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-3-320.png",
+      "sourcePngSha256": "05901635a6f5d18ae381355f8ed75255233c660b197c0b69fdf56bc72037b4a6",
+      "archiveFile": "inspirovane-question-3-320.webp",
+      "webpSha256": "694b3aa6be9441c27d5a355e2297ba589ad16c716667b56f15ed299fe85b2a39",
+      "rgbaPixelsSha256": "651eec67f73c3ceb99e231e96e841fe7a021a2e867e56fc8e9575ec5d7a378d6",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-3-390.png",
+      "sourcePngSha256": "6a234dcf132c1acf3bd2f764894db5a219bd66abafdc88ff6a32ddf77bc3df29",
+      "archiveFile": "inspirovane-question-3-390.webp",
+      "webpSha256": "270da294b6e325c49e750ffdf2dafd641b6e1050c8e52be97ac1f81ef4a86560",
+      "rgbaPixelsSha256": "65ff7e0946d36d7b1868f17001bb0048b207ae4f8fcae343b658def9f6287ca5",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-4-1280.png",
+      "sourcePngSha256": "b3f91a4e48b6c8b60ffa9f8b9c517115125c3105f358b89fa05907c7a3769e11",
+      "archiveFile": "inspirovane-question-4-1280.webp",
+      "webpSha256": "b1c2523c148428960236fd44d5a800a82daface59b11c6891af46541b0dcc5db",
+      "rgbaPixelsSha256": "603ea750f1069a722617cde380c0f061258833a00f06bcd2a284b4aacd9c034e",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-4-320.png",
+      "sourcePngSha256": "709e23519ceaead1c8ea9c75d4203284637be9776024ff3d274f8c735911acc0",
+      "archiveFile": "inspirovane-question-4-320.webp",
+      "webpSha256": "f242dcc6aa4dc90fced75a014229faaa93241471878a2861ccd59794d7afb671",
+      "rgbaPixelsSha256": "893307a953cd57bb92cbfff0bd3ea505c050247322140752fc754bbfec8dadc3",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-4-390.png",
+      "sourcePngSha256": "801efd58a7230515f7c22f6aa6ebf989b20050787e69a017d92aa3c93af5258d",
+      "archiveFile": "inspirovane-question-4-390.webp",
+      "webpSha256": "702d01a5646b2ce2695ef14c18a7fb10b395af9630ce010fd66b1a1a0d0c80ad",
+      "rgbaPixelsSha256": "aa694dead5adbe94221acc4081afc19321d6b3e2e6e4cb645425a93afd015afd",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-5-1280.png",
+      "sourcePngSha256": "289bd1afedcc44c9a8a200e272428b92db9d296e30e25e330dae0c0cadd3df70",
+      "archiveFile": "inspirovane-question-5-1280.webp",
+      "webpSha256": "37f0ac6869c637cafa26dd92774e5bae32f0ab0c939c59b03811e2a1278c6110",
+      "rgbaPixelsSha256": "8f8ba4ef0f9fdf459c0a3d53c163d5170d058df71e60fae2b595c31b3f76d68f",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-5-320.png",
+      "sourcePngSha256": "4cddfc50a7a393f63deaa6735cc1ec9981f3a1ff6d9e9ba0e09be2cb30facd77",
+      "archiveFile": "inspirovane-question-5-320.webp",
+      "webpSha256": "18d6ef7955ee955388eb319fc7ef340c8597fcdf49a9805062a68bbd57067060",
+      "rgbaPixelsSha256": "5855640895e02a785d8fe2a6a1393ca83b8cf2eeee707bd9737012d03013f956",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-question-5-390.png",
+      "sourcePngSha256": "1124dba8dc6369ae54beb4b831be9c87cfc8e6d3a5a9dba4606fa76dedc438fa",
+      "archiveFile": "inspirovane-question-5-390.webp",
+      "webpSha256": "4858eed3539bda6de375720145c505c8fa8b7afe7e4d919a0aafadbd26bf4e0c",
+      "rgbaPixelsSha256": "f5e7f002e8c96285d712db29da02498e520e4801f74a760bb71f79bfbd511585",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-f023-womens-parfum-1280.png",
+      "sourcePngSha256": "5dce494ecff0dc564401f164c38cdf0cf73ab91cdb9ffffb56dbdbbcc99847a5",
+      "archiveFile": "inspirovane-result-lanoir-f023-womens-parfum-1280.webp",
+      "webpSha256": "e080fa8f48b0a8a773f141821d11a9d685383ba81be4b7a0adefe05b1c950c4c",
+      "rgbaPixelsSha256": "3eec949b0364c2ddf862d2b04e42d74e94f1721c7bd59e46d01bffbcfb073c0f",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-f023-womens-parfum-320.png",
+      "sourcePngSha256": "ff16889ce8827d4d9dbd96d932a8eebbd535c4f7fa9683901b18d76c4031db10",
+      "archiveFile": "inspirovane-result-lanoir-f023-womens-parfum-320.webp",
+      "webpSha256": "06553c8ab1018e00a1f432546cf28f4428afe3d840a7689d5f5c76979e90abc8",
+      "rgbaPixelsSha256": "6971b553d3b66dabe29e33ebd020c03be25a7bd46c6ff3f814c79100d9fb9e5e",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-f023-womens-parfum-390.png",
+      "sourcePngSha256": "cbc7a55a3f9099114f6cc0463ce04e85d116331eef0fda91ebba45c922879551",
+      "archiveFile": "inspirovane-result-lanoir-f023-womens-parfum-390.webp",
+      "webpSha256": "6081950823ef30191494df9d2090d21410d6c2fefc77256a85131639a9b1fe4c",
+      "rgbaPixelsSha256": "184f06e2576f1dd21057d19cf84eafaa1edf24181b6934b92111899c67d8e693",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-f036-womens-parfum-1280.png",
+      "sourcePngSha256": "f02c1c9bdef263f50c61140fea5e2d60093fc6c18eb21131dab5310f4aec970d",
+      "archiveFile": "inspirovane-result-lanoir-f036-womens-parfum-1280.webp",
+      "webpSha256": "f801474a0fa365b6101866144432d0b74d0b82f128779f932a5cd786ef42afbd",
+      "rgbaPixelsSha256": "a2c63a5fac34da8b0ed0db3978c2a47cb0130303a359dae9f810343c77128089",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-f036-womens-parfum-320.png",
+      "sourcePngSha256": "e2d2f957666da5b8167806539b531be80002397499cffac4d3ab99e04dec2666",
+      "archiveFile": "inspirovane-result-lanoir-f036-womens-parfum-320.webp",
+      "webpSha256": "2a0f963737be35ecdfc5264879c7b626c11d2faef8062dbf92f4714bda17592a",
+      "rgbaPixelsSha256": "b975b849f5f9f6006617b6459e68448559d3b56caac98e0870e0d23ca276b3bd",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-f036-womens-parfum-390.png",
+      "sourcePngSha256": "191fa59ce25e75c36c5a589497b8fc92d1b11d8f889a6f7fa622025d7d5d601a",
+      "archiveFile": "inspirovane-result-lanoir-f036-womens-parfum-390.webp",
+      "webpSha256": "cb3fb0d28c3a10715c894098b34bab525b3af9f0c4ee58aaafe904c2231b5911",
+      "rgbaPixelsSha256": "43094341816cd0ebae627587f5d1f6241c3ba87465254904048a408e40e71e3d",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-f040-womens-parfum-1280.png",
+      "sourcePngSha256": "90930cc581061bd57f33ea02070b6545128462fb811c96bf37148d2519342751",
+      "archiveFile": "inspirovane-result-lanoir-f040-womens-parfum-1280.webp",
+      "webpSha256": "ce8d0c09e1ddf70677ea4ee58b521cdd8983e1159b6e1a986543cdc5c3b3251b",
+      "rgbaPixelsSha256": "ace2210f2d4bead08292a023120b27dba7938ed3be51933afc9f5ccb3faac0a3",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-f040-womens-parfum-320.png",
+      "sourcePngSha256": "962c92038d936adce07e5024766b4c68efd72c021b8e51dffd48e2fb7710efa8",
+      "archiveFile": "inspirovane-result-lanoir-f040-womens-parfum-320.webp",
+      "webpSha256": "1ae84bde03e5bc632986554f09c187a205cc8eae47354ef40a7d594f11fb51dc",
+      "rgbaPixelsSha256": "74aeb9332ec153e1c6d93f691e528010d6157a3b3669892d924ba36c31711e8c",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-f040-womens-parfum-390.png",
+      "sourcePngSha256": "ce23a29ffec4820573286df2584e9f4be51d4b0d2dd756ec7401227b73680a05",
+      "archiveFile": "inspirovane-result-lanoir-f040-womens-parfum-390.webp",
+      "webpSha256": "e92c367f3baed75ba2b88a9180ee8725b3f0eb9affd9cd75f55848ca82e595e0",
+      "rgbaPixelsSha256": "1cd41d854462c871a62164cef48ada065e9e0890bb83edc5b14ca83d6941593e",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-f047-womens-parfum-1280.png",
+      "sourcePngSha256": "f9f0d3e8274b09e23e5b8c57d0b2600b92e32ba332953d5d2d68e047db117ee7",
+      "archiveFile": "inspirovane-result-lanoir-f047-womens-parfum-1280.webp",
+      "webpSha256": "a6d3da4b49b3f39601085eba68365f50db0febfada39ee9879ffe660d92edb31",
+      "rgbaPixelsSha256": "0f79d1ca203c71d8e95111a6be2f6b5c771657e4a4516a2227d1db08b01bb18b",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-f047-womens-parfum-320.png",
+      "sourcePngSha256": "a365630ac476a2bc4f93449b6c0bddb429668c30f27a95caa48cf28a3e711df7",
+      "archiveFile": "inspirovane-result-lanoir-f047-womens-parfum-320.webp",
+      "webpSha256": "4a24392d5a93b4eb8c73d7c3f543df9fc0bcc127689b0d352325a3d1ec83a7f6",
+      "rgbaPixelsSha256": "badb95c2cdbc457e5d3b1d2cb0c21aca8108d43ae9bff965d18d6ffe5b653db9",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-f047-womens-parfum-390.png",
+      "sourcePngSha256": "e03c4061df7aa982e3f1db582ca70c6ea74deca6f30d077407a9a258fb482677",
+      "archiveFile": "inspirovane-result-lanoir-f047-womens-parfum-390.webp",
+      "webpSha256": "07cdaeb4049c7edafec5de54f50b056032a78fadb17e1399fd283a1096cfdde6",
+      "rgbaPixelsSha256": "bdb1415301189034b792837dfa7ee8b2e0b860fdcb466cd13fb002780af95786",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-h109-mens-parfum-1280.png",
+      "sourcePngSha256": "1d63f0e531a09371f18e508f0a08c65d578c1b90243cc7db73a19553271a4e3f",
+      "archiveFile": "inspirovane-result-lanoir-h109-mens-parfum-1280.webp",
+      "webpSha256": "7e7a583dd7428ea5c66c9b10a32bdc825d910d0ef245628159812c4ec825c0a7",
+      "rgbaPixelsSha256": "e4f8066f5ab1c47c2e977d9d26dc8444c4a7c151e5625cf402872505bc10a989",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-h109-mens-parfum-320.png",
+      "sourcePngSha256": "3f62b8c2cce244bd8791a2af0252504681caa4a2c2b19bc02dfe2fa786c06a35",
+      "archiveFile": "inspirovane-result-lanoir-h109-mens-parfum-320.webp",
+      "webpSha256": "cc4e086b108ee7db3a3f0963d3b2cdc388a299dc69125e3fb058656564e31fa7",
+      "rgbaPixelsSha256": "ce1f37bfb211d7d7382c9f95586e10c4cafa639eef789ff0cc1216b58a49eef5",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-h109-mens-parfum-390.png",
+      "sourcePngSha256": "afdb3aa2754695c6211def852667179f20a271213679f79a9782b9b28a048f59",
+      "archiveFile": "inspirovane-result-lanoir-h109-mens-parfum-390.webp",
+      "webpSha256": "6c6765192c75c956ce7f90286a3ff9b945fdbc523eab2d80d52d9b064f46342e",
+      "rgbaPixelsSha256": "3162fe531a9da5938b29d9590f9237a49ec3f53b0d488a5b58f1428e2a3f3b84",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-h136-mens-parfum-1280.png",
+      "sourcePngSha256": "1ec221a064475167fdddd1e28836f750dc315ba6df05b5dcb3194a56b06ea476",
+      "archiveFile": "inspirovane-result-lanoir-h136-mens-parfum-1280.webp",
+      "webpSha256": "a5e5d8bc2e4dbef6bafdb814459235edd198070c64ed51cd725c68f73a10ee1e",
+      "rgbaPixelsSha256": "73a1395b08110f4083764f397a86d91243b12c4ee394ba83c6c91ec4a215d3ac",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-h136-mens-parfum-320.png",
+      "sourcePngSha256": "f199ba2d71febe7ad9592b1870a7cac0e9bc547f61680deb13b890285e0c76d1",
+      "archiveFile": "inspirovane-result-lanoir-h136-mens-parfum-320.webp",
+      "webpSha256": "116e9e733d781127d9f878a76140dedc94fab4fe116168948134644275020c31",
+      "rgbaPixelsSha256": "63e4033d98804cf1c6667c4de58680d8aaa7bc859e2e4b1d54b4b9decad33b11",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-h136-mens-parfum-390.png",
+      "sourcePngSha256": "489041f80f63accfe5fcfec30760731dae8382e8969ca34f626f4165799a4d47",
+      "archiveFile": "inspirovane-result-lanoir-h136-mens-parfum-390.webp",
+      "webpSha256": "9cbdec06d90b414dfd23728b579b67b36888e7ba29cf950aff0d169e6149f99f",
+      "rgbaPixelsSha256": "f652f3a2a957ed7b9b49bf4fcdb7bacb6279529fb31c25a7ad3293c61a78d271",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-h137-mens-parfum-1280.png",
+      "sourcePngSha256": "ec1368313e6f7ba8e835cf91e477bf8565c5ccb386af8e32ca567800faa58de3",
+      "archiveFile": "inspirovane-result-lanoir-h137-mens-parfum-1280.webp",
+      "webpSha256": "37163b877f22dbfb20c59b8f1d5a6eda3450c7538b74278af366343e09385883",
+      "rgbaPixelsSha256": "fbc624ef30a0afcdd839babbfbe9be03d81cb25140a7680f8d1fa977d5e1aa86",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-h137-mens-parfum-320.png",
+      "sourcePngSha256": "d7dbb153dc60321ea632584ff3f8bb536d8ae44544e916df556c8b945a97f434",
+      "archiveFile": "inspirovane-result-lanoir-h137-mens-parfum-320.webp",
+      "webpSha256": "78d0aa51e590f9e6d7ab40d9b46bb095f0a61969217ed32fe629bb6ce5e703ab",
+      "rgbaPixelsSha256": "4a31e67bf15e80677ef14f0b505813a22acfd69862f9d1c4df86558fe8003699",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-h137-mens-parfum-390.png",
+      "sourcePngSha256": "21a76917d4493e00efcf774e92de47ab21f66b28118c96a7efbc3c1057c9d72f",
+      "archiveFile": "inspirovane-result-lanoir-h137-mens-parfum-390.webp",
+      "webpSha256": "5fd14137301c5ca020b760a172effef3b278bc519062ad4ec9b178fb4da544dd",
+      "rgbaPixelsSha256": "7cdc14952afb933235ddb2d4e5955b3c195dc631834ac2cac7ca19d994ef9b20",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u079-unisex-parfum-1280.png",
+      "sourcePngSha256": "a89172689a9704ef5df5103c85f4ad2a28dfbe5897e1fe9de078988d92b5cbc4",
+      "archiveFile": "inspirovane-result-lanoir-u079-unisex-parfum-1280.webp",
+      "webpSha256": "0d9b2066b802e20e1cd9a64627f88b5112033fc7e2bce405aead6a0e73dff5b8",
+      "rgbaPixelsSha256": "b91d59ed173b3442d82dfebe2c7695e8eecde1743165b592c340ec4f3965c083",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u079-unisex-parfum-320.png",
+      "sourcePngSha256": "74bebf577d2433dbca46eef2400578ff22856aedb404c2cb2025a399ebcf1c40",
+      "archiveFile": "inspirovane-result-lanoir-u079-unisex-parfum-320.webp",
+      "webpSha256": "e66c55efdb9ca3e3965592a66d0ee4158391d2c0cb7dc383e2a384f9f5f081d1",
+      "rgbaPixelsSha256": "3d4ce351aa13285fc1b953b1c8d2e5623c41899e99e0eefe3c828e93b8ed2a0b",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u079-unisex-parfum-390.png",
+      "sourcePngSha256": "5a5c530caed1e67bbe8f44e4fd65053491a06ff38ba1d9cbe2c7cb7df77e33ba",
+      "archiveFile": "inspirovane-result-lanoir-u079-unisex-parfum-390.webp",
+      "webpSha256": "0031d0544789816cd1396f352659f560ae4de341d77d0c149ca897264e5f4fc9",
+      "rgbaPixelsSha256": "e8536dce5ceaabe6a46dc498e9a91f38b8ca1f928a54e13ecc75cb2e605f6f5e",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u083-unisex-parfum-1280.png",
+      "sourcePngSha256": "be0d6b679041c994a4b4deda52165a08e376546f89835ba2914aa8596b7f0974",
+      "archiveFile": "inspirovane-result-lanoir-u083-unisex-parfum-1280.webp",
+      "webpSha256": "9f3e08c0e100222df3b3319d9e34663ac2f8334bd9a2ca1f31ac73d79b752506",
+      "rgbaPixelsSha256": "aeaa65e615e725d509c4ea512b1838549020363258c9944bca4762ac05d9c11d",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u083-unisex-parfum-320.png",
+      "sourcePngSha256": "f0473558662c229e096c33dd4863ff8adc4123059ded083cb1f9e96ba541e4f4",
+      "archiveFile": "inspirovane-result-lanoir-u083-unisex-parfum-320.webp",
+      "webpSha256": "93fbd0b684cb56e5fb7f087088bfa996cd8f278d752bf48fd4ba6a89e2ac3ccb",
+      "rgbaPixelsSha256": "871538f7aeacb9bf58f94b07e40592fc1fc383626afc411e695038a672ec3e84",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u083-unisex-parfum-390.png",
+      "sourcePngSha256": "400bcdee1db51eb6c760c7ae8382b9d89b26891d8861ba3df46129d43183c619",
+      "archiveFile": "inspirovane-result-lanoir-u083-unisex-parfum-390.webp",
+      "webpSha256": "8d7a26efc65605808a1996d7570c88f2b072a2341f62bbde86449e8726fcc774",
+      "rgbaPixelsSha256": "abeb904c5adfc0bd9b573bcb7a2a09ff19d98b6db51219d4da022310aa6e382a",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u084-unisex-parfum-1280.png",
+      "sourcePngSha256": "e898094a105fceee3063412971b0970f4ca3294d6fec23f1587303ccaa33b033",
+      "archiveFile": "inspirovane-result-lanoir-u084-unisex-parfum-1280.webp",
+      "webpSha256": "210a2b42d6a7906614a291fbf6d9d5f16d2bc826263db713c00cad2367aafbbd",
+      "rgbaPixelsSha256": "337cceb7cc002c98715b42ca522f1631a424968656e8c3aac7ea3eceaf98e736",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u084-unisex-parfum-320.png",
+      "sourcePngSha256": "4dee8a6b0bafb3927c798aff3e55f357a599ad7d2a0e8a4c64db16ecb698a45b",
+      "archiveFile": "inspirovane-result-lanoir-u084-unisex-parfum-320.webp",
+      "webpSha256": "78979831d1f928285cbe08aaf75c09a7e516266832a2243b417db5212a441415",
+      "rgbaPixelsSha256": "d75919592c220545e05a4c4cd5602e065ebc601f3fb67e1dc6f8dd17c21f8753",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u084-unisex-parfum-390.png",
+      "sourcePngSha256": "43b3da83a28c8e6f7b161de0a0b969b75b71db2c9ee463634d98b4121dd26523",
+      "archiveFile": "inspirovane-result-lanoir-u084-unisex-parfum-390.webp",
+      "webpSha256": "08efa1ce0189f9e26d7e73ac6f6ac3aeb87f90b5a0daa5eecbc585d6844ac99e",
+      "rgbaPixelsSha256": "1a7c40ee3de7d9a1bcb089baeef858da941e7fbf3ee220e60464cc887f804db3",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u089-unisex-parfum-1280.png",
+      "sourcePngSha256": "080fe37e2927f0913b9ec701e9b640210b5acd1e5a7b2359c0bdb41082ae851c",
+      "archiveFile": "inspirovane-result-lanoir-u089-unisex-parfum-1280.webp",
+      "webpSha256": "b12b07c423ad3ffd8b081d501186e6ed575ad958c81803f1d400b8c614f9ab03",
+      "rgbaPixelsSha256": "38886c68cc2f6018c097b46a78db225553993af3bdea0c2b60e6902ca4529fca",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u089-unisex-parfum-320.png",
+      "sourcePngSha256": "56becebd9e2baa6611350186a7a95141bc49ce6b17831026263725584d058e35",
+      "archiveFile": "inspirovane-result-lanoir-u089-unisex-parfum-320.webp",
+      "webpSha256": "37fa99b2b302ef95179d3c8f73f4fc3153f995a91541714c3c7faafcb8ee597c",
+      "rgbaPixelsSha256": "b89d08a361352d0f33d98d75782d9e5f04f90f5e0e4b475cce5465f3150b47b5",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u089-unisex-parfum-390.png",
+      "sourcePngSha256": "b2c12183cd70215b29fa00c6a4bebca2aad507ed4ef2dc2028510398ee572c89",
+      "archiveFile": "inspirovane-result-lanoir-u089-unisex-parfum-390.webp",
+      "webpSha256": "f6a44ae6a510a4a92265f8f0f60f1d958426c17ce2c87cdc5682c87d3d3cb086",
+      "rgbaPixelsSha256": "7f4b100afb960bcef48c8a5b3d0fd317fc957ea49a8812d5dc9d212f2cae2c3f",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u093-unisex-parfum-1280.png",
+      "sourcePngSha256": "fce11babcf56d642e3fbe14fcaa2a6f9785145e5b997d1b7276588c29062c81f",
+      "archiveFile": "inspirovane-result-lanoir-u093-unisex-parfum-1280.webp",
+      "webpSha256": "d555936f800f04e92e7080172d99b1e1056ed4c300e39b4263fca78525ed674e",
+      "rgbaPixelsSha256": "255be13e2469b0d617f1117d11dfdb0eaae1049658897e229e1b86db1393c859",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u093-unisex-parfum-320.png",
+      "sourcePngSha256": "c9cf25cab01e13fc27f00d147be51d3348f446b5a866a85a1cf76c7066a8f37d",
+      "archiveFile": "inspirovane-result-lanoir-u093-unisex-parfum-320.webp",
+      "webpSha256": "a305dec463e037b1c11c9de4eecf128844e768a1bb605f851512942638af5c26",
+      "rgbaPixelsSha256": "47c71853bba236a29b7b01f49758b61fed488a44b12214e0a5abe525f1c28ebd",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-result-lanoir-u093-unisex-parfum-390.png",
+      "sourcePngSha256": "77b3dbc5cfec0f91fb1941a5953f1cb4698ca01de2e345c84c615edac87b8702",
+      "archiveFile": "inspirovane-result-lanoir-u093-unisex-parfum-390.webp",
+      "webpSha256": "b9c2e643ceaace3e2f0b7783825c4454360536ab7e4330583f1066d53474f239",
+      "rgbaPixelsSha256": "5fe85c9f6c496d2d5ed9afd91a90717084749a6e3ca21f5c6eb229a0cb64a529",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-waiting-1280.png",
+      "sourcePngSha256": "fa268ae93868d8bf2a6a87bae321f01b8710ca461273e0953f325645c228ded7",
+      "archiveFile": "inspirovane-waiting-1280.webp",
+      "webpSha256": "62cc470be69ed2d846c14b39f1a4b80568752e4fbdbaf6cf47b03636170fc900",
+      "rgbaPixelsSha256": "417b269fd14f1e2f17137d58470a10b1177fbfe90e6a46062c4e227f404a891f",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-waiting-320.png",
+      "sourcePngSha256": "741fcf57d5acaa095bf5e667f64b6d47d17aea21bfddee0a4d06de8ca9f7d6a4",
+      "archiveFile": "inspirovane-waiting-320.webp",
+      "webpSha256": "ea122322fd41a9bd977cd1925389997bd9c55c0522d58f7b0c566063ac442f75",
+      "rgbaPixelsSha256": "808a5f1616b4b806e3795fd972166d8d03063388dda41784c48b3eaa65aed8c3",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/inspirovane-waiting-390.png",
+      "sourcePngSha256": "076dc256820e29e86d8a7f5d6dbe27ea8aee88888c325319f3111e61ab70134e",
+      "archiveFile": "inspirovane-waiting-390.webp",
+      "webpSha256": "5ea5cbed4cd8f50f4096ef624f6ef7a6a17f7eb17f33c62f781b2a25e03351e8",
+      "rgbaPixelsSha256": "a0dadfd374b12c4f7e74c6b15cdf59df0d91ffd2857c1619386dab6f33fc94d3",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-card-0-1280.png",
+      "sourcePngSha256": "bf48458856635c508b674615dda1fc2fd787a8111e410431ab82423a77313428",
+      "archiveFile": "orion-card-0-1280.webp",
+      "webpSha256": "3c6378d664675f7d16887de1abc018f1060f54b739b0cc499c1c403081986cec",
+      "rgbaPixelsSha256": "6597027e23e26e70f01469425e653a99fc6eeeaa4eee93a19aeba6a2cd18da00",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-card-0-320.png",
+      "sourcePngSha256": "fa3c8c62fb39b6dd387d9fbda7c9193e324ecc32963705f68570f5169a807dea",
+      "archiveFile": "orion-card-0-320.webp",
+      "webpSha256": "47ae60f3fea77df0cf3afff42cb88c087342922185c9842f03892173ef7e1914",
+      "rgbaPixelsSha256": "dbbe474ef309dbf324d0c2e384b7211b56a9bc462646ac70e0c8cdb604683ac6",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-card-0-390.png",
+      "sourcePngSha256": "b83c0137422afc4a807780087ebd88ec70027f0951ab7428fe41529b8d5acc25",
+      "archiveFile": "orion-card-0-390.webp",
+      "webpSha256": "688fb15402d6ca0591fa3b25cce0e05bd7df757268fa18c54d84aaf103625331",
+      "rgbaPixelsSha256": "2db799491d6afbdbb61fc3b97f7f7c74f138364d3d19992bb35ec175200c5067",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-card-1-1280.png",
+      "sourcePngSha256": "e193839683b77006a50d951abdcdded2721ab64423a3cdaef6af5c85e19a3394",
+      "archiveFile": "orion-card-1-1280.webp",
+      "webpSha256": "996b564bb4a02c59f01b7535a010a29df27668278b889cd43c10d7772936c1e4",
+      "rgbaPixelsSha256": "3905caaf079fd87d751c7e3b93cb52d96bcd796fa27487bbd8ff7ed9776775e7",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-card-1-320.png",
+      "sourcePngSha256": "3dec6e810c50eeda977438184561e38263b8945e0852724e45f251e7f7fa1ed4",
+      "archiveFile": "orion-card-1-320.webp",
+      "webpSha256": "9809f941a39e2ff7a6426bcb8313794693a33bc4004202a9b2afa0a01e42adf4",
+      "rgbaPixelsSha256": "3fa9869248ec8c908083323512a4fc054767543bfb9ebde1e3aa927007c9fd88",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-card-1-390.png",
+      "sourcePngSha256": "17186329b3eeab772b83616b45b5ab3654278ee87b3503d9bc14b9eb4bf3d0f1",
+      "archiveFile": "orion-card-1-390.webp",
+      "webpSha256": "56acae6ead5ff164d938263c4804825de10d93eb73c12666a0bfc1e5d0279fcf",
+      "rgbaPixelsSha256": "b5acf4d6f1ef8ff798eeb8669aa19c0b4f329c991a662c4946db7f218bf917bb",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-card-2-1280.png",
+      "sourcePngSha256": "c0f10a66fd6cb44e1022091503ae7083e0efd12c1122443830d8b7fcbe44d191",
+      "archiveFile": "orion-card-2-1280.webp",
+      "webpSha256": "a46e43dff22b78025ab718c278422762e13987f463f9b49c14f6aec70f7a7271",
+      "rgbaPixelsSha256": "13fb55c045ee34f8462b0702e7be78fbb787ae4d989d6346e2794c8d770a1616",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-card-2-320.png",
+      "sourcePngSha256": "a7752e4adbce8bb06fc12bb736913be6b426d677c4b7df73ed84d9561676ecbd",
+      "archiveFile": "orion-card-2-320.webp",
+      "webpSha256": "23316ed74078932e72b328782115c5681af583555fda596e9954faab7f587a6a",
+      "rgbaPixelsSha256": "6e245a69bdeb44fe0ec8414daaafca9a6e11b073eeaba8825cf88ed98a9f3c32",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-card-2-390.png",
+      "sourcePngSha256": "039450f442c9d87d9279d67187889c19f7e4222a6e08510efd5dcba5694973d5",
+      "archiveFile": "orion-card-2-390.webp",
+      "webpSha256": "313c2561278bc1f1ac46d50e1d6fe4699bf87aea11d11a0dbe5d9ede622ce365",
+      "rgbaPixelsSha256": "5a8769cad99115ff5d49208071c799ab99bf0a9c093683ece6445d5f687999e7",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-compare-1280.png",
+      "sourcePngSha256": "18ae7ff9ce8646c6c73660adf9c159bea6ee5e87c4e670c768662af663f5a217",
+      "archiveFile": "orion-compare-1280.webp",
+      "webpSha256": "b0ad59485a055622ad6ce919353442476bc14cadbb70895e0ab5be2ffdf2ba20",
+      "rgbaPixelsSha256": "48710b8821915e6349e2a56c09ff837d0714403c95964c99f22875c8df2fe4e9",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-compare-320.png",
+      "sourcePngSha256": "cda5de91ad9c75bf90ab387a2412654bdb84f57e2e370116218f3914dd168fa5",
+      "archiveFile": "orion-compare-320.webp",
+      "webpSha256": "dc7d7c6ba0dc7a7c470482c93085e9271e0511e47d0a64eb122a376ea846bc3b",
+      "rgbaPixelsSha256": "725f891ae10aca949b35b12bf1e4d9c003fb9565f5429ab3f6f5c919bdd3ec66",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-compare-390.png",
+      "sourcePngSha256": "bde8866b671559441247b10b210b0999dd7f2ee1621f7ab11100f1a02e7ef898",
+      "archiveFile": "orion-compare-390.webp",
+      "webpSha256": "af497d5c220557cd4f0fb3d555c8e7326a342f231237c88ee0ac057ed388c041",
+      "rgbaPixelsSha256": "ceb89855bc8f3ea71739c42a307c5551260d7763d5053d0f655757b7ab70f1dd",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-offer-1280.png",
+      "sourcePngSha256": "82feebd0a3b9f6c7e0000e4905d67b48d2f6c30e160622ece3f5b44f68075a16",
+      "archiveFile": "orion-offer-1280.webp",
+      "webpSha256": "9282cb2b9569f71058056e992d5e0c2d56020bfdcbb47b6ced0b3f1b51d5701e",
+      "rgbaPixelsSha256": "a4264ffe691a4e52bba57b3e137f3a87173ab4dee05bcb91897c1bf5ee2f25ca",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-offer-320.png",
+      "sourcePngSha256": "b019f3de1fd5b1a475ca0570b454b315af980dc4d96df4ea14af58cdc5ce8f92",
+      "archiveFile": "orion-offer-320.webp",
+      "webpSha256": "960f8aeb4344e945e7b1a88d0ab09b08a7795bc4f27ada14b5e746a164d7a830",
+      "rgbaPixelsSha256": "a60babfdcf98177a5a2c593f388431118eb9da9002153806262517ceb3f7b661",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-offer-390.png",
+      "sourcePngSha256": "4a35d05db4d33e884d20806aa52ab5a3b568de71ace82b4c6612ba6c458496d0",
+      "archiveFile": "orion-offer-390.webp",
+      "webpSha256": "67e87b56509ac0c121555e319670c886d9511df0cd748e48cc903d65afe2a450",
+      "rgbaPixelsSha256": "a72f8fd35810d1a53e95fbd0faf8bcd0f503a6c0ebee3e9dc3fe7072514b612e",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-1-1280.png",
+      "sourcePngSha256": "c90b425634beb3df3fb09df913b1c02e8f5f548f0fa98a3104b2c47bd31e8aed",
+      "archiveFile": "orion-question-1-1280.webp",
+      "webpSha256": "1bb2f4302308c181b2f808d31f0aa67428524d0e50494e4079c7418b2ca9d11d",
+      "rgbaPixelsSha256": "b53121ae42b5a2003fc29bcfa310d2c2ca63cc3e348caed1490849072d28be55",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-1-320.png",
+      "sourcePngSha256": "255fb839b4ba8831870dbc091c93cd80426b35d0567b87a7703b3e82cc3353cb",
+      "archiveFile": "orion-question-1-320.webp",
+      "webpSha256": "64fc9af7fc114e9b1b3201410a940104099575980ef2fa6362746901551aeb5f",
+      "rgbaPixelsSha256": "ab22f63d78accf713d7f00c4df7afe182b5a24d4e5284f3a53cbb01b42f3d3d2",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-1-390.png",
+      "sourcePngSha256": "86bb71cf29912cdd16bc70967702d71bd4153e95eca8a33860db354daa81b2a6",
+      "archiveFile": "orion-question-1-390.webp",
+      "webpSha256": "90115e5ceb405074e820c6b5ce7e73ea25649fb55f7a3f7f48a787f96a4f14b4",
+      "rgbaPixelsSha256": "9f93ac577db4e6e431964181565336687ba9db637821adbdacf0627879015a5f",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-2-1280.png",
+      "sourcePngSha256": "cab43c3bc757f059677f80ffb7c37138fb3b60665f83c3389047c45c25c85d14",
+      "archiveFile": "orion-question-2-1280.webp",
+      "webpSha256": "8cfefb76a937705b2ebe796188f4fdc6580b22bae1a752cfcc1eb1eb5224f4b4",
+      "rgbaPixelsSha256": "5b1b34d5e70dc99015cc559a893045acc6333a5ab23b22001bbcaf3ee65aab75",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-2-320.png",
+      "sourcePngSha256": "6ebf95ec4b091953c04f7c511a3a452ba0bab675fb3af72899d9c083e01db34a",
+      "archiveFile": "orion-question-2-320.webp",
+      "webpSha256": "c29f75cec4a164ef662412c837fd0208d787f8b953c744d0d72647250c5ba899",
+      "rgbaPixelsSha256": "919b47df8f92771c125f7eec99e776a7ad351eec3642f2e6ae756848dd020d83",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-2-390.png",
+      "sourcePngSha256": "10bb38056c9a546663db05c54029e8db673f98625d7ebc12341964dd3e021f20",
+      "archiveFile": "orion-question-2-390.webp",
+      "webpSha256": "2e6661cfa4cc4fdb272b0b3a5e89b02debd1467984e6070ec469cd2fae7e098a",
+      "rgbaPixelsSha256": "4e9d61b95d3253bcbd8899234f7611bfc3da24a2da4c2d8e17e3967b6927878d",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-3-1280.png",
+      "sourcePngSha256": "c0acdbf026149153f89ff5096c4a81c10cc3eb7e944d67cb6df69e44b04e1b1d",
+      "archiveFile": "orion-question-3-1280.webp",
+      "webpSha256": "e3bc884312fe45f7fe3a351494222eed79eb8326ef002e5288e06fcbb837e6e0",
+      "rgbaPixelsSha256": "c3287fbbb83cd545945e3587ed3a5f695e79456ed7cc36c374322aa111265dc7",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-3-320.png",
+      "sourcePngSha256": "29c1de9649a5d45611f462cf69d5e2765b54f395a4085ecf8bca063f436c6ffa",
+      "archiveFile": "orion-question-3-320.webp",
+      "webpSha256": "177e2247b07a78926d6edbb47d0634394ad6e983cd7e19a184ad7038262957fd",
+      "rgbaPixelsSha256": "86de52666793a5d6c390d54e90b9b2909ed12a2b555a980bd35c4fcbc74b7996",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-3-390.png",
+      "sourcePngSha256": "96b7f79771e8613b8ab6a7d21b8802de3d8670dc58c8654e865c8242439c92af",
+      "archiveFile": "orion-question-3-390.webp",
+      "webpSha256": "f76d0cfc24e5c59817138180969f13d2c6719fc35092b52be6f46ceba3efd79b",
+      "rgbaPixelsSha256": "87dd42248e9a6d94de7d3ac32b80ec5837474939950b10f84f448ab1238a3628",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-4-1280.png",
+      "sourcePngSha256": "70747969981acfb87968558945422aff276dcb7817495b33dc7434df8455cf33",
+      "archiveFile": "orion-question-4-1280.webp",
+      "webpSha256": "ce5f44aa7147ccb826548643b5e119f752bacacd94c1a73df2fb5ba7ab0349a4",
+      "rgbaPixelsSha256": "ade269da51161b6025b0cbf7ec59293fe687c9b8f6502bfaf132125f9f54e814",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-4-320.png",
+      "sourcePngSha256": "9a824294f82af61a82a3ff16e973601d5814b9fb817d6b07e438dcb76f85cac9",
+      "archiveFile": "orion-question-4-320.webp",
+      "webpSha256": "0c78ceb3bda9462f698f1e8385770a45254be0ba7021db2e031e54ea0c5e8107",
+      "rgbaPixelsSha256": "b195beb80934bd175d2b33e0f5e27d1e1de01332afe746bf5aa941f5c87ad904",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-4-390.png",
+      "sourcePngSha256": "5d8372f34047038c2eb754886b45fe2b95fb3b2ad54db8faf8a98ec6fcd9c28f",
+      "archiveFile": "orion-question-4-390.webp",
+      "webpSha256": "4d64e65c9efbc87ad389181598d56659c1efcf033575e11f4942bb58716be321",
+      "rgbaPixelsSha256": "bb06ce33f2ca9b1638d4fc3f9349e727ae70c15bab837dea71c5ed09da94249f",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-5-1280.png",
+      "sourcePngSha256": "353dc8e18baa8d0d8c4caeabc9f7bed76a4e191c4414cdbe96ff8833aac4dce0",
+      "archiveFile": "orion-question-5-1280.webp",
+      "webpSha256": "0af12135b483710bcf01aeccddf0e53b129905888facb82179956ce0f4b5bd82",
+      "rgbaPixelsSha256": "a0b3413b4315822c305b933798136cf605d9707bd439f6be0dcb82aad54bb6e6",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-5-320.png",
+      "sourcePngSha256": "525f42d96e0ce6cf436ba89a09e11445af9e30d06ffe9be882ca8ef21a0e56dd",
+      "archiveFile": "orion-question-5-320.webp",
+      "webpSha256": "4b49de98fa04a4a5306e699de46cbfd2134fe8bbbc5bdcc364edde48be031af0",
+      "rgbaPixelsSha256": "b9a957bfcdb381d24cb275bc4042991d0a347d1be557741faab3a2857ea08df7",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-question-5-390.png",
+      "sourcePngSha256": "8a3289770dcfb0b96f5d0f3271413f14b09516f31c6c9cf53bacbd4338291cf3",
+      "archiveFile": "orion-question-5-390.webp",
+      "webpSha256": "30668bda53ec2122011bfa2d6d5e2866a81f77c551f2d38c19b94fa6aaaafb31",
+      "rgbaPixelsSha256": "0fec1f1913abda1757601e8e4bce52231b378d84f4b400cf38ff91ee2d6b5046",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p115189-1280.png",
+      "sourcePngSha256": "20c381e7cc421e56d5a26411474a54b577d785555d0af7b4935cc60120f3a632",
+      "archiveFile": "orion-result-p115189-1280.webp",
+      "webpSha256": "ceebb75fde8b89766bb1739c09f4b49231161dce83145bef0c46f1d245e37670",
+      "rgbaPixelsSha256": "4f2076f50fa4b7c39cec8134483c1d4de52f7eaa0db7acf3acb1e572b12e1fc9",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p115189-320.png",
+      "sourcePngSha256": "188e6d1cb470fd26c4f65efac4baeee7c3441ba9e457095ef881f3ab0bb434ed",
+      "archiveFile": "orion-result-p115189-320.webp",
+      "webpSha256": "7d4c9c36f04a1847232a34efdb1d5cb0d8db6533a137b9beabe73a8d4ee2fc44",
+      "rgbaPixelsSha256": "3fd5b25221900aa872592e5619adb2a426595745d3774eb4b6cb65893d5dfada",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p115189-390.png",
+      "sourcePngSha256": "5954b7bf09984363d8789681028b3eab10d397cbf1f894702e3d90ae4bb7533b",
+      "archiveFile": "orion-result-p115189-390.webp",
+      "webpSha256": "2b6e834248e647c890d6b6b04ac34a67180d0774e7d78ceda97e0ef09533e8c3",
+      "rgbaPixelsSha256": "d34f887af4eac8d456e8099a015d732cfd16e346d86268ae1b96c7741ddc035b",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p118584-1280.png",
+      "sourcePngSha256": "40e80e4d9f8720db5df2cdcc4beda2abd5f6aee770169339dd0d475f59b4aa15",
+      "archiveFile": "orion-result-p118584-1280.webp",
+      "webpSha256": "8db4f9f15586d6ffd70e76f52a48a112d27271115449847d77efdcee040173e3",
+      "rgbaPixelsSha256": "f0937c7ff1d264e6bcaeccf00c914d2e086036e60bf681863b65704ace94defd",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p118584-320.png",
+      "sourcePngSha256": "5de1bedc366469264196c59ce7e87d69035cd55117633d06e5c5870bac84e94d",
+      "archiveFile": "orion-result-p118584-320.webp",
+      "webpSha256": "60e56ee257f14b2654a35388e673cb9efdf90d3820445c7ba30c36d5a4872f01",
+      "rgbaPixelsSha256": "0ff74b0087f34769fd46151bee75dac5c649cac281ce7915b440a389eb3c8d95",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p118584-390.png",
+      "sourcePngSha256": "414dae78a3d33917eff4f6095c25c46de2785d12a44368c4be2c3c987ef49df7",
+      "archiveFile": "orion-result-p118584-390.webp",
+      "webpSha256": "4ed67658d3ba3b0fdb2e5de7fbfa1d952a7f7e8e8e3d367b95e8f9a602e53aad",
+      "rgbaPixelsSha256": "f1e8e3d7ed0cf49184ff659997e3e22a05a67ec661435fed060e712d8fe710cd",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p122810-1280.png",
+      "sourcePngSha256": "b6f2b34f094c69deec5532482f33a281b48270005fd90c37b0928b8a8d981bd3",
+      "archiveFile": "orion-result-p122810-1280.webp",
+      "webpSha256": "62669a2677614d5611cada8a211acbb4cd434062a96259a400c3764272f73fc5",
+      "rgbaPixelsSha256": "0c055db521b69d66ad667bd53d03d0fece8b4ff61adb9271961b46fbed465814",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p122810-320.png",
+      "sourcePngSha256": "05d212eb0cda67351a0571535bb25e0aadbd4d1a066b9f9e40350dcb09cee2cf",
+      "archiveFile": "orion-result-p122810-320.webp",
+      "webpSha256": "79b20e96243a053c5eea7624b7c515b2f8827fb65233cf9746e933095e516b68",
+      "rgbaPixelsSha256": "e6f424859fd24b0d34847f81ced52a95eda13a29226123883c17cd4368cdca1d",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p122810-390.png",
+      "sourcePngSha256": "3171b111b16daf734b83e3e4d2e3b5fd3fa8c6c94ec8db46cbbbd662c768cc17",
+      "archiveFile": "orion-result-p122810-390.webp",
+      "webpSha256": "7cd8f46f0e62c115aec1ec1b86123f798fa2cc5b4fc7715a1601e79d59ad16a5",
+      "rgbaPixelsSha256": "c1c12bb43224b42ce7afbd228316b8690a0f6d7549c02d036adcbf6fdbd41c06",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p125061-1280.png",
+      "sourcePngSha256": "09f94a89b7286ee3c7039dfab0e0a4a13f4625c0ae00c9a7ae12e5ebeb3a43dd",
+      "archiveFile": "orion-result-p125061-1280.webp",
+      "webpSha256": "f1c8835cd35e5a3df7983a5c20aeff6c1f736f655d3d36696a3d676575f7e7ab",
+      "rgbaPixelsSha256": "b520ddb0b431c62d0b322518f6548a7738c977d064e27ebbc08c39301724d63d",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p125061-320.png",
+      "sourcePngSha256": "dbb0989da428441744fcee44a2c7f356917ee5f82617d0d8cc38277ae0c4415f",
+      "archiveFile": "orion-result-p125061-320.webp",
+      "webpSha256": "eb0db9fc6e237c660bf58797633e6634ac7a1928220bafa61d782836ff8d651e",
+      "rgbaPixelsSha256": "bc6bf50e2ce07711f8987dae7c974fccec639f44730370eb5360cdad2121236b",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p125061-390.png",
+      "sourcePngSha256": "a1e0928c4852ff4c9778516a0ec042a4065430f49b4c29d17d2c141c7e350980",
+      "archiveFile": "orion-result-p125061-390.webp",
+      "webpSha256": "f93fdc00f4e2097de189116238bc429890b874a178a703dca266edb33c085ecd",
+      "rgbaPixelsSha256": "0bc9149d6e6dd8341b5c4e0082d839375a887d455977096fea837294b54021d0",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p127072-1280.png",
+      "sourcePngSha256": "0bd84de1c34d614c3860d5dc5c4bc167a26fb42903e0a9f631b2f4c382407d0a",
+      "archiveFile": "orion-result-p127072-1280.webp",
+      "webpSha256": "58b846fcb6752e47dd7c9d62f3e8c857cf958444e42db9f85fd63974d0051055",
+      "rgbaPixelsSha256": "e80f899ca0168be014b6862e9cd0ce2c0128378268f375e2216f9dd8afde0838",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p127072-320.png",
+      "sourcePngSha256": "62250a0baba6503a1ec9f173364cb44be972a82d9b0a728f56d2d0502fa64828",
+      "archiveFile": "orion-result-p127072-320.webp",
+      "webpSha256": "8f94b4170204f3e4070158af8ba7357a4ce2d1696ada6a9cecc93ab727e5fccb",
+      "rgbaPixelsSha256": "56085fe26652b58cde2f1c2fae20faca7e9b68f4bd7ed2d513baba7643d5c5d4",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p127072-390.png",
+      "sourcePngSha256": "6756cf989c56cfe5b60457e26f29200f4a5735a9cafd3b59b60fd2278b8c8a59",
+      "archiveFile": "orion-result-p127072-390.webp",
+      "webpSha256": "3a51079e0074206ca6fdfefa18ee7c2a8a0e6488da693865c1f9e0d63a9cb2ce",
+      "rgbaPixelsSha256": "0cdb5f41fb8f2f01c4c917a80329cb8f619711740d67ed36b7bece4740ddd1a0",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p129062-1280.png",
+      "sourcePngSha256": "4ebe69d397df65308a1427089f5300463d26712f411276a0da0d07a4124cdbc8",
+      "archiveFile": "orion-result-p129062-1280.webp",
+      "webpSha256": "fd81f5c9f693dd7e58673af6218ad2cf33aa43550af9ed465db976e9983d2d05",
+      "rgbaPixelsSha256": "0871cab7a07cdf90981ee7378c7d01f6d67ed6c14a18307ad14f3ab177b05484",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p129062-320.png",
+      "sourcePngSha256": "a4ee73c4e71d45977da99e7897bd06cccef72e73d1053cbfeb59838b50a245a1",
+      "archiveFile": "orion-result-p129062-320.webp",
+      "webpSha256": "d1af5606e447d291ff4d1ba065472474e34b0b4f2f47a4c41174bb2db9f8483e",
+      "rgbaPixelsSha256": "ba4a10ee7f2242fb03613eb5ca7e3aa4eb1581429ecb1aa5e7ffdc2e96a1f45b",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p129062-390.png",
+      "sourcePngSha256": "5b3b2b583c412925023b56a9585c321bc56c1fd490a400c8c88565469ce481d5",
+      "archiveFile": "orion-result-p129062-390.webp",
+      "webpSha256": "0d9b0cfa4f1e8daa56b536c798296e74b483c8944262caa6732e6ff08d7b95b8",
+      "rgbaPixelsSha256": "2bb015772587be6743f82658a0f2eddd378f798e646de51da656efc1ab4c9f21",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p132310-1280.png",
+      "sourcePngSha256": "6e648cd14c3cc4edf21b01eb51d28e28cc55fb536cd07a2df5b5fa5cdb23fa95",
+      "archiveFile": "orion-result-p132310-1280.webp",
+      "webpSha256": "96d71ec89df54195435f270408f92565d30ebc273666b9aec8ee5cd33acf4b0d",
+      "rgbaPixelsSha256": "0dc6b34b1bfc96c580473d14b11a69ca64e26d3fc35e98a8e9718affdd33246e",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p132310-320.png",
+      "sourcePngSha256": "a2cf35ab1bca540329fc963c82cf7cf376d5d075f2199cf32230f076630565f9",
+      "archiveFile": "orion-result-p132310-320.webp",
+      "webpSha256": "b056daa1063e4544cfc9a9251a8360e368cf921cae4bf8c3f748cbac441e7af8",
+      "rgbaPixelsSha256": "80154fad0e7aba973a738bc8e4fc71040c010ea4947a61ddf159aefc7863ca1f",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p132310-390.png",
+      "sourcePngSha256": "14ee8f15b1d76aaad55f46f572328d9bb6df7e76e583542f841ffcc14936b505",
+      "archiveFile": "orion-result-p132310-390.webp",
+      "webpSha256": "e56f6e8397b4ad2e3b58529d149e9eedc018f580857ac3f8bbb32b746b05dd5d",
+      "rgbaPixelsSha256": "cd0925e180e1b105205742f7bc1def3970f7ed9c7c237cb41c008c28fec53c40",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p133760-1280.png",
+      "sourcePngSha256": "ef4ce9ac79b2f125ae092b9821d00b95a892db8b479d8f957a79de4086b793e1",
+      "archiveFile": "orion-result-p133760-1280.webp",
+      "webpSha256": "b1d9825a4a429c0e2fc5e439617b0085ba71a3d89b755c318f2a40777606ab08",
+      "rgbaPixelsSha256": "be7bdc8efe83ac66876838620db7cce6ba3ef65a47c835646602ce7bc482b1e7",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p133760-320.png",
+      "sourcePngSha256": "ed160941907d24de95be4c552e87b2a9266cffcb82377e8d1f5fbaf61b033e21",
+      "archiveFile": "orion-result-p133760-320.webp",
+      "webpSha256": "e2f89dcdddb4efa93ae86489a1f3e2b8d66ae7e16e3be78ff1ccc050378fcdc7",
+      "rgbaPixelsSha256": "45284e0685808078f4da64946345b5b2ca7f6be0a4ddedced0cc379e3109964a",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p133760-390.png",
+      "sourcePngSha256": "bafd3d2483cdc4e98362a8a8849208c4f08c848f1d3e86a738f35f2e14e3e69d",
+      "archiveFile": "orion-result-p133760-390.webp",
+      "webpSha256": "4327b95fcd90f9742ce5d3dd5e1dfccb623fcc86b6e13985f892535560e10487",
+      "rgbaPixelsSha256": "4a3614fd264b41c379d5503c68dd4fb6016cf6578e99665b7a09a5bfcffc7a0a",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p137008-1280.png",
+      "sourcePngSha256": "3be10605381d41e11174abd5903f314a5d6870ab09dc2f3ddf492fc95a9725ff",
+      "archiveFile": "orion-result-p137008-1280.webp",
+      "webpSha256": "5e56b95a7220a6937c67af1ec9dc89510ef09a561da3c4c85fc0fa1ae7166ff5",
+      "rgbaPixelsSha256": "cb1a26076d16aa4c3e63fba2ecb4eaca41ec1f4a746d6775e2917de3db4fd237",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p137008-320.png",
+      "sourcePngSha256": "401aa27c879f2f9398eec11f575a7e689cd0b9fab5091b659a7cbd8f43228ab9",
+      "archiveFile": "orion-result-p137008-320.webp",
+      "webpSha256": "db1a74e28fc258acfaaa46fc2886bbe3045bbf5234d885baeec5722741229c41",
+      "rgbaPixelsSha256": "11782e7e760841dcba53736d4eff60dde25a4f1fbd4c435a454aa06e83c695c7",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p137008-390.png",
+      "sourcePngSha256": "516654f7a957bb98bed2d0ee339d52aca8b3ac58f8a568031097070e61abe3d7",
+      "archiveFile": "orion-result-p137008-390.webp",
+      "webpSha256": "adac45f1a5e85a59df265243084ad2406c01bf1374f08ea9b1f551cf7cd7563f",
+      "rgbaPixelsSha256": "311e47be86050a358b49559e5528989eea4f8f86fa36174ac317bfc955567289",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p18465-1280.png",
+      "sourcePngSha256": "41d8c5117e8c5a489e309f6112943759b838797e488cf5521751e90f60a3162d",
+      "archiveFile": "orion-result-p18465-1280.webp",
+      "webpSha256": "9f2b586c1abbd093204d75afe5f5cdbbc09e498217d4beaa8b7e86638aceb345",
+      "rgbaPixelsSha256": "4a13bdb1e383095804073ea1d712a260f8ef3119e569be9e59dd4b9d54536522",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p18465-320.png",
+      "sourcePngSha256": "2251a7b4211f7ae21039fe9763213a3f30959b8e0c318a3c32ffbb659e715a3e",
+      "archiveFile": "orion-result-p18465-320.webp",
+      "webpSha256": "b87162b183c7c5de920fde53207abf0801b28c7426c12f7fc674db03dcb8f6a3",
+      "rgbaPixelsSha256": "b0b20d7a8d552345ffe00d53710b71f155f61437ebc9260af8a1aeb1093aaf2b",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p18465-390.png",
+      "sourcePngSha256": "2d2c3b4e62acf0a0711c29738436b7ff55cbd547ade7960e25b221013a556811",
+      "archiveFile": "orion-result-p18465-390.webp",
+      "webpSha256": "1c861fd109ec1557d8c02ac4d536040348d5e88b06021e62ee64272af1d715fc",
+      "rgbaPixelsSha256": "39de238be1ddc5ce3b8caebb6a0a95e6d09d9295b8f7706b5a6e746537858b43",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p360-1280.png",
+      "sourcePngSha256": "4b03c2114cc8569c783cfc97fb77f6cbd33de3163bd263dc3331ffcd47438328",
+      "archiveFile": "orion-result-p360-1280.webp",
+      "webpSha256": "47d2d1eb294b2bc12283e36d86e24d913f67fbe00e9a14dda4bc34244ea4bb28",
+      "rgbaPixelsSha256": "8f46dc3f584f277d59e9f794c1885257397cd5a528abbc0f205d902c27cfc7df",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p360-320.png",
+      "sourcePngSha256": "6ecae8d7d2a9d5298629afc4cc9aa6da3cebb48964469fdd7cb98cbf0bf934ee",
+      "archiveFile": "orion-result-p360-320.webp",
+      "webpSha256": "1b064df464734eed8e8586aa2509cb130b12b9c6b03b5fcd48b10110a855288a",
+      "rgbaPixelsSha256": "0a645e543fcfeeacebe62bedfc5a6d925976876a6c50c8b8cc0040f9c6a8a35e",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p360-390.png",
+      "sourcePngSha256": "383563d89a4da60db372426379296d8c1e54491811d0ec1cf1619d14ba4321f1",
+      "archiveFile": "orion-result-p360-390.webp",
+      "webpSha256": "259b85edb6c6242d46b49836a38f2d5f1869e131ff3eb21f8cafce4b0bdc9acc",
+      "rgbaPixelsSha256": "fde9d2918f9385b489f20fac5af4102786121f42e589dd213c7675206da7f307",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p67840-1280.png",
+      "sourcePngSha256": "b9c8fc7d4c8c8423b50634b9355460ba94a840b2bc4df8892c5b5d209e73adc2",
+      "archiveFile": "orion-result-p67840-1280.webp",
+      "webpSha256": "d4077566500f2c08ebe772d70f738545a1e570d30fc1a379791e381a79cc31c7",
+      "rgbaPixelsSha256": "a724814565f641c444f5ed97765548145da5db545a80a4f55266f7ce8a7983a6",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p67840-320.png",
+      "sourcePngSha256": "69e009538370d177fdba742755fde5784c43c89b4d10f955a2bf82287ca4d0fe",
+      "archiveFile": "orion-result-p67840-320.webp",
+      "webpSha256": "ee7e88692d613cf0815aa61e6435ef035b3bc682aa381e3b4a1b84481ec02fcc",
+      "rgbaPixelsSha256": "b26df3f06cbc172a22bea35071cae24bb2d79afe72710eced3bca1c4b56c8693",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-result-p67840-390.png",
+      "sourcePngSha256": "a7cef1381fa530823d94b8f50b4e6a5bbad8a23351c33760fe80b471b6a45022",
+      "archiveFile": "orion-result-p67840-390.webp",
+      "webpSha256": "8ecb4ec47a6c5c3380bf8d077f20359f99bc4034e13fc171a0ce9169e2be6bfb",
+      "rgbaPixelsSha256": "c2b0b7aaff48b0d3500fd09772f3bbe7c0296eec25c151eb7ffad39dbb98b89d",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-waiting-1280.png",
+      "sourcePngSha256": "57243f275f6e645c76421b4ab4e6662b291636a93cc144b6008d2de538a426ef",
+      "archiveFile": "orion-waiting-1280.webp",
+      "webpSha256": "22aea4664981a2c939911c6b8dc7fa891cc4439c075f61215121c1015b04c3bc",
+      "rgbaPixelsSha256": "5574cdfadd2fc5e1fba9fe90c44082fe3ec45694f485e980ba064ea19615e5a0",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-waiting-320.png",
+      "sourcePngSha256": "0494ce0919be3bad3777bfaca2a6a4aa6f9f371004d8f1197a42955c9b31fcb2",
+      "archiveFile": "orion-waiting-320.webp",
+      "webpSha256": "4bae85eff71f1fb1f39ca6f24b7b0261803bd526ef2d9141420c98d486df99cc",
+      "rgbaPixelsSha256": "d2f56cc850b4c0f6b485825dfa62223a09963fc86d0f00cac06566e219f34ac7",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/orion-waiting-390.png",
+      "sourcePngSha256": "ba5311d56175c909b61ce22e3ed0658026bfdbd1d6855ae23681df85a4627187",
+      "archiveFile": "orion-waiting-390.webp",
+      "webpSha256": "baa811dd88720212f32fbf416c802b821faac0f0167c8fad0e5191e0217250a7",
+      "rgbaPixelsSha256": "8fe28253573e3bf797689ec88d053e60fff1c2dd76b3d3ba2dafa8d4f65e895b",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    }
+  ],
+  "archives": [
+    {
+      "path": "tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/local-inspirovane-1280.zip",
+      "bytes": 2749992,
+      "sha256": "18698bffde4a8c2ec8a55d562b19062d3f7ea0cb4a80a7f6236c374e06c624ee",
+      "originalScreenshotCount": 23,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/local-inspirovane-320.zip",
+      "bytes": 2466982,
+      "sha256": "33595ff8cbc48d54b8f3e784c6ae621ac508928ba7574d119cb4a6cfb8462134",
+      "originalScreenshotCount": 23,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/local-inspirovane-390.zip",
+      "bytes": 2374765,
+      "sha256": "c0295bde77dfe233b45f90282d90e8307519e6590d44dee2266a91931e7f904b",
+      "originalScreenshotCount": 23,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/local-orion-1280.zip",
+      "bytes": 2763659,
+      "sha256": "f518f8e96b9121ca833fc02f237f3ef78216f2e78bc34e7ff8d63d60f4dd56c1",
+      "originalScreenshotCount": 23,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/local-orion-320.zip",
+      "bytes": 2313062,
+      "sha256": "5bd47621f792f80ee930a7a564721d509ccd9e0ba8c21220c8c1958505fada8e",
+      "originalScreenshotCount": 23,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/local-orion-390.zip",
+      "bytes": 2287501,
+      "sha256": "4b56b8b2bfcbe907ffb897496027a9b37ae655443acd00f47ec3777d022db594",
+      "originalScreenshotCount": 23,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "/workspace/work/perfume-worker/tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/merchant-live-eligibility.zip",
+      "bytes": 1479196,
+      "sha256": "fa01d025ab3094d4e4c638f63f00bd8b3a985bfeb6328236caff281c99e184f8",
+      "originalScreenshotCount": 5,
+      "scope": "Actual merchant eligibility only"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-11-11T12:41:38.313483+00:00",
+  "authorization": "Owner explicitly permits QA screenshot/ZIP GitHub storage under /tools/ excluded from Vercel.",
+  "archiveCount": 7,
+  "archiveBytes": 16435157,
+  "localFrames": 138,
+  "merchantFrames": 5,
+  "derivedStandardReviewSheets": 18,
+  "pixelIdentical": true,
+  "allUploadedBlobGitShasMatchedLocalBytes": true,
+  "archives": [
+    {
+      "path": "tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/local-inspirovane-1280.zip",
+      "bytes": 2749992,
+      "sha256": "18698bffde4a8c2ec8a55d562b19062d3f7ea0cb4a80a7f6236c374e06c624ee",
+      "originalScreenshotCount": 23,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/local-inspirovane-320.zip",
+      "bytes": 2466982,
+      "sha256": "33595ff8cbc48d54b8f3e784c6ae621ac508928ba7574d119cb4a6cfb8462134",
+      "originalScreenshotCount": 23,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/local-inspirovane-390.zip",
+      "bytes": 2374765,
+      "sha256": "c0295bde77dfe233b45f90282d90e8307519e6590d44dee2266a91931e7f904b",
+      "originalScreenshotCount": 23,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/local-orion-1280.zip",
+      "bytes": 2763659,
+      "sha256": "f518f8e96b9121ca833fc02f237f3ef78216f2e78bc34e7ff8d63d60f4dd56c1",
+      "originalScreenshotCount": 23,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/local-orion-320.zip",
+      "bytes": 2313062,
+      "sha256": "5bd47621f792f80ee930a7a564721d509ccd9e0ba8c21220c8c1958505fada8e",
+      "originalScreenshotCount": 23,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/local-orion-390.zip",
+      "bytes": 2287501,
+      "sha256": "4b56b8b2bfcbe907ffb897496027a9b37ae655443acd00f47ec3777d022db594",
+      "originalScreenshotCount": 23,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "/workspace/work/perfume-worker/tools/s5/perfume-independent/reports/orion-inspirovane-20261111/archives/final/merchant-live-eligibility.zip",
+      "bytes": 1479196,
+      "sha256": "fa01d025ab3094d4e4c638f63f00bd8b3a985bfeb6328236caff281c99e184f8",
+      "originalScreenshotCount": 5,
+      "scope": "Actual merchant eligibility only"
+    }
+  ],
+  "sourcePngs": "Preserved locally; all baseline/compact/delta phases retained, no deletion",
+  "sharedIgnoreChanged": false,
+  "vercelExclusion": "Existing /tools/ rule",
+  "scope": "Actual LOCAL fixture QA and merchant eligibility; NOT live Preview QA."
+}
