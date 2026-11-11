@@ -1,0 +1,44 @@
+{
+  "scope": "Authorized QA archives under existing Vercel-excluded /tools; raw originals and prior archives retained locally.",
+  "archives": [
+    {
+      "path": "tools/s5/perfume-independent/reports/myskino-20261111/archives/myskino-local-320.zip",
+      "file": "/workspace/work/perfume-worker/tools/s5/perfume-independent/reports/myskino-20261111/archives/myskino-local-320.zip",
+      "bytes": 1559332,
+      "sha256": "014f48c245cc409801883c1ea36b8da0d5b00c03d0c5b8c5b077ee5eb8f69396",
+      "gitSha": "ee6e59edd28b237d00b257b10b54a30b24395f54",
+      "originalFrames": 16,
+      "derivedSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/myskino-20261111/archives/myskino-local-390.zip",
+      "file": "/workspace/work/perfume-worker/tools/s5/perfume-independent/reports/myskino-20261111/archives/myskino-local-390.zip",
+      "bytes": 1512513,
+      "sha256": "796638040a9c0b15b1057fb484c8754c7d175894460a58438cda4fece31f9951",
+      "gitSha": "b335ab1cfe0656daf17dcae984734736429af9cf",
+      "originalFrames": 16,
+      "derivedSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/myskino-20261111/archives/myskino-local-1280.zip",
+      "file": "/workspace/work/perfume-worker/tools/s5/perfume-independent/reports/myskino-20261111/archives/myskino-local-1280.zip",
+      "bytes": 1725676,
+      "sha256": "3bcf53cf6c82b50bc87f7408d6dcf289d7ce41132e59ffae1b284a615f8d0f82",
+      "gitSha": "9dca359a31247f7def44f309ea3752f68f2b9424",
+      "originalFrames": 16,
+      "derivedSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/myskino-20261111/archives/myskino-merchant-live.zip",
+      "file": "/workspace/work/perfume-worker/tools/s5/perfume-independent/reports/myskino-20261111/archives/myskino-merchant-live.zip",
+      "bytes": 1253463,
+      "sha256": "ce0fe1db533d1da30696940fe263b61a7cf59390b44bf50c9bf1cc45ba1aeb78",
+      "gitSha": "84c06cad28669ded1a97e7a2e98e7c4fd5438c9e",
+      "originalFrames": 5,
+      "derivedSheets": 0
+    }
+  ],
+  "totalBytes": 6050984,
+  "localFrames": 48,
+  "merchantFrames": 5
+}

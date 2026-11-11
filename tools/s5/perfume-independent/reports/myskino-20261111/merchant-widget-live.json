@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-11-11T12:42:16.815766+00:00",
+  "url": "https://www.myskino.cz/",
+  "tlsVerification": true,
+  "paidModelCalls": 0,
+  "noMessagesOrFormsSubmitted": true,
+  "cookieMode": "Nastavení → Vše vypnout",
+  "action": "Opened visible Smartsupp launcher only; no quick reply, text or message",
+  "frames": [
+    {
+      "name": "widgetMessengerFrame",
+      "origin": "about:blank",
+      "text": "Potřebujete poradit?\nZodpovíme každý Váš dotaz\n\nPowered by Smartsupp",
+      "visibleButtons": [
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Rozbalit chat",
+          "title": ""
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Zobrazit více",
+          "title": ""
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Minimalizovat chat",
+          "title": ""
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "aria": "Emoji",
+          "title": ""
+        }
+      ]
+    }
+  ]
+}

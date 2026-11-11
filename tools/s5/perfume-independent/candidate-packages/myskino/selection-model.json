@@ -1,0 +1,64 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaké tóny chcete objevovat?",
+  "options": [
+    {
+      "value": "citrus",
+      "label": "Citrusy s květy nebo dřevem",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "nice",
+          "label": "Bergamot, jasmín a cedr",
+          "productId": "nice",
+          "sourceUrl": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/"
+        },
+        {
+          "value": "riviera",
+          "label": "Limetka, zázvor a černý čaj",
+          "productId": "riviera",
+          "sourceUrl": "https://www.myskino.cz/bon-parfumeur-005-riviera-absolue-niche-parfem/"
+        },
+        {
+          "value": "gozo",
+          "label": "Tuberóza, šafrán a cedr",
+          "productId": "gozo",
+          "sourceUrl": "https://www.myskino.cz/jeroboam-gozo-niche-parfem/"
+        }
+      ]
+    },
+    {
+      "value": "sweet",
+      "label": "Kakao, vanilka či mléko",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "kokoa",
+          "label": "Hruška, kakao a myrha",
+          "productId": "kokoa",
+          "sourceUrl": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/"
+        },
+        {
+          "value": "saint",
+          "label": "Lískový oříšek, mléko a santal",
+          "productId": "saint",
+          "sourceUrl": "https://www.myskino.cz/nicola-saint-honore-niche-parfem/"
+        },
+        {
+          "value": "fire",
+          "label": "Mimóza, vanilka a hnědý cukr",
+          "productId": "fire",
+          "sourceUrl": "https://www.myskino.cz/jovoy-fire-at-will-niche-parfem/"
+        },
+        {
+          "value": "ambrelatte",
+          "label": "Mandlové mléko, tonka a santal",
+          "productId": "ambrelatte",
+          "sourceUrl": "https://www.myskino.cz/essential-parfums-ambre-latte-niche-parfem/"
+        }
+      ]
+    }
+  ]
+}

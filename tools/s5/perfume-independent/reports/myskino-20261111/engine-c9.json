@@ -1,0 +1,108 @@
+{
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Unchanged coordinator core with isolated candidate data; not registered or Preview QA",
+  "companies": {
+    "myskino": {
+      "formulaCount": 7,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "nice"
+          },
+          "id": "nice",
+          "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "riviera"
+          },
+          "id": "riviera",
+          "url": "https://www.myskino.cz/bon-parfumeur-005-riviera-absolue-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "gozo"
+          },
+          "id": "gozo",
+          "url": "https://www.myskino.cz/jeroboam-gozo-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "kokoa"
+          },
+          "id": "kokoa",
+          "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "saint"
+          },
+          "id": "saint",
+          "url": "https://www.myskino.cz/nicola-saint-honore-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "fire"
+          },
+          "id": "fire",
+          "url": "https://www.myskino.cz/jovoy-fire-at-will-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "ambrelatte"
+          },
+          "id": "ambrelatte",
+          "url": "https://www.myskino.cz/essential-parfums-ambre-latte-niche-parfem/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "citrus",
+              "sweet"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "nice",
+              "riviera",
+              "gozo"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "kokoa",
+              "saint",
+              "fire",
+              "ambrelatte"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    }
+  },
+  "paidModelCalls": 0
+}

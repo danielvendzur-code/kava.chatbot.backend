@@ -1,0 +1,137 @@
+{
+  "at": "2026-11-11T13:05:07.696745+00:00",
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Local isolated candidate fixture only.",
+  "cards": [
+    {
+      "slug": "myskino",
+      "width": 320,
+      "id": "nice",
+      "price": "2 350 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "myskino-card-0-320.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 320,
+      "id": "kokoa",
+      "price": "2 500 Kč",
+      "pack": "50 ml",
+      "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "myskino-card-1-320.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 320,
+      "id": "ambrelatte",
+      "price": "2 350 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/essential-parfums-ambre-latte-niche-parfem/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "myskino-card-2-320.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "nice",
+      "price": "2 350 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "myskino-card-0-390.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "kokoa",
+      "price": "2 500 Kč",
+      "pack": "50 ml",
+      "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "myskino-card-1-390.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "ambrelatte",
+      "price": "2 350 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/essential-parfums-ambre-latte-niche-parfem/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "myskino-card-2-390.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 1280,
+      "id": "nice",
+      "price": "2 350 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "myskino-card-0-1280.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 1280,
+      "id": "kokoa",
+      "price": "2 500 Kč",
+      "pack": "50 ml",
+      "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "myskino-card-1-1280.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 1280,
+      "id": "ambrelatte",
+      "price": "2 350 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/essential-parfums-ambre-latte-niche-parfem/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "myskino-card-2-1280.png"
+    }
+  ],
+  "viewports": [
+    {
+      "slug": "myskino",
+      "width": 320,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    },
+    {
+      "slug": "myskino",
+      "width": 1280,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    }
+  ],
+  "errors": [],
+  "paidModelCalls": 0,
+  "complete": true,
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "browser": "webkit"
+}
