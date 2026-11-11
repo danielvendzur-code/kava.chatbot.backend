@@ -1,0 +1,423 @@
+{
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Local question/photo/label presentation delta only, unchanged shared core, no Preview claim.",
+  "paidModelCalls": 0,
+  "questionPages": [
+    {
+      "slug": "essentique",
+      "width": 320,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy alebo minerálne tóny\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Kvety s hruškou, liči či broskyňou\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Koňak, vanilka alebo tonka\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "text": "Drevo, korenie alebo Cetalox\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-0-320.png",
+      "at": "2026-11-11T10:50:30.906336+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "orange-x-santal",
+          "text": "Pomaranč, bazalka a santal\nPomaranč, bazalka a santal.",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "the-ghost-in-the-shell",
+          "text": "Yuzu, mliečny akord a jazmín\nYuzu, mliečny akord a jazmín.",
+          "photo": "/assets/s3/scenes-k2/milk.jpg"
+        },
+        {
+          "id": "ganymede",
+          "text": "Mandarínka a minerálne tóny\nMandarínka, minerálne tóny a semiš.",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-1-320.png",
+      "at": "2026-11-11T10:50:31.994111+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "guidance",
+          "text": "Hruška, lieskový orech a ruža\nHruška, lieskový orech a ruža.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "delina-exclusif",
+          "text": "Liči, ruža a kadidlo\nLiči, ruža a kadidlo.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "hundred-silent-ways",
+          "text": "Broskyňa, tuberóza a vanilka\nBroskyňa, tuberóza a vanilka.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-2-320.png",
+      "at": "2026-11-11T10:50:33.240982+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "gourmand"
+      },
+      "options": [
+        {
+          "id": "angels-share",
+          "text": "Koňak, škorica a praliné\nKoňak, škorica a praliné.",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        },
+        {
+          "id": "divine-vanille",
+          "text": "Vanilka, kadidlo a tonka\nVanilka, kadidlo a tonka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "arabians-tonka",
+          "text": "Tonka, ruža a oud\nTonka, ruža a oud.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-3-320.png",
+      "at": "2026-11-11T10:50:34.372569+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "wood"
+      },
+      "options": [
+        {
+          "id": "bois-imperial",
+          "text": "Bazalka a drevité tóny\nBazalka, Timut korenie a drevité tóny.",
+          "photo": "/assets/s5/essentique/bois-imperial.webp"
+        },
+        {
+          "id": "eilish-no-2",
+          "text": "Kadidlo, papyrus a čierne korenie\nKadidlo, papyrus a čierne korenie.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "not-a-perfume",
+          "text": "Kompozícia s Cetaloxom\nMinimalistická kompozícia s Cetaloxom.",
+          "photo": "/assets/s5/essentique/not-a-perfume.webp"
+        }
+      ],
+      "screenshot": "essentique-question-delta-4-320.png",
+      "at": "2026-11-11T10:50:35.419706+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 390,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy alebo minerálne tóny\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Kvety s hruškou, liči či broskyňou\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Koňak, vanilka alebo tonka\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "text": "Drevo, korenie alebo Cetalox\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-0-390.png",
+      "at": "2026-11-11T10:50:36.816955+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "orange-x-santal",
+          "text": "Pomaranč, bazalka a santal\nPomaranč, bazalka a santal.",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "the-ghost-in-the-shell",
+          "text": "Yuzu, mliečny akord a jazmín\nYuzu, mliečny akord a jazmín.",
+          "photo": "/assets/s3/scenes-k2/milk.jpg"
+        },
+        {
+          "id": "ganymede",
+          "text": "Mandarínka a minerálne tóny\nMandarínka, minerálne tóny a semiš.",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-1-390.png",
+      "at": "2026-11-11T10:50:37.733589+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "guidance",
+          "text": "Hruška, lieskový orech a ruža\nHruška, lieskový orech a ruža.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "delina-exclusif",
+          "text": "Liči, ruža a kadidlo\nLiči, ruža a kadidlo.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "hundred-silent-ways",
+          "text": "Broskyňa, tuberóza a vanilka\nBroskyňa, tuberóza a vanilka.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-2-390.png",
+      "at": "2026-11-11T10:50:38.720517+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "gourmand"
+      },
+      "options": [
+        {
+          "id": "angels-share",
+          "text": "Koňak, škorica a praliné\nKoňak, škorica a praliné.",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        },
+        {
+          "id": "divine-vanille",
+          "text": "Vanilka, kadidlo a tonka\nVanilka, kadidlo a tonka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "arabians-tonka",
+          "text": "Tonka, ruža a oud\nTonka, ruža a oud.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-3-390.png",
+      "at": "2026-11-11T10:50:39.771604+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "wood"
+      },
+      "options": [
+        {
+          "id": "bois-imperial",
+          "text": "Bazalka a drevité tóny\nBazalka, Timut korenie a drevité tóny.",
+          "photo": "/assets/s5/essentique/bois-imperial.webp"
+        },
+        {
+          "id": "eilish-no-2",
+          "text": "Kadidlo, papyrus a čierne korenie\nKadidlo, papyrus a čierne korenie.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "not-a-perfume",
+          "text": "Kompozícia s Cetaloxom\nMinimalistická kompozícia s Cetaloxom.",
+          "photo": "/assets/s5/essentique/not-a-perfume.webp"
+        }
+      ],
+      "screenshot": "essentique-question-delta-4-390.png",
+      "at": "2026-11-11T10:50:40.713567+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy alebo minerálne tóny\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Kvety s hruškou, liči či broskyňou\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Koňak, vanilka alebo tonka\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "text": "Drevo, korenie alebo Cetalox\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-0-1280.png",
+      "at": "2026-11-11T10:50:42.441299+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "orange-x-santal",
+          "text": "Pomaranč, bazalka a santal\nPomaranč, bazalka a santal.",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "the-ghost-in-the-shell",
+          "text": "Yuzu, mliečny akord a jazmín\nYuzu, mliečny akord a jazmín.",
+          "photo": "/assets/s3/scenes-k2/milk.jpg"
+        },
+        {
+          "id": "ganymede",
+          "text": "Mandarínka a minerálne tóny\nMandarínka, minerálne tóny a semiš.",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-1-1280.png",
+      "at": "2026-11-11T10:50:43.942580+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "guidance",
+          "text": "Hruška, lieskový orech a ruža\nHruška, lieskový orech a ruža.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "delina-exclusif",
+          "text": "Liči, ruža a kadidlo\nLiči, ruža a kadidlo.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "hundred-silent-ways",
+          "text": "Broskyňa, tuberóza a vanilka\nBroskyňa, tuberóza a vanilka.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-2-1280.png",
+      "at": "2026-11-11T10:50:45.041012+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "gourmand"
+      },
+      "options": [
+        {
+          "id": "angels-share",
+          "text": "Koňak, škorica a praliné\nKoňak, škorica a praliné.",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        },
+        {
+          "id": "divine-vanille",
+          "text": "Vanilka, kadidlo a tonka\nVanilka, kadidlo a tonka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "arabians-tonka",
+          "text": "Tonka, ruža a oud\nTonka, ruža a oud.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-3-1280.png",
+      "at": "2026-11-11T10:50:46.273996+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "wood"
+      },
+      "options": [
+        {
+          "id": "bois-imperial",
+          "text": "Bazalka a drevité tóny\nBazalka, Timut korenie a drevité tóny.",
+          "photo": "/assets/s5/essentique/bois-imperial.webp"
+        },
+        {
+          "id": "eilish-no-2",
+          "text": "Kadidlo, papyrus a čierne korenie\nKadidlo, papyrus a čierne korenie.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "not-a-perfume",
+          "text": "Kompozícia s Cetaloxom\nMinimalistická kompozícia s Cetaloxom.",
+          "photo": "/assets/s5/essentique/not-a-perfume.webp"
+        }
+      ],
+      "screenshot": "essentique-question-delta-4-1280.png",
+      "at": "2026-11-11T10:50:48.203997+00:00"
+    }
+  ],
+  "errors": [],
+  "complete": true
+}

@@ -64,7 +64,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
     "suitabilityEvidence": {},
     "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/204_e74d20ec-6395-4a82-ae42-af11a648bc9e.png?ff=1&x=1024&y=768&q=85&ts=6a3436ff&sg=161563f2",
     "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-    "scent": "Objevte Mancera French Riviera, jednu z nejlepších letních niche vůní posledních let. Inspirací se stalo francouzské Azurové pobřeží – slunce, moře, slaný vzduch a bezstarostná atmosféra dovolené. Vůně kombinuje citrusovou svěžest s mořskými tóny a elegantním pižmovým základem.",
+    "scent": "Citrusy, mořské tóny a pižmo.",
     "selectionTraits": {
      "fragranceDirection": "fresh",
      "fragranceProfile": "mancera-french-riviera"
@@ -162,7 +162,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
     "suitabilityEvidence": {},
     "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/399_unknown-15.png?ff=1&x=1024&y=768&q=85&ts=6ae62725&sg=161563f2",
     "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-    "scent": "Objevte Note de Yuzu, svěží unisex vůni vytvořenou ve spolupráci Heeley a Maison Kitsuné. Japonské yuzu, citron a mandarinka přinášejí jasný citrusový úvod, který postupně přechází do vodních a mořských tónů se slaným nádechem. Vetiver a bílé pižmo vůni zjemňují a dodávají jí čistý, elegantní závěr. Heeley Praktický parfémový vzorek vám umožní vůni vyzkoušet před výběrem celého flakonu. Zvolte si 1 ml, 2 ml nebo 5 ml. Vonná kompozice",
+    "scent": "Yuzu, mandarinka a slané tóny.",
     "selectionTraits": {
      "fragranceDirection": "fresh",
      "fragranceProfile": "note-de-yuzu"
@@ -260,7 +260,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
     "suitabilityEvidence": {},
     "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/154_chatgpt-image-24--5--2026-12-14-55.png?ff=1&x=1024&y=768&q=85&ts=6a12cfbd&sg=161563f2",
     "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-    "scent": "Objevte luxusní niche vůni Parfums De Marly Percival, která spojuje svěží citrusové tóny, aromatickou levanduli a moderní dřevitý základ. Percival patří mezi nejuniverzálnější vůně značky Parfums de Marly a často bývá označován jako „luxusní clean gentleman“ parfém. Percival kombinuje bergamot, mandarinku, levanduli a ambrox, díky čemuž působí extrémně čistě, elegantně a přitažlivě. Je svěží, ale zároveň má hloubku a luxusní niche charakter.",
+    "scent": "Bergamot, mandarinka a levandule.",
     "selectionTraits": {
      "fragranceDirection": "fresh",
      "fragranceProfile": "parfums-de-marly-percival-edp"
@@ -358,7 +358,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
     "suitabilityEvidence": {},
     "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/330_8cf1ff4f-4d85-4a97-b760-6b48f23c9b97.png?ff=1&x=1024&y=768&q=85&ts=6a6cc8ed&sg=161563f2",
     "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-    "scent": "Official merchant diagram visually reviewed: top granátové jablko/yuzu/vodní tóny; heart pivoňka/magnólie/lotosový květ; base mahagonové dřevo/ambra/pižmo. No effects inferred.",
+    "scent": "Granátové jablko, yuzu a pivoňka.",
     "selectionTraits": {
      "fragranceDirection": "floral",
      "fragranceProfile": "versace-bright-crystal-absolu"
@@ -458,7 +458,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
     "suitabilityEvidence": {},
     "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/175_e7869564-9dec-48b0-8833-d0455ad7e785.png?ff=1&x=1024&y=768&q=85&ts=6a1fe880&sg=161563f2",
     "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-    "scent": "Objevte ikonickou vůni YSL Libre, která ztělesňuje svobodu, sebevědomí a moderní ženskost. Libre je jednou z nejúspěšnějších dámských vůní posledních let a díky unikátnímu spojení levandule a vanilky nabízí elegantní, smyslný a nezaměnitelný charakter. YSL Libre kombinuje svěží mandarinku, aromatickou francouzskou levanduli, pomerančový květ a hřejivou madagaskarskou vanilku, díky čemuž vytváří luxusní, ženskou a velmi přitažlivou vůni. Je elegantní, moderní a perfektně vyvážená mezi svěžestí a smyslností.",
+    "scent": "Levandule, pomerančový květ a vanilka.",
     "selectionTraits": {
      "fragranceDirection": "floral",
      "fragranceProfile": "ysl-libre"
@@ -556,7 +556,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
     "suitabilityEvidence": {},
     "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/321_624e4379-8b13-496b-a201-5ef2d0cfd643.png?ff=1&x=1024&y=768&q=85&ts=6a59e204&sg=161563f2",
     "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-    "scent": "Objevte ikonickou dámskou vůni Lancôme La Vie Est Belle, která se stala symbolem radosti, elegance a svobody. Tato celosvětově oblíbená vůně oslavuje krásu života prostřednictvím neodolatelné kombinace sladké vanilky, pralinky a vzácného kosatce. Je jednou z nejprodávanějších dámských vůní všech dob.",
+    "scent": "Kosatec, vanilka a pralinka.",
     "selectionTraits": {
      "fragranceDirection": "floral",
      "fragranceProfile": "lancome-la-vie-est-belle"
@@ -654,7 +654,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
     "suitabilityEvidence": {},
     "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/327-1_a9b51cc3-5091-4f10-841e-2661a45daaaf.png?ff=1&x=1024&y=768&q=85&ts=6a6cba1c&sg=161563f2",
     "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-    "scent": "Objevte ikonickou dámskou vůni Jean Paul Gaultier Scandal Eau de Parfum, která ztělesňuje ženskou eleganci, smyslnost a sebevědomí. Tato vůně okouzlí svou sladkou medovou kompozicí doplněnou o bílé květy a hřejivé tóny, které vytvářejí nezapomenutelný a luxusní dojem.",
+    "scent": "Med, gardénie a pačuli.",
     "selectionTraits": {
      "fragranceDirection": "gourmand",
      "fragranceProfile": "jean-paul-gaultier-scandal-eau-de-parfum"
@@ -752,7 +752,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
     "suitabilityEvidence": {},
     "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/318_chatgpt-image-17--7--2026-09-58-51.png?ff=1&x=1024&y=768&q=85&ts=6a59e0cb&sg=161563f2",
     "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-    "scent": "Objevte ikonickou vůni Prada Candy Eau de Parfum, která oslavuje ženskost, hravost a eleganci. Tato legendární gourmand vůně si získala oblibu po celém světě díky své jedinečné kombinaci hebkého pižma, hřejivého benzoinu a návykového karamelu. Výsledkem je luxusní, smyslná a nezaměnitelná vůně, která zanechá dojem při každém setkání.",
+    "scent": "Karamel, benzoin a pižmo.",
     "selectionTraits": {
      "fragranceDirection": "gourmand",
      "fragranceProfile": "prada-candy-eau-de-parfum"
@@ -850,7 +850,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
     "suitabilityEvidence": {},
     "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/172_burberr.png?ff=1&x=1024&y=768&q=85&ts=6a1fe5c9&sg=161563f2",
     "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-    "scent": "Objevte Burberry Goddess Intense, smyslnější a bohatší verzi oblíbené vůně Burberry Goddess. Tato intenzivní interpretace staví na ikonické vanilkové DNA původní vůně, ale přidává hlubší, hřejivější a ještě návykovější charakter. Burberry Goddess Intense kombinuje aromatickou levanduli, vanilku Absolute a kouřové dřevité tóny, díky čemuž vytváří luxusní, krémovou a velmi ženskou vůni s výjimečnou výdrží. Je elegantní, smyslná a perfektní pro ženy, které milují vanilkové parfémy.",
+    "scent": "Vanilka, levandule a kouřové dřevo.",
     "selectionTraits": {
      "fragranceDirection": "gourmand",
      "fragranceProfile": "burberry-goddess-intense"
@@ -948,7 +948,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
     "suitabilityEvidence": {},
     "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/390-1_273627dd-df17-4df4-8e34-03279d2fe00c.png?ff=1&x=1024&y=768&q=85&ts=6ae222b1&sg=161563f2",
     "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-    "scent": "Zimaya Sharaf Blend – hřejivá vůně datlí, vanilky a koření Zimaya Sharaf Blend je bohatá unisex vůně, která potěší milovníky sladkých, kořeněných a gurmánských parfémů. Spojuje lahodnou sladkost datlí s jemně pikantním muškátovým oříškem a šafránem. Působí hřejivě, smyslně a elegantně.",
+    "scent": "Datle, muškátový oříšek a šafrán.",
     "selectionTraits": {
      "fragranceDirection": "gourmand",
      "fragranceProfile": "zimaya-sharaf-blend-edp"
@@ -1046,7 +1046,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
     "suitabilityEvidence": {},
     "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/207_9e41e5fd-a3aa-4dec-89cd-5b85d1de6a48.png?ff=1&x=1024&y=768&q=85&ts=6a3439a2&sg=161563f2",
     "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-    "scent": "Objevte ikonickou niche vůni Mancera Cedrat Boise, která patří mezi nejprodávanější a nejchválenější parfémy značky Mancera. Je známá svou perfektní kombinací svěžích citrusů, ovocných tónů a elegantního dřevitě-koženého základu. Mnoho milovníků parfémů ji považuje za jednu z nejuniverzálnějších niche vůní vůbec.",
+    "scent": "Citrusy, dřevo a kožené tóny.",
     "selectionTraits": {
      "fragranceDirection": "wood",
      "fragranceProfile": "mancera-cedrat-boise"
@@ -1144,7 +1144,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
     "suitabilityEvidence": {},
     "photoUrl": "https://cdn.myshoptet.com/usr/www.fragrancesamples.cz/user/shop/big/417_unknown-25.png?ff=1&x=1024&y=768&q=85&ts=6aec7892&sg=161563f2",
     "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-    "scent": "Objevte intenzivní a smyslnou vůni Viktor & Rolf Spicebomb Extrême, která propojuje výrazné koření s hřejivou sladkostí vanilky. Její bohatý charakter vynikne během podzimu, zimy i při večerních příležitostech. Spicebomb Extrême spojuje aromatickou levanduli, černý pepř a šafrán s hlubokými tabákovými tóny a hebkou vanilkou. Kořenitý úvod postupně přechází do sladce hřejivého základu, který vůni dodává podmanivý a elegantní charakter.",
+    "scent": "Pepř, tabák a vanilka.",
     "selectionTraits": {
      "fragranceDirection": "wood",
      "fragranceProfile": "spicebomb-extreme-od-viktor-rolf"
@@ -1191,7 +1191,7 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
    }
   }
  ],
- "status": "RESERVED_SOURCE_REVIEWED_ENGINE_C9E4DA0_LOCAL_QA_RUNNING",
+ "status": "SOURCE_AND_LOCAL_RESULTS_VERIFIED_MAIN_COMPARISON_INTEGRATION_PENDING",
  "requiredEngineContract": "s5-fragrance-samples-direction-profile-v1",
  "revenue": "UNKNOWN",
  "size": "UNKNOWN",
@@ -1201,5 +1201,6 @@ globalThis.CX_CATALOGUES.fragrancesamples = {
   "Illustrative original bottle images explicitly identified.",
   "No budget/addon/intensity/occasion or paid calls promised."
  ],
- "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6"
+ "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+ "localQaReport": "../../reports/essentique-fragrancesamples-20261111/local-qa-final-summary.json"
 };

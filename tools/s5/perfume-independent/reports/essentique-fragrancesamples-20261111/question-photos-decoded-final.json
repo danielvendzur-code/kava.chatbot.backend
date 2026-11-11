@@ -1,0 +1,837 @@
+{
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Local question/photo/label presentation delta only, unchanged shared core, no Preview claim.",
+  "paidModelCalls": 0,
+  "questionPages": [
+    {
+      "slug": "essentique",
+      "width": 320,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy alebo minerálne tóny\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Kvety s hruškou, liči či broskyňou\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Koňak, vanilka alebo tonka\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "text": "Drevo, korenie alebo Cetalox\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-0-320.png",
+      "at": "2026-11-11T10:54:39.411629+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "orange-x-santal",
+          "text": "Pomaranč, bazalka a santal\nPomaranč, bazalka a santal.",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "the-ghost-in-the-shell",
+          "text": "Yuzu, mliečny akord a jazmín\nYuzu, mliečny akord a jazmín.",
+          "photo": "/assets/s3/scenes-k2/milk.jpg"
+        },
+        {
+          "id": "ganymede",
+          "text": "Mandarínka a minerálne tóny\nMandarínka, minerálne tóny a semiš.",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-1-320.png",
+      "at": "2026-11-11T10:54:40.726015+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "guidance",
+          "text": "Hruška, lieskový orech a ruža\nHruška, lieskový orech a ruža.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "delina-exclusif",
+          "text": "Liči, ruža a kadidlo\nLiči, ruža a kadidlo.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "hundred-silent-ways",
+          "text": "Broskyňa, tuberóza a vanilka\nBroskyňa, tuberóza a vanilka.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-2-320.png",
+      "at": "2026-11-11T10:54:41.885855+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "gourmand"
+      },
+      "options": [
+        {
+          "id": "angels-share",
+          "text": "Koňak, škorica a praliné\nKoňak, škorica a praliné.",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        },
+        {
+          "id": "divine-vanille",
+          "text": "Vanilka, kadidlo a tonka\nVanilka, kadidlo a tonka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "arabians-tonka",
+          "text": "Tonka, ruža a oud\nTonka, ruža a oud.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-3-320.png",
+      "at": "2026-11-11T10:54:43.075690+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "wood"
+      },
+      "options": [
+        {
+          "id": "bois-imperial",
+          "text": "Bazalka a drevité tóny\nBazalka, Timut korenie a drevité tóny.",
+          "photo": "/assets/s5/essentique/bois-imperial.webp"
+        },
+        {
+          "id": "eilish-no-2",
+          "text": "Kadidlo, papyrus a čierne korenie\nKadidlo, papyrus a čierne korenie.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "not-a-perfume",
+          "text": "Kompozícia s Cetaloxom\nMinimalistická kompozícia s Cetaloxom.",
+          "photo": "/assets/s5/essentique/not-a-perfume.webp"
+        }
+      ],
+      "screenshot": "essentique-question-delta-4-320.png",
+      "at": "2026-11-11T10:54:44.493944+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 390,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy alebo minerálne tóny\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Kvety s hruškou, liči či broskyňou\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Koňak, vanilka alebo tonka\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "text": "Drevo, korenie alebo Cetalox\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-0-390.png",
+      "at": "2026-11-11T10:54:46.149752+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "orange-x-santal",
+          "text": "Pomaranč, bazalka a santal\nPomaranč, bazalka a santal.",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "the-ghost-in-the-shell",
+          "text": "Yuzu, mliečny akord a jazmín\nYuzu, mliečny akord a jazmín.",
+          "photo": "/assets/s3/scenes-k2/milk.jpg"
+        },
+        {
+          "id": "ganymede",
+          "text": "Mandarínka a minerálne tóny\nMandarínka, minerálne tóny a semiš.",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-1-390.png",
+      "at": "2026-11-11T10:54:47.398928+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "guidance",
+          "text": "Hruška, lieskový orech a ruža\nHruška, lieskový orech a ruža.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "delina-exclusif",
+          "text": "Liči, ruža a kadidlo\nLiči, ruža a kadidlo.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "hundred-silent-ways",
+          "text": "Broskyňa, tuberóza a vanilka\nBroskyňa, tuberóza a vanilka.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-2-390.png",
+      "at": "2026-11-11T10:54:48.475358+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "gourmand"
+      },
+      "options": [
+        {
+          "id": "angels-share",
+          "text": "Koňak, škorica a praliné\nKoňak, škorica a praliné.",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        },
+        {
+          "id": "divine-vanille",
+          "text": "Vanilka, kadidlo a tonka\nVanilka, kadidlo a tonka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "arabians-tonka",
+          "text": "Tonka, ruža a oud\nTonka, ruža a oud.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-3-390.png",
+      "at": "2026-11-11T10:54:49.702414+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "wood"
+      },
+      "options": [
+        {
+          "id": "bois-imperial",
+          "text": "Bazalka a drevité tóny\nBazalka, Timut korenie a drevité tóny.",
+          "photo": "/assets/s5/essentique/bois-imperial.webp"
+        },
+        {
+          "id": "eilish-no-2",
+          "text": "Kadidlo, papyrus a čierne korenie\nKadidlo, papyrus a čierne korenie.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "not-a-perfume",
+          "text": "Kompozícia s Cetaloxom\nMinimalistická kompozícia s Cetaloxom.",
+          "photo": "/assets/s5/essentique/not-a-perfume.webp"
+        }
+      ],
+      "screenshot": "essentique-question-delta-4-390.png",
+      "at": "2026-11-11T10:54:51.025770+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy alebo minerálne tóny\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Kvety s hruškou, liči či broskyňou\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Koňak, vanilka alebo tonka\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "text": "Drevo, korenie alebo Cetalox\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-0-1280.png",
+      "at": "2026-11-11T10:54:52.879425+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "orange-x-santal",
+          "text": "Pomaranč, bazalka a santal\nPomaranč, bazalka a santal.",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "the-ghost-in-the-shell",
+          "text": "Yuzu, mliečny akord a jazmín\nYuzu, mliečny akord a jazmín.",
+          "photo": "/assets/s3/scenes-k2/milk.jpg"
+        },
+        {
+          "id": "ganymede",
+          "text": "Mandarínka a minerálne tóny\nMandarínka, minerálne tóny a semiš.",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-1-1280.png",
+      "at": "2026-11-11T10:54:54.422262+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "guidance",
+          "text": "Hruška, lieskový orech a ruža\nHruška, lieskový orech a ruža.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "delina-exclusif",
+          "text": "Liči, ruža a kadidlo\nLiči, ruža a kadidlo.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "hundred-silent-ways",
+          "text": "Broskyňa, tuberóza a vanilka\nBroskyňa, tuberóza a vanilka.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-2-1280.png",
+      "at": "2026-11-11T10:54:55.738541+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "gourmand"
+      },
+      "options": [
+        {
+          "id": "angels-share",
+          "text": "Koňak, škorica a praliné\nKoňak, škorica a praliné.",
+          "photo": "/assets/s3/scenes-k2/cinnamon.jpg"
+        },
+        {
+          "id": "divine-vanille",
+          "text": "Vanilka, kadidlo a tonka\nVanilka, kadidlo a tonka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "arabians-tonka",
+          "text": "Tonka, ruža a oud\nTonka, ruža a oud.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-delta-3-1280.png",
+      "at": "2026-11-11T10:54:57.047584+00:00"
+    },
+    {
+      "slug": "essentique",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "wood"
+      },
+      "options": [
+        {
+          "id": "bois-imperial",
+          "text": "Bazalka a drevité tóny\nBazalka, Timut korenie a drevité tóny.",
+          "photo": "/assets/s5/essentique/bois-imperial.webp"
+        },
+        {
+          "id": "eilish-no-2",
+          "text": "Kadidlo, papyrus a čierne korenie\nKadidlo, papyrus a čierne korenie.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "not-a-perfume",
+          "text": "Kompozícia s Cetaloxom\nMinimalistická kompozícia s Cetaloxom.",
+          "photo": "/assets/s5/essentique/not-a-perfume.webp"
+        }
+      ],
+      "screenshot": "essentique-question-delta-4-1280.png",
+      "at": "2026-11-11T10:54:58.620780+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 320,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy, moře nebo levandule\nVyberte podle uvedených tónů.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Květy s ovocem nebo vanilkou\nVyberte podle uvedených tónů.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Med, karamel, datle nebo vanilka\nVyberte podle uvedených tónů.",
+          "photo": "/assets/s3/scenes-k2/honey.jpg"
+        },
+        {
+          "id": "wood",
+          "text": "Dřevo a kůže nebo tabák a koření\nVyberte podle uvedených tónů.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-0-320.png",
+      "at": "2026-11-11T10:55:00.390565+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "mancera-french-riviera",
+          "text": "Citrusy, mořské tóny a pižmo\nCitrusy, mořské tóny a pižmo.",
+          "photo": "/assets/s3/scenes-k2/ocean-wave.jpg"
+        },
+        {
+          "id": "note-de-yuzu",
+          "text": "Yuzu, mandarinka a slané tóny\nYuzu, mandarinka a slané tóny.",
+          "photo": "/assets/s5/fragrancesamples/note-de-yuzu.webp"
+        },
+        {
+          "id": "parfums-de-marly-percival-edp",
+          "text": "Bergamot, mandarinka a levandule\nBergamot, mandarinka a levandule.",
+          "photo": "/assets/s3/scenes-k2/lavender.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-1-320.png",
+      "at": "2026-11-11T10:55:01.618089+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "versace-bright-crystal-absolu",
+          "text": "Granátové jablko, yuzu a pivoňka\nGranátové jablko, yuzu a pivoňka.",
+          "photo": "/assets/s5/fragrancesamples/versace-bright-crystal-absolu.webp"
+        },
+        {
+          "id": "ysl-libre",
+          "text": "Levandule, pomerančový květ a vanilka\nLevandule, pomerančový květ a vanilka.",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        },
+        {
+          "id": "lancome-la-vie-est-belle",
+          "text": "Kosatec, vanilka a pralinka\nKosatec, vanilka a pralinka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-2-320.png",
+      "at": "2026-11-11T10:55:02.938966+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "gourmand"
+      },
+      "options": [
+        {
+          "id": "jean-paul-gaultier-scandal-eau-de-parfum",
+          "text": "Med, gardénie a pačuli\nMed, gardénie a pačuli.",
+          "photo": "/assets/s3/scenes-k2/honey.jpg"
+        },
+        {
+          "id": "prada-candy-eau-de-parfum",
+          "text": "Karamel, benzoin a pižmo\nKaramel, benzoin a pižmo.",
+          "photo": "/assets/s5/fragrancesamples/prada-candy-eau-de-parfum.webp"
+        },
+        {
+          "id": "burberry-goddess-intense",
+          "text": "Vanilka, levandule a kouřové dřevo\nVanilka, levandule a kouřové dřevo.",
+          "photo": "/assets/s3/scenes-k2/lavender.jpg"
+        },
+        {
+          "id": "zimaya-sharaf-blend-edp",
+          "text": "Datle, muškátový oříšek a šafrán\nDatle, muškátový oříšek a šafrán.",
+          "photo": "/assets/s5/fragrancesamples/zimaya-sharaf-blend-edp.webp"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-3-320.png",
+      "at": "2026-11-11T10:55:04.166793+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "wood"
+      },
+      "options": [
+        {
+          "id": "mancera-cedrat-boise",
+          "text": "Citrusy, dřevo a kožené tóny\nCitrusy, dřevo a kožené tóny.",
+          "photo": "/assets/s5/fragrancesamples/mancera-cedrat-boise.webp"
+        },
+        {
+          "id": "spicebomb-extreme-od-viktor-rolf",
+          "text": "Pepř, tabák a vanilka\nPepř, tabák a vanilka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-4-320.png",
+      "at": "2026-11-11T10:55:05.412316+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 390,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy, moře nebo levandule\nVyberte podle uvedených tónů.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Květy s ovocem nebo vanilkou\nVyberte podle uvedených tónů.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Med, karamel, datle nebo vanilka\nVyberte podle uvedených tónů.",
+          "photo": "/assets/s3/scenes-k2/honey.jpg"
+        },
+        {
+          "id": "wood",
+          "text": "Dřevo a kůže nebo tabák a koření\nVyberte podle uvedených tónů.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-0-390.png",
+      "at": "2026-11-11T10:55:07.105319+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "mancera-french-riviera",
+          "text": "Citrusy, mořské tóny a pižmo\nCitrusy, mořské tóny a pižmo.",
+          "photo": "/assets/s3/scenes-k2/ocean-wave.jpg"
+        },
+        {
+          "id": "note-de-yuzu",
+          "text": "Yuzu, mandarinka a slané tóny\nYuzu, mandarinka a slané tóny.",
+          "photo": "/assets/s5/fragrancesamples/note-de-yuzu.webp"
+        },
+        {
+          "id": "parfums-de-marly-percival-edp",
+          "text": "Bergamot, mandarinka a levandule\nBergamot, mandarinka a levandule.",
+          "photo": "/assets/s3/scenes-k2/lavender.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-1-390.png",
+      "at": "2026-11-11T10:55:08.398954+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "versace-bright-crystal-absolu",
+          "text": "Granátové jablko, yuzu a pivoňka\nGranátové jablko, yuzu a pivoňka.",
+          "photo": "/assets/s5/fragrancesamples/versace-bright-crystal-absolu.webp"
+        },
+        {
+          "id": "ysl-libre",
+          "text": "Levandule, pomerančový květ a vanilka\nLevandule, pomerančový květ a vanilka.",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        },
+        {
+          "id": "lancome-la-vie-est-belle",
+          "text": "Kosatec, vanilka a pralinka\nKosatec, vanilka a pralinka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-2-390.png",
+      "at": "2026-11-11T10:55:09.609446+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "gourmand"
+      },
+      "options": [
+        {
+          "id": "jean-paul-gaultier-scandal-eau-de-parfum",
+          "text": "Med, gardénie a pačuli\nMed, gardénie a pačuli.",
+          "photo": "/assets/s3/scenes-k2/honey.jpg"
+        },
+        {
+          "id": "prada-candy-eau-de-parfum",
+          "text": "Karamel, benzoin a pižmo\nKaramel, benzoin a pižmo.",
+          "photo": "/assets/s5/fragrancesamples/prada-candy-eau-de-parfum.webp"
+        },
+        {
+          "id": "burberry-goddess-intense",
+          "text": "Vanilka, levandule a kouřové dřevo\nVanilka, levandule a kouřové dřevo.",
+          "photo": "/assets/s3/scenes-k2/lavender.jpg"
+        },
+        {
+          "id": "zimaya-sharaf-blend-edp",
+          "text": "Datle, muškátový oříšek a šafrán\nDatle, muškátový oříšek a šafrán.",
+          "photo": "/assets/s5/fragrancesamples/zimaya-sharaf-blend-edp.webp"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-3-390.png",
+      "at": "2026-11-11T10:55:10.810699+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "wood"
+      },
+      "options": [
+        {
+          "id": "mancera-cedrat-boise",
+          "text": "Citrusy, dřevo a kožené tóny\nCitrusy, dřevo a kožené tóny.",
+          "photo": "/assets/s5/fragrancesamples/mancera-cedrat-boise.webp"
+        },
+        {
+          "id": "spicebomb-extreme-od-viktor-rolf",
+          "text": "Pepř, tabák a vanilka\nPepř, tabák a vanilka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-4-390.png",
+      "at": "2026-11-11T10:55:12.069909+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy, moře nebo levandule\nVyberte podle uvedených tónů.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Květy s ovocem nebo vanilkou\nVyberte podle uvedených tónů.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "gourmand",
+          "text": "Med, karamel, datle nebo vanilka\nVyberte podle uvedených tónů.",
+          "photo": "/assets/s3/scenes-k2/honey.jpg"
+        },
+        {
+          "id": "wood",
+          "text": "Dřevo a kůže nebo tabák a koření\nVyberte podle uvedených tónů.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-0-1280.png",
+      "at": "2026-11-11T10:55:13.916504+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "mancera-french-riviera",
+          "text": "Citrusy, mořské tóny a pižmo\nCitrusy, mořské tóny a pižmo.",
+          "photo": "/assets/s3/scenes-k2/ocean-wave.jpg"
+        },
+        {
+          "id": "note-de-yuzu",
+          "text": "Yuzu, mandarinka a slané tóny\nYuzu, mandarinka a slané tóny.",
+          "photo": "/assets/s5/fragrancesamples/note-de-yuzu.webp"
+        },
+        {
+          "id": "parfums-de-marly-percival-edp",
+          "text": "Bergamot, mandarinka a levandule\nBergamot, mandarinka a levandule.",
+          "photo": "/assets/s3/scenes-k2/lavender.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-1-1280.png",
+      "at": "2026-11-11T10:55:15.417749+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "versace-bright-crystal-absolu",
+          "text": "Granátové jablko, yuzu a pivoňka\nGranátové jablko, yuzu a pivoňka.",
+          "photo": "/assets/s5/fragrancesamples/versace-bright-crystal-absolu.webp"
+        },
+        {
+          "id": "ysl-libre",
+          "text": "Levandule, pomerančový květ a vanilka\nLevandule, pomerančový květ a vanilka.",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        },
+        {
+          "id": "lancome-la-vie-est-belle",
+          "text": "Kosatec, vanilka a pralinka\nKosatec, vanilka a pralinka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-2-1280.png",
+      "at": "2026-11-11T10:55:16.898894+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "gourmand"
+      },
+      "options": [
+        {
+          "id": "jean-paul-gaultier-scandal-eau-de-parfum",
+          "text": "Med, gardénie a pačuli\nMed, gardénie a pačuli.",
+          "photo": "/assets/s3/scenes-k2/honey.jpg"
+        },
+        {
+          "id": "prada-candy-eau-de-parfum",
+          "text": "Karamel, benzoin a pižmo\nKaramel, benzoin a pižmo.",
+          "photo": "/assets/s5/fragrancesamples/prada-candy-eau-de-parfum.webp"
+        },
+        {
+          "id": "burberry-goddess-intense",
+          "text": "Vanilka, levandule a kouřové dřevo\nVanilka, levandule a kouřové dřevo.",
+          "photo": "/assets/s3/scenes-k2/lavender.jpg"
+        },
+        {
+          "id": "zimaya-sharaf-blend-edp",
+          "text": "Datle, muškátový oříšek a šafrán\nDatle, muškátový oříšek a šafrán.",
+          "photo": "/assets/s5/fragrancesamples/zimaya-sharaf-blend-edp.webp"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-3-1280.png",
+      "at": "2026-11-11T10:55:18.446142+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "wood"
+      },
+      "options": [
+        {
+          "id": "mancera-cedrat-boise",
+          "text": "Citrusy, dřevo a kožené tóny\nCitrusy, dřevo a kožené tóny.",
+          "photo": "/assets/s5/fragrancesamples/mancera-cedrat-boise.webp"
+        },
+        {
+          "id": "spicebomb-extreme-od-viktor-rolf",
+          "text": "Pepř, tabák a vanilka\nPepř, tabák a vanilka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-delta-4-1280.png",
+      "at": "2026-11-11T10:55:20.039245+00:00"
+    }
+  ],
+  "errors": [],
+  "complete": true
+}

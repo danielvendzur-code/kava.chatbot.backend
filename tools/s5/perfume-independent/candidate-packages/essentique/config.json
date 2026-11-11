@@ -4,7 +4,7 @@
   "claimCommit": "d0be27da162949b45960ae76085e8f2f527fe356",
   "series": "s5",
   "segment": "fragrance",
-  "status": "RESERVED_SOURCE_REVIEWED_ENGINE_C9E4DA0_LOCAL_QA_RUNNING",
+  "status": "SOURCE_AND_LOCAL_RESULTS_VERIFIED_MAIN_COMPARISON_INTEGRATION_PENDING",
   "catalogue": "/catalogues/essentique.js",
   "requiredEngineContract": "s5-fragrance-samples-direction-profile-v1",
   "quickChips": [
@@ -81,9 +81,9 @@
     },
     "traitCopy": {
       "fresh": [
-        "Citrusy, mliečny akord alebo minerálne tóny",
+        "Citrusy alebo minerálne tóny",
         "Vyberte podľa uvedených tónov.",
-        "Citrusy, mliečny akord alebo minerálne tóny",
+        "Citrusy alebo minerálne tóny",
         "Vyberte podľa uvedených tónov."
       ],
       "orange-x-santal": [
@@ -99,15 +99,15 @@
         "Yuzu, mliečny akord a jazmín."
       ],
       "ganymede": [
-        "Mandarínka, minerálne tóny a semiš",
+        "Mandarínka a minerálne tóny",
         "Mandarínka, minerálne tóny a semiš.",
-        "Mandarínka, minerálne tóny a semiš",
+        "Mandarínka a minerálne tóny",
         "Mandarínka, minerálne tóny a semiš."
       ],
       "floral": [
-        "Kvety s hruškou, liči alebo broskyňou",
+        "Kvety s hruškou, liči či broskyňou",
         "Vyberte podľa uvedených tónov.",
-        "Kvety s hruškou, liči alebo broskyňou",
+        "Kvety s hruškou, liči či broskyňou",
         "Vyberte podľa uvedených tónov."
       ],
       "guidance": [
@@ -159,9 +159,9 @@
         "Vyberte podľa uvedených tónov."
       ],
       "bois-imperial": [
-        "Bazalka, Timut korenie a drevité tóny",
+        "Bazalka a drevité tóny",
         "Bazalka, Timut korenie a drevité tóny.",
-        "Bazalka, Timut korenie a drevité tóny",
+        "Bazalka a drevité tóny",
         "Bazalka, Timut korenie a drevité tóny."
       ],
       "eilish-no-2": [
@@ -171,9 +171,9 @@
         "Kadidlo, papyrus a čierne korenie."
       ],
       "not-a-perfume": [
-        "Minimalistická kompozícia s Cetaloxom",
+        "Kompozícia s Cetaloxom",
         "Minimalistická kompozícia s Cetaloxom.",
-        "Minimalistická kompozícia s Cetaloxom",
+        "Kompozícia s Cetaloxom",
         "Minimalistická kompozícia s Cetaloxom."
       ]
     },
@@ -202,7 +202,7 @@
         "/assets/s3/scenes-k2/milk.jpg"
       ],
       "ganymede": [
-        "/assets/s5/essentique/ganymede.webp"
+        "/assets/s3/scenes-k2/mandarin.jpg"
       ],
       "floral": [
         "/assets/s3/scenes-k2/rose.jpg"
@@ -267,5 +267,6 @@
       "source": "perfume-demo-"
     }
   },
-  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6"
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "localQaReport": "../../reports/essentique-fragrancesamples-20261111/local-qa-final-summary.json"
 }

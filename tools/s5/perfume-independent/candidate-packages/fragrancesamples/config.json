@@ -4,7 +4,7 @@
   "claimCommit": "d0be27da162949b45960ae76085e8f2f527fe356",
   "series": "s5",
   "segment": "fragrance",
-  "status": "RESERVED_SOURCE_REVIEWED_ENGINE_C9E4DA0_LOCAL_QA_RUNNING",
+  "status": "SOURCE_AND_LOCAL_RESULTS_VERIFIED_MAIN_COMPARISON_INTEGRATION_PENDING",
   "catalogue": "/catalogues/fragrancesamples.js",
   "requiredEngineContract": "s5-fragrance-samples-direction-profile-v1",
   "quickChips": [
@@ -267,5 +267,6 @@
       "source": "perfume-demo-"
     }
   },
-  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6"
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "localQaReport": "../../reports/essentique-fragrancesamples-20261111/local-qa-final-summary.json"
 }

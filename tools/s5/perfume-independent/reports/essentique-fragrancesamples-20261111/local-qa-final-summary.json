@@ -1,0 +1,31 @@
+{
+  "at": "2026-11-11T10:57:41.041511+00:00",
+  "coreCommit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Own isolated local package on unchanged MAIN core. No shared registry/backend registration, not live Preview QA.",
+  "sourcePackages": "Essentique12 + Fragrance Samples12 distinct formulas, exact2ml sample/decant each",
+  "resultViews": 72,
+  "uniqueResultKeys": 72,
+  "widths": [
+    320,
+    390,
+    1280
+  ],
+  "questionViews": 30,
+  "mockChatCardViews": 18,
+  "offerAndReducedMotionWaitingViewports": 6,
+  "visualContactSheetsActuallyInspected": 18,
+  "resultsStatus": "PASS_FINAL72_72",
+  "questionPhotosStatus": "PASS30_30_AFTER_DECODE_AND_PAINT_WAIT",
+  "cardsStatus": "PASS18_18",
+  "resetProgressCtaPricesPacksPhotos": "PASS",
+  "hoverAndFour40pxChips": "PASS6_VIEWPORTS",
+  "unsupportedAddonBudgetShipping": "NOT_OFFERED",
+  "pageErrors": [],
+  "paidModelCalls": 0,
+  "comparisonStatus": "BLOCKED_EXISTING_NATIVE_COMPARISON_EXCLUDES_IS_SAMPLE; actual empty2pickers captured, owner-only fix proposed in SAMPLE-COMPARE-OPT-IN-20261111.md",
+  "readyForIntegration": "SOURCE_CONFIG_ASSETS_AND_LOCAL_RESULTS_READY; comparison fix required by MAIN",
+  "runtimeRegistered": false,
+  "ownLivePreviewQa": false,
+  "finishedDemoCountAdded": 0,
+  "earlierScreenshots": "Premature white question frames preserved; final capture awaits image.decode plus two animation frames and180ms. No app image outage inferred from premature frames."
+}

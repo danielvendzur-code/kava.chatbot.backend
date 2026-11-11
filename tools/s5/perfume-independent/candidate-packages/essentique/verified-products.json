@@ -1185,7 +1185,7 @@
         "suitabilityEvidence": {},
         "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/53-1_juliette-has-a-gun-not-a-perfume-edp-1458013120190621140030.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8e0&sg=161563f2",
         "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
-        "scent": "Cetalox (Ambroxan); Cetalox; Cetalox – drevité, pižmové, pižmové",
+        "scent": "Cetalox; drevito-pižmové tóny podľa e-shopu.",
         "selectionTraits": {
           "fragranceDirection": "wood",
           "fragranceProfile": "not-a-perfume"
@@ -1234,7 +1234,7 @@
       }
     }
   ],
-  "status": "RESERVED_SOURCE_REVIEWED_ENGINE_C9E4DA0_LOCAL_QA_RUNNING",
+  "status": "SOURCE_AND_LOCAL_RESULTS_VERIFIED_MAIN_COMPARISON_INTEGRATION_PENDING",
   "requiredEngineContract": "s5-fragrance-samples-direction-profile-v1",
   "revenue": "UNKNOWN",
   "size": "UNKNOWN",
@@ -1244,5 +1244,6 @@
     "Illustrative original bottle images explicitly identified.",
     "No budget/addon/intensity/occasion or paid calls promised."
   ],
-  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6"
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "localQaReport": "../../reports/essentique-fragrancesamples-20261111/local-qa-final-summary.json"
 }
