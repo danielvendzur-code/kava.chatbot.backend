@@ -75,3 +75,12 @@ body[data-series=s5]:is([data-cosmetics-demo=adoraniche],[data-cosmetics-demo=ni
 body[data-series=s5]:is([data-cosmetics-demo=adoraniche],[data-cosmetics-demo=nicheandglow],[data-cosmetics-demo=scentisimo],[data-cosmetics-demo=kintsugi],[data-cosmetics-demo=oraculum]) #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-foot{flex-wrap:wrap!important;gap:5px!important}
 body[data-series=s5]:is([data-cosmetics-demo=adoraniche],[data-cosmetics-demo=nicheandglow],[data-cosmetics-demo=scentisimo],[data-cosmetics-demo=kintsugi],[data-cosmetics-demo=oraculum]) #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-foot strong{flex-basis:100%;white-space:normal;overflow-wrap:anywhere}
 body[data-series=s5]:is([data-cosmetics-demo=adoraniche],[data-cosmetics-demo=nicheandglow],[data-cosmetics-demo=scentisimo],[data-cosmetics-demo=kintsugi],[data-cosmetics-demo=oraculum]) #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-go{flex-basis:100%;text-align:center;white-space:normal!important}
+
+/* Extends the coordinator's existing perfume-card layout only to this new firm. */
+body[data-series=s5][data-cosmetics-demo=myskino] #cosmetics-root#cosmetics-root #cx-widget#cx-widget a.lg-wine-card{grid-template-columns:64px minmax(0,1fr)!important;min-width:0!important}
+body[data-series=s5][data-cosmetics-demo=myskino] #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-foot{flex-wrap:wrap!important;gap:5px!important}
+body[data-series=s5][data-cosmetics-demo=myskino] #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-foot strong{flex-basis:100%;white-space:normal;overflow-wrap:anywhere}
+body[data-series=s5][data-cosmetics-demo=myskino] #cosmetics-root#cosmetics-root #cx-widget#cx-widget .lg-wine-go{flex-basis:100%;text-align:center;white-space:normal!important}
+
+/* Wider wordmark in this firm only; keeps readable brand name beside44px controls. */
+body[data-series=s5][data-cosmetics-demo=myskino] #cosmetics-root#cosmetics-root #cx-widget#cx-widget .cx-widget-brand > img.cx-logo{width:140px!important;max-width:140px!important;height:26px!important;object-fit:contain!important}
