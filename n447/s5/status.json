@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T19:00:49.631227+00:00",
+  "updatedAt": "2026-11-11T06:28:30.939786+00:00",
   "branch": "codex/s5-solo-20261109",
   "codeSha": "7926f09c7ec8cca3e3792456916b911626190753",
   "firmsByDomain": {
@@ -973,7 +973,7 @@
       "domain": "scentisimo.cz",
       "operator": "LaGraciosaFashion s.r.o.",
       "ico": "22067906",
-      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "status": "PREVIEW_QA_COMPLETE",
       "products": 12,
       "localResults": 36,
       "questionScreens": 15,
@@ -982,7 +982,44 @@
       "sources": "n447/s5/sources/scentisimo/",
       "evidence": "n447/s5/dokazy/scentisimo/",
       "eligibility": "n447/s5/dokazy/scentisimo-live-eligibility-20261110.json",
-      "uncertainty": "No product advisor observed in recorded home/product reject-cookie session; other modes not excluded; original contact form inspected blank without submission."
+      "uncertainty": "No product advisor observed in recorded home/product reject-cookie session; other modes not excluded; original contact form inspected blank without submission.",
+      "previewResults": 12,
+      "previewUrl": "https://kava-chatbot-backend-nmrab6xsh-danielvendzur-codes-projects.vercel.app/s5.html?demo=scentisimo",
+      "previewSha": "b3efd6189cc4d1e757cc4c4516971796e2476b02",
+      "deploymentId": "dpl_sWu3FzappC5KthTJsqLhuppp4yHP",
+      "independentQA": "7ea625d912b9ceea02387f189bd9810056250d2d"
+    },
+    "kintsugiperfumes.com": {
+      "domain": "kintsugiperfumes.com",
+      "operator": "KINTSUGI Labs s.r.o.",
+      "ico": "11879653",
+      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "products": 12,
+      "localResults": 36,
+      "questionScreens": 15,
+      "alternatePacks": 0,
+      "paidCalls": 0,
+      "emailStatus": "NOT_READY",
+      "sources": "n447/s5/sources/kintsugi/",
+      "evidence": "n447/s5/dokazy/kintsugi/",
+      "eligibility": "n447/s5/dokazy/kintsugi-live-eligibility-20261110.json",
+      "claim": "97bab0bcdca7ca1bf3944a109d69ab259f75c92b"
+    },
+    "oraculum.store": {
+      "domain": "oraculum.store",
+      "operator": "ORACULUM Company s.r.o.",
+      "ico": "10905081",
+      "status": "LOCAL_QA_COMPLETE_PREVIEW_PENDING",
+      "products": 6,
+      "localResults": 18,
+      "questionScreens": 9,
+      "alternatePacks": 5,
+      "paidCalls": 0,
+      "emailStatus": "NOT_READY",
+      "sources": "n447/s5/sources/oraculum/",
+      "evidence": "n447/s5/dokazy/oraculum/",
+      "eligibility": "n447/s5/dokazy/oraculum-live-eligibility-20261110.json",
+      "claim": "97bab0bcdca7ca1bf3944a109d69ab259f75c92b"
     }
   },
   "localGit": {
@@ -1014,8 +1051,8 @@
     "productionForbidden": true,
     "coordination": "Owner authorized existing browser Codex colleague; isolated branches, shared engine owner main worker. No internal subagents."
   },
-  "previewVerifiedCount": 13,
-  "nextAction": "Scentisimo local complete36/36+15question pages+3backend mock; publish runtime checkpoint then actual12-route live Preview QA. Count13 until live complete. Kintsugi/Oraculum/Furiosa/Scentium actual home/product eligibility captured, pending fresh all-head duplicate clearance before reservation/code.",
+  "previewVerifiedCount": 14,
+  "nextAction": "Complete live Preview QA for Kintsugi and ORACULUM. Furiosa and Scentium source and eligibility checks in progress.",
   "evidenceUpload": {
     "state": "OWNER_AUTHORIZED_COMPLETED_BLOBS_PENDING_TREE_CHECKPOINT",
     "archives": 38,

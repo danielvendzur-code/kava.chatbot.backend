@@ -1,0 +1,720 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.kintsugi = {
+  "brand": "Kintsugi Perfumes",
+  "domain": "kintsugiperfumes.com",
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "cs",
+  "country": "CZ",
+  "currency": "CZK",
+  "products": [
+    {
+      "id": "taom-eau-de-parfum",
+      "name": "TAOM Eau de Parfum",
+      "url": "https://www.kintsugiperfumes.com/products/taom-eau-de-parfum",
+      "priceAmount": 3590,
+      "price": "3 590 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Grapefruit a bergamot s mořskou solí, sečuánským pepřem a koňakem.",
+      "reason": "Grapefruit a bergamot s mořskou solí, sečuánským pepřem a koňakem.",
+      "photo": "/assets/s5/kintsugi/taom-eau-de-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.kintsugiperfumes.com/products/taom-eau-de-parfum",
+        "verifiedAt": "2026-11-11T06:24:20.123983+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "feed": "https://www.kintsugiperfumes.com/products.json?limit=100",
+          "shopifyVariantId": 49302753706333,
+          "available": true
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3590,
+          "currency": "CZK",
+          "vatSource": "https://www.kintsugiperfumes.com/policies/terms-of-service",
+          "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "url": "https://www.kintsugiperfumes.com/products/taom-eau-de-parfum"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Taom.png?v=1772208498",
+        "photoEvidence": {
+          "url": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Taom.png?v=1772208498",
+          "localPath": "/assets/s5/kintsugi/taom-eau-de-parfum.webp",
+          "width": 700,
+          "height": 700,
+          "sha256": "5a585cc33aa7a06b310e585f47fc89e9f2ddd19c420243a75eb26c8725593c9e"
+        },
+        "scent": "Grapefruit a bergamot s mořskou solí, sečuánským pepřem a koňakem.",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "taom-eau-de-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.kintsugiperfumes.com/products/taom-eau-de-parfum",
+          "profile": "Grapefruit, mořská sůl a koňak"
+        }
+      }
+    },
+    {
+      "id": "kaigan-eau-de-parfum",
+      "name": "KAIGAN Eau de Parfum",
+      "url": "https://www.kintsugiperfumes.com/products/kaigan-eau-de-parfum",
+      "priceAmount": 3590,
+      "price": "3 590 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Fík s bazalkou a mořskými akordy na cedrovém základu.",
+      "reason": "Fík s bazalkou a mořskými akordy na cedrovém základu.",
+      "photo": "/assets/s5/kintsugi/kaigan-eau-de-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.kintsugiperfumes.com/products/kaigan-eau-de-parfum",
+        "verifiedAt": "2026-11-11T06:24:20.123983+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "feed": "https://www.kintsugiperfumes.com/products.json?limit=100",
+          "shopifyVariantId": 49302754001245,
+          "available": true
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3590,
+          "currency": "CZK",
+          "vatSource": "https://www.kintsugiperfumes.com/policies/terms-of-service",
+          "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "url": "https://www.kintsugiperfumes.com/products/kaigan-eau-de-parfum"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Kaigan.png?v=1772208223",
+        "photoEvidence": {
+          "url": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Kaigan.png?v=1772208223",
+          "localPath": "/assets/s5/kintsugi/kaigan-eau-de-parfum.webp",
+          "width": 700,
+          "height": 700,
+          "sha256": "c419fafc10d0a3c11ebcccf02f035c38ebfb7c9bb68a166c18e91dcf287b21e3"
+        },
+        "scent": "Fík s bazalkou a mořskými akordy na cedrovém základu.",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "kaigan-eau-de-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.kintsugiperfumes.com/products/kaigan-eau-de-parfum",
+          "profile": "Fík, bazalka a mořské akordy"
+        }
+      }
+    },
+    {
+      "id": "hanzo-eau-de-parfum",
+      "name": "HANZO Eau de Parfum",
+      "url": "https://www.kintsugiperfumes.com/products/hanzo-eau-de-parfum",
+      "priceAmount": 3590,
+      "price": "3 590 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Yuzu a borovice s cypřišem, mořskou řasou a kadidlem.",
+      "reason": "Yuzu a borovice s cypřišem, mořskou řasou a kadidlem.",
+      "photo": "/assets/s5/kintsugi/hanzo-eau-de-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.kintsugiperfumes.com/products/hanzo-eau-de-parfum",
+        "verifiedAt": "2026-11-11T06:24:20.123983+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "feed": "https://www.kintsugiperfumes.com/products.json?limit=100",
+          "shopifyVariantId": 49302753902941,
+          "available": true
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3590,
+          "currency": "CZK",
+          "vatSource": "https://www.kintsugiperfumes.com/policies/terms-of-service",
+          "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "url": "https://www.kintsugiperfumes.com/products/hanzo-eau-de-parfum"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Hanzo.png?v=1772208317",
+        "photoEvidence": {
+          "url": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Hanzo.png?v=1772208317",
+          "localPath": "/assets/s5/kintsugi/hanzo-eau-de-parfum.webp",
+          "width": 700,
+          "height": 700,
+          "sha256": "f6782ef7c03505e4ab1902c549b2d7741d4717104e06b1f748c2e327c7d3551f"
+        },
+        "scent": "Yuzu a borovice s cypřišem, mořskou řasou a kadidlem.",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "hanzo-eau-de-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.kintsugiperfumes.com/products/hanzo-eau-de-parfum",
+          "profile": "Yuzu, borovice a kadidlo"
+        }
+      }
+    },
+    {
+      "id": "tempo-eau-de-parfum",
+      "name": "TEMPO Eau de Parfum + extra náplň",
+      "url": "https://www.kintsugiperfumes.com/products/tempo-eau-de-parfum",
+      "priceAmount": 1190,
+      "price": "1 190 Kč",
+      "currency": "CZK",
+      "volume": "2 × 8 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Fík a vavřín se zázvorem, hinoki a santalovým dřevem.",
+      "reason": "Fík a vavřín se zázvorem, hinoki a santalovým dřevem.",
+      "photo": "/assets/s5/kintsugi/tempo-eau-de-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.kintsugiperfumes.com/products/tempo-eau-de-parfum",
+        "verifiedAt": "2026-11-11T06:24:20.123983+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "feed": "https://www.kintsugiperfumes.com/products.json?limit=100",
+          "shopifyVariantId": 57531811660125,
+          "available": true
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 1190,
+          "currency": "CZK",
+          "vatSource": "https://www.kintsugiperfumes.com/policies/terms-of-service",
+          "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty"
+        },
+        "packEvidence": {
+          "pack": "2 × 8 ml",
+          "url": "https://www.kintsugiperfumes.com/products/tempo-eau-de-parfum"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/tempo_0054.jpg?v=1747372413",
+        "photoEvidence": {
+          "url": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/tempo_0054.jpg?v=1747372413",
+          "localPath": "/assets/s5/kintsugi/tempo-eau-de-parfum.webp",
+          "width": 700,
+          "height": 700,
+          "sha256": "8f211879f05e6bc6f60948dcb83016c215292dc3c88e89676c22de3c41efca24"
+        },
+        "scent": "Fík a vavřín se zázvorem, hinoki a santalovým dřevem.",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "tempo-eau-de-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.kintsugiperfumes.com/products/tempo-eau-de-parfum",
+          "profile": "Fík, vavřín a zázvor"
+        }
+      }
+    },
+    {
+      "id": "muza-eau-de-parfum",
+      "name": "MÚZA Eau de Parfum",
+      "url": "https://www.kintsugiperfumes.com/products/muza-eau-de-parfum",
+      "priceAmount": 3590,
+      "price": "3 590 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Broskev a bergamot s jasmínovým čajem a růžovým dřevem.",
+      "reason": "Broskev a bergamot s jasmínovým čajem a růžovým dřevem.",
+      "photo": "/assets/s5/kintsugi/muza-eau-de-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.kintsugiperfumes.com/products/muza-eau-de-parfum",
+        "verifiedAt": "2026-11-11T06:24:20.123983+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "feed": "https://www.kintsugiperfumes.com/products.json?limit=100",
+          "shopifyVariantId": 58686300520797,
+          "available": true
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3590,
+          "currency": "CZK",
+          "vatSource": "https://www.kintsugiperfumes.com/policies/terms-of-service",
+          "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "url": "https://www.kintsugiperfumes.com/products/muza-eau-de-parfum"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Muza_7e8f3695-4648-412c-8ec2-fb20b9e84515.png?v=1772210076",
+        "photoEvidence": {
+          "url": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Muza_7e8f3695-4648-412c-8ec2-fb20b9e84515.png?v=1772210076",
+          "localPath": "/assets/s5/kintsugi/muza-eau-de-parfum.webp",
+          "width": 700,
+          "height": 700,
+          "sha256": "14d5696fc88fb38ba397a42a9d143276ffab600f50d31fd7dfbd301500fb871a"
+        },
+        "scent": "Broskev a bergamot s jasmínovým čajem a růžovým dřevem.",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "muza-eau-de-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.kintsugiperfumes.com/products/muza-eau-de-parfum",
+          "profile": "Broskev a jasmínový čaj"
+        }
+      }
+    },
+    {
+      "id": "carnal-eau-de-parfum",
+      "name": "CARNAL Eau de Parfum",
+      "url": "https://www.kintsugiperfumes.com/products/carnal-eau-de-parfum",
+      "priceAmount": 3590,
+      "price": "3 590 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Růže, jasmín a fialka s jalovcem, neroli a černým rybízem.",
+      "reason": "Růže, jasmín a fialka s jalovcem, neroli a černým rybízem.",
+      "photo": "/assets/s5/kintsugi/carnal-eau-de-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.kintsugiperfumes.com/products/carnal-eau-de-parfum",
+        "verifiedAt": "2026-11-11T06:24:20.123983+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "feed": "https://www.kintsugiperfumes.com/products.json?limit=100",
+          "shopifyVariantId": 49302753771869,
+          "available": true
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3590,
+          "currency": "CZK",
+          "vatSource": "https://www.kintsugiperfumes.com/policies/terms-of-service",
+          "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "url": "https://www.kintsugiperfumes.com/products/carnal-eau-de-parfum"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Carnal_c1ac15ba-fb71-4094-91d6-ab76959d0092.png?v=1772209455",
+        "photoEvidence": {
+          "url": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Carnal_c1ac15ba-fb71-4094-91d6-ab76959d0092.png?v=1772209455",
+          "localPath": "/assets/s5/kintsugi/carnal-eau-de-parfum.webp",
+          "width": 700,
+          "height": 700,
+          "sha256": "c5eb514d226aa4dcc0085ada65a85efe041b5cea654bd84d6848cf16faa03b10"
+        },
+        "scent": "Růže, jasmín a fialka s jalovcem, neroli a černým rybízem.",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "carnal-eau-de-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.kintsugiperfumes.com/products/carnal-eau-de-parfum",
+          "profile": "Růže, jalovec a černý rybíz"
+        }
+      }
+    },
+    {
+      "id": "luna-eau-de-parfum",
+      "name": "LUNA Eau de Parfum",
+      "url": "https://www.kintsugiperfumes.com/products/luna-eau-de-parfum",
+      "priceAmount": 3590,
+      "price": "3 590 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Pomerančový květ, cukrová vata a hřebíček s tonkou a fialkou.",
+      "reason": "Pomerančový květ, cukrová vata a hřebíček s tonkou a fialkou.",
+      "photo": "/assets/s5/kintsugi/luna-eau-de-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.kintsugiperfumes.com/products/luna-eau-de-parfum",
+        "verifiedAt": "2026-11-11T06:24:20.123983+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "feed": "https://www.kintsugiperfumes.com/products.json?limit=100",
+          "shopifyVariantId": 49302753870173,
+          "available": true
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3590,
+          "currency": "CZK",
+          "vatSource": "https://www.kintsugiperfumes.com/policies/terms-of-service",
+          "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "url": "https://www.kintsugiperfumes.com/products/luna-eau-de-parfum"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Luna.png?v=1772208403",
+        "photoEvidence": {
+          "url": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Luna.png?v=1772208403",
+          "localPath": "/assets/s5/kintsugi/luna-eau-de-parfum.webp",
+          "width": 700,
+          "height": 700,
+          "sha256": "b3cc0a25a7ae6c57b9c8712bd73dfaf33417c49e149bc286fd856600f8a3b4d2"
+        },
+        "scent": "Pomerančový květ, cukrová vata a hřebíček s tonkou a fialkou.",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "luna-eau-de-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.kintsugiperfumes.com/products/luna-eau-de-parfum",
+          "profile": "Cukrová vata, tonka a fialka"
+        }
+      }
+    },
+    {
+      "id": "ambre-extrait-de-parfum",
+      "name": "AMBRÉ Extrait de Parfum",
+      "url": "https://www.kintsugiperfumes.com/products/ambre-extrait-de-parfum",
+      "priceAmount": 4390,
+      "price": "4 390 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Extrait de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Kakao a rum se sušeným ovocem, vanilkou a santalem.",
+      "reason": "Kakao a rum se sušeným ovocem, vanilkou a santalem.",
+      "photo": "/assets/s5/kintsugi/ambre-extrait-de-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.kintsugiperfumes.com/products/ambre-extrait-de-parfum",
+        "verifiedAt": "2026-11-11T06:24:20.123983+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "feed": "https://www.kintsugiperfumes.com/products.json?limit=100",
+          "shopifyVariantId": 54483533136221,
+          "available": true
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 4390,
+          "currency": "CZK",
+          "vatSource": "https://www.kintsugiperfumes.com/policies/terms-of-service",
+          "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "url": "https://www.kintsugiperfumes.com/products/ambre-extrait-de-parfum"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Ambre.png?v=1772208171",
+        "photoEvidence": {
+          "url": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Ambre.png?v=1772208171",
+          "localPath": "/assets/s5/kintsugi/ambre-extrait-de-parfum.webp",
+          "width": 700,
+          "height": 700,
+          "sha256": "89a67b7e759ebabadda45612333614032986c993d9c6138f4d82541cdab95874"
+        },
+        "scent": "Kakao a rum se sušeným ovocem, vanilkou a santalem.",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "ambre-extrait-de-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.kintsugiperfumes.com/products/ambre-extrait-de-parfum",
+          "profile": "Kakao, rum a vanilka"
+        }
+      }
+    },
+    {
+      "id": "phenix-eau-de-parfum",
+      "name": "PHÉNIX Eau de Parfum",
+      "url": "https://www.kintsugiperfumes.com/products/phenix-eau-de-parfum",
+      "priceAmount": 3590,
+      "price": "3 590 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Káva, tabák a šafrán s kouřem a koženým základem.",
+      "reason": "Káva, tabák a šafrán s kouřem a koženým základem.",
+      "photo": "/assets/s5/kintsugi/phenix-eau-de-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.kintsugiperfumes.com/products/phenix-eau-de-parfum",
+        "verifiedAt": "2026-11-11T06:24:20.123983+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "feed": "https://www.kintsugiperfumes.com/products.json?limit=100",
+          "shopifyVariantId": 49302753542493,
+          "available": true
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3590,
+          "currency": "CZK",
+          "vatSource": "https://www.kintsugiperfumes.com/policies/terms-of-service",
+          "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "url": "https://www.kintsugiperfumes.com/products/phenix-eau-de-parfum"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Phenix.png?v=1772208518",
+        "photoEvidence": {
+          "url": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Phenix.png?v=1772208518",
+          "localPath": "/assets/s5/kintsugi/phenix-eau-de-parfum.webp",
+          "width": 700,
+          "height": 700,
+          "sha256": "83cc85eb73ec49849c1b3d68daf5659bdd09f099a9c4cf85b667f97e8a92b44d"
+        },
+        "scent": "Káva, tabák a šafrán s kouřem a koženým základem.",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "phenix-eau-de-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.kintsugiperfumes.com/products/phenix-eau-de-parfum",
+          "profile": "Káva, tabák a šafrán"
+        }
+      }
+    },
+    {
+      "id": "santal-eau-de-parfum",
+      "name": "SANTAL Eau de Parfum",
+      "url": "https://www.kintsugiperfumes.com/products/santal-eau-de-parfum",
+      "priceAmount": 3590,
+      "price": "3 590 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Santal a kůže s kardamomem, malinou a šafránem.",
+      "reason": "Santal a kůže s kardamomem, malinou a šafránem.",
+      "photo": "/assets/s5/kintsugi/santal-eau-de-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.kintsugiperfumes.com/products/santal-eau-de-parfum",
+        "verifiedAt": "2026-11-11T06:24:20.123983+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "feed": "https://www.kintsugiperfumes.com/products.json?limit=100",
+          "shopifyVariantId": 49302753968477,
+          "available": true
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3590,
+          "currency": "CZK",
+          "vatSource": "https://www.kintsugiperfumes.com/policies/terms-of-service",
+          "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "url": "https://www.kintsugiperfumes.com/products/santal-eau-de-parfum"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Santal.png?v=1772208245",
+        "photoEvidence": {
+          "url": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Santal.png?v=1772208245",
+          "localPath": "/assets/s5/kintsugi/santal-eau-de-parfum.webp",
+          "width": 700,
+          "height": 700,
+          "sha256": "b955fc9677d2f591a3af5d6bc6af8f9cbbccddc8d34338cc72a4e987e1a3798b"
+        },
+        "scent": "Santal a kůže s kardamomem, malinou a šafránem.",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "santal-eau-de-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.kintsugiperfumes.com/products/santal-eau-de-parfum",
+          "profile": "Santal, kardamom a kůže"
+        }
+      }
+    },
+    {
+      "id": "deus-eau-de-parfum",
+      "name": "DEUS Eau de Parfum",
+      "url": "https://www.kintsugiperfumes.com/products/deus-eau-de-parfum",
+      "priceAmount": 3590,
+      "price": "3 590 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Oud a cedr s levandulí, růžovým pepřem a zázvorem.",
+      "reason": "Oud a cedr s levandulí, růžovým pepřem a zázvorem.",
+      "photo": "/assets/s5/kintsugi/deus-eau-de-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.kintsugiperfumes.com/products/deus-eau-de-parfum",
+        "verifiedAt": "2026-11-11T06:24:20.123983+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "feed": "https://www.kintsugiperfumes.com/products.json?limit=100",
+          "shopifyVariantId": 49302753739101,
+          "available": true
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3590,
+          "currency": "CZK",
+          "vatSource": "https://www.kintsugiperfumes.com/policies/terms-of-service",
+          "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "url": "https://www.kintsugiperfumes.com/products/deus-eau-de-parfum"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Deus.png?v=1772208465",
+        "photoEvidence": {
+          "url": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Deus.png?v=1772208465",
+          "localPath": "/assets/s5/kintsugi/deus-eau-de-parfum.webp",
+          "width": 700,
+          "height": 700,
+          "sha256": "00378241c1f8545748e13f352a19dc46bb39f4412b1a081353b58bf69586a026"
+        },
+        "scent": "Oud a cedr s levandulí, růžovým pepřem a zázvorem.",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "deus-eau-de-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.kintsugiperfumes.com/products/deus-eau-de-parfum",
+          "profile": "Oud, levandule a růžový pepř"
+        }
+      }
+    },
+    {
+      "id": "ambre-oud-extrait-de-parfum",
+      "name": "AMBRÉ OUD Extrait de Parfum",
+      "url": "https://www.kintsugiperfumes.com/products/ambre-oud-extrait-de-parfum",
+      "priceAmount": 4390,
+      "price": "4 390 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Extrait de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Laoský oud s mangem, šafránem, medem a damašskou růží.",
+      "reason": "Laoský oud s mangem, šafránem, medem a damašskou růží.",
+      "photo": "/assets/s5/kintsugi/ambre-oud-extrait-de-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.kintsugiperfumes.com/products/ambre-oud-extrait-de-parfum",
+        "verifiedAt": "2026-11-11T06:24:20.123983+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "feed": "https://www.kintsugiperfumes.com/products.json?limit=100",
+          "shopifyVariantId": 62856979808605,
+          "available": true
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 4390,
+          "currency": "CZK",
+          "vatSource": "https://www.kintsugiperfumes.com/policies/terms-of-service",
+          "vatEvidence": "Ceny zboží jsou uvedeny včetně daně z přidané hodnoty"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "url": "https://www.kintsugiperfumes.com/products/ambre-oud-extrait-de-parfum"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Ambre_Oud.png?v=1772208037",
+        "photoEvidence": {
+          "url": "https://cdn.shopify.com/s/files/1/0788/1356/1181/files/Ambre_Oud.png?v=1772208037",
+          "localPath": "/assets/s5/kintsugi/ambre-oud-extrait-de-parfum.webp",
+          "width": 700,
+          "height": 700,
+          "sha256": "32ad068fbb4cb2f65bb4816ff5b4c20c95245da6805b6f4286c12677ba59f690"
+        },
+        "scent": "Laoský oud s mangem, šafránem, medem a damašskou růží.",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "ambre-oud-extrait-de-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.kintsugiperfumes.com/products/ambre-oud-extrait-de-parfum",
+          "profile": "Laoský oud, mango a šafrán"
+        }
+      }
+    }
+  ]
+};
