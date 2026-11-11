@@ -1,6 +1,7 @@
 {
+  "at": "2026-11-11T11:57:37.923104+00:00",
   "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
-  "scope": "Final unique local source/config fixtures, not registered or live Preview QA. Unchanged30Flakon results reused from baseline after six source/photo result deltas.",
+  "scope": "Local isolated candidate fixture only.",
   "cards": [
     {
       "slug": "alexmonhart",
@@ -253,5 +254,7 @@
   ],
   "errors": [],
   "paidModelCalls": 0,
-  "complete": true
+  "complete": true,
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "browser": "webkit"
 }

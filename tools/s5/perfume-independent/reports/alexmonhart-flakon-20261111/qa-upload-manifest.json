@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-11-11T12:03:55.620739+00:00",
+  "authorization": "Owner explicitly permitted QA screenshot/ZIP GitHub storage excluded from Vercel.",
+  "archives": [
+    {
+      "path": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/local-alexmonhart-1280.zip",
+      "bytes": 1675459,
+      "sha256": "ad8ef42a89d98b7d7b00cce173872f25a2806e310f64074c31ac3c5ef7c5731a",
+      "originalScreenshotCount": 17,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/local-alexmonhart-320.zip",
+      "bytes": 1493683,
+      "sha256": "2094804c90e7d541aab83e44ac196ca41f2d7d2c8d583d2632d78b7b5f1e2bb2",
+      "originalScreenshotCount": 17,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/local-alexmonhart-390.zip",
+      "bytes": 1453590,
+      "sha256": "db2e5df647d47b2817b841044065a848905d151614e3bb0dfa7d9de1dcdd02a8",
+      "originalScreenshotCount": 17,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/local-flakon-1280.zip",
+      "bytes": 2470319,
+      "sha256": "4dc5c83b180aba70482d2aa1721145b7a42de0997924d13e70684dba5b5f25b6",
+      "originalScreenshotCount": 22,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/local-flakon-320.zip",
+      "bytes": 2143497,
+      "sha256": "372b9e70154bdf746d3f2a5f068f102703e180c4514f8f844c0b526b87984a14",
+      "originalScreenshotCount": 22,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/local-flakon-390.zip",
+      "bytes": 2082120,
+      "sha256": "4df8ca88586060f6dff73390facd312ad4a259e2bcb2c7f57b6cf4ff3829f8a2",
+      "originalScreenshotCount": 22,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "/workspace/work/perfume-worker/tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/merchant-live-eligibility.zip",
+      "bytes": 2047777,
+      "sha256": "86e86a0c219d40e31701ce49094c7c763bb53c23a1de0889b46437af02be5bce",
+      "originalScreenshotCount": 7,
+      "scope": "Merchant eligibility only"
+    }
+  ],
+  "archiveCount": 7,
+  "archiveBytes": 13366445,
+  "localFrames": 117,
+  "merchantFrames": 7,
+  "pixelIdentical": true,
+  "allBlobUploadGitShasMatchedLocalBytes": true,
+  "sharedIgnoreFileChanged": false,
+  "vercelExcludedBy": "Existing /tools/ rule; all files remain under tools/s5/perfume-independent/",
+  "originalPngs": "Preserved locally, no deletion",
+  "scope": "LOCAL demo QA and actual merchant eligibility, never a live Preview claim."
+}

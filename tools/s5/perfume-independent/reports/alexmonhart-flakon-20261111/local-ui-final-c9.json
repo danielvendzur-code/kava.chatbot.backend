@@ -1,280 +1,7 @@
 {
   "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
-  "scope": "Final unique local source/config fixtures, not registered or live Preview QA. Unchanged30Flakon results reused from baseline after six source/photo result deltas.",
+  "scope": "Final local isolated source/config fixtures on unchangedc9e4da0; no Preview/registration/comparison-of-samples completion claim.",
   "results": [
-    {
-      "slug": "alexmonhart",
-      "width": 320,
-      "id": "the-thinker",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-thinker?variant=54346006331716",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-thinker-320.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 320,
-      "id": "the-avantgardist-copy",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-avantgardist-copy?variant=54347544265028",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-avantgardist-copy-320.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 320,
-      "id": "the-minimalist",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-minimalist?variant=54347398447428",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-minimalist-320.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 320,
-      "id": "the-ritualist",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-ritualist?variant=54346206478660",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-ritualist-320.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 320,
-      "id": "the-blasphemer",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-blasphemer?variant=55714966274372",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-blasphemer-320.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 320,
-      "id": "the-raver",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-raver?variant=54347562549572",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-raver-320.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 320,
-      "id": "the-avantgardist",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-avantgardist?variant=54347438948676",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-avantgardist-320.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 390,
-      "id": "the-thinker",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-thinker?variant=54346006331716",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-thinker-390.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 390,
-      "id": "the-avantgardist-copy",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-avantgardist-copy?variant=54347544265028",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-avantgardist-copy-390.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 390,
-      "id": "the-minimalist",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-minimalist?variant=54347398447428",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-minimalist-390.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 390,
-      "id": "the-ritualist",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-ritualist?variant=54346206478660",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-ritualist-390.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 390,
-      "id": "the-blasphemer",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-blasphemer?variant=55714966274372",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-blasphemer-390.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 390,
-      "id": "the-raver",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-raver?variant=54347562549572",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-raver-390.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 390,
-      "id": "the-avantgardist",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-avantgardist?variant=54347438948676",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-avantgardist-390.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 1280,
-      "id": "the-thinker",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-thinker?variant=54346006331716",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-thinker-1280.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 1280,
-      "id": "the-avantgardist-copy",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-avantgardist-copy?variant=54347544265028",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-avantgardist-copy-1280.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 1280,
-      "id": "the-minimalist",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-minimalist?variant=54347398447428",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-minimalist-1280.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 1280,
-      "id": "the-ritualist",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-ritualist?variant=54346206478660",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-ritualist-1280.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 1280,
-      "id": "the-blasphemer",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-blasphemer?variant=55714966274372",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-blasphemer-1280.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 1280,
-      "id": "the-raver",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-raver?variant=54347562549572",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-raver-1280.png"
-    },
-    {
-      "slug": "alexmonhart",
-      "width": 1280,
-      "id": "the-avantgardist",
-      "pack": "50 ml",
-      "price": "3 790 Kč",
-      "url": "https://www.alexmonhart.com/products/the-avantgardist?variant=54347438948676",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alexmonhart-result-the-avantgardist-1280.png"
-    },
     {
       "slug": "flakon",
       "width": 320,
@@ -680,19 +407,6 @@
     },
     {
       "slug": "flakon",
-      "width": 320,
-      "id": "parfums-dusita---mocha-absolu",
-      "pack": "2 ml",
-      "price": "12 €",
-      "url": "https://www.flakon.sk/parfums-dusita---mocha-absolu/",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Späť\nVýsledok",
-      "screenshot": "flakon-result-parfums-dusita---mocha-absolu-320.png"
-    },
-    {
-      "slug": "flakon",
       "width": 390,
       "id": "vilhelm-parfumerie-mango-skin",
       "pack": "2 ml",
@@ -703,6 +417,305 @@
       "reset": true,
       "progress": "‹ Späť\nVýsledok",
       "screenshot": "flakon-result-vilhelm-parfumerie-mango-skin-390.png"
+    },
+    {
+      "slug": "flakon",
+      "width": 1280,
+      "id": "vilhelm-parfumerie-mango-skin",
+      "pack": "2 ml",
+      "price": "11 €",
+      "url": "https://www.flakon.sk/vilhelm-parfumerie-mango-skin/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "flakon-result-vilhelm-parfumerie-mango-skin-1280.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 320,
+      "id": "the-thinker",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-thinker?variant=54346006331716",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-thinker-320.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 320,
+      "id": "the-avantgardist-copy",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-avantgardist-copy?variant=54347544265028",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-avantgardist-copy-320.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 320,
+      "id": "the-minimalist",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-minimalist?variant=54347398447428",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-minimalist-320.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 320,
+      "id": "the-ritualist",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-ritualist?variant=54346206478660",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-ritualist-320.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 320,
+      "id": "the-blasphemer",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-blasphemer?variant=55714966274372",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-blasphemer-320.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 320,
+      "id": "the-raver",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-raver?variant=54347562549572",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-raver-320.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 320,
+      "id": "the-avantgardist",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-avantgardist?variant=54347438948676",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-avantgardist-320.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 390,
+      "id": "the-thinker",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-thinker?variant=54346006331716",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-thinker-390.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 390,
+      "id": "the-avantgardist-copy",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-avantgardist-copy?variant=54347544265028",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-avantgardist-copy-390.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 390,
+      "id": "the-minimalist",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-minimalist?variant=54347398447428",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-minimalist-390.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 390,
+      "id": "the-ritualist",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-ritualist?variant=54346206478660",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-ritualist-390.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 390,
+      "id": "the-blasphemer",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-blasphemer?variant=55714966274372",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-blasphemer-390.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 390,
+      "id": "the-raver",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-raver?variant=54347562549572",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-raver-390.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 390,
+      "id": "the-avantgardist",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-avantgardist?variant=54347438948676",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-avantgardist-390.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 1280,
+      "id": "the-thinker",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-thinker?variant=54346006331716",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-thinker-1280.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 1280,
+      "id": "the-avantgardist-copy",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-avantgardist-copy?variant=54347544265028",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-avantgardist-copy-1280.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 1280,
+      "id": "the-minimalist",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-minimalist?variant=54347398447428",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-minimalist-1280.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 1280,
+      "id": "the-ritualist",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-ritualist?variant=54346206478660",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-ritualist-1280.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 1280,
+      "id": "the-blasphemer",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-blasphemer?variant=55714966274372",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-blasphemer-1280.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 1280,
+      "id": "the-raver",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-raver?variant=54347562549572",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-raver-1280.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 1280,
+      "id": "the-avantgardist",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-avantgardist?variant=54347438948676",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-avantgardist-1280.png"
+    },
+    {
+      "slug": "flakon",
+      "width": 320,
+      "id": "parfums-dusita---mocha-absolu",
+      "pack": "2 ml",
+      "price": "12 €",
+      "url": "https://www.flakon.sk/parfums-dusita---mocha-absolu/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "flakon-result-parfums-dusita---mocha-absolu-320.png"
     },
     {
       "slug": "flakon",
@@ -720,19 +733,6 @@
     {
       "slug": "flakon",
       "width": 1280,
-      "id": "vilhelm-parfumerie-mango-skin",
-      "pack": "2 ml",
-      "price": "11 €",
-      "url": "https://www.flakon.sk/vilhelm-parfumerie-mango-skin/",
-      "photoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Späť\nVýsledok",
-      "screenshot": "flakon-result-vilhelm-parfumerie-mango-skin-1280.png"
-    },
-    {
-      "slug": "flakon",
-      "width": 1280,
       "id": "parfums-dusita---mocha-absolu",
       "pack": "2 ml",
       "price": "12 €",
@@ -745,6 +745,204 @@
     }
   ],
   "questionPages": [
+    {
+      "slug": "flakon",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "xerjoff-casamorati---gran-ballo",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "lush-vanillary-rose-oudh",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "scentologia-lacton-ic-",
+          "photo": "/assets/s3/scenes-k2/milk.jpg"
+        }
+      ],
+      "screenshot": "flakon-question-8273cc52-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "flakon",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "matiere-premiere---encens-suave",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "byredo-vanille-antique",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "penhaligon-s-halfeti-amber",
+          "photo": "/assets/s5/flakon/penhaligon-s-halfeti-amber.webp"
+        }
+      ],
+      "screenshot": "flakon-question-5833791e-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "flakon",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "xerjoff-casamorati---gran-ballo",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "lush-vanillary-rose-oudh",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "scentologia-lacton-ic-",
+          "photo": "/assets/s3/scenes-k2/milk.jpg"
+        }
+      ],
+      "screenshot": "flakon-question-8273cc52-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "flakon",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "matiere-premiere---encens-suave",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "byredo-vanille-antique",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "penhaligon-s-halfeti-amber",
+          "photo": "/assets/s5/flakon/penhaligon-s-halfeti-amber.webp"
+        }
+      ],
+      "screenshot": "flakon-question-5833791e-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "flakon",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "xerjoff-casamorati---gran-ballo",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "lush-vanillary-rose-oudh",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "scentologia-lacton-ic-",
+          "photo": "/assets/s3/scenes-k2/milk.jpg"
+        }
+      ],
+      "screenshot": "flakon-question-8273cc52-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "flakon",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "matiere-premiere---encens-suave",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "byredo-vanille-antique",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "penhaligon-s-halfeti-amber",
+          "photo": "/assets/s5/flakon/penhaligon-s-halfeti-amber.webp"
+        }
+      ],
+      "screenshot": "flakon-question-5833791e-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "flakon",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "xerjoff-torino21",
+          "photo": "/assets/s3/scenes-k2/mint-herbs.jpg"
+        },
+        {
+          "id": "vilhelm-parfumerie-mango-skin",
+          "photo": "/assets/s3/scenes-k2/mango.jpg"
+        },
+        {
+          "id": "ex-nihilo---blue-talisman",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        }
+      ],
+      "screenshot": "flakon-question-5a2051c3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "flakon",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "xerjoff-torino21",
+          "photo": "/assets/s3/scenes-k2/mint-herbs.jpg"
+        },
+        {
+          "id": "vilhelm-parfumerie-mango-skin",
+          "photo": "/assets/s3/scenes-k2/mango.jpg"
+        },
+        {
+          "id": "ex-nihilo---blue-talisman",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        }
+      ],
+      "screenshot": "flakon-question-5a2051c3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "flakon",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "xerjoff-torino21",
+          "photo": "/assets/s3/scenes-k2/mint-herbs.jpg"
+        },
+        {
+          "id": "vilhelm-parfumerie-mango-skin",
+          "photo": "/assets/s3/scenes-k2/mango.jpg"
+        },
+        {
+          "id": "ex-nihilo---blue-talisman",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        }
+      ],
+      "screenshot": "flakon-question-5a2051c3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
     {
       "slug": "alexmonhart",
       "width": 320,
@@ -1017,28 +1215,6 @@
       "key": "fragranceProfile",
       "options": [
         {
-          "id": "xerjoff-casamorati---gran-ballo",
-          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
-        },
-        {
-          "id": "lush-vanillary-rose-oudh",
-          "photo": "/assets/s3/scenes-k2/rose.jpg"
-        },
-        {
-          "id": "scentologia-lacton-ic-",
-          "photo": "/assets/s3/scenes-k2/milk.jpg"
-        }
-      ],
-      "screenshot": "flakon-question-8273cc52-320.png",
-      "loaded": true,
-      "noPageOverflow": true
-    },
-    {
-      "slug": "flakon",
-      "width": 320,
-      "key": "fragranceProfile",
-      "options": [
-        {
           "id": "parfums-dusita---mocha-absolu",
           "photo": "/assets/s3/scenes-k2/coffee-beans.jpg"
         },
@@ -1052,28 +1228,6 @@
         }
       ],
       "screenshot": "flakon-question-27a44584-320.png",
-      "loaded": true,
-      "noPageOverflow": true
-    },
-    {
-      "slug": "flakon",
-      "width": 320,
-      "key": "fragranceProfile",
-      "options": [
-        {
-          "id": "matiere-premiere---encens-suave",
-          "photo": "/assets/s3/scenes-k2/incense.jpg"
-        },
-        {
-          "id": "byredo-vanille-antique",
-          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
-        },
-        {
-          "id": "penhaligon-s-halfeti-amber",
-          "photo": "/assets/s5/flakon/penhaligon-s-halfeti-amber.webp"
-        }
-      ],
-      "screenshot": "flakon-question-5833791e-320.png",
       "loaded": true,
       "noPageOverflow": true
     },
@@ -1109,28 +1263,6 @@
       "key": "fragranceProfile",
       "options": [
         {
-          "id": "xerjoff-casamorati---gran-ballo",
-          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
-        },
-        {
-          "id": "lush-vanillary-rose-oudh",
-          "photo": "/assets/s3/scenes-k2/rose.jpg"
-        },
-        {
-          "id": "scentologia-lacton-ic-",
-          "photo": "/assets/s3/scenes-k2/milk.jpg"
-        }
-      ],
-      "screenshot": "flakon-question-8273cc52-390.png",
-      "loaded": true,
-      "noPageOverflow": true
-    },
-    {
-      "slug": "flakon",
-      "width": 390,
-      "key": "fragranceProfile",
-      "options": [
-        {
           "id": "parfums-dusita---mocha-absolu",
           "photo": "/assets/s3/scenes-k2/coffee-beans.jpg"
         },
@@ -1144,28 +1276,6 @@
         }
       ],
       "screenshot": "flakon-question-27a44584-390.png",
-      "loaded": true,
-      "noPageOverflow": true
-    },
-    {
-      "slug": "flakon",
-      "width": 390,
-      "key": "fragranceProfile",
-      "options": [
-        {
-          "id": "matiere-premiere---encens-suave",
-          "photo": "/assets/s3/scenes-k2/incense.jpg"
-        },
-        {
-          "id": "byredo-vanille-antique",
-          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
-        },
-        {
-          "id": "penhaligon-s-halfeti-amber",
-          "photo": "/assets/s5/flakon/penhaligon-s-halfeti-amber.webp"
-        }
-      ],
-      "screenshot": "flakon-question-5833791e-390.png",
       "loaded": true,
       "noPageOverflow": true
     },
@@ -1201,28 +1311,6 @@
       "key": "fragranceProfile",
       "options": [
         {
-          "id": "xerjoff-casamorati---gran-ballo",
-          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
-        },
-        {
-          "id": "lush-vanillary-rose-oudh",
-          "photo": "/assets/s3/scenes-k2/rose.jpg"
-        },
-        {
-          "id": "scentologia-lacton-ic-",
-          "photo": "/assets/s3/scenes-k2/milk.jpg"
-        }
-      ],
-      "screenshot": "flakon-question-8273cc52-1280.png",
-      "loaded": true,
-      "noPageOverflow": true
-    },
-    {
-      "slug": "flakon",
-      "width": 1280,
-      "key": "fragranceProfile",
-      "options": [
-        {
           "id": "parfums-dusita---mocha-absolu",
           "photo": "/assets/s3/scenes-k2/coffee-beans.jpg"
         },
@@ -1238,97 +1326,45 @@
       "screenshot": "flakon-question-27a44584-1280.png",
       "loaded": true,
       "noPageOverflow": true
-    },
-    {
-      "slug": "flakon",
-      "width": 1280,
-      "key": "fragranceProfile",
-      "options": [
-        {
-          "id": "matiere-premiere---encens-suave",
-          "photo": "/assets/s3/scenes-k2/incense.jpg"
-        },
-        {
-          "id": "byredo-vanille-antique",
-          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
-        },
-        {
-          "id": "penhaligon-s-halfeti-amber",
-          "photo": "/assets/s5/flakon/penhaligon-s-halfeti-amber.webp"
-        }
-      ],
-      "screenshot": "flakon-question-5833791e-1280.png",
-      "loaded": true,
-      "noPageOverflow": true
-    },
+    }
+  ],
+  "interactions": [
     {
       "slug": "flakon",
       "width": 320,
-      "key": "fragranceProfile",
-      "options": [
-        {
-          "id": "xerjoff-torino21",
-          "photo": "/assets/s3/scenes-k2/mint-herbs.jpg"
-        },
-        {
-          "id": "vilhelm-parfumerie-mango-skin",
-          "photo": "/assets/s3/scenes-k2/mango.jpg"
-        },
-        {
-          "id": "ex-nihilo---blue-talisman",
-          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
-        }
-      ],
-      "screenshot": "flakon-question-5a2051c3-320.png",
-      "loaded": true,
-      "noPageOverflow": true
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": null,
+      "comparisonStatus": "PENDING_MAIN_SAMPLE_COMPARE_OPT_IN",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": null,
+      "captureDirectory": "/workspace/work/perfume-audit/alexmonhart-flakon-20261111/ui-flakon"
     },
     {
       "slug": "flakon",
       "width": 390,
-      "key": "fragranceProfile",
-      "options": [
-        {
-          "id": "xerjoff-torino21",
-          "photo": "/assets/s3/scenes-k2/mint-herbs.jpg"
-        },
-        {
-          "id": "vilhelm-parfumerie-mango-skin",
-          "photo": "/assets/s3/scenes-k2/mango.jpg"
-        },
-        {
-          "id": "ex-nihilo---blue-talisman",
-          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
-        }
-      ],
-      "screenshot": "flakon-question-5a2051c3-390.png",
-      "loaded": true,
-      "noPageOverflow": true
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": null,
+      "comparisonStatus": "PENDING_MAIN_SAMPLE_COMPARE_OPT_IN",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": null,
+      "captureDirectory": "/workspace/work/perfume-audit/alexmonhart-flakon-20261111/ui-flakon"
     },
     {
       "slug": "flakon",
       "width": 1280,
-      "key": "fragranceProfile",
-      "options": [
-        {
-          "id": "xerjoff-torino21",
-          "photo": "/assets/s3/scenes-k2/mint-herbs.jpg"
-        },
-        {
-          "id": "vilhelm-parfumerie-mango-skin",
-          "photo": "/assets/s3/scenes-k2/mango.jpg"
-        },
-        {
-          "id": "ex-nihilo---blue-talisman",
-          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
-        }
-      ],
-      "screenshot": "flakon-question-5a2051c3-1280.png",
-      "loaded": true,
-      "noPageOverflow": true
-    }
-  ],
-  "interactions": [
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": null,
+      "comparisonStatus": "PENDING_MAIN_SAMPLE_COMPARE_OPT_IN",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": null,
+      "captureDirectory": "/workspace/work/perfume-audit/alexmonhart-flakon-20261111/ui-flakon"
+    },
     {
       "slug": "alexmonhart",
       "width": 320,
@@ -1370,45 +1406,17 @@
       "hoverNoLayoutShift": true,
       "reducedMotionMedia": true,
       "screenshot": "alexmonhart-compare-1280.png"
-    },
-    {
-      "slug": "flakon",
-      "width": 320,
-      "four40pxChips": true,
-      "offlineChipReplies": 3,
-      "compareDistinct": null,
-      "comparisonStatus": "PENDING_MAIN_SAMPLE_COMPARE_OPT_IN",
-      "hoverNoLayoutShift": true,
-      "reducedMotionMedia": true,
-      "screenshot": null,
-      "captureDirectory": "/workspace/work/perfume-audit/alexmonhart-flakon-20261111/ui-flakon"
-    },
-    {
-      "slug": "flakon",
-      "width": 390,
-      "four40pxChips": true,
-      "offlineChipReplies": 3,
-      "compareDistinct": null,
-      "comparisonStatus": "PENDING_MAIN_SAMPLE_COMPARE_OPT_IN",
-      "hoverNoLayoutShift": true,
-      "reducedMotionMedia": true,
-      "screenshot": null,
-      "captureDirectory": "/workspace/work/perfume-audit/alexmonhart-flakon-20261111/ui-flakon"
-    },
-    {
-      "slug": "flakon",
-      "width": 1280,
-      "four40pxChips": true,
-      "offlineChipReplies": 3,
-      "compareDistinct": null,
-      "comparisonStatus": "PENDING_MAIN_SAMPLE_COMPARE_OPT_IN",
-      "hoverNoLayoutShift": true,
-      "reducedMotionMedia": true,
-      "screenshot": null,
-      "captureDirectory": "/workspace/work/perfume-audit/alexmonhart-flakon-20261111/ui-flakon"
     }
   ],
   "errors": [],
   "paidModelCalls": 0,
-  "complete": false
+  "complete": false,
+  "presentationPolish": {
+    "at": "2026-11-11T11:59:15.932164+00:00",
+    "alexmonhart": "All21results+12question views+3comparison viewports recaptured after header CSS and2shorter literal note labels.",
+    "flakon": "Only3Mocha result views+6root/gourmand question views recaptured after shorter label; rest unchanged from full baseline/source-photo delta.",
+    "chat": "All18focused decoded cards and6offer/waiting views recaptured after final copy.",
+    "uniqueResultViewCount": 57,
+    "paidModelCalls": 0
+  }
 }

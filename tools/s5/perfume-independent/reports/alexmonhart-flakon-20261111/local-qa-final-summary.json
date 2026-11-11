@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-11T12:01:36.662770+00:00",
+  "baseCore": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "owner": "PERFUME_WORKER",
+  "status": "SOURCE_LOCAL_QA_DONE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_PENDING",
+  "companies": {
+    "alexmonhart": {
+      "formulas": 7,
+      "resultViews": 21,
+      "questionViews": 12,
+      "focusedChatCards": 9,
+      "localComparison": "PASS3widths"
+    },
+    "flakon": {
+      "formulas": 12,
+      "resultViews": 36,
+      "questionViews": 15,
+      "focusedChatCards": 9,
+      "localComparison": "PENDING_SHARED_SAMPLE_COMPARE_FIX"
+    }
+  },
+  "widths": [
+    320,
+    390,
+    1280
+  ],
+  "uniqueSuccessfulResultViews": 57,
+  "finalScreenshotFrames": 117,
+  "paidModelCalls": 0,
+  "pageErrors": [],
+  "mainSharedRuntimeChanged": false,
+  "previewQa": false,
+  "newFinishedCount": 0,
+  "mail": "NOT_READY_NO_APP_OPERATION",
+  "production": "NOT_DEPLOYED",
+  "evidenceRoot": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/",
+  "visualReview": {
+    "checkedAt": "2026-11-11T12:01:36.662770+00:00",
+    "reviewer": "PERFUME_WORKER",
+    "baselineSheets": 18,
+    "finalAlexResultAndQuestionSheets": 6,
+    "finalChatSheets": 6,
+    "finalChangedFramesSheets": 3,
+    "description": "All57unique results,27question views and18cards inspected via full baseline contact sheets; final Alex header/short-label21results12questions re-inspected, all18finalcards re-inspected, Flakon3Mocha result/3gourmand question changes and retail comparison/reduced-motion waiting3widths inspected. Both whole1280offer screens displayed to owner.",
+    "qaScope": "LOCAL fixtures, not live Preview. All original PNGs preserved.",
+    "comparison": {
+      "alexmonhart": "PASS distinctThinker/Avantgardist all3widths",
+      "flakon": "PENDING_MAIN_OPT_IN; actual390picker0choices"
+    }
+  },
+  "deltaProtocol": "Repeated21Alex results justified by changed scoped header/shortlabels. Flakon6photo/source delta then3shortlabel delta only; unique count never inflated."
+}

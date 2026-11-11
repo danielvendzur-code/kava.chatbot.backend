@@ -1,0 +1,1229 @@
+{
+  "at": "2026-11-11T12:00:40.934389+00:00",
+  "scope": "Actual LOCAL QA only; MAIN corec9e4da0. Not live Preview or a complete comparison claim.",
+  "authorization": "Owner explicitly permits GitHub QA screenshots/ZIPs, excluded from Vercel under /tools/.",
+  "format": "Lossless WebP verified byte-identical RGBA pixel buffers to original PNG. All original PNGs preserved locally.",
+  "images": [
+    {
+      "sourcePng": "canonical-final/alexmonhart-card-0-1280.png",
+      "sourcePngSha256": "6377dd79598f6daf1835d19b5b732191d7426ebee0252dccf27a363b46615096",
+      "archiveFile": "alexmonhart-card-0-1280.webp",
+      "webpSha256": "e28db429edc7eb7b1a5ffa0f396728be7e8c521fc2f75f9c4186ca1f112fcfd4",
+      "rgbaPixelsSha256": "b0927ef057c10c266a43d319af30a1af4698964eda2bd0c40c796e33d38b9e7c",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-card-0-320.png",
+      "sourcePngSha256": "27758cbd089e13bc505ede8eabb64eba8572d2fb7f021e07eb82ec188ef5322d",
+      "archiveFile": "alexmonhart-card-0-320.webp",
+      "webpSha256": "8a357b72962c288d9be31895575456fc7f030765c0b5d66b1b06fe5d07c5aea7",
+      "rgbaPixelsSha256": "7fda9a9f5b32b707007c17a7b76e600602e1e5926dcd01c4aed614c428ad77c3",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-card-0-390.png",
+      "sourcePngSha256": "2d276d90bb8605f748e9e113558d8d229b19f321d6327311bd23b83c66da01cd",
+      "archiveFile": "alexmonhart-card-0-390.webp",
+      "webpSha256": "a4c3dec1fb17fb1180aebbb03dad3c0df4098073cc0dcf0155cab02ab1c2c9d9",
+      "rgbaPixelsSha256": "563ae1992e4c742d874f7cf9b3ea61434bfb33164e7d9d8a207756f828dd806c",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-card-1-1280.png",
+      "sourcePngSha256": "ce72438dab6001653a7e080e897cb2131688027d06b14f2551a4c0c051e784f7",
+      "archiveFile": "alexmonhart-card-1-1280.webp",
+      "webpSha256": "b3011dacaf93bb8d39db4f4edbea779bf5cabe42967bf4507edfdfd188bda5c5",
+      "rgbaPixelsSha256": "9b17b16316c484f0ef0394285626a43168905e5f84180aaba1c121fa8e5fdcfd",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-card-1-320.png",
+      "sourcePngSha256": "67dcac9c096a2b033bd378acef745dc66c9461bcadb178910ba74fd415eebdeb",
+      "archiveFile": "alexmonhart-card-1-320.webp",
+      "webpSha256": "0f47121632478d52750097723c8cdbb742fa645409800eef872b830ea2bb7d45",
+      "rgbaPixelsSha256": "c96225194b65662dbf3b363622e7946d5886398006a650d7a9602e453d3fafe0",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-card-1-390.png",
+      "sourcePngSha256": "33ac266fb8cc028e52f8d92da0a935b517b26cd9b0f002ab427a5a21d0be8bf6",
+      "archiveFile": "alexmonhart-card-1-390.webp",
+      "webpSha256": "bb11e3cde55bcfd8f5b70a443d9c4711c9598a7c4be24a00fb0b425b501a8333",
+      "rgbaPixelsSha256": "68834aaa67cb951b4c7285cda5659f2c5fd16c9f517ec806e8dba3764447f60c",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-card-2-1280.png",
+      "sourcePngSha256": "183109b164538d8814bfaff1ebd810c45f60fd3e6139e33c12e45f8b7ecde9f9",
+      "archiveFile": "alexmonhart-card-2-1280.webp",
+      "webpSha256": "6964ba45f33c06ce4b5970055b4c42bead1be738814efd777a4e31dbd23168f0",
+      "rgbaPixelsSha256": "b8881a35ad5529b3633e5c3c914edfc666af35e98c7dbb7d0ea823807cef88ee",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-card-2-320.png",
+      "sourcePngSha256": "3bafbeae31f51ed6a5ccd07b7fe0c3c177fdd2379edda53d988c17fa1ca6b163",
+      "archiveFile": "alexmonhart-card-2-320.webp",
+      "webpSha256": "6404bef55df7f3a0e3fa998a5d1fa114ab1a806d5be1baf15cf6bc66f68794c1",
+      "rgbaPixelsSha256": "63161c207d1997ea1480b707192630be10d6bdedcab83936cc9a2165ba65c84b",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-card-2-390.png",
+      "sourcePngSha256": "8451481bdfd8708c841ce4fb0e2b962177493f26f8ddcd6d04db08b04c151862",
+      "archiveFile": "alexmonhart-card-2-390.webp",
+      "webpSha256": "9e723da513e625a5fa687ad240354082137a162ee29f08dad47b693fbe4ba8ee",
+      "rgbaPixelsSha256": "94a84df3ad04ffd707d3154b5d3d6da54dad767fff41eabb569ed6eb95bd6f9d",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-compare-1280.png",
+      "sourcePngSha256": "564b8a0e83ada80c840bf41da23616f275ea7116d3772193ecfb9f43477ec821",
+      "archiveFile": "alexmonhart-compare-1280.webp",
+      "webpSha256": "894486e745f7ef509e6a23fdf0d3dc037189a3e67777ac2aa0fb340bd73bfffc",
+      "rgbaPixelsSha256": "5035ec5bb2f699c74a863250b20cc1bd79a9c33ba0cb95021ed13ac8d1667356",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-compare-320.png",
+      "sourcePngSha256": "5726aadab0315bb50538275e7b8f58eab68a336b93b9bd3b814a76cdb80838c6",
+      "archiveFile": "alexmonhart-compare-320.webp",
+      "webpSha256": "517cba781667813439d6fb957a72f535db84fbe3c53933bce84a7ac372b00469",
+      "rgbaPixelsSha256": "50382088750e44a5e774d5798767750bc852be7cd49f00b97e266ef97a7a6eb3",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-compare-390.png",
+      "sourcePngSha256": "8372b74b3b598018e0d4cb27188f15b334f07597a23ae5cb62a0bea725dda2a4",
+      "archiveFile": "alexmonhart-compare-390.webp",
+      "webpSha256": "52c5fe1267185d6c8848ab08a7013ee6cf1a0b4eb9876680b41ab7f392ba36f9",
+      "rgbaPixelsSha256": "4814bbbbdaf579ec6d16ccd5dc4f6b76b0ed352d5a974a68f73383eb8fae4caf",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-offer-1280.png",
+      "sourcePngSha256": "110235163447ec043a4ffc0c0733475245af75e8b33ce8a7440de58f2e5a1d88",
+      "archiveFile": "alexmonhart-offer-1280.webp",
+      "webpSha256": "4e8f47df7214331b6e88164831462874aee93b7c60b9dd026dd6135e5ba187c7",
+      "rgbaPixelsSha256": "d8905e8f672f414c3185ff7b47624590b48b99edc6709a84f3b8787040273593",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-offer-320.png",
+      "sourcePngSha256": "ed3f73af403932c55e1879a52b8c31d115835061df1ba029d4d53077aabd2343",
+      "archiveFile": "alexmonhart-offer-320.webp",
+      "webpSha256": "3ad897d54ef1b91eac16c60e7a364142e42f614dcd7d0a9894330c3b31452120",
+      "rgbaPixelsSha256": "88cc629ca8b587da929a1cce65dbfd20d81840b42e52a5d636d43fa45e23951c",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-offer-390.png",
+      "sourcePngSha256": "f74358066961d0a47c001a472a4957b9eef078bfc42c18d60aefa0e0d44daf36",
+      "archiveFile": "alexmonhart-offer-390.webp",
+      "webpSha256": "502d7be28412e5716a1cde484cca0c9316c182352d6459b3f666fd186b6fb540",
+      "rgbaPixelsSha256": "8f5e44baef0d7b0fd692fc9c76356d4acae67c7754bd79782bf14923254670af",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-question-1ebaf08b-1280.png",
+      "sourcePngSha256": "db6625317d86995a1e98d6b34699bb960d1d6c6f8325e29271d16edce736488b",
+      "archiveFile": "alexmonhart-question-1ebaf08b-1280.webp",
+      "webpSha256": "8ab2c0a5c41905644e68784424da242068fcc70ced3240ee65b13107ba36c483",
+      "rgbaPixelsSha256": "16c7aeacca5d0ab2cc99d0545ccaad274624e10f89f640bc689789ab8106705b",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-question-1ebaf08b-320.png",
+      "sourcePngSha256": "34c1d203363f2f95165a8c4ae7921fadb9183b95dcaeaf617d7b5be050233394",
+      "archiveFile": "alexmonhart-question-1ebaf08b-320.webp",
+      "webpSha256": "01953843c90138dbb1e734e80f6f2db9a928d20a826db5334d18321911a2f2e1",
+      "rgbaPixelsSha256": "79df53f66641fbdc08dc06757a578439a052096c4dd2853d8586ed4c84845127",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-question-1ebaf08b-390.png",
+      "sourcePngSha256": "18c45cda3748434cff768a4cae0abff7ca7af41388ae5a6267eb7e3bcf4a2caf",
+      "archiveFile": "alexmonhart-question-1ebaf08b-390.webp",
+      "webpSha256": "fa57a37448378cb3aff437b0a0c681e31568d2a4ca56638363fc9666f2d1e4df",
+      "rgbaPixelsSha256": "ba6ebeb3dee58aedb61baff17a93788203d65504703b4a697d592483f0ca1fcb",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-question-9888c446-1280.png",
+      "sourcePngSha256": "3c69b408867a89bcc66f3c20c042bde5587c06c9acc5e6ba8fa50acad809d2d4",
+      "archiveFile": "alexmonhart-question-9888c446-1280.webp",
+      "webpSha256": "bed86585fe727a22f9c807b9e48169421b88205dee620129815737ca7ade37ff",
+      "rgbaPixelsSha256": "c4097a2cbc795241aba827104dcbe57940c4d7ed07769a210117fdfc9b4361cf",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-question-9888c446-320.png",
+      "sourcePngSha256": "490a56ff471405f6362b84ff856b9f7bdf535de0f1165bb7dc7f64faf0b11987",
+      "archiveFile": "alexmonhart-question-9888c446-320.webp",
+      "webpSha256": "0442e29a57b3529a4257113b130d06442d5391b7c97f4dea670d6e744dfd0cdf",
+      "rgbaPixelsSha256": "e37fbd50f06e8e5ae8c05a4844e99fdd4c275746902945a31b5c10afeca5a7c3",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-question-9888c446-390.png",
+      "sourcePngSha256": "cbcf56755915fc3e1ec8a39d356050912c7d00a68b2e8d320e6f6172e6ca0f38",
+      "archiveFile": "alexmonhart-question-9888c446-390.webp",
+      "webpSha256": "fa1663f33879debb6dcbc3464d06c60c743e685c7a431b755015731c816186cd",
+      "rgbaPixelsSha256": "94766122f7e93521c704996da1717be1b766bac4ac33aa7910ddbb704da69a2a",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-question-9d52023b-1280.png",
+      "sourcePngSha256": "adb52623138b64c1157df9a6d07d29ed2c7a14cde2b20945119bbc9f1423c27b",
+      "archiveFile": "alexmonhart-question-9d52023b-1280.webp",
+      "webpSha256": "ee2308532e43b175bf9e545bf58379372048df4150f2e36e7e29ef357d5262af",
+      "rgbaPixelsSha256": "722b54624e8a704e4d034c3a18a5df304213a2aa9d9de252ce7fac6feaf1c6d3",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-question-9d52023b-320.png",
+      "sourcePngSha256": "5cf5acda7bdc8cc38d06be31a672a8b39e68995919c7b8b04c652e1eb1d5fb78",
+      "archiveFile": "alexmonhart-question-9d52023b-320.webp",
+      "webpSha256": "94ce75011a5405e27567c08a37d8a51a5373e1feca5f5154b406e277c7b2581b",
+      "rgbaPixelsSha256": "a8afaf8a19fd22eff2754ba3c2cb997d806ff3b5ce6c3cc978fa9b07f4ce1028",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-question-9d52023b-390.png",
+      "sourcePngSha256": "d0f4e6fb6f3d6ecda18a8e107a477caa0bcbaba878b2258087a71b70a5c78e9c",
+      "archiveFile": "alexmonhart-question-9d52023b-390.webp",
+      "webpSha256": "73e42ab234db6547d862916c8a968622d9e317e0500fa45dd2293b6cc306456c",
+      "rgbaPixelsSha256": "ae7684d732986aeb8a1e53d7c453969ca5c1277e6bf55b390f0c9efeb0cc1449",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-question-c3c3fba7-1280.png",
+      "sourcePngSha256": "3cdd63701a2edb00215744103efc5df0b32b5232bbb7b4f06c9b3558bfee2a16",
+      "archiveFile": "alexmonhart-question-c3c3fba7-1280.webp",
+      "webpSha256": "5d8d6a4509b5d811ea61515dd6a6d25afc9fc7cc52a56432f7cc15650df7c065",
+      "rgbaPixelsSha256": "bb3a72735171930ab177dfd7382ec3f85b72f762766f2e3c8488b87aba203fb0",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-question-c3c3fba7-320.png",
+      "sourcePngSha256": "76b006371ec27750e76c071c71f33eeea3d7602f46c2468cd73a4eaa15543342",
+      "archiveFile": "alexmonhart-question-c3c3fba7-320.webp",
+      "webpSha256": "b0a7364f6ae9749bfa2daaa656fa66d0a00a8b143c57f3be65b85a76e382f550",
+      "rgbaPixelsSha256": "9dbb0feffee76c0e2b1ea2cfed6a31f592a476af44cb2fed8786732d73e45adc",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-question-c3c3fba7-390.png",
+      "sourcePngSha256": "1a8a0b555c0253e1c9ca4daf9f2564be1faef60c3bbf831890c58975128eaea3",
+      "archiveFile": "alexmonhart-question-c3c3fba7-390.webp",
+      "webpSha256": "d7442cbe4580ff06f6c8135c5adbd04c972dbbd248f4a95df9ec1b8ab928fd43",
+      "rgbaPixelsSha256": "59c938a8888e71e18ff190b287f5e52d16ec0ccf4823c9c5812d29fba6d5cf66",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-avantgardist-1280.png",
+      "sourcePngSha256": "4bec642e22b0b4bf21721a81cea9488fcaf96c33cba273845bb5a214dbd076c0",
+      "archiveFile": "alexmonhart-result-the-avantgardist-1280.webp",
+      "webpSha256": "cd947a9c107ea0c52eb030c94297d98ae56d11346737a93ac3b5a5f64e69af15",
+      "rgbaPixelsSha256": "14c3a2a03a0fa78d2a5a3d5cf8a84d79d37227ad4c50c2408bd22cd17d71092d",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-avantgardist-320.png",
+      "sourcePngSha256": "7d19c83f40e019e232a3bcf764a3a1d857bc2176b654a5234d021ebf5ba02fb1",
+      "archiveFile": "alexmonhart-result-the-avantgardist-320.webp",
+      "webpSha256": "4038a3391a2343cbd1a90483ff8ae48b28f021267e7940e9d610fa9ce122087c",
+      "rgbaPixelsSha256": "4b8caec465035f63e1aa1ebe9ceef9832a0dc792545c79d74527a0c3e1f8c2a5",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-avantgardist-390.png",
+      "sourcePngSha256": "8e97c23c75cd35b38da4a0ce80ef311227894f7277d0b8da76ed103ef2ebbb4c",
+      "archiveFile": "alexmonhart-result-the-avantgardist-390.webp",
+      "webpSha256": "48f51c3d28d002991dd3216612198143b60edde0ba8d2dc988e718f29cc94e22",
+      "rgbaPixelsSha256": "9d9324bf08b399a1b96d60898e375fc5d2e36728120d4ed70ed15eff66071224",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-avantgardist-copy-1280.png",
+      "sourcePngSha256": "f8532d71c4e8d61e2911ae0354b2c7fc38ca4685216d7b553f4536f029191458",
+      "archiveFile": "alexmonhart-result-the-avantgardist-copy-1280.webp",
+      "webpSha256": "1d2826f611fa9a25b7faa4d9b64f1f2d253f84ffd94d7f1c98d376d3f9fd5b64",
+      "rgbaPixelsSha256": "889eaf8f591177cf824afd80f82002cbdd657f26a995b3f66b885e17d5ec8097",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-avantgardist-copy-320.png",
+      "sourcePngSha256": "26f34824e79ed90cc298a504029bf2857a48c074e3fe5a67ac63f94e999c6b95",
+      "archiveFile": "alexmonhart-result-the-avantgardist-copy-320.webp",
+      "webpSha256": "dd8f52aa1588cfb2a783304023b71e4584cafeb376f3610655a1eb7aed45e98b",
+      "rgbaPixelsSha256": "33ab5e7e600bc43da5406afcb030286e466b3afda35d83c08fdff316bac05d5a",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-avantgardist-copy-390.png",
+      "sourcePngSha256": "3630d4e5cf667a2844a569df0ebf99a1d73eb86c9d7d61842d5e55c21e55419f",
+      "archiveFile": "alexmonhart-result-the-avantgardist-copy-390.webp",
+      "webpSha256": "a663a98e99b98c1ec1782ea168a432996899af18a5b1b70dc2a371adf3be9194",
+      "rgbaPixelsSha256": "e3e6330bc7816ae1d71e0b73cbf45b9144129659b2d9ea04d70787c8191bf5e4",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-blasphemer-1280.png",
+      "sourcePngSha256": "c69ed78ba6f8c48d347bbed6fdc574d936ab59f4cc1ea210fdb6f25fa7441b4c",
+      "archiveFile": "alexmonhart-result-the-blasphemer-1280.webp",
+      "webpSha256": "1628085af221350c6ad36a08a601cd35f1962ae726123051f81026c2a884e50e",
+      "rgbaPixelsSha256": "e4d0ef46d6cbfe67135a57eb470d83aa60ef02c07a3e067ddc938949604cb144",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-blasphemer-320.png",
+      "sourcePngSha256": "22d9e637c62aa48036fbff01c894c437a6193b8c5e69cc02935c17219ccbf1de",
+      "archiveFile": "alexmonhart-result-the-blasphemer-320.webp",
+      "webpSha256": "1b009a6d29c978f5feda483e4a1f750e7ccfda326a5b5693ef20c319c48b5011",
+      "rgbaPixelsSha256": "81de1401fd379d05ca683b9cba1066eb42ce3539095dadf24eda5d6b9eb4741f",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-blasphemer-390.png",
+      "sourcePngSha256": "b7bccbfbdbb01c19e6e7928fcd14587a042c4978b36d46a3c4330088af087aa1",
+      "archiveFile": "alexmonhart-result-the-blasphemer-390.webp",
+      "webpSha256": "a1eecd9834d530f988fdb2736ae0cdfcc25cf4417d28f6c7d4791b5a1cbb96a4",
+      "rgbaPixelsSha256": "70dd206a26762a374261a16f983b441e0fd5efa37122fb6c7b1058bc988e9d64",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-minimalist-1280.png",
+      "sourcePngSha256": "d509694eff421ec60a8abf4da04a9594e9b07e99e15f64c7c276c1041a6a47ac",
+      "archiveFile": "alexmonhart-result-the-minimalist-1280.webp",
+      "webpSha256": "f9049148ea2084d7207c2145e83a01b4f46dec85d4f9e18e2908e3456ff3ecd1",
+      "rgbaPixelsSha256": "68ee2861424c7f029dca7f344c95f6628c5fb056ac2d44003805f4609a553d99",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-minimalist-320.png",
+      "sourcePngSha256": "837491f132849a3b245028fd27cd82edc973ba63f9b2fd1b5b16715408f92b8a",
+      "archiveFile": "alexmonhart-result-the-minimalist-320.webp",
+      "webpSha256": "69716c2243b86d247657c9f6f2a07dfba1f3ffa962670e26fce474e30e2e5976",
+      "rgbaPixelsSha256": "4207014f820c2454a38a8bd87d81c6c7779f6f329781b3920b4b67445c669389",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-minimalist-390.png",
+      "sourcePngSha256": "c940970ea9a0fd227c06810511e5452c0f864169835bef9c2f61b9ef6e2f6f3e",
+      "archiveFile": "alexmonhart-result-the-minimalist-390.webp",
+      "webpSha256": "20fb3cd931962f39cebb6c57308781dede5c026484d62ab58bf15bae45f0d823",
+      "rgbaPixelsSha256": "9ebb09cc785d28f2f0b69cd8090c00a569399cfde9ddb3342fd0e8c3f93bce75",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-raver-1280.png",
+      "sourcePngSha256": "8d2376e0062529a4b7b6e8d66b835b9dec3d67ab51af2ccfd007fc12a582ae4d",
+      "archiveFile": "alexmonhart-result-the-raver-1280.webp",
+      "webpSha256": "acebcc682e8f375c0f2356e11c1d9228374818ebf4d4e6b9d81ea3b5d01ddb8b",
+      "rgbaPixelsSha256": "b0d372a893b27d038e2fbc41453b2d85d58deaa87206d719e887b9aeb4ad9229",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-raver-320.png",
+      "sourcePngSha256": "e54aefb8309676df2fd1dcdfb5a64cfdd89754c596ddd8ee9310f4bc1fa5b48b",
+      "archiveFile": "alexmonhart-result-the-raver-320.webp",
+      "webpSha256": "1fab0d77b12371a5ff020f25cbb16831c5f01d454b4ced68462d89447f55ceab",
+      "rgbaPixelsSha256": "986af5d369199c02b526a0fc0896dc73d491c36e4d2b4ed4cca1f0132c2dedfc",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-raver-390.png",
+      "sourcePngSha256": "fc3925c7d67d2a2d48552c61757d1c1a017f8095f6fe6450667fbc30807450ef",
+      "archiveFile": "alexmonhart-result-the-raver-390.webp",
+      "webpSha256": "3f3f3ac6e0a52c98a08258d1ef64c798741166fdbe9be62319de7623c884c796",
+      "rgbaPixelsSha256": "63ced22c1376379bf41f1575ebd396d7238a1182eafbe93ff434e10997394b2c",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-ritualist-1280.png",
+      "sourcePngSha256": "cb8ea5cbc04de1db10c2face32bc0515acc92765c8b5db151dfff7ed486c4ba3",
+      "archiveFile": "alexmonhart-result-the-ritualist-1280.webp",
+      "webpSha256": "1f79804181e5e36b6c3e95f23719ef06d1fb1edd356c88185678069ca784c2ab",
+      "rgbaPixelsSha256": "7043b1a3f1cba97a9f8f08db82621a6bcbf35d25c21342d7b8d11c4c6239cf11",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-ritualist-320.png",
+      "sourcePngSha256": "5b252fd296059778355a42008ca67179b92b868e13892de189ce23a3c054c921",
+      "archiveFile": "alexmonhart-result-the-ritualist-320.webp",
+      "webpSha256": "f64135960ec75b047a6466aff185ac6c64f21f33faea2d8db1d8fed725f42645",
+      "rgbaPixelsSha256": "cf887002e2d44091c8d3b1035f89680c4736bb57aa2e139b23ff9e6adf6f43bf",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-ritualist-390.png",
+      "sourcePngSha256": "de8b070f9c189d0dd57816bd1517e1bf4b766755d761b5627ed081d6d2c52fb8",
+      "archiveFile": "alexmonhart-result-the-ritualist-390.webp",
+      "webpSha256": "75081cfda45c73e62102a9b956c3029e3162b506e328cf2bf705f824e2d92964",
+      "rgbaPixelsSha256": "7fe03a7f2ff7a53e718196af8df95a1602d5d4dae47b913603d7c764bb205bf9",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-thinker-1280.png",
+      "sourcePngSha256": "8c038d51cbd978ac03539a34cee60463d5123420e554850b79a46f13b9cdea5d",
+      "archiveFile": "alexmonhart-result-the-thinker-1280.webp",
+      "webpSha256": "c64d19eabb202586196b01d95e4996a7c6ac457dee531533b708e1de7ff4fa6d",
+      "rgbaPixelsSha256": "b523cba80b5d666d317c27eb5e523dd1a7f2ad649829ec66d5d3157d898b8f1b",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-thinker-320.png",
+      "sourcePngSha256": "df41802a23bd13ce48db28069c225bb6dda765ce51bca8c0acd33e514b988bdd",
+      "archiveFile": "alexmonhart-result-the-thinker-320.webp",
+      "webpSha256": "32975493221c9e392150a6282bf919a3179c5fae02f2f0fa2b12661ad63ace31",
+      "rgbaPixelsSha256": "8718f40ba54ebc052c9927a2685668fa770b8dae3965aea0eb864c55dc887e6c",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-result-the-thinker-390.png",
+      "sourcePngSha256": "94de6b9ce3f64455acfc56715855c10c352e782fc5aed9f6f98bc9647776a15b",
+      "archiveFile": "alexmonhart-result-the-thinker-390.webp",
+      "webpSha256": "f5189045109b41efafe52361fe72e4a3859d26a7a825d26bb713294a50fcc7d9",
+      "rgbaPixelsSha256": "d45622061b09e96d5854f06478b33fb5ee716fda96482db48d2cbd46b1e979e5",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-waiting-1280.png",
+      "sourcePngSha256": "2150a04c2a010f9648d495dd6f9e02dc99227d1f938396f73603ba42a004f885",
+      "archiveFile": "alexmonhart-waiting-1280.webp",
+      "webpSha256": "3c805e4c8733756c5bcc5978a98bebb342de635bffb5652a12b85c19a36ff170",
+      "rgbaPixelsSha256": "c0451bfd8438ddb9747df06daa513f826b1e6c56445c309fca75b20337fbf131",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-waiting-320.png",
+      "sourcePngSha256": "34b62539e7328dbf1e419239b9e68fc9abd580ce2eb7ec1c4e3a0acc4c492c7b",
+      "archiveFile": "alexmonhart-waiting-320.webp",
+      "webpSha256": "b81777fafd61e7ae8a2aef29964a62c9ae8f528cbc5109ffd52d72fa56d1e9ea",
+      "rgbaPixelsSha256": "50cafb7347942bd4b143d990d5c31644c310738b0026902c83308b432065a04b",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/alexmonhart-waiting-390.png",
+      "sourcePngSha256": "d53d6679b4d746726a530235bfa6dff9d86be208354bfa7bcc1a907333eecfff",
+      "archiveFile": "alexmonhart-waiting-390.webp",
+      "webpSha256": "7769e96b47becc3b38f6e86a852140b18c1983dd2f37c6706adbe39bae4665d9",
+      "rgbaPixelsSha256": "ca4bfd9c03a5ba525490a9a62081a1ee4129295e0249f335a55d340064e75ba1",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-card-0-1280.png",
+      "sourcePngSha256": "a09a01fba03f8a7d094ee4d60450834e5fbd1b7a30e8e2be2aeeb3230c94a3bd",
+      "archiveFile": "flakon-card-0-1280.webp",
+      "webpSha256": "5a872e9b592b23dfc12340f1e7309b67dff8a577b8974f710de25eb77b8f0a14",
+      "rgbaPixelsSha256": "938231c483e23337e6659aa087fe73d537862d83d098ed37c00d2afb95774a4b",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-card-0-320.png",
+      "sourcePngSha256": "61b09a7e1e25e609e67a39045bead4122714a88cd6f381c87b1fd973f4914ca9",
+      "archiveFile": "flakon-card-0-320.webp",
+      "webpSha256": "c4f39e5bee81eacac7eb89cc59b19a300e2f84843e8e58030ead27f392dbc07d",
+      "rgbaPixelsSha256": "2adf830428bb5675c921b1384db39844e59d763da85659dc6625f2fa825c57ea",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-card-0-390.png",
+      "sourcePngSha256": "1bd2b5e11d1cf5500bdd51c2e9fc37a0e035f22fee788759f3776ca7b07cecaa",
+      "archiveFile": "flakon-card-0-390.webp",
+      "webpSha256": "ecabe58695a2ad0336725cf8261b1f45b1210f238fdf1558463b0d782b6154c7",
+      "rgbaPixelsSha256": "aa0d1a51699a2527097da1fa51b51eaebe6f624312a29d705f1a3695950ca534",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-card-1-1280.png",
+      "sourcePngSha256": "3e3893028dc434be179242e5d3487fa47f242b225c0c056affa6f5d277d21802",
+      "archiveFile": "flakon-card-1-1280.webp",
+      "webpSha256": "c6e41f86f0c7b8b43977dd5dcc3cb3ceee78f4830544749ea5b46d628bb2d540",
+      "rgbaPixelsSha256": "5556e0ec97c96981b6765bff938f9ed57ecb537805dd8ab415a88285ce007b22",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-card-1-320.png",
+      "sourcePngSha256": "7c7ae1f979b2cff4de74edbc13ee20a94c0e6dde1fbfe8da48b35a3bad088250",
+      "archiveFile": "flakon-card-1-320.webp",
+      "webpSha256": "95ccce970373b90a47df81895e3041fcb0830475603db49f769fc382cb483a67",
+      "rgbaPixelsSha256": "e178ba74a3abc4e1d7da3749ae1f00debbda7a6850b288970a2a6ec1caa3056e",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-card-1-390.png",
+      "sourcePngSha256": "35a70be9b2f9324f2da672f9267590d37d4b33323d9bfae0fea854a34ce82cc3",
+      "archiveFile": "flakon-card-1-390.webp",
+      "webpSha256": "0db4b8e54bff96a85cdb583f5fff84cdda39ba7d0d17842848c57f514b77387e",
+      "rgbaPixelsSha256": "82496d9d1aa442e354dc006a3754271771678ca778e663603a2d278278f79305",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-card-2-1280.png",
+      "sourcePngSha256": "33582a6fb8b98f917cf583d303deabbd811e02172d7f15950171f1c64b3bfeb5",
+      "archiveFile": "flakon-card-2-1280.webp",
+      "webpSha256": "f39649fa5b03c1471960321959082fb2c51e5f2b371c5651c36242067467f631",
+      "rgbaPixelsSha256": "168331c71e4b330df76124443533b7a526b34b3135ac625da720236bcd8ef750",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-card-2-320.png",
+      "sourcePngSha256": "7775b78c62f3c49438590b343f8e49901f477971496843b6c54fe124e35c434b",
+      "archiveFile": "flakon-card-2-320.webp",
+      "webpSha256": "087b1c417071c3ae9df0a642d80e9cee6989e729da1e973b7056ce849a70a10e",
+      "rgbaPixelsSha256": "cdc5f90247133a3d289054b713d5fbd94f50324209030043f7f2401a3ce339e6",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-card-2-390.png",
+      "sourcePngSha256": "6a111772c4771e30631211e332f42e6e6382a0a5bbf83906037f1261968f6990",
+      "archiveFile": "flakon-card-2-390.webp",
+      "webpSha256": "3c4bb565a3f69b3c5ec70cd7e5d84188556ceb964d50639b2b4466a1ce3e32e5",
+      "rgbaPixelsSha256": "3fcbd8574c1069b54ac2b8780c7416f985eb72d628d448c723fe77044cc596fe",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-offer-1280.png",
+      "sourcePngSha256": "a49df82ce7a6abdf659929c31ff975b527bb138d24ce0a08011396522ca642f2",
+      "archiveFile": "flakon-offer-1280.webp",
+      "webpSha256": "6b31984fbd53c8f20896c013dfbc2365d3984c421ee50cec95e6fa0fed87c21f",
+      "rgbaPixelsSha256": "2e603a439070edf4638464b8c0c660a72043c7c5617ca55b5f15c3ee1bea3184",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-offer-320.png",
+      "sourcePngSha256": "9ba04c034697c7edd0d094da3c557bb5d7fe1e10ebff946993c7014db72757bc",
+      "archiveFile": "flakon-offer-320.webp",
+      "webpSha256": "7e666c4ec87e98d4a738e32cda648f04f7a5161b0c13605eafbfb01cb73074e1",
+      "rgbaPixelsSha256": "e54a35ddf86fe89c15bfde74594070741b1f6778ad199195754cc0d64eb23ae6",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-offer-390.png",
+      "sourcePngSha256": "745d4afde7d9b139dd7d5fed7b48860ec99894b1363817de7c8c96000107c8de",
+      "archiveFile": "flakon-offer-390.webp",
+      "webpSha256": "2773618e245f053bda0758e8162d450be382c07af8017acbe4b9c1a1669f6b06",
+      "rgbaPixelsSha256": "041f5c478043f81ef216c5e378fdaf4c60d2470d7f077c53a04a4cd320885e43",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-0f41f34f-1280.png",
+      "sourcePngSha256": "5fa8e7b007f2e135f997e448c1d626d0eec43592b759ac3968200bd085aa2cf9",
+      "archiveFile": "flakon-question-0f41f34f-1280.webp",
+      "webpSha256": "c6c07cef716354e284bb28302d9d4b8b85c19df1d29c7489090943dceb1cb410",
+      "rgbaPixelsSha256": "2e7b494054034802f3813cb02e2deaa69d57644e84eeb37e5928c207a06eaa01",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-0f41f34f-320.png",
+      "sourcePngSha256": "b5079670f3dff04f53869cc34c85e3c4732218f63a633f6281c710f1929da789",
+      "archiveFile": "flakon-question-0f41f34f-320.webp",
+      "webpSha256": "b00532266cc8ba328ae60dd807305c48b2a13315a5615aebb8b38b4343b1555f",
+      "rgbaPixelsSha256": "fdc64880dc6bfa458192e47531cde855a0c50830c3aebe26eafc6fce91c9d0f7",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-0f41f34f-390.png",
+      "sourcePngSha256": "e5cb5e74caefe9d5dd3eefc11d7fab7865a3ee7de2cb3699fd1f11af761e6044",
+      "archiveFile": "flakon-question-0f41f34f-390.webp",
+      "webpSha256": "4a8013e480151fb1726eed80ba53581b57658d1e5845d6e95c9f3f6b87a0257b",
+      "rgbaPixelsSha256": "a1e4c90b6bdc2779f1d8646c4b28ded61bc23dbaef8077da1f854705864b4e86",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-27a44584-1280.png",
+      "sourcePngSha256": "b7209015bd040c67e743dce17be1cb1e6024ccb3ac077621bec5a103d2f50c08",
+      "archiveFile": "flakon-question-27a44584-1280.webp",
+      "webpSha256": "d4c2821c07507680ec74437a5d276b66f389827ba5021f38e51fd74a935f2682",
+      "rgbaPixelsSha256": "f1fe04ed3b66366ef0160cfd55f6096c3050cb81a6e0bf25f69701cfdb52bd8e",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-27a44584-320.png",
+      "sourcePngSha256": "4e6138e1171286389ba67e47531252c686b4e62e95f251b53f2cbd65b31283ab",
+      "archiveFile": "flakon-question-27a44584-320.webp",
+      "webpSha256": "31182854156d932b0ddf6e20c5d31e48da17a162eb502c53cd6cf11dcc1b0e56",
+      "rgbaPixelsSha256": "52d991c0f0c3dc5ae8ace2679092140c0205f0feb44c30fd78ea0bfdfa54f37f",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-27a44584-390.png",
+      "sourcePngSha256": "f2f96c9dde6308dda523a0cbb2f2fb1e84f3a1aaed2c1f266b8705181c8ec58b",
+      "archiveFile": "flakon-question-27a44584-390.webp",
+      "webpSha256": "faf904f7f173e3d6c88344b591415d5ab06850936a300b17430ef8c0acd79205",
+      "rgbaPixelsSha256": "57da73650598f9e35fab5f279b5c7730442355f4756da0454ce2d1d48a235519",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-5833791e-1280.png",
+      "sourcePngSha256": "ba536e17dbebb8d3396bacca12576e47059b8aad00427f8df36d98911723aba0",
+      "archiveFile": "flakon-question-5833791e-1280.webp",
+      "webpSha256": "c09e33720ee71735409bfede10947f30cd42fbc577c3f7c66f5e7813cc90d416",
+      "rgbaPixelsSha256": "02eb5288f2fa49806910cb5635008e32b20cd7c6cbea36ffaa83a06aa5a3a959",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-5833791e-320.png",
+      "sourcePngSha256": "586ed9e2c061ec83779ff7519cd4b52b37975208dc18d268b0b82a664860849d",
+      "archiveFile": "flakon-question-5833791e-320.webp",
+      "webpSha256": "24e872222bf8e90c14be83816574efa3352b24081ab2b6af4f4db6bfad8dd162",
+      "rgbaPixelsSha256": "61266262826e135a2f5f3e3fcd44cc476eb5cd9c854b05f1a15661ae405a2c57",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-5833791e-390.png",
+      "sourcePngSha256": "d194f931a28ae2b7ae96785b3beeb9c37cec3434aaacd1dbc394b8a7288d2ab9",
+      "archiveFile": "flakon-question-5833791e-390.webp",
+      "webpSha256": "fe9d97e2f576fd15f4e733d2f6b70eafd1357207a2aa657a3adf86b19f174be8",
+      "rgbaPixelsSha256": "fbb1f2256b75dae11caf2cf3297fc3a224d85d455692a895194a8165719fa91d",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-5a2051c3-1280.png",
+      "sourcePngSha256": "83f6dd7dbad7d04e7e55c95ff3b48f36ececc3a30a9f9704d2ce7d9fd635e2ac",
+      "archiveFile": "flakon-question-5a2051c3-1280.webp",
+      "webpSha256": "ffd9cffe8846a4e5bfc3d5942568232274ec6fb53908d8fffc55f05ab662f6af",
+      "rgbaPixelsSha256": "6cf74493158b1555c95693581af6010cf8b22fbb37c3f0cd7aea069ceac81f88",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-5a2051c3-320.png",
+      "sourcePngSha256": "b1202c7957f092b8c86b0a0a1b6945ee3bfe42b78ddfd2fd14147b51c0ad9b22",
+      "archiveFile": "flakon-question-5a2051c3-320.webp",
+      "webpSha256": "9e6e966330109c3155eb53abb7ad935688bf0a7f20df2f223754397dcc83fbf6",
+      "rgbaPixelsSha256": "484669a796b46fa8187db569d0b2ea3fa6fbb06f8264579561552a5173ef64ac",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-5a2051c3-390.png",
+      "sourcePngSha256": "5fed88d321ae351c6aeb1ba67110828e68e76da2445e8aca27385bba2afd666e",
+      "archiveFile": "flakon-question-5a2051c3-390.webp",
+      "webpSha256": "fe39589b4554bb85ab499cd13e29d81ca7f42e6473ca681ad07408161b38cca6",
+      "rgbaPixelsSha256": "0d4938c7f4461b4ca301bd9f8d58ea736c34bc9a0456188e6778eb1cf72d001c",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-8273cc52-1280.png",
+      "sourcePngSha256": "52e1af270450f25497311dbe3fe66178089a147ddf6c5ce8a5edb45397a60fef",
+      "archiveFile": "flakon-question-8273cc52-1280.webp",
+      "webpSha256": "b20db133756bec24620ebbb1e940e42cb4d270ba7a2ad8ed80e54cfe7168975e",
+      "rgbaPixelsSha256": "7e9f79d022a142db7c4b6ff9dfba58f1506743a5928f0ef345d741c887c67947",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-8273cc52-320.png",
+      "sourcePngSha256": "ae1623e98de54201c31d73f1a9de7250bd7e26861ade3026afa0968d61ff7d16",
+      "archiveFile": "flakon-question-8273cc52-320.webp",
+      "webpSha256": "059bd7329467bf4be6707a7a96a00127d9d2aea2d396479b115fea4aa8fc012a",
+      "rgbaPixelsSha256": "e015d4e73c1ef45c1d5873fbf1572033517c4f5a2416c2a723255e0f2a09de52",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-question-8273cc52-390.png",
+      "sourcePngSha256": "30ae4d5eb6f6a8a5a6379a15d6463485e9d493931de037d8d7c7d9fd5de0917c",
+      "archiveFile": "flakon-question-8273cc52-390.webp",
+      "webpSha256": "2293bb45f5448015bbdf96304e2f5f395dd7ded0837391951a42ba2c6b10fd13",
+      "rgbaPixelsSha256": "9fc826f89db8f9cbb929fc7373c0fc0644c98789c2207d2774b5b53b61f6dc92",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-bdk-parfums-velvet-tonka-1280.png",
+      "sourcePngSha256": "da6198af8f2df8b1374365bb803e6807f6db3405d91c5921f68354fc1e44c64a",
+      "archiveFile": "flakon-result-bdk-parfums-velvet-tonka-1280.webp",
+      "webpSha256": "67db350549d72922e0d0a137a8e67e41ffe9b719eecc801ae7141162d8c58542",
+      "rgbaPixelsSha256": "b2dcf01c6fed91a68a733728a55f6a71a581e1a0a34625d6600d1aa0cba51d4c",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-bdk-parfums-velvet-tonka-320.png",
+      "sourcePngSha256": "470b9d0652d584cc590bc05a2ddcb16def936f9f76cf3b429bb202a3496f029c",
+      "archiveFile": "flakon-result-bdk-parfums-velvet-tonka-320.webp",
+      "webpSha256": "e17d8f174a04cc12deb285f70f8bc8010bd2993e419eaff634c903142714c9c8",
+      "rgbaPixelsSha256": "0bedc70b18fa14333a05fad36ec741f2fcb65ae90474b909132eb35d613356b1",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-bdk-parfums-velvet-tonka-390.png",
+      "sourcePngSha256": "e998a1928d5cd72a93cb119704d1659f06a3eb6e1f553e772768b56417ed77a1",
+      "archiveFile": "flakon-result-bdk-parfums-velvet-tonka-390.webp",
+      "webpSha256": "cddcb36f46b4966bd977901ac5c5c61c787e58e05f77948ca184d3c500e313b2",
+      "rgbaPixelsSha256": "0e8cb00c67db2a1bd3f9a824db3e02620524dc0d1a8eb89c803d9068e59a37a1",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-byredo-vanille-antique-1280.png",
+      "sourcePngSha256": "db96527127011d5d2e66f31016fea75eb14e808e6a7f563f20b3dda50c290752",
+      "archiveFile": "flakon-result-byredo-vanille-antique-1280.webp",
+      "webpSha256": "a6d8734cae695bae080a832b37ec5e81c9ccc1e58a26bfed7d7c9304fd4dcee0",
+      "rgbaPixelsSha256": "fce6a945a9435f4f750f91fb644038ea41f678dba2986aa4ea2cc02d30a11923",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-byredo-vanille-antique-320.png",
+      "sourcePngSha256": "27f7867580f9d3b48556f275c7405e94861527b84e77eba08270886703423f80",
+      "archiveFile": "flakon-result-byredo-vanille-antique-320.webp",
+      "webpSha256": "6f47b10260571573c57e3ce6acbd6eb5722ee9c3ddea3c9ebf4ecc328671dad5",
+      "rgbaPixelsSha256": "75dcadf65600246bfeb3086bf5d5fed50ba802a07d247fab0a8fc57531d55815",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-byredo-vanille-antique-390.png",
+      "sourcePngSha256": "65d90a072fdbb5ed902c9348ebea34f60017c2502f2f2e933ef29756e28d474f",
+      "archiveFile": "flakon-result-byredo-vanille-antique-390.webp",
+      "webpSha256": "d0ba6996e6fedac59cc9387b4d33be5416f91e84df991dad8709550fdedc5606",
+      "rgbaPixelsSha256": "c0ba4d3a16d7e43d2334ba8d07acaa7ca07a4d75fe91f13195313aa1d16f4d7c",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-ex-nihilo---blue-talisman-1280.png",
+      "sourcePngSha256": "8098b1d28229a115aaa18170bf69b46fe2849dc613c53fa2150d332f9153d6f5",
+      "archiveFile": "flakon-result-ex-nihilo---blue-talisman-1280.webp",
+      "webpSha256": "5b9987e8a144b537651556f71661a2507831125705379505f679e17044b5c85a",
+      "rgbaPixelsSha256": "adab544c923ef48644b2c9eb1fde7875e59f6585ed5339c7e5f5263ddfe1077f",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-ex-nihilo---blue-talisman-320.png",
+      "sourcePngSha256": "6e2cc552efaff903552c1e45aeaa8d92f6c0f72b6933f7bdecd85409d83f49f5",
+      "archiveFile": "flakon-result-ex-nihilo---blue-talisman-320.webp",
+      "webpSha256": "da0cb148b163b622121f199431196bfdb7be142738abe8616c3fbb00b66c587f",
+      "rgbaPixelsSha256": "1553d252d44cb2ca940704033b7cba63edb34e5505df2cc40652af72b89f8bf9",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-ex-nihilo---blue-talisman-390.png",
+      "sourcePngSha256": "71fe73c3cc6c07bdc5d3b0579e598246129595dd2350c4f80b01dadeb9c344ab",
+      "archiveFile": "flakon-result-ex-nihilo---blue-talisman-390.webp",
+      "webpSha256": "da33128763e563f435c29085fed6f465be9cc314bb1f4a88ece213ee52253747",
+      "rgbaPixelsSha256": "3a1e75b39aad9bc431b3d4d8e1f27f3c9d7102f87b63184dcd156de81c122451",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-lush-vanillary-rose-oudh-1280.png",
+      "sourcePngSha256": "52c96da901532a0d206d24fe1ac8e2f2264c9d796e1fb1f0f4239eca1e02d2a4",
+      "archiveFile": "flakon-result-lush-vanillary-rose-oudh-1280.webp",
+      "webpSha256": "4ba7a9e4575fcba281fdf1820dc9f638ad44750929d35414b52551241b091adc",
+      "rgbaPixelsSha256": "9f0aba4017be7aed6daf0694644d5c6c1a9730abcbdc2d736ddb12afa187cba1",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-lush-vanillary-rose-oudh-320.png",
+      "sourcePngSha256": "ac0600864b6b19a15e837c3120f81b3ed2fbbf6960fa5a3eab0b317a1dedbea5",
+      "archiveFile": "flakon-result-lush-vanillary-rose-oudh-320.webp",
+      "webpSha256": "7487c31cec11a762a97afdfdc83465e0807562a65e8dd2f081f3cf74fbe95671",
+      "rgbaPixelsSha256": "ba32d380f588aec81c07772e4ee5c64a7e5bac6d12f5ff2769b07973e38ad757",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-lush-vanillary-rose-oudh-390.png",
+      "sourcePngSha256": "cbc0e7ff14239bf72a7611df8426ab580f70d08d899deb3ac39ce61869051a5b",
+      "archiveFile": "flakon-result-lush-vanillary-rose-oudh-390.webp",
+      "webpSha256": "c2e60a400e18f9fa6a3bb8b28a9df4f60b380c3c2fea5162eb8042d7f6bce794",
+      "rgbaPixelsSha256": "12a77e38c390f9cb4f2954e93a55280ff579858f6f28c668aa9d557f2550a963",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-matiere-premiere---encens-suave-1280.png",
+      "sourcePngSha256": "5a23da71bd37f2005d46b4a13b97d90fe8e565e8f6c4e126365f2bc275d8e6b9",
+      "archiveFile": "flakon-result-matiere-premiere---encens-suave-1280.webp",
+      "webpSha256": "e992e3ca1d3c0a3ed98e1c86593b67d7bcf74b3f307057d280d0910ddde42466",
+      "rgbaPixelsSha256": "dac8d12159133bd098475c188073e14b5f98441524185d105a001c7c511464ae",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-matiere-premiere---encens-suave-320.png",
+      "sourcePngSha256": "4be037cf9e1dcac8ead744a34afeb1b714fe7d6169ce35012db9a0101a249068",
+      "archiveFile": "flakon-result-matiere-premiere---encens-suave-320.webp",
+      "webpSha256": "3304db1624af2ec4499856c2b0163059afc1507c9e85235f26d8c7fbc53210be",
+      "rgbaPixelsSha256": "74c17c3c8140b8e6d7d1ea604c47e66326e453c4d3fda02294c6a1535cc086b8",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-matiere-premiere---encens-suave-390.png",
+      "sourcePngSha256": "4cded5100a965b8d64333173095f423b5046c59b833681b36e461f9734d05f0c",
+      "archiveFile": "flakon-result-matiere-premiere---encens-suave-390.webp",
+      "webpSha256": "22c73229670a0a8c1416958dc5f9edbaa51e3d2e09abf78a3a8d162486e18ff5",
+      "rgbaPixelsSha256": "b82d7140f93bbbc0bc613b2c7368f81bbeca96ad2116dced0a84968b7018e11a",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-parfums-dusita---mocha-absolu-1280.png",
+      "sourcePngSha256": "bb6c89c3eb7f12d9b26fe36fb8393bd96e582ff3fd90095870d57967d9bea42a",
+      "archiveFile": "flakon-result-parfums-dusita---mocha-absolu-1280.webp",
+      "webpSha256": "e91cd5171202f9462789f291e1cf4a08617d805c8204ba7e4c4c5353e19914e8",
+      "rgbaPixelsSha256": "54ffdb6a40f60cfe8c22662a94f93e28f0d4684169ec9f6b879a91ef9a082899",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-parfums-dusita---mocha-absolu-320.png",
+      "sourcePngSha256": "d760346d7fc9b112f1784bf5cfac780d7d4ec871bd25494486bcc5f3240545d2",
+      "archiveFile": "flakon-result-parfums-dusita---mocha-absolu-320.webp",
+      "webpSha256": "570a7b6fd4f6303ee21b5b4241328fbef983b476373d65254693c3844060e8bb",
+      "rgbaPixelsSha256": "fd7aaf3e2ddc902b902f764da736cd94f6996bcd12650c354179d1dbfb9cd5f6",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-parfums-dusita---mocha-absolu-390.png",
+      "sourcePngSha256": "b1d6304b637d0531b34be6b490ede36dd568b2607e05fd3f9feb33c9c5d965ad",
+      "archiveFile": "flakon-result-parfums-dusita---mocha-absolu-390.webp",
+      "webpSha256": "2d1d5a99976b9f409f7710e901f909192fbaf3bfbb90ff7172a669aab90122f4",
+      "rgbaPixelsSha256": "78aaf197753f529cbac594b8058389b107cdaf8b5c11c2d11761a5bbeb31c253",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-penhaligon-s-halfeti-amber-1280.png",
+      "sourcePngSha256": "0d2f513f8d36c43b274c89e407264202d00b92305c03ab685da293e904903f46",
+      "archiveFile": "flakon-result-penhaligon-s-halfeti-amber-1280.webp",
+      "webpSha256": "be60adc3d38678eaba25fc630f678062a20135e4b3ee44ff512e2b34d2e1a7d0",
+      "rgbaPixelsSha256": "c69406523b31a3f1f49567d7dfca1bee598ea8742fba8292c939c7c5e6a2e0a9",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-penhaligon-s-halfeti-amber-320.png",
+      "sourcePngSha256": "17713f96891a5b6533dce63cf7578b36c7edfa2cafc80e4c5506dbdd000308a0",
+      "archiveFile": "flakon-result-penhaligon-s-halfeti-amber-320.webp",
+      "webpSha256": "a6c06c2280e71dd30b550b7f39133c27b166c03cf376e8542a576debe69f1193",
+      "rgbaPixelsSha256": "098e8e3570d331e44c5c5cc8491f845a1aae83ed217acb4f95b49de0c321e874",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-penhaligon-s-halfeti-amber-390.png",
+      "sourcePngSha256": "c7f8b6aef188b75d874c61c976631b79f2cd14fd4d8357cf08826baefc27cbab",
+      "archiveFile": "flakon-result-penhaligon-s-halfeti-amber-390.webp",
+      "webpSha256": "c08dca233bc468f8584f530e245089b03737fc4e5deaead2135cde576148fccf",
+      "rgbaPixelsSha256": "63d2d826e197d380848c0b881a8355db4bc9df976607a41ae83845143f0ec470",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-scentologia-lacton-ic--1280.png",
+      "sourcePngSha256": "d722d4b72497c01a07fdd697aed1bd138be6f4a2f825c1e52d8d4364257b62e5",
+      "archiveFile": "flakon-result-scentologia-lacton-ic--1280.webp",
+      "webpSha256": "b0c5289fe73bdb59682cd92ddad26652965aa8f9c0b3970eeabad394a571c39b",
+      "rgbaPixelsSha256": "7fc73b333d4dbeeb75571a6f32e0f114c5fa17c5d0de2c95508caf5cb35e3e68",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-scentologia-lacton-ic--320.png",
+      "sourcePngSha256": "778f13ec3f4314a61d08abb3c982a11e987233e6ce4f4820097a2576b71ab3af",
+      "archiveFile": "flakon-result-scentologia-lacton-ic--320.webp",
+      "webpSha256": "2531a60e9b57ea55aa084864786be1779e6787b3c80ccefcb904634cbe9ade95",
+      "rgbaPixelsSha256": "69abfd3b648c8cb89721b6dbdb103cd3717ffd0bc70f0204771835540b57aa7e",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-scentologia-lacton-ic--390.png",
+      "sourcePngSha256": "69cc11bd1ab2f288b45c899fdc03bd5671606def3f48101c5280a4f1780eedad",
+      "archiveFile": "flakon-result-scentologia-lacton-ic--390.webp",
+      "webpSha256": "c51d9dac7b6860c63d7b09de03adf269900f033bf94fdfde0ddda6ba5cb3f422",
+      "rgbaPixelsSha256": "63812e789f5aa9313f768e84c0284a92da734ba92c464b1da040421bd51181a3",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-toskovat-amaretto-in-the-melting-room-1280.png",
+      "sourcePngSha256": "2231be7bbfb9e7d9d31e4c26e3d7f043f0363100d1da1359b5c32b3cb524273c",
+      "archiveFile": "flakon-result-toskovat-amaretto-in-the-melting-room-1280.webp",
+      "webpSha256": "06d249a0cd244f684d3c107081750eb4d6ba7fda3fb79ecf2a0f5e772bf35991",
+      "rgbaPixelsSha256": "421b3af425c98e55f11292ad3c68c1acff8d2870d2ee19367f8593caffed568c",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-toskovat-amaretto-in-the-melting-room-320.png",
+      "sourcePngSha256": "d0f2016df170ed4ef87c7799c8c616fca0ab43ba341b016812dbde29288f825f",
+      "archiveFile": "flakon-result-toskovat-amaretto-in-the-melting-room-320.webp",
+      "webpSha256": "9f14c6bb745ffff919da1ccc57139828f6bee3bde6593148cc447eb451f1cd39",
+      "rgbaPixelsSha256": "03ea508c7820f6f38d117f7bab4de515499fd3661790c2c6623f849d3a0e4cc8",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-toskovat-amaretto-in-the-melting-room-390.png",
+      "sourcePngSha256": "6d034f58b66b67050b768e48997cef33602c9c13a2fc8a3e1e2f7299c0d706f1",
+      "archiveFile": "flakon-result-toskovat-amaretto-in-the-melting-room-390.webp",
+      "webpSha256": "dce1f31cca46f4aea973e8afcf6af523e204be4a387e4cad986683c0990e53a4",
+      "rgbaPixelsSha256": "653f42cb0ac7d0bb345976a5b188dfd36a0aea6ef012f3e2e5fd06c76dd40028",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-vilhelm-parfumerie-mango-skin-1280.png",
+      "sourcePngSha256": "f81de885c7660ff818b4a43d76088b2ab73e45d597e6d589521e1b14d4749d05",
+      "archiveFile": "flakon-result-vilhelm-parfumerie-mango-skin-1280.webp",
+      "webpSha256": "ef5d15cff6d5cfa8840b5b94d144921035095f900823f1236140d0b3af98169e",
+      "rgbaPixelsSha256": "9941b5c62088321fdbd954b17b1fd2c8ec6e1f86c1e5c6c8be9976d0a24861c8",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-vilhelm-parfumerie-mango-skin-320.png",
+      "sourcePngSha256": "795414becea47889fe7e75cdaac77c48e29c4281240ff2d61ed0bf4b831086df",
+      "archiveFile": "flakon-result-vilhelm-parfumerie-mango-skin-320.webp",
+      "webpSha256": "5ac700366c6c05451ded94ee67967a36c79be41803df3df45d4d1c23b1094acc",
+      "rgbaPixelsSha256": "f35ed743660ed45b1a87ad8e333d5c6a604ebcb32c8a0fe09e766a54ce494f97",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-vilhelm-parfumerie-mango-skin-390.png",
+      "sourcePngSha256": "29971a323151c578592c7849794a7cca62f5ece2c1eaf01a833ad08e393db9b1",
+      "archiveFile": "flakon-result-vilhelm-parfumerie-mango-skin-390.webp",
+      "webpSha256": "177231603d388f0008ae9b2a9188bb5f3040dcf68007577aa387baf3a5fa8b21",
+      "rgbaPixelsSha256": "27362d1626f72a7b97af390be0ec289ba8d723da8c128102c3a3365155d6591a",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-xerjoff-casamorati---gran-ballo-1280.png",
+      "sourcePngSha256": "818b998e96d1ef3685a07f82dc7b5ab41fb9cb039d10e6f6f6bfc847682ea3ca",
+      "archiveFile": "flakon-result-xerjoff-casamorati---gran-ballo-1280.webp",
+      "webpSha256": "4320c9c54411fc2bdd7a2de078e54de187f55ffc9ac1859c40c5158daa20a4d0",
+      "rgbaPixelsSha256": "074d1dcdfd792855c92b81bd1ed8d5dc805a7385a57e460f5c7a365c740f0d29",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-xerjoff-casamorati---gran-ballo-320.png",
+      "sourcePngSha256": "63491de93324bf6d94da21bd6fb75a40acb74b74d3851138e0f0e4a731fad4b2",
+      "archiveFile": "flakon-result-xerjoff-casamorati---gran-ballo-320.webp",
+      "webpSha256": "2fad301037e80858e2a794b56a6cf30a2bffc4ef486b39bfdfce53c5d57f9447",
+      "rgbaPixelsSha256": "40510ae14e4af431afa9146b6036a5c53368a0f700c2a0103bc871d49420cc46",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-xerjoff-casamorati---gran-ballo-390.png",
+      "sourcePngSha256": "3b621670fc8afda5d4008dd2391036f09b27d653d9e0db6e32861f34e50d5a48",
+      "archiveFile": "flakon-result-xerjoff-casamorati---gran-ballo-390.webp",
+      "webpSha256": "896fb62d33ae65e1af8c0364704a940e980a0de8fe806e86e47fbfa258bc5f58",
+      "rgbaPixelsSha256": "c01fb1b8906270cfafbff436abe4bd675e84241ab01a2e522b0ced248a683e7b",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-xerjoff-torino21-1280.png",
+      "sourcePngSha256": "75f9e7f96dc4c96da6ddefbf5969fedbbcf75de26fed0b19e09c86e830dce71e",
+      "archiveFile": "flakon-result-xerjoff-torino21-1280.webp",
+      "webpSha256": "55b73af504154e2383477d2ff3059433abddff470d4239de21ce29b1d1512a9a",
+      "rgbaPixelsSha256": "1ca4ebf465e31f77d82c6c981a8a74e4372e71a54129c96c58dc0e1c4bec1ae2",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-xerjoff-torino21-320.png",
+      "sourcePngSha256": "33ceeaaf0e3bcbfae3da1c77f580039351bce97d68a01c0d2a84bad865182d3b",
+      "archiveFile": "flakon-result-xerjoff-torino21-320.webp",
+      "webpSha256": "65c43ae0e68dcc38b78c1ba8517b816337c2f7f4a6de507d2c76b227e4980a71",
+      "rgbaPixelsSha256": "4220788de925a28e0299467919add66d56268af75d34e35c248a7aef17814f8d",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-result-xerjoff-torino21-390.png",
+      "sourcePngSha256": "43934123bfb80a8d13d82fda7dd8c84687279f8a4465f64ae2ae650b1816d14c",
+      "archiveFile": "flakon-result-xerjoff-torino21-390.webp",
+      "webpSha256": "3b1e1f51c388bad45e290750a9a47f77252a8b24e368d52cc6c70d5ea6b86fab",
+      "rgbaPixelsSha256": "f93553d3a3d00de3981075102f96dd1df06f62c3838d06f4ef5fe3e84d1ccb66",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-waiting-1280.png",
+      "sourcePngSha256": "6476a4e5dd70892e31b576513056dafef6b2bdd21c7a228d813489d8167a6476",
+      "archiveFile": "flakon-waiting-1280.webp",
+      "webpSha256": "e529548e567f7f2e0fe4231588684534717a53b7c778696bcfa06ccb83298a5c",
+      "rgbaPixelsSha256": "424ff619da92448571e071884eabece3ad856d4be88a19ae79578ddd3ac71637",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-waiting-320.png",
+      "sourcePngSha256": "29fb9e010d3555bbe190d92c066abb0081c2eaa8d562fc42c68835a79c7c4e1b",
+      "archiveFile": "flakon-waiting-320.webp",
+      "webpSha256": "79a9860705e02fad46652c9c68533cf4df344b67ac7eb9cd2a5976d8ba0e5f58",
+      "rgbaPixelsSha256": "edef27f9117373b6f1707fbd692a00849cffdb02beaf8aad56e4e67fb70de45d",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/flakon-waiting-390.png",
+      "sourcePngSha256": "68dcc5ba94234b1bf1607d1ec64455d8ce2af08733b5b631c326672f9b693956",
+      "archiveFile": "flakon-waiting-390.webp",
+      "webpSha256": "5afa1725d52a3b265b6d9aad9d52dc4d45b2bb7dd3851cba4a2594b54cedb6fa",
+      "rgbaPixelsSha256": "832d7de39c053398bdbd7b8a34efc4948ab4b8be652264d012b97799fbb29744",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    }
+  ],
+  "archives": [
+    {
+      "path": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/local-alexmonhart-1280.zip",
+      "bytes": 1675459,
+      "sha256": "ad8ef42a89d98b7d7b00cce173872f25a2806e310f64074c31ac3c5ef7c5731a",
+      "originalScreenshotCount": 17,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/local-alexmonhart-320.zip",
+      "bytes": 1493683,
+      "sha256": "2094804c90e7d541aab83e44ac196ca41f2d7d2c8d583d2632d78b7b5f1e2bb2",
+      "originalScreenshotCount": 17,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/local-alexmonhart-390.zip",
+      "bytes": 1453590,
+      "sha256": "db2e5df647d47b2817b841044065a848905d151614e3bb0dfa7d9de1dcdd02a8",
+      "originalScreenshotCount": 17,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/local-flakon-1280.zip",
+      "bytes": 2470319,
+      "sha256": "4dc5c83b180aba70482d2aa1721145b7a42de0997924d13e70684dba5b5f25b6",
+      "originalScreenshotCount": 22,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/local-flakon-320.zip",
+      "bytes": 2143497,
+      "sha256": "372b9e70154bdf746d3f2a5f068f102703e180c4514f8f844c0b526b87984a14",
+      "originalScreenshotCount": 22,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/local-flakon-390.zip",
+      "bytes": 2082120,
+      "sha256": "4df8ca88586060f6dff73390facd312ad4a259e2bcb2c7f57b6cf4ff3829f8a2",
+      "originalScreenshotCount": 22,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "/workspace/work/perfume-worker/tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/archives/merchant-live-eligibility.zip",
+      "bytes": 2047777,
+      "sha256": "86e86a0c219d40e31701ce49094c7c763bb53c23a1de0889b46437af02be5bce",
+      "originalScreenshotCount": 7,
+      "scope": "Merchant eligibility only"
+    }
+  ]
+}
