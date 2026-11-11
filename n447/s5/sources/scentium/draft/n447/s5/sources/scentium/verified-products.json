@@ -1,0 +1,1337 @@
+{
+  "scope": "Read-only source draft. No reservation or runtime integration.",
+  "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+  "domain": "scentium.cz",
+  "operator": "Scentium s.r.o.",
+  "ico": "24954748",
+  "platformAlias": "ir0ufv-18.myshopify.com",
+  "companySize": "UNKNOWN",
+  "revenue": "UNKNOWN",
+  "officialTerms": "https://scentium.cz/policies/terms-of-service",
+  "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH",
+  "brandAssets": {
+    "logo": {
+      "url": "https://scentium.cz/cdn/shop/files/2xu42z6bcqtmnj51d22.svg?v=1775235107&width=500",
+      "localPath": "/assets/s5/scentium/logo.webp",
+      "sourceSha256": "c3e803c51cad95d27bf296b3f27c51400336ff6d275728887a263d3c41c12d74",
+      "sha256": "391f668609986004db29e2b0e8d8acf3d9308618aae1ec81e62b8dd69ed4bf2a",
+      "width": 680,
+      "height": 204,
+      "downloadedAt": "2026-11-11T06:32:21.510993+00:00"
+    }
+  },
+  "products": [
+    {
+      "id": "salt",
+      "name": "SALT",
+      "brand": "Ellis Brooklyn",
+      "url": "https://scentium.cz/products/salt?variant=53299859194194",
+      "photo": "/assets/s5/scentium/salt.webp",
+      "priceAmount": 3690,
+      "price": "3690 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Ylang-ylang, tiaré a magnólie.",
+      "reason": "Ylang-ylang, tiaré a magnólie.",
+      "source": {
+        "series": "s5",
+        "url": "https://scentium.cz/products/salt",
+        "verifiedAt": "2026-11-11T06:32:21.510993+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "shopifyVariantId": 53299859194194,
+          "sku": "7321",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/7321_salt-1080x.webp?v=1777318316&width=1920"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3690,
+          "currency": "CZK",
+          "vatSource": "https://scentium.cz/policies/terms-of-service",
+          "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactOfferUrl": "https://scentium.cz/products/salt?variant=53299859194194"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://scentium.cz/cdn/shop/files/7321_salt-1080x.webp?v=1777318316&width=1920",
+        "photoEvidence": {
+          "url": "https://scentium.cz/cdn/shop/files/7321_salt-1080x.webp?v=1777318316&width=1920",
+          "localPath": "/assets/s5/scentium/salt.webp",
+          "sha256": "dc234859d24ac29cfa7af756c06c0494a9ecb7dfec2e15e6a4773a10bf724368",
+          "width": 680,
+          "height": 680,
+          "downloadedAt": "2026-11-11T06:31:20.492666+00:00"
+        },
+        "scent": "Ylang-ylang, tiaré a magnólie.",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "salt"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://scentium.cz/products/salt",
+          "notePyramid": {
+            "top": "ylang-ylang, listy fialky",
+            "heart": "tahitská tiaré, magnólie",
+            "base": "pižmo, vegansky získávaná ambra, santalové dřevo"
+          },
+          "facts": {
+            "description": "Ylang-ylang, tiaré a magnólie."
+          }
+        },
+        "variants": [
+          {
+            "label": "10 ml",
+            "price": 890,
+            "available": true,
+            "url": "https://scentium.cz/products/salt?variant=53300039549266",
+            "evidence": {
+              "shopifyVariantId": 53300039549266,
+              "sku": "7324",
+              "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+              "schemaAvailability": "http://schema.org/InStock",
+              "currency": "CZK",
+              "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/SALTTravelSpray.jpg?v=1777318285&width=1920"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "vanilla-milk",
+      "name": "VANILLA MILK",
+      "brand": "Ellis Brooklyn",
+      "url": "https://scentium.cz/products/vanilla-milk?variant=53299838714194",
+      "photo": "/assets/s5/scentium/vanilla-milk.webp",
+      "priceAmount": 3690,
+      "price": "3690 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Mléko, dvě vanilky a kakaové skořápky.",
+      "reason": "Mléko, dvě vanilky a kakaové skořápky.",
+      "source": {
+        "series": "s5",
+        "url": "https://scentium.cz/products/vanilla-milk",
+        "verifiedAt": "2026-11-11T06:32:21.510993+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "shopifyVariantId": 53299838714194,
+          "sku": "7761",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/VANILLAMILK_Bottle.jpg?v=1780136928&width=1920"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3690,
+          "currency": "CZK",
+          "vatSource": "https://scentium.cz/policies/terms-of-service",
+          "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactOfferUrl": "https://scentium.cz/products/vanilla-milk?variant=53299838714194"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://scentium.cz/cdn/shop/files/VANILLAMILK_Bottle.jpg?v=1780136928&width=1920",
+        "photoEvidence": {
+          "url": "https://scentium.cz/cdn/shop/files/VANILLAMILK_Bottle.jpg?v=1780136928&width=1920",
+          "localPath": "/assets/s5/scentium/vanilla-milk.webp",
+          "sha256": "cf1f220afcd98efebca08caa739c8c915eae0209b2812113e20de28f8c870a6f",
+          "width": 680,
+          "height": 680,
+          "downloadedAt": "2026-11-11T06:31:20.696666+00:00"
+        },
+        "scent": "Mléko, dvě vanilky a kakaové skořápky.",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "vanilla-milk"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://scentium.cz/products/vanilla-milk",
+          "notePyramid": {
+            "top": "smetanové mléko, plumérie, pivoňka",
+            "heart": "bourbon vanilka, extrakt z madagaskarských vanilkových bobů, extrakt z kakaových skořápek",
+            "base": "benzoin, amyris, santalové dřevo, pižmo"
+          },
+          "facts": {
+            "description": "Mléko, dvě vanilky a kakaové skořápky."
+          }
+        },
+        "variants": [
+          {
+            "label": "10 ml",
+            "price": 890,
+            "available": true,
+            "url": "https://scentium.cz/products/vanilla-milk?variant=53300019626322",
+            "evidence": {
+              "shopifyVariantId": 53300019626322,
+              "sku": "7758",
+              "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+              "schemaAvailability": "http://schema.org/InStock",
+              "currency": "CZK",
+              "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/VANILLAMILK_TravelSprayBottle.jpg?v=1777317955&width=1920"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "kyoto",
+      "name": "KYOTO",
+      "brand": "SOBER",
+      "url": "https://scentium.cz/products/kyoto",
+      "photo": "/assets/s5/scentium/kyoto.webp",
+      "priceAmount": 1290,
+      "price": "1290 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Grapefruit, cedr a kadidlo.",
+      "reason": "Grapefruit, cedr a kadidlo.",
+      "source": {
+        "series": "s5",
+        "url": "https://scentium.cz/products/kyoto",
+        "verifiedAt": "2026-11-11T06:32:21.510993+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "shopifyVariantId": 53460864172370,
+          "sku": "SO-KYOTO-50",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/Sober_Parfum_Kyoto_300dpi_RGB_Transparent_0705632531266.png?v=1779954022&width=1920"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 1290,
+          "currency": "CZK",
+          "vatSource": "https://scentium.cz/policies/terms-of-service",
+          "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactOfferUrl": "https://scentium.cz/products/kyoto?variant=53460864172370"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://scentium.cz/cdn/shop/files/Sober_Parfum_Kyoto_300dpi_RGB_Transparent_0705632531266.png?v=1779954022&width=1920",
+        "photoEvidence": {
+          "url": "https://scentium.cz/cdn/shop/files/Sober_Parfum_Kyoto_300dpi_RGB_Transparent_0705632531266.png?v=1779954022&width=1920",
+          "localPath": "/assets/s5/scentium/kyoto.webp",
+          "sha256": "d6be2b2d27f0e57d3e6898868d44b66a18cce13cb76c8f95914cdfadc27e342e",
+          "width": 680,
+          "height": 680,
+          "downloadedAt": "2026-11-11T06:31:21.508669+00:00"
+        },
+        "scent": "Grapefruit, cedr a kadidlo.",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "kyoto"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://scentium.cz/products/kyoto",
+          "notePyramid": {
+            "top": "bergamot, grapefruit",
+            "heart": "koriandr, atlasový cedr, kadidlo",
+            "base": "kardamom, pepř, jasmín"
+          },
+          "facts": {
+            "description": "Grapefruit, cedr a kadidlo."
+          }
+        },
+        "variants": []
+      }
+    },
+    {
+      "id": "blanc-sesame-1",
+      "name": "Blanc Sesame",
+      "brand": "MAJOURI",
+      "url": "https://scentium.cz/products/blanc-sesame-1",
+      "photo": "/assets/s5/scentium/blanc-sesame-1.webp",
+      "priceAmount": 2590,
+      "price": "2590 Kč",
+      "currency": "CZK",
+      "volume": "75 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Sezam, neroli a káva.",
+      "reason": "Sezam, neroli a káva.",
+      "source": {
+        "series": "s5",
+        "url": "https://scentium.cz/products/blanc-sesame-1",
+        "verifiedAt": "2026-11-11T06:32:21.510993+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "shopifyVariantId": 53583251013970,
+          "sku": "MJBlancSesame",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/2025_Majouri_BLANCSESAME.png?v=1779913549&width=1920"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 2590,
+          "currency": "CZK",
+          "vatSource": "https://scentium.cz/policies/terms-of-service",
+          "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH"
+        },
+        "packEvidence": {
+          "pack": "75 ml",
+          "exactOfferUrl": "https://scentium.cz/products/blanc-sesame-1?variant=53583251013970"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://scentium.cz/cdn/shop/files/2025_Majouri_BLANCSESAME.png?v=1779913549&width=1920",
+        "photoEvidence": {
+          "url": "https://scentium.cz/cdn/shop/files/2025_Majouri_BLANCSESAME.png?v=1779913549&width=1920",
+          "localPath": "/assets/s5/scentium/blanc-sesame-1.webp",
+          "sha256": "47efbaa857f64ed3600aa11230369026929e6a1bec9cea826ce2a0b045b8378e",
+          "width": 680,
+          "height": 680,
+          "downloadedAt": "2026-11-11T06:31:22.800674+00:00"
+        },
+        "scent": "Sezam, neroli a káva.",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "blanc-sesame-1"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://scentium.cz/products/blanc-sesame-1",
+          "notePyramid": {
+            "top": "sezam, neroli, mandarinka, růže",
+            "heart": "květ pomerančovníku, tonka, káva",
+            "base": "bílé pižmo, dřevo, krém Chantilly"
+          },
+          "facts": {
+            "description": "Sezam, neroli a káva."
+          }
+        },
+        "variants": []
+      }
+    },
+    {
+      "id": "neroli-poet-100-ml",
+      "name": "Néroli Poète",
+      "brand": "Antinomie",
+      "url": "https://scentium.cz/products/neroli-poet-100-ml?variant=53620708507986",
+      "photo": "/assets/s5/scentium/neroli-poet-100-ml.webp",
+      "priceAmount": 2190,
+      "price": "2190 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Máta, neroli a rozmarýn.",
+      "reason": "Máta, neroli a rozmarýn.",
+      "source": {
+        "series": "s5",
+        "url": "https://scentium.cz/products/neroli-poet-100-ml",
+        "verifiedAt": "2026-11-11T06:32:21.510993+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "shopifyVariantId": 53620708507986,
+          "sku": "3701491602045",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/753fd92bf1291627484d03ef24402eb4bf5e79cd9c032e81fda500545c1b4dc9_a9897884-54b7-485a-b5a6-59914aff7416.jpg?v=1780995699&width=1920"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 2190,
+          "currency": "CZK",
+          "vatSource": "https://scentium.cz/policies/terms-of-service",
+          "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "exactOfferUrl": "https://scentium.cz/products/neroli-poet-100-ml?variant=53620708507986"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://scentium.cz/cdn/shop/files/753fd92bf1291627484d03ef24402eb4bf5e79cd9c032e81fda500545c1b4dc9_a9897884-54b7-485a-b5a6-59914aff7416.jpg?v=1780995699&width=1920",
+        "photoEvidence": {
+          "url": "https://scentium.cz/cdn/shop/files/753fd92bf1291627484d03ef24402eb4bf5e79cd9c032e81fda500545c1b4dc9_a9897884-54b7-485a-b5a6-59914aff7416.jpg?v=1780995699&width=1920",
+          "localPath": "/assets/s5/scentium/neroli-poet-100-ml.webp",
+          "sha256": "597a8e81102f2b0756e75a80e644a106bfa16116ccfc4de7813ca6bae3f87070",
+          "width": 680,
+          "height": 680,
+          "downloadedAt": "2026-11-11T06:31:20.684666+00:00"
+        },
+        "scent": "Máta, neroli a rozmarýn.",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "neroli-poet-100-ml"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://scentium.cz/products/neroli-poet-100-ml",
+          "notePyramid": {
+            "top": "mandarinka, bergamot, máta, pomeranč",
+            "heart": "jasmín, levandule, rozmarýn, neroli, petitgrain",
+            "base": "pižmo, bílé dřevo"
+          },
+          "facts": {
+            "description": "Máta, neroli a rozmarýn."
+          }
+        },
+        "variants": [
+          {
+            "label": "30 ml",
+            "price": 1390,
+            "available": true,
+            "url": "https://scentium.cz/products/neroli-poet-100-ml?variant=53620708540754",
+            "evidence": {
+              "shopifyVariantId": 53620708540754,
+              "sku": "3701491603042",
+              "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+              "schemaAvailability": "http://schema.org/InStock",
+              "currency": "CZK",
+              "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/753fd92bf1291627484d03ef24402eb4bf5e79cd9c032e81fda500545c1b4dc9_a9897884-54b7-485a-b5a6-59914aff7416.jpg?v=1780995699&width=1920"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "blanc-sesame",
+      "name": "Coco Santal",
+      "brand": "RAAW ALCHEMY",
+      "url": "https://scentium.cz/products/blanc-sesame",
+      "photo": "/assets/s5/scentium/blanc-sesame.webp",
+      "priceAmount": 2990,
+      "price": "2990 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Kokos, santal a mořská sůl.",
+      "reason": "Kokos, santal a mořská sůl.",
+      "source": {
+        "series": "s5",
+        "url": "https://scentium.cz/products/blanc-sesame",
+        "verifiedAt": "2026-11-11T06:32:21.510993+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "shopifyVariantId": 53460925088082,
+          "sku": "10101",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/RAAW_ALCHEMY_COCO_SANTAL_jpeg.jpg?v=1780138747&width=1920"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 2990,
+          "currency": "CZK",
+          "vatSource": "https://scentium.cz/policies/terms-of-service",
+          "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactOfferUrl": "https://scentium.cz/products/blanc-sesame?variant=53460925088082"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://scentium.cz/cdn/shop/files/RAAW_ALCHEMY_COCO_SANTAL_jpeg.jpg?v=1780138747&width=1920",
+        "photoEvidence": {
+          "url": "https://scentium.cz/cdn/shop/files/RAAW_ALCHEMY_COCO_SANTAL_jpeg.jpg?v=1780138747&width=1920",
+          "localPath": "/assets/s5/scentium/blanc-sesame.webp",
+          "sha256": "79a244234cd90b88671c558471fadd184492de49a372b31ddd48cf7358818846",
+          "width": 680,
+          "height": 680,
+          "downloadedAt": "2026-11-11T06:31:20.416666+00:00"
+        },
+        "scent": "Kokos, santal a mořská sůl.",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "blanc-sesame"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://scentium.cz/products/blanc-sesame",
+          "notePyramid": {
+            "top": "bergamot, mořská voda",
+            "heart": "čerstvý kokos, mořská sůl, mořský akord",
+            "base": "cedrové dřevo, krémové santalové dřevo, pižmo, vetiver"
+          },
+          "facts": {
+            "description": "Kokos, santal a mořská sůl."
+          }
+        },
+        "variants": []
+      }
+    },
+    {
+      "id": "malkhut-109",
+      "name": "MALKHUT 109",
+      "brand": "LABOR8",
+      "url": "https://scentium.cz/products/malkhut-109?variant=53598813356370",
+      "photo": "/assets/s5/scentium/malkhut-109.webp",
+      "priceAmount": 1390,
+      "price": "1390 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Yzop, myrta a kosatec.",
+      "reason": "Yzop, myrta a kosatec.",
+      "source": {
+        "series": "s5",
+        "url": "https://scentium.cz/products/malkhut-109",
+        "verifiedAt": "2026-11-11T06:32:21.510993+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "shopifyVariantId": 53598813356370,
+          "sku": "L8109-50",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/38005022931871.jpg?v=1780071510&width=1920"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 1390,
+          "currency": "CZK",
+          "vatSource": "https://scentium.cz/policies/terms-of-service",
+          "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactOfferUrl": "https://scentium.cz/products/malkhut-109?variant=53598813356370"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://scentium.cz/cdn/shop/files/38005022931871.jpg?v=1780071510&width=1920",
+        "photoEvidence": {
+          "url": "https://scentium.cz/cdn/shop/files/38005022931871.jpg?v=1780071510&width=1920",
+          "localPath": "/assets/s5/scentium/malkhut-109.webp",
+          "sha256": "062b20bce27f1ff35500e70b5a7e469c6b4f492d2343f828b2ad52d4cb93d921",
+          "width": 680,
+          "height": 680,
+          "downloadedAt": "2026-11-11T06:31:20.996667+00:00"
+        },
+        "scent": "Yzop, myrta a kosatec.",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "malkhut-109"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://scentium.cz/products/malkhut-109",
+          "notePyramid": {
+            "top": "yzop, myrta",
+            "heart": "kardamom, mrkvová semínka, kosatec",
+            "base": "cypriol, santalové dřevo, pižmo, kůže"
+          },
+          "facts": {
+            "description": "Yzop, myrta a kosatec."
+          }
+        },
+        "variants": [
+          {
+            "label": "100 ml",
+            "price": 1990,
+            "available": true,
+            "url": "https://scentium.cz/products/malkhut-109?variant=53598813323602",
+            "evidence": {
+              "shopifyVariantId": 53598813323602,
+              "sku": "L8109-100",
+              "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+              "schemaAvailability": "http://schema.org/InStock",
+              "currency": "CZK",
+              "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/38005022931871.jpg?v=1780071510&width=1920"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ginger-tonic-fr-2018",
+      "name": "Ginger Tonic - FR/2018",
+      "brand": "A. N. OTHER",
+      "url": "https://scentium.cz/products/ginger-tonic-fr-2018?variant=53327155265874",
+      "photo": "/assets/s5/scentium/ginger-tonic-fr-2018.webp",
+      "priceAmount": 3290,
+      "price": "3290 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Grapefruit, gin a zázvor.",
+      "reason": "Grapefruit, gin a zázvor.",
+      "source": {
+        "series": "s5",
+        "url": "https://scentium.cz/products/ginger-tonic-fr-2018",
+        "verifiedAt": "2026-11-11T06:32:21.510993+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "shopifyVariantId": 53327155265874,
+          "sku": "FR/18-050",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/FR-2018.jpg?v=1777664018&width=1920"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 3290,
+          "currency": "CZK",
+          "vatSource": "https://scentium.cz/policies/terms-of-service",
+          "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactOfferUrl": "https://scentium.cz/products/ginger-tonic-fr-2018?variant=53327155265874"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://scentium.cz/cdn/shop/files/FR-2018.jpg?v=1777664018&width=1920",
+        "photoEvidence": {
+          "url": "https://scentium.cz/cdn/shop/files/FR-2018.jpg?v=1777664018&width=1920",
+          "localPath": "/assets/s5/scentium/ginger-tonic-fr-2018.webp",
+          "sha256": "f4bc379f7cc4428769fa18105453f7951de90d3654aadf6f85380d32d3c4ce1d",
+          "width": 680,
+          "height": 680,
+          "downloadedAt": "2026-11-11T06:31:58.720800+00:00"
+        },
+        "scent": "Grapefruit, gin a zázvor.",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "ginger-tonic-fr-2018"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://scentium.cz/products/ginger-tonic-fr-2018",
+          "notePyramid": {
+            "top": "Melon Pop Rocks (šumivý šerbet) , grapefruitová kůra , gin & tonic",
+            "heart": "jalovec , madagaskarský zázvor , levandule",
+            "base": "amberwood , metallic musk"
+          },
+          "facts": {
+            "description": "Grapefruit, gin a zázvor."
+          }
+        },
+        "variants": [
+          {
+            "label": "100 ml",
+            "price": 4290,
+            "available": true,
+            "url": "https://scentium.cz/products/ginger-tonic-fr-2018?variant=53327155233106",
+            "evidence": {
+              "shopifyVariantId": 53327155233106,
+              "sku": "FR/18-100",
+              "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+              "schemaAvailability": "http://schema.org/InStock",
+              "currency": "CZK",
+              "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/FR-2018.jpg?v=1777664018&width=1920"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "farniente",
+      "name": "FARNIENTE",
+      "brand": "ORBE DE MEMOIRE",
+      "url": "https://scentium.cz/products/farniente",
+      "photo": "/assets/s5/scentium/farniente.webp",
+      "priceAmount": 2190,
+      "price": "2190 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Citron, mořské akordy a fíkovník.",
+      "reason": "Citron, mořské akordy a fíkovník.",
+      "source": {
+        "series": "s5",
+        "url": "https://scentium.cz/products/farniente",
+        "verifiedAt": "2026-11-11T06:32:21.510993+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "shopifyVariantId": 55242101850450,
+          "sku": "ORBE-F",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/d27e4d5daa60accb1843e8f58faca9263a1a0932f11c1ccfa3c567058d2df202.jpg?v=1793198467&width=1920"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 2190,
+          "currency": "CZK",
+          "vatSource": "https://scentium.cz/policies/terms-of-service",
+          "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactOfferUrl": "https://scentium.cz/products/farniente?variant=55242101850450"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://scentium.cz/cdn/shop/files/d27e4d5daa60accb1843e8f58faca9263a1a0932f11c1ccfa3c567058d2df202.jpg?v=1793198467&width=1920",
+        "photoEvidence": {
+          "url": "https://scentium.cz/cdn/shop/files/d27e4d5daa60accb1843e8f58faca9263a1a0932f11c1ccfa3c567058d2df202.jpg?v=1793198467&width=1920",
+          "localPath": "/assets/s5/scentium/farniente.webp",
+          "sha256": "bf2810d1d6c3f786ac31ae5c4c2f2520f0cf6f3633108c59c00f14be961ebec2",
+          "width": 680,
+          "height": 680,
+          "downloadedAt": "2026-11-11T06:31:59.032800+00:00"
+        },
+        "scent": "Citron, mořské akordy a fíkovník.",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "farniente"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://scentium.cz/products/farniente",
+          "notePyramid": {
+            "top": "citron, mandarinka, petitgrain",
+            "heart": "mořské akordy, fíkovník, jasmín",
+            "base": "cedrové dřevo, ambra, bílé pižmo"
+          },
+          "facts": {
+            "description": "Citron, mořské akordy a fíkovník."
+          }
+        },
+        "variants": []
+      }
+    },
+    {
+      "id": "tropical-dance",
+      "name": "Tropical Dance",
+      "brand": "Rhizome",
+      "url": "https://scentium.cz/products/tropical-dance",
+      "photo": "/assets/s5/scentium/tropical-dance.webp",
+      "priceAmount": 2690,
+      "price": "2690 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Tonka, vanilka a karamelizovaný pomeranč.",
+      "reason": "Tonka, vanilka a karamelizovaný pomeranč.",
+      "source": {
+        "series": "s5",
+        "url": "https://scentium.cz/products/tropical-dance",
+        "verifiedAt": "2026-11-11T06:32:21.510993+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "shopifyVariantId": 53338842759506,
+          "sku": "RHIZTD",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/EDPTD_GREY_BG.jpg?v=1777900959&width=1920"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 2690,
+          "currency": "CZK",
+          "vatSource": "https://scentium.cz/policies/terms-of-service",
+          "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactOfferUrl": "https://scentium.cz/products/tropical-dance?variant=53338842759506"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://scentium.cz/cdn/shop/files/EDPTD_GREY_BG.jpg?v=1777900959&width=1920",
+        "photoEvidence": {
+          "url": "https://scentium.cz/cdn/shop/files/EDPTD_GREY_BG.jpg?v=1777900959&width=1920",
+          "localPath": "/assets/s5/scentium/tropical-dance.webp",
+          "sha256": "45b93b61fd1475f3cb4c424a438697c0dac6d4230ac27cd238de487e6acfc550",
+          "width": 544,
+          "height": 680,
+          "downloadedAt": "2026-11-11T06:31:59.036800+00:00"
+        },
+        "scent": "Tonka, vanilka a karamelizovaný pomeranč.",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "tropical-dance"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://scentium.cz/products/tropical-dance",
+          "notePyramid": {
+            "top": "tonka fazole , bourbonská vanilka , karamelizovaný pomeranč",
+            "heart": "pačuli , cedrové dřevo , kašmírové dřevo",
+            "base": "vzácná dřeva , ambra , intenzivní muskusy"
+          },
+          "facts": {
+            "description": "Tonka, vanilka a karamelizovaný pomeranč."
+          }
+        },
+        "variants": []
+      }
+    },
+    {
+      "id": "butterfly-mind",
+      "name": "Butterfly Mind",
+      "brand": "STATE OF MIND",
+      "url": "https://scentium.cz/products/butterfly-mind?variant=53461013791058",
+      "photo": "/assets/s5/scentium/butterfly-mind.webp",
+      "priceAmount": 6290,
+      "price": "6290 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Bílý čaj, sakura a feijoa.",
+      "reason": "Bílý čaj, sakura a feijoa.",
+      "source": {
+        "series": "s5",
+        "url": "https://scentium.cz/products/butterfly-mind",
+        "verifiedAt": "2026-11-11T06:32:21.510993+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "shopifyVariantId": 53461013791058,
+          "sku": "SOMBM",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/ButterflyMindperfume.png?v=1779979307&width=1920"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 6290,
+          "currency": "CZK",
+          "vatSource": "https://scentium.cz/policies/terms-of-service",
+          "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "exactOfferUrl": "https://scentium.cz/products/butterfly-mind?variant=53461013791058"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://scentium.cz/cdn/shop/files/ButterflyMindperfume.png?v=1779979307&width=1920",
+        "photoEvidence": {
+          "url": "https://scentium.cz/cdn/shop/files/ButterflyMindperfume.png?v=1779979307&width=1920",
+          "localPath": "/assets/s5/scentium/butterfly-mind.webp",
+          "sha256": "1323b2b4618c3f2aba5527111530a2c4cfc83eff94b84ad53db9cff71abd0350",
+          "width": 680,
+          "height": 680,
+          "downloadedAt": "2026-11-11T06:32:00.060803+00:00"
+        },
+        "scent": "Bílý čaj, sakura a feijoa.",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "butterfly-mind"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://scentium.cz/products/butterfly-mind",
+          "notePyramid": {
+            "top": "bai mu dan bílý čaj, sakura",
+            "heart": "feijoa, lístky lísky",
+            "base": "třešeň, bílé pižmo"
+          },
+          "facts": {
+            "description": "Bílý čaj, sakura a feijoa."
+          }
+        },
+        "variants": [
+          {
+            "label": "10 ml",
+            "price": 1090,
+            "available": true,
+            "url": "https://scentium.cz/products/butterfly-mind?variant=53590668902738",
+            "evidence": {
+              "shopifyVariantId": 53590668902738,
+              "sku": "SOMBM10",
+              "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+              "schemaAvailability": "http://schema.org/InStock",
+              "currency": "CZK",
+              "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/ButterflyMind_Perfume10mlbyStateofMind_1.png?v=1779975932&width=1920"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "fanfarone-italiano",
+      "name": "Fanfarone Italiano",
+      "brand": "STATE OF MIND",
+      "url": "https://scentium.cz/products/fanfarone-italiano",
+      "photo": "/assets/s5/scentium/fanfarone-italiano.webp",
+      "priceAmount": 6290,
+      "price": "6290 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Káva, čokoláda a koňak.",
+      "reason": "Káva, čokoláda a koňak.",
+      "source": {
+        "series": "s5",
+        "url": "https://scentium.cz/products/fanfarone-italiano",
+        "verifiedAt": "2026-11-11T06:32:21.510993+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "shopifyVariantId": 53461014675794,
+          "sku": "SOMFI",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/FanfaroneItaliano_1.png?v=1779979541&width=1920"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "retailIncludingTaxes": 6290,
+          "currency": "CZK",
+          "vatSource": "https://scentium.cz/policies/terms-of-service",
+          "vatEvidence": "Pokud není výslovně uvedeno jinak, uvedené ceny jsou včetně DPH"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "exactOfferUrl": "https://scentium.cz/products/fanfarone-italiano?variant=53461014675794"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "skinTypesListed": [],
+        "photoUrl": "https://scentium.cz/cdn/shop/files/FanfaroneItaliano_1.png?v=1779979541&width=1920",
+        "photoEvidence": {
+          "url": "https://scentium.cz/cdn/shop/files/FanfaroneItaliano_1.png?v=1779979541&width=1920",
+          "localPath": "/assets/s5/scentium/fanfarone-italiano.webp",
+          "sha256": "8866078cd44cd2654583610d8ea7a8a0156738a461a7712c036012c0e7af76bb",
+          "width": 649,
+          "height": 680,
+          "downloadedAt": "2026-11-11T06:31:59.984802+00:00"
+        },
+        "scent": "Káva, čokoláda a koňak.",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "fanfarone-italiano"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://scentium.cz/products/fanfarone-italiano",
+          "notePyramid": {
+            "top": "černý rybíz , pupeny černého rybízu , neroli , pomerančová kůra",
+            "heart": "čokoláda , káva , tonkové boby , cashmeran",
+            "base": "kakao , vanilka , koňak , ořechový alkohol , ambra"
+          },
+          "facts": {
+            "description": "Káva, čokoláda a koňak."
+          }
+        },
+        "variants": []
+      }
+    }
+  ],
+  "offers": {
+    "salt": {
+      "selected": {
+        "label": "50 ml",
+        "price": 3690,
+        "available": true,
+        "url": "https://scentium.cz/products/salt?variant=53299859194194",
+        "evidence": {
+          "shopifyVariantId": 53299859194194,
+          "sku": "7321",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/7321_salt-1080x.webp?v=1777318316&width=1920"
+        }
+      },
+      "alternativeOffers": [
+        {
+          "label": "10 ml",
+          "price": 890,
+          "available": true,
+          "url": "https://scentium.cz/products/salt?variant=53300039549266",
+          "evidence": {
+            "shopifyVariantId": 53300039549266,
+            "sku": "7324",
+            "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+            "schemaAvailability": "http://schema.org/InStock",
+            "currency": "CZK",
+            "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/SALTTravelSpray.jpg?v=1777318285&width=1920"
+          }
+        }
+      ],
+      "previousSelectedPrice": 3690.0,
+      "sourceCaveat": "Narrative mentions bergamot/coconut, final official pyramid differs. Use only recorded final pyramid; do not merge them or infer salt from the product name."
+    },
+    "vanilla-milk": {
+      "selected": {
+        "label": "50 ml",
+        "price": 3690,
+        "available": true,
+        "url": "https://scentium.cz/products/vanilla-milk?variant=53299838714194",
+        "evidence": {
+          "shopifyVariantId": 53299838714194,
+          "sku": "7761",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/VANILLAMILK_Bottle.jpg?v=1780136928&width=1920"
+        }
+      },
+      "alternativeOffers": [
+        {
+          "label": "10 ml",
+          "price": 890,
+          "available": true,
+          "url": "https://scentium.cz/products/vanilla-milk?variant=53300019626322",
+          "evidence": {
+            "shopifyVariantId": 53300019626322,
+            "sku": "7758",
+            "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+            "schemaAvailability": "http://schema.org/InStock",
+            "currency": "CZK",
+            "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/VANILLAMILK_TravelSprayBottle.jpg?v=1777317955&width=1920"
+          }
+        }
+      ],
+      "previousSelectedPrice": 3690.0,
+      "sourceCaveat": null
+    },
+    "kyoto": {
+      "selected": {
+        "label": "50 ml",
+        "price": 1290,
+        "available": true,
+        "url": "https://scentium.cz/products/kyoto?variant=53460864172370",
+        "evidence": {
+          "shopifyVariantId": 53460864172370,
+          "sku": "SO-KYOTO-50",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/Sober_Parfum_Kyoto_300dpi_RGB_Transparent_0705632531266.png?v=1779954022&width=1920"
+        }
+      },
+      "alternativeOffers": [],
+      "previousSelectedPrice": 1290.0,
+      "sourceCaveat": null
+    },
+    "blanc-sesame-1": {
+      "selected": {
+        "label": "75 ml",
+        "price": 2590,
+        "available": true,
+        "url": "https://scentium.cz/products/blanc-sesame-1?variant=53583251013970",
+        "evidence": {
+          "shopifyVariantId": 53583251013970,
+          "sku": "MJBlancSesame",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/2025_Majouri_BLANCSESAME.png?v=1779913549&width=1920"
+        }
+      },
+      "alternativeOffers": [],
+      "previousSelectedPrice": 2590.0,
+      "sourceCaveat": null
+    },
+    "neroli-poet-100-ml": {
+      "selected": {
+        "label": "100 ml",
+        "price": 2190,
+        "available": true,
+        "url": "https://scentium.cz/products/neroli-poet-100-ml?variant=53620708507986",
+        "evidence": {
+          "shopifyVariantId": 53620708507986,
+          "sku": "3701491602045",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/753fd92bf1291627484d03ef24402eb4bf5e79cd9c032e81fda500545c1b4dc9_a9897884-54b7-485a-b5a6-59914aff7416.jpg?v=1780995699&width=1920"
+        }
+      },
+      "alternativeOffers": [
+        {
+          "label": "30 ml",
+          "price": 1390,
+          "available": true,
+          "url": "https://scentium.cz/products/neroli-poet-100-ml?variant=53620708540754",
+          "evidence": {
+            "shopifyVariantId": 53620708540754,
+            "sku": "3701491603042",
+            "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+            "schemaAvailability": "http://schema.org/InStock",
+            "currency": "CZK",
+            "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/753fd92bf1291627484d03ef24402eb4bf5e79cd9c032e81fda500545c1b4dc9_a9897884-54b7-485a-b5a6-59914aff7416.jpg?v=1780995699&width=1920"
+          }
+        }
+      ],
+      "previousSelectedPrice": 2190.0,
+      "sourceCaveat": null
+    },
+    "blanc-sesame": {
+      "selected": {
+        "label": "50 ml",
+        "price": 2990,
+        "available": true,
+        "url": "https://scentium.cz/products/blanc-sesame?variant=53460925088082",
+        "evidence": {
+          "shopifyVariantId": 53460925088082,
+          "sku": "10101",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/RAAW_ALCHEMY_COCO_SANTAL_jpeg.jpg?v=1780138747&width=1920"
+        }
+      },
+      "alternativeOffers": [],
+      "previousSelectedPrice": 2990.0,
+      "sourceCaveat": "Canonical merchant handle is blanc-sesame, but the official product title/vendor is Coco Santal / RAAW ALCHEMY. Do not construct a URL from the name."
+    },
+    "malkhut-109": {
+      "selected": {
+        "label": "50 ml",
+        "price": 1390,
+        "available": true,
+        "url": "https://scentium.cz/products/malkhut-109?variant=53598813356370",
+        "evidence": {
+          "shopifyVariantId": 53598813356370,
+          "sku": "L8109-50",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/38005022931871.jpg?v=1780071510&width=1920"
+        }
+      },
+      "alternativeOffers": [
+        {
+          "label": "100 ml",
+          "price": 1990,
+          "available": true,
+          "url": "https://scentium.cz/products/malkhut-109?variant=53598813323602",
+          "evidence": {
+            "shopifyVariantId": 53598813323602,
+            "sku": "L8109-100",
+            "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+            "schemaAvailability": "http://schema.org/InStock",
+            "currency": "CZK",
+            "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/38005022931871.jpg?v=1780071510&width=1920"
+          }
+        },
+        {
+          "label": "30 ml",
+          "price": 990,
+          "available": false,
+          "url": "https://scentium.cz/products/malkhut-109?variant=53598813389138",
+          "evidence": {
+            "shopifyVariantId": 53598813389138,
+            "sku": "L8109-30",
+            "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+            "schemaAvailability": "http://schema.org/OutOfStock",
+            "currency": "CZK",
+            "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/38005022931871.jpg?v=1780071510&width=1920"
+          }
+        }
+      ],
+      "previousSelectedPrice": 1390.0,
+      "sourceCaveat": "30 ml variant unavailable in official feed. Selected source pack is available 50 ml / 1390 CZK, not lowest 30 ml / 990 CZK."
+    },
+    "ginger-tonic-fr-2018": {
+      "selected": {
+        "label": "50 ml",
+        "price": 3290,
+        "available": true,
+        "url": "https://scentium.cz/products/ginger-tonic-fr-2018?variant=53327155265874",
+        "evidence": {
+          "shopifyVariantId": 53327155265874,
+          "sku": "FR/18-050",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/FR-2018.jpg?v=1777664018&width=1920"
+        }
+      },
+      "alternativeOffers": [
+        {
+          "label": "100 ml",
+          "price": 4290,
+          "available": true,
+          "url": "https://scentium.cz/products/ginger-tonic-fr-2018?variant=53327155233106",
+          "evidence": {
+            "shopifyVariantId": 53327155233106,
+            "sku": "FR/18-100",
+            "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+            "schemaAvailability": "http://schema.org/InStock",
+            "currency": "CZK",
+            "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/FR-2018.jpg?v=1777664018&width=1920"
+          }
+        }
+      ],
+      "previousSelectedPrice": 3290.0,
+      "sourceCaveat": null
+    },
+    "farniente": {
+      "selected": {
+        "label": "50 ml",
+        "price": 2190,
+        "available": true,
+        "url": "https://scentium.cz/products/farniente?variant=55242101850450",
+        "evidence": {
+          "shopifyVariantId": 55242101850450,
+          "sku": "ORBE-F",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/d27e4d5daa60accb1843e8f58faca9263a1a0932f11c1ccfa3c567058d2df202.jpg?v=1793198467&width=1920"
+        }
+      },
+      "alternativeOffers": [],
+      "previousSelectedPrice": 2190.0,
+      "sourceCaveat": null
+    },
+    "tropical-dance": {
+      "selected": {
+        "label": "50 ml",
+        "price": 2690,
+        "available": true,
+        "url": "https://scentium.cz/products/tropical-dance?variant=53338842759506",
+        "evidence": {
+          "shopifyVariantId": 53338842759506,
+          "sku": "RHIZTD",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/EDPTD_GREY_BG.jpg?v=1777900959&width=1920"
+        }
+      },
+      "alternativeOffers": [],
+      "previousSelectedPrice": 2690.0,
+      "sourceCaveat": null
+    },
+    "butterfly-mind": {
+      "selected": {
+        "label": "100 ml",
+        "price": 6290,
+        "available": true,
+        "url": "https://scentium.cz/products/butterfly-mind?variant=53461013791058",
+        "evidence": {
+          "shopifyVariantId": 53461013791058,
+          "sku": "SOMBM",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/ButterflyMindperfume.png?v=1779979307&width=1920"
+        }
+      },
+      "alternativeOffers": [
+        {
+          "label": "10 ml",
+          "price": 1090,
+          "available": true,
+          "url": "https://scentium.cz/products/butterfly-mind?variant=53590668902738",
+          "evidence": {
+            "shopifyVariantId": 53590668902738,
+            "sku": "SOMBM10",
+            "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+            "schemaAvailability": "http://schema.org/InStock",
+            "currency": "CZK",
+            "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/ButterflyMind_Perfume10mlbyStateofMind_1.png?v=1779975932&width=1920"
+          }
+        }
+      ],
+      "previousSelectedPrice": 6290.0,
+      "sourceCaveat": null
+    },
+    "fanfarone-italiano": {
+      "selected": {
+        "label": "100 ml",
+        "price": 6290,
+        "available": true,
+        "url": "https://scentium.cz/products/fanfarone-italiano?variant=53461014675794",
+        "evidence": {
+          "shopifyVariantId": 53461014675794,
+          "sku": "SOMFI",
+          "checkedAt": "2026-11-11T06:32:21.510993+00:00",
+          "schemaAvailability": "http://schema.org/InStock",
+          "currency": "CZK",
+          "variantPhotoUrl": "https://scentium.cz/cdn/shop/files/FanfaroneItaliano_1.png?v=1779979541&width=1920"
+        }
+      },
+      "alternativeOffers": [],
+      "previousSelectedPrice": 6290.0,
+      "sourceCaveat": null
+    }
+  }
+}

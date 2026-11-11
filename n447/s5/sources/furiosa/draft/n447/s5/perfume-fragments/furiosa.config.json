@@ -1,0 +1,225 @@
+{
+  "demo": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "FURIOSA®",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/furiosa/logo.webp",
+      "header": "/assets/s5/furiosa/logo.webp",
+      "avatar": "/assets/s5/furiosa/mark.webp"
+    },
+    "brand": {
+      "name": "FURIOSA®",
+      "fullName": "FURIOSA®",
+      "domain": "furiosa.cz",
+      "website": "https://furiosa.cz/",
+      "url": "https://furiosa.cz/collections/furiosa%C2%AE-parfum-lab",
+      "lang": "cs",
+      "logo": "/assets/s5/furiosa/logo.webp",
+      "mark": "/assets/s5/furiosa/mark.webp",
+      "greeting": "Vyberte si vůni z nabídky FURIOSA® podle tónů. Dvě odlišné vůně si můžete porovnat.",
+      "quickChips": [
+        "Třešeň, víno a kadidlo",
+        "Matcha a kokos",
+        "Santal a vanilka",
+        "Porovnat dva parfémy"
+      ],
+      "theme": {
+        "brand": "#b71723",
+        "accent": "#b71723",
+        "soft": "#fcf1ef",
+        "paper": "#ffffff",
+        "ink": "#281d1d",
+        "line": "#ebdcd9"
+      }
+    },
+    "traitCopy": {
+      "cherrySweet": [
+        "Třešeň nebo sladké tóny",
+        "Od třešňového likéru po cukrovou vatu.",
+        "Třešeň nebo sladké tóny",
+        "Od třešňového likéru po cukrovou vatu."
+      ],
+      "green": [
+        "Čaj, ovoce nebo fíkové tóny",
+        "Matcha, hruška a meloun nebo fík s kosatcem.",
+        "Čaj, ovoce nebo fíkové tóny",
+        "Matcha, hruška a meloun nebo fík s kosatcem."
+      ],
+      "wood": [
+        "Dřevo, koření nebo kadidlo",
+        "Oud se zázvorem nebo santal s kadidlem.",
+        "Dřevo, koření nebo kadidlo",
+        "Oud se zázvorem nebo santal s kadidlem."
+      ],
+      "floral": [
+        "Růže a další květy",
+        "Růže s ylang-ylangem nebo magnólií.",
+        "Růže a další květy",
+        "Růže s ylang-ylangem nebo magnólií."
+      ],
+      "furiosa-cherry-affair": [
+        "Třešeň, červené víno a kadidlo",
+        "",
+        "Třešeň, červené víno a kadidlo",
+        ""
+      ],
+      "furiosa-sex": [
+        "Třešňový likér a marcipán",
+        "",
+        "Třešňový likér a marcipán",
+        ""
+      ],
+      "furiosa-matcha-date": [
+        "Matcha, citronová tráva a kokos",
+        "",
+        "Matcha, citronová tráva a kokos",
+        ""
+      ],
+      "furiosa-candy-as-fck": [
+        "Cukrová vata a marshmallow",
+        "",
+        "Cukrová vata a marshmallow",
+        ""
+      ],
+      "furiosa-old-money": [
+        "Zázvor, pepř a oud",
+        "",
+        "Zázvor, pepř a oud",
+        ""
+      ],
+      "furiosa-burlesque": [
+        "Ylang, růže a meruňka",
+        "",
+        "Ylang, růže a meruňka",
+        ""
+      ],
+      "furiosa-blush": [
+        "Růže, magnólie a grapefruit",
+        "",
+        "Růže, magnólie a grapefruit",
+        ""
+      ],
+      "furiosa-fizz": [
+        "Hruška, meloun a frézie",
+        "",
+        "Hruška, meloun a frézie",
+        ""
+      ],
+      "furiosa-kashmir": [
+        "Kadidlo, santal a vanilka",
+        "",
+        "Kadidlo, santal a vanilka",
+        ""
+      ],
+      "furiosa-nude": [
+        "Fík, kosatec a květ máku",
+        "",
+        "Fík, kosatec a květ máku",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaké tóny chcete objevovat?",
+        "Vyberte podle doložených tónů.",
+        "Tóny vůně"
+      ],
+      "fragranceProfile": [
+        "Které tóny vás lákají?",
+        "Vyberte jeden profil.",
+        "Tóny vůně"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "cherrySweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "green": [
+        "/assets/s3/scenes-k2/matcha.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "furiosa-cherry-affair": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "furiosa-sex": [
+        "/assets/s3/scenes-k2/almonds.jpg"
+      ],
+      "furiosa-candy-as-fck": [
+        "/assets/s5/furiosa/furiosa-candy-as-fck.webp"
+      ],
+      "furiosa-matcha-date": [
+        "/assets/s3/scenes-k2/matcha.jpg"
+      ],
+      "furiosa-fizz": [
+        "/assets/s5/furiosa/furiosa-fizz.webp"
+      ],
+      "furiosa-nude": [
+        "/assets/s5/furiosa/furiosa-nude.webp"
+      ],
+      "furiosa-old-money": [
+        "/assets/s3/scenes-k2/cinnamon.jpg"
+      ],
+      "furiosa-kashmir": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "furiosa-burlesque": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "furiosa-blush": [
+        "/assets/s3/scenes-k2/grapefruit.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "furiosa-cherry-affair",
+      "furiosa-matcha-date"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vůně · balení · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce vůní",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi vybrat vůni podle jeho vkusu.",
+      "lead": "Zákazník si vybere podle doložených tónů a prohlédne si konkrétní vůni s cenou, balením a odkazem. Dvě odlišné kompozice si může porovnat.",
+      "includedChat": "Tóny vůně, balení, ceny a porovnání dvou vůní.",
+      "includedAdvisor": "Preferované tóny a konkrétní profil vůně — na konci konkrétní produkt.",
+      "greeting": "Vyberte si vůni z nabídky FURIOSA® podle tónů. Dvě odlišné vůně si můžete porovnat.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít poradce pro výběr vůně",
+      "source": "perfume-demo-"
+    }
+  },
+  "offlineRules": [
+    {
+      "match": "tresn.*(vino|kadi)|kadi.*tresn",
+      "ids": [
+        "furiosa-cherry-affair"
+      ]
+    },
+    {
+      "match": "match.*kokos|kokos.*match",
+      "ids": [
+        "furiosa-matcha-date"
+      ]
+    },
+    {
+      "match": "santal.*vanilk|vanilk.*santal",
+      "ids": [
+        "furiosa-kashmir"
+      ]
+    }
+  ]
+}
