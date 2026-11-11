@@ -13,4 +13,11 @@ ORACULUM používa konečné ceny z oficiálnych ponúk. Päť dostupných 10 ml
 
 Na oboch ukážkach prešli tri odpovede v chate pri každej šírke, porovnanie dvoch kompozícií a kontrola štyroch 40 px čipov. Backend prešiel troma mock odpoveďami na firmu. Platené volania 0. Snímky a zdroje ostávajú v cestách vylúčených cez `.vercelignore`.
 
-Živé Preview QA sa zapisuje po overení konkrétneho nasadenia.
+## Živé Preview QA
+
+Vercel READY na `dbc488457a8715b95dd3bce2c16893a53b42515f`, nasadenie `dpl_FGvdnSXTepVjsZ5d94SBc61q5VJv`.
+
+- Kintsugi 12/12 výsledkov, všetkých päť strán otázok, porovnanie a štyri 40 px čipy. [Preview](https://kava-chatbot-backend-h45wv6v20-danielvendzur-codes-projects.vercel.app/s5.html?demo=kintsugi)
+- ORACULUM 6/6 výsledkov, všetky tri strany otázok, päť 10 ml alternatív, porovnanie a štyri 40 px čipy. [Preview](https://kava-chatbot-backend-h45wv6v20-danielvendzur-codes-projects.vercel.app/s5.html?demo=oraculum)
+
+Na každej živej trase sa načítala fotografia, sedelo balenie, cena a cieľ produktového odkazu. Rozsah QA chatových odpovedí je lokálny mock. Spolu 16 ukážok overených na Preview. 102 lokálnych snímok oboch ukážok je v 26 ZIP archívoch s kontrolnými súčtami.

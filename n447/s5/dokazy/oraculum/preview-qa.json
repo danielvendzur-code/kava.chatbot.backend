@@ -1,0 +1,110 @@
+{
+  "checkedAt": "2026-11-11T06:38:43.961636+00:00",
+  "status": "PREVIEW_QA_COMPLETE",
+  "codeSha": "dbc488457a8715b95dd3bce2c16893a53b42515f",
+  "deploymentId": "dpl_FGvdnSXTepVjsZ5d94SBc61q5VJv",
+  "url": "https://kava-chatbot-backend-h45wv6v20-danielvendzur-codes-projects.vercel.app/s5.html?demo=oraculum",
+  "scope": "Live Chromium browser, adviser results, questions, restart, alternate pack expansion and deterministic comparison. Chat reply QA is local mock only.",
+  "questionPagesWithAllPhotosLoaded": 3,
+  "chipsPx": [
+    40,
+    40,
+    40,
+    40
+  ],
+  "paidCalls": 0,
+  "results": [
+    {
+      "id": "helenist",
+      "price": "3590 Kč",
+      "pack": "50 ml",
+      "url": "https://oraculum.store/products/helenist",
+      "photoLoaded": true,
+      "restart": true
+    },
+    {
+      "id": "arabesque",
+      "price": "3590 Kč",
+      "pack": "50 ml",
+      "url": "https://oraculum.store/products/arabesque",
+      "photoLoaded": true,
+      "restart": true
+    },
+    {
+      "id": "santalist",
+      "price": "3890 Kč",
+      "pack": "50 ml",
+      "url": "https://oraculum.store/products/santalist",
+      "photoLoaded": true,
+      "restart": true
+    },
+    {
+      "id": "krucifist",
+      "price": "3890 Kč",
+      "pack": "50 ml",
+      "url": "https://oraculum.store/products/krucifist",
+      "photoLoaded": true,
+      "restart": true
+    },
+    {
+      "id": "katarzist",
+      "price": "3590 Kč",
+      "pack": "50 ml",
+      "url": "https://oraculum.store/products/katarzist",
+      "photoLoaded": true,
+      "restart": true
+    },
+    {
+      "id": "mio-dio",
+      "price": "3890 Kč",
+      "pack": "30 ml",
+      "url": "https://oraculum.store/products/mio-dio",
+      "photoLoaded": true,
+      "restart": true
+    }
+  ],
+  "comparedProducts": [
+    {
+      "id": "helenist",
+      "url": "https://oraculum.store/products/helenist",
+      "photoLoaded": true
+    },
+    {
+      "id": "mio-dio",
+      "url": "https://oraculum.store/products/mio-dio",
+      "photoLoaded": true
+    }
+  ],
+  "alternatePacks": [
+    {
+      "id": "helenist",
+      "pack": "10 ml",
+      "priceCZK": 1090,
+      "url": "https://oraculum.store/products/helelnist-10ml"
+    },
+    {
+      "id": "arabesque",
+      "pack": "10 ml",
+      "priceCZK": 1090,
+      "url": "https://oraculum.store/products/arabesque-10ml"
+    },
+    {
+      "id": "santalist",
+      "pack": "10 ml",
+      "priceCZK": 1190,
+      "url": "https://oraculum.store/products/santalist-10-ml"
+    },
+    {
+      "id": "krucifist",
+      "pack": "10 ml",
+      "priceCZK": 1190,
+      "url": "https://oraculum.store/products/krucifist-10-ml"
+    },
+    {
+      "id": "katarzist",
+      "pack": "10 ml",
+      "priceCZK": 1090,
+      "url": "https://oraculum.store/products/katarzist-10ml"
+    }
+  ]
+}
