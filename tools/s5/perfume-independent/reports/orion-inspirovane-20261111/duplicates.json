@@ -1,0 +1,173 @@
+{
+  "checkedAt": "2026-11-11T12:07:01.551671+00:00",
+  "scope": "All locally fetched remote branch heads; official domains, aliases, operators and ICO, not slug-only. No reservation made.",
+  "remoteHeads": {
+    "refs/remotes/origin/agent/coffee-advisor-full-quality-pass": "c5cfe9727f5cb5a60bf643a960b3191e1a08c91f",
+    "refs/remotes/origin/agent/coffee-advisor-soul-rebuild": "e65fb8b60dbdd8109ecc5d0811e99c144aa135a2",
+    "refs/remotes/origin/agent/coffee-advisor-ux-upgrade": "501415ab7aca6a728f4795b8ebe9d4c4962de564",
+    "refs/remotes/origin/agent/coffee-client-ready-final": "22675bcdd7f4f3d1af7c026a86413394e547f926",
+    "refs/remotes/origin/agent/coffee-final-director-pass": "d9a10f9f9299d586f7f8d2773da9596ffdb53b8a",
+    "refs/remotes/origin/agent/coffee-final-integration": "eaf0a6ea33c6f377550021b63dd2ae640b00ef1b",
+    "refs/remotes/origin/agent/coffee-final-mobile-polish": "ae91a796ccf6a5c66503c7b0bb08c3dcf68d6773",
+    "refs/remotes/origin/agent/coffee-final-polish-2026-08-27": "429d012db267a7c177fc6fbddd9cdc171e9bcd0c",
+    "refs/remotes/origin/agent/coffee-owner-conversion-polish": "733ab119cc6e4f29de9033adf292df2dbf30226b",
+    "refs/remotes/origin/agent/coffee-owner-minimal": "59abd5f95633bbac8ac9a07103ead5bb6e771182",
+    "refs/remotes/origin/agent/coffee-owner-sales-polish-2026-08-25": "7ae1fd075f470220a04f176e0daa7cccf20dae70",
+    "refs/remotes/origin/agent/coffee-release-repair-2026-08-26": "602ab696a3c99bc0c8d8072f72a04af65374ee70",
+    "refs/remotes/origin/agent/competition-grade-v6": "4f9e9017675f7f4d853933c9b059e138643387b2",
+    "refs/remotes/origin/agent/concept-seasonal-editorial": "c2dba1e5e0766652ebb9feea4c641769c79236f3",
+    "refs/remotes/origin/agent/cosmetics-six-demos": "b61ed4fc1fd82086acaa6340feb35c0ef3ef0454",
+    "refs/remotes/origin/agent/derat-structure-rebuild": "1bc86b1f0d8495d67e13237a91611b5436dd8dde",
+    "refs/remotes/origin/agent/diamonds-premium-refinement": "675374cbc755361cb7490075d071ef48203ac4dc",
+    "refs/remotes/origin/agent/final-coffee-integration": "86a16027e70e21f0e6e4c6fc0f41c82b66fd9ac7",
+    "refs/remotes/origin/agent/final-coffee-usability-release": "72e1bdb56d8d2c6a1f0a619f52f13d9c3c5131fc",
+    "refs/remotes/origin/agent/jolka-modern-craft": "176f91a20449575ab9e4e024abe99416f07d3350",
+    "refs/remotes/origin/agent/jolka-parity-final": "4f1f066e684cec35183683aedf8528452333d5d9",
+    "refs/remotes/origin/agent/jolka-praziarnicka-chat-cleanup": "df8af50560938582346eb03b47b44323eddb050f",
+    "refs/remotes/origin/agent/jolka-premium-reference": "69022ce3a3952c65f09d84039d9b843315629fbc",
+    "refs/remotes/origin/agent/kaffa-editorial-specialty": "ca998db98f8fc168fd83a7c03b249b33f28ffa40",
+    "refs/remotes/origin/agent/modern-round-coffee-advisor": "97d56b8b3d14ff06649ee5a5a6c594c717edbb56",
+    "refs/remotes/origin/agent/mojchatbot-public-routes": "de63e107357949446e48c9cb4a24df6eb7ccdc6a",
+    "refs/remotes/origin/agent/praziarnicka-clean-rebuild": "21faae4bf81478331d11d12b96b2a941a7a86ac2",
+    "refs/remotes/origin/agent/praziarnicka-live-fix-v14": "1f438333c906b5bd3bbd15705de1d74791888a5b",
+    "refs/remotes/origin/agent/praziarnicka-premium-v9": "a250c064ce3f564f9673a6bb81fcd6348e8cb8b1",
+    "refs/remotes/origin/agent/premium-praziarnicka-sales-demo": "6d2f86da6dbdbb0d7066d6a19458004a9d4a3464",
+    "refs/remotes/origin/agent/remove-beano-refine-motion": "44d7a42883918cd49edb9a7c439d397110ea2e2f",
+    "refs/remotes/origin/agent/vitazov-conversion-system": "1d9c5e0263f2483fed95b992da3ac84dfacaa42a",
+    "refs/remotes/origin/archive/coffee-final-v1": "b0c7ba6380a2c70a1730ad17f2ec76d0b5ba50f5",
+    "refs/remotes/origin/archive/coffee-final-v2": "e8a49dae1f5da9f4144fea804dd6a42de666437c",
+    "refs/remotes/origin/archive/coffee-final-v3": "adf0e555ad4e2fa21c1e9bef1c0a4ecd1c4586df",
+    "refs/remotes/origin/archive/coffee-final-v4": "e2ecfb21e604722af4db04d02c5ff63516147058",
+    "refs/remotes/origin/archive/coffee-final-v5": "fc63ec452b8714bca21afca55066dd8f3abb7ece",
+    "refs/remotes/origin/archive/coffee-migration-v1-current": "773af687f547c4d705a3cec8a3f5312dbd880f77",
+    "refs/remotes/origin/archive/coffee-migration-v2": "4e8ea18b05f674fa86be5415c2eb8c7e45a23c95",
+    "refs/remotes/origin/archive/coffee-migration-v3": "c6f4cf7ed3c8a6fde18b68eb5cad78515d5f26f8",
+    "refs/remotes/origin/archive/coffee-migration-v4": "c26319c10372f2f50f006ed28350b00e15cd5e8e",
+    "refs/remotes/origin/archive/coffee-migration-v5": "73dc96e6e06d2bd6708583f626f71c83a80e6735",
+    "refs/remotes/origin/audit/owner-100-20260909": "20309af2ee9080e9fbf6f24d84c700aaaf4396ef",
+    "refs/remotes/origin/backup/before-codex-restore-2026-09-02-1135": "83d9ca025f8221026707b7464e145214ac6ce953",
+    "refs/remotes/origin/backup/pre-codex-full-restore-2026-09-02": "fd99e5a39312cb68802ccb1941190b461d101593",
+    "refs/remotes/origin/claude/chatbot-audit-improvement-1cavsl": "f45f3ce216befa0397b65100b6d2a527fd900311",
+    "refs/remotes/origin/claude/coffee-deep3-20261016": "0cf9b9ceee8573a0398c4d2b2de60850aee566db",
+    "refs/remotes/origin/claude/cool-mendel-hu8atk": "db54b8694f02dcd8928ae0073de7152dee2734a6",
+    "refs/remotes/origin/claude/elegant-euler-peigpv": "bf6bf79d8e261ffca5dc4d52e040c7379a9856a8",
+    "refs/remotes/origin/claude/eshop-design-fixes-7s4bhx": "7f809ad44ff068e2069a1c4ae16ddf3f3e94d65b",
+    "refs/remotes/origin/claude/gifted-euler-c9ikbq": "427590509a1268600486d50471dd2dfba9758039",
+    "refs/remotes/origin/claude/great-curie-m9eu2c": "bfdfcbc3fa2acaa039ca1d7e9d29107c496651c5",
+    "refs/remotes/origin/claude/iba-jolka-projekt-oa0ykf": "3eaa723ea271c5cb2d27dcc98f9642ec25b3e772",
+    "refs/remotes/origin/claude/jolka-audit-modernization-2wjn4m": "314c7c3f5571402d43433bff7c8ab6ba8c7de2fd",
+    "refs/remotes/origin/claude/jolka-chat-and-advisor-polish": "21769e646b258d8c4bd84326668c070a2ae6a9f1",
+    "refs/remotes/origin/claude/n447-black-20261022": "07a3e0081b84f65927932bb89785964744f60f12",
+    "refs/remotes/origin/claude/n447-coffee-primary-20261030": "59b2f978380020c1f8fff3d28707c82409a0102b",
+    "refs/remotes/origin/claude/n447-kozmetika2-20261029": "ff33a9a394d5574a7d134c90ddc844e96e0e72a6",
+    "refs/remotes/origin/claude/n447-s3a-20261105": "f418fb3b6dca6d9b57c1f1b8d7b93aae9ce93ab8",
+    "refs/remotes/origin/claude/n447-s4-20261107": "6568fc1380a3fae796f4413256c4b61fd5647e99",
+    "refs/remotes/origin/claude/n447-seria3-20261105": "fc4c4dcc8f96a425d83fa3238e6455c7b9560d0b",
+    "refs/remotes/origin/claude/nice-lovelace-k6lo35": "092e3e63755530b401a49d7d1d6576c2cc6619e1",
+    "refs/remotes/origin/codex/coffee-final-20261030": "5591161b63c4851ce91a34b804f6e7a9659495bd",
+    "refs/remotes/origin/codex/new-content-20261024": "3d89260dbb8b41c9e0eb89a582a053de7c59b556",
+    "refs/remotes/origin/codex/rozsirene-katalogy-20261009": "16c0e2433bc5034c291fa3dd3095a021e91b8113",
+    "refs/remotes/origin/codex/s5-perfume-20261110": "8be1b0479356d66a950c662974eeb71d410d0afb",
+    "refs/remotes/origin/codex/s5-solo-20261109": "5959610f08a1e3959ecd18897172a7fcbd4edabf",
+    "refs/remotes/origin/coord/s5-claims": "5b5fc160a188983e1abbf5ea3f159b3b5f125bc9",
+    "refs/remotes/origin/design/five-layout-proposals-20260912": "773af687f547c4d705a3cec8a3f5312dbd880f77",
+    "refs/remotes/origin/fix/all-white-surfaces-20261004": "d824b3d00f35ca271797e64edb95a4757c85f976",
+    "refs/remotes/origin/fix/chat-user-history-20261006": "b93f04f9759f2bbbbd5b1ab832eec3475ca2f590",
+    "refs/remotes/origin/fix/coffee-last-mile-2026-08-28": "530c08327cbe8d7c0b6b8c75ed0308e447c74741",
+    "refs/remotes/origin/fix/coffee-recommendations-20261016": "2ec3bd2f24524d6b710050060c8a3713a21c0c8f",
+    "refs/remotes/origin/fix/company-catalog-ai-20261006": "cd6bd5061e485a28cc516e55446f0ddf8c2dc8b8",
+    "refs/remotes/origin/fix/final-coffee-skincare-demos-20260913": "3fde12d36276b8cb5676c0e9836fb4747c601760",
+    "refs/remotes/origin/fix/rounded-question-scenes-20261011": "27708f8c7b7774dcc05a79b69680821b6d80249a",
+    "refs/remotes/origin/fix/two-advisor-tabs-20261011": "dae2aa6b7ee659fcd5b64f3644b06ebe574abed0",
+    "refs/remotes/origin/fix/visible-configurator-20261011": "f9be000f1c1c0a3f5e9a906e7fd9c9866d04dc48",
+    "refs/remotes/origin/main": "c933c8bdb4e143bc016dee82f2d14ea1e41a111d",
+    "refs/remotes/origin/migration/coffee-only-final-20260913": "82c1639a1eda4da742598d5f068b5f39e5cc96dd",
+    "refs/remotes/origin/migration/coffee-only-source-20260913": "4e6f56043daa748fab621c794b670770f062051d",
+    "refs/remotes/origin/oprava/noindex-ukazky-20261001": "4800f51c72ae87c831b97abf06441275c9579898",
+    "refs/remotes/origin/ops/vercel-all-demos-20260915": "53b65631ada5d6506c722bb62c1e4eb2a4aaa9a5",
+    "refs/remotes/origin/ops/vercel-domains-cleanup-20260915": "6a2fca60dfca1b8d8625e4f963b7b8c81fb9ba23",
+    "refs/remotes/origin/ops/websupport-subdomains-20260915": "e43cbb0ea2057fd081d506a768f59e8f8bae211b",
+    "refs/remotes/origin/preview/majersky-v13-live-20260906": "b5dc2050849cad78daffdbd3b426f1a256a1b688",
+    "refs/remotes/origin/repair/mobile-coffee-20261015": "b5e38a185091b7acc61fda9fb862551fa705592a",
+    "refs/remotes/origin/repair/quality-20261012": "bbe44b7797c0b1c586639cbc62acde791bc7bc38",
+    "refs/remotes/origin/tmp/coffee-jolka-build-safety": "0d7bb2552da7be9dce4f2b885ddf4a37f4dedaab",
+    "refs/remotes/origin/tmp/coffee-skincare-quality-2026-09-02": "fd99e5a39312cb68802ccb1941190b461d101593",
+    "refs/remotes/origin/tmp/cosmetics-polish-2026-09-02": "5f305f0619b8d505c6668ea8c179ab8a6cb62e59",
+    "refs/remotes/origin/work/coffee-jolka-standardization": "a1b327a4f56a67be7cc49fa26e937cc58a154f87"
+  },
+  "remoteCount": 92,
+  "uniqueTextBlobs": 2335,
+  "missingBlobs": [],
+  "positiveControlBlobs": 31,
+  "terms": {
+    "orion": [
+      "parfumeria-orion.sk",
+      "ATM Consulting",
+      "ATMConsulting",
+      "45723991",
+      "info@parfumeria-orion.sk"
+    ],
+    "inspirovane": [
+      "inspirovaneparfemy.cz",
+      "556869.myshoptet.com",
+      "Zdeňka Babková",
+      "Zdenka Babkova",
+      "75575434",
+      "Lanoir",
+      "info@inspirovaneparfemy.cz"
+    ]
+  },
+  "hits": {
+    "orion": [
+      {
+        "blob": "d2dee89c67ce591661cb4041877c3f1b428da32a",
+        "terms": [
+          "parfumeria-orion.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-20261110",
+            "path": "n447/s5/SPOLUPRACA-20261110.md"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-solo-20261109",
+            "path": "n447/s5/SPOLUPRACA-20261110.md"
+          }
+        ]
+      }
+    ],
+    "inspirovane": [
+      {
+        "blob": "d2dee89c67ce591661cb4041877c3f1b428da32a",
+        "terms": [
+          "inspirovaneparfemy.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-20261110",
+            "path": "n447/s5/SPOLUPRACA-20261110.md"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-solo-20261109",
+            "path": "n447/s5/SPOLUPRACA-20261110.md"
+          }
+        ]
+      }
+    ]
+  },
+  "claimOwnership": {
+    "orion": "NOT_CHANGED_BY_THIS_AUDIT",
+    "inspirovane": "NOT_CHANGED_BY_THIS_AUDIT"
+  },
+  "manualReview": {
+    "reviewedAt": "2026-11-11T12:10:58.123075+00:00",
+    "orion": "Only current assignment SPOLUPRACA. ATM Consulting/ICO/contact no other demo or existing claim found.",
+    "inspirovane": "Only current assignment SPOLUPRACA. Official Shoptet alias556869.myshoptet.com, Lanoir brand, operatorICO/name/contact no other demo or existing claim found.",
+    "globalVercel": "PENDING_CONTROLLER",
+    "mail": "NO_APP_OPERATION"
+  },
+  "preReservationRefRecheck": {
+    "allRefsUnchanged": true,
+    "differences": {}
+  }
+}

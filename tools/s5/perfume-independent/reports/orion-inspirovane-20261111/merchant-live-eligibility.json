@@ -1,0 +1,116 @@
+{
+  "checkedAt": "2026-11-11T12:16:57.134422+00:00",
+  "observer": "PERFUME_WORKER actual TLS-verified Playwright WebKit26.5 plus actual visual screenshot inspection",
+  "pages": [
+    {
+      "mode": "home",
+      "requestedUrl": "https://parfumeria-orion.sk/",
+      "finalUrl": "https://parfumeria-orion.sk/",
+      "checkedAt": "2026-11-11T12:02:12.411772+00:00",
+      "httpStatus": 200,
+      "title": "Parfumy online – raritné vône, vzorky a klony značiek | Parfumeria Orion",
+      "screenshot": "orion-home.png"
+    },
+    {
+      "mode": "product",
+      "requestedUrl": "https://parfumeria-orion.sk/armani-prive-santal-dan-sha-u-100-ml-parfumovana-voda/p135099",
+      "finalUrl": "https://parfumeria-orion.sk/armani-prive-santal-dan-sha-u-100-ml-parfumovana-voda/p135099",
+      "checkedAt": "2026-11-11T12:02:22.699949+00:00",
+      "httpStatus": 200,
+      "title": "Armani Privé Santal Dan Sha (U) 100 ml, Parfumovaná voda",
+      "screenshot": "orion-product.png"
+    },
+    {
+      "mode": "home",
+      "requestedUrl": "https://www.inspirovaneparfemy.cz/",
+      "finalUrl": "https://www.inspirovaneparfemy.cz/",
+      "checkedAt": "2026-11-11T12:05:01.481538+00:00",
+      "httpStatus": 200,
+      "title": "Inspirované parfémy",
+      "screenshot": "inspirovane-home.png"
+    },
+    {
+      "mode": "product",
+      "requestedUrl": "https://www.inspirovaneparfemy.cz/lanoir-u091-unisex-parfum/",
+      "finalUrl": "https://www.inspirovaneparfemy.cz/lanoir-u091-unisex-parfum/",
+      "checkedAt": "2026-11-11T12:05:13.845910+00:00",
+      "httpStatus": 200,
+      "title": "Produkty Inspirované parfémy",
+      "screenshot": "inspirovane-product.png"
+    }
+  ],
+  "companies": {
+    "orion": {
+      "cookieMode": "Odmietam clicked in followup; home+Armani PDP+ordinary question tab, then separate75mlChloePDP",
+      "widgetMode": "Potrebujete poradiť? opens ordinary empty name/email/phone/message/captcha seller form. No input, submission or captcha solving. No product-chat/advisor launcher observed in visited session.",
+      "contactFields": [
+        {
+          "name": "txtb_customerName",
+          "type": "text",
+          "empty": true
+        },
+        {
+          "name": "txtb_customerEmail",
+          "type": "email",
+          "empty": true
+        },
+        {
+          "name": "txtb_customerPhone",
+          "type": "tel",
+          "empty": true
+        },
+        {
+          "name": "txtb_customerMessage",
+          "type": "textarea",
+          "empty": true
+        },
+        {
+          "name": "txtb_image_code",
+          "type": "text",
+          "empty": true
+        }
+      ],
+      "primarySourceConflict": {
+        "url": "https://parfumeria-orion.sk/armani-prive-santal-dan-sha-u-100-ml-parfumovana-voda/p135099",
+        "finding": "Armani primary product h1/Objem100mlEDP conflicts with prose90mlEDT; excluded from catalogue.",
+        "status": "EXCLUDE_PRODUCT_NOT_FIRM"
+      },
+      "consistentLiveProduct": {
+        "url": "https://parfumeria-orion.sk/chloe-nomade-jasmin-naturel-w-75-ml-tester-parfumovana-voda/p122810",
+        "checkedAt": "2026-11-11T12:11:41.006733+00:00",
+        "pack": "75 ml",
+        "tester": true,
+        "priceAmount": 39.99,
+        "currency": "EUR",
+        "stock": "na predajni>5ks",
+        "mainPhotoLoaded800": true
+      },
+      "followupScreenshotTimes": {
+        "orion-home-rejected.png": "2026-11-11T12:09:04.174443+00:00",
+        "orion-product-rejected.png": "2026-11-11T12:09:07.898379+00:00",
+        "orion-chloe-rejected.png": "2026-11-11T12:11:54.687435+00:00"
+      }
+    },
+    "inspirovane": {
+      "checkedAt": "2026-11-11T12:11:37.954705+00:00",
+      "cookieActions": [
+        "Nastavení",
+        "Vše vypnout"
+      ],
+      "productUrl": "https://www.inspirovaneparfemy.cz/lanoir-u091-unisex-parfum/",
+      "pack": "50 ml",
+      "variantId": "13077",
+      "priceAmount": 399,
+      "currency": "CZK",
+      "stock": "Skladem",
+      "identity": "Explicit merchant INSPIRACE U091, not genuine referenced Marc-Antoine Barrois perfume.",
+      "staticBadgeConflict": "100ML static badge not selected volume; exact50ml option governs.",
+      "widgetMode": "No product-chat/advisor launcher observed after disabling optional cookies. Zeptat se DOM link hidden; never force-opened. Earlier hidden-link timeout was automation/visibility, not a site outage.",
+      "consentHistory": "Nastavení cookie modal initially captured before its controls rendered; waited for real modal and clicked visible Vše vypnout. No certificate or security modification.",
+      "selectedPhotoLoaded": true
+    }
+  },
+  "limits": "Observed visited pages/cookie/session only; other consent modes/unvisited pages unknown. Merchant eligibility, NOT our own demo/Preview QA.",
+  "paidCalls": 0,
+  "noExplicitMerchantSubmissions": true
+}

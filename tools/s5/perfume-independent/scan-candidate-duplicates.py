@@ -17,6 +17,9 @@ if '--next-pair' in sys.argv:
 if '--alex-flakon' in sys.argv:
  terms={'alexmonhart':['alexmonhart.com','ywxmda-v4.myshopify.com','Alexmonhart','05910510','info@alexmonhart.com'],'flakon':['flakon.sk','Realitygroup','Reality group','51695201','obchod@flakon.sk']}
  OUT=ROOT/'tools/s5/perfume-independent/reports/alexmonhart-flakon-20261111/duplicates.json'
+if '--orion-inspirovane' in sys.argv:
+ terms={'orion':['parfumeria-orion.sk','ATM Consulting','ATMConsulting','45723991','info@parfumeria-orion.sk'],'inspirovane':['inspirovaneparfemy.cz','556869.myshoptet.com','Zdeňka Babková','Zdenka Babkova','75575434','Lanoir','info@inspirovaneparfemy.cz']}
+ OUT=ROOT/'tools/s5/perfume-independent/reports/orion-inspirovane-20261111/duplicates.json'
 patterns={slug:[(term,re.compile(r'\s*'.join(term) if term.isdigit() else re.escape(term),re.I)) for term in ts] for slug,ts in terms.items()}
 proc=subprocess.Popen(['git','-C',str(ROOT),'cat-file','--batch'],stdin=subprocess.PIPE,stdout=subprocess.PIPE);hits=collections.defaultdict(list);missing=[];controls=0
 for sha,loc in objects.items():

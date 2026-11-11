@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-11-11T12:16:57.134422+00:00",
+  "companies": {
+    "orion": {
+      "operator": "ATM Consulting, s. r. o.",
+      "ico": "45723991",
+      "country": "SK",
+      "contact": "info@parfumeria-orion.sk",
+      "operatorSource": "https://parfumeria-orion.sk/moj-profil/obchodne-podmienky/m221",
+      "officialRegister": {
+        "slug": "orion",
+        "requestedUrl": "https://www.orsr.sk/hladaj_ico.asp?ICO=45723991&SID=0",
+        "checkedAt": "2026-11-11T12:06:08.121232+00:00",
+        "status": 200,
+        "finalUrl": "https://www.orsr.sk/hladaj_ico.asp?ICO=45723991&SID=0",
+        "currentExtracts": [
+          "https://www.orsr.sk/vypis.asp?ID=190871&SID=2&P=0"
+        ],
+        "currentExtractUrl": "https://www.orsr.sk/vypis.asp?ID=190871&SID=2&P=0",
+        "companyFields": "Obchodné meno: ATM Consulting, s. r. o. (od: 16.10.2010) Sídlo: Šancová 48 Bratislava 811 05 (od: 16.10.2010) IČO: 45 723 991 (od: 16.10.2010) Deň zápisu: 16.10.2010 (od: 16.10.2010) Právna forma: Spoločnosť s ručením obmedzeným (od: 16.10.2010) ",
+        "statusInterpretation": "Official current company extract; no full personal shareholder data exported."
+      },
+      "size": "Merchant self-reports almost15000items,over2000in-store,50000+customers; not independently audited",
+      "sizeSource": "https://parfumeria-orion.sk/",
+      "revenue": "UNKNOWN",
+      "pricingReview": "PRICING_REVIEW;447+10unchanged",
+      "aliases": [
+        "parfumeria-orion.sk",
+        "www.parfumeria-orion.sk"
+      ]
+    },
+    "inspirovane": {
+      "operator": "Zdeňka Babková",
+      "ico": "75575434",
+      "country": "CZ",
+      "contact": "info@inspirovaneparfemy.cz",
+      "operatorSource": "https://www.inspirovaneparfemy.cz/obchodni-podminky/",
+      "officialRegister": {
+        "slug": "inspirovane",
+        "requestedUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/75575434",
+        "checkedAt": "2026-11-11T12:06:08.122077+00:00",
+        "status": 200,
+        "finalUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/75575434",
+        "operator": "Zdeňka Babková",
+        "ico": "75575434",
+        "incorporated": "2010-08-23",
+        "dissolved": null,
+        "legalForm": "101",
+        "registerUpdated": "2025-12-05"
+      },
+      "size": "UNKNOWN",
+      "revenue": "UNKNOWN",
+      "aliases": [
+        "inspirovaneparfemy.cz",
+        "www.inspirovaneparfemy.cz",
+        "556869.myshoptet.com"
+      ],
+      "conservativeExtraKeyword": "Lanoir from product handles and actual merchant product-photo bottle labels; no unrelated domain ownership inferred",
+      "tax": "Official terms final totalprice includesVAT; no rate inferred"
+    }
+  }
+}

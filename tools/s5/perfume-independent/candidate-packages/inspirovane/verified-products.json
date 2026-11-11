@@ -1,0 +1,1080 @@
+{
+  "brand": "Inspirované parfémy",
+  "domain": "inspirovaneparfemy.cz",
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "cs",
+  "country": "CZ",
+  "currency": "CZK",
+  "operator": {
+    "name": "Zdeňka Babková",
+    "ico": "75575434"
+  },
+  "products": [
+    {
+      "id": "lanoir-h137-mens-parfum",
+      "name": "LOUIS VUITTON Imagination - Inspirace H137",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-h137-mens-parfum/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Inspirovaný parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Bergamot, zázvor a černý čaj. Inspirovaný parfém, 50 ml; nejde o originál uvedené návrhářské značky.",
+      "reason": "Bergamot, zázvor a černý čaj.",
+      "photo": "/assets/s5/inspirovane/lanoir-h137-mens-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.inspirovaneparfemy.cz/lanoir-h137-mens-parfum/",
+        "verifiedAt": "2026-11-11T12:16:20.172461+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladem",
+          "exactVariantId": "12882",
+          "scope": "Exact selected50ml option Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "exactVariantId": "12882",
+          "vatEvidence": "Official terms total final price includesVAT; no tax rate inferred",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-h137-mens-parfum/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "tester": false,
+          "exactVariantId": "12882",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-h137-mens-parfum/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing50ml and optional gift-wrap option; no automatic selection/cart integration promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1005_h137.png?6aeb48c1",
+        "photoMeaning": "Official photo of merchant inspired composition; not the comparison picture of the original designer perfume.",
+        "scent": "Bergamot, zázvor a černý čaj.",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "lanoir-h137-mens-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-h137-mens-parfum/",
+          "navigationLabel": "Bergamot, zázvor a černý čaj",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-h137-mens-parfum/",
+            "sourceText": "Hlava: Bergamot, citron, zázvor Srdce: Pomerančový květ, jasmín, růže, kořenité tóny Základ: Guajakové dřevo, kadidlo, černý čaj, ambra, pižmo",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-h137-mens-parfum/",
+            "sourceText": "Hlava: Bergamot, citron, zázvor Srdce: Pomerančový květ, jasmín, růže, kořenité tóny Základ: Guajakové dřevo, kadidlo, černý čaj, ambra, pižmo",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": null
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "7bab04478256ecb655f41b8beb30ad794f4adff22859acd7be18baa620c0ee77",
+        "identityDisclosure": "Inspirovaný parfém; not original referenced designer brand",
+        "selectedPackCaveat": "Static100ML badge is not selected pack evidence. Exact50ml option and price used.",
+        "declaredIntensityNotUsedAsQuestion": "Střední",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1005_h137.png?6aeb48c1",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "ce30065b39108227b8744aa0317e0814ce1b6bc9bfe4c39f261a72cc79dea0fa",
+          "checkedAt": "2026-11-11T12:21:06.691003+00:00",
+          "visualReview": "PERFUME_WORKER visually inspected official twelve-composition contact sheet, exact corresponding merchant SKU/pack/price. Decorative photo props are not independent ingredient evidence. Similar bottle design does not create extra formulas."
+        }
+      }
+    },
+    {
+      "id": "lanoir-h136-mens-parfum",
+      "name": "LOUIS VUITTON L'lmmensité - Inspirace H136",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-h136-mens-parfum/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Inspirovaný parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Grapefruit, zázvor a mořské tóny. Inspirovaný parfém, 50 ml; nejde o originál uvedené návrhářské značky.",
+      "reason": "Grapefruit, zázvor a mořské tóny.",
+      "photo": "/assets/s5/inspirovane/lanoir-h136-mens-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.inspirovaneparfemy.cz/lanoir-h136-mens-parfum/",
+        "verifiedAt": "2026-11-11T12:16:20.178512+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladem",
+          "exactVariantId": "12996",
+          "scope": "Exact selected50ml option Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "exactVariantId": "12996",
+          "vatEvidence": "Official terms total final price includesVAT; no tax rate inferred",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-h136-mens-parfum/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "tester": false,
+          "exactVariantId": "12996",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-h136-mens-parfum/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing50ml and optional gift-wrap option; no automatic selection/cart integration promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1077-2_h136.png?6aeb83d8",
+        "photoMeaning": "Official photo of merchant inspired composition; not the comparison picture of the original designer perfume.",
+        "scent": "Grapefruit, zázvor a mořské tóny.",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "lanoir-h136-mens-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-h136-mens-parfum/",
+          "navigationLabel": "Grapefruit, zázvor a mořské tóny",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-h136-mens-parfum/",
+            "sourceText": "Hlava: Citron, bergamot, grapefruit, zázvor Srdce: Levandule, mořské tóny, jasmín Základ: Pačuli, vetiver, ambra",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-h136-mens-parfum/",
+            "sourceText": "Hlava: Citron, bergamot, grapefruit, zázvor Srdce: Levandule, mořské tóny, jasmín Základ: Pačuli, vetiver, ambra",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": null
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "290aac485d920520434339e6e814ca6b8a80757143fd6d7fb237e4590143b360",
+        "identityDisclosure": "Inspirovaný parfém; not original referenced designer brand",
+        "selectedPackCaveat": "Static100ML badge is not selected pack evidence. Exact50ml option and price used.",
+        "declaredIntensityNotUsedAsQuestion": "Výrazná",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1077-2_h136.png?6aeb83d8",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "64bff7ced57b389b1f4a60ef46932ada24dcdf4e9fa13c19b47daab3e49ae263",
+          "checkedAt": "2026-11-11T12:21:06.691586+00:00",
+          "visualReview": "PERFUME_WORKER visually inspected official twelve-composition contact sheet, exact corresponding merchant SKU/pack/price. Decorative photo props are not independent ingredient evidence. Similar bottle design does not create extra formulas."
+        }
+      }
+    },
+    {
+      "id": "lanoir-h109-mens-parfum",
+      "name": "CHANEL Bleu de Chanel - Inspirace H109",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-h109-mens-parfum/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Inspirovaný parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Citrusy, máta a dřevité tóny. Inspirovaný parfém, 50 ml; nejde o originál uvedené návrhářské značky.",
+      "reason": "Citrusy, máta a dřevité tóny.",
+      "photo": "/assets/s5/inspirovane/lanoir-h109-mens-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.inspirovaneparfemy.cz/lanoir-h109-mens-parfum/",
+        "verifiedAt": "2026-11-11T12:16:22.036163+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladem",
+          "exactVariantId": "12981",
+          "scope": "Exact selected50ml option Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "exactVariantId": "12981",
+          "vatEvidence": "Official terms total final price includesVAT; no tax rate inferred",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-h109-mens-parfum/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "tester": false,
+          "exactVariantId": "12981",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-h109-mens-parfum/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing50ml and optional gift-wrap option; no automatic selection/cart integration promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1068-2_h109.png?6aeb7819",
+        "photoMeaning": "Official photo of merchant inspired composition; not the comparison picture of the original designer perfume.",
+        "scent": "Citrusy, máta a dřevité tóny.",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "lanoir-h109-mens-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-h109-mens-parfum/",
+          "navigationLabel": "Citrusy, máta a dřevité tóny",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-h109-mens-parfum/",
+            "sourceText": "Hlava: Citron, pomeranč, grapefruit, růžový pepř, máta, muškátový oříšek Srdce: Fialka, jasmín, zázvor, pelargonie, šalvěj Základ: Pačuli, cedrové dřevo, vetiver, kadidlo, santalové dřevo, labdanum",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-h109-mens-parfum/",
+            "sourceText": "Hlava: Citron, pomeranč, grapefruit, růžový pepř, máta, muškátový oříšek Srdce: Fialka, jasmín, zázvor, pelargonie, šalvěj Základ: Pačuli, cedrové dřevo, vetiver, kadidlo, santalové dřevo, labdanum",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": null
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "2138fcdeb644faaba2665894b17ef5f5bc5fb49b83419c71b444e0673c930132",
+        "identityDisclosure": "Inspirovaný parfém; not original referenced designer brand",
+        "selectedPackCaveat": "Static100ML badge is not selected pack evidence. Exact50ml option and price used.",
+        "declaredIntensityNotUsedAsQuestion": "Výrazná",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1068-2_h109.png?6aeb7819",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "b2e347c38d550402d417550301351ab19e01eb425e285299be760b7bed816e38",
+          "checkedAt": "2026-11-11T12:21:06.696665+00:00",
+          "visualReview": "PERFUME_WORKER visually inspected official twelve-composition contact sheet, exact corresponding merchant SKU/pack/price. Decorative photo props are not independent ingredient evidence. Similar bottle design does not create extra formulas."
+        }
+      }
+    },
+    {
+      "id": "lanoir-f040-womens-parfum",
+      "name": "VERSACE Bright crystal - Inspirace F040",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-f040-womens-parfum/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Inspirovaný parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Broskev, malina a jasmín. Inspirovaný parfém, 50 ml; nejde o originál uvedené návrhářské značky.",
+      "reason": "Broskev, malina a jasmín.",
+      "photo": "/assets/s5/inspirovane/lanoir-f040-womens-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.inspirovaneparfemy.cz/lanoir-f040-womens-parfum/",
+        "verifiedAt": "2026-11-11T12:16:24.748574+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladem",
+          "exactVariantId": "678",
+          "scope": "Exact selected50ml option Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "exactVariantId": "678",
+          "vatEvidence": "Official terms total final price includesVAT; no tax rate inferred",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-f040-womens-parfum/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "tester": false,
+          "exactVariantId": "678",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-f040-womens-parfum/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing50ml and optional gift-wrap option; no automatic selection/cart integration promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/234-1_f040.png?6aecbf6f",
+        "photoMeaning": "Official photo of merchant inspired composition; not the comparison picture of the original designer perfume.",
+        "scent": "Broskev, malina a jasmín.",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "lanoir-f040-womens-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-f040-womens-parfum/",
+          "navigationLabel": "Broskev, malina a jasmín",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-f040-womens-parfum/",
+            "sourceText": "Hlava: Svěží grep, sladká broskev a jiskřivý černý rybíz. Srdce: Sladká malina, okouzlující jasmín a vznešená fialka, které vaše smysly hladí a omamují. Základ: Pižmo, cedrové dřevo a ambra se spojují v dokonalou harmonii, zanechávající na pokožce příjemný a neodolatelný dojem elegance a luxusu.",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-f040-womens-parfum/",
+            "sourceText": "Hlava: Svěží grep, sladká broskev a jiskřivý černý rybíz. Srdce: Sladká malina, okouzlující jasmín a vznešená fialka, které vaše smysly hladí a omamují. Základ: Pižmo, cedrové dřevo a ambra se spojují v dokonalou harmonii, zanechávající na pokožce příjemný a neodolatelný dojem elegance a luxusu.",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": null
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "9cc672facb571fc504a754d2884a38536ecf8a20df07f832a54d0a33fd23f6e9",
+        "identityDisclosure": "Inspirovaný parfém; not original referenced designer brand",
+        "selectedPackCaveat": "Static100ML badge is not selected pack evidence. Exact50ml option and price used.",
+        "declaredIntensityNotUsedAsQuestion": "Střední",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/234-1_f040.png?6aecbf6f",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "e8259052bc0a3a4bd3dfbb2c1b1f2b3c847c97f280c5442ba1d2c4b25408b9b4",
+          "checkedAt": "2026-11-11T12:21:06.703274+00:00",
+          "visualReview": "PERFUME_WORKER visually inspected official twelve-composition contact sheet, exact corresponding merchant SKU/pack/price. Decorative photo props are not independent ingredient evidence. Similar bottle design does not create extra formulas."
+        }
+      }
+    },
+    {
+      "id": "lanoir-f047-womens-parfum",
+      "name": "CHLOÉ Chloé - Inspirace F047",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-f047-womens-parfum/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Inspirovaný parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Jahoda, fialka a tonka. Inspirovaný parfém, 50 ml; nejde o originál uvedené návrhářské značky.",
+      "reason": "Jahoda, fialka a tonka.",
+      "photo": "/assets/s5/inspirovane/lanoir-f047-womens-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.inspirovaneparfemy.cz/lanoir-f047-womens-parfum/",
+        "verifiedAt": "2026-11-11T12:16:25.692099+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladem",
+          "exactVariantId": "10506",
+          "scope": "Exact selected50ml option Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "exactVariantId": "10506",
+          "vatEvidence": "Official terms total final price includesVAT; no tax rate inferred",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-f047-womens-parfum/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "tester": false,
+          "exactVariantId": "10506",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-f047-womens-parfum/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing50ml and optional gift-wrap option; no automatic selection/cart integration promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/306-1_f047.png?6aecb9cc",
+        "photoMeaning": "Official photo of merchant inspired composition; not the comparison picture of the original designer perfume.",
+        "scent": "Jahoda, fialka a tonka.",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "lanoir-f047-womens-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-f047-womens-parfum/",
+          "navigationLabel": "Jahoda, fialka a tonka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-f047-womens-parfum/",
+            "sourceText": "Hlava: Šťavnatý pomeranč, pikantní kardamon a sladká jahoda, vytvářející neodolatelně svůdnou kombinaci. Srdce: Síla a elegance díky cedru, levanduli, pačuli, iris a fialce, které dotvářejí nezapomenutelný zážitek. Základ: Tento smyslný zážitek uzavírá vanilkový, tonkový a vetiverový základ, který zanechává neodolatelnou stopu, která vydrží celý den.",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-f047-womens-parfum/",
+            "sourceText": "Hlava: Šťavnatý pomeranč, pikantní kardamon a sladká jahoda, vytvářející neodolatelně svůdnou kombinaci. Srdce: Síla a elegance díky cedru, levanduli, pačuli, iris a fialce, které dotvářejí nezapomenutelný zážitek. Základ: Tento smyslný zážitek uzavírá vanilkový, tonkový a vetiverový základ, který zanechává neodolatelnou stopu, která vydrží celý den.",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": null
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "d719e1a9af81c3c5e4a00f05740c281a2eec102bfd00fdc693436813c1c71489",
+        "identityDisclosure": "Inspirovaný parfém; not original referenced designer brand",
+        "selectedPackCaveat": "Static100ML badge is not selected pack evidence. Exact50ml option and price used.",
+        "declaredIntensityNotUsedAsQuestion": "Jemná",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/306-1_f047.png?6aecb9cc",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "6a491be17eddc9ef2fd760a70537f22967a6614ace959c2882789598f1a4e531",
+          "checkedAt": "2026-11-11T12:21:06.704920+00:00",
+          "visualReview": "PERFUME_WORKER visually inspected official twelve-composition contact sheet, exact corresponding merchant SKU/pack/price. Decorative photo props are not independent ingredient evidence. Similar bottle design does not create extra formulas."
+        }
+      }
+    },
+    {
+      "id": "lanoir-f023-womens-parfum",
+      "name": "PARFUMS DE MARLY Delina - Inspirace F023",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-f023-womens-parfum/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Inspirovaný parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Liči, růže a pivoňka. Inspirovaný parfém, 50 ml; nejde o originál uvedené návrhářské značky.",
+      "reason": "Liči, růže a pivoňka.",
+      "photo": "/assets/s5/inspirovane/lanoir-f023-womens-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.inspirovaneparfemy.cz/lanoir-f023-womens-parfum/",
+        "verifiedAt": "2026-11-11T12:16:25.772863+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladem",
+          "exactVariantId": "12831",
+          "scope": "Exact selected50ml option Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "exactVariantId": "12831",
+          "vatEvidence": "Official terms total final price includesVAT; no tax rate inferred",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-f023-womens-parfum/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "tester": false,
+          "exactVariantId": "12831",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-f023-womens-parfum/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing50ml and optional gift-wrap option; no automatic selection/cart integration promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/975-1_f023.png?6aeb8563",
+        "photoMeaning": "Official photo of merchant inspired composition; not the comparison picture of the original designer perfume.",
+        "scent": "Liči, růže a pivoňka.",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "lanoir-f023-womens-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-f023-womens-parfum/",
+          "navigationLabel": "Liči, růže a pivoňka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-f023-womens-parfum/",
+            "sourceText": "Hlava: Šťavnatá broskev, liči, svěží hruška Srdce: Turecká růže, magnólie, pivoňka Základ: Sladká vanilka, pižmové a pudrové tóny",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-f023-womens-parfum/",
+            "sourceText": "Hlava: Šťavnatá broskev, liči, svěží hruška Srdce: Turecká růže, magnólie, pivoňka Základ: Sladká vanilka, pižmové a pudrové tóny",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": null
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "04f09abbfd6365a1172d42fdfb7b24a6be7254048d7a7f58e25d6ed21190b56e",
+        "identityDisclosure": "Inspirovaný parfém; not original referenced designer brand",
+        "selectedPackCaveat": "Static100ML badge is not selected pack evidence. Exact50ml option and price used.",
+        "declaredIntensityNotUsedAsQuestion": "Střední",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/975-1_f023.png?6aeb8563",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "959e91273ed344f01630d514dbabd0122d0fcc816bbc63c6a0357fa72232bde5",
+          "checkedAt": "2026-11-11T12:21:06.706443+00:00",
+          "visualReview": "PERFUME_WORKER visually inspected official twelve-composition contact sheet, exact corresponding merchant SKU/pack/price. Decorative photo props are not independent ingredient evidence. Similar bottle design does not create extra formulas."
+        }
+      }
+    },
+    {
+      "id": "lanoir-u083-unisex-parfum",
+      "name": "TIZIANA TERENZI Delox - Inspirace U083",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-u083-unisex-parfum/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Inspirovaný parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Růže, med a pižmo. Inspirovaný parfém, 50 ml; nejde o originál uvedené návrhářské značky.",
+      "reason": "Růže, med a pižmo.",
+      "photo": "/assets/s5/inspirovane/lanoir-u083-unisex-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.inspirovaneparfemy.cz/lanoir-u083-unisex-parfum/",
+        "verifiedAt": "2026-11-11T12:16:25.891819+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladem",
+          "exactVariantId": "13017",
+          "scope": "Exact selected50ml option Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "exactVariantId": "13017",
+          "vatEvidence": "Official terms total final price includesVAT; no tax rate inferred",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u083-unisex-parfum/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "tester": false,
+          "exactVariantId": "13017",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u083-unisex-parfum/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing50ml and optional gift-wrap option; no automatic selection/cart integration promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1092_u083.png?6aeb7666",
+        "photoMeaning": "Official photo of merchant inspired composition; not the comparison picture of the original designer perfume.",
+        "scent": "Růže, med a pižmo.",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "lanoir-u083-unisex-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-u083-unisex-parfum/",
+          "navigationLabel": "Růže, med a pižmo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-u083-unisex-parfum/",
+            "sourceText": "Hlava: Růže, pižmo Srdce: pižmo Základ: Vanilka, med, ambra, pižmo",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-u083-unisex-parfum/",
+            "sourceText": "Hlava: Růže, pižmo Srdce: pižmo Základ: Vanilka, med, ambra, pižmo",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": null
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "0fc8afaa76626c55c15d14a614b823cec815e7fbe8b9852673fe63af8cc73716",
+        "identityDisclosure": "Inspirovaný parfém; not original referenced designer brand",
+        "selectedPackCaveat": "Static100ML badge is not selected pack evidence. Exact50ml option and price used.",
+        "declaredIntensityNotUsedAsQuestion": "Střední",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1092_u083.png?6aeb7666",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "7dda8753f0f8e8c30899bf75ee73676d9b263d6a03b882ecfd8eb0baed89a964",
+          "checkedAt": "2026-11-11T12:21:06.707541+00:00",
+          "visualReview": "PERFUME_WORKER visually inspected official twelve-composition contact sheet, exact corresponding merchant SKU/pack/price. Decorative photo props are not independent ingredient evidence. Similar bottle design does not create extra formulas."
+        }
+      }
+    },
+    {
+      "id": "lanoir-f036-womens-parfum",
+      "name": "PARFUMS DE MARLY Oriana - Inspirace F036",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-f036-womens-parfum/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Inspirovaný parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Hruška, květy a vanilka. Inspirovaný parfém, 50 ml; nejde o originál uvedené návrhářské značky.",
+      "reason": "Hruška, květy a vanilka.",
+      "photo": "/assets/s5/inspirovane/lanoir-f036-womens-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.inspirovaneparfemy.cz/lanoir-f036-womens-parfum/",
+        "verifiedAt": "2026-11-11T12:16:27.175316+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladem",
+          "exactVariantId": "12936",
+          "scope": "Exact selected50ml option Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "exactVariantId": "12936",
+          "vatEvidence": "Official terms total final price includesVAT; no tax rate inferred",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-f036-womens-parfum/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "tester": false,
+          "exactVariantId": "12936",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-f036-womens-parfum/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing50ml and optional gift-wrap option; no automatic selection/cart integration promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1041_f036.png?6aeb12ab",
+        "photoMeaning": "Official photo of merchant inspired composition; not the comparison picture of the original designer perfume.",
+        "scent": "Hruška, květy a vanilka.",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "lanoir-f036-womens-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-f036-womens-parfum/",
+          "navigationLabel": "Hruška, květy a vanilka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-f036-womens-parfum/",
+            "sourceText": "Hlava: Mandarinka, pomeranč, černý rybíz, hruška Srdce: Pomerančový květ, jasmín, růže, konvalinka Základ: Vetiver, vanilka, pižmo",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-f036-womens-parfum/",
+            "sourceText": "Hlava: Mandarinka, pomeranč, černý rybíz, hruška Srdce: Pomerančový květ, jasmín, růže, konvalinka Základ: Vetiver, vanilka, pižmo",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": null
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "a28b6dfeab654e8ef1510f422b9ca523c7644854c4d5647876c3889b835e7f0a",
+        "identityDisclosure": "Inspirovaný parfém; not original referenced designer brand",
+        "selectedPackCaveat": "Static100ML badge is not selected pack evidence. Exact50ml option and price used.",
+        "declaredIntensityNotUsedAsQuestion": "Střední",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1041_f036.png?6aeb12ab",
+          "width": 1100,
+          "height": 958,
+          "sha256": "58b069680585f6b84f4fd3acde9f39638e9ad32aeb4a9df65e1e61eb5bd1f70c",
+          "checkedAt": "2026-11-11T12:21:06.708254+00:00",
+          "visualReview": "PERFUME_WORKER visually inspected official twelve-composition contact sheet, exact corresponding merchant SKU/pack/price. Decorative photo props are not independent ingredient evidence. Similar bottle design does not create extra formulas."
+        }
+      }
+    },
+    {
+      "id": "lanoir-u093-unisex-parfum",
+      "name": "MATIERE PREMIERE Vanilla Powder - Inspirace U093",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-u093-unisex-parfum/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Inspirovaný parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Krémové květy, santal a pižmo. Inspirovaný parfém, 50 ml; nejde o originál uvedené návrhářské značky.",
+      "reason": "Krémové květy, santal a pižmo.",
+      "photo": "/assets/s5/inspirovane/lanoir-u093-unisex-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.inspirovaneparfemy.cz/lanoir-u093-unisex-parfum/",
+        "verifiedAt": "2026-11-11T12:16:28.222600+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladem",
+          "exactVariantId": "12710",
+          "scope": "Exact selected50ml option Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "exactVariantId": "12710",
+          "vatEvidence": "Official terms total final price includesVAT; no tax rate inferred",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u093-unisex-parfum/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "tester": false,
+          "exactVariantId": "12710",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u093-unisex-parfum/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing50ml and optional gift-wrap option; no automatic selection/cart integration promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/941_u093.png?6aecc40c",
+        "photoMeaning": "Official photo of merchant inspired composition; not the comparison picture of the original designer perfume.",
+        "scent": "Krémové květy, santal a pižmo.",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "lanoir-u093-unisex-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-u093-unisex-parfum/",
+          "navigationLabel": "Krémové květy, santal a pižmo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-u093-unisex-parfum/",
+            "sourceText": "Hlava: Bergamot a krémové květinové tóny, Srdce: Jasmín, konvalinka, santalové a kašmírové dřevo, Základ: pižmo a ambra.",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-u093-unisex-parfum/",
+            "sourceText": "Hlava: Bergamot a krémové květinové tóny, Srdce: Jasmín, konvalinka, santalové a kašmírové dřevo, Základ: pižmo a ambra.",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": null
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "42c67d991a99177fde6e448135559337af1e7d26318321e140d483826c4a04f0",
+        "identityDisclosure": "Inspirovaný parfém; not original referenced designer brand",
+        "selectedPackCaveat": "Static100ML badge is not selected pack evidence. Exact50ml option and price used.",
+        "declaredIntensityNotUsedAsQuestion": "Střední",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/941_u093.png?6aecc40c",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "72c3ede5eb95e81a98b4b8b1d6da7eb45202b85696c632e747bed574e3180718",
+          "checkedAt": "2026-11-11T12:21:06.709238+00:00",
+          "visualReview": "PERFUME_WORKER visually inspected official twelve-composition contact sheet, exact corresponding merchant SKU/pack/price. Decorative photo props are not independent ingredient evidence. Similar bottle design does not create extra formulas."
+        }
+      }
+    },
+    {
+      "id": "lanoir-u089-unisex-parfum",
+      "name": "LOUIS VUITTON Ombre Nomade - Inspirace U089",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-u089-unisex-parfum/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Inspirovaný parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Malina, oud a kožené tóny. Inspirovaný parfém, 50 ml; nejde o originál uvedené návrhářské značky.",
+      "reason": "Malina, oud a kožené tóny.",
+      "photo": "/assets/s5/inspirovane/lanoir-u089-unisex-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.inspirovaneparfemy.cz/lanoir-u089-unisex-parfum/",
+        "verifiedAt": "2026-11-11T12:16:28.999833+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladem",
+          "exactVariantId": "13122",
+          "scope": "Exact selected50ml option Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "exactVariantId": "13122",
+          "vatEvidence": "Official terms total final price includesVAT; no tax rate inferred",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u089-unisex-parfum/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "tester": false,
+          "exactVariantId": "13122",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u089-unisex-parfum/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing50ml and optional gift-wrap option; no automatic selection/cart integration promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1149_u089.png?6aeb44dd",
+        "photoMeaning": "Official photo of merchant inspired composition; not the comparison picture of the original designer perfume.",
+        "scent": "Malina, oud a kožené tóny.",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "lanoir-u089-unisex-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-u089-unisex-parfum/",
+          "navigationLabel": "Malina, oud a kožené tóny",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-u089-unisex-parfum/",
+            "sourceText": "Hlava: Bergamot, citron, malina Srdce: Skořice, šafrán, růže, pelangonie, jasmín Základ: Santalové dřevo, oud (agarové dřevo), nagarmotha, vanilka, kůže, bílé pižmo, ambra",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-u089-unisex-parfum/",
+            "sourceText": "Hlava: Bergamot, citron, malina Srdce: Skořice, šafrán, růže, pelangonie, jasmín Základ: Santalové dřevo, oud (agarové dřevo), nagarmotha, vanilka, kůže, bílé pižmo, ambra",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": null
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "24155cb4dda05c1e29b0cabbd406c31b871d17377d8dce8427e1c34f647fe4bc",
+        "identityDisclosure": "Inspirovaný parfém; not original referenced designer brand",
+        "selectedPackCaveat": "Static100ML badge is not selected pack evidence. Exact50ml option and price used.",
+        "declaredIntensityNotUsedAsQuestion": "Výrazná",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1149_u089.png?6aeb44dd",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "f36bf2d825b61e3f2f215a14fffb60e670aa8bd7e87eea0caa93b98c2c22977d",
+          "checkedAt": "2026-11-11T12:21:06.713719+00:00",
+          "visualReview": "PERFUME_WORKER visually inspected official twelve-composition contact sheet, exact corresponding merchant SKU/pack/price. Decorative photo props are not independent ingredient evidence. Similar bottle design does not create extra formulas."
+        }
+      }
+    },
+    {
+      "id": "lanoir-u084-unisex-parfum",
+      "name": "MONTALE Arabians Tonka - Inspirace U084",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-u084-unisex-parfum/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Inspirovaný parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Růže, šafrán a tonka. Inspirovaný parfém, 50 ml; nejde o originál uvedené návrhářské značky.",
+      "reason": "Růže, šafrán a tonka.",
+      "photo": "/assets/s5/inspirovane/lanoir-u084-unisex-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.inspirovaneparfemy.cz/lanoir-u084-unisex-parfum/",
+        "verifiedAt": "2026-11-11T12:16:29.482991+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladem",
+          "exactVariantId": "13143",
+          "scope": "Exact selected50ml option Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "exactVariantId": "13143",
+          "vatEvidence": "Official terms total final price includesVAT; no tax rate inferred",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u084-unisex-parfum/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "tester": false,
+          "exactVariantId": "13143",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u084-unisex-parfum/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing50ml and optional gift-wrap option; no automatic selection/cart integration promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1164-2_u084.png?6aeb4750",
+        "photoMeaning": "Official photo of merchant inspired composition; not the comparison picture of the original designer perfume.",
+        "scent": "Růže, šafrán a tonka.",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "lanoir-u084-unisex-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-u084-unisex-parfum/",
+          "navigationLabel": "Růže, šafrán a tonka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-u084-unisex-parfum/",
+            "sourceText": "Hlava: Bergamot, růže Srdce: Kašmírové dřevo, šafrán Základ: Tonkové boby, ambra, vanilka, pižmo, mechové tóny",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-u084-unisex-parfum/",
+            "sourceText": "Hlava: Bergamot, růže Srdce: Kašmírové dřevo, šafrán Základ: Tonkové boby, ambra, vanilka, pižmo, mechové tóny",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": null
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "af6f2d7c3b22673538ccf9cb642fdaa5c5cf360e03cd355e9fb396d1e7e9a54a",
+        "identityDisclosure": "Inspirovaný parfém; not original referenced designer brand",
+        "selectedPackCaveat": "Static100ML badge is not selected pack evidence. Exact50ml option and price used.",
+        "declaredIntensityNotUsedAsQuestion": "Výrazná",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1164-2_u084.png?6aeb4750",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "f79f3b830b1d0459d6c8e5f6f187672608f1e63f1c96e8ba8cb48898e914eace",
+          "checkedAt": "2026-11-11T12:21:06.715099+00:00",
+          "visualReview": "PERFUME_WORKER visually inspected official twelve-composition contact sheet, exact corresponding merchant SKU/pack/price. Decorative photo props are not independent ingredient evidence. Similar bottle design does not create extra formulas."
+        }
+      }
+    },
+    {
+      "id": "lanoir-u079-unisex-parfum",
+      "name": "DIPTYQUE Vetyverio - Inspirace U079",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-u079-unisex-parfum/",
+      "priceAmount": 399.0,
+      "price": "399 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Inspirovaný parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Levandule, vetiver a cedr. Inspirovaný parfém, 50 ml; nejde o originál uvedené návrhářské značky.",
+      "reason": "Levandule, vetiver a cedr.",
+      "photo": "/assets/s5/inspirovane/lanoir-u079-unisex-parfum.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.inspirovaneparfemy.cz/lanoir-u079-unisex-parfum/",
+        "verifiedAt": "2026-11-11T12:16:29.675678+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladem",
+          "exactVariantId": "13158",
+          "scope": "Exact selected50ml option Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 399.0,
+          "currency": "CZK",
+          "exactVariantId": "13158",
+          "vatEvidence": "Official terms total final price includesVAT; no tax rate inferred",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u079-unisex-parfum/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "tester": false,
+          "exactVariantId": "13158",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u079-unisex-parfum/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing50ml and optional gift-wrap option; no automatic selection/cart integration promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1173-2_u079.png?6aeb4ace",
+        "photoMeaning": "Official photo of merchant inspired composition; not the comparison picture of the original designer perfume.",
+        "scent": "Levandule, vetiver a cedr.",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "lanoir-u079-unisex-parfum"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.inspirovaneparfemy.cz/lanoir-u079-unisex-parfum/",
+          "navigationLabel": "Levandule, vetiver a cedr",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-u079-unisex-parfum/",
+            "sourceText": "Hlava: Mandarinka, citron, bergamot, levandule Srdce: Hřebíček, muškátový oříšek, mrkvové semínko, růže, ylang-ylang, pelargonie Základ: Cedrové dřevo, vetiver, ambra, pižmo",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.inspirovaneparfemy.cz/lanoir-u079-unisex-parfum/",
+            "sourceText": "Hlava: Mandarinka, citron, bergamot, levandule Srdce: Hřebíček, muškátový oříšek, mrkvové semínko, růže, ylang-ylang, pelargonie Základ: Cedrové dřevo, vetiver, ambra, pižmo",
+            "scope": "Literal merchant-declared note passage; copied text punctuation compacted. Not independently manufacturer-verified; inspired formula notes never copied from original designer perfume."
+          },
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": null
+        },
+        "complementForProductUrls": [],
+        "originalSourceSha256": "954d3b27c33df9988dd23feff8f42c959000e8d6782e59219d99656596bedb31",
+        "identityDisclosure": "Inspirovaný parfém; not original referenced designer brand",
+        "selectedPackCaveat": "Static100ML badge is not selected pack evidence. Exact50ml option and price used.",
+        "declaredIntensityNotUsedAsQuestion": "Střední",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.inspirovaneparfemy.cz/user/shop/orig/1173-2_u079.png?6aeb4ace",
+          "width": 1100,
+          "height": 1100,
+          "sha256": "d2302a6c2cdbcbc0e2d37220bc4de6c0da72711d12897f63d48ad4a38835a937",
+          "checkedAt": "2026-11-11T12:21:06.716256+00:00",
+          "visualReview": "PERFUME_WORKER visually inspected official twelve-composition contact sheet, exact corresponding merchant SKU/pack/price. Decorative photo props are not independent ingredient evidence. Similar bottle design does not create extra formulas."
+        }
+      }
+    }
+  ],
+  "status": "RESERVED_ISOLATED_SOURCE_PACKAGE_LOCAL_QA_PENDING",
+  "revenue": "UNKNOWN",
+  "size": "UNKNOWN",
+  "pricingReview": "SIZE_UNKNOWN",
+  "notes": [
+    "Distinct formulas only; samples/sizes/refills/sets excluded as extra formulas.",
+    "No budget/addon/intensity/occasion/efficacy/longevity/cart-integration or fragrance-satisfaction guarantees.",
+    "Merchant INSPIRACE identity kept explicit; original designer perfumes never substituted."
+  ]
+}
