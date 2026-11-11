@@ -226,7 +226,11 @@
   }
   function create(source) {
     const products = prepare(source.filter(p=>!p.source?.advisorExcludedReason));
-    const fragranceProduct=p=>p.category==='fragrance'&&p.source?.series==='s5'&&p.source?.selectionTraitsEvidence&&p.features.fragranceDirection&&p.features.fragranceProfile;
+    const fragranceProduct = p => (
+      p.category === 'fragrance' ||
+      (p.category === 'samples' && p.isSample === true && p.source?.sampleSegment === 'fragrance')
+    ) && p.source?.series === 's5' && p.source?.selectionTraitsEvidence &&
+      p.features.fragranceDirection && p.features.fragranceProfile;
     const withinBudget=(p,n)=>Number.isFinite(p.priceAmount)&&p.priceAmount<=Number(n)&&(!p.source?.priceFrom||(Number.isFinite(p.source.priceMax)&&p.source.priceMax<=Number(n)));
     function categoryPool(answers = {}) {
       return products.filter(p => (!answers.category || p.category === answers.category) && (!answers.kind || answers.kind === 'any' || p.kind === answers.kind));
