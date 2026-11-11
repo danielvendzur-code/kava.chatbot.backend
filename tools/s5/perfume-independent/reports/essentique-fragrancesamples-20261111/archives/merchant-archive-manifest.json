@@ -1,0 +1,82 @@
+{
+  "scope": "Actual official merchant home/product/contact/static-guide review11Nov2026, reject cookies, no submission/cart/chat. Automated WebKit26.5; TLS checked. Not local demo or Preview QA.",
+  "images": [
+    {
+      "source": "live-rejected/essentique-home.png",
+      "archiveFile": "essentique-home.webp",
+      "pixelIdentical": true,
+      "sha256": "e11ba745c937bd4d55eaa2bb2d9c8ffe650b3bf7a4ce16cbc3e0f7f034b5f3af"
+    },
+    {
+      "source": "live-rejected/fragrancesamples-home.png",
+      "archiveFile": "fragrancesamples-home.webp",
+      "pixelIdentical": true,
+      "sha256": "1bf6d57eeeee711afae7710e0534be4163428028650cab85a5f81b696aa5632d"
+    },
+    {
+      "source": "live-followup/essentique-variant-price-stock.png",
+      "archiveFile": "essentique-variant-price-stock.webp",
+      "pixelIdentical": true,
+      "sha256": "f1130b7dce30fe894657c348238fbfbd984f820c36ca45fa856b6691ead70ab2"
+    },
+    {
+      "source": "live-followup/fragrancesamples-variant-price-stock.png",
+      "archiveFile": "fragrancesamples-variant-price-stock.webp",
+      "pixelIdentical": true,
+      "sha256": "238d9479c5eca5c03bdb91d44578de53173f9ac0e8aebe26254b5d5a160a9856"
+    },
+    {
+      "source": "live-rejected/essentique-question.png",
+      "archiveFile": "essentique-question.webp",
+      "pixelIdentical": true,
+      "sha256": "5db27ad4c8f344424152a0633ce754acbfe0623c325baeec936c439e28637d6f"
+    },
+    {
+      "source": "live-followup/fragrancesamples-question-loaded.png",
+      "archiveFile": "fragrancesamples-question-loaded.webp",
+      "pixelIdentical": true,
+      "sha256": "42ea9148b0c826823cbeed788a03798ee272c4a172ed8647099782b7450dd211"
+    },
+    {
+      "source": "live-followup/essentique-volume-help.png",
+      "archiveFile": "essentique-volume-help.webp",
+      "pixelIdentical": true,
+      "sha256": "b8984b8ad5f2f418a4f14c93c4512302205cec3687272a9f82f8e9407edf3a0b"
+    },
+    {
+      "source": "live-followup/fragrancesamples-guide.png",
+      "archiveFile": "fragrancesamples-guide.webp",
+      "pixelIdentical": true,
+      "sha256": "8c387d1542bffedeb9b88cc9adf05b652d676f31a357d5c5394bb9ecb22ff406"
+    },
+    {
+      "source": "live-rejected/essentique-home-bottom.png",
+      "archiveFile": "essentique-home-bottom.webp",
+      "pixelIdentical": true,
+      "sha256": "84e83ec8b0cf77ab662b9394dfeb07fadc21ed4294e770ffbfeaf0f2c6f12f02"
+    },
+    {
+      "source": "live-rejected/essentique-product-bottom.png",
+      "archiveFile": "essentique-product-bottom.webp",
+      "pixelIdentical": true,
+      "sha256": "6c23ace4d3a4cb8afbcdc7d26de55dd6e73f054a5b25acf8191b2a3923abb693"
+    },
+    {
+      "source": "live-rejected/fragrancesamples-home-bottom.png",
+      "archiveFile": "fragrancesamples-home-bottom.webp",
+      "pixelIdentical": true,
+      "sha256": "c52d2197fabef5921dc2467a24fab1f15e52f85868a5d0868c87d8578906042b"
+    },
+    {
+      "source": "live-rejected/fragrancesamples-product-bottom.png",
+      "archiveFile": "fragrancesamples-product-bottom.webp",
+      "pixelIdentical": true,
+      "sha256": "ee6a67c605a18b0b27bad863d8e283ecf3ff304cf0de0273600ff1a920820aee"
+    }
+  ],
+  "archive": {
+    "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/merchant-live-essentique-fragrancesamples.zip",
+    "bytes": 2528832,
+    "sha256": "8aaa769f813061f913eb1c0296a891e16576567f5fca33549e6140c72969a16f"
+  }
+}

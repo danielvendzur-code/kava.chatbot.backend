@@ -1,0 +1,56 @@
+{
+  "status": "ALL_7_QA_ARCHIVES_UPLOADED",
+  "scope": "132 LOCAL demo screenshots +12 actual merchant screenshots +18 derived contact sheets. Not live Preview QA. Comparison remains pending.",
+  "archiveCount": 7,
+  "totalBytes": 17184931,
+  "localScreenshotCount": 132,
+  "merchantScreenshotCount": 12,
+  "derivedContactSheets": 18,
+  "originalPngFilesPreservedLocally": true,
+  "losslessDecodedPixelsVerified": true,
+  "vercelExclusion": "Existing /tools/ rule; no shared configuration edits.",
+  "entries": [
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/local-essentique-390.zip",
+      "bytes": 2011130,
+      "gitBlobSha": "d8b9524c1d490e69ad647356e98f4364583931aa",
+      "sha256": "13aac9611876d41a0ebf875b9e04747c81a46e26645a728d2f34c96458529e92"
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/local-essentique-320.zip",
+      "bytes": 2119218,
+      "gitBlobSha": "642f15ff375456fb8c50d7e739c635e931930fa9",
+      "sha256": "30f4a267a9123e41b72277167fe48ffcf8911afe85626c5f130391513f32a040"
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/local-essentique-1280.zip",
+      "bytes": 2401491,
+      "gitBlobSha": "991e28f145b621bc02200b09f9dc1e4c28a787dd",
+      "sha256": "51f7624641e4831fe9b90899e730efa17ad1ee672be388f3d659237dd7866c69"
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/local-fragrancesamples-320.zip",
+      "bytes": 2556937,
+      "gitBlobSha": "9a1534fe1f35b40d1ba54d1f5cf1a11cff0cc273",
+      "sha256": "7b76fd6fc599a774b2bf7ba5fc6b1c5705c52c1a4101a208e63ae52d4380fda8"
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/local-fragrancesamples-1280.zip",
+      "bytes": 3065983,
+      "gitBlobSha": "73bcb1eaa45f2082e0372d09e0653a48f5f21dd0",
+      "sha256": "6c91363ab0761637b5765e98da15fa44ad14183a50f23789fadd0a632438dc42"
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/local-fragrancesamples-390.zip",
+      "bytes": 2501340,
+      "gitBlobSha": "781ac5e0fd73ed0027fc5278ba13c1fd54cb05d8",
+      "sha256": "2de413de7201844e741270b19007cdffc9ab41b310e4481e672b04834c6c0ee7"
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/merchant-live-essentique-fragrancesamples.zip",
+      "bytes": 2528832,
+      "gitBlobSha": "79383682120b0316691ac87b5f306a61d9e7e767",
+      "sha256": "8aaa769f813061f913eb1c0296a891e16576567f5fca33549e6140c72969a16f"
+    }
+  ]
+}

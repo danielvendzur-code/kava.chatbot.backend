@@ -1,0 +1,1372 @@
+{
+  "at": "2026-11-11T10:59:01.109385+00:00",
+  "scope": "Actual LOCAL QA only; MAIN corec9e4da0. Not live Preview or a complete comparison claim.",
+  "authorization": "Owner explicitly permits GitHub QA screenshots/ZIPs, excluded from Vercel under /tools/.",
+  "format": "Lossless WebP verified byte-identical RGBA pixel buffers to original PNG. All original PNGs preserved locally.",
+  "images": [
+    {
+      "sourcePng": "canonical-final/essentique-card-0-1280.png",
+      "sourcePngSha256": "daa9419c4042181765b43afa3a4b20489e2b70f93213763a4051ae4d69c3af83",
+      "archiveFile": "essentique-card-0-1280.webp",
+      "webpSha256": "1e3ca77eee4bc1821ee88f38f80d8dc7d43e19b63ff67914207688238702bc47",
+      "rgbaPixelsSha256": "12a22dcd178874cdf90bcf73d3a991c63727020c2bd60de78f9c575be7e804b8",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-card-0-320.png",
+      "sourcePngSha256": "c7a2237917e44e280a7c888eb847470d2a8eed60c96b6861a5aceaaf8a881378",
+      "archiveFile": "essentique-card-0-320.webp",
+      "webpSha256": "c75617ea222d70ca3ac9b6751a12a131461b8134069bb69cc7eb97bf2462c531",
+      "rgbaPixelsSha256": "442fb9a4fd1270aedd19155674460857d7533bc4f277465248b5238dc008f39a",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-card-0-390.png",
+      "sourcePngSha256": "40ece7653c327d117893cdb21722f9ea4c588d782f3018777ddbe02dc18df586",
+      "archiveFile": "essentique-card-0-390.webp",
+      "webpSha256": "f4219c2043ca7bf09cbf8cb135f3e6c8aef85c6551b275e9ac69da99a5ade6c9",
+      "rgbaPixelsSha256": "89938ed2989fd49867436eb79a5d43a3136eccfb68c74cd5113a085c63d95b24",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-card-1-1280.png",
+      "sourcePngSha256": "9739107fbe7f5179c657bedea4edecfa5bbdcc32b616a1dbd9575d746c87b4d3",
+      "archiveFile": "essentique-card-1-1280.webp",
+      "webpSha256": "657f0f9a28f277971266ed5b48d417cbe60c90225b054f14c98d1d7443df057f",
+      "rgbaPixelsSha256": "ccced7c091eb8bae37beed47afd123923e685c0634394a9a4cc997f7edd23ffa",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-card-1-320.png",
+      "sourcePngSha256": "01611693ad5165d576640d7e659636cc44b2ebf672bdd071dec79b34d0bb17d6",
+      "archiveFile": "essentique-card-1-320.webp",
+      "webpSha256": "215fa61165e28835737dca106c25831abfe1ea083c8b05cbd1bea71d35684034",
+      "rgbaPixelsSha256": "eb7801463b36b96f64f2d5c1f19210a4b8fff2bc2caaec254db8aaa8696646b1",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-card-1-390.png",
+      "sourcePngSha256": "66f662474cb16714e8a583ee774047718391f8bae4d2a7794065d7e66358079c",
+      "archiveFile": "essentique-card-1-390.webp",
+      "webpSha256": "67fcc356d7c3c5a2c923a35dac4bd7e117851a875d81be81ae932d6b810ffce5",
+      "rgbaPixelsSha256": "83f64f915f41128c05548714d02a8128be761d0db03c441723571a2aae6fdf38",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-card-2-1280.png",
+      "sourcePngSha256": "50ea15161d1e795c718d568a9d10a1a920e23d61fea0033296a702477538339e",
+      "archiveFile": "essentique-card-2-1280.webp",
+      "webpSha256": "3012db7c760f07037599aff1799602dc81f995aa4afec36b22a5ee4b242936cb",
+      "rgbaPixelsSha256": "9b6b6c0f8920fd7debc22e08adbe42e8cffd432a8cde3f28b4ae4b50ef1b6051",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-card-2-320.png",
+      "sourcePngSha256": "faa322e6bfe04e8cbf70beaf3afc56e8fad28f2d7e244b4856d91cc63fd8955d",
+      "archiveFile": "essentique-card-2-320.webp",
+      "webpSha256": "f9878b98cd0d8fcf47fb2a364313fb3f55ab6d8811a604e4dd5239a6f5e6168d",
+      "rgbaPixelsSha256": "70d2a0a125c5d9c5db882aa88d29998295fbdf5e63465ae26b2703db8fb2fcdf",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-card-2-390.png",
+      "sourcePngSha256": "79fc9cd2812da3ab7f01c5d233a6171a6bf282d5f922619830a599fe27c98e6b",
+      "archiveFile": "essentique-card-2-390.webp",
+      "webpSha256": "7627cbd9888e197c9cb6cab3aef6d80fe9fc2e2b77fc13af081bc97cabff39a4",
+      "rgbaPixelsSha256": "7db31472edcde7a537db12ca635d30cb1b702346e084e3947387b62f1b895981",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-offer-1280.png",
+      "sourcePngSha256": "b853d976a8128fe6ca936586605d5a4da33f6663b0a41d71e0ac3216b233d7fe",
+      "archiveFile": "essentique-offer-1280.webp",
+      "webpSha256": "7b78bac2a14646bccc2d3ef459a4cff5f58be00689c4688e3b245120331dc25c",
+      "rgbaPixelsSha256": "d9717a4d3941a2e6e05301f616184d172c4c6ef9bee0a20a21f4231870ff1e3e",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-offer-320.png",
+      "sourcePngSha256": "13c3a72dae6feb99f57185666bfc16ca5d63a7df7b9419d526c6ad97f4ff88a8",
+      "archiveFile": "essentique-offer-320.webp",
+      "webpSha256": "f8db4ca78652e358341c0b2f2ae320ce7e01d9421f34b860b2ff40fdf8410036",
+      "rgbaPixelsSha256": "169aa5af4b54d3b7eb104bf3201f2a48c4fbfd5761de43d83aa057aca9c83c36",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-offer-390.png",
+      "sourcePngSha256": "90283437be3fa00b4642132772e03a35c9ca72facfb5a794ee9f6eb0fb958574",
+      "archiveFile": "essentique-offer-390.webp",
+      "webpSha256": "30e01c5da646b7a8dabbe94e821bacd859f68bbc6c758d07fb646b543a84b4c2",
+      "rgbaPixelsSha256": "907da9bd42130733820f12ff9830c62f7af9e8efbf70167209ab053213cb07a7",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-0-1280.png",
+      "sourcePngSha256": "301e6ddfe09aec97f26183c7656d161834c99fadad05fac3099091222f7ef619",
+      "archiveFile": "essentique-question-delta-0-1280.webp",
+      "webpSha256": "0b85bc5e799abeb97b1eecc5303ee31a91762529d7655580874fe2aede29c814",
+      "rgbaPixelsSha256": "2b64310ccb9c96cd100e85aba69ea86e00b164f8b44ca551bdb769f41f0e13a1",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-0-320.png",
+      "sourcePngSha256": "d1005510deed3185c676bc166f9305609f8b3493ff2c61e5badd87b7fc24d02d",
+      "archiveFile": "essentique-question-delta-0-320.webp",
+      "webpSha256": "90501db5ddd0f3203d29b0d416e4f1e5e8f84bf922293bfa2519425e67b79f18",
+      "rgbaPixelsSha256": "fa23b9b24ae80811552dc1b11d846634727a8b02f49903a5932f0997f1760188",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-0-390.png",
+      "sourcePngSha256": "780db90cf87011f15fedfd48f071aa3fc136c33c24c267aa557e438e1e61600e",
+      "archiveFile": "essentique-question-delta-0-390.webp",
+      "webpSha256": "632eb574d044eb08fe87faab9cc4e90ca13869dd266f247161a84eb8709798dc",
+      "rgbaPixelsSha256": "f7e95fdbc6ce7a42f59d2940e81ba165a935513420f38a323ce59ae98f5e9d04",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-1-1280.png",
+      "sourcePngSha256": "5f45ae07e0e556c0ec47bd6334efa83d4bdcb508526946df10878bc84ca102e1",
+      "archiveFile": "essentique-question-delta-1-1280.webp",
+      "webpSha256": "a8d709695183622cff9fe629075828ac289537cf0ee2fddd609798d71093e0de",
+      "rgbaPixelsSha256": "1236705f4fa59c41dc184b1d67737c74a02aca77081e5848ac61be8ba23a0972",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-1-320.png",
+      "sourcePngSha256": "fb879bef2a7807c455a9a6b52ebef454af34d464356baa11e39c5538c23908a7",
+      "archiveFile": "essentique-question-delta-1-320.webp",
+      "webpSha256": "3dc2aa316aeea162e04a0cd9898abad6c4c30ce3a5fcaf9d653de0b2ca56db22",
+      "rgbaPixelsSha256": "e9fcb36ca878ac66ce6314964a69cc5076a890395925cda226a5041e91b5d2d0",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-1-390.png",
+      "sourcePngSha256": "19acfd9b4eeeeb66ad19f32ca88954778b7bdfe9e72fda4b2824172f09d47484",
+      "archiveFile": "essentique-question-delta-1-390.webp",
+      "webpSha256": "9926c38f9228b3e471fe340179af05f9303555f50a10b1b9e792003a784da8d9",
+      "rgbaPixelsSha256": "746a5d8717e688c083832af05445da482008e264339d78fd2685c06cd6eb318b",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-2-1280.png",
+      "sourcePngSha256": "92b59a62de30d6126d85dde5be3d58723ccb71bd2bdfa901c5fda72500577a58",
+      "archiveFile": "essentique-question-delta-2-1280.webp",
+      "webpSha256": "04f2c090ee38f691a3bfb3cc5fdc8108a40e0cf33f61710f2d10cd48c59380e4",
+      "rgbaPixelsSha256": "753dcf9101b8779244bb01198201c789c859e4dd2cc12e6340e550e66b6f438e",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-2-320.png",
+      "sourcePngSha256": "a4b2d1f2c52038cd9d64ed1233052e2d9a7fb5d67cfa1e46d6e1e086eaf3061c",
+      "archiveFile": "essentique-question-delta-2-320.webp",
+      "webpSha256": "b2762523094218643800dccd39e607a27fff936158f842c6261493bd40d464eb",
+      "rgbaPixelsSha256": "3a5c07df55b9cfa3088c413598f2dbb14d0a8ca935388c2c3d2e5498e8badb1e",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-2-390.png",
+      "sourcePngSha256": "a3230ce40811efbe3282b3d4202a9a485bfeab160e374a38f963b54103420694",
+      "archiveFile": "essentique-question-delta-2-390.webp",
+      "webpSha256": "c04660686a2ecf2799fc6eaf925a9a534b0100ea72bb1ae32d7417485b04e949",
+      "rgbaPixelsSha256": "e980e9396b9bcf947afbc676f73d9da9e09276a5599ffa178eeb411fa235e4be",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-3-1280.png",
+      "sourcePngSha256": "433be4580f912dfb21558b41de3829453d2a50822bc0c0ecfeb030c75b588a13",
+      "archiveFile": "essentique-question-delta-3-1280.webp",
+      "webpSha256": "10103ba6505900f35cc2b72749104ac29402a7efa7516d900f9c57e60813ed70",
+      "rgbaPixelsSha256": "e57c51fb25f4f878fba8192d44ce97f6345400bf6f3649dd83487059d0f280bc",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-3-320.png",
+      "sourcePngSha256": "087e5614378299a45eedd70d2c2421fe8748f5c2b9897221a5bc7dca636b5c0e",
+      "archiveFile": "essentique-question-delta-3-320.webp",
+      "webpSha256": "3f77fda8943ada8ccbe455262d6c0cf6727a177ae95f2868d1e63c0fe7cbfb1d",
+      "rgbaPixelsSha256": "97ea71abf767dcad00cc77876dd7c65a7066700629d9499b57bc029283c781de",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-3-390.png",
+      "sourcePngSha256": "4a23d5cbcda9d2a3ee8be40c1275735cfecde24600894aea654448de2431f56f",
+      "archiveFile": "essentique-question-delta-3-390.webp",
+      "webpSha256": "aa03ba37b10430c9dab2e221fa617b8d0361d3ef17b773153e9548fde133216b",
+      "rgbaPixelsSha256": "c6ed90b3cdc9c6b0e2e1f797bce7abe6669bb4347d260fc9ddc8f2155f21bef0",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-4-1280.png",
+      "sourcePngSha256": "c5778dd8e095645d12ceb0fc846a0a006085539db7d58142b4d8e40f33813853",
+      "archiveFile": "essentique-question-delta-4-1280.webp",
+      "webpSha256": "8a2330c2c84e7d9d62c9219ed839a3768d10763248fce1076fac95356de6c51e",
+      "rgbaPixelsSha256": "cebef55df61f459f0fc4d64f3f826dd49a50de9c470940f42d0bde49d4f5b475",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-4-320.png",
+      "sourcePngSha256": "06f9845f0ed711ad771d55ee51c179d4e83cd198493a0ebc82d4018ede1c37c1",
+      "archiveFile": "essentique-question-delta-4-320.webp",
+      "webpSha256": "4df880b21a7e56696e0e08751b319cb25b5e9b4220542a8b7948eb5cbe62682b",
+      "rgbaPixelsSha256": "af1f2f366479218054ee2b968e261b1b3161c9ec40c0caceb26067a74b4c0697",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-question-delta-4-390.png",
+      "sourcePngSha256": "9bacb1639f7874a50cf84b101688faafe0ee0be7db8b09fdd2ce82991b16ee10",
+      "archiveFile": "essentique-question-delta-4-390.webp",
+      "webpSha256": "11f524ceca18693e80f84d828a6dcf0208aae8fbcc69edf558dfdabc60bbc4e8",
+      "rgbaPixelsSha256": "f0a5bfe277a15c1786db1d336fdc769317a09d2ef34e8aaea31a73cdb4f88bdb",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-angels-share-1280.png",
+      "sourcePngSha256": "38a85175c7f7fb733415222a2a4a817eb1040bdeccf84f877e23f5aff355a002",
+      "archiveFile": "essentique-result-angels-share-1280.webp",
+      "webpSha256": "cb85a01f4770003e49e4a625b44c5eb847b3ed13f9c26a57c2a0217660ae03b2",
+      "rgbaPixelsSha256": "dd237dd0bdcecdbb211f8e79b667bcb2ee9b6188bba724110b402393fddf0661",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-angels-share-320.png",
+      "sourcePngSha256": "aef9854c16a3278b25999c873918c68377a8988c6b9de239f005055c10410205",
+      "archiveFile": "essentique-result-angels-share-320.webp",
+      "webpSha256": "b66fce857e571371d4274a9aaf775045d63e1dfd698edc5958f0864e09599c8e",
+      "rgbaPixelsSha256": "3426c96bc66363b69c3cae38504fa861e51a32392bd3415c8a2834f36af64347",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-angels-share-390.png",
+      "sourcePngSha256": "090792679a5f52285a68bfcb67f7da4212878e1e7900048cd604640c9732ec05",
+      "archiveFile": "essentique-result-angels-share-390.webp",
+      "webpSha256": "586652ae393068ea6b50c23f968f47d3a01d41ce1a6d798d424c925ebea7fa50",
+      "rgbaPixelsSha256": "7f8ff5f35aa261113cf343f6903ea4508307f88a53171f8b2dd12ca885da43eb",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-arabians-tonka-1280.png",
+      "sourcePngSha256": "ff4d6c6e57c18d23528a14a5c51717fbf2e3db128885a10e853206ef95428dd4",
+      "archiveFile": "essentique-result-arabians-tonka-1280.webp",
+      "webpSha256": "2807f42dd1ee8fe3aaf23319b242a72586dee113288ac2bd14458a598f704879",
+      "rgbaPixelsSha256": "c8d62890f5f4e84f621414dd98d8cbd0a4b238f065ef78856c1fd76f29bfcd8c",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-arabians-tonka-320.png",
+      "sourcePngSha256": "8d2537713ca8c5290de590470681e499b40814ff6e715bd7355f6c2703f58d31",
+      "archiveFile": "essentique-result-arabians-tonka-320.webp",
+      "webpSha256": "69bd1993e7fd7b24337a213a909f20e9d08e7f28b441bf579fd063cbcee25235",
+      "rgbaPixelsSha256": "f1930efa8b15254a0c89f5e5a3bdd5409424f037d10681e035c10c6509993e2f",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-arabians-tonka-390.png",
+      "sourcePngSha256": "1bd5b2a75c50f34350215b286b94e615fb5c0af20081d1b8f701f7d58d9d04f7",
+      "archiveFile": "essentique-result-arabians-tonka-390.webp",
+      "webpSha256": "76db24b5e919d45f49fbf685f383219de0537e7554ff18f28c4ac6a612736ba5",
+      "rgbaPixelsSha256": "f04a5bad4c6078737f353fab099527750e0ff8fc343eb35d106b87739b5aa166",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-bois-imperial-1280.png",
+      "sourcePngSha256": "8f06f8cbea7cde24f1664ab4f6e71dbf1b0ea16004f6322f9d1082079c47d50e",
+      "archiveFile": "essentique-result-bois-imperial-1280.webp",
+      "webpSha256": "ba109f730cc6c80013b82e84d1a55626ade32d52249ae8551ea8c4d09a72fc20",
+      "rgbaPixelsSha256": "4afc9b9b4bf5522b63c5f7b5e97616695cce1200a11e137dea6acd1f84611185",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-bois-imperial-320.png",
+      "sourcePngSha256": "09cf247c3c3269aa7958446cbdde816b61fa0a007a411f0790dac002a690a15a",
+      "archiveFile": "essentique-result-bois-imperial-320.webp",
+      "webpSha256": "89d5b9abb38f9d8fcc9a036c9707f23ec5518444368b2a954bc9facf940155a2",
+      "rgbaPixelsSha256": "2da7a092788da8888e472e72d7951309c01cac17b6ee3cfa144aa7d09038b6f2",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-bois-imperial-390.png",
+      "sourcePngSha256": "c3b496c4871cd692f42bef0636ea37edd901a61679bec789d786e9ffa532895a",
+      "archiveFile": "essentique-result-bois-imperial-390.webp",
+      "webpSha256": "6a89ffdd1f74f6a9831738fd5258c392f7878073084a0c3f010b7e02308144f5",
+      "rgbaPixelsSha256": "8dfe06cb403b7b07bfa05a42477442dcfb9f029b684947c9ce7e042ead0dc7c1",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-delina-exclusif-1280.png",
+      "sourcePngSha256": "61329bff3a780fccd1ab57e5cf96be3bed0e9ef1493532879e07a7dcaae14a52",
+      "archiveFile": "essentique-result-delina-exclusif-1280.webp",
+      "webpSha256": "03bd7ccdb4e2c0e305c5a2ed4cd42a24b7532edd5bf186429e607a8904eddb64",
+      "rgbaPixelsSha256": "a268e8bb8cf501ecf127ca9068fd84cac466f9ea4b4ed3ff20afc2f757fdecae",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-delina-exclusif-320.png",
+      "sourcePngSha256": "9af0a2197f91a7f478700875e8136193db480d0f0ff08fb8fce14fde878052be",
+      "archiveFile": "essentique-result-delina-exclusif-320.webp",
+      "webpSha256": "e54c1bfa8562092f8724ffd560c3fd8f340396a24e3a9e7944b6c96e52849595",
+      "rgbaPixelsSha256": "74a13106088b7b6d11ca90c5cb900418c264fa7167bcc8fabf43f8d21462dce0",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-delina-exclusif-390.png",
+      "sourcePngSha256": "b30037c1ffaa407e4f17407d2c5d1e1baf4e982d854df5c7ddd388cedc865bdb",
+      "archiveFile": "essentique-result-delina-exclusif-390.webp",
+      "webpSha256": "0b8d62a3083905e81453dc4f80914ba268f5e41c02119af6b290c0e99f6ce6b2",
+      "rgbaPixelsSha256": "8af61318a1e9f3a72c005e81f4d0f1129a4f8e185fd15462b201780495c483bc",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-divine-vanille-1280.png",
+      "sourcePngSha256": "83e2a378840da0d78f5174d4f1a4d08b20469f147b48b9e30bcd69a9b9ad63a9",
+      "archiveFile": "essentique-result-divine-vanille-1280.webp",
+      "webpSha256": "4313b7115a27ac932b5dfb3e84e9589e46f669200db66c42ee847f184466a718",
+      "rgbaPixelsSha256": "7c5d7635032d8b4bcafbf199bcbc4fc7118b88c18c48e99d82987758fb358f18",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-divine-vanille-320.png",
+      "sourcePngSha256": "3589ec12ab1dc3031beb85b2c03f7e74ef5c54432d87844b1578c013742a72b4",
+      "archiveFile": "essentique-result-divine-vanille-320.webp",
+      "webpSha256": "76cc9b5ea315b6778d96d8bd811002c437e4ec52e770c64cf798a4632dd852fc",
+      "rgbaPixelsSha256": "d29946e385ab827965bec0afba661f6d2020959f1077f75c3b192d8870954639",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-divine-vanille-390.png",
+      "sourcePngSha256": "4ac85e8bf62352c21313f327a71cf26480235f64020d52660b7d346b220ff54c",
+      "archiveFile": "essentique-result-divine-vanille-390.webp",
+      "webpSha256": "1a143a1fd07a4c668631ee7c4cc25d9b74a6eb2f159822bf6d8e79a311758a8c",
+      "rgbaPixelsSha256": "eda13ecf31eaea897a9b8311e47b298e4df5a46730bfd8ec9437a95dbbe5777f",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-eilish-no-2-1280.png",
+      "sourcePngSha256": "91c58a6ce625f13e4fc0c427a986d6d191ae3fdff0bb3ae82385960db8df4da1",
+      "archiveFile": "essentique-result-eilish-no-2-1280.webp",
+      "webpSha256": "250e7521dd934913a1ab5fddbc3a80a7864e51aee48aa40c75c37655587a862e",
+      "rgbaPixelsSha256": "114f42fa39c9ce457a3029c7151b2d3f64c4c967a756569e11f3d89a6089364e",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-eilish-no-2-320.png",
+      "sourcePngSha256": "33ca5771008342329f6c2d3accf14a9ae49d726db614c2f23268fe72ac15a111",
+      "archiveFile": "essentique-result-eilish-no-2-320.webp",
+      "webpSha256": "2e1589c4ec78e0095f9af515af7db047623d019956fd89fdee33ba14ff9382c6",
+      "rgbaPixelsSha256": "e015b242379b11067877ceb4c5cbeed3a2de95346668641c173ea4349c2a705e",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-eilish-no-2-390.png",
+      "sourcePngSha256": "c4e5e14e0c6c6da8f3a6aba0965b5c52793f1a0b3785a2ae538d7a3b0f6767ef",
+      "archiveFile": "essentique-result-eilish-no-2-390.webp",
+      "webpSha256": "36d224cb5f7c01a7664fea9449e24df7c70b73f8e04fbe7eeedb32f48cdf04c4",
+      "rgbaPixelsSha256": "971a3ccdb8b1290944f6dd642079cf37e63310cf019f00723733cf7c3721f405",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-ganymede-1280.png",
+      "sourcePngSha256": "2801197b869ebfd7fdab63297df87052fe6967c47e19b85fbfdbefae85cd3380",
+      "archiveFile": "essentique-result-ganymede-1280.webp",
+      "webpSha256": "c6a1b30d41ec141540e3621a4d22b9633c999f3d0c2cbe25ab7fe4fcea6203a8",
+      "rgbaPixelsSha256": "804d7c5a916368bfdda139400b75e6a0c9b6ecc7009684786f91c51a14affa27",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-ganymede-320.png",
+      "sourcePngSha256": "0e3f6bf37343d544e635d0f301f72a0c3301b678c38bb0c3f028e0a5d3e2112b",
+      "archiveFile": "essentique-result-ganymede-320.webp",
+      "webpSha256": "2cf2dffadd28db57eeb18fac8a33972d442948dcd63c4dbc94ea1ac7572894c3",
+      "rgbaPixelsSha256": "d968f4fb7a08005e68c58b0650f41a609c05268e0b77ab5f79b8a6b4b8026685",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-ganymede-390.png",
+      "sourcePngSha256": "20e1ab7a1ef553dba05d85f7bcfd9c2850b1994ab074f3e61bd7c48e97b8444c",
+      "archiveFile": "essentique-result-ganymede-390.webp",
+      "webpSha256": "0ea9622dc06cba8455940490677ae093c7043cfed96857a8720ffd64aa67a396",
+      "rgbaPixelsSha256": "c969e2226ac560d584c6a9ff04b2f7c5c76d2320c65aeb0624beb045855ed962",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-guidance-1280.png",
+      "sourcePngSha256": "62e6913312cde0b04d9ecc3307315738f8634a544c124d5338e9051942dc497a",
+      "archiveFile": "essentique-result-guidance-1280.webp",
+      "webpSha256": "cfa12bca07261ee40b43fdb429fd37e6b299c8f835ae737d29cb6e19ea1fd364",
+      "rgbaPixelsSha256": "97fe0ceaefed2ae313f2f5e3841617af9cac5f7487e303a96a85657b0916191c",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-guidance-320.png",
+      "sourcePngSha256": "7fea6c1943cbc5e75dd3f5fc4382ff42d271df5a4b143714f2a81b89b4290f00",
+      "archiveFile": "essentique-result-guidance-320.webp",
+      "webpSha256": "37325bf4181410119972c4dea5fd45aa94065ebdb9953e7b55a09701eb63e63c",
+      "rgbaPixelsSha256": "06240bbb9533fcb2507f128060540db5757a2c88337836f40cb5f36ddb0a3914",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-guidance-390.png",
+      "sourcePngSha256": "ca53de3f7be1195a92ff206f2efcf0654dcfb637edca18098545c55e83a49d85",
+      "archiveFile": "essentique-result-guidance-390.webp",
+      "webpSha256": "58bd258c0c98ac91041a41d2a857c6af0e1a0615280b0b056774e73a6150f3de",
+      "rgbaPixelsSha256": "e7cc1db1aa3faf3d3f8e87c1a397753a7aecb34361c2355ee4bdf32d22a5a1fd",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-hundred-silent-ways-1280.png",
+      "sourcePngSha256": "7099809fdc2c526264af506efae749f6ab6432201344ee069c220d58c8bb51dd",
+      "archiveFile": "essentique-result-hundred-silent-ways-1280.webp",
+      "webpSha256": "8d1e175a9a916209a39136e59734abbc1cdc9943246fe42006c017358a760e9d",
+      "rgbaPixelsSha256": "8a8365021161258f7a89b29e7bfc2527ce2e1a8d2c9950ebbd91eade5f3db9bb",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-hundred-silent-ways-320.png",
+      "sourcePngSha256": "a36c499b3665916c354610b359ea78d2847d68c97fe148f966786575f0a81428",
+      "archiveFile": "essentique-result-hundred-silent-ways-320.webp",
+      "webpSha256": "f7de45632ca8936158db03aeb8a8ce3a4cd80dbf050824267b72d6019cfdb668",
+      "rgbaPixelsSha256": "f310782f872522b11a62205c8c4798ba133f25dcffb851ee26020090580448eb",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-hundred-silent-ways-390.png",
+      "sourcePngSha256": "551fedf529524c781faa11e41485ab7328518f3b90ef9c068efc2c7b594d2b94",
+      "archiveFile": "essentique-result-hundred-silent-ways-390.webp",
+      "webpSha256": "4ddb2a233ef30d84c5514dc1294f43d6913411b4873e24446a586bb199a6209c",
+      "rgbaPixelsSha256": "4f7ac26c633ca765c7af02bbe779f2b69766c465a18bee009e58fb6ab241f4a3",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-not-a-perfume-1280.png",
+      "sourcePngSha256": "389be8f11ff5bdebe13e56824194959d432daaeeffd929a241306aff8d7c003d",
+      "archiveFile": "essentique-result-not-a-perfume-1280.webp",
+      "webpSha256": "a411240acf455adcc203b55837da2f3cc6dd201baccf952fcca1dc6753b20fb4",
+      "rgbaPixelsSha256": "7f6cc53f592dbbcd3d2e03cfdb36021cfa6fe99201dd82984d7ed490c4fd5a9d",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-not-a-perfume-320.png",
+      "sourcePngSha256": "fcb4ba20d42321a21c868f21d9bcb391b1fbff3a2b71ea3d7ecc196a236c5872",
+      "archiveFile": "essentique-result-not-a-perfume-320.webp",
+      "webpSha256": "694d0f88bc59489675c229c85f49a091cf99ea0091c0ddbd333de570117b8a85",
+      "rgbaPixelsSha256": "4321a7a2a99f43ec9f144b891ea73b00a83149771856eedcd193fdf1e2020b03",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-not-a-perfume-390.png",
+      "sourcePngSha256": "7f72bff4520ed2594ed76702021a6b1be2c481a9ed645832fac49001138b36e7",
+      "archiveFile": "essentique-result-not-a-perfume-390.webp",
+      "webpSha256": "59ef914d970830a00a5a2330bd169371be9b8916dd4df88b9fe4fa0c7605edea",
+      "rgbaPixelsSha256": "bc909bedf3cd3346823dd79aa344fff09e99a35230a0a9dde7e474329f0f0883",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-orange-x-santal-1280.png",
+      "sourcePngSha256": "652df8302a5800805c5db23c6fa4781bcaa183bf8d861318f0e6fb2eeb6d1480",
+      "archiveFile": "essentique-result-orange-x-santal-1280.webp",
+      "webpSha256": "5e188cb371b84148d25c353ec7e8b54de2422f949f20a967092aece514609b02",
+      "rgbaPixelsSha256": "0fe26c1cd5065271cb09d1b862ce4bd98d40f0df07c3b335a12dd36bbf533638",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-orange-x-santal-320.png",
+      "sourcePngSha256": "8c6302f66dd30a972573df46a86f5a0b4e6d4fef63f4df04cf280cc5652d40f5",
+      "archiveFile": "essentique-result-orange-x-santal-320.webp",
+      "webpSha256": "49c91bab5b4aa8d4dfff0fa0f7109aa970689fcabdeb1edca370a72254b6b204",
+      "rgbaPixelsSha256": "240aa242f7b903b9a52909f4a307d23b075c0cf6343d06ff9f49a025e4837181",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-orange-x-santal-390.png",
+      "sourcePngSha256": "81f66e72168574bf5506efdd922cfbce6db7a26359bf6e78e333d8b2867117c2",
+      "archiveFile": "essentique-result-orange-x-santal-390.webp",
+      "webpSha256": "66117eed4c3dc63d0f20df22aa0cd9adc7da91710bd2b1b7364c739f543f9063",
+      "rgbaPixelsSha256": "6edcff2be7bea68f41726d4132874948459c631caf4b19cb1c5339fbbf601b47",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-the-ghost-in-the-shell-1280.png",
+      "sourcePngSha256": "1aa2c45af6ae5553740e07f1ab1649b9c823e09432a83f235151227a222d3f1a",
+      "archiveFile": "essentique-result-the-ghost-in-the-shell-1280.webp",
+      "webpSha256": "ee871ed9520af8c807ee7cbf9675b70c3e6d5ab7251db921e341bf14550b2705",
+      "rgbaPixelsSha256": "ce646b6d0c6b15ff8e80d2fd45a3f9514fbf253a64cb5e7651f481ee8228cd84",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-the-ghost-in-the-shell-320.png",
+      "sourcePngSha256": "99447c75919f8e9e7f3c35805c9031d3a312cbb6ad29c771766da3ef7cdbc2c4",
+      "archiveFile": "essentique-result-the-ghost-in-the-shell-320.webp",
+      "webpSha256": "4bce3c97adad5441be76dd9e9603d050528301c9d8505f2098a73bb7f688bdcf",
+      "rgbaPixelsSha256": "cabe57b03276fae30112dbbd80587bfa6d88c5e0a884c880fb1877a1f46a9bd8",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-result-the-ghost-in-the-shell-390.png",
+      "sourcePngSha256": "437e791eb9925cbc40eb4a588f2d8192442486f2b8d1d1fea8c94fe13512b9dd",
+      "archiveFile": "essentique-result-the-ghost-in-the-shell-390.webp",
+      "webpSha256": "470a7ca5c76b5b31f326020e95ec3162466f9c59f659e9e1e0282fb379aa173e",
+      "rgbaPixelsSha256": "e473c26181d6c02e491ae6224539c7146dc1ea8f191b6962978a23a12afa576d",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-waiting-1280.png",
+      "sourcePngSha256": "43f324644f0653fe34f481a6a264843471449b4b59f4a83ea37eea0c549ec168",
+      "archiveFile": "essentique-waiting-1280.webp",
+      "webpSha256": "7a416e6350d550ad9ec230cbb361b6ca8b0017fd08ac12d65dcace737885a0cd",
+      "rgbaPixelsSha256": "889d5ce192660cf1db977589f106252928873ab66a9dd02971a00e51daa38cbb",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-waiting-320.png",
+      "sourcePngSha256": "a295538ff236110295d82b3732c3641be3cbaba31301989f8b17ccb2d569a865",
+      "archiveFile": "essentique-waiting-320.webp",
+      "webpSha256": "591f1b525f44e2853ec4c301c2f0b6dee0522b6a76875294ac5f9ffb6c9e2c65",
+      "rgbaPixelsSha256": "fc026d2e4b117995c529e25af6e8b4aa64c03a04ed54b40ceac1dce8525bf6d4",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/essentique-waiting-390.png",
+      "sourcePngSha256": "a2bfcf7a775f7213d472a234251805c009360aa89330d32bd3e2ce536eec75bc",
+      "archiveFile": "essentique-waiting-390.webp",
+      "webpSha256": "c2ed2d4ddee88d08c4e1272b936324a5b7d73b89b11a6c783a39653f80da6fc7",
+      "rgbaPixelsSha256": "b872196b7a536e0d42922b177eba0d046678bbf59204b6c63d27d082f9a959ae",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-card-0-1280.png",
+      "sourcePngSha256": "6137540c250c733f812d61b1ce47e331920c0cdaf8634e941ae770be652bb139",
+      "archiveFile": "fragrancesamples-card-0-1280.webp",
+      "webpSha256": "fb5c31418b3ae99185f213b78a1446af6ec3872065992750b6e5b1706ae54c45",
+      "rgbaPixelsSha256": "558642df190b105efe7a8afc28a5d470cbeec5201ebb46328a2f0e9647f225e8",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-card-0-320.png",
+      "sourcePngSha256": "98e69ff0368583ec932eedd3a388e0f1e23f11a6fe7e9ef0702a015ea4bebfb7",
+      "archiveFile": "fragrancesamples-card-0-320.webp",
+      "webpSha256": "dca14467805b1bab94ea21b1ebfcd55faf4b517780ae0648764e5d7025daf8d8",
+      "rgbaPixelsSha256": "cb6c3b995278a4694abe440a41174650edf937723e472bceaf5820c3462efdcb",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-card-0-390.png",
+      "sourcePngSha256": "49bc092f54c06ee3f2ce4829a4a72575a2c3fa9b1a2212d6408f00c144730ee0",
+      "archiveFile": "fragrancesamples-card-0-390.webp",
+      "webpSha256": "b0d16850fcba66d33163ed7cc06b34ba03c1c6e1f61630178679c9daebba1b9e",
+      "rgbaPixelsSha256": "ec0292848d160e533235bdc3060885a637d37d7b76e768e9cc3cec769b8510d2",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-card-1-1280.png",
+      "sourcePngSha256": "0a8da8d69162b10929b7bc8e9824d5fe70f4f19d843508e65d16258e691c65e5",
+      "archiveFile": "fragrancesamples-card-1-1280.webp",
+      "webpSha256": "755b1705df49fe2137fd14e18ea8f34fa670e13b8ab337a1f76f2abfaf01cdc1",
+      "rgbaPixelsSha256": "395dcd095e94463d3f5c691e31733215a7b594c2823d1711d476c0571d86cc53",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-card-1-320.png",
+      "sourcePngSha256": "6be9d5c2a703d2ca51497c35f6b10fc8037ba5f811e541835254d6dc3d6bc58a",
+      "archiveFile": "fragrancesamples-card-1-320.webp",
+      "webpSha256": "7622781d588972e3ab550a13a62446aff779074b563b174e4c312850665c9d2a",
+      "rgbaPixelsSha256": "52eac0e8f588902fc2d99fcadeb393f0247e865aac5619a533291bd5a7073693",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-card-1-390.png",
+      "sourcePngSha256": "21f0211cf2a3247e565d0069bd60be6fb2ee21ac13f58307ce7d12825a77321c",
+      "archiveFile": "fragrancesamples-card-1-390.webp",
+      "webpSha256": "620adb1fc9a9d40044b6b87967bea656be41e238a77faef123f7b63d876b44ec",
+      "rgbaPixelsSha256": "b526744a866aadad75dcd77b1e458b36fb82f4436b74a0b5461e9db34da0677d",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-card-2-1280.png",
+      "sourcePngSha256": "7c70bf8ea100780f4becc1f864879a190cd5f3f8c4b83ec99307916c4a5f479d",
+      "archiveFile": "fragrancesamples-card-2-1280.webp",
+      "webpSha256": "0f97dbab381ed76b21b160ac9441fc330b0518d53f0fb6e1233576697b9d2ecd",
+      "rgbaPixelsSha256": "cbf95ed868e1edbda6e1850a3b6790f3651105db9887571506e62dbf6d20b974",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-card-2-320.png",
+      "sourcePngSha256": "1aa60dbe83e2b0277900fd22d5d461477d25e0549b524ab0d2d3292323c12339",
+      "archiveFile": "fragrancesamples-card-2-320.webp",
+      "webpSha256": "7910e329447487349d972c97818946f23276555c39571353e7a5262cd7477b07",
+      "rgbaPixelsSha256": "5d2f23f87385df70de237de36ec58868ca9ff5ebe72297c4f3329e5d2f1a7dad",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-card-2-390.png",
+      "sourcePngSha256": "80ba7536ab745b1b22bbbeb1279cf0ce9f67d3c3fa849fc99a77d3e4c048f34d",
+      "archiveFile": "fragrancesamples-card-2-390.webp",
+      "webpSha256": "d98cb62a3e83e9e2cfd0c482c0b23e38178f9ceb8cea0c623453d9a897a610ed",
+      "rgbaPixelsSha256": "fd58ea02085a359dac2616a455514f9a95e77a7fd993c38acf3a371c83b4578d",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-offer-1280.png",
+      "sourcePngSha256": "4397796a7680d1919ebe58f27433c1d7129cf78c05d3d4106ae673f38b449e9a",
+      "archiveFile": "fragrancesamples-offer-1280.webp",
+      "webpSha256": "402cf7a324482d28bed9be7aaff42d675e3a8dcfe13b1a0213b9751115920513",
+      "rgbaPixelsSha256": "5c47204da23a7ad6d267eb8773fe0ffb8924e6357b54d9d8ff87dfcee78da521",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-offer-320.png",
+      "sourcePngSha256": "8f75fe7b8ace3fdee10b86a04f6788504abce388efd4061a52a30031c1781167",
+      "archiveFile": "fragrancesamples-offer-320.webp",
+      "webpSha256": "65bb46b6a1bf8f916b87f53606f683bb805aab3c0a5f76a68ede12a225d3545a",
+      "rgbaPixelsSha256": "562054ba821584ec14595c642b3a196a27bb1cc4893abfa718d69c24be94415f",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-offer-390.png",
+      "sourcePngSha256": "e894135e06030ed15deb58606f600bc58ed97dd636538606aef95dd11c159e63",
+      "archiveFile": "fragrancesamples-offer-390.webp",
+      "webpSha256": "bd7fed7e9e464faf9ff094031565ff120bd0e6e50e1b34a44bce96791f9e1581",
+      "rgbaPixelsSha256": "c747b6bb0e435943438e7b26592ea7e21f76cf2b037142cc0d2ef5f085f91da6",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-0-1280.png",
+      "sourcePngSha256": "c7b9b9617ae697e89607aa92af02d269c9a9869cb8e90266d1d7f69ec8e94ea6",
+      "archiveFile": "fragrancesamples-question-delta-0-1280.webp",
+      "webpSha256": "acf3cc6ccd7ec72619a5d6f91a5c649a8a66757561eff689666fe678263b6ea8",
+      "rgbaPixelsSha256": "f1830ed6725229cd04650d2de525a1862593c87b5b08d944da3e12571ac44df5",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-0-320.png",
+      "sourcePngSha256": "857a7b609eda20af3b4db049c833a9d5a6a3521c658ee4537bb1d88128b66cca",
+      "archiveFile": "fragrancesamples-question-delta-0-320.webp",
+      "webpSha256": "2748c571c789cebc9449b50ac635466f44eca9de04c326a89ce268e8aa383a58",
+      "rgbaPixelsSha256": "8841f172080db5e16eb0e753714f74e913da5a55db343985c93b827363aa9829",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-0-390.png",
+      "sourcePngSha256": "b427d395b519bd8c5cb98879b3b9558c8a3c6f25bd74dccdddb2f4d1c22290ec",
+      "archiveFile": "fragrancesamples-question-delta-0-390.webp",
+      "webpSha256": "86ee5ebaafd2084c3442207eec31aec75cdb699f09afb28411a67fd3133e77fa",
+      "rgbaPixelsSha256": "31f190bee553232396d755b18af11687130e3d4de3c0ab683aa14f701ee9edbd",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-1-1280.png",
+      "sourcePngSha256": "423dc25259fcd22d7365148b1833dedc40b55eda82d8191966015719cf2251bc",
+      "archiveFile": "fragrancesamples-question-delta-1-1280.webp",
+      "webpSha256": "7a283490f03541b19b6ecc266655c2e4c571a5bb9b3bbf37aeaa7b15edd7c13b",
+      "rgbaPixelsSha256": "7e27dfd2c57b312a2cbff190a99361f8a18f19c82d7ddab6118580749a373535",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-1-320.png",
+      "sourcePngSha256": "e313a12538b9abc37d227e019d3c2d2e9d0e8a1ad653e80dfd58fd7d3849103b",
+      "archiveFile": "fragrancesamples-question-delta-1-320.webp",
+      "webpSha256": "f8f98100c7b6d6e5919b04785b9462b0d30668742edb43fbadd9c5519d391499",
+      "rgbaPixelsSha256": "2a53ae790c60260d2d09dc643f22438d099bd23d6b8e8ba1d440f4b5f568632a",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-1-390.png",
+      "sourcePngSha256": "e4438db2e812bb80ab0d5c54943e8b80c04c4ddca0d60a7642782c264adb895b",
+      "archiveFile": "fragrancesamples-question-delta-1-390.webp",
+      "webpSha256": "0c531b080ecb7d590a8d20dce2a655749428e4c16c63fb87220d57949e669a94",
+      "rgbaPixelsSha256": "478dd951b05261b59a844a8a9200b858999439855c7c95ed321505b4c5eec4d0",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-2-1280.png",
+      "sourcePngSha256": "9710f83772669fce1c073031fd437f975816799952d8c98168f396b3ce4ff50f",
+      "archiveFile": "fragrancesamples-question-delta-2-1280.webp",
+      "webpSha256": "b2ce1b79fb6e1ae205a175787b3195543a527b920a9af502524a17224d108dca",
+      "rgbaPixelsSha256": "0daec437e389507c11579e48af730e6f770d3a2a853c619f442c71f77e9fe566",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-2-320.png",
+      "sourcePngSha256": "b514622eeef1b13760692a48304b8d993e8e6f406cb01131438cd4b65aeed5a4",
+      "archiveFile": "fragrancesamples-question-delta-2-320.webp",
+      "webpSha256": "2e28073dfa298537380b2028a5eff9b816a0fc5c5098393e91e0602091bbfb5b",
+      "rgbaPixelsSha256": "54ef1c8d15bdae3b87b5dcec60cbd63a121c49d07d71691cf4a403e0b5507ffc",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-2-390.png",
+      "sourcePngSha256": "1aeb08205f53f5cb4bf604d028e4d9077a2e5f66b3bc6d79d227d9954b5e2171",
+      "archiveFile": "fragrancesamples-question-delta-2-390.webp",
+      "webpSha256": "683049da2dbac5bb58e7072c035e85bb95dbbdde61ffe49d8e01ce7de6fccd2a",
+      "rgbaPixelsSha256": "1dad2f2032136a6ac17d7758a485e29f57b0ca0c2df42fc3eef5455033a4609b",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-3-1280.png",
+      "sourcePngSha256": "c87bd8d6bfc39b07b2e8786db1f2f5c178c6e1547e020473848ab506801b2468",
+      "archiveFile": "fragrancesamples-question-delta-3-1280.webp",
+      "webpSha256": "61b80ef652901c32a29f2d04a1246d3bb35ac982535a10511618b889bd09b50a",
+      "rgbaPixelsSha256": "276e03c7f1106b9bc87f2c9ecfdb3c6d33033aecee7366b16fd90879f60e5b14",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-3-320.png",
+      "sourcePngSha256": "4aadeafc93513a7bc927618178780f7b7e5487cf30622c7628ba7808dd2e8234",
+      "archiveFile": "fragrancesamples-question-delta-3-320.webp",
+      "webpSha256": "2bbf03f145f0c78444059b201fc6e64e1bdfb5b191f072a4c77841ec4515735c",
+      "rgbaPixelsSha256": "8c33748bbb60eccd559b79b1a0e4b2f7ab7d3d479645ad2e94f4a21ca17b5b00",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-3-390.png",
+      "sourcePngSha256": "aa0c2b61ed1fdd9a9917883455720e5c0b5e238ab48bbd8409c28d6bb4e36f2b",
+      "archiveFile": "fragrancesamples-question-delta-3-390.webp",
+      "webpSha256": "4cba7fd7cd626c36ec897b9200344a543ffe9efa8c541e1d488a2a48ff3c5358",
+      "rgbaPixelsSha256": "ed472a5dc1d9219f1c12361c0bf516376ec6980f6b5e1c68ad68244ebd36594b",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-4-1280.png",
+      "sourcePngSha256": "444c9bd0b9c7cddb44ddd738c1649c5a9b85600519dcc0e247c651d585689a7e",
+      "archiveFile": "fragrancesamples-question-delta-4-1280.webp",
+      "webpSha256": "82d5f7f8c9ef544f3ccd7ea60f001629a14f856dfd40cb807c784cb14e931302",
+      "rgbaPixelsSha256": "42607110626e5db5fd4fcca5ddc921d112408dd1dc656aa4903a95cd45699c49",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-4-320.png",
+      "sourcePngSha256": "d9436685e89f0f2b29938745874ac14267e254b40dfb8ed20ab549760bc47986",
+      "archiveFile": "fragrancesamples-question-delta-4-320.webp",
+      "webpSha256": "a8cb3ded8ab0c505a254cb8c12a82f11238088c752ef74232ef213f3956ba4d5",
+      "rgbaPixelsSha256": "bff3ba5c739ea49843cb4d576b7769a9fd5d102a5f0d005df007dbedcdde7497",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-question-delta-4-390.png",
+      "sourcePngSha256": "b0a5706c39ff0bf2f6fbc63e5653e6cc7de4772647c5100ffe65432e1fbf0411",
+      "archiveFile": "fragrancesamples-question-delta-4-390.webp",
+      "webpSha256": "9729c14c733ea48fc9e865b731017d1e54ee6bff0b4e9ee9ec1a68bb46cc5fe8",
+      "rgbaPixelsSha256": "01c59449cd3e73d1d01c3c291d90bfa1acccf2a2a2ed0ae13f4bf83d8a6d7302",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-burberry-goddess-intense-1280.png",
+      "sourcePngSha256": "e03774fee6ddd544ef9ca86665b0b5a933c7cedfd30f7266cd817d7b9adbb0e1",
+      "archiveFile": "fragrancesamples-result-burberry-goddess-intense-1280.webp",
+      "webpSha256": "50d2ff0b40af4039c668c048ce6c0fda3e5b1db57e6be2c07fa1c6c6d695a2e1",
+      "rgbaPixelsSha256": "9be7d564afdff11204b10eddbd77468a89432894024efa739004a1f5aab2ae43",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-burberry-goddess-intense-320.png",
+      "sourcePngSha256": "67c286b8a01025baf6d4f503c418e9eaeab3bfffdccedebef616bf6c8ecd2db3",
+      "archiveFile": "fragrancesamples-result-burberry-goddess-intense-320.webp",
+      "webpSha256": "29a8a4c541e5fef89d9abf7f8011df2f633e0299c2d31c9a448a4c09470dfbd5",
+      "rgbaPixelsSha256": "cfa81046d8ff04575912a1a8ba3a5f241c7fe79b8467bf58edf36d554c52033f",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-burberry-goddess-intense-390.png",
+      "sourcePngSha256": "09053933616364bc4e78c681645a7ca35280d943ba14b7ef6d87a4acb1ffa302",
+      "archiveFile": "fragrancesamples-result-burberry-goddess-intense-390.webp",
+      "webpSha256": "5991e6babcea52bc0b2e7f44897f980bb016597331c409464bd4735b830ff486",
+      "rgbaPixelsSha256": "246ec407b39b93a03f303b6461e929d349e6fa47064c78bb061b2a2fb299ef60",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-jean-paul-gaultier-scandal-eau-de-parfum-1280.png",
+      "sourcePngSha256": "ecfb88f44d23d5d68cda03a580a53d5734f67a28e688842164240ef1f97126ae",
+      "archiveFile": "fragrancesamples-result-jean-paul-gaultier-scandal-eau-de-parfum-1280.webp",
+      "webpSha256": "b3e7ca09eea9e981b28e5ecb808f0f681adb803903e7197a762a7e2287ee1865",
+      "rgbaPixelsSha256": "e9fa22e493a26ffc43b49bd46470d6f2dea625776e3de26c2052e40d662bb46e",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-jean-paul-gaultier-scandal-eau-de-parfum-320.png",
+      "sourcePngSha256": "a84e62f2b76bbe0d3775301141202b22c39942b26256cd7df2f4eabba88d7907",
+      "archiveFile": "fragrancesamples-result-jean-paul-gaultier-scandal-eau-de-parfum-320.webp",
+      "webpSha256": "9b52e8af28977e2d5aa32fc2ad198acaec8ccdfdbce2b9028523734cbc206903",
+      "rgbaPixelsSha256": "677e4d05c56851f9f0204209e8f3622b320ef399a9803e7a5442f7077e5d97da",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-jean-paul-gaultier-scandal-eau-de-parfum-390.png",
+      "sourcePngSha256": "b8ba4d323684932b6effd6b5da1de4f6d2d501d7db2407a965e139d8dd15e929",
+      "archiveFile": "fragrancesamples-result-jean-paul-gaultier-scandal-eau-de-parfum-390.webp",
+      "webpSha256": "fe3acdc49fbbccb8d01cffada22e42cc1c51e16432e00f0dc9e6b7cb1d94132c",
+      "rgbaPixelsSha256": "b347443d12b376ccdedb3cf6cb256a819e40278580c9fe639652d8ccb40ab8a9",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-lancome-la-vie-est-belle-1280.png",
+      "sourcePngSha256": "a0413472852199d8a68144181997fab10aa2b0c9c66cc7168ded02788695cf39",
+      "archiveFile": "fragrancesamples-result-lancome-la-vie-est-belle-1280.webp",
+      "webpSha256": "f57b938eb2a79f158c89aa32c68e7d77b6d507bb7e788106cf373968604a47c5",
+      "rgbaPixelsSha256": "77020c479b1449ff94d307348c1d06671b39ec74502e8e3acd42cd328adc0f92",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-lancome-la-vie-est-belle-320.png",
+      "sourcePngSha256": "b576ebb4658e21b2d42e1160b06ed68f248cd5d638316cfa165ce08830c7b0c4",
+      "archiveFile": "fragrancesamples-result-lancome-la-vie-est-belle-320.webp",
+      "webpSha256": "f95696f287167cec61dced55fce8c9cf2b0c5a5c660a43bcf6d8e6f79c83b636",
+      "rgbaPixelsSha256": "1663eb88f67c30267a21a652067e1f2d2497e939bf7ec7b7f922a6c7fd30edb8",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-lancome-la-vie-est-belle-390.png",
+      "sourcePngSha256": "98b62f50f18d2ddb95070f42b4d16e70e6804e5be34c29f04582a8106f62553b",
+      "archiveFile": "fragrancesamples-result-lancome-la-vie-est-belle-390.webp",
+      "webpSha256": "7225a57967f0dd2c0d06024a7364e700040b2ab5771ef493eb77ad5aa3966375",
+      "rgbaPixelsSha256": "f109ac4f7705029f7d8a666172a6efd1e2f279749759386a706e0e3c76ca17f8",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-mancera-cedrat-boise-1280.png",
+      "sourcePngSha256": "737818bf873c8e79e5651ae52a44a7f7fd43a1ef836f51787e242deff8ad1f99",
+      "archiveFile": "fragrancesamples-result-mancera-cedrat-boise-1280.webp",
+      "webpSha256": "1cb741e0a58520e6dc682c2c797dd1b8770a3b5699550efd3592ea0485e8acc1",
+      "rgbaPixelsSha256": "300ecdcfdf098d0a72a3e79b99df2ec9caa0ecfce44966401ca1ab77bd945176",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-mancera-cedrat-boise-320.png",
+      "sourcePngSha256": "4e66e3f2b4435bf9c5a00f5eec2738bcc65da08f4f1f2e2a453456bfdb7bb045",
+      "archiveFile": "fragrancesamples-result-mancera-cedrat-boise-320.webp",
+      "webpSha256": "c13d4677601e86b264ce01e2d15a9d201ff361c5df5f429b54e6a387ede0d70a",
+      "rgbaPixelsSha256": "65433bfa65208ba2cd3aa697d6f352ffd6b2d6684b5800eec2d52c9212113ade",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-mancera-cedrat-boise-390.png",
+      "sourcePngSha256": "6d3ef8d61ea74b5ddd6cb59fc3851eb44bb7c259989fe0c3737c15f91894ddcb",
+      "archiveFile": "fragrancesamples-result-mancera-cedrat-boise-390.webp",
+      "webpSha256": "009f16587629037ff9a1bf989cb0c398467455e9fe9bd67e9f983183dbaf0c64",
+      "rgbaPixelsSha256": "a904afe680d89d8b7ecd3ac1306f3c995dfa8094d7da00e6a81b11fb7b42696e",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-mancera-french-riviera-1280.png",
+      "sourcePngSha256": "588205e16cd1a9ab511253b615ecb3f04b3c8608a1cb9643b1ccf0e972cec7b5",
+      "archiveFile": "fragrancesamples-result-mancera-french-riviera-1280.webp",
+      "webpSha256": "8f3e793c9c287c2a2d5c3a90268846fc58ef2f02ebafc804e8edf59a12e40e51",
+      "rgbaPixelsSha256": "0151a99bb886a4dfe172d308a0ed1588978bb0aca663c1b6f311efab1955ed3c",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-mancera-french-riviera-320.png",
+      "sourcePngSha256": "223453b9790e53f7eafc52d3c1cf01f8af3c3b116942aafa42db08fc559b9926",
+      "archiveFile": "fragrancesamples-result-mancera-french-riviera-320.webp",
+      "webpSha256": "ac6806bf209cb590be79174518fb6ef79b3e4c1968053c261d437ef51a0e0473",
+      "rgbaPixelsSha256": "9d49424c4d75cf4880ed44990ce028f37c16253e77997355d594a4ecd9599c70",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-mancera-french-riviera-390.png",
+      "sourcePngSha256": "7d1296fdbce095feaa4d3d05fff5ddcb6d6d01cd0b54dbfbd6e936dd95bfa3ee",
+      "archiveFile": "fragrancesamples-result-mancera-french-riviera-390.webp",
+      "webpSha256": "7a8be2e48a076855ea34eed3775bab9907a4fc99ca73c4084c901ac541c879ad",
+      "rgbaPixelsSha256": "15b5fe9cdcd590d8177a2a9bb1e2ceda62bcdc4794a6e49a613e697f930b02e3",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-note-de-yuzu-1280.png",
+      "sourcePngSha256": "806469696b1c647ffde04d26ab5d7adf5b16545d67093787da8781d8395b53ba",
+      "archiveFile": "fragrancesamples-result-note-de-yuzu-1280.webp",
+      "webpSha256": "d23b69d013d1c821f68f4a0c9aa9e65dac09576312a6282c40e3a5dcfe891463",
+      "rgbaPixelsSha256": "e3d56da35d8f850b05139716f389737d83154e5659ab5d7fe6d6e525dd1b813c",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-note-de-yuzu-320.png",
+      "sourcePngSha256": "8549eda58bad074568a9ff0a755bb47db5c81951b069ed7d23a910a8d13127ad",
+      "archiveFile": "fragrancesamples-result-note-de-yuzu-320.webp",
+      "webpSha256": "2af60f9b0c3cb8dc94cb6c4c8d1620ea8470ce5b87bfb9be46e621f15ec2c899",
+      "rgbaPixelsSha256": "75e4ebe1c79b966f1040eb5d318d7ce55eee736bab122f3f23bb43caed464ad7",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-note-de-yuzu-390.png",
+      "sourcePngSha256": "0bf3051c7430ca7f617b7de62b445be61db7a9d3e7c88979514232959eeeb660",
+      "archiveFile": "fragrancesamples-result-note-de-yuzu-390.webp",
+      "webpSha256": "898e562442ba8ae3871c10f462e41a256fbf41de92245f8a5b6ed240572e5dd0",
+      "rgbaPixelsSha256": "4974b932ea241f8e41d0961e222c6ca5631037291abbd29fb6a4627d5036dd32",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-parfums-de-marly-percival-edp-1280.png",
+      "sourcePngSha256": "ef4df80387317295ed85a7fc8b5abed3dfcd3cd44d77839cbb3ab1a5df03fbed",
+      "archiveFile": "fragrancesamples-result-parfums-de-marly-percival-edp-1280.webp",
+      "webpSha256": "60f3649558cd67c30cb437fb2def1b739d8e41a2f1243ac14595552d57b58469",
+      "rgbaPixelsSha256": "b4b106600d0a9c0e865636104629ee0662fc85c6641cafad43a9122c28f13912",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-parfums-de-marly-percival-edp-320.png",
+      "sourcePngSha256": "b510bd2132039e7c408a0d81eaceabeb8a2633dc3d4e7fae117157f6466409fd",
+      "archiveFile": "fragrancesamples-result-parfums-de-marly-percival-edp-320.webp",
+      "webpSha256": "45661f1cefa28b0b83e9ba9c2140727e15515d099f1e0078bf5057839f919914",
+      "rgbaPixelsSha256": "1222e5966b69421ecbe9cebe9df8dbcd5f8c60a876ad3cb285a12fcf9794dd89",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-parfums-de-marly-percival-edp-390.png",
+      "sourcePngSha256": "c6d5e8fc48d8d9cd96f46f8d9f5397c3192cf2e4acfd4b2c90a2519dd72debd2",
+      "archiveFile": "fragrancesamples-result-parfums-de-marly-percival-edp-390.webp",
+      "webpSha256": "18e7b955635c6efe2e0947709e26cc551a8164227ad9377bbc1153e93c30ead5",
+      "rgbaPixelsSha256": "dba56370fb444c1ebc98da31ed05d6cd7507e2cfef5c6196c061567cc0b8acc1",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-prada-candy-eau-de-parfum-1280.png",
+      "sourcePngSha256": "d069886503f18ab6b0e1bd0ab24e736feafbb2f0eb5c9e420e26f4b0224d2789",
+      "archiveFile": "fragrancesamples-result-prada-candy-eau-de-parfum-1280.webp",
+      "webpSha256": "cc404c2b59d2d63a375af4d73cbe8bbe5699dd9d9a2f799494600e01882ab8ff",
+      "rgbaPixelsSha256": "2a1ed97d7b01d65672a4a5fca457efb25b9cfa4e67d847e8f683c86f2666f4e3",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-prada-candy-eau-de-parfum-320.png",
+      "sourcePngSha256": "4c477b25bcc660c92bea96b778ffbb1730cbf196ece1adaefa5d955c51b3c219",
+      "archiveFile": "fragrancesamples-result-prada-candy-eau-de-parfum-320.webp",
+      "webpSha256": "e1493a97d6e325c04f975fc98bebf79619af5b2d838206fa7b2bc7417b0ef9d0",
+      "rgbaPixelsSha256": "7cca18b9b21b3ebcd092b1cc38fc79485af470b0fe1ff19d46d556f20ec7cd73",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-prada-candy-eau-de-parfum-390.png",
+      "sourcePngSha256": "a4a71873992b7c416d9b55b0b7d030fc869f70cb4c98550392611b208cac6def",
+      "archiveFile": "fragrancesamples-result-prada-candy-eau-de-parfum-390.webp",
+      "webpSha256": "3f80c19e304c39ce0c8ad8c3234b75f294f152d497bc7f3d487fca0b4c4518ca",
+      "rgbaPixelsSha256": "04ab70f850c62a138e46eea821d23fd624160432cd78d30821370e94ac2ddc1a",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-spicebomb-extreme-od-viktor-rolf-1280.png",
+      "sourcePngSha256": "346fd28f4111a1dceb1d8e08608ba21a53364b6218fcf6e88c8995bb898469bc",
+      "archiveFile": "fragrancesamples-result-spicebomb-extreme-od-viktor-rolf-1280.webp",
+      "webpSha256": "1120df5bcacfcf4214c9337a2e3e7e91d78adc13158be5b394a744372487dfa7",
+      "rgbaPixelsSha256": "3027b2930283c907e8be47a2c01bfe4cab55fcd5cd87574002caa71eead662e3",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-spicebomb-extreme-od-viktor-rolf-320.png",
+      "sourcePngSha256": "6febdb3442c7db8fcb115699e3f140b129743b4abd62919d4fb975ca4b5465b9",
+      "archiveFile": "fragrancesamples-result-spicebomb-extreme-od-viktor-rolf-320.webp",
+      "webpSha256": "b720286ca40a6727d92a94888409c655f905266a89e34c952254d77bbab14c29",
+      "rgbaPixelsSha256": "5addc68db389c6bc3c6e4542e29f691d3ef316ba79a2fe9066f720b4285d5cc1",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-spicebomb-extreme-od-viktor-rolf-390.png",
+      "sourcePngSha256": "d876ac0474e2426e23dfc74eacaafc5303c23f6278bc1358cf00735192b398ff",
+      "archiveFile": "fragrancesamples-result-spicebomb-extreme-od-viktor-rolf-390.webp",
+      "webpSha256": "b7d8cfffb11b9efbd8093d0a71ecc29498dae7dc448e3762ea90f2845f125b18",
+      "rgbaPixelsSha256": "5d276a7bd366ea3cf5fe14e9f2115d2c7387c6b87072bef5f7eb518cd5a0967c",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-versace-bright-crystal-absolu-1280.png",
+      "sourcePngSha256": "1655e7b1ede89b6a8131ef80ab78ba957d0aeb81bc025b9f60c706891c80093d",
+      "archiveFile": "fragrancesamples-result-versace-bright-crystal-absolu-1280.webp",
+      "webpSha256": "1b2efb0000be140ffa56dadff26e91beab5080cad809cc129f24ae1d02a1ac9d",
+      "rgbaPixelsSha256": "16a78fd339da63e9594d87750e7615d2ed94184badd0659f2b6060109f8902cd",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-versace-bright-crystal-absolu-320.png",
+      "sourcePngSha256": "943805837bdada4be496dab126537c9e949d1b5929d2f67f10df78d25d0515f1",
+      "archiveFile": "fragrancesamples-result-versace-bright-crystal-absolu-320.webp",
+      "webpSha256": "61156c3c28640b139d70b63e33760896c1c1a5d768f64e949126eb962686fd78",
+      "rgbaPixelsSha256": "0306920e6b77cff7e491115ca10b6a3444507960e0312a4ec7b12b7620889485",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-versace-bright-crystal-absolu-390.png",
+      "sourcePngSha256": "c444defb4edaa894baca2c474c692caf2bd8ed4459b33e933ddb655aa07bb655",
+      "archiveFile": "fragrancesamples-result-versace-bright-crystal-absolu-390.webp",
+      "webpSha256": "b587f7890a08194a7728f9d49c79334d04e5b791d747670a833501776c431881",
+      "rgbaPixelsSha256": "80ef5d542be866312665f80988a5e97ea1faa2f69aa9da488df8b7998a7b5262",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-ysl-libre-1280.png",
+      "sourcePngSha256": "9db1d8e1d038deef2b0fda4ec32c025bb0b3f97cd70e8d0135c07a46c622a81a",
+      "archiveFile": "fragrancesamples-result-ysl-libre-1280.webp",
+      "webpSha256": "6422b79b21fc529539859376c2b24950f25d4cdf3b42e60b5af6dc4b3c562525",
+      "rgbaPixelsSha256": "506ae41f7f3914bf85d9042793f68323453d0631e2c20e2674546d2b56ade3f5",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-ysl-libre-320.png",
+      "sourcePngSha256": "44c6b9eb021248196d9c5d8ef6c532479401cce44f84e92444014a053c94d296",
+      "archiveFile": "fragrancesamples-result-ysl-libre-320.webp",
+      "webpSha256": "ce3b67afe67423934a39eb6c39264fba16d65b00860d543f977c59fa9ca4ef31",
+      "rgbaPixelsSha256": "a61c886d448d4113456727acc8d89060a8c0e19fc061fcceeb11f00cf660f5c8",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-ysl-libre-390.png",
+      "sourcePngSha256": "c8f1264a4cce5d4f4c2308cd7f71901b730a9e4c08fcc5d28fbfe9ba0ac4f25e",
+      "archiveFile": "fragrancesamples-result-ysl-libre-390.webp",
+      "webpSha256": "3a283a891112bfbc52335b65d9d1b6f94da8b6f85b1ac7e39a80d38eed55533e",
+      "rgbaPixelsSha256": "ced8b0b3619d5f8f6c861f39f5334f42a54f394633ccf6e44008ec8c15ea70c7",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-zimaya-sharaf-blend-edp-1280.png",
+      "sourcePngSha256": "5b81ac9f1b9098d5d04b778784c5ad971f070a4477c130962e9037c732dc8046",
+      "archiveFile": "fragrancesamples-result-zimaya-sharaf-blend-edp-1280.webp",
+      "webpSha256": "3df175a43a366b762c3753487238b61dcb02dfd0a70719b02f657857eb409998",
+      "rgbaPixelsSha256": "1f6f68238e3f30946773738a69cd93f755fbaade9bb310b77d1039eb070ff3a8",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-zimaya-sharaf-blend-edp-320.png",
+      "sourcePngSha256": "261a5dea3095c9e0f2c8801208f6adc36a25434daf543d556910a0ec77c559c8",
+      "archiveFile": "fragrancesamples-result-zimaya-sharaf-blend-edp-320.webp",
+      "webpSha256": "c275acdf723849f8e1df068411de311f6e2c3a1f1be8b90cba98b169d46237cd",
+      "rgbaPixelsSha256": "a6a9097353c221f5119d8476a62df6a97deee4e732a478444437ec5ad5904ff5",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-result-zimaya-sharaf-blend-edp-390.png",
+      "sourcePngSha256": "0acf24e7c04e5c2adaebbb3f6c4cf8ea7f50e0d90fe808779004b709ef3bedfb",
+      "archiveFile": "fragrancesamples-result-zimaya-sharaf-blend-edp-390.webp",
+      "webpSha256": "bc24924fa1698d203ccd6b3ed27df1415f5e989470f53b3ba9bab96e7d59f9db",
+      "rgbaPixelsSha256": "4dc1133de615cd9c3f8441c71ebdf287cea48f2590ec2b22213e97f7a56a3293",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-waiting-1280.png",
+      "sourcePngSha256": "4810139f805864b632ea138f8bc30dff69ddef4b1c5376b19a21d869a34e1b91",
+      "archiveFile": "fragrancesamples-waiting-1280.webp",
+      "webpSha256": "0746d8d7677eb2b13c4aa3296accb194da73d9dd7139e0d17367961f63b2c197",
+      "rgbaPixelsSha256": "6a8eaaa0ec17f47a5f6a92d1792189f8655414d5530047ab54f3ea665c05e2f9",
+      "pixelIdentical": true,
+      "width": 1280,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-waiting-320.png",
+      "sourcePngSha256": "c5c113d24c0841a4934b01d70ffbd4ee9118e39bf82c69dd62c1361ad2de17f0",
+      "archiveFile": "fragrancesamples-waiting-320.webp",
+      "webpSha256": "1f1780c62390752e697c064712b486b57a8df0ce0c10bd5ac9ccf6bf277acbc1",
+      "rgbaPixelsSha256": "942907dc40d4d5026c8c3fa97126438d83ef2633843154aaa1a67a4062b51828",
+      "pixelIdentical": true,
+      "width": 320,
+      "height": 900
+    },
+    {
+      "sourcePng": "canonical-final/fragrancesamples-waiting-390.png",
+      "sourcePngSha256": "58384ebc5b3cc67d0ebad8346d144616711688667caef351386964eae9d8a975",
+      "archiveFile": "fragrancesamples-waiting-390.webp",
+      "webpSha256": "fe180345d7d25948564062246d475e976660666ba226d32894cc066e35996a30",
+      "rgbaPixelsSha256": "92f7663768586c6a8b3643b2dc2065cc5448ebe50f4f10022b8c3c252c07bff4",
+      "pixelIdentical": true,
+      "width": 390,
+      "height": 900
+    }
+  ],
+  "archives": [
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/local-essentique-1280.zip",
+      "bytes": 2401491,
+      "sha256": "51f7624641e4831fe9b90899e730efa17ad1ee672be388f3d659237dd7866c69",
+      "originalScreenshotCount": 22,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/local-essentique-320.zip",
+      "bytes": 2119218,
+      "sha256": "30f4a267a9123e41b72277167fe48ffcf8911afe85626c5f130391513f32a040",
+      "originalScreenshotCount": 22,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/local-essentique-390.zip",
+      "bytes": 2011130,
+      "sha256": "13aac9611876d41a0ebf875b9e04747c81a46e26645a728d2f34c96458529e92",
+      "originalScreenshotCount": 22,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/local-fragrancesamples-1280.zip",
+      "bytes": 3065983,
+      "sha256": "6c91363ab0761637b5765e98da15fa44ad14183a50f23789fadd0a632438dc42",
+      "originalScreenshotCount": 22,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/local-fragrancesamples-320.zip",
+      "bytes": 2556937,
+      "sha256": "7b76fd6fc599a774b2bf7ba5fc6b1c5705c52c1a4101a208e63ae52d4380fda8",
+      "originalScreenshotCount": 22,
+      "derivedReviewSheets": 3
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/essentique-fragrancesamples-20261111/archives/local-fragrancesamples-390.zip",
+      "bytes": 2501340,
+      "sha256": "2de413de7201844e741270b19007cdffc9ab41b310e4481e672b04834c6c0ee7",
+      "originalScreenshotCount": 22,
+      "derivedReviewSheets": 3
+    }
+  ]
+}
