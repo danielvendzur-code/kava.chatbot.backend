@@ -1,0 +1,513 @@
+{
+  "checkedAt": "2026-11-11T17:17:47.901727+00:00",
+  "scope": "Offline review module on immutable c9 core with explicit one-line fixture loader, NOT registered/shared runtime/Preview QA",
+  "results": [
+    {
+      "id": "nice",
+      "width": 320,
+      "basePrice": "2 350 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/",
+      "screenshot": "myskino-extras-nice-320.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "13487",
+        "volume": "10 ml",
+        "price": "600 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "2 950 Kč",
+      "selectedScreenshot": "myskino-selected-nice-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-nice-320.png",
+      "compareScreenshot": "myskino-pair-nice-320.png",
+      "comparisonIds": [
+        "nice",
+        "riviera"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "riviera",
+      "width": 320,
+      "basePrice": "4 375 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/bon-parfumeur-005-riviera-absolue-niche-parfem/",
+      "screenshot": "myskino-extras-riviera-320.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "14141",
+        "volume": "15 ml",
+        "price": "1 375 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "5 750 Kč",
+      "selectedScreenshot": "myskino-selected-riviera-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-riviera-320.png",
+      "compareScreenshot": "myskino-pair-riviera-320.png",
+      "comparisonIds": [
+        "riviera",
+        "nice"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "gozo",
+      "width": 320,
+      "basePrice": "7 000 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/jeroboam-gozo-niche-parfem/",
+      "screenshot": "myskino-extras-gozo-320.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "13553",
+        "volume": "30 ml",
+        "price": "2 750 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "9 750 Kč",
+      "selectedScreenshot": "myskino-selected-gozo-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-gozo-320.png",
+      "compareScreenshot": "myskino-pair-gozo-320.png",
+      "comparisonIds": [
+        "gozo",
+        "nice"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "kokoa",
+      "width": 320,
+      "basePrice": "2 500 Kč",
+      "pack": "50 ml",
+      "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/",
+      "screenshot": "myskino-extras-kokoa-320.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "14398",
+        "volume": "10 ml",
+        "price": "875 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "3 375 Kč",
+      "selectedScreenshot": "myskino-selected-kokoa-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-kokoa-320.png",
+      "compareScreenshot": "myskino-pair-kokoa-320.png",
+      "comparisonIds": [
+        "kokoa",
+        "ambrelatte"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "saint",
+      "width": 320,
+      "basePrice": "5 250 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/nicola-saint-honore-niche-parfem/",
+      "screenshot": "myskino-extras-saint-320.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "12680",
+        "volume": "30 ml",
+        "price": "2 250 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "7 500 Kč",
+      "selectedScreenshot": "myskino-selected-saint-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-saint-320.png",
+      "compareScreenshot": "myskino-pair-saint-320.png",
+      "comparisonIds": [
+        "saint",
+        "ambrelatte"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "fire",
+      "width": 320,
+      "basePrice": "4 000 Kč",
+      "pack": "75 ml",
+      "url": "https://www.myskino.cz/jovoy-fire-at-will-niche-parfem/",
+      "screenshot": "myskino-extras-fire-320.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "12947",
+        "volume": "15 ml",
+        "price": "1 125 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "5 125 Kč",
+      "selectedScreenshot": "myskino-selected-fire-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-fire-320.png",
+      "compareScreenshot": "myskino-pair-fire-320.png",
+      "comparisonIds": [
+        "fire",
+        "saint"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "ambrelatte",
+      "width": 320,
+      "basePrice": "2 350 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/essential-parfums-ambre-latte-niche-parfem/",
+      "screenshot": "myskino-extras-ambrelatte-320.png",
+      "defaultUnchecked": true,
+      "addon": null,
+      "imagesDecoded": true,
+      "notesScreenshot": "myskino-notes-ambrelatte-320.png",
+      "compareScreenshot": "myskino-pair-ambrelatte-320.png",
+      "comparisonIds": [
+        "ambrelatte",
+        "saint"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "nice",
+      "width": 390,
+      "basePrice": "2 350 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/",
+      "screenshot": "myskino-extras-nice-390.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "13487",
+        "volume": "10 ml",
+        "price": "600 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "2 950 Kč",
+      "selectedScreenshot": "myskino-selected-nice-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-nice-390.png",
+      "compareScreenshot": "myskino-pair-nice-390.png",
+      "comparisonIds": [
+        "nice",
+        "riviera"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "riviera",
+      "width": 390,
+      "basePrice": "4 375 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/bon-parfumeur-005-riviera-absolue-niche-parfem/",
+      "screenshot": "myskino-extras-riviera-390.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "14141",
+        "volume": "15 ml",
+        "price": "1 375 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "5 750 Kč",
+      "selectedScreenshot": "myskino-selected-riviera-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-riviera-390.png",
+      "compareScreenshot": "myskino-pair-riviera-390.png",
+      "comparisonIds": [
+        "riviera",
+        "nice"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "gozo",
+      "width": 390,
+      "basePrice": "7 000 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/jeroboam-gozo-niche-parfem/",
+      "screenshot": "myskino-extras-gozo-390.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "13553",
+        "volume": "30 ml",
+        "price": "2 750 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "9 750 Kč",
+      "selectedScreenshot": "myskino-selected-gozo-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-gozo-390.png",
+      "compareScreenshot": "myskino-pair-gozo-390.png",
+      "comparisonIds": [
+        "gozo",
+        "nice"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "kokoa",
+      "width": 390,
+      "basePrice": "2 500 Kč",
+      "pack": "50 ml",
+      "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/",
+      "screenshot": "myskino-extras-kokoa-390.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "14398",
+        "volume": "10 ml",
+        "price": "875 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "3 375 Kč",
+      "selectedScreenshot": "myskino-selected-kokoa-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-kokoa-390.png",
+      "compareScreenshot": "myskino-pair-kokoa-390.png",
+      "comparisonIds": [
+        "kokoa",
+        "ambrelatte"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "saint",
+      "width": 390,
+      "basePrice": "5 250 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/nicola-saint-honore-niche-parfem/",
+      "screenshot": "myskino-extras-saint-390.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "12680",
+        "volume": "30 ml",
+        "price": "2 250 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "7 500 Kč",
+      "selectedScreenshot": "myskino-selected-saint-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-saint-390.png",
+      "compareScreenshot": "myskino-pair-saint-390.png",
+      "comparisonIds": [
+        "saint",
+        "ambrelatte"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "fire",
+      "width": 390,
+      "basePrice": "4 000 Kč",
+      "pack": "75 ml",
+      "url": "https://www.myskino.cz/jovoy-fire-at-will-niche-parfem/",
+      "screenshot": "myskino-extras-fire-390.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "12947",
+        "volume": "15 ml",
+        "price": "1 125 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "5 125 Kč",
+      "selectedScreenshot": "myskino-selected-fire-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-fire-390.png",
+      "compareScreenshot": "myskino-pair-fire-390.png",
+      "comparisonIds": [
+        "fire",
+        "saint"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "ambrelatte",
+      "width": 390,
+      "basePrice": "2 350 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/essential-parfums-ambre-latte-niche-parfem/",
+      "screenshot": "myskino-extras-ambrelatte-390.png",
+      "defaultUnchecked": true,
+      "addon": null,
+      "imagesDecoded": true,
+      "notesScreenshot": "myskino-notes-ambrelatte-390.png",
+      "compareScreenshot": "myskino-pair-ambrelatte-390.png",
+      "comparisonIds": [
+        "ambrelatte",
+        "saint"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "nice",
+      "width": 1280,
+      "basePrice": "2 350 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/",
+      "screenshot": "myskino-extras-nice-1280.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "13487",
+        "volume": "10 ml",
+        "price": "600 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "2 950 Kč",
+      "selectedScreenshot": "myskino-selected-nice-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-nice-1280.png",
+      "compareScreenshot": "myskino-pair-nice-1280.png",
+      "comparisonIds": [
+        "nice",
+        "riviera"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "riviera",
+      "width": 1280,
+      "basePrice": "4 375 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/bon-parfumeur-005-riviera-absolue-niche-parfem/",
+      "screenshot": "myskino-extras-riviera-1280.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "14141",
+        "volume": "15 ml",
+        "price": "1 375 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "5 750 Kč",
+      "selectedScreenshot": "myskino-selected-riviera-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-riviera-1280.png",
+      "compareScreenshot": "myskino-pair-riviera-1280.png",
+      "comparisonIds": [
+        "riviera",
+        "nice"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "gozo",
+      "width": 1280,
+      "basePrice": "7 000 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/jeroboam-gozo-niche-parfem/",
+      "screenshot": "myskino-extras-gozo-1280.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "13553",
+        "volume": "30 ml",
+        "price": "2 750 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "9 750 Kč",
+      "selectedScreenshot": "myskino-selected-gozo-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-gozo-1280.png",
+      "compareScreenshot": "myskino-pair-gozo-1280.png",
+      "comparisonIds": [
+        "gozo",
+        "nice"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "kokoa",
+      "width": 1280,
+      "basePrice": "2 500 Kč",
+      "pack": "50 ml",
+      "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/",
+      "screenshot": "myskino-extras-kokoa-1280.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "14398",
+        "volume": "10 ml",
+        "price": "875 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "3 375 Kč",
+      "selectedScreenshot": "myskino-selected-kokoa-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-kokoa-1280.png",
+      "compareScreenshot": "myskino-pair-kokoa-1280.png",
+      "comparisonIds": [
+        "kokoa",
+        "ambrelatte"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "saint",
+      "width": 1280,
+      "basePrice": "5 250 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/nicola-saint-honore-niche-parfem/",
+      "screenshot": "myskino-extras-saint-1280.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "12680",
+        "volume": "30 ml",
+        "price": "2 250 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "7 500 Kč",
+      "selectedScreenshot": "myskino-selected-saint-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-saint-1280.png",
+      "compareScreenshot": "myskino-pair-saint-1280.png",
+      "comparisonIds": [
+        "saint",
+        "ambrelatte"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "fire",
+      "width": 1280,
+      "basePrice": "4 000 Kč",
+      "pack": "75 ml",
+      "url": "https://www.myskino.cz/jovoy-fire-at-will-niche-parfem/",
+      "screenshot": "myskino-extras-fire-1280.png",
+      "defaultUnchecked": true,
+      "addon": {
+        "id": "12947",
+        "volume": "15 ml",
+        "price": "1 125 Kč"
+      },
+      "imagesDecoded": true,
+      "checkedTotal": "5 125 Kč",
+      "selectedScreenshot": "myskino-selected-fire-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-fire-1280.png",
+      "compareScreenshot": "myskino-pair-fire-1280.png",
+      "comparisonIds": [
+        "fire",
+        "saint"
+      ],
+      "resetClearsExtra": true
+    },
+    {
+      "id": "ambrelatte",
+      "width": 1280,
+      "basePrice": "2 350 Kč",
+      "pack": "100 ml",
+      "url": "https://www.myskino.cz/essential-parfums-ambre-latte-niche-parfem/",
+      "screenshot": "myskino-extras-ambrelatte-1280.png",
+      "defaultUnchecked": true,
+      "addon": null,
+      "imagesDecoded": true,
+      "notesScreenshot": "myskino-notes-ambrelatte-1280.png",
+      "compareScreenshot": "myskino-pair-ambrelatte-1280.png",
+      "comparisonIds": [
+        "ambrelatte",
+        "saint"
+      ],
+      "resetClearsExtra": true
+    }
+  ],
+  "errors": [],
+  "paidModelCalls": 0,
+  "complete": true
+}

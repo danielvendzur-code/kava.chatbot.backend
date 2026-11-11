@@ -1,0 +1,20 @@
+# Last-result improvement requested by owner — MYSKINO
+
+Implemented and browser-verified as an isolated explicit opt-in module; MAIN integration/live Preview pending. Shared boot/support/registry/engine/backend files have NOT been edited. This is a result-view extension, not another fragrance core fix. Existing c9 recommendation tree remains unchanged and still reaches7unique formulas. Prior source and original QA ZIPs retained.
+
+The last result now adds: expandable literal top/heart/base notes; optional unchecked EXTRA smaller pack of the SAME composition where exact stock and price are sourced; an actual live total including the extra only while checked; a different composition to inspect and compare with product-specific photos/pack/price/URLs, explicitly outside the total. Reset clears the extra. No cart action or fragrance/layering/health/budget guarantee. No forced cross-sell; Ambre Latte has no documented available small variant, so comparison only. Distinct formula count stays7.
+
+Six fresh official public per-variant extra packs: Nice Bergamote10ml600CZK; Kokoa Bang10ml875CZK; Riviera Absolue15ml1375CZK; Gozo30ml2750CZK; Saint Honoré30ml2250CZK; Fire at Will15ml1125CZK. `source.upsellVariants` in each parent product records exact ID/code/key, Skladem/isNotSoldOut, amount, source SHA/time/VAT source. These are additional packs, not replacement packs or new formulas. Canonical Shoptet CTA requires customer choice of stated size, not a preselected cart.
+
+MAIN imports once:
+
+1. New `tools/s5/perfume-independent/result-extras/fragrance-result-extras.js` → `n447/s5/fragrance-result-extras.js`.
+2. Review `MAIN-IMPORT-ONLY.patch`: one explicit opt-in script load after existing scripts, BEFORE root is made interactive. Same immutable c9 source used in local fixture. Adapt only if MAIN boot changed. Do NOT apply a second core/sample fix.
+3. Merge refreshed MYSKINO catalogue/facts and registryObject from `candidate-packages/myskino/{catalogue.js,verified-products.json,config.json}`. Registry `fragranceResultExtras` is the data opt-in; other demos have no flag and their result remains unchanged.
+4. Incorporate appended company-scoped result CSS from `candidate-packages/myskino/ui-review.css`. Existing logo/chat card rules preserved. No new image upload needed; seven existing original photos reused, extra packs do not misleadingly show full bottle as mini.
+
+Module wraps the existing result renderer only after strict S5/fragrance/version/enabled guard, preserving original primary card/CTA, sum and native chat/reset integration. Explicit same-parent verified variant evidence and budget sum check gate the extra. Alternative IDs are explicit config and checked distinct/available/same currency. No skincare mapping, recommendation changes, external API, DOM polling, observers or merchant operations.
+
+Actual local WebKit320/390/1280:21results,18extra selections with exact totals/uncheck/reset,21opened literal note pyramids and21distinct alternative comparisons.81 actual state screenshots,12derived contact sheets all visually inspected; errors0/paid0. Three pixel-identical lossless QA ZIPs under reports/myskino-result-extras-20261111/archives/, already covered by existing /tools Vercel exclusion. Old result snapshots are historical and not counted as additional products or extra finished demos. QA report, fresh source captures and visual review in that report directory. No registration/Preview/production/mail claim.
+
+Reproduce offline: snapshot-server.py ... --package-root ... --port8915 --result-extras-review, then result-extras/verify-result-extras.py --output ... . Fixture flag explicitly loads the proposal; original shared files and immutable core remain unchanged. Package engine verification passes all7leaves after source variant additions. Original generic QA script intentionally expects no addons; use the dedicated new result/extras script for this changed result.

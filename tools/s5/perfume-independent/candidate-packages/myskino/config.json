@@ -40,7 +40,20 @@
     "nice",
     "kokoa"
   ],
-  "addon": null,
+  "addon": {
+    "type": "optional-extra-smaller-pack-same-composition",
+    "defaultChecked": false,
+    "eligibleProducts": [
+      "nice",
+      "kokoa",
+      "riviera",
+      "gozo",
+      "saint",
+      "fire"
+    ],
+    "notNewFormulas": true,
+    "totalIncludesCheckedExtra": true
+  },
   "budgetQuestion": false,
   "enableRuntime": false,
   "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
@@ -203,6 +216,21 @@
       "teaserNote": "Otevřít výběr vůně",
       "teaserAria": "Otevřít poradce pro výběr vůně",
       "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "nice": "riviera",
+        "riviera": "nice",
+        "gozo": "nice",
+        "kokoa": "ambrelatte",
+        "saint": "ambrelatte",
+        "fire": "saint",
+        "ambrelatte": "saint"
+      }
     }
-  }
+  },
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "resultExtrasStatus": "REVIEW_MODULE_LOCAL_QA_PASS_PENDING_MAIN_IMPORT_AND_PREVIEW"
 }

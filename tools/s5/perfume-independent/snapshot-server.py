@@ -1,11 +1,16 @@
 """Local read-only static server for one immutable Git commit. API always mocked 503."""
 import argparse,functools,http.server,mimetypes,pathlib,subprocess,urllib.parse,re,json
-p=argparse.ArgumentParser();p.add_argument('--repo',required=True);p.add_argument('--commit',required=True);p.add_argument('--port',type=int,default=8911);p.add_argument('--fixture-scentisimo',action='store_true');p.add_argument('--package-root');p.add_argument('--fixture-niche-avatar',action='store_true');a=p.parse_args();assert re.fullmatch('[a-f0-9]{40}',a.commit)
+p=argparse.ArgumentParser();p.add_argument('--repo',required=True);p.add_argument('--commit',required=True);p.add_argument('--port',type=int,default=8911);p.add_argument('--fixture-scentisimo',action='store_true');p.add_argument('--package-root');p.add_argument('--fixture-niche-avatar',action='store_true');p.add_argument('--result-extras-review',action='store_true');a=p.parse_args();assert re.fullmatch('[a-f0-9]{40}',a.commit)
 @functools.lru_cache(maxsize=256)
 def blob(path):return subprocess.check_output(['git','-C',a.repo,'show',a.commit+':'+path],stderr=subprocess.DEVNULL)
 def fixture(path):
  if a.package_root:
   package_root=pathlib.Path(a.package_root).resolve()
+  if a.result_extras_review and path=='n447/s5/boot.js':
+   original=blob(path).decode();needle="for (const f of files) await load('/' + f);";assert original.count(needle)==1
+   return original.replace(needle,needle+"\n  if(REG[slug]?.fragranceResultExtras?.enabled===true) await load('/__candidate/fragrance-result-extras.js');").encode()
+  if a.result_extras_review and path=='__candidate/fragrance-result-extras.js':
+   return (pathlib.Path(__file__).parent/'result-extras/fragrance-result-extras.js').read_bytes()
   for folder in package_root.iterdir():
    if not folder.is_dir():continue
    slug=folder.name

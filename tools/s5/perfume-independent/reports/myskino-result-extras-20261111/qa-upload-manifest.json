@@ -1,0 +1,33 @@
+{
+  "scope": "Authorized QA ZIPs under existing Vercel-excluded tools; raw and prior source/demo archives preserved",
+  "archives": [
+    {
+      "path": "tools/s5/perfume-independent/reports/myskino-result-extras-20261111/archives/myskino-result-extras-320.zip",
+      "file": "/workspace/work/perfume-worker/tools/s5/perfume-independent/reports/myskino-result-extras-20261111/archives/myskino-result-extras-320.zip",
+      "bytes": 2685806,
+      "gitSha": "6a13f084526aceaa800099a09acf5f1800752a8f",
+      "sha256": "24d09fbcf9eddcffe73f67d3098bddff441d447c2c7e07ab09d9aafc4ceed5ae",
+      "frames": 27,
+      "derivedSheets": 4
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/myskino-result-extras-20261111/archives/myskino-result-extras-390.zip",
+      "file": "/workspace/work/perfume-worker/tools/s5/perfume-independent/reports/myskino-result-extras-20261111/archives/myskino-result-extras-390.zip",
+      "bytes": 2336542,
+      "gitSha": "27f348d835daaa60a76aec1079598b547cf66cd0",
+      "sha256": "7bbe0e0aafe365c3d0c96610f2d6138858e291980c3aaacf0dd37bd89e1a82f9",
+      "frames": 27,
+      "derivedSheets": 4
+    },
+    {
+      "path": "tools/s5/perfume-independent/reports/myskino-result-extras-20261111/archives/myskino-result-extras-1280.zip",
+      "file": "/workspace/work/perfume-worker/tools/s5/perfume-independent/reports/myskino-result-extras-20261111/archives/myskino-result-extras-1280.zip",
+      "bytes": 2223311,
+      "gitSha": "b92e2e62255143ff32bfa5cff3892f4e6f09a348",
+      "sha256": "d5be3a225b37e36cb67c1fe20adf671cca082486a2a9bbb489e56765d1936699",
+      "frames": 27,
+      "derivedSheets": 4
+    }
+  ],
+  "totalBytes": 7245659
+}
