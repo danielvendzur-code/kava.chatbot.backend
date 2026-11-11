@@ -1,0 +1,188 @@
+{
+  "status": "BOTH_RESERVED_SOURCE_CONFIG_ASSET_PACKAGES_STORED",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "d0be27da162949b45960ae76085e8f2f527fe356",
+  "coreBase": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "formulas": {
+    "essentique": 12,
+    "fragrancesamples": 12
+  },
+  "runtimeRegistration": false,
+  "previewQa": false,
+  "remainingSharedRequirement": "MAIN-owned explicit S5 fragrance sample comparison allowlist; advisor-core already fixed by MAIN.",
+  "officialAssets": [
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/the-ghost-in-the-shell.webp",
+      "gitBlobSha": "df8825aa61410cd5aa10816bb3a31ef396176d77",
+      "sha256": "0b985f409119544f7aabff42615fdb01456488f4657374ade6957a16e700fab5",
+      "bytes": 36842
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/delina-exclusif.webp",
+      "gitBlobSha": "826b587f166e4567f4ba76d7d26e8917a512dcd8",
+      "sha256": "dad51900cc53acc1ad48cb0b73da502dbf5587db66e3ab22f3d9d1d59e3d3e1f",
+      "bytes": 28020
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/logo.svg",
+      "gitBlobSha": "8e3d2e40bf2c4270b85b88d6d95ed8b76a0c0684",
+      "sha256": "f8e729654444c4779ec7670a3447ffd81b67d026561545d1f32ed4f6c0828778",
+      "bytes": 8566
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/eilish-no-2.webp",
+      "gitBlobSha": "3721bb5e1d39c7eb4a6113a3e6cb6ad8d5b072aa",
+      "sha256": "88e89ef7c3310e1a138bcc40428a4f619410ccbc5ad1e67431a18a093f21aa84",
+      "bytes": 24902
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/bois-imperial.webp",
+      "gitBlobSha": "69cdf21fdd637276db8f90618a6956b22980d626",
+      "sha256": "4c04c4765a4e24ea8187c39d0ef1c558d76e22e8f91cf93050e062210a96d347",
+      "bytes": 20036
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/ganymede.webp",
+      "gitBlobSha": "27bd033e9f68970634689ccacf26df8a3e5991ec",
+      "sha256": "c83b5165fa8e81de958d31c9fab6bd8da0ef6c7a734c45e07cc60a36563f2086",
+      "bytes": 15058
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/angels-share.webp",
+      "gitBlobSha": "4e24ec6964d6939d94ef2aabc237417d0a400b54",
+      "sha256": "eeb4d837232ebbb43a76c403d5d6af7ca673a717105ca80cf823d0ebdbb292db",
+      "bytes": 104704
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/not-a-perfume.webp",
+      "gitBlobSha": "565d523c43d92518669d4e914f791b1be246f4d6",
+      "sha256": "37ae1deaaab462e5c21f466ee871b28340cb77d7f1cf35174bcb7b4927b22b6e",
+      "bytes": 8410
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/guidance.webp",
+      "gitBlobSha": "0badfa07ba98c962500aa781e08596778e74b0e7",
+      "sha256": "672128bbf6940bc1a1ec52ff16f5f639ba0b6a57bb0965a8ef9dbe03f8f68993",
+      "bytes": 22046
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/mark.png",
+      "gitBlobSha": "bc65afb9218cd520e5b2481d56a761a1d38f8b10",
+      "sha256": "e3387fe6806f1fa5fe93529f729dafdc57b8a15922ddacc506c291b5339ebf94",
+      "bytes": 33237
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/orange-x-santal.webp",
+      "gitBlobSha": "2470c75419806649dd8ea7f5112b229b3b6fd5ce",
+      "sha256": "7c1bfab79496a8fa3d266a23b70592f1bd63a95140aa9db0a9e2a9496cea5380",
+      "bytes": 12300
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/divine-vanille.webp",
+      "gitBlobSha": "6caeffe592c7e1c47cada101ee1a9fc5dd481867",
+      "sha256": "80d35e187bd9ee70c785e6054aece2e9a3f52f27e037dd0c4edcc2c89cb1d65a",
+      "bytes": 18938
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/arabians-tonka.webp",
+      "gitBlobSha": "fb04748ed86c0289b2effaf8015562cbfaf150e5",
+      "sha256": "aed25d48d386125a9fa0b34f274b765b86485276d1e8df0b87e09a053f6fe0ef",
+      "bytes": 25260
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/essentique/assets/hundred-silent-ways.webp",
+      "gitBlobSha": "94865dfd3d46b508c13f620e744aab8cbab2d71c",
+      "sha256": "d04cdf8c93d967e668df238d8e402c38a036a0fb9d692e2066dd9d9ae4f20ab7",
+      "bytes": 14936
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/parfums-de-marly-percival-edp.webp",
+      "gitBlobSha": "7f7f4b4fa8251aec5a626187701fd9e54b4e2e24",
+      "sha256": "9c15064e9aa2eb79cba633fd66a754852ebae4861c26631b29f17a3800a113d0",
+      "bytes": 84636
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/logo.png",
+      "gitBlobSha": "92a23d9b62066974548f76cd846034c36aa4b185",
+      "sha256": "8e55637ba8ec41e1ace1a943c17ec6d00bc7d8749ddbcbbd651025fd396f54b0",
+      "bytes": 84111
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/note-de-yuzu.webp",
+      "gitBlobSha": "01e7423b61d1127373ca3cc0148636b515251fee",
+      "sha256": "72cf2ffd7eea2841bee9d7b1e6006d2a5d107e35893ad96dfaf371822f488c20",
+      "bytes": 241590
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/versace-bright-crystal-absolu.webp",
+      "gitBlobSha": "e9dffebebb591b9ffc6539e12077c31c6cd4cbb4",
+      "sha256": "bbb792152d81edd98fa68108bc866f3d31029506b23d9aff59b5f0cb6a59caa3",
+      "bytes": 123578
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/mancera-cedrat-boise.webp",
+      "gitBlobSha": "453e94655f489598151204b14e553448c13f35a6",
+      "sha256": "430b90a5901e8266b7dfb31e94506f57a118792f6914a53865534446517829c6",
+      "bytes": 143704
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/spicebomb-extreme-od-viktor-rolf.webp",
+      "gitBlobSha": "5b5a17c1410007c0797d05385c12ea88058670d1",
+      "sha256": "474b04bb5603612e53883617a7d53d01a573ff774e41c0ec622ce89768597a1d",
+      "bytes": 157566
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/mark.png",
+      "gitBlobSha": "0b746eb2be0a18d9d58353bf9f00990b39f0ad66",
+      "sha256": "584fcdd52b531abadaca99f0a31ec56246bcd0dba725e22f7b50af2526f6bbcd",
+      "bytes": 19807
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/jean-paul-gaultier-scandal-eau-de-parfum.webp",
+      "gitBlobSha": "00da2ebc32757670c66193b4e2ee0e6d7092d585",
+      "sha256": "8b9c2c5bff43254a007b8a5773eb757206e4e25a8b16be7a440f86e6d0eabbec",
+      "bytes": 104232
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/zimaya-sharaf-blend-edp.webp",
+      "gitBlobSha": "9e3b7e273220b6209279ad977dcf9ae2542ea858",
+      "sha256": "2a4e16cbba3f3090a300cb0cec0c43b70d1e8029b521ef49ce36b9afe73760ac",
+      "bytes": 159520
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/burberry-goddess-intense.webp",
+      "gitBlobSha": "999625f6c16234f99b0936de75a5f5cdc216d992",
+      "sha256": "91aac11852214d3b32ce1403131b3da9882df55a5e6b460d097cd26c25c42010",
+      "bytes": 98288
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/mancera-french-riviera.webp",
+      "gitBlobSha": "fdc444617efe9224ec02521b881b32dc314c0617",
+      "sha256": "d7ee6dcd8489d161213d99ca03ee1d35053e28451bda99bd7d2dcd273d1f6954",
+      "bytes": 128002
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/lancome-la-vie-est-belle.webp",
+      "gitBlobSha": "7b3c0033c9c4f863cebb30bf8db2eb2863c11e73",
+      "sha256": "a92e3a5fcd9a63d3b3b11f57cb38aabcbdb265b7ac64da591b2c502557a2b2c2",
+      "bytes": 133902
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/prada-candy-eau-de-parfum.webp",
+      "gitBlobSha": "baa16b3f6c4f941fafce9580e1ef69780c98328e",
+      "sha256": "d30aebeefc69a1876673a4929fdcbd061f68aa3cdb702042b42e9978aed6fe0c",
+      "bytes": 120446
+    },
+    {
+      "path": "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/ysl-libre.webp",
+      "gitBlobSha": "6cb0fdbccaae70482a5cd6eef45487477e6d945b",
+      "sha256": "53706869ede7279095b9df16101a3e48dca892060b382873d741b05120191354",
+      "bytes": 160500
+    }
+  ],
+  "localAvatarAssets": [
+    "tools/s5/perfume-independent/candidate-packages/essentique/assets/avatar.svg",
+    "tools/s5/perfume-independent/candidate-packages/fragrancesamples/assets/avatar.svg"
+  ],
+  "vercelExclusion": "Existing /tools/ rule"
+}

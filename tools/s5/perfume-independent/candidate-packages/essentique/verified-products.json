@@ -1,0 +1,1248 @@
+{
+  "brand": "Essentique",
+  "domain": "essentique.sk",
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "sk",
+  "country": "SK",
+  "currency": "EUR",
+  "operator": {
+    "name": "MOKK s. r. o.",
+    "ico": "57198756"
+  },
+  "products": [
+    {
+      "id": "orange-x-santal",
+      "name": "Orange X Santal",
+      "url": "https://www.essentique.sk/orange-x-santal/",
+      "priceAmount": 7,
+      "price": "7 €",
+      "currency": "EUR",
+      "volume": "2 ml",
+      "category": "fragrance",
+      "kind": "Odstrek parfumu",
+      "tags": [],
+      "available": true,
+      "isSample": true,
+      "description": "Pomaranč, bazalka a santal. Predáva sa 2 ml odstrek; fotografia pôvodného flakónu je ilustračná.",
+      "reason": "Pomaranč, bazalka a santal.",
+      "photo": "/assets/s5/essentique/orange-x-santal.webp",
+      "source": {
+        "series": "s5",
+        "sampleSegment": "fragrance",
+        "url": "https://www.essentique.sk/orange-x-santal/",
+        "verifiedAt": "2026-11-11T06:58:25.047802+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom",
+          "exactVariantCode": "331/2ML",
+          "variantKey": "17-14",
+          "source": "Official embedded necessaryVariantData paired with selected2ml option"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 7,
+          "exactVariantId": 1738,
+          "exactVariantCode": "331/2ML",
+          "currency": "EUR",
+          "visibleVariantPrice": "€7",
+          "vatSource": "https://www.essentique.sk/obchodne-podmienky/",
+          "vatEvidence": "Official terms total price inclusive of VAT; no rate inferred."
+        },
+        "packEvidence": {
+          "pack": "2 ml",
+          "merchantOptionValue": "14",
+          "merchantVariantParameter": "17",
+          "code": "331/2ML",
+          "sourceUrl": "https://www.essentique.sk/orange-x-santal/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing2ml; no automatic preselection promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/331_parfum-100ml-orangexsantal-01.webp?ff=1&x=1024&y=768&q=85&ts=6ace3ffb&sg=161563f2",
+        "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
+        "scent": "Horký pomaranč, taliansky pomaranč; Bazalka; Austrálske santalové drevo, cyprus, dubový mach",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "orange-x-santal"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.essentique.sk/orange-x-santal/",
+          "navigationLabel": "Pomaranč, bazalka a santal",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.essentique.sk/orange-x-santal/",
+            "sourceText": "Horký pomaranč, taliansky pomaranč; Bazalka; Austrálske santalové drevo, cyprus, dubový mach",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.essentique.sk/orange-x-santal/",
+            "sourceText": "Horký pomaranč, taliansky pomaranč; Bazalka; Austrálske santalové drevo, cyprus, dubový mach",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          },
+          "officialFamilies": [
+            "Drevitá",
+            "Aromatická",
+            "Citrusová"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed fragrance satisfaction",
+          "projection/longevity guarantee",
+          "medical or allergy-safety claim",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "originalSourceSha256": "fc2550c52087be5c47edd8fb0d023d9252dc45ad4bc8692e86a2877cd1308edf",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/331_parfum-100ml-orangexsantal-01.webp?ff=1&x=1024&y=768&q=85&ts=6ace3ffb&sg=161563f2",
+          "localPath": "/assets/s5/essentique/orange-x-santal.webp",
+          "sha256": "7c1bfab79496a8fa3d266a23b70592f1bd63a95140aa9db0a9e2a9496cea5380",
+          "width": 1024,
+          "height": 768,
+          "checkedAt": "2026-11-11T10:34:43.632919+00:00",
+          "visualReview": "All24 official source images visually reviewed by PERFUME_WORKER; Arabians Tonka replaces tiny illustrative Cherry Ink image after independent exact variant/notes/photo review. Full bottle illustrations explicitly disclosed, not the supplied sample pack."
+        }
+      }
+    },
+    {
+      "id": "the-ghost-in-the-shell",
+      "name": "The Ghost In The Shell",
+      "url": "https://www.essentique.sk/the-ghost-in-the-shell/",
+      "priceAmount": 7,
+      "price": "7 €",
+      "currency": "EUR",
+      "volume": "2 ml",
+      "category": "fragrance",
+      "kind": "Odstrek parfumu",
+      "tags": [],
+      "available": true,
+      "isSample": true,
+      "description": "Yuzu, mliečny akord a jazmín. Predáva sa 2 ml odstrek; fotografia pôvodného flakónu je ilustračná.",
+      "reason": "Yuzu, mliečny akord a jazmín.",
+      "photo": "/assets/s5/essentique/the-ghost-in-the-shell.webp",
+      "source": {
+        "series": "s5",
+        "sampleSegment": "fragrance",
+        "url": "https://www.essentique.sk/the-ghost-in-the-shell/",
+        "verifiedAt": "2026-11-11T06:58:24.984718+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom",
+          "exactVariantCode": "257/2ML",
+          "variantKey": "17-14",
+          "source": "Official embedded necessaryVariantData paired with selected2ml option"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 7,
+          "exactVariantId": 1304,
+          "exactVariantCode": "257/2ML",
+          "currency": "EUR",
+          "visibleVariantPrice": "€7",
+          "vatSource": "https://www.essentique.sk/obchodne-podmienky/",
+          "vatEvidence": "Official terms total price inclusive of VAT; no rate inferred."
+        },
+        "packEvidence": {
+          "pack": "2 ml",
+          "merchantOptionValue": "14",
+          "merchantVariantParameter": "17",
+          "code": "257/2ML",
+          "sourceUrl": "https://www.essentique.sk/the-ghost-in-the-shell/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing2ml; no automatic preselection promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/257_f15af902-f57a-5562-8b15-44fbdffc0a25.jpg?ff=1&x=1024&y=768&q=85&ts=6a68b22d&sg=161563f2",
+        "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
+        "scent": "Aqual™, Yuzu, Hexyl Acetate; Mliečny akord, Akord pokožky, Jazmín, Mugane™; Machový akord, Vinyl Guaiacol, Orcanox™",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "the-ghost-in-the-shell"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.essentique.sk/the-ghost-in-the-shell/",
+          "navigationLabel": "Yuzu, mliečny akord a jazmín",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.essentique.sk/the-ghost-in-the-shell/",
+            "sourceText": "Aqual™, Yuzu, Hexyl Acetate; Mliečny akord, Akord pokožky, Jazmín, Mugane™; Machový akord, Vinyl Guaiacol, Orcanox™",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.essentique.sk/the-ghost-in-the-shell/",
+            "sourceText": "Aqual™, Yuzu, Hexyl Acetate; Mliečny akord, Akord pokožky, Jazmín, Mugane™; Machový akord, Vinyl Guaiacol, Orcanox™",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          },
+          "officialFamilies": [
+            "Kvetinová",
+            "Pižmová",
+            "Citrusová"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed fragrance satisfaction",
+          "projection/longevity guarantee",
+          "medical or allergy-safety claim",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "originalSourceSha256": "27da92d289072da8c60fbdee9914d4453e78579b5153c485c8907448557346cb",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/257_f15af902-f57a-5562-8b15-44fbdffc0a25.jpg?ff=1&x=1024&y=768&q=85&ts=6a68b22d&sg=161563f2",
+          "localPath": "/assets/s5/essentique/the-ghost-in-the-shell.webp",
+          "sha256": "0b985f409119544f7aabff42615fdb01456488f4657374ade6957a16e700fab5",
+          "width": 1024,
+          "height": 768,
+          "checkedAt": "2026-11-11T10:34:43.636390+00:00",
+          "visualReview": "All24 official source images visually reviewed by PERFUME_WORKER; Arabians Tonka replaces tiny illustrative Cherry Ink image after independent exact variant/notes/photo review. Full bottle illustrations explicitly disclosed, not the supplied sample pack."
+        }
+      }
+    },
+    {
+      "id": "ganymede",
+      "name": "Ganymede",
+      "url": "https://www.essentique.sk/ganymede/",
+      "priceAmount": 12,
+      "price": "12 €",
+      "currency": "EUR",
+      "volume": "2 ml",
+      "category": "fragrance",
+      "kind": "Odstrek parfumu",
+      "tags": [],
+      "available": true,
+      "isSample": true,
+      "description": "Mandarínka, minerálne tóny a semiš. Predáva sa 2 ml odstrek; fotografia pôvodného flakónu je ilustračná.",
+      "reason": "Mandarínka, minerálne tóny a semiš.",
+      "photo": "/assets/s5/essentique/ganymede.webp",
+      "source": {
+        "series": "s5",
+        "sampleSegment": "fragrance",
+        "url": "https://www.essentique.sk/ganymede/",
+        "verifiedAt": "2026-11-11T06:58:22.897623+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom",
+          "exactVariantCode": "239/2ML",
+          "variantKey": "17-14",
+          "source": "Official embedded necessaryVariantData paired with selected2ml option"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 12,
+          "exactVariantId": 1193,
+          "exactVariantCode": "239/2ML",
+          "currency": "EUR",
+          "visibleVariantPrice": "€12",
+          "vatSource": "https://www.essentique.sk/obchodne-podmienky/",
+          "vatEvidence": "Official terms total price inclusive of VAT; no rate inferred."
+        },
+        "packEvidence": {
+          "pack": "2 ml",
+          "merchantOptionValue": "14",
+          "merchantVariantParameter": "17",
+          "code": "239/2ML",
+          "sourceUrl": "https://www.essentique.sk/ganymede/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing2ml; no automatic preselection promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/239_vyr-5832203-marc-antoine-barrois-ganymede-100ml-o-kopia.jpg?ff=1&x=1024&y=768&q=85&ts=6a494105&sg=161563f2",
+        "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
+        "scent": "Šafran, talianska mandarínka; Čínsky osmanthus, slamienka (Immortelle), list fialky; Minerálne tóny, semiš, Akigalawood, céder, pižmo, pačuli",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "ganymede"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.essentique.sk/ganymede/",
+          "navigationLabel": "Mandarínka, minerálne tóny a semiš",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.essentique.sk/ganymede/",
+            "sourceText": "Šafran, talianska mandarínka; Čínsky osmanthus, slamienka (Immortelle), list fialky; Minerálne tóny, semiš, Akigalawood, céder, pižmo, pačuli",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.essentique.sk/ganymede/",
+            "sourceText": "Šafran, talianska mandarínka; Čínsky osmanthus, slamienka (Immortelle), list fialky; Minerálne tóny, semiš, Akigalawood, céder, pižmo, pačuli",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          },
+          "officialFamilies": [
+            "Drevitá",
+            "Korenistá",
+            "Minerálna"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed fragrance satisfaction",
+          "projection/longevity guarantee",
+          "medical or allergy-safety claim",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "originalSourceSha256": "ca53d9611d32b58e19b0223d90b93caf3a4c3e265701c6c63a9d29381e7a3b8e",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/239_vyr-5832203-marc-antoine-barrois-ganymede-100ml-o-kopia.jpg?ff=1&x=1024&y=768&q=85&ts=6a494105&sg=161563f2",
+          "localPath": "/assets/s5/essentique/ganymede.webp",
+          "sha256": "c83b5165fa8e81de958d31c9fab6bd8da0ef6c7a734c45e07cc60a36563f2086",
+          "width": 1024,
+          "height": 768,
+          "checkedAt": "2026-11-11T10:34:43.682058+00:00",
+          "visualReview": "All24 official source images visually reviewed by PERFUME_WORKER; Arabians Tonka replaces tiny illustrative Cherry Ink image after independent exact variant/notes/photo review. Full bottle illustrations explicitly disclosed, not the supplied sample pack."
+        }
+      }
+    },
+    {
+      "id": "guidance",
+      "name": "Guidance",
+      "url": "https://www.essentique.sk/guidance/",
+      "priceAmount": 17,
+      "price": "17 €",
+      "currency": "EUR",
+      "volume": "2 ml",
+      "category": "fragrance",
+      "kind": "Odstrek parfumu",
+      "tags": [],
+      "available": true,
+      "isSample": true,
+      "description": "Hruška, lieskový orech a ruža. Predáva sa 2 ml odstrek; fotografia pôvodného flakónu je ilustračná.",
+      "reason": "Hruška, lieskový orech a ruža.",
+      "photo": "/assets/s5/essentique/guidance.webp",
+      "source": {
+        "series": "s5",
+        "sampleSegment": "fragrance",
+        "url": "https://www.essentique.sk/guidance/",
+        "verifiedAt": "2026-11-11T06:58:22.900053+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom",
+          "exactVariantCode": "211/2ML",
+          "variantKey": "17-14",
+          "source": "Official embedded necessaryVariantData paired with selected2ml option"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 17,
+          "exactVariantId": 979,
+          "exactVariantCode": "211/2ML",
+          "currency": "EUR",
+          "visibleVariantPrice": "€17",
+          "vatSource": "https://www.essentique.sk/obchodne-podmienky/",
+          "vatEvidence": "Official terms total price inclusive of VAT; no rate inferred."
+        },
+        "packEvidence": {
+          "pack": "2 ml",
+          "merchantOptionValue": "14",
+          "merchantVariantParameter": "17",
+          "code": "211/2ML",
+          "sourceUrl": "https://www.essentique.sk/guidance/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing2ml; no automatic preselection promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/211_amouage-guidance-woman-eau-de-parfum-100-ml-2674-127-0100-1.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8df&sg=161563f2",
+        "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
+        "scent": "Hruška, Kadidlo, Lieskový orech, Ružová voda, Ružové korenie; Šafran, Ruža, Jazmín Sambac, Osmanthus; Santalové drevo, Akigalawood, Vanilka, Ambra, Labdanum",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "guidance"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.essentique.sk/guidance/",
+          "navigationLabel": "Hruška, lieskový orech a ruža",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.essentique.sk/guidance/",
+            "sourceText": "Hruška, Kadidlo, Lieskový orech, Ružová voda, Ružové korenie; Šafran, Ruža, Jazmín Sambac, Osmanthus; Santalové drevo, Akigalawood, Vanilka, Ambra, Labdanum",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.essentique.sk/guidance/",
+            "sourceText": "Hruška, Kadidlo, Lieskový orech, Ružová voda, Ružové korenie; Šafran, Ruža, Jazmín Sambac, Osmanthus; Santalové drevo, Akigalawood, Vanilka, Ambra, Labdanum",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          },
+          "officialFamilies": [
+            "Orientálna",
+            "Kvetinová",
+            "Ambrová"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed fragrance satisfaction",
+          "projection/longevity guarantee",
+          "medical or allergy-safety claim",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "originalSourceSha256": "a7d683d49390447f83df92fe43c10ba8be4358a8d4cfed8d7b33cbe51456e42c",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/211_amouage-guidance-woman-eau-de-parfum-100-ml-2674-127-0100-1.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8df&sg=161563f2",
+          "localPath": "/assets/s5/essentique/guidance.webp",
+          "sha256": "672128bbf6940bc1a1ec52ff16f5f639ba0b6a57bb0965a8ef9dbe03f8f68993",
+          "width": 1024,
+          "height": 768,
+          "checkedAt": "2026-11-11T10:34:43.683326+00:00",
+          "visualReview": "All24 official source images visually reviewed by PERFUME_WORKER; Arabians Tonka replaces tiny illustrative Cherry Ink image after independent exact variant/notes/photo review. Full bottle illustrations explicitly disclosed, not the supplied sample pack."
+        }
+      }
+    },
+    {
+      "id": "delina-exclusif",
+      "name": "Delina Exclusif",
+      "url": "https://www.essentique.sk/delina-exclusif/",
+      "priceAmount": 15,
+      "price": "15 €",
+      "currency": "EUR",
+      "volume": "2 ml",
+      "category": "fragrance",
+      "kind": "Odstrek parfumu",
+      "tags": [],
+      "available": true,
+      "isSample": true,
+      "description": "Liči, ruža a kadidlo. Predáva sa 2 ml odstrek; fotografia pôvodného flakónu je ilustračná.",
+      "reason": "Liči, ruža a kadidlo.",
+      "photo": "/assets/s5/essentique/delina-exclusif.webp",
+      "source": {
+        "series": "s5",
+        "sampleSegment": "fragrance",
+        "url": "https://www.essentique.sk/delina-exclusif/",
+        "verifiedAt": "2026-11-11T06:58:24.950121+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom",
+          "exactVariantCode": "245/2ML",
+          "variantKey": "17-14",
+          "source": "Official embedded necessaryVariantData paired with selected2ml option"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 15,
+          "exactVariantId": 1232,
+          "exactVariantCode": "245/2ML",
+          "currency": "EUR",
+          "visibleVariantPrice": "€15",
+          "vatSource": "https://www.essentique.sk/obchodne-podmienky/",
+          "vatEvidence": "Official terms total price inclusive of VAT; no rate inferred."
+        },
+        "packEvidence": {
+          "pack": "2 ml",
+          "merchantOptionValue": "14",
+          "merchantVariantParameter": "17",
+          "code": "245/2ML",
+          "sourceUrl": "https://www.essentique.sk/delina-exclusif/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing2ml; no automatic preselection promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/245_parfums-de-marly-delina-exclusiv-75ml-edp-od-konju9-stav-balenia-originalne.jpg?ff=1&x=1024&y=768&q=85&ts=6a5e3c26&sg=161563f2",
+        "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
+        "scent": "Liči, hruška, bergamot, ružové korenie, grapefruit; Turecká ruža, oud, kadidlo; Vanilka, ambra, drevité tóny, pižmo, vetiver, Evernyl",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "delina-exclusif"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.essentique.sk/delina-exclusif/",
+          "navigationLabel": "Liči, ruža a kadidlo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.essentique.sk/delina-exclusif/",
+            "sourceText": "Liči, hruška, bergamot, ružové korenie, grapefruit; Turecká ruža, oud, kadidlo; Vanilka, ambra, drevité tóny, pižmo, vetiver, Evernyl",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.essentique.sk/delina-exclusif/",
+            "sourceText": "Liči, hruška, bergamot, ružové korenie, grapefruit; Turecká ruža, oud, kadidlo; Vanilka, ambra, drevité tóny, pižmo, vetiver, Evernyl",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          },
+          "officialFamilies": [
+            "Kvetinová",
+            "Ovocná",
+            "Ambrová"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed fragrance satisfaction",
+          "projection/longevity guarantee",
+          "medical or allergy-safety claim",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "originalSourceSha256": "9e36bef1bcbd4723f49a3b4fc806621af3e44d65b787acfdbdd7c05741536b1f",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/245_parfums-de-marly-delina-exclusiv-75ml-edp-od-konju9-stav-balenia-originalne.jpg?ff=1&x=1024&y=768&q=85&ts=6a5e3c26&sg=161563f2",
+          "localPath": "/assets/s5/essentique/delina-exclusif.webp",
+          "sha256": "dad51900cc53acc1ad48cb0b73da502dbf5587db66e3ab22f3d9d1d59e3d3e1f",
+          "width": 1024,
+          "height": 768,
+          "checkedAt": "2026-11-11T10:34:43.684777+00:00",
+          "visualReview": "All24 official source images visually reviewed by PERFUME_WORKER; Arabians Tonka replaces tiny illustrative Cherry Ink image after independent exact variant/notes/photo review. Full bottle illustrations explicitly disclosed, not the supplied sample pack."
+        }
+      }
+    },
+    {
+      "id": "hundred-silent-ways",
+      "name": "Hundred Silent Ways",
+      "url": "https://www.essentique.sk/hundred-silent-ways/",
+      "priceAmount": 10,
+      "price": "10 €",
+      "currency": "EUR",
+      "volume": "2 ml",
+      "category": "fragrance",
+      "kind": "Odstrek parfumu",
+      "tags": [],
+      "available": true,
+      "isSample": true,
+      "description": "Broskyňa, tuberóza a vanilka. Predáva sa 2 ml odstrek; fotografia pôvodného flakónu je ilustračná.",
+      "reason": "Broskyňa, tuberóza a vanilka.",
+      "photo": "/assets/s5/essentique/hundred-silent-ways.webp",
+      "source": {
+        "series": "s5",
+        "sampleSegment": "fragrance",
+        "url": "https://www.essentique.sk/hundred-silent-ways/",
+        "verifiedAt": "2026-11-11T06:58:25.690057+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom",
+          "exactVariantCode": "187/2ML",
+          "variantKey": "17-14",
+          "source": "Official embedded necessaryVariantData paired with selected2ml option"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 10,
+          "exactVariantId": 835,
+          "exactVariantCode": "187/2ML",
+          "currency": "EUR",
+          "visibleVariantPrice": "€10",
+          "vatSource": "https://www.essentique.sk/obchodne-podmienky/",
+          "vatEvidence": "Official terms total price inclusive of VAT; no rate inferred."
+        },
+        "packEvidence": {
+          "pack": "2 ml",
+          "merchantOptionValue": "14",
+          "merchantVariantParameter": "17",
+          "code": "187/2ML",
+          "sourceUrl": "https://www.essentique.sk/hundred-silent-ways/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing2ml; no automatic preselection promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/187_hundred-silent-ways--objem-10ml.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8df&sg=161563f2",
+        "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
+        "scent": "Tuberóza, Broskyňa, Mandarínka; Gardénia, Jazmín, Iris; Vanilka, Santalové drevo, Vetiver",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "hundred-silent-ways"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.essentique.sk/hundred-silent-ways/",
+          "navigationLabel": "Broskyňa, tuberóza a vanilka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.essentique.sk/hundred-silent-ways/",
+            "sourceText": "Tuberóza, Broskyňa, Mandarínka; Gardénia, Jazmín, Iris; Vanilka, Santalové drevo, Vetiver",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.essentique.sk/hundred-silent-ways/",
+            "sourceText": "Tuberóza, Broskyňa, Mandarínka; Gardénia, Jazmín, Iris; Vanilka, Santalové drevo, Vetiver",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          },
+          "officialFamilies": [
+            "Kvetinová",
+            "Pižmová",
+            "Ovocná"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Extrait de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed fragrance satisfaction",
+          "projection/longevity guarantee",
+          "medical or allergy-safety claim",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "originalSourceSha256": "e7cd02a38a041728844449885f353b19c5cd4fd2c8e20eff4b4898a7f61eb164",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/187_hundred-silent-ways--objem-10ml.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8df&sg=161563f2",
+          "localPath": "/assets/s5/essentique/hundred-silent-ways.webp",
+          "sha256": "d04cdf8c93d967e668df238d8e402c38a036a0fb9d692e2066dd9d9ae4f20ab7",
+          "width": 1024,
+          "height": 768,
+          "checkedAt": "2026-11-11T10:34:43.685422+00:00",
+          "visualReview": "All24 official source images visually reviewed by PERFUME_WORKER; Arabians Tonka replaces tiny illustrative Cherry Ink image after independent exact variant/notes/photo review. Full bottle illustrations explicitly disclosed, not the supplied sample pack."
+        }
+      }
+    },
+    {
+      "id": "angels-share",
+      "name": "Angels’ Share",
+      "url": "https://www.essentique.sk/angels-share/",
+      "priceAmount": 15,
+      "price": "15 €",
+      "currency": "EUR",
+      "volume": "2 ml",
+      "category": "fragrance",
+      "kind": "Odstrek parfumu",
+      "tags": [],
+      "available": true,
+      "isSample": true,
+      "description": "Koňak, škorica a praliné. Predáva sa 2 ml odstrek; fotografia pôvodného flakónu je ilustračná.",
+      "reason": "Koňak, škorica a praliné.",
+      "photo": "/assets/s5/essentique/angels-share.webp",
+      "source": {
+        "series": "s5",
+        "sampleSegment": "fragrance",
+        "url": "https://www.essentique.sk/angels-share/",
+        "verifiedAt": "2026-11-11T06:58:22.905010+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom",
+          "exactVariantCode": "138/2ML",
+          "variantKey": "17-14",
+          "source": "Official embedded necessaryVariantData paired with selected2ml option"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 15,
+          "exactVariantId": 540,
+          "exactVariantCode": "138/2ML",
+          "currency": "EUR",
+          "visibleVariantPrice": "€15",
+          "vatSource": "https://www.essentique.sk/obchodne-podmienky/",
+          "vatEvidence": "Official terms total price inclusive of VAT; no rate inferred."
+        },
+        "packEvidence": {
+          "pack": "2 ml",
+          "merchantOptionValue": "14",
+          "merchantVariantParameter": "17",
+          "code": "138/2ML",
+          "sourceUrl": "https://www.essentique.sk/angels-share/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing2ml; no automatic preselection promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/138_angels--share--objem-10ml.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8de&sg=161563f2",
+        "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
+        "scent": "Koňak; Škorica, Fazuľa Tonka, Dub, Hedione; Vanilka, Praliné, Santalové drevo, Kandizované mandle",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "angels-share"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.essentique.sk/angels-share/",
+          "navigationLabel": "Koňak, škorica a praliné",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.essentique.sk/angels-share/",
+            "sourceText": "Koňak; Škorica, Fazuľa Tonka, Dub, Hedione; Vanilka, Praliné, Santalové drevo, Kandizované mandle",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.essentique.sk/angels-share/",
+            "sourceText": "Koňak; Škorica, Fazuľa Tonka, Dub, Hedione; Vanilka, Praliné, Santalové drevo, Kandizované mandle",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          },
+          "officialFamilies": [
+            "Orientálna",
+            "Gurmánska",
+            "Korenistá"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed fragrance satisfaction",
+          "projection/longevity guarantee",
+          "medical or allergy-safety claim",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "originalSourceSha256": "16fcbd16ea091103bcb259940c61d9159fa27eeefa49b645b4d5542bf8eff944",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/138_angels--share--objem-10ml.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8de&sg=161563f2",
+          "localPath": "/assets/s5/essentique/angels-share.webp",
+          "sha256": "eeb4d837232ebbb43a76c403d5d6af7ca673a717105ca80cf823d0ebdbb292db",
+          "width": 1024,
+          "height": 768,
+          "checkedAt": "2026-11-11T10:34:43.687575+00:00",
+          "visualReview": "All24 official source images visually reviewed by PERFUME_WORKER; Arabians Tonka replaces tiny illustrative Cherry Ink image after independent exact variant/notes/photo review. Full bottle illustrations explicitly disclosed, not the supplied sample pack."
+        }
+      }
+    },
+    {
+      "id": "divine-vanille",
+      "name": "Divine Vanille",
+      "url": "https://www.essentique.sk/divine-vanille/",
+      "priceAmount": 7,
+      "price": "7 €",
+      "currency": "EUR",
+      "volume": "2 ml",
+      "category": "fragrance",
+      "kind": "Odstrek parfumu",
+      "tags": [],
+      "available": true,
+      "isSample": true,
+      "description": "Vanilka, kadidlo a tonka. Predáva sa 2 ml odstrek; fotografia pôvodného flakónu je ilustračná.",
+      "reason": "Vanilka, kadidlo a tonka.",
+      "photo": "/assets/s5/essentique/divine-vanille.webp",
+      "source": {
+        "series": "s5",
+        "sampleSegment": "fragrance",
+        "url": "https://www.essentique.sk/divine-vanille/",
+        "verifiedAt": "2026-11-11T06:58:25.851014+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom",
+          "exactVariantCode": "242/2ML",
+          "variantKey": "17-14",
+          "source": "Official embedded necessaryVariantData paired with selected2ml option"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 7,
+          "exactVariantId": 1211,
+          "exactVariantCode": "242/2ML",
+          "currency": "EUR",
+          "visibleVariantPrice": "€7",
+          "vatSource": "https://www.essentique.sk/obchodne-podmienky/",
+          "vatEvidence": "Official terms total price inclusive of VAT; no rate inferred."
+        },
+        "packEvidence": {
+          "pack": "2 ml",
+          "merchantOptionValue": "14",
+          "merchantVariantParameter": "17",
+          "code": "242/2ML",
+          "sourceUrl": "https://www.essentique.sk/divine-vanille/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing2ml; no automatic preselection promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/242_o-57088.jpg?ff=1&x=1024&y=768&q=85&ts=6a4944a0&sg=161563f2",
+        "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
+        "scent": "Šalvia muškátová, škorica, čierne korenie; Osmanthus, kadidlo, Pomarose®; Madagaskarská vanilka, tonka fazuľa, siamský benzoin, texaský céder, pižmo, pačuli",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "divine-vanille"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.essentique.sk/divine-vanille/",
+          "navigationLabel": "Vanilka, kadidlo a tonka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.essentique.sk/divine-vanille/",
+            "sourceText": "Šalvia muškátová, škorica, čierne korenie; Osmanthus, kadidlo, Pomarose®; Madagaskarská vanilka, tonka fazuľa, siamský benzoin, texaský céder, pižmo, pačuli",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.essentique.sk/divine-vanille/",
+            "sourceText": "Šalvia muškátová, škorica, čierne korenie; Osmanthus, kadidlo, Pomarose®; Madagaskarská vanilka, tonka fazuľa, siamský benzoin, texaský céder, pižmo, pačuli",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          },
+          "officialFamilies": [
+            "Gurmánska",
+            "Vanilková",
+            "Korenistá"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed fragrance satisfaction",
+          "projection/longevity guarantee",
+          "medical or allergy-safety claim",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "originalSourceSha256": "98c26abbd7a3f9fc34f4acec6a70791dbe7b42d1a58b16fbb3441269a656841b",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/242_o-57088.jpg?ff=1&x=1024&y=768&q=85&ts=6a4944a0&sg=161563f2",
+          "localPath": "/assets/s5/essentique/divine-vanille.webp",
+          "sha256": "80d35e187bd9ee70c785e6054aece2e9a3f52f27e037dd0c4edcc2c89cb1d65a",
+          "width": 1024,
+          "height": 768,
+          "checkedAt": "2026-11-11T10:34:43.710451+00:00",
+          "visualReview": "All24 official source images visually reviewed by PERFUME_WORKER; Arabians Tonka replaces tiny illustrative Cherry Ink image after independent exact variant/notes/photo review. Full bottle illustrations explicitly disclosed, not the supplied sample pack."
+        }
+      }
+    },
+    {
+      "id": "arabians-tonka",
+      "name": "Arabians Tonka",
+      "url": "https://www.essentique.sk/arabians-tonka/",
+      "priceAmount": 7,
+      "price": "7 €",
+      "currency": "EUR",
+      "volume": "2 ml",
+      "category": "fragrance",
+      "kind": "Odstrek parfumu",
+      "tags": [],
+      "available": true,
+      "isSample": true,
+      "description": "Tonka, ruža a oud. Predáva sa 2 ml odstrek; fotografia pôvodného flakónu je ilustračná.",
+      "reason": "Tonka, ruža a oud.",
+      "photo": "/assets/s5/essentique/arabians-tonka.webp",
+      "source": {
+        "series": "s5",
+        "sampleSegment": "fragrance",
+        "url": "https://www.essentique.sk/arabians-tonka/",
+        "verifiedAt": "2026-11-11T06:58:26.305030+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom",
+          "exactVariantCode": "81/2ML",
+          "variantKey": "17-14",
+          "source": "Official embedded necessaryVariantData paired with selected2ml option"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 7,
+          "exactVariantId": 228,
+          "exactVariantCode": "81/2ML",
+          "currency": "EUR",
+          "visibleVariantPrice": "€7",
+          "vatSource": "https://www.essentique.sk/obchodne-podmienky/",
+          "vatEvidence": "Official terms total price inclusive of VAT; no rate inferred."
+        },
+        "packEvidence": {
+          "pack": "2 ml",
+          "merchantOptionValue": "14",
+          "merchantVariantParameter": "17",
+          "code": "81/2ML",
+          "sourceUrl": "https://www.essentique.sk/arabians-tonka/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing2ml; no automatic preselection promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/81_snimka-obrazovky-2025-10-09-125344.png?ff=1&x=1024&y=768&q=85&ts=6a0dd8de&sg=161563f2",
+        "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
+        "scent": "Šafran, Bergamot; Oud, Bulharská ruža; Fazuľa Tonka, Cukrová trstina, Ambra, Biely pižmo, Dubový mach",
+        "selectionTraits": {
+          "fragranceDirection": "gourmand",
+          "fragranceProfile": "arabians-tonka"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.essentique.sk/arabians-tonka/",
+          "navigationLabel": "Tonka, ruža a oud",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.essentique.sk/arabians-tonka/",
+            "sourceText": "Šafran, Bergamot; Oud, Bulharská ruža; Fazuľa Tonka, Cukrová trstina, Ambra, Biely pižmo, Dubový mach",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.essentique.sk/arabians-tonka/",
+            "sourceText": "Šafran, Bergamot; Oud, Bulharská ruža; Fazuľa Tonka, Cukrová trstina, Ambra, Biely pižmo, Dubový mach",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          },
+          "officialFamilies": [
+            "Orientálna",
+            "Drevitá",
+            "Gurmánska"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed fragrance satisfaction",
+          "projection/longevity guarantee",
+          "medical or allergy-safety claim",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "originalSourceSha256": "a8b52c749a1ff8a552b2b0740a70abddf288694282ea0cbfb0785d15a62a20ad",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/81_snimka-obrazovky-2025-10-09-125344.png?ff=1&x=1024&y=768&q=85&ts=6a0dd8de&sg=161563f2",
+          "localPath": "/assets/s5/essentique/arabians-tonka.webp",
+          "sha256": "aed25d48d386125a9fa0b34f274b765b86485276d1e8df0b87e09a053f6fe0ef",
+          "width": 1024,
+          "height": 768,
+          "checkedAt": "2026-11-11T10:34:43.738405+00:00",
+          "visualReview": "All24 official source images visually reviewed by PERFUME_WORKER; Arabians Tonka replaces tiny illustrative Cherry Ink image after independent exact variant/notes/photo review. Full bottle illustrations explicitly disclosed, not the supplied sample pack."
+        }
+      }
+    },
+    {
+      "id": "bois-imperial",
+      "name": "Bois Imperial",
+      "url": "https://www.essentique.sk/bois-imperial/",
+      "priceAmount": 7,
+      "price": "7 €",
+      "currency": "EUR",
+      "volume": "2 ml",
+      "category": "fragrance",
+      "kind": "Odstrek parfumu",
+      "tags": [],
+      "available": true,
+      "isSample": true,
+      "description": "Bazalka, Timut korenie a drevité tóny. Predáva sa 2 ml odstrek; fotografia pôvodného flakónu je ilustračná.",
+      "reason": "Bazalka, Timut korenie a drevité tóny.",
+      "photo": "/assets/s5/essentique/bois-imperial.webp",
+      "source": {
+        "series": "s5",
+        "sampleSegment": "fragrance",
+        "url": "https://www.essentique.sk/bois-imperial/",
+        "verifiedAt": "2026-11-11T06:58:22.896564+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom",
+          "exactVariantCode": "47/2ML",
+          "variantKey": "17-14",
+          "source": "Official embedded necessaryVariantData paired with selected2ml option"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 7,
+          "exactVariantId": 50,
+          "exactVariantCode": "47/2ML",
+          "currency": "EUR",
+          "visibleVariantPrice": "€7",
+          "vatSource": "https://www.essentique.sk/obchodne-podmienky/",
+          "vatEvidence": "Official terms total price inclusive of VAT; no rate inferred."
+        },
+        "packEvidence": {
+          "pack": "2 ml",
+          "merchantOptionValue": "14",
+          "merchantVariantParameter": "17",
+          "code": "47/2ML",
+          "sourceUrl": "https://www.essentique.sk/bois-imperial/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing2ml; no automatic preselection promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/47-2_chatgpt-image-jul-15--2026--09-12-32-pm.png?ff=1&x=1024&y=768&q=85&ts=6a57dba9&sg=161563f2",
+        "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
+        "scent": "Thajská bazalka, Nepalské Timut korenie; Haitský vetiver, Pačuli, Petalia; Akigalawood, Ambrofix, Georgywood",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "bois-imperial"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.essentique.sk/bois-imperial/",
+          "navigationLabel": "Bazalka, Timut korenie a drevité tóny",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.essentique.sk/bois-imperial/",
+            "sourceText": "Thajská bazalka, Nepalské Timut korenie; Haitský vetiver, Pačuli, Petalia; Akigalawood, Ambrofix, Georgywood",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.essentique.sk/bois-imperial/",
+            "sourceText": "Thajská bazalka, Nepalské Timut korenie; Haitský vetiver, Pačuli, Petalia; Akigalawood, Ambrofix, Georgywood",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          },
+          "officialFamilies": [
+            "Drevitá",
+            "Aromatická",
+            "Korenistá"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed fragrance satisfaction",
+          "projection/longevity guarantee",
+          "medical or allergy-safety claim",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "originalSourceSha256": "3e1d0fe82bcf4a0c52b9334665610bd67a40c1a19043d6dcb0129495717d5947",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/47-2_chatgpt-image-jul-15--2026--09-12-32-pm.png?ff=1&x=1024&y=768&q=85&ts=6a57dba9&sg=161563f2",
+          "localPath": "/assets/s5/essentique/bois-imperial.webp",
+          "sha256": "4c04c4765a4e24ea8187c39d0ef1c558d76e22e8f91cf93050e062210a96d347",
+          "width": 1024,
+          "height": 768,
+          "checkedAt": "2026-11-11T10:34:43.740459+00:00",
+          "visualReview": "All24 official source images visually reviewed by PERFUME_WORKER; Arabians Tonka replaces tiny illustrative Cherry Ink image after independent exact variant/notes/photo review. Full bottle illustrations explicitly disclosed, not the supplied sample pack."
+        }
+      }
+    },
+    {
+      "id": "eilish-no-2",
+      "name": "Eilish No 2",
+      "url": "https://www.essentique.sk/eilish-no-2/",
+      "priceAmount": 4.5,
+      "price": "4,50 €",
+      "currency": "EUR",
+      "volume": "2 ml",
+      "category": "fragrance",
+      "kind": "Odstrek parfumu",
+      "tags": [],
+      "available": true,
+      "isSample": true,
+      "description": "Kadidlo, papyrus a čierne korenie. Predáva sa 2 ml odstrek; fotografia pôvodného flakónu je ilustračná.",
+      "reason": "Kadidlo, papyrus a čierne korenie.",
+      "photo": "/assets/s5/essentique/eilish-no-2.webp",
+      "source": {
+        "series": "s5",
+        "sampleSegment": "fragrance",
+        "url": "https://www.essentique.sk/eilish-no-2/",
+        "verifiedAt": "2026-11-11T06:58:26.537031+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom",
+          "exactVariantCode": "108/2ML",
+          "variantKey": "17-14",
+          "source": "Official embedded necessaryVariantData paired with selected2ml option"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 4.5,
+          "exactVariantId": 366,
+          "exactVariantCode": "108/2ML",
+          "currency": "EUR",
+          "visibleVariantPrice": "€4,50",
+          "vatSource": "https://www.essentique.sk/obchodne-podmienky/",
+          "vatEvidence": "Official terms total price inclusive of VAT; no rate inferred."
+        },
+        "packEvidence": {
+          "pack": "2 ml",
+          "merchantOptionValue": "14",
+          "merchantVariantParameter": "17",
+          "code": "108/2ML",
+          "sourceUrl": "https://www.essentique.sk/eilish-no-2/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing2ml; no automatic preselection promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/108_eilish-no-2--objem-10ml.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8de&sg=161563f2",
+        "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
+        "scent": "Taliansky bergamot, jabloňový kvet, kadidlo; Papyrus, čierne korenie, divý mokrý makový kvet; Palo Santo, ebenové drevo, pižmo",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "eilish-no-2"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.essentique.sk/eilish-no-2/",
+          "navigationLabel": "Kadidlo, papyrus a čierne korenie",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.essentique.sk/eilish-no-2/",
+            "sourceText": "Taliansky bergamot, jabloňový kvet, kadidlo; Papyrus, čierne korenie, divý mokrý makový kvet; Palo Santo, ebenové drevo, pižmo",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.essentique.sk/eilish-no-2/",
+            "sourceText": "Taliansky bergamot, jabloňový kvet, kadidlo; Papyrus, čierne korenie, divý mokrý makový kvet; Palo Santo, ebenové drevo, pižmo",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          },
+          "officialFamilies": [
+            "Drevitá",
+            "Pižmová",
+            "Korenistá"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed fragrance satisfaction",
+          "projection/longevity guarantee",
+          "medical or allergy-safety claim",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "originalSourceSha256": "27148575d9e9b8e97144d78f97e08aac980a7924b8beeda0ddad813a0d4f4975",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/108_eilish-no-2--objem-10ml.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8de&sg=161563f2",
+          "localPath": "/assets/s5/essentique/eilish-no-2.webp",
+          "sha256": "88e89ef7c3310e1a138bcc40428a4f619410ccbc5ad1e67431a18a093f21aa84",
+          "width": 1024,
+          "height": 768,
+          "checkedAt": "2026-11-11T10:34:43.741589+00:00",
+          "visualReview": "All24 official source images visually reviewed by PERFUME_WORKER; Arabians Tonka replaces tiny illustrative Cherry Ink image after independent exact variant/notes/photo review. Full bottle illustrations explicitly disclosed, not the supplied sample pack."
+        }
+      }
+    },
+    {
+      "id": "not-a-perfume",
+      "name": "Not a Perfume",
+      "url": "https://www.essentique.sk/not-a-perfume/",
+      "priceAmount": 6,
+      "price": "6 €",
+      "currency": "EUR",
+      "volume": "2 ml",
+      "category": "fragrance",
+      "kind": "Odstrek parfumu",
+      "tags": [],
+      "available": true,
+      "isSample": true,
+      "description": "Minimalistická kompozícia s Cetaloxom. Predáva sa 2 ml odstrek; fotografia pôvodného flakónu je ilustračná.",
+      "reason": "Minimalistická kompozícia s Cetaloxom.",
+      "photo": "/assets/s5/essentique/not-a-perfume.webp",
+      "source": {
+        "series": "s5",
+        "sampleSegment": "fragrance",
+        "url": "https://www.essentique.sk/not-a-perfume/",
+        "verifiedAt": "2026-11-11T06:58:24.961236+00:00",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom",
+          "exactVariantCode": "53/2ML",
+          "variantKey": "17-14",
+          "source": "Official embedded necessaryVariantData paired with selected2ml option"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 6,
+          "exactVariantId": 80,
+          "exactVariantCode": "53/2ML",
+          "currency": "EUR",
+          "visibleVariantPrice": "€6",
+          "vatSource": "https://www.essentique.sk/obchodne-podmienky/",
+          "vatEvidence": "Official terms total price inclusive of VAT; no rate inferred."
+        },
+        "packEvidence": {
+          "pack": "2 ml",
+          "merchantOptionValue": "14",
+          "merchantVariantParameter": "17",
+          "code": "53/2ML",
+          "sourceUrl": "https://www.essentique.sk/not-a-perfume/"
+        },
+        "variantSelectionRequired": true,
+        "variantUrlStatus": "Canonical product page requires choosing2ml; no automatic preselection promised.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "suitabilityEvidence": {},
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/53-1_juliette-has-a-gun-not-a-perfume-edp-1458013120190621140030.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8e0&sg=161563f2",
+        "photoMeaning": "Official merchant image of the source bottle/sample; illustrative, not a claim to receive the pictured full bottle.",
+        "scent": "Cetalox (Ambroxan); Cetalox; Cetalox – drevité, pižmové, pižmové",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "not-a-perfume"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.essentique.sk/not-a-perfume/",
+          "navigationLabel": "Minimalistická kompozícia s Cetaloxom",
+          "navigationGroupingIsNotOfficialFragranceFamily": true,
+          "noteEvidence": {
+            "url": "https://www.essentique.sk/not-a-perfume/",
+            "sourceText": "Cetalox (Ambroxan); Cetalox; Cetalox – drevité, pižmové, pižmové",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          }
+        },
+        "fragrance": {
+          "notesEvidence": {
+            "url": "https://www.essentique.sk/not-a-perfume/",
+            "sourceText": "Cetalox (Ambroxan); Cetalox; Cetalox – drevité, pižmové, pižmové",
+            "scope": "Merchant declared composition; not independently manufacturer-verified formula."
+          },
+          "officialFamilies": [
+            "Pižmová"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum"
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "guaranteed fragrance satisfaction",
+          "projection/longevity guarantee",
+          "medical or allergy-safety claim",
+          "merchant cart integration",
+          "layering compatibility"
+        ],
+        "originalSourceSha256": "ddebb341ea240d1ba3479a2db1e1da30ea3d9681e4a55b2b3dd94bfde060f7f6",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.essentique.sk/user/shop/big/53-1_juliette-has-a-gun-not-a-perfume-edp-1458013120190621140030.jpg?ff=1&x=1024&y=768&q=85&ts=6a0dd8e0&sg=161563f2",
+          "localPath": "/assets/s5/essentique/not-a-perfume.webp",
+          "sha256": "37ae1deaaab462e5c21f466ee871b28340cb77d7f1cf35174bcb7b4927b22b6e",
+          "width": 1024,
+          "height": 768,
+          "checkedAt": "2026-11-11T10:34:43.742664+00:00",
+          "visualReview": "All24 official source images visually reviewed by PERFUME_WORKER; Arabians Tonka replaces tiny illustrative Cherry Ink image after independent exact variant/notes/photo review. Full bottle illustrations explicitly disclosed, not the supplied sample pack."
+        }
+      }
+    }
+  ],
+  "status": "RESERVED_SOURCE_REVIEWED_ENGINE_C9E4DA0_LOCAL_QA_RUNNING",
+  "requiredEngineContract": "s5-fragrance-samples-direction-profile-v1",
+  "revenue": "UNKNOWN",
+  "size": "UNKNOWN",
+  "notes": [
+    "Every item is a2ml sample/decant, never a full retail bottle. Sizes and discovery sets excluded as extra formulas.",
+    "isSample=true is preserved; MAIN implemented sample-fragrance opt-in in c9e4da0.",
+    "Illustrative original bottle images explicitly identified.",
+    "No budget/addon/intensity/occasion or paid calls promised."
+  ],
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6"
+}

@@ -1,0 +1,343 @@
+{
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Unchanged coordinator core with isolated candidate data; not registered or Preview QA",
+  "companies": {
+    "essentique": {
+      "formulaCount": 12,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "orange-x-santal"
+          },
+          "id": "orange-x-santal",
+          "url": "https://www.essentique.sk/orange-x-santal/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "the-ghost-in-the-shell"
+          },
+          "id": "the-ghost-in-the-shell",
+          "url": "https://www.essentique.sk/the-ghost-in-the-shell/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "ganymede"
+          },
+          "id": "ganymede",
+          "url": "https://www.essentique.sk/ganymede/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "guidance"
+          },
+          "id": "guidance",
+          "url": "https://www.essentique.sk/guidance/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "delina-exclusif"
+          },
+          "id": "delina-exclusif",
+          "url": "https://www.essentique.sk/delina-exclusif/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "hundred-silent-ways"
+          },
+          "id": "hundred-silent-ways",
+          "url": "https://www.essentique.sk/hundred-silent-ways/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "angels-share"
+          },
+          "id": "angels-share",
+          "url": "https://www.essentique.sk/angels-share/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "divine-vanille"
+          },
+          "id": "divine-vanille",
+          "url": "https://www.essentique.sk/divine-vanille/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "arabians-tonka"
+          },
+          "id": "arabians-tonka",
+          "url": "https://www.essentique.sk/arabians-tonka/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "bois-imperial"
+          },
+          "id": "bois-imperial",
+          "url": "https://www.essentique.sk/bois-imperial/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "eilish-no-2"
+          },
+          "id": "eilish-no-2",
+          "url": "https://www.essentique.sk/eilish-no-2/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "not-a-perfume"
+          },
+          "id": "not-a-perfume",
+          "url": "https://www.essentique.sk/not-a-perfume/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "gourmand",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "orange-x-santal",
+              "the-ghost-in-the-shell",
+              "ganymede"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "guidance",
+              "delina-exclusif",
+              "hundred-silent-ways"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "angels-share",
+              "divine-vanille",
+              "arabians-tonka"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "bois-imperial",
+              "eilish-no-2",
+              "not-a-perfume"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "fragrancesamples": {
+      "formulaCount": 12,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "mancera-french-riviera"
+          },
+          "id": "mancera-french-riviera",
+          "url": "https://www.fragrancesamples.cz/mancera-french-riviera/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "note-de-yuzu"
+          },
+          "id": "note-de-yuzu",
+          "url": "https://www.fragrancesamples.cz/note-de-yuzu/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "parfums-de-marly-percival-edp"
+          },
+          "id": "parfums-de-marly-percival-edp",
+          "url": "https://www.fragrancesamples.cz/parfums-de-marly-percival-edp/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "versace-bright-crystal-absolu"
+          },
+          "id": "versace-bright-crystal-absolu",
+          "url": "https://www.fragrancesamples.cz/versace-bright-crystal-absolu/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "ysl-libre"
+          },
+          "id": "ysl-libre",
+          "url": "https://www.fragrancesamples.cz/ysl-libre/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "lancome-la-vie-est-belle"
+          },
+          "id": "lancome-la-vie-est-belle",
+          "url": "https://www.fragrancesamples.cz/lancome-la-vie-est-belle/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "jean-paul-gaultier-scandal-eau-de-parfum"
+          },
+          "id": "jean-paul-gaultier-scandal-eau-de-parfum",
+          "url": "https://www.fragrancesamples.cz/jean-paul-gaultier-scandal-eau-de-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "prada-candy-eau-de-parfum"
+          },
+          "id": "prada-candy-eau-de-parfum",
+          "url": "https://www.fragrancesamples.cz/prada-candy-eau-de-parfum/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "burberry-goddess-intense"
+          },
+          "id": "burberry-goddess-intense",
+          "url": "https://www.fragrancesamples.cz/burberry-goddess-intense/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "zimaya-sharaf-blend-edp"
+          },
+          "id": "zimaya-sharaf-blend-edp",
+          "url": "https://www.fragrancesamples.cz/zimaya-sharaf-blend-edp/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "mancera-cedrat-boise"
+          },
+          "id": "mancera-cedrat-boise",
+          "url": "https://www.fragrancesamples.cz/mancera-cedrat-boise/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "spicebomb-extreme-od-viktor-rolf"
+          },
+          "id": "spicebomb-extreme-od-viktor-rolf",
+          "url": "https://www.fragrancesamples.cz/spicebomb-extreme-od-viktor-rolf/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "gourmand",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "mancera-french-riviera",
+              "note-de-yuzu",
+              "parfums-de-marly-percival-edp"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "versace-bright-crystal-absolu",
+              "ysl-libre",
+              "lancome-la-vie-est-belle"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "jean-paul-gaultier-scandal-eau-de-parfum",
+              "prada-candy-eau-de-parfum",
+              "burberry-goddess-intense",
+              "zimaya-sharaf-blend-edp"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "mancera-cedrat-boise",
+              "spicebomb-extreme-od-viktor-rolf"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    }
+  },
+  "paidModelCalls": 0
+}

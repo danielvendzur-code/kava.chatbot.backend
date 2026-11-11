@@ -3,13 +3,15 @@ import argparse,asyncio,json,pathlib,datetime,re
 from playwright.async_api import async_playwright
 import os
 from urllib.parse import urlsplit
-p=argparse.ArgumentParser();p.add_argument('--engine-report',required=True);p.add_argument('--output',required=True);p.add_argument('--base',default='http://127.0.0.1:8911');p.add_argument('--slugs',nargs='+',default=['adoraniche','nicheandglow']);p.add_argument('--fixture-scentisimo',action='store_true');p.add_argument('--package-root');p.add_argument('--browser',choices=['chromium','webkit'],default='chromium');p.add_argument('--browser-executable');p.add_argument('--commit',default='8a1bb74685d6b3b67fcc817d7c7c5515816360aa');p.add_argument('--deployment-id');p.add_argument('--widths',type=int,nargs='+',default=[320,390,1280]);a=p.parse_args();image_format='png' if a.browser=='webkit' else 'webp';shot_options={'type':'png'} if a.browser=='webkit' else {'type':'webp','quality':82};
+p=argparse.ArgumentParser();p.add_argument('--engine-report',required=True);p.add_argument('--output',required=True);p.add_argument('--base',default='http://127.0.0.1:8911');p.add_argument('--slugs',nargs='+',default=['adoraniche','nicheandglow']);p.add_argument('--fixture-scentisimo',action='store_true');p.add_argument('--package-root');p.add_argument('--skip-compare',action='store_true');p.add_argument('--resume-report');p.add_argument('--browser',choices=['chromium','webkit'],default='chromium');p.add_argument('--browser-executable');p.add_argument('--commit',default='8a1bb74685d6b3b67fcc817d7c7c5515816360aa');p.add_argument('--deployment-id');p.add_argument('--widths',type=int,nargs='+',default=[320,390,1280]);a=p.parse_args();image_format='png' if a.browser=='webkit' else 'webp';shot_options={'type':'png'} if a.browser=='webkit' else {'type':'webp','quality':82};
 root=pathlib.Path(__file__).resolve().parents[3];out=pathlib.Path(a.output);out.mkdir(parents=True,exist_ok=True);engine=json.loads(pathlib.Path(a.engine_report).read_text())
 report={'commit':engine['commit'],'at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'qaType':'PERFUME_WORKER independent local snapshot browser QA; not live merchant or Preview QA','paidModelCalls':0,'results':[],'questionPages':[],'interactions':[],'errors':[],'blockedExternalHosts':[],'complete':False}
 if a.fixture_scentisimo:report['qaType']='Isolated local Scentisimo data/config fixture on unchanged coordinator core; API responses mocked from source IDs. NOT registered/shared backend/live/Preview QA.'
 if a.package_root:report.update({'commit':a.commit,'qaType':'Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.','scope':'Local isolated candidate fixture only.','browser':a.browser})
 if a.base.startswith('https://'):
  report.update({'commit':a.commit,'deploymentId':a.deployment_id,'baseUrl':a.base,'browser':a.browser,'tlsVerification':True,'scope':'Live unique Vercel Preview on exact supplied commit; API replies mocked/offline only. No live merchant messages or paid model calls.','qaType':'Live unique Vercel Preview on exact supplied commit; API replies mocked/offline only. No live merchant messages or paid model calls.'})
+if a.resume_report:
+ previous=json.loads(pathlib.Path(a.resume_report).read_text());report.update(previous);report['priorFailure']=report.pop('failure',None);report['resumeScope']='Only missing result viewports; comparison explicitly pending if skip-compare.';report['complete']=False
 def save():(out/'independent-ui.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
 async def run():
  async with async_playwright() as pw:
@@ -45,6 +47,7 @@ async def run():
      await page.goto(a.base+path+'?demo='+slug,wait_until='domcontentloaded');await page.wait_for_function('()=>document.querySelector("#cosmetics-root")?.getAttribute("aria-busy")!=="true"&&document.querySelector("[data-open=chat]")');await page.locator('[data-open="'+mode+'"]').click()
     seen=set()
     for leaf in engine['companies'][slug]['leaves']:
+     if any(r['slug']==slug and r['width']==width and r['id']==leaf['id'] for r in report['results']):continue
      await open_mode()
      for key,value in leaf['answers'].items():
       for turn in range(10):
@@ -73,7 +76,7 @@ async def run():
      await page.locator('[data-restart]').click();assert await page.locator('[data-choice]').count()==min(4,len(engine['companies'][slug]['questions'][0]['step']['options']))
      report['results'].append({'slug':slug,'width':width,'id':f['id'],'pack':f['volume'],'price':f['price'],'url':f['url'],'photoLoaded':True,'ctaInsideCard':True,'reset':True,'progress':progress,'screenshot':file});save()
     # Hover geometry and every offline chip; no merchant CTA is clicked.
-    first=page.locator('.cx-quality-option').first;await page.mouse.move(0,0);before=await first.bounding_box();color=await first.evaluate('(e)=>getComputedStyle(e).borderColor');await first.hover();await page.wait_for_timeout(150);after=await first.bounding_box();assert abs(before['y']-after['y'])<1;assert color!=await first.evaluate('(e)=>getComputedStyle(e).borderColor')
+    await open_mode();first=page.locator('.cx-quality-option').first;await page.mouse.move(0,0);before=await first.bounding_box();color=await first.evaluate('(e)=>getComputedStyle(e).borderColor');await first.hover();await page.wait_for_timeout(150);after=await first.bounding_box();assert abs(before['y']-after['y'])<1;assert color!=await first.evaluate('(e)=>getComputedStyle(e).borderColor')
     for i in range(3):
      await open_mode('chat');assert await page.locator('.cx-chip').evaluate_all('(es)=>es.map(e=>Math.round(e.getBoundingClientRect().height))')==[40]*4
      await page.locator('.cx-chip').nth(i).click();cards=page.locator('.cx-message--assistant').last.locator('a.lg-wine-card');await cards.first.wait_for();await page.wait_for_function('()=>!document.querySelector(".lg-typing")')
@@ -82,13 +85,15 @@ async def run():
      for c in await cards.all():
       b=await c.bounding_box();assert b;assert not await c.evaluate('(e)=>e.scrollWidth>e.clientWidth+1')
      file=f'{slug}-chat-{i}-{width}.{image_format}';await page.screenshot(path=str(out/file),**shot_options)
-    await open_mode('chat');await page.locator('.cx-chip[data-s3-action="compare"]').click();assert await page.locator('[data-s4-prod]').count()==2
-    await page.locator('[data-s4-prod]').nth(0).click();await page.locator('[data-s4-prod]').nth(1).click();await page.locator('.s3-cmp-cols').wait_for();await page.wait_for_function('()=>[...document.querySelectorAll(".s3-cmp-cols img")].every(i=>i.complete&&i.naturalWidth>0)')
-    text=await page.locator('.s3-cmp-cols').inner_text()
-    for pid in config['compareProductIds']:
-     f=facts[pid];assert f['price'] in text and f['volume'] in text;assert await page.locator('.s3-cmp-cols a[href="'+f['url']+'"]').count()
-    file=f'{slug}-compare-{width}.{image_format}';await page.screenshot(path=str(out/file),**shot_options)
-    report['interactions'].append({'slug':slug,'width':width,'four40pxChips':True,'offlineChipReplies':3,'compareDistinct':config['compareProductIds'],'hoverNoLayoutShift':True,'reducedMotionMedia':await page.evaluate('matchMedia("(prefers-reduced-motion: reduce)").matches'),'screenshot':file});save();await page.close();print(slug,width,'complete',flush=True)
-  assert not report['errors'];assert len(report['results'])==sum(engine['companies'][s]['formulaCount']*len(a.widths) for s in a.slugs);report['complete']=True;save();await browser.close()
+    if not a.skip_compare:
+     await open_mode('chat');await page.locator('.cx-chip[data-s3-action="compare"]').click();assert await page.locator('[data-s4-prod]').count()==2
+     await page.locator('[data-s4-prod]').nth(0).click();await page.locator('[data-s4-prod]').nth(1).click();await page.locator('.s3-cmp-cols').wait_for();await page.wait_for_function('()=>[...document.querySelectorAll(".s3-cmp-cols img")].every(i=>i.complete&&i.naturalWidth>0)')
+     text=await page.locator('.s3-cmp-cols').inner_text()
+     for pid in config['compareProductIds']:
+      f=facts[pid];assert f['price'] in text and f['volume'] in text;assert await page.locator('.s3-cmp-cols a[href="'+f['url']+'"]').count()
+     file=f'{slug}-compare-{width}.{image_format}';await page.screenshot(path=str(out/file),**shot_options)
+    else:file=None
+    report['interactions'].append({'slug':slug,'width':width,'four40pxChips':True,'offlineChipReplies':3,'compareDistinct':None if a.skip_compare else config['compareProductIds'],'comparisonStatus':'PENDING_MAIN_SAMPLE_COMPARE_OPT_IN' if a.skip_compare else 'PASS','hoverNoLayoutShift':True,'reducedMotionMedia':await page.evaluate('matchMedia("(prefers-reduced-motion: reduce)").matches'),'screenshot':file});save();await page.close();print(slug,width,'complete',flush=True)
+  assert not report['errors'];assert len(report['results'])==sum(engine['companies'][s]['formulaCount']*len(a.widths) for s in a.slugs);report['allRequestedResultsPassed']=True;report['complete']=not a.skip_compare;save();await browser.close()
 try:asyncio.run(run())
 except Exception as e:report['failure']=str(e);save();raise

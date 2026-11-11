@@ -1,0 +1,258 @@
+{
+  "status": "ENGINE_C9E4DA0_AVAILABLE_COMPARISON_OPT_IN_PENDING_LOCAL_QA_RUNNING",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Essentique",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/essentique/logo.svg",
+      "header": "/assets/s5/essentique/logo.svg",
+      "avatar": "/assets/s5/essentique/avatar.svg"
+    },
+    "brand": {
+      "name": "Essentique",
+      "domain": "essentique.sk",
+      "website": "https://www.essentique.sk/",
+      "lang": "sk",
+      "fullName": "Essentique",
+      "url": "https://www.essentique.sk/",
+      "logo": "/assets/s5/essentique/logo.svg",
+      "mark": "/assets/s5/essentique/avatar.svg",
+      "greeting": "Vyberte si 2 ml odstrek podľa doložených tónov a porovnajte dve rôzne kompozície.",
+      "quickChips": [
+        "Pomaranč a santal",
+        "Hruška a ruža",
+        "Koňak a škorica",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#2f2921",
+        "accent": "#2f2921",
+        "soft": "#f7f4ee",
+        "paper": "#ffffff",
+        "ink": "#28231d",
+        "line": "#e6dfd2"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, mliečny akord alebo minerálne tóny",
+        "Vyberte podľa uvedených tónov.",
+        "Citrusy, mliečny akord alebo minerálne tóny",
+        "Vyberte podľa uvedených tónov."
+      ],
+      "orange-x-santal": [
+        "Pomaranč, bazalka a santal",
+        "Pomaranč, bazalka a santal.",
+        "Pomaranč, bazalka a santal",
+        "Pomaranč, bazalka a santal."
+      ],
+      "the-ghost-in-the-shell": [
+        "Yuzu, mliečny akord a jazmín",
+        "Yuzu, mliečny akord a jazmín.",
+        "Yuzu, mliečny akord a jazmín",
+        "Yuzu, mliečny akord a jazmín."
+      ],
+      "ganymede": [
+        "Mandarínka, minerálne tóny a semiš",
+        "Mandarínka, minerálne tóny a semiš.",
+        "Mandarínka, minerálne tóny a semiš",
+        "Mandarínka, minerálne tóny a semiš."
+      ],
+      "floral": [
+        "Kvety s hruškou, liči alebo broskyňou",
+        "Vyberte podľa uvedených tónov.",
+        "Kvety s hruškou, liči alebo broskyňou",
+        "Vyberte podľa uvedených tónov."
+      ],
+      "guidance": [
+        "Hruška, lieskový orech a ruža",
+        "Hruška, lieskový orech a ruža.",
+        "Hruška, lieskový orech a ruža",
+        "Hruška, lieskový orech a ruža."
+      ],
+      "delina-exclusif": [
+        "Liči, ruža a kadidlo",
+        "Liči, ruža a kadidlo.",
+        "Liči, ruža a kadidlo",
+        "Liči, ruža a kadidlo."
+      ],
+      "hundred-silent-ways": [
+        "Broskyňa, tuberóza a vanilka",
+        "Broskyňa, tuberóza a vanilka.",
+        "Broskyňa, tuberóza a vanilka",
+        "Broskyňa, tuberóza a vanilka."
+      ],
+      "gourmand": [
+        "Koňak, vanilka alebo tonka",
+        "Vyberte podľa uvedených tónov.",
+        "Koňak, vanilka alebo tonka",
+        "Vyberte podľa uvedených tónov."
+      ],
+      "angels-share": [
+        "Koňak, škorica a praliné",
+        "Koňak, škorica a praliné.",
+        "Koňak, škorica a praliné",
+        "Koňak, škorica a praliné."
+      ],
+      "divine-vanille": [
+        "Vanilka, kadidlo a tonka",
+        "Vanilka, kadidlo a tonka.",
+        "Vanilka, kadidlo a tonka",
+        "Vanilka, kadidlo a tonka."
+      ],
+      "arabians-tonka": [
+        "Tonka, ruža a oud",
+        "Tonka, ruža a oud.",
+        "Tonka, ruža a oud",
+        "Tonka, ruža a oud."
+      ],
+      "wood": [
+        "Drevo, korenie alebo Cetalox",
+        "Vyberte podľa uvedených tónov.",
+        "Drevo, korenie alebo Cetalox",
+        "Vyberte podľa uvedených tónov."
+      ],
+      "bois-imperial": [
+        "Bazalka, Timut korenie a drevité tóny",
+        "Bazalka, Timut korenie a drevité tóny.",
+        "Bazalka, Timut korenie a drevité tóny",
+        "Bazalka, Timut korenie a drevité tóny."
+      ],
+      "eilish-no-2": [
+        "Kadidlo, papyrus a čierne korenie",
+        "Kadidlo, papyrus a čierne korenie.",
+        "Kadidlo, papyrus a čierne korenie",
+        "Kadidlo, papyrus a čierne korenie."
+      ],
+      "not-a-perfume": [
+        "Minimalistická kompozícia s Cetaloxom",
+        "Minimalistická kompozícia s Cetaloxom.",
+        "Minimalistická kompozícia s Cetaloxom",
+        "Minimalistická kompozícia s Cetaloxom."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aké tóny chcete objavovať?",
+        "Vyberte podľa doložených tónov.",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktoré tóny vás lákajú?",
+        "Vyberte jeden profil.",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "orange-x-santal": [
+        "/assets/s3/scenes-k2/orange-slices.jpg"
+      ],
+      "the-ghost-in-the-shell": [
+        "/assets/s3/scenes-k2/milk.jpg"
+      ],
+      "ganymede": [
+        "/assets/s5/essentique/ganymede.webp"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "guidance": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "delina-exclusif": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "hundred-silent-ways": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "gourmand": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "angels-share": [
+        "/assets/s3/scenes-k2/cinnamon.jpg"
+      ],
+      "divine-vanille": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "arabians-tonka": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "bois-imperial": [
+        "/assets/s5/essentique/bois-imperial.webp"
+      ],
+      "eilish-no-2": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "not-a-perfume": [
+        "/assets/s5/essentique/not-a-perfume.webp"
+      ],
+      "navigation:more": [
+        "/assets/s5/essentique/orange-x-santal.webp"
+      ]
+    },
+    "compareProductIds": [
+      "orange-x-santal",
+      "angels-share"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vône · vzorky · porovnanie",
+      "titleSuffix": "výber vzorky vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vzorku podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi vybrať vzorku vône podľa jeho vkusu.",
+      "lead": "Zákazník si vyberie podľa doložených tónov a pozrie si konkrétny 2 ml odstrek s cenou a odkazom. Dve odlišné kompozície si môže porovnať.",
+      "includedChat": "Tóny vône, konkrétne vzorky, ceny a porovnanie.",
+      "includedAdvisor": "Preferované tóny a konkrétny profil vône — na konci 2 ml odstrek.",
+      "greeting": "Vyberte si 2 ml odstrek podľa doložených tónov a porovnajte dve rôzne kompozície.",
+      "teaserTitle": "Vyberte si vzorku vône podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vzorky vône",
+      "source": "perfume-demo-"
+    }
+  },
+  "catalogueImport": "/catalogues/essentique.js",
+  "backendBrand": "essentique",
+  "offlineRules": [
+    {
+      "match": "pomaranc.*santal",
+      "ids": [
+        "orange-x-santal"
+      ]
+    },
+    {
+      "match": "hrusk.*ruz",
+      "ids": [
+        "guidance"
+      ]
+    },
+    {
+      "match": "konak.*skoric",
+      "ids": [
+        "angels-share"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "requiredOptIn": "Already implemented by MAIN in c9e4da0; preserve source.sampleSegment=fragrance and isSample=true.",
+  "runtimeEnabled": false,
+  "merchantCta": "Canonical exact product URL; explicitly choose2ml on merchant website.",
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "remainingOwnerChanges": [
+    "Import catalogue/registry/3offlineRules/company CSS once.",
+    "Allow only explicit S5 fragrance samples in compare-native.js list, see SAMPLE-COMPARE-OPT-IN-20261111.md."
+  ]
+}

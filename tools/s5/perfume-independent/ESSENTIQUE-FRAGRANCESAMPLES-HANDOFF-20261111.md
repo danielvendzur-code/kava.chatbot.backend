@@ -20,3 +20,13 @@ candidate-packages/{essentique,fragrancesamples}/ each has verified-products.jso
 MAIN alone imports catalogue, registry brand and3 explicit offline rules listed in integration-review.json, plus reviews CSS scope and sample predicate. Shared files unchanged by this worker. All material stays under /tools/ (already Vercel-excluded). No mail/production/paid calls;447+10, no trial copy.
 
 Kintsugi/Oraculum/Furiosa/Scentium local WIP and completed local machine reports from before reassignment preserved; no additional development/integration/claim takeover for those firms. Their partial visual review is not a finished-demo claim. Original Scentisimo70-image/12ZIP4,867,952B archive preserved. Current explicit owner permission for GitHub QA storage received; first archive10 immutable blob uploaded successfully, remaining upload/checkpoint status tracked separately. No claim all binaries remotely stored yet.
+
+## Updated integration state after MAIN c9e4da0
+
+MAIN implemented the advisor-core sample opt-in in c9e4da04e19339492a4ffe91428e8ac960b866b6. Actual unchanged core now passes12+12 note trees. The earlier in-memory proposal is historical evidence, not another requested advisor-core fix. Native comparison has a separate !isSample filter; precise proposed extension is in SAMPLE-COMPARE-OPT-IN-20261111.md, remote4cf65768a539eefa2c97df4d7c596a2c636bd1dc. MAIN alone edits it.
+
+Both final source packages and all28 official product/logo/favicon assets plus2 clearly identified local initial-avatar SVGs are supplied under tools/s5/perfume-independent/candidate-packages/essentique/ and .../fragrancesamples/. Native original wordmarks retained. Local initial avatars replace unreadably small native favicons only in demo avatars, not original headers; not represented as merchant-supplied logo files.
+
+Source selection refinement: tiny Cherry Ink bottle image excluded; Arabians Tonka independently verified available2ml7EUR with official tonka/rose/oud notes and source photo, keeps12 formulas. Final pack label compact2ml, with explicit sample kind and illustration disclosure; EUR decimal4,50 localized. Initial72/72 result renders and18 focused source-mock cards passed before these presentation refinements; final presentation delta QA in progress, comparison pending. No complete Preview/demo count.
+
+Scentisimo original12ZIP/70images/4,867,952B now fully checkpointed at4798d5b79ce89fde9c81e88c494979907cfdc3c5 under tools/s5/perfume-independent/reports/20261110-browser-recovery/scentisimo-live-b3/archives/. Upload-manifest.json read back; original local archives preserved. No current auto-review export blocker.
