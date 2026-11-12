@@ -1,0 +1,652 @@
+{
+  "readOnly": true,
+  "paidCalls": 0,
+  "scope": "Own HTTPS subdomain initial render identity only; no advisor completion or API calls",
+  "rows": [
+    {
+      "slug": "nutt",
+      "url": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt",
+      "checkedAt": "2026-11-12T09:42:02.511846+00:00",
+      "tlsVerification": true,
+      "status": 200,
+      "finalUrl": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=nutt",
+      "title": "NUTT – výber starostlivosti",
+      "state": {
+        "text": "Chcem to na svoj web\nCHATBOT PRE VÁŠ E-SHOP\nPoradí zákazníkovi starostlivosť a odpovie mu na otázky.\nVyskúšať výber\nSkúsiť chat\n447 €\njednorazovo\nnastavenie a naplnenie vašimi produktmi\n10 €\nmesačne\nprevádzka\n\nBez viazanosti, vypnete kedykoľvek.\n\nOzvite sa mi\nmojchatbot.sk\nVýber starostlivosti\nChat\nVÝBER STAROSTLIVOSTI\nNájsť vhodný produkt\nPleť · priorita · rutina · textúra\nDobrý den. Pomůžu vám vybrat z nabídky NUTT. Jakou péči hledáte?\nMáslo s kokosovým olejem\nLevandule a vanilka\nTuhé máslo do sprchy\nPorovnat dva produkty\n\nmojchatbot.sk",
+        "bodyData": {
+          "series": "s5",
+          "cosmeticsDemo": "nutt",
+          "benefitStyle": "lines",
+          "cxNewMark": "true"
+        },
+        "registry": {
+          "series": "s5",
+          "type": "cosmetics",
+          "name": "NUTT",
+          "country": "CZ",
+          "logos": {
+            "landing": "/assets/s3/nutt/logo.png",
+            "header": "/assets/s3/nutt/logo-white.png",
+            "avatar": "/assets/s3/nutt/logo.png"
+          },
+          "brand": {
+            "name": "NUTT",
+            "fullName": "NUTT",
+            "domain": "nutt.cz",
+            "website": "https://www.nutt.cz/",
+            "url": "https://www.nutt.cz/pece-o-cele-telo-bambucka-masla",
+            "theme": {
+              "brand": "#237b27",
+              "accent": "#237b27",
+              "soft": "#f5f8f5",
+              "paper": "#fff",
+              "ink": "#242824",
+              "line": "#e3e9e3"
+            },
+            "logo": "/assets/s3/nutt/logo.png",
+            "mark": "/assets/s3/nutt/logo.png",
+            "lang": "cs",
+            "greeting": "Dobrý den. Pomůžu vám vybrat z nabídky NUTT. Jakou péči hledáte?",
+            "quickChips": [
+              "Máslo s kokosovým olejem",
+              "Levandule a vanilka",
+              "Tuhé máslo do sprchy",
+              "Porovnat dva produkty"
+            ]
+          },
+          "kindNotes": {
+            "Bambucké máslo v kelímku": "50 ml másla v bambusovém kelímku.",
+            "Tuhé sprchové máslo": "70 g tuhého másla na čistou, vlhkou pokožku ve sprše."
+          },
+          "traitCopy": {
+            "s5Bergamot": [
+              "Bergamot a kakao",
+              "Čokoládově ovocná vůně",
+              "Bergamot a kakao",
+              "Čokoládově ovocná vůně"
+            ],
+            "s5Cinnamon": [
+              "Skořice a dřeviny",
+              "Nevhodné pro citlivou pokožku",
+              "Skořice a dřeviny",
+              "Nevhodné pro citlivou pokožku"
+            ],
+            "s5HempNeem": [
+              "Bez esencí a silic",
+              "Zemitá a lehce oříšková vůně",
+              "Bez esencí a silic",
+              "Zemitá a lehce oříšková vůně"
+            ],
+            "s5LavenderVanilla": [
+              "Levandule a vanilka",
+              "Bylinná vůně s vanilkou",
+              "Levandule a vanilka",
+              "Bylinná vůně s vanilkou"
+            ],
+            "s5Masala": [
+              "Kořeněná masala chai",
+              "Kořeněná vůně",
+              "Kořeněná masala chai",
+              "Kořeněná vůně"
+            ],
+            "s5Coconut": [
+              "Jemně kokosová",
+              "Bez přidaných silic",
+              "Jemně kokosová",
+              "Bez přidaných silic"
+            ],
+            "s5Neroli": [
+              "Mandarinka a neroli",
+              "Květinově citrusová vůně",
+              "Mandarinka a neroli",
+              "Květinově citrusová vůně"
+            ],
+            "s5TeaLime": [
+              "Tea tree a limetka",
+              "Bylinně citrusová vůně",
+              "Tea tree a limetka",
+              "Bylinně citrusová vůně"
+            ]
+          },
+          "stepCopy": {
+            "kind": [
+              "Jak chcete máslo používat?",
+              "Vyberte formu péče."
+            ],
+            "careVariant": [
+              "Jaká vůně vám vyhovuje?",
+              "Rozhodněte se podle svých preferencí."
+            ]
+          },
+          "choicePhotos": {
+            "Bambucké máslo v kelímku": [
+              "/assets/scenes/cream-texture.jpg"
+            ],
+            "Tuhé sprchové máslo": [
+              "/assets/s3/scenes-k2/body-shower.jpg"
+            ],
+            "s5Bergamot": [
+              "/assets/s3/scenes-k2/cocoa.jpg"
+            ],
+            "s5Cinnamon": [
+              "/assets/s3/scenes-k2/cinnamon.jpg"
+            ],
+            "s5HempNeem": [
+              "/assets/s3/scenes-k2/hemp.jpg"
+            ],
+            "s5LavenderVanilla": [
+              "/assets/s3/scenes-k2/lavender.jpg"
+            ],
+            "s5Masala": [
+              "/assets/s3/scenes-k2/xmas-spices.jpg"
+            ],
+            "s5Coconut": [
+              "/assets/s3/scenes-k2/coconut.jpg"
+            ],
+            "s5Neroli": [
+              "/assets/s3/scenes-k2/neroli-blossom.jpg"
+            ],
+            "s5TeaLime": [
+              "/assets/s3/scenes-k2/tea-tree.jpg"
+            ]
+          },
+          "upsellFocus": {}
+        },
+        "catalogueLoaded": true,
+        "images": [
+          {
+            "src": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/assets/s3/nutt/logo.png",
+            "loaded": true
+          },
+          {
+            "src": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/assets/s3/nutt/bambucke-maslo-bergamot-kakao.jpg",
+            "loaded": true
+          },
+          {
+            "src": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/assets/s3/nutt/logo.png",
+            "loaded": true
+          },
+          {
+            "src": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/assets/s3/nutt/bambucke-maslo-bergamot-kakao.jpg",
+            "loaded": true
+          }
+        ],
+        "scripts": [
+          "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/n447/s5/registry.js",
+          "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/n447/s5/perfume-registry-20261112.js",
+          "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/n447/s5/boot.js"
+        ]
+      },
+      "pageErrors": []
+    },
+    {
+      "slug": "myskino",
+      "url": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=myskino",
+      "checkedAt": "2026-11-12T09:42:03.294698+00:00",
+      "tlsVerification": true,
+      "status": 200,
+      "finalUrl": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=myskino",
+      "title": "MYSKINO – výběr vůně",
+      "state": {
+        "text": "Chcem to na svoj web\nCHATBOT PRE VÁŠ E-SHOP\nPomozte zákazníkovi vybrat vůni podle jeho vkusu.\nVyskúšať výber\nSkúsiť chat\n447 €\njednorazovo\nnastavenie a naplnenie vašimi produktmi\n10 €\nmesačne\nprevádzka\n\nBez viazanosti, vypnete kedykoľvek.\n\nOzvite sa mi\nmojchatbot.sk\nVýběr vůně\nChat\nVÝBĚR VŮNĚ\nNajít vůni podle tónů\nTóny vůně · balení · porovnání\nVyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.\nBergamot a jasmín\nHruška a kakao\nMandlové mléko\nPorovnat dvě vůně\n\nmojchatbot.sk",
+        "bodyData": {
+          "series": "s5",
+          "cosmeticsDemo": "myskino",
+          "benefitStyle": "lines"
+        },
+        "registry": {
+          "series": "s5",
+          "type": "cosmetics",
+          "segment": "fragrance",
+          "name": "MYSKINO",
+          "country": "CZ",
+          "logos": {
+            "landing": "/assets/s5/myskino/logo.svg",
+            "header": "/assets/s5/myskino/logo.svg",
+            "avatar": "/assets/s5/myskino/avatar.svg"
+          },
+          "brand": {
+            "name": "MYSKINO",
+            "domain": "myskino.cz",
+            "website": "https://www.myskino.cz/",
+            "lang": "cs",
+            "fullName": "MYSKINO",
+            "url": "https://www.myskino.cz/",
+            "logo": "/assets/s5/myskino/logo.svg",
+            "mark": "/assets/s5/myskino/avatar.svg",
+            "greeting": "Vyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.",
+            "quickChips": [
+              "Bergamot a jasmín",
+              "Hruška a kakao",
+              "Mandlové mléko",
+              "Porovnat dvě vůně"
+            ],
+            "theme": {
+              "brand": "#263b37",
+              "accent": "#263b37",
+              "soft": "#edf2f0",
+              "paper": "#ffffff",
+              "ink": "#242624",
+              "line": "#dbe5df"
+            }
+          },
+          "traitCopy": {
+            "citrus": [
+              "Citrusy s květy nebo dřevem",
+              "Vyberte podle uvedených tónů.",
+              "Citrusy s květy nebo dřevem",
+              ""
+            ],
+            "nice": [
+              "Bergamot, jasmín a cedr",
+              "Bergamot, jasmín a cedr.",
+              "Bergamot, jasmín a cedr",
+              "Bergamot, jasmín a cedr."
+            ],
+            "riviera": [
+              "Limetka, zázvor a černý čaj",
+              "Limetka, zázvor a černý čaj.",
+              "Limetka, zázvor a černý čaj",
+              "Limetka, zázvor a černý čaj."
+            ],
+            "gozo": [
+              "Tuberóza, šafrán a cedr",
+              "Tuberóza, šafrán a cedr.",
+              "Tuberóza, šafrán a cedr",
+              "Tuberóza, šafrán a cedr."
+            ],
+            "sweet": [
+              "Kakao, vanilka či mléko",
+              "Vyberte podle uvedených tónů.",
+              "Kakao, vanilka či mléko",
+              ""
+            ],
+            "kokoa": [
+              "Hruška, kakao a myrha",
+              "Hruška, kakao a myrha.",
+              "Hruška, kakao a myrha",
+              "Hruška, kakao a myrha."
+            ],
+            "saint": [
+              "Lískový oříšek, mléko a santal",
+              "Lískový oříšek, mléko a santal.",
+              "Lískový oříšek, mléko a santal",
+              "Lískový oříšek, mléko a santal."
+            ],
+            "fire": [
+              "Mimóza, vanilka a hnědý cukr",
+              "Mimóza, vanilka a hnědý cukr.",
+              "Mimóza, vanilka a hnědý cukr",
+              "Mimóza, vanilka a hnědý cukr."
+            ],
+            "ambrelatte": [
+              "Mandlové mléko, tonka a santal",
+              "Mandlové mléko, tonka a santal.",
+              "Mandlové mléko, tonka a santal",
+              "Mandlové mléko, tonka a santal."
+            ]
+          },
+          "stepCopy": {
+            "fragranceDirection": [
+              "Jaké tóny chcete objevovat?",
+              "Vyberte podle doložených tónů.",
+              "Tóny vůně"
+            ],
+            "fragranceProfile": [
+              "Které tóny vás lákají?",
+              "Vyberte jeden profil.",
+              "Tóny vůně"
+            ]
+          },
+          "compareFocus": true,
+          "upsellFocus": {},
+          "choicePhotos": {
+            "citrus": [
+              "/assets/s3/scenes-k2/citrus.jpg"
+            ],
+            "nice": [
+              "/assets/s3/scenes-k2/citrus.jpg"
+            ],
+            "riviera": [
+              "/assets/s3/scenes-k2/black-tea.jpg"
+            ],
+            "gozo": [
+              "/assets/s3/scenes-k2/jasmine.jpg"
+            ],
+            "sweet": [
+              "/assets/s3/scenes-k2/vanilla.jpg"
+            ],
+            "kokoa": [
+              "/assets/s3/scenes-k2/cocoa.jpg"
+            ],
+            "saint": [
+              "/assets/s3/scenes-k2/sandalwood.jpg"
+            ],
+            "fire": [
+              "/assets/s3/scenes-k2/vanilla.jpg"
+            ],
+            "ambrelatte": [
+              "/assets/s5/myskino/ambrelatte.webp"
+            ],
+            "navigation:more": [
+              "/assets/s5/myskino/nice.webp"
+            ]
+          },
+          "compareProductIds": [
+            "nice",
+            "kokoa"
+          ],
+          "segmentText": {
+            "entryNote": "Tóny vůně · balení · porovnání",
+            "titleSuffix": "výběr vůně",
+            "tab": "Výběr vůně",
+            "advisorName": "Poradce vůní",
+            "entrySmall": "VÝBĚR VŮNĚ",
+            "entryTitle": "Najít vůni podle tónů",
+            "placeholder": "Zeptejte se na tóny nebo balení…",
+            "heading": "Pomozte zákazníkovi vybrat vůni podle jeho vkusu.",
+            "lead": "Výběr podle doložených tónů vede ke konkrétní vůni s cenou, balením a odkazem. Dvě různé kompozice si může porovnat.",
+            "includedChat": "Tóny vůně, přesná balení, ceny a porovnání dvou kompozic.",
+            "includedAdvisor": "Preferované tóny a konkrétní profil — na konci konkrétní výrobek.",
+            "greeting": "Vyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.",
+            "teaserTitle": "Vyberte si vůni podle tónů",
+            "teaserNote": "Otevřít výběr vůně",
+            "teaserAria": "Otevřít poradce pro výběr vůně",
+            "source": "perfume-demo-"
+          }
+        },
+        "catalogueLoaded": true,
+        "images": [
+          {
+            "src": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/assets/s5/myskino/logo.svg",
+            "loaded": true
+          },
+          {
+            "src": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/assets/s5/myskino/nice.webp",
+            "loaded": true
+          },
+          {
+            "src": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/assets/s5/myskino/logo.svg",
+            "loaded": true
+          },
+          {
+            "src": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/assets/s5/myskino/nice.webp",
+            "loaded": true
+          }
+        ],
+        "scripts": [
+          "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/n447/s5/registry.js",
+          "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/n447/s5/perfume-registry-20261112.js",
+          "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/n447/s5/boot.js"
+        ]
+      },
+      "pageErrors": []
+    },
+    {
+      "slug": "kintsugi",
+      "url": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=kintsugi",
+      "checkedAt": "2026-11-12T09:42:02.911678+00:00",
+      "tlsVerification": true,
+      "status": 200,
+      "finalUrl": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=kintsugi",
+      "title": "Kintsugi Perfumes – výběr vůně",
+      "state": {
+        "text": "Chcem to na svoj web\nCHATBOT PRE VÁŠ E-SHOP\nPomozte zákazníkovi vybrat vůni podle jeho vkusu.\nVyskúšať výber\nSkúsiť chat\n447 €\njednorazovo\nnastavenie a naplnenie vašimi produktmi\n10 €\nmesačne\nprevádzka\n\nBez viazanosti, vypnete kedykoľvek.\n\nOzvite sa mi\nmojchatbot.sk\nVýběr vůně\nChat\nVÝBĚR VŮNĚ\nNajít vůni podle tónů\nTóny vůně · balení · porovnání\nVyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.\nYuzu a borovice\nBroskev a jasmínový čaj\nKakao a rum\nPorovnat dvě vůně\n\nmojchatbot.sk",
+        "bodyData": {
+          "series": "s5",
+          "cosmeticsDemo": "kintsugi",
+          "benefitStyle": "lines"
+        },
+        "registry": {
+          "series": "s5",
+          "type": "cosmetics",
+          "segment": "fragrance",
+          "name": "Kintsugi Perfumes",
+          "country": "CZ",
+          "logos": {
+            "landing": "/assets/s5/kintsugi/logo-header-20261112.png",
+            "header": "/assets/s5/kintsugi/logo-header-20261112.png",
+            "avatar": "/assets/s5/kintsugi/mark.webp"
+          },
+          "brand": {
+            "name": "Kintsugi Perfumes",
+            "domain": "kintsugiperfumes.com",
+            "website": "https://www.kintsugiperfumes.com/",
+            "lang": "cs",
+            "fullName": "Kintsugi Perfumes",
+            "url": "https://www.kintsugiperfumes.com/",
+            "logo": "/assets/s5/kintsugi/logo-header-20261112.png",
+            "mark": "/assets/s5/kintsugi/mark.webp",
+            "greeting": "Vyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.",
+            "quickChips": [
+              "Yuzu a borovice",
+              "Broskev a jasmínový čaj",
+              "Kakao a rum",
+              "Porovnat dvě vůně"
+            ],
+            "theme": {
+              "brand": "#25231f",
+              "accent": "#25231f",
+              "soft": "#f4f1eb",
+              "paper": "#ffffff",
+              "ink": "#27231f",
+              "line": "#ded9ce"
+            }
+          },
+          "traitCopy": {
+            "fresh": [
+              "Citrusy, fík a byliny",
+              "Grapefruit, mořská sůl, fík, yuzu nebo vavřín.",
+              "Citrusy, fík a byliny",
+              "Grapefruit, mořská sůl, fík, yuzu nebo vavřín."
+            ],
+            "floral": [
+              "Květy a ovoce",
+              "Broskev s jasmínovým čajem nebo růže s jalovcem.",
+              "Květy a ovoce",
+              "Broskev s jasmínovým čajem nebo růže s jalovcem."
+            ],
+            "gourmand": [
+              "Kakao, tonka a káva",
+              "Kakao s rumem, tonka s květy nebo kouřová káva.",
+              "Kakao, tonka a káva",
+              "Kakao s rumem, tonka s květy nebo kouřová káva."
+            ],
+            "wood": [
+              "Dřevo, oud a koření",
+              "Santal s kůží, oud s pepřem nebo oud s mangem.",
+              "Dřevo, oud a koření",
+              "Santal s kůží, oud s pepřem nebo oud s mangem."
+            ],
+            "taom-eau-de-parfum": [
+              "Grapefruit, mořská sůl a koňak",
+              "Grapefruit a bergamot s mořskou solí, sečuánským pepřem a koňakem.",
+              "Grapefruit, mořská sůl a koňak",
+              "Grapefruit a bergamot s mořskou solí, sečuánským pepřem a koňakem."
+            ],
+            "kaigan-eau-de-parfum": [
+              "Fík, bazalka a mořské akordy",
+              "Fík s bazalkou a mořskými akordy na cedrovém základu.",
+              "Fík, bazalka a mořské akordy",
+              "Fík s bazalkou a mořskými akordy na cedrovém základu."
+            ],
+            "hanzo-eau-de-parfum": [
+              "Yuzu, borovice a kadidlo",
+              "Yuzu a borovice s cypřišem, mořskou řasou a kadidlem.",
+              "Yuzu, borovice a kadidlo",
+              "Yuzu a borovice s cypřišem, mořskou řasou a kadidlem."
+            ],
+            "tempo-eau-de-parfum": [
+              "Fík, vavřín a zázvor",
+              "Fík a vavřín se zázvorem, hinoki a santalovým dřevem.",
+              "Fík, vavřín a zázvor",
+              "Fík a vavřín se zázvorem, hinoki a santalovým dřevem."
+            ],
+            "muza-eau-de-parfum": [
+              "Broskev a jasmínový čaj",
+              "Broskev a bergamot s jasmínovým čajem a růžovým dřevem.",
+              "Broskev a jasmínový čaj",
+              "Broskev a bergamot s jasmínovým čajem a růžovým dřevem."
+            ],
+            "carnal-eau-de-parfum": [
+              "Růže, jalovec a černý rybíz",
+              "Růže, jasmín a fialka s jalovcem, neroli a černým rybízem.",
+              "Růže, jalovec a černý rybíz",
+              "Růže, jasmín a fialka s jalovcem, neroli a černým rybízem."
+            ],
+            "luna-eau-de-parfum": [
+              "Cukrová vata, tonka a fialka",
+              "Pomerančový květ, cukrová vata a hřebíček s tonkou a fialkou.",
+              "Cukrová vata, tonka a fialka",
+              "Pomerančový květ, cukrová vata a hřebíček s tonkou a fialkou."
+            ],
+            "ambre-extrait-de-parfum": [
+              "Kakao, rum a vanilka",
+              "Kakao a rum se sušeným ovocem, vanilkou a santalem.",
+              "Kakao, rum a vanilka",
+              "Kakao a rum se sušeným ovocem, vanilkou a santalem."
+            ],
+            "phenix-eau-de-parfum": [
+              "Káva, tabák a šafrán",
+              "Káva, tabák a šafrán s kouřem a koženým základem.",
+              "Káva, tabák a šafrán",
+              "Káva, tabák a šafrán s kouřem a koženým základem."
+            ],
+            "santal-eau-de-parfum": [
+              "Santal, kardamom a kůže",
+              "Santal a kůže s kardamomem, malinou a šafránem.",
+              "Santal, kardamom a kůže",
+              "Santal a kůže s kardamomem, malinou a šafránem."
+            ],
+            "deus-eau-de-parfum": [
+              "Oud, levandule a růžový pepř",
+              "Oud a cedr s levandulí, růžovým pepřem a zázvorem.",
+              "Oud, levandule a růžový pepř",
+              "Oud a cedr s levandulí, růžovým pepřem a zázvorem."
+            ],
+            "ambre-oud-extrait-de-parfum": [
+              "Laoský oud, mango a šafrán",
+              "Laoský oud s mangem, šafránem, medem a damašskou růží.",
+              "Laoský oud, mango a šafrán",
+              "Laoský oud s mangem, šafránem, medem a damašskou růží."
+            ]
+          },
+          "stepCopy": {
+            "fragranceDirection": [
+              "Jaké tóny chcete objevovat?",
+              "Vyberte podle doložených tónů.",
+              "Tóny vůně"
+            ],
+            "fragranceProfile": [
+              "Které tóny vás lákají?",
+              "Vyberte jeden profil.",
+              "Tóny vůně"
+            ]
+          },
+          "compareFocus": true,
+          "upsellFocus": {},
+          "choicePhotos": {
+            "fresh": [
+              "/assets/s3/scenes-k2/citrus.jpg"
+            ],
+            "floral": [
+              "/assets/s3/scenes-k2/rose.jpg"
+            ],
+            "gourmand": [
+              "/assets/s3/scenes-k2/cocoa.jpg"
+            ],
+            "wood": [
+              "/assets/s3/scenes-k2/cinnamon.jpg"
+            ],
+            "navigation:more": [
+              "/assets/s5/kintsugi/tempo-eau-de-parfum.webp"
+            ],
+            "taom-eau-de-parfum": [
+              "/assets/s5/kintsugi/taom-eau-de-parfum.webp"
+            ],
+            "kaigan-eau-de-parfum": [
+              "/assets/s5/kintsugi/kaigan-eau-de-parfum.webp"
+            ],
+            "hanzo-eau-de-parfum": [
+              "/assets/s5/kintsugi/hanzo-eau-de-parfum.webp"
+            ],
+            "tempo-eau-de-parfum": [
+              "/assets/s5/kintsugi/tempo-eau-de-parfum.webp"
+            ],
+            "muza-eau-de-parfum": [
+              "/assets/s5/kintsugi/muza-eau-de-parfum.webp"
+            ],
+            "carnal-eau-de-parfum": [
+              "/assets/s5/kintsugi/carnal-eau-de-parfum.webp"
+            ],
+            "luna-eau-de-parfum": [
+              "/assets/s5/kintsugi/luna-eau-de-parfum.webp"
+            ],
+            "ambre-extrait-de-parfum": [
+              "/assets/s5/kintsugi/ambre-extrait-de-parfum.webp"
+            ],
+            "phenix-eau-de-parfum": [
+              "/assets/s5/kintsugi/phenix-eau-de-parfum.webp"
+            ],
+            "santal-eau-de-parfum": [
+              "/assets/s5/kintsugi/santal-eau-de-parfum.webp"
+            ],
+            "deus-eau-de-parfum": [
+              "/assets/s5/kintsugi/deus-eau-de-parfum.webp"
+            ],
+            "ambre-oud-extrait-de-parfum": [
+              "/assets/s5/kintsugi/ambre-oud-extrait-de-parfum.webp"
+            ]
+          },
+          "compareProductIds": [
+            "luna-eau-de-parfum",
+            "hanzo-eau-de-parfum"
+          ],
+          "segmentText": {
+            "entryNote": "Tóny vůně · balení · porovnání",
+            "titleSuffix": "výběr vůně",
+            "tab": "Výběr vůně",
+            "advisorName": "Poradce vůní",
+            "entrySmall": "VÝBĚR VŮNĚ",
+            "entryTitle": "Najít vůni podle tónů",
+            "placeholder": "Zeptejte se na tóny nebo balení…",
+            "heading": "Pomozte zákazníkovi vybrat vůni podle jeho vkusu.",
+            "lead": "Zákazník si vybere podle doložených tónů a prohlédne si konkrétní vůni s cenou, balením a odkazem. Dvě odlišné kompozice si může porovnat.",
+            "includedChat": "Tóny vůně, balení, ceny a porovnání dvou vůní.",
+            "includedAdvisor": "Preferované tóny a konkrétní profil vůně — na konci konkrétní produkt.",
+            "greeting": "Vyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.",
+            "teaserTitle": "Vyberte si vůni podle tónů",
+            "teaserNote": "Otevřít výběr vůně",
+            "teaserAria": "Otevřít poradce pro výběr vůně",
+            "source": "perfume-demo-"
+          }
+        },
+        "catalogueLoaded": true,
+        "images": [
+          {
+            "src": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/assets/s5/kintsugi/logo-header-20261112.png",
+            "loaded": true
+          },
+          {
+            "src": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/assets/s5/kintsugi/taom-eau-de-parfum.webp",
+            "loaded": true
+          },
+          {
+            "src": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/assets/s5/kintsugi/logo-header-20261112.png",
+            "loaded": true
+          },
+          {
+            "src": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/assets/s5/kintsugi/taom-eau-de-parfum.webp",
+            "loaded": true
+          }
+        ],
+        "scripts": [
+          "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/n447/s5/registry.js",
+          "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/n447/s5/perfume-registry-20261112.js",
+          "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/n447/s5/boot.js"
+        ]
+      },
+      "pageErrors": []
+    }
+  ]
+}

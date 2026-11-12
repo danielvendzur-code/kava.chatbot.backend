@@ -1,0 +1,81 @@
+{
+  "at": "2026-11-12T09:48:23.161794+00:00",
+  "runtimeCommit": "f44b9d2850db84acce7fdb2855c9ce81cf6c86a4",
+  "deploymentId": "dpl_2XF6Mow1468FSmsdeMjKaGhMK3h9",
+  "previewBase": "https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app",
+  "local": [
+    {
+      "scope": "local-320",
+      "primaryResults": 103,
+      "questionPages": 44,
+      "interactions": 9,
+      "enrichedStates": 103,
+      "apiMode": "real_local_backend_injected_ai_stub"
+    },
+    {
+      "scope": "local-390",
+      "primaryResults": 103,
+      "questionPages": 44,
+      "interactions": 9,
+      "enrichedStates": 103,
+      "apiMode": "real_local_backend_injected_ai_stub"
+    },
+    {
+      "scope": "local-1280",
+      "primaryResults": 103,
+      "questionPages": 44,
+      "interactions": 9,
+      "enrichedStates": 103,
+      "apiMode": "real_local_backend_injected_ai_stub"
+    }
+  ],
+  "preview": [
+    {
+      "scope": "preview-group-1",
+      "primaryResults": 31,
+      "questionPages": 14,
+      "interactions": 3,
+      "enrichedStates": 31,
+      "apiMode": "real_local_backend_injected_ai_stub"
+    },
+    {
+      "scope": "preview-group-2",
+      "primaryResults": 36,
+      "questionPages": 15,
+      "interactions": 3,
+      "enrichedStates": 36,
+      "apiMode": "real_local_backend_injected_ai_stub"
+    },
+    {
+      "scope": "preview-group-3",
+      "primaryResults": 36,
+      "questionPages": 15,
+      "interactions": 3,
+      "enrichedStates": 36,
+      "apiMode": "real_local_backend_injected_ai_stub"
+    }
+  ],
+  "paidCalls": 0,
+  "deployedModelTested": false,
+  "production": "NOT_DEPLOYED",
+  "ownSubdomains": "NOT_ASSIGNED_BY_THIS_WORKER",
+  "status": "LIVE_PREVIEW_UI_QA_COMPLETE_OFFLINE_API",
+  "focusedLocalChat": {
+    "cards": 81,
+    "viewports": 27,
+    "complete": true
+  },
+  "visualReview": {
+    "all103LivePrimaryResults": true,
+    "all103Local390PrimaryResults": true,
+    "method": "Nine full-result contact sheets for each scope visually inspected; automated coverage for other local widths and all recorded expanded states.",
+    "localWidths": [
+      320,
+      390,
+      1280
+    ],
+    "liveWidths": [
+      390
+    ]
+  }
+}

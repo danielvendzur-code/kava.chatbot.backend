@@ -1,0 +1,65 @@
+{
+  "at": "2026-11-12T09:48:40.561096+00:00",
+  "runtimeCommit": "f44b9d2850db84acce7fdb2855c9ce81cf6c86a4",
+  "deploymentId": "dpl_2XF6Mow1468FSmsdeMjKaGhMK3h9",
+  "primaryImages": 412,
+  "losslessPixelVerified": true,
+  "scope": "309 local primary views +103 live Preview primary views; not production or live model tests. All raw PNGs retained locally.",
+  "archives": [
+    {
+      "path": "essentique-primary-results.zip",
+      "bytes": 2428700,
+      "sha256": "1f9593058c62adf42e99917c59183fb91458ece2b2fabbf4966d0872aa9bdadf",
+      "images": 48
+    },
+    {
+      "path": "fragrancesamples-primary-results.zip",
+      "bytes": 3164976,
+      "sha256": "689f5448bfa84656546c14958934afb8a3639082cf45e57a0c86c639d9d23a5c",
+      "images": 48
+    },
+    {
+      "path": "alexmonhart-primary-results.zip",
+      "bytes": 1246678,
+      "sha256": "a6dd0775530c1fc693303ed608a055c1914010e3f1cf6c920d2c2368a3f08102",
+      "images": 28
+    },
+    {
+      "path": "flakon-primary-results.zip",
+      "bytes": 2422522,
+      "sha256": "82b9bc5931215ef8cffc77f07c29596b5d4014af7e5a6cef9b52317fb2c8f955",
+      "images": 48
+    },
+    {
+      "path": "orion-primary-results.zip",
+      "bytes": 2556656,
+      "sha256": "35260a13ad3e5d1c07985df34db838b15630eb877b63f6b1458de70afe50bc3f",
+      "images": 48
+    },
+    {
+      "path": "inspirovane-primary-results.zip",
+      "bytes": 2840328,
+      "sha256": "bb1408aacb8024d8845fde6ea69a623ea21ade44dfd901c50e2d489e77886904",
+      "images": 48
+    },
+    {
+      "path": "leparfumlechic-primary-results.zip",
+      "bytes": 2745476,
+      "sha256": "d9a38acbd324ee31779e6bc6a2519b72d5d80aeeb943edc4d396e28755ec0792",
+      "images": 48
+    },
+    {
+      "path": "vavavoom-primary-results.zip",
+      "bytes": 2245816,
+      "sha256": "dadd6168be048ec36ff568a54727afd30d453aa95265470b9f02b4d9812f536d",
+      "images": 48
+    },
+    {
+      "path": "rafinad-primary-results.zip",
+      "bytes": 2289844,
+      "sha256": "bb0d479ac9b8ec63b85129e07a32d1b1a0eb73de1e30c960afb3dd3d9415a8b8",
+      "images": 48
+    }
+  ],
+  "paidCalls": 0
+}

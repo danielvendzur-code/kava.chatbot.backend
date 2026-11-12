@@ -1,0 +1,185 @@
+{
+  "scope": "Read-only official HTTPS HTML contact refresh, not outbound mail or deliverability test",
+  "tlsVerification": true,
+  "rows": [
+    {
+      "slug": "essentique",
+      "expectedEmail": "info@essentique.sk",
+      "checkedAt": "2026-11-12T09:41:30.071575+00:00",
+      "officialEvidence": [
+        {
+          "url": "https://www.essentique.sk/",
+          "email": "info@essentique.sk",
+          "mailtoLink": true
+        }
+      ],
+      "attempts": [
+        {
+          "url": "https://www.essentique.sk/",
+          "status": 200
+        }
+      ],
+      "status": "OFFICIAL_EMAIL_RECONFIRMED"
+    },
+    {
+      "slug": "fragrancesamples",
+      "expectedEmail": "info@fragrancesamples.cz",
+      "checkedAt": "2026-11-12T09:41:30.072641+00:00",
+      "officialEvidence": [
+        {
+          "url": "https://www.fragrancesamples.cz/obchodni-podminky/",
+          "email": "info@fragrancesamples.cz",
+          "mailtoLink": false
+        }
+      ],
+      "attempts": [
+        {
+          "url": "https://www.fragrancesamples.cz/",
+          "status": 200
+        },
+        {
+          "url": "https://www.fragrancesamples.cz/obchodni-podminky/",
+          "status": 200
+        }
+      ],
+      "status": "OFFICIAL_EMAIL_RECONFIRMED"
+    },
+    {
+      "slug": "alexmonhart",
+      "expectedEmail": "info@alexmonhart.com",
+      "checkedAt": "2026-11-12T09:41:30.074193+00:00",
+      "officialEvidence": [
+        {
+          "url": "https://www.alexmonhart.com/",
+          "email": "info@alexmonhart.com",
+          "mailtoLink": false
+        }
+      ],
+      "attempts": [
+        {
+          "url": "https://www.alexmonhart.com/",
+          "status": 200
+        }
+      ],
+      "status": "OFFICIAL_EMAIL_RECONFIRMED"
+    },
+    {
+      "slug": "flakon",
+      "expectedEmail": "obchod@flakon.sk",
+      "checkedAt": "2026-11-12T09:41:30.076798+00:00",
+      "officialEvidence": [
+        {
+          "url": "https://www.flakon.sk/",
+          "email": "obchod@flakon.sk",
+          "mailtoLink": true
+        }
+      ],
+      "attempts": [
+        {
+          "url": "https://www.flakon.sk/",
+          "status": 200
+        }
+      ],
+      "status": "OFFICIAL_EMAIL_RECONFIRMED"
+    },
+    {
+      "slug": "orion",
+      "expectedEmail": "info@parfumeria-orion.sk",
+      "checkedAt": "2026-11-12T09:41:31.610508+00:00",
+      "officialEvidence": [
+        {
+          "url": "https://parfumeria-orion.sk/",
+          "email": "info@parfumeria-orion.sk",
+          "mailtoLink": true
+        }
+      ],
+      "attempts": [
+        {
+          "url": "https://parfumeria-orion.sk/",
+          "status": 200
+        }
+      ],
+      "status": "OFFICIAL_EMAIL_RECONFIRMED"
+    },
+    {
+      "slug": "inspirovane",
+      "expectedEmail": "info@inspirovaneparfemy.cz",
+      "checkedAt": "2026-11-12T09:41:32.604692+00:00",
+      "officialEvidence": [
+        {
+          "url": "https://www.inspirovaneparfemy.cz/",
+          "email": "info@inspirovaneparfemy.cz",
+          "mailtoLink": true
+        }
+      ],
+      "attempts": [
+        {
+          "url": "https://www.inspirovaneparfemy.cz/",
+          "status": 200
+        }
+      ],
+      "status": "OFFICIAL_EMAIL_RECONFIRMED"
+    },
+    {
+      "slug": "leparfumlechic",
+      "expectedEmail": "info@leparfumlechic.sk",
+      "checkedAt": "2026-11-12T09:41:32.762326+00:00",
+      "officialEvidence": [
+        {
+          "url": "https://www.leparfumlechic.sk/kontakt/",
+          "email": "info@leparfumlechic.sk",
+          "mailtoLink": false
+        }
+      ],
+      "attempts": [
+        {
+          "url": "https://www.leparfumlechic.sk/",
+          "status": 200
+        },
+        {
+          "url": "https://www.leparfumlechic.sk/kontakt/",
+          "status": 200
+        }
+      ],
+      "status": "OFFICIAL_EMAIL_RECONFIRMED"
+    },
+    {
+      "slug": "vavavoom",
+      "expectedEmail": "info@vava-voom.cz",
+      "checkedAt": "2026-11-12T09:41:35.079018+00:00",
+      "officialEvidence": [
+        {
+          "url": "https://www.vava-voom.cz/",
+          "email": "info@vava-voom.cz",
+          "mailtoLink": true
+        }
+      ],
+      "attempts": [
+        {
+          "url": "https://www.vava-voom.cz/",
+          "status": 200
+        }
+      ],
+      "status": "OFFICIAL_EMAIL_RECONFIRMED"
+    },
+    {
+      "slug": "rafinad",
+      "expectedEmail": "info@rafinadparfumerie.com",
+      "checkedAt": "2026-11-12T09:41:35.186860+00:00",
+      "officialEvidence": [
+        {
+          "url": "https://www.rafinadparfumerie.com/",
+          "email": "info@rafinadparfumerie.com",
+          "mailtoLink": true
+        }
+      ],
+      "attempts": [
+        {
+          "url": "https://www.rafinadparfumerie.com/",
+          "status": 200
+        }
+      ],
+      "status": "OFFICIAL_EMAIL_RECONFIRMED"
+    }
+  ]
+}
