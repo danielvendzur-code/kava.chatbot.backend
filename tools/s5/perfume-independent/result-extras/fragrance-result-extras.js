@@ -13,7 +13,7 @@
  const eligible=p=>p?.source?.series==='s5'&&p.category==='fragrance'&&p.available!==false&&Number.isFinite(p.priceAmount)&&safeUrl(p.url);
  function exactPackSource(v,p){
   if(!safeUrl(v.url)||new URL(v.url).origin!==new URL(p.url).origin)return false;
-  const knownStock=v.evidence?.isNotSoldOut===true||(
+  const knownStock=v.evidence?.isNotSoldOut===true||(v.evidence?.scope==='WixProductPublicStructuredOffer'&&/\/InStock$/.test(v.evidence.availabilityUrl||''))||(
    v.evidence?.scope==='WooCommerceProductPublicAvailability'&&v.evidence.stockClass==='instock'&&/\/InStock$/.test(v.evidence.availabilityUrl||''));
   if(!knownStock)return false;
   if(v.url===p.url)return v.variantSelectionRequired===true;
@@ -33,7 +33,7 @@
   const supplement=supplementFor(p,answers);if(supplement)return supplement;
   return (p.source.upsellVariants||[]).find(v=>v.sameFormula===true&&v.parentProductId===p.id&&v.available===true&&v.currency===p.currency&&exactPackSource(v,p)&&v.evidence?.exactVariantId&&v.evidence?.sourceSha256&&['Skladem','Skladom','InStock'].includes(v.evidence?.stock)&&v.volume!==p.volume&&Number.isFinite(v.priceAmount)&&v.priceAmount>0&&(!answers.budget||p.priceAmount+v.priceAmount<=Number(answers.budget)))||null;
  }
- const sourceNotes=p=>p?.source?.fragrance?.notesEvidence?.sourceText||'';
+ const sourceNotes=p=>{const e=p?.source?.fragrance?.notesEvidence;return e?.displayLanguage===reg.brand.lang&&e?.translatedFrom==='en'&&e.sourceText?e.displayText||e.sourceText:e?.sourceText||'';};
  function pyramid(p){
   const text=sourceNotes(p),m=text.match(/(?:Hlava|Vrchné tóny|Vrchní tóny):\s*(.*?)\s*;?\s*Srdce:\s*(.*?)\s*;?\s*Základ:\s*([\s\S]*)/i);
   if(!m)return '';

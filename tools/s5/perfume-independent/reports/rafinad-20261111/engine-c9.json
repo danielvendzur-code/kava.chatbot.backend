@@ -1,0 +1,620 @@
+{
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Unchanged coordinator core with isolated candidate data; not registered or Preview QA",
+  "companies": {
+    "rafinad": {
+      "formulaCount": 12,
+      "supplementCount": 0,
+      "physicalProductRecords": 12,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "ginger"
+          },
+          "id": "ginger",
+          "url": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "ete"
+          },
+          "id": "ete",
+          "url": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "pacific"
+          },
+          "id": "pacific",
+          "url": "https://www.rafinadparfumerie.com/cs/product-page/pacific-rock-swell-100-ml-goldfield-and-banks"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "dafneis"
+          },
+          "id": "dafneis",
+          "url": "https://www.rafinadparfumerie.com/cs/product-page/dafneis-50-ml-isabelle-larignon"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "cashmere"
+          },
+          "id": "cashmere",
+          "url": "https://www.rafinadparfumerie.com/cs/product-page/cashmere-venus-100-ml-layel"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "exotique"
+          },
+          "id": "exotique",
+          "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-exotique-100-ml-les-nobles-essences"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "escapade"
+          },
+          "id": "escapade",
+          "url": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "mirage"
+          },
+          "id": "mirage",
+          "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "mocha"
+          },
+          "id": "mocha",
+          "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "suede"
+          },
+          "id": "suede",
+          "url": "https://www.rafinadparfumerie.com/cs/product-page/suede-moon-100-ml-layel"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "ganymede"
+          },
+          "id": "ganymede",
+          "url": "https://www.rafinadparfumerie.com/cs/product-page/ganymede-100-ml-marc-antoine-barrois"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "sublimis"
+          },
+          "id": "sublimis",
+          "url": "https://www.rafinadparfumerie.com/cs/product-page/roman-v-sublimis-100-ml-adamo-parfum"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "gourmand",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "ginger",
+              "ete",
+              "pacific"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "dafneis",
+              "cashmere",
+              "exotique"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "escapade",
+              "mirage",
+              "mocha"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "suede",
+              "ganymede",
+              "sublimis"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "vavavoom": {
+      "formulaCount": 12,
+      "supplementCount": 1,
+      "physicalProductRecords": 13,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "lime"
+          },
+          "id": "lime",
+          "url": "https://www.vava-voom.cz/products/bohemian-lime?variant=54228820230472"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "ginger"
+          },
+          "id": "ginger",
+          "url": "https://www.vava-voom.cz/products/ingenious-ginger?variant=54228825997640"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "metal"
+          },
+          "id": "metal",
+          "url": "https://www.vava-voom.cz/products/metal-lavender?variant=52960624050504"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "portrait"
+          },
+          "id": "portrait",
+          "url": "https://www.vava-voom.cz/products/portrait-of-a-lady-2?variant=51510624878920"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "santal"
+          },
+          "id": "santal",
+          "url": "https://www.vava-voom.cz/products/santal-austral?variant=50066858410312"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "shade"
+          },
+          "id": "shade",
+          "url": "https://www.vava-voom.cz/products/shade-of-blue?variant=54027698438472"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "vanilla"
+          },
+          "id": "vanilla",
+          "url": "https://www.vava-voom.cz/products/vanilla-powder?variant=49790093787464"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "silky"
+          },
+          "id": "silky",
+          "url": "https://www.vava-voom.cz/products/silky-woods?variant=54228828881224"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "northern"
+          },
+          "id": "northern",
+          "url": "https://www.vava-voom.cz/products/northern-love?variant=53936386638152"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "dark",
+            "fragranceProfile": "spicy"
+          },
+          "id": "spicy",
+          "url": "https://www.vava-voom.cz/products/spicy-road?variant=52960493666632"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "dark",
+            "fragranceProfile": "rudis"
+          },
+          "id": "rudis",
+          "url": "https://www.vava-voom.cz/products/rudis?variant=50423378084168"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "dark",
+            "fragranceProfile": "east"
+          },
+          "id": "east",
+          "url": "https://www.vava-voom.cz/products/east?variant=52409386959176"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "gourmand",
+              "dark"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "lime",
+              "ginger",
+              "metal"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "portrait",
+              "santal",
+              "shade"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "vanilla",
+              "silky",
+              "northern"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "dark"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "spicy",
+              "rudis",
+              "east"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "myskino": {
+      "formulaCount": 7,
+      "supplementCount": 0,
+      "physicalProductRecords": 7,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "nice"
+          },
+          "id": "nice",
+          "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "riviera"
+          },
+          "id": "riviera",
+          "url": "https://www.myskino.cz/bon-parfumeur-005-riviera-absolue-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "gozo"
+          },
+          "id": "gozo",
+          "url": "https://www.myskino.cz/jeroboam-gozo-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "kokoa"
+          },
+          "id": "kokoa",
+          "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "saint"
+          },
+          "id": "saint",
+          "url": "https://www.myskino.cz/nicola-saint-honore-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "fire"
+          },
+          "id": "fire",
+          "url": "https://www.myskino.cz/jovoy-fire-at-will-niche-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "ambrelatte"
+          },
+          "id": "ambrelatte",
+          "url": "https://www.myskino.cz/essential-parfums-ambre-latte-niche-parfem/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "citrus",
+              "sweet"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "nice",
+              "riviera",
+              "gozo"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "kokoa",
+              "saint",
+              "fire",
+              "ambrelatte"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "leparfumlechic": {
+      "formulaCount": 12,
+      "supplementCount": 0,
+      "physicalProductRecords": 12,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "herbal",
+            "fragranceProfile": "metal"
+          },
+          "id": "metal",
+          "url": "https://www.leparfumlechic.sk/product/matiere-premiere-metal-lavender/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbal",
+            "fragranceProfile": "vodka"
+          },
+          "id": "vodka",
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-vodka-on-the-rocks/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbal",
+            "fragranceProfile": "olimpo"
+          },
+          "id": "olimpo",
+          "url": "https://www.leparfumlechic.sk/product/agatho-mytho-olimpoverde/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "velvet"
+          },
+          "id": "velvet",
+          "url": "https://www.leparfumlechic.sk/product/essential-parfums-velvet-iris/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "rolling"
+          },
+          "id": "rolling",
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-rolling-in-love/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "rosso"
+          },
+          "id": "rosso",
+          "url": "https://www.leparfumlechic.sk/product/agatho-parfum-rossopompeiano/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "divine"
+          },
+          "id": "divine",
+          "url": "https://www.leparfumlechic.sk/product/essential-parfums-divine-vanille/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "phantom"
+          },
+          "id": "phantom",
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-black-phantom-memento-mori/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand",
+            "fragranceProfile": "angels"
+          },
+          "id": "angels",
+          "url": "https://www.leparfumlechic.sk/product/by-kilian-angels-share/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "bois"
+          },
+          "id": "bois",
+          "url": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "giardino"
+          },
+          "id": "giardino",
+          "url": "https://www.leparfumlechic.sk/product/agatho-parfum-giardinodiercole/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "afgano"
+          },
+          "id": "afgano",
+          "url": "https://www.leparfumlechic.sk/product/black-afgano/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "herbal",
+              "floral",
+              "gourmand",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "herbal"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "metal",
+              "vodka",
+              "olimpo"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "velvet",
+              "rolling",
+              "rosso"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "gourmand"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "divine",
+              "phantom",
+              "angels"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "bois",
+              "giardino",
+              "afgano"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    }
+  },
+  "paidModelCalls": 0
+}

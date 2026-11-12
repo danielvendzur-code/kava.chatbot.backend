@@ -1,0 +1,110 @@
+{
+  "key": "fragranceDirection",
+  "question": "Které tóny chcete objevovat?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy, čaj a mořské tóny",
+      "key": "fragranceProfile",
+      "question": "Které spojení tónů vás láká?",
+      "options": [
+        {
+          "value": "ginger",
+          "label": "Limeta, čerstvý zázvor a růžový pepř",
+          "productId": "ginger",
+          "sourceUrl": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums"
+        },
+        {
+          "value": "ete",
+          "label": "Citrón, čaj a neroli",
+          "productId": "ete",
+          "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou"
+        },
+        {
+          "value": "pacific",
+          "label": "Mořské řasy, šalvěj a šedá ambra",
+          "productId": "pacific",
+          "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/pacific-rock-swell-100-ml-goldfield-and-banks"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Květy a ovoce",
+      "key": "fragranceProfile",
+      "question": "Které spojení tónů vás láká?",
+      "options": [
+        {
+          "value": "dafneis",
+          "label": "Bílý santal, pomerančový květ a kosatec",
+          "productId": "dafneis",
+          "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/dafneis-50-ml-isabelle-larignon"
+        },
+        {
+          "value": "cashmere",
+          "label": "Ostružina, růže a kašmírové dřevo",
+          "productId": "cashmere",
+          "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/cashmere-venus-100-ml-layel"
+        },
+        {
+          "value": "exotique",
+          "label": "Marakuja, mango a kokos",
+          "productId": "exotique",
+          "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/mirage-exotique-100-ml-les-nobles-essences"
+        }
+      ]
+    },
+    {
+      "value": "gourmand",
+      "label": "Vanilka, ořechy a káva",
+      "key": "fragranceProfile",
+      "question": "Které spojení tónů vás láká?",
+      "options": [
+        {
+          "value": "escapade",
+          "label": "Vanilka, černý cukr a tonka",
+          "productId": "escapade",
+          "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha"
+        },
+        {
+          "value": "mirage",
+          "label": "Pistácie, mandle a vanilka",
+          "productId": "mirage",
+          "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences"
+        },
+        {
+          "value": "mocha",
+          "label": "Káva arabika, thajský čaj a čokoláda",
+          "productId": "mocha",
+          "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Semiš, kůže a oud",
+      "key": "fragranceProfile",
+      "question": "Které spojení tónů vás láká?",
+      "options": [
+        {
+          "value": "suede",
+          "label": "Sladká mandle, kosatec a semiš",
+          "productId": "suede",
+          "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/suede-moon-100-ml-layel"
+        },
+        {
+          "value": "ganymede",
+          "label": "Mandarinka, kožený akord a Akigalawood",
+          "productId": "ganymede",
+          "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/ganymede-100-ml-marc-antoine-barrois"
+        },
+        {
+          "value": "sublimis",
+          "label": "Káva, kůže a kambodžský oud",
+          "productId": "sublimis",
+          "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/roman-v-sublimis-100-ml-adamo-parfum"
+        }
+      ]
+    }
+  ]
+}

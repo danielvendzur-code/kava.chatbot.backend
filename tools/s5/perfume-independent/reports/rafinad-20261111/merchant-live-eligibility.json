@@ -1,0 +1,26 @@
+{
+  "observer": "PERFUME_WORKER actual TLS-verified WebKit",
+  "noFormsCartChatMessagesOrCaptcha": true,
+  "pages": [
+    {
+      "mode": "home",
+      "url": "https://www.rafinadparfumerie.com/cs",
+      "checkedAt": "2026-11-11T20:34:42.696010+00:00",
+      "status": 200,
+      "cookieMode": "Clicked Odmítnout vše",
+      "relevantVisibleElements": []
+    },
+    {
+      "mode": "product",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha",
+      "checkedAt": "2026-11-11T20:34:49.343909+00:00",
+      "status": 200,
+      "cookieMode": "Clicked Odmítnout vše",
+      "relevantVisibleElements": []
+    }
+  ],
+  "actualVisualReview": "Settled home/PDP after Odmítnout vše actually viewed; settled home footer clear. Settled PDP bottom frame has only delivery text/blank area, not complete footer proof; earlier20:22Z rejected-cookie PDP footer screenshot visually reviewed and retained separately. No universal chatbot-free assertion.",
+  "observedWidgetMode": "No visible product-chat, advisor or quiz launcher observed on these visited home/PDP pages in rejected-cookie regime; other pages and consent/session modes unknown.",
+  "paidModelCalls": 0,
+  "explicitObservedProduct": "Escapade Grand Cru100ml250EUR/photo loaded, structuredInStock; quantity chooser and buy button untouched."
+}

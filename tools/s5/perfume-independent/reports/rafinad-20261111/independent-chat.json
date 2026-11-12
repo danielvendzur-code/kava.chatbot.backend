@@ -1,0 +1,137 @@
+{
+  "at": "2026-11-11T20:40:18.566687+00:00",
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "scope": "Local isolated candidate fixture only.",
+  "cards": [
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "ginger",
+      "price": "145 €",
+      "pack": "100 ml",
+      "url": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "rafinad-card-0-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "mirage",
+      "price": "195 €",
+      "pack": "100 ml",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "rafinad-card-1-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "mocha",
+      "price": "230 €",
+      "pack": "100 ml",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "rafinad-card-2-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "ginger",
+      "price": "145 €",
+      "pack": "100 ml",
+      "url": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "rafinad-card-0-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "mirage",
+      "price": "195 €",
+      "pack": "100 ml",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "rafinad-card-1-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "mocha",
+      "price": "230 €",
+      "pack": "100 ml",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "rafinad-card-2-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "ginger",
+      "price": "145 €",
+      "pack": "100 ml",
+      "url": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "rafinad-card-0-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "mirage",
+      "price": "195 €",
+      "pack": "100 ml",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "rafinad-card-1-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "mocha",
+      "price": "230 €",
+      "pack": "100 ml",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "rafinad-card-2-1280.png"
+    }
+  ],
+  "viewports": [
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    }
+  ],
+  "errors": [],
+  "paidModelCalls": 0,
+  "complete": true,
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "browser": "webkit"
+}

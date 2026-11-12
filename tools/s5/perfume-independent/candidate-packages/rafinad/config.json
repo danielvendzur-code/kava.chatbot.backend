@@ -1,0 +1,298 @@
+{
+  "slug": "rafinad",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "48cb709b01f5e6515e1c2696092fbc5fb521c2d4",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "LOCAL_QA_PASS_PENDING_MAIN_INTEGRATION_AND_LIVE_PREVIEW",
+  "catalogue": "/catalogues/rafinad.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Limeta a zázvor",
+    "Pistácie a mandle",
+    "Káva a čokoláda",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Limeta a zázvor",
+      "match": "limet.*zazvor",
+      "productIds": [
+        "ginger"
+      ]
+    },
+    {
+      "chip": "Pistácie a mandle",
+      "match": "pistaci.*mandl",
+      "productIds": [
+        "mirage"
+      ]
+    },
+    {
+      "chip": "Káva a čokoláda",
+      "match": "kav.*cokolad",
+      "productIds": [
+        "mocha"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "ginger",
+    "escapade"
+  ],
+  "addon": {
+    "type": "explicit-additional-smaller-same-composition-SKU",
+    "eligibleProducts": [
+      "mocha"
+    ],
+    "defaultChecked": false,
+    "notNewFormula": true
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "resultExtrasStatus": "MAIN_IMPORT_AND_PREVIEW_PENDING",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "RAFINAD Parfumerie",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/rafinad/logo.png",
+      "header": "/assets/s5/rafinad/logo.png",
+      "avatar": "/assets/s5/rafinad/avatar.svg"
+    },
+    "brand": {
+      "name": "RAFINAD",
+      "domain": "rafinadparfumerie.com",
+      "website": "https://www.rafinadparfumerie.com/cs",
+      "lang": "cs",
+      "fullName": "RAFINAD Parfumerie",
+      "url": "https://www.rafinadparfumerie.com/cs",
+      "logo": "/assets/s5/rafinad/logo.png",
+      "mark": "/assets/s5/rafinad/avatar.svg",
+      "greeting": "Objevte vůni podle doložených tónů. Ukážu konkrétní balení, cenu a porovnání dvou různých kompozic.",
+      "quickChips": [
+        "Limeta a zázvor",
+        "Pistácie a mandle",
+        "Káva a čokoláda",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#354d3b",
+        "accent": "#354d3b",
+        "soft": "#f4f7ef",
+        "paper": "#ffffff",
+        "ink": "#253128",
+        "line": "#dce5d8"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, čaj a mořské tóny",
+        "Vyberte podle doložených tónů.",
+        "Citrusy, čaj a mořské tóny",
+        ""
+      ],
+      "ginger": [
+        "Limeta, čerstvý zázvor a růžový pepř",
+        "Limeta, čerstvý zázvor a růžový pepř.",
+        "Limeta, čerstvý zázvor a růžový pepř",
+        "Limeta, čerstvý zázvor a růžový pepř."
+      ],
+      "ete": [
+        "Citrón, čaj a neroli",
+        "Citrón, čaj a neroli.",
+        "Citrón, čaj a neroli",
+        "Citrón, čaj a neroli."
+      ],
+      "pacific": [
+        "Mořské řasy, šalvěj a šedá ambra",
+        "Mořské řasy, šalvěj a šedá ambra.",
+        "Mořské řasy, šalvěj a šedá ambra",
+        "Mořské řasy, šalvěj a šedá ambra."
+      ],
+      "floral": [
+        "Květy a ovoce",
+        "Vyberte podle doložených tónů.",
+        "Květy a ovoce",
+        ""
+      ],
+      "dafneis": [
+        "Bílý santal, pomerančový květ a kosatec",
+        "Bílý santal, pomerančový květ a kosatec.",
+        "Bílý santal, pomerančový květ a kosatec",
+        "Bílý santal, pomerančový květ a kosatec."
+      ],
+      "cashmere": [
+        "Ostružina, růže a kašmírové dřevo",
+        "Ostružina, růže a kašmírové dřevo.",
+        "Ostružina, růže a kašmírové dřevo",
+        "Ostružina, růže a kašmírové dřevo."
+      ],
+      "exotique": [
+        "Marakuja, mango a kokos",
+        "Marakuja, mango a kokos.",
+        "Marakuja, mango a kokos",
+        "Marakuja, mango a kokos."
+      ],
+      "gourmand": [
+        "Vanilka, ořechy a káva",
+        "Vyberte podle doložených tónů.",
+        "Vanilka, ořechy a káva",
+        ""
+      ],
+      "escapade": [
+        "Vanilka, černý cukr a tonka",
+        "Vanilka, černý cukr a tonka.",
+        "Vanilka, černý cukr a tonka",
+        "Vanilka, černý cukr a tonka."
+      ],
+      "mirage": [
+        "Pistácie, mandle a vanilka",
+        "Pistácie, mandle a vanilka.",
+        "Pistácie, mandle a vanilka",
+        "Pistácie, mandle a vanilka."
+      ],
+      "mocha": [
+        "Káva arabika, thajský čaj a čokoláda",
+        "Káva arabika, thajský čaj a čokoláda.",
+        "Káva arabika, thajský čaj a čokoláda",
+        "Káva arabika, thajský čaj a čokoláda."
+      ],
+      "wood": [
+        "Semiš, kůže a oud",
+        "Vyberte podle doložených tónů.",
+        "Semiš, kůže a oud",
+        ""
+      ],
+      "suede": [
+        "Sladká mandle, kosatec a semiš",
+        "Sladká mandle, kosatec a semiš.",
+        "Sladká mandle, kosatec a semiš",
+        "Sladká mandle, kosatec a semiš."
+      ],
+      "ganymede": [
+        "Mandarinka, kožený akord a Akigalawood",
+        "Mandarinka, kožený akord a Akigalawood.",
+        "Mandarinka, kožený akord a Akigalawood",
+        "Mandarinka, kožený akord a Akigalawood."
+      ],
+      "sublimis": [
+        "Káva, kůže a kambodžský oud",
+        "Káva, kůže a kambodžský oud.",
+        "Káva, kůže a kambodžský oud",
+        "Káva, kůže a kambodžský oud."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Které tóny chcete objevovat?",
+        "Vyberte podle doložených tónů.",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Které spojení tónů vás láká?",
+        "Vyberte jeden konkrétní profil.",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "ginger": [
+        "/assets/s3/scenes-k2/lemon-tree.jpg"
+      ],
+      "ete": [
+        "/assets/s3/scenes-k2/black-tea.jpg"
+      ],
+      "pacific": [
+        "/assets/s3/scenes-k2/ocean-wave.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "dafneis": [
+        "/assets/s3/scenes-k2/neroli-blossom.jpg"
+      ],
+      "cashmere": [
+        "/assets/s5/rafinad/cashmere.webp"
+      ],
+      "exotique": [
+        "/assets/s3/scenes-k2/mango.jpg"
+      ],
+      "gourmand": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "escapade": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "mirage": [
+        "/assets/s3/scenes-k2/almonds.jpg"
+      ],
+      "mocha": [
+        "/assets/s3/scenes-k2/coffee-beans.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "suede": [
+        "/assets/s5/rafinad/suede.webp"
+      ],
+      "ganymede": [
+        "/assets/s5/rafinad/ganymede.webp"
+      ],
+      "sublimis": [
+        "/assets/s5/rafinad/sublimis.webp"
+      ],
+      "navigation:more": [
+        "/assets/s5/rafinad/ginger.webp"
+      ]
+    },
+    "compareProductIds": [
+      "ginger",
+      "escapade"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní profil · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce pro výběr vůně",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr podle doložených tónů vede ke konkrétnímu parfému s balením, cenou a odkazem. U Mocha Absolu lze dobrovolně přidat další 50 ml balení.",
+      "includedChat": "Doložené tóny, přesná balení, ceny a porovnání dvou různých vůní.",
+      "includedAdvisor": "Vonné tóny a konkrétní profil — na konci konkrétní kompozice.",
+      "greeting": "Objevte vůni podle doložených tónů. Ukážu konkrétní balení, cenu a porovnání dvou různých kompozic.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít výběr vůně",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "ginger": "ete",
+        "ete": "pacific",
+        "pacific": "ginger",
+        "dafneis": "cashmere",
+        "cashmere": "exotique",
+        "exotique": "dafneis",
+        "escapade": "mirage",
+        "mirage": "mocha",
+        "mocha": "escapade",
+        "suede": "ganymede",
+        "ganymede": "sublimis",
+        "sublimis": "suede"
+      }
+    }
+  }
+}

@@ -1,0 +1,1343 @@
+{
+  "commit": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "at": "2026-11-11T20:40:17.580408+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "ginger",
+      "pack": "100 ml",
+      "price": "145 €",
+      "url": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-ginger-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "ete",
+      "pack": "50 ml",
+      "price": "115 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-ete-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "pacific",
+      "pack": "100 ml",
+      "price": "245 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/pacific-rock-swell-100-ml-goldfield-and-banks",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-pacific-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "dafneis",
+      "pack": "50 ml",
+      "price": "140 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/dafneis-50-ml-isabelle-larignon",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-dafneis-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "cashmere",
+      "pack": "100 ml",
+      "price": "185 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/cashmere-venus-100-ml-layel",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-cashmere-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "exotique",
+      "pack": "100 ml",
+      "price": "195 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-exotique-100-ml-les-nobles-essences",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-exotique-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "escapade",
+      "pack": "100 ml",
+      "price": "250 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-escapade-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "mirage",
+      "pack": "100 ml",
+      "price": "195 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-mirage-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "mocha",
+      "pack": "100 ml",
+      "price": "230 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-mocha-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "suede",
+      "pack": "100 ml",
+      "price": "185 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/suede-moon-100-ml-layel",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-suede-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "ganymede",
+      "pack": "100 ml",
+      "price": "200 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/ganymede-100-ml-marc-antoine-barrois",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-ganymede-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "sublimis",
+      "pack": "100 ml",
+      "price": "350 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/roman-v-sublimis-100-ml-adamo-parfum",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-sublimis-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "ginger",
+      "pack": "100 ml",
+      "price": "145 €",
+      "url": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-ginger-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "ete",
+      "pack": "50 ml",
+      "price": "115 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-ete-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "pacific",
+      "pack": "100 ml",
+      "price": "245 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/pacific-rock-swell-100-ml-goldfield-and-banks",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-pacific-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "dafneis",
+      "pack": "50 ml",
+      "price": "140 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/dafneis-50-ml-isabelle-larignon",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-dafneis-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "cashmere",
+      "pack": "100 ml",
+      "price": "185 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/cashmere-venus-100-ml-layel",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-cashmere-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "exotique",
+      "pack": "100 ml",
+      "price": "195 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-exotique-100-ml-les-nobles-essences",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-exotique-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "escapade",
+      "pack": "100 ml",
+      "price": "250 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-escapade-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "mirage",
+      "pack": "100 ml",
+      "price": "195 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-mirage-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "mocha",
+      "pack": "100 ml",
+      "price": "230 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-mocha-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "suede",
+      "pack": "100 ml",
+      "price": "185 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/suede-moon-100-ml-layel",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-suede-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "ganymede",
+      "pack": "100 ml",
+      "price": "200 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/ganymede-100-ml-marc-antoine-barrois",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-ganymede-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "sublimis",
+      "pack": "100 ml",
+      "price": "350 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/roman-v-sublimis-100-ml-adamo-parfum",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-sublimis-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "ginger",
+      "pack": "100 ml",
+      "price": "145 €",
+      "url": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-ginger-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "ete",
+      "pack": "50 ml",
+      "price": "115 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-ete-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "pacific",
+      "pack": "100 ml",
+      "price": "245 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/pacific-rock-swell-100-ml-goldfield-and-banks",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-pacific-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "dafneis",
+      "pack": "50 ml",
+      "price": "140 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/dafneis-50-ml-isabelle-larignon",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-dafneis-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "cashmere",
+      "pack": "100 ml",
+      "price": "185 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/cashmere-venus-100-ml-layel",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-cashmere-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "exotique",
+      "pack": "100 ml",
+      "price": "195 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-exotique-100-ml-les-nobles-essences",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-exotique-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "escapade",
+      "pack": "100 ml",
+      "price": "250 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-escapade-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "mirage",
+      "pack": "100 ml",
+      "price": "195 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-mirage-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "mocha",
+      "pack": "100 ml",
+      "price": "230 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-mocha-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "suede",
+      "pack": "100 ml",
+      "price": "185 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/suede-moon-100-ml-layel",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-suede-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "ganymede",
+      "pack": "100 ml",
+      "price": "200 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/ganymede-100-ml-marc-antoine-barrois",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-ganymede-1280.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "sublimis",
+      "pack": "100 ml",
+      "price": "350 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/roman-v-sublimis-100-ml-adamo-parfum",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-sublimis-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "ginger",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "ete",
+          "photo": "/assets/s3/scenes-k2/black-tea.jpg"
+        },
+        {
+          "id": "pacific",
+          "photo": "/assets/s3/scenes-k2/ocean-wave.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "dafneis",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        },
+        {
+          "id": "cashmere",
+          "photo": "/assets/s5/rafinad/cashmere.webp"
+        },
+        {
+          "id": "exotique",
+          "photo": "/assets/s3/scenes-k2/mango.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "escapade",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "mirage",
+          "photo": "/assets/s3/scenes-k2/almonds.jpg"
+        },
+        {
+          "id": "mocha",
+          "photo": "/assets/s3/scenes-k2/coffee-beans.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "suede",
+          "photo": "/assets/s5/rafinad/suede.webp"
+        },
+        {
+          "id": "ganymede",
+          "photo": "/assets/s5/rafinad/ganymede.webp"
+        },
+        {
+          "id": "sublimis",
+          "photo": "/assets/s5/rafinad/sublimis.webp"
+        }
+      ],
+      "screenshot": "rafinad-question-5-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "ginger",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "ete",
+          "photo": "/assets/s3/scenes-k2/black-tea.jpg"
+        },
+        {
+          "id": "pacific",
+          "photo": "/assets/s3/scenes-k2/ocean-wave.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "dafneis",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        },
+        {
+          "id": "cashmere",
+          "photo": "/assets/s5/rafinad/cashmere.webp"
+        },
+        {
+          "id": "exotique",
+          "photo": "/assets/s3/scenes-k2/mango.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "escapade",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "mirage",
+          "photo": "/assets/s3/scenes-k2/almonds.jpg"
+        },
+        {
+          "id": "mocha",
+          "photo": "/assets/s3/scenes-k2/coffee-beans.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "suede",
+          "photo": "/assets/s5/rafinad/suede.webp"
+        },
+        {
+          "id": "ganymede",
+          "photo": "/assets/s5/rafinad/ganymede.webp"
+        },
+        {
+          "id": "sublimis",
+          "photo": "/assets/s5/rafinad/sublimis.webp"
+        }
+      ],
+      "screenshot": "rafinad-question-5-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "ginger",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "ete",
+          "photo": "/assets/s3/scenes-k2/black-tea.jpg"
+        },
+        {
+          "id": "pacific",
+          "photo": "/assets/s3/scenes-k2/ocean-wave.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "dafneis",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        },
+        {
+          "id": "cashmere",
+          "photo": "/assets/s5/rafinad/cashmere.webp"
+        },
+        {
+          "id": "exotique",
+          "photo": "/assets/s3/scenes-k2/mango.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "escapade",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "mirage",
+          "photo": "/assets/s3/scenes-k2/almonds.jpg"
+        },
+        {
+          "id": "mocha",
+          "photo": "/assets/s3/scenes-k2/coffee-beans.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "suede",
+          "photo": "/assets/s5/rafinad/suede.webp"
+        },
+        {
+          "id": "ganymede",
+          "photo": "/assets/s5/rafinad/ganymede.webp"
+        },
+        {
+          "id": "sublimis",
+          "photo": "/assets/s5/rafinad/sublimis.webp"
+        }
+      ],
+      "screenshot": "rafinad-question-5-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ginger",
+        "escapade"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "rafinad-compare-320.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ginger",
+        "escapade"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "rafinad-compare-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ginger",
+        "escapade"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "rafinad-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "enrichedStates": [
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "ginger",
+      "defaultScreenshot": "rafinad-result-ginger-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-ginger-320.png",
+      "compareScreenshot": "rafinad-pair-ginger-320.png",
+      "comparisonIds": [
+        "ginger",
+        "ete"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "ete",
+      "defaultScreenshot": "rafinad-result-ete-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-ete-320.png",
+      "compareScreenshot": "rafinad-pair-ete-320.png",
+      "comparisonIds": [
+        "ete",
+        "pacific"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "pacific",
+      "defaultScreenshot": "rafinad-result-pacific-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-pacific-320.png",
+      "compareScreenshot": "rafinad-pair-pacific-320.png",
+      "comparisonIds": [
+        "pacific",
+        "ginger"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "dafneis",
+      "defaultScreenshot": "rafinad-result-dafneis-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "rafinad-pair-dafneis-320.png",
+      "comparisonIds": [
+        "dafneis",
+        "cashmere"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "cashmere",
+      "defaultScreenshot": "rafinad-result-cashmere-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-cashmere-320.png",
+      "compareScreenshot": "rafinad-pair-cashmere-320.png",
+      "comparisonIds": [
+        "cashmere",
+        "exotique"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "exotique",
+      "defaultScreenshot": "rafinad-result-exotique-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-exotique-320.png",
+      "compareScreenshot": "rafinad-pair-exotique-320.png",
+      "comparisonIds": [
+        "exotique",
+        "dafneis"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "escapade",
+      "defaultScreenshot": "rafinad-result-escapade-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-escapade-320.png",
+      "compareScreenshot": "rafinad-pair-escapade-320.png",
+      "comparisonIds": [
+        "escapade",
+        "mirage"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "mirage",
+      "defaultScreenshot": "rafinad-result-mirage-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-mirage-320.png",
+      "compareScreenshot": "rafinad-pair-mirage-320.png",
+      "comparisonIds": [
+        "mirage",
+        "mocha"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "mocha",
+      "defaultScreenshot": "rafinad-result-mocha-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "390 €",
+      "selectedScreenshot": "rafinad-selected-mocha-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "rafinad-notes-mocha-320.png",
+      "compareScreenshot": "rafinad-pair-mocha-320.png",
+      "comparisonIds": [
+        "mocha",
+        "escapade"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "suede",
+      "defaultScreenshot": "rafinad-result-suede-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-suede-320.png",
+      "compareScreenshot": "rafinad-pair-suede-320.png",
+      "comparisonIds": [
+        "suede",
+        "ganymede"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "ganymede",
+      "defaultScreenshot": "rafinad-result-ganymede-320.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-ganymede-320.png",
+      "compareScreenshot": "rafinad-pair-ganymede-320.png",
+      "comparisonIds": [
+        "ganymede",
+        "sublimis"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 320,
+      "id": "sublimis",
+      "defaultScreenshot": "rafinad-result-sublimis-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "rafinad-pair-sublimis-320.png",
+      "comparisonIds": [
+        "sublimis",
+        "suede"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "ginger",
+      "defaultScreenshot": "rafinad-result-ginger-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-ginger-390.png",
+      "compareScreenshot": "rafinad-pair-ginger-390.png",
+      "comparisonIds": [
+        "ginger",
+        "ete"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "ete",
+      "defaultScreenshot": "rafinad-result-ete-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-ete-390.png",
+      "compareScreenshot": "rafinad-pair-ete-390.png",
+      "comparisonIds": [
+        "ete",
+        "pacific"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "pacific",
+      "defaultScreenshot": "rafinad-result-pacific-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-pacific-390.png",
+      "compareScreenshot": "rafinad-pair-pacific-390.png",
+      "comparisonIds": [
+        "pacific",
+        "ginger"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "dafneis",
+      "defaultScreenshot": "rafinad-result-dafneis-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "rafinad-pair-dafneis-390.png",
+      "comparisonIds": [
+        "dafneis",
+        "cashmere"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "cashmere",
+      "defaultScreenshot": "rafinad-result-cashmere-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-cashmere-390.png",
+      "compareScreenshot": "rafinad-pair-cashmere-390.png",
+      "comparisonIds": [
+        "cashmere",
+        "exotique"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "exotique",
+      "defaultScreenshot": "rafinad-result-exotique-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-exotique-390.png",
+      "compareScreenshot": "rafinad-pair-exotique-390.png",
+      "comparisonIds": [
+        "exotique",
+        "dafneis"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "escapade",
+      "defaultScreenshot": "rafinad-result-escapade-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-escapade-390.png",
+      "compareScreenshot": "rafinad-pair-escapade-390.png",
+      "comparisonIds": [
+        "escapade",
+        "mirage"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "mirage",
+      "defaultScreenshot": "rafinad-result-mirage-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-mirage-390.png",
+      "compareScreenshot": "rafinad-pair-mirage-390.png",
+      "comparisonIds": [
+        "mirage",
+        "mocha"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "mocha",
+      "defaultScreenshot": "rafinad-result-mocha-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "390 €",
+      "selectedScreenshot": "rafinad-selected-mocha-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "rafinad-notes-mocha-390.png",
+      "compareScreenshot": "rafinad-pair-mocha-390.png",
+      "comparisonIds": [
+        "mocha",
+        "escapade"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "suede",
+      "defaultScreenshot": "rafinad-result-suede-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-suede-390.png",
+      "compareScreenshot": "rafinad-pair-suede-390.png",
+      "comparisonIds": [
+        "suede",
+        "ganymede"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "ganymede",
+      "defaultScreenshot": "rafinad-result-ganymede-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-ganymede-390.png",
+      "compareScreenshot": "rafinad-pair-ganymede-390.png",
+      "comparisonIds": [
+        "ganymede",
+        "sublimis"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "sublimis",
+      "defaultScreenshot": "rafinad-result-sublimis-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "rafinad-pair-sublimis-390.png",
+      "comparisonIds": [
+        "sublimis",
+        "suede"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "ginger",
+      "defaultScreenshot": "rafinad-result-ginger-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-ginger-1280.png",
+      "compareScreenshot": "rafinad-pair-ginger-1280.png",
+      "comparisonIds": [
+        "ginger",
+        "ete"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "ete",
+      "defaultScreenshot": "rafinad-result-ete-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-ete-1280.png",
+      "compareScreenshot": "rafinad-pair-ete-1280.png",
+      "comparisonIds": [
+        "ete",
+        "pacific"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "pacific",
+      "defaultScreenshot": "rafinad-result-pacific-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-pacific-1280.png",
+      "compareScreenshot": "rafinad-pair-pacific-1280.png",
+      "comparisonIds": [
+        "pacific",
+        "ginger"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "dafneis",
+      "defaultScreenshot": "rafinad-result-dafneis-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "rafinad-pair-dafneis-1280.png",
+      "comparisonIds": [
+        "dafneis",
+        "cashmere"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "cashmere",
+      "defaultScreenshot": "rafinad-result-cashmere-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-cashmere-1280.png",
+      "compareScreenshot": "rafinad-pair-cashmere-1280.png",
+      "comparisonIds": [
+        "cashmere",
+        "exotique"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "exotique",
+      "defaultScreenshot": "rafinad-result-exotique-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-exotique-1280.png",
+      "compareScreenshot": "rafinad-pair-exotique-1280.png",
+      "comparisonIds": [
+        "exotique",
+        "dafneis"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "escapade",
+      "defaultScreenshot": "rafinad-result-escapade-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-escapade-1280.png",
+      "compareScreenshot": "rafinad-pair-escapade-1280.png",
+      "comparisonIds": [
+        "escapade",
+        "mirage"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "mirage",
+      "defaultScreenshot": "rafinad-result-mirage-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-mirage-1280.png",
+      "compareScreenshot": "rafinad-pair-mirage-1280.png",
+      "comparisonIds": [
+        "mirage",
+        "mocha"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "mocha",
+      "defaultScreenshot": "rafinad-result-mocha-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "390 €",
+      "selectedScreenshot": "rafinad-selected-mocha-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "rafinad-notes-mocha-1280.png",
+      "compareScreenshot": "rafinad-pair-mocha-1280.png",
+      "comparisonIds": [
+        "mocha",
+        "escapade"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "suede",
+      "defaultScreenshot": "rafinad-result-suede-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-suede-1280.png",
+      "compareScreenshot": "rafinad-pair-suede-1280.png",
+      "comparisonIds": [
+        "suede",
+        "ganymede"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "ganymede",
+      "defaultScreenshot": "rafinad-result-ganymede-1280.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-ganymede-1280.png",
+      "compareScreenshot": "rafinad-pair-ganymede-1280.png",
+      "comparisonIds": [
+        "ganymede",
+        "sublimis"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 1280,
+      "id": "sublimis",
+      "defaultScreenshot": "rafinad-result-sublimis-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "rafinad-pair-sublimis-1280.png",
+      "comparisonIds": [
+        "sublimis",
+        "suede"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

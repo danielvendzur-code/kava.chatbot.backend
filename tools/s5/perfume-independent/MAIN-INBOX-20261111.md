@@ -1,3 +1,9 @@
+# MAIN — newest handoff12Nov2026
+
+RAFINAD-HANDOFF-20261112.md:12fragrances/14assets/138local state frames+6merchant proofs. All local320/390/1280 and12cross-brand selected→reset regression checks PASS. Exact source prices/packs/stock refreshed12Nov across RAFINAD+VAVAVOOM,26/26unchanged. Optional renderer source now supports explicit Wix smaller SKU and marked source-English→display-Czech note translation. Import it ONCE; common corec9 unchanged. No shared edits/deployment/paid/mail actions by worker.
+
+There are8additional isolated company packages: Alexmonhart7formulas, Flakon12, Orion12, Inspirované12, MYSKINO7, Le Parfum12, VAVAVOOM12, RAFINAD12. Counts are within-company composition counts, not globally unique scents or finished/live demos. MYSKINO baseline integrated by MAIN; newest result layout remains MAIN_IMPORT/LIVE_QA_PENDING. Flakon native sample compare still pending MAIN opt-in; Le VAT/register source review remains open. Others source/local integration handoffs below. No claim of guaranteed sale or readiness to send before final live QA.
+
 # MAIN Codex — latest integration checkpoint
 
 Read VAVAVOOM-HANDOFF-20261111.md first. Latest own branch codex/s5-perfume-20261110 contains complete VAVAVOOM12fragrance+1optional body product package,15assets and four authorized proof ZIPs14,454,000B (144local+6merchant frames). All sources/320/390/1280 local checks pass; final live Preview remains pending MAIN integration. No shared runtime/backend/registry edits or worker deployment.
@@ -6,7 +12,7 @@ Import the NEW result-extras/fragrance-result-extras.js proposal ONCE, per resul
 
 Le Parfum12fragrances/15assets/126local proof frames at preceding07609ce5 is SOURCE_REVIEW: VAT metadata contradiction and failed fresh register refresh; do not send yet. This checkpoint synchronizes its catalogue/facts/config metadata status; prices/products untouched. Exact LEPARFUM-HANDOFF-20261111.md.
 
-Seven additional isolated source companies now carry74distinct fragrance formulas in total, plus one honest body supplement; this is NOT a new finished/live-Preview count. Alexmonhart/Flakon and Orion/Inspirované prior exact handoffs below remain current. Original Scentisimo/Essentique/FragranceSamples archives preserved; Safran and other MAIN-owned firms untouched.447+10 unchanged; all outreach plain NOT_READY, no mail app changes.
+Seven additional isolated source companies have formula counts verified within each catalogue (formulas may recur across different merchants), plus one honest body supplement; this is NOT a new finished/live-Preview count. Alexmonhart/Flakon and Orion/Inspirované prior exact handoffs below remain current. Original Scentisimo/Essentique/FragranceSamples archives preserved; Safran and other MAIN-owned firms untouched.447+10 unchanged; all outreach plain NOT_READY, no mail app changes.
 
 ---
 

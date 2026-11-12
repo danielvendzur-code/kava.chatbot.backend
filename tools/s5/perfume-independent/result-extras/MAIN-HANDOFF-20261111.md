@@ -24,3 +24,6 @@ Same module now validates explicitly related separate official SKU for a smaller
 
 ## VAVAVOOM explicit BODY supplement branch
 Same isolated module now accepts source.resultOnlySupplement/category=body/real advisorExcludedReason records only through addonProductIdsByParent allowlist and exact Shopify/merchant-related evidence. Never set sameFormula=true for body; named fragrance line and retail relation only. Vanilla100ml6250CZK + optional300mlbody1500CZK =7750. Source13records is12fragrance formulas+1body product reachable via result checkbox. Core unchanged;9selected→reset checks incl old MYSKINO/Le + no-opt-in Orion PASS. Exact VAVAVOOM handoff and source/body evidence in its package. Retain raw body record in backend facts if chat discusses it; mock/paid0 only, no new backend integration claimed.
+
+## RAFINAD12Nov completion
+Latest isolated renderer adds explicit WixProductPublicStructuredOffer stock gate for the separate Mocha50ml SKU and marked English→Czech displayText support, preserving original sourceText.12selected→reset checks across4brands+non-opt-in Orion PASS; source26/26 main+extras refreshed12Nov unchanged. RAFINAD-HANDOFF-20261112.md exact integration and138local frames; common enginec9 untouched. Import module once from latest worker checkpoint, not older425version.
