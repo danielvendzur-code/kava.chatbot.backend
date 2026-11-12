@@ -1,0 +1,307 @@
+{
+  "commit": "7de640c3f7b6793e8cefed17eb397f0f0bc4f666",
+  "at": "2026-11-12T09:56:38.949794+00:00",
+  "qaType": "Live unique Vercel Preview on exact supplied commit; API replies mocked/offline only. No live merchant messages or paid model calls.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "nice",
+      "pack": "100 ml",
+      "price": "2 350 Kč",
+      "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "myskino-result-nice-390.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "riviera",
+      "pack": "100 ml",
+      "price": "4 375 Kč",
+      "url": "https://www.myskino.cz/bon-parfumeur-005-riviera-absolue-niche-parfem/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "myskino-result-riviera-390.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "gozo",
+      "pack": "100 ml",
+      "price": "7 000 Kč",
+      "url": "https://www.myskino.cz/jeroboam-gozo-niche-parfem/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "myskino-result-gozo-390.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "kokoa",
+      "pack": "50 ml",
+      "price": "2 500 Kč",
+      "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "myskino-result-kokoa-390.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "saint",
+      "pack": "100 ml",
+      "price": "5 250 Kč",
+      "url": "https://www.myskino.cz/nicola-saint-honore-niche-parfem/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "myskino-result-saint-390.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "fire",
+      "pack": "75 ml",
+      "price": "4 000 Kč",
+      "url": "https://www.myskino.cz/jovoy-fire-at-will-niche-parfem/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "myskino-result-fire-390.png"
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "ambrelatte",
+      "pack": "100 ml",
+      "price": "2 350 Kč",
+      "url": "https://www.myskino.cz/essential-parfums-ambre-latte-niche-parfem/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "myskino-result-ambrelatte-390.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "myskino",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "citrus",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "sweet",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "myskino-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "nice",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "riviera",
+          "photo": "/assets/s3/scenes-k2/black-tea.jpg"
+        },
+        {
+          "id": "gozo",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "myskino-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "kokoa",
+          "photo": "/assets/s3/scenes-k2/cocoa.jpg"
+        },
+        {
+          "id": "saint",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "fire",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "ambrelatte",
+          "photo": "/assets/s5/myskino/ambrelatte.webp"
+        }
+      ],
+      "screenshot": "myskino-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "myskino",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "nice",
+        "kokoa"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "myskino-compare-390.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [
+    "vercel.live"
+  ],
+  "complete": true,
+  "deploymentId": "dpl_AYd7PpTdivziA2H4kpbnVdmSuHHr",
+  "baseUrl": "https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app",
+  "browser": "webkit",
+  "tlsVerification": true,
+  "scope": "Live unique Vercel Preview on exact supplied commit; API replies mocked/offline only. No live merchant messages or paid model calls.",
+  "apiMode": "real_local_backend_injected_ai_stub",
+  "offlineApiBase": "http://127.0.0.1:8930",
+  "enrichedStates": [
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "nice",
+      "defaultScreenshot": "myskino-result-nice-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "2 950 Kč",
+      "selectedScreenshot": "myskino-selected-nice-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-nice-390.png",
+      "compareScreenshot": "myskino-pair-nice-390.png",
+      "comparisonIds": [
+        "nice",
+        "riviera"
+      ]
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "riviera",
+      "defaultScreenshot": "myskino-result-riviera-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "5 750 Kč",
+      "selectedScreenshot": "myskino-selected-riviera-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-riviera-390.png",
+      "compareScreenshot": "myskino-pair-riviera-390.png",
+      "comparisonIds": [
+        "riviera",
+        "nice"
+      ]
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "gozo",
+      "defaultScreenshot": "myskino-result-gozo-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "9 750 Kč",
+      "selectedScreenshot": "myskino-selected-gozo-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-gozo-390.png",
+      "compareScreenshot": "myskino-pair-gozo-390.png",
+      "comparisonIds": [
+        "gozo",
+        "nice"
+      ]
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "kokoa",
+      "defaultScreenshot": "myskino-result-kokoa-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "3 375 Kč",
+      "selectedScreenshot": "myskino-selected-kokoa-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-kokoa-390.png",
+      "compareScreenshot": "myskino-pair-kokoa-390.png",
+      "comparisonIds": [
+        "kokoa",
+        "ambrelatte"
+      ]
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "saint",
+      "defaultScreenshot": "myskino-result-saint-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "7 500 Kč",
+      "selectedScreenshot": "myskino-selected-saint-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-saint-390.png",
+      "compareScreenshot": "myskino-pair-saint-390.png",
+      "comparisonIds": [
+        "saint",
+        "ambrelatte"
+      ]
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "fire",
+      "defaultScreenshot": "myskino-result-fire-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "5 125 Kč",
+      "selectedScreenshot": "myskino-selected-fire-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "myskino-notes-fire-390.png",
+      "compareScreenshot": "myskino-pair-fire-390.png",
+      "comparisonIds": [
+        "fire",
+        "saint"
+      ]
+    },
+    {
+      "slug": "myskino",
+      "width": 390,
+      "id": "ambrelatte",
+      "defaultScreenshot": "myskino-result-ambrelatte-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "myskino-notes-ambrelatte-390.png",
+      "compareScreenshot": "myskino-pair-ambrelatte-390.png",
+      "comparisonIds": [
+        "ambrelatte",
+        "saint"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

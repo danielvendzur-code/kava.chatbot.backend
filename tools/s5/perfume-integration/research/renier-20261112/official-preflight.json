@@ -1,0 +1,120 @@
+{
+  "scope": "Read-only official source preflight. No reservation, no rendered widget claim, revenue UNKNOWN.",
+  "rows": [
+    {
+      "url": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/28175751",
+      "checkedAt": "2026-11-12T09:57:09.983417+00:00",
+      "tlsVerification": true,
+      "status": 200,
+      "finalUrl": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/28175751",
+      "publicOperator": {
+        "ico": "28175751",
+        "obchodniJmeno": "FRAGRANZA PRO s.r.o.",
+        "datumVzniku": "2007-10-18",
+        "datumZaniku": null,
+        "dic": "CZ28175751",
+        "pravniForma": "112"
+      }
+    },
+    {
+      "url": "https://www.renierperfumes.com/en/perfume/Kisses-Rain-Labios-Rotos",
+      "checkedAt": "2026-11-12T09:57:09.987567+00:00",
+      "tlsVerification": true,
+      "status": 200,
+      "finalUrl": "https://www.renierperfumes.com/en/perfume/Kisses-Rain-Labios-Rotos",
+      "title": [
+        "Kisses Rain Labios Rotos"
+      ],
+      "visibleHtmlText": "Kisses Rain Labios Rotos document.addEventListener(\"DOMContentLoaded\", function () { /////// Prevent closing from click inside dropdown document.querySelectorAll('.dropdown-menu').forEach(function (element) { element.addEventListener('click', function (e) { e.stopPropagation(); }); }) }); // DOMContentLoaded end .logo-wrapper { position: absolute; left: 50%; transform: translateX(-50%); } @media (max-width: 767.98px) { .logo-wrapper { position: static; transform: none; text-align: center; padding: 1rem; } } HOME COLLECTIONS RAIN COLLECTION Kisses Rain Labios Rotos Incense Rain Oud Rain Havana Rain Musky Rain Oud Rain Tropical Storm Budapest Rain TAINO COLLECTION Guanabo Cacique Anacaona De Lirius Behique Baracoa Ris Tanama SPECIAL EDITIONS 101 Carbonnel Limited edition Genius De Licious Oudmanthus Ottoman Leather Paloma 2021 Nights CAPRICHOS COLLECTION Amor Vertical Oddyssea Aura Rubrum Donaire SAMPLES Cacique Travel Spray Sample Habana 500 Limited Edition Oud Rain Travel Spray Anacaona Travel Spray Kisses Rain L. Rotos. Travel Spray Guanabo Travel Spray De Lirius travel spray Ris Tanama Travel Spray Discovery Set Renier Full Discovery set Behique travel spray PAINTS PERFUMERS Cristian Carbonel Juan M Perez Miguel Matos Renier R Mendez CONCEPT History BLOG STORES Login Forgot password 0 EN English Español Česky eur ( € ) eur ( € ) usd ( $ ) HOME COLLECTIONS Rain Collection Taino Collection Special Editions Caprichos Collection Samples Paints PERFUMERS Cristian Carbonel Juan M Perez Miguel Matos Renier R Mendez CONCEPT HISTORY BLOG STORES LOGIN FORGOT PASSWORD ( 0 items) EN ES CS EUR ( € ) USD ( $ ) Home Products Kisses Rain Labios Rotos Kisses Rain Labios Rotos € 145.00 Add to Cart Products detail Kisses Rain Labios Rotos is a fragrance inspired by the image of the painting also entitled Kisses Rain.TOP NOTES: Bergamot, Neroli, Cardamom, Rose, Jasmine.MIDDLE NOTES: Oud, Almond, Cedar of the atlas, Coffee, Eliotrope, Sandalwood.BASE NOTES: Amber, Musk, Patchouli, Vanilla, Cuban tolu balsam, Tonka, Labdanum.Kisses Rain Labios Rotos is a sensual, modern, and sophisticated perfume, floral and spicy, designed for those seeking a fragrance with character and elegance.From the opening, bergamot, neroli, and cardamom intertwine with a delicate floral accord of rose and jasmine, evoking freshness, balance, and a spicy aura. No note dominates; they blend harmoniously to create a sparkling, airy, and light opening. The heart reveals the creamy heliotrope and almond, supported by the strength of coffee and the elegance of Atlas cedar, while a hint of oud and sandalwood adds depth and texture. The fragrance transforms into a sensual and abstract embrace, where softness and character coexist in perfect harmony. The base culminates with an addictive blend of vanilla, musks, amber, tolu balsam, tonka bean, and labdanum, intensifying warmth and magnetism. The result is an intimate, seductive, and enveloping trail. Kisses Rain Labios Rotos is a rain of kisses for a modern love, evoking nostalgia, longing, and sweetness through its coffee accord. An insatiable perfume that invites the experience to be repeated again and again, leaving unforgettable memories. You may also be interested in € 280.00 Oudmanthus € 180.00 Oddyssea € 235.00 Ris Tanama € 180.00 Donaire € 226.00 Cacique € 485.00 101 Carbonnel Limited edition document.addEventListener('DOMContentLoaded', function () { const myOffcanvas = document.getElementById('myOffcanvas'); myOffcanvas.addEventListener('shown.bs.offcanvas', function () { const currentLanguage = 'en'; fetch( `/${currentLanguage}/cart/side` ) // .then(response => { if (!response.ok) { throw new Error('Error al cargar contenido'); } return response.text(); // Si la vista devuelve HTML }) .then(html => { myOffcanvas.innerHTML = html; }) .catch(error => { console.error('Error:', error); myOffcanvas.innerHTML = '<p>Error al cargar contenido</p>'; }); }); }); function increment() { const input = document.getElementById('count'); input.stepUp(); } function decrement() { const input = document.getElementById('count'); input.stepDown(); } document.addEventListener('DOMContentLoaded', function () { const addToCartBtn = document.getElementById('addToCartBtn'); addToCartBtn.addEventListener('click', function (e) { e.preventDefault(); const cantidad = document.getElementById('count').value; var laUrl = this.dataset.url console.log(laUrl); if (laUrl.endsWith(\"/0\")) { laUrl = laUrl.slice(0, -2) + \"/\" + cantidad } fetch(laUrl, { method: 'GET', headers: { 'X-Requested-With': 'XMLHttpRequest', }, }) .then(response => { if (!response.ok) throw new Error(\"Error en la solicitud\"); return \"\";// response.json(); }) .then(data => { const myOffcanvas = document.getElementById('myOffcanvas'); const bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas); bsOffcanvas.show(); }) .catch(error => { console.error(\"Error:\", error); alert(\"Hubo un problema al añadir el producto\"); const myOffcanvas = document.getElementById('myOffcanvas'); const bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas); bsOffcanvas.show(); }); }); }); Company FRAGRANZA PRO s.r.o.ICO : 28175751DIC: CZ8175751Hermanova 597/61. Praha 9. Czech Republic renierperfumes@gmail.com +420 773 879 704 Useful links Home Samples Rain Collection Taino Collection Special Editions Caprichos Collection Paints Information Terms and Conditions Privacy Policy Payments and Shipments Methods Cookie Policy Return Policy Contact Sitemap Other links Autenticity Downloads Subscribe to our newsletter! Enter your email below to be the first to know about new collections and product launches. Subscribe © RENIER Perfumes. Guarantee safe & secure checkout",
+      "images": [
+        "/media/logo_white.png",
+        "/media/pintura.webp",
+        "/media/en.png",
+        "/media/es.png",
+        "/media/cs.png",
+        "/media/product/1660317316_K-LABIOS-ROTOS.jpg",
+        "/media/product/kisses_rain.jpg",
+        "/media/product/1655988191_Kisses-labios-rotos3.jpg",
+        "/media/product/1655988191_Kisses-labios-rotos4.jpg",
+        "/media/product/1655988191_Kisses-labios-rotos5.jpg",
+        "/media/product/1655995051_oudmanthus1.jpg",
+        "/media/product/oddyssea-bottle-front.jpg",
+        "/media/product/1662038612_Ris-Tanama-front.jpg",
+        "/media/product/donaire-bottle.jpg",
+        "/media/product/1660317923_CACIQUE.jpg",
+        "/media/product/101_con_caja.jpg",
+        "/media/instagram.svg",
+        "/media/youtube.svg",
+        "/media/card-paypal.svg",
+        "/media/card-visa.svg",
+        "/media/card-mastercard.svg"
+      ],
+      "pageScripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js",
+        "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js",
+        "/static/bootstrap.min.js",
+        "/static/wow/wow.min.js",
+        "/static/easing/easing.min.js",
+        "/static/waypoints/waypoints.min.js",
+        "/static/counterup/counterup.min.js",
+        "/static/owlcarousel/owl.carousel.min.js",
+        "/static/lightbox/js/lightbox.min.js",
+        "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js",
+        "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js",
+        "https://js.stripe.com/v3/",
+        "/static/js/main.js",
+        "/static/js/app.js"
+      ]
+    },
+    {
+      "url": "https://www.renierperfumes.com/en/perfume/Guanabo",
+      "checkedAt": "2026-11-12T09:57:09.991640+00:00",
+      "tlsVerification": true,
+      "status": 200,
+      "finalUrl": "https://www.renierperfumes.com/en/perfume/Guanabo",
+      "title": [
+        "Guanabo"
+      ],
+      "visibleHtmlText": "Guanabo document.addEventListener(\"DOMContentLoaded\", function () { /////// Prevent closing from click inside dropdown document.querySelectorAll('.dropdown-menu').forEach(function (element) { element.addEventListener('click', function (e) { e.stopPropagation(); }); }) }); // DOMContentLoaded end .logo-wrapper { position: absolute; left: 50%; transform: translateX(-50%); } @media (max-width: 767.98px) { .logo-wrapper { position: static; transform: none; text-align: center; padding: 1rem; } } HOME COLLECTIONS RAIN COLLECTION Kisses Rain Labios Rotos Incense Rain Oud Rain Havana Rain Musky Rain Oud Rain Tropical Storm Budapest Rain TAINO COLLECTION Guanabo Cacique Anacaona De Lirius Behique Baracoa Ris Tanama SPECIAL EDITIONS 101 Carbonnel Limited edition Genius De Licious Oudmanthus Ottoman Leather Paloma 2021 Nights CAPRICHOS COLLECTION Amor Vertical Oddyssea Aura Rubrum Donaire SAMPLES Cacique Travel Spray Sample Habana 500 Limited Edition Oud Rain Travel Spray Anacaona Travel Spray Kisses Rain L. Rotos. Travel Spray Guanabo Travel Spray De Lirius travel spray Ris Tanama Travel Spray Discovery Set Renier Full Discovery set Behique travel spray PAINTS PERFUMERS Cristian Carbonel Juan M Perez Miguel Matos Renier R Mendez CONCEPT History BLOG STORES Login Forgot password 0 EN English Español Česky eur ( € ) eur ( € ) usd ( $ ) HOME COLLECTIONS Rain Collection Taino Collection Special Editions Caprichos Collection Samples Paints PERFUMERS Cristian Carbonel Juan M Perez Miguel Matos Renier R Mendez CONCEPT HISTORY BLOG STORES LOGIN FORGOT PASSWORD ( 0 items) EN ES CS EUR ( € ) USD ( $ ) Home Products Guanabo Guanabo € 226.00 Add to Cart Products detail Guanabo is a fragrance inspired by the scent of freshly sun-dried skin after a swim in the waters of the Caribbean Sea.TOP NOTES: Lemon, Bergamot, Petitgrain.MIDDLE NOTES: Lilies of the Valley, Rose, Jasmine, Passion Fruit.BASE NOTES: Marine Notes, Seaweed, Leather, Ambroxan.Guanabo is the summer fragrance, crafted for the son of a great chief: young, virile, adventurous, and a heartbreaker. It embodies freshness, vitality, and youthful carefreeness, inviting you to live fully in the moment. This scent transports you to evenings and nights by the sea, where opportunities for romance don’t escape—they come knocking at your door. The opening blends lemon and petitgrain with Italian bergamot, delivering a wave of joy and setting the tone for a day full of possibilities. As it dries, semi-salty notes emerge, reminiscent of two sun-kissed bodies after a bath in the Caribbean: salty and sweet, floral and adventurous. The heart reveals lily of the valley, natural jasmine, a hint of leather, and seaweed, creating a sense of security, relaxation, and sensuality. The base with Ambroxan adds vibrancy and character, making Guanabo the sexiest, most energetic fragrance in our collection. Its name, in the Taíno language, means “small island in the middle of the sea,” inspired by the Guanabo beach in Habana del Este, Cuba. You may also be interested in € 180.00 Oddyssea € 10.00 Kisses Rain L. Rotos. Travel Spray € 145.00 Oud Rain Tropical Storm € 180.00 Donaire € 13.00 Anacaona Travel Spray € 226.00 Baracoa document.addEventListener('DOMContentLoaded', function () { const myOffcanvas = document.getElementById('myOffcanvas'); myOffcanvas.addEventListener('shown.bs.offcanvas', function () { const currentLanguage = 'en'; fetch( `/${currentLanguage}/cart/side` ) // .then(response => { if (!response.ok) { throw new Error('Error al cargar contenido'); } return response.text(); // Si la vista devuelve HTML }) .then(html => { myOffcanvas.innerHTML = html; }) .catch(error => { console.error('Error:', error); myOffcanvas.innerHTML = '<p>Error al cargar contenido</p>'; }); }); }); function increment() { const input = document.getElementById('count'); input.stepUp(); } function decrement() { const input = document.getElementById('count'); input.stepDown(); } document.addEventListener('DOMContentLoaded', function () { const addToCartBtn = document.getElementById('addToCartBtn'); addToCartBtn.addEventListener('click', function (e) { e.preventDefault(); const cantidad = document.getElementById('count').value; var laUrl = this.dataset.url console.log(laUrl); if (laUrl.endsWith(\"/0\")) { laUrl = laUrl.slice(0, -2) + \"/\" + cantidad } fetch(laUrl, { method: 'GET', headers: { 'X-Requested-With': 'XMLHttpRequest', }, }) .then(response => { if (!response.ok) throw new Error(\"Error en la solicitud\"); return \"\";// response.json(); }) .then(data => { const myOffcanvas = document.getElementById('myOffcanvas'); const bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas); bsOffcanvas.show(); }) .catch(error => { console.error(\"Error:\", error); alert(\"Hubo un problema al añadir el producto\"); const myOffcanvas = document.getElementById('myOffcanvas'); const bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas); bsOffcanvas.show(); }); }); }); Company FRAGRANZA PRO s.r.o.ICO : 28175751DIC: CZ8175751Hermanova 597/61. Praha 9. Czech Republic renierperfumes@gmail.com +420 773 879 704 Useful links Home Samples Rain Collection Taino Collection Special Editions Caprichos Collection Paints Information Terms and Conditions Privacy Policy Payments and Shipments Methods Cookie Policy Return Policy Contact Sitemap Other links Autenticity Downloads Subscribe to our newsletter! Enter your email below to be the first to know about new collections and product launches. Subscribe © RENIER Perfumes. Guarantee safe & secure checkout",
+      "images": [
+        "/media/logo_white.png",
+        "/media/pintura.webp",
+        "/media/en.png",
+        "/media/es.png",
+        "/media/cs.png",
+        "/media/product/1660321427_GUANABO.jpg",
+        "/media/product/1655989658_guanabo2.jpg",
+        "/media/product/1655989658_guanabo3.jpg",
+        "/media/product/1655989658_guanabo4.jpg",
+        "/media/product/1655989658_guanabo5.jpg",
+        "/media/product/oddyssea-bottle-front.jpg",
+        "/media/product/1670851959_kissesr-labiosrotos-samplef.jpg",
+        "/media/product/1682578132_tropical-o.jpg",
+        "/media/product/donaire-bottle.jpg",
+        "/media/product/1670863005_Anacaona-samplef.jpg",
+        "/media/product/1718876087_baracoa-botella-frente.jpg",
+        "/media/instagram.svg",
+        "/media/youtube.svg",
+        "/media/card-paypal.svg",
+        "/media/card-visa.svg",
+        "/media/card-mastercard.svg"
+      ],
+      "pageScripts": [
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js",
+        "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js",
+        "/static/bootstrap.min.js",
+        "/static/wow/wow.min.js",
+        "/static/easing/easing.min.js",
+        "/static/waypoints/waypoints.min.js",
+        "/static/counterup/counterup.min.js",
+        "/static/owlcarousel/owl.carousel.min.js",
+        "/static/lightbox/js/lightbox.min.js",
+        "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js",
+        "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js",
+        "https://js.stripe.com/v3/",
+        "/static/js/main.js",
+        "/static/js/app.js"
+      ]
+    }
+  ]
+}

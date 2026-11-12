@@ -1,6 +1,6 @@
 # Deväť textových návrhov — NOT_READY
 
-Iba textové návrhy, žiadna mailová aplikácia ani odoslanie. Verejné kontakty overené 12.11.2026; doručiteľnosť netestovaná. Odkazy smerujú na konkrétne integračné Preview, nie na vlastné subdomény. Kompletné živé QA v čase prípravy ešte beží. Pred použitím skontrolovať finálny handoff a obchodné podmienky. Orion: PRICING_REVIEW, cena sa svojvoľne nemení.
+Iba textové návrhy, žiadna mailová aplikácia ani odoslanie. Verejné kontakty overené 12.11.2026; doručiteľnosť netestovaná. Odkazy smerujú na konkrétne integračné Preview, nie na vlastné subdomény. Kompletné živé QA103výsledkov je doložené na f44b9d2; posledné spoločné Preview7de640c má9/9regresných trás +Myskino7/7. AI provider nebol volaný. Pred použitím skontrolovať finálny handoff a obchodné podmienky. Orion: PRICING_REVIEW, cena sa svojvoľne nemení.
 
 ## Essentique — NOT_READY
 
@@ -17,7 +17,7 @@ Pri parfumových odstrekoch je dôležité pomôcť zákazníkovi vybrať vôňu
 
 Pripravil som pre vás ukážku poradcu s vybranými produktmi z vašej ponuky. Výber vedie ku konkrétnemu produktu s fotografiou, balením, cenou a odkazom na váš e-shop. Dve odlišné vône sa dajú porovnať.
 
-https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=essentique
+https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=essentique
 
 Príprava a nasadenie pre váš web stojí 447 € jednorazovo, prevádzka 10 € mesačne. Ak vás ukážka zaujala, môžeme sa dohodnúť na úpravách pre váš e-shop.
 
@@ -41,7 +41,7 @@ U vzorků parfémů pomůže zákazníkovi výběr podle tónů a jasná informa
 
 Připravil jsem pro vás ukázku poradce s vybranými produkty z vaší nabídky. Výběr vede ke konkrétnímu produktu s fotografií, balením, cenou a odkazem na váš e-shop. Dvě odlišné vůně lze porovnat.
 
-https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=fragrancesamples
+https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=fragrancesamples
 
 Příprava a nasazení pro váš web stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, můžeme se domluvit na úpravách pro váš e-shop.
 
@@ -65,7 +65,7 @@ Vaše barevně odlišené parfémové kompozice umožňují vytvořit přehledn�
 
 Připravil jsem pro vás ukázku poradce s vybranými produkty z vaší nabídky. Výběr vede ke konkrétnímu produktu s fotografií, balením, cenou a odkazem na váš e-shop. Dvě odlišné vůně lze porovnat.
 
-https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=alexmonhart
+https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=alexmonhart
 
 Příprava a nasazení pro váš web stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, můžeme se domluvit na úpravách pro váš e-shop.
 
@@ -89,7 +89,7 @@ Pri vašich odstrekoch môže zákazník porovnať dve vône podľa tónov aj ce
 
 Pripravil som pre vás ukážku poradcu s vybranými produktmi z vašej ponuky. Výber vedie ku konkrétnemu produktu s fotografiou, balením, cenou a odkazom na váš e-shop. Dve odlišné vône sa dajú porovnať.
 
-https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=flakon
+https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=flakon
 
 Príprava a nasadenie pre váš web stojí 447 € jednorazovo, prevádzka 10 € mesačne. Ak vás ukážka zaujala, môžeme sa dohodnúť na úpravách pre váš e-shop.
 
@@ -113,7 +113,7 @@ Pri vašej ponuke parfumov je užitočné rozlíšiť konkrétne tóny, veľkos�
 
 Pripravil som pre vás ukážku poradcu s vybranými produktmi z vašej ponuky. Výber vedie ku konkrétnemu produktu s fotografiou, balením, cenou a odkazom na váš e-shop. Dve odlišné vône sa dajú porovnať.
 
-https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=orion
+https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=orion
 
 Príprava a nasadenie pre váš web stojí 447 € jednorazovo, prevádzka 10 € mesačne. Ak vás ukážka zaujala, môžeme sa dohodnúť na úpravách pre váš e-shop.
 
@@ -137,7 +137,7 @@ U inspirovaných parfémů může průvodce pomoci s výběrem tónů a zárove�
 
 Připravil jsem pro vás ukázku poradce s vybranými produkty z vaší nabídky. Výběr vede ke konkrétnímu produktu s fotografií, balením, cenou a odkazem na váš e-shop. Dvě odlišné vůně lze porovnat.
 
-https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=inspirovane
+https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=inspirovane
 
 Příprava a nasazení pro váš web stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, můžeme se domluvit na úpravách pro váš e-shop.
 
@@ -161,7 +161,7 @@ Vaša ponuka niche parfumov sa dá zákazníkovi priblížiť cez konkrétne tó
 
 Pripravil som pre vás ukážku poradcu s vybranými produktmi z vašej ponuky. Výber vedie ku konkrétnemu produktu s fotografiou, balením, cenou a odkazom na váš e-shop. Dve odlišné vône sa dajú porovnať.
 
-https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=leparfumlechic
+https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=leparfumlechic
 
 Príprava a nasadenie pre váš web stojí 447 € jednorazovo, prevádzka 10 € mesačne. Ak vás ukážka zaujala, môžeme sa dohodnúť na úpravách pre váš e-shop.
 
@@ -185,7 +185,7 @@ U vaší nabídky niche parfémů může zákazníkovi pomoci průvodce podle uv
 
 Připravil jsem pro vás ukázku poradce s vybranými produkty z vaší nabídky. Výběr vede ke konkrétnímu produktu s fotografií, balením, cenou a odkazem na váš e-shop. Dvě odlišné vůně lze porovnat.
 
-https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=vavavoom
+https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=vavavoom
 
 Příprava a nasazení pro váš web stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, můžeme se domluvit na úpravách pro váš e-shop.
 
@@ -209,7 +209,7 @@ U vaší nabídky niche parfémů může průvodce zpřehlednit rozdíly mezi t�
 
 Připravil jsem pro vás ukázku poradce s vybranými produkty z vaší nabídky. Výběr vede ke konkrétnímu produktu s fotografií, balením, cenou a odkazem na váš e-shop. Dvě odlišné vůně lze porovnat.
 
-https://kava-chatbot-backend-4y4ryn4ku-danielvendzur-codes-projects.vercel.app/s5.html?demo=rafinad
+https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=rafinad
 
 Příprava a nasazení pro váš web stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, můžeme se domluvit na úpravách pro váš e-shop.
 

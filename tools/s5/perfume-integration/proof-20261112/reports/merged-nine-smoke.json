@@ -1,0 +1,810 @@
+{
+  "commit": "7de640c3f7b6793e8cefed17eb397f0f0bc4f666",
+  "at": "2026-11-12T09:56:38.952357+00:00",
+  "qaType": "Live unique Vercel Preview on exact supplied commit; API replies mocked/offline only. No live merchant messages or paid model calls.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "essentique",
+      "width": 390,
+      "id": "orange-x-santal",
+      "pack": "2 ml",
+      "price": "7 €",
+      "url": "https://www.essentique.sk/orange-x-santal/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "essentique-result-orange-x-santal-390.png"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 390,
+      "id": "mancera-french-riviera",
+      "pack": "2 ml",
+      "price": "139 Kč",
+      "url": "https://www.fragrancesamples.cz/mancera-french-riviera/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "fragrancesamples-result-mancera-french-riviera-390.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 390,
+      "id": "the-thinker",
+      "pack": "50 ml",
+      "price": "3 790 Kč",
+      "url": "https://www.alexmonhart.com/products/the-thinker?variant=54346006331716",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alexmonhart-result-the-thinker-390.png"
+    },
+    {
+      "slug": "flakon",
+      "width": 390,
+      "id": "xerjoff-torino21",
+      "pack": "2 ml",
+      "price": "12 €",
+      "url": "https://www.flakon.sk/xerjoff-torino21/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "flakon-result-xerjoff-torino21-390.png"
+    },
+    {
+      "slug": "orion",
+      "width": 390,
+      "id": "p137008",
+      "pack": "100 ml · tester",
+      "price": "299 €",
+      "url": "https://parfumeria-orion.sk/le-labo-bergamote-22-100-ml-tester-parfumovana-voda-u/p137008",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "orion-result-p137008-390.png"
+    },
+    {
+      "slug": "inspirovane",
+      "width": 390,
+      "id": "lanoir-h137-mens-parfum",
+      "pack": "50 ml",
+      "price": "399 Kč",
+      "url": "https://www.inspirovaneparfemy.cz/lanoir-h137-mens-parfum/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "inspirovane-result-lanoir-h137-mens-parfum-390.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 390,
+      "id": "bois",
+      "pack": "100 ml",
+      "price": "98 €",
+      "url": "https://www.leparfumlechic.sk/product/essential-parfums-bois-imperial/",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "leparfumlechic-result-bois-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "lime",
+      "pack": "100 ml",
+      "price": "4 500 Kč",
+      "url": "https://www.vava-voom.cz/products/bohemian-lime?variant=54228820230472",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vavavoom-result-lime-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "ete",
+      "pack": "50 ml",
+      "price": "115 €",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou",
+      "photoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "rafinad-result-ete-390.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "essentique",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "essentique",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "orange-x-santal",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "the-ghost-in-the-shell",
+          "photo": "/assets/s3/scenes-k2/milk.jpg"
+        },
+        {
+          "id": "ganymede",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        }
+      ],
+      "screenshot": "essentique-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/honey.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "mancera-french-riviera",
+          "photo": "/assets/s3/scenes-k2/ocean-wave.jpg"
+        },
+        {
+          "id": "note-de-yuzu",
+          "photo": "/assets/s5/fragrancesamples/note-de-yuzu.webp"
+        },
+        {
+          "id": "parfums-de-marly-percival-edp",
+          "photo": "/assets/s3/scenes-k2/lavender.jpg"
+        }
+      ],
+      "screenshot": "fragrancesamples-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/grapefruit.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/almonds.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        }
+      ],
+      "screenshot": "alexmonhart-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "the-thinker",
+          "photo": "/assets/s3/scenes-k2/grapefruit.jpg"
+        },
+        {
+          "id": "the-avantgardist-copy",
+          "photo": "/assets/s5/alexmonhart/the-avantgardist-copy.webp"
+        }
+      ],
+      "screenshot": "alexmonhart-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "flakon",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        }
+      ],
+      "screenshot": "flakon-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "flakon",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "xerjoff-torino21",
+          "photo": "/assets/s3/scenes-k2/mint-herbs.jpg"
+        },
+        {
+          "id": "vilhelm-parfumerie-mango-skin",
+          "photo": "/assets/s3/scenes-k2/mango.jpg"
+        },
+        {
+          "id": "ex-nihilo---blue-talisman",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        }
+      ],
+      "screenshot": "flakon-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "orion",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "orion-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "orion",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "p137008",
+          "photo": "/assets/s3/scenes-k2/grapefruit.jpg"
+        },
+        {
+          "id": "p129062",
+          "photo": "/assets/s3/scenes-k2/matcha.jpg"
+        },
+        {
+          "id": "p132310",
+          "photo": "/assets/s3/scenes-k2/apricots.jpg"
+        }
+      ],
+      "screenshot": "orion-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "inspirovane",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/honey.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "inspirovane-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "inspirovane",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "lanoir-h137-mens-parfum",
+          "photo": "/assets/s3/scenes-k2/black-tea.jpg"
+        },
+        {
+          "id": "lanoir-h136-mens-parfum",
+          "photo": "/assets/s3/scenes-k2/ocean-wave.jpg"
+        },
+        {
+          "id": "lanoir-h109-mens-parfum",
+          "photo": "/assets/s3/scenes-k2/mint-herbs.jpg"
+        }
+      ],
+      "screenshot": "inspirovane-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "herbal",
+          "photo": "/assets/s3/scenes-k2/lavender.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        }
+      ],
+      "screenshot": "leparfumlechic-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "bois",
+          "photo": "/assets/s5/leparfumlechic/bois.webp"
+        },
+        {
+          "id": "giardino",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "afgano",
+          "photo": "/assets/s5/leparfumlechic/afgano.webp"
+        }
+      ],
+      "screenshot": "leparfumlechic-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "dark",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "lime",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "ginger",
+          "photo": "/assets/s3/scenes-k2/mandarin.jpg"
+        },
+        {
+          "id": "metal",
+          "photo": "/assets/s3/scenes-k2/lavender-bunch.jpg"
+        }
+      ],
+      "screenshot": "vavavoom-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "gourmand",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "ginger",
+          "photo": "/assets/s3/scenes-k2/lemon-tree.jpg"
+        },
+        {
+          "id": "ete",
+          "photo": "/assets/s3/scenes-k2/black-tea.jpg"
+        },
+        {
+          "id": "pacific",
+          "photo": "/assets/s3/scenes-k2/ocean-wave.jpg"
+        }
+      ],
+      "screenshot": "rafinad-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "essentique",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "orange-x-santal",
+        "angels-share"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "essentique-compare-390.png"
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "mancera-french-riviera",
+        "prada-candy-eau-de-parfum"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "fragrancesamples-compare-390.png"
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "the-thinker",
+        "the-avantgardist"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "alexmonhart-compare-390.png"
+    },
+    {
+      "slug": "flakon",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "xerjoff-torino21",
+        "penhaligon-s-halfeti-amber"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "flakon-compare-390.png"
+    },
+    {
+      "slug": "orion",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "p137008",
+        "p118584"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "orion-compare-390.png"
+    },
+    {
+      "slug": "inspirovane",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "lanoir-h137-mens-parfum",
+        "lanoir-u079-unisex-parfum"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "inspirovane-compare-390.png"
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "vodka",
+        "angels"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "leparfumlechic-compare-390.png"
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "metal",
+        "spicy"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "vavavoom-compare-390.png"
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ginger",
+        "escapade"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "rafinad-compare-390.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [
+    "vercel.live"
+  ],
+  "complete": true,
+  "deploymentId": "dpl_AYd7PpTdivziA2H4kpbnVdmSuHHr",
+  "baseUrl": "https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app",
+  "browser": "webkit",
+  "tlsVerification": true,
+  "scope": "Live unique Vercel Preview on exact supplied commit; API replies mocked/offline only. No live merchant messages or paid model calls.",
+  "apiMode": "real_local_backend_injected_ai_stub",
+  "offlineApiBase": "http://127.0.0.1:8930",
+  "enrichedStates": [
+    {
+      "slug": "essentique",
+      "width": 390,
+      "id": "orange-x-santal",
+      "defaultScreenshot": "essentique-result-orange-x-santal-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "essentique-pair-orange-x-santal-390.png",
+      "comparisonIds": [
+        "orange-x-santal",
+        "the-ghost-in-the-shell"
+      ]
+    },
+    {
+      "slug": "fragrancesamples",
+      "width": 390,
+      "id": "mancera-french-riviera",
+      "defaultScreenshot": "fragrancesamples-result-mancera-french-riviera-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "fragrancesamples-pair-mancera-french-riviera-390.png",
+      "comparisonIds": [
+        "mancera-french-riviera",
+        "note-de-yuzu"
+      ]
+    },
+    {
+      "slug": "alexmonhart",
+      "width": 390,
+      "id": "the-thinker",
+      "defaultScreenshot": "alexmonhart-result-the-thinker-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alexmonhart-pair-the-thinker-390.png",
+      "comparisonIds": [
+        "the-thinker",
+        "the-avantgardist-copy"
+      ]
+    },
+    {
+      "slug": "flakon",
+      "width": 390,
+      "id": "xerjoff-torino21",
+      "defaultScreenshot": "flakon-result-xerjoff-torino21-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "flakon-notes-xerjoff-torino21-390.png",
+      "compareScreenshot": "flakon-pair-xerjoff-torino21-390.png",
+      "comparisonIds": [
+        "xerjoff-torino21",
+        "vilhelm-parfumerie-mango-skin"
+      ]
+    },
+    {
+      "slug": "orion",
+      "width": 390,
+      "id": "p137008",
+      "defaultScreenshot": "orion-result-p137008-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "orion-notes-p137008-390.png",
+      "compareScreenshot": "orion-pair-p137008-390.png",
+      "comparisonIds": [
+        "p137008",
+        "p129062"
+      ]
+    },
+    {
+      "slug": "inspirovane",
+      "width": 390,
+      "id": "lanoir-h137-mens-parfum",
+      "defaultScreenshot": "inspirovane-result-lanoir-h137-mens-parfum-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "inspirovane-notes-lanoir-h137-mens-parfum-390.png",
+      "compareScreenshot": "inspirovane-pair-lanoir-h137-mens-parfum-390.png",
+      "comparisonIds": [
+        "lanoir-h137-mens-parfum",
+        "lanoir-h136-mens-parfum"
+      ]
+    },
+    {
+      "slug": "leparfumlechic",
+      "width": 390,
+      "id": "bois",
+      "defaultScreenshot": "leparfumlechic-result-bois-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "124 €",
+      "selectedScreenshot": "leparfumlechic-selected-bois-390.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "leparfumlechic-pair-bois-390.png",
+      "comparisonIds": [
+        "bois",
+        "giardino"
+      ]
+    },
+    {
+      "slug": "vavavoom",
+      "width": 390,
+      "id": "lime",
+      "defaultScreenshot": "vavavoom-result-lime-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "vavavoom-notes-lime-390.png",
+      "compareScreenshot": "vavavoom-pair-lime-390.png",
+      "comparisonIds": [
+        "lime",
+        "ginger"
+      ]
+    },
+    {
+      "slug": "rafinad",
+      "width": 390,
+      "id": "ete",
+      "defaultScreenshot": "rafinad-result-ete-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "rafinad-notes-ete-390.png",
+      "compareScreenshot": "rafinad-pair-ete-390.png",
+      "comparisonIds": [
+        "ete",
+        "pacific"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}
