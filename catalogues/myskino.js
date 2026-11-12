@@ -99,7 +99,35 @@ globalThis.CX_CATALOGUES.myskino = {
      "sha256": "d3100953c38bea4cfb9c0fe9ebb97aef45bfba61cdcb06dcc5b9148c48afe35e",
      "checkedAt": "2026-11-11T13:04:43.109879+00:00",
      "visualReview": "PERFUME_WORKER inspected source-photo sheet and all7result photographs at320/390/1280; official illustrations not pack-size proof; selected volume independently established."
-    }
+    },
+    "upsellVariants": [
+     {
+      "id": "13487",
+      "parentProductId": "nice",
+      "name": "Essential Parfums - Nice Bergamote",
+      "volume": "10 ml",
+      "priceAmount": 600,
+      "price": "600 Kč",
+      "currency": "CZK",
+      "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/",
+      "available": true,
+      "sameFormula": true,
+      "variantSelectionRequired": true,
+      "evidence": {
+       "url": "https://www.myskino.cz/essential-parfums-nice-bergamote-niche-parfem/",
+       "checkedAt": "2026-11-11T17:15:00.794339+00:00",
+       "publicEmbeddedVariant": "47-621",
+       "exactVariantId": 13487,
+       "code": "MY-66-057",
+       "stock": "Skladem",
+       "visibleStockText": false,
+       "isNotSoldOut": true,
+       "sourceSha256": "5840936e6d060347546df5fa69cd6a02e9204b95e5ba495669ad68f5fc488807",
+       "vatSource": "https://www.myskino.cz/obchodni-podminky/ §2.4 final prices incl VAT",
+       "purpose": "Optional additional smaller pack of same named composition; no layering/health/fragrance guarantees."
+      }
+     }
+    ]
    }
   },
   {
@@ -189,7 +217,35 @@ globalThis.CX_CATALOGUES.myskino = {
      "sha256": "9c25afa6a239d586fc8764a58410b208c8bb22dc988e451404185996599c6d64",
      "checkedAt": "2026-11-11T13:04:43.626565+00:00",
      "visualReview": "PERFUME_WORKER inspected source-photo sheet and all7result photographs at320/390/1280; official illustrations not pack-size proof; selected volume independently established."
-    }
+    },
+    "upsellVariants": [
+     {
+      "id": "14141",
+      "parentProductId": "riviera",
+      "name": "Bon Parfumeur - 005 Riviera Absolue",
+      "volume": "15 ml",
+      "priceAmount": 1375,
+      "price": "1 375 Kč",
+      "currency": "CZK",
+      "url": "https://www.myskino.cz/bon-parfumeur-005-riviera-absolue-niche-parfem/",
+      "available": true,
+      "sameFormula": true,
+      "variantSelectionRequired": true,
+      "evidence": {
+       "url": "https://www.myskino.cz/bon-parfumeur-005-riviera-absolue-niche-parfem/",
+       "checkedAt": "2026-11-11T17:15:00.612443+00:00",
+       "publicEmbeddedVariant": "47-479",
+       "exactVariantId": 14141,
+       "code": "MY-74-027",
+       "stock": "Skladem",
+       "visibleStockText": false,
+       "isNotSoldOut": true,
+       "sourceSha256": "da914985257ae8f87e10ac78eafa6483f9c9004a24373fef5b1de052a0774eff",
+       "vatSource": "https://www.myskino.cz/obchodni-podminky/ §2.4 final prices incl VAT",
+       "purpose": "Optional additional smaller pack of same named composition; no layering/health/fragrance guarantees."
+      }
+     }
+    ]
    }
   },
   {
@@ -279,7 +335,35 @@ globalThis.CX_CATALOGUES.myskino = {
      "sha256": "f5910977172d6a3601aaeefed326d79f9b78ac9cff560d884499469b884386a0",
      "checkedAt": "2026-11-11T13:04:44.371785+00:00",
      "visualReview": "PERFUME_WORKER inspected source-photo sheet and all7result photographs at320/390/1280; official illustrations not pack-size proof; selected volume independently established."
-    }
+    },
+    "upsellVariants": [
+     {
+      "id": "13553",
+      "parentProductId": "gozo",
+      "name": "Jeroboam - Gozo",
+      "volume": "30 ml",
+      "priceAmount": 2750,
+      "price": "2 750 Kč",
+      "currency": "CZK",
+      "url": "https://www.myskino.cz/jeroboam-gozo-niche-parfem/",
+      "available": true,
+      "sameFormula": true,
+      "variantSelectionRequired": true,
+      "evidence": {
+       "url": "https://www.myskino.cz/jeroboam-gozo-niche-parfem/",
+       "checkedAt": "2026-11-11T17:15:00.813648+00:00",
+       "publicEmbeddedVariant": "47-164",
+       "exactVariantId": 13553,
+       "code": "MY-21-017",
+       "stock": "Skladem",
+       "visibleStockText": false,
+       "isNotSoldOut": true,
+       "sourceSha256": "bd67079ea725f3df7f083f4ef8a554641b75ec1f09b209c3d2cc4934a4ad1d2c",
+       "vatSource": "https://www.myskino.cz/obchodni-podminky/ §2.4 final prices incl VAT",
+       "purpose": "Optional additional smaller pack of same named composition; no layering/health/fragrance guarantees."
+      }
+     }
+    ]
    }
   },
   {
@@ -369,7 +453,35 @@ globalThis.CX_CATALOGUES.myskino = {
      "sha256": "8065dcc106fd7c8caf041e9317543d3bbeda67ee962b880f08972021448ddcfc",
      "checkedAt": "2026-11-11T13:04:45.122457+00:00",
      "visualReview": "PERFUME_WORKER inspected source-photo sheet and all7result photographs at320/390/1280; official illustrations not pack-size proof; selected volume independently established."
-    }
+    },
+    "upsellVariants": [
+     {
+      "id": "14398",
+      "parentProductId": "kokoa",
+      "name": "Room1015 - Kokoa Bang",
+      "volume": "10 ml",
+      "priceAmount": 875,
+      "price": "875 Kč",
+      "currency": "CZK",
+      "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/",
+      "available": true,
+      "sameFormula": true,
+      "variantSelectionRequired": true,
+      "evidence": {
+       "url": "https://www.myskino.cz/room1015-kokoa-bang-niche-parfem/",
+       "checkedAt": "2026-11-11T17:15:02.534934+00:00",
+       "publicEmbeddedVariant": "47-621",
+       "exactVariantId": 14398,
+       "code": "MY-70-033",
+       "stock": "Skladem",
+       "visibleStockText": false,
+       "isNotSoldOut": true,
+       "sourceSha256": "fd1a14b7c6248f0b7ec4c13794c1f9a4ce6fed146b0ec32f16496072594c68eb",
+       "vatSource": "https://www.myskino.cz/obchodni-podminky/ §2.4 final prices incl VAT",
+       "purpose": "Optional additional smaller pack of same named composition; no layering/health/fragrance guarantees."
+      }
+     }
+    ]
    }
   },
   {
@@ -459,7 +571,35 @@ globalThis.CX_CATALOGUES.myskino = {
      "sha256": "5d9929787b569aa0f5f10593ae40fb46f18e2a3d6cc33b3ca701d5e6bc023a99",
      "checkedAt": "2026-11-11T13:04:45.625044+00:00",
      "visualReview": "PERFUME_WORKER inspected source-photo sheet and all7result photographs at320/390/1280; official illustrations not pack-size proof; selected volume independently established."
-    }
+    },
+    "upsellVariants": [
+     {
+      "id": "12680",
+      "parentProductId": "saint",
+      "name": "Nicolaï - Saint Honoré",
+      "volume": "30 ml",
+      "priceAmount": 2250,
+      "price": "2 250 Kč",
+      "currency": "CZK",
+      "url": "https://www.myskino.cz/nicola-saint-honore-niche-parfem/",
+      "available": true,
+      "sameFormula": true,
+      "variantSelectionRequired": true,
+      "evidence": {
+       "url": "https://www.myskino.cz/nicola-saint-honore-niche-parfem/",
+       "checkedAt": "2026-11-11T17:15:01.736669+00:00",
+       "publicEmbeddedVariant": "47-164",
+       "exactVariantId": 12680,
+       "code": "MY-33-206",
+       "stock": "Skladem",
+       "visibleStockText": false,
+       "isNotSoldOut": true,
+       "sourceSha256": "155a5d199280e1bfb9b046a0c0e664bc71a201f20c8055096a7b6dfe718963b9",
+       "vatSource": "https://www.myskino.cz/obchodni-podminky/ §2.4 final prices incl VAT",
+       "purpose": "Optional additional smaller pack of same named composition; no layering/health/fragrance guarantees."
+      }
+     }
+    ]
    }
   },
   {
@@ -549,7 +689,35 @@ globalThis.CX_CATALOGUES.myskino = {
      "sha256": "e35d913924aa88b2b9f9c74accea86a2b5de463842dd01aec68f3a8ea57977b9",
      "checkedAt": "2026-11-11T13:04:46.093780+00:00",
      "visualReview": "PERFUME_WORKER inspected source-photo sheet and all7result photographs at320/390/1280; official illustrations not pack-size proof; selected volume independently established."
-    }
+    },
+    "upsellVariants": [
+     {
+      "id": "12947",
+      "parentProductId": "fire",
+      "name": "Jovoy - Fire at Will",
+      "volume": "15 ml",
+      "priceAmount": 1125,
+      "price": "1 125 Kč",
+      "currency": "CZK",
+      "url": "https://www.myskino.cz/jovoy-fire-at-will-niche-parfem/",
+      "available": true,
+      "sameFormula": true,
+      "variantSelectionRequired": true,
+      "evidence": {
+       "url": "https://www.myskino.cz/jovoy-fire-at-will-niche-parfem/",
+       "checkedAt": "2026-11-11T17:15:01.521351+00:00",
+       "publicEmbeddedVariant": "47-479",
+       "exactVariantId": 12947,
+       "code": "MY-22-061",
+       "stock": "Skladem",
+       "visibleStockText": false,
+       "isNotSoldOut": true,
+       "sourceSha256": "98b80b43baf1ad33950aa7a695f0be70a20a7b6d33ff4a0315e433aad386af62",
+       "vatSource": "https://www.myskino.cz/obchodni-podminky/ §2.4 final prices incl VAT",
+       "purpose": "Optional additional smaller pack of same named composition; no layering/health/fragrance guarantees."
+      }
+     }
+    ]
    }
   },
   {
@@ -639,7 +807,8 @@ globalThis.CX_CATALOGUES.myskino = {
      "sha256": "e578c73c669ada99cfebca4c4fabd3d4a3e70779c116451974d9b17ab3dc85fb",
      "checkedAt": "2026-11-11T13:04:46.493500+00:00",
      "visualReview": "PERFUME_WORKER inspected source-photo sheet and all7result photographs at320/390/1280; official illustrations not pack-size proof; selected volume independently established."
-    }
+    },
+    "upsellVariants": []
    }
   }
  ],
