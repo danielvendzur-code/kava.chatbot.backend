@@ -1,0 +1,236 @@
+{
+  "slug": "myskino",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "4108184a7806f416c8d5c40dc33b0d4ad659e640",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "ISOLATED_SOURCE_AND_LOCAL_QA_PASS_PENDING_MAIN_INTEGRATION_AND_PREVIEW",
+  "catalogue": "/catalogues/myskino.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Bergamot a jasmín",
+    "Hruška a kakao",
+    "Mandlové mléko",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Bergamot a jasmín",
+      "match": "bergamot.*jasmin",
+      "productIds": [
+        "nice"
+      ]
+    },
+    {
+      "chip": "Hruška a kakao",
+      "match": "hrusk.*kakao",
+      "productIds": [
+        "kokoa"
+      ]
+    },
+    {
+      "chip": "Mandlové mléko",
+      "match": "mandlov.*mlek",
+      "productIds": [
+        "ambrelatte"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "nice",
+    "kokoa"
+  ],
+  "addon": {
+    "type": "optional-extra-smaller-pack-same-composition",
+    "defaultChecked": false,
+    "eligibleProducts": [
+      "nice",
+      "kokoa",
+      "riviera",
+      "gozo",
+      "saint",
+      "fire"
+    ],
+    "notNewFormulas": true,
+    "totalIncludesCheckedExtra": true
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "MYSKINO",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/myskino/logo.svg",
+      "header": "/assets/s5/myskino/logo.svg",
+      "avatar": "/assets/s5/myskino/avatar.svg"
+    },
+    "brand": {
+      "name": "MYSKINO",
+      "domain": "myskino.cz",
+      "website": "https://www.myskino.cz/",
+      "lang": "cs",
+      "fullName": "MYSKINO",
+      "url": "https://www.myskino.cz/",
+      "logo": "/assets/s5/myskino/logo.svg",
+      "mark": "/assets/s5/myskino/avatar.svg",
+      "greeting": "Vyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.",
+      "quickChips": [
+        "Bergamot a jasmín",
+        "Hruška a kakao",
+        "Mandlové mléko",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#263b37",
+        "accent": "#263b37",
+        "soft": "#edf2f0",
+        "paper": "#ffffff",
+        "ink": "#242624",
+        "line": "#dbe5df"
+      }
+    },
+    "traitCopy": {
+      "citrus": [
+        "Citrusy s květy nebo dřevem",
+        "Vyberte podle uvedených tónů.",
+        "Citrusy s květy nebo dřevem",
+        ""
+      ],
+      "nice": [
+        "Bergamot, jasmín a cedr",
+        "Bergamot, jasmín a cedr.",
+        "Bergamot, jasmín a cedr",
+        "Bergamot, jasmín a cedr."
+      ],
+      "riviera": [
+        "Limetka, zázvor a černý čaj",
+        "Limetka, zázvor a černý čaj.",
+        "Limetka, zázvor a černý čaj",
+        "Limetka, zázvor a černý čaj."
+      ],
+      "gozo": [
+        "Tuberóza, šafrán a cedr",
+        "Tuberóza, šafrán a cedr.",
+        "Tuberóza, šafrán a cedr",
+        "Tuberóza, šafrán a cedr."
+      ],
+      "sweet": [
+        "Kakao, vanilka či mléko",
+        "Vyberte podle uvedených tónů.",
+        "Kakao, vanilka či mléko",
+        ""
+      ],
+      "kokoa": [
+        "Hruška, kakao a myrha",
+        "Hruška, kakao a myrha.",
+        "Hruška, kakao a myrha",
+        "Hruška, kakao a myrha."
+      ],
+      "saint": [
+        "Lískový oříšek, mléko a santal",
+        "Lískový oříšek, mléko a santal.",
+        "Lískový oříšek, mléko a santal",
+        "Lískový oříšek, mléko a santal."
+      ],
+      "fire": [
+        "Mimóza, vanilka a hnědý cukr",
+        "Mimóza, vanilka a hnědý cukr.",
+        "Mimóza, vanilka a hnědý cukr",
+        "Mimóza, vanilka a hnědý cukr."
+      ],
+      "ambrelatte": [
+        "Mandlové mléko, tonka a santal",
+        "Mandlové mléko, tonka a santal.",
+        "Mandlové mléko, tonka a santal",
+        "Mandlové mléko, tonka a santal."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaké tóny chcete objevovat?",
+        "Vyberte podle doložených tónů.",
+        "Tóny vůně"
+      ],
+      "fragranceProfile": [
+        "Které tóny vás lákají?",
+        "Vyberte jeden profil.",
+        "Tóny vůně"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "citrus": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "nice": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "riviera": [
+        "/assets/s3/scenes-k2/black-tea.jpg"
+      ],
+      "gozo": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "sweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "kokoa": [
+        "/assets/s3/scenes-k2/cocoa.jpg"
+      ],
+      "saint": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "fire": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "ambrelatte": [
+        "/assets/s5/myskino/ambrelatte.webp"
+      ],
+      "navigation:more": [
+        "/assets/s5/myskino/nice.webp"
+      ]
+    },
+    "compareProductIds": [
+      "nice",
+      "kokoa"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vůně · balení · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce vůní",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi vybrat vůni podle jeho vkusu.",
+      "lead": "Výběr podle doložených tónů vede ke konkrétní vůni s cenou, balením a odkazem. Dvě různé kompozice si může porovnat.",
+      "includedChat": "Tóny vůně, přesná balení, ceny a porovnání dvou kompozic.",
+      "includedAdvisor": "Preferované tóny a konkrétní profil — na konci konkrétní výrobek.",
+      "greeting": "Vyberte si vůni podle doložených tónů a porovnejte dvě různé kompozice.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít poradce pro výběr vůně",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "nice": "riviera",
+        "riviera": "nice",
+        "gozo": "nice",
+        "kokoa": "ambrelatte",
+        "saint": "ambrelatte",
+        "fire": "saint",
+        "ambrelatte": "saint"
+      }
+    }
+  },
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "resultExtrasStatus": "REVIEW_MODULE_LOCAL_QA_PASS_PENDING_MAIN_IMPORT_AND_PREVIEW"
+}

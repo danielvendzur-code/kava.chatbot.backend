@@ -1,0 +1,22 @@
+{
+  "at": "2026-11-12T09:56:03.172268+00:00",
+  "main": "de34f7759118e20d3a476f0fe1537ddb02fd161f",
+  "checks": [
+    {
+      "path": "catalogues/myskino.js",
+      "byteIdenticalToMain": true
+    },
+    {
+      "path": "n447/s5/sources/myskino/verified-products.json",
+      "byteIdenticalToMain": true
+    },
+    {
+      "path": "n447/s5/s5.css",
+      "byteIdenticalToMain": true
+    }
+  ],
+  "nineResultModuleByteIdenticalToFullPreviewRuntime": true,
+  "nineBackendByteIdenticalToFullPreviewRuntime": true,
+  "advisorCoreUnchanged": true,
+  "scope": "Merge into isolated integration branch only; MAIN not changed"
+}
