@@ -1,0 +1,72 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaké tóny chcete objevovat?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy a ovoce se dřevem",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "the-thinker",
+          "label": "Grapefruit, vetiver a santal",
+          "productId": "the-thinker",
+          "sourceUrl": "https://www.alexmonhart.com/products/the-thinker"
+        },
+        {
+          "value": "the-avantgardist-copy",
+          "label": "Ananas, lotos a dřevité tóny",
+          "productId": "the-avantgardist-copy",
+          "sourceUrl": "https://www.alexmonhart.com/products/the-avantgardist-copy"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Květy s mandlí nebo dřevem",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "the-minimalist",
+          "label": "Bílé květy, mandle a tonka",
+          "productId": "the-minimalist",
+          "sourceUrl": "https://www.alexmonhart.com/products/the-minimalist"
+        },
+        {
+          "value": "the-ritualist",
+          "label": "Pomerančový květ a Palo Santo",
+          "productId": "the-ritualist",
+          "sourceUrl": "https://www.alexmonhart.com/products/the-ritualist"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Kůže, tabák nebo pryskyřice",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "the-blasphemer",
+          "label": "Oudové dřevo a kůže",
+          "productId": "the-blasphemer",
+          "sourceUrl": "https://www.alexmonhart.com/products/the-blasphemer"
+        },
+        {
+          "value": "the-raver",
+          "label": "Pryskyřice, cedr a kůže",
+          "productId": "the-raver",
+          "sourceUrl": "https://www.alexmonhart.com/products/the-raver"
+        },
+        {
+          "value": "the-avantgardist",
+          "label": "Tabák, koňak a jasmín",
+          "productId": "the-avantgardist",
+          "sourceUrl": "https://www.alexmonhart.com/products/the-avantgardist"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aké tóny chcete objavovať?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy, čaj alebo zelené tóny",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "p137008",
+          "label": "Bergamot, grapefruit a vetiver",
+          "productId": "p137008",
+          "sourceUrl": "https://parfumeria-orion.sk/le-labo-bergamote-22-100-ml-tester-parfumovana-voda-u/p137008"
+        },
+        {
+          "value": "p129062",
+          "label": "Matcha, jahoda a čierny čaj",
+          "productId": "p129062",
+          "sourceUrl": "https://parfumeria-orion.sk/armaf-scentasy-matcha-magix-u-100-ml-parfumovana-voda/p129062"
+        },
+        {
+          "value": "p132310",
+          "label": "Grapefruit, marhuľa a jablko",
+          "productId": "p132310",
+          "sourceUrl": "https://parfumeria-orion.sk/dkny-be-delicious-fresh-blossom-w-100-ml-parfumovana-voda/p132310"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Kvety s ovocím alebo pižmom",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "p67840",
+          "label": "Sakura, jazmín a pižmo",
+          "productId": "p67840",
+          "sourceUrl": "https://parfumeria-orion.sk/acqua-di-parma-signatures-of-the-sun-sakura-u-100-ml-tester-parfumovana-voda/p67840"
+        },
+        {
+          "value": "p122810",
+          "label": "Datle, jazmín a santal",
+          "productId": "p122810",
+          "sourceUrl": "https://parfumeria-orion.sk/chloe-nomade-jasmin-naturel-w-75-ml-tester-parfumovana-voda/p122810"
+        },
+        {
+          "value": "p127072",
+          "label": "Hruška, fialka a pralinka",
+          "productId": "p127072",
+          "sourceUrl": "https://parfumeria-orion.sk/parfums-de-marly-palatine-w-75-ml-parfumovana-voda/p127072"
+        }
+      ]
+    },
+    {
+      "value": "gourmand",
+      "label": "Koňak, korenie alebo kakao",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "p125061",
+          "label": "Koňak, škorica a pralinka",
+          "productId": "p125061",
+          "sourceUrl": "https://parfumeria-orion.sk/kilian-angels-share-u-250-ml-parfumovana-voda/p125061"
+        },
+        {
+          "value": "p115189",
+          "label": "Datle, škorica a tonka",
+          "productId": "p115189",
+          "sourceUrl": "https://parfumeria-orion.sk/lattafa-khamrah-u-100-ml-parfumovana-voda/p115189"
+        },
+        {
+          "value": "p133760",
+          "label": "Černica, kakao a vanilka",
+          "productId": "p133760",
+          "sourceUrl": "https://parfumeria-orion.sk/lattafa-pride-eternal-vanille-u-100ml-parfumovana-voda/p133760"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Drevo, koža alebo kadidlo",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "p360",
+          "label": "Oud, citrusy a santal",
+          "productId": "p360",
+          "sourceUrl": "https://parfumeria-orion.sk/acqua-di-parma-signatures-of-the-sun-oud-u-100-ml-tester-parfumovana-voda/p360"
+        },
+        {
+          "value": "p18465",
+          "label": "Ruža, koža a kadidlo",
+          "productId": "p18465",
+          "sourceUrl": "https://parfumeria-orion.sk/prada-olfactories-double-dare-100-ml-tester-parfumovana-voda-u/p18465"
+        },
+        {
+          "value": "p118584",
+          "label": "Jablko, biele kvety a drevo",
+          "productId": "p118584",
+          "sourceUrl": "https://parfumeria-orion.sk/the-lab-the-dusk-100-ml-parfumovana-voda-u/p118584"
+        }
+      ]
+    }
+  ]
+}

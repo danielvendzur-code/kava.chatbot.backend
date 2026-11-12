@@ -1,0 +1,110 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaké tóny chcete objevovat?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy, moře nebo levandule",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "mancera-french-riviera",
+          "label": "Citrusy, mořské tóny a pižmo",
+          "productId": "mancera-french-riviera",
+          "sourceUrl": "https://www.fragrancesamples.cz/mancera-french-riviera/"
+        },
+        {
+          "value": "note-de-yuzu",
+          "label": "Yuzu, mandarinka a slané tóny",
+          "productId": "note-de-yuzu",
+          "sourceUrl": "https://www.fragrancesamples.cz/note-de-yuzu/"
+        },
+        {
+          "value": "parfums-de-marly-percival-edp",
+          "label": "Bergamot, mandarinka a levandule",
+          "productId": "parfums-de-marly-percival-edp",
+          "sourceUrl": "https://www.fragrancesamples.cz/parfums-de-marly-percival-edp/"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Květy s ovocem nebo vanilkou",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "versace-bright-crystal-absolu",
+          "label": "Granátové jablko, yuzu a pivoňka",
+          "productId": "versace-bright-crystal-absolu",
+          "sourceUrl": "https://www.fragrancesamples.cz/versace-bright-crystal-absolu/"
+        },
+        {
+          "value": "ysl-libre",
+          "label": "Levandule, pomerančový květ a vanilka",
+          "productId": "ysl-libre",
+          "sourceUrl": "https://www.fragrancesamples.cz/ysl-libre/"
+        },
+        {
+          "value": "lancome-la-vie-est-belle",
+          "label": "Kosatec, vanilka a pralinka",
+          "productId": "lancome-la-vie-est-belle",
+          "sourceUrl": "https://www.fragrancesamples.cz/lancome-la-vie-est-belle/"
+        }
+      ]
+    },
+    {
+      "value": "gourmand",
+      "label": "Med, karamel, datle nebo vanilka",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "jean-paul-gaultier-scandal-eau-de-parfum",
+          "label": "Med, gardénie a pačuli",
+          "productId": "jean-paul-gaultier-scandal-eau-de-parfum",
+          "sourceUrl": "https://www.fragrancesamples.cz/jean-paul-gaultier-scandal-eau-de-parfum/"
+        },
+        {
+          "value": "prada-candy-eau-de-parfum",
+          "label": "Karamel, benzoin a pižmo",
+          "productId": "prada-candy-eau-de-parfum",
+          "sourceUrl": "https://www.fragrancesamples.cz/prada-candy-eau-de-parfum/"
+        },
+        {
+          "value": "burberry-goddess-intense",
+          "label": "Vanilka, levandule a kouřové dřevo",
+          "productId": "burberry-goddess-intense",
+          "sourceUrl": "https://www.fragrancesamples.cz/burberry-goddess-intense/"
+        },
+        {
+          "value": "zimaya-sharaf-blend-edp",
+          "label": "Datle, muškátový oříšek a šafrán",
+          "productId": "zimaya-sharaf-blend-edp",
+          "sourceUrl": "https://www.fragrancesamples.cz/zimaya-sharaf-blend-edp/"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Dřevo a kůže nebo tabák a koření",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "mancera-cedrat-boise",
+          "label": "Citrusy, dřevo a kožené tóny",
+          "productId": "mancera-cedrat-boise",
+          "sourceUrl": "https://www.fragrancesamples.cz/mancera-cedrat-boise/"
+        },
+        {
+          "value": "spicebomb-extreme-od-viktor-rolf",
+          "label": "Pepř, tabák a vanilka",
+          "productId": "spicebomb-extreme-od-viktor-rolf",
+          "sourceUrl": "https://www.fragrancesamples.cz/spicebomb-extreme-od-viktor-rolf/"
+        }
+      ]
+    }
+  ]
+}

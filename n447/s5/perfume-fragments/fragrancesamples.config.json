@@ -1,0 +1,296 @@
+{
+  "slug": "fragrancesamples",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "d0be27da162949b45960ae76085e8f2f527fe356",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "INTEGRATED_LOCAL_QA_PENDING",
+  "catalogue": "/catalogues/fragrancesamples.js",
+  "requiredEngineContract": "s5-fragrance-samples-direction-profile-v1",
+  "quickChips": [
+    "Citrusy a moře",
+    "Med a gardénie",
+    "Karamel a pižmo",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Citrusy a moře",
+      "match": "citrus.*more",
+      "productIds": [
+        "mancera-french-riviera"
+      ]
+    },
+    {
+      "chip": "Med a gardénie",
+      "match": "med.*garden",
+      "productIds": [
+        "jean-paul-gaultier-scandal-eau-de-parfum"
+      ]
+    },
+    {
+      "chip": "Karamel a pižmo",
+      "match": "karamel.*pizm",
+      "productIds": [
+        "prada-candy-eau-de-parfum"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "mancera-french-riviera",
+    "prada-candy-eau-de-parfum"
+  ],
+  "addon": null,
+  "budgetQuestion": false,
+  "enableRuntime": true,
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Fragrance Samples",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/fragrancesamples/logo.png",
+      "header": "/assets/s5/fragrancesamples/logo.png",
+      "avatar": "/assets/s5/fragrancesamples/avatar.svg"
+    },
+    "brand": {
+      "name": "Fragrance Samples",
+      "domain": "fragrancesamples.cz",
+      "website": "https://www.fragrancesamples.cz/",
+      "lang": "cs",
+      "fullName": "Fragrance Samples",
+      "url": "https://www.fragrancesamples.cz/",
+      "logo": "/assets/s5/fragrancesamples/logo.png",
+      "mark": "/assets/s5/fragrancesamples/avatar.svg",
+      "greeting": "Vyberte si 2 ml vzorek podle doložených tónů a porovnejte dvě různé kompozice.",
+      "quickChips": [
+        "Citrusy a moře",
+        "Med a gardénie",
+        "Karamel a pižmo",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#2f2921",
+        "accent": "#2f2921",
+        "soft": "#f7f4ee",
+        "paper": "#ffffff",
+        "ink": "#28231d",
+        "line": "#e6dfd2"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, moře nebo levandule",
+        "Vyberte podle uvedených tónů.",
+        "Citrusy, moře nebo levandule",
+        "Vyberte podle uvedených tónů."
+      ],
+      "mancera-french-riviera": [
+        "Citrusy, mořské tóny a pižmo",
+        "Citrusy, mořské tóny a pižmo.",
+        "Citrusy, mořské tóny a pižmo",
+        "Citrusy, mořské tóny a pižmo."
+      ],
+      "note-de-yuzu": [
+        "Yuzu, mandarinka a slané tóny",
+        "Yuzu, mandarinka a slané tóny.",
+        "Yuzu, mandarinka a slané tóny",
+        "Yuzu, mandarinka a slané tóny."
+      ],
+      "parfums-de-marly-percival-edp": [
+        "Bergamot, mandarinka a levandule",
+        "Bergamot, mandarinka a levandule.",
+        "Bergamot, mandarinka a levandule",
+        "Bergamot, mandarinka a levandule."
+      ],
+      "floral": [
+        "Květy s ovocem nebo vanilkou",
+        "Vyberte podle uvedených tónů.",
+        "Květy s ovocem nebo vanilkou",
+        "Vyberte podle uvedených tónů."
+      ],
+      "versace-bright-crystal-absolu": [
+        "Granátové jablko, yuzu a pivoňka",
+        "Granátové jablko, yuzu a pivoňka.",
+        "Granátové jablko, yuzu a pivoňka",
+        "Granátové jablko, yuzu a pivoňka."
+      ],
+      "ysl-libre": [
+        "Levandule, pomerančový květ a vanilka",
+        "Levandule, pomerančový květ a vanilka.",
+        "Levandule, pomerančový květ a vanilka",
+        "Levandule, pomerančový květ a vanilka."
+      ],
+      "lancome-la-vie-est-belle": [
+        "Kosatec, vanilka a pralinka",
+        "Kosatec, vanilka a pralinka.",
+        "Kosatec, vanilka a pralinka",
+        "Kosatec, vanilka a pralinka."
+      ],
+      "gourmand": [
+        "Med, karamel, datle nebo vanilka",
+        "Vyberte podle uvedených tónů.",
+        "Med, karamel, datle nebo vanilka",
+        "Vyberte podle uvedených tónů."
+      ],
+      "jean-paul-gaultier-scandal-eau-de-parfum": [
+        "Med, gardénie a pačuli",
+        "Med, gardénie a pačuli.",
+        "Med, gardénie a pačuli",
+        "Med, gardénie a pačuli."
+      ],
+      "prada-candy-eau-de-parfum": [
+        "Karamel, benzoin a pižmo",
+        "Karamel, benzoin a pižmo.",
+        "Karamel, benzoin a pižmo",
+        "Karamel, benzoin a pižmo."
+      ],
+      "burberry-goddess-intense": [
+        "Vanilka, levandule a kouřové dřevo",
+        "Vanilka, levandule a kouřové dřevo.",
+        "Vanilka, levandule a kouřové dřevo",
+        "Vanilka, levandule a kouřové dřevo."
+      ],
+      "zimaya-sharaf-blend-edp": [
+        "Datle, muškátový oříšek a šafrán",
+        "Datle, muškátový oříšek a šafrán.",
+        "Datle, muškátový oříšek a šafrán",
+        "Datle, muškátový oříšek a šafrán."
+      ],
+      "wood": [
+        "Dřevo a kůže nebo tabák a koření",
+        "Vyberte podle uvedených tónů.",
+        "Dřevo a kůže nebo tabák a koření",
+        "Vyberte podle uvedených tónů."
+      ],
+      "mancera-cedrat-boise": [
+        "Citrusy, dřevo a kožené tóny",
+        "Citrusy, dřevo a kožené tóny.",
+        "Citrusy, dřevo a kožené tóny",
+        "Citrusy, dřevo a kožené tóny."
+      ],
+      "spicebomb-extreme-od-viktor-rolf": [
+        "Pepř, tabák a vanilka",
+        "Pepř, tabák a vanilka.",
+        "Pepř, tabák a vanilka",
+        "Pepř, tabák a vanilka."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Které tóny chcete objevovat?",
+        "Vyberte podle doložených tónů.",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Které spojení tónů vás láká?",
+        "Vyberte jeden konkrétní profil.",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "mancera-french-riviera": [
+        "/assets/s3/scenes-k2/ocean-wave.jpg"
+      ],
+      "note-de-yuzu": [
+        "/assets/s5/fragrancesamples/note-de-yuzu.webp"
+      ],
+      "parfums-de-marly-percival-edp": [
+        "/assets/s3/scenes-k2/lavender.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "versace-bright-crystal-absolu": [
+        "/assets/s5/fragrancesamples/versace-bright-crystal-absolu.webp"
+      ],
+      "ysl-libre": [
+        "/assets/s3/scenes-k2/neroli-blossom.jpg"
+      ],
+      "lancome-la-vie-est-belle": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "gourmand": [
+        "/assets/s3/scenes-k2/honey.jpg"
+      ],
+      "jean-paul-gaultier-scandal-eau-de-parfum": [
+        "/assets/s3/scenes-k2/honey.jpg"
+      ],
+      "prada-candy-eau-de-parfum": [
+        "/assets/s5/fragrancesamples/prada-candy-eau-de-parfum.webp"
+      ],
+      "burberry-goddess-intense": [
+        "/assets/s3/scenes-k2/lavender.jpg"
+      ],
+      "zimaya-sharaf-blend-edp": [
+        "/assets/s5/fragrancesamples/zimaya-sharaf-blend-edp.webp"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "mancera-cedrat-boise": [
+        "/assets/s5/fragrancesamples/mancera-cedrat-boise.webp"
+      ],
+      "spicebomb-extreme-od-viktor-rolf": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "navigation:more": [
+        "/assets/s5/fragrancesamples/mancera-french-riviera.webp"
+      ]
+    },
+    "compareProductIds": [
+      "mancera-french-riviera",
+      "prada-candy-eau-de-parfum"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vůně · vzorky · porovnání",
+      "titleSuffix": "výběr vzorku vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce vůní",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vzorek podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi vybrat vzorek vůně podle jeho vkusu.",
+      "lead": "Zákazník si vybere podle doložených tónů a prohlédne si konkrétní 2 ml vzorek s cenou a odkazem. Dvě odlišné kompozice si může porovnat.",
+      "includedChat": "Tóny vůně, balení, ceny a porovnání dvou vůní.",
+      "includedAdvisor": "Preferované tóny a konkrétní profil vůně — na konci 2 ml vzorek.",
+      "greeting": "Vyberte si 2 ml vzorek podle doložených tónů a porovnejte dvě různé kompozice.",
+      "teaserTitle": "Vyberte si vzorek vůně podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít poradce pro výběr vůně",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "mancera-french-riviera": "note-de-yuzu",
+        "note-de-yuzu": "parfums-de-marly-percival-edp",
+        "parfums-de-marly-percival-edp": "mancera-french-riviera",
+        "versace-bright-crystal-absolu": "ysl-libre",
+        "ysl-libre": "lancome-la-vie-est-belle",
+        "lancome-la-vie-est-belle": "versace-bright-crystal-absolu",
+        "jean-paul-gaultier-scandal-eau-de-parfum": "prada-candy-eau-de-parfum",
+        "prada-candy-eau-de-parfum": "burberry-goddess-intense",
+        "burberry-goddess-intense": "zimaya-sharaf-blend-edp",
+        "zimaya-sharaf-blend-edp": "jean-paul-gaultier-scandal-eau-de-parfum",
+        "mancera-cedrat-boise": "spicebomb-extreme-od-viktor-rolf",
+        "spicebomb-extreme-od-viktor-rolf": "mancera-cedrat-boise"
+      }
+    },
+    "companyCss": "/n447/s5/brands/fragrancesamples.css",
+    "fragranceSampleCompare": {
+      "version": 1,
+      "enabled": true
+    }
+  },
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "localQaReport": "../../reports/essentique-fragrancesamples-20261111/local-qa-final-summary.json",
+  "integrationBase": "85ed8bcdc631e42206afe643f694800dcb75f696"
+}

@@ -9,7 +9,8 @@
   if (!REG || !['s4','s5'].includes(REG.series) || !cat || !API) return;
   const cs = (REG.brand && REG.brand.lang) === 'cs', T = (sk, c) => cs ? c : sk;
   const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
-  const list = (cat.products || []).filter((p) => p.available !== false && !p.isSample && p.photo);
+  const verifiedFragranceSample=p=>REG.series==='s5'&&REG.segment==='fragrance'&&REG.fragranceSampleCompare?.version===1&&REG.fragranceSampleCompare.enabled===true&&p.isSample===true&&p.source?.series==='s5'&&p.source.sampleSegment==='fragrance'&&p.source.selectionTraitsEvidence;
+  const list = (cat.products || []).filter((p) => p.available !== false && (!p.isSample || verifiedFragranceSample(p)) && p.photo && !(REG.series==='s5'&&p.source?.resultOnlySupplement===true));
   const byId = new Map(list.map((p) => [String(p.id), p]));
   const tr = (p) => (p.source && p.source.selectionTraits) || {};
   const label = (k) => { const c = (REG.traitCopy || {})[k]; return c ? (cs ? c[2] : c[0]) : ''; };

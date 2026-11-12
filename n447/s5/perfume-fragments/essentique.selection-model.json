@@ -1,0 +1,110 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aké tóny chcete objavovať?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy alebo minerálne tóny",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "orange-x-santal",
+          "label": "Pomaranč, bazalka a santal",
+          "productId": "orange-x-santal",
+          "sourceUrl": "https://www.essentique.sk/orange-x-santal/"
+        },
+        {
+          "value": "the-ghost-in-the-shell",
+          "label": "Yuzu, mliečny akord a jazmín",
+          "productId": "the-ghost-in-the-shell",
+          "sourceUrl": "https://www.essentique.sk/the-ghost-in-the-shell/"
+        },
+        {
+          "value": "ganymede",
+          "label": "Mandarínka a minerálne tóny",
+          "productId": "ganymede",
+          "sourceUrl": "https://www.essentique.sk/ganymede/"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Kvety s hruškou, liči či broskyňou",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "guidance",
+          "label": "Hruška, lieskový orech a ruža",
+          "productId": "guidance",
+          "sourceUrl": "https://www.essentique.sk/guidance/"
+        },
+        {
+          "value": "delina-exclusif",
+          "label": "Liči, ruža a kadidlo",
+          "productId": "delina-exclusif",
+          "sourceUrl": "https://www.essentique.sk/delina-exclusif/"
+        },
+        {
+          "value": "hundred-silent-ways",
+          "label": "Broskyňa, tuberóza a vanilka",
+          "productId": "hundred-silent-ways",
+          "sourceUrl": "https://www.essentique.sk/hundred-silent-ways/"
+        }
+      ]
+    },
+    {
+      "value": "gourmand",
+      "label": "Koňak, vanilka alebo tonka",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "angels-share",
+          "label": "Koňak, škorica a praliné",
+          "productId": "angels-share",
+          "sourceUrl": "https://www.essentique.sk/angels-share/"
+        },
+        {
+          "value": "divine-vanille",
+          "label": "Vanilka, kadidlo a tonka",
+          "productId": "divine-vanille",
+          "sourceUrl": "https://www.essentique.sk/divine-vanille/"
+        },
+        {
+          "value": "arabians-tonka",
+          "label": "Tonka, ruža a oud",
+          "productId": "arabians-tonka",
+          "sourceUrl": "https://www.essentique.sk/arabians-tonka/"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Drevo, korenie alebo Cetalox",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "bois-imperial",
+          "label": "Bazalka a drevité tóny",
+          "productId": "bois-imperial",
+          "sourceUrl": "https://www.essentique.sk/bois-imperial/"
+        },
+        {
+          "value": "eilish-no-2",
+          "label": "Kadidlo, papyrus a čierne korenie",
+          "productId": "eilish-no-2",
+          "sourceUrl": "https://www.essentique.sk/eilish-no-2/"
+        },
+        {
+          "value": "not-a-perfume",
+          "label": "Kompozícia s Cetaloxom",
+          "productId": "not-a-perfume",
+          "sourceUrl": "https://www.essentique.sk/not-a-perfume/"
+        }
+      ]
+    }
+  ]
+}

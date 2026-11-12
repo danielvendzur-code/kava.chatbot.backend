@@ -1,0 +1,45 @@
+{
+  "checkedAt": "2026-11-12T09:36:50.193876+00:00",
+  "scope": "Actual integrated UI + actual local backend with injected offline AI stub. NOT live Preview.",
+  "paidCalls": 0,
+  "companies": [
+    "essentique",
+    "fragrancesamples",
+    "alexmonhart",
+    "flakon",
+    "orion",
+    "inspirovane",
+    "leparfumlechic",
+    "vavavoom",
+    "rafinad"
+  ],
+  "viewports": [
+    {
+      "width": 320,
+      "results": 103,
+      "questionPages": 44,
+      "interactions": 9,
+      "enrichedStates": 103,
+      "errors": [],
+      "report": "/workspace/work/perfume-audit/integrated-nine-20261112/local-320/independent-ui.json"
+    },
+    {
+      "width": 390,
+      "results": 103,
+      "questionPages": 44,
+      "interactions": 9,
+      "enrichedStates": 103,
+      "errors": [],
+      "report": "/workspace/work/perfume-audit/integrated-nine-20261112/local-390/independent-ui.json"
+    },
+    {
+      "width": 1280,
+      "results": 103,
+      "questionPages": 44,
+      "interactions": 9,
+      "enrichedStates": 103,
+      "errors": [],
+      "report": "/workspace/work/perfume-audit/integrated-nine-20261112/local-1280/independent-ui.json"
+    }
+  ]
+}

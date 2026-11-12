@@ -1,0 +1,291 @@
+{
+  "slug": "inspirovane",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "8da593b16063e64660af29506cfb25fdff4affbd",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "INTEGRATED_LOCAL_QA_PENDING",
+  "catalogue": "/catalogues/inspirovane.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Citrusy a máta",
+    "Liči a růže",
+    "Růže a med",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Citrusy a máta",
+      "match": "citrus.*mat",
+      "productIds": [
+        "lanoir-h109-mens-parfum"
+      ]
+    },
+    {
+      "chip": "Liči a růže",
+      "match": "lici.*ruz",
+      "productIds": [
+        "lanoir-f023-womens-parfum"
+      ]
+    },
+    {
+      "chip": "Růže a med",
+      "match": "ruz.*med",
+      "productIds": [
+        "lanoir-u083-unisex-parfum"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "lanoir-h137-mens-parfum",
+    "lanoir-u079-unisex-parfum"
+  ],
+  "addon": null,
+  "budgetQuestion": false,
+  "enableRuntime": true,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Inspirované parfémy",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/inspirovane/logo.png",
+      "header": "/assets/s5/inspirovane/logo.png",
+      "avatar": "/assets/s5/inspirovane/avatar.svg"
+    },
+    "brand": {
+      "name": "Inspirované parfémy",
+      "domain": "inspirovaneparfemy.cz",
+      "website": "https://www.inspirovaneparfemy.cz/",
+      "lang": "cs",
+      "fullName": "Inspirované parfémy",
+      "url": "https://www.inspirovaneparfemy.cz/",
+      "logo": "/assets/s5/inspirovane/logo.png",
+      "mark": "/assets/s5/inspirovane/avatar.svg",
+      "greeting": "Vyberte si inspirovanou vůni podle jejích doložených tónů. Nejde o originály uvedených návrhářských značek.",
+      "quickChips": [
+        "Citrusy a máta",
+        "Liči a růže",
+        "Růže a med",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#483445",
+        "accent": "#483445",
+        "soft": "#fbf2f8",
+        "paper": "#ffffff",
+        "ink": "#29241f",
+        "line": "#eadce6"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy s čajem, mořem či mátou",
+        "Vyberte podle uvedených tónů.",
+        "Citrusy s čajem, mořem či mátou",
+        ""
+      ],
+      "lanoir-h137-mens-parfum": [
+        "Bergamot, zázvor a černý čaj",
+        "Bergamot, zázvor a černý čaj.",
+        "Bergamot, zázvor a černý čaj",
+        "Bergamot, zázvor a černý čaj."
+      ],
+      "lanoir-h136-mens-parfum": [
+        "Grapefruit, zázvor a mořské tóny",
+        "Grapefruit, zázvor a mořské tóny.",
+        "Grapefruit, zázvor a mořské tóny",
+        "Grapefruit, zázvor a mořské tóny."
+      ],
+      "lanoir-h109-mens-parfum": [
+        "Citrusy, máta a dřevité tóny",
+        "Citrusy, máta a dřevité tóny.",
+        "Citrusy, máta a dřevité tóny",
+        "Citrusy, máta a dřevité tóny."
+      ],
+      "floral": [
+        "Květy s ovocem nebo vanilkou",
+        "Vyberte podle uvedených tónů.",
+        "Květy s ovocem nebo vanilkou",
+        ""
+      ],
+      "lanoir-f040-womens-parfum": [
+        "Broskev, malina a jasmín",
+        "Broskev, malina a jasmín.",
+        "Broskev, malina a jasmín",
+        "Broskev, malina a jasmín."
+      ],
+      "lanoir-f047-womens-parfum": [
+        "Jahoda, fialka a tonka",
+        "Jahoda, fialka a tonka.",
+        "Jahoda, fialka a tonka",
+        "Jahoda, fialka a tonka."
+      ],
+      "lanoir-f023-womens-parfum": [
+        "Liči, růže a pivoňka",
+        "Liči, růže a pivoňka.",
+        "Liči, růže a pivoňka",
+        "Liči, růže a pivoňka."
+      ],
+      "gourmand": [
+        "Med nebo ovocně-vanilkové tóny",
+        "Vyberte podle uvedených tónů.",
+        "Med nebo ovocně-vanilkové tóny",
+        ""
+      ],
+      "lanoir-u083-unisex-parfum": [
+        "Růže, med a pižmo",
+        "Růže, med a pižmo.",
+        "Růže, med a pižmo",
+        "Růže, med a pižmo."
+      ],
+      "lanoir-f036-womens-parfum": [
+        "Hruška, květy a vanilka",
+        "Hruška, květy a vanilka.",
+        "Hruška, květy a vanilka",
+        "Hruška, květy a vanilka."
+      ],
+      "wood": [
+        "Hřejivé dřevo, koření nebo pižmo",
+        "Vyberte podle uvedených tónů.",
+        "Hřejivé dřevo, koření nebo pižmo",
+        ""
+      ],
+      "lanoir-u093-unisex-parfum": [
+        "Krémové květy, santal a pižmo",
+        "Krémové květy, santal a pižmo.",
+        "Krémové květy, santal a pižmo",
+        "Krémové květy, santal a pižmo."
+      ],
+      "lanoir-u089-unisex-parfum": [
+        "Malina, oud a kožené tóny",
+        "Malina, oud a kožené tóny.",
+        "Malina, oud a kožené tóny",
+        "Malina, oud a kožené tóny."
+      ],
+      "lanoir-u084-unisex-parfum": [
+        "Růže, šafrán a tonka",
+        "Růže, šafrán a tonka.",
+        "Růže, šafrán a tonka",
+        "Růže, šafrán a tonka."
+      ],
+      "lanoir-u079-unisex-parfum": [
+        "Levandule, vetiver a cedr",
+        "Levandule, vetiver a cedr.",
+        "Levandule, vetiver a cedr",
+        "Levandule, vetiver a cedr."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Které tóny chcete objevovat?",
+        "Vyberte podle doložených tónů.",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Které spojení tónů vás láká?",
+        "Vyberte jeden konkrétní profil.",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "lanoir-h137-mens-parfum": [
+        "/assets/s3/scenes-k2/black-tea.jpg"
+      ],
+      "lanoir-h136-mens-parfum": [
+        "/assets/s3/scenes-k2/ocean-wave.jpg"
+      ],
+      "lanoir-h109-mens-parfum": [
+        "/assets/s3/scenes-k2/mint-herbs.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "lanoir-f040-womens-parfum": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "lanoir-f047-womens-parfum": [
+        "/assets/s5/inspirovane/lanoir-f047-womens-parfum.webp"
+      ],
+      "lanoir-f023-womens-parfum": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "gourmand": [
+        "/assets/s3/scenes-k2/honey.jpg"
+      ],
+      "lanoir-u083-unisex-parfum": [
+        "/assets/s3/scenes-k2/honey.jpg"
+      ],
+      "lanoir-f036-womens-parfum": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "lanoir-u093-unisex-parfum": [
+        "/assets/s3/scenes-k2/neroli-blossom.jpg"
+      ],
+      "lanoir-u089-unisex-parfum": [
+        "/assets/s5/inspirovane/lanoir-u089-unisex-parfum.webp"
+      ],
+      "lanoir-u084-unisex-parfum": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "lanoir-u079-unisex-parfum": [
+        "/assets/s3/scenes-k2/lavender.jpg"
+      ],
+      "navigation:more": [
+        "/assets/s5/inspirovane/lanoir-h137-mens-parfum.webp"
+      ]
+    },
+    "compareProductIds": [
+      "lanoir-h137-mens-parfum",
+      "lanoir-u079-unisex-parfum"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vůně · balení · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce vůní",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi vybrat inspirovanou vůni podle jeho vkusu.",
+      "lead": "Výběr podle doložených tónů vede ke konkrétnímu 50 ml inspirovanému parfému s cenou a odkazem. Nejde o originál uvedené návrhářské značky.",
+      "includedChat": "Tóny inspirovaných kompozic, přesná balení, ceny a porovnání.",
+      "includedAdvisor": "Preferované tóny a konkrétní profil — na konci50ml inspirovaný parfém.",
+      "greeting": "Vyberte si inspirovanou vůni podle jejích doložených tónů. Nejde o originály uvedených návrhářských značek.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít poradce pro výběr vůně",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "lanoir-h137-mens-parfum": "lanoir-h136-mens-parfum",
+        "lanoir-h136-mens-parfum": "lanoir-h109-mens-parfum",
+        "lanoir-h109-mens-parfum": "lanoir-h137-mens-parfum",
+        "lanoir-f040-womens-parfum": "lanoir-f047-womens-parfum",
+        "lanoir-f047-womens-parfum": "lanoir-f023-womens-parfum",
+        "lanoir-f023-womens-parfum": "lanoir-f040-womens-parfum",
+        "lanoir-u083-unisex-parfum": "lanoir-f036-womens-parfum",
+        "lanoir-f036-womens-parfum": "lanoir-u083-unisex-parfum",
+        "lanoir-u093-unisex-parfum": "lanoir-u089-unisex-parfum",
+        "lanoir-u089-unisex-parfum": "lanoir-u084-unisex-parfum",
+        "lanoir-u084-unisex-parfum": "lanoir-u079-unisex-parfum",
+        "lanoir-u079-unisex-parfum": "lanoir-u093-unisex-parfum"
+      }
+    },
+    "companyCss": "/n447/s5/brands/inspirovane.css"
+  },
+  "integrationBase": "85ed8bcdc631e42206afe643f694800dcb75f696"
+}

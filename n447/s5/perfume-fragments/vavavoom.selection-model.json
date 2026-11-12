@@ -1,0 +1,110 @@
+{
+  "key": "fragranceDirection",
+  "question": "Které tóny chcete objevovat?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy a levandule",
+      "key": "fragranceProfile",
+      "question": "Které spojení tónů vás láká?",
+      "options": [
+        {
+          "value": "lime",
+          "label": "Limeta, koriandr a vetiver",
+          "productId": "lime",
+          "sourceUrl": "https://www.vava-voom.cz/products/bohemian-lime?variant=54228820230472"
+        },
+        {
+          "value": "ginger",
+          "label": "Zázvorový květ, mandarinka a magnólie",
+          "productId": "ginger",
+          "sourceUrl": "https://www.vava-voom.cz/products/ingenious-ginger?variant=54228825997640"
+        },
+        {
+          "value": "metal",
+          "label": "Levandule, pižmo a kašmeran",
+          "productId": "metal",
+          "sourceUrl": "https://www.vava-voom.cz/products/metal-lavender?variant=52960624050504"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Květy a jemná dřeva",
+      "key": "fragranceProfile",
+      "question": "Které spojení tónů vás láká?",
+      "options": [
+        {
+          "value": "portrait",
+          "label": "Růže, malina a pačuli",
+          "productId": "portrait",
+          "sourceUrl": "https://www.vava-voom.cz/products/portrait-of-a-lady-2?variant=51510624878920"
+        },
+        {
+          "value": "santal",
+          "label": "Kosatec, santal a tonka",
+          "productId": "santal",
+          "sourceUrl": "https://www.vava-voom.cz/products/santal-austral?variant=50066858410312"
+        },
+        {
+          "value": "shade",
+          "label": "Levandule, myrha a karamel",
+          "productId": "shade",
+          "sourceUrl": "https://www.vava-voom.cz/products/shade-of-blue?variant=54027698438472"
+        }
+      ]
+    },
+    {
+      "value": "gourmand",
+      "label": "Vanilka a sladké akordy",
+      "key": "fragranceProfile",
+      "question": "Které spojení tónů vás láká?",
+      "options": [
+        {
+          "value": "vanilla",
+          "label": "Kokosový pudr, vanilka a palo santo",
+          "productId": "vanilla",
+          "sourceUrl": "https://www.vava-voom.cz/products/vanilla-powder?variant=49790093787464"
+        },
+        {
+          "value": "silky",
+          "label": "Vanilka, tabák a agarové dřevo",
+          "productId": "silky",
+          "sourceUrl": "https://www.vava-voom.cz/products/silky-woods?variant=54228828881224"
+        },
+        {
+          "value": "northern",
+          "label": "Speculoos, vanilka a jasmín",
+          "productId": "northern",
+          "sourceUrl": "https://www.vava-voom.cz/products/northern-love?variant=53936386638152"
+        }
+      ]
+    },
+    {
+      "value": "dark",
+      "label": "Koření, kůže a oud",
+      "key": "fragranceProfile",
+      "question": "Které spojení tónů vás láká?",
+      "options": [
+        {
+          "value": "spicy",
+          "label": "Pepř, kadidlo a cedr",
+          "productId": "spicy",
+          "sourceUrl": "https://www.vava-voom.cz/products/spicy-road?variant=52960493666632"
+        },
+        {
+          "value": "rudis",
+          "label": "Hroznové víno, šafrán a kůže",
+          "productId": "rudis",
+          "sourceUrl": "https://www.vava-voom.cz/products/rudis?variant=50423378084168"
+        },
+        {
+          "value": "east",
+          "label": "Maliny, oud a kůže",
+          "productId": "east",
+          "sourceUrl": "https://www.vava-voom.cz/products/east?variant=52409386959176"
+        }
+      ]
+    }
+  ]
+}

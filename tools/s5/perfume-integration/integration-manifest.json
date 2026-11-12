@@ -1,0 +1,76 @@
+{
+  "createdAt": "2026-11-12T08:03:53.249505+00:00",
+  "owner": "PERFUME_WORKER_INTEGRATION",
+  "authorization": "Owner12Nov: integrate all9prepared examples",
+  "base": "85ed8bcdc631e42206afe643f694800dcb75f696",
+  "sourceCheckpoint": "081ab100893cdf122ea2f51c322ea6020a078c47",
+  "branch": "codex/s5-perfume-integration-20261112",
+  "companies": [
+    {
+      "slug": "essentique",
+      "products": 12,
+      "fragranceFormulas": 12,
+      "sampleCompareOptIn": true,
+      "priceStockPackSourceRefresh": false
+    },
+    {
+      "slug": "fragrancesamples",
+      "products": 12,
+      "fragranceFormulas": 12,
+      "sampleCompareOptIn": true,
+      "priceStockPackSourceRefresh": false
+    },
+    {
+      "slug": "alexmonhart",
+      "products": 7,
+      "fragranceFormulas": 7,
+      "sampleCompareOptIn": false,
+      "priceStockPackSourceRefresh": false
+    },
+    {
+      "slug": "flakon",
+      "products": 12,
+      "fragranceFormulas": 12,
+      "sampleCompareOptIn": true,
+      "priceStockPackSourceRefresh": false
+    },
+    {
+      "slug": "orion",
+      "products": 12,
+      "fragranceFormulas": 12,
+      "sampleCompareOptIn": false,
+      "priceStockPackSourceRefresh": false
+    },
+    {
+      "slug": "inspirovane",
+      "products": 12,
+      "fragranceFormulas": 12,
+      "sampleCompareOptIn": false,
+      "priceStockPackSourceRefresh": false
+    },
+    {
+      "slug": "leparfumlechic",
+      "products": 12,
+      "fragranceFormulas": 12,
+      "sampleCompareOptIn": false,
+      "priceStockPackSourceRefresh": false
+    },
+    {
+      "slug": "vavavoom",
+      "products": 13,
+      "fragranceFormulas": 12,
+      "sampleCompareOptIn": false,
+      "priceStockPackSourceRefresh": true
+    },
+    {
+      "slug": "rafinad",
+      "products": 12,
+      "fragranceFormulas": 12,
+      "sampleCompareOptIn": false,
+      "priceStockPackSourceRefresh": true
+    }
+  ],
+  "coreExpectedSha256": "0d61a957b148db4b9efa3326d162121e5d53c9adc0e05a2702ca273da0ad88e9",
+  "paidCalls": 0,
+  "production": "NOT_DEPLOYED"
+}

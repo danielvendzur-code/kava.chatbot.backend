@@ -1,0 +1,209 @@
+{
+  "essentique": [
+    {
+      "chip": "Pomaranč a santal",
+      "match": "pomaranc.*santal",
+      "productIds": [
+        "orange-x-santal"
+      ]
+    },
+    {
+      "chip": "Hruška a ruža",
+      "match": "hrusk.*ruz",
+      "productIds": [
+        "guidance"
+      ]
+    },
+    {
+      "chip": "Koňak a škorica",
+      "match": "konak.*skoric",
+      "productIds": [
+        "angels-share"
+      ]
+    }
+  ],
+  "fragrancesamples": [
+    {
+      "chip": "Citrusy a moře",
+      "match": "citrus.*more",
+      "productIds": [
+        "mancera-french-riviera"
+      ]
+    },
+    {
+      "chip": "Med a gardénie",
+      "match": "med.*garden",
+      "productIds": [
+        "jean-paul-gaultier-scandal-eau-de-parfum"
+      ]
+    },
+    {
+      "chip": "Karamel a pižmo",
+      "match": "karamel.*pizm",
+      "productIds": [
+        "prada-candy-eau-de-parfum"
+      ]
+    }
+  ],
+  "alexmonhart": [
+    {
+      "chip": "Grapefruit a santal",
+      "match": "grapefruit.*santal",
+      "productIds": [
+        "the-thinker"
+      ]
+    },
+    {
+      "chip": "Mandle a bílé květy",
+      "match": "mandl.*bil.*kvet",
+      "productIds": [
+        "the-minimalist"
+      ]
+    },
+    {
+      "chip": "Oudové dřevo a kůže",
+      "match": "oud.*drev.*kuz",
+      "productIds": [
+        "the-blasphemer"
+      ]
+    }
+  ],
+  "flakon": [
+    {
+      "chip": "Citrusy a mäta",
+      "match": "citrus.*mat",
+      "productIds": [
+        "xerjoff-torino21"
+      ]
+    },
+    {
+      "chip": "Káva a čokoláda",
+      "match": "kav.*cokolad",
+      "productIds": [
+        "parfums-dusita---mocha-absolu"
+      ]
+    },
+    {
+      "chip": "Ruža a vanilka",
+      "match": "ruz.*vanilk",
+      "productIds": [
+        "lush-vanillary-rose-oudh"
+      ]
+    }
+  ],
+  "orion": [
+    {
+      "chip": "Bergamot a grapefruit",
+      "match": "bergamot.*grapefruit",
+      "productIds": [
+        "p137008"
+      ]
+    },
+    {
+      "chip": "Koňak a škorica",
+      "match": "konak.*skoric",
+      "productIds": [
+        "p125061"
+      ]
+    },
+    {
+      "chip": "Ruža a kadidlo",
+      "match": "ruz.*kadidl",
+      "productIds": [
+        "p18465"
+      ]
+    }
+  ],
+  "inspirovane": [
+    {
+      "chip": "Citrusy a máta",
+      "match": "citrus.*mat",
+      "productIds": [
+        "lanoir-h109-mens-parfum"
+      ]
+    },
+    {
+      "chip": "Liči a růže",
+      "match": "lici.*ruz",
+      "productIds": [
+        "lanoir-f023-womens-parfum"
+      ]
+    },
+    {
+      "chip": "Růže a med",
+      "match": "ruz.*med",
+      "productIds": [
+        "lanoir-u083-unisex-parfum"
+      ]
+    }
+  ],
+  "leparfumlechic": [
+    {
+      "chip": "Lavandin z Grasse",
+      "match": "lavandin.*grasse",
+      "productIds": [
+        "metal"
+      ]
+    },
+    {
+      "chip": "Vanilka a škorica",
+      "match": "vanilk.*skoric",
+      "productIds": [
+        "divine"
+      ]
+    },
+    {
+      "chip": "Rum a káva",
+      "match": "rum.*kav",
+      "productIds": [
+        "phantom"
+      ]
+    }
+  ],
+  "vavavoom": [
+    {
+      "chip": "Levandule a pižmo",
+      "match": "levandul.*pizmo",
+      "productIds": [
+        "metal"
+      ]
+    },
+    {
+      "chip": "Vanilka a kokos",
+      "match": "vanilk.*kokos",
+      "productIds": [
+        "vanilla"
+      ]
+    },
+    {
+      "chip": "Pepř a kadidlo",
+      "match": "pepr.*kadidlo",
+      "productIds": [
+        "spicy"
+      ]
+    }
+  ],
+  "rafinad": [
+    {
+      "chip": "Limeta a zázvor",
+      "match": "limet.*zazvor",
+      "productIds": [
+        "ginger"
+      ]
+    },
+    {
+      "chip": "Pistácie a mandle",
+      "match": "pistaci.*mandl",
+      "productIds": [
+        "mirage"
+      ]
+    },
+    {
+      "chip": "Káva a čokoláda",
+      "match": "kav.*cokolad",
+      "productIds": [
+        "mocha"
+      ]
+    }
+  ]
+}

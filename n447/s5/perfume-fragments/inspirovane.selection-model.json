@@ -1,0 +1,110 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaké tóny chcete objevovat?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy s čajem, mořem či mátou",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "lanoir-h137-mens-parfum",
+          "label": "Bergamot, zázvor a černý čaj",
+          "productId": "lanoir-h137-mens-parfum",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-h137-mens-parfum/"
+        },
+        {
+          "value": "lanoir-h136-mens-parfum",
+          "label": "Grapefruit, zázvor a mořské tóny",
+          "productId": "lanoir-h136-mens-parfum",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-h136-mens-parfum/"
+        },
+        {
+          "value": "lanoir-h109-mens-parfum",
+          "label": "Citrusy, máta a dřevité tóny",
+          "productId": "lanoir-h109-mens-parfum",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-h109-mens-parfum/"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Květy s ovocem nebo vanilkou",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "lanoir-f040-womens-parfum",
+          "label": "Broskev, malina a jasmín",
+          "productId": "lanoir-f040-womens-parfum",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-f040-womens-parfum/"
+        },
+        {
+          "value": "lanoir-f047-womens-parfum",
+          "label": "Jahoda, fialka a tonka",
+          "productId": "lanoir-f047-womens-parfum",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-f047-womens-parfum/"
+        },
+        {
+          "value": "lanoir-f023-womens-parfum",
+          "label": "Liči, růže a pivoňka",
+          "productId": "lanoir-f023-womens-parfum",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-f023-womens-parfum/"
+        }
+      ]
+    },
+    {
+      "value": "gourmand",
+      "label": "Med nebo ovocně-vanilkové tóny",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "lanoir-u083-unisex-parfum",
+          "label": "Růže, med a pižmo",
+          "productId": "lanoir-u083-unisex-parfum",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u083-unisex-parfum/"
+        },
+        {
+          "value": "lanoir-f036-womens-parfum",
+          "label": "Hruška, květy a vanilka",
+          "productId": "lanoir-f036-womens-parfum",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-f036-womens-parfum/"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Hřejivé dřevo, koření nebo pižmo",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "lanoir-u093-unisex-parfum",
+          "label": "Krémové květy, santal a pižmo",
+          "productId": "lanoir-u093-unisex-parfum",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u093-unisex-parfum/"
+        },
+        {
+          "value": "lanoir-u089-unisex-parfum",
+          "label": "Malina, oud a kožené tóny",
+          "productId": "lanoir-u089-unisex-parfum",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u089-unisex-parfum/"
+        },
+        {
+          "value": "lanoir-u084-unisex-parfum",
+          "label": "Růže, šafrán a tonka",
+          "productId": "lanoir-u084-unisex-parfum",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u084-unisex-parfum/"
+        },
+        {
+          "value": "lanoir-u079-unisex-parfum",
+          "label": "Levandule, vetiver a cedr",
+          "productId": "lanoir-u079-unisex-parfum",
+          "sourceUrl": "https://www.inspirovaneparfemy.cz/lanoir-u079-unisex-parfum/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,291 @@
+{
+  "slug": "orion",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "8da593b16063e64660af29506cfb25fdff4affbd",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "INTEGRATED_LOCAL_QA_PENDING",
+  "catalogue": "/catalogues/orion.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Bergamot a grapefruit",
+    "Koňak a škorica",
+    "Ruža a kadidlo",
+    "Porovnať dve vône"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Bergamot a grapefruit",
+      "match": "bergamot.*grapefruit",
+      "productIds": [
+        "p137008"
+      ]
+    },
+    {
+      "chip": "Koňak a škorica",
+      "match": "konak.*skoric",
+      "productIds": [
+        "p125061"
+      ]
+    },
+    {
+      "chip": "Ruža a kadidlo",
+      "match": "ruz.*kadidl",
+      "productIds": [
+        "p18465"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "p137008",
+    "p118584"
+  ],
+  "addon": null,
+  "budgetQuestion": false,
+  "enableRuntime": true,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Parfuméria ORION",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/orion/logo.png",
+      "header": "/assets/s5/orion/logo.png",
+      "avatar": "/assets/s5/orion/avatar.svg"
+    },
+    "brand": {
+      "name": "Parfuméria ORION",
+      "domain": "parfumeria-orion.sk",
+      "website": "https://parfumeria-orion.sk/",
+      "lang": "sk",
+      "fullName": "Parfuméria ORION",
+      "url": "https://parfumeria-orion.sk/",
+      "logo": "/assets/s5/orion/logo.png",
+      "mark": "/assets/s5/orion/avatar.svg",
+      "greeting": "Vyberte si vôňu podľa doložených tónov a porovnajte dve rôzne kompozície.",
+      "quickChips": [
+        "Bergamot a grapefruit",
+        "Koňak a škorica",
+        "Ruža a kadidlo",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#75601f",
+        "accent": "#75601f",
+        "soft": "#f7f3e8",
+        "paper": "#ffffff",
+        "ink": "#29241f",
+        "line": "#e6dece"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, čaj alebo zelené tóny",
+        "Vyberte podľa uvedených tónov.",
+        "Citrusy, čaj alebo zelené tóny",
+        ""
+      ],
+      "p137008": [
+        "Bergamot, grapefruit a vetiver",
+        "Bergamot, grapefruit a vetiver.",
+        "Bergamot, grapefruit a vetiver",
+        "Bergamot, grapefruit a vetiver."
+      ],
+      "p129062": [
+        "Matcha, jahoda a čierny čaj",
+        "Matcha, jahoda a čierny čaj.",
+        "Matcha, jahoda a čierny čaj",
+        "Matcha, jahoda a čierny čaj."
+      ],
+      "p132310": [
+        "Grapefruit, marhuľa a jablko",
+        "Grapefruit, marhuľa a jablko.",
+        "Grapefruit, marhuľa a jablko",
+        "Grapefruit, marhuľa a jablko."
+      ],
+      "floral": [
+        "Kvety s ovocím alebo pižmom",
+        "Vyberte podľa uvedených tónov.",
+        "Kvety s ovocím alebo pižmom",
+        ""
+      ],
+      "p67840": [
+        "Sakura, jazmín a pižmo",
+        "Sakura, jazmín a pižmo.",
+        "Sakura, jazmín a pižmo",
+        "Sakura, jazmín a pižmo."
+      ],
+      "p122810": [
+        "Datle, jazmín a santal",
+        "Datle, jazmín a santal.",
+        "Datle, jazmín a santal",
+        "Datle, jazmín a santal."
+      ],
+      "p127072": [
+        "Hruška, fialka a pralinka",
+        "Hruška, fialka a pralinka.",
+        "Hruška, fialka a pralinka",
+        "Hruška, fialka a pralinka."
+      ],
+      "gourmand": [
+        "Koňak, korenie alebo kakao",
+        "Vyberte podľa uvedených tónov.",
+        "Koňak, korenie alebo kakao",
+        ""
+      ],
+      "p125061": [
+        "Koňak, škorica a pralinka",
+        "Koňak, škorica a pralinka.",
+        "Koňak, škorica a pralinka",
+        "Koňak, škorica a pralinka."
+      ],
+      "p115189": [
+        "Datle, škorica a tonka",
+        "Datle, škorica a tonka.",
+        "Datle, škorica a tonka",
+        "Datle, škorica a tonka."
+      ],
+      "p133760": [
+        "Černica, kakao a vanilka",
+        "Černica, kakao a vanilka.",
+        "Černica, kakao a vanilka",
+        "Černica, kakao a vanilka."
+      ],
+      "wood": [
+        "Drevo, koža alebo kadidlo",
+        "Vyberte podľa uvedených tónov.",
+        "Drevo, koža alebo kadidlo",
+        ""
+      ],
+      "p360": [
+        "Oud, citrusy a santal",
+        "Oud, citrusy a santal.",
+        "Oud, citrusy a santal",
+        "Oud, citrusy a santal."
+      ],
+      "p18465": [
+        "Ruža, koža a kadidlo",
+        "Ruža, koža a kadidlo.",
+        "Ruža, koža a kadidlo",
+        "Ruža, koža a kadidlo."
+      ],
+      "p118584": [
+        "Jablko, biele kvety a drevo",
+        "Jablko, biele kvety a drevo.",
+        "Jablko, biele kvety a drevo",
+        "Jablko, biele kvety a drevo."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aké tóny chcete objavovať?",
+        "Vyberte podľa doložených tónov.",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktoré tóny vás lákajú?",
+        "Vyberte jeden profil.",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "p137008": [
+        "/assets/s3/scenes-k2/grapefruit.jpg"
+      ],
+      "p129062": [
+        "/assets/s3/scenes-k2/matcha.jpg"
+      ],
+      "p132310": [
+        "/assets/s3/scenes-k2/apricots.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "p67840": [
+        "/assets/s3/scenes-k2/cherry-blossom.jpg"
+      ],
+      "p122810": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "p127072": [
+        "/assets/s5/orion/p127072.webp"
+      ],
+      "gourmand": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "p125061": [
+        "/assets/s3/scenes-k2/cinnamon.jpg"
+      ],
+      "p115189": [
+        "/assets/s5/orion/p115189.webp"
+      ],
+      "p133760": [
+        "/assets/s3/scenes-k2/cocoa.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "p360": [
+        "/assets/s3/scenes-k2/orange-slices.jpg"
+      ],
+      "p18465": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "p118584": [
+        "/assets/s5/orion/p118584.webp"
+      ],
+      "navigation:more": [
+        "/assets/s5/orion/p137008.webp"
+      ]
+    },
+    "compareProductIds": [
+      "p137008",
+      "p118584"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vône · balenie · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi vybrať vôňu podľa jeho vkusu.",
+      "lead": "Zákazník si vyberie podľa doložených tónov a pozrie si konkrétnu vôňu s cenou, balením a odkazom. Dve odlišné kompozície si môže porovnať.",
+      "includedChat": "Tóny vône, balenia, ceny a porovnanie dvoch vôní.",
+      "includedAdvisor": "Preferované tóny a konkrétny profil vône — na konci konkrétny výrobok.",
+      "greeting": "Vyberte si vôňu podľa doložených tónov a porovnajte dve rôzne kompozície.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "p137008": "p129062",
+        "p129062": "p132310",
+        "p132310": "p137008",
+        "p67840": "p122810",
+        "p122810": "p127072",
+        "p127072": "p67840",
+        "p125061": "p115189",
+        "p115189": "p133760",
+        "p133760": "p125061",
+        "p360": "p18465",
+        "p18465": "p118584",
+        "p118584": "p360"
+      }
+    },
+    "companyCss": "/n447/s5/brands/orion.css"
+  },
+  "integrationBase": "85ed8bcdc631e42206afe643f694800dcb75f696"
+}

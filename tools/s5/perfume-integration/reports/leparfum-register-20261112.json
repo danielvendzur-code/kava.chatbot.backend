@@ -1,0 +1,21 @@
+{
+  "sourceUrl": "https://api.statistics.sk/rpo/v1/search?identifier=51786796",
+  "checkedAt": "2026-11-12T08:00:18.804941+00:00",
+  "status": 200,
+  "id": 9617606,
+  "identifiers": [
+    {
+      "value": "51786796",
+      "validFrom": "2018-06-11"
+    }
+  ],
+  "currentName": [
+    {
+      "value": "Lukáš Roth - Le Parfum & Le Chic",
+      "validFrom": "2018-07-24"
+    }
+  ],
+  "establishment": "2018-06-11",
+  "endDateReturned": null,
+  "scope": "Current official search identifies operator and current name; no unreturned dissolution field invented. VAT schema conflict remains documented, visible final price follows published VAT-inclusive terms without tax recomputation."
+}

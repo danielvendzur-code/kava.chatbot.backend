@@ -1,0 +1,300 @@
+{
+  "slug": "leparfumlechic",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "6f6a3e35cc79738b965a12e26666e60719f84628",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "INTEGRATED_LOCAL_QA_PENDING",
+  "catalogue": "/catalogues/leparfumlechic.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Lavandin z Grasse",
+    "Vanilka a škorica",
+    "Rum a káva",
+    "Porovnať dve vône"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Lavandin z Grasse",
+      "match": "lavandin.*grasse",
+      "productIds": [
+        "metal"
+      ]
+    },
+    {
+      "chip": "Vanilka a škorica",
+      "match": "vanilk.*skoric",
+      "productIds": [
+        "divine"
+      ]
+    },
+    {
+      "chip": "Rum a káva",
+      "match": "rum.*kav",
+      "productIds": [
+        "phantom"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "vodka",
+    "angels"
+  ],
+  "addon": {
+    "type": "explicit-optional-smaller-same-composition-SKU",
+    "eligibleProducts": [
+      "bois"
+    ],
+    "defaultChecked": false,
+    "notNewFormula": true
+  },
+  "budgetQuestion": false,
+  "enableRuntime": true,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "resultExtrasStatus": "REVIEW_MODULE_OFFLINE_ONLY_PENDING_MAIN_IMPORT_AND_PREVIEW",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Le Parfum & Le Chic",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/leparfumlechic/logo.png",
+      "header": "/assets/s5/leparfumlechic/logo.png",
+      "avatar": "/assets/s5/leparfumlechic/avatar.svg"
+    },
+    "brand": {
+      "name": "Le Parfum & Le Chic",
+      "domain": "leparfumlechic.sk",
+      "website": "https://www.leparfumlechic.sk/",
+      "lang": "sk",
+      "fullName": "Le Parfum & Le Chic",
+      "url": "https://www.leparfumlechic.sk/",
+      "logo": "/assets/s5/leparfumlechic/logo.png",
+      "mark": "/assets/s5/leparfumlechic/avatar.svg",
+      "greeting": "Vyberte si vôňu podľa doložených tónov. Pozrite si presné balenie, cenu a porovnanie dvoch rôznych kompozícií.",
+      "quickChips": [
+        "Lavandin z Grasse",
+        "Vanilka a škorica",
+        "Rum a káva",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#725b31",
+        "accent": "#725b31",
+        "soft": "#f8f3e8",
+        "paper": "#ffffff",
+        "ink": "#2d271d",
+        "line": "#e8dfcd"
+      }
+    },
+    "traitCopy": {
+      "herbal": [
+        "Byliny a svieže korenie",
+        "Vyberte podľa uvedených tónov.",
+        "Byliny a svieže korenie",
+        ""
+      ],
+      "metal": [
+        "Lavandin z Grasse",
+        "Lavandin z Grasse.",
+        "Lavandin z Grasse",
+        "Lavandin z Grasse."
+      ],
+      "vodka": [
+        "Kardamóm, konvalinka a mach",
+        "Kardamóm, konvalinka a mach.",
+        "Kardamóm, konvalinka a mach",
+        "Kardamóm, konvalinka a mach."
+      ],
+      "olimpo": [
+        "Pomaranč, tymian a oud",
+        "Pomaranč, tymian a oud.",
+        "Pomaranč, tymian a oud",
+        "Pomaranč, tymian a oud."
+      ],
+      "floral": [
+        "Kvety a krémové akordy",
+        "Vyberte podľa uvedených tónov.",
+        "Kvety a krémové akordy",
+        ""
+      ],
+      "velvet": [
+        "Kosatec, santal a kožené tóny",
+        "Kosatec, santal a kožené tóny.",
+        "Kosatec, santal a kožené tóny",
+        "Kosatec, santal a kožené tóny."
+      ],
+      "rolling": [
+        "Mandľové mlieko, kosatec a pižmo",
+        "Mandľové mlieko, kosatec a pižmo.",
+        "Mandľové mlieko, kosatec a pižmo",
+        "Mandľové mlieko, kosatec a pižmo."
+      ],
+      "rosso": [
+        "Ruža, jazmín a mandle",
+        "Ruža, jazmín a mandle.",
+        "Ruža, jazmín a mandle",
+        "Ruža, jazmín a mandle."
+      ],
+      "gourmand": [
+        "Vanilka, rum alebo koňak",
+        "Vyberte podľa uvedených tónov.",
+        "Vanilka, rum alebo koňak",
+        ""
+      ],
+      "divine": [
+        "Vanilka, škorica a tonka",
+        "Vanilka, škorica a tonka.",
+        "Vanilka, škorica a tonka",
+        "Vanilka, škorica a tonka."
+      ],
+      "phantom": [
+        "Rum, karamel a káva",
+        "Rum, karamel a káva.",
+        "Rum, karamel a káva",
+        "Rum, karamel a káva."
+      ],
+      "angels": [
+        "Koňak, škorica a dub",
+        "Koňak, škorica a dub.",
+        "Koňak, škorica a dub",
+        "Koňak, škorica a dub."
+      ],
+      "wood": [
+        "Drevo či hašišový akord",
+        "Vyberte podľa uvedených tónov.",
+        "Drevo či hašišový akord",
+        ""
+      ],
+      "bois": [
+        "Bazalka, timutské korenie a vetiver",
+        "Bazalka, timutské korenie a vetiver.",
+        "Bazalka, timutské korenie a vetiver",
+        "Bazalka, timutské korenie a vetiver."
+      ],
+      "giardino": [
+        "Kadidlo, šafrán a cédrové drevo",
+        "Kadidlo, šafrán a cédrové drevo.",
+        "Kadidlo, šafrán a cédrové drevo",
+        "Kadidlo, šafrán a cédrové drevo."
+      ],
+      "afgano": [
+        "Hašišový vonný akord",
+        "Hašišový vonný akord.",
+        "Hašišový vonný akord",
+        "Hašišový vonný akord."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aké tóny chcete objavovať?",
+        "Vyberte podľa doložených tónov.",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktoré tóny vás lákajú?",
+        "Vyberte jeden profil.",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "herbal": [
+        "/assets/s3/scenes-k2/lavender.jpg"
+      ],
+      "metal": [
+        "/assets/s3/scenes-k2/lavender-bunch.jpg"
+      ],
+      "vodka": [
+        "/assets/s5/leparfumlechic/vodka.webp"
+      ],
+      "olimpo": [
+        "/assets/s3/scenes-k2/orange-slices.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "velvet": [
+        "/assets/s5/leparfumlechic/velvet.webp"
+      ],
+      "rolling": [
+        "/assets/s3/scenes-k2/almonds.jpg"
+      ],
+      "rosso": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "gourmand": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "divine": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "phantom": [
+        "/assets/s3/scenes-k2/coffee-beans.jpg"
+      ],
+      "angels": [
+        "/assets/s3/scenes-k2/cinnamon.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "bois": [
+        "/assets/s5/leparfumlechic/bois.webp"
+      ],
+      "giardino": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "afgano": [
+        "/assets/s5/leparfumlechic/afgano.webp"
+      ],
+      "navigation:more": [
+        "/assets/s5/leparfumlechic/metal.webp"
+      ]
+    },
+    "compareProductIds": [
+      "vodka",
+      "angels"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vône · balenie · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu podľa jeho vkusu.",
+      "lead": "Výber podľa doložených tónov vedie ku konkrétnej vôni s cenou, balením a odkazom. Pri Bois Impérial si môže dobrovoľne pridať aj menšie balenie.",
+      "includedChat": "Doložené tóny, presné balenia, ceny a porovnanie dvoch vôní.",
+      "includedAdvisor": "Vonné tóny a konkrétny profil — na konci konkrétna kompozícia.",
+      "greeting": "Vyberte si vôňu podľa doložených tónov. Pozrite si presné balenie, cenu a porovnanie dvoch rôznych kompozícií.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "metal": "vodka",
+        "vodka": "olimpo",
+        "olimpo": "metal",
+        "velvet": "rolling",
+        "rolling": "rosso",
+        "rosso": "velvet",
+        "divine": "phantom",
+        "phantom": "angels",
+        "angels": "divine",
+        "bois": "giardino",
+        "giardino": "afgano",
+        "afgano": "bois"
+      }
+    },
+    "companyCss": "/n447/s5/brands/leparfumlechic.css"
+  },
+  "integrationBase": "85ed8bcdc631e42206afe643f694800dcb75f696"
+}

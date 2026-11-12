@@ -1,0 +1,1203 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.rafinad = {
+ "brand": "RAFINAD Parfumerie",
+ "domain": "rafinadparfumerie.com",
+ "operator": {
+  "name": "RAFINAD s.r.o.",
+  "ico": "01413911",
+  "vatId": "CZ01413911",
+  "country": "CZ"
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "cs",
+ "country": "CZ",
+ "currency": "EUR",
+ "products": [
+  {
+   "id": "ginger",
+   "name": "James Heeley – Zeste de Gingembre",
+   "url": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums",
+   "priceAmount": 145.0,
+   "price": "145 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Limeta, čerstvý zázvor a růžový pepř.",
+   "reason": "Limeta, čerstvý zázvor a růžový pepř.",
+   "photo": "/assets/s5/rafinad/ginger.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums",
+    "verifiedAt": "2026-11-11T20:29:21.191742+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official public product structured Offer availability InStock; not buy-button, unit quantity or shipping inference",
+     "sku": "3700490501229",
+     "availabilityUrl": "https://schema.org/InStock",
+     "sourceUrl": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums",
+     "checkedAt": "2026-11-11T20:29:21.191742+00:00"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 145.0,
+     "currency": "EUR",
+     "sourceUrl": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums",
+     "visibleSsrPrice": "€145.00",
+     "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+     "vatEvidence": "Official PRICE: Prices are shown inclusive of tax and excluding handling and shipping costs."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sku": "3700490501229",
+     "title": "Zeste de Gingembre 100 ml | James Heeley",
+     "scope": "Explicit title and product description agree"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "variantSelectionRequired": false,
+    "photoUrl": "https://static.wixstatic.com/media/c72c4b_6fbb593ee3d04622b42f32c489d99baa~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/c72c4b_6fbb593ee3d04622b42f32c489d99baa~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+     "width": 500,
+     "height": 500,
+     "sha256": "6799976f643bedad622f9b7eab9161a0d596fe8f040a78b145b64ded14a78835",
+     "checkedAt": "2026-11-11T20:39:02.866616+00:00",
+     "visualReview": "PERFUME_WORKER actually inspected all12official formula photos in two source sheets11Nov2026. SKU/formula identities distinct; exact packs from title/prose, not inferred from photos."
+    },
+    "photoMeaning": "Official primary SKU illustration. No ingredient inference from props; exact ml from title/prose.",
+    "scent": "Limeta, čerstvý zázvor a růžový pepř.",
+    "officialProductTitle": "Zeste de Gingembre 100 ml | James Heeley",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "ginger"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums",
+     "navigationLabel": "Limeta, čerstvý zázvor a růžový pepř",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "fragrance": {
+     "notesEvidence": {
+      "url": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums",
+      "sourceText": "Top notes \nLime, orange zest \nHeart notes \nFresh ginger \nBase notes \nPink pepper, cardamon",
+      "scope": "Original official English factual note list only; no copyrighted marketing narrative, intensity, occasion or effects.",
+      "displayText": "Hlava: limetka, pomerančová kůra; Srdce: čerstvý zázvor; Základ: růžový pepř, kardamom",
+      "displayLanguage": "cs",
+      "translatedFrom": "en",
+      "translationScope": "Faithful editorial translation of literal official note list, original English preserved for audit; no added notes."
+     },
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "originalSourceSha256": "9c16d30c3cfc12713ee058343fcb60822e0e982c7f42a9caaeb2853d95c82c2c",
+    "latestPriceStockPackRefresh": {
+     "checkedAt": "2026-11-12T07:20:20.598068+00:00",
+     "sourceSha256": "74f6caded9fa1cac494f218c5e1d289f5b4a27c36217959237d79137bc79fcba",
+     "priceAmount": 145.0,
+     "available": true,
+     "pack": "100 ml",
+     "matchesPackage": true,
+     "url": "https://www.rafinadparfumerie.com/product-page/zeste-de-gingembre-heeley-parfums"
+    }
+   }
+  },
+  {
+   "id": "ete",
+   "name": "Baron Filou – L'Ete du Baron",
+   "url": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou",
+   "priceAmount": 115.0,
+   "price": "115 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Citrón, čaj a neroli.",
+   "reason": "Citrón, čaj a neroli.",
+   "photo": "/assets/s5/rafinad/ete.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou",
+    "verifiedAt": "2026-11-11T20:29:27.441987+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official public product structured Offer availability InStock; not buy-button, unit quantity or shipping inference",
+     "sku": "9010733163744",
+     "availabilityUrl": "https://schema.org/InStock",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou",
+     "checkedAt": "2026-11-11T20:29:27.441987+00:00"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 115.0,
+     "currency": "EUR",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou",
+     "visibleSsrPrice": "115,00 €",
+     "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+     "vatEvidence": "Official PRICE: Prices are shown inclusive of tax and excluding handling and shipping costs."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sku": "9010733163744",
+     "title": "L'Ete du Baron 50 ml | Baron Filou",
+     "scope": "Explicit title and product description agree"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "variantSelectionRequired": false,
+    "photoUrl": "https://static.wixstatic.com/media/c72c4b_4a40c658763f480183c488b054c081ed~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/c72c4b_4a40c658763f480183c488b054c081ed~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+     "width": 500,
+     "height": 500,
+     "sha256": "0a73197bbc1fea0cad6befa71b10d25169bc63f3cfa521143922cc2ccd6fbc07",
+     "checkedAt": "2026-11-11T20:39:03.297412+00:00",
+     "visualReview": "PERFUME_WORKER actually inspected all12official formula photos in two source sheets11Nov2026. SKU/formula identities distinct; exact packs from title/prose, not inferred from photos."
+    },
+    "photoMeaning": "Official primary SKU illustration. No ingredient inference from props; exact ml from title/prose.",
+    "scent": "Citrón, čaj a neroli.",
+    "officialProductTitle": "L'Ete du Baron 50 ml | Baron Filou",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "ete"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou",
+     "navigationLabel": "Citrón, čaj a neroli",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "fragrance": {
+     "notesEvidence": {
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou",
+      "sourceText": "Top notes \nLemon, Bergamot, Ginger, Nutmeg, Lavender, Black Pepper \nHeart notes \nTea, Neroli, Cinnamon, Geranium \nBase Notes \nMusk, Amber, Olibanum, Guaiac Wood",
+      "scope": "Original official English factual note list only; no copyrighted marketing narrative, intensity, occasion or effects.",
+      "displayText": "Hlava: citrón, bergamot, zázvor, muškátový oříšek, levandule, černý pepř; Srdce: čaj, neroli, skořice, pelargónie; Základ: pižmo, ambra, kadidlo, guajakové dřevo",
+      "displayLanguage": "cs",
+      "translatedFrom": "en",
+      "translationScope": "Faithful editorial translation of literal official note list, original English preserved for audit; no added notes."
+     },
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "originalSourceSha256": "f3c6bc1bd46b30674d8ee6ae3a4d637e91fb1cb58943f8ba1b91b5d6efcc717e",
+    "latestPriceStockPackRefresh": {
+     "checkedAt": "2026-11-12T07:20:20.600741+00:00",
+     "sourceSha256": "b6b01d55cfa9f98c5849a0bb23da1deb87b231d886b732d2a6474ff39823c956",
+     "priceAmount": 115.0,
+     "available": true,
+     "pack": "50 ml",
+     "matchesPackage": true,
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/l-ete-du-baron-50-ml-baron-filou"
+    }
+   }
+  },
+  {
+   "id": "pacific",
+   "name": "Goldfield and Banks – Pacific Rock Swell",
+   "url": "https://www.rafinadparfumerie.com/cs/product-page/pacific-rock-swell-100-ml-goldfield-and-banks",
+   "priceAmount": 245.0,
+   "price": "245 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Mořské řasy, šalvěj a šedá ambra.",
+   "reason": "Mořské řasy, šalvěj a šedá ambra.",
+   "photo": "/assets/s5/rafinad/pacific.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rafinadparfumerie.com/cs/product-page/pacific-rock-swell-100-ml-goldfield-and-banks",
+    "verifiedAt": "2026-11-11T20:29:28.570040+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official public product structured Offer availability InStock; not buy-button, unit quantity or shipping inference",
+     "sku": "9356353002354",
+     "availabilityUrl": "https://schema.org/InStock",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/pacific-rock-swell-100-ml-goldfield-and-banks",
+     "checkedAt": "2026-11-11T20:29:28.570040+00:00"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 245.0,
+     "currency": "EUR",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/pacific-rock-swell-100-ml-goldfield-and-banks",
+     "visibleSsrPrice": "245,00 €",
+     "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+     "vatEvidence": "Official PRICE: Prices are shown inclusive of tax and excluding handling and shipping costs."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sku": "9356353002354",
+     "title": "Pacific Rock Swell 100 ml | Goldfield and Banks",
+     "scope": "Explicit title and product description agree"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "variantSelectionRequired": false,
+    "photoUrl": "https://static.wixstatic.com/media/c72c4b_1601ab856c0240de869b56c2133133e2~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/c72c4b_1601ab856c0240de869b56c2133133e2~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+     "width": 500,
+     "height": 500,
+     "sha256": "b2a7002256db95940325ff74d91332b191dd37708a2cdc8eda5133ac88c6c7fe",
+     "checkedAt": "2026-11-11T20:39:03.746978+00:00",
+     "visualReview": "PERFUME_WORKER actually inspected all12official formula photos in two source sheets11Nov2026. SKU/formula identities distinct; exact packs from title/prose, not inferred from photos."
+    },
+    "photoMeaning": "Official primary SKU illustration. No ingredient inference from props; exact ml from title/prose.",
+    "scent": "Mořské řasy, šalvěj a šedá ambra.",
+    "officialProductTitle": "Pacific Rock Swell 100 ml | Goldfield and Banks",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "pacific"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/pacific-rock-swell-100-ml-goldfield-and-banks",
+     "navigationLabel": "Mořské řasy, šalvěj a šedá ambra",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "fragrance": {
+     "notesEvidence": {
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/pacific-rock-swell-100-ml-goldfield-and-banks",
+      "sourceText": "Top notes (Sunrise) \nBergamot Oil, Cardamom Oil, Clary Sage Oil \nHeart notes (Summit) \nSeaweed, Clary Sage Absolute, Geranium Oil, Mimosa Absolute, Fir Balsam Absolute, Labdanum Absolute \nBase Notes (Sunset) \nYlang-Ylang Oil Madagascar, Patchouli Oil, Sandalwood Australia Oil, Ambergris",
+      "scope": "Original official English factual note list only; no copyrighted marketing narrative, intensity, occasion or effects.",
+      "displayText": "Hlava: bergamotový olej, kardamomový olej, olej šalvěje muškátové; Srdce: mořské řasy, absolut šalvěje muškátové, pelargoniový olej, mimózový absolut, absolut jedlového balzámu, labdanový absolut; Základ: olej ylang-ylang z Madagaskaru, pačuliový olej, australský santalový olej, šedá ambra",
+      "displayLanguage": "cs",
+      "translatedFrom": "en",
+      "translationScope": "Faithful editorial translation of literal official note list, original English preserved for audit; no added notes."
+     },
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum"
+    },
+    "complementForProductUrls": [],
+    "originalSourceSha256": "8c5330ec06f18a1f4eb13a6795a8e3fca9d755a10e20249482b8b71544360bcc",
+    "latestPriceStockPackRefresh": {
+     "checkedAt": "2026-11-12T07:20:20.602825+00:00",
+     "sourceSha256": "98909b4a76af5e313638923dc07a4decc4657218b38994717b612166aaffa583",
+     "priceAmount": 245.0,
+     "available": true,
+     "pack": "100 ml",
+     "matchesPackage": true,
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/pacific-rock-swell-100-ml-goldfield-and-banks"
+    }
+   }
+  },
+  {
+   "id": "dafneis",
+   "name": "Isabelle Larignon – Dafneis",
+   "url": "https://www.rafinadparfumerie.com/cs/product-page/dafneis-50-ml-isabelle-larignon",
+   "priceAmount": 140.0,
+   "price": "140 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Bílý santal, pomerančový květ a kosatec.",
+   "reason": "Bílý santal, pomerančový květ a kosatec.",
+   "photo": "/assets/s5/rafinad/dafneis.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rafinadparfumerie.com/cs/product-page/dafneis-50-ml-isabelle-larignon",
+    "verifiedAt": "2026-11-11T20:29:21.311459+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official public product structured Offer availability InStock; not buy-button, unit quantity or shipping inference",
+     "sku": "3770032559100",
+     "availabilityUrl": "https://schema.org/InStock",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/dafneis-50-ml-isabelle-larignon",
+     "checkedAt": "2026-11-11T20:29:21.311459+00:00"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 140.0,
+     "currency": "EUR",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/dafneis-50-ml-isabelle-larignon",
+     "visibleSsrPrice": "140,00 €",
+     "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+     "vatEvidence": "Official PRICE: Prices are shown inclusive of tax and excluding handling and shipping costs."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sku": "3770032559100",
+     "title": "Dafneis 50 ml | Isabelle Larignon",
+     "scope": "Explicit title and product description agree"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "variantSelectionRequired": false,
+    "photoUrl": "https://static.wixstatic.com/media/c72c4b_b601b2891300498bbfd0a34ff10f6715~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/c72c4b_b601b2891300498bbfd0a34ff10f6715~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+     "width": 500,
+     "height": 500,
+     "sha256": "90a0ba43dd6f5740764c17faa0975d4627fee7786e7153b4b363a44ef822d753",
+     "checkedAt": "2026-11-11T20:39:04.188240+00:00",
+     "visualReview": "PERFUME_WORKER actually inspected all12official formula photos in two source sheets11Nov2026. SKU/formula identities distinct; exact packs from title/prose, not inferred from photos."
+    },
+    "photoMeaning": "Official primary SKU illustration. No ingredient inference from props; exact ml from title/prose.",
+    "scent": "Bílý santal, pomerančový květ a kosatec.",
+    "officialProductTitle": "Dafneis 50 ml | Isabelle Larignon",
+    "selectionTraits": {
+     "fragranceDirection": "floral",
+     "fragranceProfile": "dafneis"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/dafneis-50-ml-isabelle-larignon",
+     "navigationLabel": "Bílý santal, pomerančový květ a kosatec",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "fragrance": {
+     "notesEvidence": {
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/dafneis-50-ml-isabelle-larignon",
+      "sourceText": "Notes \nWhite Sandalwood, Orange Blossom, Styrax, Corps Racine®, Iris, Patchouli, Virginia Cedar, Vetiver, Galbazine, Laurier, Immortelle, Peruvian Balsam, Amyris",
+      "scope": "Original official English factual note list only; no copyrighted marketing narrative, intensity, occasion or effects."
+     },
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "originalSourceSha256": "6fa1e2cb0fccee47406870c51b54f5f20f1f4f0fc1c41ead7c052e76fd3803cf",
+    "latestPriceStockPackRefresh": {
+     "checkedAt": "2026-11-12T07:20:22.810642+00:00",
+     "sourceSha256": "a0d54a752668c4433e68558dc4b43766ed359c9426a89020c80259c76576c557",
+     "priceAmount": 140.0,
+     "available": true,
+     "pack": "50 ml",
+     "matchesPackage": true,
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/dafneis-50-ml-isabelle-larignon"
+    }
+   }
+  },
+  {
+   "id": "cashmere",
+   "name": "Layel – Cashmere Venus",
+   "url": "https://www.rafinadparfumerie.com/cs/product-page/cashmere-venus-100-ml-layel",
+   "priceAmount": 185.0,
+   "price": "185 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Ostružina, růže a kašmírové dřevo.",
+   "reason": "Ostružina, růže a kašmírové dřevo.",
+   "photo": "/assets/s5/rafinad/cashmere.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rafinadparfumerie.com/cs/product-page/cashmere-venus-100-ml-layel",
+    "verifiedAt": "2026-11-11T20:29:23.078220+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official public product structured Offer availability InStock; not buy-button, unit quantity or shipping inference",
+     "sku": "3770040400012",
+     "availabilityUrl": "https://schema.org/InStock",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/cashmere-venus-100-ml-layel",
+     "checkedAt": "2026-11-11T20:29:23.078220+00:00"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 185.0,
+     "currency": "EUR",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/cashmere-venus-100-ml-layel",
+     "visibleSsrPrice": "185,00 €",
+     "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+     "vatEvidence": "Official PRICE: Prices are shown inclusive of tax and excluding handling and shipping costs."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sku": "3770040400012",
+     "title": "Cashmere Venus 100 ml | Layel",
+     "scope": "Explicit title and product description agree"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "variantSelectionRequired": false,
+    "photoUrl": "https://static.wixstatic.com/media/c72c4b_0eb29f06f5f44e84a920eddd05e5aaff~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/c72c4b_0eb29f06f5f44e84a920eddd05e5aaff~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+     "width": 500,
+     "height": 500,
+     "sha256": "be0210b04e716d40185059f87fd273ae251add2d0279950b7b24736e7dfd2bc7",
+     "checkedAt": "2026-11-11T20:39:04.482996+00:00",
+     "visualReview": "PERFUME_WORKER actually inspected all12official formula photos in two source sheets11Nov2026. SKU/formula identities distinct; exact packs from title/prose, not inferred from photos."
+    },
+    "photoMeaning": "Official primary SKU illustration. No ingredient inference from props; exact ml from title/prose.",
+    "scent": "Ostružina, růže a kašmírové dřevo.",
+    "officialProductTitle": "Cashmere Venus 100 ml | Layel",
+    "selectionTraits": {
+     "fragranceDirection": "floral",
+     "fragranceProfile": "cashmere"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/cashmere-venus-100-ml-layel",
+     "navigationLabel": "Ostružina, růže a kašmírové dřevo",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "fragrance": {
+     "notesEvidence": {
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/cashmere-venus-100-ml-layel",
+      "sourceText": "Top Notes \nBlackberry, Apple, Pink Pepper \nHeart Notes \nViolet, Rose \nBase Notes \nCashmere Wood, White Musk, Sugar Accord, Amber",
+      "scope": "Original official English factual note list only; no copyrighted marketing narrative, intensity, occasion or effects.",
+      "displayText": "Hlava: ostružina, jablko, růžový pepř; Srdce: fialka, růže; Základ: kašmírové dřevo, bílé pižmo, cukerný akord, ambra",
+      "displayLanguage": "cs",
+      "translatedFrom": "en",
+      "translationScope": "Faithful editorial translation of literal official note list, original English preserved for audit; no added notes."
+     },
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum"
+    },
+    "complementForProductUrls": [],
+    "originalSourceSha256": "cdb44e8909ef9b8ef2764da628526868578545e5d0d264ec1aa7214a297b9aca",
+    "latestPriceStockPackRefresh": {
+     "checkedAt": "2026-11-12T07:20:22.819103+00:00",
+     "sourceSha256": "e1983a88b3d7bae3484d631943b54b98fce6924bc857671165fdc2b4854505f0",
+     "priceAmount": 185.0,
+     "available": true,
+     "pack": "100 ml",
+     "matchesPackage": true,
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/cashmere-venus-100-ml-layel"
+    }
+   }
+  },
+  {
+   "id": "exotique",
+   "name": "Les Nobles Essences – Mirage Exotique",
+   "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-exotique-100-ml-les-nobles-essences",
+   "priceAmount": 195.0,
+   "price": "195 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Marakuja, mango a kokos.",
+   "reason": "Marakuja, mango a kokos.",
+   "photo": "/assets/s5/rafinad/exotique.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-exotique-100-ml-les-nobles-essences",
+    "verifiedAt": "2026-11-11T20:29:24.987597+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official public product structured Offer availability InStock; not buy-button, unit quantity or shipping inference",
+     "sku": "3770034961017",
+     "availabilityUrl": "https://schema.org/InStock",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/mirage-exotique-100-ml-les-nobles-essences",
+     "checkedAt": "2026-11-11T20:29:24.987597+00:00"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 195.0,
+     "currency": "EUR",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/mirage-exotique-100-ml-les-nobles-essences",
+     "visibleSsrPrice": "195,00 €",
+     "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+     "vatEvidence": "Official PRICE: Prices are shown inclusive of tax and excluding handling and shipping costs."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sku": "3770034961017",
+     "title": "Mirage Exotique 100 ml | Les Nobles Essences",
+     "scope": "Explicit title and product description agree"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "variantSelectionRequired": false,
+    "photoUrl": "https://static.wixstatic.com/media/c72c4b_b80818ea6a174817a6d3d4235f1de65c~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/c72c4b_b80818ea6a174817a6d3d4235f1de65c~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+     "width": 500,
+     "height": 500,
+     "sha256": "3e8fde2d66a670bbea5ef453cb3d9d9dee9c7644af723c25602552f1c6c5ee4f",
+     "checkedAt": "2026-11-11T20:39:04.838326+00:00",
+     "visualReview": "PERFUME_WORKER actually inspected all12official formula photos in two source sheets11Nov2026. SKU/formula identities distinct; exact packs from title/prose, not inferred from photos."
+    },
+    "photoMeaning": "Official primary SKU illustration. No ingredient inference from props; exact ml from title/prose.",
+    "scent": "Marakuja, mango a kokos.",
+    "officialProductTitle": "Mirage Exotique 100 ml | Les Nobles Essences",
+    "selectionTraits": {
+     "fragranceDirection": "floral",
+     "fragranceProfile": "exotique"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-exotique-100-ml-les-nobles-essences",
+     "navigationLabel": "Marakuja, mango a kokos",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "fragrance": {
+     "notesEvidence": {
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-exotique-100-ml-les-nobles-essences",
+      "sourceText": "Top Notes \nPassion Fruit, Mandarin, Saffron \nHeart Notes \nMango, Rose, Coconut \nBase Notes \nSandalwood, Cedarwood, Amber, Vanilla",
+      "scope": "Original official English factual note list only; no copyrighted marketing narrative, intensity, occasion or effects.",
+      "displayText": "Hlava: marakuja, mandarinka, šafrán; Srdce: mango, růže, kokos; Základ: santalové dřevo, cedrové dřevo, ambra, vanilka",
+      "displayLanguage": "cs",
+      "translatedFrom": "en",
+      "translationScope": "Faithful editorial translation of literal official note list, original English preserved for audit; no added notes."
+     },
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum"
+    },
+    "complementForProductUrls": [],
+    "originalSourceSha256": "cd854825242886332493b8ed3d3b1f7b5ce0ecd46e9e222d1f98ce504dd08163",
+    "latestPriceStockPackRefresh": {
+     "checkedAt": "2026-11-12T07:20:22.840599+00:00",
+     "sourceSha256": "3ee0af6c1fecf8c7e222df578bb5d27aad3c5b6fcaf9a6af0ca8251697dcf6c2",
+     "priceAmount": 195.0,
+     "available": true,
+     "pack": "100 ml",
+     "matchesPackage": true,
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-exotique-100-ml-les-nobles-essences"
+    }
+   }
+  },
+  {
+   "id": "escapade",
+   "name": "Maison Mataha – Escapade Gourmande Grand Cru",
+   "url": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha",
+   "priceAmount": 250.0,
+   "price": "250 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Absolu de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Vanilka, černý cukr a tonka.",
+   "reason": "Vanilka, černý cukr a tonka.",
+   "photo": "/assets/s5/rafinad/escapade.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha",
+    "verifiedAt": "2026-11-11T20:29:21.202340+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official public product structured Offer availability InStock; not buy-button, unit quantity or shipping inference",
+     "sku": "3701779101635",
+     "availabilityUrl": "https://schema.org/InStock",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha",
+     "checkedAt": "2026-11-11T20:29:21.202340+00:00"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 250.0,
+     "currency": "EUR",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha",
+     "visibleSsrPrice": "250,00 €",
+     "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+     "vatEvidence": "Official PRICE: Prices are shown inclusive of tax and excluding handling and shipping costs."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sku": "3701779101635",
+     "title": "Escapade Gourmande Grand Cru 100 ml | Maison Mataha",
+     "scope": "Explicit title and product description agree"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "variantSelectionRequired": false,
+    "photoUrl": "https://static.wixstatic.com/media/c72c4b_e7a7e529128a47fe8d776b9abfc69b96~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/c72c4b_e7a7e529128a47fe8d776b9abfc69b96~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+     "width": 500,
+     "height": 500,
+     "sha256": "ba401e0d29fb8288318e6d5cd71d5ba853808e0b897084aa1242890772adef92",
+     "checkedAt": "2026-11-11T20:39:05.308579+00:00",
+     "visualReview": "PERFUME_WORKER actually inspected all12official formula photos in two source sheets11Nov2026. SKU/formula identities distinct; exact packs from title/prose, not inferred from photos."
+    },
+    "photoMeaning": "Official primary SKU illustration. No ingredient inference from props; exact ml from title/prose.",
+    "scent": "Vanilka, černý cukr a tonka.",
+    "officialProductTitle": "Escapade Gourmande Grand Cru 100 ml | Maison Mataha",
+    "selectionTraits": {
+     "fragranceDirection": "gourmand",
+     "fragranceProfile": "escapade"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha",
+     "navigationLabel": "Vanilka, černý cukr a tonka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "fragrance": {
+     "notesEvidence": {
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha",
+      "sourceText": "Top Notes \nCristal Vanilla, Peru Balsam \nHeart notes \nBlack Sugar, Tonka Bean \nBase Notes \nBourbon Vanilla, Musk",
+      "scope": "Original official English factual note list only; no copyrighted marketing narrative, intensity, occasion or effects.",
+      "displayText": "Hlava: vanilka Cristal, peruánský balzám; Srdce: černý cukr, tonka; Základ: vanilka Bourbon, pižmo",
+      "displayLanguage": "cs",
+      "translatedFrom": "en",
+      "translationScope": "Faithful editorial translation of literal official note list, original English preserved for audit; no added notes."
+     },
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Absolu de Parfum"
+    },
+    "complementForProductUrls": [],
+    "originalSourceSha256": "6e10379091f4575eb7963750594149005c6e01b5d723238f7070c64b65e5c66c",
+    "latestPriceStockPackRefresh": {
+     "checkedAt": "2026-11-12T07:20:24.858385+00:00",
+     "sourceSha256": "a08febdf6e4fc419c950fef9e8d35270724ba49d5b4b7464bd3efb85911d1e5a",
+     "priceAmount": 250.0,
+     "available": true,
+     "pack": "100 ml",
+     "matchesPackage": true,
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/escapade-gourmande-grand-cru-100-ml-maison-mataha"
+    }
+   }
+  },
+  {
+   "id": "mirage",
+   "name": "Les Nobles Essences – Mirage Gourmand",
+   "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences",
+   "priceAmount": 195.0,
+   "price": "195 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Pistácie, mandle a vanilka.",
+   "reason": "Pistácie, mandle a vanilka.",
+   "photo": "/assets/s5/rafinad/mirage.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences",
+    "verifiedAt": "2026-11-11T20:29:25.115527+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official public product structured Offer availability InStock; not buy-button, unit quantity or shipping inference",
+     "sku": "3770034961000",
+     "availabilityUrl": "https://schema.org/InStock",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences",
+     "checkedAt": "2026-11-11T20:29:25.115527+00:00"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 195.0,
+     "currency": "EUR",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences",
+     "visibleSsrPrice": "195,00 €",
+     "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+     "vatEvidence": "Official PRICE: Prices are shown inclusive of tax and excluding handling and shipping costs."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sku": "3770034961000",
+     "title": "Mirage Gourmand 100 ml | Les Nobles Essences",
+     "scope": "Explicit title and product description agree"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "variantSelectionRequired": false,
+    "photoUrl": "https://static.wixstatic.com/media/c72c4b_27b5ee82780f48fa9f446acf1c2c8e67~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/c72c4b_27b5ee82780f48fa9f446acf1c2c8e67~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+     "width": 500,
+     "height": 500,
+     "sha256": "4f3004fa16fab8327c759cdd84788a851c0745b3252dab26d6d2ccbc69f2899e",
+     "checkedAt": "2026-11-11T20:39:05.641071+00:00",
+     "visualReview": "PERFUME_WORKER actually inspected all12official formula photos in two source sheets11Nov2026. SKU/formula identities distinct; exact packs from title/prose, not inferred from photos."
+    },
+    "photoMeaning": "Official primary SKU illustration. No ingredient inference from props; exact ml from title/prose.",
+    "scent": "Pistácie, mandle a vanilka.",
+    "officialProductTitle": "Mirage Gourmand 100 ml | Les Nobles Essences",
+    "selectionTraits": {
+     "fragranceDirection": "gourmand",
+     "fragranceProfile": "mirage"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences",
+     "navigationLabel": "Pistácie, mandle a vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "fragrance": {
+     "notesEvidence": {
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences",
+      "sourceText": "Top Notes \nPowdery Notes, Financier Cake, Pistachio \nHeart Notes \nAlmond, Hazelnut, Tonka Bean \nBase Notes \nVanilla, White Musk, Guaiac Wood",
+      "scope": "Original official English factual note list only; no copyrighted marketing narrative, intensity, occasion or effects.",
+      "displayText": "Hlava: pudrové tóny, koláček financier, pistácie; Srdce: mandle, lískový oříšek, tonka; Základ: vanilka, bílé pižmo, guajakové dřevo",
+      "displayLanguage": "cs",
+      "translatedFrom": "en",
+      "translationScope": "Faithful editorial translation of literal official note list, original English preserved for audit; no added notes."
+     },
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum"
+    },
+    "complementForProductUrls": [],
+    "originalSourceSha256": "bd7616ee3a406aaabed2fdb254027428ba406ec8ebbc2e35694adbf65cc1ee73",
+    "latestPriceStockPackRefresh": {
+     "checkedAt": "2026-11-12T07:20:24.917384+00:00",
+     "sourceSha256": "487159caedc0dcb0c1c5862733949a1525a0a50419e77e91da4790459c975008",
+     "priceAmount": 195.0,
+     "available": true,
+     "pack": "100 ml",
+     "matchesPackage": true,
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/mirage-gourmand-100-ml-les-nobles-essences"
+    }
+   }
+  },
+  {
+   "id": "mocha",
+   "name": "Dusita – Mocha Absolu",
+   "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+   "priceAmount": 230.0,
+   "price": "230 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Káva arabika, thajský čaj a čokoláda.",
+   "reason": "Káva arabika, thajský čaj a čokoláda.",
+   "photo": "/assets/s5/rafinad/mocha.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+    "verifiedAt": "2026-11-11T20:29:30.832322+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official public product structured Offer availability InStock; not buy-button, unit quantity or shipping inference",
+     "sku": "3770030072793",
+     "availabilityUrl": "https://schema.org/InStock",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+     "checkedAt": "2026-11-11T20:29:30.832322+00:00"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 230.0,
+     "currency": "EUR",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+     "visibleSsrPrice": "230,00 €",
+     "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+     "vatEvidence": "Official PRICE: Prices are shown inclusive of tax and excluding handling and shipping costs."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sku": "3770030072793",
+     "title": "Mocha Absolu 100 ml | Dusita",
+     "scope": "Explicit title and product description agree"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "variantSelectionRequired": false,
+    "photoUrl": "https://static.wixstatic.com/media/c72c4b_7f39906b85e2458d831cd07d561a5b6e~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/c72c4b_7f39906b85e2458d831cd07d561a5b6e~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+     "width": 500,
+     "height": 500,
+     "sha256": "fc8ae28d83e8b4dad935c3770d34780b7bded46b0427a5cb410034e6bd28e620",
+     "checkedAt": "2026-11-11T20:39:06.022250+00:00",
+     "visualReview": "PERFUME_WORKER actually inspected all12official formula photos in two source sheets11Nov2026. SKU/formula identities distinct; exact packs from title/prose, not inferred from photos."
+    },
+    "photoMeaning": "Official primary SKU illustration. No ingredient inference from props; exact ml from title/prose.",
+    "scent": "Káva arabika, thajský čaj a čokoláda.",
+    "officialProductTitle": "Mocha Absolu 100 ml | Dusita",
+    "selectionTraits": {
+     "fragranceDirection": "gourmand",
+     "fragranceProfile": "mocha"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+     "navigationLabel": "Káva arabika, thajský čaj a čokoláda",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "fragrance": {
+     "notesEvidence": {
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+      "sourceText": "Top notes \nArabica Coffee, Thai Tea, Dark Chocolate \nHeart notes \nToasted Almond, Caramelized Milk, Vanilla \nBase notes \nSandalwood, Tonka Bean, Benzoin",
+      "scope": "Original official English factual note list only; no copyrighted marketing narrative, intensity, occasion or effects.",
+      "displayText": "Hlava: káva arabika, thajský čaj, hořká čokoláda; Srdce: pražená mandle, karamelizované mléko, vanilka; Základ: santalové dřevo, tonka, benzoin",
+      "displayLanguage": "cs",
+      "translatedFrom": "en",
+      "translationScope": "Faithful editorial translation of literal official note list, original English preserved for audit; no added notes."
+     },
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "originalSourceSha256": "8e8d38604f82612828c0a03eb49e548d10133ae4e5169cf6cf4196dcac22aec9",
+    "upsellVariants": [
+     {
+      "id": "3770030072786",
+      "parentProductId": "mocha",
+      "name": "Dusita – Mocha Absolu",
+      "volume": "50 ml",
+      "priceAmount": 160,
+      "price": "160 €",
+      "currency": "EUR",
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-50-ml-dusita",
+      "available": true,
+      "sameFormula": true,
+      "variantSelectionRequired": false,
+      "evidence": {
+       "scope": "WixProductPublicStructuredOffer",
+       "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-50-ml-dusita",
+       "parentProductUrl": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita",
+       "sameCompositionTitle": "Mocha Absolu 50 ml | Dusita",
+       "sameCompositionParentTitle": "Dusita – Mocha Absolu",
+       "sameCompositionEvidence": "Same Dusita Mocha Absolu, Eau de Parfum; official50/100ml factual note suffix identical.",
+       "exactVariantId": "3770030072786",
+       "stock": "InStock",
+       "availabilityUrl": "https://schema.org/InStock",
+       "checkedAt": "2026-11-11T20:29:30.389600+00:00",
+       "sourceSha256": "b5033c65507827a8b0950de7a27d7cde9346918e7f3e77415c160f9d47a8c9f6",
+       "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+       "latestPriceStockPackRefresh": {
+        "slug": "rafinad",
+        "id": "mocha-extra50",
+        "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-50-ml-dusita",
+        "checkedAt": "2026-11-12T07:22:08.751865+00:00",
+        "sourceSha256": "cdab841ff8755f2446c78947676fca6d66107ff32413c02843698ea41cb85531",
+        "priceAmount": 160.0,
+        "available": true,
+        "pack": "50 ml",
+        "currency": "EUR",
+        "matchesPackage": true
+       }
+      }
+     }
+    ],
+    "latestPriceStockPackRefresh": {
+     "checkedAt": "2026-11-12T07:20:25.360562+00:00",
+     "sourceSha256": "d4f2ce6bc4e2ee1a40deff0498df81ff1885e80634b26c2f25574d2cce008f69",
+     "priceAmount": 230.0,
+     "available": true,
+     "pack": "100 ml",
+     "matchesPackage": true,
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/mocha-absolu-100-ml-dusita"
+    }
+   }
+  },
+  {
+   "id": "suede",
+   "name": "Layel – Suede Moon",
+   "url": "https://www.rafinadparfumerie.com/cs/product-page/suede-moon-100-ml-layel",
+   "priceAmount": 185.0,
+   "price": "185 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Sladká mandle, kosatec a semiš.",
+   "reason": "Sladká mandle, kosatec a semiš.",
+   "photo": "/assets/s5/rafinad/suede.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rafinadparfumerie.com/cs/product-page/suede-moon-100-ml-layel",
+    "verifiedAt": "2026-11-11T20:29:23.734253+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official public product structured Offer availability InStock; not buy-button, unit quantity or shipping inference",
+     "sku": "3770040400005",
+     "availabilityUrl": "https://schema.org/InStock",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/suede-moon-100-ml-layel",
+     "checkedAt": "2026-11-11T20:29:23.734253+00:00"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 185.0,
+     "currency": "EUR",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/suede-moon-100-ml-layel",
+     "visibleSsrPrice": "185,00 €",
+     "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+     "vatEvidence": "Official PRICE: Prices are shown inclusive of tax and excluding handling and shipping costs."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sku": "3770040400005",
+     "title": "Suede Moon 100 ml | Layel",
+     "scope": "Explicit title and product description agree"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "variantSelectionRequired": false,
+    "photoUrl": "https://static.wixstatic.com/media/c72c4b_338be23129534fce9305e7c4f4ceeea0~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/c72c4b_338be23129534fce9305e7c4f4ceeea0~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+     "width": 500,
+     "height": 500,
+     "sha256": "ba8d26d4560712240e783caef314ffd97184f30c5fe985f4aa913e79f2249f22",
+     "checkedAt": "2026-11-11T20:39:06.320757+00:00",
+     "visualReview": "PERFUME_WORKER actually inspected all12official formula photos in two source sheets11Nov2026. SKU/formula identities distinct; exact packs from title/prose, not inferred from photos."
+    },
+    "photoMeaning": "Official primary SKU illustration. No ingredient inference from props; exact ml from title/prose.",
+    "scent": "Sladká mandle, kosatec a semiš.",
+    "officialProductTitle": "Suede Moon 100 ml | Layel",
+    "selectionTraits": {
+     "fragranceDirection": "wood",
+     "fragranceProfile": "suede"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/suede-moon-100-ml-layel",
+     "navigationLabel": "Sladká mandle, kosatec a semiš",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "fragrance": {
+     "notesEvidence": {
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/suede-moon-100-ml-layel",
+      "sourceText": "Top Notes \nSweet almond, Nutmeg \nHeart Notes \nOsmanthus, Guaiac Wood, Iris \nBase Notes \nSuede, Tonka Beans, Walnut, Sandalwood, White Musk",
+      "scope": "Original official English factual note list only; no copyrighted marketing narrative, intensity, occasion or effects.",
+      "displayText": "Hlava: sladká mandle, muškátový oříšek; Srdce: osmanthus, guajakové dřevo, kosatec; Základ: semiš, tonka, vlašský ořech, santalové dřevo, bílé pižmo",
+      "displayLanguage": "cs",
+      "translatedFrom": "en",
+      "translationScope": "Faithful editorial translation of literal official note list, original English preserved for audit; no added notes."
+     },
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum"
+    },
+    "complementForProductUrls": [],
+    "originalSourceSha256": "ce92a8c74a1562bed785a1651414b916088547b026f443d40a7fb2a586333c48",
+    "latestPriceStockPackRefresh": {
+     "checkedAt": "2026-11-12T07:20:26.611755+00:00",
+     "sourceSha256": "f77a0e7089477dbec48a840c2df3a29a42161913917a45644a06047b5012c833",
+     "priceAmount": 185.0,
+     "available": true,
+     "pack": "100 ml",
+     "matchesPackage": true,
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/suede-moon-100-ml-layel"
+    }
+   }
+  },
+  {
+   "id": "ganymede",
+   "name": "Marc-Antoine Barrois – Ganymede",
+   "url": "https://www.rafinadparfumerie.com/cs/product-page/ganymede-100-ml-marc-antoine-barrois",
+   "priceAmount": 200.0,
+   "price": "200 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Mandarinka, kožený akord a Akigalawood.",
+   "reason": "Mandarinka, kožený akord a Akigalawood.",
+   "photo": "/assets/s5/rafinad/ganymede.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rafinadparfumerie.com/cs/product-page/ganymede-100-ml-marc-antoine-barrois",
+    "verifiedAt": "2026-11-11T20:29:25.502733+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official public product structured Offer availability InStock; not buy-button, unit quantity or shipping inference",
+     "sku": "3770006409028",
+     "availabilityUrl": "https://schema.org/InStock",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/ganymede-100-ml-marc-antoine-barrois",
+     "checkedAt": "2026-11-11T20:29:25.502733+00:00"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 200.0,
+     "currency": "EUR",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/ganymede-100-ml-marc-antoine-barrois",
+     "visibleSsrPrice": "200,00 €",
+     "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+     "vatEvidence": "Official PRICE: Prices are shown inclusive of tax and excluding handling and shipping costs."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sku": "3770006409028",
+     "title": "Ganymede 100 ml | Marc-Antoine Barrois",
+     "scope": "Explicit title and product description agree"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "variantSelectionRequired": false,
+    "photoUrl": "https://static.wixstatic.com/media/c72c4b_7b3da1ec418d4058ae630e95b14f4f1d~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/c72c4b_7b3da1ec418d4058ae630e95b14f4f1d~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+     "width": 500,
+     "height": 500,
+     "sha256": "c2c304c9f4b6eace657e563700555fdd763a9c0711101a4d6dd1593226955138",
+     "checkedAt": "2026-11-11T20:39:06.729517+00:00",
+     "visualReview": "PERFUME_WORKER actually inspected all12official formula photos in two source sheets11Nov2026. SKU/formula identities distinct; exact packs from title/prose, not inferred from photos."
+    },
+    "photoMeaning": "Official primary SKU illustration. No ingredient inference from props; exact ml from title/prose.",
+    "scent": "Mandarinka, kožený akord a Akigalawood.",
+    "officialProductTitle": "Ganymede 100 ml | Marc-Antoine Barrois",
+    "selectionTraits": {
+     "fragranceDirection": "wood",
+     "fragranceProfile": "ganymede"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/ganymede-100-ml-marc-antoine-barrois",
+     "navigationLabel": "Mandarinka, kožený akord a Akigalawood",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "fragrance": {
+     "notesEvidence": {
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/ganymede-100-ml-marc-antoine-barrois",
+      "sourceText": "Top notes \nMandarin \nHeart notes \nOsmanthus, Leather Accord \nBase notes \nAkigalawood, Immortelle",
+      "scope": "Original official English factual note list only; no copyrighted marketing narrative, intensity, occasion or effects.",
+      "displayText": "Hlava: mandarinka; Srdce: osmanthus, kožený akord; Základ: Akigalawood, slaměnka",
+      "displayLanguage": "cs",
+      "translatedFrom": "en",
+      "translationScope": "Faithful editorial translation of literal official note list, original English preserved for audit; no added notes."
+     },
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum"
+    },
+    "complementForProductUrls": [],
+    "originalSourceSha256": "551be638bf810e6ea0da6195406b119acbd773451122046ac1ec65b7ac6575b4",
+    "latestPriceStockPackRefresh": {
+     "checkedAt": "2026-11-12T07:20:27.117551+00:00",
+     "sourceSha256": "734c2dbd08b8ee923f9885bc98a0e2fe5f4066f56452ff815084ecedad12f35a",
+     "priceAmount": 200.0,
+     "available": true,
+     "pack": "100 ml",
+     "matchesPackage": true,
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/ganymede-100-ml-marc-antoine-barrois"
+    }
+   }
+  },
+  {
+   "id": "sublimis",
+   "name": "Adamo Parfum – Roman V Sublimis",
+   "url": "https://www.rafinadparfumerie.com/cs/product-page/roman-v-sublimis-100-ml-adamo-parfum",
+   "priceAmount": 350.0,
+   "price": "350 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Káva, kůže a kambodžský oud.",
+   "reason": "Káva, kůže a kambodžský oud.",
+   "photo": "/assets/s5/rafinad/sublimis.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rafinadparfumerie.com/cs/product-page/roman-v-sublimis-100-ml-adamo-parfum",
+    "verifiedAt": "2026-11-11T20:29:28.441477+00:00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official public product structured Offer availability InStock; not buy-button, unit quantity or shipping inference",
+     "sku": "0642613446587",
+     "availabilityUrl": "https://schema.org/InStock",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/roman-v-sublimis-100-ml-adamo-parfum",
+     "checkedAt": "2026-11-11T20:29:28.441477+00:00"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 350.0,
+     "currency": "EUR",
+     "sourceUrl": "https://www.rafinadparfumerie.com/cs/product-page/roman-v-sublimis-100-ml-adamo-parfum",
+     "visibleSsrPrice": "350,00 €",
+     "vatSourceUrl": "https://www.rafinadparfumerie.com/cs/general-terms-and-conditions",
+     "vatEvidence": "Official PRICE: Prices are shown inclusive of tax and excluding handling and shipping costs."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sku": "0642613446587",
+     "title": "Roman V Sublimis 100 ml | Adamo Parfum",
+     "scope": "Explicit title and product description agree"
+    },
+    "categoryLocked": true,
+    "kindLocked": true,
+    "variantSelectionRequired": false,
+    "photoUrl": "https://static.wixstatic.com/media/c72c4b_0099996649d8414ca7100ed4078f97df~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/c72c4b_0099996649d8414ca7100ed4078f97df~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+     "width": 500,
+     "height": 500,
+     "sha256": "e212e86c7595fbdd4cfe86ecec71367da30658fe85ebde99fe340c02fd6ad50b",
+     "checkedAt": "2026-11-11T20:39:07.080647+00:00",
+     "visualReview": "PERFUME_WORKER actually inspected all12official formula photos in two source sheets11Nov2026. SKU/formula identities distinct; exact packs from title/prose, not inferred from photos."
+    },
+    "photoMeaning": "Official primary SKU illustration. No ingredient inference from props; exact ml from title/prose.",
+    "scent": "Káva, kůže a kambodžský oud.",
+    "officialProductTitle": "Roman V Sublimis 100 ml | Adamo Parfum",
+    "selectionTraits": {
+     "fragranceDirection": "wood",
+     "fragranceProfile": "sublimis"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/roman-v-sublimis-100-ml-adamo-parfum",
+     "navigationLabel": "Káva, kůže a kambodžský oud",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "fragrance": {
+     "notesEvidence": {
+      "url": "https://www.rafinadparfumerie.com/cs/product-page/roman-v-sublimis-100-ml-adamo-parfum",
+      "sourceText": "Top Notes \nGinger, Brazilian Coffee \nHeart Notes \nLeather Oud, Dark Chocolate \nBase Notes \nAustralian Sandalwood, Cambodian Oud, Tonka",
+      "scope": "Original official English factual note list only; no copyrighted marketing narrative, intensity, occasion or effects."
+     },
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum"
+    },
+    "complementForProductUrls": [],
+    "originalSourceSha256": "7dfe6c81088d4b9abceb0c1170a08022681b926efb54f0ef19f8663090dc4a49",
+    "latestPriceStockPackRefresh": {
+     "checkedAt": "2026-11-12T07:20:27.854920+00:00",
+     "sourceSha256": "7ef9cd2a714bfc28b113d7301bdc4e2695b613a9db38673bccfcdd78ef8fb92a",
+     "priceAmount": 350.0,
+     "available": true,
+     "pack": "100 ml",
+     "matchesPackage": true,
+     "url": "https://www.rafinadparfumerie.com/cs/product-page/roman-v-sublimis-100-ml-adamo-parfum"
+    }
+   }
+  }
+ ],
+ "formulaCount": 12,
+ "revenue": "UNKNOWN",
+ "size": "UNKNOWN",
+ "status": "LOCAL_QA_PASS_PENDING_MAIN_INTEGRATION_AND_LIVE_PREVIEW",
+ "notes": [
+  "12distinct compositions;50mlMocha optional additional pack not13thformula.",
+  "Original English note evidence preserved; explicit Czech factual display translations, no invented intensity/occasion or official family.",
+  "Dafneis has flat note list; Sublimis heart line ambiguous Leather Oud, so no detailed pyramid displayed for either.",
+  "Insomnia100ml OutOfStock excluded; sample sets and same-formula sizes do not inflate count.",
+  "No budget question/shipping promise/cart/health/skin/longevity/sales guarantee.",
+  "Legal first-line Rafiand typo vs footer/ARES RAFINAD same01413911; no separate operator invented."
+ ]
+};

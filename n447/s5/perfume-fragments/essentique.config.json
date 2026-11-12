@@ -1,0 +1,296 @@
+{
+  "slug": "essentique",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "d0be27da162949b45960ae76085e8f2f527fe356",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "INTEGRATED_LOCAL_QA_PENDING",
+  "catalogue": "/catalogues/essentique.js",
+  "requiredEngineContract": "s5-fragrance-samples-direction-profile-v1",
+  "quickChips": [
+    "Pomaranč a santal",
+    "Hruška a ruža",
+    "Koňak a škorica",
+    "Porovnať dve vône"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Pomaranč a santal",
+      "match": "pomaranc.*santal",
+      "productIds": [
+        "orange-x-santal"
+      ]
+    },
+    {
+      "chip": "Hruška a ruža",
+      "match": "hrusk.*ruz",
+      "productIds": [
+        "guidance"
+      ]
+    },
+    {
+      "chip": "Koňak a škorica",
+      "match": "konak.*skoric",
+      "productIds": [
+        "angels-share"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "orange-x-santal",
+    "angels-share"
+  ],
+  "addon": null,
+  "budgetQuestion": false,
+  "enableRuntime": true,
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Essentique",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/essentique/logo.svg",
+      "header": "/assets/s5/essentique/logo.svg",
+      "avatar": "/assets/s5/essentique/avatar.svg"
+    },
+    "brand": {
+      "name": "Essentique",
+      "domain": "essentique.sk",
+      "website": "https://www.essentique.sk/",
+      "lang": "sk",
+      "fullName": "Essentique",
+      "url": "https://www.essentique.sk/",
+      "logo": "/assets/s5/essentique/logo.svg",
+      "mark": "/assets/s5/essentique/avatar.svg",
+      "greeting": "Vyberte si 2 ml odstrek podľa doložených tónov a porovnajte dve rôzne kompozície.",
+      "quickChips": [
+        "Pomaranč a santal",
+        "Hruška a ruža",
+        "Koňak a škorica",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#2f2921",
+        "accent": "#2f2921",
+        "soft": "#f7f4ee",
+        "paper": "#ffffff",
+        "ink": "#28231d",
+        "line": "#e6dfd2"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy alebo minerálne tóny",
+        "Vyberte podľa uvedených tónov.",
+        "Citrusy alebo minerálne tóny",
+        "Vyberte podľa uvedených tónov."
+      ],
+      "orange-x-santal": [
+        "Pomaranč, bazalka a santal",
+        "Pomaranč, bazalka a santal.",
+        "Pomaranč, bazalka a santal",
+        "Pomaranč, bazalka a santal."
+      ],
+      "the-ghost-in-the-shell": [
+        "Yuzu, mliečny akord a jazmín",
+        "Yuzu, mliečny akord a jazmín.",
+        "Yuzu, mliečny akord a jazmín",
+        "Yuzu, mliečny akord a jazmín."
+      ],
+      "ganymede": [
+        "Mandarínka a minerálne tóny",
+        "Mandarínka, minerálne tóny a semiš.",
+        "Mandarínka a minerálne tóny",
+        "Mandarínka, minerálne tóny a semiš."
+      ],
+      "floral": [
+        "Kvety s hruškou, liči či broskyňou",
+        "Vyberte podľa uvedených tónov.",
+        "Kvety s hruškou, liči či broskyňou",
+        "Vyberte podľa uvedených tónov."
+      ],
+      "guidance": [
+        "Hruška, lieskový orech a ruža",
+        "Hruška, lieskový orech a ruža.",
+        "Hruška, lieskový orech a ruža",
+        "Hruška, lieskový orech a ruža."
+      ],
+      "delina-exclusif": [
+        "Liči, ruža a kadidlo",
+        "Liči, ruža a kadidlo.",
+        "Liči, ruža a kadidlo",
+        "Liči, ruža a kadidlo."
+      ],
+      "hundred-silent-ways": [
+        "Broskyňa, tuberóza a vanilka",
+        "Broskyňa, tuberóza a vanilka.",
+        "Broskyňa, tuberóza a vanilka",
+        "Broskyňa, tuberóza a vanilka."
+      ],
+      "gourmand": [
+        "Koňak, vanilka alebo tonka",
+        "Vyberte podľa uvedených tónov.",
+        "Koňak, vanilka alebo tonka",
+        "Vyberte podľa uvedených tónov."
+      ],
+      "angels-share": [
+        "Koňak, škorica a praliné",
+        "Koňak, škorica a praliné.",
+        "Koňak, škorica a praliné",
+        "Koňak, škorica a praliné."
+      ],
+      "divine-vanille": [
+        "Vanilka, kadidlo a tonka",
+        "Vanilka, kadidlo a tonka.",
+        "Vanilka, kadidlo a tonka",
+        "Vanilka, kadidlo a tonka."
+      ],
+      "arabians-tonka": [
+        "Tonka, ruža a oud",
+        "Tonka, ruža a oud.",
+        "Tonka, ruža a oud",
+        "Tonka, ruža a oud."
+      ],
+      "wood": [
+        "Drevo, korenie alebo Cetalox",
+        "Vyberte podľa uvedených tónov.",
+        "Drevo, korenie alebo Cetalox",
+        "Vyberte podľa uvedených tónov."
+      ],
+      "bois-imperial": [
+        "Bazalka a drevité tóny",
+        "Bazalka, Timut korenie a drevité tóny.",
+        "Bazalka a drevité tóny",
+        "Bazalka, Timut korenie a drevité tóny."
+      ],
+      "eilish-no-2": [
+        "Kadidlo, papyrus a čierne korenie",
+        "Kadidlo, papyrus a čierne korenie.",
+        "Kadidlo, papyrus a čierne korenie",
+        "Kadidlo, papyrus a čierne korenie."
+      ],
+      "not-a-perfume": [
+        "Kompozícia s Cetaloxom",
+        "Minimalistická kompozícia s Cetaloxom.",
+        "Kompozícia s Cetaloxom",
+        "Minimalistická kompozícia s Cetaloxom."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aké tóny chcete objavovať?",
+        "Vyberte podľa doložených tónov.",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktoré tóny vás lákajú?",
+        "Vyberte jeden profil.",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "orange-x-santal": [
+        "/assets/s3/scenes-k2/orange-slices.jpg"
+      ],
+      "the-ghost-in-the-shell": [
+        "/assets/s3/scenes-k2/milk.jpg"
+      ],
+      "ganymede": [
+        "/assets/s3/scenes-k2/mandarin.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "guidance": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "delina-exclusif": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "hundred-silent-ways": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "gourmand": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "angels-share": [
+        "/assets/s3/scenes-k2/cinnamon.jpg"
+      ],
+      "divine-vanille": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "arabians-tonka": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "bois-imperial": [
+        "/assets/s5/essentique/bois-imperial.webp"
+      ],
+      "eilish-no-2": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "not-a-perfume": [
+        "/assets/s5/essentique/not-a-perfume.webp"
+      ],
+      "navigation:more": [
+        "/assets/s5/essentique/orange-x-santal.webp"
+      ]
+    },
+    "compareProductIds": [
+      "orange-x-santal",
+      "angels-share"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vône · vzorky · porovnanie",
+      "titleSuffix": "výber vzorky vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vzorku podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi vybrať vzorku vône podľa jeho vkusu.",
+      "lead": "Zákazník si vyberie podľa doložených tónov a pozrie si konkrétny 2 ml odstrek s cenou a odkazom. Dve odlišné kompozície si môže porovnať.",
+      "includedChat": "Tóny vône, konkrétne vzorky, ceny a porovnanie.",
+      "includedAdvisor": "Preferované tóny a konkrétny profil vône — na konci 2 ml odstrek.",
+      "greeting": "Vyberte si 2 ml odstrek podľa doložených tónov a porovnajte dve rôzne kompozície.",
+      "teaserTitle": "Vyberte si vzorku vône podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vzorky vône",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "orange-x-santal": "the-ghost-in-the-shell",
+        "the-ghost-in-the-shell": "ganymede",
+        "ganymede": "orange-x-santal",
+        "guidance": "delina-exclusif",
+        "delina-exclusif": "hundred-silent-ways",
+        "hundred-silent-ways": "guidance",
+        "angels-share": "divine-vanille",
+        "divine-vanille": "arabians-tonka",
+        "arabians-tonka": "angels-share",
+        "bois-imperial": "eilish-no-2",
+        "eilish-no-2": "not-a-perfume",
+        "not-a-perfume": "bois-imperial"
+      }
+    },
+    "companyCss": "/n447/s5/brands/essentique.css",
+    "fragranceSampleCompare": {
+      "version": 1,
+      "enabled": true
+    }
+  },
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "localQaReport": "../../reports/essentique-fragrancesamples-20261111/local-qa-final-summary.json",
+  "integrationBase": "85ed8bcdc631e42206afe643f694800dcb75f696"
+}
