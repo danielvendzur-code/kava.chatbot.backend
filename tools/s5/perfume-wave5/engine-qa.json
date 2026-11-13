@@ -1,0 +1,91 @@
+{
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "scope": "Two reserved isolated packages on unchangedc9core; sourceIDofflineonly, not integrated/livePreview",
+  "coreUnchanged": true,
+  "paidCalls": 0,
+  "companies": {
+    "gom": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "chu"
+          },
+          "id": "chu",
+          "url": "https://gom-perfumes.cz/product/chu/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "nyi-ma"
+          },
+          "id": "nyi-ma",
+          "url": "https://gom-perfumes.cz/product/nyi-ma/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "rlung"
+          },
+          "id": "rlung",
+          "url": "https://gom-perfumes.cz/product/rlung/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "woods",
+            "fragranceProfile": "rgyal-mo"
+          },
+          "id": "rgyal-mo",
+          "url": "https://gom-perfumes.cz/product/rgyal-mo/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "woods",
+            "fragranceProfile": "rgyal-po"
+          },
+          "id": "rgyal-po",
+          "url": "https://gom-perfumes.cz/product/rgyal-po/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "citrus",
+              "woods"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "chu",
+              "nyi-ma",
+              "rlung"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "woods"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "rgyal-mo",
+              "rgyal-po"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 5,
+      "status": "PASS"
+    }
+  }
+}

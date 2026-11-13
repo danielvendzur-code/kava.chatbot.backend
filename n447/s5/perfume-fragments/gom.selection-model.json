@@ -1,0 +1,52 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "citrus",
+      "label": "Citrusy, čaj a zelené tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "chu",
+          "label": "Bergamot, limeta a šalvěj",
+          "productId": "chu",
+          "sourceUrl": "https://gom-perfumes.cz/product/chu/"
+        },
+        {
+          "value": "nyi-ma",
+          "label": "Grep, bílý čaj a kardamom",
+          "productId": "nyi-ma",
+          "sourceUrl": "https://gom-perfumes.cz/product/nyi-ma/"
+        },
+        {
+          "value": "rlung",
+          "label": "Yuzu, mandarinka a kadidlo",
+          "productId": "rlung",
+          "sourceUrl": "https://gom-perfumes.cz/product/rlung/"
+        }
+      ]
+    },
+    {
+      "value": "woods",
+      "label": "Tabák, koření a dřevité tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "rgyal-mo",
+          "label": "Černý rybíz, tabák a tonka",
+          "productId": "rgyal-mo",
+          "sourceUrl": "https://gom-perfumes.cz/product/rgyal-mo/"
+        },
+        {
+          "value": "rgyal-po",
+          "label": "Pepř, tabák a cedr",
+          "productId": "rgyal-po",
+          "sourceUrl": "https://gom-perfumes.cz/product/rgyal-po/"
+        }
+      ]
+    }
+  ]
+}

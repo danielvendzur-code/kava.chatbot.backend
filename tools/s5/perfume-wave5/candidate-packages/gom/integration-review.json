@@ -1,0 +1,204 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "GOM Perfumes",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/gom/logo.svg",
+      "header": "/assets/s5/gom/logo.svg",
+      "avatar": "/assets/s5/gom/avatar.svg"
+    },
+    "brand": {
+      "name": "GOM Perfumes",
+      "domain": "gom-perfumes.cz",
+      "website": "https://gom-perfumes.cz/",
+      "lang": "cs",
+      "fullName": "GOM Perfumes",
+      "url": "https://gom-perfumes.cz/",
+      "logo": "/assets/s5/gom/logo.svg",
+      "mark": "/assets/s5/gom/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat pět vůní GOM, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Bergamot a limeta",
+        "Grep a bílý čaj",
+        "Tabák a tonka",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#282a25",
+        "accent": "#846326",
+        "soft": "#f5f2e9",
+        "paper": "#ffffff",
+        "ink": "#252720",
+        "line": "#e2dfd4"
+      }
+    },
+    "traitCopy": {
+      "citrus": [
+        "Citrusy, čaj a zelené tóny",
+        "",
+        "Citrusy, čaj a zelené tóny",
+        ""
+      ],
+      "chu": [
+        "Bergamot, limeta a šalvěj",
+        "",
+        "Bergamot, limeta a šalvěj",
+        ""
+      ],
+      "nyi-ma": [
+        "Grep, bílý čaj a kardamom",
+        "",
+        "Grep, bílý čaj a kardamom",
+        ""
+      ],
+      "rlung": [
+        "Yuzu, mandarinka a kadidlo",
+        "",
+        "Yuzu, mandarinka a kadidlo",
+        ""
+      ],
+      "woods": [
+        "Tabák, koření a dřevité tóny",
+        "",
+        "Tabák, koření a dřevité tóny",
+        ""
+      ],
+      "rgyal-mo": [
+        "Černý rybíz, tabák a tonka",
+        "",
+        "Černý rybíz, tabák a tonka",
+        ""
+      ],
+      "rgyal-po": [
+        "Pepř, tabák a cedr",
+        "",
+        "Pepř, tabák a cedr",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "citrus": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "chu": [
+        "/assets/s5/gom/chu-50ml.webp"
+      ],
+      "nyi-ma": [
+        "/assets/s5/gom/nyi-ma-50ml.webp"
+      ],
+      "rlung": [
+        "/assets/s5/gom/rlung-50ml.webp"
+      ],
+      "woods": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "rgyal-mo": [
+        "/assets/s5/gom/rgyal-mo-50ml.webp"
+      ],
+      "rgyal-po": [
+        "/assets/s5/gom/rgyal-po-50ml.webp"
+      ]
+    },
+    "compareProductIds": [
+      "chu",
+      "rgyal-mo"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni GOM s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, konkrétní balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat pět vůní GOM, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "gom-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "chu": "nyi-ma",
+        "nyi-ma": "rlung",
+        "rlung": "chu",
+        "rgyal-mo": "rgyal-po",
+        "rgyal-po": "rgyal-mo"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/gom.js",
+  "backendBrand": "gom",
+  "offlineRules": [
+    {
+      "chip": "Bergamot a limeta",
+      "match": "bergamot.*limet",
+      "productIds": [
+        "chu"
+      ]
+    },
+    {
+      "chip": "Grep a bílý čaj",
+      "match": "grep.*bily.*caj",
+      "productIds": [
+        "nyi-ma"
+      ]
+    },
+    {
+      "chip": "Tabák a tonka",
+      "match": "tabak.*tonka",
+      "productIds": [
+        "rgyal-mo"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-wave5/candidate-packages/gom/ui-review.css",
+    "destination": "n447/s5/brands/gom.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/gom.css"
+    }
+  },
+  "presentationRequirement": "Existinga918presentation plus explicitnewslugbody.dataset.fragranceProfile=visual-v1; standalone owner polish optional new includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PRICING_REVIEW_SECONDARY2024_BAND10_30M_CZK_LATEST2025_UNKNOWN",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}
