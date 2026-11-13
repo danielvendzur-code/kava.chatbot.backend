@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy, jablko a zelené tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "kara",
+          "label": "Jablko, bambus a bílé pižmo",
+          "productId": "kara",
+          "sourceUrl": "https://www.yodeymaparfemy.cz/kara/"
+        },
+        {
+          "value": "caribbean",
+          "label": "Bergamotka, růžový pepř a dřevo",
+          "productId": "caribbean",
+          "sourceUrl": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/"
+        }
+      ]
+    },
+    {
+      "value": "flowers",
+      "label": "Jasmín, růže a květ pomerančovníku",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "iris",
+          "label": "Jasmín, květ pomerančovníku a jantar",
+          "productId": "iris",
+          "sourceUrl": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/"
+        },
+        {
+          "value": "cheante",
+          "label": "Mandarinka, růže a pačuli",
+          "productId": "cheante",
+          "sourceUrl": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/"
+        }
+      ]
+    },
+    {
+      "value": "grapefruit",
+      "label": "Grapefruit a pačuli",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "power",
+          "label": "Grapefruit, skořice a pačuli",
+          "productId": "power",
+          "sourceUrl": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/"
+        },
+        {
+          "value": "root",
+          "label": "Grapefruit, pelargonie a pačuli",
+          "productId": "root",
+          "sourceUrl": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/"
+        }
+      ]
+    }
+  ]
+}

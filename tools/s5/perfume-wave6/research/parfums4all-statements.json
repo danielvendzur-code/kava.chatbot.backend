@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://www.registeruz.sk/cruz-public/api/uctovna-zavierka?id=6992501",
+    "at": "2026-11-13T18:13:12.000050+00:00",
+    "data": {
+      "id": 6992501,
+      "datumZostaveniaK": "2025-12-31",
+      "idUJ": 591157,
+      "idUctovnychVykazov": [
+        10295275
+      ],
+      "zdrojDat": "FRSR",
+      "datumPoslednejUpravy": "2026-06-29",
+      "typ": "Riadna",
+      "obdobieOd": "2025-01",
+      "datumZostavenia": "2026-06-25",
+      "datumSchvalenia": "2026-06-25",
+      "obdobieDo": "2025-12",
+      "datumPodania": "2026-06-28"
+    }
+  },
+  {
+    "url": "https://www.registeruz.sk/cruz-public/api/uctovna-zavierka?id=6450905",
+    "at": "2026-11-13T18:13:11.798000+00:00",
+    "data": {
+      "id": 6450905,
+      "datumZostaveniaK": "2024-12-31",
+      "idUJ": 591157,
+      "idUctovnychVykazov": [
+        9663404
+      ],
+      "zdrojDat": "FRSR",
+      "datumPoslednejUpravy": "2025-06-16",
+      "typ": "Riadna",
+      "obdobieOd": "2024-01",
+      "datumZostavenia": "2025-06-10",
+      "datumSchvalenia": "2025-06-15",
+      "obdobieDo": "2024-12",
+      "datumPodania": "2025-06-15"
+    }
+  },
+  {
+    "url": "https://www.registeruz.sk/cruz-public/api/uctovna-zavierka?id=5988821",
+    "at": "2026-11-13T18:13:11.614810+00:00",
+    "data": {
+      "id": 5988821,
+      "datumZostaveniaK": "2023-12-31",
+      "idUJ": 591157,
+      "idUctovnychVykazov": [
+        9121467
+      ],
+      "zdrojDat": "FRSR",
+      "datumPoslednejUpravy": "2024-06-14",
+      "typ": "Riadna",
+      "obdobieOd": "2023-01",
+      "datumZostavenia": "2024-05-27",
+      "datumSchvalenia": "2024-06-14",
+      "obdobieDo": "2023-12",
+      "datumPodania": "2024-06-14"
+    }
+  }
+]

@@ -1,0 +1,194 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Parfums4all",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/parfums4all/logo.png",
+      "header": "/assets/s5/parfums4all/logo.png",
+      "avatar": "/assets/s5/parfums4all/avatar.png"
+    },
+    "brand": {
+      "name": "Parfums4all",
+      "domain": "parfums4all.sk",
+      "website": "https://www.parfums4all.sk/",
+      "lang": "sk",
+      "fullName": "Parfums4all",
+      "url": "https://www.parfums4all.sk/",
+      "logo": "/assets/s5/parfums4all/logo.png",
+      "mark": "/assets/s5/parfums4all/avatar.png",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône, ich tóny, balenia a ceny.",
+      "quickChips": [
+        "Citrusy a morské tóny",
+        "Mandarínka a ruža",
+        "Mandle a šafran",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#006b5c",
+        "accent": "#a65115",
+        "soft": "#f4faf7",
+        "paper": "#ffffff",
+        "ink": "#133e35",
+        "line": "#dbe9e2"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, morské tóny a kvety",
+        "",
+        "Citrusy, morské tóny a kvety",
+        ""
+      ],
+      "ardagio-aqua-classic-for-men-edp-100ml": [
+        "Citrusy, morské tóny a jazmín",
+        "",
+        "Citrusy, morské tóny a jazmín",
+        ""
+      ],
+      "elite-edp-100ml": [
+        "Mandarínka, frézia a ruža",
+        "",
+        "Mandarínka, frézia a ruža",
+        ""
+      ],
+      "warm": [
+        "Škorica, mandle a drevité tóny",
+        "",
+        "Škorica, mandle a drevité tóny",
+        ""
+      ],
+      "marine-men-edp-100ml": [
+        "Bergamot, mäta, škorica a vanilka",
+        "",
+        "Bergamot, mäta, škorica a vanilka",
+        ""
+      ],
+      "experience-edp-100ml": [
+        "Horká mandľa, šafran a céder",
+        "",
+        "Horká mandľa, šafran a céder",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "ardagio-aqua-classic-for-men-edp-100ml": [
+        "/assets/s5/parfums4all/ardagio-aqua-classic-for-men-edp-100ml.jpg"
+      ],
+      "elite-edp-100ml": [
+        "/assets/s5/parfums4all/elite-edp-100ml.jpg"
+      ],
+      "warm": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "marine-men-edp-100ml": [
+        "/assets/s5/parfums4all/marine-men-edp-100ml.png"
+      ],
+      "experience-edp-100ml": [
+        "/assets/s5/parfums4all/experience-edp-100ml.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "ardagio-aqua-classic-for-men-edp-100ml",
+      "experience-edp-100ml"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétna vôňa · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu podľa jeho vkusu.",
+      "lead": "Výber ukáže konkrétnu vôňu s fotografiou, profilom tónov, presným balením, cenou a odkazom. Dve odlišné vône možno porovnať.",
+      "includedChat": "Vonné tóny, balenia, ceny a porovnanie vybraných vôní.",
+      "includedAdvisor": "Výber vône, jej profil a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "parfums4all-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "ardagio-aqua-classic-for-men-edp-100ml": "elite-edp-100ml",
+        "elite-edp-100ml": "ardagio-aqua-classic-for-men-edp-100ml",
+        "marine-men-edp-100ml": "experience-edp-100ml",
+        "experience-edp-100ml": "marine-men-edp-100ml"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/parfums4all.js",
+  "backendBrand": "parfums4all",
+  "offlineRules": [
+    {
+      "chip": "Citrusy a morské tóny",
+      "match": "citrus.*morsk",
+      "productIds": [
+        "ardagio-aqua-classic-for-men-edp-100ml"
+      ]
+    },
+    {
+      "chip": "Mandarínka a ruža",
+      "match": "mandarinka.*ruza",
+      "productIds": [
+        "elite-edp-100ml"
+      ]
+    },
+    {
+      "chip": "Mandle a šafran",
+      "match": "mandl.*safran",
+      "productIds": [
+        "experience-edp-100ml"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-wave6/candidate-packages/parfums4all/ui-review.css",
+    "destination": "n447/s5/brands/parfums4all.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/parfums4all.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "OFFICIAL2025_SALES_PREFERRED_TIER_PASS_FIT_REVIEW_MANUAL_CONVERTER",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}

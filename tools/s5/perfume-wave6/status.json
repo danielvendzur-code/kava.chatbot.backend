@@ -1,0 +1,25 @@
+{
+  "at": "2026-11-13T18:39:50.267058+00:00",
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "targetNewBatch": 15,
+  "priorLocallyComplete": 6,
+  "wave6LocallyComplete": 2,
+  "newBatchLocallyComplete": 8,
+  "newBatchLiveReady": "UNKNOWN_MAIN_OWNS_INTEGRATION_AND_LIVE_QA",
+  "companies": {
+    "parfums4all": {
+      "primaryFormulas": 4,
+      "finalLocalResultViews": 12
+    },
+    "yodeymaparfemy": {
+      "primaryFormulas": 6,
+      "finalLocalResultViews": 18,
+      "optional15mlVariants": 6,
+      "variantsNotExtraFormulas": true
+    }
+  },
+  "coreUnchanged": true,
+  "paidCalls": 0,
+  "mailActions": 0
+}

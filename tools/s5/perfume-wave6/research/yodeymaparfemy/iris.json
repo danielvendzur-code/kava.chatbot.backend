@@ -1,0 +1,201 @@
+{
+  "id": "iris",
+  "name": "Yodeyma Iris",
+  "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+  "checkedAt": "2026-11-13T18:19:38.846521+00:00",
+  "sourceSha256": "ec480edcda18bd5583db4a233097efb58912b7de70fe23dead16084df802d9f8",
+  "offers": [
+    {
+      "sku": "13021-49618",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+      "price": "179.00",
+      "priceCurrency": "CZK",
+      "itemCondition": "https://schema.org/NewCondition"
+    },
+    {
+      "sku": "13021-49617",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+      "price": "399.00",
+      "priceCurrency": "CZK",
+      "itemCondition": "https://schema.org/NewCondition"
+    },
+    {
+      "sku": "13021-49615",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+      "price": "669.00",
+      "priceCurrency": "CZK",
+      "itemCondition": "https://schema.org/NewCondition"
+    },
+    {
+      "sku": "64/15",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+      "price": "139.00",
+      "priceCurrency": "CZK",
+      "itemCondition": "https://schema.org/NewCondition"
+    },
+    {
+      "sku": "64/100",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+      "price": "759.00",
+      "priceCurrency": "CZK",
+      "itemCondition": "https://schema.org/NewCondition"
+    },
+    {
+      "sku": "64/101",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+      "price": "879.00",
+      "priceCurrency": "CZK",
+      "itemCondition": "https://schema.org/NewCondition"
+    },
+    {
+      "sku": "64/50",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+      "price": "639.00",
+      "priceCurrency": "CZK",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  ],
+  "variants": [
+    {
+      "priceId": "85",
+      "label": "Parfémovaná voda: 15",
+      "attributes": {
+        "type": "radio",
+        "name": "priceId",
+        "value": "85",
+        "data-min": "1",
+        "data-max": "9999",
+        "data-decimals": "0",
+        "data-codeid": "85",
+        "data-customerprice": "179",
+        "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+        "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+        "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+        "data-index": "1",
+        "aria-labelledby": "variant-name-85"
+      }
+    },
+    {
+      "priceId": "82",
+      "label": "Parfémovaná voda: 50",
+      "attributes": {
+        "type": "radio",
+        "name": "priceId",
+        "value": "82",
+        "data-min": "1",
+        "data-max": "9999",
+        "data-decimals": "0",
+        "data-codeid": "82",
+        "data-customerprice": "399",
+        "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-4_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+        "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-4_iris--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+        "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-4_iris--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+        "data-index": "2",
+        "aria-labelledby": "variant-name-82"
+      }
+    },
+    {
+      "priceId": "79",
+      "label": "Parfémovaná voda: 100",
+      "attributes": {
+        "type": "radio",
+        "name": "priceId",
+        "value": "79",
+        "data-min": "1",
+        "data-max": "9999",
+        "data-decimals": "0",
+        "data-codeid": "79",
+        "data-customerprice": "669",
+        "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-3_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+        "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-3_iris--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+        "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-3_iris--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+        "data-index": "3",
+        "aria-labelledby": "variant-name-79"
+      }
+    },
+    {
+      "priceId": "1942",
+      "label": "Varianta: 15 ml - Eko kabelkové balení (s víčkem bez obalu)",
+      "attributes": {
+        "type": "radio",
+        "name": "priceId",
+        "value": "1942",
+        "data-min": "1",
+        "data-max": "9999",
+        "data-decimals": "0",
+        "data-codeid": "1942",
+        "data-customerprice": "139",
+        "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+        "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+        "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+        "data-index": "4",
+        "aria-labelledby": "variant-name-1942"
+      }
+    },
+    {
+      "priceId": "762",
+      "label": "Luxusní dárkové balení: 100ml",
+      "attributes": {
+        "type": "radio",
+        "name": "priceId",
+        "value": "762",
+        "data-min": "1",
+        "data-max": "9999",
+        "data-decimals": "0",
+        "data-codeid": "762",
+        "data-customerprice": "759",
+        "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-1_darkovy-set-damsky.jpg?ff=1&x=1024&y=768&q=85&ts=659406a6&sg=161563f2",
+        "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-1_darkovy-set-damsky.jpg?ff=1&x=423&y=318&q=85&ts=659406a6&sg=2175fb9d",
+        "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-1_darkovy-set-damsky.jpg?ff=1&x=290&y=218&q=85&ts=659406a6&sg=2f1e9886",
+        "data-index": "5",
+        "aria-labelledby": "variant-name-762"
+      }
+    },
+    {
+      "priceId": "765",
+      "label": "Luxusní dárkové balení: 100ml + mini parfém",
+      "attributes": {
+        "type": "radio",
+        "name": "priceId",
+        "value": "765",
+        "data-min": "1",
+        "data-max": "9999",
+        "data-decimals": "0",
+        "data-codeid": "765",
+        "data-customerprice": "879",
+        "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-2_darkovy-set-damsky-1.jpg?ff=1&x=1024&y=768&q=85&ts=659406a7&sg=161563f2",
+        "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-2_darkovy-set-damsky-1.jpg?ff=1&x=423&y=318&q=85&ts=659406a7&sg=2175fb9d",
+        "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-2_darkovy-set-damsky-1.jpg?ff=1&x=290&y=218&q=85&ts=659406a7&sg=2f1e9886",
+        "data-index": "6",
+        "aria-labelledby": "variant-name-765"
+      }
+    },
+    {
+      "priceId": "1371",
+      "label": "Luxusní dárkové balení: 50 ml + mini parfém",
+      "attributes": {
+        "type": "radio",
+        "name": "priceId",
+        "value": "1371",
+        "data-min": "1",
+        "data-max": "9999",
+        "data-decimals": "0",
+        "data-codeid": "1371",
+        "data-customerprice": "639",
+        "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64_damsky-set-50.jpg?ff=1&x=1024&y=768&q=85&ts=659406a6&sg=161563f2",
+        "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64_damsky-set-50.jpg?ff=1&x=423&y=318&q=85&ts=659406a6&sg=2175fb9d",
+        "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64_damsky-set-50.jpg?ff=1&x=290&y=218&q=85&ts=659406a6&sg=2f1e9886",
+        "data-index": "7",
+        "aria-labelledby": "variant-name-1371"
+      }
+    }
+  ],
+  "description": "Detailní popis produktu Yodeyma Iris - to jsou orientální a květinové vonné tóny. Iris je parfém s úžasnou energickou sílou pro rafinovanou ženu s výborným vkusem. Okouzlí vás třemi vonnými složkami, jejichž kombinace dodává vůni jedinečný nádech. Úvodním tónem YODEYMA Iris je opravdu výrazný jasmín, který se snoubí s hřejivým kašmírovým dřevem. V základu vůně se ukrývá výjimečná vůně ambry, díky které nezůstanete bez povšimnutí. Iris je fascinující parfém plný energie pro ženu s vytříbeným vkusem. VONNÉ TÓNY Hlava (vysoké tóny) utváří první dojem parfému.Srdce (střední tóny) představuje duši parfému.Základ (nízké tóny) vytváří hloubku vůně parfému. Hlava (vysoké tóny) Jasmín Srdce (střední tóny) Květ pomerančovníku Základ (nízké tóny) Bílý jantar"
+}

@@ -1,0 +1,84 @@
+{
+  "url": "https://api.statistics.sk/rpo/v1/search?identifier=36291781",
+  "at": "2026-11-13T18:13:11.236507+00:00",
+  "data": {
+    "results": [
+      {
+        "id": 641902,
+        "dbModificationDate": "2025-07-07",
+        "identifiers": [
+          {
+            "value": "36291781",
+            "validFrom": "2006-04-08"
+          }
+        ],
+        "fullNames": [
+          {
+            "value": "ZANA SHOP, s.r.o.",
+            "validFrom": "2006-04-08"
+          }
+        ],
+        "addresses": [
+          {
+            "validFrom": "2014-11-06",
+            "street": "Bárdošova",
+            "regNumber": 0,
+            "buildingNumber": "12",
+            "postalCodes": [
+              "83101"
+            ],
+            "municipality": {
+              "value": "Bratislava"
+            },
+            "country": {
+              "value": "Slovenská republika",
+              "code": "703",
+              "codelistCode": "CL000086"
+            }
+          },
+          {
+            "validFrom": "2006-04-08",
+            "validTo": "2014-11-05",
+            "street": "Hlavná",
+            "regNumber": 0,
+            "buildingNumber": "53",
+            "postalCodes": [
+              "90031"
+            ],
+            "municipality": {
+              "value": "Stupava",
+              "code": "SK0106508233",
+              "codelistCode": "CL000025"
+            },
+            "country": {
+              "value": "Slovenská republika",
+              "code": "703",
+              "codelistCode": "CL000086"
+            }
+          }
+        ],
+        "establishment": "2006-04-08",
+        "sourceRegister": {
+          "value": {
+            "value": "Obchodný register",
+            "code": "1",
+            "codelistCode": "CL010112"
+          },
+          "registrationOffices": [
+            {
+              "value": "Mestský súd Bratislava III",
+              "validFrom": "2006-04-08"
+            }
+          ],
+          "registrationNumbers": [
+            {
+              "value": "Sro/40174/B",
+              "validFrom": "2006-04-08"
+            }
+          ]
+        }
+      }
+    ],
+    "license": "1. ŠÚ SR ako správca informačného systému RPO uplatňuje na použitie sprístupnených údajov z RPO uvedených v § 7 ods. 2 a § 7a ods. 4 zákona č. 272/2015 Z. z. o registri právnických osôb, podnikateľov a orgánov verejnej moci a o zmene a doplnení niektorých zákonov (ďalej len „zákon o registri právnických osôb“) medzinárodnú verejnú licenciu Creative Commons Attribution License (cc-by) 4.0 (ďalej len „verejná licencia“).\n2. Predmetom verejnej licencie sú sprístupnené údaje z RPO prostredníctvom webového sídla ŠÚ SR v zmysle § 7 ods. 2 a § 7a ods. 4 zákona o registri právnických osôb.\n3. ŠÚ SR udeľuje súhlas na použitie predmetu verejnej licencie a výkon licencovaných práv („licencia“) podľa vyššie citovanej verejnej licencie."
+  }
+}

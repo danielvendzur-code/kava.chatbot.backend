@@ -1,0 +1,46 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aká vôňa je vám blízka?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy, morské tóny a kvety",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "ardagio-aqua-classic-for-men-edp-100ml",
+          "label": "Citrusy, morské tóny a jazmín",
+          "productId": "ardagio-aqua-classic-for-men-edp-100ml",
+          "sourceUrl": "https://www.parfums4all.sk/produkt/ardagio-aqua-classic-for-men-edp-100ml/"
+        },
+        {
+          "value": "elite-edp-100ml",
+          "label": "Mandarínka, frézia a ruža",
+          "productId": "elite-edp-100ml",
+          "sourceUrl": "https://www.parfums4all.sk/produkt/elite-edp-100ml/"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Škorica, mandle a drevité tóny",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "marine-men-edp-100ml",
+          "label": "Bergamot, mäta, škorica a vanilka",
+          "productId": "marine-men-edp-100ml",
+          "sourceUrl": "https://www.parfums4all.sk/produkt/marine-men-edp-100ml/"
+        },
+        {
+          "value": "experience-edp-100ml",
+          "label": "Horká mandľa, šafran a céder",
+          "productId": "experience-edp-100ml",
+          "sourceUrl": "https://www.parfums4all.sk/produkt/experience-edp-100ml/"
+        }
+      ]
+    }
+  ]
+}

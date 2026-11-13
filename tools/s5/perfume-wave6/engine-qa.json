@@ -1,0 +1,185 @@
+{
+  "commit": "9db9426a55dffef4e20e9854ca8192020a28a390",
+  "scope": "Two reserved isolated packages on unchangedc9core; sourceIDofflineonly, not integrated/livePreview",
+  "coreUnchanged": true,
+  "paidCalls": 0,
+  "companies": {
+    "parfums4all": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "ardagio-aqua-classic-for-men-edp-100ml"
+          },
+          "id": "ardagio-aqua-classic-for-men-edp-100ml",
+          "url": "https://www.parfums4all.sk/produkt/ardagio-aqua-classic-for-men-edp-100ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "elite-edp-100ml"
+          },
+          "id": "elite-edp-100ml",
+          "url": "https://www.parfums4all.sk/produkt/elite-edp-100ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "marine-men-edp-100ml"
+          },
+          "id": "marine-men-edp-100ml",
+          "url": "https://www.parfums4all.sk/produkt/marine-men-edp-100ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "experience-edp-100ml"
+          },
+          "id": "experience-edp-100ml",
+          "url": "https://www.parfums4all.sk/produkt/experience-edp-100ml/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "warm"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "ardagio-aqua-classic-for-men-edp-100ml",
+              "elite-edp-100ml"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "marine-men-edp-100ml",
+              "experience-edp-100ml"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 4,
+      "status": "PASS"
+    },
+    "yodeymaparfemy": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "kara"
+          },
+          "id": "kara",
+          "url": "https://www.yodeymaparfemy.cz/kara/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "caribbean"
+          },
+          "id": "caribbean",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "iris"
+          },
+          "id": "iris",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "cheante"
+          },
+          "id": "cheante",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "grapefruit",
+            "fragranceProfile": "power"
+          },
+          "id": "power",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "grapefruit",
+            "fragranceProfile": "root"
+          },
+          "id": "root",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "flowers",
+              "grapefruit"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "kara",
+              "caribbean"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "iris",
+              "cheante"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "grapefruit"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "power",
+              "root"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    }
+  }
+}

@@ -1,0 +1,897 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.yodeymaparfemy = {
+ "brand": "Yodeyma parfémy.cz",
+ "domain": "yodeymaparfemy.cz",
+ "operator": {
+  "name": "Lukegroup store s.r.o.",
+  "ico": "05890969",
+  "country": "CZ",
+  "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05890969",
+  "activeNoEnd": true
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "cs",
+ "country": "CZ",
+ "currency": "CZK",
+ "status": "SOURCE_PACKAGE_VERIFIED",
+ "products": [
+  {
+   "id": "kara",
+   "name": "Yodeyma Kara",
+   "url": "https://www.yodeymaparfemy.cz/kara/",
+   "priceAmount": 399.0,
+   "price": "399 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfémovaná voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Jablko, bambus a bílé pižmo. Alternativní vůně Yodeyma; nejde o originál jiné značky.",
+   "reason": "Jablko, bambus a bílé pižmo. Alternativní vůně Yodeyma; nejde o originál jiné značky.",
+   "photo": "/assets/s5/yodeymaparfemy/kara-50ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.yodeymaparfemy.cz/kara/",
+    "verifiedAt": "2026-11-13T18:22:18.000755+00:00",
+    "sourceSha256": "fe143451179112d7433fb4458e75f0391665a2a92bf258ea47e27beeef3ceb0e",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "ShoptetPublicVariantOffer",
+     "priceId": "238",
+     "sku": "13048-49678",
+     "availabilityUrl": "https://schema.org/InStock",
+     "variantLabel": "Parfémovaná voda: 50",
+     "qualification": "Exactstandard50mlradio data-index joined to actual variant SKU and matching microdata Offer/InStock, not default139FROMprice or cartbutton. Visible Centrální sklad/delivery shown separately, not promise physicallyonshelf."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 399.0,
+     "currency": "CZK",
+     "sourceVariantLabel": "Parfémovaná voda: 50",
+     "radioCustomerPrice": "399",
+     "offerPrice": "399.00",
+     "vatSource": "https://www.yodeymaparfemy.cz/obchodni-podminky/",
+     "vatEvidence": "Official consumerterms prices VATincluded; exact anonymous public variant offer399CZK. Terms also contain seller nonpayer declaration; current VATregistration not asserted, final consumerprice unchanged."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "Parfémovaná voda: 50",
+     "priceId": "238",
+     "sku": "13048-49678",
+     "scope": "StandardParfemovanaVoda50orVarianta50; not luxurygift50+mini,100ml,15mlor eco15."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/133-4_kara--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+    "photoEvidence": {
+     "id": "kara-50ml",
+     "url": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/133-4_kara--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+     "file": "kara-50ml.jpg",
+     "bytes": 51902,
+     "width": 1024,
+     "height": 768,
+     "sha256": "990a87e459168fdbe9ed4fa6e5a1adb8f6177b859f758548259e99819a4e8039",
+     "originalBytes": true,
+     "selectedPack": "50 ml",
+     "qualification": "Official published CDN variant image fetched unchanged; filename not used to infer pack."
+    },
+    "identityDisclosure": "ActualYodeymaalternativebrand, not designeroriginal. Exactvariant50mlphoto comes fromradio data-big, not inferred from misleading100.jpgfilename.",
+    "scent": "Jablko, bambus a bílé pižmo",
+    "fragrance": {
+     "notes": [
+      "Jablko",
+      "Bambus",
+      "Bílé pižmo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfémovaná voda",
+     "notesEvidence": {
+      "url": "https://www.yodeymaparfemy.cz/kara/",
+      "sourceText": "Hlava: Jablko; Srdce: Bambus; Základ: Bílé pižmo",
+      "originalSourceText": "Hlava (vysoké tóny) Jablko Srdce (střední tóny) Bambus Základ (nízké tóny) Bílé pižmo",
+      "sourceLanguage": "cs",
+      "displayLanguage": "cs",
+      "scope": "Literal explicit finalnote pyramid, not introductorydefinition or contradictory narrative. Three realnotes accepted, never padded to four/invented notes."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No designer-equivalence, health, longevity/personality guarantees.",
+     "No noteweights, intensity or salesguarantees."
+    ],
+    "upsellVariants": [
+     {
+      "id": "kara-15ml",
+      "parentProductId": "kara",
+      "sameFormula": true,
+      "available": true,
+      "currency": "CZK",
+      "name": "Yodeyma Kara",
+      "volume": "15 ml",
+      "priceAmount": 179.0,
+      "price": "179 Kč",
+      "url": "https://www.yodeymaparfemy.cz/kara/",
+      "variantSelectionRequired": true,
+      "photo": "/assets/s5/yodeymaparfemy/kara-15ml.jpg",
+      "photoEvidence": {
+       "id": "kara-15ml",
+       "url": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/133-5_kara--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+       "file": "kara-15ml.jpg",
+       "bytes": 27089,
+       "width": 1024,
+       "height": 768,
+       "sha256": "d151c3be5abaf793494d07d6cfd17ef101ca1925dd77d93ffdd68627ea9ed0c0",
+       "originalBytes": true,
+       "selectedPack": "15 ml",
+       "qualification": "Official published CDN variant image fetched unchanged; filename not used to infer pack."
+      },
+      "evidence": {
+       "scope": "ShoptetPublicVariantOffer",
+       "exactVariantId": "241",
+       "sku": "13048-49679",
+       "sourceSha256": "fe143451179112d7433fb4458e75f0391665a2a92bf258ea47e27beeef3ceb0e",
+       "checkedAt": "2026-11-13T18:22:18.000755+00:00",
+       "stock": "InStock",
+       "isNotSoldOut": true,
+       "availabilityUrl": "https://schema.org/InStock",
+       "sourceUrl": "https://www.yodeymaparfemy.cz/kara/",
+       "parentProductUrl": "https://www.yodeymaparfemy.cz/kara/",
+       "variantLabel": "Parfémovaná voda: 15",
+       "qualification": "isNotSoldOut faithfully maps exact public Offer InStock bySKU/data-index. Not Shopify. Standard15ml179 noteco139. SameparentURLrequiresselectingpack."
+      }
+     }
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "kara"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.yodeymaparfemy.cz/kara/",
+     "sourceText": "Hlava: Jablko; Srdce: Bambus; Základ: Bílé pižmo",
+     "navigationLabel": "Jablko, bambus a bílé pižmo",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "caribbean",
+   "name": "Yodeyma Caribbean",
+   "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+   "priceAmount": 399.0,
+   "price": "399 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfémovaná voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Bergamotka, růžový pepř a dřevo. Alternativní vůně Yodeyma; nejde o originál jiné značky.",
+   "reason": "Bergamotka, růžový pepř a dřevo. Alternativní vůně Yodeyma; nejde o originál jiné značky.",
+   "photo": "/assets/s5/yodeymaparfemy/caribbean-50ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+    "verifiedAt": "2026-11-13T18:24:15.728655+00:00",
+    "sourceSha256": "bf51db6dfbc3562e87a5b61d7756e167d052fdcf5c7657a7201dbdf07adbfd98",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "ShoptetPublicVariantOffer",
+     "priceId": "445",
+     "sku": "13076-49764",
+     "availabilityUrl": "https://schema.org/InStock",
+     "variantLabel": "Parfémovaná voda: 50",
+     "qualification": "Exactstandard50mlradio data-index joined to actual variant SKU and matching microdata Offer/InStock, not default139FROMprice or cartbutton. Visible Centrální sklad/delivery shown separately, not promise physicallyonshelf."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 399.0,
+     "currency": "CZK",
+     "sourceVariantLabel": "Parfémovaná voda: 50",
+     "radioCustomerPrice": "399",
+     "offerPrice": "399.00",
+     "vatSource": "https://www.yodeymaparfemy.cz/obchodni-podminky/",
+     "vatEvidence": "Official consumerterms prices VATincluded; exact anonymous public variant offer399CZK. Terms also contain seller nonpayer declaration; current VATregistration not asserted, final consumerprice unchanged."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "Parfémovaná voda: 50",
+     "priceId": "445",
+     "sku": "13076-49764",
+     "scope": "StandardParfemovanaVoda50orVarianta50; not luxurygift50+mini,100ml,15mlor eco15."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/214-5_caribbean--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231fc&sg=161563f2",
+    "photoEvidence": {
+     "id": "caribbean-50ml",
+     "url": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/214-5_caribbean--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231fc&sg=161563f2",
+     "file": "caribbean-50ml.jpg",
+     "bytes": 76304,
+     "width": 1024,
+     "height": 768,
+     "sha256": "79b891097a33d9b6b3dca9fe6478784634e3d85bf17958bbff69e16d5fd151df",
+     "originalBytes": true,
+     "selectedPack": "50 ml",
+     "qualification": "Official published CDN variant image fetched unchanged; filename not used to infer pack."
+    },
+    "identityDisclosure": "ActualYodeymaalternativebrand, not designeroriginal. Exactvariant50mlphoto comes fromradio data-big, not inferred from misleading100.jpgfilename.",
+    "scent": "Bergamotka, růžový pepř a dřevo",
+    "fragrance": {
+     "notes": [
+      "Bergamotka",
+      "Růžový pepř",
+      "Dřevo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfémovaná voda",
+     "notesEvidence": {
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+      "sourceText": "Hlava: Bergamotka; Srdce: Růžový pepř; Základ: Dřevo",
+      "originalSourceText": "Hlava (vysoké tóny) Bergamotka Srdce (střední tóny) Růžový pepř Základ (nízké tóny) Dřevo",
+      "sourceLanguage": "cs",
+      "displayLanguage": "cs",
+      "scope": "Literal explicit finalnote pyramid, not introductorydefinition or contradictory narrative. Three realnotes accepted, never padded to four/invented notes."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No designer-equivalence, health, longevity/personality guarantees.",
+     "No noteweights, intensity or salesguarantees."
+    ],
+    "upsellVariants": [
+     {
+      "id": "caribbean-15ml",
+      "parentProductId": "caribbean",
+      "sameFormula": true,
+      "available": true,
+      "currency": "CZK",
+      "name": "Yodeyma Caribbean",
+      "volume": "15 ml",
+      "priceAmount": 179.0,
+      "price": "179 Kč",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+      "variantSelectionRequired": true,
+      "photo": "/assets/s5/yodeymaparfemy/caribbean-15ml.jpg",
+      "photoEvidence": {
+       "id": "caribbean-15ml",
+       "url": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/214-3_caribbean--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231fc&sg=161563f2",
+       "file": "caribbean-15ml.jpg",
+       "bytes": 23381,
+       "width": 1024,
+       "height": 768,
+       "sha256": "482c1125d9d4316b72cdbca760b1bff2415cde4655b9d003c666cb1d59d8b306",
+       "originalBytes": true,
+       "selectedPack": "15 ml",
+       "qualification": "Official published CDN variant image fetched unchanged; filename not used to infer pack."
+      },
+      "evidence": {
+       "scope": "ShoptetPublicVariantOffer",
+       "exactVariantId": "442",
+       "sku": "13076-49762",
+       "sourceSha256": "bf51db6dfbc3562e87a5b61d7756e167d052fdcf5c7657a7201dbdf07adbfd98",
+       "checkedAt": "2026-11-13T18:24:15.728655+00:00",
+       "stock": "InStock",
+       "isNotSoldOut": true,
+       "availabilityUrl": "https://schema.org/InStock",
+       "sourceUrl": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+       "parentProductUrl": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+       "variantLabel": "Parfémovaná voda: 15",
+       "qualification": "isNotSoldOut faithfully maps exact public Offer InStock bySKU/data-index. Not Shopify. Standard15ml179 noteco139. SameparentURLrequiresselectingpack."
+      }
+     }
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "caribbean"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+     "sourceText": "Hlava: Bergamotka; Srdce: Růžový pepř; Základ: Dřevo",
+     "navigationLabel": "Bergamotka, růžový pepř a dřevo",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "iris",
+   "name": "Yodeyma Iris",
+   "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+   "priceAmount": 399.0,
+   "price": "399 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfémovaná voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Jasmín, květ pomerančovníku a jantar. Alternativní vůně Yodeyma; nejde o originál jiné značky.",
+   "reason": "Jasmín, květ pomerančovníku a jantar. Alternativní vůně Yodeyma; nejde o originál jiné značky.",
+   "photo": "/assets/s5/yodeymaparfemy/iris-50ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+    "verifiedAt": "2026-11-13T18:19:38.846521+00:00",
+    "sourceSha256": "ec480edcda18bd5583db4a233097efb58912b7de70fe23dead16084df802d9f8",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "ShoptetPublicVariantOffer",
+     "priceId": "82",
+     "sku": "13021-49617",
+     "availabilityUrl": "https://schema.org/InStock",
+     "variantLabel": "Parfémovaná voda: 50",
+     "qualification": "Exactstandard50mlradio data-index joined to actual variant SKU and matching microdata Offer/InStock, not default139FROMprice or cartbutton. Visible Centrální sklad/delivery shown separately, not promise physicallyonshelf."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 399.0,
+     "currency": "CZK",
+     "sourceVariantLabel": "Parfémovaná voda: 50",
+     "radioCustomerPrice": "399",
+     "offerPrice": "399.00",
+     "vatSource": "https://www.yodeymaparfemy.cz/obchodni-podminky/",
+     "vatEvidence": "Official consumerterms prices VATincluded; exact anonymous public variant offer399CZK. Terms also contain seller nonpayer declaration; current VATregistration not asserted, final consumerprice unchanged."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "Parfémovaná voda: 50",
+     "priceId": "82",
+     "sku": "13021-49617",
+     "scope": "StandardParfemovanaVoda50orVarianta50; not luxurygift50+mini,100ml,15mlor eco15."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-4_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+    "photoEvidence": {
+     "id": "iris-50ml",
+     "url": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-4_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+     "file": "iris-50ml.jpg",
+     "bytes": 51598,
+     "width": 1024,
+     "height": 768,
+     "sha256": "bb5266aeccbf1a30a0c013c82ba00213eb1cfe1cf3290869579373fc9f29f01c",
+     "originalBytes": true,
+     "selectedPack": "50 ml",
+     "qualification": "Official published CDN variant image fetched unchanged; filename not used to infer pack."
+    },
+    "identityDisclosure": "ActualYodeymaalternativebrand, not designeroriginal. Exactvariant50mlphoto comes fromradio data-big, not inferred from misleading100.jpgfilename.",
+    "scent": "Jasmín, květ pomerančovníku a jantar",
+    "fragrance": {
+     "notes": [
+      "Jasmín",
+      "Květ pomerančovníku",
+      "Bílý jantar"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfémovaná voda",
+     "notesEvidence": {
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+      "sourceText": "Hlava: Jasmín; Srdce: Květ pomerančovníku; Základ: Bílý jantar",
+      "originalSourceText": "Hlava (vysoké tóny) Jasmín Srdce (střední tóny) Květ pomerančovníku Základ (nízké tóny) Bílý jantar",
+      "sourceLanguage": "cs",
+      "displayLanguage": "cs",
+      "scope": "Literal explicit finalnote pyramid, not introductorydefinition or contradictory narrative. Three realnotes accepted, never padded to four/invented notes."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No designer-equivalence, health, longevity/personality guarantees.",
+     "No noteweights, intensity or salesguarantees."
+    ],
+    "upsellVariants": [
+     {
+      "id": "iris-15ml",
+      "parentProductId": "iris",
+      "sameFormula": true,
+      "available": true,
+      "currency": "CZK",
+      "name": "Yodeyma Iris",
+      "volume": "15 ml",
+      "priceAmount": 179.0,
+      "price": "179 Kč",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+      "variantSelectionRequired": true,
+      "photo": "/assets/s5/yodeymaparfemy/iris-15ml.jpg",
+      "photoEvidence": {
+       "id": "iris-15ml",
+       "url": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+       "file": "iris-15ml.jpg",
+       "bytes": 23646,
+       "width": 1024,
+       "height": 768,
+       "sha256": "e2eab9046438d4b4bd2f1556d55bc44a97aaa57b263b06829b9805c64c2a78c2",
+       "originalBytes": true,
+       "selectedPack": "15 ml",
+       "qualification": "Official published CDN variant image fetched unchanged; filename not used to infer pack."
+      },
+      "evidence": {
+       "scope": "ShoptetPublicVariantOffer",
+       "exactVariantId": "85",
+       "sku": "13021-49618",
+       "sourceSha256": "ec480edcda18bd5583db4a233097efb58912b7de70fe23dead16084df802d9f8",
+       "checkedAt": "2026-11-13T18:19:38.846521+00:00",
+       "stock": "InStock",
+       "isNotSoldOut": true,
+       "availabilityUrl": "https://schema.org/InStock",
+       "sourceUrl": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+       "parentProductUrl": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+       "variantLabel": "Parfémovaná voda: 15",
+       "qualification": "isNotSoldOut faithfully maps exact public Offer InStock bySKU/data-index. Not Shopify. Standard15ml179 noteco139. SameparentURLrequiresselectingpack."
+      }
+     }
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "flowers",
+     "fragranceProfile": "iris"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+     "sourceText": "Hlava: Jasmín; Srdce: Květ pomerančovníku; Základ: Bílý jantar",
+     "navigationLabel": "Jasmín, květ pomerančovníku a jantar",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "cheante",
+   "name": "Yodeyma Cheante",
+   "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+   "priceAmount": 399.0,
+   "price": "399 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfémovaná voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Mandarinka, růže a pačuli. Alternativní vůně Yodeyma; nejde o originál jiné značky.",
+   "reason": "Mandarinka, růže a pačuli. Alternativní vůně Yodeyma; nejde o originál jiné značky.",
+   "photo": "/assets/s5/yodeymaparfemy/cheante-50ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+    "verifiedAt": "2026-11-13T18:19:39.843489+00:00",
+    "sourceSha256": "0a79378708755d5b31555cbef4504a7061378d58676fa223460334145e2f236d",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "ShoptetPublicVariantOffer",
+     "priceId": "274",
+     "sku": "13054-49692",
+     "availabilityUrl": "https://schema.org/InStock",
+     "variantLabel": "Parfémovaná voda: 50",
+     "qualification": "Exactstandard50mlradio data-index joined to actual variant SKU and matching microdata Offer/InStock, not default139FROMprice or cartbutton. Visible Centrální sklad/delivery shown separately, not promise physicallyonshelf."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 399.0,
+     "currency": "CZK",
+     "sourceVariantLabel": "Parfémovaná voda: 50",
+     "radioCustomerPrice": "399",
+     "offerPrice": "399.00",
+     "vatSource": "https://www.yodeymaparfemy.cz/obchodni-podminky/",
+     "vatEvidence": "Official consumerterms prices VATincluded; exact anonymous public variant offer399CZK. Terms also contain seller nonpayer declaration; current VATregistration not asserted, final consumerprice unchanged."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "Parfémovaná voda: 50",
+     "priceId": "274",
+     "sku": "13054-49692",
+     "scope": "StandardParfemovanaVoda50orVarianta50; not luxurygift50+mini,100ml,15mlor eco15."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/148-4_cheante--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+    "photoEvidence": {
+     "id": "cheante-50ml",
+     "url": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/148-4_cheante--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+     "file": "cheante-50ml.jpg",
+     "bytes": 28785,
+     "width": 1024,
+     "height": 768,
+     "sha256": "a65362682f4696fa22b4a5c8a68e7ab10caefcea59343178d579dd6a20073150",
+     "originalBytes": true,
+     "selectedPack": "50 ml",
+     "qualification": "Official published CDN variant image fetched unchanged; filename not used to infer pack."
+    },
+    "identityDisclosure": "ActualYodeymaalternativebrand, not designeroriginal. Exactvariant50mlphoto comes fromradio data-big, not inferred from misleading100.jpgfilename.",
+    "scent": "Mandarinka, růže a pačuli",
+    "fragrance": {
+     "notes": [
+      "Mandarinka",
+      "Bergamotka",
+      "Růže",
+      "Bílé pižmo",
+      "Pačuli"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfémovaná voda",
+     "notesEvidence": {
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+      "sourceText": "Hlava: Mandarinka, Bergamotka; Srdce: Růže; Základ: Bílé pižmo, Pačuli",
+      "originalSourceText": "Hlava (vysoké tóny) Mandarinka, Bergamotka Srdce (střední tóny) Růže Základ (nízké tóny) Bílé pižmo, Pačuli",
+      "sourceLanguage": "cs",
+      "displayLanguage": "cs",
+      "scope": "Literal explicit finalnote pyramid, not introductorydefinition or contradictory narrative. Three realnotes accepted, never padded to four/invented notes."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No designer-equivalence, health, longevity/personality guarantees.",
+     "No noteweights, intensity or salesguarantees."
+    ],
+    "upsellVariants": [
+     {
+      "id": "cheante-15ml",
+      "parentProductId": "cheante",
+      "sameFormula": true,
+      "available": true,
+      "currency": "CZK",
+      "name": "Yodeyma Cheante",
+      "volume": "15 ml",
+      "priceAmount": 179.0,
+      "price": "179 Kč",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+      "variantSelectionRequired": true,
+      "photo": "/assets/s5/yodeymaparfemy/cheante-15ml.jpg",
+      "photoEvidence": {
+       "id": "cheante-15ml",
+       "url": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/148-5_cheante--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+       "file": "cheante-15ml.jpg",
+       "bytes": 23899,
+       "width": 1024,
+       "height": 768,
+       "sha256": "16dde80ed5d80de07650b3d7e27d11bba16f34d5e364335bf02a08be90d3b419",
+       "originalBytes": true,
+       "selectedPack": "15 ml",
+       "qualification": "Official published CDN variant image fetched unchanged; filename not used to infer pack."
+      },
+      "evidence": {
+       "scope": "ShoptetPublicVariantOffer",
+       "exactVariantId": "271",
+       "sku": "13054-49691",
+       "sourceSha256": "0a79378708755d5b31555cbef4504a7061378d58676fa223460334145e2f236d",
+       "checkedAt": "2026-11-13T18:19:39.843489+00:00",
+       "stock": "InStock",
+       "isNotSoldOut": true,
+       "availabilityUrl": "https://schema.org/InStock",
+       "sourceUrl": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+       "parentProductUrl": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+       "variantLabel": "Parfémovaná voda: 15",
+       "qualification": "isNotSoldOut faithfully maps exact public Offer InStock bySKU/data-index. Not Shopify. Standard15ml179 noteco139. SameparentURLrequiresselectingpack."
+      }
+     }
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "flowers",
+     "fragranceProfile": "cheante"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+     "sourceText": "Hlava: Mandarinka, Bergamotka; Srdce: Růže; Základ: Bílé pižmo, Pačuli",
+     "navigationLabel": "Mandarinka, růže a pačuli",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "power",
+   "name": "Yodeyma Power",
+   "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+   "priceAmount": 399.0,
+   "price": "399 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfémovaná voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Grapefruit, skořice a pačuli. Alternativní vůně Yodeyma; nejde o originál jiné značky.",
+   "reason": "Grapefruit, skořice a pačuli. Alternativní vůně Yodeyma; nejde o originál jiné značky.",
+   "photo": "/assets/s5/yodeymaparfemy/power-50ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+    "verifiedAt": "2026-11-13T18:24:16.312467+00:00",
+    "sourceSha256": "170980c31d7fbcfeac61116c075367573cbe5077af7167b20b37f906468850dd",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "ShoptetPublicVariantOffer",
+     "priceId": "645",
+     "sku": "220_50",
+     "availabilityUrl": "https://schema.org/InStock",
+     "variantLabel": "Varianta: 50",
+     "qualification": "Exactstandard50mlradio data-index joined to actual variant SKU and matching microdata Offer/InStock, not default139FROMprice or cartbutton. Visible Centrální sklad/delivery shown separately, not promise physicallyonshelf."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 399.0,
+     "currency": "CZK",
+     "sourceVariantLabel": "Varianta: 50",
+     "radioCustomerPrice": "399",
+     "offerPrice": "399.00",
+     "vatSource": "https://www.yodeymaparfemy.cz/obchodni-podminky/",
+     "vatEvidence": "Official consumerterms prices VATincluded; exact anonymous public variant offer399CZK. Terms also contain seller nonpayer declaration; current VATregistration not asserted, final consumerprice unchanged."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "Varianta: 50",
+     "priceId": "645",
+     "sku": "220_50",
+     "scope": "StandardParfemovanaVoda50orVarianta50; not luxurygift50+mini,100ml,15mlor eco15."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/220-4_power--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+    "photoEvidence": {
+     "id": "power-50ml",
+     "url": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/220-4_power--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+     "file": "power-50ml.jpg",
+     "bytes": 75766,
+     "width": 1024,
+     "height": 768,
+     "sha256": "fb0030f33c4fa50d90839b15416bcb86a50939990be0b186abd82ff15b97807c",
+     "originalBytes": true,
+     "selectedPack": "50 ml",
+     "qualification": "Official published CDN variant image fetched unchanged; filename not used to infer pack."
+    },
+    "identityDisclosure": "ActualYodeymaalternativebrand, not designeroriginal. Exactvariant50mlphoto comes fromradio data-big, not inferred from misleading100.jpgfilename.",
+    "scent": "Grapefruit, skořice a pačuli",
+    "fragrance": {
+     "notes": [
+      "Grapefruit",
+      "Skořice",
+      "Pačuli"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfémovaná voda",
+     "notesEvidence": {
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+      "sourceText": "Hlava: Grapefruit; Srdce: Skořice; Základ: Pačuli",
+      "originalSourceText": "Hlava (vysoké tóny) Grapefruit Srdce (střední tóny) Skořice Základ (nízké tóny) Pačuli",
+      "sourceLanguage": "cs",
+      "displayLanguage": "cs",
+      "scope": "Literal explicit finalnote pyramid, not introductorydefinition or contradictory narrative. Three realnotes accepted, never padded to four/invented notes."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No designer-equivalence, health, longevity/personality guarantees.",
+     "No noteweights, intensity or salesguarantees."
+    ],
+    "upsellVariants": [
+     {
+      "id": "power-15ml",
+      "parentProductId": "power",
+      "sameFormula": true,
+      "available": true,
+      "currency": "CZK",
+      "name": "Yodeyma Power",
+      "volume": "15 ml",
+      "priceAmount": 179.0,
+      "price": "179 Kč",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+      "variantSelectionRequired": true,
+      "photo": "/assets/s5/yodeymaparfemy/power-15ml.jpg",
+      "photoEvidence": {
+       "id": "power-15ml",
+       "url": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/220-5_power--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+       "file": "power-15ml.jpg",
+       "bytes": 26010,
+       "width": 1024,
+       "height": 768,
+       "sha256": "4a1f61235c1217e3123e31de805219d852f287cb81e0e7ac45ee6a820b8b8488",
+       "originalBytes": true,
+       "selectedPack": "15 ml",
+       "qualification": "Official published CDN variant image fetched unchanged; filename not used to infer pack."
+      },
+      "evidence": {
+       "scope": "ShoptetPublicVariantOffer",
+       "exactVariantId": "460",
+       "sku": "13078-49769",
+       "sourceSha256": "170980c31d7fbcfeac61116c075367573cbe5077af7167b20b37f906468850dd",
+       "checkedAt": "2026-11-13T18:24:16.312467+00:00",
+       "stock": "InStock",
+       "isNotSoldOut": true,
+       "availabilityUrl": "https://schema.org/InStock",
+       "sourceUrl": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+       "parentProductUrl": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+       "variantLabel": "Parfémovaná voda: 15",
+       "qualification": "isNotSoldOut faithfully maps exact public Offer InStock bySKU/data-index. Not Shopify. Standard15ml179 noteco139. SameparentURLrequiresselectingpack."
+      }
+     }
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "grapefruit",
+     "fragranceProfile": "power"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+     "sourceText": "Hlava: Grapefruit; Srdce: Skořice; Základ: Pačuli",
+     "navigationLabel": "Grapefruit, skořice a pačuli",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "root",
+   "name": "Yodeyma Root",
+   "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+   "priceAmount": 399.0,
+   "price": "399 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfémovaná voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Grapefruit, pelargonie a pačuli. Alternativní vůně Yodeyma; nejde o originál jiné značky.",
+   "reason": "Grapefruit, pelargonie a pačuli. Alternativní vůně Yodeyma; nejde o originál jiné značky.",
+   "photo": "/assets/s5/yodeymaparfemy/root-50ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+    "verifiedAt": "2026-11-13T18:24:16.981455+00:00",
+    "sourceSha256": "3f1914aadddb37e3c31515436b5e557609466490acd123fb2939457dbc151c49",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "ShoptetPublicVariantOffer",
+     "priceId": "382",
+     "sku": "13068-49738",
+     "availabilityUrl": "https://schema.org/InStock",
+     "variantLabel": "Parfémovaná voda: 50",
+     "qualification": "Exactstandard50mlradio data-index joined to actual variant SKU and matching microdata Offer/InStock, not default139FROMprice or cartbutton. Visible Centrální sklad/delivery shown separately, not promise physicallyonshelf."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 399.0,
+     "currency": "CZK",
+     "sourceVariantLabel": "Parfémovaná voda: 50",
+     "radioCustomerPrice": "399",
+     "offerPrice": "399.00",
+     "vatSource": "https://www.yodeymaparfemy.cz/obchodni-podminky/",
+     "vatEvidence": "Official consumerterms prices VATincluded; exact anonymous public variant offer399CZK. Terms also contain seller nonpayer declaration; current VATregistration not asserted, final consumerprice unchanged."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "Parfémovaná voda: 50",
+     "priceId": "382",
+     "sku": "13068-49738",
+     "scope": "StandardParfemovanaVoda50orVarianta50; not luxurygift50+mini,100ml,15mlor eco15."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/190-4_root--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+    "photoEvidence": {
+     "id": "root-50ml",
+     "url": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/190-4_root--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+     "file": "root-50ml.jpg",
+     "bytes": 75234,
+     "width": 1024,
+     "height": 768,
+     "sha256": "1cb9de62b5061dd4e424cc927aad401bee774280b7920e59bb8b295b2b5c92e1",
+     "originalBytes": true,
+     "selectedPack": "50 ml",
+     "qualification": "Official published CDN variant image fetched unchanged; filename not used to infer pack."
+    },
+    "identityDisclosure": "ActualYodeymaalternativebrand, not designeroriginal. Exactvariant50mlphoto comes fromradio data-big, not inferred from misleading100.jpgfilename.",
+    "scent": "Grapefruit, pelargonie a pačuli",
+    "fragrance": {
+     "notes": [
+      "Grapefruit",
+      "Pelargonie",
+      "Pačuli"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfémovaná voda",
+     "notesEvidence": {
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+      "sourceText": "Hlava: Grapefruit; Srdce: Pelargonie; Základ: Pačuli",
+      "originalSourceText": "Hlava (vysoké tóny) Grapefruit Srdce (střední tóny) Pelargonie Základ (nízké tóny) Pačuli",
+      "sourceLanguage": "cs",
+      "displayLanguage": "cs",
+      "scope": "Literal explicit finalnote pyramid, not introductorydefinition or contradictory narrative. Three realnotes accepted, never padded to four/invented notes."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No designer-equivalence, health, longevity/personality guarantees.",
+     "No noteweights, intensity or salesguarantees."
+    ],
+    "upsellVariants": [
+     {
+      "id": "root-15ml",
+      "parentProductId": "root",
+      "sameFormula": true,
+      "available": true,
+      "currency": "CZK",
+      "name": "Yodeyma Root",
+      "volume": "15 ml",
+      "priceAmount": 179.0,
+      "price": "179 Kč",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+      "variantSelectionRequired": true,
+      "photo": "/assets/s5/yodeymaparfemy/root-15ml.jpg",
+      "photoEvidence": {
+       "id": "root-15ml",
+       "url": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/190-5_root--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+       "file": "root-15ml.jpg",
+       "bytes": 25228,
+       "width": 1024,
+       "height": 768,
+       "sha256": "6e694c02cc484f8064fc45ea46634178ca0a02facdc60e79fd2a46101e36195e",
+       "originalBytes": true,
+       "selectedPack": "15 ml",
+       "qualification": "Official published CDN variant image fetched unchanged; filename not used to infer pack."
+      },
+      "evidence": {
+       "scope": "ShoptetPublicVariantOffer",
+       "exactVariantId": "379",
+       "sku": "13068-49737",
+       "sourceSha256": "3f1914aadddb37e3c31515436b5e557609466490acd123fb2939457dbc151c49",
+       "checkedAt": "2026-11-13T18:24:16.981455+00:00",
+       "stock": "InStock",
+       "isNotSoldOut": true,
+       "availabilityUrl": "https://schema.org/InStock",
+       "sourceUrl": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+       "parentProductUrl": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+       "variantLabel": "Parfémovaná voda: 15",
+       "qualification": "isNotSoldOut faithfully maps exact public Offer InStock bySKU/data-index. Not Shopify. Standard15ml179 noteco139. SameparentURLrequiresselectingpack."
+      }
+     }
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "grapefruit",
+     "fragranceProfile": "root"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+     "sourceText": "Hlava: Grapefruit; Srdce: Pelargonie; Základ: Pačuli",
+     "navigationLabel": "Grapefruit, pelargonie a pačuli",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  }
+ ],
+ "revenue": {
+  "year": 2024,
+  "turnoverBand": "5–10 million CZK",
+  "source": "https://www.chytryrejstrik.cz/ico-05890969/lukegroup-store-s-r-o",
+  "sourceType": "SECONDARY_CSUSTAT_BAND",
+  "latest2025ExactTurnover": "UNKNOWN",
+  "qualification": "Fulloperator secondary2024band, preferred<=12mCZK.2025assets533000/profit226000notturnover."
+ },
+ "size": "PREFERRED_TIER_SECONDARY2024_BAND_LATEST2025_UNKNOWN",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "Independent retailer/operator Lukegroupstore, not manufacturer Yodeyma or other Yodeyma retailers.6formula50mlprimary+15mloptionalvariants not12formulas.",
+  "Ownactualhome/productSmartsupp opened aftercookieNastaveni/Vsevypnout: Napiste namzpravu/Radivamodpovimepozdeji, emptyinput, nothingtyped/sent. AIcapabilityothermodesUNKNOWN. NonGETguardcanlimitwidget/backgroundfeatures.",
+  "Exactstandard50ml399/15ml179publicoffermapping. Default139 iseco15lowestfromprice, not50ml. Merchantselectionattemptunderread-onlyguard didnotprovechangedliveprice/image; sourcefacts rely on exactpublicHTMLvariant/SKU/Offer mapping, not fake nativepackQA.",
+  "Explicitpyramidcontrolsnotes; e.g.Irisnarrativementionscashmerewood butpyramidorangeblossom retained, originalrawsource preserved.",
+  "SameparentCTA requireschoosingvolume; no cartintegration or deliverypromise. Terms contain both VATincluded pricing and seller nonpayer declaration; no assertion of currentVATregistration. Final consumerprice399CZKsource-backed."
+ ]
+};

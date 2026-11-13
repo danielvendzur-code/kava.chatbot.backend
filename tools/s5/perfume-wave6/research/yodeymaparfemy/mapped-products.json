@@ -1,0 +1,1408 @@
+{
+  "rows": [
+    {
+      "id": "iris",
+      "name": "Yodeyma Iris",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+      "checkedAt": "2026-11-13T18:19:38.846521+00:00",
+      "sourceSha256": "ec480edcda18bd5583db4a233097efb58912b7de70fe23dead16084df802d9f8",
+      "offers": [
+        {
+          "sku": "13021-49618",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+          "price": "179.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "13021-49617",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+          "price": "399.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "13021-49615",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+          "price": "669.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "64/15",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+          "price": "139.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "64/100",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+          "price": "759.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "64/101",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+          "price": "879.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "64/50",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+          "price": "639.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        }
+      ],
+      "variants": [
+        {
+          "priceId": "85",
+          "label": "Parfémovaná voda: 15",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "85",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "85",
+            "data-customerprice": "179",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "1",
+            "aria-labelledby": "variant-name-85"
+          }
+        },
+        {
+          "priceId": "82",
+          "label": "Parfémovaná voda: 50",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "82",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "82",
+            "data-customerprice": "399",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-4_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-4_iris--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-4_iris--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "2",
+            "aria-labelledby": "variant-name-82"
+          }
+        },
+        {
+          "priceId": "79",
+          "label": "Parfémovaná voda: 100",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "79",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "79",
+            "data-customerprice": "669",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-3_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-3_iris--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-3_iris--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "3",
+            "aria-labelledby": "variant-name-79"
+          }
+        },
+        {
+          "priceId": "1942",
+          "label": "Varianta: 15 ml - Eko kabelkové balení (s víčkem bez obalu)",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1942",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1942",
+            "data-customerprice": "139",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "4",
+            "aria-labelledby": "variant-name-1942"
+          }
+        },
+        {
+          "priceId": "762",
+          "label": "Luxusní dárkové balení: 100ml",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "762",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "762",
+            "data-customerprice": "759",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-1_darkovy-set-damsky.jpg?ff=1&x=1024&y=768&q=85&ts=659406a6&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-1_darkovy-set-damsky.jpg?ff=1&x=423&y=318&q=85&ts=659406a6&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-1_darkovy-set-damsky.jpg?ff=1&x=290&y=218&q=85&ts=659406a6&sg=2f1e9886",
+            "data-index": "5",
+            "aria-labelledby": "variant-name-762"
+          }
+        },
+        {
+          "priceId": "765",
+          "label": "Luxusní dárkové balení: 100ml + mini parfém",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "765",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "765",
+            "data-customerprice": "879",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-2_darkovy-set-damsky-1.jpg?ff=1&x=1024&y=768&q=85&ts=659406a7&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-2_darkovy-set-damsky-1.jpg?ff=1&x=423&y=318&q=85&ts=659406a7&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-2_darkovy-set-damsky-1.jpg?ff=1&x=290&y=218&q=85&ts=659406a7&sg=2f1e9886",
+            "data-index": "6",
+            "aria-labelledby": "variant-name-765"
+          }
+        },
+        {
+          "priceId": "1371",
+          "label": "Luxusní dárkové balení: 50 ml + mini parfém",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1371",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1371",
+            "data-customerprice": "639",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64_damsky-set-50.jpg?ff=1&x=1024&y=768&q=85&ts=659406a6&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64_damsky-set-50.jpg?ff=1&x=423&y=318&q=85&ts=659406a6&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64_damsky-set-50.jpg?ff=1&x=290&y=218&q=85&ts=659406a6&sg=2f1e9886",
+            "data-index": "7",
+            "aria-labelledby": "variant-name-1371"
+          }
+        }
+      ],
+      "description": "Detailní popis produktu Yodeyma Iris - to jsou orientální a květinové vonné tóny. Iris je parfém s úžasnou energickou sílou pro rafinovanou ženu s výborným vkusem. Okouzlí vás třemi vonnými složkami, jejichž kombinace dodává vůni jedinečný nádech. Úvodním tónem YODEYMA Iris je opravdu výrazný jasmín, který se snoubí s hřejivým kašmírovým dřevem. V základu vůně se ukrývá výjimečná vůně ambry, díky které nezůstanete bez povšimnutí. Iris je fascinující parfém plný energie pro ženu s vytříbeným vkusem. VONNÉ TÓNY Hlava (vysoké tóny) utváří první dojem parfému.Srdce (střední tóny) představuje duši parfému.Základ (nízké tóny) vytváří hloubku vůně parfému. Hlava (vysoké tóny) Jasmín Srdce (střední tóny) Květ pomerančovníku Základ (nízké tóny) Bílý jantar",
+      "selectedVariants": {
+        "50": {
+          "priceId": "82",
+          "label": "Parfémovaná voda: 50",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "82",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "82",
+            "data-customerprice": "399",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-4_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-4_iris--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-4_iris--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "2",
+            "aria-labelledby": "variant-name-82"
+          },
+          "sku": "13021-49617",
+          "offer": {
+            "sku": "13021-49617",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+            "price": "399.00",
+            "priceCurrency": "CZK",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "pack": "50 ml"
+        },
+        "15": {
+          "priceId": "85",
+          "label": "Parfémovaná voda: 15",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "85",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "85",
+            "data-customerprice": "179",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/64-5_iris--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "1",
+            "aria-labelledby": "variant-name-85"
+          },
+          "sku": "13021-49618",
+          "offer": {
+            "sku": "13021-49618",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yodeymaparfemy.cz/yodeyma-iris-edp/",
+            "price": "179.00",
+            "priceCurrency": "CZK",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "pack": "15 ml"
+        }
+      }
+    },
+    {
+      "id": "cheante",
+      "name": "Yodeyma Cheante",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+      "checkedAt": "2026-11-13T18:19:39.843489+00:00",
+      "sourceSha256": "0a79378708755d5b31555cbef4504a7061378d58676fa223460334145e2f236d",
+      "offers": [
+        {
+          "sku": "13054-49691",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+          "price": "179.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "13054-49692",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+          "price": "399.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "13054-49693",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+          "price": "669.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "148/15",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+          "price": "139.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "148/100",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+          "price": "759.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "148/101",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+          "price": "879.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "148/50",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+          "price": "639.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        }
+      ],
+      "variants": [
+        {
+          "priceId": "271",
+          "label": "Parfémovaná voda: 15",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "271",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "271",
+            "data-customerprice": "179",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/148-5_cheante--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/148-5_cheante--parfemovana-voda-15.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/148-5_cheante--parfemovana-voda-15.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "1",
+            "aria-labelledby": "variant-name-271"
+          }
+        },
+        {
+          "priceId": "274",
+          "label": "Parfémovaná voda: 50",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "274",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "274",
+            "data-customerprice": "399",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/148-4_cheante--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/148-4_cheante--parfemovana-voda-15.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/148-4_cheante--parfemovana-voda-15.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "2",
+            "aria-labelledby": "variant-name-274"
+          }
+        },
+        {
+          "priceId": "277",
+          "label": "Parfémovaná voda: 100",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "277",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "277",
+            "data-customerprice": "669",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/148-3_cheante--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/148-3_cheante--parfemovana-voda-15.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/148-3_cheante--parfemovana-voda-15.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "3",
+            "aria-labelledby": "variant-name-277"
+          }
+        },
+        {
+          "priceId": "1039",
+          "label": "Varianta: 15 ml - Eko kabelkové balení (s víčkem bez obalu)",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1039",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1039",
+            "data-customerprice": "139",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/148-5_cheante--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/148-5_cheante--parfemovana-voda-15.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/148-5_cheante--parfemovana-voda-15.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "4",
+            "aria-labelledby": "variant-name-1039"
+          }
+        },
+        {
+          "priceId": "750",
+          "label": "Luxusní dárkové balení: 100ml",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "750",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "750",
+            "data-customerprice": "759",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/148-1_darkovy-set-damsky.jpg?ff=1&x=1024&y=768&q=85&ts=658ea35e&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/148-1_darkovy-set-damsky.jpg?ff=1&x=423&y=318&q=85&ts=658ea35e&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/148-1_darkovy-set-damsky.jpg?ff=1&x=290&y=218&q=85&ts=658ea35e&sg=2f1e9886",
+            "data-index": "5",
+            "aria-labelledby": "variant-name-750"
+          }
+        },
+        {
+          "priceId": "753",
+          "label": "Luxusní dárkové balení: 100ml + mini parfém",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "753",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "753",
+            "data-customerprice": "879",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/148-2_darkovy-set-damsky-1.jpg?ff=1&x=1024&y=768&q=85&ts=658ea35f&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/148-2_darkovy-set-damsky-1.jpg?ff=1&x=423&y=318&q=85&ts=658ea35f&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/148-2_darkovy-set-damsky-1.jpg?ff=1&x=290&y=218&q=85&ts=658ea35f&sg=2f1e9886",
+            "data-index": "6",
+            "aria-labelledby": "variant-name-753"
+          }
+        },
+        {
+          "priceId": "1305",
+          "label": "Luxusní dárkové balení: 50 ml + mini parfém",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1305",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1305",
+            "data-customerprice": "639",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/148_damsky-set-50.jpg?ff=1&x=1024&y=768&q=85&ts=658ea35e&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/148_damsky-set-50.jpg?ff=1&x=423&y=318&q=85&ts=658ea35e&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/148_damsky-set-50.jpg?ff=1&x=290&y=218&q=85&ts=658ea35e&sg=2f1e9886",
+            "data-index": "7",
+            "aria-labelledby": "variant-name-1305"
+          }
+        }
+      ],
+      "description": "Detailní popis produktu Tato moderní kombinace tónů vytváří parfém s odvážným duchem, který navozuje luxus a eleganci. Yodeyma Cheante - to jsou chyprově květinové vonné tóny. Cheante je veselý a ženský parfém pro sofistikovanou a vkusnou ženu. Cheante je veselý dámský parfém pro sofistikovanou a elegantní ženu. VONNÉ TÓNY Chyprový – květinovýHlava (vysoké tóny) utváří první dojem parfému.Srdce (střední tóny) představuje duši parfému.Základ (nízké tóny) vytváří hloubku vůně parfému. Hlava (vysoké tóny) Mandarinka, Bergamotka Srdce (střední tóny) Růže Základ (nízké tóny) Bílé pižmo, Pačuli",
+      "selectedVariants": {
+        "50": {
+          "priceId": "274",
+          "label": "Parfémovaná voda: 50",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "274",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "274",
+            "data-customerprice": "399",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/148-4_cheante--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/148-4_cheante--parfemovana-voda-15.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/148-4_cheante--parfemovana-voda-15.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "2",
+            "aria-labelledby": "variant-name-274"
+          },
+          "sku": "13054-49692",
+          "offer": {
+            "sku": "13054-49692",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+            "price": "399.00",
+            "priceCurrency": "CZK",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "pack": "50 ml"
+        },
+        "15": {
+          "priceId": "271",
+          "label": "Parfémovaná voda: 15",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "271",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "271",
+            "data-customerprice": "179",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/148-5_cheante--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/148-5_cheante--parfemovana-voda-15.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/148-5_cheante--parfemovana-voda-15.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "1",
+            "aria-labelledby": "variant-name-271"
+          },
+          "sku": "13054-49691",
+          "offer": {
+            "sku": "13054-49691",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yodeymaparfemy.cz/yodeyma-cheante-edp/",
+            "price": "179.00",
+            "priceCurrency": "CZK",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "pack": "15 ml"
+        }
+      }
+    },
+    {
+      "id": "kara",
+      "name": "Yodeyma Kara",
+      "url": "https://www.yodeymaparfemy.cz/kara/",
+      "checkedAt": "2026-11-13T18:22:18.000755+00:00",
+      "sourceSha256": "fe143451179112d7433fb4458e75f0391665a2a92bf258ea47e27beeef3ceb0e",
+      "offers": [
+        {
+          "sku": "13048-49679",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/kara/",
+          "price": "179.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "13048-49678",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/kara/",
+          "price": "399.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "13048-49676",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/kara/",
+          "price": "669.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "133/15",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/kara/",
+          "price": "139.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "133/100",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/kara/",
+          "price": "879.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "133/101",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/kara/",
+          "price": "759.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "133/50",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/kara/",
+          "price": "639.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        }
+      ],
+      "variants": [
+        {
+          "priceId": "241",
+          "label": "Parfémovaná voda: 15",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "241",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "241",
+            "data-customerprice": "179",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/133-5_kara--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/133-5_kara--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/133-5_kara--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "1",
+            "aria-labelledby": "variant-name-241"
+          }
+        },
+        {
+          "priceId": "238",
+          "label": "Parfémovaná voda: 50",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "238",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "238",
+            "data-customerprice": "399",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/133-4_kara--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/133-4_kara--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/133-4_kara--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "2",
+            "aria-labelledby": "variant-name-238"
+          }
+        },
+        {
+          "priceId": "235",
+          "label": "Parfémovaná voda: 100",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "235",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "235",
+            "data-customerprice": "669",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/133-3_kara--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/133-3_kara--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/133-3_kara--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "3",
+            "aria-labelledby": "variant-name-235"
+          }
+        },
+        {
+          "priceId": "1048",
+          "label": "Varianta: 15 ml - Eko kabelkové balení (s víčkem bez obalu)",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1048",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1048",
+            "data-customerprice": "139",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/133-5_kara--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/133-5_kara--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/133-5_kara--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "4",
+            "aria-labelledby": "variant-name-1048"
+          }
+        },
+        {
+          "priceId": "1374",
+          "label": "Luxusní dárkové balení: 100 ml + mini parfém",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1374",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1374",
+            "data-customerprice": "879",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/133-2_darkovy-set-damsky-1.jpg?ff=1&x=1024&y=768&q=85&ts=65940708&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/133-2_darkovy-set-damsky-1.jpg?ff=1&x=423&y=318&q=85&ts=65940708&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/133-2_darkovy-set-damsky-1.jpg?ff=1&x=290&y=218&q=85&ts=65940708&sg=2f1e9886",
+            "data-index": "5",
+            "aria-labelledby": "variant-name-1374"
+          }
+        },
+        {
+          "priceId": "1377",
+          "label": "Luxusní dárkové balení: 100 ml",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1377",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1377",
+            "data-customerprice": "759",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/133-1_darkovy-set-damsky.jpg?ff=1&x=1024&y=768&q=85&ts=65940708&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/133-1_darkovy-set-damsky.jpg?ff=1&x=423&y=318&q=85&ts=65940708&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/133-1_darkovy-set-damsky.jpg?ff=1&x=290&y=218&q=85&ts=65940708&sg=2f1e9886",
+            "data-index": "6",
+            "aria-labelledby": "variant-name-1377"
+          }
+        },
+        {
+          "priceId": "1380",
+          "label": "Luxusní dárkové balení: 50 ml + mini parfém",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1380",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1380",
+            "data-customerprice": "639",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/133_damsky-set-50.jpg?ff=1&x=1024&y=768&q=85&ts=65940707&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/133_damsky-set-50.jpg?ff=1&x=423&y=318&q=85&ts=65940707&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/133_damsky-set-50.jpg?ff=1&x=290&y=218&q=85&ts=65940707&sg=2f1e9886",
+            "data-index": "7",
+            "aria-labelledby": "variant-name-1380"
+          }
+        }
+      ],
+      "description": "Detailní popis produktu Svými zelenými a vodními tóny vyjadřuje tento parfém smyslnost. Jemnost jablka v kombinaci s bambusem vytváří jemně svěží dřevité tóny. Yodeyma Kara - to jsou květinové a ovocné vonné tóny. Kara je povzbudivý parfém pro veselou a silnou ženu VONNÉ TÓNY Hlava (vysoké tóny) utváří první dojem parfému.Srdce (střední tóny) představuje duši parfému.Základ (nízké tóny) vytváří hloubku vůně parfému. Hlava (vysoké tóny) Jablko Srdce (střední tóny) Bambus Základ (nízké tóny) Bílé pižmo",
+      "selectedVariants": {
+        "50": {
+          "priceId": "238",
+          "label": "Parfémovaná voda: 50",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "238",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "238",
+            "data-customerprice": "399",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/133-4_kara--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/133-4_kara--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/133-4_kara--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "2",
+            "aria-labelledby": "variant-name-238"
+          },
+          "sku": "13048-49678",
+          "offer": {
+            "sku": "13048-49678",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yodeymaparfemy.cz/kara/",
+            "price": "399.00",
+            "priceCurrency": "CZK",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "pack": "50 ml"
+        },
+        "15": {
+          "priceId": "241",
+          "label": "Parfémovaná voda: 15",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "241",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "241",
+            "data-customerprice": "179",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/133-5_kara--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f522dba&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/133-5_kara--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f522dba&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/133-5_kara--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f522dba&sg=2f1e9886",
+            "data-index": "1",
+            "aria-labelledby": "variant-name-241"
+          },
+          "sku": "13048-49679",
+          "offer": {
+            "sku": "13048-49679",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yodeymaparfemy.cz/kara/",
+            "price": "179.00",
+            "priceCurrency": "CZK",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "pack": "15 ml"
+        }
+      }
+    },
+    {
+      "id": "caribbean",
+      "name": "Yodeyma Caribbean",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+      "checkedAt": "2026-11-13T18:24:15.728655+00:00",
+      "sourceSha256": "bf51db6dfbc3562e87a5b61d7756e167d052fdcf5c7657a7201dbdf07adbfd98",
+      "offers": [
+        {
+          "sku": "13076-49762",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+          "price": "179.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "13076-49764",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+          "price": "399.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "13076-49765",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+          "price": "669.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "214/15",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+          "price": "139.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "214/50",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+          "price": "639.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        }
+      ],
+      "variants": [
+        {
+          "priceId": "442",
+          "label": "Parfémovaná voda: 15",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "442",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "442",
+            "data-customerprice": "179",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/214-3_caribbean--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231fc&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/214-3_caribbean--parfemovana-voda-15.jpg?ff=1&x=423&y=318&q=85&ts=5f5231fc&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/214-3_caribbean--parfemovana-voda-15.jpg?ff=1&x=290&y=218&q=85&ts=5f5231fc&sg=2f1e9886",
+            "data-index": "1",
+            "aria-labelledby": "variant-name-442"
+          }
+        },
+        {
+          "priceId": "445",
+          "label": "Parfémovaná voda: 50",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "445",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "445",
+            "data-customerprice": "399",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/214-5_caribbean--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231fc&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/214-5_caribbean--parfemovana-voda-15.jpg?ff=1&x=423&y=318&q=85&ts=5f5231fc&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/214-5_caribbean--parfemovana-voda-15.jpg?ff=1&x=290&y=218&q=85&ts=5f5231fc&sg=2f1e9886",
+            "data-index": "2",
+            "aria-labelledby": "variant-name-445"
+          }
+        },
+        {
+          "priceId": "448",
+          "label": "Parfémovaná voda: 100",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "448",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "448",
+            "data-customerprice": "669",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/214-4_caribbean--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231fc&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/214-4_caribbean--parfemovana-voda-15.jpg?ff=1&x=423&y=318&q=85&ts=5f5231fc&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/214-4_caribbean--parfemovana-voda-15.jpg?ff=1&x=290&y=218&q=85&ts=5f5231fc&sg=2f1e9886",
+            "data-index": "3",
+            "aria-labelledby": "variant-name-448"
+          }
+        },
+        {
+          "priceId": "2172",
+          "label": "Varianta: 15 ml - Eko kabelkové balení (s víčkem bez obalu)",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "2172",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "2172",
+            "data-customerprice": "139",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/214-3_caribbean--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231fc&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/214-3_caribbean--parfemovana-voda-15.jpg?ff=1&x=423&y=318&q=85&ts=5f5231fc&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/214-3_caribbean--parfemovana-voda-15.jpg?ff=1&x=290&y=218&q=85&ts=5f5231fc&sg=2f1e9886",
+            "data-index": "4",
+            "aria-labelledby": "variant-name-2172"
+          }
+        },
+        {
+          "priceId": "1791",
+          "label": "Luxusní dárkové balení: 50 ml + mini parfém",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1791",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1791",
+            "data-customerprice": "639",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/214_caribbean.jpg?ff=1&x=1024&y=768&q=85&ts=659550b3&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/214_caribbean.jpg?ff=1&x=423&y=318&q=85&ts=659550b3&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/214_caribbean.jpg?ff=1&x=290&y=218&q=85&ts=659550b3&sg=2f1e9886",
+            "data-index": "5",
+            "aria-labelledby": "variant-name-1791"
+          }
+        }
+      ],
+      "description": "Detailní popis produktu Dlouhotrvající tóny bergamotky a levandule představují klasickou mužnost s moderním dotekem jantaru. Caribbean je svěží vůně pro skutečného a silného muže. Vonné tóny Fougerové - Jantarové Hlava (vysoké tóny) utváří první dojem parfému.Srdce (střední tóny) představuje duši parfému.Základ (nízké tóny) vytváří hloubku vůně parfému. Hlava (vysoké tóny) Bergamotka Srdce (střední tóny) Růžový pepř Základ (nízké tóny) Dřevo",
+      "selectedVariants": {
+        "50": {
+          "priceId": "445",
+          "label": "Parfémovaná voda: 50",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "445",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "445",
+            "data-customerprice": "399",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/214-5_caribbean--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231fc&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/214-5_caribbean--parfemovana-voda-15.jpg?ff=1&x=423&y=318&q=85&ts=5f5231fc&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/214-5_caribbean--parfemovana-voda-15.jpg?ff=1&x=290&y=218&q=85&ts=5f5231fc&sg=2f1e9886",
+            "data-index": "2",
+            "aria-labelledby": "variant-name-445"
+          },
+          "sku": "13076-49764",
+          "offer": {
+            "sku": "13076-49764",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+            "price": "399.00",
+            "priceCurrency": "CZK",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "pack": "50 ml"
+        },
+        "15": {
+          "priceId": "442",
+          "label": "Parfémovaná voda: 15",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "442",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "442",
+            "data-customerprice": "179",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/214-3_caribbean--parfemovana-voda-15.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231fc&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/214-3_caribbean--parfemovana-voda-15.jpg?ff=1&x=423&y=318&q=85&ts=5f5231fc&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/214-3_caribbean--parfemovana-voda-15.jpg?ff=1&x=290&y=218&q=85&ts=5f5231fc&sg=2f1e9886",
+            "data-index": "1",
+            "aria-labelledby": "variant-name-442"
+          },
+          "sku": "13076-49762",
+          "offer": {
+            "sku": "13076-49762",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yodeymaparfemy.cz/yodeyma-caribbean-edp/",
+            "price": "179.00",
+            "priceCurrency": "CZK",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "pack": "15 ml"
+        }
+      }
+    },
+    {
+      "id": "power",
+      "name": "Yodeyma Power",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+      "checkedAt": "2026-11-13T18:24:16.312467+00:00",
+      "sourceSha256": "170980c31d7fbcfeac61116c075367573cbe5077af7167b20b37f906468850dd",
+      "offers": [
+        {
+          "sku": "13078-49769",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+          "price": "179.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "13078-49768",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+          "price": "669.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "220_50",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+          "price": "399.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "220/15",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+          "price": "139.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "220/50",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+          "price": "639.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        }
+      ],
+      "variants": [
+        {
+          "priceId": "460",
+          "label": "Parfémovaná voda: 15",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "460",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "460",
+            "data-customerprice": "179",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/220-5_power--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/220-5_power--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f5231ff&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/220-5_power--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f5231ff&sg=2f1e9886",
+            "data-index": "1",
+            "aria-labelledby": "variant-name-460"
+          }
+        },
+        {
+          "priceId": "457",
+          "label": "Parfémovaná voda: 100",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "457",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "457",
+            "data-customerprice": "669",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/220-3_power--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/220-3_power--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f5231ff&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/220-3_power--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f5231ff&sg=2f1e9886",
+            "data-index": "2",
+            "aria-labelledby": "variant-name-457"
+          }
+        },
+        {
+          "priceId": "645",
+          "label": "Varianta: 50",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "645",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "645",
+            "data-customerprice": "399",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/220-4_power--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/220-4_power--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f5231ff&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/220-4_power--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f5231ff&sg=2f1e9886",
+            "data-index": "3",
+            "aria-labelledby": "variant-name-645"
+          }
+        },
+        {
+          "priceId": "1909",
+          "label": "Varianta: 15 ml - Eko kabelkové balení (s víčkem bez obalu)",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1909",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1909",
+            "data-customerprice": "139",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/220-5_power--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/220-5_power--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f5231ff&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/220-5_power--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f5231ff&sg=2f1e9886",
+            "data-index": "4",
+            "aria-labelledby": "variant-name-1909"
+          }
+        },
+        {
+          "priceId": "1906",
+          "label": "Luxusní dárkové balení: 50 ml + mini parfém",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1906",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1906",
+            "data-customerprice": "639",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/220_power.jpg?ff=1&x=1024&y=768&q=85&ts=65968a17&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/220_power.jpg?ff=1&x=423&y=318&q=85&ts=65968a17&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/220_power.jpg?ff=1&x=290&y=218&q=85&ts=65968a17&sg=2f1e9886",
+            "data-index": "5",
+            "aria-labelledby": "variant-name-1906"
+          }
+        }
+      ],
+      "description": "Detailní popis produktu Power je silný a povzbuzující parfém pro svůdného a záhadného muže. VONNÉ TÓNY Dřevitě kořenité Hlava (vysoké tóny) utváří první dojem parfému.Srdce (střední tóny) představuje duši parfému.Základ (nízké tóny) vytváří hloubku vůně parfému. Hlava (vysoké tóny) Grapefruit Srdce (střední tóny) Skořice Základ (nízké tóny) Pačuli",
+      "selectedVariants": {
+        "50": {
+          "priceId": "645",
+          "label": "Varianta: 50",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "645",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "645",
+            "data-customerprice": "399",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/220-4_power--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/220-4_power--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f5231ff&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/220-4_power--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f5231ff&sg=2f1e9886",
+            "data-index": "3",
+            "aria-labelledby": "variant-name-645"
+          },
+          "sku": "220_50",
+          "offer": {
+            "sku": "220_50",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+            "price": "399.00",
+            "priceCurrency": "CZK",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "pack": "50 ml"
+        },
+        "15": {
+          "priceId": "460",
+          "label": "Parfémovaná voda: 15",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "460",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "460",
+            "data-customerprice": "179",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/220-5_power--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/220-5_power--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f5231ff&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/220-5_power--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f5231ff&sg=2f1e9886",
+            "data-index": "1",
+            "aria-labelledby": "variant-name-460"
+          },
+          "sku": "13078-49769",
+          "offer": {
+            "sku": "13078-49769",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yodeymaparfemy.cz/yodeyma-power-edp/",
+            "price": "179.00",
+            "priceCurrency": "CZK",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "pack": "15 ml"
+        }
+      }
+    },
+    {
+      "id": "root",
+      "name": "Yodeyma Root",
+      "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+      "checkedAt": "2026-11-13T18:24:16.981455+00:00",
+      "sourceSha256": "3f1914aadddb37e3c31515436b5e557609466490acd123fb2939457dbc151c49",
+      "offers": [
+        {
+          "sku": "13068-49737",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+          "price": "179.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "13068-49738",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+          "price": "399.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "13068-49736",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+          "price": "669.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "190/15",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+          "price": "139.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        },
+        {
+          "sku": "190/50",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+          "price": "639.00",
+          "priceCurrency": "CZK",
+          "itemCondition": "https://schema.org/NewCondition"
+        }
+      ],
+      "variants": [
+        {
+          "priceId": "379",
+          "label": "Parfémovaná voda: 15",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "379",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "379",
+            "data-customerprice": "179",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/190-5_root--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/190-5_root--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f5231ff&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/190-5_root--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f5231ff&sg=2f1e9886",
+            "data-index": "1",
+            "aria-labelledby": "variant-name-379"
+          }
+        },
+        {
+          "priceId": "382",
+          "label": "Parfémovaná voda: 50",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "382",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "382",
+            "data-customerprice": "399",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/190-4_root--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/190-4_root--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f5231ff&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/190-4_root--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f5231ff&sg=2f1e9886",
+            "data-index": "2",
+            "aria-labelledby": "variant-name-382"
+          }
+        },
+        {
+          "priceId": "376",
+          "label": "Parfémovaná voda: 100",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "376",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "376",
+            "data-customerprice": "669",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/190-3_root--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/190-3_root--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f5231ff&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/190-3_root--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f5231ff&sg=2f1e9886",
+            "data-index": "3",
+            "aria-labelledby": "variant-name-376"
+          }
+        },
+        {
+          "priceId": "1921",
+          "label": "Varianta: 15 ml - Eko kabelkové balení (s víčkem bez obalu)",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1921",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1921",
+            "data-customerprice": "139",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/190-5_root--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/190-5_root--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f5231ff&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/190-5_root--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f5231ff&sg=2f1e9886",
+            "data-index": "4",
+            "aria-labelledby": "variant-name-1921"
+          }
+        },
+        {
+          "priceId": "1918",
+          "label": "Luxusní dárkové balení: 50 ml + mini parfém",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "1918",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "1918",
+            "data-customerprice": "639",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/190_root.jpg?ff=1&x=1024&y=768&q=85&ts=65968aa0&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/190_root.jpg?ff=1&x=423&y=318&q=85&ts=65968aa0&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/190_root.jpg?ff=1&x=290&y=218&q=85&ts=65968aa0&sg=2f1e9886",
+            "data-index": "5",
+            "aria-labelledby": "variant-name-1918"
+          }
+        }
+      ],
+      "description": "Detailní popis produktu Intenzita tohoto parfému je charakteristická mátovou svěžestí, která se konsoliduje díky tónům pačuli. Yodeyma Root - to jsou orientální, dřevité vonné tóny. Root je vůně pro nekomplikovaného, elegantního klasického muže. Root je velmi mužným parfémem pro vnímavého a citlivého muže VONNÉ TÓNY Hlava (vysoké tóny) utváří první dojem parfému.Srdce (střední tóny) představuje duši parfému.Základ (nízké tóny) vytváří hloubku vůně parfému. Hlava (vysoké tóny) Grapefruit Srdce (střední tóny) Pelargonie Základ (nízké tóny) Pačuli",
+      "selectedVariants": {
+        "50": {
+          "priceId": "382",
+          "label": "Parfémovaná voda: 50",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "382",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "382",
+            "data-customerprice": "399",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/190-4_root--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/190-4_root--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f5231ff&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/190-4_root--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f5231ff&sg=2f1e9886",
+            "data-index": "2",
+            "aria-labelledby": "variant-name-382"
+          },
+          "sku": "13068-49738",
+          "offer": {
+            "sku": "13068-49738",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+            "price": "399.00",
+            "priceCurrency": "CZK",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "pack": "50 ml"
+        },
+        "15": {
+          "priceId": "379",
+          "label": "Parfémovaná voda: 15",
+          "attributes": {
+            "type": "radio",
+            "name": "priceId",
+            "value": "379",
+            "data-min": "1",
+            "data-max": "9999",
+            "data-decimals": "0",
+            "data-codeid": "379",
+            "data-customerprice": "179",
+            "data-big": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/big/190-5_root--parfemovana-voda-100.jpg?ff=1&x=1024&y=768&q=85&ts=5f5231ff&sg=161563f2",
+            "data-detail": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail/190-5_root--parfemovana-voda-100.jpg?ff=1&x=423&y=318&q=85&ts=5f5231ff&sg=2175fb9d",
+            "data-detail_small": "https://cdn.myshoptet.com/usr/www.yodeymaparfemy.cz/user/shop/detail_small/190-5_root--parfemovana-voda-100.jpg?ff=1&x=290&y=218&q=85&ts=5f5231ff&sg=2f1e9886",
+            "data-index": "1",
+            "aria-labelledby": "variant-name-379"
+          },
+          "sku": "13068-49737",
+          "offer": {
+            "sku": "13068-49737",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.yodeymaparfemy.cz/yodeyma-root-edp/",
+            "price": "179.00",
+            "priceCurrency": "CZK",
+            "itemCondition": "https://schema.org/NewCondition"
+          },
+          "pack": "15 ml"
+        }
+      }
+    }
+  ]
+}

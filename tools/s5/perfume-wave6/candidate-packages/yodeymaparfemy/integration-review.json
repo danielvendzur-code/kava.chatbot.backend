@@ -1,0 +1,223 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Yodeyma parfémy.cz",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/yodeymaparfemy/logo.png",
+      "header": "/assets/s5/yodeymaparfemy/logo.png",
+      "avatar": "/assets/s5/yodeymaparfemy/avatar.ico"
+    },
+    "brand": {
+      "name": "Yodeyma parfémy.cz",
+      "domain": "yodeymaparfemy.cz",
+      "website": "https://www.yodeymaparfemy.cz/",
+      "lang": "cs",
+      "fullName": "Yodeyma parfémy.cz",
+      "url": "https://www.yodeymaparfemy.cz/",
+      "logo": "/assets/s5/yodeymaparfemy/logo.png",
+      "mark": "/assets/s5/yodeymaparfemy/avatar.ico",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Jablko a bambus",
+        "Jasmín a jantar",
+        "Grapefruit a skořice",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#272724",
+        "accent": "#8d6535",
+        "soft": "#faf8f1",
+        "paper": "#ffffff",
+        "ink": "#2c2b26",
+        "line": "#e7e1d5"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, jablko a zelené tóny",
+        "",
+        "Citrusy, jablko a zelené tóny",
+        ""
+      ],
+      "kara": [
+        "Jablko, bambus a bílé pižmo",
+        "",
+        "Jablko, bambus a bílé pižmo",
+        ""
+      ],
+      "caribbean": [
+        "Bergamotka, růžový pepř a dřevo",
+        "",
+        "Bergamotka, růžový pepř a dřevo",
+        ""
+      ],
+      "flowers": [
+        "Jasmín, růže a květ pomerančovníku",
+        "",
+        "Jasmín, růže a květ pomerančovníku",
+        ""
+      ],
+      "iris": [
+        "Jasmín, květ pomerančovníku a jantar",
+        "",
+        "Jasmín, květ pomerančovníku a jantar",
+        ""
+      ],
+      "cheante": [
+        "Mandarinka, růže a pačuli",
+        "",
+        "Mandarinka, růže a pačuli",
+        ""
+      ],
+      "grapefruit": [
+        "Grapefruit a pačuli",
+        "",
+        "Grapefruit a pačuli",
+        ""
+      ],
+      "power": [
+        "Grapefruit, skořice a pačuli",
+        "",
+        "Grapefruit, skořice a pačuli",
+        ""
+      ],
+      "root": [
+        "Grapefruit, pelargonie a pačuli",
+        "",
+        "Grapefruit, pelargonie a pačuli",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "kara": [
+        "/assets/s5/yodeymaparfemy/kara-50ml.jpg"
+      ],
+      "caribbean": [
+        "/assets/s5/yodeymaparfemy/caribbean-50ml.jpg"
+      ],
+      "flowers": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "iris": [
+        "/assets/s5/yodeymaparfemy/iris-50ml.jpg"
+      ],
+      "cheante": [
+        "/assets/s5/yodeymaparfemy/cheante-50ml.jpg"
+      ],
+      "grapefruit": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "power": [
+        "/assets/s5/yodeymaparfemy/power-50ml.jpg"
+      ],
+      "root": [
+        "/assets/s5/yodeymaparfemy/root-50ml.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "kara",
+      "power"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "yodeymaparfemy-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "kara": "caribbean",
+        "caribbean": "kara",
+        "iris": "cheante",
+        "cheante": "iris",
+        "power": "root",
+        "root": "power"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/yodeymaparfemy.js",
+  "backendBrand": "yodeymaparfemy",
+  "offlineRules": [
+    {
+      "chip": "Jablko a bambus",
+      "match": "jablko.*bambus",
+      "productIds": [
+        "kara"
+      ]
+    },
+    {
+      "chip": "Jasmín a jantar",
+      "match": "jasmin.*jantar",
+      "productIds": [
+        "iris"
+      ]
+    },
+    {
+      "chip": "Grapefruit a skořice",
+      "match": "grapefruit.*skoric",
+      "productIds": [
+        "power"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-wave6/candidate-packages/yodeymaparfemy/ui-review.css",
+    "destination": "n447/s5/brands/yodeymaparfemy.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/yodeymaparfemy.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_TIER_SECONDARY2024_BAND_LATEST2025_UNKNOWN",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}

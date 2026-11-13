@@ -1,0 +1,454 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.parfums4all = {
+ "brand": "Parfums4all",
+ "domain": "parfums4all.sk",
+ "operator": {
+  "name": "ZANA SHOP, s.r.o.",
+  "ico": "36291781",
+  "country": "SK",
+  "officialRegistry": "https://api.statistics.sk/rpo/v1/search?identifier=36291781",
+  "activeNoEnd": true
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "sk",
+ "country": "SK",
+ "currency": "EUR",
+ "status": "SOURCE_PACKAGE_VERIFIED",
+ "products": [
+  {
+   "id": "ardagio-aqua-classic-for-men-edp-100ml",
+   "name": "JFenzi Ardagio aqua classic for men",
+   "url": "https://www.parfums4all.sk/produkt/ardagio-aqua-classic-for-men-edp-100ml/",
+   "priceAmount": 10.9,
+   "price": "10,90 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Citrusy, morské tóny a jazmín. Alternatívna vôňa JFenzi; nejde o originál dizajnérskej značky.",
+   "reason": "Citrusy, morské tóny a jazmín. Alternatívna vôňa JFenzi; nejde o originál dizajnérskej značky.",
+   "photo": "/assets/s5/parfums4all/ardagio-aqua-classic-for-men-edp-100ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.parfums4all.sk/produkt/ardagio-aqua-classic-for-men-edp-100ml/",
+    "sourceTitle": "Ardagio aqua classic for men edp 100ml",
+    "verifiedAt": "2026-11-13T18:19:38.331827+00:00",
+    "sourceSha256": "68921ca4b50c036a5cecc0744763874805d51ca8a83dcd43b4df337fc568e9e8",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "WooCommerceProductPublicAvailability",
+     "productClass": "entry content-bg entry-content-wrap product type-product post-793 status-publish first instock product_cat-panske-parfumy product_cat-parfumy has-post-thumbnail featured taxable shipping-taxable purchasable product-type-simple",
+     "stockClass": "instock",
+     "qualification": "Publisher instock exact fixed100mlsimpleSKU, not delivery48h/cartbutton or independently auditedwarehouse."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 10.9,
+     "currency": "EUR",
+     "visiblePrice": "10,90 € S DPH",
+     "vatSource": "https://www.parfums4all.sk/produkt/ardagio-aqua-classic-for-men-edp-100ml/",
+     "vatEvidence": "Exactmainprice marked S DPH onofficialproduct."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sourceText": "Ardagio aqua classic for men edp 100ml",
+     "scope": "ExactsimpleSKUtitle100ml, not lowestvariant/sampleprice."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.parfums4all.sk/wp-content/uploads/2026/02/82-fenziardagioaquaman.jpg",
+    "photoEvidence": {
+     "id": "ardagio-aqua-classic-for-men-edp-100ml",
+     "url": "https://www.parfums4all.sk/wp-content/uploads/2026/02/82-fenziardagioaquaman.jpg",
+     "file": "ardagio-aqua-classic-for-men-edp-100ml.jpg",
+     "bytes": 31385,
+     "width": 450,
+     "height": 450,
+     "sha256": "e87908a2f281d2e629beeb583ccfc35814eb8ee344a17a63cb6986fbad28a3a2",
+     "originalBytes": true,
+     "selectedPack": "100 ml"
+    },
+    "identityDisclosure": "Alternativebrand JFenzi, not designeroriginal. Realmerchant100mlpackphoto; not an illustrative designer bottle.",
+    "scent": "Citrusy, morské tóny a jazmín",
+    "fragrance": {
+     "notes": [
+      "citrus",
+      "plody kaki",
+      "morské tóny",
+      "okvetné lístky jazmínu",
+      "pačuli",
+      "biele pižmo",
+      "céder",
+      "ruža"
+     ],
+     "officialFamilies": [
+      "aromatická",
+      "citrusová"
+     ],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum",
+     "notesEvidence": {
+      "url": "https://www.parfums4all.sk/produkt/ardagio-aqua-classic-for-men-edp-100ml/",
+      "sourceText": "Hlava: citrus, plody kaki; Srdce: morské tóny, okvetné lístky jazmínu; Základ: pačuli, biele pižmo, céder, ruža",
+      "originalSourceText": "HLAVA: citrus, plody kaki SRDCE: morské tóny, okvetné lístky jazmínu ZÁKLAD: pačuli, biele pižmo, céder, ruža",
+      "sourceLanguage": "sk",
+      "displayLanguage": "sk",
+      "scope": "Literal complete official head/heart/base and DRUH VONE only; no health/longlasting/personality/occasion promises copied."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "Not originaldesignerbrand, no scent equivalence/health/lasting guarantee.",
+     "No numericnoteweights/intensity or salesguarantees."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "ardagio-aqua-classic-for-men-edp-100ml"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.parfums4all.sk/produkt/ardagio-aqua-classic-for-men-edp-100ml/",
+     "sourceText": "Hlava: citrus, plody kaki; Srdce: morské tóny, okvetné lístky jazmínu; Základ: pačuli, biele pižmo, céder, ruža",
+     "navigationLabel": "Citrusy, morské tóny a jazmín",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "elite-edp-100ml",
+   "name": "Luxure ElArte /Elite/",
+   "url": "https://www.parfums4all.sk/produkt/elite-edp-100ml/",
+   "priceAmount": 9.9,
+   "price": "9,90 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Mandarínka, frézia a ruža. Alternatívna vôňa Luxure; nejde o originál dizajnérskej značky.",
+   "reason": "Mandarínka, frézia a ruža. Alternatívna vôňa Luxure; nejde o originál dizajnérskej značky.",
+   "photo": "/assets/s5/parfums4all/elite-edp-100ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.parfums4all.sk/produkt/elite-edp-100ml/",
+    "sourceTitle": "ElArte /Elite/ edp 100ml (nový dizajn, rovnaká vôňa)",
+    "verifiedAt": "2026-11-13T18:19:36.740784+00:00",
+    "sourceSha256": "d3ea4049da077718938b6736ec3b3d35b021769470a1266380995e7ee49483e2",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "WooCommerceProductPublicAvailability",
+     "productClass": "entry content-bg entry-content-wrap product type-product post-743 status-publish first instock product_cat-damske-parfumy product_cat-parfumy has-post-thumbnail featured taxable shipping-taxable purchasable product-type-simple",
+     "stockClass": "instock",
+     "qualification": "Publisher instock exact fixed100mlsimpleSKU, not delivery48h/cartbutton or independently auditedwarehouse."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 9.9,
+     "currency": "EUR",
+     "visiblePrice": "9,90 € S DPH",
+     "vatSource": "https://www.parfums4all.sk/produkt/elite-edp-100ml/",
+     "vatEvidence": "Exactmainprice marked S DPH onofficialproduct."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sourceText": "ElArte /Elite/ edp 100ml (nový dizajn, rovnaká vôňa)",
+     "scope": "ExactsimpleSKUtitle100ml, not lowestvariant/sampleprice."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.parfums4all.sk/wp-content/uploads/2026/02/ELARTE-OK.jpg",
+    "photoEvidence": {
+     "id": "elite-edp-100ml",
+     "url": "https://www.parfums4all.sk/wp-content/uploads/2026/02/ELARTE-OK.jpg",
+     "file": "elite-edp-100ml.jpg",
+     "bytes": 566019,
+     "width": 2304,
+     "height": 2130,
+     "sha256": "8b9300511be15f97fb4f9050325c57c752ff4de703fb105e9198480db2ede2da",
+     "originalBytes": true,
+     "selectedPack": "100 ml"
+    },
+    "identityDisclosure": "Alternativebrand Luxure, not designeroriginal. Realmerchant100mlpackphoto; not an illustrative designer bottle.",
+    "scent": "Mandarínka, frézia a ruža",
+    "fragrance": {
+     "notes": [
+      "mandarínka",
+      "pomaranč",
+      "melón",
+      "frézia",
+      "esencia ruže",
+      "kosatec",
+      "santalové drevo"
+     ],
+     "officialFamilies": [
+      "kvetinová"
+     ],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum",
+     "notesEvidence": {
+      "url": "https://www.parfums4all.sk/produkt/elite-edp-100ml/",
+      "sourceText": "Hlava: mandarínka, pomaranč, melón; Srdce: frézia a esencia ruže; Základ: kosatec, santalové drevo",
+      "originalSourceText": "HLAVA: mandarínka, pomaranč, melón SRDCE: frézia a esencia ruže ZÁKLAD: kosatec, santalové drevo",
+      "sourceLanguage": "sk",
+      "displayLanguage": "sk",
+      "scope": "Literal complete official head/heart/base and DRUH VONE only; no health/longlasting/personality/occasion promises copied."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "Not originaldesignerbrand, no scent equivalence/health/lasting guarantee.",
+     "No numericnoteweights/intensity or salesguarantees."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "elite-edp-100ml"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.parfums4all.sk/produkt/elite-edp-100ml/",
+     "sourceText": "Hlava: mandarínka, pomaranč, melón; Srdce: frézia a esencia ruže; Základ: kosatec, santalové drevo",
+     "navigationLabel": "Mandarínka, frézia a ruža",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "marine-men-edp-100ml",
+   "name": "JFenzi Marine men",
+   "url": "https://www.parfums4all.sk/produkt/marine-men-edp-100ml/",
+   "priceAmount": 10.9,
+   "price": "10,90 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Bergamot, mäta, škorica a vanilka. Alternatívna vôňa JFenzi; nejde o originál dizajnérskej značky.",
+   "reason": "Bergamot, mäta, škorica a vanilka. Alternatívna vôňa JFenzi; nejde o originál dizajnérskej značky.",
+   "photo": "/assets/s5/parfums4all/marine-men-edp-100ml.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.parfums4all.sk/produkt/marine-men-edp-100ml/",
+    "sourceTitle": "Marine men edp 100ml",
+    "verifiedAt": "2026-11-13T18:19:36.745682+00:00",
+    "sourceSha256": "94b5d38a254fff202da2af34356f29e43543dab7bb5c2ab83f62692c959f141e",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "WooCommerceProductPublicAvailability",
+     "productClass": "entry content-bg entry-content-wrap product type-product post-814 status-publish first instock product_cat-panske-parfumy product_cat-parfumy has-post-thumbnail taxable shipping-taxable purchasable product-type-simple",
+     "stockClass": "instock",
+     "qualification": "Publisher instock exact fixed100mlsimpleSKU, not delivery48h/cartbutton or independently auditedwarehouse."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 10.9,
+     "currency": "EUR",
+     "visiblePrice": "10,90 € S DPH",
+     "vatSource": "https://www.parfums4all.sk/produkt/marine-men-edp-100ml/",
+     "vatEvidence": "Exactmainprice marked S DPH onofficialproduct."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sourceText": "Marine men edp 100ml",
+     "scope": "ExactsimpleSKUtitle100ml, not lowestvariant/sampleprice."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.parfums4all.sk/wp-content/uploads/2026/02/104-51-2.png",
+    "photoEvidence": {
+     "id": "marine-men-edp-100ml",
+     "url": "https://www.parfums4all.sk/wp-content/uploads/2026/02/104-51-2.png",
+     "file": "marine-men-edp-100ml.png",
+     "bytes": 90103,
+     "width": 500,
+     "height": 500,
+     "sha256": "f89c3fed2266ede5da68bc57e562e4752f4d233c3b7d669dbe15e12ceef4972e",
+     "originalBytes": true,
+     "selectedPack": "100 ml"
+    },
+    "identityDisclosure": "Alternativebrand JFenzi, not designeroriginal. Realmerchant100mlpackphoto; not an illustrative designer bottle.",
+    "scent": "Bergamot, mäta, škorica a vanilka",
+    "fragrance": {
+     "notes": [
+      "Bergamot",
+      "artemesia",
+      "kardamóm",
+      "levanduľa",
+      "mäta",
+      "škorica",
+      "rasca",
+      "kvet pomarančovníka",
+      "santalové drevo",
+      "fazuľa tonka",
+      "jantár",
+      "vanilka",
+      "céder"
+     ],
+     "officialFamilies": [
+      "orientálna"
+     ],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum",
+     "notesEvidence": {
+      "url": "https://www.parfums4all.sk/produkt/marine-men-edp-100ml/",
+      "sourceText": "Hlava: Bergamot, artemesia, kardamóm, levanduľa, mäta; Srdce: škorica, rasca, kvet pomarančovníka; Základ: santalové drevo, fazuľa tonka, jantár, vanilka, céder",
+      "originalSourceText": "HLAVA: Bergamot, artemesia, kardamóm, levanduľa, mäta SRDCE: škorica, rasca, kvet pomarančovníka ZÁKLAD: santalové drevo, fazuľa tonka, jantár, vanilka, céder",
+      "sourceLanguage": "sk",
+      "displayLanguage": "sk",
+      "scope": "Literal complete official head/heart/base and DRUH VONE only; no health/longlasting/personality/occasion promises copied."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "Not originaldesignerbrand, no scent equivalence/health/lasting guarantee.",
+     "No numericnoteweights/intensity or salesguarantees."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "marine-men-edp-100ml"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.parfums4all.sk/produkt/marine-men-edp-100ml/",
+     "sourceText": "Hlava: Bergamot, artemesia, kardamóm, levanduľa, mäta; Srdce: škorica, rasca, kvet pomarančovníka; Základ: santalové drevo, fazuľa tonka, jantár, vanilka, céder",
+     "navigationLabel": "Bergamot, mäta, škorica a vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "experience-edp-100ml",
+   "name": "JFenzi Experience",
+   "url": "https://www.parfums4all.sk/produkt/experience-edp-100ml/",
+   "priceAmount": 10.9,
+   "price": "10,90 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Horká mandľa, šafran a céder. Alternatívna vôňa JFenzi; nejde o originál dizajnérskej značky.",
+   "reason": "Horká mandľa, šafran a céder. Alternatívna vôňa JFenzi; nejde o originál dizajnérskej značky.",
+   "photo": "/assets/s5/parfums4all/experience-edp-100ml.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.parfums4all.sk/produkt/experience-edp-100ml/",
+    "sourceTitle": "Experience edp 100ml",
+    "verifiedAt": "2026-11-13T18:19:38.093510+00:00",
+    "sourceSha256": "a3417bb9587333505dfd9c024ef338669821ae3019343c5a898b90263c9f327b",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "WooCommerceProductPublicAvailability",
+     "productClass": "entry content-bg entry-content-wrap product type-product post-1236 status-publish first instock product_cat-damske-parfumy product_cat-parfumy has-post-thumbnail featured taxable shipping-taxable purchasable product-type-simple",
+     "stockClass": "instock",
+     "qualification": "Publisher instock exact fixed100mlsimpleSKU, not delivery48h/cartbutton or independently auditedwarehouse."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 10.9,
+     "currency": "EUR",
+     "visiblePrice": "10,90 € S DPH",
+     "vatSource": "https://www.parfums4all.sk/produkt/experience-edp-100ml/",
+     "vatEvidence": "Exactmainprice marked S DPH onofficialproduct."
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sourceText": "Experience edp 100ml",
+     "scope": "ExactsimpleSKUtitle100ml, not lowestvariant/sampleprice."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://www.parfums4all.sk/wp-content/uploads/2026/02/569-experience.jpg",
+    "photoEvidence": {
+     "id": "experience-edp-100ml",
+     "url": "https://www.parfums4all.sk/wp-content/uploads/2026/02/569-experience.jpg",
+     "file": "experience-edp-100ml.jpg",
+     "bytes": 50402,
+     "width": 500,
+     "height": 500,
+     "sha256": "6d33d5c58b9c4c9280c9bd194b697acea59fb100c71824f684d31efcd66f7ebf",
+     "originalBytes": true,
+     "selectedPack": "100 ml"
+    },
+    "identityDisclosure": "Alternativebrand JFenzi, not designeroriginal. Realmerchant100mlpackphoto; not an illustrative designer bottle.",
+    "scent": "Horká mandľa, šafran a céder",
+    "fragrance": {
+     "notes": [
+      "horká mandľa",
+      "šafran",
+      "céder",
+      "egyptský jazmín",
+      "ambra",
+      "drevené tóny",
+      "pižmo"
+     ],
+     "officialFamilies": [
+      "jantárová",
+      "drevitá",
+      "mandľová"
+     ],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum",
+     "notesEvidence": {
+      "url": "https://www.parfums4all.sk/produkt/experience-edp-100ml/",
+      "sourceText": "Hlava: horká mandľa, šafran; Srdce: céder, egyptský jazmín; Základ: ambra, drevené tóny, pižmo",
+      "originalSourceText": "HLAVA: horká mandľa, šafran SRDCE: céder, egyptský jazmín ZÁKLAD: ambra, drevené tóny, pižmo",
+      "sourceLanguage": "sk",
+      "displayLanguage": "sk",
+      "scope": "Literal complete official head/heart/base and DRUH VONE only; no health/longlasting/personality/occasion promises copied."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "Not originaldesignerbrand, no scent equivalence/health/lasting guarantee.",
+     "No numericnoteweights/intensity or salesguarantees."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "experience-edp-100ml"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.parfums4all.sk/produkt/experience-edp-100ml/",
+     "sourceText": "Hlava: horká mandľa, šafran; Srdce: céder, egyptský jazmín; Základ: ambra, drevené tóny, pižmo",
+     "navigationLabel": "Horká mandľa, šafran a céder",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  }
+ ],
+ "revenue": {
+  "year": 2025,
+  "salesGoods": 121405,
+  "salesProductsServices": 0,
+  "salesSum": 121405,
+  "operatingRevenue": 121432,
+  "otherOperatingIncome": 27,
+  "currency": "EUR",
+  "source": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10295275",
+  "pdfSource": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12778226",
+  "qualification": "Official MUJrow02goods121405; row01operating121432includes27otherincome, notsales. WholeEURPDFheader/year/ICOchecked."
+ },
+ "size": "OFFICIAL2025_SALES_PREFERRED_TIER_PASS_FIT_REVIEW_MANUAL_CONVERTER",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "Four source-complete representative compositions; otherhomepage newitems have no full officialdescription and are excluded, not invented.",
+  "Existing original-name/brand filter FIT_REVIEW; no observed needsquiz/chatlauncher in own rejected-cookie home/product views, othermodesunknown.",
+  "ElArte/Elite source explicitly renamed/newdesign sameformula; not twoformulas. Actualownbrand photos, not designeroriginals.",
+  "No separatelyverifiedcompatible smallpack/addon contract. Distinctalternatives/compare only."
+ ]
+};
