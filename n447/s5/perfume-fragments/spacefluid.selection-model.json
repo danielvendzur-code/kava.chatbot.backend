@@ -1,0 +1,52 @@
+{
+  "key": "fragranceDirection",
+  "question": "Které tóny chcete prozkoumat?",
+  "options": [
+    {
+      "value": "leather",
+      "label": "Kůže, káva a koření",
+      "key": "fragranceProfile",
+      "question": "Která kombinace je vám bližší?",
+      "options": [
+        {
+          "value": "narcis-nocturne",
+          "label": "Narcis, malina a tabák",
+          "productId": "narcis-nocturne",
+          "sourceUrl": "https://www.spacefluid.com/product-page/narcis-nocturne-plain-bottle-design"
+        },
+        {
+          "value": "moon-coat",
+          "label": "Bílé víno, káva a lípa",
+          "productId": "moon-coat",
+          "sourceUrl": "https://www.spacefluid.com/product-page/moon-coat"
+        },
+        {
+          "value": "x-ray",
+          "label": "Kardamom, kadidlo a rum",
+          "productId": "x-ray",
+          "sourceUrl": "https://www.spacefluid.com/product-page/x-ray"
+        }
+      ]
+    },
+    {
+      "value": "flowers",
+      "label": "Květy, ječmen a voskové akordy",
+      "key": "fragranceProfile",
+      "question": "Která kombinace je vám bližší?",
+      "options": [
+        {
+          "value": "whispering-fields",
+          "label": "Pražený ječmen, whisky a osmanthus",
+          "productId": "whispering-fields",
+          "sourceUrl": "https://www.spacefluid.com/product-page/parf%C3%A9m-na-p%C5%99%C3%A1n%C3%AD"
+        },
+        {
+          "value": "lovely-problem",
+          "label": "Skořice, včelí vosk a lotos",
+          "productId": "lovely-problem",
+          "sourceUrl": "https://www.spacefluid.com/product-page/lovely-problem"
+        }
+      ]
+    }
+  ]
+}

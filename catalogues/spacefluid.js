@@ -1,0 +1,565 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.spacefluid = {
+ "brand": "Space Fluid",
+ "domain": "spacefluid.com",
+ "operator": {
+  "name": "Space Fluid s.r.o.",
+  "ico": "11966050",
+  "country": "CZ"
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "cs",
+ "country": "CZ",
+ "currency": "EUR",
+ "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+ "products": [
+  {
+   "id": "narcis-nocturne",
+   "name": "Narcis Nocturne",
+   "url": "https://www.spacefluid.com/product-page/narcis-nocturne-plain-bottle-design",
+   "priceAmount": 215,
+   "price": "215 €",
+   "currency": "EUR",
+   "volume": "50 ml · Paper box",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Narcis, malina a tabák.",
+   "reason": "Narcis, malina a tabák.",
+   "photo": "/assets/s5/spacefluid/narcis-nocturne.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.spacefluid.com/product-page/narcis-nocturne-plain-bottle-design",
+    "verifiedAt": "2026-11-13T09:43:33.570259+00:00",
+    "sourceSha256": "4dbdadd804b796e2af0a030a341fd47fdcde9f5e320e2d9345969f5e764e187e",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": null,
+     "structuredAvailability": "https://schema.org/InStock",
+     "scope": "Public SSR exact Paper box productItem inventory.status=in_stock and globally available; quantity0 not interpreted as a physical count."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 215,
+     "currency": "EUR",
+     "vatEvidence": "Official terms explicitly prices include VAT and related charges, delivery excluded.",
+     "vatSource": "https://www.spacefluid.com/terms-and-conditions"
+    },
+    "packEvidence": {
+     "pack": "50 ml · Paper box",
+     "title": "Narcis Nocturne",
+     "selectedVariant": "Paper box",
+     "publicItemId": "1d96069a-3cd3-47df-a8cb-847e51576168",
+     "optionSelectionId": 15,
+     "liveSelection": "NOT_CONFIRMED; click did not expand in nonGET-blocked read-only harness. Public SSR option/item exact mapping verified; no claim of live variant selection."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Narcis, malina a tabák",
+    "selectionTraits": {
+     "fragranceDirection": "leather",
+     "fragranceProfile": "narcis-nocturne"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.spacefluid.com/product-page/narcis-nocturne-plain-bottle-design",
+     "sourceText": "Narcissus, oakmoss, leather, styrax, raspberry, tobacco, patchouli, sandalwood, caramel, rhubarb, tangerine, church-cellar note, cedar, osmanthus, vanilla.",
+     "navigationLabel": "Narcis, malina a tabák",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://static.wixstatic.com/media/337255_4e315223951a4e1b83b015dbbba1f379~mv2.png",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/337255_4e315223951a4e1b83b015dbbba1f379~mv2.png",
+     "publishedTransformUrl": "https://static.wixstatic.com/media/337255_4e315223951a4e1b83b015dbbba1f379~mv2.png/v1/fit/w_500,h_500,q_90/file.png",
+     "originalSha256": "bc3ef659b03d0abb91809721206dce45d1f33d9c55df9b8c34ba98d82769795f",
+     "localSha256": "8a43e9d07a98b8f91302c344d8c4dce99d121a7251f2f0e1c15e372b8daf89c1",
+     "width": 600,
+     "height": 1100,
+     "processing": "Same published official media ID original resolution, lossless conversion only, no generated art/upscale/retouch",
+     "pack": "50 ml plain hand-inscribed bottle; paper box is selection, not painted art variant"
+    },
+    "fragrance": {
+     "notes": [
+      "Narcissus",
+      "oakmoss",
+      "leather",
+      "styrax",
+      "raspberry",
+      "tobacco",
+      "patchouli",
+      "sandalwood",
+      "caramel",
+      "rhubarb",
+      "tangerine",
+      "church-cellar note",
+      "cedar",
+      "osmanthus",
+      "vanilla."
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://www.spacefluid.com/product-page/narcis-nocturne-plain-bottle-design",
+      "sourceText": "Narcissus, oakmoss, leather, styrax, raspberry, tobacco, patchouli, sandalwood, caramel, rhubarb, tangerine, church-cellar note, cedar, osmanthus, vanilla.",
+      "sourceLanguage": "en",
+      "displayLanguage": "cs",
+      "scope": "Literal English flat note list, not a pyramid or proof of natural ingredients. Czech navigation labels translate selected terms only."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+     "No merchant promotions, reward tickets, bundle discounts or basket integration."
+    ]
+   }
+  },
+  {
+   "id": "moon-coat",
+   "name": "Moon Coat",
+   "url": "https://www.spacefluid.com/product-page/moon-coat",
+   "priceAmount": 230,
+   "price": "230 €",
+   "currency": "EUR",
+   "volume": "50 ml · Paper box",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Bílé víno, káva a lípa.",
+   "reason": "Bílé víno, káva a lípa.",
+   "photo": "/assets/s5/spacefluid/moon-coat.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.spacefluid.com/product-page/moon-coat",
+    "verifiedAt": "2026-11-13T09:43:33.584372+00:00",
+    "sourceSha256": "31c33e83b85a3f5bf9907a9ee395b6a7abdbc05f50a4543c09499a79f19c6f3b",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": null,
+     "structuredAvailability": "https://schema.org/InStock",
+     "scope": "Public SSR exact Paper box productItem inventory.status=in_stock and globally available; quantity0 not interpreted as a physical count."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 230,
+     "currency": "EUR",
+     "vatEvidence": "Official terms explicitly prices include VAT and related charges, delivery excluded.",
+     "vatSource": "https://www.spacefluid.com/terms-and-conditions"
+    },
+    "packEvidence": {
+     "pack": "50 ml · Paper box",
+     "title": "Moon Coat",
+     "selectedVariant": "Paper box",
+     "publicItemId": "aba4b2ed-0ae7-4311-9b2c-6402c49abc9b",
+     "optionSelectionId": 16,
+     "liveSelection": "NOT_CONFIRMED; click did not expand in nonGET-blocked read-only harness. Public SSR option/item exact mapping verified; no claim of live variant selection."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Bílé víno, káva a lípa",
+    "selectionTraits": {
+     "fragranceDirection": "leather",
+     "fragranceProfile": "moon-coat"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.spacefluid.com/product-page/moon-coat",
+     "sourceText": "Suede, white wine, cassie flower, petitgrain, daisy, ambrette, roasted coffee, patchouli, linden, cognac, orange fleur, frangipani, tobacco, coriander, helichrysum.",
+     "navigationLabel": "Bílé víno, káva a lípa",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://static.wixstatic.com/media/337255_682d55b6759c45d8bfa25c7796680562~mv2.webp",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/337255_682d55b6759c45d8bfa25c7796680562~mv2.webp",
+     "publishedTransformUrl": "https://static.wixstatic.com/media/337255_682d55b6759c45d8bfa25c7796680562~mv2.webp/v1/fit/w_500,h_500,q_90/file.webp",
+     "originalSha256": "94afd032f8fdc72c9928c0d873f4452f3976d8e9170a4a232cbd5de4921d7fc8",
+     "localSha256": "bd3d403a7f8bb85727825789c9fee3d2c0dcaae38181ba255475a2f1fb53da56",
+     "width": 340,
+     "height": 475,
+     "processing": "Same published official media ID original resolution, lossless conversion only, no generated art/upscale/retouch",
+     "pack": "50 ml plain hand-inscribed bottle; paper box is selection, not painted art variant"
+    },
+    "fragrance": {
+     "notes": [
+      "Suede",
+      "white wine",
+      "cassie flower",
+      "petitgrain",
+      "daisy",
+      "ambrette",
+      "roasted coffee",
+      "patchouli",
+      "linden",
+      "cognac",
+      "orange fleur",
+      "frangipani",
+      "tobacco",
+      "coriander",
+      "helichrysum."
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://www.spacefluid.com/product-page/moon-coat",
+      "sourceText": "Suede, white wine, cassie flower, petitgrain, daisy, ambrette, roasted coffee, patchouli, linden, cognac, orange fleur, frangipani, tobacco, coriander, helichrysum.",
+      "sourceLanguage": "en",
+      "displayLanguage": "cs",
+      "scope": "Literal English flat note list, not a pyramid or proof of natural ingredients. Czech navigation labels translate selected terms only."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+     "No merchant promotions, reward tickets, bundle discounts or basket integration."
+    ]
+   }
+  },
+  {
+   "id": "x-ray",
+   "name": "X-Ray",
+   "url": "https://www.spacefluid.com/product-page/x-ray",
+   "priceAmount": 215,
+   "price": "215 €",
+   "currency": "EUR",
+   "volume": "50 ml · Paper box",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Kardamom, kadidlo a rum.",
+   "reason": "Kardamom, kadidlo a rum.",
+   "photo": "/assets/s5/spacefluid/x-ray.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.spacefluid.com/product-page/x-ray",
+    "verifiedAt": "2026-11-13T09:43:34.347212+00:00",
+    "sourceSha256": "dbce10ed372a090177ef32b28f5cff5240a36bb95df3c312cafe6a0c1a34ac2c",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": null,
+     "structuredAvailability": "https://schema.org/InStock",
+     "scope": "Public SSR exact Paper box productItem inventory.status=in_stock and globally available; quantity0 not interpreted as a physical count."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 215,
+     "currency": "EUR",
+     "vatEvidence": "Official terms explicitly prices include VAT and related charges, delivery excluded.",
+     "vatSource": "https://www.spacefluid.com/terms-and-conditions"
+    },
+    "packEvidence": {
+     "pack": "50 ml · Paper box",
+     "title": "X-Ray",
+     "selectedVariant": "Paper box",
+     "publicItemId": "b1035b5a-8c6b-4851-a9fd-b13a1b84f18e",
+     "optionSelectionId": 15,
+     "liveSelection": "NOT_CONFIRMED; click did not expand in nonGET-blocked read-only harness. Public SSR option/item exact mapping verified; no claim of live variant selection."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Kardamom, kadidlo a rum",
+    "selectionTraits": {
+     "fragranceDirection": "leather",
+     "fragranceProfile": "x-ray"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.spacefluid.com/product-page/x-ray",
+     "sourceText": "Cardamom, frankincense, coffee flower, rum, coriander, cheese, leather, coffee, geranium, jasmin, lotus, rose, orange, osmanthus, pepper, ginger.",
+     "navigationLabel": "Kardamom, kadidlo a rum",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://static.wixstatic.com/media/337255_0b09efe3924f4779aed0925eb0603299~mv2.png",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/337255_0b09efe3924f4779aed0925eb0603299~mv2.png",
+     "publishedTransformUrl": "https://static.wixstatic.com/media/337255_0b09efe3924f4779aed0925eb0603299~mv2.png/v1/fit/w_500,h_500,q_90/file.png",
+     "originalSha256": "3d356083877d3c8d4f7885d7c136ccc30a7b5a47886f47b7d0bf63021c12bf14",
+     "localSha256": "fb451aaaa8ce35af0bce469f2d4931d2b13151871118e91ebabd18cb136cd83b",
+     "width": 483,
+     "height": 639,
+     "processing": "Same published official media ID original resolution, lossless conversion only, no generated art/upscale/retouch",
+     "pack": "50 ml plain hand-inscribed bottle; paper box is selection, not painted art variant"
+    },
+    "fragrance": {
+     "notes": [
+      "Cardamom",
+      "frankincense",
+      "coffee flower",
+      "rum",
+      "coriander",
+      "cheese",
+      "leather",
+      "coffee",
+      "geranium",
+      "jasmin",
+      "lotus",
+      "rose",
+      "orange",
+      "osmanthus",
+      "pepper",
+      "ginger."
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://www.spacefluid.com/product-page/x-ray",
+      "sourceText": "Cardamom, frankincense, coffee flower, rum, coriander, cheese, leather, coffee, geranium, jasmin, lotus, rose, orange, osmanthus, pepper, ginger.",
+      "sourceLanguage": "en",
+      "displayLanguage": "cs",
+      "scope": "Literal English flat note list, not a pyramid or proof of natural ingredients. Czech navigation labels translate selected terms only."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+     "No merchant promotions, reward tickets, bundle discounts or basket integration."
+    ]
+   }
+  },
+  {
+   "id": "whispering-fields",
+   "name": "Whispering Fields",
+   "url": "https://www.spacefluid.com/product-page/parf%C3%A9m-na-p%C5%99%C3%A1n%C3%AD",
+   "priceAmount": 215,
+   "price": "215 €",
+   "currency": "EUR",
+   "volume": "50 ml · Paper box",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Pražený ječmen, whisky a osmanthus.",
+   "reason": "Pražený ječmen, whisky a osmanthus.",
+   "photo": "/assets/s5/spacefluid/whispering-fields.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.spacefluid.com/product-page/parf%C3%A9m-na-p%C5%99%C3%A1n%C3%AD",
+    "verifiedAt": "2026-11-13T09:43:33.596276+00:00",
+    "sourceSha256": "6acbd0fad07a2c4fca956eb9e4be8995884a7844698a70d6f2e656cab74c98d6",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": null,
+     "structuredAvailability": "https://schema.org/InStock",
+     "scope": "Public SSR exact Paper box productItem inventory.status=in_stock and globally available; quantity0 not interpreted as a physical count."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 215,
+     "currency": "EUR",
+     "vatEvidence": "Official terms explicitly prices include VAT and related charges, delivery excluded.",
+     "vatSource": "https://www.spacefluid.com/terms-and-conditions"
+    },
+    "packEvidence": {
+     "pack": "50 ml · Paper box",
+     "title": "Whispering Fields",
+     "selectedVariant": "Paper box",
+     "publicItemId": "a8dd47da-17ce-4d78-80f5-8bc472656c08",
+     "optionSelectionId": 16,
+     "liveSelection": "NOT_CONFIRMED; click did not expand in nonGET-blocked read-only harness. Public SSR option/item exact mapping verified; no claim of live variant selection."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Pražený ječmen, whisky a osmanthus",
+    "selectionTraits": {
+     "fragranceDirection": "flowers",
+     "fragranceProfile": "whispering-fields"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.spacefluid.com/product-page/parf%C3%A9m-na-p%C5%99%C3%A1n%C3%AD",
+     "sourceText": "Roasted barley, osmanthus, vetiver, turmeric, whiskey, strawberry, leather, patchouli, ginger, helichrysum, jasmine, daisy, tuberose, violet, iris, pear, absinth, and angelica.",
+     "navigationLabel": "Pražený ječmen, whisky a osmanthus",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://static.wixstatic.com/media/337255_dc7f0b9a1d3d4d399478532953ef472d~mv2.png",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/337255_dc7f0b9a1d3d4d399478532953ef472d~mv2.png",
+     "publishedTransformUrl": "https://static.wixstatic.com/media/337255_dc7f0b9a1d3d4d399478532953ef472d~mv2.png/v1/fit/w_500,h_500,q_90/file.png",
+     "originalSha256": "3873ed60ac77d3995ad15b5fff3705c8039444bfdb5164a833321bcfa6433a4a",
+     "localSha256": "e01f21d1402bc2f75fad98c42c70563fc364948c07850fbc6877132cbd7f4631",
+     "width": 340,
+     "height": 475,
+     "processing": "Same published official media ID original resolution, lossless conversion only, no generated art/upscale/retouch",
+     "pack": "50 ml plain hand-inscribed bottle; paper box is selection, not painted art variant"
+    },
+    "fragrance": {
+     "notes": [
+      "Roasted barley",
+      "osmanthus",
+      "vetiver",
+      "turmeric",
+      "whiskey",
+      "strawberry",
+      "leather",
+      "patchouli",
+      "ginger",
+      "helichrysum",
+      "jasmine",
+      "daisy",
+      "tuberose",
+      "violet",
+      "iris",
+      "pear",
+      "absinth",
+      "and angelica."
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://www.spacefluid.com/product-page/parf%C3%A9m-na-p%C5%99%C3%A1n%C3%AD",
+      "sourceText": "Roasted barley, osmanthus, vetiver, turmeric, whiskey, strawberry, leather, patchouli, ginger, helichrysum, jasmine, daisy, tuberose, violet, iris, pear, absinth, and angelica.",
+      "sourceLanguage": "en",
+      "displayLanguage": "cs",
+      "scope": "Literal English flat note list, not a pyramid or proof of natural ingredients. Czech navigation labels translate selected terms only."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+     "No merchant promotions, reward tickets, bundle discounts or basket integration."
+    ]
+   }
+  },
+  {
+   "id": "lovely-problem",
+   "name": "Lovely Problem",
+   "url": "https://www.spacefluid.com/product-page/lovely-problem",
+   "priceAmount": 220,
+   "price": "220 €",
+   "currency": "EUR",
+   "volume": "50 ml · Paper box",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Skořice, včelí vosk a lotos.",
+   "reason": "Skořice, včelí vosk a lotos.",
+   "photo": "/assets/s5/spacefluid/lovely-problem.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.spacefluid.com/product-page/lovely-problem",
+    "verifiedAt": "2026-11-13T09:43:34.307456+00:00",
+    "sourceSha256": "9d0533167759dc38553de4bfa99918f1563b59fd186c671c299df0bec22131b9",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": null,
+     "structuredAvailability": "https://schema.org/InStock",
+     "scope": "Public SSR exact Paper box productItem inventory.status=in_stock and globally available; quantity0 not interpreted as a physical count."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 220,
+     "currency": "EUR",
+     "vatEvidence": "Official terms explicitly prices include VAT and related charges, delivery excluded.",
+     "vatSource": "https://www.spacefluid.com/terms-and-conditions"
+    },
+    "packEvidence": {
+     "pack": "50 ml · Paper box",
+     "title": "Lovely Problem",
+     "selectedVariant": "Paper box",
+     "publicItemId": "f0e23968-0ed6-478a-b15f-16e2ce1bef11",
+     "optionSelectionId": 16,
+     "liveSelection": "NOT_CONFIRMED; click did not expand in nonGET-blocked read-only harness. Public SSR option/item exact mapping verified; no claim of live variant selection."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Skořice, včelí vosk a lotos",
+    "selectionTraits": {
+     "fragranceDirection": "flowers",
+     "fragranceProfile": "lovely-problem"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.spacefluid.com/product-page/lovely-problem",
+     "sourceText": "Cinnamon, beewax, cedarwood, daisy, ambrette, vanilla bean, white lotus, blue lotus, frankincense, artichoke, butter, cocoa, patchouli, ylang ylang, jasmin, frangipani, leather, sandalwood.",
+     "navigationLabel": "Skořice, včelí vosk a lotos",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://static.wixstatic.com/media/337255_dcb48683839f4f6f92e567de23eaa5e8~mv2.png",
+    "photoEvidence": {
+     "url": "https://static.wixstatic.com/media/337255_dcb48683839f4f6f92e567de23eaa5e8~mv2.png",
+     "publishedTransformUrl": "https://static.wixstatic.com/media/337255_dcb48683839f4f6f92e567de23eaa5e8~mv2.png/v1/fit/w_500,h_500,q_90/file.png",
+     "originalSha256": "0f4042ec5d8edaf9bfc0fbc32afda6e361e677d1c5c566581657880b4a931f4e",
+     "localSha256": "f81fda6453d05fce73e94560398f256975bedd4b8d3599d45fdd55dbf206fd15",
+     "width": 288,
+     "height": 583,
+     "processing": "Same published official media ID original resolution, lossless conversion only, no generated art/upscale/retouch",
+     "pack": "50 ml plain hand-inscribed bottle; paper box is selection, not painted art variant"
+    },
+    "fragrance": {
+     "notes": [
+      "Cinnamon",
+      "beewax",
+      "cedarwood",
+      "daisy",
+      "ambrette",
+      "vanilla bean",
+      "white lotus",
+      "blue lotus",
+      "frankincense",
+      "artichoke",
+      "butter",
+      "cocoa",
+      "patchouli",
+      "ylang ylang",
+      "jasmin",
+      "frangipani",
+      "leather",
+      "sandalwood."
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://www.spacefluid.com/product-page/lovely-problem",
+      "sourceText": "Cinnamon, beewax, cedarwood, daisy, ambrette, vanilla bean, white lotus, blue lotus, frankincense, artichoke, butter, cocoa, patchouli, ylang ylang, jasmin, frangipani, leather, sandalwood.",
+      "sourceLanguage": "en",
+      "displayLanguage": "cs",
+      "scope": "Literal English flat note list, not a pyramid or proof of natural ingredients. Czech navigation labels translate selected terms only."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+     "No merchant promotions, reward tickets, bundle discounts or basket integration."
+    ]
+   }
+  }
+ ],
+ "revenue": {
+  "exactLatest": "UNKNOWN",
+  "secondaryTurnoverBand": [
+   200000,
+   500000
+  ],
+  "currency": "CZK",
+  "year": 2024,
+  "source": "https://www.chytryrejstrik.cz/ico-11966050/space-fluid-s-r-o",
+  "qualification": "Secondary band attributedCSU2024; not exact latest turnover."
+ },
+ "size": "UNKNOWN",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "Five distinct available formulas in plain hand-inscribed50ml bottles with Paper box. Painted bottles/testers not extra formulas.",
+  "High to Lotus and FunkyMachine excluded globallyOutOfStock.",
+  "Flat literal note lists; concentrationUNKNOWN, no EDP/extrait invented.",
+  "Live option click did not expand under nonGET-blocked harness; exact item/option/price/stock evidenced by published SSR.",
+  "Official original photos288–600px wide, no upscale; QA must verify native detail at actual rendered size."
+ ]
+};

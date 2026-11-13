@@ -1,0 +1,391 @@
+{
+  "checkedAt": "2026-11-13T11:54:11.979011+00:00",
+  "slug": "spacefluid",
+  "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+  "scope": "Exact PNG/JSON archive bytes verified; PNG pixels preserved. All original local files retained. Not live Preview QA.",
+  "entries": [
+    {
+      "name": "local-chat/independent-chat.json",
+      "bytes": 4087,
+      "sha256": "88eaec4296d2e30a50687d5416ceb21076cbb8b836a6be47231be49ee4815723"
+    },
+    {
+      "name": "local-chat/spacefluid-card-0-1280.png",
+      "bytes": 127507,
+      "sha256": "b021310cd3b7db8a5c70624eb065513431e7fe16dde0e7b7b9ca6abb378284cb"
+    },
+    {
+      "name": "local-chat/spacefluid-card-0-320.png",
+      "bytes": 56477,
+      "sha256": "fed28c2dc4a7490d09e57f90200deae6e05f307513f75f3b91597aed64de7d5e"
+    },
+    {
+      "name": "local-chat/spacefluid-card-0-390.png",
+      "bytes": 57918,
+      "sha256": "39a27dbbdab23727ecbef5b4be72feab2d3949822db3d95d953e96ece33c64a2"
+    },
+    {
+      "name": "local-chat/spacefluid-card-1-1280.png",
+      "bytes": 126530,
+      "sha256": "a000a82638fd6a95511f4afb1393d14d9ea1396e4c622add2872d7753e4801a8"
+    },
+    {
+      "name": "local-chat/spacefluid-card-1-320.png",
+      "bytes": 55332,
+      "sha256": "1ef1ab408056a4386db783003925f67203673ade0952098d9346abc486eaef1d"
+    },
+    {
+      "name": "local-chat/spacefluid-card-1-390.png",
+      "bytes": 56711,
+      "sha256": "c249442f0b0064318bb17a24bb6fbefe9e681111e8a8be2413b056b54af24039"
+    },
+    {
+      "name": "local-chat/spacefluid-card-2-1280.png",
+      "bytes": 130888,
+      "sha256": "07f22bd2a2a6096cc97472fc281dba1ec87fc187baaf9938eb186a93a6394a77"
+    },
+    {
+      "name": "local-chat/spacefluid-card-2-320.png",
+      "bytes": 59822,
+      "sha256": "f35591e9bf17bea99c5ce8f824485e80960a0904e03f271e00951798ff3ff8c5"
+    },
+    {
+      "name": "local-chat/spacefluid-card-2-390.png",
+      "bytes": 61204,
+      "sha256": "95033a4c90126d4a398f16e030b82c266da842372f3ccdbdab2ea6032ac9478c"
+    },
+    {
+      "name": "local-chat/spacefluid-offer-1280.png",
+      "bytes": 207116,
+      "sha256": "9b5ba89d26ef3d7fbb79665d998205fabcf2635e194c419632828a20ebec731f"
+    },
+    {
+      "name": "local-chat/spacefluid-offer-320.png",
+      "bytes": 77057,
+      "sha256": "8578b4d8427f4b705bc725a20dc8f4b777aa8de9becb5d30c9ade15e65c48c9a"
+    },
+    {
+      "name": "local-chat/spacefluid-offer-390.png",
+      "bytes": 86550,
+      "sha256": "6fd17b29e845e3b86d6d6f300d8d60916d74122f82833875a48a3345231368a0"
+    },
+    {
+      "name": "local-chat/spacefluid-waiting-1280.png",
+      "bytes": 107873,
+      "sha256": "b3dee8e92afc1e37238d07a2bbb51b735505cdd9d2e80bf773b9130872ccfb03"
+    },
+    {
+      "name": "local-chat/spacefluid-waiting-320.png",
+      "bytes": 37827,
+      "sha256": "684409ee8428f8fbca6e2e8365065f8fe664bff6ff36df7e9fb57e4c63e35142"
+    },
+    {
+      "name": "local-chat/spacefluid-waiting-390.png",
+      "bytes": 39347,
+      "sha256": "a837d581e0d9e21b874c354fa2ed5e12640be3917f8d078cd4981d6f885954df"
+    },
+    {
+      "name": "local-ui/independent-ui.json",
+      "bytes": 17917,
+      "sha256": "9d57a49f04efc8e5307fd30a44d5b7f3baa96d3bcdd9fc0fecf315877b5fc192"
+    },
+    {
+      "name": "local-ui/spacefluid-chat-0-1280.png",
+      "bytes": 127507,
+      "sha256": "b021310cd3b7db8a5c70624eb065513431e7fe16dde0e7b7b9ca6abb378284cb"
+    },
+    {
+      "name": "local-ui/spacefluid-chat-0-320.png",
+      "bytes": 56477,
+      "sha256": "fed28c2dc4a7490d09e57f90200deae6e05f307513f75f3b91597aed64de7d5e"
+    },
+    {
+      "name": "local-ui/spacefluid-chat-0-390.png",
+      "bytes": 57918,
+      "sha256": "39a27dbbdab23727ecbef5b4be72feab2d3949822db3d95d953e96ece33c64a2"
+    },
+    {
+      "name": "local-ui/spacefluid-chat-1-1280.png",
+      "bytes": 126530,
+      "sha256": "a000a82638fd6a95511f4afb1393d14d9ea1396e4c622add2872d7753e4801a8"
+    },
+    {
+      "name": "local-ui/spacefluid-chat-1-320.png",
+      "bytes": 55332,
+      "sha256": "1ef1ab408056a4386db783003925f67203673ade0952098d9346abc486eaef1d"
+    },
+    {
+      "name": "local-ui/spacefluid-chat-1-390.png",
+      "bytes": 56711,
+      "sha256": "c249442f0b0064318bb17a24bb6fbefe9e681111e8a8be2413b056b54af24039"
+    },
+    {
+      "name": "local-ui/spacefluid-chat-2-1280.png",
+      "bytes": 130888,
+      "sha256": "07f22bd2a2a6096cc97472fc281dba1ec87fc187baaf9938eb186a93a6394a77"
+    },
+    {
+      "name": "local-ui/spacefluid-chat-2-320.png",
+      "bytes": 59822,
+      "sha256": "f35591e9bf17bea99c5ce8f824485e80960a0904e03f271e00951798ff3ff8c5"
+    },
+    {
+      "name": "local-ui/spacefluid-chat-2-390.png",
+      "bytes": 61204,
+      "sha256": "95033a4c90126d4a398f16e030b82c266da842372f3ccdbdab2ea6032ac9478c"
+    },
+    {
+      "name": "local-ui/spacefluid-compare-1280.png",
+      "bytes": 142608,
+      "sha256": "bb531834c5964da0b4e0ae1a79658b9e6311ad85dea1f145ac0a7f5c071476f3"
+    },
+    {
+      "name": "local-ui/spacefluid-compare-320.png",
+      "bytes": 77892,
+      "sha256": "c9ebe87cdfea3793b7af50534d4ee63605f9c8dbc6c63a5eeec307969a0b5760"
+    },
+    {
+      "name": "local-ui/spacefluid-compare-390.png",
+      "bytes": 79510,
+      "sha256": "a1274e872a35d8300a0994faab8ab0d2674cb5dacb90839736c89e7b8228b210"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-lovely-problem-1280.png",
+      "bytes": 139762,
+      "sha256": "3653bc55452052e0445b3bf855d85191c0d8e5656be1904cb3d8eb18329d10b2"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-lovely-problem-320.png",
+      "bytes": 84586,
+      "sha256": "8c6a0578ec771beae6a5c77294ed5824f692634351c9a3959a59fab3d31a514b"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-lovely-problem-390.png",
+      "bytes": 86301,
+      "sha256": "4dd58c0e959e7389bda4fc38be0bec2ee3e2d62f94c954f29323a50ca86c7f68"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-moon-coat-1280.png",
+      "bytes": 131125,
+      "sha256": "162813ba4454a82aedfd00271f6a76d856d70003a9dc745127f7498b254761bc"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-moon-coat-320.png",
+      "bytes": 77351,
+      "sha256": "e0033926d7aff9b354e58ed39e861e46db773d4089fb598ff92c4d36338dad5e"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-moon-coat-390.png",
+      "bytes": 78620,
+      "sha256": "e2c4f39c9711b4efbbc96d56522a483bcfea2b4eb7083106ccb17014c1a98ee2"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-narcis-nocturne-1280.png",
+      "bytes": 133342,
+      "sha256": "fb5e2d83a1f21859da7adcac62381012a5c566b18afb4bf1999a8d189535e7dc"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-narcis-nocturne-320.png",
+      "bytes": 78924,
+      "sha256": "2437211f25c9c3f5fc676bb805f6abaa5f26acb13e5dd7b832dd8c9963281dd6"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-narcis-nocturne-390.png",
+      "bytes": 80167,
+      "sha256": "9d79f97c28e6240a4b897bd1005ee3615f986b451dcc82b9e45673c69ab60fa6"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-whispering-fields-1280.png",
+      "bytes": 138474,
+      "sha256": "3389dcdb57727e49e003b6bc60787e6a1b0b15947d467840e8b9c546f89127b5"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-whispering-fields-320.png",
+      "bytes": 85141,
+      "sha256": "64874aa7c5d8be2043d20e6cf1b0bf5117b1e343579f002e15c2cda1d3ffb2bd"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-whispering-fields-390.png",
+      "bytes": 87733,
+      "sha256": "2023153f6b209b12abdae0dff8d166f7cb836d4cab984060a31807a2daf3ed65"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-x-ray-1280.png",
+      "bytes": 132607,
+      "sha256": "ea2876fe455f831d392f704f2b41c06b16610aca2da42c4586dc94228cceb0ba"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-x-ray-320.png",
+      "bytes": 76238,
+      "sha256": "a73646518d415367ca5082b186d94750ff530be9cc3be559ec2bfcf303107d66"
+    },
+    {
+      "name": "local-ui/spacefluid-pair-x-ray-390.png",
+      "bytes": 77678,
+      "sha256": "92fe376e8c5fbfb7b5e676b7de4fd5e2267569d5c733796b3aa2b5ca7e9ab2dd"
+    },
+    {
+      "name": "local-ui/spacefluid-question-1-1280.png",
+      "bytes": 295504,
+      "sha256": "adc779a36dcbf0db81bad985ab5ed8e70ad305865d832e6e24287055972013b2"
+    },
+    {
+      "name": "local-ui/spacefluid-question-1-320.png",
+      "bytes": 165006,
+      "sha256": "33ec6e40adc4985dabe6c9a7ab3c6328292b0307b469aa8187ac2989660f54a0"
+    },
+    {
+      "name": "local-ui/spacefluid-question-1-390.png",
+      "bytes": 196478,
+      "sha256": "f26a70ef1546d6f2afa0569d8624719b6e5c01fe7d14ad41531738cdf5b1c8dc"
+    },
+    {
+      "name": "local-ui/spacefluid-question-2-1280.png",
+      "bytes": 235931,
+      "sha256": "50a8dc1ee8c4f0f7b6162e577faaa816c1db9d1891a728c42d9fa835ff917ba1"
+    },
+    {
+      "name": "local-ui/spacefluid-question-2-320.png",
+      "bytes": 126411,
+      "sha256": "c3a9df8d71a37c19d62aa5160def9f2b4ad5eff88d5eabb07074edd0222f311a"
+    },
+    {
+      "name": "local-ui/spacefluid-question-2-390.png",
+      "bytes": 148340,
+      "sha256": "21032eba310a0b0f1d058402092de89f543a3127434aa2b4163293f0756a7c32"
+    },
+    {
+      "name": "local-ui/spacefluid-question-3-1280.png",
+      "bytes": 293875,
+      "sha256": "fd56dc8ee7d278fc3b536b31daf1f2c33682bc1be3bc518f50d6f827c3f9f0f6"
+    },
+    {
+      "name": "local-ui/spacefluid-question-3-320.png",
+      "bytes": 159954,
+      "sha256": "6316a3e95dae311a529d05bfb672dd503e778b51fd617ec8efe91497a8a23574"
+    },
+    {
+      "name": "local-ui/spacefluid-question-3-390.png",
+      "bytes": 182793,
+      "sha256": "9fd490a6c333d9b1d858798b33b431bd959e30caeb5ed5a2258d637f7a15dfd6"
+    },
+    {
+      "name": "local-ui/spacefluid-result-lovely-problem-1280.png",
+      "bytes": 144662,
+      "sha256": "e3d3908ac4c1c07737e5c6df42085bed4eb4b6e3ff7f1b836f6992190eba29c4"
+    },
+    {
+      "name": "local-ui/spacefluid-result-lovely-problem-320.png",
+      "bytes": 80762,
+      "sha256": "d11047f6f8618d00be0e6b17bf5156c2bc5076f584e0ffeef7e2f5d4851d9fcb"
+    },
+    {
+      "name": "local-ui/spacefluid-result-lovely-problem-390.png",
+      "bytes": 82060,
+      "sha256": "f0a7a8825a8cedce18b297f1d6a7fca3906d2808791a29830a48e242a39ca1fb"
+    },
+    {
+      "name": "local-ui/spacefluid-result-moon-coat-1280.png",
+      "bytes": 139572,
+      "sha256": "3ec0e2a3797ce24cf8ad6dff21464538a390d797488ca3eba1c6f76a0bc9bb96"
+    },
+    {
+      "name": "local-ui/spacefluid-result-moon-coat-320.png",
+      "bytes": 75630,
+      "sha256": "fa55ab46bb914fb0a287c7c9fddada97c07d2519c1d7b8ff6e8f8ee84e42d405"
+    },
+    {
+      "name": "local-ui/spacefluid-result-moon-coat-390.png",
+      "bytes": 76850,
+      "sha256": "7667c417524f18475d2f923dd11a47a9d68ac96bfc8a64f15f84c05561c20fc0"
+    },
+    {
+      "name": "local-ui/spacefluid-result-narcis-nocturne-1280.png",
+      "bytes": 140550,
+      "sha256": "24d1c70f11f1fcc7082cf186366542c417678635eb015c54a742999c7b6cde06"
+    },
+    {
+      "name": "local-ui/spacefluid-result-narcis-nocturne-320.png",
+      "bytes": 76506,
+      "sha256": "0d35cb8b7f71909cb21023e5ff0e8c4af08038012287f1fa8a8863f63936860c"
+    },
+    {
+      "name": "local-ui/spacefluid-result-narcis-nocturne-390.png",
+      "bytes": 77598,
+      "sha256": "83b9f12e4ff2844002a6148e39710746bc94e5d795098f0ef787ebbaa7510e9a"
+    },
+    {
+      "name": "local-ui/spacefluid-result-whispering-fields-1280.png",
+      "bytes": 146120,
+      "sha256": "0ab67246857880b338dae1c57c2850bb379df1bfdb5f14ad1b6951b1dad7076e"
+    },
+    {
+      "name": "local-ui/spacefluid-result-whispering-fields-320.png",
+      "bytes": 82573,
+      "sha256": "2aaaad75d3e8471b5147c3413299e41d6529eb5e9a086292e079cafac95e05ad"
+    },
+    {
+      "name": "local-ui/spacefluid-result-whispering-fields-390.png",
+      "bytes": 83466,
+      "sha256": "3b2c84b6f11e8a7fc6d25412b843839d65eb3e637b1f6e502a80364bb75c74a3"
+    },
+    {
+      "name": "local-ui/spacefluid-result-x-ray-1280.png",
+      "bytes": 138131,
+      "sha256": "1c4adbffdaedac6e0d9d3bc32d1232f3fdfe1ac9ef5cb2f39d03a25d2c1bcdf4"
+    },
+    {
+      "name": "local-ui/spacefluid-result-x-ray-320.png",
+      "bytes": 74374,
+      "sha256": "6a96911e73320e3c1b62383811d28218d0e6f29ad9adc063af3541b869a74e48"
+    },
+    {
+      "name": "local-ui/spacefluid-result-x-ray-390.png",
+      "bytes": 75564,
+      "sha256": "05da749190cd6d353418ac10337d7c12b08b3dba04e5690f8930db6c719b7731"
+    },
+    {
+      "name": "local-ui/visual-review-1280.png",
+      "bytes": 255710,
+      "sha256": "6d131ca0da79f45c50c38dfd367a7beb2134a31c2c1fb6f9609ce4866408885f"
+    },
+    {
+      "name": "local-ui/visual-review-320.png",
+      "bytes": 245491,
+      "sha256": "a09f4be1594beef0e47a98f12475193ad158b888d6971a3f5182715fa1658451"
+    },
+    {
+      "name": "local-ui/visual-review-390.png",
+      "bytes": 243034,
+      "sha256": "38e2512831b3317aa8974769480626204f14a5038e4fc7a09c989b5fef0f94e5"
+    },
+    {
+      "name": "merchant/spacefluid-home-review.png",
+      "bytes": 893879,
+      "sha256": "7ccf58c203306cd19476df1ba06ad045e749853521083fdbc7ecac1003809f74"
+    },
+    {
+      "name": "merchant/spacefluid-home.png",
+      "bytes": 907110,
+      "sha256": "833a42ab93c47aac6a646a49223a4a7622de0fce6a1c9e5d78fd8bd157e54a09"
+    },
+    {
+      "name": "merchant/spacefluid-product-review.png",
+      "bytes": 743668,
+      "sha256": "2bfbc90e2e68bdef5b2aa269014ee8df57ab9b867a4e23d78f2ccaa2466c883c"
+    },
+    {
+      "name": "merchant/spacefluid-product.png",
+      "bytes": 760196,
+      "sha256": "85282926c0da0937c6638cbd4d18136b002ecd4b1c7d6300ca1ab2e8df4ab8ab"
+    }
+  ],
+  "entryCount": 75,
+  "archiveBytes": 10899680,
+  "archiveSha256": "070cb5581481d10c1df485c93b85b70dd77c5bea7d2818c8002f23f24bf3d04a",
+  "resultViews": 15,
+  "questionViews": 9,
+  "interactionGroups": 3,
+  "mockChatCards": 9,
+  "paidCalls": 0
+}

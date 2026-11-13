@@ -4,4 +4,4 @@ Používateľ doložil17včerajších adresátov dvoma snímkami Odoslané. Týc
 
 Cieľ15NEOSLOVENÝCH ukážok s vlastným živým QA a funkčným živým odkazom. Pri15zastaviť novú výrobu a odovzdať zoznam kontakt/URL/fakty/emailtext majiteľovi na jeho odoslanie. Agent žiadne maily neposiela.
 
-Aktuálne9predošlých Preview-QA kandidátov,4lokálne hotové zdrojové balíky1907/Veelyn/PARFUMEUR/Beviro čakajúce na integráciu a živé QA;2nové firmy ešte treba dokončiť. Presné stavy v batch-status.json. IngredientsHOLD; ostatnéHOLD/Safran/MAINclaims bez zmeny. Nové priority malé firmy, podľa potreby doložené širšie tržbové pásmo; UNKNOWN sa neprezentuje ako malý obrat.
+Aktuálne9predošlých Preview-QA kandidátov,5lokálne hotové zdrojové balíky1907/Veelyn/PARFUMEUR/Beviro/SpaceFluid čakajúce na integráciu a živé QA;1novú firmu ešte treba dokončiť. Presné stavy v batch-status.json. IngredientsHOLD; ostatnéHOLD/Safran/MAINclaims bez zmeny. Nové priority malé firmy, podľa potreby doložené širšie tržbové pásmo; UNKNOWN sa neprezentuje ako malý obrat.

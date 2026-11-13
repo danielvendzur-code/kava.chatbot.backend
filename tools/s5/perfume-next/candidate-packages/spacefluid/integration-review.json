@@ -1,0 +1,187 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Space Fluid",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/spacefluid/logo.webp",
+      "header": "/assets/s5/spacefluid/logo.webp",
+      "avatar": "/assets/s5/spacefluid/avatar.webp"
+    },
+    "brand": {
+      "name": "Space Fluid",
+      "domain": "spacefluid.com",
+      "website": "https://www.spacefluid.com/",
+      "lang": "cs",
+      "fullName": "Space Fluid",
+      "url": "https://www.spacefluid.com/",
+      "logo": "/assets/s5/spacefluid/logo.webp",
+      "mark": "/assets/s5/spacefluid/avatar.webp",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně Space Fluid podle doložených tónů a konkrétního balení.",
+      "quickChips": [
+        "Narcis a tabák",
+        "Kardamom a rum",
+        "Ječmen a whisky",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#243e52",
+        "accent": "#243e52",
+        "soft": "#f1f6f9",
+        "paper": "#ffffff",
+        "ink": "#1b2b37",
+        "line": "#d8e3eb"
+      }
+    },
+    "traitCopy": {
+      "leather": [
+        "Kůže, káva a koření",
+        "Vyberte podle zveřejněných tónů.",
+        "Kůže, káva a koření",
+        ""
+      ],
+      "narcis-nocturne": [
+        "Narcis, malina a tabák",
+        "Narcis, malina a tabák.",
+        "Narcis, malina a tabák",
+        "Narcis, malina a tabák."
+      ],
+      "moon-coat": [
+        "Bílé víno, káva a lípa",
+        "Bílé víno, káva a lípa.",
+        "Bílé víno, káva a lípa",
+        "Bílé víno, káva a lípa."
+      ],
+      "x-ray": [
+        "Kardamom, kadidlo a rum",
+        "Kardamom, kadidlo a rum.",
+        "Kardamom, kadidlo a rum",
+        "Kardamom, kadidlo a rum."
+      ],
+      "flowers": [
+        "Květy, ječmen a voskové akordy",
+        "Vyberte podle zveřejněných tónů.",
+        "Květy, ječmen a voskové akordy",
+        ""
+      ],
+      "whispering-fields": [
+        "Pražený ječmen, whisky a osmanthus",
+        "Pražený ječmen, whisky a osmanthus.",
+        "Pražený ječmen, whisky a osmanthus",
+        "Pražený ječmen, whisky a osmanthus."
+      ],
+      "lovely-problem": [
+        "Skořice, včelí vosk a lotos",
+        "Skořice, včelí vosk a lotos.",
+        "Skořice, včelí vosk a lotos",
+        "Skořice, včelí vosk a lotos."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Které tóny chcete prozkoumat?",
+        "Vyberte podle zveřejněných tónů.",
+        "Tóny vůně"
+      ],
+      "fragranceProfile": [
+        "Která kombinace je vám bližší?",
+        "Vyberte jeden profil.",
+        "Tóny vůně"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "leather": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "narcis-nocturne": [
+        "/assets/s5/spacefluid/narcis-nocturne.webp"
+      ],
+      "moon-coat": [
+        "/assets/s5/spacefluid/moon-coat.webp"
+      ],
+      "x-ray": [
+        "/assets/s5/spacefluid/x-ray.webp"
+      ],
+      "flowers": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "whispering-fields": [
+        "/assets/s5/spacefluid/whispering-fields.webp"
+      ],
+      "lovely-problem": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "narcis-nocturne",
+      "lovely-problem"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní profil · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce pro výběr vůně",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi najít vůni podle jeho vkusu.",
+      "lead": "Citrusy, dřevité tóny i koření. Výběr podle zveřejněných tónů končí konkrétní vůní s fotografií, balením, cenou a odkazem.",
+      "includedChat": "Tóny pěti vůní, přesná balení, ceny a porovnání.",
+      "includedAdvisor": "Kombinace doložených tónů — na konci jedna konkrétní vůně.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně Space Fluid podle doložených tónů a konkrétního balení.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít výběr vůně",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "narcis-nocturne": "moon-coat",
+        "moon-coat": "x-ray",
+        "x-ray": "narcis-nocturne",
+        "whispering-fields": "lovely-problem",
+        "lovely-problem": "whispering-fields"
+      }
+    }
+  },
+  "catalogueImport": "/catalogues/spacefluid.js",
+  "backendBrand": "spacefluid",
+  "offlineRules": [
+    {
+      "chip": "Narcis a tabák",
+      "match": "narcis.*tabak",
+      "productIds": [
+        "narcis-nocturne"
+      ]
+    },
+    {
+      "chip": "Kardamom a rum",
+      "match": "kardamom.*rum",
+      "productIds": [
+        "x-ray"
+      ]
+    },
+    {
+      "chip": "Ječmen a whisky",
+      "match": "jecmen.*whisky",
+      "productIds": [
+        "whispering-fields"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequiredForPrimary": true,
+  "commonFilesModified": [],
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "SECONDARY_SMALL_BAND_EXACT_LATEST_UNKNOWN",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}

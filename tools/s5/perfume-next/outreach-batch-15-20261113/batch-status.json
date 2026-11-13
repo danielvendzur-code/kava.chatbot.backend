@@ -216,9 +216,15 @@
       "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
       "emailStatus": "NOT_READY",
       "commercialReview": "PRICING_REVIEW_SECONDARY_FALLBACK_TURNOVER"
+    },
+    {
+      "slug": "spacefluid",
+      "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "emailStatus": "NOT_READY",
+      "caveat": "Paperbox exact item fromSSR; liveoptionclick not successful; no fakephoto upscale."
     }
   ],
-  "newRequired": 2,
+  "newRequired": 1,
   "readyCount": 9,
   "readyCountQualification": "Nine technical Preview demos, links and contacts verified, excluded against user17. Ready for owner text/review; no mailbox/delivery check or paid production AI test. Existing pricing/VAT reviews retained.",
   "mailboxActions": 0,

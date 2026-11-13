@@ -1,0 +1,91 @@
+{
+  "commit": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "scope": "Reserved SpaceFluid sources on unchanged core; local fixture only, not registered/live Preview",
+  "paidCalls": 0,
+  "coreUnchanged": true,
+  "companies": {
+    "spacefluid": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "leather",
+            "fragranceProfile": "narcis-nocturne"
+          },
+          "id": "narcis-nocturne",
+          "url": "https://www.spacefluid.com/product-page/narcis-nocturne-plain-bottle-design"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "leather",
+            "fragranceProfile": "moon-coat"
+          },
+          "id": "moon-coat",
+          "url": "https://www.spacefluid.com/product-page/moon-coat"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "leather",
+            "fragranceProfile": "x-ray"
+          },
+          "id": "x-ray",
+          "url": "https://www.spacefluid.com/product-page/x-ray"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "whispering-fields"
+          },
+          "id": "whispering-fields",
+          "url": "https://www.spacefluid.com/product-page/parf%C3%A9m-na-p%C5%99%C3%A1n%C3%AD"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "lovely-problem"
+          },
+          "id": "lovely-problem",
+          "url": "https://www.spacefluid.com/product-page/lovely-problem"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "leather",
+              "flowers"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "leather"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "narcis-nocturne",
+              "moon-coat",
+              "x-ray"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "whispering-fields",
+              "lovely-problem"
+            ]
+          }
+        }
+      ],
+      "status": "PASS",
+      "formulaCount": 5
+    }
+  }
+}
