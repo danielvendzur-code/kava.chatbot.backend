@@ -34,7 +34,22 @@
   return (p.source.upsellVariants||[]).find(v=>v.sameFormula===true&&v.parentProductId===p.id&&v.available===true&&v.currency===p.currency&&exactPackSource(v,p)&&v.evidence?.exactVariantId&&v.evidence?.sourceSha256&&['Skladem','Skladom','InStock'].includes(v.evidence?.stock)&&v.volume!==p.volume&&Number.isFinite(v.priceAmount)&&v.priceAmount>0&&(!answers.budget||p.priceAmount+v.priceAmount<=Number(answers.budget)))||null;
  }
  const sourceNotes=p=>{const e=p?.source?.fragrance?.notesEvidence;return e?.displayLanguage===reg.brand.lang&&e?.translatedFrom==='en'&&e.sourceText?e.displayText||e.sourceText:e?.sourceText||'';};
+ function visualProfile(p){
+  const text=sourceNotes(p),m=text.match(/(?:Hlava|Vrchné tóny|Vrchní tóny)\s*:\s*(.*?)\s*;?\s*Srdce\s*:\s*(.*?)\s*;?\s*Základ\s*:\s*([\s\S]*)/i);
+  const clean=x=>x.replace(/\s*(?:Typ vône|Typ vůně|Pre koho|Pro koho|Objem|Balenie|Balení)[:\s][\s\S]*$/i,'').replace(/[;\s]+$/,'').trim();
+  const families=[...new Set(p.source?.fragrance?.officialFamilies||[])].filter(x=>typeof x==='string'&&x.trim());
+  const heading=`<h3 class="fr-note-heading"><span class="fr-note-symbol" aria-hidden="true"><i></i><i></i><i></i></span>${t('Vonný profil','Vonný profil')}</h3>`;
+  let body='';
+  if(m){body=`<dl class="fr-note-rows">${m.slice(1).map((x,i)=>`<div class="fr-note-row"><dt>${['Hlava','Srdce','Základ'][i]}</dt><dd>${esc(clean(x))}</dd></div>`).join('')}</dl>`;}
+  else {
+   const notes=String(p.source?.scent||p.reason||'').replace(/[.。]$/,'').split(/,\s*|\s+a\s+|\s+alebo\s+|\s+nebo\s+/).map(x=>x.trim()).filter(Boolean);
+   if(!notes.length)return '';
+   body=`<div class="fr-note-tags" aria-label="${t('Vybrané vonné tóny','Vybrané vonné tóny')}">${[...new Set(notes)].map(x=>`<span class="fr-note-tag">${esc(x)}</span>`).join('')}</div>`;
+  }
+  return `<section class="fr-note-profile" data-fragrance-note-profile="${m?'pyramid':'notes'}" aria-label="Vonný profil">${heading}${body}${families.length?`<div class="fr-note-families">${families.map(x=>`<span>${esc(x)}</span>`).join('')}</div>`:''}</section>`;
+ }
  function pyramid(p){
+  if(opt.scentProfile?.version===1)return visualProfile(p);
   const text=sourceNotes(p),m=text.match(/(?:Hlava|Vrchné tóny|Vrchní tóny):\s*(.*?)\s*;?\s*Srdce:\s*(.*?)\s*;?\s*Základ:\s*([\s\S]*)/i);
   if(!m)return '';
   return `<details class="fr-extra-notes"><summary>${t('Ako sa vôňa rozvíja','Jak se vůně rozvíjí')}</summary><dl>${m.slice(1).map((x,i)=>`<div><dt>${['Hlava','Srdce','Základ'][i]}</dt><dd>${esc(x.replace(/\s*(?:Typ vône|Typ vůně|Pre koho|Pro koho|Objem|Balenie|Balení)[:\s][\s\S]*$/i,'').replace(/;\s*$/,'').trim())}</dd></div>`).join('')}</dl></details>`;
