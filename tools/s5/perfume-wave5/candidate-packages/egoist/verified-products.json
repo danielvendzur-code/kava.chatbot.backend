@@ -1,0 +1,657 @@
+{
+  "brand": "Egoist Royal Parfums",
+  "domain": "egoist-parfums.cz",
+  "operator": {
+    "name": "Egoist s.r.o.",
+    "ico": "03277411",
+    "country": "CZ",
+    "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/03277411",
+    "activeNoEnd": true
+  },
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "cs",
+  "country": "CZ",
+  "currency": "CZK",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "products": [
+    {
+      "id": "trajan-parfem",
+      "name": "Trajan parfém",
+      "url": "https://egoist-parfums.cz/cs/product/trajan-parfem/",
+      "priceAmount": 5700,
+      "price": "5 700 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Citrusy, šafrán a levandule.",
+      "reason": "Citrusy, šafrán a levandule.",
+      "photo": "/assets/s5/egoist/trajan-parfem.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://egoist-parfums.cz/cs/product/trajan-parfem/",
+        "verifiedAt": "2026-11-13T18:02:28.290718+00:00",
+        "sourceSha256": "4435887aca99eeb252f086f1e43c5354c70fecdf4812caf1ed11b3d27bf55c08",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "WooCommerceProductPublicAvailability",
+          "stockClass": "instock",
+          "productClass": "product type-product post-35079 status-publish first instock product_cat-uncategorized-ru-en-cs has-post-thumbnail taxable shipping-taxable purchasable product-type-simple",
+          "qualification": "Exact fixed product publisher class instock, not independent warehouse count; no inference from purchase button/cart counter. No synthetic JSON-LD availability invented."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 5700,
+          "currency": "CZK",
+          "visiblePrice": "5,700 Kč",
+          "vatSource": "https://egoist-parfums.cz/cs/obchodni-podminky/",
+          "vatEvidence": "11.Ceny a platnost nabídky: Všechny ceny jsou uvedeny s DPH."
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "100ml / 3.4oz",
+          "scope": "Exact simple single-SKU volume attribute; not sample or multivariant lowest price."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://egoist-parfums.cz/wp-content/uploads/2021/07/Copy-of-electimuss-clear-trajan.jpg",
+        "photoEvidence": {
+          "id": "trajan-parfem",
+          "file": "trajan-parfem.jpg",
+          "url": "https://egoist-parfums.cz/wp-content/uploads/2021/07/Copy-of-electimuss-clear-trajan.jpg",
+          "bytes": 308268,
+          "width": 1500,
+          "height": 2000,
+          "sha256": "e5fc2f6d8cf6da3e8f695959c9f1bd99afa7bf21c726b9347f4f4697727cd462",
+          "originalBytes": true,
+          "selectedPack": "100 ml"
+        },
+        "scent": "Citrusy, šafrán a levandule",
+        "selectionTraits": {
+          "fragranceDirection": "citrus",
+          "fragranceProfile": "trajan-parfem"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://egoist-parfums.cz/cs/product/trajan-parfem/",
+          "sourceText": "Hlava: Červený pomeranč, Mandarinka, Citron, Bergamot; Srdce: Šafrán, Šalvěj, Levandule; Základ: Ambra, Cedr, Dubový mech",
+          "navigationLabel": "Citrusy, šafrán a levandule",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "Červený pomeranč",
+            "Mandarinka",
+            "Citron",
+            "Bergamot",
+            "Šafrán",
+            "Šalvěj",
+            "Levandule",
+            "Ambra",
+            "Cedr",
+            "Dubový mech"
+          ],
+          "officialFamilies": [
+            "Citrusové",
+            "Dřevité",
+            "Pikantní"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfém",
+          "notesEvidence": {
+            "url": "https://egoist-parfums.cz/cs/product/trajan-parfem/",
+            "sourceText": "Hlava: Červený pomeranč, Mandarinka, Citron, Bergamot; Srdce: Šafrán, Šalvěj, Levandule; Základ: Ambra, Cedr, Dubový mech",
+            "originalSourceText": "Hlava: Červený pomeranč, Mandarinka, Citron, Bergamot; Srdce: Šafrán, Šalvěj, Levandule; Základ: Ambra, Cedr, Dubový mech",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "Faithful full literal product attribute head/heart/base and group; no weights/intensity/occasion or translation claims."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No health, longevity, emotional or sales guarantees.",
+          "No percentages or ratings from unweighted note list."
+        ]
+      }
+    },
+    {
+      "id": "sex-on-the-bridge-parfemova-voda",
+      "name": "Sex on the Bridge parfémová voda",
+      "url": "https://egoist-parfums.cz/cs/product/sex-on-the-bridge-parfemova-voda/",
+      "priceAmount": 3400,
+      "price": "3 400 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Bergamot, tiaré a ylang-ylang.",
+      "reason": "Bergamot, tiaré a ylang-ylang.",
+      "photo": "/assets/s5/egoist/sex-on-the-bridge-parfemova-voda.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://egoist-parfums.cz/cs/product/sex-on-the-bridge-parfemova-voda/",
+        "verifiedAt": "2026-11-13T18:02:24.944315+00:00",
+        "sourceSha256": "5bce1fc221b647912aa256b10da3874079e96e8ff32462cf9e6d64eaa2e9516b",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "WooCommerceProductPublicAvailability",
+          "stockClass": "instock",
+          "productClass": "product type-product post-38561 status-publish first instock product_cat-uncategorized has-post-thumbnail taxable shipping-taxable purchasable product-type-simple",
+          "qualification": "Exact fixed product publisher class instock, not independent warehouse count; no inference from purchase button/cart counter. No synthetic JSON-LD availability invented."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 3400,
+          "currency": "CZK",
+          "visiblePrice": "3,400 Kč",
+          "vatSource": "https://egoist-parfums.cz/cs/obchodni-podminky/",
+          "vatEvidence": "11.Ceny a platnost nabídky: Všechny ceny jsou uvedeny s DPH."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "50ml / 1.7oz",
+          "scope": "Exact simple single-SKU volume attribute; not sample or multivariant lowest price."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://egoist-parfums.cz/wp-content/uploads/2026/10/sex-front.jpg",
+        "photoEvidence": {
+          "id": "sex-on-the-bridge-parfemova-voda",
+          "file": "sex-on-the-bridge-parfemova-voda.jpg",
+          "url": "https://egoist-parfums.cz/wp-content/uploads/2026/10/sex-front.jpg",
+          "bytes": 47770,
+          "width": 600,
+          "height": 800,
+          "sha256": "e086b599f1dd8bf4ae56e2ff4f34474e0b4901c014ca0898195f92f5322a452a",
+          "originalBytes": true,
+          "selectedPack": "50 ml"
+        },
+        "scent": "Bergamot, tiaré a ylang-ylang",
+        "selectionTraits": {
+          "fragranceDirection": "citrus",
+          "fragranceProfile": "sex-on-the-bridge-parfemova-voda"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://egoist-parfums.cz/cs/product/sex-on-the-bridge-parfemova-voda/",
+          "sourceText": "Hlava: Bergamot; Srdce: Květina Tiaré, Ylang-ylang; Základ: Bílé pižmo, Vetiver, Dubový mech, Pačule, Kůže",
+          "navigationLabel": "Bergamot, tiaré a ylang-ylang",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "Bergamot",
+            "Květina Tiaré",
+            "Ylang-ylang",
+            "Bílé pižmo",
+            "Vetiver",
+            "Dubový mech",
+            "Pačule",
+            "Kůže"
+          ],
+          "officialFamilies": [
+            "Chyprové",
+            "Květinové"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfémová voda",
+          "notesEvidence": {
+            "url": "https://egoist-parfums.cz/cs/product/sex-on-the-bridge-parfemova-voda/",
+            "sourceText": "Hlava: Bergamot; Srdce: Květina Tiaré, Ylang-ylang; Základ: Bílé pižmo, Vetiver, Dubový mech, Pačule, Kůže",
+            "originalSourceText": "Hlava: Bergamot; Srdce: Květina Tiaré, Ylang-ylang; Základ: Bílé pižmo, Vetiver, Dubový mech, Pačule, Kůže",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "Faithful full literal product attribute head/heart/base and group; no weights/intensity/occasion or translation claims."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No health, longevity, emotional or sales guarantees.",
+          "No percentages or ratings from unweighted note list."
+        ]
+      }
+    },
+    {
+      "id": "syn-cherry-parfemova-voda",
+      "name": "Syn.cherry parfémová voda",
+      "url": "https://egoist-parfums.cz/cs/product/syn-cherry-parfemova-voda/",
+      "priceAmount": 4750,
+      "price": "4 750 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Višeň, malina a vanilka.",
+      "reason": "Višeň, malina a vanilka.",
+      "photo": "/assets/s5/egoist/syn-cherry-parfemova-voda.png",
+      "source": {
+        "series": "s5",
+        "url": "https://egoist-parfums.cz/cs/product/syn-cherry-parfemova-voda/",
+        "verifiedAt": "2026-11-13T17:54:09.995265+00:00",
+        "sourceSha256": "b328675ee5e783e6406200661e2cd8c6bf7afc033140e7207316980a1f47d86a",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "WooCommerceProductPublicAvailability",
+          "stockClass": "instock",
+          "productClass": "product type-product post-38565 status-publish first instock product_cat-uncategorized has-post-thumbnail taxable shipping-taxable purchasable product-type-simple",
+          "qualification": "Exact fixed product publisher class instock, not independent warehouse count; no inference from purchase button/cart counter. No synthetic JSON-LD availability invented."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 4750,
+          "currency": "CZK",
+          "visiblePrice": "4,750 Kč",
+          "vatSource": "https://egoist-parfums.cz/cs/obchodni-podminky/",
+          "vatEvidence": "11.Ceny a platnost nabídky: Všechny ceny jsou uvedeny s DPH."
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "100ml / 3.4oz",
+          "scope": "Exact simple single-SKU volume attribute; not sample or multivariant lowest price."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://egoist-parfums.cz/wp-content/uploads/2026/10/syncherry.png",
+        "photoEvidence": {
+          "id": "syn-cherry-parfemova-voda",
+          "file": "syn-cherry-parfemova-voda.png",
+          "url": "https://egoist-parfums.cz/wp-content/uploads/2026/10/syncherry.png",
+          "bytes": 236793,
+          "width": 750,
+          "height": 1000,
+          "sha256": "ce2a6bd145814c95ebe3207852132192cbcf24f7642a758dde5b7d2f1c8c1656",
+          "originalBytes": true,
+          "selectedPack": "100 ml"
+        },
+        "scent": "Višeň, malina a vanilka",
+        "selectionTraits": {
+          "fragranceDirection": "fruity",
+          "fragranceProfile": "syn-cherry-parfemova-voda"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://egoist-parfums.cz/cs/product/syn-cherry-parfemova-voda/",
+          "sourceText": "Hlava: Malina, Hruška, Černý rybíz, Višeň; Srdce: Mango, Violka, Jasmín, Palisandr, Růže; Základ: Ambra, Cedr, Mech, Karamel, Pačule, Vanilka, Pižmo",
+          "navigationLabel": "Višeň, malina a vanilka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "Malina",
+            "Hruška",
+            "Černý rybíz",
+            "Višeň",
+            "Mango",
+            "Violka",
+            "Jasmín",
+            "Palisandr",
+            "Růže",
+            "Ambra",
+            "Cedr",
+            "Mech",
+            "Karamel",
+            "Pačule",
+            "Vanilka",
+            "Pižmo"
+          ],
+          "officialFamilies": [
+            "Ovocné",
+            "Sladké"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfémová voda",
+          "notesEvidence": {
+            "url": "https://egoist-parfums.cz/cs/product/syn-cherry-parfemova-voda/",
+            "sourceText": "Hlava: Malina, Hruška, Černý rybíz, Višeň; Srdce: Mango, Violka, Jasmín, Palisandr, Růže; Základ: Ambra, Cedr, Mech, Karamel, Pačule, Vanilka, Pižmo",
+            "originalSourceText": "Hlava: Malina, Hruška, Černý rybíz, Višeň; Srdce: Mango, Violka, Jasmín, Palisandr, Růže; Základ: Ambra, Cedr, Mech, Karamel, Pačule, Vanilka, Pižmo",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "Faithful full literal product attribute head/heart/base and group; no weights/intensity/occasion or translation claims."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No health, longevity, emotional or sales guarantees.",
+          "No percentages or ratings from unweighted note list."
+        ]
+      }
+    },
+    {
+      "id": "golem-parfemova-voda",
+      "name": "Golem parfémová voda",
+      "url": "https://egoist-parfums.cz/cs/product/golem-parfemova-voda/",
+      "priceAmount": 3400,
+      "price": "3 400 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Jahoda, med a šafrán.",
+      "reason": "Jahoda, med a šafrán.",
+      "photo": "/assets/s5/egoist/golem-parfemova-voda.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://egoist-parfums.cz/cs/product/golem-parfemova-voda/",
+        "verifiedAt": "2026-11-13T18:02:26.680635+00:00",
+        "sourceSha256": "3d2ece790418dfbe3a23ee121b176a59fdeeed5f0f15be0ffd1b6dbb922b86bf",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "WooCommerceProductPublicAvailability",
+          "stockClass": "instock",
+          "productClass": "product type-product post-38547 status-publish first instock product_cat-uncategorized has-post-thumbnail taxable shipping-taxable purchasable product-type-simple",
+          "qualification": "Exact fixed product publisher class instock, not independent warehouse count; no inference from purchase button/cart counter. No synthetic JSON-LD availability invented."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 3400,
+          "currency": "CZK",
+          "visiblePrice": "3,400 Kč",
+          "vatSource": "https://egoist-parfums.cz/cs/obchodni-podminky/",
+          "vatEvidence": "11.Ceny a platnost nabídky: Všechny ceny jsou uvedeny s DPH."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "50ml / 1.7oz",
+          "scope": "Exact simple single-SKU volume attribute; not sample or multivariant lowest price."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://egoist-parfums.cz/wp-content/uploads/2026/10/golem-front.jpg",
+        "photoEvidence": {
+          "id": "golem-parfemova-voda",
+          "file": "golem-parfemova-voda.jpg",
+          "url": "https://egoist-parfums.cz/wp-content/uploads/2026/10/golem-front.jpg",
+          "bytes": 49234,
+          "width": 600,
+          "height": 800,
+          "sha256": "ff0b0b4aec0ad5c90f138cfdf13f52f12184eabfd730f7f86119e4f6ef9abbe1",
+          "originalBytes": true,
+          "selectedPack": "50 ml"
+        },
+        "scent": "Jahoda, med a šafrán",
+        "selectionTraits": {
+          "fragranceDirection": "fruity",
+          "fragranceProfile": "golem-parfemova-voda"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://egoist-parfums.cz/cs/product/golem-parfemova-voda/",
+          "sourceText": "Hlava: Jahoda, Mandarinka, Ostružina, Bergamot; Srdce: Med, Agarový strom, Šafrán, Santal, Palisandr; Základ: Ambra, Kašmírové dřevo, Kůže, Pižmo",
+          "navigationLabel": "Jahoda, med a šafrán",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "Jahoda",
+            "Mandarinka",
+            "Ostružina",
+            "Bergamot",
+            "Med",
+            "Agarový strom",
+            "Šafrán",
+            "Santal",
+            "Palisandr",
+            "Ambra",
+            "Kašmírové dřevo",
+            "Kůže",
+            "Pižmo"
+          ],
+          "officialFamilies": [
+            "Vychodní"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfémová voda",
+          "notesEvidence": {
+            "url": "https://egoist-parfums.cz/cs/product/golem-parfemova-voda/",
+            "sourceText": "Hlava: Jahoda, Mandarinka, Ostružina, Bergamot; Srdce: Med, Agarový strom, Šafrán, Santal, Palisandr; Základ: Ambra, Kašmírové dřevo, Kůže, Pižmo",
+            "originalSourceText": "Hlava: Jahoda, Mandarinka, Ostružina, Bergamot; Srdce: Med, Agarový strom, Šafrán, Santal, Palisandr; Základ: Ambra, Kašmírové dřevo, Kůže, Pižmo",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "Faithful full literal product attribute head/heart/base and group; no weights/intensity/occasion or translation claims."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No health, longevity, emotional or sales guarantees.",
+          "No percentages or ratings from unweighted note list."
+        ]
+      }
+    },
+    {
+      "id": "morava-parfemova-voda",
+      "name": "Morava parfémová voda",
+      "url": "https://egoist-parfums.cz/cs/product/morava-parfemova-voda/",
+      "priceAmount": 3400,
+      "price": "3 400 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Levandule, koňak a vanilka.",
+      "reason": "Levandule, koňak a vanilka.",
+      "photo": "/assets/s5/egoist/morava-parfemova-voda.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://egoist-parfums.cz/cs/product/morava-parfemova-voda/",
+        "verifiedAt": "2026-11-13T18:02:25.938146+00:00",
+        "sourceSha256": "68ff74602b5027f64f45629a9f73e29e4e8ff8eead1b620fe821ba7f2fd61726",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "WooCommerceProductPublicAvailability",
+          "stockClass": "instock",
+          "productClass": "product type-product post-38552 status-publish first instock product_cat-uncategorized has-post-thumbnail taxable shipping-taxable purchasable product-type-simple",
+          "qualification": "Exact fixed product publisher class instock, not independent warehouse count; no inference from purchase button/cart counter. No synthetic JSON-LD availability invented."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 3400,
+          "currency": "CZK",
+          "visiblePrice": "3,400 Kč",
+          "vatSource": "https://egoist-parfums.cz/cs/obchodni-podminky/",
+          "vatEvidence": "11.Ceny a platnost nabídky: Všechny ceny jsou uvedeny s DPH."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "50ml / 1.7oz",
+          "scope": "Exact simple single-SKU volume attribute; not sample or multivariant lowest price."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://egoist-parfums.cz/wp-content/uploads/2026/10/morava-front.jpg",
+        "photoEvidence": {
+          "id": "morava-parfemova-voda",
+          "file": "morava-parfemova-voda.jpg",
+          "url": "https://egoist-parfums.cz/wp-content/uploads/2026/10/morava-front.jpg",
+          "bytes": 45042,
+          "width": 600,
+          "height": 800,
+          "sha256": "c5fe7f748e511bfea9be68f0f113240cb3f7ab5beaef09111ac9072b5b6a1129",
+          "originalBytes": true,
+          "selectedPack": "50 ml"
+        },
+        "scent": "Levandule, koňak a vanilka",
+        "selectionTraits": {
+          "fragranceDirection": "vanilla",
+          "fragranceProfile": "morava-parfemova-voda"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://egoist-parfums.cz/cs/product/morava-parfemova-voda/",
+          "sourceText": "Hlava: Néroli, Levandule, Hrozne, Švestka; Srdce: Cedr, Skořice, Santal, Koňak; Základ: Tonkové semeno, Pačule, Vanilka, Pižmo",
+          "navigationLabel": "Levandule, koňak a vanilka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "Néroli",
+            "Levandule",
+            "Hrozne",
+            "Švestka",
+            "Cedr",
+            "Skořice",
+            "Santal",
+            "Koňak",
+            "Tonkové semeno",
+            "Pačule",
+            "Vanilka",
+            "Pižmo"
+          ],
+          "officialFamilies": [
+            "Vychodní"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfémová voda",
+          "notesEvidence": {
+            "url": "https://egoist-parfums.cz/cs/product/morava-parfemova-voda/",
+            "sourceText": "Hlava: Néroli, Levandule, Hrozne, Švestka; Srdce: Cedr, Skořice, Santal, Koňak; Základ: Tonkové semeno, Pačule, Vanilka, Pižmo",
+            "originalSourceText": "Hlava: Néroli, Levandule, Hrozne, Švestka; Srdce: Cedr, Skořice, Santal, Koňak; Základ: Tonkové semeno, Pačule, Vanilka, Pižmo",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "Faithful full literal product attribute head/heart/base and group; no weights/intensity/occasion or translation claims."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No health, longevity, emotional or sales guarantees.",
+          "No percentages or ratings from unweighted note list."
+        ]
+      }
+    },
+    {
+      "id": "vanille-de-tahiti-parfemova-voda",
+      "name": "Vanille de Tahiti parfémová voda",
+      "url": "https://egoist-parfums.cz/cs/product/vanille-de-tahiti-parfemova-voda/",
+      "priceAmount": 3000,
+      "price": "3 000 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Ylang-ylang, vanilka a santal.",
+      "reason": "Ylang-ylang, vanilka a santal.",
+      "photo": "/assets/s5/egoist/vanille-de-tahiti-parfemova-voda.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://egoist-parfums.cz/cs/product/vanille-de-tahiti-parfemova-voda/",
+        "verifiedAt": "2026-11-13T18:02:27.603055+00:00",
+        "sourceSha256": "e1d97df5d3139c0d5fd9454426c82a3c4394b4746a8ccac315b84eed3458bd30",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "WooCommerceProductPublicAvailability",
+          "stockClass": "instock",
+          "productClass": "product type-product post-34448 status-publish first instock product_cat-uncategorized-ru-en-cs has-post-thumbnail taxable shipping-taxable purchasable product-type-simple",
+          "qualification": "Exact fixed product publisher class instock, not independent warehouse count; no inference from purchase button/cart counter. No synthetic JSON-LD availability invented."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 3000,
+          "currency": "CZK",
+          "visiblePrice": "3,000 Kč",
+          "vatSource": "https://egoist-parfums.cz/cs/obchodni-podminky/",
+          "vatEvidence": "11.Ceny a platnost nabídky: Všechny ceny jsou uvedeny s DPH."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "50ml / 1.7oz",
+          "scope": "Exact simple single-SKU volume attribute; not sample or multivariant lowest price."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://egoist-parfums.cz/wp-content/uploads/2020/09/Vanille-de-Thaiti.jpg",
+        "photoEvidence": {
+          "id": "vanille-de-tahiti-parfemova-voda",
+          "file": "vanille-de-tahiti-parfemova-voda.jpg",
+          "url": "https://egoist-parfums.cz/wp-content/uploads/2020/09/Vanille-de-Thaiti.jpg",
+          "bytes": 426305,
+          "width": 1500,
+          "height": 2250,
+          "sha256": "e4459025e184d04caecfe8fd69c02c2f4679e04eed910b83df01b8aa7fddaab9",
+          "originalBytes": true,
+          "selectedPack": "50 ml"
+        },
+        "scent": "Ylang-ylang, vanilka a santal",
+        "selectionTraits": {
+          "fragranceDirection": "vanilla",
+          "fragranceProfile": "vanille-de-tahiti-parfemova-voda"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://egoist-parfums.cz/cs/product/vanille-de-tahiti-parfemova-voda/",
+          "sourceText": "Hlava: Ylang-ylang, Čampak; Srdce: Vanilka; Základ: Ambra, Santal, Pižmo",
+          "navigationLabel": "Ylang-ylang, vanilka a santal",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "Ylang-ylang",
+            "Čampak",
+            "Vanilka",
+            "Ambra",
+            "Santal",
+            "Pižmo"
+          ],
+          "officialFamilies": [
+            "Dřevité",
+            "Gurmánské"
+          ],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfémová voda",
+          "notesEvidence": {
+            "url": "https://egoist-parfums.cz/cs/product/vanille-de-tahiti-parfemova-voda/",
+            "sourceText": "Hlava: Ylang-ylang, Čampak; Srdce: Vanilka; Základ: Ambra, Santal, Pižmo",
+            "originalSourceText": "Hlava: Ylang-ylang, Čampak; Srdce: Vanilka; Základ: Ambra, Santal, Pižmo",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "Faithful full literal product attribute head/heart/base and group; no weights/intensity/occasion or translation claims."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No health, longevity, emotional or sales guarantees.",
+          "No percentages or ratings from unweighted note list."
+        ]
+      }
+    }
+  ],
+  "revenue": {
+    "year": 2024,
+    "turnoverBand": "10–30 million CZK",
+    "source": "https://www.chytryrejstrik.cz/ico-03277411/egoist-s-r-o",
+    "sourceType": "SECONDARY_CSUSTAT_BAND",
+    "latest2025ExactTurnover": "UNKNOWN",
+    "qualification": "Full legal operator, not brand-only.2025assets3769000CZK are not turnover. Fallback<=50mCZK PRICING_REVIEW, fixed447+10 unchanged."
+  },
+  "size": "FALLBACK_TIER_PRICING_REVIEW",
+  "interest": "NOT_ESTABLISHED",
+  "notes": [
+    "Six distinct representative formulas among merchant500+claimed assortment, not whole shop integration.",
+    "Own actual WPE home+product: no productchat/advisor observed in visited fresh views/no cookie banner/action. Othermodes unknown.",
+    "No separately verified compatible optional small pack/supplement; do not fabricate. Distinct formula alternative/compare enabled.",
+    "Header cart counter22 came from website response, no cart actions performed; not a stock or purchase proof."
+  ]
+}

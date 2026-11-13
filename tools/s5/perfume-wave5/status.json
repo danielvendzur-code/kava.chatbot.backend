@@ -1,14 +1,15 @@
 {
-  "at": "2026-11-13T18:03:07.449893+00:00",
+  "at": "2026-11-13T18:10:01.388368+00:00",
   "owner": "PERFUME_WORKER",
   "integrationOwner": "MAIN",
   "newBatchTarget": 15,
   "priorWave3Wave4LocalPackages": 4,
   "wave5GomLocalComplete": 1,
-  "newBatchLocallyComplete": 5,
+  "newBatchLocallyComplete": 6,
   "newBatchLiveReady": "UNKNOWN_MAIN_OWNS_LIVE_QA",
-  "egoist": "RESERVED_SOURCE_IN_PROGRESS",
+  "egoist": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
   "coreUnchanged": true,
   "paidCalls": 0,
-  "mailActions": 0
+  "mailActions": 0,
+  "wave5LocalCompleted": 2
 }

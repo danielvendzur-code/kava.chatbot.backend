@@ -1,0 +1,977 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-13T18:06:52.974027+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "egoist",
+      "width": 320,
+      "id": "trajan-parfem",
+      "pack": "100 ml",
+      "price": "5 700 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/trajan-parfem/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-trajan-parfem-320.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "id": "sex-on-the-bridge-parfemova-voda",
+      "pack": "50 ml",
+      "price": "3 400 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/sex-on-the-bridge-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-sex-on-the-bridge-parfemova-voda-320.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "id": "syn-cherry-parfemova-voda",
+      "pack": "100 ml",
+      "price": "4 750 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/syn-cherry-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-syn-cherry-parfemova-voda-320.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "id": "golem-parfemova-voda",
+      "pack": "50 ml",
+      "price": "3 400 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/golem-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-golem-parfemova-voda-320.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "id": "morava-parfemova-voda",
+      "pack": "50 ml",
+      "price": "3 400 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/morava-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-morava-parfemova-voda-320.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "id": "vanille-de-tahiti-parfemova-voda",
+      "pack": "50 ml",
+      "price": "3 000 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/vanille-de-tahiti-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-vanille-de-tahiti-parfemova-voda-320.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "id": "trajan-parfem",
+      "pack": "100 ml",
+      "price": "5 700 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/trajan-parfem/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-trajan-parfem-390.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "id": "sex-on-the-bridge-parfemova-voda",
+      "pack": "50 ml",
+      "price": "3 400 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/sex-on-the-bridge-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-sex-on-the-bridge-parfemova-voda-390.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "id": "syn-cherry-parfemova-voda",
+      "pack": "100 ml",
+      "price": "4 750 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/syn-cherry-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-syn-cherry-parfemova-voda-390.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "id": "golem-parfemova-voda",
+      "pack": "50 ml",
+      "price": "3 400 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/golem-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-golem-parfemova-voda-390.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "id": "morava-parfemova-voda",
+      "pack": "50 ml",
+      "price": "3 400 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/morava-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-morava-parfemova-voda-390.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "id": "vanille-de-tahiti-parfemova-voda",
+      "pack": "50 ml",
+      "price": "3 000 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/vanille-de-tahiti-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-vanille-de-tahiti-parfemova-voda-390.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "id": "trajan-parfem",
+      "pack": "100 ml",
+      "price": "5 700 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/trajan-parfem/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-trajan-parfem-1280.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "id": "sex-on-the-bridge-parfemova-voda",
+      "pack": "50 ml",
+      "price": "3 400 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/sex-on-the-bridge-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-sex-on-the-bridge-parfemova-voda-1280.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "id": "syn-cherry-parfemova-voda",
+      "pack": "100 ml",
+      "price": "4 750 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/syn-cherry-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-syn-cherry-parfemova-voda-1280.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "id": "golem-parfemova-voda",
+      "pack": "50 ml",
+      "price": "3 400 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/golem-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-golem-parfemova-voda-1280.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "id": "morava-parfemova-voda",
+      "pack": "50 ml",
+      "price": "3 400 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/morava-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-morava-parfemova-voda-1280.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "id": "vanille-de-tahiti-parfemova-voda",
+      "pack": "50 ml",
+      "price": "3 000 Kč",
+      "url": "https://egoist-parfums.cz/cs/product/vanille-de-tahiti-parfemova-voda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "egoist-result-vanille-de-tahiti-parfemova-voda-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "egoist",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "citrus",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "fruity",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "vanilla",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "egoist-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "trajan-parfem",
+          "photo": "/assets/s5/egoist/trajan-parfem.jpg"
+        },
+        {
+          "id": "sex-on-the-bridge-parfemova-voda",
+          "photo": "/assets/s5/egoist/sex-on-the-bridge-parfemova-voda.jpg"
+        }
+      ],
+      "screenshot": "egoist-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "syn-cherry-parfemova-voda",
+          "photo": "/assets/s5/egoist/syn-cherry-parfemova-voda.png"
+        },
+        {
+          "id": "golem-parfemova-voda",
+          "photo": "/assets/s5/egoist/golem-parfemova-voda.jpg"
+        }
+      ],
+      "screenshot": "egoist-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "morava-parfemova-voda",
+          "photo": "/assets/s5/egoist/morava-parfemova-voda.jpg"
+        },
+        {
+          "id": "vanille-de-tahiti-parfemova-voda",
+          "photo": "/assets/s5/egoist/vanille-de-tahiti-parfemova-voda.jpg"
+        }
+      ],
+      "screenshot": "egoist-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "citrus",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "fruity",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "vanilla",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "egoist-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "trajan-parfem",
+          "photo": "/assets/s5/egoist/trajan-parfem.jpg"
+        },
+        {
+          "id": "sex-on-the-bridge-parfemova-voda",
+          "photo": "/assets/s5/egoist/sex-on-the-bridge-parfemova-voda.jpg"
+        }
+      ],
+      "screenshot": "egoist-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "syn-cherry-parfemova-voda",
+          "photo": "/assets/s5/egoist/syn-cherry-parfemova-voda.png"
+        },
+        {
+          "id": "golem-parfemova-voda",
+          "photo": "/assets/s5/egoist/golem-parfemova-voda.jpg"
+        }
+      ],
+      "screenshot": "egoist-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "morava-parfemova-voda",
+          "photo": "/assets/s5/egoist/morava-parfemova-voda.jpg"
+        },
+        {
+          "id": "vanille-de-tahiti-parfemova-voda",
+          "photo": "/assets/s5/egoist/vanille-de-tahiti-parfemova-voda.jpg"
+        }
+      ],
+      "screenshot": "egoist-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "citrus",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "fruity",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "vanilla",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "egoist-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "trajan-parfem",
+          "photo": "/assets/s5/egoist/trajan-parfem.jpg"
+        },
+        {
+          "id": "sex-on-the-bridge-parfemova-voda",
+          "photo": "/assets/s5/egoist/sex-on-the-bridge-parfemova-voda.jpg"
+        }
+      ],
+      "screenshot": "egoist-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "syn-cherry-parfemova-voda",
+          "photo": "/assets/s5/egoist/syn-cherry-parfemova-voda.png"
+        },
+        {
+          "id": "golem-parfemova-voda",
+          "photo": "/assets/s5/egoist/golem-parfemova-voda.jpg"
+        }
+      ],
+      "screenshot": "egoist-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "morava-parfemova-voda",
+          "photo": "/assets/s5/egoist/morava-parfemova-voda.jpg"
+        },
+        {
+          "id": "vanille-de-tahiti-parfemova-voda",
+          "photo": "/assets/s5/egoist/vanille-de-tahiti-parfemova-voda.jpg"
+        }
+      ],
+      "screenshot": "egoist-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "egoist",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "trajan-parfem",
+        "syn-cherry-parfemova-voda"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "egoist-compare-320.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "trajan-parfem",
+        "syn-cherry-parfemova-voda"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "egoist-compare-390.png"
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "trajan-parfem",
+        "syn-cherry-parfemova-voda"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "egoist-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "noteProfiles": [
+    {
+      "slug": "egoist",
+      "id": "trajan-parfem",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Červený pomeranč, Mandarinka, Citron, Bergamot",
+        "Šafrán, Šalvěj, Levandule",
+        "Ambra, Cedr, Dubový mech"
+      ],
+      "screenshot": "egoist-note-profile-trajan-parfem-320.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "sex-on-the-bridge-parfemova-voda",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot",
+        "Květina Tiaré, Ylang-ylang",
+        "Bílé pižmo, Vetiver, Dubový mech, Pačule, Kůže"
+      ],
+      "screenshot": "egoist-note-profile-sex-on-the-bridge-parfemova-voda-320.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "syn-cherry-parfemova-voda",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Malina, Hruška, Černý rybíz, Višeň",
+        "Mango, Violka, Jasmín, Palisandr, Růže",
+        "Ambra, Cedr, Mech, Karamel, Pačule, Vanilka, Pižmo"
+      ],
+      "screenshot": "egoist-note-profile-syn-cherry-parfemova-voda-320.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "golem-parfemova-voda",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Jahoda, Mandarinka, Ostružina, Bergamot",
+        "Med, Agarový strom, Šafrán, Santal, Palisandr",
+        "Ambra, Kašmírové dřevo, Kůže, Pižmo"
+      ],
+      "screenshot": "egoist-note-profile-golem-parfemova-voda-320.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "morava-parfemova-voda",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Néroli, Levandule, Hrozne, Švestka",
+        "Cedr, Skořice, Santal, Koňak",
+        "Tonkové semeno, Pačule, Vanilka, Pižmo"
+      ],
+      "screenshot": "egoist-note-profile-morava-parfemova-voda-320.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "vanille-de-tahiti-parfemova-voda",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Ylang-ylang, Čampak",
+        "Vanilka",
+        "Ambra, Santal, Pižmo"
+      ],
+      "screenshot": "egoist-note-profile-vanille-de-tahiti-parfemova-voda-320.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "trajan-parfem",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Červený pomeranč, Mandarinka, Citron, Bergamot",
+        "Šafrán, Šalvěj, Levandule",
+        "Ambra, Cedr, Dubový mech"
+      ],
+      "screenshot": "egoist-note-profile-trajan-parfem-390.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "sex-on-the-bridge-parfemova-voda",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot",
+        "Květina Tiaré, Ylang-ylang",
+        "Bílé pižmo, Vetiver, Dubový mech, Pačule, Kůže"
+      ],
+      "screenshot": "egoist-note-profile-sex-on-the-bridge-parfemova-voda-390.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "syn-cherry-parfemova-voda",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Malina, Hruška, Černý rybíz, Višeň",
+        "Mango, Violka, Jasmín, Palisandr, Růže",
+        "Ambra, Cedr, Mech, Karamel, Pačule, Vanilka, Pižmo"
+      ],
+      "screenshot": "egoist-note-profile-syn-cherry-parfemova-voda-390.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "golem-parfemova-voda",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Jahoda, Mandarinka, Ostružina, Bergamot",
+        "Med, Agarový strom, Šafrán, Santal, Palisandr",
+        "Ambra, Kašmírové dřevo, Kůže, Pižmo"
+      ],
+      "screenshot": "egoist-note-profile-golem-parfemova-voda-390.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "morava-parfemova-voda",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Néroli, Levandule, Hrozne, Švestka",
+        "Cedr, Skořice, Santal, Koňak",
+        "Tonkové semeno, Pačule, Vanilka, Pižmo"
+      ],
+      "screenshot": "egoist-note-profile-morava-parfemova-voda-390.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "vanille-de-tahiti-parfemova-voda",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Ylang-ylang, Čampak",
+        "Vanilka",
+        "Ambra, Santal, Pižmo"
+      ],
+      "screenshot": "egoist-note-profile-vanille-de-tahiti-parfemova-voda-390.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "trajan-parfem",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Červený pomeranč, Mandarinka, Citron, Bergamot",
+        "Šafrán, Šalvěj, Levandule",
+        "Ambra, Cedr, Dubový mech"
+      ],
+      "screenshot": "egoist-note-profile-trajan-parfem-1280.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "sex-on-the-bridge-parfemova-voda",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot",
+        "Květina Tiaré, Ylang-ylang",
+        "Bílé pižmo, Vetiver, Dubový mech, Pačule, Kůže"
+      ],
+      "screenshot": "egoist-note-profile-sex-on-the-bridge-parfemova-voda-1280.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "syn-cherry-parfemova-voda",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Malina, Hruška, Černý rybíz, Višeň",
+        "Mango, Violka, Jasmín, Palisandr, Růže",
+        "Ambra, Cedr, Mech, Karamel, Pačule, Vanilka, Pižmo"
+      ],
+      "screenshot": "egoist-note-profile-syn-cherry-parfemova-voda-1280.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "golem-parfemova-voda",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Jahoda, Mandarinka, Ostružina, Bergamot",
+        "Med, Agarový strom, Šafrán, Santal, Palisandr",
+        "Ambra, Kašmírové dřevo, Kůže, Pižmo"
+      ],
+      "screenshot": "egoist-note-profile-golem-parfemova-voda-1280.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "morava-parfemova-voda",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Néroli, Levandule, Hrozne, Švestka",
+        "Cedr, Skořice, Santal, Koňak",
+        "Tonkové semeno, Pačule, Vanilka, Pižmo"
+      ],
+      "screenshot": "egoist-note-profile-morava-parfemova-voda-1280.png"
+    },
+    {
+      "slug": "egoist",
+      "id": "vanille-de-tahiti-parfemova-voda",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Ylang-ylang, Čampak",
+        "Vanilka",
+        "Ambra, Santal, Pižmo"
+      ],
+      "screenshot": "egoist-note-profile-vanille-de-tahiti-parfemova-voda-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "egoist",
+      "width": 320,
+      "id": "trajan-parfem",
+      "defaultScreenshot": "egoist-result-trajan-parfem-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-trajan-parfem-320.png",
+      "comparisonIds": [
+        "trajan-parfem",
+        "sex-on-the-bridge-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "id": "sex-on-the-bridge-parfemova-voda",
+      "defaultScreenshot": "egoist-result-sex-on-the-bridge-parfemova-voda-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-sex-on-the-bridge-parfemova-voda-320.png",
+      "comparisonIds": [
+        "sex-on-the-bridge-parfemova-voda",
+        "trajan-parfem"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "id": "syn-cherry-parfemova-voda",
+      "defaultScreenshot": "egoist-result-syn-cherry-parfemova-voda-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-syn-cherry-parfemova-voda-320.png",
+      "comparisonIds": [
+        "syn-cherry-parfemova-voda",
+        "golem-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "id": "golem-parfemova-voda",
+      "defaultScreenshot": "egoist-result-golem-parfemova-voda-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-golem-parfemova-voda-320.png",
+      "comparisonIds": [
+        "golem-parfemova-voda",
+        "syn-cherry-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "id": "morava-parfemova-voda",
+      "defaultScreenshot": "egoist-result-morava-parfemova-voda-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-morava-parfemova-voda-320.png",
+      "comparisonIds": [
+        "morava-parfemova-voda",
+        "vanille-de-tahiti-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 320,
+      "id": "vanille-de-tahiti-parfemova-voda",
+      "defaultScreenshot": "egoist-result-vanille-de-tahiti-parfemova-voda-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-vanille-de-tahiti-parfemova-voda-320.png",
+      "comparisonIds": [
+        "vanille-de-tahiti-parfemova-voda",
+        "morava-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "id": "trajan-parfem",
+      "defaultScreenshot": "egoist-result-trajan-parfem-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-trajan-parfem-390.png",
+      "comparisonIds": [
+        "trajan-parfem",
+        "sex-on-the-bridge-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "id": "sex-on-the-bridge-parfemova-voda",
+      "defaultScreenshot": "egoist-result-sex-on-the-bridge-parfemova-voda-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-sex-on-the-bridge-parfemova-voda-390.png",
+      "comparisonIds": [
+        "sex-on-the-bridge-parfemova-voda",
+        "trajan-parfem"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "id": "syn-cherry-parfemova-voda",
+      "defaultScreenshot": "egoist-result-syn-cherry-parfemova-voda-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-syn-cherry-parfemova-voda-390.png",
+      "comparisonIds": [
+        "syn-cherry-parfemova-voda",
+        "golem-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "id": "golem-parfemova-voda",
+      "defaultScreenshot": "egoist-result-golem-parfemova-voda-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-golem-parfemova-voda-390.png",
+      "comparisonIds": [
+        "golem-parfemova-voda",
+        "syn-cherry-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "id": "morava-parfemova-voda",
+      "defaultScreenshot": "egoist-result-morava-parfemova-voda-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-morava-parfemova-voda-390.png",
+      "comparisonIds": [
+        "morava-parfemova-voda",
+        "vanille-de-tahiti-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 390,
+      "id": "vanille-de-tahiti-parfemova-voda",
+      "defaultScreenshot": "egoist-result-vanille-de-tahiti-parfemova-voda-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-vanille-de-tahiti-parfemova-voda-390.png",
+      "comparisonIds": [
+        "vanille-de-tahiti-parfemova-voda",
+        "morava-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "id": "trajan-parfem",
+      "defaultScreenshot": "egoist-result-trajan-parfem-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-trajan-parfem-1280.png",
+      "comparisonIds": [
+        "trajan-parfem",
+        "sex-on-the-bridge-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "id": "sex-on-the-bridge-parfemova-voda",
+      "defaultScreenshot": "egoist-result-sex-on-the-bridge-parfemova-voda-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-sex-on-the-bridge-parfemova-voda-1280.png",
+      "comparisonIds": [
+        "sex-on-the-bridge-parfemova-voda",
+        "trajan-parfem"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "id": "syn-cherry-parfemova-voda",
+      "defaultScreenshot": "egoist-result-syn-cherry-parfemova-voda-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-syn-cherry-parfemova-voda-1280.png",
+      "comparisonIds": [
+        "syn-cherry-parfemova-voda",
+        "golem-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "id": "golem-parfemova-voda",
+      "defaultScreenshot": "egoist-result-golem-parfemova-voda-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-golem-parfemova-voda-1280.png",
+      "comparisonIds": [
+        "golem-parfemova-voda",
+        "syn-cherry-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "id": "morava-parfemova-voda",
+      "defaultScreenshot": "egoist-result-morava-parfemova-voda-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-morava-parfemova-voda-1280.png",
+      "comparisonIds": [
+        "morava-parfemova-voda",
+        "vanille-de-tahiti-parfemova-voda"
+      ]
+    },
+    {
+      "slug": "egoist",
+      "width": 1280,
+      "id": "vanille-de-tahiti-parfemova-voda",
+      "defaultScreenshot": "egoist-result-vanille-de-tahiti-parfemova-voda-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "egoist-pair-vanille-de-tahiti-parfemova-voda-1280.png",
+      "comparisonIds": [
+        "vanille-de-tahiti-parfemova-voda",
+        "morava-parfemova-voda"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

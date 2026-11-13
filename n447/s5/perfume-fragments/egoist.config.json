@@ -1,0 +1,229 @@
+{
+  "slug": "egoist",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "c2a958d4c6770b27b8fe6b099cad947e9cc93b28",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/egoist.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Citrusy a šafrán",
+    "Višeň a malina",
+    "Vanilka a santal",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Citrusy a šafrán",
+      "match": "citrus.*safran",
+      "productIds": [
+        "trajan-parfem"
+      ]
+    },
+    {
+      "chip": "Višeň a malina",
+      "match": "visen.*malin",
+      "productIds": [
+        "syn-cherry-parfemova-voda"
+      ]
+    },
+    {
+      "chip": "Vanilka a santal",
+      "match": "vanilk.*santal",
+      "productIds": [
+        "vanille-de-tahiti-parfemova-voda"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "trajan-parfem",
+    "syn-cherry-parfemova-voda"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "No source-verified compatible pack/photo/supplement contract established."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Egoist Royal Parfums",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/egoist/logo.svg",
+      "header": "/assets/s5/egoist/logo.svg",
+      "avatar": "/assets/s5/egoist/avatar.png"
+    },
+    "brand": {
+      "name": "Egoist Royal Parfums",
+      "domain": "egoist-parfums.cz",
+      "website": "https://egoist-parfums.cz/cs/",
+      "lang": "cs",
+      "fullName": "Egoist Royal Parfums",
+      "url": "https://egoist-parfums.cz/cs/",
+      "logo": "/assets/s5/egoist/logo.svg",
+      "mark": "/assets/s5/egoist/avatar.png",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně z nabídky Egoist, jejich tóny, konkrétní balení a ceny.",
+      "quickChips": [
+        "Citrusy a šafrán",
+        "Višeň a malina",
+        "Vanilka a santal",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#49344f",
+        "accent": "#816625",
+        "soft": "#faf5fb",
+        "paper": "#ffffff",
+        "ink": "#302332",
+        "line": "#e7dce9"
+      }
+    },
+    "traitCopy": {
+      "citrus": [
+        "Citrusy a květy",
+        "",
+        "Citrusy a květy",
+        ""
+      ],
+      "trajan-parfem": [
+        "Citrusy, šafrán a levandule",
+        "",
+        "Citrusy, šafrán a levandule",
+        ""
+      ],
+      "sex-on-the-bridge-parfemova-voda": [
+        "Bergamot, tiaré a ylang-ylang",
+        "",
+        "Bergamot, tiaré a ylang-ylang",
+        ""
+      ],
+      "fruity": [
+        "Ovoce, květy a med",
+        "",
+        "Ovoce, květy a med",
+        ""
+      ],
+      "syn-cherry-parfemova-voda": [
+        "Višeň, malina a vanilka",
+        "",
+        "Višeň, malina a vanilka",
+        ""
+      ],
+      "golem-parfemova-voda": [
+        "Jahoda, med a šafrán",
+        "",
+        "Jahoda, med a šafrán",
+        ""
+      ],
+      "vanilla": [
+        "Vanilka, koňak a dřevité tóny",
+        "",
+        "Vanilka, koňak a dřevité tóny",
+        ""
+      ],
+      "morava-parfemova-voda": [
+        "Levandule, koňak a vanilka",
+        "",
+        "Levandule, koňak a vanilka",
+        ""
+      ],
+      "vanille-de-tahiti-parfemova-voda": [
+        "Ylang-ylang, vanilka a santal",
+        "",
+        "Ylang-ylang, vanilka a santal",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "citrus": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "trajan-parfem": [
+        "/assets/s5/egoist/trajan-parfem.jpg"
+      ],
+      "sex-on-the-bridge-parfemova-voda": [
+        "/assets/s5/egoist/sex-on-the-bridge-parfemova-voda.jpg"
+      ],
+      "fruity": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "syn-cherry-parfemova-voda": [
+        "/assets/s5/egoist/syn-cherry-parfemova-voda.png"
+      ],
+      "golem-parfemova-voda": [
+        "/assets/s5/egoist/golem-parfemova-voda.jpg"
+      ],
+      "vanilla": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "morava-parfemova-voda": [
+        "/assets/s5/egoist/morava-parfemova-voda.jpg"
+      ],
+      "vanille-de-tahiti-parfemova-voda": [
+        "/assets/s5/egoist/vanille-de-tahiti-parfemova-voda.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "trajan-parfem",
+      "syn-cherry-parfemova-voda"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni z nabídky Egoist s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, konkrétní balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně z nabídky Egoist, jejich tóny, konkrétní balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "egoist-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "trajan-parfem": "sex-on-the-bridge-parfemova-voda",
+        "sex-on-the-bridge-parfemova-voda": "trajan-parfem",
+        "syn-cherry-parfemova-voda": "golem-parfemova-voda",
+        "golem-parfemova-voda": "syn-cherry-parfemova-voda",
+        "morava-parfemova-voda": "vanille-de-tahiti-parfemova-voda",
+        "vanille-de-tahiti-parfemova-voda": "morava-parfemova-voda"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

@@ -86,6 +86,109 @@
       ],
       "formulaCount": 5,
       "status": "PASS"
+    },
+    "egoist": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "trajan-parfem"
+          },
+          "id": "trajan-parfem",
+          "url": "https://egoist-parfums.cz/cs/product/trajan-parfem/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "sex-on-the-bridge-parfemova-voda"
+          },
+          "id": "sex-on-the-bridge-parfemova-voda",
+          "url": "https://egoist-parfums.cz/cs/product/sex-on-the-bridge-parfemova-voda/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruity",
+            "fragranceProfile": "syn-cherry-parfemova-voda"
+          },
+          "id": "syn-cherry-parfemova-voda",
+          "url": "https://egoist-parfums.cz/cs/product/syn-cherry-parfemova-voda/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruity",
+            "fragranceProfile": "golem-parfemova-voda"
+          },
+          "id": "golem-parfemova-voda",
+          "url": "https://egoist-parfums.cz/cs/product/golem-parfemova-voda/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "vanilla",
+            "fragranceProfile": "morava-parfemova-voda"
+          },
+          "id": "morava-parfemova-voda",
+          "url": "https://egoist-parfums.cz/cs/product/morava-parfemova-voda/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "vanilla",
+            "fragranceProfile": "vanille-de-tahiti-parfemova-voda"
+          },
+          "id": "vanille-de-tahiti-parfemova-voda",
+          "url": "https://egoist-parfums.cz/cs/product/vanille-de-tahiti-parfemova-voda/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "citrus",
+              "fruity",
+              "vanilla"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "trajan-parfem",
+              "sex-on-the-bridge-parfemova-voda"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruity"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "syn-cherry-parfemova-voda",
+              "golem-parfemova-voda"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "vanilla"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "morava-parfemova-voda",
+              "vanille-de-tahiti-parfemova-voda"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
     }
   }
 }

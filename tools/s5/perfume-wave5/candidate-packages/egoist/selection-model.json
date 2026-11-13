@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "citrus",
+      "label": "Citrusy a květy",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "trajan-parfem",
+          "label": "Citrusy, šafrán a levandule",
+          "productId": "trajan-parfem",
+          "sourceUrl": "https://egoist-parfums.cz/cs/product/trajan-parfem/"
+        },
+        {
+          "value": "sex-on-the-bridge-parfemova-voda",
+          "label": "Bergamot, tiaré a ylang-ylang",
+          "productId": "sex-on-the-bridge-parfemova-voda",
+          "sourceUrl": "https://egoist-parfums.cz/cs/product/sex-on-the-bridge-parfemova-voda/"
+        }
+      ]
+    },
+    {
+      "value": "fruity",
+      "label": "Ovoce, květy a med",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "syn-cherry-parfemova-voda",
+          "label": "Višeň, malina a vanilka",
+          "productId": "syn-cherry-parfemova-voda",
+          "sourceUrl": "https://egoist-parfums.cz/cs/product/syn-cherry-parfemova-voda/"
+        },
+        {
+          "value": "golem-parfemova-voda",
+          "label": "Jahoda, med a šafrán",
+          "productId": "golem-parfemova-voda",
+          "sourceUrl": "https://egoist-parfums.cz/cs/product/golem-parfemova-voda/"
+        }
+      ]
+    },
+    {
+      "value": "vanilla",
+      "label": "Vanilka, koňak a dřevité tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "morava-parfemova-voda",
+          "label": "Levandule, koňak a vanilka",
+          "productId": "morava-parfemova-voda",
+          "sourceUrl": "https://egoist-parfums.cz/cs/product/morava-parfemova-voda/"
+        },
+        {
+          "value": "vanille-de-tahiti-parfemova-voda",
+          "label": "Ylang-ylang, vanilka a santal",
+          "productId": "vanille-de-tahiti-parfemova-voda",
+          "sourceUrl": "https://egoist-parfums.cz/cs/product/vanille-de-tahiti-parfemova-voda/"
+        }
+      ]
+    }
+  ]
+}
