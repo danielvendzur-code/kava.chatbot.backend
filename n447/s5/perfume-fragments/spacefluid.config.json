@@ -4,7 +4,7 @@
   "claimCommit": "1d969050c03ec9e7c09c3a1606377799083b77a3",
   "series": "s5",
   "segment": "fragrance",
-  "status": "INTEGRATED_LOCAL_AND_PREVIEW_QA_PENDING",
+  "status": "PREVIEW_QA_COMPLETE",
   "catalogue": "/catalogues/spacefluid.js",
   "requiredEngineContract": "s5-fragrance-direction-profile-v1",
   "quickChips": [
@@ -200,5 +200,7 @@
     },
     "companyCss": "/n447/s5/brands/spacefluid.css"
   },
-  "integrationBase": "fcb2567e036e8522b4348e0024cc48f1a67d881c"
+  "integrationBase": "fcb2567e036e8522b4348e0024cc48f1a67d881c",
+  "runtimeCommit": "8ccd0a735340948b5a5df34c18f09ffb1725b319",
+  "previewDeploymentId": "dpl_H2Ykr4PTjDrN2NzasiUCQ33Qho3b"
 }

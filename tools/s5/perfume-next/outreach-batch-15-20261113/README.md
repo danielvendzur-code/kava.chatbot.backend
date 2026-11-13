@@ -1,7 +1,5 @@
-# Dnešná dávka15 —13Nov2026
+# Dávka15dosiahnutá —13Nov2026
 
-Používateľ doložil17včerajších adresátov dvoma snímkami Odoslané. Týchto17je vylúčených; Pleva odpoveď nie ďalšia firma. Agent poštu nečítal ani nemenil. Doklad nie je potvrdenie doručenia či záujmu.
+15technickyPreviewQAoverených neoslovených voči17snímkami doloženým adresátom.9predošlých+6nových, runtime8ccd0a735340948b5a5df34c18f09ffb1725b319, dpl_H2Ykr4PTjDrN2NzasiUCQ33Qho3b. Nových6:174lokálnych výsledkov320/390/1280 a58vlastných živých výsledkov390, paid0. Starých9full103QA zachované, nové9/9odkazy potvrdené; nie nové opakovanie103výsledkov.
 
-Cieľ15NEOSLOVENÝCH ukážok s vlastným živým QA a funkčným živým odkazom. Pri15zastaviť novú výrobu a odovzdať zoznam kontakt/URL/fakty/emailtext majiteľovi na jeho odoslanie. Agent žiadne maily neposiela.
-
-Aktuálne9predošlých Preview-QA kandidátov,6lokálne hotové zdrojové balíky1907/Veelyn/PARFUMEUR/Beviro/SpaceFluid/Vonya čakajúce na integráciu a živé QA;ďalšiu firmu už nepripravovať —9živých+6lokálnych napĺňa cieľovú kapacitu15, ale početživých zostáva9 do začlenenia/PreviewQA. Presné stavy v batch-status.json. IngredientsHOLD; ostatnéHOLD/Safran/MAINclaims bez zmeny. Nové priority malé firmy, podľa potreby doložené širšie tržbové pásmo; UNKNOWN sa neprezentuje ako malý obrat.
+Výrobaďalších firiemSTOPna15 podľa majiteľa. Finálnykontakt/URL/textpacket: tools/s5/perfume-preview-20261113/outreach-15/ZOZNAM-A-TEXTY-15.md. TextyvždyNOT_READYna vlastnú kontrolu/odoslanie majiteľom, žiadna poštová operácia. KontrolnéVercelPreview, nie priradenie nových subdomén/produkcie. Zdrojovátargeting/VAT/stock/variantobmedzenia zachované,447+10beztrialtextu. Pôvodnézdrojovécheckpoints/archívyzachované.

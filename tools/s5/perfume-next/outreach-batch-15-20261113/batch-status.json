@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T12:06:40.935772+00:00",
+  "updatedAt": "2026-11-13T12:26:06.203249+00:00",
   "owner": "PERFUME_WORKER",
   "target": 15,
   "stopRule": "Stop new-demo preparation when15unsent eligible live-QA examples are ready; hand user contacts/URLs/texts. Do not send emails.",
@@ -195,46 +195,23 @@
       "contactCheckedAt": "2026-11-13T08:57:04.324656+00:00"
     }
   ],
-  "localPendingLive": [
-    {
-      "slug": "perfumeries1907",
-      "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
-      "emailStatus": "NOT_READY"
-    },
-    {
-      "slug": "veelyn",
-      "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
-      "emailStatus": "NOT_READY"
-    },
-    {
-      "slug": "parfumeur",
-      "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
-      "emailStatus": "NOT_READY"
-    },
-    {
-      "slug": "beviro",
-      "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
-      "emailStatus": "NOT_READY",
-      "commercialReview": "PRICING_REVIEW_SECONDARY_FALLBACK_TURNOVER"
-    },
-    {
-      "slug": "spacefluid",
-      "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
-      "emailStatus": "NOT_READY",
-      "caveat": "Paperbox exact item fromSSR; liveoptionclick not successful; no fakephoto upscale."
-    },
-    {
-      "slug": "vonya",
-      "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
-      "emailStatus": "NOT_READY",
-      "commercialReview": "FALLBACK_VERIFIED2025REVENUE_FIT_REVIEW_EXISTING_MANUAL_CONVERTER"
-    }
-  ],
+  "localPendingLive": [],
   "newRequired": 0,
-  "readyCount": 9,
-  "readyCountQualification": "Nine technical Preview demos, links and contacts verified, excluded against user17. Ready for owner text/review; no mailbox/delivery check or paid production AI test. Existing pricing/VAT reviews retained.",
+  "readyCount": 15,
+  "readyCountQualification": "15technicalPreviewQA demos, excluded against17sent screenshots; owner reviews/sends drafts, no mailbox action/provider-paidtest. Commercial/sourcecaveats retained.",
   "mailboxActions": 0,
   "paidCalls": 0,
   "newPreparationPausedAtTargetCapacity": true,
-  "integrationStatus": "WAIT_OWNER_DECISION_AFTER_ALL_SIX_LOCAL_QA"
+  "integrationStatus": "PREVIEW_QA_COMPLETE",
+  "completedSix": [
+    "perfumeries1907",
+    "veelyn",
+    "parfumeur",
+    "beviro",
+    "spacefluid",
+    "vonya"
+  ],
+  "testedCommit": "8ccd0a735340948b5a5df34c18f09ffb1725b319",
+  "deploymentId": "dpl_H2Ykr4PTjDrN2NzasiUCQ33Qho3b",
+  "ownerPacket": "tools/s5/perfume-preview-20261113/outreach-15/ZOZNAM-A-TEXTY-15.md"
 }

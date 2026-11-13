@@ -1,0 +1,626 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Source originals288–600px wide, manifests retained.",
+  "commit": "fcb2567e036e8522b4348e0024cc48f1a67d881c",
+  "at": "2026-11-13T12:11:14.642800+00:00",
+  "qaType": "Actual integrated S5 runtime+real local backend; AI injected offline stub, not deployed Preview",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "id": "narcis-nocturne",
+      "pack": "50 ml · Paper box",
+      "price": "215 €",
+      "url": "https://www.spacefluid.com/product-page/narcis-nocturne-plain-bottle-design",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-narcis-nocturne-320.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "id": "moon-coat",
+      "pack": "50 ml · Paper box",
+      "price": "230 €",
+      "url": "https://www.spacefluid.com/product-page/moon-coat",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-moon-coat-320.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "id": "x-ray",
+      "pack": "50 ml · Paper box",
+      "price": "215 €",
+      "url": "https://www.spacefluid.com/product-page/x-ray",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-x-ray-320.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "id": "whispering-fields",
+      "pack": "50 ml · Paper box",
+      "price": "215 €",
+      "url": "https://www.spacefluid.com/product-page/parf%C3%A9m-na-p%C5%99%C3%A1n%C3%AD",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-whispering-fields-320.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "id": "lovely-problem",
+      "pack": "50 ml · Paper box",
+      "price": "220 €",
+      "url": "https://www.spacefluid.com/product-page/lovely-problem",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-lovely-problem-320.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "id": "narcis-nocturne",
+      "pack": "50 ml · Paper box",
+      "price": "215 €",
+      "url": "https://www.spacefluid.com/product-page/narcis-nocturne-plain-bottle-design",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-narcis-nocturne-390.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "id": "moon-coat",
+      "pack": "50 ml · Paper box",
+      "price": "230 €",
+      "url": "https://www.spacefluid.com/product-page/moon-coat",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-moon-coat-390.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "id": "x-ray",
+      "pack": "50 ml · Paper box",
+      "price": "215 €",
+      "url": "https://www.spacefluid.com/product-page/x-ray",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-x-ray-390.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "id": "whispering-fields",
+      "pack": "50 ml · Paper box",
+      "price": "215 €",
+      "url": "https://www.spacefluid.com/product-page/parf%C3%A9m-na-p%C5%99%C3%A1n%C3%AD",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-whispering-fields-390.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "id": "lovely-problem",
+      "pack": "50 ml · Paper box",
+      "price": "220 €",
+      "url": "https://www.spacefluid.com/product-page/lovely-problem",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-lovely-problem-390.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "id": "narcis-nocturne",
+      "pack": "50 ml · Paper box",
+      "price": "215 €",
+      "url": "https://www.spacefluid.com/product-page/narcis-nocturne-plain-bottle-design",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-narcis-nocturne-1280.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "id": "moon-coat",
+      "pack": "50 ml · Paper box",
+      "price": "230 €",
+      "url": "https://www.spacefluid.com/product-page/moon-coat",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-moon-coat-1280.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "id": "x-ray",
+      "pack": "50 ml · Paper box",
+      "price": "215 €",
+      "url": "https://www.spacefluid.com/product-page/x-ray",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-x-ray-1280.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "id": "whispering-fields",
+      "pack": "50 ml · Paper box",
+      "price": "215 €",
+      "url": "https://www.spacefluid.com/product-page/parf%C3%A9m-na-p%C5%99%C3%A1n%C3%AD",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-whispering-fields-1280.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "id": "lovely-problem",
+      "pack": "50 ml · Paper box",
+      "price": "220 €",
+      "url": "https://www.spacefluid.com/product-page/lovely-problem",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "spacefluid-result-lovely-problem-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "leather",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "flowers",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "spacefluid-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "narcis-nocturne",
+          "photo": "/assets/s5/spacefluid/narcis-nocturne.webp"
+        },
+        {
+          "id": "moon-coat",
+          "photo": "/assets/s5/spacefluid/moon-coat.webp"
+        },
+        {
+          "id": "x-ray",
+          "photo": "/assets/s5/spacefluid/x-ray.webp"
+        }
+      ],
+      "screenshot": "spacefluid-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "whispering-fields",
+          "photo": "/assets/s5/spacefluid/whispering-fields.webp"
+        },
+        {
+          "id": "lovely-problem",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "spacefluid-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "leather",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "flowers",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "spacefluid-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "narcis-nocturne",
+          "photo": "/assets/s5/spacefluid/narcis-nocturne.webp"
+        },
+        {
+          "id": "moon-coat",
+          "photo": "/assets/s5/spacefluid/moon-coat.webp"
+        },
+        {
+          "id": "x-ray",
+          "photo": "/assets/s5/spacefluid/x-ray.webp"
+        }
+      ],
+      "screenshot": "spacefluid-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "whispering-fields",
+          "photo": "/assets/s5/spacefluid/whispering-fields.webp"
+        },
+        {
+          "id": "lovely-problem",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "spacefluid-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "leather",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "flowers",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "spacefluid-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "narcis-nocturne",
+          "photo": "/assets/s5/spacefluid/narcis-nocturne.webp"
+        },
+        {
+          "id": "moon-coat",
+          "photo": "/assets/s5/spacefluid/moon-coat.webp"
+        },
+        {
+          "id": "x-ray",
+          "photo": "/assets/s5/spacefluid/x-ray.webp"
+        }
+      ],
+      "screenshot": "spacefluid-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "whispering-fields",
+          "photo": "/assets/s5/spacefluid/whispering-fields.webp"
+        },
+        {
+          "id": "lovely-problem",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "spacefluid-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "narcis-nocturne",
+        "lovely-problem"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "spacefluid-compare-320.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "narcis-nocturne",
+        "lovely-problem"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "spacefluid-compare-390.png"
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "narcis-nocturne",
+        "lovely-problem"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "spacefluid-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "apiMode": "real_local_backend_injected_ai_stub",
+  "enrichedStates": [
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "id": "narcis-nocturne",
+      "defaultScreenshot": "spacefluid-result-narcis-nocturne-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-narcis-nocturne-320.png",
+      "comparisonIds": [
+        "narcis-nocturne",
+        "moon-coat"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "id": "moon-coat",
+      "defaultScreenshot": "spacefluid-result-moon-coat-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-moon-coat-320.png",
+      "comparisonIds": [
+        "moon-coat",
+        "x-ray"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "id": "x-ray",
+      "defaultScreenshot": "spacefluid-result-x-ray-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-x-ray-320.png",
+      "comparisonIds": [
+        "x-ray",
+        "narcis-nocturne"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "id": "whispering-fields",
+      "defaultScreenshot": "spacefluid-result-whispering-fields-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-whispering-fields-320.png",
+      "comparisonIds": [
+        "whispering-fields",
+        "lovely-problem"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 320,
+      "id": "lovely-problem",
+      "defaultScreenshot": "spacefluid-result-lovely-problem-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-lovely-problem-320.png",
+      "comparisonIds": [
+        "lovely-problem",
+        "whispering-fields"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "id": "narcis-nocturne",
+      "defaultScreenshot": "spacefluid-result-narcis-nocturne-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-narcis-nocturne-390.png",
+      "comparisonIds": [
+        "narcis-nocturne",
+        "moon-coat"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "id": "moon-coat",
+      "defaultScreenshot": "spacefluid-result-moon-coat-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-moon-coat-390.png",
+      "comparisonIds": [
+        "moon-coat",
+        "x-ray"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "id": "x-ray",
+      "defaultScreenshot": "spacefluid-result-x-ray-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-x-ray-390.png",
+      "comparisonIds": [
+        "x-ray",
+        "narcis-nocturne"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "id": "whispering-fields",
+      "defaultScreenshot": "spacefluid-result-whispering-fields-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-whispering-fields-390.png",
+      "comparisonIds": [
+        "whispering-fields",
+        "lovely-problem"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 390,
+      "id": "lovely-problem",
+      "defaultScreenshot": "spacefluid-result-lovely-problem-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-lovely-problem-390.png",
+      "comparisonIds": [
+        "lovely-problem",
+        "whispering-fields"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "id": "narcis-nocturne",
+      "defaultScreenshot": "spacefluid-result-narcis-nocturne-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-narcis-nocturne-1280.png",
+      "comparisonIds": [
+        "narcis-nocturne",
+        "moon-coat"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "id": "moon-coat",
+      "defaultScreenshot": "spacefluid-result-moon-coat-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-moon-coat-1280.png",
+      "comparisonIds": [
+        "moon-coat",
+        "x-ray"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "id": "x-ray",
+      "defaultScreenshot": "spacefluid-result-x-ray-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-x-ray-1280.png",
+      "comparisonIds": [
+        "x-ray",
+        "narcis-nocturne"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "id": "whispering-fields",
+      "defaultScreenshot": "spacefluid-result-whispering-fields-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-whispering-fields-1280.png",
+      "comparisonIds": [
+        "whispering-fields",
+        "lovely-problem"
+      ]
+    },
+    {
+      "slug": "spacefluid",
+      "width": 1280,
+      "id": "lovely-problem",
+      "defaultScreenshot": "spacefluid-result-lovely-problem-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "spacefluid-pair-lovely-problem-1280.png",
+      "comparisonIds": [
+        "lovely-problem",
+        "whispering-fields"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

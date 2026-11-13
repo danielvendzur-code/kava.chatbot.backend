@@ -1,7 +1,7 @@
 {
-  "commit": "fcb2567e036e8522b4348e0024cc48f1a67d881c",
+  "commit": "8ccd0a735340948b5a5df34c18f09ffb1725b319",
   "base": "fcb2567e036e8522b4348e0024cc48f1a67d881c",
-  "codeState": "UNCOMMITTED_ISOLATED_INTEGRATION_WORKTREE",
+  "codeState": "COMMITTED_ISOLATED_PREVIEW_INTEGRATION",
   "coreUnchanged": true,
   "paidCalls": 0,
   "companies": {
@@ -811,5 +811,7 @@
       "status": "PASS"
     }
   },
-  "existingRegistryPreserved": 17
+  "existingRegistryPreserved": 17,
+  "existingS5RegistryPreserved": 26,
+  "totalS5Registered": 32
 }

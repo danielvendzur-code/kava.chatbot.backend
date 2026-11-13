@@ -1,0 +1,177 @@
+{
+  "testedCommit": "8ccd0a735340948b5a5df34c18f09ffb1725b319",
+  "sourceCommit": "fcb2567e036e8522b4348e0024cc48f1a67d881c",
+  "scope": "Existing core, boot, support, extras/provider,17base+9prior registry and all prior nine data/config/companyCSS byte unchanged. Six new appends only. Old9full103live proof reused with new12/12initial-render regression; no false claim of another103result test.",
+  "rows": [
+    {
+      "path": "advisor-core.js",
+      "sha256": "0d61a957b148db4b9efa3326d162121e5d53c9adc0e05a2702ca273da0ad88e9",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/boot.js",
+      "sha256": "8d43da2c0cb22e9b997c6f61f51ae281c3a36348c8935dcdfd1aed5d1abc8cf1",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/support.js",
+      "sha256": "f719a542573118a87888c70b4e20ce6ec82da5f743c10f23f1c08b78b2d0787d",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/fragrance-result-extras.js",
+      "sha256": "acbb5de168cb2c02ecf5f2f0b478f3445190a8fdf123401b0d7528099b513fa7",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "api/ai-chat.js",
+      "sha256": "881bc961158a1ad528f8fe88d892ad9cc0348eb69cc2f7da56e71f2d77323dbc",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/registry.js",
+      "sha256": "42f7b6f3ce69021844a753a9e63a2d5f45577a8a981a1c8e01ebb3ee67dcf62d",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/perfume-registry-20261112.js",
+      "sha256": "aaa2278a1c6b86b150e31d017ea74f902a6ffd7943574fd2e00d0d977fba8f41",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "catalogues/essentique.js",
+      "sha256": "f0837b1546423e5446f80274dbd545487ae8de878e16652bb994e06c61c1baa3",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/perfume-fragments/essentique.config.json",
+      "sha256": "84f2536c9dd59b04f348747820ccf5040de36b18b54fc0359999e3db8a0a2d15",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/brands/essentique.css",
+      "sha256": "2060525b4063b4714490c5e4aa5868f8e1ca1a2a4cbac09cab137221a0d10e2b",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "catalogues/fragrancesamples.js",
+      "sha256": "7fae74239e7102270a90ee6b053b6d6f1adf5c269020f2903901a8db59e4af67",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/perfume-fragments/fragrancesamples.config.json",
+      "sha256": "6cf5549424790203e1731f4b8461fdcf589ef75fd3cc6ce4e58127e36bae0531",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/brands/fragrancesamples.css",
+      "sha256": "2b34df5c4c4d161ad0388665778dd56cac6487ac3fb8c05513d4b126f53c9540",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "catalogues/alexmonhart.js",
+      "sha256": "4c8fa33c707a09cfabc68bf0479953a6b7bee7da5b23871dd9142c4e220293b0",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/perfume-fragments/alexmonhart.config.json",
+      "sha256": "5036323f80026ef12f78f445373816c59329f488f236a59c269fc4838ee4f384",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/brands/alexmonhart.css",
+      "sha256": "26412a716a0e7548a0913a8f37b0247c1f1a02ed8f498c614fc401738d89dcfa",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "catalogues/flakon.js",
+      "sha256": "7d6d754c96a31c5ff3d7b551546a42bbc9d4008b8a892a61c08869648798eb4e",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/perfume-fragments/flakon.config.json",
+      "sha256": "5c81d993ef071fa98378a93c6cda23d8e03551014bb4b23fefeac09c9275701a",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/brands/flakon.css",
+      "sha256": "6ec44ea02a21d918c8184d60692a2d059947166a0fcc475aa3048966ea4a92c4",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "catalogues/orion.js",
+      "sha256": "396c721cc2ed7037619ddfc5cddd75c454347b3c4fbc604a7b1930b971eae20b",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/perfume-fragments/orion.config.json",
+      "sha256": "9aa4366d6de9805d7f0eda8fc42311a9d058462df0ed05e4c6aaab48b76ded37",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/brands/orion.css",
+      "sha256": "7b7197c8bc43fd156d228a5d643b198708736cc7307b77ad4e4db2a7d90381a8",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "catalogues/inspirovane.js",
+      "sha256": "535780055b8609ecbb94786ef663a98ed14729b1fd50e5046b5a2bb7fb32ab29",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/perfume-fragments/inspirovane.config.json",
+      "sha256": "1601e5346aab2f51b8bd80f899711da0a3ba486e1bdabd1851ea2298b622926f",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/brands/inspirovane.css",
+      "sha256": "b07f5bd75936ba57e8af3be34997c4c8ad08614f064383842aa5cf854c247ac1",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "catalogues/leparfumlechic.js",
+      "sha256": "bd2f5f03943f30b549297f6e0070174311e4778e7d0374ea55c823d4614d684d",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/perfume-fragments/leparfumlechic.config.json",
+      "sha256": "69c57f4392272cf5134f7436d8d53426a69ed4063ceef3b25a57f5878ed985e8",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/brands/leparfumlechic.css",
+      "sha256": "2c91960a5088c3ddb09b9b060161a64d9a8308fd1720397f05d47a6e19dc27b0",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "catalogues/vavavoom.js",
+      "sha256": "6e366b5b57cf3bbbce78680de8a309fae678cb2f5a6a29de5ea2b74e3ef91e7b",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/perfume-fragments/vavavoom.config.json",
+      "sha256": "920f7d6dc4173361d2866732781f6311f35c1151e84db669e260101a80e4cd91",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/brands/vavavoom.css",
+      "sha256": "0b2fbbf0de23c37ab2a287e4096b3e2bf38b0dc704f0dbc76cdf3d1b192623d8",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "catalogues/rafinad.js",
+      "sha256": "b02416b944aff500a1005c3486db0339014983591e159862b16a99bce021ad6a",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/perfume-fragments/rafinad.config.json",
+      "sha256": "de69f8dcea46329af0b28afb9dc1332c2b5dae32af840bdbf8c06467b94b9f05",
+      "unchangedFromSource": true
+    },
+    {
+      "path": "n447/s5/brands/rafinad.css",
+      "sha256": "318dfcd88bbc7f390ecb15b581e5b9720afb32c495973d01a0cf3c22039e5fdc",
+      "unchangedFromSource": true
+    }
+  ]
+}
