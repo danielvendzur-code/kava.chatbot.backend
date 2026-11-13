@@ -1,0 +1,8 @@
+/* Owner-requested visual delta; loaded once by MAIN after company CSS. No facts or engine changes. */
+body[data-series=s5] #cosmetics-root #cx-widget .cx-widget-brand{display:flex!important;flex-direction:column!important;align-items:flex-start!important;justify-content:center!important;gap:5px!important;min-width:0}
+body[data-series=s5] #cosmetics-root #cx-widget .cx-widget-brand>.cx-status{display:inline-flex!important;align-items:center!important;gap:6px!important;margin:0 0 0 var(--s5-status-inset,0px)!important;padding:0!important;line-height:1.15!important;white-space:nowrap}
+body[data-series=s5] #cosmetics-root #cx-widget .cx-status>i{display:block!important;position:static!important;transform:none!important;width:6px!important;height:6px!important;margin:0!important;flex:0 0 6px!important;align-self:center!important;border-radius:50%}
+body[data-series=s5][data-fragrance-profile=visual-v1] #cx-widget .fr-note-symbol{display:inline-flex!important;align-items:center;justify-content:center;width:20px;height:22px;flex:0 0 20px;background:none!important}
+body[data-series=s5][data-fragrance-profile=visual-v1] #cx-widget .fr-note-symbol>i{display:none!important}
+body[data-series=s5][data-fragrance-profile=visual-v1] #cx-widget .fr-note-symbol::before{content:'';display:block;width:20px;height:22px;background:var(--cx-brand,#384f43);-webkit-mask:url('/assets/s5/shared/fragrance-bottle-outline.svg') center/contain no-repeat;mask:url('/assets/s5/shared/fragrance-bottle-outline.svg') center/contain no-repeat}
+body[data-series=s5][data-fragrance-profile=visual-v1] #cx-widget .fr-note-tag::before{display:none!important}
