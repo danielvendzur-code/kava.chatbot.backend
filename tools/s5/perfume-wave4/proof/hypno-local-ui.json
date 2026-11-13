@@ -1,0 +1,683 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "ef38930705f7ace33d9e2074cfe2f10847be4cbf",
+  "at": "2026-11-13T17:09:20.954782+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "hypno",
+      "width": 320,
+      "id": "tatrion",
+      "pack": "50 ml",
+      "price": "79,90 €",
+      "url": "https://www.mojehypno.sk/hypno-tatrion-pansky-parfum-50ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "hypno-result-tatrion-320.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 320,
+      "id": "vahrin",
+      "pack": "50 ml",
+      "price": "79,90 €",
+      "url": "https://www.mojehypno.sk/hypno-vahrin-unisex-parfum-50ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "hypno-result-vahrin-320.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 320,
+      "id": "fatria",
+      "pack": "50 ml",
+      "price": "79,90 €",
+      "url": "https://www.mojehypno.sk/hypno-fatria-damsky-parfum-50ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "hypno-result-fatria-320.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 320,
+      "id": "betlior",
+      "pack": "50 ml",
+      "price": "79,90 €",
+      "url": "https://www.mojehypno.sk/hypno-betlior-unisex-parfum-50ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "hypno-result-betlior-320.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 390,
+      "id": "tatrion",
+      "pack": "50 ml",
+      "price": "79,90 €",
+      "url": "https://www.mojehypno.sk/hypno-tatrion-pansky-parfum-50ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "hypno-result-tatrion-390.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 390,
+      "id": "vahrin",
+      "pack": "50 ml",
+      "price": "79,90 €",
+      "url": "https://www.mojehypno.sk/hypno-vahrin-unisex-parfum-50ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "hypno-result-vahrin-390.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 390,
+      "id": "fatria",
+      "pack": "50 ml",
+      "price": "79,90 €",
+      "url": "https://www.mojehypno.sk/hypno-fatria-damsky-parfum-50ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "hypno-result-fatria-390.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 390,
+      "id": "betlior",
+      "pack": "50 ml",
+      "price": "79,90 €",
+      "url": "https://www.mojehypno.sk/hypno-betlior-unisex-parfum-50ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "hypno-result-betlior-390.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 1280,
+      "id": "tatrion",
+      "pack": "50 ml",
+      "price": "79,90 €",
+      "url": "https://www.mojehypno.sk/hypno-tatrion-pansky-parfum-50ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "hypno-result-tatrion-1280.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 1280,
+      "id": "vahrin",
+      "pack": "50 ml",
+      "price": "79,90 €",
+      "url": "https://www.mojehypno.sk/hypno-vahrin-unisex-parfum-50ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "hypno-result-vahrin-1280.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 1280,
+      "id": "fatria",
+      "pack": "50 ml",
+      "price": "79,90 €",
+      "url": "https://www.mojehypno.sk/hypno-fatria-damsky-parfum-50ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "hypno-result-fatria-1280.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 1280,
+      "id": "betlior",
+      "pack": "50 ml",
+      "price": "79,90 €",
+      "url": "https://www.mojehypno.sk/hypno-betlior-unisex-parfum-50ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "hypno-result-betlior-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "hypno",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "flowers",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "hypno-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "hypno",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "tatrion",
+          "photo": "/assets/s5/hypno/hypno-tatrion-pansky-parfum-50ml.png"
+        },
+        {
+          "id": "vahrin",
+          "photo": "/assets/s5/hypno/hypno-vahrin-unisex-parfum-50ml.png"
+        }
+      ],
+      "screenshot": "hypno-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "hypno",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "fatria",
+          "photo": "/assets/s5/hypno/hypno-fatria-damsky-parfum-50ml.png"
+        },
+        {
+          "id": "betlior",
+          "photo": "/assets/s5/hypno/hypno-betlior-unisex-parfum-50ml.png"
+        }
+      ],
+      "screenshot": "hypno-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "hypno",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "flowers",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "hypno-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "hypno",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "tatrion",
+          "photo": "/assets/s5/hypno/hypno-tatrion-pansky-parfum-50ml.png"
+        },
+        {
+          "id": "vahrin",
+          "photo": "/assets/s5/hypno/hypno-vahrin-unisex-parfum-50ml.png"
+        }
+      ],
+      "screenshot": "hypno-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "hypno",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "fatria",
+          "photo": "/assets/s5/hypno/hypno-fatria-damsky-parfum-50ml.png"
+        },
+        {
+          "id": "betlior",
+          "photo": "/assets/s5/hypno/hypno-betlior-unisex-parfum-50ml.png"
+        }
+      ],
+      "screenshot": "hypno-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "hypno",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "flowers",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "hypno-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "hypno",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "tatrion",
+          "photo": "/assets/s5/hypno/hypno-tatrion-pansky-parfum-50ml.png"
+        },
+        {
+          "id": "vahrin",
+          "photo": "/assets/s5/hypno/hypno-vahrin-unisex-parfum-50ml.png"
+        }
+      ],
+      "screenshot": "hypno-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "hypno",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "fatria",
+          "photo": "/assets/s5/hypno/hypno-fatria-damsky-parfum-50ml.png"
+        },
+        {
+          "id": "betlior",
+          "photo": "/assets/s5/hypno/hypno-betlior-unisex-parfum-50ml.png"
+        }
+      ],
+      "screenshot": "hypno-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "hypno",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "fatria",
+        "vahrin"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "hypno-compare-320.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "fatria",
+        "vahrin"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "hypno-compare-390.png"
+    },
+    {
+      "slug": "hypno",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "fatria",
+        "vahrin"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "hypno-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "noteProfiles": [
+    {
+      "slug": "hypno",
+      "id": "tatrion",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "bergamot, citrón",
+        "kvetinové tóny, škorica",
+        "drevité tóny, pižmo"
+      ],
+      "screenshot": "hypno-note-profile-tatrion-320.png"
+    },
+    {
+      "slug": "hypno",
+      "id": "vahrin",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "grapefruit, citrón, čierne ríbezle",
+        "kosatec, cyklámen, jazmín",
+        "pižmo, cédrové drevo, vetiver"
+      ],
+      "screenshot": "hypno-note-profile-vahrin-320.png"
+    },
+    {
+      "slug": "hypno",
+      "id": "fatria",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "jablko, mandle, zázvor",
+        "tonkové bôby, heliotrop, jazmín, konvalinka",
+        "pižmo, ambra"
+      ],
+      "screenshot": "hypno-note-profile-fatria-320.png"
+    },
+    {
+      "slug": "hypno",
+      "id": "betlior",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Kvety pomaranča, jemné kvetinové tóny",
+        "Fialka, palina, kmín, kardamóm a levanduľa",
+        "Drevité tóny, tonkové bôby a pižmo"
+      ],
+      "screenshot": "hypno-note-profile-betlior-320.png"
+    },
+    {
+      "slug": "hypno",
+      "id": "tatrion",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "bergamot, citrón",
+        "kvetinové tóny, škorica",
+        "drevité tóny, pižmo"
+      ],
+      "screenshot": "hypno-note-profile-tatrion-390.png"
+    },
+    {
+      "slug": "hypno",
+      "id": "vahrin",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "grapefruit, citrón, čierne ríbezle",
+        "kosatec, cyklámen, jazmín",
+        "pižmo, cédrové drevo, vetiver"
+      ],
+      "screenshot": "hypno-note-profile-vahrin-390.png"
+    },
+    {
+      "slug": "hypno",
+      "id": "fatria",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "jablko, mandle, zázvor",
+        "tonkové bôby, heliotrop, jazmín, konvalinka",
+        "pižmo, ambra"
+      ],
+      "screenshot": "hypno-note-profile-fatria-390.png"
+    },
+    {
+      "slug": "hypno",
+      "id": "betlior",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Kvety pomaranča, jemné kvetinové tóny",
+        "Fialka, palina, kmín, kardamóm a levanduľa",
+        "Drevité tóny, tonkové bôby a pižmo"
+      ],
+      "screenshot": "hypno-note-profile-betlior-390.png"
+    },
+    {
+      "slug": "hypno",
+      "id": "tatrion",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "bergamot, citrón",
+        "kvetinové tóny, škorica",
+        "drevité tóny, pižmo"
+      ],
+      "screenshot": "hypno-note-profile-tatrion-1280.png"
+    },
+    {
+      "slug": "hypno",
+      "id": "vahrin",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "grapefruit, citrón, čierne ríbezle",
+        "kosatec, cyklámen, jazmín",
+        "pižmo, cédrové drevo, vetiver"
+      ],
+      "screenshot": "hypno-note-profile-vahrin-1280.png"
+    },
+    {
+      "slug": "hypno",
+      "id": "fatria",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "jablko, mandle, zázvor",
+        "tonkové bôby, heliotrop, jazmín, konvalinka",
+        "pižmo, ambra"
+      ],
+      "screenshot": "hypno-note-profile-fatria-1280.png"
+    },
+    {
+      "slug": "hypno",
+      "id": "betlior",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Kvety pomaranča, jemné kvetinové tóny",
+        "Fialka, palina, kmín, kardamóm a levanduľa",
+        "Drevité tóny, tonkové bôby a pižmo"
+      ],
+      "screenshot": "hypno-note-profile-betlior-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "hypno",
+      "width": 320,
+      "id": "tatrion",
+      "defaultScreenshot": "hypno-result-tatrion-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "hypno-pair-tatrion-320.png",
+      "comparisonIds": [
+        "tatrion",
+        "vahrin"
+      ]
+    },
+    {
+      "slug": "hypno",
+      "width": 320,
+      "id": "vahrin",
+      "defaultScreenshot": "hypno-result-vahrin-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "hypno-pair-vahrin-320.png",
+      "comparisonIds": [
+        "vahrin",
+        "tatrion"
+      ]
+    },
+    {
+      "slug": "hypno",
+      "width": 320,
+      "id": "fatria",
+      "defaultScreenshot": "hypno-result-fatria-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "hypno-pair-fatria-320.png",
+      "comparisonIds": [
+        "fatria",
+        "betlior"
+      ]
+    },
+    {
+      "slug": "hypno",
+      "width": 320,
+      "id": "betlior",
+      "defaultScreenshot": "hypno-result-betlior-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "hypno-pair-betlior-320.png",
+      "comparisonIds": [
+        "betlior",
+        "fatria"
+      ]
+    },
+    {
+      "slug": "hypno",
+      "width": 390,
+      "id": "tatrion",
+      "defaultScreenshot": "hypno-result-tatrion-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "hypno-pair-tatrion-390.png",
+      "comparisonIds": [
+        "tatrion",
+        "vahrin"
+      ]
+    },
+    {
+      "slug": "hypno",
+      "width": 390,
+      "id": "vahrin",
+      "defaultScreenshot": "hypno-result-vahrin-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "hypno-pair-vahrin-390.png",
+      "comparisonIds": [
+        "vahrin",
+        "tatrion"
+      ]
+    },
+    {
+      "slug": "hypno",
+      "width": 390,
+      "id": "fatria",
+      "defaultScreenshot": "hypno-result-fatria-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "hypno-pair-fatria-390.png",
+      "comparisonIds": [
+        "fatria",
+        "betlior"
+      ]
+    },
+    {
+      "slug": "hypno",
+      "width": 390,
+      "id": "betlior",
+      "defaultScreenshot": "hypno-result-betlior-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "hypno-pair-betlior-390.png",
+      "comparisonIds": [
+        "betlior",
+        "fatria"
+      ]
+    },
+    {
+      "slug": "hypno",
+      "width": 1280,
+      "id": "tatrion",
+      "defaultScreenshot": "hypno-result-tatrion-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "hypno-pair-tatrion-1280.png",
+      "comparisonIds": [
+        "tatrion",
+        "vahrin"
+      ]
+    },
+    {
+      "slug": "hypno",
+      "width": 1280,
+      "id": "vahrin",
+      "defaultScreenshot": "hypno-result-vahrin-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "hypno-pair-vahrin-1280.png",
+      "comparisonIds": [
+        "vahrin",
+        "tatrion"
+      ]
+    },
+    {
+      "slug": "hypno",
+      "width": 1280,
+      "id": "fatria",
+      "defaultScreenshot": "hypno-result-fatria-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "hypno-pair-fatria-1280.png",
+      "comparisonIds": [
+        "fatria",
+        "betlior"
+      ]
+    },
+    {
+      "slug": "hypno",
+      "width": 1280,
+      "id": "betlior",
+      "defaultScreenshot": "hypno-result-betlior-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "hypno-pair-betlior-1280.png",
+      "comparisonIds": [
+        "betlior",
+        "fatria"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

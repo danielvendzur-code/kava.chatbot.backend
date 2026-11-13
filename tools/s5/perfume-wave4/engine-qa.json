@@ -1,0 +1,165 @@
+{
+  "commit": "ef38930705f7ace33d9e2074cfe2f10847be4cbf",
+  "scope": "Two reserved isolated packages on unchangedc9core; sourceIDofflineonly, not integrated/livePreview",
+  "coreUnchanged": true,
+  "paidCalls": 0,
+  "companies": {
+    "hypno": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "tatrion"
+          },
+          "id": "tatrion",
+          "url": "https://www.mojehypno.sk/hypno-tatrion-pansky-parfum-50ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "vahrin"
+          },
+          "id": "vahrin",
+          "url": "https://www.mojehypno.sk/hypno-vahrin-unisex-parfum-50ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "fatria"
+          },
+          "id": "fatria",
+          "url": "https://www.mojehypno.sk/hypno-fatria-damsky-parfum-50ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "betlior"
+          },
+          "id": "betlior",
+          "url": "https://www.mojehypno.sk/hypno-betlior-unisex-parfum-50ml/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "flowers"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "tatrion",
+              "vahrin"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "fatria",
+              "betlior"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 4,
+      "status": "PASS"
+    },
+    "bookarazzi": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "wind-of-change"
+          },
+          "id": "wind-of-change",
+          "url": "https://bookarazzi.sk/produkt/wind-of-change/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "turns-and-twists"
+          },
+          "id": "turns-and-twists",
+          "url": "https://bookarazzi.sk/produkt/turns-and-twists/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice",
+            "fragranceProfile": "the-final-chapter"
+          },
+          "id": "the-final-chapter",
+          "url": "https://bookarazzi.sk/produkt/the-final-chapter/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice",
+            "fragranceProfile": "dialogue"
+          },
+          "id": "dialogue",
+          "url": "https://bookarazzi.sk/produkt/dialogue/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice",
+            "fragranceProfile": "bestseller"
+          },
+          "id": "bestseller",
+          "url": "https://bookarazzi.sk/produkt/bestseller/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "spice"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "wind-of-change",
+              "turns-and-twists"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "the-final-chapter",
+              "dialogue",
+              "bestseller"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 5,
+      "status": "PASS"
+    }
+  }
+}

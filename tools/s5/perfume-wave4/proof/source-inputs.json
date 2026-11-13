@@ -1,0 +1,245 @@
+{
+  "runtimeBase": "ef38930705f7ace33d9e2074cfe2f10847be4cbf",
+  "sourcePackageInputs": [
+    {
+      "path": "assets/s5/bookarazzi/avatar.png",
+      "bytes": 16400,
+      "sha256": "367b8bfb204a581dea12943a5d4bcf2ae74511fb6947622a74c44c3d53518b2d"
+    },
+    {
+      "path": "assets/s5/bookarazzi/bestseller.jpg",
+      "bytes": 140300,
+      "sha256": "53d0c2709bbedbdb06d2200843f2a5b487c008e82ce938fa83a6f9638cc3965d"
+    },
+    {
+      "path": "assets/s5/bookarazzi/dialogue.jpg",
+      "bytes": 133659,
+      "sha256": "916431d619bf8a16550d1bd3b16fb40dea33be9eff9691733ce34bed295244b2"
+    },
+    {
+      "path": "assets/s5/bookarazzi/logo.svg",
+      "bytes": 3130,
+      "sha256": "b76f9766ec334bccac5b45a9c706cedac394eba0fd380e45f32576eaf05992f6"
+    },
+    {
+      "path": "assets/s5/bookarazzi/the-final-chapter.jpg",
+      "bytes": 145501,
+      "sha256": "a4e78e1e4ad86bf8aa375b1e29785f25e9992d07ac238d815bd73618917e4ccb"
+    },
+    {
+      "path": "assets/s5/bookarazzi/turns-and-twists.jpg",
+      "bytes": 134895,
+      "sha256": "ff3a0fba374c3e99a57ed9b8053d473138b15ba3b21a8b2f59bb0f406b9e987d"
+    },
+    {
+      "path": "assets/s5/bookarazzi/wind-of-change.jpg",
+      "bytes": 129910,
+      "sha256": "6345371af011cdb9363031831b1c318bf83109268367625eb56e8b9ee4a4ee43"
+    },
+    {
+      "path": "assets/s5/hypno/avatar.png",
+      "bytes": 16783,
+      "sha256": "d3ee52de9e9b586bcb2c37f70cf1c6b1f7ae4d1e9a42da86b040d7ea981e6ece"
+    },
+    {
+      "path": "assets/s5/hypno/hypno-betlior-unisex-parfum-50ml.png",
+      "bytes": 319685,
+      "sha256": "730ba64f7f8cd944eec9b300c0cdd1208bedfd2fc4f39c5771e90e81272d343a"
+    },
+    {
+      "path": "assets/s5/hypno/hypno-fatria-damsky-parfum-50ml.png",
+      "bytes": 326476,
+      "sha256": "e1d5be1fa4ec7f615b47773b755824fb7f4e8d44901a0ea3aff005f0aaf27376"
+    },
+    {
+      "path": "assets/s5/hypno/hypno-tatrion-pansky-parfum-50ml.png",
+      "bytes": 327693,
+      "sha256": "cd023de12f7f7d0a45856d5721ed9d26e4c4c4850565e5c52a4157d655a5995b"
+    },
+    {
+      "path": "assets/s5/hypno/hypno-vahrin-unisex-parfum-50ml.png",
+      "bytes": 326301,
+      "sha256": "bd762d95be35a51826965cab26cb2f5b86d44e8e6badafe248b9059d2ac302a4"
+    },
+    {
+      "path": "assets/s5/hypno/logo.png",
+      "bytes": 70316,
+      "sha256": "6cb2712890a2477f4008a7e1cbbdbeb6d0681fbe6f81223ba237bfd8d4924e64"
+    },
+    {
+      "path": "catalogues/bookarazzi.js",
+      "bytes": 18897,
+      "sha256": "43f104bb967331bcbab58b958be94e163d545340675f754cbbf5cd94a0388639"
+    },
+    {
+      "path": "catalogues/hypno.js",
+      "bytes": 17559,
+      "sha256": "e0e536a8461e8b4d477a79b28ed203738a7932a5472953e588ee8b3baa80215f"
+    },
+    {
+      "path": "n447/s5/perfume-fragments/bookarazzi.config.json",
+      "bytes": 5953,
+      "sha256": "46830605b91036a96a29a6fd5fbebca26e40d4bb552b1be457984b0f9cc14220"
+    },
+    {
+      "path": "n447/s5/perfume-fragments/bookarazzi.selection-model.json",
+      "bytes": 1566,
+      "sha256": "e5da32eadf38a3a9cab1baf68db1b61059117b7ec9e1107093542c75a9e8bf5d"
+    },
+    {
+      "path": "n447/s5/perfume-fragments/hypno.config.json",
+      "bytes": 5544,
+      "sha256": "3ffbde56ee7930a27eb8b64ba605dd529b1de2b411722d1a3d01b6de610a1c6d"
+    },
+    {
+      "path": "n447/s5/perfume-fragments/hypno.selection-model.json",
+      "bytes": 1356,
+      "sha256": "f6bec2efed97e19487fc663bbae5329dc9db614a6e5fcea84d6264ddeee98b86"
+    },
+    {
+      "path": "n447/s5/sources/bookarazzi/selection-model.json",
+      "bytes": 1566,
+      "sha256": "e5da32eadf38a3a9cab1baf68db1b61059117b7ec9e1107093542c75a9e8bf5d"
+    },
+    {
+      "path": "n447/s5/sources/bookarazzi/verified-products.json",
+      "bytes": 20902,
+      "sha256": "6f42c32f76c10df0a73f705a07409f035b56f95cb036b0f675f8d5309b729fb6"
+    },
+    {
+      "path": "n447/s5/sources/hypno/selection-model.json",
+      "bytes": 1356,
+      "sha256": "f6bec2efed97e19487fc663bbae5329dc9db614a6e5fcea84d6264ddeee98b86"
+    },
+    {
+      "path": "n447/s5/sources/hypno/verified-products.json",
+      "bytes": 19272,
+      "sha256": "407a7bdf3de3a15b2d955357723f718c3353dbb95f426d9dbdf9c6012d70e1db"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/assets/avatar.png",
+      "bytes": 16400,
+      "sha256": "367b8bfb204a581dea12943a5d4bcf2ae74511fb6947622a74c44c3d53518b2d"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/assets/bestseller.jpg",
+      "bytes": 140300,
+      "sha256": "53d0c2709bbedbdb06d2200843f2a5b487c008e82ce938fa83a6f9638cc3965d"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/assets/dialogue.jpg",
+      "bytes": 133659,
+      "sha256": "916431d619bf8a16550d1bd3b16fb40dea33be9eff9691733ce34bed295244b2"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/assets/logo.svg",
+      "bytes": 3130,
+      "sha256": "b76f9766ec334bccac5b45a9c706cedac394eba0fd380e45f32576eaf05992f6"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/assets/the-final-chapter.jpg",
+      "bytes": 145501,
+      "sha256": "a4e78e1e4ad86bf8aa375b1e29785f25e9992d07ac238d815bd73618917e4ccb"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/assets/turns-and-twists.jpg",
+      "bytes": 134895,
+      "sha256": "ff3a0fba374c3e99a57ed9b8053d473138b15ba3b21a8b2f59bb0f406b9e987d"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/assets/wind-of-change.jpg",
+      "bytes": 129910,
+      "sha256": "6345371af011cdb9363031831b1c318bf83109268367625eb56e8b9ee4a4ee43"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/catalogue.js",
+      "bytes": 18897,
+      "sha256": "43f104bb967331bcbab58b958be94e163d545340675f754cbbf5cd94a0388639"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/config.json",
+      "bytes": 5953,
+      "sha256": "46830605b91036a96a29a6fd5fbebca26e40d4bb552b1be457984b0f9cc14220"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/integration-review.json",
+      "bytes": 5847,
+      "sha256": "12b4c13742cbebdacfeb2be66870b2c127f124cd74ca31adf838ce8df6a9094f"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/selection-model.json",
+      "bytes": 1566,
+      "sha256": "e5da32eadf38a3a9cab1baf68db1b61059117b7ec9e1107093542c75a9e8bf5d"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/ui-review.css",
+      "bytes": 6365,
+      "sha256": "317d2500628a184836f22c7c41549631a19b42184b21f136048f0091c6453255"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/bookarazzi/verified-products.json",
+      "bytes": 20902,
+      "sha256": "6f42c32f76c10df0a73f705a07409f035b56f95cb036b0f675f8d5309b729fb6"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/hypno/assets/avatar.png",
+      "bytes": 16783,
+      "sha256": "d3ee52de9e9b586bcb2c37f70cf1c6b1f7ae4d1e9a42da86b040d7ea981e6ece"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/hypno/assets/hypno-betlior-unisex-parfum-50ml.png",
+      "bytes": 319685,
+      "sha256": "730ba64f7f8cd944eec9b300c0cdd1208bedfd2fc4f39c5771e90e81272d343a"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/hypno/assets/hypno-fatria-damsky-parfum-50ml.png",
+      "bytes": 326476,
+      "sha256": "e1d5be1fa4ec7f615b47773b755824fb7f4e8d44901a0ea3aff005f0aaf27376"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/hypno/assets/hypno-tatrion-pansky-parfum-50ml.png",
+      "bytes": 327693,
+      "sha256": "cd023de12f7f7d0a45856d5721ed9d26e4c4c4850565e5c52a4157d655a5995b"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/hypno/assets/hypno-vahrin-unisex-parfum-50ml.png",
+      "bytes": 326301,
+      "sha256": "bd762d95be35a51826965cab26cb2f5b86d44e8e6badafe248b9059d2ac302a4"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/hypno/assets/logo.png",
+      "bytes": 70316,
+      "sha256": "6cb2712890a2477f4008a7e1cbbdbeb6d0681fbe6f81223ba237bfd8d4924e64"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/hypno/catalogue.js",
+      "bytes": 17559,
+      "sha256": "e0e536a8461e8b4d477a79b28ed203738a7932a5472953e588ee8b3baa80215f"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/hypno/config.json",
+      "bytes": 5544,
+      "sha256": "3ffbde56ee7930a27eb8b64ba605dd529b1de2b411722d1a3d01b6de610a1c6d"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/hypno/integration-review.json",
+      "bytes": 5443,
+      "sha256": "0b9af2cff2513dc7fa8b1aaf3aff4a621f40e93cbb8539c527b73c3bb96716cb"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/hypno/selection-model.json",
+      "bytes": 1356,
+      "sha256": "f6bec2efed97e19487fc663bbae5329dc9db614a6e5fcea84d6264ddeee98b86"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/hypno/ui-review.css",
+      "bytes": 5946,
+      "sha256": "9ea344653b15a3ffa93d4c80b4970859f3f6b41cf98494d43af539ef71ffcd17"
+    },
+    {
+      "path": "tools/s5/perfume-wave4/candidate-packages/hypno/verified-products.json",
+      "bytes": 19272,
+      "sha256": "407a7bdf3de3a15b2d955357723f718c3353dbb95f426d9dbdf9c6012d70e1db"
+    }
+  ]
+}

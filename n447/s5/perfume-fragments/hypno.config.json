@@ -1,0 +1,200 @@
+{
+  "slug": "hypno",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "5dc5be907738007f93f8375b8e5a129f26459d77",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/hypno.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Bergamot a škorica",
+    "Jablko a mandle",
+    "Pomarančový kvet",
+    "Porovnať dve vône"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Bergamot a škorica",
+      "match": "bergamot.*skoric",
+      "productIds": [
+        "tatrion"
+      ]
+    },
+    {
+      "chip": "Jablko a mandle",
+      "match": "jablko.*mandle",
+      "productIds": [
+        "fatria"
+      ]
+    },
+    {
+      "chip": "Pomarančový kvet",
+      "match": "pomarancovy.*kvet",
+      "productIds": [
+        "betlior"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "fatria",
+    "vahrin"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "Separate2ml/3mlsampleSKU not falselydeclared sameparentvariant orShopifyevidence; no exact smallpackphoto/supplementcontract established."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Moje Hypno",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/hypno/logo.png",
+      "header": "/assets/s5/hypno/logo.png",
+      "avatar": "/assets/s5/hypno/avatar.png"
+    },
+    "brand": {
+      "name": "Moje Hypno",
+      "domain": "mojehypno.sk",
+      "website": "https://www.mojehypno.sk/",
+      "lang": "sk",
+      "fullName": "Moje Hypno",
+      "url": "https://www.mojehypno.sk/",
+      "logo": "/assets/s5/hypno/logo.png",
+      "mark": "/assets/s5/hypno/avatar.png",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône Moje Hypno, ich tóny, balenia a ceny.",
+      "quickChips": [
+        "Bergamot a škorica",
+        "Jablko a mandle",
+        "Pomarančový kvet",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#690638",
+        "accent": "#845f22",
+        "soft": "#fcf6f7",
+        "paper": "#ffffff",
+        "ink": "#351b28",
+        "line": "#eadce2"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy a drevité tóny",
+        "",
+        "Citrusy a drevité tóny",
+        ""
+      ],
+      "tatrion": [
+        "Bergamot, citrón a škorica",
+        "",
+        "Bergamot, citrón a škorica",
+        ""
+      ],
+      "vahrin": [
+        "Grapefruit, ríbezle a vetiver",
+        "",
+        "Grapefruit, ríbezle a vetiver",
+        ""
+      ],
+      "flowers": [
+        "Jablko, kvety a korenie",
+        "",
+        "Jablko, kvety a korenie",
+        ""
+      ],
+      "fatria": [
+        "Jablko, mandle a jazmín",
+        "",
+        "Jablko, mandle a jazmín",
+        ""
+      ],
+      "betlior": [
+        "Pomarančový kvet a kardamóm",
+        "",
+        "Pomarančový kvet a kardamóm",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "tatrion": [
+        "/assets/s5/hypno/hypno-tatrion-pansky-parfum-50ml.png"
+      ],
+      "vahrin": [
+        "/assets/s5/hypno/hypno-vahrin-unisex-parfum-50ml.png"
+      ],
+      "flowers": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "fatria": [
+        "/assets/s5/hypno/hypno-fatria-damsky-parfum-50ml.png"
+      ],
+      "betlior": [
+        "/assets/s5/hypno/hypno-betlior-unisex-parfum-50ml.png"
+      ]
+    },
+    "compareProductIds": [
+      "fatria",
+      "vahrin"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétna vôňa · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu podľa jeho vkusu.",
+      "lead": "Výber ukáže konkrétnu vôňu Moje Hypno s fotografiou, profilom tónov, presným balením, cenou a odkazom. Dve odlišné vône možno porovnať.",
+      "includedChat": "Vonné tóny, konkrétne balenia, ceny a porovnanie vybraných vôní.",
+      "includedAdvisor": "Výber vône, jej profil a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône Moje Hypno, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "hypno-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "tatrion": "vahrin",
+        "vahrin": "tatrion",
+        "fatria": "betlior",
+        "betlior": "fatria"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

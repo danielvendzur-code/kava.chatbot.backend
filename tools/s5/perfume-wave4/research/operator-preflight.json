@@ -1,0 +1,85 @@
+[
+  {
+    "url": "https://api.statistics.sk/rpo/v1/search?identifier=51654598",
+    "at": "2026-11-13T16:55:41.577197+00:00",
+    "status": 200,
+    "data": {
+      "results": [
+        {
+          "id": 9565241,
+          "dbModificationDate": "2025-07-07",
+          "identifiers": [
+            {
+              "value": "51654598",
+              "validFrom": "2018-04-11"
+            }
+          ],
+          "fullNames": [
+            {
+              "value": "Hypno, s.r.o.",
+              "validFrom": "2018-04-11"
+            }
+          ],
+          "addresses": [
+            {
+              "validFrom": "2018-04-11",
+              "street": "Uhrovecká",
+              "regNumber": 0,
+              "buildingNumber": "47/37",
+              "postalCodes": [
+                "020 61"
+              ],
+              "municipality": {
+                "value": "Lednické Rovne",
+                "code": "SK0228513326",
+                "codelistCode": "CL000025"
+              },
+              "country": {
+                "value": "Slovenská republika",
+                "code": "703",
+                "codelistCode": "CL000086"
+              }
+            }
+          ],
+          "establishment": "2018-04-11",
+          "sourceRegister": {
+            "value": {
+              "value": "Obchodný register",
+              "code": "1",
+              "codelistCode": "CL010112"
+            },
+            "registrationOffices": [
+              {
+                "value": "Okresný súd Trenčín",
+                "validFrom": "2018-04-11"
+              }
+            ],
+            "registrationNumbers": [
+              {
+                "value": "Sro/36302/R",
+                "validFrom": "2018-04-11"
+              }
+            ]
+          }
+        }
+      ],
+      "license": "1. ŠÚ SR ako správca informačného systému RPO uplatňuje na použitie sprístupnených údajov z RPO uvedených v § 7 ods. 2 a § 7a ods. 4 zákona č. 272/2015 Z. z. o registri právnických osôb, podnikateľov a orgánov verejnej moci a o zmene a doplnení niektorých zákonov (ďalej len „zákon o registri právnických osôb“) medzinárodnú verejnú licenciu Creative Commons Attribution License (cc-by) 4.0 (ďalej len „verejná licencia“).\n2. Predmetom verejnej licencie sú sprístupnené údaje z RPO prostredníctvom webového sídla ŠÚ SR v zmysle § 7 ods. 2 a § 7a ods. 4 zákona o registri právnických osôb.\n3. ŠÚ SR udeľuje súhlas na použitie predmetu verejnej licencie a výkon licencovaných práv („licencia“) podľa vyššie citovanej verejnej licencie."
+    }
+  },
+  {
+    "url": "https://www.registeruz.sk/cruz-public/api/uctovne-jednotky?ico=51654598&zmenene-od=2000-01-01",
+    "at": "2026-11-13T16:55:41.577951+00:00",
+    "status": 200,
+    "data": {
+      "id": [
+        1764249
+      ],
+      "existujeDalsieId": false
+    }
+  },
+  {
+    "url": "https://www.bookarazzi.sk/policies/terms-of-service",
+    "at": "2026-11-13T16:55:41.578679+00:00",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

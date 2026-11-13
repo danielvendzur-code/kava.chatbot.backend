@@ -1,0 +1,46 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aká vôňa je vám blízka?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy a drevité tóny",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "tatrion",
+          "label": "Bergamot, citrón a škorica",
+          "productId": "tatrion",
+          "sourceUrl": "https://www.mojehypno.sk/hypno-tatrion-pansky-parfum-50ml/"
+        },
+        {
+          "value": "vahrin",
+          "label": "Grapefruit, ríbezle a vetiver",
+          "productId": "vahrin",
+          "sourceUrl": "https://www.mojehypno.sk/hypno-vahrin-unisex-parfum-50ml/"
+        }
+      ]
+    },
+    {
+      "value": "flowers",
+      "label": "Jablko, kvety a korenie",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "fatria",
+          "label": "Jablko, mandle a jazmín",
+          "productId": "fatria",
+          "sourceUrl": "https://www.mojehypno.sk/hypno-fatria-damsky-parfum-50ml/"
+        },
+        {
+          "value": "betlior",
+          "label": "Pomarančový kvet a kardamóm",
+          "productId": "betlior",
+          "sourceUrl": "https://www.mojehypno.sk/hypno-betlior-unisex-parfum-50ml/"
+        }
+      ]
+    }
+  ]
+}

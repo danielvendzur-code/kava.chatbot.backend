@@ -1,0 +1,387 @@
+{
+  "slug": "bookarazzi",
+  "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+  "primaryRecords": 5,
+  "finalLocalResults": 15,
+  "sourceBoundNoteProfiles": 15,
+  "archiveBytes": 8911972,
+  "archiveSha256": "f2c5f0ab572de82ea499abe0ce38300365e13e4cc3fb9cb06f7fdd7be53217bd",
+  "visualReview": "Allfinalprimaryoutcomes at320/390/1280viewed throughactualcontact sheets; originalmerchantphotos reviewed; merchanthome/product visuallyreviewed. Chatcomparisonsandcontrastingavatars also reviewed.",
+  "entries": [
+    {
+      "name": "live-merchant-home-retry/bookarazzi-home.png",
+      "bytes": 1855905,
+      "sha256": "326b017e38728f4ea1bbe4cf8312f5872bbc08c1283f300972e478871d74e2a4"
+    },
+    {
+      "name": "live-merchant/bookarazzi-product.png",
+      "bytes": 284071,
+      "sha256": "6328345964f188f02ae2f306f3d4f8241533c8eeef15c40f6b9ce23b80b8b400"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-chat-0-1280.png",
+      "bytes": 123862,
+      "sha256": "51b4424d87ca14dc73f4a65829e0be26de49be21bce0705ef763f40a292ff363"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-chat-0-320.png",
+      "bytes": 55310,
+      "sha256": "c481869c7db0332d027b76b90ec78e6e8bb14fc2d625ff7a07a82338c765f008"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-chat-0-390.png",
+      "bytes": 56499,
+      "sha256": "f693f6ed29b660a3f5a4f6155a7daed7cfe7b331fd3942211fad5b1b61f91b0b"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-chat-1-1280.png",
+      "bytes": 121851,
+      "sha256": "aacde780f9872726276c4c4db742a5590ecea591e1bc398fc2195a0026f61c41"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-chat-1-320.png",
+      "bytes": 53630,
+      "sha256": "b9ba28c3dac63a98a76371ddd237935c2a4006eaac96339aad5b62945e196d6c"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-chat-1-390.png",
+      "bytes": 54630,
+      "sha256": "106b4090676ad1c10ee6db5b21cec5632dbd42f87dfcb090748a27dec6b75e59"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-chat-2-1280.png",
+      "bytes": 121927,
+      "sha256": "a0d58697465b5b0f4e055e66cd9714169fb8cb765e8b216376c330af8ae13a38"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-chat-2-320.png",
+      "bytes": 53832,
+      "sha256": "acddc4cd11758f20fce34b1187d9aa085ba1cdb6729b9679f17444e263160b17"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-chat-2-390.png",
+      "bytes": 54715,
+      "sha256": "cbcaaf47df40247b82d242ab9683ecbba6de12a3b67c15f0ce66199a2cc04662"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-compare-1280.png",
+      "bytes": 134725,
+      "sha256": "d7321de4d4a4e3fa6d108397f98928a60b802edbfc456bd541c51c01af5e5237"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-compare-320.png",
+      "bytes": 80360,
+      "sha256": "8be1166d94c8c3c5ac58ea50534520169befcd3fbfbc9d8333e3cb6169bee730"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-compare-390.png",
+      "bytes": 82052,
+      "sha256": "57b665b0679f29759e514f68eaa01b32e34a1d28d3b354ebb8eea66cb7e8e677"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-bestseller-1280.png",
+      "bytes": 11960,
+      "sha256": "b8f7a199accb8e8fd034c986ea9d1299320ccb8dd935c51c113d7791a06cbebc"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-bestseller-320.png",
+      "bytes": 12235,
+      "sha256": "5ffc92e7308541ef0da671b01a008ac5b9b75ef8fd152d3a79da02c244496219"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-bestseller-390.png",
+      "bytes": 12651,
+      "sha256": "41b10a594ce3c9419195a12816460baab35840ef8c0d69b379cee8559fd04a1e"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-dialogue-1280.png",
+      "bytes": 11840,
+      "sha256": "e4c5d9535ebec8e59d72ce6e72f3d7774553b8172fed2817d38fc76f3e982342"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-dialogue-320.png",
+      "bytes": 12267,
+      "sha256": "875e5480fd67a70d424399bb7c86d7d79864da604c1a17c35328f02eecd21074"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-dialogue-390.png",
+      "bytes": 12808,
+      "sha256": "9ed412ae38cf2002efe323be5774db00f4d2645b081fe993a4e375b35f50bffd"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-the-final-chapter-1280.png",
+      "bytes": 11765,
+      "sha256": "06788e07485598831a19e33a7b40515e32c7c61e60f2a4f4073c181fcd6b1544"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-the-final-chapter-320.png",
+      "bytes": 11988,
+      "sha256": "c6d8e0770f16bc3d4312501ea5d0ba67aa271e61f827a2b479cdf8b530165dbf"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-the-final-chapter-390.png",
+      "bytes": 12526,
+      "sha256": "9357f42a37e7b91e5ff3482d60d4b60163e61a32ee64338e4647dede67736a73"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-turns-and-twists-1280.png",
+      "bytes": 10475,
+      "sha256": "5d16f7e11daf5dd92874ba2aa8988a4ebc66ee7d70d22f9fd7625c29707c49d7"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-turns-and-twists-320.png",
+      "bytes": 10455,
+      "sha256": "c1dd88b020824e7bdafc87088d42bbd03617dd7899f03b10f0b3258d58bab5f1"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-turns-and-twists-390.png",
+      "bytes": 11060,
+      "sha256": "20ff94009eac0f54e0482b5a01afe8ee8b987d1013774e4f02f8b271c40e4b54"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-wind-of-change-1280.png",
+      "bytes": 10536,
+      "sha256": "e9a80c26fc3062270efa569788b1872052c044d1585b1d15468d8504977b5faa"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-wind-of-change-320.png",
+      "bytes": 10512,
+      "sha256": "82440c07f990ae53ae15b3470dd783587da7bb9e11bfcff47b7c2212a5e6e8f3"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-note-profile-wind-of-change-390.png",
+      "bytes": 11170,
+      "sha256": "f3ba06870e18e195cc2eb215013cd29eb76a6b0a478c5882f08fe14fe1bfa639"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-bestseller-1280.png",
+      "bytes": 139099,
+      "sha256": "8c0d9d92b08530413611022b3670e885fab2b7e2134ff45819fc4a03f0402cf2"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-bestseller-320.png",
+      "bytes": 73542,
+      "sha256": "a612fcd95d36915f1d3c633605e0a5345a38c03246c7f7d5f55ad292592ef28e"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-bestseller-390.png",
+      "bytes": 77881,
+      "sha256": "076bbf27241675af8283ff6853095706987d9d064b446a7f007d2db4d24b5caf"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-dialogue-1280.png",
+      "bytes": 137811,
+      "sha256": "67562db1314c2cc3d471ee4ed370ba51e93646171297705e56dad284a8216b1d"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-dialogue-320.png",
+      "bytes": 74767,
+      "sha256": "1a9436fefbd5e092f34afed65dc152aaab9e92d5ca4a1178d68e9a88fd128bbb"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-dialogue-390.png",
+      "bytes": 77062,
+      "sha256": "d8eb3dbe3539045f254beb79eb0f7c7712fc336f0801e6de5b6328d6f8732c3f"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-the-final-chapter-1280.png",
+      "bytes": 139298,
+      "sha256": "177ecc1365322a54486e957b93ce2aafef0f2944f93b12123434d1c6e5b1025a"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-the-final-chapter-320.png",
+      "bytes": 73153,
+      "sha256": "38eb520b30595de28337855827470b1c406fbc9a4411eb3fd12acb962e87e994"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-the-final-chapter-390.png",
+      "bytes": 77478,
+      "sha256": "627444d1ed43c65c31d6ae31bac7ee98cabd98fb5733b714027cac53f9a6f9ff"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-turns-and-twists-1280.png",
+      "bytes": 136709,
+      "sha256": "c5dfb4534b16fc4252112d8f370debedfbc14921df65ad3f7e5987d5160577f3"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-turns-and-twists-320.png",
+      "bytes": 72726,
+      "sha256": "800e823e8d5e4cf880173a872162f48f8ebe6cc7f29973d5043e7e5e16659bdb"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-turns-and-twists-390.png",
+      "bytes": 75972,
+      "sha256": "8ffab5de4619443aa467689f67b0b709c1e491a61f014411488818f4109abfb2"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-wind-of-change-1280.png",
+      "bytes": 137031,
+      "sha256": "98868dc7d6aefe8a46ae6b6b7f4b8d38bdaa841c41dc0205f789aa409327f320"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-wind-of-change-320.png",
+      "bytes": 74051,
+      "sha256": "b8057756792a15b4e48cf3ae124936ab81fc6a73ef84b8c07306fcd6b4d779f4"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-pair-wind-of-change-390.png",
+      "bytes": 77319,
+      "sha256": "5355cfc580cc7decd7fd0c4cb391683d7d99e9df9b2a34a5b81f58d1cb607191"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-question-1-1280.png",
+      "bytes": 368848,
+      "sha256": "b3a641f914a0d9ac829526692632e5f01b1144c810fb6912927904e78b504656"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-question-1-320.png",
+      "bytes": 223720,
+      "sha256": "c65f83e735b8bd4bd6677d2f97fd077b46d40edc22c6bf53b879af87052b3f49"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-question-1-390.png",
+      "bytes": 265755,
+      "sha256": "b8fc0b2a306e77970d5c17abee725e25115e40f9150fdc21a2855007dc03e5b6"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-question-2-1280.png",
+      "bytes": 195957,
+      "sha256": "892a25419e1b347b1ea729f8056887faecb4ad911d6e79f256a97242fb5235a0"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-question-2-320.png",
+      "bytes": 102762,
+      "sha256": "f4b162e9b7efe52a58e62e74fcf8ab35eec6b620a8632691cf35197c79ad3f4a"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-question-2-390.png",
+      "bytes": 105372,
+      "sha256": "358a23d9c32e43d9dc0c33d54dea48627ef82203cb7d153f6abccda2ee2fd84d"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-question-3-1280.png",
+      "bytes": 204291,
+      "sha256": "7a80450b50d11e95f161cce8a81c1bbe72e108e2433a85a311ca647dcad403bf"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-question-3-320.png",
+      "bytes": 122028,
+      "sha256": "28583db49e228a3d1ce7e9134206783cdb87d7f264d60f99d907bc31ddc93eac"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-question-3-390.png",
+      "bytes": 129823,
+      "sha256": "9989d2d4c7e19c387d72ef143412ec02b3155f8263c56432265ba06e6f174a15"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-bestseller-1280.png",
+      "bytes": 138742,
+      "sha256": "1a28c94c8420eec3205fefbad81d3add2b8bb62514dd25b99df75d6fc87c336b"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-bestseller-320.png",
+      "bytes": 78917,
+      "sha256": "212ca29eb819fdf5a38d45a1349e9bfcfbbac4cfed51376e78c22f6cc6400cad"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-bestseller-390.png",
+      "bytes": 82044,
+      "sha256": "c9d1ce412b88886f1c1faf4b3ad336ec738942c885d55fff3011445a2adf1ab6"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-dialogue-1280.png",
+      "bytes": 138591,
+      "sha256": "4b3a5c487c1d3350e410b56a7afc0ad424bd059cbfbdb96ecebdecb0ff44a8b2"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-dialogue-320.png",
+      "bytes": 80479,
+      "sha256": "dd253f5f17abe80d26765defa00c7f47bb46b986ce64c969c972746ba0acb387"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-dialogue-390.png",
+      "bytes": 81617,
+      "sha256": "35e08608db80a1dff4fd94c610c9e11e10fa63c272b84d41b4fc4d2cd581f8bb"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-the-final-chapter-1280.png",
+      "bytes": 139052,
+      "sha256": "ffea2a2d2eb2166da8b78fd7a59d92cd9b70419ea2753bb38d5cbdea67ec5c95"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-the-final-chapter-320.png",
+      "bytes": 78419,
+      "sha256": "ca4301180ce6110b89e8afc35ad9c2dd977af5fc403fdb20c64496fd877b4e5c"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-the-final-chapter-390.png",
+      "bytes": 81675,
+      "sha256": "988528e0b9bfb05607c340f8ee53e436536516c1647aa79da2cf9aa6825176c2"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-turns-and-twists-1280.png",
+      "bytes": 137395,
+      "sha256": "41fc4fddc1f556388ad588c22b9e7fbdf1e573f5e2aed78d0aecb13902d1ab1b"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-turns-and-twists-320.png",
+      "bytes": 78444,
+      "sha256": "980dfff47d61bab8b2dde32fc6f43452c26a6059caf87a7abf5dfe1814dfae7d"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-turns-and-twists-390.png",
+      "bytes": 80225,
+      "sha256": "b761ff400ebbc191a2dbcee6362f4885dd8e31965577f0c928d4286018177ea4"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-wind-of-change-1280.png",
+      "bytes": 139769,
+      "sha256": "2a2c22aa12f56b0297c179150269d50038d4f7a61bcda4035b9f641c78a271b0"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-wind-of-change-320.png",
+      "bytes": 79952,
+      "sha256": "155f3ea77a7ce7bafad5b825e224825a44aba788c450cc113f71cd98051e2bea"
+    },
+    {
+      "name": "local-book-logo-qa/bookarazzi-result-wind-of-change-390.png",
+      "bytes": 82127,
+      "sha256": "8b354d7518f8324109abd170b67fe27fa3966e8faf0d70bb4d4eeb9b5b183439"
+    },
+    {
+      "name": "visual-review/bookarazzi-compare-390.png",
+      "bytes": 82052,
+      "sha256": "57b665b0679f29759e514f68eaa01b32e34a1d28d3b354ebb8eea66cb7e8e677"
+    },
+    {
+      "name": "visual-review/bookarazzi-photos-review.jpg",
+      "bytes": 68988,
+      "sha256": "b314955775fe7d6e069d5af79316a9c60fcba41a175c7592e8d0b5b72abc8a68"
+    },
+    {
+      "name": "visual-review/bookarazzi-question-1-390.png",
+      "bytes": 265755,
+      "sha256": "b8fc0b2a306e77970d5c17abee725e25115e40f9150fdc21a2855007dc03e5b6"
+    },
+    {
+      "name": "visual-review/bookarazzi-result-wind-of-change-390.png",
+      "bytes": 82127,
+      "sha256": "8b354d7518f8324109abd170b67fe27fa3966e8faf0d70bb4d4eeb9b5b183439"
+    },
+    {
+      "name": "visual-review/bookarazzi-vsetky-vysledky-1280.png",
+      "bytes": 180139,
+      "sha256": "7f3c66a25d6d5715e51cfa067765bf53eaa319b8b58213f222c95a5db5ed7832"
+    },
+    {
+      "name": "visual-review/bookarazzi-vsetky-vysledky-320.png",
+      "bytes": 247484,
+      "sha256": "e9e221703db9e6ac766cbe94e8f544028f81b18e46ee391107c77ee32246c622"
+    },
+    {
+      "name": "visual-review/bookarazzi-vsetky-vysledky-390.png",
+      "bytes": 241010,
+      "sha256": "a0023fc9fee9b81829d5151898ead1d2cca222cfd8d37021e7e2888a7c21b7c0"
+    }
+  ]
+}

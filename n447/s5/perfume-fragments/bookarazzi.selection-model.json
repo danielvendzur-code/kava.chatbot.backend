@@ -1,0 +1,52 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aká vôňa je vám blízka?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy, kvety a ovocie",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "wind-of-change",
+          "label": "Citrusy, levanduľa a morské tóny",
+          "productId": "wind-of-change",
+          "sourceUrl": "https://bookarazzi.sk/produkt/wind-of-change/"
+        },
+        {
+          "value": "turns-and-twists",
+          "label": "Brusnica, jazmín a ruža",
+          "productId": "turns-and-twists",
+          "sourceUrl": "https://bookarazzi.sk/produkt/turns-and-twists/"
+        }
+      ]
+    },
+    {
+      "value": "spice",
+      "label": "Korenie, vanilka a ambra",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "the-final-chapter",
+          "label": "Tabak, vanilka a dreviny",
+          "productId": "the-final-chapter",
+          "sourceUrl": "https://bookarazzi.sk/produkt/the-final-chapter/"
+        },
+        {
+          "value": "dialogue",
+          "label": "Ružové korenie a šalvia",
+          "productId": "dialogue",
+          "sourceUrl": "https://bookarazzi.sk/produkt/dialogue/"
+        },
+        {
+          "value": "bestseller",
+          "label": "Škorica, vanilka a santal",
+          "productId": "bestseller",
+          "sourceUrl": "https://bookarazzi.sk/produkt/bestseller/"
+        }
+      ]
+    }
+  ]
+}

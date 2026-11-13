@@ -1,0 +1,421 @@
+[
+  {
+    "slug": "hypno",
+    "mode": "question",
+    "url": "https://www.mojehypno.sk/hypno-fatria-damsky-parfum-50ml/",
+    "at": "2026-11-13T17:12:05.843473+00:00",
+    "cookieAction": "Odmietnuť",
+    "tlsVerification": true,
+    "scope": "OwnactualautomatedWPEWebKit; nonGET/cartrequestsblocked; noforms/messages/cart/captchaactions; notreservation/demoliveQA",
+    "formLabels": [
+      "E-mail",
+      "Heslo",
+      "Surname",
+      "\n        Množstvo\n        \n    ",
+      "Meno",
+      "Surname",
+      "E-mail",
+      "Komentár",
+      "\n                \n            ",
+      "\n                \n            ",
+      "\n                \n            ",
+      "\n                \n            ",
+      "\n                \n            ",
+      "Odpíšte text z obrázka",
+      "Surname",
+      "Email",
+      "Odpíšte text z obrázka",
+      "Váš e-mail",
+      "Surname",
+      "Telefón",
+      "Správa",
+      "Odpíšte text z obrázka"
+    ],
+    "inputs": [
+      {
+        "type": "hidden",
+        "name": "referer",
+        "placeholder": ""
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "placeholder": ""
+      },
+      {
+        "type": "password",
+        "name": "password",
+        "placeholder": ""
+      },
+      {
+        "type": "text",
+        "name": "surname",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "language",
+        "placeholder": ""
+      },
+      {
+        "type": "search",
+        "name": "string",
+        "placeholder": "Napíšte, čo hľadáte"
+      },
+      {
+        "type": "hidden",
+        "name": "productId",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "priceId",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "language",
+        "placeholder": ""
+      },
+      {
+        "type": "number",
+        "name": "amount",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "productId",
+        "placeholder": ""
+      },
+      {
+        "type": "text",
+        "name": "fullName",
+        "placeholder": ""
+      },
+      {
+        "type": "text",
+        "name": "surname",
+        "placeholder": ""
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "placeholder": ""
+      },
+      {
+        "type": "textarea",
+        "name": "description",
+        "placeholder": ""
+      },
+      {
+        "type": "radio",
+        "name": "score",
+        "placeholder": ""
+      },
+      {
+        "type": "radio",
+        "name": "score",
+        "placeholder": ""
+      },
+      {
+        "type": "radio",
+        "name": "score",
+        "placeholder": ""
+      },
+      {
+        "type": "radio",
+        "name": "score",
+        "placeholder": ""
+      },
+      {
+        "type": "radio",
+        "name": "score",
+        "placeholder": ""
+      },
+      {
+        "type": "text",
+        "name": "captcha",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "consents[]",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "language",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "priceId",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "productId",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "amount",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "language",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "priceId",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "productId",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "amount",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "language",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "priceId",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "productId",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "amount",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "language",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "priceId",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "productId",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "amount",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "formId",
+        "placeholder": ""
+      },
+      {
+        "type": "text",
+        "name": "surname",
+        "placeholder": ""
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "placeholder": "Tvoj e-mail"
+      },
+      {
+        "type": "text",
+        "name": "captcha",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "consents[]",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "formId",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "productId",
+        "placeholder": ""
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "placeholder": ""
+      },
+      {
+        "type": "text",
+        "name": "surname",
+        "placeholder": ""
+      },
+      {
+        "type": "text",
+        "name": "phone",
+        "placeholder": ""
+      },
+      {
+        "type": "textarea",
+        "name": "message",
+        "placeholder": ""
+      },
+      {
+        "type": "text",
+        "name": "captcha",
+        "placeholder": ""
+      },
+      {
+        "type": "hidden",
+        "name": "consents[]",
+        "placeholder": ""
+      }
+    ],
+    "status": 200,
+    "title": "Hypno Fatria dámsky parfum 50ml | Moje Hypno",
+    "text": "Prejsť na obsah\nZľava 10 % po prihlásení na odber noviniek.\nZískať zľavu\n×\nNákupný košík\nPrázdny košík\nPánske parfumy\nDámske parfumy\nUnisex parfumy\nVzorky parfumov\nVýhodné sety\nDarčeky\nDomov / Dámske parfumy / Hypno Fatria dámsky parfum 50ml\nHypno Fatria dámsky parfum 50ml\nPriemerné hodnotenie produktu je 0,0 z 5 hviezdičiek.\nNeohodnotené\nPodrobnosti hodnotenia\n\nHypno Fatria je vôňa, ktorá spája jemnosť, zmyselnosť a modernú eleganciu v prirodzene vyváženom celku. Pôsobí ticho, no sebaisto. Nepotrebuje na seba upozorňovať – stačí jej byť prítomná.\n\nObklopí ťa pocitom tepla a blízkosti, ktorý sa neusiluje ohúriť, ale zostať. Je pre chvíle, keď chceš byť sama sebou – bez pózy, bez tlaku, bez potreby niečo dokazovať. Fatria sa prispôsobí tebe, nie naopak.\n\nMôžeme doručiť do:\t19.11.2026\n€79,90\nJednotková cena: €79,90 / 1 ks\nMnožstvo\nDo košíka\nTlač\nOpýtať sa\nZdieľať\nZAVRIEŤ\nNOVINKA\nEXTRAIT DE PARFUM\nBezpečná platba\nCez platobnú bránu\nBezplatné vrátenie\nDo 14 dní od doručenia\nDoprava zdarma\nObjednávky nad 100€\nRýchle doručenie\n2-3 pracovné dni\nPopis\nHodnotenie\n\nZloženie vône\nHlava: jablko, mandle, zázvor\nSrdce: tonkové bôby, heliotrop, jazmín, konvalinka\nZáklad: pižmo, ambra\n\nÚvod patrí ovocnej sviežosti jablka, ktorú zjemňuje mandľová krémovosť a nenápadná pikantnosť zázvoru. Postupne sa vôňa usádza do hebkého kvetinového srdca, kde sa jemnosť jazmínu a konvalinky spája s hrejivým charakterom tonkových bôbov. Záver je pokojný, čistý a hrejivý vďaka pižmu a ambre.\n\nCharakter vône\n\nFatria je Extrait de Parfum s 25 % koncentráciou vonných esencií. Vôňa, ktorá zostáva blízko pokožky a vytvára osobný, nenútený dojem.\n\nVhodná príležitosť\n\nHodí sa na každý deň aj na tichšie večerné chvíle. Vynikne počas celého roka, prirodzene však zapadne najmä do jesenného a zimného obdobia, keď jej hrejivé tóny pôsobia obzvlášť príjemne.\n\nOdporúčania na použitie\n\nAplikuj parfum na pulzné body – zápästia, krk, za uši alebo vnútornú stranu lakťov. Vysoká koncentrácia znamená, že postačí malé množstvo. Pre jemnejší efekt je možné parfum naniesť aj na oblečenie alebo vlasy.\n\n \n\nDostupné aj vo výhodných setoch\nExtrait de Parfum set parfémov (3×)\n€239,70\n€199\nUnisex set parfémov Extrait de Parfum\n€139,80\n€119\nSet parfémov Extrait de Parfum pre ženu a muža\n€159,80\n€139\nSúvisiaci tovar\nHypno Fatria vzorka 2ml\n€3,90\nJednotková cena: €3,90 / 1 ks\nPodobné produkty\nNOVINKA\nEXTRAIT DE PARFUM\nHypno Tatrion pánsky parfum 50ml\n€79,90\nJednotková cena: €79,90 / 1 ks\nNOVINKA\nEXTRAIT DE PARFUM\nHypno Betlior unisex parfum 50ml\n€79,90\nJednotková cena: €79,90 / 1 ks\nNOVINKA\nEXTRAIT DE PARFUM\nHypno Vahrin unisex parfum 50ml\n€79,90\nJednotková cena: €79,90 / 1 ks\nZápätie\nNevypĺňajte toto poleSurname\nEmail\nBezpečnostná kontrola\n\nOdpíšte text z obrázka\n\nVložením e-mailu súhlasíte s podmienkami ochrany osobných údajov\n\nPrihlásiť sa\nInformácie\nDoprava a platba\nReklamácia / Výmena / Odstúpenie od zmluvy\nAko nakupovať\nČasto kladené otázky\nVšeobecné obchodné podmienky\nPodmienky ochrany osobných údajov\nPodmienky súťaží\nKontakty\nO nás\nČlánky\nPrečo je dôležitý pôvod vôní v našom živote?\nHistória parfumov: Ako sa vyvíjal svet vôní?\nKariéra v Hypno\nPrečo sme zmenili naše logo?\nKontakt\n info@mojehypno.sk\n +421 944 076 261\n Copyright 2026 Moje Hypno. Všetky práva vyhradené.\nRECENZIE GOOGLE\n4.9\n32 recenzií\nZavrieť",
+    "buttons": [
+      "Prihlásiť sa",
+      "Prihlásenie",
+      "Hľadať",
+      "\n            +\n    ",
+      "\n            −\n    ",
+      "Do košíka",
+      "☰",
+      "Pridať hodnotenie",
+      "Odoslať hodnotenie",
+      "Do košíka",
+      "Do košíka",
+      "Do košíka",
+      "Do košíka",
+      "Prihlásiť sa",
+      "✕",
+      "Odoslať",
+      "",
+      "",
+      "",
+      "Zavrieť"
+    ],
+    "iframes": [
+      {
+        "src": "https://platform.twitter.com/widgets/tweet_button.1227a5674072e080ffb1ba14ac0c1079.sk.html#dnt=false&id=twitter-widget-0&lang=sk&original_referer=https%3A%2F%2Fwww.mojehypno.sk%2Fhypno-fatria-damsky-parfum-50ml%2F&size=m&text=Hypno%20Fatria%20d%C3%A1msky%20parfum%2050ml%20%7C%20Moje%20Hypno&time=1794589931263&type=share&url=https%3A%2F%2Fwww.mojehypno.sk%2Fhypno-fatria-damsky-parfum-50ml%2F",
+        "title": "X Post Button"
+      },
+      {
+        "src": "https://www.facebook.com/v24.0/plugins/share_button.php?app_id=&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df7dd952b785b16aea%26domain%3Dwww.mojehypno.sk%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.mojehypno.sk%252Fff1555367dde2d8ed%26relation%3Dparent.parent&container_width=0&href=https%3A%2F%2Fwww.mojehypno.sk%2Fhypno-fatria-damsky-parfum-50ml%2F&layout=button&locale=sk_SK&sdk=joey",
+        "title": "fb:share_button Facebook Social Plugin"
+      },
+      {
+        "src": "https://platform.twitter.com/widgets/widget_iframe.1227a5674072e080ffb1ba14ac0c1079.html?origin=https%3A%2F%2Fwww.mojehypno.sk",
+        "title": "Twitter settings iframe"
+      },
+      {
+        "src": "",
+        "title": "Twitter analytics iframe"
+      }
+    ],
+    "images": [
+      {
+        "src": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/logos/logo_hypno_png.png",
+        "alt": "Moje Hypno",
+        "loaded": true,
+        "width": 3840,
+        "height": 948
+      },
+      {
+        "src": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/shop/big/100_fatria.png?ff=1&x=1024&y=768&q=85&ts=693daff3&sg=161563f2",
+        "alt": "fatria",
+        "loaded": true,
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "src": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/banners/brand-icon-bezpecna-platba.png?698c966a",
+        "alt": "Bezpečná platba",
+        "loaded": true,
+        "width": 100,
+        "height": 100
+      },
+      {
+        "src": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/banners/brand-icon-vratenie.png?698c95e4",
+        "alt": "Bezplatné vrátenie",
+        "loaded": true,
+        "width": 100,
+        "height": 100
+      },
+      {
+        "src": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/banners/brand-icon-doprava-zadarmo.png?698c9594",
+        "alt": "Doprava zdarma",
+        "loaded": true,
+        "width": 100,
+        "height": 100
+      },
+      {
+        "src": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/banners/brand-icon-rychle-dorucenie.png?698c96bb",
+        "alt": "Rýchle doručenie",
+        "loaded": true,
+        "width": 100,
+        "height": 100
+      },
+      {
+        "src": "https://google-reviews-prod.eu-central-1.linodeobjects.com/0o197dmmaxlcgfg3z4x2qaw3n2gs",
+        "alt": "logo",
+        "loaded": true,
+        "width": 833,
+        "height": 204
+      },
+      {
+        "src": "https://reviews.shopstack.eu/1.svg",
+        "alt": "",
+        "loaded": true,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "src": "https://reviews.shopstack.eu/1.svg",
+        "alt": "",
+        "loaded": true,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "src": "https://reviews.shopstack.eu/1.svg",
+        "alt": "",
+        "loaded": true,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "src": "https://reviews.shopstack.eu/1.svg",
+        "alt": "",
+        "loaded": true,
+        "width": 16,
+        "height": 16
+      },
+      {
+        "src": "https://reviews.shopstack.eu/1.svg",
+        "alt": "",
+        "loaded": true,
+        "width": 16,
+        "height": 16
+      }
+    ]
+  }
+]

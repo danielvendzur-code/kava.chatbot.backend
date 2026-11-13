@@ -1,0 +1,122 @@
+[
+  {
+    "url": "https://www.registeruz.sk/cruz-public/api/uctovna-zavierka?id=7017225",
+    "at": "2026-11-13T16:57:03.712927+00:00",
+    "data": {
+      "id": 7017225,
+      "datumZostaveniaK": "2025-12-31",
+      "idUJ": 1764249,
+      "idUctovnychVykazov": [
+        10321367
+      ],
+      "zdrojDat": "FRSR",
+      "datumPoslednejUpravy": "2026-07-02",
+      "typ": "Riadna",
+      "obdobieOd": "2025-01",
+      "datumZostavenia": "2026-06-26",
+      "obdobieDo": "2025-12",
+      "datumPodania": "2026-06-30"
+    }
+  },
+  {
+    "url": "https://api.statistics.sk/rpo/v1/search?identifier=51218399",
+    "at": "2026-11-13T16:57:03.714447+00:00",
+    "data": {
+      "results": [
+        {
+          "id": 9387156,
+          "dbModificationDate": "2025-10-17",
+          "identifiers": [
+            {
+              "value": "51218399",
+              "validFrom": "2017-12-12"
+            }
+          ],
+          "fullNames": [
+            {
+              "value": "Molto Bello Due s. r. o.",
+              "validFrom": "2017-12-12",
+              "validTo": "2023-03-02"
+            },
+            {
+              "value": "Mooni s. r. o.",
+              "validFrom": "2023-03-03"
+            }
+          ],
+          "addresses": [
+            {
+              "validFrom": "2021-04-20",
+              "street": "Záporožská",
+              "regNumber": 0,
+              "buildingNumber": "7",
+              "postalCodes": [
+                "85101"
+              ],
+              "municipality": {
+                "value": "Bratislava - mestská časť Petržalka",
+                "code": "SK0105529460",
+                "codelistCode": "CL000025"
+              },
+              "country": {
+                "value": "Slovenská republika",
+                "code": "703",
+                "codelistCode": "CL000086"
+              }
+            },
+            {
+              "validFrom": "2017-12-12",
+              "validTo": "2021-04-19",
+              "street": "Karpatské námestie",
+              "regNumber": 0,
+              "buildingNumber": "10A",
+              "postalCodes": [
+                "83106"
+              ],
+              "municipality": {
+                "value": "Bratislava - mestská časť Rača",
+                "code": "SK0103529354",
+                "codelistCode": "CL000025"
+              },
+              "country": {
+                "value": "Slovenská republika",
+                "code": "703",
+                "codelistCode": "CL000086"
+              }
+            }
+          ],
+          "establishment": "2017-12-12",
+          "sourceRegister": {
+            "value": {
+              "value": "Obchodný register",
+              "code": "1",
+              "codelistCode": "CL010112"
+            },
+            "registrationOffices": [
+              {
+                "value": "Mestský súd Bratislava III",
+                "validFrom": "2017-12-12"
+              }
+            ],
+            "registrationNumbers": [
+              {
+                "value": "Sro/124536/B",
+                "validFrom": "2017-12-12"
+              }
+            ]
+          }
+        }
+      ],
+      "license": "1. ŠÚ SR ako správca informačného systému RPO uplatňuje na použitie sprístupnených údajov z RPO uvedených v § 7 ods. 2 a § 7a ods. 4 zákona č. 272/2015 Z. z. o registri právnických osôb, podnikateľov a orgánov verejnej moci a o zmene a doplnení niektorých zákonov (ďalej len „zákon o registri právnických osôb“) medzinárodnú verejnú licenciu Creative Commons Attribution License (cc-by) 4.0 (ďalej len „verejná licencia“).\n2. Predmetom verejnej licencie sú sprístupnené údaje z RPO prostredníctvom webového sídla ŠÚ SR v zmysle § 7 ods. 2 a § 7a ods. 4 zákona o registri právnických osôb.\n3. ŠÚ SR udeľuje súhlas na použitie predmetu verejnej licencie a výkon licencovaných práv („licencia“) podľa vyššie citovanej verejnej licencie."
+    }
+  },
+  {
+    "url": "https://www.registeruz.sk/cruz-public/api/uctovne-jednotky?ico=51218399&zmenene-od=2000-01-01",
+    "at": "2026-11-13T16:57:03.716425+00:00",
+    "data": {
+      "id": [
+        1737631
+      ],
+      "existujeDalsieId": false
+    }
+  }
+]

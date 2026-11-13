@@ -1,0 +1,210 @@
+{
+  "slug": "bookarazzi",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "5dc5be907738007f93f8375b8e5a129f26459d77",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/bookarazzi.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Citrusy a levanduľa",
+    "Brusnica a jazmín",
+    "Tabak a vanilka",
+    "Porovnať dve vône"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Citrusy a levanduľa",
+      "match": "citrus.*levand",
+      "productIds": [
+        "wind-of-change"
+      ]
+    },
+    {
+      "chip": "Brusnica a jazmín",
+      "match": "brusnica.*jazmin",
+      "productIds": [
+        "turns-and-twists"
+      ]
+    },
+    {
+      "chip": "Tabak a vanilka",
+      "match": "tabak.*vanilka",
+      "productIds": [
+        "the-final-chapter"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "wind-of-change",
+    "the-final-chapter"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "Separate2ml/3mlsampleSKU not falselydeclared sameparentvariant orShopifyevidence; no exact smallpackphoto/supplementcontract established."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Bookarazzi",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/bookarazzi/logo.svg",
+      "header": "/assets/s5/bookarazzi/logo.svg",
+      "avatar": "/assets/s5/bookarazzi/avatar.png"
+    },
+    "brand": {
+      "name": "Bookarazzi",
+      "domain": "bookarazzi.sk",
+      "website": "https://www.bookarazzi.sk/",
+      "lang": "sk",
+      "fullName": "Bookarazzi",
+      "url": "https://www.bookarazzi.sk/",
+      "logo": "/assets/s5/bookarazzi/logo.svg",
+      "mark": "/assets/s5/bookarazzi/avatar.png",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône Bookarazzi, ich tóny, balenia a ceny.",
+      "quickChips": [
+        "Citrusy a levanduľa",
+        "Brusnica a jazmín",
+        "Tabak a vanilka",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#101e28",
+        "accent": "#85582d",
+        "soft": "#faf6ee",
+        "paper": "#ffffff",
+        "ink": "#17232b",
+        "line": "#e5ddd0"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, kvety a ovocie",
+        "",
+        "Citrusy, kvety a ovocie",
+        ""
+      ],
+      "wind-of-change": [
+        "Citrusy, levanduľa a morské tóny",
+        "",
+        "Citrusy, levanduľa a morské tóny",
+        ""
+      ],
+      "turns-and-twists": [
+        "Brusnica, jazmín a ruža",
+        "",
+        "Brusnica, jazmín a ruža",
+        ""
+      ],
+      "spice": [
+        "Korenie, vanilka a ambra",
+        "",
+        "Korenie, vanilka a ambra",
+        ""
+      ],
+      "the-final-chapter": [
+        "Tabak, vanilka a dreviny",
+        "",
+        "Tabak, vanilka a dreviny",
+        ""
+      ],
+      "dialogue": [
+        "Ružové korenie a šalvia",
+        "",
+        "Ružové korenie a šalvia",
+        ""
+      ],
+      "bestseller": [
+        "Škorica, vanilka a santal",
+        "",
+        "Škorica, vanilka a santal",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "wind-of-change": [
+        "/assets/s5/bookarazzi/wind-of-change.jpg"
+      ],
+      "turns-and-twists": [
+        "/assets/s5/bookarazzi/turns-and-twists.jpg"
+      ],
+      "spice": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "the-final-chapter": [
+        "/assets/s5/bookarazzi/the-final-chapter.jpg"
+      ],
+      "dialogue": [
+        "/assets/s5/bookarazzi/dialogue.jpg"
+      ],
+      "bestseller": [
+        "/assets/s5/bookarazzi/bestseller.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "wind-of-change",
+      "the-final-chapter"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétna vôňa · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu podľa jeho vkusu.",
+      "lead": "Výber ukáže konkrétnu vôňu Bookarazzi s fotografiou, profilom tónov, presným balením, cenou a odkazom. Dve odlišné vône možno porovnať.",
+      "includedChat": "Vonné tóny, konkrétne balenia, ceny a porovnanie vybraných vôní.",
+      "includedAdvisor": "Výber vône, jej profil a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône Bookarazzi, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "bookarazzi-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "wind-of-change": "turns-and-twists",
+        "turns-and-twists": "wind-of-change",
+        "the-final-chapter": "dialogue",
+        "dialogue": "bestseller",
+        "bestseller": "the-final-chapter"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

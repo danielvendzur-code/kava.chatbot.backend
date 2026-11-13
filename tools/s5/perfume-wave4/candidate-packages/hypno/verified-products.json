@@ -1,0 +1,423 @@
+{
+  "brand": "Moje Hypno",
+  "domain": "mojehypno.sk",
+  "operator": {
+    "name": "Hypno, s.r.o.",
+    "ico": "51654598",
+    "country": "SK"
+  },
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "sk",
+  "country": "SK",
+  "currency": "EUR",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "products": [
+    {
+      "id": "tatrion",
+      "name": "Hypno Tatrion",
+      "url": "https://www.mojehypno.sk/hypno-tatrion-pansky-parfum-50ml/",
+      "priceAmount": 79.9,
+      "price": "79,90 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Extrait de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Bergamot, citrón a škorica.",
+      "reason": "Bergamot, citrón a škorica.",
+      "photo": "/assets/s5/hypno/hypno-tatrion-pansky-parfum-50ml.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.mojehypno.sk/hypno-tatrion-pansky-parfum-50ml/",
+        "verifiedAt": "2026-11-13T17:02:27.598609+00:00",
+        "sourceSha256": "02b13ce8105f910a7f2f9115935ccac6d0b7aee835bf06c589953c8b69d6b714",
+        "stock": "InStock",
+        "stockEvidence": {
+          "publicProductCode": "100",
+          "publishedQuantity": "> 5",
+          "scope": "OfficialShoptetexact single50mlSKU publishesquantity>5; positivepublisherstockdeclaration, not inferredfromcartbutton andnot independently auditedwarehousequantity."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 79.9,
+          "currency": "EUR",
+          "vatEvidence": "Officialconsumerterms: totalconsumerpriceincludesVAT andrelatedcharges, deliveryseparate.",
+          "vatSource": "https://www.mojehypno.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Hypno Tatrion pánsky parfum 50ml",
+          "scope": "Fixed50mlsingleSKU/hasVariantsfalse, matchingmainproductprice, not2mlsample orset."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/shop/big/103_tatrion.png?ff=1&x=1024&y=768&q=85&ts=693db01d&sg=161563f2",
+        "photoEvidence": {
+          "id": "hypno-tatrion-pansky-parfum-50ml",
+          "url": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/shop/big/103_tatrion.png?ff=1&x=1024&y=768&q=85&ts=693db01d&sg=161563f2",
+          "file": "hypno-tatrion-pansky-parfum-50ml.png",
+          "bytes": 327693,
+          "sha256": "cd023de12f7f7d0a45856d5721ed9d26e4c4c4850565e5c52a4157d655a5995b",
+          "width": 1024,
+          "height": 768,
+          "originalBytes": true,
+          "selectedPack": "50 ml",
+          "visualReview": "Officialoriginalbytes retained, packagingphotoforHypno or50mlbottlephotoforBookarazzi; no retouch/upscale/fakeoriginaldesignerphoto."
+        },
+        "scent": "Bergamot, citrón a škorica",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "tatrion"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.mojehypno.sk/hypno-tatrion-pansky-parfum-50ml/",
+          "sourceText": "Hlava: bergamot, citrón Srdce: kvetinové tóny, škorica Základ: drevité tóny, pižmo",
+          "navigationLabel": "Bergamot, citrón a škorica",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "bergamot",
+            "citrón",
+            "kvetinové tóny",
+            "škorica",
+            "drevité tóny",
+            "pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Extrait de Parfum",
+          "notesEvidence": {
+            "url": "https://www.mojehypno.sk/hypno-tatrion-pansky-parfum-50ml/",
+            "sourceText": "Hlava: bergamot, citrón; Srdce: kvetinové tóny, škorica; Základ: drevité tóny, pižmo",
+            "originalSourceText": "Hlava: bergamot, citrón Srdce: kvetinové tóny, škorica Základ: drevité tóny, pižmo",
+            "sourceLanguage": "sk",
+            "displayLanguage": "sk",
+            "scope": "Faithfulstructuredtranscription ofactualHlava/Srdce/Zakladnotes, raworiginalpreserved; no rewrittenhealth/intensity/occasion/lastingclaims."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "Nohealth/longevity/interest/salesguarantee or numericnoteweights.",
+          "No fabricatedpromotions/cart/shipping/integrations."
+        ]
+      }
+    },
+    {
+      "id": "vahrin",
+      "name": "Hypno Vahrin",
+      "url": "https://www.mojehypno.sk/hypno-vahrin-unisex-parfum-50ml/",
+      "priceAmount": 79.9,
+      "price": "79,90 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Extrait de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Grapefruit, ríbezle a vetiver.",
+      "reason": "Grapefruit, ríbezle a vetiver.",
+      "photo": "/assets/s5/hypno/hypno-vahrin-unisex-parfum-50ml.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.mojehypno.sk/hypno-vahrin-unisex-parfum-50ml/",
+        "verifiedAt": "2026-11-13T17:02:28.751202+00:00",
+        "sourceSha256": "3ee0c153ce87404677e7114bb9888cacf8905d742da2c606b938aa09117c072c",
+        "stock": "InStock",
+        "stockEvidence": {
+          "publicProductCode": "101",
+          "publishedQuantity": "> 5",
+          "scope": "OfficialShoptetexact single50mlSKU publishesquantity>5; positivepublisherstockdeclaration, not inferredfromcartbutton andnot independently auditedwarehousequantity."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 79.9,
+          "currency": "EUR",
+          "vatEvidence": "Officialconsumerterms: totalconsumerpriceincludesVAT andrelatedcharges, deliveryseparate.",
+          "vatSource": "https://www.mojehypno.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Hypno Vahrin unisex parfum 50ml",
+          "scope": "Fixed50mlsingleSKU/hasVariantsfalse, matchingmainproductprice, not2mlsample orset."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/shop/big/106_vahrin.png?ff=1&x=1024&y=768&q=85&ts=693db05f&sg=161563f2",
+        "photoEvidence": {
+          "id": "hypno-vahrin-unisex-parfum-50ml",
+          "url": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/shop/big/106_vahrin.png?ff=1&x=1024&y=768&q=85&ts=693db05f&sg=161563f2",
+          "file": "hypno-vahrin-unisex-parfum-50ml.png",
+          "bytes": 326301,
+          "sha256": "bd762d95be35a51826965cab26cb2f5b86d44e8e6badafe248b9059d2ac302a4",
+          "width": 1024,
+          "height": 768,
+          "originalBytes": true,
+          "selectedPack": "50 ml",
+          "visualReview": "Officialoriginalbytes retained, packagingphotoforHypno or50mlbottlephotoforBookarazzi; no retouch/upscale/fakeoriginaldesignerphoto."
+        },
+        "scent": "Grapefruit, ríbezle a vetiver",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "vahrin"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.mojehypno.sk/hypno-vahrin-unisex-parfum-50ml/",
+          "sourceText": "Hlava: grapefruit, citrón, čierne ríbezle Srdce: kosatec, cyklámen, jazmín Základ: pižmo, cédrové drevo, vetiver",
+          "navigationLabel": "Grapefruit, ríbezle a vetiver",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "grapefruit",
+            "citrón",
+            "čierne ríbezle",
+            "kosatec",
+            "cyklámen",
+            "jazmín",
+            "pižmo",
+            "cédrové drevo",
+            "vetiver"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Extrait de Parfum",
+          "notesEvidence": {
+            "url": "https://www.mojehypno.sk/hypno-vahrin-unisex-parfum-50ml/",
+            "sourceText": "Hlava: grapefruit, citrón, čierne ríbezle; Srdce: kosatec, cyklámen, jazmín; Základ: pižmo, cédrové drevo, vetiver",
+            "originalSourceText": "Hlava: grapefruit, citrón, čierne ríbezle Srdce: kosatec, cyklámen, jazmín Základ: pižmo, cédrové drevo, vetiver",
+            "sourceLanguage": "sk",
+            "displayLanguage": "sk",
+            "scope": "Faithfulstructuredtranscription ofactualHlava/Srdce/Zakladnotes, raworiginalpreserved; no rewrittenhealth/intensity/occasion/lastingclaims."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "Nohealth/longevity/interest/salesguarantee or numericnoteweights.",
+          "No fabricatedpromotions/cart/shipping/integrations."
+        ]
+      }
+    },
+    {
+      "id": "fatria",
+      "name": "Hypno Fatria",
+      "url": "https://www.mojehypno.sk/hypno-fatria-damsky-parfum-50ml/",
+      "priceAmount": 79.9,
+      "price": "79,90 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Extrait de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Jablko, mandle a jazmín.",
+      "reason": "Jablko, mandle a jazmín.",
+      "photo": "/assets/s5/hypno/hypno-fatria-damsky-parfum-50ml.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.mojehypno.sk/hypno-fatria-damsky-parfum-50ml/",
+        "verifiedAt": "2026-11-13T17:02:27.394232+00:00",
+        "sourceSha256": "2b8b3c7eec509b8aac7febe89ab6c9ac8a20a8a2356b484bdd1d6882a55d4c48",
+        "stock": "InStock",
+        "stockEvidence": {
+          "publicProductCode": "99",
+          "publishedQuantity": "> 5",
+          "scope": "OfficialShoptetexact single50mlSKU publishesquantity>5; positivepublisherstockdeclaration, not inferredfromcartbutton andnot independently auditedwarehousequantity."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 79.9,
+          "currency": "EUR",
+          "vatEvidence": "Officialconsumerterms: totalconsumerpriceincludesVAT andrelatedcharges, deliveryseparate.",
+          "vatSource": "https://www.mojehypno.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Hypno Fatria dámsky parfum 50ml",
+          "scope": "Fixed50mlsingleSKU/hasVariantsfalse, matchingmainproductprice, not2mlsample orset."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/shop/big/100_fatria.png?ff=1&x=1024&y=768&q=85&ts=693daff3&sg=161563f2",
+        "photoEvidence": {
+          "id": "hypno-fatria-damsky-parfum-50ml",
+          "url": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/shop/big/100_fatria.png?ff=1&x=1024&y=768&q=85&ts=693daff3&sg=161563f2",
+          "file": "hypno-fatria-damsky-parfum-50ml.png",
+          "bytes": 326476,
+          "sha256": "e1d5be1fa4ec7f615b47773b755824fb7f4e8d44901a0ea3aff005f0aaf27376",
+          "width": 1024,
+          "height": 768,
+          "originalBytes": true,
+          "selectedPack": "50 ml",
+          "visualReview": "Officialoriginalbytes retained, packagingphotoforHypno or50mlbottlephotoforBookarazzi; no retouch/upscale/fakeoriginaldesignerphoto."
+        },
+        "scent": "Jablko, mandle a jazmín",
+        "selectionTraits": {
+          "fragranceDirection": "flowers",
+          "fragranceProfile": "fatria"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.mojehypno.sk/hypno-fatria-damsky-parfum-50ml/",
+          "sourceText": "Hlava: jablko, mandle, zázvor Srdce: tonkové bôby, heliotrop, jazmín, konvalinka Základ: pižmo, ambra",
+          "navigationLabel": "Jablko, mandle a jazmín",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "jablko",
+            "mandle",
+            "zázvor",
+            "tonkové bôby",
+            "heliotrop",
+            "jazmín",
+            "konvalinka",
+            "pižmo",
+            "ambra"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Extrait de Parfum",
+          "notesEvidence": {
+            "url": "https://www.mojehypno.sk/hypno-fatria-damsky-parfum-50ml/",
+            "sourceText": "Hlava: jablko, mandle, zázvor; Srdce: tonkové bôby, heliotrop, jazmín, konvalinka; Základ: pižmo, ambra",
+            "originalSourceText": "Hlava: jablko, mandle, zázvor Srdce: tonkové bôby, heliotrop, jazmín, konvalinka Základ: pižmo, ambra",
+            "sourceLanguage": "sk",
+            "displayLanguage": "sk",
+            "scope": "Faithfulstructuredtranscription ofactualHlava/Srdce/Zakladnotes, raworiginalpreserved; no rewrittenhealth/intensity/occasion/lastingclaims."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "Nohealth/longevity/interest/salesguarantee or numericnoteweights.",
+          "No fabricatedpromotions/cart/shipping/integrations."
+        ]
+      }
+    },
+    {
+      "id": "betlior",
+      "name": "Hypno Betlior",
+      "url": "https://www.mojehypno.sk/hypno-betlior-unisex-parfum-50ml/",
+      "priceAmount": 79.9,
+      "price": "79,90 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Extrait de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Pomarančový kvet a kardamóm.",
+      "reason": "Pomarančový kvet a kardamóm.",
+      "photo": "/assets/s5/hypno/hypno-betlior-unisex-parfum-50ml.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.mojehypno.sk/hypno-betlior-unisex-parfum-50ml/",
+        "verifiedAt": "2026-11-13T17:02:27.615177+00:00",
+        "sourceSha256": "f169e086060dda2a8a925d84e4b6c0b5a9312f16a5d532fc0887543328a5c29c",
+        "stock": "InStock",
+        "stockEvidence": {
+          "publicProductCode": "102",
+          "publishedQuantity": "> 5",
+          "scope": "OfficialShoptetexact single50mlSKU publishesquantity>5; positivepublisherstockdeclaration, not inferredfromcartbutton andnot independently auditedwarehousequantity."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 79.9,
+          "currency": "EUR",
+          "vatEvidence": "Officialconsumerterms: totalconsumerpriceincludesVAT andrelatedcharges, deliveryseparate.",
+          "vatSource": "https://www.mojehypno.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Hypno Betlior unisex parfum 50ml",
+          "scope": "Fixed50mlsingleSKU/hasVariantsfalse, matchingmainproductprice, not2mlsample orset."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/shop/big/109_hypno-betlior-unisex-parfum-50ml.png?ff=1&x=1024&y=768&q=85&ts=693daf84&sg=161563f2",
+        "photoEvidence": {
+          "id": "hypno-betlior-unisex-parfum-50ml",
+          "url": "https://cdn.myshoptet.com/usr/www.mojehypno.sk/user/shop/big/109_hypno-betlior-unisex-parfum-50ml.png?ff=1&x=1024&y=768&q=85&ts=693daf84&sg=161563f2",
+          "file": "hypno-betlior-unisex-parfum-50ml.png",
+          "bytes": 319685,
+          "sha256": "730ba64f7f8cd944eec9b300c0cdd1208bedfd2fc4f39c5771e90e81272d343a",
+          "width": 1024,
+          "height": 768,
+          "originalBytes": true,
+          "selectedPack": "50 ml",
+          "visualReview": "Officialoriginalbytes retained, packagingphotoforHypno or50mlbottlephotoforBookarazzi; no retouch/upscale/fakeoriginaldesignerphoto."
+        },
+        "scent": "Pomarančový kvet a kardamóm",
+        "selectionTraits": {
+          "fragranceDirection": "flowers",
+          "fragranceProfile": "betlior"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.mojehypno.sk/hypno-betlior-unisex-parfum-50ml/",
+          "sourceText": "Hlava: Kvety pomaranča, jemné kvetinové tóny Srdce: Fialka, palina, kmín, kardamóm a levanduľa Základ: Drevité tóny, tonkové bôby a pižmo",
+          "navigationLabel": "Pomarančový kvet a kardamóm",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "Kvety pomaranča",
+            "jemné kvetinové tóny",
+            "Fialka",
+            "palina",
+            "kmín",
+            "kardamóm",
+            "levanduľa",
+            "Drevité tóny",
+            "tonkové bôby",
+            "pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Extrait de Parfum",
+          "notesEvidence": {
+            "url": "https://www.mojehypno.sk/hypno-betlior-unisex-parfum-50ml/",
+            "sourceText": "Hlava: Kvety pomaranča, jemné kvetinové tóny; Srdce: Fialka, palina, kmín, kardamóm a levanduľa; Základ: Drevité tóny, tonkové bôby a pižmo",
+            "originalSourceText": "Hlava: Kvety pomaranča, jemné kvetinové tóny Srdce: Fialka, palina, kmín, kardamóm a levanduľa Základ: Drevité tóny, tonkové bôby a pižmo",
+            "sourceLanguage": "sk",
+            "displayLanguage": "sk",
+            "scope": "Faithfulstructuredtranscription ofactualHlava/Srdce/Zakladnotes, raworiginalpreserved; no rewrittenhealth/intensity/occasion/lastingclaims."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "Nohealth/longevity/interest/salesguarantee or numericnoteweights.",
+          "No fabricatedpromotions/cart/shipping/integrations."
+        ]
+      }
+    }
+  ],
+  "revenue": {
+    "year": 2025,
+    "netTurnover": 126622,
+    "salesGoods": 126622,
+    "currency": "EUR",
+    "source": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10321367",
+    "unitSource": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12825897",
+    "qualification": "OfficialPODrow01netturnoverandrow03goods, full2025wholeEURPDFheader; no profit/assets inference."
+  },
+  "size": "UNKNOWN",
+  "interest": "NOT_ESTABLISHED",
+  "notes": [
+    "Selected4newHypnocompositionsor5Bookarazzicompositions only; sizes/samples/sets/photos not extraformulas.",
+    "Ownactualhome/productrejected-cookies session: no productadvisor/chatlauncherobserved; othermodesunknown. Merchantlivepreflight isnotdemoliveQA.",
+    "No separatelyverifiedcompatibleaddon/packphotocontract enabled. Distinctformula alternatives andcomparison only."
+  ]
+}

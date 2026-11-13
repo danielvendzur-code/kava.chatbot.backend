@@ -1,0 +1,499 @@
+{
+  "brand": "Bookarazzi",
+  "domain": "bookarazzi.sk",
+  "operator": {
+    "name": "Mooni s. r. o.",
+    "ico": "51218399",
+    "country": "SK",
+    "legacyName": "Molto Bello Due s. r. o."
+  },
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "sk",
+  "country": "SK",
+  "currency": "EUR",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "products": [
+    {
+      "id": "wind-of-change",
+      "name": "Bookarazzi Wind of Change",
+      "url": "https://bookarazzi.sk/produkt/wind-of-change/",
+      "priceAmount": 89.0,
+      "price": "89,00 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Citrusy, levanduľa a morské tóny.",
+      "reason": "Citrusy, levanduľa a morské tóny.",
+      "photo": "/assets/s5/bookarazzi/wind-of-change.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://bookarazzi.sk/produkt/wind-of-change/",
+        "verifiedAt": "2026-11-13T17:02:30.688013+00:00",
+        "sourceSha256": "4a7412683a7a5175ce28d388132e8593e4b4cb6c18fb47e7f0579eda5047309a",
+        "stock": "InStock",
+        "stockEvidence": {
+          "jsonLdAvailability": "https://schema.org/InStock",
+          "visible": "Na sklade",
+          "scope": "Exact50mlproduct offer and visibledefault50ml/price/in-stock state;3mlsampleshave separateproductURLs."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 89.0,
+          "currency": "EUR",
+          "vatEvidence": "ExactpublicProductOffer priceSpecification.valueAddedTaxIncluded=true; consumerterms confirm VATincluded.",
+          "vatSource": "https://www.bookarazzi.sk/vseobecne-obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Current50mlbutton links tothisexactproductURL;3mlbuttonlinks to separatevzorkaSKU.",
+          "sourceUrl": "https://bookarazzi.sk/produkt/wind-of-change/"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://bookarazzi.sk/app/uploads/2026/09/wind-of-change-1.jpg",
+        "photoEvidence": {
+          "id": "wind-of-change",
+          "url": "https://bookarazzi.sk/app/uploads/2026/09/wind-of-change-1.jpg",
+          "file": "wind-of-change.jpg",
+          "bytes": 129910,
+          "sha256": "6345371af011cdb9363031831b1c318bf83109268367625eb56e8b9ee4a4ee43",
+          "width": 1458,
+          "height": 1667,
+          "originalBytes": true,
+          "selectedPack": "50 ml",
+          "visualReview": "Officialoriginalbytes retained, packagingphotoforHypno or50mlbottlephotoforBookarazzi; no retouch/upscale/fakeoriginaldesignerphoto."
+        },
+        "scent": "Citrón, Levanduľa, Morské tóny, Dreviny",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "wind-of-change"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://bookarazzi.sk/produkt/wind-of-change/",
+          "sourceText": "Citrón • Levanduľa • Morské tóny • Dreviny",
+          "navigationLabel": "Citrusy, levanduľa a morské tóny",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "Citrón",
+            "Levanduľa",
+            "Morské tóny",
+            "Dreviny"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum",
+          "notesEvidence": {
+            "url": "https://bookarazzi.sk/produkt/wind-of-change/",
+            "sourceText": "Citrón • Levanduľa • Morské tóny • Dreviny",
+            "sourceLanguage": "sk",
+            "displayLanguage": "sk",
+            "scope": "Completeofficialflat note list only. Nohead/heart/base, quantitativeweights/intensity/occasion invented."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "Nohealth/longevity/interest/salesguarantee or numericnoteweights.",
+          "No fabricatedpromotions/cart/shipping/integrations."
+        ]
+      }
+    },
+    {
+      "id": "turns-and-twists",
+      "name": "Bookarazzi Turns & Twists",
+      "url": "https://bookarazzi.sk/produkt/turns-and-twists/",
+      "priceAmount": 89.0,
+      "price": "89,00 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Brusnica, jazmín a ruža.",
+      "reason": "Brusnica, jazmín a ruža.",
+      "photo": "/assets/s5/bookarazzi/turns-and-twists.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://bookarazzi.sk/produkt/turns-and-twists/",
+        "verifiedAt": "2026-11-13T17:04:10.707592+00:00",
+        "sourceSha256": "a2ab0eb4e8c0822439e70139ead203628f7289d23807defd2b0c1b8d348ddb64",
+        "stock": "InStock",
+        "stockEvidence": {
+          "jsonLdAvailability": "https://schema.org/InStock",
+          "visible": "Na sklade",
+          "scope": "Exact50mlproduct offer and visibledefault50ml/price/in-stock state;3mlsampleshave separateproductURLs."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 89.0,
+          "currency": "EUR",
+          "vatEvidence": "ExactpublicProductOffer priceSpecification.valueAddedTaxIncluded=true; consumerterms confirm VATincluded.",
+          "vatSource": "https://www.bookarazzi.sk/vseobecne-obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Current50mlbutton links tothisexactproductURL;3mlbuttonlinks to separatevzorkaSKU.",
+          "sourceUrl": "https://bookarazzi.sk/produkt/turns-and-twists/"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://bookarazzi.sk/app/uploads/2026/09/turns-and-twists-1.jpg",
+        "photoEvidence": {
+          "id": "turns-and-twists",
+          "url": "https://bookarazzi.sk/app/uploads/2026/09/turns-and-twists-1.jpg",
+          "file": "turns-and-twists.jpg",
+          "bytes": 134895,
+          "sha256": "ff3a0fba374c3e99a57ed9b8053d473138b15ba3b21a8b2f59bb0f406b9e987d",
+          "width": 1458,
+          "height": 1667,
+          "originalBytes": true,
+          "selectedPack": "50 ml",
+          "visualReview": "Officialoriginalbytes retained, packagingphotoforHypno or50mlbottlephotoforBookarazzi; no retouch/upscale/fakeoriginaldesignerphoto."
+        },
+        "scent": "Brusnica, Jazmín, Ruža, Santalové drevo",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "turns-and-twists"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://bookarazzi.sk/produkt/turns-and-twists/",
+          "sourceText": "Brusnica • Jazmín • Ruža • Santalové drevo",
+          "navigationLabel": "Brusnica, jazmín a ruža",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "Brusnica",
+            "Jazmín",
+            "Ruža",
+            "Santalové drevo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum",
+          "notesEvidence": {
+            "url": "https://bookarazzi.sk/produkt/turns-and-twists/",
+            "sourceText": "Brusnica • Jazmín • Ruža • Santalové drevo",
+            "sourceLanguage": "sk",
+            "displayLanguage": "sk",
+            "scope": "Completeofficialflat note list only. Nohead/heart/base, quantitativeweights/intensity/occasion invented."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "Nohealth/longevity/interest/salesguarantee or numericnoteweights.",
+          "No fabricatedpromotions/cart/shipping/integrations."
+        ]
+      }
+    },
+    {
+      "id": "the-final-chapter",
+      "name": "Bookarazzi The Final Chapter",
+      "url": "https://bookarazzi.sk/produkt/the-final-chapter/",
+      "priceAmount": 89.0,
+      "price": "89,00 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Tabak, vanilka a dreviny.",
+      "reason": "Tabak, vanilka a dreviny.",
+      "photo": "/assets/s5/bookarazzi/the-final-chapter.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://bookarazzi.sk/produkt/the-final-chapter/",
+        "verifiedAt": "2026-11-13T17:02:30.979738+00:00",
+        "sourceSha256": "e506b5b5bcecca002cdc4e7318a41049e2f08a4ce24a41b1d8945774fc93707c",
+        "stock": "InStock",
+        "stockEvidence": {
+          "jsonLdAvailability": "https://schema.org/InStock",
+          "visible": "Na sklade",
+          "scope": "Exact50mlproduct offer and visibledefault50ml/price/in-stock state;3mlsampleshave separateproductURLs."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 89.0,
+          "currency": "EUR",
+          "vatEvidence": "ExactpublicProductOffer priceSpecification.valueAddedTaxIncluded=true; consumerterms confirm VATincluded.",
+          "vatSource": "https://www.bookarazzi.sk/vseobecne-obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Current50mlbutton links tothisexactproductURL;3mlbuttonlinks to separatevzorkaSKU.",
+          "sourceUrl": "https://bookarazzi.sk/produkt/the-final-chapter/"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://bookarazzi.sk/app/uploads/2026/09/the-final-chapter-1.jpg",
+        "photoEvidence": {
+          "id": "the-final-chapter",
+          "url": "https://bookarazzi.sk/app/uploads/2026/09/the-final-chapter-1.jpg",
+          "file": "the-final-chapter.jpg",
+          "bytes": 145501,
+          "sha256": "a4e78e1e4ad86bf8aa375b1e29785f25e9992d07ac238d815bd73618917e4ccb",
+          "width": 1458,
+          "height": 1667,
+          "originalBytes": true,
+          "selectedPack": "50 ml",
+          "visualReview": "Officialoriginalbytes retained, packagingphotoforHypno or50mlbottlephotoforBookarazzi; no retouch/upscale/fakeoriginaldesignerphoto."
+        },
+        "scent": "Tabak, Exotické tóny, Vanilka, Pižmo, Ambra, Dreviny",
+        "selectionTraits": {
+          "fragranceDirection": "spice",
+          "fragranceProfile": "the-final-chapter"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://bookarazzi.sk/produkt/the-final-chapter/",
+          "sourceText": "Tabak • Exotické tóny • Vanilka • Pižmo • Ambra • Dreviny",
+          "navigationLabel": "Tabak, vanilka a dreviny",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "Tabak",
+            "Exotické tóny",
+            "Vanilka",
+            "Pižmo",
+            "Ambra",
+            "Dreviny"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum",
+          "notesEvidence": {
+            "url": "https://bookarazzi.sk/produkt/the-final-chapter/",
+            "sourceText": "Tabak • Exotické tóny • Vanilka • Pižmo • Ambra • Dreviny",
+            "sourceLanguage": "sk",
+            "displayLanguage": "sk",
+            "scope": "Completeofficialflat note list only. Nohead/heart/base, quantitativeweights/intensity/occasion invented."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "Nohealth/longevity/interest/salesguarantee or numericnoteweights.",
+          "No fabricatedpromotions/cart/shipping/integrations."
+        ]
+      }
+    },
+    {
+      "id": "dialogue",
+      "name": "Bookarazzi Dialogue",
+      "url": "https://bookarazzi.sk/produkt/dialogue/",
+      "priceAmount": 89.0,
+      "price": "89,00 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Ružové korenie a šalvia.",
+      "reason": "Ružové korenie a šalvia.",
+      "photo": "/assets/s5/bookarazzi/dialogue.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://bookarazzi.sk/produkt/dialogue/",
+        "verifiedAt": "2026-11-13T17:02:30.984468+00:00",
+        "sourceSha256": "15cc2b883bf6d0b5d5f58d857fbb529bb4933dedb40ad8f9203a48758a20ab49",
+        "stock": "InStock",
+        "stockEvidence": {
+          "jsonLdAvailability": "https://schema.org/InStock",
+          "visible": "Na sklade",
+          "scope": "Exact50mlproduct offer and visibledefault50ml/price/in-stock state;3mlsampleshave separateproductURLs."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 89.0,
+          "currency": "EUR",
+          "vatEvidence": "ExactpublicProductOffer priceSpecification.valueAddedTaxIncluded=true; consumerterms confirm VATincluded.",
+          "vatSource": "https://www.bookarazzi.sk/vseobecne-obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Current50mlbutton links tothisexactproductURL;3mlbuttonlinks to separatevzorkaSKU.",
+          "sourceUrl": "https://bookarazzi.sk/produkt/dialogue/"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://bookarazzi.sk/app/uploads/2026/09/dialogue-1.jpg",
+        "photoEvidence": {
+          "id": "dialogue",
+          "url": "https://bookarazzi.sk/app/uploads/2026/09/dialogue-1.jpg",
+          "file": "dialogue.jpg",
+          "bytes": 133659,
+          "sha256": "916431d619bf8a16550d1bd3b16fb40dea33be9eff9691733ce34bed295244b2",
+          "width": 1458,
+          "height": 1667,
+          "originalBytes": true,
+          "selectedPack": "50 ml",
+          "visualReview": "Officialoriginalbytes retained, packagingphotoforHypno or50mlbottlephotoforBookarazzi; no retouch/upscale/fakeoriginaldesignerphoto."
+        },
+        "scent": "Ružové korenie, Šalvia muškátová, Ambra, Pižmo, Pačuli",
+        "selectionTraits": {
+          "fragranceDirection": "spice",
+          "fragranceProfile": "dialogue"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://bookarazzi.sk/produkt/dialogue/",
+          "sourceText": "Ružové korenie • Šalvia muškátová • Ambra • Pižmo • Pačuli",
+          "navigationLabel": "Ružové korenie a šalvia",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "Ružové korenie",
+            "Šalvia muškátová",
+            "Ambra",
+            "Pižmo",
+            "Pačuli"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum",
+          "notesEvidence": {
+            "url": "https://bookarazzi.sk/produkt/dialogue/",
+            "sourceText": "Ružové korenie • Šalvia muškátová • Ambra • Pižmo • Pačuli",
+            "sourceLanguage": "sk",
+            "displayLanguage": "sk",
+            "scope": "Completeofficialflat note list only. Nohead/heart/base, quantitativeweights/intensity/occasion invented."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "Nohealth/longevity/interest/salesguarantee or numericnoteweights.",
+          "No fabricatedpromotions/cart/shipping/integrations."
+        ]
+      }
+    },
+    {
+      "id": "bestseller",
+      "name": "Bookarazzi Bestseller",
+      "url": "https://bookarazzi.sk/produkt/bestseller/",
+      "priceAmount": 89.0,
+      "price": "89,00 €",
+      "currency": "EUR",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Škorica, vanilka a santal.",
+      "reason": "Škorica, vanilka a santal.",
+      "photo": "/assets/s5/bookarazzi/bestseller.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://bookarazzi.sk/produkt/bestseller/",
+        "verifiedAt": "2026-11-13T17:02:32.002967+00:00",
+        "sourceSha256": "27ea28b1c6f9076c35322e7879e5549569a30ce212c16de552c4f83bad75069f",
+        "stock": "InStock",
+        "stockEvidence": {
+          "jsonLdAvailability": "https://schema.org/InStock",
+          "visible": "Na sklade",
+          "scope": "Exact50mlproduct offer and visibledefault50ml/price/in-stock state;3mlsampleshave separateproductURLs."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 89.0,
+          "currency": "EUR",
+          "vatEvidence": "ExactpublicProductOffer priceSpecification.valueAddedTaxIncluded=true; consumerterms confirm VATincluded.",
+          "vatSource": "https://www.bookarazzi.sk/vseobecne-obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Current50mlbutton links tothisexactproductURL;3mlbuttonlinks to separatevzorkaSKU.",
+          "sourceUrl": "https://bookarazzi.sk/produkt/bestseller/"
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://bookarazzi.sk/app/uploads/2026/09/bestseller-1.jpg",
+        "photoEvidence": {
+          "id": "bestseller",
+          "url": "https://bookarazzi.sk/app/uploads/2026/09/bestseller-1.jpg",
+          "file": "bestseller.jpg",
+          "bytes": 140300,
+          "sha256": "53d0c2709bbedbdb06d2200843f2a5b487c008e82ce938fa83a6f9638cc3965d",
+          "width": 1458,
+          "height": 1667,
+          "originalBytes": true,
+          "selectedPack": "50 ml",
+          "visualReview": "Officialoriginalbytes retained, packagingphotoforHypno or50mlbottlephotoforBookarazzi; no retouch/upscale/fakeoriginaldesignerphoto."
+        },
+        "scent": "Ružové korenie, Škorica, Vanilka, Ambra, Santalové drevo",
+        "selectionTraits": {
+          "fragranceDirection": "spice",
+          "fragranceProfile": "bestseller"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://bookarazzi.sk/produkt/bestseller/",
+          "sourceText": "Ružové korenie • Škorica • Vanilka • Ambra • Santalové drevo",
+          "navigationLabel": "Škorica, vanilka a santal",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "Ružové korenie",
+            "Škorica",
+            "Vanilka",
+            "Ambra",
+            "Santalové drevo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum",
+          "notesEvidence": {
+            "url": "https://bookarazzi.sk/produkt/bestseller/",
+            "sourceText": "Ružové korenie • Škorica • Vanilka • Ambra • Santalové drevo",
+            "sourceLanguage": "sk",
+            "displayLanguage": "sk",
+            "scope": "Completeofficialflat note list only. Nohead/heart/base, quantitativeweights/intensity/occasion invented."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "Nohealth/longevity/interest/salesguarantee or numericnoteweights.",
+          "No fabricatedpromotions/cart/shipping/integrations."
+        ]
+      }
+    }
+  ],
+  "revenue": {
+    "year": 2025,
+    "salesGoods": 6149,
+    "salesProductsServices": 65752,
+    "salesSum": 71901,
+    "currency": "EUR",
+    "source": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=9910985",
+    "unitSource": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12145375",
+    "qualification": "Fulloperator official2025rows02+03wholeEUR, not operatingrevenues71955andnot brand-only estimate."
+  },
+  "size": "UNKNOWN",
+  "interest": "NOT_ESTABLISHED",
+  "notes": [
+    "Selected4newHypnocompositionsor5Bookarazzicompositions only; sizes/samples/sets/photos not extraformulas.",
+    "Ownactualhome/productrejected-cookies session: no productadvisor/chatlauncherobserved; othermodesunknown. Merchantlivepreflight isnotdemoliveQA.",
+    "No separatelyverifiedcompatibleaddon/packphotocontract enabled. Distinctformula alternatives andcomparison only."
+  ]
+}
