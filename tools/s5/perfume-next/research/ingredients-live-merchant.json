@@ -1,0 +1,131 @@
+{
+  "scope": "Own live merchant home/product preflight, not reservation or demo QA",
+  "tlsVerification": true,
+  "rows": [
+    {
+      "name": "home",
+      "url": "https://www.ingredients-store.com/",
+      "checkedAt": "2026-11-12T15:10:38.096209+00:00",
+      "cookieAction": "Nastavení preferencí -> stats/prefs/ads all unchecked -> Povolit vybrané",
+      "networkScope": "Non-GET/cart routes blocked; no messages/forms/cart/captcha actions",
+      "initialButtons": [
+        "\n                    \n                ",
+        "Nastavení preferencí",
+        "Souhlasím",
+        "",
+        "Povolit vybrané",
+        "Povolit vše",
+        ""
+      ],
+      "cookieControls": [
+        {
+          "tag": "INPUT",
+          "id": "",
+          "name": "stats",
+          "checked": false,
+          "aria": null,
+          "disabled": false,
+          "parentClass": "gc-Switch",
+          "outer": "<input class=\"gc-Switch-input\" data-ref=\"Settings:setting\" type=\"checkbox\" name=\"stats\" aria-labeledby=\"gc-settings-preference\">"
+        },
+        {
+          "tag": "INPUT",
+          "id": "",
+          "name": "prefs",
+          "checked": false,
+          "aria": null,
+          "disabled": false,
+          "parentClass": "gc-Switch",
+          "outer": "<input class=\"gc-Switch-input\" data-ref=\"Settings:setting\" type=\"checkbox\" name=\"prefs\" aria-labeledby=\"gc-settings-preference\">"
+        },
+        {
+          "tag": "INPUT",
+          "id": "",
+          "name": "ads",
+          "checked": false,
+          "aria": null,
+          "disabled": false,
+          "parentClass": "gc-Switch",
+          "outer": "<input class=\"gc-Switch-input\" data-ref=\"Settings:setting\" type=\"checkbox\" name=\"ads\" aria-labeledby=\"gc-settings-preference\">"
+        }
+      ],
+      "status": 200,
+      "title": "Ingredients",
+      "text": "Zavřít\nINGREDIENTS\nSTORE\nPřihlásit se\nE-shop\nVše o nákupu\nKoncept\nKontakt\nCZK / €\nKošík\nVyhledávání\nNovinky\n Vzorky\n Poukazy\n Vůně\n Obličej\n Tělo\n Vlasy\n Líčení\n Interiér\n Zdraví\n Značky\n\nPERFUMER H\nPaper\nvonná svíčka\n5 500 Kč\n\nCHAMBRE52\nTobacco Memories\nEau de Parfum\nod 4 250 Kč\n\nANOMALIA\nFallen Milk\nEau de Parfum\nod 1 750 Kč\n\nTRUDON\nNazareth\nvonná svíčka\nod 2 600 Kč\n\nCHAMBRE52\nSoleil Tonka\nEau de Parfum\nod 4 250 Kč\n\nPERFUMER H\nInk Rewritten by Nigel Slater\nEau de Parfum\n4 650 Kč\n\nESCENTRIC MOLECULES\nEscentric 02\nExtrait de Parfum\n6 250 Kč\n\nCHAMBRE52\nOrencie\nEau de Parfum\nod 4 250 Kč\n\nPERFUMER H\nPaper\nvonná svíčka\n1 850 Kč\n\nCLIVE CHRISTIAN\nUncovered\nParfum\n11 650 Kč\n\nASTIER DE VILLATTE\nTanger\nEau de Parfum\nod 2 400 Kč\n\nCHAMBRE52\nTobacco Memories\nExtrait de Parfum\n6 500 Kč\n\nDIPTYQUE\nSapin\nvonná svíčka\nod 1 100 Kč\n\nPERFUMER H\nInk\nTemple Incense\n1 500 Kč\n\nMAISON FRANCIS KURKDJIAN\nBaccarat Rouge 540\nSparkling Body Oil\n5 150 Kč\n\nPERFUMER H\nIcons\nCollection N°3\n2 250 Kč\n\nMAISON FRANCIS KURKDJIAN\nBaccarat Rouge 540\nRich Body Cream\n3 750 Kč\n\nANOMALIA\nMatcha Woodoo\nEau de Parfum\n5 900 Kč\n\nDIPTYQUE\nVánoční kolotoč\n2 250 Kč\n\nASTIER DE VILLATTE\nTanger\nvonná svíčka\n2 000 Kč\n\nMAISON FRANCIS KURKDJIAN\nCôté Jardin\nvonná svíčka\n2 650 Kč\n\nBDK PARFUMS\nVelvet Tonka\nExtrait de Parfum\n7 000 Kč\n\nMAISON FRANCIS KURKDJIAN\ngentle Fluidity Gold\nSparkling Body Oil\n4 900 Kč\n\nPERFUMER H\nPaper\nzápisník\n750 Kč\n\nTRUDON\nFir\nvonná svíčka\nod 2 600 Kč\n\nDIPTYQUE\nOrphéon\nvánoční edice\n4 500 Kč\n\nMAISON CRIVELLI\nHibiscus Mahajád\ntělový olej\n1 900 Kč\n\nMAISON FRANCIS KURKDJIAN\nBaccarat Rouge 540\nparfémový rituál\n6 650 Kč\n\nBYREDO\nHavana Tonka\nExtrait de Parfum\n8 500 Kč\n\nMAISON FRANCIS KURKDJIAN\nCôté Cour\nvonná svíčka\n2 650 Kč\nNačíst další\n<\n1\n2\n3\n4\n>\nInstagram\n© 2026 INGREDIENTS\nCOOKIES\nSITE CREDITS",
+      "buttons": [
+        "\n                    \n                ",
+        "Nastavení preferencí",
+        "Souhlasím",
+        "",
+        "Povolit vybrané",
+        "Povolit vše",
+        ""
+      ],
+      "iframes": []
+    },
+    {
+      "name": "product",
+      "url": "https://www.ingredients-store.com/chambre52-tobacco-memories-eau-de-parfum",
+      "checkedAt": "2026-11-12T15:10:49.919529+00:00",
+      "cookieAction": null,
+      "networkScope": "Non-GET/cart routes blocked; no messages/forms/cart/captcha actions",
+      "initialButtons": [
+        "\n                        Přidat do košíku\n                        Přidáno\n                        Vyberte variantu\n                    ",
+        "\n                            Odeslat\n                        ",
+        "\n                                        Přidat vzorek\n                                    ",
+        "\n                    \n                ",
+        "Nastavení preferencí",
+        "Souhlasím",
+        "",
+        "Povolit vybrané",
+        "Povolit vše",
+        ""
+      ],
+      "status": 200,
+      "title": "Chambre52 Tobacco Memories - Eau de Parfum | Ingredients",
+      "text": "Zavřít\nINGREDIENTS\nSTORE\nPřihlásit se\nE-shop\nVše o nákupu\nKoncept\nKontakt\nCZK / €\nKošík\nVyhledávání\n< Zpět do kategorie vůně\nCHAMBRE52TOBACCO MEMORIESEau de Parfum\n\nTobacco Memories, síla vzpomínek.\nVe znamení sladké melancholie se rozvíjejí tóny tabáku, opulentního šafránu a kosatce, které evokují důvěrné okamžiky. Vzpomínky postupně blednou a uvolňují místo novým emocím.\n\n„Ve vzduchu se drží jemná vůně tabáku, jen lehký závoj kouře. Na hotelové střešní terase je dnes večer příjemně teplo. Opar kadidla, šafránu a možná i jalovce se prolíná s výrazným akordem krvavě rudých višní Morello.“ – Domitille Michalon\n\nHlava:\tjalovec, šafrán, višeň Morello\nSrdce:\tkosatec absolute, tabák absolute\nZáklad:\tkadidlo, mech, vanilka\n52 ml\n4 250 Kč\n100 ml\n6 000 Kč\n1 ks\n2 ks\n3 ks\n4 ks\n5 ks\nToto množství není skladem\n\nTento produkt si můžete objednat v maximálním množství pěti kusů\n\nPřidat do košíku Přidáno Vyberte variantu\n\nChcete vyzkoušet tento produkt? Pořiďte si jej ve vzorku v rámciSample Service.\n\nPřidat vzorek\n\nDoplňkové produkty\n # nové\nCHAMBRE52\nTobacco Memories\nExtrait de Parfum\n6 500 Kč\nInstagram\n© 2026 INGREDIENTS\nCOOKIES\nSITE CREDITS",
+      "buttons": [
+        "\n                        Přidat do košíku\n                        Přidáno\n                        Vyberte variantu\n                    ",
+        "\n                            Odeslat\n                        ",
+        "\n                                        Přidat vzorek\n                                    ",
+        "\n                    \n                ",
+        "Nastavení preferencí",
+        "Souhlasím",
+        "",
+        "Povolit vybrané",
+        "Povolit vše",
+        ""
+      ],
+      "iframes": []
+    },
+    {
+      "name": "samples",
+      "url": "https://www.ingredients-store.com/vzorky",
+      "checkedAt": "2026-11-12T15:10:53.800841+00:00",
+      "cookieAction": null,
+      "networkScope": "Non-GET/cart routes blocked; no messages/forms/cart/captcha actions",
+      "initialButtons": [
+        "\n                    \n                ",
+        "Nastavení preferencí",
+        "Souhlasím",
+        "",
+        "Povolit vybrané",
+        "Povolit vše",
+        ""
+      ],
+      "status": 200,
+      "title": "Ingredients Sample Service | Ingredients",
+      "text": "SAMPLE SERVICE\nZpět do e-shopu >\n+500 Kč\n+500 Kč\nObjevte svět výjimečných parfémů. Vyberte si na našem e‑shopu vůně, které byste chtěli vyzkoušet, a sestavte si set pěti různých vzorků s rozprašovačem o objemu 2 ml. V rámci jedné objednávky lze objednat maximálně dva sety, tedy celkem 10 vzorků.\n\nCena jednoho setu je 500 Kč. Doprava není v ceně zahrnuta. Služba Sample Service je k dispozici na našem e‑shopu i v naší kamenné prodejně.\n\nPři nákupu v hodnotě 2 000 Kč a více od nás získáte 3 vzorky dle vlastního výběru zdarma.\n\nZavřít\nVzorky\nKONCENTRACE\n Eau de Cologne\n Eau de Toilette\n Eau de Parfum\n Parfum\nTYP VŮNĚ\n ambrové\n bílokvětinové\n čisté\n citrusové\n dřevité\n gurmánské\n kadidlové\n kořeněné\n kouřové\n kožené\n květinové\n orientální\n oudové\n ovocné\n pudrové\n růžové\n sladké\n svěží\n tabákové\nZNAČKY\n Aesop\n Amouage\n Anomalia\n Astier de Villatte\n BDK Parfums\n Byredo\n Chambre52\n Comme des Garçons\n D.S. & DURGA\n Dee April\n Diptyque\n D´Orsay\n Escentric Molecules\n Ex Nihilo\n Frederic Malle\n Kilian\n Kintsugi Perfumes\n Le Labo\n L´Entropiste\n Maison Crivelli\n Maison Francis Kurkdjian\n Marc-Antoine Barrois\n Matiere Premiere\n Mizensir\n Ormaie\n Orto Parisi\n Perfumer H\n Profumum Roma\n Thomas de Monaco\n Trudon\n\nCHAMBRE52\nTobacco Memories\nEau de Parfum\nPřidat\n\nANOMALIA\nFallen Milk\nEau de Parfum\nPřidat\n\nCHAMBRE52\nSoleil Tonka\nEau de Parfum\nPřidat\n\nPERFUMER H\nInk Rewritten by Nigel Slater\nEau de Parfum\nPřidat\n\nESCENTRIC MOLECULES\nEscentric 02\nExtrait de Parfum\nPřidat\n\nCHAMBRE52\nOrencie\nEau de Parfum\nPřidat\n\nASTIER DE VILLATTE\nTanger\nEau de Parfum\nPřidat\n\nCHAMBRE52\nTobacco Memories\nExtrait de Parfum\nPřidat\n\nANOMALIA\nMatcha Woodoo\nEau de Parfum\nPřidat\n\nBDK PARFUMS\nVelvet Tonka\nExtrait de Parfum\nPřidat\n\nDIPTYQUE\nOrphéon\nvánoční edice\nPřidat\n\nBYREDO\nHavana Tonka\nExtrait de Parfum\nPřidat\n\nAMOUAGE\nOverture 41\nExtrait de Parfum\nPřidat\n\nL´ENTROPISTE\nFestin\nEau de Parfum\nPřidat\n\nAMOUAGE\nDecision 42\nExtrait de Parfum\nPřidat\n\nPERFUMER H\nClay\nEau de Parfum\nPřidat\n\nD.S. & DURGA\nAin´t That Sweet\nEau de Parfum\nPřidat\n\nDIPTYQUE\nEau Rose\nvánoční edice\nPřidat\n\nCOMME DES GARÇONS\nTears\nEau de Parfum\nPřidat\n\nMAISON FRANCIS KURKDJIAN\nOUD velvet mood\nExtrait de Parfum\nPřidat\nNačíst další\n<\n1\n2\n3\n. . .\n29\n>\nInstagram\n© 2026 INGREDIENTS\nCOOKIES\nSITE CREDITS",
+      "buttons": [
+        "\n                    \n                ",
+        "Nastavení preferencí",
+        "Souhlasím",
+        "",
+        "Povolit vybrané",
+        "Povolit vše",
+        ""
+      ],
+      "iframes": []
+    }
+  ]
+}

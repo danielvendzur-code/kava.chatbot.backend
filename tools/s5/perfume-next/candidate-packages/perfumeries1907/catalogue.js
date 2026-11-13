@@ -1,0 +1,1278 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.perfumeries1907 = {
+ "brand": "1907 Niche Perfumeries",
+ "domain": "1907perfumeries.sk",
+ "operator": {
+  "name": "1907 s.r.o.",
+  "ico": "45303487",
+  "country": "SK",
+  "vatId": "SK2022933088"
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "sk",
+ "country": "SK",
+ "currency": "EUR",
+ "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+ "products": [
+  {
+   "id": "conduit",
+   "name": "Jovoy – 21 Conduit St",
+   "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/591-21-Conduit-St",
+   "priceAmount": 160.0,
+   "price": "160 €",
+   "currency": "EUR",
+   "volume": "75 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Grapefruit, levanduľa a rebarbora.",
+   "reason": "Grapefruit, levanduľa a rebarbora.",
+   "photo": "/assets/s5/perfumeries1907/conduit.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/591-21-Conduit-St",
+    "verifiedAt": "2026-11-12T15:09:34.867571+00:00",
+    "sourceSha256": "bf482b69d3a10796f2669cb42cdb55e915dd14dc48804e0e57d569c019cca5a9",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "skladom",
+     "sourceText": "21 Conduit St skladom Objem: 75 ml Koncentrácia: Eau de Parfum cena bez DPH : 130,08 € cena s DPH (23 %): 160,00 € do košíka: - + ks",
+     "sourceClass": "stock_yes"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 160.0,
+     "currency": "EUR",
+     "visible": "160,00 €",
+     "sourceText": "21 Conduit St skladom Objem: 75 ml Koncentrácia: Eau de Parfum cena bez DPH : 130,08 € cena s DPH (23 %): 160,00 € do košíka: - + ks",
+     "vatEvidence": "Explicit product price s DPH (23 %) and official terms final VAT-inclusive prices",
+     "vatSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky"
+    },
+    "packEvidence": {
+     "pack": "75 ml",
+     "sourceText": "21 Conduit St skladom Objem: 75 ml Koncentrácia: Eau de Parfum cena bez DPH : 130,08 € cena s DPH (23 %): 160,00 € do košíka: - + ks"
+    },
+    "variantSelectionRequired": false,
+    "variantUrlStatus": "Concrete single-pack merchant product page; no cart integration.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Grapefruit, levanduľa a rebarbora",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "conduit"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/591-21-Conduit-St",
+     "sourceText": "Hlava: grapefruit, bergamot, levanduľa, rebarbora; Srdce: jedľa balzamová, amaretto; Základ: bôby tonka, ambroxan, drevité tóny",
+     "navigationLabel": "Grapefruit, levanduľa a rebarbora",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_59121-conduit-st-75ml.jpg",
+    "photoEvidence": {
+     "id": "conduit",
+     "name": "21 Conduit St",
+     "url": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_59121-conduit-st-75ml.jpg",
+     "checkedAt": "2026-11-12T15:16:50.178057+00:00",
+     "sourceSha256": "a09d77627ff09af7e0e4f1ab61eb70cac3ce3c2876c035c1564622a09e953595",
+     "sourceWidth": 664,
+     "sourceHeight": 786,
+     "localWidth": 664,
+     "localHeight": 786,
+     "localSha256": "44433b80ff987e66e218163cf9096188e602de2cf018882b0283252354dd16c0",
+     "localPath": "/assets/s5/perfumeries1907/conduit.webp",
+     "selectedPack": "75 ml",
+     "visualReview": "Official product contact sheet reviewed; no invented packaging or extra-gift claim."
+    },
+    "fragrance": {
+     "notes": [
+      "grapefruit",
+      "bergamot",
+      "levanduľa",
+      "rebarbora",
+      "jedľa balzamová",
+      "amaretto",
+      "bôby tonka",
+      "ambroxan",
+      "drevité tóny"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum",
+     "notesEvidence": {
+      "sourceText": "Hlava: grapefruit, bergamot, levanduľa, rebarbora; Srdce: jedľa balzamová, amaretto; Základ: bôby tonka, ambroxan, drevité tóny",
+      "displayLanguage": "sk",
+      "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/591-21-Conduit-St",
+      "sourceType": "Official merchant product prose; flat lists retained as flat lists."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No invented intensity, occasion, longevity, health effects, interest or sales guarantee."
+    ],
+    "lastPricePackStockCheckAt": "2026-11-13T06:44:03.255578+00:00"
+   }
+  },
+  {
+   "id": "black-sea",
+   "name": "Lorenzo Pazzaglia – Black Sea",
+   "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/660-Black-Sea",
+   "priceAmount": 145.0,
+   "price": "145 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Morské tóny, soľ a pačuli.",
+   "reason": "Morské tóny, soľ a pačuli.",
+   "photo": "/assets/s5/perfumeries1907/black-sea.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/660-Black-Sea",
+    "verifiedAt": "2026-11-12T15:09:38.280515+00:00",
+    "sourceSha256": "df50f6d8524f65d12aa607a7296a8d2e56f0dbb5d5644d06c29510e257a65180",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "skladom",
+     "sourceText": "Black Sea skladom Objem: 50 ml Koncentrácia: Extrait de Parfum cena bez DPH : 117,89 € cena s DPH (23 %): 145,00 € do košíka: - + ks",
+     "sourceClass": "stock_yes"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 145.0,
+     "currency": "EUR",
+     "visible": "145,00 €",
+     "sourceText": "Black Sea skladom Objem: 50 ml Koncentrácia: Extrait de Parfum cena bez DPH : 117,89 € cena s DPH (23 %): 145,00 € do košíka: - + ks",
+     "vatEvidence": "Explicit product price s DPH (23 %) and official terms final VAT-inclusive prices",
+     "vatSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky"
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "Black Sea skladom Objem: 50 ml Koncentrácia: Extrait de Parfum cena bez DPH : 117,89 € cena s DPH (23 %): 145,00 € do košíka: - + ks"
+    },
+    "variantSelectionRequired": false,
+    "variantUrlStatus": "Concrete single-pack merchant product page; no cart integration.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Morské tóny, soľ a pačuli",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "black-sea"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/660-Black-Sea",
+     "sourceText": "Hlava: bergamot, myrta zo Sardínie, slané tóny, ózonické tóny, vodné tóny; Srdce: pomarančový kvet, čierna soľ z Cyprusu, ylang-ylang, morské tóny; Základ: morská tráva, biely musk, pačuli, dubový mach, ambergris",
+     "navigationLabel": "Morské tóny, soľ a pačuli",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_660profumo-black-sea-lorenzo-pazzaglia-768x768.jpg",
+    "photoEvidence": {
+     "id": "black-sea",
+     "name": "Black Sea",
+     "url": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_660profumo-black-sea-lorenzo-pazzaglia-768x768.jpg",
+     "checkedAt": "2026-11-12T15:16:50.366570+00:00",
+     "sourceSha256": "e50d6793ebdaf32ae37f762ad9bdb634220c9daf1498cb04e0a15d70738e27ef",
+     "sourceWidth": 768,
+     "sourceHeight": 768,
+     "localWidth": 768,
+     "localHeight": 768,
+     "localSha256": "0eac87667ef57964e6cb24b45a96869c0f99ca62f32fd11b3fa91a06e9d2fd0b",
+     "localPath": "/assets/s5/perfumeries1907/black-sea.webp",
+     "selectedPack": "50 ml",
+     "visualReview": "Official product contact sheet reviewed; no invented packaging or extra-gift claim."
+    },
+    "fragrance": {
+     "notes": [
+      "bergamot",
+      "myrta zo Sardínie",
+      "slané tóny",
+      "ózonické tóny",
+      "vodné tóny",
+      "pomarančový kvet",
+      "čierna soľ z Cyprusu",
+      "ylang-ylang",
+      "morské tóny",
+      "morská tráva",
+      "biely musk",
+      "pačuli",
+      "dubový mach",
+      "ambergris"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum",
+     "notesEvidence": {
+      "sourceText": "Hlava: bergamot, myrta zo Sardínie, slané tóny, ózonické tóny, vodné tóny; Srdce: pomarančový kvet, čierna soľ z Cyprusu, ylang-ylang, morské tóny; Základ: morská tráva, biely musk, pačuli, dubový mach, ambergris",
+      "displayLanguage": "sk",
+      "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/660-Black-Sea",
+      "sourceType": "Official merchant product prose; flat lists retained as flat lists."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No invented intensity, occasion, longevity, health effects, interest or sales guarantee."
+    ],
+    "lastPricePackStockCheckAt": "2026-11-13T06:44:03.256312+00:00"
+   }
+  },
+  {
+   "id": "fathom",
+   "name": "Beaufort London – Fathom V",
+   "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/42-1-BEAUFORT-LONDON/0/5/218-Fathom-V",
+   "priceAmount": 150.0,
+   "price": "150 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Borievky, zelené a zemité tóny.",
+   "reason": "Borievky, zelené a zemité tóny.",
+   "photo": "/assets/s5/perfumeries1907/fathom.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/42-1-BEAUFORT-LONDON/0/5/218-Fathom-V",
+    "verifiedAt": "2026-11-12T15:09:39.835473+00:00",
+    "sourceSha256": "f7365aa4d4f3fa6ba6dfea3479b0a54a3c4b7b42fd8e8a4f643f7c29108e130e",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "skladom",
+     "sourceText": "Fathom V skladom Objem: 50 ml Koncentrácia: Eau de Parfum cena bez DPH : 121,95 € cena s DPH (23 %): 150,00 € do košíka: - + ks",
+     "sourceClass": "stock_yes"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 150.0,
+     "currency": "EUR",
+     "visible": "150,00 €",
+     "sourceText": "Fathom V skladom Objem: 50 ml Koncentrácia: Eau de Parfum cena bez DPH : 121,95 € cena s DPH (23 %): 150,00 € do košíka: - + ks",
+     "vatEvidence": "Explicit product price s DPH (23 %) and official terms final VAT-inclusive prices",
+     "vatSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky"
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "Fathom V skladom Objem: 50 ml Koncentrácia: Eau de Parfum cena bez DPH : 121,95 € cena s DPH (23 %): 150,00 € do košíka: - + ks"
+    },
+    "variantSelectionRequired": false,
+    "variantUrlStatus": "Concrete single-pack merchant product page; no cart integration.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Borievky, zelené a zemité tóny",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "fathom"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/42-1-BEAUFORT-LONDON/0/5/218-Fathom-V",
+     "sourceText": "Hlava: borievky, tangerínka, čierne ríbezle, zelené tóny, zemité tóny; Srdce: tymián, ľalia, jazmín, ylang-ylang, zázvor, rasca, čierne korenie, mimóza; Základ: pačuli, vetiver, dubový mach, soľ, kadidlo, céder, ambra",
+     "navigationLabel": "Borievky, zelené a zemité tóny",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_218fathom-v.jpg",
+    "photoEvidence": {
+     "id": "fathom",
+     "name": "Fathom V",
+     "url": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_218fathom-v.jpg",
+     "checkedAt": "2026-11-12T15:16:50.368021+00:00",
+     "sourceSha256": "e9cd0150c2f3ac277ef270a942180e8e21817f38ae1d74d0615e868e9d5832da",
+     "sourceWidth": 664,
+     "sourceHeight": 786,
+     "localWidth": 664,
+     "localHeight": 786,
+     "localSha256": "28ffef2a0618125dcf042ffbf0086c89566beacba656eeb4ee8553a2c2f72f49",
+     "localPath": "/assets/s5/perfumeries1907/fathom.webp",
+     "selectedPack": "50 ml",
+     "visualReview": "Official product contact sheet reviewed; no invented packaging or extra-gift claim."
+    },
+    "fragrance": {
+     "notes": [
+      "borievky",
+      "tangerínka",
+      "čierne ríbezle",
+      "zelené tóny",
+      "zemité tóny",
+      "tymián",
+      "ľalia",
+      "jazmín",
+      "ylang-ylang",
+      "zázvor",
+      "rasca",
+      "čierne korenie",
+      "mimóza",
+      "pačuli",
+      "vetiver",
+      "dubový mach",
+      "soľ",
+      "kadidlo",
+      "céder",
+      "ambra"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum",
+     "notesEvidence": {
+      "sourceText": "Hlava: borievky, tangerínka, čierne ríbezle, zelené tóny, zemité tóny; Srdce: tymián, ľalia, jazmín, ylang-ylang, zázvor, rasca, čierne korenie, mimóza; Základ: pačuli, vetiver, dubový mach, soľ, kadidlo, céder, ambra",
+      "displayLanguage": "sk",
+      "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/42-1-BEAUFORT-LONDON/0/5/218-Fathom-V",
+      "sourceType": "Official merchant product prose; flat lists retained as flat lists."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No invented intensity, occasion, longevity, health effects, interest or sales guarantee."
+    ],
+    "lastPricePackStockCheckAt": "2026-11-13T06:44:03.257073+00:00"
+   }
+  },
+  {
+   "id": "ask",
+   "name": "Maiora – Ask",
+   "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/706-Ask",
+   "priceAmount": 110.0,
+   "price": "110 €",
+   "currency": "EUR",
+   "volume": "30 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Myrta, eukalyptus a borovica.",
+   "reason": "Myrta, eukalyptus a borovica.",
+   "photo": "/assets/s5/perfumeries1907/ask.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/706-Ask",
+    "verifiedAt": "2026-11-12T15:09:37.202582+00:00",
+    "sourceSha256": "6172bdbbcc91b147020187862bed20bdd0321c9512ce019ecdc31d9b09d10c18",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "skladom",
+     "sourceText": "Ask skladom Objem: 30ml Koncentrácia: Extrait de Parfum cena bez DPH : 89,43 € cena s DPH (23 %): 110,00 € do košíka: - + ks",
+     "sourceClass": "stock_yes"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 110.0,
+     "currency": "EUR",
+     "visible": "110,00 €",
+     "sourceText": "Ask skladom Objem: 30ml Koncentrácia: Extrait de Parfum cena bez DPH : 89,43 € cena s DPH (23 %): 110,00 € do košíka: - + ks",
+     "vatEvidence": "Explicit product price s DPH (23 %) and official terms final VAT-inclusive prices",
+     "vatSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky"
+    },
+    "packEvidence": {
+     "pack": "30 ml",
+     "sourceText": "Ask skladom Objem: 30ml Koncentrácia: Extrait de Parfum cena bez DPH : 89,43 € cena s DPH (23 %): 110,00 € do košíka: - + ks"
+    },
+    "variantSelectionRequired": false,
+    "variantUrlStatus": "Concrete single-pack merchant product page; no cart integration.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Myrta, eukalyptus a borovica",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "ask"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/706-Ask",
+     "sourceText": "Hlava: morský vánok, morská soľ, borievky, myrta; Srdce: vodný jazmín, pelargónia, aromatický buket, listy eukalyptu; Základ: borovica, cédrové drevo, pačuli, ambra, pižmo",
+     "navigationLabel": "Myrta, eukalyptus a borovica",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_706Ask-30ml.png",
+    "photoEvidence": {
+     "id": "ask",
+     "name": "Ask",
+     "url": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_706Ask-30ml.png",
+     "checkedAt": "2026-11-12T15:16:50.506365+00:00",
+     "sourceSha256": "6df9ae77ab6f749bb2f2dfef5eeeaa0e95f46dc3e6abd2ec2f07917f53e37fa5",
+     "sourceWidth": 1000,
+     "sourceHeight": 1500,
+     "localWidth": 1000,
+     "localHeight": 1500,
+     "localSha256": "16f2c602b30d7b9045fd977651b4cbef2697cabfb3bfcc8bd74f2e003224f053",
+     "normalization": "Original source alpha composited on card-white; artwork unchanged, no retouching/upscale.",
+     "localPath": "/assets/s5/perfumeries1907/ask.webp",
+     "selectedPack": "30 ml",
+     "visualReview": "Official product contact sheet reviewed; no invented packaging or extra-gift claim."
+    },
+    "fragrance": {
+     "notes": [
+      "morský vánok",
+      "morská soľ",
+      "borievky",
+      "myrta",
+      "vodný jazmín",
+      "pelargónia",
+      "aromatický buket",
+      "listy eukalyptu",
+      "borovica",
+      "cédrové drevo",
+      "pačuli",
+      "ambra",
+      "pižmo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum",
+     "notesEvidence": {
+      "sourceText": "Hlava: morský vánok, morská soľ, borievky, myrta; Srdce: vodný jazmín, pelargónia, aromatický buket, listy eukalyptu; Základ: borovica, cédrové drevo, pačuli, ambra, pižmo",
+      "displayLanguage": "sk",
+      "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/706-Ask",
+      "sourceType": "Official merchant product prose; flat lists retained as flat lists."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No invented intensity, occasion, longevity, health effects, interest or sales guarantee."
+    ],
+    "lastPricePackStockCheckAt": "2026-11-13T06:44:03.257750+00:00"
+   }
+  },
+  {
+   "id": "aldebaran",
+   "name": "Marc-Antoine Barrois – Aldebaran",
+   "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/692-Aldebaran-100ml",
+   "priceAmount": 200.0,
+   "price": "200 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Tuberóza, paprika a maté.",
+   "reason": "Tuberóza, paprika a maté.",
+   "photo": "/assets/s5/perfumeries1907/aldebaran.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/692-Aldebaran-100ml",
+    "verifiedAt": "2026-11-12T15:09:34.870279+00:00",
+    "sourceSha256": "2c48a3e7de0f336051345e78e6a5e69177ecfe2820ee5a37fe40015eb03ca8ba",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "skladom",
+     "sourceText": "Aldebaran 100ml skladom doprava zdarma Objem: 100 ml Koncentrácia: Eau de Parfum cena bez DPH : 162,60 € cena s DPH (23 %): 200,00 € do košíka: - + ks",
+     "sourceClass": "stock_yes"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 200.0,
+     "currency": "EUR",
+     "visible": "200,00 €",
+     "sourceText": "Aldebaran 100ml skladom doprava zdarma Objem: 100 ml Koncentrácia: Eau de Parfum cena bez DPH : 162,60 € cena s DPH (23 %): 200,00 € do košíka: - + ks",
+     "vatEvidence": "Explicit product price s DPH (23 %) and official terms final VAT-inclusive prices",
+     "vatSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky"
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sourceText": "Aldebaran 100ml skladom doprava zdarma Objem: 100 ml Koncentrácia: Eau de Parfum cena bez DPH : 162,60 € cena s DPH (23 %): 200,00 € do košíka: - + ks"
+    },
+    "variantSelectionRequired": false,
+    "variantUrlStatus": "Concrete single-pack merchant product page; no cart integration.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Tuberóza, paprika a maté",
+    "selectionTraits": {
+     "fragranceDirection": "floral",
+     "fragranceProfile": "aldebaran"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/692-Aldebaran-100ml",
+     "sourceText": "Vonné tóny: tuberóza absolute, paprika, maté, bôby tonka.",
+     "navigationLabel": "Tuberóza, paprika a maté",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_692W2hGInoM.jpeg",
+    "photoEvidence": {
+     "id": "aldebaran",
+     "name": "Aldebaran 100ml",
+     "url": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_692W2hGInoM.jpeg",
+     "checkedAt": "2026-11-12T15:16:53.132374+00:00",
+     "sourceSha256": "a61a310d94f1353fcb269dccbffcb978d9bc88937dcc4c653cb7c91c9ce84b90",
+     "sourceWidth": 5906,
+     "sourceHeight": 5906,
+     "localWidth": 1400,
+     "localHeight": 1400,
+     "localSha256": "ae875b20c64bbde67a96d925b7673935922961145cbd960a27a4b93119fa0efc",
+     "localPath": "/assets/s5/perfumeries1907/aldebaran.webp",
+     "selectedPack": "100 ml",
+     "visualReview": "Official product contact sheet reviewed; no invented packaging or extra-gift claim."
+    },
+    "fragrance": {
+     "notes": [
+      "tuberóza absolute",
+      "paprika",
+      "maté",
+      "bôby tonka"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum",
+     "notesEvidence": {
+      "sourceText": "Vonné tóny: tuberóza absolute, paprika, maté, bôby tonka.",
+      "displayLanguage": "sk",
+      "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/692-Aldebaran-100ml",
+      "sourceType": "Official merchant product prose; flat lists retained as flat lists."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No invented intensity, occasion, longevity, health effects, interest or sales guarantee."
+    ],
+    "lastPricePackStockCheckAt": "2026-11-13T06:44:05.697862+00:00"
+   }
+  },
+  {
+   "id": "divanche",
+   "name": "Puredistance – Divanché",
+   "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/694-Divanche-60ml",
+   "priceAmount": 325.0,
+   "price": "325 €",
+   "currency": "EUR",
+   "volume": "60 ml",
+   "category": "fragrance",
+   "kind": "Perfume extrait",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Hruška, gardénia a jazmín.",
+   "reason": "Hruška, gardénia a jazmín.",
+   "photo": "/assets/s5/perfumeries1907/divanche.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/694-Divanche-60ml",
+    "verifiedAt": "2026-11-12T15:09:39.631990+00:00",
+    "sourceSha256": "ed8b5698c8c59d73a8d4baaecac2d06b1bba3edbb80e7afd4779bfcd1fb0833b",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "skladom",
+     "sourceText": "Divanché 60ml skladom doprava zdarma Objem: 60 ml Koncentrácia: Perfume extrait cena bez DPH : 264,23 € cena s DPH (23 %): 325,00 € do košíka: - + ks",
+     "sourceClass": "stock_yes"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 325.0,
+     "currency": "EUR",
+     "visible": "325,00 €",
+     "sourceText": "Divanché 60ml skladom doprava zdarma Objem: 60 ml Koncentrácia: Perfume extrait cena bez DPH : 264,23 € cena s DPH (23 %): 325,00 € do košíka: - + ks",
+     "vatEvidence": "Explicit product price s DPH (23 %) and official terms final VAT-inclusive prices",
+     "vatSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky"
+    },
+    "packEvidence": {
+     "pack": "60 ml",
+     "sourceText": "Divanché 60ml skladom doprava zdarma Objem: 60 ml Koncentrácia: Perfume extrait cena bez DPH : 264,23 € cena s DPH (23 %): 325,00 € do košíka: - + ks"
+    },
+    "variantSelectionRequired": false,
+    "variantUrlStatus": "Concrete single-pack merchant product page; no cart integration.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Hruška, gardénia a jazmín",
+    "selectionTraits": {
+     "fragranceDirection": "floral",
+     "fragranceProfile": "divanche"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/694-Divanche-60ml",
+     "sourceText": "Hlava: hruška, jablko, ananás; Srdce: gardénia, indický jazmín, indická tuberóza, heliotrop, champaka, hedione; Základ: semienka ambrette, drevité tóny, ambroxan, muscone, benzoin Siam",
+     "navigationLabel": "Hruška, gardénia a jazmín",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_694Puredistance-60ml-08A-DIVANCHE-Total-Detail--1.jpg",
+    "photoEvidence": {
+     "id": "divanche",
+     "name": "Divanché 60ml",
+     "url": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_694Puredistance-60ml-08A-DIVANCHE-Total-Detail--1.jpg",
+     "checkedAt": "2026-11-12T15:16:51.708092+00:00",
+     "sourceSha256": "bf2e19172d573420ecd37dcbc517e2e69ea1992c327f9a45bb3a929ed3eb10eb",
+     "sourceWidth": 1417,
+     "sourceHeight": 1786,
+     "localWidth": 1269,
+     "localHeight": 1600,
+     "localSha256": "e3cd2b2445e5bedc89e79e959ff333f2417831cc6085feac099ef4193f07bb7f",
+     "localPath": "/assets/s5/perfumeries1907/divanche.webp",
+     "selectedPack": "60 ml",
+     "visualReview": "Official product contact sheet reviewed; no invented packaging or extra-gift claim."
+    },
+    "fragrance": {
+     "notes": [
+      "hruška",
+      "jablko",
+      "ananás",
+      "gardénia",
+      "indický jazmín",
+      "indická tuberóza",
+      "heliotrop",
+      "champaka",
+      "hedione",
+      "semienka ambrette",
+      "drevité tóny",
+      "ambroxan",
+      "muscone",
+      "benzoin Siam"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Perfume extrait",
+     "notesEvidence": {
+      "sourceText": "Hlava: hruška, jablko, ananás; Srdce: gardénia, indický jazmín, indická tuberóza, heliotrop, champaka, hedione; Základ: semienka ambrette, drevité tóny, ambroxan, muscone, benzoin Siam",
+      "displayLanguage": "sk",
+      "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/694-Divanche-60ml",
+      "sourceType": "Official merchant product prose; flat lists retained as flat lists."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No invented intensity, occasion, longevity, health effects, interest or sales guarantee."
+    ],
+    "lastPricePackStockCheckAt": "2026-11-13T06:44:05.998385+00:00"
+   }
+  },
+  {
+   "id": "beaumont",
+   "name": "Adamo – Beaumont Sur Mer",
+   "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/755-Beaumont-Sur-Mer",
+   "priceAmount": 240.0,
+   "price": "240 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Kosatec, ylang-ylang a santal.",
+   "reason": "Kosatec, ylang-ylang a santal.",
+   "photo": "/assets/s5/perfumeries1907/beaumont.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/755-Beaumont-Sur-Mer",
+    "verifiedAt": "2026-11-12T15:09:37.826074+00:00",
+    "sourceSha256": "f53171f1b803b7de6b65ef9be5ca60873e474269a4a48fc3adb70c9ac777bc00",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "skladom",
+     "sourceText": "Beaumont Sur Mer skladom Objem: 100 ml Koncentrácia: Extrait de Parfum cena bez DPH : 195,12 € cena s DPH (23 %): 240,00 € do košíka: - + ks",
+     "sourceClass": "stock_yes"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 240.0,
+     "currency": "EUR",
+     "visible": "240,00 €",
+     "sourceText": "Beaumont Sur Mer skladom Objem: 100 ml Koncentrácia: Extrait de Parfum cena bez DPH : 195,12 € cena s DPH (23 %): 240,00 € do košíka: - + ks",
+     "vatEvidence": "Explicit product price s DPH (23 %) and official terms final VAT-inclusive prices",
+     "vatSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky"
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sourceText": "Beaumont Sur Mer skladom Objem: 100 ml Koncentrácia: Extrait de Parfum cena bez DPH : 195,12 € cena s DPH (23 %): 240,00 € do košíka: - + ks"
+    },
+    "variantSelectionRequired": false,
+    "variantUrlStatus": "Concrete single-pack merchant product page; no cart integration.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Kosatec, ylang-ylang a santal",
+    "selectionTraits": {
+     "fragranceDirection": "floral",
+     "fragranceProfile": "beaumont"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/755-Beaumont-Sur-Mer",
+     "sourceText": "Hlava: bergamot, borievka, ružové korenie; Srdce: pelargónia, kosatec, ylang-ylang, akord bielej hľuzovky; Základ: austrálske santalové drevo, vanilka, musk",
+     "navigationLabel": "Kosatec, ylang-ylang a santal",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_755Adamo---Beaumont-Sur-Mer-100ml-v2.png",
+    "photoEvidence": {
+     "id": "beaumont",
+     "name": "Beaumont Sur Mer",
+     "url": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_755Adamo---Beaumont-Sur-Mer-100ml-v2.png",
+     "checkedAt": "2026-11-12T15:16:51.904766+00:00",
+     "sourceSha256": "9ed51099c105ed925830e0823278eb5b48f9db3501980cf893dfdbc49d6f05c1",
+     "sourceWidth": 1213,
+     "sourceHeight": 1536,
+     "localWidth": 1213,
+     "localHeight": 1536,
+     "localSha256": "8e5ca26154d38d1d262615afd983639ca29ae127573b97b4b239c7314aa1467f",
+     "normalization": "Original source alpha composited on card-white; artwork unchanged, no retouching/upscale.",
+     "localPath": "/assets/s5/perfumeries1907/beaumont.webp",
+     "selectedPack": "100 ml",
+     "visualReview": "Official product contact sheet reviewed; no invented packaging or extra-gift claim."
+    },
+    "fragrance": {
+     "notes": [
+      "bergamot",
+      "borievka",
+      "ružové korenie",
+      "pelargónia",
+      "kosatec",
+      "ylang-ylang",
+      "akord bielej hľuzovky",
+      "austrálske santalové drevo",
+      "vanilka",
+      "musk"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum",
+     "notesEvidence": {
+      "sourceText": "Hlava: bergamot, borievka, ružové korenie; Srdce: pelargónia, kosatec, ylang-ylang, akord bielej hľuzovky; Základ: austrálske santalové drevo, vanilka, musk",
+      "displayLanguage": "sk",
+      "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/755-Beaumont-Sur-Mer",
+      "sourceType": "Official merchant product prose; flat lists retained as flat lists."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No invented intensity, occasion, longevity, health effects, interest or sales guarantee."
+    ],
+    "lastPricePackStockCheckAt": "2026-11-13T06:44:06.009547+00:00"
+   }
+  },
+  {
+   "id": "columbine",
+   "name": "Ciro – Columbine",
+   "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/542-Columbine",
+   "priceAmount": 174.0,
+   "price": "174 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Kosatec, neroli a vanilka.",
+   "reason": "Kosatec, neroli a vanilka.",
+   "photo": "/assets/s5/perfumeries1907/columbine.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/542-Columbine",
+    "verifiedAt": "2026-11-12T15:09:39.244415+00:00",
+    "sourceSha256": "02d4665b2c52c4ec1f7bdc2bb00608a6c682e20b7e98da7680fee42b2dc3ba13",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "skladom",
+     "sourceText": "Columbine skladom Objem: 100 ml Koncentrácia: Eau de Parfum cena bez DPH : 141,46 € cena s DPH (23 %): 174,00 € do košíka: - + ks",
+     "sourceClass": "stock_yes"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 174.0,
+     "currency": "EUR",
+     "visible": "174,00 €",
+     "sourceText": "Columbine skladom Objem: 100 ml Koncentrácia: Eau de Parfum cena bez DPH : 141,46 € cena s DPH (23 %): 174,00 € do košíka: - + ks",
+     "vatEvidence": "Explicit product price s DPH (23 %) and official terms final VAT-inclusive prices",
+     "vatSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky"
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sourceText": "Columbine skladom Objem: 100 ml Koncentrácia: Eau de Parfum cena bez DPH : 141,46 € cena s DPH (23 %): 174,00 € do košíka: - + ks"
+    },
+    "variantSelectionRequired": false,
+    "variantUrlStatus": "Concrete single-pack merchant product page; no cart integration.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Kosatec, neroli a vanilka",
+    "selectionTraits": {
+     "fragranceDirection": "floral",
+     "fragranceProfile": "columbine"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/542-Columbine",
+     "sourceText": "Hlava: mandarínka, bergamot, Bourbon tabak, aksamitník; Srdce: iris, ružové korenie, osmantus absolute, neroli; Základ: vanilka absolute, benzoin absolute, vetiver, semiš, musk",
+     "navigationLabel": "Kosatec, neroli a vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_542Flasche_Shop_CIRO_Columbine2019.jpg",
+    "photoEvidence": {
+     "id": "columbine",
+     "name": "Columbine",
+     "url": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_542Flasche_Shop_CIRO_Columbine2019.jpg",
+     "checkedAt": "2026-11-12T15:16:51.466164+00:00",
+     "sourceSha256": "3e0691968fbee3e236491d0bf74f5943df1dfab028b4035ba2f58c8d560af523",
+     "sourceWidth": 600,
+     "sourceHeight": 600,
+     "localWidth": 600,
+     "localHeight": 600,
+     "localSha256": "36a2fe88c6574308065ec8d5fe0f4fa1605d8f6bf9e3e266769edf19680d6ecd",
+     "localPath": "/assets/s5/perfumeries1907/columbine.webp",
+     "selectedPack": "100 ml",
+     "visualReview": "Official product contact sheet reviewed; no invented packaging or extra-gift claim."
+    },
+    "fragrance": {
+     "notes": [
+      "mandarínka",
+      "bergamot",
+      "Bourbon tabak",
+      "aksamitník",
+      "iris",
+      "ružové korenie",
+      "osmantus absolute",
+      "neroli",
+      "vanilka absolute",
+      "benzoin absolute",
+      "vetiver",
+      "semiš",
+      "musk"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum",
+     "notesEvidence": {
+      "sourceText": "Hlava: mandarínka, bergamot, Bourbon tabak, aksamitník; Srdce: iris, ružové korenie, osmantus absolute, neroli; Základ: vanilka absolute, benzoin absolute, vetiver, semiš, musk",
+      "displayLanguage": "sk",
+      "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/542-Columbine",
+      "sourceType": "Official merchant product prose; flat lists retained as flat lists."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No invented intensity, occasion, longevity, health effects, interest or sales guarantee."
+    ],
+    "lastPricePackStockCheckAt": "2026-11-13T06:44:06.013527+00:00"
+   }
+  },
+  {
+   "id": "baklava",
+   "name": "Ideo Parfumeurs – Baklava Bliss",
+   "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/725-Baklava-Bliss",
+   "priceAmount": 130.0,
+   "price": "130 €",
+   "currency": "EUR",
+   "volume": "100 ml",
+   "category": "fragrance",
+   "kind": "Eau de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Pistácie, mliečne tóny a vanilka.",
+   "reason": "Pistácie, mliečne tóny a vanilka.",
+   "photo": "/assets/s5/perfumeries1907/baklava.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/725-Baklava-Bliss",
+    "verifiedAt": "2026-11-12T15:09:37.487283+00:00",
+    "sourceSha256": "7221ee05a4b1504f212d05798baa8d9d8503bbcbfcb6db9f240a837d80134c9b",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "skladom",
+     "sourceText": "Baklava Bliss skladom Objem: 100 ml Koncentrácia: Eau de Parfum cena bez DPH : 105,69 € cena s DPH (23 %): 130,00 € do košíka: - + ks",
+     "sourceClass": "stock_yes"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 130.0,
+     "currency": "EUR",
+     "visible": "130,00 €",
+     "sourceText": "Baklava Bliss skladom Objem: 100 ml Koncentrácia: Eau de Parfum cena bez DPH : 105,69 € cena s DPH (23 %): 130,00 € do košíka: - + ks",
+     "vatEvidence": "Explicit product price s DPH (23 %) and official terms final VAT-inclusive prices",
+     "vatSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky"
+    },
+    "packEvidence": {
+     "pack": "100 ml",
+     "sourceText": "Baklava Bliss skladom Objem: 100 ml Koncentrácia: Eau de Parfum cena bez DPH : 105,69 € cena s DPH (23 %): 130,00 € do košíka: - + ks"
+    },
+    "variantSelectionRequired": false,
+    "variantUrlStatus": "Concrete single-pack merchant product page; no cart integration.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Pistácie, mliečne tóny a vanilka",
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "baklava"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/725-Baklava-Bliss",
+     "sourceText": "Hlava: pistácie, citrusy; Srdce: pomarančové kvety, mliečne tóny, heliotrop; Základ: cédrové drevo, pínia, vanilka, biely musk",
+     "navigationLabel": "Pistácie, mliečne tóny a vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_725baklava-bliss-100ml.jpg",
+    "photoEvidence": {
+     "id": "baklava",
+     "name": "Baklava Bliss",
+     "url": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_725baklava-bliss-100ml.jpg",
+     "checkedAt": "2026-11-12T15:16:52.480204+00:00",
+     "sourceSha256": "084beafd25592f4e1c1f726fdd37ff6ad9f6ee235dd4f9af1e89aec0a052e03a",
+     "sourceWidth": 664,
+     "sourceHeight": 786,
+     "localWidth": 664,
+     "localHeight": 786,
+     "localSha256": "f545cb9da1c329ebcbbac815d6ebf6195b43440f2c2dcdfb23f6fce8afb4fd50",
+     "localPath": "/assets/s5/perfumeries1907/baklava.webp",
+     "selectedPack": "100 ml",
+     "visualReview": "Official product contact sheet reviewed; no invented packaging or extra-gift claim."
+    },
+    "fragrance": {
+     "notes": [
+      "pistácie",
+      "citrusy",
+      "pomarančové kvety",
+      "mliečne tóny",
+      "heliotrop",
+      "cédrové drevo",
+      "pínia",
+      "vanilka",
+      "biely musk"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Eau de Parfum",
+     "notesEvidence": {
+      "sourceText": "Hlava: pistácie, citrusy; Srdce: pomarančové kvety, mliečne tóny, heliotrop; Základ: cédrové drevo, pínia, vanilka, biely musk",
+      "displayLanguage": "sk",
+      "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/725-Baklava-Bliss",
+      "sourceType": "Official merchant product prose; flat lists retained as flat lists."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No invented intensity, occasion, longevity, health effects, interest or sales guarantee."
+    ],
+    "lastPricePackStockCheckAt": "2026-11-13T06:44:06.982616+00:00"
+   }
+  },
+  {
+   "id": "ali-baba",
+   "name": "Maiora – Ali Baba",
+   "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/705-Ali-Baba",
+   "priceAmount": 110.0,
+   "price": "110 €",
+   "currency": "EUR",
+   "volume": "30 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Rum, kandizovaný pomaranč a vanilka.",
+   "reason": "Rum, kandizovaný pomaranč a vanilka.",
+   "photo": "/assets/s5/perfumeries1907/ali-baba.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/705-Ali-Baba",
+    "verifiedAt": "2026-11-12T15:09:36.322083+00:00",
+    "sourceSha256": "59e0948cf7efe404253815c6a005d118acf302406e728260f9028e327f723bcf",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "skladom",
+     "sourceText": "Ali Baba skladom Objem: 30ml Koncentrácia: Extrait de Parfum cena bez DPH : 89,43 € cena s DPH (23 %): 110,00 € do košíka: - + ks",
+     "sourceClass": "stock_yes"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 110.0,
+     "currency": "EUR",
+     "visible": "110,00 €",
+     "sourceText": "Ali Baba skladom Objem: 30ml Koncentrácia: Extrait de Parfum cena bez DPH : 89,43 € cena s DPH (23 %): 110,00 € do košíka: - + ks",
+     "vatEvidence": "Explicit product price s DPH (23 %) and official terms final VAT-inclusive prices",
+     "vatSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky"
+    },
+    "packEvidence": {
+     "pack": "30 ml",
+     "sourceText": "Ali Baba skladom Objem: 30ml Koncentrácia: Extrait de Parfum cena bez DPH : 89,43 € cena s DPH (23 %): 110,00 € do košíka: - + ks"
+    },
+    "variantSelectionRequired": false,
+    "variantUrlStatus": "Concrete single-pack merchant product page; no cart integration.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Rum, kandizovaný pomaranč a vanilka",
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "ali-baba"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/705-Ali-Baba",
+     "sourceText": "Hlava: rum, kandizovaný pomaranč, citrónová kôra; Srdce: Baba (talianský dezert), klinčeky, pačuli; Základ: vanilka, ambra, céder, mach",
+     "navigationLabel": "Rum, kandizovaný pomaranč a vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_705Ali-Baba-30ml.png",
+    "photoEvidence": {
+     "id": "ali-baba",
+     "name": "Ali Baba",
+     "url": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_705Ali-Baba-30ml.png",
+     "checkedAt": "2026-11-12T15:16:52.393894+00:00",
+     "sourceSha256": "d77a46f3c5a2c871e5169b3b4434767a2544755732d9cf8ca4bdaf2f97b8c92c",
+     "sourceWidth": 1000,
+     "sourceHeight": 1500,
+     "localWidth": 1000,
+     "localHeight": 1500,
+     "localSha256": "b3b16fbf2066d7670de6a5b596e8f5042ad6c5a43f2e72902de3cddf541449a8",
+     "normalization": "Original source alpha composited on card-white; artwork unchanged, no retouching/upscale.",
+     "localPath": "/assets/s5/perfumeries1907/ali-baba.webp",
+     "selectedPack": "30 ml",
+     "visualReview": "Official product contact sheet reviewed; no invented packaging or extra-gift claim."
+    },
+    "fragrance": {
+     "notes": [
+      "rum",
+      "kandizovaný pomaranč",
+      "citrónová kôra",
+      "Baba (talianský dezert)",
+      "klinčeky",
+      "pačuli",
+      "vanilka",
+      "ambra",
+      "céder",
+      "mach"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum",
+     "notesEvidence": {
+      "sourceText": "Hlava: rum, kandizovaný pomaranč, citrónová kôra; Srdce: Baba (talianský dezert), klinčeky, pačuli; Základ: vanilka, ambra, céder, mach",
+      "displayLanguage": "sk",
+      "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/705-Ali-Baba",
+      "sourceType": "Official merchant product prose; flat lists retained as flat lists."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No invented intensity, occasion, longevity, health effects, interest or sales guarantee."
+    ],
+    "lastPricePackStockCheckAt": "2026-11-13T06:44:06.988040+00:00"
+   }
+  },
+  {
+   "id": "cherry-ink",
+   "name": "Lorenzo Pazzaglia – Cherry Ink",
+   "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/659-Cherry-Ink",
+   "priceAmount": 145.0,
+   "price": "145 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Čerešne, červené víno a myrha.",
+   "reason": "Čerešne, červené víno a myrha.",
+   "photo": "/assets/s5/perfumeries1907/cherry-ink.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/659-Cherry-Ink",
+    "verifiedAt": "2026-11-12T15:09:38.823028+00:00",
+    "sourceSha256": "277c12b12601a0d22fa53921aa91b98be90d0486510bfc8c975418e1faf2b733",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "skladom",
+     "sourceText": "Cherry Ink skladom Objem: 50 ml Koncentrácia: Extrait de Parfum cena bez DPH : 117,89 € cena s DPH (23 %): 145,00 € do košíka: - + ks",
+     "sourceClass": "stock_yes"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 145.0,
+     "currency": "EUR",
+     "visible": "145,00 €",
+     "sourceText": "Cherry Ink skladom Objem: 50 ml Koncentrácia: Extrait de Parfum cena bez DPH : 117,89 € cena s DPH (23 %): 145,00 € do košíka: - + ks",
+     "vatEvidence": "Explicit product price s DPH (23 %) and official terms final VAT-inclusive prices",
+     "vatSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky"
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "Cherry Ink skladom Objem: 50 ml Koncentrácia: Extrait de Parfum cena bez DPH : 117,89 € cena s DPH (23 %): 145,00 € do košíka: - + ks"
+    },
+    "variantSelectionRequired": false,
+    "variantUrlStatus": "Concrete single-pack merchant product page; no cart integration.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Čerešne, červené víno a myrha",
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "cherry-ink"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/659-Cherry-Ink",
+     "sourceText": "Hlava: čerešne, bergamot, čierne korenie, rumový akord, čierna čerešňa; Srdce: červené víno, damašská ruža, jazmín, konvalinka, mimóza, hrejivé korenie, atrament, myrha; Základ: vanilka, bôby tonka, drevité tóny, pačuli, benzoin, ambra, musk, agarové drevo",
+     "navigationLabel": "Čerešne, červené víno a myrha",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_659profumi-cherry-ink-lorenzo-pazzaglia-768x768.jpg",
+    "photoEvidence": {
+     "id": "cherry-ink",
+     "name": "Cherry Ink",
+     "url": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_659profumi-cherry-ink-lorenzo-pazzaglia-768x768.jpg",
+     "checkedAt": "2026-11-12T15:16:52.378089+00:00",
+     "sourceSha256": "4a15c283e5d0c197ed2a5a39391dc1279b54194986b166290a10e533440e7f25",
+     "sourceWidth": 768,
+     "sourceHeight": 768,
+     "localWidth": 768,
+     "localHeight": 768,
+     "localSha256": "2ef46f6cd9fc839d15af09208d24c2a796c26f4bf9db69d880f5ea3efbda3786",
+     "localPath": "/assets/s5/perfumeries1907/cherry-ink.webp",
+     "selectedPack": "50 ml",
+     "visualReview": "Official product contact sheet reviewed; no invented packaging or extra-gift claim."
+    },
+    "fragrance": {
+     "notes": [
+      "čerešne",
+      "bergamot",
+      "čierne korenie",
+      "rumový akord",
+      "čierna čerešňa",
+      "červené víno",
+      "damašská ruža",
+      "jazmín",
+      "konvalinka",
+      "mimóza",
+      "hrejivé korenie",
+      "atrament",
+      "myrha",
+      "vanilka",
+      "bôby tonka",
+      "drevité tóny",
+      "pačuli",
+      "benzoin",
+      "ambra",
+      "musk",
+      "agarové drevo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum",
+     "notesEvidence": {
+      "sourceText": "Hlava: čerešne, bergamot, čierne korenie, rumový akord, čierna čerešňa; Srdce: červené víno, damašská ruža, jazmín, konvalinka, mimóza, hrejivé korenie, atrament, myrha; Základ: vanilka, bôby tonka, drevité tóny, pačuli, benzoin, ambra, musk, agarové drevo",
+      "displayLanguage": "sk",
+      "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/659-Cherry-Ink",
+      "sourceType": "Official merchant product prose; flat lists retained as flat lists."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No invented intensity, occasion, longevity, health effects, interest or sales guarantee."
+    ],
+    "lastPricePackStockCheckAt": "2026-11-13T06:44:07.126189+00:00"
+   }
+  },
+  {
+   "id": "b683",
+   "name": "Marc-Antoine Barrois – B683 Extrait",
+   "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/723-B683-EXTRAIT",
+   "priceAmount": 275.0,
+   "price": "275 €",
+   "currency": "EUR",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Extrait de Parfum",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Zelené jablko, oud a koža.",
+   "reason": "Zelené jablko, oud a koža.",
+   "photo": "/assets/s5/perfumeries1907/b683.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/723-B683-EXTRAIT",
+    "verifiedAt": "2026-11-12T15:09:37.360266+00:00",
+    "sourceSha256": "b846e12d4f78279fff0d74141a2f98414831225b07b7ffd9efb3931d15be595e",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "skladom",
+     "sourceText": "B683 EXTRAIT skladom doprava zdarma Objem: 50 ml Koncentrácia: Extrait de Parfum cena bez DPH : 223,58 € cena s DPH (23 %): 275,00 € do košíka: - + ks",
+     "sourceClass": "stock_yes"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 275.0,
+     "currency": "EUR",
+     "visible": "275,00 €",
+     "sourceText": "B683 EXTRAIT skladom doprava zdarma Objem: 50 ml Koncentrácia: Extrait de Parfum cena bez DPH : 223,58 € cena s DPH (23 %): 275,00 € do košíka: - + ks",
+     "vatEvidence": "Explicit product price s DPH (23 %) and official terms final VAT-inclusive prices",
+     "vatSource": "https://www.1907perfumeries.sk/mydlo-soap/3-Obchodne-podmienky"
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "sourceText": "B683 EXTRAIT skladom doprava zdarma Objem: 50 ml Koncentrácia: Extrait de Parfum cena bez DPH : 223,58 € cena s DPH (23 %): 275,00 € do košíka: - + ks"
+    },
+    "variantSelectionRequired": false,
+    "variantUrlStatus": "Concrete single-pack merchant product page; no cart integration.",
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Zelené jablko, oud a koža",
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "b683"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/723-B683-EXTRAIT",
+     "sourceText": "Vonné tóny: zelené jablko, Oud z Laosu, šafran, akord kože, pačuli, vanilka",
+     "navigationLabel": "Zelené jablko, oud a koža",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_7232302_BARROIS-B683_Extrait.webp",
+    "photoEvidence": {
+     "id": "b683",
+     "name": "B683 EXTRAIT",
+     "url": "https://www.1907perfumeries.sk/fotky11757/fotos/_vyr_7232302_BARROIS-B683_Extrait.webp",
+     "checkedAt": "2026-11-12T15:16:52.782575+00:00",
+     "sourceSha256": "ed4eda894118b4eff89fbfd38b656808c8bccbfdbd99e4c24fd11ca83758531e",
+     "sourceWidth": 1280,
+     "sourceHeight": 1280,
+     "localWidth": 1280,
+     "localHeight": 1280,
+     "localSha256": "2fd157b25978ede8b5108f6251015574501c3d29fd3fe2077d354b94c43e9ada",
+     "localPath": "/assets/s5/perfumeries1907/b683.webp",
+     "selectedPack": "50 ml",
+     "visualReview": "Official product contact sheet reviewed; no invented packaging or extra-gift claim."
+    },
+    "fragrance": {
+     "notes": [
+      "zelené jablko",
+      "Oud z Laosu",
+      "šafran",
+      "akord kože",
+      "pačuli",
+      "vanilka"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Extrait de Parfum",
+     "notesEvidence": {
+      "sourceText": "Vonné tóny: zelené jablko, Oud z Laosu, šafran, akord kože, pačuli, vanilka",
+      "displayLanguage": "sk",
+      "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/723-B683-EXTRAIT",
+      "sourceType": "Official merchant product prose; flat lists retained as flat lists."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No invented intensity, occasion, longevity, health effects, interest or sales guarantee."
+    ],
+    "lastPricePackStockCheckAt": "2026-11-13T06:44:07.590041+00:00"
+   }
+  }
+ ],
+ "revenue": "UNKNOWN",
+ "size": "UNKNOWN",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "12distinct formulas, no sample/size inflation.",
+  "Coffeee Passion excluded: product table Eau de Parfum conflicts with prose Extrait de Parfum.",
+  "Two official flat-note lists remain flat; no invented pyramids.",
+  "No eligible compatible add-on established; distinct comparisons do not add anything to basket."
+ ]
+};

@@ -1,0 +1,317 @@
+{
+  "commit": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "scope": "New reserved source packages on existing core; local fixture only, NOT registered or live Preview",
+  "paidCalls": 0,
+  "companies": {
+    "perfumeries1907": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "conduit"
+          },
+          "id": "conduit",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/591-21-Conduit-St"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "black-sea"
+          },
+          "id": "black-sea",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/660-Black-Sea"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "fathom"
+          },
+          "id": "fathom",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/42-1-BEAUFORT-LONDON/0/5/218-Fathom-V"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "ask"
+          },
+          "id": "ask",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/706-Ask"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "aldebaran"
+          },
+          "id": "aldebaran",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/692-Aldebaran-100ml"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "divanche"
+          },
+          "id": "divanche",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/694-Divanche-60ml"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "beaumont"
+          },
+          "id": "beaumont",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/755-Beaumont-Sur-Mer"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "columbine"
+          },
+          "id": "columbine",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/542-Columbine"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "baklava"
+          },
+          "id": "baklava",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/725-Baklava-Bliss"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "ali-baba"
+          },
+          "id": "ali-baba",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/705-Ali-Baba"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "cherry-ink"
+          },
+          "id": "cherry-ink",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/659-Cherry-Ink"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "b683"
+          },
+          "id": "b683",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/723-B683-EXTRAIT"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "warm"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "conduit",
+              "black-sea",
+              "fathom",
+              "ask"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "aldebaran",
+              "divanche",
+              "beaumont",
+              "columbine"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "baklava",
+              "ali-baba",
+              "cherry-ink",
+              "b683"
+            ]
+          }
+        }
+      ]
+    },
+    "ingredients": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "escentric"
+          },
+          "id": "escentric",
+          "url": "https://www.ingredients-store.com/escentric-molecules-escentric-02-extrait-de-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "tears"
+          },
+          "id": "tears",
+          "url": "https://www.ingredients-store.com/comme-des-garcons-tears-eau-de-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "uncovered"
+          },
+          "id": "uncovered",
+          "url": "https://www.ingredients-store.com/clive-christian-uncovered-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "soap"
+          },
+          "id": "soap",
+          "url": "https://www.ingredients-store.com/perfumer-h-soap-eau-de-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "milky",
+            "fragranceProfile": "sweet"
+          },
+          "id": "sweet",
+          "url": "https://www.ingredients-store.com/d-s-amp-durga-aint-that-sweet-eau-de-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "milky",
+            "fragranceProfile": "soleil"
+          },
+          "id": "soleil",
+          "url": "https://www.ingredients-store.com/chambre52-soleil-tonka-eau-de-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "milky",
+            "fragranceProfile": "fallen-milk"
+          },
+          "id": "fallen-milk",
+          "url": "https://www.ingredients-store.com/anomalia-fallen-milk-eau-de-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "milky",
+            "fragranceProfile": "velvet-tonka"
+          },
+          "id": "velvet-tonka",
+          "url": "https://www.ingredients-store.com/bdk-parfums-velvet-tonka-extrait-de-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "havana"
+          },
+          "id": "havana",
+          "url": "https://www.ingredients-store.com/byredo-havana-tonka-extrait-de-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "vanilla-affair"
+          },
+          "id": "vanilla-affair",
+          "url": "https://www.ingredients-store.com/dorsay-vanilla-affair-extrait-de-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "tobacco"
+          },
+          "id": "tobacco",
+          "url": "https://www.ingredients-store.com/chambre52-tobacco-memories-eau-de-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "ink"
+          },
+          "id": "ink",
+          "url": "https://www.ingredients-store.com/perfumer-h-ink-rewritten-by-nigel-slater-eau-de-parfum"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "milky",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "escentric",
+              "tears",
+              "uncovered",
+              "soap"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "milky"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "sweet",
+              "soleil",
+              "fallen-milk",
+              "velvet-tonka"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "havana",
+              "vanilla-affair",
+              "tobacco",
+              "ink"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

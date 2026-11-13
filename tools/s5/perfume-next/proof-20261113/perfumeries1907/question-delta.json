@@ -1,0 +1,372 @@
+{
+  "commit": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "scope": "Local question/photo/label presentation delta only, unchanged shared core, no Preview claim.",
+  "paidModelCalls": 0,
+  "questionPages": [
+    {
+      "slug": "perfumeries1907",
+      "width": 320,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy, zelené a morské tóny\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Kvety a ovocie\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "warm",
+          "text": "Drevo a gurmánske akordy\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "perfumeries1907-question-delta-0-320.png",
+      "at": "2026-11-12T15:28:54.855667+00:00"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "conduit",
+          "text": "Grapefruit, levanduľa a rebarbora\nGrapefruit, levanduľa a rebarbora.",
+          "photo": "/assets/s3/scenes-k2/lavender-bunch.jpg"
+        },
+        {
+          "id": "black-sea",
+          "text": "Morské tóny, soľ a pačuli\nMorské tóny, soľ a pačuli.",
+          "photo": "/assets/s3/scenes-k2/sea-salt.jpg"
+        },
+        {
+          "id": "fathom",
+          "text": "Borievky, zelené a zemité tóny\nBorievky, zelené a zemité tóny.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "ask",
+          "text": "Myrta, eukalyptus a borovica\nMyrta, eukalyptus a borovica.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "perfumeries1907-question-delta-1-320.png",
+      "at": "2026-11-12T15:28:56.759324+00:00"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "aldebaran",
+          "text": "Tuberóza, paprika a maté\nTuberóza, paprika a maté.",
+          "photo": "/assets/s5/perfumeries1907/aldebaran.webp"
+        },
+        {
+          "id": "divanche",
+          "text": "Hruška, gardénia a jazmín\nHruška, gardénia a jazmín.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "beaumont",
+          "text": "Kosatec, ylang-ylang a santal\nKosatec, ylang-ylang a santal.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "columbine",
+          "text": "Kosatec, neroli a vanilka\nKosatec, neroli a vanilka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "perfumeries1907-question-delta-2-320.png",
+      "at": "2026-11-12T15:28:58.533375+00:00"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "warm"
+      },
+      "options": [
+        {
+          "id": "baklava",
+          "text": "Pistácie, mliečne tóny a vanilka\nPistácie, mliečne tóny a vanilka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "ali-baba",
+          "text": "Rum, kandizovaný pomaranč a vanilka\nRum, kandizovaný pomaranč a vanilka.",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "cherry-ink",
+          "text": "Čerešne, červené víno a myrha\nČerešne, červené víno a myrha.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "b683",
+          "text": "Zelené jablko, oud a koža\nZelené jablko, oud a koža.",
+          "photo": "/assets/s5/perfumeries1907/b683.webp"
+        }
+      ],
+      "screenshot": "perfumeries1907-question-delta-3-320.png",
+      "at": "2026-11-12T15:29:00.116810+00:00"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 390,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy, zelené a morské tóny\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Kvety a ovocie\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "warm",
+          "text": "Drevo a gurmánske akordy\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "perfumeries1907-question-delta-0-390.png",
+      "at": "2026-11-12T15:29:02.064071+00:00"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "conduit",
+          "text": "Grapefruit, levanduľa a rebarbora\nGrapefruit, levanduľa a rebarbora.",
+          "photo": "/assets/s3/scenes-k2/lavender-bunch.jpg"
+        },
+        {
+          "id": "black-sea",
+          "text": "Morské tóny, soľ a pačuli\nMorské tóny, soľ a pačuli.",
+          "photo": "/assets/s3/scenes-k2/sea-salt.jpg"
+        },
+        {
+          "id": "fathom",
+          "text": "Borievky, zelené a zemité tóny\nBorievky, zelené a zemité tóny.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "ask",
+          "text": "Myrta, eukalyptus a borovica\nMyrta, eukalyptus a borovica.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "perfumeries1907-question-delta-1-390.png",
+      "at": "2026-11-12T15:29:03.734735+00:00"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "aldebaran",
+          "text": "Tuberóza, paprika a maté\nTuberóza, paprika a maté.",
+          "photo": "/assets/s5/perfumeries1907/aldebaran.webp"
+        },
+        {
+          "id": "divanche",
+          "text": "Hruška, gardénia a jazmín\nHruška, gardénia a jazmín.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "beaumont",
+          "text": "Kosatec, ylang-ylang a santal\nKosatec, ylang-ylang a santal.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "columbine",
+          "text": "Kosatec, neroli a vanilka\nKosatec, neroli a vanilka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "perfumeries1907-question-delta-2-390.png",
+      "at": "2026-11-12T15:29:05.353187+00:00"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "warm"
+      },
+      "options": [
+        {
+          "id": "baklava",
+          "text": "Pistácie, mliečne tóny a vanilka\nPistácie, mliečne tóny a vanilka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "ali-baba",
+          "text": "Rum, kandizovaný pomaranč a vanilka\nRum, kandizovaný pomaranč a vanilka.",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "cherry-ink",
+          "text": "Čerešne, červené víno a myrha\nČerešne, červené víno a myrha.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "b683",
+          "text": "Zelené jablko, oud a koža\nZelené jablko, oud a koža.",
+          "photo": "/assets/s5/perfumeries1907/b683.webp"
+        }
+      ],
+      "screenshot": "perfumeries1907-question-delta-3-390.png",
+      "at": "2026-11-12T15:29:07.339570+00:00"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Citrusy, zelené a morské tóny\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "text": "Kvety a ovocie\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "warm",
+          "text": "Drevo a gurmánske akordy\nVyberte podľa uvedených tónov.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "perfumeries1907-question-delta-0-1280.png",
+      "at": "2026-11-12T15:29:09.486953+00:00"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "conduit",
+          "text": "Grapefruit, levanduľa a rebarbora\nGrapefruit, levanduľa a rebarbora.",
+          "photo": "/assets/s3/scenes-k2/lavender-bunch.jpg"
+        },
+        {
+          "id": "black-sea",
+          "text": "Morské tóny, soľ a pačuli\nMorské tóny, soľ a pačuli.",
+          "photo": "/assets/s3/scenes-k2/sea-salt.jpg"
+        },
+        {
+          "id": "fathom",
+          "text": "Borievky, zelené a zemité tóny\nBorievky, zelené a zemité tóny.",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "ask",
+          "text": "Myrta, eukalyptus a borovica\nMyrta, eukalyptus a borovica.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "perfumeries1907-question-delta-1-1280.png",
+      "at": "2026-11-12T15:29:11.131492+00:00"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "floral"
+      },
+      "options": [
+        {
+          "id": "aldebaran",
+          "text": "Tuberóza, paprika a maté\nTuberóza, paprika a maté.",
+          "photo": "/assets/s5/perfumeries1907/aldebaran.webp"
+        },
+        {
+          "id": "divanche",
+          "text": "Hruška, gardénia a jazmín\nHruška, gardénia a jazmín.",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "beaumont",
+          "text": "Kosatec, ylang-ylang a santal\nKosatec, ylang-ylang a santal.",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "columbine",
+          "text": "Kosatec, neroli a vanilka\nKosatec, neroli a vanilka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "perfumeries1907-question-delta-2-1280.png",
+      "at": "2026-11-12T15:29:12.738383+00:00"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "warm"
+      },
+      "options": [
+        {
+          "id": "baklava",
+          "text": "Pistácie, mliečne tóny a vanilka\nPistácie, mliečne tóny a vanilka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "ali-baba",
+          "text": "Rum, kandizovaný pomaranč a vanilka\nRum, kandizovaný pomaranč a vanilka.",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "cherry-ink",
+          "text": "Čerešne, červené víno a myrha\nČerešne, červené víno a myrha.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "b683",
+          "text": "Zelené jablko, oud a koža\nZelené jablko, oud a koža.",
+          "photo": "/assets/s5/perfumeries1907/b683.webp"
+        }
+      ],
+      "screenshot": "perfumeries1907-question-delta-3-1280.png",
+      "at": "2026-11-12T15:29:14.627484+00:00"
+    }
+  ],
+  "errors": [],
+  "complete": true
+}

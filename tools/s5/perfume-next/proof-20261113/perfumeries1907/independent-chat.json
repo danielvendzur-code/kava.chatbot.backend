@@ -1,0 +1,137 @@
+{
+  "at": "2026-11-12T15:27:16.610364+00:00",
+  "commit": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "scope": "Local isolated candidate fixture only.",
+  "cards": [
+    {
+      "slug": "perfumeries1907",
+      "width": 320,
+      "id": "conduit",
+      "price": "160 €",
+      "pack": "75 ml",
+      "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/591-21-Conduit-St",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "perfumeries1907-card-0-320.png"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 320,
+      "id": "aldebaran",
+      "price": "200 €",
+      "pack": "100 ml",
+      "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/692-Aldebaran-100ml",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "perfumeries1907-card-1-320.png"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 320,
+      "id": "ali-baba",
+      "price": "110 €",
+      "pack": "30 ml",
+      "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/705-Ali-Baba",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "perfumeries1907-card-2-320.png"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 390,
+      "id": "conduit",
+      "price": "160 €",
+      "pack": "75 ml",
+      "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/591-21-Conduit-St",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "perfumeries1907-card-0-390.png"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 390,
+      "id": "aldebaran",
+      "price": "200 €",
+      "pack": "100 ml",
+      "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/692-Aldebaran-100ml",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "perfumeries1907-card-1-390.png"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 390,
+      "id": "ali-baba",
+      "price": "110 €",
+      "pack": "30 ml",
+      "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/705-Ali-Baba",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "perfumeries1907-card-2-390.png"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 1280,
+      "id": "conduit",
+      "price": "160 €",
+      "pack": "75 ml",
+      "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/591-21-Conduit-St",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "perfumeries1907-card-0-1280.png"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 1280,
+      "id": "aldebaran",
+      "price": "200 €",
+      "pack": "100 ml",
+      "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/692-Aldebaran-100ml",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "perfumeries1907-card-1-1280.png"
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 1280,
+      "id": "ali-baba",
+      "price": "110 €",
+      "pack": "30 ml",
+      "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/705-Ali-Baba",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "perfumeries1907-card-2-1280.png"
+    }
+  ],
+  "viewports": [
+    {
+      "slug": "perfumeries1907",
+      "width": 320,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 390,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    },
+    {
+      "slug": "perfumeries1907",
+      "width": 1280,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    }
+  ],
+  "errors": [],
+  "paidModelCalls": 0,
+  "complete": true,
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "browser": "webkit"
+}

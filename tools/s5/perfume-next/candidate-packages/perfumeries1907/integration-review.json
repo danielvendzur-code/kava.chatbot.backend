@@ -1,0 +1,265 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "1907 Niche Perfumeries",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/perfumeries1907/logo.png",
+      "header": "/assets/s5/perfumeries1907/logo.png",
+      "avatar": "/assets/s5/perfumeries1907/avatar.png"
+    },
+    "brand": {
+      "name": "1907 Niche Perfumeries",
+      "domain": "1907perfumeries.sk",
+      "website": "https://www.1907perfumeries.sk/",
+      "lang": "sk",
+      "fullName": "1907 Niche Perfumeries",
+      "url": "https://www.1907perfumeries.sk/",
+      "logo": "/assets/s5/perfumeries1907/logo.png",
+      "mark": "/assets/s5/perfumeries1907/avatar.png",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône 1907 podľa doložených tónov a balenia.",
+      "quickChips": [
+        "Citrusy a levanduľa",
+        "Tuberóza a maté",
+        "Rum a kandizovaný pomaranč",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#090a38",
+        "accent": "#090a38",
+        "soft": "#f6f4fa",
+        "paper": "#fff",
+        "ink": "#24212b",
+        "line": "#e5dfeb"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, zelené a morské tóny",
+        "Vyberte podľa uvedených tónov.",
+        "Citrusy, zelené a morské tóny",
+        ""
+      ],
+      "conduit": [
+        "Grapefruit, levanduľa a rebarbora",
+        "Grapefruit, levanduľa a rebarbora.",
+        "Grapefruit, levanduľa a rebarbora",
+        "Grapefruit, levanduľa a rebarbora."
+      ],
+      "black-sea": [
+        "Morské tóny, soľ a pačuli",
+        "Morské tóny, soľ a pačuli.",
+        "Morské tóny, soľ a pačuli",
+        "Morské tóny, soľ a pačuli."
+      ],
+      "fathom": [
+        "Borievky, zelené a zemité tóny",
+        "Borievky, zelené a zemité tóny.",
+        "Borievky, zelené a zemité tóny",
+        "Borievky, zelené a zemité tóny."
+      ],
+      "ask": [
+        "Myrta, eukalyptus a borovica",
+        "Myrta, eukalyptus a borovica.",
+        "Myrta, eukalyptus a borovica",
+        "Myrta, eukalyptus a borovica."
+      ],
+      "floral": [
+        "Kvety a ovocie",
+        "Vyberte podľa uvedených tónov.",
+        "Kvety a ovocie",
+        ""
+      ],
+      "aldebaran": [
+        "Tuberóza, paprika a maté",
+        "Tuberóza, paprika a maté.",
+        "Tuberóza, paprika a maté",
+        "Tuberóza, paprika a maté."
+      ],
+      "divanche": [
+        "Hruška, gardénia a jazmín",
+        "Hruška, gardénia a jazmín.",
+        "Hruška, gardénia a jazmín",
+        "Hruška, gardénia a jazmín."
+      ],
+      "beaumont": [
+        "Kosatec, ylang-ylang a santal",
+        "Kosatec, ylang-ylang a santal.",
+        "Kosatec, ylang-ylang a santal",
+        "Kosatec, ylang-ylang a santal."
+      ],
+      "columbine": [
+        "Kosatec, neroli a vanilka",
+        "Kosatec, neroli a vanilka.",
+        "Kosatec, neroli a vanilka",
+        "Kosatec, neroli a vanilka."
+      ],
+      "warm": [
+        "Drevo a gurmánske akordy",
+        "Vyberte podľa uvedených tónov.",
+        "Drevo a gurmánske akordy",
+        ""
+      ],
+      "baklava": [
+        "Pistácie, mliečne tóny a vanilka",
+        "Pistácie, mliečne tóny a vanilka.",
+        "Pistácie, mliečne tóny a vanilka",
+        "Pistácie, mliečne tóny a vanilka."
+      ],
+      "ali-baba": [
+        "Rum, kandizovaný pomaranč a vanilka",
+        "Rum, kandizovaný pomaranč a vanilka.",
+        "Rum, kandizovaný pomaranč a vanilka",
+        "Rum, kandizovaný pomaranč a vanilka."
+      ],
+      "cherry-ink": [
+        "Čerešne, červené víno a myrha",
+        "Čerešne, červené víno a myrha.",
+        "Čerešne, červené víno a myrha",
+        "Čerešne, červené víno a myrha."
+      ],
+      "b683": [
+        "Zelené jablko, oud a koža",
+        "Zelené jablko, oud a koža.",
+        "Zelené jablko, oud a koža",
+        "Zelené jablko, oud a koža."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aké tóny chcete objavovať?",
+        "Vyberte podľa doložených tónov.",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktoré tóny vás lákajú?",
+        "Vyberte jeden profil.",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "conduit": [
+        "/assets/s3/scenes-k2/lavender-bunch.jpg"
+      ],
+      "black-sea": [
+        "/assets/s3/scenes-k2/sea-salt.jpg"
+      ],
+      "fathom": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "ask": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "aldebaran": [
+        "/assets/s5/perfumeries1907/aldebaran.webp"
+      ],
+      "divanche": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "beaumont": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "columbine": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "warm": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "baklava": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "ali-baba": [
+        "/assets/s3/scenes-k2/orange-slices.jpg"
+      ],
+      "cherry-ink": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "b683": [
+        "/assets/s5/perfumeries1907/b683.webp"
+      ]
+    },
+    "compareProductIds": [
+      "conduit",
+      "black-sea"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vône · balenie · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu podľa jeho vkusu.",
+      "lead": "Výber podľa doložených tónov vedie ku konkrétnej vôni s cenou, balením a odkazom. Dve odlišné kompozície sa dajú porovnať.",
+      "includedChat": "Doložené tóny, presné balenia, ceny a porovnanie dvoch vôní.",
+      "includedAdvisor": "Tóny a konkrétny profil — na konci jedna kompozícia s presným balením.",
+      "greeting": "Vyberte si vôňu podľa doložených tónov. Pozrite si presné balenie, cenu a porovnanie dvoch rôznych kompozícií.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "conduit": "black-sea",
+        "black-sea": "fathom",
+        "fathom": "ask",
+        "ask": "conduit",
+        "aldebaran": "divanche",
+        "divanche": "beaumont",
+        "beaumont": "columbine",
+        "columbine": "aldebaran",
+        "baklava": "ali-baba",
+        "ali-baba": "cherry-ink",
+        "cherry-ink": "b683",
+        "b683": "baklava"
+      }
+    }
+  },
+  "catalogueImport": "/catalogues/perfumeries1907.js",
+  "backendBrand": "perfumeries1907",
+  "offlineRules": [
+    {
+      "chip": "Citrusy a levanduľa",
+      "match": "citrus.*levandul",
+      "productIds": [
+        "conduit"
+      ]
+    },
+    {
+      "chip": "Tuberóza a maté",
+      "match": "tuberoz.*mate",
+      "productIds": [
+        "aldebaran"
+      ]
+    },
+    {
+      "chip": "Rum a kandizovaný pomaranč",
+      "match": "rum.*kandiz",
+      "productIds": [
+        "ali-baba"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "price": "447 EUR +10 EUR/month",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}

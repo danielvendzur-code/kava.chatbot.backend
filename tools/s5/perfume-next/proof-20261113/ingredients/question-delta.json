@@ -1,0 +1,372 @@
+{
+  "commit": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "scope": "Local question/photo/label presentation delta only, unchanged shared core, no Preview claim.",
+  "paidModelCalls": 0,
+  "questionPages": [
+    {
+      "slug": "ingredients",
+      "width": 320,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Svěží, bylinné a květinové tóny",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "milky",
+          "text": "Mléko, kokos a tonka",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "text": "Tabák, rum a dřevité tóny",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "ingredients-question-delta-0-320.png",
+      "at": "2026-11-12T15:38:44.755808+00:00"
+    },
+    {
+      "slug": "ingredients",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "escentric",
+          "text": "Bergamot, jalovec a zázvor\nBergamot, jalovec a zázvor.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "tears",
+          "text": "Šalvěj, kosatec a růže\nŠalvěj, kosatec a růže.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "uncovered",
+          "text": "Eukalyptus, kosatec a slaný akord\nEukalyptus, kosatec a slaný akord.",
+          "photo": "/assets/s5/ingredients/uncovered.webp"
+        },
+        {
+          "id": "soap",
+          "text": "Aldehydy, pomerančový květ a pižmo\nAldehydy, pomerančový květ a pižmo.",
+          "photo": "/assets/s5/ingredients/soap.webp"
+        }
+      ],
+      "screenshot": "ingredients-question-delta-1-320.png",
+      "at": "2026-11-12T15:38:47.178264+00:00"
+    },
+    {
+      "slug": "ingredients",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "milky"
+      },
+      "options": [
+        {
+          "id": "sweet",
+          "text": "Datle, pralinka a kondenzované mléko\nDatle, pralinka a kondenzované mléko.",
+          "photo": "/assets/s5/ingredients/sweet.webp"
+        },
+        {
+          "id": "soleil",
+          "text": "Kokos, vanilka a fazole tonka\nKokos, vanilka a fazole tonka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "fallen-milk",
+          "text": "Matcha, mandlové mléko a pižmo\nMatcha, mandlové mléko a pižmo.",
+          "photo": "/assets/s5/ingredients/fallen-milk.webp"
+        },
+        {
+          "id": "velvet-tonka",
+          "text": "Pistácie, tonka a kůže saffiano\nPistácie, tonka a kůže saffiano.",
+          "photo": "/assets/s5/ingredients/velvet-tonka.webp"
+        }
+      ],
+      "screenshot": "ingredients-question-delta-2-320.png",
+      "at": "2026-11-12T15:38:49.948937+00:00"
+    },
+    {
+      "slug": "ingredients",
+      "width": 320,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "wood"
+      },
+      "options": [
+        {
+          "id": "havana",
+          "text": "Rum, tabák a pražené tonkové boby\nRum, tabák a pražené tonkové boby.",
+          "photo": "/assets/s5/ingredients/havana.webp"
+        },
+        {
+          "id": "vanilla-affair",
+          "text": "Tabák, vanilka a pačuli\nTabák, vanilka a pačuli.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "tobacco",
+          "text": "Višeň Morello, šafrán a tabák\nVišeň Morello, šafrán a tabák.",
+          "photo": "/assets/s5/ingredients/tobacco.webp"
+        },
+        {
+          "id": "ink",
+          "text": "Jalovcové dřevo, pepř a papyrus\nJalovcové dřevo, pepř a papyrus.",
+          "photo": "/assets/s5/ingredients/ink.webp"
+        }
+      ],
+      "screenshot": "ingredients-question-delta-3-320.png",
+      "at": "2026-11-12T15:38:52.479516+00:00"
+    },
+    {
+      "slug": "ingredients",
+      "width": 390,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Svěží, bylinné a květinové tóny",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "milky",
+          "text": "Mléko, kokos a tonka",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "text": "Tabák, rum a dřevité tóny",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "ingredients-question-delta-0-390.png",
+      "at": "2026-11-12T15:38:55.800569+00:00"
+    },
+    {
+      "slug": "ingredients",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "escentric",
+          "text": "Bergamot, jalovec a zázvor\nBergamot, jalovec a zázvor.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "tears",
+          "text": "Šalvěj, kosatec a růže\nŠalvěj, kosatec a růže.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "uncovered",
+          "text": "Eukalyptus, kosatec a slaný akord\nEukalyptus, kosatec a slaný akord.",
+          "photo": "/assets/s5/ingredients/uncovered.webp"
+        },
+        {
+          "id": "soap",
+          "text": "Aldehydy, pomerančový květ a pižmo\nAldehydy, pomerančový květ a pižmo.",
+          "photo": "/assets/s5/ingredients/soap.webp"
+        }
+      ],
+      "screenshot": "ingredients-question-delta-1-390.png",
+      "at": "2026-11-12T15:38:58.300864+00:00"
+    },
+    {
+      "slug": "ingredients",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "milky"
+      },
+      "options": [
+        {
+          "id": "sweet",
+          "text": "Datle, pralinka a kondenzované mléko\nDatle, pralinka a kondenzované mléko.",
+          "photo": "/assets/s5/ingredients/sweet.webp"
+        },
+        {
+          "id": "soleil",
+          "text": "Kokos, vanilka a fazole tonka\nKokos, vanilka a fazole tonka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "fallen-milk",
+          "text": "Matcha, mandlové mléko a pižmo\nMatcha, mandlové mléko a pižmo.",
+          "photo": "/assets/s5/ingredients/fallen-milk.webp"
+        },
+        {
+          "id": "velvet-tonka",
+          "text": "Pistácie, tonka a kůže saffiano\nPistácie, tonka a kůže saffiano.",
+          "photo": "/assets/s5/ingredients/velvet-tonka.webp"
+        }
+      ],
+      "screenshot": "ingredients-question-delta-2-390.png",
+      "at": "2026-11-12T15:39:00.815882+00:00"
+    },
+    {
+      "slug": "ingredients",
+      "width": 390,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "wood"
+      },
+      "options": [
+        {
+          "id": "havana",
+          "text": "Rum, tabák a pražené tonkové boby\nRum, tabák a pražené tonkové boby.",
+          "photo": "/assets/s5/ingredients/havana.webp"
+        },
+        {
+          "id": "vanilla-affair",
+          "text": "Tabák, vanilka a pačuli\nTabák, vanilka a pačuli.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "tobacco",
+          "text": "Višeň Morello, šafrán a tabák\nVišeň Morello, šafrán a tabák.",
+          "photo": "/assets/s5/ingredients/tobacco.webp"
+        },
+        {
+          "id": "ink",
+          "text": "Jalovcové dřevo, pepř a papyrus\nJalovcové dřevo, pepř a papyrus.",
+          "photo": "/assets/s5/ingredients/ink.webp"
+        }
+      ],
+      "screenshot": "ingredients-question-delta-3-390.png",
+      "at": "2026-11-12T15:39:03.274312+00:00"
+    },
+    {
+      "slug": "ingredients",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "answers": {},
+      "options": [
+        {
+          "id": "fresh",
+          "text": "Svěží, bylinné a květinové tóny",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "milky",
+          "text": "Mléko, kokos a tonka",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "text": "Tabák, rum a dřevité tóny",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "ingredients-question-delta-0-1280.png",
+      "at": "2026-11-12T15:39:06.678520+00:00"
+    },
+    {
+      "slug": "ingredients",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "fresh"
+      },
+      "options": [
+        {
+          "id": "escentric",
+          "text": "Bergamot, jalovec a zázvor\nBergamot, jalovec a zázvor.",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "tears",
+          "text": "Šalvěj, kosatec a růže\nŠalvěj, kosatec a růže.",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "uncovered",
+          "text": "Eukalyptus, kosatec a slaný akord\nEukalyptus, kosatec a slaný akord.",
+          "photo": "/assets/s5/ingredients/uncovered.webp"
+        },
+        {
+          "id": "soap",
+          "text": "Aldehydy, pomerančový květ a pižmo\nAldehydy, pomerančový květ a pižmo.",
+          "photo": "/assets/s5/ingredients/soap.webp"
+        }
+      ],
+      "screenshot": "ingredients-question-delta-1-1280.png",
+      "at": "2026-11-12T15:39:09.661256+00:00"
+    },
+    {
+      "slug": "ingredients",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "milky"
+      },
+      "options": [
+        {
+          "id": "sweet",
+          "text": "Datle, pralinka a kondenzované mléko\nDatle, pralinka a kondenzované mléko.",
+          "photo": "/assets/s5/ingredients/sweet.webp"
+        },
+        {
+          "id": "soleil",
+          "text": "Kokos, vanilka a fazole tonka\nKokos, vanilka a fazole tonka.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "fallen-milk",
+          "text": "Matcha, mandlové mléko a pižmo\nMatcha, mandlové mléko a pižmo.",
+          "photo": "/assets/s5/ingredients/fallen-milk.webp"
+        },
+        {
+          "id": "velvet-tonka",
+          "text": "Pistácie, tonka a kůže saffiano\nPistácie, tonka a kůže saffiano.",
+          "photo": "/assets/s5/ingredients/velvet-tonka.webp"
+        }
+      ],
+      "screenshot": "ingredients-question-delta-2-1280.png",
+      "at": "2026-11-12T15:39:12.704253+00:00"
+    },
+    {
+      "slug": "ingredients",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "answers": {
+        "fragranceDirection": "wood"
+      },
+      "options": [
+        {
+          "id": "havana",
+          "text": "Rum, tabák a pražené tonkové boby\nRum, tabák a pražené tonkové boby.",
+          "photo": "/assets/s5/ingredients/havana.webp"
+        },
+        {
+          "id": "vanilla-affair",
+          "text": "Tabák, vanilka a pačuli\nTabák, vanilka a pačuli.",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "tobacco",
+          "text": "Višeň Morello, šafrán a tabák\nVišeň Morello, šafrán a tabák.",
+          "photo": "/assets/s5/ingredients/tobacco.webp"
+        },
+        {
+          "id": "ink",
+          "text": "Jalovcové dřevo, pepř a papyrus\nJalovcové dřevo, pepř a papyrus.",
+          "photo": "/assets/s5/ingredients/ink.webp"
+        }
+      ],
+      "screenshot": "ingredients-question-delta-3-1280.png",
+      "at": "2026-11-12T15:39:14.574209+00:00"
+    }
+  ],
+  "errors": [],
+  "complete": true
+}

@@ -1,0 +1,1326 @@
+{
+  "brand": "Ingredients",
+  "domain": "ingredients-store.com",
+  "operator": {
+    "name": "ingredients s.r.o.",
+    "ico": "24173096",
+    "country": "CZ",
+    "vatId": "CZ24173096"
+  },
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "cs",
+  "country": "CZ",
+  "currency": "CZK",
+  "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+  "products": [
+    {
+      "id": "escentric",
+      "name": "Escentric Molecules Escentric 02",
+      "url": "https://www.ingredients-store.com/escentric-molecules-escentric-02-extrait-de-parfum",
+      "priceAmount": 6250,
+      "price": "6 250 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Extrait de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Bergamot, jalovec a zázvor.",
+      "reason": "Bergamot, jalovec a zázvor.",
+      "photo": "/assets/s5/ingredients/escentric.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.ingredients-store.com/escentric-molecules-escentric-02-extrait-de-parfum",
+        "verifiedAt": "2026-11-12T15:18:34.772913+00:00",
+        "sourceSha256": "e834e7da2e2caf5e21aa6b88eef1125c0520c8d02d704c70d202c3095a1e0942",
+        "stock": "PUBLIC_VARIANT_STOCK_POSITIVE",
+        "stockEvidence": {
+          "scope": "Official public product variant HTML",
+          "exactVariantId": "7077",
+          "dataStock": "5",
+          "defaultChecked": true,
+          "meaning": "Positive public variant stock; may be capped at order limit5. Not an asserted physical warehouse count or delivery promise."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 6250,
+          "currency": "CZK",
+          "exactVariantId": "7077",
+          "visibleVariantLabel": "100 ml 6 250 Kč",
+          "vatEvidence": "Official terms: price is final including VAT",
+          "vatSource": "https://www.ingredients-store.com/obchodni-podminky"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "exactVariantId": "7077",
+          "sourceText": "100 ml 6 250 Kč"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Canonical PDP has this exact default checked variant; no invented variant URL or cart integration.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.ingredients-store.com/data/images/32/escentric-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+        "photoEvidence": {
+          "id": "escentric",
+          "url": "https://www.ingredients-store.com/data/images/32/escentric-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+          "checkedAt": "2026-11-12T15:36:10.780766+00:00",
+          "exactVariantId": "7077",
+          "selectedPack": "100 ml",
+          "role": "primary",
+          "sourceSha256": "4f65447a967a8d89b26eec227d6b97873785c6e067f72df149830472ab243227",
+          "sourceWidth": 1000,
+          "sourceHeight": 1000,
+          "width": 1000,
+          "height": 1000,
+          "localSha256": "49aaee9090ab1e30bfaff4ecc7ac0c7f80122f9f5e1685f15a2289900cb98ccc",
+          "localPath": "/assets/s5/ingredients/escentric.webp"
+        },
+        "scent": "Bergamot, jalovec a zázvor",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "escentric"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.ingredients-store.com/escentric-molecules-escentric-02-extrait-de-parfum",
+          "sourceText": "Hlava: almdudler, bergamot, jalovec, mandarinka; Srdce: frézie, hedion, kosatec, růžový pepř, šalvěj, zázvor; Základ: ambroxan, fazole tonka, muskon, vetiver",
+          "navigationLabel": "Bergamot, jalovec a zázvor",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "almdudler",
+            "bergamot",
+            "jalovec",
+            "mandarinka",
+            "frézie",
+            "hedion",
+            "kosatec",
+            "růžový pepř",
+            "šalvěj",
+            "zázvor",
+            "ambroxan",
+            "fazole tonka",
+            "muskon",
+            "vetiver"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Extrait de Parfum",
+          "notesEvidence": {
+            "sourceText": "Hlava: almdudler, bergamot, jalovec, mandarinka; Srdce: frézie, hedion, kosatec, růžový pepř, šalvěj, zázvor; Základ: ambroxan, fazole tonka, muskon, vetiver",
+            "sourceUrl": "https://www.ingredients-store.com/escentric-molecules-escentric-02-extrait-de-parfum",
+            "displayLanguage": "cs",
+            "sourceType": "Official literal merchant note table or flat main-note list"
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No concentration-to-intensity inference, health claims, guaranteed longevity, stock unit count, cart integration or sales guarantee."
+        ],
+        "lastPricePackStockCheckAt": "2026-11-13T06:44:07.734762+00:00"
+      }
+    },
+    {
+      "id": "tears",
+      "name": "Comme des Garçons Tears",
+      "url": "https://www.ingredients-store.com/comme-des-garcons-tears-eau-de-parfum",
+      "priceAmount": 3900,
+      "price": "3 900 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Šalvěj, kosatec a růže.",
+      "reason": "Šalvěj, kosatec a růže.",
+      "photo": "/assets/s5/ingredients/tears.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.ingredients-store.com/comme-des-garcons-tears-eau-de-parfum",
+        "verifiedAt": "2026-11-12T15:18:35.397818+00:00",
+        "sourceSha256": "2f7e962dbeb677b4991cef6343639d4c8e4612cce0474d9301b2a54ada6bc43c",
+        "stock": "PUBLIC_VARIANT_STOCK_POSITIVE",
+        "stockEvidence": {
+          "scope": "Official public product variant HTML",
+          "exactVariantId": "7062",
+          "dataStock": "5",
+          "defaultChecked": true,
+          "meaning": "Positive public variant stock; may be capped at order limit5. Not an asserted physical warehouse count or delivery promise."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 3900,
+          "currency": "CZK",
+          "exactVariantId": "7062",
+          "visibleVariantLabel": "50 ml 3 900 Kč",
+          "vatEvidence": "Official terms: price is final including VAT",
+          "vatSource": "https://www.ingredients-store.com/obchodni-podminky"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactVariantId": "7062",
+          "sourceText": "50 ml 3 900 Kč"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Canonical PDP has this exact default checked variant; no invented variant URL or cart integration.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.ingredients-store.com/data/images/8b/tears-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+        "photoEvidence": {
+          "id": "tears",
+          "url": "https://www.ingredients-store.com/data/images/8b/tears-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+          "checkedAt": "2026-11-12T15:36:10.681369+00:00",
+          "exactVariantId": "7062",
+          "selectedPack": "50 ml",
+          "role": "primary",
+          "sourceSha256": "4957a2cb57646677d6ff84a73aa0b7dbdd870a2b5af98b3cce1d87e4cca7ca27",
+          "sourceWidth": 1000,
+          "sourceHeight": 1000,
+          "width": 1000,
+          "height": 1000,
+          "localSha256": "6c7941b30c6c07b9f0dca85dfcae013efa9040494a62eb47659dad6c2c03392a",
+          "localPath": "/assets/s5/ingredients/tears.webp"
+        },
+        "scent": "Šalvěj, kosatec a růže",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "tears"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.ingredients-store.com/comme-des-garcons-tears-eau-de-parfum",
+          "sourceText": "Hlava: ambretolid, galbanum, šalvějový olej; Srdce: kosatec, růže, šalvěj; Základ: cypriol, pižmo, seno, vetiver",
+          "navigationLabel": "Šalvěj, kosatec a růže",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "ambretolid",
+            "galbanum",
+            "šalvějový olej",
+            "kosatec",
+            "růže",
+            "šalvěj",
+            "cypriol",
+            "pižmo",
+            "seno",
+            "vetiver"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum",
+          "notesEvidence": {
+            "sourceText": "Hlava: ambretolid, galbanum, šalvějový olej; Srdce: kosatec, růže, šalvěj; Základ: cypriol, pižmo, seno, vetiver",
+            "sourceUrl": "https://www.ingredients-store.com/comme-des-garcons-tears-eau-de-parfum",
+            "displayLanguage": "cs",
+            "sourceType": "Official literal merchant note table or flat main-note list"
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No concentration-to-intensity inference, health claims, guaranteed longevity, stock unit count, cart integration or sales guarantee."
+        ],
+        "lastPricePackStockCheckAt": "2026-11-13T06:44:08.406622+00:00"
+      }
+    },
+    {
+      "id": "uncovered",
+      "name": "Clive Christian Uncovered",
+      "url": "https://www.ingredients-store.com/clive-christian-uncovered-parfum",
+      "priceAmount": 11650,
+      "price": "11 650 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Eukalyptus, kosatec a slaný akord.",
+      "reason": "Eukalyptus, kosatec a slaný akord.",
+      "photo": "/assets/s5/ingredients/uncovered.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.ingredients-store.com/clive-christian-uncovered-parfum",
+        "verifiedAt": "2026-11-12T15:18:35.643845+00:00",
+        "sourceSha256": "133b12537937d9f814deab66feaf7bf1b70bcaa0cd35ca00342cb8406c776a88",
+        "stock": "PUBLIC_VARIANT_STOCK_POSITIVE",
+        "stockEvidence": {
+          "scope": "Official public product variant HTML",
+          "exactVariantId": "7142",
+          "dataStock": "5",
+          "defaultChecked": true,
+          "meaning": "Positive public variant stock; may be capped at order limit5. Not an asserted physical warehouse count or delivery promise."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 11650,
+          "currency": "CZK",
+          "exactVariantId": "7142",
+          "visibleVariantLabel": "50 ml 11 650 Kč",
+          "vatEvidence": "Official terms: price is final including VAT",
+          "vatSource": "https://www.ingredients-store.com/obchodni-podminky"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactVariantId": "7142",
+          "sourceText": "50 ml 11 650 Kč"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Canonical PDP has this exact default checked variant; no invented variant URL or cart integration.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.ingredients-store.com/data/images/a1/unc-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+        "photoEvidence": {
+          "id": "uncovered",
+          "url": "https://www.ingredients-store.com/data/images/a1/unc-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+          "checkedAt": "2026-11-12T15:36:10.770081+00:00",
+          "exactVariantId": "7142",
+          "selectedPack": "50 ml",
+          "role": "primary",
+          "sourceSha256": "a36db082f40e43219b721e4f214574519429e5f7902c544ecdaedb364258c599",
+          "sourceWidth": 1000,
+          "sourceHeight": 1000,
+          "width": 1000,
+          "height": 1000,
+          "localSha256": "86f300963d56a43985183cbcbd5dca616f0cf22d073fd2eddfc2e236c8e89150",
+          "localPath": "/assets/s5/ingredients/uncovered.webp"
+        },
+        "scent": "Eukalyptus, kosatec a slaný akord",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "uncovered"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.ingredients-store.com/clive-christian-uncovered-parfum",
+          "sourceText": "Hlava: bergamot, eukalyptus, růžový pepř, svěží aldehydy; Srdce: kosatec, slaměnka absolute, slaný akord, ylang ylang; Základ: ambra, bílé pižmo, mech, santalové dřevo",
+          "navigationLabel": "Eukalyptus, kosatec a slaný akord",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "bergamot",
+            "eukalyptus",
+            "růžový pepř",
+            "svěží aldehydy",
+            "kosatec",
+            "slaměnka absolute",
+            "slaný akord",
+            "ylang ylang",
+            "ambra",
+            "bílé pižmo",
+            "mech",
+            "santalové dřevo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfum",
+          "notesEvidence": {
+            "sourceText": "Hlava: bergamot, eukalyptus, růžový pepř, svěží aldehydy; Srdce: kosatec, slaměnka absolute, slaný akord, ylang ylang; Základ: ambra, bílé pižmo, mech, santalové dřevo",
+            "sourceUrl": "https://www.ingredients-store.com/clive-christian-uncovered-parfum",
+            "displayLanguage": "cs",
+            "sourceType": "Official literal merchant note table or flat main-note list"
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No concentration-to-intensity inference, health claims, guaranteed longevity, stock unit count, cart integration or sales guarantee."
+        ],
+        "lastPricePackStockCheckAt": "2026-11-13T06:44:08.759108+00:00"
+      }
+    },
+    {
+      "id": "soap",
+      "name": "Perfumer H Soap",
+      "url": "https://www.ingredients-store.com/perfumer-h-soap-eau-de-parfum",
+      "priceAmount": 5500,
+      "price": "5 500 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Aldehydy, pomerančový květ a pižmo.",
+      "reason": "Aldehydy, pomerančový květ a pižmo.",
+      "photo": "/assets/s5/ingredients/soap.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.ingredients-store.com/perfumer-h-soap-eau-de-parfum",
+        "verifiedAt": "2026-11-12T15:18:34.403995+00:00",
+        "sourceSha256": "b0c514985d2b27e02feefd61c3de02d0e190330fa201070619637055fc25285b",
+        "stock": "PUBLIC_VARIANT_STOCK_POSITIVE",
+        "stockEvidence": {
+          "scope": "Official public product variant HTML",
+          "exactVariantId": "6761",
+          "dataStock": "5",
+          "defaultChecked": true,
+          "meaning": "Positive public variant stock; may be capped at order limit5. Not an asserted physical warehouse count or delivery promise."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 5500,
+          "currency": "CZK",
+          "exactVariantId": "6761",
+          "visibleVariantLabel": "50 ml 5 500 Kč",
+          "vatEvidence": "Official terms: price is final including VAT",
+          "vatSource": "https://www.ingredients-store.com/obchodni-podminky"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactVariantId": "6761",
+          "sourceText": "50 ml 5 500 Kč"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Canonical PDP has this exact default checked variant; no invented variant URL or cart integration.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.ingredients-store.com/data/images/7e/sopa-cr-2_sq_retina.1000x1600.shrink_only.q85.jpg",
+        "photoEvidence": {
+          "id": "soap",
+          "url": "https://www.ingredients-store.com/data/images/7e/sopa-cr-2_sq_retina.1000x1600.shrink_only.q85.jpg",
+          "checkedAt": "2026-11-12T15:36:10.308495+00:00",
+          "exactVariantId": "6761",
+          "selectedPack": "50 ml",
+          "role": "primary",
+          "sourceSha256": "dd7a89c56789df233f6099881a8f5754c079af76f06fd6f4e1f550b03f8b9918",
+          "sourceWidth": 1000,
+          "sourceHeight": 1000,
+          "width": 1000,
+          "height": 1000,
+          "localSha256": "cae36ab9fca10bf8319f425b29c75f63592590fe8db04b974c213123b29a2da0",
+          "localPath": "/assets/s5/ingredients/soap.webp"
+        },
+        "scent": "Aldehydy, pomerančový květ a pižmo",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "soap"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.ingredients-store.com/perfumer-h-soap-eau-de-parfum",
+          "sourceText": "Hlavní složky: aldehydy, pomerančový květ, brambořík, bílý pepř, kardamom, santalové dřevo, ambrox, tonka, bílé pižmo",
+          "navigationLabel": "Aldehydy, pomerančový květ a pižmo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "aldehydy",
+            "pomerančový květ",
+            "brambořík",
+            "bílý pepř",
+            "kardamom",
+            "santalové dřevo",
+            "ambrox",
+            "tonka",
+            "bílé pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum",
+          "notesEvidence": {
+            "sourceText": "Hlavní složky: aldehydy, pomerančový květ, brambořík, bílý pepř, kardamom, santalové dřevo, ambrox, tonka, bílé pižmo",
+            "sourceUrl": "https://www.ingredients-store.com/perfumer-h-soap-eau-de-parfum",
+            "displayLanguage": "cs",
+            "sourceType": "Official literal merchant note table or flat main-note list"
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No concentration-to-intensity inference, health claims, guaranteed longevity, stock unit count, cart integration or sales guarantee."
+        ],
+        "nameMeaning": "SOAP is the name of an Eau de Parfum; not a cleansing soap product.",
+        "lastPricePackStockCheckAt": "2026-11-13T06:44:09.712886+00:00"
+      }
+    },
+    {
+      "id": "sweet",
+      "name": "D.S. & DURGA Ain´t That Sweet",
+      "url": "https://www.ingredients-store.com/d-s-amp-durga-aint-that-sweet-eau-de-parfum",
+      "priceAmount": 4200,
+      "price": "4 200 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Datle, pralinka a kondenzované mléko.",
+      "reason": "Datle, pralinka a kondenzované mléko.",
+      "photo": "/assets/s5/ingredients/sweet.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.ingredients-store.com/d-s-amp-durga-aint-that-sweet-eau-de-parfum",
+        "verifiedAt": "2026-11-12T15:18:32.546012+00:00",
+        "sourceSha256": "7687038afb1f4e0def2b09a31396c0a30bab8234f9c0136239c97a91c5e415d5",
+        "stock": "PUBLIC_VARIANT_STOCK_POSITIVE",
+        "stockEvidence": {
+          "scope": "Official public product variant HTML",
+          "exactVariantId": "7059",
+          "dataStock": "5",
+          "defaultChecked": true,
+          "meaning": "Positive public variant stock; may be capped at order limit5. Not an asserted physical warehouse count or delivery promise."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 4200,
+          "currency": "CZK",
+          "exactVariantId": "7059",
+          "visibleVariantLabel": "50 ml 4 200 Kč",
+          "vatEvidence": "Official terms: price is final including VAT",
+          "vatSource": "https://www.ingredients-store.com/obchodni-podminky"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactVariantId": "7059",
+          "sourceText": "50 ml 4 200 Kč"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Canonical PDP has this exact default checked variant; no invented variant URL or cart integration.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.ingredients-store.com/data/images/cf/50-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+        "photoEvidence": {
+          "id": "sweet",
+          "url": "https://www.ingredients-store.com/data/images/cf/50-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+          "checkedAt": "2026-11-12T15:36:11.436411+00:00",
+          "exactVariantId": "7059",
+          "selectedPack": "50 ml",
+          "role": "primary",
+          "sourceSha256": "ad8fd0c6a92afa224acabb2815cbeb8145b79664725f6e05ea67447d16a1c24c",
+          "sourceWidth": 1000,
+          "sourceHeight": 1000,
+          "width": 1000,
+          "height": 1000,
+          "localSha256": "e492cd86d88fc53fc299f5be97f1b636d38e0d0754aad84cb2e8ebd5c33e1884",
+          "localPath": "/assets/s5/ingredients/sweet.webp"
+        },
+        "scent": "Datle, pralinka a kondenzované mléko",
+        "selectionTraits": {
+          "fragranceDirection": "milky",
+          "fragranceProfile": "sweet"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.ingredients-store.com/d-s-amp-durga-aint-that-sweet-eau-de-parfum",
+          "sourceText": "Hlava: myrha, skořice, sladkosti; Srdce: datle, lilie, pralinka; Základ: bourbonská vanilka, kondenzované mléko, muškátový oříšek",
+          "navigationLabel": "Datle, pralinka a kondenzované mléko",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "myrha",
+            "skořice",
+            "sladkosti",
+            "datle",
+            "lilie",
+            "pralinka",
+            "bourbonská vanilka",
+            "kondenzované mléko",
+            "muškátový oříšek"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum",
+          "notesEvidence": {
+            "sourceText": "Hlava: myrha, skořice, sladkosti; Srdce: datle, lilie, pralinka; Základ: bourbonská vanilka, kondenzované mléko, muškátový oříšek",
+            "sourceUrl": "https://www.ingredients-store.com/d-s-amp-durga-aint-that-sweet-eau-de-parfum",
+            "displayLanguage": "cs",
+            "sourceType": "Official literal merchant note table or flat main-note list"
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No concentration-to-intensity inference, health claims, guaranteed longevity, stock unit count, cart integration or sales guarantee."
+        ],
+        "lastPricePackStockCheckAt": "2026-11-13T06:44:10.689539+00:00"
+      }
+    },
+    {
+      "id": "soleil",
+      "name": "Chambre52 Soleil Tonka",
+      "url": "https://www.ingredients-store.com/chambre52-soleil-tonka-eau-de-parfum",
+      "priceAmount": 6000,
+      "price": "6 000 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Kokos, vanilka a fazole tonka.",
+      "reason": "Kokos, vanilka a fazole tonka.",
+      "photo": "/assets/s5/ingredients/soleil.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.ingredients-store.com/chambre52-soleil-tonka-eau-de-parfum",
+        "verifiedAt": "2026-11-12T15:18:34.587096+00:00",
+        "sourceSha256": "f3b76092b3f4a6bcb66e2fa91bd650cf21d18e9c67c748a3abdd2b066683d87e",
+        "stock": "PUBLIC_VARIANT_STOCK_POSITIVE",
+        "stockEvidence": {
+          "scope": "Official public product variant HTML",
+          "exactVariantId": "7122",
+          "dataStock": "5",
+          "defaultChecked": true,
+          "meaning": "Positive public variant stock; may be capped at order limit5. Not an asserted physical warehouse count or delivery promise."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 6000,
+          "currency": "CZK",
+          "exactVariantId": "7122",
+          "visibleVariantLabel": "100 ml 6 000 Kč",
+          "vatEvidence": "Official terms: price is final including VAT",
+          "vatSource": "https://www.ingredients-store.com/obchodni-podminky"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "exactVariantId": "7122",
+          "sourceText": "100 ml 6 000 Kč"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Canonical PDP has this exact default checked variant; no invented variant URL or cart integration.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.ingredients-store.com/data/images/35/soleil-100-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+        "photoEvidence": {
+          "id": "soleil",
+          "url": "https://www.ingredients-store.com/data/images/35/soleil-100-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+          "checkedAt": "2026-11-12T15:36:11.701572+00:00",
+          "exactVariantId": "7122",
+          "selectedPack": "100 ml",
+          "role": "primary",
+          "sourceSha256": "78f193966a1b9511148d014fbefd0b69ebcb58532fb520dcbf3dea91419fdaf9",
+          "sourceWidth": 1000,
+          "sourceHeight": 1000,
+          "width": 1000,
+          "height": 1000,
+          "localSha256": "230cfa53af27f8e7a35747ee2a2578a4d50b225091501c4d930dc7da17e5342e",
+          "localPath": "/assets/s5/ingredients/soleil.webp"
+        },
+        "scent": "Kokos, vanilka a fazole tonka",
+        "selectionTraits": {
+          "fragranceDirection": "milky",
+          "fragranceProfile": "soleil"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.ingredients-store.com/chambre52-soleil-tonka-eau-de-parfum",
+          "sourceText": "Hlava: ambrette, mořská sůl, solarys; Srdce: kokos, maté absolute, vanilka; Základ: benzoin, fazole tonka, labdanum",
+          "navigationLabel": "Kokos, vanilka a fazole tonka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "ambrette",
+            "mořská sůl",
+            "solarys",
+            "kokos",
+            "maté absolute",
+            "vanilka",
+            "benzoin",
+            "fazole tonka",
+            "labdanum"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum",
+          "notesEvidence": {
+            "sourceText": "Hlava: ambrette, mořská sůl, solarys; Srdce: kokos, maté absolute, vanilka; Základ: benzoin, fazole tonka, labdanum",
+            "sourceUrl": "https://www.ingredients-store.com/chambre52-soleil-tonka-eau-de-parfum",
+            "displayLanguage": "cs",
+            "sourceType": "Official literal merchant note table or flat main-note list"
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No concentration-to-intensity inference, health claims, guaranteed longevity, stock unit count, cart integration or sales guarantee."
+        ],
+        "upsellVariants": [
+          {
+            "parentProductId": "soleil",
+            "sameFormula": true,
+            "available": true,
+            "volume": "52 ml",
+            "priceAmount": 4250,
+            "price": "4 250 Kč",
+            "currency": "CZK",
+            "url": "https://www.ingredients-store.com/chambre52-soleil-tonka-eau-de-parfum",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/ingredients/soleil-small.webp",
+            "photoEvidence": {
+              "id": "soleil-small",
+              "url": "https://www.ingredients-store.com/data/images/ad/soleil50cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+              "checkedAt": "2026-11-12T15:36:13.222533+00:00",
+              "exactVariantId": "7121",
+              "selectedPack": "52 ml",
+              "role": "same-formula-size-variant",
+              "sourceSha256": "b400cc66e294e6e353d28ad317014b0c9a46eb56b85aacb920f3edee94a01ceb",
+              "sourceWidth": 1000,
+              "sourceHeight": 1000,
+              "width": 1000,
+              "height": 1000,
+              "localSha256": "8ee9ae307029f1fd49c93a57e352d798148cd5c20086cd57593500413b141cfe",
+              "localPath": "/assets/s5/ingredients/soleil-small.webp"
+            },
+            "evidence": {
+              "scope": "MerchantPublicHTMLVariant",
+              "exactVariantId": "7121",
+              "sourceUrl": "https://www.ingredients-store.com/chambre52-soleil-tonka-eau-de-parfum",
+              "sourceSha256": "f3b76092b3f4a6bcb66e2fa91bd650cf21d18e9c67c748a3abdd2b066683d87e",
+              "checkedAt": "2026-11-12T15:18:34.587096+00:00",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "dataStock": "5",
+              "normalization": "InStock means positive explicit variant data-stock, not promised physical unit count or delivery time.",
+              "sameFormulaEvidence": "Same canonical Soleil Tonka Eau de Parfum product, different explicit52ml radio/photograph; not another formula."
+            }
+          }
+        ],
+        "lastPricePackStockCheckAt": "2026-11-13T06:44:10.860062+00:00"
+      }
+    },
+    {
+      "id": "fallen-milk",
+      "name": "Anomalia Fallen Milk",
+      "url": "https://www.ingredients-store.com/anomalia-fallen-milk-eau-de-parfum",
+      "priceAmount": 1750,
+      "price": "1 750 Kč",
+      "currency": "CZK",
+      "volume": "15 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Matcha, mandlové mléko a pižmo.",
+      "reason": "Matcha, mandlové mléko a pižmo.",
+      "photo": "/assets/s5/ingredients/fallen-milk.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.ingredients-store.com/anomalia-fallen-milk-eau-de-parfum",
+        "verifiedAt": "2026-11-12T15:18:35.953941+00:00",
+        "sourceSha256": "e2fd805cd4a37484684a2c797f906f9f0062d1f925cd48d37df128ac3ef7b300",
+        "stock": "PUBLIC_VARIANT_STOCK_POSITIVE",
+        "stockEvidence": {
+          "scope": "Official public product variant HTML",
+          "exactVariantId": "7104",
+          "dataStock": "5",
+          "defaultChecked": true,
+          "meaning": "Positive public variant stock; may be capped at order limit5. Not an asserted physical warehouse count or delivery promise."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 1750,
+          "currency": "CZK",
+          "exactVariantId": "7104",
+          "visibleVariantLabel": "15 ml 1 750 Kč",
+          "vatEvidence": "Official terms: price is final including VAT",
+          "vatSource": "https://www.ingredients-store.com/obchodni-podminky"
+        },
+        "packEvidence": {
+          "pack": "15 ml",
+          "exactVariantId": "7104",
+          "sourceText": "15 ml 1 750 Kč"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Canonical PDP has this exact default checked variant; no invented variant URL or cart integration.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.ingredients-store.com/data/images/9c/milk-small_sq_retina.1000x1600.shrink_only.q85.jpg",
+        "photoEvidence": {
+          "id": "fallen-milk",
+          "url": "https://www.ingredients-store.com/data/images/9c/milk-small_sq_retina.1000x1600.shrink_only.q85.jpg",
+          "checkedAt": "2026-11-12T15:36:11.884661+00:00",
+          "exactVariantId": "7104",
+          "selectedPack": "15 ml",
+          "role": "primary",
+          "sourceSha256": "ad724ca4ebc3c32616d265ba65c4a600d016a6389cbebce5fe0084489f3ffed2",
+          "sourceWidth": 1000,
+          "sourceHeight": 1000,
+          "width": 1000,
+          "height": 1000,
+          "localSha256": "12d1c08f1ce3f87f495bba2770d330f1a8a989fe54f0fe605098dd0c3a51a69d",
+          "localPath": "/assets/s5/ingredients/fallen-milk.webp"
+        },
+        "scent": "Matcha, mandlové mléko a pižmo",
+        "selectionTraits": {
+          "fragranceDirection": "milky",
+          "fragranceProfile": "fallen-milk"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.ingredients-store.com/anomalia-fallen-milk-eau-de-parfum",
+          "sourceText": "Hlava: bergamot, máta nanah, růžový pepř; Srdce: akord matchy, kašmeran, mandlové mléko; Základ: bílé pižmo, fazole tonka absolute",
+          "navigationLabel": "Matcha, mandlové mléko a pižmo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "bergamot",
+            "máta nanah",
+            "růžový pepř",
+            "akord matchy",
+            "kašmeran",
+            "mandlové mléko",
+            "bílé pižmo",
+            "fazole tonka absolute"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum",
+          "notesEvidence": {
+            "sourceText": "Hlava: bergamot, máta nanah, růžový pepř; Srdce: akord matchy, kašmeran, mandlové mléko; Základ: bílé pižmo, fazole tonka absolute",
+            "sourceUrl": "https://www.ingredients-store.com/anomalia-fallen-milk-eau-de-parfum",
+            "displayLanguage": "cs",
+            "sourceType": "Official literal merchant note table or flat main-note list"
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No concentration-to-intensity inference, health claims, guaranteed longevity, stock unit count, cart integration or sales guarantee."
+        ],
+        "packMeaning": "Official factory15ml perfume SKU, not a merchant decant or extra distinct formula.",
+        "lastPricePackStockCheckAt": "2026-11-13T06:44:10.926805+00:00"
+      }
+    },
+    {
+      "id": "velvet-tonka",
+      "name": "BDK Parfums Velvet Tonka",
+      "url": "https://www.ingredients-store.com/bdk-parfums-velvet-tonka-extrait-de-parfum",
+      "priceAmount": 7000,
+      "price": "7 000 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Extrait de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Pistácie, tonka a kůže saffiano.",
+      "reason": "Pistácie, tonka a kůže saffiano.",
+      "photo": "/assets/s5/ingredients/velvet-tonka.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.ingredients-store.com/bdk-parfums-velvet-tonka-extrait-de-parfum",
+        "verifiedAt": "2026-11-12T15:18:36.145844+00:00",
+        "sourceSha256": "1a3ed493677be09bb4c3b3df59e8b66dd2b56a4b814b32faa99d298e83172886",
+        "stock": "PUBLIC_VARIANT_STOCK_POSITIVE",
+        "stockEvidence": {
+          "scope": "Official public product variant HTML",
+          "exactVariantId": "6963",
+          "dataStock": "5",
+          "defaultChecked": true,
+          "meaning": "Positive public variant stock; may be capped at order limit5. Not an asserted physical warehouse count or delivery promise."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 7000,
+          "currency": "CZK",
+          "exactVariantId": "6963",
+          "visibleVariantLabel": "100 ml 7 000 Kč",
+          "vatEvidence": "Official terms: price is final including VAT",
+          "vatSource": "https://www.ingredients-store.com/obchodni-podminky"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "exactVariantId": "6963",
+          "sourceText": "100 ml 7 000 Kč"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Canonical PDP has this exact default checked variant; no invented variant URL or cart integration.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.ingredients-store.com/data/images/02/tonka-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+        "photoEvidence": {
+          "id": "velvet-tonka",
+          "url": "https://www.ingredients-store.com/data/images/02/tonka-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+          "checkedAt": "2026-11-12T15:36:11.705359+00:00",
+          "exactVariantId": "6963",
+          "selectedPack": "100 ml",
+          "role": "primary",
+          "sourceSha256": "e65f8e672ca9381c3152e6ecfd5ee173fa835f6317f1a2614bb1d4ecf7cdfe18",
+          "sourceWidth": 1000,
+          "sourceHeight": 1000,
+          "width": 1000,
+          "height": 1000,
+          "localSha256": "42ff53d3b95c84ede0ad17c10d24d5f7bc22f7b7fa28f4edaa975f237dafc6d6",
+          "localPath": "/assets/s5/ingredients/velvet-tonka.webp"
+        },
+        "scent": "Pistácie, tonka a kůže saffiano",
+        "selectionTraits": {
+          "fragranceDirection": "milky",
+          "fragranceProfile": "velvet-tonka"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.ingredients-store.com/bdk-parfums-velvet-tonka-extrait-de-parfum",
+          "sourceText": "Hlava: cosmofruit, pistácie; Srdce: fazole tonka, květ pomerančovníku, skořice; Základ: kůže saffiano, tabák, vanilka",
+          "navigationLabel": "Pistácie, tonka a kůže saffiano",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "cosmofruit",
+            "pistácie",
+            "fazole tonka",
+            "květ pomerančovníku",
+            "skořice",
+            "kůže saffiano",
+            "tabák",
+            "vanilka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Extrait de Parfum",
+          "notesEvidence": {
+            "sourceText": "Hlava: cosmofruit, pistácie; Srdce: fazole tonka, květ pomerančovníku, skořice; Základ: kůže saffiano, tabák, vanilka",
+            "sourceUrl": "https://www.ingredients-store.com/bdk-parfums-velvet-tonka-extrait-de-parfum",
+            "displayLanguage": "cs",
+            "sourceType": "Official literal merchant note table or flat main-note list"
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No concentration-to-intensity inference, health claims, guaranteed longevity, stock unit count, cart integration or sales guarantee."
+        ],
+        "lastPricePackStockCheckAt": "2026-11-13T06:44:11.453553+00:00"
+      }
+    },
+    {
+      "id": "havana",
+      "name": "Byredo Havana Tonka",
+      "url": "https://www.ingredients-store.com/byredo-havana-tonka-extrait-de-parfum",
+      "priceAmount": 8500,
+      "price": "8 500 Kč",
+      "currency": "CZK",
+      "volume": "75 ml",
+      "category": "fragrance",
+      "kind": "Extrait de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Rum, tabák a pražené tonkové boby.",
+      "reason": "Rum, tabák a pražené tonkové boby.",
+      "photo": "/assets/s5/ingredients/havana.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.ingredients-store.com/byredo-havana-tonka-extrait-de-parfum",
+        "verifiedAt": "2026-11-12T15:18:34.012697+00:00",
+        "sourceSha256": "cf2c220d82011acbfb045fc15f5366fcfe597cdd3e3e712007157e40ebc3ef2a",
+        "stock": "PUBLIC_VARIANT_STOCK_POSITIVE",
+        "stockEvidence": {
+          "scope": "Official public product variant HTML",
+          "exactVariantId": "7052",
+          "dataStock": "5",
+          "defaultChecked": true,
+          "meaning": "Positive public variant stock; may be capped at order limit5. Not an asserted physical warehouse count or delivery promise."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 8500,
+          "currency": "CZK",
+          "exactVariantId": "7052",
+          "visibleVariantLabel": "75 ml 8 500 Kč",
+          "vatEvidence": "Official terms: price is final including VAT",
+          "vatSource": "https://www.ingredients-store.com/obchodni-podminky"
+        },
+        "packEvidence": {
+          "pack": "75 ml",
+          "exactVariantId": "7052",
+          "sourceText": "75 ml 8 500 Kč"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Canonical PDP has this exact default checked variant; no invented variant URL or cart integration.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.ingredients-store.com/data/images/ac/havana-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+        "photoEvidence": {
+          "id": "havana",
+          "url": "https://www.ingredients-store.com/data/images/ac/havana-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+          "checkedAt": "2026-11-12T15:36:11.995516+00:00",
+          "exactVariantId": "7052",
+          "selectedPack": "75 ml",
+          "role": "primary",
+          "sourceSha256": "65dff73c600df734ecac52ed4761cb527b8fa78f37c7dbc8e2fd9af90224d4c5",
+          "sourceWidth": 1000,
+          "sourceHeight": 1000,
+          "width": 1000,
+          "height": 1000,
+          "localSha256": "5d61c68adb68c263bc3f699a9fdd1c179294b0a8227eb40a8063d24da1b2c09b",
+          "localPath": "/assets/s5/ingredients/havana.webp"
+        },
+        "scent": "Rum, tabák a pražené tonkové boby",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "havana"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.ingredients-store.com/byredo-havana-tonka-extrait-de-parfum",
+          "sourceText": "Hlava: bergamot, crème brûlée, rum, růžový pepř; Srdce: bílý semiš, fialka, kašmírové dřevo, tabák; Základ: benzoin, pačuli, pižmo, pražené tonkové boby",
+          "navigationLabel": "Rum, tabák a pražené tonkové boby",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "bergamot",
+            "crème brûlée",
+            "rum",
+            "růžový pepř",
+            "bílý semiš",
+            "fialka",
+            "kašmírové dřevo",
+            "tabák",
+            "benzoin",
+            "pačuli",
+            "pižmo",
+            "pražené tonkové boby"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Extrait de Parfum",
+          "notesEvidence": {
+            "sourceText": "Hlava: bergamot, crème brûlée, rum, růžový pepř; Srdce: bílý semiš, fialka, kašmírové dřevo, tabák; Základ: benzoin, pačuli, pižmo, pražené tonkové boby",
+            "sourceUrl": "https://www.ingredients-store.com/byredo-havana-tonka-extrait-de-parfum",
+            "displayLanguage": "cs",
+            "sourceType": "Official literal merchant note table or flat main-note list"
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No concentration-to-intensity inference, health claims, guaranteed longevity, stock unit count, cart integration or sales guarantee."
+        ],
+        "lastPricePackStockCheckAt": "2026-11-13T06:44:11.835882+00:00"
+      }
+    },
+    {
+      "id": "vanilla-affair",
+      "name": "D´Orsay Vanilla Affair",
+      "url": "https://www.ingredients-store.com/dorsay-vanilla-affair-extrait-de-parfum",
+      "priceAmount": 6350,
+      "price": "6 350 Kč",
+      "currency": "CZK",
+      "volume": "90 ml",
+      "category": "fragrance",
+      "kind": "Extrait de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Tabák, vanilka a pačuli.",
+      "reason": "Tabák, vanilka a pačuli.",
+      "photo": "/assets/s5/ingredients/vanilla-affair.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.ingredients-store.com/dorsay-vanilla-affair-extrait-de-parfum",
+        "verifiedAt": "2026-11-12T15:18:35.623797+00:00",
+        "sourceSha256": "cd85415b8cb4676642790aa79776cb763038a2db5ef926102896ca396a64f5d9",
+        "stock": "PUBLIC_VARIANT_STOCK_POSITIVE",
+        "stockEvidence": {
+          "scope": "Official public product variant HTML",
+          "exactVariantId": "7043",
+          "dataStock": "5",
+          "defaultChecked": true,
+          "meaning": "Positive public variant stock; may be capped at order limit5. Not an asserted physical warehouse count or delivery promise."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 6350,
+          "currency": "CZK",
+          "exactVariantId": "7043",
+          "visibleVariantLabel": "90 ml 6 350 Kč",
+          "vatEvidence": "Official terms: price is final including VAT",
+          "vatSource": "https://www.ingredients-store.com/obchodni-podminky"
+        },
+        "packEvidence": {
+          "pack": "90 ml",
+          "exactVariantId": "7043",
+          "sourceText": "90 ml 6 350 Kč"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Canonical PDP has this exact default checked variant; no invented variant URL or cart integration.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.ingredients-store.com/data/images/bb/van-90-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+        "photoEvidence": {
+          "id": "vanilla-affair",
+          "url": "https://www.ingredients-store.com/data/images/bb/van-90-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+          "checkedAt": "2026-11-12T15:36:12.681367+00:00",
+          "exactVariantId": "7043",
+          "selectedPack": "90 ml",
+          "role": "primary",
+          "sourceSha256": "90a85bb2f872d744d2c671c62aa3dfd0cbe44a48179f190200b0b97167c17dd4",
+          "sourceWidth": 1000,
+          "sourceHeight": 1000,
+          "width": 1000,
+          "height": 1000,
+          "localSha256": "84709af0d4928e3722ab462a85799b3bdaa1ad3741b61612d07597591fa4f213",
+          "localPath": "/assets/s5/ingredients/vanilla-affair.webp"
+        },
+        "scent": "Tabák, vanilka a pačuli",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "vanilla-affair"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.ingredients-store.com/dorsay-vanilla-affair-extrait-de-parfum",
+          "sourceText": "Hlava: balkánský tabák, cistus, fazole tonka; Srdce: bourbonská vanilka, vanilka z Madagaskaru; Základ: ambra, bílé pižmo, pačuli",
+          "navigationLabel": "Tabák, vanilka a pačuli",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "balkánský tabák",
+            "cistus",
+            "fazole tonka",
+            "bourbonská vanilka",
+            "vanilka z Madagaskaru",
+            "ambra",
+            "bílé pižmo",
+            "pačuli"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Extrait de Parfum",
+          "notesEvidence": {
+            "sourceText": "Hlava: balkánský tabák, cistus, fazole tonka; Srdce: bourbonská vanilka, vanilka z Madagaskaru; Základ: ambra, bílé pižmo, pačuli",
+            "sourceUrl": "https://www.ingredients-store.com/dorsay-vanilla-affair-extrait-de-parfum",
+            "displayLanguage": "cs",
+            "sourceType": "Official literal merchant note table or flat main-note list"
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No concentration-to-intensity inference, health claims, guaranteed longevity, stock unit count, cart integration or sales guarantee."
+        ],
+        "lastPricePackStockCheckAt": "2026-11-13T06:44:12.054694+00:00"
+      }
+    },
+    {
+      "id": "tobacco",
+      "name": "Chambre52 Tobacco Memories",
+      "url": "https://www.ingredients-store.com/chambre52-tobacco-memories-eau-de-parfum",
+      "priceAmount": 6000,
+      "price": "6 000 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Višeň Morello, šafrán a tabák.",
+      "reason": "Višeň Morello, šafrán a tabák.",
+      "photo": "/assets/s5/ingredients/tobacco.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.ingredients-store.com/chambre52-tobacco-memories-eau-de-parfum",
+        "verifiedAt": "2026-11-12T15:18:36.367231+00:00",
+        "sourceSha256": "a52bab564aeecc75d5278e315d3e75de36f3dc1e4ac7edb07265a59b6f3e5de2",
+        "stock": "PUBLIC_VARIANT_STOCK_POSITIVE",
+        "stockEvidence": {
+          "scope": "Official public product variant HTML",
+          "exactVariantId": "7131",
+          "dataStock": "5",
+          "defaultChecked": true,
+          "meaning": "Positive public variant stock; may be capped at order limit5. Not an asserted physical warehouse count or delivery promise."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 6000,
+          "currency": "CZK",
+          "exactVariantId": "7131",
+          "visibleVariantLabel": "100 ml 6 000 Kč",
+          "vatEvidence": "Official terms: price is final including VAT",
+          "vatSource": "https://www.ingredients-store.com/obchodni-podminky"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "exactVariantId": "7131",
+          "sourceText": "100 ml 6 000 Kč"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Canonical PDP has this exact default checked variant; no invented variant URL or cart integration.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.ingredients-store.com/data/images/03/tobacco-100-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+        "photoEvidence": {
+          "id": "tobacco",
+          "url": "https://www.ingredients-store.com/data/images/03/tobacco-100-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+          "checkedAt": "2026-11-12T15:36:12.490847+00:00",
+          "exactVariantId": "7131",
+          "selectedPack": "100 ml",
+          "role": "primary",
+          "sourceSha256": "f6d58d0f324aeaccf2970a7e13a8c420a6147a12812121bd57cc415e744c34c5",
+          "sourceWidth": 1000,
+          "sourceHeight": 1000,
+          "width": 1000,
+          "height": 1000,
+          "localSha256": "47ca3f511647cc76054063086faed98934e3b0a59d0c8e5eb24bfc1879b53fc6",
+          "localPath": "/assets/s5/ingredients/tobacco.webp"
+        },
+        "scent": "Višeň Morello, šafrán a tabák",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "tobacco"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.ingredients-store.com/chambre52-tobacco-memories-eau-de-parfum",
+          "sourceText": "Hlava: jalovec, šafrán, višeň Morello; Srdce: kosatec absolute, tabák absolute; Základ: kadidlo, mech, vanilka",
+          "navigationLabel": "Višeň Morello, šafrán a tabák",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "jalovec",
+            "šafrán",
+            "višeň Morello",
+            "kosatec absolute",
+            "tabák absolute",
+            "kadidlo",
+            "mech",
+            "vanilka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum",
+          "notesEvidence": {
+            "sourceText": "Hlava: jalovec, šafrán, višeň Morello; Srdce: kosatec absolute, tabák absolute; Základ: kadidlo, mech, vanilka",
+            "sourceUrl": "https://www.ingredients-store.com/chambre52-tobacco-memories-eau-de-parfum",
+            "displayLanguage": "cs",
+            "sourceType": "Official literal merchant note table or flat main-note list"
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No concentration-to-intensity inference, health claims, guaranteed longevity, stock unit count, cart integration or sales guarantee."
+        ],
+        "lastPricePackStockCheckAt": "2026-11-13T06:44:12.077842+00:00"
+      }
+    },
+    {
+      "id": "ink",
+      "name": "Perfumer H Ink Rewritten by Nigel Slater",
+      "url": "https://www.ingredients-store.com/perfumer-h-ink-rewritten-by-nigel-slater-eau-de-parfum",
+      "priceAmount": 4650,
+      "price": "4 650 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Eau de Parfum",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Jalovcové dřevo, pepř a papyrus.",
+      "reason": "Jalovcové dřevo, pepř a papyrus.",
+      "photo": "/assets/s5/ingredients/ink.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.ingredients-store.com/perfumer-h-ink-rewritten-by-nigel-slater-eau-de-parfum",
+        "verifiedAt": "2026-11-12T15:18:35.814384+00:00",
+        "sourceSha256": "33a5250bdef0518b605eb317ba5bf34a1405a2c43bf39d852d15d6a91382b578",
+        "stock": "PUBLIC_VARIANT_STOCK_POSITIVE",
+        "stockEvidence": {
+          "scope": "Official public product variant HTML",
+          "exactVariantId": "6141",
+          "dataStock": "5",
+          "defaultChecked": true,
+          "meaning": "Positive public variant stock; may be capped at order limit5. Not an asserted physical warehouse count or delivery promise."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 4650,
+          "currency": "CZK",
+          "exactVariantId": "6141",
+          "visibleVariantLabel": "50 ml 4 650 Kč",
+          "vatEvidence": "Official terms: price is final including VAT",
+          "vatSource": "https://www.ingredients-store.com/obchodni-podminky"
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "exactVariantId": "6141",
+          "sourceText": "50 ml 4 650 Kč"
+        },
+        "variantSelectionRequired": false,
+        "variantUrlStatus": "Canonical PDP has this exact default checked variant; no invented variant URL or cart integration.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://www.ingredients-store.com/data/images/78/edp-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+        "photoEvidence": {
+          "id": "ink",
+          "url": "https://www.ingredients-store.com/data/images/78/edp-cr_sq_retina.1000x1600.shrink_only.q85.jpg",
+          "checkedAt": "2026-11-12T15:36:12.614822+00:00",
+          "exactVariantId": "6141",
+          "selectedPack": "50 ml",
+          "role": "primary",
+          "sourceSha256": "61c87946b9bf6491f68eb0168d3d435fbcdae9319d322e816d44b5256087f54f",
+          "sourceWidth": 1000,
+          "sourceHeight": 1000,
+          "width": 1000,
+          "height": 1000,
+          "localSha256": "8503ff79b731536ad5f74dea3a052a60e75513f153e5977c0bf6c674a366fb7a",
+          "localPath": "/assets/s5/ingredients/ink.webp"
+        },
+        "scent": "Jalovcové dřevo, pepř a papyrus",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "ink"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.ingredients-store.com/perfumer-h-ink-rewritten-by-nigel-slater-eau-de-parfum",
+          "sourceText": "Hlavní složky: jalovcové dřevo (Francie), růže absolute (Turecko), černý pepř, andělika (Francie), cedrové dřevo (Virginie), papyrus (Indie), santalové dřevo, ambroxan",
+          "navigationLabel": "Jalovcové dřevo, pepř a papyrus",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "fragrance": {
+          "notes": [
+            "jalovcové dřevo (Francie)",
+            "růže absolute (Turecko)",
+            "černý pepř",
+            "andělika (Francie)",
+            "cedrové dřevo (Virginie)",
+            "papyrus (Indie)",
+            "santalové dřevo",
+            "ambroxan"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de Parfum",
+          "notesEvidence": {
+            "sourceText": "Hlavní složky: jalovcové dřevo (Francie), růže absolute (Turecko), černý pepř, andělika (Francie), cedrové dřevo (Virginie), papyrus (Indie), santalové dřevo, ambroxan",
+            "sourceUrl": "https://www.ingredients-store.com/perfumer-h-ink-rewritten-by-nigel-slater-eau-de-parfum",
+            "displayLanguage": "cs",
+            "sourceType": "Official literal merchant note table or flat main-note list"
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No concentration-to-intensity inference, health claims, guaranteed longevity, stock unit count, cart integration or sales guarantee."
+        ],
+        "lastPricePackStockCheckAt": "2026-11-13T06:44:12.515946+00:00"
+      }
+    }
+  ],
+  "revenue": "UNKNOWN",
+  "size": "UNKNOWN",
+  "interest": "NOT_ESTABLISHED",
+  "notes": [
+    "12distinct formulas, one extra52ml Soleil pack is not a13thformula.",
+    "Public stock values may be capped5; no actual warehouse units claimed.",
+    "Perfumer H SOAP is perfume, not soap. FallenMilk15ml is an original factory SKU, not a decant.",
+    "Existing SampleService is a manual five-sample set builder with catalogue filters, not observed automatic guided recommendations. Do not offer fake sample-set/cart integration.",
+    "PRICING_REVIEW and FIT_REVIEW retained;447+10 unchanged, no guaranteed interest."
+  ]
+}

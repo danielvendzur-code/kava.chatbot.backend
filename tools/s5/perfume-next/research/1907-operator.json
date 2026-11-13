@@ -1,0 +1,21 @@
+{
+  "source": "https://api.statistics.sk/rpo/v1/search?identifier=45303487",
+  "retrievalFileMtime": "2026-11-12T14:58:00.885181+00:00",
+  "id": 767365,
+  "identifiers": [
+    {
+      "value": "45303487",
+      "validFrom": "2009-12-09"
+    }
+  ],
+  "fullNames": [
+    {
+      "value": "1907 s.r.o.",
+      "validFrom": "2009-12-09"
+    }
+  ],
+  "establishment": "2009-12-09",
+  "dbModificationDate": "2025-07-07",
+  "dissolutionReturned": null,
+  "scope": "Official company record, no returned dissolution; not an independently published active flag or turnover."
+}

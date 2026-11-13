@@ -1,0 +1,102 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaké tóny chcete objevovat?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Svěží, bylinné a květinové tóny",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "escentric",
+          "label": "Bergamot, jalovec a zázvor",
+          "productId": "escentric",
+          "sourceUrl": "https://www.ingredients-store.com/escentric-molecules-escentric-02-extrait-de-parfum"
+        },
+        {
+          "value": "tears",
+          "label": "Šalvěj, kosatec a růže",
+          "productId": "tears",
+          "sourceUrl": "https://www.ingredients-store.com/comme-des-garcons-tears-eau-de-parfum"
+        },
+        {
+          "value": "uncovered",
+          "label": "Eukalyptus, kosatec a slaný akord",
+          "productId": "uncovered",
+          "sourceUrl": "https://www.ingredients-store.com/clive-christian-uncovered-parfum"
+        },
+        {
+          "value": "soap",
+          "label": "Aldehydy, pomerančový květ a pižmo",
+          "productId": "soap",
+          "sourceUrl": "https://www.ingredients-store.com/perfumer-h-soap-eau-de-parfum"
+        }
+      ]
+    },
+    {
+      "value": "milky",
+      "label": "Mléko, kokos a tonka",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "sweet",
+          "label": "Datle, pralinka a kondenzované mléko",
+          "productId": "sweet",
+          "sourceUrl": "https://www.ingredients-store.com/d-s-amp-durga-aint-that-sweet-eau-de-parfum"
+        },
+        {
+          "value": "soleil",
+          "label": "Kokos, vanilka a fazole tonka",
+          "productId": "soleil",
+          "sourceUrl": "https://www.ingredients-store.com/chambre52-soleil-tonka-eau-de-parfum"
+        },
+        {
+          "value": "fallen-milk",
+          "label": "Matcha, mandlové mléko a pižmo",
+          "productId": "fallen-milk",
+          "sourceUrl": "https://www.ingredients-store.com/anomalia-fallen-milk-eau-de-parfum"
+        },
+        {
+          "value": "velvet-tonka",
+          "label": "Pistácie, tonka a kůže saffiano",
+          "productId": "velvet-tonka",
+          "sourceUrl": "https://www.ingredients-store.com/bdk-parfums-velvet-tonka-extrait-de-parfum"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Tabák, rum a dřevité tóny",
+      "key": "fragranceProfile",
+      "question": "Které tóny vás lákají?",
+      "options": [
+        {
+          "value": "havana",
+          "label": "Rum, tabák a pražené tonkové boby",
+          "productId": "havana",
+          "sourceUrl": "https://www.ingredients-store.com/byredo-havana-tonka-extrait-de-parfum"
+        },
+        {
+          "value": "vanilla-affair",
+          "label": "Tabák, vanilka a pačuli",
+          "productId": "vanilla-affair",
+          "sourceUrl": "https://www.ingredients-store.com/dorsay-vanilla-affair-extrait-de-parfum"
+        },
+        {
+          "value": "tobacco",
+          "label": "Višeň Morello, šafrán a tabák",
+          "productId": "tobacco",
+          "sourceUrl": "https://www.ingredients-store.com/chambre52-tobacco-memories-eau-de-parfum"
+        },
+        {
+          "value": "ink",
+          "label": "Jalovcové dřevo, pepř a papyrus",
+          "productId": "ink",
+          "sourceUrl": "https://www.ingredients-store.com/perfumer-h-ink-rewritten-by-nigel-slater-eau-de-parfum"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "at": "2026-11-13T06:40:50.525975+00:00",
+  "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+  "coreBase": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "paidCalls": 0,
+  "scope": "New source packages only; UI uses immutable existing S5 core and mocked source-ID answers, no registered backend or merchant chat/model calls",
+  "companies": {
+    "perfumeries1907": {
+      "views": [
+        {
+          "width": 320,
+          "results": 12,
+          "questions": 4,
+          "enrichedStates": 12
+        },
+        {
+          "width": 390,
+          "results": 12,
+          "questions": 4,
+          "enrichedStates": 12
+        },
+        {
+          "width": 1280,
+          "results": 12,
+          "questions": 4,
+          "enrichedStates": 12
+        }
+      ],
+      "sourceFormulas": 12,
+      "focusedChatCards": 9,
+      "finalQuestionViews": 12,
+      "imagesArchived": 153,
+      "archive": "perfumeries1907-local-fixture-qa.zip",
+      "archiveBytes": 19088627,
+      "archiveSha256": "1beae22ed2978c5b72e783f127650864292d97b7370f19a73a22d1cdee54444a"
+    },
+    "ingredients": {
+      "views": [
+        {
+          "width": 320,
+          "results": 12,
+          "questions": 4,
+          "enrichedStates": 12
+        },
+        {
+          "width": 390,
+          "results": 12,
+          "questions": 4,
+          "enrichedStates": 12
+        },
+        {
+          "width": 1280,
+          "results": 12,
+          "questions": 4,
+          "enrichedStates": 12
+        }
+      ],
+      "sourceFormulas": 12,
+      "focusedChatCards": 9,
+      "finalQuestionViews": 12,
+      "imagesArchived": 156,
+      "archive": "ingredients-local-fixture-qa.zip",
+      "archiveBytes": 17254199,
+      "archiveSha256": "fba37afcb16340f723c495e531940c762fd8546ff296b2bd177a8990a1495d0e"
+    }
+  }
+}

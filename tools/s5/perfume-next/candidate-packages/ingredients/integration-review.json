@@ -1,0 +1,269 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Ingredients",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/ingredients/logo.png",
+      "header": "/assets/s5/ingredients/logo.png",
+      "avatar": "/assets/s5/ingredients/avatar.png"
+    },
+    "brand": {
+      "name": "Ingredients",
+      "domain": "ingredients-store.com",
+      "website": "https://www.ingredients-store.com/",
+      "lang": "cs",
+      "fullName": "Ingredients",
+      "url": "https://www.ingredients-store.com/vune",
+      "logo": "/assets/s5/ingredients/logo.png",
+      "mark": "/assets/s5/ingredients/avatar.png",
+      "greeting": "Dobrý den. Pomůžu vám porovnat vybrané vůně Ingredients podle doložených tónů a balení.",
+      "quickChips": [
+        "Bergamot, jalovec a zázvor",
+        "Kokos, vanilka a tonka",
+        "Jalovcové dřevo a papyrus",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#141414",
+        "accent": "#141414",
+        "soft": "#f7f6f3",
+        "paper": "#fff",
+        "ink": "#222",
+        "line": "#e6e3dd"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Svěží, bylinné a květinové tóny",
+        "Vyberte podle uvedených tónů.",
+        "Svěží, bylinné a květinové tóny",
+        ""
+      ],
+      "escentric": [
+        "Bergamot, jalovec a zázvor",
+        "Bergamot, jalovec a zázvor.",
+        "Bergamot, jalovec a zázvor",
+        "Bergamot, jalovec a zázvor."
+      ],
+      "tears": [
+        "Šalvěj, kosatec a růže",
+        "Šalvěj, kosatec a růže.",
+        "Šalvěj, kosatec a růže",
+        "Šalvěj, kosatec a růže."
+      ],
+      "uncovered": [
+        "Eukalyptus, kosatec a slaný akord",
+        "Eukalyptus, kosatec a slaný akord.",
+        "Eukalyptus, kosatec a slaný akord",
+        "Eukalyptus, kosatec a slaný akord."
+      ],
+      "soap": [
+        "Aldehydy, pomerančový květ a pižmo",
+        "Aldehydy, pomerančový květ a pižmo.",
+        "Aldehydy, pomerančový květ a pižmo",
+        "Aldehydy, pomerančový květ a pižmo."
+      ],
+      "milky": [
+        "Mléko, kokos a tonka",
+        "Vyberte podle uvedených tónů.",
+        "Mléko, kokos a tonka",
+        ""
+      ],
+      "sweet": [
+        "Datle, pralinka a kondenzované mléko",
+        "Datle, pralinka a kondenzované mléko.",
+        "Datle, pralinka a kondenzované mléko",
+        "Datle, pralinka a kondenzované mléko."
+      ],
+      "soleil": [
+        "Kokos, vanilka a fazole tonka",
+        "Kokos, vanilka a fazole tonka.",
+        "Kokos, vanilka a fazole tonka",
+        "Kokos, vanilka a fazole tonka."
+      ],
+      "fallen-milk": [
+        "Matcha, mandlové mléko a pižmo",
+        "Matcha, mandlové mléko a pižmo.",
+        "Matcha, mandlové mléko a pižmo",
+        "Matcha, mandlové mléko a pižmo."
+      ],
+      "velvet-tonka": [
+        "Pistácie, tonka a kůže saffiano",
+        "Pistácie, tonka a kůže saffiano.",
+        "Pistácie, tonka a kůže saffiano",
+        "Pistácie, tonka a kůže saffiano."
+      ],
+      "wood": [
+        "Tabák, rum a dřevité tóny",
+        "Vyberte podle uvedených tónů.",
+        "Tabák, rum a dřevité tóny",
+        ""
+      ],
+      "havana": [
+        "Rum, tabák a pražené tonkové boby",
+        "Rum, tabák a pražené tonkové boby.",
+        "Rum, tabák a pražené tonkové boby",
+        "Rum, tabák a pražené tonkové boby."
+      ],
+      "vanilla-affair": [
+        "Tabák, vanilka a pačuli",
+        "Tabák, vanilka a pačuli.",
+        "Tabák, vanilka a pačuli",
+        "Tabák, vanilka a pačuli."
+      ],
+      "tobacco": [
+        "Višeň Morello, šafrán a tabák",
+        "Višeň Morello, šafrán a tabák.",
+        "Višeň Morello, šafrán a tabák",
+        "Višeň Morello, šafrán a tabák."
+      ],
+      "ink": [
+        "Jalovcové dřevo, pepř a papyrus",
+        "Jalovcové dřevo, pepř a papyrus.",
+        "Jalovcové dřevo, pepř a papyrus",
+        "Jalovcové dřevo, pepř a papyrus."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaké tóny chcete objevovat?",
+        "Vyberte podle doložených tónů.",
+        "Tóny vůně"
+      ],
+      "fragranceProfile": [
+        "Které tóny vás lákají?",
+        "Vyberte jeden profil.",
+        "Tóny vůně"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "escentric": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "tears": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "uncovered": [
+        "/assets/s5/ingredients/uncovered.webp"
+      ],
+      "soap": [
+        "/assets/s5/ingredients/soap.webp"
+      ],
+      "milky": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "sweet": [
+        "/assets/s5/ingredients/sweet.webp"
+      ],
+      "soleil": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "fallen-milk": [
+        "/assets/s5/ingredients/fallen-milk.webp"
+      ],
+      "velvet-tonka": [
+        "/assets/s5/ingredients/velvet-tonka.webp"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "havana": [
+        "/assets/s5/ingredients/havana.webp"
+      ],
+      "vanilla-affair": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "tobacco": [
+        "/assets/s5/ingredients/tobacco.webp"
+      ],
+      "ink": [
+        "/assets/s5/ingredients/ink.webp"
+      ]
+    },
+    "compareProductIds": [
+      "escentric",
+      "tears"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vůně · balení · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce vůní",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr podle doložených tónů vede ke konkrétní vůni s cenou, balením a odkazem. U Soleil Tonka lze dobrovolně přidat menší 52 ml balení.",
+      "includedChat": "Doložené tóny, přesná balení, ceny a porovnání dvou kompozic.",
+      "includedAdvisor": "Tóny a konkrétní profil — na konci jedna kompozice.",
+      "greeting": "Vyberte vůni podle doložených tónů a porovnejte dvě různé kompozice.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít poradce pro výběr vůně",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "escentric": "tears",
+        "tears": "uncovered",
+        "uncovered": "soap",
+        "soap": "escentric",
+        "sweet": "soleil",
+        "soleil": "fallen-milk",
+        "fallen-milk": "velvet-tonka",
+        "velvet-tonka": "sweet",
+        "havana": "vanilla-affair",
+        "vanilla-affair": "tobacco",
+        "tobacco": "ink",
+        "ink": "havana"
+      }
+    }
+  },
+  "catalogueImport": "/catalogues/ingredients.js",
+  "backendBrand": "ingredients",
+  "offlineRules": [
+    {
+      "chip": "Bergamot, jalovec a zázvor",
+      "match": "bergamot.*jalovec.*zazvor",
+      "productIds": [
+        "escentric"
+      ]
+    },
+    {
+      "chip": "Kokos, vanilka a tonka",
+      "match": "kokos.*vanilka.*tonka",
+      "productIds": [
+        "soleil"
+      ]
+    },
+    {
+      "chip": "Jalovcové dřevo a papyrus",
+      "match": "jalovc.*drev.*papyrus",
+      "productIds": [
+        "ink"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "price": "447 EUR +10 EUR/month",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "requiredReviews": [
+    "PRICING_REVIEW",
+    "FIT_REVIEW_EXISTING_MANUAL_SAMPLE_SERVICE"
+  ]
+}

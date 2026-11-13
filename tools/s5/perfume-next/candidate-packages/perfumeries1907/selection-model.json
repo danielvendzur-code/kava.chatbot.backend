@@ -1,0 +1,102 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aké tóny chcete objavovať?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy, zelené a morské tóny",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "conduit",
+          "label": "Grapefruit, levanduľa a rebarbora",
+          "productId": "conduit",
+          "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/591-21-Conduit-St"
+        },
+        {
+          "value": "black-sea",
+          "label": "Morské tóny, soľ a pačuli",
+          "productId": "black-sea",
+          "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/660-Black-Sea"
+        },
+        {
+          "value": "fathom",
+          "label": "Borievky, zelené a zemité tóny",
+          "productId": "fathom",
+          "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/42-1-BEAUFORT-LONDON/0/5/218-Fathom-V"
+        },
+        {
+          "value": "ask",
+          "label": "Myrta, eukalyptus a borovica",
+          "productId": "ask",
+          "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/706-Ask"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Kvety a ovocie",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "aldebaran",
+          "label": "Tuberóza, paprika a maté",
+          "productId": "aldebaran",
+          "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/692-Aldebaran-100ml"
+        },
+        {
+          "value": "divanche",
+          "label": "Hruška, gardénia a jazmín",
+          "productId": "divanche",
+          "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/694-Divanche-60ml"
+        },
+        {
+          "value": "beaumont",
+          "label": "Kosatec, ylang-ylang a santal",
+          "productId": "beaumont",
+          "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/755-Beaumont-Sur-Mer"
+        },
+        {
+          "value": "columbine",
+          "label": "Kosatec, neroli a vanilka",
+          "productId": "columbine",
+          "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/542-Columbine"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Drevo a gurmánske akordy",
+      "key": "fragranceProfile",
+      "question": "Ktoré tóny vás lákajú?",
+      "options": [
+        {
+          "value": "baklava",
+          "label": "Pistácie, mliečne tóny a vanilka",
+          "productId": "baklava",
+          "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/725-Baklava-Bliss"
+        },
+        {
+          "value": "ali-baba",
+          "label": "Rum, kandizovaný pomaranč a vanilka",
+          "productId": "ali-baba",
+          "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/705-Ali-Baba"
+        },
+        {
+          "value": "cherry-ink",
+          "label": "Čerešne, červené víno a myrha",
+          "productId": "cherry-ink",
+          "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/659-Cherry-Ink"
+        },
+        {
+          "value": "b683",
+          "label": "Zelené jablko, oud a koža",
+          "productId": "b683",
+          "sourceUrl": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/723-B683-EXTRAIT"
+        }
+      ]
+    }
+  ]
+}
