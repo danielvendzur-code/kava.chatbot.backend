@@ -1273,5 +1273,22 @@
     "Coffeee Passion excluded: product table Eau de Parfum conflicts with prose Extrait de Parfum.",
     "Two official flat-note lists remain flat; no invented pyramids.",
     "No eligible compatible add-on established; distinct comparisons do not add anything to basket."
-  ]
+  ],
+  "commercialEligibility": {
+    "operator": "1907 s.r.o.",
+    "ico": "45303487",
+    "year": 2025,
+    "currency": "EUR",
+    "salesGoods": 312589,
+    "salesProductsServices": 440,
+    "salesSum": 313029,
+    "status": "PASS_NUMERICAL_CAP",
+    "sourceType": "official RUZ structured report and template row mapping",
+    "sources": [
+      "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10193060",
+      "https://www.registeruz.sk/cruz-public/api/sablona?id=687",
+      "https://www.registeruz.sk/cruz-public/api/uctovna-zavierka?id=6900785"
+    ],
+    "qualification": "Sum of sales rows 02 and 03, not profit/assets. Row01 operating income also313029. PDF download403, no bypass. Structured API accessible. EUR corroboration from secondary FinStat indexed report; PDF unit header not independently viewed."
+  }
 }

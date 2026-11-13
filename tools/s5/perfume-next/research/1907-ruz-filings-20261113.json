@@ -1,0 +1,63 @@
+[
+  {
+    "source": "https://www.registeruz.sk/cruz-public/api/uctovna-zavierka?id=6900785",
+    "checkedAt": "2026-11-13T07:06:43.993386+00:00",
+    "data": {
+      "id": 6900785,
+      "datumZostaveniaK": "2025-12-31",
+      "idUJ": 1072213,
+      "idUctovnychVykazov": [
+        10193060
+      ],
+      "zdrojDat": "FRSR",
+      "datumPoslednejUpravy": "2026-06-02",
+      "typ": "Riadna",
+      "obdobieOd": "2025-01",
+      "datumZostavenia": "2026-05-28",
+      "obdobieDo": "2025-12",
+      "datumPodania": "2026-06-01"
+    }
+  },
+  {
+    "source": "https://www.registeruz.sk/cruz-public/api/uctovna-zavierka?id=6577023",
+    "checkedAt": "2026-11-13T07:06:44.208096+00:00",
+    "data": {
+      "id": 6577023,
+      "datumZostaveniaK": "2024-12-31",
+      "idUJ": 1072213,
+      "idUctovnychVykazov": [
+        9806118,
+        9854434
+      ],
+      "datumPoslednejUpravy": "2025-12-20",
+      "zdrojDat": "FRSR",
+      "obdobieOd": "2024-01",
+      "obdobieDo": "2024-12",
+      "datumPodania": "2025-08-05",
+      "datumZostavenia": "2025-04-29",
+      "datumSchvalenia": "2025-12-18",
+      "typ": "Riadna"
+    }
+  },
+  {
+    "source": "https://www.registeruz.sk/cruz-public/api/uctovna-zavierka?id=5966153",
+    "checkedAt": "2026-11-13T07:06:43.816626+00:00",
+    "data": {
+      "id": 5966153,
+      "datumZostaveniaK": "2023-12-31",
+      "idUJ": 1072213,
+      "idUctovnychVykazov": [
+        9288440,
+        9094663
+      ],
+      "zdrojDat": "FRSR",
+      "datumPoslednejUpravy": "2024-10-25",
+      "typ": "Riadna",
+      "obdobieOd": "2023-01",
+      "datumZostavenia": "2024-05-30",
+      "datumSchvalenia": "2024-10-15",
+      "obdobieDo": "2023-12",
+      "datumPodania": "2024-05-31"
+    }
+  }
+]

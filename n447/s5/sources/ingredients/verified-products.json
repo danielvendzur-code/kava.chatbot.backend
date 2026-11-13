@@ -1322,5 +1322,22 @@
     "Perfumer H SOAP is perfume, not soap. FallenMilk15ml is an original factory SKU, not a decant.",
     "Existing SampleService is a manual five-sample set builder with catalogue filters, not observed automatic guided recommendations. Do not offer fake sample-set/cart integration.",
     "PRICING_REVIEW and FIT_REVIEW retained;447+10 unchanged, no guaranteed interest."
-  ]
+  ],
+  "commercialEligibility": {
+    "operator": "ingredients s.r.o.",
+    "ico": "24173096",
+    "year": 2024,
+    "currency": "CZK",
+    "turnoverBand": [
+      200000000,
+      300000000
+    ],
+    "exactLatestRevenue": "UNKNOWN",
+    "status": "HOLD_SECONDARY_ABOVE_CAP_PENDING_PRIMARY",
+    "sourceType": "secondary public band attributed by source to CSU2024",
+    "sources": [
+      "https://www.chytryrejstrik.cz/ico-24173096/ingredients-s-r-o"
+    ],
+    "qualification": "Not an exact verified latest revenue figure; sufficient conservative reason to pause under new targeting policy. No paid unlock/account. Existing local QA remains valid technically, package not integrated."
+  }
 }

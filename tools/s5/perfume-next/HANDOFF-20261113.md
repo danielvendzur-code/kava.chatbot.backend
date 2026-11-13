@@ -1,3 +1,5 @@
+> AKTUALIZÁCIA13Nov: nový tržbový strop500000EUR/12000000CZK. Ingredients HOLD_SECONDARY_ABOVE_CAP_PENDING_PRIMARY — nezačleňovať ani neoslovovať. 1907 číselne313029 za2025 pod stropom, obmedzenie jednotkovej hlavičky v REVENUE-POLICY-20261113.md. Staršie UNKNOWN nižšie je historický stav pred finančnou previerkou.
+
 # Ďalšie dve firmy — odovzdanie13Nov2026
 
 Stav oboch: LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW. Základ42b47d93861d22ea8a143e120d8a6a3c102975a1, izolovaná vetva codex/s5-perfume-next-20261112. Žiadny existujúci spoločný runtime súbor sa nemení. Počet26Preview-overených týmto nezvyšujeme na28. Žiadne vlastné nové subdomény/produkcia/mailbox/PR/DNS/provider/kľúče/platené volania.

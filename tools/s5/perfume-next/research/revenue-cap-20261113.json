@@ -1,0 +1,55 @@
+{
+  "checkedAt": "2026-11-13T07:12:19.752176+00:00",
+  "owner": "PERFUME_WORKER",
+  "policy": {
+    "EUR": 500000,
+    "CZK": 12000000,
+    "period": "latest available full financial year",
+    "comparison": "inclusive maximum; currency thresholds are separate working limits, not an asserted FX conversion",
+    "unknown": "HOLD_SIZE_UNKNOWN; no assumption of small turnover",
+    "metric": "annual sales/turnover of legal operator; never profit, assets, shop SKU count or contract value",
+    "aboveCap": "Stop further preparation/integration/outreach; preserve existing work",
+    "priority": "Prefer smaller independent operators within the ceiling"
+  },
+  "companies": {
+    "perfumeries1907": {
+      "operator": "1907 s.r.o.",
+      "ico": "45303487",
+      "year": 2025,
+      "currency": "EUR",
+      "salesGoods": 312589,
+      "salesProductsServices": 440,
+      "salesSum": 313029,
+      "status": "PASS_NUMERICAL_CAP",
+      "sourceType": "official RUZ structured report and template row mapping",
+      "sources": [
+        "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10193060",
+        "https://www.registeruz.sk/cruz-public/api/sablona?id=687",
+        "https://www.registeruz.sk/cruz-public/api/uctovna-zavierka?id=6900785"
+      ],
+      "qualification": "Sum of sales rows 02 and 03, not profit/assets. Row01 operating income also313029. PDF download403, no bypass. Structured API accessible. EUR corroboration from secondary FinStat indexed report; PDF unit header not independently viewed."
+    },
+    "ingredients": {
+      "operator": "ingredients s.r.o.",
+      "ico": "24173096",
+      "year": 2024,
+      "currency": "CZK",
+      "turnoverBand": [
+        200000000,
+        300000000
+      ],
+      "exactLatestRevenue": "UNKNOWN",
+      "status": "HOLD_SECONDARY_ABOVE_CAP_PENDING_PRIMARY",
+      "sourceType": "secondary public band attributed by source to CSU2024",
+      "sources": [
+        "https://www.chytryrejstrik.cz/ico-24173096/ingredients-s-r-o"
+      ],
+      "qualification": "Not an exact verified latest revenue figure; sufficient conservative reason to pause under new targeting policy. No paid unlock/account. Existing local QA remains valid technically, package not integrated."
+    },
+    "perfumedprague": {
+      "ico": "09597204",
+      "revenue": "UNKNOWN",
+      "status": "HOLD_SIZE_UNKNOWN_NOT_RESERVED"
+    }
+  }
+}
