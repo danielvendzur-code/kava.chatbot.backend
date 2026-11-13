@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-13T16:51:46.493583+00:00",
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "runtimeBase": "ebf1cc8e72d5d24b79c4839d4e76486610c0dbd4",
+  "commonFilesModified": [],
+  "paidCalls": 0,
+  "productionChanges": 0,
+  "mailActions": 0,
+  "totalFinalLocalResults": 36,
+  "countAsLiveReady": false,
+  "companies": {
+    "luxparfum": {
+      "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "formulas": 6,
+      "localResults": 18,
+      "proof": "tools/s5/perfume-wave3/proof/luxparfum/manifest.json",
+      "config": "n447/s5/perfume-fragments/luxparfum.config.json",
+      "catalogue": "catalogues/luxparfum.js"
+    },
+    "atmanperfumes": {
+      "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "formulas": 6,
+      "localResults": 18,
+      "proof": "tools/s5/perfume-wave3/proof/atmanperfumes/manifest.json",
+      "config": "n447/s5/perfume-fragments/atmanperfumes.config.json",
+      "catalogue": "catalogues/atmanperfumes.js"
+    }
+  }
+}

@@ -109,11 +109,12 @@ globalThis.CX_CATALOGUES.atmanperfumes = {
      "concentrationDisplay": "Extrait de Parfum",
      "notesEvidence": {
       "url": "https://www.atmanperfumes.com/product-page/ambra-rossa",
-      "sourceText": "Top:  divoká malina, červené ovocie, jablko Srdce:  pomarančový kvet, jazmín, ruža, kosatec Báza:  thajský naturálny oud, laoský naturálny oud, ambra, céder",
+      "sourceText": "Hlava: divoká malina, červené ovocie, jablko; Srdce: pomarančový kvet, jazmín, ruža, kosatec; Základ: thajský naturálny oud, laoský naturálny oud, ambra, céder",
+      "originalSourceText": "Top:  divoká malina, červené ovocie, jablko Srdce:  pomarančový kvet, jazmín, ruža, kosatec Báza:  thajský naturálny oud, laoský naturálny oud, ambra, céder",
       "displayText": "Hlava: divoká malina, červené ovocie, jablko; Srdce: pomarančový kvet, jazmín, ruža, kosatec; Základ: thajský naturálny oud, laoský naturálny oud, ambra, céder",
       "sourceLanguage": "sk",
       "displayLanguage": "sk",
-      "scope": "Literalofficialpyramid; Top andBaza displayed asHlava/Zaklad; no extraquantitativeweights/intensity/lasting/healthclaims."
+      "scope": "Faithfulstructuredtranscription of officialpyramid: originalSourceText retains Top/Srdce/Baza, sourceTextnormalizes stageheadings toHlava/Srdce/Zaklad; notephrasesunchanged. No numericweights/intensity/lasting/healthclaims."
      }
     },
     "complementForProductUrls": [],
@@ -211,11 +212,12 @@ globalThis.CX_CATALOGUES.atmanperfumes = {
      "concentrationDisplay": "Extrait de Parfum",
      "notesEvidence": {
       "url": "https://www.atmanperfumes.com/product-page/contesse",
-      "sourceText": "Top:  hruška, mandarínka, kalábrijský bergamot Srdce:  neroli, pomarančový kvet, jazmín sambac absolute, absolue zemolezu Základ : ambra, benzoin, madagaskarská vanilka, biele pižmo",
+      "sourceText": "Hlava: hruška, mandarínka, kalábrijský bergamot; Srdce: neroli, pomarančový kvet, jazmín sambac absolute, absolue zemolezu; Základ: ambra, benzoin, madagaskarská vanilka, biele pižmo",
+      "originalSourceText": "Top:  hruška, mandarínka, kalábrijský bergamot Srdce:  neroli, pomarančový kvet, jazmín sambac absolute, absolue zemolezu Základ : ambra, benzoin, madagaskarská vanilka, biele pižmo",
       "displayText": "Hlava: hruška, mandarínka, kalábrijský bergamot; Srdce: neroli, pomarančový kvet, jazmín sambac absolute, absolue zemolezu; Základ: ambra, benzoin, madagaskarská vanilka, biele pižmo",
       "sourceLanguage": "sk",
       "displayLanguage": "sk",
-      "scope": "Literalofficialpyramid; Top andBaza displayed asHlava/Zaklad; no extraquantitativeweights/intensity/lasting/healthclaims."
+      "scope": "Faithfulstructuredtranscription of officialpyramid: originalSourceText retains Top/Srdce/Baza, sourceTextnormalizes stageheadings toHlava/Srdce/Zaklad; notephrasesunchanged. No numericweights/intensity/lasting/healthclaims."
      }
     },
     "complementForProductUrls": [],
@@ -312,11 +314,12 @@ globalThis.CX_CATALOGUES.atmanperfumes = {
      "concentrationDisplay": "Extrait de Parfum",
      "notesEvidence": {
       "url": "https://www.atmanperfumes.com/product-page/aura-blanc",
-      "sourceText": "Top:  čierne ríbezle, lesné ovocie, citrón Srdce:  čaj, ryža, jablko, jazmín Báza:  céder, biele pižmo, ambra",
+      "sourceText": "Hlava: čierne ríbezle, lesné ovocie, citrón; Srdce: čaj, ryža, jablko, jazmín; Základ: céder, biele pižmo, ambra",
+      "originalSourceText": "Top:  čierne ríbezle, lesné ovocie, citrón Srdce:  čaj, ryža, jablko, jazmín Báza:  céder, biele pižmo, ambra",
       "displayText": "Hlava: čierne ríbezle, lesné ovocie, citrón; Srdce: čaj, ryža, jablko, jazmín; Základ: céder, biele pižmo, ambra",
       "sourceLanguage": "sk",
       "displayLanguage": "sk",
-      "scope": "Literalofficialpyramid; Top andBaza displayed asHlava/Zaklad; no extraquantitativeweights/intensity/lasting/healthclaims."
+      "scope": "Faithfulstructuredtranscription of officialpyramid: originalSourceText retains Top/Srdce/Baza, sourceTextnormalizes stageheadings toHlava/Srdce/Zaklad; notephrasesunchanged. No numericweights/intensity/lasting/healthclaims."
      }
     },
     "complementForProductUrls": [],
@@ -415,11 +418,12 @@ globalThis.CX_CATALOGUES.atmanperfumes = {
      "concentrationDisplay": "Extrait de Parfum",
      "notesEvidence": {
       "url": "https://www.atmanperfumes.com/product-page/sole-intimo-extrait-de-parfum",
-      "sourceText": "Top:  chinotto, citrón, bergamot, pikantné korenie Srdce:  neroli, rozmarín, morské tóny, jazmín Báza:  biele pižmo, vetiver, ambra, dubový mach",
+      "sourceText": "Hlava: chinotto, citrón, bergamot, pikantné korenie; Srdce: neroli, rozmarín, morské tóny, jazmín; Základ: biele pižmo, vetiver, ambra, dubový mach",
+      "originalSourceText": "Top:  chinotto, citrón, bergamot, pikantné korenie Srdce:  neroli, rozmarín, morské tóny, jazmín Báza:  biele pižmo, vetiver, ambra, dubový mach",
       "displayText": "Hlava: chinotto, citrón, bergamot, pikantné korenie; Srdce: neroli, rozmarín, morské tóny, jazmín; Základ: biele pižmo, vetiver, ambra, dubový mach",
       "sourceLanguage": "sk",
       "displayLanguage": "sk",
-      "scope": "Literalofficialpyramid; Top andBaza displayed asHlava/Zaklad; no extraquantitativeweights/intensity/lasting/healthclaims."
+      "scope": "Faithfulstructuredtranscription of officialpyramid: originalSourceText retains Top/Srdce/Baza, sourceTextnormalizes stageheadings toHlava/Srdce/Zaklad; notephrasesunchanged. No numericweights/intensity/lasting/healthclaims."
      }
     },
     "complementForProductUrls": [],
@@ -520,11 +524,12 @@ globalThis.CX_CATALOGUES.atmanperfumes = {
      "concentrationDisplay": "Extrait de Parfum",
      "notesEvidence": {
       "url": "https://www.atmanperfumes.com/product-page/oxymoron-extrait-de-parfum",
-      "sourceText": "Top:  grapefruit, bergamot, morský akord, chinotto Srdce:  hruška, čierne korenie, rozmarín, čierna koža Báza:  toffee, pačuli, vanilka, tonka, dubový mach, pižmo",
+      "sourceText": "Hlava: grapefruit, bergamot, morský akord, chinotto; Srdce: hruška, čierne korenie, rozmarín, čierna koža; Základ: toffee, pačuli, vanilka, tonka, dubový mach, pižmo",
+      "originalSourceText": "Top:  grapefruit, bergamot, morský akord, chinotto Srdce:  hruška, čierne korenie, rozmarín, čierna koža Báza:  toffee, pačuli, vanilka, tonka, dubový mach, pižmo",
       "displayText": "Hlava: grapefruit, bergamot, morský akord, chinotto; Srdce: hruška, čierne korenie, rozmarín, čierna koža; Základ: toffee, pačuli, vanilka, tonka, dubový mach, pižmo",
       "sourceLanguage": "sk",
       "displayLanguage": "sk",
-      "scope": "Literalofficialpyramid; Top andBaza displayed asHlava/Zaklad; no extraquantitativeweights/intensity/lasting/healthclaims."
+      "scope": "Faithfulstructuredtranscription of officialpyramid: originalSourceText retains Top/Srdce/Baza, sourceTextnormalizes stageheadings toHlava/Srdce/Zaklad; notephrasesunchanged. No numericweights/intensity/lasting/healthclaims."
      }
     },
     "complementForProductUrls": [],
@@ -621,11 +626,12 @@ globalThis.CX_CATALOGUES.atmanperfumes = {
      "concentrationDisplay": "Extrait de Parfum",
      "notesEvidence": {
       "url": "https://www.atmanperfumes.com/product-page/tramonto-extrait-de-parfum",
-      "sourceText": "Top:  citrus, akvatické tóny Srdce:  morský vánok, jemné korenie, ibiš Základ : dymový oud, mach, vetiver, pižmo, kašmír",
+      "sourceText": "Hlava: citrus, akvatické tóny; Srdce: morský vánok, jemné korenie, ibiš; Základ: dymový oud, mach, vetiver, pižmo, kašmír",
+      "originalSourceText": "Top:  citrus, akvatické tóny Srdce:  morský vánok, jemné korenie, ibiš Základ : dymový oud, mach, vetiver, pižmo, kašmír",
       "displayText": "Hlava: citrus, akvatické tóny; Srdce: morský vánok, jemné korenie, ibiš; Základ: dymový oud, mach, vetiver, pižmo, kašmír",
       "sourceLanguage": "sk",
       "displayLanguage": "sk",
-      "scope": "Literalofficialpyramid; Top andBaza displayed asHlava/Zaklad; no extraquantitativeweights/intensity/lasting/healthclaims."
+      "scope": "Faithfulstructuredtranscription of officialpyramid: originalSourceText retains Top/Srdce/Baza, sourceTextnormalizes stageheadings toHlava/Srdce/Zaklad; notephrasesunchanged. No numericweights/intensity/lasting/healthclaims."
      }
     },
     "complementForProductUrls": [],

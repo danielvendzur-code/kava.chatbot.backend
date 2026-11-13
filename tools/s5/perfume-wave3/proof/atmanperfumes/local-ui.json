@@ -1,0 +1,977 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "ebf1cc8e72d5d24b79c4839d4e76486610c0dbd4",
+  "at": "2026-11-13T16:49:28.635543+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "id": "ambra-rossa",
+      "pack": "30 ml",
+      "price": "149,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/ambra-rossa",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-ambra-rossa-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "id": "contesse",
+      "pack": "30 ml",
+      "price": "149,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/contesse",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-contesse-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "id": "aura-blanc",
+      "pack": "30 ml",
+      "price": "129,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/aura-blanc",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-aura-blanc-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "id": "sole-intimo",
+      "pack": "30 ml",
+      "price": "129,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/sole-intimo-extrait-de-parfum",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-sole-intimo-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "id": "oxymoron",
+      "pack": "30 ml",
+      "price": "129,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/oxymoron-extrait-de-parfum",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-oxymoron-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "id": "tramonto",
+      "pack": "30 ml",
+      "price": "129,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/tramonto-extrait-de-parfum",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-tramonto-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "id": "ambra-rossa",
+      "pack": "30 ml",
+      "price": "149,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/ambra-rossa",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-ambra-rossa-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "id": "contesse",
+      "pack": "30 ml",
+      "price": "149,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/contesse",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-contesse-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "id": "aura-blanc",
+      "pack": "30 ml",
+      "price": "129,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/aura-blanc",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-aura-blanc-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "id": "sole-intimo",
+      "pack": "30 ml",
+      "price": "129,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/sole-intimo-extrait-de-parfum",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-sole-intimo-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "id": "oxymoron",
+      "pack": "30 ml",
+      "price": "129,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/oxymoron-extrait-de-parfum",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-oxymoron-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "id": "tramonto",
+      "pack": "30 ml",
+      "price": "129,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/tramonto-extrait-de-parfum",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-tramonto-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "id": "ambra-rossa",
+      "pack": "30 ml",
+      "price": "149,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/ambra-rossa",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-ambra-rossa-1280.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "id": "contesse",
+      "pack": "30 ml",
+      "price": "149,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/contesse",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-contesse-1280.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "id": "aura-blanc",
+      "pack": "30 ml",
+      "price": "129,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/aura-blanc",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-aura-blanc-1280.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "id": "sole-intimo",
+      "pack": "30 ml",
+      "price": "129,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/sole-intimo-extrait-de-parfum",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-sole-intimo-1280.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "id": "oxymoron",
+      "pack": "30 ml",
+      "price": "129,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/oxymoron-extrait-de-parfum",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-oxymoron-1280.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "id": "tramonto",
+      "pack": "30 ml",
+      "price": "129,00 €",
+      "url": "https://www.atmanperfumes.com/product-page/tramonto-extrait-de-parfum",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "atmanperfumes-result-tramonto-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "depth",
+          "photo": "/assets/s5/atmanperfumes/oxymoron.jpg"
+        }
+      ],
+      "screenshot": "atmanperfumes-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "ambra-rossa",
+          "photo": "/assets/s5/atmanperfumes/ambra-rossa.jpg"
+        },
+        {
+          "id": "contesse",
+          "photo": "/assets/s5/atmanperfumes/contesse.jpg"
+        }
+      ],
+      "screenshot": "atmanperfumes-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "aura-blanc",
+          "photo": "/assets/s5/atmanperfumes/aura-blanc.jpg"
+        },
+        {
+          "id": "sole-intimo",
+          "photo": "/assets/s5/atmanperfumes/sole-intimo.jpg"
+        }
+      ],
+      "screenshot": "atmanperfumes-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "oxymoron",
+          "photo": "/assets/s5/atmanperfumes/oxymoron.jpg"
+        },
+        {
+          "id": "tramonto",
+          "photo": "/assets/s5/atmanperfumes/tramonto.jpg"
+        }
+      ],
+      "screenshot": "atmanperfumes-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "depth",
+          "photo": "/assets/s5/atmanperfumes/oxymoron.jpg"
+        }
+      ],
+      "screenshot": "atmanperfumes-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "ambra-rossa",
+          "photo": "/assets/s5/atmanperfumes/ambra-rossa.jpg"
+        },
+        {
+          "id": "contesse",
+          "photo": "/assets/s5/atmanperfumes/contesse.jpg"
+        }
+      ],
+      "screenshot": "atmanperfumes-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "aura-blanc",
+          "photo": "/assets/s5/atmanperfumes/aura-blanc.jpg"
+        },
+        {
+          "id": "sole-intimo",
+          "photo": "/assets/s5/atmanperfumes/sole-intimo.jpg"
+        }
+      ],
+      "screenshot": "atmanperfumes-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "oxymoron",
+          "photo": "/assets/s5/atmanperfumes/oxymoron.jpg"
+        },
+        {
+          "id": "tramonto",
+          "photo": "/assets/s5/atmanperfumes/tramonto.jpg"
+        }
+      ],
+      "screenshot": "atmanperfumes-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "depth",
+          "photo": "/assets/s5/atmanperfumes/oxymoron.jpg"
+        }
+      ],
+      "screenshot": "atmanperfumes-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "ambra-rossa",
+          "photo": "/assets/s5/atmanperfumes/ambra-rossa.jpg"
+        },
+        {
+          "id": "contesse",
+          "photo": "/assets/s5/atmanperfumes/contesse.jpg"
+        }
+      ],
+      "screenshot": "atmanperfumes-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "aura-blanc",
+          "photo": "/assets/s5/atmanperfumes/aura-blanc.jpg"
+        },
+        {
+          "id": "sole-intimo",
+          "photo": "/assets/s5/atmanperfumes/sole-intimo.jpg"
+        }
+      ],
+      "screenshot": "atmanperfumes-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "oxymoron",
+          "photo": "/assets/s5/atmanperfumes/oxymoron.jpg"
+        },
+        {
+          "id": "tramonto",
+          "photo": "/assets/s5/atmanperfumes/tramonto.jpg"
+        }
+      ],
+      "screenshot": "atmanperfumes-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ambra-rossa",
+        "sole-intimo"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "atmanperfumes-compare-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ambra-rossa",
+        "sole-intimo"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "atmanperfumes-compare-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ambra-rossa",
+        "sole-intimo"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "atmanperfumes-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "noteProfiles": [
+    {
+      "slug": "atmanperfumes",
+      "id": "ambra-rossa",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "divoká malina, červené ovocie, jablko",
+        "pomarančový kvet, jazmín, ruža, kosatec",
+        "thajský naturálny oud, laoský naturálny oud, ambra, céder"
+      ],
+      "screenshot": "atmanperfumes-note-profile-ambra-rossa-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "contesse",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "hruška, mandarínka, kalábrijský bergamot",
+        "neroli, pomarančový kvet, jazmín sambac absolute, absolue zemolezu",
+        "ambra, benzoin, madagaskarská vanilka, biele pižmo"
+      ],
+      "screenshot": "atmanperfumes-note-profile-contesse-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "aura-blanc",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "čierne ríbezle, lesné ovocie, citrón",
+        "čaj, ryža, jablko, jazmín",
+        "céder, biele pižmo, ambra"
+      ],
+      "screenshot": "atmanperfumes-note-profile-aura-blanc-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "sole-intimo",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "chinotto, citrón, bergamot, pikantné korenie",
+        "neroli, rozmarín, morské tóny, jazmín",
+        "biele pižmo, vetiver, ambra, dubový mach"
+      ],
+      "screenshot": "atmanperfumes-note-profile-sole-intimo-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "oxymoron",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "grapefruit, bergamot, morský akord, chinotto",
+        "hruška, čierne korenie, rozmarín, čierna koža",
+        "toffee, pačuli, vanilka, tonka, dubový mach, pižmo"
+      ],
+      "screenshot": "atmanperfumes-note-profile-oxymoron-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "tramonto",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "citrus, akvatické tóny",
+        "morský vánok, jemné korenie, ibiš",
+        "dymový oud, mach, vetiver, pižmo, kašmír"
+      ],
+      "screenshot": "atmanperfumes-note-profile-tramonto-320.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "ambra-rossa",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "divoká malina, červené ovocie, jablko",
+        "pomarančový kvet, jazmín, ruža, kosatec",
+        "thajský naturálny oud, laoský naturálny oud, ambra, céder"
+      ],
+      "screenshot": "atmanperfumes-note-profile-ambra-rossa-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "contesse",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "hruška, mandarínka, kalábrijský bergamot",
+        "neroli, pomarančový kvet, jazmín sambac absolute, absolue zemolezu",
+        "ambra, benzoin, madagaskarská vanilka, biele pižmo"
+      ],
+      "screenshot": "atmanperfumes-note-profile-contesse-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "aura-blanc",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "čierne ríbezle, lesné ovocie, citrón",
+        "čaj, ryža, jablko, jazmín",
+        "céder, biele pižmo, ambra"
+      ],
+      "screenshot": "atmanperfumes-note-profile-aura-blanc-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "sole-intimo",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "chinotto, citrón, bergamot, pikantné korenie",
+        "neroli, rozmarín, morské tóny, jazmín",
+        "biele pižmo, vetiver, ambra, dubový mach"
+      ],
+      "screenshot": "atmanperfumes-note-profile-sole-intimo-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "oxymoron",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "grapefruit, bergamot, morský akord, chinotto",
+        "hruška, čierne korenie, rozmarín, čierna koža",
+        "toffee, pačuli, vanilka, tonka, dubový mach, pižmo"
+      ],
+      "screenshot": "atmanperfumes-note-profile-oxymoron-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "tramonto",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "citrus, akvatické tóny",
+        "morský vánok, jemné korenie, ibiš",
+        "dymový oud, mach, vetiver, pižmo, kašmír"
+      ],
+      "screenshot": "atmanperfumes-note-profile-tramonto-390.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "ambra-rossa",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "divoká malina, červené ovocie, jablko",
+        "pomarančový kvet, jazmín, ruža, kosatec",
+        "thajský naturálny oud, laoský naturálny oud, ambra, céder"
+      ],
+      "screenshot": "atmanperfumes-note-profile-ambra-rossa-1280.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "contesse",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "hruška, mandarínka, kalábrijský bergamot",
+        "neroli, pomarančový kvet, jazmín sambac absolute, absolue zemolezu",
+        "ambra, benzoin, madagaskarská vanilka, biele pižmo"
+      ],
+      "screenshot": "atmanperfumes-note-profile-contesse-1280.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "aura-blanc",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "čierne ríbezle, lesné ovocie, citrón",
+        "čaj, ryža, jablko, jazmín",
+        "céder, biele pižmo, ambra"
+      ],
+      "screenshot": "atmanperfumes-note-profile-aura-blanc-1280.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "sole-intimo",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "chinotto, citrón, bergamot, pikantné korenie",
+        "neroli, rozmarín, morské tóny, jazmín",
+        "biele pižmo, vetiver, ambra, dubový mach"
+      ],
+      "screenshot": "atmanperfumes-note-profile-sole-intimo-1280.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "oxymoron",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "grapefruit, bergamot, morský akord, chinotto",
+        "hruška, čierne korenie, rozmarín, čierna koža",
+        "toffee, pačuli, vanilka, tonka, dubový mach, pižmo"
+      ],
+      "screenshot": "atmanperfumes-note-profile-oxymoron-1280.png"
+    },
+    {
+      "slug": "atmanperfumes",
+      "id": "tramonto",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "citrus, akvatické tóny",
+        "morský vánok, jemné korenie, ibiš",
+        "dymový oud, mach, vetiver, pižmo, kašmír"
+      ],
+      "screenshot": "atmanperfumes-note-profile-tramonto-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "id": "ambra-rossa",
+      "defaultScreenshot": "atmanperfumes-result-ambra-rossa-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-ambra-rossa-320.png",
+      "comparisonIds": [
+        "ambra-rossa",
+        "contesse"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "id": "contesse",
+      "defaultScreenshot": "atmanperfumes-result-contesse-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-contesse-320.png",
+      "comparisonIds": [
+        "contesse",
+        "ambra-rossa"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "id": "aura-blanc",
+      "defaultScreenshot": "atmanperfumes-result-aura-blanc-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-aura-blanc-320.png",
+      "comparisonIds": [
+        "aura-blanc",
+        "sole-intimo"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "id": "sole-intimo",
+      "defaultScreenshot": "atmanperfumes-result-sole-intimo-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-sole-intimo-320.png",
+      "comparisonIds": [
+        "sole-intimo",
+        "aura-blanc"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "id": "oxymoron",
+      "defaultScreenshot": "atmanperfumes-result-oxymoron-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-oxymoron-320.png",
+      "comparisonIds": [
+        "oxymoron",
+        "tramonto"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 320,
+      "id": "tramonto",
+      "defaultScreenshot": "atmanperfumes-result-tramonto-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-tramonto-320.png",
+      "comparisonIds": [
+        "tramonto",
+        "oxymoron"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "id": "ambra-rossa",
+      "defaultScreenshot": "atmanperfumes-result-ambra-rossa-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-ambra-rossa-390.png",
+      "comparisonIds": [
+        "ambra-rossa",
+        "contesse"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "id": "contesse",
+      "defaultScreenshot": "atmanperfumes-result-contesse-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-contesse-390.png",
+      "comparisonIds": [
+        "contesse",
+        "ambra-rossa"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "id": "aura-blanc",
+      "defaultScreenshot": "atmanperfumes-result-aura-blanc-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-aura-blanc-390.png",
+      "comparisonIds": [
+        "aura-blanc",
+        "sole-intimo"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "id": "sole-intimo",
+      "defaultScreenshot": "atmanperfumes-result-sole-intimo-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-sole-intimo-390.png",
+      "comparisonIds": [
+        "sole-intimo",
+        "aura-blanc"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "id": "oxymoron",
+      "defaultScreenshot": "atmanperfumes-result-oxymoron-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-oxymoron-390.png",
+      "comparisonIds": [
+        "oxymoron",
+        "tramonto"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 390,
+      "id": "tramonto",
+      "defaultScreenshot": "atmanperfumes-result-tramonto-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-tramonto-390.png",
+      "comparisonIds": [
+        "tramonto",
+        "oxymoron"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "id": "ambra-rossa",
+      "defaultScreenshot": "atmanperfumes-result-ambra-rossa-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-ambra-rossa-1280.png",
+      "comparisonIds": [
+        "ambra-rossa",
+        "contesse"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "id": "contesse",
+      "defaultScreenshot": "atmanperfumes-result-contesse-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-contesse-1280.png",
+      "comparisonIds": [
+        "contesse",
+        "ambra-rossa"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "id": "aura-blanc",
+      "defaultScreenshot": "atmanperfumes-result-aura-blanc-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-aura-blanc-1280.png",
+      "comparisonIds": [
+        "aura-blanc",
+        "sole-intimo"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "id": "sole-intimo",
+      "defaultScreenshot": "atmanperfumes-result-sole-intimo-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-sole-intimo-1280.png",
+      "comparisonIds": [
+        "sole-intimo",
+        "aura-blanc"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "id": "oxymoron",
+      "defaultScreenshot": "atmanperfumes-result-oxymoron-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-oxymoron-1280.png",
+      "comparisonIds": [
+        "oxymoron",
+        "tramonto"
+      ]
+    },
+    {
+      "slug": "atmanperfumes",
+      "width": 1280,
+      "id": "tramonto",
+      "defaultScreenshot": "atmanperfumes-result-tramonto-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "atmanperfumes-pair-tramonto-1280.png",
+      "comparisonIds": [
+        "tramonto",
+        "oxymoron"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

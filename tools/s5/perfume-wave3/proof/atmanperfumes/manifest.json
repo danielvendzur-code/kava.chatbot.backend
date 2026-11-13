@@ -1,0 +1,444 @@
+{
+  "at": "2026-11-13T16:51:46.331016+00:00",
+  "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+  "runtimeBase": "ebf1cc8e72d5d24b79c4839d4e76486610c0dbd4",
+  "localResults": 18,
+  "distinctFormulas": 6,
+  "paidCalls": 0,
+  "visualReview": "All18fixed primary outcomes visuallyreviewed via320/390/1280contact sheets, allsixoriginalgalleryphotos reviewed, merchanthome/product reviewed. ActualwhiteSVGlogo visible on darkbackground; literalTop/Baza headings faithfully normalized withoutchangingnotephrases.",
+  "priorRun": "Original18testviews passed mechanicalchecks but visualreview foundwhiteonwhitelogo andflatfallback. Originalrawscreens retainedlocally; thisproofsupersedes priorrun/firstsource558ATMAN. No sharedenginefix.",
+  "archiveBytes": 7835675,
+  "sha256": "cc9e26b546b370af6353f3202a647e2f4acba2a7415b6cc92c996fcfa444836e",
+  "entries": [
+    {
+      "name": "atman-live/home.png",
+      "bytes": 348312,
+      "sha256": "6da7abeba2a9b441c5067283fccdf80c96dad1ef58fd5f805e132abb8acdbdb6"
+    },
+    {
+      "name": "atman-live/product.png",
+      "bytes": 576533,
+      "sha256": "8f6574e14a7feeaa8cf27727b3b8284cb2f800edfec1a9b76416ca528200de33"
+    },
+    {
+      "name": "atman-live/report.json",
+      "bytes": 6411,
+      "sha256": "194abbfebe02a6fc37b044382e4265cdf05f5a9cc05569d9fe9be0141344063f"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-chat-0-1280.png",
+      "bytes": 117305,
+      "sha256": "4ed4243e82512c837a96f84e17cca78cb9cc33ce570e0cdfe7d336e92367b3b7"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-chat-0-320.png",
+      "bytes": 49944,
+      "sha256": "c156cd093da9e50f4adff5050ffd281198af524fd1a3662b54868a274bff2035"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-chat-0-390.png",
+      "bytes": 51190,
+      "sha256": "67a199eee8062451827e5541247d61cb4897a0f3861f71431dc9fcb324cc2338"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-chat-1-1280.png",
+      "bytes": 116767,
+      "sha256": "11d10943667a7cbc70b1013c3e9ee29ecb2dd10144212f754a9b62b45f06ff16"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-chat-1-320.png",
+      "bytes": 49284,
+      "sha256": "a3dede73811ae3c32c5786dcd1be991607e19d44978f1da3254cfdcb0ce35225"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-chat-1-390.png",
+      "bytes": 50525,
+      "sha256": "1a75e1242e38162d2f8e2ec9cebd4fc5ca7b69cdfe22230c97f7da5669f1f627"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-chat-2-1280.png",
+      "bytes": 116592,
+      "sha256": "0b478d65a00ec2794f68524e55b645b00d5e2dfd094a2a720716a3bd506f8e78"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-chat-2-320.png",
+      "bytes": 49357,
+      "sha256": "0a5150bfcebab6fbfffcaf250dda6efe1b68709ec20437c2fe3019d50937f4cb"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-chat-2-390.png",
+      "bytes": 50317,
+      "sha256": "9f4c68f9f25c9da47352ed18c81c85e8f47d26fb29070333812aa1d1a557c837"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-compare-1280.png",
+      "bytes": 130652,
+      "sha256": "bf07e6806bc182bfa6722dd1ad69dca023c9f1b66dc603f9bc6f171dbd514817"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-compare-320.png",
+      "bytes": 70024,
+      "sha256": "25063d9bb4aef1c95c1904fb81bae14491491c76d1e8e27d7692bac1a1bbe587"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-compare-390.png",
+      "bytes": 70038,
+      "sha256": "54d014f1fc4eadf086043b42798ea019b651e23e0a4a6bc22aaa90029d943e89"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-ambra-rossa-1280.png",
+      "bytes": 19466,
+      "sha256": "7c3ad63ab9540753b681a299e774c0d56250318e580510069577c9addc73575f"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-ambra-rossa-320.png",
+      "bytes": 19271,
+      "sha256": "9759805047568364843cdd98ad7b2c996ffe849c766efef4b97960c6c6d10b91"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-ambra-rossa-390.png",
+      "bytes": 18996,
+      "sha256": "484180e90651a76faaa88a010a19f4d0c1fdab67dd9f1c9ee403024fb12ddad5"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-aura-blanc-1280.png",
+      "bytes": 15779,
+      "sha256": "55d4d9e40963d9f0241849ccce9823ed8e74ff561cc26879cffcd7402d54ccaa"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-aura-blanc-320.png",
+      "bytes": 14897,
+      "sha256": "c3a08b8247e8caa8508645e3483c8c929ec4f999dee351a7ac619f94b0850f34"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-aura-blanc-390.png",
+      "bytes": 15233,
+      "sha256": "b36489f160ce765cb4d8e313f69f253f98460faa8064b160a4c7bd12acdf8d3f"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-contesse-1280.png",
+      "bytes": 19897,
+      "sha256": "5af3bcf3a920c262eec1f8c3fa034d17ae904e9ccfcffcd3632c2cc7ffdf99fb"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-contesse-320.png",
+      "bytes": 19537,
+      "sha256": "afdebf40fe261ae01b2e2b11acf75db10448d0f68be75b3887042a1f6e47b848"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-contesse-390.png",
+      "bytes": 19799,
+      "sha256": "9d31fecd2c028d63a5ffe32e728e429c9fd94bd860b82c23c5ae30caf46c8066"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-oxymoron-1280.png",
+      "bytes": 19267,
+      "sha256": "fa0f909d7163791d18cc25272d42a5f4fe1983cdc9e76dc04e1a8695b079ac19"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-oxymoron-320.png",
+      "bytes": 18574,
+      "sha256": "3f56349438641138131a7142e3ff134aaee4938c4d1758cffe2ece03d713c5af"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-oxymoron-390.png",
+      "bytes": 18598,
+      "sha256": "bd1a6c2fb9d790f04b1dd4df2a126d5b04b27e7502b816d9d296fc92b1444424"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-sole-intimo-1280.png",
+      "bytes": 18000,
+      "sha256": "e7af23a6a5369e9feb6f2c673b4a0b4ff53ace428ed95e80119938ec860a8d81"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-sole-intimo-320.png",
+      "bytes": 17256,
+      "sha256": "324bec07439df0050434e715161a26308a7a597fe3683ec7bb3804f18d162dc7"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-sole-intimo-390.png",
+      "bytes": 17398,
+      "sha256": "ba7866cf876cad897633e7344dd17f6979741871a59e1889287e5b25ca325036"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-tramonto-1280.png",
+      "bytes": 16803,
+      "sha256": "f46dd850e0bd1b731597de3e4da2d52444efc0700095d5999458e209e5ab7adb"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-tramonto-320.png",
+      "bytes": 15987,
+      "sha256": "d204adf1108ef317086faf9ebccebe68846f439a1779f411c6228184966c71b9"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-note-profile-tramonto-390.png",
+      "bytes": 16213,
+      "sha256": "26099f2a5e13fdfd7058e6fba35554550f2f7c0e6079aecbac2c141d96eecde7"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-ambra-rossa-1280.png",
+      "bytes": 129884,
+      "sha256": "82a19e5a4a84aa80fdc7eef410874a785293bf4b4bb3769593bc68067751ea1c"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-ambra-rossa-320.png",
+      "bytes": 67996,
+      "sha256": "c34fff94909faa5c86c66cd17a5f3e20a488db23093b17264d1e749368c1f3c4"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-ambra-rossa-390.png",
+      "bytes": 70858,
+      "sha256": "471ffcd40944a14737264c97d9c8eb94673f3a8db64a0c0b4a69ebe6ed7e6966"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-aura-blanc-1280.png",
+      "bytes": 126393,
+      "sha256": "196796a4fefa2281f5ef1ca7fde3b696689a805ae48587463d6a82daa8cbe06b"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-aura-blanc-320.png",
+      "bytes": 67724,
+      "sha256": "fe6c986da74925a0eddf2166f9bd48bd862a55b1bad097c22b55590e5a33cea2"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-aura-blanc-390.png",
+      "bytes": 68762,
+      "sha256": "9e656fa76e8ba7e309ad467b0bc2794649f59e98f7bec73a02591a6f7a93c373"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-contesse-1280.png",
+      "bytes": 130728,
+      "sha256": "8646470dc24b33a58e08ad7d9c78569bb2e54e6b37ac40db61e95516916faa06"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-contesse-320.png",
+      "bytes": 68577,
+      "sha256": "b7e4e1fe2026bfbeb070dd4802a07ebba7b011e171e391fe68192229cdaaed9f"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-contesse-390.png",
+      "bytes": 70037,
+      "sha256": "68d84902cc45f73b3437e5f2bcb61bfd7756c0b277af386d16a6c7ed2c77b972"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-oxymoron-1280.png",
+      "bytes": 129998,
+      "sha256": "be3fe887e63c2942dfbc0d37f0f60559466e45276da352da195b0762f7537a18"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-oxymoron-320.png",
+      "bytes": 67775,
+      "sha256": "229942c4668f21770e3b5b40f2d7db668e096083d9cdc0d182591aace2455ed6"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-oxymoron-390.png",
+      "bytes": 71700,
+      "sha256": "e862c72de6c8c9c1991c37fe494cf39c70ff14e0a6903c92a79f61c3dbc63d29"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-sole-intimo-1280.png",
+      "bytes": 128766,
+      "sha256": "8e91a396beb7d8c6e745ccb76758f168dbc1535415dd3fcff87b49ef4b74ac9e"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-sole-intimo-320.png",
+      "bytes": 67291,
+      "sha256": "511aba8b3d42b11199a19ab49a0d4be0eb85baf6f264b19920270258b4cfbe00"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-sole-intimo-390.png",
+      "bytes": 70340,
+      "sha256": "488b69c83e43dbae8b3373132db0dabea54196697084fb7d9a526d360dc321ba"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-tramonto-1280.png",
+      "bytes": 127609,
+      "sha256": "1b03a129232ca33e39b4dd6bc0651c77027c860e2ea74e65e92c854c7fb95148"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-tramonto-320.png",
+      "bytes": 68243,
+      "sha256": "44be60e66171dc800e7e23b0331e39da4cd09bcb9b44f7780d037d71e590fba2"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-pair-tramonto-390.png",
+      "bytes": 69918,
+      "sha256": "776dadc46b2b07996b130c1e5901ac5bc813005cc2a5d043e4c160325dd954eb"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-question-1-1280.png",
+      "bytes": 353683,
+      "sha256": "787f05cfedbf70d894970b30a56a22e591d55e1a5fe095f8cdaf31beb4ace74a"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-question-1-320.png",
+      "bytes": 221252,
+      "sha256": "b596effc8e6d539182c6cf5646812c0b18f7d91ad947ced4915cda77cac3b315"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-question-1-390.png",
+      "bytes": 266743,
+      "sha256": "83f1f18c4c10e13843f622ee6d41fbc71f5f9cf7f53efb74110fca29ebf3b3f9"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-question-2-1280.png",
+      "bytes": 192797,
+      "sha256": "7a847cb25398f16f10bc1405f47280cacc512852cc15fe78bb1fba5100584d31"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-question-2-320.png",
+      "bytes": 84435,
+      "sha256": "95eab584fc683eb913e9d086c8383104ae89732a4584d38f70aacac7c9ad82c3"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-question-2-390.png",
+      "bytes": 85290,
+      "sha256": "0d87f8c23f7aff4b6eb3bf70fb78d31685c60a73f8ad6a7152b36516428d14ba"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-question-3-1280.png",
+      "bytes": 183962,
+      "sha256": "f497617b7388df78374a5c79b4e38f6f00191364189619e76f51ae5762191a26"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-question-3-320.png",
+      "bytes": 79956,
+      "sha256": "2eb3926a50cff37bace3559c3cdd98957d4b8e64a5ce55778574828c32243262"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-question-3-390.png",
+      "bytes": 80468,
+      "sha256": "681a1d87414b51136979225ae8a1a818028673374c6a76aeee9617bf598df443"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-question-4-1280.png",
+      "bytes": 183152,
+      "sha256": "56cab1c4ae36f645b188d0b33d62e1844838578bb28c1ea1687099a33fa0d245"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-question-4-320.png",
+      "bytes": 79290,
+      "sha256": "c5a1d9799772da8b9274357bc369315d7a087acbd52026cec013931350df3a98"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-question-4-390.png",
+      "bytes": 80961,
+      "sha256": "faa9ee7c0d6a5adffa55ebde165101eda74451de1136b4d1c56ca2faab458a31"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-ambra-rossa-1280.png",
+      "bytes": 133858,
+      "sha256": "6a96f5267b53d1315439e805163f3b3aeefa1b29d0f820e5780d0b161905bb5e"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-ambra-rossa-320.png",
+      "bytes": 68343,
+      "sha256": "b93c75efc122ed92c14a20a9f04ff3bb62b9b940638cccba4d0365707ce1d43a"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-ambra-rossa-390.png",
+      "bytes": 72760,
+      "sha256": "227521546aab5a9e671965a2b5af4e6b4c7139529956277c7485f51d29303e54"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-aura-blanc-1280.png",
+      "bytes": 130569,
+      "sha256": "d59ad9c880115350a921835133544abe35e7b5700fefa8c2128e067f56468dc9"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-aura-blanc-320.png",
+      "bytes": 70022,
+      "sha256": "c8e41e46fa031d4f2e4c6495d1a2570d92c4b557cd66a5c073882e48d108980f"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-aura-blanc-390.png",
+      "bytes": 71178,
+      "sha256": "82ed86da9afcbe16b8d859b33bdea812e8e4fd107a6e8ec377205319a5be8a36"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-contesse-1280.png",
+      "bytes": 133077,
+      "sha256": "f6e0cbab28324ccca1c19f9aa79cc56e0a3463ac582297110777dce5d36d9f65"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-contesse-320.png",
+      "bytes": 69752,
+      "sha256": "4b4a703edd9cc56d2770c34c447e5ed4df47a20673040b28327ab96e18bd105d"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-contesse-390.png",
+      "bytes": 71225,
+      "sha256": "c0d530b2bcd96e6f0ee1af24df88ae10c7f182abf50f1f793e1b2c8107724b0d"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-oxymoron-1280.png",
+      "bytes": 133368,
+      "sha256": "ea8b92de2dfd78ace639687a1b77b75e61a0b46664a6dbe3c42e2205b142663a"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-oxymoron-320.png",
+      "bytes": 69926,
+      "sha256": "bc750b4a1bcd28cbbf7c854dc5d9b59aa2992458b035fcb2f1b5261edc6c40a8"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-oxymoron-390.png",
+      "bytes": 73756,
+      "sha256": "91e8bf90b7afed1a39e914a90d7baa0a20493257b74b7141716ae7679cee9cb0"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-sole-intimo-1280.png",
+      "bytes": 131515,
+      "sha256": "a1122e84cb5461f1f02a4a931a24be6959d71d2eda71bbb19970c606e80ba692"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-sole-intimo-320.png",
+      "bytes": 68408,
+      "sha256": "aedb4acd9cad1f0bfc4a4fae56c9454ea546dfe525c4bbea59d9cf6ede6e1dd8"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-sole-intimo-390.png",
+      "bytes": 72318,
+      "sha256": "042361793aef4cf7957f9918a26e21f7e8e7d54dc9455c9b924b15957d57c879"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-tramonto-1280.png",
+      "bytes": 131604,
+      "sha256": "98fa8a424b461273d71a289b1e984fd6a151eb26728f552abdbe5e61eaaae389"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-tramonto-320.png",
+      "bytes": 69280,
+      "sha256": "e568ffc9c7c6cd44610ecc24e1477f807f2b58407cb23bb4a60a972358577a48"
+    },
+    {
+      "name": "atman-local-fixed-qa/atmanperfumes-result-tramonto-390.png",
+      "bytes": 72068,
+      "sha256": "435f71546e1e3cff56d70f89df9febae479b84a4b8adb3e6b413ba57e98dce69"
+    },
+    {
+      "name": "atman-local-fixed-qa/independent-ui.json",
+      "bytes": 28261,
+      "sha256": "bf19d97c23e86c31c60ff04671be728078fd44a2351587481a26f743c93a08db"
+    },
+    {
+      "name": "visual-review/atman-opravene-vsetky-vysledky-1280.png",
+      "bytes": 202449,
+      "sha256": "103f1d638b59d3efcfb713de8065119e301dbacc8336875e844b43e5ddb77ce5"
+    },
+    {
+      "name": "visual-review/atman-opravene-vsetky-vysledky-320.png",
+      "bytes": 259860,
+      "sha256": "08d05d82748126f430b5215f4389f095b34d051c7563973f8cb0f0a8e11785c5"
+    },
+    {
+      "name": "visual-review/atman-opravene-vsetky-vysledky-390.png",
+      "bytes": 242268,
+      "sha256": "6a9c036d698b499134f24e44e67f7ec4c3a9da9fe568cc68be71b29903da338a"
+    },
+    {
+      "name": "visual-review/atman-photos-review.jpg",
+      "bytes": 67384,
+      "sha256": "092c6b49bb4c180fb01e4023f24ea2a672d4fb50cf588856ff26a767f9b2f50d"
+    }
+  ]
+}
