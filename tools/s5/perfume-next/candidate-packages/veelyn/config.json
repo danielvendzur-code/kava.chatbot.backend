@@ -1,0 +1,261 @@
+{
+  "slug": "veelyn",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "dab46861acfbf3688032024e663df17293e9fe12",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+  "catalogue": "/catalogues/veelyn.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Citrusy a mandarínka",
+    "Ruža a litchi",
+    "Oud a kardamóm",
+    "Porovnať dve vône"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Citrusy a mandarínka",
+      "match": "citrus.*mandar",
+      "productIds": [
+        "deep-dive"
+      ]
+    },
+    {
+      "chip": "Ruža a litchi",
+      "match": "ruz.*litchi",
+      "productIds": [
+        "pink-desire"
+      ]
+    },
+    {
+      "chip": "Oud a kardamóm",
+      "match": "oud.*kardam",
+      "productIds": [
+        "noble-wood"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "deep-dive",
+    "noble-wood"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "No extra compatible SKU established; no fake3+1 or cart integration."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "VEELYN",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/veelyn/logo.webp",
+      "header": "/assets/s5/veelyn/logo.webp",
+      "avatar": "/assets/s5/veelyn/avatar.webp"
+    },
+    "brand": {
+      "name": "VEELYN",
+      "domain": "veelyn.sk",
+      "website": "https://www.veelyn.sk/",
+      "lang": "sk",
+      "fullName": "VEELYN",
+      "url": "https://www.veelyn.sk/",
+      "logo": "/assets/s5/veelyn/logo.webp",
+      "mark": "/assets/s5/veelyn/avatar.webp",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône VEELYN podľa doložených tónov a balenia.",
+      "quickChips": [
+        "Citrusy a mandarínka",
+        "Ruža a litchi",
+        "Oud a kardamóm",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#6331a8",
+        "accent": "#6331a8",
+        "soft": "#f6f1fb",
+        "paper": "#ffffff",
+        "ink": "#27202e",
+        "line": "#e6dded"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy a ovocné tóny",
+        "Vyberte podľa doložených tónov.",
+        "Citrusy a ovocné tóny",
+        ""
+      ],
+      "deep-dive": [
+        "Pomaranč, limetka a mandarínka",
+        "Pomaranč, limetka a mandarínka.",
+        "Pomaranč, limetka a mandarínka",
+        "Pomaranč, limetka a mandarínka."
+      ],
+      "hard-cash": [
+        "Ananás, bergamot a breza",
+        "Ananás, bergamot a breza.",
+        "Ananás, bergamot a breza",
+        "Ananás, bergamot a breza."
+      ],
+      "harmony": [
+        "Bergamot, ruža a santal",
+        "Bergamot, ruža a santal.",
+        "Bergamot, ruža a santal",
+        "Bergamot, ruža a santal."
+      ],
+      "floral": [
+        "Kvety a ovocné akordy",
+        "Vyberte podľa doložených tónov.",
+        "Kvety a ovocné akordy",
+        ""
+      ],
+      "pink-desire": [
+        "Litchi, rebarbora a turecká ruža",
+        "Litchi, rebarbora a turecká ruža.",
+        "Litchi, rebarbora a turecká ruža",
+        "Litchi, rebarbora a turecká ruža."
+      ],
+      "mystery": [
+        "Neroli, jazmín a biely mošus",
+        "Neroli, jazmín a biely mošus.",
+        "Neroli, jazmín a biely mošus",
+        "Neroli, jazmín a biely mošus."
+      ],
+      "forbidden-cherries": [
+        "Čerešňa, horké mandle a likér",
+        "Čerešňa, horké mandle a likér.",
+        "Čerešňa, horké mandle a likér",
+        "Čerešňa, horké mandle a likér."
+      ],
+      "warm": [
+        "Drevo, ambra a korenie",
+        "Vyberte podľa doložených tónov.",
+        "Drevo, ambra a korenie",
+        ""
+      ],
+      "noble-wood": [
+        "Oud, kardamóm a santal",
+        "Oud, kardamóm a santal.",
+        "Oud, kardamóm a santal",
+        "Oud, kardamóm a santal."
+      ],
+      "desert-storm": [
+        "Maliny, oud a kadidlo",
+        "Maliny, oud a kadidlo.",
+        "Maliny, oud a kadidlo",
+        "Maliny, oud a kadidlo."
+      ],
+      "sweet-cig": [
+        "Tabakový list, kakao a vanilka",
+        "Tabakový list, kakao a vanilka.",
+        "Tabakový list, kakao a vanilka",
+        "Tabakový list, kakao a vanilka."
+      ],
+      "moulin-rouge": [
+        "Šafrán, jazmín a jedľový balzam",
+        "Šafrán, jazmín a jedľový balzam.",
+        "Šafrán, jazmín a jedľový balzam",
+        "Šafrán, jazmín a jedľový balzam."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aké tóny chcete objavovať?",
+        "Vyberte podľa doložených tónov.",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktoré tóny vás lákajú?",
+        "Vyberte jeden profil.",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/orange-slices.jpg"
+      ],
+      "deep-dive": [
+        "/assets/s3/scenes-k2/orange-slices.jpg"
+      ],
+      "hard-cash": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "harmony": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "pink-desire": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "mystery": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "forbidden-cherries": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "warm": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "noble-wood": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "desert-storm": [
+        "/assets/s3/scenes-k2/incense.jpg"
+      ],
+      "sweet-cig": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "moulin-rouge": [
+        "/assets/s5/veelyn/moulin-rouge.webp"
+      ]
+    },
+    "compareProductIds": [
+      "deep-dive",
+      "noble-wood"
+    ],
+    "segmentText": {
+      "entryNote": "Tóny vône · balenie · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu podľa jeho vkusu.",
+      "lead": "Objavte vybrané vône VEELYN podľa tónov. Na konci uvidíte konkrétny 50 ml parfum, cenu a odkaz; dve odlišné kompozície môžete porovnať.",
+      "includedChat": "Doložené tóny, presné balenia, ceny a porovnanie dvoch vôní.",
+      "includedAdvisor": "Výber podľa doložených tónov — konkrétna vôňa, balenie a cena.",
+      "greeting": "Vyberte si vôňu podľa doložených tónov. Pozrite si presné balenie, cenu a porovnanie dvoch rôznych kompozícií.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "deep-dive": "hard-cash",
+        "hard-cash": "harmony",
+        "harmony": "deep-dive",
+        "pink-desire": "mystery",
+        "mystery": "forbidden-cherries",
+        "forbidden-cherries": "pink-desire",
+        "noble-wood": "desert-storm",
+        "desert-storm": "sweet-cig",
+        "sweet-cig": "moulin-rouge",
+        "moulin-rouge": "noble-wood"
+      }
+    }
+  }
+}

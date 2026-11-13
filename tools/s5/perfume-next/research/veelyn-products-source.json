@@ -1,0 +1,1165 @@
+{
+  "rows": [
+    {
+      "id": "moulin-rouge",
+      "url": "https://www.veelyn.sk/produkt/maison-francis-kurkdjian-baccarat-rouge-540/",
+      "checkedAt": "2026-11-13T07:27:04.106993+00:00",
+      "status": 200,
+      "htmlSha256": "fb75521ee2049c3ba4f621555d52db72aae216bb17ca9392ee2de5e7423e0fac",
+      "product": {
+        "@type": "Product",
+        "@id": "https://www.veelyn.sk/produkt/maison-francis-kurkdjian-baccarat-rouge-540/#product",
+        "name": "VEELYN MOULIN ROUGE – unisex parfum EDP 50 ml",
+        "alternateName": [
+          "VEELYN MOULIN ROUGE"
+        ],
+        "description": "Baccarat Rouge 540 je fenomén, ktorý definoval éru — šafránový jazmín nad ambrovým drevom, sladký minerál, ktorý vonia ako nič iné na svete. Projekcia je legendárna, kompliment istý. Ak existuje moderná klasika, je to ona. Veelyn MOULIN ROUGE je slovenské dupé tejto vône — unisex eau de parfum s 20 % koncentráciou parfumovej kompozície. Vôňa sa otvára tónmi šafrán a jazmín, v srdci nesie ambra drevitá a cédrové drevo, na koži doznieva do jedľový balzam a mošus. 50 ml za 24,99 €. Doprava zadarmo nad 40 €, 14 dní na vrátenie.",
+        "sku": "veelyn-moulin-rouge",
+        "mpn": "VEELYN-MOULIN-ROUGE",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veelyn"
+        },
+        "manufacturer": {
+          "@id": "https://www.veelyn.sk/#organization"
+        },
+        "category": "Krása a zdravie > Parfumy > Eau de parfum",
+        "image": [
+          "https://www.veelyn.sk/images/veelyn/moulin-rouge.webp?v=870c23b2"
+        ],
+        "url": "https://www.veelyn.sk/produkt/maison-francis-kurkdjian-baccarat-rouge-540/",
+        "audience": {
+          "@type": "PeopleAudience",
+          "suggestedGender": "unisex"
+        },
+        "size": "50 ml",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Typ",
+            "value": "Eau de parfum (20 % koncentrácia)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Objem",
+            "value": "50 ml"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Krajina pôvodu",
+            "value": "Slovensko"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Hlavové tóny",
+            "value": "šafrán, jazmín"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Srdcové tóny",
+            "value": "ambra drevitá, cédrové drevo"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Základné tóny",
+            "value": "jedľový balzam, mošus"
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.veelyn.sk/produkt/maison-francis-kurkdjian-baccarat-rouge-540/",
+          "priceCurrency": "EUR",
+          "price": "24.99",
+          "validFrom": "2026-05-28",
+          "priceValidUntil": "2027-11-12",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@id": "https://www.veelyn.sk/#organization"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "SK"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "4.49",
+              "currency": "EUR"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "SK",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 14,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+          }
+        }
+      },
+      "visibleNotePyramidConfirmed": true
+    },
+    {
+      "id": "hard-cash",
+      "url": "https://www.veelyn.sk/produkt/creed-aventus/",
+      "checkedAt": "2026-11-13T07:27:11.868051+00:00",
+      "status": 200,
+      "htmlSha256": "6087beb0750747d84e877c7ec7f6e34b18e579e9b131493418ac54c0b36253a4",
+      "product": {
+        "@type": "Product",
+        "@id": "https://www.veelyn.sk/produkt/creed-aventus/#product",
+        "name": "VEELYN HARD CASH – pánsky parfum EDP 50 ml",
+        "alternateName": [
+          "VEELYN HARD CASH"
+        ],
+        "description": "Aventus je pravdepodobne najslávnejšia niche vôňa sveta — šťavnatý ananás nad dymovou brezou, ovocie proti ohňu. Vonia ako úspech, ktorý si nemusí nič dokazovať. Funguje celoročne a jeho projekcia z teba robí stred miestnosti. Veelyn HARD CASH je slovenské dupé tejto vône — pánska eau de parfum s 20 % koncentráciou parfumovej kompozície. Vôňa sa otvára tónmi ananás, bergamot, čierne ríbezle a jablko, v srdci nesie breza, pačuli, ruža a jazmín, na koži doznieva do dubový mach, ambra, vanilka a mošus. 50 ml za 24,99 €. Doprava zadarmo nad 40 €, 14 dní na vrátenie.",
+        "sku": "veelyn-hard-cash",
+        "mpn": "VEELYN-HARD-CASH",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veelyn"
+        },
+        "manufacturer": {
+          "@id": "https://www.veelyn.sk/#organization"
+        },
+        "category": "Krása a zdravie > Parfumy > Eau de parfum",
+        "image": [
+          "https://www.veelyn.sk/images/veelyn/hard-cash.webp?v=b6996f3c"
+        ],
+        "url": "https://www.veelyn.sk/produkt/creed-aventus/",
+        "audience": {
+          "@type": "PeopleAudience",
+          "suggestedGender": "male"
+        },
+        "size": "50 ml",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Typ",
+            "value": "Eau de parfum (20 % koncentrácia)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Objem",
+            "value": "50 ml"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Krajina pôvodu",
+            "value": "Slovensko"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Hlavové tóny",
+            "value": "ananás, bergamot, čierne ríbezle, jablko"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Srdcové tóny",
+            "value": "breza, pačuli, ruža, jazmín"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Základné tóny",
+            "value": "dubový mach, ambra, vanilka, mošus"
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.veelyn.sk/produkt/creed-aventus/",
+          "priceCurrency": "EUR",
+          "price": "24.99",
+          "validFrom": "2026-05-28",
+          "priceValidUntil": "2027-11-12",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@id": "https://www.veelyn.sk/#organization"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "SK"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "4.49",
+              "currency": "EUR"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "SK",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 14,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+          }
+        }
+      },
+      "visibleNotePyramidConfirmed": true
+    },
+    {
+      "id": "noble-wood",
+      "url": "https://www.veelyn.sk/produkt/tom-ford-oud-wood/",
+      "checkedAt": "2026-11-13T07:27:16.680916+00:00",
+      "status": 200,
+      "htmlSha256": "0623c23f03aac29787b02154aa2d5d56d8f4d064b0602433be2e01abbb06e810",
+      "product": {
+        "@type": "Product",
+        "@id": "https://www.veelyn.sk/produkt/tom-ford-oud-wood/#product",
+        "name": "VEELYN NOBLE WOOD – unisex parfum EDP 50 ml",
+        "alternateName": [
+          "VEELYN NOBLE WOOD"
+        ],
+        "description": "Oud Wood je vstupná brána do sveta oudu — hladké exotické drevo s kardamómom a vanilkou, bez orientálneho pátosu. Tichý luxus, ktorý ocenia muži aj ženy. Celoročný gentleman medzi vôňami. Veelyn NOBLE WOOD je slovenské dupé tejto vône — unisex eau de parfum s 20 % koncentráciou parfumovej kompozície. Vôňa sa otvára tónmi oud, ružové drevo a kardamóm, v srdci nesie sečuánske korenie, na koži doznieva do santal, vanilka a ambra. 50 ml za 24,99 €. Doprava zadarmo nad 40 €, 14 dní na vrátenie.",
+        "sku": "veelyn-noble-wood",
+        "mpn": "VEELYN-NOBLE-WOOD",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veelyn"
+        },
+        "manufacturer": {
+          "@id": "https://www.veelyn.sk/#organization"
+        },
+        "category": "Krása a zdravie > Parfumy > Eau de parfum",
+        "image": [
+          "https://www.veelyn.sk/images/veelyn/noble-wood.webp?v=1b9eba69"
+        ],
+        "url": "https://www.veelyn.sk/produkt/tom-ford-oud-wood/",
+        "audience": {
+          "@type": "PeopleAudience",
+          "suggestedGender": "unisex"
+        },
+        "size": "50 ml",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Typ",
+            "value": "Eau de parfum (20 % koncentrácia)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Objem",
+            "value": "50 ml"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Krajina pôvodu",
+            "value": "Slovensko"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Hlavové tóny",
+            "value": "oud, ružové drevo, kardamóm"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Srdcové tóny",
+            "value": "sečuánske korenie"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Základné tóny",
+            "value": "santal, vanilka, ambra"
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.veelyn.sk/produkt/tom-ford-oud-wood/",
+          "priceCurrency": "EUR",
+          "price": "24.99",
+          "validFrom": "2026-05-28",
+          "priceValidUntil": "2027-11-12",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@id": "https://www.veelyn.sk/#organization"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "SK"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "4.49",
+              "currency": "EUR"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "SK",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 14,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+          }
+        }
+      },
+      "visibleNotePyramidConfirmed": true
+    },
+    {
+      "id": "harmony",
+      "url": "https://www.veelyn.sk/produkt/louis-vuitton-symphony/",
+      "checkedAt": "2026-11-13T07:27:21.601369+00:00",
+      "status": 200,
+      "htmlSha256": "20f9e8607bc0743fa6a41416a32f3be9cde738f08ef3ec9514922ce64644faf8",
+      "product": {
+        "@type": "Product",
+        "@id": "https://www.veelyn.sk/produkt/louis-vuitton-symphony/#product",
+        "name": "VEELYN HARMONY – unisex parfum EDP 50 ml",
+        "alternateName": [
+          "VEELYN HARMONY"
+        ],
+        "description": "Symphony je iskrivá kompozícia bergamotu, ruže a irisu — svetlá, architektonicky čistá, radostná. Vonia ako slnečné ráno v ateliéri plnom kvetov. Pre mužov aj ženy, ktorí majú radi jemnosť s dlhou výdržou. Veelyn HARMONY je slovenské dupé tejto vône — unisex eau de parfum s 20 % koncentráciou parfumovej kompozície. Vôňa sa otvára tónmi bergamot a ruža, v srdci nesie jazmín a iris, na koži doznieva do pačuli a santal. 50 ml za 24,99 €. Doprava zadarmo nad 40 €, 14 dní na vrátenie.",
+        "sku": "veelyn-harmony",
+        "mpn": "VEELYN-HARMONY",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veelyn"
+        },
+        "manufacturer": {
+          "@id": "https://www.veelyn.sk/#organization"
+        },
+        "category": "Krása a zdravie > Parfumy > Eau de parfum",
+        "image": [
+          "https://www.veelyn.sk/images/veelyn/harmony.webp?v=ebeaebe8"
+        ],
+        "url": "https://www.veelyn.sk/produkt/louis-vuitton-symphony/",
+        "audience": {
+          "@type": "PeopleAudience",
+          "suggestedGender": "unisex"
+        },
+        "size": "50 ml",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Typ",
+            "value": "Eau de parfum (20 % koncentrácia)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Objem",
+            "value": "50 ml"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Krajina pôvodu",
+            "value": "Slovensko"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Hlavové tóny",
+            "value": "bergamot, ruža"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Srdcové tóny",
+            "value": "jazmín, iris"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Základné tóny",
+            "value": "pačuli, santal"
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.veelyn.sk/produkt/louis-vuitton-symphony/",
+          "priceCurrency": "EUR",
+          "price": "24.99",
+          "validFrom": "2026-05-28",
+          "priceValidUntil": "2027-11-12",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@id": "https://www.veelyn.sk/#organization"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "SK"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "4.49",
+              "currency": "EUR"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "SK",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 14,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+          }
+        }
+      },
+      "visibleNotePyramidConfirmed": true
+    },
+    {
+      "id": "forbidden-cherries",
+      "url": "https://www.veelyn.sk/produkt/tom-ford-lost-cherry/",
+      "checkedAt": "2026-11-13T07:27:25.707634+00:00",
+      "status": 200,
+      "htmlSha256": "d902737bd9e95d93c3adbe75a87881cc4d89f0e362ca4e04a0c2af978b958414",
+      "product": {
+        "@type": "Product",
+        "@id": "https://www.veelyn.sk/produkt/tom-ford-lost-cherry/#product",
+        "name": "VEELYN FORBIDDEN CHERRIES – unisex parfum EDP 50 ml",
+        "alternateName": [
+          "VEELYN FORBIDDEN CHERRIES"
+        ],
+        "description": "Lost Cherry je zakázané ovocie — čerešňa v likéri s horkou mandľou, pod ktorou tikajú tonka a santal. Sladká na povrchu, temná vo vnútri. Najžiadanejší gurmán posledných rokov. Veelyn FORBIDDEN CHERRIES je slovenské dupé tejto vône — unisex eau de parfum s 20 % koncentráciou parfumovej kompozície. Vôňa sa otvára tónmi čerešňa, horké mandle a likér, v srdci nesie ruža, jazmín a višňový sirup, na koži doznieva do pačuli, santal, tonka bôb a vanilka. 50 ml za 24,99 €. Doprava zadarmo nad 40 €, 14 dní na vrátenie.",
+        "sku": "veelyn-forbidden-cherries",
+        "mpn": "VEELYN-FORBIDDEN-CHERRIES",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veelyn"
+        },
+        "manufacturer": {
+          "@id": "https://www.veelyn.sk/#organization"
+        },
+        "category": "Krása a zdravie > Parfumy > Eau de parfum",
+        "image": [
+          "https://www.veelyn.sk/images/veelyn/forbidden-cherries.webp?v=5c7e5505"
+        ],
+        "url": "https://www.veelyn.sk/produkt/tom-ford-lost-cherry/",
+        "audience": {
+          "@type": "PeopleAudience",
+          "suggestedGender": "unisex"
+        },
+        "size": "50 ml",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Typ",
+            "value": "Eau de parfum (20 % koncentrácia)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Objem",
+            "value": "50 ml"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Krajina pôvodu",
+            "value": "Slovensko"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Hlavové tóny",
+            "value": "čerešňa, horké mandle, likér"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Srdcové tóny",
+            "value": "ruža, jazmín, višňový sirup"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Základné tóny",
+            "value": "pačuli, santal, tonka bôb, vanilka"
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.veelyn.sk/produkt/tom-ford-lost-cherry/",
+          "priceCurrency": "EUR",
+          "price": "24.99",
+          "validFrom": "2026-05-28",
+          "priceValidUntil": "2027-11-12",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@id": "https://www.veelyn.sk/#organization"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "SK"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "4.49",
+              "currency": "EUR"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "SK",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 14,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+          }
+        }
+      },
+      "visibleNotePyramidConfirmed": true
+    },
+    {
+      "id": "deep-dive",
+      "url": "https://www.veelyn.sk/produkt/louis-vuitton-afternoon-swim/",
+      "checkedAt": "2026-11-13T07:27:30.371035+00:00",
+      "status": 200,
+      "htmlSha256": "79af88e3880ce3a02077e110670de25f587ff79c4fd54238b8d2d0268b2979e0",
+      "product": {
+        "@type": "Product",
+        "@id": "https://www.veelyn.sk/produkt/louis-vuitton-afternoon-swim/#product",
+        "name": "VEELYN DEEP DIVE – unisex parfum EDP 50 ml",
+        "alternateName": [
+          "VEELYN DEEP DIVE"
+        ],
+        "description": "Afternoon Swim je skok do bazéna plného pomarančov — číra citrusová radosť bez zbytočností. Santalový dotyk v závere ju drží na koži dlhšie, než pri citrusoch čakáš. Letný happy-parfum. Veelyn DEEP DIVE je slovenské dupé tejto vône — unisex eau de parfum s 20 % koncentráciou parfumovej kompozície. Vôňa sa otvára tónmi pomaranč, limetka a mandarínka, v srdci nesie bergamot a petitgrain, na koži doznieva do santal a mošus. 50 ml za 24,99 €. Doprava zadarmo nad 40 €, 14 dní na vrátenie.",
+        "sku": "veelyn-deep-dive",
+        "mpn": "VEELYN-DEEP-DIVE",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veelyn"
+        },
+        "manufacturer": {
+          "@id": "https://www.veelyn.sk/#organization"
+        },
+        "category": "Krása a zdravie > Parfumy > Eau de parfum",
+        "image": [
+          "https://www.veelyn.sk/images/veelyn/deep-dive.webp?v=2ad21746"
+        ],
+        "url": "https://www.veelyn.sk/produkt/louis-vuitton-afternoon-swim/",
+        "audience": {
+          "@type": "PeopleAudience",
+          "suggestedGender": "unisex"
+        },
+        "size": "50 ml",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Typ",
+            "value": "Eau de parfum (20 % koncentrácia)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Objem",
+            "value": "50 ml"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Krajina pôvodu",
+            "value": "Slovensko"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Hlavové tóny",
+            "value": "pomaranč, limetka, mandarínka"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Srdcové tóny",
+            "value": "bergamot, petitgrain"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Základné tóny",
+            "value": "santal, mošus"
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.veelyn.sk/produkt/louis-vuitton-afternoon-swim/",
+          "priceCurrency": "EUR",
+          "price": "24.99",
+          "validFrom": "2026-05-28",
+          "priceValidUntil": "2027-11-12",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@id": "https://www.veelyn.sk/#organization"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "SK"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "4.49",
+              "currency": "EUR"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "SK",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 14,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+          }
+        }
+      },
+      "visibleNotePyramidConfirmed": true
+    },
+    {
+      "id": "desert-storm",
+      "url": "https://www.veelyn.sk/produkt/louis-vuitton-ombre-nomade/",
+      "checkedAt": "2026-11-13T07:27:36.739491+00:00",
+      "status": 200,
+      "htmlSha256": "e5247607c7c62b51324f4b257e75c8337a5fff2e481fcb0987ffd18c632f8407",
+      "product": {
+        "@type": "Product",
+        "@id": "https://www.veelyn.sk/produkt/louis-vuitton-ombre-nomade/#product",
+        "name": "VEELYN DESERT STORM – unisex parfum EDP 50 ml",
+        "alternateName": [
+          "VEELYN DESERT STORM"
+        ],
+        "description": "Ombre Nomade je púštna búrka oudu — maliny a ruža nad dymom a živicou, hutná ako západ slnka nad dunami. Jeden strek stačí na celý večer. Orientálny vrchol pre náročných. Veelyn DESERT STORM je slovenské dupé tejto vône — unisex eau de parfum s 20 % koncentráciou parfumovej kompozície. Vôňa sa otvára tónmi maliny a ruža, v srdci nesie oud a kadidlo, na koži doznieva do benzoín, labdanum a ambra. 50 ml za 24,99 €. Doprava zadarmo nad 40 €, 14 dní na vrátenie.",
+        "sku": "veelyn-desert-storm",
+        "mpn": "VEELYN-DESERT-STORM",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veelyn"
+        },
+        "manufacturer": {
+          "@id": "https://www.veelyn.sk/#organization"
+        },
+        "category": "Krása a zdravie > Parfumy > Eau de parfum",
+        "image": [
+          "https://www.veelyn.sk/images/veelyn/desert-storm.webp?v=3b84d2f2"
+        ],
+        "url": "https://www.veelyn.sk/produkt/louis-vuitton-ombre-nomade/",
+        "audience": {
+          "@type": "PeopleAudience",
+          "suggestedGender": "unisex"
+        },
+        "size": "50 ml",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Typ",
+            "value": "Eau de parfum (20 % koncentrácia)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Objem",
+            "value": "50 ml"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Krajina pôvodu",
+            "value": "Slovensko"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Hlavové tóny",
+            "value": "maliny, ruža"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Srdcové tóny",
+            "value": "oud, kadidlo"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Základné tóny",
+            "value": "benzoín, labdanum, ambra"
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.veelyn.sk/produkt/louis-vuitton-ombre-nomade/",
+          "priceCurrency": "EUR",
+          "price": "24.99",
+          "validFrom": "2026-05-28",
+          "priceValidUntil": "2027-11-12",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@id": "https://www.veelyn.sk/#organization"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "SK"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "4.49",
+              "currency": "EUR"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "SK",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 14,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+          }
+        }
+      },
+      "visibleNotePyramidConfirmed": true
+    },
+    {
+      "id": "pink-desire",
+      "url": "https://www.veelyn.sk/produkt/parfums-de-marly-delina/",
+      "checkedAt": "2026-11-13T07:27:41.713905+00:00",
+      "status": 200,
+      "htmlSha256": "ca776edce28e025e548423b2586cf6467dcbc0a1c1f1429f86492693db4baeb5",
+      "product": {
+        "@type": "Product",
+        "@id": "https://www.veelyn.sk/produkt/parfums-de-marly-delina/#product",
+        "name": "VEELYN PINK DESIRE – dámsky parfum EDP 50 ml",
+        "alternateName": [
+          "VEELYN PINK DESIRE"
+        ],
+        "description": "Delina je ružový sen — litchi a rebarbora nad tureckou ružou, sviežo-púdrová a neodolateľne ženská. Jedna z najkomplimentovanejších dámskych vôní vôbec. Od rána do večera, od jari do zimy. Veelyn PINK DESIRE je slovenské dupé tejto vône — dámska eau de parfum s 20 % koncentráciou parfumovej kompozície. Vôňa sa otvára tónmi litchi, rebarbora a bergamot, v srdci nesie turecká ruža a pivónia, na koži doznieva do cédrové drevo, mošus a vanilka. 50 ml za 24,99 €. Doprava zadarmo nad 40 €, 14 dní na vrátenie.",
+        "sku": "veelyn-pink-desire",
+        "mpn": "VEELYN-PINK-DESIRE",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veelyn"
+        },
+        "manufacturer": {
+          "@id": "https://www.veelyn.sk/#organization"
+        },
+        "category": "Krása a zdravie > Parfumy > Eau de parfum",
+        "image": [
+          "https://www.veelyn.sk/images/veelyn/pink-desire.webp?v=eccf04d4"
+        ],
+        "url": "https://www.veelyn.sk/produkt/parfums-de-marly-delina/",
+        "audience": {
+          "@type": "PeopleAudience",
+          "suggestedGender": "female"
+        },
+        "size": "50 ml",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Typ",
+            "value": "Eau de parfum (20 % koncentrácia)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Objem",
+            "value": "50 ml"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Krajina pôvodu",
+            "value": "Slovensko"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Hlavové tóny",
+            "value": "litchi, rebarbora, bergamot"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Srdcové tóny",
+            "value": "turecká ruža, pivónia"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Základné tóny",
+            "value": "cédrové drevo, mošus, vanilka"
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.veelyn.sk/produkt/parfums-de-marly-delina/",
+          "priceCurrency": "EUR",
+          "price": "24.99",
+          "validFrom": "2026-05-28",
+          "priceValidUntil": "2027-11-12",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@id": "https://www.veelyn.sk/#organization"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "SK"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "4.49",
+              "currency": "EUR"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "SK",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 14,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+          }
+        }
+      },
+      "visibleNotePyramidConfirmed": true
+    },
+    {
+      "id": "sweet-cig",
+      "url": "https://www.veelyn.sk/produkt/tom-ford-tobacco-vanille/",
+      "checkedAt": "2026-11-13T07:27:48.224056+00:00",
+      "status": 200,
+      "htmlSha256": "b081d05668bc8d9c5a953f409dce54be808161b99d1fa8d3365c6a9e716f93cc",
+      "product": {
+        "@type": "Product",
+        "@id": "https://www.veelyn.sk/produkt/tom-ford-tobacco-vanille/#product",
+        "name": "VEELYN SWEET CIG – unisex parfum EDP 50 ml",
+        "alternateName": [
+          "VEELYN SWEET CIG"
+        ],
+        "description": "Tobacco Vanille je opulentný tabak s vanilkou a kakaom — vôňa pánskeho klubu, kde sa čas zastavil. Hustá, bohatá, s výdržou do ďalšieho dňa. Zimný král gurmánskeho orientu. Veelyn SWEET CIG je slovenské dupé tejto vône — unisex eau de parfum s 20 % koncentráciou parfumovej kompozície. Vôňa sa otvára tónmi tabakový list a korenie, v srdci nesie vanilka, kakao a tonka bôb, na koži doznieva do sušené ovocie a drevité tóny. 50 ml za 24,99 €. Doprava zadarmo nad 40 €, 14 dní na vrátenie.",
+        "sku": "veelyn-sweet-cig",
+        "mpn": "VEELYN-SWEET-CIG",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veelyn"
+        },
+        "manufacturer": {
+          "@id": "https://www.veelyn.sk/#organization"
+        },
+        "category": "Krása a zdravie > Parfumy > Eau de parfum",
+        "image": [
+          "https://www.veelyn.sk/images/veelyn/sweet-cig.webp?v=43d785f4"
+        ],
+        "url": "https://www.veelyn.sk/produkt/tom-ford-tobacco-vanille/",
+        "audience": {
+          "@type": "PeopleAudience",
+          "suggestedGender": "unisex"
+        },
+        "size": "50 ml",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Typ",
+            "value": "Eau de parfum (20 % koncentrácia)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Objem",
+            "value": "50 ml"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Krajina pôvodu",
+            "value": "Slovensko"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Hlavové tóny",
+            "value": "tabakový list, korenie"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Srdcové tóny",
+            "value": "vanilka, kakao, tonka bôb"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Základné tóny",
+            "value": "sušené ovocie, drevité tóny"
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.veelyn.sk/produkt/tom-ford-tobacco-vanille/",
+          "priceCurrency": "EUR",
+          "price": "24.99",
+          "validFrom": "2026-05-28",
+          "priceValidUntil": "2027-11-12",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@id": "https://www.veelyn.sk/#organization"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "SK"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "4.49",
+              "currency": "EUR"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "SK",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 14,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+          }
+        }
+      },
+      "visibleNotePyramidConfirmed": true
+    },
+    {
+      "id": "mystery",
+      "url": "https://www.veelyn.sk/produkt/prada-paradoxe/",
+      "checkedAt": "2026-11-13T07:27:53.399285+00:00",
+      "status": 200,
+      "htmlSha256": "7460874b4d1576d4e3383c4487ea32c5362ae3c9c9fd42c5eb461dd46f04f3f1",
+      "product": {
+        "@type": "Product",
+        "@id": "https://www.veelyn.sk/produkt/prada-paradoxe/#product",
+        "name": "VEELYN MYSTERY – dámsky parfum EDP 50 ml",
+        "alternateName": [
+          "VEELYN MYSTERY"
+        ],
+        "description": "Paradoxe je moderná biela kvetina s ambrovým ťahom — jazmín postavený na čistý mošus, minimalistický a mestský. Vonia ako sebavedomie bez príkras. Denná vôňa novej generácie. Veelyn MYSTERY je slovenské dupé tejto vône — dámska eau de parfum s 20 % koncentráciou parfumovej kompozície. Vôňa sa otvára tónmi bergamot a neroli, v srdci nesie jazmín, na koži doznieva do biely mošus a ambra. 50 ml za 24,99 €. Doprava zadarmo nad 40 €, 14 dní na vrátenie.",
+        "sku": "veelyn-mystery",
+        "mpn": "VEELYN-MYSTERY",
+        "brand": {
+          "@type": "Brand",
+          "name": "Veelyn"
+        },
+        "manufacturer": {
+          "@id": "https://www.veelyn.sk/#organization"
+        },
+        "category": "Krása a zdravie > Parfumy > Eau de parfum",
+        "image": [
+          "https://www.veelyn.sk/images/veelyn/mystery.webp?v=764b9e8b"
+        ],
+        "url": "https://www.veelyn.sk/produkt/prada-paradoxe/",
+        "audience": {
+          "@type": "PeopleAudience",
+          "suggestedGender": "female"
+        },
+        "size": "50 ml",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "Typ",
+            "value": "Eau de parfum (20 % koncentrácia)"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Objem",
+            "value": "50 ml"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Krajina pôvodu",
+            "value": "Slovensko"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Hlavové tóny",
+            "value": "bergamot, neroli"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Srdcové tóny",
+            "value": "jazmín"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Základné tóny",
+            "value": "biely mošus, ambra"
+          }
+        ],
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.veelyn.sk/produkt/prada-paradoxe/",
+          "priceCurrency": "EUR",
+          "price": "24.99",
+          "validFrom": "2026-05-28",
+          "priceValidUntil": "2027-11-12",
+          "availability": "https://schema.org/InStock",
+          "itemCondition": "https://schema.org/NewCondition",
+          "seller": {
+            "@id": "https://www.veelyn.sk/#organization"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "SK"
+            },
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "4.49",
+              "currency": "EUR"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "DAY"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 1,
+                "unitCode": "DAY"
+              }
+            }
+          },
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "SK",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+            "merchantReturnDays": 14,
+            "returnMethod": "https://schema.org/ReturnByMail",
+            "returnFees": "https://schema.org/ReturnFeesCustomerResponsibility"
+          }
+        }
+      },
+      "visibleNotePyramidConfirmed": true
+    }
+  ],
+  "scope": "Own live browser DOM/structured metadata, no merchant actions beyond cookie rejection"
+}

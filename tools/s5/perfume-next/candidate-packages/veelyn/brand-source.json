@@ -1,0 +1,30 @@
+{
+  "operatorSource": "https://www.veelyn.sk/obchodne-podmienky/",
+  "contact": "info@veelyn.sk",
+  "aliases": [
+    "www.veelyn.sk"
+  ],
+  "logo": {
+    "id": "logo",
+    "url": "https://www.veelyn.sk/images/logo/veelyn-wordmark-dark-300.webp",
+    "status": 200,
+    "checkedAt": "2026-11-13T07:29:09.120574+00:00",
+    "method": "Normal supported browser-context GET, TLS verified, no custom identity/header/certificate bypass",
+    "sha256": "f46b09dc5b00d0ae43948857a391a4ad7aaed2a9e03f7af157f8ed84666dac21",
+    "width": 300,
+    "height": 78,
+    "localPath": "/assets/s5/veelyn/logo.webp"
+  },
+  "avatar": {
+    "id": "avatar",
+    "url": "https://www.veelyn.sk/images/logo/veelyn-badge-96.webp",
+    "status": 200,
+    "checkedAt": "2026-11-13T07:29:09.024753+00:00",
+    "method": "Normal supported browser-context GET, TLS verified, no custom identity/header/certificate bypass",
+    "sha256": "ee8518b81b48d437d3b74b5578aab5957f80a8dd48ad147ed8f4d65b4e8adc04",
+    "width": 96,
+    "height": 96,
+    "localPath": "/assets/s5/veelyn/avatar.webp"
+  },
+  "interest": "NOT_ESTABLISHED"
+}

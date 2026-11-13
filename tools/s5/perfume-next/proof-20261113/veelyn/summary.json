@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-11-13T07:42:08.956604+00:00",
+  "scope": "Own local candidate fixture on unchanged42b/c9core, source-ID API mock. NOT registered backend or live Preview, not countable as deployed demo.",
+  "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+  "results": 30,
+  "widths": [
+    320,
+    390,
+    1280
+  ],
+  "questions": 12,
+  "interactionGroups": 3,
+  "focusedChatCards": 9,
+  "allPrimaryAndAlternativePhotosLoaded": true,
+  "visualReview": "All30primary result views reviewed via3width contact sheets, final320all-photo recapture reviewed;4question views at390 and full10official-photo contact sheet reviewed. Initial320alternative capture race fixed by waiting image load+decode+paint, no runtime change.",
+  "paidCalls": 0,
+  "archive": "tools/s5/perfume-next/proof-20261113/veelyn/veelyn-local-fixture-qa.zip",
+  "archiveBytes": 19366159,
+  "sha256": "d89701dbc626ee02f4c80d68a96809107158a5333a8749ca2201298113541d1b",
+  "archiveEntries": 132,
+  "losslessArchiveVerification": true,
+  "originalPNGs": "Preserved locally under /workspace/work/perfume-audit/veelyn-local-qa-allphotos-20261113 and chat v2; old failed/intermediate reports retained, no deletion."
+}

@@ -1,0 +1,396 @@
+{
+  "commit": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "at": "2026-11-13T07:38:24.593993+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "deep-dive",
+      "pack": "50 ml",
+      "price": "24,99 €",
+      "url": "https://www.veelyn.sk/produkt/louis-vuitton-afternoon-swim/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "veelyn-result-deep-dive-390.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "hard-cash",
+      "pack": "50 ml",
+      "price": "24,99 €",
+      "url": "https://www.veelyn.sk/produkt/creed-aventus/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "veelyn-result-hard-cash-390.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "harmony",
+      "pack": "50 ml",
+      "price": "24,99 €",
+      "url": "https://www.veelyn.sk/produkt/louis-vuitton-symphony/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "veelyn-result-harmony-390.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "pink-desire",
+      "pack": "50 ml",
+      "price": "24,99 €",
+      "url": "https://www.veelyn.sk/produkt/parfums-de-marly-delina/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "veelyn-result-pink-desire-390.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "mystery",
+      "pack": "50 ml",
+      "price": "24,99 €",
+      "url": "https://www.veelyn.sk/produkt/prada-paradoxe/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "veelyn-result-mystery-390.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "forbidden-cherries",
+      "pack": "50 ml",
+      "price": "24,99 €",
+      "url": "https://www.veelyn.sk/produkt/tom-ford-lost-cherry/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "veelyn-result-forbidden-cherries-390.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "noble-wood",
+      "pack": "50 ml",
+      "price": "24,99 €",
+      "url": "https://www.veelyn.sk/produkt/tom-ford-oud-wood/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "veelyn-result-noble-wood-390.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "desert-storm",
+      "pack": "50 ml",
+      "price": "24,99 €",
+      "url": "https://www.veelyn.sk/produkt/louis-vuitton-ombre-nomade/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "veelyn-result-desert-storm-390.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "sweet-cig",
+      "pack": "50 ml",
+      "price": "24,99 €",
+      "url": "https://www.veelyn.sk/produkt/tom-ford-tobacco-vanille/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "veelyn-result-sweet-cig-390.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "moulin-rouge",
+      "pack": "50 ml",
+      "price": "24,99 €",
+      "url": "https://www.veelyn.sk/produkt/maison-francis-kurkdjian-baccarat-rouge-540/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "veelyn-result-moulin-rouge-390.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "warm",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        }
+      ],
+      "screenshot": "veelyn-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "deep-dive",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "hard-cash",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "harmony",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "veelyn-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "pink-desire",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "mystery",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "forbidden-cherries",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "veelyn-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "noble-wood",
+          "photo": "/assets/s3/scenes-k2/sandalwood.jpg"
+        },
+        {
+          "id": "desert-storm",
+          "photo": "/assets/s3/scenes-k2/incense.jpg"
+        },
+        {
+          "id": "sweet-cig",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "moulin-rouge",
+          "photo": "/assets/s5/veelyn/moulin-rouge.webp"
+        }
+      ],
+      "screenshot": "veelyn-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "deep-dive",
+        "noble-wood"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "veelyn-compare-390.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "enrichedStates": [
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "deep-dive",
+      "defaultScreenshot": "veelyn-result-deep-dive-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "veelyn-notes-deep-dive-390.png",
+      "compareScreenshot": "veelyn-pair-deep-dive-390.png",
+      "comparisonIds": [
+        "deep-dive",
+        "hard-cash"
+      ]
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "hard-cash",
+      "defaultScreenshot": "veelyn-result-hard-cash-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "veelyn-notes-hard-cash-390.png",
+      "compareScreenshot": "veelyn-pair-hard-cash-390.png",
+      "comparisonIds": [
+        "hard-cash",
+        "harmony"
+      ]
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "harmony",
+      "defaultScreenshot": "veelyn-result-harmony-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "veelyn-notes-harmony-390.png",
+      "compareScreenshot": "veelyn-pair-harmony-390.png",
+      "comparisonIds": [
+        "harmony",
+        "deep-dive"
+      ]
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "pink-desire",
+      "defaultScreenshot": "veelyn-result-pink-desire-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "veelyn-notes-pink-desire-390.png",
+      "compareScreenshot": "veelyn-pair-pink-desire-390.png",
+      "comparisonIds": [
+        "pink-desire",
+        "mystery"
+      ]
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "mystery",
+      "defaultScreenshot": "veelyn-result-mystery-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "veelyn-notes-mystery-390.png",
+      "compareScreenshot": "veelyn-pair-mystery-390.png",
+      "comparisonIds": [
+        "mystery",
+        "forbidden-cherries"
+      ]
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "forbidden-cherries",
+      "defaultScreenshot": "veelyn-result-forbidden-cherries-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "veelyn-notes-forbidden-cherries-390.png",
+      "compareScreenshot": "veelyn-pair-forbidden-cherries-390.png",
+      "comparisonIds": [
+        "forbidden-cherries",
+        "pink-desire"
+      ]
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "noble-wood",
+      "defaultScreenshot": "veelyn-result-noble-wood-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "veelyn-notes-noble-wood-390.png",
+      "compareScreenshot": "veelyn-pair-noble-wood-390.png",
+      "comparisonIds": [
+        "noble-wood",
+        "desert-storm"
+      ]
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "desert-storm",
+      "defaultScreenshot": "veelyn-result-desert-storm-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "veelyn-notes-desert-storm-390.png",
+      "compareScreenshot": "veelyn-pair-desert-storm-390.png",
+      "comparisonIds": [
+        "desert-storm",
+        "sweet-cig"
+      ]
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "sweet-cig",
+      "defaultScreenshot": "veelyn-result-sweet-cig-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "veelyn-notes-sweet-cig-390.png",
+      "compareScreenshot": "veelyn-pair-sweet-cig-390.png",
+      "comparisonIds": [
+        "sweet-cig",
+        "moulin-rouge"
+      ]
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "moulin-rouge",
+      "defaultScreenshot": "veelyn-result-moulin-rouge-390.png",
+      "defaultUnchecked": true,
+      "notesScreenshot": "veelyn-notes-moulin-rouge-390.png",
+      "compareScreenshot": "veelyn-pair-moulin-rouge-390.png",
+      "comparisonIds": [
+        "moulin-rouge",
+        "noble-wood"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

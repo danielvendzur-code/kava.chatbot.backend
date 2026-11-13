@@ -1266,7 +1266,24 @@ globalThis.CX_CATALOGUES.perfumeries1907 = {
    }
   }
  ],
- "revenue": "UNKNOWN",
+ "revenue": {
+  "year": 2025,
+  "currency": "EUR",
+  "salesGoods": 312589,
+  "salesProductsServices": 440,
+  "salesSum": 313029,
+  "unitConfirmation": {
+   "name": "perfumeries1907",
+   "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12598380",
+   "checkedAt": "2026-11-13T07:39:03.654471+00:00",
+   "status": 200,
+   "sha256": "6a1254778a89cb223d1e689b3447b077363a0c24159ac4893c2c9ab31baa7293",
+   "unitLines": [
+    "(v celých eurách)                   (v celých eurách)                              (v celých eurách alebo eurocentoch)"
+   ]
+  },
+  "source": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10193060"
+ },
  "size": "UNKNOWN",
  "interest": "NOT_ESTABLISHED",
  "notes": [
@@ -1274,5 +1291,32 @@ globalThis.CX_CATALOGUES.perfumeries1907 = {
   "Coffeee Passion excluded: product table Eau de Parfum conflicts with prose Extrait de Parfum.",
   "Two official flat-note lists remain flat; no invented pyramids.",
   "No eligible compatible add-on established; distinct comparisons do not add anything to basket."
- ]
+ ],
+ "commercialEligibility": {
+  "operator": "1907 s.r.o.",
+  "ico": "45303487",
+  "year": 2025,
+  "currency": "EUR",
+  "salesGoods": 312589,
+  "salesProductsServices": 440,
+  "salesSum": 313029,
+  "status": "PASS_NUMERICAL_CAP",
+  "sourceType": "official RUZ structured report and template row mapping",
+  "sources": [
+   "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10193060",
+   "https://www.registeruz.sk/cruz-public/api/sablona?id=687",
+   "https://www.registeruz.sk/cruz-public/api/uctovna-zavierka?id=6900785"
+  ],
+  "qualification": "Official structured sales rows02+03 and downloadable PDF header confirming whole euros. Prior failed path was not the actual public attachment link; no bypass used.",
+  "unitConfirmation": {
+   "name": "perfumeries1907",
+   "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12598380",
+   "checkedAt": "2026-11-13T07:39:03.654471+00:00",
+   "status": 200,
+   "sha256": "6a1254778a89cb223d1e689b3447b077363a0c24159ac4893c2c9ab31baa7293",
+   "unitLines": [
+    "(v celých eurách)                   (v celých eurách)                              (v celých eurách alebo eurocentoch)"
+   ]
+  }
+ }
 };

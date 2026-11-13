@@ -1,0 +1,90 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aké tóny chcete objavovať?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy a ovocné tóny",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia tónov vás láka?",
+      "options": [
+        {
+          "value": "deep-dive",
+          "label": "Pomaranč, limetka a mandarínka",
+          "productId": "deep-dive",
+          "sourceUrl": "https://www.veelyn.sk/produkt/louis-vuitton-afternoon-swim/"
+        },
+        {
+          "value": "hard-cash",
+          "label": "Ananás, bergamot a breza",
+          "productId": "hard-cash",
+          "sourceUrl": "https://www.veelyn.sk/produkt/creed-aventus/"
+        },
+        {
+          "value": "harmony",
+          "label": "Bergamot, ruža a santal",
+          "productId": "harmony",
+          "sourceUrl": "https://www.veelyn.sk/produkt/louis-vuitton-symphony/"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Kvety a ovocné akordy",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia tónov vás láka?",
+      "options": [
+        {
+          "value": "pink-desire",
+          "label": "Litchi, rebarbora a turecká ruža",
+          "productId": "pink-desire",
+          "sourceUrl": "https://www.veelyn.sk/produkt/parfums-de-marly-delina/"
+        },
+        {
+          "value": "mystery",
+          "label": "Neroli, jazmín a biely mošus",
+          "productId": "mystery",
+          "sourceUrl": "https://www.veelyn.sk/produkt/prada-paradoxe/"
+        },
+        {
+          "value": "forbidden-cherries",
+          "label": "Čerešňa, horké mandle a likér",
+          "productId": "forbidden-cherries",
+          "sourceUrl": "https://www.veelyn.sk/produkt/tom-ford-lost-cherry/"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Drevo, ambra a korenie",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia tónov vás láka?",
+      "options": [
+        {
+          "value": "noble-wood",
+          "label": "Oud, kardamóm a santal",
+          "productId": "noble-wood",
+          "sourceUrl": "https://www.veelyn.sk/produkt/tom-ford-oud-wood/"
+        },
+        {
+          "value": "desert-storm",
+          "label": "Maliny, oud a kadidlo",
+          "productId": "desert-storm",
+          "sourceUrl": "https://www.veelyn.sk/produkt/louis-vuitton-ombre-nomade/"
+        },
+        {
+          "value": "sweet-cig",
+          "label": "Tabakový list, kakao a vanilka",
+          "productId": "sweet-cig",
+          "sourceUrl": "https://www.veelyn.sk/produkt/tom-ford-tobacco-vanille/"
+        },
+        {
+          "value": "moulin-rouge",
+          "label": "Šafrán, jazmín a jedľový balzam",
+          "productId": "moulin-rouge",
+          "sourceUrl": "https://www.veelyn.sk/produkt/maison-francis-kurkdjian-baccarat-rouge-540/"
+        }
+      ]
+    }
+  ]
+}

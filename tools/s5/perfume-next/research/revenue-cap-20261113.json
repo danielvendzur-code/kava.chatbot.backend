@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-13T07:12:19.752176+00:00",
+  "checkedAt": "2026-11-13T07:22:14.461098+00:00",
   "owner": "PERFUME_WORKER",
   "policy": {
     "EUR": 500000,
@@ -9,7 +9,19 @@
     "unknown": "HOLD_SIZE_UNKNOWN; no assumption of small turnover",
     "metric": "annual sales/turnover of legal operator; never profit, assets, shop SKU count or contract value",
     "aboveCap": "Stop further preparation/integration/outreach; preserve existing work",
-    "priority": "Prefer smaller independent operators within the ceiling"
+    "priority": "Prefer smaller independent operators within the ceiling",
+    "fallbackCeiling": {
+      "EUR": 2000000,
+      "CZK": 50000000
+    },
+    "fallbackRule": "Owner13Nov allows larger turnover if too few suitable smaller firms. Original500kEUR/12mCZK is preferred tier; after documented smaller candidate screening, fallback tier is up to2mEUR/50mCZK. No automatic reactivation of above-fallback Ingredients or other HOLDs.",
+    "screeningEvidence": {
+      "preferredReadyLocal": "1907 source/local package, not integrated",
+      "preferredNewReserved": "Veelyn after live/duplicates",
+      "unknown": "Perfumed Prague turnover UNKNOWN, unreserved",
+      "blocked": "Sansiro ordinary HTML466, no bypass/reservation",
+      "newPriority": "Continue smaller candidates first; fallback not needed for Veelyn"
+    }
   },
   "companies": {
     "perfumeries1907": {
@@ -27,7 +39,17 @@
         "https://www.registeruz.sk/cruz-public/api/sablona?id=687",
         "https://www.registeruz.sk/cruz-public/api/uctovna-zavierka?id=6900785"
       ],
-      "qualification": "Sum of sales rows 02 and 03, not profit/assets. Row01 operating income also313029. PDF download403, no bypass. Structured API accessible. EUR corroboration from secondary FinStat indexed report; PDF unit header not independently viewed."
+      "qualification": "Official structured sales rows02+03 and downloadable PDF header confirming whole euros. Prior failed path was not the actual public attachment link; no bypass used.",
+      "unitConfirmation": {
+        "name": "perfumeries1907",
+        "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12598380",
+        "checkedAt": "2026-11-13T07:39:03.654471+00:00",
+        "status": 200,
+        "sha256": "6a1254778a89cb223d1e689b3447b077363a0c24159ac4893c2c9ab31baa7293",
+        "unitLines": [
+          "(v celých eurách)                   (v celých eurách)                              (v celých eurách alebo eurocentoch)"
+        ]
+      }
     },
     "ingredients": {
       "operator": "ingredients s.r.o.",
@@ -50,6 +72,49 @@
       "ico": "09597204",
       "revenue": "UNKNOWN",
       "status": "HOLD_SIZE_UNKNOWN_NOT_RESERVED"
+    },
+    "veelyn": {
+      "operator": "Vitaz Capital s. r. o.",
+      "ico": "56181001",
+      "year": 2025,
+      "salesGoods": 163220,
+      "salesProductsServices": 0,
+      "currency": "EUR",
+      "status": "PREFERRED_REVENUE_TIER_PASS",
+      "source": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10353619",
+      "scope": "Full operator, not isolated shop estimate. Structured API checked; PDF unit header not independently viewed.",
+      "unitConfirmation": {
+        "name": "veelyn",
+        "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12883673",
+        "checkedAt": "2026-11-13T07:36:58.709985+00:00",
+        "status": 200,
+        "sha256": "f03a34b69362d46d575d9c57274db18a6613ac2f85cad01860d2c679219d787e",
+        "unitLines": [
+          "(v celých eurách)                 (v celých eurách)                              (v celých eurách alebo eurocentoch)"
+        ]
+      }
+    },
+    "vonya": {
+      "operator": "Pharm s.r.o.",
+      "ico": "46767851",
+      "year": 2025,
+      "salesGoods": 1236118,
+      "salesProductsServices": 102917,
+      "salesSum": 1339035,
+      "currency": "EUR",
+      "status": "FALLBACK_REVENUE_TIER_FIT_REVIEW_NOT_RESERVED",
+      "source": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10287362",
+      "fitIssue": "Own /prevodnik-voni/ shows search, brand/gender filters and matched inspired products; not claimed AI chat or guided needs quiz. Further marginal fit review required.",
+      "unitConfirmation": {
+        "name": "vonya",
+        "url": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12763508",
+        "checkedAt": "2026-11-13T07:36:58.710916+00:00",
+        "status": 200,
+        "sha256": "b779fda1bcbc6469e3607c3bca1169734ae6bdc16710cc6ea20643e0d52fe91d",
+        "unitLines": [
+          "(v celých eurách)                 (v celých eurách)                              (v celých eurách alebo eurocentoch)"
+        ]
+      }
     }
   }
 }

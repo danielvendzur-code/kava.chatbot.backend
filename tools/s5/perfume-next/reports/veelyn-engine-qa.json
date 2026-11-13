@@ -1,0 +1,147 @@
+{
+  "commit": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "scope": "Reserved Veelyn sources on unchanged core; local fixture only, not registered/live Preview",
+  "paidCalls": 0,
+  "coreUnchanged": true,
+  "companies": {
+    "veelyn": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "deep-dive"
+          },
+          "id": "deep-dive",
+          "url": "https://www.veelyn.sk/produkt/louis-vuitton-afternoon-swim/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "hard-cash"
+          },
+          "id": "hard-cash",
+          "url": "https://www.veelyn.sk/produkt/creed-aventus/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "harmony"
+          },
+          "id": "harmony",
+          "url": "https://www.veelyn.sk/produkt/louis-vuitton-symphony/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "pink-desire"
+          },
+          "id": "pink-desire",
+          "url": "https://www.veelyn.sk/produkt/parfums-de-marly-delina/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "mystery"
+          },
+          "id": "mystery",
+          "url": "https://www.veelyn.sk/produkt/prada-paradoxe/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "forbidden-cherries"
+          },
+          "id": "forbidden-cherries",
+          "url": "https://www.veelyn.sk/produkt/tom-ford-lost-cherry/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "noble-wood"
+          },
+          "id": "noble-wood",
+          "url": "https://www.veelyn.sk/produkt/tom-ford-oud-wood/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "desert-storm"
+          },
+          "id": "desert-storm",
+          "url": "https://www.veelyn.sk/produkt/louis-vuitton-ombre-nomade/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "sweet-cig"
+          },
+          "id": "sweet-cig",
+          "url": "https://www.veelyn.sk/produkt/tom-ford-tobacco-vanille/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "moulin-rouge"
+          },
+          "id": "moulin-rouge",
+          "url": "https://www.veelyn.sk/produkt/maison-francis-kurkdjian-baccarat-rouge-540/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "warm"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "deep-dive",
+              "hard-cash",
+              "harmony"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "pink-desire",
+              "mystery",
+              "forbidden-cherries"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "noble-wood",
+              "desert-storm",
+              "sweet-cig",
+              "moulin-rouge"
+            ]
+          }
+        }
+      ],
+      "status": "PASS",
+      "formulaCount": 10
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "at": "2026-11-13T07:34:21.706572+00:00",
+  "commit": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "scope": "Local isolated candidate fixture only.",
+  "cards": [
+    {
+      "slug": "veelyn",
+      "width": 320,
+      "id": "deep-dive",
+      "price": "24,99 €",
+      "pack": "50 ml",
+      "url": "https://www.veelyn.sk/produkt/louis-vuitton-afternoon-swim/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "veelyn-card-0-320.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 320,
+      "id": "pink-desire",
+      "price": "24,99 €",
+      "pack": "50 ml",
+      "url": "https://www.veelyn.sk/produkt/parfums-de-marly-delina/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "veelyn-card-1-320.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 320,
+      "id": "noble-wood",
+      "price": "24,99 €",
+      "pack": "50 ml",
+      "url": "https://www.veelyn.sk/produkt/tom-ford-oud-wood/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "veelyn-card-2-320.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "deep-dive",
+      "price": "24,99 €",
+      "pack": "50 ml",
+      "url": "https://www.veelyn.sk/produkt/louis-vuitton-afternoon-swim/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "veelyn-card-0-390.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "pink-desire",
+      "price": "24,99 €",
+      "pack": "50 ml",
+      "url": "https://www.veelyn.sk/produkt/parfums-de-marly-delina/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "veelyn-card-1-390.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "id": "noble-wood",
+      "price": "24,99 €",
+      "pack": "50 ml",
+      "url": "https://www.veelyn.sk/produkt/tom-ford-oud-wood/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "veelyn-card-2-390.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 1280,
+      "id": "deep-dive",
+      "price": "24,99 €",
+      "pack": "50 ml",
+      "url": "https://www.veelyn.sk/produkt/louis-vuitton-afternoon-swim/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "veelyn-card-0-1280.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 1280,
+      "id": "pink-desire",
+      "price": "24,99 €",
+      "pack": "50 ml",
+      "url": "https://www.veelyn.sk/produkt/parfums-de-marly-delina/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "veelyn-card-1-1280.png"
+    },
+    {
+      "slug": "veelyn",
+      "width": 1280,
+      "id": "noble-wood",
+      "price": "24,99 €",
+      "pack": "50 ml",
+      "url": "https://www.veelyn.sk/produkt/tom-ford-oud-wood/",
+      "photoDecoded": true,
+      "priceAndCtaInsideCard": true,
+      "screenshot": "veelyn-card-2-1280.png"
+    }
+  ],
+  "viewports": [
+    {
+      "slug": "veelyn",
+      "width": 320,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    },
+    {
+      "slug": "veelyn",
+      "width": 390,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    },
+    {
+      "slug": "veelyn",
+      "width": 1280,
+      "offer447plus10": true,
+      "noTrialCopy": true,
+      "four40pxChips": true,
+      "reducedMotionWaiting": true
+    }
+  ],
+  "errors": [],
+  "paidModelCalls": 0,
+  "complete": true,
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "browser": "webkit"
+}
