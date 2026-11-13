@@ -1,0 +1,237 @@
+{
+  "source": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/04495381",
+  "checkedAt": "2026-11-13T08:57:26.266164+00:00",
+  "status": 200,
+  "data": {
+    "ico": "04495381",
+    "obchodniJmeno": "EASY MOVING, s.r.o.",
+    "sidlo": {
+      "kodStatu": "CZ",
+      "nazevStatu": "Česká republika",
+      "kodKraje": 19,
+      "nazevKraje": "Hlavní město Praha",
+      "kodOkresu": 3100,
+      "kodObce": 554782,
+      "nazevObce": "Praha",
+      "kodSpravnihoObvodu": 60,
+      "nazevSpravnihoObvodu": "Praha 6",
+      "kodMestskehoObvodu": 60,
+      "nazevMestskehoObvodu": "Praha 6",
+      "kodMestskeCastiObvodu": 500178,
+      "kodUlice": 716812,
+      "nazevMestskeCastiObvodu": "Praha 6",
+      "nazevUlice": "Zátopkova",
+      "cisloDomovni": 100,
+      "kodCastiObce": 490032,
+      "cisloOrientacni": 2,
+      "nazevCastiObce": "Břevnov",
+      "kodAdresnihoMista": 25791478,
+      "psc": 16900,
+      "textovaAdresa": "Zátopkova 100/2, Břevnov, 16900 Praha 6",
+      "standardizaceAdresy": true,
+      "typCisloDomovni": 1
+    },
+    "pravniForma": "112",
+    "pravniFormaRos": "112",
+    "financniUrad": "006",
+    "datumVzniku": "2015-10-26",
+    "datumAktualizace": "2026-02-11",
+    "icoId": "04495381",
+    "adresaDorucovaci": {
+      "radekAdresy1": "Zátopkova 100/2",
+      "radekAdresy2": "Břevnov",
+      "radekAdresy3": "16900 Praha 6"
+    },
+    "czNace2008": [
+      "00",
+      "74"
+    ],
+    "seznamRegistraci": {
+      "stavZdrojeRos": "AKTIVNI",
+      "stavZdrojeVr": "AKTIVNI",
+      "stavZdrojeRes": "AKTIVNI",
+      "stavZdrojeRzp": "AKTIVNI",
+      "stavZdrojeNrpzs": "NEEXISTUJICI",
+      "stavZdrojeRpsh": "NEEXISTUJICI",
+      "stavZdrojeRcns": "NEEXISTUJICI",
+      "stavZdrojeSzr": "NEEXISTUJICI",
+      "stavZdrojeDph": "NEEXISTUJICI",
+      "stavZdrojeSkDph": "NEEXISTUJICI",
+      "stavZdrojeSd": "NEEXISTUJICI",
+      "stavZdrojeIr": "NEEXISTUJICI",
+      "stavZdrojeCeu": "NEEXISTUJICI",
+      "stavZdrojeRs": "NEEXISTUJICI",
+      "stavZdrojeRed": "NEEXISTUJICI",
+      "stavZdrojeMonitor": "NEEXISTUJICI"
+    },
+    "primarniZdroj": "ros",
+    "dalsiUdaje": [
+      {
+        "obchodniJmeno": [
+          {
+            "obchodniJmeno": "EASY MOVING, s.r.o.",
+            "primarniZaznam": true
+          }
+        ],
+        "sidlo": [
+          {
+            "sidlo": {
+              "kodStatu": "CZ",
+              "nazevStatu": "Česká republika",
+              "kodKraje": 19,
+              "nazevKraje": "Hlavní město Praha",
+              "kodObce": 554782,
+              "nazevObce": "Praha",
+              "kodSpravnihoObvodu": 60,
+              "nazevSpravnihoObvodu": "Praha 6",
+              "kodMestskehoObvodu": 60,
+              "nazevMestskehoObvodu": "Praha 6",
+              "kodMestskeCastiObvodu": 500178,
+              "kodUlice": 716812,
+              "nazevMestskeCastiObvodu": "Praha 6",
+              "nazevUlice": "Zátopkova",
+              "cisloDomovni": 100,
+              "kodCastiObce": 490032,
+              "cisloOrientacni": 2,
+              "nazevCastiObce": "Břevnov",
+              "kodAdresnihoMista": 25791478,
+              "psc": 16900,
+              "textovaAdresa": "Zátopkova 100/2, Břevnov, 16900 Praha 6",
+              "standardizaceAdresy": true,
+              "typCisloDomovni": 1
+            },
+            "primarniZaznam": true
+          }
+        ],
+        "pravniForma": "112",
+        "pravniFormaRos": "112",
+        "datovyZdroj": "res"
+      },
+      {
+        "obchodniJmeno": [
+          {
+            "obchodniJmeno": "EASY MOVING, s.r.o.",
+            "primarniZaznam": true
+          }
+        ],
+        "sidlo": [
+          {
+            "sidlo": {
+              "kodStatu": "CZ",
+              "nazevStatu": "Česká republika",
+              "kodKraje": 19,
+              "nazevKraje": "Hlavní město Praha",
+              "kodOkresu": 3100,
+              "kodObce": 554782,
+              "nazevObce": "Praha",
+              "kodSpravnihoObvodu": 60,
+              "nazevSpravnihoObvodu": "Praha 6",
+              "kodMestskehoObvodu": 60,
+              "nazevMestskehoObvodu": "Praha 6",
+              "kodMestskeCastiObvodu": 500178,
+              "kodUlice": 716812,
+              "nazevMestskeCastiObvodu": "Praha 6",
+              "nazevUlice": "Zátopkova",
+              "cisloDomovni": 100,
+              "kodCastiObce": 490032,
+              "cisloOrientacni": 2,
+              "nazevCastiObce": "Břevnov",
+              "kodAdresnihoMista": 25791478,
+              "psc": 16900,
+              "textovaAdresa": "Zátopkova 100/2, Břevnov, 16900 Praha 6",
+              "standardizaceAdresy": true,
+              "typCisloDomovni": 1
+            },
+            "primarniZaznam": true
+          }
+        ],
+        "pravniFormaRos": "112",
+        "datovyZdroj": "ros"
+      },
+      {
+        "obchodniJmeno": [
+          {
+            "obchodniJmeno": "EASY MOVING, s.r.o.",
+            "primarniZaznam": true
+          }
+        ],
+        "sidlo": [
+          {
+            "sidlo": {
+              "kodStatu": "CZ",
+              "nazevStatu": "Česká republika",
+              "kodKraje": 19,
+              "nazevKraje": "Hlavní město Praha",
+              "kodObce": 554782,
+              "nazevObce": "Praha",
+              "kodSpravnihoObvodu": 60,
+              "nazevSpravnihoObvodu": "Praha 6",
+              "kodMestskehoObvodu": 60,
+              "nazevMestskehoObvodu": "Praha 6",
+              "kodMestskeCastiObvodu": 500178,
+              "kodUlice": 716812,
+              "nazevMestskeCastiObvodu": "Praha 6",
+              "nazevUlice": "Zátopkova",
+              "cisloDomovni": 100,
+              "kodCastiObce": 490032,
+              "cisloOrientacni": 2,
+              "nazevCastiObce": "Břevnov",
+              "kodAdresnihoMista": 25791478,
+              "psc": 16900,
+              "textovaAdresa": "Zátopkova 100/2, Břevnov, 16900 Praha 6",
+              "standardizaceAdresy": true,
+              "typCisloDomovni": 1
+            },
+            "primarniZaznam": true
+          }
+        ],
+        "pravniForma": "112",
+        "datovyZdroj": "rzp"
+      },
+      {
+        "obchodniJmeno": [
+          {
+            "obchodniJmeno": "EASY MOVING, s.r.o.",
+            "primarniZaznam": true
+          }
+        ],
+        "sidlo": [
+          {
+            "sidlo": {
+              "kodStatu": "CZ",
+              "nazevStatu": "Česká republika",
+              "kodKraje": 19,
+              "nazevKraje": "Hlavní město Praha",
+              "kodOkresu": 3100,
+              "kodObce": 554782,
+              "nazevObce": "Praha",
+              "kodMestskehoObvodu": 60,
+              "nazevMestskehoObvodu": "Praha 6",
+              "kodMestskeCastiObvodu": 500178,
+              "kodUlice": 716812,
+              "nazevMestskeCastiObvodu": "Praha 6",
+              "nazevUlice": "Zátopkova",
+              "cisloDomovni": 100,
+              "kodCastiObce": 490032,
+              "cisloOrientacni": 2,
+              "nazevCastiObce": "Břevnov",
+              "kodAdresnihoMista": 25791478,
+              "psc": 16900,
+              "textovaAdresa": "Zátopkova 100/2, Břevnov, 16900 Praha 6",
+              "standardizaceAdresy": true,
+              "typCisloDomovni": 1
+            },
+            "primarniZaznam": true
+          }
+        ],
+        "pravniForma": "112",
+        "spisovaZnacka": "C 248489/MSPH",
+        "datovyZdroj": "vr"
+      }
+    ],
+    "czNace": [
+      "00",
+      "74"
+    ]
+  }
+}

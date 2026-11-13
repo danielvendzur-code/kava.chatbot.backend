@@ -1,0 +1,266 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "PARFUMEUR",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/parfumeur/logo.webp",
+      "header": "/assets/s5/parfumeur/logo.webp",
+      "avatar": "/assets/s5/parfumeur/avatar.webp"
+    },
+    "brand": {
+      "name": "PARFUMEUR",
+      "domain": "parfemy-parfumeur.cz",
+      "website": "https://www.parfemy-parfumeur.cz/",
+      "lang": "cs",
+      "fullName": "PARFUMEUR",
+      "url": "https://www.parfemy-parfumeur.cz/",
+      "logo": "/assets/s5/parfumeur/logo.webp",
+      "mark": "/assets/s5/parfumeur/avatar.webp",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně PARFUMEUR podle doložených tónů a balení.",
+      "quickChips": [
+        "Citrusy a zázvor",
+        "Růže a grapefruit",
+        "Šafrán a santal",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#78531b",
+        "accent": "#78531b",
+        "soft": "#faf7ef",
+        "paper": "#ffffff",
+        "ink": "#2d261e",
+        "line": "#e8decc"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy s květy a kořením",
+        "Vyberte podle doložených tónů.",
+        "Citrusy s květy a kořením",
+        ""
+      ],
+      "etoile": [
+        "Zázvor, bergamot a jablko",
+        "Zázvor, bergamot a jablko.",
+        "Zázvor, bergamot a jablko",
+        "Zázvor, bergamot a jablko."
+      ],
+      "bergamote-jasmin": [
+        "Aldehydy, bergamot a jasmín",
+        "Aldehydy, bergamot a jasmín.",
+        "Aldehydy, bergamot a jasmín",
+        "Aldehydy, bergamot a jasmín."
+      ],
+      "etincelle-rose": [
+        "Grapefruit, růže a kosatec",
+        "Grapefruit, růže a kosatec.",
+        "Grapefruit, růže a kosatec",
+        "Grapefruit, růže a kosatec."
+      ],
+      "diamant": [
+        "Mandarinka, pepř a karamel",
+        "Mandarinka, pepř a karamel.",
+        "Mandarinka, pepř a karamel",
+        "Mandarinka, pepř a karamel."
+      ],
+      "floral": [
+        "Květiny a ovocné akordy",
+        "Vyberte podle doložených tónů.",
+        "Květiny a ovocné akordy",
+        ""
+      ],
+      "feminissime": [
+        "Broskev, kosatec a pomerančový květ",
+        "Broskev, kosatec a pomerančový květ.",
+        "Broskev, kosatec a pomerančový květ",
+        "Broskev, kosatec a pomerančový květ."
+      ],
+      "musc-divin": [
+        "Kosatec, pivoňka a bílé pižmo",
+        "Kosatec, pivoňka a bílé pižmo.",
+        "Kosatec, pivoňka a bílé pižmo",
+        "Kosatec, pivoňka a bílé pižmo."
+      ],
+      "cantabelle": [
+        "Černý rybíz, jasmín a švestka",
+        "Černý rybíz, jasmín a švestka.",
+        "Černý rybíz, jasmín a švestka",
+        "Černý rybíz, jasmín a švestka."
+      ],
+      "belle-cherie": [
+        "Mandarinka, heliotrop a vanilka",
+        "Mandarinka, heliotrop a vanilka.",
+        "Mandarinka, heliotrop a vanilka",
+        "Mandarinka, heliotrop a vanilka."
+      ],
+      "warm": [
+        "Káva, koření a hřejivé tóny",
+        "Vyberte podle doložených tónů.",
+        "Káva, koření a hřejivé tóny",
+        ""
+      ],
+      "amande-noire": [
+        "Černá káva, čokoláda a hořké mandle",
+        "Černá káva, čokoláda a hořké mandle.",
+        "Černá káva, čokoláda a hořké mandle",
+        "Černá káva, čokoláda a hořké mandle."
+      ],
+      "canaica": [
+        "Karamel, maliny a santal",
+        "Karamel, maliny a santal.",
+        "Karamel, maliny a santal",
+        "Karamel, maliny a santal."
+      ],
+      "sensuel-safran": [
+        "Šafrán, kosatec a santal",
+        "Šafrán, kosatec a santal.",
+        "Šafrán, kosatec a santal",
+        "Šafrán, kosatec a santal."
+      ],
+      "gelosia": [
+        "Kardamom, vanilka a praliné",
+        "Kardamom, vanilka a praliné.",
+        "Kardamom, vanilka a praliné",
+        "Kardamom, vanilka a praliné."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aké tóny chcete objavovať?",
+        "Vyberte podľa doložených tónov.",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktoré tóny vás lákajú?",
+        "Vyberte jeden profil.",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/orange-slices.jpg"
+      ],
+      "etoile": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "bergamote-jasmin": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "etincelle-rose": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "diamant": [
+        "/assets/s3/scenes-k2/orange-slices.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "feminissime": [
+        "/assets/s3/scenes-k2/neroli-blossom.jpg"
+      ],
+      "musc-divin": [
+        "/assets/s5/parfumeur/musc-divin.webp"
+      ],
+      "cantabelle": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "belle-cherie": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "warm": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "amande-noire": [
+        "/assets/s5/parfumeur/amande-noire.webp"
+      ],
+      "canaica": [
+        "/assets/s3/scenes-k2/sandalwood.jpg"
+      ],
+      "sensuel-safran": [
+        "/assets/s5/parfumeur/sensuel-safran.webp"
+      ],
+      "gelosia": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "etoile",
+      "amande-noire"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní profil · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce pro výběr vůně",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr podle doložených tónů vede ke konkrétnímu parfému s cenou, balením a odkazem. Dvě odlišné kompozice lze porovnat.",
+      "includedChat": "Tóny vybraných kompozic, přesná balení, ceny a porovnání.",
+      "includedAdvisor": "Doložené tóny a konkrétní profil — na konci jedna vůně.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně PARFUMEUR podle doložených tónů a balení.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít výběr vůně",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "etoile": "bergamote-jasmin",
+        "bergamote-jasmin": "etincelle-rose",
+        "etincelle-rose": "diamant",
+        "diamant": "etoile",
+        "feminissime": "musc-divin",
+        "musc-divin": "cantabelle",
+        "cantabelle": "belle-cherie",
+        "belle-cherie": "feminissime",
+        "amande-noire": "canaica",
+        "canaica": "sensuel-safran",
+        "sensuel-safran": "gelosia",
+        "gelosia": "amande-noire"
+      }
+    }
+  },
+  "catalogueImport": "/catalogues/parfumeur.js",
+  "backendBrand": "parfumeur",
+  "offlineRules": [
+    {
+      "chip": "Citrusy a zázvor",
+      "match": "citrus.*zazvor",
+      "productIds": [
+        "etoile"
+      ]
+    },
+    {
+      "chip": "Růže a grapefruit",
+      "match": "ruz.*grapefruit",
+      "productIds": [
+        "etincelle-rose"
+      ]
+    },
+    {
+      "chip": "Šafrán a santal",
+      "match": "safran.*santal",
+      "productIds": [
+        "sensuel-safran"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequiredForPrimary": true,
+  "bodyAddonNeedsExplicitShoptetScopeInExistingExtras": true,
+  "commonFilesModified": [],
+  "price": "447 EUR +10 EUR/month",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}

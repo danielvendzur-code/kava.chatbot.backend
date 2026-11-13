@@ -1,0 +1,102 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaké tóny chcete objevovat?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy s květy a kořením",
+      "key": "fragranceProfile",
+      "question": "Která kombinace tónů vás láká?",
+      "options": [
+        {
+          "value": "etoile",
+          "label": "Zázvor, bergamot a jablko",
+          "productId": "etoile",
+          "sourceUrl": "https://www.parfemy-parfumeur.cz/etoile--fragonard--pravy-parfem--60-ml/"
+        },
+        {
+          "value": "bergamote-jasmin",
+          "label": "Aldehydy, bergamot a jasmín",
+          "productId": "bergamote-jasmin",
+          "sourceUrl": "https://www.parfemy-parfumeur.cz/bergamote-jasmin-marcus-spurway--parfemova-voda--100-ml/"
+        },
+        {
+          "value": "etincelle-rose",
+          "label": "Grapefruit, růže a kosatec",
+          "productId": "etincelle-rose",
+          "sourceUrl": "https://www.parfemy-parfumeur.cz/etincelle-de-rose--marcus-spurway--parfem--50-ml/"
+        },
+        {
+          "value": "diamant",
+          "label": "Mandarinka, pepř a karamel",
+          "productId": "diamant",
+          "sourceUrl": "https://www.parfemy-parfumeur.cz/pravy-parfem-diamant--60-ml/"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Květiny a ovocné akordy",
+      "key": "fragranceProfile",
+      "question": "Která kombinace tónů vás láká?",
+      "options": [
+        {
+          "value": "feminissime",
+          "label": "Broskev, kosatec a pomerančový květ",
+          "productId": "feminissime",
+          "sourceUrl": "https://www.parfemy-parfumeur.cz/feminissime--galimard--damsky-parfem--100-ml/"
+        },
+        {
+          "value": "musc-divin",
+          "label": "Kosatec, pivoňka a bílé pižmo",
+          "productId": "musc-divin",
+          "sourceUrl": "https://www.parfemy-parfumeur.cz/musc-divin-marcus-spurway--parfem--50-ml/"
+        },
+        {
+          "value": "cantabelle",
+          "label": "Černý rybíz, jasmín a švestka",
+          "productId": "cantabelle",
+          "sourceUrl": "https://www.parfemy-parfumeur.cz/cantabelle--galimard--damska-parfemova-voda--100-ml/"
+        },
+        {
+          "value": "belle-cherie",
+          "label": "Mandarinka, heliotrop a vanilka",
+          "productId": "belle-cherie",
+          "sourceUrl": "https://www.parfemy-parfumeur.cz/pravy-parfem-belle-cherie-60-ml/"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Káva, koření a hřejivé tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace tónů vás láká?",
+      "options": [
+        {
+          "value": "amande-noire",
+          "label": "Černá káva, čokoláda a hořké mandle",
+          "productId": "amande-noire",
+          "sourceUrl": "https://www.parfemy-parfumeur.cz/amande-noire--marcus-spurway--parfem--50-ml/"
+        },
+        {
+          "value": "canaica",
+          "label": "Karamel, maliny a santal",
+          "productId": "canaica",
+          "sourceUrl": "https://www.parfemy-parfumeur.cz/canaica-galimard-damsky-parfem-100-ml/"
+        },
+        {
+          "value": "sensuel-safran",
+          "label": "Šafrán, kosatec a santal",
+          "productId": "sensuel-safran",
+          "sourceUrl": "https://www.parfemy-parfumeur.cz/collection-privee-sensuel-safran--galimard--unisex-parfem--100-ml/"
+        },
+        {
+          "value": "gelosia",
+          "label": "Kardamom, vanilka a praliné",
+          "productId": "gelosia",
+          "sourceUrl": "https://www.parfemy-parfumeur.cz/gelosia--paolo-gigli-firenze--italie--unisex-parfemovy-extrakt--30-ml/"
+        }
+      ]
+    }
+  ]
+}

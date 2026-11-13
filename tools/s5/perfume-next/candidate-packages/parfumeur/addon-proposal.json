@@ -1,0 +1,30 @@
+{
+  "enabled": false,
+  "status": "VERIFIED_SOURCE_PENDING_MAIN_RENDERER_SCOPE",
+  "parentProductId": "feminissime",
+  "parentProductUrl": "https://www.parfemy-parfumeur.cz/feminissime--galimard--damsky-parfem--100-ml/",
+  "name": "Feminissime, Galimard, dámský parfémovaný tělový krém, 150 ml",
+  "url": "https://www.parfemy-parfumeur.cz/feminissime--galimard--damsky-parfemovany-telovy-krem--150-ml/",
+  "pack": "150 ml",
+  "priceAmount": 665,
+  "currency": "CZK",
+  "stock": "Skladem",
+  "sameFragranceLine": "Feminissime",
+  "relationshipEvidence": "Exact same Galimard Feminissime name and pyramid, explicitly linked related product on parentPDP. Not same formula as bodycream.",
+  "sourceSha256": "16bf2d63712ab7264bf7645bcd33d5b04455a16e30ef6d2895f120718e0824e3",
+  "checkedAt": "2026-11-13T09:08:40.668048+00:00",
+  "photo": {
+    "id": "feminissime-cream",
+    "url": "https://www.parfemy-parfumeur.cz/user/shop/big/7129_cremes-corps.jpg?ff=1&x=1024&y=1024&q=85&ts=64afd143&sg=38cb01fe",
+    "checkedAt": "2026-11-13T09:12:22.670762+00:00",
+    "status": 200,
+    "width": 1024,
+    "height": 1024,
+    "sourceSha256": "fd9e2d7c84dd09802ce5a2683b8ae204b40a966600bd6c1e8cc6189d9cfa4595",
+    "localSha256": "92ee2222c08c62aac36aa1ff04193686413ed9e8adeb9396f7f539889e192dce",
+    "localPath": "/assets/s5/parfumeur/feminissime-cream.webp",
+    "processing": "Lossless file-format conversion only; official crop/props unchanged, no retouch/upscale."
+  },
+  "photoMeaning": "Official multi-cream illustration; selected purchase only one150mlFeminissime. Require single-SKU photo or explicit illustration disclosure before enabling.",
+  "blockingDifference": "fragrance-result-extras.supplementFor requires scope===ShopifyPublicVariant and exactVariantId. Actual source is Shoptet single-pack public product page; needs explicit Shoptet opt-in/evidence validation by MAIN. No scope spoofing or active feature promised."
+}
