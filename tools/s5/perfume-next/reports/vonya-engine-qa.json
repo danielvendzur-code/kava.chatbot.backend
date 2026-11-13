@@ -1,0 +1,165 @@
+{
+  "commit": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "scope": "Reserved Vonya sources on unchanged core; local fixture only, not registered/live Preview",
+  "paidCalls": 0,
+  "coreUnchanged": true,
+  "companies": {
+    "vonya": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "mint-ocean"
+          },
+          "id": "mint-ocean",
+          "url": "https://www.vonya.sk/yodeyma-mint-ocean/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "dorian"
+          },
+          "id": "dorian",
+          "url": "https://www.vonya.sk/yodeyma-dorian/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "caribbean"
+          },
+          "id": "caribbean",
+          "url": "https://www.vonya.sk/yodeyma-caribbean/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "blue"
+          },
+          "id": "blue",
+          "url": "https://www.vonya.sk/yodeyma-blue/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "tayda"
+          },
+          "id": "tayda",
+          "url": "https://www.vonya.sk/yodeyma-tayda/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "cheante"
+          },
+          "id": "cheante",
+          "url": "https://www.vonya.sk/yodeyma-cheante/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "lido"
+          },
+          "id": "lido",
+          "url": "https://www.vonya.sk/yodeyma-lido/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "white-summer"
+          },
+          "id": "white-summer",
+          "url": "https://www.vonya.sk/yodeyma-white-summer/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "nya"
+          },
+          "id": "nya",
+          "url": "https://www.vonya.sk/yodeyma-nya/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "black-elixir"
+          },
+          "id": "black-elixir",
+          "url": "https://www.vonya.sk/yodeyma-black-elixir/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "ambrax"
+          },
+          "id": "ambrax",
+          "url": "https://www.vonya.sk/yodeyma-ambrax/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "silk-elixir"
+          },
+          "id": "silk-elixir",
+          "url": "https://www.vonya.sk/yodeyma-silk-elixir/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "warm"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "mint-ocean",
+              "dorian",
+              "caribbean",
+              "blue"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "tayda",
+              "cheante",
+              "lido",
+              "white-summer"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "nya",
+              "black-elixir",
+              "ambrax",
+              "silk-elixir"
+            ]
+          }
+        }
+      ],
+      "status": "PASS",
+      "formulaCount": 12
+    }
+  }
+}

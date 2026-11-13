@@ -1,0 +1,1774 @@
+{
+  "brand": "Vonya.sk",
+  "domain": "vonya.sk",
+  "operator": {
+    "name": "Pharm s.r.o.",
+    "ico": "46767851",
+    "country": "SK"
+  },
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "sk",
+  "country": "SK",
+  "currency": "EUR",
+  "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+  "products": [
+    {
+      "id": "mint-ocean",
+      "name": "YODEYMA Mint Ocean",
+      "url": "https://www.vonya.sk/yodeyma-mint-ocean/",
+      "priceAmount": 32.9,
+      "price": "32,90 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Mäta, citrón a bazalka. Inšpirovaný parfum YODEYMA; nejde o originál dizajnérskej značky.",
+      "reason": "Mäta, citrón a bazalka.",
+      "photo": "/assets/s5/vonya/mint-ocean.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vonya.sk/yodeyma-mint-ocean/",
+        "verifiedAt": "2026-11-13T11:55:24.523665+00:00",
+        "sourceSha256": "344bbfc808613ebd7c13969b630fc48567b8623de976d41d719baadb537324d6",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom (2 ks)",
+          "structuredAvailability": "https://schema.org/InStock",
+          "scope": "Exact100mlpublic SKU offer and matching variant radio/stock agree; no physical quantity or delivery guarantee. Live Caribbean selected through visible label."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 32.9,
+          "currency": "EUR",
+          "vatEvidence": "Official terms5.2 explicitly total price includesVAT and legally required fees, delivery additional.",
+          "vatSource": "https://www.vonya.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "title": "YODEYMA Mint Ocean",
+          "selectedVariant": "Objem: 100 ml",
+          "variantId": "17938"
+        },
+        "variantSelectionRequired": true,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "scent": "Mäta, citrón a bazalka",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "mint-ocean"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vonya.sk/yodeyma-mint-ocean/",
+          "sourceText": "Hlava: Mäta; Srdce: Citrón; Základ: Bazalka",
+          "navigationLabel": "Mäta, citrón a bazalka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7315_yodeyma-mint-ocean-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b868f6&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7315_yodeyma-mint-ocean-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b868f6&sg=161563f2",
+          "originalSha256": "3041f1ce923961bdb03f33ab3f12fb7b61a80b566e1a06a548efba1f9ef32831",
+          "localSha256": "1260f40fbed41f418ef279e17b573fd6fd810949576d778b68ad946e2aa90d35",
+          "width": 500,
+          "height": 706,
+          "selectedPack": "100 ml",
+          "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+          "originalWidth": 1024,
+          "originalHeight": 768,
+          "cropBox": [
+            241,
+            62,
+            741,
+            768
+          ]
+        },
+        "fragrance": {
+          "notes": [
+            "Mäta",
+            "Citrón",
+            "Bazalka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumová voda",
+          "notesEvidence": {
+            "url": "https://www.vonya.sk/yodeyma-mint-ocean/",
+            "sourceText": "Hlava: Mäta; Srdce: Citrón; Základ: Bazalka",
+            "literalSourceText": "Hlava parfému: Mäta Srdce parfému: Citrón Základ parfému: Bazalka",
+            "displayLanguage": "sk",
+            "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+          "No merchant promotions, reward tickets, bundle discounts or basket integration."
+        ],
+        "identityDisclosure": "Inspired YODEYMA fragrance, not an original designer perfume.",
+        "upsellVariants": [
+          {
+            "id": "mint-ocean-15ml",
+            "name": "YODEYMA Mint Ocean",
+            "parentProductId": "mint-ocean",
+            "sameFormula": true,
+            "available": true,
+            "currency": "EUR",
+            "volume": "15 ml",
+            "priceAmount": 8.9,
+            "price": "8,90 €",
+            "url": "https://www.vonya.sk/yodeyma-mint-ocean/",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/vonya/mint-ocean-15ml.webp",
+            "photoEvidence": {
+              "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7315-2_yodeyma-mint-ocean-15-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b868f6&sg=161563f2",
+              "originalSha256": "b1159e9338be45a445aeba7deafba5428c32eee7badfb30c3f1fa02a37747dc1",
+              "localSha256": "337732711c51e09bd73ac6c41845a719f8dc53dc30497288da20af77a46fba0a",
+              "width": 223,
+              "height": 458,
+              "selectedPack": "15 ml",
+              "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+              "originalWidth": 1024,
+              "originalHeight": 768,
+              "cropBox": [
+                416,
+                150,
+                639,
+                608
+              ]
+            },
+            "evidence": {
+              "scope": "ShoptetPublicVariant",
+              "exactVariantId": "17944",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "visibleStock": "Skladom (3 ks)",
+              "sourceSha256": "344bbfc808613ebd7c13969b630fc48567b8623de976d41d719baadb537324d6",
+              "checkedAt": "2026-11-13T11:55:24.523665+00:00",
+              "sourceUrl": "https://www.vonya.sk/yodeyma-mint-ocean/",
+              "sku": "VY-MINT-OCEAN_15ML",
+              "sizeEvidence": "Objem: 15 ml",
+              "priceEvidence": "Exact matching15mlstructured offer and native radio data-customerprice; not from price."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "dorian",
+      "name": "YODEYMA Dorian",
+      "url": "https://www.vonya.sk/yodeyma-dorian/",
+      "priceAmount": 32.9,
+      "price": "32,90 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Cedrát, neroli a čierny čaj. Inšpirovaný parfum YODEYMA; nejde o originál dizajnérskej značky.",
+      "reason": "Cedrát, neroli a čierny čaj.",
+      "photo": "/assets/s5/vonya/dorian.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vonya.sk/yodeyma-dorian/",
+        "verifiedAt": "2026-11-13T11:55:28.789611+00:00",
+        "sourceSha256": "a15fbb63b71af8279f8f38932219e06662a4126ee56e3a66c51313885d24c58e",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom (2 ks)",
+          "structuredAvailability": "https://schema.org/InStock",
+          "scope": "Exact100mlpublic SKU offer and matching variant radio/stock agree; no physical quantity or delivery guarantee. Live Caribbean selected through visible label."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 32.9,
+          "currency": "EUR",
+          "vatEvidence": "Official terms5.2 explicitly total price includesVAT and legally required fees, delivery additional.",
+          "vatSource": "https://www.vonya.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "title": "YODEYMA Dorian",
+          "selectedVariant": "Objem: 100 ml",
+          "variantId": "18155"
+        },
+        "variantSelectionRequired": true,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "scent": "Cedrát, neroli a čierny čaj",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "dorian"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vonya.sk/yodeyma-dorian/",
+          "sourceText": "Hlava: Cedrát; Srdce: Neroli; Základ: Čierny čaj",
+          "navigationLabel": "Cedrát, neroli a čierny čaj",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7415-2_yodeyma-dorian-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=6a253656&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7415-2_yodeyma-dorian-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=6a253656&sg=161563f2",
+          "originalSha256": "cd195c2b9138defbf2d2e2e79ff46384bddd716307332fdb8fe6166c2ea41c9c",
+          "localSha256": "4473b7e3604ca8a17151cc4cc783ba8f2ea7f3b620ca34935bc4d732e3a3db0f",
+          "width": 500,
+          "height": 714,
+          "selectedPack": "100 ml",
+          "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+          "originalWidth": 1024,
+          "originalHeight": 768,
+          "cropBox": [
+            235,
+            54,
+            735,
+            768
+          ]
+        },
+        "fragrance": {
+          "notes": [
+            "Cedrát",
+            "Neroli",
+            "Čierny čaj"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumová voda",
+          "notesEvidence": {
+            "url": "https://www.vonya.sk/yodeyma-dorian/",
+            "sourceText": "Hlava: Cedrát; Srdce: Neroli; Základ: Čierny čaj",
+            "literalSourceText": "Hlava parfému: Cedrát Srdce parfému: Neroli Základ parfému: Čierny čaj",
+            "displayLanguage": "sk",
+            "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+          "No merchant promotions, reward tickets, bundle discounts or basket integration."
+        ],
+        "identityDisclosure": "Inspired YODEYMA fragrance, not an original designer perfume.",
+        "upsellVariants": [
+          {
+            "id": "dorian-15ml",
+            "name": "YODEYMA Dorian",
+            "parentProductId": "dorian",
+            "sameFormula": true,
+            "available": true,
+            "currency": "EUR",
+            "volume": "15 ml",
+            "priceAmount": 8.9,
+            "price": "8,90 €",
+            "url": "https://www.vonya.sk/yodeyma-dorian/",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/vonya/dorian-15ml.webp",
+            "photoEvidence": {
+              "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7415-3_yodeyma-dorian-15-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=6a25365e&sg=161563f2",
+              "originalSha256": "e63b8084fdd934d760fb300daedf2d9e6ea7addde73df33d24afee3508262fee",
+              "localSha256": "84d9563ec4f3cd96486973e02b8c1ab0b6d8310f77697e65941988102cfb7e2f",
+              "width": 224,
+              "height": 458,
+              "selectedPack": "15 ml",
+              "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+              "originalWidth": 1024,
+              "originalHeight": 768,
+              "cropBox": [
+                416,
+                150,
+                640,
+                608
+              ]
+            },
+            "evidence": {
+              "scope": "ShoptetPublicVariant",
+              "exactVariantId": "18158",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "visibleStock": "Skladom (3 ks)",
+              "sourceSha256": "a15fbb63b71af8279f8f38932219e06662a4126ee56e3a66c51313885d24c58e",
+              "checkedAt": "2026-11-13T11:55:28.789611+00:00",
+              "sourceUrl": "https://www.vonya.sk/yodeyma-dorian/",
+              "sku": "VY-DORIAN_15ML",
+              "sizeEvidence": "Objem: 15 ml",
+              "priceEvidence": "Exact matching15mlstructured offer and native radio data-customerprice; not from price."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "caribbean",
+      "name": "YODEYMA Caribbean",
+      "url": "https://www.vonya.sk/yodeyma-caribbean/",
+      "priceAmount": 27.9,
+      "price": "27,90 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Bergamot, ružové korenie a drevo. Inšpirovaný parfum YODEYMA; nejde o originál dizajnérskej značky.",
+      "reason": "Bergamot, ružové korenie a drevo.",
+      "photo": "/assets/s5/vonya/caribbean.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vonya.sk/yodeyma-caribbean/",
+        "verifiedAt": "2026-11-13T11:55:26.582383+00:00",
+        "sourceSha256": "ffe66d412662884d7dfcaf7a12db3973377e9f2349feb5866b071e64a84ff857",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom (2 ks)",
+          "structuredAvailability": "https://schema.org/InStock",
+          "scope": "Exact100mlpublic SKU offer and matching variant radio/stock agree; no physical quantity or delivery guarantee. Live Caribbean selected through visible label."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 27.9,
+          "currency": "EUR",
+          "vatEvidence": "Official terms5.2 explicitly total price includesVAT and legally required fees, delivery additional.",
+          "vatSource": "https://www.vonya.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "title": "YODEYMA Caribbean",
+          "selectedVariant": "Objem: 100 ml",
+          "variantId": "15174"
+        },
+        "variantSelectionRequired": true,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "scent": "Bergamot, ružové korenie a drevo",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "caribbean"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vonya.sk/yodeyma-caribbean/",
+          "sourceText": "Hlava: Bergamot; Srdce: Ružové korenie; Základ: Drevo",
+          "navigationLabel": "Bergamot, ružové korenie a drevo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6198_yodeyma-caribbean-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce76&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6198_yodeyma-caribbean-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce76&sg=161563f2",
+          "originalSha256": "05d25f78e46d02d8b3592853b75b6d23b179bede258f7b487dd4bce2674c0bf5",
+          "localSha256": "3555d07e4c77ee4e3bd061fe7ab7685f3645c031550312c17e7bb1d2d0444196",
+          "width": 500,
+          "height": 676,
+          "selectedPack": "100 ml",
+          "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+          "originalWidth": 1024,
+          "originalHeight": 768,
+          "cropBox": [
+            233,
+            70,
+            733,
+            746
+          ]
+        },
+        "fragrance": {
+          "notes": [
+            "Bergamot",
+            "Ružové korenie",
+            "Drevo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumová voda",
+          "notesEvidence": {
+            "url": "https://www.vonya.sk/yodeyma-caribbean/",
+            "sourceText": "Hlava: Bergamot; Srdce: Ružové korenie; Základ: Drevo",
+            "literalSourceText": "Hlava parfému: Bergamot Srdce parfému: Ružové korenie Základ parfému: Drevo",
+            "displayLanguage": "sk",
+            "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+          "No merchant promotions, reward tickets, bundle discounts or basket integration."
+        ],
+        "identityDisclosure": "Inspired YODEYMA fragrance, not an original designer perfume.",
+        "upsellVariants": [
+          {
+            "id": "caribbean-15ml",
+            "name": "YODEYMA Caribbean",
+            "parentProductId": "caribbean",
+            "sameFormula": true,
+            "available": true,
+            "currency": "EUR",
+            "volume": "15 ml",
+            "priceAmount": 7.6,
+            "price": "7,60 €",
+            "url": "https://www.vonya.sk/yodeyma-caribbean/",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/vonya/caribbean-15ml.webp",
+            "photoEvidence": {
+              "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6198-6_yodeyma-caribbean-15-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce76&sg=161563f2",
+              "originalSha256": "954deb2186dea7c12005a1baa35f415763e6e9e28af5695457f65026d59fa611",
+              "localSha256": "8ba3d51b7a26f028b4120c2f28772389426b6c14ef03ac1a411f8ad21cc15a12",
+              "width": 185,
+              "height": 408,
+              "selectedPack": "15 ml",
+              "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+              "originalWidth": 1024,
+              "originalHeight": 768,
+              "cropBox": [
+                407,
+                173,
+                592,
+                581
+              ]
+            },
+            "evidence": {
+              "scope": "ShoptetPublicVariant",
+              "exactVariantId": "15180",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "visibleStock": "Skladom (2 ks)",
+              "sourceSha256": "ffe66d412662884d7dfcaf7a12db3973377e9f2349feb5866b071e64a84ff857",
+              "checkedAt": "2026-11-13T11:55:26.582383+00:00",
+              "sourceUrl": "https://www.vonya.sk/yodeyma-caribbean/",
+              "sku": "VY-CARIBBEAN_15ML",
+              "sizeEvidence": "Objem: 15 ml",
+              "priceEvidence": "Exact matching15mlstructured offer and native radio data-customerprice; not from price."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "blue",
+      "name": "YODEYMA Blue",
+      "url": "https://www.vonya.sk/yodeyma-blue/",
+      "priceAmount": 27.9,
+      "price": "27,90 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Pomaranč, jazmín a pačuli. Inšpirovaný parfum YODEYMA; nejde o originál dizajnérskej značky.",
+      "reason": "Pomaranč, jazmín a pačuli.",
+      "photo": "/assets/s5/vonya/blue.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vonya.sk/yodeyma-blue/",
+        "verifiedAt": "2026-11-13T11:55:28.382670+00:00",
+        "sourceSha256": "23645720b3b1fb45c9a4af059ba238fb80d481ae3f70127d3e5f92f959a5fbda",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom (3 ks)",
+          "structuredAvailability": "https://schema.org/InStock",
+          "scope": "Exact100mlpublic SKU offer and matching variant radio/stock agree; no physical quantity or delivery guarantee. Live Caribbean selected through visible label."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 27.9,
+          "currency": "EUR",
+          "vatEvidence": "Official terms5.2 explicitly total price includesVAT and legally required fees, delivery additional.",
+          "vatSource": "https://www.vonya.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "title": "YODEYMA Blue",
+          "selectedVariant": "Objem: 100 ml",
+          "variantId": "15150"
+        },
+        "variantSelectionRequired": true,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "scent": "Pomaranč, jazmín a pačuli",
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "blue"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vonya.sk/yodeyma-blue/",
+          "sourceText": "Hlava: Pomaranč; Srdce: Jazmín; Základ: Pačuli",
+          "navigationLabel": "Pomaranč, jazmín a pačuli",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6189_yodeyma-blue-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce76&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6189_yodeyma-blue-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce76&sg=161563f2",
+          "originalSha256": "826f793928a720805a2b00a949c16586f456da98628452b317d304b381d83bc6",
+          "localSha256": "6638cb432f1dc5b9a919d0ce3fa2658e2c14fca0ca8a3f291704ca2b30cc28bf",
+          "width": 500,
+          "height": 674,
+          "selectedPack": "100 ml",
+          "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+          "originalWidth": 1024,
+          "originalHeight": 768,
+          "cropBox": [
+            208,
+            70,
+            708,
+            744
+          ]
+        },
+        "fragrance": {
+          "notes": [
+            "Pomaranč",
+            "Jazmín",
+            "Pačuli"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumová voda",
+          "notesEvidence": {
+            "url": "https://www.vonya.sk/yodeyma-blue/",
+            "sourceText": "Hlava: Pomaranč; Srdce: Jazmín; Základ: Pačuli",
+            "literalSourceText": "Hlava parfému: Pomaranč Srdce parfému: Jazmín Základ parfému: Pačuli",
+            "displayLanguage": "sk",
+            "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+          "No merchant promotions, reward tickets, bundle discounts or basket integration."
+        ],
+        "identityDisclosure": "Inspired YODEYMA fragrance, not an original designer perfume.",
+        "upsellVariants": [
+          {
+            "id": "blue-15ml",
+            "name": "YODEYMA Blue",
+            "parentProductId": "blue",
+            "sameFormula": true,
+            "available": true,
+            "currency": "EUR",
+            "volume": "15 ml",
+            "priceAmount": 7.6,
+            "price": "7,60 €",
+            "url": "https://www.vonya.sk/yodeyma-blue/",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/vonya/blue-15ml.webp",
+            "photoEvidence": {
+              "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6189-3_yodeyma-blue-15-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce76&sg=161563f2",
+              "originalSha256": "d11c646a94c7a763121aa1b0c1d966e77ead2118095bce4d06a6d506e5a74814",
+              "localSha256": "8726cc9c6aace1ec3fd7530b1267bdd871a56702843c5db331ee1fc91d84df37",
+              "width": 196,
+              "height": 434,
+              "selectedPack": "15 ml",
+              "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+              "originalWidth": 1024,
+              "originalHeight": 768,
+              "cropBox": [
+                401,
+                159,
+                597,
+                593
+              ]
+            },
+            "evidence": {
+              "scope": "ShoptetPublicVariant",
+              "exactVariantId": "15153",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "visibleStock": "Skladom (3 ks)",
+              "sourceSha256": "23645720b3b1fb45c9a4af059ba238fb80d481ae3f70127d3e5f92f959a5fbda",
+              "checkedAt": "2026-11-13T11:55:28.382670+00:00",
+              "sourceUrl": "https://www.vonya.sk/yodeyma-blue/",
+              "sku": "VY-BLUE_15ML",
+              "sizeEvidence": "Objem: 15 ml",
+              "priceEvidence": "Exact matching15mlstructured offer and native radio data-customerprice; not from price."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "tayda",
+      "name": "YODEYMA Tayda",
+      "url": "https://www.vonya.sk/yodeyma-tayda/",
+      "priceAmount": 32.9,
+      "price": "32,90 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Lipa, heliotrop a ambroxan. Inšpirovaný parfum YODEYMA; nejde o originál dizajnérskej značky.",
+      "reason": "Lipa, heliotrop a ambroxan.",
+      "photo": "/assets/s5/vonya/tayda.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vonya.sk/yodeyma-tayda/",
+        "verifiedAt": "2026-11-13T11:55:24.520565+00:00",
+        "sourceSha256": "0e55af9124fe97b2a726402415166921e123c2aa102020d9bd8e4d87ad858033",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom (3 ks)",
+          "structuredAvailability": "https://schema.org/InStock",
+          "scope": "Exact100mlpublic SKU offer and matching variant radio/stock agree; no physical quantity or delivery guarantee. Live Caribbean selected through visible label."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 32.9,
+          "currency": "EUR",
+          "vatEvidence": "Official terms5.2 explicitly total price includesVAT and legally required fees, delivery additional.",
+          "vatSource": "https://www.vonya.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "title": "YODEYMA Tayda",
+          "selectedVariant": "Objem: 100 ml",
+          "variantId": "17914"
+        },
+        "variantSelectionRequired": true,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "scent": "Lipa, heliotrop a ambroxan",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "tayda"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vonya.sk/yodeyma-tayda/",
+          "sourceText": "Hlava: Lipa; Srdce: Heliotrop; Základ: Ambroxan",
+          "navigationLabel": "Lipa, heliotrop a ambroxan",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7306_yodeyma-tayda-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b8218c&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7306_yodeyma-tayda-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b8218c&sg=161563f2",
+          "originalSha256": "c65a7584bb294764f05678264a2a7b8aa357221542df5b547ce646bb79c4722a",
+          "localSha256": "0b0ca43cc55a043e9c4c3aeefe296f07ffaf04c7eb6656742486151ffe77b51a",
+          "width": 510,
+          "height": 580,
+          "selectedPack": "100 ml",
+          "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+          "originalWidth": 1024,
+          "originalHeight": 768,
+          "cropBox": [
+            274,
+            87,
+            784,
+            667
+          ]
+        },
+        "fragrance": {
+          "notes": [
+            "Lipa",
+            "Heliotrop",
+            "Ambroxan"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumová voda",
+          "notesEvidence": {
+            "url": "https://www.vonya.sk/yodeyma-tayda/",
+            "sourceText": "Hlava: Lipa; Srdce: Heliotrop; Základ: Ambroxan",
+            "literalSourceText": "Hlava parfému: Lipa Srdce parfému: Heliotrop Základ parfému: Ambroxan",
+            "displayLanguage": "sk",
+            "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+          "No merchant promotions, reward tickets, bundle discounts or basket integration."
+        ],
+        "identityDisclosure": "Inspired YODEYMA fragrance, not an original designer perfume.",
+        "upsellVariants": [
+          {
+            "id": "tayda-15ml",
+            "name": "YODEYMA Tayda",
+            "parentProductId": "tayda",
+            "sameFormula": true,
+            "available": true,
+            "currency": "EUR",
+            "volume": "15 ml",
+            "priceAmount": 8.9,
+            "price": "8,90 €",
+            "url": "https://www.vonya.sk/yodeyma-tayda/",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/vonya/tayda-15ml.webp",
+            "photoEvidence": {
+              "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7306-1_yodeyma-tayda-15-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b8218c&sg=161563f2",
+              "originalSha256": "64d4927e5af06a634dda4f2e74c4c370dfea8e22e27dce632e3ed146318ed206",
+              "localSha256": "1ec68bbe7014c9140dc579c2be70f54f0fb9ad0976e3959909a88004ea5ca536",
+              "width": 363,
+              "height": 512,
+              "selectedPack": "15 ml",
+              "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+              "originalWidth": 1024,
+              "originalHeight": 768,
+              "cropBox": [
+                331,
+                96,
+                694,
+                608
+              ]
+            },
+            "evidence": {
+              "scope": "ShoptetPublicVariant",
+              "exactVariantId": "17917",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "visibleStock": "Skladom (3 ks)",
+              "sourceSha256": "0e55af9124fe97b2a726402415166921e123c2aa102020d9bd8e4d87ad858033",
+              "checkedAt": "2026-11-13T11:55:24.520565+00:00",
+              "sourceUrl": "https://www.vonya.sk/yodeyma-tayda/",
+              "sku": "VY-TAYDA_15ML",
+              "sizeEvidence": "Objem: 15 ml",
+              "priceEvidence": "Exact matching15mlstructured offer and native radio data-customerprice; not from price."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cheante",
+      "name": "YODEYMA Cheante",
+      "url": "https://www.vonya.sk/yodeyma-cheante/",
+      "priceAmount": 27.9,
+      "price": "27,90 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Mandarínka, ruža a pačuli. Inšpirovaný parfum YODEYMA; nejde o originál dizajnérskej značky.",
+      "reason": "Mandarínka, ruža a pačuli.",
+      "photo": "/assets/s5/vonya/cheante.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vonya.sk/yodeyma-cheante/",
+        "verifiedAt": "2026-11-13T11:55:28.617418+00:00",
+        "sourceSha256": "285f969010cd4f1ed1a41dcdb90b0fced236078b37239466476af63b287ead91",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom (2 ks)",
+          "structuredAvailability": "https://schema.org/InStock",
+          "scope": "Exact100mlpublic SKU offer and matching variant radio/stock agree; no physical quantity or delivery guarantee. Live Caribbean selected through visible label."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 27.9,
+          "currency": "EUR",
+          "vatEvidence": "Official terms5.2 explicitly total price includesVAT and legally required fees, delivery additional.",
+          "vatSource": "https://www.vonya.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "title": "YODEYMA Cheante",
+          "selectedVariant": "Objem: 100 ml",
+          "variantId": "14700"
+        },
+        "variantSelectionRequired": true,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "scent": "Mandarínka, ruža a pačuli",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "cheante"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vonya.sk/yodeyma-cheante/",
+          "sourceText": "Hlava: Mandarínka; Srdce: Ruža; Základ: Pačuli",
+          "navigationLabel": "Mandarínka, ruža a pačuli",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6012_yodeyma-cheante-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce73&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6012_yodeyma-cheante-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce73&sg=161563f2",
+          "originalSha256": "26ceed92291bf58234f75ea2410e6f95edf5d06663ffd02f1def2d8f3ac1c0d4",
+          "localSha256": "ac9f73bd62076f30e4ea5d296db1c14394702c51d066889f495686d5f3b7efa8",
+          "width": 509,
+          "height": 557,
+          "selectedPack": "100 ml",
+          "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+          "originalWidth": 1024,
+          "originalHeight": 768,
+          "cropBox": [
+            275,
+            109,
+            784,
+            666
+          ]
+        },
+        "fragrance": {
+          "notes": [
+            "Mandarínka",
+            "Ruža",
+            "Pačuli"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumová voda",
+          "notesEvidence": {
+            "url": "https://www.vonya.sk/yodeyma-cheante/",
+            "sourceText": "Hlava: Mandarínka; Srdce: Ruža; Základ: Pačuli",
+            "literalSourceText": "Hlava parfému: Mandarínka Srdce parfému: Ruža Základ parfému: Pačuli",
+            "displayLanguage": "sk",
+            "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+          "No merchant promotions, reward tickets, bundle discounts or basket integration."
+        ],
+        "identityDisclosure": "Inspired YODEYMA fragrance, not an original designer perfume.",
+        "upsellVariants": [
+          {
+            "id": "cheante-15ml",
+            "name": "YODEYMA Cheante",
+            "parentProductId": "cheante",
+            "sameFormula": true,
+            "available": true,
+            "currency": "EUR",
+            "volume": "15 ml",
+            "priceAmount": 7.6,
+            "price": "7,60 €",
+            "url": "https://www.vonya.sk/yodeyma-cheante/",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/vonya/cheante-15ml.webp",
+            "photoEvidence": {
+              "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6012-6_yodeyma-cheante-15-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce73&sg=161563f2",
+              "originalSha256": "6faebf5da4412347e84762d804e26f3fc98c9824dc8ac3634ddcbe0b6739fb0e",
+              "localSha256": "5ebc3127f27aecc0f826886d566f6e15609103b9448c062a4312f5876680c2b4",
+              "width": 191,
+              "height": 440,
+              "selectedPack": "15 ml",
+              "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+              "originalWidth": 1024,
+              "originalHeight": 768,
+              "cropBox": [
+                402,
+                154,
+                593,
+                594
+              ]
+            },
+            "evidence": {
+              "scope": "ShoptetPublicVariant",
+              "exactVariantId": "14706",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "visibleStock": "Skladom (3 ks)",
+              "sourceSha256": "285f969010cd4f1ed1a41dcdb90b0fced236078b37239466476af63b287ead91",
+              "checkedAt": "2026-11-13T11:55:28.617418+00:00",
+              "sourceUrl": "https://www.vonya.sk/yodeyma-cheante/",
+              "sku": "VY-CHEANTE_15ML",
+              "sizeEvidence": "Objem: 15 ml",
+              "priceEvidence": "Exact matching15mlstructured offer and native radio data-customerprice; not from price."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "lido",
+      "name": "YODEYMA Lido",
+      "url": "https://www.vonya.sk/yodeyma-lido/",
+      "priceAmount": 32.9,
+      "price": "32,90 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Hruška, bulharská ruža a vanilka. Inšpirovaný parfum YODEYMA; nejde o originál dizajnérskej značky.",
+      "reason": "Hruška, bulharská ruža a vanilka.",
+      "photo": "/assets/s5/vonya/lido.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vonya.sk/yodeyma-lido/",
+        "verifiedAt": "2026-11-13T11:55:29.410680+00:00",
+        "sourceSha256": "705c6a66f20b30a16a22dffbe180b4755f2ab41b795e1479521ca81cc32777f1",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom (3 ks)",
+          "structuredAvailability": "https://schema.org/InStock",
+          "scope": "Exact100mlpublic SKU offer and matching variant radio/stock agree; no physical quantity or delivery guarantee. Live Caribbean selected through visible label."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 32.9,
+          "currency": "EUR",
+          "vatEvidence": "Official terms5.2 explicitly total price includesVAT and legally required fees, delivery additional.",
+          "vatSource": "https://www.vonya.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "title": "YODEYMA Lido",
+          "selectedVariant": "Objem: 100 ml",
+          "variantId": "18161"
+        },
+        "variantSelectionRequired": true,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "scent": "Hruška, bulharská ruža a vanilka",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "lido"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vonya.sk/yodeyma-lido/",
+          "sourceText": "Hlava: Hruška; Srdce: Bulharská ruža; Základ: Vanilka",
+          "navigationLabel": "Hruška, bulharská ruža a vanilka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7412-2_yodeyma-lido-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=6a25397c&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7412-2_yodeyma-lido-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=6a25397c&sg=161563f2",
+          "originalSha256": "232a07365a7409567c9b1ed1f60c8c20d80422edffa73d2d33cda849f6f0d2cd",
+          "localSha256": "ef8d0ffee39635980ae13787101e4697db7a78480876b1de7912c14a16f88fa4",
+          "width": 515,
+          "height": 517,
+          "selectedPack": "100 ml",
+          "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+          "originalWidth": 1024,
+          "originalHeight": 768,
+          "cropBox": [
+            269,
+            150,
+            784,
+            667
+          ]
+        },
+        "fragrance": {
+          "notes": [
+            "Hruška",
+            "Bulharská ruža",
+            "Vanilka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumová voda",
+          "notesEvidence": {
+            "url": "https://www.vonya.sk/yodeyma-lido/",
+            "sourceText": "Hlava: Hruška; Srdce: Bulharská ruža; Základ: Vanilka",
+            "literalSourceText": "Hlava parfému: Hruška Srdce parfému: Bulharská ruža Základ parfému: Vanilka",
+            "displayLanguage": "sk",
+            "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+          "No merchant promotions, reward tickets, bundle discounts or basket integration."
+        ],
+        "identityDisclosure": "Inspired YODEYMA fragrance, not an original designer perfume.",
+        "upsellVariants": [
+          {
+            "id": "lido-15ml",
+            "name": "YODEYMA Lido",
+            "parentProductId": "lido",
+            "sameFormula": true,
+            "available": true,
+            "currency": "EUR",
+            "volume": "15 ml",
+            "priceAmount": 8.9,
+            "price": "8,90 €",
+            "url": "https://www.vonya.sk/yodeyma-lido/",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/vonya/lido-15ml.webp",
+            "photoEvidence": {
+              "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7412-3_yodeyma-lido-15-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=6a253980&sg=161563f2",
+              "originalSha256": "fc78a86382f4d0d169c8efd5ba39e63be1e64ff66a44f298bfcd612edc318262",
+              "localSha256": "c8ea15c323fc68138121737e7d1c79aea2153a705f513a48034d2a10bc7943a7",
+              "width": 224,
+              "height": 458,
+              "selectedPack": "15 ml",
+              "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+              "originalWidth": 1024,
+              "originalHeight": 768,
+              "cropBox": [
+                416,
+                150,
+                640,
+                608
+              ]
+            },
+            "evidence": {
+              "scope": "ShoptetPublicVariant",
+              "exactVariantId": "18164",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "visibleStock": "Skladom (2 ks)",
+              "sourceSha256": "705c6a66f20b30a16a22dffbe180b4755f2ab41b795e1479521ca81cc32777f1",
+              "checkedAt": "2026-11-13T11:55:29.410680+00:00",
+              "sourceUrl": "https://www.vonya.sk/yodeyma-lido/",
+              "sku": "VY-LIDO_15ML",
+              "sizeEvidence": "Objem: 15 ml",
+              "priceEvidence": "Exact matching15mlstructured offer and native radio data-customerprice; not from price."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "white-summer",
+      "name": "YODEYMA White Summer",
+      "url": "https://www.vonya.sk/yodeyma-white-summer/",
+      "priceAmount": 32.9,
+      "price": "32,90 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Kardamóm, jazmín a kokos. Inšpirovaný parfum YODEYMA; nejde o originál dizajnérskej značky.",
+      "reason": "Kardamóm, jazmín a kokos.",
+      "photo": "/assets/s5/vonya/white-summer.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vonya.sk/yodeyma-white-summer/",
+        "verifiedAt": "2026-11-13T11:55:26.442613+00:00",
+        "sourceSha256": "3bdf62aa6ac738a8053dc8049ecaa6d7114954984c045e42065d155ac2de41b9",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom (3 ks)",
+          "structuredAvailability": "https://schema.org/InStock",
+          "scope": "Exact100mlpublic SKU offer and matching variant radio/stock agree; no physical quantity or delivery guarantee. Live Caribbean selected through visible label."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 32.9,
+          "currency": "EUR",
+          "vatEvidence": "Official terms5.2 explicitly total price includesVAT and legally required fees, delivery additional.",
+          "vatSource": "https://www.vonya.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "title": "YODEYMA White Summer",
+          "selectedVariant": "Objem: 100 ml",
+          "variantId": "17947"
+        },
+        "variantSelectionRequired": true,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "scent": "Kardamóm, jazmín a kokos",
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "white-summer"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vonya.sk/yodeyma-white-summer/",
+          "sourceText": "Hlava: Bergamot a kardamóm; Srdce: Ylang-ylang a jazmín; Základ: Ambra a kokos",
+          "navigationLabel": "Kardamóm, jazmín a kokos",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7318_yodeyma-white-summer-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b868f6&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7318_yodeyma-white-summer-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b868f6&sg=161563f2",
+          "originalSha256": "8e4f1faaf71656b4c142aa97c24be6dcc3d131c8828abde3cbfda8d569afcec0",
+          "localSha256": "d20b8233c342ac0a6aaa41747d4e3cd19310c123f445bb54c32e1e462ccb9aab",
+          "width": 513,
+          "height": 624,
+          "selectedPack": "100 ml",
+          "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+          "originalWidth": 1024,
+          "originalHeight": 768,
+          "cropBox": [
+            271,
+            88,
+            784,
+            712
+          ]
+        },
+        "fragrance": {
+          "notes": [
+            "Bergamot a kardamóm",
+            "Ylang-ylang a jazmín",
+            "Ambra a kokos"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumová voda",
+          "notesEvidence": {
+            "url": "https://www.vonya.sk/yodeyma-white-summer/",
+            "sourceText": "Hlava: Bergamot a kardamóm; Srdce: Ylang-ylang a jazmín; Základ: Ambra a kokos",
+            "literalSourceText": "Hlava parfému: Bergamot a kardamóm Srdce parfému: Ylang-ylang a jazmín Základ parfému: Ambra a kokos",
+            "displayLanguage": "sk",
+            "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+          "No merchant promotions, reward tickets, bundle discounts or basket integration."
+        ],
+        "identityDisclosure": "Inspired YODEYMA fragrance, not an original designer perfume.",
+        "upsellVariants": [
+          {
+            "id": "white-summer-15ml",
+            "name": "YODEYMA White Summer",
+            "parentProductId": "white-summer",
+            "sameFormula": true,
+            "available": true,
+            "currency": "EUR",
+            "volume": "15 ml",
+            "priceAmount": 8.9,
+            "price": "8,90 €",
+            "url": "https://www.vonya.sk/yodeyma-white-summer/",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/vonya/white-summer-15ml.webp",
+            "photoEvidence": {
+              "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7318-2_yodeyma-white-summer-15-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b868f6&sg=161563f2",
+              "originalSha256": "3b34259961a2fa2d7942f636f6079f9589260a0555f5ef765f7b592deed710cb",
+              "localSha256": "9079bf3c89e91df17574bb21c3af5071385660589701ada1178b9cddc03a55d5",
+              "width": 417,
+              "height": 509,
+              "selectedPack": "15 ml",
+              "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+              "originalWidth": 1024,
+              "originalHeight": 768,
+              "cropBox": [
+                304,
+                99,
+                721,
+                608
+              ]
+            },
+            "evidence": {
+              "scope": "ShoptetPublicVariant",
+              "exactVariantId": "17953",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "visibleStock": "Skladom (3 ks)",
+              "sourceSha256": "3bdf62aa6ac738a8053dc8049ecaa6d7114954984c045e42065d155ac2de41b9",
+              "checkedAt": "2026-11-13T11:55:26.442613+00:00",
+              "sourceUrl": "https://www.vonya.sk/yodeyma-white-summer/",
+              "sku": "VY-WHITE-SUMMER_15ML",
+              "sizeEvidence": "Objem: 15 ml",
+              "priceEvidence": "Exact matching15mlstructured offer and native radio data-customerprice; not from price."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "nya",
+      "name": "YODEYMA Nya",
+      "url": "https://www.vonya.sk/yodeyma-nya/",
+      "priceAmount": 32.9,
+      "price": "32,90 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Koňak, tonka a dub. Inšpirovaný parfum YODEYMA; nejde o originál dizajnérskej značky.",
+      "reason": "Koňak, tonka a dub.",
+      "photo": "/assets/s5/vonya/nya.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vonya.sk/yodeyma-nya/",
+        "verifiedAt": "2026-11-13T11:55:24.522837+00:00",
+        "sourceSha256": "d33a438435334ffc8fef4ea65e9e35e01805ee7f711a1e2d15d0060ed9af6785",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom (3 ks)",
+          "structuredAvailability": "https://schema.org/InStock",
+          "scope": "Exact100mlpublic SKU offer and matching variant radio/stock agree; no physical quantity or delivery guarantee. Live Caribbean selected through visible label."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 32.9,
+          "currency": "EUR",
+          "vatEvidence": "Official terms5.2 explicitly total price includesVAT and legally required fees, delivery additional.",
+          "vatSource": "https://www.vonya.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "title": "YODEYMA Nya",
+          "selectedVariant": "Objem: 100 ml",
+          "variantId": "17920"
+        },
+        "variantSelectionRequired": true,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "scent": "Koňak, tonka a dub",
+        "selectionTraits": {
+          "fragranceDirection": "warm",
+          "fragranceProfile": "nya"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vonya.sk/yodeyma-nya/",
+          "sourceText": "Hlava: Esencia koňaku; Srdce: Tonkový absolut; Základ: Dubový absolut",
+          "navigationLabel": "Koňak, tonka a dub",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7309_yodeyma-nya-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b8218c&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7309_yodeyma-nya-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b8218c&sg=161563f2",
+          "originalSha256": "125de82641476abd9ec69a0966e39ee0f5b974eaf767f1ec15d5e56a9b674a4e",
+          "localSha256": "95b57d9f67fa22125cb4127028623024d10c18b52b9bb77437f69218dfb84464",
+          "width": 510,
+          "height": 580,
+          "selectedPack": "100 ml",
+          "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+          "originalWidth": 1024,
+          "originalHeight": 768,
+          "cropBox": [
+            274,
+            87,
+            784,
+            667
+          ]
+        },
+        "fragrance": {
+          "notes": [
+            "Esencia koňaku",
+            "Tonkový absolut",
+            "Dubový absolut"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumová voda",
+          "notesEvidence": {
+            "url": "https://www.vonya.sk/yodeyma-nya/",
+            "sourceText": "Hlava: Esencia koňaku; Srdce: Tonkový absolut; Základ: Dubový absolut",
+            "literalSourceText": "Hlava parfému: Esencia koňaku Srdce parfému: Tonkový absolut Základ parfému: Dubový absolut",
+            "displayLanguage": "sk",
+            "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+          "No merchant promotions, reward tickets, bundle discounts or basket integration."
+        ],
+        "identityDisclosure": "Inspired YODEYMA fragrance, not an original designer perfume.",
+        "upsellVariants": [
+          {
+            "id": "nya-15ml",
+            "name": "YODEYMA Nya",
+            "parentProductId": "nya",
+            "sameFormula": true,
+            "available": true,
+            "currency": "EUR",
+            "volume": "15 ml",
+            "priceAmount": 8.9,
+            "price": "8,90 €",
+            "url": "https://www.vonya.sk/yodeyma-nya/",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/vonya/nya-15ml.webp",
+            "photoEvidence": {
+              "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7309-2_yodeyma-nya-15-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b8218c&sg=161563f2",
+              "originalSha256": "3e9e48e6564b3a605265ecec9a15a18dcb303fa4281fa599671441124e611fd5",
+              "localSha256": "5364c365d8a7bc3de360f1a43f3338a427cc6656ad355283a0027797bf929268",
+              "width": 363,
+              "height": 512,
+              "selectedPack": "15 ml",
+              "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+              "originalWidth": 1024,
+              "originalHeight": 768,
+              "cropBox": [
+                331,
+                96,
+                694,
+                608
+              ]
+            },
+            "evidence": {
+              "scope": "ShoptetPublicVariant",
+              "exactVariantId": "17926",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "visibleStock": "Skladom (3 ks)",
+              "sourceSha256": "d33a438435334ffc8fef4ea65e9e35e01805ee7f711a1e2d15d0060ed9af6785",
+              "checkedAt": "2026-11-13T11:55:24.522837+00:00",
+              "sourceUrl": "https://www.vonya.sk/yodeyma-nya/",
+              "sku": "VY-NYA_15ML",
+              "sizeEvidence": "Objem: 15 ml",
+              "priceEvidence": "Exact matching15mlstructured offer and native radio data-customerprice; not from price."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "black-elixir",
+      "name": "YODEYMA Black Elixir",
+      "url": "https://www.vonya.sk/yodeyma-black-elixir/",
+      "priceAmount": 27.9,
+      "price": "27,90 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Káva, likér a vanilka. Inšpirovaný parfum YODEYMA; nejde o originál dizajnérskej značky.",
+      "reason": "Káva, likér a vanilka.",
+      "photo": "/assets/s5/vonya/black-elixir.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vonya.sk/yodeyma-black-elixir/",
+        "verifiedAt": "2026-11-13T11:55:27.516033+00:00",
+        "sourceSha256": "24f8958c81d6e4c0cf9bd208965f5e7848f32a16f5561f6fff86eb895825a018",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom (3 ks)",
+          "structuredAvailability": "https://schema.org/InStock",
+          "scope": "Exact100mlpublic SKU offer and matching variant radio/stock agree; no physical quantity or delivery guarantee. Live Caribbean selected through visible label."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 27.9,
+          "currency": "EUR",
+          "vatEvidence": "Official terms5.2 explicitly total price includesVAT and legally required fees, delivery additional.",
+          "vatSource": "https://www.vonya.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "title": "YODEYMA Black Elixir",
+          "selectedVariant": "Objem: 100 ml",
+          "variantId": "14667"
+        },
+        "variantSelectionRequired": true,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "scent": "Káva, likér a vanilka",
+        "selectionTraits": {
+          "fragranceDirection": "warm",
+          "fragranceProfile": "black-elixir"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vonya.sk/yodeyma-black-elixir/",
+          "sourceText": "Hlava: Káva; Srdce: Likér; Základ: Vanilka",
+          "navigationLabel": "Káva, likér a vanilka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6000_yodeyma-black-elixir-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce73&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6000_yodeyma-black-elixir-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce73&sg=161563f2",
+          "originalSha256": "a63ce2071b57a30a17c1b1b8d8fbe09a1a20038f79c1d2f1e4d2fc6d2e2bc514",
+          "localSha256": "f4b3d82050f2698c3faee05da90d6531b88d82367913a9a851e2278b3215f1b5",
+          "width": 509,
+          "height": 559,
+          "selectedPack": "100 ml",
+          "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+          "originalWidth": 1024,
+          "originalHeight": 768,
+          "cropBox": [
+            275,
+            109,
+            784,
+            668
+          ]
+        },
+        "fragrance": {
+          "notes": [
+            "Káva",
+            "Likér",
+            "Vanilka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumová voda",
+          "notesEvidence": {
+            "url": "https://www.vonya.sk/yodeyma-black-elixir/",
+            "sourceText": "Hlava: Káva; Srdce: Likér; Základ: Vanilka",
+            "literalSourceText": "Hlava parfému: Káva Srdce parfému: Likér Základ parfému: Vanilka",
+            "displayLanguage": "sk",
+            "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+          "No merchant promotions, reward tickets, bundle discounts or basket integration."
+        ],
+        "identityDisclosure": "Inspired YODEYMA fragrance, not an original designer perfume.",
+        "upsellVariants": [
+          {
+            "id": "black-elixir-15ml",
+            "name": "YODEYMA Black Elixir",
+            "parentProductId": "black-elixir",
+            "sameFormula": true,
+            "available": true,
+            "currency": "EUR",
+            "volume": "15 ml",
+            "priceAmount": 7.6,
+            "price": "7,60 €",
+            "url": "https://www.vonya.sk/yodeyma-black-elixir/",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/vonya/black-elixir-15ml.webp",
+            "photoEvidence": {
+              "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6000-6_yodeyma-black-elixir-15-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce73&sg=161563f2",
+              "originalSha256": "af6d582e845bca78b67ca8d7d412289d12fa46c92dca7606594b151ab8d5a883",
+              "localSha256": "b062cfc58636c619b0f66cc7a6065c465ad924b082c79a3feab04f8b56b14c9a",
+              "width": 188,
+              "height": 433,
+              "selectedPack": "15 ml",
+              "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+              "originalWidth": 1024,
+              "originalHeight": 768,
+              "cropBox": [
+                408,
+                159,
+                596,
+                592
+              ]
+            },
+            "evidence": {
+              "scope": "ShoptetPublicVariant",
+              "exactVariantId": "14673",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "visibleStock": "Skladom (3 ks)",
+              "sourceSha256": "24f8958c81d6e4c0cf9bd208965f5e7848f32a16f5561f6fff86eb895825a018",
+              "checkedAt": "2026-11-13T11:55:27.516033+00:00",
+              "sourceUrl": "https://www.vonya.sk/yodeyma-black-elixir/",
+              "sku": "VY-BLACK-ELIXIR_15ML",
+              "sizeEvidence": "Objem: 15 ml",
+              "priceEvidence": "Exact matching15mlstructured offer and native radio data-customerprice; not from price."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "ambrax",
+      "name": "YODEYMA Ambrax",
+      "url": "https://www.vonya.sk/yodeyma-ambrax/",
+      "priceAmount": 32.9,
+      "price": "32,90 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Agarové drevo, benzoová živica a kadidlo. Inšpirovaný parfum YODEYMA; nejde o originál dizajnérskej značky.",
+      "reason": "Agarové drevo, benzoová živica a kadidlo.",
+      "photo": "/assets/s5/vonya/ambrax.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vonya.sk/yodeyma-ambrax/",
+        "verifiedAt": "2026-11-13T11:55:29.312222+00:00",
+        "sourceSha256": "5cd972b8ca4bc7f43bc6474f97bbdef0742fe750a1462e4c4b3054cabd8eb192",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom (3 ks)",
+          "structuredAvailability": "https://schema.org/InStock",
+          "scope": "Exact100mlpublic SKU offer and matching variant radio/stock agree; no physical quantity or delivery guarantee. Live Caribbean selected through visible label."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 32.9,
+          "currency": "EUR",
+          "vatEvidence": "Official terms5.2 explicitly total price includesVAT and legally required fees, delivery additional.",
+          "vatSource": "https://www.vonya.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "title": "YODEYMA Ambrax",
+          "selectedVariant": "Objem: 100 ml",
+          "variantId": "17929"
+        },
+        "variantSelectionRequired": true,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "scent": "Agarové drevo, benzoová živica a kadidlo",
+        "selectionTraits": {
+          "fragranceDirection": "warm",
+          "fragranceProfile": "ambrax"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vonya.sk/yodeyma-ambrax/",
+          "sourceText": "Hlava: Agarové drevo; Srdce: Benzoová živica; Základ: Kadidlo",
+          "navigationLabel": "Agarové drevo, benzoová živica a kadidlo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7312_yodeyma-ambrax-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b84b8b&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7312_yodeyma-ambrax-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b84b8b&sg=161563f2",
+          "originalSha256": "7de2cdb7fe6c53ee3ba798e6fc3b697a4de79fec503166cea6594241b1f1511e",
+          "localSha256": "a5c09525e2d93ad00ded939a50d3e553eef536b4772bcc586926401a3059d0ec",
+          "width": 500,
+          "height": 753,
+          "selectedPack": "100 ml",
+          "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+          "originalWidth": 1024,
+          "originalHeight": 768,
+          "cropBox": [
+            235,
+            15,
+            735,
+            768
+          ]
+        },
+        "fragrance": {
+          "notes": [
+            "Agarové drevo",
+            "Benzoová živica",
+            "Kadidlo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumová voda",
+          "notesEvidence": {
+            "url": "https://www.vonya.sk/yodeyma-ambrax/",
+            "sourceText": "Hlava: Agarové drevo; Srdce: Benzoová živica; Základ: Kadidlo",
+            "literalSourceText": "Hlava parfému: Agarové drevo Srdce parfému: Benzoová živica Základ parfému: Kadidlo",
+            "displayLanguage": "sk",
+            "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+          "No merchant promotions, reward tickets, bundle discounts or basket integration."
+        ],
+        "identityDisclosure": "Inspired YODEYMA fragrance, not an original designer perfume.",
+        "upsellVariants": [
+          {
+            "id": "ambrax-15ml",
+            "name": "YODEYMA Ambrax",
+            "parentProductId": "ambrax",
+            "sameFormula": true,
+            "available": true,
+            "currency": "EUR",
+            "volume": "15 ml",
+            "priceAmount": 8.9,
+            "price": "8,90 €",
+            "url": "https://www.vonya.sk/yodeyma-ambrax/",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/vonya/ambrax-15ml.webp",
+            "photoEvidence": {
+              "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/7312-2_yodeyma-ambrax-15-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=69b84b8b&sg=161563f2",
+              "originalSha256": "32f1cf08b7017ca23fbb36de4a1e5bf9a5e28cd4919a672f551730a83c16d5ac",
+              "localSha256": "b2f115698dd4d5816aa32e89f4f2d3bf7c3364f640b4b4acb4a77b125d9ec4c2",
+              "width": 362,
+              "height": 512,
+              "selectedPack": "15 ml",
+              "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+              "originalWidth": 1024,
+              "originalHeight": 768,
+              "cropBox": [
+                331,
+                96,
+                693,
+                608
+              ]
+            },
+            "evidence": {
+              "scope": "ShoptetPublicVariant",
+              "exactVariantId": "17935",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "visibleStock": "Skladom (3 ks)",
+              "sourceSha256": "5cd972b8ca4bc7f43bc6474f97bbdef0742fe750a1462e4c4b3054cabd8eb192",
+              "checkedAt": "2026-11-13T11:55:29.312222+00:00",
+              "sourceUrl": "https://www.vonya.sk/yodeyma-ambrax/",
+              "sku": "VY-AMBRAX_15ML",
+              "sizeEvidence": "Objem: 15 ml",
+              "priceEvidence": "Exact matching15mlstructured offer and native radio data-customerprice; not from price."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "silk-elixir",
+      "name": "YODEYMA Silk Elixir",
+      "url": "https://www.vonya.sk/yodeyma-silk-elixir/",
+      "priceAmount": 32.9,
+      "price": "32,90 €",
+      "currency": "EUR",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfumová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Fialka, oud a damašská ruža. Inšpirovaný parfum YODEYMA; nejde o originál dizajnérskej značky.",
+      "reason": "Fialka, oud a damašská ruža.",
+      "photo": "/assets/s5/vonya/silk-elixir.webp",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vonya.sk/yodeyma-silk-elixir/",
+        "verifiedAt": "2026-11-13T11:55:29.455043+00:00",
+        "sourceSha256": "7f901c12d73fe83e3533a9d9b09fe8fdf9fc7c4edb1f088420aa339ef9cb7ff8",
+        "stock": "InStock",
+        "stockEvidence": {
+          "visible": "Skladom (4 ks)",
+          "structuredAvailability": "https://schema.org/InStock",
+          "scope": "Exact100mlpublic SKU offer and matching variant radio/stock agree; no physical quantity or delivery guarantee. Live Caribbean selected through visible label."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 32.9,
+          "currency": "EUR",
+          "vatEvidence": "Official terms5.2 explicitly total price includesVAT and legally required fees, delivery additional.",
+          "vatSource": "https://www.vonya.sk/obchodne-podmienky/"
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "title": "YODEYMA Silk Elixir",
+          "selectedVariant": "Objem: 100 ml",
+          "variantId": "14997"
+        },
+        "variantSelectionRequired": true,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "scent": "Fialka, oud a damašská ruža",
+        "selectionTraits": {
+          "fragranceDirection": "warm",
+          "fragranceProfile": "silk-elixir"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vonya.sk/yodeyma-silk-elixir/",
+          "sourceText": "Hlava: Fialka; Srdce: Oud; Základ: Damašská ruža",
+          "navigationLabel": "Fialka, oud a damašská ruža",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        },
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6132_yodeyma-silk-elixir-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce75&sg=161563f2",
+        "photoEvidence": {
+          "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6132_yodeyma-silk-elixir-100-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce75&sg=161563f2",
+          "originalSha256": "65dc1d5f609631635cd736ce0d55d120b59f7509366cb94e642a5c43b4d76fd5",
+          "localSha256": "9199ff07741f2e2a70086f60b1f1feba8c40af507bd5c0319c4f2890e0cfe869",
+          "width": 510,
+          "height": 573,
+          "selectedPack": "100 ml",
+          "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+          "originalWidth": 1024,
+          "originalHeight": 768,
+          "cropBox": [
+            274,
+            87,
+            784,
+            660
+          ]
+        },
+        "fragrance": {
+          "notes": [
+            "Fialka",
+            "Oud",
+            "Damašská ruža"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfumová voda",
+          "notesEvidence": {
+            "url": "https://www.vonya.sk/yodeyma-silk-elixir/",
+            "sourceText": "Hlava: Fialka; Srdce: Oud; Základ: Damašská ruža",
+            "literalSourceText": "Hlava parfému: Fialka Srdce parfému: Oud Základ parfému: Damašská ruža",
+            "displayLanguage": "sk",
+            "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+          "No merchant promotions, reward tickets, bundle discounts or basket integration."
+        ],
+        "identityDisclosure": "Inspired YODEYMA fragrance, not an original designer perfume.",
+        "upsellVariants": [
+          {
+            "id": "silk-elixir-15ml",
+            "name": "YODEYMA Silk Elixir",
+            "parentProductId": "silk-elixir",
+            "sameFormula": true,
+            "available": true,
+            "currency": "EUR",
+            "volume": "15 ml",
+            "priceAmount": 8.9,
+            "price": "8,90 €",
+            "url": "https://www.vonya.sk/yodeyma-silk-elixir/",
+            "variantSelectionRequired": true,
+            "photo": "/assets/s5/vonya/silk-elixir-15ml.webp",
+            "photoEvidence": {
+              "url": "https://cdn.myshoptet.com/usr/www.vonya.sk/user/shop/big/6132-4_yodeyma-silk-elixir-15-ml---parfem---flakon.jpg?ff=1&x=1024&y=768&q=85&ts=68f7ce75&sg=161563f2",
+              "originalSha256": "e51b82d37d948a08849b65919f4180f10459dfa8e6135c9af55401d341d31000",
+              "localSha256": "124944305dcc4d9d775f6150621af64921aa5405b90e878469094a0dbd128a87",
+              "width": 146,
+              "height": 286,
+              "selectedPack": "15 ml",
+              "processing": "White-margin-only crop with32pxpadding, entire meaningful merchant image retained; no retouch/upscale/new props. Original exact JPEG retained.",
+              "originalWidth": 1024,
+              "originalHeight": 768,
+              "cropBox": [
+                448,
+                238,
+                594,
+                524
+              ]
+            },
+            "evidence": {
+              "scope": "ShoptetPublicVariant",
+              "exactVariantId": "15003",
+              "stock": "InStock",
+              "isNotSoldOut": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "visibleStock": "Skladom (3 ks)",
+              "sourceSha256": "7f901c12d73fe83e3533a9d9b09fe8fdf9fc7c4edb1f088420aa339ef9cb7ff8",
+              "checkedAt": "2026-11-13T11:55:29.455043+00:00",
+              "sourceUrl": "https://www.vonya.sk/yodeyma-silk-elixir/",
+              "sku": "VY-SILK-ELIXIR_15ML",
+              "sizeEvidence": "Objem: 15 ml",
+              "priceEvidence": "Exact matching15mlstructured offer and native radio data-customerprice; not from price."
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "revenue": {
+    "exactLatest": 1339035,
+    "currency": "EUR",
+    "year": 2025,
+    "metric": "Sales goods1236118 + products/services102917",
+    "source": "https://www.registeruz.sk/cruz-public/domain/financialreport/show/10287362",
+    "pdfSource": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12763508",
+    "qualification": "Official2025filing, PDFheaderwholeEUR verified. Fallback<=2millionEUR, above preferred500000EUR; PRICING_REVIEW,447+10unchanged."
+  },
+  "size": "UNKNOWN",
+  "interest": "NOT_ESTABLISHED",
+  "notes": [
+    "Twelve distinct YODEYMA formulas, all100ml. Optional15ml variants are same formulas, not twelve additional products.",
+    "Inspired fragrances, not original designer products; no equal-scent/longevity/health/sales guarantees.",
+    "Existing merchant converter matches brand/name/gender filters, not observed a guided needs-advisor; FIT_REVIEW.",
+    "Optional mini selection is unchecked and adds exact15mlprice to total, no basket integration. Canonical PDP requires volume selection on merchant site."
+  ]
+}

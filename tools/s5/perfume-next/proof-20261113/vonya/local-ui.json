@@ -1,0 +1,1442 @@
+{
+  "commit": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "at": "2026-11-13T12:01:57.428080+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "mint-ocean",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-mint-ocean/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-mint-ocean-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "dorian",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-dorian/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-dorian-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "caribbean",
+      "pack": "100 ml",
+      "price": "27,90 €",
+      "url": "https://www.vonya.sk/yodeyma-caribbean/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-caribbean-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "blue",
+      "pack": "100 ml",
+      "price": "27,90 €",
+      "url": "https://www.vonya.sk/yodeyma-blue/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-blue-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "tayda",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-tayda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-tayda-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "cheante",
+      "pack": "100 ml",
+      "price": "27,90 €",
+      "url": "https://www.vonya.sk/yodeyma-cheante/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-cheante-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "lido",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-lido/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-lido-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "white-summer",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-white-summer/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-white-summer-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "nya",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-nya/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-nya-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "black-elixir",
+      "pack": "100 ml",
+      "price": "27,90 €",
+      "url": "https://www.vonya.sk/yodeyma-black-elixir/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-black-elixir-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "ambrax",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-ambrax/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-ambrax-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "silk-elixir",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-silk-elixir/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-silk-elixir-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "mint-ocean",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-mint-ocean/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-mint-ocean-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "dorian",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-dorian/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-dorian-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "caribbean",
+      "pack": "100 ml",
+      "price": "27,90 €",
+      "url": "https://www.vonya.sk/yodeyma-caribbean/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-caribbean-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "blue",
+      "pack": "100 ml",
+      "price": "27,90 €",
+      "url": "https://www.vonya.sk/yodeyma-blue/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-blue-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "tayda",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-tayda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-tayda-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "cheante",
+      "pack": "100 ml",
+      "price": "27,90 €",
+      "url": "https://www.vonya.sk/yodeyma-cheante/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-cheante-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "lido",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-lido/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-lido-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "white-summer",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-white-summer/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-white-summer-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "nya",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-nya/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-nya-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "black-elixir",
+      "pack": "100 ml",
+      "price": "27,90 €",
+      "url": "https://www.vonya.sk/yodeyma-black-elixir/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-black-elixir-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "ambrax",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-ambrax/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-ambrax-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "silk-elixir",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-silk-elixir/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-silk-elixir-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "mint-ocean",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-mint-ocean/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-mint-ocean-1280.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "dorian",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-dorian/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-dorian-1280.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "caribbean",
+      "pack": "100 ml",
+      "price": "27,90 €",
+      "url": "https://www.vonya.sk/yodeyma-caribbean/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-caribbean-1280.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "blue",
+      "pack": "100 ml",
+      "price": "27,90 €",
+      "url": "https://www.vonya.sk/yodeyma-blue/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-blue-1280.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "tayda",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-tayda/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-tayda-1280.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "cheante",
+      "pack": "100 ml",
+      "price": "27,90 €",
+      "url": "https://www.vonya.sk/yodeyma-cheante/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-cheante-1280.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "lido",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-lido/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-lido-1280.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "white-summer",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-white-summer/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-white-summer-1280.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "nya",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-nya/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-nya-1280.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "black-elixir",
+      "pack": "100 ml",
+      "price": "27,90 €",
+      "url": "https://www.vonya.sk/yodeyma-black-elixir/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-black-elixir-1280.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "ambrax",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-ambrax/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-ambrax-1280.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "silk-elixir",
+      "pack": "100 ml",
+      "price": "32,90 €",
+      "url": "https://www.vonya.sk/yodeyma-silk-elixir/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "vonya-result-silk-elixir-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "vonya",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "warm",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "vonya-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "mint-ocean",
+          "photo": "/assets/s5/vonya/mint-ocean.webp"
+        },
+        {
+          "id": "dorian",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        },
+        {
+          "id": "caribbean",
+          "photo": "/assets/s5/vonya/caribbean.webp"
+        },
+        {
+          "id": "blue",
+          "photo": "/assets/s5/vonya/blue.webp"
+        }
+      ],
+      "screenshot": "vonya-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "tayda",
+          "photo": "/assets/s5/vonya/tayda.webp"
+        },
+        {
+          "id": "cheante",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "lido",
+          "photo": "/assets/s5/vonya/lido.webp"
+        },
+        {
+          "id": "white-summer",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "vonya-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "nya",
+          "photo": "/assets/s5/vonya/nya.webp"
+        },
+        {
+          "id": "black-elixir",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "ambrax",
+          "photo": "/assets/s5/vonya/ambrax.webp"
+        },
+        {
+          "id": "silk-elixir",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "vonya-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "warm",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "vonya-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "mint-ocean",
+          "photo": "/assets/s5/vonya/mint-ocean.webp"
+        },
+        {
+          "id": "dorian",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        },
+        {
+          "id": "caribbean",
+          "photo": "/assets/s5/vonya/caribbean.webp"
+        },
+        {
+          "id": "blue",
+          "photo": "/assets/s5/vonya/blue.webp"
+        }
+      ],
+      "screenshot": "vonya-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "tayda",
+          "photo": "/assets/s5/vonya/tayda.webp"
+        },
+        {
+          "id": "cheante",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "lido",
+          "photo": "/assets/s5/vonya/lido.webp"
+        },
+        {
+          "id": "white-summer",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "vonya-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "nya",
+          "photo": "/assets/s5/vonya/nya.webp"
+        },
+        {
+          "id": "black-elixir",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "ambrax",
+          "photo": "/assets/s5/vonya/ambrax.webp"
+        },
+        {
+          "id": "silk-elixir",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "vonya-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/orange-slices.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "warm",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "vonya-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "mint-ocean",
+          "photo": "/assets/s5/vonya/mint-ocean.webp"
+        },
+        {
+          "id": "dorian",
+          "photo": "/assets/s3/scenes-k2/neroli-blossom.jpg"
+        },
+        {
+          "id": "caribbean",
+          "photo": "/assets/s5/vonya/caribbean.webp"
+        },
+        {
+          "id": "blue",
+          "photo": "/assets/s5/vonya/blue.webp"
+        }
+      ],
+      "screenshot": "vonya-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "tayda",
+          "photo": "/assets/s5/vonya/tayda.webp"
+        },
+        {
+          "id": "cheante",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "lido",
+          "photo": "/assets/s5/vonya/lido.webp"
+        },
+        {
+          "id": "white-summer",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "vonya-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "nya",
+          "photo": "/assets/s5/vonya/nya.webp"
+        },
+        {
+          "id": "black-elixir",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "ambrax",
+          "photo": "/assets/s5/vonya/ambrax.webp"
+        },
+        {
+          "id": "silk-elixir",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "vonya-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "vonya",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "mint-ocean",
+        "black-elixir"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "vonya-compare-320.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "mint-ocean",
+        "black-elixir"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "vonya-compare-390.png"
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "mint-ocean",
+        "black-elixir"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "vonya-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "enrichedStates": [
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "mint-ocean",
+      "defaultScreenshot": "vonya-result-mint-ocean-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-mint-ocean-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-mint-ocean-320.png",
+      "compareScreenshot": "vonya-pair-mint-ocean-320.png",
+      "comparisonIds": [
+        "mint-ocean",
+        "dorian"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "dorian",
+      "defaultScreenshot": "vonya-result-dorian-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-dorian-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-dorian-320.png",
+      "compareScreenshot": "vonya-pair-dorian-320.png",
+      "comparisonIds": [
+        "dorian",
+        "caribbean"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "caribbean",
+      "defaultScreenshot": "vonya-result-caribbean-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "35,50 €",
+      "selectedScreenshot": "vonya-selected-caribbean-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-caribbean-320.png",
+      "compareScreenshot": "vonya-pair-caribbean-320.png",
+      "comparisonIds": [
+        "caribbean",
+        "blue"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "blue",
+      "defaultScreenshot": "vonya-result-blue-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "35,50 €",
+      "selectedScreenshot": "vonya-selected-blue-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-blue-320.png",
+      "compareScreenshot": "vonya-pair-blue-320.png",
+      "comparisonIds": [
+        "blue",
+        "mint-ocean"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "tayda",
+      "defaultScreenshot": "vonya-result-tayda-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-tayda-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-tayda-320.png",
+      "compareScreenshot": "vonya-pair-tayda-320.png",
+      "comparisonIds": [
+        "tayda",
+        "cheante"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "cheante",
+      "defaultScreenshot": "vonya-result-cheante-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "35,50 €",
+      "selectedScreenshot": "vonya-selected-cheante-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-cheante-320.png",
+      "compareScreenshot": "vonya-pair-cheante-320.png",
+      "comparisonIds": [
+        "cheante",
+        "lido"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "lido",
+      "defaultScreenshot": "vonya-result-lido-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-lido-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-lido-320.png",
+      "compareScreenshot": "vonya-pair-lido-320.png",
+      "comparisonIds": [
+        "lido",
+        "white-summer"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "white-summer",
+      "defaultScreenshot": "vonya-result-white-summer-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-white-summer-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-white-summer-320.png",
+      "compareScreenshot": "vonya-pair-white-summer-320.png",
+      "comparisonIds": [
+        "white-summer",
+        "tayda"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "nya",
+      "defaultScreenshot": "vonya-result-nya-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-nya-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-nya-320.png",
+      "compareScreenshot": "vonya-pair-nya-320.png",
+      "comparisonIds": [
+        "nya",
+        "black-elixir"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "black-elixir",
+      "defaultScreenshot": "vonya-result-black-elixir-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "35,50 €",
+      "selectedScreenshot": "vonya-selected-black-elixir-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-black-elixir-320.png",
+      "compareScreenshot": "vonya-pair-black-elixir-320.png",
+      "comparisonIds": [
+        "black-elixir",
+        "ambrax"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "ambrax",
+      "defaultScreenshot": "vonya-result-ambrax-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-ambrax-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-ambrax-320.png",
+      "compareScreenshot": "vonya-pair-ambrax-320.png",
+      "comparisonIds": [
+        "ambrax",
+        "silk-elixir"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 320,
+      "id": "silk-elixir",
+      "defaultScreenshot": "vonya-result-silk-elixir-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-silk-elixir-320.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-silk-elixir-320.png",
+      "compareScreenshot": "vonya-pair-silk-elixir-320.png",
+      "comparisonIds": [
+        "silk-elixir",
+        "nya"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "mint-ocean",
+      "defaultScreenshot": "vonya-result-mint-ocean-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-mint-ocean-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-mint-ocean-390.png",
+      "compareScreenshot": "vonya-pair-mint-ocean-390.png",
+      "comparisonIds": [
+        "mint-ocean",
+        "dorian"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "dorian",
+      "defaultScreenshot": "vonya-result-dorian-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-dorian-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-dorian-390.png",
+      "compareScreenshot": "vonya-pair-dorian-390.png",
+      "comparisonIds": [
+        "dorian",
+        "caribbean"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "caribbean",
+      "defaultScreenshot": "vonya-result-caribbean-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "35,50 €",
+      "selectedScreenshot": "vonya-selected-caribbean-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-caribbean-390.png",
+      "compareScreenshot": "vonya-pair-caribbean-390.png",
+      "comparisonIds": [
+        "caribbean",
+        "blue"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "blue",
+      "defaultScreenshot": "vonya-result-blue-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "35,50 €",
+      "selectedScreenshot": "vonya-selected-blue-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-blue-390.png",
+      "compareScreenshot": "vonya-pair-blue-390.png",
+      "comparisonIds": [
+        "blue",
+        "mint-ocean"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "tayda",
+      "defaultScreenshot": "vonya-result-tayda-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-tayda-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-tayda-390.png",
+      "compareScreenshot": "vonya-pair-tayda-390.png",
+      "comparisonIds": [
+        "tayda",
+        "cheante"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "cheante",
+      "defaultScreenshot": "vonya-result-cheante-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "35,50 €",
+      "selectedScreenshot": "vonya-selected-cheante-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-cheante-390.png",
+      "compareScreenshot": "vonya-pair-cheante-390.png",
+      "comparisonIds": [
+        "cheante",
+        "lido"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "lido",
+      "defaultScreenshot": "vonya-result-lido-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-lido-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-lido-390.png",
+      "compareScreenshot": "vonya-pair-lido-390.png",
+      "comparisonIds": [
+        "lido",
+        "white-summer"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "white-summer",
+      "defaultScreenshot": "vonya-result-white-summer-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-white-summer-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-white-summer-390.png",
+      "compareScreenshot": "vonya-pair-white-summer-390.png",
+      "comparisonIds": [
+        "white-summer",
+        "tayda"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "nya",
+      "defaultScreenshot": "vonya-result-nya-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-nya-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-nya-390.png",
+      "compareScreenshot": "vonya-pair-nya-390.png",
+      "comparisonIds": [
+        "nya",
+        "black-elixir"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "black-elixir",
+      "defaultScreenshot": "vonya-result-black-elixir-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "35,50 €",
+      "selectedScreenshot": "vonya-selected-black-elixir-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-black-elixir-390.png",
+      "compareScreenshot": "vonya-pair-black-elixir-390.png",
+      "comparisonIds": [
+        "black-elixir",
+        "ambrax"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "ambrax",
+      "defaultScreenshot": "vonya-result-ambrax-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-ambrax-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-ambrax-390.png",
+      "compareScreenshot": "vonya-pair-ambrax-390.png",
+      "comparisonIds": [
+        "ambrax",
+        "silk-elixir"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 390,
+      "id": "silk-elixir",
+      "defaultScreenshot": "vonya-result-silk-elixir-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-silk-elixir-390.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-silk-elixir-390.png",
+      "compareScreenshot": "vonya-pair-silk-elixir-390.png",
+      "comparisonIds": [
+        "silk-elixir",
+        "nya"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "mint-ocean",
+      "defaultScreenshot": "vonya-result-mint-ocean-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-mint-ocean-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-mint-ocean-1280.png",
+      "compareScreenshot": "vonya-pair-mint-ocean-1280.png",
+      "comparisonIds": [
+        "mint-ocean",
+        "dorian"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "dorian",
+      "defaultScreenshot": "vonya-result-dorian-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-dorian-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-dorian-1280.png",
+      "compareScreenshot": "vonya-pair-dorian-1280.png",
+      "comparisonIds": [
+        "dorian",
+        "caribbean"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "caribbean",
+      "defaultScreenshot": "vonya-result-caribbean-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "35,50 €",
+      "selectedScreenshot": "vonya-selected-caribbean-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-caribbean-1280.png",
+      "compareScreenshot": "vonya-pair-caribbean-1280.png",
+      "comparisonIds": [
+        "caribbean",
+        "blue"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "blue",
+      "defaultScreenshot": "vonya-result-blue-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "35,50 €",
+      "selectedScreenshot": "vonya-selected-blue-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-blue-1280.png",
+      "compareScreenshot": "vonya-pair-blue-1280.png",
+      "comparisonIds": [
+        "blue",
+        "mint-ocean"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "tayda",
+      "defaultScreenshot": "vonya-result-tayda-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-tayda-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-tayda-1280.png",
+      "compareScreenshot": "vonya-pair-tayda-1280.png",
+      "comparisonIds": [
+        "tayda",
+        "cheante"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "cheante",
+      "defaultScreenshot": "vonya-result-cheante-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "35,50 €",
+      "selectedScreenshot": "vonya-selected-cheante-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-cheante-1280.png",
+      "compareScreenshot": "vonya-pair-cheante-1280.png",
+      "comparisonIds": [
+        "cheante",
+        "lido"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "lido",
+      "defaultScreenshot": "vonya-result-lido-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-lido-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-lido-1280.png",
+      "compareScreenshot": "vonya-pair-lido-1280.png",
+      "comparisonIds": [
+        "lido",
+        "white-summer"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "white-summer",
+      "defaultScreenshot": "vonya-result-white-summer-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-white-summer-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-white-summer-1280.png",
+      "compareScreenshot": "vonya-pair-white-summer-1280.png",
+      "comparisonIds": [
+        "white-summer",
+        "tayda"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "nya",
+      "defaultScreenshot": "vonya-result-nya-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-nya-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-nya-1280.png",
+      "compareScreenshot": "vonya-pair-nya-1280.png",
+      "comparisonIds": [
+        "nya",
+        "black-elixir"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "black-elixir",
+      "defaultScreenshot": "vonya-result-black-elixir-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "35,50 €",
+      "selectedScreenshot": "vonya-selected-black-elixir-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-black-elixir-1280.png",
+      "compareScreenshot": "vonya-pair-black-elixir-1280.png",
+      "comparisonIds": [
+        "black-elixir",
+        "ambrax"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "ambrax",
+      "defaultScreenshot": "vonya-result-ambrax-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-ambrax-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-ambrax-1280.png",
+      "compareScreenshot": "vonya-pair-ambrax-1280.png",
+      "comparisonIds": [
+        "ambrax",
+        "silk-elixir"
+      ]
+    },
+    {
+      "slug": "vonya",
+      "width": 1280,
+      "id": "silk-elixir",
+      "defaultScreenshot": "vonya-result-silk-elixir-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "41,80 €",
+      "selectedScreenshot": "vonya-selected-silk-elixir-1280.png",
+      "uncheckRestoresBase": true,
+      "notesScreenshot": "vonya-notes-silk-elixir-1280.png",
+      "compareScreenshot": "vonya-pair-silk-elixir-1280.png",
+      "comparisonIds": [
+        "silk-elixir",
+        "nya"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

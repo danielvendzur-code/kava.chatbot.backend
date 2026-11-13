@@ -1,0 +1,85 @@
+{
+  "source": "https://api.statistics.sk/rpo/v1/search?identifier=46767851",
+  "result": {
+    "results": [
+      {
+        "id": 243654,
+        "dbModificationDate": "2025-07-07",
+        "identifiers": [
+          {
+            "value": "46767851",
+            "validFrom": "2012-07-25"
+          }
+        ],
+        "fullNames": [
+          {
+            "value": "Pharm s.r.o.",
+            "validFrom": "2012-07-25"
+          }
+        ],
+        "addresses": [
+          {
+            "validFrom": "2016-11-05",
+            "street": "Javorová",
+            "regNumber": 0,
+            "buildingNumber": "6",
+            "postalCodes": [
+              "94901"
+            ],
+            "municipality": {
+              "value": "Nitra",
+              "code": "SK0233500011",
+              "codelistCode": "CL000025"
+            },
+            "country": {
+              "value": "Slovenská republika",
+              "code": "703",
+              "codelistCode": "CL000086"
+            }
+          },
+          {
+            "validFrom": "2012-07-25",
+            "validTo": "2016-11-04",
+            "street": "Kremnická",
+            "regNumber": 0,
+            "buildingNumber": "667/3",
+            "postalCodes": [
+              "94901"
+            ],
+            "municipality": {
+              "value": "Nitra",
+              "code": "SK0233500011",
+              "codelistCode": "CL000025"
+            },
+            "country": {
+              "value": "Slovenská republika",
+              "code": "703",
+              "codelistCode": "CL000086"
+            }
+          }
+        ],
+        "establishment": "2012-07-25",
+        "sourceRegister": {
+          "value": {
+            "value": "Obchodný register",
+            "code": "1",
+            "codelistCode": "CL010112"
+          },
+          "registrationOffices": [
+            {
+              "value": "Okresný súd Nitra",
+              "validFrom": "2012-07-25"
+            }
+          ],
+          "registrationNumbers": [
+            {
+              "value": "Sro/32175/N",
+              "validFrom": "2012-07-25"
+            }
+          ]
+        }
+      }
+    ],
+    "license": "1. ŠÚ SR ako správca informačného systému RPO uplatňuje na použitie sprístupnených údajov z RPO uvedených v § 7 ods. 2 a § 7a ods. 4 zákona č. 272/2015 Z. z. o registri právnických osôb, podnikateľov a orgánov verejnej moci a o zmene a doplnení niektorých zákonov (ďalej len „zákon o registri právnických osôb“) medzinárodnú verejnú licenciu Creative Commons Attribution License (cc-by) 4.0 (ďalej len „verejná licencia“).\n2. Predmetom verejnej licencie sú sprístupnené údaje z RPO prostredníctvom webového sídla ŠÚ SR v zmysle § 7 ods. 2 a § 7a ods. 4 zákona o registri právnických osôb.\n3. ŠÚ SR udeľuje súhlas na použitie predmetu verejnej licencie a výkon licencovaných práv („licencia“) podľa vyššie citovanej verejnej licencie."
+  }
+}

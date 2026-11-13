@@ -1,0 +1,311 @@
+{
+  "checkedAt": "2026-11-13T12:02:33.527097+00:00",
+  "owner": "PERFUME_WORKER",
+  "status": "REVIEW_PLAN_ONLY_NO_COMMON_FILE_MUTATION",
+  "canonicalMainFresh": "de34f7759118e20d3a476f0fe1537ddb02fd161f",
+  "testedIsolatedBase": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "sharedCoreBase": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "ownerInstruction": "Resolve integration only after all six source packages complete; common registry/backend ownership stays MAIN until explicit agreement.",
+  "companies": [
+    {
+      "slug": "perfumeries1907",
+      "brand": "1907 Niche Perfumeries",
+      "operator": {
+        "name": "1907 s.r.o.",
+        "ico": "45303487",
+        "country": "SK",
+        "vatId": "SK2022933088"
+      },
+      "primaryCount": 12,
+      "catalogue": "catalogues/perfumeries1907.js",
+      "registryFragment": "n447/s5/perfume-fragments/perfumeries1907.config.json",
+      "companyCss": "tools/s5/perfume-next/candidate-packages/perfumeries1907/ui-review.css",
+      "rules": [
+        {
+          "chip": "Citrusy a levanduľa",
+          "match": "citrus.*levandul",
+          "productIds": [
+            "conduit"
+          ]
+        },
+        {
+          "chip": "Tuberóza a maté",
+          "match": "tuberoz.*mate",
+          "productIds": [
+            "aldebaran"
+          ]
+        },
+        {
+          "chip": "Rum a kandizovaný pomaranč",
+          "match": "rum.*kandiz",
+          "productIds": [
+            "ali-baba"
+          ]
+        }
+      ],
+      "compareProductIds": [
+        "conduit",
+        "black-sea"
+      ],
+      "coreDeltaRequired": false,
+      "sourceStatus": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "integrationStatus": "WAIT_OWNER_DECISION_AFTER_ALL_SIX_LOCAL_QA",
+      "liveQaStatus": "PENDING_NOT_COUNTED",
+      "mailStatus": "NOT_READY"
+    },
+    {
+      "slug": "veelyn",
+      "brand": "VEELYN",
+      "operator": {
+        "name": "Vitaz Capital s. r. o.",
+        "ico": "56181001",
+        "country": "SK",
+        "vatStatus": "Official terms: not a VAT payer"
+      },
+      "primaryCount": 10,
+      "catalogue": "catalogues/veelyn.js",
+      "registryFragment": "n447/s5/perfume-fragments/veelyn.config.json",
+      "companyCss": "tools/s5/perfume-next/candidate-packages/veelyn/ui-review.css",
+      "rules": [
+        {
+          "chip": "Citrusy a mandarínka",
+          "match": "citrus.*mandar",
+          "productIds": [
+            "deep-dive"
+          ]
+        },
+        {
+          "chip": "Ruža a litchi",
+          "match": "ruz.*litchi",
+          "productIds": [
+            "pink-desire"
+          ]
+        },
+        {
+          "chip": "Oud a kardamóm",
+          "match": "oud.*kardam",
+          "productIds": [
+            "noble-wood"
+          ]
+        }
+      ],
+      "compareProductIds": [
+        "deep-dive",
+        "noble-wood"
+      ],
+      "coreDeltaRequired": false,
+      "sourceStatus": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "integrationStatus": "WAIT_OWNER_DECISION_AFTER_ALL_SIX_LOCAL_QA",
+      "liveQaStatus": "PENDING_NOT_COUNTED",
+      "mailStatus": "NOT_READY"
+    },
+    {
+      "slug": "parfumeur",
+      "brand": "PARFUMEUR",
+      "operator": {
+        "name": "EASY MOVING, s.r.o.",
+        "ico": "04495381",
+        "country": "CZ"
+      },
+      "primaryCount": 12,
+      "catalogue": "catalogues/parfumeur.js",
+      "registryFragment": "n447/s5/perfume-fragments/parfumeur.config.json",
+      "companyCss": "tools/s5/perfume-next/candidate-packages/parfumeur/ui-review.css",
+      "rules": [
+        {
+          "chip": "Citrusy a zázvor",
+          "match": "citrus.*zazvor",
+          "productIds": [
+            "etoile"
+          ]
+        },
+        {
+          "chip": "Růže a grapefruit",
+          "match": "ruz.*grapefruit",
+          "productIds": [
+            "etincelle-rose"
+          ]
+        },
+        {
+          "chip": "Šafrán a santal",
+          "match": "safran.*santal",
+          "productIds": [
+            "sensuel-safran"
+          ]
+        }
+      ],
+      "compareProductIds": [
+        "etoile",
+        "amande-noire"
+      ],
+      "coreDeltaRequired": false,
+      "sourceStatus": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "integrationStatus": "WAIT_OWNER_DECISION_AFTER_ALL_SIX_LOCAL_QA",
+      "liveQaStatus": "PENDING_NOT_COUNTED",
+      "mailStatus": "NOT_READY"
+    },
+    {
+      "slug": "beviro",
+      "brand": "Beviro",
+      "operator": {
+        "name": "P2D2 s.r.o.",
+        "ico": "06801781",
+        "country": "CZ"
+      },
+      "primaryCount": 7,
+      "catalogue": "catalogues/beviro.js",
+      "registryFragment": "n447/s5/perfume-fragments/beviro.config.json",
+      "companyCss": "tools/s5/perfume-next/candidate-packages/beviro/ui-review.css",
+      "rules": [
+        {
+          "chip": "Jehličí a kouř",
+          "match": "jehlici.*kour",
+          "productIds": [
+            "sumava"
+          ]
+        },
+        {
+          "chip": "Grapefruit a šalvěj",
+          "match": "grapefruit.*salvej",
+          "productIds": [
+            "sevillian-villain"
+          ]
+        },
+        {
+          "chip": "Rozmarýn a mandle",
+          "match": "rozmaryn.*mandle",
+          "productIds": [
+            "bohemian-spirit"
+          ]
+        }
+      ],
+      "compareProductIds": [
+        "sumava",
+        "sevillian-villain"
+      ],
+      "coreDeltaRequired": false,
+      "sourceStatus": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "integrationStatus": "WAIT_OWNER_DECISION_AFTER_ALL_SIX_LOCAL_QA",
+      "liveQaStatus": "PENDING_NOT_COUNTED",
+      "mailStatus": "NOT_READY"
+    },
+    {
+      "slug": "spacefluid",
+      "brand": "Space Fluid",
+      "operator": {
+        "name": "Space Fluid s.r.o.",
+        "ico": "11966050",
+        "country": "CZ"
+      },
+      "primaryCount": 5,
+      "catalogue": "catalogues/spacefluid.js",
+      "registryFragment": "n447/s5/perfume-fragments/spacefluid.config.json",
+      "companyCss": "tools/s5/perfume-next/candidate-packages/spacefluid/ui-review.css",
+      "rules": [
+        {
+          "chip": "Narcis a tabák",
+          "match": "narcis.*tabak",
+          "productIds": [
+            "narcis-nocturne"
+          ]
+        },
+        {
+          "chip": "Kardamom a rum",
+          "match": "kardamom.*rum",
+          "productIds": [
+            "x-ray"
+          ]
+        },
+        {
+          "chip": "Ječmen a whisky",
+          "match": "jecmen.*whisky",
+          "productIds": [
+            "whispering-fields"
+          ]
+        }
+      ],
+      "compareProductIds": [
+        "narcis-nocturne",
+        "lovely-problem"
+      ],
+      "coreDeltaRequired": false,
+      "sourceStatus": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "integrationStatus": "WAIT_OWNER_DECISION_AFTER_ALL_SIX_LOCAL_QA",
+      "liveQaStatus": "PENDING_NOT_COUNTED",
+      "mailStatus": "NOT_READY"
+    },
+    {
+      "slug": "vonya",
+      "brand": "Vonya.sk",
+      "operator": {
+        "name": "Pharm s.r.o.",
+        "ico": "46767851",
+        "country": "SK"
+      },
+      "primaryCount": 12,
+      "catalogue": "catalogues/vonya.js",
+      "registryFragment": "n447/s5/perfume-fragments/vonya.config.json",
+      "companyCss": "tools/s5/perfume-next/candidate-packages/vonya/ui-review.css",
+      "rules": [
+        {
+          "chip": "Mäta a citrón",
+          "match": "mata.*citron",
+          "productIds": [
+            "mint-ocean"
+          ]
+        },
+        {
+          "chip": "Koňak a tonka",
+          "match": "konak.*tonka",
+          "productIds": [
+            "nya"
+          ]
+        },
+        {
+          "chip": "Lipa a heliotrop",
+          "match": "lipa.*heliotrop",
+          "productIds": [
+            "tayda"
+          ]
+        }
+      ],
+      "compareProductIds": [
+        "mint-ocean",
+        "black-elixir"
+      ],
+      "coreDeltaRequired": false,
+      "sourceStatus": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "integrationStatus": "WAIT_OWNER_DECISION_AFTER_ALL_SIX_LOCAL_QA",
+      "liveQaStatus": "PENDING_NOT_COUNTED",
+      "mailStatus": "NOT_READY"
+    }
+  ],
+  "totalPrimaryRecordsAcrossSixCatalogues": 58,
+  "notGlobalUniqueFormulas": true,
+  "requiredSharedTouchpointsForOneOwner": [
+    "Append exact six registryObjects and dedicated company CSS imports",
+    "Import six catalogue scripts/source-ID brands in backend",
+    "Register exact three deterministic chip rules and distinct compare pair per company",
+    "Keep existing advisor-core.js unchanged",
+    "Use existing opt-in fragranceResultExtras only; no new engine fix",
+    "Own live Preview all58primary results, no paid provider calls before count"
+  ],
+  "unresolvedOptions": [
+    "SpaceFluid official notes are flat list; do not fabricate pyramid to fit notes UI",
+    "PARFUMEUR bodycream addon proposal disabled; no fake Shopify evidence",
+    "Vonya uses existing generic same-URL exact smaller-pack contract with explicit Shoptet availability evidence"
+  ],
+  "forbidden": [
+    "canonical main branch mutation",
+    "production/DNS/aliases",
+    "mail app or sending",
+    "paid provider calls",
+    "secrets/accounts/permissions",
+    "deletion"
+  ],
+  "allSixLocalComplete": true,
+  "localResultViews": 174,
+  "questionViews": 69,
+  "mockChatCards": 54,
+  "paidCalls": 0
+}

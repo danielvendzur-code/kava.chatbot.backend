@@ -1,0 +1,102 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aké tóny chcete objavovať?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy, bylinky a čaj",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "mint-ocean",
+          "label": "Mäta, citrón a bazalka",
+          "productId": "mint-ocean",
+          "sourceUrl": "https://www.vonya.sk/yodeyma-mint-ocean/"
+        },
+        {
+          "value": "dorian",
+          "label": "Cedrát, neroli a čierny čaj",
+          "productId": "dorian",
+          "sourceUrl": "https://www.vonya.sk/yodeyma-dorian/"
+        },
+        {
+          "value": "caribbean",
+          "label": "Bergamot, ružové korenie a drevo",
+          "productId": "caribbean",
+          "sourceUrl": "https://www.vonya.sk/yodeyma-caribbean/"
+        },
+        {
+          "value": "blue",
+          "label": "Pomaranč, jazmín a pačuli",
+          "productId": "blue",
+          "sourceUrl": "https://www.vonya.sk/yodeyma-blue/"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Kvety, ovocie a kokos",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "tayda",
+          "label": "Lipa, heliotrop a ambroxan",
+          "productId": "tayda",
+          "sourceUrl": "https://www.vonya.sk/yodeyma-tayda/"
+        },
+        {
+          "value": "cheante",
+          "label": "Mandarínka, ruža a pačuli",
+          "productId": "cheante",
+          "sourceUrl": "https://www.vonya.sk/yodeyma-cheante/"
+        },
+        {
+          "value": "lido",
+          "label": "Hruška, bulharská ruža a vanilka",
+          "productId": "lido",
+          "sourceUrl": "https://www.vonya.sk/yodeyma-lido/"
+        },
+        {
+          "value": "white-summer",
+          "label": "Kardamóm, jazmín a kokos",
+          "productId": "white-summer",
+          "sourceUrl": "https://www.vonya.sk/yodeyma-white-summer/"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Koňak, vanilka a živice",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "nya",
+          "label": "Koňak, tonka a dub",
+          "productId": "nya",
+          "sourceUrl": "https://www.vonya.sk/yodeyma-nya/"
+        },
+        {
+          "value": "black-elixir",
+          "label": "Káva, likér a vanilka",
+          "productId": "black-elixir",
+          "sourceUrl": "https://www.vonya.sk/yodeyma-black-elixir/"
+        },
+        {
+          "value": "ambrax",
+          "label": "Agarové drevo, benzoová živica a kadidlo",
+          "productId": "ambrax",
+          "sourceUrl": "https://www.vonya.sk/yodeyma-ambrax/"
+        },
+        {
+          "value": "silk-elixir",
+          "label": "Fialka, oud a damašská ruža",
+          "productId": "silk-elixir",
+          "sourceUrl": "https://www.vonya.sk/yodeyma-silk-elixir/"
+        }
+      ]
+    }
+  ]
+}

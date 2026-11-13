@@ -1,0 +1,266 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Vonya.sk",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/vonya/logo.webp",
+      "header": "/assets/s5/vonya/logo.webp",
+      "avatar": "/assets/s5/vonya/avatar.webp"
+    },
+    "brand": {
+      "name": "Vonya.sk",
+      "domain": "vonya.sk",
+      "website": "https://www.vonya.sk/",
+      "lang": "sk",
+      "fullName": "Vonya.sk",
+      "url": "https://www.vonya.sk/",
+      "logo": "/assets/s5/vonya/logo.webp",
+      "mark": "/assets/s5/vonya/avatar.webp",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône YODEYMA na Vonya.sk podľa doložených tónov a balenia.",
+      "quickChips": [
+        "Mäta a citrón",
+        "Koňak a tonka",
+        "Lipa a heliotrop",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#19386c",
+        "accent": "#19386c",
+        "soft": "#f4f6ff",
+        "paper": "#ffffff",
+        "ink": "#14284a",
+        "line": "#dce3f2"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, bylinky a čaj",
+        "Vyberte podľa doložených tónov.",
+        "Citrusy, bylinky a čaj",
+        ""
+      ],
+      "mint-ocean": [
+        "Mäta, citrón a bazalka",
+        "Mäta, citrón a bazalka.",
+        "Mäta, citrón a bazalka",
+        "Mäta, citrón a bazalka."
+      ],
+      "dorian": [
+        "Cedrát, neroli a čierny čaj",
+        "Cedrát, neroli a čierny čaj.",
+        "Cedrát, neroli a čierny čaj",
+        "Cedrát, neroli a čierny čaj."
+      ],
+      "caribbean": [
+        "Bergamot, ružové korenie a drevo",
+        "Bergamot, ružové korenie a drevo.",
+        "Bergamot, ružové korenie a drevo",
+        "Bergamot, ružové korenie a drevo."
+      ],
+      "blue": [
+        "Pomaranč, jazmín a pačuli",
+        "Pomaranč, jazmín a pačuli.",
+        "Pomaranč, jazmín a pačuli",
+        "Pomaranč, jazmín a pačuli."
+      ],
+      "floral": [
+        "Kvety, ovocie a kokos",
+        "Vyberte podľa doložených tónov.",
+        "Kvety, ovocie a kokos",
+        ""
+      ],
+      "tayda": [
+        "Lipa, heliotrop a ambroxan",
+        "Lipa, heliotrop a ambroxan.",
+        "Lipa, heliotrop a ambroxan",
+        "Lipa, heliotrop a ambroxan."
+      ],
+      "cheante": [
+        "Mandarínka, ruža a pačuli",
+        "Mandarínka, ruža a pačuli.",
+        "Mandarínka, ruža a pačuli",
+        "Mandarínka, ruža a pačuli."
+      ],
+      "lido": [
+        "Hruška, bulharská ruža a vanilka",
+        "Hruška, bulharská ruža a vanilka.",
+        "Hruška, bulharská ruža a vanilka",
+        "Hruška, bulharská ruža a vanilka."
+      ],
+      "white-summer": [
+        "Kardamóm, jazmín a kokos",
+        "Kardamóm, jazmín a kokos.",
+        "Kardamóm, jazmín a kokos",
+        "Kardamóm, jazmín a kokos."
+      ],
+      "warm": [
+        "Koňak, vanilka a živice",
+        "Vyberte podľa doložených tónov.",
+        "Koňak, vanilka a živice",
+        ""
+      ],
+      "nya": [
+        "Koňak, tonka a dub",
+        "Koňak, tonka a dub.",
+        "Koňak, tonka a dub",
+        "Koňak, tonka a dub."
+      ],
+      "black-elixir": [
+        "Káva, likér a vanilka",
+        "Káva, likér a vanilka.",
+        "Káva, likér a vanilka",
+        "Káva, likér a vanilka."
+      ],
+      "ambrax": [
+        "Agarové drevo, benzoová živica a kadidlo",
+        "Agarové drevo, benzoová živica a kadidlo.",
+        "Agarové drevo, benzoová živica a kadidlo",
+        "Agarové drevo, benzoová živica a kadidlo."
+      ],
+      "silk-elixir": [
+        "Fialka, oud a damašská ruža",
+        "Fialka, oud a damašská ruža.",
+        "Fialka, oud a damašská ruža",
+        "Fialka, oud a damašská ruža."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aké tóny chcete objavovať?",
+        "Vyberte podľa doložených tónov.",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "Vyberte jeden profil.",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/orange-slices.jpg"
+      ],
+      "mint-ocean": [
+        "/assets/s5/vonya/mint-ocean.webp"
+      ],
+      "dorian": [
+        "/assets/s3/scenes-k2/neroli-blossom.jpg"
+      ],
+      "caribbean": [
+        "/assets/s5/vonya/caribbean.webp"
+      ],
+      "blue": [
+        "/assets/s5/vonya/blue.webp"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "tayda": [
+        "/assets/s5/vonya/tayda.webp"
+      ],
+      "cheante": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "lido": [
+        "/assets/s5/vonya/lido.webp"
+      ],
+      "white-summer": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "warm": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "nya": [
+        "/assets/s5/vonya/nya.webp"
+      ],
+      "black-elixir": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "ambrax": [
+        "/assets/s5/vonya/ambrax.webp"
+      ],
+      "silk-elixir": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "mint-ocean",
+      "black-elixir"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní profil · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce pro výběr vůně",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu podľa jeho vkusu.",
+      "lead": "Výber podľa doložených tónov vedie ku konkrétnemu parfumu s fotografiou, balením, cenou a odkazom. Dve odlišné vône možno porovnať.",
+      "includedChat": "Tóny vybraných vôní YODEYMA, presné balenia, ceny a porovnanie.",
+      "includedAdvisor": "Doložené tóny a konkrétny profil — na konci jedna vôňa.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône YODEYMA na Vonya.sk podľa doložených tónov a balenia.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít výběr vůně",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "mint-ocean": "dorian",
+        "dorian": "caribbean",
+        "caribbean": "blue",
+        "blue": "mint-ocean",
+        "tayda": "cheante",
+        "cheante": "lido",
+        "lido": "white-summer",
+        "white-summer": "tayda",
+        "nya": "black-elixir",
+        "black-elixir": "ambrax",
+        "ambrax": "silk-elixir",
+        "silk-elixir": "nya"
+      }
+    }
+  },
+  "catalogueImport": "/catalogues/vonya.js",
+  "backendBrand": "vonya",
+  "offlineRules": [
+    {
+      "chip": "Mäta a citrón",
+      "match": "mata.*citron",
+      "productIds": [
+        "mint-ocean"
+      ]
+    },
+    {
+      "chip": "Koňak a tonka",
+      "match": "konak.*tonka",
+      "productIds": [
+        "nya"
+      ]
+    },
+    {
+      "chip": "Lipa a heliotrop",
+      "match": "lipa.*heliotrop",
+      "productIds": [
+        "tayda"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequiredForPrimary": true,
+  "commonFilesModified": [],
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PRICING_REVIEW_SECONDARY_FALLBACK_TURNOVER",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}
