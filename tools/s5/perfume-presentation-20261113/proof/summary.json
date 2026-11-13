@@ -1,0 +1,116 @@
+{
+  "at": "2026-11-13T13:43:36.763246+00:00",
+  "runtimeCommit": "a918c9db69b83c63fdeb06f9bd13c2a3193a3487",
+  "deploymentId": "dpl_44trt79Gb1EanvkiLrATn8cA4Mhx",
+  "preview": "https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app",
+  "status": "ALL15_VISUAL_PROFILE_PREVIEW_QA_COMPLETE",
+  "localResultViews": 483,
+  "localWidths": [
+    320,
+    390,
+    1280
+  ],
+  "liveResultViews": 161,
+  "liveWidth": 390,
+  "sourceBoundLiveProfiles": 161,
+  "visualReview": "All161live profiles viewed via15actual contact sheets; representative primary result cards at all3localwidths and live Vonya/SpaceFluid/Essentique visually reviewed.",
+  "browser": "Automated actual WPEWebKit, TLSverificationON, not CUA/Chrome or physical devices.",
+  "apiMode": "Real loopback backend with injected AI stub; deployed paid provider untested.",
+  "paidCalls": 0,
+  "mailActions": 0,
+  "productionChanges": 0,
+  "dnsAliasChanges": 0,
+  "archives": [
+    {
+      "slug": "essentique",
+      "archive": "essentique-visual-profile-qa.zip",
+      "archiveBytes": 8283050,
+      "archiveSha256": "9b4c42240f78e9eadd5f886079a26a388120de763f031812c89b1f855a2f70ac"
+    },
+    {
+      "slug": "fragrancesamples",
+      "archive": "fragrancesamples-visual-profile-qa.zip",
+      "archiveBytes": 9241707,
+      "archiveSha256": "074c2dd27266dfa20118403521223bd180e9cdf8df8ced0e6b11a7a2f4c46346"
+    },
+    {
+      "slug": "alexmonhart",
+      "archive": "alexmonhart-visual-profile-qa.zip",
+      "archiveBytes": 5550345,
+      "archiveSha256": "5c65f56660f9af80e8bead816e265427d12d2d3f7d71cc255ab308f0eac79a8f"
+    },
+    {
+      "slug": "flakon",
+      "archive": "flakon-visual-profile-qa.zip",
+      "archiveBytes": 8226192,
+      "archiveSha256": "7ba0271f34fcced1e510bae60c711b9557bdf43e971424ef2e533272fd64f1dd"
+    },
+    {
+      "slug": "orion",
+      "archive": "orion-visual-profile-qa.zip",
+      "archiveBytes": 8832601,
+      "archiveSha256": "885dba48c1efb235d3754a048ae3fdc059b0e8898da626a1ca0d43384b5e9c57"
+    },
+    {
+      "slug": "inspirovane",
+      "archive": "inspirovane-visual-profile-qa.zip",
+      "archiveBytes": 9061111,
+      "archiveSha256": "99b3140cb4470f7ff5324e7468bfcc742ae36e0954b6b2d376b43b16269122d0"
+    },
+    {
+      "slug": "leparfumlechic",
+      "archive": "leparfumlechic-visual-profile-qa.zip",
+      "archiveBytes": 8080011,
+      "archiveSha256": "e3b766c8f2876b363a0a7d2591aac769341c90c6d86d94738f874d377203b3db"
+    },
+    {
+      "slug": "vavavoom",
+      "archive": "vavavoom-visual-profile-qa.zip",
+      "archiveBytes": 8541823,
+      "archiveSha256": "8778c1d129118d69cb759353c0f61e414ebaf8c7e19e3a3378ad6a8b5a13e385"
+    },
+    {
+      "slug": "rafinad",
+      "archive": "rafinad-visual-profile-qa.zip",
+      "archiveBytes": 8425124,
+      "archiveSha256": "2b982142fe2dade8f8bf2a1de4ec682e76dc59c1f78e9566331a9ff05b9af520"
+    },
+    {
+      "slug": "perfumeries1907",
+      "archive": "perfumeries1907-visual-profile-qa.zip",
+      "archiveBytes": 7474239,
+      "archiveSha256": "0a0eb7b2b78fe4465ec8b66229cdaccb9e1e8dcc56ae04dd88a1b15c947bac46"
+    },
+    {
+      "slug": "veelyn",
+      "archive": "veelyn-visual-profile-qa.zip",
+      "archiveBytes": 7474088,
+      "archiveSha256": "9e67d19055db12ead9c5553ab7f0c1ea82fe29e3f4f6a55387becd8cb8c951e9"
+    },
+    {
+      "slug": "parfumeur",
+      "archive": "parfumeur-visual-profile-qa.zip",
+      "archiveBytes": 7859543,
+      "archiveSha256": "8dc451dad83632fd3ba574fcbf02e7efc69773a3faf2623f3da48c1b8bdb2753"
+    },
+    {
+      "slug": "beviro",
+      "archive": "beviro-visual-profile-qa.zip",
+      "archiveBytes": 4261653,
+      "archiveSha256": "1985ff9bce39083fbb55b9ed4d84cc31bb55b8433eb08509328ff47dbf81a48a"
+    },
+    {
+      "slug": "spacefluid",
+      "archive": "spacefluid-visual-profile-qa.zip",
+      "archiveBytes": 3656443,
+      "archiveSha256": "12fa64e0d72520ac2769ce1513c7199f668485877ec912058fd49dfe13be1e1a"
+    },
+    {
+      "slug": "vonya",
+      "archive": "vonya-visual-profile-qa.zip",
+      "archiveBytes": 7600484,
+      "archiveSha256": "129a8eda3e4c41a27321d7b01d0d6ba842b0bcd01b45305056ca65866e632d5f"
+    }
+  ],
+  "retainedLocalOnly": "All483local raw result/addon/compare/question screenshots remain in /workspace/work/perfume-audit/perfume-profile-20261113; archives include all live screenshots plus representative local outcomes/questions. No deletion."
+}

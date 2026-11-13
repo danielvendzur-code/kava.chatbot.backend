@@ -6,23 +6,23 @@ Odkazy sú skutočné kontrolné Vercel Preview. Nové firemné subdomény ani p
 
 | Firma / živá ukážka | Oficiálny kontakt |
 |---|---|
-| [Essentique](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=essentique) | info@essentique.sk |
-| [Fragrance Samples](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=fragrancesamples) | info@fragrancesamples.cz |
-| [ALEXMONHART](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=alexmonhart) | info@alexmonhart.com |
-| [Flakon](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=flakon) | obchod@flakon.sk |
-| [Parfuméria ORION](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=orion) | info@parfumeria-orion.sk |
-| [Inspirované parfémy](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=inspirovane) | info@inspirovaneparfemy.cz |
-| [Le Parfum & Le Chic](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=leparfumlechic) | info@leparfumlechic.sk |
-| [VAVAVOOM Perfumery](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=vavavoom) | info@vava-voom.cz |
-| [RAFINAD Parfumerie](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=rafinad) | info@rafinadparfumerie.com |
-| [1907 Niche Perfumeries](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=perfumeries1907) | obchod@1907.sk |
-| [VEELYN](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=veelyn) | info@veelyn.sk |
-| [PARFUMEUR](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=parfumeur) | obchod@parfemy-parfumeur.cz |
-| [Beviro](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=beviro) | info@beviro.cz |
-| [Space Fluid](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=spacefluid) | info@spacefluid.com |
-| [Vonya.sk](https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=vonya) | info@vonya.sk |
+| [Essentique](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=essentique) | info@essentique.sk |
+| [Fragrance Samples](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=fragrancesamples) | info@fragrancesamples.cz |
+| [ALEXMONHART](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=alexmonhart) | info@alexmonhart.com |
+| [Flakon](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=flakon) | obchod@flakon.sk |
+| [Parfuméria ORION](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=orion) | info@parfumeria-orion.sk |
+| [Inspirované parfémy](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=inspirovane) | info@inspirovaneparfemy.cz |
+| [Le Parfum & Le Chic](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=leparfumlechic) | info@leparfumlechic.sk |
+| [VAVAVOOM Perfumery](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=vavavoom) | info@vava-voom.cz |
+| [RAFINAD Parfumerie](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=rafinad) | info@rafinadparfumerie.com |
+| [1907 Niche Perfumeries](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=perfumeries1907) | obchod@1907.sk |
+| [VEELYN](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=veelyn) | info@veelyn.sk |
+| [PARFUMEUR](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=parfumeur) | obchod@parfemy-parfumeur.cz |
+| [Beviro](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=beviro) | info@beviro.cz |
+| [Space Fluid](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=spacefluid) | info@spacefluid.com |
+| [Vonya.sk](https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=vonya) | info@vonya.sk |
 
-Nových šesť prešlo 174/174 lokálnymi výsledkami na šírkach 320/390/1280 a 58/58 výsledkami vlastného živého Preview. Snímky som vizuálne prezrel. Pôvodných deväť má zachované úplné QA 103 výsledkov pri nezmenených dátach a novú kontrolu 9/9 odkazov. Chat sa testoval iba offline s AI stubom; platené volania 0.
+Aktuálny vzhľad všetkých 15 ukážok prešiel 483/483 lokálnymi výsledkami na šírkach 320/390/1280 a 161/161 výsledkami vlastného živého Preview na 390 px. Zo všetkých 161 profilov boli overené zdrojové tóny a vizuálne prezreté snímky. Sú odstránené pomocné texty o počte krokov a výbere podľa uvedených tónov. Výsledok má otvorený farebný profil vône bez vymyslených percent alebo skóre. Fotografie, presné ceny/balenia, CTA, doplnky, porovnanie, reset a priebeh prešli; chat iba cez reálny lokálny backend s injektovaným AI stubom, platené volania 0. Testovaný runtime `a918c9db69b83c63fdeb06f9bd13c2a3193a3487`, Preview `dpl_44trt79Gb1EanvkiLrATn8cA4Mhx`.
 
 Orion, Beviro a Vonya sú označené PRICING_REVIEW. Beviro má iba sekundárne pásmo tržieb 10–30 mil. CZK za 2024; Vonya má oficiálnych 1 339 035 EUR za 2025. Cena služby zostáva 447 € + 10 €/mesiac. Le Parfum má zachovaný rozpor VAT metadát zdroja, bez svojvoľného prepočtu. Essentique, Fragrance Samples a Flakon používajú vzorky/odstreky s ilustračnou fotografiou flakónu a presným objemom.
 
@@ -41,7 +41,7 @@ Dobrý deň,
 
 pripravil som pre Essentique ukážku chatbota a sprievodcu výberom vôní. Návštevník si vyberá podľa doložených vonných tónov a dostane konkrétnu vzorku vône s ilustračnou fotografiou flakónu, presným objemom, cenou a odkazom na váš e-shop. Dve odlišné vône môže porovnať.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=essentique
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=essentique
 
 Príprava a nasadenie na váš e-shop stojí 447 € jednorazovo, prevádzka 10 € mesačne. Ak vás ukážka zaujala, stačí odpovedať — dohodneme úpravy pre váš web a ďalší postup.
 
@@ -64,7 +64,7 @@ Dobrý den,
 
 připravil jsem pro Fragrance Samples ukázku chatbota a průvodce výběrem vůní. Návštěvník si vybírá podle doložených vonných tónů a dostane konkrétní vzorek nebo odstřik s ilustrační fotografií flakonu, přesným objemem, cenou a odkazem na váš e-shop. Dvě odlišné vůně může porovnat.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=fragrancesamples
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=fragrancesamples
 
 Příprava a nasazení na váš e-shop stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, stačí odpovědět — domluvíme úpravy pro váš web a další postup.
 
@@ -87,7 +87,7 @@ Dobrý den,
 
 připravil jsem pro ALEXMONHART ukázku chatbota a průvodce výběrem vůní. Návštěvník si vybírá podle doložených vonných tónů a dostane konkrétní produkt s fotografií, balením, cenou a odkazem na váš e-shop. Dvě odlišné vůně může porovnat.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=alexmonhart
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=alexmonhart
 
 Příprava a nasazení na váš e-shop stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, stačí odpovědět — domluvíme úpravy pro váš web a další postup.
 
@@ -110,7 +110,7 @@ Dobrý deň,
 
 pripravil som pre Flakon ukážku chatbota a sprievodcu výberom vôní. Návštevník si vyberá podľa doložených vonných tónov a dostane konkrétnu vzorku vône s ilustračnou fotografiou flakónu, presným objemom, cenou a odkazom na váš e-shop. Dve odlišné vône môže porovnať.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=flakon
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=flakon
 
 Príprava a nasadenie na váš e-shop stojí 447 € jednorazovo, prevádzka 10 € mesačne. Ak vás ukážka zaujala, stačí odpovedať — dohodneme úpravy pre váš web a ďalší postup.
 
@@ -133,7 +133,7 @@ Dobrý deň,
 
 pripravil som pre Parfuméria ORION ukážku chatbota a sprievodcu výberom vôní. Návštevník si vyberá podľa doložených vonných tónov a dostane konkrétny produkt s fotografiou, balením, cenou a odkazom na váš e-shop. Dve odlišné vône môže porovnať.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=orion
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=orion
 
 Príprava a nasadenie na váš e-shop stojí 447 € jednorazovo, prevádzka 10 € mesačne. Ak vás ukážka zaujala, stačí odpovedať — dohodneme úpravy pre váš web a ďalší postup.
 
@@ -156,7 +156,7 @@ Dobrý den,
 
 připravil jsem pro Inspirované parfémy ukázku chatbota a průvodce výběrem vůní. Návštěvník si vybírá podle doložených vonných tónů a dostane konkrétní produkt s fotografií, balením, cenou a odkazem na váš e-shop. Dvě odlišné vůně může porovnat.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=inspirovane
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=inspirovane
 
 Příprava a nasazení na váš e-shop stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, stačí odpovědět — domluvíme úpravy pro váš web a další postup.
 
@@ -179,7 +179,7 @@ Dobrý deň,
 
 pripravil som pre Le Parfum & Le Chic ukážku chatbota a sprievodcu výberom vôní. Návštevník si vyberá podľa doložených vonných tónov a dostane konkrétny produkt s fotografiou, balením, cenou a odkazom na váš e-shop. Dve odlišné vône môže porovnať.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=leparfumlechic
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=leparfumlechic
 
 Príprava a nasadenie na váš e-shop stojí 447 € jednorazovo, prevádzka 10 € mesačne. Ak vás ukážka zaujala, stačí odpovedať — dohodneme úpravy pre váš web a ďalší postup.
 
@@ -202,7 +202,7 @@ Dobrý den,
 
 připravil jsem pro VAVAVOOM Perfumery ukázku chatbota a průvodce výběrem vůní. Návštěvník si vybírá podle doložených vonných tónů a dostane konkrétní produkt s fotografií, balením, cenou a odkazem na váš e-shop. Dvě odlišné vůně může porovnat.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=vavavoom
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=vavavoom
 
 Příprava a nasazení na váš e-shop stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, stačí odpovědět — domluvíme úpravy pro váš web a další postup.
 
@@ -225,7 +225,7 @@ Dobrý den,
 
 připravil jsem pro RAFINAD Parfumerie ukázku chatbota a průvodce výběrem vůní. Návštěvník si vybírá podle doložených vonných tónů a dostane konkrétní produkt s fotografií, balením, cenou a odkazem na váš e-shop. Dvě odlišné vůně může porovnat.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=rafinad
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=rafinad
 
 Příprava a nasazení na váš e-shop stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, stačí odpovědět — domluvíme úpravy pro váš web a další postup.
 
@@ -248,7 +248,7 @@ Dobrý deň,
 
 pripravil som pre 1907 Niche Perfumeries ukážku chatbota a sprievodcu výberom vôní. Návštevník si vyberá podľa doložených vonných tónov a dostane konkrétny produkt s fotografiou, balením, cenou a odkazom na váš e-shop. Dve odlišné vône môže porovnať.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=perfumeries1907
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=perfumeries1907
 
 Príprava a nasadenie na váš e-shop stojí 447 € jednorazovo, prevádzka 10 € mesačne. Ak vás ukážka zaujala, stačí odpovedať — dohodneme úpravy pre váš web a ďalší postup.
 
@@ -271,7 +271,7 @@ Dobrý deň,
 
 pripravil som pre VEELYN ukážku chatbota a sprievodcu výberom vôní. Návštevník si vyberá podľa doložených vonných tónov a dostane konkrétny produkt s fotografiou, balením, cenou a odkazom na váš e-shop. Dve odlišné vône môže porovnať.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=veelyn
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=veelyn
 
 Príprava a nasadenie na váš e-shop stojí 447 € jednorazovo, prevádzka 10 € mesačne. Ak vás ukážka zaujala, stačí odpovedať — dohodneme úpravy pre váš web a ďalší postup.
 
@@ -294,7 +294,7 @@ Dobrý den,
 
 připravil jsem pro PARFUMEUR ukázku chatbota a průvodce výběrem vůní. Návštěvník si vybírá podle doložených vonných tónů a dostane konkrétní produkt s fotografií, balením, cenou a odkazem na váš e-shop. Dvě odlišné vůně může porovnat.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=parfumeur
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=parfumeur
 
 Příprava a nasazení na váš e-shop stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, stačí odpovědět — domluvíme úpravy pro váš web a další postup.
 
@@ -317,7 +317,7 @@ Dobrý den,
 
 připravil jsem pro Beviro ukázku chatbota a průvodce výběrem vůní. Návštěvník si vybírá podle doložených vonných tónů a dostane konkrétní produkt s fotografií, balením, cenou a odkazem na váš e-shop. Dvě odlišné vůně může porovnat.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=beviro
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=beviro
 
 Příprava a nasazení na váš e-shop stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, stačí odpovědět — domluvíme úpravy pro váš web a další postup.
 
@@ -340,7 +340,7 @@ Dobrý den,
 
 připravil jsem pro Space Fluid ukázku chatbota a průvodce výběrem vůní. Návštěvník si vybírá podle doložených vonných tónů a dostane konkrétní produkt s fotografií, balením, cenou a odkazem na váš e-shop. Dvě odlišné vůně může porovnat.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=spacefluid
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=spacefluid
 
 Příprava a nasazení na váš e-shop stojí 447 € jednorázově, provoz 10 € měsíčně. Pokud vás ukázka zaujala, stačí odpovědět — domluvíme úpravy pro váš web a další postup.
 
@@ -363,7 +363,7 @@ Dobrý deň,
 
 pripravil som pre Vonya.sk ukážku chatbota a sprievodcu výberom vôní. Návštevník si vyberá podľa doložených vonných tónov a dostane konkrétny produkt s fotografiou, balením, cenou a odkazom na váš e-shop. Dve odlišné vône môže porovnať.
 
-https://kava-chatbot-backend-3jfxpdtpl-danielvendzur-codes-projects.vercel.app/s5.html?demo=vonya
+https://kava-chatbot-backend-f1h1drbsr-danielvendzur-codes-projects.vercel.app/s5.html?demo=vonya
 
 Príprava a nasadenie na váš e-shop stojí 447 € jednorazovo, prevádzka 10 € mesačne. Ak vás ukážka zaujala, stačí odpovedať — dohodneme úpravy pre váš web a ďalší postup.
 
