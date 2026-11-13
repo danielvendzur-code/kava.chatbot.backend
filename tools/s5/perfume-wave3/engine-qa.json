@@ -1,0 +1,111 @@
+{
+  "commit": "ebf1cc8e72d5d24b79c4839d4e76486610c0dbd4",
+  "scope": "Reserved LUXPARFUM sources on unchanged core; local fixture only, not registered/live Preview",
+  "paidCalls": 0,
+  "coreUnchanged": true,
+  "companies": {
+    "luxparfum": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "lux-036"
+          },
+          "id": "lux-036",
+          "url": "https://www.luxparfum.cz/036-lux-parfum-inspirovano-light-blue-dolce-gabbana/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "lux-261"
+          },
+          "id": "lux-261",
+          "url": "https://www.luxparfum.cz/lux-parfum-261-inspirovano-imagination-louis-vuitton/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "lux-001"
+          },
+          "id": "lux-001",
+          "url": "https://www.luxparfum.cz/001-lux-parfum-inspirovano-giorgio-armani--my-way/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "lux-010"
+          },
+          "id": "lux-010",
+          "url": "https://www.luxparfum.cz/010-lux-parfum-inspirovano--english-pear-freesia-jo-malone-london/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "lux-1020"
+          },
+          "id": "lux-1020",
+          "url": "https://www.luxparfum.cz/lux-parfum-1020-inspirovano-xerjoff-xj-1861-naxos-unisex/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "lux-912"
+          },
+          "id": "lux-912",
+          "url": "https://www.luxparfum.cz/912-lux-parfem-vune-mesice-rijen-la-belle-jean-paul-gaultier/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "flowers",
+              "sweet"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "lux-036",
+              "lux-261"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "lux-001",
+              "lux-010"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "lux-1020",
+              "lux-912"
+            ]
+          }
+        }
+      ],
+      "status": "PASS",
+      "formulaCount": 6
+    }
+  }
+}

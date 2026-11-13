@@ -1,0 +1,215 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "LUX PARFUM",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/luxparfum/logo.png",
+      "header": "/assets/s5/luxparfum/logo.png",
+      "avatar": "/assets/s5/luxparfum/avatar.png"
+    },
+    "brand": {
+      "name": "LUX PARFUM",
+      "domain": "luxparfum.cz",
+      "website": "https://www.luxparfum.cz/",
+      "lang": "cs",
+      "fullName": "LUX PARFUM",
+      "url": "https://www.luxparfum.cz/",
+      "logo": "/assets/s5/luxparfum/logo.png",
+      "mark": "/assets/s5/luxparfum/avatar.png",
+      "greeting": "Dobrý den. Pomohu vám porovnat šest vybraných vůní LUX PARFUM, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Citron a jablko",
+        "Bílé květy",
+        "Med a tabák",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#24211c",
+        "accent": "#846222",
+        "soft": "#fbf6ed",
+        "paper": "#ffffff",
+        "ink": "#24211c",
+        "line": "#e7dece"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citron a svěží tóny",
+        "",
+        "Citron a svěží tóny",
+        ""
+      ],
+      "lux-036": [
+        "Citron, jablko a cedr",
+        "",
+        "Citron, jablko a cedr",
+        ""
+      ],
+      "lux-261": [
+        "Citron, čaj a zázvor",
+        "",
+        "Citron, čaj a zázvor",
+        ""
+      ],
+      "flowers": [
+        "Květiny a ovoce",
+        "",
+        "Květiny a ovoce",
+        ""
+      ],
+      "lux-001": [
+        "Pomerančový květ a jasmín",
+        "",
+        "Pomerančový květ a jasmín",
+        ""
+      ],
+      "lux-010": [
+        "Hruška, meloun a frézie",
+        "",
+        "Hruška, meloun a frézie",
+        ""
+      ],
+      "sweet": [
+        "Vanilka a sladké tóny",
+        "",
+        "Vanilka a sladké tóny",
+        ""
+      ],
+      "lux-1020": [
+        "Med, skořice a tabák",
+        "",
+        "Med, skořice a tabák",
+        ""
+      ],
+      "lux-912": [
+        "Hruška, vetiver a vanilka",
+        "",
+        "Hruška, vetiver a vanilka",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Tóny vůně"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Tóny vůně"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "lux-036": [
+        "/assets/s5/luxparfum/036.png"
+      ],
+      "lux-261": [
+        "/assets/s5/luxparfum/261.png"
+      ],
+      "flowers": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "lux-001": [
+        "/assets/s5/luxparfum/001.png"
+      ],
+      "lux-010": [
+        "/assets/s5/luxparfum/010.png"
+      ],
+      "sweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "lux-1020": [
+        "/assets/s5/luxparfum/1020.webp"
+      ],
+      "lux-912": [
+        "/assets/s5/luxparfum/912.png"
+      ]
+    },
+    "compareProductIds": [
+      "lux-036",
+      "lux-1020"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní profil · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce pro výběr vůně",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Citrusy, květiny nebo vanilka? Průvodce ukáže konkrétní vůni LUX PARFUM s profilem tónů, přesným balením, cenou a odkazem. Dvě vůně lze porovnat.",
+      "includedChat": "Tóny šesti vybraných vůní, přesná 50 ml balení a ceny.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat šest vybraných vůní LUX PARFUM, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít výběr vůně",
+      "source": "luxparfum-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "lux-036": "lux-261",
+        "lux-261": "lux-036",
+        "lux-001": "lux-010",
+        "lux-010": "lux-001",
+        "lux-1020": "lux-912",
+        "lux-912": "lux-1020"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/luxparfum.js",
+  "backendBrand": "luxparfum",
+  "offlineRules": [
+    {
+      "chip": "Citron a jablko",
+      "match": "citron.*jabl",
+      "productIds": [
+        "lux-036"
+      ]
+    },
+    {
+      "chip": "Bílé květy",
+      "match": "bile.*kvet",
+      "productIds": [
+        "lux-001"
+      ]
+    },
+    {
+      "chip": "Med a tabák",
+      "match": "med.*tabak",
+      "productIds": [
+        "lux-1020"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "presentationRequirement": "Include existing fragrance-profile.css and setbody.dataset.fragranceProfile=visual-v1 for thisexplicit registeredslug; already opt-in flags infragment.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_REVENUE_TIER_PASS_FIT_REVIEW_EXISTING_CONVERTER",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}

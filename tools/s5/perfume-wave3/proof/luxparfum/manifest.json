@@ -1,0 +1,503 @@
+{
+  "at": "2026-11-13T15:37:01.412452+00:00",
+  "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+  "runtimeBase": "ebf1cc8e72d5d24b79c4839d4e76486610c0dbd4",
+  "localResults": 18,
+  "distinctFormulas": 6,
+  "paidCalls": 0,
+  "visualReview": "All18primary outcomes viewed via320/390/1280contact sheets; merchanthome/product/widget/navigation/converter visuallyreviewed.",
+  "archiveBytes": 15400140,
+  "sha256": "3a60b676dffc1f48aa5a6fe31527a6f46466cd98219f34b401f9e53537bcb0b0",
+  "entries": [
+    {
+      "name": "lux-live-corrected/home-review.png",
+      "bytes": 346014,
+      "sha256": "7ffbdeed7dabbe38491489f564d4e297c24c6e449bc92db3310e3eaf95ab0f38"
+    },
+    {
+      "name": "lux-live-corrected/home-top.png",
+      "bytes": 1121965,
+      "sha256": "dd7f248223a4985de93941d72b18d8c75db6cb9b4904710157aa38ee663e7724"
+    },
+    {
+      "name": "lux-live-corrected/home.png",
+      "bytes": 2069311,
+      "sha256": "33b8292f466b1f04b8baffd4abe68d4bc44297bf21bff58e32fa4e835611bc57"
+    },
+    {
+      "name": "lux-live-corrected/product-review.png",
+      "bytes": 436100,
+      "sha256": "82f100699561b07b8fd58328876385e2f2de1e08a7f08e9ac75b19a6de717a32"
+    },
+    {
+      "name": "lux-live-corrected/product-top.png",
+      "bytes": 418321,
+      "sha256": "88f4eb64553db729275cad8ad7f1e7400aa084e6a3a1bb5c97a0d547c03a981a"
+    },
+    {
+      "name": "lux-live-corrected/product.png",
+      "bytes": 524752,
+      "sha256": "88c5980f9e01a4de64e0d889e3576cd040116411e0f67eaf094d6f62438d2d6b"
+    },
+    {
+      "name": "lux-live-corrected/report.json",
+      "bytes": 21715,
+      "sha256": "ce3bbe760bcf272f5a9834953779a0eca16fba999469974e81baa82911ad12c0"
+    },
+    {
+      "name": "lux-live-widget-open/home-widget.png",
+      "bytes": 469446,
+      "sha256": "7e2c190dd03c1b6c828717df2c9a06dd03001ce31d4bed8e6de51de62b4f856a"
+    },
+    {
+      "name": "lux-live-widget-open/home.png",
+      "bytes": 2075791,
+      "sha256": "8cf167dd2074773f71879ddfa483a7c09b98b944d87f0f5570fce92a943309e4"
+    },
+    {
+      "name": "lux-live-widget-open/product.png",
+      "bytes": 523473,
+      "sha256": "2c9b1bbf78e928f7fee0da855bd4aeb9ef7c654085032d4e9e6ec0c1f2642f8a"
+    },
+    {
+      "name": "lux-live-widget-open/report.json",
+      "bytes": 22051,
+      "sha256": "22d4a1204407e2fe79e50bc37edeb8b1cafca64ce597b5f98592e1925653c832"
+    },
+    {
+      "name": "lux-local-qa/independent-ui.json",
+      "bytes": 26785,
+      "sha256": "655248db8e653484b6d5e98bce03cb23ff6d521ca7aa915bda17868dfbda7bb5"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-chat-0-1280.png",
+      "bytes": 119999,
+      "sha256": "bafc315010d18f2621be2df37a4e397ecd8dd2324d76aab1f9b00ad10cb86c93"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-chat-0-320.png",
+      "bytes": 53469,
+      "sha256": "315bbb8c6b1e3e0547c03fed7db1668b957c9c026585c1739f5a08d1d943a851"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-chat-0-390.png",
+      "bytes": 56207,
+      "sha256": "1ad04293d173efe0732205b61b27670691856a2b0638b049ea5ed1c6a49924ba"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-chat-1-1280.png",
+      "bytes": 120241,
+      "sha256": "69bfe038d2d329084900c1f2f99e54b5e99fd970053f74a202e1cf260c3382da"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-chat-1-320.png",
+      "bytes": 53642,
+      "sha256": "79615a70a555e87bdab9869deae0e216ea14fac420e84710c9e94a96c8643bc4"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-chat-1-390.png",
+      "bytes": 56213,
+      "sha256": "825128babd6ee9688c34651bcb754e2f6c76c7e73aa64a8137138ac3668fc00a"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-chat-2-1280.png",
+      "bytes": 114547,
+      "sha256": "217d0defa8e545997ffccff855490bc5282311e197218b553a745548397db0c8"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-chat-2-320.png",
+      "bytes": 54345,
+      "sha256": "c94146888c1f317b9ad5d8d62f71289494427cb546f5363f530bc236a1098bd9"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-chat-2-390.png",
+      "bytes": 57606,
+      "sha256": "6f623cabaf3f3020439ab42b1745633d3dc1604aeb366bf146f115973709a16f"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-compare-1280.png",
+      "bytes": 131609,
+      "sha256": "eca1ad7cd22490fcbd797d41c8833720362f61280cbb1784a05d1c9bedce2814"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-compare-320.png",
+      "bytes": 81028,
+      "sha256": "c792ff964934daba1b2d459fe7d8eb1bc1fec371a8f844007d86666c697af073"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-compare-390.png",
+      "bytes": 92091,
+      "sha256": "de20fda331e66a86234f599c4d6ee5d186e17fcb298cc14528eae8b72594ef8f"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-001-1280.png",
+      "bytes": 18327,
+      "sha256": "b274f62c52959ad398b021383a8aded4159f75eea5038dbe6a86662079b7e314"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-001-320.png",
+      "bytes": 16910,
+      "sha256": "0137fb347050103c5b0fc79a7ca4227ee77ee7078fcbdc88bb919fd059b9962c"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-001-390.png",
+      "bytes": 17262,
+      "sha256": "0b2b36e4925c7e125eb43a3d0064da9be05fdacaf4687e0da359e2e18c4404b5"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-010-1280.png",
+      "bytes": 16669,
+      "sha256": "a9e4084bc0e39571703c65b7ad3ae7f52e5553c62017d14676675f9ba8e59522"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-010-320.png",
+      "bytes": 15267,
+      "sha256": "aae0ae957e1d132a6026b8c3a6155e9538fbe3a302deca7e1b46a4aa757339d6"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-010-390.png",
+      "bytes": 15575,
+      "sha256": "820ca0080a7ac4d4fec2647549d98f830759bc0b2d59d297bdb14ec05ae1b85e"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-036-1280.png",
+      "bytes": 19615,
+      "sha256": "7bb4ef31d8773c93f318d432ce01840267da2af88c056936bfa175f6f4d43d16"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-036-320.png",
+      "bytes": 18389,
+      "sha256": "e0918da437799ef5c9d029354c037de97ce5e55d79a1966ee26910998724720e"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-036-390.png",
+      "bytes": 18461,
+      "sha256": "30f1594d15cd1a75c886b2643770433eb35a5ef944153575276350b2ef111792"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-1020-1280.png",
+      "bytes": 20982,
+      "sha256": "764237bf40ac55e39d7981164d2386ae9e649554229d7e77a20ae472df03ac93"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-1020-320.png",
+      "bytes": 19981,
+      "sha256": "3250190feb02dd37f547c8a49728038a97100627920d86d470840f41f4c991b2"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-1020-390.png",
+      "bytes": 19895,
+      "sha256": "bf0ac95024e581b42d5223b747fe554cbcf0e596684babbf2d32e65d1f5125ec"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-261-1280.png",
+      "bytes": 22892,
+      "sha256": "f36c9ca512810a1938d966f0cb7572996734b0d3bf766043ac3842201b906177"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-261-320.png",
+      "bytes": 21755,
+      "sha256": "d88046f78af4850db38bda8102cb8abdf31b0cc3cfc52df915ac8f0113516c85"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-261-390.png",
+      "bytes": 22026,
+      "sha256": "18f1a3db8da88ee711e1967f33de6ccd089983d0fc844411e87a4b752a3cd750"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-912-1280.png",
+      "bytes": 16547,
+      "sha256": "253bafc01ad54cbe88ebc68cc7ae9ee9042b58e8cc6fe491921d62b5229583ae"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-912-320.png",
+      "bytes": 15173,
+      "sha256": "af06eacef63080e6dd9db7646eb9791bbd09c4bff387f866c50f21e5007239ab"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-note-profile-lux-912-390.png",
+      "bytes": 15456,
+      "sha256": "3e9aa2e5f35270944623f873b145a36984514fe8292278339398f82122f8b8ff"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-001-1280.png",
+      "bytes": 120098,
+      "sha256": "569ba3f3b9e24a7064ebb350aa4d148590c3dd5d16dc5e96cbe2323dd1439cb5"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-001-320.png",
+      "bytes": 65409,
+      "sha256": "f986fe5df5b3a2ccb7cdab8805f7fae6cb0c64d6300869a4b8fc8b1237983723"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-001-390.png",
+      "bytes": 66632,
+      "sha256": "56c4c87c7751fa32e88ac18cadbd24bdfcf44770a1830ce5391b991aa4261881"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-010-1280.png",
+      "bytes": 121176,
+      "sha256": "37ee0fee87047caf76b16bc241d10fd05c23685c73ff7638874e37ec07f2e715"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-010-320.png",
+      "bytes": 64965,
+      "sha256": "35d21539c9f6b4f53214e0cc4a943f962f488128881f7d024ae9e506b2ae5d58"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-010-390.png",
+      "bytes": 66153,
+      "sha256": "1b7338a31f83cd2415dd28da3d3692e4e0fdc6e0a820faf0ea2804a17936ea04"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-036-1280.png",
+      "bytes": 120405,
+      "sha256": "84aa054cbdb1c23b9b67d850c4ef730f2fcd4b1d2f4113b09d29df4176ea3cf1"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-036-320.png",
+      "bytes": 66004,
+      "sha256": "98d91a8619492ae6652eb94e92c1c3161d50ed193156bbd3490fd38c86f76b41"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-036-390.png",
+      "bytes": 67340,
+      "sha256": "2d307a4f022e1f68ec25bf7d34684f63586b7e3b30303672cc88a5cd2c23b014"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-1020-1280.png",
+      "bytes": 122269,
+      "sha256": "2aab215abf3c3b6f6d6913cadbd5e674e0a1e7a186eb0f4d0c2a96f81ed16665"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-1020-320.png",
+      "bytes": 67883,
+      "sha256": "c3cc076f599d3e7993461299786dcc49c616ffebe51db289e8cd9af82eaf5161"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-1020-390.png",
+      "bytes": 69344,
+      "sha256": "7977ac846bb7245b4cd7883ddc45999f1a19d104af295f7cff5440f32da30568"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-261-1280.png",
+      "bytes": 122917,
+      "sha256": "1ae977d66429d760ab65da8f72a8d93b84eca72224e0fea80ab2da7496983023"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-261-320.png",
+      "bytes": 68848,
+      "sha256": "0f5dc4a2ff3c24ff81bc5189a099a3b439e0866d286ac07ffec33d9acaedcdc5"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-261-390.png",
+      "bytes": 69933,
+      "sha256": "09550f59e19badda3366ac2e91ad55d24778559b384720758e53d5f052e6469d"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-912-1280.png",
+      "bytes": 119799,
+      "sha256": "5178a48a46d035a8c8d6461613978d0d2143adb8f822d83d39c14a06a043e862"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-912-320.png",
+      "bytes": 64069,
+      "sha256": "61f926afd7aed0af03d52fc31196eddc1bdaf4288c07beb99e5a6bfb4e46ed7e"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-pair-lux-912-390.png",
+      "bytes": 64889,
+      "sha256": "214eb0ca0e4ae202b6d864abe5714ac4065d50dae8fe12fa24312a9e48fd5678"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-question-1-1280.png",
+      "bytes": 333094,
+      "sha256": "e25f5781079713abf949c826d1594266ea1d594997a18d639ac6b00c4c44042d"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-question-1-320.png",
+      "bytes": 202626,
+      "sha256": "f66d43da93fe72505c593a0f5293611cded6ed396b66163cbf6c14d66e913f7d"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-question-1-390.png",
+      "bytes": 240989,
+      "sha256": "f693a9b782b1181e8d9c3bd8a19dd593a0803f57b1fa60d6d60838e0403af579"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-question-2-1280.png",
+      "bytes": 188802,
+      "sha256": "d40ec0ea38d5faf886a5482407ab2a6cead8785a221aef7b9256d5a63e117d22"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-question-2-320.png",
+      "bytes": 114972,
+      "sha256": "0f46ed4fedce48d67cb929fd549689859f50cc4e52f02311d01dc0d4c518b6fd"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-question-2-390.png",
+      "bytes": 122237,
+      "sha256": "fcec2f22e902ada046c160851c1fd0988406befcaa7043f0cb984d53eb037e07"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-question-3-1280.png",
+      "bytes": 181364,
+      "sha256": "b77389d7d0fa42eca7aa35b2f208416a069147da8291f3d31a920b883cb4010f"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-question-3-320.png",
+      "bytes": 115993,
+      "sha256": "09e68309647ae199ce86020fc0914cafc0098abe5a432fadd5c6d7e7f44736e0"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-question-3-390.png",
+      "bytes": 123694,
+      "sha256": "21c5a72f0bcf720231fae698b21c56f5afb101026373430f431b804cceddc5c2"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-question-4-1280.png",
+      "bytes": 197531,
+      "sha256": "78d84898318fdf2917e2e9567e30665b90dde9ab887e079370722beb8355ca65"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-question-4-320.png",
+      "bytes": 129486,
+      "sha256": "4173c1d849a881cf3cdcd9c77f5a9c4f4294b8e0ae727ab297c83159a6e58b4f"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-question-4-390.png",
+      "bytes": 139066,
+      "sha256": "7015252c80064ca332036879e83220c836b8385e2391fdad9035b4c3777374d9"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-001-1280.png",
+      "bytes": 134819,
+      "sha256": "2732656a5d85c2167e1e1c8ad6b7e1c9e390f605ff5b90138b6e49a472996ab4"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-001-320.png",
+      "bytes": 74409,
+      "sha256": "3c3a2f65ec6749b1449a005d77dba3e3d6fc31780bda6cde2f974c565ae8959c"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-001-390.png",
+      "bytes": 76138,
+      "sha256": "11dcf80d3f015a730adc0a7428d5c2684ed2c21e131a207e1af0b4a9accfe08b"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-010-1280.png",
+      "bytes": 131135,
+      "sha256": "511e45e827da01c8d798f1ebbada8dd7d0e8b69b4da22cab805c9e048baeea83"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-010-320.png",
+      "bytes": 71024,
+      "sha256": "8b63c574b92c2d878777a1defcf75f5701a5987c22613293f73a00d9adad0bce"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-010-390.png",
+      "bytes": 72815,
+      "sha256": "0776f55923b8ca4138fcce91a3e9ead5845f4607c3a0cc1bac9921c735b747d8"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-036-1280.png",
+      "bytes": 134869,
+      "sha256": "eae9fe1ba099005c4d8daf40acbbb38a5d6f4d8783ecc2ef8e240e3fcd476574"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-036-320.png",
+      "bytes": 74673,
+      "sha256": "33713e12bf2f48b00e6e1b370ac99edaf42f72992344ad67b3f9b91f3b31a901"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-036-390.png",
+      "bytes": 76197,
+      "sha256": "8ec04c494ed7b1100998377e7b5cdd4a3b48174240aab16a82d297c5899fda8f"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-1020-1280.png",
+      "bytes": 137133,
+      "sha256": "0aad3e8828ed0ffd0fc72dca100257228bb4b6320b39e94a833fc2c53339784a"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-1020-320.png",
+      "bytes": 75392,
+      "sha256": "95195c125f9f18816aba5fe94cbf12ec0b3b3b90724876a5695cdcd4285a95a8"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-1020-390.png",
+      "bytes": 78655,
+      "sha256": "67e862a45f811a014b893d317ef9985190fc0f4a7be626484eaf481137127c6f"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-261-1280.png",
+      "bytes": 137836,
+      "sha256": "3bee2d82b0387880b353b20c23e37c64e609cee2dda7e14301ecc8621571f9c9"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-261-320.png",
+      "bytes": 75795,
+      "sha256": "ca3d93d6c50448a1cfe32d4c45ebcdb45c36752a9279a1f74e41bf1c0e074be3"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-261-390.png",
+      "bytes": 78910,
+      "sha256": "e4b04117318c9178ce77d1e0a68cde888d3def255cf6d6910a05b9bdb6954c21"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-912-1280.png",
+      "bytes": 132097,
+      "sha256": "9f4dced86a22a850ca203478f5ed31eec7d80794a58ca321e40ae52b549c115f"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-912-320.png",
+      "bytes": 71855,
+      "sha256": "9240a0e34cb95118e823116c110dab26a22594967d4fb4e485758af3b5de0097"
+    },
+    {
+      "name": "lux-local-qa/luxparfum-result-lux-912-390.png",
+      "bytes": 73741,
+      "sha256": "ca3df2e4e831db4508ca83dc774b0d676161e49778ed8179ac2c05b99fad09c1"
+    },
+    {
+      "name": "lux-navigation/converter.png",
+      "bytes": 164258,
+      "sha256": "aff2a3fc0e43bf800001367d7518d5514672ea836542918fb216e650671d809a"
+    },
+    {
+      "name": "lux-navigation/najdi.png",
+      "bytes": 106236,
+      "sha256": "e0e146564faabf17687d2c0e5ec27ea511170b6156b362ff51a0549d54bb5820"
+    },
+    {
+      "name": "lux-navigation/report.json",
+      "bytes": 8291,
+      "sha256": "6b1bac92995b0bfdc33a03775ca71f2e3bdae2028ac8418510c0221c03bd1db9"
+    },
+    {
+      "name": "visual-review/luxparfum-question-1-390.png",
+      "bytes": 240989,
+      "sha256": "f693a9b782b1181e8d9c3bd8a19dd593a0803f57b1fa60d6d60838e0403af579"
+    },
+    {
+      "name": "visual-review/luxparfum-result-lux-1020-390.png",
+      "bytes": 78655,
+      "sha256": "67e862a45f811a014b893d317ef9985190fc0f4a7be626484eaf481137127c6f"
+    },
+    {
+      "name": "visual-review/luxparfum-vsetky-vysledky-1280.png",
+      "bytes": 217034,
+      "sha256": "83ff668657791eca323a145fcd4721726739dfd229ce746ebe9f1b8da6858a55"
+    },
+    {
+      "name": "visual-review/luxparfum-vsetky-vysledky-320.png",
+      "bytes": 255651,
+      "sha256": "2ba8a2a6c8a37f240f658ec991208a19eebefd8f34a00777d32af2dca9567ffc"
+    },
+    {
+      "name": "visual-review/luxparfum-vsetky-vysledky-390.png",
+      "bytes": 252890,
+      "sha256": "9ae67becb214ec4a182277af617ed9ce15099ce329c3d4940267efca4f73b105"
+    }
+  ]
+}

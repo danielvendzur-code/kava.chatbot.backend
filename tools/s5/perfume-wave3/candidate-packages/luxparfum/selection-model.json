@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citron a svěží tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "lux-036",
+          "label": "Citron, jablko a cedr",
+          "productId": "lux-036",
+          "sourceUrl": "https://www.luxparfum.cz/036-lux-parfum-inspirovano-light-blue-dolce-gabbana/"
+        },
+        {
+          "value": "lux-261",
+          "label": "Citron, čaj a zázvor",
+          "productId": "lux-261",
+          "sourceUrl": "https://www.luxparfum.cz/lux-parfum-261-inspirovano-imagination-louis-vuitton/"
+        }
+      ]
+    },
+    {
+      "value": "flowers",
+      "label": "Květiny a ovoce",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "lux-001",
+          "label": "Pomerančový květ a jasmín",
+          "productId": "lux-001",
+          "sourceUrl": "https://www.luxparfum.cz/001-lux-parfum-inspirovano-giorgio-armani--my-way/"
+        },
+        {
+          "value": "lux-010",
+          "label": "Hruška, meloun a frézie",
+          "productId": "lux-010",
+          "sourceUrl": "https://www.luxparfum.cz/010-lux-parfum-inspirovano--english-pear-freesia-jo-malone-london/"
+        }
+      ]
+    },
+    {
+      "value": "sweet",
+      "label": "Vanilka a sladké tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "lux-1020",
+          "label": "Med, skořice a tabák",
+          "productId": "lux-1020",
+          "sourceUrl": "https://www.luxparfum.cz/lux-parfum-1020-inspirovano-xerjoff-xj-1861-naxos-unisex/"
+        },
+        {
+          "value": "lux-912",
+          "label": "Hruška, vetiver a vanilka",
+          "productId": "lux-912",
+          "sourceUrl": "https://www.luxparfum.cz/912-lux-parfem-vune-mesice-rijen-la-belle-jean-paul-gaultier/"
+        }
+      ]
+    }
+  ]
+}

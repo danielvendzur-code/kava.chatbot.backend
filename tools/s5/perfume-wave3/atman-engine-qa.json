@@ -1,0 +1,111 @@
+{
+  "commit": "ebf1cc8e72d5d24b79c4839d4e76486610c0dbd4",
+  "scope": "Reserved ATMAN sources on unchanged core; local fixture only, not registered/live Preview",
+  "paidCalls": 0,
+  "coreUnchanged": true,
+  "companies": {
+    "atmanperfumes": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "ambra-rossa"
+          },
+          "id": "ambra-rossa",
+          "url": "https://www.atmanperfumes.com/product-page/ambra-rossa"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "contesse"
+          },
+          "id": "contesse",
+          "url": "https://www.atmanperfumes.com/product-page/contesse"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "aura-blanc"
+          },
+          "id": "aura-blanc",
+          "url": "https://www.atmanperfumes.com/product-page/aura-blanc"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "sole-intimo"
+          },
+          "id": "sole-intimo",
+          "url": "https://www.atmanperfumes.com/product-page/sole-intimo-extrait-de-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "depth",
+            "fragranceProfile": "oxymoron"
+          },
+          "id": "oxymoron",
+          "url": "https://www.atmanperfumes.com/product-page/oxymoron-extrait-de-parfum"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "depth",
+            "fragranceProfile": "tramonto"
+          },
+          "id": "tramonto",
+          "url": "https://www.atmanperfumes.com/product-page/tramonto-extrait-de-parfum"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fruit",
+              "fresh",
+              "depth"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "ambra-rossa",
+              "contesse"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "aura-blanc",
+              "sole-intimo"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "depth"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "oxymoron",
+              "tramonto"
+            ]
+          }
+        }
+      ],
+      "status": "PASS",
+      "formulaCount": 6
+    }
+  }
+}

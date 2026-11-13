@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aká vôňa je vám blízka?",
+  "options": [
+    {
+      "value": "fruit",
+      "label": "Ovocie a kvety",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "ambra-rossa",
+          "label": "Malina, oud a céder",
+          "productId": "ambra-rossa",
+          "sourceUrl": "https://www.atmanperfumes.com/product-page/ambra-rossa"
+        },
+        {
+          "value": "contesse",
+          "label": "Hruška, neroli a vanilka",
+          "productId": "contesse",
+          "sourceUrl": "https://www.atmanperfumes.com/product-page/contesse"
+        }
+      ]
+    },
+    {
+      "value": "fresh",
+      "label": "Citrusy a svieže tóny",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "aura-blanc",
+          "label": "Ríbezle, čaj a biele pižmo",
+          "productId": "aura-blanc",
+          "sourceUrl": "https://www.atmanperfumes.com/product-page/aura-blanc"
+        },
+        {
+          "value": "sole-intimo",
+          "label": "Chinotto, neroli a vetiver",
+          "productId": "sole-intimo",
+          "sourceUrl": "https://www.atmanperfumes.com/product-page/sole-intimo-extrait-de-parfum"
+        }
+      ]
+    },
+    {
+      "value": "depth",
+      "label": "Koža, oud a morské tóny",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "oxymoron",
+          "label": "Grapefruit, koža a toffee",
+          "productId": "oxymoron",
+          "sourceUrl": "https://www.atmanperfumes.com/product-page/oxymoron-extrait-de-parfum"
+        },
+        {
+          "value": "tramonto",
+          "label": "Citrusy, dymový oud a mach",
+          "productId": "tramonto",
+          "sourceUrl": "https://www.atmanperfumes.com/product-page/tramonto-extrait-de-parfum"
+        }
+      ]
+    }
+  ]
+}

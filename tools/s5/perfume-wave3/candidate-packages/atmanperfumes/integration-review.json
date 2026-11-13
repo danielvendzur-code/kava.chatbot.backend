@@ -1,0 +1,215 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "ATMAN",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/atmanperfumes/logo.svg",
+      "header": "/assets/s5/atmanperfumes/logo.svg",
+      "avatar": "/assets/s5/atmanperfumes/avatar.png"
+    },
+    "brand": {
+      "name": "ATMAN",
+      "domain": "atmanperfumes.com",
+      "website": "https://www.atmanperfumes.com/",
+      "lang": "sk",
+      "fullName": "ATMAN",
+      "url": "https://www.atmanperfumes.com/",
+      "logo": "/assets/s5/atmanperfumes/logo.svg",
+      "mark": "/assets/s5/atmanperfumes/avatar.png",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať šesť vôní ATMAN, ich tóny, balenia a ceny.",
+      "quickChips": [
+        "Malina a oud",
+        "Ríbezle a čaj",
+        "Chinotto a neroli",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#291e1b",
+        "accent": "#775a42",
+        "soft": "#faf5ee",
+        "paper": "#ffffff",
+        "ink": "#291e1b",
+        "line": "#e7dbce"
+      }
+    },
+    "traitCopy": {
+      "fruit": [
+        "Ovocie a kvety",
+        "",
+        "Ovocie a kvety",
+        ""
+      ],
+      "ambra-rossa": [
+        "Malina, oud a céder",
+        "",
+        "Malina, oud a céder",
+        ""
+      ],
+      "contesse": [
+        "Hruška, neroli a vanilka",
+        "",
+        "Hruška, neroli a vanilka",
+        ""
+      ],
+      "fresh": [
+        "Citrusy a svieže tóny",
+        "",
+        "Citrusy a svieže tóny",
+        ""
+      ],
+      "aura-blanc": [
+        "Ríbezle, čaj a biele pižmo",
+        "",
+        "Ríbezle, čaj a biele pižmo",
+        ""
+      ],
+      "sole-intimo": [
+        "Chinotto, neroli a vetiver",
+        "",
+        "Chinotto, neroli a vetiver",
+        ""
+      ],
+      "depth": [
+        "Koža, oud a morské tóny",
+        "",
+        "Koža, oud a morské tóny",
+        ""
+      ],
+      "oxymoron": [
+        "Grapefruit, koža a toffee",
+        "",
+        "Grapefruit, koža a toffee",
+        ""
+      ],
+      "tramonto": [
+        "Citrusy, dymový oud a mach",
+        "",
+        "Citrusy, dymový oud a mach",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Tóny vône"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Tóny vône"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fruit": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "ambra-rossa": [
+        "/assets/s5/atmanperfumes/ambra-rossa.jpg"
+      ],
+      "contesse": [
+        "/assets/s5/atmanperfumes/contesse.jpg"
+      ],
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "aura-blanc": [
+        "/assets/s5/atmanperfumes/aura-blanc.jpg"
+      ],
+      "sole-intimo": [
+        "/assets/s5/atmanperfumes/sole-intimo.jpg"
+      ],
+      "depth": [
+        "/assets/s5/atmanperfumes/oxymoron.jpg"
+      ],
+      "oxymoron": [
+        "/assets/s5/atmanperfumes/oxymoron.jpg"
+      ],
+      "tramonto": [
+        "/assets/s5/atmanperfumes/tramonto.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "ambra-rossa",
+      "sole-intimo"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétna vôňa · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu podľa jeho vkusu.",
+      "lead": "Ovocie, citrusy aj oud. Výber ukáže konkrétnu vôňu ATMAN s fotografiou, profilom tónov, presným 30 ml balením, cenou a odkazom. Dve vône možno porovnať.",
+      "includedChat": "Tóny šiestich vôní, presné 30 ml balenia, ceny a porovnanie.",
+      "includedAdvisor": "Výber vône, jej profil a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať šesť vôní ATMAN, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "atman-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "ambra-rossa": "contesse",
+        "contesse": "ambra-rossa",
+        "aura-blanc": "sole-intimo",
+        "sole-intimo": "aura-blanc",
+        "oxymoron": "tramonto",
+        "tramonto": "oxymoron"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/atmanperfumes.js",
+  "backendBrand": "atmanperfumes",
+  "offlineRules": [
+    {
+      "chip": "Malina a oud",
+      "match": "malina.*oud",
+      "productIds": [
+        "ambra-rossa"
+      ]
+    },
+    {
+      "chip": "Ríbezle a čaj",
+      "match": "ribezle.*caj",
+      "productIds": [
+        "aura-blanc"
+      ]
+    },
+    {
+      "chip": "Chinotto a neroli",
+      "match": "chinotto.*neroli",
+      "productIds": [
+        "sole-intimo"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "presentationRequirement": "Includeexistingfragrance-profile.css andsetbody.dataset.fragranceProfile=visual-v1 for explicitnewslug; optinflagsalreadyinfragment.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "SECONDARY_SMALL_BAND_EXACT_LATEST_UNKNOWN",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}
