@@ -1,0 +1,215 @@
+{
+  "updatedAt": "2026-11-13T08:54:10.892081+00:00",
+  "owner": "PERFUME_WORKER",
+  "target": 15,
+  "stopRule": "Stop new-demo preparation when15unsent eligible live-QA examples are ready; hand user contacts/URLs/texts. Do not send emails.",
+  "sentEvidence": {
+    "source": "Two user-supplied Sent-folder screenshots13Nov2026; visible Yesterday corresponds12Nov2026 Europe/Warsaw",
+    "scope": "Observed outgoing entries, not delivery/read/interest confirmation. Pleva follow-up reply counted once; unrelated personal entry omitted. No mailbox accessed or modified."
+  },
+  "excludeAlreadyContacted": [
+    {
+      "slug": "safran",
+      "recipient": "info@mydlarnasafran.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "eone",
+      "recipient": "eone@eone.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "nutt",
+      "recipient": "objednavky@nutt.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "pleva",
+      "recipient": "obchod@pleva.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "botanico",
+      "recipient": "info@botanico.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "oraculum",
+      "recipient": "info@oraculum.store",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "myskino",
+      "recipient": "info@myskino.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "kintsugi",
+      "recipient": "hello@kintsugi.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "adoraniche",
+      "recipient": "info@adoraniche.sk",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "nicheandglow",
+      "recipient": "info@nicheandglow.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "scentisimo",
+      "recipient": "mail@scentisimo.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "jagaia",
+      "recipient": "info@jagaia.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "capri",
+      "recipient": "info@kosmetikacapri.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "janine",
+      "recipient": "janinekozmetika@gmail.com",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "nafigate",
+      "recipient": "info@nafigatecosmetics.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "boemi",
+      "recipient": "info@boemi.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    },
+    {
+      "slug": "rubens",
+      "recipient": "eshop@mydlarnarubens.cz",
+      "status": "SENT_USER_SCREENSHOT_20261112"
+    }
+  ],
+  "unsentLiveCandidates": [
+    {
+      "slug": "essentique",
+      "url": "https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=essentique",
+      "status": "PRIOR_FULL_LIVE_QA_FRESH_LINK_AND_CONTACT_PASS",
+      "emailStatus": "UNSENT_RELATIVE_TO_USER_CONFIRMED17_NOT_SENT_BY_AGENT",
+      "freshLinkCheckedAt": "2026-11-13T08:53:02.746547+00:00",
+      "proofScope": "Fresh initial render identity/loaded images only. Full result live Preview QA from prior exact runtime; no repeat of all103results claimed.",
+      "contact": "info@essentique.sk",
+      "contactSource": "https://www.essentique.sk/",
+      "contactCheckedAt": "2026-11-13T08:57:00.871535+00:00"
+    },
+    {
+      "slug": "fragrancesamples",
+      "url": "https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=fragrancesamples",
+      "status": "PRIOR_FULL_LIVE_QA_FRESH_LINK_AND_CONTACT_PASS",
+      "emailStatus": "UNSENT_RELATIVE_TO_USER_CONFIRMED17_NOT_SENT_BY_AGENT",
+      "freshLinkCheckedAt": "2026-11-13T08:53:02.894341+00:00",
+      "proofScope": "Fresh initial render identity/loaded images only. Full result live Preview QA from prior exact runtime; no repeat of all103results claimed.",
+      "contact": "info@fragrancesamples.cz",
+      "contactSource": "https://www.fragrancesamples.cz/obchodni-podminky/",
+      "contactCheckedAt": "2026-11-13T08:57:00.872748+00:00"
+    },
+    {
+      "slug": "alexmonhart",
+      "url": "https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=alexmonhart",
+      "status": "PRIOR_FULL_LIVE_QA_FRESH_LINK_AND_CONTACT_PASS",
+      "emailStatus": "UNSENT_RELATIVE_TO_USER_CONFIRMED17_NOT_SENT_BY_AGENT",
+      "freshLinkCheckedAt": "2026-11-13T08:53:03.130998+00:00",
+      "proofScope": "Fresh initial render identity/loaded images only. Full result live Preview QA from prior exact runtime; no repeat of all103results claimed.",
+      "contact": "info@alexmonhart.com",
+      "contactSource": "https://www.alexmonhart.com/",
+      "contactCheckedAt": "2026-11-13T08:57:00.873505+00:00"
+    },
+    {
+      "slug": "flakon",
+      "url": "https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=flakon",
+      "status": "PRIOR_FULL_LIVE_QA_FRESH_LINK_AND_CONTACT_PASS",
+      "emailStatus": "UNSENT_RELATIVE_TO_USER_CONFIRMED17_NOT_SENT_BY_AGENT",
+      "freshLinkCheckedAt": "2026-11-13T08:53:10.500425+00:00",
+      "proofScope": "Fresh initial render identity/loaded images only. Full result live Preview QA from prior exact runtime; no repeat of all103results claimed.",
+      "contact": "obchod@flakon.sk",
+      "contactSource": "https://www.flakon.sk/",
+      "contactCheckedAt": "2026-11-13T08:57:00.874260+00:00"
+    },
+    {
+      "slug": "orion",
+      "url": "https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=orion",
+      "status": "PRIOR_FULL_LIVE_QA_FRESH_LINK_AND_CONTACT_PASS",
+      "emailStatus": "UNSENT_RELATIVE_TO_USER_CONFIRMED17_NOT_SENT_BY_AGENT",
+      "freshLinkCheckedAt": "2026-11-13T08:53:10.679339+00:00",
+      "proofScope": "Fresh initial render identity/loaded images only. Full result live Preview QA from prior exact runtime; no repeat of all103results claimed.",
+      "contact": "info@parfumeria-orion.sk",
+      "contactSource": "https://parfumeria-orion.sk/",
+      "contactCheckedAt": "2026-11-13T08:57:02.633316+00:00"
+    },
+    {
+      "slug": "inspirovane",
+      "url": "https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=inspirovane",
+      "status": "PRIOR_FULL_LIVE_QA_FRESH_LINK_AND_CONTACT_PASS",
+      "emailStatus": "UNSENT_RELATIVE_TO_USER_CONFIRMED17_NOT_SENT_BY_AGENT",
+      "freshLinkCheckedAt": "2026-11-13T08:53:14.258776+00:00",
+      "proofScope": "Fresh initial render identity/loaded images only. Full result live Preview QA from prior exact runtime; no repeat of all103results claimed.",
+      "contact": "info@inspirovaneparfemy.cz",
+      "contactSource": "https://www.inspirovaneparfemy.cz/",
+      "contactCheckedAt": "2026-11-13T08:57:03.217951+00:00"
+    },
+    {
+      "slug": "leparfumlechic",
+      "url": "https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=leparfumlechic",
+      "status": "PRIOR_FULL_LIVE_QA_FRESH_LINK_AND_CONTACT_PASS",
+      "emailStatus": "UNSENT_RELATIVE_TO_USER_CONFIRMED17_NOT_SENT_BY_AGENT",
+      "freshLinkCheckedAt": "2026-11-13T08:53:15.405215+00:00",
+      "proofScope": "Fresh initial render identity/loaded images only. Full result live Preview QA from prior exact runtime; no repeat of all103results claimed.",
+      "contact": "info@leparfumlechic.sk",
+      "contactSource": "https://www.leparfumlechic.sk/kontakt/",
+      "contactCheckedAt": "2026-11-13T08:57:03.299001+00:00"
+    },
+    {
+      "slug": "vavavoom",
+      "url": "https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=vavavoom",
+      "status": "PRIOR_FULL_LIVE_QA_FRESH_LINK_AND_CONTACT_PASS",
+      "emailStatus": "UNSENT_RELATIVE_TO_USER_CONFIRMED17_NOT_SENT_BY_AGENT",
+      "freshLinkCheckedAt": "2026-11-13T08:53:15.605047+00:00",
+      "proofScope": "Fresh initial render identity/loaded images only. Full result live Preview QA from prior exact runtime; no repeat of all103results claimed.",
+      "contact": "info@vava-voom.cz",
+      "contactSource": "https://www.vava-voom.cz/",
+      "contactCheckedAt": "2026-11-13T08:57:03.484610+00:00"
+    },
+    {
+      "slug": "rafinad",
+      "url": "https://kava-chatbot-backend-doua93v3r-danielvendzur-codes-projects.vercel.app/s5.html?demo=rafinad",
+      "status": "PRIOR_FULL_LIVE_QA_FRESH_LINK_AND_CONTACT_PASS",
+      "emailStatus": "UNSENT_RELATIVE_TO_USER_CONFIRMED17_NOT_SENT_BY_AGENT",
+      "freshLinkCheckedAt": "2026-11-13T08:53:19.104060+00:00",
+      "proofScope": "Fresh initial render identity/loaded images only. Full result live Preview QA from prior exact runtime; no repeat of all103results claimed.",
+      "contact": "info@rafinadparfumerie.com",
+      "contactSource": "https://www.rafinadparfumerie.com/",
+      "contactCheckedAt": "2026-11-13T08:57:04.324656+00:00"
+    }
+  ],
+  "localPendingLive": [
+    {
+      "slug": "perfumeries1907",
+      "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "emailStatus": "NOT_READY"
+    },
+    {
+      "slug": "veelyn",
+      "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "emailStatus": "NOT_READY"
+    }
+  ],
+  "newRequired": 4,
+  "readyCount": 9,
+  "readyCountQualification": "Nine technical Preview demos, links and contacts verified, excluded against user17. Ready for owner text/review; no mailbox/delivery check or paid production AI test. Existing pricing/VAT reviews retained.",
+  "mailboxActions": 0,
+  "paidCalls": 0
+}

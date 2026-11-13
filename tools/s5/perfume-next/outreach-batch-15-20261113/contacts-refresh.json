@@ -1,0 +1,77 @@
+{
+  "scope": "Official contact refresh, no mailbox/messages/deliverability tests",
+  "rows": [
+    {
+      "slug": "essentique",
+      "url": "https://www.essentique.sk/",
+      "email": "info@essentique.sk",
+      "checkedAt": "2026-11-13T08:57:00.871535+00:00",
+      "status": 200,
+      "exactOfficialEmailPresent": true
+    },
+    {
+      "slug": "fragrancesamples",
+      "url": "https://www.fragrancesamples.cz/obchodni-podminky/",
+      "email": "info@fragrancesamples.cz",
+      "checkedAt": "2026-11-13T08:57:00.872748+00:00",
+      "status": 200,
+      "exactOfficialEmailPresent": true
+    },
+    {
+      "slug": "alexmonhart",
+      "url": "https://www.alexmonhart.com/",
+      "email": "info@alexmonhart.com",
+      "checkedAt": "2026-11-13T08:57:00.873505+00:00",
+      "status": 200,
+      "exactOfficialEmailPresent": true
+    },
+    {
+      "slug": "flakon",
+      "url": "https://www.flakon.sk/",
+      "email": "obchod@flakon.sk",
+      "checkedAt": "2026-11-13T08:57:00.874260+00:00",
+      "status": 200,
+      "exactOfficialEmailPresent": true
+    },
+    {
+      "slug": "orion",
+      "url": "https://parfumeria-orion.sk/",
+      "email": "info@parfumeria-orion.sk",
+      "checkedAt": "2026-11-13T08:57:02.633316+00:00",
+      "status": 200,
+      "exactOfficialEmailPresent": true
+    },
+    {
+      "slug": "inspirovane",
+      "url": "https://www.inspirovaneparfemy.cz/",
+      "email": "info@inspirovaneparfemy.cz",
+      "checkedAt": "2026-11-13T08:57:03.217951+00:00",
+      "status": 200,
+      "exactOfficialEmailPresent": true
+    },
+    {
+      "slug": "leparfumlechic",
+      "url": "https://www.leparfumlechic.sk/kontakt/",
+      "email": "info@leparfumlechic.sk",
+      "checkedAt": "2026-11-13T08:57:03.299001+00:00",
+      "status": 200,
+      "exactOfficialEmailPresent": true
+    },
+    {
+      "slug": "vavavoom",
+      "url": "https://www.vava-voom.cz/",
+      "email": "info@vava-voom.cz",
+      "checkedAt": "2026-11-13T08:57:03.484610+00:00",
+      "status": 200,
+      "exactOfficialEmailPresent": true
+    },
+    {
+      "slug": "rafinad",
+      "url": "https://www.rafinadparfumerie.com/",
+      "email": "info@rafinadparfumerie.com",
+      "checkedAt": "2026-11-13T08:57:04.324656+00:00",
+      "status": 200,
+      "exactOfficialEmailPresent": true
+    }
+  ]
+}
