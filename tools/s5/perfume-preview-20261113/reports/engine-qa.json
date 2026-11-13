@@ -1,0 +1,815 @@
+{
+  "commit": "fcb2567e036e8522b4348e0024cc48f1a67d881c",
+  "base": "fcb2567e036e8522b4348e0024cc48f1a67d881c",
+  "codeState": "UNCOMMITTED_ISOLATED_INTEGRATION_WORKTREE",
+  "coreUnchanged": true,
+  "paidCalls": 0,
+  "companies": {
+    "perfumeries1907": {
+      "formulaCount": 12,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "conduit"
+          },
+          "id": "conduit",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/591-21-Conduit-St"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "black-sea"
+          },
+          "id": "black-sea",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/660-Black-Sea"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "fathom"
+          },
+          "id": "fathom",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/42-1-BEAUFORT-LONDON/0/5/218-Fathom-V"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "ask"
+          },
+          "id": "ask",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/706-Ask"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "aldebaran"
+          },
+          "id": "aldebaran",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/692-Aldebaran-100ml"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "divanche"
+          },
+          "id": "divanche",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/694-Divanche-60ml"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "beaumont"
+          },
+          "id": "beaumont",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/755-Beaumont-Sur-Mer"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "columbine"
+          },
+          "id": "columbine",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/542-Columbine"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "baklava"
+          },
+          "id": "baklava",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/725-Baklava-Bliss"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "ali-baba"
+          },
+          "id": "ali-baba",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/705-Ali-Baba"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "cherry-ink"
+          },
+          "id": "cherry-ink",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/659-Cherry-Ink"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "b683"
+          },
+          "id": "b683",
+          "url": "https://www.1907perfumeries.sk/mydlo-soap/eshop/0/0/5/723-B683-EXTRAIT"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "warm"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "conduit",
+              "black-sea",
+              "fathom",
+              "ask"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "aldebaran",
+              "divanche",
+              "beaumont",
+              "columbine"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "baklava",
+              "ali-baba",
+              "cherry-ink",
+              "b683"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "veelyn": {
+      "formulaCount": 10,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "deep-dive"
+          },
+          "id": "deep-dive",
+          "url": "https://www.veelyn.sk/produkt/louis-vuitton-afternoon-swim/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "hard-cash"
+          },
+          "id": "hard-cash",
+          "url": "https://www.veelyn.sk/produkt/creed-aventus/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "harmony"
+          },
+          "id": "harmony",
+          "url": "https://www.veelyn.sk/produkt/louis-vuitton-symphony/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "pink-desire"
+          },
+          "id": "pink-desire",
+          "url": "https://www.veelyn.sk/produkt/parfums-de-marly-delina/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "mystery"
+          },
+          "id": "mystery",
+          "url": "https://www.veelyn.sk/produkt/prada-paradoxe/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "forbidden-cherries"
+          },
+          "id": "forbidden-cherries",
+          "url": "https://www.veelyn.sk/produkt/tom-ford-lost-cherry/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "noble-wood"
+          },
+          "id": "noble-wood",
+          "url": "https://www.veelyn.sk/produkt/tom-ford-oud-wood/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "desert-storm"
+          },
+          "id": "desert-storm",
+          "url": "https://www.veelyn.sk/produkt/louis-vuitton-ombre-nomade/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "sweet-cig"
+          },
+          "id": "sweet-cig",
+          "url": "https://www.veelyn.sk/produkt/tom-ford-tobacco-vanille/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "moulin-rouge"
+          },
+          "id": "moulin-rouge",
+          "url": "https://www.veelyn.sk/produkt/maison-francis-kurkdjian-baccarat-rouge-540/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "warm"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "deep-dive",
+              "hard-cash",
+              "harmony"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "pink-desire",
+              "mystery",
+              "forbidden-cherries"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "noble-wood",
+              "desert-storm",
+              "sweet-cig",
+              "moulin-rouge"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "parfumeur": {
+      "formulaCount": 12,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "etoile"
+          },
+          "id": "etoile",
+          "url": "https://www.parfemy-parfumeur.cz/etoile--fragonard--pravy-parfem--60-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "bergamote-jasmin"
+          },
+          "id": "bergamote-jasmin",
+          "url": "https://www.parfemy-parfumeur.cz/bergamote-jasmin-marcus-spurway--parfemova-voda--100-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "etincelle-rose"
+          },
+          "id": "etincelle-rose",
+          "url": "https://www.parfemy-parfumeur.cz/etincelle-de-rose--marcus-spurway--parfem--50-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "diamant"
+          },
+          "id": "diamant",
+          "url": "https://www.parfemy-parfumeur.cz/pravy-parfem-diamant--60-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "feminissime"
+          },
+          "id": "feminissime",
+          "url": "https://www.parfemy-parfumeur.cz/feminissime--galimard--damsky-parfem--100-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "musc-divin"
+          },
+          "id": "musc-divin",
+          "url": "https://www.parfemy-parfumeur.cz/musc-divin-marcus-spurway--parfem--50-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "cantabelle"
+          },
+          "id": "cantabelle",
+          "url": "https://www.parfemy-parfumeur.cz/cantabelle--galimard--damska-parfemova-voda--100-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "belle-cherie"
+          },
+          "id": "belle-cherie",
+          "url": "https://www.parfemy-parfumeur.cz/pravy-parfem-belle-cherie-60-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "amande-noire"
+          },
+          "id": "amande-noire",
+          "url": "https://www.parfemy-parfumeur.cz/amande-noire--marcus-spurway--parfem--50-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "canaica"
+          },
+          "id": "canaica",
+          "url": "https://www.parfemy-parfumeur.cz/canaica-galimard-damsky-parfem-100-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "sensuel-safran"
+          },
+          "id": "sensuel-safran",
+          "url": "https://www.parfemy-parfumeur.cz/collection-privee-sensuel-safran--galimard--unisex-parfem--100-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "gelosia"
+          },
+          "id": "gelosia",
+          "url": "https://www.parfemy-parfumeur.cz/gelosia--paolo-gigli-firenze--italie--unisex-parfemovy-extrakt--30-ml/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "warm"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "etoile",
+              "bergamote-jasmin",
+              "etincelle-rose",
+              "diamant"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "feminissime",
+              "musc-divin",
+              "cantabelle",
+              "belle-cherie"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "amande-noire",
+              "canaica",
+              "sensuel-safran",
+              "gelosia"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "beviro": {
+      "formulaCount": 7,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "metropolitan"
+          },
+          "id": "metropolitan",
+          "url": "https://www.beviro.cz/metropolitan?varianta=61"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "sophisticated"
+          },
+          "id": "sophisticated",
+          "url": "https://www.beviro.cz/sophisticated?varianta=55"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "sevillian-villain"
+          },
+          "id": "sevillian-villain",
+          "url": "https://www.beviro.cz/sevillian-villain?varianta=121"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "forest",
+            "fragranceProfile": "sumava"
+          },
+          "id": "sumava",
+          "url": "https://www.beviro.cz/sumava?varianta=109"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "forest",
+            "fragranceProfile": "vltava"
+          },
+          "id": "vltava",
+          "url": "https://www.beviro.cz/vltava?varianta=259"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice",
+            "fragranceProfile": "bohemian-spirit"
+          },
+          "id": "bohemian-spirit",
+          "url": "https://www.beviro.cz/bohemian-spirit?varianta=58"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice",
+            "fragranceProfile": "1918"
+          },
+          "id": "1918",
+          "url": "https://www.beviro.cz/1918?varianta=64"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "forest",
+              "spice"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "metropolitan",
+              "sophisticated",
+              "sevillian-villain"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "forest"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "sumava",
+              "vltava"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "bohemian-spirit",
+              "1918"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "spacefluid": {
+      "formulaCount": 5,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "leather",
+            "fragranceProfile": "narcis-nocturne"
+          },
+          "id": "narcis-nocturne",
+          "url": "https://www.spacefluid.com/product-page/narcis-nocturne-plain-bottle-design"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "leather",
+            "fragranceProfile": "moon-coat"
+          },
+          "id": "moon-coat",
+          "url": "https://www.spacefluid.com/product-page/moon-coat"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "leather",
+            "fragranceProfile": "x-ray"
+          },
+          "id": "x-ray",
+          "url": "https://www.spacefluid.com/product-page/x-ray"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "whispering-fields"
+          },
+          "id": "whispering-fields",
+          "url": "https://www.spacefluid.com/product-page/parf%C3%A9m-na-p%C5%99%C3%A1n%C3%AD"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "lovely-problem"
+          },
+          "id": "lovely-problem",
+          "url": "https://www.spacefluid.com/product-page/lovely-problem"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "leather",
+              "flowers"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "leather"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "narcis-nocturne",
+              "moon-coat",
+              "x-ray"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "whispering-fields",
+              "lovely-problem"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    },
+    "vonya": {
+      "formulaCount": 12,
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "mint-ocean"
+          },
+          "id": "mint-ocean",
+          "url": "https://www.vonya.sk/yodeyma-mint-ocean/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "dorian"
+          },
+          "id": "dorian",
+          "url": "https://www.vonya.sk/yodeyma-dorian/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "caribbean"
+          },
+          "id": "caribbean",
+          "url": "https://www.vonya.sk/yodeyma-caribbean/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "blue"
+          },
+          "id": "blue",
+          "url": "https://www.vonya.sk/yodeyma-blue/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "tayda"
+          },
+          "id": "tayda",
+          "url": "https://www.vonya.sk/yodeyma-tayda/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "cheante"
+          },
+          "id": "cheante",
+          "url": "https://www.vonya.sk/yodeyma-cheante/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "lido"
+          },
+          "id": "lido",
+          "url": "https://www.vonya.sk/yodeyma-lido/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "white-summer"
+          },
+          "id": "white-summer",
+          "url": "https://www.vonya.sk/yodeyma-white-summer/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "nya"
+          },
+          "id": "nya",
+          "url": "https://www.vonya.sk/yodeyma-nya/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "black-elixir"
+          },
+          "id": "black-elixir",
+          "url": "https://www.vonya.sk/yodeyma-black-elixir/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "ambrax"
+          },
+          "id": "ambrax",
+          "url": "https://www.vonya.sk/yodeyma-ambrax/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "silk-elixir"
+          },
+          "id": "silk-elixir",
+          "url": "https://www.vonya.sk/yodeyma-silk-elixir/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "warm"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "mint-ocean",
+              "dorian",
+              "caribbean",
+              "blue"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "tayda",
+              "cheante",
+              "lido",
+              "white-summer"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "nya",
+              "black-elixir",
+              "ambrax",
+              "silk-elixir"
+            ]
+          }
+        }
+      ],
+      "status": "PASS"
+    }
+  },
+  "existingRegistryPreserved": 17
+}

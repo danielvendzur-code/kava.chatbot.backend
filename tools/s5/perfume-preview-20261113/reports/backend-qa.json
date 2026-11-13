@@ -1,0 +1,171 @@
+{
+  "checkedAt": "2026-11-13T12:10:42.259Z",
+  "scope": "Real backend answer and full data import, injected empty AI stub; no paid calls",
+  "rows": [
+    {
+      "slug": "perfumeries1907",
+      "query": "Citrusy a levanduľa",
+      "ids": [
+        "conduit"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "perfumeries1907",
+      "query": "Tuberóza a maté",
+      "ids": [
+        "aldebaran"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "perfumeries1907",
+      "query": "Rum a kandizovaný pomaranč",
+      "ids": [
+        "ali-baba"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "veelyn",
+      "query": "Citrusy a mandarínka",
+      "ids": [
+        "deep-dive"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "veelyn",
+      "query": "Ruža a litchi",
+      "ids": [
+        "pink-desire"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "veelyn",
+      "query": "Oud a kardamóm",
+      "ids": [
+        "noble-wood"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "parfumeur",
+      "query": "Citrusy a zázvor",
+      "ids": [
+        "etoile"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "parfumeur",
+      "query": "Růže a grapefruit",
+      "ids": [
+        "etincelle-rose"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "parfumeur",
+      "query": "Šafrán a santal",
+      "ids": [
+        "sensuel-safran"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "beviro",
+      "query": "Jehličí a kouř",
+      "ids": [
+        "sumava"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "beviro",
+      "query": "Grapefruit a šalvěj",
+      "ids": [
+        "sevillian-villain"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "beviro",
+      "query": "Rozmarýn a mandle",
+      "ids": [
+        "bohemian-spirit"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "spacefluid",
+      "query": "Narcis a tabák",
+      "ids": [
+        "narcis-nocturne"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "spacefluid",
+      "query": "Kardamom a rum",
+      "ids": [
+        "x-ray"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "spacefluid",
+      "query": "Ječmen a whisky",
+      "ids": [
+        "whispering-fields"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "vonya",
+      "query": "Mäta a citrón",
+      "ids": [
+        "mint-ocean"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "vonya",
+      "query": "Koňak a tonka",
+      "ids": [
+        "nya"
+      ],
+      "status": 200,
+      "mockOnly": true
+    },
+    {
+      "slug": "vonya",
+      "query": "Lipa a heliotrop",
+      "ids": [
+        "tayda"
+      ],
+      "status": 200,
+      "mockOnly": true
+    }
+  ],
+  "mockAiCalls": 18,
+  "existingMyskinoRegression": true,
+  "paidCalls": 0
+}

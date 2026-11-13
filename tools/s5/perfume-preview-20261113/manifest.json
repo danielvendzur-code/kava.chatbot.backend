@@ -1,0 +1,59 @@
+{
+  "createdAt": "2026-11-13T12:10:41.894178+00:00",
+  "owner": "PERFUME_WORKER_INTEGRATION",
+  "authorization": "Owner13Nov after six complete packages: give links/screenshots; may integrate; selected isolated Preview branch.",
+  "sourceCheckpoint": "fcb2567e036e8522b4348e0024cc48f1a67d881c",
+  "canonicalMainPreserved": "de34f7759118e20d3a476f0fe1537ddb02fd161f",
+  "branch": "codex/s5-perfume-preview-20261113",
+  "base": "fcb2567e036e8522b4348e0024cc48f1a67d881c",
+  "companies": [
+    {
+      "slug": "perfumeries1907",
+      "primaryCount": 12,
+      "sourceStatus": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "status": "INTEGRATED_QA_PENDING"
+    },
+    {
+      "slug": "veelyn",
+      "primaryCount": 10,
+      "sourceStatus": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "status": "INTEGRATED_QA_PENDING"
+    },
+    {
+      "slug": "parfumeur",
+      "primaryCount": 12,
+      "sourceStatus": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "status": "INTEGRATED_QA_PENDING"
+    },
+    {
+      "slug": "beviro",
+      "primaryCount": 7,
+      "sourceStatus": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "status": "INTEGRATED_QA_PENDING"
+    },
+    {
+      "slug": "spacefluid",
+      "primaryCount": 5,
+      "sourceStatus": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "status": "INTEGRATED_QA_PENDING"
+    },
+    {
+      "slug": "vonya",
+      "primaryCount": 12,
+      "sourceStatus": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+      "status": "INTEGRATED_QA_PENDING"
+    }
+  ],
+  "primaryRecords": 58,
+  "coreSha256": "0d61a957b148db4b9efa3326d162121e5d53c9adc0e05a2702ca273da0ad88e9",
+  "commonRuntimeChanges": [
+    "s5.html one extra registry include",
+    "n447/s5/reply.js six exact source-ID rule entries",
+    "lib/cosmetics-chat.js six imports/BRANDS entries"
+  ],
+  "coreExtrasBootProviderUnchanged": true,
+  "paidCalls": 0,
+  "target": "Preview",
+  "production": "NOT_DEPLOYED",
+  "mailActions": 0
+}

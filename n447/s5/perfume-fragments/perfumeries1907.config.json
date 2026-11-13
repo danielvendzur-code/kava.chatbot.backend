@@ -4,7 +4,7 @@
   "claimCommit": "04c020d43c8d191ff35945fd455f5892d7baff52",
   "series": "s5",
   "segment": "fragrance",
-  "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+  "status": "INTEGRATED_LOCAL_AND_PREVIEW_QA_PENDING",
   "catalogue": "/catalogues/perfumeries1907.js",
   "requiredEngineContract": "s5-fragrance-direction-profile-v1",
   "quickChips": [
@@ -45,7 +45,7 @@
     "reason": "No official compatible additional pack/body product established; no fabricated cross-sell."
   },
   "budgetQuestion": false,
-  "enableRuntime": false,
+  "enableRuntime": true,
   "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
   "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
   "registryObject": {
@@ -276,6 +276,8 @@
         "cherry-ink": "b683",
         "b683": "baklava"
       }
-    }
-  }
+    },
+    "companyCss": "/n447/s5/brands/perfumeries1907.css"
+  },
+  "integrationBase": "fcb2567e036e8522b4348e0024cc48f1a67d881c"
 }

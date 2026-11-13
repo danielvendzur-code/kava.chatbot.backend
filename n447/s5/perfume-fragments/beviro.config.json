@@ -4,7 +4,7 @@
   "claimCommit": "5bf2d3c7b638bc25ebf2396ff7976317ca617b60",
   "series": "s5",
   "segment": "fragrance",
-  "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+  "status": "INTEGRATED_LOCAL_AND_PREVIEW_QA_PENDING",
   "catalogue": "/catalogues/beviro.js",
   "requiredEngineContract": "s5-fragrance-direction-profile-v1",
   "quickChips": [
@@ -45,7 +45,7 @@
     "reason": "No fully verified and platform-supported body supplement configured."
   },
   "budgetQuestion": false,
-  "enableRuntime": false,
+  "enableRuntime": true,
   "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
   "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
   "registryObject": {
@@ -226,6 +226,8 @@
         "bohemian-spirit": "1918",
         "1918": "bohemian-spirit"
       }
-    }
-  }
+    },
+    "companyCss": "/n447/s5/brands/beviro.css"
+  },
+  "integrationBase": "fcb2567e036e8522b4348e0024cc48f1a67d881c"
 }
