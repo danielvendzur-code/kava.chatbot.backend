@@ -1,0 +1,715 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.beviro = {
+ "brand": "Beviro",
+ "domain": "beviro.cz",
+ "operator": {
+  "name": "P2D2 s.r.o.",
+  "ico": "06801781",
+  "country": "CZ"
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "cs",
+ "country": "CZ",
+ "currency": "CZK",
+ "status": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
+ "products": [
+  {
+   "id": "metropolitan",
+   "name": "Metropolitan",
+   "url": "https://www.beviro.cz/metropolitan?varianta=61",
+   "priceAmount": 1290.0,
+   "price": "1 290 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Toaletní voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Mandarinka, levandule a vetiver.",
+   "reason": "Mandarinka, levandule a vetiver.",
+   "photo": "/assets/s5/beviro/metropolitan.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.beviro.cz/metropolitan?varianta=61",
+    "verifiedAt": "2026-11-13T09:38:02.321406+00:00",
+    "sourceSha256": "e85d7ef0b5a5ecf2913708f765b0ccce3fe4ddca1d8f7ecee4493054f05bb0b4",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "Skladem",
+     "structuredAvailability": "https://schema.org/InStock",
+     "scope": "Exact schema offer and checked product radio agree; no physical quantity or delivery guarantee."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 1290.0,
+     "currency": "CZK",
+     "vatEvidence": "Terms II.1 explicitly prices include VAT and related fees, delivery excluded.",
+     "vatSource": "https://www.beviro.cz/Stranky/Obchodni-podminky"
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "title": "Metropolitan",
+     "selectedVariant": "50 ml",
+     "variantId": "61"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Mandarinka, levandule a vetiver",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "metropolitan"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.beviro.cz/metropolitan?varianta=61",
+     "sourceText": "Hlava: mandarinka, bergamot, pepř; Srdce: levandule, geránium, jasmín; Základ: ambra, pačule, vetiver",
+     "navigationLabel": "Mandarinka, levandule a vetiver",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://i00.eu/img/633/1024x1024a/3s7bz0ph/1966.jpg",
+    "photoEvidence": {
+     "url": "https://i00.eu/img/633/1024x1024a/3s7bz0ph/1966.jpg",
+     "originalSha256": "dd01ef8853a2934f63824c71cef4c787987ff25859e9944877e0dfdd4e476fce",
+     "localSha256": "07c04102e092a645ef696c60bcdcd17bdf2f127a8d9aac9dc243f2df53e7118a",
+     "width": 1024,
+     "height": 1024,
+     "processing": "Lossless format conversion only; no invented props/retouch/upscale/crop",
+     "pack": "50 ml"
+    },
+    "fragrance": {
+     "notes": [
+      "mandarinka",
+      "bergamot",
+      "pepř",
+      "levandule",
+      "geránium",
+      "jasmín",
+      "ambra",
+      "pačule",
+      "vetiver"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Toaletní voda",
+     "notesEvidence": {
+      "url": "https://www.beviro.cz/metropolitan?varianta=61",
+      "sourceText": "Hlava: mandarinka, bergamot, pepř; Srdce: levandule, geránium, jasmín; Základ: ambra, pačule, vetiver",
+      "literalSourceText": "Skladba vůně Hlava : mandarinka, bergamot, pepř Srdce : levandule, geránium, jasmín Základ : ambra, pačule, vetiver",
+      "displayLanguage": "cs",
+      "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+     "No merchant promotions, reward tickets, bundle discounts or basket integration."
+    ]
+   }
+  },
+  {
+   "id": "sophisticated",
+   "name": "Sophisticated",
+   "url": "https://www.beviro.cz/sophisticated?varianta=55",
+   "priceAmount": 1290.0,
+   "price": "1 290 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Toaletní voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Bergamot, verbena a cedr.",
+   "reason": "Bergamot, verbena a cedr.",
+   "photo": "/assets/s5/beviro/sophisticated.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.beviro.cz/sophisticated?varianta=55",
+    "verifiedAt": "2026-11-13T09:38:03.297124+00:00",
+    "sourceSha256": "d8de1742a2a203a0caa9c9b7fcf3a86933d914fbb3f4b9dcd950c36ee26a8665",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "Skladem",
+     "structuredAvailability": "https://schema.org/InStock",
+     "scope": "Exact schema offer and checked product radio agree; no physical quantity or delivery guarantee."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 1290.0,
+     "currency": "CZK",
+     "vatEvidence": "Terms II.1 explicitly prices include VAT and related fees, delivery excluded.",
+     "vatSource": "https://www.beviro.cz/Stranky/Obchodni-podminky"
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "title": "Sophisticated",
+     "selectedVariant": "50 ml",
+     "variantId": "55"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Bergamot, verbena a cedr",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "sophisticated"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.beviro.cz/sophisticated?varianta=55",
+     "sourceText": "Hlava: bergamot, citrusové listí, verbena; Srdce: koriandr, cedrové jehličí; Základ: cedr, pižmo, ambra",
+     "navigationLabel": "Bergamot, verbena a cedr",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://i00.eu/img/633/1024x1024a/9tmyq7vy/1970.jpg",
+    "photoEvidence": {
+     "url": "https://i00.eu/img/633/1024x1024a/9tmyq7vy/1970.jpg",
+     "originalSha256": "b2609355e7dfa3254750752958c89ef5c117808657aa80fbf85c28ce3f40b9aa",
+     "localSha256": "bdda311543cebab9c6ece1d623c4b9d3546b7e0b9a8824661425b5780705c904",
+     "width": 1024,
+     "height": 1024,
+     "processing": "Lossless format conversion only; no invented props/retouch/upscale/crop",
+     "pack": "50 ml"
+    },
+    "fragrance": {
+     "notes": [
+      "bergamot",
+      "citrusové listí",
+      "verbena",
+      "koriandr",
+      "cedrové jehličí",
+      "cedr",
+      "pižmo",
+      "ambra"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Toaletní voda",
+     "notesEvidence": {
+      "url": "https://www.beviro.cz/sophisticated?varianta=55",
+      "sourceText": "Hlava: bergamot, citrusové listí, verbena; Srdce: koriandr, cedrové jehličí; Základ: cedr, pižmo, ambra",
+      "literalSourceText": "Skladba vůně Hlava : bergamot, citrusové listí, verbena Srdce : koriandr, cedrové jehličí Základ : cedr, pižmo, ambra",
+      "displayLanguage": "cs",
+      "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+     "No merchant promotions, reward tickets, bundle discounts or basket integration."
+    ]
+   }
+  },
+  {
+   "id": "sevillian-villain",
+   "name": "Sevillian Villain",
+   "url": "https://www.beviro.cz/sevillian-villain?varianta=121",
+   "priceAmount": 1290.0,
+   "price": "1 290 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Toaletní voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Grapefruit, šalvěj a pačule.",
+   "reason": "Grapefruit, šalvěj a pačule.",
+   "photo": "/assets/s5/beviro/sevillian-villain.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.beviro.cz/sevillian-villain?varianta=121",
+    "verifiedAt": "2026-11-13T09:38:04.036466+00:00",
+    "sourceSha256": "d3260deee402c4c21e6d2f4f85ae0f1bbfc3d645e37e6852cd9e7d94ef1f699f",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "Skladem",
+     "structuredAvailability": "https://schema.org/InStock",
+     "scope": "Exact schema offer and checked product radio agree; no physical quantity or delivery guarantee."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 1290.0,
+     "currency": "CZK",
+     "vatEvidence": "Terms II.1 explicitly prices include VAT and related fees, delivery excluded.",
+     "vatSource": "https://www.beviro.cz/Stranky/Obchodni-podminky"
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "title": "Sevillian Villain",
+     "selectedVariant": "50 ml",
+     "variantId": "121"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Grapefruit, šalvěj a pačule",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "sevillian-villain"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.beviro.cz/sevillian-villain?varianta=121",
+     "sourceText": "Hlava: pomeranč, citron, grapefruit, pepř, bergamot; Srdce: levandule, geránie, muškátová šalvěj, růže; Základ: cedr, pačule, vetiver, ambra",
+     "navigationLabel": "Grapefruit, šalvěj a pačule",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://i00.eu/img/633/1024x1024a/9slsv0za/2555.jpg",
+    "photoEvidence": {
+     "url": "https://i00.eu/img/633/1024x1024a/9slsv0za/2555.jpg",
+     "originalSha256": "15ef74b00d4011fcdaeee1c5d60de45d2faee261bfa33b8ac572f00d74aded92",
+     "localSha256": "7a3490f9efeb7c48ed89541b85d334263e030636cbf6651abf611286fdee1e22",
+     "width": 1024,
+     "height": 1024,
+     "processing": "Lossless format conversion only; no invented props/retouch/upscale/crop",
+     "pack": "50 ml"
+    },
+    "fragrance": {
+     "notes": [
+      "pomeranč",
+      "citron",
+      "grapefruit",
+      "pepř",
+      "bergamot",
+      "levandule",
+      "geránie",
+      "muškátová šalvěj",
+      "růže",
+      "cedr",
+      "pačule",
+      "vetiver",
+      "ambra"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Toaletní voda",
+     "notesEvidence": {
+      "url": "https://www.beviro.cz/sevillian-villain?varianta=121",
+      "sourceText": "Hlava: pomeranč, citron, grapefruit, pepř, bergamot; Srdce: levandule, geránie, muškátová šalvěj, růže; Základ: cedr, pačule, vetiver, ambra",
+      "literalSourceText": "Skladba vůně Hlava : pomeranč, citron, grapefruit, pepř, bergamot Srdce : levandule, geránie, muškátová šalvěj, růže Základ : cedr, pačule, vetiver, ambra",
+      "displayLanguage": "cs",
+      "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+     "No merchant promotions, reward tickets, bundle discounts or basket integration."
+    ]
+   }
+  },
+  {
+   "id": "sumava",
+   "name": "Šumava",
+   "url": "https://www.beviro.cz/sumava?varianta=109",
+   "priceAmount": 1790.0,
+   "price": "1 790 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfémová voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Jehličí, pryskyřice a kouř.",
+   "reason": "Jehličí, pryskyřice a kouř.",
+   "photo": "/assets/s5/beviro/sumava.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.beviro.cz/sumava?varianta=109",
+    "verifiedAt": "2026-11-13T09:38:02.227605+00:00",
+    "sourceSha256": "261098a5c744950701b2a49e909f513ce9c4d9930b111bbf942ecb281b4d3342",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "Skladem",
+     "structuredAvailability": "https://schema.org/InStock",
+     "scope": "Exact schema offer and checked product radio agree; no physical quantity or delivery guarantee."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 1790.0,
+     "currency": "CZK",
+     "vatEvidence": "Terms II.1 explicitly prices include VAT and related fees, delivery excluded.",
+     "vatSource": "https://www.beviro.cz/Stranky/Obchodni-podminky"
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "title": "Šumava",
+     "selectedVariant": "50 ml",
+     "variantId": "109"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Jehličí, pryskyřice a kouř",
+    "selectionTraits": {
+     "fragranceDirection": "forest",
+     "fragranceProfile": "sumava"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.beviro.cz/sumava?varianta=109",
+     "sourceText": "Hlava: svěží bylinky, ranní slunce prosvítající mlhou, vzdušné tóny; Srdce: les s vůní čerstvého jehličí, pokácené dřevo, pryskyřice; Základ: mech, kouř, spadané listí, mošusy",
+     "navigationLabel": "Jehličí, pryskyřice a kouř",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://i00.eu/img/633/1024x1024a/bd9nwr87/2371.jpg",
+    "photoEvidence": {
+     "url": "https://i00.eu/img/633/1024x1024a/bd9nwr87/2371.jpg",
+     "originalSha256": "cee110ccb76f63fa0129eb6023ca9214a14770886b0d2a20b4a99910d266df9c",
+     "localSha256": "b8bfab42605fe6bae87c2d04e8ed99d0aeb59f5fc71001b9e1a47d7b0cce77d0",
+     "width": 1024,
+     "height": 1024,
+     "processing": "Lossless format conversion only; no invented props/retouch/upscale/crop",
+     "pack": "50 ml"
+    },
+    "fragrance": {
+     "notes": [
+      "svěží bylinky",
+      "ranní slunce prosvítající mlhou",
+      "vzdušné tóny",
+      "les s vůní čerstvého jehličí",
+      "pokácené dřevo",
+      "pryskyřice",
+      "mech",
+      "kouř",
+      "spadané listí",
+      "mošusy"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfémová voda",
+     "notesEvidence": {
+      "url": "https://www.beviro.cz/sumava?varianta=109",
+      "sourceText": "Hlava: svěží bylinky, ranní slunce prosvítající mlhou, vzdušné tóny; Srdce: les s vůní čerstvého jehličí, pokácené dřevo, pryskyřice; Základ: mech, kouř, spadané listí, mošusy",
+      "literalSourceText": "Skladba vůně Hlava : svěží bylinky, ranní slunce prosvítající mlhou, vzdušné tóny Srdce: les s vůní čerstvého jehličí, pokácené dřevo, pryskyřice Základ: mech, kouř, spadané listí, mošusy",
+      "displayLanguage": "cs",
+      "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+     "No merchant promotions, reward tickets, bundle discounts or basket integration."
+    ]
+   }
+  },
+  {
+   "id": "vltava",
+   "name": "Vltava",
+   "url": "https://www.beviro.cz/vltava?varianta=259",
+   "priceAmount": 2490.0,
+   "price": "2 490 Kč",
+   "currency": "CZK",
+   "volume": "50 ml limited",
+   "category": "fragrance",
+   "kind": "Parfémová voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Konvalinka, fialka a mech.",
+   "reason": "Konvalinka, fialka a mech.",
+   "photo": "/assets/s5/beviro/vltava.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.beviro.cz/vltava?varianta=259",
+    "verifiedAt": "2026-11-13T09:38:01.920023+00:00",
+    "sourceSha256": "746ddb2e5ca644775e609c4f36cfb97755c154de8f7e5abc44bd3cd9cf40530a",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "Skladem",
+     "structuredAvailability": "https://schema.org/InStock",
+     "scope": "Exact schema offer and checked product radio agree; no physical quantity or delivery guarantee."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 2490.0,
+     "currency": "CZK",
+     "vatEvidence": "Terms II.1 explicitly prices include VAT and related fees, delivery excluded.",
+     "vatSource": "https://www.beviro.cz/Stranky/Obchodni-podminky"
+    },
+    "packEvidence": {
+     "pack": "50 ml limited",
+     "title": "Vltava",
+     "selectedVariant": "50 ml limited",
+     "variantId": "259"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Konvalinka, fialka a mech",
+    "selectionTraits": {
+     "fragranceDirection": "forest",
+     "fragranceProfile": "vltava"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.beviro.cz/vltava?varianta=259",
+     "sourceText": "Hlava: zelené listy, růžové dřevo, kardamom, pepř, piment, bergamot; Srdce: prvky vody a vzduchu, konvalinka, jasmín, fialka, hřebíček; Základ: cedr, tonka, mošus, ambra, santal, mech, šáchor, vetiver",
+     "navigationLabel": "Konvalinka, fialka a mech",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://i00.eu/img/633/1024x1024a/blpcjavs/4880.jpg",
+    "photoEvidence": {
+     "url": "https://i00.eu/img/633/1024x1024a/blpcjavs/4880.jpg",
+     "originalSha256": "ba73b5e85dea5d46082c68e623e4902830ac06e9c8fdc4c8318f331252395231",
+     "localSha256": "f9892dbcbf1e6906b6f03427d20712161562fb8ff963a8ecf80c3bbd808ef956",
+     "width": 1024,
+     "height": 1024,
+     "processing": "Lossless format conversion only; no invented props/retouch/upscale/crop",
+     "pack": "50 ml limited"
+    },
+    "fragrance": {
+     "notes": [
+      "zelené listy",
+      "růžové dřevo",
+      "kardamom",
+      "pepř",
+      "piment",
+      "bergamot",
+      "prvky vody a vzduchu",
+      "konvalinka",
+      "jasmín",
+      "fialka",
+      "hřebíček",
+      "cedr",
+      "tonka",
+      "mošus",
+      "ambra",
+      "santal",
+      "mech",
+      "šáchor",
+      "vetiver"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfémová voda",
+     "notesEvidence": {
+      "url": "https://www.beviro.cz/vltava?varianta=259",
+      "sourceText": "Hlava: zelené listy, růžové dřevo, kardamom, pepř, piment, bergamot; Srdce: prvky vody a vzduchu, konvalinka, jasmín, fialka, hřebíček; Základ: cedr, tonka, mošus, ambra, santal, mech, šáchor, vetiver",
+      "literalSourceText": "Skladba vůně Hlava: zelené listy, růžové dřevo, kardamom, pepř, piment, bergamot Srdce: prvky vody a vzduchu, konvalinka, jasmín, fialka, hřebíček Základ: cedr, tonka, mošus, ambra, santal, mech, šáchor, vetiver",
+      "displayLanguage": "cs",
+      "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+     "No merchant promotions, reward tickets, bundle discounts or basket integration."
+    ]
+   }
+  },
+  {
+   "id": "bohemian-spirit",
+   "name": "Bohemian Spirit",
+   "url": "https://www.beviro.cz/bohemian-spirit?varianta=58",
+   "priceAmount": 1290.0,
+   "price": "1 290 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Toaletní voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Rozmarýn, perník a mandle.",
+   "reason": "Rozmarýn, perník a mandle.",
+   "photo": "/assets/s5/beviro/bohemian-spirit.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.beviro.cz/bohemian-spirit?varianta=58",
+    "verifiedAt": "2026-11-13T09:38:03.091453+00:00",
+    "sourceSha256": "5e8bec53ba44a26a6a046d6133c3dc955e9cecd5c5ec36b7a5ad803918bfb002",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "Skladem",
+     "structuredAvailability": "https://schema.org/InStock",
+     "scope": "Exact schema offer and checked product radio agree; no physical quantity or delivery guarantee."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 1290.0,
+     "currency": "CZK",
+     "vatEvidence": "Terms II.1 explicitly prices include VAT and related fees, delivery excluded.",
+     "vatSource": "https://www.beviro.cz/Stranky/Obchodni-podminky"
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "title": "Bohemian Spirit",
+     "selectedVariant": "50 ml",
+     "variantId": "58"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Rozmarýn, perník a mandle",
+    "selectionTraits": {
+     "fragranceDirection": "spice",
+     "fragranceProfile": "bohemian-spirit"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.beviro.cz/bohemian-spirit?varianta=58",
+     "sourceText": "Hlava: citrusy, rozmarýn, perník; Srdce: mandle a tonkové boby; Základ: kůže, pačuli, cedr",
+     "navigationLabel": "Rozmarýn, perník a mandle",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://i00.eu/img/633/1024x1024a/520lc6mk/1974.jpg",
+    "photoEvidence": {
+     "url": "https://i00.eu/img/633/1024x1024a/520lc6mk/1974.jpg",
+     "originalSha256": "f766f755cacd0348a782faf7686aba2d4dc9cab38062518af2bee955c9518862",
+     "localSha256": "e0d38618971c1305e75896c27400dee229d2c05336b6918f1d079c9e220186e3",
+     "width": 1024,
+     "height": 1024,
+     "processing": "Lossless format conversion only; no invented props/retouch/upscale/crop",
+     "pack": "50 ml"
+    },
+    "fragrance": {
+     "notes": [
+      "citrusy",
+      "rozmarýn",
+      "perník",
+      "mandle a tonkové boby",
+      "kůže",
+      "pačuli",
+      "cedr"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Toaletní voda",
+     "notesEvidence": {
+      "url": "https://www.beviro.cz/bohemian-spirit?varianta=58",
+      "sourceText": "Hlava: citrusy, rozmarýn, perník; Srdce: mandle a tonkové boby; Základ: kůže, pačuli, cedr",
+      "literalSourceText": "Skladba vůně Hlava : citrusy, rozmarýn, perník Srdce : mandle a tonkové boby Základ : kůže, pačuli, cedr",
+      "displayLanguage": "cs",
+      "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+     "No merchant promotions, reward tickets, bundle discounts or basket integration."
+    ]
+   }
+  },
+  {
+   "id": "1918",
+   "name": "1918",
+   "url": "https://www.beviro.cz/1918?varianta=64",
+   "priceAmount": 1290.0,
+   "price": "1 290 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Toaletní voda",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Tymián, levandule a vanilka.",
+   "reason": "Tymián, levandule a vanilka.",
+   "photo": "/assets/s5/beviro/1918.webp",
+   "source": {
+    "series": "s5",
+    "url": "https://www.beviro.cz/1918?varianta=64",
+    "verifiedAt": "2026-11-13T09:38:04.227745+00:00",
+    "sourceSha256": "de8324b21712607a35927c355985b83924e8e4bb7e5f6b017fc4cf48e3c6713c",
+    "stock": "InStock",
+    "stockEvidence": {
+     "visible": "Skladem",
+     "structuredAvailability": "https://schema.org/InStock",
+     "scope": "Exact schema offer and checked product radio agree; no physical quantity or delivery guarantee."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 1290.0,
+     "currency": "CZK",
+     "vatEvidence": "Terms II.1 explicitly prices include VAT and related fees, delivery excluded.",
+     "vatSource": "https://www.beviro.cz/Stranky/Obchodni-podminky"
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "title": "1918",
+     "selectedVariant": "50 ml",
+     "variantId": "64"
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "scent": "Tymián, levandule a vanilka",
+    "selectionTraits": {
+     "fragranceDirection": "spice",
+     "fragranceProfile": "1918"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.beviro.cz/1918?varianta=64",
+     "sourceText": "Hlava: bergamot, tymián; Srdce: geranie, levandule, muškátová šalvěj; Základ: vanilka, cedrové dřevo, vetiver, pačule, ambra, pižmo",
+     "navigationLabel": "Tymián, levandule a vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    },
+    "photoUrl": "https://i00.eu/img/633/1024x1024a/22szooob/1968.jpg",
+    "photoEvidence": {
+     "url": "https://i00.eu/img/633/1024x1024a/22szooob/1968.jpg",
+     "originalSha256": "f66cdc4baaac69acd34076486eada3f93740be577c4c46e54fc76f84d467bcd6",
+     "localSha256": "a31b84c3ac0f540d73b919d9cae8f6b18ab31c80ce3e49cefa6ca9810a802d79",
+     "width": 1024,
+     "height": 1024,
+     "processing": "Lossless format conversion only; no invented props/retouch/upscale/crop",
+     "pack": "50 ml"
+    },
+    "fragrance": {
+     "notes": [
+      "bergamot",
+      "tymián",
+      "geranie",
+      "levandule",
+      "muškátová šalvěj",
+      "vanilka",
+      "cedrové dřevo",
+      "vetiver",
+      "pačule",
+      "ambra",
+      "pižmo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Toaletní voda",
+     "notesEvidence": {
+      "url": "https://www.beviro.cz/1918?varianta=64",
+      "sourceText": "Hlava: bergamot, tymián; Srdce: geranie, levandule, muškátová šalvěj; Základ: vanilka, cedrové dřevo, vetiver, pačule, ambra, pižmo",
+      "literalSourceText": "Skladba vůně Hlava: bergamot, tymián Srdce: geranie, levandule, muškátová šalvěj Základ: vanilka, cedrové dřevo, vetiver, pačule, ambra, pižmo",
+      "displayLanguage": "cs",
+      "scope": "Literal note pyramid, poetic accord descriptions are not claims of physical ingredients."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No skincare/beard-growth/health/lasting/sales guarantees imported.",
+     "No merchant promotions, reward tickets, bundle discounts or basket integration."
+    ]
+   }
+  }
+ ],
+ "revenue": {
+  "exactLatest": "UNKNOWN",
+  "secondaryTurnoverBand": [
+   10000000,
+   30000000
+  ],
+  "currency": "CZK",
+  "year": 2024,
+  "source": "https://www.chytryrejstrik.cz/ico-06801781/p2d2-s-r-o",
+  "qualification": "Secondary band attributed CSU2024, not exact/latest turnover. Fallback<=50million targeting range; PRICING_REVIEW, price unchanged."
+ },
+ "size": "UNKNOWN",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "Seven distinct formulas. Testers/colognes and 50ml limited Vltava are not extra formulas.",
+  "Vltava selected limited50ml variant259 is exact default2490CZK, not an unselected ordinary50ml quote.",
+  "Optional matching body products need explicit source/platform evidence support; none active."
+ ]
+};

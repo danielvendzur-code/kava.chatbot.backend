@@ -1,0 +1,72 @@
+{
+  "key": "fragranceDirection",
+  "question": "Které tóny chcete prozkoumat?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy, bylinky a květy",
+      "key": "fragranceProfile",
+      "question": "Která kombinace je vám bližší?",
+      "options": [
+        {
+          "value": "metropolitan",
+          "label": "Mandarinka, levandule a vetiver",
+          "productId": "metropolitan",
+          "sourceUrl": "https://www.beviro.cz/metropolitan?varianta=61"
+        },
+        {
+          "value": "sophisticated",
+          "label": "Bergamot, verbena a cedr",
+          "productId": "sophisticated",
+          "sourceUrl": "https://www.beviro.cz/sophisticated?varianta=55"
+        },
+        {
+          "value": "sevillian-villain",
+          "label": "Grapefruit, šalvěj a pačule",
+          "productId": "sevillian-villain",
+          "sourceUrl": "https://www.beviro.cz/sevillian-villain?varianta=121"
+        }
+      ]
+    },
+    {
+      "value": "forest",
+      "label": "Jehličí, mech a vodní tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace je vám bližší?",
+      "options": [
+        {
+          "value": "sumava",
+          "label": "Jehličí, pryskyřice a kouř",
+          "productId": "sumava",
+          "sourceUrl": "https://www.beviro.cz/sumava?varianta=109"
+        },
+        {
+          "value": "vltava",
+          "label": "Konvalinka, fialka a mech",
+          "productId": "vltava",
+          "sourceUrl": "https://www.beviro.cz/vltava?varianta=259"
+        }
+      ]
+    },
+    {
+      "value": "spice",
+      "label": "Koření, tonka a vanilka",
+      "key": "fragranceProfile",
+      "question": "Která kombinace je vám bližší?",
+      "options": [
+        {
+          "value": "bohemian-spirit",
+          "label": "Rozmarýn, perník a mandle",
+          "productId": "bohemian-spirit",
+          "sourceUrl": "https://www.beviro.cz/bohemian-spirit?varianta=58"
+        },
+        {
+          "value": "1918",
+          "label": "Tymián, levandule a vanilka",
+          "productId": "1918",
+          "sourceUrl": "https://www.beviro.cz/1918?varianta=64"
+        }
+      ]
+    }
+  ]
+}

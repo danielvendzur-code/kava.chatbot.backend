@@ -1,0 +1,216 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Beviro",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/beviro/logo.svg",
+      "header": "/assets/s5/beviro/logo.svg",
+      "avatar": "/assets/s5/beviro/avatar.webp"
+    },
+    "brand": {
+      "name": "Beviro",
+      "domain": "beviro.cz",
+      "website": "https://www.beviro.cz/",
+      "lang": "cs",
+      "fullName": "Beviro",
+      "url": "https://www.beviro.cz/",
+      "logo": "/assets/s5/beviro/logo.svg",
+      "mark": "/assets/s5/beviro/avatar.webp",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně Beviro podle doložených tónů a konkrétního balení.",
+      "quickChips": [
+        "Jehličí a kouř",
+        "Grapefruit a šalvěj",
+        "Rozmarýn a mandle",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#9c4400",
+        "accent": "#9c4400",
+        "soft": "#fff7ef",
+        "paper": "#ffffff",
+        "ink": "#25211d",
+        "line": "#edddce"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy, bylinky a květy",
+        "Vyberte podle zveřejněných tónů.",
+        "Citrusy, bylinky a květy",
+        ""
+      ],
+      "metropolitan": [
+        "Mandarinka, levandule a vetiver",
+        "Mandarinka, levandule a vetiver.",
+        "Mandarinka, levandule a vetiver",
+        "Mandarinka, levandule a vetiver."
+      ],
+      "sophisticated": [
+        "Bergamot, verbena a cedr",
+        "Bergamot, verbena a cedr.",
+        "Bergamot, verbena a cedr",
+        "Bergamot, verbena a cedr."
+      ],
+      "sevillian-villain": [
+        "Grapefruit, šalvěj a pačule",
+        "Grapefruit, šalvěj a pačule.",
+        "Grapefruit, šalvěj a pačule",
+        "Grapefruit, šalvěj a pačule."
+      ],
+      "forest": [
+        "Jehličí, mech a vodní tóny",
+        "Vyberte podle zveřejněných tónů.",
+        "Jehličí, mech a vodní tóny",
+        ""
+      ],
+      "sumava": [
+        "Jehličí, pryskyřice a kouř",
+        "Jehličí, pryskyřice a kouř.",
+        "Jehličí, pryskyřice a kouř",
+        "Jehličí, pryskyřice a kouř."
+      ],
+      "vltava": [
+        "Konvalinka, fialka a mech",
+        "Konvalinka, fialka a mech.",
+        "Konvalinka, fialka a mech",
+        "Konvalinka, fialka a mech."
+      ],
+      "spice": [
+        "Koření, tonka a vanilka",
+        "Vyberte podle zveřejněných tónů.",
+        "Koření, tonka a vanilka",
+        ""
+      ],
+      "bohemian-spirit": [
+        "Rozmarýn, perník a mandle",
+        "Rozmarýn, perník a mandle.",
+        "Rozmarýn, perník a mandle",
+        "Rozmarýn, perník a mandle."
+      ],
+      "1918": [
+        "Tymián, levandule a vanilka",
+        "Tymián, levandule a vanilka.",
+        "Tymián, levandule a vanilka",
+        "Tymián, levandule a vanilka."
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Které tóny chcete prozkoumat?",
+        "Vyberte podle zveřejněných tónů.",
+        "Tóny vůně"
+      ],
+      "fragranceProfile": [
+        "Která kombinace je vám bližší?",
+        "Vyberte jeden profil.",
+        "Tóny vůně"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/orange-slices.jpg"
+      ],
+      "metropolitan": [
+        "/assets/s3/scenes-k2/orange-slices.jpg"
+      ],
+      "sophisticated": [
+        "/assets/s5/beviro/sophisticated.webp"
+      ],
+      "sevillian-villain": [
+        "/assets/s5/beviro/sevillian-villain.webp"
+      ],
+      "forest": [
+        "/assets/s5/beviro/sumava.webp"
+      ],
+      "sumava": [
+        "/assets/s5/beviro/sumava.webp"
+      ],
+      "vltava": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "spice": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "bohemian-spirit": [
+        "/assets/s5/beviro/bohemian-spirit.webp"
+      ],
+      "1918": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "sumava",
+      "sevillian-villain"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní profil · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Poradce pro výběr vůně",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Najít vůni podle tónů",
+      "placeholder": "Zeptejte se na tóny nebo balení…",
+      "heading": "Pomozte zákazníkovi najít vůni podle jeho vkusu.",
+      "lead": "Citrusy, dřevité tóny i koření. Výběr podle zveřejněných tónů končí konkrétní vůní s fotografií, balením, cenou a odkazem.",
+      "includedChat": "Tóny sedmi vůní, přesná balení, ceny a porovnání.",
+      "includedAdvisor": "Kombinace doložených tónů — na konci jedna konkrétní vůně.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně Beviro podle doložených tónů a konkrétního balení.",
+      "teaserTitle": "Vyberte si vůni podle tónů",
+      "teaserNote": "Otevřít výběr vůně",
+      "teaserAria": "Otevřít výběr vůně",
+      "source": "perfume-demo-"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "metropolitan": "sophisticated",
+        "sophisticated": "sevillian-villain",
+        "sevillian-villain": "metropolitan",
+        "sumava": "vltava",
+        "vltava": "sumava",
+        "bohemian-spirit": "1918",
+        "1918": "bohemian-spirit"
+      }
+    }
+  },
+  "catalogueImport": "/catalogues/beviro.js",
+  "backendBrand": "beviro",
+  "offlineRules": [
+    {
+      "chip": "Jehličí a kouř",
+      "match": "jehlici.*kour",
+      "productIds": [
+        "sumava"
+      ]
+    },
+    {
+      "chip": "Grapefruit a šalvěj",
+      "match": "grapefruit.*salvej",
+      "productIds": [
+        "sevillian-villain"
+      ]
+    },
+    {
+      "chip": "Rozmarýn a mandle",
+      "match": "rozmaryn.*mandle",
+      "productIds": [
+        "bohemian-spirit"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequiredForPrimary": true,
+  "commonFilesModified": [],
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PRICING_REVIEW_SECONDARY_FALLBACK_TURNOVER",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}

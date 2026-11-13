@@ -1,0 +1,120 @@
+{
+  "commit": "42b47d93861d22ea8a143e120d8a6a3c102975a1",
+  "scope": "Reserved Beviro sources on unchanged core; local fixture only, not registered/live Preview",
+  "paidCalls": 0,
+  "coreUnchanged": true,
+  "companies": {
+    "beviro": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "metropolitan"
+          },
+          "id": "metropolitan",
+          "url": "https://www.beviro.cz/metropolitan?varianta=61"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "sophisticated"
+          },
+          "id": "sophisticated",
+          "url": "https://www.beviro.cz/sophisticated?varianta=55"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "sevillian-villain"
+          },
+          "id": "sevillian-villain",
+          "url": "https://www.beviro.cz/sevillian-villain?varianta=121"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "forest",
+            "fragranceProfile": "sumava"
+          },
+          "id": "sumava",
+          "url": "https://www.beviro.cz/sumava?varianta=109"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "forest",
+            "fragranceProfile": "vltava"
+          },
+          "id": "vltava",
+          "url": "https://www.beviro.cz/vltava?varianta=259"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice",
+            "fragranceProfile": "bohemian-spirit"
+          },
+          "id": "bohemian-spirit",
+          "url": "https://www.beviro.cz/bohemian-spirit?varianta=58"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice",
+            "fragranceProfile": "1918"
+          },
+          "id": "1918",
+          "url": "https://www.beviro.cz/1918?varianta=64"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "forest",
+              "spice"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "metropolitan",
+              "sophisticated",
+              "sevillian-villain"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "forest"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "sumava",
+              "vltava"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "bohemian-spirit",
+              "1918"
+            ]
+          }
+        }
+      ],
+      "status": "PASS",
+      "formulaCount": 7
+    }
+  }
+}
