@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "luxparfum",
+    "sourceArchive": "tools/s5/perfume-wave3/proof/luxparfum/local-and-merchant-proof.zip",
+    "sourceEntry": "lux-local-qa/luxparfum-result-lux-001-390.png",
+    "file": "01-luxparfum-result-390.png",
+    "bytes": 76138,
+    "sha256": "11dcf80d3f015a730adc0a7428d5c2684ed2c21e131a207e1af0b4a9accfe08b"
+  },
+  {
+    "slug": "atmanperfumes",
+    "sourceArchive": "tools/s5/perfume-wave3/proof/atmanperfumes/local-and-merchant-proof.zip",
+    "sourceEntry": "atman-local-fixed-qa/atmanperfumes-result-ambra-rossa-390.png",
+    "file": "02-atmanperfumes-result-390.png",
+    "bytes": 72760,
+    "sha256": "227521546aab5a9e671965a2b5af4e6b4c7139529956277c7485f51d29303e54"
+  },
+  {
+    "slug": "hypno",
+    "sourceArchive": "tools/s5/perfume-wave4/proof/hypno-source-local-proof.zip",
+    "sourceEntry": "local-qa/hypno-result-betlior-390.png",
+    "file": "03-hypno-result-390.png",
+    "bytes": 69162,
+    "sha256": "e77ce66eae4f27d511bb9948a5e0bf4bdc5d2d6d022e7b7866604c85afd20c35"
+  },
+  {
+    "slug": "bookarazzi",
+    "sourceArchive": "tools/s5/perfume-wave4/proof/bookarazzi-source-local-proof.zip",
+    "sourceEntry": "local-book-logo-qa/bookarazzi-result-bestseller-390.png",
+    "file": "04-bookarazzi-result-390.png",
+    "bytes": 82044,
+    "sha256": "c9d1ce412b88886f1c1faf4b3ad336ec738942c885d55fff3011445a2adf1ab6"
+  },
+  {
+    "slug": "gom",
+    "sourceArchive": "tools/s5/perfume-wave5/proof/gom/local-qa.zip",
+    "sourceEntry": "gom-result-chu-390.png",
+    "file": "05-gom-result-390.png",
+    "bytes": 79579,
+    "sha256": "4cc61389bbcc0a85c6bf9318ff6e213dc4267e5cd0c53f10465b6462fde827c6"
+  },
+  {
+    "slug": "egoist",
+    "sourceArchive": "tools/s5/perfume-wave5/proof/egoist/local-qa.zip",
+    "sourceEntry": "egoist-result-golem-parfemova-voda-390.png",
+    "file": "06-egoist-result-390.png",
+    "bytes": 80472,
+    "sha256": "41e3a5b941b034f768482f9d791d893deeeeeadf8235bb571a3d5e7bc7465f7c"
+  },
+  {
+    "slug": "parfums4all",
+    "sourceArchive": "tools/s5/perfume-wave6/proof/parfums4all/local-qa.zip",
+    "sourceEntry": "parfums4all-result-ardagio-aqua-classic-for-men-edp-100ml-390.png",
+    "file": "07-parfums4all-result-390.png",
+    "bytes": 83229,
+    "sha256": "73b452cfe8f8077575827674897f9ae4cdacad96affa65750628f1856fe52125"
+  },
+  {
+    "slug": "yodeymaparfemy",
+    "sourceArchive": "tools/s5/perfume-wave6/proof/yodeymaparfemy/local-qa.zip",
+    "sourceEntry": "yodeymaparfemy-result-caribbean-390.png",
+    "file": "08-yodeymaparfemy-result-390.png",
+    "bytes": 85218,
+    "sha256": "2c75ab4c89edac3c4a6b11f709d66c94e6ce2ede9f59117debec4fc2645a6e40"
+  },
+  {
+    "slug": "odeur",
+    "sourceArchive": "tools/s5/perfume-wave7/proof/odeur/local-qa.zip",
+    "sourceEntry": "odeur-result-argansky-hodvab-390.png",
+    "file": "09-odeur-result-390.png",
+    "bytes": 77431,
+    "sha256": "5fa0a98ee21608741d25b7db72d90905f1971bc2f0db91971aa9cee048ee991e"
+  },
+  {
+    "slug": "elobe",
+    "sourceArchive": "tools/s5/perfume-wave7/proof/elobe/local-qa.zip",
+    "sourceEntry": "elobe-result-black-salt-390.png",
+    "file": "10-elobe-result-390.png",
+    "bytes": 79159,
+    "sha256": "5866e28885e856b790e1dc336e022730bde7fe38f439ba8a9eafc3a6183cf3c4"
+  },
+  {
+    "slug": "topparfemy",
+    "sourceArchive": "tools/s5/perfume-wave8/proof/topparfemy/local-qa.zip",
+    "sourceEntry": "topparfemy-result-bergamot-zazvor-390.png",
+    "file": "11-topparfemy-result-390.png",
+    "bytes": 78824,
+    "sha256": "e3aca60206afecbd38aac7fcfe2eacf92e96ad82ff0391cb9bd5258719ff9c09"
+  },
+  {
+    "slug": "inparfum",
+    "sourceArchive": "tools/s5/perfume-wave8/proof/inparfum/local-qa.zip",
+    "sourceEntry": "inparfum-result-049-390.png",
+    "file": "12-inparfum-result-390.png",
+    "bytes": 73283,
+    "sha256": "3d6d10be4fe3805d0b818ca0b2c820707eb2f5b20bc3e100ab56bf10202b8f80"
+  },
+  {
+    "slug": "aromea",
+    "sourceArchive": "tools/s5/perfume-wave9/proof/aromea/local-qa.zip",
+    "sourceEntry": "aromea-result-aramaik-390.png",
+    "file": "13-aromea-result-390.png",
+    "bytes": 80959,
+    "sha256": "ca70b7b3e7e94d835d14316c1bb33211bca5f3b4562b9f8ad401303cffc44f47"
+  },
+  {
+    "slug": "kifra",
+    "sourceArchive": "tools/s5/perfume-wave9/proof/kifra/local-qa.zip",
+    "sourceEntry": "kifra-result-fresh-caps-390.png",
+    "file": "14-kifra-result-390.png",
+    "bytes": 86540,
+    "sha256": "b571fd9fef4158720ca7e627bc08fb69557dcfbbc0e53a088c5800eb09a78591"
+  },
+  {
+    "slug": "scents",
+    "sourceArchive": "tools/s5/perfume-wave9/proof/scents/local-qa.zip",
+    "sourceEntry": "scents-result-cherry-390.png",
+    "file": "15-scents-result-390.png",
+    "bytes": 85666,
+    "sha256": "ab9a507c3b089b1d6396ef767d64eb7ce7972ed90189c1a76171c1038a98eb23"
+  }
+]

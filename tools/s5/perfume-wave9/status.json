@@ -1,17 +1,29 @@
 {
-  "at": "2026-11-14T20:21:32.619444+00:00",
+  "at": "2026-11-14T20:29:33.844098+00:00",
   "owner": "PERFUME_WORKER",
   "complete": [
     "aromea",
-    "kifra"
+    "kifra",
+    "scents"
   ],
   "state": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
-  "primaryRecords": 12,
-  "finalLocalViews": 36,
+  "primaryRecords": 18,
+  "finalLocalViews": 54,
   "paidCalls": 0,
-  "newBatchLocalComplete": 14,
-  "newBatchPrimaryRecords": 78,
-  "newBatchFinalLocalViews": 234,
+  "newBatchLocalComplete": 15,
+  "newBatchPrimaryRecords": 84,
+  "newBatchOptionalSameFormulaVariants": 25,
+  "newBatchFinalLocalViews": 252,
   "liveReady": "UNKNOWN_MAIN_OWNS",
-  "kifraBackendScopeReviewRequired": true
+  "backendScopeReviewRequired": [
+    "odeur",
+    "kifra",
+    "scents"
+  ],
+  "commercialReviewRequired": [
+    "gom",
+    "egoist",
+    "aromea",
+    "scents"
+  ]
 }

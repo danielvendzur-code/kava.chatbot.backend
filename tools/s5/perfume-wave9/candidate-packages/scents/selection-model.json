@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "fruit",
+      "label": "Ovocný a tropický charakter",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "cherry",
+          "label": "Výrazná višňová vůně",
+          "productId": "cherry",
+          "sourceUrl": "https://scents.cz/domu/21-visen-coronado-cherry.html"
+        },
+        {
+          "value": "coconut",
+          "label": "Jemnější kokosová vůně",
+          "productId": "coconut",
+          "sourceUrl": "https://scents.cz/domu/27-kokos-capistrano-coconut.html"
+        }
+      ]
+    },
+    {
+      "value": "sweet",
+      "label": "Vanilka a sladké tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "vanilla",
+          "label": "Jemnější vanilková vůně",
+          "productId": "vanilla",
+          "sourceUrl": "https://scents.cz/domu/41-vanilka-monterey-vanilla.html"
+        },
+        {
+          "value": "delight",
+          "label": "Výrazná žvýkačková vůně",
+          "productId": "delight",
+          "sourceUrl": "https://scents.cz/domu/47-zvykacka-pedro-golden-state-delight.html"
+        }
+      ]
+    },
+    {
+      "value": "fresh",
+      "label": "Mořský nebo dřevitý charakter",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "laguna",
+          "label": "Intenzivní mořská svěžest",
+          "productId": "laguna",
+          "sourceUrl": "https://scents.cz/domu/28-vune-more-laguna-breeze.html"
+        },
+        {
+          "value": "sunset",
+          "label": "Lehká dřevitá vůně",
+          "productId": "sunset",
+          "sourceUrl": "https://scents.cz/domu/73-sunset-woods.html"
+        }
+      ]
+    }
+  ]
+}

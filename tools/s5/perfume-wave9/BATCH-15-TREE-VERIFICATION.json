@@ -1,0 +1,131 @@
+{
+  "at": "2026-11-14T20:31:42.768Z",
+  "scope": "Read-only aggregate unchangedc9tree/data proof; no newUI/live/provider tests",
+  "coreUnchanged": true,
+  "paidCalls": 0,
+  "companies": [
+    {
+      "slug": "luxparfum",
+      "operatorICO": "54911915",
+      "primaryRecords": 6,
+      "optionalSameFormulaVariants": 0,
+      "reachableEnds": 6,
+      "nonemptyQuestionStates": 4
+    },
+    {
+      "slug": "atmanperfumes",
+      "operatorICO": "05194962",
+      "primaryRecords": 6,
+      "optionalSameFormulaVariants": 0,
+      "reachableEnds": 6,
+      "nonemptyQuestionStates": 4
+    },
+    {
+      "slug": "hypno",
+      "operatorICO": "51654598",
+      "primaryRecords": 4,
+      "optionalSameFormulaVariants": 0,
+      "reachableEnds": 4,
+      "nonemptyQuestionStates": 3
+    },
+    {
+      "slug": "bookarazzi",
+      "operatorICO": "51218399",
+      "primaryRecords": 5,
+      "optionalSameFormulaVariants": 0,
+      "reachableEnds": 5,
+      "nonemptyQuestionStates": 3
+    },
+    {
+      "slug": "gom",
+      "operatorICO": "17645468",
+      "primaryRecords": 5,
+      "optionalSameFormulaVariants": 5,
+      "reachableEnds": 5,
+      "nonemptyQuestionStates": 3
+    },
+    {
+      "slug": "egoist",
+      "operatorICO": "03277411",
+      "primaryRecords": 6,
+      "optionalSameFormulaVariants": 0,
+      "reachableEnds": 6,
+      "nonemptyQuestionStates": 4
+    },
+    {
+      "slug": "parfums4all",
+      "operatorICO": "36291781",
+      "primaryRecords": 4,
+      "optionalSameFormulaVariants": 0,
+      "reachableEnds": 4,
+      "nonemptyQuestionStates": 3
+    },
+    {
+      "slug": "yodeymaparfemy",
+      "operatorICO": "05890969",
+      "primaryRecords": 6,
+      "optionalSameFormulaVariants": 6,
+      "reachableEnds": 6,
+      "nonemptyQuestionStates": 4
+    },
+    {
+      "slug": "odeur",
+      "operatorICO": "56402554",
+      "primaryRecords": 6,
+      "optionalSameFormulaVariants": 0,
+      "reachableEnds": 6,
+      "nonemptyQuestionStates": 4
+    },
+    {
+      "slug": "elobe",
+      "operatorICO": "05681430",
+      "primaryRecords": 6,
+      "optionalSameFormulaVariants": 0,
+      "reachableEnds": 6,
+      "nonemptyQuestionStates": 4
+    },
+    {
+      "slug": "topparfemy",
+      "operatorICO": "21825971",
+      "primaryRecords": 6,
+      "optionalSameFormulaVariants": 0,
+      "reachableEnds": 6,
+      "nonemptyQuestionStates": 4
+    },
+    {
+      "slug": "inparfum",
+      "operatorICO": "55021417",
+      "primaryRecords": 6,
+      "optionalSameFormulaVariants": 6,
+      "reachableEnds": 6,
+      "nonemptyQuestionStates": 4
+    },
+    {
+      "slug": "aromea",
+      "operatorICO": "22042318",
+      "primaryRecords": 6,
+      "optionalSameFormulaVariants": 2,
+      "reachableEnds": 6,
+      "nonemptyQuestionStates": 4
+    },
+    {
+      "slug": "kifra",
+      "operatorICO": "50184377",
+      "primaryRecords": 6,
+      "optionalSameFormulaVariants": 6,
+      "reachableEnds": 6,
+      "nonemptyQuestionStates": 4
+    },
+    {
+      "slug": "scents",
+      "operatorICO": "46721177",
+      "primaryRecords": 6,
+      "optionalSameFormulaVariants": 0,
+      "reachableEnds": 6,
+      "nonemptyQuestionStates": 4
+    }
+  ],
+  "uniqueOperators": 15,
+  "primaryRecords": 84,
+  "optionalSameFormulaVariants": 25
+}

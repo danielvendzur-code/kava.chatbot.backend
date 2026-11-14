@@ -1,8 +1,23 @@
 [
   {
     "path": "tools/s5/perfume-wave9/status.json",
-    "bytes": 432,
-    "sha256": "8c1002c8f3669bb52707c77f0d6dcb05860af143af00f83b6806209c8f81412f"
+    "bytes": 615,
+    "sha256": "31a12dddeefbb2318cd77a75356989712a0a7913f3cdf22e1e8df729e07f8ec0"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/verify-batch.cjs",
+    "bytes": 2079,
+    "sha256": "b2861fbb97db32772a89e02d13f0a68d9a2494ad2eb6752044012f16b98d5360"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/build-scents.py",
+    "bytes": 7972,
+    "sha256": "072cdbb23e241bdce2e5a984a7d29cfa24eb9610bb28b980d715a8216e8d7c13"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/BATCH-15-TREE-VERIFICATION.json",
+    "bytes": 3260,
+    "sha256": "2d5973af86f36494426da5d01b63c6d44523c7191edc6980d7a561ba8bf44552"
   },
   {
     "path": "tools/s5/perfume-wave9/download-kifra.py",
@@ -35,6 +50,16 @@
     "sha256": "4c5f06fdcc454238552889cce4a014c8d1a861bb87ac3e9e2f58b842d9efc3ed"
   },
   {
+    "path": "tools/s5/perfume-wave9/REVIEW-GALLERY-MANIFEST.json",
+    "bytes": 4741,
+    "sha256": "c61270bb352e2e18232c0d9daf929cd183fccb424ff9025f50a53ad9db574037"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/BATCH-15-CONTACTS-NOT-READY.csv",
+    "bytes": 2460,
+    "sha256": "7e529f9ea0501bbd0ae44ed525ce35c415c6ef7961015577c810f94a7146190f"
+  },
+  {
     "path": "tools/s5/perfume-wave9/scents-cookie-final.py",
     "bytes": 2407,
     "sha256": "6fefe5c875e74fadd357d035058930dd165259d11c7f4929dd4f0916f4e558ff"
@@ -56,8 +81,8 @@
   },
   {
     "path": "tools/s5/perfume-wave9/engine-qa.json",
-    "bytes": 5541,
-    "sha256": "2c9162b6d0778e639ad41d6a909d05da43c1f5b80a659dd1badd53869b3dc0af"
+    "bytes": 8117,
+    "sha256": "9206c34eccbf13425929b456047cf8e264550c3cb19585075639414170c5aaca"
   },
   {
     "path": "tools/s5/perfume-wave9/scan-duplicates.py",
@@ -65,9 +90,19 @@
     "sha256": "4c78b334a0784862d55a7a74053843c952f5721a33e61a0544c04ec6d90b59e3"
   },
   {
+    "path": "tools/s5/perfume-wave9/SCENTS-HANDOFF.md",
+    "bytes": 5716,
+    "sha256": "8c4c530a4a89fa835ae561a996d40b9ef0658b7721e5f2f374dda1596b725242"
+  },
+  {
     "path": "tools/s5/perfume-wave9/build-kifra.py",
     "bytes": 9838,
     "sha256": "b3da1dcc9d87c1e9b2d992563fca91ac0a5c71c61be1ecde7d9178bb830b2982"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/download-scents.py",
+    "bytes": 1679,
+    "sha256": "fc091b2f08202c4d7eb56b21c63b5a26a128f8f3a34f9541cdd092dc05350894"
   },
   {
     "path": "tools/s5/perfume-wave9/scents-cookie.py",
@@ -80,19 +115,39 @@
     "sha256": "ef56ab0715ef21a7d26d6a9eeb565391572fbf50c77a572d0e6034df474bd87c"
   },
   {
+    "path": "tools/s5/perfume-wave9/BATCH-15-INPUT-HASHES.json",
+    "bytes": 38452,
+    "sha256": "9032d770bf9eb15aa87b71bd92e21c797be2afe7fa8aa317205068d4b25c7258"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/BATCH-15-INTEGRATION-REVIEW.json",
+    "bytes": 30106,
+    "sha256": "cd2b94ac2719136bc1738efd440d815b064cd31b141f9688e285c95781fba47e"
+  },
+  {
     "path": "tools/s5/perfume-wave9/download-aromea.py",
     "bytes": 1842,
     "sha256": "c4112f40705b934e318a7ba3bfe0691c44f0960140bf1d3083b6335dab7463fd"
   },
   {
+    "path": "tools/s5/perfume-wave9/BATCH-15-HANDOFF.md",
+    "bytes": 7484,
+    "sha256": "5f2af0275b10b8ff94396d08137a0814e1c6302c4b9824b4ea732d7541774847"
+  },
+  {
     "path": "tools/s5/perfume-wave9/proof/manifest.json",
-    "bytes": 39453,
-    "sha256": "73da8642901416d363de3557faca67151aea262b46196e17d99f0bbebee6855b"
+    "bytes": 57744,
+    "sha256": "847e280b9717665e570b6728340b772e38079a921888f74262995d76deea211b"
   },
   {
     "path": "tools/s5/perfume-wave9/research/seasons-size.html",
     "bytes": 170031,
     "sha256": "e1e555d9c8997d8a35b25af88d280a0ae985f093b1d84cbf5d60c62649f38c03"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/research/decisions.json",
+    "bytes": 1957,
+    "sha256": "853986bdfaaa3668b29ec8258e297b6b09fa8690d95087b7d531b11bef05e6f5"
   },
   {
     "path": "tools/s5/perfume-wave9/research/scents-all.html",
@@ -106,8 +161,13 @@
   },
   {
     "path": "tools/s5/perfume-wave9/research/fresh-duplicates.json",
-    "bytes": 29773,
-    "sha256": "8f3b43a24919d1a4c1a64ddd716568d6c7b2c76b4fb19ed3eb30f27df2fce7ac"
+    "bytes": 66635,
+    "sha256": "6730b78121a135f87b8343d5c153f476d6b84291ec968ce5f60eb678fe8e3d48"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/research/scents-deployment-duplicates.json",
+    "bytes": 86659,
+    "sha256": "8d8927f7831000995bb92efbc9cb94115f08b5fea5655ac7301efd093d7bbb5c"
   },
   {
     "path": "tools/s5/perfume-wave9/research/scents-consent.js",
@@ -118,6 +178,11 @@
     "path": "tools/s5/perfume-wave9/research/deployment-duplicates.json",
     "bytes": 85800,
     "sha256": "add1681d6b320bdb1d0ef6dd088ff9c77dd12f1c29178564ca02f8931a099c71"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/research/scents-current-terms.html",
+    "bytes": 72756,
+    "sha256": "632d8b43b9b21332909108a3fd1bdf89efa5e54fc871d99e51f54c62a157612e"
   },
   {
     "path": "tools/s5/perfume-wave9/research/scents-product-links.json",
@@ -131,8 +196,8 @@
   },
   {
     "path": "tools/s5/perfume-wave9/research/duplicate-terms.json",
-    "bytes": 371,
-    "sha256": "e8eabcf3d3fcee49437683d47253dfe89476a97d1311cfffe4d3929967c04f0d"
+    "bytes": 413,
+    "sha256": "7680bc3a748d425e8a6ad9f731a5cdee05278d42ec83b273dade685c9c131de2"
   },
   {
     "path": "tools/s5/perfume-wave9/proof/aromea/merchant-qa.zip",
@@ -163,6 +228,21 @@
     "path": "tools/s5/perfume-wave9/proof/kifra/local-qa.json",
     "bytes": 27094,
     "sha256": "e10c4409e6643739c0e09d223d9c1d247cdd24946cfbca6d7c95ff3cc6e93cc9"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/proof/scents/merchant-qa.zip",
+    "bytes": 1488560,
+    "sha256": "4b17883bc05448cb178205e12c691f00e29ba60791d7a645cd9cade4d80f54e7"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/proof/scents/local-qa.zip",
+    "bytes": 7690474,
+    "sha256": "0f6aa67754f94998bf9a2345dcb30fbf9677d36628633afc2bc205b9684df166"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/proof/scents/local-qa.json",
+    "bytes": 23911,
+    "sha256": "e7216d3fee076ee2400a1235738bc90301a1e162a395287ce0bd6c49ea3576fc"
   },
   {
     "path": "tools/s5/perfume-wave9/candidate-packages/aromea/config.json",
@@ -223,6 +303,36 @@
     "path": "tools/s5/perfume-wave9/candidate-packages/kifra/ui-review.css",
     "bytes": 6136,
     "sha256": "9aeff5d4f3d619280d86fa8afcfb22d69f4dc9e2adfbd31944bb28578f989a02"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/config.json",
+    "bytes": 6027,
+    "sha256": "62a9cefdaaca8ba38ef8eafab528d69c4e6b8e99dff9b5836e6def60de112f28"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/integration-review.json",
+    "bytes": 6647,
+    "sha256": "b24866486e10bb6c6ee25349b23a5a749a1840842ae05861a8a58c1f81a79ece"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/selection-model.json",
+    "bytes": 1975,
+    "sha256": "88beecdfa6329623623469315114984a9106152345c69122fa81d3988cd75cbf"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/catalogue.js",
+    "bytes": 27706,
+    "sha256": "43eaa55b81e41609a273a359ca7f86a465cb53fd1463b72e191a78ca6fb5912a"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/verified-products.json",
+    "bytes": 30380,
+    "sha256": "45a2c409624770ec958e544e199d1105d24694daceb85d81f0bb21148efc129f"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/ui-review.css",
+    "bytes": 6176,
+    "sha256": "a6a015c8e2696356279aa4c0d74be2108a72ce24c712a5e337b2fdd8caaf3fc6"
   },
   {
     "path": "tools/s5/perfume-wave9/candidate-packages/aromea/assets/cafe-satin.png",
@@ -343,6 +453,46 @@
     "path": "tools/s5/perfume-wave9/candidate-packages/kifra/assets/japanese-garden.jpg",
     "bytes": 63392,
     "sha256": "a6c2b3596bb68b2cc76a53003d26e31e58e7846f34f57395389e0e5632ce988f"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/assets/logo.png",
+    "bytes": 17164,
+    "sha256": "4a111d5ed8b52c7747c274c811e78835898f65c3fb9fb41971aeffafa38c8080"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/assets/initial.svg",
+    "bytes": 247,
+    "sha256": "863216f64c66d8898c6f496c62a99ef0ee8f163b79765794c710becae87a2ea3"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/assets/coconut.jpg",
+    "bytes": 44186,
+    "sha256": "6c9aea2e42eb5fa237dc5dee4067b10089c48cc224273def6f19df45c03b6785"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/assets/sunset.jpg",
+    "bytes": 45700,
+    "sha256": "0a44907c19144ca4c33b99cd92bd7eeeeacb7448996f99eb675b65b0b101552d"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/assets/vanilla.jpg",
+    "bytes": 43026,
+    "sha256": "1d14905cb7918b6b8cd2ac239d81ab0f803bcb65935ffcea5aeccfd5cf2f3f41"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/assets/laguna.jpg",
+    "bytes": 38806,
+    "sha256": "dc46436d4b7100ccf741c411e763ccc70fade8e59f555f89044db7439832c479"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/assets/delight.jpg",
+    "bytes": 44201,
+    "sha256": "81fab2956d585eb2f2d47a47a9c8f423f35e4c5028ef0a745cd1c380049676b9"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/candidate-packages/scents/assets/cherry.jpg",
+    "bytes": 37806,
+    "sha256": "6af87468441084323056c7f91c791a00f2eba1b80dd8bdfd59653659c83cf5d0"
   },
   {
     "path": "tools/s5/perfume-wave9/research/aromea/photos.json",
@@ -498,6 +648,11 @@
     "path": "tools/s5/perfume-wave9/research/scents/cherry.json",
     "bytes": 16452,
     "sha256": "806f6f4e77ef454eecbcf426371b62bc0c76b0a70641fac87836b6161be42c91"
+  },
+  {
+    "path": "tools/s5/perfume-wave9/research/scents/photos.json",
+    "bytes": 2394,
+    "sha256": "64247871193e351b463c3edfdb91a0d677dcd355874b11e82d7d0fda6e52acb2"
   },
   {
     "path": "tools/s5/perfume-wave9/research/scents/coconut.json",

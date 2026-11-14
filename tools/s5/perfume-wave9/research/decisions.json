@@ -1,0 +1,53 @@
+{
+  "at": "2026-11-14T20:29:33.844387+00:00",
+  "target": 15,
+  "newReservationsBeyondTarget": false,
+  "allOldHolds": "PRESERVED",
+  "decisions": [
+    {
+      "candidate": "ESCENT",
+      "state": "HOLD_EXISTING_PRODUCT_AI",
+      "evidence": "OwnopenedVoiceflow eScent AI asistent / Tvuj parfemovy AI guru, wave7 actualscreens, no message."
+    },
+    {
+      "candidate": "Sansiro",
+      "state": "HOLD_PRODUCT_RUNTIME_ERROR",
+      "evidence": "ActualPHPundefinedformatStockStatus despiteHTTP200, wave7source/liveproof."
+    },
+    {
+      "candidate": "Allan Martin",
+      "state": "HOLD_INACTIVE_SITE_OBSERVED",
+      "evidence": "Bare+wwwHTTP200 Defaultindex, notactivecatalogue; notglobaloutageclaim."
+    },
+    {
+      "candidate": "Welvet",
+      "state": "HOLD_SIZE_UNKNOWN_NOT_RESERVED",
+      "evidence": "Active2025company23298448, exact/bandturnovernotfound; sourcecaptured, no newrightsrequested."
+    },
+    {
+      "candidate": "ARTparfemy",
+      "state": "READ_ONLY_IDENTITY_SIZE_REVIEW_NOT_RESERVED",
+      "evidence": "OfficialtermsFO RuženaAdamcova but noICOinpage, currentlegal/sizeunresolved."
+    },
+    {
+      "candidate": "Rbeauty Industry",
+      "state": "FIT_REVIEW_NOT_RESERVED",
+      "evidence": "Actualcurrentcatalogue nails/lamps/training, notperfume assortment despitebroadoldterms."
+    },
+    {
+      "candidate": "Parfemy-Essens retailer",
+      "state": "HOLD_ACCESS_NOT_RESERVED",
+      "evidence": "NormalHTTPS403, no bypass; Maralex2024band10–30mCZK notassets."
+    },
+    {
+      "candidate": "My Little Valentine",
+      "state": "HOLD_ACCESS_NOT_RESERVED",
+      "evidence": "Normalofficialhome+termsHTTP503, noallsite/globaloutageclaim or protectionbypass."
+    },
+    {
+      "candidate": "Parfums Seasons/NOBLAS06254926",
+      "state": "HOLD_SIZE_BAND_CROSSES_CAP_NOT_RESERVED",
+      "evidence": "OfficialoperatorNOBLAS, secondary2024band30–60mCZK straddles50mcap; assetsnotrevenue."
+    }
+  ]
+}

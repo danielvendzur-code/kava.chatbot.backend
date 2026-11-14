@@ -1,0 +1,941 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-14T20:26:56.856238+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "scents",
+      "width": 320,
+      "id": "cherry",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/21-visen-coronado-cherry.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-cherry-320.png"
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "id": "coconut",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/27-kokos-capistrano-coconut.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-coconut-320.png"
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "id": "vanilla",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/41-vanilka-monterey-vanilla.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-vanilla-320.png"
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "id": "delight",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/47-zvykacka-pedro-golden-state-delight.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-delight-320.png"
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "id": "laguna",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/28-vune-more-laguna-breeze.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-laguna-320.png"
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "id": "sunset",
+      "pack": "42 g",
+      "price": "70 Kč",
+      "url": "https://scents.cz/domu/73-sunset-woods.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-sunset-320.png"
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "id": "cherry",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/21-visen-coronado-cherry.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-cherry-390.png"
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "id": "coconut",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/27-kokos-capistrano-coconut.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-coconut-390.png"
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "id": "vanilla",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/41-vanilka-monterey-vanilla.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-vanilla-390.png"
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "id": "delight",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/47-zvykacka-pedro-golden-state-delight.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-delight-390.png"
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "id": "laguna",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/28-vune-more-laguna-breeze.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-laguna-390.png"
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "id": "sunset",
+      "pack": "42 g",
+      "price": "70 Kč",
+      "url": "https://scents.cz/domu/73-sunset-woods.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-sunset-390.png"
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "id": "cherry",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/21-visen-coronado-cherry.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-cherry-1280.png"
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "id": "coconut",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/27-kokos-capistrano-coconut.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-coconut-1280.png"
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "id": "vanilla",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/41-vanilka-monterey-vanilla.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-vanilla-1280.png"
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "id": "delight",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/47-zvykacka-pedro-golden-state-delight.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-delight-1280.png"
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "id": "laguna",
+      "pack": "42 g",
+      "price": "90 Kč",
+      "url": "https://scents.cz/domu/28-vune-more-laguna-breeze.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-laguna-1280.png"
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "id": "sunset",
+      "pack": "42 g",
+      "price": "70 Kč",
+      "url": "https://scents.cz/domu/73-sunset-woods.html",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "scents-result-sunset-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "scents",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "sweet",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/pine.jpg"
+        }
+      ],
+      "screenshot": "scents-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "cherry",
+          "photo": "/assets/s5/scents/cherry.jpg"
+        },
+        {
+          "id": "coconut",
+          "photo": "/assets/s5/scents/coconut.jpg"
+        }
+      ],
+      "screenshot": "scents-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "vanilla",
+          "photo": "/assets/s5/scents/vanilla.jpg"
+        },
+        {
+          "id": "delight",
+          "photo": "/assets/s5/scents/delight.jpg"
+        }
+      ],
+      "screenshot": "scents-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "laguna",
+          "photo": "/assets/s5/scents/laguna.jpg"
+        },
+        {
+          "id": "sunset",
+          "photo": "/assets/s5/scents/sunset.jpg"
+        }
+      ],
+      "screenshot": "scents-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "sweet",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/pine.jpg"
+        }
+      ],
+      "screenshot": "scents-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "cherry",
+          "photo": "/assets/s5/scents/cherry.jpg"
+        },
+        {
+          "id": "coconut",
+          "photo": "/assets/s5/scents/coconut.jpg"
+        }
+      ],
+      "screenshot": "scents-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "vanilla",
+          "photo": "/assets/s5/scents/vanilla.jpg"
+        },
+        {
+          "id": "delight",
+          "photo": "/assets/s5/scents/delight.jpg"
+        }
+      ],
+      "screenshot": "scents-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "laguna",
+          "photo": "/assets/s5/scents/laguna.jpg"
+        },
+        {
+          "id": "sunset",
+          "photo": "/assets/s5/scents/sunset.jpg"
+        }
+      ],
+      "screenshot": "scents-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "sweet",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/pine.jpg"
+        }
+      ],
+      "screenshot": "scents-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "cherry",
+          "photo": "/assets/s5/scents/cherry.jpg"
+        },
+        {
+          "id": "coconut",
+          "photo": "/assets/s5/scents/coconut.jpg"
+        }
+      ],
+      "screenshot": "scents-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "vanilla",
+          "photo": "/assets/s5/scents/vanilla.jpg"
+        },
+        {
+          "id": "delight",
+          "photo": "/assets/s5/scents/delight.jpg"
+        }
+      ],
+      "screenshot": "scents-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "laguna",
+          "photo": "/assets/s5/scents/laguna.jpg"
+        },
+        {
+          "id": "sunset",
+          "photo": "/assets/s5/scents/sunset.jpg"
+        }
+      ],
+      "screenshot": "scents-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "scents",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "cherry",
+        "sunset"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "scents-compare-320.png"
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "cherry",
+        "sunset"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "scents-compare-390.png"
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "cherry",
+        "sunset"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "scents-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "noteProfiles": [
+    {
+      "slug": "scents",
+      "id": "cherry",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Výrazná višňová vůně"
+      ],
+      "screenshot": "scents-note-profile-cherry-320.png"
+    },
+    {
+      "slug": "scents",
+      "id": "coconut",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Jemnější kokosová vůně"
+      ],
+      "screenshot": "scents-note-profile-coconut-320.png"
+    },
+    {
+      "slug": "scents",
+      "id": "vanilla",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Jemnější vanilková vůně"
+      ],
+      "screenshot": "scents-note-profile-vanilla-320.png"
+    },
+    {
+      "slug": "scents",
+      "id": "delight",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Výrazná žvýkačková vůně"
+      ],
+      "screenshot": "scents-note-profile-delight-320.png"
+    },
+    {
+      "slug": "scents",
+      "id": "laguna",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Intenzivní mořská svěžest"
+      ],
+      "screenshot": "scents-note-profile-laguna-320.png"
+    },
+    {
+      "slug": "scents",
+      "id": "sunset",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Lehká dřevitá vůně"
+      ],
+      "screenshot": "scents-note-profile-sunset-320.png"
+    },
+    {
+      "slug": "scents",
+      "id": "cherry",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Výrazná višňová vůně"
+      ],
+      "screenshot": "scents-note-profile-cherry-390.png"
+    },
+    {
+      "slug": "scents",
+      "id": "coconut",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Jemnější kokosová vůně"
+      ],
+      "screenshot": "scents-note-profile-coconut-390.png"
+    },
+    {
+      "slug": "scents",
+      "id": "vanilla",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Jemnější vanilková vůně"
+      ],
+      "screenshot": "scents-note-profile-vanilla-390.png"
+    },
+    {
+      "slug": "scents",
+      "id": "delight",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Výrazná žvýkačková vůně"
+      ],
+      "screenshot": "scents-note-profile-delight-390.png"
+    },
+    {
+      "slug": "scents",
+      "id": "laguna",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Intenzivní mořská svěžest"
+      ],
+      "screenshot": "scents-note-profile-laguna-390.png"
+    },
+    {
+      "slug": "scents",
+      "id": "sunset",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Lehká dřevitá vůně"
+      ],
+      "screenshot": "scents-note-profile-sunset-390.png"
+    },
+    {
+      "slug": "scents",
+      "id": "cherry",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Výrazná višňová vůně"
+      ],
+      "screenshot": "scents-note-profile-cherry-1280.png"
+    },
+    {
+      "slug": "scents",
+      "id": "coconut",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Jemnější kokosová vůně"
+      ],
+      "screenshot": "scents-note-profile-coconut-1280.png"
+    },
+    {
+      "slug": "scents",
+      "id": "vanilla",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Jemnější vanilková vůně"
+      ],
+      "screenshot": "scents-note-profile-vanilla-1280.png"
+    },
+    {
+      "slug": "scents",
+      "id": "delight",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Výrazná žvýkačková vůně"
+      ],
+      "screenshot": "scents-note-profile-delight-1280.png"
+    },
+    {
+      "slug": "scents",
+      "id": "laguna",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Intenzivní mořská svěžest"
+      ],
+      "screenshot": "scents-note-profile-laguna-1280.png"
+    },
+    {
+      "slug": "scents",
+      "id": "sunset",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Lehká dřevitá vůně"
+      ],
+      "screenshot": "scents-note-profile-sunset-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "scents",
+      "width": 320,
+      "id": "cherry",
+      "defaultScreenshot": "scents-result-cherry-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-cherry-320.png",
+      "comparisonIds": [
+        "cherry",
+        "coconut"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "id": "coconut",
+      "defaultScreenshot": "scents-result-coconut-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-coconut-320.png",
+      "comparisonIds": [
+        "coconut",
+        "cherry"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "id": "vanilla",
+      "defaultScreenshot": "scents-result-vanilla-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-vanilla-320.png",
+      "comparisonIds": [
+        "vanilla",
+        "delight"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "id": "delight",
+      "defaultScreenshot": "scents-result-delight-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-delight-320.png",
+      "comparisonIds": [
+        "delight",
+        "vanilla"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "id": "laguna",
+      "defaultScreenshot": "scents-result-laguna-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-laguna-320.png",
+      "comparisonIds": [
+        "laguna",
+        "sunset"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 320,
+      "id": "sunset",
+      "defaultScreenshot": "scents-result-sunset-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-sunset-320.png",
+      "comparisonIds": [
+        "sunset",
+        "laguna"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "id": "cherry",
+      "defaultScreenshot": "scents-result-cherry-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-cherry-390.png",
+      "comparisonIds": [
+        "cherry",
+        "coconut"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "id": "coconut",
+      "defaultScreenshot": "scents-result-coconut-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-coconut-390.png",
+      "comparisonIds": [
+        "coconut",
+        "cherry"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "id": "vanilla",
+      "defaultScreenshot": "scents-result-vanilla-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-vanilla-390.png",
+      "comparisonIds": [
+        "vanilla",
+        "delight"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "id": "delight",
+      "defaultScreenshot": "scents-result-delight-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-delight-390.png",
+      "comparisonIds": [
+        "delight",
+        "vanilla"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "id": "laguna",
+      "defaultScreenshot": "scents-result-laguna-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-laguna-390.png",
+      "comparisonIds": [
+        "laguna",
+        "sunset"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 390,
+      "id": "sunset",
+      "defaultScreenshot": "scents-result-sunset-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-sunset-390.png",
+      "comparisonIds": [
+        "sunset",
+        "laguna"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "id": "cherry",
+      "defaultScreenshot": "scents-result-cherry-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-cherry-1280.png",
+      "comparisonIds": [
+        "cherry",
+        "coconut"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "id": "coconut",
+      "defaultScreenshot": "scents-result-coconut-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-coconut-1280.png",
+      "comparisonIds": [
+        "coconut",
+        "cherry"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "id": "vanilla",
+      "defaultScreenshot": "scents-result-vanilla-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-vanilla-1280.png",
+      "comparisonIds": [
+        "vanilla",
+        "delight"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "id": "delight",
+      "defaultScreenshot": "scents-result-delight-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-delight-1280.png",
+      "comparisonIds": [
+        "delight",
+        "vanilla"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "id": "laguna",
+      "defaultScreenshot": "scents-result-laguna-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-laguna-1280.png",
+      "comparisonIds": [
+        "laguna",
+        "sunset"
+      ]
+    },
+    {
+      "slug": "scents",
+      "width": 1280,
+      "id": "sunset",
+      "defaultScreenshot": "scents-result-sunset-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "scents-pair-sunset-1280.png",
+      "comparisonIds": [
+        "sunset",
+        "laguna"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

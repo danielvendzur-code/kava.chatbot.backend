@@ -1,0 +1,229 @@
+{
+  "slug": "scents",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "0606a23f6d72b3487dc38f5e8de34200ae7046d7",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/scents.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Výrazná višeň",
+    "Jemnější vanilka",
+    "Dřevitá vůně",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Výrazná višeň",
+      "match": "vyrazn.*vis",
+      "productIds": [
+        "cherry"
+      ]
+    },
+    {
+      "chip": "Jemnější vanilka",
+      "match": "jemnej.*vanilk",
+      "productIds": [
+        "vanilla"
+      ]
+    },
+    {
+      "chip": "Dřevitá vůně",
+      "match": "drevit.*vun",
+      "productIds": [
+        "sunset"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "cherry",
+    "sunset"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "Regulatoralreadypublisherincludedfree, no paidaccessoryorcompatiblepackverified; distinctalternative+comparisononly."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Scents.cz",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/scents/logo.png",
+      "header": "/assets/s5/scents/logo.png",
+      "avatar": "/assets/s5/scents/initial.svg"
+    },
+    "brand": {
+      "name": "Scents.cz",
+      "domain": "scents.cz",
+      "website": "https://scents.cz/",
+      "lang": "cs",
+      "fullName": "Scents.cz",
+      "url": "https://scents.cz/",
+      "logo": "/assets/s5/scents/logo.png",
+      "mark": "/assets/s5/scents/initial.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně do auta, jejich balení a ceny.",
+      "quickChips": [
+        "Výrazná višeň",
+        "Jemnější vanilka",
+        "Dřevitá vůně",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#08768a",
+        "accent": "#e0c956",
+        "soft": "#effafd",
+        "paper": "#fff",
+        "ink": "#173f47",
+        "line": "#d7eaee"
+      }
+    },
+    "traitCopy": {
+      "fruit": [
+        "Ovocný a tropický charakter",
+        "",
+        "Ovocný a tropický charakter",
+        ""
+      ],
+      "cherry": [
+        "Výrazná višňová vůně",
+        "",
+        "Výrazná višňová vůně",
+        ""
+      ],
+      "coconut": [
+        "Jemnější kokosová vůně",
+        "",
+        "Jemnější kokosová vůně",
+        ""
+      ],
+      "sweet": [
+        "Vanilka a sladké tóny",
+        "",
+        "Vanilka a sladké tóny",
+        ""
+      ],
+      "vanilla": [
+        "Jemnější vanilková vůně",
+        "",
+        "Jemnější vanilková vůně",
+        ""
+      ],
+      "delight": [
+        "Výrazná žvýkačková vůně",
+        "",
+        "Výrazná žvýkačková vůně",
+        ""
+      ],
+      "fresh": [
+        "Mořský nebo dřevitý charakter",
+        "",
+        "Mořský nebo dřevitý charakter",
+        ""
+      ],
+      "laguna": [
+        "Intenzivní mořská svěžest",
+        "",
+        "Intenzivní mořská svěžest",
+        ""
+      ],
+      "sunset": [
+        "Lehká dřevitá vůně",
+        "",
+        "Lehká dřevitá vůně",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fruit": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "cherry": [
+        "/assets/s5/scents/cherry.jpg"
+      ],
+      "coconut": [
+        "/assets/s5/scents/coconut.jpg"
+      ],
+      "sweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "vanilla": [
+        "/assets/s5/scents/vanilla.jpg"
+      ],
+      "delight": [
+        "/assets/s5/scents/delight.jpg"
+      ],
+      "fresh": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "laguna": [
+        "/assets/s5/scents/laguna.jpg"
+      ],
+      "sunset": [
+        "/assets/s5/scents/sunset.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "cherry",
+      "sunset"
+    ],
+    "segmentText": {
+      "entryNote": "Vůně do auta · konkrétní balení · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi najít vůni do auta podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni do auta s fotografií, charakterem, balením 42 g, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vůně do auta, jejich charakter, balení a ceny.",
+      "includedAdvisor": "Výběr vůně do auta a porovnání dvou odlišných vůní.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně do auta, jejich balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "scents-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "cherry": "coconut",
+        "coconut": "cherry",
+        "vanilla": "delight",
+        "delight": "vanilla",
+        "laguna": "sunset",
+        "sunset": "laguna"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-14T18:37:50.048715+00:00",
+  "checkedAt": "2026-11-14T20:23:08.966752+00:00",
   "scope": "All locally fetched remote branch heads; official domains, aliases, operators and ICO, not slug-only. No reservation made.",
   "remoteHeads": {
     "refs/remotes/origin/agent/coffee-advisor-full-quality-pass": "c5cfe9727f5cb5a60bf643a960b3191e1a08c91f",
@@ -78,8 +78,9 @@
     "refs/remotes/origin/codex/s5-perfume-wave6-20261113": "ce9c0f0cee2f23fdd562aebebd4b2a9940b19bd6",
     "refs/remotes/origin/codex/s5-perfume-wave7-20261113": "82d344e9ca98d83dac8ba7d501a8f9d4d7ccb9cf",
     "refs/remotes/origin/codex/s5-perfume-wave8-20261114": "6ec622ab51079ed0a261b1ef58199733f4feb7f0",
+    "refs/remotes/origin/codex/s5-perfume-wave9-20261114": "d31d84dc05906dbe1b326104f068d83d784e2235",
     "refs/remotes/origin/codex/s5-solo-20261109": "de34f7759118e20d3a476f0fe1537ddb02fd161f",
-    "refs/remotes/origin/coord/s5-claims": "38c31e241715c1ee56419e47214c12a3bad5f934",
+    "refs/remotes/origin/coord/s5-claims": "6890984e4bd44ed60066fd4bda8e9bbd3c67fa62",
     "refs/remotes/origin/design/five-layout-proposals-20260912": "773af687f547c4d705a3cec8a3f5312dbd880f77",
     "refs/remotes/origin/fix/all-white-surfaces-20261004": "d824b3d00f35ca271797e64edb95a4757c85f976",
     "refs/remotes/origin/fix/chat-user-history-20261006": "b93f04f9759f2bbbbd5b1ab832eec3475ca2f590",
@@ -105,10 +106,10 @@
     "refs/remotes/origin/tmp/cosmetics-polish-2026-09-02": "5f305f0619b8d505c6668ea8c179ab8a6cb62e59",
     "refs/remotes/origin/work/coffee-jolka-standardization": "a1b327a4f56a67be7cc49fa26e937cc58a154f87"
   },
-  "remoteCount": 102,
-  "uniqueTextBlobs": 3363,
+  "remoteCount": 103,
+  "uniqueTextBlobs": 3445,
   "missingBlobs": [],
-  "positiveControlBlobs": 43,
+  "positiveControlBlobs": 44,
   "terms": {
     "aromea": [
       "aromea.cz",
@@ -130,7 +131,9 @@
     "scents": [
       "scents.cz",
       "WANKEL",
-      "46721177"
+      "46721177",
+      "scents.sk",
+      "California Scents"
     ]
   },
   "hits": {
@@ -151,6 +154,10 @@
           },
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave6/finance-preflight.py"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave6/finance-preflight.py"
           }
         ]
@@ -174,6 +181,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave6/research/decisions.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave6/research/decisions.json"
           }
         ]
       },
@@ -182,7 +193,8 @@
         "terms": [
           "scents.cz",
           "WANKEL",
-          "46721177"
+          "46721177",
+          "scents.sk"
         ],
         "locations": [
           {
@@ -195,6 +207,10 @@
           },
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave6/research/duplicate-terms.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave6/research/duplicate-terms.json"
           }
         ]
@@ -204,7 +220,8 @@
         "terms": [
           "scents.cz",
           "WANKEL",
-          "46721177"
+          "46721177",
+          "scents.sk"
         ],
         "locations": [
           {
@@ -217,6 +234,10 @@
           },
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave6/research/fresh-duplicates.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave6/research/fresh-duplicates.json"
           }
         ]
@@ -238,6 +259,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave6/research/initial-audit/scents-fetch.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave6/research/initial-audit/scents-fetch.json"
           }
         ]
       },
@@ -245,7 +270,8 @@
         "blob": "55166bf73d8d555774239fd2447cf13e66353e3f",
         "terms": [
           "scents.cz",
-          "WANKEL"
+          "WANKEL",
+          "California Scents"
         ],
         "locations": [
           {
@@ -258,6 +284,10 @@
           },
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave6/research/initial-audit/scents-links.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave6/research/initial-audit/scents-links.json"
           }
         ]
@@ -279,6 +309,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave6/research/initial-audit/scents-ruz-fetch.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave6/research/initial-audit/scents-ruz-fetch.json"
           }
         ]
       },
@@ -287,7 +321,8 @@
         "terms": [
           "scents.cz",
           "WANKEL",
-          "46721177"
+          "46721177",
+          "California Scents"
         ],
         "locations": [
           {
@@ -300,6 +335,10 @@
           },
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave6/research/initial-audit/scents-terms.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave6/research/initial-audit/scents-terms.json"
           }
         ]
@@ -322,6 +361,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave6/research/scents-2025-official.txt"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave6/research/scents-2025-official.txt"
           }
         ]
       },
@@ -342,6 +385,10 @@
           },
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave6/research/scents-report-10173244.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave6/research/scents-report-10173244.json"
           }
         ]
@@ -364,6 +411,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave6/research/scents-rpo.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave6/research/scents-rpo.json"
           }
         ]
       },
@@ -385,6 +436,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave6/research/scents-unit.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave6/research/scents-unit.json"
           }
         ]
       },
@@ -396,6 +451,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave8/laundry-car-live.py"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave8/laundry-car-live.py"
           }
         ]
@@ -411,6 +470,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/duplicate-terms.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/duplicate-terms.json"
           }
         ]
       },
@@ -425,6 +488,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/fresh-duplicates.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/fresh-duplicates.json"
           }
         ]
       },
@@ -432,12 +499,271 @@
         "blob": "fc5f4258de5a9b631688d05784336d0bb5e5c1f4",
         "terms": [
           "scents.cz",
-          "WANKEL"
+          "WANKEL",
+          "California Scents"
         ],
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/scents-home.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/scents-home.html"
+          }
+        ]
+      },
+      {
+        "blob": "4cd3169510ce2aad550dcc931844eb3f466cd7f6",
+        "terms": [
+          "scents.cz",
+          "WANKEL",
+          "46721177"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/duplicate-terms.json"
+          }
+        ]
+      },
+      {
+        "blob": "ccff5c7a1a3afa0431dfbebad4136adc9f2e5c51",
+        "terms": [
+          "scents.cz",
+          "WANKEL",
+          "46721177"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/fresh-duplicates.json"
+          }
+        ]
+      },
+      {
+        "blob": "f7176dac53891091a950b01a39c569fc99de0542",
+        "terms": [
+          "scents.cz",
+          "WANKEL",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents-all.html"
+          }
+        ]
+      },
+      {
+        "blob": "a706086289dd5362856b970f7a92a9b6690cb7aa",
+        "terms": [
+          "scents.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents-product-links.json"
+          }
+        ]
+      },
+      {
+        "blob": "3245da7e487a4e167b8f6b80fe3d55aa6e3d606b",
+        "terms": [
+          "scents.cz",
+          "WANKEL",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents-product.html"
+          }
+        ]
+      },
+      {
+        "blob": "2af0d8e41f8602662a2a642e33a688060122320d",
+        "terms": [
+          "scents.cz",
+          "WANKEL",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents/cherry.html"
+          }
+        ]
+      },
+      {
+        "blob": "c5853197b6b0e4aabe9ca89d3a3d4c1c7f8a7c22",
+        "terms": [
+          "scents.cz",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents/cherry.json"
+          }
+        ]
+      },
+      {
+        "blob": "531c4f5e9bd0739c40c27ed635dbe98b3b89c259",
+        "terms": [
+          "scents.cz",
+          "WANKEL",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents/coconut.html"
+          }
+        ]
+      },
+      {
+        "blob": "9abd95becf2ebff0d9357e725aadc97a8ab200f4",
+        "terms": [
+          "scents.cz",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents/coconut.json"
+          }
+        ]
+      },
+      {
+        "blob": "00cb360d11473dfb03caa1286c065b5d02eccbc1",
+        "terms": [
+          "scents.cz",
+          "WANKEL",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents/delight.html"
+          }
+        ]
+      },
+      {
+        "blob": "413df5d8ad6e4814b07274621a3ca54a4be8e1ad",
+        "terms": [
+          "scents.cz",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents/delight.json"
+          }
+        ]
+      },
+      {
+        "blob": "c6c783332c9635f345e3670418bf61a3154a7db6",
+        "terms": [
+          "scents.cz",
+          "WANKEL",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents/laguna.html"
+          }
+        ]
+      },
+      {
+        "blob": "6f0dc2828365fe37ac92180476a9be38cb2c04fc",
+        "terms": [
+          "scents.cz",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents/laguna.json"
+          }
+        ]
+      },
+      {
+        "blob": "95e23d603d7d7b74a3a13b5af9c4c87c80c9d268",
+        "terms": [
+          "scents.cz",
+          "WANKEL",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents/sunset.html"
+          }
+        ]
+      },
+      {
+        "blob": "20298a8a15061cbe957310cfde2738a9032ced34",
+        "terms": [
+          "scents.cz",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents/sunset.json"
+          }
+        ]
+      },
+      {
+        "blob": "c19e9471008372f707b504c3636f785ac4f0116b",
+        "terms": [
+          "scents.cz",
+          "WANKEL",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents/vanilla.html"
+          }
+        ]
+      },
+      {
+        "blob": "7e23146fd44f2ffb2dcbfe8b30df4c50d27b687f",
+        "terms": [
+          "scents.cz",
+          "California Scents"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/scents/vanilla.json"
+          }
+        ]
+      },
+      {
+        "blob": "ab7284e871db11f64956cfff90e553b6bb9661cd",
+        "terms": [
+          "scents.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/scents-cookie-final.py"
+          }
+        ]
+      },
+      {
+        "blob": "0bc3809acc63552fe23cfd17ea4d389fbd0666c3",
+        "terms": [
+          "scents.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/scents-cookie.py"
           }
         ]
       }
@@ -452,6 +778,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/aromea-cookie-widget.py"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/aromea-cookie-widget.py"
           }
         ]
       },
@@ -463,6 +793,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave8/aromea-live.py"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave8/aromea-live.py"
           }
         ]
@@ -476,6 +810,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/aromea-about-redirect.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/aromea-about-redirect.json"
           }
         ]
       },
@@ -487,6 +825,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave8/research/aromea-about.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave8/research/aromea-about.html"
           }
         ]
@@ -501,6 +843,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/aromea-ares.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/aromea-ares.json"
           }
         ]
       },
@@ -513,6 +859,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave8/research/aromea-legacy-redirect.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave8/research/aromea-legacy-redirect.json"
           }
         ]
@@ -527,6 +877,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/aromea-legacy.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/aromea-legacy.html"
           }
         ]
       },
@@ -538,6 +892,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave8/research/aromea-parfemy.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave8/research/aromea-parfemy.html"
           }
         ]
@@ -553,6 +911,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/aromea-size.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/aromea-size.html"
           }
         ]
       },
@@ -567,6 +929,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/aromea-terms.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/aromea-terms.html"
           }
         ]
       },
@@ -579,6 +945,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave8/research/aromea.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave8/research/aromea.html"
           }
         ]
@@ -599,6 +969,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/duplicate-terms.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/duplicate-terms.json"
           }
         ]
       },
@@ -618,6 +992,438 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/fresh-duplicates.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/fresh-duplicates.json"
+          }
+        ]
+      },
+      {
+        "blob": "20411e9d71f3f30e8716ca454143386cd79a8215",
+        "terms": [
+          "aromea.cz",
+          "AROMEA s.r.o.",
+          "22042318",
+          "svetbytovychvuni.cz",
+          "Iveta Zábranská",
+          "74144227"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "catalogues/aromea.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/candidate-packages/aromea/catalogue.js"
+          }
+        ]
+      },
+      {
+        "blob": "23e91a043f43fffda0b44bf9a923c6bf4fae2f14",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "n447/s5/perfume-fragments/aromea.config.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/candidate-packages/aromea/config.json"
+          }
+        ]
+      },
+      {
+        "blob": "743ff36a1e60a67e52e4964875ebfe5504313eda",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "n447/s5/perfume-fragments/aromea.selection-model.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "n447/s5/sources/aromea/selection-model.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/candidate-packages/aromea/selection-model.json"
+          }
+        ]
+      },
+      {
+        "blob": "8687162032a8b334eb097e7537bc03f30caca973",
+        "terms": [
+          "aromea.cz",
+          "AROMEA s.r.o.",
+          "22042318",
+          "svetbytovychvuni.cz",
+          "Iveta Zábranská",
+          "74144227"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "n447/s5/sources/aromea/verified-products.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/candidate-packages/aromea/verified-products.json"
+          }
+        ]
+      },
+      {
+        "blob": "433ac0b27655f3e2f79c5ffda0fb14efe7f93787",
+        "terms": [
+          "aromea.cz",
+          "22042318",
+          "svetbytovychvuni.cz",
+          "74144227"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/AROMEA-HANDOFF.md"
+          }
+        ]
+      },
+      {
+        "blob": "7c7dff595cd37ec969b8ec4b7552720d38defdd5",
+        "terms": [
+          "aromea.cz",
+          "AROMEA s.r.o.",
+          "22042318",
+          "svetbytovychvuni.cz",
+          "Iveta Zábranská",
+          "74144227"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/build-aromea.py"
+          }
+        ]
+      },
+      {
+        "blob": "a168382802efccfccb870f3313f66cb26c44546c",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/candidate-packages/aromea/integration-review.json"
+          }
+        ]
+      },
+      {
+        "blob": "07bf06193fd61fd4bc5748ac4c51e42b47595a71",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/capture-aromea.py"
+          }
+        ]
+      },
+      {
+        "blob": "951527cb430454a5c2ac4a726fa9507e69dacda3",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/download-aromea.py"
+          }
+        ]
+      },
+      {
+        "blob": "505098181772313d70217484a76424051cfbc476",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/engine-qa.json"
+          }
+        ]
+      },
+      {
+        "blob": "f34a5f2c1a761b0d598419519aee34feb857db8c",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/proof/aromea/local-qa.json"
+          }
+        ]
+      },
+      {
+        "blob": "46741cbfd28c4feeb46ef46f01f88f1651e52c4b",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/aramaik-10ml.html"
+          }
+        ]
+      },
+      {
+        "blob": "8ced320921a9a43794cc8c26b4ff0ad74198483a",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/aramaik-10ml.json"
+          }
+        ]
+      },
+      {
+        "blob": "80aa928a7c9a341874d1eee45571d94736441a09",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/aramaik.html"
+          }
+        ]
+      },
+      {
+        "blob": "1d1aa62b147cded336ea51d95b9bd49d1092881b",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/aramaik.json"
+          }
+        ]
+      },
+      {
+        "blob": "b6fd2a2f6afc0dd94330e2768c9f3da96e41167a",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/cafe-satin.html"
+          }
+        ]
+      },
+      {
+        "blob": "f58654f9bd1d21bc2428c4751a7e72502865a5dc",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/cafe-satin.json"
+          }
+        ]
+      },
+      {
+        "blob": "7f12bc3fc8ad17dc77d9f1a2ded1e58535557641",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/dolce-medicea.html"
+          }
+        ]
+      },
+      {
+        "blob": "557c273c2f905ba835fb4232f81c904d6a73fbbe",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/dolce-medicea.json"
+          }
+        ]
+      },
+      {
+        "blob": "c9074b052422259893e1dcf41005e87e0669795b",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/ghirlandaio.html"
+          }
+        ]
+      },
+      {
+        "blob": "3108e78609397e4c275770f2b5ebf9875fbe58c7",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/ghirlandaio.json"
+          }
+        ]
+      },
+      {
+        "blob": "c3189b43b1404928c6c9226d5682091e6a4481fd",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/linen-buds.html"
+          }
+        ]
+      },
+      {
+        "blob": "2494f02f3d3d7a8077a3b8b4b875d17251be126d",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/linen-buds.json"
+          }
+        ]
+      },
+      {
+        "blob": "fa36f755e0d905911a2cb9fba844541ef9bd4b50",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/malabar-pepper-10ml.html"
+          }
+        ]
+      },
+      {
+        "blob": "f59d0b7b3069033d75290b3a6ab9d0b233341eb7",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/malabar-pepper-10ml.json"
+          }
+        ]
+      },
+      {
+        "blob": "803c90827e484e4bfc7e3070246bb7ab756d956f",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/malabar-pepper.html"
+          }
+        ]
+      },
+      {
+        "blob": "a0c2f940db30b623779431cc0db945c0f4dab833",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/malabar-pepper.json"
+          }
+        ]
+      },
+      {
+        "blob": "915e3a9d2ae5e90371be76ae517dae11781d2d0e",
+        "terms": [
+          "aromea.cz"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/aromea/photos.json"
+          }
+        ]
+      },
+      {
+        "blob": "4cd3169510ce2aad550dcc931844eb3f466cd7f6",
+        "terms": [
+          "aromea.cz",
+          "svet-bytovych-vuni.cz",
+          "AROMEA s.r.o.",
+          "22042318",
+          "svetbytovychvuni.cz",
+          "Svět bytových vůní",
+          "Iveta Zábranská",
+          "74144227"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/duplicate-terms.json"
+          }
+        ]
+      },
+      {
+        "blob": "ccff5c7a1a3afa0431dfbebad4136adc9f2e5c51",
+        "terms": [
+          "aromea.cz",
+          "svet-bytovych-vuni.cz",
+          "AROMEA s.r.o.",
+          "22042318",
+          "svetbytovychvuni.cz",
+          "Svět bytových vůní",
+          "Iveta Zábranská",
+          "74144227"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/fresh-duplicates.json"
+          }
+        ]
+      },
+      {
+        "blob": "fa7de0362930a81790df1f837e4d7def9ed3808d",
+        "terms": [
+          "aromea.cz",
+          "AROMEA s.r.o.",
+          "22042318",
+          "svetbytovychvuni.cz",
+          "74144227"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/coord/s5-claims",
+            "path": "claims.md"
           }
         ]
       }
@@ -631,6 +1437,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave8/laundry-car-live.py"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave8/laundry-car-live.py"
           }
         ]
@@ -648,6 +1458,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/duplicate-terms.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/duplicate-terms.json"
           }
         ]
       },
@@ -664,6 +1478,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/fresh-duplicates.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/fresh-duplicates.json"
           }
         ]
       },
@@ -676,6 +1494,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave8/research/kifra-financial-full-2025.txt"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave8/research/kifra-financial-full-2025.txt"
           }
         ]
@@ -690,6 +1512,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/kifra-home.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/kifra-home.html"
           }
         ]
       },
@@ -703,6 +1529,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/kifra-report-10365636.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/kifra-report-10365636.json"
           }
         ]
       },
@@ -715,6 +1545,10 @@
         "locations": [
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
+            "path": "tools/s5/perfume-wave8/research/kifra-rpo.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
             "path": "tools/s5/perfume-wave8/research/kifra-rpo.json"
           }
         ]
@@ -731,6 +1565,10 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/kifra-terms.html"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/kifra-terms.html"
           }
         ]
       },
@@ -744,6 +1582,394 @@
           {
             "ref": "refs/remotes/origin/codex/s5-perfume-wave8-20261114",
             "path": "tools/s5/perfume-wave8/research/kifra-unit.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave8/research/kifra-unit.json"
+          }
+        ]
+      },
+      {
+        "blob": "8d1d42ceeeaad21ff9a5de25407df54678110c50",
+        "terms": [
+          "kifra.sk",
+          "neater.me",
+          "50184377"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "catalogues/kifra.js"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/candidate-packages/kifra/catalogue.js"
+          }
+        ]
+      },
+      {
+        "blob": "a4a0f5b119372a0a2a0ded0cdf4a7fdc5143a4b6",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "n447/s5/perfume-fragments/kifra.config.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/candidate-packages/kifra/config.json"
+          }
+        ]
+      },
+      {
+        "blob": "346f3e8704dae1ce459dace7b3af52b8917a8fdd",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "n447/s5/perfume-fragments/kifra.selection-model.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "n447/s5/sources/kifra/selection-model.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/candidate-packages/kifra/selection-model.json"
+          }
+        ]
+      },
+      {
+        "blob": "93583dd011e7a98f5821d70d1986e464cc942e23",
+        "terms": [
+          "kifra.sk",
+          "neater.me",
+          "50184377"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "n447/s5/sources/kifra/verified-products.json"
+          },
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/candidate-packages/kifra/verified-products.json"
+          }
+        ]
+      },
+      {
+        "blob": "a400538fdb8fd874af66db6ebc7b73142f811545",
+        "terms": [
+          "kifra.sk",
+          "kifra.cz",
+          "neater.me",
+          "50184377",
+          "predaj@kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/KIFRA-HANDOFF.md"
+          }
+        ]
+      },
+      {
+        "blob": "5d68d7b52a2f6f7901b0588d624735ce04b94464",
+        "terms": [
+          "kifra.sk",
+          "neater.me",
+          "50184377"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/build-kifra.py"
+          }
+        ]
+      },
+      {
+        "blob": "664ffffd11f4c2a6637de48fc221ae576001c6e4",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/candidate-packages/kifra/integration-review.json"
+          }
+        ]
+      },
+      {
+        "blob": "64492a4503888792a12a2965a321abe1a1918546",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/capture-kifra.py"
+          }
+        ]
+      },
+      {
+        "blob": "44a4bf9d16a8d78884e6ee1528221bcdfc7f414f",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/download-kifra.py"
+          }
+        ]
+      },
+      {
+        "blob": "505098181772313d70217484a76424051cfbc476",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/engine-qa.json"
+          }
+        ]
+      },
+      {
+        "blob": "7114a89b6ef21a5ad80a5d141ddbd00593141e51",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/kifra-cookie-widget.py"
+          }
+        ]
+      },
+      {
+        "blob": "ff027655563bb00b150b742a8af30bf038433fee",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/proof/kifra/local-qa.json"
+          }
+        ]
+      },
+      {
+        "blob": "4cd3169510ce2aad550dcc931844eb3f466cd7f6",
+        "terms": [
+          "kifra.sk",
+          "kifra.cz",
+          "neater.me",
+          "50184377",
+          "predaj@kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/duplicate-terms.json"
+          }
+        ]
+      },
+      {
+        "blob": "ccff5c7a1a3afa0431dfbebad4136adc9f2e5c51",
+        "terms": [
+          "kifra.sk",
+          "kifra.cz",
+          "neater.me",
+          "50184377",
+          "predaj@kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/fresh-duplicates.json"
+          }
+        ]
+      },
+      {
+        "blob": "98d817b6abba2e3578bfb0edeb44915c3391fc47",
+        "terms": [
+          "kifra.sk",
+          "predaj@kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/fresh-caps.html"
+          }
+        ]
+      },
+      {
+        "blob": "1c7748cf1dc7f334f856f81fbba6bc524424e66a",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/fresh-caps.json"
+          }
+        ]
+      },
+      {
+        "blob": "e16a19653a37077038f90d48a9c49de4b8873aa2",
+        "terms": [
+          "kifra.sk",
+          "predaj@kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/japanese-garden.html"
+          }
+        ]
+      },
+      {
+        "blob": "3d454dee8c8d80fec3378b78d5ed4e1991cb400e",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/japanese-garden.json"
+          }
+        ]
+      },
+      {
+        "blob": "a31f9efcc104b2acf8d645ae111f7f1895b2a79b",
+        "terms": [
+          "kifra.sk",
+          "predaj@kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/lavender.html"
+          }
+        ]
+      },
+      {
+        "blob": "00eaeb7b523e69d7f132ada5221b8514f9eef421",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/lavender.json"
+          }
+        ]
+      },
+      {
+        "blob": "558860e7e5a30420c2b4568d09a1a5d6b135f842",
+        "terms": [
+          "kifra.sk",
+          "predaj@kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/mango.html"
+          }
+        ]
+      },
+      {
+        "blob": "e6e68220fc179bc7b7df13d006d2361c0d2a35fe",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/mango.json"
+          }
+        ]
+      },
+      {
+        "blob": "f3d611778a7efa3cfb9447b232da7d1b3beccc90",
+        "terms": [
+          "kifra.sk",
+          "predaj@kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/ocean.html"
+          }
+        ]
+      },
+      {
+        "blob": "628c2b35039f6b2fc5d33d1d29024fc13b5337f9",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/ocean.json"
+          }
+        ]
+      },
+      {
+        "blob": "945b579b900a5e646787d96812046a7b12d1b59a",
+        "terms": [
+          "kifra.sk",
+          "predaj@kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/orange.html"
+          }
+        ]
+      },
+      {
+        "blob": "655821f49a28c945d272b5f6bdd92526a75183af",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/orange.json"
+          }
+        ]
+      },
+      {
+        "blob": "600d6b26df2e5aa1375c3860c9f336943977328d",
+        "terms": [
+          "kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/codex/s5-perfume-wave9-20261114",
+            "path": "tools/s5/perfume-wave9/research/kifra/photos.json"
+          }
+        ]
+      },
+      {
+        "blob": "fa7de0362930a81790df1f837e4d7def9ed3808d",
+        "terms": [
+          "kifra.sk",
+          "kifra.cz",
+          "neater.me",
+          "50184377",
+          "predaj@kifra.sk"
+        ],
+        "locations": [
+          {
+            "ref": "refs/remotes/origin/coord/s5-claims",
+            "path": "claims.md"
           }
         ]
       }

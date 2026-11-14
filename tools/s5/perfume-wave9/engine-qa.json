@@ -209,6 +209,109 @@
       ],
       "formulaCount": 6,
       "status": "PASS"
+    },
+    "scents": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "cherry"
+          },
+          "id": "cherry",
+          "url": "https://scents.cz/domu/21-visen-coronado-cherry.html"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "coconut"
+          },
+          "id": "coconut",
+          "url": "https://scents.cz/domu/27-kokos-capistrano-coconut.html"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "vanilla"
+          },
+          "id": "vanilla",
+          "url": "https://scents.cz/domu/41-vanilka-monterey-vanilla.html"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "delight"
+          },
+          "id": "delight",
+          "url": "https://scents.cz/domu/47-zvykacka-pedro-golden-state-delight.html"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "laguna"
+          },
+          "id": "laguna",
+          "url": "https://scents.cz/domu/28-vune-more-laguna-breeze.html"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "sunset"
+          },
+          "id": "sunset",
+          "url": "https://scents.cz/domu/73-sunset-woods.html"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fruit",
+              "sweet",
+              "fresh"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "cherry",
+              "coconut"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "vanilla",
+              "delight"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "laguna",
+              "sunset"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
     }
   }
 }
