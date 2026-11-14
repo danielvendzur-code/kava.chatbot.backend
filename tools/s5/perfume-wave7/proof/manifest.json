@@ -532,5 +532,557 @@
     "file": "odeur-question/after.png",
     "bytes": 144135,
     "sha256": "8cac9929781af290d63882a1ce70290d477ad073e0871034efabc3ddbe6f9c11"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-question-2-320.png",
+    "bytes": 137243,
+    "sha256": "8db8ed8bebdecfa9d1647c002d8f3634c9eb72202af40947b89aaefb7574a01c"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-plum-tonic-1280.png",
+    "bytes": 19797,
+    "sha256": "5baef73c1813048b3b557ddf1f8ac3e42cc5da626b0ab1b1c837f196d62ca3a6"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-compare-1280.png",
+    "bytes": 134556,
+    "sha256": "c399703b945b6b8aaaa189dfb6ec6360e23feb72d9435315c3c563ab1bfa4620"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-plum-tonic-320.png",
+    "bytes": 20065,
+    "sha256": "e02657cc35125e31c5c16cbf711f3ecd2272799168bc992face0248634971ec3"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-dirty-hinoki-1280.png",
+    "bytes": 18508,
+    "sha256": "5276bc73aaa7db3e076b73da1e82248fb920b61f650107808706de2d43243d56"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-dirty-coconut-320.png",
+    "bytes": 19241,
+    "sha256": "1e8fe0967040832ba442e22390e027459bee73f8823a68f8ef4fa620fb224840"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-plum-tonic-390.png",
+    "bytes": 79074,
+    "sha256": "25e8bd2975a8a5a0b11a9cdaf8a3ec914f8952d03b6c0ad53fd57e076c80ecd2"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-rhubarb-thief-320.png",
+    "bytes": 73197,
+    "sha256": "21653677732c1130d544ccfebf4ac26fed19a2e7baaf4cae2e217829f3b217d0"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-dirty-hinoki-390.png",
+    "bytes": 74446,
+    "sha256": "1b3f23d37ddd755857def2ab1511183a38add78f3ef131e2f1e95bf373116939"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-chat-0-320.png",
+    "bytes": 53319,
+    "sha256": "a1547ca215b07f1950c5e84c807a1faf38199ae4230ffacbf8327e85982a4587"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "all-results-320.jpg",
+    "bytes": 165874,
+    "sha256": "8afb377c6d08e595b0bb36a2e9d842800e32d05e212fb615123e0346311b57c6"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-chat-1-320.png",
+    "bytes": 52120,
+    "sha256": "45c36756bc0352bddef684971d83c4fc6841b47efdfb63153120882bf1e71ba4"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-chat-0-390.png",
+    "bytes": 54559,
+    "sha256": "f3114b73146d7e014dcaa4f64ac461862e58f737cf25d12e17e99c262894a1d5"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-dirty-hinoki-390.png",
+    "bytes": 18259,
+    "sha256": "181011e70f7e529254e2ed36399c20685eec668871df643f645b4fccb5e6eb45"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-vanilla-rice-1280.png",
+    "bytes": 18411,
+    "sha256": "654720058ab6c86357a31f7bd40a9140043a471a5b68729cbb6fedadd256d620"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-black-salt-1280.png",
+    "bytes": 19152,
+    "sha256": "1c84850878dca357e57bb39b9eb7bbea3e2a20e83262599d02da7eb156ac5c22"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-dirty-hinoki-320.png",
+    "bytes": 72732,
+    "sha256": "31fefa558e07774280deb6b2f9b458947f2c80c1d54a077530b96dab552eee26"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-chat-2-320.png",
+    "bytes": 51852,
+    "sha256": "b79308f66315dca49ab625fa2a1fa616e45454dd62a97bc67769a729f18c07cf"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-chat-2-1280.png",
+    "bytes": 116577,
+    "sha256": "5825e57256340f4f1f45398bc004f5f03c7a83f5cdb751737cc6641f0c29d44c"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-compare-320.png",
+    "bytes": 79658,
+    "sha256": "e9a235b460f19ded5cfcc6abfa79e3b82d70e5306e2d787f9814f46c6dfb167c"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-black-salt-320.png",
+    "bytes": 70141,
+    "sha256": "643d2f53091d0195d20dcff80724a40fc47a4f657f28da1c9d47015838f90ffb"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-rhubarb-thief-390.png",
+    "bytes": 18399,
+    "sha256": "e2de08f9e99b9c1d6e9284cc7c1e152060c098a3d49781fde08a2a57a349534a"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-dirty-coconut-390.png",
+    "bytes": 81068,
+    "sha256": "f62209d2eff7f9e9defaa80905bba157c278a4243a552f2abac13819ab661618"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-dirty-coconut-320.png",
+    "bytes": 77713,
+    "sha256": "28ce9f7ee9f1035158668a022a4165d532a101595994808a35ea317b3523d623"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-black-salt-390.png",
+    "bytes": 79159,
+    "sha256": "5866e28885e856b790e1dc336e022730bde7fe38f439ba8a9eafc3a6183cf3c4"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-rhubarb-thief-320.png",
+    "bytes": 77853,
+    "sha256": "1632443f29d4d7dee7ebd80fa7439134fd5eef0e032718827aa2df13b2090253"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-dirty-hinoki-320.png",
+    "bytes": 17801,
+    "sha256": "a195066e72b8b98ccaa58dfb2171ff7da0b12f02cffab95d7d66e5d0839f65ea"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-vanilla-rice-390.png",
+    "bytes": 18056,
+    "sha256": "72e38f95a71eaf14a1f8ad23ca3b45473606a42ffa7dbb28191541e5676e7542"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-plum-tonic-1280.png",
+    "bytes": 135265,
+    "sha256": "d6901a60293f3b1561a63517c66cdf23057be4756a0e273cdeaead577dd62a88"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-black-salt-390.png",
+    "bytes": 74106,
+    "sha256": "55e4a6cad0ed72ff7470e0ba998d630ab4e80b5422aa4d91955f27c8a2532730"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-dirty-coconut-1280.png",
+    "bytes": 133714,
+    "sha256": "274708047f79501c966e50e64045c08d24ffc28f926e313c61aab3dd77d09940"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-dirty-coconut-1280.png",
+    "bytes": 140536,
+    "sha256": "86b38334475dcd6dfce401cf4c0761427158ed236bb95032b65fd67a08e693d6"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-dirty-hinoki-1280.png",
+    "bytes": 130801,
+    "sha256": "253df4901b8fd25e020dcc0addcde0226291fd82ef27204df1852ee57a5ec793"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-dirty-hinoki-1280.png",
+    "bytes": 136231,
+    "sha256": "17d3f969a94c07c65407567eed2530f37fce18e2041376e56d30350219cbd84f"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-black-salt-320.png",
+    "bytes": 18482,
+    "sha256": "48e4f7789078e12b3aa2e064bc14ec7ab6e5f7c165274314b33d8dc6c776d002"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-question-1-1280.png",
+    "bytes": 332662,
+    "sha256": "0430d175f6fc308731db226d96d2782eefa507ad7b772463bd078f67159eb682"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-chat-0-1280.png",
+    "bytes": 118756,
+    "sha256": "e5cdb33381ab1734608981f59f302561c8e238c4c508ee2e62ff24b74b3f535d"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-black-salt-1280.png",
+    "bytes": 138874,
+    "sha256": "e8e5ec3ea8de2da7bb4d9d9e68d4a77840332fa35d6423718cbd375b33913423"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-vanilla-rice-320.png",
+    "bytes": 74126,
+    "sha256": "af96f406c532ccc0b6530df58a7aa41d7a05380642393cff720e0a4b01baa593"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-black-salt-390.png",
+    "bytes": 18822,
+    "sha256": "1212ec624c459be2e0e50bc92f41b53359d4dd2f04901d5102de9c4c8e0b83f1"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-question-2-390.png",
+    "bytes": 140181,
+    "sha256": "47628d61d073149c596a66c63d48b65b7d01dda3d68694a4ad0034c5dd3fa2bf"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "all-results-390.jpg",
+    "bytes": 176891,
+    "sha256": "553796006347353c645ad4486862c2517c5af44b0dbac362e42f1c85b3be169c"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-question-1-390.png",
+    "bytes": 239255,
+    "sha256": "cc36f0f1b7021d9618fccae20b5f96496b80d1f109500710f90e0f2f000591b7"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-question-3-390.png",
+    "bytes": 108983,
+    "sha256": "3767a0bd7a2118dbaf371e1df727fe74daf97c939a6b40c546f40e1749e93393"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-question-3-320.png",
+    "bytes": 106144,
+    "sha256": "ab1ac0faab89fc7df6805b83d831a2bb3f731dbf70973826f760595dfa5a6fde"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-plum-tonic-320.png",
+    "bytes": 76553,
+    "sha256": "0c806686a892229dd9fc42cea91ccfce39c63ddd4c60a24384981b900053a68a"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-vanilla-rice-390.png",
+    "bytes": 77815,
+    "sha256": "dd8b46358b138024c9c60698ace644a5321049602abc4d21d8cd5299bb2fd144"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-vanilla-rice-320.png",
+    "bytes": 73926,
+    "sha256": "868d714ffbd52346020af4c53d6bffa77a5878a708f2aa494bb3b2a02c89f760"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-vanilla-rice-1280.png",
+    "bytes": 137473,
+    "sha256": "19264343927fdd8f2f964e4d052c967713205d092b1b614fd466dfed9d6aff8e"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-dirty-coconut-1280.png",
+    "bytes": 19687,
+    "sha256": "2faa45531e60d44b9b59501a5ef821d8428ea8585e974df0bbd09436f29c7d82"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-question-4-390.png",
+    "bytes": 124022,
+    "sha256": "e7ce6b07fbf4483f77b2af6159d68b1a1eed47f7fab087945a24a7b05199b83a"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-black-salt-320.png",
+    "bytes": 76104,
+    "sha256": "53b77f3c72fe39f1e14c49ec44ffaf5068837385942f556c165a9c323259325c"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-compare-390.png",
+    "bytes": 82262,
+    "sha256": "47a378bd7a60e09f0a96534cd3d43c6cfe9f58d926ef44922fbd2a76fb49ac04"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-plum-tonic-390.png",
+    "bytes": 19337,
+    "sha256": "7a158571a8152babd0f7da3a2f4fd8ed9ba4a7ea671bd9c8c6fba600570b09a1"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-plum-tonic-390.png",
+    "bytes": 80765,
+    "sha256": "6b355914dfe5d580e61940c93959b003e3e59c1e3cf71b3567652de19c7a6f38"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-chat-1-1280.png",
+    "bytes": 116684,
+    "sha256": "c54480bcf3c3afedfc5564814c5b3ba81d9bc8812fdc82159792fd226b38cfaf"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-question-4-320.png",
+    "bytes": 121828,
+    "sha256": "4b1ac4278312a890af602a1c764cdc332ee5b90cfa65a261ff7d387d35f92de3"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-rhubarb-thief-1280.png",
+    "bytes": 133234,
+    "sha256": "f578e0960a0067ad34c85085c010637c7ac57e040b1a915c9a1396179c483b02"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-rhubarb-thief-1280.png",
+    "bytes": 18807,
+    "sha256": "3d838603b64064f1619065cd723ed186dcc2e603cd4ea4e0c49beeada0beb82d"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-rhubarb-thief-320.png",
+    "bytes": 18091,
+    "sha256": "08014e1ab2e9ba90a62ee1f33b3d365bbff83ff0a2a744989b693c4d587babf5"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-rhubarb-thief-390.png",
+    "bytes": 80613,
+    "sha256": "7141e6e5f90634497f964c8087b0a16243cff135beefc0b81ca1fb82c5da7e73"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-rhubarb-thief-1280.png",
+    "bytes": 140256,
+    "sha256": "bead889f73ae441b113acce313031587e6661a36b1f6b1927a54ebfae24c4275"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-plum-tonic-320.png",
+    "bytes": 75393,
+    "sha256": "dc8bf33e22475a2f93d9ec97c41b044b15c6b42253a4ff769fee85c5cb4cfcb6"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-black-salt-1280.png",
+    "bytes": 130520,
+    "sha256": "10a20f2d6977495ee4e1804bdcfaa46e17a8f07d3cb928baecf78cee150705dc"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-plum-tonic-1280.png",
+    "bytes": 140132,
+    "sha256": "5722747a43ed86593b448a4ca1de12d94905bb14762b454333d881c95457c2fd"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-dirty-coconut-390.png",
+    "bytes": 76524,
+    "sha256": "433c9d1f556e997be762b347d067e50b14a161f6c268d8ac689a43a05ad150b3"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-question-4-1280.png",
+    "bytes": 173410,
+    "sha256": "5288f8600aafa466698015a9400a225ff39b6836523418917413fe73a9a0577f"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-vanilla-rice-1280.png",
+    "bytes": 134392,
+    "sha256": "500423b89854a6a911e3eef48eb4f2dee5f3511621ec7818531e394de12af1b5"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "all-results-1280.jpg",
+    "bytes": 102590,
+    "sha256": "64127b2352f6cf96f290a444dd1b2018309c300b40db99d4d0815a9a12ce0225"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-chat-1-390.png",
+    "bytes": 52612,
+    "sha256": "5aae18aa6d0f5380c3f1ee29a5454edab66c0f8e51ca0bd711a02f2ec173b42b"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-result-dirty-hinoki-390.png",
+    "bytes": 76789,
+    "sha256": "9604112bea8192d0fd461258a2e94d33aed554810a8be8de1fbadb1319033c52"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-vanilla-rice-320.png",
+    "bytes": 18021,
+    "sha256": "512f4f5aac6b4bc835233ac12de3cdea3ea19c8bbf23f2395550c76594f602bd"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-dirty-hinoki-320.png",
+    "bytes": 70031,
+    "sha256": "66c118b636865fc13faf01c1d66108aa85fc0aa3963e9f8531840b4a895fc512"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-rhubarb-thief-390.png",
+    "bytes": 75715,
+    "sha256": "25e9726feaa67c100a2dc2f1a882225674ab73d29857ce3f37d34430d9eaa9ee"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "independent-ui.json",
+    "bytes": 27991,
+    "sha256": "89b0492eed358a57438e1d5e58137e71f13e0c711cbe2bce47ae00b895ee5a30"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-question-1-320.png",
+    "bytes": 199314,
+    "sha256": "7cd2da93e44beb1ebdfbaeb8ad56b3656b2ab36b5396b2354ea5721c683d3b69"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-vanilla-rice-390.png",
+    "bytes": 77293,
+    "sha256": "7c8047dd319df37c71ee14cee9ccf8f1691bd860b537dbab4ae25c7620ccd59a"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-question-2-1280.png",
+    "bytes": 195189,
+    "sha256": "b5f7bac4f9045c6baed335cf3bd99ade382d6c7b8b8deada28668413af995805"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-note-profile-dirty-coconut-390.png",
+    "bytes": 19563,
+    "sha256": "c16f725c5390c05f151c579b5cbd319fedbe2c60e27d911b488c5fecb8f9ee94"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-question-3-1280.png",
+    "bytes": 164179,
+    "sha256": "36ea108f440fd4290d7239eb22059c939a44d2a76283f22becb180aae890c04d"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-pair-dirty-coconut-320.png",
+    "bytes": 73642,
+    "sha256": "a9f45ee554e4f8a1b7ed0c01d784c413e7bed45a438ad338f026661f4b5691d7"
+  },
+  {
+    "archive": "elobe/local-qa.zip",
+    "file": "elobe-chat-2-390.png",
+    "bytes": 52544,
+    "sha256": "0d4e86810e486d6702d26a30c516c6f0bef19e3caad3bcd5d7d1825fea66c7b4"
+  },
+  {
+    "archive": "elobe/merchant-qa.zip",
+    "file": "merchant-live/elobe-home.png",
+    "bytes": 626317,
+    "sha256": "897a1b65c0ca2923850b442629c7c0ca5e46ac21ba08432d7b8cfdd9aee18364"
+  },
+  {
+    "archive": "elobe/merchant-qa.zip",
+    "file": "merchant-live/elobe-product.html",
+    "bytes": 468244,
+    "sha256": "b04db4941baf8e1441b3089801d87b363c1e61d0ecfb1cb5892a7ba47a937df1"
+  },
+  {
+    "archive": "elobe/merchant-qa.zip",
+    "file": "merchant-live/elobe-product.png",
+    "bytes": 269285,
+    "sha256": "8825157b942f59a232aa8f3678125f6ce3909f0359097f48c202281a7c4af89c"
+  },
+  {
+    "archive": "elobe/merchant-qa.zip",
+    "file": "merchant-live/elobe-home.html",
+    "bytes": 395914,
+    "sha256": "e7aea71a29f706e547e2d822b826e6348ce8b546f589cbd584d16b5aa8481868"
+  },
+  {
+    "archive": "elobe/merchant-qa.zip",
+    "file": "widget-next/elobe-product-necessary.png",
+    "bytes": 281472,
+    "sha256": "2b9c093cfed8b204145fee3c089d4b34031fd3ea3bbb0157ebf6b77c6e8fce56"
+  },
+  {
+    "archive": "elobe/merchant-qa.zip",
+    "file": "widget-next/elobe-error.png",
+    "bytes": 620192,
+    "sha256": "01fe99f803f92f07a54719c9bd7d0c3a1b599a8202fc76c7a6de05e6cf3c6009"
+  },
+  {
+    "archive": "elobe/merchant-qa.zip",
+    "file": "widget-next/elobe-opened.json",
+    "bytes": 18876,
+    "sha256": "11a3dbb4f76606e75bbeb4dc5ceb7b1c7dcf8dd642d65807f1b373d03c30c345"
+  },
+  {
+    "archive": "elobe/merchant-qa.zip",
+    "file": "widget-next/elobe-widget.png",
+    "bytes": 504815,
+    "sha256": "e4d26e9a3e58bf017cae3c8c1574ca20a5cd53f4fc746708c208a43ff7befc15"
+  },
+  {
+    "archive": "elobe/merchant-qa.zip",
+    "file": "widget-next/elobe-final.json",
+    "bytes": 12921,
+    "sha256": "db6d5da0bb29ef42215734724e17f7ee930e1e1ae31d3d24b1aee5b041f3f8b5"
+  },
+  {
+    "archive": "elobe/merchant-qa.zip",
+    "file": "widget-next/elobe-cookies.png",
+    "bytes": 620192,
+    "sha256": "01fe99f803f92f07a54719c9bd7d0c3a1b599a8202fc76c7a6de05e6cf3c6009"
   }
 ]

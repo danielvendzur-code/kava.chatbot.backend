@@ -1,0 +1,977 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-14T18:12:16.338992+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "elobe",
+      "width": 320,
+      "id": "plum-tonic",
+      "pack": "50 ml",
+      "price": "3 690 Kč",
+      "url": "https://elobe.cz/domu/9649-11967-ellis-brooklyn-eau-de-parfum-plum-tonic.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-plum-tonic-320.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "id": "rhubarb-thief",
+      "pack": "50 ml",
+      "price": "4 290 Kč",
+      "url": "https://elobe.cz/heretic-parfum/9584-11950-heretic-prirodni-parfem-rhubarb-thief.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-rhubarb-thief-320.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "id": "vanilla-rice",
+      "pack": "50 ml",
+      "price": "3 690 Kč",
+      "url": "https://elobe.cz/domu/9648-11965-ellis-brooklyn-eau-de-parfum-vannila-rice.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-vanilla-rice-320.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "id": "dirty-coconut",
+      "pack": "50 ml",
+      "price": "4 290 Kč",
+      "url": "https://elobe.cz/heretic-parfum/9578-11934-heretic-prirodni-parfem-dirty-coconut.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-dirty-coconut-320.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "id": "dirty-hinoki",
+      "pack": "50 ml",
+      "price": "4 290 Kč",
+      "url": "https://elobe.cz/heretic-parfum/9581-11945-heretic-prirodni-parfem-dirty-hinoki.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-dirty-hinoki-320.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "id": "black-salt",
+      "pack": "50 ml",
+      "price": "4 290 Kč",
+      "url": "https://elobe.cz/heretic-parfum/9585-11951-heretic-prirodni-parfem-black-salt.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-black-salt-320.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "id": "plum-tonic",
+      "pack": "50 ml",
+      "price": "3 690 Kč",
+      "url": "https://elobe.cz/domu/9649-11967-ellis-brooklyn-eau-de-parfum-plum-tonic.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-plum-tonic-390.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "id": "rhubarb-thief",
+      "pack": "50 ml",
+      "price": "4 290 Kč",
+      "url": "https://elobe.cz/heretic-parfum/9584-11950-heretic-prirodni-parfem-rhubarb-thief.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-rhubarb-thief-390.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "id": "vanilla-rice",
+      "pack": "50 ml",
+      "price": "3 690 Kč",
+      "url": "https://elobe.cz/domu/9648-11965-ellis-brooklyn-eau-de-parfum-vannila-rice.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-vanilla-rice-390.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "id": "dirty-coconut",
+      "pack": "50 ml",
+      "price": "4 290 Kč",
+      "url": "https://elobe.cz/heretic-parfum/9578-11934-heretic-prirodni-parfem-dirty-coconut.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-dirty-coconut-390.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "id": "dirty-hinoki",
+      "pack": "50 ml",
+      "price": "4 290 Kč",
+      "url": "https://elobe.cz/heretic-parfum/9581-11945-heretic-prirodni-parfem-dirty-hinoki.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-dirty-hinoki-390.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "id": "black-salt",
+      "pack": "50 ml",
+      "price": "4 290 Kč",
+      "url": "https://elobe.cz/heretic-parfum/9585-11951-heretic-prirodni-parfem-black-salt.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-black-salt-390.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "id": "plum-tonic",
+      "pack": "50 ml",
+      "price": "3 690 Kč",
+      "url": "https://elobe.cz/domu/9649-11967-ellis-brooklyn-eau-de-parfum-plum-tonic.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-plum-tonic-1280.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "id": "rhubarb-thief",
+      "pack": "50 ml",
+      "price": "4 290 Kč",
+      "url": "https://elobe.cz/heretic-parfum/9584-11950-heretic-prirodni-parfem-rhubarb-thief.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-rhubarb-thief-1280.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "id": "vanilla-rice",
+      "pack": "50 ml",
+      "price": "3 690 Kč",
+      "url": "https://elobe.cz/domu/9648-11965-ellis-brooklyn-eau-de-parfum-vannila-rice.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-vanilla-rice-1280.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "id": "dirty-coconut",
+      "pack": "50 ml",
+      "price": "4 290 Kč",
+      "url": "https://elobe.cz/heretic-parfum/9578-11934-heretic-prirodni-parfem-dirty-coconut.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-dirty-coconut-1280.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "id": "dirty-hinoki",
+      "pack": "50 ml",
+      "price": "4 290 Kč",
+      "url": "https://elobe.cz/heretic-parfum/9581-11945-heretic-prirodni-parfem-dirty-hinoki.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-dirty-hinoki-1280.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "id": "black-salt",
+      "pack": "50 ml",
+      "price": "4 290 Kč",
+      "url": "https://elobe.cz/heretic-parfum/9585-11951-heretic-prirodni-parfem-black-salt.html#/1-_-50_ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "elobe-result-black-salt-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "elobe",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "sweet",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "elobe-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "plum-tonic",
+          "photo": "/assets/s5/elobe/plum-tonic.jpg"
+        },
+        {
+          "id": "rhubarb-thief",
+          "photo": "/assets/s5/elobe/rhubarb-thief.jpg"
+        }
+      ],
+      "screenshot": "elobe-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "vanilla-rice",
+          "photo": "/assets/s5/elobe/vanilla-rice.jpg"
+        },
+        {
+          "id": "dirty-coconut",
+          "photo": "/assets/s5/elobe/dirty-coconut.jpg"
+        }
+      ],
+      "screenshot": "elobe-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "dirty-hinoki",
+          "photo": "/assets/s5/elobe/dirty-hinoki.jpg"
+        },
+        {
+          "id": "black-salt",
+          "photo": "/assets/s5/elobe/black-salt.jpg"
+        }
+      ],
+      "screenshot": "elobe-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "sweet",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "elobe-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "plum-tonic",
+          "photo": "/assets/s5/elobe/plum-tonic.jpg"
+        },
+        {
+          "id": "rhubarb-thief",
+          "photo": "/assets/s5/elobe/rhubarb-thief.jpg"
+        }
+      ],
+      "screenshot": "elobe-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "vanilla-rice",
+          "photo": "/assets/s5/elobe/vanilla-rice.jpg"
+        },
+        {
+          "id": "dirty-coconut",
+          "photo": "/assets/s5/elobe/dirty-coconut.jpg"
+        }
+      ],
+      "screenshot": "elobe-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "dirty-hinoki",
+          "photo": "/assets/s5/elobe/dirty-hinoki.jpg"
+        },
+        {
+          "id": "black-salt",
+          "photo": "/assets/s5/elobe/black-salt.jpg"
+        }
+      ],
+      "screenshot": "elobe-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "sweet",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        }
+      ],
+      "screenshot": "elobe-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "plum-tonic",
+          "photo": "/assets/s5/elobe/plum-tonic.jpg"
+        },
+        {
+          "id": "rhubarb-thief",
+          "photo": "/assets/s5/elobe/rhubarb-thief.jpg"
+        }
+      ],
+      "screenshot": "elobe-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "vanilla-rice",
+          "photo": "/assets/s5/elobe/vanilla-rice.jpg"
+        },
+        {
+          "id": "dirty-coconut",
+          "photo": "/assets/s5/elobe/dirty-coconut.jpg"
+        }
+      ],
+      "screenshot": "elobe-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "dirty-hinoki",
+          "photo": "/assets/s5/elobe/dirty-hinoki.jpg"
+        },
+        {
+          "id": "black-salt",
+          "photo": "/assets/s5/elobe/black-salt.jpg"
+        }
+      ],
+      "screenshot": "elobe-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "elobe",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "plum-tonic",
+        "dirty-hinoki"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "elobe-compare-320.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "plum-tonic",
+        "dirty-hinoki"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "elobe-compare-390.png"
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "plum-tonic",
+        "dirty-hinoki"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "elobe-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "noteProfiles": [
+    {
+      "slug": "elobe",
+      "id": "plum-tonic",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "šumivá mandarinka, švestkový nektar, açaí",
+        "okvětní lístky pivoňky, květ kosatce, list fialky",
+        "antarové krystaly, kašmírové dřevo, cukrové pižmo"
+      ],
+      "screenshot": "elobe-note-profile-plum-tonic-320.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "rhubarb-thief",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "kůra z grapefruitu, cedr, andělika, tymián, verbena, mrkvové semínko",
+        "rebarbora, růžový jasmín, cypřiš",
+        "elemi, dubový mech"
+      ],
+      "screenshot": "elobe-note-profile-rhubarb-thief-320.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "vanilla-rice",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "mandarinka, rosa z frézie, pražená rýže",
+        "květy sakury, kokosové mléko, jasmínový nektar",
+        "pižma, tonkové boby, vanilka"
+      ],
+      "screenshot": "elobe-note-profile-vanilla-rice-320.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "dirty-coconut",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "cedr, vanilin (získaný z hřebíčku)",
+        "kokosový extrakt CO2",
+        "santalové dřevo, vanilkový absolue, ambrettolid (bezpečné syntetické pižmo)"
+      ],
+      "screenshot": "elobe-note-profile-dirty-coconut-320.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "dirty-hinoki",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "citron, cedr, muškátový oříšek, tymián, borovice",
+        "hinoki, cypřiš",
+        "elemi, pelyněk, jedlové absolue, ambrettolid, balzám, kadidlo"
+      ],
+      "screenshot": "elobe-note-profile-dirty-hinoki-320.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "black-salt",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "černý pepř, limetka, mandarinka, eukalyptus",
+        "jasmín sambac, leknín, turecká růže, uzená mořská sůl",
+        "mořské řasy, labdanum, petrichor"
+      ],
+      "screenshot": "elobe-note-profile-black-salt-320.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "plum-tonic",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "šumivá mandarinka, švestkový nektar, açaí",
+        "okvětní lístky pivoňky, květ kosatce, list fialky",
+        "antarové krystaly, kašmírové dřevo, cukrové pižmo"
+      ],
+      "screenshot": "elobe-note-profile-plum-tonic-390.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "rhubarb-thief",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "kůra z grapefruitu, cedr, andělika, tymián, verbena, mrkvové semínko",
+        "rebarbora, růžový jasmín, cypřiš",
+        "elemi, dubový mech"
+      ],
+      "screenshot": "elobe-note-profile-rhubarb-thief-390.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "vanilla-rice",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "mandarinka, rosa z frézie, pražená rýže",
+        "květy sakury, kokosové mléko, jasmínový nektar",
+        "pižma, tonkové boby, vanilka"
+      ],
+      "screenshot": "elobe-note-profile-vanilla-rice-390.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "dirty-coconut",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "cedr, vanilin (získaný z hřebíčku)",
+        "kokosový extrakt CO2",
+        "santalové dřevo, vanilkový absolue, ambrettolid (bezpečné syntetické pižmo)"
+      ],
+      "screenshot": "elobe-note-profile-dirty-coconut-390.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "dirty-hinoki",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "citron, cedr, muškátový oříšek, tymián, borovice",
+        "hinoki, cypřiš",
+        "elemi, pelyněk, jedlové absolue, ambrettolid, balzám, kadidlo"
+      ],
+      "screenshot": "elobe-note-profile-dirty-hinoki-390.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "black-salt",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "černý pepř, limetka, mandarinka, eukalyptus",
+        "jasmín sambac, leknín, turecká růže, uzená mořská sůl",
+        "mořské řasy, labdanum, petrichor"
+      ],
+      "screenshot": "elobe-note-profile-black-salt-390.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "plum-tonic",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "šumivá mandarinka, švestkový nektar, açaí",
+        "okvětní lístky pivoňky, květ kosatce, list fialky",
+        "antarové krystaly, kašmírové dřevo, cukrové pižmo"
+      ],
+      "screenshot": "elobe-note-profile-plum-tonic-1280.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "rhubarb-thief",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "kůra z grapefruitu, cedr, andělika, tymián, verbena, mrkvové semínko",
+        "rebarbora, růžový jasmín, cypřiš",
+        "elemi, dubový mech"
+      ],
+      "screenshot": "elobe-note-profile-rhubarb-thief-1280.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "vanilla-rice",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "mandarinka, rosa z frézie, pražená rýže",
+        "květy sakury, kokosové mléko, jasmínový nektar",
+        "pižma, tonkové boby, vanilka"
+      ],
+      "screenshot": "elobe-note-profile-vanilla-rice-1280.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "dirty-coconut",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "cedr, vanilin (získaný z hřebíčku)",
+        "kokosový extrakt CO2",
+        "santalové dřevo, vanilkový absolue, ambrettolid (bezpečné syntetické pižmo)"
+      ],
+      "screenshot": "elobe-note-profile-dirty-coconut-1280.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "dirty-hinoki",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "citron, cedr, muškátový oříšek, tymián, borovice",
+        "hinoki, cypřiš",
+        "elemi, pelyněk, jedlové absolue, ambrettolid, balzám, kadidlo"
+      ],
+      "screenshot": "elobe-note-profile-dirty-hinoki-1280.png"
+    },
+    {
+      "slug": "elobe",
+      "id": "black-salt",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "černý pepř, limetka, mandarinka, eukalyptus",
+        "jasmín sambac, leknín, turecká růže, uzená mořská sůl",
+        "mořské řasy, labdanum, petrichor"
+      ],
+      "screenshot": "elobe-note-profile-black-salt-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "elobe",
+      "width": 320,
+      "id": "plum-tonic",
+      "defaultScreenshot": "elobe-result-plum-tonic-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-plum-tonic-320.png",
+      "comparisonIds": [
+        "plum-tonic",
+        "rhubarb-thief"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "id": "rhubarb-thief",
+      "defaultScreenshot": "elobe-result-rhubarb-thief-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-rhubarb-thief-320.png",
+      "comparisonIds": [
+        "rhubarb-thief",
+        "plum-tonic"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "id": "vanilla-rice",
+      "defaultScreenshot": "elobe-result-vanilla-rice-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-vanilla-rice-320.png",
+      "comparisonIds": [
+        "vanilla-rice",
+        "dirty-coconut"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "id": "dirty-coconut",
+      "defaultScreenshot": "elobe-result-dirty-coconut-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-dirty-coconut-320.png",
+      "comparisonIds": [
+        "dirty-coconut",
+        "vanilla-rice"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "id": "dirty-hinoki",
+      "defaultScreenshot": "elobe-result-dirty-hinoki-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-dirty-hinoki-320.png",
+      "comparisonIds": [
+        "dirty-hinoki",
+        "black-salt"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 320,
+      "id": "black-salt",
+      "defaultScreenshot": "elobe-result-black-salt-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-black-salt-320.png",
+      "comparisonIds": [
+        "black-salt",
+        "dirty-hinoki"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "id": "plum-tonic",
+      "defaultScreenshot": "elobe-result-plum-tonic-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-plum-tonic-390.png",
+      "comparisonIds": [
+        "plum-tonic",
+        "rhubarb-thief"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "id": "rhubarb-thief",
+      "defaultScreenshot": "elobe-result-rhubarb-thief-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-rhubarb-thief-390.png",
+      "comparisonIds": [
+        "rhubarb-thief",
+        "plum-tonic"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "id": "vanilla-rice",
+      "defaultScreenshot": "elobe-result-vanilla-rice-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-vanilla-rice-390.png",
+      "comparisonIds": [
+        "vanilla-rice",
+        "dirty-coconut"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "id": "dirty-coconut",
+      "defaultScreenshot": "elobe-result-dirty-coconut-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-dirty-coconut-390.png",
+      "comparisonIds": [
+        "dirty-coconut",
+        "vanilla-rice"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "id": "dirty-hinoki",
+      "defaultScreenshot": "elobe-result-dirty-hinoki-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-dirty-hinoki-390.png",
+      "comparisonIds": [
+        "dirty-hinoki",
+        "black-salt"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 390,
+      "id": "black-salt",
+      "defaultScreenshot": "elobe-result-black-salt-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-black-salt-390.png",
+      "comparisonIds": [
+        "black-salt",
+        "dirty-hinoki"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "id": "plum-tonic",
+      "defaultScreenshot": "elobe-result-plum-tonic-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-plum-tonic-1280.png",
+      "comparisonIds": [
+        "plum-tonic",
+        "rhubarb-thief"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "id": "rhubarb-thief",
+      "defaultScreenshot": "elobe-result-rhubarb-thief-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-rhubarb-thief-1280.png",
+      "comparisonIds": [
+        "rhubarb-thief",
+        "plum-tonic"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "id": "vanilla-rice",
+      "defaultScreenshot": "elobe-result-vanilla-rice-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-vanilla-rice-1280.png",
+      "comparisonIds": [
+        "vanilla-rice",
+        "dirty-coconut"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "id": "dirty-coconut",
+      "defaultScreenshot": "elobe-result-dirty-coconut-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-dirty-coconut-1280.png",
+      "comparisonIds": [
+        "dirty-coconut",
+        "vanilla-rice"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "id": "dirty-hinoki",
+      "defaultScreenshot": "elobe-result-dirty-hinoki-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-dirty-hinoki-1280.png",
+      "comparisonIds": [
+        "dirty-hinoki",
+        "black-salt"
+      ]
+    },
+    {
+      "slug": "elobe",
+      "width": 1280,
+      "id": "black-salt",
+      "defaultScreenshot": "elobe-result-black-salt-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "elobe-pair-black-salt-1280.png",
+      "comparisonIds": [
+        "black-salt",
+        "dirty-hinoki"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

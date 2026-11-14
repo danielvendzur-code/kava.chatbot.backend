@@ -1,0 +1,732 @@
+{
+  "brand": "ELOBE",
+  "domain": "elobe.cz",
+  "operator": {
+    "name": "Emporion XXI s.r.o.",
+    "ico": "05681430",
+    "country": "CZ",
+    "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05681430",
+    "activeNoEnd": true
+  },
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "cs",
+  "country": "CZ",
+  "currency": "CZK",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "products": [
+    {
+      "id": "plum-tonic",
+      "name": "Eau de Parfum Plum Tonic",
+      "url": "https://elobe.cz/domu/9649-11967-ellis-brooklyn-eau-de-parfum-plum-tonic.html#/1-_-50_ml",
+      "priceAmount": 3690,
+      "price": "3 690 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Švestkový nektar, pivoňka a kašmírové dřevo.",
+      "reason": "Švestkový nektar, pivoňka a kašmírové dřevo. Na e-shopu zvolte balení 50 ml.",
+      "photo": "/assets/s5/elobe/plum-tonic.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://elobe.cz/domu/9649-11967-ellis-brooklyn-eau-de-parfum-plum-tonic.html#/1-_-50_ml",
+        "verifiedAt": "2026-11-14T18:08:15.007774+00:00",
+        "sourceSha256": "4cfd3ea619bc03c2f8660589012b52c2723d975629c6534a8455616a94e3ca5c",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "PrestaShopPublicExactSelectedCombination",
+          "availability": "available",
+          "quantity": 3,
+          "productId": 9649,
+          "combinationId": 11967,
+          "packAttribute": {
+            "id_attribute": "1",
+            "id_attribute_group": "1",
+            "name": "50 ml",
+            "group": "Objem",
+            "public_group": "-",
+            "reference": "",
+            "ean13": "",
+            "isbn": "",
+            "upc": "",
+            "mpn": "",
+            "available_now": "",
+            "available_later": ""
+          },
+          "qualification": "Exactselected50mlpublicdata-product availability/quantity, not cartbutton or allversionsquantity."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 3690,
+          "currency": "CZK",
+          "vatSource": "https://elobe.cz/domu/9649-11967-ellis-brooklyn-eau-de-parfum-plum-tonic.html#/1-_-50_ml",
+          "vatEvidence": "S DPH; selected data-product price_amount, not price_tax_exc."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Varianta: 50 ml",
+          "combinationId": 11967
+        },
+        "variantSelectionRequired": true,
+        "variantSelectionNotice": "Na e-shopu vyberte balení 50 ml.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://elobe.cz/24952-large_default/ellis-brooklyn-eau-de-parfum-plum-tonic.jpg",
+        "photoEvidence": {
+          "id": "plum-tonic",
+          "file": "plum-tonic.jpg",
+          "url": "https://elobe.cz/24952-large_default/ellis-brooklyn-eau-de-parfum-plum-tonic.jpg",
+          "sha256": "58ddb6101bab74e30100c2e9b6e0ff2ecca45bc0ee5f4c9cc3296c845bc19466",
+          "width": 800,
+          "height": 800,
+          "bytes": 48813,
+          "originalBytes": true
+        },
+        "scent": "Švestkový nektar, pivoňka a kašmírové dřevo",
+        "fragrance": {
+          "notes": [
+            "šumivá mandarinka",
+            "švestkový nektar",
+            "açaí",
+            "okvětní lístky pivoňky",
+            "květ kosatce",
+            "list fialky",
+            "antarové krystaly",
+            "kašmírové dřevo",
+            "cukrové pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de parfum",
+          "notesEvidence": {
+            "url": "https://elobe.cz/domu/9649-11967-ellis-brooklyn-eau-de-parfum-plum-tonic.html#/1-_-50_ml",
+            "sourceText": "Hlava: šumivá mandarinka, švestkový nektar, açaí; Srdce: okvětní lístky pivoňky, květ kosatce, list fialky; Základ: antarové krystaly, kašmírové dřevo, cukrové pižmo",
+            "originalSourceText": "Hlava: šumivá mandarinka, švestkový nektar, açaí\nSrdce: okvětní lístky pivoňky, květ kosatce, list fialky\nZáklad: antarové krystaly, kašmírové dřevo, cukrové pižmo",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "Exact published Hlava/Srdce/Základ, no numericalweights or healthclaims. Publisher antarové krystaly spelling retained, not silently invented/corrected."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No aromatherapy/mood/stress/health/nontoxic/safety/lastingguarantee copied from marketing.",
+          "No notepercentages/intensity or fakecompatibleaddon.",
+          "PlumTonic erroneous shortdescription VanillaRice line not used as identity; H1/selectedproductname/photo/canonical identify PlumTonic."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "fruit",
+          "fragranceProfile": "plum-tonic"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://elobe.cz/domu/9649-11967-ellis-brooklyn-eau-de-parfum-plum-tonic.html#/1-_-50_ml",
+          "sourceText": "Hlava: šumivá mandarinka, švestkový nektar, açaí; Srdce: okvětní lístky pivoňky, květ kosatce, list fialky; Základ: antarové krystaly, kašmírové dřevo, cukrové pižmo",
+          "navigationLabel": "Švestkový nektar, pivoňka a kašmírové dřevo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "rhubarb-thief",
+      "name": "Přírodní parfém Rhubarb Thief",
+      "url": "https://elobe.cz/heretic-parfum/9584-11950-heretic-prirodni-parfem-rhubarb-thief.html#/1-_-50_ml",
+      "priceAmount": 4290,
+      "price": "4 290 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Grapefruit, rebarbora a dubový mech.",
+      "reason": "Grapefruit, rebarbora a dubový mech. Na e-shopu zvolte balení 50 ml.",
+      "photo": "/assets/s5/elobe/rhubarb-thief.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://elobe.cz/heretic-parfum/9584-11950-heretic-prirodni-parfem-rhubarb-thief.html#/1-_-50_ml",
+        "verifiedAt": "2026-11-14T18:08:15.596912+00:00",
+        "sourceSha256": "34dfc62291f9d5c17337d716fa056a6533ffbe5a12f42a403dc230c649c1befe",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "PrestaShopPublicExactSelectedCombination",
+          "availability": "available",
+          "quantity": 3,
+          "productId": 9584,
+          "combinationId": 11950,
+          "packAttribute": {
+            "id_attribute": "1",
+            "id_attribute_group": "1",
+            "name": "50 ml",
+            "group": "Objem",
+            "public_group": "-",
+            "reference": "",
+            "ean13": "",
+            "isbn": "",
+            "upc": "",
+            "mpn": "",
+            "available_now": "",
+            "available_later": ""
+          },
+          "qualification": "Exactselected50mlpublicdata-product availability/quantity, not cartbutton or allversionsquantity."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 4290,
+          "currency": "CZK",
+          "vatSource": "https://elobe.cz/heretic-parfum/9584-11950-heretic-prirodni-parfem-rhubarb-thief.html#/1-_-50_ml",
+          "vatEvidence": "S DPH; selected data-product price_amount, not price_tax_exc."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Varianta: 50 ml",
+          "combinationId": 11950
+        },
+        "variantSelectionRequired": true,
+        "variantSelectionNotice": "Na e-shopu vyberte balení 50 ml.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://elobe.cz/24803-large_default/heretic-prirodni-parfem-rhubarb-thief.jpg",
+        "photoEvidence": {
+          "id": "rhubarb-thief",
+          "file": "rhubarb-thief.jpg",
+          "url": "https://elobe.cz/24803-large_default/heretic-prirodni-parfem-rhubarb-thief.jpg",
+          "sha256": "4190fc4dc6eff4fded2c5feb511b1ca5eed6550105bcc443ee552402da4d1f27",
+          "width": 800,
+          "height": 800,
+          "bytes": 70305,
+          "originalBytes": true
+        },
+        "scent": "Grapefruit, rebarbora a dubový mech",
+        "fragrance": {
+          "notes": [
+            "kůra z grapefruitu",
+            "cedr",
+            "andělika",
+            "tymián",
+            "verbena",
+            "mrkvové semínko",
+            "rebarbora",
+            "růžový jasmín",
+            "cypřiš",
+            "elemi",
+            "dubový mech"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de parfum",
+          "notesEvidence": {
+            "url": "https://elobe.cz/heretic-parfum/9584-11950-heretic-prirodni-parfem-rhubarb-thief.html#/1-_-50_ml",
+            "sourceText": "Hlava: kůra z grapefruitu, cedr, andělika, tymián, verbena, mrkvové semínko; Srdce: rebarbora, růžový jasmín, cypřiš; Základ: elemi, dubový mech",
+            "originalSourceText": "Hlava: kůra z grapefruitu, cedr, andělika, tymián, verbena, mrkvové semínko\nSrdce: rebarbora, růžový jasmín, cypřiš\nZáklad: elemi, dubový mech",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "Exact published Hlava/Srdce/Základ, no numericalweights or healthclaims. Publisher antarové krystaly spelling retained, not silently invented/corrected."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No aromatherapy/mood/stress/health/nontoxic/safety/lastingguarantee copied from marketing.",
+          "No notepercentages/intensity or fakecompatibleaddon.",
+          "PlumTonic erroneous shortdescription VanillaRice line not used as identity; H1/selectedproductname/photo/canonical identify PlumTonic."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "fruit",
+          "fragranceProfile": "rhubarb-thief"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://elobe.cz/heretic-parfum/9584-11950-heretic-prirodni-parfem-rhubarb-thief.html#/1-_-50_ml",
+          "sourceText": "Hlava: kůra z grapefruitu, cedr, andělika, tymián, verbena, mrkvové semínko; Srdce: rebarbora, růžový jasmín, cypřiš; Základ: elemi, dubový mech",
+          "navigationLabel": "Grapefruit, rebarbora a dubový mech",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "vanilla-rice",
+      "name": "Eau de Parfum Vannila Rice",
+      "url": "https://elobe.cz/domu/9648-11965-ellis-brooklyn-eau-de-parfum-vannila-rice.html#/1-_-50_ml",
+      "priceAmount": 3690,
+      "price": "3 690 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Pražená rýže, kokosové mléko a vanilka.",
+      "reason": "Pražená rýže, kokosové mléko a vanilka. Na e-shopu zvolte balení 50 ml.",
+      "photo": "/assets/s5/elobe/vanilla-rice.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://elobe.cz/domu/9648-11965-ellis-brooklyn-eau-de-parfum-vannila-rice.html#/1-_-50_ml",
+        "verifiedAt": "2026-11-14T18:08:15.357933+00:00",
+        "sourceSha256": "e544a4c8ac2f94ca393663143c20f1050ab3c56f34be0027c50fda309dc66935",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "PrestaShopPublicExactSelectedCombination",
+          "availability": "available",
+          "quantity": 3,
+          "productId": 9648,
+          "combinationId": 11965,
+          "packAttribute": {
+            "id_attribute": "1",
+            "id_attribute_group": "1",
+            "name": "50 ml",
+            "group": "Objem",
+            "public_group": "-",
+            "reference": "",
+            "ean13": "",
+            "isbn": "",
+            "upc": "",
+            "mpn": "",
+            "available_now": "",
+            "available_later": ""
+          },
+          "qualification": "Exactselected50mlpublicdata-product availability/quantity, not cartbutton or allversionsquantity."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 3690,
+          "currency": "CZK",
+          "vatSource": "https://elobe.cz/domu/9648-11965-ellis-brooklyn-eau-de-parfum-vannila-rice.html#/1-_-50_ml",
+          "vatEvidence": "S DPH; selected data-product price_amount, not price_tax_exc."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Varianta: 50 ml",
+          "combinationId": 11965
+        },
+        "variantSelectionRequired": true,
+        "variantSelectionNotice": "Na e-shopu vyberte balení 50 ml.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://elobe.cz/24941-large_default/ellis-brooklyn-eau-de-parfum-vannila-rice.jpg",
+        "photoEvidence": {
+          "id": "vanilla-rice",
+          "file": "vanilla-rice.jpg",
+          "url": "https://elobe.cz/24941-large_default/ellis-brooklyn-eau-de-parfum-vannila-rice.jpg",
+          "sha256": "ebdc4ab9634cd5d4e013f2e94ca192c2b263c9a3dc109f45e0a8f526a2442c62",
+          "width": 800,
+          "height": 800,
+          "bytes": 36546,
+          "originalBytes": true
+        },
+        "scent": "Pražená rýže, kokosové mléko a vanilka",
+        "fragrance": {
+          "notes": [
+            "mandarinka",
+            "rosa z frézie",
+            "pražená rýže",
+            "květy sakury",
+            "kokosové mléko",
+            "jasmínový nektar",
+            "pižma",
+            "tonkové boby",
+            "vanilka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de parfum",
+          "notesEvidence": {
+            "url": "https://elobe.cz/domu/9648-11965-ellis-brooklyn-eau-de-parfum-vannila-rice.html#/1-_-50_ml",
+            "sourceText": "Hlava: mandarinka, rosa z frézie, pražená rýže; Srdce: květy sakury, kokosové mléko, jasmínový nektar; Základ: pižma, tonkové boby, vanilka",
+            "originalSourceText": "Hlava: mandarinka, rosa z frézie, pražená rýže\nSrdce: květy sakury, kokosové mléko, jasmínový nektar\nZáklad: pižma, tonkové boby, vanilka",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "Exact published Hlava/Srdce/Základ, no numericalweights or healthclaims. Publisher antarové krystaly spelling retained, not silently invented/corrected."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No aromatherapy/mood/stress/health/nontoxic/safety/lastingguarantee copied from marketing.",
+          "No notepercentages/intensity or fakecompatibleaddon.",
+          "PlumTonic erroneous shortdescription VanillaRice line not used as identity; H1/selectedproductname/photo/canonical identify PlumTonic."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "sweet",
+          "fragranceProfile": "vanilla-rice"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://elobe.cz/domu/9648-11965-ellis-brooklyn-eau-de-parfum-vannila-rice.html#/1-_-50_ml",
+          "sourceText": "Hlava: mandarinka, rosa z frézie, pražená rýže; Srdce: květy sakury, kokosové mléko, jasmínový nektar; Základ: pižma, tonkové boby, vanilka",
+          "navigationLabel": "Pražená rýže, kokosové mléko a vanilka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "dirty-coconut",
+      "name": "Přírodní parfém Dirty Coconut",
+      "url": "https://elobe.cz/heretic-parfum/9578-11934-heretic-prirodni-parfem-dirty-coconut.html#/1-_-50_ml",
+      "priceAmount": 4290,
+      "price": "4 290 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Kokosový extrakt, santal a vanilkový absolue.",
+      "reason": "Kokosový extrakt, santal a vanilkový absolue. Na e-shopu zvolte balení 50 ml.",
+      "photo": "/assets/s5/elobe/dirty-coconut.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://elobe.cz/heretic-parfum/9578-11934-heretic-prirodni-parfem-dirty-coconut.html#/1-_-50_ml",
+        "verifiedAt": "2026-11-14T18:08:15.178592+00:00",
+        "sourceSha256": "082e9b5b3906d60b4449015b45d50b7250725090c14342afb564c04210f9b001",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "PrestaShopPublicExactSelectedCombination",
+          "availability": "available",
+          "quantity": 3,
+          "productId": 9578,
+          "combinationId": 11934,
+          "packAttribute": {
+            "id_attribute": "1",
+            "id_attribute_group": "1",
+            "name": "50 ml",
+            "group": "Objem",
+            "public_group": "-",
+            "reference": "",
+            "ean13": "",
+            "isbn": "",
+            "upc": "",
+            "mpn": "",
+            "available_now": "",
+            "available_later": ""
+          },
+          "qualification": "Exactselected50mlpublicdata-product availability/quantity, not cartbutton or allversionsquantity."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 4290,
+          "currency": "CZK",
+          "vatSource": "https://elobe.cz/heretic-parfum/9578-11934-heretic-prirodni-parfem-dirty-coconut.html#/1-_-50_ml",
+          "vatEvidence": "S DPH; selected data-product price_amount, not price_tax_exc."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Varianta: 50 ml",
+          "combinationId": 11934
+        },
+        "variantSelectionRequired": true,
+        "variantSelectionNotice": "Na e-shopu vyberte balení 50 ml.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://elobe.cz/24771-large_default/heretic-prirodni-parfem-dirty-coconut.jpg",
+        "photoEvidence": {
+          "id": "dirty-coconut",
+          "file": "dirty-coconut.jpg",
+          "url": "https://elobe.cz/24771-large_default/heretic-prirodni-parfem-dirty-coconut.jpg",
+          "sha256": "c16cbe6480b163c01d2773b848e3e9f698d0875685673ea85754ff13c2096edd",
+          "width": 800,
+          "height": 800,
+          "bytes": 45105,
+          "originalBytes": true
+        },
+        "scent": "Kokosový extrakt, santal a vanilkový absolue",
+        "fragrance": {
+          "notes": [
+            "cedr",
+            "vanilin (získaný z hřebíčku)",
+            "kokosový extrakt CO2",
+            "santalové dřevo",
+            "vanilkový absolue",
+            "ambrettolid (bezpečné syntetické pižmo)"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de parfum",
+          "notesEvidence": {
+            "url": "https://elobe.cz/heretic-parfum/9578-11934-heretic-prirodni-parfem-dirty-coconut.html#/1-_-50_ml",
+            "sourceText": "Hlava: cedr, vanilin (získaný z hřebíčku); Srdce: kokosový extrakt CO2; Základ: santalové dřevo, vanilkový absolue, ambrettolid (bezpečné syntetické pižmo)",
+            "originalSourceText": "Hlava: cedr, vanilin (získaný z hřebíčku)\nSrdce: kokosový extrakt CO2\nZáklad: santalové dřevo, vanilkový absolue, ambrettolid (bezpečné syntetické pižmo)",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "Exact published Hlava/Srdce/Základ, no numericalweights or healthclaims. Publisher antarové krystaly spelling retained, not silently invented/corrected."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No aromatherapy/mood/stress/health/nontoxic/safety/lastingguarantee copied from marketing.",
+          "No notepercentages/intensity or fakecompatibleaddon.",
+          "PlumTonic erroneous shortdescription VanillaRice line not used as identity; H1/selectedproductname/photo/canonical identify PlumTonic."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "sweet",
+          "fragranceProfile": "dirty-coconut"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://elobe.cz/heretic-parfum/9578-11934-heretic-prirodni-parfem-dirty-coconut.html#/1-_-50_ml",
+          "sourceText": "Hlava: cedr, vanilin (získaný z hřebíčku); Srdce: kokosový extrakt CO2; Základ: santalové dřevo, vanilkový absolue, ambrettolid (bezpečné syntetické pižmo)",
+          "navigationLabel": "Kokosový extrakt, santal a vanilkový absolue",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "dirty-hinoki",
+      "name": "Přírodní parfém Dirty Hinoki",
+      "url": "https://elobe.cz/heretic-parfum/9581-11945-heretic-prirodni-parfem-dirty-hinoki.html#/1-_-50_ml",
+      "priceAmount": 4290,
+      "price": "4 290 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Cedr, hinoki a kadidlo.",
+      "reason": "Cedr, hinoki a kadidlo. Na e-shopu zvolte balení 50 ml.",
+      "photo": "/assets/s5/elobe/dirty-hinoki.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://elobe.cz/heretic-parfum/9581-11945-heretic-prirodni-parfem-dirty-hinoki.html#/1-_-50_ml",
+        "verifiedAt": "2026-11-14T18:08:15.359423+00:00",
+        "sourceSha256": "931889b0f2ccf88e7af90f1b7eb215bd8b61e93d906642f908d19724c1344ca8",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "PrestaShopPublicExactSelectedCombination",
+          "availability": "available",
+          "quantity": 3,
+          "productId": 9581,
+          "combinationId": 11945,
+          "packAttribute": {
+            "id_attribute": "1",
+            "id_attribute_group": "1",
+            "name": "50 ml",
+            "group": "Objem",
+            "public_group": "-",
+            "reference": "",
+            "ean13": "",
+            "isbn": "",
+            "upc": "",
+            "mpn": "",
+            "available_now": "",
+            "available_later": ""
+          },
+          "qualification": "Exactselected50mlpublicdata-product availability/quantity, not cartbutton or allversionsquantity."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 4290,
+          "currency": "CZK",
+          "vatSource": "https://elobe.cz/heretic-parfum/9581-11945-heretic-prirodni-parfem-dirty-hinoki.html#/1-_-50_ml",
+          "vatEvidence": "S DPH; selected data-product price_amount, not price_tax_exc."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Varianta: 50 ml",
+          "combinationId": 11945
+        },
+        "variantSelectionRequired": true,
+        "variantSelectionNotice": "Na e-shopu vyberte balení 50 ml.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://elobe.cz/24787-large_default/heretic-prirodni-parfem-dirty-hinoki.jpg",
+        "photoEvidence": {
+          "id": "dirty-hinoki",
+          "file": "dirty-hinoki.jpg",
+          "url": "https://elobe.cz/24787-large_default/heretic-prirodni-parfem-dirty-hinoki.jpg",
+          "sha256": "9fc3246ea7df70d94ea77230df54d612350ce189f1e48518f983852f3c208c4e",
+          "width": 800,
+          "height": 800,
+          "bytes": 45395,
+          "originalBytes": true
+        },
+        "scent": "Cedr, hinoki a kadidlo",
+        "fragrance": {
+          "notes": [
+            "citron",
+            "cedr",
+            "muškátový oříšek",
+            "tymián",
+            "borovice",
+            "hinoki",
+            "cypřiš",
+            "elemi",
+            "pelyněk",
+            "jedlové absolue",
+            "ambrettolid",
+            "balzám",
+            "kadidlo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de parfum",
+          "notesEvidence": {
+            "url": "https://elobe.cz/heretic-parfum/9581-11945-heretic-prirodni-parfem-dirty-hinoki.html#/1-_-50_ml",
+            "sourceText": "Hlava: citron, cedr, muškátový oříšek, tymián, borovice; Srdce: hinoki, cypřiš; Základ: elemi, pelyněk, jedlové absolue, ambrettolid, balzám, kadidlo",
+            "originalSourceText": "Hlava: citron, cedr, muškátový oříšek, tymián, borovice\nSrdce: hinoki, cypřiš\nZáklad: elemi, pelyněk, jedlové absolue, ambrettolid, balzám, kadidlo",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "Exact published Hlava/Srdce/Základ, no numericalweights or healthclaims. Publisher antarové krystaly spelling retained, not silently invented/corrected."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No aromatherapy/mood/stress/health/nontoxic/safety/lastingguarantee copied from marketing.",
+          "No notepercentages/intensity or fakecompatibleaddon.",
+          "PlumTonic erroneous shortdescription VanillaRice line not used as identity; H1/selectedproductname/photo/canonical identify PlumTonic."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "dirty-hinoki"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://elobe.cz/heretic-parfum/9581-11945-heretic-prirodni-parfem-dirty-hinoki.html#/1-_-50_ml",
+          "sourceText": "Hlava: citron, cedr, muškátový oříšek, tymián, borovice; Srdce: hinoki, cypřiš; Základ: elemi, pelyněk, jedlové absolue, ambrettolid, balzám, kadidlo",
+          "navigationLabel": "Cedr, hinoki a kadidlo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "black-salt",
+      "name": "Přírodní parfém Black Salt",
+      "url": "https://elobe.cz/heretic-parfum/9585-11951-heretic-prirodni-parfem-black-salt.html#/1-_-50_ml",
+      "priceAmount": 4290,
+      "price": "4 290 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Limetka, jasmín a uzená mořská sůl.",
+      "reason": "Limetka, jasmín a uzená mořská sůl. Na e-shopu zvolte balení 50 ml.",
+      "photo": "/assets/s5/elobe/black-salt.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://elobe.cz/heretic-parfum/9585-11951-heretic-prirodni-parfem-black-salt.html#/1-_-50_ml",
+        "verifiedAt": "2026-11-14T18:08:15.514596+00:00",
+        "sourceSha256": "0a066544fdab6a7352c96beb3a7a087cf7e60ac593ae954c7136d44f8f713f4d",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "PrestaShopPublicExactSelectedCombination",
+          "availability": "available",
+          "quantity": 3,
+          "productId": 9585,
+          "combinationId": 11951,
+          "packAttribute": {
+            "id_attribute": "1",
+            "id_attribute_group": "1",
+            "name": "50 ml",
+            "group": "Objem",
+            "public_group": "-",
+            "reference": "",
+            "ean13": "",
+            "isbn": "",
+            "upc": "",
+            "mpn": "",
+            "available_now": "",
+            "available_later": ""
+          },
+          "qualification": "Exactselected50mlpublicdata-product availability/quantity, not cartbutton or allversionsquantity."
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 4290,
+          "currency": "CZK",
+          "vatSource": "https://elobe.cz/heretic-parfum/9585-11951-heretic-prirodni-parfem-black-salt.html#/1-_-50_ml",
+          "vatEvidence": "S DPH; selected data-product price_amount, not price_tax_exc."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Varianta: 50 ml",
+          "combinationId": 11951
+        },
+        "variantSelectionRequired": true,
+        "variantSelectionNotice": "Na e-shopu vyberte balení 50 ml.",
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://elobe.cz/24807-large_default/heretic-prirodni-parfem-black-salt.jpg",
+        "photoEvidence": {
+          "id": "black-salt",
+          "file": "black-salt.jpg",
+          "url": "https://elobe.cz/24807-large_default/heretic-prirodni-parfem-black-salt.jpg",
+          "sha256": "112cfefb3e6fc86dec367f25d3f23bfdec32611b3315d524442f22b22f84aca0",
+          "width": 800,
+          "height": 800,
+          "bytes": 53418,
+          "originalBytes": true
+        },
+        "scent": "Limetka, jasmín a uzená mořská sůl",
+        "fragrance": {
+          "notes": [
+            "černý pepř",
+            "limetka",
+            "mandarinka",
+            "eukalyptus",
+            "jasmín sambac",
+            "leknín",
+            "turecká růže",
+            "uzená mořská sůl",
+            "mořské řasy",
+            "labdanum",
+            "petrichor"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de parfum",
+          "notesEvidence": {
+            "url": "https://elobe.cz/heretic-parfum/9585-11951-heretic-prirodni-parfem-black-salt.html#/1-_-50_ml",
+            "sourceText": "Hlava: černý pepř, limetka, mandarinka, eukalyptus; Srdce: jasmín sambac, leknín, turecká růže, uzená mořská sůl; Základ: mořské řasy, labdanum, petrichor",
+            "originalSourceText": "Hlava: černý pepř, limetka, mandarinka, eukalyptus\nSrdce: jasmín sambac, leknín, turecká růže, uzená mořská sůl\nZáklad: mořské řasy, labdanum, petrichor",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "Exact published Hlava/Srdce/Základ, no numericalweights or healthclaims. Publisher antarové krystaly spelling retained, not silently invented/corrected."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No aromatherapy/mood/stress/health/nontoxic/safety/lastingguarantee copied from marketing.",
+          "No notepercentages/intensity or fakecompatibleaddon.",
+          "PlumTonic erroneous shortdescription VanillaRice line not used as identity; H1/selectedproductname/photo/canonical identify PlumTonic."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "black-salt"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://elobe.cz/heretic-parfum/9585-11951-heretic-prirodni-parfem-black-salt.html#/1-_-50_ml",
+          "sourceText": "Hlava: černý pepř, limetka, mandarinka, eukalyptus; Srdce: jasmín sambac, leknín, turecká růže, uzená mořská sůl; Základ: mořské řasy, labdanum, petrichor",
+          "navigationLabel": "Limetka, jasmín a uzená mořská sůl",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    }
+  ],
+  "revenue": {
+    "year": 2024,
+    "kind": "SECONDARY_PUBLISHED_BAND",
+    "band": "3–5 mil. Kč",
+    "currency": "CZK",
+    "source": "https://www.chytryrejstrik.cz/ico-05681430/elobe-s-r-o",
+    "latestExact2025": "UNKNOWN",
+    "qualification": "Publishedsecondaryturnoverband, not exactfinancialstatement or assets."
+  },
+  "size": "PREFERRED_SMALL_TIER_SECONDARY_BAND_QUALIFIED",
+  "interest": "NOT_ESTABLISHED",
+  "notes": [
+    "Sixdistinct compositions, selected50ml, not variantcountinflation.",
+    "Exact selected PrestaShopcombination/price/quantity/photo. ParentURL includes selected50mlcombination; user still verifiesvolumeatmerchant.",
+    "Publishedheadheartbase faithfullyextracted, originalmarketingretainedonlyas evidence, health/stress/lasting/nontoxicclaimsnotrepeated.",
+    "Actualnecessary-onlycookies Smartsuppordinaryhumancontact observed, otherautomationmodesUNKNOWN.",
+    "No provencompatibleaddon contract; distinctalternatives+comparison, no fictitiousbundle."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "fruit",
+      "label": "Švestka, rebarbora a květy",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "plum-tonic",
+          "label": "Švestkový nektar, pivoňka a kašmírové dřevo",
+          "productId": "plum-tonic",
+          "sourceUrl": "https://elobe.cz/domu/9649-11967-ellis-brooklyn-eau-de-parfum-plum-tonic.html#/1-_-50_ml"
+        },
+        {
+          "value": "rhubarb-thief",
+          "label": "Grapefruit, rebarbora a dubový mech",
+          "productId": "rhubarb-thief",
+          "sourceUrl": "https://elobe.cz/heretic-parfum/9584-11950-heretic-prirodni-parfem-rhubarb-thief.html#/1-_-50_ml"
+        }
+      ]
+    },
+    {
+      "value": "sweet",
+      "label": "Vanilka, rýže a kokos",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "vanilla-rice",
+          "label": "Pražená rýže, kokosové mléko a vanilka",
+          "productId": "vanilla-rice",
+          "sourceUrl": "https://elobe.cz/domu/9648-11965-ellis-brooklyn-eau-de-parfum-vannila-rice.html#/1-_-50_ml"
+        },
+        {
+          "value": "dirty-coconut",
+          "label": "Kokosový extrakt, santal a vanilkový absolue",
+          "productId": "dirty-coconut",
+          "sourceUrl": "https://elobe.cz/heretic-parfum/9578-11934-heretic-prirodni-parfem-dirty-coconut.html#/1-_-50_ml"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Dřevo, byliny a mořská sůl",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "dirty-hinoki",
+          "label": "Cedr, hinoki a kadidlo",
+          "productId": "dirty-hinoki",
+          "sourceUrl": "https://elobe.cz/heretic-parfum/9581-11945-heretic-prirodni-parfem-dirty-hinoki.html#/1-_-50_ml"
+        },
+        {
+          "value": "black-salt",
+          "label": "Limetka, jasmín a uzená mořská sůl",
+          "productId": "black-salt",
+          "sourceUrl": "https://elobe.cz/heretic-parfum/9585-11951-heretic-prirodni-parfem-black-salt.html#/1-_-50_ml"
+        }
+      ]
+    }
+  ]
+}

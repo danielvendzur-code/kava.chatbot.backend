@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-14T18:03:46.259509+00:00",
+  "checkedAt": "2026-11-14T18:13:29.883408+00:00",
   "scope": "All locally fetched remote branch heads; official domains, aliases, operators and ICO, not slug-only. No reservation made.",
   "remoteHeads": {
     "refs/remotes/origin/agent/coffee-advisor-full-quality-pass": "c5cfe9727f5cb5a60bf643a960b3191e1a08c91f",
@@ -147,6 +147,30 @@
       "Emporion XXI",
       "05681430",
       "info@elobe.cz"
+    ],
+    "inparfum": [
+      "inparfum.cz",
+      "inparfum.sk",
+      "Luxury Paris",
+      "55021417",
+      "INPARFUM s. r. o.",
+      "56088159"
+    ],
+    "rbeauty": [
+      "rbeauty-industry.eu",
+      "Romana beauty industry",
+      "09775129"
+    ],
+    "welvet": [
+      "welvetparfume.cz",
+      "welvetparfume.com",
+      "WELVET parfume",
+      "23298448"
+    ],
+    "topparfemy": [
+      "top-parfemy.eu",
+      "Top parfémy s.r.o.",
+      "21825971"
     ]
   },
   "hits": {
@@ -383,6 +407,10 @@
     "loret": "NOT_CHANGED_BY_THIS_AUDIT",
     "parfumylacno": "NOT_CHANGED_BY_THIS_AUDIT",
     "escent": "NOT_CHANGED_BY_THIS_AUDIT",
-    "elobe": "NOT_CHANGED_BY_THIS_AUDIT"
+    "elobe": "NOT_CHANGED_BY_THIS_AUDIT",
+    "inparfum": "NOT_CHANGED_BY_THIS_AUDIT",
+    "rbeauty": "NOT_CHANGED_BY_THIS_AUDIT",
+    "welvet": "NOT_CHANGED_BY_THIS_AUDIT",
+    "topparfemy": "NOT_CHANGED_BY_THIS_AUDIT"
   }
 }

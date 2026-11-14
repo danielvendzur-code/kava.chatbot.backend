@@ -1,0 +1,229 @@
+{
+  "slug": "elobe",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "bb22813ce07cc8110aa08e96599cbb9a152bd169",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/elobe.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Švestka a pivoňka",
+    "Rýže a vanilka",
+    "Hinoki a kadidlo",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Švestka a pivoňka",
+      "match": "svestk.*pivonk",
+      "productIds": [
+        "plum-tonic"
+      ]
+    },
+    {
+      "chip": "Rýže a vanilka",
+      "match": "ryz.*vanilk",
+      "productIds": [
+        "vanilla-rice"
+      ]
+    },
+    {
+      "chip": "Hinoki a kadidlo",
+      "match": "hinoki.*kadid",
+      "productIds": [
+        "dirty-hinoki"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "plum-tonic",
+    "dirty-hinoki"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "No exactverified complementarypack contract. Other sameformula volumes are variants, not extra formulas."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "ELOBE",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/elobe/logo.jpg",
+      "header": "/assets/s5/elobe/logo.jpg",
+      "avatar": "/assets/s5/elobe/initial.svg"
+    },
+    "brand": {
+      "name": "ELOBE",
+      "domain": "elobe.cz",
+      "website": "https://elobe.cz/",
+      "lang": "cs",
+      "fullName": "ELOBE",
+      "url": "https://elobe.cz/",
+      "logo": "/assets/s5/elobe/logo.jpg",
+      "mark": "/assets/s5/elobe/initial.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Švestka a pivoňka",
+        "Rýže a vanilka",
+        "Hinoki a kadidlo",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#30251f",
+        "accent": "#b08867",
+        "soft": "#faf5ee",
+        "paper": "#ffffff",
+        "ink": "#30251f",
+        "line": "#e9ddd0"
+      }
+    },
+    "traitCopy": {
+      "fruit": [
+        "Švestka, rebarbora a květy",
+        "",
+        "Švestka, rebarbora a květy",
+        ""
+      ],
+      "plum-tonic": [
+        "Švestkový nektar, pivoňka a kašmírové dřevo",
+        "",
+        "Švestkový nektar, pivoňka a kašmírové dřevo",
+        ""
+      ],
+      "rhubarb-thief": [
+        "Grapefruit, rebarbora a dubový mech",
+        "",
+        "Grapefruit, rebarbora a dubový mech",
+        ""
+      ],
+      "sweet": [
+        "Vanilka, rýže a kokos",
+        "",
+        "Vanilka, rýže a kokos",
+        ""
+      ],
+      "vanilla-rice": [
+        "Pražená rýže, kokosové mléko a vanilka",
+        "",
+        "Pražená rýže, kokosové mléko a vanilka",
+        ""
+      ],
+      "dirty-coconut": [
+        "Kokosový extrakt, santal a vanilkový absolue",
+        "",
+        "Kokosový extrakt, santal a vanilkový absolue",
+        ""
+      ],
+      "wood": [
+        "Dřevo, byliny a mořská sůl",
+        "",
+        "Dřevo, byliny a mořská sůl",
+        ""
+      ],
+      "dirty-hinoki": [
+        "Cedr, hinoki a kadidlo",
+        "",
+        "Cedr, hinoki a kadidlo",
+        ""
+      ],
+      "black-salt": [
+        "Limetka, jasmín a uzená mořská sůl",
+        "",
+        "Limetka, jasmín a uzená mořská sůl",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fruit": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "plum-tonic": [
+        "/assets/s5/elobe/plum-tonic.jpg"
+      ],
+      "rhubarb-thief": [
+        "/assets/s5/elobe/rhubarb-thief.jpg"
+      ],
+      "sweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "vanilla-rice": [
+        "/assets/s5/elobe/vanilla-rice.jpg"
+      ],
+      "dirty-coconut": [
+        "/assets/s5/elobe/dirty-coconut.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "dirty-hinoki": [
+        "/assets/s5/elobe/dirty-hinoki.jpg"
+      ],
+      "black-salt": [
+        "/assets/s5/elobe/black-salt.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "plum-tonic",
+      "dirty-hinoki"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "elobe-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "plum-tonic": "rhubarb-thief",
+        "rhubarb-thief": "plum-tonic",
+        "vanilla-rice": "dirty-coconut",
+        "dirty-coconut": "vanilla-rice",
+        "dirty-hinoki": "black-salt",
+        "black-salt": "dirty-hinoki"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}
