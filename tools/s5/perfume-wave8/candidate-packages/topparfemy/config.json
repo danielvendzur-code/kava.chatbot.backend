@@ -1,0 +1,229 @@
+{
+  "slug": "topparfemy",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "5a052119880ffd499a1f6f294543807d0b97134d",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/topparfemy.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Růže a karafiát",
+    "Meruňka a vanilka",
+    "Citrusy a cedr",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Růže a karafiát",
+      "match": "ruz.*karaf",
+      "productIds": [
+        "ruze"
+      ]
+    },
+    {
+      "chip": "Meruňka a vanilka",
+      "match": "merunk.*vanilk",
+      "productIds": [
+        "delusional"
+      ]
+    },
+    {
+      "chip": "Citrusy a cedr",
+      "match": "citrus.*cedr",
+      "productIds": [
+        "portus-black"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "ruze",
+    "portus-black"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "No exactcompatibleaddonpack/photo contract verified; source-backeddistinctalternative+comparison only."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Top parfémy",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/topparfemy/logo.svg",
+      "header": "/assets/s5/topparfemy/logo.svg",
+      "avatar": "/assets/s5/topparfemy/initial.svg"
+    },
+    "brand": {
+      "name": "Top parfémy",
+      "domain": "top-parfemy.eu",
+      "website": "https://www.top-parfemy.eu/",
+      "lang": "cs",
+      "fullName": "Top parfémy",
+      "url": "https://www.top-parfemy.eu/",
+      "logo": "/assets/s5/topparfemy/logo.svg",
+      "mark": "/assets/s5/topparfemy/initial.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Růže a karafiát",
+        "Meruňka a vanilka",
+        "Citrusy a cedr",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#4b5150",
+        "accent": "#8daca7",
+        "soft": "#f4f7f6",
+        "paper": "#fff",
+        "ink": "#303736",
+        "line": "#dfe8e5"
+      }
+    },
+    "traitCopy": {
+      "flower": [
+        "Bílé květy, růže a zelené tóny",
+        "",
+        "Bílé květy, růže a zelené tóny",
+        ""
+      ],
+      "kopretina": [
+        "Jablko, konvalinka a bílá růže",
+        "",
+        "Jablko, konvalinka a bílá růže",
+        ""
+      ],
+      "ruze": [
+        "Růže, karafiát a bílý mošus",
+        "",
+        "Růže, karafiát a bílý mošus",
+        ""
+      ],
+      "fruit": [
+        "Ovoce, koření a vanilka",
+        "",
+        "Ovoce, koření a vanilka",
+        ""
+      ],
+      "delusional": [
+        "Meruňka, švestka a vanilka",
+        "",
+        "Meruňka, švestka a vanilka",
+        ""
+      ],
+      "bergamot-zazvor": [
+        "Bergamot, zázvor a květy",
+        "",
+        "Bergamot, zázvor a květy",
+        ""
+      ],
+      "wood": [
+        "Citrusy, dřevo a jantar",
+        "",
+        "Citrusy, dřevo a jantar",
+        ""
+      ],
+      "portus-black": [
+        "Citrusy, mořské tóny a cedrové dřevo",
+        "",
+        "Citrusy, mořské tóny a cedrové dřevo",
+        ""
+      ],
+      "crevan": [
+        "Bergamot, bříza, jasmín a jantar",
+        "",
+        "Bergamot, bříza, jasmín a jantar",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "flower": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "kopretina": [
+        "/assets/s5/topparfemy/kopretina.jpg"
+      ],
+      "ruze": [
+        "/assets/s5/topparfemy/ruze.jpg"
+      ],
+      "fruit": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "delusional": [
+        "/assets/s5/topparfemy/delusional.jpg"
+      ],
+      "bergamot-zazvor": [
+        "/assets/s5/topparfemy/bergamot-zazvor.jpg"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "portus-black": [
+        "/assets/s5/topparfemy/portus-black.jpg"
+      ],
+      "crevan": [
+        "/assets/s5/topparfemy/crevan.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "ruze",
+      "portus-black"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "topparfemy-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "kopretina": "ruze",
+        "ruze": "kopretina",
+        "delusional": "bergamot-zazvor",
+        "bergamot-zazvor": "delusional",
+        "portus-black": "crevan",
+        "crevan": "portus-black"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "IN PARFUM",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/inparfum/logo.svg",
+      "header": "/assets/s5/inparfum/logo.svg",
+      "avatar": "/assets/s5/inparfum/initial.svg"
+    },
+    "brand": {
+      "name": "IN PARFUM",
+      "domain": "inparfum.cz",
+      "website": "https://www.inparfum.cz/",
+      "lang": "cs",
+      "fullName": "IN PARFUM",
+      "url": "https://www.inparfum.cz/",
+      "logo": "/assets/s5/inparfum/logo.svg",
+      "mark": "/assets/s5/inparfum/initial.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Grapefruit a pačuli",
+        "Likér a vanilka",
+        "Neroli a skořice",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#59678f",
+        "accent": "#adbef0",
+        "soft": "#f2f4fb",
+        "paper": "#fff",
+        "ink": "#29314a",
+        "line": "#e1e6f3"
+      }
+    },
+    "traitCopy": {
+      "citrus": [
+        "Bergamot, grapefruit a dřevité tóny",
+        "",
+        "Bergamot, grapefruit a dřevité tóny",
+        ""
+      ],
+      "m310": [
+        "Bergamot, grapefruit a pačuli",
+        "",
+        "Bergamot, grapefruit a pačuli",
+        ""
+      ],
+      "m233": [
+        "Bergamot, list fialky a vetiver",
+        "",
+        "Bergamot, list fialky a vetiver",
+        ""
+      ],
+      "sweet": [
+        "Likér, ovoce a vanilka",
+        "",
+        "Likér, ovoce a vanilka",
+        ""
+      ],
+      "w152": [
+        "Likér, mandle a vanilka",
+        "",
+        "Likér, mandle a vanilka",
+        ""
+      ],
+      "049": [
+        "Bergamot, čokoláda a kadidlo",
+        "",
+        "Bergamot, čokoláda a kadidlo",
+        ""
+      ],
+      "flower": [
+        "Neroli, růže a pižmo",
+        "",
+        "Neroli, růže a pižmo",
+        ""
+      ],
+      "w147": [
+        "Neroli, růže a skořice",
+        "",
+        "Neroli, růže a skořice",
+        ""
+      ],
+      "m209": [
+        "Aldehyd, neroli a vanilka",
+        "",
+        "Aldehyd, neroli a vanilka",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "citrus": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "m310": [
+        "/assets/s5/inparfum/m310.jpg"
+      ],
+      "m233": [
+        "/assets/s5/inparfum/m233.jpg"
+      ],
+      "sweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "w152": [
+        "/assets/s5/inparfum/w152.jpg"
+      ],
+      "049": [
+        "/assets/s5/inparfum/049.jpg"
+      ],
+      "flower": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "w147": [
+        "/assets/s5/inparfum/w147.jpg"
+      ],
+      "m209": [
+        "/assets/s5/inparfum/m209.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "m310",
+      "w152"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni In Parfum, její tóny, fotografii, balení, cenu a odkaz. Nejde o originály jiných značek. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "inparfum-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "m310": "m233",
+        "m233": "m310",
+        "w152": "049",
+        "049": "w152",
+        "w147": "m209",
+        "m209": "w147"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/inparfum.js",
+  "backendBrand": "inparfum",
+  "offlineRules": [
+    {
+      "chip": "Grapefruit a pačuli",
+      "match": "grapefruit.*pacul",
+      "productIds": [
+        "m310"
+      ]
+    },
+    {
+      "chip": "Likér a vanilka",
+      "match": "liker.*vanilk",
+      "productIds": [
+        "w152"
+      ]
+    },
+    {
+      "chip": "Neroli a skořice",
+      "match": "neroli.*skoric",
+      "productIds": [
+        "w147"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-wave8/candidate-packages/inparfum/ui-review.css",
+    "destination": "n447/s5/brands/inparfum.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/inparfum.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_SMALL_TIER_OFFICIAL2025_PASS",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}

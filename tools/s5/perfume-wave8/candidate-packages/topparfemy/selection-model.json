@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "flower",
+      "label": "Bílé květy, růže a zelené tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "kopretina",
+          "label": "Jablko, konvalinka a bílá růže",
+          "productId": "kopretina",
+          "sourceUrl": "https://www.top-parfemy.eu/anglicka-kopretina-damska-toaletni-voda--50-ml/"
+        },
+        {
+          "value": "ruze",
+          "label": "Růže, karafiát a bílý mošus",
+          "productId": "ruze",
+          "sourceUrl": "https://www.top-parfemy.eu/ruze-damska-toaletni-voda--50-ml/"
+        }
+      ]
+    },
+    {
+      "value": "fruit",
+      "label": "Ovoce, koření a vanilka",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "delusional",
+          "label": "Meruňka, švestka a vanilka",
+          "productId": "delusional",
+          "sourceUrl": "https://www.top-parfemy.eu/ng-eau-de-parfum-delusional-100-ml/"
+        },
+        {
+          "value": "bergamot-zazvor",
+          "label": "Bergamot, zázvor a květy",
+          "productId": "bergamot-zazvor",
+          "sourceUrl": "https://www.top-parfemy.eu/bergamot-zazvor-toaletni-voda--100ml/"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Citrusy, dřevo a jantar",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "portus-black",
+          "label": "Citrusy, mořské tóny a cedrové dřevo",
+          "productId": "portus-black",
+          "sourceUrl": "https://www.top-parfemy.eu/portus-cale-black-edition-panska-toaletni-voda--100-ml/"
+        },
+        {
+          "value": "crevan",
+          "label": "Bergamot, bříza, jasmín a jantar",
+          "productId": "crevan",
+          "sourceUrl": "https://www.top-parfemy.eu/ng-eau-de-toilette-crevan-pour-hommes-100-ml/"
+        }
+      ]
+    }
+  ]
+}

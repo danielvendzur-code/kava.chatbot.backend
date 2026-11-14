@@ -1,0 +1,214 @@
+{
+  "commit": "82d344e9ca98d83dac8ba7d501a8f9d4d7ccb9cf",
+  "scope": "Reserved isolated company packages; unchanged c9core; sourceIDmock only, not integrated/Preview",
+  "coreUnchanged": true,
+  "paidCalls": 0,
+  "companies": {
+    "topparfemy": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "flower",
+            "fragranceProfile": "kopretina"
+          },
+          "id": "kopretina",
+          "url": "https://www.top-parfemy.eu/anglicka-kopretina-damska-toaletni-voda--50-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flower",
+            "fragranceProfile": "ruze"
+          },
+          "id": "ruze",
+          "url": "https://www.top-parfemy.eu/ruze-damska-toaletni-voda--50-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "delusional"
+          },
+          "id": "delusional",
+          "url": "https://www.top-parfemy.eu/ng-eau-de-parfum-delusional-100-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "bergamot-zazvor"
+          },
+          "id": "bergamot-zazvor",
+          "url": "https://www.top-parfemy.eu/bergamot-zazvor-toaletni-voda--100ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "portus-black"
+          },
+          "id": "portus-black",
+          "url": "https://www.top-parfemy.eu/portus-cale-black-edition-panska-toaletni-voda--100-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "crevan"
+          },
+          "id": "crevan",
+          "url": "https://www.top-parfemy.eu/ng-eau-de-toilette-crevan-pour-hommes-100-ml/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "flower",
+              "fruit",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flower"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "kopretina",
+              "ruze"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "delusional",
+              "bergamot-zazvor"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "portus-black",
+              "crevan"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    },
+    "inparfum": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "m310"
+          },
+          "id": "m310",
+          "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-m310/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus",
+            "fragranceProfile": "m233"
+          },
+          "id": "m233",
+          "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-m233/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "w152"
+          },
+          "id": "w152",
+          "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-w152/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "049"
+          },
+          "id": "049",
+          "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-049/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flower",
+            "fragranceProfile": "w147"
+          },
+          "id": "w147",
+          "url": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-w147/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flower",
+            "fragranceProfile": "m209"
+          },
+          "id": "m209",
+          "url": "https://www.inparfum.cz/obchod/prilezitost/aktivita/in-parfum-232/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "citrus",
+              "sweet",
+              "flower"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "citrus"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "m310",
+              "m233"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "w152",
+              "049"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flower"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "w147",
+              "m209"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    }
+  }
+}

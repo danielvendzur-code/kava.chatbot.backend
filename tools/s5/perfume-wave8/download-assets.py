@@ -1,0 +1,24 @@
+from pathlib import Path
+from PIL import Image,ImageDraw
+from lxml import html
+import urllib.request,json,hashlib
+B=Path(__file__).resolve().parent
+for slug in ['inparfum','topparfemy']:
+ O=B/'candidate-packages'/slug/'assets';O.mkdir(parents=True,exist_ok=True);items=[]
+ for p in (B/'research'/slug).glob('*.json'):
+  j=json.load(open(p))
+  if slug=='inparfum':
+   for size,suf in [('50-ml',''),('10-ml','-10ml')]:
+    v=next(x for x in j['variants'] if x['attributes']['attribute_pa_variant-vone']==size);assert v['is_in_stock'];items.append((j['id']+suf,v['image']['url'],size))
+  else:items.append((j['id'],j['photo'][0],'50 ml' if j['id'] in ['ruze','kopretina'] else '100 ml'))
+ home=html.parse('/workspace/work/perfume-audit/wave7-20261114/merchant-wave8/'+slug+'-home.html');logos=home.xpath('//*[contains(@class,"site-name")]//img/@src') if slug=='topparfemy' else home.xpath('//img[contains(@class,"bricks-site-logo")]/@src');assert logos,(slug,'logo');items.append(('logo',logos[0],None));out=[]
+ for pid,url,pack in items:
+  if not url.startswith('https://'):url=('https://www.top-parfemy.eu' if slug=='topparfemy' else 'https://www.inparfum.cz')+url
+  raw=urllib.request.urlopen(url,timeout=35).read();ext='.png' if raw.startswith(b'\x89PNG') else '.jpg' if raw.startswith(b'\xff\xd8') else '.webp' if raw.startswith(b'RIFF') else '.svg';file=pid+ext;(O/file).write_bytes(raw)
+  if ext=='.svg':w=h=None
+  else:im=Image.open(O/file);w,h=im.size
+  out.append({'id':pid,'url':url,'file':file,'width':w,'height':h,'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'originalBytes':True,'selectedPack':pack});print(slug,pid,w,h,flush=True)
+ letter='I' if slug=='inparfum' else 'T';(O/'initial.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96"><rect width="96" height="96" rx="48" fill="#333c5a"/><text x="48" y="66" text-anchor="middle" font-family="Georgia,serif" font-size="60" fill="white">{letter}</text></svg>');out.append({'id':'avatar','file':'initial.svg','scope':'Factual demo initial, not officialmark'});(B/'research'/slug/'photos.json').write_text(json.dumps(out,ensure_ascii=False,indent=2));real=[x for x in out if x['id']!='logo' and x['id']!='avatar'];sheet=Image.new('RGB',(1050,550*((len(real)+2)//3)),'#eee');d=ImageDraw.Draw(sheet)
+ for i,r in enumerate(real):
+  im=Image.open(O/r['file']).convert('RGB');im.thumbnail((330,490));x=i%3*350;y=i//3*550;sheet.paste(im,(x+(350-im.width)//2,y+30));d.text((x+5,y+5),r['id'],fill='black')
+ sheet.save('/workspace/work/perfume-audit/wave7-20261114/'+slug+'-photos.jpg')

@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "citrus",
+      "label": "Bergamot, grapefruit a dřevité tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "m310",
+          "label": "Bergamot, grapefruit a pačuli",
+          "productId": "m310",
+          "sourceUrl": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-m310/"
+        },
+        {
+          "value": "m233",
+          "label": "Bergamot, list fialky a vetiver",
+          "productId": "m233",
+          "sourceUrl": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-m233/"
+        }
+      ]
+    },
+    {
+      "value": "sweet",
+      "label": "Likér, ovoce a vanilka",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "w152",
+          "label": "Likér, mandle a vanilka",
+          "productId": "w152",
+          "sourceUrl": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-w152/"
+        },
+        {
+          "value": "049",
+          "label": "Bergamot, čokoláda a kadidlo",
+          "productId": "049",
+          "sourceUrl": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-049/"
+        }
+      ]
+    },
+    {
+      "value": "flower",
+      "label": "Neroli, růže a pižmo",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "w147",
+          "label": "Neroli, růže a skořice",
+          "productId": "w147",
+          "sourceUrl": "https://www.inparfum.cz/obchod/prilezitost/bezny-den/in-parfum-w147/"
+        },
+        {
+          "value": "m209",
+          "label": "Aldehyd, neroli a vanilka",
+          "productId": "m209",
+          "sourceUrl": "https://www.inparfum.cz/obchod/prilezitost/aktivita/in-parfum-232/"
+        }
+      ]
+    }
+  ]
+}

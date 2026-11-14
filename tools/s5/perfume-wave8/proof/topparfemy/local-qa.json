@@ -1,0 +1,980 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-14T18:25:59.256662+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "id": "kopretina",
+      "pack": "50 ml",
+      "price": "949 Kč",
+      "url": "https://www.top-parfemy.eu/anglicka-kopretina-damska-toaletni-voda--50-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-kopretina-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "id": "ruze",
+      "pack": "50 ml",
+      "price": "949 Kč",
+      "url": "https://www.top-parfemy.eu/ruze-damska-toaletni-voda--50-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-ruze-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "id": "delusional",
+      "pack": "100 ml",
+      "price": "289 Kč",
+      "url": "https://www.top-parfemy.eu/ng-eau-de-parfum-delusional-100-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-delusional-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "id": "bergamot-zazvor",
+      "pack": "100 ml",
+      "price": "1 099 Kč",
+      "url": "https://www.top-parfemy.eu/bergamot-zazvor-toaletni-voda--100ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-bergamot-zazvor-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "id": "portus-black",
+      "pack": "100 ml",
+      "price": "999 Kč",
+      "url": "https://www.top-parfemy.eu/portus-cale-black-edition-panska-toaletni-voda--100-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-portus-black-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "id": "crevan",
+      "pack": "100 ml",
+      "price": "359 Kč",
+      "url": "https://www.top-parfemy.eu/ng-eau-de-toilette-crevan-pour-hommes-100-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-crevan-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "id": "kopretina",
+      "pack": "50 ml",
+      "price": "949 Kč",
+      "url": "https://www.top-parfemy.eu/anglicka-kopretina-damska-toaletni-voda--50-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-kopretina-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "id": "ruze",
+      "pack": "50 ml",
+      "price": "949 Kč",
+      "url": "https://www.top-parfemy.eu/ruze-damska-toaletni-voda--50-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-ruze-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "id": "delusional",
+      "pack": "100 ml",
+      "price": "289 Kč",
+      "url": "https://www.top-parfemy.eu/ng-eau-de-parfum-delusional-100-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-delusional-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "id": "bergamot-zazvor",
+      "pack": "100 ml",
+      "price": "1 099 Kč",
+      "url": "https://www.top-parfemy.eu/bergamot-zazvor-toaletni-voda--100ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-bergamot-zazvor-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "id": "portus-black",
+      "pack": "100 ml",
+      "price": "999 Kč",
+      "url": "https://www.top-parfemy.eu/portus-cale-black-edition-panska-toaletni-voda--100-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-portus-black-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "id": "crevan",
+      "pack": "100 ml",
+      "price": "359 Kč",
+      "url": "https://www.top-parfemy.eu/ng-eau-de-toilette-crevan-pour-hommes-100-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-crevan-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "id": "kopretina",
+      "pack": "50 ml",
+      "price": "949 Kč",
+      "url": "https://www.top-parfemy.eu/anglicka-kopretina-damska-toaletni-voda--50-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-kopretina-1280.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "id": "ruze",
+      "pack": "50 ml",
+      "price": "949 Kč",
+      "url": "https://www.top-parfemy.eu/ruze-damska-toaletni-voda--50-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-ruze-1280.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "id": "delusional",
+      "pack": "100 ml",
+      "price": "289 Kč",
+      "url": "https://www.top-parfemy.eu/ng-eau-de-parfum-delusional-100-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-delusional-1280.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "id": "bergamot-zazvor",
+      "pack": "100 ml",
+      "price": "1 099 Kč",
+      "url": "https://www.top-parfemy.eu/bergamot-zazvor-toaletni-voda--100ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-bergamot-zazvor-1280.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "id": "portus-black",
+      "pack": "100 ml",
+      "price": "999 Kč",
+      "url": "https://www.top-parfemy.eu/portus-cale-black-edition-panska-toaletni-voda--100-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-portus-black-1280.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "id": "crevan",
+      "pack": "100 ml",
+      "price": "359 Kč",
+      "url": "https://www.top-parfemy.eu/ng-eau-de-toilette-crevan-pour-hommes-100-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "topparfemy-result-crevan-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "flower",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        }
+      ],
+      "screenshot": "topparfemy-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "kopretina",
+          "photo": "/assets/s5/topparfemy/kopretina.jpg"
+        },
+        {
+          "id": "ruze",
+          "photo": "/assets/s5/topparfemy/ruze.jpg"
+        }
+      ],
+      "screenshot": "topparfemy-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "delusional",
+          "photo": "/assets/s5/topparfemy/delusional.jpg"
+        },
+        {
+          "id": "bergamot-zazvor",
+          "photo": "/assets/s5/topparfemy/bergamot-zazvor.jpg"
+        }
+      ],
+      "screenshot": "topparfemy-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "portus-black",
+          "photo": "/assets/s5/topparfemy/portus-black.jpg"
+        },
+        {
+          "id": "crevan",
+          "photo": "/assets/s5/topparfemy/crevan.jpg"
+        }
+      ],
+      "screenshot": "topparfemy-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "flower",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        }
+      ],
+      "screenshot": "topparfemy-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "kopretina",
+          "photo": "/assets/s5/topparfemy/kopretina.jpg"
+        },
+        {
+          "id": "ruze",
+          "photo": "/assets/s5/topparfemy/ruze.jpg"
+        }
+      ],
+      "screenshot": "topparfemy-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "delusional",
+          "photo": "/assets/s5/topparfemy/delusional.jpg"
+        },
+        {
+          "id": "bergamot-zazvor",
+          "photo": "/assets/s5/topparfemy/bergamot-zazvor.jpg"
+        }
+      ],
+      "screenshot": "topparfemy-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "portus-black",
+          "photo": "/assets/s5/topparfemy/portus-black.jpg"
+        },
+        {
+          "id": "crevan",
+          "photo": "/assets/s5/topparfemy/crevan.jpg"
+        }
+      ],
+      "screenshot": "topparfemy-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "flower",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        }
+      ],
+      "screenshot": "topparfemy-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "kopretina",
+          "photo": "/assets/s5/topparfemy/kopretina.jpg"
+        },
+        {
+          "id": "ruze",
+          "photo": "/assets/s5/topparfemy/ruze.jpg"
+        }
+      ],
+      "screenshot": "topparfemy-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "delusional",
+          "photo": "/assets/s5/topparfemy/delusional.jpg"
+        },
+        {
+          "id": "bergamot-zazvor",
+          "photo": "/assets/s5/topparfemy/bergamot-zazvor.jpg"
+        }
+      ],
+      "screenshot": "topparfemy-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "portus-black",
+          "photo": "/assets/s5/topparfemy/portus-black.jpg"
+        },
+        {
+          "id": "crevan",
+          "photo": "/assets/s5/topparfemy/crevan.jpg"
+        }
+      ],
+      "screenshot": "topparfemy-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ruze",
+        "portus-black"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "topparfemy-compare-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ruze",
+        "portus-black"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "topparfemy-compare-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ruze",
+        "portus-black"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "topparfemy-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "noteProfiles": [
+    {
+      "slug": "topparfemy",
+      "id": "kopretina",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "svěží zelené listy, jablko",
+        "konvalinka, hyacint, bílá růže",
+        "santalové dřevo, mošus"
+      ],
+      "screenshot": "topparfemy-note-profile-kopretina-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "ruze",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "bergamot, mandarinka, citron, zelené stonky",
+        "růže, karafiát, fialka",
+        "pačuli, bílý mošus, jantar"
+      ],
+      "screenshot": "topparfemy-note-profile-ruze-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "delusional",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "meruňka, kokos, švestka",
+        "jasmín, růže, růžové dřevo",
+        "mandle, santalové dřevo, vanilka"
+      ],
+      "screenshot": "topparfemy-note-profile-delusional-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "bergamot-zazvor",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "bergamot, zázvor",
+        "lilie, pivoňky, jasmíny, karafiát",
+        "jantar, santalové dřevo, mošus"
+      ],
+      "screenshot": "topparfemy-note-profile-bergamot-zazvor-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "portus-black",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "citron, bergamot, zelené tóny, aromatické tóny, borovice, ananas",
+        "mořské, slané tóny, muškátový oříšek, hřebíček, konvalinka, levandule, geranium",
+        "cedrové dřevo, guajakové dřevo, pačuli, ambra, mošus, tabák"
+      ],
+      "screenshot": "topparfemy-note-profile-portus-black-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "crevan",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot",
+        "bříza",
+        "jasmín",
+        "jantar"
+      ],
+      "screenshot": "topparfemy-note-profile-crevan-320.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "kopretina",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "svěží zelené listy, jablko",
+        "konvalinka, hyacint, bílá růže",
+        "santalové dřevo, mošus"
+      ],
+      "screenshot": "topparfemy-note-profile-kopretina-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "ruze",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "bergamot, mandarinka, citron, zelené stonky",
+        "růže, karafiát, fialka",
+        "pačuli, bílý mošus, jantar"
+      ],
+      "screenshot": "topparfemy-note-profile-ruze-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "delusional",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "meruňka, kokos, švestka",
+        "jasmín, růže, růžové dřevo",
+        "mandle, santalové dřevo, vanilka"
+      ],
+      "screenshot": "topparfemy-note-profile-delusional-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "bergamot-zazvor",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "bergamot, zázvor",
+        "lilie, pivoňky, jasmíny, karafiát",
+        "jantar, santalové dřevo, mošus"
+      ],
+      "screenshot": "topparfemy-note-profile-bergamot-zazvor-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "portus-black",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "citron, bergamot, zelené tóny, aromatické tóny, borovice, ananas",
+        "mořské, slané tóny, muškátový oříšek, hřebíček, konvalinka, levandule, geranium",
+        "cedrové dřevo, guajakové dřevo, pačuli, ambra, mošus, tabák"
+      ],
+      "screenshot": "topparfemy-note-profile-portus-black-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "crevan",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot",
+        "bříza",
+        "jasmín",
+        "jantar"
+      ],
+      "screenshot": "topparfemy-note-profile-crevan-390.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "kopretina",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "svěží zelené listy, jablko",
+        "konvalinka, hyacint, bílá růže",
+        "santalové dřevo, mošus"
+      ],
+      "screenshot": "topparfemy-note-profile-kopretina-1280.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "ruze",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "bergamot, mandarinka, citron, zelené stonky",
+        "růže, karafiát, fialka",
+        "pačuli, bílý mošus, jantar"
+      ],
+      "screenshot": "topparfemy-note-profile-ruze-1280.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "delusional",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "meruňka, kokos, švestka",
+        "jasmín, růže, růžové dřevo",
+        "mandle, santalové dřevo, vanilka"
+      ],
+      "screenshot": "topparfemy-note-profile-delusional-1280.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "bergamot-zazvor",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "bergamot, zázvor",
+        "lilie, pivoňky, jasmíny, karafiát",
+        "jantar, santalové dřevo, mošus"
+      ],
+      "screenshot": "topparfemy-note-profile-bergamot-zazvor-1280.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "portus-black",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "citron, bergamot, zelené tóny, aromatické tóny, borovice, ananas",
+        "mořské, slané tóny, muškátový oříšek, hřebíček, konvalinka, levandule, geranium",
+        "cedrové dřevo, guajakové dřevo, pačuli, ambra, mošus, tabák"
+      ],
+      "screenshot": "topparfemy-note-profile-portus-black-1280.png"
+    },
+    {
+      "slug": "topparfemy",
+      "id": "crevan",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot",
+        "bříza",
+        "jasmín",
+        "jantar"
+      ],
+      "screenshot": "topparfemy-note-profile-crevan-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "id": "kopretina",
+      "defaultScreenshot": "topparfemy-result-kopretina-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-kopretina-320.png",
+      "comparisonIds": [
+        "kopretina",
+        "ruze"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "id": "ruze",
+      "defaultScreenshot": "topparfemy-result-ruze-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-ruze-320.png",
+      "comparisonIds": [
+        "ruze",
+        "kopretina"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "id": "delusional",
+      "defaultScreenshot": "topparfemy-result-delusional-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-delusional-320.png",
+      "comparisonIds": [
+        "delusional",
+        "bergamot-zazvor"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "id": "bergamot-zazvor",
+      "defaultScreenshot": "topparfemy-result-bergamot-zazvor-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-bergamot-zazvor-320.png",
+      "comparisonIds": [
+        "bergamot-zazvor",
+        "delusional"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "id": "portus-black",
+      "defaultScreenshot": "topparfemy-result-portus-black-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-portus-black-320.png",
+      "comparisonIds": [
+        "portus-black",
+        "crevan"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 320,
+      "id": "crevan",
+      "defaultScreenshot": "topparfemy-result-crevan-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-crevan-320.png",
+      "comparisonIds": [
+        "crevan",
+        "portus-black"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "id": "kopretina",
+      "defaultScreenshot": "topparfemy-result-kopretina-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-kopretina-390.png",
+      "comparisonIds": [
+        "kopretina",
+        "ruze"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "id": "ruze",
+      "defaultScreenshot": "topparfemy-result-ruze-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-ruze-390.png",
+      "comparisonIds": [
+        "ruze",
+        "kopretina"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "id": "delusional",
+      "defaultScreenshot": "topparfemy-result-delusional-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-delusional-390.png",
+      "comparisonIds": [
+        "delusional",
+        "bergamot-zazvor"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "id": "bergamot-zazvor",
+      "defaultScreenshot": "topparfemy-result-bergamot-zazvor-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-bergamot-zazvor-390.png",
+      "comparisonIds": [
+        "bergamot-zazvor",
+        "delusional"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "id": "portus-black",
+      "defaultScreenshot": "topparfemy-result-portus-black-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-portus-black-390.png",
+      "comparisonIds": [
+        "portus-black",
+        "crevan"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 390,
+      "id": "crevan",
+      "defaultScreenshot": "topparfemy-result-crevan-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-crevan-390.png",
+      "comparisonIds": [
+        "crevan",
+        "portus-black"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "id": "kopretina",
+      "defaultScreenshot": "topparfemy-result-kopretina-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-kopretina-1280.png",
+      "comparisonIds": [
+        "kopretina",
+        "ruze"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "id": "ruze",
+      "defaultScreenshot": "topparfemy-result-ruze-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-ruze-1280.png",
+      "comparisonIds": [
+        "ruze",
+        "kopretina"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "id": "delusional",
+      "defaultScreenshot": "topparfemy-result-delusional-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-delusional-1280.png",
+      "comparisonIds": [
+        "delusional",
+        "bergamot-zazvor"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "id": "bergamot-zazvor",
+      "defaultScreenshot": "topparfemy-result-bergamot-zazvor-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-bergamot-zazvor-1280.png",
+      "comparisonIds": [
+        "bergamot-zazvor",
+        "delusional"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "id": "portus-black",
+      "defaultScreenshot": "topparfemy-result-portus-black-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-portus-black-1280.png",
+      "comparisonIds": [
+        "portus-black",
+        "crevan"
+      ]
+    },
+    {
+      "slug": "topparfemy",
+      "width": 1280,
+      "id": "crevan",
+      "defaultScreenshot": "topparfemy-result-crevan-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "topparfemy-pair-crevan-1280.png",
+      "comparisonIds": [
+        "crevan",
+        "portus-black"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

@@ -1,0 +1,471 @@
+﻿﻿﻿
+<!DOCTYPE html>
+<html>
+<head lang="cs">
+    <meta charset="UTF-8">
+    <title>Default index</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-size: 16px;
+        }
+        a{
+            color: #073ADC;
+            text-decoration: none;
+        }
+        a:hover{
+            color: #038FCC;
+        }
+        * {
+            margin: 0;
+        }
+        body{
+            font-family: 'Open Sans',sans-serif;
+            color: #1A1A1A;
+            margin: 0;
+            font-size: 1rem;
+        }
+        li{text-align:left;}
+        .header{
+            display: grid;
+            align-items: center;
+            max-width:62%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 6.25rem;
+            border-bottom: 1px solid #e2e2e2;
+            margin-top: -20px;
+        }
+        .flex{
+            display:flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        .flex-header {
+            display:flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .flex .info{
+            margin-left:20px;
+            display: flex;
+        }
+        .flex .info svg{
+            position:relative;
+            top: 2px;
+            margin-right:4px;
+        }
+        #phone-svg{top:4px;}
+        .header a span{
+            color: #02117F;
+            font-size: 1rem;
+        }
+        .header a{
+            text-decoration: none;
+        }
+        .header a:hover span{
+            color: #038FCC;
+            text-decoration: none;
+        }
+        .header a span#telephone{ 
+            font-size: 1rem;
+            color: #02117F;
+        }
+        .flex .info .second.globe{
+            margin-left: 10px;
+            margin-right: 0.75rem;
+        }
+        .rem-img {
+            width: 12.5rem;
+            height: 12.5rem;
+        }
+        .lang-container{
+            position:relative;
+            display:inline-block;;
+            border:1px #02117F solid;
+            border-radius: 15px; 
+            overflow: hidden;
+        }
+        #lang_selector{
+            transition: 0.4s;
+            cursor: default;
+            position:absolute;
+            border-radius: 18px;
+            background-color: #02117F;
+            text-align: center;
+            top:0px;
+            left:36px;
+            width:36px;
+            height:20px;
+            line-height:20px;
+            color:white;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .lang-lang{
+            font-size: 14px;
+            width:36px;
+            height:20px;
+            line-height:20px;
+            text-align: center;
+            color:#02117F;
+            display:inline-block;
+            margin:0px;
+            cursor:pointer;
+        }
+
+        .main-inner{
+            background-image:url("https://api.controlpanel.sk/img/default-pages/wy/images/background-main-left.svg");
+            background-repeat:no-repeat;
+            background-size: contain;
+            text-align: center;
+            height:calc(100% - 28.25rem);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-inner a {
+            font-weight: 800;
+            text-decoration: underline
+        }
+        .title-div{
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #heading-main{
+            margin-bottom: 0px;
+            font-weight: 700;
+        }
+        .underline{
+            width:100%;
+        }
+        .underline path{
+            stroke:#f5a623;
+        }
+        h2{
+            font-size: 1rem;
+            font-weight: 400;
+            margin: 10px 0;
+        }
+
+        .img-center {
+            margin-bottom: 1.25rem;
+        }
+        .suspended-img {
+            margin-bottom: 2.25rem !important;
+        }
+        .footer{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background: #02117F;
+            color: #FFFFFF;
+            min-height: 22.275rem;
+            position: relative;
+        }        
+        .footer-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: url("https://api.controlpanel.sk/img/default-pages/wy/images/footer-bg.svg") no-repeat;
+            background-size: contain;
+            width: 37.4375rem;
+            height: 17.875rem;
+        }
+        .footer-flex{
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }       
+        .footer-flex>div{
+            width: 19rem;
+            text-align: center;
+            height: 22rem;
+            z-index: 2;
+        }     
+        .img-fluid {
+            margin-top: 1.25rem;
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+        .img-frame {
+            height: 7.5rem;
+        }
+        .footer-flex h3{
+            display:flex;
+            justify-content: center;
+            align-items: end;
+        }
+        .footer-flex p{
+            display:flex;
+            align-items: center;
+            line-height: 1.25rem;
+            padding: 1.3rem 0;
+            font-size: 1.1rem;
+        }
+        .text-frame {
+            height: 9.2rem;
+        }
+        .footer-flex a{
+            display:inline-block;
+            color: #02117F;
+            background-color: #0BEAA3;
+            border-radius: 27px;
+            text-decoration: none;
+            width: 18.8rem;
+            height: 3.3rem;
+            line-height: 3.3rem;
+            font-size: 1.0625rem;
+            color:#02117F;
+            font-weight: bold;
+            box-shadow: 0px 10px 8px -4px rgba(0, 162, 255, 0.200);
+            transition: 0.4s
+        }
+        .footer-flex a:hover{
+            background-color:#3cdae3;
+            box-shadow: none;
+        }
+        .ml-1 {
+            margin-right: 10px;
+        }
+        @media only screen and (min-width: 912px)  and (max-width: 1550px){
+            html {
+                font-size: 0.85rem;
+            }
+            .main-inner {
+                height: calc(100% - 28.5rem)
+            }
+        }   
+        @media only screen and (min-width: 912px) and (min-height: 680px) and (max-height: 775px){
+            .rem-img {
+               width:8.5rem;
+               height: 8.5rem;
+               margin-bottom: 1rem;
+            }
+            .img-center {margin-bottom:0}
+        } 
+        @media only screen and (max-width: 750px) {
+             .flex-header {
+                justify-content: center;
+            }
+             .main-inner{
+                padding: 1rem;
+            }
+        }       
+        @media only screen and (max-width: 600px) {
+            .header {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                height: auto;
+            }
+            .flex-header {
+                justify-content: center;
+            }
+            .flex{
+                display: flex;
+            }
+            .flex .info{
+                margin-top:15px;
+                margin-left: 5px;
+            }
+            .flex .info .second.globe{
+                margin-left: 2px;
+            }
+            .main-inner{
+                padding: 1rem;
+            }
+        }        
+    </style>
+
+    <!-- font -->
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" href="https://wy.sk/wp-content/uploads/2016/11/cropped-wy-favicon-32x32.png" sizes="32x32" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Doména je zaregistrovaná.">
+    <meta name="robots" content="noindex">
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="flex-header">
+            <div class="logo-div">
+                <a href="https://www.webglobe.sk/?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral" id="logo-href">
+                   <img class="logo" src="https://api.controlpanel.sk/img/default-pages/wy/images/webglobeLogo.svg" alt="Webglobe - Yegon logo" width="241" height="60">
+                </a>
+            </div>
+             <div class="col-sm-8 text-sm-right text- text-center padding-0 right">
+            <div class="inner flex">
+                <div class="info">
+                    <a href="tel:+420 603 111 111" class="flex" id="info-href">
+                        <img class="ml-1" src="https://api.controlpanel.sk/img/default-pages/wy/images/phone.svg" alt="phone" width="22" height="22">
+                        <span id="telephone">+420 603 111 111</span>
+                    </a>
+                </div>
+                 <div class="info">
+                    <a href="https://moje.wy.sk" id="wypanel-href" class="flex">
+                        <img class="second ml-1" src="https://api.controlpanel.sk/img/default-pages/wy/images/profile alternative.svg" alt="phone" width="22" height="22">
+                        <span id="login">PRIHLÁSENIE</span>
+                    </a>
+                </div>
+                <div class="info">
+                    <img class="second globe" src="https://api.controlpanel.sk/img/default-pages/wy/images/globe.svg" alt="globe" width="22" height="22">
+                    <div class="lang-container">
+                    <div id="lang_selector">SK</div>
+                    <div style="display:flex;">
+                        <div class="lang-lang" onclick="switchLang('cs');">CS</div>
+                        <div class="lang-lang" onclick="switchLang('en');">EN</div>
+                        <div class="lang-lang" onclick="switchLang('sk');">SK</div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-inner">
+        <div id="changing">
+            <img class="img-fluid-90 img-center rem-img suspended-img" src="https://api.controlpanel.sk/img/default-pages/wy/images/suspended.svg" >
+            <div class="title-div">
+                <h1 id="heading-main">Táto doména je momentálne pozastavená</h1>
+            </div>       
+            <h2 id="heading-first">Je vaša? Uistite sa, že máte obnovené všetky služby.</h2>
+            <h2 id="heading-second">Chceli by ste podobnú? Vyhľadajte si <a href="https://www.webglobe.sk/domeny?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral">doménu</a>  a môžete ju mať už do troch minút.</h2>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-bg"></div>
+        <div class="footer-flex">
+           <div class="box col-lg-2 box-1">
+        <div class="img-frame">
+            <span class="helper"></span>
+            <img class="img-fluid img-fluid-90" src="https://api.controlpanel.sk/img/default-pages/wy/images/domain-icon.png" alt="wordpress" width="72" height="72">
+        </div>
+        <div class="text-frame">
+            <h3 id="column-1-heading">Domény</h3>
+            <p id="column-1-text">
+               Nájdite svoju vysnívanú doménu. Máme 380 koncoviek a sme certifikovaný registrátor.
+            </p>
+        </div>
+        <a href="https://www.webglobe.sk/domeny?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral" id="column-1-button">Zistiť viac</a>
+    </div>
+    <div class="box col-lg-2 box-2">
+        <div class="img-frame">
+            <span class="helper"></span>
+            <img class="img-fluid img-fluid-90" src="https://api.controlpanel.sk/img/default-pages/wy/images/server-icon.svg" alt="hosting" width="72" height="72">
+        </div>
+        <div class="text-frame">
+            <h3 id="column-2-heading">Webhosting</h3>
+            <p id="column-2-text">
+                Užívajte si super rýchly web na našom cenami ovenčenom webhostingu.
+            </p>
+        </div>
+        <a href="https://www.webglobe.sk/webhosting?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral" id="column-2-button">Zistiť viac</a>
+    </div>
+    <div class="box col-lg-2 box-3">
+        <div class="img-frame">
+            <span class="helper"></span>
+            <img class="img-fluid img-fluid-90" src="https://api.controlpanel.sk/img/default-pages/wy/images/editor-icon.svg" alt="domeny" width="72" height="72">
+        </div>
+        <div class="text-frame">
+            <h3 id="column-3-heading">AI WebEditor</h3>
+            <p id="column-3-text">
+                Tvorba webu je hračka, keď máte WebEditor so 60 šablónami k doméne zadarmo.
+            </p>
+        </div>
+        <a href="https://www.webglobe.sk/web?utm_source=webglobe+domain+with+hosting&utm_medium=link&utm_campaign=default+page&utm_id=referral" id="column-3-button">Zistiť viac</a>
+    </div>
+    </div>
+
+
+<script>
+
+        var logo_href = document.getElementById('logo-href');
+        var wypanel_href = document.getElementById('wypanel-href');
+
+        if(_lang == 'cs') {
+            document.getElementById('lang_selector').style.left = '-1px';
+            document.getElementById('lang_selector').innerHTML = 'CS';
+            logo_href.href = 'https://www.webglobe.cz/?utm_source=webglobe+domain&utm_medium=logo&utm_campaign=default+page&utm_id=referral';
+            wypanel_href.href = 'https://admin.webglobe.cz/auth/login/';
+            document.getElementById('info-href').href = "tel:+420 603 111 111"
+            document.getElementById('telephone').innerHTML = '+420 603 111 111';
+            document.getElementById('login').innerHTML = 'PŘIHLÁSIT SE';
+            document.getElementById('heading-main').innerHTML = 'Tato doména je registrovaná u <a href="https://www.webglobe.cz/?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral">Webglobe</a>';
+            document.getElementById('heading-first').innerHTML = 'Je vaše? Pořiďte si k ní i náš cenami ověnčený <a href="https://www.webglobe.cz/webhosting/?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral">webhosting.</a>';
+            document.getElementById('heading-second').innerHTML = 'Chcete také takovou? Vyhledejte si <a href="https://www.webglobe.cz/domeny/?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral">doménu</a> a do tří minut může být vaše.';
+            document.getElementById('column-1-heading').innerHTML = 'Domény';
+            document.getElementById('column-1-text').innerHTML = 'Najděte svou vysněnou doménu. Máme na 380 koncovek a jsme certifikovaný registrátor.';
+            document.getElementById('column-1-button').href = 'https://www.webglobe.cz/domeny/?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral';
+            document.getElementById('column-1-button').innerHTML = 'Zjistit více';
+            document.getElementById('column-2-heading').innerHTML = 'Webhosting';
+            document.getElementById('column-2-text').innerHTML = 'Užívejte si super rychlý web na našem cenami ověnčeném webhostingu.';
+            document.getElementById('column-2-button').href = 'https://www.webglobe.cz/webhosting/?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral';
+            document.getElementById('column-2-button').innerHTML = 'Zjistit více';
+            document.getElementById('column-3-heading').innerHTML = 'AI WebEditor';
+            document.getElementById('column-3-text').innerHTML = 'Nechte si web navrhnout od AI. WebEditor udělá všechnu těžkou práci za vás!';
+            document.getElementById('column-3-button').href = 'https://www.webglobe.cz/web/?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral';
+            document.getElementById('column-3-button').innerHTML = 'Zjistit více';
+            document.title = 'Ignum'
+        } else if(_lang == 'sk') {
+            document.getElementById('lang_selector').style.left = '73px';
+            document.getElementById('lang_selector').innerHTML = 'SK';
+            logo_href.href = 'https://www.webglobe.sk/?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral';
+            wypanel_href.href = 'https://admin.webglobe.sk/auth/login/';
+            document.getElementById('info-href').href = "tel:+421 258 101 062"
+            document.getElementById('telephone').innerHTML = '+421 258 101 062';
+            document.getElementById('login').innerHTML = 'PRIHLÁSIŤ';
+            document.getElementById('heading-main').innerHTML = 'Táto doména je momentálne pozastavená';
+            document.getElementById('heading-first').innerHTML = 'Je vaša? Uistite sa, že máte obnovené všetky služby.';
+            document.getElementById('heading-second').innerHTML = 'Chceli by ste podobnú? Vyhľadajte si <a href="https://www.webglobe.sk/domeny?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral"> doménu</a> a môžete ju mať už do troch minút.';
+            document.getElementById('column-1-heading').innerHTML = 'Domény';
+            document.getElementById('column-1-text').innerHTML = 'Nájdite svoju vysnívanú doménu. Máme 380 koncoviek a sme certifikovaný registrátor.';
+            document.getElementById('column-1-button').href = 'https://www.webglobe.sk/domeny?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral';
+            document.getElementById('column-1-button').innerHTML = 'Zistiť viac';
+            document.getElementById('column-2-heading').innerHTML = 'Webhosting';
+            document.getElementById('column-2-text').innerHTML = 'Užívajte si super rýchly web na našom cenami ovenčenom webhostingu.';
+            document.getElementById('column-2-button').href = 'https://www.webglobe.sk/webhosting?utm_source=webglobe+domain&utm_medium=link&utm_campaign=default+page&utm_id=referral';
+            document.getElementById('column-2-button').innerHTML = 'Zistiť viac';
+            document.getElementById('column-3-heading').innerHTML = 'AI WebEditor';
+            document.getElementById('column-3-text').innerHTML = 'Nechajte si web navrhnúť od AI. WebEditor urobí všetku ťažkú ​​prácu za vás!';
+            document.getElementById('column-3-button').href = 'https://www.webglobe.sk/web?utm_source=webglobe+domain+with+hosting&utm_medium=link&utm_campaign=default+page&utm_id=referral';
+            document.getElementById('column-3-button').innerHTML = 'Zistiť viac';
+            document.title = 'Ignum'
+        } else {
+            document.getElementById('lang_selector').style.left = '36px';
+            document.getElementById('lang_selector').innerHTML = 'EN';
+            logo_href.href = 'https://www.webglobe.com';
+            wypanel_href.href = 'https://admin.webglobe.sk/auth/login/';
+            document.getElementById('info-href').href = "tel:+421 258 101 062"
+            document.getElementById('telephone').innerHTML = '+421 258 101 062';
+            document.getElementById('login').innerHTML = 'LOGIN';
+            document.getElementById('heading-main').innerHTML = 'This domain is currently on hold.';
+            document.getElementById('heading-first').innerHTML = 'Is it yours? Renew it as soon as possible.';
+            document.getElementById('heading-second').innerHTML = 'Do you want a similar one as well? Search for a domain and you can have it in three minutes.';
+            document.getElementById('column-1-heading').innerHTML = 'Domains';
+            document.getElementById('column-1-text').innerHTML = 'Find the domain of your dreams. We have over 380 extensions and are a certified registrar.';
+            document.getElementById('column-1-button').href = 'https://www.webglobe.com/domains';
+            document.getElementById('column-1-button').innerHTML = 'Find out more';
+            document.getElementById('column-2-heading').innerHTML = 'Webhosting';
+            document.getElementById('column-2-text').innerHTML = 'Enjoy a super fast website on our popular, price winning web hosting.';
+            document.getElementById('column-2-button').href = 'https://www.webglobe.com/webhosting';
+            document.getElementById('column-2-button').innerHTML = 'Find out more';
+            document.getElementById('column-3-heading').innerHTML = 'AI WebEditor';
+            document.getElementById('column-3-text').innerHTML = 'Let AI design your website. WebEditor will do all the hard work for you!';
+            document.getElementById('column-3-button').href = 'https://www.webglobe.com';
+            document.getElementById('column-3-button').innerHTML = 'Find out more';   
+            document.title = 'Ignum'
+        }
+    }
+</script>
+
+</body>
+</html>
