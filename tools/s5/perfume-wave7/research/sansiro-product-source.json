@@ -1,0 +1,6 @@
+{
+  "url": "https://www.sansiroparfumes.eu/red-love-yves-saint-laurent-libre-90ml",
+  "at": "2026-11-14T17:40:34.370333+00:00",
+  "status": 200,
+  "text": " Fatal error: Uncaught Error: Call to undefined method ControllerProductProduct::formatStockStatus() in /data/4/9/49833460-98d9-43f9-b450-b5e1643c6a62/sansiroparfumes.eu/web/vqmod/vqcache/vq2-system_storage_modification_catalog_controller_product_product.php:386 Stack trace: #0 /data/4/9/49833460-98d9-43f9-b450-b5e1643c6a62/sansiroparfumes.eu/web/vqmod/vqcache/vq2-system_storage_modification_system_engine_action.php(51): ControllerProductProduct->index() #1 /data/4/9/49833460-98d9-43f9-b450-b5e1643c6a62/sansiroparfumes.eu/web/catalog/controller/startup/router.php(25): Action->execute(Object(Registry)) #2 /data/4/9/49833460-98d9-43f9-b450-b5e1643c6a62/sansiroparfumes.eu/web/vqmod/vqcache/vq2-system_storage_modification_system_engine_action.php(51): ControllerStartupRouter->index() #3 /data/4/9/49833460-98d9-43f9-b450-b5e1643c6a62/sansiroparfumes.eu/web/vqmod/vqcache/vq2-system_storage_modification_system_engine_front.php(37): Action->execute(Object(Registry)) #4 /data/4/9/49833460-98d9-43f9-b450-b5e1643c6a62/sansiroparfumes in /data/4/9/49833460-98d9-43f9-b450-b5e1643c6a62/sansiroparfumes.eu/web/vqmod/vqcache/vq2-system_storage_modification_catalog_controller_product_product.php on line 386 "
+}

@@ -1,0 +1,1155 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.odeur = {
+ "brand": "ODEUR",
+ "domain": "odeur.sk",
+ "operator": {
+  "name": "ODEUR s.r.o.",
+  "ico": "56402554",
+  "country": "SK",
+  "officialRegistry": "https://api.statistics.sk/rpo/v1/search?identifier=56402554",
+  "activeNoEnd": true
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "sk",
+ "country": "SK",
+ "currency": "EUR",
+ "status": "SOURCE_PACKAGE_VERIFIED",
+ "products": [
+  {
+   "id": "kvet-konvalinky",
+   "name": "Parfum na pranie KVET KONVALINKY",
+   "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-kvet-konvalinky-250-ml/",
+   "priceAmount": 19.99,
+   "price": "19,99 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Pomarančová kôra, zázvor a biele kvety. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+   "reason": "Pomarančová kôra, zázvor a biele kvety. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+   "photo": "/assets/s5/odeur/kvet-konvalinky.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-kvet-konvalinky-250-ml/",
+    "verifiedAt": "2026-11-14T17:47:57.943847+00:00",
+    "sourceSha256": "f99e93485588a4265f0e3fb17dc26cfdbe272aab92f8e50d5a62351b694e9d42",
+    "usagePurpose": "laundry-fragrance",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "ShoptetPublicSingleProductOffer",
+     "availabilityUrl": "https://schema.org/InStock",
+     "publicCode": "49",
+     "hasVariants": false,
+     "qualification": "Exact one fixed250mlOffer, not cartbutton/relatedstock or warehousecount."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 19.99,
+     "currency": "EUR",
+     "vatSource": "https://www.odeur.sk/vop/",
+     "vatEvidence": "Ceny tovaru sú uvedené vrátane dane z pridanej hodnoty."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "sourceText": "250 ml (50 dávok praní)",
+     "scope": "ExactfixedSKU productsummary and printedbottle250ml;50dosespublisherusageclaim not extraSKU."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.odeur.sk/user/shop/big/49_kvet-konvalinky-250-ml-top.png?ff=1&x=1024&y=1365&q=85&ts=66f326fd&sg=b18c963d",
+    "photoEvidence": {
+     "id": "kvet-konvalinky",
+     "url": "https://cdn.myshoptet.com/usr/www.odeur.sk/user/shop/big/49_kvet-konvalinky-250-ml-top.png?ff=1&x=1024&y=1365&q=85&ts=66f326fd&sg=b18c963d",
+     "file": "kvet-konvalinky.png",
+     "width": 1024,
+     "height": 1365,
+     "bytes": 42997,
+     "sha256": "d62ec7eb01930c4b5d2dc44fc7ae47e2c083d172b3f04735c25b6f52f8bda290",
+     "originalBytes": true,
+     "selectedPack": "250 ml"
+    },
+    "scent": "Pomarančová kôra, zázvor a biele kvety",
+    "usageRestrictions": {
+     "sourceUrl": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-kvet-konvalinky-250-ml/",
+     "sourceText": "Neprekračujte odporúčané dávkovanie a vyhnite sa použitiu na jemné alebo farbené tkaniny, hodváb, kašmír a vlnu.",
+     "displayText": "Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+     "purpose": "Laundry only, not personal perfume/skin application",
+     "doseSourceText": "Nalejte 5 ml koncentrátu do priehradky na aviváž. Toto množstvo zodpovedá jednej dávke pre 4 kg bielizne."
+    },
+    "fragrance": {
+     "notes": [
+      "Pomarančová kôra",
+      "bergamot",
+      "zázvor",
+      "kardamom",
+      "Neroli",
+      "jazmín",
+      "damaská ruža",
+      "konvalinka",
+      "fialka",
+      "Tonka bôby",
+      "vzácne drevo",
+      "borovicové drevo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "notesEvidence": {
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-kvet-konvalinky-250-ml/",
+      "sourceText": "Hlava: Pomarančová kôra, bergamot, zázvor, kardamom; Srdce: Neroli, jazmín, damaská ruža, konvalinka, fialka; Základ: Tonka bôby, vzácne drevo, borovicové drevo",
+      "originalSourceText": "Hlavné tóny:Pomarančová kôra, bergamot, zázvor a kardamom vytvárajú osviežujúci a energický začiatok, ktorý vás okamžite osloví svojou sviežosťou a citrusovou iskrou. Srdcové tóny:Neroli, jazmín, damaská ruža, konvalinka a fialka tvoria srdce vône, ktoré je plné jemných a romantických kvetinových akordov. Táto kombinácia prináša neodolateľnú eleganciu a šarm.Základné tóny: Tonka bôby, vzácne drevo a borovicové drevo poskytujú vôni hĺbku a stabilitu. Tieto teplé a zmyselné tóny zanechávajú trvalý dojem a vytvárajú harmonickú rovnováhu s kvetinovými tónmi.",
+      "sourceLanguage": "sk",
+      "displayLanguage": "sk",
+      "noteFormMapping": [
+       {
+        "display": "Pomarančová kôra",
+        "sourceFragments": [
+         "Pomarančová kôra"
+        ]
+       },
+       {
+        "display": "bergamot",
+        "sourceFragments": [
+         "bergamot"
+        ]
+       },
+       {
+        "display": "zázvor",
+        "sourceFragments": [
+         "zázvor"
+        ]
+       },
+       {
+        "display": "kardamom",
+        "sourceFragments": [
+         "kardamom"
+        ]
+       },
+       {
+        "display": "Neroli",
+        "sourceFragments": [
+         "Neroli"
+        ]
+       },
+       {
+        "display": "jazmín",
+        "sourceFragments": [
+         "jazmín"
+        ]
+       },
+       {
+        "display": "damaská ruža",
+        "sourceFragments": [
+         "damaská ruža"
+        ]
+       },
+       {
+        "display": "konvalinka",
+        "sourceFragments": [
+         "konvalinka"
+        ]
+       },
+       {
+        "display": "fialka",
+        "sourceFragments": [
+         "fialka"
+        ]
+       },
+       {
+        "display": "Tonka bôby",
+        "sourceFragments": [
+         "Tonka bôby"
+        ]
+       },
+       {
+        "display": "vzácne drevo",
+        "sourceFragments": [
+         "vzácne drevo"
+        ]
+       },
+       {
+        "display": "borovicové drevo",
+        "sourceFragments": [
+         "borovicové drevo"
+        ]
+       }
+      ],
+      "scope": "Faithful head/heart/base extraction; explicit grammaticalinflection normalization and coordinatedwoodnoun documented pernote. No newingredient/family/strength/medical/lastingclaim."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "Not personalEDP, never recommend on skin/silk/wool/delicate/coloredfabric.",
+     "No baby-safe/hypoallergenic/stain-free/medical/lastingguarantees from marketingorcomments.",
+     "No inventedcompatibleaddon/fabricfilter/budgetfunction or numericnoteweights."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "citrus",
+     "fragranceProfile": "kvet-konvalinky"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-kvet-konvalinky-250-ml/",
+     "sourceText": "Hlava: Pomarančová kôra, bergamot, zázvor, kardamom; Srdce: Neroli, jazmín, damaská ruža, konvalinka, fialka; Základ: Tonka bôby, vzácne drevo, borovicové drevo",
+     "navigationLabel": "Pomarančová kôra, zázvor a biele kvety",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "soli-a-kvety-lotosu",
+   "name": "Parfum na pranie SOLI A KVETY LOTOSU",
+   "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-soli-a-kvety-lotosu-250-ml/",
+   "priceAmount": 19.99,
+   "price": "19,99 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Bergamot, lotosový kvet a morské soli. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+   "reason": "Bergamot, lotosový kvet a morské soli. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+   "photo": "/assets/s5/odeur/soli-a-kvety-lotosu.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-soli-a-kvety-lotosu-250-ml/",
+    "verifiedAt": "2026-11-14T17:47:57.996268+00:00",
+    "sourceSha256": "d0012cf5b133346a199aad3e5b12bbc9d3085781822144f43d2fbda4bfb39256",
+    "usagePurpose": "laundry-fragrance",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "ShoptetPublicSingleProductOffer",
+     "availabilityUrl": "https://schema.org/InStock",
+     "publicCode": "61",
+     "hasVariants": false,
+     "qualification": "Exact one fixed250mlOffer, not cartbutton/relatedstock or warehousecount."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 19.99,
+     "currency": "EUR",
+     "vatSource": "https://www.odeur.sk/vop/",
+     "vatEvidence": "Ceny tovaru sú uvedené vrátane dane z pridanej hodnoty."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "sourceText": "250 ml (50 dávok praní)",
+     "scope": "ExactfixedSKU productsummary and printedbottle250ml;50dosespublisherusageclaim not extraSKU."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.odeur.sk/user/shop/big/61_soli-a-kvety-lotosu-250-ml-top.png?ff=1&x=1024&y=1365&q=85&ts=66f32875&sg=b18c963d",
+    "photoEvidence": {
+     "id": "soli-a-kvety-lotosu",
+     "url": "https://cdn.myshoptet.com/usr/www.odeur.sk/user/shop/big/61_soli-a-kvety-lotosu-250-ml-top.png?ff=1&x=1024&y=1365&q=85&ts=66f32875&sg=b18c963d",
+     "file": "soli-a-kvety-lotosu.png",
+     "width": 1024,
+     "height": 1365,
+     "bytes": 41241,
+     "sha256": "ba2c55ac1269e3fd2cb4fc9dd06d11b30fa1c74210cd9c900ce7a7b38b7decad",
+     "originalBytes": true,
+     "selectedPack": "250 ml"
+    },
+    "scent": "Bergamot, lotosový kvet a morské soli",
+    "usageRestrictions": {
+     "sourceUrl": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-soli-a-kvety-lotosu-250-ml/",
+     "sourceText": "Neprekračujte odporúčané dávkovanie a vyhnite sa použitiu na jemné alebo farbené tkaniny, hodváb, kašmír a vlnu.",
+     "displayText": "Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+     "purpose": "Laundry only, not personal perfume/skin application",
+     "doseSourceText": "Nalejte 5 ml koncentrátu do priehradky na aviváž. Toto množstvo zodpovedá jednej dávke pre 4 kg bielizne."
+    },
+    "fragrance": {
+     "notes": [
+      "Bergamot",
+      "lotosový kvet",
+      "ružové puky",
+      "morské soli",
+      "Pomarančové kvety",
+      "cyklámen",
+      "magnólia",
+      "kvet broskyne",
+      "ylang ylang",
+      "konvalinka",
+      "Vzácne drevá",
+      "santalové drevo",
+      "aromatické drevá",
+      "pižmo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "notesEvidence": {
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-soli-a-kvety-lotosu-250-ml/",
+      "sourceText": "Hlava: Bergamot, lotosový kvet, ružové puky, morské soli; Srdce: Pomarančové kvety, cyklámen, magnólia, kvet broskyne, ylang ylang, konvalinka; Základ: Vzácne drevá, santalové drevo, aromatické drevá, pižmo",
+      "originalSourceText": "Hlavné tóny:Bergamot, lotosový kvet, ružové puky a morské soli otvárajú vôňu sviežimi a iskrivými tónmi, ktoré pripomínajú ranné osvieženie pri mori. Srdcové tóny:Pomarančové kvety, cyklámen, magnólia, kvet broskyne, ylang ylang a konvalinka tvoria srdce vône, plné jemných a exotických kvetinových akordov, ktoré prinášajú sofistikovanú eleganciu. Základné tóny: Vzácne drevá, santalové drevo, aromatické drevá a pižmo poskytujú vôni hĺbku a dlhú trvanlivosť, čím zanechávajú príjemnú a zmyselnú stopu.",
+      "sourceLanguage": "sk",
+      "displayLanguage": "sk",
+      "noteFormMapping": [
+       {
+        "display": "Bergamot",
+        "sourceFragments": [
+         "Bergamot"
+        ]
+       },
+       {
+        "display": "lotosový kvet",
+        "sourceFragments": [
+         "lotosový kvet"
+        ]
+       },
+       {
+        "display": "ružové puky",
+        "sourceFragments": [
+         "ružové puky"
+        ]
+       },
+       {
+        "display": "morské soli",
+        "sourceFragments": [
+         "morské soli"
+        ]
+       },
+       {
+        "display": "Pomarančové kvety",
+        "sourceFragments": [
+         "Pomarančové kvety"
+        ]
+       },
+       {
+        "display": "cyklámen",
+        "sourceFragments": [
+         "cyklámen"
+        ]
+       },
+       {
+        "display": "magnólia",
+        "sourceFragments": [
+         "magnólia"
+        ]
+       },
+       {
+        "display": "kvet broskyne",
+        "sourceFragments": [
+         "kvet broskyne"
+        ]
+       },
+       {
+        "display": "ylang ylang",
+        "sourceFragments": [
+         "ylang ylang"
+        ]
+       },
+       {
+        "display": "konvalinka",
+        "sourceFragments": [
+         "konvalinka"
+        ]
+       },
+       {
+        "display": "Vzácne drevá",
+        "sourceFragments": [
+         "Vzácne drevá"
+        ]
+       },
+       {
+        "display": "santalové drevo",
+        "sourceFragments": [
+         "santalové drevo"
+        ]
+       },
+       {
+        "display": "aromatické drevá",
+        "sourceFragments": [
+         "aromatické drevá"
+        ]
+       },
+       {
+        "display": "pižmo",
+        "sourceFragments": [
+         "pižmo"
+        ]
+       }
+      ],
+      "scope": "Faithful head/heart/base extraction; explicit grammaticalinflection normalization and coordinatedwoodnoun documented pernote. No newingredient/family/strength/medical/lastingclaim."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "Not personalEDP, never recommend on skin/silk/wool/delicate/coloredfabric.",
+     "No baby-safe/hypoallergenic/stain-free/medical/lastingguarantees from marketingorcomments.",
+     "No inventedcompatibleaddon/fabricfilter/budgetfunction or numericnoteweights."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "citrus",
+     "fragranceProfile": "soli-a-kvety-lotosu"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-soli-a-kvety-lotosu-250-ml/",
+     "sourceText": "Hlava: Bergamot, lotosový kvet, ružové puky, morské soli; Srdce: Pomarančové kvety, cyklámen, magnólia, kvet broskyne, ylang ylang, konvalinka; Základ: Vzácne drevá, santalové drevo, aromatické drevá, pižmo",
+     "navigationLabel": "Bergamot, lotosový kvet a morské soli",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "muskatove-drevo",
+   "name": "Parfum na pranie MUŠKÁTOVÉ DREVO",
+   "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-muskatove-drevo-250-ml/",
+   "priceAmount": 19.99,
+   "price": "19,99 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Biela broskyňa, ruža a ambrette. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+   "reason": "Biela broskyňa, ruža a ambrette. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+   "photo": "/assets/s5/odeur/muskatove-drevo.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-muskatove-drevo-250-ml/",
+    "verifiedAt": "2026-11-14T17:47:57.808036+00:00",
+    "sourceSha256": "56c40f1d9850acd0f0b44091ef024c26ab00bc931050038759901384f5c41909",
+    "usagePurpose": "laundry-fragrance",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "ShoptetPublicSingleProductOffer",
+     "availabilityUrl": "https://schema.org/InStock",
+     "publicCode": "55",
+     "hasVariants": false,
+     "qualification": "Exact one fixed250mlOffer, not cartbutton/relatedstock or warehousecount."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 19.99,
+     "currency": "EUR",
+     "vatSource": "https://www.odeur.sk/vop/",
+     "vatEvidence": "Ceny tovaru sú uvedené vrátane dane z pridanej hodnoty."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "sourceText": "250 ml (50 dávok praní)",
+     "scope": "ExactfixedSKU productsummary and printedbottle250ml;50dosespublisherusageclaim not extraSKU."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.odeur.sk/user/shop/big/55_muskatove-drevo-250-ml-top.png?ff=1&x=1024&y=1365&q=85&ts=66f32798&sg=b18c963d",
+    "photoEvidence": {
+     "id": "muskatove-drevo",
+     "url": "https://cdn.myshoptet.com/usr/www.odeur.sk/user/shop/big/55_muskatove-drevo-250-ml-top.png?ff=1&x=1024&y=1365&q=85&ts=66f32798&sg=b18c963d",
+     "file": "muskatove-drevo.png",
+     "width": 1024,
+     "height": 1365,
+     "bytes": 42672,
+     "sha256": "3162853c3300ea2ace917676dbab1ba8b4c54d3e928717d9e852d3e948cba907",
+     "originalBytes": true,
+     "selectedPack": "250 ml"
+    },
+    "scent": "Biela broskyňa, ruža a ambrette",
+    "usageRestrictions": {
+     "sourceUrl": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-muskatove-drevo-250-ml/",
+     "sourceText": "Neprekračujte odporúčané dávkovanie a vyhnite sa použitiu na jemné alebo farbené tkaniny, hodváb, kašmír a vlnu.",
+     "displayText": "Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+     "purpose": "Laundry only, not personal perfume/skin application",
+     "doseSourceText": "Nalejte 5 ml koncentrátu do priehradky na aviváž. Toto množstvo zodpovedá jednej dávke pre 4 kg bielizne."
+    },
+    "fragrance": {
+     "notes": [
+      "Sladký pomaranč",
+      "bergamot",
+      "biela broskyňa",
+      "Ruža",
+      "pomarančový kvet",
+      "kapucínka",
+      "zvonček",
+      "Ambrette",
+      "vzácne drevá",
+      "rastlinné pižmo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "notesEvidence": {
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-muskatove-drevo-250-ml/",
+      "sourceText": "Hlava: Sladký pomaranč, bergamot, biela broskyňa; Srdce: Ruža, pomarančový kvet, kapucínka, zvonček; Základ: Ambrette, vzácne drevá, rastlinné pižmo",
+      "originalSourceText": "Hlavné tóny:Sladký pomaranč, bergamot a biela broskyňa vytvárajú osviežujúci a šťavnatý úvod, ktorý okamžite očarí vaše zmysly svojou citrusovou sladkosťou a jemnou ovocnou arómou. Srdcové tóny:Ruža, pomarančový kvet, kapucínka a zvonček tvoria srdce vône, prinášajúce jemné a romantické kvetinové tóny, ktoré obohacujú arómu o sofistikovanú eleganciu. Základné tóny: Ambrette, vzácne drevá a rastlinné pižmo poskytujú vôni hĺbku a dlhotrvajúci dojem, zanechávajúc teplú a zmyselnú stopu, ktorá je ideálna pre večerné nosenie.",
+      "sourceLanguage": "sk",
+      "displayLanguage": "sk",
+      "noteFormMapping": [
+       {
+        "display": "Sladký pomaranč",
+        "sourceFragments": [
+         "Sladký pomaranč"
+        ]
+       },
+       {
+        "display": "bergamot",
+        "sourceFragments": [
+         "bergamot"
+        ]
+       },
+       {
+        "display": "biela broskyňa",
+        "sourceFragments": [
+         "biela broskyňa"
+        ]
+       },
+       {
+        "display": "Ruža",
+        "sourceFragments": [
+         "Ruža"
+        ]
+       },
+       {
+        "display": "pomarančový kvet",
+        "sourceFragments": [
+         "pomarančový kvet"
+        ]
+       },
+       {
+        "display": "kapucínka",
+        "sourceFragments": [
+         "kapucínka"
+        ]
+       },
+       {
+        "display": "zvonček",
+        "sourceFragments": [
+         "zvonček"
+        ]
+       },
+       {
+        "display": "Ambrette",
+        "sourceFragments": [
+         "Ambrette"
+        ]
+       },
+       {
+        "display": "vzácne drevá",
+        "sourceFragments": [
+         "vzácne drevá"
+        ]
+       },
+       {
+        "display": "rastlinné pižmo",
+        "sourceFragments": [
+         "rastlinné pižmo"
+        ]
+       }
+      ],
+      "scope": "Faithful head/heart/base extraction; explicit grammaticalinflection normalization and coordinatedwoodnoun documented pernote. No newingredient/family/strength/medical/lastingclaim."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "Not personalEDP, never recommend on skin/silk/wool/delicate/coloredfabric.",
+     "No baby-safe/hypoallergenic/stain-free/medical/lastingguarantees from marketingorcomments.",
+     "No inventedcompatibleaddon/fabricfilter/budgetfunction or numericnoteweights."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "fruit",
+     "fragranceProfile": "muskatove-drevo"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-muskatove-drevo-250-ml/",
+     "sourceText": "Hlava: Sladký pomaranč, bergamot, biela broskyňa; Srdce: Ruža, pomarančový kvet, kapucínka, zvonček; Základ: Ambrette, vzácne drevá, rastlinné pižmo",
+     "navigationLabel": "Biela broskyňa, ruža a ambrette",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "sladka-pivonka",
+   "name": "Parfum na pranie SLADKÁ PIVOŇKA",
+   "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-sladka-pivonka-250-ml/",
+   "priceAmount": 19.99,
+   "price": "19,99 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Mirabelka, pivonka a drevité tóny. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+   "reason": "Mirabelka, pivonka a drevité tóny. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+   "photo": "/assets/s5/odeur/sladka-pivonka.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-sladka-pivonka-250-ml/",
+    "verifiedAt": "2026-11-14T17:47:58.731079+00:00",
+    "sourceSha256": "14358765a9db9f7807618eb258e38b94bbca1880f30c4b0d9bd4964faaf87b88",
+    "usagePurpose": "laundry-fragrance",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "ShoptetPublicSingleProductOffer",
+     "availabilityUrl": "https://schema.org/InStock",
+     "publicCode": "58",
+     "hasVariants": false,
+     "qualification": "Exact one fixed250mlOffer, not cartbutton/relatedstock or warehousecount."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 19.99,
+     "currency": "EUR",
+     "vatSource": "https://www.odeur.sk/vop/",
+     "vatEvidence": "Ceny tovaru sú uvedené vrátane dane z pridanej hodnoty."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "sourceText": "250 ml (50 dávok praní)",
+     "scope": "ExactfixedSKU productsummary and printedbottle250ml;50dosespublisherusageclaim not extraSKU."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.odeur.sk/user/shop/big/58_sladka-pivonka-250-ml-top.png?ff=1&x=1024&y=1365&q=85&ts=66f32812&sg=b18c963d",
+    "photoEvidence": {
+     "id": "sladka-pivonka",
+     "url": "https://cdn.myshoptet.com/usr/www.odeur.sk/user/shop/big/58_sladka-pivonka-250-ml-top.png?ff=1&x=1024&y=1365&q=85&ts=66f32812&sg=b18c963d",
+     "file": "sladka-pivonka.png",
+     "width": 1024,
+     "height": 1365,
+     "bytes": 43127,
+     "sha256": "a943f9478d6bcc06fda21bb4837f540da9cda85e0af148723d4ac63464ce4f98",
+     "originalBytes": true,
+     "selectedPack": "250 ml"
+    },
+    "scent": "Mirabelka, pivonka a drevité tóny",
+    "usageRestrictions": {
+     "sourceUrl": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-sladka-pivonka-250-ml/",
+     "sourceText": "Neprekračujte odporúčané dávkovanie a vyhnite sa použitiu na jemné alebo farbené tkaniny, hodváb, kašmír a vlnu.",
+     "displayText": "Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+     "purpose": "Laundry only, not personal perfume/skin application",
+     "doseSourceText": "Nalejte 5 ml koncentrátu do priehradky na aviváž. Toto množstvo zodpovedá jednej dávke pre 4 kg bielizne."
+    },
+    "fragrance": {
+     "notes": [
+      "sladký pomaranč",
+      "mirabelka",
+      "červené plody",
+      "neroli",
+      "pivonka",
+      "magnólia",
+      "kvety marhúľ",
+      "cyklámen",
+      "eukalyptové drevo",
+      "santalové drevo",
+      "cédrové drevo",
+      "kašmírové drevo",
+      "pižmo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "notesEvidence": {
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-sladka-pivonka-250-ml/",
+      "sourceText": "Hlava: sladký pomaranč, mirabelka, červené plody, neroli; Srdce: pivonka, magnólia, kvety marhúľ, cyklámen; Základ: eukalyptové drevo, santalové drevo, cédrové drevo, kašmírové drevo, pižmo",
+      "originalSourceText": "Hlavné tóny:Vstupné akordy sladkého pomaranča, mirabelky, červených plodov a neroli dodávajú vôni šťavnatú a iskrivú sviežosť, ktorá okamžite osvieži vaše zmysly.Srdcové tóny:V srdci vône rozkvitajú pivonka, magnólia, kvety marhúľ a cyklámen, ktoré prinášajú jemnú, romantickú kvetinovú arómu, obohatenú o elegantné a sofistikované nuansy.Základné tóny: Základné tóny eukalyptového, santalového, cédrového a kašmírového dreva, doplnené o pižmo, dodávajú vôni hĺbku a dlhú trvanlivosť. Tieto tóny vytvárajú teplú a zmyselnú stopu, ktorá vás bude sprevádzať po celý deň.",
+      "sourceLanguage": "sk",
+      "displayLanguage": "sk",
+      "noteFormMapping": [
+       {
+        "display": "sladký pomaranč",
+        "sourceFragments": [
+         "sladkého pomaranča"
+        ]
+       },
+       {
+        "display": "mirabelka",
+        "sourceFragments": [
+         "mirabelky"
+        ]
+       },
+       {
+        "display": "červené plody",
+        "sourceFragments": [
+         "červených plodov"
+        ]
+       },
+       {
+        "display": "neroli",
+        "sourceFragments": [
+         "neroli"
+        ]
+       },
+       {
+        "display": "pivonka",
+        "sourceFragments": [
+         "pivonka"
+        ]
+       },
+       {
+        "display": "magnólia",
+        "sourceFragments": [
+         "magnólia"
+        ]
+       },
+       {
+        "display": "kvety marhúľ",
+        "sourceFragments": [
+         "kvety marhúľ"
+        ]
+       },
+       {
+        "display": "cyklámen",
+        "sourceFragments": [
+         "cyklámen"
+        ]
+       },
+       {
+        "display": "eukalyptové drevo",
+        "sourceFragments": [
+         "eukalyptového",
+         "dreva"
+        ]
+       },
+       {
+        "display": "santalové drevo",
+        "sourceFragments": [
+         "santalového",
+         "dreva"
+        ]
+       },
+       {
+        "display": "cédrové drevo",
+        "sourceFragments": [
+         "cédrového",
+         "dreva"
+        ]
+       },
+       {
+        "display": "kašmírové drevo",
+        "sourceFragments": [
+         "kašmírového",
+         "dreva"
+        ]
+       },
+       {
+        "display": "pižmo",
+        "sourceFragments": [
+         "pižmo"
+        ]
+       }
+      ],
+      "scope": "Faithful head/heart/base extraction; explicit grammaticalinflection normalization and coordinatedwoodnoun documented pernote. No newingredient/family/strength/medical/lastingclaim."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "Not personalEDP, never recommend on skin/silk/wool/delicate/coloredfabric.",
+     "No baby-safe/hypoallergenic/stain-free/medical/lastingguarantees from marketingorcomments.",
+     "No inventedcompatibleaddon/fabricfilter/budgetfunction or numericnoteweights."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "fruit",
+     "fragranceProfile": "sladka-pivonka"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-sladka-pivonka-250-ml/",
+     "sourceText": "Hlava: sladký pomaranč, mirabelka, červené plody, neroli; Srdce: pivonka, magnólia, kvety marhúľ, cyklámen; Základ: eukalyptové drevo, santalové drevo, cédrové drevo, kašmírové drevo, pižmo",
+     "navigationLabel": "Mirabelka, pivonka a drevité tóny",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "jantarove-krystaly",
+   "name": "Parfum na pranie JANTÁROVÉ KRY̌ŠTÁLY",
+   "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-jantarove-krystaly-250-ml/",
+   "priceAmount": 19.99,
+   "price": "19,99 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Zelený citrón, gardénia a jantár. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+   "reason": "Zelený citrón, gardénia a jantár. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+   "photo": "/assets/s5/odeur/jantarove-krystaly.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-jantarove-krystaly-250-ml/",
+    "verifiedAt": "2026-11-14T17:47:58.650803+00:00",
+    "sourceSha256": "2c6865a9498e28601ef9a894c1b0d01a63bfa505346f67413285ea357c6cff23",
+    "usagePurpose": "laundry-fragrance",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "ShoptetPublicSingleProductOffer",
+     "availabilityUrl": "https://schema.org/InStock",
+     "publicCode": "46",
+     "hasVariants": false,
+     "qualification": "Exact one fixed250mlOffer, not cartbutton/relatedstock or warehousecount."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 19.99,
+     "currency": "EUR",
+     "vatSource": "https://www.odeur.sk/vop/",
+     "vatEvidence": "Ceny tovaru sú uvedené vrátane dane z pridanej hodnoty."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "sourceText": "250 ml (50 dávok praní)",
+     "scope": "ExactfixedSKU productsummary and printedbottle250ml;50dosespublisherusageclaim not extraSKU."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.odeur.sk/user/shop/big/46_jantarove-krystaly-250-ml-top.png?ff=1&x=1024&y=1365&q=85&ts=66f32678&sg=b18c963d",
+    "photoEvidence": {
+     "id": "jantarove-krystaly",
+     "url": "https://cdn.myshoptet.com/usr/www.odeur.sk/user/shop/big/46_jantarove-krystaly-250-ml-top.png?ff=1&x=1024&y=1365&q=85&ts=66f32678&sg=b18c963d",
+     "file": "jantarove-krystaly.png",
+     "width": 1024,
+     "height": 1365,
+     "bytes": 43311,
+     "sha256": "91c681d63a9832c1a41d6032462bb586cc1c5b11ce0cc68cd3a6c4f699885320",
+     "originalBytes": true,
+     "selectedPack": "250 ml"
+    },
+    "scent": "Zelený citrón, gardénia a jantár",
+    "usageRestrictions": {
+     "sourceUrl": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-jantarove-krystaly-250-ml/",
+     "sourceText": "Neprekračujte odporúčané dávkovanie a vyhnite sa použitiu na jemné alebo farbené tkaniny, hodváb, kašmír a vlnu.",
+     "displayText": "Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+     "purpose": "Laundry only, not personal perfume/skin application",
+     "doseSourceText": "Nalejte 5 ml koncentrátu do priehradky na aviváž. Toto množstvo zodpovedá jednej dávke pre 4 kg bielizne."
+    },
+    "fragrance": {
+     "notes": [
+      "Bergamot",
+      "zelený citrón",
+      "biela broskyňa",
+      "zelené tóny",
+      "Biela ruža",
+      "gardénia",
+      "magnólia",
+      "bambusové listy",
+      "jantár",
+      "tonka bôby",
+      "bambusové drevo",
+      "pižmo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "notesEvidence": {
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-jantarove-krystaly-250-ml/",
+      "sourceText": "Hlava: Bergamot, zelený citrón, biela broskyňa, zelené tóny; Srdce: Biela ruža, gardénia, magnólia, bambusové listy; Základ: jantár, tonka bôby, bambusové drevo, pižmo",
+      "originalSourceText": "Hlavné tóny:Vôňa začína iskrivými tónmi bergamotu, zeleného citróna, bielej broskyne a zelených tónov, ktoré prinášajú osviežujúcu a šťavnatú arómu. Srdcové tóny:Biela ruža, gardénia, magnólia a bambusové listy tvoria srdce vône, ktoré je plné jemných kvetinových akordov a dodáva vôni jemnosť a rafinovanosť. Základné tóny: Základné tóny jantáru, tonka bôbov, bambusového dreva a pižma poskytujú vôni hĺbku a dlhotrvajúci dojem, zanechávajúc zmyselnú a teplú stopu.",
+      "sourceLanguage": "sk",
+      "displayLanguage": "sk",
+      "noteFormMapping": [
+       {
+        "display": "Bergamot",
+        "sourceFragments": [
+         "bergamotu"
+        ]
+       },
+       {
+        "display": "zelený citrón",
+        "sourceFragments": [
+         "zeleného citróna"
+        ]
+       },
+       {
+        "display": "biela broskyňa",
+        "sourceFragments": [
+         "bielej broskyne"
+        ]
+       },
+       {
+        "display": "zelené tóny",
+        "sourceFragments": [
+         "zelených tónov"
+        ]
+       },
+       {
+        "display": "Biela ruža",
+        "sourceFragments": [
+         "Biela ruža"
+        ]
+       },
+       {
+        "display": "gardénia",
+        "sourceFragments": [
+         "gardénia"
+        ]
+       },
+       {
+        "display": "magnólia",
+        "sourceFragments": [
+         "magnólia"
+        ]
+       },
+       {
+        "display": "bambusové listy",
+        "sourceFragments": [
+         "bambusové listy"
+        ]
+       },
+       {
+        "display": "jantár",
+        "sourceFragments": [
+         "jantáru"
+        ]
+       },
+       {
+        "display": "tonka bôby",
+        "sourceFragments": [
+         "tonka bôbov"
+        ]
+       },
+       {
+        "display": "bambusové drevo",
+        "sourceFragments": [
+         "bambusového dreva"
+        ]
+       },
+       {
+        "display": "pižmo",
+        "sourceFragments": [
+         "pižma"
+        ]
+       }
+      ],
+      "scope": "Faithful head/heart/base extraction; explicit grammaticalinflection normalization and coordinatedwoodnoun documented pernote. No newingredient/family/strength/medical/lastingclaim."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "Not personalEDP, never recommend on skin/silk/wool/delicate/coloredfabric.",
+     "No baby-safe/hypoallergenic/stain-free/medical/lastingguarantees from marketingorcomments.",
+     "No inventedcompatibleaddon/fabricfilter/budgetfunction or numericnoteweights."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "wood",
+     "fragranceProfile": "jantarove-krystaly"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-jantarove-krystaly-250-ml/",
+     "sourceText": "Hlava: Bergamot, zelený citrón, biela broskyňa, zelené tóny; Srdce: Biela ruža, gardénia, magnólia, bambusové listy; Základ: jantár, tonka bôby, bambusové drevo, pižmo",
+     "navigationLabel": "Zelený citrón, gardénia a jantár",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "argansky-hodvab",
+   "name": "Parfum na pranie ARGÁNSKY HODVÁB",
+   "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-argansky-hodvab-250-ml/",
+   "priceAmount": 19.99,
+   "price": "19,99 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Pomaranč, jazmín a cédrové drevo. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+   "reason": "Pomaranč, jazmín a cédrové drevo. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+   "photo": "/assets/s5/odeur/argansky-hodvab.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-argansky-hodvab-250-ml/",
+    "verifiedAt": "2026-11-14T17:47:59.122126+00:00",
+    "sourceSha256": "02097b845cc713277b108d716e90772eff37ed316492134c48f8aa9bc02cd1d5",
+    "usagePurpose": "laundry-fragrance",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "ShoptetPublicSingleProductOffer",
+     "availabilityUrl": "https://schema.org/InStock",
+     "publicCode": "43",
+     "hasVariants": false,
+     "qualification": "Exact one fixed250mlOffer, not cartbutton/relatedstock or warehousecount."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 19.99,
+     "currency": "EUR",
+     "vatSource": "https://www.odeur.sk/vop/",
+     "vatEvidence": "Ceny tovaru sú uvedené vrátane dane z pridanej hodnoty."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "sourceText": "250 ml (50 dávok praní)",
+     "scope": "ExactfixedSKU productsummary and printedbottle250ml;50dosespublisherusageclaim not extraSKU."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.odeur.sk/user/shop/big/43_argansky-hodvab-250-ml-top.png?ff=1&x=1024&y=1365&q=85&ts=66f325d0&sg=b18c963d",
+    "photoEvidence": {
+     "id": "argansky-hodvab",
+     "url": "https://cdn.myshoptet.com/usr/www.odeur.sk/user/shop/big/43_argansky-hodvab-250-ml-top.png?ff=1&x=1024&y=1365&q=85&ts=66f325d0&sg=b18c963d",
+     "file": "argansky-hodvab.png",
+     "width": 1024,
+     "height": 1365,
+     "bytes": 41088,
+     "sha256": "4894bf4945457da68c51c862832006ca30cb31904b23af09012544a79f76f744",
+     "originalBytes": true,
+     "selectedPack": "250 ml"
+    },
+    "scent": "Pomaranč, jazmín a cédrové drevo",
+    "usageRestrictions": {
+     "sourceUrl": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-argansky-hodvab-250-ml/",
+     "sourceText": "Neprekračujte odporúčané dávkovanie a vyhnite sa použitiu na jemné alebo farbené tkaniny, hodváb, kašmír a vlnu.",
+     "displayText": "Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+     "purpose": "Laundry only, not personal perfume/skin application",
+     "doseSourceText": "Nalejte 5 ml koncentrátu do priehradky na aviváž. Toto množstvo zodpovedá jednej dávke pre 4 kg bielizne."
+    },
+    "fragrance": {
+     "notes": [
+      "Pomaranč",
+      "bergamot",
+      "argan",
+      "bambucké maslo",
+      "Kamélia",
+      "jazmín",
+      "damaská ruža",
+      "cyklámen",
+      "Vzácne drevá",
+      "cédrové drevo",
+      "santalové drevo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "notesEvidence": {
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-argansky-hodvab-250-ml/",
+      "sourceText": "Hlava: Pomaranč, bergamot, argan, bambucké maslo; Srdce: Kamélia, jazmín, damaská ruža, cyklámen; Základ: Vzácne drevá, cédrové drevo, santalové drevo",
+      "originalSourceText": "Hlavné tóny:Pomaranč, bergamot, argan a bambucké maslo vytvárajú osviežujúci a výživný začiatok, ktorý dodáva vôni jemnosť a zmyselnosť. Srdcové tóny:Kamélia, jazmín, damaská ruža a cyklámen tvoria srdce vône, plné elegantných a romantických kvetinových tónov, ktoré obohacujú arómu o sofistikovanú krásu. Základné tóny: Vzácne drevá, cédrové drevo a santalové drevo poskytujú vôni hĺbku a trvácnosť, zanechávajúc teplú a príjemnú stopu.",
+      "sourceLanguage": "sk",
+      "displayLanguage": "sk",
+      "noteFormMapping": [
+       {
+        "display": "Pomaranč",
+        "sourceFragments": [
+         "Pomaranč"
+        ]
+       },
+       {
+        "display": "bergamot",
+        "sourceFragments": [
+         "bergamot"
+        ]
+       },
+       {
+        "display": "argan",
+        "sourceFragments": [
+         "argan"
+        ]
+       },
+       {
+        "display": "bambucké maslo",
+        "sourceFragments": [
+         "bambucké maslo"
+        ]
+       },
+       {
+        "display": "Kamélia",
+        "sourceFragments": [
+         "Kamélia"
+        ]
+       },
+       {
+        "display": "jazmín",
+        "sourceFragments": [
+         "jazmín"
+        ]
+       },
+       {
+        "display": "damaská ruža",
+        "sourceFragments": [
+         "damaská ruža"
+        ]
+       },
+       {
+        "display": "cyklámen",
+        "sourceFragments": [
+         "cyklámen"
+        ]
+       },
+       {
+        "display": "Vzácne drevá",
+        "sourceFragments": [
+         "Vzácne drevá"
+        ]
+       },
+       {
+        "display": "cédrové drevo",
+        "sourceFragments": [
+         "cédrové drevo"
+        ]
+       },
+       {
+        "display": "santalové drevo",
+        "sourceFragments": [
+         "santalové drevo"
+        ]
+       }
+      ],
+      "scope": "Faithful head/heart/base extraction; explicit grammaticalinflection normalization and coordinatedwoodnoun documented pernote. No newingredient/family/strength/medical/lastingclaim."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "Not personalEDP, never recommend on skin/silk/wool/delicate/coloredfabric.",
+     "No baby-safe/hypoallergenic/stain-free/medical/lastingguarantees from marketingorcomments.",
+     "No inventedcompatibleaddon/fabricfilter/budgetfunction or numericnoteweights."
+    ],
+    "selectionTraits": {
+     "fragranceDirection": "wood",
+     "fragranceProfile": "argansky-hodvab"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-argansky-hodvab-250-ml/",
+     "sourceText": "Hlava: Pomaranč, bergamot, argan, bambucké maslo; Srdce: Kamélia, jazmín, damaská ruža, cyklámen; Základ: Vzácne drevá, cédrové drevo, santalové drevo",
+     "navigationLabel": "Pomaranč, jazmín a cédrové drevo",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  }
+ ],
+ "revenue": {
+  "year": 2025,
+  "salesGoods": 7512,
+  "salesProductsServices": 0,
+  "salesSum": 7512,
+  "operatingRevenue": 7520,
+  "otherOperatingIncome": 8,
+  "currency": "EUR",
+  "source": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10465278",
+  "pdfSource": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/13012955",
+  "qualification": "Officialfulloperator2025MUJrow02sales7512, not row01operating7520, wholeEURheader/ICOchecked."
+ },
+ "size": "OFFICIAL2025_SMALL_TIER_PASS_LAUNDRY_INTEGRATION_SCOPE_REVIEW",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "Laundryfragrance only; truthfulkind, names and usage restrictions, not mappedtoEDP/skincare.",
+  "Six different source-backed compositions at250ml; no extraformula forphoto/size/sample.",
+  "Same source5ml/4kginstructions and prohibitedfabrics are commonlimitations, not a fabricatedfabric-selectionfeature.",
+  "MAINmustreviewlaundrybackendguard; no promise existingpersonalfragranceAIalreadycoversfabricqueries. Existingc9note-tree unchanged, chatonlysourceIDmock.",
+  "Actual rejected-cookiehome/product no advisorobserved; ordinaryOpytaťsa blankemail/phone/message/captcha, no submissions. Othermodesunknown."
+ ]
+};

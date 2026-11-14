@@ -1,0 +1,977 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-14T18:02:45.246175+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "odeur",
+      "width": 320,
+      "id": "kvet-konvalinky",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-kvet-konvalinky-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-kvet-konvalinky-320.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "id": "soli-a-kvety-lotosu",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-soli-a-kvety-lotosu-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-soli-a-kvety-lotosu-320.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "id": "muskatove-drevo",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-muskatove-drevo-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-muskatove-drevo-320.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "id": "sladka-pivonka",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-sladka-pivonka-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-sladka-pivonka-320.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "id": "jantarove-krystaly",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-jantarove-krystaly-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-jantarove-krystaly-320.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "id": "argansky-hodvab",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-argansky-hodvab-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-argansky-hodvab-320.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "id": "kvet-konvalinky",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-kvet-konvalinky-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-kvet-konvalinky-390.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "id": "soli-a-kvety-lotosu",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-soli-a-kvety-lotosu-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-soli-a-kvety-lotosu-390.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "id": "muskatove-drevo",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-muskatove-drevo-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-muskatove-drevo-390.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "id": "sladka-pivonka",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-sladka-pivonka-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-sladka-pivonka-390.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "id": "jantarove-krystaly",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-jantarove-krystaly-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-jantarove-krystaly-390.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "id": "argansky-hodvab",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-argansky-hodvab-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-argansky-hodvab-390.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "id": "kvet-konvalinky",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-kvet-konvalinky-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-kvet-konvalinky-1280.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "id": "soli-a-kvety-lotosu",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-soli-a-kvety-lotosu-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-soli-a-kvety-lotosu-1280.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "id": "muskatove-drevo",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-muskatove-drevo-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-muskatove-drevo-1280.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "id": "sladka-pivonka",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-sladka-pivonka-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-sladka-pivonka-1280.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "id": "jantarove-krystaly",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-jantarove-krystaly-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-jantarove-krystaly-1280.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "id": "argansky-hodvab",
+      "pack": "250 ml",
+      "price": "19,99 €",
+      "url": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-argansky-hodvab-250-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "odeur-result-argansky-hodvab-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "odeur",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "citrus",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "odeur-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "kvet-konvalinky",
+          "photo": "/assets/s5/odeur/kvet-konvalinky.png"
+        },
+        {
+          "id": "soli-a-kvety-lotosu",
+          "photo": "/assets/s5/odeur/soli-a-kvety-lotosu.png"
+        }
+      ],
+      "screenshot": "odeur-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "muskatove-drevo",
+          "photo": "/assets/s5/odeur/muskatove-drevo.png"
+        },
+        {
+          "id": "sladka-pivonka",
+          "photo": "/assets/s5/odeur/sladka-pivonka.png"
+        }
+      ],
+      "screenshot": "odeur-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "jantarove-krystaly",
+          "photo": "/assets/s5/odeur/jantarove-krystaly.png"
+        },
+        {
+          "id": "argansky-hodvab",
+          "photo": "/assets/s5/odeur/argansky-hodvab.png"
+        }
+      ],
+      "screenshot": "odeur-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "citrus",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "odeur-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "kvet-konvalinky",
+          "photo": "/assets/s5/odeur/kvet-konvalinky.png"
+        },
+        {
+          "id": "soli-a-kvety-lotosu",
+          "photo": "/assets/s5/odeur/soli-a-kvety-lotosu.png"
+        }
+      ],
+      "screenshot": "odeur-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "muskatove-drevo",
+          "photo": "/assets/s5/odeur/muskatove-drevo.png"
+        },
+        {
+          "id": "sladka-pivonka",
+          "photo": "/assets/s5/odeur/sladka-pivonka.png"
+        }
+      ],
+      "screenshot": "odeur-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "jantarove-krystaly",
+          "photo": "/assets/s5/odeur/jantarove-krystaly.png"
+        },
+        {
+          "id": "argansky-hodvab",
+          "photo": "/assets/s5/odeur/argansky-hodvab.png"
+        }
+      ],
+      "screenshot": "odeur-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "citrus",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "odeur-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "kvet-konvalinky",
+          "photo": "/assets/s5/odeur/kvet-konvalinky.png"
+        },
+        {
+          "id": "soli-a-kvety-lotosu",
+          "photo": "/assets/s5/odeur/soli-a-kvety-lotosu.png"
+        }
+      ],
+      "screenshot": "odeur-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "muskatove-drevo",
+          "photo": "/assets/s5/odeur/muskatove-drevo.png"
+        },
+        {
+          "id": "sladka-pivonka",
+          "photo": "/assets/s5/odeur/sladka-pivonka.png"
+        }
+      ],
+      "screenshot": "odeur-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "jantarove-krystaly",
+          "photo": "/assets/s5/odeur/jantarove-krystaly.png"
+        },
+        {
+          "id": "argansky-hodvab",
+          "photo": "/assets/s5/odeur/argansky-hodvab.png"
+        }
+      ],
+      "screenshot": "odeur-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "odeur",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "kvet-konvalinky",
+        "jantarove-krystaly"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "odeur-compare-320.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "kvet-konvalinky",
+        "jantarove-krystaly"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "odeur-compare-390.png"
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "kvet-konvalinky",
+        "jantarove-krystaly"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "odeur-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "noteProfiles": [
+    {
+      "slug": "odeur",
+      "id": "kvet-konvalinky",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Pomarančová kôra, bergamot, zázvor, kardamom",
+        "Neroli, jazmín, damaská ruža, konvalinka, fialka",
+        "Tonka bôby, vzácne drevo, borovicové drevo"
+      ],
+      "screenshot": "odeur-note-profile-kvet-konvalinky-320.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "soli-a-kvety-lotosu",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot, lotosový kvet, ružové puky, morské soli",
+        "Pomarančové kvety, cyklámen, magnólia, kvet broskyne, ylang ylang, konvalinka",
+        "Vzácne drevá, santalové drevo, aromatické drevá, pižmo"
+      ],
+      "screenshot": "odeur-note-profile-soli-a-kvety-lotosu-320.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "muskatove-drevo",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Sladký pomaranč, bergamot, biela broskyňa",
+        "Ruža, pomarančový kvet, kapucínka, zvonček",
+        "Ambrette, vzácne drevá, rastlinné pižmo"
+      ],
+      "screenshot": "odeur-note-profile-muskatove-drevo-320.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "sladka-pivonka",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "sladký pomaranč, mirabelka, červené plody, neroli",
+        "pivonka, magnólia, kvety marhúľ, cyklámen",
+        "eukalyptové drevo, santalové drevo, cédrové drevo, kašmírové drevo, pižmo"
+      ],
+      "screenshot": "odeur-note-profile-sladka-pivonka-320.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "jantarove-krystaly",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot, zelený citrón, biela broskyňa, zelené tóny",
+        "Biela ruža, gardénia, magnólia, bambusové listy",
+        "jantár, tonka bôby, bambusové drevo, pižmo"
+      ],
+      "screenshot": "odeur-note-profile-jantarove-krystaly-320.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "argansky-hodvab",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Pomaranč, bergamot, argan, bambucké maslo",
+        "Kamélia, jazmín, damaská ruža, cyklámen",
+        "Vzácne drevá, cédrové drevo, santalové drevo"
+      ],
+      "screenshot": "odeur-note-profile-argansky-hodvab-320.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "kvet-konvalinky",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Pomarančová kôra, bergamot, zázvor, kardamom",
+        "Neroli, jazmín, damaská ruža, konvalinka, fialka",
+        "Tonka bôby, vzácne drevo, borovicové drevo"
+      ],
+      "screenshot": "odeur-note-profile-kvet-konvalinky-390.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "soli-a-kvety-lotosu",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot, lotosový kvet, ružové puky, morské soli",
+        "Pomarančové kvety, cyklámen, magnólia, kvet broskyne, ylang ylang, konvalinka",
+        "Vzácne drevá, santalové drevo, aromatické drevá, pižmo"
+      ],
+      "screenshot": "odeur-note-profile-soli-a-kvety-lotosu-390.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "muskatove-drevo",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Sladký pomaranč, bergamot, biela broskyňa",
+        "Ruža, pomarančový kvet, kapucínka, zvonček",
+        "Ambrette, vzácne drevá, rastlinné pižmo"
+      ],
+      "screenshot": "odeur-note-profile-muskatove-drevo-390.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "sladka-pivonka",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "sladký pomaranč, mirabelka, červené plody, neroli",
+        "pivonka, magnólia, kvety marhúľ, cyklámen",
+        "eukalyptové drevo, santalové drevo, cédrové drevo, kašmírové drevo, pižmo"
+      ],
+      "screenshot": "odeur-note-profile-sladka-pivonka-390.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "jantarove-krystaly",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot, zelený citrón, biela broskyňa, zelené tóny",
+        "Biela ruža, gardénia, magnólia, bambusové listy",
+        "jantár, tonka bôby, bambusové drevo, pižmo"
+      ],
+      "screenshot": "odeur-note-profile-jantarove-krystaly-390.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "argansky-hodvab",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Pomaranč, bergamot, argan, bambucké maslo",
+        "Kamélia, jazmín, damaská ruža, cyklámen",
+        "Vzácne drevá, cédrové drevo, santalové drevo"
+      ],
+      "screenshot": "odeur-note-profile-argansky-hodvab-390.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "kvet-konvalinky",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Pomarančová kôra, bergamot, zázvor, kardamom",
+        "Neroli, jazmín, damaská ruža, konvalinka, fialka",
+        "Tonka bôby, vzácne drevo, borovicové drevo"
+      ],
+      "screenshot": "odeur-note-profile-kvet-konvalinky-1280.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "soli-a-kvety-lotosu",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot, lotosový kvet, ružové puky, morské soli",
+        "Pomarančové kvety, cyklámen, magnólia, kvet broskyne, ylang ylang, konvalinka",
+        "Vzácne drevá, santalové drevo, aromatické drevá, pižmo"
+      ],
+      "screenshot": "odeur-note-profile-soli-a-kvety-lotosu-1280.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "muskatove-drevo",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Sladký pomaranč, bergamot, biela broskyňa",
+        "Ruža, pomarančový kvet, kapucínka, zvonček",
+        "Ambrette, vzácne drevá, rastlinné pižmo"
+      ],
+      "screenshot": "odeur-note-profile-muskatove-drevo-1280.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "sladka-pivonka",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "sladký pomaranč, mirabelka, červené plody, neroli",
+        "pivonka, magnólia, kvety marhúľ, cyklámen",
+        "eukalyptové drevo, santalové drevo, cédrové drevo, kašmírové drevo, pižmo"
+      ],
+      "screenshot": "odeur-note-profile-sladka-pivonka-1280.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "jantarove-krystaly",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot, zelený citrón, biela broskyňa, zelené tóny",
+        "Biela ruža, gardénia, magnólia, bambusové listy",
+        "jantár, tonka bôby, bambusové drevo, pižmo"
+      ],
+      "screenshot": "odeur-note-profile-jantarove-krystaly-1280.png"
+    },
+    {
+      "slug": "odeur",
+      "id": "argansky-hodvab",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Pomaranč, bergamot, argan, bambucké maslo",
+        "Kamélia, jazmín, damaská ruža, cyklámen",
+        "Vzácne drevá, cédrové drevo, santalové drevo"
+      ],
+      "screenshot": "odeur-note-profile-argansky-hodvab-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "odeur",
+      "width": 320,
+      "id": "kvet-konvalinky",
+      "defaultScreenshot": "odeur-result-kvet-konvalinky-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-kvet-konvalinky-320.png",
+      "comparisonIds": [
+        "kvet-konvalinky",
+        "soli-a-kvety-lotosu"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "id": "soli-a-kvety-lotosu",
+      "defaultScreenshot": "odeur-result-soli-a-kvety-lotosu-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-soli-a-kvety-lotosu-320.png",
+      "comparisonIds": [
+        "soli-a-kvety-lotosu",
+        "kvet-konvalinky"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "id": "muskatove-drevo",
+      "defaultScreenshot": "odeur-result-muskatove-drevo-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-muskatove-drevo-320.png",
+      "comparisonIds": [
+        "muskatove-drevo",
+        "sladka-pivonka"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "id": "sladka-pivonka",
+      "defaultScreenshot": "odeur-result-sladka-pivonka-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-sladka-pivonka-320.png",
+      "comparisonIds": [
+        "sladka-pivonka",
+        "muskatove-drevo"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "id": "jantarove-krystaly",
+      "defaultScreenshot": "odeur-result-jantarove-krystaly-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-jantarove-krystaly-320.png",
+      "comparisonIds": [
+        "jantarove-krystaly",
+        "argansky-hodvab"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 320,
+      "id": "argansky-hodvab",
+      "defaultScreenshot": "odeur-result-argansky-hodvab-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-argansky-hodvab-320.png",
+      "comparisonIds": [
+        "argansky-hodvab",
+        "jantarove-krystaly"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "id": "kvet-konvalinky",
+      "defaultScreenshot": "odeur-result-kvet-konvalinky-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-kvet-konvalinky-390.png",
+      "comparisonIds": [
+        "kvet-konvalinky",
+        "soli-a-kvety-lotosu"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "id": "soli-a-kvety-lotosu",
+      "defaultScreenshot": "odeur-result-soli-a-kvety-lotosu-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-soli-a-kvety-lotosu-390.png",
+      "comparisonIds": [
+        "soli-a-kvety-lotosu",
+        "kvet-konvalinky"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "id": "muskatove-drevo",
+      "defaultScreenshot": "odeur-result-muskatove-drevo-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-muskatove-drevo-390.png",
+      "comparisonIds": [
+        "muskatove-drevo",
+        "sladka-pivonka"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "id": "sladka-pivonka",
+      "defaultScreenshot": "odeur-result-sladka-pivonka-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-sladka-pivonka-390.png",
+      "comparisonIds": [
+        "sladka-pivonka",
+        "muskatove-drevo"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "id": "jantarove-krystaly",
+      "defaultScreenshot": "odeur-result-jantarove-krystaly-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-jantarove-krystaly-390.png",
+      "comparisonIds": [
+        "jantarove-krystaly",
+        "argansky-hodvab"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 390,
+      "id": "argansky-hodvab",
+      "defaultScreenshot": "odeur-result-argansky-hodvab-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-argansky-hodvab-390.png",
+      "comparisonIds": [
+        "argansky-hodvab",
+        "jantarove-krystaly"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "id": "kvet-konvalinky",
+      "defaultScreenshot": "odeur-result-kvet-konvalinky-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-kvet-konvalinky-1280.png",
+      "comparisonIds": [
+        "kvet-konvalinky",
+        "soli-a-kvety-lotosu"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "id": "soli-a-kvety-lotosu",
+      "defaultScreenshot": "odeur-result-soli-a-kvety-lotosu-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-soli-a-kvety-lotosu-1280.png",
+      "comparisonIds": [
+        "soli-a-kvety-lotosu",
+        "kvet-konvalinky"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "id": "muskatove-drevo",
+      "defaultScreenshot": "odeur-result-muskatove-drevo-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-muskatove-drevo-1280.png",
+      "comparisonIds": [
+        "muskatove-drevo",
+        "sladka-pivonka"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "id": "sladka-pivonka",
+      "defaultScreenshot": "odeur-result-sladka-pivonka-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-sladka-pivonka-1280.png",
+      "comparisonIds": [
+        "sladka-pivonka",
+        "muskatove-drevo"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "id": "jantarove-krystaly",
+      "defaultScreenshot": "odeur-result-jantarove-krystaly-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-jantarove-krystaly-1280.png",
+      "comparisonIds": [
+        "jantarove-krystaly",
+        "argansky-hodvab"
+      ]
+    },
+    {
+      "slug": "odeur",
+      "width": 1280,
+      "id": "argansky-hodvab",
+      "defaultScreenshot": "odeur-result-argansky-hodvab-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "odeur-pair-argansky-hodvab-1280.png",
+      "comparisonIds": [
+        "argansky-hodvab",
+        "jantarove-krystaly"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

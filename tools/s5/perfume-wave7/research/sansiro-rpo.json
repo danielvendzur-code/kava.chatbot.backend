@@ -1,0 +1,86 @@
+{
+  "url": "https://api.statistics.sk/rpo/v1/search?identifier=55578853",
+  "at": "2026-11-14T17:40:03.506360+00:00",
+  "data": {
+    "results": [
+      {
+        "id": 17152330,
+        "dbModificationDate": "2025-07-07",
+        "identifiers": [
+          {
+            "value": "55578853",
+            "validFrom": "2023-07-12"
+          }
+        ],
+        "fullNames": [
+          {
+            "value": "MB Niche SK s. r. o.",
+            "validFrom": "2023-07-12"
+          }
+        ],
+        "addresses": [
+          {
+            "validFrom": "2023-12-20",
+            "street": "Jakobyho",
+            "regNumber": 0,
+            "buildingNumber": "1685/6",
+            "postalCodes": [
+              "04001"
+            ],
+            "municipality": {
+              "value": "Košice - mestská časť Staré Mesto",
+              "code": "SK0422598186",
+              "codelistCode": "CL000025"
+            },
+            "country": {
+              "value": "Slovenská republika",
+              "code": "703",
+              "codelistCode": "CL000086"
+            }
+          },
+          {
+            "validFrom": "2023-07-12",
+            "validTo": "2023-12-19",
+            "street": "Buerova",
+            "regNumber": 0,
+            "buildingNumber": "1205/7",
+            "postalCodes": [
+              "04023"
+            ],
+            "municipality": {
+              "value": "Košice - mestská časť Sídlisko KVP",
+              "code": "SK0423599883",
+              "codelistCode": "CL000025"
+            },
+            "country": {
+              "value": "Slovenská republika",
+              "code": "703",
+              "codelistCode": "CL000086"
+            }
+          }
+        ],
+        "establishment": "2023-07-12",
+        "sourceRegister": {
+          "value": {
+            "value": "Obchodný register",
+            "code": "1",
+            "codelistCode": "CL010112"
+          },
+          "registrationOffices": [
+            {
+              "value": "Mestský súd Košice",
+              "validFrom": "2023-07-12"
+            }
+          ],
+          "registrationNumbers": [
+            {
+              "value": "Sro/57215/V",
+              "validFrom": "2023-07-12"
+            }
+          ]
+        }
+      }
+    ],
+    "license": "1. ŠÚ SR ako správca informačného systému RPO uplatňuje na použitie sprístupnených údajov z RPO uvedených v § 7 ods. 2 a § 7a ods. 4 zákona č. 272/2015 Z. z. o registri právnických osôb, podnikateľov a orgánov verejnej moci a o zmene a doplnení niektorých zákonov (ďalej len „zákon o registri právnických osôb“) medzinárodnú verejnú licenciu Creative Commons Attribution License (cc-by) 4.0 (ďalej len „verejná licencia“).\n2. Predmetom verejnej licencie sú sprístupnené údaje z RPO prostredníctvom webového sídla ŠÚ SR v zmysle § 7 ods. 2 a § 7a ods. 4 zákona o registri právnických osôb.\n3. ŠÚ SR udeľuje súhlas na použitie predmetu verejnej licencie a výkon licencovaných práv („licencia“) podľa vyššie citovanej verejnej licencie."
+  }
+}

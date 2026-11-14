@@ -1,0 +1,231 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "ODEUR",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/odeur/logo.png",
+      "header": "/assets/s5/odeur/logo.png",
+      "avatar": "/assets/s5/odeur/initial.svg"
+    },
+    "brand": {
+      "name": "ODEUR",
+      "domain": "odeur.sk",
+      "website": "https://www.odeur.sk/",
+      "lang": "sk",
+      "fullName": "ODEUR",
+      "url": "https://www.odeur.sk/",
+      "logo": "/assets/s5/odeur/logo.png",
+      "mark": "/assets/s5/odeur/initial.svg",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vône do prania ODEUR, ich tóny, balenia a ceny.",
+      "quickChips": [
+        "Zázvor a biele kvety",
+        "Mirabelka a pivonka",
+        "Jantár a gardénia",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#48402c",
+        "accent": "#9b7d37",
+        "soft": "#fcf8ef",
+        "paper": "#ffffff",
+        "ink": "#393326",
+        "line": "#e9e1d1"
+      }
+    },
+    "traitCopy": {
+      "citrus": [
+        "Citrusy, korenie a morské tóny",
+        "",
+        "Citrusy, korenie a morské tóny",
+        ""
+      ],
+      "kvet-konvalinky": [
+        "Pomarančová kôra, zázvor a biele kvety",
+        "",
+        "Pomarančová kôra, zázvor a biele kvety",
+        ""
+      ],
+      "soli-a-kvety-lotosu": [
+        "Bergamot, lotosový kvet a morské soli",
+        "",
+        "Bergamot, lotosový kvet a morské soli",
+        ""
+      ],
+      "fruit": [
+        "Ovocie, kvety a pižmo",
+        "",
+        "Ovocie, kvety a pižmo",
+        ""
+      ],
+      "muskatove-drevo": [
+        "Biela broskyňa, ruža a ambrette",
+        "",
+        "Biela broskyňa, ruža a ambrette",
+        ""
+      ],
+      "sladka-pivonka": [
+        "Mirabelka, pivonka a drevité tóny",
+        "",
+        "Mirabelka, pivonka a drevité tóny",
+        ""
+      ],
+      "wood": [
+        "Jantár a drevité tóny",
+        "",
+        "Jantár a drevité tóny",
+        ""
+      ],
+      "jantarove-krystaly": [
+        "Zelený citrón, gardénia a jantár",
+        "",
+        "Zelený citrón, gardénia a jantár",
+        ""
+      ],
+      "argansky-hodvab": [
+        "Pomaranč, jazmín a cédrové drevo",
+        "",
+        "Pomaranč, jazmín a cédrové drevo",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "citrus": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "kvet-konvalinky": [
+        "/assets/s5/odeur/kvet-konvalinky.png"
+      ],
+      "soli-a-kvety-lotosu": [
+        "/assets/s5/odeur/soli-a-kvety-lotosu.png"
+      ],
+      "fruit": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "muskatove-drevo": [
+        "/assets/s5/odeur/muskatove-drevo.png"
+      ],
+      "sladka-pivonka": [
+        "/assets/s5/odeur/sladka-pivonka.png"
+      ],
+      "wood": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "jantarove-krystaly": [
+        "/assets/s5/odeur/jantarove-krystaly.png"
+      ],
+      "argansky-hodvab": [
+        "/assets/s5/odeur/argansky-hodvab.png"
+      ]
+    },
+    "compareProductIds": [
+      "kvet-konvalinky",
+      "jantarove-krystaly"
+    ],
+    "segmentText": {
+      "entryNote": "Parfumy na pranie · vôňový profil · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi objaviť vôňu do prania podľa jeho vkusu.",
+      "lead": "Výber porovná tóny šiestich parfumov na pranie a ukáže 250 ml balenie, cenu, fotografiu a odkaz. Výrobca neodporúča na jemné či farbené tkaniny, hodváb, kašmír a vlnu.",
+      "includedChat": "Vôňové tóny, balenie, ceny a porovnanie vybraných parfumov na pranie.",
+      "includedAdvisor": "Výber vône do prania a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vône do prania ODEUR, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "odeur-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "kvet-konvalinky": "soli-a-kvety-lotosu",
+        "soli-a-kvety-lotosu": "kvet-konvalinky",
+        "muskatove-drevo": "sladka-pivonka",
+        "sladka-pivonka": "muskatove-drevo",
+        "jantarove-krystaly": "argansky-hodvab",
+        "argansky-hodvab": "jantarove-krystaly"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/odeur.js",
+  "backendBrand": "odeur",
+  "offlineRules": [
+    {
+      "chip": "Zázvor a biele kvety",
+      "match": "zazvor.*biele.*kvety",
+      "productIds": [
+        "kvet-konvalinky"
+      ]
+    },
+    {
+      "chip": "Mirabelka a pivonka",
+      "match": "mirabelk.*pivonk",
+      "productIds": [
+        "sladka-pivonka"
+      ]
+    },
+    {
+      "chip": "Jantár a gardénia",
+      "match": "jantar.*garden",
+      "productIds": [
+        "jantarove-krystaly"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-wave7/candidate-packages/odeur/ui-review.css",
+    "destination": "n447/s5/brands/odeur.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/odeur.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "OFFICIAL2025_SMALL_TIER_PASS_LAUNDRY_INTEGRATION_SCOPE_REVIEW",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "laundry-fragrance",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "requiredBackendInstruction": "ODEUR sells laundryfragrances, notpersonalEDP. Never recommendbodyapplication, delicate/coloredfabric/silk/cashmere/wool. Answerusage onlyfromsourceinstructions5mlper4kg and linkofficialproduct; no child/health/stainfree/lastingguarantee. No fabricfilter or budgetfunction advertised.",
+    "workerTouchedSharedBackend": false,
+    "dependentPart": "MAINbrand instructions/guard and livechatcapabilityQA, not data/tree/sourcecollection."
+  }
+}

@@ -1,0 +1,8 @@
+from pathlib import Path
+from lxml import html
+import urllib.request,json,datetime,re,hashlib,concurrent.futures
+B=Path(__file__).resolve().parent;O=B/'research/odeur';O.mkdir(exist_ok=True);home=html.fromstring((B/'research/odeur.html').read_bytes());urls=list(dict.fromkeys('https://www.odeur.sk'+a if a.startswith('/') else a for a in home.xpath('//a[contains(@href,"nativa-fragrances")]/@href')));assert len(urls)==6,urls
+def get(url):
+ with urllib.request.urlopen(url,timeout=30) as f:raw=f.read();assert f.status==200
+ t=html.fromstring(raw);pid=url.rstrip('/').split('/')[-1].replace('nativa-fragrances-olej-parfum-do-prania-','').replace('-250-ml','');(O/(pid+'.html')).write_bytes(raw);desc=t.xpath('//*[contains(concat(" ",normalize-space(@class)," ")," basic-description ")]')[0];text=re.sub(r'\s+',' ',desc.text_content()).strip();r={'id':pid,'url':url,'name':t.xpath('//h1/text()')[0].strip(),'checkedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sourceSha256':hashlib.sha256(raw).hexdigest(),'description':text,'priceMeta':[dict(e.attrib) for e in t.xpath('//*[@itemprop="price"]')],'offers':[dict(e.attrib) for e in t.xpath('//*[@itemprop="availability"]')],'photo':t.xpath('//a[contains(@class,"p-main-image")]/@href'),'gallery':t.xpath('//*[contains(@class,"p-image")]//img/@src')};(O/(pid+'.json')).write_text(json.dumps(r,ensure_ascii=False,indent=2));print(pid,r['name'],r['priceMeta'],text[:260],flush=True);return r
+rows=list(concurrent.futures.ThreadPoolExecutor(3).map(get,urls));(O/'products.json').write_text(json.dumps({'rows':rows},ensure_ascii=False,indent=2))

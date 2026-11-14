@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aká vôňa je vám blízka?",
+  "options": [
+    {
+      "value": "citrus",
+      "label": "Citrusy, korenie a morské tóny",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "kvet-konvalinky",
+          "label": "Pomarančová kôra, zázvor a biele kvety",
+          "productId": "kvet-konvalinky",
+          "sourceUrl": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-kvet-konvalinky-250-ml/"
+        },
+        {
+          "value": "soli-a-kvety-lotosu",
+          "label": "Bergamot, lotosový kvet a morské soli",
+          "productId": "soli-a-kvety-lotosu",
+          "sourceUrl": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-soli-a-kvety-lotosu-250-ml/"
+        }
+      ]
+    },
+    {
+      "value": "fruit",
+      "label": "Ovocie, kvety a pižmo",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "muskatove-drevo",
+          "label": "Biela broskyňa, ruža a ambrette",
+          "productId": "muskatove-drevo",
+          "sourceUrl": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-muskatove-drevo-250-ml/"
+        },
+        {
+          "value": "sladka-pivonka",
+          "label": "Mirabelka, pivonka a drevité tóny",
+          "productId": "sladka-pivonka",
+          "sourceUrl": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-sladka-pivonka-250-ml/"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Jantár a drevité tóny",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "jantarove-krystaly",
+          "label": "Zelený citrón, gardénia a jantár",
+          "productId": "jantarove-krystaly",
+          "sourceUrl": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-jantarove-krystaly-250-ml/"
+        },
+        {
+          "value": "argansky-hodvab",
+          "label": "Pomaranč, jazmín a cédrové drevo",
+          "productId": "argansky-hodvab",
+          "sourceUrl": "https://www.odeur.sk/nativa-fragrances-olej-parfum-do-prania-argansky-hodvab-250-ml/"
+        }
+      ]
+    }
+  ]
+}

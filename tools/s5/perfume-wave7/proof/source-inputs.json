@@ -1,0 +1,582 @@
+[
+  {
+    "path": "tools/s5/perfume-wave7/status.json",
+    "bytes": 350,
+    "sha256": "7ca7651e6ffef27dd5cfdcc3fe473d2371692c56b4c845f7f91b5ce0c38302ae"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/inspect-next-widgets.py",
+    "bytes": 3787,
+    "sha256": "ae96058f9216bfdccda1a224121fa1218eae5c2e3be901b5537791f715a36454"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/finance-preflight.py",
+    "bytes": 1539,
+    "sha256": "2464dad14cd57e06c06a22f3c0c4d5ed8b2037f60d2ca1bf8edbe53d7a5b14e0"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/open-elobe-widget.py",
+    "bytes": 3764,
+    "sha256": "b63e33a928151aa028d744004bb51e3759d666685efa1575823b45f4970b85ab"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/tree-qa.cjs",
+    "bytes": 2625,
+    "sha256": "dc50d3f6c23ce4a1d8e2527bc70bf754e4a3b1fc1ade0de485343d57378093ed"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/package-factory.py",
+    "bytes": 6102,
+    "sha256": "c37f27abe87623acfc51d067263faa003b6b7b0b9982517a8ec5f956632ef63f"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/engine-qa.json",
+    "bytes": 3182,
+    "sha256": "ed212958fcc409d3625c19edb172827f401463798b34e2c10cbd1ac47a3728ad"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/scan-duplicates.py",
+    "bytes": 2633,
+    "sha256": "189a1f8b589b46cc22a9c7390334e45c2108a9e0f9cc5a5e08d9b596b5bbb439"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/build-odeur.py",
+    "bytes": 11336,
+    "sha256": "3734472e38e1477a725d8699f8c8de03f8c8db1221833a64e8c8f440c6244929"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/download-odeur.py",
+    "bytes": 1581,
+    "sha256": "088e0aaef36958392bec2be0e1af670704fbc118cae253f88fd107e64d23d23e"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/prepare-odeur.py",
+    "bytes": 1021,
+    "sha256": "bc77945c410d0bbbdf06f1c3804df93443d53ac6bb591fc778e038820daf18cd"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/live-next-preflight.py",
+    "bytes": 2961,
+    "sha256": "4b64172fde2284e933fa1a3e2b992bc5e3369ec45218bafeaab967e226435b01"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/ODEUR-HANDOFF.md",
+    "bytes": 4645,
+    "sha256": "4a78c27b14b35adb0bfb9275fdf76c81860ebdc69f24023046f6629fd0360025"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/capture-odeur.py",
+    "bytes": 1606,
+    "sha256": "179d41ea70e13eee939184ed8ba815766e202e315be6fdf79924508d1ef21bba"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/odeur-question.py",
+    "bytes": 2547,
+    "sha256": "cabb6161cfc6cd7af9aed2e9bc90fbb50491518995d9fb16e6259088228af4b9"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/live-preflight.py",
+    "bytes": 2975,
+    "sha256": "6c080807dbca576b8c96376094bedbca84521f9c8f2b2cb260da7511a3f3d0f7"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/proof/manifest.json",
+    "bytes": 17460,
+    "sha256": "5ba0fd28e7f41676eadad10e7ee94828ee3368796dcca86969eeaa42322228ca"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-2025-official.pdf",
+    "bytes": 176917,
+    "sha256": "bb3350671e10d73833286a9fce15b8870e9b520d8ea31ff8e211bc7e4f2204b9"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/feelgood-terms.html",
+    "bytes": 146169,
+    "sha256": "49b3ef0d512982dd21491c19b32a4ba518e04f60706fcb5ccd1ec3d211092a1d"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/escent-ares.json",
+    "bytes": 4509,
+    "sha256": "66e03b197a497988c487d6e1d2ecb4771f453efbb0aab534c70022bde619c095"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/sansiro-report-10334037.json",
+    "bytes": 4986,
+    "sha256": "6be0e9e49bd0d92c51a34144339e74ee0d9dbcb2bea07b40ed9f3d431ef658c5"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/loret.html",
+    "bytes": 7913,
+    "sha256": "ba57822eb5430fb5bc689b707c8088a6795025dd826c5b8d196b20874f68b244"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-report-10465278.json",
+    "bytes": 4955,
+    "sha256": "2e3c5aefb59fb5bdc38bef61e69aa7a57fddc1166a763fb1ca2adefb2c297dba"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/elobe-fragrance-links.json",
+    "bytes": 5365,
+    "sha256": "6b499a2b07c3a1b81cfa2ef7251741dedb342c399f1fa1b334c1b1c53a024e19"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/sansiro-links.json",
+    "bytes": 9066,
+    "sha256": "04e0d33f2d82f60b4fd65732a9e22c08fd18a377ff37fb6b64df69b621b3b676"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/escent.html",
+    "bytes": 123912,
+    "sha256": "e7923532437137a8d4ed2edbfad27574652528923bc36572a7fc83ba897a5f48"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-statements.json",
+    "bytes": 1167,
+    "sha256": "6dd6b88b10a1f6a51746a3fea1ee7dfe38fd866ce56d4b06704fe169023f2c81"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/escent-terms-links.json",
+    "bytes": 5045,
+    "sha256": "1932ef306e94735cf505ac48a828ae5f56995c25991105067f69bc03a8079e28"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/elobe-terms.html",
+    "bytes": 370701,
+    "sha256": "861ceb5b3b9947fc8249535937df34af7b8b95052f1e76ba5d9745a0c61b0191"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/feelgood-terms-links.json",
+    "bytes": 11638,
+    "sha256": "43d5995315893ef47b338b6bfe6a686e72341637739537f7efb18f2365e7133f"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/sansiro-product-source.json",
+    "bytes": 1368,
+    "sha256": "6059ecb8a4bee9d135eb2d8fe178b6aa56ef170748eb0965379def74147d5edc"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-ruz-index.json",
+    "bytes": 232,
+    "sha256": "dc6fd96f6b4a81d167dc9cda203cc4f7a7c84efc6f92a7d1fa33bddf65f8b0ee"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/escent-links.json",
+    "bytes": 9145,
+    "sha256": "2851d4aa734c42ebe919712171ef86a4341432f55707b25108826b949383508f"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur.html",
+    "bytes": 132684,
+    "sha256": "86a3ccef7de392cc8824b60493b4e4831b8a0b277678e6c31c140c79fa654f84"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/refanparfum-unit.json",
+    "bytes": 652,
+    "sha256": "e7af585c587a78886dde6c8960fe4baae339c69c01684ba42ef507914eaeba14"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-product.html",
+    "bytes": 160644,
+    "sha256": "7609a8dad643d33a71fa85f5327a37b1de344f59c511f243c070140ccf6a5066"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/feelgood-fetch.json",
+    "bytes": 142,
+    "sha256": "f68b3bfe7a74e08f3937ad04fec38647a0c31a5873a17754acddd1075f116460"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-links.json",
+    "bytes": 7528,
+    "sha256": "bb9e197e0cffca184fca6e9f682fbcd2888881201ddd5ae067a16679c56250e0"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/feelgood-links.json",
+    "bytes": 15310,
+    "sha256": "8daeeb5239164bffec6b412c9bf4a7ef52bbba48f6c26352374dae167104e4da"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/parfumylacno.html",
+    "bytes": 102439,
+    "sha256": "67efb86b4548d14a3ee0a57757e96a37a8f16eff2c0d4b7d32e2cb0e279c128f"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-fetch.json",
+    "bytes": 136,
+    "sha256": "d42577b108711c5395b86ae11f8915284f536da22ff6d19321de01561b3ec9e1"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/escent-size.html",
+    "bytes": 157667,
+    "sha256": "fd84abef45d754437bf51988555f8ac8c1034ef51f7ec73454f5e66330b5552a"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/loret-unit.json",
+    "bytes": 881,
+    "sha256": "36c591444c74d9eb97ce6441ea26a8c25e687300355d778ca1471ae36f75b7e9"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/sansiro-fetch.json",
+    "bytes": 156,
+    "sha256": "586d5ac4889308d6b6215775bf9254dd8a6656626f5fab6e72796324ef6586c1"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/sansiro-terms.html",
+    "bytes": 56382,
+    "sha256": "f42d3147014120c8886d4090e6efd0c91ebe2310c1c38e3c8b641401388f8aed"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/escent-terms.html",
+    "bytes": 111118,
+    "sha256": "68c060385efff4920d59529acf6d627009d4b5463b913c284c6ace97617fdfd5"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/escent-fetch.json",
+    "bytes": 90,
+    "sha256": "2040a69ab7814fdbaff56ee261811a53babefa9981fe95e476a554ebc142712c"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/fresh-duplicates.json",
+    "bytes": 18181,
+    "sha256": "2b3bf4ea415dd6ec21cff238e0f0694af2e368cb93f37fc3e867727ec847d0c6"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-terms.html",
+    "bytes": 107889,
+    "sha256": "f34cb1eb533011dbd0106026cc63f6b31040b1eacaacf9092284f95903a38001"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-product-source.json",
+    "bytes": 8961,
+    "sha256": "90193a3da4388ffe7f1dd948056911ac159be96326bf9da35684f9569c9758a1"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/loret-links.json",
+    "bytes": 288,
+    "sha256": "16c32a5b6f46c254822a4dbd4cbb5732e4470fca4b8260a4eb8cd1c620e379a0"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-terms-source.json",
+    "bytes": 29083,
+    "sha256": "6aa02f7387d246393cc62a79a93e6012499eceb9e858fb099db2e89e2f9c8c77"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/sansiro-rpo.json",
+    "bytes": 3099,
+    "sha256": "1502faf89a03287806277aae0bb0ab5a32342b725f002676e00dc5cab679b260"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/deployment-duplicates.json",
+    "bytes": 248,
+    "sha256": "a07b53d934707f5b715d5d708ab5b37a563082e39ddb8914077d65ca36fdc8e9"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/loret-fetch.json",
+    "bytes": 136,
+    "sha256": "88e81b067353b1d1dc46792761c678d2f1b55645aef7b706376e2067e13f5a91"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/elobe-fragrances.html",
+    "bytes": 465254,
+    "sha256": "3f54ee89c2cfb6d506c435af20df49ec62b820b9f13c6b1b1dd30cc4f3456d55"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/elobe.html",
+    "bytes": 334315,
+    "sha256": "7f6c790217f11bdec9bbdb0a1e872f62d207d28eb869253ea1664e30ddee84be"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/elobe-size-links.json",
+    "bytes": 6363,
+    "sha256": "3e6e59ce95ddfe087ed67ac7031885c06e15cd4ccf470687ddea75baab9369df"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/sansiro-ruz-index.json",
+    "bytes": 232,
+    "sha256": "9647a83446dba169cb9968034955df7e2cbb31372f9f395951927ae6785955fd"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/elobe-links.json",
+    "bytes": 35052,
+    "sha256": "f0dc6d9e720801f3ed192ff19697eaa77d9271027a35047407775df68a8e5192"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/escent-size-links.json",
+    "bytes": 6568,
+    "sha256": "a42c9950c084f77754ab6ee6b6c417612747a11ced7b16fa0e13f4acb2f4416e"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/parfumylacno-links.json",
+    "bytes": 22640,
+    "sha256": "c0c2682a4d5b47c218b9d4d3ebdd0fb2e598180e055c78ee27c29102d57f8c9b"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-pdf-source.json",
+    "bytes": 238,
+    "sha256": "7da373e33b04261c3eed2816c5625422a5edac7974ebba9580c3a9ffc6097d8e"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/loret-ruz-index.json",
+    "bytes": 231,
+    "sha256": "692defe977f621767767cf6fdb9aaea5b5e85653c3feceb60587c9fb1f8bdb8f"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/refanparfum-ruz-index.json",
+    "bytes": 231,
+    "sha256": "f801501dab75971dcb57a2575eab1f2f10756847f400726759e2a3ed685396a7"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-rpo.json",
+    "bytes": 2456,
+    "sha256": "6343e101f19cf4a1483e7d5a3c39f4fc9a5ce2ada7e665d999509d94eeec4739"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-2025-official.txt",
+    "bytes": 22253,
+    "sha256": "d72d9d66dcef4d70b3226bdd292025b0462a29e467dd3df9831ef24d2d82afff"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/sansiro.html",
+    "bytes": 88611,
+    "sha256": "a0204a46096b49c577046c94be366af8aeb5feb5c6b2a6077d9433698e8b6327"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/escent-size-fetch.json",
+    "bytes": 132,
+    "sha256": "4397c4ef3b0b495f4673626a07732a443f0f75aba76da30e6e351c5d7368f65a"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/elobe-plum.html",
+    "bytes": 409119,
+    "sha256": "4cfd3ea619bc03c2f8660589012b52c2723d975629c6534a8455616a94e3ca5c"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/elobe-size.html",
+    "bytes": 148090,
+    "sha256": "ade53d38a25a46845d074752b26a47db987a49872fd3e7999336241137d525ec"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/sansiro-product.html",
+    "bytes": 1255,
+    "sha256": "93b0b6a906c078928db1096dd457948323cc09072c95c56658accfce21552ee8"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/elobe-ares.json",
+    "bytes": 4501,
+    "sha256": "6ea45e61e59d3dbff1688bc2a89c1ae2ce0c36c93b3062618437b832df5bb396"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/elobe-size-fetch.json",
+    "bytes": 122,
+    "sha256": "0e0ad674bbad78cb2d804ca850fe3fa0a5084886c4c21c9e25127f5a14543ef4"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/further-http-preflight.json",
+    "bytes": 650,
+    "sha256": "35e11e341bfda63177cf396a4f45760d735abd9e05d1763122ef306798cfcc43"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/deployment-duplicates-next.json",
+    "bytes": 83949,
+    "sha256": "a54ee2d0e5748a53ae1ce748d3088c4392c64f92beef33440ce7d66baf792000"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/feelgood.html",
+    "bytes": 221277,
+    "sha256": "8bb65a50d0d7d6606689a17741206af7e79c8e885b99c15cfe95e4a7c6d39250"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-report-10465279.json",
+    "bytes": 1273,
+    "sha256": "f0ed3f71ef61cbcfe40917b3b4a4f12fbc595156f85e6fd7b6e89582c3b59ac8"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/duplicate-terms.json",
+    "bytes": 657,
+    "sha256": "875d43b0c40481816239e68ae709872cb415f9f2ef28188c72c628cef362f1cb"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur-unit.json",
+    "bytes": 705,
+    "sha256": "08ec3b631dfd2e02ce0902d5e5a4c65deac7ce62612df5f55ce2f31f09add906"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/sansiro-terms-source.json",
+    "bytes": 26699,
+    "sha256": "c829002324e7878d06e46dd41a595648ffa391b061260fa8326b05741b9a01cf"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/sansiro-statements.json",
+    "bytes": 1690,
+    "sha256": "0ed929fdab314b9ef64e5e66bac5ae6b685b3a54c21f35bd2ecc83949db01f20"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/sansiro-unit.json",
+    "bytes": 749,
+    "sha256": "94733fec53a7a55bb35196d038e823135b7af456e5b618a420f59d42f30f2c24"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/proof/odeur/merchant-qa.zip",
+    "bytes": 2426423,
+    "sha256": "e785cc5b27a317f11b7a9bce585b67f7abea00ad2efced19495fde0280063948"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/proof/odeur/local-qa.zip",
+    "bytes": 6456664,
+    "sha256": "e6f90e5e09b982565a6cefbe24ff2f5abb064b6b1e5450835c05d598042137fd"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/proof/odeur/local-qa.json",
+    "bytes": 29104,
+    "sha256": "e99ef09a0a5330f626b076acd3342e207acc4fb100cd3c1327698bc2ac411b41"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/config.json",
+    "bytes": 6561,
+    "sha256": "4c5d0c8b56084cca924f89b34e2f540d8596a2f0dd9cd7f4b940efe739c37796"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/integration-review.json",
+    "bytes": 7136,
+    "sha256": "8ddae848659dcdb378400d79f72773b9f23aba585e76a47b73140780980b3d8a"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/selection-model.json",
+    "bytes": 2321,
+    "sha256": "424226ed307a97f53c161451ec4cb19db2d02c93a882f02976ee7610560327d1"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/catalogue.js",
+    "bytes": 44540,
+    "sha256": "c2ce68ee72408fac494ad475e37fc700349c558dbd09badde969aaa0d5a32ffc"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/verified-products.json",
+    "bytes": 51035,
+    "sha256": "f36396e8adbeae96b18b51b0a46a30f4ed01077b4f95647fd08418cd52a42a3d"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/ui-review.css",
+    "bytes": 6341,
+    "sha256": "1be9615cad0d8bcce57ecbbd0678627be40b6a3c205161b849a2ded9f7c9b6fe"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/assets/avatar.ico",
+    "bytes": 1150,
+    "sha256": "15f926406261ec3ab956b6816bfcaa2e4ffc953ddd691695e2e7f1b512737ee2"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/assets/logo.png",
+    "bytes": 1400,
+    "sha256": "40caa555f82663612dbf2667a1f4db216d0d99df2a5758653411284d24d64074"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/assets/initial.svg",
+    "bytes": 246,
+    "sha256": "1c00fb05bf8517ded8ca9520b2f8fa240fb139c8c153a0bfdb2f46032658b56f"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/assets/soli-a-kvety-lotosu.png",
+    "bytes": 41241,
+    "sha256": "ba2c55ac1269e3fd2cb4fc9dd06d11b30fa1c74210cd9c900ce7a7b38b7decad"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/assets/argansky-hodvab.png",
+    "bytes": 41088,
+    "sha256": "4894bf4945457da68c51c862832006ca30cb31904b23af09012544a79f76f744"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/assets/jantarove-krystaly.png",
+    "bytes": 43311,
+    "sha256": "91c681d63a9832c1a41d6032462bb586cc1c5b11ce0cc68cd3a6c4f699885320"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/assets/muskatove-drevo.png",
+    "bytes": 42672,
+    "sha256": "3162853c3300ea2ace917676dbab1ba8b4c54d3e928717d9e852d3e948cba907"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/assets/sladka-pivonka.png",
+    "bytes": 43127,
+    "sha256": "a943f9478d6bcc06fda21bb4837f540da9cda85e0af148723d4ac63464ce4f98"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/candidate-packages/odeur/assets/kvet-konvalinky.png",
+    "bytes": 42997,
+    "sha256": "d62ec7eb01930c4b5d2dc44fc7ae47e2c083d172b3f04735c25b6f52f8bda290"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/soli-a-kvety-lotosu.html",
+    "bytes": 163493,
+    "sha256": "d0012cf5b133346a199aad3e5b12bbc9d3085781822144f43d2fbda4bfb39256"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/soli-a-kvety-lotosu.json",
+    "bytes": 4990,
+    "sha256": "5ede3938e002cca3d2c96862dce98184ce2a137dab3e34a4d15f5b88e60e7b10"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/jantarove-krystaly.json",
+    "bytes": 4856,
+    "sha256": "313a570a3e919e0f1796b6bd899ce0684bade099ee9a1be05fef8373dd85bdc7"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/photos.json",
+    "bytes": 3181,
+    "sha256": "5d964f6b027653d05cb26d450c3ab5b4425136eb78d8037ab2f9afe660ff2ab0"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/muskatove-drevo.json",
+    "bytes": 5001,
+    "sha256": "56ff83a594f6218274b348c7bc4b77283fae4e2fec4bdc1486188a5d6caaaada"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/products.json",
+    "bytes": 30338,
+    "sha256": "0ba00d68017065bb077804db8fd18c50fd33bed5789f65e4d71197fdc5cf9208"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/muskatove-drevo.html",
+    "bytes": 159916,
+    "sha256": "56c40f1d9850acd0f0b44091ef024c26ab00bc931050038759901384f5c41909"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/kvet-konvalinky.json",
+    "bytes": 4893,
+    "sha256": "36b884321349fb3e4a9cedb3db3db7dfd7fbd9743958efc5e9a26ca4b454db87"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/argansky-hodvab.html",
+    "bytes": 157460,
+    "sha256": "02097b845cc713277b108d716e90772eff37ed316492134c48f8aa9bc02cd1d5"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/argansky-hodvab.json",
+    "bytes": 4807,
+    "sha256": "714b4893c54b7da320027729669b0935feb99c5473c935773f02e5608d91893f"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/sladka-pivonka.json",
+    "bytes": 5053,
+    "sha256": "a4f5754101603c2aae87d4a69441d95db542186dc40b36b81d12b0bfbaddf795"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/jantarove-krystaly.html",
+    "bytes": 157880,
+    "sha256": "2c6865a9498e28601ef9a894c1b0d01a63bfa505346f67413285ea357c6cff23"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/kvet-konvalinky.html",
+    "bytes": 158948,
+    "sha256": "f99e93485588a4265f0e3fb17dc26cfdbe272aab92f8e50d5a62351b694e9d42"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/verified-input.json",
+    "bytes": 311659,
+    "sha256": "dd9b7c43540254fc7d751094af454e596db06ed5846b0bb936bd3c07d4e4608e"
+  },
+  {
+    "path": "tools/s5/perfume-wave7/research/odeur/sladka-pivonka.html",
+    "bytes": 161502,
+    "sha256": "14358765a9db9f7807618eb258e38b94bbca1880f30c4b0d9bd4964faaf87b88"
+  }
+]

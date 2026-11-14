@@ -1,0 +1,44 @@
+{
+  "url": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10465279",
+  "at": "2026-11-14T17:40:07.445663+00:00",
+  "data": {
+    "prilohy": [
+      {
+        "id": 13012956,
+        "meno": "MUJ_OS_2122302050_IR_2025_4905300_6353788.pdf",
+        "pocetStran": 1,
+        "jazyk": "SLK",
+        "velkostPrilohy": 131717,
+        "mimeType": "application/pdf",
+        "digest": "93e0222c8e59e518d23f1a74c3aa791b3a931b73cb46a1212094c8e96c2b2276"
+      }
+    ],
+    "id": 10465279,
+    "idUctovnejZavierky": 7154261,
+    "obsah": {
+      "titulnaStrana": {
+        "nazovUctovnejJednotky": "ODEUR s.r.o.",
+        "ico": "56402554",
+        "dic": "2122302050",
+        "adresa": {
+          "ulica": "Blažkov",
+          "cislo": "1540",
+          "psc": "02302",
+          "mesto": "Krásno nad Kysucou"
+        },
+        "typZavierky": "Riadna",
+        "obdobieOd": "2025-01",
+        "obdobieDo": "2025-12",
+        "predchadzajuceObdobieOd": "2024-08",
+        "predchadzajuceObdobieDo": "2024-12",
+        "datumSchvalenia": "2026-10-31",
+        "datumZostavenia": "2025-12-31"
+      }
+    },
+    "pristupnostDat": "Verejné",
+    "zdrojDat": "FRSR",
+    "datumPoslednejUpravy": "2026-10-24",
+    "kodDanovehoUradu": "500",
+    "idSablony": 1181
+  }
+}
