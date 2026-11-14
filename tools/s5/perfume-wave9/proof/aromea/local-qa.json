@@ -1,0 +1,995 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-14T18:47:13.689657+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "aromea",
+      "width": 320,
+      "id": "linen-buds",
+      "pack": "100 ml",
+      "price": "2 595 Kč",
+      "url": "https://www.aromea.cz/edp-linen-buds/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-linen-buds-320.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "id": "cafe-satin",
+      "pack": "100 ml",
+      "price": "2 595 Kč",
+      "url": "https://www.aromea.cz/locherber-milano-edp-cafe-satin/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-cafe-satin-320.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "id": "aramaik",
+      "pack": "100 ml",
+      "price": "2 595 Kč",
+      "url": "https://www.aromea.cz/locherber-milano-parfem-aramaik/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-aramaik-320.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "id": "dolce-medicea",
+      "pack": "75 ml",
+      "price": "3 725 Kč",
+      "url": "https://www.aromea.cz/logevy-parfem-dolce-medicea/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-dolce-medicea-320.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "id": "malabar-pepper",
+      "pack": "100 ml",
+      "price": "2 595 Kč",
+      "url": "https://www.aromea.cz/locherber-milano-eau-de-parfum-malabar-pepper/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-malabar-pepper-320.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "id": "ghirlandaio",
+      "pack": "75 ml",
+      "price": "3 725 Kč",
+      "url": "https://www.aromea.cz/logevy-parfem-ghirlandaio/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-ghirlandaio-320.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "id": "linen-buds",
+      "pack": "100 ml",
+      "price": "2 595 Kč",
+      "url": "https://www.aromea.cz/edp-linen-buds/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-linen-buds-390.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "id": "cafe-satin",
+      "pack": "100 ml",
+      "price": "2 595 Kč",
+      "url": "https://www.aromea.cz/locherber-milano-edp-cafe-satin/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-cafe-satin-390.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "id": "aramaik",
+      "pack": "100 ml",
+      "price": "2 595 Kč",
+      "url": "https://www.aromea.cz/locherber-milano-parfem-aramaik/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-aramaik-390.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "id": "dolce-medicea",
+      "pack": "75 ml",
+      "price": "3 725 Kč",
+      "url": "https://www.aromea.cz/logevy-parfem-dolce-medicea/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-dolce-medicea-390.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "id": "malabar-pepper",
+      "pack": "100 ml",
+      "price": "2 595 Kč",
+      "url": "https://www.aromea.cz/locherber-milano-eau-de-parfum-malabar-pepper/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-malabar-pepper-390.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "id": "ghirlandaio",
+      "pack": "75 ml",
+      "price": "3 725 Kč",
+      "url": "https://www.aromea.cz/logevy-parfem-ghirlandaio/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-ghirlandaio-390.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "id": "linen-buds",
+      "pack": "100 ml",
+      "price": "2 595 Kč",
+      "url": "https://www.aromea.cz/edp-linen-buds/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-linen-buds-1280.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "id": "cafe-satin",
+      "pack": "100 ml",
+      "price": "2 595 Kč",
+      "url": "https://www.aromea.cz/locherber-milano-edp-cafe-satin/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-cafe-satin-1280.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "id": "aramaik",
+      "pack": "100 ml",
+      "price": "2 595 Kč",
+      "url": "https://www.aromea.cz/locherber-milano-parfem-aramaik/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-aramaik-1280.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "id": "dolce-medicea",
+      "pack": "75 ml",
+      "price": "3 725 Kč",
+      "url": "https://www.aromea.cz/logevy-parfem-dolce-medicea/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-dolce-medicea-1280.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "id": "malabar-pepper",
+      "pack": "100 ml",
+      "price": "2 595 Kč",
+      "url": "https://www.aromea.cz/locherber-milano-eau-de-parfum-malabar-pepper/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-malabar-pepper-1280.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "id": "ghirlandaio",
+      "pack": "75 ml",
+      "price": "3 725 Kč",
+      "url": "https://www.aromea.cz/logevy-parfem-ghirlandaio/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromea-result-ghirlandaio-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "aromea",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "flower",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "resin",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "spice",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        }
+      ],
+      "screenshot": "aromea-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "linen-buds",
+          "photo": "/assets/s5/aromea/linen-buds.png"
+        },
+        {
+          "id": "cafe-satin",
+          "photo": "/assets/s5/aromea/cafe-satin.png"
+        }
+      ],
+      "screenshot": "aromea-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "aramaik",
+          "photo": "/assets/s5/aromea/aramaik.png"
+        },
+        {
+          "id": "dolce-medicea",
+          "photo": "/assets/s5/aromea/dolce-medicea.png"
+        }
+      ],
+      "screenshot": "aromea-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "malabar-pepper",
+          "photo": "/assets/s5/aromea/malabar-pepper.png"
+        },
+        {
+          "id": "ghirlandaio",
+          "photo": "/assets/s5/aromea/ghirlandaio.png"
+        }
+      ],
+      "screenshot": "aromea-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "flower",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "resin",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "spice",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        }
+      ],
+      "screenshot": "aromea-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "linen-buds",
+          "photo": "/assets/s5/aromea/linen-buds.png"
+        },
+        {
+          "id": "cafe-satin",
+          "photo": "/assets/s5/aromea/cafe-satin.png"
+        }
+      ],
+      "screenshot": "aromea-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "aramaik",
+          "photo": "/assets/s5/aromea/aramaik.png"
+        },
+        {
+          "id": "dolce-medicea",
+          "photo": "/assets/s5/aromea/dolce-medicea.png"
+        }
+      ],
+      "screenshot": "aromea-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "malabar-pepper",
+          "photo": "/assets/s5/aromea/malabar-pepper.png"
+        },
+        {
+          "id": "ghirlandaio",
+          "photo": "/assets/s5/aromea/ghirlandaio.png"
+        }
+      ],
+      "screenshot": "aromea-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "flower",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "resin",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "spice",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        }
+      ],
+      "screenshot": "aromea-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "linen-buds",
+          "photo": "/assets/s5/aromea/linen-buds.png"
+        },
+        {
+          "id": "cafe-satin",
+          "photo": "/assets/s5/aromea/cafe-satin.png"
+        }
+      ],
+      "screenshot": "aromea-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "aramaik",
+          "photo": "/assets/s5/aromea/aramaik.png"
+        },
+        {
+          "id": "dolce-medicea",
+          "photo": "/assets/s5/aromea/dolce-medicea.png"
+        }
+      ],
+      "screenshot": "aromea-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "malabar-pepper",
+          "photo": "/assets/s5/aromea/malabar-pepper.png"
+        },
+        {
+          "id": "ghirlandaio",
+          "photo": "/assets/s5/aromea/ghirlandaio.png"
+        }
+      ],
+      "screenshot": "aromea-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "aromea",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "cafe-satin",
+        "ghirlandaio"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "aromea-compare-320.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "cafe-satin",
+        "ghirlandaio"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "aromea-compare-390.png"
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "cafe-satin",
+        "ghirlandaio"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "aromea-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "noteProfiles": [
+    {
+      "slug": "aromea",
+      "id": "linen-buds",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "černý rybíz, sicilský citron a bergamot",
+        "pelargónie, okvětní lístky růže a Ylang Ylang",
+        "vanilka, santalové dřevo a pižmo"
+      ],
+      "screenshot": "aromea-note-profile-linen-buds-320.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "cafe-satin",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "káva",
+        "růže a geránie",
+        "ambra, bílé pižmo a vanilka"
+      ],
+      "screenshot": "aromea-note-profile-cafe-satin-320.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "aramaik",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "bergamot a hořký pomeranč",
+        "spikenard a geránium",
+        "ambra, myrha, vanilka, guajakové dřevo, benzoin, pačuli a agarové dřevo"
+      ],
+      "screenshot": "aromea-note-profile-aramaik-320.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "dolce-medicea",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "růžový pepř, sicilský citron, zelená mandarinka a toskánská levandule",
+        "čerstvý zázvor, černý pepř a etiopská myrha",
+        "zlatá ambra, šedá ambra, bílé pižmo, santalové dřevo a bourbonská vanilka"
+      ],
+      "screenshot": "aromea-note-profile-dolce-medicea-320.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "malabar-pepper",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "zázvor, pomeranč, bergamot a skořice",
+        "myrta, pelargónie, černý pepř, muškátový oříšek a elemi",
+        "cypřiš, pačuli, vetiver a cedrové dřevo"
+      ],
+      "screenshot": "aromea-note-profile-malabar-pepper-320.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "ghirlandaio",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "bergamot, skořice, citron a limetka",
+        "karafiát, ambra, pepř a máta",
+        "santalové dřevo, benzoe, vetiver a pižmo"
+      ],
+      "screenshot": "aromea-note-profile-ghirlandaio-320.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "linen-buds",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "černý rybíz, sicilský citron a bergamot",
+        "pelargónie, okvětní lístky růže a Ylang Ylang",
+        "vanilka, santalové dřevo a pižmo"
+      ],
+      "screenshot": "aromea-note-profile-linen-buds-390.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "cafe-satin",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "káva",
+        "růže a geránie",
+        "ambra, bílé pižmo a vanilka"
+      ],
+      "screenshot": "aromea-note-profile-cafe-satin-390.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "aramaik",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "bergamot a hořký pomeranč",
+        "spikenard a geránium",
+        "ambra, myrha, vanilka, guajakové dřevo, benzoin, pačuli a agarové dřevo"
+      ],
+      "screenshot": "aromea-note-profile-aramaik-390.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "dolce-medicea",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "růžový pepř, sicilský citron, zelená mandarinka a toskánská levandule",
+        "čerstvý zázvor, černý pepř a etiopská myrha",
+        "zlatá ambra, šedá ambra, bílé pižmo, santalové dřevo a bourbonská vanilka"
+      ],
+      "screenshot": "aromea-note-profile-dolce-medicea-390.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "malabar-pepper",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "zázvor, pomeranč, bergamot a skořice",
+        "myrta, pelargónie, černý pepř, muškátový oříšek a elemi",
+        "cypřiš, pačuli, vetiver a cedrové dřevo"
+      ],
+      "screenshot": "aromea-note-profile-malabar-pepper-390.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "ghirlandaio",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "bergamot, skořice, citron a limetka",
+        "karafiát, ambra, pepř a máta",
+        "santalové dřevo, benzoe, vetiver a pižmo"
+      ],
+      "screenshot": "aromea-note-profile-ghirlandaio-390.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "linen-buds",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "černý rybíz, sicilský citron a bergamot",
+        "pelargónie, okvětní lístky růže a Ylang Ylang",
+        "vanilka, santalové dřevo a pižmo"
+      ],
+      "screenshot": "aromea-note-profile-linen-buds-1280.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "cafe-satin",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "káva",
+        "růže a geránie",
+        "ambra, bílé pižmo a vanilka"
+      ],
+      "screenshot": "aromea-note-profile-cafe-satin-1280.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "aramaik",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "bergamot a hořký pomeranč",
+        "spikenard a geránium",
+        "ambra, myrha, vanilka, guajakové dřevo, benzoin, pačuli a agarové dřevo"
+      ],
+      "screenshot": "aromea-note-profile-aramaik-1280.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "dolce-medicea",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "růžový pepř, sicilský citron, zelená mandarinka a toskánská levandule",
+        "čerstvý zázvor, černý pepř a etiopská myrha",
+        "zlatá ambra, šedá ambra, bílé pižmo, santalové dřevo a bourbonská vanilka"
+      ],
+      "screenshot": "aromea-note-profile-dolce-medicea-1280.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "malabar-pepper",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "zázvor, pomeranč, bergamot a skořice",
+        "myrta, pelargónie, černý pepř, muškátový oříšek a elemi",
+        "cypřiš, pačuli, vetiver a cedrové dřevo"
+      ],
+      "screenshot": "aromea-note-profile-malabar-pepper-1280.png"
+    },
+    {
+      "slug": "aromea",
+      "id": "ghirlandaio",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "bergamot, skořice, citron a limetka",
+        "karafiát, ambra, pepř a máta",
+        "santalové dřevo, benzoe, vetiver a pižmo"
+      ],
+      "screenshot": "aromea-note-profile-ghirlandaio-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "aromea",
+      "width": 320,
+      "id": "linen-buds",
+      "defaultScreenshot": "aromea-result-linen-buds-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromea-pair-linen-buds-320.png",
+      "comparisonIds": [
+        "linen-buds",
+        "cafe-satin"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "id": "cafe-satin",
+      "defaultScreenshot": "aromea-result-cafe-satin-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromea-pair-cafe-satin-320.png",
+      "comparisonIds": [
+        "cafe-satin",
+        "linen-buds"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "id": "aramaik",
+      "defaultScreenshot": "aromea-result-aramaik-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "3 189 Kč",
+      "selectedScreenshot": "aromea-selected-aramaik-320.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "aromea-pair-aramaik-320.png",
+      "comparisonIds": [
+        "aramaik",
+        "dolce-medicea"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "id": "dolce-medicea",
+      "defaultScreenshot": "aromea-result-dolce-medicea-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromea-pair-dolce-medicea-320.png",
+      "comparisonIds": [
+        "dolce-medicea",
+        "aramaik"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "id": "malabar-pepper",
+      "defaultScreenshot": "aromea-result-malabar-pepper-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "3 189 Kč",
+      "selectedScreenshot": "aromea-selected-malabar-pepper-320.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "aromea-pair-malabar-pepper-320.png",
+      "comparisonIds": [
+        "malabar-pepper",
+        "ghirlandaio"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 320,
+      "id": "ghirlandaio",
+      "defaultScreenshot": "aromea-result-ghirlandaio-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromea-pair-ghirlandaio-320.png",
+      "comparisonIds": [
+        "ghirlandaio",
+        "malabar-pepper"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "id": "linen-buds",
+      "defaultScreenshot": "aromea-result-linen-buds-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromea-pair-linen-buds-390.png",
+      "comparisonIds": [
+        "linen-buds",
+        "cafe-satin"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "id": "cafe-satin",
+      "defaultScreenshot": "aromea-result-cafe-satin-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromea-pair-cafe-satin-390.png",
+      "comparisonIds": [
+        "cafe-satin",
+        "linen-buds"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "id": "aramaik",
+      "defaultScreenshot": "aromea-result-aramaik-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "3 189 Kč",
+      "selectedScreenshot": "aromea-selected-aramaik-390.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "aromea-pair-aramaik-390.png",
+      "comparisonIds": [
+        "aramaik",
+        "dolce-medicea"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "id": "dolce-medicea",
+      "defaultScreenshot": "aromea-result-dolce-medicea-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromea-pair-dolce-medicea-390.png",
+      "comparisonIds": [
+        "dolce-medicea",
+        "aramaik"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "id": "malabar-pepper",
+      "defaultScreenshot": "aromea-result-malabar-pepper-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "3 189 Kč",
+      "selectedScreenshot": "aromea-selected-malabar-pepper-390.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "aromea-pair-malabar-pepper-390.png",
+      "comparisonIds": [
+        "malabar-pepper",
+        "ghirlandaio"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 390,
+      "id": "ghirlandaio",
+      "defaultScreenshot": "aromea-result-ghirlandaio-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromea-pair-ghirlandaio-390.png",
+      "comparisonIds": [
+        "ghirlandaio",
+        "malabar-pepper"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "id": "linen-buds",
+      "defaultScreenshot": "aromea-result-linen-buds-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromea-pair-linen-buds-1280.png",
+      "comparisonIds": [
+        "linen-buds",
+        "cafe-satin"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "id": "cafe-satin",
+      "defaultScreenshot": "aromea-result-cafe-satin-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromea-pair-cafe-satin-1280.png",
+      "comparisonIds": [
+        "cafe-satin",
+        "linen-buds"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "id": "aramaik",
+      "defaultScreenshot": "aromea-result-aramaik-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "3 189 Kč",
+      "selectedScreenshot": "aromea-selected-aramaik-1280.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "aromea-pair-aramaik-1280.png",
+      "comparisonIds": [
+        "aramaik",
+        "dolce-medicea"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "id": "dolce-medicea",
+      "defaultScreenshot": "aromea-result-dolce-medicea-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromea-pair-dolce-medicea-1280.png",
+      "comparisonIds": [
+        "dolce-medicea",
+        "aramaik"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "id": "malabar-pepper",
+      "defaultScreenshot": "aromea-result-malabar-pepper-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "3 189 Kč",
+      "selectedScreenshot": "aromea-selected-malabar-pepper-1280.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "aromea-pair-malabar-pepper-1280.png",
+      "comparisonIds": [
+        "malabar-pepper",
+        "ghirlandaio"
+      ]
+    },
+    {
+      "slug": "aromea",
+      "width": 1280,
+      "id": "ghirlandaio",
+      "defaultScreenshot": "aromea-result-ghirlandaio-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromea-pair-ghirlandaio-1280.png",
+      "comparisonIds": [
+        "ghirlandaio",
+        "malabar-pepper"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

@@ -1,0 +1,697 @@
+{
+  "brand": "AROMEA",
+  "domain": "aromea.cz",
+  "operator": {
+    "name": "AROMEA s.r.o.",
+    "ico": "22042318",
+    "country": "CZ",
+    "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/22042318",
+    "activeNoEnd": true,
+    "aliases": [
+      "svetbytovychvuni.cz"
+    ],
+    "legacyOperatorAudit": {
+      "name": "Mgr. Iveta Zábranská",
+      "ico": "74144227",
+      "qualification": "Business-transferhistory/legacydomain included in duplicates, notsecondindependentdemo."
+    }
+  },
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "cs",
+  "country": "CZ",
+  "currency": "CZK",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "products": [
+    {
+      "id": "linen-buds",
+      "name": "EdP Linen Buds, 100 ml",
+      "url": "https://www.aromea.cz/edp-linen-buds/",
+      "priceAmount": 2595.0,
+      "price": "2 595 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Černý rybíz, růže a santalové dřevo.",
+      "reason": "Černý rybíz, růže a santalové dřevo.",
+      "photo": "/assets/s5/aromea/linen-buds.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.aromea.cz/edp-linen-buds/",
+        "verifiedAt": "2026-11-14T18:39:34.202162+00:00",
+        "sourceSha256": "511cf7edb37145102a8eaf0611661475205cc171c4f4cf48b1287075fe7fae73",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "ShoptetPublicExactSingleProductOffer",
+          "availabilityUrl": "https://schema.org/InStock",
+          "hasVariants": false
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 2595.0,
+          "currency": "CZK",
+          "vatSource": "https://www.aromea.cz/obchodni-podminky/",
+          "vatEvidence": "Exact finalconsumerprice fromsingleSKUOffer; retailVATdisplay."
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "EdP Linen Buds, 100 ml",
+          "qualification": "ExactfixedSKUH1 pack, notseparate10mltravel."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/57282_locherber-milano-parfem-edp-linen-buds-1.png?ff=1&x=1024&y=1024&q=85&ts=6a329018&sg=38cb01fe",
+        "photoEvidence": {
+          "id": "linen-buds",
+          "url": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/57282_locherber-milano-parfem-edp-linen-buds-1.png?ff=1&x=1024&y=1024&q=85&ts=6a329018&sg=38cb01fe",
+          "file": "linen-buds.png",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 878076,
+          "sha256": "b08718dc11650e5711e3c527e880800e4d0222d6940f08a4a7b62dbe8d85593e",
+          "originalBytes": true
+        },
+        "scent": "Černý rybíz, růže a santalové dřevo",
+        "fragrance": {
+          "notes": [
+            "černý rybíz",
+            "sicilský citron a bergamot",
+            "pelargónie",
+            "okvětní lístky růže a Ylang Ylang",
+            "vanilka",
+            "santalové dřevo a pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de parfum",
+          "notesEvidence": {
+            "url": "https://www.aromea.cz/edp-linen-buds/",
+            "sourceText": "Hlava: černý rybíz, sicilský citron a bergamot; Srdce: pelargónie, okvětní lístky růže a Ylang Ylang; Základ: vanilka, santalové dřevo a pižmo",
+            "originalSourceText": "Detailní popis produktu\n                                    Luxusní parfémovaná voda Locherber Milano je věnovaná těm, kteří si zvolili rovnováhu mezi být a vypadat. Rafinovaný italský design, flakon z lakovaného skla, masivní koncovka z jasanového dřeva a prvotřídní parfém představuje skvělý doplněk pro jakoukoliv příležitost.\nLněná poupata\nNádherná vůně absolutní čistoty, která se nese prostorem jako čerstvý ranní vánek. Svěžest, nevinnost, letní atmosféra a dechberoucí západy slunce... Nechte se unést tóny lněných poupat, vůní inspirovanou čistou krásou přírody Nového Zélandu.\nHlava – černý rybíz, sicilský citron a bergamotSrdce – pelargónie, okvětní lístky růže a Ylang YlangZáklad – vanilka, santalové dřevo a pižmo\nVlastnosti\n\nvysoký podíl vonné esence až 20%\npatentovaný design inspirovaný klasickou architekturou hlavic sloupů\nflakon z lakovaného skla vyroben italskými sklářskými mistry\nmasivní koncovka z jasanového dřeva\nručně aplikovaná papírová etiketa s reliéfní dekorací\natraktivní balení v černé papírové krabičce",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "LiteralpublishedHlava/Srdce/Základ; no notepercentages/intensity/health/lastingguarantee."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No marketingpercentages or inventednumericnotecomposition.",
+          "No spiritualrenewal/health/performance/guaranteedinterest claims."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "flower",
+          "fragranceProfile": "linen-buds"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.aromea.cz/edp-linen-buds/",
+          "sourceText": "Hlava: černý rybíz, sicilský citron a bergamot; Srdce: pelargónie, okvětní lístky růže a Ylang Ylang; Základ: vanilka, santalové dřevo a pižmo",
+          "navigationLabel": "Černý rybíz, růže a santalové dřevo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "cafe-satin",
+      "name": "EdP Café Satin, 100 ml",
+      "url": "https://www.aromea.cz/locherber-milano-edp-cafe-satin/",
+      "priceAmount": 2595.0,
+      "price": "2 595 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Káva, růže a vanilka.",
+      "reason": "Káva, růže a vanilka.",
+      "photo": "/assets/s5/aromea/cafe-satin.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.aromea.cz/locherber-milano-edp-cafe-satin/",
+        "verifiedAt": "2026-11-14T18:39:34.212654+00:00",
+        "sourceSha256": "4a6cc35954465319cef86a4232d73908ce140998d569f9838dee42e30eb0000e",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "ShoptetPublicExactSingleProductOffer",
+          "availabilityUrl": "https://schema.org/InStock",
+          "hasVariants": false
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 2595.0,
+          "currency": "CZK",
+          "vatSource": "https://www.aromea.cz/obchodni-podminky/",
+          "vatEvidence": "Exact finalconsumerprice fromsingleSKUOffer; retailVATdisplay."
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "EdP Café Satin, 100 ml",
+          "qualification": "ExactH1 and productparametersObjem100ml forCafeSatin; copyerrorObsahbaleni10ml preserved asconflictingboilerplate, not selectedpack."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/50404-2_cafe-satin-edp-100-ml.png?ff=1&x=1024&y=1024&q=85&ts=67c18532&sg=38cb01fe",
+        "photoEvidence": {
+          "id": "cafe-satin",
+          "url": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/50404-2_cafe-satin-edp-100-ml.png?ff=1&x=1024&y=1024&q=85&ts=67c18532&sg=38cb01fe",
+          "file": "cafe-satin.png",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 682036,
+          "sha256": "1ed357e66d5e2e63a27dbbe3391296b30d7108e58952fbaa64c64976e69ab254",
+          "originalBytes": true
+        },
+        "scent": "Káva, růže a vanilka",
+        "fragrance": {
+          "notes": [
+            "káva",
+            "růže a geránie",
+            "ambra",
+            "bílé pižmo a vanilka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de parfum",
+          "notesEvidence": {
+            "url": "https://www.aromea.cz/locherber-milano-edp-cafe-satin/",
+            "sourceText": "Hlava: káva; Srdce: růže a geránie; Základ: ambra, bílé pižmo a vanilka",
+            "originalSourceText": "Detailní popis produktu\n                                    Luxusní parfémovaná voda Locherber Milano je věnovaná těm, kteří si zvolili rovnováhu mezi být a vypadat. Rafinovaný italský design, flakon z lakovaného skla, koncovka z jasanového dřeva a prvotřídní parfém představuje skvělý doplněk pro jakoukoliv příležitost.\nCafé Satin (Sametová káva)\nVůně inspirovaná vynikající kávou Gesha, vzácnou odrůdou arabiky, známou pro svou sladkou chuť a vůni bohatou na květinové tóny s nádechem čokolády, medu a dokonce černého čaje. Vůně Café Satin je podobná této kávě... je sladká, květinová a hořká zároveň. Okouzlí lahodnou sladkostí vanilky, elegancí růže se svěžími tóny geránie i hořkostí kávy, která jí dodává hloubku a sofistikovanost. Café Satin je příjemná unisex vůně, která podtrhne vaši eleganci a je  vhodná pro každou příležitost i roční období.\nHlava – kávaSrdce – růže a geránieZáklad – ambra, bílé pižmo a vanilka\nVlastnosti\n\nvysoký podíl vonné esence až 20%\npatentovaný design inspirovaný klasickou architekturou hlavic sloupů\nflakon z lakovaného skla vyroben italskými sklářskými mistry\nmasivní koncovka z jasanového dřeva\nručně aplikovaná papírová etiketa s reliéfní dekorací\natraktivní balení v černé papírové krabičce\n\nObsah balení\n\nEdP parfémovaná voda Café Satin (100 ml)\n\n\n\n\n\n\n\nLocherber Milano je synonymem pro luxus, kvalitu, eleganci a volbou těch, kdo hledají výjimečné a podmanivé vůně. Unikátní pro Locherber Milano jsou dřevěné a ručně zpracované doplňky, které dodávají výrobkům punc výjimečnosti. V sortimentu této přední italské značky luxusní kosmetiky najdete širokou nabídku vůní a provedení, včetně difuzérů s tyčinkami, katalytických lamp, luxusních vonných svíček, interiérových sprejů, tělových parfémů, vůní do auta a vonných sáčků do prádla. Každý produkt je vyroben s maximální péčí a důrazem na detail, aby splňoval vysoké nároky a očekávání zákazníků. Interiérové parfémy Locherber Milano jsou výsledkem pečlivé práce italských mistrů parfumérů, kteří vybírají z nejkvalitnějších přírodních surovin a připravují vonné esence s filosofii \"fine living\". Výsledkem jsou exkluzivní produkty nejvyšší kvality, kterých vůně rozpoznáte jako přirozené, osobní a blízké. Locherber Milano je značkou pro náročné zákazníky, kteří si cení dokonalosti a očekávají jen to nejlepší.",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "LiteralpublishedHlava/Srdce/Základ; no notepercentages/intensity/health/lastingguarantee."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No marketingpercentages or inventednumericnotecomposition.",
+          "No spiritualrenewal/health/performance/guaranteedinterest claims."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "flower",
+          "fragranceProfile": "cafe-satin"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.aromea.cz/locherber-milano-edp-cafe-satin/",
+          "sourceText": "Hlava: káva; Srdce: růže a geránie; Základ: ambra, bílé pižmo a vanilka",
+          "navigationLabel": "Káva, růže a vanilka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "aramaik",
+      "name": "EdP Aramaik, 100 ml",
+      "url": "https://www.aromea.cz/locherber-milano-parfem-aramaik/",
+      "priceAmount": 2595.0,
+      "price": "2 595 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Hořký pomeranč, myrha a agarové dřevo.",
+      "reason": "Hořký pomeranč, myrha a agarové dřevo.",
+      "photo": "/assets/s5/aromea/aramaik.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.aromea.cz/locherber-milano-parfem-aramaik/",
+        "verifiedAt": "2026-11-14T18:39:34.310998+00:00",
+        "sourceSha256": "771cd0faf96f9f11231f074794718e970101ebe0baf0afc3426944789e826c82",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "ShoptetPublicExactSingleProductOffer",
+          "availabilityUrl": "https://schema.org/InStock",
+          "hasVariants": false
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 2595.0,
+          "currency": "CZK",
+          "vatSource": "https://www.aromea.cz/obchodni-podminky/",
+          "vatEvidence": "Exact finalconsumerprice fromsingleSKUOffer; retailVATdisplay."
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "EdP Aramaik, 100 ml",
+          "qualification": "ExactfixedSKUH1 pack, notseparate10mltravel."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/19721_aramaik-edp-100-ml.png?ff=1&x=1024&y=1024&q=85&ts=67d170b9&sg=38cb01fe",
+        "photoEvidence": {
+          "id": "aramaik",
+          "url": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/19721_aramaik-edp-100-ml.png?ff=1&x=1024&y=1024&q=85&ts=67d170b9&sg=38cb01fe",
+          "file": "aramaik.png",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 689721,
+          "sha256": "ad98f0cab9ccc920881c76e1e11eb67ff66e7d136a2d2d4380b120ac25cc9589",
+          "originalBytes": true
+        },
+        "scent": "Hořký pomeranč, myrha a agarové dřevo",
+        "fragrance": {
+          "notes": [
+            "bergamot a hořký pomeranč",
+            "spikenard a geránium",
+            "ambra",
+            "myrha",
+            "vanilka",
+            "guajakové dřevo",
+            "benzoin",
+            "pačuli a agarové dřevo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de parfum",
+          "notesEvidence": {
+            "url": "https://www.aromea.cz/locherber-milano-parfem-aramaik/",
+            "sourceText": "Hlava: bergamot a hořký pomeranč; Srdce: spikenard a geránium; Základ: ambra, myrha, vanilka, guajakové dřevo, benzoin, pačuli a agarové dřevo",
+            "originalSourceText": "Detailní popis produktu\n                                    Luxusní parfémovaná voda Locherber Milano je věnovaná těm, kteří si zvolili rovnováhu mezi být a vypadat. Rafinovaný italský design, flakon z lakovaného skla, koncovka z jasanového dřeva a prvotřídní parfém představuje skvělý doplněk pro jakoukoliv příležitost.\nAramaik\nVůně myrhy, vzácného dřeva a koření vás zahalí do hřejivého objetí a navodí pocit vnitřního klidu a harmonie. Sladce dřevitý, tajemný Aramaik se otevírá jiskřivými tóny bergamotu a hořkého pomeranče, lehce se dotkne květin a vzápětí rozvine do intenzivních dřevitých a kořeněných akordů, které zjemňuje nasládlá vanilka. Tato velmi smyslná vůně vykouzlí útulnou atmosféru, zahřeje vás v chladnějších dnech a doprovodí při chvílích relaxace a hlubokého odpočinku.\nHlava – bergamot a hořký pomerančSrdce – spikenard a gerániumZáklad – ambra, myrha, vanilka, guajakové dřevo, benzoin, pačuli a agarové dřevo\nPryskyřice, která voní historií\n\nSladce dřevitý parfém Aramaik evokuje starověké obřady, jež vedly k duchovní obnově těla i mysli. Dominantní složkou je myrha - aromatická pryskyřice, jejíž kouř se kdysi vznášel nad egyptskými chrámy, naplňoval vzduch při rituálních obětech a provázel balzamování vládců. Aramaik obsahuje hned tři různé druhy myrhy a vzácný olej Nard, jehož intenzivní vůně se po staletí využívala v indické Ajurvédě k léčení a meditaci. Myrha je velmi ceněnou složkou kadidla a její hodnota byla mnohdy vyšší než její váha ve zlatě. V Bibli v evangeliu svatého Matouše je zmiňována jako jeden ze tří darů, které přinesli mudrcové (tři králové) novorozenému Ježíši. Olejem z myrhy bylo také pomazáno jeho tělo po ukřižování. Název Aramaik i jedinečná kompozice této vůně odkazují na aramejský jazyk, kterým pravděpodobně Ježíš mluvil. Některé znaky tohoto jazyka jsou vyobrazeny na textilní etiketě parfému, aby připomněly sílu tradice a mystiku dávných časů.\nVlastnosti\n\nvysoký podíl vonné esence až 20%\npatentovaný design inspirovaný klasickou architekturou hlavic sloupů\nflakon z lakovaného skla vyroben italskými sklářskými mistry\nmasivní koncovka z jasanového dřeva\nručně aplikovaná papírová etiketa s reliéfní dekorací\natraktivní balení v černé papírové krabičce\n\nObsah balení\n\nEdP parfémovaná voda Aramaik (100 ml)\n\n\n\n\n\n\n\nLocherber Milano je synonymem pro luxus, kvalitu, eleganci a volbou těch, kdo hledají výjimečné a podmanivé vůně. Unikátní pro Locherber Milano jsou dřevěné a ručně zpracované doplňky, které dodávají výrobkům punc výjimečnosti. V sortimentu této přední italské značky luxusní kosmetiky najdete širokou nabídku vůní a provedení, včetně difuzérů s tyčinkami, katalytických lamp, luxusních vonných svíček, interiérových sprejů, tělových parfémů, vůní do auta a vonných sáčků do prádla. Každý produkt je vyroben s maximální péčí a důrazem na detail, aby splňoval vysoké nároky a očekávání zákazníků. Interiérové parfémy Locherber Milano jsou výsledkem pečlivé práce italských mistrů parfumérů, kteří vybírají z nejkvalitnějších přírodních surovin a připravují vonné esence s filosofii \"fine living\". Výsledkem jsou exkluzivní produkty nejvyšší kvality, kterých vůně rozpoznáte jako přirozené, osobní a blízké. Locherber Milano je značkou pro náročné zákazníky, kteří si cení dokonalosti a očekávají jen to nejlepší.",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "LiteralpublishedHlava/Srdce/Základ; no notepercentages/intensity/health/lastingguarantee."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No marketingpercentages or inventednumericnotecomposition.",
+          "No spiritualrenewal/health/performance/guaranteedinterest claims."
+        ],
+        "upsellVariants": [
+          {
+            "id": "aramaik-10ml",
+            "parentProductId": "aramaik",
+            "sameFormula": true,
+            "available": true,
+            "currency": "CZK",
+            "name": "EdP Aramaik, 10 ml",
+            "volume": "10 ml",
+            "priceAmount": 594,
+            "price": "594 Kč",
+            "url": "https://www.aromea.cz/locherber-milano-edp-parfemovana-voda-aramaik-10-ml/",
+            "variantSelectionRequired": false,
+            "photo": "/assets/s5/aromea/aramaik-10ml.png",
+            "photoEvidence": {
+              "id": "aramaik-10ml",
+              "url": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/47909_aramaik-edp-10-ml.png?ff=1&x=1024&y=1024&q=85&ts=67d17f5d&sg=38cb01fe",
+              "file": "aramaik-10ml.png",
+              "width": 1024,
+              "height": 1024,
+              "bytes": 255871,
+              "sha256": "65a87c69a68c86c2f6fe54fbbd719caaaff93007779a0d32b89ccc3a61ddbf56",
+              "originalBytes": true
+            },
+            "evidence": {
+              "scope": "ShoptetSeparateFixedTravelSKU",
+              "exactVariantId": "49766",
+              "sameCompositionTitle": "EdP Aramaik, 10 ml",
+              "sameCompositionParentTitle": "EdP Aramaik, 100 ml",
+              "sourceSha256": "87ddd771d31819ce17e246870afedcdf84b7db99c2d13ab03a0ec277d7d8023e",
+              "checkedAt": "2026-11-14T18:39:34.930040+00:00",
+              "stock": "Skladem",
+              "isNotSoldOut": true,
+              "publicIsInStock": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "sourceUrl": "https://www.aromea.cz/locherber-milano-edp-parfemovana-voda-aramaik-10-ml/",
+              "parentProductUrl": "https://www.aromea.cz/locherber-milano-parfem-aramaik/",
+              "qualification": "Exactseparate10mlSKUOfferInStock, notShopify; adapterexactVariantId carriesactualpublicfixedSKUpriceId. Samepublishedname+pyramidverified, directdifferentURL, no merchantvolumechoice needed."
+            }
+          }
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "resin",
+          "fragranceProfile": "aramaik"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.aromea.cz/locherber-milano-parfem-aramaik/",
+          "sourceText": "Hlava: bergamot a hořký pomeranč; Srdce: spikenard a geránium; Základ: ambra, myrha, vanilka, guajakové dřevo, benzoin, pačuli a agarové dřevo",
+          "navigationLabel": "Hořký pomeranč, myrha a agarové dřevo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "dolce-medicea",
+      "name": "parfum Dolce Medicea, 75 ml",
+      "url": "https://www.aromea.cz/logevy-parfem-dolce-medicea/",
+      "priceAmount": 3725.0,
+      "price": "3 725 Kč",
+      "currency": "CZK",
+      "volume": "75 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Růžový pepř, zázvor a bourbonská vanilka.",
+      "reason": "Růžový pepř, zázvor a bourbonská vanilka.",
+      "photo": "/assets/s5/aromea/dolce-medicea.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.aromea.cz/logevy-parfem-dolce-medicea/",
+        "verifiedAt": "2026-11-14T18:39:34.345053+00:00",
+        "sourceSha256": "b8c3826ed73f34f43b508ae22c1d5abe08ddf0cde24a6ed87bb3377da2d48026",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "ShoptetPublicExactSingleProductOffer",
+          "availabilityUrl": "https://schema.org/InStock",
+          "hasVariants": false
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 3725.0,
+          "currency": "CZK",
+          "vatSource": "https://www.aromea.cz/obchodni-podminky/",
+          "vatEvidence": "Exact finalconsumerprice fromsingleSKUOffer; retailVATdisplay."
+        },
+        "packEvidence": {
+          "pack": "75 ml",
+          "sourceText": "parfum Dolce Medicea, 75 ml",
+          "qualification": "ExactfixedSKUH1 pack, notseparate10mltravel."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/56900-1_dolce-medicea-parfem-75-ml-1.png?ff=1&x=1024&y=1024&q=85&ts=692db16b&sg=38cb01fe",
+        "photoEvidence": {
+          "id": "dolce-medicea",
+          "url": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/56900-1_dolce-medicea-parfem-75-ml-1.png?ff=1&x=1024&y=1024&q=85&ts=692db16b&sg=38cb01fe",
+          "file": "dolce-medicea.png",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 1288077,
+          "sha256": "843765233ad67a309ba6ee4f978a12ee7f5080cfb899e91082f3eab148cdbefa",
+          "originalBytes": true
+        },
+        "scent": "Růžový pepř, zázvor a bourbonská vanilka",
+        "fragrance": {
+          "notes": [
+            "růžový pepř",
+            "sicilský citron",
+            "zelená mandarinka a toskánská levandule",
+            "čerstvý zázvor",
+            "černý pepř a etiopská myrha",
+            "zlatá ambra",
+            "šedá ambra",
+            "bílé pižmo",
+            "santalové dřevo a bourbonská vanilka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfum",
+          "notesEvidence": {
+            "url": "https://www.aromea.cz/logevy-parfem-dolce-medicea/",
+            "sourceText": "Hlava: růžový pepř, sicilský citron, zelená mandarinka a toskánská levandule; Srdce: čerstvý zázvor, černý pepř a etiopská myrha; Základ: zlatá ambra, šedá ambra, bílé pižmo, santalové dřevo a bourbonská vanilka",
+            "originalSourceText": "Detailní popis produktu\n                                    Dolce Medicea z limitované Collezione Battistero ztělesňuje absolutní vrchol tradiční florentské umělecké parfumerie. Mistrovské dílo parfuméra Stefana Cintelliho je esencí s mimořádně vysokou koncentrací, která zaručuje jedinečnou hloubku, absolutní perzistenci a sofistikovaný sillage. Tento parfém v sobě zrcadlí ryzí italskou eleganci Made in Tuscany a sebevědomou, nezaměnitelnou přítomnost.\nEsence kultivované krásy\nOlfaktorická cesta napříč staletími, inspirovaná nadčasovou elegancí Florencie a ušlechtilou vizí rodu Medici. Dolce Medicea, sladké kouzlo zrozené v srdci renesance, esence procházky po dlážděných uličkách města v hodině, kdy se obloha barví do zlatavých tónů. Toskánská levandule se zde plynule rozehřívá do tance pikantního koření a vzácné pryskyřice hodné Medicejských archivů, aby spočinula na krémově sladkém základu santalového dřeva, ambry a bourbonské vanilky. Rafinovaná vůně vyprávějící o řemeslných dílnách, hedvábí lehkém jako dotek na kůži, a o dávných, voňavých kouzlech pečlivě uchovaných časem, je esencí autentické, vysoce kultivované krásy.\nHlava – růžový pepř, sicilský citron, zelená mandarinka a toskánská levanduleSrdce – čerstvý zázvor, černý pepř a etiopská myrhaZáklad – zlatá ambra, šedá ambra, bílé pižmo, santalové dřevo a bourbonská vanilka\nIkona florentské architektury\nFlakon je klenotem, který podtrhuje vaši osobnost. Jeho osmihranný design a čisté, architektonické linie vzdávají hold slavnému florentskému baptisteriu sv. Jana Křtitele, věčnému symbolu harmonie a dokonalých proporcí. Je zhotoven z křišťálově čistého skla pomocí výhradně vlastněné, nereplikovatelné formy, což garantuje jeho jedinečnost. Detaily, jako je jemně zlacená etiketa a víčko s precizně vyrytým logem, jsou výrazem ručního mistrovství. Každý parfém je uložen v ručně sestavené, osmihranné krabičce z florentského žebrovaného papíru se zlatým ražením.",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "LiteralpublishedHlava/Srdce/Základ; no notepercentages/intensity/health/lastingguarantee."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No marketingpercentages or inventednumericnotecomposition.",
+          "No spiritualrenewal/health/performance/guaranteedinterest claims."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "resin",
+          "fragranceProfile": "dolce-medicea"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.aromea.cz/logevy-parfem-dolce-medicea/",
+          "sourceText": "Hlava: růžový pepř, sicilský citron, zelená mandarinka a toskánská levandule; Srdce: čerstvý zázvor, černý pepř a etiopská myrha; Základ: zlatá ambra, šedá ambra, bílé pižmo, santalové dřevo a bourbonská vanilka",
+          "navigationLabel": "Růžový pepř, zázvor a bourbonská vanilka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "malabar-pepper",
+      "name": "EdP Malabar Pepper, 100 ml",
+      "url": "https://www.aromea.cz/locherber-milano-eau-de-parfum-malabar-pepper/",
+      "priceAmount": 2595.0,
+      "price": "2 595 Kč",
+      "currency": "CZK",
+      "volume": "100 ml",
+      "category": "fragrance",
+      "kind": "Parfémová voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Zázvor, černý pepř a cedrové dřevo.",
+      "reason": "Zázvor, černý pepř a cedrové dřevo.",
+      "photo": "/assets/s5/aromea/malabar-pepper.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.aromea.cz/locherber-milano-eau-de-parfum-malabar-pepper/",
+        "verifiedAt": "2026-11-14T18:39:34.952017+00:00",
+        "sourceSha256": "e16bd1e0c46db546c11e1677f1fc6996836aeae7e8e6a08e1da50ae9a5a5cb0f",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "ShoptetPublicExactSingleProductOffer",
+          "availabilityUrl": "https://schema.org/InStock",
+          "hasVariants": false
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 2595.0,
+          "currency": "CZK",
+          "vatSource": "https://www.aromea.cz/obchodni-podminky/",
+          "vatEvidence": "Exact finalconsumerprice fromsingleSKUOffer; retailVATdisplay."
+        },
+        "packEvidence": {
+          "pack": "100 ml",
+          "sourceText": "EdP Malabar Pepper, 100 ml",
+          "qualification": "ExactfixedSKUH1 pack, notseparate10mltravel."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/12665_malabar-pepper-edp-100-ml.png?ff=1&x=1024&y=1024&q=85&ts=67d96487&sg=38cb01fe",
+        "photoEvidence": {
+          "id": "malabar-pepper",
+          "url": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/12665_malabar-pepper-edp-100-ml.png?ff=1&x=1024&y=1024&q=85&ts=67d96487&sg=38cb01fe",
+          "file": "malabar-pepper.png",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 679890,
+          "sha256": "6d334d7a43b440e782fc460b1fc9e25408cc3777db0bf20cb90ef0f9f9d5c185",
+          "originalBytes": true
+        },
+        "scent": "Zázvor, černý pepř a cedrové dřevo",
+        "fragrance": {
+          "notes": [
+            "zázvor",
+            "pomeranč",
+            "bergamot a skořice",
+            "myrta",
+            "pelargónie",
+            "černý pepř",
+            "muškátový oříšek a elemi",
+            "cypřiš",
+            "pačuli",
+            "vetiver a cedrové dřevo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Eau de parfum",
+          "notesEvidence": {
+            "url": "https://www.aromea.cz/locherber-milano-eau-de-parfum-malabar-pepper/",
+            "sourceText": "Hlava: zázvor, pomeranč, bergamot a skořice; Srdce: myrta, pelargónie, černý pepř, muškátový oříšek a elemi; Základ: cypřiš, pačuli, vetiver a cedrové dřevo",
+            "originalSourceText": "Detailní popis produktu\n                                    Luxusní parfémovaná voda Locherber Milano je věnovaná těm, kteří si zvolili rovnováhu mezi být a vypadat. Rafinovaný italský design, flakon z lakovaného skla, masivní koncovka z jasanového dřeva a prvotřídní parfém představuje skvělý doplněk pro jakoukoliv příležitost.\n\nMalabar Pepper (Malabarský pepř)\nSexy, intenzivní a pikantní kořeněná vůně s dominantním černým pepřem na pozadí orientálních tónů vzácných dřevin. Tato magická vůně inspirovaná Malabarským pobřežím v Indii, kde se pěstují nejvzácnější druhy pepře, vnese do vašeho života tajemnou, smyslnou atmosféru a zahalí vás pocitem luxusu.\nHlava – zázvor, pomeranč, bergamot a skořiceSrdce – myrta, pelargónie, černý pepř, muškátový oříšek a elemiZáklad – cypřiš, pačuli, vetiver a cedrové dřevo\nVlastnosti\n\nvysoký podíl vonné esence až 20%\npatentovaný design inspirovaný klasickou architekturou hlavic sloupů\nflakon z lakovaného skla vyroben italskými sklářskými mistry\nmasivní koncovka z jasanového dřeva\nručně aplikovaná papírová etiketa s reliéfní dekorací\natraktivní balení v černé papírové krabičce\n\nObsah balení\n\nEdP parfémovaná voda Malabar Pepper (100 ml)\n\n\n\n\n\n\n\nLocherber Milano je synonymem pro luxus, kvalitu, eleganci a volbou těch, kdo hledají výjimečné a podmanivé vůně. Unikátní pro Locherber Milano jsou dřevěné a ručně zpracované doplňky, které dodávají výrobkům punc výjimečnosti. V sortimentu této přední italské značky luxusní kosmetiky najdete širokou nabídku vůní a provedení, včetně difuzérů s tyčinkami, katalytických lamp, luxusních vonných svíček, interiérových sprejů, tělových parfémů, vůní do auta a vonných sáčků do prádla. Každý produkt je vyroben s maximální péčí a důrazem na detail, aby splňoval vysoké nároky a očekávání zákazníků. Interiérové parfémy Locherber Milano jsou výsledkem pečlivé práce italských mistrů parfumérů, kteří vybírají z nejkvalitnějších přírodních surovin a připravují vonné esence s filosofii \"fine living\". Výsledkem jsou exkluzivní produkty nejvyšší kvality, kterých vůně rozpoznáte jako přirozené, osobní a blízké. Locherber Milano je značkou pro náročné zákazníky, kteří si cení dokonalosti a očekávají jen to nejlepší.",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "LiteralpublishedHlava/Srdce/Základ; no notepercentages/intensity/health/lastingguarantee."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No marketingpercentages or inventednumericnotecomposition.",
+          "No spiritualrenewal/health/performance/guaranteedinterest claims."
+        ],
+        "upsellVariants": [
+          {
+            "id": "malabar-pepper-10ml",
+            "parentProductId": "malabar-pepper",
+            "sameFormula": true,
+            "available": true,
+            "currency": "CZK",
+            "name": "EdP Malabar Pepper, 10 ml",
+            "volume": "10 ml",
+            "priceAmount": 594,
+            "price": "594 Kč",
+            "url": "https://www.aromea.cz/locherber-milano-edp-parfemovana-voda-malabar-pepper-10-ml/",
+            "variantSelectionRequired": false,
+            "photo": "/assets/s5/aromea/malabar-pepper-10ml.png",
+            "photoEvidence": {
+              "id": "malabar-pepper-10ml",
+              "url": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/47888_malabar-pepper-edp-10-ml.png?ff=1&x=1024&y=1024&q=85&ts=67d95f86&sg=38cb01fe",
+              "file": "malabar-pepper-10ml.png",
+              "width": 1024,
+              "height": 1024,
+              "bytes": 244106,
+              "sha256": "06c1634f89bc372e77f51d177780aaf964691dfda369d0fa00012426a5803d50",
+              "originalBytes": true
+            },
+            "evidence": {
+              "scope": "ShoptetSeparateFixedTravelSKU",
+              "exactVariantId": "49745",
+              "sameCompositionTitle": "EdP Malabar Pepper, 10 ml",
+              "sameCompositionParentTitle": "EdP Malabar Pepper, 100 ml",
+              "sourceSha256": "94b20613996a68a41d6b62ba7e24dedff8686da9fa591f72bd3070de54c21176",
+              "checkedAt": "2026-11-14T18:39:35.194944+00:00",
+              "stock": "Skladem",
+              "isNotSoldOut": true,
+              "publicIsInStock": true,
+              "availabilityUrl": "https://schema.org/InStock",
+              "sourceUrl": "https://www.aromea.cz/locherber-milano-edp-parfemovana-voda-malabar-pepper-10-ml/",
+              "parentProductUrl": "https://www.aromea.cz/locherber-milano-eau-de-parfum-malabar-pepper/",
+              "qualification": "Exactseparate10mlSKUOfferInStock, notShopify; adapterexactVariantId carriesactualpublicfixedSKUpriceId. Samepublishedname+pyramidverified, directdifferentURL, no merchantvolumechoice needed."
+            }
+          }
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "spice",
+          "fragranceProfile": "malabar-pepper"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.aromea.cz/locherber-milano-eau-de-parfum-malabar-pepper/",
+          "sourceText": "Hlava: zázvor, pomeranč, bergamot a skořice; Srdce: myrta, pelargónie, černý pepř, muškátový oříšek a elemi; Základ: cypřiš, pačuli, vetiver a cedrové dřevo",
+          "navigationLabel": "Zázvor, černý pepř a cedrové dřevo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "ghirlandaio",
+      "name": "parfum Ghirlandaio, 75 ml",
+      "url": "https://www.aromea.cz/logevy-parfem-ghirlandaio/",
+      "priceAmount": 3725.0,
+      "price": "3 725 Kč",
+      "currency": "CZK",
+      "volume": "75 ml",
+      "category": "fragrance",
+      "kind": "Parfém",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Skořice, karafiát a máta.",
+      "reason": "Skořice, karafiát a máta.",
+      "photo": "/assets/s5/aromea/ghirlandaio.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.aromea.cz/logevy-parfem-ghirlandaio/",
+        "verifiedAt": "2026-11-14T18:39:34.324855+00:00",
+        "sourceSha256": "b78ebc5ac58386d980748ff471d77ae46f9dbab59a6ae2cb602f6eaa33fc25cf",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "ShoptetPublicExactSingleProductOffer",
+          "availabilityUrl": "https://schema.org/InStock",
+          "hasVariants": false
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 3725.0,
+          "currency": "CZK",
+          "vatSource": "https://www.aromea.cz/obchodni-podminky/",
+          "vatEvidence": "Exact finalconsumerprice fromsingleSKUOffer; retailVATdisplay."
+        },
+        "packEvidence": {
+          "pack": "75 ml",
+          "sourceText": "parfum Ghirlandaio, 75 ml",
+          "qualification": "ExactfixedSKUH1 pack, notseparate10mltravel."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/56906_ghirlandaio-parfem-75-ml-1.png?ff=1&x=1024&y=1024&q=85&ts=692ff4b8&sg=38cb01fe",
+        "photoEvidence": {
+          "id": "ghirlandaio",
+          "url": "https://cdn.myshoptet.com/usr/www.aromea.cz/user/shop/big/56906_ghirlandaio-parfem-75-ml-1.png?ff=1&x=1024&y=1024&q=85&ts=692ff4b8&sg=38cb01fe",
+          "file": "ghirlandaio.png",
+          "width": 1024,
+          "height": 1024,
+          "bytes": 1206052,
+          "sha256": "0f4fc2375a054b4bdc2f5d5368d25ba93a95092cfa1bd6d676edfcdfdba74e62",
+          "originalBytes": true
+        },
+        "scent": "Skořice, karafiát a máta",
+        "fragrance": {
+          "notes": [
+            "bergamot",
+            "skořice",
+            "citron a limetka",
+            "karafiát",
+            "ambra",
+            "pepř a máta",
+            "santalové dřevo",
+            "benzoe",
+            "vetiver a pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfum",
+          "notesEvidence": {
+            "url": "https://www.aromea.cz/logevy-parfem-ghirlandaio/",
+            "sourceText": "Hlava: bergamot, skořice, citron a limetka; Srdce: karafiát, ambra, pepř a máta; Základ: santalové dřevo, benzoe, vetiver a pižmo",
+            "originalSourceText": "Detailní popis produktu\n                                    Ghirlandaio z limitované Collezione Battistero ztělesňuje absolutní vrchol tradiční florentské umělecké parfumerie. Mistrovské dílo parfuméra Stefana Cintelliho je esencí s mimořádně vysokou koncentrací, která zaručuje jedinečnou hloubku, absolutní perzistenci a sofistikovaný sillage. Tento parfém v sobě zrcadlí ryzí italskou eleganci Made in Tuscany a sebevědomou, nezaměnitelnou přítomnost.\nUmělecké dílo k nošení\nV zlatavém tichu florentského ateliéru, kde se vzduch třpytí mezi plátny a dýchá vzpomínkami, se rodí Ghirlandaio. Freska, kde každý tón je mistrovským tahem štětce plného emocí. Svěží citrusy plynou jako prsty po hedvábí, jiskří ve vzduchu jako jasné ráno nad Lungarnem, aby vzápětí ustoupily intimnímu teplu karafiátu a ambry. Věčný dozvuk pižma zůstává jako pohlazení, noblesní otisk renesanční ruky. Ghirlandaio je portrétem milosti a tajemství. Vůně, která nesvádí, ale deklaruje. Florentská pečeť luxusu, fragment umění, který žije v přítomnosti a voní věčností.\nHlava – bergamot, skořice, citron a limetkaSrdce – karafiát, ambra, pepř a mátaZáklad – santalové dřevo, benzoe, vetiver a pižmo\nIkona florentské architektury\nFlakon je klenotem, který podtrhuje vaši osobnost. Jeho osmihranný design a čisté, architektonické linie vzdávají hold slavnému florentskému baptisteriu sv. Jana Křtitele, věčnému symbolu harmonie a dokonalých proporcí. Je zhotoven z křišťálově čistého skla pomocí výhradně vlastněné, nereplikovatelné formy, což garantuje jeho jedinečnost. Detaily, jako je jemně zlacená etiketa a víčko s precizně vyrytým logem, jsou výrazem ručního mistrovství. Každý parfém je uložen v ručně sestavené, osmihranné krabičce z florentského žebrovaného papíru se zlatým ražením.",
+            "sourceLanguage": "cs",
+            "displayLanguage": "cs",
+            "scope": "LiteralpublishedHlava/Srdce/Základ; no notepercentages/intensity/health/lastingguarantee."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No marketingpercentages or inventednumericnotecomposition.",
+          "No spiritualrenewal/health/performance/guaranteedinterest claims."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "spice",
+          "fragranceProfile": "ghirlandaio"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.aromea.cz/logevy-parfem-ghirlandaio/",
+          "sourceText": "Hlava: bergamot, skořice, citron a limetka; Srdce: karafiát, ambra, pepř a máta; Základ: santalové dřevo, benzoe, vetiver a pižmo",
+          "navigationLabel": "Skořice, karafiát a máta",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    }
+  ],
+  "revenue": {
+    "year": 2024,
+    "kind": "SECONDARY_PUBLISHED_BAND",
+    "band": "1–200 tis. Kč",
+    "currency": "CZK",
+    "source": "https://www.chytryrejstrik.cz/ico-22042318/aromea-s-r-o",
+    "latestExact2025": "UNKNOWN",
+    "qualification": "Historicalnewcompany2024band; legacybusiness-transfer and2025assetsgrowth not proofcurrentturnover.2710000assets notsales."
+  },
+  "size": "CURRENT_SIZE_REVIEW_BUSINESS_TRANSFER_HISTORICAL_SMALL_BAND_ONLY",
+  "interest": "NOT_ESTABLISHED",
+  "notes": [
+    "Actuallegacydomain svetbytovychvuni.cz HTTPSredirectstoaromea.cz, oneoperator/one demo. FormerFO74144227 included in duplicateaudit.",
+    "Sixdistinct75/100mlformulas, twooptional10mlsameformulavariants, not8formulas.",
+    "ExactfixedsingleSKUOffers/photos/prices/InStock; traveladdonsseparatedirectURLs, no assumedcartintegration.",
+    "CafeSatinH1+Objem100mlparameter agree100ml; boilerplateObsahbaleni10ml conflicts and is preserved only assourceconflict, not packdefinition.",
+    "Officialprimaryphotos and100mlwoodencaps/75mlLogevyflasks, no generatedbottle/editedsourcebytes.",
+    "OwnWPEnecessary-onlycookies ordinaryopenedSmartsuppcontactonline; no productAIobserved, othermodesunknown.",
+    "CURRENT2025SIZEUNKNOWN/businessacquisitionreview; no currentrevenuecapguarantee, price447+10unchanged."
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "flower",
+      "label": "Růže, ovocné tóny a káva",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "linen-buds",
+          "label": "Černý rybíz, růže a santalové dřevo",
+          "productId": "linen-buds",
+          "sourceUrl": "https://www.aromea.cz/edp-linen-buds/"
+        },
+        {
+          "value": "cafe-satin",
+          "label": "Káva, růže a vanilka",
+          "productId": "cafe-satin",
+          "sourceUrl": "https://www.aromea.cz/locherber-milano-edp-cafe-satin/"
+        }
+      ]
+    },
+    {
+      "value": "resin",
+      "label": "Myrha, ambra a dřevité tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "aramaik",
+          "label": "Hořký pomeranč, myrha a agarové dřevo",
+          "productId": "aramaik",
+          "sourceUrl": "https://www.aromea.cz/locherber-milano-parfem-aramaik/"
+        },
+        {
+          "value": "dolce-medicea",
+          "label": "Růžový pepř, zázvor a bourbonská vanilka",
+          "productId": "dolce-medicea",
+          "sourceUrl": "https://www.aromea.cz/logevy-parfem-dolce-medicea/"
+        }
+      ]
+    },
+    {
+      "value": "spice",
+      "label": "Pepř, skořice a kořeněné tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "malabar-pepper",
+          "label": "Zázvor, černý pepř a cedrové dřevo",
+          "productId": "malabar-pepper",
+          "sourceUrl": "https://www.aromea.cz/locherber-milano-eau-de-parfum-malabar-pepper/"
+        },
+        {
+          "value": "ghirlandaio",
+          "label": "Skořice, karafiát a máta",
+          "productId": "ghirlandaio",
+          "sourceUrl": "https://www.aromea.cz/logevy-parfem-ghirlandaio/"
+        }
+      ]
+    }
+  ]
+}

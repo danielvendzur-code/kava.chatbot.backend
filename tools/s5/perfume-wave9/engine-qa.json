@@ -1,0 +1,111 @@
+{
+  "commit": "6ec622ab51079ed0a261b1ef58199733f4feb7f0",
+  "scope": "Reserved isolated company packages; unchanged c9core; sourceIDmock only, not integrated/Preview",
+  "coreUnchanged": true,
+  "paidCalls": 0,
+  "companies": {
+    "aromea": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "flower",
+            "fragranceProfile": "linen-buds"
+          },
+          "id": "linen-buds",
+          "url": "https://www.aromea.cz/edp-linen-buds/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flower",
+            "fragranceProfile": "cafe-satin"
+          },
+          "id": "cafe-satin",
+          "url": "https://www.aromea.cz/locherber-milano-edp-cafe-satin/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "resin",
+            "fragranceProfile": "aramaik"
+          },
+          "id": "aramaik",
+          "url": "https://www.aromea.cz/locherber-milano-parfem-aramaik/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "resin",
+            "fragranceProfile": "dolce-medicea"
+          },
+          "id": "dolce-medicea",
+          "url": "https://www.aromea.cz/logevy-parfem-dolce-medicea/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice",
+            "fragranceProfile": "malabar-pepper"
+          },
+          "id": "malabar-pepper",
+          "url": "https://www.aromea.cz/locherber-milano-eau-de-parfum-malabar-pepper/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice",
+            "fragranceProfile": "ghirlandaio"
+          },
+          "id": "ghirlandaio",
+          "url": "https://www.aromea.cz/logevy-parfem-ghirlandaio/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "flower",
+              "resin",
+              "spice"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flower"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "linen-buds",
+              "cafe-satin"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "resin"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "aramaik",
+              "dolce-medicea"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "malabar-pepper",
+              "ghirlandaio"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    }
+  }
+}

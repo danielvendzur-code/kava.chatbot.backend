@@ -1,0 +1,10 @@
+from pathlib import Path
+from lxml import html
+import urllib.request,concurrent.futures,json,datetime,hashlib,re
+B=Path(__file__).resolve().parent/'research/kifra';B.mkdir(exist_ok=True);home=html.parse('tools/s5/perfume-wave8/research/kifra-home.html');links=home.xpath('//a[contains(@class,"name")]/@href');names={'ocean':'ocean--ocean','fresh-caps':'fresh-caps--svieze','japanese-garden':'japanese-garden--japonska','lavender':'lavender--levandula','mango':'kifra-mango','orange':'orange--pomaranc'}
+def go(it):
+ pid,hint=it;url='https://www.kifra.sk'+next(u for u in links if hint in u);r=urllib.request.urlopen(url,timeout=35);raw=r.read();(B/(pid+'.html')).write_bytes(raw);s=raw.decode();t=html.fromstring(raw);m=re.search(r"dataLayer.push\(\{'shoptet'\s*:\s*",s);pub=json.JSONDecoder().raw_decode(s[m.end():])[0]['product'];vs=[]
+ for x in t.xpath('//input[@type="radio" and @name="priceId" and @data-index]'):
+  parent=x.getparent();vs.append({'attributes':dict(x.attrib),'label':parent.text_content().strip(),'titles':parent.xpath('.//*[@title]/@title')})
+ d={'id':pid,'url':url,'checkedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sourceSha256':hashlib.sha256(raw).hexdigest(),'name':t.xpath('string(//h1)').strip(),'publicProduct':pub,'variants':vs,'offers':[{x.get('itemprop'):x.get('content') or x.get('href') for x in o.xpath('./meta|./link')} for o in t.xpath('//*[@itemtype="https://schema.org/Offer"]')],'description':t.xpath('string(//*[contains(concat(" ",normalize-space(@class)," ")," basic-description ")])').strip(),'summary':t.xpath('string(//*[contains(concat(" ",normalize-space(@class)," ")," p-short-description ")])').strip()};(B/(pid+'.json')).write_text(json.dumps(d,ensure_ascii=False,indent=2));print(pid,[(c['code'],c.get('quantity')) for c in pub['codes']],[(v['attributes']['data-index'],v['attributes']['value'],v['label'][:70]) for v in vs],d['summary'][:1100],flush=True)
+with concurrent.futures.ThreadPoolExecutor(4) as pool:list(pool.map(go,names.items()))

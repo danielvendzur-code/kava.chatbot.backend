@@ -1,0 +1,8 @@
+from pathlib import Path
+from lxml import html
+import urllib.request,concurrent.futures,json,datetime,hashlib,re
+B=Path(__file__).resolve().parent/'research/aromea';B.mkdir(exist_ok=True)
+rows=[('linen-buds','edp-linen-buds'),('ghirlandaio','logevy-parfem-ghirlandaio'),('cafe-satin','locherber-milano-edp-cafe-satin'),('dolce-medicea','logevy-parfem-dolce-medicea'),('aramaik','locherber-milano-parfem-aramaik'),('malabar-pepper','locherber-milano-eau-de-parfum-malabar-pepper'),('aramaik-10ml','locherber-milano-edp-parfemovana-voda-aramaik-10-ml'),('malabar-pepper-10ml','locherber-milano-edp-parfemovana-voda-malabar-pepper-10-ml')]
+def go(it):
+ pid,slug=it;url='https://www.aromea.cz/'+slug+'/';r=urllib.request.urlopen(url,timeout=35);raw=r.read();(B/(pid+'.html')).write_bytes(raw);t=html.fromstring(raw);offers=[{e.get('itemprop'):e.get('content') or e.get('href') for e in o.xpath('./meta|./link')} for o in t.xpath('//*[@itemtype="https://schema.org/Offer"]')];desc=t.xpath('string(//*[contains(concat(" ",normalize-space(@class)," ")," basic-description ")])').strip();d={'id':pid,'url':url,'checkedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sourceSha256':hashlib.sha256(raw).hexdigest(),'name':t.xpath('string(//h1)').strip(),'offers':offers,'description':desc,'photo':t.xpath('//a[contains(@class,"p-main-image")]/@href'),'hasVariants':re.findall(r'"hasVariants"\s*:\s*(true|false)',raw.decode())};(B/(pid+'.json')).write_text(json.dumps(d,ensure_ascii=False,indent=2));print(pid,d['name'],offers,desc[:1900],flush=True)
+with concurrent.futures.ThreadPoolExecutor(5) as pool:list(pool.map(go,rows))

@@ -1,0 +1,223 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "AROMEA",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/aromea/logo.png",
+      "header": "/assets/s5/aromea/logo.png",
+      "avatar": "/assets/s5/aromea/initial.svg"
+    },
+    "brand": {
+      "name": "AROMEA",
+      "domain": "aromea.cz",
+      "website": "https://www.aromea.cz/",
+      "lang": "cs",
+      "fullName": "AROMEA",
+      "url": "https://www.aromea.cz/",
+      "logo": "/assets/s5/aromea/logo.png",
+      "mark": "/assets/s5/aromea/initial.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Káva a vanilka",
+        "Myrha a dřevo",
+        "Skořice a máta",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#3a382f",
+        "accent": "#b7a487",
+        "soft": "#faf7f1",
+        "paper": "#fff",
+        "ink": "#343129",
+        "line": "#e9e2d7"
+      }
+    },
+    "traitCopy": {
+      "flower": [
+        "Růže, ovocné tóny a káva",
+        "",
+        "Růže, ovocné tóny a káva",
+        ""
+      ],
+      "linen-buds": [
+        "Černý rybíz, růže a santalové dřevo",
+        "",
+        "Černý rybíz, růže a santalové dřevo",
+        ""
+      ],
+      "cafe-satin": [
+        "Káva, růže a vanilka",
+        "",
+        "Káva, růže a vanilka",
+        ""
+      ],
+      "resin": [
+        "Myrha, ambra a dřevité tóny",
+        "",
+        "Myrha, ambra a dřevité tóny",
+        ""
+      ],
+      "aramaik": [
+        "Hořký pomeranč, myrha a agarové dřevo",
+        "",
+        "Hořký pomeranč, myrha a agarové dřevo",
+        ""
+      ],
+      "dolce-medicea": [
+        "Růžový pepř, zázvor a bourbonská vanilka",
+        "",
+        "Růžový pepř, zázvor a bourbonská vanilka",
+        ""
+      ],
+      "spice": [
+        "Pepř, skořice a kořeněné tóny",
+        "",
+        "Pepř, skořice a kořeněné tóny",
+        ""
+      ],
+      "malabar-pepper": [
+        "Zázvor, černý pepř a cedrové dřevo",
+        "",
+        "Zázvor, černý pepř a cedrové dřevo",
+        ""
+      ],
+      "ghirlandaio": [
+        "Skořice, karafiát a máta",
+        "",
+        "Skořice, karafiát a máta",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "flower": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "linen-buds": [
+        "/assets/s5/aromea/linen-buds.png"
+      ],
+      "cafe-satin": [
+        "/assets/s5/aromea/cafe-satin.png"
+      ],
+      "resin": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "aramaik": [
+        "/assets/s5/aromea/aramaik.png"
+      ],
+      "dolce-medicea": [
+        "/assets/s5/aromea/dolce-medicea.png"
+      ],
+      "spice": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "malabar-pepper": [
+        "/assets/s5/aromea/malabar-pepper.png"
+      ],
+      "ghirlandaio": [
+        "/assets/s5/aromea/ghirlandaio.png"
+      ]
+    },
+    "compareProductIds": [
+      "cafe-satin",
+      "ghirlandaio"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "aromea-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "linen-buds": "cafe-satin",
+        "cafe-satin": "linen-buds",
+        "aramaik": "dolce-medicea",
+        "dolce-medicea": "aramaik",
+        "malabar-pepper": "ghirlandaio",
+        "ghirlandaio": "malabar-pepper"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/aromea.js",
+  "backendBrand": "aromea",
+  "offlineRules": [
+    {
+      "chip": "Káva a vanilka",
+      "match": "kav.*vanilk",
+      "productIds": [
+        "cafe-satin"
+      ]
+    },
+    {
+      "chip": "Myrha a dřevo",
+      "match": "myrh.*drev",
+      "productIds": [
+        "aramaik"
+      ]
+    },
+    {
+      "chip": "Skořice a máta",
+      "match": "skoric.*mat",
+      "productIds": [
+        "ghirlandaio"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-wave9/candidate-packages/aromea/ui-review.css",
+    "destination": "n447/s5/brands/aromea.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/aromea.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "CURRENT_SIZE_REVIEW_BUSINESS_TRANSFER_HISTORICAL_SMALL_BAND_ONLY",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}

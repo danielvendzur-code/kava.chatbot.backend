@@ -1,0 +1,111 @@
+{
+  "id": "fresh-caps",
+  "url": "https://www.kifra.sk/parfum-na-pranie-kifra-fresh-caps--svieze-kapsule/",
+  "checkedAt": "2026-11-14T18:48:56.374272+00:00",
+  "sourceSha256": "c0ff9bfb1b596eca7fd4eb77be778c452c3aac29417c4df2a3edaea000a60201",
+  "name": "Parfum na pranie Kifra Fresh caps (Svieže kapsule)",
+  "publicProduct": {
+    "id": 263,
+    "guid": "f6f7b73c-f932-11ef-af4f-6e1a37fc60bc",
+    "hasVariants": true,
+    "codes": [
+      {
+        "code": "PFC/VEL",
+        "weight": 0.274,
+        "quantity": "> 5",
+        "stocks": [
+          {
+            "id": "ext",
+            "quantity": "> 5"
+          }
+        ]
+      },
+      {
+        "code": "PFC/MAL",
+        "weight": 0.042,
+        "quantity": "> 5",
+        "stocks": [
+          {
+            "id": "ext",
+            "quantity": "> 5"
+          }
+        ]
+      }
+    ],
+    "name": "Parfum na pranie Kifra Fresh caps (Svieže kapsule)",
+    "appendix": "",
+    "weight": "0.5",
+    "manufacturerGuid": "1F029BA6E1DA682882E96E1A37FC60BC",
+    "currentCategory": "Parfumy na pranie",
+    "currentCategoryGuid": "6fd248f8-3089-11ee-a368-ea39cf279c4a",
+    "defaultCategory": "Parfumy na pranie",
+    "defaultCategoryGuid": "6fd248f8-3089-11ee-a368-ea39cf279c4a",
+    "currency": "EUR",
+    "priceWithVatMin": 3.99,
+    "priceWithVatMax": 13.99
+  },
+  "variants": [
+    {
+      "attributes": {
+        "type": "radio",
+        "name": "priceId",
+        "value": "281",
+        "data-min": "1",
+        "data-max": "9999",
+        "data-decimals": "0",
+        "data-codeid": "281",
+        "data-customerprice": "13.99",
+        "data-big": "https://cdn.myshoptet.com/usr/www.kifra.sk/user/shop/big/263_parfum-na-pranie-kifra-fresh-caps.jpg?ff=1&x=1024&y=1024&q=85&ts=68fb29f8&sg=38cb01fe",
+        "data-detail": "https://cdn.myshoptet.com/usr/www.kifra.sk/user/shop/detail/263_parfum-na-pranie-kifra-fresh-caps.jpg?ff=1&x=423&y=423&q=85&ts=68fb29f8&sg=89595c3b",
+        "data-detail_small": "https://cdn.myshoptet.com/usr/www.kifra.sk/user/shop/detail_small/263_parfum-na-pranie-kifra-fresh-caps.jpg?ff=1&x=290&y=218&q=85&ts=68fb29f8&sg=2f1e9886",
+        "data-index": "1",
+        "data-quantity-discount-disabled": "true",
+        "aria-labelledby": "variant-name-281"
+      },
+      "label": "Veľkosť parfumu: Najvýhodnejšie balenie - na 80 praní",
+      "titles": [
+        "Veľkosť parfumu: Najvýhodnejšie balenie - na 80 praní"
+      ]
+    },
+    {
+      "attributes": {
+        "type": "radio",
+        "name": "priceId",
+        "value": "284",
+        "data-min": "1",
+        "data-max": "9999",
+        "data-decimals": "0",
+        "data-codeid": "284",
+        "data-customerprice": "3.99",
+        "data-big": "https://cdn.myshoptet.com/usr/www.kifra.sk/user/shop/big/263-1_parfum-na-pranie-kifra-fresh-caps--svieze-kapsule-velkost-parfumu-mini-na-10-prani-.jpg?ff=1&x=1024&y=1024&q=85&ts=68fb29f8&sg=38cb01fe",
+        "data-detail": "https://cdn.myshoptet.com/usr/www.kifra.sk/user/shop/detail/263-1_parfum-na-pranie-kifra-fresh-caps--svieze-kapsule-velkost-parfumu-mini-na-10-prani-.jpg?ff=1&x=423&y=423&q=85&ts=68fb29f8&sg=89595c3b",
+        "data-detail_small": "https://cdn.myshoptet.com/usr/www.kifra.sk/user/shop/detail_small/263-1_parfum-na-pranie-kifra-fresh-caps--svieze-kapsule-velkost-parfumu-mini-na-10-prani-.jpg?ff=1&x=290&y=218&q=85&ts=68fb29f8&sg=2f1e9886",
+        "data-index": "2",
+        "data-quantity-discount-disabled": "true",
+        "aria-labelledby": "variant-name-284"
+      },
+      "label": "Veľkosť parfumu: Malý - na 10 praní",
+      "titles": [
+        "Veľkosť parfumu: Malý - na 10 praní"
+      ]
+    }
+  ],
+  "offers": [
+    {
+      "sku": "PFC/VEL",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-fresh-caps--svieze-kapsule/",
+      "price": "13.99",
+      "priceCurrency": "EUR",
+      "itemCondition": "https://schema.org/NewCondition"
+    },
+    {
+      "sku": "PFC/MAL",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-fresh-caps--svieze-kapsule/",
+      "price": "3.99",
+      "priceCurrency": "EUR",
+      "itemCondition": "https://schema.org/NewCondition"
+    }
+  ],
+  "description": "Podrobný popis\n                                    \n\n\nPrečo si vybrať Fresh Caps\n\nFresh Caps prináša inovatívnu kapsulovú technológiu s postupným uvoľňovaním, ktorá aktivuje vôňu dotykom a pohybom a udrží vaše oblečenie svieže až 6 mesiacov, ak sú odevy uložené v skrini. Sezónne oblečenie ostane dokonale svieže, pripravené na nosenie bez potreby ďalšej parfumácie.\nStačí pár kvapiek a výsledok pocítite okamžite – vďaka koncentrovanému zloženiu je používanie ekonomické aj efektívne.\nŠvajčiarska výroba je zárukou špičkovej kvality, potvrdenej prísnymi medzinárodnými normami IFRA.\nDávkovanie je úplne jednoduché – vrchnák fľaše je navrhnutý ako praktická dávkovacia pomôcka.\n\n\n\n\n\n\nVôňa Fresh Caps vás očarí podmanivými tónmi exotickej orchidey, romantických ruží a sviežeho jedľového lesa.\nOrchidea – exotický kvet s jemnou a zmyselnou arómou, ktorá dodáva vôni eleganciu.\nRuže – klasická kvetinová vôňa plná romantiky a hebkej ženskosti.\nJedľový les – svieži, živý tón ihličia, ktorý prináša do vône prírodnú hĺbku a čistotu.\n\n\n\n\n\n\n\n\nDávkovanie\nNa jednu praciu dávku použite 2,5 ml parfumu (približne polovica čajovej lyžičky). Rozrieďte v 50 ml vody a nalejte do priehradky na aviváž.\nAk bielizeň plánujete sušiť v sušičke, odporúčame mierne zvýšiť dávkovanie pre intenzívnejší voňavý efekt.\nObjem balení:\n\nVeľké - na 80 praní: 200 ml\nMalé - na 10 praní: 25 ml\nVzorka - na 4 prania: 10 ml\n\n\n\n\nČasté otázky\nAko sa parfum na pranie používa?\nNa jedno pranie stačí 2,5 ml (asi pol čajovej lyžičky). Rozrieďte ho v 50 ml vody a nalejte do priehradky na aviváž. Vrchnák fľaše slúži ako odmerka. Ako na to, ukazuje krátke video o dávkovaní.\n\nNahradí aviváž?\nNie celkom. Parfum na pranie neobsahuje zmäkčovaciu zložku, vďaka čomu je ekologickejší, ale bielizni dodá intenzívnejšiu a trvácnejšiu vôňu než aviváž. Ak chcete mať bielizeň aj zmäkčenú, odporúčame parfum kombinovať s avivážou.\n\nNa koľko praní vystačí?\nFľaša 200 ml vystačí na 80 praní, teda vychádza asi na 17 centov za pranie. Mini 25 ml je na 10 praní a vzorka 10 ml na 4 prania.\n\nVydrží vôňa aj po sušičke?\nÁno. Ak bielizeň sušíte v sušičke, mierne zvýšte dávku a vôňa vydrží aj po sušení.\n\nAko dlho je vôňa na bielizni cítiť?\nVôňa vydrží na bielizni niekoľko dní, záleží od materiálu, teploty prania a spôsobu sušenia. Fresh Caps obsahuje špeciálne mikrokapsuly, ktoré uvoľňujú vôňu pri pohybe a dotyku, takže oblečenie uložené v skrini vonia až 6 mesiacov.\n\nJe vhodný pre citlivú pokožku?\nParfum obsahuje vonné látky, ktoré môžu u citlivých ľudí vyvolať alergickú reakciu (podrobnosti nájdete nižšie v Dôležitých informáciách o produkte). Ak máte citlivú pokožku, vyskúšajte najprv mini balenie alebo vzorku.\n\nNeviem sa rozhodnúť, ktorú vôňu vybrať.\nOdpovedzte na pár krátkych otázok v našom kvíze vôní a odporučíme vám vône, ktoré vám budú sedieť. Potom môžete vyskúšať mini 25 ml za 3,99 € alebo sadu 5 najpredávanejších vôní mini a keď nájdete svoju, prejsť na veľké balenie.\n\nMôžem parfum naliať priamo na bielizeň?\nNie. Parfum vždy rozrieďte vo vode a nalejte do priehradky na aviváž. Ak kvapne na iný povrch, hneď ho zotrite vlhkou handričkou.\n\nKedy mi balík príde a koľko stojí doprava?\nPri objednávke do 11:30 máte balík u seba už nasledujúci pracovný deň. Doprava stojí od 2,99 €, pri objednávke nad 39 € je zdarma (napríklad pri 3 fľašiach 200 ml alebo sade).\n\n\n\nDôležité informácie o produkte\nTieto informácie obsahujú zákonom stanovené upozornenia pre tento typ produktu:\nKifra Fresh Caps Kifra Fresh Caps je parfum na pranie, ktorý dávkujete do priehradky na aviváž. Neobsahuje zmäkčovaciu zložku, preto ak chcete bielizeň aj zmäkčiť, kombinujte ho s avivážou. Je vyrobený na báze vonných olejov, vďaka čomu je jeho vôňa intenzívna a dlhotrvajúca. Pri sušení v sušičke stačí mierne zvýšiť dávku. Na rozdiel od bežných aviváží stačí malé množstvo na dosiahnutie silnej vône. Po vypraní bude sviežo voňať nielen bielizeň, ale aj váš domov. Dávkovanie: Parfum nalejte do priehradky na aviváž v množstve 2,5 ml  na jednu dávku prania. Pozor! Produkt je určený výhradne na použitie v práčke. Ak sa dostane na iný povrch, okamžite ho zotrite vlhkou handričkou, prípadne opláchnite vodou.  Zloženie: Obsahuje (5-<10%): 4-tert.butylcyclohexyl acetát, 2-hexyl-3-fenyl-2-propenal (trans/cis), 2,6-dimetyl-7-okten-2-ol, hexyl 2-hydroxybenzoát; (2,5 – <5%): 2-(4-tercbutylbenzyl) propionaldehyd, 2,2,2-trichloro-1-fenyletyl acetát , 3a,4,5,6,7,7a-hexahydro-4,7-metano-1H-indén-5(6)-yl propanoát , 2-ter.butylcyclohexyl acetát, benzylacetát; (1-<2,5%): 1-(2,6,6-trimethlcyklohex-2-én-1-yl)pent-1-én-3-ón (metyl-jonón (zmes izomérov)), 1-(1,2,3,4,5,6,7,8-oktahydro-2,3,8,8-tetrametyl-2-naftyl)etán-1-ón (OTNE), 4,6,6,7,8,8-hexametyl-1,3,4,6,7,8-hexahydroindeno [5,6-c]pyrán galaxolid (HHCB), 4-metoxybenzaldehyd; (1 - <5%): 2 H-1-benzopyran-2-ón, 2-fenyletanol; (0,25 – <1%): (R)-p-menta-1,8-dién, 2-methylundekanál, (0,1-<1%): metyl 3-fenyl-2-propenoát, izoeugenol, 2,2-dimetyl-3-(4(2)-etylfenyl)propanál, allyl 3-cyclohexylpropionát, 2-methoxy-4-propylfenol, 10-undecenal, dodekanal. Nebezpečenstvo! H315 Dráždi kožu. H317 Môže vyvolať alergickú kožnú reakciu. H319 Spôsobuje vážne podráždenie očí. H360Fd Môže spôsobiť poškodenie plodnosti. Podozrenie, že spôsobuje poškodenie plodnosti alebo nenarodeného dieťaťa. H411 Toxický pre vodné organizmy, s dlhodobými účinkami. Uchovávajte mimo dosahu detí a pred použitím si prečítajte etiketu. Pri podráždení pokožky alebo výskyte vyrážok vyhľadajte lekársku pomoc. Prázdny obal zlikvidujte podľa predpisov.",
+  "summary": "Fresh Caps – svieža vôňa s mikrokapsulami pre oblečenie v skrini\nOblečenie, ktoré dlhšie leží v skrini, často stratí vôňu prania. Kifra Fresh Caps obsahuje mikrokapsuly, ktoré uvoľňujú vôňu pri pohybe a dotyku, takže oblečenie uložené v skrini vonia až 6 mesiacov.\n\norchidea, ruže a svieži jedľový les\n2,5 ml na pranie, 200 ml vystačí na 80 praní (asi 17 centov za pranie)\nvyrobený vo Švajčiarsku, zloženie v súlade so štandardmi IFRA\n\n„Dlhá výdrž, krásne vonia, odporúčam.“ (z hodnotení zákazníkov)\nNie ste si istí vôňou? Vyskúšajte najprv mini 25 ml za 3,99 €."
+}
