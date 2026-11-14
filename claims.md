@@ -246,3 +246,8 @@ ELOBE / elobe.cz / www.elobe.cz / possibleelobe.sk auditednotassertedactive; slu
 Own actual TLS-on WPEWebKit https://elobe.cz/ and https://elobe.cz/domu/9649-11967-ellis-brooklyn-eau-de-parfum-plum-tonic.html#/1-_-50_ml rendered/screenshotsvisuallyreviewed. Cookie settings opened, analytics+marketing disabled via actual visible toggles, settingssaved. Opened Smartsupp ordinary Napište nám / Rádi vám odpovíme později, blank message field. Nothingentered/sent/cart/captcha. OtherAI/automation/sessionmodes unknown; nonGET/cartguard may limitbackground. Exact product50ml3690CZKS DPH/photo. No absolute chatbot-free claim.
 
 Freshall100fetchedremoteheads3127textblobs/missing0/controls41, no ELOBE/domain/operator/ICO hits; freshclaims no competingELOBE. Available50projectdomains74teamaliases/nextnull/no match, inaccessible scopes not globallycleared. Existingforeignrows preserved. ESCENT notreserved: actual opened Voiceflow eScent AI asistent / Tvůj parfémový AI guru, HOLD_EXISTING_PRODUCT_AI; no messages.
+
+
+## PERFUME_WORKER ELOBE source completion 2026-11-14T18:15:42.038Z
+
+ELOBE source/local package COMPLETE; SOURCE_ONLY lease released. Checkpoint82d344e9ca98d83dac8ba7d501a8f9d4d7ccb9cf on codex/s5-perfume-wave7-20261113. Exact tools/s5/perfume-wave7/ELOBE-HANDOFF.md, six distinct50ml formulas, final18/18 local320/390/1280viewsPASS/all6reachable/four nonempty states. Sources/assets/merchant+local proofZIPs preserved underexcludedtools. NOT integrated/livePreview; MAIN owns common/backend/integration/liveQA. Batch10local packages, not10ready. Foreign claims unchanged.
