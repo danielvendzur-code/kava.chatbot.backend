@@ -592,5 +592,635 @@
     "file": "aromea-reject-widget/after.png",
     "bytes": 1249985,
     "sha256": "70379e86037dc2ec8e8b6423b6bdba4b0a96f9439656da672c3aa9a34a72c90a"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "all-results-1280.jpg",
+    "bytes": 99638,
+    "sha256": "9242e6dd33e1de4eb33d33772a6de136e3a1bd50adce24b5935b10d4e3ba35d9"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "all-results-320.jpg",
+    "bytes": 164876,
+    "sha256": "643e32a1d96c2f02226d3495f3cf685b6566880539594a27dca126714ad4fd12"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "all-results-390.jpg",
+    "bytes": 175556,
+    "sha256": "463fbdbf9e39550141111aef8ad899d98dd094a2077ad23d954214550c4395dc"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "independent-ui.json",
+    "bytes": 27094,
+    "sha256": "e10c4409e6643739c0e09d223d9c1d247cdd24946cfbca6d7c95ff3cc6e93cc9"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-chat-0-1280.png",
+    "bytes": 119626,
+    "sha256": "197e3e72ffb40dc46706cca24747cc0316050f2dd9a520197bee415a210f38c1"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-chat-0-320.png",
+    "bytes": 53645,
+    "sha256": "e87fed5aa8df7862321dd4b519d13257b2aa0b72ebb519a5c3331c4a0123c3b4"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-chat-0-390.png",
+    "bytes": 54483,
+    "sha256": "f5edb749cb21022b83f2073160d8889192bfb3ee03a488f10821ba129dccc0d0"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-chat-1-1280.png",
+    "bytes": 118603,
+    "sha256": "cf77f851bf16869e44ee60bae2cfc5cdf9b2ea60f9a6bc4ab46a6c37c54a017b"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-chat-1-320.png",
+    "bytes": 52541,
+    "sha256": "16b0d22a023962262dc8421b8171f85d085a78d3ae6c971a2144a24067f75d49"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-chat-1-390.png",
+    "bytes": 53164,
+    "sha256": "05431f109ba09323d2de1d8105e012e04fca5d3a5da7754d3b602c8c021f608a"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-chat-2-1280.png",
+    "bytes": 118743,
+    "sha256": "dce5852b32044317e05a07211ce594367d5223d148bd369b92200cc9ea8394eb"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-chat-2-320.png",
+    "bytes": 52326,
+    "sha256": "33799a952394f9762fde380875e94161bb551bbf92b730dbd35146b0f2b9ca2a"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-chat-2-390.png",
+    "bytes": 53449,
+    "sha256": "586520f56abb3182b010217a285ddf707f227504afe8056cdb7a20d936930b59"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-compare-1280.png",
+    "bytes": 137458,
+    "sha256": "cb6470aab038e04951966eaf48c0ca03152e31b3688dd61302f7cac27bb878f8"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-compare-320.png",
+    "bytes": 76891,
+    "sha256": "338bd66c8f9c5b2ac9714aff7da8de7a03539d02cd9fb06634a480e68f1bbbad"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-compare-390.png",
+    "bytes": 86232,
+    "sha256": "5b8ccdc2339aa19b1f9dc67032f6e84c0ed0a5d045f4f4d81ad92a189a331f92"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-fresh-caps-1280.png",
+    "bytes": 9328,
+    "sha256": "b3b870c849d2a6ca73872498cd24e95274bd11856304d7fb593df1d7c48c5cbe"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-fresh-caps-320.png",
+    "bytes": 8474,
+    "sha256": "1d9b7c9241bdb4d8558acde0c3418dc4ba3b4a97a6e707e9329a56064bbccc46"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-fresh-caps-390.png",
+    "bytes": 8848,
+    "sha256": "6707e926c5c8fa3e95ea25e3bd1df3409eb7b502bf9c29331c69a72d204b0dff"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-japanese-garden-1280.png",
+    "bytes": 8888,
+    "sha256": "5b65f772c4ef8dd4c3010b89c193170211ebd577f6684186324c576c5dfbe8c3"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-japanese-garden-320.png",
+    "bytes": 8045,
+    "sha256": "b68fbb5f115325d86f7bb41baeffff3fbf7b300d67e0c01c944736956f46643a"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-japanese-garden-390.png",
+    "bytes": 8464,
+    "sha256": "227a3acf7ef4017ac10695e1660e98dbcddcc40a10bfd452c7306f23e5ab1494"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-lavender-1280.png",
+    "bytes": 9353,
+    "sha256": "607d15123755add36bad39b749768fa758f24e2e6cb6e87e87505c47d44e5933"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-lavender-320.png",
+    "bytes": 8544,
+    "sha256": "9042c5b10897d8d90b6ef3e0feff52bd2b97985b5b1e51f48e3aa126f7567140"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-lavender-390.png",
+    "bytes": 8961,
+    "sha256": "2650af5a58cc77313f90c139d716a1a0eb8e23c0194a7a9e755071314734d642"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-mango-1280.png",
+    "bytes": 8932,
+    "sha256": "8b50ca84fb03049567e65108fb684c289a612bcfdf8e318cd5d2b392b2100d67"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-mango-320.png",
+    "bytes": 8084,
+    "sha256": "4481b3b3aaa8bf5a274fc990d2ba57c61c49907e804c6051fff1a333ed88f041"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-mango-390.png",
+    "bytes": 8518,
+    "sha256": "dc27f61b05d069e3eb934f7dbd67d775e574f9c66ef46a86400426c41baeb09c"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-ocean-1280.png",
+    "bytes": 9247,
+    "sha256": "e21d4bef1c6c0e932e2ea5ca3be3841c7abd8ac4b9251f82698f2c4d14ac730c"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-ocean-320.png",
+    "bytes": 8408,
+    "sha256": "6c43c151a416d87eda4353ecc5a11d00a35e011cf0157b14016536b10319f09a"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-ocean-390.png",
+    "bytes": 8832,
+    "sha256": "ab4c5efa603f64c1162ea6a7e774a411b3e386b9bd64dee9a50626f811826d56"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-orange-1280.png",
+    "bytes": 9567,
+    "sha256": "2b197e63762f6094501fe64ab8c346d2be7e49a5935ac013cdcefd8e1a018c25"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-orange-320.png",
+    "bytes": 8705,
+    "sha256": "c3c8a4f2c904341d8cd23da03078fb68879c9ca27ca075537c9f86cd9a8e4af9"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-note-profile-orange-390.png",
+    "bytes": 9160,
+    "sha256": "76beff678a2c5c98fc9fc03717443ba442a4eec9e454cf6c8eed84ed32b45a6c"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-fresh-caps-1280.png",
+    "bytes": 139569,
+    "sha256": "0725de2be7a22b0e33be24ca6f71428dad14747e6a360c29f31db9120e2b1e18"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-fresh-caps-320.png",
+    "bytes": 75258,
+    "sha256": "dc6a316ad1a41a2f6eaf529e1b870e997059cb9a2910581cc64a6e0b12b3db29"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-fresh-caps-390.png",
+    "bytes": 80008,
+    "sha256": "fd86bd575ff07a791354d14dc4cba082d0166a5bc55cbbb2954d2b388be36b2e"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-japanese-garden-1280.png",
+    "bytes": 136940,
+    "sha256": "d73cdeeb220a2c5a5fa51e4532a5079d820f263724ab3ad1de88739c8dc44188"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-japanese-garden-320.png",
+    "bytes": 75951,
+    "sha256": "92ff94361ea789d791f3361dc30f7b0034da53ede8bbf9a21d609daae4e27a20"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-japanese-garden-390.png",
+    "bytes": 80415,
+    "sha256": "550c988701c9bb093571f8e713c405a72cf3c2e6aebbe248a31675e7b9c1e1c0"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-lavender-1280.png",
+    "bytes": 137374,
+    "sha256": "43a6e65466c2f0a33b50dbaa82648b38a58d28ca8989adf3eb67e1d4ab768ed1"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-lavender-320.png",
+    "bytes": 76756,
+    "sha256": "71270e19ad8d26571a8a372eb9f5dfa32ee2e7f490f596e4dba888eb96de6206"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-lavender-390.png",
+    "bytes": 78515,
+    "sha256": "c1629e72800920b0ff91e741e451d15f72fcdf8f422377c42fae340aafff023b"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-mango-1280.png",
+    "bytes": 134875,
+    "sha256": "d57a51ba8e5a12ce6713fc4eedda22318f89b92d77ce41dbf423ba986abf3447"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-mango-320.png",
+    "bytes": 75318,
+    "sha256": "17ae25b1d81cdac5432f46000097bf6df6a4cd4e5be38880048240fc2a61e88e"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-mango-390.png",
+    "bytes": 80385,
+    "sha256": "2c897c0c5c5ba66fe242e70eb1fe54360c813cb5e20167ffb014b6e2ff3eecc2"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-ocean-1280.png",
+    "bytes": 139361,
+    "sha256": "0a1320bfa90507e8d961b3c11e368a8071f45c477b61df4314a8497ae47f06ec"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-ocean-320.png",
+    "bytes": 75373,
+    "sha256": "bbf75530387cccfd5e1ec1736bbef89fa1337e4b820893329c435b5847d495a4"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-ocean-390.png",
+    "bytes": 78302,
+    "sha256": "a6c2112b418ce2993681a5f2cea35430ac4a0777fabd71b49b839c2ad2cf9c2b"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-orange-1280.png",
+    "bytes": 134446,
+    "sha256": "82f76943562ee9e9afa4cfc75047860268a4133e4fe43c7b2ca3c42c434479ff"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-orange-320.png",
+    "bytes": 76547,
+    "sha256": "6f2216982b6e52aeac6c5a5ffccbbc3fb5b92b8908a297ba4b600bbb60da73d6"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-pair-orange-390.png",
+    "bytes": 80676,
+    "sha256": "eba2a0fc08960c043c9e17941ee737bc76c609aaa7e8f39491b8e0b8ca564a0d"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-question-1-1280.png",
+    "bytes": 383036,
+    "sha256": "ddde8861de374123eebaf43ec1ec8716a5783db2cb66d9a40f44c0ae290b7ddb"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-question-1-320.png",
+    "bytes": 233162,
+    "sha256": "d42ea6bfb06d1e1a02b6eae312dcaafaa39ffc33dc17399a6aab56db7b679f69"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-question-1-390.png",
+    "bytes": 286538,
+    "sha256": "60d903f4772826c46a8f9d2a39915b98c2b1eee341c0f2da3d92fb6b545644a6"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-question-2-1280.png",
+    "bytes": 170164,
+    "sha256": "b198ecf7daf4dc731aa55924158a3672d775087a75ca8fd86cf078327ced483e"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-question-2-320.png",
+    "bytes": 110279,
+    "sha256": "dcbbb00978260f5eba3d93396af90ee4acf92c0a366b9146a5fd02e108f22677"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-question-2-390.png",
+    "bytes": 113002,
+    "sha256": "8622a24d50c20c94b00dfeebcd4f624ff380a17f6fc87d50693a7d3ee9bf878c"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-question-3-1280.png",
+    "bytes": 180562,
+    "sha256": "ba2cf37dd5cde8ef3b30e512e4b59aa09c25ed9b3c9daab18a102c0079d3d0a1"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-question-3-320.png",
+    "bytes": 117092,
+    "sha256": "a8a70b9ec6cb71beca76cf24b9b618a8f2df50cddfa4e50857b921252efa53cb"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-question-3-390.png",
+    "bytes": 120079,
+    "sha256": "416a0c21153d566f9c97aab12ca40692537d3ed94d3046ab2c7a073115c95b23"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-question-4-1280.png",
+    "bytes": 172294,
+    "sha256": "da4048c65e4a75b4f55822f2b0ba28d3ae9720b12dec56da8ee50d97ba325b0f"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-question-4-320.png",
+    "bytes": 111565,
+    "sha256": "d50df05d0ef762e77b3094bc1bfcc392a164ba0be30c7cec1ab9c4105d0f4ec6"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-question-4-390.png",
+    "bytes": 114073,
+    "sha256": "a2501555b336c9e9c8caea4cbeb209ccaddcfcff8c45248baf7f9a0ccd8be530"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-fresh-caps-1280.png",
+    "bytes": 143169,
+    "sha256": "872dceb9e68d50cf1062fc5bb66056ebc58f16ba0f645a798e1554d3548d0653"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-fresh-caps-320.png",
+    "bytes": 81625,
+    "sha256": "55ecc90b2eae023f6b6683cd8cd9ae66aba6ad399ae436fa0432e321c387615b"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-fresh-caps-390.png",
+    "bytes": 86540,
+    "sha256": "b571fd9fef4158720ca7e627bc08fb69557dcfbbc0e53a088c5800eb09a78591"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-japanese-garden-1280.png",
+    "bytes": 144804,
+    "sha256": "353cb34a9352c76f7475f560ad7a40f01666b5ec03000a908ee10d334096305a"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-japanese-garden-320.png",
+    "bytes": 82284,
+    "sha256": "597e8de8e2475d7421da89d1df487a1d519715a07525ca36ea9f8fef901d959d"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-japanese-garden-390.png",
+    "bytes": 85169,
+    "sha256": "f2ec1d27e098dbd54287886251850f69bedbfa80ee959f76015264d02a0a2ebc"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-lavender-1280.png",
+    "bytes": 141246,
+    "sha256": "9b7d0ca01fded565289972235683d3ad7263a69bdaab56bf78390c53f19c4f75"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-lavender-320.png",
+    "bytes": 79316,
+    "sha256": "3c7d3706ea75e023d9d0defabd930bd7e117164158fec6384eef5b074c52b817"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-lavender-390.png",
+    "bytes": 84272,
+    "sha256": "4d79748ec9edd772997334f7bcf4703d7486885edf0507d9c41ff191060df5f6"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-mango-1280.png",
+    "bytes": 140915,
+    "sha256": "6c63623896f24c4ce6e041b5a6a0251698899b843cb73f9d96cd486145cf4734"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-mango-320.png",
+    "bytes": 81526,
+    "sha256": "d73f6b208bbeb19ed2d3af4bae5908a04d65df6ecca1471f28c537bbb2c99166"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-mango-390.png",
+    "bytes": 83994,
+    "sha256": "81779b9cff1221ff02e8a9f0feb9047ad145bd5ebb9ecff467c3f855a7e70afb"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-ocean-1280.png",
+    "bytes": 142096,
+    "sha256": "4e5f4917dbf216e3d05f250882786dcb99815a5fe39443c9e6391283b0c86b91"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-ocean-320.png",
+    "bytes": 79691,
+    "sha256": "01a306a86946474b9d6e3294e05af51c8eeaeb7898cb13169cf01505adf7cb89"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-ocean-390.png",
+    "bytes": 84872,
+    "sha256": "a0f9f6ce20ce82afd762cff679913b61bcf67298bf21bdf9437e81654a943ce5"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-orange-1280.png",
+    "bytes": 142801,
+    "sha256": "789f42bb515d394c0f5361d52b3bc79a783f84ce04584a9e36cd205562308580"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-orange-320.png",
+    "bytes": 80523,
+    "sha256": "68fa1db9644d202b6dd19e271b746e42d478708994212f8e2540f7a0e36626c6"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-result-orange-390.png",
+    "bytes": 85650,
+    "sha256": "5d0db45c531ecd0d96ec0d441e34b155ec504d9ab3fc570a873880eca97c369c"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-fresh-caps-1280.png",
+    "bytes": 142654,
+    "sha256": "fac6a282950e608673bda58ca2c5243041876dc91d66258d1c9168b50b252be0"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-fresh-caps-320.png",
+    "bytes": 81949,
+    "sha256": "43767093e5d348e207c8b340d0a157f8ecf83999d8b10737fb83f8cdf809bec1"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-fresh-caps-390.png",
+    "bytes": 86797,
+    "sha256": "ba16e459eaac4af62770bf753dde3249a4f12a647d654b8dd9f2724afc8dde36"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-japanese-garden-1280.png",
+    "bytes": 144214,
+    "sha256": "6106e3d4a91d572fb5104c37d8cb7dda3d8f7d199bd0ddb1464dc60474fd11d8"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-japanese-garden-320.png",
+    "bytes": 82757,
+    "sha256": "6adce24ebbb3e6afe37c0647848f19e019d9a061e82037644bb332f58b6a86b1"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-japanese-garden-390.png",
+    "bytes": 85476,
+    "sha256": "c1f7eb7da5bfec230200b17adafae8e81d0cf4457822c065a020b0f7c1ed4462"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-lavender-1280.png",
+    "bytes": 143105,
+    "sha256": "13430213f87031fc5e4035e1e53e7d975df3fd36560b53dca842b6ff8fbe6150"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-lavender-320.png",
+    "bytes": 79623,
+    "sha256": "5c19c3322915143537191c5b087cd7569f87a09899b59f2488dff288a69a705b"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-lavender-390.png",
+    "bytes": 84510,
+    "sha256": "1a821ba2226b7ffb75af81fb811a301a0fe15d8bca5639150b95375afdf50a20"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-mango-1280.png",
+    "bytes": 142700,
+    "sha256": "f9268c3114d2f7b80eb5fba988dd2c99b5dcf58936e1bb75d6ecb56f89683d62"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-mango-320.png",
+    "bytes": 81778,
+    "sha256": "573ebb8bef5ed56c097e71db97ef0bf506696ed0e221e726b3ca40168534bd7e"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-mango-390.png",
+    "bytes": 84258,
+    "sha256": "f0f84ded862b4bb2e8f0410f90974ae79f53d6ad1693aea8104575a3f1e522ad"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-ocean-1280.png",
+    "bytes": 144012,
+    "sha256": "bb27fa514cb59292c41a822ae964138f6f0a46f4dc7e02a41204a1e0a7eea4fc"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-ocean-320.png",
+    "bytes": 80000,
+    "sha256": "3af195e7bd8f87733e86b83e67dbe9175971b31eb2599054801f9f9b4489604c"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-ocean-390.png",
+    "bytes": 85123,
+    "sha256": "ba174f4af6d245a4e9c4490d46fab899740e760d15d9f63ee79bc275e4126e9c"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-orange-1280.png",
+    "bytes": 144705,
+    "sha256": "ca36055093394a6268b2a262a2dbad2e52120c43f8ee3a872dc41a03110b6df4"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-orange-320.png",
+    "bytes": 80827,
+    "sha256": "31ec0d8ce2288c467d5d86ad316f49936bb293cc6a8a3900b453c324af0bd153"
+  },
+  {
+    "archive": "kifra/local-qa.zip",
+    "file": "kifra-selected-orange-390.png",
+    "bytes": 85884,
+    "sha256": "4d09998362bda447dd59b2e57b638b3c6fdd7adf44b0776be1ad9b1b9937c418"
+  },
+  {
+    "archive": "kifra/merchant-qa.zip",
+    "file": "after.png",
+    "bytes": 517818,
+    "sha256": "3668c0f18625af49bfb385e500ea999b703b305fe15761f1fa4e6c0e764ba1d1"
+  },
+  {
+    "archive": "kifra/merchant-qa.zip",
+    "file": "page.html",
+    "bytes": 220967,
+    "sha256": "2361fd23e91a60b532e507beaa118c6d1656cb6ba9a2a5911cb4c85eb0ffd59e"
+  },
+  {
+    "archive": "kifra/merchant-qa.zip",
+    "file": "product-rejected.png",
+    "bytes": 259656,
+    "sha256": "511c02a822b271b4e4d823dd54b6add1aa15eccb8f8b0a54bf7b7b64cd058d03"
+  },
+  {
+    "archive": "kifra/merchant-qa.zip",
+    "file": "report.json",
+    "bytes": 19948,
+    "sha256": "98a51a9fb03babcb30438bf94495330f26f193a8ea0a22bad0ba66574dc34b10"
+  },
+  {
+    "archive": "kifra/merchant-qa.zip",
+    "file": "settings.png",
+    "bytes": 343360,
+    "sha256": "fa56973f04434ea687f5368da724c9d08826f4358c52ed3a8045aeafe77df2a8"
   }
 ]

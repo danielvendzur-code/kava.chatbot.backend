@@ -1,19 +1,17 @@
 {
-  "at": "2026-11-14T18:50:37.031295+00:00",
+  "at": "2026-11-14T20:21:32.619444+00:00",
   "owner": "PERFUME_WORKER",
   "complete": [
-    "aromea"
-  ],
-  "inProgress": [
+    "aromea",
     "kifra"
   ],
   "state": "LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW",
-  "primaryRecords": 6,
-  "optionalSameFormula10mlVariants": 2,
-  "finalLocalViews": 18,
+  "primaryRecords": 12,
+  "finalLocalViews": 36,
   "paidCalls": 0,
-  "newBatchLocalComplete": 13,
-  "newBatchPrimaryRecords": 72,
-  "newBatchFinalLocalViews": 216,
-  "liveReady": "UNKNOWN_MAIN_OWNS"
+  "newBatchLocalComplete": 14,
+  "newBatchPrimaryRecords": 78,
+  "newBatchFinalLocalViews": 234,
+  "liveReady": "UNKNOWN_MAIN_OWNS",
+  "kifraBackendScopeReviewRequired": true
 }

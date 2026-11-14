@@ -106,6 +106,109 @@
       ],
       "formulaCount": 6,
       "status": "PASS"
+    },
+    "kifra": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "ocean"
+          },
+          "id": "ocean",
+          "url": "https://www.kifra.sk/parfum-na-pranie-kifra-ocean--ocean/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "fresh-caps"
+          },
+          "id": "fresh-caps",
+          "url": "https://www.kifra.sk/parfum-na-pranie-kifra-fresh-caps--svieze-kapsule/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flower",
+            "fragranceProfile": "japanese-garden"
+          },
+          "id": "japanese-garden",
+          "url": "https://www.kifra.sk/parfum-na-pranie-kifra-japanese-garden--japonska-zahrada/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flower",
+            "fragranceProfile": "lavender"
+          },
+          "id": "lavender",
+          "url": "https://www.kifra.sk/parfum-na-pranie-kifra-lavender--levandula/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "mango"
+          },
+          "id": "mango",
+          "url": "https://www.kifra.sk/parfum-na-pranie-kifra-mango/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "orange"
+          },
+          "id": "orange",
+          "url": "https://www.kifra.sk/parfum-na-pranie-kifra-orange--pomaranc/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "flower",
+              "fruit"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "ocean",
+              "fresh-caps"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flower"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "japanese-garden",
+              "lavender"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "mango",
+              "orange"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
     }
   }
 }

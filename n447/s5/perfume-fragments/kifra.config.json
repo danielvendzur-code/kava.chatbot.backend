@@ -1,0 +1,233 @@
+{
+  "slug": "kifra",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "6890984e4bd44ed60066fd4bda8e9bbd3c67fa62",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/kifra.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Oceánska sviežosť",
+    "Mango a kvety",
+    "Levanduľa a mäta",
+    "Porovnať dve vône"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Oceánska sviežosť",
+      "match": "oceansk.*sviez",
+      "productIds": [
+        "ocean"
+      ]
+    },
+    {
+      "chip": "Mango a kvety",
+      "match": "mango.*kvet",
+      "productIds": [
+        "mango"
+      ]
+    },
+    {
+      "chip": "Levanduľa a mäta",
+      "match": "levandul.*mat",
+      "productIds": [
+        "lavender"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "ocean",
+    "mango"
+  ],
+  "addon": {
+    "enabled": true,
+    "kind": "Optionalunchecked25mlsameformula",
+    "price": 3.99,
+    "currency": "EUR",
+    "basePlusAddon": 17.98,
+    "merchantVolumeSelectionRequired": true
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "KIFRA",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/kifra/logo.svg",
+      "header": "/assets/s5/kifra/logo.svg",
+      "avatar": "/assets/s5/kifra/initial.svg"
+    },
+    "brand": {
+      "name": "KIFRA",
+      "domain": "kifra.sk",
+      "website": "https://www.kifra.sk/",
+      "lang": "sk",
+      "fullName": "KIFRA",
+      "url": "https://www.kifra.sk/",
+      "logo": "/assets/s5/kifra/logo.svg",
+      "mark": "/assets/s5/kifra/initial.svg",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône do prania, ich balenia a ceny.",
+      "quickChips": [
+        "Oceánska sviežosť",
+        "Mango a kvety",
+        "Levanduľa a mäta",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#655080",
+        "accent": "#bfa8d8",
+        "soft": "#f7f3fb",
+        "paper": "#fff",
+        "ink": "#3f3054",
+        "line": "#e7ddf0"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Morská a lesná sviežosť",
+        "",
+        "Morská a lesná sviežosť",
+        ""
+      ],
+      "ocean": [
+        "Chladivý a čistý oceánsky charakter",
+        "",
+        "Chladivý a čistý oceánsky charakter",
+        ""
+      ],
+      "fresh-caps": [
+        "Orchidea, ruže a jedľový les",
+        "",
+        "Orchidea, ruže a jedľový les",
+        ""
+      ],
+      "flower": [
+        "Kvety a bylinky",
+        "",
+        "Kvety a bylinky",
+        ""
+      ],
+      "japanese-garden": [
+        "Čerešňové kvety s ovocnými tónmi",
+        "",
+        "Čerešňové kvety s ovocnými tónmi",
+        ""
+      ],
+      "lavender": [
+        "Levanduľa, kvety a svieža mäta",
+        "",
+        "Levanduľa, kvety a svieža mäta",
+        ""
+      ],
+      "fruit": [
+        "Ovocné a citrusové tóny",
+        "",
+        "Ovocné a citrusové tóny",
+        ""
+      ],
+      "mango": [
+        "Tropické mango a letné kvety",
+        "",
+        "Tropické mango a letné kvety",
+        ""
+      ],
+      "orange": [
+        "Pomaranč, citrusy a jemné kvety",
+        "",
+        "Pomaranč, citrusy a jemné kvety",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "ocean": [
+        "/assets/s5/kifra/ocean.jpg"
+      ],
+      "fresh-caps": [
+        "/assets/s5/kifra/fresh-caps.jpg"
+      ],
+      "flower": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "japanese-garden": [
+        "/assets/s5/kifra/japanese-garden.jpg"
+      ],
+      "lavender": [
+        "/assets/s5/kifra/lavender.jpg"
+      ],
+      "fruit": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "mango": [
+        "/assets/s5/kifra/mango.jpg"
+      ],
+      "orange": [
+        "/assets/s5/kifra/orange.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "ocean",
+      "mango"
+    ],
+    "segmentText": {
+      "entryNote": "Vône do prania · presné balenie · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi nájsť vôňu pre jeho bielizeň.",
+      "lead": "Výber ukáže konkrétny parfum do prania s vôňovým profilom, fotografiou, balením, cenou a odkazom. Dve odlišné vône možno porovnať. Dodržujte dávkovanie výrobcu.",
+      "includedChat": "Vône do prania, ich balenia a ceny.",
+      "includedAdvisor": "Výber vône do prania a porovnanie dvoch odlišných vôní.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône do prania, ich balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "kifra-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "ocean": "fresh-caps",
+        "fresh-caps": "ocean",
+        "japanese-garden": "lavender",
+        "lavender": "japanese-garden",
+        "mango": "orange",
+        "orange": "mango"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

@@ -1,0 +1,1019 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-14T18:55:02.900825+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "kifra",
+      "width": 320,
+      "id": "ocean",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-ocean--ocean/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-ocean-320.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "id": "fresh-caps",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-fresh-caps--svieze-kapsule/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-fresh-caps-320.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "id": "japanese-garden",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-japanese-garden--japonska-zahrada/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-japanese-garden-320.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "id": "lavender",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-lavender--levandula/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-lavender-320.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "id": "mango",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-mango/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-mango-320.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "id": "orange",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-orange--pomaranc/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-orange-320.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "id": "ocean",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-ocean--ocean/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-ocean-390.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "id": "fresh-caps",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-fresh-caps--svieze-kapsule/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-fresh-caps-390.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "id": "japanese-garden",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-japanese-garden--japonska-zahrada/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-japanese-garden-390.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "id": "lavender",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-lavender--levandula/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-lavender-390.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "id": "mango",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-mango/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-mango-390.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "id": "orange",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-orange--pomaranc/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-orange-390.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "id": "ocean",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-ocean--ocean/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-ocean-1280.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "id": "fresh-caps",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-fresh-caps--svieze-kapsule/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-fresh-caps-1280.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "id": "japanese-garden",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-japanese-garden--japonska-zahrada/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-japanese-garden-1280.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "id": "lavender",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-lavender--levandula/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-lavender-1280.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "id": "mango",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-mango/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-mango-1280.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "id": "orange",
+      "pack": "200 ml",
+      "price": "13,99 €",
+      "url": "https://www.kifra.sk/parfum-na-pranie-kifra-orange--pomaranc/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "kifra-result-orange-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "kifra",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/pine.jpg"
+        },
+        {
+          "id": "flower",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        }
+      ],
+      "screenshot": "kifra-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "ocean",
+          "photo": "/assets/s5/kifra/ocean.jpg"
+        },
+        {
+          "id": "fresh-caps",
+          "photo": "/assets/s5/kifra/fresh-caps.jpg"
+        }
+      ],
+      "screenshot": "kifra-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "japanese-garden",
+          "photo": "/assets/s5/kifra/japanese-garden.jpg"
+        },
+        {
+          "id": "lavender",
+          "photo": "/assets/s5/kifra/lavender.jpg"
+        }
+      ],
+      "screenshot": "kifra-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "mango",
+          "photo": "/assets/s5/kifra/mango.jpg"
+        },
+        {
+          "id": "orange",
+          "photo": "/assets/s5/kifra/orange.jpg"
+        }
+      ],
+      "screenshot": "kifra-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/pine.jpg"
+        },
+        {
+          "id": "flower",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        }
+      ],
+      "screenshot": "kifra-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "ocean",
+          "photo": "/assets/s5/kifra/ocean.jpg"
+        },
+        {
+          "id": "fresh-caps",
+          "photo": "/assets/s5/kifra/fresh-caps.jpg"
+        }
+      ],
+      "screenshot": "kifra-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "japanese-garden",
+          "photo": "/assets/s5/kifra/japanese-garden.jpg"
+        },
+        {
+          "id": "lavender",
+          "photo": "/assets/s5/kifra/lavender.jpg"
+        }
+      ],
+      "screenshot": "kifra-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "mango",
+          "photo": "/assets/s5/kifra/mango.jpg"
+        },
+        {
+          "id": "orange",
+          "photo": "/assets/s5/kifra/orange.jpg"
+        }
+      ],
+      "screenshot": "kifra-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/pine.jpg"
+        },
+        {
+          "id": "flower",
+          "photo": "/assets/s3/scenes-k2/jasmine.jpg"
+        },
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        }
+      ],
+      "screenshot": "kifra-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "ocean",
+          "photo": "/assets/s5/kifra/ocean.jpg"
+        },
+        {
+          "id": "fresh-caps",
+          "photo": "/assets/s5/kifra/fresh-caps.jpg"
+        }
+      ],
+      "screenshot": "kifra-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "japanese-garden",
+          "photo": "/assets/s5/kifra/japanese-garden.jpg"
+        },
+        {
+          "id": "lavender",
+          "photo": "/assets/s5/kifra/lavender.jpg"
+        }
+      ],
+      "screenshot": "kifra-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "mango",
+          "photo": "/assets/s5/kifra/mango.jpg"
+        },
+        {
+          "id": "orange",
+          "photo": "/assets/s5/kifra/orange.jpg"
+        }
+      ],
+      "screenshot": "kifra-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "kifra",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ocean",
+        "mango"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "kifra-compare-320.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ocean",
+        "mango"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "kifra-compare-390.png"
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "ocean",
+        "mango"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "kifra-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "noteProfiles": [
+    {
+      "slug": "kifra",
+      "id": "ocean",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Chladivý",
+        "čistý oceánsky charakter"
+      ],
+      "screenshot": "kifra-note-profile-ocean-320.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "fresh-caps",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Orchidea",
+        "ruže",
+        "jedľový les"
+      ],
+      "screenshot": "kifra-note-profile-fresh-caps-320.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "japanese-garden",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Čerešňové kvety s ovocnými tónmi"
+      ],
+      "screenshot": "kifra-note-profile-japanese-garden-320.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "lavender",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Levanduľa",
+        "kvety",
+        "svieža mäta"
+      ],
+      "screenshot": "kifra-note-profile-lavender-320.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "mango",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Tropické mango",
+        "letné kvety"
+      ],
+      "screenshot": "kifra-note-profile-mango-320.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "orange",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Pomaranč",
+        "citrusy",
+        "jemné kvety"
+      ],
+      "screenshot": "kifra-note-profile-orange-320.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "ocean",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Chladivý",
+        "čistý oceánsky charakter"
+      ],
+      "screenshot": "kifra-note-profile-ocean-390.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "fresh-caps",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Orchidea",
+        "ruže",
+        "jedľový les"
+      ],
+      "screenshot": "kifra-note-profile-fresh-caps-390.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "japanese-garden",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Čerešňové kvety s ovocnými tónmi"
+      ],
+      "screenshot": "kifra-note-profile-japanese-garden-390.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "lavender",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Levanduľa",
+        "kvety",
+        "svieža mäta"
+      ],
+      "screenshot": "kifra-note-profile-lavender-390.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "mango",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Tropické mango",
+        "letné kvety"
+      ],
+      "screenshot": "kifra-note-profile-mango-390.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "orange",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Pomaranč",
+        "citrusy",
+        "jemné kvety"
+      ],
+      "screenshot": "kifra-note-profile-orange-390.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "ocean",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Chladivý",
+        "čistý oceánsky charakter"
+      ],
+      "screenshot": "kifra-note-profile-ocean-1280.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "fresh-caps",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Orchidea",
+        "ruže",
+        "jedľový les"
+      ],
+      "screenshot": "kifra-note-profile-fresh-caps-1280.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "japanese-garden",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Čerešňové kvety s ovocnými tónmi"
+      ],
+      "screenshot": "kifra-note-profile-japanese-garden-1280.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "lavender",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Levanduľa",
+        "kvety",
+        "svieža mäta"
+      ],
+      "screenshot": "kifra-note-profile-lavender-1280.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "mango",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Tropické mango",
+        "letné kvety"
+      ],
+      "screenshot": "kifra-note-profile-mango-1280.png"
+    },
+    {
+      "slug": "kifra",
+      "id": "orange",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Pomaranč",
+        "citrusy",
+        "jemné kvety"
+      ],
+      "screenshot": "kifra-note-profile-orange-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "kifra",
+      "width": 320,
+      "id": "ocean",
+      "defaultScreenshot": "kifra-result-ocean-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-ocean-320.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-ocean-320.png",
+      "comparisonIds": [
+        "ocean",
+        "fresh-caps"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "id": "fresh-caps",
+      "defaultScreenshot": "kifra-result-fresh-caps-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-fresh-caps-320.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-fresh-caps-320.png",
+      "comparisonIds": [
+        "fresh-caps",
+        "ocean"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "id": "japanese-garden",
+      "defaultScreenshot": "kifra-result-japanese-garden-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-japanese-garden-320.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-japanese-garden-320.png",
+      "comparisonIds": [
+        "japanese-garden",
+        "lavender"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "id": "lavender",
+      "defaultScreenshot": "kifra-result-lavender-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-lavender-320.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-lavender-320.png",
+      "comparisonIds": [
+        "lavender",
+        "japanese-garden"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "id": "mango",
+      "defaultScreenshot": "kifra-result-mango-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-mango-320.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-mango-320.png",
+      "comparisonIds": [
+        "mango",
+        "orange"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 320,
+      "id": "orange",
+      "defaultScreenshot": "kifra-result-orange-320.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-orange-320.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-orange-320.png",
+      "comparisonIds": [
+        "orange",
+        "mango"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "id": "ocean",
+      "defaultScreenshot": "kifra-result-ocean-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-ocean-390.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-ocean-390.png",
+      "comparisonIds": [
+        "ocean",
+        "fresh-caps"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "id": "fresh-caps",
+      "defaultScreenshot": "kifra-result-fresh-caps-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-fresh-caps-390.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-fresh-caps-390.png",
+      "comparisonIds": [
+        "fresh-caps",
+        "ocean"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "id": "japanese-garden",
+      "defaultScreenshot": "kifra-result-japanese-garden-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-japanese-garden-390.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-japanese-garden-390.png",
+      "comparisonIds": [
+        "japanese-garden",
+        "lavender"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "id": "lavender",
+      "defaultScreenshot": "kifra-result-lavender-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-lavender-390.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-lavender-390.png",
+      "comparisonIds": [
+        "lavender",
+        "japanese-garden"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "id": "mango",
+      "defaultScreenshot": "kifra-result-mango-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-mango-390.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-mango-390.png",
+      "comparisonIds": [
+        "mango",
+        "orange"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 390,
+      "id": "orange",
+      "defaultScreenshot": "kifra-result-orange-390.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-orange-390.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-orange-390.png",
+      "comparisonIds": [
+        "orange",
+        "mango"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "id": "ocean",
+      "defaultScreenshot": "kifra-result-ocean-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-ocean-1280.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-ocean-1280.png",
+      "comparisonIds": [
+        "ocean",
+        "fresh-caps"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "id": "fresh-caps",
+      "defaultScreenshot": "kifra-result-fresh-caps-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-fresh-caps-1280.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-fresh-caps-1280.png",
+      "comparisonIds": [
+        "fresh-caps",
+        "ocean"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "id": "japanese-garden",
+      "defaultScreenshot": "kifra-result-japanese-garden-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-japanese-garden-1280.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-japanese-garden-1280.png",
+      "comparisonIds": [
+        "japanese-garden",
+        "lavender"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "id": "lavender",
+      "defaultScreenshot": "kifra-result-lavender-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-lavender-1280.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-lavender-1280.png",
+      "comparisonIds": [
+        "lavender",
+        "japanese-garden"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "id": "mango",
+      "defaultScreenshot": "kifra-result-mango-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-mango-1280.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-mango-1280.png",
+      "comparisonIds": [
+        "mango",
+        "orange"
+      ]
+    },
+    {
+      "slug": "kifra",
+      "width": 1280,
+      "id": "orange",
+      "defaultScreenshot": "kifra-result-orange-1280.png",
+      "defaultUnchecked": true,
+      "checkedTotal": "17,98 €",
+      "selectedScreenshot": "kifra-selected-orange-1280.png",
+      "uncheckRestoresBase": true,
+      "compareScreenshot": "kifra-pair-orange-1280.png",
+      "comparisonIds": [
+        "orange",
+        "mango"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

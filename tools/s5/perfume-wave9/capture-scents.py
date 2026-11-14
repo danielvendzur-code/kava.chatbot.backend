@@ -1,0 +1,7 @@
+from pathlib import Path
+from lxml import html
+import urllib.request,json,datetime,hashlib,concurrent.futures,re
+B=Path(__file__).resolve().parent/'research/scents';B.mkdir(exist_ok=True);links=json.load(open(B.parent/'scents-product-links.json'));wants={'cherry':'Coronado Cherry','coconut':'Capistrano Coconut','vanilla':'Monterey Vanilla','delight':'Golden State Delight','laguna':'Laguna Breeze','sunset':'Sunset Woods'}
+def run(it):
+ pid,needle=it;name,url=next((n,u) for n,u in links if needle in n);r=urllib.request.urlopen(url,timeout=35);raw=r.read();(B/(pid+'.html')).write_bytes(raw);t=html.fromstring(raw);p=json.loads(t.xpath('//*[@id="product-details"]/@data-product')[0]);desc=html.fromstring('<div>'+p['description']+'</div>').text_content();d={'id':pid,'url':url,'checkedAt':datetime.datetime.now(datetime.timezone.utc).isoformat(),'sourceSha256':hashlib.sha256(raw).hexdigest(),'product':p,'descriptionText':desc,'summaryText':html.fromstring('<div>'+p['description_short']+'</div>').text_content(),'name':t.xpath('string(//h1)').strip(),'photo':p['cover']['bySize']['large_default']['url'],'photoLegend':p['cover']['legend']};(B/(pid+'.json')).write_text(json.dumps(d,ensure_ascii=False,indent=2));print(pid,p['price_amount'],p.get('quantity','UNKNOWN'),p['availability'],d['photoLegend'],d['summaryText'],desc[:1200],flush=True)
+with concurrent.futures.ThreadPoolExecutor(4) as pool:list(pool.map(run,wants.items()))

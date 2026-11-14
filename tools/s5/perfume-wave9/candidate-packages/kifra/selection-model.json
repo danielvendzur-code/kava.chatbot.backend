@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aká vôňa je vám blízka?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Morská a lesná sviežosť",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "ocean",
+          "label": "Chladivý a čistý oceánsky charakter",
+          "productId": "ocean",
+          "sourceUrl": "https://www.kifra.sk/parfum-na-pranie-kifra-ocean--ocean/"
+        },
+        {
+          "value": "fresh-caps",
+          "label": "Orchidea, ruže a jedľový les",
+          "productId": "fresh-caps",
+          "sourceUrl": "https://www.kifra.sk/parfum-na-pranie-kifra-fresh-caps--svieze-kapsule/"
+        }
+      ]
+    },
+    {
+      "value": "flower",
+      "label": "Kvety a bylinky",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "japanese-garden",
+          "label": "Čerešňové kvety s ovocnými tónmi",
+          "productId": "japanese-garden",
+          "sourceUrl": "https://www.kifra.sk/parfum-na-pranie-kifra-japanese-garden--japonska-zahrada/"
+        },
+        {
+          "value": "lavender",
+          "label": "Levanduľa, kvety a svieža mäta",
+          "productId": "lavender",
+          "sourceUrl": "https://www.kifra.sk/parfum-na-pranie-kifra-lavender--levandula/"
+        }
+      ]
+    },
+    {
+      "value": "fruit",
+      "label": "Ovocné a citrusové tóny",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "mango",
+          "label": "Tropické mango a letné kvety",
+          "productId": "mango",
+          "sourceUrl": "https://www.kifra.sk/parfum-na-pranie-kifra-mango/"
+        },
+        {
+          "value": "orange",
+          "label": "Pomaranč, citrusy a jemné kvety",
+          "productId": "orange",
+          "sourceUrl": "https://www.kifra.sk/parfum-na-pranie-kifra-orange--pomaranc/"
+        }
+      ]
+    }
+  ]
+}

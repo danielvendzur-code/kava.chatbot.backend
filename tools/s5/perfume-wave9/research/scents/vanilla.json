@@ -1,0 +1,390 @@
+{
+  "id": "vanilla",
+  "url": "https://scents.cz/domu/41-vanilka-monterey-vanilla.html",
+  "checkedAt": "2026-11-14T18:53:19.879097+00:00",
+  "sourceSha256": "0ebfc7d6a4ab1c605294435a7c058bf874bb918f854fa3c81d70e5bc363d982a",
+  "product": {
+    "id_shop_default": 1,
+    "id_manufacturer": 0,
+    "id_supplier": 0,
+    "reference": "006",
+    "is_virtual": "0",
+    "delivery_in_stock": "",
+    "delivery_out_stock": "",
+    "id_category_default": 2,
+    "on_sale": "0",
+    "online_only": "0",
+    "ecotax": 0,
+    "minimal_quantity": 1,
+    "low_stock_threshold": 0,
+    "low_stock_alert": "0",
+    "price": "90,00 Kč",
+    "unity": "",
+    "unit_price": "",
+    "unit_price_ratio": 0,
+    "additional_shipping_cost": "0.000000",
+    "customizable": 0,
+    "text_fields": 0,
+    "uploadable_files": 0,
+    "active": "1",
+    "redirect_type": "default",
+    "id_type_redirected": 0,
+    "available_for_order": "1",
+    "available_date": "0000-00-00",
+    "show_condition": "0",
+    "condition": "new",
+    "show_price": "1",
+    "indexed": "1",
+    "visibility": "both",
+    "cache_default_attribute": 0,
+    "date_add": "2016-03-20 14:19:43",
+    "date_upd": "2024-11-11 16:10:06",
+    "pack_stock_type": 3,
+    "meta_description": "",
+    "meta_title": "California Scents Vanilka (Monterey Vanilla)",
+    "link_rewrite": "vanilka-monterey-vanilla",
+    "name": "Vanilka (Monterey Vanilla)",
+    "description": "<p><span>Čím jsou voňavé plechovičky <strong>California Car Scents</strong></span><span class=\"p-desc\"><strong><em>® </em></strong>výjimečné</span>?</p>\n<p>Vybrat si můžete tu svou vůni z desítek různých druhů, které jsou na bázi 100% organických vonných olejů. U těchto plechovek vám <span style=\"text-decoration:underline;\">nehrozí žádné riziko poškození</span> plastů ani palubní desky vašeho auta, v důsledku úniku parfému nebo gelu. </p>\n<p></p>\n<p>Ke každé plechovce obdržíte regulátor intenzity <span style=\"text-decoration:underline;\">zdarma</span>, vůně vám v autě vydrží <strong>až 60 dnů</strong>! </p>",
+    "description_short": "<p>Klasická, menej intenzívna vůně vanilky, určená zejména pro milovníky sladkých a příjemných vůní.</p>",
+    "available_now": "Skladem",
+    "available_later": "",
+    "id": 41,
+    "out_of_stock": 2,
+    "id_product_attribute": 0,
+    "quantity_wanted": 1,
+    "extraContent": [],
+    "id_product": 41,
+    "allow_oosp": 0,
+    "price_tax_exc": 74.380165,
+    "price_without_reduction": 90,
+    "reduction": 0,
+    "specific_prices": [],
+    "pack": 0,
+    "packItems": [],
+    "rate": 21,
+    "tax_name": "DPH SK 21%",
+    "ecotax_rate": 0,
+    "customizations": {
+      "fields": []
+    },
+    "id_customization": 0,
+    "is_customizable": false,
+    "show_quantities": false,
+    "quantity_label": "ks",
+    "quantity_discounts": [],
+    "customer_group_discount": 0,
+    "images": [
+      {
+        "cover": 1,
+        "id_image": 141,
+        "legend": "California Scents Monterey Vanilla - vanilková vůně do auta - 42 g",
+        "position": 1,
+        "bySize": {
+          "cart_default": {
+            "url": "https://scents.cz/141-cart_default/vanilka-monterey-vanilla.jpg",
+            "width": 80,
+            "height": 80,
+            "sources": {
+              "jpg": "https://scents.cz/141-cart_default/vanilka-monterey-vanilla.jpg",
+              "webp": "https://scents.cz/141-cart_default/vanilka-monterey-vanilla.webp"
+            }
+          },
+          "tm_cart_default": {
+            "url": "https://scents.cz/141-tm_cart_default/vanilka-monterey-vanilla.jpg",
+            "width": 80,
+            "height": 80,
+            "sources": {
+              "jpg": "https://scents.cz/141-tm_cart_default/vanilka-monterey-vanilla.jpg",
+              "webp": "https://scents.cz/141-tm_cart_default/vanilka-monterey-vanilla.webp"
+            }
+          },
+          "small_default": {
+            "url": "https://scents.cz/141-small_default/vanilka-monterey-vanilla.jpg",
+            "width": 98,
+            "height": 98,
+            "sources": {
+              "jpg": "https://scents.cz/141-small_default/vanilka-monterey-vanilla.jpg",
+              "webp": "https://scents.cz/141-small_default/vanilka-monterey-vanilla.webp"
+            }
+          },
+          "tm_small_default": {
+            "url": "https://scents.cz/141-tm_small_default/vanilka-monterey-vanilla.jpg",
+            "width": 98,
+            "height": 98,
+            "sources": {
+              "jpg": "https://scents.cz/141-tm_small_default/vanilka-monterey-vanilla.jpg",
+              "webp": "https://scents.cz/141-tm_small_default/vanilka-monterey-vanilla.webp"
+            }
+          },
+          "medium_default": {
+            "url": "https://scents.cz/141-medium_default/vanilka-monterey-vanilla.jpg",
+            "width": 125,
+            "height": 125,
+            "sources": {
+              "jpg": "https://scents.cz/141-medium_default/vanilka-monterey-vanilla.jpg",
+              "webp": "https://scents.cz/141-medium_default/vanilka-monterey-vanilla.webp"
+            }
+          },
+          "tm_medium_default": {
+            "url": "https://scents.cz/141-tm_medium_default/vanilka-monterey-vanilla.jpg",
+            "width": 125,
+            "height": 125,
+            "sources": {
+              "jpg": "https://scents.cz/141-tm_medium_default/vanilka-monterey-vanilla.jpg",
+              "webp": "https://scents.cz/141-tm_medium_default/vanilka-monterey-vanilla.webp"
+            }
+          },
+          "home_default": {
+            "url": "https://scents.cz/141-home_default/vanilka-monterey-vanilla.jpg",
+            "width": 270,
+            "height": 270,
+            "sources": {
+              "jpg": "https://scents.cz/141-home_default/vanilka-monterey-vanilla.jpg",
+              "webp": "https://scents.cz/141-home_default/vanilka-monterey-vanilla.webp"
+            }
+          },
+          "tm_home_default": {
+            "url": "https://scents.cz/141-tm_home_default/vanilka-monterey-vanilla.jpg",
+            "width": 270,
+            "height": 270,
+            "sources": {
+              "jpg": "https://scents.cz/141-tm_home_default/vanilka-monterey-vanilla.jpg",
+              "webp": "https://scents.cz/141-tm_home_default/vanilka-monterey-vanilla.webp"
+            }
+          },
+          "large_default": {
+            "url": "https://scents.cz/141-large_default/vanilka-monterey-vanilla.jpg",
+            "width": 458,
+            "height": 458,
+            "sources": {
+              "jpg": "https://scents.cz/141-large_default/vanilka-monterey-vanilla.jpg",
+              "webp": "https://scents.cz/141-large_default/vanilka-monterey-vanilla.webp"
+            }
+          },
+          "tm_large_default": {
+            "url": "https://scents.cz/141-tm_large_default/vanilka-monterey-vanilla.jpg",
+            "width": 458,
+            "height": 458,
+            "sources": {
+              "jpg": "https://scents.cz/141-tm_large_default/vanilka-monterey-vanilla.jpg",
+              "webp": "https://scents.cz/141-tm_large_default/vanilka-monterey-vanilla.webp"
+            }
+          },
+          "thickbox_default": {
+            "url": "https://scents.cz/141-thickbox_default/vanilka-monterey-vanilla.jpg",
+            "width": 800,
+            "height": 800,
+            "sources": {
+              "jpg": "https://scents.cz/141-thickbox_default/vanilka-monterey-vanilla.jpg",
+              "webp": "https://scents.cz/141-thickbox_default/vanilka-monterey-vanilla.webp"
+            }
+          },
+          "tm_thickbox_default": {
+            "url": "https://scents.cz/141-tm_thickbox_default/vanilka-monterey-vanilla.jpg",
+            "width": 800,
+            "height": 800,
+            "sources": {
+              "jpg": "https://scents.cz/141-tm_thickbox_default/vanilka-monterey-vanilla.jpg",
+              "webp": "https://scents.cz/141-tm_thickbox_default/vanilka-monterey-vanilla.webp"
+            }
+          }
+        },
+        "small": {
+          "url": "https://scents.cz/141-cart_default/vanilka-monterey-vanilla.jpg",
+          "width": 80,
+          "height": 80,
+          "sources": {
+            "jpg": "https://scents.cz/141-cart_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-cart_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "medium": {
+          "url": "https://scents.cz/141-home_default/vanilka-monterey-vanilla.jpg",
+          "width": 270,
+          "height": 270,
+          "sources": {
+            "jpg": "https://scents.cz/141-home_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-home_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "large": {
+          "url": "https://scents.cz/141-tm_thickbox_default/vanilka-monterey-vanilla.jpg",
+          "width": 800,
+          "height": 800,
+          "sources": {
+            "jpg": "https://scents.cz/141-tm_thickbox_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-tm_thickbox_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "associatedVariants": []
+      }
+    ],
+    "cover": {
+      "cover": 1,
+      "id_image": 141,
+      "legend": "California Scents Monterey Vanilla - vanilková vůně do auta - 42 g",
+      "position": 1,
+      "bySize": {
+        "cart_default": {
+          "url": "https://scents.cz/141-cart_default/vanilka-monterey-vanilla.jpg",
+          "width": 80,
+          "height": 80,
+          "sources": {
+            "jpg": "https://scents.cz/141-cart_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-cart_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "tm_cart_default": {
+          "url": "https://scents.cz/141-tm_cart_default/vanilka-monterey-vanilla.jpg",
+          "width": 80,
+          "height": 80,
+          "sources": {
+            "jpg": "https://scents.cz/141-tm_cart_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-tm_cart_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "small_default": {
+          "url": "https://scents.cz/141-small_default/vanilka-monterey-vanilla.jpg",
+          "width": 98,
+          "height": 98,
+          "sources": {
+            "jpg": "https://scents.cz/141-small_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-small_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "tm_small_default": {
+          "url": "https://scents.cz/141-tm_small_default/vanilka-monterey-vanilla.jpg",
+          "width": 98,
+          "height": 98,
+          "sources": {
+            "jpg": "https://scents.cz/141-tm_small_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-tm_small_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "medium_default": {
+          "url": "https://scents.cz/141-medium_default/vanilka-monterey-vanilla.jpg",
+          "width": 125,
+          "height": 125,
+          "sources": {
+            "jpg": "https://scents.cz/141-medium_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-medium_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "tm_medium_default": {
+          "url": "https://scents.cz/141-tm_medium_default/vanilka-monterey-vanilla.jpg",
+          "width": 125,
+          "height": 125,
+          "sources": {
+            "jpg": "https://scents.cz/141-tm_medium_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-tm_medium_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "home_default": {
+          "url": "https://scents.cz/141-home_default/vanilka-monterey-vanilla.jpg",
+          "width": 270,
+          "height": 270,
+          "sources": {
+            "jpg": "https://scents.cz/141-home_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-home_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "tm_home_default": {
+          "url": "https://scents.cz/141-tm_home_default/vanilka-monterey-vanilla.jpg",
+          "width": 270,
+          "height": 270,
+          "sources": {
+            "jpg": "https://scents.cz/141-tm_home_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-tm_home_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "large_default": {
+          "url": "https://scents.cz/141-large_default/vanilka-monterey-vanilla.jpg",
+          "width": 458,
+          "height": 458,
+          "sources": {
+            "jpg": "https://scents.cz/141-large_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-large_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "tm_large_default": {
+          "url": "https://scents.cz/141-tm_large_default/vanilka-monterey-vanilla.jpg",
+          "width": 458,
+          "height": 458,
+          "sources": {
+            "jpg": "https://scents.cz/141-tm_large_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-tm_large_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "thickbox_default": {
+          "url": "https://scents.cz/141-thickbox_default/vanilka-monterey-vanilla.jpg",
+          "width": 800,
+          "height": 800,
+          "sources": {
+            "jpg": "https://scents.cz/141-thickbox_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-thickbox_default/vanilka-monterey-vanilla.webp"
+          }
+        },
+        "tm_thickbox_default": {
+          "url": "https://scents.cz/141-tm_thickbox_default/vanilka-monterey-vanilla.jpg",
+          "width": 800,
+          "height": 800,
+          "sources": {
+            "jpg": "https://scents.cz/141-tm_thickbox_default/vanilka-monterey-vanilla.jpg",
+            "webp": "https://scents.cz/141-tm_thickbox_default/vanilka-monterey-vanilla.webp"
+          }
+        }
+      },
+      "small": {
+        "url": "https://scents.cz/141-cart_default/vanilka-monterey-vanilla.jpg",
+        "width": 80,
+        "height": 80,
+        "sources": {
+          "jpg": "https://scents.cz/141-cart_default/vanilka-monterey-vanilla.jpg",
+          "webp": "https://scents.cz/141-cart_default/vanilka-monterey-vanilla.webp"
+        }
+      },
+      "medium": {
+        "url": "https://scents.cz/141-home_default/vanilka-monterey-vanilla.jpg",
+        "width": 270,
+        "height": 270,
+        "sources": {
+          "jpg": "https://scents.cz/141-home_default/vanilka-monterey-vanilla.jpg",
+          "webp": "https://scents.cz/141-home_default/vanilka-monterey-vanilla.webp"
+        }
+      },
+      "large": {
+        "url": "https://scents.cz/141-tm_thickbox_default/vanilka-monterey-vanilla.jpg",
+        "width": 800,
+        "height": 800,
+        "sources": {
+          "jpg": "https://scents.cz/141-tm_thickbox_default/vanilka-monterey-vanilla.jpg",
+          "webp": "https://scents.cz/141-tm_thickbox_default/vanilka-monterey-vanilla.webp"
+        }
+      },
+      "associatedVariants": []
+    },
+    "has_discount": false,
+    "discount_type": null,
+    "discount_percentage": null,
+    "discount_percentage_absolute": null,
+    "discount_amount": null,
+    "discount_amount_to_display": null,
+    "price_amount": 90,
+    "unit_price_full": "",
+    "nopackprice": null,
+    "show_availability": true,
+    "availability_message": "Skladem",
+    "availability_date": null,
+    "availability": "in_stock",
+    "category": "domu",
+    "category_name": "Domů",
+    "new": 0,
+    "customization_required": false,
+    "attachments": []
+  },
+  "descriptionText": "Čím jsou voňavé plechovičky California Car Scents® výjimečné?\nVybrat si můžete tu svou vůni z desítek různých druhů, které jsou na bázi 100% organických vonných olejů. U těchto plechovek vám nehrozí žádné riziko poškození plastů ani palubní desky vašeho auta, v důsledku úniku parfému nebo gelu. \n\nKe každé plechovce obdržíte regulátor intenzity zdarma, vůně vám v autě vydrží až 60 dnů! ",
+  "summaryText": "Klasická, menej intenzívna vůně vanilky, určená zejména pro milovníky sladkých a příjemných vůní.",
+  "name": "Vanilka (Monterey Vanilla)",
+  "photo": "https://scents.cz/141-large_default/vanilka-monterey-vanilla.jpg",
+  "photoLegend": "California Scents Monterey Vanilla - vanilková vůně do auta - 42 g"
+}

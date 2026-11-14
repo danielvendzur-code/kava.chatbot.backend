@@ -1,0 +1,231 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "KIFRA",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/kifra/logo.svg",
+      "header": "/assets/s5/kifra/logo.svg",
+      "avatar": "/assets/s5/kifra/initial.svg"
+    },
+    "brand": {
+      "name": "KIFRA",
+      "domain": "kifra.sk",
+      "website": "https://www.kifra.sk/",
+      "lang": "sk",
+      "fullName": "KIFRA",
+      "url": "https://www.kifra.sk/",
+      "logo": "/assets/s5/kifra/logo.svg",
+      "mark": "/assets/s5/kifra/initial.svg",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône do prania, ich balenia a ceny.",
+      "quickChips": [
+        "Oceánska sviežosť",
+        "Mango a kvety",
+        "Levanduľa a mäta",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#655080",
+        "accent": "#bfa8d8",
+        "soft": "#f7f3fb",
+        "paper": "#fff",
+        "ink": "#3f3054",
+        "line": "#e7ddf0"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Morská a lesná sviežosť",
+        "",
+        "Morská a lesná sviežosť",
+        ""
+      ],
+      "ocean": [
+        "Chladivý a čistý oceánsky charakter",
+        "",
+        "Chladivý a čistý oceánsky charakter",
+        ""
+      ],
+      "fresh-caps": [
+        "Orchidea, ruže a jedľový les",
+        "",
+        "Orchidea, ruže a jedľový les",
+        ""
+      ],
+      "flower": [
+        "Kvety a bylinky",
+        "",
+        "Kvety a bylinky",
+        ""
+      ],
+      "japanese-garden": [
+        "Čerešňové kvety s ovocnými tónmi",
+        "",
+        "Čerešňové kvety s ovocnými tónmi",
+        ""
+      ],
+      "lavender": [
+        "Levanduľa, kvety a svieža mäta",
+        "",
+        "Levanduľa, kvety a svieža mäta",
+        ""
+      ],
+      "fruit": [
+        "Ovocné a citrusové tóny",
+        "",
+        "Ovocné a citrusové tóny",
+        ""
+      ],
+      "mango": [
+        "Tropické mango a letné kvety",
+        "",
+        "Tropické mango a letné kvety",
+        ""
+      ],
+      "orange": [
+        "Pomaranč, citrusy a jemné kvety",
+        "",
+        "Pomaranč, citrusy a jemné kvety",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "ocean": [
+        "/assets/s5/kifra/ocean.jpg"
+      ],
+      "fresh-caps": [
+        "/assets/s5/kifra/fresh-caps.jpg"
+      ],
+      "flower": [
+        "/assets/s3/scenes-k2/jasmine.jpg"
+      ],
+      "japanese-garden": [
+        "/assets/s5/kifra/japanese-garden.jpg"
+      ],
+      "lavender": [
+        "/assets/s5/kifra/lavender.jpg"
+      ],
+      "fruit": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "mango": [
+        "/assets/s5/kifra/mango.jpg"
+      ],
+      "orange": [
+        "/assets/s5/kifra/orange.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "ocean",
+      "mango"
+    ],
+    "segmentText": {
+      "entryNote": "Vône do prania · presné balenie · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi nájsť vôňu pre jeho bielizeň.",
+      "lead": "Výber ukáže konkrétny parfum do prania s vôňovým profilom, fotografiou, balením, cenou a odkazom. Dve odlišné vône možno porovnať. Dodržujte dávkovanie výrobcu.",
+      "includedChat": "Vône do prania, ich balenia a ceny.",
+      "includedAdvisor": "Výber vône do prania a porovnanie dvoch odlišných vôní.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône do prania, ich balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "kifra-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "ocean": "fresh-caps",
+        "fresh-caps": "ocean",
+        "japanese-garden": "lavender",
+        "lavender": "japanese-garden",
+        "mango": "orange",
+        "orange": "mango"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/kifra.js",
+  "backendBrand": "kifra",
+  "offlineRules": [
+    {
+      "chip": "Oceánska sviežosť",
+      "match": "oceansk.*sviez",
+      "productIds": [
+        "ocean"
+      ]
+    },
+    {
+      "chip": "Mango a kvety",
+      "match": "mango.*kvet",
+      "productIds": [
+        "mango"
+      ]
+    },
+    {
+      "chip": "Levanduľa a mäta",
+      "match": "levandul.*mat",
+      "productIds": [
+        "lavender"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-wave9/candidate-packages/kifra/ui-review.css",
+    "destination": "n447/s5/brands/kifra.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/kifra.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_SMALL_TIER_OFFICIAL2025_PASS_LAUNDRY_BACKEND_SCOPE_REVIEW",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "laundry-fragrance",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "requiredBackendInstruction": "KIFRA islaundryfragrance, notpersonalEDP. Useonlyper-productsourceusageinstructions2.5ml;50mlwaterdilutiononlywhereexplicitlyfound, FreshCapsUNKNOWNifabsent. Never inheritODEUR5ml. No skinapplication/fabric/child/health/IFRAagencycertification/lastingguarantees. No fabricatedfabricfilter/budget/cartintegration. Linkofficialproductwhenusageuncertain.",
+    "workerTouchedSharedBackend": false,
+    "dependentPart": "MAINbrandbackendguard/integration/livechat/PreviewQA, notdata/tree/sourcecollection."
+  }
+}
