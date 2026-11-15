@@ -1,0 +1,211 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "EsoDrogéria",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/esodrogeria/logo.png",
+      "header": "/assets/s5/esodrogeria/logo.png",
+      "avatar": "/assets/s5/esodrogeria/avatar.svg"
+    },
+    "brand": {
+      "name": "EsoDrogéria",
+      "domain": "esodrogeria.eu",
+      "website": "https://www.esodrogeria.eu/",
+      "lang": "sk",
+      "fullName": "EsoDrogéria",
+      "url": "https://www.esodrogeria.eu/",
+      "logo": "/assets/s5/esodrogeria/logo.png",
+      "mark": "/assets/s5/esodrogeria/avatar.svg",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané interiérové vône, ich použitie, balenia a ceny.",
+      "quickChips": [
+        "Drevo a citrusy",
+        "Frézia a hruška",
+        "Olej s pačuli",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#125061",
+        "accent": "#d9bb78",
+        "soft": "#eef7f9",
+        "paper": "#fff",
+        "ink": "#213940",
+        "line": "#d6e6e9"
+      }
+    },
+    "traitCopy": {
+      "reeds": [
+        "Hotová vôňa s tyčinkami",
+        "",
+        "Hotová vôňa s tyčinkami",
+        ""
+      ],
+      "wood": [
+        "Drevo, jantár a citrusy",
+        "",
+        "Drevo, jantár a citrusy",
+        ""
+      ],
+      "pear": [
+        "Frézia a hruška",
+        "",
+        "Frézia a hruška",
+        ""
+      ],
+      "apple": [
+        "Jablko, frézia a škorica",
+        "",
+        "Jablko, frézia a škorica",
+        ""
+      ],
+      "oil": [
+        "Vonný olej do aromalampy",
+        "",
+        "Vonný olej do aromalampy",
+        ""
+      ],
+      "patchouli": [
+        "Pačuli do aromalampy",
+        "",
+        "Pačuli do aromalampy",
+        ""
+      ],
+      "yogurt": [
+        "Hruškový jogurt do aromalampy",
+        "",
+        "Hruškový jogurt do aromalampy",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Akú formu vône chcete?",
+        "",
+        "Vône do interiéru"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "reeds": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "wood": [
+        "/assets/s5/esodrogeria/wood.jpg"
+      ],
+      "pear": [
+        "/assets/s5/esodrogeria/pear.png"
+      ],
+      "apple": [
+        "/assets/s5/esodrogeria/apple.jpg"
+      ],
+      "oil": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "patchouli": [
+        "/assets/s5/esodrogeria/patchouli.png"
+      ],
+      "yogurt": [
+        "/assets/s5/esodrogeria/yogurt.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "wood",
+      "pear"
+    ],
+    "segmentText": {
+      "entryNote": "Vône do interiéru · konkrétne balenie · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi vybrať vôňu do interiéru.",
+      "lead": "Výber rozlišuje hotovú vôňu s tyčinkami a olej do aromalampy. Ukáže konkrétnu fotografiu, charakter vône, presné balenie, cenu a odkaz.",
+      "includedChat": "Typy interiérových vôní, balenia a ceny.",
+      "includedAdvisor": "Výber formy interiérovej vône a porovnanie kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "esodrogeria-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "wood": "pear",
+        "pear": "apple",
+        "apple": "wood",
+        "patchouli": "yogurt",
+        "yogurt": "patchouli"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/esodrogeria.js",
+  "backendBrand": "esodrogeria",
+  "offlineRules": [
+    {
+      "chip": "Drevo a citrusy",
+      "match": "drevo|citrus",
+      "productIds": [
+        "wood"
+      ]
+    },
+    {
+      "chip": "Frézia a hruška",
+      "match": "frezi|hrusk",
+      "productIds": [
+        "pear"
+      ]
+    },
+    {
+      "chip": "Olej s pačuli",
+      "match": "olej|pacul",
+      "productIds": [
+        "patchouli"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch2-20261115/candidate-packages/esodrogeria/ui-review.css",
+    "destination": "n447/s5/brands/esodrogeria.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/esodrogeria.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_OFFICIAL_REVENUE",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "room-fragrance-explicit-reeds-or-aroma-oil",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "requiredBackendInstruction": "Roomreedfragrances versus roomaromaoils explicitlydistinct; neverpersonalperfume/laundry, neveringest or useonskin. Oilsnotpersonal samples;10ml fullretail. No generic electricdiffuser compatibility. No health/aromatherapy/aircleaning/infant/pet/pregnancy, guaranteeoflasting claims. NightFlowerflatnotes notconflictingpyramid.",
+    "workerTouchedSharedBackend": false
+  }
+}

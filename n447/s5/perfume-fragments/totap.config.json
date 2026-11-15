@@ -1,0 +1,229 @@
+{
+  "slug": "totap",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "36b79763dc5e7159bdc2fb05f91075825afd22a9",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/totap.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Pižmo a jablko",
+    "Růže a oud",
+    "Káva a vanilka",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Pižmo a jablko",
+      "match": "pizmo|jablk",
+      "productIds": [
+        "1"
+      ]
+    },
+    {
+      "chip": "Růže a oud",
+      "match": "ruze|oud",
+      "productIds": [
+        "2"
+      ]
+    },
+    {
+      "chip": "Káva a vanilka",
+      "match": "kav|vanilk",
+      "productIds": [
+        "4"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "1",
+    "4"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "10/30ml prices published but exact variant stock not captured, no invented availableaddon. Distinct alternative+comparison only."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "toTap",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/totap/logo.svg",
+      "header": "/assets/s5/totap/logo.svg",
+      "avatar": "/assets/s5/totap/avatar.svg"
+    },
+    "brand": {
+      "name": "toTap",
+      "domain": "totap.cz",
+      "website": "https://www.totap.cz/",
+      "lang": "cs",
+      "fullName": "toTap",
+      "url": "https://www.totap.cz/",
+      "logo": "/assets/s5/totap/logo.svg",
+      "mark": "/assets/s5/totap/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Pižmo a jablko",
+        "Růže a oud",
+        "Káva a vanilka",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#6a520c",
+        "accent": "#e8c237",
+        "soft": "#fff9dd",
+        "paper": "#fff",
+        "ink": "#312c1d",
+        "line": "#e8dfbd"
+      }
+    },
+    "traitCopy": {
+      "flowers": [
+        "Pižmo nebo růže",
+        "",
+        "Pižmo nebo růže",
+        ""
+      ],
+      "1": [
+        "Hruška, jablko a pižmo",
+        "",
+        "Hruška, jablko a pižmo",
+        ""
+      ],
+      "2": [
+        "Růže, oud a vanilka",
+        "",
+        "Růže, oud a vanilka",
+        ""
+      ],
+      "unusual": [
+        "Káva nebo zemitý charakter",
+        "",
+        "Káva nebo zemitý charakter",
+        ""
+      ],
+      "4": [
+        "Růže, káva a vanilka",
+        "",
+        "Růže, káva a vanilka",
+        ""
+      ],
+      "3": [
+        "Řepa, růže a vetiver",
+        "",
+        "Řepa, růže a vetiver",
+        ""
+      ],
+      "resin": [
+        "Pryskyřice, dřevo a koření",
+        "",
+        "Pryskyřice, dřevo a koření",
+        ""
+      ],
+      "5": [
+        "Pryskyřice, kadidlo a ambra",
+        "",
+        "Pryskyřice, kadidlo a ambra",
+        ""
+      ],
+      "6": [
+        "Koření, květiny a santalové dřevo",
+        "",
+        "Koření, květiny a santalové dřevo",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "flowers": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "1": [
+        "/assets/s5/totap/1.png"
+      ],
+      "2": [
+        "/assets/s5/totap/2.png"
+      ],
+      "unusual": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "4": [
+        "/assets/s5/totap/4.png"
+      ],
+      "3": [
+        "/assets/s5/totap/3.png"
+      ],
+      "resin": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "5": [
+        "/assets/s5/totap/5.png"
+      ],
+      "6": [
+        "/assets/s5/totap/6.png"
+      ]
+    },
+    "compareProductIds": [
+      "1",
+      "4"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "totap-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "1": "2",
+        "2": "1",
+        "4": "3",
+        "3": "4",
+        "5": "6",
+        "6": "5"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

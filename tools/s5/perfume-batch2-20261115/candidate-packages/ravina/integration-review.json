@@ -1,0 +1,202 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "RAVINA",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/ravina/logo.png",
+      "header": "/assets/s5/ravina/logo.png",
+      "avatar": "/assets/s5/ravina/avatar.svg"
+    },
+    "brand": {
+      "name": "RAVINA",
+      "domain": "ravina.cz",
+      "website": "https://ravina.cz/",
+      "lang": "cs",
+      "fullName": "RAVINA",
+      "url": "https://ravina.cz/",
+      "logo": "/assets/s5/ravina/logo.png",
+      "mark": "/assets/s5/ravina/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Rybíz a vanilka",
+        "Káva a jasmín",
+        "Fialka a grapefruit",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#543446",
+        "accent": "#d6b16b",
+        "soft": "#f9f0f5",
+        "paper": "#fff",
+        "ink": "#352632",
+        "line": "#e8d8e2"
+      }
+    },
+    "traitCopy": {
+      "sweet": [
+        "Ovoce a sladší základ",
+        "",
+        "Ovoce a sladší základ",
+        ""
+      ],
+      "berry": [
+        "Černý rybíz, růže a vanilka",
+        "",
+        "Černý rybíz, růže a vanilka",
+        ""
+      ],
+      "coffee": [
+        "Káva, jasmín a vanilka",
+        "",
+        "Káva, jasmín a vanilka",
+        ""
+      ],
+      "flowers": [
+        "Květiny a citrusová svěžest",
+        "",
+        "Květiny a citrusová svěžest",
+        ""
+      ],
+      "violet": [
+        "Fialka, grapefruit a jahoda",
+        "",
+        "Fialka, grapefruit a jahoda",
+        ""
+      ],
+      "lily": [
+        "Citrusy, lilie a pižmový základ",
+        "",
+        "Citrusy, lilie a pižmový základ",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "sweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "berry": [
+        "/assets/s5/ravina/berry.jpg"
+      ],
+      "coffee": [
+        "/assets/s5/ravina/coffee.jpg"
+      ],
+      "flowers": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "violet": [
+        "/assets/s5/ravina/violet.png"
+      ],
+      "lily": [
+        "/assets/s5/ravina/lily.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "berry",
+      "coffee"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "ravina-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "berry": "coffee",
+        "coffee": "berry",
+        "violet": "lily",
+        "lily": "violet"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/ravina.js",
+  "backendBrand": "ravina",
+  "offlineRules": [
+    {
+      "chip": "Rybíz a vanilka",
+      "match": "rybiz|vanilk",
+      "productIds": [
+        "berry"
+      ]
+    },
+    {
+      "chip": "Káva a jasmín",
+      "match": "kav|jasmin",
+      "productIds": [
+        "coffee"
+      ]
+    },
+    {
+      "chip": "Fialka a grapefruit",
+      "match": "fialk|grapefruit",
+      "productIds": [
+        "violet"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch2-20261115/candidate-packages/ravina/ui-review.css",
+    "destination": "n447/s5/brands/ravina.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/ravina.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "personal-inspired-fragrance",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "photoReviewRequired": "PublisheraltPREMIUM vsselectedSTANDARD. ActualofficialphotosAPAR50ml, some designerinspirationinset. PreservevisibleownAPARnotdesignerdisclosure. Fouractualdifferentpixelassets.",
+    "requiredBackendInstruction": "APARowninspiredfragrances, neverdesigneroriginal/equivalence/guaranteedattractionor duration. Selected50mlSTANDARD269CZK variants only. F002/F271soldout excluded. MALSsameoperatoronecompany. Photosillustrativeofficialgallerywithsomeinspirationinsets, not promiseddesignerbottleincluded.",
+    "workerTouchedSharedBackend": false
+  }
+}

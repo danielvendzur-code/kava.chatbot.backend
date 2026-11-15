@@ -39,4 +39,4 @@ body[data-series=s5][data-cosmetics-demo=kvapkavoni] #cx-widget .fr-compare-cols
 
 body[data-series=s5][data-cosmetics-demo=kvapkavoni] #cx-widget .fr-extra-pack-photo{width:44px;height:70px;object-fit:contain;flex:none;border-radius:6px;background:white}
 
-body[data-series=s5][data-cosmetics-demo=kvapkavoni] #cosmetics-root#cosmetics-root img.cx-logo{filter:none!important;object-fit:contain!important;background:white;padding:4px 10px;border-radius:6px;box-sizing:border-box}
+body[data-series=s5][data-cosmetics-demo=kvapkavoni] #cosmetics-root#cosmetics-root img.cx-logo{filter:none!important;object-fit:contain!important;background:#173c50;padding:0 8px;width:130px;height:52px;border-radius:6px;box-sizing:border-box}

@@ -1,0 +1,201 @@
+{
+  "slug": "vunebis",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "1080c660b93c9fadc368767ec90938dbf7541dc9",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/vunebis.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Pižmo a vanilka",
+    "Lilie a pačuli",
+    "Kosatec a pižmo",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Pižmo a vanilka",
+      "match": "pizmo|vanilk",
+      "productIds": [
+        "musk"
+      ]
+    },
+    {
+      "chip": "Lilie a pačuli",
+      "match": "lili|pacul",
+      "productIds": [
+        "lily"
+      ]
+    },
+    {
+      "chip": "Kosatec a pižmo",
+      "match": "kosat",
+      "productIds": [
+        "iris"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "musk",
+    "lily"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "No independently verified optional compatible SKUavailability."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Vůně BIS",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/vunebis/logo.svg",
+      "header": "/assets/s5/vunebis/logo.svg",
+      "avatar": "/assets/s5/vunebis/avatar.svg"
+    },
+    "brand": {
+      "name": "Vůně BIS",
+      "domain": "vunebis.cz",
+      "website": "https://www.vunebis.cz/",
+      "lang": "cs",
+      "fullName": "Vůně BIS",
+      "url": "https://www.vunebis.cz/",
+      "logo": "/assets/s5/vunebis/logo.svg",
+      "mark": "/assets/s5/vunebis/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně na prádlo, jejich balení a ceny.",
+      "quickChips": [
+        "Pižmo a vanilka",
+        "Lilie a pačuli",
+        "Kosatec a pižmo",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#244c43",
+        "accent": "#d5b66f",
+        "soft": "#f1f7f4",
+        "paper": "#fff",
+        "ink": "#23392f",
+        "line": "#d9e6df"
+      }
+    },
+    "traitCopy": {
+      "soft": [
+        "Květiny a pižmový základ",
+        "",
+        "Květiny a pižmový základ",
+        ""
+      ],
+      "musk": [
+        "Bílý květ, pižmo a vanilka",
+        "",
+        "Bílý květ, pižmo a vanilka",
+        ""
+      ],
+      "flowers": [
+        "Bílé květiny, frézie a růže",
+        "",
+        "Bílé květiny, frézie a růže",
+        ""
+      ],
+      "iris": [
+        "Kosatec, vanilka a pižmo",
+        "",
+        "Kosatec, vanilka a pižmo",
+        ""
+      ],
+      "wood": [
+        "Zelená vůně, jantar a santal",
+        "",
+        "Zelená vůně, jantar a santal",
+        ""
+      ],
+      "lily": [
+        "Bílá lilie, pačuli a cedr",
+        "",
+        "Bílá lilie, pačuli a cedr",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "soft": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "musk": [
+        "/assets/s5/vunebis/musk.png"
+      ],
+      "flowers": [
+        "/assets/s5/vunebis/flowers.png"
+      ],
+      "iris": [
+        "/assets/s5/vunebis/iris.jpg"
+      ],
+      "wood": [
+        "/assets/s5/vunebis/wood.jpg"
+      ],
+      "lily": [
+        "/assets/s5/vunebis/lily.png"
+      ]
+    },
+    "compareProductIds": [
+      "musk",
+      "lily"
+    ],
+    "segmentText": {
+      "entryNote": "Vůně na prádlo · konkrétní balení · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi vybrat vůni na prádlo podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní parfém na prádlo s fotografií, charakterem vůně, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné profily, balení a ceny parfémů na prádlo.",
+      "includedAdvisor": "Výběr vůně na prádlo a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "vunebis-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "musk": "flowers",
+        "flowers": "iris",
+        "iris": "musk",
+        "lily": "wood",
+        "wood": "lily"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

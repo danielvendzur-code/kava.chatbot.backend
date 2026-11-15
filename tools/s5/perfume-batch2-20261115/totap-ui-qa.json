@@ -1,0 +1,980 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-15T16:00:23.931831+00:00",
+  "qaType": "Localimmutablefixture/sourceIDmock, notintegrated/livePreview",
+  "paidModelCalls": 0,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "results": [
+    {
+      "slug": "totap",
+      "width": 320,
+      "id": "1",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/anit#1977",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-1-320.png"
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "id": "2",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/arat#1974",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-2-320.png"
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "id": "3",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/kyoto#1965",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-3-320.png"
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "id": "4",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/cafe#1962",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-4-320.png"
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "id": "5",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/abra#1959",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-5-320.png"
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "id": "6",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/sanblu#1864",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-6-320.png"
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "id": "1",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/anit#1977",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-1-390.png"
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "id": "2",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/arat#1974",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-2-390.png"
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "id": "3",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/kyoto#1965",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-3-390.png"
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "id": "4",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/cafe#1962",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-4-390.png"
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "id": "5",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/abra#1959",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-5-390.png"
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "id": "6",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/sanblu#1864",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-6-390.png"
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "id": "1",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/anit#1977",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-1-1280.png"
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "id": "2",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/arat#1974",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-2-1280.png"
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "id": "3",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/kyoto#1965",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-3-1280.png"
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "id": "4",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/cafe#1962",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-4-1280.png"
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "id": "5",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/abra#1959",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-5-1280.png"
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "id": "6",
+      "pack": "50 ml",
+      "price": "409 Kč",
+      "url": "https://www.totap.cz/p/sanblu#1864",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "totap-result-6-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "totap",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "flowers",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "unusual",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "resin",
+          "photo": "/assets/s3/scenes-k2/pine.jpg"
+        }
+      ],
+      "screenshot": "totap-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "1",
+          "photo": "/assets/s5/totap/1.png"
+        },
+        {
+          "id": "2",
+          "photo": "/assets/s5/totap/2.png"
+        }
+      ],
+      "screenshot": "totap-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "3",
+          "photo": "/assets/s5/totap/3.png"
+        },
+        {
+          "id": "4",
+          "photo": "/assets/s5/totap/4.png"
+        }
+      ],
+      "screenshot": "totap-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "5",
+          "photo": "/assets/s5/totap/5.png"
+        },
+        {
+          "id": "6",
+          "photo": "/assets/s5/totap/6.png"
+        }
+      ],
+      "screenshot": "totap-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "flowers",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "unusual",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "resin",
+          "photo": "/assets/s3/scenes-k2/pine.jpg"
+        }
+      ],
+      "screenshot": "totap-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "1",
+          "photo": "/assets/s5/totap/1.png"
+        },
+        {
+          "id": "2",
+          "photo": "/assets/s5/totap/2.png"
+        }
+      ],
+      "screenshot": "totap-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "3",
+          "photo": "/assets/s5/totap/3.png"
+        },
+        {
+          "id": "4",
+          "photo": "/assets/s5/totap/4.png"
+        }
+      ],
+      "screenshot": "totap-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "5",
+          "photo": "/assets/s5/totap/5.png"
+        },
+        {
+          "id": "6",
+          "photo": "/assets/s5/totap/6.png"
+        }
+      ],
+      "screenshot": "totap-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "flowers",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "unusual",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "resin",
+          "photo": "/assets/s3/scenes-k2/pine.jpg"
+        }
+      ],
+      "screenshot": "totap-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "1",
+          "photo": "/assets/s5/totap/1.png"
+        },
+        {
+          "id": "2",
+          "photo": "/assets/s5/totap/2.png"
+        }
+      ],
+      "screenshot": "totap-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "3",
+          "photo": "/assets/s5/totap/3.png"
+        },
+        {
+          "id": "4",
+          "photo": "/assets/s5/totap/4.png"
+        }
+      ],
+      "screenshot": "totap-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "5",
+          "photo": "/assets/s5/totap/5.png"
+        },
+        {
+          "id": "6",
+          "photo": "/assets/s5/totap/6.png"
+        }
+      ],
+      "screenshot": "totap-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "totap",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "1",
+        "4"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "totap-compare-320.png"
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "1",
+        "4"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "totap-compare-390.png"
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "1",
+        "4"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "totap-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "noteProfiles": [
+    {
+      "slug": "totap",
+      "id": "1",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "hruška, jablko, citrusy",
+        "pižmo, mech, jasmín",
+        "dřevo, pižmo, ambra"
+      ],
+      "screenshot": "totap-note-profile-1-320.png"
+    },
+    {
+      "slug": "totap",
+      "id": "2",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "růže",
+        "růže",
+        "oud, pačuli, vanilka"
+      ],
+      "screenshot": "totap-note-profile-2-320.png"
+    },
+    {
+      "slug": "totap",
+      "id": "3",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "řepa",
+        "růže",
+        "vetiver, kadidlo"
+      ],
+      "screenshot": "totap-note-profile-3-320.png"
+    },
+    {
+      "slug": "totap",
+      "id": "4",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "květinové tóny",
+        "růže, káva",
+        "vanilka, pižmo, ambra"
+      ],
+      "screenshot": "totap-note-profile-4-320.png"
+    },
+    {
+      "slug": "totap",
+      "id": "5",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "pryskyřice",
+        "kadidlo, vanilka",
+        "ambra, dřevité tóny"
+      ],
+      "screenshot": "totap-note-profile-5-320.png"
+    },
+    {
+      "slug": "totap",
+      "id": "6",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "koření, skořice, kmín, pískavice",
+        "ylang - ylang, jasmín, růže",
+        "santalové dřevo, pryskyřice, cedr, pižmo, oud"
+      ],
+      "screenshot": "totap-note-profile-6-320.png"
+    },
+    {
+      "slug": "totap",
+      "id": "1",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "hruška, jablko, citrusy",
+        "pižmo, mech, jasmín",
+        "dřevo, pižmo, ambra"
+      ],
+      "screenshot": "totap-note-profile-1-390.png"
+    },
+    {
+      "slug": "totap",
+      "id": "2",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "růže",
+        "růže",
+        "oud, pačuli, vanilka"
+      ],
+      "screenshot": "totap-note-profile-2-390.png"
+    },
+    {
+      "slug": "totap",
+      "id": "3",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "řepa",
+        "růže",
+        "vetiver, kadidlo"
+      ],
+      "screenshot": "totap-note-profile-3-390.png"
+    },
+    {
+      "slug": "totap",
+      "id": "4",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "květinové tóny",
+        "růže, káva",
+        "vanilka, pižmo, ambra"
+      ],
+      "screenshot": "totap-note-profile-4-390.png"
+    },
+    {
+      "slug": "totap",
+      "id": "5",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "pryskyřice",
+        "kadidlo, vanilka",
+        "ambra, dřevité tóny"
+      ],
+      "screenshot": "totap-note-profile-5-390.png"
+    },
+    {
+      "slug": "totap",
+      "id": "6",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "koření, skořice, kmín, pískavice",
+        "ylang - ylang, jasmín, růže",
+        "santalové dřevo, pryskyřice, cedr, pižmo, oud"
+      ],
+      "screenshot": "totap-note-profile-6-390.png"
+    },
+    {
+      "slug": "totap",
+      "id": "1",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "hruška, jablko, citrusy",
+        "pižmo, mech, jasmín",
+        "dřevo, pižmo, ambra"
+      ],
+      "screenshot": "totap-note-profile-1-1280.png"
+    },
+    {
+      "slug": "totap",
+      "id": "2",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "růže",
+        "růže",
+        "oud, pačuli, vanilka"
+      ],
+      "screenshot": "totap-note-profile-2-1280.png"
+    },
+    {
+      "slug": "totap",
+      "id": "3",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "řepa",
+        "růže",
+        "vetiver, kadidlo"
+      ],
+      "screenshot": "totap-note-profile-3-1280.png"
+    },
+    {
+      "slug": "totap",
+      "id": "4",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "květinové tóny",
+        "růže, káva",
+        "vanilka, pižmo, ambra"
+      ],
+      "screenshot": "totap-note-profile-4-1280.png"
+    },
+    {
+      "slug": "totap",
+      "id": "5",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "pryskyřice",
+        "kadidlo, vanilka",
+        "ambra, dřevité tóny"
+      ],
+      "screenshot": "totap-note-profile-5-1280.png"
+    },
+    {
+      "slug": "totap",
+      "id": "6",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "koření, skořice, kmín, pískavice",
+        "ylang - ylang, jasmín, růže",
+        "santalové dřevo, pryskyřice, cedr, pižmo, oud"
+      ],
+      "screenshot": "totap-note-profile-6-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "totap",
+      "width": 320,
+      "id": "1",
+      "defaultScreenshot": "totap-result-1-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-1-320.png",
+      "comparisonIds": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "id": "2",
+      "defaultScreenshot": "totap-result-2-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-2-320.png",
+      "comparisonIds": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "id": "3",
+      "defaultScreenshot": "totap-result-3-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-3-320.png",
+      "comparisonIds": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "id": "4",
+      "defaultScreenshot": "totap-result-4-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-4-320.png",
+      "comparisonIds": [
+        "4",
+        "3"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "id": "5",
+      "defaultScreenshot": "totap-result-5-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-5-320.png",
+      "comparisonIds": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 320,
+      "id": "6",
+      "defaultScreenshot": "totap-result-6-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-6-320.png",
+      "comparisonIds": [
+        "6",
+        "5"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "id": "1",
+      "defaultScreenshot": "totap-result-1-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-1-390.png",
+      "comparisonIds": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "id": "2",
+      "defaultScreenshot": "totap-result-2-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-2-390.png",
+      "comparisonIds": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "id": "3",
+      "defaultScreenshot": "totap-result-3-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-3-390.png",
+      "comparisonIds": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "id": "4",
+      "defaultScreenshot": "totap-result-4-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-4-390.png",
+      "comparisonIds": [
+        "4",
+        "3"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "id": "5",
+      "defaultScreenshot": "totap-result-5-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-5-390.png",
+      "comparisonIds": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 390,
+      "id": "6",
+      "defaultScreenshot": "totap-result-6-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-6-390.png",
+      "comparisonIds": [
+        "6",
+        "5"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "id": "1",
+      "defaultScreenshot": "totap-result-1-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-1-1280.png",
+      "comparisonIds": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "id": "2",
+      "defaultScreenshot": "totap-result-2-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-2-1280.png",
+      "comparisonIds": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "id": "3",
+      "defaultScreenshot": "totap-result-3-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-3-1280.png",
+      "comparisonIds": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "id": "4",
+      "defaultScreenshot": "totap-result-4-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-4-1280.png",
+      "comparisonIds": [
+        "4",
+        "3"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "id": "5",
+      "defaultScreenshot": "totap-result-5-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-5-1280.png",
+      "comparisonIds": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "slug": "totap",
+      "width": 1280,
+      "id": "6",
+      "defaultScreenshot": "totap-result-6-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "totap-pair-6-1280.png",
+      "comparisonIds": [
+        "6",
+        "5"
+      ]
+    }
+  ],
+  "allCompanyRequestedResultsPassed": true,
+  "company": "totap",
+  "finalResultViews": 18,
+  "complete": true,
+  "visualReview": "All finalresult screenshots at320/390/1280 manuallyvisuallyreviewed"
+}

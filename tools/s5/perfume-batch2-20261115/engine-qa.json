@@ -1016,6 +1016,338 @@
       ],
       "formulaCount": 4,
       "status": "PASS"
+    },
+    "vunebis": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "soft",
+            "fragranceProfile": "musk"
+          },
+          "id": "musk",
+          "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-tresor-muschio-bianco-parfem-na-pradlo-50-ml-2/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "soft",
+            "fragranceProfile": "flowers"
+          },
+          "id": "flowers",
+          "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-06-premiovy-parfem-na-pradlo-50-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "soft",
+            "fragranceProfile": "iris"
+          },
+          "id": "iris",
+          "url": "https://www.vunebis.cz/parfemy-na-pradlo/vune-na-pradlo-do-pracky-a-susicky-50-ml-jarni-svezest/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "lily"
+          },
+          "id": "lily",
+          "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-03-premiovy-parfem-na-pradlo-50-davek/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood",
+            "fragranceProfile": "wood"
+          },
+          "id": "wood",
+          "url": "https://www.vunebis.cz/parfemy-na-pradlo/parfem-na-pradlo-blue-dream-50-davek/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "soft",
+              "wood"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "soft"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "musk",
+              "flowers",
+              "iris"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "wood"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "lily",
+              "wood"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 5,
+      "status": "PASS"
+    },
+    "esodrogeria": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "reeds",
+            "fragranceProfile": "wood"
+          },
+          "id": "wood",
+          "url": "https://www.esodrogeria.eu/Tesori-d-Oriente-vonne-tycinky-ayurveda-200ml-d1251.htm"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "reeds",
+            "fragranceProfile": "pear"
+          },
+          "id": "pear",
+          "url": "https://www.esodrogeria.eu/Bispol-DZ230-326-vonny-difuzer-Frezia-hruska-230ml-d942.htm"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "reeds",
+            "fragranceProfile": "apple"
+          },
+          "id": "apple",
+          "url": "https://www.esodrogeria.eu/Bispol-AD-001-465-vonny-difuzer-nocny-kvet-50ml-d18959.htm"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "oil",
+            "fragranceProfile": "patchouli"
+          },
+          "id": "patchouli",
+          "url": "https://www.esodrogeria.eu/Aromaticky-olej-Paculi-10ml-d689.htm"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "oil",
+            "fragranceProfile": "yogurt"
+          },
+          "id": "yogurt",
+          "url": "https://www.esodrogeria.eu/Aromaticky-olej-Hruskovy-jogurt-10ml-d1169.htm"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "reeds",
+              "oil"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "reeds"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "wood",
+              "pear",
+              "apple"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "oil"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "patchouli",
+              "yogurt"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 5,
+      "status": "PASS"
+    },
+    "candella": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "orange"
+          },
+          "id": "orange",
+          "url": "https://www.candella.sk/product/bitter-orange-sojova-sviecka"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "peach"
+          },
+          "id": "peach",
+          "url": "https://www.candella.sk/product/rose-champagne-sojova-sviecka"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit",
+            "fragranceProfile": "gin"
+          },
+          "id": "gin",
+          "url": "https://www.candella.sk/product/gin-tonic-sojova-sviecka"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "herbs"
+          },
+          "id": "herbs",
+          "url": "https://www.candella.sk/product/eukalyptus-sojova-sviecka-1"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "spice"
+          },
+          "id": "spice",
+          "url": "https://www.candella.sk/product/vianocna-skorica-sojova-sviecka"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "vanilla"
+          },
+          "id": "vanilla",
+          "url": "https://www.candella.sk/product/madagaskarska-vanilka-sojova-sviecka"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fruit",
+              "warm"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fruit"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "orange",
+              "peach",
+              "gin"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "herbs",
+              "spice",
+              "vanilla"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    },
+    "ravina": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "berry"
+          },
+          "id": "berry",
+          "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-giorgio-armani-si/948-1096-imitace-damske-parfemy-apar-f001-inspirovane-armani-si.html#/1-objem-50_ml_standard"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "coffee"
+          },
+          "id": "coffee",
+          "url": "https://ravina.cz/damsky-parfem-apar-inspirovany-yves-saint-laurent/899-1281-damsky-parfem-apar-f219-inspirovany-yves-saint-laurent-black-opium-parfemovana-voda.html#/1-objem-50_ml_standard"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "violet"
+          },
+          "id": "violet",
+          "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-marc-jacobs/720-1226-damsky-parfem-apar-f163-inspirovane-marc-jacobs-daisy.html#/1-objem-50_ml_standard"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "lily"
+          },
+          "id": "lily",
+          "url": "https://ravina.cz/378-1-damsky-parfem-apar-f065-standard-inspirovano-abercrombie-fitch-8.html#/1-objem-50_ml_standard"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "sweet",
+              "flowers"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "berry",
+              "coffee"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "violet",
+              "lily"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 4,
+      "status": "PASS"
     }
   }
 }

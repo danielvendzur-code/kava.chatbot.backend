@@ -1,0 +1,46 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "flowers",
+      "label": "Květinový charakter",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "2",
+          "label": "Dominantní arabský jasmín",
+          "productId": "2",
+          "sourceUrl": "https://www.alma.cz/bohyne-prirodni-olejovy-parfem/"
+        },
+        {
+          "value": "4",
+          "label": "Vůně damašské růže",
+          "productId": "4",
+          "sourceUrl": "https://www.alma.cz/laska/"
+        }
+      ]
+    },
+    {
+      "value": "contrast",
+      "label": "Ovocná svěžest nebo orient",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "1",
+          "label": "Citrusy, rybíz a tabák",
+          "productId": "1",
+          "sourceUrl": "https://www.alma.cz/esse/"
+        },
+        {
+          "value": "3",
+          "label": "Sladce svěží s orientálním nádechem",
+          "productId": "3",
+          "sourceUrl": "https://www.alma.cz/magicka/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aká vôňa je vám blízka?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Sviežosť a drevitý základ",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "1",
+          "label": "Citrusy, ihličie a drevitý základ",
+          "productId": "1",
+          "sourceUrl": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fior-di-pulito#99"
+        },
+        {
+          "value": "6",
+          "label": "Morské tóny, bergamot a santal",
+          "productId": "6",
+          "sourceUrl": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-brezza-marina-morsky-vanok#131"
+        }
+      ]
+    },
+    {
+      "value": "flower",
+      "label": "Kvety alebo pižmo",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "2",
+          "label": "Biele pižmo, mach a biele kvety",
+          "productId": "2",
+          "sourceUrl": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-muschio-bianco-biele-pizmo#151"
+        },
+        {
+          "value": "4",
+          "label": "Exotické kvety, grapefruit a ananás",
+          "productId": "4",
+          "sourceUrl": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-monoi#167"
+        },
+        {
+          "value": "5",
+          "label": "Citrusy a pomarančové kvety",
+          "productId": "5",
+          "sourceUrl": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fiori-d-arancio-pomarancove-kvety#111"
+        }
+      ]
+    }
+  ]
+}

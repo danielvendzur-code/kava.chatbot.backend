@@ -17,7 +17,7 @@ def source(r,kind,pack,price,stock,notes,original,photoEvidence,extra=None):
  if extra:d.update(extra)
  return d
 def record(pid,name,url,pack,price,currency,kind,profile,photoPath,source):
- return {'id':pid,'name':name,'url':url,'priceAmount':price,'price':(f'{price:.2f}'.replace('.',',')+' €') if currency=='EUR' else f'{price:g} Kč','currency':currency,'volume':pack,'category':'fragrance','kind':kind,'tags':[],'available':True,'isSample':False,'description':profile+'.','reason':profile+'.','photo':photoPath,'source':source}
+ return {'id':pid,'name':name,'url':url,'priceAmount':price,'price':(f'{price:.2f}'.replace('.',',')+' €') if currency=='EUR' else ((f'{price:.2f}'.replace('.',',') if float(price)%1 else f'{price:g}')+' Kč'),'currency':currency,'volume':pack,'category':'fragrance','kind':kind,'tags':[],'available':True,'isSample':False,'description':profile+'.','reason':profile+'.','photo':photoPath,'source':source}
 def logo_url(raw):
  t=html.fromstring(raw.decode('utf8'));ls=t.xpath('//img[contains(@src,"/user/logos/")]/@src');return ls[0] if ls else None
 def patch_alternatives(slug,products):

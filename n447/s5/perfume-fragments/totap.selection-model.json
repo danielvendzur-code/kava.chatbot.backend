@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "flowers",
+      "label": "Pižmo nebo růže",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "1",
+          "label": "Hruška, jablko a pižmo",
+          "productId": "1",
+          "sourceUrl": "https://www.totap.cz/p/anit#1977"
+        },
+        {
+          "value": "2",
+          "label": "Růže, oud a vanilka",
+          "productId": "2",
+          "sourceUrl": "https://www.totap.cz/p/arat#1974"
+        }
+      ]
+    },
+    {
+      "value": "unusual",
+      "label": "Káva nebo zemitý charakter",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "4",
+          "label": "Růže, káva a vanilka",
+          "productId": "4",
+          "sourceUrl": "https://www.totap.cz/p/cafe#1962"
+        },
+        {
+          "value": "3",
+          "label": "Řepa, růže a vetiver",
+          "productId": "3",
+          "sourceUrl": "https://www.totap.cz/p/kyoto#1965"
+        }
+      ]
+    },
+    {
+      "value": "resin",
+      "label": "Pryskyřice, dřevo a koření",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "5",
+          "label": "Pryskyřice, kadidlo a ambra",
+          "productId": "5",
+          "sourceUrl": "https://www.totap.cz/p/abra#1959"
+        },
+        {
+          "value": "6",
+          "label": "Koření, květiny a santalové dřevo",
+          "productId": "6",
+          "sourceUrl": "https://www.totap.cz/p/sanblu#1864"
+        }
+      ]
+    }
+  ]
+}

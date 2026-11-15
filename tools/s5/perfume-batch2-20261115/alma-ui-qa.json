@@ -1,0 +1,668 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-15T16:01:47.194211+00:00",
+  "qaType": "Localimmutablefixture/sourceIDmock, notintegrated/livePreview",
+  "paidModelCalls": 0,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "results": [
+    {
+      "slug": "alma",
+      "width": 320,
+      "id": "1",
+      "pack": "10 ml",
+      "price": "1390 Kč",
+      "url": "https://www.alma.cz/esse/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-1-320.png"
+    },
+    {
+      "slug": "alma",
+      "width": 320,
+      "id": "3",
+      "pack": "10 ml",
+      "price": "1090 Kč",
+      "url": "https://www.alma.cz/magicka/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-3-320.png"
+    },
+    {
+      "slug": "alma",
+      "width": 320,
+      "id": "2",
+      "pack": "10 ml",
+      "price": "1090 Kč",
+      "url": "https://www.alma.cz/bohyne-prirodni-olejovy-parfem/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-2-320.png"
+    },
+    {
+      "slug": "alma",
+      "width": 320,
+      "id": "4",
+      "pack": "10 ml",
+      "price": "1090 Kč",
+      "url": "https://www.alma.cz/laska/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-4-320.png"
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "id": "1",
+      "pack": "10 ml",
+      "price": "1390 Kč",
+      "url": "https://www.alma.cz/esse/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-1-390.png"
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "id": "3",
+      "pack": "10 ml",
+      "price": "1090 Kč",
+      "url": "https://www.alma.cz/magicka/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-3-390.png"
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "id": "2",
+      "pack": "10 ml",
+      "price": "1090 Kč",
+      "url": "https://www.alma.cz/bohyne-prirodni-olejovy-parfem/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-2-390.png"
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "id": "4",
+      "pack": "10 ml",
+      "price": "1090 Kč",
+      "url": "https://www.alma.cz/laska/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-4-390.png"
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "id": "1",
+      "pack": "10 ml",
+      "price": "1390 Kč",
+      "url": "https://www.alma.cz/esse/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-1-1280.png"
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "id": "3",
+      "pack": "10 ml",
+      "price": "1090 Kč",
+      "url": "https://www.alma.cz/magicka/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-3-1280.png"
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "id": "2",
+      "pack": "10 ml",
+      "price": "1090 Kč",
+      "url": "https://www.alma.cz/bohyne-prirodni-olejovy-parfem/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-2-1280.png"
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "id": "4",
+      "pack": "10 ml",
+      "price": "1090 Kč",
+      "url": "https://www.alma.cz/laska/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-4-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "alma",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "contrast",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "flowers",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "alma-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "alma",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "1",
+          "photo": "/assets/s5/alma/1.jpg"
+        },
+        {
+          "id": "3",
+          "photo": "/assets/s5/alma/3.jpg"
+        }
+      ],
+      "screenshot": "alma-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "alma",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "2",
+          "photo": "/assets/s5/alma/2.jpg"
+        },
+        {
+          "id": "4",
+          "photo": "/assets/s5/alma/4.jpg"
+        }
+      ],
+      "screenshot": "alma-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "contrast",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "flowers",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "alma-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "1",
+          "photo": "/assets/s5/alma/1.jpg"
+        },
+        {
+          "id": "3",
+          "photo": "/assets/s5/alma/3.jpg"
+        }
+      ],
+      "screenshot": "alma-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "2",
+          "photo": "/assets/s5/alma/2.jpg"
+        },
+        {
+          "id": "4",
+          "photo": "/assets/s5/alma/4.jpg"
+        }
+      ],
+      "screenshot": "alma-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "contrast",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "flowers",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "alma-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "1",
+          "photo": "/assets/s5/alma/1.jpg"
+        },
+        {
+          "id": "3",
+          "photo": "/assets/s5/alma/3.jpg"
+        }
+      ],
+      "screenshot": "alma-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "2",
+          "photo": "/assets/s5/alma/2.jpg"
+        },
+        {
+          "id": "4",
+          "photo": "/assets/s5/alma/4.jpg"
+        }
+      ],
+      "screenshot": "alma-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "alma",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "1",
+        "4"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "alma-compare-320.png"
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "1",
+        "4"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "alma-compare-390.png"
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "1",
+        "4"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "alma-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "noteProfiles": [
+    {
+      "slug": "alma",
+      "id": "1",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Citrusy",
+        "rybíz",
+        "tabák"
+      ],
+      "screenshot": "alma-note-profile-1-320.png"
+    },
+    {
+      "slug": "alma",
+      "id": "3",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Sladce svěží s orientálním nádechem"
+      ],
+      "screenshot": "alma-note-profile-3-320.png"
+    },
+    {
+      "slug": "alma",
+      "id": "2",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Dominantní arabský jasmín"
+      ],
+      "screenshot": "alma-note-profile-2-320.png"
+    },
+    {
+      "slug": "alma",
+      "id": "4",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Vůně damašské růže"
+      ],
+      "screenshot": "alma-note-profile-4-320.png"
+    },
+    {
+      "slug": "alma",
+      "id": "1",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Citrusy",
+        "rybíz",
+        "tabák"
+      ],
+      "screenshot": "alma-note-profile-1-390.png"
+    },
+    {
+      "slug": "alma",
+      "id": "3",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Sladce svěží s orientálním nádechem"
+      ],
+      "screenshot": "alma-note-profile-3-390.png"
+    },
+    {
+      "slug": "alma",
+      "id": "2",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Dominantní arabský jasmín"
+      ],
+      "screenshot": "alma-note-profile-2-390.png"
+    },
+    {
+      "slug": "alma",
+      "id": "4",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Vůně damašské růže"
+      ],
+      "screenshot": "alma-note-profile-4-390.png"
+    },
+    {
+      "slug": "alma",
+      "id": "1",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Citrusy",
+        "rybíz",
+        "tabák"
+      ],
+      "screenshot": "alma-note-profile-1-1280.png"
+    },
+    {
+      "slug": "alma",
+      "id": "3",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Sladce svěží s orientálním nádechem"
+      ],
+      "screenshot": "alma-note-profile-3-1280.png"
+    },
+    {
+      "slug": "alma",
+      "id": "2",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Dominantní arabský jasmín"
+      ],
+      "screenshot": "alma-note-profile-2-1280.png"
+    },
+    {
+      "slug": "alma",
+      "id": "4",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Vůně damašské růže"
+      ],
+      "screenshot": "alma-note-profile-4-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "alma",
+      "width": 320,
+      "id": "1",
+      "defaultScreenshot": "alma-result-1-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alma-pair-1-320.png",
+      "comparisonIds": [
+        "1",
+        "3"
+      ]
+    },
+    {
+      "slug": "alma",
+      "width": 320,
+      "id": "3",
+      "defaultScreenshot": "alma-result-3-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alma-pair-3-320.png",
+      "comparisonIds": [
+        "3",
+        "1"
+      ]
+    },
+    {
+      "slug": "alma",
+      "width": 320,
+      "id": "2",
+      "defaultScreenshot": "alma-result-2-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alma-pair-2-320.png",
+      "comparisonIds": [
+        "2",
+        "4"
+      ]
+    },
+    {
+      "slug": "alma",
+      "width": 320,
+      "id": "4",
+      "defaultScreenshot": "alma-result-4-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alma-pair-4-320.png",
+      "comparisonIds": [
+        "4",
+        "2"
+      ]
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "id": "1",
+      "defaultScreenshot": "alma-result-1-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alma-pair-1-390.png",
+      "comparisonIds": [
+        "1",
+        "3"
+      ]
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "id": "3",
+      "defaultScreenshot": "alma-result-3-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alma-pair-3-390.png",
+      "comparisonIds": [
+        "3",
+        "1"
+      ]
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "id": "2",
+      "defaultScreenshot": "alma-result-2-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alma-pair-2-390.png",
+      "comparisonIds": [
+        "2",
+        "4"
+      ]
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "id": "4",
+      "defaultScreenshot": "alma-result-4-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alma-pair-4-390.png",
+      "comparisonIds": [
+        "4",
+        "2"
+      ]
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "id": "1",
+      "defaultScreenshot": "alma-result-1-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alma-pair-1-1280.png",
+      "comparisonIds": [
+        "1",
+        "3"
+      ]
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "id": "3",
+      "defaultScreenshot": "alma-result-3-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alma-pair-3-1280.png",
+      "comparisonIds": [
+        "3",
+        "1"
+      ]
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "id": "2",
+      "defaultScreenshot": "alma-result-2-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alma-pair-2-1280.png",
+      "comparisonIds": [
+        "2",
+        "4"
+      ]
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "id": "4",
+      "defaultScreenshot": "alma-result-4-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "alma-pair-4-1280.png",
+      "comparisonIds": [
+        "4",
+        "2"
+      ]
+    }
+  ],
+  "allCompanyRequestedResultsPassed": true,
+  "company": "alma",
+  "finalResultViews": 12,
+  "complete": true,
+  "visualReview": "All finalresult screenshots at320/390/1280 manuallyvisuallyreviewed"
+}

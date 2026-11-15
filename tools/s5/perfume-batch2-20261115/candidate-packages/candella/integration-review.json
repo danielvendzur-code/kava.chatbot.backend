@@ -1,0 +1,222 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Candella",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/candella/logo.jpg",
+      "header": "/assets/s5/candella/logo.jpg",
+      "avatar": "/assets/s5/candella/avatar.svg"
+    },
+    "brand": {
+      "name": "Candella",
+      "domain": "candella.sk",
+      "website": "https://www.candella.sk/",
+      "lang": "sk",
+      "fullName": "Candella",
+      "url": "https://www.candella.sk/",
+      "logo": "/assets/s5/candella/logo.jpg",
+      "mark": "/assets/s5/candella/avatar.svg",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône sviečok, ich balenia a ceny.",
+      "quickChips": [
+        "Pomaranč a pomelo",
+        "Eukalyptus a rozmarín",
+        "Škorica a kardamóm",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#614c3c",
+        "accent": "#d6b57b",
+        "soft": "#f8f3ed",
+        "paper": "#fff",
+        "ink": "#332b26",
+        "line": "#e7dbcf"
+      }
+    },
+    "traitCopy": {
+      "fruit": [
+        "Ovocné a citrusové vône",
+        "",
+        "Ovocné a citrusové vône",
+        ""
+      ],
+      "orange": [
+        "Pomaranč, pomelo a hrejivé korenie",
+        "",
+        "Pomaranč, pomelo a hrejivé korenie",
+        ""
+      ],
+      "peach": [
+        "Svieža ovocná vôňa s broskyňou",
+        "",
+        "Svieža ovocná vôňa s broskyňou",
+        ""
+      ],
+      "gin": [
+        "Limeta, gin a jalovec",
+        "",
+        "Limeta, gin a jalovec",
+        ""
+      ],
+      "warm": [
+        "Bylinky, korenie alebo vanilka",
+        "",
+        "Bylinky, korenie alebo vanilka",
+        ""
+      ],
+      "herbs": [
+        "Eukalyptus, rozmarín a živicové tóny",
+        "",
+        "Eukalyptus, rozmarín a živicové tóny",
+        ""
+      ],
+      "spice": [
+        "Škorica, klinček a kardamóm",
+        "",
+        "Škorica, klinček a kardamóm",
+        ""
+      ],
+      "vanilla": [
+        "Krémová vanilka, santal a pižmo",
+        "",
+        "Krémová vanilka, santal a pižmo",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fruit": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "orange": [
+        "/assets/s5/candella/orange.jpg"
+      ],
+      "peach": [
+        "/assets/s5/candella/peach.jpg"
+      ],
+      "gin": [
+        "/assets/s5/candella/gin.jpg"
+      ],
+      "warm": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "herbs": [
+        "/assets/s5/candella/herbs.jpg"
+      ],
+      "spice": [
+        "/assets/s5/candella/spice.jpg"
+      ],
+      "vanilla": [
+        "/assets/s5/candella/vanilla.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "orange",
+      "vanilla"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné sviečky · konkrétne balenie · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi vybrať vôňu sviečky podľa jeho vkusu.",
+      "lead": "Výber ukáže konkrétnu sviečku s fotografiou, charakterom vône, balením, cenou a odkazom. Dve odlišné vône možno porovnať.",
+      "includedChat": "Charakter vôní sviečok, balenia a ceny.",
+      "includedAdvisor": "Výber vône sviečky a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "candella-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "orange": "peach",
+        "peach": "gin",
+        "gin": "orange",
+        "herbs": "spice",
+        "spice": "vanilla",
+        "vanilla": "herbs"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/candella.js",
+  "backendBrand": "candella",
+  "offlineRules": [
+    {
+      "chip": "Pomaranč a pomelo",
+      "match": "pomaranc|pomelo",
+      "productIds": [
+        "orange"
+      ]
+    },
+    {
+      "chip": "Eukalyptus a rozmarín",
+      "match": "eukalypt|rozmarin",
+      "productIds": [
+        "herbs"
+      ]
+    },
+    {
+      "chip": "Škorica a kardamóm",
+      "match": "skoric|kardamom",
+      "productIds": [
+        "spice"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch2-20261115/candidate-packages/candella/ui-review.css",
+    "destination": "n447/s5/brands/candella.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/candella.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "VERY_SMALL_REVENUE_COMMERCIAL_REVIEW",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "scented-candle",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "commercialReviewRequired": "Verysmall2025sales4127EUR; do notpromisebuyerinterest/affordability.",
+    "requiredBackendInstruction": "Candles only. Literalverifiedscent/retailprice/145gwaxpack, not personalperfume/laundry. No therapeutic/no-smoke/IFRAsafety/burntimeguarantees. Lid included, notpaidaddon. SellerVATstatusUNKNOWN, notSASHEintermediaryVAT.",
+    "workerTouchedSharedBackend": false
+  }
+}
