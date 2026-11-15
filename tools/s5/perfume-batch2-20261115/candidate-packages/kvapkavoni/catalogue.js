@@ -1,0 +1,742 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.kvapkavoni = {
+ "brand": "Kvapka vôní",
+ "domain": "kvapkavoni.eu",
+ "operator": {
+  "name": "ŠRUBKA, s.r.o.",
+  "ico": "31713467",
+  "country": "SK",
+  "activeNoEnd": true,
+  "aliases": [
+   "srubka.info"
+  ]
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "sk",
+ "country": "SK",
+ "currency": "EUR",
+ "status": "SOURCE_PACKAGE_VERIFIED",
+ "products": [
+  {
+   "id": "1",
+   "name": "Blu Home Fior di Pulito",
+   "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fior-di-pulito#99",
+   "priceAmount": 15.9,
+   "price": "15,90 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Citrusy, ihličie a drevitý základ.",
+   "reason": "Citrusy, ihličie a drevitý základ.",
+   "photo": "/assets/s5/kvapkavoni/1.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fior-di-pulito",
+    "verifiedAt": "2026-11-15T14:55:07.174121+00:00",
+    "sourceSha256": "91788118ee3e982d4cf81d0df6ba8a5e56016f0a40c946d8e39296c8b3d88819",
+    "stock": "InStock",
+    "stockEvidence": {
+     "currency": "EUR",
+     "scope": "Native250ml selected variant, exact public SKU withVat and selected visible Na sklade",
+     "sku": "P00001-3",
+     "variantId": "99",
+     "publisherAvailability": "Na sklade - Doručenie do 24 hodín (platí pre objednávky prijaté do 12:00 h v pracovný deň)",
+     "variantSelectionRequired": true,
+     "quantity": "UNKNOWN_NOT_PUBLISHED"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 15.9,
+     "currency": "EUR",
+     "vatSource": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fior-di-pulito",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://kvapkavoni.s8.cdn-upgates.com/_cache/e/0/e07130ad7e84275579d56dadf6911abc-parfum-na-pranie-blu-home-fior-di-pulito-250-ml.png",
+    "photoEvidence": {
+     "id": "1",
+     "file": "1.png",
+     "url": "https://kvapkavoni.s8.cdn-upgates.com/_cache/e/0/e07130ad7e84275579d56dadf6911abc-parfum-na-pranie-blu-home-fior-di-pulito-250-ml.png",
+     "sha256": "66456ff6718ddd0fdc9f0862b6208dd9c08999105f62c25d8158089b4a293f90",
+     "bytes": 112936,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:56:33.961988+00:00",
+     "width": 826,
+     "height": 826
+    },
+    "fragrance": {
+     "notes": [
+      "citrusy",
+      "borovicové ihličie",
+      "kvetinové tóny",
+      "drevitý základ"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "notesEvidence": {
+      "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fior-di-pulito",
+      "sourceText": "Vonné tóny: citrusy, borovicové ihličie, kvetinové tóny, drevitý základ\n pafum FIOR DI PULITO je intenzívna a osviežujúca vôňa, ktorá spája sviežosť citrusov a borovicového ihličia s jemnými kvetinovými tónmi a hrejivým drevitým základom. Zanecháva bielizeň dokonale čistú, sviežu a nabitú energiou, akoby práve uschla na horskom vánku. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+      "originalSourceText": " pafum FIOR DI PULITO je intenzívna a osviežujúca vôňa, ktorá spája sviežosť citrusov a borovicového ihličia s jemnými kvetinovými tónmi a hrejivým drevitým základom. Zanecháva bielizeň dokonale čistú, sviežu a nabitú energiou, akoby práve uschla na horskom vánku. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "citrusy",
+        "sourceFragments": [
+         "citrusov"
+        ]
+       },
+       {
+        "display": "borovicové ihličie",
+        "sourceFragments": [
+         "borovicového ihličia"
+        ]
+       },
+       {
+        "display": "kvetinové tóny",
+        "sourceFragments": [
+         "kvetinovými tónmi"
+        ]
+       },
+       {
+        "display": "drevitý základ",
+        "sourceFragments": [
+         "drevitým základom"
+        ]
+       }
+      ],
+      "qualification": "Literal Slovak sensory descriptors with explicit grammatical normalization, no invented pyramid/intensity."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "laundry-fragrance",
+    "scent": "Citrusy, ihličie a drevitý základ",
+    "nativeVariantEvidence": {
+     "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fior-di-pulito#99",
+     "checkedAt": "2026-11-15T15:19:43.503878+00:00",
+     "sourceSha256": "7ddaefd5917a5d95e2f5fa8cac68fbcf2c3d864b8cc02b0aa6f5b2aa38516e2c",
+     "actualNormalUiSelection": true
+    },
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "1"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fior-di-pulito#99",
+     "sourceText": "Vonné tóny: citrusy, borovicové ihličie, kvetinové tóny, drevitý základ\n pafum FIOR DI PULITO je intenzívna a osviežujúca vôňa, ktorá spája sviežosť citrusov a borovicového ihličia s jemnými kvetinovými tónmi a hrejivým drevitým základom. Zanecháva bielizeň dokonale čistú, sviežu a nabitú energiou, akoby práve uschla na horskom vánku. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+     "navigationLabel": "Citrusy, ihličie a drevitý základ",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "2",
+   "name": "Blu Home Muschio Bianco",
+   "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-muschio-bianco-biele-pizmo#151",
+   "priceAmount": 15.9,
+   "price": "15,90 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Biele pižmo, mach a biele kvety.",
+   "reason": "Biele pižmo, mach a biele kvety.",
+   "photo": "/assets/s5/kvapkavoni/2.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-muschio-bianco-biele-pizmo",
+    "verifiedAt": "2026-11-15T14:55:07.470659+00:00",
+    "sourceSha256": "a24fc5c4da137fee0ea7c0b415653e4ff67bf36e557f29a7b629cb41ae0d6296",
+    "stock": "InStock",
+    "stockEvidence": {
+     "currency": "EUR",
+     "scope": "Native250ml selected variant, exact public SKU withVat and selected visible Na sklade",
+     "sku": "P00014-3",
+     "variantId": "151",
+     "publisherAvailability": "Na sklade - Doručenie do 24 hodín (platí pre objednávky prijaté do 12:00 h v pracovný deň)",
+     "variantSelectionRequired": true,
+     "quantity": "UNKNOWN_NOT_PUBLISHED"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 15.9,
+     "currency": "EUR",
+     "vatSource": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-muschio-bianco-biele-pizmo",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://kvapkavoni.s8.cdn-upgates.com/_cache/0/3/0358951969a4541b17246b5f157349c7-parfum-na-pranie-blu-home-muschio-bianco-250-ml.png",
+    "photoEvidence": {
+     "id": "2",
+     "file": "2.png",
+     "url": "https://kvapkavoni.s8.cdn-upgates.com/_cache/0/3/0358951969a4541b17246b5f157349c7-parfum-na-pranie-blu-home-muschio-bianco-250-ml.png",
+     "sha256": "744c911a54014865f633597d27000d376fe38dace4731c69269afe344c2b1f1d",
+     "bytes": 106379,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:56:34.619057+00:00",
+     "width": 661,
+     "height": 826
+    },
+    "fragrance": {
+     "notes": [
+      "biele pižmo",
+      "mach",
+      "biele kvety"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "notesEvidence": {
+      "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-muschio-bianco-biele-pizmo",
+      "sourceText": "Vonné tóny: biele pižmo, mach, biele kvety\n parfum MUSCHIO BIANCO ťa očarí jemnou vôňou bieleho pižma, ktorá sa harmonicky prelína s delikátnymi tónmi machu a bielych kvetov. Táto sofistikovaná aróma vytvára v domácnosti atmosféru neprekonateľnej čistoty a sviežosti, pričom zároveň evokuje pocit luxusu a elegancie. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+      "originalSourceText": " parfum MUSCHIO BIANCO ťa očarí jemnou vôňou bieleho pižma, ktorá sa harmonicky prelína s delikátnymi tónmi machu a bielych kvetov. Táto sofistikovaná aróma vytvára v domácnosti atmosféru neprekonateľnej čistoty a sviežosti, pričom zároveň evokuje pocit luxusu a elegancie. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "biele pižmo",
+        "sourceFragments": [
+         "bieleho pižma"
+        ]
+       },
+       {
+        "display": "mach",
+        "sourceFragments": [
+         "machu"
+        ]
+       },
+       {
+        "display": "biele kvety",
+        "sourceFragments": [
+         "bielych kvetov"
+        ]
+       }
+      ],
+      "qualification": "Literal Slovak sensory descriptors with explicit grammatical normalization, no invented pyramid/intensity."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "laundry-fragrance",
+    "scent": "Biele pižmo, mach a biele kvety",
+    "nativeVariantEvidence": {
+     "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-muschio-bianco-biele-pizmo#151",
+     "checkedAt": "2026-11-15T15:15:48.784431+00:00",
+     "sourceSha256": "914dd045400b3009a669b083913c337c5756146ed13e61f810cc0b4ed1122a75",
+     "actualNormalUiSelection": true
+    },
+    "selectionTraits": {
+     "fragranceDirection": "flower",
+     "fragranceProfile": "2"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-muschio-bianco-biele-pizmo#151",
+     "sourceText": "Vonné tóny: biele pižmo, mach, biele kvety\n parfum MUSCHIO BIANCO ťa očarí jemnou vôňou bieleho pižma, ktorá sa harmonicky prelína s delikátnymi tónmi machu a bielych kvetov. Táto sofistikovaná aróma vytvára v domácnosti atmosféru neprekonateľnej čistoty a sviežosti, pričom zároveň evokuje pocit luxusu a elegancie. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+     "navigationLabel": "Biele pižmo, mach a biele kvety",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "4",
+   "name": "Blu Home Monoi",
+   "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-monoi#167",
+   "priceAmount": 15.9,
+   "price": "15,90 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Exotické kvety, grapefruit a ananás.",
+   "reason": "Exotické kvety, grapefruit a ananás.",
+   "photo": "/assets/s5/kvapkavoni/4.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-monoi",
+    "verifiedAt": "2026-11-15T14:55:07.706904+00:00",
+    "sourceSha256": "cc5427e8b0d23866332ab8f40ce5a5a341af3a11d9bf1e14441a8477b01d0d9a",
+    "stock": "InStock",
+    "stockEvidence": {
+     "currency": "EUR",
+     "scope": "Native250ml selected variant, exact public SKU withVat and selected visible Na sklade",
+     "sku": "P00018-3",
+     "variantId": "167",
+     "publisherAvailability": "Na sklade - Doručenie do 24 hodín (platí pre objednávky prijaté do 12:00 h v pracovný deň)",
+     "variantSelectionRequired": true,
+     "quantity": "UNKNOWN_NOT_PUBLISHED"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 15.9,
+     "currency": "EUR",
+     "vatSource": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-monoi",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://kvapkavoni.s8.cdn-upgates.com/_cache/c/8/c825edbcdab69d8e02f9f7691064bc62-parfum-na-pranie-blu-home-monoi-250-ml.png",
+    "photoEvidence": {
+     "id": "4",
+     "file": "4.png",
+     "url": "https://kvapkavoni.s8.cdn-upgates.com/_cache/c/8/c825edbcdab69d8e02f9f7691064bc62-parfum-na-pranie-blu-home-monoi-250-ml.png",
+     "sha256": "742cecc57be4337eba209e43053e74c1656f6c91403af2daed2f44bcbddc7662",
+     "bytes": 112870,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:56:35.000184+00:00",
+     "width": 661,
+     "height": 826
+    },
+    "fragrance": {
+     "notes": [
+      "Monoi",
+      "tiaré",
+      "grapefruit",
+      "ruža",
+      "tuberóza",
+      "ylang-ylang",
+      "ananás"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "notesEvidence": {
+      "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-monoi",
+      "sourceText": "Vonné tóny: Monoi, tiaré, grapefruit, ruža, tuberóza, ylang-ylang, ananás\n parfum MONOI – svieža vôňa, ktorá spája exotické kvety Monoi a tiaré s iskrou grapefruitu. V srdci dominuje ruža a tuberóza, zatiaľ čo záver dotvára hrejivý ylang-ylang a šťavnatý ananás. Ideálna pre každý deň, keď chceš zaujať. Táto neodolateľná symfónia vôní ťa prenesie na tropické pobrežie, kde sa zlatožlté slnečné lúče odrážajú na pokojných morských vlnách a vzduch je naplnený vôňou rozkvitnutých kvetov. Je to zmyselný príbeh, ktorý evokuje letné večery na mieste, kde sa čas zastaví a všetko je dokonalé. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+      "originalSourceText": " parfum MONOI – svieža vôňa, ktorá spája exotické kvety Monoi a tiaré s iskrou grapefruitu. V srdci dominuje ruža a tuberóza, zatiaľ čo záver dotvára hrejivý ylang-ylang a šťavnatý ananás. Ideálna pre každý deň, keď chceš zaujať. Táto neodolateľná symfónia vôní ťa prenesie na tropické pobrežie, kde sa zlatožlté slnečné lúče odrážajú na pokojných morských vlnách a vzduch je naplnený vôňou rozkvitnutých kvetov. Je to zmyselný príbeh, ktorý evokuje letné večery na mieste, kde sa čas zastaví a všetko je dokonalé. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "Monoi",
+        "sourceFragments": [
+         "Monoi"
+        ]
+       },
+       {
+        "display": "tiaré",
+        "sourceFragments": [
+         "tiaré"
+        ]
+       },
+       {
+        "display": "grapefruit",
+        "sourceFragments": [
+         "grapefruitu"
+        ]
+       },
+       {
+        "display": "ruža",
+        "sourceFragments": [
+         "ruža"
+        ]
+       },
+       {
+        "display": "tuberóza",
+        "sourceFragments": [
+         "tuberóza"
+        ]
+       },
+       {
+        "display": "ylang-ylang",
+        "sourceFragments": [
+         "ylang-ylang"
+        ]
+       },
+       {
+        "display": "ananás",
+        "sourceFragments": [
+         "ananás"
+        ]
+       }
+      ],
+      "qualification": "Literal Slovak sensory descriptors with explicit grammatical normalization, no invented pyramid/intensity."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "laundry-fragrance",
+    "scent": "Exotické kvety, grapefruit a ananás",
+    "nativeVariantEvidence": {
+     "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-monoi#167",
+     "checkedAt": "2026-11-15T15:16:04.684137+00:00",
+     "sourceSha256": "fbcdc426b2eb046678790fd1221cbc9d41d70830a673cf129f54ffec224c8a7b",
+     "actualNormalUiSelection": true
+    },
+    "selectionTraits": {
+     "fragranceDirection": "flower",
+     "fragranceProfile": "4"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-monoi#167",
+     "sourceText": "Vonné tóny: Monoi, tiaré, grapefruit, ruža, tuberóza, ylang-ylang, ananás\n parfum MONOI – svieža vôňa, ktorá spája exotické kvety Monoi a tiaré s iskrou grapefruitu. V srdci dominuje ruža a tuberóza, zatiaľ čo záver dotvára hrejivý ylang-ylang a šťavnatý ananás. Ideálna pre každý deň, keď chceš zaujať. Táto neodolateľná symfónia vôní ťa prenesie na tropické pobrežie, kde sa zlatožlté slnečné lúče odrážajú na pokojných morských vlnách a vzduch je naplnený vôňou rozkvitnutých kvetov. Je to zmyselný príbeh, ktorý evokuje letné večery na mieste, kde sa čas zastaví a všetko je dokonalé. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+     "navigationLabel": "Exotické kvety, grapefruit a ananás",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "5",
+   "name": "Blu Home Fiori d’Arancio",
+   "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fiori-d-arancio-pomarancove-kvety#111",
+   "priceAmount": 15.9,
+   "price": "15,90 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Citrusy a pomarančové kvety.",
+   "reason": "Citrusy a pomarančové kvety.",
+   "photo": "/assets/s5/kvapkavoni/5.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fiori-d-arancio-pomarancove-kvety",
+    "verifiedAt": "2026-11-15T14:55:07.841547+00:00",
+    "sourceSha256": "9453b99a64c948d69fa1b132110a961eb55e6879b81c540a86c64b5adb51fa91",
+    "stock": "InStock",
+    "stockEvidence": {
+     "currency": "EUR",
+     "scope": "Native250ml selected variant, exact public SKU withVat and selected visible Na sklade",
+     "sku": "P00004-3",
+     "variantId": "111",
+     "publisherAvailability": "Na sklade - Doručenie do 24 hodín (platí pre objednávky prijaté do 12:00 h v pracovný deň)",
+     "variantSelectionRequired": true,
+     "quantity": "UNKNOWN_NOT_PUBLISHED"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 15.9,
+     "currency": "EUR",
+     "vatSource": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fiori-d-arancio-pomarancove-kvety",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://kvapkavoni.s8.cdn-upgates.com/_cache/f/4/f43d2579504a0b87b14f236496d0a577-parfum-na-pranie-blu-home-fori-d-arancio-250-ml.png",
+    "photoEvidence": {
+     "id": "5",
+     "file": "5.png",
+     "url": "https://kvapkavoni.s8.cdn-upgates.com/_cache/f/4/f43d2579504a0b87b14f236496d0a577-parfum-na-pranie-blu-home-fori-d-arancio-250-ml.png",
+     "sha256": "c5328a0b67996a0671b8db6d546adcbbc8b6cce6f0f6ecf1ffc0939e170fcd6e",
+     "bytes": 119289,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:56:35.303050+00:00",
+     "width": 661,
+     "height": 826
+    },
+    "fragrance": {
+     "notes": [
+      "citrón",
+      "mandarín",
+      "kôra horkého pomaranča",
+      "kvety pomarančovníka",
+      "vodný jazmín",
+      "cédrové drevo",
+      "pižmo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "notesEvidence": {
+      "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fiori-d-arancio-pomarancove-kvety",
+      "sourceText": "Vonné tóny: citrón, mandarín, kôra horkého pomaranča, kvety pomarančovníka, vodný jazmín, cédrové drevo, pižmo\n parfum FIORI D'ARANCIO citrusová elegancia v každom praní. Vychutnaj si slnečný výlet do srdca Stredomoria. Iskrivé vrchné tóny citróna, sicílskeho mandarínu a kôry horkého pomaranča prinášajú okamžitú dávku sviežosti a energie. Po chvíli sa rozvinie jemná kvetinová hĺbka kvetov pomarančovníka (zagara) a vodného jazmínu, ktoré dodajú vôni eleganciu a ľahkosť. Základ vône tvorený cédrovým drevom a zmyselným pižmom zanecháva na bielizni hebký, čistý a hrejivý dotyk. Fiori d’Arancio je ako lúč slnka na tvojej bielizni – svieži, prirodzený a nezabudnuteľne príjemný. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+      "originalSourceText": " parfum FIORI D'ARANCIO citrusová elegancia v každom praní. Vychutnaj si slnečný výlet do srdca Stredomoria. Iskrivé vrchné tóny citróna, sicílskeho mandarínu a kôry horkého pomaranča prinášajú okamžitú dávku sviežosti a energie. Po chvíli sa rozvinie jemná kvetinová hĺbka kvetov pomarančovníka (zagara) a vodného jazmínu, ktoré dodajú vôni eleganciu a ľahkosť. Základ vône tvorený cédrovým drevom a zmyselným pižmom zanecháva na bielizni hebký, čistý a hrejivý dotyk. Fiori d’Arancio je ako lúč slnka na tvojej bielizni – svieži, prirodzený a nezabudnuteľne príjemný. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "citrón",
+        "sourceFragments": [
+         "citróna"
+        ]
+       },
+       {
+        "display": "mandarín",
+        "sourceFragments": [
+         "mandarínu"
+        ]
+       },
+       {
+        "display": "kôra horkého pomaranča",
+        "sourceFragments": [
+         "kôry horkého pomaranča"
+        ]
+       },
+       {
+        "display": "kvety pomarančovníka",
+        "sourceFragments": [
+         "kvetov pomarančovníka"
+        ]
+       },
+       {
+        "display": "vodný jazmín",
+        "sourceFragments": [
+         "vodného jazmínu"
+        ]
+       },
+       {
+        "display": "cédrové drevo",
+        "sourceFragments": [
+         "cédrovým drevom"
+        ]
+       },
+       {
+        "display": "pižmo",
+        "sourceFragments": [
+         "pižmom"
+        ]
+       }
+      ],
+      "qualification": "Literal Slovak sensory descriptors with explicit grammatical normalization, no invented pyramid/intensity."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "laundry-fragrance",
+    "scent": "Citrusy a pomarančové kvety",
+    "nativeVariantEvidence": {
+     "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fiori-d-arancio-pomarancove-kvety#111",
+     "checkedAt": "2026-11-15T15:16:15.230218+00:00",
+     "sourceSha256": "396e89fcd49b3ae785ba2bcdbdea9300fedb6233ae3b84cdf487c160c18829a0",
+     "actualNormalUiSelection": true
+    },
+    "selectionTraits": {
+     "fragranceDirection": "flower",
+     "fragranceProfile": "5"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-fiori-d-arancio-pomarancove-kvety#111",
+     "sourceText": "Vonné tóny: citrón, mandarín, kôra horkého pomaranča, kvety pomarančovníka, vodný jazmín, cédrové drevo, pižmo\n parfum FIORI D'ARANCIO citrusová elegancia v každom praní. Vychutnaj si slnečný výlet do srdca Stredomoria. Iskrivé vrchné tóny citróna, sicílskeho mandarínu a kôry horkého pomaranča prinášajú okamžitú dávku sviežosti a energie. Po chvíli sa rozvinie jemná kvetinová hĺbka kvetov pomarančovníka (zagara) a vodného jazmínu, ktoré dodajú vôni eleganciu a ľahkosť. Základ vône tvorený cédrovým drevom a zmyselným pižmom zanecháva na bielizni hebký, čistý a hrejivý dotyk. Fiori d’Arancio je ako lúč slnka na tvojej bielizni – svieži, prirodzený a nezabudnuteľne príjemný. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+     "navigationLabel": "Citrusy a pomarančové kvety",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "6",
+   "name": "Blu Home Brezza Marina",
+   "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-brezza-marina-morsky-vanok#131",
+   "priceAmount": 15.9,
+   "price": "15,90 €",
+   "currency": "EUR",
+   "volume": "250 ml",
+   "category": "fragrance",
+   "kind": "Parfum na pranie",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Morské tóny, bergamot a santal.",
+   "reason": "Morské tóny, bergamot a santal.",
+   "photo": "/assets/s5/kvapkavoni/6.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-brezza-marina-morsky-vanok",
+    "verifiedAt": "2026-11-15T14:55:08.886552+00:00",
+    "sourceSha256": "1b40d0d7b98c05f054ec7366ec168b9007675a4774571e0ffeca7fed239d3b1e",
+    "stock": "InStock",
+    "stockEvidence": {
+     "currency": "EUR",
+     "scope": "Native250ml selected variant, exact public SKU withVat and selected visible Na sklade",
+     "sku": "P00009-3",
+     "variantId": "131",
+     "publisherAvailability": "Na sklade - Doručenie do 24 hodín (platí pre objednávky prijaté do 12:00 h v pracovný deň)",
+     "variantSelectionRequired": true,
+     "quantity": "UNKNOWN_NOT_PUBLISHED"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 15.9,
+     "currency": "EUR",
+     "vatSource": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-brezza-marina-morsky-vanok",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "250 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://kvapkavoni.s8.cdn-upgates.com/_cache/2/b/2beb749eb60a8a572570606cd94d0545-parfum-na-pranie-blu-home-brezza-marina-250-ml.png",
+    "photoEvidence": {
+     "id": "6",
+     "file": "6.png",
+     "url": "https://kvapkavoni.s8.cdn-upgates.com/_cache/2/b/2beb749eb60a8a572570606cd94d0545-parfum-na-pranie-blu-home-brezza-marina-250-ml.png",
+     "sha256": "83e718664b75fccf79f532040ac2794530d590b7004b4e92573d9dae762b6ba6",
+     "bytes": 115021,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:56:35.547734+00:00",
+     "width": 826,
+     "height": 826
+    },
+    "fragrance": {
+     "notes": [
+      "ozón",
+      "bergamot",
+      "kalón",
+      "jazmín",
+      "levanduľa",
+      "vetiver",
+      "morské riasy",
+      "biely mach",
+      "santalové drevo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfum na pranie",
+     "notesEvidence": {
+      "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-brezza-marina-morsky-vanok",
+      "sourceText": "Vonné tóny: ozón, bergamot, kalón, jazmín, levanduľa, vetiver, morské riasy, biely mach, santalové drevo\n parfum BREZZA MARINA - nechaj sa uniesť vôňou, ktorá prináša sviežu kombináciu morských tónov evokujúcich letný deň na pláži. Úvodné tóny ozónu, bergamotu a vodnej zložky kalón osviežia zmysly ako čerstvý morský vánok. Srdce vône odhaľuje harmonickú súhru jazmínu, levandule, vetiveru a morských rias, ktoré vytvárajú jemne kvetinovo-zelený charakter. Základ vône tvorený bielym machom a santalovým drevom, podčiarknutý jemne korenistými a pižmovými podtónmi, dodáva hĺbku a sofistikovanosť. Výsledkom je elegantná, čistá a zároveň osviežujúca vôňa, ktorá zanecháva na tvojej bielizni nezabudnuteľný dojem luxusnej sviežosti. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+      "originalSourceText": " parfum BREZZA MARINA - nechaj sa uniesť vôňou, ktorá prináša sviežu kombináciu morských tónov evokujúcich letný deň na pláži. Úvodné tóny ozónu, bergamotu a vodnej zložky kalón osviežia zmysly ako čerstvý morský vánok. Srdce vône odhaľuje harmonickú súhru jazmínu, levandule, vetiveru a morských rias, ktoré vytvárajú jemne kvetinovo-zelený charakter. Základ vône tvorený bielym machom a santalovým drevom, podčiarknutý jemne korenistými a pižmovými podtónmi, dodáva hĺbku a sofistikovanosť. Výsledkom je elegantná, čistá a zároveň osviežujúca vôňa, ktorá zanecháva na tvojej bielizni nezabudnuteľný dojem luxusnej sviežosti. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "ozón",
+        "sourceFragments": [
+         "ozónu"
+        ]
+       },
+       {
+        "display": "bergamot",
+        "sourceFragments": [
+         "bergamotu"
+        ]
+       },
+       {
+        "display": "kalón",
+        "sourceFragments": [
+         "kalón"
+        ]
+       },
+       {
+        "display": "jazmín",
+        "sourceFragments": [
+         "jazmínu"
+        ]
+       },
+       {
+        "display": "levanduľa",
+        "sourceFragments": [
+         "levandule"
+        ]
+       },
+       {
+        "display": "vetiver",
+        "sourceFragments": [
+         "vetiveru"
+        ]
+       },
+       {
+        "display": "morské riasy",
+        "sourceFragments": [
+         "morských rias"
+        ]
+       },
+       {
+        "display": "biely mach",
+        "sourceFragments": [
+         "bielym machom"
+        ]
+       },
+       {
+        "display": "santalové drevo",
+        "sourceFragments": [
+         "santalovým drevom"
+        ]
+       }
+      ],
+      "qualification": "Literal Slovak sensory descriptors with explicit grammatical normalization, no invented pyramid/intensity."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "laundry-fragrance",
+    "scent": "Morské tóny, bergamot a santal",
+    "nativeVariantEvidence": {
+     "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-brezza-marina-morsky-vanok#131",
+     "checkedAt": "2026-11-15T15:16:23.506980+00:00",
+     "sourceSha256": "4ad6509c66a90b25508a76a28f499749d91b06f99d3f1fd459226ff6705d2624",
+     "actualNormalUiSelection": true
+    },
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "6"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.kvapkavoni.eu/p/blu-home-parfum-na-pranie-brezza-marina-morsky-vanok#131",
+     "sourceText": "Vonné tóny: ozón, bergamot, kalón, jazmín, levanduľa, vetiver, morské riasy, biely mach, santalové drevo\n parfum BREZZA MARINA - nechaj sa uniesť vôňou, ktorá prináša sviežu kombináciu morských tónov evokujúcich letný deň na pláži. Úvodné tóny ozónu, bergamotu a vodnej zložky kalón osviežia zmysly ako čerstvý morský vánok. Srdce vône odhaľuje harmonickú súhru jazmínu, levandule, vetiveru a morských rias, ktoré vytvárajú jemne kvetinovo-zelený charakter. Základ vône tvorený bielym machom a santalovým drevom, podčiarknutý jemne korenistými a pižmovými podtónmi, dodáva hĺbku a sofistikovanosť. Výsledkom je elegantná, čistá a zároveň osviežujúca vôňa, ktorá zanecháva na tvojej bielizni nezabudnuteľný dojem luxusnej sviežosti. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
+     "navigationLabel": "Morské tóny, bergamot a santal",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  }
+ ],
+ "revenue": {
+  "year": 2025,
+  "amount": 167880,
+  "currency": "EUR",
+  "metric": "Sales goods+products/services, not operating income",
+  "source": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12298614"
+ },
+ "size": "PREFERRED_OFFICIAL_REVENUE",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "Five distinct250ml formulas, exact15.90VATprice and selected Na sklade/nativeSKU; no sample minimum.",
+  "Gocce di Freschezza excluded because native250ml selector blocked, no force click or invented stock.",
+  "No disinfection, all-fabric, dryer, pregnancy/medical or duration guarantees. No invented mini availability. Static Poradca leads FAQ, not interactive AI observed.",
+  "MAIN laundry-specific backend guard/integration/livePreviewQA required."
+ ]
+};

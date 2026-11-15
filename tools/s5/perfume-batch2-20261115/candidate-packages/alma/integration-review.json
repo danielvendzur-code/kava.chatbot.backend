@@ -1,0 +1,201 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "ALMA",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/alma/logo.png",
+      "header": "/assets/s5/alma/logo.png",
+      "avatar": "/assets/s5/alma/avatar.svg"
+    },
+    "brand": {
+      "name": "ALMA",
+      "domain": "alma.cz",
+      "website": "https://www.alma.cz/",
+      "lang": "cs",
+      "fullName": "ALMA",
+      "url": "https://www.alma.cz/",
+      "logo": "/assets/s5/alma/logo.png",
+      "mark": "/assets/s5/alma/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Citrusy a tabák",
+        "Arabský jasmín",
+        "Damašská růže",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#604d3c",
+        "accent": "#d2ad83",
+        "soft": "#faf6f0",
+        "paper": "#fff",
+        "ink": "#332c26",
+        "line": "#e8dfd3"
+      }
+    },
+    "traitCopy": {
+      "flowers": [
+        "Květinový charakter",
+        "",
+        "Květinový charakter",
+        ""
+      ],
+      "2": [
+        "Dominantní arabský jasmín",
+        "",
+        "Dominantní arabský jasmín",
+        ""
+      ],
+      "4": [
+        "Vůně damašské růže",
+        "",
+        "Vůně damašské růže",
+        ""
+      ],
+      "contrast": [
+        "Ovocná svěžest nebo orient",
+        "",
+        "Ovocná svěžest nebo orient",
+        ""
+      ],
+      "1": [
+        "Citrusy, rybíz a tabák",
+        "",
+        "Citrusy, rybíz a tabák",
+        ""
+      ],
+      "3": [
+        "Sladce svěží s orientálním nádechem",
+        "",
+        "Sladce svěží s orientálním nádechem",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "flowers": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "2": [
+        "/assets/s5/alma/2.jpg"
+      ],
+      "4": [
+        "/assets/s5/alma/4.jpg"
+      ],
+      "contrast": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "1": [
+        "/assets/s5/alma/1.jpg"
+      ],
+      "3": [
+        "/assets/s5/alma/3.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "1",
+      "4"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "alma-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "2": "4",
+        "4": "2",
+        "1": "3",
+        "3": "1"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/alma.js",
+  "backendBrand": "alma",
+  "offlineRules": [
+    {
+      "chip": "Citrusy a tabák",
+      "match": "citrus|tabak",
+      "productIds": [
+        "1"
+      ]
+    },
+    {
+      "chip": "Arabský jasmín",
+      "match": "jasmin",
+      "productIds": [
+        "2"
+      ]
+    },
+    {
+      "chip": "Damašská růže",
+      "match": "ruze",
+      "productIds": [
+        "4"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch2-20261115/candidate-packages/alma/ui-review.css",
+    "destination": "n447/s5/brands/alma.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/alma.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "personal-fragrance",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "requiredBackendInstruction": "Perfume sensory descriptions only. Explicitly never repeat source claims of healing/depression/anxiety/sleep/hormones/menstruation/pregnancy/birth/crystalenergy/highvibration. Do not infer fragrance notes from INCI.10ml retailpack not samples. ESSEalcoholSKU1038price1390CZK not oil duplicate. No fixed duration promise.",
+    "workerTouchedSharedBackend": false
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy a zelené bylinky",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "citrus",
+          "label": "Mandarinka a limetka",
+          "productId": "citrus",
+          "sourceUrl": "https://www.kettscandles.com/vonne-svicky/tangerine-lime-svicka-velka/"
+        },
+        {
+          "value": "herbs",
+          "label": "Citrónová bazalka, šalvěj a rajčatové listy",
+          "productId": "herbs",
+          "sourceUrl": "https://www.kettscandles.com/vonne-svicky/basil-herbs-svicka-velka/"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Ovoce nebo hřejivé koření",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "plum",
+          "label": "Švestkový koláč, skořice a hřebíček",
+          "productId": "plum",
+          "sourceUrl": "https://www.kettscandles.com/vonne-svicky/plumberry-svicka-velka/"
+        },
+        {
+          "value": "ginger",
+          "label": "Zázvor, patchouli a pomerančová kůra",
+          "productId": "ginger",
+          "sourceUrl": "https://www.kettscandles.com/vonne-svicky/yoga-relax-svicka-velka/"
+        }
+      ]
+    },
+    {
+      "value": "depth",
+      "label": "Růže nebo santalové dřevo",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "rose",
+          "label": "Orientální vůně damašské růže",
+          "productId": "rose",
+          "sourceUrl": "https://www.kettscandles.com/vonne-svicky/damascene-rose-svicka-velka/"
+        },
+        {
+          "value": "sandal",
+          "label": "Výrazná orientální vůně santalu",
+          "productId": "sandal",
+          "sourceUrl": "https://www.kettscandles.com/vonne-svicky/antique-sandalwood-svicka-velka/"
+        }
+      ]
+    }
+  ]
+}

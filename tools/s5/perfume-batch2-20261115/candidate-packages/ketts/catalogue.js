@@ -449,11 +449,11 @@ globalThis.CX_CATALOGUES.ketts = {
       ],
       "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
      },
-     "qualitativeIntensity": "střední",
+     "qualitativeIntensity": "výrazná",
      "intensityEvidence": {
       "url": "https://www.kettscandles.com/vonne-svicky/basil-herbs-svicka-velka/",
       "scope": "Official product parameter Intenzita vůně",
-      "sourceText": "Intenzita vůně: střední",
+      "sourceText": "Intenzita vůně: výrazná",
       "qualification": "Publisher qualitative wording, not measured numeric strength."
      }
     },

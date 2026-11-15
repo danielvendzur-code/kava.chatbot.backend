@@ -1,0 +1,211 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Kvapka vôní",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/kvapkavoni/logo.png",
+      "header": "/assets/s5/kvapkavoni/logo.png",
+      "avatar": "/assets/s5/kvapkavoni/avatar.svg"
+    },
+    "brand": {
+      "name": "Kvapka vôní",
+      "domain": "kvapkavoni.eu",
+      "website": "https://www.kvapkavoni.eu/",
+      "lang": "sk",
+      "fullName": "Kvapka vôní",
+      "url": "https://www.kvapkavoni.eu/",
+      "logo": "/assets/s5/kvapkavoni/logo.png",
+      "mark": "/assets/s5/kvapkavoni/avatar.svg",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône na pranie, ich balenia a ceny.",
+      "quickChips": [
+        "Citrusy a ihličie",
+        "Pižmo a biele kvety",
+        "Morské tóny",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#28536a",
+        "accent": "#dfbc73",
+        "soft": "#edf5f7",
+        "paper": "#fff",
+        "ink": "#203641",
+        "line": "#d7e3e8"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Sviežosť a drevitý základ",
+        "",
+        "Sviežosť a drevitý základ",
+        ""
+      ],
+      "1": [
+        "Citrusy, ihličie a drevitý základ",
+        "",
+        "Citrusy, ihličie a drevitý základ",
+        ""
+      ],
+      "6": [
+        "Morské tóny, bergamot a santal",
+        "",
+        "Morské tóny, bergamot a santal",
+        ""
+      ],
+      "flower": [
+        "Kvety alebo pižmo",
+        "",
+        "Kvety alebo pižmo",
+        ""
+      ],
+      "2": [
+        "Biele pižmo, mach a biele kvety",
+        "",
+        "Biele pižmo, mach a biele kvety",
+        ""
+      ],
+      "4": [
+        "Exotické kvety, grapefruit a ananás",
+        "",
+        "Exotické kvety, grapefruit a ananás",
+        ""
+      ],
+      "5": [
+        "Citrusy a pomarančové kvety",
+        "",
+        "Citrusy a pomarančové kvety",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "1": [
+        "/assets/s5/kvapkavoni/1.png"
+      ],
+      "6": [
+        "/assets/s5/kvapkavoni/6.png"
+      ],
+      "flower": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "2": [
+        "/assets/s5/kvapkavoni/2.png"
+      ],
+      "4": [
+        "/assets/s5/kvapkavoni/4.png"
+      ],
+      "5": [
+        "/assets/s5/kvapkavoni/5.png"
+      ]
+    },
+    "compareProductIds": [
+      "1",
+      "4"
+    ],
+    "segmentText": {
+      "entryNote": "Vône na pranie · konkrétne balenie · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi vybrať vôňu na pranie podľa jeho vkusu.",
+      "lead": "Výber ukáže konkrétny parfum na pranie s fotografiou, profilom vône, balením, cenou a odkazom. Dve odlišné vône možno porovnať.",
+      "includedChat": "Vonné profily, balenia a ceny parfumov na pranie.",
+      "includedAdvisor": "Výber vône na pranie a porovnanie dvoch kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "kvapkavoni-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "1": "6",
+        "6": "1",
+        "2": "4",
+        "4": "5",
+        "5": "2"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/kvapkavoni.js",
+  "backendBrand": "kvapkavoni",
+  "offlineRules": [
+    {
+      "chip": "Citrusy a ihličie",
+      "match": "citrus|ihlic",
+      "productIds": [
+        "1"
+      ]
+    },
+    {
+      "chip": "Pižmo a biele kvety",
+      "match": "pizmo|mach",
+      "productIds": [
+        "2"
+      ]
+    },
+    {
+      "chip": "Morské tóny",
+      "match": "morsk|bergamot",
+      "productIds": [
+        "6"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch2-20261115/candidate-packages/kvapkavoni/ui-review.css",
+    "destination": "n447/s5/brands/kvapkavoni.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/kvapkavoni.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_OFFICIAL_REVENUE",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "laundry-fragrance",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "requiredBackendInstruction": "Laundry perfume only, never skin perfume. No disinfection, therapeutic, fabric-safety, pregnancy, dryer or guaranteed duration claims. Exactselected250ml15.90EUR, no10mlminimum confusion. Follow exact official usage only.",
+    "workerTouchedSharedBackend": false
+  }
+}

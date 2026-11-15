@@ -1,0 +1,722 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.ketts = {
+ "brand": "KETT’S CANDLES",
+ "domain": "kettscandles.com",
+ "operator": {
+  "name": "KETT´S CANDLES s.r.o.",
+  "ico": "05124174",
+  "country": "CZ",
+  "activeNoEnd": true,
+  "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05124174"
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "cs",
+ "country": "CZ",
+ "currency": "CZK",
+ "status": "SOURCE_PACKAGE_VERIFIED",
+ "products": [
+  {
+   "id": "ginger",
+   "name": "Yoga Relax",
+   "url": "https://www.kettscandles.com/vonne-svicky/yoga-relax-svicka-velka/",
+   "priceAmount": 2100.0,
+   "price": "2100 Kč",
+   "currency": "CZK",
+   "volume": "300 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Zázvor, patchouli a pomerančová kůra.",
+   "reason": "Zázvor, patchouli a pomerančová kůra.",
+   "photo": "/assets/s5/ketts/ginger.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.kettscandles.com/vonne-svicky/yoga-relax-svicka-velka/",
+    "verifiedAt": "2026-11-15T15:30:57.257500+00:00",
+    "sourceSha256": "314be0de7f8cd9ec94e2f55c12c83ba34eeddd729fa8873b00d531475fcbdd83",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official exact fixedSKU visible primary availability",
+     "currency": "CZK",
+     "sku": "YORESVRUM",
+     "publisherAvailability": "Skladem 1 ks",
+     "quantity": 1,
+     "qualification": "Visible exact primary Skladem1ks; Offer has no availability field, not fabricated schema InStock."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 2100.0,
+     "currency": "CZK",
+     "vatSource": "https://www.kettscandles.com/vonne-svicky/yoga-relax-svicka-velka/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "300 g",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.kettscandles.com/user/shop/big/903-1_vonna-svicka-v-ceskem-foukanem-skle-s-drevenym-knotem-yoga-relax.jpg?ff=1&x=1024&y=1024&q=85&ts=5f89841b&sg=38cb01fe",
+    "photoEvidence": {
+     "id": "ginger",
+     "file": "ginger.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.kettscandles.com/user/shop/big/903-1_vonna-svicka-v-ceskem-foukanem-skle-s-drevenym-knotem-yoga-relax.jpg?ff=1&x=1024&y=1024&q=85&ts=5f89841b&sg=38cb01fe",
+     "sha256": "932c503359817b8b59cd734c10dfe506e75ac317ab76d02cb340f57b48f8c863",
+     "bytes": 53754,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:41:26.236786+00:00",
+     "width": 1024,
+     "height": 1024
+    },
+    "fragrance": {
+     "notes": [
+      "zázvor",
+      "patchouli",
+      "pomerančová kůra"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.kettscandles.com/vonne-svicky/yoga-relax-svicka-velka/",
+      "sourceText": "Vonné tóny: zázvor, patchouli, pomerančová kůra\nYoga Relax  vonná svíčka / velká mat\nYOGA RELAX - vůně co konejší duši a povzbuzuje tělo. Hřejivý zázvor a nádherné spojení akordů indonéské patchouli a pikantní pomerančové kůry vytváří dokonalé aroma posvátných indických chrámů. Přeneste se do magické jižní Asie a vychutnejte si tuto harmonickou kompozici všemi smysly. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Nově v matném skle s luxusní sametovou povrchovou úpravou. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: orientální, meditační Intenzita vůně: střední Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+      "originalSourceText": "Yoga Relax  vonná svíčka / velká mat\nYOGA RELAX - vůně co konejší duši a povzbuzuje tělo. Hřejivý zázvor a nádherné spojení akordů indonéské patchouli a pikantní pomerančové kůry vytváří dokonalé aroma posvátných indických chrámů. Přeneste se do magické jižní Asie a vychutnejte si tuto harmonickou kompozici všemi smysly. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Nově v matném skle s luxusní sametovou povrchovou úpravou. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: orientální, meditační Intenzita vůně: střední Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "zázvor",
+        "sourceFragments": [
+         "zázvor"
+        ]
+       },
+       {
+        "display": "patchouli",
+        "sourceFragments": [
+         "patchouli"
+        ]
+       },
+       {
+        "display": "pomerančová kůra",
+        "sourceFragments": [
+         "pomerančové kůry"
+        ]
+       }
+      ],
+      "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
+     },
+     "qualitativeIntensity": "střední",
+     "intensityEvidence": {
+      "url": "https://www.kettscandles.com/vonne-svicky/yoga-relax-svicka-velka/",
+      "scope": "Official product parameter Intenzita vůně",
+      "sourceText": "Intenzita vůně: střední",
+      "qualification": "Publisher qualitative wording, not measured numeric strength."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Zázvor, patchouli a pomerančová kůra",
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "ginger"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.kettscandles.com/vonne-svicky/yoga-relax-svicka-velka/",
+     "sourceText": "Vonné tóny: zázvor, patchouli, pomerančová kůra\nYoga Relax  vonná svíčka / velká mat\nYOGA RELAX - vůně co konejší duši a povzbuzuje tělo. Hřejivý zázvor a nádherné spojení akordů indonéské patchouli a pikantní pomerančové kůry vytváří dokonalé aroma posvátných indických chrámů. Přeneste se do magické jižní Asie a vychutnejte si tuto harmonickou kompozici všemi smysly. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Nově v matném skle s luxusní sametovou povrchovou úpravou. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: orientální, meditační Intenzita vůně: střední Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+     "navigationLabel": "Zázvor, patchouli a pomerančová kůra",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "citrus",
+   "name": "Tangerine & Lime",
+   "url": "https://www.kettscandles.com/vonne-svicky/tangerine-lime-svicka-velka/",
+   "priceAmount": 2100.0,
+   "price": "2100 Kč",
+   "currency": "CZK",
+   "volume": "300 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Mandarinka a limetka.",
+   "reason": "Mandarinka a limetka.",
+   "photo": "/assets/s5/ketts/citrus.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.kettscandles.com/vonne-svicky/tangerine-lime-svicka-velka/",
+    "verifiedAt": "2026-11-15T15:30:57.270048+00:00",
+    "sourceSha256": "be45f9a1bf8bde00a89546b049a8895a9f2e07de6ab5f748c161b0608775fbcc",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official exact fixedSKU visible primary availability",
+     "currency": "CZK",
+     "sku": "TALISVOR",
+     "publisherAvailability": "Skladem 1 ks",
+     "quantity": 1,
+     "qualification": "Visible exact primary Skladem1ks; Offer has no availability field, not fabricated schema InStock."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 2100.0,
+     "currency": "CZK",
+     "vatSource": "https://www.kettscandles.com/vonne-svicky/tangerine-lime-svicka-velka/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "300 g",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.kettscandles.com/user/shop/big/36-5_kett-s-candles-svicka-v-ceskem-skle-s-drevenym-knotem-tangerine-lime.jpg?ff=1&x=1024&y=1024&q=85&ts=5f89841b&sg=38cb01fe",
+    "photoEvidence": {
+     "id": "citrus",
+     "file": "citrus.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.kettscandles.com/user/shop/big/36-5_kett-s-candles-svicka-v-ceskem-skle-s-drevenym-knotem-tangerine-lime.jpg?ff=1&x=1024&y=1024&q=85&ts=5f89841b&sg=38cb01fe",
+     "sha256": "36019a859f28fedcafeedbf6af5c1e6ed0f80a138a22d66ae0c5b775ee9c4b9b",
+     "bytes": 61241,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:41:26.679591+00:00",
+     "width": 1024,
+     "height": 1024
+    },
+    "fragrance": {
+     "notes": [
+      "mandarinka",
+      "limetka"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.kettscandles.com/vonne-svicky/tangerine-lime-svicka-velka/",
+      "sourceText": "Vonné tóny: mandarinka, limetka\nTangerine & Lime  vonná svíčka / velká mat\nTANGERINE & LIME - mandarinka s limetkou je příjemně svěží a tak akorát sladká. Hodí se do relaxačních zón, obývacího pokoje i kanceláře. Citrusy totiž pomáhají uvolňovat napětí a rozptylovat úzkosti. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Nově v matném skle s luxusní sametovou povrchovou úpravou. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: ovocná, svěží Intenzita vůně: střední Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+      "originalSourceText": "Tangerine & Lime  vonná svíčka / velká mat\nTANGERINE & LIME - mandarinka s limetkou je příjemně svěží a tak akorát sladká. Hodí se do relaxačních zón, obývacího pokoje i kanceláře. Citrusy totiž pomáhají uvolňovat napětí a rozptylovat úzkosti. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Nově v matném skle s luxusní sametovou povrchovou úpravou. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: ovocná, svěží Intenzita vůně: střední Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "mandarinka",
+        "sourceFragments": [
+         "mandarinka"
+        ]
+       },
+       {
+        "display": "limetka",
+        "sourceFragments": [
+         "limetkou"
+        ]
+       }
+      ],
+      "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
+     },
+     "qualitativeIntensity": "střední",
+     "intensityEvidence": {
+      "url": "https://www.kettscandles.com/vonne-svicky/tangerine-lime-svicka-velka/",
+      "scope": "Official product parameter Intenzita vůně",
+      "sourceText": "Intenzita vůně: střední",
+      "qualification": "Publisher qualitative wording, not measured numeric strength."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Mandarinka a limetka",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "citrus"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.kettscandles.com/vonne-svicky/tangerine-lime-svicka-velka/",
+     "sourceText": "Vonné tóny: mandarinka, limetka\nTangerine & Lime  vonná svíčka / velká mat\nTANGERINE & LIME - mandarinka s limetkou je příjemně svěží a tak akorát sladká. Hodí se do relaxačních zón, obývacího pokoje i kanceláře. Citrusy totiž pomáhají uvolňovat napětí a rozptylovat úzkosti. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Nově v matném skle s luxusní sametovou povrchovou úpravou. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: ovocná, svěží Intenzita vůně: střední Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+     "navigationLabel": "Mandarinka a limetka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "rose",
+   "name": "Damascene Rose",
+   "url": "https://www.kettscandles.com/vonne-svicky/damascene-rose-svicka-velka/",
+   "priceAmount": 2100.0,
+   "price": "2100 Kč",
+   "currency": "CZK",
+   "volume": "300 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Orientální vůně damašské růže.",
+   "reason": "Orientální vůně damašské růže.",
+   "photo": "/assets/s5/ketts/rose.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.kettscandles.com/vonne-svicky/damascene-rose-svicka-velka/",
+    "verifiedAt": "2026-11-15T15:30:57.320602+00:00",
+    "sourceSha256": "465caa9fd45b9395f03acb13c7e30b0f0d5c2d5dbf558d47b53408f797794b76",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official exact fixedSKU visible primary availability",
+     "currency": "CZK",
+     "sku": "DMRSVRU",
+     "publisherAvailability": "Skladem 1 ks",
+     "quantity": 1,
+     "qualification": "Visible exact primary Skladem1ks; Offer has no availability field, not fabricated schema InStock."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 2100.0,
+     "currency": "CZK",
+     "vatSource": "https://www.kettscandles.com/vonne-svicky/damascene-rose-svicka-velka/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "300 g",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.kettscandles.com/user/shop/big/520-5_vonna-svicka-v-ceskem-foukanem-skle-s-drevenym-knotem-damascene-rose.jpg?ff=1&x=1024&y=1024&q=85&ts=5f89841b&sg=38cb01fe",
+    "photoEvidence": {
+     "id": "rose",
+     "file": "rose.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.kettscandles.com/user/shop/big/520-5_vonna-svicka-v-ceskem-foukanem-skle-s-drevenym-knotem-damascene-rose.jpg?ff=1&x=1024&y=1024&q=85&ts=5f89841b&sg=38cb01fe",
+     "sha256": "5487b7bad2681eb10f2fc7f4d7b87849afb433f8302d4e7fe1a696fe2e8e5557",
+     "bytes": 53646,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:41:27.271345+00:00",
+     "width": 1024,
+     "height": 1024
+    },
+    "fragrance": {
+     "notes": [
+      "damašská růže"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.kettscandles.com/vonne-svicky/damascene-rose-svicka-velka/",
+      "sourceText": "Vonné tóny: damašská růže\nDamascene Rose  vonná svíčka v českém skle / velká\nDAMASCENE ROSE - Rozmazlete se božskou orientální vůní damašské růže. Tato královna mezi růžemi symbolizuje esenci ženství v její nejčistší podobě. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: květinová Intenzita vůně: střední Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+      "originalSourceText": "Damascene Rose  vonná svíčka v českém skle / velká\nDAMASCENE ROSE - Rozmazlete se božskou orientální vůní damašské růže. Tato královna mezi růžemi symbolizuje esenci ženství v její nejčistší podobě. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: květinová Intenzita vůně: střední Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "damašská růže",
+        "sourceFragments": [
+         "damašské růže"
+        ]
+       }
+      ],
+      "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
+     },
+     "qualitativeIntensity": "střední",
+     "intensityEvidence": {
+      "url": "https://www.kettscandles.com/vonne-svicky/damascene-rose-svicka-velka/",
+      "scope": "Official product parameter Intenzita vůně",
+      "sourceText": "Intenzita vůně: střední",
+      "qualification": "Publisher qualitative wording, not measured numeric strength."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Orientální vůně damašské růže",
+    "selectionTraits": {
+     "fragranceDirection": "depth",
+     "fragranceProfile": "rose"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.kettscandles.com/vonne-svicky/damascene-rose-svicka-velka/",
+     "sourceText": "Vonné tóny: damašská růže\nDamascene Rose  vonná svíčka v českém skle / velká\nDAMASCENE ROSE - Rozmazlete se božskou orientální vůní damašské růže. Tato královna mezi růžemi symbolizuje esenci ženství v její nejčistší podobě. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: květinová Intenzita vůně: střední Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+     "navigationLabel": "Orientální vůně damašské růže",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "herbs",
+   "name": "Basil & Herbs",
+   "url": "https://www.kettscandles.com/vonne-svicky/basil-herbs-svicka-velka/",
+   "priceAmount": 2100.0,
+   "price": "2100 Kč",
+   "currency": "CZK",
+   "volume": "300 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Citrónová bazalka, šalvěj a rajčatové listy.",
+   "reason": "Citrónová bazalka, šalvěj a rajčatové listy.",
+   "photo": "/assets/s5/ketts/herbs.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.kettscandles.com/vonne-svicky/basil-herbs-svicka-velka/",
+    "verifiedAt": "2026-11-15T15:32:36.740678+00:00",
+    "sourceSha256": "1497745377a9aae92ff37077aa999ddc1f3c20e7b5e30a043d795c1c86ddd5d4",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official exact fixedSKU visible primary availability",
+     "currency": "CZK",
+     "sku": "BAHESVZE",
+     "publisherAvailability": "Skladem 1 ks",
+     "quantity": 1,
+     "qualification": "Visible exact primary Skladem1ks; Offer has no availability field, not fabricated schema InStock."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 2100.0,
+     "currency": "CZK",
+     "vatSource": "https://www.kettscandles.com/vonne-svicky/basil-herbs-svicka-velka/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "300 g",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.kettscandles.com/user/shop/big/592-5_vonna-svicka-v-ceskem-foukanem-skle-s-drevenym-knotem-kett-s-candles-basil-and-herb.jpg?ff=1&x=1024&y=1024&q=85&ts=5f89841b&sg=38cb01fe",
+    "photoEvidence": {
+     "id": "herbs",
+     "file": "herbs.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.kettscandles.com/user/shop/big/592-5_vonna-svicka-v-ceskem-foukanem-skle-s-drevenym-knotem-kett-s-candles-basil-and-herb.jpg?ff=1&x=1024&y=1024&q=85&ts=5f89841b&sg=38cb01fe",
+     "sha256": "0082f908a7db0dcbafa9a62bb110ef8201d33d8cd9b1da7064cff623df57ef63",
+     "bytes": 51914,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:41:27.602850+00:00",
+     "width": 1024,
+     "height": 1024
+    },
+    "fragrance": {
+     "notes": [
+      "citrónová bazalka",
+      "šalvěj",
+      "listy rajčete"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.kettscandles.com/vonne-svicky/basil-herbs-svicka-velka/",
+      "sourceText": "Vonné tóny: citrónová bazalka, šalvěj, listy rajčete\nBasil & Herbs  vonná svíčka / velká\nBASIL & HERBS - svěží zelený mix z těch nejvybranějších bylinek. Natrhejte si plnou náruč citrónové bazalky, povzbuzující šalvěje a šťavnatých listů rajčete. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: bylinková, svěží Intenzita vůně: výrazná Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+      "originalSourceText": "Basil & Herbs  vonná svíčka / velká\nBASIL & HERBS - svěží zelený mix z těch nejvybranějších bylinek. Natrhejte si plnou náruč citrónové bazalky, povzbuzující šalvěje a šťavnatých listů rajčete. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: bylinková, svěží Intenzita vůně: výrazná Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "citrónová bazalka",
+        "sourceFragments": [
+         "citrónové bazalky"
+        ]
+       },
+       {
+        "display": "šalvěj",
+        "sourceFragments": [
+         "šalvěje"
+        ]
+       },
+       {
+        "display": "listy rajčete",
+        "sourceFragments": [
+         "listů rajčete"
+        ]
+       }
+      ],
+      "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
+     },
+     "qualitativeIntensity": "výrazná",
+     "intensityEvidence": {
+      "url": "https://www.kettscandles.com/vonne-svicky/basil-herbs-svicka-velka/",
+      "scope": "Official product parameter Intenzita vůně",
+      "sourceText": "Intenzita vůně: výrazná",
+      "qualification": "Publisher qualitative wording, not measured numeric strength."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Citrónová bazalka, šalvěj a rajčatové listy",
+    "selectionTraits": {
+     "fragranceDirection": "fresh",
+     "fragranceProfile": "herbs"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.kettscandles.com/vonne-svicky/basil-herbs-svicka-velka/",
+     "sourceText": "Vonné tóny: citrónová bazalka, šalvěj, listy rajčete\nBasil & Herbs  vonná svíčka / velká\nBASIL & HERBS - svěží zelený mix z těch nejvybranějších bylinek. Natrhejte si plnou náruč citrónové bazalky, povzbuzující šalvěje a šťavnatých listů rajčete. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: bylinková, svěží Intenzita vůně: výrazná Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+     "navigationLabel": "Citrónová bazalka, šalvěj a rajčatové listy",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "plum",
+   "name": "Plumberry",
+   "url": "https://www.kettscandles.com/vonne-svicky/plumberry-svicka-velka/",
+   "priceAmount": 2100.0,
+   "price": "2100 Kč",
+   "currency": "CZK",
+   "volume": "300 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Švestkový koláč, skořice a hřebíček.",
+   "reason": "Švestkový koláč, skořice a hřebíček.",
+   "photo": "/assets/s5/ketts/plum.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.kettscandles.com/vonne-svicky/plumberry-svicka-velka/",
+    "verifiedAt": "2026-11-15T15:30:58.462683+00:00",
+    "sourceSha256": "24481459428778a1943738ff98e02c0914520f591c1af09e2cb56fbabd9224d8",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official exact fixedSKU visible primary availability",
+     "currency": "CZK",
+     "sku": "PLUMSVFI",
+     "publisherAvailability": "Skladem 1 ks",
+     "quantity": 1,
+     "qualification": "Visible exact primary Skladem1ks; Offer has no availability field, not fabricated schema InStock."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 2100.0,
+     "currency": "CZK",
+     "vatSource": "https://www.kettscandles.com/vonne-svicky/plumberry-svicka-velka/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "300 g",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.kettscandles.com/user/shop/big/604_kett-s-candles-svicka-v-ceskem-skle-s-drevenym-knotem-plumberry.jpg?ff=1&x=1024&y=1024&q=85&ts=5f89841b&sg=38cb01fe",
+    "photoEvidence": {
+     "id": "plum",
+     "file": "plum.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.kettscandles.com/user/shop/big/604_kett-s-candles-svicka-v-ceskem-skle-s-drevenym-knotem-plumberry.jpg?ff=1&x=1024&y=1024&q=85&ts=5f89841b&sg=38cb01fe",
+     "sha256": "0a0459cebfba458e94c220f04f2256620bf62d51dcd4784a108aeefbc170f06f",
+     "bytes": 69584,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:41:28.295524+00:00",
+     "width": 1024,
+     "height": 1024
+    },
+    "fragrance": {
+     "notes": [
+      "švestkový koláč",
+      "skořice",
+      "hřebíček"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.kettscandles.com/vonne-svicky/plumberry-svicka-velka/",
+      "sourceText": "Vonné tóny: švestkový koláč, skořice, hřebíček\nPlumberry  vonná svíčka / velká\nPLUMBERRY - švestkový koláč, skořice a špetka hřebíčku. Vůně dní, kdy je ještě pořád teplo, ale ve vzduchu už visí podzim. Ať žije Babí léto. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: ovocná, hřejivá Intenzita vůně: střední Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+      "originalSourceText": "Plumberry  vonná svíčka / velká\nPLUMBERRY - švestkový koláč, skořice a špetka hřebíčku. Vůně dní, kdy je ještě pořád teplo, ale ve vzduchu už visí podzim. Ať žije Babí léto. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: ovocná, hřejivá Intenzita vůně: střední Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "švestkový koláč",
+        "sourceFragments": [
+         "švestkový koláč"
+        ]
+       },
+       {
+        "display": "skořice",
+        "sourceFragments": [
+         "skořice"
+        ]
+       },
+       {
+        "display": "hřebíček",
+        "sourceFragments": [
+         "hřebíčku"
+        ]
+       }
+      ],
+      "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
+     },
+     "qualitativeIntensity": "střední",
+     "intensityEvidence": {
+      "url": "https://www.kettscandles.com/vonne-svicky/plumberry-svicka-velka/",
+      "scope": "Official product parameter Intenzita vůně",
+      "sourceText": "Intenzita vůně: střední",
+      "qualification": "Publisher qualitative wording, not measured numeric strength."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Švestkový koláč, skořice a hřebíček",
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "plum"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.kettscandles.com/vonne-svicky/plumberry-svicka-velka/",
+     "sourceText": "Vonné tóny: švestkový koláč, skořice, hřebíček\nPlumberry  vonná svíčka / velká\nPLUMBERRY - švestkový koláč, skořice a špetka hřebíčku. Vůně dní, kdy je ještě pořád teplo, ale ve vzduchu už visí podzim. Ať žije Babí léto. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: ovocná, hřejivá Intenzita vůně: střední Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+     "navigationLabel": "Švestkový koláč, skořice a hřebíček",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "sandal",
+   "name": "Antique Sandalwood",
+   "url": "https://www.kettscandles.com/vonne-svicky/antique-sandalwood-svicka-velka/",
+   "priceAmount": 2100.0,
+   "price": "2100 Kč",
+   "currency": "CZK",
+   "volume": "300 g",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Výrazná orientální vůně santalu.",
+   "reason": "Výrazná orientální vůně santalu.",
+   "photo": "/assets/s5/ketts/sandal.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.kettscandles.com/vonne-svicky/antique-sandalwood-svicka-velka/",
+    "verifiedAt": "2026-11-15T15:30:59.365468+00:00",
+    "sourceSha256": "b793992ff653417df638430d9bb3712e9a9e12a0f86190e727c56730cfa03699",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official exact fixedSKU visible primary availability",
+     "currency": "CZK",
+     "sku": "ANTISASVCE",
+     "publisherAvailability": "Skladem 1 ks",
+     "quantity": 1,
+     "qualification": "Visible exact primary Skladem1ks; Offer has no availability field, not fabricated schema InStock."
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 2100.0,
+     "currency": "CZK",
+     "vatSource": "https://www.kettscandles.com/vonne-svicky/antique-sandalwood-svicka-velka/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "300 g",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.kettscandles.com/user/shop/big/565_vonna-svicka-v-ceskem-foukanem-skle-antique-sandalwood.jpg?ff=1&x=1024&y=1024&q=85&ts=5f89841b&sg=38cb01fe",
+    "photoEvidence": {
+     "id": "sandal",
+     "file": "sandal.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.kettscandles.com/user/shop/big/565_vonna-svicka-v-ceskem-foukanem-skle-antique-sandalwood.jpg?ff=1&x=1024&y=1024&q=85&ts=5f89841b&sg=38cb01fe",
+     "sha256": "cf4638640286f67ebc09220ccf2eabdfdc47bf82fbe59de73049313189882f7c",
+     "bytes": 81552,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:41:28.804373+00:00",
+     "width": 1024,
+     "height": 1024
+    },
+    "fragrance": {
+     "notes": [
+      "santalové dřevo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.kettscandles.com/vonne-svicky/antique-sandalwood-svicka-velka/",
+      "sourceText": "Vonné tóny: santalové dřevo\nAntique Sandalwood  vonná svíčka / velká\nANTIQUE SANDALWOOD - orientální a podmanivá esence santalového dřeva Vás spolehlivě ukonejší po hektickém dni a navodí příjemnou relaxační atmosféru lázní hammam. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: orientální, meditační Intenzita vůně: výrazná Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+      "originalSourceText": "Antique Sandalwood  vonná svíčka / velká\nANTIQUE SANDALWOOD - orientální a podmanivá esence santalového dřeva Vás spolehlivě ukonejší po hektickém dni a navodí příjemnou relaxační atmosféru lázní hammam. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: orientální, meditační Intenzita vůně: výrazná Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "santalové dřevo",
+        "sourceFragments": [
+         "santalového dřeva"
+        ]
+       }
+      ],
+      "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
+     },
+     "qualitativeIntensity": "výrazná",
+     "intensityEvidence": {
+      "url": "https://www.kettscandles.com/vonne-svicky/antique-sandalwood-svicka-velka/",
+      "scope": "Official product parameter Intenzita vůně",
+      "sourceText": "Intenzita vůně: výrazná",
+      "qualification": "Publisher qualitative wording, not measured numeric strength."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Výrazná orientální vůně santalu",
+    "selectionTraits": {
+     "fragranceDirection": "depth",
+     "fragranceProfile": "sandal"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.kettscandles.com/vonne-svicky/antique-sandalwood-svicka-velka/",
+     "sourceText": "Vonné tóny: santalové dřevo\nAntique Sandalwood  vonná svíčka / velká\nANTIQUE SANDALWOOD - orientální a podmanivá esence santalového dřeva Vás spolehlivě ukonejší po hektickém dni a navodí příjemnou relaxační atmosféru lázní hammam. Užijte si vůni v luxusní svíčce z čistě přírodního sójového vosku a s přírodním dřevěným knotem, který příjemně praská. Svíčku dodáváme v ručně foukaném českém skle, které je pro Vás vyráběno v moravské sklárně, s dlouholetou tradicí, ukryté v samém srdci Vysočiny. Každý kus skla je neopakovatelný originál a bude designovou dekorací Vašeho interiéru. Pokyny k použití: 1. Dřevěný knot vždy dobře zapalte, použijte delší sirku a přidržte ji déle u knotu, jedná se o pravé dřevo, takže je potřeba jej pořádně podpálit. 2. Nespěchejte a relaxujte!! Svíčku nechte hořet min. 1,5 - 2 hodiny, aby se vosk plně roztavil a vznikla vosková hladinka. 3. Pro maximální vonný efekt nenechávejte svíčku hořet déle než 3 hodiny. 4. Vždy po sfouknutí plamene a zchladnutí svíčky, prsty lehce odlomte ohořelý knot. 5. Dbejte na to, aby vosk svíčky zůstal bez jakýchkoliv zbytků knotu. 6. Svíčku nevystavujte vysokým teplotám ani přímému slunci. 7. Nenechávejte svíčku hořet bez dozoru. Rozměry: 10 x10 cm Hmotnost vonné náplně: 300 g Celková hmotnost výrobku: cca 1100 g! Jméno značky: KETT´S CANDLES Kategorie: Vonné svíčky Hmotnost: 1.1 kg Charakter vůně: orientální, meditační Intenzita vůně: výrazná Doba hoření: 45-60 hodin Tisk Zeptat se Sdílet window.twttr = (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], t = window.twttr || {}; if (d.getElementById(id)) return t; js = d.createElement(s); js.id = id; js.src = \"https://platform.twitter.com/widgets.js\"; fjs.parentNode.insertBefore(js, fjs); t._e = []; t.ready = function(f) { t._e.push(f); }; return t; }(document, \"script\", \"twitter-wjs\")); Tweet (function () { var isInstagram = /Instagram/i.test(navigator.userAgent || \"\"); if (isInstagram) { var wrap = document.getElementById(\"fb-share-wrap\"); if (wrap) { wrap.innerHTML = ''; } } })(); Zavřít",
+     "navigationLabel": "Výrazná orientální vůně santalu",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  }
+ ],
+ "revenue": {
+  "year": 2024,
+  "publishedBand": "1–200 tis. Kč",
+  "currency": "CZK",
+  "source": "https://www.chytryrejstrik.cz/ico-05124174/ketts-candles-s-r-o",
+  "sourceType": "Secondary published historical band",
+  "latestExact2025": "UNKNOWN"
+ },
+ "size": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "Six distinct candle fragrance formulas, fixedSKU pack/price/stock/originalphotos; no same-scent size/glass/color inflation.",
+  "Candle scent descriptors only, no cold/respiratory/pregnancy/infant/mental-health/aromatherapy/air-disinfection/fire-safety or guaranteed burn duration promises.",
+  "No verified accessory integration contract: alternative and distinct comparison only, not fake same-formula candle lid as perfume mini.",
+  "MAIN candle-brand backend guard/integration/livePreview QA required.",
+  "RainWater300g explicitly Vyprodáno/OutOfStock excluded; replacement Basil&Herbs300g actual Skladem1ks. Pack300g wax fill, not1100g shipping/product mass."
+ ]
+};

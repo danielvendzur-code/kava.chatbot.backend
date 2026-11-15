@@ -1,0 +1,672 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.totap = {
+ "brand": "toTap",
+ "domain": "totap.cz",
+ "operator": {
+  "name": "Provoňsi s.r.o.",
+  "ico": "08047090",
+  "country": "CZ",
+  "activeNoEnd": true,
+  "aliases": [
+   "provonsi.cz"
+  ],
+  "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08047090"
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "cs",
+ "country": "CZ",
+ "currency": "CZK",
+ "status": "SOURCE_PACKAGE_VERIFIED",
+ "products": [
+  {
+   "id": "1",
+   "name": "Anit",
+   "url": "https://www.totap.cz/p/anit#1977",
+   "priceAmount": 409.0,
+   "price": "409 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Hruška, jablko a pižmo.",
+   "reason": "Hruška, jablko a pižmo.",
+   "photo": "/assets/s5/totap/1.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.totap.cz/p/anit",
+    "verifiedAt": "2026-11-15T14:55:05.541695+00:00",
+    "sourceSha256": "b1a1cdefa5d1c26570b49ece2b19f0bf75556496549665a19dd95c83f7e1bca1",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Actual native50ml selector active, variant hash matches official upgates.product.options SKU and VAT-inclusiveprice, visible selected availability",
+     "currency": "CZK",
+     "variantId": "1977",
+     "sku": "P00096-1",
+     "publisherAvailability": "Skladem",
+     "quantity": "UNKNOWN_NOT_PUBLISHED",
+     "variantSelectionRequired": true
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 409.0,
+     "currency": "CZK",
+     "vatSource": "https://www.totap.cz/p/anit",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://to-tap.s23.cdn-upgates.com/_cache/e/b/ebeed952f69bd662a0dd89afb70565e4-imitace-parfemu-another-13-le-labo.png",
+    "photoEvidence": {
+     "id": "1",
+     "file": "1.png",
+     "url": "https://to-tap.s23.cdn-upgates.com/_cache/e/b/ebeed952f69bd662a0dd89afb70565e4-imitace-parfemu-another-13-le-labo.png",
+     "sha256": "9a5f6b9e1f0f2e6a78ea1104f15ba0407e5bca1f0069a79b3b4cb294fe460a35",
+     "bytes": 121425,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:47:19.734374+00:00",
+     "width": 400,
+     "height": 522
+    },
+    "fragrance": {
+     "notes": [
+      "hruška",
+      "jablko",
+      "citrusy",
+      "pižmo",
+      "mech",
+      "jasmín",
+      "dřevo",
+      "ambra"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://www.totap.cz/p/anit",
+      "sourceText": "Hlava: hruška, jablko, citrusy\nSrdce: pižmo, mech, jasmín\nZáklad: dřevo, pižmo, ambra",
+      "originalSourceText": "Hlava: hruška, jablko, citrusy\nSrdce: pižmo, mech, jasmín\nZáklad: dřevo, pižmo, ambra",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "personal-fragrance",
+    "scent": "Hruška, jablko a pižmo",
+    "identityDisclosure": "Vlastní vůně toTap inspirovaná známou předlohou; nejde o originál dané značky ani záruku shodné vůně.",
+    "nativeVariantEvidence": {
+     "url": "https://www.totap.cz/p/anit#1977",
+     "checkedAt": "2026-11-15T15:18:11.983472+00:00",
+     "sourceSha256": "f5788be7353d360d23df2c683f15774473e6478885fe40fedd32a1a1a8731797",
+     "actualNormalUiSelection": true,
+     "publicOptionsPrimaryDefaultNotUsed": true,
+     "qualification": "Original parent product price159 is10ml minimum. Exact50ml variant option price409 and active50ml/selectedSkladem verified. Public parent product price does not auto-update; never treated as50ml."
+    },
+    "selectionTraits": {
+     "fragranceDirection": "flowers",
+     "fragranceProfile": "1"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.totap.cz/p/anit#1977",
+     "sourceText": "Hlava: hruška, jablko, citrusy\nSrdce: pižmo, mech, jasmín\nZáklad: dřevo, pižmo, ambra",
+     "navigationLabel": "Hruška, jablko a pižmo",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "2",
+   "name": "Arat",
+   "url": "https://www.totap.cz/p/arat#1974",
+   "priceAmount": 409.0,
+   "price": "409 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Růže, oud a vanilka.",
+   "reason": "Růže, oud a vanilka.",
+   "photo": "/assets/s5/totap/2.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.totap.cz/p/arat",
+    "verifiedAt": "2026-11-15T14:55:05.619761+00:00",
+    "sourceSha256": "bc729c6a31a279eae85231d857a9370117bc358411b0916507b87c18a00b3b94",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Actual native50ml selector active, variant hash matches official upgates.product.options SKU and VAT-inclusiveprice, visible selected availability",
+     "currency": "CZK",
+     "variantId": "1974",
+     "sku": "P00095-1",
+     "publisherAvailability": "Skladem",
+     "quantity": "UNKNOWN_NOT_PUBLISHED",
+     "variantSelectionRequired": true
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 409.0,
+     "currency": "CZK",
+     "vatSource": "https://www.totap.cz/p/arat",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://to-tap.s23.cdn-upgates.com/_cache/1/b/1b8c186e613b7006a86255e3e13ec5d9-imitace-parfemu-armani-prive-rose-d-arabie.png",
+    "photoEvidence": {
+     "id": "2",
+     "file": "2.png",
+     "url": "https://to-tap.s23.cdn-upgates.com/_cache/1/b/1b8c186e613b7006a86255e3e13ec5d9-imitace-parfemu-armani-prive-rose-d-arabie.png",
+     "sha256": "b67393e478918bd14a6b1f429f5fafab31bf04ebc8ef4fac24e7efedd6761968",
+     "bytes": 149624,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:47:20.299750+00:00",
+     "width": 400,
+     "height": 522
+    },
+    "fragrance": {
+     "notes": [
+      "růže",
+      "oud",
+      "pačuli",
+      "vanilka"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://www.totap.cz/p/arat",
+      "sourceText": "Hlava: růže\nSrdce: růže\nZáklad: oud, pačuli, vanilka",
+      "originalSourceText": "Hlava: růže\nSrdce: růže\nZáklad: oud, pačuli, vanilka",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "personal-fragrance",
+    "scent": "Růže, oud a vanilka",
+    "identityDisclosure": "Vlastní vůně toTap inspirovaná známou předlohou; nejde o originál dané značky ani záruku shodné vůně.",
+    "nativeVariantEvidence": {
+     "url": "https://www.totap.cz/p/arat#1974",
+     "checkedAt": "2026-11-15T15:18:37.805524+00:00",
+     "sourceSha256": "b18719eaf7fa6960f93d39eee683e26275607acc0e30d3fcd370edca77b9df88",
+     "actualNormalUiSelection": true,
+     "publicOptionsPrimaryDefaultNotUsed": true,
+     "qualification": "Original parent product price159 is10ml minimum. Exact50ml variant option price409 and active50ml/selectedSkladem verified. Public parent product price does not auto-update; never treated as50ml."
+    },
+    "selectionTraits": {
+     "fragranceDirection": "flowers",
+     "fragranceProfile": "2"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.totap.cz/p/arat#1974",
+     "sourceText": "Hlava: růže\nSrdce: růže\nZáklad: oud, pačuli, vanilka",
+     "navigationLabel": "Růže, oud a vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "3",
+   "name": "Kyoto",
+   "url": "https://www.totap.cz/p/kyoto#1965",
+   "priceAmount": 409.0,
+   "price": "409 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Řepa, růže a vetiver.",
+   "reason": "Řepa, růže a vetiver.",
+   "photo": "/assets/s5/totap/3.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.totap.cz/p/kyoto",
+    "verifiedAt": "2026-11-15T14:55:05.996015+00:00",
+    "sourceSha256": "ec14a49a260c79d520e193088cbe00f675c22286147221b47ef5df54f447b846",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Actual native50ml selector active, variant hash matches official upgates.product.options SKU and VAT-inclusiveprice, visible selected availability",
+     "currency": "CZK",
+     "variantId": "1965",
+     "sku": "P00092-1",
+     "publisherAvailability": "Skladem",
+     "quantity": "UNKNOWN_NOT_PUBLISHED",
+     "variantSelectionRequired": true
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 409.0,
+     "currency": "CZK",
+     "vatSource": "https://www.totap.cz/p/kyoto",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://to-tap.s23.cdn-upgates.com/_cache/0/1/01a73a7edfe7f2af5b8dbd65c0759989-imitace-parfemu-diptyque-kyoto.png",
+    "photoEvidence": {
+     "id": "3",
+     "file": "3.png",
+     "url": "https://to-tap.s23.cdn-upgates.com/_cache/0/1/01a73a7edfe7f2af5b8dbd65c0759989-imitace-parfemu-diptyque-kyoto.png",
+     "sha256": "1e7bf9ee28978f9c349edd4241e9b44323845ea803e3374daeababfdf3d1a5e1",
+     "bytes": 150023,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:47:20.877694+00:00",
+     "width": 400,
+     "height": 522
+    },
+    "fragrance": {
+     "notes": [
+      "řepa",
+      "růže",
+      "vetiver",
+      "kadidlo"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://www.totap.cz/p/kyoto",
+      "sourceText": "Hlava: řepa\nSrdce: růže\nZáklad: vetiver, kadidlo",
+      "originalSourceText": "Hlava: řepa\nSrdce: růže\nZáklad: vetiver, kadidlo",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "personal-fragrance",
+    "scent": "Řepa, růže a vetiver",
+    "identityDisclosure": "Vlastní vůně toTap inspirovaná známou předlohou; nejde o originál dané značky ani záruku shodné vůně.",
+    "nativeVariantEvidence": {
+     "url": "https://www.totap.cz/p/kyoto#1965",
+     "checkedAt": "2026-11-15T15:18:54.259079+00:00",
+     "sourceSha256": "82921cf815e6cf04a44c12b95acdfc7f4029aa4b139d4372f4fc2126d447342a",
+     "actualNormalUiSelection": true,
+     "publicOptionsPrimaryDefaultNotUsed": true,
+     "qualification": "Original parent product price159 is10ml minimum. Exact50ml variant option price409 and active50ml/selectedSkladem verified. Public parent product price does not auto-update; never treated as50ml."
+    },
+    "selectionTraits": {
+     "fragranceDirection": "unusual",
+     "fragranceProfile": "3"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.totap.cz/p/kyoto#1965",
+     "sourceText": "Hlava: řepa\nSrdce: růže\nZáklad: vetiver, kadidlo",
+     "navigationLabel": "Řepa, růže a vetiver",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "4",
+   "name": "Cafe",
+   "url": "https://www.totap.cz/p/cafe#1962",
+   "priceAmount": 409.0,
+   "price": "409 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Růže, káva a vanilka.",
+   "reason": "Růže, káva a vanilka.",
+   "photo": "/assets/s5/totap/4.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.totap.cz/p/cafe",
+    "verifiedAt": "2026-11-15T14:55:06.014293+00:00",
+    "sourceSha256": "9a0310566967b2fd7d70187d4f6f7b3fdcc6280e2df1609df9510d624e6b5461",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Actual native50ml selector active, variant hash matches official upgates.product.options SKU and VAT-inclusiveprice, visible selected availability",
+     "currency": "CZK",
+     "variantId": "1962",
+     "sku": "P00091-1",
+     "publisherAvailability": "Skladem",
+     "quantity": "UNKNOWN_NOT_PUBLISHED",
+     "variantSelectionRequired": true
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 409.0,
+     "currency": "CZK",
+     "vatSource": "https://www.totap.cz/p/cafe",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://to-tap.s23.cdn-upgates.com/_cache/1/6/168c23dfe44dd0ba37d086df2978d1e5-imitace-parfemu-montale-intense-cafe.png",
+    "photoEvidence": {
+     "id": "4",
+     "file": "4.png",
+     "url": "https://to-tap.s23.cdn-upgates.com/_cache/1/6/168c23dfe44dd0ba37d086df2978d1e5-imitace-parfemu-montale-intense-cafe.png",
+     "sha256": "e4aad5625860c67f9d587685f599089cfb788a318183f05a5c88768a62265908",
+     "bytes": 149788,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:47:21.492531+00:00",
+     "width": 400,
+     "height": 522
+    },
+    "fragrance": {
+     "notes": [
+      "květinové tóny",
+      "růže",
+      "káva",
+      "vanilka",
+      "pižmo",
+      "ambra"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://www.totap.cz/p/cafe",
+      "sourceText": "Hlava: květinové tóny\nSrdce: růže, káva\nZáklad: vanilka, pižmo, ambra",
+      "originalSourceText": "Hlava: květinové tóny\nSrdce: růže, káva\nZáklad: vanilka, pižmo, ambra",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "personal-fragrance",
+    "scent": "Růže, káva a vanilka",
+    "identityDisclosure": "Vlastní vůně toTap inspirovaná známou předlohou; nejde o originál dané značky ani záruku shodné vůně.",
+    "nativeVariantEvidence": {
+     "url": "https://www.totap.cz/p/cafe#1962",
+     "checkedAt": "2026-11-15T15:19:11.055683+00:00",
+     "sourceSha256": "2d122b387581be14d44f8fa4a4a38d36da89ca46c9966055615fbc7dc6246425",
+     "actualNormalUiSelection": true,
+     "publicOptionsPrimaryDefaultNotUsed": true,
+     "qualification": "Original parent product price159 is10ml minimum. Exact50ml variant option price409 and active50ml/selectedSkladem verified. Public parent product price does not auto-update; never treated as50ml."
+    },
+    "selectionTraits": {
+     "fragranceDirection": "unusual",
+     "fragranceProfile": "4"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.totap.cz/p/cafe#1962",
+     "sourceText": "Hlava: květinové tóny\nSrdce: růže, káva\nZáklad: vanilka, pižmo, ambra",
+     "navigationLabel": "Růže, káva a vanilka",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "5",
+   "name": "Abra",
+   "url": "https://www.totap.cz/p/abra#1959",
+   "priceAmount": 409.0,
+   "price": "409 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Pryskyřice, kadidlo a ambra.",
+   "reason": "Pryskyřice, kadidlo a ambra.",
+   "photo": "/assets/s5/totap/5.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.totap.cz/p/abra",
+    "verifiedAt": "2026-11-15T14:55:06.035822+00:00",
+    "sourceSha256": "01d5dd72090d8475329024cf5577cffa82b3c010d5669533991b52bcdb24fd88",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Actual native50ml selector active, variant hash matches official upgates.product.options SKU and VAT-inclusiveprice, visible selected availability",
+     "currency": "CZK",
+     "variantId": "1959",
+     "sku": "P00090-1",
+     "publisherAvailability": "Skladem",
+     "quantity": "UNKNOWN_NOT_PUBLISHED",
+     "variantSelectionRequired": true
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 409.0,
+     "currency": "CZK",
+     "vatSource": "https://www.totap.cz/p/abra",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://to-tap.s23.cdn-upgates.com/_cache/6/d/6d64479690f15b2f2db21ffbcc4b029b-imitace-parfemu-tom-ford-ambra-absolut-to-tap.png",
+    "photoEvidence": {
+     "id": "5",
+     "file": "5.png",
+     "url": "https://to-tap.s23.cdn-upgates.com/_cache/6/d/6d64479690f15b2f2db21ffbcc4b029b-imitace-parfemu-tom-ford-ambra-absolut-to-tap.png",
+     "sha256": "8886e0c965e8b24189fb04b5190d5cec5715ceb3c3d245e2ce8f685c015a6fe5",
+     "bytes": 136250,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:47:21.780721+00:00",
+     "width": 400,
+     "height": 522
+    },
+    "fragrance": {
+     "notes": [
+      "pryskyřice",
+      "kadidlo",
+      "vanilka",
+      "ambra",
+      "dřevité tóny"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://www.totap.cz/p/abra",
+      "sourceText": "Hlava: pryskyřice\nSrdce: kadidlo, vanilka\nZáklad: ambra, dřevité tóny",
+      "originalSourceText": "Hlava: pryskyřice\nSrdce: kadidlo, vanilka\nZáklad: ambra, dřevité tóny",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "personal-fragrance",
+    "scent": "Pryskyřice, kadidlo a ambra",
+    "identityDisclosure": "Vlastní vůně toTap inspirovaná známou předlohou; nejde o originál dané značky ani záruku shodné vůně.",
+    "nativeVariantEvidence": {
+     "url": "https://www.totap.cz/p/abra#1959",
+     "checkedAt": "2026-11-15T15:15:06.592362+00:00",
+     "sourceSha256": "5f2c712b7a0821a94ec4a96693bb42fb8daa50be06935783c02d1f54b1907842",
+     "actualNormalUiSelection": true,
+     "publicOptionsPrimaryDefaultNotUsed": true,
+     "qualification": "Original parent product price159 is10ml minimum. Exact50ml variant option price409 and active50ml/selectedSkladem verified. Public parent product price does not auto-update; never treated as50ml."
+    },
+    "selectionTraits": {
+     "fragranceDirection": "resin",
+     "fragranceProfile": "5"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.totap.cz/p/abra#1959",
+     "sourceText": "Hlava: pryskyřice\nSrdce: kadidlo, vanilka\nZáklad: ambra, dřevité tóny",
+     "navigationLabel": "Pryskyřice, kadidlo a ambra",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "6",
+   "name": "Sanblu",
+   "url": "https://www.totap.cz/p/sanblu#1864",
+   "priceAmount": 409.0,
+   "price": "409 Kč",
+   "currency": "CZK",
+   "volume": "50 ml",
+   "category": "fragrance",
+   "kind": "Parfém",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Koření, květiny a santalové dřevo.",
+   "reason": "Koření, květiny a santalové dřevo.",
+   "photo": "/assets/s5/totap/6.png",
+   "source": {
+    "series": "s5",
+    "url": "https://www.totap.cz/p/sanblu",
+    "verifiedAt": "2026-11-15T14:55:07.090944+00:00",
+    "sourceSha256": "6abb02ec58f70c76ae08d3fe68e7c2caae1b8477653a9509e327a11b5bfd5965",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Actual native50ml selector active, variant hash matches official upgates.product.options SKU and VAT-inclusiveprice, visible selected availability",
+     "currency": "CZK",
+     "variantId": "1864",
+     "sku": "P00055-1",
+     "publisherAvailability": "Skladem",
+     "quantity": "UNKNOWN_NOT_PUBLISHED",
+     "variantSelectionRequired": true
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 409.0,
+     "currency": "CZK",
+     "vatSource": "https://www.totap.cz/p/sanblu",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "50 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": true,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://to-tap.s23.cdn-upgates.com/_cache/7/0/70bcbccbbae81a75a2bab827cea3c492-to-tap-parfumerie-imitace-parfemu-drevite-oc-omega-brno-tom-ford-sanblu.png",
+    "photoEvidence": {
+     "id": "6",
+     "file": "6.png",
+     "url": "https://to-tap.s23.cdn-upgates.com/_cache/7/0/70bcbccbbae81a75a2bab827cea3c492-to-tap-parfumerie-imitace-parfemu-drevite-oc-omega-brno-tom-ford-sanblu.png",
+     "sha256": "20d1f403a13789297a59d838c8997e5bf978f62a988eb007cf109a0ae19c5f57",
+     "bytes": 150852,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:47:22.010173+00:00",
+     "width": 400,
+     "height": 522
+    },
+    "fragrance": {
+     "notes": [
+      "koření",
+      "skořice",
+      "kmín",
+      "pískavice",
+      "ylang - ylang",
+      "jasmín",
+      "růže",
+      "santalové dřevo",
+      "pryskyřice",
+      "cedr",
+      "pižmo",
+      "oud"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Parfém",
+     "notesEvidence": {
+      "url": "https://www.totap.cz/p/sanblu",
+      "sourceText": "Hlava: koření, skořice, kmín, pískavice\nSrdce: ylang - ylang, jasmín, růže\nZáklad: santalové dřevo, pryskyřice, cedr, pižmo, oud",
+      "originalSourceText": "Hlava: koření, skořice, kmín, pískavice\nSrdce: ylang - ylang, jasmín, růže\nZáklad: santalové dřevo, pryskyřice, cedr, pižmo, oud",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "personal-fragrance",
+    "scent": "Koření, květiny a santalové dřevo",
+    "identityDisclosure": "Vlastní vůně toTap inspirovaná známou předlohou; nejde o originál dané značky ani záruku shodné vůně.",
+    "nativeVariantEvidence": {
+     "url": "https://www.totap.cz/p/sanblu#1864",
+     "checkedAt": "2026-11-15T15:19:26.228220+00:00",
+     "sourceSha256": "bac25b8a449bbda9e5010091e88bf443cdaa14fb1149960adc039979d45ad0c3",
+     "actualNormalUiSelection": true,
+     "publicOptionsPrimaryDefaultNotUsed": true,
+     "qualification": "Original parent product price159 is10ml minimum. Exact50ml variant option price409 and active50ml/selectedSkladem verified. Public parent product price does not auto-update; never treated as50ml."
+    },
+    "selectionTraits": {
+     "fragranceDirection": "resin",
+     "fragranceProfile": "6"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.totap.cz/p/sanblu#1864",
+     "sourceText": "Hlava: koření, skořice, kmín, pískavice\nSrdce: ylang - ylang, jasmín, růže\nZáklad: santalové dřevo, pryskyřice, cedr, pižmo, oud",
+     "navigationLabel": "Koření, květiny a santalové dřevo",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  }
+ ],
+ "revenue": {
+  "year": 2024,
+  "publishedBand": "5–10 mil. Kč",
+  "currency": "CZK",
+  "source": "https://www.chytryrejstrik.cz/ico-08047090/provonsi-s-r-o",
+  "sourceType": "Secondary published historical band",
+  "latestExact2025": "UNKNOWN"
+ },
+ "size": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "Six distinct50ml own-inspired compositions, native exactSKU/409CZK/selectedSkladem/photo verified.10/30ml not extraformulas.",
+  "Exact literal publisher pyramids including unusual Kyoto řepa. No invented notes/intensity or original-designer/equivalence guarantee.",
+  "Known ordinary designer-name lookup is FIT_REVIEW, not claimed nonexistent. No productAI observed visitedregime, othermodes unknown.",
+  "Minis stock not independently selected/verified: no paid compatibleaddon invented. MAIN inspiredbrand backend guard/integration/livePreview QA required."
+ ]
+};

@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "citrusy",
+      "label": "Citrusy a svěžest",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "fresh",
+          "label": "Eukalyptus a citron",
+          "productId": "fresh",
+          "sourceUrl": "https://www.rozvoneno.cz/svezi-vanek-vonna-svicka-s-bio-eukalyptem-a-citronem/"
+        },
+        {
+          "value": "citrus",
+          "label": "Grep, limetka a bergamot",
+          "productId": "citrus",
+          "sourceUrl": "https://www.rozvoneno.cz/dekuji-vonna-svicka-s-bio-grepem--limetkou-a-bergamotem/"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Hřejivé kořeněné tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "winter",
+          "label": "Pomeranč, hřebíček a skořice",
+          "productId": "winter",
+          "sourceUrl": "https://www.rozvoneno.cz/zimni-nalada-vonna-svicka-s-bio-pomerancem--hrebickem-a-skorici/"
+        },
+        {
+          "value": "ginger",
+          "label": "Zázvor, citron a cedr",
+          "productId": "ginger",
+          "sourceUrl": "https://www.rozvoneno.cz/hrejive-chvile-vonna-svicka-s-bio-zazvorem--citronem-a-cedrem--130-ml/"
+        }
+      ]
+    },
+    {
+      "value": "depth",
+      "label": "Květiny nebo pryskyřice",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "flower",
+          "label": "Geránie, pomeranč a pačuli",
+          "productId": "flower",
+          "sourceUrl": "https://www.rozvoneno.cz/jedinecna-maminka-vonna-svicka-s-bio-geranii--pomerancem-a-paculi/"
+        },
+        {
+          "value": "resin",
+          "label": "Kadidlo a myrha",
+          "productId": "resin",
+          "sourceUrl": "https://www.rozvoneno.cz/betlemska-zare-vonna-svicka-s-kadidlem-a-myrhou/"
+        }
+      ]
+    }
+  ]
+}
