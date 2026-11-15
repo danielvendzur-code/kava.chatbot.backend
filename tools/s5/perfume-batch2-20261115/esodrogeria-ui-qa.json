@@ -1,5 +1,5 @@
 {
-  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "nativePhotoCheck": "Original official productphoto bytes retained; native image dimensions checked against actual rendered CSS image dimensions. Eso Patchouli200px original renders180px in company-only question CSS. No padding/resampling to fabricate higher resolution.",
   "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
   "at": "2026-11-15T22:53:52.506640+00:00",
   "qaType": "Isolatedimmutablefixture/sourceIDmock only, notintegrated/livePreview",

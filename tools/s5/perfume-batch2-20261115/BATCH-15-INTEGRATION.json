@@ -1680,5 +1680,14 @@
     "Ensure existing visual-v1/profile/result-extras/standalonepolish loading for new slugs; do not create another recommendationcore fix",
     "Create READY Preview then run every result320/390/1280, visually inspect all results and firstquestions, verify mock/offlinechat only paid0",
     "Confirm actual public URLs/domain ownership and sent-mail history independently before moving outreach fromNOT_READY; no mails sent by this worker"
-  ]
+  ],
+  "finalDuplicateAssessment": "tools/s5/perfume-batch2-20261115/research/final-duplicate-assessment.json",
+  "coordinationCompletionCommit": "736d219f814e36545df5d090c524236df7636211",
+  "drafts": "tools/s5/perfume-batch2-20261115/OUTREACH-DRAFTS-NOT-READY.md",
+  "entryQaArchive": "tools/s5/perfume-batch2-20261115/evidence/entry-final-local-qa.zip",
+  "additionalEntryChecks": {
+    "configurations": 45,
+    "passed": 45,
+    "visualScope": "15 entry+firstquestion pairs at390px; no claim all45 entryscreens visuallyreviewed"
+  }
 }
