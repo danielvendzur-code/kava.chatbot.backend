@@ -1,0 +1,13 @@
+{
+  "slug": "totap",
+  "id": "2",
+  "url": "https://www.totap.cz/p/arat",
+  "checkedAt": "2026-11-15T15:14:21.333214+00:00",
+  "tlsVerified": true,
+  "scope": "Normal read-only variant selection only; no cart/customer forms/messages submitted",
+  "readOnlyVariantPostAllowed": false,
+  "selectedLabel": "50 ml 409 Kč",
+  "status": 200,
+  "finalUrl": "https://www.totap.cz/p/arat#1974",
+  "error": "Locator.inner_text: Timeout 6000ms exceeded.\nCall log:\n  - waiting for locator(\"body\")\n"
+}

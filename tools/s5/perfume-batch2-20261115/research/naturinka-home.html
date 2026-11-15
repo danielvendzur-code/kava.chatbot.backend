@@ -1,0 +1,1769 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NATURINKA - TRADIČNÍ MÝDLÁRNA</title>
+                <link rel="icon" href="https://naturinka.cz/favicon.ico?v=2" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://naturinka.cz/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://naturinka.cz/favicon-16x16.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://naturinka.cz/apple-touch-icon.png?v=2">
+    <link rel="manifest" href="https://naturinka.cz/site.webmanifest?v=2">
+    <meta name="theme-color" content="#709d2e">
+        <link rel="preload" href="https://naturinka.cz/assets/fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://naturinka.cz/assets/fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://naturinka.cz/assets/css/shop.css?v=1794746857">
+    <meta name="csrf-token" content="b296e1a11dc1acec29ea2dfa3e362771542276b05cdbc530fbed9072af986a61">
+
+        <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Naturinka",
+    "url": "https://naturinka.cz/",
+    "logo": "https://naturinka.cz/img/logo.jpg",
+    "email": "objednavky@naturinka.cz",
+    "telephone": "+420 602 747 478"
+}
+</script>
+    
+        
+<script>
+  // dataLayer init — vzdy aktivni, ecommerce eventy ho pushuji
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+
+  // Google Consent Mode v2 — default vse DENIED. Akceptace cookie banneru zavola
+  // gtag('consent','update', { ... 'granted' ... }). Az pak GTM/GA odesila data.
+  gtag('consent', 'default', {
+    'ad_storage':            'denied',
+    'ad_user_data':          'denied',
+    'ad_personalization':    'denied',
+    'analytics_storage':     'denied',
+    'functionality_storage': 'granted',
+    'security_storage':      'granted',
+    'wait_for_update':       500
+  });
+
+  // Re-aplikace consent pri prichodu (kdyz uzivatel jiz odsouhlasil drive)
+  try {
+    var saved = JSON.parse(localStorage.getItem('cookie_consent_v1') || 'null');
+    if (saved && saved.analytics) {
+      gtag('consent', 'update', {
+        'analytics_storage': 'granted',
+        'ad_storage':        saved.marketing ? 'granted' : 'denied',
+        'ad_user_data':      saved.marketing ? 'granted' : 'denied',
+        'ad_personalization':saved.marketing ? 'granted' : 'denied'
+      });
+    }
+  } catch(e) {}
+</script>
+
+
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-115GLJ1ZGY"></script>
+    <script>
+      gtag('js', new Date());
+      gtag('config', 'G\u002D115GLJ1ZGY', { 'anonymize_ip': true });
+    </script>
+    
+    
+    
+    </head>
+<body>
+
+<header class="topbar">
+    <div class="container topbar-inner">
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+
+                <a class="topbar-phone" href="tel:+420602747478">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+            <span>po - čt 9-14&nbsp;&nbsp;+420 602 747 478</span>
+        </a>
+
+                <a class="topbar-brand" href="https://naturinka.cz/" aria-label="Naturinka" tabindex="-1">
+            <img src="https://naturinka.cz/img/theme/naturinka-logo.png" alt="" width="200" height="100">
+        </a>
+        <nav class="topbar-nav" aria-label="Horní menu (kompaktní)">
+                            <a href="https://naturinka.cz/o-nas" tabindex="-1">O nás</a>
+                            <a href="https://naturinka.cz/bezobalove-kody" tabindex="-1">Bezobalové kódy</a>
+                            <a href="https://naturinka.cz/kde-nakoupit" tabindex="-1">Kde nakoupit</a>
+                            <a href="https://naturinka.cz/pamet-naroda" tabindex="-1">Paměť národa</a>
+                            <a href="https://naturinka.cz/obaly" tabindex="-1">Obaly</a>
+                            <a href="https://naturinka.cz/na-slovicko" tabindex="-1">Na slovíčko</a>
+                        <a href="https://naturinka.cz/poradce" tabindex="-1">Poradíme vám</a>
+        </nav>
+
+        <div class="topbar-actions">
+                                                                        <details class="locale-dd">
+                    <summary>
+                        <span>CZK</span>
+                        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M1 1l4 4 4-4"/></svg>
+                    </summary>
+                    <div class="locale-dd-panel">
+                                                                                <a href="?lang=cs" class="is-active">
+                                <span class="locale-dd-cc">CZ</span>
+                                <span style="flex:1">Čeština</span>
+                            </a>
+                                                                                <a href="?lang=sk" class="">
+                                <span class="locale-dd-cc">SK</span>
+                                <span style="flex:1">Slovenčina</span>
+                            </a>
+                                                                                <a href="?lang=en" class="">
+                                <span class="locale-dd-cc">GB</span>
+                                <span style="flex:1">English</span>
+                            </a>
+                                                                                <a href="?lang=de" class="">
+                                <span class="locale-dd-cc">DE</span>
+                                <span style="flex:1">Deutsch</span>
+                            </a>
+                                                                    </div>
+                </details>
+            
+            <button type="button" class="search-toggle-btn" id="search-toggle" aria-label="Hledat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </button>
+
+                            <a href="https://naturinka.cz/prihlaseni" class="account-link" title="Přihlásit">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    <span class="account-text">Přihlásit</span>
+                </a>
+            
+            <a href="https://naturinka.cz/kosik" class="cart-link" id="cart-link" title="Košík">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                <span class="cart-text">Košík</span>
+                <span class="cart-badge" id="cart-badge">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="header-main">
+    <div class="container header-main-inner">
+        <a class="brand" href="https://naturinka.cz/" aria-label="Naturinka">
+            <img class="brand-logo" src="https://naturinka.cz/img/theme/naturinka-logo.png" alt="Naturinka – tradiční mýdlárna" width="200" height="100">
+        </a>
+        <nav class="topnav" aria-label="Horní menu">
+                            <a href="https://naturinka.cz/o-nas">O nás</a>
+                            <a href="https://naturinka.cz/bezobalove-kody">Bezobalové kódy</a>
+                            <a href="https://naturinka.cz/kde-nakoupit">Kde nakoupit</a>
+                            <a href="https://naturinka.cz/pamet-naroda">Paměť národa</a>
+                            <a href="https://naturinka.cz/obaly">Obaly</a>
+                            <a href="https://naturinka.cz/na-slovicko">Na slovíčko</a>
+                        <a href="https://naturinka.cz/poradce" class="topnav-poradce">Poradíme vám</a>
+        </nav>
+    </div>
+</div>
+
+<div class="search-overlay" id="search-overlay" role="dialog" aria-label="Vyhledávání" aria-hidden="true">
+    <form class="search-overlay-form" action="https://naturinka.cz/produkty" method="get" role="search">
+        <input type="search" name="q" id="search-overlay-input"
+               placeholder="Vyhledat modul, službu nebo referenci…"
+               value=""
+               autocomplete="off">
+        <button type="submit" class="btn btn-primary">Hledat</button>
+        <button type="button" class="search-overlay-close" id="search-overlay-close"
+                onclick="document.body.classList.remove('search-open')" aria-label="×">×</button>
+    </form>
+</div>
+
+<aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-head">
+        <strong>Kategorie</strong>
+        <button type="button" class="mobile-drawer-close" id="mobile-drawer-close" aria-label="Zavřít">×</button>
+    </div>
+    <nav class="mobile-drawer-nav">
+                        <ul>
+            <li><a href="https://naturinka.cz/produkty">Všechny produkty</a></li>
+        </ul>
+                                <ul>
+                                    <li>
+                        <a href="https://naturinka.cz/pece-o-telo">Péče o tělo</a>
+                                                <ul>
+                                    <li>
+                        <a href="https://naturinka.cz/deodoranty">Deodoranty</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/koupelove-soli">Koupelové soli</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/mydla">Mýdla</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/peelingy">Peelingy</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/specialni-masti">Speciální masti</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/telova-masla">Tělová másla</a>
+                                            </li>
+                            </ul>
+                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/pece-o-plet">Péče o pleť</a>
+                                                <ul>
+                                    <li>
+                        <a href="https://naturinka.cz/balzamy-na-plet">Balzámy na pleť</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/balzamy-na-rty">Balzámy na rty</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/hydrolaty">Hydroláty</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/pletove-oleje">Pleťové oleje</a>
+                                            </li>
+                            </ul>
+                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/pece-o-vlasy">Péče o vlasy</a>
+                                                <ul>
+                                    <li>
+                        <a href="https://naturinka.cz/kondicionery">Kondicionery</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/sampony">Šampony</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/sampukony">Šampukony</a>
+                                            </li>
+                            </ul>
+                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/pece-o-mazlicky">Péče o mazlíčky</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/esencialni-oleje">Esenciální oleje</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/vyzivove-oleje">Výživové oleje</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/med-a-svicky">Med a svíčky</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/prani">Praní</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/doplnky">Doplňky</a>
+                                                <ul>
+                                    <li>
+                        <a href="https://naturinka.cz/darkove-krabicky">Dárkové krabičky</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/darkove-poukazy">Dárkové poukazy</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/mydlenky">Mýdlenky</a>
+                                            </li>
+                                    <li>
+                        <a href="https://naturinka.cz/tasky">Tašky</a>
+                                            </li>
+                            </ul>
+                            </li>
+                            </ul>
+        
+
+        <div class="mobile-drawer-subhead">Informace</div>
+        <ul>
+                            <li><a href="https://naturinka.cz/o-nas">O nás</a></li>
+                            <li><a href="https://naturinka.cz/bezobalove-kody">Bezobalové kódy</a></li>
+                            <li><a href="https://naturinka.cz/kde-nakoupit">Kde nakoupit</a></li>
+                            <li><a href="https://naturinka.cz/pamet-naroda">Paměť národa</a></li>
+                            <li><a href="https://naturinka.cz/obaly">Obaly</a></li>
+                            <li><a href="https://naturinka.cz/na-slovicko">Na slovíčko</a></li>
+                        <li><a href="https://naturinka.cz/poradce">Poradíme vám</a></li>
+        </ul>
+    </nav>
+    <div class="mobile-drawer-cta">
+                    <a href="https://naturinka.cz/prihlaseni">Přihlásit se</a>
+                <a href="https://naturinka.cz/produkty">Hledat produkty</a>
+    </div>
+</aside>
+<div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop"></div>
+
+
+<div class="container shop-body">
+    <aside class="shop-sidebar">
+            <nav class="sidebar-menu" aria-label="Kategorie">
+                                                    <details class="sidebar-group">
+                    <summary>Péče o tělo</summary>
+                    <a href="https://naturinka.cz/pece-o-telo" class="">Vše z „Péče o tělo"</a>
+                                            <a href="https://naturinka.cz/deodoranty" class="">Deodoranty</a>
+                                            <a href="https://naturinka.cz/koupelove-soli" class="">Koupelové soli</a>
+                                            <a href="https://naturinka.cz/mydla" class="">Mýdla</a>
+                                            <a href="https://naturinka.cz/peelingy" class="">Peelingy</a>
+                                            <a href="https://naturinka.cz/specialni-masti" class="">Speciální masti</a>
+                                            <a href="https://naturinka.cz/telova-masla" class="">Tělová másla</a>
+                                    </details>
+                                                                <details class="sidebar-group">
+                    <summary>Péče o pleť</summary>
+                    <a href="https://naturinka.cz/pece-o-plet" class="">Vše z „Péče o pleť"</a>
+                                            <a href="https://naturinka.cz/balzamy-na-plet" class="">Balzámy na pleť</a>
+                                            <a href="https://naturinka.cz/balzamy-na-rty" class="">Balzámy na rty</a>
+                                            <a href="https://naturinka.cz/hydrolaty" class="">Hydroláty</a>
+                                            <a href="https://naturinka.cz/pletove-oleje" class="">Pleťové oleje</a>
+                                    </details>
+                                                                <details class="sidebar-group">
+                    <summary>Péče o vlasy</summary>
+                    <a href="https://naturinka.cz/pece-o-vlasy" class="">Vše z „Péče o vlasy"</a>
+                                            <a href="https://naturinka.cz/kondicionery" class="">Kondicionery</a>
+                                            <a href="https://naturinka.cz/sampony" class="">Šampony</a>
+                                            <a href="https://naturinka.cz/sampukony" class="">Šampukony</a>
+                                    </details>
+                                                <a href="https://naturinka.cz/pece-o-mazlicky" class="">Péče o mazlíčky</a>
+                                                <a href="https://naturinka.cz/esencialni-oleje" class="">Esenciální oleje</a>
+                                                <a href="https://naturinka.cz/vyzivove-oleje" class="">Výživové oleje</a>
+                                                <a href="https://naturinka.cz/med-a-svicky" class="">Med a svíčky</a>
+                                                <a href="https://naturinka.cz/prani" class="">Praní</a>
+                                                                <details class="sidebar-group">
+                    <summary>Doplňky</summary>
+                    <a href="https://naturinka.cz/doplnky" class="">Vše z „Doplňky"</a>
+                                            <a href="https://naturinka.cz/darkove-krabicky" class="">Dárkové krabičky</a>
+                                            <a href="https://naturinka.cz/darkove-poukazy" class="">Dárkové poukazy</a>
+                                            <a href="https://naturinka.cz/mydlenky" class="">Mýdlenky</a>
+                                            <a href="https://naturinka.cz/tasky" class="">Tašky</a>
+                                    </details>
+                            <a href="https://naturinka.cz/produkty" class="active">Všechny produkty</a>
+    </nav>
+
+        <a class="sidebar-advisor" href="https://naturinka.cz/poradce">
+        <span class="sidebar-advisor-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v1H7a4 4 0 0 0-4 4v1a4 4 0 0 0 4 4h1v3l3-3h2a4 4 0 0 0 4-4v-1a4 4 0 0 0-4-4h-2V5a3 3 0 0 0-3-3z"/></svg>
+        </span>
+        <span class="sidebar-advisor-b">
+            <strong>Poradíme vám</strong>
+            <small>Najdeme spolu tu pravou péči přesně pro vás.</small>
+            <span class="sidebar-advisor-cta">Spustit průvodce →</span>
+        </span>
+    </a>
+
+        </aside>
+    <main class="shop-main">
+        
+                            <section class="hero-carousel" id="hero-carousel" data-autoplay="5000" aria-label="Naše produkty">
+        <div class="hero-track">
+                            <div class="hero-slide is-image-only is-active">
+                    <a class="hero-img-link" href="https://naturinka.cz/mydla">                        <img class="hero-img" src="https://naturinka.cz/img/theme/slides/levandule.jpg" alt="Levandulové mýdlo" loading="eager">
+                    </a>                </div>
+                            <div class="hero-slide is-image-only">
+                    <a class="hero-img-link" href="https://naturinka.cz/pece-o-telo">                        <img class="hero-img" src="https://naturinka.cz/img/theme/slides/medunka.jpg" alt="Meduňka – deodorant" loading="lazy">
+                    </a>                </div>
+                            <div class="hero-slide is-image-only">
+                    <a class="hero-img-link" href="https://naturinka.cz/pece-o-telo">                        <img class="hero-img" src="https://naturinka.cz/img/theme/slides/santal.jpg" alt="Santal – deodorant" loading="lazy">
+                    </a>                </div>
+                            <div class="hero-slide is-image-only">
+                    <a class="hero-img-link" href="https://naturinka.cz/pece-o-telo">                        <img class="hero-img" src="https://naturinka.cz/img/theme/slides/bergamot.jpg" alt="Bergamot" loading="lazy">
+                    </a>                </div>
+                            <div class="hero-slide is-image-only">
+                    <a class="hero-img-link" href="https://naturinka.cz/pece-o-plet">                        <img class="hero-img" src="https://naturinka.cz/img/theme/slides/lipa.jpg" alt="Lípa" loading="lazy">
+                    </a>                </div>
+                            <div class="hero-slide is-image-only">
+                    <a class="hero-img-link" href="https://naturinka.cz/pece-o-plet">                        <img class="hero-img" src="https://naturinka.cz/img/theme/slides/velvet.jpg" alt="Velvet" loading="lazy">
+                    </a>                </div>
+                            <div class="hero-slide is-image-only">
+                    <a class="hero-img-link" href="https://naturinka.cz/pece-o-telo">                        <img class="hero-img" src="https://naturinka.cz/img/theme/slides/pansky.jpg" alt="Pánská řada" loading="lazy">
+                    </a>                </div>
+                    </div>
+                    <button type="button" class="hero-nav hero-prev" aria-label="Předchozí">‹</button>
+            <button type="button" class="hero-nav hero-next" aria-label="Další">›</button>
+            <div class="hero-dots">
+                                    <button type="button" class="hero-dot is-active" data-index="0" aria-label="Slide 1"></button>
+                                    <button type="button" class="hero-dot" data-index="1" aria-label="Slide 2"></button>
+                                    <button type="button" class="hero-dot" data-index="2" aria-label="Slide 3"></button>
+                                    <button type="button" class="hero-dot" data-index="3" aria-label="Slide 4"></button>
+                                    <button type="button" class="hero-dot" data-index="4" aria-label="Slide 5"></button>
+                                    <button type="button" class="hero-dot" data-index="5" aria-label="Slide 6"></button>
+                                    <button type="button" class="hero-dot" data-index="6" aria-label="Slide 7"></button>
+                            </div>
+            </section>
+    
+        <section class="guide-band">
+        <div class="guide-band-text">
+            <h2>Průvodce výběrem</h2>
+            <p>Nevíte, co vybrat? Klikněte, co řešíte — vybereme spolu tu pravou péči.</p>
+        </div>
+        <div class="guide-band-chips">
+            <a class="gb-chip" href="https://naturinka.cz/poradce?q=Hled%C3%A1m%20p%C3%A9%C4%8Di%20na%20suchou%20ple%C5%A5">Suchá pleť</a>
+            <a class="gb-chip" href="https://naturinka.cz/poradce?q=Hled%C3%A1m%20%C5%A1ampon%20na%20mastn%C3%A9%20vlasy">Mastné vlasy</a>
+            <a class="gb-chip" href="https://naturinka.cz/poradce?q=Hled%C3%A1m%20kosmetiku%20bez%20parfemace">Bez parfemace</a>
+            <a class="gb-chip" href="https://naturinka.cz/poradce?q=Hled%C3%A1m%20jemnou%20kosmetiku%20pro%20miminko">Pro miminko</a>
+            <a class="gb-chip" href="https://naturinka.cz/poradce?q=Porad%C3%AD%C5%A1%20mi%20d%C3%A1rek%20z%20p%C5%99%C3%ADrodn%C3%AD%20kosmetiky%3F">Dárek</a>
+        </div>
+        <a class="btn" href="https://naturinka.cz/poradce">Vybrat s průvodcem</a>
+    </section>
+
+        <section class="intro-natur">
+                            <h2>Kouzlo v Naturince vzniká tím, že ...</h2>
+            <p>jako tradiční mýdlárna si potrpí na ruční výrobu z přírodních surovin, úplnou zdravotní nezávadnost a bez výjimky ekologický přístup nejen k výrobě, ale i k balení.</p>
+            <p><strong>NEZPRACOVÁVÁ palmový olej</strong> a <strong>NETESTUJE NA ZVÍŘATECH.</strong></p>
+            <p>Je oficiálním dárcem DeBra ČR a Lékařů bez hranic a hlavním partnerem v Koalici proti palmovému oleji.</p>
+            <p>Od roku 2021 je nositelem ekologického ocenění <a href="https://green-brands.cz/" target="_blank" rel="noopener">GREEN BRANDS CZECH REPUBLIC</a>.</p>
+            </section>
+
+                <section class="featured-section">
+            <div class="grid">
+                                    <article class="card card-has-variants">
+    <a class="card-img" href="https://naturinka.cz/100-svestkovy-olej">
+                            <img src="https://naturinka.cz/img/products/9e1e97f83db694ec_1780650341.jpg?w=600" alt="100 % Švestkový olej" loading="lazy" width="600" height="600">
+            </a>
+    <div class="card-body">
+        <h2 class="card-title"><a href="https://naturinka.cz/100-svestkovy-olej">100 % Švestkový olej</a></h2>
+                                                        <p class="card-desc"></p>
+
+                                                                                    
+                                <p class="card-price">od <span class="">245 Kč</span> <small>s DPH</small></p>
+
+                        <p class="card-avail avail-in">Skladem, expedice do 2 pracovních dnů</p>
+
+        <div class="card-actions">
+                                            <div class="card-variants">
+                                                                                                                                                                                                                                                                                    <div class="cv-row" data-variant-id="9">
+                            <span class="cv-label" title="9 800 Kč / 1 l">malý (25 ml)</span>
+                            <span class="cv-price" title="9 800 Kč / 1 l">245 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – malý (25 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="9"
+                                        data-track-name="100&#x20;&#x25;&#x20;&#x0160;vestkov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;mal&#x00FD;&#x20;&#x28;25&#x20;ml&#x29;"
+                                        data-track-sku="4208m"
+                                        data-track-price="245.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – malý (25 ml)" aria-label="Do košíku – malý (25 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="10">
+                            <span class="cv-label" title="6 600 Kč / 1 l">velký (75 ml)</span>
+                            <span class="cv-price" title="6 600 Kč / 1 l">495 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – velký (75 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="10"
+                                        data-track-name="100&#x20;&#x25;&#x20;&#x0160;vestkov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;velk&#x00FD;&#x20;&#x28;75&#x20;ml&#x29;"
+                                        data-track-sku="4208v"
+                                        data-track-price="495.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – velký (75 ml)" aria-label="Do košíku – velký (75 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                    </div>
+                    </div>
+    </div>
+</article>
+                                    <article class="card card-has-variants">
+    <a class="card-img" href="https://naturinka.cz/100-arganovy-olej-bio">
+                            <img src="https://naturinka.cz/img/products/756ecaa165aa2af0_1780650424.jpg?w=600" alt="100% Arganový olej BIO" loading="lazy" width="600" height="600">
+            </a>
+    <div class="card-body">
+        <h2 class="card-title"><a href="https://naturinka.cz/100-arganovy-olej-bio">100% Arganový olej BIO</a></h2>
+                <p class="card-sku">Kód: 4206</p>                                        <p class="card-desc">regenerační péče</p>
+
+                                                                                    
+                                <p class="card-price">od <span class="">195 Kč</span> <small>s DPH</small></p>
+
+                        <p class="card-avail avail-in">Skladem, expedice do 2 pracovních dnů</p>
+
+        <div class="card-actions">
+                                            <div class="card-variants">
+                                                                                                                                                                                                                                                                                    <div class="cv-row" data-variant-id="448">
+                            <span class="cv-label" title="7 800 Kč / 1 l">malý (25 ml)</span>
+                            <span class="cv-price" title="7 800 Kč / 1 l">195 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – malý (25 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="448"
+                                        data-track-name="100&#x25;&#x20;Arganov&#x00FD;&#x20;olej&#x20;BIO&#x20;&#x2013;&#x20;mal&#x00FD;&#x20;&#x28;25&#x20;ml&#x29;"
+                                        data-track-sku="4206m"
+                                        data-track-price="195.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – malý (25 ml)" aria-label="Do košíku – malý (25 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="449">
+                            <span class="cv-label" title="5 933 Kč / 1 l">velký (75 ml)</span>
+                            <span class="cv-price" title="5 933 Kč / 1 l">445 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – velký (75 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="449"
+                                        data-track-name="100&#x25;&#x20;Arganov&#x00FD;&#x20;olej&#x20;BIO&#x20;&#x2013;&#x20;velk&#x00FD;&#x20;&#x28;75&#x20;ml&#x29;"
+                                        data-track-sku="4206v"
+                                        data-track-price="445.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – velký (75 ml)" aria-label="Do košíku – velký (75 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                    </div>
+                    </div>
+    </div>
+</article>
+                                    <article class="card card-has-variants">
+    <a class="card-img" href="https://naturinka.cz/100-hydrolat-rozmaryn">
+                            <img src="https://naturinka.cz/img/products/b9507da729558f42_1780650421.jpg?w=600" alt="100% hydrolát Rozmarýn" loading="lazy" width="600" height="600">
+            </a>
+    <div class="card-body">
+        <h2 class="card-title"><a href="https://naturinka.cz/100-hydrolat-rozmaryn">100% hydrolát Rozmarýn</a></h2>
+                <p class="card-sku">Kód: 0000HR</p>                                        <p class="card-desc">péče o pleť</p>
+
+                                                                                    
+                                <p class="card-price">od <span class="">195 Kč</span> <small>s DPH</small></p>
+
+                        <p class="card-avail avail-in">Skladem, expedice do 2 pracovních dnů</p>
+
+        <div class="card-actions">
+                                            <div class="card-variants">
+                                                                                                                                                                                                                                                                                    <div class="cv-row" data-variant-id="413">
+                            <span class="cv-label" title="2 600 Kč / 1 l">75 ml</span>
+                            <span class="cv-price" title="2 600 Kč / 1 l">195 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – 75 ml" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="413"
+                                        data-track-name="100&#x25;&#x20;hydrol&#x00E1;t&#x20;Rozmar&#x00FD;n&#x20;&#x2013;&#x20;75&#x20;ml"
+                                        data-track-sku="0000HRm"
+                                        data-track-price="195.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – 75 ml" aria-label="Do košíku – 75 ml">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="414">
+                            <span class="cv-label" title="1 475 Kč / 1 l">200 ml</span>
+                            <span class="cv-price" title="1 475 Kč / 1 l">295 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – 200 ml" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="414"
+                                        data-track-name="100&#x25;&#x20;hydrol&#x00E1;t&#x20;Rozmar&#x00FD;n&#x20;&#x2013;&#x20;200&#x20;ml"
+                                        data-track-sku="0000HRv"
+                                        data-track-price="295.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – 200 ml" aria-label="Do košíku – 200 ml">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                    </div>
+                    </div>
+    </div>
+</article>
+                                    <article class="card card-has-variants">
+    <a class="card-img" href="https://naturinka.cz/100-konopny-olej">
+                            <img src="https://naturinka.cz/img/products/350842650ca8acb0_1780650347.jpg?w=600" alt="100% Konopný olej" loading="lazy" width="600" height="600">
+            </a>
+    <div class="card-body">
+        <h2 class="card-title"><a href="https://naturinka.cz/100-konopny-olej">100% Konopný olej</a></h2>
+                <p class="card-sku">Kód: 4200</p>                                        <p class="card-desc">superpotravina</p>
+
+                                                                                    
+                                <p class="card-price">od <span class="">155 Kč</span> <small>s DPH</small></p>
+
+                        <p class="card-avail avail-in">Skladem, expedice do 2 pracovních dnů</p>
+
+        <div class="card-actions">
+                                            <div class="card-variants">
+                                                                                                                                                                                                                                                                                    <div class="cv-row" data-variant-id="66">
+                            <span class="cv-label" title="775,00 Kč / 1 l">MAXI (200 ml)</span>
+                            <span class="cv-price" title="775,00 Kč / 1 l">155 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – MAXI (200 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="66"
+                                        data-track-name="100&#x25;&#x20;Konopn&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;MAXI&#x20;&#x28;200&#x20;ml&#x29;"
+                                        data-track-sku="4200x"
+                                        data-track-price="155.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – MAXI (200 ml)" aria-label="Do košíku – MAXI (200 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="67">
+                            <span class="cv-label" title="570,00 Kč / 1 l">XXL (500 ml)</span>
+                            <span class="cv-price" title="570,00 Kč / 1 l">285 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – XXL (500 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="67"
+                                        data-track-name="100&#x25;&#x20;Konopn&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;XXL&#x20;&#x28;500&#x20;ml&#x29;"
+                                        data-track-sku="4200xxl"
+                                        data-track-price="285.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – XXL (500 ml)" aria-label="Do košíku – XXL (500 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                    </div>
+                    </div>
+    </div>
+</article>
+                                    <article class="card card-has-variants">
+    <a class="card-img" href="https://naturinka.cz/100-kvetova-voda-levandule">
+                            <img src="https://naturinka.cz/img/products/1712ff8ef03e1278_1780650421.jpg?w=600" alt="100% květová voda Levandule" loading="lazy" width="600" height="600">
+            </a>
+    <div class="card-body">
+        <h2 class="card-title"><a href="https://naturinka.cz/100-kvetova-voda-levandule">100% květová voda Levandule</a></h2>
+                <p class="card-sku">Kód: 0000HL</p>                                        <p class="card-desc">péče o pleť</p>
+
+                                                                                    
+                                <p class="card-price">od <span class="">195 Kč</span> <small>s DPH</small></p>
+
+                        <p class="card-avail avail-in">Skladem, expedice do 2 pracovních dnů</p>
+
+        <div class="card-actions">
+                                            <div class="card-variants">
+                                                                                                                                                                                                                                                                                    <div class="cv-row" data-variant-id="411">
+                            <span class="cv-label" title="2 600 Kč / 1 l">75 ml</span>
+                            <span class="cv-price" title="2 600 Kč / 1 l">195 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – 75 ml" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="411"
+                                        data-track-name="100&#x25;&#x20;kv&#x011B;tov&#x00E1;&#x20;voda&#x20;Levandule&#x20;&#x2013;&#x20;75&#x20;ml"
+                                        data-track-sku="0000HLm"
+                                        data-track-price="195.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – 75 ml" aria-label="Do košíku – 75 ml">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="412">
+                            <span class="cv-label" title="1 475 Kč / 1 l">200 ml</span>
+                            <span class="cv-price" title="1 475 Kč / 1 l">295 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – 200 ml" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="412"
+                                        data-track-name="100&#x25;&#x20;kv&#x011B;tov&#x00E1;&#x20;voda&#x20;Levandule&#x20;&#x2013;&#x20;200&#x20;ml"
+                                        data-track-sku="0000HLv"
+                                        data-track-price="295.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – 200 ml" aria-label="Do košíku – 200 ml">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                    </div>
+                    </div>
+    </div>
+</article>
+                                    <article class="card card-has-variants">
+    <a class="card-img" href="https://naturinka.cz/100-makovy-olej">
+                            <img src="https://naturinka.cz/img/products/5b5f72cf655902c5_1780650388.jpg?w=600" alt="100% Makový olej" loading="lazy" width="600" height="600">
+            </a>
+    <div class="card-body">
+        <h2 class="card-title"><a href="https://naturinka.cz/100-makovy-olej">100% Makový olej</a></h2>
+                <p class="card-sku">Kód: 4207</p>                                        <p class="card-desc">regenerace</p>
+
+                                                                                    
+                                <p class="card-price">od <span class="">140 Kč</span> <small>s DPH</small></p>
+
+                        <p class="card-avail avail-in">Skladem, expedice do 2 pracovních dnů</p>
+
+        <div class="card-actions">
+                                            <div class="card-variants">
+                                                                                                                                                                                                                                                                                    <div class="cv-row" data-variant-id="228">
+                            <span class="cv-label" title="5 600 Kč / 1 l">malý (25 ml)</span>
+                            <span class="cv-price" title="5 600 Kč / 1 l">140 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – malý (25 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="228"
+                                        data-track-name="100&#x25;&#x20;Makov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;mal&#x00FD;&#x20;&#x28;25&#x20;ml&#x29;"
+                                        data-track-sku="4207m"
+                                        data-track-price="140.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – malý (25 ml)" aria-label="Do košíku – malý (25 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="229">
+                            <span class="cv-label" title="3 267 Kč / 1 l">velký (75 ml)</span>
+                            <span class="cv-price" title="3 267 Kč / 1 l">245 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – velký (75 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="229"
+                                        data-track-name="100&#x25;&#x20;Makov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;velk&#x00FD;&#x20;&#x28;75&#x20;ml&#x29;"
+                                        data-track-sku="4207v"
+                                        data-track-price="245.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – velký (75 ml)" aria-label="Do košíku – velký (75 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="230">
+                            <span class="cv-label" title="2 075 Kč / 1 l">velký (200 ml)</span>
+                            <span class="cv-price" title="2 075 Kč / 1 l">415 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – velký (200 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="230"
+                                        data-track-name="100&#x25;&#x20;Makov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;velk&#x00FD;&#x20;&#x28;200&#x20;ml&#x29;"
+                                        data-track-sku="4207x"
+                                        data-track-price="415.01"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – velký (200 ml)" aria-label="Do košíku – velký (200 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                    </div>
+                    </div>
+    </div>
+</article>
+                                    <article class="card card-has-variants">
+    <a class="card-img" href="https://naturinka.cz/100-merunkovy-olej">
+                            <img src="https://naturinka.cz/img/products/236eef376b5f5cbf_1780650349.jpg?w=600" alt="100% Meruňkový olej" loading="lazy" width="600" height="600">
+            </a>
+    <div class="card-body">
+        <h2 class="card-title"><a href="https://naturinka.cz/100-merunkovy-olej">100% Meruňkový olej</a></h2>
+                <p class="card-sku">Kód: 4203</p>                                        <p class="card-desc">ultrajemná hydratace</p>
+
+                                                                                    
+                                <p class="card-price">od <span class="">195 Kč</span> <small>s DPH</small></p>
+
+                        <p class="card-avail avail-in">Skladem, expedice do 2 pracovních dnů</p>
+
+        <div class="card-actions">
+                                            <div class="card-variants">
+                                                                                                                                                                                                                                                                                    <div class="cv-row" data-variant-id="80">
+                            <span class="cv-label" title="7 800 Kč / 1 l">malý (25 ml)</span>
+                            <span class="cv-price" title="7 800 Kč / 1 l">195 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – malý (25 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="80"
+                                        data-track-name="100&#x25;&#x20;Meru&#x0148;kov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;mal&#x00FD;&#x20;&#x28;25&#x20;ml&#x29;"
+                                        data-track-sku="4203m"
+                                        data-track-price="195.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – malý (25 ml)" aria-label="Do košíku – malý (25 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="81">
+                            <span class="cv-label" title="5 933 Kč / 1 l">velký (75 ml)</span>
+                            <span class="cv-price" title="5 933 Kč / 1 l">445 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – velký (75 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="81"
+                                        data-track-name="100&#x25;&#x20;Meru&#x0148;kov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;velk&#x00FD;&#x20;&#x28;75&#x20;ml&#x29;"
+                                        data-track-sku="4203v"
+                                        data-track-price="445.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – velký (75 ml)" aria-label="Do košíku – velký (75 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="82">
+                            <span class="cv-label" title="3 125 Kč / 1 l">MAXI (200 ml)</span>
+                            <span class="cv-price" title="3 125 Kč / 1 l">625 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – MAXI (200 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="82"
+                                        data-track-name="100&#x25;&#x20;Meru&#x0148;kov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;MAXI&#x20;&#x28;200&#x20;ml&#x29;"
+                                        data-track-sku="4203x"
+                                        data-track-price="625.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – MAXI (200 ml)" aria-label="Do košíku – MAXI (200 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="83">
+                            <span class="cv-label" title="2 450 Kč / 1 l">XXL (500 ml)</span>
+                            <span class="cv-price" title="2 450 Kč / 1 l">1 225 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – XXL (500 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="83"
+                                        data-track-name="100&#x25;&#x20;Meru&#x0148;kov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;XXL&#x20;&#x28;500&#x20;ml&#x29;"
+                                        data-track-sku="4203xl"
+                                        data-track-price="1225.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – XXL (500 ml)" aria-label="Do košíku – XXL (500 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                    </div>
+                    </div>
+    </div>
+</article>
+                                    <article class="card card-has-variants">
+    <a class="card-img" href="https://naturinka.cz/100-ostropestrecovy-olej">
+                            <img src="https://naturinka.cz/img/products/34c6510f69d6f56b_1780650342.jpg?w=600" alt="100% Ostropestřecový olej" loading="lazy" width="600" height="600">
+            </a>
+    <div class="card-body">
+        <h2 class="card-title"><a href="https://naturinka.cz/100-ostropestrecovy-olej">100% Ostropestřecový olej</a></h2>
+                <p class="card-sku">Kód: 4205</p>                                        <p class="card-desc">podpora imunity</p>
+
+                                                                                    
+                                <p class="card-price">od <span class="">195 Kč</span> <small>s DPH</small></p>
+
+                        <p class="card-avail avail-in">Skladem, expedice do 2 pracovních dnů</p>
+
+        <div class="card-actions">
+                                            <div class="card-variants">
+                                                                                                                                                                                                                                                                                    <div class="cv-row" data-variant-id="31">
+                            <span class="cv-label" title="975,00 Kč / 1 l">MAXI (200 ml)</span>
+                            <span class="cv-price" title="975,00 Kč / 1 l">195 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – MAXI (200 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="31"
+                                        data-track-name="100&#x25;&#x20;Ostropest&#x0159;ecov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;MAXI&#x20;&#x28;200&#x20;ml&#x29;"
+                                        data-track-sku="4205x"
+                                        data-track-price="195.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – MAXI (200 ml)" aria-label="Do košíku – MAXI (200 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="32">
+                            <span class="cv-label" title="790,00 Kč / 1 l">XXL (500 ml)</span>
+                            <span class="cv-price" title="790,00 Kč / 1 l">395 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – XXL (500 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="32"
+                                        data-track-name="100&#x25;&#x20;Ostropest&#x0159;ecov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;XXL&#x20;&#x28;500&#x20;ml&#x29;"
+                                        data-track-sku="4205xl"
+                                        data-track-price="395.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – XXL (500 ml)" aria-label="Do košíku – XXL (500 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                    </div>
+                    </div>
+    </div>
+</article>
+                                    <article class="card card-has-variants">
+    <a class="card-img" href="https://naturinka.cz/100-rakytnikovy-olej">
+                            <img src="https://naturinka.cz/img/products/66bb31851f33882e_1780650364.jpg?w=600" alt="100% Rakytníkový olej" loading="lazy" width="600" height="600">
+            </a>
+    <div class="card-body">
+        <h2 class="card-title"><a href="https://naturinka.cz/100-rakytnikovy-olej">100% Rakytníkový olej</a></h2>
+                <p class="card-sku">Kód: 4201</p>                                        <p class="card-desc">podpora imunity</p>
+
+                                                                                    
+                                <p class="card-price">od <span class="">195 Kč</span> <small>s DPH</small></p>
+
+                        <p class="card-avail avail-in">Skladem, expedice do 2 pracovních dnů</p>
+
+        <div class="card-actions">
+                                            <div class="card-variants">
+                                                                                                                                                                                                                                                                                    <div class="cv-row" data-variant-id="122">
+                            <span class="cv-label" title="2 600 Kč / 1 l">velký (75 ml)</span>
+                            <span class="cv-price" title="2 600 Kč / 1 l">195 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – velký (75 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="122"
+                                        data-track-name="100&#x25;&#x20;Rakytn&#x00ED;kov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;velk&#x00FD;&#x20;&#x28;75&#x20;ml&#x29;"
+                                        data-track-sku="4201v"
+                                        data-track-price="195.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – velký (75 ml)" aria-label="Do košíku – velký (75 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="123">
+                            <span class="cv-label" title="2 075 Kč / 1 l">MAXI (200 ml)</span>
+                            <span class="cv-price" title="2 075 Kč / 1 l">415 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – MAXI (200 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="123"
+                                        data-track-name="100&#x25;&#x20;Rakytn&#x00ED;kov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;MAXI&#x20;&#x28;200&#x20;ml&#x29;"
+                                        data-track-sku="4201x"
+                                        data-track-price="415.01"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – MAXI (200 ml)" aria-label="Do košíku – MAXI (200 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="124">
+                            <span class="cv-label" title="1 630 Kč / 1 l">XXL (500 ml)</span>
+                            <span class="cv-price" title="1 630 Kč / 1 l">815 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – XXL (500 ml)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="124"
+                                        data-track-name="100&#x25;&#x20;Rakytn&#x00ED;kov&#x00FD;&#x20;olej&#x20;&#x2013;&#x20;XXL&#x20;&#x28;500&#x20;ml&#x29;"
+                                        data-track-sku="4201xl"
+                                        data-track-price="815.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – XXL (500 ml)" aria-label="Do košíku – XXL (500 ml)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                    </div>
+                    </div>
+    </div>
+</article>
+                                    <article class="card">
+    <a class="card-img" href="https://naturinka.cz/akatovy-med">
+                            <img src="https://naturinka.cz/img/products/1cf73bc437aec9c6_1780650428.jpg?w=600" alt="Akátový med" loading="lazy" width="600" height="600">
+            </a>
+    <div class="card-body">
+        <h2 class="card-title"><a href="https://naturinka.cz/akatovy-med">Akátový med</a></h2>
+                <p class="card-sku">Kód: MED</p>                                        <p class="card-desc">exluzivní limitka</p>
+
+                                                                                    
+                                <p class="card-price" title="520,00 Kč / 1 kg"><span class="">195 Kč</span> <small>s DPH</small></p>
+
+                        <p class="card-avail avail-in">Skladem, expedice do 2 pracovních dnů</p>
+
+        <div class="card-actions">
+                            <button type="button" class="btn btn-add"
+                        data-product-id="154"
+                        data-track-name="Ak&#x00E1;tov&#x00FD;&#x20;med" data-track-sku="MED"
+                        data-track-price="195.00" data-track-currency="CZK">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                    </svg>
+                    Koupit
+                </button>
+                                <button type="button" class="btn-fast btn-fast-link"
+                        data-product-id="154"
+                        data-track-name="Ak&#x00E1;tov&#x00FD;&#x20;med" data-track-sku="MED"
+                        data-track-price="195.00" data-track-currency="CZK">⚡ Rychlý nákup</button>
+                    </div>
+    </div>
+</article>
+                                    <article class="card card-has-variants">
+    <a class="card-img" href="https://naturinka.cz/badyan-esencialni-olej">
+                            <img src="https://naturinka.cz/img/products/3b3409ca0b09c6b9_1780650415.jpg?w=600" alt="Badyán esenciální olej" loading="lazy" width="600" height="600">
+            </a>
+    <div class="card-body">
+        <h2 class="card-title"><a href="https://naturinka.cz/badyan-esencialni-olej">Badyán esenciální olej</a></h2>
+                <p class="card-sku">Kód: 6028</p>                                        <p class="card-desc"></p>
+
+                                                                                    
+                                <p class="card-price">od <span class="">145 Kč</span> <small>s DPH</small></p>
+
+                        <p class="card-avail avail-in">Skladem, expedice do 2 pracovních dnů</p>
+
+        <div class="card-actions">
+                                            <div class="card-variants">
+                                                                                                                                                                                                                                                                                    <div class="cv-row" data-variant-id="317">
+                            <span class="cv-label" title="29 000 Kč / 1 l">5 ml</span>
+                            <span class="cv-price" title="29 000 Kč / 1 l">145 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – 5 ml" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="317"
+                                        data-track-name="Bady&#x00E1;n&#x20;esenci&#x00E1;ln&#x00ED;&#x20;olej&#x20;&#x2013;&#x20;5&#x20;ml"
+                                        data-track-sku="6028xm"
+                                        data-track-price="144.99"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – 5 ml" aria-label="Do košíku – 5 ml">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="318">
+                            <span class="cv-label" title="24 500 Kč / 1 l">10 ml</span>
+                            <span class="cv-price" title="24 500 Kč / 1 l">245 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – 10 ml" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="318"
+                                        data-track-name="Bady&#x00E1;n&#x20;esenci&#x00E1;ln&#x00ED;&#x20;olej&#x20;&#x2013;&#x20;10&#x20;ml"
+                                        data-track-sku="6028m"
+                                        data-track-price="245.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – 10 ml" aria-label="Do košíku – 10 ml">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="319">
+                            <span class="cv-label" title="15 233 Kč / 1 l">30 ml</span>
+                            <span class="cv-price" title="15 233 Kč / 1 l">457 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – 30 ml" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="319"
+                                        data-track-name="Bady&#x00E1;n&#x20;esenci&#x00E1;ln&#x00ED;&#x20;olej&#x20;&#x2013;&#x20;30&#x20;ml"
+                                        data-track-sku="6028v"
+                                        data-track-price="457.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – 30 ml" aria-label="Do košíku – 30 ml">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="320">
+                            <span class="cv-label" title="14 220 Kč / 1 l">50 ml</span>
+                            <span class="cv-price" title="14 220 Kč / 1 l">711 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – 50 ml" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="320"
+                                        data-track-name="Bady&#x00E1;n&#x20;esenci&#x00E1;ln&#x00ED;&#x20;olej&#x20;&#x2013;&#x20;50&#x20;ml"
+                                        data-track-sku="6028x"
+                                        data-track-price="711.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – 50 ml" aria-label="Do košíku – 50 ml">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                    </div>
+                    </div>
+    </div>
+</article>
+                                    <article class="card card-has-variants">
+    <a class="card-img" href="https://naturinka.cz/bambi-mydlo">
+                            <img src="https://naturinka.cz/img/products/c287151af5b086ed_1780650352.jpg?w=600" alt="Bambi mýdlo" loading="lazy" width="600" height="600">
+            </a>
+    <div class="card-body">
+        <h2 class="card-title"><a href="https://naturinka.cz/bambi-mydlo">Bambi mýdlo</a></h2>
+                <p class="card-sku">Kód: 2023</p>                                        <p class="card-desc">citlivá pokožka</p>
+
+                                                                                    
+                                <p class="card-price">od <span class="">85 Kč</span> <small>s DPH</small></p>
+
+                        <p class="card-avail avail-in">Skladem, expedice do 2 pracovních dnů</p>
+
+        <div class="card-actions">
+                                            <div class="card-variants">
+                                                                                                                                                                                                                                                                                    <div class="cv-row" data-variant-id="102">
+                            <span class="cv-label" title="1 700 Kč / 1 kg">malé (50 g)</span>
+                            <span class="cv-price" title="1 700 Kč / 1 kg">85 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – malé (50 g)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="102"
+                                        data-track-name="Bambi&#x20;m&#x00FD;dlo&#x20;&#x2013;&#x20;mal&#x00E9;&#x20;&#x28;50&#x20;g&#x29;"
+                                        data-track-sku="2023m"
+                                        data-track-price="85.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – malé (50 g)" aria-label="Do košíku – malé (50 g)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="103">
+                            <span class="cv-label" title="1 318 Kč / 1 kg">velké (110 g)</span>
+                            <span class="cv-price" title="1 318 Kč / 1 kg">145 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – velké (110 g)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="103"
+                                        data-track-name="Bambi&#x20;m&#x00FD;dlo&#x20;&#x2013;&#x20;velk&#x00E9;&#x20;&#x28;110&#x20;g&#x29;"
+                                        data-track-sku="2023v"
+                                        data-track-price="144.99"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – velké (110 g)" aria-label="Do košíku – velké (110 g)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="104">
+                            <span class="cv-label" title="1 167 Kč / 1 kg">MAXI (210 g)</span>
+                            <span class="cv-price" title="1 167 Kč / 1 kg">245 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – MAXI (210 g)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="104"
+                                        data-track-name="Bambi&#x20;m&#x00FD;dlo&#x20;&#x2013;&#x20;MAXI&#x20;&#x28;210&#x20;g&#x29;"
+                                        data-track-sku="2023x"
+                                        data-track-price="245.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – MAXI (210 g)" aria-label="Do košíku – MAXI (210 g)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                <div class="cv-group">bez obalu</div>
+                                                                                                                                                                                                <div class="cv-row" data-variant-id="105">
+                            <span class="cv-label" title="1 273 Kč / 1 kg">velké (110 g)</span>
+                            <span class="cv-price" title="1 273 Kč / 1 kg">140 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – velké (110 g)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="105"
+                                        data-track-name="Bambi&#x20;m&#x00FD;dlo&#x20;&#x2013;&#x20;velk&#x00E9;&#x20;&#x28;110&#x20;g&#x29;"
+                                        data-track-sku="2023vBO"
+                                        data-track-price="140.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – velké (110 g)" aria-label="Do košíku – velké (110 g)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                                                                                                                                                                                                                            <div class="cv-row" data-variant-id="106">
+                            <span class="cv-label" title="1 143 Kč / 1 kg">MAXI (210 g)</span>
+                            <span class="cv-price" title="1 143 Kč / 1 kg">240 Kč</span>
+                                                            <input type="number" class="cv-qty" value="1" min="1" max="999" inputmode="numeric" aria-label="Množství – MAXI (210 g)" title="Množství">
+                                <button type="button" class="btn-add cv-add"
+                                        data-variant-id="106"
+                                        data-track-name="Bambi&#x20;m&#x00FD;dlo&#x20;&#x2013;&#x20;MAXI&#x20;&#x28;210&#x20;g&#x29;"
+                                        data-track-sku="2023xBO"
+                                        data-track-price="240.00"
+                                        data-track-currency="CZK"
+                                        title="Do košíku – MAXI (210 g)" aria-label="Do košíku – MAXI (210 g)">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                                    </svg>
+                                </button>
+                                                    </div>
+                                    </div>
+                    </div>
+    </div>
+</article>
+                            </div>
+            <div class="featured-link-wrap">
+                <a class="btn btn-large" href="https://naturinka.cz/produkty">Všechny produkty</a>
+            </div>
+        </section>
+    
+    </main>
+</div>
+
+<footer class="footer-natur">
+    <div class="container footer-natur-main">
+        <div class="footer-flower" aria-hidden="true">
+            <img src="https://naturinka.cz/img/theme/kvet.png" alt="">
+        </div>
+
+                <nav class="footer-col-links">
+            <a href="https://naturinka.cz/produkty">Mapa webu</a>
+            <a href="https://naturinka.cz/doprava-a-platba">Doprava a platba</a>
+            <a href="https://naturinka.cz/obchodni-podminky">Obchodní a reklamační podmínky</a>
+            <a href="https://naturinka.cz/gdpr">GDPR a ochrana osobních údajů</a>
+            <a href="https://naturinka.cz/cookies">Cookies</a>
+            <a href="https://naturinka.cz/odstoupeni">Odstoupení od smlouvy</a>
+            <a href="https://naturinka.cz/kde-nakoupit">Kde koupíte naše produkty?</a>
+            <a href="https://naturinka.cz/kontakt">Napište nám</a>
+        </nav>
+
+        <div class="footer-col-company">
+            <strong>Naturinka Bohemia, s.r.o.</strong>
+            <span>tel: <a href="tel:+420602747478">+420 602 747 478</a></span>
+            <a href="mailto:info@naturinka.cz">info@naturinka.cz</a>
+            <span>Štolcova 465/14, Brno 618 00</span>
+            <span>IČ: 01646109</span>
+            <span>DIČ: CZ01646109</span>
+        </div>
+
+        <div class="footer-col-social">
+            <a href="https://www.facebook.com/naturinka.cz" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06C2 17.08 5.66 21.24 10.44 22v-7.03H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.9 3.78-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.9h-2.34V22C18.34 21.24 22 17.08 22 12.06z"/></svg>
+            </a>
+        </div>
+    </div>
+
+    <div class="container footer-natur-partners">
+        <span class="footer-partners-label">PODPORUJEME:</span>
+        <img src="https://naturinka.cz/img/theme/partners/kppo.png" alt="Koalice proti palmovému oleji" loading="lazy">
+        <img src="https://naturinka.cz/img/theme/partners/debra.png" alt="DEBRA ČR" loading="lazy">
+        <img src="https://naturinka.cz/img/theme/partners/lekari.png" alt="Lékaři bez hranic" loading="lazy">
+        <img src="https://naturinka.cz/img/theme/partners/tradelin.png" alt="Tradelin" loading="lazy">
+        <img src="https://naturinka.cz/img/theme/partners/vratny-obal.png" alt="Vratný obal" loading="lazy">
+    </div>
+
+    <div class="container footer-natur-bottom">
+        <span>Copyright &copy; 2026 NATURINKA - tradiční mýdlárna. Všechna práva vyhrazena.</span>
+        <span class="footer-credit">created by <a href="https://www.frons.cz" target="_blank" rel="noopener">Frons</a></span>
+    </div>
+</footer>
+
+<a href="#" class="back-to-top" id="back-to-top" title="Zpět nahoru" aria-label="Zpět nahoru">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+</a>
+
+<style>
+    .topsearch, .search-overlay-form { position: relative; }
+    .ac-dropdown { position: absolute; left: 0; right: 0; top: calc(100% + 6px); background: #fff; border: 1px solid var(--border);
+        border-radius: 12px; box-shadow: 0 14px 34px rgba(0,0,0,.16); z-index: 1300; overflow: hidden; display: none; max-height: 70vh; overflow-y: auto; }
+    .ac-dropdown.is-open { display: block; }
+    .ac-dym { padding: 9px 13px; font-size: .85rem; color: #6b6b6b; border-bottom: 1px solid #ececec; background: var(--bg, #fbf8f1); }
+    .ac-dym b { color: var(--green-dark, #385530); }
+    .ac-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px; text-decoration: none; color: inherit; }
+    .ac-item:hover, .ac-item.is-active { background: var(--bg-light, #eef3e8); }
+    .ac-item img { width: 38px; height: 38px; object-fit: cover; border-radius: 7px; background: #f6f4ee; flex: none; }
+    .ac-item-b { min-width: 0; flex: 1; }
+    .ac-item-b strong { display: block; font-size: .86rem; font-weight: 600; color: #000; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .ac-item-b span { font-size: .8rem; color: var(--green-dark, #385530); font-weight: 700; }
+    .ac-all { display: block; padding: 9px 13px; text-align: center; font-size: .84rem; font-weight: 600; color: var(--green-dark, #385530); border-top: 1px solid #ececec; text-decoration: none; }
+    .ac-all:hover, .ac-all.is-active { background: var(--bg-light, #eef3e8); }
+    .ac-empty { padding: 12px 13px; font-size: .85rem; color: #8a8a8a; }
+</style>
+<script>
+(function () {
+    var API = "https://naturinka.cz/api/hledat";
+    var PRODUCTS = "https://naturinka.cz/produkty";
+    function esc(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : s; return d.innerHTML; }
+
+    function wire(input) {
+        var wrap = input.closest('.topsearch, .search-overlay-form') || input.parentNode;
+        wrap.style.position = 'relative';
+        var dd = document.createElement('div'); dd.className = 'ac-dropdown'; wrap.appendChild(dd);
+        var timer = null, lastQ = '', active = -1;
+
+        function close() { dd.classList.remove('is-open'); active = -1; }
+        function open() { dd.classList.add('is-open'); }
+
+        function render(data) {
+            var q = data.q || input.value.trim();
+            var html = '';
+            if (data.did_you_mean) html += '<div class="ac-dym">Mysleli jste: <b>' + esc(data.did_you_mean) + '</b>?</div>';
+            if (data.products && data.products.length) {
+                data.products.forEach(function (p) {
+                    html += '<a class="ac-item" href="' + esc(p.url) + '">'
+                        + (p.image ? '<img src="' + esc(p.image) + '" alt="">' : '<img alt="">')
+                        + '<span class="ac-item-b"><strong>' + esc(p.name) + '</strong>'
+                        + (p.price ? '<span>' + esc(p.price) + '</span>' : '') + '</span></a>';
+                });
+                html += '<a class="ac-all" href="' + PRODUCTS + '?q=' + encodeURIComponent(q) + '">Zobrazit všechny výsledky →</a>';
+            } else {
+                html += '<div class="ac-empty">Nic jsme nenašli' + (data.did_you_mean ? ' — zkuste „' + esc(data.did_you_mean) + '"' : '') + '.</div>';
+            }
+            dd.innerHTML = html; active = -1; open();
+        }
+
+        function fetchSuggest(q) {
+            fetch(API + '?q=' + encodeURIComponent(q), { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
+                .then(function (r) { return r.json(); }).then(render).catch(close);
+        }
+
+        input.addEventListener('input', function () {
+            var q = input.value.trim();
+            if (q.length < 2) { close(); lastQ = ''; return; }
+            if (q === lastQ) return; lastQ = q;
+            clearTimeout(timer); timer = setTimeout(function () { fetchSuggest(q); }, 180);
+        });
+        input.addEventListener('keydown', function (e) {
+            var links = dd.querySelectorAll('.ac-item, .ac-all');
+            if (e.key === 'ArrowDown') { e.preventDefault(); active = Math.min(active + 1, links.length - 1); }
+            else if (e.key === 'ArrowUp') { e.preventDefault(); active = Math.max(active - 1, -1); }
+            else if (e.key === 'Enter') { if (active >= 0 && links[active]) { e.preventDefault(); window.location = links[active].href; } return; }
+            else if (e.key === 'Escape') { close(); return; }
+            else { return; }
+            Array.prototype.forEach.call(links, function (l, i) { l.classList.toggle('is-active', i === active); });
+            if (active >= 0 && links[active]) links[active].scrollIntoView({ block: 'nearest' });
+        });
+        input.addEventListener('focus', function () { if (dd.innerHTML && input.value.trim().length >= 2) open(); });
+        document.addEventListener('click', function (e) { if (!wrap.contains(e.target)) close(); });
+    }
+
+    Array.prototype.forEach.call(document.querySelectorAll('input[type="search"][name="q"]'), wire);
+})();
+</script>
+
+<style>
+    .pdc-fab { position: fixed; right: 22px; bottom: 22px; z-index: 1200; display: inline-flex; align-items: center; gap: 9px;
+        background: var(--primary, #385530); color: #fff; border: 0; border-radius: 999px; padding: 12px 18px 12px 14px;
+        font: inherit; font-weight: 700; font-size: .95rem; cursor: pointer; box-shadow: 0 6px 20px rgba(0,0,0,.22); transition: transform .12s, box-shadow .12s; }
+    .pdc-fab:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,.28); }
+    .pdc-fab svg { width: 22px; height: 22px; }
+    .pdc-fab.is-hidden { display: none; }
+
+    .pdc-panel { position: fixed; right: 22px; bottom: 22px; z-index: 1201; width: 380px; max-width: calc(100vw - 32px);
+        height: 600px; max-height: calc(100vh - 40px); background: #fff; border-radius: 18px; box-shadow: 0 18px 50px rgba(0,0,0,.3);
+        display: none; flex-direction: column; overflow: hidden; }
+    .pdc-panel.is-open { display: flex; }
+
+    .pdc-head { background: var(--primary, #385530); color: #fff; padding: 14px 16px; display: flex; align-items: center; gap: 10px; }
+    .pdc-head-ico { width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,.16); display: flex; align-items: center; justify-content: center; flex: none; }
+    .pdc-head-ico svg { width: 20px; height: 20px; }
+    .pdc-head-t { flex: 1; min-width: 0; }
+    .pdc-head-t strong { display: block; font-size: .98rem; line-height: 1.2; }
+    .pdc-head-t small { opacity: .85; font-size: .76rem; }
+    .pdc-head button { background: none; border: 0; color: #fff; cursor: pointer; opacity: .85; padding: 4px; border-radius: 6px; font-size: .8rem; }
+    .pdc-head button:hover { opacity: 1; background: rgba(255,255,255,.12); }
+
+    .pdc-msgs { flex: 1; overflow-y: auto; padding: 16px; background: var(--bg, #fbf8f1); display: flex; flex-direction: column; gap: 12px; }
+    .pdc-msg { max-width: 86%; padding: 10px 13px; border-radius: 14px; font-size: .9rem; line-height: 1.5; white-space: pre-wrap; word-wrap: break-word; }
+    .pdc-msg.bot { background: #fff; color: #000; border: 1px solid #ece7dc; align-self: flex-start; border-bottom-left-radius: 4px; }
+    .pdc-msg.user { background: var(--primary, #385530); color: #fff; align-self: flex-end; border-bottom-right-radius: 4px; }
+    .pdc-typing { align-self: flex-start; display: inline-flex; gap: 4px; padding: 12px 14px; background: #fff; border: 1px solid #ece7dc; border-radius: 14px; }
+    .pdc-typing span { width: 7px; height: 7px; border-radius: 50%; background: #b9b3a5; animation: pdcblink 1.2s infinite both; }
+    .pdc-typing span:nth-child(2) { animation-delay: .2s; } .pdc-typing span:nth-child(3) { animation-delay: .4s; }
+    @keyframes pdcblink { 0%,80%,100% { opacity: .3; } 40% { opacity: 1; } }
+    .pdc-suggestions { display: flex; flex-wrap: wrap; gap: 6px; align-self: flex-start; }
+    .pdc-sugg-chip { background: #fff; border: 1px solid #000; color: var(--green-dark, #385530); border-radius: 999px; padding: 6px 11px; font: inherit; font-size: .82rem; font-weight: 600; cursor: pointer; }
+    .pdc-sugg-chip:hover { background: var(--primary, #385530); color: #fff; border-color: var(--primary, #385530); }
+
+    .pdc-cards { align-self: stretch; display: flex; flex-direction: column; gap: 8px; }
+    .pdc-card { display: flex; gap: 10px; align-items: center; background: #fff; border: 1px solid #ece7dc; border-radius: 12px; padding: 8px; text-decoration: none; color: inherit; transition: border-color .12s, box-shadow .12s; }
+    .pdc-card:hover { border-color: var(--primary, #385530); box-shadow: 0 3px 10px rgba(0,0,0,.07); }
+    .pdc-card img { width: 52px; height: 52px; object-fit: cover; border-radius: 8px; background: #f6f4ee; flex: none; }
+    .pdc-card-b { min-width: 0; }
+    .pdc-card-b strong { display: block; font-size: .85rem; line-height: 1.25; color: #000; }
+    .pdc-card-b span { font-size: .85rem; color: var(--green-dark, #385530); font-weight: 700; }
+
+    .pdc-input { display: flex; gap: 8px; padding: 12px; border-top: 1px solid #ece7dc; background: #fff; }
+    .pdc-input textarea { flex: 1; resize: none; border: 1px solid #d8d2c6; border-radius: 12px; padding: 9px 12px; font: inherit; font-size: .9rem; max-height: 90px; min-height: 40px; line-height: 1.4; }
+    .pdc-input textarea:focus { outline: none; border-color: var(--primary, #385530); }
+    .pdc-send { flex: none; width: 42px; border: 0; border-radius: 12px; background: var(--primary, #385530); color: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+    .pdc-send:disabled { opacity: .5; cursor: default; }
+    .pdc-send svg { width: 18px; height: 18px; }
+    .pdc-disclaimer { font-size: .68rem; color: #8a8a8a; text-align: center; padding: 0 12px 8px; background: #fff; }
+
+    .pdc-teaser { position: fixed; right: 22px; bottom: 80px; z-index: 1200; max-width: 250px; background: #fff; border: 1px solid #ece7dc;
+        border-radius: 14px; box-shadow: 0 8px 24px rgba(0,0,0,.18); padding: 12px 26px 12px 14px; display: none; animation: pdcpop .25s ease; }
+    .pdc-teaser.is-show { display: block; }
+    .pdc-teaser p { margin: 0; font-size: .88rem; color: #000; line-height: 1.45; cursor: pointer; }
+    .pdc-teaser-close { position: absolute; top: 6px; right: 8px; border: 0; background: none; color: #b9b3a5; cursor: pointer; font-size: .85rem; line-height: 1; padding: 2px; }
+    .pdc-teaser::after { content: ''; position: absolute; right: 28px; bottom: -7px; width: 13px; height: 13px; background: #fff; border-right: 1px solid #ece7dc; border-bottom: 1px solid #ece7dc; transform: rotate(45deg); }
+    @keyframes pdcpop { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+    @media (max-width: 480px) {
+        .pdc-panel { right: 0; bottom: 0; width: 100vw; height: 100vh; max-height: 100vh; border-radius: 0; }
+        .pdc-fab { right: 16px; bottom: 16px; }
+        .pdc-teaser { bottom: 72px; right: 16px; }
+    }
+</style>
+
+<button type="button" class="pdc-fab" id="pdc-fab" aria-label="Otevřít rádce">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+    Poradíme s výběrem?
+</button>
+
+<div class="pdc-teaser" id="pdc-teaser">
+    <button type="button" class="pdc-teaser-close" id="pdc-teaser-close" aria-label="Zavřít">✕</button>
+    <p id="pdc-teaser-body">Můžu vám pomoct vybrat to pravé? 🌿</p>
+</div>
+
+<div class="pdc-panel" id="pdc-panel" role="dialog" aria-label="Nákupní rádce">
+    <div class="pdc-head">
+        <span class="pdc-head-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v1H7a4 4 0 0 0-4 4v1a4 4 0 0 0 4 4h1v3l3-3h2a4 4 0 0 0 4-4v-1a4 4 0 0 0-4-4h-2V5a3 3 0 0 0-3-3z"/></svg></span>
+        <span class="pdc-head-t"><strong>Naturinka rádce</strong><small>Společně vybereme to pravé</small></span>
+        <button type="button" id="pdc-clear" title="Začít znovu">Vymazat</button>
+        <button type="button" id="pdc-close" title="Zavřít" aria-label="Zavřít">✕</button>
+    </div>
+    <div class="pdc-msgs" id="pdc-msgs"></div>
+    <div class="pdc-input">
+        <textarea id="pdc-text" rows="1" placeholder="Napiš, co hledáš… (např. šampon na mastné vlasy)"></textarea>
+        <button type="button" class="pdc-send" id="pdc-send" aria-label="Odeslat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+    </div>
+    <div class="pdc-disclaimer">AI rádce — doporučení jsou orientační.</div>
+</div>
+
+<script>
+(function () {
+    var CSRF = "b296e1a11dc1acec29ea2dfa3e362771542276b05cdbc530fbed9072af986a61";
+    var GREETING = "Ahoj! 🌿 Pomůžu ti vybrat přírodní kosmetiku z Naturinky. Pro koho a na co něco hledáš?";
+    var fab = document.getElementById('pdc-fab');
+    var panel = document.getElementById('pdc-panel');
+    var msgsEl = document.getElementById('pdc-msgs');
+    var textEl = document.getElementById('pdc-text');
+    var sendBtn = document.getElementById('pdc-send');
+    if (!fab || !panel) return;
+
+    var messages = [];           // jen reálné tahy (user/assistant) pro API
+    var busy = false;
+    try { messages = JSON.parse(sessionStorage.getItem('pdc_conv') || '[]'); } catch (e) { messages = []; }
+
+    function save() { try { sessionStorage.setItem('pdc_conv', JSON.stringify(messages)); } catch (e) {} }
+    function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+    function bubble(role, text) {
+        var d = document.createElement('div');
+        d.className = 'pdc-msg ' + (role === 'user' ? 'user' : 'bot');
+        d.textContent = text;
+        msgsEl.appendChild(d);
+        scroll();
+        return d;
+    }
+    function cards(list) {
+        if (!list || !list.length) return;
+        var wrap = document.createElement('div');
+        wrap.className = 'pdc-cards';
+        list.forEach(function (p) {
+            var a = document.createElement('a');
+            a.className = 'pdc-card';
+            a.href = p.url;
+            var img = p.image ? '<img src="' + esc(p.image) + '" alt="" loading="lazy">' : '<img alt="">';
+            a.innerHTML = img + '<div class="pdc-card-b"><strong>' + esc(p.name) + '</strong>' + (p.price ? '<span>' + esc(p.price) + '</span>' : '') + '</div>';
+            wrap.appendChild(a);
+        });
+        msgsEl.appendChild(wrap);
+        scroll();
+    }
+    function typing(on) {
+        var ex = document.getElementById('pdc-typing');
+        if (on) {
+            if (ex) return;
+            var d = document.createElement('div');
+            d.className = 'pdc-typing'; d.id = 'pdc-typing';
+            d.innerHTML = '<span></span><span></span><span></span>';
+            msgsEl.appendChild(d); scroll();
+        } else if (ex) { ex.remove(); }
+    }
+    function scroll() { msgsEl.scrollTop = msgsEl.scrollHeight; }
+
+    function render() {
+        msgsEl.innerHTML = '';
+        bubble('bot', GREETING);
+        messages.forEach(function (m) { bubble(m.role, m.content); });
+    }
+
+    function open() {
+        panel.classList.add('is-open');
+        fab.classList.add('is-hidden');
+        if (!msgsEl.children.length) render();
+        setTimeout(function () { textEl.focus(); }, 50);
+    }
+    function close() { panel.classList.remove('is-open'); fab.classList.remove('is-hidden'); }
+    function clear() { messages = []; save(); render(); }
+
+    function clearSuggestions() {
+        Array.prototype.forEach.call(msgsEl.querySelectorAll('.pdc-suggestions'), function (e) { e.remove(); });
+    }
+    function renderSuggestions(list) {
+        clearSuggestions();
+        if (!list || !list.length) return;
+        var wrap = document.createElement('div');
+        wrap.className = 'pdc-suggestions';
+        list.forEach(function (s) {
+            var b = document.createElement('button');
+            b.type = 'button'; b.className = 'pdc-sugg-chip'; b.textContent = s;
+            b.addEventListener('click', function () { send(s); });
+            wrap.appendChild(b);
+        });
+        msgsEl.appendChild(wrap); scroll();
+    }
+
+    function send(text) {
+        text = (text || textEl.value || '').trim();
+        if (!text || busy) return;
+        textEl.value = ''; textEl.style.height = 'auto';
+        clearSuggestions();
+        busy = true; sendBtn.disabled = true;
+        bubble('user', text);
+        var payload = messages.concat([{ role: 'user', content: text }]);
+        typing(true);
+        fetch("https://naturinka.cz/api/poradce", {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'X-CSRF-Token': CSRF, 'X-Requested-With': 'XMLHttpRequest' },
+            body: JSON.stringify({ messages: payload })
+        }).then(function (r) { return r.json().catch(function () { return { ok: false }; }); })
+          .then(function (d) {
+            typing(false);
+            if (!d || !d.ok) { bubble('bot', (d && d.error) || 'Omlouvám se, něco se pokazilo. Zkus to prosím znovu.'); return; }
+            messages = payload.concat([{ role: 'assistant', content: d.reply }]);
+            save();
+            bubble('bot', d.reply);
+            cards(d.products);
+            renderSuggestions(d.suggestions);
+        }).catch(function () {
+            typing(false);
+            bubble('bot', 'Spojení selhalo. Zkus to prosím znovu.');
+        }).finally(function () { busy = false; sendBtn.disabled = false; });
+    }
+
+    fab.addEventListener('click', open);
+    document.getElementById('pdc-close').addEventListener('click', close);
+    document.getElementById('pdc-clear').addEventListener('click', clear);
+    sendBtn.addEventListener('click', send);
+    textEl.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); send(); }
+    });
+    textEl.addEventListener('input', function () { textEl.style.height = 'auto'; textEl.style.height = Math.min(90, textEl.scrollHeight) + 'px'; });
+
+    // Proaktivní nabídka pomoci po 60 s prohlížení (jednou za návštěvu, napříč stránkami)
+    (function () {
+        var teaser = document.getElementById('pdc-teaser');
+        if (!teaser) return;
+        var DELAY = 60000;
+        function markDone() { try { sessionStorage.setItem('pdc_teaser_done', '1'); } catch (e) {} }
+        function isDone() { try { return sessionStorage.getItem('pdc_teaser_done') === '1'; } catch (e) { return false; } }
+        if (messages.length) markDone();           // už s rádcem mluvil
+        if (isDone()) return;
+        var first = 0;
+        try { first = parseInt(sessionStorage.getItem('pdc_first_seen') || '0', 10) || 0; } catch (e) {}
+        if (!first) { first = Date.now(); try { sessionStorage.setItem('pdc_first_seen', String(first)); } catch (e) {} }
+        var wait = Math.max(0, DELAY - (Date.now() - first));
+        setTimeout(function () {
+            if (isDone() || panel.classList.contains('is-open')) return;
+            if (getComputedStyle(fab).display === 'none') return;   // skryté (např. /poradce)
+            teaser.classList.add('is-show');
+            markDone();
+        }, wait);
+        document.getElementById('pdc-teaser-body').addEventListener('click', function () { teaser.classList.remove('is-show'); open(); });
+        document.getElementById('pdc-teaser-close').addEventListener('click', function () { teaser.classList.remove('is-show'); });
+    })();
+})();
+</script>
+
+<div id="cookie-consent" class="cookie-consent" hidden role="dialog" aria-live="polite" aria-label="Cookie nastaveni">
+    <div class="cookie-consent-inner">
+        <div class="cookie-consent-text">
+            <strong>🍪 Soubory cookies</strong>
+            <p>Tento web pouziva cookies pro spravne fungovani, mereni navstevnosti a personalizaci reklam. Souhlas mate plnou kontrolu — muzete jej kdykoli odvolat v nastaveni.
+                <a href="https://naturinka.cz/gdpr"
+                   target="_blank" rel="noopener">Více informací</a>
+            </p>
+        </div>
+        <div class="cookie-consent-actions">
+            <button type="button" class="btn btn-sm" id="cookie-reject">
+                Odmítnout
+            </button>
+            <button type="button" class="btn btn-sm" id="cookie-settings">
+                Nastavit
+            </button>
+            <button type="button" class="btn btn-primary btn-sm" id="cookie-accept-all">
+                Souhlasím se všemi
+            </button>
+        </div>
+
+                <div class="cookie-consent-details" id="cookie-details" hidden>
+            <div class="cookie-cats">
+            <label class="cookie-cat">
+                <input type="checkbox" checked disabled>
+                <span><strong>Nutné</strong>
+                <small>Funkce webu (košík, přihlášení). Bez nich web nefunguje.</small></span>
+            </label>
+            <label class="cookie-cat">
+                <input type="checkbox" id="cookie-cat-analytics">
+                <span><strong>Analytické</strong>
+                <small>Google Analytics, Heureka — měření návštěvnosti pro zlepšení webu.</small></span>
+            </label>
+            <label class="cookie-cat">
+                <input type="checkbox" id="cookie-cat-marketing">
+                <span><strong>Marketingové</strong>
+                <small>Google Ads, Sklik, Meta Pixel — personalizovaná reklama.</small></span>
+            </label>
+            </div>
+            <button type="button" class="btn btn-primary btn-sm" id="cookie-save-custom" style="margin-top:8px">
+                Uložit volbu
+            </button>
+        </div>
+    </div>
+</div>
+
+<style>
+    .cookie-consent {
+        position: fixed; bottom: 0; left: 0; right: 0; z-index: 9999;
+        background: #0f172a; color: #f1f5f9;
+        box-shadow: 0 -4px 16px rgba(0,0,0,.2);
+        padding: 16px;
+        font-size: .92rem;
+    }
+    .cookie-consent-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; }
+    .cookie-consent-text strong { display:block; margin-bottom:4px; }
+    .cookie-consent-text p { margin: 0; line-height: 1.4; }
+    .cookie-consent-text a { color: #93c5fd; text-decoration: underline; }
+    .cookie-consent-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+    .cookie-consent-actions .btn { white-space: nowrap; }
+    .cookie-consent-details { grid-column: 1 / -1; border-top: 1px solid #334155; padding-top: 12px; margin-top: 8px; display: flex; flex-direction: column; gap: 8px; }
+    .cookie-cats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px 24px; margin-bottom: 10px; }
+    @media (max-width: 640px) { .cookie-cats { grid-template-columns: 1fr; } }
+    .cookie-cat { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+    .cookie-cat input { margin-top: 4px; }
+    .cookie-cat small { display:block; opacity: .75; font-size: .85rem; }
+    @media (max-width: 720px) {
+        .cookie-consent-inner { grid-template-columns: 1fr; }
+        .cookie-consent-actions { justify-content: stretch; }
+        .cookie-consent-actions .btn { flex: 1; }
+    }
+
+    /* Floating button pro re-otevreni consent (pro footer odkaz) */
+    .cookie-reopen-btn {
+        position: fixed; bottom: 12px; left: 12px; z-index: 9998;
+        background: rgba(15,23,42,.85); color: #fff;
+        border: none; border-radius: 50%;
+        width: 40px; height: 40px;
+        font-size: 1.2rem; cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0,0,0,.2);
+        display: none;
+    }
+    .cookie-reopen-btn:hover { background: #0f172a; }
+</style>
+
+<button type="button" id="cookie-reopen" class="cookie-reopen-btn" aria-label="Cookie nastavení">🍪</button>
+
+<script>
+(function () {
+    const STORAGE_KEY = 'cookie_consent_v1';
+    const banner = document.getElementById('cookie-consent');
+    const reopen = document.getElementById('cookie-reopen');
+    const details = document.getElementById('cookie-details');
+    const catAnalytics = document.getElementById('cookie-cat-analytics');
+    const catMarketing = document.getElementById('cookie-cat-marketing');
+
+    function applyConsent(c) {
+        // Pushni do dataLayer pro GTM/Sklik/Meta listenery
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'cookie_consent', consent: c });
+        // Google Consent Mode v2 update
+        if (typeof gtag === 'function') {
+            gtag('consent', 'update', {
+                'analytics_storage':  c.analytics ? 'granted' : 'denied',
+                'ad_storage':         c.marketing ? 'granted' : 'denied',
+                'ad_user_data':       c.marketing ? 'granted' : 'denied',
+                'ad_personalization': c.marketing ? 'granted' : 'denied'
+            });
+        }
+        // Meta Pixel - pokud existuje
+        if (typeof fbq === 'function' && !c.marketing) {
+            try { fbq('consent','revoke'); } catch(e){}
+        } else if (typeof fbq === 'function' && c.marketing) {
+            try { fbq('consent','grant'); } catch(e){}
+        }
+    }
+
+    function save(c) {
+        c.ts = Date.now();
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(c)); } catch (e) {}
+        applyConsent(c);
+        hideBanner();
+    }
+
+    function hideBanner() {
+        if (banner) banner.hidden = true;
+        if (reopen) reopen.style.display = 'block';
+    }
+    function showBanner() {
+        if (banner) banner.hidden = false;
+        if (reopen) reopen.style.display = 'none';
+        if (details) details.hidden = true;
+        // pre-fill detailu z ulozene volby (kdyz reopen)
+        try {
+            const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
+            if (saved) {
+                if (catAnalytics) catAnalytics.checked = !!saved.analytics;
+                if (catMarketing) catMarketing.checked = !!saved.marketing;
+            }
+        } catch(e){}
+    }
+
+    // Pokud uz mame ulozenou volbu, zobraz jen reopen tlacitko
+    let saved = null;
+    try { saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null'); } catch (e) {}
+    if (saved) {
+        if (reopen) reopen.style.display = 'block';
+    } else {
+        showBanner();
+    }
+
+    document.getElementById('cookie-accept-all')?.addEventListener('click', () =>
+        save({ necessary: true, analytics: true, marketing: true }));
+    document.getElementById('cookie-reject')?.addEventListener('click', () =>
+        save({ necessary: true, analytics: false, marketing: false }));
+    document.getElementById('cookie-settings')?.addEventListener('click', () => {
+        if (details) details.hidden = !details.hidden;
+    });
+    document.getElementById('cookie-save-custom')?.addEventListener('click', () =>
+        save({
+            necessary: true,
+            analytics: !!(catAnalytics && catAnalytics.checked),
+            marketing: !!(catMarketing && catMarketing.checked)
+        }));
+
+    reopen?.addEventListener('click', showBanner);
+})();
+</script>
+
+<script>
+    /* Obsah košíku pro značení tlačítek "v košíku" — [product_id, variant_id|0] */
+    window.__cartItems = [];
+</script>
+<script src="https://naturinka.cz/assets/js/shop.js?v=1793258463" defer></script>
+<script>
+    (function () {
+        const drawer = document.getElementById('mobile-drawer');
+        const backdrop = document.getElementById('mobile-drawer-backdrop');
+        const hamburger = document.getElementById('hamburger');
+        const closeBtn = document.getElementById('mobile-drawer-close');
+        if (!drawer || !backdrop || !hamburger) return;
+
+        function openDrawer() {
+            drawer.classList.add('is-open');
+            backdrop.classList.add('is-open');
+            document.body.classList.add('has-drawer-open');
+            drawer.setAttribute('aria-hidden', 'false');
+        }
+        function closeDrawer() {
+            drawer.classList.remove('is-open');
+            backdrop.classList.remove('is-open');
+            document.body.classList.remove('has-drawer-open');
+            drawer.setAttribute('aria-hidden', 'true');
+        }
+        hamburger.addEventListener('click', openDrawer);
+        closeBtn?.addEventListener('click', closeDrawer);
+        backdrop.addEventListener('click', closeDrawer);
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeDrawer(); });
+    })();
+
+    // Search overlay toggle
+    (function () {
+        const toggle = document.getElementById('search-toggle');
+        const overlay = document.getElementById('search-overlay');
+        const closeBtn = document.getElementById('search-overlay-close');
+        const input = document.getElementById('search-overlay-input');
+        if (!toggle || !overlay || !input) return;
+
+        function open() {
+            document.body.classList.add('search-open');
+            overlay.setAttribute('aria-hidden', 'false');
+            setTimeout(() => input.focus(), 80);
+        }
+        function close() {
+            document.body.classList.remove('search-open');
+            overlay.setAttribute('aria-hidden', 'true');
+        }
+
+        toggle.addEventListener('click', open);
+        closeBtn?.addEventListener('click', close);
+        overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && document.body.classList.contains('search-open')) close();
+            if ((e.key === '/' || (e.ctrlKey && e.key === 'k')) && !document.body.classList.contains('search-open')) {
+                e.preventDefault();
+                open();
+            }
+        });
+    })();
+
+    // Zavři dropdown jazyka/měny při kliku mimo něj; zpět nahoru
+    (function () {
+        document.addEventListener('click', function (e) {
+            document.querySelectorAll('.locale-dd[open]').forEach(function (dd) {
+                if (!dd.contains(e.target)) dd.removeAttribute('open');
+            });
+        });
+        // (třídu body.is-scrolled nastavuje shop.js — tlačítko "zpět nahoru" se podle ní zobrazí)
+        const btt = document.getElementById('back-to-top');
+        if (btt) {
+            btt.addEventListener('click', function (e) { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+        }
+    })();
+</script>
+</body>
+</html>

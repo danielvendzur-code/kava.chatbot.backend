@@ -1,0 +1,115 @@
+{
+  "slug": "candella",
+  "ico": "51188112",
+  "at": "2026-11-15T15:38:30.504298+00:00",
+  "operator": [
+    [
+      [
+        {
+          "value": "ThinkLab, s.r.o.",
+          "validFrom": "2017-10-31"
+        }
+      ],
+      null
+    ]
+  ],
+  "unit": 1735191,
+  "statement": 6808384,
+  "reports": [
+    {
+      "id": 10082387,
+      "template": 687,
+      "tables": [
+        [
+          {
+            "sk": "Strana aktív"
+          },
+          [
+            "16265",
+            "25015",
+            "15253",
+            "22292",
+            "",
+            "",
+            "15253",
+            "22292",
+            "",
+            "",
+            "15253",
+            "22292",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Strana pasív"
+          },
+          [
+            "16265",
+            "25015",
+            "-18311",
+            "-5181",
+            "5000",
+            "5000",
+            "5000",
+            "5000",
+            "",
+            "",
+            "",
+            "",
+            "500",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Výkaz ziskov a strát"
+          },
+          [
+            "4167",
+            "6142",
+            "",
+            "",
+            "4127",
+            "5871",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "40",
+            "271",
+            "16955",
+            "17007"
+          ]
+        ]
+      ],
+      "attachments": [
+        {
+          "id": 12423400,
+          "meno": "Účtovná závierka MÚJ.PDF",
+          "velkostPrilohy": 278302,
+          "pocetStran": 0,
+          "jazyk": "SK",
+          "digest": "bc231d413cb98ff89c35b316ab6cc8d25c16a35531024836ea44dfab58bcd625",
+          "mimeType": "application/pdf"
+        },
+        {
+          "id": 12423421,
+          "meno": "MUJ_2120624022_IR_2025_4672180_6090358.pdf",
+          "velkostPrilohy": 179626,
+          "pocetStran": 5,
+          "jazyk": "SLK",
+          "digest": "d1dba52fae52ffb85a3c832837df39a66e91c317d85e512ddb1cc64c76bc651d",
+          "mimeType": "application/pdf"
+        }
+      ]
+    }
+  ]
+}

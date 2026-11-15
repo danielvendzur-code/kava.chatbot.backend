@@ -1,0 +1,609 @@
+{
+  "brand": "Durance",
+  "domain": "durance.cz",
+  "operator": {
+    "name": "European Trading Subsidiary s.r.o.",
+    "ico": "24799025",
+    "country": "CZ",
+    "activeNoEnd": true,
+    "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24799025",
+    "qualification": "Independent Czech retailer operator, not global French manufacturer company."
+  },
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "cs",
+  "country": "CZ",
+  "currency": "CZK",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "products": [
+    {
+      "id": "1",
+      "name": "Bergamot — parfémovaná voda",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bergamotu-50ml",
+      "priceAmount": 1125.0,
+      "price": "1 125 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Bergamot, neroli a vetiver.",
+      "reason": "Bergamot, neroli a vetiver.",
+      "photo": "/assets/s5/durance/1.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bergamotu-50ml",
+        "verifiedAt": "2026-11-15T15:04:37.537028+00:00",
+        "sourceSha256": "f434a7408455b71cb2b72d116619079355a48a387f22ab6c1ab89db6bda214e1",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "Official public Inertia product and visible stock",
+          "productId": 17722,
+          "sku": "3287570114444",
+          "quantity": 9,
+          "display": "Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 1125.0,
+          "currency": "CZK",
+          "vatSource": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bergamotu-50ml",
+          "vatEvidence": "Exact official price_with_vat and visible product1125Kč, not10Kč sample."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Parfemovaná voda s vůní bergamotu 50ml",
+          "scope": "Explicit exact product title and printed bottle."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://durance.cz/files/images/3287570114444.jpg?v=134769",
+        "photoEvidence": {
+          "file": "1.jpg",
+          "url": "https://durance.cz/files/images/3287570114444.jpg?v=134769",
+          "sha256": "b83815f4fa8f783b6c5211d5ac7b8404447a74054b453a496dbe67af149fd82d",
+          "width": 1333,
+          "height": 2000,
+          "verifiedAt": "2026-11-15T15:10:59.185723+00:00",
+          "scope": "Original official exact50ml product photo, unchanged bytes."
+        },
+        "scent": "Bergamot, neroli a vetiver",
+        "fragrance": {
+          "notes": [
+            "Bergamot",
+            "Hořký pomeranč",
+            "Olej petitgrain",
+            "Levandule",
+            "Neroli",
+            "Bílé květy",
+            "Vetiver",
+            "Pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfémovaná voda",
+          "notesEvidence": {
+            "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bergamotu-50ml",
+            "sourceText": "Hlavní tóny: Bergamot / Hořký pomeranč / Olej petitgrain Střední tóny: Levandule / Neroli / Bílé květy Základní tóny: Vetiver / Pižmo ",
+            "originalSourceText": "Hlavní tóny: Bergamot / Hořký pomeranč / Olej petitgrain Střední tóny: Levandule / Neroli / Bílé květy Základní tóny: Vetiver / Pižmo ",
+            "sourceLanguage": "cs",
+            "scope": "Literal published head/heart/base pyramid. Preserve manufacturer labels including atypical Balsamiko, no correction by inference."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No numeric note percentages, measured intensity, occasion/safety/duration guarantee.",
+          "Mini EDT not automatically same formula/concentration as50ml EDP; no compatible paid add-on verified."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "1"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bergamotu-50ml",
+          "sourceText": "Hlavní tóny: Bergamot / Hořký pomeranč / Olej petitgrain Střední tóny: Levandule / Neroli / Bílé květy Základní tóny: Vetiver / Pižmo ",
+          "navigationLabel": "Bergamot, neroli a vetiver",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "2",
+      "name": "Verbena — parfémovaná voda",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-verbeny-50ml",
+      "priceAmount": 1125.0,
+      "price": "1 125 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Verbena, citrusy a jasmín.",
+      "reason": "Verbena, citrusy a jasmín.",
+      "photo": "/assets/s5/durance/2.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-verbeny-50ml",
+        "verifiedAt": "2026-11-15T15:04:37.536153+00:00",
+        "sourceSha256": "7b08dc565c0dc84db3a397456dccf86e96362711328d5d502312f5be68638edc",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "Official public Inertia product and visible stock",
+          "productId": 146,
+          "sku": "3287570114079",
+          "quantity": 11,
+          "display": "Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 1125.0,
+          "currency": "CZK",
+          "vatSource": "https://durance.cz/produkt/parfemovana-voda-s-vuni-verbeny-50ml",
+          "vatEvidence": "Exact official price_with_vat and visible product1125Kč, not10Kč sample."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Parfemovaná voda s vůní verbeny 50ml",
+          "scope": "Explicit exact product title and printed bottle."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://durance.cz/files/images/3287570114079.jpg?v=154273",
+        "photoEvidence": {
+          "file": "2.jpg",
+          "url": "https://durance.cz/files/images/3287570114079.jpg?v=154273",
+          "sha256": "2e1e22ebec9cf1a4e4653eae543fad76cc8780499fd2b51c97f6df1f138246ca",
+          "width": 1200,
+          "height": 1372,
+          "verifiedAt": "2026-11-15T15:11:00.318215+00:00",
+          "scope": "Original official exact50ml product photo, unchanged bytes."
+        },
+        "scent": "Verbena, citrusy a jasmín",
+        "fragrance": {
+          "notes": [
+            "Citron",
+            "listy citronovníku",
+            "citrusová kůra",
+            "Verbena",
+            "Mandarinka",
+            "Jasmín",
+            "pelargonie",
+            "yuzu",
+            "pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfémovaná voda",
+          "notesEvidence": {
+            "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-verbeny-50ml",
+            "sourceText": "Vrchní tóny : Citron / listy citronovníku / citrusová kůra , Střední tóny : Verbena / Mandarinka / Jasmín , Základní tóny : pelargonie / yuzu / pižmo ",
+            "originalSourceText": "Vrchní tóny : Citron / listy citronovníku / citrusová kůra , Střední tóny : Verbena / Mandarinka / Jasmín , Základní tóny : pelargonie / yuzu / pižmo ",
+            "sourceLanguage": "cs",
+            "scope": "Literal published head/heart/base pyramid. Preserve manufacturer labels including atypical Balsamiko, no correction by inference."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No numeric note percentages, measured intensity, occasion/safety/duration guarantee.",
+          "Mini EDT not automatically same formula/concentration as50ml EDP; no compatible paid add-on verified."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "fresh",
+          "fragranceProfile": "2"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-verbeny-50ml",
+          "sourceText": "Vrchní tóny : Citron / listy citronovníku / citrusová kůra , Střední tóny : Verbena / Mandarinka / Jasmín , Základní tóny : pelargonie / yuzu / pižmo ",
+          "navigationLabel": "Verbena, citrusy a jasmín",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "3",
+      "name": "Růže — parfémovaná voda",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-ruze-50ml",
+      "priceAmount": 1125.0,
+      "price": "1 125 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Růže, rybíz a lotos.",
+      "reason": "Růže, rybíz a lotos.",
+      "photo": "/assets/s5/durance/3.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-ruze-50ml",
+        "verifiedAt": "2026-11-15T15:04:37.535321+00:00",
+        "sourceSha256": "45afa8a6a3c7cf821fe305f35f8502268f02b12d7a4ca6f691ff7de96063dbb6",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "Official public Inertia product and visible stock",
+          "productId": 5166,
+          "sku": "3287570114628",
+          "quantity": 11,
+          "display": "Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 1125.0,
+          "currency": "CZK",
+          "vatSource": "https://durance.cz/produkt/parfemovana-voda-s-vuni-ruze-50ml",
+          "vatEvidence": "Exact official price_with_vat and visible product1125Kč, not10Kč sample."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Parfemovaná voda s vůní růže 50ml",
+          "scope": "Explicit exact product title and printed bottle."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://durance.cz/files/images/3287570114628.jpg?v=153204",
+        "photoEvidence": {
+          "file": "3.jpg",
+          "url": "https://durance.cz/files/images/3287570114628.jpg?v=153204",
+          "sha256": "ed5af6014df182d312d6a740e74c95a32cab231d563eae24490202f76897f742",
+          "width": 1200,
+          "height": 1372,
+          "verifiedAt": "2026-11-15T15:11:01.597324+00:00",
+          "scope": "Original official exact50ml product photo, unchanged bytes."
+        },
+        "scent": "Růže, rybíz a lotos",
+        "fragrance": {
+          "notes": [
+            "Bergamot",
+            "Černý rybíz",
+            "Meruňka",
+            "Pivoňky",
+            "Okvětní lístky růží",
+            "Lotosový květ",
+            "Šeřík",
+            "Cedr",
+            "Ambra"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfémovaná voda",
+          "notesEvidence": {
+            "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-ruze-50ml",
+            "sourceText": "Vrchní tóny: Bergamot / Černý rybíz / Meruňka Střední tóny: Pivoňky / Okvětní lístky růží / Lotosový květ Základní tóny: Šeřík / Cedr / Ambra ",
+            "originalSourceText": "Vrchní tóny: Bergamot / Černý rybíz / Meruňka Střední tóny: Pivoňky / Okvětní lístky růží / Lotosový květ Základní tóny: Šeřík / Cedr / Ambra ",
+            "sourceLanguage": "cs",
+            "scope": "Literal published head/heart/base pyramid. Preserve manufacturer labels including atypical Balsamiko, no correction by inference."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No numeric note percentages, measured intensity, occasion/safety/duration guarantee.",
+          "Mini EDT not automatically same formula/concentration as50ml EDP; no compatible paid add-on verified."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "3"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-ruze-50ml",
+          "sourceText": "Vrchní tóny: Bergamot / Černý rybíz / Meruňka Střední tóny: Pivoňky / Okvětní lístky růží / Lotosový květ Základní tóny: Šeřík / Cedr / Ambra ",
+          "navigationLabel": "Růže, rybíz a lotos",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "4",
+      "name": "Monoi — parfémovaná voda",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-monoi-50ml",
+      "priceAmount": 1125.0,
+      "price": "1 125 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Monoi, tiare a kokosové mléko.",
+      "reason": "Monoi, tiare a kokosové mléko.",
+      "photo": "/assets/s5/durance/4.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-monoi-50ml",
+        "verifiedAt": "2026-11-15T15:04:37.543001+00:00",
+        "sourceSha256": "96aa16d0df2c935c59ff48f6ab2fe8059bab76ef52dde08a98b0b25bdb45f223",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "Official public Inertia product and visible stock",
+          "productId": 120,
+          "sku": "3287570114734",
+          "quantity": 12,
+          "display": "Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 1125.0,
+          "currency": "CZK",
+          "vatSource": "https://durance.cz/produkt/parfemovana-voda-s-vuni-monoi-50ml",
+          "vatEvidence": "Exact official price_with_vat and visible product1125Kč, not10Kč sample."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Parfemovaná voda s vůní monoi 50ml",
+          "scope": "Explicit exact product title and printed bottle."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://durance.cz/files/images/3287570114734.jpg?v=154669",
+        "photoEvidence": {
+          "file": "4.jpg",
+          "url": "https://durance.cz/files/images/3287570114734.jpg?v=154669",
+          "sha256": "8d811b056518dd8217c4360d792fc9eb42f11d4b1cbba7dd64db4fbdbf70371f",
+          "width": 1200,
+          "height": 1372,
+          "verifiedAt": "2026-11-15T15:11:02.595470+00:00",
+          "scope": "Original official exact50ml product photo, unchanged bytes."
+        },
+        "scent": "Monoi, tiare a kokosové mléko",
+        "fragrance": {
+          "notes": [
+            "Bergamot",
+            "Plumeria",
+            "Monoi",
+            "Květ tiare",
+            "Orchidej",
+            "Kokosové mléko",
+            "Santalové dřevo",
+            "Pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfémovaná voda",
+          "notesEvidence": {
+            "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-monoi-50ml",
+            "sourceText": "Hlavní tóny: Bergamot / Plumeria Střední tóny: Monoi / Květ tiare / Orchidej Základní tóny: Kokosové mléko / Santalové dřevo / Pižmo ",
+            "originalSourceText": "Hlavní tóny: Bergamot / Plumeria Střední tóny: Monoi / Květ tiare / Orchidej Základní tóny: Kokosové mléko / Santalové dřevo / Pižmo ",
+            "sourceLanguage": "cs",
+            "scope": "Literal published head/heart/base pyramid. Preserve manufacturer labels including atypical Balsamiko, no correction by inference."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No numeric note percentages, measured intensity, occasion/safety/duration guarantee.",
+          "Mini EDT not automatically same formula/concentration as50ml EDP; no compatible paid add-on verified."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "floral",
+          "fragranceProfile": "4"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-monoi-50ml",
+          "sourceText": "Hlavní tóny: Bergamot / Plumeria Střední tóny: Monoi / Květ tiare / Orchidej Základní tóny: Kokosové mléko / Santalové dřevo / Pižmo ",
+          "navigationLabel": "Monoi, tiare a kokosové mléko",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "5",
+      "name": "Pačule — parfémovaná voda",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-pacule-50ml",
+      "priceAmount": 1125.0,
+      "price": "1 125 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Pačuli, vanilka a rum.",
+      "reason": "Pačuli, vanilka a rum.",
+      "photo": "/assets/s5/durance/5.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-pacule-50ml",
+        "verifiedAt": "2026-11-15T15:04:37.547326+00:00",
+        "sourceSha256": "3823cf9c729f95d8f1d258f53017b3448c144c483278979cb6a0de4927f7da68",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "Official public Inertia product and visible stock",
+          "productId": 147,
+          "sku": "3287570114253",
+          "quantity": 8,
+          "display": "Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 1125.0,
+          "currency": "CZK",
+          "vatSource": "https://durance.cz/produkt/parfemovana-voda-s-vuni-pacule-50ml",
+          "vatEvidence": "Exact official price_with_vat and visible product1125Kč, not10Kč sample."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Parfemovaná voda s vůní pačule 50ml",
+          "scope": "Explicit exact product title and printed bottle."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://durance.cz/files/images/3287570114253.jpg?v=159299",
+        "photoEvidence": {
+          "file": "5.jpg",
+          "url": "https://durance.cz/files/images/3287570114253.jpg?v=159299",
+          "sha256": "9a1a4f6fb9246052fb81eb17f440016edd5d915ac02f35437a4c4b407da86537",
+          "width": 1200,
+          "height": 1372,
+          "verifiedAt": "2026-11-15T15:11:03.526908+00:00",
+          "scope": "Original official exact50ml product photo, unchanged bytes."
+        },
+        "scent": "Pačuli, vanilka a rum",
+        "fragrance": {
+          "notes": [
+            "Růžové dřevo",
+            "Muškátový oříšek",
+            "Hřebíček",
+            "Pryskyřice",
+            "Vetiver",
+            "Balsamiko",
+            "Pačuli",
+            "Vanilka",
+            "Rum"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfémovaná voda",
+          "notesEvidence": {
+            "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-pacule-50ml",
+            "sourceText": "Vrchní tóny:Růžové dřevo / Muškátový oříšek / Hřebíček Střední tóny: Pryskyřice / Vetiver / Balsamiko Základní tóny: Pačuli / Vanilka / Rum ",
+            "originalSourceText": "Vrchní tóny:Růžové dřevo / Muškátový oříšek / Hřebíček Střední tóny: Pryskyřice / Vetiver / Balsamiko Základní tóny: Pačuli / Vanilka / Rum ",
+            "sourceLanguage": "cs",
+            "scope": "Literal published head/heart/base pyramid. Preserve manufacturer labels including atypical Balsamiko, no correction by inference."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No numeric note percentages, measured intensity, occasion/safety/duration guarantee.",
+          "Mini EDT not automatically same formula/concentration as50ml EDP; no compatible paid add-on verified."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "soft",
+          "fragranceProfile": "5"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-pacule-50ml",
+          "sourceText": "Vrchní tóny:Růžové dřevo / Muškátový oříšek / Hřebíček Střední tóny: Pryskyřice / Vetiver / Balsamiko Základní tóny: Pačuli / Vanilka / Rum ",
+          "navigationLabel": "Pačuli, vanilka a rum",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "6",
+      "name": "Bavlna — parfémovaná voda",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bavlny-50ml",
+      "priceAmount": 1125.0,
+      "price": "1 125 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfémovaná voda",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Pudrová bavlna, růže a pižmo.",
+      "reason": "Pudrová bavlna, růže a pižmo.",
+      "photo": "/assets/s5/durance/6.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bavlny-50ml",
+        "verifiedAt": "2026-11-15T15:04:39.744345+00:00",
+        "sourceSha256": "ad3495f55430f160ab6edbc7fa9cd65d27e24d474cf54a78b4adbc6460928508",
+        "stock": "InStock",
+        "stockEvidence": {
+          "scope": "Official public Inertia product and visible stock",
+          "productId": 54,
+          "sku": "3287570114482",
+          "quantity": 12,
+          "display": "Skladem"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 1125.0,
+          "currency": "CZK",
+          "vatSource": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bavlny-50ml",
+          "vatEvidence": "Exact official price_with_vat and visible product1125Kč, not10Kč sample."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "sourceText": "Parfemovaná voda s vůní bavlny 50ml",
+          "scope": "Explicit exact product title and printed bottle."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://durance.cz/files/images/3287570114482.jpg?v=145090",
+        "photoEvidence": {
+          "file": "6.jpg",
+          "url": "https://durance.cz/files/images/3287570114482.jpg?v=145090",
+          "sha256": "7fb76495ea1a7782344dffc81b862cc0e357f07debfa2b7c4a2fda6e3d6bc6f7",
+          "width": 1200,
+          "height": 1372,
+          "verifiedAt": "2026-11-15T15:11:04.158815+00:00",
+          "scope": "Original official exact50ml product photo, unchanged bytes."
+        },
+        "scent": "Pudrová bavlna, růže a pižmo",
+        "fragrance": {
+          "notes": [
+            "Heliotrop",
+            "Mandlový květ",
+            "Pivoňka",
+            "Růže",
+            "Fialka",
+            "Santalové dřevo",
+            "Benzoin",
+            "Vanilka",
+            "Pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfémovaná voda",
+          "notesEvidence": {
+            "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bavlny-50ml",
+            "sourceText": "Vrchní tóny: Heliotrop / Mandlový květ / Pivoňka Střední tóny: Růže / Fialka / Santalové dřevo Základní tóny: Benzoin / Vanilka / Pižmo ",
+            "originalSourceText": "Vrchní tóny: Heliotrop / Mandlový květ / Pivoňka Střední tóny: Růže / Fialka / Santalové dřevo Základní tóny: Benzoin / Vanilka / Pižmo ",
+            "sourceLanguage": "cs",
+            "scope": "Literal published head/heart/base pyramid. Preserve manufacturer labels including atypical Balsamiko, no correction by inference."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No numeric note percentages, measured intensity, occasion/safety/duration guarantee.",
+          "Mini EDT not automatically same formula/concentration as50ml EDP; no compatible paid add-on verified."
+        ],
+        "selectionTraits": {
+          "fragranceDirection": "soft",
+          "fragranceProfile": "6"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bavlny-50ml",
+          "sourceText": "Vrchní tóny: Heliotrop / Mandlový květ / Pivoňka Střední tóny: Růže / Fialka / Santalové dřevo Základní tóny: Benzoin / Vanilka / Pižmo ",
+          "navigationLabel": "Pudrová bavlna, růže a pižmo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    }
+  ],
+  "revenue": {
+    "year": 2024,
+    "publishedBand": "1–3 mil. Kč",
+    "currency": "CZK",
+    "source": "https://www.chytryrejstrik.cz/ico-24799025/european-trading-subsidiary-s-r-o",
+    "sourceType": "Secondary published historical band",
+    "latestExact2025": "UNKNOWN"
+  },
+  "size": "PREFERRED_HISTORICAL_BAND_UNDER_12M_CZK_LATEST_EXACT_UNKNOWN",
+  "interest": "NOT_ESTABLISHED",
+  "notes": [
+    "Six different50ml EDP compositions, exactSKU price/stock/photos; no sample/EDT variant inflation.",
+    "Literal official pyramids, no invented percentages or corrected atypical source note.",
+    "Source-only, MAIN common integration/backend/livePreview QA pending."
+  ]
+}

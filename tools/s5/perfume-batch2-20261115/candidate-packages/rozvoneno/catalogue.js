@@ -1,0 +1,695 @@
+globalThis.CX_CATALOGUES ||= {};
+globalThis.CX_CATALOGUES.rozvoneno = {
+ "brand": "Rozvoněno",
+ "domain": "rozvoneno.cz",
+ "operator": {
+  "name": "Rozvoněno s.r.o.",
+  "ico": "10706577",
+  "country": "CZ",
+  "activeNoEnd": true,
+  "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/10706577"
+ },
+ "series": "s5",
+ "segment": "fragrance",
+ "lang": "cs",
+ "country": "CZ",
+ "currency": "CZK",
+ "status": "SOURCE_PACKAGE_VERIFIED",
+ "products": [
+  {
+   "id": "winter",
+   "name": "Zimní nálada",
+   "url": "https://www.rozvoneno.cz/zimni-nalada-vonna-svicka-s-bio-pomerancem--hrebickem-a-skorici/",
+   "priceAmount": 255.0,
+   "price": "255 Kč",
+   "currency": "CZK",
+   "volume": "130 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Pomeranč, hřebíček a skořice.",
+   "reason": "Pomeranč, hřebíček a skořice.",
+   "photo": "/assets/s5/rozvoneno/winter.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rozvoneno.cz/zimni-nalada-vonna-svicka-s-bio-pomerancem--hrebickem-a-skorici/",
+    "verifiedAt": "2026-11-15T15:30:54.836102+00:00",
+    "sourceSha256": "0ced03718f52db7b810221fc7eb6610726397f6f6f1d241f68b35cbc4df8d340",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official fixedSKU Offer InStock",
+     "currency": "CZK",
+     "sku": "240",
+     "publisherAvailability": "InStock",
+     "quantity": "UNKNOWN_NOT_PUBLISHED"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 255.0,
+     "currency": "CZK",
+     "vatSource": "https://www.rozvoneno.cz/zimni-nalada-vonna-svicka-s-bio-pomerancem--hrebickem-a-skorici/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "130 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.rozvoneno.cz/user/shop/big/96-2_zimni-nalada-obdelnik--1.jpg?ff=1&x=1024&y=768&q=85&ts=664620d7&sg=161563f2",
+    "photoEvidence": {
+     "id": "winter",
+     "file": "winter.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.rozvoneno.cz/user/shop/big/96-2_zimni-nalada-obdelnik--1.jpg?ff=1&x=1024&y=768&q=85&ts=664620d7&sg=161563f2",
+     "sha256": "c64ac3e61df53f5e1e2cd02deb73718ae4a1121e169d70734de4abf7b05d49d6",
+     "bytes": 98007,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:41:18.735539+00:00",
+     "width": 1024,
+     "height": 768
+    },
+    "fragrance": {
+     "notes": [
+      "pomeranč",
+      "hřebíček",
+      "skořice"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.rozvoneno.cz/zimni-nalada-vonna-svicka-s-bio-pomerancem--hrebickem-a-skorici/",
+      "sourceText": "Vonné tóny: pomeranč, hřebíček, skořice\nZIMNÍ NÁLADA - vonná svíčka s BIO pomerančem, hřebíčkem a skořicí\nZachumlejte se do peřin a sledujte vločky dopadající na zmrzlou zem. Zima je tady. Svíčka Zimní nálada je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná 100% přírodními éterickými oleji - pomerančem, hřebíčkem a skořicí. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE Proč pomeranč, hřebíček a skořice? Vykouzlí ve vašem domově pravou zimní atmosféru. Vůně svíčky Vám může připomenout lahodný svařák. Složení: kokosový vosk, sójový vosk, Citrus Aurantium Dulcis Peel Oil, Eugenia Caryophyllus Oil, Cinnamomum Ceylanicum Oil, Limonene*, Linalool*, Citral*, Eugenol*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} -->",
+      "originalSourceText": "ZIMNÍ NÁLADA - vonná svíčka s BIO pomerančem, hřebíčkem a skořicí\nZachumlejte se do peřin a sledujte vločky dopadající na zmrzlou zem. Zima je tady. Svíčka Zimní nálada je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná 100% přírodními éterickými oleji - pomerančem, hřebíčkem a skořicí. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE Proč pomeranč, hřebíček a skořice? Vykouzlí ve vašem domově pravou zimní atmosféru. Vůně svíčky Vám může připomenout lahodný svařák. Složení: kokosový vosk, sójový vosk, Citrus Aurantium Dulcis Peel Oil, Eugenia Caryophyllus Oil, Cinnamomum Ceylanicum Oil, Limonene*, Linalool*, Citral*, Eugenol*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} -->",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "pomeranč",
+        "sourceFragments": [
+         "pomerančem"
+        ]
+       },
+       {
+        "display": "hřebíček",
+        "sourceFragments": [
+         "hřebíčkem"
+        ]
+       },
+       {
+        "display": "skořice",
+        "sourceFragments": [
+         "skořicí"
+        ]
+       }
+      ],
+      "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Pomeranč, hřebíček a skořice",
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "winter"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rozvoneno.cz/zimni-nalada-vonna-svicka-s-bio-pomerancem--hrebickem-a-skorici/",
+     "sourceText": "Vonné tóny: pomeranč, hřebíček, skořice\nZIMNÍ NÁLADA - vonná svíčka s BIO pomerančem, hřebíčkem a skořicí\nZachumlejte se do peřin a sledujte vločky dopadající na zmrzlou zem. Zima je tady. Svíčka Zimní nálada je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná 100% přírodními éterickými oleji - pomerančem, hřebíčkem a skořicí. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE Proč pomeranč, hřebíček a skořice? Vykouzlí ve vašem domově pravou zimní atmosféru. Vůně svíčky Vám může připomenout lahodný svařák. Složení: kokosový vosk, sójový vosk, Citrus Aurantium Dulcis Peel Oil, Eugenia Caryophyllus Oil, Cinnamomum Ceylanicum Oil, Limonene*, Linalool*, Citral*, Eugenol*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} -->",
+     "navigationLabel": "Pomeranč, hřebíček a skořice",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "ginger",
+   "name": "Hřejivé chvíle",
+   "url": "https://www.rozvoneno.cz/hrejive-chvile-vonna-svicka-s-bio-zazvorem--citronem-a-cedrem--130-ml/",
+   "priceAmount": 255.0,
+   "price": "255 Kč",
+   "currency": "CZK",
+   "volume": "130 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Zázvor, citron a cedr.",
+   "reason": "Zázvor, citron a cedr.",
+   "photo": "/assets/s5/rozvoneno/ginger.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rozvoneno.cz/hrejive-chvile-vonna-svicka-s-bio-zazvorem--citronem-a-cedrem--130-ml/",
+    "verifiedAt": "2026-11-15T15:30:54.837963+00:00",
+    "sourceSha256": "2483873d7dff35923e0d4e266c38e548de9838c94878595735206f184974dcb6",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official fixedSKU Offer InStock",
+     "currency": "CZK",
+     "sku": "125",
+     "publisherAvailability": "InStock",
+     "quantity": "UNKNOWN_NOT_PUBLISHED"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 255.0,
+     "currency": "CZK",
+     "vatSource": "https://www.rozvoneno.cz/hrejive-chvile-vonna-svicka-s-bio-zazvorem--citronem-a-cedrem--130-ml/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "130 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.rozvoneno.cz/user/shop/big/331-1_hr--ejive-chvi--le--s--i--r--ka.jpg?ff=1&x=1024&y=768&q=85&ts=6723a6d2&sg=161563f2",
+    "photoEvidence": {
+     "id": "ginger",
+     "file": "ginger.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.rozvoneno.cz/user/shop/big/331-1_hr--ejive-chvi--le--s--i--r--ka.jpg?ff=1&x=1024&y=768&q=85&ts=6723a6d2&sg=161563f2",
+     "sha256": "bd25d1c0ab8483e31f4247aeff83fe03b71a57956c7fc5b1733a310512d8e9dd",
+     "bytes": 68986,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:41:20.247715+00:00",
+     "width": 1024,
+     "height": 768
+    },
+    "fragrance": {
+     "notes": [
+      "zázvor",
+      "citron",
+      "cedr"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.rozvoneno.cz/hrejive-chvile-vonna-svicka-s-bio-zazvorem--citronem-a-cedrem--130-ml/",
+      "sourceText": "Vonné tóny: zázvor, citron, cedr\nHŘEJIVÉ CHVÍLE - vonná svíčka s BIO zázvorem, citronem a cedrem, 130 ml\nZveme vás k odpočinku, zpomalení a vychutnání si drobných radostí. Užijte si zvuk praskajícího ohně, šálek horkého čaje v rukou a hřejivou vůni přírodní svíčky. Svíčka Hřejivé chvíle je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná přírodními BIO éterickými oleji - zázvorem, citronem a cedrem. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Jak udržovat rostlinné svíčky - ZDE. Proč zázvor, citron a cedr? Vonná kompozice vytváří hřejivou a útulnou atmosféru. Vůně dodává prostoru harmonii a klid. Složení: kokosový vosk, sójový vosk, Zingiber Officinalis Oil BIO, Citrus Limon Oil BIO, Cedrus Atlantica Wood Oil BIO, Citral*, Beta-pinen*, Alfa-pinen*, Eucalyptol*, D-limonen*, Geraniol*, Citronellol*, Linalool*, Limonene*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci",
+      "originalSourceText": "HŘEJIVÉ CHVÍLE - vonná svíčka s BIO zázvorem, citronem a cedrem, 130 ml\nZveme vás k odpočinku, zpomalení a vychutnání si drobných radostí. Užijte si zvuk praskajícího ohně, šálek horkého čaje v rukou a hřejivou vůni přírodní svíčky. Svíčka Hřejivé chvíle je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná přírodními BIO éterickými oleji - zázvorem, citronem a cedrem. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Jak udržovat rostlinné svíčky - ZDE. Proč zázvor, citron a cedr? Vonná kompozice vytváří hřejivou a útulnou atmosféru. Vůně dodává prostoru harmonii a klid. Složení: kokosový vosk, sójový vosk, Zingiber Officinalis Oil BIO, Citrus Limon Oil BIO, Cedrus Atlantica Wood Oil BIO, Citral*, Beta-pinen*, Alfa-pinen*, Eucalyptol*, D-limonen*, Geraniol*, Citronellol*, Linalool*, Limonene*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "zázvor",
+        "sourceFragments": [
+         "zázvorem"
+        ]
+       },
+       {
+        "display": "citron",
+        "sourceFragments": [
+         "citronem"
+        ]
+       },
+       {
+        "display": "cedr",
+        "sourceFragments": [
+         "cedrem"
+        ]
+       }
+      ],
+      "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Zázvor, citron a cedr",
+    "selectionTraits": {
+     "fragranceDirection": "warm",
+     "fragranceProfile": "ginger"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rozvoneno.cz/hrejive-chvile-vonna-svicka-s-bio-zazvorem--citronem-a-cedrem--130-ml/",
+     "sourceText": "Vonné tóny: zázvor, citron, cedr\nHŘEJIVÉ CHVÍLE - vonná svíčka s BIO zázvorem, citronem a cedrem, 130 ml\nZveme vás k odpočinku, zpomalení a vychutnání si drobných radostí. Užijte si zvuk praskajícího ohně, šálek horkého čaje v rukou a hřejivou vůni přírodní svíčky. Svíčka Hřejivé chvíle je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná přírodními BIO éterickými oleji - zázvorem, citronem a cedrem. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Jak udržovat rostlinné svíčky - ZDE. Proč zázvor, citron a cedr? Vonná kompozice vytváří hřejivou a útulnou atmosféru. Vůně dodává prostoru harmonii a klid. Složení: kokosový vosk, sójový vosk, Zingiber Officinalis Oil BIO, Citrus Limon Oil BIO, Cedrus Atlantica Wood Oil BIO, Citral*, Beta-pinen*, Alfa-pinen*, Eucalyptol*, D-limonen*, Geraniol*, Citronellol*, Linalool*, Limonene*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci",
+     "navigationLabel": "Zázvor, citron a cedr",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "resin",
+   "name": "Betlémská záře",
+   "url": "https://www.rozvoneno.cz/betlemska-zare-vonna-svicka-s-kadidlem-a-myrhou/",
+   "priceAmount": 275.0,
+   "price": "275 Kč",
+   "currency": "CZK",
+   "volume": "130 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Kadidlo a myrha.",
+   "reason": "Kadidlo a myrha.",
+   "photo": "/assets/s5/rozvoneno/resin.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rozvoneno.cz/betlemska-zare-vonna-svicka-s-kadidlem-a-myrhou/",
+    "verifiedAt": "2026-11-15T15:30:54.839243+00:00",
+    "sourceSha256": "ec4711e6483a8e098e5d454805ce5ab45cc14ad7e00aa552c24d38c5d17c762e",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official fixedSKU Offer InStock",
+     "currency": "CZK",
+     "sku": "110",
+     "publisherAvailability": "InStock",
+     "quantity": "UNKNOWN_NOT_PUBLISHED"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 275.0,
+     "currency": "CZK",
+     "vatSource": "https://www.rozvoneno.cz/betlemska-zare-vonna-svicka-s-kadidlem-a-myrhou/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "130 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.rozvoneno.cz/user/shop/big/146-1_d31d28a4-2278-458c-b0fb-fa4ab7f26fba.jpg?ff=1&x=1024&y=768&q=85&ts=664620d7&sg=161563f2",
+    "photoEvidence": {
+     "id": "resin",
+     "file": "resin.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.rozvoneno.cz/user/shop/big/146-1_d31d28a4-2278-458c-b0fb-fa4ab7f26fba.jpg?ff=1&x=1024&y=768&q=85&ts=664620d7&sg=161563f2",
+     "sha256": "4106d708a28cd15ce0ba80c9ec33b8d04c44683d16c35ae4636ecbf3d646b3cc",
+     "bytes": 97531,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:41:21.280064+00:00",
+     "width": 1024,
+     "height": 768
+    },
+    "fragrance": {
+     "notes": [
+      "kadidlo",
+      "myrha"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.rozvoneno.cz/betlemska-zare-vonna-svicka-s-kadidlem-a-myrhou/",
+      "sourceText": "Vonné tóny: kadidlo, myrha\nBETLÉMSKÁ ZÁŘE - vonná svíčka s kadidlem a myrhou\nPřineste si do svých domovů vůni kadidla a myrhy, jako to udělali tři mudrcové malému Ježíškovi. Tato hřejivá vůně Vám navodí skvělou atmosféru k relaxaci. Svíčka Betlémská záře je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná 100% přírodními éterickými oleji - kadidlem a myrhou. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE. Proč kadidlo a myrha? Zahřejí Vás v chladných zimních večerech. Jejich inhalace může napomoci při nachlazení. Pomohou Vám zrelaxovat. Nejedná se o léčivý přípravek. Složení: kokosový vosk, sójový vosk, Boswellia Carterii Gum Oil, Commiphora Myrrha Oil, Limonene*, Linalool*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} --> Zhlédněte krátké video o nás:",
+      "originalSourceText": "BETLÉMSKÁ ZÁŘE - vonná svíčka s kadidlem a myrhou\nPřineste si do svých domovů vůni kadidla a myrhy, jako to udělali tři mudrcové malému Ježíškovi. Tato hřejivá vůně Vám navodí skvělou atmosféru k relaxaci. Svíčka Betlémská záře je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná 100% přírodními éterickými oleji - kadidlem a myrhou. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE. Proč kadidlo a myrha? Zahřejí Vás v chladných zimních večerech. Jejich inhalace může napomoci při nachlazení. Pomohou Vám zrelaxovat. Nejedná se o léčivý přípravek. Složení: kokosový vosk, sójový vosk, Boswellia Carterii Gum Oil, Commiphora Myrrha Oil, Limonene*, Linalool*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} --> Zhlédněte krátké video o nás:",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "kadidlo",
+        "sourceFragments": [
+         "kadidlem"
+        ]
+       },
+       {
+        "display": "myrha",
+        "sourceFragments": [
+         "myrhou"
+        ]
+       }
+      ],
+      "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Kadidlo a myrha",
+    "selectionTraits": {
+     "fragranceDirection": "depth",
+     "fragranceProfile": "resin"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rozvoneno.cz/betlemska-zare-vonna-svicka-s-kadidlem-a-myrhou/",
+     "sourceText": "Vonné tóny: kadidlo, myrha\nBETLÉMSKÁ ZÁŘE - vonná svíčka s kadidlem a myrhou\nPřineste si do svých domovů vůni kadidla a myrhy, jako to udělali tři mudrcové malému Ježíškovi. Tato hřejivá vůně Vám navodí skvělou atmosféru k relaxaci. Svíčka Betlémská záře je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná 100% přírodními éterickými oleji - kadidlem a myrhou. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE. Proč kadidlo a myrha? Zahřejí Vás v chladných zimních večerech. Jejich inhalace může napomoci při nachlazení. Pomohou Vám zrelaxovat. Nejedná se o léčivý přípravek. Složení: kokosový vosk, sójový vosk, Boswellia Carterii Gum Oil, Commiphora Myrrha Oil, Limonene*, Linalool*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} --> Zhlédněte krátké video o nás:",
+     "navigationLabel": "Kadidlo a myrha",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "fresh",
+   "name": "Svěží vánek",
+   "url": "https://www.rozvoneno.cz/svezi-vanek-vonna-svicka-s-bio-eukalyptem-a-citronem/",
+   "priceAmount": 235.0,
+   "price": "235 Kč",
+   "currency": "CZK",
+   "volume": "130 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Eukalyptus a citron.",
+   "reason": "Eukalyptus a citron.",
+   "photo": "/assets/s5/rozvoneno/fresh.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rozvoneno.cz/svezi-vanek-vonna-svicka-s-bio-eukalyptem-a-citronem/",
+    "verifiedAt": "2026-11-15T15:30:54.842682+00:00",
+    "sourceSha256": "c2ae80e84f9854d00df800ec4a64fd76394c976af7d330b86c74ff703aeb2a30",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official fixedSKU Offer InStock",
+     "currency": "CZK",
+     "sku": "190",
+     "publisherAvailability": "InStock",
+     "quantity": "UNKNOWN_NOT_PUBLISHED"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 235.0,
+     "currency": "CZK",
+     "vatSource": "https://www.rozvoneno.cz/svezi-vanek-vonna-svicka-s-bio-eukalyptem-a-citronem/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "130 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.rozvoneno.cz/user/shop/big/93-1_8b3af7bd-7b69-4c25-9ae6-ffe84c1b7553.jpg?ff=1&x=1024&y=768&q=85&ts=664620d7&sg=161563f2",
+    "photoEvidence": {
+     "id": "fresh",
+     "file": "fresh.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.rozvoneno.cz/user/shop/big/93-1_8b3af7bd-7b69-4c25-9ae6-ffe84c1b7553.jpg?ff=1&x=1024&y=768&q=85&ts=664620d7&sg=161563f2",
+     "sha256": "45ed54f66ca33025a782feb40c0e5f44f5ddd866035bb4903cdaf4a140d2194e",
+     "bytes": 92712,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:41:22.032904+00:00",
+     "width": 1024,
+     "height": 768
+    },
+    "fragrance": {
+     "notes": [
+      "eukalyptus",
+      "citron"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.rozvoneno.cz/svezi-vanek-vonna-svicka-s-bio-eukalyptem-a-citronem/",
+      "sourceText": "Vonné tóny: eukalyptus, citron\nSVĚŽÍ VÁNEK - vonná svíčka s BIO eukalyptem a citronem\nPořádně se nadechněte a nechejte se unést na osvěžující vlně. <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} --> Svíčka Svěží vánek je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná 100% přírodními éterickými oleji - eukalyptem a citronem. Vůně eukalyptu a citronu přináší okamžitou svěžest, která nejen čistí vzduch, ale také vytváří pocit čistoty a klidu. Její lehce citrusové tóny ve spojení s chladivým eukalyptem povzbuzují smysly a navozují harmonii v každém prostoru. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE Proč eukalyptus a citron? Pomáhají uvolňovat dýchací cesty. Mají protizánětlivé a antiseptické účinky. Detoxikují celý organismus. Nejedná se o léčivý přípravek. Složení: kokosový vosk, sójový vosk, Eucalyptus Globulus Leaf Oil, Citrus Limon Peel Oil, Limonene*, Citral*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} -->",
+      "originalSourceText": "SVĚŽÍ VÁNEK - vonná svíčka s BIO eukalyptem a citronem\nPořádně se nadechněte a nechejte se unést na osvěžující vlně. <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} --> Svíčka Svěží vánek je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná 100% přírodními éterickými oleji - eukalyptem a citronem. Vůně eukalyptu a citronu přináší okamžitou svěžest, která nejen čistí vzduch, ale také vytváří pocit čistoty a klidu. Její lehce citrusové tóny ve spojení s chladivým eukalyptem povzbuzují smysly a navozují harmonii v každém prostoru. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE Proč eukalyptus a citron? Pomáhají uvolňovat dýchací cesty. Mají protizánětlivé a antiseptické účinky. Detoxikují celý organismus. Nejedná se o léčivý přípravek. Složení: kokosový vosk, sójový vosk, Eucalyptus Globulus Leaf Oil, Citrus Limon Peel Oil, Limonene*, Citral*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} -->",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "eukalyptus",
+        "sourceFragments": [
+         "eukalyptem"
+        ]
+       },
+       {
+        "display": "citron",
+        "sourceFragments": [
+         "citronem"
+        ]
+       }
+      ],
+      "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Eukalyptus a citron",
+    "selectionTraits": {
+     "fragranceDirection": "citrusy",
+     "fragranceProfile": "fresh"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rozvoneno.cz/svezi-vanek-vonna-svicka-s-bio-eukalyptem-a-citronem/",
+     "sourceText": "Vonné tóny: eukalyptus, citron\nSVĚŽÍ VÁNEK - vonná svíčka s BIO eukalyptem a citronem\nPořádně se nadechněte a nechejte se unést na osvěžující vlně. <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} --> Svíčka Svěží vánek je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná 100% přírodními éterickými oleji - eukalyptem a citronem. Vůně eukalyptu a citronu přináší okamžitou svěžest, která nejen čistí vzduch, ale také vytváří pocit čistoty a klidu. Její lehce citrusové tóny ve spojení s chladivým eukalyptem povzbuzují smysly a navozují harmonii v každém prostoru. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE Proč eukalyptus a citron? Pomáhají uvolňovat dýchací cesty. Mají protizánětlivé a antiseptické účinky. Detoxikují celý organismus. Nejedná se o léčivý přípravek. Složení: kokosový vosk, sójový vosk, Eucalyptus Globulus Leaf Oil, Citrus Limon Peel Oil, Limonene*, Citral*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} -->",
+     "navigationLabel": "Eukalyptus a citron",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "citrus",
+   "name": "Děkuji",
+   "url": "https://www.rozvoneno.cz/dekuji-vonna-svicka-s-bio-grepem--limetkou-a-bergamotem/",
+   "priceAmount": 255.0,
+   "price": "255 Kč",
+   "currency": "CZK",
+   "volume": "130 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Grep, limetka a bergamot.",
+   "reason": "Grep, limetka a bergamot.",
+   "photo": "/assets/s5/rozvoneno/citrus.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rozvoneno.cz/dekuji-vonna-svicka-s-bio-grepem--limetkou-a-bergamotem/",
+    "verifiedAt": "2026-11-15T15:30:54.849350+00:00",
+    "sourceSha256": "b547ea450ce4439bbb733da7ab5db753f89fcb652d816b02a24e6c746cea7190",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official fixedSKU Offer InStock",
+     "currency": "CZK",
+     "sku": "115",
+     "publisherAvailability": "InStock",
+     "quantity": "UNKNOWN_NOT_PUBLISHED"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 255.0,
+     "currency": "CZK",
+     "vatSource": "https://www.rozvoneno.cz/dekuji-vonna-svicka-s-bio-grepem--limetkou-a-bergamotem/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "130 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.rozvoneno.cz/user/shop/big/346-1_dekuji-prirodni-svicka-130ml-brnensko.jpg?ff=1&x=1024&y=768&q=85&ts=6a294958&sg=161563f2",
+    "photoEvidence": {
+     "id": "citrus",
+     "file": "citrus.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.rozvoneno.cz/user/shop/big/346-1_dekuji-prirodni-svicka-130ml-brnensko.jpg?ff=1&x=1024&y=768&q=85&ts=6a294958&sg=161563f2",
+     "sha256": "21896076ac6b4c96d9765d29adb3b818f5efa63d391621af223b3298089ace7e",
+     "bytes": 76273,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:41:23.509747+00:00",
+     "width": 1024,
+     "height": 768
+    },
+    "fragrance": {
+     "notes": [
+      "grep",
+      "limetka",
+      "bergamot"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.rozvoneno.cz/dekuji-vonna-svicka-s-bio-grepem--limetkou-a-bergamotem/",
+      "sourceText": "Vonné tóny: grep, limetka, bergamot\nDĚKUJI - vonná svíčka s BIO grepem, limetkou a bergamotem\nSvíčka Děkuji je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná přírodními BIO éterickými oleji - grepem, limetkou a bergamotem. Poděkujte svíčkou, která to řekne za vás. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE. Proč grep, limetka a bergamot? Pozitivně působí na psychiku. Zlepší náladu. Příjemně osvěží a povzbudí. Nejedná se o léčivý přípravek. Složení: kokosový vosk, sójový vosk, grapefruitový esenciální olej bio, limetkový esenciální olej bio, bergamotový esenciální olej bio. Může vyvolat alergickou reakci. <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} --> <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} -->",
+      "originalSourceText": "DĚKUJI - vonná svíčka s BIO grepem, limetkou a bergamotem\nSvíčka Děkuji je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná přírodními BIO éterickými oleji - grepem, limetkou a bergamotem. Poděkujte svíčkou, která to řekne za vás. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE. Proč grep, limetka a bergamot? Pozitivně působí na psychiku. Zlepší náladu. Příjemně osvěží a povzbudí. Nejedná se o léčivý přípravek. Složení: kokosový vosk, sójový vosk, grapefruitový esenciální olej bio, limetkový esenciální olej bio, bergamotový esenciální olej bio. Může vyvolat alergickou reakci. <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} --> <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} -->",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "grep",
+        "sourceFragments": [
+         "grepem"
+        ]
+       },
+       {
+        "display": "limetka",
+        "sourceFragments": [
+         "limetkou"
+        ]
+       },
+       {
+        "display": "bergamot",
+        "sourceFragments": [
+         "bergamotem"
+        ]
+       }
+      ],
+      "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Grep, limetka a bergamot",
+    "selectionTraits": {
+     "fragranceDirection": "citrusy",
+     "fragranceProfile": "citrus"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rozvoneno.cz/dekuji-vonna-svicka-s-bio-grepem--limetkou-a-bergamotem/",
+     "sourceText": "Vonné tóny: grep, limetka, bergamot\nDĚKUJI - vonná svíčka s BIO grepem, limetkou a bergamotem\nSvíčka Děkuji je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná přírodními BIO éterickými oleji - grepem, limetkou a bergamotem. Poděkujte svíčkou, která to řekne za vás. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE. Proč grep, limetka a bergamot? Pozitivně působí na psychiku. Zlepší náladu. Příjemně osvěží a povzbudí. Nejedná se o léčivý přípravek. Složení: kokosový vosk, sójový vosk, grapefruitový esenciální olej bio, limetkový esenciální olej bio, bergamotový esenciální olej bio. Může vyvolat alergickou reakci. <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} --> <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} -->",
+     "navigationLabel": "Grep, limetka a bergamot",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  },
+  {
+   "id": "flower",
+   "name": "Jedinečná maminka",
+   "url": "https://www.rozvoneno.cz/jedinecna-maminka-vonna-svicka-s-bio-geranii--pomerancem-a-paculi/",
+   "priceAmount": 255.0,
+   "price": "255 Kč",
+   "currency": "CZK",
+   "volume": "130 ml",
+   "category": "fragrance",
+   "kind": "Vonná svíčka",
+   "tags": [],
+   "available": true,
+   "isSample": false,
+   "description": "Geránie, pomeranč a pačuli.",
+   "reason": "Geránie, pomeranč a pačuli.",
+   "photo": "/assets/s5/rozvoneno/flower.jpg",
+   "source": {
+    "series": "s5",
+    "url": "https://www.rozvoneno.cz/jedinecna-maminka-vonna-svicka-s-bio-geranii--pomerancem-a-paculi/",
+    "verifiedAt": "2026-11-15T15:30:57.172084+00:00",
+    "sourceSha256": "fb6226efa84ea0e48bfa9609605256589970e60b861e28c71932e4327a2e68f9",
+    "stock": "InStock",
+    "stockEvidence": {
+     "scope": "Official fixedSKU Offer InStock",
+     "currency": "CZK",
+     "sku": "150",
+     "publisherAvailability": "InStock",
+     "quantity": "UNKNOWN_NOT_PUBLISHED"
+    },
+    "priceFrom": false,
+    "priceEvidence": {
+     "amount": 255.0,
+     "currency": "CZK",
+     "vatSource": "https://www.rozvoneno.cz/jedinecna-maminka-vonna-svicka-s-bio-geranii--pomerancem-a-paculi/",
+     "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+    },
+    "packEvidence": {
+     "pack": "130 ml",
+     "scope": "Explicit published product pack, not shipping weight."
+    },
+    "variantSelectionRequired": false,
+    "categoryLocked": true,
+    "kindLocked": true,
+    "photoUrl": "https://cdn.myshoptet.com/usr/www.rozvoneno.cz/user/shop/big/134-1_19c75e14-0ea0-4969-bdfc-24a1ad8ab009.jpg?ff=1&x=1024&y=768&q=85&ts=664620d7&sg=161563f2",
+    "photoEvidence": {
+     "id": "flower",
+     "file": "flower.jpg",
+     "url": "https://cdn.myshoptet.com/usr/www.rozvoneno.cz/user/shop/big/134-1_19c75e14-0ea0-4969-bdfc-24a1ad8ab009.jpg?ff=1&x=1024&y=768&q=85&ts=664620d7&sg=161563f2",
+     "sha256": "3b53f096a356b047c5432d8ce56b6b165539e8daa15b0c41cf76050b1d6f7b70",
+     "bytes": 73754,
+     "originalBytes": true,
+     "verifiedAt": "2026-11-15T15:41:23.993412+00:00",
+     "width": 1024,
+     "height": 768
+    },
+    "fragrance": {
+     "notes": [
+      "geránie",
+      "pomeranč",
+      "pačuli"
+     ],
+     "officialFamilies": [],
+     "intensity": null,
+     "occasion": null,
+     "concentrationDisplay": "Vonná svíčka",
+     "notesEvidence": {
+      "url": "https://www.rozvoneno.cz/jedinecna-maminka-vonna-svicka-s-bio-geranii--pomerancem-a-paculi/",
+      "sourceText": "Vonné tóny: geránie, pomeranč, pačuli\nJEDINEČNÁ MAMINKA - vonná svíčka s BIO geránií, pomerančem a pačuli\nUdělejte radost Vaší jedinečné mamince. Okouzlete ji příjemnou květinovou vůní geránie, pomeranče a pačuli. Svíčka Jedinečná maminka je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná přírodními BIO éterickými oleji - geránií, pomerančem a pačuli. Vůně do svíčky byly vybírány tak, aby byly vhodné jak pro těhotné tak kojící ženy a jejich miminka. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE Proč geránie, pomeranč a pačuli? Pozitivně působí na psychiku. Dokáží Vás zklidnit. Pročišťují vzduch. Nejedná se o léčivý přípravek. Složení: kokosový vosk, sójový vosk, Pelargonium Graveolens Oil BIO, Citrus Aurantium Dulcis Peel Oil BIO, Pogostemon Cablin Oil BIO, Citronellol*, Geraniol*, Linalool*, Citral*, Limonene*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} -->",
+      "originalSourceText": "JEDINEČNÁ MAMINKA - vonná svíčka s BIO geránií, pomerančem a pačuli\nUdělejte radost Vaší jedinečné mamince. Okouzlete ji příjemnou květinovou vůní geránie, pomeranče a pačuli. Svíčka Jedinečná maminka je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná přírodními BIO éterickými oleji - geránií, pomerančem a pačuli. Vůně do svíčky byly vybírány tak, aby byly vhodné jak pro těhotné tak kojící ženy a jejich miminka. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE Proč geránie, pomeranč a pačuli? Pozitivně působí na psychiku. Dokáží Vás zklidnit. Pročišťují vzduch. Nejedná se o léčivý přípravek. Složení: kokosový vosk, sójový vosk, Pelargonium Graveolens Oil BIO, Citrus Aurantium Dulcis Peel Oil BIO, Pogostemon Cablin Oil BIO, Citronellol*, Geraniol*, Linalool*, Citral*, Limonene*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} -->",
+      "sourceLanguage": "cs",
+      "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+      "noteFormMapping": [
+       {
+        "display": "geránie",
+        "sourceFragments": [
+         "geránií"
+        ]
+       },
+       {
+        "display": "pomeranč",
+        "sourceFragments": [
+         "pomerančem"
+        ]
+       },
+       {
+        "display": "pačuli",
+        "sourceFragments": [
+         "pačuli"
+        ]
+       }
+      ],
+      "qualification": "Faithful Czech grammatical normalization of cited sensory descriptors, no invented head/heart/base or numeric strengths."
+     }
+    },
+    "complementForProductUrls": [],
+    "excludedClaims": [
+     "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+    ],
+    "usagePurpose": "scented-candle",
+    "scent": "Geránie, pomeranč a pačuli",
+    "selectionTraits": {
+     "fragranceDirection": "depth",
+     "fragranceProfile": "flower"
+    },
+    "selectionTraitsEvidence": {
+     "url": "https://www.rozvoneno.cz/jedinecna-maminka-vonna-svicka-s-bio-geranii--pomerancem-a-paculi/",
+     "sourceText": "Vonné tóny: geránie, pomeranč, pačuli\nJEDINEČNÁ MAMINKA - vonná svíčka s BIO geránií, pomerančem a pačuli\nUdělejte radost Vaší jedinečné mamince. Okouzlete ji příjemnou květinovou vůní geránie, pomeranče a pačuli. Svíčka Jedinečná maminka je vyrobena z kombinace rostlinných vosků - kokosového a sójového - a je ovoněná přírodními BIO éterickými oleji - geránií, pomerančem a pačuli. Vůně do svíčky byly vybírány tak, aby byly vhodné jak pro těhotné tak kojící ženy a jejich miminka. Rostlinné vosky neobsahují škodlivé látky, jsou biologicky odbouratelné, neobsahují živočišné produkty a délka hoření je až o 50 % delší než u běžných parafínových vosků. Pro svíčky se snažíme využívat již použité skleničky a při výrobě omezujeme množství odpadu na možné minimum. Suroviny a obalové materiály vybíráme s ohledem na udržitelnost přírody. Svíčka vydrží hořet až 25 hodin. Objem: 130 ml Jak udržovat rostlinné svíčky - ZDE Proč geránie, pomeranč a pačuli? Pozitivně působí na psychiku. Dokáží Vás zklidnit. Pročišťují vzduch. Nejedná se o léčivý přípravek. Složení: kokosový vosk, sójový vosk, Pelargonium Graveolens Oil BIO, Citrus Aurantium Dulcis Peel Oil BIO, Pogostemon Cablin Oil BIO, Citronellol*, Geraniol*, Linalool*, Citral*, Limonene*. * = přirozená součást přírodních esenciálních olejů; může vyvolat alergickou reakci <!-- td {border: 1px solid #ccc;}br {mso-data-placement:same-cell;} -->",
+     "navigationLabel": "Geránie, pomeranč a pačuli",
+     "navigationGroupingIsNotOfficialFragranceFamily": true
+    }
+   }
+  }
+ ],
+ "revenue": {
+  "year": 2024,
+  "publishedBand": "3–5 mil. Kč",
+  "currency": "CZK",
+  "source": "https://www.chytryrejstrik.cz/ico-10706577/rozvoneno-s-r-o",
+  "sourceType": "Secondary published historical band",
+  "latestExact2025": "UNKNOWN"
+ },
+ "size": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+ "interest": "NOT_ESTABLISHED",
+ "notes": [
+  "Six distinct candle fragrance formulas, fixedSKU pack/price/stock/originalphotos; no same-scent size/glass/color inflation.",
+  "Candle scent descriptors only, no cold/respiratory/pregnancy/infant/mental-health/aromatherapy/air-disinfection/fire-safety or guaranteed burn duration promises.",
+  "No verified accessory integration contract: alternative and distinct comparison only, not fake same-formula candle lid as perfume mini.",
+  "MAIN candle-brand backend guard/integration/livePreview QA required.",
+  "All130ml. IndividualSKU prices differ; not universal255CZK. Source pregnancy/infant/respiratory claims excluded."
+ ]
+};

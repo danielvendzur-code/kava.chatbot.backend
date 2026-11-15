@@ -1,0 +1,977 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-15T15:11:48.094657+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "durance",
+      "width": 320,
+      "id": "1",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bergamotu-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-1-320.png"
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "id": "2",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-verbeny-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-2-320.png"
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "id": "3",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-ruze-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-3-320.png"
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "id": "4",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-monoi-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-4-320.png"
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "id": "5",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-pacule-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-5-320.png"
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "id": "6",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bavlny-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-6-320.png"
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "id": "1",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bergamotu-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-1-390.png"
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "id": "2",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-verbeny-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-2-390.png"
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "id": "3",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-ruze-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-3-390.png"
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "id": "4",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-monoi-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-4-390.png"
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "id": "5",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-pacule-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-5-390.png"
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "id": "6",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bavlny-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-6-390.png"
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "id": "1",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bergamotu-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-1-1280.png"
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "id": "2",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-verbeny-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-2-1280.png"
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "id": "3",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-ruze-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-3-1280.png"
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "id": "4",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-monoi-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-4-1280.png"
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "id": "5",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-pacule-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-5-1280.png"
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "id": "6",
+      "pack": "50 ml",
+      "price": "1 125 Kč",
+      "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bavlny-50ml",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "durance-result-6-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "durance",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "soft",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "durance-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "1",
+          "photo": "/assets/s5/durance/1.jpg"
+        },
+        {
+          "id": "2",
+          "photo": "/assets/s5/durance/2.jpg"
+        }
+      ],
+      "screenshot": "durance-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "3",
+          "photo": "/assets/s5/durance/3.jpg"
+        },
+        {
+          "id": "4",
+          "photo": "/assets/s5/durance/4.jpg"
+        }
+      ],
+      "screenshot": "durance-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "5",
+          "photo": "/assets/s5/durance/5.jpg"
+        },
+        {
+          "id": "6",
+          "photo": "/assets/s5/durance/6.jpg"
+        }
+      ],
+      "screenshot": "durance-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "soft",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "durance-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "1",
+          "photo": "/assets/s5/durance/1.jpg"
+        },
+        {
+          "id": "2",
+          "photo": "/assets/s5/durance/2.jpg"
+        }
+      ],
+      "screenshot": "durance-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "3",
+          "photo": "/assets/s5/durance/3.jpg"
+        },
+        {
+          "id": "4",
+          "photo": "/assets/s5/durance/4.jpg"
+        }
+      ],
+      "screenshot": "durance-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "5",
+          "photo": "/assets/s5/durance/5.jpg"
+        },
+        {
+          "id": "6",
+          "photo": "/assets/s5/durance/6.jpg"
+        }
+      ],
+      "screenshot": "durance-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "floral",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "soft",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "durance-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "1",
+          "photo": "/assets/s5/durance/1.jpg"
+        },
+        {
+          "id": "2",
+          "photo": "/assets/s5/durance/2.jpg"
+        }
+      ],
+      "screenshot": "durance-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "3",
+          "photo": "/assets/s5/durance/3.jpg"
+        },
+        {
+          "id": "4",
+          "photo": "/assets/s5/durance/4.jpg"
+        }
+      ],
+      "screenshot": "durance-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "5",
+          "photo": "/assets/s5/durance/5.jpg"
+        },
+        {
+          "id": "6",
+          "photo": "/assets/s5/durance/6.jpg"
+        }
+      ],
+      "screenshot": "durance-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "durance",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "1",
+        "5"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "durance-compare-320.png"
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "1",
+        "5"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "durance-compare-390.png"
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "1",
+        "5"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "durance-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "noteProfiles": [
+    {
+      "slug": "durance",
+      "id": "1",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot",
+        "neroli",
+        "vetiver"
+      ],
+      "screenshot": "durance-note-profile-1-320.png"
+    },
+    {
+      "slug": "durance",
+      "id": "2",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Verbena",
+        "citrusy",
+        "jasmín"
+      ],
+      "screenshot": "durance-note-profile-2-320.png"
+    },
+    {
+      "slug": "durance",
+      "id": "3",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Růže",
+        "rybíz",
+        "lotos"
+      ],
+      "screenshot": "durance-note-profile-3-320.png"
+    },
+    {
+      "slug": "durance",
+      "id": "4",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Monoi",
+        "tiare",
+        "kokosové mléko"
+      ],
+      "screenshot": "durance-note-profile-4-320.png"
+    },
+    {
+      "slug": "durance",
+      "id": "5",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Pačuli",
+        "vanilka",
+        "rum"
+      ],
+      "screenshot": "durance-note-profile-5-320.png"
+    },
+    {
+      "slug": "durance",
+      "id": "6",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Pudrová bavlna",
+        "růže",
+        "pižmo"
+      ],
+      "screenshot": "durance-note-profile-6-320.png"
+    },
+    {
+      "slug": "durance",
+      "id": "1",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot",
+        "neroli",
+        "vetiver"
+      ],
+      "screenshot": "durance-note-profile-1-390.png"
+    },
+    {
+      "slug": "durance",
+      "id": "2",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Verbena",
+        "citrusy",
+        "jasmín"
+      ],
+      "screenshot": "durance-note-profile-2-390.png"
+    },
+    {
+      "slug": "durance",
+      "id": "3",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Růže",
+        "rybíz",
+        "lotos"
+      ],
+      "screenshot": "durance-note-profile-3-390.png"
+    },
+    {
+      "slug": "durance",
+      "id": "4",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Monoi",
+        "tiare",
+        "kokosové mléko"
+      ],
+      "screenshot": "durance-note-profile-4-390.png"
+    },
+    {
+      "slug": "durance",
+      "id": "5",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Pačuli",
+        "vanilka",
+        "rum"
+      ],
+      "screenshot": "durance-note-profile-5-390.png"
+    },
+    {
+      "slug": "durance",
+      "id": "6",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Pudrová bavlna",
+        "růže",
+        "pižmo"
+      ],
+      "screenshot": "durance-note-profile-6-390.png"
+    },
+    {
+      "slug": "durance",
+      "id": "1",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Bergamot",
+        "neroli",
+        "vetiver"
+      ],
+      "screenshot": "durance-note-profile-1-1280.png"
+    },
+    {
+      "slug": "durance",
+      "id": "2",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Verbena",
+        "citrusy",
+        "jasmín"
+      ],
+      "screenshot": "durance-note-profile-2-1280.png"
+    },
+    {
+      "slug": "durance",
+      "id": "3",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Růže",
+        "rybíz",
+        "lotos"
+      ],
+      "screenshot": "durance-note-profile-3-1280.png"
+    },
+    {
+      "slug": "durance",
+      "id": "4",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Monoi",
+        "tiare",
+        "kokosové mléko"
+      ],
+      "screenshot": "durance-note-profile-4-1280.png"
+    },
+    {
+      "slug": "durance",
+      "id": "5",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Pačuli",
+        "vanilka",
+        "rum"
+      ],
+      "screenshot": "durance-note-profile-5-1280.png"
+    },
+    {
+      "slug": "durance",
+      "id": "6",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Pudrová bavlna",
+        "růže",
+        "pižmo"
+      ],
+      "screenshot": "durance-note-profile-6-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "durance",
+      "width": 320,
+      "id": "1",
+      "defaultScreenshot": "durance-result-1-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-1-320.png",
+      "comparisonIds": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "id": "2",
+      "defaultScreenshot": "durance-result-2-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-2-320.png",
+      "comparisonIds": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "id": "3",
+      "defaultScreenshot": "durance-result-3-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-3-320.png",
+      "comparisonIds": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "id": "4",
+      "defaultScreenshot": "durance-result-4-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-4-320.png",
+      "comparisonIds": [
+        "4",
+        "3"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "id": "5",
+      "defaultScreenshot": "durance-result-5-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-5-320.png",
+      "comparisonIds": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 320,
+      "id": "6",
+      "defaultScreenshot": "durance-result-6-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-6-320.png",
+      "comparisonIds": [
+        "6",
+        "5"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "id": "1",
+      "defaultScreenshot": "durance-result-1-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-1-390.png",
+      "comparisonIds": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "id": "2",
+      "defaultScreenshot": "durance-result-2-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-2-390.png",
+      "comparisonIds": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "id": "3",
+      "defaultScreenshot": "durance-result-3-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-3-390.png",
+      "comparisonIds": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "id": "4",
+      "defaultScreenshot": "durance-result-4-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-4-390.png",
+      "comparisonIds": [
+        "4",
+        "3"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "id": "5",
+      "defaultScreenshot": "durance-result-5-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-5-390.png",
+      "comparisonIds": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 390,
+      "id": "6",
+      "defaultScreenshot": "durance-result-6-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-6-390.png",
+      "comparisonIds": [
+        "6",
+        "5"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "id": "1",
+      "defaultScreenshot": "durance-result-1-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-1-1280.png",
+      "comparisonIds": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "id": "2",
+      "defaultScreenshot": "durance-result-2-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-2-1280.png",
+      "comparisonIds": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "id": "3",
+      "defaultScreenshot": "durance-result-3-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-3-1280.png",
+      "comparisonIds": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "id": "4",
+      "defaultScreenshot": "durance-result-4-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-4-1280.png",
+      "comparisonIds": [
+        "4",
+        "3"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "id": "5",
+      "defaultScreenshot": "durance-result-5-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-5-1280.png",
+      "comparisonIds": [
+        "5",
+        "6"
+      ]
+    },
+    {
+      "slug": "durance",
+      "width": 1280,
+      "id": "6",
+      "defaultScreenshot": "durance-result-6-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "durance-pair-6-1280.png",
+      "comparisonIds": [
+        "6",
+        "5"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

@@ -1,0 +1,968 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-15T15:31:49.091448+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "aromis",
+      "width": 320,
+      "id": "bella",
+      "pack": "cca 170 g · sklo 250 ml",
+      "price": "199 Kč",
+      "url": "https://www.aromis.eu/vonna-svicka-ve-skle-bella-vita/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-bella-320.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "id": "coffee",
+      "pack": "cca 170 g · sklo 250 ml",
+      "price": "199 Kč",
+      "url": "https://www.aromis.eu/vonna-svicka-ve-skle-kava/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-coffee-320.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "id": "desert",
+      "pack": "cca 170 g · sklo 250 ml",
+      "price": "199 Kč",
+      "url": "https://www.aromis.eu/vonna-svicka-ve-skle-desert-dust/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-desert-320.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "id": "winter",
+      "pack": "1 ks · 140 × Ø 55 mm",
+      "price": "64 Kč",
+      "url": "https://www.aromis.eu/svicka-s-vuni-vanocni-vune-valec-140/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-winter-320.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "id": "linen",
+      "pack": "cca 170 g · sklo 250 ml",
+      "price": "199 Kč",
+      "url": "https://www.aromis.eu/vonna-svicka-ve-skle-fresh-len/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-linen-320.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "id": "lavender",
+      "pack": "1 ks · 140 × Ø 55 mm",
+      "price": "64 Kč",
+      "url": "https://www.aromis.eu/svicka-s-vuni-levandule-valec-140/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-lavender-320.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "id": "bella",
+      "pack": "cca 170 g · sklo 250 ml",
+      "price": "199 Kč",
+      "url": "https://www.aromis.eu/vonna-svicka-ve-skle-bella-vita/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-bella-390.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "id": "coffee",
+      "pack": "cca 170 g · sklo 250 ml",
+      "price": "199 Kč",
+      "url": "https://www.aromis.eu/vonna-svicka-ve-skle-kava/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-coffee-390.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "id": "desert",
+      "pack": "cca 170 g · sklo 250 ml",
+      "price": "199 Kč",
+      "url": "https://www.aromis.eu/vonna-svicka-ve-skle-desert-dust/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-desert-390.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "id": "winter",
+      "pack": "1 ks · 140 × Ø 55 mm",
+      "price": "64 Kč",
+      "url": "https://www.aromis.eu/svicka-s-vuni-vanocni-vune-valec-140/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-winter-390.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "id": "linen",
+      "pack": "cca 170 g · sklo 250 ml",
+      "price": "199 Kč",
+      "url": "https://www.aromis.eu/vonna-svicka-ve-skle-fresh-len/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-linen-390.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "id": "lavender",
+      "pack": "1 ks · 140 × Ø 55 mm",
+      "price": "64 Kč",
+      "url": "https://www.aromis.eu/svicka-s-vuni-levandule-valec-140/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-lavender-390.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "id": "bella",
+      "pack": "cca 170 g · sklo 250 ml",
+      "price": "199 Kč",
+      "url": "https://www.aromis.eu/vonna-svicka-ve-skle-bella-vita/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-bella-1280.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "id": "coffee",
+      "pack": "cca 170 g · sklo 250 ml",
+      "price": "199 Kč",
+      "url": "https://www.aromis.eu/vonna-svicka-ve-skle-kava/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-coffee-1280.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "id": "desert",
+      "pack": "cca 170 g · sklo 250 ml",
+      "price": "199 Kč",
+      "url": "https://www.aromis.eu/vonna-svicka-ve-skle-desert-dust/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-desert-1280.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "id": "winter",
+      "pack": "1 ks · 140 × Ø 55 mm",
+      "price": "64 Kč",
+      "url": "https://www.aromis.eu/svicka-s-vuni-vanocni-vune-valec-140/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-winter-1280.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "id": "linen",
+      "pack": "cca 170 g · sklo 250 ml",
+      "price": "199 Kč",
+      "url": "https://www.aromis.eu/vonna-svicka-ve-skle-fresh-len/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-linen-1280.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "id": "lavender",
+      "pack": "1 ks · 140 × Ø 55 mm",
+      "price": "64 Kč",
+      "url": "https://www.aromis.eu/svicka-s-vuni-levandule-valec-140/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "aromis-result-lavender-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "aromis",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "sweet",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "warm",
+          "photo": "/assets/s3/scenes-k2/pine.jpg"
+        },
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "aromis-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "bella",
+          "photo": "/assets/s5/aromis/bella.jpg"
+        },
+        {
+          "id": "coffee",
+          "photo": "/assets/s5/aromis/coffee.jpg"
+        }
+      ],
+      "screenshot": "aromis-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "desert",
+          "photo": "/assets/s5/aromis/desert.jpg"
+        },
+        {
+          "id": "winter",
+          "photo": "/assets/s5/aromis/winter.jpg"
+        }
+      ],
+      "screenshot": "aromis-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "linen",
+          "photo": "/assets/s5/aromis/linen.jpg"
+        },
+        {
+          "id": "lavender",
+          "photo": "/assets/s5/aromis/lavender.jpg"
+        }
+      ],
+      "screenshot": "aromis-question-4-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "sweet",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "warm",
+          "photo": "/assets/s3/scenes-k2/pine.jpg"
+        },
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "aromis-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "bella",
+          "photo": "/assets/s5/aromis/bella.jpg"
+        },
+        {
+          "id": "coffee",
+          "photo": "/assets/s5/aromis/coffee.jpg"
+        }
+      ],
+      "screenshot": "aromis-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "desert",
+          "photo": "/assets/s5/aromis/desert.jpg"
+        },
+        {
+          "id": "winter",
+          "photo": "/assets/s5/aromis/winter.jpg"
+        }
+      ],
+      "screenshot": "aromis-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "linen",
+          "photo": "/assets/s5/aromis/linen.jpg"
+        },
+        {
+          "id": "lavender",
+          "photo": "/assets/s5/aromis/lavender.jpg"
+        }
+      ],
+      "screenshot": "aromis-question-4-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "sweet",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        },
+        {
+          "id": "warm",
+          "photo": "/assets/s3/scenes-k2/pine.jpg"
+        },
+        {
+          "id": "fresh",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        }
+      ],
+      "screenshot": "aromis-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "bella",
+          "photo": "/assets/s5/aromis/bella.jpg"
+        },
+        {
+          "id": "coffee",
+          "photo": "/assets/s5/aromis/coffee.jpg"
+        }
+      ],
+      "screenshot": "aromis-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "desert",
+          "photo": "/assets/s5/aromis/desert.jpg"
+        },
+        {
+          "id": "winter",
+          "photo": "/assets/s5/aromis/winter.jpg"
+        }
+      ],
+      "screenshot": "aromis-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "linen",
+          "photo": "/assets/s5/aromis/linen.jpg"
+        },
+        {
+          "id": "lavender",
+          "photo": "/assets/s5/aromis/lavender.jpg"
+        }
+      ],
+      "screenshot": "aromis-question-4-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "aromis",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "coffee",
+        "lavender"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "aromis-compare-320.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "coffee",
+        "lavender"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "aromis-compare-390.png"
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "coffee",
+        "lavender"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "aromis-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "noteProfiles": [
+    {
+      "slug": "aromis",
+      "id": "bella",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Květiny",
+        "vanilka",
+        "dřevitý nádech"
+      ],
+      "screenshot": "aromis-note-profile-bella-320.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "coffee",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Pražená káva",
+        "karamel",
+        "vanilka"
+      ],
+      "screenshot": "aromis-note-profile-coffee-320.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "desert",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Kořenité tóny",
+        "ambra",
+        "dřevo"
+      ],
+      "screenshot": "aromis-note-profile-desert-320.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "winter",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Pomerančová kůra",
+        "vánoční koření"
+      ],
+      "screenshot": "aromis-note-profile-winter-320.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "linen",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Čisté prádlo",
+        "květiny",
+        "pižmo"
+      ],
+      "screenshot": "aromis-note-profile-linen-320.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "lavender",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Levandule se zelenými podtóny"
+      ],
+      "screenshot": "aromis-note-profile-lavender-320.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "bella",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Květiny",
+        "vanilka",
+        "dřevitý nádech"
+      ],
+      "screenshot": "aromis-note-profile-bella-390.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "coffee",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Pražená káva",
+        "karamel",
+        "vanilka"
+      ],
+      "screenshot": "aromis-note-profile-coffee-390.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "desert",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Kořenité tóny",
+        "ambra",
+        "dřevo"
+      ],
+      "screenshot": "aromis-note-profile-desert-390.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "winter",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Pomerančová kůra",
+        "vánoční koření"
+      ],
+      "screenshot": "aromis-note-profile-winter-390.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "linen",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Čisté prádlo",
+        "květiny",
+        "pižmo"
+      ],
+      "screenshot": "aromis-note-profile-linen-390.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "lavender",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Levandule se zelenými podtóny"
+      ],
+      "screenshot": "aromis-note-profile-lavender-390.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "bella",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Květiny",
+        "vanilka",
+        "dřevitý nádech"
+      ],
+      "screenshot": "aromis-note-profile-bella-1280.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "coffee",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Pražená káva",
+        "karamel",
+        "vanilka"
+      ],
+      "screenshot": "aromis-note-profile-coffee-1280.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "desert",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Kořenité tóny",
+        "ambra",
+        "dřevo"
+      ],
+      "screenshot": "aromis-note-profile-desert-1280.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "winter",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Pomerančová kůra",
+        "vánoční koření"
+      ],
+      "screenshot": "aromis-note-profile-winter-1280.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "linen",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Čisté prádlo",
+        "květiny",
+        "pižmo"
+      ],
+      "screenshot": "aromis-note-profile-linen-1280.png"
+    },
+    {
+      "slug": "aromis",
+      "id": "lavender",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Levandule se zelenými podtóny"
+      ],
+      "screenshot": "aromis-note-profile-lavender-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "aromis",
+      "width": 320,
+      "id": "bella",
+      "defaultScreenshot": "aromis-result-bella-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-bella-320.png",
+      "comparisonIds": [
+        "bella",
+        "coffee"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "id": "coffee",
+      "defaultScreenshot": "aromis-result-coffee-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-coffee-320.png",
+      "comparisonIds": [
+        "coffee",
+        "bella"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "id": "desert",
+      "defaultScreenshot": "aromis-result-desert-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-desert-320.png",
+      "comparisonIds": [
+        "desert",
+        "winter"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "id": "winter",
+      "defaultScreenshot": "aromis-result-winter-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-winter-320.png",
+      "comparisonIds": [
+        "winter",
+        "desert"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "id": "linen",
+      "defaultScreenshot": "aromis-result-linen-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-linen-320.png",
+      "comparisonIds": [
+        "linen",
+        "lavender"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 320,
+      "id": "lavender",
+      "defaultScreenshot": "aromis-result-lavender-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-lavender-320.png",
+      "comparisonIds": [
+        "lavender",
+        "linen"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "id": "bella",
+      "defaultScreenshot": "aromis-result-bella-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-bella-390.png",
+      "comparisonIds": [
+        "bella",
+        "coffee"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "id": "coffee",
+      "defaultScreenshot": "aromis-result-coffee-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-coffee-390.png",
+      "comparisonIds": [
+        "coffee",
+        "bella"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "id": "desert",
+      "defaultScreenshot": "aromis-result-desert-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-desert-390.png",
+      "comparisonIds": [
+        "desert",
+        "winter"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "id": "winter",
+      "defaultScreenshot": "aromis-result-winter-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-winter-390.png",
+      "comparisonIds": [
+        "winter",
+        "desert"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "id": "linen",
+      "defaultScreenshot": "aromis-result-linen-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-linen-390.png",
+      "comparisonIds": [
+        "linen",
+        "lavender"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 390,
+      "id": "lavender",
+      "defaultScreenshot": "aromis-result-lavender-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-lavender-390.png",
+      "comparisonIds": [
+        "lavender",
+        "linen"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "id": "bella",
+      "defaultScreenshot": "aromis-result-bella-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-bella-1280.png",
+      "comparisonIds": [
+        "bella",
+        "coffee"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "id": "coffee",
+      "defaultScreenshot": "aromis-result-coffee-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-coffee-1280.png",
+      "comparisonIds": [
+        "coffee",
+        "bella"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "id": "desert",
+      "defaultScreenshot": "aromis-result-desert-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-desert-1280.png",
+      "comparisonIds": [
+        "desert",
+        "winter"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "id": "winter",
+      "defaultScreenshot": "aromis-result-winter-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-winter-1280.png",
+      "comparisonIds": [
+        "winter",
+        "desert"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "id": "linen",
+      "defaultScreenshot": "aromis-result-linen-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-linen-1280.png",
+      "comparisonIds": [
+        "linen",
+        "lavender"
+      ]
+    },
+    {
+      "slug": "aromis",
+      "width": 1280,
+      "id": "lavender",
+      "defaultScreenshot": "aromis-result-lavender-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "aromis-pair-lavender-1280.png",
+      "comparisonIds": [
+        "lavender",
+        "linen"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}

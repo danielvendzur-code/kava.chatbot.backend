@@ -1,0 +1,223 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Durance",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/durance/logo.png",
+      "header": "/assets/s5/durance/logo.png",
+      "avatar": "/assets/s5/durance/avatar.svg"
+    },
+    "brand": {
+      "name": "Durance",
+      "domain": "durance.cz",
+      "website": "https://durance.cz/",
+      "lang": "cs",
+      "fullName": "Durance",
+      "url": "https://durance.cz/",
+      "logo": "/assets/s5/durance/logo.png",
+      "mark": "/assets/s5/durance/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Bergamot a neroli",
+        "Růže a rybíz",
+        "Pačuli a vanilka",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#62425a",
+        "accent": "#d9ba77",
+        "soft": "#f7f2f5",
+        "paper": "#fff",
+        "ink": "#332a30",
+        "line": "#e4d9e0"
+      }
+    },
+    "traitCopy": {
+      "fresh": [
+        "Citrusy a zelené tóny",
+        "",
+        "Citrusy a zelené tóny",
+        ""
+      ],
+      "1": [
+        "Bergamot, neroli a vetiver",
+        "",
+        "Bergamot, neroli a vetiver",
+        ""
+      ],
+      "2": [
+        "Verbena, citrusy a jasmín",
+        "",
+        "Verbena, citrusy a jasmín",
+        ""
+      ],
+      "floral": [
+        "Růže nebo exotické květiny",
+        "",
+        "Růže nebo exotické květiny",
+        ""
+      ],
+      "3": [
+        "Růže, rybíz a lotos",
+        "",
+        "Růže, rybíz a lotos",
+        ""
+      ],
+      "4": [
+        "Monoi, tiare a kokosové mléko",
+        "",
+        "Monoi, tiare a kokosové mléko",
+        ""
+      ],
+      "soft": [
+        "Hřejivý nebo pudrový charakter",
+        "",
+        "Hřejivý nebo pudrový charakter",
+        ""
+      ],
+      "5": [
+        "Pačuli, vanilka a rum",
+        "",
+        "Pačuli, vanilka a rum",
+        ""
+      ],
+      "6": [
+        "Pudrová bavlna, růže a pižmo",
+        "",
+        "Pudrová bavlna, růže a pižmo",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "fresh": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "1": [
+        "/assets/s5/durance/1.jpg"
+      ],
+      "2": [
+        "/assets/s5/durance/2.jpg"
+      ],
+      "floral": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "3": [
+        "/assets/s5/durance/3.jpg"
+      ],
+      "4": [
+        "/assets/s5/durance/4.jpg"
+      ],
+      "soft": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "5": [
+        "/assets/s5/durance/5.jpg"
+      ],
+      "6": [
+        "/assets/s5/durance/6.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "1",
+      "5"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "durance-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "1": "2",
+        "2": "1",
+        "3": "4",
+        "4": "3",
+        "5": "6",
+        "6": "5"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/durance.js",
+  "backendBrand": "durance",
+  "offlineRules": [
+    {
+      "chip": "Bergamot a neroli",
+      "match": "bergamot|neroli",
+      "productIds": [
+        "1"
+      ]
+    },
+    {
+      "chip": "Růže a rybíz",
+      "match": "ruze|rybiz",
+      "productIds": [
+        "3"
+      ]
+    },
+    {
+      "chip": "Pačuli a vanilka",
+      "match": "pacul|vanilk",
+      "productIds": [
+        "5"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch2-20261115/candidate-packages/durance/ui-review.css",
+    "destination": "n447/s5/brands/durance.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/durance.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_HISTORICAL_BAND_UNDER_12M_CZK_LATEST_EXACT_UNKNOWN",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0
+}

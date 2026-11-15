@@ -1,0 +1,81 @@
+[
+  {
+    "slug": "alma",
+    "url": "https://www.alma.cz/",
+    "at": "2026-11-15T15:26:41.935954+00:00",
+    "status": 200,
+    "finalUrl": "https://www.alma.cz/",
+    "title": "Přírodní kosmetika s duší - Tvoje milovaná Alma",
+    "sha256": "a5360d165215fbf20ea8ffb82759b5bc9cba9d26d2a0f6d86028b968b43c1a40",
+    "legalLinks": [
+      "https://739922.myshoptet.com/o-alme/#kontakt",
+      "/podminky-ochrany-osobnich-udaju/",
+      "https://739922.myshoptet.com/obchodni-podminky/",
+      "https://739922.myshoptet.com/podminky-ochrany-osobnich-udaju/"
+    ],
+    "emailLinks": [],
+    "legalHints": [
+      "IČ: 08881871 "
+    ]
+  },
+  {
+    "slug": "naturinka",
+    "url": "https://www.naturinka.cz/",
+    "at": "2026-11-15T15:26:41.937232+00:00",
+    "status": 200,
+    "finalUrl": "https://naturinka.cz/",
+    "title": "NATURINKA - TRADIČNÍ MÝDLÁRNA",
+    "sha256": "c50c5085fb2381f5af3535a884ef245b76c3f9a36024280d124e5eb52abd91ad",
+    "legalLinks": [
+      "https://naturinka.cz/obchodni-podminky",
+      "https://naturinka.cz/kontakt"
+    ],
+    "emailLinks": [
+      "mailto:info@naturinka.cz"
+    ],
+    "legalHints": [
+      "IČ: 01646109 "
+    ]
+  },
+  {
+    "slug": "parfumylacno",
+    "url": "https://www.parfumylacno.sk/",
+    "at": "2026-11-15T15:26:41.938857+00:00",
+    "status": 200,
+    "finalUrl": "https://www.parfumylacno.sk/",
+    "title": "Lacné parfémy FM online - Parfumylacno.sk",
+    "sha256": "ee0325704d61127d52ec6d2eb69f774399b2d8f40625b0a28207d83483ca2289",
+    "legalLinks": [
+      "/kontakt",
+      "/obchodne-podmienky"
+    ],
+    "emailLinks": [],
+    "legalHints": []
+  },
+  {
+    "slug": "refanparfum",
+    "url": "https://www.refanparfum.com/",
+    "at": "2026-11-15T15:26:41.942513+00:00",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "slug": "lambre",
+    "url": "https://www.lambre.sk/",
+    "at": "2026-11-15T15:26:41.961047+00:00",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "slug": "vuni",
+    "url": "https://www.vuni.cz/",
+    "at": "2026-11-15T15:26:42.034055+00:00",
+    "status": 200,
+    "finalUrl": "https://www.fatym.com/taf/",
+    "title": "A.M.I.M.S. (dříve Tiskový apoštolát FATYMu)",
+    "sha256": "f1456f2731fab2ae95c5a5aaa940c99f47c1945fcb64aa78e6967530dd028495",
+    "legalLinks": [],
+    "emailLinks": [
+      "mailto:ostatni_materialy_k_dispozici@fatym.com"
+    ],
+    "legalHints": []
+  }
+]

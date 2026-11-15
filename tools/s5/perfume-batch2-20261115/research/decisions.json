@@ -1,0 +1,63 @@
+{
+  "at": "2026-11-15T15:15:00Z",
+  "target": 15,
+  "completedSourceLocal": [
+    "dews",
+    "siluvone"
+  ],
+  "sourcePackageBuiltQaRunning": [
+    "durance"
+  ],
+  "reservedSourceWork": [
+    "totap",
+    "kvapkavoni"
+  ],
+  "holds": {
+    "svitsol": {
+      "status": "HOLD_EXISTING_PRODUCT_AI",
+      "evidence": "Actual opened launcher says SVITSOL Asistent / Asistent s umělou inteligencí / Jak vám mohu pomoci s výběrem svíček?",
+      "url": "https://svitsol.cz/cs/",
+      "proof": "widget-followup/svitsol.png",
+      "messageSent": false
+    },
+    "vilahermanos": {
+      "status": "HOLD_ABOVE_BUDGET",
+      "reason": "DH Unit04378504 published2024 band100–200mCZK"
+    },
+    "drogeriadomov": {
+      "status": "HOLD_ABOVE_BUDGET",
+      "reason": "IMD BRAND51468221 official2025 declarednetturnover11440144EUR, needsfullPDFverificationbeforequote; clearly above2m basedreport699"
+    },
+    "aromka": {
+      "status": "HOLD_WRONG_ASSORTMENT",
+      "reason": "Food aromas, not fragrance shop"
+    },
+    "luxoa": {
+      "status": "REVIEW_SOURCE_INCOMPLETE_NOT_RESERVED",
+      "reason": "Opened ordinary prechat requiring email; no AI claimed. Product pages lack verified concrete price/pack/stock. InitialwidgetTypeError underguard not whole-site-outage."
+    },
+    "kettscandles.cz": {
+      "status": "ALIAS_LEAD_CORRECTED",
+      "reason": "CZ lead redirectsShoptet; actual official active shop kettscandles.com/05124174 confirmed, reviewcontinues"
+    },
+    "mals": {
+      "status": "SAME_OPERATOR_RAVINA",
+      "ico": "09331221",
+      "reason": "Cannot count as second company"
+    },
+    "naturinka": {
+      "status": "HOLD_EXISTING_PRODUCT_ADVISOR",
+      "url": "https://naturinka.cz/poradce",
+      "observed": "Actual rendered Naturinka rádce/Spo lečně vybereme to pravé, needs chips and product result area. No message typed/sent.",
+      "proof": "merchants-replacements/naturinka-advisor.png"
+    },
+    "parfumylacno": {
+      "status": "HOLD_OFFICIAL_SHOP_TEMPORARILY_PAUSED",
+      "url": "https://www.parfumylacno.sk/parfumy-eshop/parfumy-fm-pre-zeny/parfum-fm-intense-81-donna-karan-dkny-be-delicious-detail",
+      "observed": "Actual official banner E-shop je momentálne mimo prevádzky Ďakujeme za pochopenie / Objednajte aj telefonicky. HTTP200 alone not active e-shop proof.",
+      "proof": "merchants-replacements/parfumylacno-product.png"
+    }
+  },
+  "notLivePreviewReady": true,
+  "paidCalls": 0
+}

@@ -1,0 +1,34 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "forest",
+      "label": "Dřevitá vůně s fialkou",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "forest",
+          "label": "Cedr, santal a lístky fialky",
+          "productId": "forest",
+          "sourceUrl": "https://mmntshop.cz/produkt/svicka-sklo-les-is-more-220-ml/"
+        }
+      ]
+    },
+    {
+      "value": "spice",
+      "label": "Citrusy a hřejivé koření",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "spice",
+          "label": "Pomeranč, skořice a hřebíček",
+          "productId": "spice",
+          "sourceUrl": "https://mmntshop.cz/produkt/svicka-vanoce-na-miru-180-ml/"
+        }
+      ]
+    }
+  ]
+}

@@ -209,6 +209,347 @@
       ],
       "formulaCount": 6,
       "status": "PASS"
+    },
+    "durance": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "1"
+          },
+          "id": "1",
+          "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bergamotu-50ml"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "2"
+          },
+          "id": "2",
+          "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-verbeny-50ml"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "3"
+          },
+          "id": "3",
+          "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-ruze-50ml"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral",
+            "fragranceProfile": "4"
+          },
+          "id": "4",
+          "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-monoi-50ml"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "soft",
+            "fragranceProfile": "5"
+          },
+          "id": "5",
+          "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-pacule-50ml"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "soft",
+            "fragranceProfile": "6"
+          },
+          "id": "6",
+          "url": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bavlny-50ml"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "fresh",
+              "floral",
+              "soft"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "1",
+              "2"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "floral"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "3",
+              "4"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "soft"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "5",
+              "6"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    },
+    "vonavepranie": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "clean",
+            "fragranceProfile": "1"
+          },
+          "id": "1",
+          "url": "https://www.vonavepranie.sk/parfem-na-pranie-white-musk/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "clean",
+            "fragranceProfile": "2"
+          },
+          "id": "2",
+          "url": "https://www.vonavepranie.sk/parfem-na-pranie-cotton-flower/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "3"
+          },
+          "id": "3",
+          "url": "https://www.vonavepranie.sk/parfem-na-pranie-elisir-di-ylang/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers",
+            "fragranceProfile": "4"
+          },
+          "id": "4",
+          "url": "https://www.vonavepranie.sk/parfem-na-pranie-fiori-bianchi/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "5"
+          },
+          "id": "5",
+          "url": "https://www.vonavepranie.sk/parfem-na-pranie-petali-blu/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "6"
+          },
+          "id": "6",
+          "url": "https://www.vonavepranie.sk/parfem-na-pranie-marseille/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "clean",
+              "flowers",
+              "warm"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "clean"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "1",
+              "2"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "flowers"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "3",
+              "4"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "5",
+              "6"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
+    },
+    "mmnt": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "forest"
+          },
+          "id": "forest",
+          "url": "https://mmntshop.cz/produkt/svicka-sklo-les-is-more-220-ml/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "spice"
+          },
+          "id": "spice",
+          "url": "https://mmntshop.cz/produkt/svicka-vanoce-na-miru-180-ml/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "forest",
+              "spice"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 2,
+      "status": "PASS"
+    },
+    "aromis": {
+      "leaves": [
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "bella"
+          },
+          "id": "bella",
+          "url": "https://www.aromis.eu/vonna-svicka-ve-skle-bella-vita/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet",
+            "fragranceProfile": "coffee"
+          },
+          "id": "coffee",
+          "url": "https://www.aromis.eu/vonna-svicka-ve-skle-kava/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "desert"
+          },
+          "id": "desert",
+          "url": "https://www.aromis.eu/vonna-svicka-ve-skle-desert-dust/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm",
+            "fragranceProfile": "winter"
+          },
+          "id": "winter",
+          "url": "https://www.aromis.eu/svicka-s-vuni-vanocni-vune-valec-140/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "linen"
+          },
+          "id": "linen",
+          "url": "https://www.aromis.eu/vonna-svicka-ve-skle-fresh-len/"
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh",
+            "fragranceProfile": "lavender"
+          },
+          "id": "lavender",
+          "url": "https://www.aromis.eu/svicka-s-vuni-levandule-valec-140/"
+        }
+      ],
+      "questions": [
+        {
+          "answers": {},
+          "step": {
+            "key": "fragranceDirection",
+            "options": [
+              "sweet",
+              "warm",
+              "fresh"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "sweet"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "bella",
+              "coffee"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "warm"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "desert",
+              "winter"
+            ]
+          }
+        },
+        {
+          "answers": {
+            "fragranceDirection": "fresh"
+          },
+          "step": {
+            "key": "fragranceProfile",
+            "options": [
+              "linen",
+              "lavender"
+            ]
+          }
+        }
+      ],
+      "formulaCount": 6,
+      "status": "PASS"
     }
   }
 }

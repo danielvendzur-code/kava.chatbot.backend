@@ -1,0 +1,115 @@
+{
+  "slug": "parfumylacno",
+  "ico": "54401194",
+  "at": "2026-11-15T15:29:29.189198+00:00",
+  "operator": [
+    [
+      [
+        {
+          "value": "parfumylacno s.r.o.",
+          "validFrom": "2022-03-31"
+        }
+      ],
+      null
+    ]
+  ],
+  "unit": 2060653,
+  "statement": 6709369,
+  "reports": [
+    {
+      "id": 9970363,
+      "template": 687,
+      "tables": [
+        [
+          {
+            "sk": "Strana aktív"
+          },
+          [
+            "11996",
+            "13886",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Strana pasív"
+          },
+          [
+            "11996",
+            "13886",
+            "10454",
+            "12121",
+            "5000",
+            "5000",
+            "5000",
+            "5000",
+            "",
+            "",
+            "",
+            "",
+            "170",
+            "170",
+            "",
+            ""
+          ]
+        ],
+        [
+          {
+            "sk": "Výkaz ziskov a strát"
+          },
+          [
+            "26115",
+            "27438",
+            "24397",
+            "27438",
+            "1718",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "27133",
+            "22290"
+          ]
+        ]
+      ],
+      "attachments": [
+        {
+          "id": 12245724,
+          "meno": "Účtovná závierka MÚJ.XLS",
+          "velkostPrilohy": 99840,
+          "pocetStran": 0,
+          "jazyk": "SK",
+          "digest": "0ea1d68c7ddcc347c2b4458bf2e4c8b553f7dc8938b52a801dd7da33e167c4d7",
+          "mimeType": "application/vnd.ms-excel"
+        },
+        {
+          "id": 12245725,
+          "meno": "MUJ_2121706785_IR_2025_4583377_5992533.pdf",
+          "velkostPrilohy": 178608,
+          "pocetStran": 5,
+          "jazyk": "SLK",
+          "digest": "98e080f7fd32b1eceb21c8f7c7595ba51d45f090f5ebe4fcd2cc215fa6143e6f",
+          "mimeType": "application/pdf"
+        }
+      ]
+    }
+  ]
+}

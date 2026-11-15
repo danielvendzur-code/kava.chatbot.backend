@@ -1,0 +1,164 @@
+{
+  "runtimeEnabled": false,
+  "owner": "PERFUME_WORKER",
+  "integrationOwner": "MAIN",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "MMNT",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/mmnt/logo.svg",
+      "header": "/assets/s5/mmnt/logo.svg",
+      "avatar": "/assets/s5/mmnt/avatar.svg"
+    },
+    "brand": {
+      "name": "MMNT",
+      "domain": "mmntshop.cz",
+      "website": "https://mmntshop.cz/",
+      "lang": "cs",
+      "fullName": "MMNT",
+      "url": "https://mmntshop.cz/",
+      "logo": "/assets/s5/mmnt/logo.svg",
+      "mark": "/assets/s5/mmnt/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat dvě vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Dřevitá vůně s fialkou",
+        "Pomeranč a skořice",
+        "Ceny a balení svíček",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#87573f",
+        "accent": "#c9a46a",
+        "soft": "#f7f1ea",
+        "paper": "#fff",
+        "ink": "#34251e",
+        "line": "#e6d9cb"
+      }
+    },
+    "traitCopy": {
+      "forest": [
+        "Cedr, santal a lístky fialky",
+        "",
+        "Cedr, santal a lístky fialky",
+        ""
+      ],
+      "spice": [
+        "Pomeranč, skořice a hřebíček",
+        "",
+        "Pomeranč, skořice a hřebíček",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "forest": [
+        "/assets/s5/mmnt/forest.jpg"
+      ],
+      "spice": [
+        "/assets/s5/mmnt/spice.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "forest",
+      "spice"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · konkrétní balení · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Výběr porovná dvě dostupné vůně svíček. Ukáže konkrétní fotografii, charakter vůně, přesné balení, cenu a odkaz.",
+      "includedChat": "Vůně svíček, jejich balení a ceny.",
+      "includedAdvisor": "Výběr mezi dvěma odlišnými vůněmi svíček.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "mmnt-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "forest": "spice",
+        "spice": "forest"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  },
+  "catalogueImport": "/catalogues/mmnt.js",
+  "backendBrand": "mmnt",
+  "offlineRules": [
+    {
+      "chip": "Dřevitá vůně s fialkou",
+      "match": "drevit|fialk",
+      "productIds": [
+        "forest"
+      ]
+    },
+    {
+      "chip": "Pomeranč a skořice",
+      "match": "pomeranc|skoric",
+      "productIds": [
+        "spice"
+      ]
+    },
+    {
+      "chip": "Ceny a balení svíček",
+      "match": "cen|balen",
+      "productIds": [
+        "forest"
+      ]
+    }
+  ],
+  "noCoreLogicChangeRequired": true,
+  "commonFilesModified": [],
+  "companyCss": {
+    "source": "tools/s5/perfume-batch2-20261115/candidate-packages/mmnt/ui-review.css",
+    "destination": "n447/s5/brands/mmnt.css",
+    "registryField": {
+      "companyCss": "/n447/s5/brands/mmnt.css"
+    }
+  },
+  "presentationRequirement": "Existinga918profile+preset and explicit newslug body.dataset.fragranceProfile=visual-v1. Owner standalonepolish separate includes.",
+  "price": "447 EUR +10 EUR/month",
+  "commercialReview": "PREFERRED_HISTORICAL_BAND_SMALL_ASSORTMENT_REVIEW_LATEST_EXACT_UNKNOWN",
+  "emailStatus": "NOT_READY",
+  "production": "NOT_DEPLOYED",
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "scented-candle",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "smallAssortmentReviewRequired": true,
+    "requiredBackendInstruction": "Two in-stock candle formulas only. Umami220/280ml out of stock excluded. Not personal perfume/laundry. No medical, toxin-free or fire-safety/burn duration guarantees.",
+    "workerTouchedSharedBackend": false
+  }
+}

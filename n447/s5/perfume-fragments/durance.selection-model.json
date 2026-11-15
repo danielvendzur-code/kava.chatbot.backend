@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "fresh",
+      "label": "Citrusy a zelené tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "1",
+          "label": "Bergamot, neroli a vetiver",
+          "productId": "1",
+          "sourceUrl": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bergamotu-50ml"
+        },
+        {
+          "value": "2",
+          "label": "Verbena, citrusy a jasmín",
+          "productId": "2",
+          "sourceUrl": "https://durance.cz/produkt/parfemovana-voda-s-vuni-verbeny-50ml"
+        }
+      ]
+    },
+    {
+      "value": "floral",
+      "label": "Růže nebo exotické květiny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "3",
+          "label": "Růže, rybíz a lotos",
+          "productId": "3",
+          "sourceUrl": "https://durance.cz/produkt/parfemovana-voda-s-vuni-ruze-50ml"
+        },
+        {
+          "value": "4",
+          "label": "Monoi, tiare a kokosové mléko",
+          "productId": "4",
+          "sourceUrl": "https://durance.cz/produkt/parfemovana-voda-s-vuni-monoi-50ml"
+        }
+      ]
+    },
+    {
+      "value": "soft",
+      "label": "Hřejivý nebo pudrový charakter",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "5",
+          "label": "Pačuli, vanilka a rum",
+          "productId": "5",
+          "sourceUrl": "https://durance.cz/produkt/parfemovana-voda-s-vuni-pacule-50ml"
+        },
+        {
+          "value": "6",
+          "label": "Pudrová bavlna, růže a pižmo",
+          "productId": "6",
+          "sourceUrl": "https://durance.cz/produkt/parfemovana-voda-s-vuni-bavlny-50ml"
+        }
+      ]
+    }
+  ]
+}

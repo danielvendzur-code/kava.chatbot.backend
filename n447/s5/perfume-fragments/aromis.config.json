@@ -1,0 +1,229 @@
+{
+  "slug": "aromis",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "0c7c3fb366ba4c176225668c94fc1e34d43a41b1",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/aromis.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Káva a karamel",
+    "Čisté prádlo a pižmo",
+    "Levandulová vůně",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Káva a karamel",
+      "match": "kav|karamel",
+      "productIds": [
+        "coffee"
+      ]
+    },
+    {
+      "chip": "Čisté prádlo a pižmo",
+      "match": "pradl|pizmo",
+      "productIds": [
+        "linen"
+      ]
+    },
+    {
+      "chip": "Levandulová vůně",
+      "match": "levand",
+      "productIds": [
+        "lavender"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "coffee",
+    "lavender"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "No verified sold compatible accessory implemented; distinct scent alternative+comparison only."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "AROMIS",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/aromis/logo.jpg",
+      "header": "/assets/s5/aromis/logo.jpg",
+      "avatar": "/assets/s5/aromis/avatar.svg"
+    },
+    "brand": {
+      "name": "AROMIS",
+      "domain": "aromis.eu",
+      "website": "https://www.aromis.eu/",
+      "lang": "cs",
+      "fullName": "AROMIS",
+      "url": "https://www.aromis.eu/",
+      "logo": "/assets/s5/aromis/logo.jpg",
+      "mark": "/assets/s5/aromis/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně svíček, jejich balení a ceny.",
+      "quickChips": [
+        "Káva a karamel",
+        "Čisté prádlo a pižmo",
+        "Levandulová vůně",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#3c4b3d",
+        "accent": "#ceb076",
+        "soft": "#f0f3ec",
+        "paper": "#fff",
+        "ink": "#29332a",
+        "line": "#dce3d6"
+      }
+    },
+    "traitCopy": {
+      "sweet": [
+        "Vanilka nebo pražená káva",
+        "",
+        "Vanilka nebo pražená káva",
+        ""
+      ],
+      "bella": [
+        "Květiny, vanilka a dřevitý nádech",
+        "",
+        "Květiny, vanilka a dřevitý nádech",
+        ""
+      ],
+      "coffee": [
+        "Pražená káva, karamel a vanilka",
+        "",
+        "Pražená káva, karamel a vanilka",
+        ""
+      ],
+      "fresh": [
+        "Čisté prádlo nebo levandule",
+        "",
+        "Čisté prádlo nebo levandule",
+        ""
+      ],
+      "linen": [
+        "Čisté prádlo, květiny a pižmo",
+        "",
+        "Čisté prádlo, květiny a pižmo",
+        ""
+      ],
+      "lavender": [
+        "Levandule se zelenými podtóny",
+        "",
+        "Levandule se zelenými podtóny",
+        ""
+      ],
+      "warm": [
+        "Kořenité a hřejivé vůně",
+        "",
+        "Kořenité a hřejivé vůně",
+        ""
+      ],
+      "desert": [
+        "Kořenité tóny, ambra a dřevo",
+        "",
+        "Kořenité tóny, ambra a dřevo",
+        ""
+      ],
+      "winter": [
+        "Pomerančová kůra a vánoční koření",
+        "",
+        "Pomerančová kůra a vánoční koření",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "sweet": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "bella": [
+        "/assets/s5/aromis/bella.jpg"
+      ],
+      "coffee": [
+        "/assets/s5/aromis/coffee.jpg"
+      ],
+      "fresh": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "linen": [
+        "/assets/s5/aromis/linen.jpg"
+      ],
+      "lavender": [
+        "/assets/s5/aromis/lavender.jpg"
+      ],
+      "warm": [
+        "/assets/s3/scenes-k2/pine.jpg"
+      ],
+      "desert": [
+        "/assets/s5/aromis/desert.jpg"
+      ],
+      "winter": [
+        "/assets/s5/aromis/winter.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "coffee",
+      "lavender"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné svíčky · konkrétní balení · porovnání",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomozte zákazníkovi vybrat vůni svíčky podle jeho vkusu.",
+      "lead": "Výběr ukáže konkrétní svíčku s fotografií, charakterem vůně, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "includedChat": "Charakter vůní svíček, konkrétní balení a ceny.",
+      "includedAdvisor": "Výběr vůně svíčky a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "aromis-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "bella": "coffee",
+        "coffee": "bella",
+        "linen": "lavender",
+        "lavender": "linen",
+        "desert": "winter",
+        "winter": "desert"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

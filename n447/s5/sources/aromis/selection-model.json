@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "sweet",
+      "label": "Vanilka nebo pražená káva",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "bella",
+          "label": "Květiny, vanilka a dřevitý nádech",
+          "productId": "bella",
+          "sourceUrl": "https://www.aromis.eu/vonna-svicka-ve-skle-bella-vita/"
+        },
+        {
+          "value": "coffee",
+          "label": "Pražená káva, karamel a vanilka",
+          "productId": "coffee",
+          "sourceUrl": "https://www.aromis.eu/vonna-svicka-ve-skle-kava/"
+        }
+      ]
+    },
+    {
+      "value": "fresh",
+      "label": "Čisté prádlo nebo levandule",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "linen",
+          "label": "Čisté prádlo, květiny a pižmo",
+          "productId": "linen",
+          "sourceUrl": "https://www.aromis.eu/vonna-svicka-ve-skle-fresh-len/"
+        },
+        {
+          "value": "lavender",
+          "label": "Levandule se zelenými podtóny",
+          "productId": "lavender",
+          "sourceUrl": "https://www.aromis.eu/svicka-s-vuni-levandule-valec-140/"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Kořenité a hřejivé vůně",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "desert",
+          "label": "Kořenité tóny, ambra a dřevo",
+          "productId": "desert",
+          "sourceUrl": "https://www.aromis.eu/vonna-svicka-ve-skle-desert-dust/"
+        },
+        {
+          "value": "winter",
+          "label": "Pomerančová kůra a vánoční koření",
+          "productId": "winter",
+          "sourceUrl": "https://www.aromis.eu/svicka-s-vuni-vanocni-vune-valec-140/"
+        }
+      ]
+    }
+  ]
+}

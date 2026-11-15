@@ -1,0 +1,229 @@
+{
+  "slug": "vonavepranie",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "0c7c3fb366ba4c176225668c94fc1e34d43a41b1",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/vonavepranie.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Pižmo a jazmín",
+    "Lotos a ylang ylang",
+    "Ruža a kosatec",
+    "Porovnať dve vône"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Pižmo a jazmín",
+      "match": "pizmo|jazmin",
+      "productIds": [
+        "1"
+      ]
+    },
+    {
+      "chip": "Lotos a ylang ylang",
+      "match": "lotos|ylang",
+      "productIds": [
+        "3"
+      ]
+    },
+    {
+      "chip": "Ruža a kosatec",
+      "match": "ruza|kosatec",
+      "productIds": [
+        "5"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "1",
+    "6"
+  ],
+  "addon": {
+    "enabled": true,
+    "reason": "Optional unchecked exact20ml same-formula variant; source SKU/photo/price/InStock verified; totals include selection; merchant variant selection required."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "Voňavé pranie",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/vonavepranie/logo.svg",
+      "header": "/assets/s5/vonavepranie/logo.svg",
+      "avatar": "/assets/s5/vonavepranie/avatar.svg"
+    },
+    "brand": {
+      "name": "Voňavé pranie",
+      "domain": "vonavepranie.sk",
+      "website": "https://www.vonavepranie.sk/",
+      "lang": "sk",
+      "fullName": "Voňavé pranie",
+      "url": "https://www.vonavepranie.sk/",
+      "logo": "/assets/s5/vonavepranie/logo.svg",
+      "mark": "/assets/s5/vonavepranie/avatar.svg",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône na pranie, ich balenia a ceny.",
+      "quickChips": [
+        "Pižmo a jazmín",
+        "Lotos a ylang ylang",
+        "Ruža a kosatec",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#46727a",
+        "accent": "#d9bb7b",
+        "soft": "#edf5f4",
+        "paper": "#fff",
+        "ink": "#243d42",
+        "line": "#d9e5e3"
+      }
+    },
+    "traitCopy": {
+      "clean": [
+        "Pižmo a čisté kvetinové tóny",
+        "",
+        "Pižmo a čisté kvetinové tóny",
+        ""
+      ],
+      "1": [
+        "Biele pižmo, jazmín a ruža",
+        "",
+        "Biele pižmo, jazmín a ruža",
+        ""
+      ],
+      "2": [
+        "Kvet bavlny, ľan a pižmo",
+        "",
+        "Kvet bavlny, ľan a pižmo",
+        ""
+      ],
+      "flowers": [
+        "Lotos a biele kvety",
+        "",
+        "Lotos a biele kvety",
+        ""
+      ],
+      "3": [
+        "Lotosový kvet a ylang ylang",
+        "",
+        "Lotosový kvet a ylang ylang",
+        ""
+      ],
+      "4": [
+        "Magnólia, orgován a jazmín",
+        "",
+        "Magnólia, orgován a jazmín",
+        ""
+      ],
+      "warm": [
+        "Ruža alebo citrusy s vanilkou",
+        "",
+        "Ruža alebo citrusy s vanilkou",
+        ""
+      ],
+      "5": [
+        "Ruža, kosatec a vanilka",
+        "",
+        "Ruža, kosatec a vanilka",
+        ""
+      ],
+      "6": [
+        "Pomaranč a vanilkový kvet",
+        "",
+        "Pomaranč a vanilkový kvet",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Aká vôňa je vám blízka?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "clean": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "1": [
+        "/assets/s5/vonavepranie/1.jpg"
+      ],
+      "2": [
+        "/assets/s5/vonavepranie/2.jpg"
+      ],
+      "flowers": [
+        "/assets/s3/scenes-k2/citrus.jpg"
+      ],
+      "3": [
+        "/assets/s5/vonavepranie/3.png"
+      ],
+      "4": [
+        "/assets/s5/vonavepranie/4.png"
+      ],
+      "warm": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "5": [
+        "/assets/s5/vonavepranie/5.png"
+      ],
+      "6": [
+        "/assets/s5/vonavepranie/6.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "1",
+      "6"
+    ],
+    "segmentText": {
+      "entryNote": "Vône na pranie · balenia · porovnanie",
+      "titleSuffix": "výber vône",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní",
+      "entrySmall": "VÝBER VÔNE",
+      "entryTitle": "Nájsť vôňu podľa tónov",
+      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "heading": "Pomôžte zákazníkovi nájsť vôňu na pranie podľa jeho vkusu.",
+      "lead": "Výber ukáže parfum na pranie s fotografiou, profilom vône, presným balením, cenou a odkazom. Možno pridať 20 ml vzorku rovnakej vône a porovnať dve odlišné kompozície.",
+      "includedChat": "Vonné tóny parfumov na pranie, balenia a ceny.",
+      "includedAdvisor": "Výber vône na pranie, voliteľná vzorka a porovnanie.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané vône, ich tóny, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu podľa tónov",
+      "teaserNote": "Otvoriť výber vône",
+      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "source": "vonavepranie-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "1": "2",
+        "2": "1",
+        "3": "4",
+        "4": "3",
+        "5": "6",
+        "6": "5"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aká vôňa je vám blízka?",
+  "options": [
+    {
+      "value": "clean",
+      "label": "Pižmo a čisté kvetinové tóny",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "1",
+          "label": "Biele pižmo, jazmín a ruža",
+          "productId": "1",
+          "sourceUrl": "https://www.vonavepranie.sk/parfem-na-pranie-white-musk/"
+        },
+        {
+          "value": "2",
+          "label": "Kvet bavlny, ľan a pižmo",
+          "productId": "2",
+          "sourceUrl": "https://www.vonavepranie.sk/parfem-na-pranie-cotton-flower/"
+        }
+      ]
+    },
+    {
+      "value": "flowers",
+      "label": "Lotos a biele kvety",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "3",
+          "label": "Lotosový kvet a ylang ylang",
+          "productId": "3",
+          "sourceUrl": "https://www.vonavepranie.sk/parfem-na-pranie-elisir-di-ylang/"
+        },
+        {
+          "value": "4",
+          "label": "Magnólia, orgován a jazmín",
+          "productId": "4",
+          "sourceUrl": "https://www.vonavepranie.sk/parfem-na-pranie-fiori-bianchi/"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Ruža alebo citrusy s vanilkou",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "5",
+          "label": "Ruža, kosatec a vanilka",
+          "productId": "5",
+          "sourceUrl": "https://www.vonavepranie.sk/parfem-na-pranie-petali-blu/"
+        },
+        {
+          "value": "6",
+          "label": "Pomaranč a vanilkový kvet",
+          "productId": "6",
+          "sourceUrl": "https://www.vonavepranie.sk/parfem-na-pranie-marseille/"
+        }
+      ]
+    }
+  ]
+}

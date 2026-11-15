@@ -1,0 +1,347 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-15T15:38:32.022630+00:00",
+  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "paidModelCalls": 0,
+  "results": [
+    {
+      "slug": "mmnt",
+      "width": 320,
+      "id": "forest",
+      "pack": "220 ml",
+      "price": "690 Kč",
+      "url": "https://mmntshop.cz/produkt/svicka-sklo-les-is-more-220-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "mmnt-result-forest-320.png"
+    },
+    {
+      "slug": "mmnt",
+      "width": 320,
+      "id": "spice",
+      "pack": "180 ml",
+      "price": "790 Kč",
+      "url": "https://mmntshop.cz/produkt/svicka-vanoce-na-miru-180-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "mmnt-result-spice-320.png"
+    },
+    {
+      "slug": "mmnt",
+      "width": 390,
+      "id": "forest",
+      "pack": "220 ml",
+      "price": "690 Kč",
+      "url": "https://mmntshop.cz/produkt/svicka-sklo-les-is-more-220-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "mmnt-result-forest-390.png"
+    },
+    {
+      "slug": "mmnt",
+      "width": 390,
+      "id": "spice",
+      "pack": "180 ml",
+      "price": "790 Kč",
+      "url": "https://mmntshop.cz/produkt/svicka-vanoce-na-miru-180-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "mmnt-result-spice-390.png"
+    },
+    {
+      "slug": "mmnt",
+      "width": 1280,
+      "id": "forest",
+      "pack": "220 ml",
+      "price": "690 Kč",
+      "url": "https://mmntshop.cz/produkt/svicka-sklo-les-is-more-220-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "mmnt-result-forest-1280.png"
+    },
+    {
+      "slug": "mmnt",
+      "width": 1280,
+      "id": "spice",
+      "pack": "180 ml",
+      "price": "790 Kč",
+      "url": "https://mmntshop.cz/produkt/svicka-vanoce-na-miru-180-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "mmnt-result-spice-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "mmnt",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "forest",
+          "photo": "/assets/s5/mmnt/forest.jpg"
+        },
+        {
+          "id": "spice",
+          "photo": "/assets/s5/mmnt/spice.jpg"
+        }
+      ],
+      "screenshot": "mmnt-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "mmnt",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "forest",
+          "photo": "/assets/s5/mmnt/forest.jpg"
+        },
+        {
+          "id": "spice",
+          "photo": "/assets/s5/mmnt/spice.jpg"
+        }
+      ],
+      "screenshot": "mmnt-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "mmnt",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "forest",
+          "photo": "/assets/s5/mmnt/forest.jpg"
+        },
+        {
+          "id": "spice",
+          "photo": "/assets/s5/mmnt/spice.jpg"
+        }
+      ],
+      "screenshot": "mmnt-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "mmnt",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "forest",
+        "spice"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "mmnt-compare-320.png"
+    },
+    {
+      "slug": "mmnt",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "forest",
+        "spice"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "mmnt-compare-390.png"
+    },
+    {
+      "slug": "mmnt",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "forest",
+        "spice"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "mmnt-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "noteProfiles": [
+    {
+      "slug": "mmnt",
+      "id": "forest",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Cedr",
+        "santal",
+        "lístky fialky"
+      ],
+      "screenshot": "mmnt-note-profile-forest-320.png"
+    },
+    {
+      "slug": "mmnt",
+      "id": "spice",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Pomeranč",
+        "skořice",
+        "hřebíček"
+      ],
+      "screenshot": "mmnt-note-profile-spice-320.png"
+    },
+    {
+      "slug": "mmnt",
+      "id": "forest",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Cedr",
+        "santal",
+        "lístky fialky"
+      ],
+      "screenshot": "mmnt-note-profile-forest-390.png"
+    },
+    {
+      "slug": "mmnt",
+      "id": "spice",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Pomeranč",
+        "skořice",
+        "hřebíček"
+      ],
+      "screenshot": "mmnt-note-profile-spice-390.png"
+    },
+    {
+      "slug": "mmnt",
+      "id": "forest",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Cedr",
+        "santal",
+        "lístky fialky"
+      ],
+      "screenshot": "mmnt-note-profile-forest-1280.png"
+    },
+    {
+      "slug": "mmnt",
+      "id": "spice",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Pomeranč",
+        "skořice",
+        "hřebíček"
+      ],
+      "screenshot": "mmnt-note-profile-spice-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "mmnt",
+      "width": 320,
+      "id": "forest",
+      "defaultScreenshot": "mmnt-result-forest-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "mmnt-pair-forest-320.png",
+      "comparisonIds": [
+        "forest",
+        "spice"
+      ]
+    },
+    {
+      "slug": "mmnt",
+      "width": 320,
+      "id": "spice",
+      "defaultScreenshot": "mmnt-result-spice-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "mmnt-pair-spice-320.png",
+      "comparisonIds": [
+        "spice",
+        "forest"
+      ]
+    },
+    {
+      "slug": "mmnt",
+      "width": 390,
+      "id": "forest",
+      "defaultScreenshot": "mmnt-result-forest-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "mmnt-pair-forest-390.png",
+      "comparisonIds": [
+        "forest",
+        "spice"
+      ]
+    },
+    {
+      "slug": "mmnt",
+      "width": 390,
+      "id": "spice",
+      "defaultScreenshot": "mmnt-result-spice-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "mmnt-pair-spice-390.png",
+      "comparisonIds": [
+        "spice",
+        "forest"
+      ]
+    },
+    {
+      "slug": "mmnt",
+      "width": 1280,
+      "id": "forest",
+      "defaultScreenshot": "mmnt-result-forest-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "mmnt-pair-forest-1280.png",
+      "comparisonIds": [
+        "forest",
+        "spice"
+      ]
+    },
+    {
+      "slug": "mmnt",
+      "width": 1280,
+      "id": "spice",
+      "defaultScreenshot": "mmnt-result-spice-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "mmnt-pair-spice-1280.png",
+      "comparisonIds": [
+        "spice",
+        "forest"
+      ]
+    }
+  ],
+  "allRequestedResultsPassed": true
+}
