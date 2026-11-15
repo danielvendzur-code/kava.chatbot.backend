@@ -1,0 +1,812 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-15T22:43:51.861770+00:00",
+  "qaType": "Isolatedimmutablefixture/sourceIDmock only, notintegrated/livePreview",
+  "paidModelCalls": 0,
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "allRequestedResultsPassed": true,
+  "results": [
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "id": "musk",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-tresor-muschio-bianco-parfem-na-pradlo-50-ml-2/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-musk-320.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "id": "flowers",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-06-premiovy-parfem-na-pradlo-50-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-flowers-320.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "id": "iris",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/vune-na-pradlo-do-pracky-a-susicky-50-ml-jarni-svezest/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-iris-320.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "id": "lily",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-03-premiovy-parfem-na-pradlo-50-davek/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-lily-320.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "id": "wood",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/parfem-na-pradlo-blue-dream-50-davek/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-wood-320.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "id": "musk",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-tresor-muschio-bianco-parfem-na-pradlo-50-ml-2/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-musk-390.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "id": "flowers",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-06-premiovy-parfem-na-pradlo-50-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-flowers-390.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "id": "iris",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/vune-na-pradlo-do-pracky-a-susicky-50-ml-jarni-svezest/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-iris-390.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "id": "lily",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-03-premiovy-parfem-na-pradlo-50-davek/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-lily-390.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "id": "wood",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/parfem-na-pradlo-blue-dream-50-davek/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-wood-390.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "id": "musk",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-tresor-muschio-bianco-parfem-na-pradlo-50-ml-2/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-musk-1280.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "id": "flowers",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-06-premiovy-parfem-na-pradlo-50-ml/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-flowers-1280.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "id": "iris",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/vune-na-pradlo-do-pracky-a-susicky-50-ml-jarni-svezest/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-iris-1280.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "id": "lily",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-03-premiovy-parfem-na-pradlo-50-davek/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-lily-1280.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "id": "wood",
+      "pack": "50 ml",
+      "price": "219,90 Kč",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/parfem-na-pradlo-blue-dream-50-davek/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "vunebis-result-wood-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "soft",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s5/vunebis/wood.jpg"
+        }
+      ],
+      "screenshot": "vunebis-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "musk",
+          "photo": "/assets/s5/vunebis/musk.png"
+        },
+        {
+          "id": "flowers",
+          "photo": "/assets/s5/vunebis/flowers.png"
+        },
+        {
+          "id": "iris",
+          "photo": "/assets/s5/vunebis/iris.jpg"
+        }
+      ],
+      "screenshot": "vunebis-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "lily",
+          "photo": "/assets/s5/vunebis/lily.png"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s5/vunebis/wood.jpg"
+        }
+      ],
+      "screenshot": "vunebis-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "soft",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s5/vunebis/wood.jpg"
+        }
+      ],
+      "screenshot": "vunebis-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "musk",
+          "photo": "/assets/s5/vunebis/musk.png"
+        },
+        {
+          "id": "flowers",
+          "photo": "/assets/s5/vunebis/flowers.png"
+        },
+        {
+          "id": "iris",
+          "photo": "/assets/s5/vunebis/iris.jpg"
+        }
+      ],
+      "screenshot": "vunebis-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "lily",
+          "photo": "/assets/s5/vunebis/lily.png"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s5/vunebis/wood.jpg"
+        }
+      ],
+      "screenshot": "vunebis-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "soft",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s5/vunebis/wood.jpg"
+        }
+      ],
+      "screenshot": "vunebis-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "musk",
+          "photo": "/assets/s5/vunebis/musk.png"
+        },
+        {
+          "id": "flowers",
+          "photo": "/assets/s5/vunebis/flowers.png"
+        },
+        {
+          "id": "iris",
+          "photo": "/assets/s5/vunebis/iris.jpg"
+        }
+      ],
+      "screenshot": "vunebis-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "lily",
+          "photo": "/assets/s5/vunebis/lily.png"
+        },
+        {
+          "id": "wood",
+          "photo": "/assets/s5/vunebis/wood.jpg"
+        }
+      ],
+      "screenshot": "vunebis-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "musk",
+        "lily"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "vunebis-compare-320.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "musk",
+        "lily"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "vunebis-compare-390.png"
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "musk",
+        "lily"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "vunebis-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "noteProfiles": [
+    {
+      "slug": "vunebis",
+      "id": "musk",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Bílý květ",
+        "pižmo",
+        "vanilka"
+      ],
+      "screenshot": "vunebis-note-profile-musk-320.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "flowers",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Bílé květiny",
+        "frézie",
+        "růže"
+      ],
+      "screenshot": "vunebis-note-profile-flowers-320.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "iris",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Kosatec",
+        "vanilka",
+        "pižmo"
+      ],
+      "screenshot": "vunebis-note-profile-iris-320.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "lily",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Bílá lilie",
+        "pačuli",
+        "cedr"
+      ],
+      "screenshot": "vunebis-note-profile-lily-320.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "wood",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Zelená vůně",
+        "jantar",
+        "santal"
+      ],
+      "screenshot": "vunebis-note-profile-wood-320.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "musk",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Bílý květ",
+        "pižmo",
+        "vanilka"
+      ],
+      "screenshot": "vunebis-note-profile-musk-390.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "flowers",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Bílé květiny",
+        "frézie",
+        "růže"
+      ],
+      "screenshot": "vunebis-note-profile-flowers-390.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "iris",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Kosatec",
+        "vanilka",
+        "pižmo"
+      ],
+      "screenshot": "vunebis-note-profile-iris-390.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "lily",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Bílá lilie",
+        "pačuli",
+        "cedr"
+      ],
+      "screenshot": "vunebis-note-profile-lily-390.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "wood",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Zelená vůně",
+        "jantar",
+        "santal"
+      ],
+      "screenshot": "vunebis-note-profile-wood-390.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "musk",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Bílý květ",
+        "pižmo",
+        "vanilka"
+      ],
+      "screenshot": "vunebis-note-profile-musk-1280.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "flowers",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Bílé květiny",
+        "frézie",
+        "růže"
+      ],
+      "screenshot": "vunebis-note-profile-flowers-1280.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "iris",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Kosatec",
+        "vanilka",
+        "pižmo"
+      ],
+      "screenshot": "vunebis-note-profile-iris-1280.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "lily",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Bílá lilie",
+        "pačuli",
+        "cedr"
+      ],
+      "screenshot": "vunebis-note-profile-lily-1280.png"
+    },
+    {
+      "slug": "vunebis",
+      "id": "wood",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Zelená vůně",
+        "jantar",
+        "santal"
+      ],
+      "screenshot": "vunebis-note-profile-wood-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "id": "musk",
+      "defaultScreenshot": "vunebis-result-musk-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-musk-320.png",
+      "comparisonIds": [
+        "musk",
+        "flowers"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "id": "flowers",
+      "defaultScreenshot": "vunebis-result-flowers-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-flowers-320.png",
+      "comparisonIds": [
+        "flowers",
+        "iris"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "id": "iris",
+      "defaultScreenshot": "vunebis-result-iris-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-iris-320.png",
+      "comparisonIds": [
+        "iris",
+        "musk"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "id": "lily",
+      "defaultScreenshot": "vunebis-result-lily-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-lily-320.png",
+      "comparisonIds": [
+        "lily",
+        "wood"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 320,
+      "id": "wood",
+      "defaultScreenshot": "vunebis-result-wood-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-wood-320.png",
+      "comparisonIds": [
+        "wood",
+        "lily"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "id": "musk",
+      "defaultScreenshot": "vunebis-result-musk-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-musk-390.png",
+      "comparisonIds": [
+        "musk",
+        "flowers"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "id": "flowers",
+      "defaultScreenshot": "vunebis-result-flowers-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-flowers-390.png",
+      "comparisonIds": [
+        "flowers",
+        "iris"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "id": "iris",
+      "defaultScreenshot": "vunebis-result-iris-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-iris-390.png",
+      "comparisonIds": [
+        "iris",
+        "musk"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "id": "lily",
+      "defaultScreenshot": "vunebis-result-lily-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-lily-390.png",
+      "comparisonIds": [
+        "lily",
+        "wood"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 390,
+      "id": "wood",
+      "defaultScreenshot": "vunebis-result-wood-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-wood-390.png",
+      "comparisonIds": [
+        "wood",
+        "lily"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "id": "musk",
+      "defaultScreenshot": "vunebis-result-musk-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-musk-1280.png",
+      "comparisonIds": [
+        "musk",
+        "flowers"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "id": "flowers",
+      "defaultScreenshot": "vunebis-result-flowers-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-flowers-1280.png",
+      "comparisonIds": [
+        "flowers",
+        "iris"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "id": "iris",
+      "defaultScreenshot": "vunebis-result-iris-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-iris-1280.png",
+      "comparisonIds": [
+        "iris",
+        "musk"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "id": "lily",
+      "defaultScreenshot": "vunebis-result-lily-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-lily-1280.png",
+      "comparisonIds": [
+        "lily",
+        "wood"
+      ]
+    },
+    {
+      "slug": "vunebis",
+      "width": 1280,
+      "id": "wood",
+      "defaultScreenshot": "vunebis-result-wood-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "vunebis-pair-wood-1280.png",
+      "comparisonIds": [
+        "wood",
+        "lily"
+      ]
+    }
+  ],
+  "company": "vunebis",
+  "finalResultViews": 15,
+  "visualReview": "All finalresult screenshots320/390/1280 visuallyreviewed"
+}

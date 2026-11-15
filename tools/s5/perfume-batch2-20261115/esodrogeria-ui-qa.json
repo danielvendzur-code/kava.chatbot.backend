@@ -1,0 +1,797 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-15T22:53:52.506640+00:00",
+  "qaType": "Isolatedimmutablefixture/sourceIDmock only, notintegrated/livePreview",
+  "paidModelCalls": 0,
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "allRequestedResultsPassed": true,
+  "results": [
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "id": "wood",
+      "pack": "200 ml",
+      "price": "6,64 €",
+      "url": "https://www.esodrogeria.eu/Tesori-d-Oriente-vonne-tycinky-ayurveda-200ml-d1251.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-wood-320.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "id": "pear",
+      "pack": "230 ml",
+      "price": "8,83 €",
+      "url": "https://www.esodrogeria.eu/Bispol-DZ230-326-vonny-difuzer-Frezia-hruska-230ml-d942.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-pear-320.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "id": "apple",
+      "pack": "50 ml",
+      "price": "3,13 €",
+      "url": "https://www.esodrogeria.eu/Bispol-AD-001-465-vonny-difuzer-nocny-kvet-50ml-d18959.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-apple-320.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "id": "patchouli",
+      "pack": "10 ml",
+      "price": "1,32 €",
+      "url": "https://www.esodrogeria.eu/Aromaticky-olej-Paculi-10ml-d689.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-patchouli-320.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "id": "yogurt",
+      "pack": "10 ml",
+      "price": "1,32 €",
+      "url": "https://www.esodrogeria.eu/Aromaticky-olej-Hruskovy-jogurt-10ml-d1169.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-yogurt-320.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "id": "wood",
+      "pack": "200 ml",
+      "price": "6,64 €",
+      "url": "https://www.esodrogeria.eu/Tesori-d-Oriente-vonne-tycinky-ayurveda-200ml-d1251.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-wood-390.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "id": "pear",
+      "pack": "230 ml",
+      "price": "8,83 €",
+      "url": "https://www.esodrogeria.eu/Bispol-DZ230-326-vonny-difuzer-Frezia-hruska-230ml-d942.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-pear-390.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "id": "apple",
+      "pack": "50 ml",
+      "price": "3,13 €",
+      "url": "https://www.esodrogeria.eu/Bispol-AD-001-465-vonny-difuzer-nocny-kvet-50ml-d18959.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-apple-390.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "id": "patchouli",
+      "pack": "10 ml",
+      "price": "1,32 €",
+      "url": "https://www.esodrogeria.eu/Aromaticky-olej-Paculi-10ml-d689.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-patchouli-390.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "id": "yogurt",
+      "pack": "10 ml",
+      "price": "1,32 €",
+      "url": "https://www.esodrogeria.eu/Aromaticky-olej-Hruskovy-jogurt-10ml-d1169.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-yogurt-390.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "id": "wood",
+      "pack": "200 ml",
+      "price": "6,64 €",
+      "url": "https://www.esodrogeria.eu/Tesori-d-Oriente-vonne-tycinky-ayurveda-200ml-d1251.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-wood-1280.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "id": "pear",
+      "pack": "230 ml",
+      "price": "8,83 €",
+      "url": "https://www.esodrogeria.eu/Bispol-DZ230-326-vonny-difuzer-Frezia-hruska-230ml-d942.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-pear-1280.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "id": "apple",
+      "pack": "50 ml",
+      "price": "3,13 €",
+      "url": "https://www.esodrogeria.eu/Bispol-AD-001-465-vonny-difuzer-nocny-kvet-50ml-d18959.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-apple-1280.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "id": "patchouli",
+      "pack": "10 ml",
+      "price": "1,32 €",
+      "url": "https://www.esodrogeria.eu/Aromaticky-olej-Paculi-10ml-d689.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-patchouli-1280.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "id": "yogurt",
+      "pack": "10 ml",
+      "price": "1,32 €",
+      "url": "https://www.esodrogeria.eu/Aromaticky-olej-Hruskovy-jogurt-10ml-d1169.htm",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "esodrogeria-result-yogurt-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "reeds",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "oil",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "esodrogeria-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "wood",
+          "photo": "/assets/s5/esodrogeria/wood.jpg"
+        },
+        {
+          "id": "pear",
+          "photo": "/assets/s5/esodrogeria/pear.png"
+        },
+        {
+          "id": "apple",
+          "photo": "/assets/s5/esodrogeria/apple.jpg"
+        }
+      ],
+      "screenshot": "esodrogeria-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "patchouli",
+          "photo": "/assets/s5/esodrogeria/patchouli.png"
+        },
+        {
+          "id": "yogurt",
+          "photo": "/assets/s5/esodrogeria/yogurt.jpg"
+        }
+      ],
+      "screenshot": "esodrogeria-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "reeds",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "oil",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "esodrogeria-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "wood",
+          "photo": "/assets/s5/esodrogeria/wood.jpg"
+        },
+        {
+          "id": "pear",
+          "photo": "/assets/s5/esodrogeria/pear.png"
+        },
+        {
+          "id": "apple",
+          "photo": "/assets/s5/esodrogeria/apple.jpg"
+        }
+      ],
+      "screenshot": "esodrogeria-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "patchouli",
+          "photo": "/assets/s5/esodrogeria/patchouli.png"
+        },
+        {
+          "id": "yogurt",
+          "photo": "/assets/s5/esodrogeria/yogurt.jpg"
+        }
+      ],
+      "screenshot": "esodrogeria-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "reeds",
+          "photo": "/assets/s3/scenes-k2/rose.jpg"
+        },
+        {
+          "id": "oil",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "esodrogeria-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "wood",
+          "photo": "/assets/s5/esodrogeria/wood.jpg"
+        },
+        {
+          "id": "pear",
+          "photo": "/assets/s5/esodrogeria/pear.png"
+        },
+        {
+          "id": "apple",
+          "photo": "/assets/s5/esodrogeria/apple.jpg"
+        }
+      ],
+      "screenshot": "esodrogeria-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "patchouli",
+          "photo": "/assets/s5/esodrogeria/patchouli.png"
+        },
+        {
+          "id": "yogurt",
+          "photo": "/assets/s5/esodrogeria/yogurt.jpg"
+        }
+      ],
+      "screenshot": "esodrogeria-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "wood",
+        "pear"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "esodrogeria-compare-320.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "wood",
+        "pear"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "esodrogeria-compare-390.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "wood",
+        "pear"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "esodrogeria-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "noteProfiles": [
+    {
+      "slug": "esodrogeria",
+      "id": "wood",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Drevo",
+        "jantár",
+        "citrusy"
+      ],
+      "screenshot": "esodrogeria-note-profile-wood-320.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "pear",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Frézia",
+        "hruška"
+      ],
+      "screenshot": "esodrogeria-note-profile-pear-320.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "apple",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Jablko",
+        "frézia",
+        "škorica"
+      ],
+      "screenshot": "esodrogeria-note-profile-apple-320.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "patchouli",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Pačuli do aromalampy"
+      ],
+      "screenshot": "esodrogeria-note-profile-patchouli-320.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "yogurt",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Hruškový jogurt do aromalampy"
+      ],
+      "screenshot": "esodrogeria-note-profile-yogurt-320.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "wood",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Drevo",
+        "jantár",
+        "citrusy"
+      ],
+      "screenshot": "esodrogeria-note-profile-wood-390.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "pear",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Frézia",
+        "hruška"
+      ],
+      "screenshot": "esodrogeria-note-profile-pear-390.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "apple",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Jablko",
+        "frézia",
+        "škorica"
+      ],
+      "screenshot": "esodrogeria-note-profile-apple-390.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "patchouli",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Pačuli do aromalampy"
+      ],
+      "screenshot": "esodrogeria-note-profile-patchouli-390.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "yogurt",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Hruškový jogurt do aromalampy"
+      ],
+      "screenshot": "esodrogeria-note-profile-yogurt-390.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "wood",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Drevo",
+        "jantár",
+        "citrusy"
+      ],
+      "screenshot": "esodrogeria-note-profile-wood-1280.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "pear",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Frézia",
+        "hruška"
+      ],
+      "screenshot": "esodrogeria-note-profile-pear-1280.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "apple",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Jablko",
+        "frézia",
+        "škorica"
+      ],
+      "screenshot": "esodrogeria-note-profile-apple-1280.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "patchouli",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Pačuli do aromalampy"
+      ],
+      "screenshot": "esodrogeria-note-profile-patchouli-1280.png"
+    },
+    {
+      "slug": "esodrogeria",
+      "id": "yogurt",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Hruškový jogurt do aromalampy"
+      ],
+      "screenshot": "esodrogeria-note-profile-yogurt-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "id": "wood",
+      "defaultScreenshot": "esodrogeria-result-wood-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-wood-320.png",
+      "comparisonIds": [
+        "wood",
+        "pear"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "id": "pear",
+      "defaultScreenshot": "esodrogeria-result-pear-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-pear-320.png",
+      "comparisonIds": [
+        "pear",
+        "apple"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "id": "apple",
+      "defaultScreenshot": "esodrogeria-result-apple-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-apple-320.png",
+      "comparisonIds": [
+        "apple",
+        "wood"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "id": "patchouli",
+      "defaultScreenshot": "esodrogeria-result-patchouli-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-patchouli-320.png",
+      "comparisonIds": [
+        "patchouli",
+        "yogurt"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 320,
+      "id": "yogurt",
+      "defaultScreenshot": "esodrogeria-result-yogurt-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-yogurt-320.png",
+      "comparisonIds": [
+        "yogurt",
+        "patchouli"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "id": "wood",
+      "defaultScreenshot": "esodrogeria-result-wood-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-wood-390.png",
+      "comparisonIds": [
+        "wood",
+        "pear"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "id": "pear",
+      "defaultScreenshot": "esodrogeria-result-pear-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-pear-390.png",
+      "comparisonIds": [
+        "pear",
+        "apple"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "id": "apple",
+      "defaultScreenshot": "esodrogeria-result-apple-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-apple-390.png",
+      "comparisonIds": [
+        "apple",
+        "wood"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "id": "patchouli",
+      "defaultScreenshot": "esodrogeria-result-patchouli-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-patchouli-390.png",
+      "comparisonIds": [
+        "patchouli",
+        "yogurt"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 390,
+      "id": "yogurt",
+      "defaultScreenshot": "esodrogeria-result-yogurt-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-yogurt-390.png",
+      "comparisonIds": [
+        "yogurt",
+        "patchouli"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "id": "wood",
+      "defaultScreenshot": "esodrogeria-result-wood-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-wood-1280.png",
+      "comparisonIds": [
+        "wood",
+        "pear"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "id": "pear",
+      "defaultScreenshot": "esodrogeria-result-pear-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-pear-1280.png",
+      "comparisonIds": [
+        "pear",
+        "apple"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "id": "apple",
+      "defaultScreenshot": "esodrogeria-result-apple-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-apple-1280.png",
+      "comparisonIds": [
+        "apple",
+        "wood"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "id": "patchouli",
+      "defaultScreenshot": "esodrogeria-result-patchouli-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-patchouli-1280.png",
+      "comparisonIds": [
+        "patchouli",
+        "yogurt"
+      ]
+    },
+    {
+      "slug": "esodrogeria",
+      "width": 1280,
+      "id": "yogurt",
+      "defaultScreenshot": "esodrogeria-result-yogurt-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "esodrogeria-pair-yogurt-1280.png",
+      "comparisonIds": [
+        "yogurt",
+        "patchouli"
+      ]
+    }
+  ],
+  "company": "esodrogeria",
+  "finalResultViews": 15,
+  "visualReview": "All finalresult screenshots320/390/1280 visuallyreviewed"
+}

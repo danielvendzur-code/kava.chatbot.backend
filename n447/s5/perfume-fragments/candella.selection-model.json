@@ -1,0 +1,58 @@
+{
+  "key": "fragranceDirection",
+  "question": "Aká vôňa je vám blízka?",
+  "options": [
+    {
+      "value": "fruit",
+      "label": "Ovocné a citrusové vône",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "orange",
+          "label": "Pomaranč, pomelo a hrejivé korenie",
+          "productId": "orange",
+          "sourceUrl": "https://www.candella.sk/product/bitter-orange-sojova-sviecka"
+        },
+        {
+          "value": "peach",
+          "label": "Svieža ovocná vôňa s broskyňou",
+          "productId": "peach",
+          "sourceUrl": "https://www.candella.sk/product/rose-champagne-sojova-sviecka"
+        },
+        {
+          "value": "gin",
+          "label": "Limeta, gin a jalovec",
+          "productId": "gin",
+          "sourceUrl": "https://www.candella.sk/product/gin-tonic-sojova-sviecka"
+        }
+      ]
+    },
+    {
+      "value": "warm",
+      "label": "Bylinky, korenie alebo vanilka",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "herbs",
+          "label": "Eukalyptus, rozmarín a živicové tóny",
+          "productId": "herbs",
+          "sourceUrl": "https://www.candella.sk/product/eukalyptus-sojova-sviecka-1"
+        },
+        {
+          "value": "spice",
+          "label": "Škorica, klinček a kardamóm",
+          "productId": "spice",
+          "sourceUrl": "https://www.candella.sk/product/vianocna-skorica-sojova-sviecka"
+        },
+        {
+          "value": "vanilla",
+          "label": "Krémová vanilka, santal a pižmo",
+          "productId": "vanilla",
+          "sourceUrl": "https://www.candella.sk/product/madagaskarska-vanilka-sojova-sviecka"
+        }
+      ]
+    }
+  ]
+}

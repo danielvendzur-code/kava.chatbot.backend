@@ -3,8 +3,8 @@
   "question": "Jaká vůně je vám blízká?",
   "options": [
     {
-      "value": "sweet",
-      "label": "Ovoce a sladší základ",
+      "value": "berry",
+      "label": "Rybíz, růže a vanilka",
       "key": "fragranceProfile",
       "question": "Která kombinace vás láká?",
       "options": [
@@ -13,27 +13,15 @@
           "label": "Černý rybíz, růže a vanilka",
           "productId": "berry",
           "sourceUrl": "https://ravina.cz/imitace-damske-parfemy-inspirovane-giorgio-armani-si/948-1096-imitace-damske-parfemy-apar-f001-inspirovane-armani-si.html#/1-objem-50_ml_standard"
-        },
-        {
-          "value": "coffee",
-          "label": "Káva, jasmín a vanilka",
-          "productId": "coffee",
-          "sourceUrl": "https://ravina.cz/damsky-parfem-apar-inspirovany-yves-saint-laurent/899-1281-damsky-parfem-apar-f219-inspirovany-yves-saint-laurent-black-opium-parfemovana-voda.html#/1-objem-50_ml_standard"
         }
       ]
     },
     {
-      "value": "flowers",
-      "label": "Květiny a citrusová svěžest",
+      "value": "lily",
+      "label": "Citrusy, lilie a pižmo",
       "key": "fragranceProfile",
       "question": "Která kombinace vás láká?",
       "options": [
-        {
-          "value": "violet",
-          "label": "Fialka, grapefruit a jahoda",
-          "productId": "violet",
-          "sourceUrl": "https://ravina.cz/imitace-damske-parfemy-inspirovane-marc-jacobs/720-1226-damsky-parfem-apar-f163-inspirovane-marc-jacobs-daisy.html#/1-objem-50_ml_standard"
-        },
         {
           "value": "lily",
           "label": "Citrusy, lilie a pižmový základ",

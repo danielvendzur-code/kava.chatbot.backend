@@ -1,11 +1,9 @@
 {
   "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
   "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
-  "at": "2026-11-15T15:57:39.526008+00:00",
-  "qaType": "Localimmutablefixture/sourceIDmock, notintegrated/livePreview",
+  "at": "2026-11-15T23:02:48.434427+00:00",
+  "qaType": "LOCAL_IMMUTABLE_FIXTURE_SOURCE_ID_MOCK_NOT_LIVE_PREVIEW",
   "paidModelCalls": 0,
-  "scope": "Local isolated candidate fixture only.",
-  "browser": "webkit",
   "results": [
     {
       "slug": "kvapkavoni",
@@ -440,6 +438,9 @@
   ],
   "errors": [],
   "blockedExternalHosts": [],
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
   "noteProfiles": [
     {
       "slug": "kvapkavoni",
@@ -801,10 +802,8 @@
       ]
     }
   ],
-  "allCompanyRequestedResultsPassed": true,
+  "allRequestedResultsPassed": true,
   "company": "kvapkavoni",
-  "finalResultViews": 15,
-  "complete": true,
-  "visualReview": "All finalresult screenshots at320/390/1280 manuallyvisuallyreviewed",
-  "extractionQualification": "Parent multi-companyrun completed all15Kvapka results+allthree widths before subsequentALMA failure. ExtractonlyKvapka positive result proof; originalunmodified mixedreport preserved inarchive. SeparateALMA finalrerunpassed. Kvapkalogo-only incremental3views separatelyarchived, no full15rerun claim."
+  "visualReview": "All final result screenshots at320/390/1280 visually inspected, including final variant notices.",
+  "finalResultViews": 15
 }

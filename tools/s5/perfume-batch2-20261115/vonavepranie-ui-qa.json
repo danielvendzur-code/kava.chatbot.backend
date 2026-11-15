@@ -1,8 +1,8 @@
 {
   "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
   "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
-  "at": "2026-11-15T15:25:40.011821+00:00",
-  "qaType": "Isolated candidate package on unchanged coordinator core; source-ID mock responses. NOT registered/shared backend/Preview QA.",
+  "at": "2026-11-15T23:02:48.434427+00:00",
+  "qaType": "LOCAL_IMMUTABLE_FIXTURE_SOURCE_ID_MOCK_NOT_LIVE_PREVIEW",
   "paidModelCalls": 0,
   "results": [
     {
@@ -1021,5 +1021,8 @@
       ]
     }
   ],
-  "allRequestedResultsPassed": true
+  "allRequestedResultsPassed": true,
+  "company": "vonavepranie",
+  "visualReview": "All final result screenshots at320/390/1280 visually inspected, including final variant notices.",
+  "finalResultViews": 18
 }

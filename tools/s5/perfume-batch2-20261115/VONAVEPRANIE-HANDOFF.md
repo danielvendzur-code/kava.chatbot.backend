@@ -11,3 +11,5 @@ Status LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW. Owner PERFUME_WORKE
 - Price447+10 unchanged; no production/DNS/mail/provider modifications.
 
 Six250ml laundry formulas +six optional20ml variants. Cotton17.50EUR/sample1.49, Marseille15.95EUR, other250ml16.95EUR/sample1.95. Mandatory MAIN laundry backend guard review, no medical/allfabric/dryer400C promises.
+
+Final correction: see BATCH-15-HANDOFF.md for visible exactvariant notice, latest replacement proof archive and no automaticselectedvariant guarantee. Unique counts unchanged.

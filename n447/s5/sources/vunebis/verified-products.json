@@ -1,0 +1,626 @@
+{
+  "brand": "Vůně BIS",
+  "domain": "vunebis.cz",
+  "operator": {
+    "name": "Frydrych-pap s.r.o.",
+    "ico": "01570510",
+    "country": "CZ",
+    "activeNoEnd": true,
+    "aliases": [
+      "221796.myshoptet.com"
+    ],
+    "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/01570510"
+  },
+  "series": "s5",
+  "segment": "fragrance",
+  "lang": "cs",
+  "country": "CZ",
+  "currency": "CZK",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "products": [
+    {
+      "id": "musk",
+      "name": "Emitty Tresor Muschio Bianco",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-tresor-muschio-bianco-parfem-na-pradlo-50-ml-2/",
+      "priceAmount": 219.9,
+      "price": "219,90 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém na prádlo",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Bílý květ, pižmo a vanilka.",
+      "reason": "Bílý květ, pižmo a vanilka.",
+      "photo": "/assets/s5/vunebis/musk.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-tresor-muschio-bianco-parfem-na-pradlo-50-ml-2/",
+        "verifiedAt": "2026-11-15T15:59:09.691736+00:00",
+        "sourceSha256": "aec50b47b96e00efaec8d897a446471499eee7d393872b432c7e34a6a080d0e6",
+        "stock": "InStock",
+        "stockEvidence": {
+          "currency": "CZK",
+          "scope": "Official exactfixed50ml SKU priceWithVat and Offer InStock",
+          "sku": "3338",
+          "publisherAvailability": "https://schema.org/InStock",
+          "quantity": "UNKNOWN_NOT_PUBLISHED"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 219.9,
+          "currency": "CZK",
+          "vatSource": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-tresor-muschio-bianco-parfem-na-pradlo-50-ml-2/",
+          "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "scope": "Explicit published product pack, not shipping weight."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vunebis.cz/user/shop/big/3374-1_emitty-tresor-muschio-bianco-parfem-na-pradlo-50-ml.png?ff=1&x=1024&y=768&q=85&ts=67487acb&sg=161563f2",
+        "photoEvidence": {
+          "id": "musk",
+          "file": "musk.png",
+          "url": "https://cdn.myshoptet.com/usr/www.vunebis.cz/user/shop/big/3374-1_emitty-tresor-muschio-bianco-parfem-na-pradlo-50-ml.png?ff=1&x=1024&y=768&q=85&ts=67487acb&sg=161563f2",
+          "sha256": "6b6131e0be3e9404703fe852290c09cede918f76fe6690495d1111b6a63ade1e",
+          "bytes": 143185,
+          "originalBytes": true,
+          "verifiedAt": "2026-11-15T16:07:43.794713+00:00",
+          "width": 1024,
+          "height": 768
+        },
+        "fragrance": {
+          "notes": [
+            "bílý květ",
+            "bílé pižmo",
+            "santalové dřevo",
+            "vanilka",
+            "fazole tonka"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfém na prádlo",
+          "notesEvidence": {
+            "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-tresor-muschio-bianco-parfem-na-pradlo-50-ml-2/",
+            "sourceText": "Vonné tóny: bílý květ, bílé pižmo, santalové dřevo, vanilka, fazole tonka",
+            "originalSourceText": "tresor Muschio Bianco Prémiový parfém do pračky a sušičky\ntresor Muschio Bianco DÁVKOVÁNÍ Na 5 kg prádla. Intenzitu je vhodné přizpůsobit dle velikosti objemu bubnu. Jemná intenzita = 2 ml Střední (doporučená) intenzita = 5 ml Intenzivní vůně = 7 ml V srdci vůně se prolíná něžný bílý květ s hebkostí bílého pižma. Základ tvoří hřejivé santalové dřevo, smyslná vanilka a fazole tonka, které dohromady vytvářejí pocit luxusní harmonie a sofistikovanosti Vaše prádlo bude svěže vonět dlouho po vyprání. Uvolňování vůně je aktivováno pohybem, proto bude váš oděv příjemně vonět i během nošení. Neobsahuje změkčovadla, lze ji použít na všechny druhy textilií včetně mikrovlákna či funkčního prádla. Díky koncentrovanému složení stačí použít jen velmi malé množství. Již není třeba používat aviváž. Použití v pračce: obsah ampulky nalijte do čisté přihrádky na aviváž a spusťte standardní prací program.Použití v sušičce: obsah ampulky nalijte na čistou bavlněnou textilii a nechte absorbovat. Vložte k ostatnímu prádlu do sušičky. Spusťte standardní sušící cyklus. Upozornění: Nekombinujte s aviváží. Postupujte podle pokynů výrobce pračky a sušičky.",
+            "sourceLanguage": "cs",
+            "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+            "noteFormMapping": [
+              {
+                "display": "bílý květ",
+                "sourceFragments": [
+                  "bílý květ"
+                ]
+              },
+              {
+                "display": "bílé pižmo",
+                "sourceFragments": [
+                  "bílého pižma"
+                ]
+              },
+              {
+                "display": "santalové dřevo",
+                "sourceFragments": [
+                  "santalové dřevo"
+                ]
+              },
+              {
+                "display": "vanilka",
+                "sourceFragments": [
+                  "vanilka"
+                ]
+              },
+              {
+                "display": "fazole tonka",
+                "sourceFragments": [
+                  "fazole tonka"
+                ]
+              }
+            ],
+            "qualification": "Only primary product own sensorytext, relatedcards excluded. Nominal grammatical mapping, no measured strength/doses or duration guarantee."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+        ],
+        "usagePurpose": "laundry-fragrance",
+        "scent": "Bílý květ, pižmo a vanilka",
+        "selectionTraits": {
+          "fragranceDirection": "soft",
+          "fragranceProfile": "musk"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-tresor-muschio-bianco-parfem-na-pradlo-50-ml-2/",
+          "sourceText": "Vonné tóny: bílý květ, bílé pižmo, santalové dřevo, vanilka, fazole tonka",
+          "navigationLabel": "Bílý květ, pižmo a vanilka",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "lily",
+      "name": "Emitty Fresh 03",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-03-premiovy-parfem-na-pradlo-50-davek/",
+      "priceAmount": 219.9,
+      "price": "219,90 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém na prádlo",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Bílá lilie, pačuli a cedr.",
+      "reason": "Bílá lilie, pačuli a cedr.",
+      "photo": "/assets/s5/vunebis/lily.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-03-premiovy-parfem-na-pradlo-50-davek/",
+        "verifiedAt": "2026-11-15T15:59:09.693942+00:00",
+        "sourceSha256": "9e22f93931b165c785f3561790ebfd4b2289ca7f79c9186c5dbf99afcc9e7d8b",
+        "stock": "InStock",
+        "stockEvidence": {
+          "currency": "CZK",
+          "scope": "Official exactfixed50ml SKU priceWithVat and Offer InStock",
+          "sku": "2004",
+          "publisherAvailability": "https://schema.org/InStock",
+          "quantity": "UNKNOWN_NOT_PUBLISHED"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 219.9,
+          "currency": "CZK",
+          "vatSource": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-03-premiovy-parfem-na-pradlo-50-davek/",
+          "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "scope": "Explicit published product pack, not shipping weight."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vunebis.cz/user/shop/big/2010-1_emitty-fresh-03-premiovy-parfem-na-pradlo-50-ml.png?ff=1&x=1024&y=768&q=85&ts=6630e9b0&sg=161563f2",
+        "photoEvidence": {
+          "id": "lily",
+          "file": "lily.png",
+          "url": "https://cdn.myshoptet.com/usr/www.vunebis.cz/user/shop/big/2010-1_emitty-fresh-03-premiovy-parfem-na-pradlo-50-ml.png?ff=1&x=1024&y=768&q=85&ts=6630e9b0&sg=161563f2",
+          "sha256": "bb694c151b0bcdf6c59152b9025f5fc1fc117e5446637d9aa42f13a1a74057b1",
+          "bytes": 283910,
+          "originalBytes": true,
+          "verifiedAt": "2026-11-15T16:07:45.559419+00:00",
+          "width": 1024,
+          "height": 768
+        },
+        "fragrance": {
+          "notes": [
+            "bílá lilie",
+            "pačuli",
+            "bílé cedrové dřevo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfém na prádlo",
+          "notesEvidence": {
+            "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-03-premiovy-parfem-na-pradlo-50-davek/",
+            "sourceText": "Vonné tóny: bílá lilie, pačuli, bílé cedrové dřevo",
+            "originalSourceText": "Emitty 03 Prémiová řada Unikátní vůně s akcenty bílé lilie, pačuli a bílého cedrového dřeva navozující atmosféru svěžesti jarního rána. INSPIROVÁN VŮNÉ ,,LENOR,, Prémiový parfém do pračky a sušičky\nPRÉMIOVÁ ŘADA EMITTY 03 DÁVKOVÁNÍ Na 5 kg prádla. Intenzitu je vhodné přizpůsobit dle velikosti objemu bubnu. Jemná intenzita = 2 ml Střední (doporučená) intenzita = 5 ml Intenzivní vůně = 7 ml Unikátní vůně s akcenty bílé lilie, pačuli a bílého cedrového dřeva navozující atmosféru svěžesti jarního rána Vaše prádlo bude svěže vonět dlouho po vyprání. Uvolňování vůně je aktivováno pohybem, proto bude váš oděv příjemně vonět i během nošení. Neobsahuje změkčovadla, lze ji použít na všechny druhy textilií včetně mikrovlákna či funkčního prádla. Díky koncentrovanému složení stačí použít jen velmi malé množství. Již není třeba používat aviváž. Použití v pračce: obsah ampulky nalijte do čisté přihrádky na aviváž a spusťte standardní prací program.Použití v sušičce: obsah ampulky nalijte na čistou bavlněnou textilii a nechte absorbovat. Vložte k ostatnímu prádlu do sušičky. Spusťte standardní sušící cyklus. Upozornění: Nekombinujte s aviváží. Postupujte podle pokynů výrobce pračky a sušičky.",
+            "sourceLanguage": "cs",
+            "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+            "noteFormMapping": [
+              {
+                "display": "bílá lilie",
+                "sourceFragments": [
+                  "bílé lilie"
+                ]
+              },
+              {
+                "display": "pačuli",
+                "sourceFragments": [
+                  "pačuli"
+                ]
+              },
+              {
+                "display": "bílé cedrové dřevo",
+                "sourceFragments": [
+                  "bílého cedrového dřeva"
+                ]
+              }
+            ],
+            "qualification": "Only primary product own sensorytext, relatedcards excluded. Nominal grammatical mapping, no measured strength/doses or duration guarantee."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+        ],
+        "usagePurpose": "laundry-fragrance",
+        "scent": "Bílá lilie, pačuli a cedr",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "lily"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-03-premiovy-parfem-na-pradlo-50-davek/",
+          "sourceText": "Vonné tóny: bílá lilie, pačuli, bílé cedrové dřevo",
+          "navigationLabel": "Bílá lilie, pačuli a cedr",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "flowers",
+      "name": "Emitty Ariello 06",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-06-premiovy-parfem-na-pradlo-50-ml/",
+      "priceAmount": 219.9,
+      "price": "219,90 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém na prádlo",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Bílé květiny, frézie a růže.",
+      "reason": "Bílé květiny, frézie a růže.",
+      "photo": "/assets/s5/vunebis/flowers.png",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-06-premiovy-parfem-na-pradlo-50-ml/",
+        "verifiedAt": "2026-11-15T15:59:09.703076+00:00",
+        "sourceSha256": "14982d4e936b1f82819e5f67ba0ded1413773f5bcc0676bcc43a192b400468b1",
+        "stock": "InStock",
+        "stockEvidence": {
+          "currency": "CZK",
+          "scope": "Official exactfixed50ml SKU priceWithVat and Offer InStock",
+          "sku": "2007",
+          "publisherAvailability": "https://schema.org/InStock",
+          "quantity": "UNKNOWN_NOT_PUBLISHED"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 219.9,
+          "currency": "CZK",
+          "vatSource": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-06-premiovy-parfem-na-pradlo-50-ml/",
+          "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "scope": "Explicit published product pack, not shipping weight."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vunebis.cz/user/shop/big/2022_emitty-ariello-06-premiovy-parfem-na-pradlo-50-ml.png?ff=1&x=1024&y=768&q=85&ts=6630e976&sg=161563f2",
+        "photoEvidence": {
+          "id": "flowers",
+          "file": "flowers.png",
+          "url": "https://cdn.myshoptet.com/usr/www.vunebis.cz/user/shop/big/2022_emitty-ariello-06-premiovy-parfem-na-pradlo-50-ml.png?ff=1&x=1024&y=768&q=85&ts=6630e976&sg=161563f2",
+          "sha256": "f0fae63d9d2ff71f9b5858cd3e640a122817172d37fa707fe4056ca35a6b5484",
+          "bytes": 294347,
+          "originalBytes": true,
+          "verifiedAt": "2026-11-15T16:07:47.292799+00:00",
+          "width": 1024,
+          "height": 768
+        },
+        "fragrance": {
+          "notes": [
+            "bílé květiny",
+            "frézie",
+            "fialka",
+            "růže",
+            "jantar"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfém na prádlo",
+          "notesEvidence": {
+            "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-06-premiovy-parfem-na-pradlo-50-ml/",
+            "sourceText": "Vonné tóny: bílé květiny, frézie, fialka, růže, jantar",
+            "originalSourceText": "Emitty 06 Prémiová řada Prémiová vůně s moderním nádechem klasického parfému bílých květin s akcentem frézií, fialek a růže doplněné svěžími dřevitými, jantarovými a zelenými tóny. INSPIROVÁN VŮNÍ ,,ARIEL,, Prémiový parfém do pračky a sušičky\nPRÉMIOVÁ ŘADA EMITTY 06 DÁVKOVÁNÍ Na 5 kg prádla. Intenzitu je vhodné přizpůsobit dle velikosti objemu bubnu. Jemná intenzita = 2 ml Střední (doporučená) intenzita = 5 ml Intenzivní vůně = 7 ml Prémiová vůně s moderním nádechem klasického parfému bílých květin s akcentem frézií, fialek a růže doplněné svěžími dřevitými, jantarovými a zelenými tóny Vaše prádlo bude svěže vonět dlouho po vyprání. Uvolňování vůně je aktivováno pohybem, proto bude váš oděv příjemně vonět i během nošení. Neobsahuje změkčovadla, lze ji použít na všechny druhy textilií včetně mikrovlákna či funkčního prádla. Díky koncentrovanému složení stačí použít jen velmi malé množství. Již není třeba používat aviváž. Použití v pračce: obsah ampulky nalijte do čisté přihrádky na aviváž a spusťte standardní prací program.Použití v sušičce: obsah ampulky nalijte na čistou bavlněnou textilii a nechte absorbovat. Vložte k ostatnímu prádlu do sušičky. Spusťte standardní sušící cyklus. Upozornění: Nekombinujte s aviváží. Postupujte podle pokynů výrobce pračky a sušičky.",
+            "sourceLanguage": "cs",
+            "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+            "noteFormMapping": [
+              {
+                "display": "bílé květiny",
+                "sourceFragments": [
+                  "bílých květin"
+                ]
+              },
+              {
+                "display": "frézie",
+                "sourceFragments": [
+                  "frézií"
+                ]
+              },
+              {
+                "display": "fialka",
+                "sourceFragments": [
+                  "fialek"
+                ]
+              },
+              {
+                "display": "růže",
+                "sourceFragments": [
+                  "růže"
+                ]
+              },
+              {
+                "display": "jantar",
+                "sourceFragments": [
+                  "jantarovými"
+                ]
+              }
+            ],
+            "qualification": "Only primary product own sensorytext, relatedcards excluded. Nominal grammatical mapping, no measured strength/doses or duration guarantee."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+        ],
+        "usagePurpose": "laundry-fragrance",
+        "scent": "Bílé květiny, frézie a růže",
+        "selectionTraits": {
+          "fragranceDirection": "soft",
+          "fragranceProfile": "flowers"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-06-premiovy-parfem-na-pradlo-50-ml/",
+          "sourceText": "Vonné tóny: bílé květiny, frézie, fialka, růže, jantar",
+          "navigationLabel": "Bílé květiny, frézie a růže",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "wood",
+      "name": "Emitty Blue Dream",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/parfem-na-pradlo-blue-dream-50-davek/",
+      "priceAmount": 219.9,
+      "price": "219,90 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém na prádlo",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Zelená vůně, jantar a santal.",
+      "reason": "Zelená vůně, jantar a santal.",
+      "photo": "/assets/s5/vunebis/wood.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vunebis.cz/parfemy-na-pradlo/parfem-na-pradlo-blue-dream-50-davek/",
+        "verifiedAt": "2026-11-15T16:06:11.724628+00:00",
+        "sourceSha256": "aeabd425ddf64787e0860b8c945594cf8a86276d28e58ac637ef7a864a4eac65",
+        "stock": "InStock",
+        "stockEvidence": {
+          "currency": "CZK",
+          "scope": "Official exactfixed50ml SKU priceWithVat and Offer InStock",
+          "sku": "1333",
+          "publisherAvailability": "https://schema.org/InStock",
+          "quantity": "UNKNOWN_NOT_PUBLISHED"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 219.9,
+          "currency": "CZK",
+          "vatSource": "https://www.vunebis.cz/parfemy-na-pradlo/parfem-na-pradlo-blue-dream-50-davek/",
+          "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "scope": "Explicit published product pack, not shipping weight."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vunebis.cz/user/shop/big/1354-2_emitty-blue-dream-50-davek.jpg?ff=1&x=1024&y=768&q=85&ts=61366c32&sg=161563f2",
+        "photoEvidence": {
+          "id": "wood",
+          "file": "wood.jpg",
+          "url": "https://cdn.myshoptet.com/usr/www.vunebis.cz/user/shop/big/1354-2_emitty-blue-dream-50-davek.jpg?ff=1&x=1024&y=768&q=85&ts=61366c32&sg=161563f2",
+          "sha256": "32f9ac4325d312175f25f387c4d7a6853bdf86d5a74d08851043a4ed7a4c2350",
+          "bytes": 44933,
+          "originalBytes": true,
+          "verifiedAt": "2026-11-15T16:07:47.845244+00:00",
+          "width": 1024,
+          "height": 768
+        },
+        "fragrance": {
+          "notes": [
+            "pižmo",
+            "jantar",
+            "santalové dřevo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfém na prádlo",
+          "notesEvidence": {
+            "url": "https://www.vunebis.cz/parfemy-na-pradlo/parfem-na-pradlo-blue-dream-50-davek/",
+            "sourceText": "Vonné tóny: pižmo, jantar, santalové dřevo",
+            "originalSourceText": "bLUE DREAm Koncentrovaný parfém do pračky a sušičky 50 ml. Charakteristika vůně: Svěží výrazná květinovodřevitá, zelená vůně doplněná vzácnými vonnými esencemi pižma, jantaru a santalového dřeva\nKoncentrovaný parfém 50 dÁVEK Vaše prádlo bude svěže vonět dlouho po vyprání. Uvolňování vůně je aktivováno pohybem, proto bude váš oděv příjemně vonět i během nošení. Neobsahuje změkčovadla, lze ji použít na všechny druhy textilií včetně mikrovlákna či funkčního prádla. Díky koncentrovanému složení stačí použít jen velmi malé množství. Již není třeba používat aviváž. Jedna ampulka vystačí na 50 a více praní či sušení. Použití v pračce: obsah ampulky nalijte do čisté přihrádky na aviváž a spusťte standardní prací program.Použití v sušičce: obsah ampulky nalijte na čistou bavlněnou textilii a nechte absorbovat. Vložte k ostatnímu prádlu do sušičky. Spusťte standardní sušící cyklus. Upozornění: Nekombinujte s aviváží. Postupujte podle pokynů výrobce pračky a sušičky.",
+            "sourceLanguage": "cs",
+            "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+            "noteFormMapping": [
+              {
+                "display": "pižmo",
+                "sourceFragments": [
+                  "pižma"
+                ]
+              },
+              {
+                "display": "jantar",
+                "sourceFragments": [
+                  "jantaru"
+                ]
+              },
+              {
+                "display": "santalové dřevo",
+                "sourceFragments": [
+                  "santalového dřeva"
+                ]
+              }
+            ],
+            "qualification": "Only primary product own sensorytext, relatedcards excluded. Nominal grammatical mapping, no measured strength/doses or duration guarantee."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+        ],
+        "usagePurpose": "laundry-fragrance",
+        "scent": "Zelená vůně, jantar a santal",
+        "selectionTraits": {
+          "fragranceDirection": "wood",
+          "fragranceProfile": "wood"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vunebis.cz/parfemy-na-pradlo/parfem-na-pradlo-blue-dream-50-davek/",
+          "sourceText": "Vonné tóny: pižmo, jantar, santalové dřevo",
+          "navigationLabel": "Zelená vůně, jantar a santal",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    },
+    {
+      "id": "iris",
+      "name": "Emitty Jarní svěžest",
+      "url": "https://www.vunebis.cz/parfemy-na-pradlo/vune-na-pradlo-do-pracky-a-susicky-50-ml-jarni-svezest/",
+      "priceAmount": 219.9,
+      "price": "219,90 Kč",
+      "currency": "CZK",
+      "volume": "50 ml",
+      "category": "fragrance",
+      "kind": "Parfém na prádlo",
+      "tags": [],
+      "available": true,
+      "isSample": false,
+      "description": "Kosatec, vanilka a pižmo.",
+      "reason": "Kosatec, vanilka a pižmo.",
+      "photo": "/assets/s5/vunebis/iris.jpg",
+      "source": {
+        "series": "s5",
+        "url": "https://www.vunebis.cz/parfemy-na-pradlo/vune-na-pradlo-do-pracky-a-susicky-50-ml-jarni-svezest/",
+        "verifiedAt": "2026-11-15T16:06:11.725531+00:00",
+        "sourceSha256": "f4b99fd0b53a8e5e39470fb27789c7dc4f8f558f9b3282eb4170562808b9b5f7",
+        "stock": "InStock",
+        "stockEvidence": {
+          "currency": "CZK",
+          "scope": "Official exactfixed50ml SKU priceWithVat and Offer InStock",
+          "sku": "129",
+          "publisherAvailability": "https://schema.org/InStock",
+          "quantity": "UNKNOWN_NOT_PUBLISHED"
+        },
+        "priceFrom": false,
+        "priceEvidence": {
+          "amount": 219.9,
+          "currency": "CZK",
+          "vatSource": "https://www.vunebis.cz/parfemy-na-pradlo/vune-na-pradlo-do-pracky-a-susicky-50-ml-jarni-svezest/",
+          "vatEvidence": "Exact public VAT-inclusive selected SKU price, not sample minimum."
+        },
+        "packEvidence": {
+          "pack": "50 ml",
+          "scope": "Explicit published product pack, not shipping weight."
+        },
+        "variantSelectionRequired": false,
+        "categoryLocked": true,
+        "kindLocked": true,
+        "photoUrl": "https://cdn.myshoptet.com/usr/www.vunebis.cz/user/shop/big/152-2_emitty-jarni-svezest-50-davek.jpg?ff=1&x=1024&y=768&q=85&ts=61366c32&sg=161563f2",
+        "photoEvidence": {
+          "id": "iris",
+          "file": "iris.jpg",
+          "url": "https://cdn.myshoptet.com/usr/www.vunebis.cz/user/shop/big/152-2_emitty-jarni-svezest-50-davek.jpg?ff=1&x=1024&y=768&q=85&ts=61366c32&sg=161563f2",
+          "sha256": "14d938446a3bf9d117fa19561289cf2fdf5ab20de820ccef8883176da16b0563",
+          "bytes": 47177,
+          "originalBytes": true,
+          "verifiedAt": "2026-11-15T16:07:49.142103+00:00",
+          "width": 1024,
+          "height": 768
+        },
+        "fragrance": {
+          "notes": [
+            "kosatec",
+            "vanilka",
+            "pižmo"
+          ],
+          "officialFamilies": [],
+          "intensity": null,
+          "occasion": null,
+          "concentrationDisplay": "Parfém na prádlo",
+          "notesEvidence": {
+            "url": "https://www.vunebis.cz/parfemy-na-pradlo/vune-na-pradlo-do-pracky-a-susicky-50-ml-jarni-svezest/",
+            "sourceText": "Vonné tóny: kosatec, vanilka, pižmo",
+            "originalSourceText": "JARNÍ SVĚŽEST Koncentrovaný parfém do pračky a sušičky 50 ml. Charakteristika vůně: Svěžest jarní louky s vůní vzácného kosatce, květinové srdce parfému doplněné tóny vanilky a pižma\nKoncentrovaný parfém 50 dávek Vaše prádlo bude svěže vonět dlouho po vyprání. Uvolňování vůně je aktivováno pohybem, proto bude váš oděv příjemně vonět i během nošení. Neobsahuje změkčovadla, lze ji použít na všechny druhy textilií včetně mikrovlákna či funkčního prádla. Díky koncentrovanému složení stačí použít jen velmi malé množství. Již není třeba používat aviváž. Jedna ampulka vystačí na 50 a více praní či sušení. Použití v pračce: obsah ampulky nalijte do čisté přihrádky na aviváž a spusťte standardní prací program.Použití v sušičce: obsah ampulky nalijte na čistou bavlněnou textilii a nechte absorbovat. Vložte k ostatnímu prádlu do sušičky. Spusťte standardní sušící cyklus. Upozornění: Nekombinujte s aviváží. Postupujte podle pokynů výrobce pračky a sušičky.",
+            "sourceLanguage": "cs",
+            "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
+            "noteFormMapping": [
+              {
+                "display": "kosatec",
+                "sourceFragments": [
+                  "kosatce"
+                ]
+              },
+              {
+                "display": "vanilka",
+                "sourceFragments": [
+                  "vanilky"
+                ]
+              },
+              {
+                "display": "pižmo",
+                "sourceFragments": [
+                  "pižma"
+                ]
+              }
+            ],
+            "qualification": "Only primary product own sensorytext, relatedcards excluded. Nominal grammatical mapping, no measured strength/doses or duration guarantee."
+          }
+        },
+        "complementForProductUrls": [],
+        "excludedClaims": [
+          "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
+        ],
+        "usagePurpose": "laundry-fragrance",
+        "scent": "Kosatec, vanilka a pižmo",
+        "selectionTraits": {
+          "fragranceDirection": "soft",
+          "fragranceProfile": "iris"
+        },
+        "selectionTraitsEvidence": {
+          "url": "https://www.vunebis.cz/parfemy-na-pradlo/vune-na-pradlo-do-pracky-a-susicky-50-ml-jarni-svezest/",
+          "sourceText": "Vonné tóny: kosatec, vanilka, pižmo",
+          "navigationLabel": "Kosatec, vanilka a pižmo",
+          "navigationGroupingIsNotOfficialFragranceFamily": true
+        }
+      }
+    }
+  ],
+  "revenue": {
+    "year": 2024,
+    "publishedBand": "10–30 mil. Kč",
+    "currency": "CZK",
+    "source": "https://www.chytryrejstrik.cz/ico-01570510/frydrych-pap-s-r-o",
+    "sourceType": "Secondaryhistoricalband",
+    "latestExact2025": "UNKNOWN"
+  },
+  "size": "FALLBACK_PRICING_REVIEW_PRICE_UNCHANGED",
+  "interest": "NOT_ESTABLISHED",
+  "notes": [
+    "Five distinct verified50ml laundryformulas, each219.90CZK/InStock/fixedSKU;50davek notmisstated50ml without separate volume source.",
+    "Angels/Euforie/Bella excluded due shortdescription10ml conflict with50mltitle. Corri250ml excludesgenericnoactualsensorydifferences. Ariello06/ARIELKA notcountedasseparateformula.",
+    "Merchant headerpublishes text VůněBIS, typeset factualname notclaimedofficialimage logo.",
+    "No medical, allfabric, dryer/doses/duration or designeroriginal/equivalence claims. No personal skinuse. MAINguard/PRICING_REVIEW/integration/livePreview required;447+10unchanged."
+  ]
+}

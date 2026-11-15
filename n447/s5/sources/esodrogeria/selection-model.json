@@ -1,0 +1,52 @@
+{
+  "key": "fragranceDirection",
+  "question": "Akú formu vône chcete?",
+  "options": [
+    {
+      "value": "reeds",
+      "label": "Hotová vôňa s tyčinkami",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "wood",
+          "label": "Drevo, jantár a citrusy",
+          "productId": "wood",
+          "sourceUrl": "https://www.esodrogeria.eu/Tesori-d-Oriente-vonne-tycinky-ayurveda-200ml-d1251.htm"
+        },
+        {
+          "value": "pear",
+          "label": "Frézia a hruška",
+          "productId": "pear",
+          "sourceUrl": "https://www.esodrogeria.eu/Bispol-DZ230-326-vonny-difuzer-Frezia-hruska-230ml-d942.htm"
+        },
+        {
+          "value": "apple",
+          "label": "Jablko, frézia a škorica",
+          "productId": "apple",
+          "sourceUrl": "https://www.esodrogeria.eu/Bispol-AD-001-465-vonny-difuzer-nocny-kvet-50ml-d18959.htm"
+        }
+      ]
+    },
+    {
+      "value": "oil",
+      "label": "Vonný olej do aromalampy",
+      "key": "fragranceProfile",
+      "question": "Ktorá kombinácia vás láka?",
+      "options": [
+        {
+          "value": "patchouli",
+          "label": "Pačuli do aromalampy",
+          "productId": "patchouli",
+          "sourceUrl": "https://www.esodrogeria.eu/Aromaticky-olej-Paculi-10ml-d689.htm"
+        },
+        {
+          "value": "yogurt",
+          "label": "Hruškový jogurt do aromalampy",
+          "productId": "yogurt",
+          "sourceUrl": "https://www.esodrogeria.eu/Aromaticky-olej-Hruskovy-jogurt-10ml-d1169.htm"
+        }
+      ]
+    }
+  ]
+}

@@ -9,8 +9,8 @@
   "requiredEngineContract": "s5-fragrance-direction-profile-v1",
   "quickChips": [
     "Rybíz a vanilka",
-    "Káva a jasmín",
-    "Fialka a grapefruit",
+    "Citrusy a lilie",
+    "Ceny a balení parfémů",
     "Porovnat dvě vůně"
   ],
   "offlineReplyRequirements": [
@@ -22,23 +22,23 @@
       ]
     },
     {
-      "chip": "Káva a jasmín",
-      "match": "kav|jasmin",
+      "chip": "Citrusy a lilie",
+      "match": "citrus|lili",
       "productIds": [
-        "coffee"
+        "lily"
       ]
     },
     {
-      "chip": "Fialka a grapefruit",
-      "match": "fialk|grapefruit",
+      "chip": "Ceny a balení parfémů",
+      "match": "cen|balen",
       "productIds": [
-        "violet"
+        "berry"
       ]
     }
   ],
   "compareProductIds": [
     "berry",
-    "coffee"
+    "lily"
   ],
   "addon": {
     "enabled": false,
@@ -71,8 +71,8 @@
       "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
       "quickChips": [
         "Rybíz a vanilka",
-        "Káva a jasmín",
-        "Fialka a grapefruit",
+        "Citrusy a lilie",
+        "Ceny a balení parfémů",
         "Porovnat dvě vůně"
       ],
       "theme": {
@@ -85,34 +85,10 @@
       }
     },
     "traitCopy": {
-      "sweet": [
-        "Ovoce a sladší základ",
-        "",
-        "Ovoce a sladší základ",
-        ""
-      ],
       "berry": [
         "Černý rybíz, růže a vanilka",
         "",
         "Černý rybíz, růže a vanilka",
-        ""
-      ],
-      "coffee": [
-        "Káva, jasmín a vanilka",
-        "",
-        "Káva, jasmín a vanilka",
-        ""
-      ],
-      "flowers": [
-        "Květiny a citrusová svěžest",
-        "",
-        "Květiny a citrusová svěžest",
-        ""
-      ],
-      "violet": [
-        "Fialka, grapefruit a jahoda",
-        "",
-        "Fialka, grapefruit a jahoda",
         ""
       ],
       "lily": [
@@ -137,20 +113,8 @@
     "compareFocus": true,
     "upsellFocus": {},
     "choicePhotos": {
-      "sweet": [
-        "/assets/s3/scenes-k2/vanilla.jpg"
-      ],
       "berry": [
         "/assets/s5/ravina/berry.jpg"
-      ],
-      "coffee": [
-        "/assets/s5/ravina/coffee.jpg"
-      ],
-      "flowers": [
-        "/assets/s3/scenes-k2/rose.jpg"
-      ],
-      "violet": [
-        "/assets/s5/ravina/violet.png"
       ],
       "lily": [
         "/assets/s5/ravina/lily.jpg"
@@ -158,34 +122,32 @@
     },
     "compareProductIds": [
       "berry",
-      "coffee"
+      "lily"
     ],
     "segmentText": {
       "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
-      "titleSuffix": "výber vône",
-      "tab": "Výber vône",
-      "advisorName": "Poradca vôní",
-      "entrySmall": "VÝBER VÔNE",
-      "entryTitle": "Nájsť vôňu podľa tónov",
-      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce výběrem vůně",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Objevte vůni podle svého vkusu",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
       "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
-      "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
+      "lead": "Výběr porovná dvě vybrané vůně APAR. Ukáže konkrétní fotografii, charakter vůně, přesné balení, cenu a odkaz. Jde o inspirované vůně, nikoli originály jiných značek.",
       "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
       "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
       "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
-      "teaserTitle": "Vyberte si vôňu podľa tónov",
-      "teaserNote": "Otvoriť výber vône",
-      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "teaserTitle": "Objevte vůni podle svého vkusu",
+      "teaserNote": "Konkrétní vůně, balení a cena",
+      "teaserAria": "Otevřít výběr vůně",
       "source": "ravina-demo"
     },
     "fragranceResultExtras": {
       "version": 1,
       "enabled": true,
       "alternatives": {
-        "berry": "coffee",
-        "coffee": "berry",
-        "violet": "lily",
-        "lily": "violet"
+        "berry": "lily",
+        "lily": "berry"
       },
       "scentProfile": {
         "version": 1,

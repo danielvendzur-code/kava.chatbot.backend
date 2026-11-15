@@ -1,0 +1,210 @@
+{
+  "slug": "esodrogeria",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "1080c660b93c9fadc368767ec90938dbf7541dc9",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/esodrogeria.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Drevo a citrusy",
+    "Frézia a hruška",
+    "Olej s pačuli",
+    "Porovnať dve vône"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Drevo a citrusy",
+      "match": "drevo|citrus",
+      "productIds": [
+        "wood"
+      ]
+    },
+    {
+      "chip": "Frézia a hruška",
+      "match": "frezi|hrusk",
+      "productIds": [
+        "pear"
+      ]
+    },
+    {
+      "chip": "Olej s pačuli",
+      "match": "olej|pacul",
+      "productIds": [
+        "patchouli"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "wood",
+    "pear"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "No verified device/accessory compatibility and addoncontract, no invented paid accessory."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "EsoDrogéria",
+    "country": "SK",
+    "logos": {
+      "landing": "/assets/s5/esodrogeria/logo.png",
+      "header": "/assets/s5/esodrogeria/logo.png",
+      "avatar": "/assets/s5/esodrogeria/avatar.svg"
+    },
+    "brand": {
+      "name": "EsoDrogéria",
+      "domain": "esodrogeria.eu",
+      "website": "https://www.esodrogeria.eu/",
+      "lang": "sk",
+      "fullName": "EsoDrogéria",
+      "url": "https://www.esodrogeria.eu/",
+      "logo": "/assets/s5/esodrogeria/logo.png",
+      "mark": "/assets/s5/esodrogeria/avatar.svg",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané interiérové vône, ich použitie, balenia a ceny.",
+      "quickChips": [
+        "Drevo a citrusy",
+        "Frézia a hruška",
+        "Olej s pačuli",
+        "Porovnať dve vône"
+      ],
+      "theme": {
+        "brand": "#125061",
+        "accent": "#d9bb78",
+        "soft": "#eef7f9",
+        "paper": "#fff",
+        "ink": "#213940",
+        "line": "#d6e6e9"
+      }
+    },
+    "traitCopy": {
+      "reeds": [
+        "Hotová vôňa s tyčinkami",
+        "",
+        "Hotová vôňa s tyčinkami",
+        ""
+      ],
+      "wood": [
+        "Drevo, jantár a citrusy",
+        "",
+        "Drevo, jantár a citrusy",
+        ""
+      ],
+      "pear": [
+        "Frézia a hruška",
+        "",
+        "Frézia a hruška",
+        ""
+      ],
+      "apple": [
+        "Jablko, frézia a škorica",
+        "",
+        "Jablko, frézia a škorica",
+        ""
+      ],
+      "oil": [
+        "Vonný olej do aromalampy",
+        "",
+        "Vonný olej do aromalampy",
+        ""
+      ],
+      "patchouli": [
+        "Pačuli do aromalampy",
+        "",
+        "Pačuli do aromalampy",
+        ""
+      ],
+      "yogurt": [
+        "Hruškový jogurt do aromalampy",
+        "",
+        "Hruškový jogurt do aromalampy",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Akú formu vône chcete?",
+        "",
+        "Vône do interiéru"
+      ],
+      "fragranceProfile": [
+        "Ktorá kombinácia vás láka?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "reeds": [
+        "/assets/s3/scenes-k2/rose.jpg"
+      ],
+      "wood": [
+        "/assets/s5/esodrogeria/wood.jpg"
+      ],
+      "pear": [
+        "/assets/s5/esodrogeria/pear.png"
+      ],
+      "apple": [
+        "/assets/s5/esodrogeria/apple.jpg"
+      ],
+      "oil": [
+        "/assets/s3/scenes-k2/vanilla.jpg"
+      ],
+      "patchouli": [
+        "/assets/s5/esodrogeria/patchouli.png"
+      ],
+      "yogurt": [
+        "/assets/s5/esodrogeria/yogurt.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "wood",
+      "pear"
+    ],
+    "segmentText": {
+      "entryNote": "Vône do interiéru · konkrétne balenie · porovnanie",
+      "titleSuffix": "výber vône do interiéru",
+      "tab": "Výber vône",
+      "advisorName": "Poradca vôní do interiéru",
+      "entrySmall": "VÔNE DO INTERIÉRU",
+      "entryTitle": "Vyberte si vôňu do interiéru",
+      "placeholder": "Opýtajte sa na charakter vône, balenie alebo cenu…",
+      "heading": "Pomôžte zákazníkovi vybrať vôňu do interiéru.",
+      "lead": "Výber rozlišuje hotovú vôňu s tyčinkami a olej do aromalampy. Ukáže konkrétnu fotografiu, charakter vône, presné balenie, cenu a odkaz.",
+      "includedChat": "Typy interiérových vôní, balenia a ceny.",
+      "includedAdvisor": "Výber formy interiérovej vône a porovnanie kompozícií.",
+      "greeting": "Dobrý deň. Pomôžem vám porovnať vybrané interiérové vône, ich použitie, balenia a ceny.",
+      "teaserTitle": "Vyberte si vôňu do interiéru",
+      "teaserNote": "Tyčinkové vône a oleje do aromalampy",
+      "teaserAria": "Otvoriť výber vône do interiéru",
+      "source": "esodrogeria-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "wood": "pear",
+        "pear": "apple",
+        "apple": "wood",
+        "patchouli": "yogurt",
+        "yogurt": "patchouli"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

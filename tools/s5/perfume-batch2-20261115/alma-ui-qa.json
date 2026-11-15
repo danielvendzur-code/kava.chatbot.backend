@@ -10,20 +10,6 @@
     {
       "slug": "alma",
       "width": 320,
-      "id": "1",
-      "pack": "10 ml",
-      "price": "1390 Kč",
-      "url": "https://www.alma.cz/esse/",
-      "photoLoaded": true,
-      "alternativePhotoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alma-result-1-320.png"
-    },
-    {
-      "slug": "alma",
-      "width": 320,
       "id": "3",
       "pack": "10 ml",
       "price": "1090 Kč",
@@ -62,20 +48,6 @@
       "reset": true,
       "progress": "‹ Zpět\nVýsledek",
       "screenshot": "alma-result-4-320.png"
-    },
-    {
-      "slug": "alma",
-      "width": 390,
-      "id": "1",
-      "pack": "10 ml",
-      "price": "1390 Kč",
-      "url": "https://www.alma.cz/esse/",
-      "photoLoaded": true,
-      "alternativePhotoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alma-result-1-390.png"
     },
     {
       "slug": "alma",
@@ -122,20 +94,6 @@
     {
       "slug": "alma",
       "width": 1280,
-      "id": "1",
-      "pack": "10 ml",
-      "price": "1390 Kč",
-      "url": "https://www.alma.cz/esse/",
-      "photoLoaded": true,
-      "alternativePhotoLoaded": true,
-      "ctaInsideCard": true,
-      "reset": true,
-      "progress": "‹ Zpět\nVýsledek",
-      "screenshot": "alma-result-1-1280.png"
-    },
-    {
-      "slug": "alma",
-      "width": 1280,
       "id": "3",
       "pack": "10 ml",
       "price": "1090 Kč",
@@ -174,6 +132,48 @@
       "reset": true,
       "progress": "‹ Zpět\nVýsledek",
       "screenshot": "alma-result-4-1280.png"
+    },
+    {
+      "slug": "alma",
+      "width": 320,
+      "id": "1",
+      "pack": "10 ml",
+      "price": "1390 Kč",
+      "url": "https://www.alma.cz/esse/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-1-320.png"
+    },
+    {
+      "slug": "alma",
+      "width": 390,
+      "id": "1",
+      "pack": "10 ml",
+      "price": "1390 Kč",
+      "url": "https://www.alma.cz/esse/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-1-390.png"
+    },
+    {
+      "slug": "alma",
+      "width": 1280,
+      "id": "1",
+      "pack": "10 ml",
+      "price": "1390 Kč",
+      "url": "https://www.alma.cz/esse/",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "alma-result-1-1280.png"
     }
   ],
   "questionPages": [
@@ -664,5 +664,7 @@
   "company": "alma",
   "finalResultViews": 12,
   "complete": true,
-  "visualReview": "All finalresult screenshots at320/390/1280 manuallyvisuallyreviewed"
+  "visualReview": "All12effective resultviews visually inspected; final ESSE notice screenshots reviewed atall3widths.",
+  "composition": "Nine unchanged nonESSE resultviews from alma-final-local-qa plus three ESSE replacementviews after visible alcohol10ml notice from alma-variant-notice-incremental-qa. Incremental reruns not added to unique count.",
+  "incrementalAt": "2026-11-15T23:02:49.167597+00:00"
 }

@@ -1,0 +1,34 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "berry",
+      "label": "Rybíz, růže a vanilka",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "berry",
+          "label": "Černý rybíz, růže a vanilka",
+          "productId": "berry",
+          "sourceUrl": "https://ravina.cz/imitace-damske-parfemy-inspirovane-giorgio-armani-si/948-1096-imitace-damske-parfemy-apar-f001-inspirovane-armani-si.html#/1-objem-50_ml_standard"
+        }
+      ]
+    },
+    {
+      "value": "lily",
+      "label": "Citrusy, lilie a pižmo",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "lily",
+          "label": "Citrusy, lilie a pižmový základ",
+          "productId": "lily",
+          "sourceUrl": "https://ravina.cz/378-1-damsky-parfem-apar-f065-standard-inspirovano-abercrombie-fitch-8.html#/1-objem-50_ml_standard"
+        }
+      ]
+    }
+  ]
+}

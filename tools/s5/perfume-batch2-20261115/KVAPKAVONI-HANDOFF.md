@@ -9,3 +9,5 @@ LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW. PERFUME_WORKER sources; MA
 - 447+10unchanged; no production/DNS/mail/core/backend edits. No inventednotepercentages or trialtext.
 
 Fiveverified250ml15.90EURnativevariants. Gocceunverifiedselectorblockedexcluded. ParentmixedQAfailedonlylaterALMA; extractedKvapka15passed and originalreportpreserved. Headercontrastonlychangecheckedwithoneleafat3widths, allthreeimagesvisuallyreviewed; no full15rerunclaim.
+
+Final correction: see BATCH-15-HANDOFF.md for visible exactvariant notice, latest replacement proof archive and no automaticselectedvariant guarantee. Unique counts unchanged.

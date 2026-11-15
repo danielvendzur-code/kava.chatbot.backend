@@ -1,0 +1,933 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-15T22:45:09.602766+00:00",
+  "qaType": "Isolatedimmutablefixture/sourceIDmock only, notintegrated/livePreview",
+  "paidModelCalls": 0,
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "allRequestedResultsPassed": true,
+  "results": [
+    {
+      "slug": "candella",
+      "width": 320,
+      "id": "orange",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/bitter-orange-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-orange-320.png"
+    },
+    {
+      "slug": "candella",
+      "width": 320,
+      "id": "peach",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/rose-champagne-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-peach-320.png"
+    },
+    {
+      "slug": "candella",
+      "width": 320,
+      "id": "gin",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/gin-tonic-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-gin-320.png"
+    },
+    {
+      "slug": "candella",
+      "width": 320,
+      "id": "herbs",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/eukalyptus-sojova-sviecka-1",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-herbs-320.png"
+    },
+    {
+      "slug": "candella",
+      "width": 320,
+      "id": "spice",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/vianocna-skorica-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-spice-320.png"
+    },
+    {
+      "slug": "candella",
+      "width": 320,
+      "id": "vanilla",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/madagaskarska-vanilka-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-vanilla-320.png"
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "id": "orange",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/bitter-orange-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-orange-390.png"
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "id": "peach",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/rose-champagne-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-peach-390.png"
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "id": "gin",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/gin-tonic-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-gin-390.png"
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "id": "herbs",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/eukalyptus-sojova-sviecka-1",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-herbs-390.png"
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "id": "spice",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/vianocna-skorica-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-spice-390.png"
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "id": "vanilla",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/madagaskarska-vanilka-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-vanilla-390.png"
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "id": "orange",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/bitter-orange-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-orange-1280.png"
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "id": "peach",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/rose-champagne-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-peach-1280.png"
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "id": "gin",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/gin-tonic-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-gin-1280.png"
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "id": "herbs",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/eukalyptus-sojova-sviecka-1",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-herbs-1280.png"
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "id": "spice",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/vianocna-skorica-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-spice-1280.png"
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "id": "vanilla",
+      "pack": "145 g vosku · cca 200 ml",
+      "price": "13,90 €",
+      "url": "https://www.candella.sk/product/madagaskarska-vanilka-sojova-sviecka",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Späť\nVýsledok",
+      "screenshot": "candella-result-vanilla-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "candella",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "warm",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "candella-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "candella",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "orange",
+          "photo": "/assets/s5/candella/orange.jpg"
+        },
+        {
+          "id": "peach",
+          "photo": "/assets/s5/candella/peach.jpg"
+        },
+        {
+          "id": "gin",
+          "photo": "/assets/s5/candella/gin.jpg"
+        }
+      ],
+      "screenshot": "candella-question-2-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "candella",
+      "width": 320,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "herbs",
+          "photo": "/assets/s5/candella/herbs.jpg"
+        },
+        {
+          "id": "spice",
+          "photo": "/assets/s5/candella/spice.jpg"
+        },
+        {
+          "id": "vanilla",
+          "photo": "/assets/s5/candella/vanilla.jpg"
+        }
+      ],
+      "screenshot": "candella-question-3-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "warm",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "candella-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "orange",
+          "photo": "/assets/s5/candella/orange.jpg"
+        },
+        {
+          "id": "peach",
+          "photo": "/assets/s5/candella/peach.jpg"
+        },
+        {
+          "id": "gin",
+          "photo": "/assets/s5/candella/gin.jpg"
+        }
+      ],
+      "screenshot": "candella-question-2-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "herbs",
+          "photo": "/assets/s5/candella/herbs.jpg"
+        },
+        {
+          "id": "spice",
+          "photo": "/assets/s5/candella/spice.jpg"
+        },
+        {
+          "id": "vanilla",
+          "photo": "/assets/s5/candella/vanilla.jpg"
+        }
+      ],
+      "screenshot": "candella-question-3-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "fruit",
+          "photo": "/assets/s3/scenes-k2/citrus.jpg"
+        },
+        {
+          "id": "warm",
+          "photo": "/assets/s3/scenes-k2/vanilla.jpg"
+        }
+      ],
+      "screenshot": "candella-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "orange",
+          "photo": "/assets/s5/candella/orange.jpg"
+        },
+        {
+          "id": "peach",
+          "photo": "/assets/s5/candella/peach.jpg"
+        },
+        {
+          "id": "gin",
+          "photo": "/assets/s5/candella/gin.jpg"
+        }
+      ],
+      "screenshot": "candella-question-2-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "key": "fragranceProfile",
+      "options": [
+        {
+          "id": "herbs",
+          "photo": "/assets/s5/candella/herbs.jpg"
+        },
+        {
+          "id": "spice",
+          "photo": "/assets/s5/candella/spice.jpg"
+        },
+        {
+          "id": "vanilla",
+          "photo": "/assets/s5/candella/vanilla.jpg"
+        }
+      ],
+      "screenshot": "candella-question-3-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "candella",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "orange",
+        "vanilla"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "candella-compare-320.png"
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "orange",
+        "vanilla"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "candella-compare-390.png"
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "orange",
+        "vanilla"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "candella-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "noteProfiles": [
+    {
+      "slug": "candella",
+      "id": "orange",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Pomaranč",
+        "pomelo",
+        "hrejivé korenie"
+      ],
+      "screenshot": "candella-note-profile-orange-320.png"
+    },
+    {
+      "slug": "candella",
+      "id": "peach",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Svieža ovocná vôňa s broskyňou"
+      ],
+      "screenshot": "candella-note-profile-peach-320.png"
+    },
+    {
+      "slug": "candella",
+      "id": "gin",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Limeta",
+        "gin",
+        "jalovec"
+      ],
+      "screenshot": "candella-note-profile-gin-320.png"
+    },
+    {
+      "slug": "candella",
+      "id": "herbs",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Eukalyptus",
+        "rozmarín",
+        "živicové tóny"
+      ],
+      "screenshot": "candella-note-profile-herbs-320.png"
+    },
+    {
+      "slug": "candella",
+      "id": "spice",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Škorica",
+        "klinček",
+        "kardamóm"
+      ],
+      "screenshot": "candella-note-profile-spice-320.png"
+    },
+    {
+      "slug": "candella",
+      "id": "vanilla",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Krémová vanilka",
+        "santal",
+        "pižmo"
+      ],
+      "screenshot": "candella-note-profile-vanilla-320.png"
+    },
+    {
+      "slug": "candella",
+      "id": "orange",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Pomaranč",
+        "pomelo",
+        "hrejivé korenie"
+      ],
+      "screenshot": "candella-note-profile-orange-390.png"
+    },
+    {
+      "slug": "candella",
+      "id": "peach",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Svieža ovocná vôňa s broskyňou"
+      ],
+      "screenshot": "candella-note-profile-peach-390.png"
+    },
+    {
+      "slug": "candella",
+      "id": "gin",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Limeta",
+        "gin",
+        "jalovec"
+      ],
+      "screenshot": "candella-note-profile-gin-390.png"
+    },
+    {
+      "slug": "candella",
+      "id": "herbs",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Eukalyptus",
+        "rozmarín",
+        "živicové tóny"
+      ],
+      "screenshot": "candella-note-profile-herbs-390.png"
+    },
+    {
+      "slug": "candella",
+      "id": "spice",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Škorica",
+        "klinček",
+        "kardamóm"
+      ],
+      "screenshot": "candella-note-profile-spice-390.png"
+    },
+    {
+      "slug": "candella",
+      "id": "vanilla",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Krémová vanilka",
+        "santal",
+        "pižmo"
+      ],
+      "screenshot": "candella-note-profile-vanilla-390.png"
+    },
+    {
+      "slug": "candella",
+      "id": "orange",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Pomaranč",
+        "pomelo",
+        "hrejivé korenie"
+      ],
+      "screenshot": "candella-note-profile-orange-1280.png"
+    },
+    {
+      "slug": "candella",
+      "id": "peach",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Svieža ovocná vôňa s broskyňou"
+      ],
+      "screenshot": "candella-note-profile-peach-1280.png"
+    },
+    {
+      "slug": "candella",
+      "id": "gin",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Limeta",
+        "gin",
+        "jalovec"
+      ],
+      "screenshot": "candella-note-profile-gin-1280.png"
+    },
+    {
+      "slug": "candella",
+      "id": "herbs",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Eukalyptus",
+        "rozmarín",
+        "živicové tóny"
+      ],
+      "screenshot": "candella-note-profile-herbs-1280.png"
+    },
+    {
+      "slug": "candella",
+      "id": "spice",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Škorica",
+        "klinček",
+        "kardamóm"
+      ],
+      "screenshot": "candella-note-profile-spice-1280.png"
+    },
+    {
+      "slug": "candella",
+      "id": "vanilla",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Krémová vanilka",
+        "santal",
+        "pižmo"
+      ],
+      "screenshot": "candella-note-profile-vanilla-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "candella",
+      "width": 320,
+      "id": "orange",
+      "defaultScreenshot": "candella-result-orange-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-orange-320.png",
+      "comparisonIds": [
+        "orange",
+        "peach"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 320,
+      "id": "peach",
+      "defaultScreenshot": "candella-result-peach-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-peach-320.png",
+      "comparisonIds": [
+        "peach",
+        "gin"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 320,
+      "id": "gin",
+      "defaultScreenshot": "candella-result-gin-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-gin-320.png",
+      "comparisonIds": [
+        "gin",
+        "orange"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 320,
+      "id": "herbs",
+      "defaultScreenshot": "candella-result-herbs-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-herbs-320.png",
+      "comparisonIds": [
+        "herbs",
+        "spice"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 320,
+      "id": "spice",
+      "defaultScreenshot": "candella-result-spice-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-spice-320.png",
+      "comparisonIds": [
+        "spice",
+        "vanilla"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 320,
+      "id": "vanilla",
+      "defaultScreenshot": "candella-result-vanilla-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-vanilla-320.png",
+      "comparisonIds": [
+        "vanilla",
+        "herbs"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "id": "orange",
+      "defaultScreenshot": "candella-result-orange-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-orange-390.png",
+      "comparisonIds": [
+        "orange",
+        "peach"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "id": "peach",
+      "defaultScreenshot": "candella-result-peach-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-peach-390.png",
+      "comparisonIds": [
+        "peach",
+        "gin"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "id": "gin",
+      "defaultScreenshot": "candella-result-gin-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-gin-390.png",
+      "comparisonIds": [
+        "gin",
+        "orange"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "id": "herbs",
+      "defaultScreenshot": "candella-result-herbs-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-herbs-390.png",
+      "comparisonIds": [
+        "herbs",
+        "spice"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "id": "spice",
+      "defaultScreenshot": "candella-result-spice-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-spice-390.png",
+      "comparisonIds": [
+        "spice",
+        "vanilla"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 390,
+      "id": "vanilla",
+      "defaultScreenshot": "candella-result-vanilla-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-vanilla-390.png",
+      "comparisonIds": [
+        "vanilla",
+        "herbs"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "id": "orange",
+      "defaultScreenshot": "candella-result-orange-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-orange-1280.png",
+      "comparisonIds": [
+        "orange",
+        "peach"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "id": "peach",
+      "defaultScreenshot": "candella-result-peach-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-peach-1280.png",
+      "comparisonIds": [
+        "peach",
+        "gin"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "id": "gin",
+      "defaultScreenshot": "candella-result-gin-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-gin-1280.png",
+      "comparisonIds": [
+        "gin",
+        "orange"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "id": "herbs",
+      "defaultScreenshot": "candella-result-herbs-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-herbs-1280.png",
+      "comparisonIds": [
+        "herbs",
+        "spice"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "id": "spice",
+      "defaultScreenshot": "candella-result-spice-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-spice-1280.png",
+      "comparisonIds": [
+        "spice",
+        "vanilla"
+      ]
+    },
+    {
+      "slug": "candella",
+      "width": 1280,
+      "id": "vanilla",
+      "defaultScreenshot": "candella-result-vanilla-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "candella-pair-vanilla-1280.png",
+      "comparisonIds": [
+        "vanilla",
+        "herbs"
+      ]
+    }
+  ],
+  "company": "candella",
+  "finalResultViews": 18,
+  "visualReview": "All finalresult screenshots320/390/1280 visuallyreviewed",
+  "extractionQualification": "Candella18resultviews extractedfromearliercompletedtwo-companyrun; Ravina portion superseded after visualphotoidentityreview. No supersededRavina positives counted."
+}

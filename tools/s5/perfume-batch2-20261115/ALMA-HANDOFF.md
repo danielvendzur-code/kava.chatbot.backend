@@ -9,3 +9,7 @@ LOCAL_FIXTURE_QA_COMPLETE_NOT_INTEGRATED_NOT_PREVIEW. PERFUME_WORKER sources; MA
 - 447+10unchanged; no production/DNS/mail/core/backend edits. No inventednotepercentages or trialtext.
 
 Fourfullretail10mlformulas, notsamples. ESSEalcohol10mlSKU1038/1390CZK; oilvariantnotextraformula. MAGICKAonlysweet-fresh/orientpublisherdescriptors, noINCIinference. InitialprofiletextparserfailurecorrectedbyexposingonlycuratedsensorysourceText; final12viewsallpassed. Originalrawmarketingremainsauditonly, MAINbrandguardmustexcludemedical/hormonal/crystalclaims.
+
+Additional metadatahardening: publiccatalogueoriginalSourceText now retains only exact sensoryquotes, excludes fullmedical/hormonal/crystalmarketing even in hiddenAIcatalogueinput. FulloriginalHTML kept underexcludedresearch/alma/*.html. DisplayedsourceText/model/prices/photographs unchanged; source/tree assertions rerun, no unnecessary12UI rerun. MAINbrandguard stillrequired.
+
+Final correction: see BATCH-15-HANDOFF.md for visible exactvariant notice, latest replacement proof archive and no automaticselectedvariant guarantee. Unique counts unchanged.

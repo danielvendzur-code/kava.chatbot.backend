@@ -1,5 +1,5 @@
 {
-  "at": "2026-11-15T22:43:31.296677+00:00",
+  "at": "2026-11-15T23:17:11.469760+00:00",
   "targetNewCompanies": 15,
   "completedSourceLocal": [
     "dews",
@@ -12,21 +12,21 @@
     "ketts",
     "totap",
     "kvapkavoni",
-    "alma"
-  ],
-  "primaryFormulas": 59,
-  "optionalSameFormulaVariants": 6,
-  "finalLocalViewportViews": 177,
-  "sourcePackagesBuiltQaNext": [
+    "alma",
     "vunebis",
     "esodrogeria",
     "candella",
     "ravina"
   ],
+  "primaryFormulas": 77,
+  "optionalSameFormulaVariants": 6,
+  "finalLocalViewportViews": 231,
+  "sourcePackagesBuiltQaNext": [],
   "reservedSourcesNext": [],
-  "fifteenth": "Candella51188112reserved3dddc97, verysmallrevenuecommercialreview; SvieckovounreservedVATconflict",
   "integrationOwner": "MAIN",
   "sharedFilesModified": [],
   "paidCalls": 0,
-  "notIntegratedNotLivePreviewReady": true
+  "notIntegratedNotLivePreviewReady": true,
+  "integrationManifest": "BATCH-15-INTEGRATION.json",
+  "outreach": "NOT_READY; mailboxstatusUNKNOWN"
 }

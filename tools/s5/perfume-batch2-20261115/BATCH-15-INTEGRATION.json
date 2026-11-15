@@ -1,0 +1,1684 @@
+{
+  "at": "2026-11-15T23:17:11.469760+00:00",
+  "branch": "codex/s5-perfume-batch2-20261115",
+  "baseCheckpoint": "c89c39dab76672b5350ed0e7b5cc0e27173e90cb",
+  "integrationOwner": "MAIN",
+  "status": "SOURCE_LOCAL_COMPLETE_NOT_LIVE_READY",
+  "companies": [
+    {
+      "slug": "dews",
+      "brand": "DEWS",
+      "domain": "dews.sk",
+      "operator": {
+        "name": "WAJDA SK s. r. o.",
+        "ico": "55473911",
+        "country": "SK",
+        "activeNoEnd": true,
+        "officialRegistry": "https://api.statistics.sk/rpo/v1/search?identifier=55473911"
+      },
+      "primaryFormulas": 6,
+      "localResultViews": 18,
+      "qaReport": "tools/s5/perfume-batch2-20261115/first-two-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/dews.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/dews/integration-review.json",
+      "catalogueImport": "/catalogues/dews.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/dews/ui-review.css",
+        "destination": "n447/s5/brands/dews.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/dews.css"
+        }
+      },
+      "backendBrand": "dews",
+      "requiredBackendInstruction": "Laundry fragrance only; not skin perfume. Use only sourced notes/pack/SKU price/stock; avoid health/all-fabric/dryer/duration guarantees. Usage advice requires exact brand official instructions. No invented budget/cart integration.",
+      "productPurpose": "laundry-fragrance",
+      "commercialReview": "PREFERRED_UNDER_500K_EUR_OFFICIAL_2025",
+      "revenue": {
+        "year": 2025,
+        "salesSum": 120686,
+        "currency": "EUR",
+        "source": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10293888",
+        "pdfSource": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12775631",
+        "qualification": "WholeEUR/year/ICO checked in official full financial statement; goods plus products/services, not operating revenue."
+      },
+      "officialContact": "info@wajda.sk",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/dews.json",
+      "files": [
+        {
+          "path": "catalogues/dews.js",
+          "sha256": "8a8b85198c4f6083f36de18a6eafd4ca2522b41195af98a51edcb8a4e6f2f63e"
+        },
+        {
+          "path": "n447/s5/sources/dews/verified-products.json",
+          "sha256": "aa61b0c1e572616188bc8a82622eb612e68321af175443c90997bf75a9e09dcb"
+        },
+        {
+          "path": "n447/s5/sources/dews/selection-model.json",
+          "sha256": "6843f4095f7700a60607b0d0113aa53749db72c2409e06d59e2025481c863e5a"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/dews.config.json",
+          "sha256": "2e15b7f522149ab9430f0bda016a2a73a9db7e43bfbc4098e5b5c6af4179f580"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/dews.selection-model.json",
+          "sha256": "6843f4095f7700a60607b0d0113aa53749db72c2409e06d59e2025481c863e5a"
+        },
+        {
+          "path": "assets/s5/dews/avatar.svg",
+          "sha256": "c903db2d0750ac364c1b2a1f1f92fd0d8cce050c53ae1377c225bcc2cec1f69e"
+        },
+        {
+          "path": "assets/s5/dews/logo.png",
+          "sha256": "f66ebde8668ac8b971357b8da2c135708fdad90b027313185406cbf317e37008"
+        },
+        {
+          "path": "assets/s5/dews/2.jpg",
+          "sha256": "c8b9fa718650a94ac3e0383a45091aaedb0d0e90418f72ff8f1eaa0848a78bf5"
+        },
+        {
+          "path": "assets/s5/dews/5.jpg",
+          "sha256": "e8411ab4a8aea9e6ecee729a8a1ab317a2e7bd12a97361797d90b4b51d8c729e"
+        },
+        {
+          "path": "assets/s5/dews/1.jpg",
+          "sha256": "fd58a030f3bd292ac7e86f3665c5cc5161eadd5d5af0f1ca806282d4d82dbe4a"
+        },
+        {
+          "path": "assets/s5/dews/3.jpg",
+          "sha256": "16f19064ed03299703eec1073e41091326be773d11160849609086f1411b99f5"
+        },
+        {
+          "path": "assets/s5/dews/4.jpg",
+          "sha256": "64b703d52dc53af4f4677cc65b8b895cb7c0a467add21ec5ef284614d8cc36e3"
+        },
+        {
+          "path": "assets/s5/dews/6.jpg",
+          "sha256": "3245ab04f7bec15c4b05deeb8f5a49395936411f5a8ad39d8e1f155d27b0f4bd"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "siluvone",
+      "brand": "SI·LU",
+      "domain": "siluvone.sk",
+      "operator": {
+        "name": "SI.LU, s.r.o.",
+        "ico": "56438761",
+        "country": "SK",
+        "activeNoEnd": true,
+        "officialRegistry": "https://api.statistics.sk/rpo/v1/search?identifier=56438761"
+      },
+      "primaryFormulas": 6,
+      "localResultViews": 18,
+      "qaReport": "tools/s5/perfume-batch2-20261115/first-two-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/siluvone.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/siluvone/integration-review.json",
+      "catalogueImport": "/catalogues/siluvone.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/siluvone/ui-review.css",
+        "destination": "n447/s5/brands/siluvone.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/siluvone.css"
+        }
+      },
+      "backendBrand": "siluvone",
+      "requiredBackendInstruction": "Laundry fragrance only; not skin perfume. Use only sourced notes/pack/SKU price/stock; avoid health/all-fabric/dryer/duration guarantees. Usage advice requires exact brand official instructions. No invented budget/cart integration.",
+      "productPurpose": "laundry-fragrance",
+      "commercialReview": "PREFERRED_UNDER_500K_EUR_OFFICIAL_2025",
+      "revenue": {
+        "year": 2025,
+        "salesSum": 19548,
+        "currency": "EUR",
+        "source": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10269274",
+        "pdfSource": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12730155",
+        "qualification": "WholeEUR/year/ICO checked in official full financial statement; goods plus products/services, not operating revenue."
+      },
+      "officialContact": "info@siluvone.sk",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/siluvone.json",
+      "files": [
+        {
+          "path": "catalogues/siluvone.js",
+          "sha256": "5902ed21504e11f17fe1a28d13aec0f9154e1ba32c49765e73b31f139dfdb163"
+        },
+        {
+          "path": "n447/s5/sources/siluvone/verified-products.json",
+          "sha256": "cf490fcbd57dda1ed1a12fba3cc131639408974576568516a1a42cf1bd016237"
+        },
+        {
+          "path": "n447/s5/sources/siluvone/selection-model.json",
+          "sha256": "6138e6ec80234167a297118c6d0c3bf24b965e6e72c36f0c2a107f1e35fdc1f3"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/siluvone.config.json",
+          "sha256": "050dbd8550b47de31ed9d4dc436e4f9c558a94a507878921dcdccbdc89ac0a7f"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/siluvone.selection-model.json",
+          "sha256": "6138e6ec80234167a297118c6d0c3bf24b965e6e72c36f0c2a107f1e35fdc1f3"
+        },
+        {
+          "path": "assets/s5/siluvone/5.png",
+          "sha256": "255f1a3cad82209a5d47bdd1ddc2d0767d42a4d9f8160101e16f21c472c1ff29"
+        },
+        {
+          "path": "assets/s5/siluvone/avatar.svg",
+          "sha256": "c69efe0ec22c1d817e602b326374c6ca843c14f0d6031ec8a38d5ab8433eeaa9"
+        },
+        {
+          "path": "assets/s5/siluvone/4.png",
+          "sha256": "125d5083d70324c291653db898bda6a73d46c0f5cca077169a75ca03d728367b"
+        },
+        {
+          "path": "assets/s5/siluvone/logo.png",
+          "sha256": "f333e356098044dac7bedcbbe21be79243280d52b1b7994a193cdca46b2cc596"
+        },
+        {
+          "path": "assets/s5/siluvone/1.png",
+          "sha256": "ca9b803547d864bec0dbdccb428a835aec68c0bc266542c04cf307ddd6ff169a"
+        },
+        {
+          "path": "assets/s5/siluvone/2.png",
+          "sha256": "deb4316d3ecbcfea871b162129de30c77e3ab60f30433e551aa99286e788cfee"
+        },
+        {
+          "path": "assets/s5/siluvone/6.png",
+          "sha256": "900a6863c2868ad1d7cd4a78f18b1cc02a946a7aede3fadc7fe7971cc6e2657a"
+        },
+        {
+          "path": "assets/s5/siluvone/3.png",
+          "sha256": "1728c3ebf87cdf6083f392277296b3a722582d9a7eceea2d772c286c797aa489"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "durance",
+      "brand": "Durance",
+      "domain": "durance.cz",
+      "operator": {
+        "name": "European Trading Subsidiary s.r.o.",
+        "ico": "24799025",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/24799025",
+        "qualification": "Independent Czech retailer operator, not global French manufacturer company."
+      },
+      "primaryFormulas": 6,
+      "localResultViews": 18,
+      "qaReport": "tools/s5/perfume-batch2-20261115/durance-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/durance.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/durance/integration-review.json",
+      "catalogueImport": "/catalogues/durance.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/durance/ui-review.css",
+        "destination": "n447/s5/brands/durance.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/durance.css"
+        }
+      },
+      "backendBrand": "durance",
+      "requiredBackendInstruction": "Only selected Eau de parfum50ml SKUs and literal sourced notes; do not infer intensity, occasion, fixed longevity, medical benefits or EDTmini compatibility. Prices and stock are point-in-time source snapshots, not live inventory synchronization.",
+      "productPurpose": "personal-fragrance",
+      "commercialReview": "PREFERRED_HISTORICAL_BAND_UNDER_12M_CZK_LATEST_EXACT_UNKNOWN",
+      "revenue": {
+        "year": 2024,
+        "publishedBand": "1–3 mil. Kč",
+        "currency": "CZK",
+        "source": "https://www.chytryrejstrik.cz/ico-24799025/european-trading-subsidiary-s-r-o",
+        "sourceType": "Secondary published historical band",
+        "latestExact2025": "UNKNOWN"
+      },
+      "officialContact": "info@durance.cz",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/durance.json",
+      "files": [
+        {
+          "path": "catalogues/durance.js",
+          "sha256": "4b58153f2e354c379fba12be0823ec3052e10a5eafa1eeece123848dca0cac22"
+        },
+        {
+          "path": "n447/s5/sources/durance/verified-products.json",
+          "sha256": "b700a2ade8d2dc27a377ed6389642a1ff6013fd1b0c9a251a2517e132e96d6a2"
+        },
+        {
+          "path": "n447/s5/sources/durance/selection-model.json",
+          "sha256": "2a0bfa58501ab56437f3dd1528e61217753a8587b14715bfb4364160dc9b0117"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/durance.config.json",
+          "sha256": "6462b99df4ac1a288282f589ca13f905c3d47029094645a299db539afdc79b96"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/durance.selection-model.json",
+          "sha256": "2a0bfa58501ab56437f3dd1528e61217753a8587b14715bfb4364160dc9b0117"
+        },
+        {
+          "path": "assets/s5/durance/avatar.svg",
+          "sha256": "d7e688e971dda2b129820ca725e3e1fa140df7da935b628e8d7758c8051f8c1d"
+        },
+        {
+          "path": "assets/s5/durance/logo.png",
+          "sha256": "390e7324e2cc9329b3a56336aadc1448b4b29465d2e4ee22ad12f43b8e2db7e4"
+        },
+        {
+          "path": "assets/s5/durance/2.jpg",
+          "sha256": "2e1e22ebec9cf1a4e4653eae543fad76cc8780499fd2b51c97f6df1f138246ca"
+        },
+        {
+          "path": "assets/s5/durance/5.jpg",
+          "sha256": "9a1a4f6fb9246052fb81eb17f440016edd5d915ac02f35437a4c4b407da86537"
+        },
+        {
+          "path": "assets/s5/durance/1.jpg",
+          "sha256": "b83815f4fa8f783b6c5211d5ac7b8404447a74054b453a496dbe67af149fd82d"
+        },
+        {
+          "path": "assets/s5/durance/3.jpg",
+          "sha256": "ed5af6014df182d312d6a740e74c95a32cab231d563eae24490202f76897f742"
+        },
+        {
+          "path": "assets/s5/durance/4.jpg",
+          "sha256": "8d811b056518dd8217c4360d792fc9eb42f11d4b1cbba7dd64db4fbdbf70371f"
+        },
+        {
+          "path": "assets/s5/durance/6.jpg",
+          "sha256": "7fb76495ea1a7782344dffc81b862cc0e357f07debfa2b7c4a2fda6e3d6bc6f7"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "vonavepranie",
+      "brand": "Voňavé pranie",
+      "domain": "vonavepranie.sk",
+      "operator": {
+        "name": "PRO NAILS, s.r.o.",
+        "ico": "44492197",
+        "country": "SK",
+        "activeNoEnd": true,
+        "officialRegistry": "https://api.statistics.sk/rpo/v1/search?identifier=44492197"
+      },
+      "primaryFormulas": 6,
+      "localResultViews": 18,
+      "qaReport": "tools/s5/perfume-batch2-20261115/vonavepranie-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/vonavepranie.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/vonavepranie/integration-review.json",
+      "catalogueImport": "/catalogues/vonavepranie.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/vonavepranie/ui-review.css",
+        "destination": "n447/s5/brands/vonavepranie.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/vonavepranie.css"
+        }
+      },
+      "backendBrand": "vonavepranie",
+      "requiredBackendInstruction": "Laundry fragrance, not skin perfume. Source-only scent/pack/price/stock. No allfabric/medical/disinfection/dryer400C/duration guarantees. Exact usage instructions require brand source.",
+      "productPurpose": "laundry-fragrance",
+      "commercialReview": "PREFERRED_UNDER_500K_EUR_OFFICIAL_2025",
+      "revenue": {
+        "year": 2025,
+        "declaredNetTurnover": 389369,
+        "salesGoods": 388850,
+        "salesServices": 81,
+        "salesSum": 388931,
+        "operatingRevenue": 389054,
+        "currency": "EUR",
+        "source": "https://www.registeruz.sk/cruz-public/api/uctovny-vykaz?id=10133213",
+        "pdfSource": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12509194",
+        "qualification": "Official POD699 fullPDF row01 netturnover389369, row02 operating389054; distinct from sales388931. WholeEUR/year/ICO checked, not MUJ indexing."
+      },
+      "officialContact": "info@vonavepranie.sk",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/vonavepranie.json",
+      "files": [
+        {
+          "path": "catalogues/vonavepranie.js",
+          "sha256": "aae590a4c9373c4aebac954d3c2e7b87473bb873909e91625377ba2f6e66e3f7"
+        },
+        {
+          "path": "n447/s5/sources/vonavepranie/verified-products.json",
+          "sha256": "c5d9c65a88ebd86e26e107c514718a22ebb1ae9a2152f9a93475db25978ca843"
+        },
+        {
+          "path": "n447/s5/sources/vonavepranie/selection-model.json",
+          "sha256": "34ec9499a110115b7e6a6e5aed052818832c483bb5d8a03a08d6af8f30a12bdb"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/vonavepranie.config.json",
+          "sha256": "91efe3e20038f92072a1890ba1ae5e7fa25551bb8a1c8f98a05f1a490a4b931a"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/vonavepranie.selection-model.json",
+          "sha256": "34ec9499a110115b7e6a6e5aed052818832c483bb5d8a03a08d6af8f30a12bdb"
+        },
+        {
+          "path": "assets/s5/vonavepranie/5.png",
+          "sha256": "9f28356e5122a750eba0c72753644ee1c4dbf2a57312b7f91db31ba3505eb76f"
+        },
+        {
+          "path": "assets/s5/vonavepranie/avatar.svg",
+          "sha256": "38a4a3f95b4b778019e415e26c3b201013718202143fa9b4025db38897216e9a"
+        },
+        {
+          "path": "assets/s5/vonavepranie/6-20ml.jpg",
+          "sha256": "26a9496c2f45c25a65c297a6cf66957a60af34ca2bbfade27a944f22591f5588"
+        },
+        {
+          "path": "assets/s5/vonavepranie/1-20ml.jpg",
+          "sha256": "5eba89bc486291cac2099b3b788325e2a1ad65b77c33b2ec0a948e22467971b1"
+        },
+        {
+          "path": "assets/s5/vonavepranie/4.png",
+          "sha256": "c1fb3331c95ac876dd75ca9b6d42f2702199f2ef378bf7a6c6535c83c294d1f0"
+        },
+        {
+          "path": "assets/s5/vonavepranie/3-20ml.png",
+          "sha256": "62440b01190cd47cab412df370362428e1587b454165862e0eb0219beea91945"
+        },
+        {
+          "path": "assets/s5/vonavepranie/2-20ml.jpg",
+          "sha256": "f04c13448edf2aca467113ccdd624c4b109962d6653a0713c05cf9e6f19a98af"
+        },
+        {
+          "path": "assets/s5/vonavepranie/logo.svg",
+          "sha256": "3b33eb20cf9fb301c67e72973b8211c55becbfca9f481fc89299cbbbb2fd408f"
+        },
+        {
+          "path": "assets/s5/vonavepranie/2.jpg",
+          "sha256": "858ff87973d97e2d21c9b1375aa5aa3e3f14829ea0947e0255f899578e15865d"
+        },
+        {
+          "path": "assets/s5/vonavepranie/4-20ml.png",
+          "sha256": "c191de7c80fc13b38f0cf0b6918c05b1f1de6eb48c1e3b340e0b55cafb840131"
+        },
+        {
+          "path": "assets/s5/vonavepranie/1.jpg",
+          "sha256": "558ad6ec2168f10be07759d627d98662abd2c08d9365c8aab0b7269bf9fc1769"
+        },
+        {
+          "path": "assets/s5/vonavepranie/5-20ml.png",
+          "sha256": "4281cc6974a769a7cc70fb379bf9458b9bc54c180815047b737d52e2ca99cb86"
+        },
+        {
+          "path": "assets/s5/vonavepranie/3.png",
+          "sha256": "998c4d9eabfa5ee2e3c642ae47f4daa6acacb461ed1000da0ed2d22db8a97bcb"
+        },
+        {
+          "path": "assets/s5/vonavepranie/6.jpg",
+          "sha256": "0658b6ca9bd3ee7552b0368d70ab6e0d150e5a3884ea6da21220c0b570d83ca0"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "mmnt",
+      "brand": "MMNT",
+      "domain": "mmntshop.cz",
+      "operator": {
+        "name": "ten mmnt s.r.o.",
+        "ico": "11673788",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/11673788",
+        "aliases": [
+          "mmntshop.com",
+          "mmntshop.pl"
+        ]
+      },
+      "primaryFormulas": 2,
+      "localResultViews": 6,
+      "qaReport": "tools/s5/perfume-batch2-20261115/mmnt-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/mmnt.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/mmnt/integration-review.json",
+      "catalogueImport": "/catalogues/mmnt.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/mmnt/ui-review.css",
+        "destination": "n447/s5/brands/mmnt.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/mmnt.css"
+        }
+      },
+      "backendBrand": "mmnt",
+      "requiredBackendInstruction": "Two in-stock candle formulas only. Umami220/280ml out of stock excluded. Not personal perfume/laundry. No medical, toxin-free or fire-safety/burn duration guarantees.",
+      "productPurpose": "scented-candle",
+      "commercialReview": "PREFERRED_HISTORICAL_BAND_SMALL_ASSORTMENT_REVIEW_LATEST_EXACT_UNKNOWN",
+      "revenue": {
+        "year": 2024,
+        "publishedBand": "200–500 tis. Kč",
+        "currency": "CZK",
+        "source": "https://www.chytryrejstrik.cz/ico-11673788/ten-mmnt-s-r-o",
+        "sourceType": "Secondary historical published turnover band",
+        "latestExact2025": "UNKNOWN"
+      },
+      "officialContact": "info@mmntshop.com",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/mmnt.json",
+      "files": [
+        {
+          "path": "catalogues/mmnt.js",
+          "sha256": "af9c74f89d0065c695372ea235e97bd03811dbc37a64de0236e94b62fbaeb15e"
+        },
+        {
+          "path": "n447/s5/sources/mmnt/verified-products.json",
+          "sha256": "1f60a135548b0933b3a8aed4a986f5bebc73f5fa42a652d9d17d8ea1d4c60a03"
+        },
+        {
+          "path": "n447/s5/sources/mmnt/selection-model.json",
+          "sha256": "32cfb0af922be63f90f6b36636be8869c1b1cd7faa4eea69a7638b492a76f37b"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/mmnt.config.json",
+          "sha256": "48a4e3612a92fd3da32d2c8f144f37b6ad612dcdf67fe26aae1a6f5a3fe25539"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/mmnt.selection-model.json",
+          "sha256": "32cfb0af922be63f90f6b36636be8869c1b1cd7faa4eea69a7638b492a76f37b"
+        },
+        {
+          "path": "assets/s5/mmnt/avatar.svg",
+          "sha256": "6d272a9352b105f24ba92514ba6c09a7872c99fdba46c0c076bc071754b175aa"
+        },
+        {
+          "path": "assets/s5/mmnt/logo.svg",
+          "sha256": "e4785c036479dec9067acb67b2f5d834a0a0d9170a08ca90eadec54d253abbd5"
+        },
+        {
+          "path": "assets/s5/mmnt/spice.jpg",
+          "sha256": "460f632048f9142f6c1f061bd45dfd74db3f7cf7f080404c6738c44705b15a25"
+        },
+        {
+          "path": "assets/s5/mmnt/forest.jpg",
+          "sha256": "c45d630302fcc6ef8cdccff02a143c11cec5fee9ef6d96c8d6b0d1aec0e4b8ee"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "aromis",
+      "brand": "AROMIS",
+      "domain": "aromis.eu",
+      "operator": {
+        "name": "AROMIS s.r.o.",
+        "ico": "44264542",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/44264542"
+      },
+      "primaryFormulas": 6,
+      "localResultViews": 18,
+      "qaReport": "tools/s5/perfume-batch2-20261115/aromis-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/aromis.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/aromis/integration-review.json",
+      "catalogueImport": "/catalogues/aromis.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/aromis/ui-review.css",
+        "destination": "n447/s5/brands/aromis.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/aromis.css"
+        }
+      },
+      "backendBrand": "aromis",
+      "requiredBackendInstruction": "Candles for home fragrance only, not skin perfume or laundry. Preserve actual wax/vessel/dimension packs and SKU prices. No medical/aromatherapy/fire-safety/guaranteed burn duration claims. Usage only from exact official candle instructions.",
+      "productPurpose": "scented-candle",
+      "commercialReview": "PREFERRED_HISTORICAL_BAND_UNDER_12M_CZK_LATEST_EXACT_UNKNOWN",
+      "revenue": {
+        "year": 2024,
+        "publishedBand": "3–5 mil. Kč",
+        "currency": "CZK",
+        "source": "https://www.chytryrejstrik.cz/ico-44264542/aromis-s-r-o",
+        "sourceType": "Secondary published historical band",
+        "latestExact2025": "UNKNOWN"
+      },
+      "officialContact": "obchod@aromis.eu",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/aromis.json",
+      "files": [
+        {
+          "path": "catalogues/aromis.js",
+          "sha256": "7a5454f741b5f6d02817ba14e75d554c8a95b9ce92dc8c7493e4b6304937d430"
+        },
+        {
+          "path": "n447/s5/sources/aromis/verified-products.json",
+          "sha256": "8c68278a8468d3fca86195491ce81d3a4ead69092cde328acc538186fb453791"
+        },
+        {
+          "path": "n447/s5/sources/aromis/selection-model.json",
+          "sha256": "b9a1b9255ccf1f1838c3b78291a8d2e089817306a4a7887ceb8ab2d3e6121b0e"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/aromis.config.json",
+          "sha256": "8dad5268455cc9944e273b949315814e27bbf06097a2ab176d39b901df7b9055"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/aromis.selection-model.json",
+          "sha256": "b9a1b9255ccf1f1838c3b78291a8d2e089817306a4a7887ceb8ab2d3e6121b0e"
+        },
+        {
+          "path": "assets/s5/aromis/avatar.svg",
+          "sha256": "cc3641e43e9f08792f52c3cf014dd0c75a6ec1bd2e0b3cfff9fea28dbdb27be4"
+        },
+        {
+          "path": "assets/s5/aromis/bella.jpg",
+          "sha256": "6d418aff54cadf839243e271f23941a9a7c613916006e32b51ce00e1f545faad"
+        },
+        {
+          "path": "assets/s5/aromis/logo.jpg",
+          "sha256": "2b85d7c7a8b84626cf1194cbffcb5e0ad364a7a1c26b60d92eee64ec061194ec"
+        },
+        {
+          "path": "assets/s5/aromis/lavender.jpg",
+          "sha256": "19b99a2c880ac80a2cead694ebcf5da907f3d9ad2ae02e238e1a7a242a4b2a25"
+        },
+        {
+          "path": "assets/s5/aromis/coffee.jpg",
+          "sha256": "819ee8e0a3937018152b37e1a16a71ac49a5e5864f792bdf666f0f2aea64ff80"
+        },
+        {
+          "path": "assets/s5/aromis/desert.jpg",
+          "sha256": "6755bc67e60870a298381054dbb86bd75ba2d05edd457af473c0f7109598ec5f"
+        },
+        {
+          "path": "assets/s5/aromis/winter.jpg",
+          "sha256": "1df5f2f2693d5f906718708228292f6cdf48e05fbfb8311647ecb9059dcb9326"
+        },
+        {
+          "path": "assets/s5/aromis/linen.jpg",
+          "sha256": "9f0ec624709b639bc9a1f92d1b54ce4cf0e4a2970b70903d9f6ace1ff1f28272"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "rozvoneno",
+      "brand": "Rozvoněno",
+      "domain": "rozvoneno.cz",
+      "operator": {
+        "name": "Rozvoněno s.r.o.",
+        "ico": "10706577",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/10706577"
+      },
+      "primaryFormulas": 6,
+      "localResultViews": 18,
+      "qaReport": "tools/s5/perfume-batch2-20261115/candles-two-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/rozvoneno.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/rozvoneno/integration-review.json",
+      "catalogueImport": "/catalogues/rozvoneno.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/rozvoneno/ui-review.css",
+        "destination": "n447/s5/brands/rozvoneno.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/rozvoneno.css"
+        }
+      },
+      "backendBrand": "rozvoneno",
+      "requiredBackendInstruction": "Candles only, not skin perfume or laundry. No source pregnancy/infant/respiratory/mental-health/aromatherapy/air-cleaning/fire-safety or guaranteed burn claims. Exact scent/pack/price/availability only; usage per exact official instructions.",
+      "productPurpose": "scented-candle",
+      "commercialReview": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+      "revenue": {
+        "year": 2024,
+        "publishedBand": "3–5 mil. Kč",
+        "currency": "CZK",
+        "source": "https://www.chytryrejstrik.cz/ico-10706577/rozvoneno-s-r-o",
+        "sourceType": "Secondary published historical band",
+        "latestExact2025": "UNKNOWN"
+      },
+      "officialContact": "info@rozvoneno.cz",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/rozvoneno.json",
+      "files": [
+        {
+          "path": "catalogues/rozvoneno.js",
+          "sha256": "82a7dc7266dd5d81a1f5d2eca6b0a1fe735f307675e4940afd486dafbf922661"
+        },
+        {
+          "path": "n447/s5/sources/rozvoneno/verified-products.json",
+          "sha256": "3608035d521c5e733a8268e28eac049365bfa6932e1c0911ceb100805198c283"
+        },
+        {
+          "path": "n447/s5/sources/rozvoneno/selection-model.json",
+          "sha256": "7f70b82045e15748654407a1b5c1c5054307269bb8bb3e606b59da4dfcf1f8ff"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/rozvoneno.config.json",
+          "sha256": "efb704f644c38f443aac415c37408702ff95b2b3fafd174003f1072d82f5e065"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/rozvoneno.selection-model.json",
+          "sha256": "7f70b82045e15748654407a1b5c1c5054307269bb8bb3e606b59da4dfcf1f8ff"
+        },
+        {
+          "path": "assets/s5/rozvoneno/avatar.svg",
+          "sha256": "e1e0e837813edda3be81dbe4fbb289a633dc8bee03482c352d7f9f42ae4ac068"
+        },
+        {
+          "path": "assets/s5/rozvoneno/fresh.jpg",
+          "sha256": "45ed54f66ca33025a782feb40c0e5f44f5ddd866035bb4903cdaf4a140d2194e"
+        },
+        {
+          "path": "assets/s5/rozvoneno/logo.png",
+          "sha256": "1d9a62c8dde56570a7b1161736fa7777fd856758183e60f55677e095b8cb47fa"
+        },
+        {
+          "path": "assets/s5/rozvoneno/citrus.jpg",
+          "sha256": "21896076ac6b4c96d9765d29adb3b818f5efa63d391621af223b3298089ace7e"
+        },
+        {
+          "path": "assets/s5/rozvoneno/resin.jpg",
+          "sha256": "4106d708a28cd15ce0ba80c9ec33b8d04c44683d16c35ae4636ecbf3d646b3cc"
+        },
+        {
+          "path": "assets/s5/rozvoneno/ginger.jpg",
+          "sha256": "bd25d1c0ab8483e31f4247aeff83fe03b71a57956c7fc5b1733a310512d8e9dd"
+        },
+        {
+          "path": "assets/s5/rozvoneno/winter.jpg",
+          "sha256": "c64ac3e61df53f5e1e2cd02deb73718ae4a1121e169d70734de4abf7b05d49d6"
+        },
+        {
+          "path": "assets/s5/rozvoneno/flower.jpg",
+          "sha256": "3b53f096a356b047c5432d8ce56b6b165539e8daa15b0c41cf76050b1d6f7b70"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "ketts",
+      "brand": "KETT’S CANDLES",
+      "domain": "kettscandles.com",
+      "operator": {
+        "name": "KETT´S CANDLES s.r.o.",
+        "ico": "05124174",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/05124174"
+      },
+      "primaryFormulas": 6,
+      "localResultViews": 18,
+      "qaReport": "tools/s5/perfume-batch2-20261115/candles-two-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/ketts.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/ketts/integration-review.json",
+      "catalogueImport": "/catalogues/ketts.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/ketts/ui-review.css",
+        "destination": "n447/s5/brands/ketts.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/ketts.css"
+        }
+      },
+      "backendBrand": "ketts",
+      "requiredBackendInstruction": "Candles only, not skin perfume or laundry. No source pregnancy/infant/respiratory/mental-health/aromatherapy/air-cleaning/fire-safety or guaranteed burn claims. Exact scent/pack/price/availability only; usage per exact official instructions.",
+      "productPurpose": "scented-candle",
+      "commercialReview": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+      "revenue": {
+        "year": 2024,
+        "publishedBand": "1–200 tis. Kč",
+        "currency": "CZK",
+        "source": "https://www.chytryrejstrik.cz/ico-05124174/ketts-candles-s-r-o",
+        "sourceType": "Secondary published historical band",
+        "latestExact2025": "UNKNOWN"
+      },
+      "officialContact": "ketts@kettscandles.com",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/ketts.json",
+      "files": [
+        {
+          "path": "catalogues/ketts.js",
+          "sha256": "3d116f15fa1d126f3d7da590f101f21848c6ee3db0c487da66e2cb08f4b7d64f"
+        },
+        {
+          "path": "n447/s5/sources/ketts/verified-products.json",
+          "sha256": "c3d2766afeeef472f9ea8656ea85647eed1403830885a6f5d06b69ccf3d489d6"
+        },
+        {
+          "path": "n447/s5/sources/ketts/selection-model.json",
+          "sha256": "33084a151ceb8347cde4dec70f536956a4546427ae4a28f744cfec855631409e"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/ketts.config.json",
+          "sha256": "3d6b4d98e2eef96f49f15b45a1ffad899b32b557965b199f2654946b0d0d0a93"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/ketts.selection-model.json",
+          "sha256": "33084a151ceb8347cde4dec70f536956a4546427ae4a28f744cfec855631409e"
+        },
+        {
+          "path": "assets/s5/ketts/avatar.svg",
+          "sha256": "3f750aa89c6a44c55cb3c297755d0a1e640d63c4ead450a2fff7aa2a89d90f7f"
+        },
+        {
+          "path": "assets/s5/ketts/plum.jpg",
+          "sha256": "0a0459cebfba458e94c220f04f2256620bf62d51dcd4784a108aeefbc170f06f"
+        },
+        {
+          "path": "assets/s5/ketts/logo.jpg",
+          "sha256": "2c7a6ba575fde66b66fb9f5c03eee85cf4274e72fa8ec67293b955a8e3234408"
+        },
+        {
+          "path": "assets/s5/ketts/herbs.jpg",
+          "sha256": "0082f908a7db0dcbafa9a62bb110ef8201d33d8cd9b1da7064cff623df57ef63"
+        },
+        {
+          "path": "assets/s5/ketts/rose.jpg",
+          "sha256": "5487b7bad2681eb10f2fc7f4d7b87849afb433f8302d4e7fe1a696fe2e8e5557"
+        },
+        {
+          "path": "assets/s5/ketts/citrus.jpg",
+          "sha256": "36019a859f28fedcafeedbf6af5c1e6ed0f80a138a22d66ae0c5b775ee9c4b9b"
+        },
+        {
+          "path": "assets/s5/ketts/ginger.jpg",
+          "sha256": "932c503359817b8b59cd734c10dfe506e75ac317ab76d02cb340f57b48f8c863"
+        },
+        {
+          "path": "assets/s5/ketts/sandal.jpg",
+          "sha256": "cf4638640286f67ebc09220ccf2eabdfdc47bf82fbe59de73049313189882f7c"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "totap",
+      "brand": "toTap",
+      "domain": "totap.cz",
+      "operator": {
+        "name": "Provoňsi s.r.o.",
+        "ico": "08047090",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "aliases": [
+          "provonsi.cz"
+        ],
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08047090"
+      },
+      "primaryFormulas": 6,
+      "localResultViews": 18,
+      "qaReport": "tools/s5/perfume-batch2-20261115/totap-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/totap.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/totap/integration-review.json",
+      "catalogueImport": "/catalogues/totap.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/totap/ui-review.css",
+        "destination": "n447/s5/brands/totap.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/totap.css"
+        }
+      },
+      "backendBrand": "totap",
+      "requiredBackendInstruction": "Own toTap inspired scents, not designer originals or equivalence guarantees. Preserve disclosure and exact native50ml409CZK SKUs.10ml159 not full-bottleprice. No measuredintensity/occasion/lasting claims beyond specific official source.",
+      "productPurpose": "personal-inspired-fragrance",
+      "commercialReview": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+      "revenue": {
+        "year": 2024,
+        "publishedBand": "5–10 mil. Kč",
+        "currency": "CZK",
+        "source": "https://www.chytryrejstrik.cz/ico-08047090/provonsi-s-r-o",
+        "sourceType": "Secondary published historical band",
+        "latestExact2025": "UNKNOWN"
+      },
+      "officialContact": "info@totap.cz",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/totap.json",
+      "files": [
+        {
+          "path": "catalogues/totap.js",
+          "sha256": "42e72d7ad770b80e62c786efe50e04b498dd78195d9122e34eb3d99fa946987a"
+        },
+        {
+          "path": "n447/s5/sources/totap/verified-products.json",
+          "sha256": "90ec703038d4fbe1589e75637e62f5bfdd2f494add43d7e53c1e4fb25baa81d6"
+        },
+        {
+          "path": "n447/s5/sources/totap/selection-model.json",
+          "sha256": "846174173ee6da0df3b42a22f5d7adea1a446ce2f675dba2d43049003a74d509"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/totap.config.json",
+          "sha256": "6fe475703635b8a5385ca605f54b49d417b98ce3c482a2572c3c706637d23d56"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/totap.selection-model.json",
+          "sha256": "846174173ee6da0df3b42a22f5d7adea1a446ce2f675dba2d43049003a74d509"
+        },
+        {
+          "path": "assets/s5/totap/5.png",
+          "sha256": "8886e0c965e8b24189fb04b5190d5cec5715ceb3c3d245e2ce8f685c015a6fe5"
+        },
+        {
+          "path": "assets/s5/totap/avatar.svg",
+          "sha256": "705734619281cd84fa5f662c6d083928274a0f1c6143b98f46d3f567d0e74b27"
+        },
+        {
+          "path": "assets/s5/totap/4.png",
+          "sha256": "e4aad5625860c67f9d587685f599089cfb788a318183f05a5c88768a62265908"
+        },
+        {
+          "path": "assets/s5/totap/logo.svg",
+          "sha256": "b73922498d6df3438d08f7e0ef80a689e0e599cc26144fefbb942831e0041b7b"
+        },
+        {
+          "path": "assets/s5/totap/1.png",
+          "sha256": "9a5f6b9e1f0f2e6a78ea1104f15ba0407e5bca1f0069a79b3b4cb294fe460a35"
+        },
+        {
+          "path": "assets/s5/totap/2.png",
+          "sha256": "b67393e478918bd14a6b1f429f5fafab31bf04ebc8ef4fac24e7efedd6761968"
+        },
+        {
+          "path": "assets/s5/totap/6.png",
+          "sha256": "20d1f403a13789297a59d838c8997e5bf978f62a988eb007cf109a0ae19c5f57"
+        },
+        {
+          "path": "assets/s5/totap/3.png",
+          "sha256": "1e7bf9ee28978f9c349edd4241e9b44323845ea803e3374daeababfdf3d1a5e1"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "kvapkavoni",
+      "brand": "Kvapka vôní",
+      "domain": "kvapkavoni.eu",
+      "operator": {
+        "name": "ŠRUBKA, s.r.o.",
+        "ico": "31713467",
+        "country": "SK",
+        "activeNoEnd": true,
+        "aliases": [
+          "srubka.info"
+        ]
+      },
+      "primaryFormulas": 5,
+      "localResultViews": 15,
+      "qaReport": "tools/s5/perfume-batch2-20261115/kvapkavoni-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/kvapkavoni.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/kvapkavoni/integration-review.json",
+      "catalogueImport": "/catalogues/kvapkavoni.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/kvapkavoni/ui-review.css",
+        "destination": "n447/s5/brands/kvapkavoni.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/kvapkavoni.css"
+        }
+      },
+      "backendBrand": "kvapkavoni",
+      "requiredBackendInstruction": "Laundry perfume only, never skin perfume. No disinfection, therapeutic, fabric-safety, pregnancy, dryer or guaranteed duration claims. Exactselected250ml15.90EUR, no10mlminimum confusion. Follow exact official usage only.",
+      "productPurpose": "laundry-fragrance",
+      "commercialReview": "PREFERRED_OFFICIAL_REVENUE",
+      "revenue": {
+        "year": 2025,
+        "amount": 167880,
+        "currency": "EUR",
+        "metric": "Sales goods+products/services, not operating income",
+        "source": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12298614"
+      },
+      "officialContact": "info@srubka.info",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/kvapkavoni.json",
+      "files": [
+        {
+          "path": "catalogues/kvapkavoni.js",
+          "sha256": "ca843385ad8dca7fe004b7da21996b335b84f6a86f3b937c13fa62bc7f4a8105"
+        },
+        {
+          "path": "n447/s5/sources/kvapkavoni/verified-products.json",
+          "sha256": "9c48ce0179d2fdaace6278243003b77b0a65f5b283ecfda8976159a87d02fbd3"
+        },
+        {
+          "path": "n447/s5/sources/kvapkavoni/selection-model.json",
+          "sha256": "9472083575fc915fb9109e15cd709dbc6ed966febb913aaa2f6374f61e0858af"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/kvapkavoni.config.json",
+          "sha256": "4caf18330b6e9f0ce907cfcce60d1900a77e878d9104334da10b73b2346839b8"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/kvapkavoni.selection-model.json",
+          "sha256": "9472083575fc915fb9109e15cd709dbc6ed966febb913aaa2f6374f61e0858af"
+        },
+        {
+          "path": "assets/s5/kvapkavoni/5.png",
+          "sha256": "c5328a0b67996a0671b8db6d546adcbbc8b6cce6f0f6ecf1ffc0939e170fcd6e"
+        },
+        {
+          "path": "assets/s5/kvapkavoni/avatar.svg",
+          "sha256": "fc772581bb486ed7a94710cf1ab76f0332f54f9b5139e81a4de9be2e8a787576"
+        },
+        {
+          "path": "assets/s5/kvapkavoni/4.png",
+          "sha256": "742cecc57be4337eba209e43053e74c1656f6c91403af2daed2f44bcbddc7662"
+        },
+        {
+          "path": "assets/s5/kvapkavoni/logo.png",
+          "sha256": "d5cb9e316bd28926159d898a6cef270b481aba55592b9a1ad636b06401fda7e3"
+        },
+        {
+          "path": "assets/s5/kvapkavoni/1.png",
+          "sha256": "66456ff6718ddd0fdc9f0862b6208dd9c08999105f62c25d8158089b4a293f90"
+        },
+        {
+          "path": "assets/s5/kvapkavoni/2.png",
+          "sha256": "744c911a54014865f633597d27000d376fe38dace4731c69269afe344c2b1f1d"
+        },
+        {
+          "path": "assets/s5/kvapkavoni/6.png",
+          "sha256": "83e718664b75fccf79f532040ac2794530d590b7004b4e92573d9dae762b6ba6"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "alma",
+      "brand": "ALMA",
+      "domain": "alma.cz",
+      "operator": {
+        "name": "Alma-natural cosmetics s.r.o.",
+        "ico": "08881871",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "aliases": [
+          "739922.myshoptet.com"
+        ],
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/08881871"
+      },
+      "primaryFormulas": 4,
+      "localResultViews": 12,
+      "qaReport": "tools/s5/perfume-batch2-20261115/alma-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/alma.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/alma/integration-review.json",
+      "catalogueImport": "/catalogues/alma.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/alma/ui-review.css",
+        "destination": "n447/s5/brands/alma.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/alma.css"
+        }
+      },
+      "backendBrand": "alma",
+      "requiredBackendInstruction": "Perfume sensory descriptions only. Explicitly never repeat source claims of healing/depression/anxiety/sleep/hormones/menstruation/pregnancy/birth/crystalenergy/highvibration. Do not infer fragrance notes from INCI.10ml retailpack not samples. ESSEalcoholSKU1038price1390CZK not oil duplicate. No fixed duration promise.",
+      "productPurpose": "personal-fragrance",
+      "commercialReview": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+      "revenue": {
+        "year": 2024,
+        "publishedBand": "1–3 mil. Kč",
+        "currency": "CZK",
+        "source": "https://www.chytryrejstrik.cz/ico-08881871/alma-natural-cosmetics-s-r-o",
+        "sourceType": "Secondary historical band",
+        "latestExact2025": "UNKNOWN"
+      },
+      "officialContact": "objednavky@alma.cz",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/alma.json",
+      "files": [
+        {
+          "path": "catalogues/alma.js",
+          "sha256": "3c639d31f9de94217d4a00b9ed66ada8b925a162df0e8636a7cba802533d51bb"
+        },
+        {
+          "path": "n447/s5/sources/alma/verified-products.json",
+          "sha256": "e95fbed37a6ec75e9fd257312832cf70d957730d9396c75f540b5a7af35d993b"
+        },
+        {
+          "path": "n447/s5/sources/alma/selection-model.json",
+          "sha256": "2f744a9e329382341cde6cab5fcbe8ed09a1254436bc8c05a9d1bd03088f9799"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/alma.config.json",
+          "sha256": "31b4837e8274beb17db8a0a9422a5a7e6520f9b6a643023ced065f39e71d09ae"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/alma.selection-model.json",
+          "sha256": "2f744a9e329382341cde6cab5fcbe8ed09a1254436bc8c05a9d1bd03088f9799"
+        },
+        {
+          "path": "assets/s5/alma/avatar.svg",
+          "sha256": "7c9fe10c3881b637ecf89fa317b57fdf8752200705a99d937d390e5cc56034a6"
+        },
+        {
+          "path": "assets/s5/alma/logo.png",
+          "sha256": "d7a7af16395afb1af078c49c845c5684cec00957038c2a43eb25cf73f0fa37e0"
+        },
+        {
+          "path": "assets/s5/alma/2.jpg",
+          "sha256": "3901e73bf7eab6132110b85d0d0349970526cb7202e24b982312151775271245"
+        },
+        {
+          "path": "assets/s5/alma/1.jpg",
+          "sha256": "62505600dce36cf4a205decf429e12b6a4bfa36d9617f9f285fc0b02da4436a6"
+        },
+        {
+          "path": "assets/s5/alma/3.jpg",
+          "sha256": "9622a439d94871f615f96b272d0ba61c5815d15f641a91e65e43d356196dc833"
+        },
+        {
+          "path": "assets/s5/alma/4.jpg",
+          "sha256": "c5b5b75ee787bd45c52ead41c4244034954bc6f29de4b89f5f12e3606a08bd41"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "vunebis",
+      "brand": "Vůně BIS",
+      "domain": "vunebis.cz",
+      "operator": {
+        "name": "Frydrych-pap s.r.o.",
+        "ico": "01570510",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "aliases": [
+          "221796.myshoptet.com"
+        ],
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/01570510"
+      },
+      "primaryFormulas": 5,
+      "localResultViews": 15,
+      "qaReport": "tools/s5/perfume-batch2-20261115/vunebis-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/vunebis.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/vunebis/integration-review.json",
+      "catalogueImport": "/catalogues/vunebis.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/vunebis/ui-review.css",
+        "destination": "n447/s5/brands/vunebis.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/vunebis.css"
+        }
+      },
+      "backendBrand": "vunebis",
+      "requiredBackendInstruction": "Laundry perfume only, neverpersonal skinuse. No guaranteed fabriccompatibility/dryer/doses/duration/therapeutic claims. Do not repeat designeroriginal/equivalence or sourceAngels10mlconflict. Five fixed50ml219.90CZK SKUs only. PRICING_REVIEW historical10–30mCZK, price447+10unchanged.",
+      "productPurpose": "laundry-fragrance",
+      "commercialReview": "FALLBACK_PRICING_REVIEW_PRICE_UNCHANGED",
+      "revenue": {
+        "year": 2024,
+        "publishedBand": "10–30 mil. Kč",
+        "currency": "CZK",
+        "source": "https://www.chytryrejstrik.cz/ico-01570510/frydrych-pap-s-r-o",
+        "sourceType": "Secondaryhistoricalband",
+        "latestExact2025": "UNKNOWN"
+      },
+      "officialContact": "eshop@vunebis.cz",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/vunebis.json",
+      "files": [
+        {
+          "path": "catalogues/vunebis.js",
+          "sha256": "3892366ec964b581a652b044385a6cab5c0d208507fd1d7591023da467aa13f8"
+        },
+        {
+          "path": "n447/s5/sources/vunebis/verified-products.json",
+          "sha256": "286b70af58594db5473abced0a373b533427f1000c6cf1dac8d67d796e25a73c"
+        },
+        {
+          "path": "n447/s5/sources/vunebis/selection-model.json",
+          "sha256": "9f4a0e730ec5f9a58289c4c8c405a03ed01b813d4361bcac7f5bef336022e498"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/vunebis.config.json",
+          "sha256": "fd4a94dffe4aaea94c9481fc507fd7438dadbf54005a51d517a527efd26436e0"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/vunebis.selection-model.json",
+          "sha256": "9f4a0e730ec5f9a58289c4c8c405a03ed01b813d4361bcac7f5bef336022e498"
+        },
+        {
+          "path": "assets/s5/vunebis/avatar.svg",
+          "sha256": "3765ca8e2ddeafaa500b6152fba2686ee997381e7eb43186479b3baddaca493e"
+        },
+        {
+          "path": "assets/s5/vunebis/musk.png",
+          "sha256": "6b6131e0be3e9404703fe852290c09cede918f76fe6690495d1111b6a63ade1e"
+        },
+        {
+          "path": "assets/s5/vunebis/lily.png",
+          "sha256": "bb694c151b0bcdf6c59152b9025f5fc1fc117e5446637d9aa42f13a1a74057b1"
+        },
+        {
+          "path": "assets/s5/vunebis/logo.svg",
+          "sha256": "312de3523207feadc0c237c143adfb9b6db8a28c8686fb50e061fc98b4f4a8bd"
+        },
+        {
+          "path": "assets/s5/vunebis/flowers.png",
+          "sha256": "f0fae63d9d2ff71f9b5858cd3e640a122817172d37fa707fe4056ca35a6b5484"
+        },
+        {
+          "path": "assets/s5/vunebis/iris.jpg",
+          "sha256": "14d938446a3bf9d117fa19561289cf2fdf5ab20de820ccef8883176da16b0563"
+        },
+        {
+          "path": "assets/s5/vunebis/wood.jpg",
+          "sha256": "32f9ac4325d312175f25f387c4d7a6853bdf86d5a74d08851043a4ed7a4c2350"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "esodrogeria",
+      "brand": "EsoDrogéria",
+      "domain": "esodrogeria.eu",
+      "operator": {
+        "name": "EsoDrogéria s.r.o.",
+        "ico": "47350318",
+        "country": "SK",
+        "activeNoEnd": true,
+        "officialRegistry": "https://rpo.statistics.sk/"
+      },
+      "primaryFormulas": 5,
+      "localResultViews": 15,
+      "qaReport": "tools/s5/perfume-batch2-20261115/esodrogeria-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/esodrogeria.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/esodrogeria/integration-review.json",
+      "catalogueImport": "/catalogues/esodrogeria.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/esodrogeria/ui-review.css",
+        "destination": "n447/s5/brands/esodrogeria.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/esodrogeria.css"
+        }
+      },
+      "backendBrand": "esodrogeria",
+      "requiredBackendInstruction": "Roomreedfragrances versus roomaromaoils explicitlydistinct; neverpersonalperfume/laundry, neveringest or useonskin. Oilsnotpersonal samples;10ml fullretail. No generic electricdiffuser compatibility. No health/aromatherapy/aircleaning/infant/pet/pregnancy, guaranteeoflasting claims. NightFlowerflatnotes notconflictingpyramid.",
+      "productPurpose": "room-fragrance-explicit-reeds-or-aroma-oil",
+      "commercialReview": "PREFERRED_OFFICIAL_REVENUE",
+      "revenue": {
+        "year": 2025,
+        "amount": 291573,
+        "currency": "EUR",
+        "metric": "Goods277269 + products/services14304, not operating292428",
+        "source": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12832089"
+      },
+      "officialContact": "obchod@esodrogeria.eu",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/esodrogeria.json",
+      "files": [
+        {
+          "path": "catalogues/esodrogeria.js",
+          "sha256": "626ed21cb8eaa420faae0b6282e59a223b0ee3ced15fe45fa1436cc5fc16b5b0"
+        },
+        {
+          "path": "n447/s5/sources/esodrogeria/verified-products.json",
+          "sha256": "dfb919ff6df8041fb50692ff586a9a6cc7658a29db658aacd9eda6808a684b2e"
+        },
+        {
+          "path": "n447/s5/sources/esodrogeria/selection-model.json",
+          "sha256": "105731f40c5e921d0ceaee047d8a3f286776e59d47726faaaad2cc18293a90f3"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/esodrogeria.config.json",
+          "sha256": "7ed20505487df13eb55f4f5405848737424076508fe446db87066b5415b6c53e"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/esodrogeria.selection-model.json",
+          "sha256": "105731f40c5e921d0ceaee047d8a3f286776e59d47726faaaad2cc18293a90f3"
+        },
+        {
+          "path": "assets/s5/esodrogeria/avatar.svg",
+          "sha256": "723b4223e87a215f6600e9a84d44f540007251de8c0cf8d50e98f9b061e936ef"
+        },
+        {
+          "path": "assets/s5/esodrogeria/logo.png",
+          "sha256": "5b0242c85193e5e41d55df0f2fd95a8975a192f4576bcb51a1a7c1d2aa279ea3"
+        },
+        {
+          "path": "assets/s5/esodrogeria/wood.jpg",
+          "sha256": "5ea432d2d019c9d8be7b569d67f2cb521b08fcad4e6afc441f0bc3c5b2db54a7"
+        },
+        {
+          "path": "assets/s5/esodrogeria/yogurt.jpg",
+          "sha256": "e6cffaa708dd48a25b9c4db2c9def67a16b8f37e4f0e7f412aab4be776e840fb"
+        },
+        {
+          "path": "assets/s5/esodrogeria/patchouli.png",
+          "sha256": "552184fd64b6eb84de26f1ca54d9124b0eb3e6ff3e6a9a19f3de3db2cb7d2ae5"
+        },
+        {
+          "path": "assets/s5/esodrogeria/pear.png",
+          "sha256": "02fa80b032ac7b013d83ef1c56eb153a2753e3b3c0bc59228589fcdfc98e6b7f"
+        },
+        {
+          "path": "assets/s5/esodrogeria/apple.jpg",
+          "sha256": "66f4f5dbd69fdf229d1aabfea890371e60a7d902e5157979db63a2598f0f3760"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "candella",
+      "brand": "Candella",
+      "domain": "candella.sk",
+      "operator": {
+        "name": "ThinkLab, s.r.o.",
+        "ico": "51188112",
+        "country": "SK",
+        "activeNoEnd": true,
+        "officialTerms": "https://www.candella.sk/pgc",
+        "qualification": "SASHE46036491 is storefront/payment intermediary, not productprovider/operator."
+      },
+      "primaryFormulas": 6,
+      "localResultViews": 18,
+      "qaReport": "tools/s5/perfume-batch2-20261115/candella-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/candella.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/candella/integration-review.json",
+      "catalogueImport": "/catalogues/candella.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/candella/ui-review.css",
+        "destination": "n447/s5/brands/candella.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/candella.css"
+        }
+      },
+      "backendBrand": "candella",
+      "requiredBackendInstruction": "Candles only. Literalverifiedscent/retailprice/145gwaxpack, not personalperfume/laundry. No therapeutic/no-smoke/IFRAsafety/burntimeguarantees. Lid included, notpaidaddon. SellerVATstatusUNKNOWN, notSASHEintermediaryVAT.",
+      "productPurpose": "scented-candle",
+      "commercialReview": "VERY_SMALL_REVENUE_COMMERCIAL_REVIEW",
+      "revenue": {
+        "year": 2025,
+        "amount": 4127,
+        "currency": "EUR",
+        "metric": "Products/services4127+goods0, not operating4167",
+        "source": "https://www.registeruz.sk/cruz-public/domain/financialreport/attachment/12423421"
+      },
+      "officialContact": "info@candella.sk",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/candella.json",
+      "files": [
+        {
+          "path": "catalogues/candella.js",
+          "sha256": "af351ce3ede62d6af18817c440d6fb4d00ce99757191bd725a1bcb5fa12ad2ac"
+        },
+        {
+          "path": "n447/s5/sources/candella/verified-products.json",
+          "sha256": "270b0409a73c15fb4c37100fc1849b270f4a8e61eede4838bc225fcd305d9a0a"
+        },
+        {
+          "path": "n447/s5/sources/candella/selection-model.json",
+          "sha256": "078af4e23bb732c3a1e76e448dec636636c384deec886a2bbf400c2b6ec19b02"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/candella.config.json",
+          "sha256": "f8463ca4c1312561fbf5745821f9d6f98f93af27793bf2fb13f4c49991d5b62e"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/candella.selection-model.json",
+          "sha256": "078af4e23bb732c3a1e76e448dec636636c384deec886a2bbf400c2b6ec19b02"
+        },
+        {
+          "path": "assets/s5/candella/avatar.svg",
+          "sha256": "7a0b1e80a49fe66586b58d63d5126746e18d841d7de007cf5cb7bd650e0768e1"
+        },
+        {
+          "path": "assets/s5/candella/orange.jpg",
+          "sha256": "60a08bbe1ce7e99e4299bf7c46b03bd6d3c53f5182b7a47ddd31182b5da299ce"
+        },
+        {
+          "path": "assets/s5/candella/peach.jpg",
+          "sha256": "2f2448fa24198767cd28a4394ad08b45874e6b04a23b02a1b15e73c46f905c08"
+        },
+        {
+          "path": "assets/s5/candella/gin.jpg",
+          "sha256": "75b15b0c1f827cd75daca507e1cf2958bd5dc4c1525575b2fa4b6f2f90542ec5"
+        },
+        {
+          "path": "assets/s5/candella/logo.jpg",
+          "sha256": "07e3739b47a5b7a96d85360f6fb811b6b40f32eec0315096a5a10749388cb1bb"
+        },
+        {
+          "path": "assets/s5/candella/spice.jpg",
+          "sha256": "23b99139338f49bce6de4ace84a335384ac30fc5e1ec6919bba880ebb773ef26"
+        },
+        {
+          "path": "assets/s5/candella/herbs.jpg",
+          "sha256": "192002bc734105eb8d321bc6955f3f51b970b52eaa0dfd9a5a6553ededd45be4"
+        },
+        {
+          "path": "assets/s5/candella/vanilla.jpg",
+          "sha256": "611c0c71d3b28580e9a8150f79b10711219ec6dc8526d7d9f04c888dac7c201c"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    },
+    {
+      "slug": "ravina",
+      "brand": "RAVINA",
+      "domain": "ravina.cz",
+      "operator": {
+        "name": "ZV Capital s.r.o.",
+        "ico": "09331221",
+        "country": "CZ",
+        "activeNoEnd": true,
+        "aliases": [
+          "mals.cz"
+        ],
+        "officialRegistry": "https://ares.gov.cz/ekonomicke-subjekty-v-be/rest/ekonomicke-subjekty/09331221"
+      },
+      "primaryFormulas": 2,
+      "localResultViews": 6,
+      "qaReport": "tools/s5/perfume-batch2-20261115/ravina-ui-qa.json",
+      "config": "n447/s5/perfume-fragments/ravina.config.json",
+      "integrationReview": "tools/s5/perfume-batch2-20261115/candidate-packages/ravina/integration-review.json",
+      "catalogueImport": "/catalogues/ravina.js",
+      "companyCss": {
+        "source": "tools/s5/perfume-batch2-20261115/candidate-packages/ravina/ui-review.css",
+        "destination": "n447/s5/brands/ravina.css",
+        "registryField": {
+          "companyCss": "/n447/s5/brands/ravina.css"
+        }
+      },
+      "backendBrand": "ravina",
+      "requiredBackendInstruction": "APARowninspiredfragrances, neverdesigneroriginal/equivalence/guaranteedattractionor duration. OnlyF001/F065 selected50mlSTANDARD269CZK. F219/F163 photos unsuitable excluded; F002/F271soldout excluded. MALSsameoperatoronecompany. Photosillustrativeofficialgallerywithsomeinspirationinsets, not promiseddesignerbottleincluded.",
+      "productPurpose": "personal-inspired-fragrance",
+      "commercialReview": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
+      "revenue": {
+        "year": 2024,
+        "publishedBand": "1–3 mil. Kč",
+        "currency": "CZK",
+        "source": "https://www.chytryrejstrik.cz/ico-09331221/zv-capital-s-r-o",
+        "sourceType": "Secondaryhistoricalband",
+        "latestExact2025": "UNKNOWN"
+      },
+      "officialContact": "info@ravina.cz",
+      "contactEvidence": "tools/s5/perfume-batch2-20261115/research/contacts/ravina.json",
+      "files": [
+        {
+          "path": "catalogues/ravina.js",
+          "sha256": "4334a6f4d16c4b4a47c540e54e23bb362b6810a8ab75bbe40a87a8de219adac6"
+        },
+        {
+          "path": "n447/s5/sources/ravina/verified-products.json",
+          "sha256": "1f843dd422577579826ccc3b2c488a7f737f672cfb0011b57056b4bee4415d1a"
+        },
+        {
+          "path": "n447/s5/sources/ravina/selection-model.json",
+          "sha256": "6a759924630db24b655162c8830e89af854fcd0f243ccd092bc66daa4958afba"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/ravina.config.json",
+          "sha256": "a8739e7c11c8e97a4326c0c59e2fbb7b607a21d233ee46bf3f1b306eb7f88334"
+        },
+        {
+          "path": "n447/s5/perfume-fragments/ravina.selection-model.json",
+          "sha256": "6a759924630db24b655162c8830e89af854fcd0f243ccd092bc66daa4958afba"
+        },
+        {
+          "path": "assets/s5/ravina/avatar.svg",
+          "sha256": "9e2df66afed79495b659e07c862f48bddc757769619f1fc8731bb81edb381334"
+        },
+        {
+          "path": "assets/s5/ravina/lily.jpg",
+          "sha256": "998465e7c4beb5c96430f414ff33258d6aa9fdfd74ce5162204f8f94c67fafe2"
+        },
+        {
+          "path": "assets/s5/ravina/logo.png",
+          "sha256": "d8c3ecfeca7a7055c89c377ca624fecbcae76d97b0e8ed94a71d7b5c39958e14"
+        },
+        {
+          "path": "assets/s5/ravina/berry.jpg",
+          "sha256": "de8a19f882a0b33b4118abca1db0c3216fba04db74058b2dc098fae92c0e845f"
+        }
+      ],
+      "status": "SOURCE_LOCAL_COMPLETE_MAIN_INTEGRATION_AND_LIVE_PREVIEW_REQUIRED",
+      "demoLiveUrl": null,
+      "emailStatus": "NOT_READY",
+      "sentByWorker": false
+    }
+  ],
+  "counts": {
+    "companies": 15,
+    "primaryFormulas": 77,
+    "optionalSameFormulaVariants": 6,
+    "uniqueFinalResultViewportViews": 231
+  },
+  "copyAllowlist": [
+    "catalogues/dews.js",
+    "n447/s5/sources/dews/verified-products.json",
+    "n447/s5/sources/dews/selection-model.json",
+    "n447/s5/perfume-fragments/dews.config.json",
+    "n447/s5/perfume-fragments/dews.selection-model.json",
+    "assets/s5/dews/avatar.svg",
+    "assets/s5/dews/logo.png",
+    "assets/s5/dews/2.jpg",
+    "assets/s5/dews/5.jpg",
+    "assets/s5/dews/1.jpg",
+    "assets/s5/dews/3.jpg",
+    "assets/s5/dews/4.jpg",
+    "assets/s5/dews/6.jpg",
+    "catalogues/siluvone.js",
+    "n447/s5/sources/siluvone/verified-products.json",
+    "n447/s5/sources/siluvone/selection-model.json",
+    "n447/s5/perfume-fragments/siluvone.config.json",
+    "n447/s5/perfume-fragments/siluvone.selection-model.json",
+    "assets/s5/siluvone/5.png",
+    "assets/s5/siluvone/avatar.svg",
+    "assets/s5/siluvone/4.png",
+    "assets/s5/siluvone/logo.png",
+    "assets/s5/siluvone/1.png",
+    "assets/s5/siluvone/2.png",
+    "assets/s5/siluvone/6.png",
+    "assets/s5/siluvone/3.png",
+    "catalogues/durance.js",
+    "n447/s5/sources/durance/verified-products.json",
+    "n447/s5/sources/durance/selection-model.json",
+    "n447/s5/perfume-fragments/durance.config.json",
+    "n447/s5/perfume-fragments/durance.selection-model.json",
+    "assets/s5/durance/avatar.svg",
+    "assets/s5/durance/logo.png",
+    "assets/s5/durance/2.jpg",
+    "assets/s5/durance/5.jpg",
+    "assets/s5/durance/1.jpg",
+    "assets/s5/durance/3.jpg",
+    "assets/s5/durance/4.jpg",
+    "assets/s5/durance/6.jpg",
+    "catalogues/vonavepranie.js",
+    "n447/s5/sources/vonavepranie/verified-products.json",
+    "n447/s5/sources/vonavepranie/selection-model.json",
+    "n447/s5/perfume-fragments/vonavepranie.config.json",
+    "n447/s5/perfume-fragments/vonavepranie.selection-model.json",
+    "assets/s5/vonavepranie/5.png",
+    "assets/s5/vonavepranie/avatar.svg",
+    "assets/s5/vonavepranie/6-20ml.jpg",
+    "assets/s5/vonavepranie/1-20ml.jpg",
+    "assets/s5/vonavepranie/4.png",
+    "assets/s5/vonavepranie/3-20ml.png",
+    "assets/s5/vonavepranie/2-20ml.jpg",
+    "assets/s5/vonavepranie/logo.svg",
+    "assets/s5/vonavepranie/2.jpg",
+    "assets/s5/vonavepranie/4-20ml.png",
+    "assets/s5/vonavepranie/1.jpg",
+    "assets/s5/vonavepranie/5-20ml.png",
+    "assets/s5/vonavepranie/3.png",
+    "assets/s5/vonavepranie/6.jpg",
+    "catalogues/mmnt.js",
+    "n447/s5/sources/mmnt/verified-products.json",
+    "n447/s5/sources/mmnt/selection-model.json",
+    "n447/s5/perfume-fragments/mmnt.config.json",
+    "n447/s5/perfume-fragments/mmnt.selection-model.json",
+    "assets/s5/mmnt/avatar.svg",
+    "assets/s5/mmnt/logo.svg",
+    "assets/s5/mmnt/spice.jpg",
+    "assets/s5/mmnt/forest.jpg",
+    "catalogues/aromis.js",
+    "n447/s5/sources/aromis/verified-products.json",
+    "n447/s5/sources/aromis/selection-model.json",
+    "n447/s5/perfume-fragments/aromis.config.json",
+    "n447/s5/perfume-fragments/aromis.selection-model.json",
+    "assets/s5/aromis/avatar.svg",
+    "assets/s5/aromis/bella.jpg",
+    "assets/s5/aromis/logo.jpg",
+    "assets/s5/aromis/lavender.jpg",
+    "assets/s5/aromis/coffee.jpg",
+    "assets/s5/aromis/desert.jpg",
+    "assets/s5/aromis/winter.jpg",
+    "assets/s5/aromis/linen.jpg",
+    "catalogues/rozvoneno.js",
+    "n447/s5/sources/rozvoneno/verified-products.json",
+    "n447/s5/sources/rozvoneno/selection-model.json",
+    "n447/s5/perfume-fragments/rozvoneno.config.json",
+    "n447/s5/perfume-fragments/rozvoneno.selection-model.json",
+    "assets/s5/rozvoneno/avatar.svg",
+    "assets/s5/rozvoneno/fresh.jpg",
+    "assets/s5/rozvoneno/logo.png",
+    "assets/s5/rozvoneno/citrus.jpg",
+    "assets/s5/rozvoneno/resin.jpg",
+    "assets/s5/rozvoneno/ginger.jpg",
+    "assets/s5/rozvoneno/winter.jpg",
+    "assets/s5/rozvoneno/flower.jpg",
+    "catalogues/ketts.js",
+    "n447/s5/sources/ketts/verified-products.json",
+    "n447/s5/sources/ketts/selection-model.json",
+    "n447/s5/perfume-fragments/ketts.config.json",
+    "n447/s5/perfume-fragments/ketts.selection-model.json",
+    "assets/s5/ketts/avatar.svg",
+    "assets/s5/ketts/plum.jpg",
+    "assets/s5/ketts/logo.jpg",
+    "assets/s5/ketts/herbs.jpg",
+    "assets/s5/ketts/rose.jpg",
+    "assets/s5/ketts/citrus.jpg",
+    "assets/s5/ketts/ginger.jpg",
+    "assets/s5/ketts/sandal.jpg",
+    "catalogues/totap.js",
+    "n447/s5/sources/totap/verified-products.json",
+    "n447/s5/sources/totap/selection-model.json",
+    "n447/s5/perfume-fragments/totap.config.json",
+    "n447/s5/perfume-fragments/totap.selection-model.json",
+    "assets/s5/totap/5.png",
+    "assets/s5/totap/avatar.svg",
+    "assets/s5/totap/4.png",
+    "assets/s5/totap/logo.svg",
+    "assets/s5/totap/1.png",
+    "assets/s5/totap/2.png",
+    "assets/s5/totap/6.png",
+    "assets/s5/totap/3.png",
+    "catalogues/kvapkavoni.js",
+    "n447/s5/sources/kvapkavoni/verified-products.json",
+    "n447/s5/sources/kvapkavoni/selection-model.json",
+    "n447/s5/perfume-fragments/kvapkavoni.config.json",
+    "n447/s5/perfume-fragments/kvapkavoni.selection-model.json",
+    "assets/s5/kvapkavoni/5.png",
+    "assets/s5/kvapkavoni/avatar.svg",
+    "assets/s5/kvapkavoni/4.png",
+    "assets/s5/kvapkavoni/logo.png",
+    "assets/s5/kvapkavoni/1.png",
+    "assets/s5/kvapkavoni/2.png",
+    "assets/s5/kvapkavoni/6.png",
+    "catalogues/alma.js",
+    "n447/s5/sources/alma/verified-products.json",
+    "n447/s5/sources/alma/selection-model.json",
+    "n447/s5/perfume-fragments/alma.config.json",
+    "n447/s5/perfume-fragments/alma.selection-model.json",
+    "assets/s5/alma/avatar.svg",
+    "assets/s5/alma/logo.png",
+    "assets/s5/alma/2.jpg",
+    "assets/s5/alma/1.jpg",
+    "assets/s5/alma/3.jpg",
+    "assets/s5/alma/4.jpg",
+    "catalogues/vunebis.js",
+    "n447/s5/sources/vunebis/verified-products.json",
+    "n447/s5/sources/vunebis/selection-model.json",
+    "n447/s5/perfume-fragments/vunebis.config.json",
+    "n447/s5/perfume-fragments/vunebis.selection-model.json",
+    "assets/s5/vunebis/avatar.svg",
+    "assets/s5/vunebis/musk.png",
+    "assets/s5/vunebis/lily.png",
+    "assets/s5/vunebis/logo.svg",
+    "assets/s5/vunebis/flowers.png",
+    "assets/s5/vunebis/iris.jpg",
+    "assets/s5/vunebis/wood.jpg",
+    "catalogues/esodrogeria.js",
+    "n447/s5/sources/esodrogeria/verified-products.json",
+    "n447/s5/sources/esodrogeria/selection-model.json",
+    "n447/s5/perfume-fragments/esodrogeria.config.json",
+    "n447/s5/perfume-fragments/esodrogeria.selection-model.json",
+    "assets/s5/esodrogeria/avatar.svg",
+    "assets/s5/esodrogeria/logo.png",
+    "assets/s5/esodrogeria/wood.jpg",
+    "assets/s5/esodrogeria/yogurt.jpg",
+    "assets/s5/esodrogeria/patchouli.png",
+    "assets/s5/esodrogeria/pear.png",
+    "assets/s5/esodrogeria/apple.jpg",
+    "catalogues/candella.js",
+    "n447/s5/sources/candella/verified-products.json",
+    "n447/s5/sources/candella/selection-model.json",
+    "n447/s5/perfume-fragments/candella.config.json",
+    "n447/s5/perfume-fragments/candella.selection-model.json",
+    "assets/s5/candella/avatar.svg",
+    "assets/s5/candella/orange.jpg",
+    "assets/s5/candella/peach.jpg",
+    "assets/s5/candella/gin.jpg",
+    "assets/s5/candella/logo.jpg",
+    "assets/s5/candella/spice.jpg",
+    "assets/s5/candella/herbs.jpg",
+    "assets/s5/candella/vanilla.jpg",
+    "catalogues/ravina.js",
+    "n447/s5/sources/ravina/verified-products.json",
+    "n447/s5/sources/ravina/selection-model.json",
+    "n447/s5/perfume-fragments/ravina.config.json",
+    "n447/s5/perfume-fragments/ravina.selection-model.json",
+    "assets/s5/ravina/avatar.svg",
+    "assets/s5/ravina/lily.jpg",
+    "assets/s5/ravina/logo.png",
+    "assets/s5/ravina/berry.jpg"
+  ],
+  "commonFilesModified": [],
+  "paidCalls": 0,
+  "productionChanged": false,
+  "dnsChanged": false,
+  "emailAppOperations": 0,
+  "price": "447 EUR +10 EUR/month",
+  "fixture": {
+    "snapshot": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+    "recommendationCore": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+    "injections": [
+      "candidate registry/config via fixture only",
+      "company-only ui-review.css",
+      "body.dataset.fragranceProfile=visual-v1",
+      "existing n447/s5/fragrance-result-extras.js",
+      "existing n447/s5/perfume-ui-polish-20261113.css and .js"
+    ],
+    "qualification": "No shared runtime files modified by worker; fixture-serving boot injection is not a completed shared runtime integration."
+  },
+  "deploymentExcluded": [
+    "/tools/",
+    "/n447/s5/sources/",
+    "/n447/s5/perfume-fragments/",
+    "/n447/s5/dokazy/"
+  ],
+  "nextOwnerSteps": [
+    "Fresh domain/operator/claims check before integration against newest remote work",
+    "Copy exact company allowlist, copy companyCSS from individual integrationreview, register catalogue/brand/offlineRules with explicit productPurpose safeguards",
+    "Ensure existing visual-v1/profile/result-extras/standalonepolish loading for new slugs; do not create another recommendationcore fix",
+    "Create READY Preview then run every result320/390/1280, visually inspect all results and firstquestions, verify mock/offlinechat only paid0",
+    "Confirm actual public URLs/domain ownership and sent-mail history independently before moving outreach fromNOT_READY; no mails sent by this worker"
+  ]
+}

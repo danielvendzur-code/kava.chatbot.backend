@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-15T22:56:59.690303+00:00",
+  "NOT_POSITIVE_QA": true,
+  "records": [
+    {
+      "directory": "final-three-local-qa",
+      "reason": "Esoquestion200pxphotoupscalingcheckfailed, notcompleted."
+    },
+    {
+      "directory": "eso-final-local-qa",
+      "reason": "FirstCSSinsufficientspecificity at390, supersededbyeso-ravina-final-local-qa."
+    },
+    {
+      "directory": "candella-ravina-local-qa",
+      "reason": "Candella18viewsvalid. RavinafourproductUIpassedbutsemanticphotoidentityfailedvisualreview, supersededbytwo-productfinal6views."
+    },
+    {
+      "directory": "totap-local-qa",
+      "reason": "First missing fixturelink fixed; stored later run failed missing visible inspired disclosure. totap-final-local-qa18 replacementviews passed."
+    },
+    {
+      "directory": "kvapka-alma-local-qa",
+      "reason": "Kvapka15viewsvalid; subsequentALMAinitialprofileparserfailure. ALMAfinal12rerunpassed."
+    },
+    {
+      "directory": "entry-predecode-superseded.zip",
+      "reason": "Early entry/firstquestion45 automatic checks passed, but screenshots showed decoded-before-painted image race. Not positive final visual QA. Replaced by entry-local-qa after explicit image decode and two animation frames."
+    }
+  ]
+}

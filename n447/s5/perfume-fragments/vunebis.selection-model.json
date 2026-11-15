@@ -1,0 +1,52 @@
+{
+  "key": "fragranceDirection",
+  "question": "Jaká vůně je vám blízká?",
+  "options": [
+    {
+      "value": "soft",
+      "label": "Květiny a pižmový základ",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "musk",
+          "label": "Bílý květ, pižmo a vanilka",
+          "productId": "musk",
+          "sourceUrl": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-tresor-muschio-bianco-parfem-na-pradlo-50-ml-2/"
+        },
+        {
+          "value": "flowers",
+          "label": "Bílé květiny, frézie a růže",
+          "productId": "flowers",
+          "sourceUrl": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-06-premiovy-parfem-na-pradlo-50-ml/"
+        },
+        {
+          "value": "iris",
+          "label": "Kosatec, vanilka a pižmo",
+          "productId": "iris",
+          "sourceUrl": "https://www.vunebis.cz/parfemy-na-pradlo/vune-na-pradlo-do-pracky-a-susicky-50-ml-jarni-svezest/"
+        }
+      ]
+    },
+    {
+      "value": "wood",
+      "label": "Dřevité a zelené tóny",
+      "key": "fragranceProfile",
+      "question": "Která kombinace vás láká?",
+      "options": [
+        {
+          "value": "lily",
+          "label": "Bílá lilie, pačuli a cedr",
+          "productId": "lily",
+          "sourceUrl": "https://www.vunebis.cz/parfemy-na-pradlo/emitty-03-premiovy-parfem-na-pradlo-50-davek/"
+        },
+        {
+          "value": "wood",
+          "label": "Zelená vůně, jantar a santal",
+          "productId": "wood",
+          "sourceUrl": "https://www.vunebis.cz/parfemy-na-pradlo/parfem-na-pradlo-blue-dream-50-davek/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "nativePhotoCheck": "Actual original pixels >= rendered CSS image dimensions; no upscaled/padded surrogate to meet arbitrary width. Space Fluid originals288–600px; other dimensions match individual source manifests.",
+  "commit": "68dbfbebc5e55c6655af0f8e6bdaf7129ea8f110",
+  "at": "2026-11-15T22:53:52.506640+00:00",
+  "qaType": "Isolatedimmutablefixture/sourceIDmock only, notintegrated/livePreview",
+  "paidModelCalls": 0,
+  "complete": true,
+  "scope": "Local isolated candidate fixture only.",
+  "browser": "webkit",
+  "allRequestedResultsPassed": true,
+  "results": [
+    {
+      "slug": "ravina",
+      "width": 320,
+      "id": "berry",
+      "pack": "50 ml STANDARD",
+      "price": "269 Kč",
+      "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-giorgio-armani-si/948-1096-imitace-damske-parfemy-apar-f001-inspirovane-armani-si.html#/1-objem-50_ml_standard",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "ravina-result-berry-320.png"
+    },
+    {
+      "slug": "ravina",
+      "width": 320,
+      "id": "lily",
+      "pack": "50 ml STANDARD",
+      "price": "269 Kč",
+      "url": "https://ravina.cz/378-1-damsky-parfem-apar-f065-standard-inspirovano-abercrombie-fitch-8.html#/1-objem-50_ml_standard",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "ravina-result-lily-320.png"
+    },
+    {
+      "slug": "ravina",
+      "width": 390,
+      "id": "berry",
+      "pack": "50 ml STANDARD",
+      "price": "269 Kč",
+      "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-giorgio-armani-si/948-1096-imitace-damske-parfemy-apar-f001-inspirovane-armani-si.html#/1-objem-50_ml_standard",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "ravina-result-berry-390.png"
+    },
+    {
+      "slug": "ravina",
+      "width": 390,
+      "id": "lily",
+      "pack": "50 ml STANDARD",
+      "price": "269 Kč",
+      "url": "https://ravina.cz/378-1-damsky-parfem-apar-f065-standard-inspirovano-abercrombie-fitch-8.html#/1-objem-50_ml_standard",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "ravina-result-lily-390.png"
+    },
+    {
+      "slug": "ravina",
+      "width": 1280,
+      "id": "berry",
+      "pack": "50 ml STANDARD",
+      "price": "269 Kč",
+      "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-giorgio-armani-si/948-1096-imitace-damske-parfemy-apar-f001-inspirovane-armani-si.html#/1-objem-50_ml_standard",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "ravina-result-berry-1280.png"
+    },
+    {
+      "slug": "ravina",
+      "width": 1280,
+      "id": "lily",
+      "pack": "50 ml STANDARD",
+      "price": "269 Kč",
+      "url": "https://ravina.cz/378-1-damsky-parfem-apar-f065-standard-inspirovano-abercrombie-fitch-8.html#/1-objem-50_ml_standard",
+      "photoLoaded": true,
+      "alternativePhotoLoaded": true,
+      "ctaInsideCard": true,
+      "reset": true,
+      "progress": "‹ Zpět\nVýsledek",
+      "screenshot": "ravina-result-lily-1280.png"
+    }
+  ],
+  "questionPages": [
+    {
+      "slug": "ravina",
+      "width": 320,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "berry",
+          "photo": "/assets/s5/ravina/berry.jpg"
+        },
+        {
+          "id": "lily",
+          "photo": "/assets/s5/ravina/lily.jpg"
+        }
+      ],
+      "screenshot": "ravina-question-1-320.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "ravina",
+      "width": 390,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "berry",
+          "photo": "/assets/s5/ravina/berry.jpg"
+        },
+        {
+          "id": "lily",
+          "photo": "/assets/s5/ravina/lily.jpg"
+        }
+      ],
+      "screenshot": "ravina-question-1-390.png",
+      "loaded": true,
+      "noPageOverflow": true
+    },
+    {
+      "slug": "ravina",
+      "width": 1280,
+      "key": "fragranceDirection",
+      "options": [
+        {
+          "id": "berry",
+          "photo": "/assets/s5/ravina/berry.jpg"
+        },
+        {
+          "id": "lily",
+          "photo": "/assets/s5/ravina/lily.jpg"
+        }
+      ],
+      "screenshot": "ravina-question-1-1280.png",
+      "loaded": true,
+      "noPageOverflow": true
+    }
+  ],
+  "interactions": [
+    {
+      "slug": "ravina",
+      "width": 320,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "berry",
+        "lily"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "ravina-compare-320.png"
+    },
+    {
+      "slug": "ravina",
+      "width": 390,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "berry",
+        "lily"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "ravina-compare-390.png"
+    },
+    {
+      "slug": "ravina",
+      "width": 1280,
+      "four40pxChips": true,
+      "offlineChipReplies": 3,
+      "compareDistinct": [
+        "berry",
+        "lily"
+      ],
+      "comparisonStatus": "PASS",
+      "hoverNoLayoutShift": true,
+      "reducedMotionMedia": true,
+      "screenshot": "ravina-compare-1280.png"
+    }
+  ],
+  "errors": [],
+  "blockedExternalHosts": [],
+  "noteProfiles": [
+    {
+      "slug": "ravina",
+      "id": "berry",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Černý rybíz",
+        "růže",
+        "vanilka"
+      ],
+      "screenshot": "ravina-note-profile-berry-320.png"
+    },
+    {
+      "slug": "ravina",
+      "id": "lily",
+      "width": 320,
+      "sourceBound": true,
+      "labels": [
+        "Citrusy",
+        "lilie",
+        "pižmový základ"
+      ],
+      "screenshot": "ravina-note-profile-lily-320.png"
+    },
+    {
+      "slug": "ravina",
+      "id": "berry",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Černý rybíz",
+        "růže",
+        "vanilka"
+      ],
+      "screenshot": "ravina-note-profile-berry-390.png"
+    },
+    {
+      "slug": "ravina",
+      "id": "lily",
+      "width": 390,
+      "sourceBound": true,
+      "labels": [
+        "Citrusy",
+        "lilie",
+        "pižmový základ"
+      ],
+      "screenshot": "ravina-note-profile-lily-390.png"
+    },
+    {
+      "slug": "ravina",
+      "id": "berry",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Černý rybíz",
+        "růže",
+        "vanilka"
+      ],
+      "screenshot": "ravina-note-profile-berry-1280.png"
+    },
+    {
+      "slug": "ravina",
+      "id": "lily",
+      "width": 1280,
+      "sourceBound": true,
+      "labels": [
+        "Citrusy",
+        "lilie",
+        "pižmový základ"
+      ],
+      "screenshot": "ravina-note-profile-lily-1280.png"
+    }
+  ],
+  "enrichedStates": [
+    {
+      "slug": "ravina",
+      "width": 320,
+      "id": "berry",
+      "defaultScreenshot": "ravina-result-berry-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "ravina-pair-berry-320.png",
+      "comparisonIds": [
+        "berry",
+        "lily"
+      ]
+    },
+    {
+      "slug": "ravina",
+      "width": 320,
+      "id": "lily",
+      "defaultScreenshot": "ravina-result-lily-320.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "ravina-pair-lily-320.png",
+      "comparisonIds": [
+        "lily",
+        "berry"
+      ]
+    },
+    {
+      "slug": "ravina",
+      "width": 390,
+      "id": "berry",
+      "defaultScreenshot": "ravina-result-berry-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "ravina-pair-berry-390.png",
+      "comparisonIds": [
+        "berry",
+        "lily"
+      ]
+    },
+    {
+      "slug": "ravina",
+      "width": 390,
+      "id": "lily",
+      "defaultScreenshot": "ravina-result-lily-390.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "ravina-pair-lily-390.png",
+      "comparisonIds": [
+        "lily",
+        "berry"
+      ]
+    },
+    {
+      "slug": "ravina",
+      "width": 1280,
+      "id": "berry",
+      "defaultScreenshot": "ravina-result-berry-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "ravina-pair-berry-1280.png",
+      "comparisonIds": [
+        "berry",
+        "lily"
+      ]
+    },
+    {
+      "slug": "ravina",
+      "width": 1280,
+      "id": "lily",
+      "defaultScreenshot": "ravina-result-lily-1280.png",
+      "defaultUnchecked": true,
+      "compareScreenshot": "ravina-pair-lily-1280.png",
+      "comparisonIds": [
+        "lily",
+        "berry"
+      ]
+    }
+  ],
+  "company": "ravina",
+  "finalResultViews": 6,
+  "visualReview": "All finalresult screenshots320/390/1280 visuallyreviewed"
+}

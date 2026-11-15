@@ -41,4 +41,5 @@ body[data-series=s5][data-cosmetics-demo=esodrogeria] #cx-widget .fr-extra-pack-
 
 body[data-series=s5][data-cosmetics-demo=esodrogeria] #cosmetics-root#cosmetics-root img.cx-logo{filter:none!important;object-fit:contain!important;background:white;padding:4px 10px;border-radius:6px;box-sizing:border-box}
 
-body[data-series=s5][data-cosmetics-demo=esodrogeria] .cx-quality-option img[src="/assets/s5/esodrogeria/patchouli.png"]{max-width:200px!important;max-height:200px!important;object-fit:contain!important}
+
+html body[data-series=s5][data-cosmetics-demo=esodrogeria] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question > .cx-catalogue-options > .cx-quality-option[data-choice=patchouli] > .cx-quality-photo > img,html body[data-series=s5][data-cosmetics-demo=esodrogeria] #cosmetics-root#cosmetics-root#cosmetics-root #cx-widget#cx-widget#cx-widget .cx-quality-body.is-question > .cx-catalogue-options > .cx-quality-option[data-choice=yogurt] > .cx-quality-photo > img{position:relative!important;inset:auto!important;width:180px!important;min-width:0!important;max-width:180px!important;height:180px!important;max-height:180px!important;margin:0 auto!important;object-fit:contain!important}

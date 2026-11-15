@@ -1,0 +1,162 @@
+{
+  "slug": "ravina",
+  "owner": "PERFUME_WORKER",
+  "claimCommit": "1080c660b93c9fadc368767ec90938dbf7541dc9",
+  "series": "s5",
+  "segment": "fragrance",
+  "status": "SOURCE_PACKAGE_VERIFIED",
+  "catalogue": "/catalogues/ravina.js",
+  "requiredEngineContract": "s5-fragrance-direction-profile-v1",
+  "quickChips": [
+    "Rybíz a vanilka",
+    "Citrusy a lilie",
+    "Ceny a balení parfémů",
+    "Porovnat dvě vůně"
+  ],
+  "offlineReplyRequirements": [
+    {
+      "chip": "Rybíz a vanilka",
+      "match": "rybiz|vanilk",
+      "productIds": [
+        "berry"
+      ]
+    },
+    {
+      "chip": "Citrusy a lilie",
+      "match": "citrus|lili",
+      "productIds": [
+        "lily"
+      ]
+    },
+    {
+      "chip": "Ceny a balení parfémů",
+      "match": "cen|balen",
+      "productIds": [
+        "berry"
+      ]
+    }
+  ],
+  "compareProductIds": [
+    "berry",
+    "lily"
+  ],
+  "addon": {
+    "enabled": false,
+    "reason": "No independentmini/othercombinationstockverified, no inventedaddon."
+  },
+  "budgetQuestion": false,
+  "enableRuntime": false,
+  "sharedCoreVerifiedAt": "c9e4da04e19339492a4ffe91428e8ac960b866b6",
+  "resultExtrasScript": "/n447/s5/fragrance-result-extras.js",
+  "registryObject": {
+    "series": "s5",
+    "type": "cosmetics",
+    "segment": "fragrance",
+    "name": "RAVINA",
+    "country": "CZ",
+    "logos": {
+      "landing": "/assets/s5/ravina/logo.png",
+      "header": "/assets/s5/ravina/logo.png",
+      "avatar": "/assets/s5/ravina/avatar.svg"
+    },
+    "brand": {
+      "name": "RAVINA",
+      "domain": "ravina.cz",
+      "website": "https://ravina.cz/",
+      "lang": "cs",
+      "fullName": "RAVINA",
+      "url": "https://ravina.cz/",
+      "logo": "/assets/s5/ravina/logo.png",
+      "mark": "/assets/s5/ravina/avatar.svg",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "quickChips": [
+        "Rybíz a vanilka",
+        "Citrusy a lilie",
+        "Ceny a balení parfémů",
+        "Porovnat dvě vůně"
+      ],
+      "theme": {
+        "brand": "#543446",
+        "accent": "#d6b16b",
+        "soft": "#f9f0f5",
+        "paper": "#fff",
+        "ink": "#352632",
+        "line": "#e8d8e2"
+      }
+    },
+    "traitCopy": {
+      "berry": [
+        "Černý rybíz, růže a vanilka",
+        "",
+        "Černý rybíz, růže a vanilka",
+        ""
+      ],
+      "lily": [
+        "Citrusy, lilie a pižmový základ",
+        "",
+        "Citrusy, lilie a pižmový základ",
+        ""
+      ]
+    },
+    "stepCopy": {
+      "fragranceDirection": [
+        "Jaká vůně je vám blízká?",
+        "",
+        "Vonné tóny"
+      ],
+      "fragranceProfile": [
+        "Která kombinace vás láká?",
+        "",
+        "Vonné tóny"
+      ]
+    },
+    "compareFocus": true,
+    "upsellFocus": {},
+    "choicePhotos": {
+      "berry": [
+        "/assets/s5/ravina/berry.jpg"
+      ],
+      "lily": [
+        "/assets/s5/ravina/lily.jpg"
+      ]
+    },
+    "compareProductIds": [
+      "berry",
+      "lily"
+    ],
+    "segmentText": {
+      "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce výběrem vůně",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Objevte vůni podle svého vkusu",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
+      "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
+      "lead": "Výběr porovná dvě vybrané vůně APAR. Ukáže konkrétní fotografii, charakter vůně, přesné balení, cenu a odkaz. Jde o inspirované vůně, nikoli originály jiných značek.",
+      "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
+      "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
+      "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
+      "teaserTitle": "Objevte vůni podle svého vkusu",
+      "teaserNote": "Konkrétní vůně, balení a cena",
+      "teaserAria": "Otevřít výběr vůně",
+      "source": "ravina-demo"
+    },
+    "fragranceResultExtras": {
+      "version": 1,
+      "enabled": true,
+      "alternatives": {
+        "berry": "lily",
+        "lily": "berry"
+      },
+      "scentProfile": {
+        "version": 1,
+        "mode": "source-notes-no-numeric-strength"
+      }
+    },
+    "fragrancePresentation": {
+      "version": 1,
+      "hideStepEstimate": true
+    }
+  }
+}

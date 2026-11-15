@@ -31,8 +31,8 @@ globalThis.CX_CATALOGUES.kvapkavoni = {
    "tags": [],
    "available": true,
    "isSample": false,
-   "description": "Citrusy, ihličie a drevitý základ.",
-   "reason": "Citrusy, ihličie a drevitý základ.",
+   "description": "Citrusy, ihličie a drevitý základ. Na e-shope zvoľte balenie 250 ml.",
+   "reason": "Citrusy, ihličie a drevitý základ. Na e-shope zvoľte balenie 250 ml.",
    "photo": "/assets/s5/kvapkavoni/1.png",
    "source": {
     "series": "s5",
@@ -142,7 +142,8 @@ globalThis.CX_CATALOGUES.kvapkavoni = {
      "sourceText": "Vonné tóny: citrusy, borovicové ihličie, kvetinové tóny, drevitý základ\n pafum FIOR DI PULITO je intenzívna a osviežujúca vôňa, ktorá spája sviežosť citrusov a borovicového ihličia s jemnými kvetinovými tónmi a hrejivým drevitým základom. Zanecháva bielizeň dokonale čistú, sviežu a nabitú energiou, akoby práve uschla na horskom vánku. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
      "navigationLabel": "Citrusy, ihličie a drevitý základ",
      "navigationGroupingIsNotOfficialFragranceFamily": true
-    }
+    },
+    "variantSelectionNotice": "Na e-shope zvoľte balenie 250 ml."
    }
   },
   {
@@ -158,8 +159,8 @@ globalThis.CX_CATALOGUES.kvapkavoni = {
    "tags": [],
    "available": true,
    "isSample": false,
-   "description": "Biele pižmo, mach a biele kvety.",
-   "reason": "Biele pižmo, mach a biele kvety.",
+   "description": "Biele pižmo, mach a biele kvety. Na e-shope zvoľte balenie 250 ml.",
+   "reason": "Biele pižmo, mach a biele kvety. Na e-shope zvoľte balenie 250 ml.",
    "photo": "/assets/s5/kvapkavoni/2.png",
    "source": {
     "series": "s5",
@@ -262,7 +263,8 @@ globalThis.CX_CATALOGUES.kvapkavoni = {
      "sourceText": "Vonné tóny: biele pižmo, mach, biele kvety\n parfum MUSCHIO BIANCO ťa očarí jemnou vôňou bieleho pižma, ktorá sa harmonicky prelína s delikátnymi tónmi machu a bielych kvetov. Táto sofistikovaná aróma vytvára v domácnosti atmosféru neprekonateľnej čistoty a sviežosti, pričom zároveň evokuje pocit luxusu a elegancie. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
      "navigationLabel": "Biele pižmo, mach a biele kvety",
      "navigationGroupingIsNotOfficialFragranceFamily": true
-    }
+    },
+    "variantSelectionNotice": "Na e-shope zvoľte balenie 250 ml."
    }
   },
   {
@@ -278,8 +280,8 @@ globalThis.CX_CATALOGUES.kvapkavoni = {
    "tags": [],
    "available": true,
    "isSample": false,
-   "description": "Exotické kvety, grapefruit a ananás.",
-   "reason": "Exotické kvety, grapefruit a ananás.",
+   "description": "Exotické kvety, grapefruit a ananás. Na e-shope zvoľte balenie 250 ml.",
+   "reason": "Exotické kvety, grapefruit a ananás. Na e-shope zvoľte balenie 250 ml.",
    "photo": "/assets/s5/kvapkavoni/4.png",
    "source": {
     "series": "s5",
@@ -410,7 +412,8 @@ globalThis.CX_CATALOGUES.kvapkavoni = {
      "sourceText": "Vonné tóny: Monoi, tiaré, grapefruit, ruža, tuberóza, ylang-ylang, ananás\n parfum MONOI – svieža vôňa, ktorá spája exotické kvety Monoi a tiaré s iskrou grapefruitu. V srdci dominuje ruža a tuberóza, zatiaľ čo záver dotvára hrejivý ylang-ylang a šťavnatý ananás. Ideálna pre každý deň, keď chceš zaujať. Táto neodolateľná symfónia vôní ťa prenesie na tropické pobrežie, kde sa zlatožlté slnečné lúče odrážajú na pokojných morských vlnách a vzduch je naplnený vôňou rozkvitnutých kvetov. Je to zmyselný príbeh, ktorý evokuje letné večery na mieste, kde sa čas zastaví a všetko je dokonalé. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
      "navigationLabel": "Exotické kvety, grapefruit a ananás",
      "navigationGroupingIsNotOfficialFragranceFamily": true
-    }
+    },
+    "variantSelectionNotice": "Na e-shope zvoľte balenie 250 ml."
    }
   },
   {
@@ -426,8 +429,8 @@ globalThis.CX_CATALOGUES.kvapkavoni = {
    "tags": [],
    "available": true,
    "isSample": false,
-   "description": "Citrusy a pomarančové kvety.",
-   "reason": "Citrusy a pomarančové kvety.",
+   "description": "Citrusy a pomarančové kvety. Na e-shope zvoľte balenie 250 ml.",
+   "reason": "Citrusy a pomarančové kvety. Na e-shope zvoľte balenie 250 ml.",
    "photo": "/assets/s5/kvapkavoni/5.png",
    "source": {
     "series": "s5",
@@ -558,7 +561,8 @@ globalThis.CX_CATALOGUES.kvapkavoni = {
      "sourceText": "Vonné tóny: citrón, mandarín, kôra horkého pomaranča, kvety pomarančovníka, vodný jazmín, cédrové drevo, pižmo\n parfum FIORI D'ARANCIO citrusová elegancia v každom praní. Vychutnaj si slnečný výlet do srdca Stredomoria. Iskrivé vrchné tóny citróna, sicílskeho mandarínu a kôry horkého pomaranča prinášajú okamžitú dávku sviežosti a energie. Po chvíli sa rozvinie jemná kvetinová hĺbka kvetov pomarančovníka (zagara) a vodného jazmínu, ktoré dodajú vôni eleganciu a ľahkosť. Základ vône tvorený cédrovým drevom a zmyselným pižmom zanecháva na bielizni hebký, čistý a hrejivý dotyk. Fiori d’Arancio je ako lúč slnka na tvojej bielizni – svieži, prirodzený a nezabudnuteľne príjemný. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
      "navigationLabel": "Citrusy a pomarančové kvety",
      "navigationGroupingIsNotOfficialFragranceFamily": true
-    }
+    },
+    "variantSelectionNotice": "Na e-shope zvoľte balenie 250 ml."
    }
   },
   {
@@ -574,8 +578,8 @@ globalThis.CX_CATALOGUES.kvapkavoni = {
    "tags": [],
    "available": true,
    "isSample": false,
-   "description": "Morské tóny, bergamot a santal.",
-   "reason": "Morské tóny, bergamot a santal.",
+   "description": "Morské tóny, bergamot a santal. Na e-shope zvoľte balenie 250 ml.",
+   "reason": "Morské tóny, bergamot a santal. Na e-shope zvoľte balenie 250 ml.",
    "photo": "/assets/s5/kvapkavoni/6.png",
    "source": {
     "series": "s5",
@@ -720,7 +724,8 @@ globalThis.CX_CATALOGUES.kvapkavoni = {
      "sourceText": "Vonné tóny: ozón, bergamot, kalón, jazmín, levanduľa, vetiver, morské riasy, biely mach, santalové drevo\n parfum BREZZA MARINA - nechaj sa uniesť vôňou, ktorá prináša sviežu kombináciu morských tónov evokujúcich letný deň na pláži. Úvodné tóny ozónu, bergamotu a vodnej zložky kalón osviežia zmysly ako čerstvý morský vánok. Srdce vône odhaľuje harmonickú súhru jazmínu, levandule, vetiveru a morských rias, ktoré vytvárajú jemne kvetinovo-zelený charakter. Základ vône tvorený bielym machom a santalovým drevom, podčiarknutý jemne korenistými a pižmovými podtónmi, dodáva hĺbku a sofistikovanosť. Výsledkom je elegantná, čistá a zároveň osviežujúca vôňa, ktorá zanecháva na tvojej bielizni nezabudnuteľný dojem luxusnej sviežosti. Tento unikátny parfum na pranie nielen rozvonia tvoje oblečenie, ale aj zmäkčí tkaniny.",
      "navigationLabel": "Morské tóny, bergamot a santal",
      "navigationGroupingIsNotOfficialFragranceFamily": true
-    }
+    },
+    "variantSelectionNotice": "Na e-shope zvoľte balenie 250 ml."
    }
   }
  ],

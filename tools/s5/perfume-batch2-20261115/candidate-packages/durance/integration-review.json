@@ -143,20 +143,20 @@
     ],
     "segmentText": {
       "entryNote": "Vonné tóny · konkrétní vůně · porovnání",
-      "titleSuffix": "výber vône",
-      "tab": "Výber vône",
-      "advisorName": "Poradca vôní",
-      "entrySmall": "VÝBER VÔNE",
-      "entryTitle": "Nájsť vôňu podľa tónov",
-      "placeholder": "Spýtajte sa na tóny alebo balenie…",
+      "titleSuffix": "výběr vůně",
+      "tab": "Výběr vůně",
+      "advisorName": "Průvodce výběrem vůně",
+      "entrySmall": "VÝBĚR VŮNĚ",
+      "entryTitle": "Objevte vůni podle svého vkusu",
+      "placeholder": "Zeptejte se na charakter vůně, balení nebo cenu…",
       "heading": "Pomozte zákazníkovi objevit vůni podle jeho vkusu.",
       "lead": "Výběr ukáže konkrétní vůni s fotografií, profilem tónů, přesným balením, cenou a odkazem. Dvě odlišné vůně lze porovnat.",
       "includedChat": "Vonné tóny, balení, ceny a porovnání vybraných vůní.",
       "includedAdvisor": "Výběr vůně, její profil a porovnání dvou kompozic.",
       "greeting": "Dobrý den. Pomohu vám porovnat vybrané vůně, jejich tóny, balení a ceny.",
-      "teaserTitle": "Vyberte si vôňu podľa tónov",
-      "teaserNote": "Otvoriť výber vône",
-      "teaserAria": "Otvoriť poradcu pre výber vône",
+      "teaserTitle": "Objevte vůni podle svého vkusu",
+      "teaserNote": "Konkrétní vůně, balení a cena",
+      "teaserAria": "Otevřít výběr vůně",
       "source": "durance-demo"
     },
     "fragranceResultExtras": {
@@ -219,5 +219,12 @@
   "commercialReview": "PREFERRED_HISTORICAL_BAND_UNDER_12M_CZK_LATEST_EXACT_UNKNOWN",
   "emailStatus": "NOT_READY",
   "production": "NOT_DEPLOYED",
-  "paidCalls": 0
+  "paidCalls": 0,
+  "scopeReview": {
+    "productPurpose": "personal-fragrance",
+    "recommendationCoreChangeRequired": false,
+    "backendReviewRequired": true,
+    "requiredBackendInstruction": "Only selected Eau de parfum50ml SKUs and literal sourced notes; do not infer intensity, occasion, fixed longevity, medical benefits or EDTmini compatibility. Prices and stock are point-in-time source snapshots, not live inventory synchronization.",
+    "workerTouchedSharedBackend": false
+  }
 }

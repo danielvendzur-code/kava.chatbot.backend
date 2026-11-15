@@ -71,7 +71,7 @@
           "sha256": "de8a19f882a0b33b4118abca1db0c3216fba04db74058b2dc098fae92c0e845f",
           "bytes": 46046,
           "originalBytes": true,
-          "verifiedAt": "2026-11-15T22:40:12.234906+00:00",
+          "verifiedAt": "2026-11-15T22:52:14.813828+00:00",
           "width": 1000,
           "height": 1000
         },
@@ -144,315 +144,13 @@
         "identityDisclosure": "Own APAR inspiredfragrance, not designeroriginal or guaranteedidenticalsmell.",
         "photoQualification": "Original official productgallery. Selected50mlSTANDARD publicSKU. Publisher altlegendusesPREMIUM inconsistently; actualphoto APAR50ml labelhasnoPREMIUM assertion. Gallerymayinclude separatedesignerinspirationinset, not soldasdesigneroriginal.",
         "selectionTraits": {
-          "fragranceDirection": "sweet",
+          "fragranceDirection": "berry",
           "fragranceProfile": "berry"
         },
         "selectionTraitsEvidence": {
           "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-giorgio-armani-si/948-1096-imitace-damske-parfemy-apar-f001-inspirovane-armani-si.html#/1-objem-50_ml_standard",
           "sourceText": "Vonné tóny: listy černého rybízu, růže, frézie, pačuli, vanilka, dřevité tóny",
           "navigationLabel": "Černý rybíz, růže a vanilka",
-          "navigationGroupingIsNotOfficialFragranceFamily": true
-        }
-      }
-    },
-    {
-      "id": "coffee",
-      "name": "APAR F219",
-      "url": "https://ravina.cz/damsky-parfem-apar-inspirovany-yves-saint-laurent/899-1281-damsky-parfem-apar-f219-inspirovany-yves-saint-laurent-black-opium-parfemovana-voda.html#/1-objem-50_ml_standard",
-      "priceAmount": 269,
-      "price": "269 Kč",
-      "currency": "CZK",
-      "volume": "50 ml STANDARD",
-      "category": "fragrance",
-      "kind": "Parfém",
-      "tags": [],
-      "available": true,
-      "isSample": false,
-      "description": "Káva, jasmín a vanilka. Vůně APAR, nejde o originál jiné značky. Na e-shopu zvolte 50 ml STANDARD.",
-      "reason": "Káva, jasmín a vanilka. Vůně APAR, nejde o originál jiné značky. Na e-shopu zvolte 50 ml STANDARD.",
-      "photo": "/assets/s5/ravina/coffee.jpg",
-      "source": {
-        "series": "s5",
-        "url": "https://ravina.cz/damsky-parfem-apar-inspirovany-yves-saint-laurent/899-1281-damsky-parfem-apar-f219-inspirovany-yves-saint-laurent-black-opium-parfemovana-voda.html#/1-objem-50_ml_standard",
-        "verifiedAt": "2026-11-15T15:47:56.056705+00:00",
-        "sourceSha256": "3b3950b0c636f942de8406a5e6a1794c402c446729501cfd5da2df5324049149",
-        "stock": "InStock",
-        "stockEvidence": {
-          "currency": "CZK",
-          "scope": "OfficialPrestaShop exactselectedproduct-attribute publicJSON50mlSTANDARD, quantity>0andSkladem",
-          "productId": 899,
-          "variantId": 1281,
-          "publisherAvailability": "Skladem",
-          "quantity": 7,
-          "variantSelectionRequired": true
-        },
-        "priceFrom": false,
-        "priceEvidence": {
-          "amount": 269,
-          "currency": "CZK",
-          "vatSource": "https://ravina.cz/damsky-parfem-apar-inspirovany-yves-saint-laurent/899-1281-damsky-parfem-apar-f219-inspirovany-yves-saint-laurent-black-opium-parfemovana-voda.html#/1-objem-50_ml_standard",
-          "vatEvidence": "OfficialselectedPrestaShop retailprice_amount269CZK, tax-included consumerdisplay; no price-range/otherpack substitution."
-        },
-        "packEvidence": {
-          "pack": "50 ml STANDARD",
-          "scope": "Explicit published product pack, not shipping weight."
-        },
-        "variantSelectionRequired": true,
-        "categoryLocked": true,
-        "kindLocked": true,
-        "photoUrl": "https://ravina.cz/1943-large_default/imitace-parfemu-yves-saint-laurent-black-opium.jpg",
-        "photoEvidence": {
-          "id": "coffee",
-          "file": "coffee.jpg",
-          "url": "https://ravina.cz/1943-large_default/imitace-parfemu-yves-saint-laurent-black-opium.jpg",
-          "sha256": "7f0f61807c9618cd61e8304ed1a6fc25a8713882842e02291f195cdda60bb92f",
-          "bytes": 50788,
-          "originalBytes": true,
-          "verifiedAt": "2026-11-15T22:40:12.476362+00:00",
-          "width": 1000,
-          "height": 1000
-        },
-        "fragrance": {
-          "notes": [
-            "růžový pepř",
-            "hruška",
-            "květ pomerančovníku",
-            "káva",
-            "jasmín",
-            "vanilka",
-            "pačuli",
-            "cedrové dřevo"
-          ],
-          "officialFamilies": [],
-          "intensity": null,
-          "occasion": null,
-          "concentrationDisplay": "Parfém",
-          "notesEvidence": {
-            "url": "https://ravina.cz/damsky-parfem-apar-inspirovany-yves-saint-laurent/899-1281-damsky-parfem-apar-f219-inspirovany-yves-saint-laurent-black-opium-parfemovana-voda.html#/1-objem-50_ml_standard",
-            "sourceText": "Vonné tóny: růžový pepř, hruška, květ pomerančovníku, káva, jasmín, vanilka, pačuli, cedrové dřevo",
-            "originalSourceText": "Imitace dámského parfému YSL Black Opium – sladká energie s kávovým nádechem 🌸 Orientálně-sladká vůně plná ženské odvahy a svádění Imitace dámského parfému Yves Saint Laurent Black Opium je odvážná, moderní a smyslná vůně pro sebevědomé ženy. Otevírá ji růžový pepř a květ pomerančovníku, srdce ovládá kávový akord a jasmín, a základ tvoří vanilka, pačuli a cedrové dřevo. ✓ Inspirace YSL Black Opium ✓ Sladká a kávová kompozice s vanilkovým závěrem ✓ Výrazná, energická a svůdná ✓ Ideální na večer a chladné období ✓ Luxusní dojem za dostupnou cenuImitace dámského parfému Yves Saint Laurent Black Opium – vůně noci a vášně Imitace parfému YSL Black Opium je smyslná a moderní vůně, která v sobě spojuje sladkost, energii i hloubku. Je ideální pro večerní nošení, podzim a zimu – chvíle, kdy chceš být nezapomenutelná. Tato vůně je o kontrastech: jemné květiny, dráždivá káva a teplý vanilkový základ vytvářejí jedinečnou harmonii. V úvodu tě přivítá růžový pepř, hruška a květ pomerančovníku. Srdce přináší intenzivní kávu a jasmín, které dodají vůni energii i smyslnost. Základní tóny vanilky, pačuli a cedrového dřeva uzavírají kompozici hřejivě a s výdrží. Je to parfém pro ženy, které se nebojí ukázat svou vášeň a sebevědomí. ✅ Klíčové vlastnosti: ✓ Imitace dámského parfému Yves Saint Laurent Black Opium ✓ Orientálně-sladká vůně s kávovým akordem ✓ Hlava: růžový pepř, hruška, květ pomerančovníku ✓ Srdce: káva, jasmín ✓ Základ: vanilka, pačuli, cedrové dřevo ✓ Výrazná, sladká a podmanivá ✓ Vhodná na večer, podzim a zimu ✓ Ideální pro ženy, které milují vůně s charakterem ✓ Skvělá alternativa k originálu za dostupnou cenu",
-            "sourceLanguage": "cs",
-            "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
-            "noteFormMapping": [
-              {
-                "display": "růžový pepř",
-                "sourceFragments": [
-                  "růžový pepř"
-                ]
-              },
-              {
-                "display": "hruška",
-                "sourceFragments": [
-                  "hruška"
-                ]
-              },
-              {
-                "display": "květ pomerančovníku",
-                "sourceFragments": [
-                  "květ pomerančovníku"
-                ]
-              },
-              {
-                "display": "káva",
-                "sourceFragments": [
-                  "káva"
-                ]
-              },
-              {
-                "display": "jasmín",
-                "sourceFragments": [
-                  "jasmín"
-                ]
-              },
-              {
-                "display": "vanilka",
-                "sourceFragments": [
-                  "vanilka"
-                ]
-              },
-              {
-                "display": "pačuli",
-                "sourceFragments": [
-                  "pačuli"
-                ]
-              },
-              {
-                "display": "cedrové dřevo",
-                "sourceFragments": [
-                  "cedrové dřevo"
-                ]
-              }
-            ],
-            "qualification": "Flatpublishedprimarysensorynotes; F163ambiguousbasewording not expanded into inventedmusk. No measuredintensity/lasting/occasion guarantee."
-          }
-        },
-        "complementForProductUrls": [],
-        "excludedClaims": [
-          "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
-        ],
-        "usagePurpose": "personal-inspired-fragrance",
-        "scent": "Káva, jasmín a vanilka",
-        "identityDisclosure": "Own APAR inspiredfragrance, not designeroriginal or guaranteedidenticalsmell.",
-        "photoQualification": "Original official productgallery. Selected50mlSTANDARD publicSKU. Publisher altlegendusesPREMIUM inconsistently; actualphoto APAR50ml labelhasnoPREMIUM assertion. Gallerymayinclude separatedesignerinspirationinset, not soldasdesigneroriginal.",
-        "selectionTraits": {
-          "fragranceDirection": "sweet",
-          "fragranceProfile": "coffee"
-        },
-        "selectionTraitsEvidence": {
-          "url": "https://ravina.cz/damsky-parfem-apar-inspirovany-yves-saint-laurent/899-1281-damsky-parfem-apar-f219-inspirovany-yves-saint-laurent-black-opium-parfemovana-voda.html#/1-objem-50_ml_standard",
-          "sourceText": "Vonné tóny: růžový pepř, hruška, květ pomerančovníku, káva, jasmín, vanilka, pačuli, cedrové dřevo",
-          "navigationLabel": "Káva, jasmín a vanilka",
-          "navigationGroupingIsNotOfficialFragranceFamily": true
-        }
-      }
-    },
-    {
-      "id": "violet",
-      "name": "APAR F163",
-      "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-marc-jacobs/720-1226-damsky-parfem-apar-f163-inspirovane-marc-jacobs-daisy.html#/1-objem-50_ml_standard",
-      "priceAmount": 269,
-      "price": "269 Kč",
-      "currency": "CZK",
-      "volume": "50 ml STANDARD",
-      "category": "fragrance",
-      "kind": "Parfém",
-      "tags": [],
-      "available": true,
-      "isSample": false,
-      "description": "Fialka, grapefruit a jahoda. Vůně APAR, nejde o originál jiné značky. Na e-shopu zvolte 50 ml STANDARD.",
-      "reason": "Fialka, grapefruit a jahoda. Vůně APAR, nejde o originál jiné značky. Na e-shopu zvolte 50 ml STANDARD.",
-      "photo": "/assets/s5/ravina/violet.png",
-      "source": {
-        "series": "s5",
-        "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-marc-jacobs/720-1226-damsky-parfem-apar-f163-inspirovane-marc-jacobs-daisy.html#/1-objem-50_ml_standard",
-        "verifiedAt": "2026-11-15T15:47:56.178065+00:00",
-        "sourceSha256": "e4f48945a3a9694d79f31f5f2c70505c70d3c3d6aeb5bacf08f01ad6083264c5",
-        "stock": "InStock",
-        "stockEvidence": {
-          "currency": "CZK",
-          "scope": "OfficialPrestaShop exactselectedproduct-attribute publicJSON50mlSTANDARD, quantity>0andSkladem",
-          "productId": 720,
-          "variantId": 1226,
-          "publisherAvailability": "Skladem",
-          "quantity": 6,
-          "variantSelectionRequired": true
-        },
-        "priceFrom": false,
-        "priceEvidence": {
-          "amount": 269,
-          "currency": "CZK",
-          "vatSource": "https://ravina.cz/imitace-damske-parfemy-inspirovane-marc-jacobs/720-1226-damsky-parfem-apar-f163-inspirovane-marc-jacobs-daisy.html#/1-objem-50_ml_standard",
-          "vatEvidence": "OfficialselectedPrestaShop retailprice_amount269CZK, tax-included consumerdisplay; no price-range/otherpack substitution."
-        },
-        "packEvidence": {
-          "pack": "50 ml STANDARD",
-          "scope": "Explicit published product pack, not shipping weight."
-        },
-        "variantSelectionRequired": true,
-        "categoryLocked": true,
-        "kindLocked": true,
-        "photoUrl": "https://ravina.cz/1668-large_default/damsky-parfem-apar-f163-inspirovane-marc-jacobs-daisy.jpg",
-        "photoEvidence": {
-          "id": "violet",
-          "file": "violet.png",
-          "url": "https://ravina.cz/1668-large_default/damsky-parfem-apar-f163-inspirovane-marc-jacobs-daisy.jpg",
-          "sha256": "0f1e4715677144aa0627145c65f9ee471dcaca93a6a5f2137f1768827e206339",
-          "bytes": 162101,
-          "originalBytes": true,
-          "verifiedAt": "2026-11-15T22:40:12.879365+00:00",
-          "width": 1000,
-          "height": 1000
-        },
-        "fragrance": {
-          "notes": [
-            "list fialky",
-            "červený grapefruit",
-            "jahoda",
-            "gardénie",
-            "fialka",
-            "jasmín",
-            "bílé dřevo",
-            "vanilka"
-          ],
-          "officialFamilies": [],
-          "intensity": null,
-          "occasion": null,
-          "concentrationDisplay": "Parfém",
-          "notesEvidence": {
-            "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-marc-jacobs/720-1226-damsky-parfem-apar-f163-inspirovane-marc-jacobs-daisy.html#/1-objem-50_ml_standard",
-            "sourceText": "Vonné tóny: list fialky, červený grapefruit, jahoda, gardénie, fialka, jasmín, bílé dřevo, vanilka",
-            "originalSourceText": "Okouzlující květinová vůně Je lehkým, čistým a ženským vyjádřením květinových vůní. Noste ho během jarních a letních měsíců jako osvěžující zdroj pohodlí. Svrchní tóny tvoří nádherné kompozice listu fialky, červeného grapefruitu a jahody. Srdce kvetou gardénií, fialkou a jasmínem. Základ uklidňuje vůně, bílé dřevo a vanilka. Tento klasický parfém může být snadno vaší charakteristickou vůní. Pro mladé, radostné dívky tento parfém ztělesňuje vše, co je v mládí nejkrásnější, tedy nebojácný optimismus, svobodu a radost ze života. Tato nádherně nádherná vůně je plná bohatosti léta, tónů voňavých květin a šťavnatého ovoce. Zavede vás do světa snů a nerušeného klidu, připomene rozkvetlou louku a oblohu bez mráčku. Parfém osloví především mladé, energické ženy, které milují krásu přírody.",
-            "sourceLanguage": "cs",
-            "scope": "Published product sensory descriptors only, not INCI or inferred ingredient percentages.",
-            "noteFormMapping": [
-              {
-                "display": "list fialky",
-                "sourceFragments": [
-                  "listu fialky"
-                ]
-              },
-              {
-                "display": "červený grapefruit",
-                "sourceFragments": [
-                  "červeného grapefruitu"
-                ]
-              },
-              {
-                "display": "jahoda",
-                "sourceFragments": [
-                  "jahody"
-                ]
-              },
-              {
-                "display": "gardénie",
-                "sourceFragments": [
-                  "gardénií"
-                ]
-              },
-              {
-                "display": "fialka",
-                "sourceFragments": [
-                  "fialkou"
-                ]
-              },
-              {
-                "display": "jasmín",
-                "sourceFragments": [
-                  "jasmínem"
-                ]
-              },
-              {
-                "display": "bílé dřevo",
-                "sourceFragments": [
-                  "bílé dřevo"
-                ]
-              },
-              {
-                "display": "vanilka",
-                "sourceFragments": [
-                  "vanilka"
-                ]
-              }
-            ],
-            "qualification": "Flatpublishedprimarysensorynotes; F163ambiguousbasewording not expanded into inventedmusk. No measuredintensity/lasting/occasion guarantee."
-          }
-        },
-        "complementForProductUrls": [],
-        "excludedClaims": [
-          "No medicinal/skin/allergy/safety/duration guarantees, numerical note strength, invented budget or cart integration."
-        ],
-        "usagePurpose": "personal-inspired-fragrance",
-        "scent": "Fialka, grapefruit a jahoda",
-        "identityDisclosure": "Own APAR inspiredfragrance, not designeroriginal or guaranteedidenticalsmell.",
-        "photoQualification": "Original official productgallery. Selected50mlSTANDARD publicSKU. Publisher altlegendusesPREMIUM inconsistently; actualphoto APAR50ml labelhasnoPREMIUM assertion. Gallerymayinclude separatedesignerinspirationinset, not soldasdesigneroriginal.",
-        "selectionTraits": {
-          "fragranceDirection": "flowers",
-          "fragranceProfile": "violet"
-        },
-        "selectionTraitsEvidence": {
-          "url": "https://ravina.cz/imitace-damske-parfemy-inspirovane-marc-jacobs/720-1226-damsky-parfem-apar-f163-inspirovane-marc-jacobs-daisy.html#/1-objem-50_ml_standard",
-          "sourceText": "Vonné tóny: list fialky, červený grapefruit, jahoda, gardénie, fialka, jasmín, bílé dřevo, vanilka",
-          "navigationLabel": "Fialka, grapefruit a jahoda",
           "navigationGroupingIsNotOfficialFragranceFamily": true
         }
       }
@@ -510,7 +208,7 @@
           "sha256": "998465e7c4beb5c96430f414ff33258d6aa9fdfd74ce5162204f8f94c67fafe2",
           "bytes": 43937,
           "originalBytes": true,
-          "verifiedAt": "2026-11-15T22:40:13.118699+00:00",
+          "verifiedAt": "2026-11-15T22:52:15.059201+00:00",
           "width": 1000,
           "height": 1000
         },
@@ -583,7 +281,7 @@
         "identityDisclosure": "Own APAR inspiredfragrance, not designeroriginal or guaranteedidenticalsmell.",
         "photoQualification": "Original official productgallery. Selected50mlSTANDARD publicSKU. Publisher altlegendusesPREMIUM inconsistently; actualphoto APAR50ml labelhasnoPREMIUM assertion. Gallerymayinclude separatedesignerinspirationinset, not soldasdesigneroriginal.",
         "selectionTraits": {
-          "fragranceDirection": "flowers",
+          "fragranceDirection": "lily",
           "fragranceProfile": "lily"
         },
         "selectionTraitsEvidence": {
@@ -606,9 +304,9 @@
   "size": "PREFERRED_HISTORICAL_BAND_LATEST_EXACT_UNKNOWN",
   "interest": "NOT_ESTABLISHED",
   "notes": [
-    "Four distinct availableAPARcompositions, selected50mlSTANDARD269CZK exactPrestaShopcombination IDs/quantity/photo. F002/F271OutOfStockexcluded.",
-    "FirstgenericAPARbottlephoto duplicated acrossotherSKUs excludedasrepeatedpixelassets. Other3actualproductgalleryphoto used, fourunique hashes; designerinspirationinset explicitnotdesigneroriginal disclosure.",
-    "PrimarycoveraltPREMIUM differsselectedSTANDARD, actualphotolabelAPAR50ml noPREMIUMclaim; originalalt/source preserved forMAINreview.",
-    "MALSsameoperator09331221 normalized9331221: onecompanyonly. No pheromone/attraction, durationor equivalence promises. MAINbrandguard/integration/livePreviewQA required."
+    "Two representative verifiedAPARformulas only: F001/F06550mlSTANDARD269CZK, not a claimonlytwoavailableinstore.",
+    "F219/F163 secondgalleryphotos depict onlydesigneroriginals and areexcludedfromrecommendations. TheirgenericAPARcoversrepeat F001pixels, not used toinflatephotographicrepresentation.",
+    "F001officialownAPAR50mlphoto;F065officialpairphoto ownAPAR+separatedesignerinspiration, visibleownAPARnotoriginaldisclosure. Twoactualdifferentpixelphotos.",
+    "F002/F271OutOfStockexcluded. MALSsame09331221operatoronecompany. MAINbrandguard/integration/livePreview/commercialfitreviewrequired."
   ]
 }
